@@ -1,4 +1,4 @@
-name: Laws tracker
+name: Scrape discord chunks
 
 on:
     schedule:
