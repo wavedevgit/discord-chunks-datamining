@@ -1,0 +1,8 @@
+/** Chunk was on web (https://canary.discord.comweb.9f0be545d3e34886.js.js) **/
+var r = n(323151),
+  i = n(533206);
+
+function o(e, t, n, a, s) {
+  return e === t || (null != e && null != t && (i(e) || i(t)) ? r(e, t, n, a, o, s) : e != e && t != t)
+}
+e.exports = o

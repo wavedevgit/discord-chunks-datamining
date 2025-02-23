@@ -1,0 +1,28 @@
+/**
+  Module ID: 25070
+  Original File Name: d609a0bb400b9eae
+**/
+.description_d9ee11 {
+    margin-bottom: 16px
+}
+
+.input_d9ee11 {
+    margin-bottom: 8px
+}
+
+.reset_d9ee11 {
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding-left: 1px;
+    padding-right: 1px;
+    opacity: .6
+}
+
+.reset_d9ee11:hover {
+    opacity: 1;
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
+/*# sourceMappingURL=d609a0bb400b9eae.css.map*/

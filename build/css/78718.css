@@ -1,0 +1,58 @@
+/**
+  Module ID: 78718
+  Original File Name: b955e6d78fa4f8bb
+**/
+.close__8118d {
+    position: absolute;
+    top: var(--spacing-16);
+    right: var(--spacing-16)
+}
+
+.modal__8118d {
+    overflow: hidden;
+    margin: 0
+}
+
+.modalContentContainer__8118d {
+    display: flex;
+    overflow: hidden;
+    height: 600px
+}
+
+.visual-refresh .modalContentContainer__8118d {
+    padding: 0;
+    margin: 0
+}
+
+.sidebar__8118d {
+    width: 350px;
+    display: flex;
+    flex-direction: column
+}
+
+.contentContainer__8118d {
+    padding: var(--spacing-32)
+}
+
+.description__8118d {
+    margin-top: var(--spacing-4)
+}
+
+.footer__8118d {
+    margin-top: var(--spacing-24)
+}
+
+.powerupImage__8118d {
+    flex-grow: 1
+}
+
+.exampleImage__8118d,.powerupImage__8118d {
+    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4))
+}
+
+.exampleImage__8118d {
+    width: 500px;
+    flex: 1
+}
+
+/*# sourceMappingURL=b955e6d78fa4f8bb.css.map*/

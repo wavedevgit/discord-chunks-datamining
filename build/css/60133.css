@@ -1,0 +1,158 @@
+/**
+  Module ID: 60133
+  Original File Name: 8c0b595f3c7e3c88
+**/
+.modalRoot__78cd9 {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.header__78cd9 {
+    display: flex;
+    justify-content: space-between
+}
+
+.modalContent__78cd9 {
+    padding: 16px 0;
+    background-color: var(--background-secondary)
+}
+
+.searchBar__78cd9 {
+    margin: 0 8px 16px 16px
+}
+
+.rowDivider__78cd9 {
+    height: 2px;
+    background-color: var(--background-primary)
+}
+
+.rowContainer__78cd9,.rowDivider__78cd9 {
+    margin-left: 16px;
+    margin-right: 8px
+}
+
+.rowContainer__78cd9 {
+    padding: 8px 16px 8px 0;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: var(--background-secondary)
+}
+
+.rowContainer__78cd9,.rowLeft__78cd9 {
+    display: flex;
+    align-items: center
+}
+
+.rowLeft__78cd9 {
+    flex: 1;
+    min-width: 0
+}
+
+.rowAvatar__78cd9 {
+    flex: 0 0 40px;
+    height: 40px
+}
+
+.rowNameContainer__78cd9 {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-right: 8px
+}
+
+.rowName__78cd9,.rowSubName__78cd9 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.rowSubName__78cd9 {
+    color: var(--header-secondary)
+}
+
+.rowRight__78cd9 {
+    flex: 0 0 auto
+}
+
+.footer__78cd9 {
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    margin: 0
+}
+
+.footerDivider__78cd9 {
+    width: 100%;
+    height: 1px;
+    background-color: var(--background-primary)
+}
+
+.activityInfoOuterContainer__78cd9 {
+    padding: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: var(--background-secondary-alt)
+}
+
+.activityInfoInnerContainer__78cd9 {
+    border-radius: 4px;
+    display: flex;
+    overflow: hidden
+}
+
+.activityInfoImage__78cd9 {
+    height: 80px;
+    aspect-ratio: 16/9;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.activityInfoText__78cd9 {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    min-width: 0
+}
+
+.ellipsis__78cd9 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.copySendBar__78cd9 {
+    padding: 16px;
+    justify-content: space-between;
+    background-color: var(--background-secondary-alt)
+}
+
+.copyButton__78cd9,.copySendBar__78cd9 {
+    display: flex;
+    align-items: center
+}
+
+.copyButton__78cd9 {
+    gap: 4px
+}
+
+.acronym__78cd9 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-secondary-alt);
+    color: var(--text-normal);
+    font-weight: 500;
+    line-height: 1.2em;
+    white-space: nowrap;
+    flex: none;
+    border-radius: 20px
+}
+
+/*# sourceMappingURL=8c0b595f3c7e3c88.css.map*/

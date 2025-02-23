@@ -1,0 +1,78 @@
+/**
+  Module ID: 21971
+  Original File Name: 5a795836bc9550d3
+**/
+.footer__1c948 {
+    display: flex;
+    justify-content: space-between
+}
+
+.content__1c948 {
+    padding: 0 var(--modal-horizontal-padding) var(--modal-vertical-padding)
+}
+
+.buttons__1c948 {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.inputContainer__1c948 {
+    position: relative;
+    margin-top: 16px
+}
+
+.emojiButtonContainer__1c948 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: var(--space-12);
+    top: 0;
+    bottom: 0
+}
+
+.emojiButton__1c948.fullOpacity__1c948 {
+    opacity: 1
+}
+
+.emoji__1c948 {
+    width: 20px;
+    height: 20px
+}
+
+.input__1c948 {
+    padding-left: 40px;
+    padding-right: 36px
+}
+
+.clearButton__1c948 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    transition: opacity .2s ease-in-out;
+    opacity: .6;
+    line-height: 0;
+    height: 100%
+}
+
+.clearButton__1c948:focus,.clearButton__1c948:hover {
+    opacity: 1
+}
+
+.clearIcon__1c948 {
+    width: 16px;
+    height: 16px;
+    color: var(--interactive-normal)
+}
+
+.moderatedCheckbox__1c948 {
+    margin-left: var(--modal-horizontal-padding);
+    margin-bottom: var(--modal-vertical-padding)
+}
+
+.visual-refresh .moderatedCheckbox__1c948 {
+    margin-bottom: 0
+}
+
+/*# sourceMappingURL=5a795836bc9550d3.css.map*/

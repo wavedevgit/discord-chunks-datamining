@@ -1,0 +1,138 @@
+/**
+  Module ID: 36371
+  Original File Name: b41d683e41d0742a
+**/
+.marker__9d896 {
+    margin-left: 4px
+}
+
+.container_e45886 {
+    padding: 48px 20px 20px
+}
+
+.containerWithHeader_e45886 {
+    padding: 16px
+}
+
+.header_e45886 {
+    margin-bottom: 12px
+}
+
+.closeButton_e45886 {
+    position: absolute;
+    right: 12px;
+    top: 12px
+}
+
+.footerButtons_e45886 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.removeButton_e45886 {
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.rightButtons_e45886 {
+    align-items: center;
+    display: flex
+}
+
+.separator_e45886 {
+    height: 1px;
+    background: var(--background-modifier-accent);
+    margin: 24px 0
+}
+
+.formGroup_e45886 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.splitGroup_e45886 {
+    display: flex;
+    justify-content: space-between
+}
+
+.channelIcon_e45886 {
+    margin-top: 2px
+}
+
+.welcomeMessageTextInput_e45886 {
+    min-height: 200px
+}
+
+.uploadImage_e45886 {
+    height: 72px;
+    width: 72px;
+    border-radius: var(--radius-xs);
+    border: 1px solid var(--background-tertiary);
+    background: var(--background-secondary-alt);
+    background-size: 72px 72px
+}
+
+.uploader_e45886:hover .uploadImageIcon_e45886 {
+    background: var(--background-floating)
+}
+
+.uploader_e45886 .uploadImageIcon_e45886 {
+    background: var(--background-secondary-alt);
+    background-image: none;
+    border-radius: 0;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    left: 24px;
+    color: var(--interactive-normal);
+    pointer-events: none
+}
+
+.iconUploadContainer_e45886 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 8px
+}
+
+.iconUploadContainer_e45886:hover .imageOverlay_e45886 {
+    display: block
+}
+
+.iconUpload_e45886 {
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--background-tertiary);
+    background-color: var(--background-secondary-alt);
+    padding: 8px;
+    color: var(--interactive-normal);
+    cursor: pointer
+}
+
+.iconUpload_e45886:hover {
+    color: var(--interactive-hover)
+}
+
+.iconUpload_e45886:active {
+    color: var(--interactive-active)
+}
+
+.uploadMenuItem_e45886 {
+    position: relative
+}
+
+.imageOverlay_e45886 {
+    display: none;
+    background-color: rgba(0,0,0,.5019607843137255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+    border-radius: var(--radius-sm)
+}
+
+/*# sourceMappingURL=b41d683e41d0742a.css.map*/

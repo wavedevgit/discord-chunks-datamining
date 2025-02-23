@@ -1,0 +1,129 @@
+/**
+  Module ID: 77578
+  Original File Name: 907acab10bc7f248
+**/
+.headerGuildName__949ab {
+    color: var(--header-primary)
+}
+
+.headerGuildBadge__949ab {
+    display: inline-block;
+    margin: 0 4px 0 2px
+}
+
+.flowerStar__949ab {
+    display: block
+}
+
+.main__949ab {
+    background: var(--background-primary);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    width: 440px;
+    position: relative
+}
+
+.close__949ab {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 0;
+    height: 24px
+}
+
+.guildIcon__949ab {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.header__949ab {
+    color: var(--header-secondary);
+    text-align: center
+}
+
+.guildDescription__949ab {
+    margin-top: 8px;
+    text-align: center;
+    padding: 0 8px
+}
+
+.choiceHeader__949ab {
+    margin-top: 32px;
+    align-self: flex-start
+}
+
+.options__949ab {
+    width: 100%;
+    margin-top: 8px
+}
+
+.optionContainer__949ab {
+    margin-top: 8px;
+    background: var(--background-secondary);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.optionContainer__949ab:hover {
+    background: var(--background-secondary-alt);
+    cursor: pointer
+}
+
+.optionTextContainer__949ab {
+    flex: 1;
+    margin-left: 12px;
+    margin-right: 16px
+}
+
+.optionArrow__949ab {
+    color: var(--text-normal)
+}
+
+.channelIcon__949ab,.optionEmoji__949ab {
+    width: 24px;
+    height: 24px
+}
+
+.channelIcon__949ab {
+    color: var(--channel-icon)
+}
+
+.channelTitleIcon__949ab {
+    color: var(--header-secondary);
+    vertical-align: middle;
+    margin-right: 2px
+}
+
+.channelDescription__949ab {
+    color: var(--interactive-active)
+}
+
+.skip__949ab {
+    margin-top: 8px
+}
+
+.skipColor__949ab {
+    color: var(--interactive-normal)
+}
+
+.skipColor__949ab:hover {
+    color: var(--interactive-hover)
+}
+
+.skipColor__949ab:active {
+    color: var(--interactive-active)
+}
+
+@media (max-width: 485px) {
+    .main__949ab {
+        width: 350px
+    }
+}
+
+/*# sourceMappingURL=907acab10bc7f248.css.map*/

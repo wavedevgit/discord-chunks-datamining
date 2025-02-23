@@ -1,0 +1,248 @@
+/**
+  Module ID: 31649
+  Original File Name: 6c34edde1f911ac6
+**/
+.formGroup__9b8f6 {
+    margin-bottom: 20px
+}
+
+.formDivider__9b8f6 {
+    margin-bottom: 16px
+}
+
+.modalRoot__9b8f6 {
+    overflow: visible
+}
+
+.inputContainer__9b8f6 {
+    position: relative
+}
+
+.modalCloseButton__9b8f6 {
+    position: absolute;
+    top: 12px;
+    right: 12px
+}
+
+.headerText__9b8f6 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--interactive-active)
+}
+
+.emojiButton__9b8f6.fullOpacity__9b8f6 {
+    opacity: 1
+}
+
+.emojiButtonContainer__9b8f6 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 10px;
+    height: 100%
+}
+
+.emoji__9b8f6 {
+    width: 22px;
+    height: 22px
+}
+
+.input__9b8f6 {
+    padding-left: 42px;
+    padding-right: 36px
+}
+
+.clearButton__9b8f6 {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: opacity .2s ease-in-out;
+    line-height: 0;
+    opacity: .6
+}
+
+.clearButton__9b8f6:focus,.clearButton__9b8f6:hover {
+    opacity: 1
+}
+
+.clearIcon__9b8f6 {
+    width: 16px;
+    height: 16px;
+    color: var(--interactive-normal)
+}
+
+.headerContainer__9b8f6 {
+    overflow: visible;
+    position: relative
+}
+
+.header__9b8f6 {
+    padding-top: 52px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.art__9b8f6 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 200px;
+    height: 120px;
+    background-image: url(/assets/7d67842f58b6d155.svg)
+}
+
+.cancelButton__9b8f6 {
+    color: var(--interactive-active)
+}
+
+.cancelButton__9b8f6:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
+.statusOptionItem__9b8f6 {
+    display: flex;
+    align-items: center
+}
+
+.statusIcon__9b8f6 {
+    margin-right: 8px
+}
+
+.profilePreviewContainer__8771c {
+    width: 300px
+}
+
+.usernameContainer__8771c {
+    padding: 8px 16px 16px
+}
+
+.custom-profile-theme .avatar__8771c {
+    top: 61px;
+    left: 16px
+}
+
+.formGroup__7fd1c {
+    margin-bottom: 20px
+}
+
+.inputContainer__7fd1c {
+    position: relative
+}
+
+.emojiButton__7fd1c.fullOpacity__7fd1c {
+    opacity: 1
+}
+
+.emojiButtonContainer__7fd1c {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 10px;
+    z-index: 1;
+    height: 100%
+}
+
+.emoji__7fd1c {
+    width: 22px;
+    height: 22px
+}
+
+.input__7fd1c {
+    padding-left: 42px;
+    padding-right: 36px
+}
+
+.clearButtonWrapper__7fd1c {
+    max-height: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: flex
+}
+
+.clearButton__7fd1c {
+    opacity: .6
+}
+
+.full-motion .clearButton__7fd1c {
+    transition: opacity .2s ease-in-out
+}
+
+.clearButton__7fd1c:focus,.clearButton__7fd1c:hover {
+    opacity: 1
+}
+
+.clearIcon__7fd1c {
+    width: 16px;
+    height: 16px;
+    color: var(--interactive-normal)
+}
+
+.statusOptionItem__7fd1c {
+    display: flex;
+    align-items: center
+}
+
+.statusIcon__7fd1c {
+    margin-right: 8px
+}
+
+.header__7fd1c {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.headerTitle__7fd1c {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center
+}
+
+.headerCloseButton__7fd1c {
+    flex-shrink: 0;
+    padding: 0;
+    margin-right: -8px
+}
+
+.footer__7fd1c {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.clearAfterSelectContainer__7fd1c {
+    margin-left: -12px
+}
+
+.profilePreview__7fd1c {
+    margin-top: 8px;
+    margin-bottom: 36px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.invisibleStatusNotice__7fd1c {
+    margin-top: 10px
+}
+
+/*# sourceMappingURL=6c34edde1f911ac6.css.map*/

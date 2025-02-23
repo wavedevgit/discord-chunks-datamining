@@ -1,0 +1,27 @@
+/**
+  Module ID: 46161
+  Original File Name: ba4e53c611db5699
+**/
+.name_c524f4 {
+    margin-top: 16px
+}
+
+.description_c524f4 {
+    margin-top: 8px;
+    margin-bottom: 16px
+}
+
+.reset_c524f4 {
+    cursor: pointer;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 8px
+}
+
+.reset_c524f4:hover {
+    opacity: 1;
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
+/*# sourceMappingURL=ba4e53c611db5699.css.map*/

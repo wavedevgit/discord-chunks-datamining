@@ -1,0 +1,44 @@
+/**
+  Module ID: 7302
+  Original File Name: 1a307d623ff3ed90
+**/
+.header__89b2b {
+    padding: 24px 16px;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.divider__89b2b {
+    margin: 0 16px;
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.content__89b2b {
+    padding: 24px 16px
+}
+
+.closeButton__89b2b {
+    position: absolute;
+    right: 16px;
+    top: 24px
+}
+
+.earningsImage__89b2b {
+    width: 241px
+}
+
+.demo__89b2b {
+    width: 663px;
+    border-radius: 12px
+}
+
+.content__89b2b {
+    gap: 24px;
+    display: flex
+}
+
+.description__89b2b {
+    margin-right: 24px
+}
+
+/*# sourceMappingURL=1a307d623ff3ed90.css.map*/

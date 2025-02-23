@@ -1,0 +1,68 @@
+/**
+  Module ID: 23401
+  Original File Name: 66b801b299e34fa8
+**/
+.content__60d39 {
+    padding: 24px
+}
+
+.modalHeader__60d39 {
+    margin-bottom: 16px
+}
+
+.marginAfter__60d39 {
+    margin-bottom: 8px
+}
+
+.separator__60d39 {
+    width: 100%;
+    height: 1px;
+    background-color: var(--background-modifier-accent);
+    margin: 24px 0
+}
+
+.failingBlock__60d39 {
+    margin-bottom: 24px
+}
+
+.closeButton__60d39 {
+    position: absolute;
+    top: 12px;
+    right: 12px
+}
+
+.progressWrapper__60d39 {
+    position: relative;
+    height: 8px;
+    margin: 16px 0 8px
+}
+
+.progressBackground__60d39 {
+    width: 100%;
+    background-color: var(--background-secondary)
+}
+
+.progressBackground__60d39,.progressBar__60d39 {
+    position: absolute;
+    height: 8px;
+    border-radius: 4px
+}
+
+.progressBar__60d39 {
+    transition: background-color .2s ease
+}
+
+.labelWrapper__60d39 {
+    display: flex;
+    justify-content: space-between
+}
+
+.requirement__60d39 {
+    text-align: right
+}
+
+.bold__60d39 {
+    font-weight: 600
+}
+
+/*# sourceMappingURL=66b801b299e34fa8.css.map*/

@@ -1,0 +1,109 @@
+/**
+  Module ID: 10667
+  Original File Name: a286c62093977280
+**/
+.modal__4b2e7 {
+    width: 408px
+}
+
+.container__4b2e7 {
+    max-height: 720px;
+    display: flex;
+    flex-direction: column
+}
+
+.header__4b2e7 {
+    padding: 24px 16px 0;
+    flex-grow: 0;
+    overflow: hidden
+}
+
+.stepHeader__4b2e7 {
+    margin-bottom: 16px;
+    text-transform: uppercase
+}
+
+.title__4b2e7 {
+    text-align: center
+}
+
+.closeButton__4b2e7 {
+    z-index: 1000;
+    position: absolute;
+    top: 12px;
+    right: 12px
+}
+
+.illustration__4b2e7 {
+    margin-bottom: 16px
+}
+
+.body__4b2e7,.consentContent__4b2e7 {
+    padding-bottom: 16px
+}
+
+.body__4b2e7 {
+    text-align: center
+}
+
+.body__4b2e7 p {
+    margin: 8px 0
+}
+
+.footer__4b2e7 {
+    background-color: var(--background-tertiary);
+    flex-direction: column;
+    align-items: center
+}
+
+.footerButton__4b2e7 {
+    align-self: stretch
+}
+
+.launchIcon__4b2e7 {
+    margin-left: 4px;
+    vertical-align: bottom
+}
+
+.valueProps__4b2e7 {
+    margin-top: 24px;
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-sm)
+}
+
+.valueProp__4b2e7 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 12px
+}
+
+.valuePropIconContainer__4b2e7 {
+    display: flex;
+    justify-content: center;
+    margin-right: 12px;
+    padding: 4px;
+    color: var(--interactive-normal)
+}
+
+.valuePropText__4b2e7 {
+    display: flex;
+    flex-direction: column
+}
+
+.valuePropDivider__4b2e7 {
+    height: 1px;
+    flex: 1;
+    margin-left: 56px;
+    margin-right: 12px;
+    background-color: var(--background-modifier-accent)
+}
+
+.slideContainer__4b2e7 {
+    display: flex;
+    flex-direction: column;
+    max-height: max(200px, min(calc(100vh - 80px), 720px))
+}
+
+/*# sourceMappingURL=a286c62093977280.css.map*/

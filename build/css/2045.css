@@ -1,0 +1,33 @@
+/**
+  Module ID: 2045
+  Original File Name: b3e499c3bfc5b311
+**/
+.modalHeader__68de9 {
+    padding-top: 32px;
+    justify-content: center
+}
+
+.modalHeader__68de9 .closeButton__68de9 {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: var(--interactive-normal)
+}
+
+.modalHeader__68de9 .closeButton__68de9:hover {
+    color: var(--interactive-hover)
+}
+
+.modalContent__68de9 {
+    text-align: center
+}
+
+.contentText__68de9 {
+    margin-bottom: 24px
+}
+
+.button__68de9 {
+    padding: 11px 20px
+}
+
+/*# sourceMappingURL=b3e499c3bfc5b311.css.map*/

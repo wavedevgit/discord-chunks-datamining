@@ -1,0 +1,77 @@
+/**
+  Module ID: 21112
+  Original File Name: cf0f189e381bfb19
+**/
+.closeButton__9cef2 {
+    position: absolute;
+    top: 12px;
+    right: 12px
+}
+
+.modalContent__9cef2 {
+    padding-top: 16px;
+    padding-bottom: 16px
+}
+
+.emojiContainer__9cef2 {
+    background-color: var(--background-secondary-alt);
+    border-radius: 4px;
+    overflow: hidden
+}
+
+.emojiRow__9cef2 {
+    background: var(--background-secondary-alt);
+    padding: 18px 16px;
+    position: relative;
+    cursor: pointer
+}
+
+.emojiRow__9cef2:hover {
+    background-color: var(--background-tertiary)
+}
+
+.emojiRow__9cef2+.emojiRow__9cef2:before {
+    content: "";
+    position: absolute;
+    top: -.5px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    margin-left: 56px;
+    background-color: var(--background-modifier-accent)
+}
+
+.emojiLabel__9cef2 {
+    display: flex;
+    align-items: center;
+    padding-right: 8px
+}
+
+.emojiImage__9cef2 {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px
+}
+
+.emojiAlias__9cef2 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.emojiAlias__9cef2:after,.emojiAlias__9cef2:before {
+    content: ":";
+    font-weight: 500;
+    opacity: .3
+}
+
+.modalFooter__9cef2 {
+    justify-content: space-between
+}
+
+.cancelButton__9cef2 {
+    min-width: 0;
+    padding: 0
+}
+
+/*# sourceMappingURL=cf0f189e381bfb19.css.map*/

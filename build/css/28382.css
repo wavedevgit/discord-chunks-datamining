@@ -1,0 +1,62 @@
+/**
+  Module ID: 28382
+  Original File Name: 650d55d62c996863
+**/
+.center__47458 {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.textCenter__47458 {
+    text-align: center
+}
+
+.radioGroup__47458 {
+    padding-top: 16px;
+    padding-bottom: 8px
+}
+
+.button__47458 {
+    padding-left: 16px
+}
+
+.options__47458 {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.optionContainer__47458 {
+    border: 1px solid var(--background-accent);
+    border-radius: 4px;
+    padding: 12px;
+    display: flex
+}
+
+.optionContainerOther__47458 {
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.optionText__47458 {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 14px
+}
+
+.textboxContainer__47458 {
+    width: 100%
+}
+
+.falseAlarmReasonText__47458 {
+    margin-top: 8px;
+    margin-left: 32px;
+    flex: 1
+}
+
+/*# sourceMappingURL=650d55d62c996863.css.map*/

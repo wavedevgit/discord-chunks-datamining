@@ -1,0 +1,43 @@
+/**
+  Module ID: 48707
+  Original File Name: cc7d27516e9ef276
+**/
+.header__6dc27 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px
+}
+
+.title__6dc27 {
+    font-weight: 700
+}
+
+.subtitle__6dc27,.title__6dc27 {
+    text-align: center
+}
+
+.subtitle__6dc27 {
+    margin-top: 8px
+}
+
+.modalCloseButton__6dc27 {
+    position: absolute;
+    top: 16px;
+    right: 16px
+}
+
+.content__6dc27 {
+    padding-bottom: 16px
+}
+
+.newPassword__6dc27 {
+    margin-top: 16px
+}
+
+.cancel__6dc27 {
+    margin-right: 8px
+}
+
+/*# sourceMappingURL=cc7d27516e9ef276.css.map*/

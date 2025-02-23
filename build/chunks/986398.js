@@ -1,0 +1,20 @@
+/** Chunk was on 11212 (5dc55a6ee4209f2c.js) **/
+"use strict";
+c.d(e, {
+  Z: () => n
+});
+var d = c(200651),
+  a = c(81063),
+  s = c(388032);
+
+function n(t) {
+  let {
+    leaderboard: e,
+    className: c
+  } = t, n = (0, a.getAssetImage)(e.settings.application_id, e.settings.winner_asset_id);
+  return null == n ? null : (0, d.jsx)("img", {
+    className: c,
+    src: n,
+    alt: s.NW.string(s.t.QyRmzc)
+  })
+}

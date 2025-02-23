@@ -1,0 +1,52 @@
+/**
+  Module ID: 35401
+  Original File Name: bce1b32d1f234200
+**/
+.emailVerificationModal_a2241a {
+    position: relative;
+    width: 440px;
+    padding: 20px
+}
+
+.emailVerificationModal_a2241a .animationContainer_a2241a {
+    position: absolute;
+    top: -150px;
+    left: 90px;
+    right: 90px
+}
+
+.emailVerificationModal_a2241a .title_a2241a {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 100px;
+    color: var(--header-primary)
+}
+
+.emailVerificationModal_a2241a .body_a2241a {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--header-secondary)
+}
+
+.emailVerificationModal_a2241a .container_a2241a {
+    align-self: stretch
+}
+
+.emailVerificationModal_a2241a .fullWidthButton_a2241a {
+    width: 100%
+}
+
+@media (max-width: 485px) {
+    .emailVerificationModal_a2241a {
+        box-sizing: border-box
+    }
+
+    .emailVerificationModal_a2241a .animationContainer_a2241a {
+        top: -35px;
+        transform: scale(.75)
+    }
+}
+
+/*# sourceMappingURL=bce1b32d1f234200.css.map*/

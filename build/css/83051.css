@@ -1,0 +1,55 @@
+/**
+  Module ID: 83051
+  Original File Name: d5d075ef32e8f284
+**/
+.formPriorityImageContainer__2cf82 {
+    display: flex;
+    flex-direction: column
+}
+
+.formPriorityTitleContainer__2cf82 {
+    display: flex;
+    flex: 1;
+    align-items: center
+}
+
+.formPriorityTitle__2cf82 {
+    margin-top: 10px;
+    margin-left: 10px
+}
+
+.formPriorityDescription__2cf82 {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.formPriorityImage__2cf82 {
+    width: 24px;
+    height: 24px
+}
+
+.attachments__2cf82 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--space-8);
+    gap: var(--space-8)
+}
+
+.attachment__2cf82 {
+    position: relative;
+    background-color: var(--background-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-subtle);
+    padding: var(--space-8)
+}
+
+.removeAttachment__2cf82 {
+    position: absolute;
+    top: var(--space-4);
+    right: var(--space-4)
+}
+
+/*# sourceMappingURL=d5d075ef32e8f284.css.map*/

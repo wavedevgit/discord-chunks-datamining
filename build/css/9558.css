@@ -1,0 +1,280 @@
+/**
+  Module ID: 9558
+  Original File Name: cb354a997d61033d
+**/
+.container_fa0751 {
+    padding: 40px 28px 24px 24px;
+    background-color: var(--background-secondary);
+    display: flex;
+    flex-direction: column;
+    width: 279px
+}
+
+.content_fa0751 {
+    flex: 1;
+    margin-bottom: 24px
+}
+
+.listingInfoRow_fa0751 {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 16px;
+    margin-bottom: 16px
+}
+
+.avatar_fa0751 {
+    width: 44px;
+    height: 44px;
+    border-radius: 2px
+}
+
+.tierName_fa0751 {
+    margin-bottom: 2px
+}
+
+.listingRoleRow_fa0751 {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--interactive-active)
+}
+
+.roleColor_fa0751 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%
+}
+
+.roleIcon_fa0751 {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-left: 8px;
+    margin-right: 4px
+}
+
+.tierDescription_fa0751 {
+    margin-top: 16px;
+    color: var(--text-muted)
+}
+
+.divider_fa0751 {
+    border-bottom: 1px solid var(--background-modifier-accent);
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.perksHeader_fa0751 {
+    margin-bottom: 4px
+}
+
+.benefitTypeHeader_fa0751 {
+    padding-top: 12px;
+    padding-bottom: 14px;
+    color: var(--text-muted)
+}
+
+.channelBenefitRow_fa0751 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-left: 8px
+}
+
+.channelBenefitIcon_fa0751 {
+    width: 16px;
+    height: 16px;
+    color: var(--interactive-normal)
+}
+
+.channelBenefitText_fa0751 {
+    margin-left: 14px;
+    margin-right: 6px;
+    flex: 1
+}
+
+.channelBenefitTagline_fa0751 {
+    color: var(--text-muted)
+}
+
+.intangibleBenefitRow_fa0751 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-left: 8px
+}
+
+.intangibleBenefitIcon_fa0751 {
+    width: 12px;
+    height: 12px;
+    margin-right: 14px;
+    border-radius: 50%;
+    background-color: var(--background-modifier-selected)
+}
+
+.container_afa88e {
+    padding: 40px 28px 24px 24px;
+    background-color: var(--background-secondary);
+    display: flex;
+    flex-direction: column;
+    max-width: 279px
+}
+
+.content_afa88e {
+    flex: 1
+}
+
+.bodyText_afa88e {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    color: var(--text-muted)
+}
+
+.priceRow_afa88e {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    align-items: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 8px;
+    border: 1px solid var(--interactive-muted);
+    margin-bottom: 12px
+}
+
+.selected_afa88e {
+    background-color: var(--background-modifier-accent)
+}
+
+.circle_afa88e {
+    stroke: var(--interactive-muted);
+    stroke-width: 1;
+    fill: none
+}
+
+.priceRowText_afa88e {
+    margin-left: 12px
+}
+
+.modalRoot__6f8c0 {
+    border-radius: 12px
+}
+
+.closeButton__6f8c0 {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    color: var(--interactive-normal);
+    z-index: 1;
+    cursor: pointer
+}
+
+.modalContent__6f8c0 {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-primary);
+    padding: 0;
+    border-radius: 12px
+}
+
+.no-webkit-scrollbar .modalContent__6f8c0 {
+    scrollbar-width: none
+}
+
+.modalContent__6f8c0::-webkit-scrollbar {
+    width: 0;
+    height: 0
+}
+
+.templatesContainer__6f8c0 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 40px 124px 24px 40px;
+    max-width: 508px;
+    position: relative
+}
+
+.templatesContainerBody__6f8c0 {
+    margin-bottom: 24px;
+    height: 640px;
+    flex-shrink: 1;
+    flex-grow: 1
+}
+
+.templatesContentContainer__6f8c0 {
+    justify-content: center;
+    align-self: stretch;
+    padding-top: 24px
+}
+
+.modalBodyText__6f8c0 {
+    margin-top: 8px
+}
+
+.creatorPortalText__6f8c0,.modalBodyText__6f8c0 {
+    margin-bottom: 8px;
+    color: var(--header-secondary)
+}
+
+.templateCardList__6f8c0 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 24px;
+    gap: 24px
+}
+
+.templateCard__6f8c0 {
+    border-radius: 8px;
+    overflow: hidden;
+    line-height: 0
+}
+
+.templateNameRow__6f8c0 {
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-secondary);
+    height: 24px
+}
+
+.unselectedTemplateName__6f8c0 {
+    color: var(--text-muted)
+}
+
+.templateCardImage__6f8c0 {
+    max-width: 100%
+}
+
+.createFromStratchButton__6f8c0 {
+    margin-top: 16px;
+    border-radius: 4px
+}
+
+.createFromStratchButtonInner__6f8c0 {
+    display: flex;
+    align-items: center
+}
+
+.editIcon__6f8c0 {
+    margin-right: 8px
+}
+
+.blackoutOverlay__6f8c0 {
+    background-color: hsl(var(--black-500-hsl)/.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100
+}
+
+/*# sourceMappingURL=cb354a997d61033d.css.map*/

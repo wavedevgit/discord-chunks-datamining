@@ -1,0 +1,26 @@
+/**
+  Module ID: 33811
+  Original File Name: f74c5bc970d17b02
+**/
+.header__11268 {
+    justify-content: space-between
+}
+
+.content__11268 {
+    display: flex;
+    flex-direction: column;
+    min-width: -moz-fit-content;
+    min-width: fit-content
+}
+
+.footer__11268 {
+    gap: var(--spacing-8);
+    align-items: center
+}
+
+.root__11268 {
+    min-width: -moz-fit-content;
+    min-width: fit-content
+}
+
+/*# sourceMappingURL=f74c5bc970d17b02.css.map*/

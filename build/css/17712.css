@@ -1,0 +1,54 @@
+/**
+  Module ID: 17712
+  Original File Name: 3b10edaf5d98a888
+**/
+.card__9522a {
+    margin-bottom: 20px;
+    padding: 10px;
+    line-height: 20px
+}
+
+.itemGroup__9522a {
+    margin-bottom: 8px
+}
+
+.modalContent__9522a {
+    padding-bottom: 24px
+}
+
+.reset__9522a {
+    cursor: pointer;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 8px
+}
+
+.reset__9522a:hover {
+    opacity: 1;
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
+.nickError__9522a {
+    margin-top: 8px
+}
+
+.warning__9522a {
+    color: var(--white-500)
+}
+
+.disabled__9522a {
+    opacity: .4;
+    position: relative
+}
+
+.disabled__9522a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+/*# sourceMappingURL=3b10edaf5d98a888.css.map*/

@@ -1,0 +1,109 @@
+/**
+  Module ID: 22942
+  Original File Name: a77b19768d76db05
+**/
+.modalRoot_d507dd {
+    height: 100%;
+    width: auto
+}
+
+.contentWrapper_d507dd {
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-border),var(--shadow-high);
+    box-sizing: border-box;
+    display: grid;
+    height: 100%;
+    width: 424px;
+    grid-template-rows: auto 1fr;
+    overflow: hidden;
+    position: relative;
+    z-index: 1
+}
+
+.nav_d507dd {
+    padding: 16px 16px 8px;
+    height: -moz-min-content;
+    height: min-content
+}
+
+.navUploadSelected_d507dd {
+    padding-bottom: 16px;
+    box-shadow: var(--elevation-low)
+}
+
+.navList_d507dd {
+    display: flex
+}
+
+.navItem_d507dd {
+    flex: 0 0 auto
+}
+
+.navItem_d507dd+.navItem_d507dd {
+    margin-left: 8px
+}
+
+.navButton_d507dd {
+    border-radius: var(--radius-xs);
+    color: var(--interactive-normal);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 2px 8px;
+    transition: background-color .1s ease-in-out, color .1s ease-in-out
+}
+
+.navButton_d507dd:hover {
+    color: var(--interactive-hover)
+}
+
+.navButtonActive_d507dd {
+    background-color: var(--background-accent)
+}
+
+.navButtonActive_d507dd,.navButtonActive_d507dd:hover {
+    color: var(--white-500)
+}
+
+.uploadContainer_d507dd {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: var(--text-normal)
+}
+
+.uploadContainer_d507dd,.uploadIconOuterContainer_d507dd {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.uploadIconOuterContainer_d507dd {
+    position: relative
+}
+
+.uploadIconInnerContainer_d507dd {
+    padding: 8px;
+    position: absolute;
+    border-radius: var(--radius-sm);
+    background: var(--background-tertiary)
+}
+
+.uploadIcon_d507dd {
+    width: 40px;
+    height: 40px
+}
+
+.uploadInfo_d507dd {
+    padding-top: 24px;
+    padding-bottom: 10px
+}
+
+.uploadError_d507dd {
+    padding: 8px 32px;
+    text-align: center;
+    line-height: 20px
+}
+
+/*# sourceMappingURL=a77b19768d76db05.css.map*/

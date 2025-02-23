@@ -1,0 +1,4 @@
+/** Chunk was on web (https://canary.discord.comweb.9f0be545d3e34886.js.js) **/
+e.exports = function() {
+  throw Error("Readable.from is not available in the browser")
+}

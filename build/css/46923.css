@@ -1,0 +1,98 @@
+/**
+  Module ID: 46923
+  Original File Name: c207f66c36cca327
+**/
+.content__50a6f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: stretch;
+    padding: 22px 24px
+}
+
+.header__50a6f {
+    margin-bottom: 6px
+}
+
+.tip__50a6f {
+    margin-top: 8px;
+    text-align: center
+}
+
+.footer__50a6f {
+    padding: 24px 25px
+}
+
+.applicationSearch__50a6f,.radioGroup__50a6f {
+    margin-top: 24px;
+    align-self: stretch
+}
+
+.applicationSearch__50a6f {
+    padding-top: 20px;
+    border-top: 1px solid var(--background-modifier-accent)
+}
+
+.gameSuggestion__50a6f {
+    display: flex;
+    flex-direction: row;
+    gap: 8px
+}
+
+.gameSuggestionRadioItem__50a6f {
+    background-color: transparent;
+    transition: background-color .2s ease;
+    padding: 4px;
+    margin: 0
+}
+
+.gameSuggestionRadioItem__50a6f:hover {
+    background-color: var(--background-modifier-accent)
+}
+
+.otherFeedbackInput__50a6f {
+    margin-top: 24px;
+    align-self: stretch;
+    width: 100%
+}
+
+.searchBar__50a6f {
+    margin-bottom: 8px
+}
+
+.gameInfoBox__50a6f {
+    border-radius: 8px;
+    margin-top: 24px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.16),0 1.5px 0 0 rgba(0,0,0,.05),0 2px 0 0 rgba(0,0,0,.05)
+}
+
+.gameIcon__50a6f {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    display: block
+}
+
+.smolGameIcon__50a6f {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: var(--radius-xs)
+}
+
+.customGameNameIcon__50a6f {
+    padding-right: 2px
+}
+
+.gameTitle__50a6f {
+    color: hsla(0,0%,100%,.85)
+}
+
+/*# sourceMappingURL=c207f66c36cca327.css.map*/

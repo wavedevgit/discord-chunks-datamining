@@ -1,0 +1,135 @@
+/**
+  Module ID: 3073
+  Original File Name: c1af58e4cde7a4f2
+**/
+.container_f01b76 {
+    width: 628px;
+    height: 448px;
+    border-radius: 14px;
+    border: 1px solid rgba(109,111,120,.15);
+    border: 1px solid var(--live-stage-tile-border,rgba(109,111,120,.15));
+    background: var(--black)
+}
+
+.marginContainer_f01b76 {
+    margin: 32px 108px;
+    flex-direction: column
+}
+
+.gifContainer_f01b76,.marginContainer_f01b76 {
+    display: flex;
+    justify-content: center
+}
+
+.gifContainer_f01b76 {
+    align-items: center;
+    height: 98px;
+    width: 98px;
+    align-self: center;
+    flex-shrink: 0
+}
+
+.gif_f01b76 {
+    height: 100%;
+    mix-blend-mode: lighten
+}
+
+.list_f01b76 {
+    margin-top: 12px;
+    margin-bottom: 28px;
+    flex-direction: column
+}
+
+.list_f01b76,.listItem_f01b76 {
+    display: flex;
+    gap: 10px
+}
+
+.listItem_f01b76 {
+    flex-direction: row;
+    align-items: center
+}
+
+.listItemIcon_f01b76 {
+    width: 32px;
+    height: 32px
+}
+
+.listItemText_f01b76 {
+    color: hsla(0,0%,100%,.75);
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500
+}
+
+.button_f01b76 {
+    align-self: center;
+    width: 178px;
+    height: 48px
+}
+
+.buttonColor_f01b76 {
+    background: var(--brand-500);
+    color: var(--white)
+}
+
+.titleLeadIn_f01b76 {
+    font-family: ABC Ginto Normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px
+}
+
+.title_f01b76,.titleLeadIn_f01b76 {
+    color: var(--white);
+    font-style: normal
+}
+
+.title_f01b76 {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-headline);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 62px;
+    text-transform: uppercase;
+    white-space: nowrap
+}
+
+.closeButton_f01b76 {
+    position: absolute;
+    right: 0;
+    margin: 28px
+}
+
+.closeButtonIcon_f01b76 {
+    width: 28px;
+    height: 28px;
+    color: var(--primary-330)
+}
+
+.betaBadge_f01b76 {
+    border-radius: 8px;
+    background: rgba(88,101,242,.33);
+    display: inline-flex;
+    padding: 0 8px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    color: var(--white);
+    text-align: center;
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: .221px;
+    text-transform: uppercase
+}
+
+.orbIconSVG_f01b76 {
+    height: 32px
+}
+
+/*# sourceMappingURL=c1af58e4cde7a4f2.css.map*/

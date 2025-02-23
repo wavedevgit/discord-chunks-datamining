@@ -1,0 +1,91 @@
+/**
+  Module ID: 8653
+  Original File Name: c0bf721d23762115
+**/
+.akaBadge__910e1 {
+    background-color: var(--background-secondary);
+    color: var(--header-secondary);
+    display: inline-block;
+    vertical-align: middle
+}
+
+.header__910e1 {
+    margin: 0 auto
+}
+
+.subHeader__910e1 {
+    text-align: center
+}
+
+.miniAvatar__910e1 {
+    margin-left: 4px
+}
+
+.miniAvatar__910e1,.miniGuildIcon__910e1 {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.miniGuildIcon__910e1 {
+    margin-left: 2px
+}
+
+.akaTransfer__910e1,.guildTransfer__910e1 {
+    display: inline-block
+}
+
+.guildName__910e1,.nickname__910e1 {
+    margin-left: 4px;
+    display: inline-block
+}
+
+.spacing__910e1 {
+    margin-bottom: 20px
+}
+
+.fromToWrapper__910e1 {
+    padding-top: 24px;
+    margin-top: 24px;
+    background: no-repeat 50% 0
+}
+
+.from__910e1,.to__910e1 {
+    border-radius: 50%
+}
+
+.from__910e1 {
+    margin-right: -27px;
+    opacity: .3
+}
+
+.to__910e1 {
+    position: relative;
+    z-index: 1;
+    background-color: var(--background-secondary)
+}
+
+.theme-dark .to__910e1 {
+    box-shadow: 0 0 0 4px var(--primary-600)
+}
+
+.theme-light .to__910e1 {
+    box-shadow: 0 0 0 4px var(--white-500)
+}
+
+.protectedText__910e1 {
+    margin-bottom: 20px
+}
+
+.roleSubscriptionText__910e1 {
+    margin-bottom: 16px
+}
+
+.images-light .fromToWrapper__910e1 {
+    background-image: url(/assets/9e6b1daa9504d89c.svg)
+}
+
+.images-dark .fromToWrapper__910e1 {
+    background-image: url(/assets/8b0b7b6309375fb9.svg)
+}
+
+/*# sourceMappingURL=c0bf721d23762115.css.map*/

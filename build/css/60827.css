@@ -1,0 +1,79 @@
+/**
+  Module ID: 60827
+  Original File Name: ee62eda3b2829c4d
+**/
+.formHeader__80325 {
+    overflow: visible;
+    padding: 16px 16px 0
+}
+
+.formContent__80325 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-bottom: 16px
+}
+
+.formImage__80325 {
+    position: absolute;
+    width: 88px;
+    height: 80px;
+    background-image: url(/assets/4a3edc976e06f278.svg)
+}
+
+.formTitle__80325 {
+    margin-bottom: 8px;
+    margin-top: 95px
+}
+
+.formBody__80325 {
+    text-align: center
+}
+
+.formBody__80325,.formItem__80325 {
+    margin-bottom: 16px
+}
+
+.logoutButton__80325 {
+    margin: 4px auto auto;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.closeButton__80325 {
+    position: absolute;
+    box-sizing: content-box;
+    top: 12px;
+    right: 4px
+}
+
+.successContent__80325 {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.successTitle__80325 {
+    margin-bottom: 12px;
+    text-align: center;
+    color: var(--header-primary)
+}
+
+.successPromotion__80325 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--header-secondary)
+}
+
+.successImage__80325 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 104px;
+    height: 80px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(/assets/535c99dc2f0346cb.svg)
+}
+
+/*# sourceMappingURL=ee62eda3b2829c4d.css.map*/

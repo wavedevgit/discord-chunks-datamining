@@ -1,0 +1,62 @@
+/** Chunk was on 56650 (33b0f97b2e76d752.js) **/
+n.d(t, {
+  T: () => C,
+  Z: () => f
+}), n(653041);
+var l = n(192379),
+  r = n(442837),
+  i = n(734307),
+  a = n(854444),
+  o = n(131704),
+  s = n(680089),
+  c = n(888369),
+  u = n(944486),
+  d = n(981631),
+  E = n(647086);
+
+function f(e) {
+  let {
+    withVoiceChannels: t = !1,
+    withCurrentVoiceChannel: n = !1
+  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, l = arguments.length > 2 ? arguments[2] : void 0;
+  return _(e === E._ || e === d.I_8 ? (0, a.t)() : i.Z.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
+    currentVoiceChannelId: u.Z.getVoiceChannelId(),
+    selectedChannelId: u.Z.getChannelId()
+  }, {
+    withVoiceChannels: t,
+    withCurrentVoiceChannel: n
+  }, l)
+}
+
+function C(e, t, n) {
+  let {
+    withVoiceChannels: i = !1,
+    withCurrentVoiceChannel: a = !1
+  } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {}, o = arguments.length > 4 ? arguments[4] : void 0, d = (0, r.e7)([c.default], () => c.default.getGuildChangeSentinel(e)), E = (0, r.e7)([s.Z], () => s.Z.version), {
+    currentVoiceChannelId: f,
+    selectedChannelId: C
+  } = (0, r.cj)([u.Z], () => ({
+    currentVoiceChannelId: u.Z.getVoiceChannelId(),
+    selectedChannelId: u.Z.getChannelId()
+  }));
+  return (0, l.useMemo)(() => _(t, {
+    currentVoiceChannelId: f,
+    selectedChannelId: C
+  }, {
+    withVoiceChannels: i,
+    withCurrentVoiceChannel: a
+  }, o).map(e => e.id), [t, n, d, E])
+}
+
+function _(e, t) {
+  let {
+    currentVoiceChannelId: n,
+    selectedChannelId: l
+  } = t, {
+    withVoiceChannels: r,
+    withCurrentVoiceChannel: i
+  } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, a = arguments.length > 3 ? arguments[3] : void 0, s = [];
+  return e.forEachShownChannel(e => {
+    ((0, o.r8)(e.type) || r && (0, o.bw)(e.type) || i && (e.id === n || e.id === l)) && s.push(e)
+  }, a), s
+}

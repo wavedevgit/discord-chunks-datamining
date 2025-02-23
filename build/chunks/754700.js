@@ -1,0 +1,14 @@
+/** Chunk was on web (https://canary.discord.comweb.9f0be545d3e34886.js.js) **/
+"use strict";
+n.d(t, {
+  T: () => i,
+  X: () => r
+}), n(47120);
+var r = function(e) {
+  return e.STREAM_ON_DESKTOP = "STREAM_ON_DESKTOP", e.PLAY_ON_DESKTOP = "PLAY_ON_DESKTOP", e.PLAY_ON_XBOX = "PLAY_ON_XBOX", e.PLAY_ON_PLAYSTATION = "PLAY_ON_PLAYSTATION", e.PLAY_ON_DESKTOP_V2 = "PLAY_ON_DESKTOP_V2", e.WATCH_VIDEO = "WATCH_VIDEO", e.PLAY_ACTIVITY = "PLAY_ACTIVITY", e
+}({});
+let i = {
+  ALL: new Set(["PLAY_ACTIVITY", "PLAY_ON_DESKTOP", "PLAY_ON_DESKTOP_V2", "PLAY_ON_PLAYSTATION", "PLAY_ON_XBOX", "STREAM_ON_DESKTOP", "WATCH_VIDEO"]),
+  DESKTOP: new Set(["PLAY_ACTIVITY", "PLAY_ON_DESKTOP", "STREAM_ON_DESKTOP"]),
+  CONSOLE: new Set(["PLAY_ON_PLAYSTATION", "PLAY_ON_XBOX"])
+}

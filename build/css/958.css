@@ -1,0 +1,78 @@
+/**
+  Module ID: 958
+  Original File Name: 805eafe368d865bf
+**/
+.header__8f3be {
+    text-align: center;
+    gap: var(--spacing-16)
+}
+
+.header__8f3be,.heading__8f3be {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.heading__8f3be {
+    gap: var(--spacing-4)
+}
+
+.footer__8f3be {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-8)
+}
+
+.notice__8f3be {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    padding: var(--spacing-24);
+    border-radius: var(--radius-sm);
+    background-color: var(--background-secondary);
+    box-shadow: var(--elevation-low)
+}
+
+.error__8f3be {
+    border-top-left-radius: var(--radius-xs);
+    border-top-right-radius: var(--radius-xs);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.visual-refresh .notice__8f3be {
+    border: 1px solid var(--border-faint);
+    box-shadow: none
+}
+
+.visual-refresh .header__8f3be {
+    margin-bottom: var(--spacing-24)
+}
+
+.visual-refresh .content__8f3be {
+    margin-bottom: var(--spacing-16)
+}
+
+html:not(.visual-refresh) .header__8f3be {
+    padding: var(--spacing-24)
+}
+
+html:not(.visual-refresh) .content__8f3be {
+    padding-left: var(--spacing-24);
+    padding-right: var(--spacing-24);
+    margin-bottom: var(--spacing-24)
+}
+
+.footer__4f15b {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.closeIcon__4f15b {
+    color: var(--text-danger)
+}
+
+/*# sourceMappingURL=805eafe368d865bf.css.map*/

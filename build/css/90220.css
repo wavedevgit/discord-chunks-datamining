@@ -1,0 +1,40 @@
+/**
+  Module ID: 90220
+  Original File Name: 1df1fe947be53a64
+**/
+.header__82995 {
+    padding: 0
+}
+
+.imageContainer__82995 {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c3d50
+}
+
+.content__82995 {
+    padding: 18px 0
+}
+
+.footer__82995 {
+    width: 100%
+}
+
+.bulletItem__82995 {
+    display: flex;
+    align-items: flex-start
+}
+
+.bulletImage__82995 {
+    margin-right: 8px;
+    margin-top: 3px
+}
+
+.remindMeLater__82995 {
+    color: var(--text-normal)
+}
+
+/*# sourceMappingURL=1df1fe947be53a64.css.map*/

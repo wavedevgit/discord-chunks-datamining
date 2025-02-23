@@ -1,0 +1,8 @@
+/** Chunk was on web (https://canary.discord.comweb.9f0be545d3e34886.js.js) **/
+"use strict";
+n.d(t, {
+  d: () => r
+});
+var r = function(e) {
+  return e.LAUNCHER = "LAUNCHER", e.LIBRARY_APPLICATION = "LIBRARY_APPLICATION", e.USER_OVERRIDE = "USER_OVERRIDE", e.DATABASE = "DATABASE", e.DEFAULT = "DEFAULT", e.DEV_OVERRIDE = "DEV_OVERRIDE", e.LEGACY_ENABLED = "LEGACY_ENABLED", e.NO_OUT_OF_PROCESS_SUPPORT = "NO_OUT_OF_PROCESS_SUPPORT", e.FULL_SCREEN_TYPE = "FULL_SCREEN_TYPE", e.NO_TRACKED_GAME = "NO_TRACKED_GAME", e.UNKNOWN = "UNKNOWN", e
+}({})

@@ -1,0 +1,23 @@
+/**
+  Module ID: 38795
+  Original File Name: 27a6c32acb2d0873
+**/
+.content_fc289e {
+    padding: 16px;
+    max-width: 760px
+}
+
+.header_fc289e {
+    display: flex;
+    align-items: center
+}
+
+.warningIcon_fc289e {
+    color: var(--status-warning)
+}
+
+.dangerIcon_fc289e {
+    color: var(--status-danger)
+}
+
+/*# sourceMappingURL=27a6c32acb2d0873.css.map*/

@@ -1,0 +1,33 @@
+/**
+  Module ID: 98137
+  Original File Name: cb6181878518f5d3
+**/
+.modalHeader__4acc1 {
+    padding-top: 32px;
+    justify-content: center
+}
+
+.modalHeader__4acc1 .closeButton__4acc1 {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: var(--interactive-normal)
+}
+
+.modalHeader__4acc1 .closeButton__4acc1:hover {
+    color: var(--interactive-hover)
+}
+
+.modalContent__4acc1 {
+    text-align: center
+}
+
+.contentText__4acc1 {
+    margin-bottom: 24px
+}
+
+.button__4acc1 {
+    padding: 11px 20px
+}
+
+/*# sourceMappingURL=cb6181878518f5d3.css.map*/

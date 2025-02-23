@@ -1,0 +1,19 @@
+/** Chunk was on 11814 (fd05d34d70cdbd56.js) **/
+n.d(t, {
+  Z: () => r
+});
+let r = (0, n(818083).B)({
+  kind: "user",
+  id: "2021-12_inferno_spam_redaction",
+  label: "Inferno Spam Redaction",
+  defaultConfig: {
+    enabled: !1
+  },
+  treatments: [{
+    id: 1,
+    label: "Allow guild channel messages from spammers to be collapsed",
+    config: {
+      enabled: !0
+    }
+  }]
+})

@@ -1,0 +1,119 @@
+/**
+  Module ID: 35641
+  Original File Name: bdabe4282ac42a04
+**/
+.modalHeader_e6fa8e {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-normal);
+    gap: 8px;
+    text-align: center;
+    align-items: center
+}
+
+.modalFooter_e6fa8e {
+    border-top: 1px solid var(--background-modifier-accent)
+}
+
+.modalImage_e6fa8e {
+    width: 160px;
+    margin-bottom: 16px
+}
+
+.infoContent_e6fa8e {
+    padding: 24px
+}
+
+.updateContent_e6fa8e {
+    padding: 24px 16px 16px
+}
+
+.infoListItem_e6fa8e {
+    display: flex;
+    gap: 16px;
+    color: var(--text-normal);
+    margin-top: 24px
+}
+
+.iconWrapper_e6fa8e {
+    padding: 8px;
+    background-color: var(--background-tertiary);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px
+}
+
+.deprivateTableBody_e6fa8e {
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-sm);
+    margin: 8px 0;
+    overflow: hidden
+}
+
+.deprivateExplainer_e6fa8e {
+    display: flex;
+    gap: 2px;
+    margin: 8px 0 24px
+}
+
+.selectableChannelCellFirst_e6fa8e {
+    height: 32px
+}
+
+.selectableChannelCellFirst_e6fa8e,.selectableChannelCellSecond_e6fa8e {
+    align-items: center;
+    display: flex
+}
+
+.channelIcon_e6fa8e {
+    color: var(--text-normal);
+    flex-shrink: 0;
+    margin-right: 4px
+}
+
+.selectableChannelRow_e6fa8e {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 12px 16px
+}
+
+.selectableChannelRow_e6fa8e:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: calc(100% - 54px);
+    margin-top: 54px;
+    background-color: var(--background-modifier-accent)
+}
+
+.selectableChannelRow_e6fa8e:hover {
+    background-color: var(--background-secondary-alt)
+}
+
+.selectableChannelRow_e6fa8e:hover:after,.selectableChannelRow_e6fa8e:last-child:after {
+    display: none
+}
+
+.selectAllContainer_e6fa8e {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding: 0 4px
+}
+
+.selectAllTitle_e6fa8e {
+    text-transform: uppercase
+}
+
+.selectAllButton_e6fa8e {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    cursor: pointer
+}
+
+/*# sourceMappingURL=bdabe4282ac42a04.css.map*/

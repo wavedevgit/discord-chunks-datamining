@@ -1,0 +1,22 @@
+/** Chunk was on web (https://canary.discord.comweb.9f0be545d3e34886.js.js) **/
+"use strict";
+n.d(t, {
+  V: () => r
+});
+let r = {
+  Spacing: {
+    PX_4: 4,
+    PX_8: 8,
+    PX_12: 12,
+    PX_16: 16,
+    PX_24: 24,
+    PX_32: 32,
+    PX_40: 40,
+    PX_48: 48,
+    PX_56: 56,
+    PX_64: 64,
+    PX_72: 72,
+    PX_80: 80,
+    PX_96: 96
+  }
+}

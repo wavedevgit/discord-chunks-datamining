@@ -1,0 +1,37 @@
+/**
+  Module ID: 14760
+  Original File Name: 60ca7db6546ee725
+**/
+.modal__7db36 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 400px;
+    padding: 32px;
+    overflow: visible
+}
+
+.followSuccessHeader__7db36 {
+    font-weight: 700
+}
+
+.image__7db36 {
+    width: 280px;
+    margin-top: -96px;
+    margin-bottom: 0
+}
+
+.body__7db36 {
+    margin: 16px 0 32px
+}
+
+.root__7db36 {
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+/*# sourceMappingURL=60ca7db6546ee725.css.map*/

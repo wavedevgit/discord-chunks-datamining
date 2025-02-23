@@ -1,0 +1,46 @@
+/**
+  Module ID: 40390
+  Original File Name: ebba1e7b489958a5
+**/
+.headerContainer__56d15 {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+.guildIconContainer__56d15 {
+    position: relative
+}
+
+.statusContainer__56d15 {
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--background-primary);
+    border: 3px solid var(--background-primary)
+}
+
+.statusIcon__56d15 {
+    color: var(--text-danger)
+}
+
+.descriptionContainer__56d15 {
+    padding: 0 16px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+/*# sourceMappingURL=ebba1e7b489958a5.css.map*/

@@ -1,0 +1,75 @@
+/**
+  Module ID: 6284
+  Original File Name: daff248200af3158
+**/
+.headerContainer__6d90b {
+    flex-direction: column
+}
+
+.titleContainer__6d90b {
+    display: flex;
+    flex-direction: row
+}
+
+.headerTitle__6d90b {
+    color: var(--interactive-active)
+}
+
+.modalCloseButton__6d90b {
+    padding: 0;
+    position: absolute;
+    top: 16px;
+    right: 16px
+}
+
+.headerSubtitle__6d90b,.modalCloseButton__6d90b {
+    color: var(--text-normal)
+}
+
+.answerChoicesContainer__6d90b {
+    border-radius: 4px;
+    background-color: var(--background-secondary);
+    margin-bottom: 16px
+}
+
+.otherField__6d90b {
+    margin-bottom: 16px
+}
+
+.footer__6d90b {
+    justify-content: space-between
+}
+
+.modal__339fa {
+    min-height: 0
+}
+
+.headerImage__339fa {
+    width: 100%;
+    height: 146px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.content__339fa {
+    padding: 16px;
+    display: flex;
+    flex-direction: column
+}
+
+.footer__339fa {
+    justify-content: space-between
+}
+
+.goBackButton__339fa {
+    padding: 0;
+    min-width: 0
+}
+
+.slideContainer__339fa {
+    display: flex;
+    flex-direction: column;
+    max-height: max(200px, min(calc(100vh - 80px), 660px))
+}
+
+/*# sourceMappingURL=daff248200af3158.css.map*/

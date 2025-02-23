@@ -1,0 +1,82 @@
+/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+n.d(t, {
+  Z: () => p
+}), n(47120);
+var r = n(200651),
+  a = n(192379),
+  i = n(389117),
+  l = n(913527),
+  o = n.n(l),
+  s = n(330711),
+  c = n(442837),
+  d = n(481060),
+  u = n(665149),
+  m = n(706454),
+  h = n(428530),
+  x = n(257785),
+  f = n(388032);
+
+function p() {
+  let e = (0, c.e7)([m.default], () => m.default.locale),
+    [t, n] = a.useState(),
+    l = (0, i.runtimeHashMessageKey)(null != t ? t : ""),
+    p = a.useMemo(() => f.t[l], [l]);
+  return (0, r.jsxs)("div", {
+    children: [(0, r.jsxs)(u.ZP, {
+      children: [(0, r.jsx)(u.ZP.Icon, {
+        icon: d.os0,
+        tooltip: "Locale"
+      }), (0, r.jsx)(u.ZP.Title, {
+        children: "Locale"
+      })]
+    }), (0, r.jsxs)(x.E, {
+      children: [(0, r.jsx)(x.Z9, {
+        name: "Active System",
+        children: "@discord/intl"
+      }), (0, r.jsx)(x.Z9, {
+        name: "App",
+        children: e
+      }), (0, r.jsx)(x.Z9, {
+        name: "@discord/intl",
+        children: f.NW.currentLocale
+      }), (0, r.jsx)(x.Z9, {
+        name: "common i18n",
+        children: s.Z.getLocale()
+      }), (0, r.jsx)(x.Z9, {
+        name: "Moment",
+        children: o().locale()
+      })]
+    }), (0, r.jsxs)(u.ZP, {
+      children: [(0, r.jsx)(u.ZP.Icon, {
+        icon: d.os0,
+        tooltip: "Messages"
+      }), (0, r.jsx)(u.ZP.Title, {
+        children: "New System Messages"
+      })]
+    }), (0, r.jsx)(x.E, {
+      children: (0, r.jsx)(x.Z9, {
+        name: "Unique Rendered Main Messages",
+        children: Object.keys(f.t).length
+      })
+    }), (0, r.jsx)(d.oil, {
+      onChange: function(e) {
+        n(e)
+      },
+      name: "Message name",
+      style: {
+        margin: 16
+      },
+      placeholder: "Find a message"
+    }), (0, r.jsxs)(x.E, {
+      children: [(0, r.jsx)(x.Z9, {
+        name: "Hashed key",
+        children: l
+      }), (0, r.jsx)(x.Z9, {
+        name: "Exists?",
+        children: null != p ? "yes" : "no"
+      })]
+    }), (0, r.jsx)(h.Z, {
+      data: null == p ? void 0 : p(e)
+    })]
+  })
+}

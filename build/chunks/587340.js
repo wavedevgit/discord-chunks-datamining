@@ -1,0 +1,7 @@
+/** Chunk was on 79783 (b93f927a079fdfee.js) **/
+e.exports = {
+  card: "card_b44011",
+  inModal: "inModal_b44011",
+  cardHeader: "cardHeader_b44011",
+  title: "title_b44011"
+}

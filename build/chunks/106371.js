@@ -1,0 +1,52 @@
+/** Chunk was on 96013 (7bba8e20e4c355fc.js) **/
+n.d(e, {
+  Z: () => a
+});
+var i = n(818083);
+let r = (0, i.B)({
+  kind: "user",
+  id: "2024-08_reaction_push_notifications_user",
+  label: "In App Notifications for Reactions",
+  defaultConfig: {
+    enableInAppNotifications: !1,
+    enableNotificationsForAllReactions: !1
+  },
+  treatments: [{
+    id: 1,
+    label: "Enable In App Notifications for Reactions (First Reaction)",
+    config: {
+      enableInAppNotifications: !0,
+      enableNotificationsForAllReactions: !1
+    }
+  }, {
+    id: 2,
+    label: "Enable In App Notifications for Reactions (All Reactions)",
+    config: {
+      enableInAppNotifications: !0,
+      enableNotificationsForAllReactions: !0
+    }
+  }, {
+    id: 3,
+    label: "Enable In App Notifications for Reactions (All Reactions)",
+    config: {
+      enableInAppNotifications: !0,
+      enableNotificationsForAllReactions: !0
+    }
+  }]
+});
+(0, i.B)({
+  kind: "guild",
+  id: "2024-08_reaction_push_notifications_guild",
+  label: "In App Notifications for Reactions (Guild)",
+  defaultConfig: {
+    enableInAppNotifications: !1
+  },
+  treatments: [{
+    id: 1,
+    label: "Enable In App Notifications for Reactions",
+    config: {
+      enableInAppNotifications: !0
+    }
+  }]
+});
+let a = r

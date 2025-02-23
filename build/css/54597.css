@@ -1,0 +1,180 @@
+/**
+  Module ID: 54597
+  Original File Name: a1252d5abac3a161
+**/
+.modal_f0dcaf {
+    border-radius: 8px
+}
+
+.header_f0dcaf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 225px;
+    overflow: visible;
+    background: var(--channeltextarea-background)
+}
+
+.headerIconContainer_f0dcaf {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: -16px;
+    flex: 0
+}
+
+.acronym_f0dcaf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    font-size: 40px
+}
+
+.ping_f0dcaf {
+    position: absolute;
+    z-index: 999;
+    width: 36px;
+    height: 36px;
+    border: 5px solid var(--channeltextarea-background);
+    border-radius: 50%;
+    bottom: -4px;
+    right: -4px
+}
+
+.redPing_f0dcaf {
+    background-color: var(--status-danger)
+}
+
+.greenPing_f0dcaf {
+    background-color: var(--status-positive)
+}
+
+.headerText_f0dcaf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 112px;
+    margin-bottom: 16px;
+    max-width: 350px;
+    gap: 4px
+}
+
+.updatedHeader_f0dcaf {
+    margin-top: 12px
+}
+
+.updatedForm_f0dcaf {
+    padding: 24px 16px
+}
+
+.formTitle_f0dcaf {
+    margin-bottom: 8px;
+    font-weight: 700
+}
+
+.checklistRow_f0dcaf {
+    display: flex;
+    align-items: center;
+    margin-top: 8px
+}
+
+.checklistRow_f0dcaf:first-child {
+    margin-top: 0
+}
+
+.checklistIcon_f0dcaf {
+    width: 18px;
+    margin-right: 8px
+}
+
+.icon_f0dcaf {
+    transform: translateY(3px)
+}
+
+.roleRow_f0dcaf {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 4px;
+    padding: 4px 6px 4px 5px;
+    border-radius: 4px;
+    background: var(--background-modifier-selected)
+}
+
+.roleDot_f0dcaf {
+    margin-right: 4px
+}
+
+.roleName_f0dcaf {
+    align-self: baseline
+}
+
+.table_f0dcaf {
+    gap: 4px;
+    margin-top: 12px
+}
+
+.table_f0dcaf,.tableContainer_f0dcaf {
+    display: flex;
+    flex-direction: column
+}
+
+.tableContainer_f0dcaf {
+    padding: 16px 20px;
+    background-color: var(--background-secondary);
+    border-radius: 4px
+}
+
+.tableHeader_f0dcaf {
+    text-transform: uppercase
+}
+
+.permissionsTable_f0dcaf {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 32px;
+    grid-row-gap: 8px;
+    row-gap: 8px;
+    margin-top: 8px
+}
+
+.permissionRow_f0dcaf {
+    display: flex
+}
+
+.bullet_f0dcaf {
+    width: 6px;
+    height: 6px;
+    align-self: center;
+    border-radius: 50%;
+    background-color: var(--background-accent);
+    margin-right: 8px
+}
+
+.bulletWarning_f0dcaf {
+    background-color: var(--status-warning);
+    box-shadow: 0 0 4px rgba(250,166,26,.4)
+}
+
+.bulletPositive_f0dcaf {
+    background-color: var(--status-positive);
+    box-shadow: 0 0 6px rgba(59,165,92,.35)
+}
+
+.acceptText_f0dcaf {
+    margin-left: 16px
+}
+
+.footer_f0dcaf {
+    gap: 4px
+}
+
+/*# sourceMappingURL=a1252d5abac3a161.css.map*/

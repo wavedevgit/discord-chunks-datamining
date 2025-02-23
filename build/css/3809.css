@@ -1,0 +1,61 @@
+/**
+  Module ID: 3809
+  Original File Name: e7a8f552b3ca169e
+**/
+.verifyConnectedAccount_fb52a4 {
+    color: var(--white-500);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(/assets/1243734d7e2a4654.png) 0 0 repeat;
+    background-color: #282b30
+}
+
+.logos_fb52a4,.verifyConnectedAccount_fb52a4 {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.logos_fb52a4 {
+    margin-bottom: 95px
+}
+
+.logosDivider_fb52a4 {
+    width: 28px;
+    height: 28px;
+    margin: 0 37px;
+    background-size: 28px 28px;
+    background-image: url(/assets/f9951f6f63451f68.svg);
+    content: " ";
+    display: inline-block
+}
+
+.logo_fb52a4 {
+    width: 88px;
+    height: 88px;
+    background-size: 88px 88px
+}
+
+.logoDiscord_fb52a4 {
+    background-image: url(/assets/8068c1873bb18d03.svg)
+}
+
+.message_f87c73 {
+    text-align: center;
+    font-size: 18px
+}
+
+.message_f87c73.details_f87c73 {
+    margin-top: 16px;
+    font-size: 16px;
+    color: var(--text-muted)
+}
+
+.message_f87c73 strong {
+    font-weight: 700
+}
+
+/*# sourceMappingURL=e7a8f552b3ca169e.css.map*/

@@ -1,0 +1,65 @@
+/**
+  Module ID: 77370
+  Original File Name: 929c13ef0781706b
+**/
+.container__6a597 {
+    width: 432px;
+    height: 294px
+}
+
+.content__6a597 {
+    border-radius: 8px;
+    background-color: var(--modal-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 0 32px;
+    margin-top: -36px
+}
+
+.closeButton__6a597 {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: var(--interactive-active)
+}
+
+.avatarBackground__6a597 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: -60px
+}
+
+.leftAvatar__6a597 {
+    transform: rotate(-5.36deg);
+    position: relative;
+    left: 32px
+}
+
+.centerAvatar__6a597 {
+    z-index: 2;
+    position: relative;
+    top: 4px
+}
+
+.rightAvatar__6a597 {
+    transform: rotate(5.36deg);
+    position: relative;
+    right: 32px
+}
+
+.body__6a597,.title__6a597 {
+    text-align: center
+}
+
+.footer__6a597 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px
+}
+
+/*# sourceMappingURL=929c13ef0781706b.css.map*/

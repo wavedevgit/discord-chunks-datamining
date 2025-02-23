@@ -1,0 +1,40 @@
+/** Chunk was on web (https://canary.discord.comweb.9f0be545d3e34886.js.js) **/
+"use strict";
+n.d(t, {
+  FC: () => o,
+  Zj: () => l,
+  jA: () => a,
+  rs: () => s
+});
+var r = n(433517);
+let i = "MediaPlayerVolume";
+
+function o() {
+  var e;
+  let {
+    volume: t
+  } = null !== (e = r.K.get(i)) && void 0 !== e ? e : {};
+  return "number" != typeof t && (t = 1), t = Math.min(1, Math.max(0, t))
+}
+
+function a(e) {
+  r.K.set(i, {
+    volume: e,
+    muted: s()
+  })
+}
+
+function s() {
+  var e;
+  let {
+    muted: t
+  } = null !== (e = r.K.get(i)) && void 0 !== e ? e : {};
+  return "boolean" != typeof t && (t = !1), t
+}
+
+function l(e) {
+  r.K.set(i, {
+    volume: o(),
+    muted: e
+  })
+}

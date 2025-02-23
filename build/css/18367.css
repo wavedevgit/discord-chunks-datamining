@@ -1,0 +1,44 @@
+/**
+  Module ID: 18367
+  Original File Name: 035b15ab96e598db
+**/
+.modalRoot__9c82a {
+    width: 378px
+}
+
+.birbContainer__9c82a {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: -52px;
+    justify-content: center
+}
+
+.announcementBirb__9c82a {
+    width: 90px;
+    height: 100px
+}
+
+.modalContent__9c82a {
+    margin-top: 30px;
+    text-align: center;
+    padding: 16px
+}
+
+.eyebrow__9c82a,.header__9c82a {
+    margin-top: 16px
+}
+
+.subHeader__9c82a {
+    margin-top: 8px;
+    color: var(--header-secondary)
+}
+
+.buttonContainer__9c82a {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+/*# sourceMappingURL=035b15ab96e598db.css.map*/

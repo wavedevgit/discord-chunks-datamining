@@ -1,0 +1,751 @@
+/**
+  Module ID: 34761
+  Original File Name: 3d184c95a42132e6
+**/
+.questionContainer__0a749 {
+    margin-top: 24px
+}
+
+.questionTitle__0a749 {
+    margin-bottom: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.requirementContainer__0a749 {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 8px
+}
+
+.requirementIcon__0a749 {
+    color: var(--interactive-normal);
+    margin-right: 8px
+}
+
+.requirementText__0a749 {
+    flex: 1
+}
+
+.requirementSuccess__0a749 {
+    color: var(--green-360)
+}
+
+.requirementFailure__0a749 {
+    color: var(--status-danger)
+}
+
+.container__0a749 {
+    padding: 0 16px 40px
+}
+
+.footnote__0a749 {
+    text-align: left;
+    margin-top: 8px
+}
+
+.formItem_d48a51 {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 24px
+}
+
+.formItem_d48a51:last-child {
+    margin-bottom: 0
+}
+
+.settingsFormItem_d48a51 {
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: var(--background-secondary)
+}
+
+.wrapperBase_d48a51 {
+    border-radius: 4px;
+    padding: 8px 12px
+}
+
+.formFieldWrapper_d48a51 {
+    background-color: var(--background-secondary)
+}
+
+.formFieldWrapper_d48a51,.settingsFormFieldWrapper_d48a51 {
+    border: 1px solid var(--background-tertiary)
+}
+
+.settingsFormFieldWrapper_d48a51 {
+    background-color: var(--background-secondary-alt)
+}
+
+.verificationFieldWrapper_d48a51 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.verificationIcon_d48a51 {
+    color: var(--interactive-normal);
+    margin-right: 8px
+}
+
+.verificationLabel_d48a51 {
+    display: flex;
+    align-items: center
+}
+
+.verificationCheckmark_d48a51 {
+    color: var(--text-positive);
+    margin-right: 8px;
+    width: 16px;
+    height: 16px
+}
+
+.verificationConfirmation_d48a51 {
+    display: flex;
+    align-items: center;
+    flex-grow: 0
+}
+
+.termsRow_d48a51 {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px 4px;
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.termsRow_d48a51:first-child {
+    padding-top: 8px
+}
+
+.termsRow_d48a51:last-child {
+    border-bottom: none;
+    padding-bottom: 8px
+}
+
+.termsRowContent_d48a51 {
+    padding-left: 12px;
+    white-space: pre-wrap;
+    width: calc(100% - 12px);
+    word-wrap: break-word
+}
+
+.checkbox_d48a51 {
+    margin-top: 16px;
+    cursor: pointer;
+    opacity: 1
+}
+
+.formItemDescription_d48a51 {
+    margin-bottom: 8px
+}
+
+.verifyConfirmText_d48a51 {
+    box-sizing: border-box;
+    height: 32px;
+    padding: 8px
+}
+
+.settingsLink_d48a51 {
+    margin-top: 8px
+}
+
+.radioItem_d48a51 {
+    border: 1px solid var(--background-modifier-accent)
+}
+
+.fieldBackground_d48a51,.fieldBackground_d48a51:hover:not(:focus) {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 4px;
+    opacity: 1
+}
+
+.termsFieldBody_d48a51 {
+    padding: 10px 17px
+}
+
+.paragraphFieldBody_d48a51,.textInputFieldBodyInput_d48a51 {
+    opacity: 1
+}
+
+.paragraphFieldBody_d48a51>textarea {
+    border: none;
+    background: none;
+    opacity: 1
+}
+
+.multipleChoiceIcon_d48a51 {
+    display: flex
+}
+
+.multipleChoiceIcon_d48a51>svg {
+    width: 20px;
+    height: 20px
+}
+
+.questionContainer__175a5 {
+    margin-top: 40px
+}
+
+.disabledQuestionContainer__175a5 {
+    margin-bottom: 24px
+}
+
+.questionTitle__175a5 {
+    margin-bottom: 12px;
+    overflow: hidden;
+    word-wrap: break-word
+}
+
+.requirementContainer__175a5 {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 24px
+}
+
+.requirementIcon__175a5 {
+    color: var(--interactive-normal);
+    margin-right: 8px
+}
+
+.requirementText__175a5 {
+    flex: 1
+}
+
+.requirementSuccess__175a5 {
+    color: var(--green-360)
+}
+
+.requirementFailure__175a5 {
+    color: var(--status-danger)
+}
+
+.container__175a5 {
+    padding: 0 16px 40px
+}
+
+.footnote__175a5 {
+    text-align: left;
+    margin-top: 8px
+}
+
+.formItem__523ab {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 24px
+}
+
+.formItem__523ab:last-child {
+    margin-bottom: 0
+}
+
+.wrapperBase__523ab {
+    border-radius: 4px;
+    padding: 8px 12px
+}
+
+.formFieldWrapper__523ab {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-tertiary)
+}
+
+.verificationFieldWrapper__523ab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.verificationIcon__523ab {
+    color: var(--interactive-normal);
+    margin-right: 8px
+}
+
+.verificationLabel__523ab {
+    display: flex;
+    align-items: center
+}
+
+.verificationCheckmark__523ab {
+    color: var(--text-positive);
+    margin-right: 8px;
+    width: 16px;
+    height: 16px
+}
+
+.verificationConfirmation__523ab {
+    display: flex;
+    align-items: center;
+    flex-grow: 0
+}
+
+.termsRow__523ab {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px 4px;
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.termsRow__523ab:first-child {
+    padding-top: 8px
+}
+
+.termsRow__523ab:last-child {
+    border-bottom: none;
+    padding-bottom: 8px
+}
+
+.termsRowContent__523ab {
+    padding-left: 12px;
+    white-space: pre-wrap;
+    width: calc(100% - 12px);
+    word-wrap: break-word
+}
+
+.checkbox__523ab {
+    margin-top: 16px;
+    cursor: pointer;
+    opacity: 1
+}
+
+.formItemDescription__523ab {
+    margin-bottom: 8px
+}
+
+.verifyConfirmText__523ab {
+    box-sizing: border-box;
+    height: 32px;
+    padding: 8px
+}
+
+.settingsLink__523ab {
+    margin-top: 8px
+}
+
+.radioItem__523ab {
+    border: 1px solid var(--background-modifier-accent)
+}
+
+.disabledFieldBackground__523ab {
+    background-color: var(--bg-mod-subtle)
+}
+
+.termsFieldBody__523ab {
+    padding: 10px 17px;
+    border-radius: 8px
+}
+
+.paragraphFieldBody__523ab {
+    opacity: 1
+}
+
+.paragraphFieldBody__523ab>textarea {
+    border: none;
+    background: none;
+    opacity: 1
+}
+
+.multipleChoiceIcon__523ab {
+    display: flex
+}
+
+.multipleChoiceIcon__523ab>svg {
+    width: 20px;
+    height: 20px
+}
+
+.editableRequirementContainer__523ab {
+    margin-top: 40px;
+    margin-bottom: 12px
+}
+
+.multipleChoiceTitle__523ab {
+    overflow: hidden;
+    word-wrap: break-word
+}
+
+.multipleChoiceItem__523ab {
+    background-color: var(--bg-mod-subtle)
+}
+
+.container_b962dc {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 720px;
+    height: auto;
+    border-radius: 8px
+}
+
+.guildSidebar_b962dc {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-sizing: border-box;
+    background-color: var(--background-secondary);
+    padding: 24px;
+    width: 256px;
+    flex-shrink: 0
+}
+
+.guildDescription_b962dc {
+    white-space: pre-wrap
+}
+
+.guildIcon_b962dc {
+    border-radius: 8px
+}
+
+.guildIconNoIcon_b962dc {
+    background-color: var(--background-primary)
+}
+
+.guildName_b962dc {
+    margin: 16px 0
+}
+
+.emojisContainer_b962dc {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.emoji_b962dc {
+    margin-right: 8px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    background-position: 50%;
+    background-repeat: no-repeat
+}
+
+.emoji_b962dc,.onlineCount_b962dc {
+    margin-bottom: 8px
+}
+
+.dot_b962dc {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px
+}
+
+.dotOnline_b962dc {
+    background-color: var(--green-360)
+}
+
+.dotMembers_b962dc {
+    background-color: var(--text-muted)
+}
+
+.divider_b962dc {
+    margin: 24px 0;
+    border: none;
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.modal_b962dc {
+    width: 100%;
+    overflow-x: hidden;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: var(--background-primary)
+}
+
+.modal_b962dc,.sequencer_b962dc {
+    display: flex;
+    flex-direction: column
+}
+
+.sequencer_b962dc {
+    min-height: 100%
+}
+
+.modalContent_b962dc::-webkit-scrollbar-track-piece:start {
+    margin-top: 4px
+}
+
+.modalContent_b962dc::-webkit-scrollbar-track-piece:end {
+    margin-bottom: 4px
+}
+
+.content_b962dc {
+    padding: 24px 8px
+}
+
+.centerContent_b962dc {
+    justify-content: center
+}
+
+.closeButton_b962dc {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 2
+}
+
+.applicationIconContainer_b962dc {
+    display: flex;
+    justify-content: center
+}
+
+.applicationIcon_b962dc {
+    width: 88px
+}
+
+.animationAndSparklesContainer_b962dc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80px
+}
+
+.sparkleIcon_b962dc {
+    height: 12px;
+    width: 12px
+}
+
+.sparkleTop_b962dc {
+    align-self: flex-start;
+    margin-right: auto
+}
+
+.sparkleBottom_b962dc {
+    align-self: flex-end;
+    margin-left: auto
+}
+
+.animation_b962dc {
+    height: 56px;
+    width: 56px;
+    margin-left: 4px;
+    margin-top: 12px
+}
+
+.header_b962dc {
+    margin: 8px 0
+}
+
+.header_b962dc,.subheader_b962dc {
+    text-align: center
+}
+
+.footer_b962dc {
+    background-color: var(--background-secondary);
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    box-shadow: inset 0 1px 0 var(--background-modifier-accent)
+}
+
+.submitButton_b962dc {
+    margin-left: 12px
+}
+
+.formItem_b962dc {
+    text-align: left;
+    text-align: initial;
+    margin-bottom: 24px
+}
+
+.resendButton_b962dc {
+    margin: 24px auto
+}
+
+.confirmation_b962dc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 24px;
+    border-radius: 16px;
+    gap: 24px;
+    text-align: center;
+    background-color: var(--bg-surface-raised);
+    border: 1px solid var(--border-subtle)
+}
+
+.iconWrapper_b962dc {
+    padding: 12px;
+    border-radius: 50%;
+    background: var(--bg-base-tertiary)
+}
+
+.confirmationButtonRow_b962dc {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%
+}
+
+.confirmationButton_b962dc,.confirmationTooltipContents_b962dc {
+    width: 100%
+}
+
+.notice_b962dc {
+    pointer-events: all;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 740px;
+    margin: 0 auto 16px
+}
+
+.rejectionReasonLabel_b962dc {
+    margin-right: 4px
+}
+
+@media (max-width: 485px) {
+    .container_b962dc {
+        flex-direction: column
+    }
+
+    .guildSidebar_b962dc {
+        width: 100%
+    }
+}
+
+.clanGdmConsentCheckbox_b962dc {
+    margin-top: 24px;
+    border-width: 2px
+}
+
+.disclaimerFooter_b962dc {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.statusTextContainer_b962dc {
+    max-width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.incompleteButtonsContainer_b962dc {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%
+}
+
+div:has(>div>.container_d6cfa8) {
+    padding: 0
+}
+
+.container_d6cfa8 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    border-radius: 0;
+    border: none
+}
+
+.closeButtonContainer_d6cfa8 {
+    position: absolute;
+    top: 24px;
+    right: 24px
+}
+
+.body_d6cfa8 {
+    flex-direction: row;
+    align-items: center;
+    gap: 80px
+}
+
+.applicationContainer_d6cfa8,.body_d6cfa8 {
+    display: flex;
+    justify-content: center;
+    height: 100%
+}
+
+.applicationContainer_d6cfa8 {
+    flex-direction: column;
+    width: 480px
+}
+
+.scroller_d6cfa8 {
+    flex: 0 1 auto;
+    margin: 80px 0
+}
+
+.verticalRule_d6cfa8 {
+    width: 1px;
+    height: 100%;
+    background: var(--border-subtle)
+}
+
+.clanContainer_d6cfa8 {
+    display: flex;
+    flex-direction: column;
+    width: 258px
+}
+
+.applyButtonContainer_d6cfa8 {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column
+}
+
+.applyButtonInner_d6cfa8 {
+    justify-content: center;
+    gap: 4px
+}
+
+.applyButtonInner_d6cfa8,.successCheckmark_d6cfa8 {
+    display: flex;
+    align-items: center
+}
+
+.verificationForm_d6cfa8 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.profileCard_d6cfa8 {
+    margin-bottom: 40px
+}
+
+.maxCapacityText_d6cfa8 {
+    margin-bottom: 16px;
+    text-align: center
+}
+
+.separator_d6cfa8 {
+    border: 0;
+    background-color: var(--background-modifier-accent);
+    height: 1px;
+    width: 100%;
+    margin-bottom: 16px
+}
+
+.noticeText_d6cfa8 {
+    text-align: center;
+    margin-bottom: 8px
+}
+
+.theme-dark .container_d6cfa8 {
+    background-color: var(--bg-backdrop)
+}
+
+.theme-light .container_d6cfa8 {
+    background-color: hsl(var(--white-500-hsl)/.8)
+}
+
+/*# sourceMappingURL=3d184c95a42132e6.css.map*/

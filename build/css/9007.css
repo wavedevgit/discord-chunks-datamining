@@ -1,0 +1,51 @@
+/**
+  Module ID: 9007
+  Original File Name: 1d0764ae91a61dfd
+**/
+.seperator__6bf29 {
+    width: calc(100% - 32px);
+    border-bottom: 1px solid var(--background-modifier-accent);
+    margin: 0 16px
+}
+
+.closeButton__6bf29 {
+    position: absolute;
+    right: 10px;
+    top: 10
+}
+
+.headerContent__6bf29 {
+    display: flex
+}
+
+.modalContent__6bf29 {
+    margin: 16px 0
+}
+
+.checklistContainer__6bf29 {
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: var(--background-secondary)
+}
+
+.checklistRow__6bf29 {
+    padding: 16px;
+    cursor: pointer
+}
+
+.checklistRow__6bf29:hover {
+    background-color: var(--background-secondary-alt)
+}
+
+.checklistLabel__6bf29 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8px
+}
+
+.selectAllCheckbox__6bf29 {
+    background-color: var(--background-secondary-alt)
+}
+
+/*# sourceMappingURL=1d0764ae91a61dfd.css.map*/

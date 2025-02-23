@@ -1,0 +1,72 @@
+/**
+  Module ID: 59409
+  Original File Name: b84f6b82a60c90bf
+**/
+.labelWrapper_abe771 {
+    display: flex;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    row-gap: 4px;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.label_abe771 {
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.newBadge_abe771 {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.badgeSpacing_abe771,.betaBadge_abe771 {
+    margin-left: 8px
+}
+
+.betaBadge_abe771 {
+    display: inline
+}
+
+.inviteGuestContainer_abe771 {
+    display: flex;
+    align-items: center
+}
+
+.loadingWrapper__5a143 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 4px;
+    height: 16px;
+    border-radius: 2px;
+    margin: 2px 0;
+    justify-content: center
+}
+
+.list_c47777 {
+    max-height: 500px
+}
+
+.videoPaused_afb275 {
+    display: flex;
+    justify-content: left;
+    align-items: center
+}
+
+.warningCircle_afb275 {
+    margin-right: 4px
+}
+
+.roleRow_b82947 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.roleDot_b82947 {
+    margin-right: 8px
+}
+
+/*# sourceMappingURL=b84f6b82a60c90bf.css.map*/

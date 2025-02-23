@@ -1,0 +1,60 @@
+/**
+  Module ID: 2538
+  Original File Name: d0562c87b6951233
+**/
+.modal__59133 {
+    width: 600px;
+    padding-top: 50px;
+    border-radius: var(--radius-sm);
+    background-color: var(--background-secondary);
+    overflow: visible
+}
+
+.hasEmoji__59133 {
+    padding-top: 90px
+}
+
+.hasImage__59133 {
+    padding-top: 150px
+}
+
+.content__59133 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    padding: 0 20px 24px
+}
+
+.imagePreview__59133 {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    width: 175px;
+    height: 175px;
+    border-radius: var(--radius-md);
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.emojiPreview__59133 {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    width: 100px;
+    height: 100px
+}
+
+.input__59133 {
+    display: block;
+    min-height: 48px;
+    padding: 20px;
+    border-radius: var(--radius-xs)
+}
+
+.footer__59133 {
+    padding: 20px;
+    background-color: var(--background-secondary-alt)
+}
+
+/*# sourceMappingURL=d0562c87b6951233.css.map*/

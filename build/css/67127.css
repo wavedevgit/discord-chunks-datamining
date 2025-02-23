@@ -1,0 +1,76 @@
+/**
+  Module ID: 67127
+  Original File Name: a5e2e953cc722bd8
+**/
+.verifyConnectedAccount_fb52a4 {
+    color: var(--white-500);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(/assets/1243734d7e2a4654.png) 0 0 repeat;
+    background-color: #282b30
+}
+
+.logos_fb52a4,.verifyConnectedAccount_fb52a4 {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.logos_fb52a4 {
+    margin-bottom: 95px
+}
+
+.logosDivider_fb52a4 {
+    width: 28px;
+    height: 28px;
+    margin: 0 37px;
+    background-size: 28px 28px;
+    background-image: url(/assets/f9951f6f63451f68.svg);
+    content: " ";
+    display: inline-block
+}
+
+.logo_fb52a4 {
+    width: 88px;
+    height: 88px;
+    background-size: 88px 88px
+}
+
+.logoDiscord_fb52a4 {
+    background-image: url(/assets/8068c1873bb18d03.svg)
+}
+
+.buttonContainer_eeed5f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px
+}
+
+.message_eeed5f {
+    text-align: center;
+    font-size: 18px
+}
+
+.btn_eeed5f {
+    margin-top: 22px;
+    transition: background-color .2s ease
+}
+
+.btn_eeed5f .spinnerItem_eeed5f {
+    background-color: var(--white-500);
+    opacity: .25
+}
+
+.btn_eeed5f:disabled {
+    cursor: default;
+    background-color: transparent;
+    opacity: 1;
+    padding: 28px
+}
+
+/*# sourceMappingURL=a5e2e953cc722bd8.css.map*/

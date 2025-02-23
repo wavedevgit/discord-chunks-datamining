@@ -1,0 +1,76 @@
+/**
+  Module ID: 4266
+  Original File Name: 7e2ed71524107d1c
+**/
+.modalRoot__3297f {
+    max-width: 340px;
+    background-color: var(--background-secondary)
+}
+
+.modalHeader__3297f {
+    overflow-x: visible;
+    padding-bottom: 8px;
+    gap: 24px
+}
+
+.modalTop__3297f {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". img-frame close-btn";
+    flex-flow: row nowrap;
+    justify-content: space-between
+}
+
+.iconFrame__3297f {
+    grid-area: img-frame;
+    height: 60px
+}
+
+.icon__3297f {
+    position: relative;
+    bottom: 70px
+}
+
+.closeBtn__3297f {
+    grid-area: close-btn
+}
+
+.modalContent__3297f {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+    padding: 0 24px 24px
+}
+
+.upperBodyText__3297f {
+    text-align: center
+}
+
+.targetList__3297f {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--background-primary);
+    border: 1px solid hsla(0,0%,100%,.06);
+    border-radius: 8px;
+    box-shadow: var(--shadow-low)
+}
+
+.targetItem__3297f {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    align-items: center;
+    padding: 10px 12px
+}
+
+.targetItem__3297f:not(:last-child) {
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.footer__3297f {
+    background-color: var(--background-secondary-alt)
+}
+
+/*# sourceMappingURL=7e2ed71524107d1c.css.map*/

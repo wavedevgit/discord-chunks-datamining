@@ -1,0 +1,8 @@
+/** Chunk was on 624 (b91ef030945ea74a.js) **/
+e.exports = {
+  feature: "feature__4626b",
+  featureBorder: "featureBorder__4626b",
+  title: "title__4626b",
+  description: "description__4626b",
+  icon: "icon__4626b"
+}

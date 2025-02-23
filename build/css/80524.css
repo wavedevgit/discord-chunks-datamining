@@ -1,0 +1,25 @@
+/**
+  Module ID: 80524
+  Original File Name: 9a4a6b64e2ce40a3
+**/
+.videoPaused_afb275 {
+    display: flex;
+    justify-content: left;
+    align-items: center
+}
+
+.warningCircle_afb275 {
+    margin-right: 4px
+}
+
+.roleRow_b82947 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.roleDot_b82947 {
+    margin-right: 8px
+}
+
+/*# sourceMappingURL=9a4a6b64e2ce40a3.css.map*/

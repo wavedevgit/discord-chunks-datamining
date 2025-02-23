@@ -1,0 +1,58 @@
+/**
+  Module ID: 78704
+  Original File Name: 314e7ded57efdd7a
+**/
+.container_f0aa37 {
+    min-width: 440px;
+    margin-left: -16px
+}
+
+.modalHeader_f0aa37 {
+    padding-bottom: 0
+}
+
+.header_f0aa37 {
+    padding: 0
+}
+
+.row_f0aa37 {
+    margin: 16px;
+    line-height: 18px;
+    color: var(--interactive-normal)
+}
+
+.switchGroup_f0aa37 {
+    margin-bottom: 4px
+}
+
+.error_f0aa37 {
+    color: var(--text-danger)
+}
+
+.roleSelector_f0aa37 {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-tertiary)
+}
+
+.roleCircle_f0aa37 {
+    display: inline-block;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    padding: 0
+}
+
+.roleOption_f0aa37 {
+    display: flex;
+    align-items: center
+}
+
+.footer_f0aa37 {
+    padding: 16px
+}
+
+.button_f0aa37 {
+    margin-left: 8px
+}
+
+/*# sourceMappingURL=314e7ded57efdd7a.css.map*/

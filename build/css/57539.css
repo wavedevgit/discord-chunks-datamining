@@ -1,0 +1,28 @@
+/**
+  Module ID: 57539
+  Original File Name: 244f168e846a8adc
+**/
+.container__8a1ae {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+.header__8a1ae {
+    margin-bottom: var(--spacing-8)
+}
+
+.buttonContainer__8a1ae {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--spacing-24) 0 0
+}
+
+.button__8a1ae {
+    margin-bottom: var(--spacing-8)
+}
+
+/*# sourceMappingURL=244f168e846a8adc.css.map*/

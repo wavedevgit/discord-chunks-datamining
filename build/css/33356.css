@@ -1,0 +1,30 @@
+/**
+  Module ID: 33356
+  Original File Name: 1183046db6d6e4f9
+**/
+.closeButton__8e05e {
+    position: absolute;
+    top: 8px;
+    right: 0
+}
+
+.headerContainer__8e05e {
+    display: flex;
+    flex-direction: vertical;
+    align-items: center
+}
+
+.header__8e05e {
+    text-align: center;
+    font-weight: 700
+}
+
+.header__8e05e,.name__8e05e {
+    margin-top: 32px
+}
+
+.name__8e05e {
+    margin-bottom: 16px
+}
+
+/*# sourceMappingURL=1183046db6d6e4f9.css.map*/

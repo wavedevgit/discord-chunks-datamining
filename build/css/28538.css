@@ -1,0 +1,99 @@
+/**
+  Module ID: 28538
+  Original File Name: a150099b88c83465
+**/
+.container__750de {
+    width: 472px;
+    min-height: 160px
+}
+
+.header__750de {
+    margin-top: 16px;
+    display: flex;
+    align-items: center
+}
+
+.title__750de {
+    flex: 1;
+    margin-bottom: 0
+}
+
+.searchBar__750de {
+    margin-top: 20px
+}
+
+.connectionsContainer__750de {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    margin-right: -8px
+}
+
+.accountBtn__750de {
+    margin-right: 8px;
+    margin-bottom: 8px
+}
+
+.accountBtn__750de:last-child {
+    margin-right: 0
+}
+
+.accountBtnInner__750de {
+    background-color: var(--background-secondary);
+    border: none
+}
+
+.accountBtnInner__750de:hover {
+    background-color: var(--background-secondary-alt)
+}
+
+.applicationsHeader__750de {
+    margin-top: 16px
+}
+
+.applicationsContainer__750de {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-bottom: 16px;
+    margin-top: 12px;
+    gap: 8px
+}
+
+.application__750de {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 16px;
+    width: 184px
+}
+
+.application__750de:hover {
+    background-color: var(--background-secondary-alt);
+    cursor: pointer
+}
+
+.applicationIcon__750de {
+    min-width: 32px;
+    width: 32px;
+    height: 32px
+}
+
+.applicationNameContainer__750de {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-shrink: 1
+}
+
+.applicationNameText__750de {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+/*# sourceMappingURL=a150099b88c83465.css.map*/

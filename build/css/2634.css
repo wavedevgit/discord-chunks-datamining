@@ -1,0 +1,54 @@
+/**
+  Module ID: 2634
+  Original File Name: 841242cfad87e36f
+**/
+.container__05cdc {
+    display: flex
+}
+
+.sparkleIcon__05cdc {
+    height: 12px;
+    width: 12px
+}
+
+.sparkleTop__05cdc {
+    align-self: flex-start;
+    margin-right: auto
+}
+
+.sparkleBottom__05cdc {
+    align-self: flex-end;
+    margin-left: auto
+}
+
+.body__33efa {
+    padding: 24px
+}
+
+.headerIconContainer__33efa {
+    margin-bottom: 24px
+}
+
+.iconBackground__33efa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-tertiary);
+    border-radius: 50%;
+    height: 64px;
+    width: 64px
+}
+
+.headerIcon__33efa {
+    color: var(--interactive-normal)
+}
+
+.title__33efa {
+    margin-bottom: 8px
+}
+
+.subtitle__33efa,.title__33efa {
+    text-align: center
+}
+
+/*# sourceMappingURL=841242cfad87e36f.css.map*/

@@ -1,0 +1,60 @@
+/**
+  Module ID: 22569
+  Original File Name: cd336c3308606f59
+**/
+.container__05cdc {
+    display: flex
+}
+
+.sparkleIcon__05cdc {
+    height: 12px;
+    width: 12px
+}
+
+.sparkleTop__05cdc {
+    align-self: flex-start;
+    margin-right: auto
+}
+
+.sparkleBottom__05cdc {
+    align-self: flex-end;
+    margin-left: auto
+}
+
+.content_e55088 {
+    padding-top: 24px;
+    padding-bottom: 24px
+}
+
+.title_e55088 {
+    margin: 32px 0 8px
+}
+
+.subtitle_e55088,.title_e55088 {
+    text-align: center
+}
+
+.subtitle_e55088 {
+    margin-top: 8px
+}
+
+.icon_e55088 {
+    color: var(--interactive-active)
+}
+
+.iconBackground_e55088 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-tertiary);
+    border-radius: 50%;
+    height: 64px;
+    width: 64px
+}
+
+.cancelButton_e55088 {
+    margin-right: 8px
+}
+
+/*# sourceMappingURL=cd336c3308606f59.css.map*/

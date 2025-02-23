@@ -1,0 +1,39 @@
+/**
+  Module ID: 14021
+  Original File Name: 78773c8e5ae69555
+**/
+.headerImg__3b9cf {
+    width: 85px;
+    height: 100px
+}
+
+.headerText__3b9cf {
+    text-transform: uppercase
+}
+
+.modalBody__3b9cf {
+    text-align: center;
+    padding: 0 var(--spacing-16) var(--spacing-16)
+}
+
+.modalInteriorHeader__3b9cf {
+    margin-bottom: var(--spacing-8)
+}
+
+.modalHeader__3b9cf {
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -60px
+}
+
+.buttonContainer__3b9cf {
+    padding: var(--spacing-24) 0 0
+}
+
+.buttonContainer__3b9cf>button {
+    margin-bottom: var(--spacing-8)
+}
+
+/*# sourceMappingURL=78773c8e5ae69555.css.map*/

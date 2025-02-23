@@ -1,0 +1,485 @@
+/**
+  Module ID: 68784
+  Original File Name: 2fbc65d075b5a0d2
+**/
+.answerRow__7b848 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4px 12px;
+    gap: 4px 12px;
+    align-items: center
+}
+
+.hasDeleteButton__7b848 {
+    grid-template-columns: 1fr 24px
+}
+
+.defaultTextInputWrapper__7b848 {
+    display: flex;
+    align-items: stretch;
+    background-color: var(--input-background);
+    border-radius: var(--radius-xs);
+    overflow: hidden;
+    border: 2px solid var(--input-background);
+    transition: border-color .2s ease-in-out
+}
+
+.defaultTextInputWrapper__7b848:focus-within .characterCount__7b848 {
+    display: block
+}
+
+.defaultTextInputWrapper__7b848.hasError__7b848 {
+    border-color: var(--button-danger-background)
+}
+
+.defaultTextInputWrapper__7b848.hasError__7b848 .characterCount__7b848 {
+    color: var(--text-danger)
+}
+
+.defaultTextInput__7b848 {
+    flex: 1;
+    background-color: transparent;
+    padding: 5px 4px
+}
+
+.characterCount__7b848 {
+    align-self: flex-end;
+    padding: 0 12px 7px 0;
+    font-size: 12px;
+    font-family: var(--font-code);
+    color: var(--text-muted);
+    pointer-events: none;
+    display: none
+}
+
+.imageOnlyContainer__7b848 {
+    position: relative
+}
+
+.imageOnlyContainer__7b848:focus-within .imageOnlyAnswerActionBar__7b848,.imageOnlyContainer__7b848:hover .imageOnlyAnswerActionBar__7b848 {
+    opacity: 1
+}
+
+.imageOnlyAnswerActionBar__7b848 {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    background: var(--background-primary);
+    border-radius: var(--radius-xs);
+    opacity: 0;
+    transition: opacity var(--custom-button-transition-duration) ease;
+    box-shadow: var(--shadow-low);
+    overflow: hidden
+}
+
+.imagePreviewContainer__7b848 {
+    position: relative;
+    border-radius: var(--radius-xs);
+    background-color: var(--background-secondary-alt);
+    height: 175px;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color var(--custom-button-transition-duration) ease
+}
+
+.imagePreviewContainer__7b848:hover {
+    background-color: var(--input-background)
+}
+
+.imagePreviewContainer__7b848:focus-within .altBadge__7b848,.imagePreviewContainer__7b848:hover .altBadge__7b848 {
+    opacity: 0
+}
+
+.imagePreviewContainer__7b848:focus-within .altTextPreview__7b848,.imagePreviewContainer__7b848:hover .altTextPreview__7b848 {
+    opacity: 1
+}
+
+.altBadge__7b848 {
+    left: 5px;
+    bottom: 5px;
+    padding: 4px;
+    border-radius: var(--radius-xs);
+    text-transform: uppercase;
+    transition: opacity var(--custom-button-transition-duration) ease
+}
+
+.altBadge__7b848,.altTextPreview__7b848 {
+    position: absolute;
+    background: var(--background-floating)
+}
+
+.altTextPreview__7b848 {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--primary-360);
+    overflow: hidden;
+    opacity: 0
+}
+
+.full-motion .altTextPreview__7b848 {
+    transition: all var(--custom-button-transition-duration) ease
+}
+
+.altTextPreview__7b848:hover {
+    color: var(--primary-230)
+}
+
+.expressionPickerButton__7b848 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+}
+
+.expressionPickerButton__7b848 .media__7b848 {
+    transition: opacity var(--custom-button-transition-duration) ease
+}
+
+.expressionPickerButton__7b848:hover .media__7b848 {
+    opacity: .6
+}
+
+.expressionPickerButton__7b848 .editIcon__7b848 {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    color: var(--interactive-normal);
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    transition: opacity var(--custom-button-transition-duration) ease
+}
+
+.expressionPickerButton__7b848.canEditMedia__7b848:focus .media__7b848,.expressionPickerButton__7b848.canEditMedia__7b848:hover .media__7b848 {
+    opacity: .15
+}
+
+.expressionPickerButton__7b848.canEditMedia__7b848:focus .editIcon__7b848,.expressionPickerButton__7b848.canEditMedia__7b848:hover .editIcon__7b848 {
+    opacity: 1
+}
+
+.expressionPickerButtonDefault__7b848 {
+    width: 38px
+}
+
+.expressionPickerButtonImageOnly__7b848 {
+    width: 100%;
+    height: 100%
+}
+
+.expressionPickerIconDefault__7b848 {
+    color: var(--interactive-normal);
+    margin-left: 6px
+}
+
+.expressionPickerIconDefault__7b848:hover {
+    color: var(--interactive-active)
+}
+
+.expressionPickerIconImageOnly__7b848 {
+    width: 36px;
+    height: 36px;
+    color: var(--text-muted);
+    cursor: pointer
+}
+
+.emojiPicker__7b848 {
+    box-shadow: var(--shadow-border),var(--shadow-high)
+}
+
+.visual-refresh .emojiPicker__7b848 {
+    box-shadow: none
+}
+
+.emojiDefault__7b848 {
+    width: 22px;
+    height: 22px;
+    margin-left: 6px
+}
+
+.emojiJumbo__7b848 {
+    width: 48px;
+    height: 48px
+}
+
+.gif__7b848 {
+    transition: opacity var(--custom-button-transition-duration) ease
+}
+
+.gifJumbo__7b848 {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.gifDefault__7b848 {
+    width: 48px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.spinnerWrapper__7b848 {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    cursor: default
+}
+
+.spinnerWrapperDefault__7b848 {
+    width: 48px;
+    height: 48px
+}
+
+.spinnerWrapperImageOnly__7b848 {
+    width: 100%;
+    height: 100%
+}
+
+.menuContainer__7b848 {
+    margin: -16px 0 0 6px
+}
+
+.removeAnswerButtonDefault__7b848 {
+    padding: 8px 0;
+    cursor: pointer
+}
+
+.removeAnswerButtonDefault__7b848:hover .trashIcon__7b848 {
+    color: var(--button-danger-background-hover)
+}
+
+.trashIcon__7b848 {
+    width: 24px;
+    height: 24px;
+    color: var(--text-muted);
+    transition: color var(--custom-button-transition-duration) ease
+}
+
+.visual-refresh .defaultTextInputWrapper__7b848 {
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--input-border)
+}
+
+.visual-refresh .defaultTextInputWrapper__7b848.hasError__7b848 {
+    border-color: var(--button-danger-background)
+}
+
+.visual-refresh .defaultTextInputWrapper__7b848.hasError__7b848 .characterCount__7b848 {
+    color: var(--text-danger)
+}
+
+.visual-refresh .defaultTextInputWrapper__7b848:focus-within {
+    border: 1px solid var(--text-link)
+}
+
+.visual-refresh .defaultTextInput__7b848 {
+    border: none
+}
+
+.container__20987 {
+    display: flex;
+    flex-direction: row
+}
+
+.option__20987 {
+    border-radius: 25px;
+    background-color: var(--background-secondary-alt);
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color .2s var(--custom-button-transition-duration) ease, border-color var(--custom-button-transition-duration) ease
+}
+
+.option__20987:hover,.optionSelected__20987 {
+    background-color: var(--background-floating)
+}
+
+.optionSelected__20987 {
+    border: 2px solid var(--brand-500)
+}
+
+.icon__20987 {
+    width: 16px;
+    color: var(--interactive-normal)
+}
+
+.container_d97f89 {
+    border-radius: var(--radius-sm);
+    background-color: var(--background-secondary)
+}
+
+.header_d97f89 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 12px
+}
+
+.headerText_d97f89 {
+    flex: 1
+}
+
+.closeIcon_d97f89 {
+    color: var(--interactive-normal);
+    width: 16px;
+    height: 16px;
+    cursor: pointer
+}
+
+.content_d97f89 {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 16px 18px
+}
+
+.questionInput_d97f89 {
+    max-height: 130px;
+    border: 2px solid var(--input-background);
+    transition: border-color .2s ease-in-out
+}
+
+.questionInput_d97f89:focus,.questionInput_d97f89:hover {
+    border-color: var(--input-background)
+}
+
+.questionInput_d97f89.hasError_d97f89,.questionInput_d97f89:focus.hasError_d97f89,.questionInput_d97f89:hover.hasError_d97f89 {
+    border-color: var(--status-danger-background)
+}
+
+.answerInputsContainer_d97f89 {
+    display: flex;
+    row-gap: 12px
+}
+
+.defaultContainer_d97f89 {
+    flex-direction: column
+}
+
+.imageOnlyContainer_d97f89 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 16px
+}
+
+.addAnswerButton_d97f89 {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--radius-xs);
+    cursor: pointer;
+    transition: background-color var(--custom-button-transition-duration) ease
+}
+
+.addAnswerButton_d97f89:hover {
+    background-color: var(--background-floating)
+}
+
+.addAnswerButtonDefault_d97f89 {
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 0 20px 0 9px
+}
+
+.addAnswerButtonDefault_d97f89.canRemoveMoreAnswers_d97f89 {
+    margin-right: 36px
+}
+
+.addAnswerButtonImageOnly_d97f89 {
+    justify-content: center;
+    height: 175px;
+    padding: 0
+}
+
+.addAnswerIconDefault_d97f89 {
+    width: 28px;
+    height: 28px;
+    color: var(--text-muted)
+}
+
+.addAnswerButtonLabel_d97f89 {
+    padding: 13px 0
+}
+
+.addAnswerIconImageOnly_d97f89 {
+    width: 48px;
+    height: 48px;
+    color: var(--interactive-muted)
+}
+
+.duration_d97f89 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px
+}
+
+.durationSelect_d97f89 {
+    width: 150px;
+    min-width: 6rem;
+    gap: 4px;
+    font-weight: 400;
+    padding: 13px
+}
+
+.footer_d97f89 {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    background: var(--background-secondary-alt)
+}
+
+.checkbox_d97f89 {
+    align-self: center
+}
+
+.postButton_d97f89 {
+    min-height: var(--custom-button-button-lg-height);
+    background-color: var(--redesign-button-primary-background)
+}
+
+.postButtonText_d97f89 {
+    color: inherit
+}
+
+.apiErrorBlock_d97f89 {
+    margin-bottom: 24px
+}
+
+.visual-refresh .questionInput_d97f89 {
+    border: 1px solid var(--input-border)
+}
+
+.visual-refresh .questionInput_d97f89.hasError_d97f89,.visual-refresh .questionInput_d97f89:focus.hasError_d97f89,.visual-refresh .questionInput_d97f89:hover.hasError_d97f89 {
+    border-color: var(--status-danger-background)
+}
+
+.visual-refresh .content_d97f89 {
+    padding: 4px var(--space-24) 18px
+}
+
+.visual-refresh .addAnswerButtonDefault_d97f89 {
+    border-radius: var(--radius-sm);
+    background-color: var(--background-mod-subtle)
+}
+
+.visual-refresh .addAnswerButtonDefault_d97f89:hover {
+    background-color: var(--background-mod-normal)
+}
+
+/*# sourceMappingURL=2fbc65d075b5a0d2.css.map*/

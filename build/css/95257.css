@@ -1,0 +1,81 @@
+/**
+  Module ID: 95257
+  Original File Name: 60c32b84ed37e55b
+**/
+.section__999b5 {
+    margin-top: 16px
+}
+
+.guildSelectOptionIcon__999b5 {
+    border-radius: 4px
+}
+
+.modalHeader_d295eb {
+    display: flex;
+    flex-direction: column
+}
+
+.modalHeaderTitle_d295eb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+    height: 24px
+}
+
+.modalContent_d295eb {
+    padding: 16px;
+    height: 340px
+}
+
+.guildSelector_d295eb {
+    width: 100%
+}
+
+.categoryRow_d295eb,.channelRow_d295eb {
+    margin-bottom: 12px
+}
+
+.channelRow_d295eb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
+}
+
+.channelRow_d295eb+.categoryRow_d295eb {
+    margin-top: 24px
+}
+
+.channelName_d295eb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px
+}
+
+.channelIconContainer_d295eb {
+    background: var(--bg-mod-subtle);
+    border-radius: var(--radius-round);
+    height: 32px;
+    width: 32px
+}
+
+.channelIcon_d295eb {
+    color: var(--interactive-normal);
+    padding: 6px
+}
+
+.modalFooter_d295eb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row
+}
+
+.goBackButton_d295eb {
+    color: var(--interactive-normal)
+}
+
+/*# sourceMappingURL=60c32b84ed37e55b.css.map*/

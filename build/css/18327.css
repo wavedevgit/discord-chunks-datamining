@@ -1,0 +1,58 @@
+/**
+  Module ID: 18327
+  Original File Name: 84d240072fd3d6c3
+**/
+.container__71af4 {
+    width: 440px;
+    height: 300px
+}
+
+.content__71af4 {
+    border-radius: 8px;
+    background-color: var(--modal-background)
+}
+
+.avatarBackground__71af4,.content__71af4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.avatarBackground__71af4 {
+    width: 221px;
+    height: 168px;
+    border-radius: 8px;
+    border: 3px solid #94d783;
+    background: linear-gradient(0deg,hsla(0,0%,100%,.7),hsla(0,0%,100%,.7)),linear-gradient(180deg,#94d783,#139968);
+    position: relative;
+    bottom: -35px;
+    gap: 12px;
+    z-index: -1;
+    margin: -95px auto auto
+}
+
+.avatar__71af4 {
+    margin-top: -60px
+}
+
+.rect__71af4 {
+    width: 206px;
+    height: 24px;
+    border-radius: 4px;
+    opacity: .45;
+    background-color: var(--white-500)
+}
+
+.bottomOverlay__71af4 {
+    position: absolute;
+    bottom: 0;
+    height: 89px;
+    width: 257px;
+    background: linear-gradient(180deg,rgba(49,51,56,0),#313338 57.5%)
+}
+
+.bodyText__71af4 {
+    text-align: center
+}
+
+/*# sourceMappingURL=84d240072fd3d6c3.css.map*/

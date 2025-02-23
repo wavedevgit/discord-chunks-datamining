@@ -1,0 +1,121 @@
+/**
+  Module ID: 94064
+  Original File Name: d25e4de4ab44e821
+**/
+.modal__0651b {
+    min-height: 0;
+    min-height: initial;
+    max-height: 100%
+}
+
+.description__0651b {
+    margin-top: 8px
+}
+
+.body__0651b {
+    margin-top: 16px
+}
+
+.modalContent__0651b {
+    padding: 16px
+}
+
+.addItemContainer__0651b {
+    display: flex;
+    margin-top: 8px;
+    cursor: pointer
+}
+
+.addItemButton__0651b {
+    display: flex;
+    flex-direction: row;
+    gap: 8px
+}
+
+.dragging__0651b {
+    opacity: .6
+}
+
+.draggableInputContainer__0651b {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: -8px
+}
+
+.inputWrapper__0651b {
+    flex: 1;
+    flex-direction: row-reverse;
+    position: relative;
+    margin-bottom: 12px
+}
+
+.inputWrapper__0651b:hover .clearButton__0651b {
+    opacity: 1
+}
+
+.clearButton__0651b {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    color: var(--interactive-normal);
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    z-index: 2
+}
+
+.clearButton__0651b:focus,.clearButton__0651b:hover {
+    opacity: 1
+}
+
+.clearIcon__0651b {
+    width: 16px;
+    height: 16px
+}
+
+.dragContainer__0651b {
+    cursor: move;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px
+}
+
+.dragIcon__0651b {
+    color: var(--interactive-normal)
+}
+
+.divider__0651b {
+    height: 1px;
+    background-color: var(--background-modifier-accent);
+    margin: 24px 0
+}
+
+.errorText__0651b {
+    margin-top: 8px
+}
+
+.spacedItem__0651b {
+    margin-bottom: 16px
+}
+
+.button__0651b {
+    width: auto
+}
+
+.cancelButton__0651b {
+    margin-right: 8px
+}
+
+.radioIconEmptyContainer__0651b {
+    padding-right: 10px;
+    display: flex;
+    margin-bottom: 12px
+}
+
+.radioIconEmpty__0651b {
+    color: var(--interactive-normal)
+}
+
+/*# sourceMappingURL=d25e4de4ab44e821.css.map*/

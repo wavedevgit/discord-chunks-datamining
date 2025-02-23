@@ -1,0 +1,71 @@
+/**
+  Module ID: 11401
+  Original File Name: da46c0693456f269
+**/
+.text__87e56 {
+    color: var(--premium-nitro-pink-text)
+}
+
+.rootContainer_f4adbd {
+    align-items: center;
+    justify-content: space-between
+}
+
+.headerContainer_f4adbd,.rootContainer_f4adbd {
+    display: flex;
+    flex-direction: row
+}
+
+.text_f4adbd {
+    color: currentColor
+}
+
+.newBadge_f4adbd {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: var(--spacing-4)
+}
+
+.nitroWheel_f4adbd {
+    margin-top: 1px;
+    margin-left: var(--spacing-4)
+}
+
+.tooltip_f4adbd {
+    margin-left: 50px
+}
+
+.labelContainer_f4adbd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.playButton_f4adbd {
+    width: 20px;
+    height: 20px
+}
+
+.mutedLabel_f4adbd {
+    width: 180px;
+    overflow: auto;
+    color: currentColor;
+    white-space: normal
+}
+
+.list_c47777 {
+    max-height: 500px
+}
+
+.videoPaused_afb275 {
+    display: flex;
+    justify-content: left;
+    align-items: center
+}
+
+.warningCircle_afb275 {
+    margin-right: 4px
+}
+
+/*# sourceMappingURL=da46c0693456f269.css.map*/

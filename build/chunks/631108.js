@@ -1,0 +1,2 @@
+/** Chunk was on 96888 (23e085a6af666071.js) **/
+e.exports = "/assets/8f1e1e90bea53650.svg"

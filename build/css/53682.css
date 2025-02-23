@@ -1,0 +1,245 @@
+/**
+  Module ID: 53682
+  Original File Name: 591796273c4ee3b0
+**/
+.previewContainer__9a244 {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    gap: 12px
+}
+
+.quote__9a244 {
+    width: 4px;
+    height: 100%;
+    background-color: var(--border-subtle);
+    border-radius: 2px;
+    flex-shrink: 0
+}
+
+.content__9a244 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 4px 0;
+    gap: 6px
+}
+
+.previewImage__9a244 {
+    width: auto;
+    height: auto;
+    max-width: 225px;
+    max-height: 225px
+}
+
+.icon__506b8 {
+    --custom-app-icon-size: 40px
+}
+
+.modal__506b8 {
+    max-height: 800px;
+    min-height: 400px;
+    height: 85vh
+}
+
+.header__506b8 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px
+}
+
+.search__506b8 {
+    overflow: visible
+}
+
+.titleLine__506b8 {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: start
+}
+
+.title__506b8 {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.closeButton__506b8 {
+    padding: 0
+}
+
+.footer__506b8 {
+    justify-content: space-between;
+    align-items: center
+}
+
+.footerWithMessage__506b8 {
+    display: flex;
+    flex-direction: column;
+    padding: 0
+}
+
+.footerButtons__506b8 {
+    gap: 12px;
+    margin: 16px
+}
+
+.destinationRow__506b8,.footerButtons__506b8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.destinationRow__506b8 {
+    min-height: 48px;
+    padding: 0 8px;
+    margin-left: 16px;
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer
+}
+
+.destinationRow__506b8.disabled__506b8 {
+    cursor: not-allowed
+}
+
+.destinationRow__506b8:not(.disabled__506b8):hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.identity__506b8 {
+    flex-shrink: 1;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px
+}
+
+.identity__506b8,.labels__506b8 {
+    display: flex;
+    overflow: hidden
+}
+
+.labels__506b8 {
+    flex-direction: column;
+    margin: 4px 0
+}
+
+.label__506b8 {
+    color: var(--header-primary)
+}
+
+.sublabel__506b8 {
+    color: var(--header-muted)
+}
+
+.threadSubLabel__506b8 {
+    display: flex;
+    align-items: center
+}
+
+.subLabelIcon__506b8 {
+    width: 12px;
+    height: 12px;
+    margin-right: 2px
+}
+
+.subLabelSeparator__506b8 {
+    margin: 0 4px
+}
+
+.disabled__506b8 .iconWrapper__506b8 {
+    opacity: 0.01
+}
+
+.disabled__506b8 .label__506b8 {
+    color: var(--header-muted)
+}
+
+.disabled__506b8 .subLabel__506b8 {
+    color: var(--text-muted)
+}
+
+.checkbox__506b8 {
+    flex: 0;
+    margin-left: 16px
+}
+
+.fauxButton__506b8 {
+    pointer-events: none
+}
+
+.warningIcon__506b8 {
+    color: var(--text-warning)
+}
+
+.noResults__506b8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 0 32px;
+    text-align: center
+}
+
+.noResultsImg__506b8 {
+    width: 200px
+}
+
+.actions__506b8 {
+    display: flex;
+    flex-direction: row;
+    gap: 8px
+}
+
+.sendWithMessage__506b8 {
+    height: 100%;
+    max-height: 44px;
+    align-self: flex-end;
+    flex-shrink: 0;
+    min-width: 0;
+    padding: 2px 16px;
+    border-radius: 8px
+}
+
+.messageInput__506b8 {
+    max-height: 88px
+}
+
+.commandTextContainer__506b8 {
+    gap: var(--spacing-4);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 1px;
+    margin-right: var(--spacing-8)
+}
+
+.command__506b8 {
+    padding: var(--spacing-8) var(--spacing-12);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-primary)
+}
+
+.icon__506b8 {
+    width: var(--custom-app-icon-size);
+    height: var(--custom-app-icon-size);
+    padding-right: 10px
+}
+
+.spinnerContainer__506b8 {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%
+}
+
+/*# sourceMappingURL=591796273c4ee3b0.css.map*/

@@ -1,0 +1,37 @@
+/**
+  Module ID: 54934
+  Original File Name: 9903c4db1ff530c7
+**/
+.header_fc3cf0 {
+    padding: 24px 16px 0;
+    flex-grow: 0;
+    overflow: hidden
+}
+
+.closeButton_fc3cf0 {
+    z-index: 1000;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: var(--interactive-normal)
+}
+
+.description_fc3cf0 {
+    margin-bottom: 12px;
+    text-align: center
+}
+
+.content_fc3cf0 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    padding: 0 24px 24px
+}
+
+.footer_fc3cf0 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8px
+}
+
+/*# sourceMappingURL=9903c4db1ff530c7.css.map*/

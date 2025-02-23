@@ -1,0 +1,8 @@
+/** Chunk was on web (https://canary.discord.comweb.9f0be545d3e34886.js.js) **/
+"use strict";
+var r = n(197859),
+  i = n(546533),
+  o = n(732116).CONSTRUCTOR;
+e.exports = o || !i(function(e) {
+  r.all(e).then(void 0, function() {})
+})

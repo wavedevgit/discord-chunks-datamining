@@ -1,0 +1,26 @@
+/**
+  Module ID: 20102
+  Original File Name: b828affe61c85d37
+**/
+.message_d450d1 {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.imageUnverified_d450d1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    margin: 20px auto;
+    width: 162px
+}
+
+.images-light .imageUnverified_d450d1 {
+    background-image: url(/assets/8417bbd4ec8f476a.svg)
+}
+
+.images-dark .imageUnverified_d450d1 {
+    background-image: url(/assets/f7db12df7391974c.svg)
+}
+
+/*# sourceMappingURL=b828affe61c85d37.css.map*/

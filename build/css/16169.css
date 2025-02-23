@@ -1,0 +1,33 @@
+/**
+  Module ID: 16169
+  Original File Name: a749989374dfa405
+**/
+.modalContent__9ae4f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 16px;
+    text-align: center
+}
+
+.spinner__9ae4f {
+    margin-bottom: 32px
+}
+
+.title__9ae4f {
+    margin-bottom: 8px;
+    font-size: 24px
+}
+
+.description__9ae4f {
+    font-size: 16px;
+    margin-bottom: 32px
+}
+
+.button__9ae4f {
+    width: 80px;
+    margin: 0 auto
+}
+
+/*# sourceMappingURL=a749989374dfa405.css.map*/

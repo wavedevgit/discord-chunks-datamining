@@ -1,0 +1,59 @@
+/**
+  Module ID: 638
+  Original File Name: 145fe1f6b2c0df96
+**/
+.modalRoot__6efa2 {
+    width: 480px
+}
+
+.modalHeaderContainer__6efa2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 52px 16px
+}
+
+.modalHeader__6efa2 {
+    margin-bottom: 8px
+}
+
+.content__6efa2 {
+    padding-bottom: 16px;
+    margin-top: 16px
+}
+
+.closeButton__6efa2 {
+    position: absolute;
+    z-index: 1;
+    top: 16px;
+    right: 16px
+}
+
+.deviceItem__6efa2 {
+    padding: 8px 16px
+}
+
+.deviceItemIcon__6efa2 {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    margin-right: 8px;
+    color: var(--interactive-active)
+}
+
+.deviceItemName__6efa2 {
+    display: flex;
+    align-items: center
+}
+
+.spinnerContainer__6efa2 {
+    padding: 64px
+}
+
+.emptyArt__6efa2 {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center
+}
+
+/*# sourceMappingURL=145fe1f6b2c0df96.css.map*/

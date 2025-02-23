@@ -1,0 +1,26 @@
+/**
+  Module ID: 37564
+  Original File Name: 2c9fac55c560b9e4
+**/
+.content__04926,.modal__04926 {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.content__04926 {
+    padding: 88px 16px 16px
+}
+
+.image__04926 {
+    height: 138px;
+    position: absolute;
+    top: -68px
+}
+
+.text__04926 {
+    text-align: center;
+    margin-bottom: 16px
+}
+
+/*# sourceMappingURL=2c9fac55c560b9e4.css.map*/

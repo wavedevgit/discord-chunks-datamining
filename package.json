@@ -1,7 +1,7 @@
 {
   "name": "client-datamning",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repository datamines discord chunks every 5 minutes, and generates a list of json objects which has data from the chunks",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

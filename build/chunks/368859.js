@@ -1,0 +1,9 @@
+/** Chunk was on 95477 (d8d7a493e54d58de.js) **/
+r.d(t, {
+  Z: () => i
+});
+var n = r(981631);
+
+function i(e) {
+  return e.type === n.uaV.DEFAULT && null != e.messageReference && e.messageReference.type !== n.Uvt.FORWARD
+}

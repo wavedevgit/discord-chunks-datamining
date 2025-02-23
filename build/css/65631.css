@@ -1,0 +1,51 @@
+/**
+  Module ID: 65631
+  Original File Name: 93edf1b9be9fa9c7
+**/
+.modal_ca6911 {
+    font-size: 13px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-height: 800px;
+    min-height: 0
+}
+
+.modalHeader_ca6911 {
+    display: flex;
+    justify-content: space-between
+}
+
+.header_ca6911 {
+    display: flex;
+    gap: 8px;
+    align-items: center
+}
+
+.content_ca6911 {
+    margin-bottom: 16px
+}
+
+.linkedLobbyNotice_ca6911 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-bottom: 16px
+}
+
+.linkedLobbyNoticeSeparator_ca6911 {
+    margin: 0 4px
+}
+
+.linkedLobbyApplicationIcon_ca6911 {
+    height: 16px;
+    width: 16px
+}
+
+.channelIcon_ca6911 {
+    color: var(--interactive-normal)
+}
+
+/*# sourceMappingURL=93edf1b9be9fa9c7.css.map*/

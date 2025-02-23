@@ -1,0 +1,140 @@
+/**
+  Module ID: 47620
+  Original File Name: 7b3640ab42d156ba
+**/
+.unsupportedBrowser__9ec6a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #1b242b;
+    text-align: center
+}
+
+.unsupportedBrowser__9ec6a,.wrap__9ec6a {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.wrap__9ec6a {
+    flex-direction: column;
+    min-width: 320px;
+    overflow: auto;
+    height: 100%
+}
+
+.title__9ec6a {
+    font-weight: 700;
+    font-size: 22px;
+    flex-shrink: 0;
+    color: var(--white-500);
+    margin: 50px 0 10px;
+    text-transform: uppercase
+}
+
+.message__9ec6a {
+    font-weight: 500;
+    margin: 0 auto 30px;
+    line-height: 18px;
+    max-width: 420px;
+    font-size: 14px;
+    padding: 0 20px;
+    flex-shrink: 0;
+    color: #949494
+}
+
+.browserList__9ec6a {
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    display: flex
+}
+
+.browserItem__9ec6a {
+    padding: 20px;
+    width: 188px;
+    margin: 10px;
+    border: 2px solid #282f36;
+    box-sizing: border-box;
+    border-radius: 3px;
+    transition: .1s;
+    color: var(--white-500)
+}
+
+.browserItem__9ec6a:hover {
+    transform: scale(1.04);
+    border-color: var(--brand-500)
+}
+
+.browserItem__9ec6a:hover .browser__9ec6a {
+    background-position-y: 100px
+}
+
+.browserItem__9ec6a:hover .btn__9ec6a {
+    background-color: var(--brand-500);
+    border-color: var(--brand-500);
+    color: var(--white-500)
+}
+
+.browserItemText__9ec6a {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: 500;
+    font-size: 12px
+}
+
+.browser__9ec6a {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url(/assets/e840fd5a85524a8b.png);
+    background-size: 400px 200px;
+    margin-bottom: 28px
+}
+
+.browserDiscord__9ec6a {
+    background-position-x: 0
+}
+
+.browserOpera__9ec6a {
+    background-position-x: 100px
+}
+
+.browserFirefox__9ec6a {
+    background-position-x: 200px
+}
+
+.browserChrome__9ec6a {
+    background-position-x: 300px
+}
+
+.btn__9ec6a {
+    margin-top: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-500);
+    border: 1px solid #282f36;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 3px;
+    transition: border .1s, background-color .1s;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.btn__9ec6a:active {
+    position: relative;
+    top: 1px
+}
+
+.btn__9ec6a {
+    background: transparent
+}
+
+/*# sourceMappingURL=7b3640ab42d156ba.css.map*/

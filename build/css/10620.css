@@ -1,0 +1,150 @@
+/**
+  Module ID: 10620
+  Original File Name: 18a416af17f0974d
+**/
+.root__66e7e {
+    border-radius: 8px;
+    background: var(--background-secondary);
+    overflow: hidden
+}
+
+.option__66e7e {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--interactive-active);
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.option__66e7e:hover {
+    background: var(--background-modifier-hover);
+    border-bottom-color: transparent
+}
+
+.option__66e7e:last-child {
+    border-bottom: none
+}
+
+.text__66e7e {
+    padding-right: 5px
+}
+
+.caret__66e7e {
+    color: var(--interactive-normal);
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-left: 8px
+}
+
+.visual-refresh .root__66e7e {
+    background-color: var(--background-surface-higher);
+    border: 1px solid var(--border-subtle)
+}
+
+.visual-refresh .option__66e7e {
+    background-color: none;
+    padding: var(--space-16) var(--space-12)
+}
+
+.visual-refresh .option__66e7e:hover {
+    background-color: var(--background-mod-normal)
+}
+
+.headerContainer__6c12c {
+    flex-direction: column
+}
+
+.modalCloseButton__6c12c {
+    position: absolute;
+    top: var(--custom-feedback-modal-close-button-margin);
+    right: var(--custom-feedback-modal-close-button-margin)
+}
+
+.helpdeskLink__6c12c {
+    margin-top: 8px
+}
+
+.header__6c12c,.ratingBody__6c12c {
+    flex: 1 1 auto;
+    text-align: center
+}
+
+.ratingBody__6c12c {
+    margin-top: 8px;
+    color: var(--text-normal)
+}
+
+.footer__6c12c {
+    justify-content: space-between
+}
+
+.problemInfo__6c12c {
+    margin-bottom: 24px
+}
+
+.hidden__6c12c {
+    visibility: hidden
+}
+
+.theme-dark .emoji__6c12c {
+    opacity: .4
+}
+
+.theme-light .emoji__6c12c {
+    opacity: .6
+}
+
+.visual-refresh .emoji__6c12c {
+    opacity: 1
+}
+
+.header__6c12c {
+    color: var(--text-normal)
+}
+
+:where(.visual-refresh) .problemInfo__6c12c {
+    margin-bottom: 0
+}
+
+.headerContainer__4da69 {
+    padding: var(--spacing-40) var(--spacing-16) var(--spacing-24)
+}
+
+.headerBody__4da69 {
+    white-space: pre-wrap
+}
+
+.modalContent__4da69 {
+    margin-bottom: var(--spacing-8);
+    padding: 0 var(--spacing-32)
+}
+
+.modalFooter__4da69 {
+    padding: 20px
+}
+
+.submitFooter__4da69 {
+    padding: 13px 16px
+}
+
+.textArea__4da69 {
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-16)
+}
+
+.backButton__4da69 {
+    padding: 0
+}
+
+.visual-refresh .modalContent__4da69 {
+    padding: 0 var(--modal-horizontal-padding)
+}
+
+.visual-refresh .modalFooter__4da69 {
+    padding: var(--modal-vertical-padding) var(--modal-horizontal-padding)
+}
+
+/*# sourceMappingURL=18a416af17f0974d.css.map*/

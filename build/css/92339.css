@@ -1,0 +1,19 @@
+/**
+  Module ID: 92339
+  Original File Name: a428e0a02b11b985
+**/
+.heading_b12e66 {
+    margin-bottom: 16px
+}
+
+.cannon_b12e66 {
+    position: absolute;
+    width: 100vw;
+    height: 130vh;
+    top: -30vh;
+    left: 0;
+    z-index: 1;
+    pointer-events: none
+}
+
+/*# sourceMappingURL=a428e0a02b11b985.css.map*/

@@ -1,0 +1,308 @@
+/** Chunk was on 12416 (85435f478674673a.js) **/
+n.d(t, {
+  QR: () => g,
+  Yj: () => O,
+  ZP: () => j
+}), n(47120);
+var r = n(200651),
+  l = n(192379),
+  i = n(120356),
+  a = n.n(i),
+  o = n(642128),
+  s = n(481060),
+  c = n(13245),
+  u = n(809357),
+  d = n(691891),
+  f = n(44359),
+  m = n(333031),
+  p = n(693091),
+  h = n(981631),
+  v = n(388032),
+  b = n(825499);
+
+function g(e, t, n) {
+  return (0, r.jsx)(y, {
+    keybind: e,
+    message: t,
+    messageWithoutKeybind: n
+  })
+}
+
+function y(e) {
+  let {
+    keybind: t,
+    message: n,
+    messageWithoutKeybind: l
+  } = e, i = (0, u.o)();
+  return (0, r.jsx)(r.Fragment, {
+    children: i ? v.NW.format(n, {
+      keybind: t,
+      keybindHook: e => (0, r.jsx)(f.Z, {
+        keybind: t
+      }, t.join("+"))
+    }) : l
+  })
+}
+
+function E(e) {
+  e.currentTarget.scrollTo(0, 0)
+}
+let O = l.memo(function(e) {
+  let {
+    maxBodyLines: t,
+    expand: n = !1,
+    onNotificationShow: i,
+    onDismissClick: c,
+    onConfirmClick: u,
+    onCancelClick: f,
+    onNotificationClick: m,
+    hint: p,
+    cancelText: g,
+    confirmText: y,
+    icon: O,
+    body: S,
+    title: j,
+    renderFooter: x,
+    contentOpacity: Z,
+    status: w,
+    containerRef: C,
+    className: P,
+    wrapperClassName: N
+  } = e, [I, R] = l.useState(!1), _ = n || I || w === h._1z.FOCUSED;
+  l.useEffect(() => {
+    null == i || i()
+  }, [i]);
+  let k = l.useCallback(e => {
+      e.stopPropagation(), null == c || c(e)
+    }, [c]),
+    A = l.useCallback(e => {
+      e.stopPropagation(), null == u || u(e)
+    }, [u]),
+    T = l.useCallback(e => {
+      e.stopPropagation(), null == f || f(e)
+    }, [f]),
+    D = l.useCallback(() => {
+      R(!0)
+    }, []),
+    M = l.useCallback(() => {
+      R(!1)
+    }, []);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)("div", {
+      className: a()(b.overflowWrapper, N),
+      onScroll: E,
+      children: (0, r.jsx)(s.P3F, {
+        innerRef: C,
+        ignoreKeyPress: !0,
+        onMouseOver: D,
+        onMouseLeave: M,
+        onClick: m,
+        className: a()(b.container, {
+          [b.clickable]: null != m
+        }, P),
+        children: function() {
+          let e = null == x ? void 0 : x(_);
+          return (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsxs)(o.animated.div, {
+              className: b.iconAndDetails,
+              style: {
+                opacity: Z
+              },
+              children: [null == O ? null : "string" == typeof O ? (0, r.jsx)(s.qEK, {
+                src: O,
+                size: s.EFr.SIZE_40,
+                className: b.avatar,
+                "aria-hidden": !0
+              }) : (0, r.jsx)("div", {
+                className: b.avatar,
+                children: O
+              }), (0, r.jsxs)("div", {
+                className: b.details,
+                children: [(0, r.jsx)(s.Text, {
+                  color: "interactive-normal",
+                  variant: "text-sm/semibold",
+                  lineClamp: 2,
+                  children: j
+                }), null != S ? (0, r.jsx)(s.Text, {
+                  color: "interactive-normal",
+                  variant: "text-sm/normal",
+                  lineClamp: null != t ? t * (_ ? 2 : 1) : void 0,
+                  children: S
+                }) : null, function() {
+                  let e = "function" == typeof p ? p(_) : p;
+                  return null != p ? (0, r.jsx)(s.Text, {
+                    className: b.hint,
+                    color: "text-muted",
+                    variant: "text-xxs/medium",
+                    children: e
+                  }) : null
+                }(), null == u && null == f ? null : (0, r.jsxs)("div", {
+                  className: b.buttonContainer,
+                  children: [null != u ? (0, r.jsx)(s.zxk, {
+                    className: b.button,
+                    size: s.zxk.Sizes.SMALL,
+                    color: s.zxk.Colors.GREEN,
+                    onClick: A,
+                    children: null != y ? y : v.NW.string(v.t.BddRzc)
+                  }) : null, null != f ? (0, r.jsx)(s.zxk, {
+                    className: b.button,
+                    size: s.zxk.Sizes.SMALL,
+                    look: s.zxk.Looks.OUTLINED,
+                    color: s.zxk.Colors.PRIMARY,
+                    onClick: T,
+                    children: null != g ? g : v.NW.string(v.t["ETE/oK"])
+                  }) : null]
+                })]
+              })]
+            }), null != e && (0, r.jsx)(s.P3F, {
+              className: b.footer,
+              ignoreKeyPress: !0,
+              onClick: e => e.stopPropagation(),
+              children: e
+            })]
+          })
+        }()
+      })
+    }), (0, r.jsx)(d.Z, {
+      className: b.dismissButton,
+      onDismiss: k,
+      "aria-label": v.NW.string(v.t.LnEgqa)
+    })]
+  })
+});
+
+function S(e) {
+  let {
+    springs: {
+      opacity: t,
+      scale: n,
+      transform: l,
+      height: i
+    },
+    index: a,
+    children: s,
+    locked: c
+  } = e;
+  return (0, r.jsx)(o.animated.div, {
+    className: b.animationWrapper,
+    style: {
+      pointerEvents: c && 0 !== a ? "none" : "auto",
+      zIndex: Math.max(5 - a, 0),
+      opacity: t,
+      transform: l.to(e => "translate3d(0, ".concat(e, "px, 0)")),
+      scale: n.to([0, 1], [.7, 1]),
+      height: i
+    },
+    children: s
+  })
+}
+
+function j(e) {
+  var t, n;
+  let {
+    notification: i,
+    index: a,
+    locked: o,
+    transitionState: s,
+    cleanUp: u
+  } = e, {
+    id: d,
+    props: {
+      onNotificationShow: f,
+      onDismissClick: h,
+      onNotificationClick: v,
+      onConfirmClick: g,
+      onCancelClick: y,
+      renderFooter: E
+    }
+  } = i, j = l.useCallback(() => {
+    f(d)
+  }, [f, d]), x = l.useCallback(e => {
+    c.Z.updateNotificationStatus(d), null == h || h(e, d)
+  }, [d, h]), Z = l.useCallback(e => {
+    null == v || v(e, d)
+  }, [v, d]), w = l.useCallback(e => {
+    null == g || g(e, d)
+  }, [g, d]), C = l.useCallback(e => {
+    null == y || y(e, d)
+  }, [y, d]), P = l.useCallback(e => null == E ? void 0 : E(e, d), [E, d]), {
+    props: {
+      onNotificationShow: N,
+      onDismissClick: I,
+      renderFooter: R,
+      onNotificationClick: _,
+      onConfirmClick: k,
+      onCancelClick: A
+    },
+    status: T
+  } = i, D = function(e, t) {
+    if (null == e) return {};
+    var n, r, l = function(e, t) {
+      if (null == e) return {};
+      var n, r, l = {},
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+      return l
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+    }
+    return l
+  }(i.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick"]), {
+    ref: M,
+    springs: L
+  } = (0, p.X4)(i.id, s, u);
+  return (0, r.jsx)(S, {
+    transitionState: s,
+    springs: L,
+    index: a,
+    locked: o,
+    children: (0, r.jsx)(m.Z, {
+      observe: 0 === a,
+      className: b.clickZone,
+      children: (0, r.jsx)(O, (t = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: !0,
+              configurable: !0,
+              writable: !0
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({}, D), n = n = {
+        title: "function" == typeof D.title ? D.title(x) : D.title,
+        containerRef: M,
+        notificationId: i.id,
+        onNotificationShow: 0 === a ? j : void 0,
+        onDismissClick: x,
+        onNotificationClick: null != v ? Z : void 0,
+        onConfirmClick: null != g ? w : void 0,
+        onCancelClick: null != y ? C : void 0,
+        renderFooter: P,
+        expand: !1,
+        index: a,
+        locked: o,
+        status: T,
+        contentOpacity: L.contentOpacity
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      }), t))
+    })
+  })
+}

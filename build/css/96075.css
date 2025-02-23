@@ -1,0 +1,22 @@
+/**
+  Module ID: 96075
+  Original File Name: 2bb91d16fc1a03ed
+**/
+.art__0668f {
+    width: 220px;
+    height: 110px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 16px auto
+}
+
+.images-light .art__0668f {
+    background-image: url(/assets/30866b3bc575c1f9.svg)
+}
+
+.images-dark .art__0668f {
+    background-image: url(/assets/d9a3a246636b8d4e.svg)
+}
+
+/*# sourceMappingURL=2bb91d16fc1a03ed.css.map*/

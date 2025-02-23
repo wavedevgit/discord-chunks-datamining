@@ -1,0 +1,60 @@
+/**
+  Module ID: 43350
+  Original File Name: 13b0dc7a4b47af48
+**/
+.spacing__837b7 {
+    margin-bottom: 20px
+}
+
+.modalContent__837b7 {
+    padding-bottom: 20px
+}
+
+.banReasonOtherClickable__837b7 {
+    position: relative;
+    background-color: var(--background-secondary-alt);
+    margin-bottom: 4px;
+    padding: 12px;
+    border-radius: 4px;
+    color: var(--interactive-normal);
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.banReasonOtherClickable__837b7:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--interactive-hover)
+}
+
+.radioItemStyles__837b7 {
+    margin-bottom: 4px;
+    background-color: var(--background-secondary-alt)
+}
+
+.footer__837b7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px 24px
+}
+
+.footerStepped__837b7 {
+    justify-content: space-between
+}
+
+.cancel__837b7 {
+    padding: 0;
+    margin: 0
+}
+
+.error__837b7 {
+    margin-bottom: 8px;
+    border-radius: 4px
+}
+
+/*# sourceMappingURL=13b0dc7a4b47af48.css.map*/

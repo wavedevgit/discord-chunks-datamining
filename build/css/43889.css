@@ -1,0 +1,39 @@
+/**
+  Module ID: 43889
+  Original File Name: d4f89b96733c7cd0
+**/
+.modal__560ae {
+    border-radius: var(--radius-xs);
+    overflow: hidden
+}
+
+.content__560ae {
+    padding: 16px
+}
+
+.breadCrumb__560ae {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.selectionBody__560ae {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.footer__560ae {
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.closeBtn__560ae {
+    color: var(--text-primary)
+}
+
+.spinner__560ae {
+    height: 43px
+}
+
+/*# sourceMappingURL=d4f89b96733c7cd0.css.map*/

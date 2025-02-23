@@ -1,0 +1,28 @@
+/**
+  Module ID: 12014
+  Original File Name: 1e7c8c204032fb6e
+**/
+.root__10a0c {
+    min-width: -moz-fit-content;
+    min-width: fit-content
+}
+
+.content__10a0c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 16px 20px
+}
+
+.iframe__10a0c {
+    height: 700px;
+    width: 700px
+}
+
+.cancelButton__10a0c {
+    align-self: flex-end;
+    color: var(--interactive-normal)
+}
+
+/*# sourceMappingURL=1e7c8c204032fb6e.css.map*/

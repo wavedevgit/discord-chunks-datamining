@@ -1,0 +1,70 @@
+/**
+  Module ID: 13878
+  Original File Name: 2e5382d121844ccd
+**/
+.container_f08fc1 {
+    border-radius: 8px;
+    width: 240px
+}
+
+.content_f08fc1 {
+    background-color: var(--background-floating);
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 24px 16px 16px
+}
+
+.content_f08fc1,.iconBackground_f08fc1 {
+    display: flex;
+    align-items: center
+}
+
+.iconBackground_f08fc1 {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    background-color: var(--background-secondary);
+    justify-content: center
+}
+
+.icon_f08fc1 {
+    color: var(--header-primary)
+}
+
+.header_f08fc1 {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 4px
+}
+
+.description_f08fc1 {
+    text-align: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap
+}
+
+.channel_f08fc1,.description_f08fc1 {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.channel_f08fc1 {
+    width: 208px
+}
+
+.channelIcon_f08fc1 {
+    margin: 2px 4px 0 0
+}
+
+.channelName_f08fc1 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.button_f08fc1 {
+    margin-bottom: 8px
+}
+
+/*# sourceMappingURL=2e5382d121844ccd.css.map*/

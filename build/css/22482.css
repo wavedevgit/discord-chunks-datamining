@@ -1,0 +1,54 @@
+/**
+  Module ID: 22482
+  Original File Name: a0c56872b1201c08
+**/
+.modal_a8217b {
+    min-height: 400px;
+    height: 60vh;
+    width: 600px
+}
+
+.container_a8217b,.modal_a8217b {
+    background-color: var(--background-secondary);
+    border-radius: 8px
+}
+
+.container_a8217b {
+    box-sizing: border-box;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    flex: 1
+}
+
+.header_a8217b {
+    background-color: var(--background-tertiary);
+    display: flex;
+    height: 48px;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 16px
+}
+
+.spacer_a8217b {
+    flex-grow: 1
+}
+
+.threadIcon_a8217b {
+    margin-right: 8px
+}
+
+.closeIcon_a8217b,.threadIcon_a8217b {
+    color: var(--interactive-normal)
+}
+
+.closeIcon_a8217b {
+    cursor: pointer
+}
+
+.closeIcon_a8217b:hover {
+    color: var(--interactive-hover)
+}
+
+/*# sourceMappingURL=a0c56872b1201c08.css.map*/

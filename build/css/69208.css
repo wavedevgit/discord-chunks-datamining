@@ -1,0 +1,39 @@
+/**
+  Module ID: 69208
+  Original File Name: 28cad125de653fe7
+**/
+.content__5003d {
+    display: flex;
+    flex-direction: column
+}
+
+.header__5003d {
+    margin-top: 32px;
+    text-align: center;
+    max-width: 280px;
+    align-self: center
+}
+
+.body__5003d {
+    margin-top: 8px
+}
+
+.keybindHintKeys__5003d {
+    display: inline-block
+}
+
+.keybindShortcut__5003d {
+    height: 20px
+}
+
+.closeButton__5003d {
+    position: absolute;
+    top: 20px;
+    right: 20px
+}
+
+.soundWheel__5003d {
+    margin-bottom: 32px
+}
+
+/*# sourceMappingURL=28cad125de653fe7.css.map*/

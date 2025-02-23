@@ -1,0 +1,55 @@
+/**
+  Module ID: 88358
+  Original File Name: a4cbc99863c64a38
+**/
+.root__11e4a {
+    width: 400px
+}
+
+.root__11e4a .noScroll__11e4a {
+    overflow: visible
+}
+
+.content__11e4a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+
+.closeButton__11e4a {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 3
+}
+
+.imageContainer__11e4a {
+    text-align: center;
+    width: 100%;
+    height: 35px
+}
+
+.image__11e4a {
+    width: 160px;
+    height: 105px;
+    position: relative;
+    top: -72px
+}
+
+.title__11e4a {
+    margin-bottom: 8px
+}
+
+.text__11e4a,.title__11e4a {
+    text-align: center
+}
+
+.text__11e4a {
+    margin-bottom: 32px
+}
+
+.button__11e4a {
+    margin: 0 8px 24px
+}
+
+/*# sourceMappingURL=a4cbc99863c64a38.css.map*/

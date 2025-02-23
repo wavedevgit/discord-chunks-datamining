@@ -1,0 +1,30 @@
+/**
+  Module ID: 26545
+  Original File Name: 81803986896985cd
+**/
+.content_d7fb2d {
+    padding: 16px
+}
+
+.card_d7fb2d {
+    pointer-events: none;
+    margin-top: 16px;
+    background: var(--bg-mod-faint);
+    border-radius: var(--radius-sm)
+}
+
+.error_d7fb2d,.footer_d7fb2d {
+    display: flex;
+    gap: 8px
+}
+
+.error_d7fb2d {
+    border-radius: 4px;
+    background-color: hsl(var(--red-400-hsl)/.1);
+    border: 1px solid var(--red-400);
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 8px
+}
+
+/*# sourceMappingURL=81803986896985cd.css.map*/

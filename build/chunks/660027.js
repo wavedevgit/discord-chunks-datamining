@@ -1,0 +1,12 @@
+/** Chunk was on web (https://canary.discord.comweb.9f0be545d3e34886.js.js) **/
+"use strict";
+n.d(t, {
+  Z: () => a
+});
+var r = n(316138),
+  i = n(285363),
+  o = n(882159);
+
+function a(e) {
+  return "html" === (0, r.Z)(e) ? e : e.assignedSlot || e.parentNode || ((0, o.Zq)(e) ? e.host : null) || (0, i.Z)(e)
+}

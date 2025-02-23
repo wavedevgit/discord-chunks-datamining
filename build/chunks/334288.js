@@ -1,0 +1,13 @@
+/** Chunk was on 1272 (2c78ad33b01d1e4b.js) **/
+n.d(t, {
+  f: () => o
+});
+var r = n(996106),
+  i = n(186901),
+  l = n(981631);
+
+function o(e) {
+  if (i.He.IPC !== e && i.He.POST_MESSAGE !== e) throw new r.Z({
+    errorCode: l.lTL.INVALID_COMMAND
+  }, "Invalid transport.")
+}

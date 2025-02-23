@@ -1,0 +1,188 @@
+/**
+  Module ID: 52432
+  Original File Name: c2a27a8c6b38ccbd
+**/
+.root__66e7e {
+    border-radius: 8px;
+    background: var(--background-secondary);
+    overflow: hidden
+}
+
+.option__66e7e {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--interactive-active);
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.option__66e7e:hover {
+    background: var(--background-modifier-hover);
+    border-bottom-color: transparent
+}
+
+.option__66e7e:last-child {
+    border-bottom: none
+}
+
+.text__66e7e {
+    padding-right: 5px
+}
+
+.caret__66e7e {
+    color: var(--interactive-normal);
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-left: 8px
+}
+
+.visual-refresh .root__66e7e {
+    background-color: var(--background-surface-higher);
+    border: 1px solid var(--border-subtle)
+}
+
+.visual-refresh .option__66e7e {
+    background-color: none;
+    padding: var(--space-16) var(--space-12)
+}
+
+.visual-refresh .option__66e7e:hover {
+    background-color: var(--background-mod-normal)
+}
+
+.ratingSelector__5c58b {
+    width: 240px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around
+}
+
+.textLabels__5c58b {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.emojis__5c58b {
+    margin: 4px auto 0
+}
+
+.emoji__5c58b {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--custom-feedback-modal-emoji-size);
+    height: var(--custom-feedback-modal-emoji-size);
+    cursor: pointer;
+    filter: grayscale(100%)
+}
+
+.textLabel__5c58b {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+    align-items: center
+}
+
+.textLabel__5c58b .emoji__5c58b {
+    width: 1.75em;
+    height: 1.75em
+}
+
+.full-motion .emojiContainer__5c58b .emoji__5c58b {
+    transition: all .2s ease;
+    transition-property: transform opacity filter
+}
+
+.full-motion .emojiContainer__5c58b:hover .emoji__5c58b {
+    transform: scale(1.06)
+}
+
+.emojiContainer__5c58b.selected__5c58b .emoji__5c58b,.emojiContainer__5c58b:hover .emoji__5c58b {
+    filter: none;
+    opacity: 1
+}
+
+.sadFace__5c58b {
+    background-image: url(/assets/6251823cd63fdeac.svg)
+}
+
+.neutralFace__5c58b {
+    background-image: url(/assets/c0070cb5c7749661.svg)
+}
+
+.happyFace__5c58b {
+    background-image: url(/assets/d7b222069635263e.svg)
+}
+
+.thumbsDown__5c58b {
+    background-image: url(/assets/2e6ff432eeb1ef80.svg)
+}
+
+.thumbsUp__5c58b {
+    background-image: url(/assets/8f1e1e90bea53650.svg)
+}
+
+.headerContainer__3131d {
+    flex-direction: column
+}
+
+.header__3131d,.ratingBody__3131d {
+    text-align: center
+}
+
+.ratingBody__3131d {
+    margin-top: 8px
+}
+
+.ratingsFooter__3131d {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center
+}
+
+.modalBody__3131d {
+    display: flex;
+    justify-content: center;
+    padding: 16px
+}
+
+.ratingsSelector__3131d {
+    gap: 8px;
+    width: auto;
+    justify-content: center
+}
+
+.emoji__3131d {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding: 12px 32px;
+    width: 90px;
+    height: 64px;
+    border: 2px solid var(--brand-500);
+    border-radius: 20px;
+    cursor: pointer;
+    filter: grayscale(100%)
+}
+
+.full-motion .emoji__3131d {
+    transition: all .2s ease;
+    transition-property: transform opacity filter
+}
+
+.emoji__3131d.selected__3131d,.emoji__3131d:hover {
+    filter: none
+}
+
+.emojiThumbsDown__3131d {
+    background-image: url(/assets/2e6ff432eeb1ef80.svg)
+}
+
+.emojiThumbsUp__3131d {
+    background-image: url(/assets/8f1e1e90bea53650.svg)
+}
+
+/*# sourceMappingURL=c2a27a8c6b38ccbd.css.map*/

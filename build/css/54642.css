@@ -1,0 +1,91 @@
+/**
+  Module ID: 54642
+  Original File Name: bea34146728fffc2
+**/
+.bottomMargin_d5f35b {
+    margin-bottom: 16px
+}
+
+.topMargin_d5f35b {
+    margin-top: 8px
+}
+
+.body_d5f35b {
+    flex-direction: column;
+    text-align: center
+}
+
+.body_d5f35b,.header_d5f35b {
+    display: flex;
+    align-items: center
+}
+
+.header_d5f35b {
+    background-color: var(--background-tertiary);
+    background-size: cover;
+    justify-content: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px
+}
+
+.formMargin_d5f35b {
+    margin-bottom: 24px
+}
+
+.noScroll_d5f35b {
+    overflow: visible!important
+}
+
+.content_d5f35b {
+    z-index: 2;
+    padding-top: 32px;
+    font-weight: 500
+}
+
+.guildOption_d5f35b {
+    display: flex;
+    align-items: center;
+    font-weight: 500
+}
+
+.icon_d5f35b {
+    display: block
+}
+
+.channelContainer_d5f35b {
+    background-color: var(--background-secondary);
+    border-radius: 4px;
+    margin-left: 16px;
+    max-width: 320px;
+    overflow: hidden
+}
+
+.channel_d5f35b {
+    background-color: var(--background-modifier-selected);
+    display: flex;
+    align-items: center;
+    padding: 8px
+}
+
+.channelName_d5f35b {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.channelIcon_d5f35b {
+    margin-right: 8px;
+    margin-left: 2px;
+    min-width: 16px;
+    color: var(--text-muted)
+}
+
+.images-light .header_d5f35b {
+    background-image: url(/assets/9b2c01218d4ab2ff.svg)
+}
+
+.images-dark .header_d5f35b {
+    background-image: url(/assets/ef95e909088f721c.svg)
+}
+
+/*# sourceMappingURL=bea34146728fffc2.css.map*/

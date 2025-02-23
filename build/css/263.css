@@ -1,0 +1,50 @@
+/**
+  Module ID: 263
+  Original File Name: 4a633fd100384011
+**/
+.modalContent_ae1425,.root_ae1425 {
+    overflow: hidden
+}
+
+.modalContent_ae1425 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 24px
+}
+
+.modalHeader_ae1425 {
+    overflow: hidden
+}
+
+.modalCloseButton_ae1425 {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    right: 16px;
+    top: 16px;
+    opacity: .8
+}
+
+.modalCloseButton_ae1425:hover {
+    opacity: 1
+}
+
+.header_ae1425 {
+    text-align: center;
+    margin-bottom: 8px
+}
+
+.subheader_ae1425 {
+    margin-bottom: 24px;
+    text-align: center
+}
+
+.previewCard_ae1425 {
+    height: 306px;
+    width: 254px;
+    margin-bottom: 8px
+}
+
+/*# sourceMappingURL=4a633fd100384011.css.map*/

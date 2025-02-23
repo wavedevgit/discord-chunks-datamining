@@ -1,0 +1,14 @@
+/** Chunk was on web (https://canary.discord.comweb.9f0be545d3e34886.js.js) **/
+e = n.nmd(e);
+var r = n(940151),
+  i = t && !t.nodeType && t,
+  o = i && e && !e.nodeType && e,
+  a = o && o.exports === i && r.process,
+  s = function() {
+    try {
+      var e = o && o.require && o.require("util").types;
+      if (e) return e;
+      return a && a.binding && a.binding("util")
+    } catch (e) {}
+  }();
+e.exports = s

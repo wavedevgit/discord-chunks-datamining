@@ -1,0 +1,73 @@
+/**
+  Module ID: 59207
+  Original File Name: 8883a33e4644a85a
+**/
+.categoryButton__7ac97 {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    position: relative;
+    color: var(--white-500);
+    padding: 0 var(--spacing-24);
+    overflow: hidden;
+    max-height: 80px;
+    cursor: pointer
+}
+
+.modalRoot__7ac97 {
+    min-width: 440px;
+    max-width: 600px
+}
+
+.modalContent__7ac97 {
+    padding-top: var(--spacing-8);
+    padding-bottom: var(--spacing-4)
+}
+
+.header__7ac97 {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-8) var(--spacing-16) 0
+}
+
+.wumpusImageContainer__7ac97 {
+    position: relative;
+    width: 130px;
+    top: 0;
+    right: -32px
+}
+
+.shopImageContainer__7ac97 {
+    margin-top: 20px;
+    margin-left: 20px
+}
+
+.nitroButton__7ac97 {
+    background: linear-gradient(101deg,#8547c6 25.21%,#b845c1 62.43%,#ab5d8a 95.57%);
+    background: var(--Nitro0New,linear-gradient(101deg,#8547c6 25.21%,#b845c1 62.43%,#ab5d8a 95.57%))
+}
+
+.nitroBasicButton__7ac97 {
+    background: linear-gradient(268deg,#007cc2 17.62%,#5865f2);
+    background: var(--Basic,linear-gradient(268deg,#007cc2 17.62%,#5865f2))
+}
+
+.shopButton__7ac97 {
+    background: linear-gradient(270deg,rgba(68,76,160,.9) 1.02%,rgba(38,149,164,.9) 98.69%);
+    background: var(--Gifting-2,linear-gradient(270deg,rgba(68,76,160,.9) 1.02%,rgba(38,149,164,.9) 98.69%))
+}
+
+.cursorPointer__7ac97 {
+    cursor: pointer
+}
+
+.buttonText__7ac97 {
+    text-transform: uppercase;
+    margin: 30px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+/*# sourceMappingURL=8883a33e4644a85a.css.map*/

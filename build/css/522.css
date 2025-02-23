@@ -1,0 +1,123 @@
+/**
+  Module ID: 522
+  Original File Name: 2d66dbc2d441286d
+**/
+.qrCodeOverlay_c28498 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.qrCodeOverlay_c28498 img {
+    image-rendering: crisp-edges
+}
+
+.size-40_c28498 {
+    width: 40px;
+    height: 40px
+}
+
+.size-60_c28498 {
+    width: 60px;
+    height: 60px
+}
+
+.qrCodeOverlayContainer_c28498 {
+    display: flex;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative
+}
+
+.qrCodeContainer_c28498 {
+    padding: var(--spacing-8);
+    border-radius: var(--radius-xs)
+}
+
+.modalRoot__3988c {
+    width: 480px
+}
+
+.modalHeaderContainer__3988c {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 52px 16px
+}
+
+.modalHeader__3988c {
+    margin-bottom: 8px
+}
+
+.content__3988c {
+    padding-bottom: 16px;
+    margin-top: 16px
+}
+
+.card__3988c {
+    background-color: var(--background-secondary);
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between
+}
+
+.cardText__3988c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.cardRow__3988c {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px
+}
+
+.cardHeaderIcon__3988c {
+    margin-right: 8px;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: var(--xbox);
+    color: var(--white-500)
+}
+
+.qrCode__3988c {
+    margin-left: 32px
+}
+
+.closeButton__3988c {
+    position: absolute;
+    z-index: 1;
+    top: 16px;
+    right: 16px
+}
+
+.learnMore__3988c {
+    margin-top: 2px;
+    display: inline-block
+}
+
+.stepNumberContainer__3988c {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: var(--background-accent);
+    margin-right: 8px
+}
+
+.stepNumber__3988c {
+    color: var(--white-500);
+    line-height: 24px;
+    text-align: center
+}
+
+.instructions__3988c {
+    opacity: .6
+}
+
+/*# sourceMappingURL=2d66dbc2d441286d.css.map*/

@@ -1,0 +1,69 @@
+/**
+  Module ID: 67110
+  Original File Name: d67ec2478985ef53
+**/
+.activeWrapper__452c3,.wrapper__452c3 {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1002
+}
+
+.videoWrapper__452c3,.wrapper__452c3 {
+    pointer-events: none
+}
+
+.videoWrapper__452c3 {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    z-index: 200;
+    width: auto;
+    height: 100%
+}
+
+@media (min-aspect-ratio:45/32) {
+    .videoWrapper__452c3 {
+        width: 100%;
+        height: auto
+    }
+}
+
+.videoWrapperForHelper__452c3 {
+    z-index: 200;
+    top: 0;
+    left: 0
+}
+
+.gadientHighlight__452c3,.videoWrapperForHelper__452c3 {
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    height: 100%
+}
+
+.gadientHighlight__452c3 {
+    background-image: linear-gradient(90deg,var(--premium-tier-2-purple-for-gradients),var(--premium-tier-2-purple-for-gradients-2) 50%,var(--premium-tier-2-pink-for-gradients))
+}
+
+.swipeWrapper__452c3 {
+    width: 100%;
+    pointer-events: none
+}
+
+.swipe__452c3,.swipeWrapper__452c3 {
+    position: absolute;
+    height: 100%
+}
+
+.swipe__452c3 {
+    opacity: .1;
+    width: auto;
+    right: 0;
+    top: 0
+}
+
+/*# sourceMappingURL=d67ec2478985ef53.css.map*/

@@ -1,0 +1,67 @@
+/**
+  Module ID: 66462
+  Original File Name: 013349d4fbf58116
+**/
+.content_fec266 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 24px;
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+.art_fec266 {
+    margin: -75px auto 12px;
+    width: 223px;
+    height: 153px
+}
+
+.header_fec266 {
+    margin-bottom: 32px
+}
+
+.row_fec266 {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    flex-wrap: nowrap
+}
+
+.rowContent_fec266 {
+    flex-shrink: 1
+}
+
+.iconContainer_fec266 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--background-tertiary);
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-brand);
+    flex-shrink: 0
+}
+
+.threadIcon_fec266 {
+    margin-top: -2px
+}
+
+.personWavingIcon_fec266,.threadIcon_fec266 {
+    margin-left: -2px
+}
+
+.visual-refresh .row_fec266 {
+    border: 1px solid var(--border-faint)
+}
+
+.visual-refresh .iconContainer_fec266 {
+    background-color: var(--bg-mod-subtle);
+    border: 1px solid var(--border-subtle)
+}
+
+/*# sourceMappingURL=013349d4fbf58116.css.map*/

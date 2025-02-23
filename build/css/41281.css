@@ -1,0 +1,67 @@
+/**
+  Module ID: 41281
+  Original File Name: 41074c4d9765c21f
+**/
+.container_a3e361 {
+    word-wrap: break-word
+}
+
+.form_a3e361 {
+    height: 100%
+}
+
+.form_a3e361,.modalContent_a3e361 {
+    display: flex;
+    flex-direction: column
+}
+
+.modalContent_a3e361 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center
+}
+
+.content_a3e361 {
+    height: 100%
+}
+
+.minorContainer_a3e361 {
+    flex: 0 0 auto;
+    margin-top: 8px;
+    margin-bottom: -10px;
+    width: 100%;
+    cursor: pointer
+}
+
+.minorAction_a3e361 {
+    text-align: center;
+    opacity: .6
+}
+
+.minorAction_a3e361:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
+.title_a3e361 {
+    margin-bottom: 4px
+}
+
+.description_a3e361,.title_a3e361 {
+    text-align: center
+}
+
+.primaryButton_a3e361 {
+    flex: 1 1 45%
+}
+
+.gutter_a3e361 {
+    margin-left: 10px
+}
+
+.hero_a3e361 {
+    margin-bottom: 20px
+}
+
+/*# sourceMappingURL=41074c4d9765c21f.css.map*/

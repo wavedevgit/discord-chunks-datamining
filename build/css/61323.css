@@ -1,0 +1,23 @@
+/**
+  Module ID: 61323
+  Original File Name: ec0213b7d2101915
+**/
+.header_d42a20 {
+    justify-content: space-between
+}
+
+.content_d42a20 {
+    display: flex;
+    flex-direction: column;
+    margin: var(--spacing-16) 0
+}
+
+.content_d42a20,.footer_d42a20 {
+    gap: var(--spacing-8)
+}
+
+.footer_d42a20 {
+    align-items: center
+}
+
+/*# sourceMappingURL=ec0213b7d2101915.css.map*/

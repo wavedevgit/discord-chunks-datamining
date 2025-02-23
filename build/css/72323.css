@@ -1,0 +1,51 @@
+/**
+  Module ID: 72323
+  Original File Name: 9c311e6f7c5be46d
+**/
+.container__6b668 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--radius-sm);
+    padding: var(--spacing-12);
+    border: 1px solid transparent;
+    cursor: pointer
+}
+
+.containerActive__6b668 {
+    border-color: var(--text-positive)
+}
+
+.playButton__6b668 {
+    margin-right: var(--spacing-8)
+}
+
+.textContainer__6b668 {
+    width: 100%;
+    display: grid;
+    grid-gap: 4px;
+    align-items: center
+}
+
+.image_f3406e {
+    margin-bottom: var(--spacing-8)
+}
+
+.optionsContainerWrapper_f3406e {
+    margin: var(--spacing-16) 0;
+    padding: 0 var(--spacing-8);
+    text-align: left
+}
+
+.optionsContainer_f3406e {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: var(--spacing-8);
+    -moz-column-gap: var(--spacing-8);
+    column-gap: var(--spacing-8);
+    grid-row-gap: var(--spacing-8);
+    row-gap: var(--spacing-8)
+}
+
+/*# sourceMappingURL=9c311e6f7c5be46d.css.map*/

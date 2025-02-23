@@ -1,0 +1,124 @@
+/**
+  Module ID: 79921
+  Original File Name: c870c6d4c2ce3d14
+**/
+.wrapper__6d749 {
+    width: 500px;
+    z-index: 1
+}
+
+.header__6d749 {
+    width: 100%;
+    display: flex;
+    flex-direction: column
+}
+
+.closeButton__6d749 {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    z-index: 3
+}
+
+.resultWrapper__6d749 {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-right: 2px;
+    margin-left: 8px;
+    padding: 8px;
+    height: 44px;
+    color: var(--primary-300);
+    font-size: 16px
+}
+
+.resultWrapperSelected__6d749 {
+    color: var(--white-500);
+    background-color: hsl(var(--primary-500-hsl)/.3)
+}
+
+.result__6d749 {
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    flex: 1
+}
+
+.resultAvatar__6d749 {
+    width: 30px!important;
+    height: 30px!important
+}
+
+.resultAvatar__6d749 {
+    margin-right: 10px
+}
+
+.resultIcon__6d749 {
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 30px;
+    display: flex;
+    opacity: .6
+}
+
+.resultIconBackground__6d749 {
+    opacity: .6
+}
+
+.resultText__6d749 {
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+    margin-right: 16px
+}
+
+.resultUsername__6d749 {
+    margin-left: 4px;
+    opacity: .5;
+    font-weight: 400
+}
+
+.resultCategoryName__6d749 {
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 16px
+}
+
+.resultCategoryName__6d749,.resultGuildName__6d749 {
+    margin-left: 4px;
+    opacity: .5;
+    font-weight: 500
+}
+
+.resultGuildName__6d749 {
+    font-size: 14px;
+    margin-right: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.inviteButton__6d749 {
+    width: 72px;
+    height: 32px;
+    transition: none 0s ease 0s;
+    transition: initial;
+    flex: none
+}
+
+.results__6d749 {
+    height: 300px
+}
+
+.noResults__6d749 {
+    width: 100%;
+    background: url(/assets/05207174d5432737.svg) no-repeat 50% 40%
+}
+
+/*# sourceMappingURL=c870c6d4c2ce3d14.css.map*/

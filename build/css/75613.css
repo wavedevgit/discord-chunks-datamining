@@ -1,0 +1,114 @@
+/**
+  Module ID: 75613
+  Original File Name: eb8806d53ab83848
+**/
+.perkRow_c609c8 {
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid var(--channeltextarea-background);
+    margin: 0 16px;
+    padding: 16px 0
+}
+
+.perkRow_c609c8:last-child {
+    border-bottom: none
+}
+
+.perkIconContainer_c609c8 {
+    display: flex;
+    justify-content: center;
+    margin-right: 16px
+}
+
+.perkIcon_c609c8,.perkIconContainer_c609c8 {
+    height: 24px;
+    width: 24px
+}
+
+.perkDescription_c609c8 {
+    color: var(--interactive-active);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px
+}
+
+.wrapper__7b551 {
+    padding-top: 32px
+}
+
+.heroImage__7b551 {
+    display: block;
+    margin: 0 auto 24px;
+    width: 250px
+}
+
+.heroImageWithTrialOffer__7b551 {
+    margin-top: 24px
+}
+
+.premiumTrialBadge__7b551 {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%)
+}
+
+.closeButton__7b551 {
+    position: absolute;
+    right: 4px;
+    top: 12px
+}
+
+.heading__7b551 {
+    margin-bottom: 16px
+}
+
+.perks__7b551 {
+    background-color: var(--background-secondary);
+    border-radius: 8px
+}
+
+.icon__7b551 {
+    height: 20px;
+    width: 20px
+}
+
+.iconColorLightBlue__7b551 {
+    color: var(--premium-perk-light-blue)
+}
+
+.iconColorGreen__7b551 {
+    color: var(--premium-perk-green)
+}
+
+.iconColorOrange__7b551 {
+    color: var(--premium-perk-orange)
+}
+
+.iconColorYellow__7b551 {
+    color: var(--premium-perk-yellow)
+}
+
+.iconColorPink__7b551 {
+    color: var(--guild-boosting-pink)
+}
+
+.iconColorPurple__7b551 {
+    color: var(--premium-perk-purple)
+}
+
+.iconColorDarkBlue__7b551 {
+    color: var(--guild-boosting-blue)
+}
+
+.iconColorBlue__7b551 {
+    color: var(--premium-perk-blue)
+}
+
+.footer__7b551 {
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row
+}
+
+/*# sourceMappingURL=eb8806d53ab83848.css.map*/

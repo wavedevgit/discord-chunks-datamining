@@ -1,0 +1,71 @@
+/**
+  Module ID: 34191
+  Original File Name: e7d3510b1fd4dcb3
+**/
+.header_b917ac {
+    padding: 24px 24px 0;
+    overflow: hidden
+}
+
+.closeButton_b917ac {
+    position: absolute;
+    top: 12px;
+    right: 12px
+}
+
+.visual-refresh .closeButton_b917ac {
+    right: 14px
+}
+
+.title_b917ac {
+    text-align: center;
+    font-weight: 700
+}
+
+.backButton_b917ac {
+    color: var(--text-normal)
+}
+
+.subtitle_b917ac {
+    margin-top: 8px;
+    text-align: center
+}
+
+.createGuild_b917ac {
+    margin: 16px 0;
+    flex-grow: 0
+}
+
+.uploadIcon_b917ac {
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    color: var(--interactive-normal)
+}
+
+.nameInput_b917ac {
+    margin-top: 24px
+}
+
+.descriptionInput_b917ac {
+    margin-top: 16px
+}
+
+.guidelines_b917ac {
+    margin-top: 8px;
+    padding-bottom: 4px
+}
+
+.creationIntentCheckbox_b917ac {
+    margin-top: 18px
+}
+
+.creationIntentText_b917ac {
+    color: var(--interactive-normal)
+}
+
+.formItemSpaced_b917ac {
+    margin-top: 16px
+}
+
+/*# sourceMappingURL=e7d3510b1fd4dcb3.css.map*/

@@ -1,0 +1,46 @@
+/**
+  Module ID: 28479
+  Original File Name: 111aeb532cec9440
+**/
+.root_ae5adc {
+    text-align: center
+}
+
+.header_ae5adc {
+    padding: 0 80px
+}
+
+.content_ae5adc {
+    margin-bottom: 24px
+}
+
+.footer_ae5adc {
+    justify-content: space-between
+}
+
+.artContainer_ae5adc {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: -60px auto 32px;
+    height: 120px;
+    width: 200px
+}
+
+.art_ae5adc {
+    width: 100%;
+    height: 100%
+}
+
+.buttonContent_ae5adc {
+    display: flex;
+    align-items: center
+}
+
+.buttonIcon_ae5adc {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px
+}
+
+/*# sourceMappingURL=111aeb532cec9440.css.map*/

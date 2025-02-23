@@ -1,0 +1,255 @@
+/**
+  Module ID: 55183
+  Original File Name: 472babd19097d16d
+**/
+.previewContainer__92e52 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: -moz-min-content;
+    width: min-content;
+    min-height: 560px;
+    margin: 6.5px 3px 0 2px;
+    padding-left: 10px
+}
+
+.effectDescriptionBorder__92e52 {
+    border-radius: 4px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px var(--custom-user-profile-theme-padding)
+}
+
+.effectDescriptionBorderWithGradient__92e52 {
+    background: linear-gradient(var(--background-primary),var(--background-primary)) padding-box,var(--custom-premium-colors-premium-gradient-tier-2-diagonal) border-box
+}
+
+.effectDescriptionNoGradient__92e52 {
+    background: var(--background-modifier-active)
+}
+
+.effectDescriptionContainer__92e52 {
+    background: var(--background-secondary) padding-box;
+    position: relative;
+    border-radius: 2px;
+    padding-right: 4px
+}
+
+.effectDescription__92e52 {
+    font-weight: 400;
+    font-family: gg sans;
+    padding: 0 3px 8px 10px
+}
+
+.effectDescription__92e52,.effectName__92e52 {
+    text-align: left;
+    line-height: 18px;
+    font-size: 14px
+}
+
+.effectName__92e52 {
+    font-weight: 600;
+    padding-top: 12px;
+    padding-left: 10px
+}
+
+.effectPurchasedAt__92e52 {
+    text-align: left;
+    line-height: 12px;
+    font-weight: 400;
+    font-size: 10px;
+    font-family: gg sans;
+    padding: 0 3px 10px 10px
+}
+
+.replayButton__92e52 {
+    margin: 15px 0 -8px 30px;
+    width: 149px;
+    height: 24px;
+    display: flex
+}
+
+.replayButtonText__92e52 {
+    font-family: gg sans;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center
+}
+
+.retryIcon__92e52 {
+    margin-left: 6px;
+    margin-right: 3px;
+    color: var(--text-normal)
+}
+
+.icon_b4019a {
+    height: 24px;
+    width: 24px;
+    margin-bottom: 4px
+}
+
+.notAllowedIcon_b4019a {
+    transform: rotate(90deg)
+}
+
+.effectGridItem_b4019a {
+    cursor: pointer;
+    border-radius: 4px;
+    transition: box-shadow .15s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-tertiary);
+    color: var(--header-primary);
+    position: relative
+}
+
+.selected_b4019a {
+    box-shadow: 0 0 0 2px var(--brand-500)
+}
+
+.section_b4019a {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+.list_b4019a {
+    flex: 1;
+    width: 298px;
+    padding-bottom: 4px;
+    margin-top: 2px;
+    left: -12px
+}
+
+.shopIcon_b4019a {
+}
+
+.tooltip_b4019a {
+    min-width: 250px
+}
+
+.tooltipInner_b4019a {
+    text-align: center
+}
+
+.tooltipText_b4019a {
+    padding: 8px 32px
+}
+
+.decorationGridItemChurned_b4019a {
+    opacity: .3
+}
+
+.lockBadge_b4019a {
+    top: -6px;
+    width: 20px;
+    padding: 2px;
+    height: 20px;
+    border-radius: 50%
+}
+
+.lockBadge_b4019a,.newBadge_b4019a {
+    position: absolute;
+    right: -4px
+}
+
+.newBadge_b4019a {
+    top: -4px;
+    text-transform: uppercase
+}
+
+.newBadgeText_b4019a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px
+}
+
+.presetEffectImg_b4019a {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top
+}
+
+.presetEffectBackground_b4019a,.presetEffectImg_b4019a {
+    position: absolute;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%
+}
+
+.modal__20a09 {
+    border-radius: var(--radius-sm);
+    width: auto;
+    width: initial
+}
+
+.modalFooter__20a09 {
+    padding: 16px
+}
+
+.buttonsRight__20a09 {
+    display: flex
+}
+
+.modalHeader__20a09 {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden
+}
+
+.modalCloseButton__20a09 {
+    padding: 0
+}
+
+.premiumIcon__20a09 {
+    margin-right: 4px
+}
+
+.modalDescription__20a09 {
+    margin: 0 20px 24px
+}
+
+.discoverMorePerks__20a09 {
+    margin-left: -34px
+}
+
+.modalContent__20a09 {
+    display: flex
+}
+
+.goToShopButton__20a09 {
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
+}
+
+.visual-refresh .goToShopButton__20a09 {
+    background-clip: padding-box
+}
+
+.newBadge__20a09 {
+    margin-left: 4px;
+    align-items: center
+}
+
+.spinner__20a09 {
+    margin: 8px;
+    align-self: center
+}
+
+.nitroUpsellContainer__20a09 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto
+}
+
+.nitroWheel__20a09 {
+    margin-right: 6px
+}
+
+/*# sourceMappingURL=472babd19097d16d.css.map*/

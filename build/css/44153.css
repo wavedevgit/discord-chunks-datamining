@@ -1,0 +1,49 @@
+/**
+  Module ID: 44153
+  Original File Name: 2f6b04135f3a15f9
+**/
+.root_debd93 {
+    width: 336px
+}
+
+.header_debd93 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1px
+}
+
+.title_debd93 {
+    font-weight: 700;
+    padding-bottom: 10px
+}
+
+.subtitle_debd93,.title_debd93 {
+    text-align: center
+}
+
+.subtitle_debd93 {
+    color: var(--header-secondary)
+}
+
+.description_debd93 {
+    color: var(--text-normal);
+    text-align: center;
+    margin-top: 8px
+}
+
+.content_debd93 {
+    padding-bottom: 16px
+}
+
+.help_debd93 {
+    margin-top: 8px
+}
+
+.buttonContainer_debd93 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px
+}
+
+/*# sourceMappingURL=2f6b04135f3a15f9.css.map*/

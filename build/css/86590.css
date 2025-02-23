@@ -1,0 +1,76 @@
+/**
+  Module ID: 86590
+  Original File Name: 5c9a49aed486f282
+**/
+.container__1ce5d {
+    position: relative
+}
+
+.circularImage__1ce5d {
+    border-radius: 50%
+}
+
+.dots__1ce5d {
+    margin-top: .2px
+}
+
+.icon__2894c {
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto
+}
+
+.iconWithGuildIcon__2894c {
+    background: var(--bg-mod-strong);
+    border-radius: var(--radius-round);
+    color: var(--text-secondary);
+    height: 12px;
+    margin-left: 12px;
+    margin-top: -15px;
+    overflow: visible;
+    padding: 4px;
+    position: relative;
+    width: 12px
+}
+
+.channelGuildIcon__2894c {
+    border-radius: var(--radius-sm)
+}
+
+.acronym__2894c {
+    font-weight: 500;
+    line-height: 1.2em;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-mod-strong);
+    color: var(--text-normal)
+}
+
+.footer_c3ef83 {
+    justify-content: space-between;
+    align-items: center
+}
+
+.failedDestinations_c3ef83 {
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-top: 16px
+}
+
+.failedRow_c3ef83 {
+    display: flex;
+    height: 48px;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px
+}
+
+.label_c3ef83 {
+    color: var(--header-primary)
+}
+
+/*# sourceMappingURL=5c9a49aed486f282.css.map*/

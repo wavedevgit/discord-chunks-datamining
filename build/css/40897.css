@@ -1,0 +1,114 @@
+/**
+  Module ID: 40897
+  Original File Name: 109fad9851b4e693
+**/
+.modal_e59759 {
+    width: 732px
+}
+
+@media (max-width:800px) {
+    .modal_e59759 {
+        width: 372px
+    }
+}
+
+.container_e59759 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px
+}
+
+.headerIcon_e59759 {
+    color: var(--interactive-normal);
+    margin-right: 4px
+}
+
+.modalCloseButton_e59759 {
+    position: absolute;
+    top: var(--custom-guild-role-connections-modal-close-button-margin);
+    right: var(--custom-guild-role-connections-modal-close-button-margin)
+}
+
+.content_e59759:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    box-shadow: var(--elevation-low);
+    z-index: 1;
+    pointer-events: none
+}
+
+.verifiedRoles_e59759 {
+    margin-top: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 16px
+}
+
+.verifiedRole_e59759,.verifiedRoles_e59759 {
+    display: flex;
+    flex-direction: row
+}
+
+.verifiedRole_e59759 {
+    border: 2px solid var(--background-modifier-accent);
+    border-radius: 12px;
+    padding: 20px 16px;
+    width: 306px;
+    align-items: center;
+    grid-gap: 12px;
+    cursor: pointer;
+    position: relative
+}
+
+.verifiedRole_e59759:hover {
+    border-color: var(--interactive-muted)
+}
+
+.verifiedRoleNameDescriptionContainer_e59759 {
+    overflow: hidden;
+    flex: 2
+}
+
+.verifiedRoleDescription_e59759,.verifiedRoleName_e59759 {
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.verifiedRoleDescription_e59759 {
+    margin-top: 4px
+}
+
+.verifiedRoleHasRole_e59759 {
+    border: 2px solid var(--background-tertiary);
+    background-color: var(--background-tertiary);
+    cursor: inherit
+}
+
+.verifiedRoleHasRole_e59759:hover {
+    border-color: var(--background-tertiary)
+}
+
+.roleCheckmark_e59759 {
+    border-radius: 50%;
+    background-color: var(--brand-500);
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    color: var(--white-500)
+}
+
+.botAvatar_e59759,.roleCheckmark_e59759,.roleCheckmark_e59759 svg {
+    width: 20px;
+    height: 20px
+}
+
+.botAvatar_e59759 {
+    padding: 2px
+}
+
+/*# sourceMappingURL=109fad9851b4e693.css.map*/

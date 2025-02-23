@@ -1,0 +1,30 @@
+/** Chunk was on web (https://canary.discord.comweb.9f0be545d3e34886.js.js) **/
+"use strict";
+n.d(t, {
+  Z: () => l
+});
+var r = n(200651),
+  i = n(120356),
+  o = n.n(i),
+  a = n(481060),
+  s = n(186345);
+
+function l(e) {
+  let {
+    countdownText: t,
+    className: n,
+    showInfoIcon: i
+  } = e, l = i ? (0, r.jsx)(a.d3s, {
+    size: "xs",
+    color: "var(--custom-premium-colors-banner-yellow)",
+    className: s.largePillIcon
+  }) : null;
+  return (0, r.jsxs)("div", {
+    className: o()(s.largeCountdownPill, n),
+    children: [(0, r.jsx)(a.Text, {
+      variant: "text-xs/bold",
+      className: o()(s.largeCountdownPillText),
+      children: t.toUpperCase()
+    }), l]
+  })
+}

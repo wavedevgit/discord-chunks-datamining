@@ -1,0 +1,31 @@
+/**
+  Module ID: 76233
+  Original File Name: 664039900571792d
+**/
+.header__4b6c5 {
+    justify-content: space-between
+}
+
+.countdown__4b6c5 {
+    color: var(--header-primary);
+    font-weight: 600
+}
+
+.closeButton__4b6c5:hover {
+    cursor: pointer
+}
+
+.closeButton__4b6c5:hover .closeIcon__4b6c5 {
+    color: var(--interactive-active)
+}
+
+.closeIcon__4b6c5 {
+    color: var(--interactive-normal)
+}
+
+.cta__4b6c5 {
+    padding-top: 8px;
+    padding-bottom: 20px
+}
+
+/*# sourceMappingURL=664039900571792d.css.map*/

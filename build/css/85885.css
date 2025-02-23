@@ -1,0 +1,53 @@
+/**
+  Module ID: 85885
+  Original File Name: 4c174c793ef284d1
+**/
+.container__05cdc {
+    display: flex
+}
+
+.sparkleIcon__05cdc {
+    height: 12px;
+    width: 12px
+}
+
+.sparkleTop__05cdc {
+    align-self: flex-start;
+    margin-right: auto
+}
+
+.sparkleBottom__05cdc {
+    align-self: flex-end;
+    margin-left: auto
+}
+
+.content__296bb {
+    padding-top: 24px;
+    padding-bottom: 24px
+}
+
+.iconBackground__296bb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-tertiary);
+    border-radius: 50%;
+    height: 64px;
+    width: 64px
+}
+
+.headerIcon__296bb {
+    color: var(--header-primary)
+}
+
+.subtitle__296bb,.title__296bb {
+    margin-top: 8px;
+    text-align: center
+}
+
+.cancelButton__296bb {
+    margin-right: 8px
+}
+
+/*# sourceMappingURL=4c174c793ef284d1.css.map*/

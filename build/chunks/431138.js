@@ -1,0 +1,12 @@
+/** Chunk was on 87626 (7302f874375eaddb.js) **/
+a.d(t, {
+  r: () => n
+});
+let n = {
+  ASSET_SOCIAL_TWITTER: a(647928),
+  ASSET_SOCIAL_FACEBOOK: a(728372),
+  ASSET_SOCIAL_INSTAGRAM: a(247479),
+  ICON_TRANSLATE: a(765341),
+  ICON_ARROW_DOWN: a(699828),
+  ASSET_LOGO_DISCORD_SVG: a(219787)
+}

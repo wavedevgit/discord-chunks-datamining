@@ -1,0 +1,137 @@
+/**
+  Module ID: 84686
+  Original File Name: b1043bf63e1ca4c9
+**/
+.container__26abc {
+    background-color: var(--background-floating);
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: var(--elevation-high);
+    max-height: 300px
+}
+
+.user__26abc {
+    justify-content: flex-start;
+    padding: 8px
+}
+
+.user__26abc,.username__26abc {
+    display: flex;
+    align-items: center
+}
+
+.username__26abc {
+    gap: var(--spacing-4)
+}
+
+.avatar__26abc {
+    margin-right: 12px;
+    opacity: .5
+}
+
+.blockedNotice__26abc {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 24px
+}
+
+.blockedButton__26abc {
+    font-size: 12px;
+    margin-left: 4px;
+    font-weight: 600;
+    color: var(--text-link);
+    cursor: pointer
+}
+
+.icon__26abc {
+    background-clip: padding-box;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: var(--background-accent);
+    color: var(--white-500);
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: -2px;
+    top: 0
+}
+
+.userInfo__26abc {
+    margin-left: 12px
+}
+
+.container__05cdc {
+    display: flex
+}
+
+.sparkleIcon__05cdc {
+    height: 12px;
+    width: 12px
+}
+
+.sparkleTop__05cdc {
+    align-self: flex-start;
+    margin-right: auto
+}
+
+.sparkleBottom__05cdc {
+    align-self: flex-end;
+    margin-left: auto
+}
+
+.content__17403 {
+    padding-top: 40px
+}
+
+.content__17403,.stageIconBackground__17403 {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.stageIconBackground__17403 {
+    justify-content: center;
+    background-color: var(--background-tertiary);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px
+}
+
+.stageIcon__17403 {
+    color: var(--header-primary)
+}
+
+.headerTitle__17403 {
+    margin-bottom: 8px;
+    margin-top: 8px
+}
+
+.buttonsContainer__17403,.headerSubtitle__17403 {
+    margin-bottom: 24px
+}
+
+.buttonsContainer__17403 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%
+}
+
+.button__17403 {
+    margin: 4px;
+    width: 50%
+}
+
+.icon__17403,.innerButton__17403 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.icon__17403 {
+    margin-right: 8px
+}
+
+/*# sourceMappingURL=b1043bf63e1ca4c9.css.map*/

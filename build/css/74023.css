@@ -1,0 +1,372 @@
+/**
+  Module ID: 74023
+  Original File Name: 54065dc0a67792df
+**/
+.downloadApps__4a98c {
+    border-radius: 5px;
+    width: 90%;
+    padding: 32px
+}
+
+.contentWrapper__4a98c,.downloadApps__4a98c {
+    display: flex;
+    flex-direction: column
+}
+
+.contentWrapper__4a98c {
+    justify-content: space-between;
+    flex-grow: 1
+}
+
+.inner__4a98c {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    overflow: auto
+}
+
+.header__4a98c {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px
+}
+
+.footer__4a98c {
+    background-color: transparent;
+    background-color: initial;
+    padding: var(--space-8);
+    text-align: center;
+    margin-top: 32px
+}
+
+.footer__4a98c a {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.footer__4a98c a:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
+.platformsWrap__4a98c {
+    flex-direction: column;
+    display: flex
+}
+
+.platformsWrap__4a98c:last-child {
+    margin-top: 32px
+}
+
+.platforms__4a98c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px
+}
+
+.platform__4a98c {
+    backface-visibility: hidden;
+    border: 2px solid var(--background-accent);
+    padding: 32px 12px 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    border-radius: 8px;
+    height: 260px;
+    width: 196px;
+    box-sizing: border-box
+}
+
+.full-motion .platform__4a98c {
+    transition: all .3s ease-in-out
+}
+
+.platform__4a98c.active__4a98c {
+    transform: scale(1.025);
+    border-color: var(--brand-500)
+}
+
+.platform__4a98c.active__4a98c .icon__4a98c {
+    opacity: 0
+}
+
+.platform__4a98c.active__4a98c .icon__4a98c.active__4a98c {
+    opacity: 1
+}
+
+.platform__4a98c.active__4a98c p {
+    color: var(--brand-500)
+}
+
+.platform__4a98c.active__4a98c .downloadButton__4a98c {
+    background-color: var(--brand-500)
+}
+
+.platformName__4a98c {
+    text-align: center
+}
+
+.iconWrap__4a98c {
+    position: relative;
+    width: 100px;
+    height: 100px
+}
+
+.icon__4a98c,.iconWrap__4a98c {
+    align-self: center
+}
+
+.icon__4a98c {
+    transition: opacity .3s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.icon__4a98c.active__4a98c {
+    opacity: 0
+}
+
+.icon__4a98c.apple__4a98c {
+    background-image: url(/assets/3bacc5415aa9a561.svg)
+}
+
+.icon__4a98c.apple__4a98c.active__4a98c {
+    background-image: url(/assets/77783177cefd67fe.svg)
+}
+
+.icon__4a98c.android__4a98c {
+    background-position: bottom;
+    background-image: url(/assets/8d4fb350d405ae2d.svg)
+}
+
+.icon__4a98c.android__4a98c.active__4a98c {
+    background-image: url(/assets/c522a59d9f951f59.svg)
+}
+
+.icon__4a98c.windows__4a98c {
+    background-image: url(/assets/f80d470870ccfd01.svg)
+}
+
+.icon__4a98c.windows__4a98c.active__4a98c {
+    background-image: url(/assets/3ab3b2480e6de1f1.svg)
+}
+
+.icon__4a98c.linux__4a98c {
+    background-image: url(/assets/64dcefc70846922d.svg)
+}
+
+.icon__4a98c.linux__4a98c.active__4a98c {
+    background-image: url(/assets/ab3278fc56c3e4c1.svg)
+}
+
+.icon__4a98c.ios__4a98c {
+    background-image: url(/assets/81672d3df281d7de.svg)
+}
+
+.icon__4a98c.ios__4a98c.active__4a98c {
+    background-image: url(/assets/9c404f814fcf2d63.svg)
+}
+
+.downloadButtons__4a98c {
+    display: flex
+}
+
+.list__4a98c .downloadButton__4a98c {
+    width: 65px
+}
+
+.list__4a98c .downloadButton__4a98c:last-child {
+    margin-left: 12px
+}
+
+.downloadButton__4a98c {
+    transition: background-color .3s ease-in-out;
+    background-color: var(--background-accent);
+    text-align: center;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px 0;
+    margin-top: 16px;
+    flex-grow: 1
+}
+
+.downloadButton__4a98c,.downloadButton__4a98c .low-saturation .downloadButton__4a98c {
+    color: var(--white-500)
+}
+
+.modalCloseButton__4a98c {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 1
+}
+
+@media (max-width: 486px) {
+    .downloadApps__4a98c {
+        width: 100%;
+        display: flex;
+        direction: column;
+        justify-content: center;
+        padding: 32px 0 0
+    }
+
+    .platform__4a98c {
+        margin-left: 0;
+        margin-bottom: 32px
+    }
+
+    .platforms__4a98c {
+        display: flex;
+        flex-direction: column;
+        gap: 0
+    }
+
+    .platformsWrap__4a98c {
+        align-items: center
+    }
+
+    .footer__4a98c {
+        margin: 0 0 32px
+    }
+}
+
+.visual-refresh .downloadApps__4a98c {
+    width: var(--modal-width-medium);
+    padding: var(--modal-vertical-padding) var(--modal-horizontal-padding)
+}
+
+.visual-refresh .modalCloseButton__4a98c {
+    right: var(--space-24);
+    top: var(--space-16)
+}
+
+.visual-refresh .platform__4a98c {
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-normal);
+    width: auto;
+    height: auto;
+    padding: var(--space-16)
+}
+
+.visual-refresh .platform__4a98c.active__4a98c {
+    background-color: var(--opacity-blurple-12);
+    border-color: var(--text-brand);
+    transform: none
+}
+
+.visual-refresh .header__4a98c {
+    text-align: left;
+    margin-bottom: var(--space-16)
+}
+
+.visual-refresh .downloadButtons__4a98c {
+    gap: var(--space-8);
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4)
+}
+
+.visual-refresh .refreshDownloadButton__4a98c {
+    min-width: auto
+}
+
+.visual-refresh .list__4a98c {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.visual-refresh .platforms__4a98c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: var(--space-16);
+    gap: var(--space-16);
+    align-items: start
+}
+
+.visual-refresh .platformsWrap__4a98c {
+    padding: 0 var(--space-8)
+}
+
+.visual-refresh .inner__4a98c {
+    justify-content: flex-start;
+    gap: var(--space-12)
+}
+
+.visual-refresh .icon__4a98c {
+    background-color: var(--icon-primary);
+    background-image: none;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    transition: background-color .2s ease
+}
+
+.visual-refresh .icon__4a98c.active__4a98c {
+    background-image: none;
+    background-color: var(--bg-brand)
+}
+
+.visual-refresh .icon__4a98c.apple__4a98c {
+    -webkit-mask-image: url(/assets/3bacc5415aa9a561.svg);
+    mask-image: url(/assets/3bacc5415aa9a561.svg)
+}
+
+.visual-refresh .icon__4a98c.android__4a98c {
+    -webkit-mask-image: url(/assets/8d4fb350d405ae2d.svg);
+    mask-image: url(/assets/8d4fb350d405ae2d.svg);
+    -webkit-mask-position: bottom;
+    mask-position: bottom
+}
+
+.visual-refresh .icon__4a98c.windows__4a98c {
+    -webkit-mask-image: url(/assets/f80d470870ccfd01.svg);
+    mask-image: url(/assets/f80d470870ccfd01.svg)
+}
+
+.visual-refresh .icon__4a98c.linux__4a98c {
+    -webkit-mask-image: url(/assets/64dcefc70846922d.svg);
+    mask-image: url(/assets/64dcefc70846922d.svg)
+}
+
+.visual-refresh .icon__4a98c.ios__4a98c {
+    -webkit-mask-image: url(/assets/81672d3df281d7de.svg);
+    mask-image: url(/assets/81672d3df281d7de.svg)
+}
+
+@media (max-width: 486px) {
+    .visual-refresh .downloadApps__4a98c {
+        width: 100%;
+        display: flex;
+        direction: column;
+        justify-content: center;
+        padding: 32px 0 0
+    }
+
+    .visual-refresh .platform__4a98c {
+        margin-left: 0;
+        margin-bottom: 32px
+    }
+
+    .visual-refresh .platforms__4a98c {
+        display: flex;
+        flex-direction: column;
+        gap: 0
+    }
+
+    .visual-refresh .platformsWrap__4a98c {
+        align-items: center
+    }
+
+    .visual-refresh .footer__4a98c {
+        margin: 0 0 32px
+    }
+}
+
+/*# sourceMappingURL=54065dc0a67792df.css.map*/

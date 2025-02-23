@@ -1,0 +1,42 @@
+/**
+  Module ID: 83545
+  Original File Name: 5b43f1fd488821b7
+**/
+.closeButton__8a472 {
+    position: absolute;
+    top: 8px;
+    right: 8px
+}
+
+.content__8a472 {
+    flex-direction: column;
+    margin: 24px 16px
+}
+
+.content__8a472,.iconContainer__8a472 {
+    align-items: center;
+    display: flex
+}
+
+.iconContainer__8a472 {
+    width: 48px;
+    height: 48px;
+    background-color: var(--background-modifier-accent);
+    border-radius: 50%;
+    justify-content: center
+}
+
+.heading__8a472 {
+    margin-top: 8px;
+    margin-bottom: 8px
+}
+
+.infoText__8a472 {
+    text-align: center
+}
+
+.button__8a472 {
+    margin-top: 16px
+}
+
+/*# sourceMappingURL=5b43f1fd488821b7.css.map*/

@@ -1,0 +1,74 @@
+/**
+  Module ID: 53162
+  Original File Name: 809e083f52d3809f
+**/
+.container__1ff2f {
+    border-radius: 8px;
+    padding: 10px;
+    background-color: var(--background-modifier-hover);
+    display: inline-flex;
+    align-items: center
+}
+
+.dot__1ff2f {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--interactive-muted)
+}
+
+.fileIcon__1ff2f {
+    color: var(--interactive-muted)
+}
+
+.fileName__1ff2f {
+    max-width: 250px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.modal__1e7f0 {
+    border-radius: 12px
+}
+
+.header__1e7f0 {
+    background-color: var(--background-secondary-alt);
+    padding: 16px
+}
+
+.headerImage__1e7f0 {
+    height: 66px;
+    width: var(--custom-guild-product-download-modal-header-image-width);
+    border-radius: var(--radius-sm);
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.headerTextColumn__1e7f0 {
+    display: flex;
+    flex-direction: column
+}
+
+.closeButton__1e7f0 {
+    align-self: flex-start;
+    margin-left: auto
+}
+
+.attachmentRow__1e7f0 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 0
+}
+
+.attachmentRow__1e7f0:not(:first-child) {
+    border-top: 1px solid var(--background-modifier-hover)
+}
+
+.attachmentDownloadButton__1e7f0 {
+    min-width: 0
+}
+
+/*# sourceMappingURL=809e083f52d3809f.css.map*/

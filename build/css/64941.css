@@ -1,0 +1,64 @@
+/**
+  Module ID: 64941
+  Original File Name: 9876f7454da6c50c
+**/
+.header__75b62 {
+    padding: 24px 16px 0;
+    flex-grow: 0;
+    overflow: hidden
+}
+
+.closeButton__75b62 {
+    z-index: 1000;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: var(--interactive-normal)
+}
+
+.description__75b62 {
+    margin-bottom: 12px;
+    text-align: center
+}
+
+.content__75b62 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    padding: 0 24px 24px
+}
+
+.infoRow__75b62 {
+    margin-bottom: 12px
+}
+
+.dnsRecordContainer__75b62 {
+    margin-left: 16px;
+    margin-right: 8px;
+    margin-top: 8px
+}
+
+.httpFileContainer__75b62,.text__75b62 {
+    margin-top: 8px
+}
+
+.list__75b62 {
+    list-style-type: decimal;
+    list-style-position: inside;
+    line-height: 1.75
+}
+
+.list__75b62 ::marker {
+    color: var(--text-muted)
+}
+
+.footer__75b62 {
+    justify-content: space-between;
+    padding-left: 8px
+}
+
+.footer__75b62,.footerInner__75b62 {
+    display: flex
+}
+
+/*# sourceMappingURL=9876f7454da6c50c.css.map*/

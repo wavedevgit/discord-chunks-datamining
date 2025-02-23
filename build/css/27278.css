@@ -1,0 +1,106 @@
+/**
+  Module ID: 27278
+  Original File Name: 0185834da266858c
+**/
+.iframe__8c55d {
+    width: 100%;
+    height: 100%;
+    min-width: 2px;
+    min-height: 2px
+}
+
+.container_c8f358 {
+    justify-content: space-between;
+    background-color: #000;
+    min-height: 48px;
+    max-height: 48px;
+    padding: 0 16px
+}
+
+.container_c8f358,.headerSection_c8f358 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.headerSectionLeft_c8f358 {
+    flex: 1;
+    padding-left: 16px
+}
+
+.headerSectionRight_c8f358 {
+    flex: 0;
+    gap: 4px;
+    padding-right: 8px
+}
+
+.appIcon_c8f358 {
+    margin-right: 8px;
+    border-radius: var(--radius-sm)
+}
+
+.appIcon_c8f358,.avatar_c8f358 {
+    width: 24px;
+    height: 24px
+}
+
+.avatar_c8f358 {
+    border-radius: 50%
+}
+
+.userAvatars_c8f358 {
+    flex: 1
+}
+
+.dotSpacer_c8f358 {
+    padding: 0 8px 8px
+}
+
+.iconButton_c8f358 {
+    padding: 0 8px
+}
+
+.actionButtonsContainer_c8f358 {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 0 8px
+}
+
+.container__0b406 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-primary)
+}
+
+.loadedContentContainer__0b406 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row
+}
+
+.iframeAndHeaderContainer__0b406 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%
+}
+
+.headerContainer__0b406 {
+    flex: 0;
+    height: 64px
+}
+
+.iframeContainer__0b406 {
+    flex: 1
+}
+
+.iframe__0b406 {
+    width: 100%;
+    height: 100%;
+    min-width: 2px;
+    min-height: 2px
+}
+
+/*# sourceMappingURL=0185834da266858c.css.map*/

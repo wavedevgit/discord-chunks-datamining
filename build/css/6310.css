@@ -1,0 +1,24 @@
+/**
+  Module ID: 6310
+  Original File Name: 8695b69e5c7703bb
+**/
+.spacing__89466 {
+    margin-bottom: 20px
+}
+
+.spacingTop__89466 {
+    margin-top: 20px
+}
+
+.message__89466 {
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    pointer-events: none;
+    background-color: var(--background-primary);
+    box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high)
+}
+
+/*# sourceMappingURL=8695b69e5c7703bb.css.map*/

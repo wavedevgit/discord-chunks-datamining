@@ -1,0 +1,43 @@
+/**
+  Module ID: 74824
+  Original File Name: fccba345ef7a97a6
+**/
+.title_fb71d6 {
+    margin-top: var(--space-16);
+    margin-bottom: var(--space-20);
+    text-align: center
+}
+
+.modalContent_fb71d6 {
+    padding-left: 0
+}
+
+.content_fb71d6,.selectionPane_fb71d6 {
+    width: 100%;
+    height: 100%
+}
+
+.selectionPane_fb71d6 {
+    background-color: var(--background-secondary-alt);
+    box-sizing: border-box
+}
+
+.selectionItem_fb71d6 {
+    background-color: var(--background-primary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xs);
+    box-sizing: border-box;
+    min-height: 68px
+}
+
+.selectionItem_fb71d6.selected_fb71d6 {
+    border-color: var(--brand-430)
+}
+
+.closeButton_fb71d6 {
+    position: absolute;
+    top: 12px;
+    right: 0
+}
+
+/*# sourceMappingURL=fccba345ef7a97a6.css.map*/

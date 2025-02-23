@@ -1,0 +1,57 @@
+/**
+  Module ID: 46398
+  Original File Name: ee30a7425e1a0991
+**/
+.fullArt_a1a33b {
+    background: url(/assets/3ca8e729f3fc7da5.svg);
+    width: 152px;
+    height: 96px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.header_a1a33b {
+    position: relative
+}
+
+.content_a1a33b {
+    padding-top: 32px;
+    padding-bottom: 24px;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center
+}
+
+.content_a1a33b,.footer_a1a33b {
+    display: flex;
+    align-items: center
+}
+
+.footer_a1a33b {
+    flex-direction: row
+}
+
+.noThanksButton_a1a33b {
+    color: var(--interactive-active);
+    font-weight: 600
+}
+
+.noThanksButton_a1a33b:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
+.boostButton_a1a33b {
+    margin-left: auto;
+    font-weight: 600;
+    background-color: var(--premium-tier-0-purple-for-gradients);
+    color: #fff;
+    padding-left: 42px;
+    padding-right: 42px
+}
+
+/*# sourceMappingURL=ee30a7425e1a0991.css.map*/

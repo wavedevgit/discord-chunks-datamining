@@ -1,0 +1,53 @@
+/**
+  Module ID: 50331
+  Original File Name: 8018af26c5e8b31f
+**/
+.mainChannelContainer__3e027 {
+    display: flex;
+    align-items: stretch;
+    flex: 1;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.enableAlertsContainer__3e027 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: var(--background-secondary-alt);
+    border: 1px solid var(--background-modifier-accent);
+    cursor: pointer;
+    transition: background-color .1s, border-color .1s
+}
+
+.enableAlertsContainer__3e027:hover {
+    border: 1px solid var(--background-modifier-hover);
+    background-color: var(--background-secondary)
+}
+
+.enabledAlertsCheckbox__3e027 {
+    flex: 0
+}
+
+.channelSelect__3e027 {
+    background-color: var(--background-secondary-alt)!important;
+    border: 1px solid var(--background-modifier-accent)!important
+}
+
+.channelSelect__3e027 {
+    transition: background-color .1s, border-color .1s
+}
+
+.channelSelect__3e027:hover {
+    border: 1px solid var(--background-modifier-hover)!important;
+    background-color: var(--background-secondary)!important
+}
+
+/*# sourceMappingURL=8018af26c5e8b31f.css.map*/

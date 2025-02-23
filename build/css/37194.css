@@ -1,0 +1,67 @@
+/**
+  Module ID: 37194
+  Original File Name: 397dc96791dfb00e
+**/
+.content__03273 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 32px
+}
+
+.bulletContainer__03273 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px
+}
+
+.iconContainer__03273 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-tertiary);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px
+}
+
+.bulletIcon__03273 {
+    color: var(--header-primary);
+    padding: 12px
+}
+
+.bulletText__03273 {
+    margin-left: 16px
+}
+
+.headerTitle__03273 {
+    text-align: center;
+    margin-bottom: 24px
+}
+
+.button__03273 {
+    margin-top: 8px;
+    width: 100%
+}
+
+.icon__03273 {
+    margin-right: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.illustration__03273 {
+    width: 300px;
+    margin: auto auto 24px
+}
+
+.red__03273 {
+    color: var(--status-danger)
+}
+
+/*# sourceMappingURL=397dc96791dfb00e.css.map*/

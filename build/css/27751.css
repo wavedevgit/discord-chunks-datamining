@@ -1,0 +1,30 @@
+/**
+  Module ID: 27751
+  Original File Name: 72daa6e25f5e251b
+**/
+.title_cb3bbe {
+    font-weight: 700;
+    margin-top: 11px;
+    margin-bottom: 8px
+}
+
+.body_cb3bbe,.title_cb3bbe {
+    text-align: center
+}
+
+.body_cb3bbe {
+    margin-bottom: 16px
+}
+
+.art_cb3bbe {
+    height: 105px;
+    margin-top: -88px
+}
+
+.modalContent_cb3bbe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+/*# sourceMappingURL=72daa6e25f5e251b.css.map*/

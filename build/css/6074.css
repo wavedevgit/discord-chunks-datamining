@@ -1,0 +1,42 @@
+/**
+  Module ID: 6074
+  Original File Name: 19684b9ea8f22891
+**/
+.container_b2b772 {
+    position: relative;
+    display: flex;
+    margin-right: 12px;
+    align-items: center;
+    justify-content: center
+}
+
+.inner_b2b772 {
+    flex: 1;
+    align-self: center
+}
+
+.modalCloseButton_b2b772 {
+    color: var(--interactive-normal);
+    position: absolute;
+    top: 12px;
+    right: 12px
+}
+
+.modalCloseButton_b2b772:hover {
+    color: var(--interactive-hover)
+}
+
+.contactSync_b2b772 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px;
+    width: 568px
+}
+
+.header_b2b772 {
+    padding-bottom: 8px
+}
+
+/*# sourceMappingURL=19684b9ea8f22891.css.map*/

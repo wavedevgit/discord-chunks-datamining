@@ -1,0 +1,121 @@
+/**
+  Module ID: 73217
+  Original File Name: 8a37d10f398b2627
+**/
+.gradientSplash__6d426 {
+    background: linear-gradient(270deg,#0a212c,#1b3b50);
+    width: 100%;
+    height: 96px;
+    position: absolute;
+    top: 0;
+    -webkit-mask-image: linear-gradient(180deg,#000,#000 10px,transparent 96px);
+    mask-image: linear-gradient(180deg,#000,#000 10px,transparent 96px)
+}
+
+.theme-light .gradientSplash__6d426 {
+    background: linear-gradient(190deg,#027b8d 2.72%,rgba(2,123,141,.5) 73.08%,rgba(2,116,134,0) 119.99%)
+}
+
+.modalHeader__6d426 {
+    overflow: visible;
+    display: flex;
+    flex-direction: column
+}
+
+.title__6d426 {
+    text-align: center
+}
+
+.imageFrame__6d426 {
+    height: 64px
+}
+
+.heroImage__6d426 {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm)
+}
+
+.guildContainer__6d426 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px
+}
+
+.guildIcon__6d426 {
+    border-radius: 2px
+}
+
+.closeButton__6d426 {
+    width: 16px;
+    height: 16px
+}
+
+.close__6d426 {
+    position: absolute;
+    top: 2px;
+    right: 8px
+}
+
+.footerButtons__6d426 {
+    display: flex;
+    gap: 6px
+}
+
+.footer__6d426 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.container__6d426 {
+    overflow: hidden;
+    border-radius: 8px
+}
+
+.subtitleContainer__8dbfd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px
+}
+
+.winnerImage__8dbfd {
+    width: 16px;
+    height: 16px
+}
+
+.modalContent__8dbfd {
+    padding-bottom: 16px
+}
+
+.notes__8dbfd {
+    flex-direction: column;
+    margin-top: 24px
+}
+
+.notes__8dbfd,.row__8dbfd {
+    display: flex
+}
+
+.row__8dbfd {
+    justify-content: space-between;
+    align-items: center
+}
+
+.notes__8dbfd .divider__8dbfd {
+    margin: 16px 0
+}
+
+.doneButton__8dbfd {
+    display: flex;
+    align-items: center
+}
+
+.guildOptoutSwitch__8dbfd {
+    margin-bottom: 0
+}
+
+/*# sourceMappingURL=8a37d10f398b2627.css.map*/

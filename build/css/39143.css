@@ -1,0 +1,86 @@
+/**
+  Module ID: 39143
+  Original File Name: 844b7aea4e4afba5
+**/
+.closeButton_eb89ff {
+    position: absolute;
+    top: 12px;
+    right: 12px
+}
+
+.modalContents_eb89ff {
+    padding: 0 20px 24px
+}
+
+.headerText_eb89ff {
+    margin-top: 16px;
+    margin-bottom: 12px
+}
+
+.formDescription_eb89ff {
+    margin: 8px 0 24px
+}
+
+.emojiTitleContainer_eb89ff {
+    display: flex;
+    flex-direction: column;
+    gap: 2px
+}
+
+.emojiSectionContainer_eb89ff {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px
+}
+
+.emojiButton_eb89ff.fullOpacity_eb89ff {
+    opacity: 1
+}
+
+.emoji_eb89ff {
+    width: var(--custom-create-welcome-channel-modal-emoji-size);
+    height: var(--custom-create-welcome-channel-modal-emoji-size)
+}
+
+.input_eb89ff {
+    padding-left: var(--custom-create-welcome-channel-modal-input-elements-padding);
+    padding-right: 36px;
+    margin-bottom: 24px
+}
+
+.clearButton_eb89ff {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: var(--custom-create-welcome-channel-modal-input-elements-padding);
+    transition: opacity .2s ease-in-out;
+    opacity: .6;
+    line-height: 0;
+    height: 100%
+}
+
+.clearButton_eb89ff:focus,.clearButton_eb89ff:hover {
+    opacity: 1
+}
+
+.clearIcon_eb89ff {
+    width: 16px;
+    height: 16px;
+    color: var(--interactive-normal)
+}
+
+.footer_eb89ff {
+    z-index: -1
+}
+
+.tooltip_eb89ff {
+    max-width: 150px;
+    margin-bottom: 2px
+}
+
+.channelTitleIcon_eb89ff {
+    vertical-align: middle
+}
+
+/*# sourceMappingURL=844b7aea4e4afba5.css.map*/

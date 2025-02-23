@@ -1,0 +1,143 @@
+/**
+  Module ID: 4530
+  Original File Name: 6ba791a0c30f500b
+**/
+.modalRoot__4a43b {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.header__4a43b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.headerTitle__4a43b {
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+.modalContent__4a43b {
+    padding: 16px 0;
+    background-color: var(--background-secondary)
+}
+
+.searchBar__4a43b {
+    margin: 0 8px 16px 16px
+}
+
+.rowDivider__4a43b {
+    height: 2px;
+    background-color: var(--background-primary)
+}
+
+.rowContainer__4a43b,.rowDivider__4a43b {
+    margin-left: 16px;
+    margin-right: 8px
+}
+
+.rowContainer__4a43b {
+    padding: 8px 16px 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--background-secondary)
+}
+
+.rowContainer__4a43b.disabled__4a43b {
+    cursor: not-allowed
+}
+
+.rowLeft__4a43b {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0
+}
+
+.rowAvatar__4a43b {
+    flex: 0 0 40px;
+    height: 40px
+}
+
+.rowNameContainer__4a43b {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-right: 8px
+}
+
+.rowName__4a43b {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.rowName__4a43b.disabled__4a43b {
+    color: var(--text-muted)
+}
+
+.rowSubName__4a43b {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: var(--header-secondary)
+}
+
+.rowSubName__4a43b.disabled__4a43b {
+    color: var(--text-muted)
+}
+
+.rowRight__4a43b {
+    flex: 0 0 auto
+}
+
+.footer__4a43b {
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    margin: 0
+}
+
+.copySendBar__4a43b {
+    padding: 16px;
+    justify-content: space-between;
+    background-color: var(--background-secondary-alt)
+}
+
+.copyButton__4a43b,.copySendBar__4a43b {
+    display: flex;
+    align-items: center
+}
+
+.copyButton__4a43b {
+    gap: 4px
+}
+
+.acronym__4a43b {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-secondary-alt);
+    color: var(--text-normal);
+    white-space: nowrap;
+    flex: none;
+    border-radius: 20px
+}
+
+.img__4a43b {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 250px
+}
+
+/*# sourceMappingURL=6ba791a0c30f500b.css.map*/

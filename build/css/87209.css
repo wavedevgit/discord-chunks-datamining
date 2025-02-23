@@ -1,0 +1,92 @@
+/**
+  Module ID: 87209
+  Original File Name: a5bce0d12b9faf97
+**/
+.content__61700 {
+    padding-bottom: var(--spacing-16);
+    min-height: -moz-min-content;
+    min-height: min-content
+}
+
+.radioItem__61700 {
+    padding: var(--spacing-8) var(--spacing-16)
+}
+
+.textArea__61700 {
+    padding: var(--spacing-16)
+}
+
+.header_ad198f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px
+}
+
+.emailHeaderImg_ad198f {
+    position: absolute;
+    top: -68px;
+    left: 140px;
+    width: 180px
+}
+
+.wumpusExclamationImg_ad198f {
+    position: absolute;
+    top: -78px;
+    left: 110px;
+    width: 229px
+}
+
+.title_ad198f {
+    font-weight: 700
+}
+
+.subtitle_ad198f,.title_ad198f {
+    text-align: center
+}
+
+.subtitle_ad198f {
+    color: var(--header-secondary)
+}
+
+.description_ad198f {
+    margin-top: 8px
+}
+
+.description_ad198f,.tooltip_ad198f {
+    color: var(--text-normal);
+    text-align: center
+}
+
+.tooltip_ad198f {
+    border-radius: 8px;
+    border: 1px solid hsla(0,0%,100%,.04);
+    background: var(--background-accent);
+    box-shadow: var(--elevation-low);
+    padding: 12px
+}
+
+.modalCloseButton_ad198f {
+    position: absolute;
+    top: 16px;
+    right: 16px
+}
+
+.modalFooter_ad198f {
+    display: flex
+}
+
+.content_ad198f {
+    gap: var(--spacing-16);
+    padding-bottom: var(--spacing-16)
+}
+
+.help_ad198f {
+    margin-top: 8px
+}
+
+.password_ad198f {
+    margin-top: 16px
+}
+
+/*# sourceMappingURL=a5bce0d12b9faf97.css.map*/

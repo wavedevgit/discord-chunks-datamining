@@ -1,0 +1,39 @@
+/**
+  Module ID: 9766
+  Original File Name: 008c773240f42d50
+**/
+.closeButton_b1292a {
+    position: absolute;
+    top: 4px;
+    right: 4px
+}
+
+.content_b1292a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px
+}
+
+.image_b1292a {
+    width: 120px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+.header_b1292a {
+    margin-top: 16px;
+    margin-bottom: 8px
+}
+
+.images-light .image_b1292a {
+    background-image: url(/assets/e41556aef6bdd4a2.svg)
+}
+
+.images-dark .image_b1292a {
+    background-image: url(/assets/b2f5d4d002a97f3a.svg)
+}
+
+/*# sourceMappingURL=008c773240f42d50.css.map*/

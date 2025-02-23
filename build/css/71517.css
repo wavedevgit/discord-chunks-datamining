@@ -1,0 +1,93 @@
+/**
+  Module ID: 71517
+  Original File Name: 25c3d3e111a55fe7
+**/
+.modalRoot__91f7b {
+    max-width: 440px
+}
+
+.modalHeader__91f7b {
+    overflow: visible;
+    display: flex;
+    flex-direction: column
+}
+
+.headerWrapper__91f7b {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.betaTag__91f7b {
+    border-radius: var(--radius-xs)
+}
+
+.imageFrame__91f7b {
+    height: 64px
+}
+
+.heroImage__91f7b {
+    position: relative;
+    bottom: 80px;
+    width: 341px;
+    height: 130px
+}
+
+.modalContent__91f7b {
+    padding-bottom: 16px
+}
+
+.modalContentFrame__91f7b {
+    justify-content: center;
+    text-align: center;
+    padding: 0 16px
+}
+
+.modalContentFrame__91f7b,.notes__91f7b {
+    display: flex;
+    flex-direction: column
+}
+
+.notes__91f7b {
+    gap: 24px;
+    padding: 24px;
+    text-align: left
+}
+
+.badgeNote__91f7b {
+    gap: 16px
+}
+
+.badge__91f7b,.badgeNote__91f7b {
+    display: flex;
+    align-items: center
+}
+
+.badge__91f7b {
+    min-width: 40px;
+    min-height: 40px;
+    justify-content: center;
+    background-color: var(--background-tertiary);
+    border-radius: var(--radius-round)
+}
+
+.icon__91f7b {
+    width: 16px;
+    height: 16px
+}
+
+.button__91f7b {
+    width: 100%
+}
+
+.modalFooter__91f7b {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.disclosureText__91f7b {
+    text-align: center
+}
+
+/*# sourceMappingURL=25c3d3e111a55fe7.css.map*/

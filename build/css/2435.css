@@ -1,0 +1,37 @@
+/**
+  Module ID: 2435
+  Original File Name: 4b4daaf906f1455c
+**/
+.title_a0b371 {
+    font-weight: 700;
+    margin-top: 11px;
+    margin-bottom: 8px
+}
+
+.body_a0b371,.title_a0b371 {
+    text-align: center
+}
+
+.body_a0b371 {
+    margin-bottom: 16px
+}
+
+.art_a0b371 {
+    height: 105px;
+    margin-top: -88px
+}
+
+.linkCalloutContainer_a0b371 {
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-accent);
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 12px;
+    max-height: 144px;
+    max-width: 498px;
+    min-width: min(408px,calc(100vw - 50px));
+    word-wrap: anywhere
+}
+
+/*# sourceMappingURL=4b4daaf906f1455c.css.map*/

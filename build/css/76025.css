@@ -1,0 +1,38 @@
+/**
+  Module ID: 76025
+  Original File Name: f1f719bc69d9f473
+**/
+.container_badc98 {
+    min-height: 300px
+}
+
+.modalImageWrapper_badc98 {
+    margin-top: -72px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 120px;
+    text-align: center
+}
+
+.modalImage_badc98 {
+    height: 100%
+}
+
+.content_badc98 {
+    margin-top: 16px;
+    text-align: center
+}
+
+.title_badc98 {
+    margin-bottom: 8px
+}
+
+.footer_badc98 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%
+}
+
+/*# sourceMappingURL=f1f719bc69d9f473.css.map*/
