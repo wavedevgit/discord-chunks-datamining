@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -32,7 +32,7 @@ function h(e) {
   return e
 }
 
-function f(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,11 +44,11 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = function(e) {
+let f = function(e) {
   let {
     index: t,
     children: l,
-    user: g,
+    user: f,
     channel: m,
     onClick: b,
     isFocused: _,
@@ -64,7 +64,7 @@ let g = function(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("69220"), n.e("31923")]).then(n.bind(n, 881351));
-      return n => (0, r.jsx)(e, f(h({}, n), {
+      return n => (0, r.jsx)(e, g(h({}, n), {
         user: t
       }))
     }, {
@@ -80,12 +80,12 @@ let g = function(e) {
         left: -8,
         right: -8
       },
-      children: (0, r.jsx)(a.Z.div, f(h({
+      children: (0, r.jsx)(a.Z.div, g(h({
         className: o()(p.messageRequestItem, N, {
           [p.active]: E || I,
           [p.firstItem]: 0 === t
         }),
-        onContextMenu: e => P(e, g),
+        onContextMenu: e => P(e, f),
         onMouseEnter: S,
         onMouseLeave: T,
         onClick: null != b ? b : void 0,

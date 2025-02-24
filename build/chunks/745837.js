@@ -14,8 +14,8 @@ var i = n(120356),
   d = n(13140),
   p = n(435064),
   h = n(39604),
-  f = n(356659),
-  g = n(981631),
+  g = n(356659),
+  f = n(981631),
   m = n(332325),
   b = n(388032),
   _ = n(596259);
@@ -25,7 +25,7 @@ function E(e) {
 }
 
 function O() {
-  let e = (0, o.e7)([c.ZP], () => c.ZP.getKeybindForAction(g.kg4.SAVE_CLIP));
+  let e = (0, o.e7)([c.ZP], () => c.ZP.getKeybindForAction(f.kg4.SAVE_CLIP));
   if (null == e) return (0, r.jsx)(r.Fragment, {
     children: b.NW.string(b.t.miecxM)
   });
@@ -43,7 +43,7 @@ function O() {
   })
 }
 let N = {
-  [f.D5.Error]: {
+  [g.D5.Error]: {
     textColor: "text-primary",
     buttonLook: a.zxk.Looks.FILLED,
     buttonColor: a.zxk.Colors.PRIMARY,
@@ -56,26 +56,26 @@ let N = {
     }),
     buttonCopy: () => b.NW.string(b.t.vDGv9f),
     ctaOnClick: () => {
-      window.open(u.Z.getArticleURL(g.BhN.CLIPS), "_blank")
+      window.open(u.Z.getArticleURL(f.BhN.CLIPS), "_blank")
     },
     containerClass: _.container
   },
-  [f.D5.Disabled]: {
+  [g.D5.Disabled]: {
     textColor: "text-primary",
     buttonLook: a.zxk.Looks.FILLED,
     buttonColor: a.zxk.Colors.BRAND,
     bodyCopy: () => b.NW.string(b.t.MhrVg4),
     buttonCopy: () => b.NW.string(b.t.GMLBKS),
-    ctaOnClick: () => E(f.D5.Disabled),
+    ctaOnClick: () => E(g.D5.Disabled),
     containerClass: _.container
   },
-  [f.D5.Enabled]: {
+  [g.D5.Enabled]: {
     textColor: "always-white",
     buttonLook: a.zxk.Looks.FILLED,
     buttonColor: a.zxk.Colors.BRAND_INVERTED,
     bodyCopy: () => (0, r.jsx)(O, {}),
     buttonCopy: () => b.NW.string(b.t.GMLBKS),
-    ctaOnClick: () => E(f.D5.Enabled),
+    ctaOnClick: () => E(g.D5.Enabled),
     containerClass: l()(_.container, _.containerEnabled)
   }
 };
@@ -87,17 +87,17 @@ function v() {
   } = (0, o.cj)([p.Z], () => ({
     decoupledClipsEnabled: p.Z.getSettings().decoupledClipsEnabled,
     clipsError: p.Z.getLastClipsError()
-  })), n = null != t ? f.D5.Error : e ? f.D5.Enabled : f.D5.Disabled, {
+  })), n = null != t ? g.D5.Error : e ? g.D5.Enabled : g.D5.Disabled, {
     bodyCopy: i,
     buttonCopy: l,
     ctaOnClick: s,
     textColor: c,
     buttonColor: u,
     buttonLook: d,
-    containerClass: g
+    containerClass: f
   } = N[n];
   return (0, r.jsxs)("div", {
-    className: g,
+    className: f,
     children: [(0, r.jsx)(a.Text, {
       color: c,
       variant: "text-sm/medium",

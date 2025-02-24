@@ -38,16 +38,16 @@ function _(e) {
       guildId: null == t ? void 0 : t.id,
       maxMembers: null == t ? void 0 : t.maxMembers
     }
-  }), O = (0, i.e7)([s.Z], () => null != x ? s.Z.getMemberCount(x) : 0), N = null != j && (null != O ? O : 0) >= j, {
-    approveRequest: E,
-    rejectRequest: P,
-    submitting: I
+  }), O = (0, i.e7)([s.Z], () => null != x ? s.Z.getMemberCount(x) : 0), E = null != j && (null != O ? O : 0) >= j, {
+    approveRequest: N,
+    rejectRequest: I,
+    submitting: P
   } = (0, f.s)(null == v ? void 0 : v.guildId, null == v ? void 0 : v.userId, null == v ? void 0 : v.joinRequestId);
   return null != v && v.applicationStatus === h.wB.SUBMITTED && y ? (0, r.jsxs)("div", {
     className: b.buttons,
     children: [(0, r.jsx)(l.ua7, {
       text: g.NW.string(g.t.RbIXi4),
-      shouldShow: N,
+      shouldShow: E,
       children: e => {
         var t, n;
         return (0, r.jsx)(l.zxk, (t = function(e) {
@@ -69,10 +69,10 @@ function _(e) {
           return e
         }({}, e), n = n = {
           color: l.zxk.Colors.GREEN,
-          submitting: I,
-          onClick: E,
+          submitting: P,
+          onClick: N,
           size: l.PhG.SMALL,
-          disabled: N,
+          disabled: E,
           children: g.NW.string(g.t.BzjDQE)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -87,9 +87,9 @@ function _(e) {
       }
     }), (0, r.jsx)(l.zxk, {
       color: l.zxk.Colors.RED,
-      onClick: P,
+      onClick: I,
       size: l.PhG.SMALL,
-      disabled: I || v.applicationStatus !== h.wB.SUBMITTED,
+      disabled: P || v.applicationStatus !== h.wB.SUBMITTED,
       children: g.NW.string(g.t.hDtbs7)
     }), n && (0, r.jsx)(l.zxk, {
       color: l.zxk.Colors.TRANSPARENT,

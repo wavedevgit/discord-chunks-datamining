@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  R: () => f
+  R: () => g
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -15,8 +15,8 @@ var i = n(704215),
   p = n(388032),
   h = n(907661);
 
-function f() {
-  let [e, t] = (0, a.US)([i.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE]), n = e === i.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE, f = () => {
+function g() {
+  let [e, t] = (0, a.US)([i.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE]), n = e === i.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE, g = () => {
     o.Z.open(s.oAB.CONTENT_AND_SOCIAL, d.s6.RESTRICTED_USERS, {
       scrollPosition: u.FY.RESTRICTED_ACCOUNTS
     })
@@ -30,7 +30,7 @@ function f() {
       color: "interactive-active",
       children: p.NW.format(p.t.zqv4nZ, {
         hook: (e, t) => (0, r.jsx)(l.eee, {
-          onClick: f,
+          onClick: g,
           children: e
         }, t)
       })

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(594174),
   p = n(525395),
   h = n(55563),
-  f = n(551428),
-  g = n(73346),
+  g = n(551428),
+  f = n(73346),
   m = n(733789),
   b = n(4962),
   _ = n(388032),
@@ -71,13 +71,13 @@ class O extends i.Component {
     })
   }
 }
-let N = a.ZP.connectStores([h.Z, d.default, f.Z, c.Z, p.Z, u.Z], e => {
+let N = a.ZP.connectStores([h.Z, d.default, g.Z, c.Z, p.Z, u.Z], e => {
   let {
     sku: t
   } = e;
   return {
-    socialReasons: (0, g.Gg)(t.id, h.Z, d.default, c.Z, p.Z),
-    nonSocialReasons: (0, g.Ww)(t.id, h.Z, f.Z),
+    socialReasons: (0, f.Gg)(t.id, h.Z, d.default, c.Z, p.Z),
+    nonSocialReasons: (0, f.Ww)(t.id, h.Z, g.Z),
     hidePersonalInformation: u.Z.hidePersonalInformation
   }
 })(O)

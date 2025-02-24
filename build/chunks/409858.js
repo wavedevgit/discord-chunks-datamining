@@ -38,8 +38,8 @@ var s = i(200651),
   _ = i(296848),
   G = i(51144),
   L = i(479446),
-  F = i(715627),
-  M = i(981632),
+  M = i(715627),
+  F = i(981632),
   U = i(474936),
   W = i(981631),
   H = i(388032),
@@ -257,7 +257,7 @@ class K extends n.Component {
         size: u.CgR.SMALL,
         className: z.modal,
         "aria-labelledby": r,
-        children: [null != n.giftStyle && !m && !b && (0, s.jsx)(M.Z, {
+        children: [null != n.giftStyle && !m && !b && (0, s.jsx)(F.Z, {
           defaultAnimationState: this.getDefaultAnimationStatus(),
           idleAnimationState: this.getIdleAnimationStatus(),
           giftStyle: n.giftStyle,
@@ -298,7 +298,7 @@ class K extends n.Component {
             className: z.body,
             variant: "text-sm/normal",
             children: this.bodyText
-          }), m && !b && null != n.giftStyle && !O && (0, s.jsx)(M.Z, {
+          }), m && !b && null != n.giftStyle && !O && (0, s.jsx)(F.Z, {
             defaultAnimationState: this.getDefaultAnimationStatus(),
             idleAnimationState: this.getIdleAnimationStatus(),
             className: z.giftAnimation,
@@ -328,14 +328,12 @@ class K extends n.Component {
             children: this.buttonText
           })]
         })]
-      }), null != n.giftStyle && !o && this.step !== W.wZ8.ERROR && (0, s.jsx)(s.Fragment, {
-        children: !O && !e && y && (null == p || null == S ? (0, s.jsx)(X, {
-          openedGift: y && !O && !e
-        }) : (0, s.jsx)(F.Z, {
-          confettiTarget: this.modalRef.current,
-          emojiURL: S
-        }))
-      }), !O && !e && y && null != h && (0, s.jsx)(Y, {
+      }), null != n.giftStyle && !o && this.step !== W.wZ8.ERROR && !O && !e && y && (null == p || null == S ? (0, s.jsx)(X, {
+        openedGift: y && !O && !e
+      }) : (0, s.jsx)(M.Z, {
+        confettiTarget: this.modalRef.current,
+        emojiURL: S
+      })), !O && !e && y && null != h && (0, s.jsx)(Y, {
         soundId: h,
         step: this.step
       })]

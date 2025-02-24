@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 });
 var r = n(200651),
   i = n(192379),
@@ -14,7 +14,7 @@ var r = n(200651),
   p = n(388032),
   h = n(804958);
 
-function f() {
+function g() {
   let e = (0, a.Q3)("AddFriendHeader");
   return (0, r.jsxs)("header", {
     className: h.header,
@@ -25,10 +25,10 @@ function f() {
     }), (0, r.jsx)(o.Z, {})]
   })
 }
-let g = function() {
+let f = function() {
   let e = (0, a.Q3)("AddFriend");
   return (0, r.jsxs)(i.Fragment, {
-    children: [(0, r.jsx)(f, {}), (0, s.b)() && (0, r.jsx)(c.Z, {}), e ? null : (0, r.jsx)("div", {
+    children: [(0, r.jsx)(g, {}), (0, s.b)() && (0, r.jsx)(c.Z, {}), e ? null : (0, r.jsx)("div", {
       className: h.emptyState,
       children: (0, r.jsx)(u.Z, {
         type: d.pJs.ADD_FRIEND

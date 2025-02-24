@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => P
+  Z: () => I
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -25,7 +25,7 @@ var r = n(200651),
   j = n(488131),
   O = n(388032);
 
-function N(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function N(e) {
   return e
 }
 
-function E(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function E(e, t) {
   }), e
 }
 
-function P(e) {
+function I(e) {
   let {
     channel: t
   } = e, [n, l] = i.useState(!1);
@@ -74,7 +74,7 @@ function P(e) {
     autoInvert: !1,
     onRequestClose: () => l(!1),
     renderPopout: function(e) {
-      return (0, r.jsx)(I, E(N({}, e), {
+      return (0, r.jsx)(P, N(E({}, e), {
         channel: t
       }))
     },
@@ -82,7 +82,7 @@ function P(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(v.ZP.Icon, E(N({}, e), {
+      return (0, r.jsx)(v.ZP.Icon, N(E({}, e), {
         onClick: o,
         tooltip: n ? null : a,
         icon: s.xhG,
@@ -93,15 +93,15 @@ function P(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, l = (0, c.Z)(t), v = (0, f.Z)(t), N = (0, b.Z)(t.id), E = (0, g.Z)(t), P = (0, C.Z)({
+  } = e, l = (0, c.Z)(t), v = (0, f.Z)(t), E = (0, b.Z)(t.id), N = (0, g.Z)(t), I = (0, C.Z)({
     id: t.id,
     label: O.NW.string(O.t.DQ797u)
-  }), I = (0, u.Z)(t), S = (0, d.Z)(t), Z = (0, p.Z)(t, "Toolbar Overflow"), T = (0, m.Z)(t), A = (0, h.Z)(t), w = (0, _.Z)(t), R = y.vF.useSetting(), k = (0, a.e7)([x.Z], () => !o().isEmpty(x.Z.getVoiceStatesForChannel(t.id)));
+  }), P = (0, u.Z)(t), S = (0, d.Z)(t), Z = (0, p.Z)(t, "Toolbar Overflow"), T = (0, m.Z)(t), A = (0, h.Z)(t), w = (0, _.Z)(t), R = y.vF.useSetting(), M = (0, a.e7)([x.Z], () => !o().isEmpty(x.Z.getVoiceStatesForChannel(t.id)));
   return (0, r.jsxs)(s.v2r, {
     navId: "thread-context",
     onClose: n,
@@ -110,7 +110,7 @@ function I(e) {
     children: [(0, r.jsxs)(s.kSQ, {
       children: [Z, A]
     }), (0, r.jsxs)(s.kSQ, {
-      children: [E, T, N, R && !k ? (0, r.jsx)(s.sNh, {
+      children: [N, T, E, R && !M ? (0, r.jsx)(s.sNh, {
         id: "open",
         label: O.NW.string(O.t.bX7EaG),
         action: function() {
@@ -120,7 +120,7 @@ function I(e) {
     }), (0, r.jsxs)(s.kSQ, {
       children: [w, l, v, S]
     }), (0, r.jsxs)(s.kSQ, {
-      children: [I, P]
+      children: [P, I]
     })]
   })
 }

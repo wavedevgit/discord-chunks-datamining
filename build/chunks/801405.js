@@ -41,14 +41,14 @@ function v(e) {
       currentLayout: i,
       mode: e
     }
-  }, [t, n]), N = (0, l.e7)([p.Z], () => p.Z.getVoiceChannelId() === t.id, [t.id]);
+  }, [t, n]), E = (0, l.e7)([p.Z], () => p.Z.getVoiceChannelId() === t.id, [t.id]);
   i.useEffect(() => {
     x.current = O
   });
-  let E = i.useRef(j),
+  let N = i.useRef(j),
     {
-      currentDocument: P,
-      rootNode: I
+      currentDocument: I,
+      rootNode: P
     } = i.useMemo(() => {
       let e = null != u && y ? u.document : document,
         t = v.document.getElementById("app-mount");
@@ -59,38 +59,38 @@ function v(e) {
       }
     }, [u, y, v]),
     S = o && !y,
-    Z = O === b.WtW.VIDEO && N && !S,
+    Z = O === b.WtW.VIDEO && E && !S,
     T = i.useCallback((e, r) => {
       r !== e && (a.Z.updateLayout(t.id, r, n), r === b.AEg.FULL_SCREEN && t.isPrivate() && f.S.dispatch(b.CkL.TEXTAREA_BLUR))
     }, [n, t]),
     A = i.useCallback(e => {
-      null != I && e === b.AEg.FULL_SCREEN && (T(e, E.current), (0, g.Pr)(e => {
-        E.current = e
-      }, P))
-    }, [P, T, I]),
+      null != P && e === b.AEg.FULL_SCREEN && (T(e, N.current), (0, g.Pr)(e => {
+        N.current = e
+      }, I))
+    }, [I, T, P]),
     w = i.useCallback(e => () => {
-      null != I && (e !== b.AEg.FULL_SCREEN ? (E.current = e, T(e, b.AEg.FULL_SCREEN), (0, g.Dj)(I)) : A(e))
-    }, [T, A, I]);
+      null != P && (e !== b.AEg.FULL_SCREEN ? (N.current = e, T(e, b.AEg.FULL_SCREEN), (0, g.Dj)(P)) : A(e))
+    }, [T, A, P]);
   i.useEffect(() => {
     let e = () => {
-      null == I || (0, g.rB)(I, P) || j !== b.AEg.FULL_SCREEN || w(j)()
+      null == P || (0, g.rB)(P, I) || j !== b.AEg.FULL_SCREEN || w(j)()
     };
-    return P.addEventListener(g.NO, e), () => {
-      P.removeEventListener(g.NO, e)
+    return I.addEventListener(g.NO, e), () => {
+      I.removeEventListener(g.NO, e)
     }
-  }, [P, j, w, I]);
+  }, [I, j, w, P]);
   let R = {
       channel: t,
       maybeLeaveFullScreen: A
     },
-    k = i.useRef(R);
+    M = i.useRef(R);
   return (i.useEffect(() => {
-    k.current = R
+    M.current = R
   }), i.useEffect(() => {
     let {
       channel: e,
       maybeLeaveFullScreen: t
-    } = k.current;
+    } = M.current;
     return h.default.track(b.rMx.VIDEO_LAYOUT_TOGGLED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -114,12 +114,12 @@ function v(e) {
       y && (0, m.isMac)() || t(j)
     }
   }, [j, y]), i.useEffect(() => {
-    null != I && x.current === b.WtW.VIDEO && O === b.WtW.VOICE && (0, g.Pr)(I, P)
-  }, [P, O, x, I]), i.useEffect(() => {
-    !N && y && C()
-  }, [N, y]), Z) ? (0, r.jsx)(d.Z, {
+    null != P && x.current === b.WtW.VIDEO && O === b.WtW.VOICE && (0, g.Pr)(P, I)
+  }, [I, O, x, P]), i.useEffect(() => {
+    !E && y && C()
+  }, [E, y]), Z) ? (0, r.jsx)(d.Z, {
     themeable: !1,
-    node: I,
+    node: P,
     guestWindow: u,
     className: _.rightTrayIcon,
     onClick: w(j)

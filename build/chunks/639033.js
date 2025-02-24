@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -22,7 +22,7 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = "STAGE_INVITED_TO_SPEAK_MODAL";
-class f extends o.Z {
+class g extends o.Z {
   _initialize() {
     l.Z.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
   }
@@ -34,16 +34,16 @@ class f extends o.Z {
       var t;
       let {
         voiceStates: l
-      } = e, o = a.default.getId(), f = null === (t = c.Z.getSession()) || void 0 === t ? void 0 : t.sessionId, g = l.find(e => e.userId === o && e.sessionId === f);
-      if (null == g) return;
-      let m = g.channelId;
+      } = e, o = a.default.getId(), g = null === (t = c.Z.getSession()) || void 0 === t ? void 0 : t.sessionId, f = l.find(e => e.userId === o && e.sessionId === g);
+      if (null == f) return;
+      let m = f.channelId;
       if (null == m) {
         (0, i.nfh)(h) && (0, i.Mr3)(h);
         return
       }
       let b = s.Z.getChannel(m);
       if (!(null == b ? void 0 : b.isGuildStageVoice())) return;
-      let _ = (0, u.gf)(g) === u.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+      let _ = (0, u.gf)(f) === u.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
       if (null != b && _) {
         if ((0, i.nfh)(h)) return;
         (0, i.ZDy)(async () => {
@@ -84,4 +84,4 @@ class f extends o.Z {
     })
   }
 }
-let g = new f
+let f = new g

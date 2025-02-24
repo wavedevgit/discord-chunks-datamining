@@ -14,16 +14,18 @@ function u(e) {
   let {
     guildId: t,
     onSelect: r,
-    onPickerClose: u
-  } = e, s = (0, a.Z)(t, u), b = (0, l.Z)();
+    onPickerClose: u,
+    onInteraction: s
+  } = e, b = (0, a.Z)(t, u), p = (0, l.Z)();
   return (0, n.jsx)(o.v2r, {
     navId: "user-context",
     onClose: c.Zy,
     "aria-label": i.NW.string(i.t.liqwPD),
     className: "context-menu",
     onSelect: r,
+    onInteraction: s,
     children: (0, n.jsxs)(o.kSQ, {
-      children: [b, s]
+      children: [p, b]
     })
   })
 }

@@ -37,16 +37,16 @@ function p(e) {
       }
   }, [t, l]);
   let p = null != l,
-    [h, f] = i.useState(window.innerWidth);
+    [h, g] = i.useState(window.innerWidth);
   i.useEffect(() => {
     let e = () => {
-      f(window.innerWidth)
+      g(window.innerWidth)
     };
     return window.addEventListener("resize", e), () => {
       window.removeEventListener("resize", e)
     }
   }, []);
-  let g = h >= 1610 ? 3 : h >= 1340 ? 2 : 1,
+  let f = h >= 1610 ? 3 : h >= 1340 ? 2 : 1,
     m = i.useMemo(() => {
       let e = [];
       for (let r of t) {
@@ -60,7 +60,7 @@ function p(e) {
   }) : (0, r.jsx)("div", {
     className: d.container,
     children: m.map((e, t) => {
-      let n = Math.floor(t / g);
+      let n = Math.floor(t / f);
       return (0, r.jsx)(c.Z, {
         quest: e,
         questContent: s.jn.QUEST_HOME_DESKTOP,

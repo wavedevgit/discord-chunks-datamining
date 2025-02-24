@@ -24,10 +24,10 @@ var r = n(200651),
   x = n(430824),
   j = n(496675),
   O = n(594174),
-  N = n(700785),
-  E = n(51144),
-  P = n(396769),
-  I = n(967128),
+  E = n(700785),
+  N = n(51144),
+  I = n(396769),
+  P = n(967128),
   S = n(318374),
   Z = n(981631),
   T = n(388032),
@@ -36,47 +36,47 @@ var r = n(200651),
 function w(e) {
   let {
     channel: t
-  } = e, [n, l] = i.useState(!1), a = (0, m.ZP)(t, !0), w = t.guild_id, R = (0, d.e7)([x.Z], () => null != w ? x.Z.getRoles(w) : void 0), k = (0, d.e7)([O.default, x.Z], () => {
+  } = e, [n, l] = i.useState(!1), a = (0, m.ZP)(t, !0), w = t.guild_id, R = (0, d.e7)([x.Z], () => null != w ? x.Z.getRoles(w) : void 0), M = (0, d.e7)([O.default, x.Z], () => {
     var e;
     return O.default.getUser(null === (e = x.Z.getGuild(w)) || void 0 === e ? void 0 : e.ownerId)
-  }), M = i.useMemo(() => null != w ? s()(R).sortBy(e => -e.position).filter(e => !(0, g.pM)(w, e.id)).value() : [], [w, R]), L = i.useMemo(() => s()(M).filter(e => {
+  }), k = i.useMemo(() => null != w ? s()(R).sortBy(e => -e.position).filter(e => !(0, g.pM)(w, e.id)).value() : [], [w, R]), L = i.useMemo(() => s()(k).filter(e => {
     if (null == w) return !1;
-    let n = N.I0({
+    let n = E.I0({
       forceRoles: {
         [e.id]: e
       },
       context: t
     });
     return c.e$(n, Z.Plq.ADMINISTRATOR) || c.e$(n, Z.Plq.VIEW_CHANNEL)
-  }).value(), [t, w, M]), D = (0, d.Wu)([O.default], () => {
+  }).value(), [t, w, k]), D = (0, d.Wu)([O.default], () => {
     let e = {};
-    for (let n of (null != k && (e[k.id] = k), Object.values(t.permissionOverwrites))) {
+    for (let n of (null != M && (e[M.id] = M), Object.values(t.permissionOverwrites))) {
       if (n.type !== f.BN.MEMBER || null != e[n.id]) continue;
       let t = O.default.getUser(n.id);
       null != t && (e[t.id] = t)
     }
     return s()(e).filter(e => {
       var n;
-      let r = N.BT({
+      let r = E.BT({
           permission: Z.Plq.ADMINISTRATOR,
           user: e,
           context: t
         }),
-        i = null !== (n = t.permissionOverwrites[e.id]) && void 0 !== n ? n : N.Hn,
+        i = null !== (n = t.permissionOverwrites[e.id]) && void 0 !== n ? n : E.Hn,
         l = c.e$(i.allow, Z.Plq.VIEW_CHANNEL);
       return r || l
     }).value()
-  }, [t, k]), W = j.Z.can(Z.Plq.MANAGE_CHANNELS, t) || j.Z.can(Z.Plq.MANAGE_ROLES, t), U = i.useCallback(() => l(!1), []);
-  return (0, r.jsxs)(I.ZP, {
+  }, [t, M]), W = j.Z.can(Z.Plq.MANAGE_CHANNELS, t) || j.Z.can(Z.Plq.MANAGE_ROLES, t), U = i.useCallback(() => l(!1), []);
+  return (0, r.jsxs)(P.ZP, {
     channelId: t.id,
-    children: [(0, r.jsx)(I.Kq, {
+    children: [(0, r.jsx)(P.Kq, {
       locked: !0,
       channelType: t.type
-    }), (0, r.jsx)(I.Ot, {
+    }), (0, r.jsx)(P.Ot, {
       children: T.NW.format(T.t.I3R7Vl, {
         channelName: a
       })
-    }), (0, r.jsx)(I.jz, {
+    }), (0, r.jsx)(P.jz, {
       children: T.NW.format(T.t.QuwqjI, {
         channelName: a,
         topicHook: () => y.Z.parseTopic(t.topic, !0, {
@@ -85,14 +85,14 @@ function w(e) {
       })
     }), W ? (0, r.jsxs)("div", {
       className: A.channelSettingButtons,
-      children: [(0, r.jsx)(P.Z, {
+      children: [(0, r.jsx)(I.Z, {
         label: T.NW.string(T.t.dMJ3Y2),
         onClick: () => l(!0),
         icon: (0, r.jsx)(p.BFJ, {
           size: "xs",
           color: "currentColor"
         })
-      }), (0, r.jsx)(P.Z, {
+      }), (0, r.jsx)(I.Z, {
         label: T.NW.string(T.t["3gUsJS"]),
         onClick: function() {
           h.ZP.open(t.id)
@@ -112,7 +112,7 @@ function w(e) {
           users: D
         });
         let e = D[0],
-          n = E.ZP.getName(e);
+          n = N.ZP.getName(e);
         return (0, r.jsxs)("div", {
           className: A.avatars,
           children: [(0, r.jsx)(p.qEK, {

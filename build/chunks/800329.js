@@ -42,7 +42,7 @@ function p(e) {
     tileStyle: x,
     tileWidth: j,
     rows: O,
-    columns: N
+    columns: E
   } = i.useMemo(() => (function(e, t, n) {
     let {
       rows: r,
@@ -80,25 +80,25 @@ function p(e) {
       rows: r,
       columns: i
     }
-  })(C, v, y), [C, v, y]), E = N + 1, P = E * j + (E - 1) * 8 <= b, I = Math.floor(j / c) + 8, S = Math.max(0, y - I * O) / 2;
+  })(C, v, y), [C, v, y]), N = E + 1, I = N * j + (N - 1) * 8 <= b, P = Math.floor(j / c) + 8, S = Math.max(0, y - P * O) / 2;
   return (0, r.jsx)(a.Z, {
     fade: !0,
     className: n,
     listPadding: [h + S, 0, f + S - 8, 8],
     renderRow: function(e) {
       var t;
-      let n = e * N;
+      let n = e * E;
       return (0, r.jsx)("div", {
         className: s.row,
-        children: null == l ? void 0 : null === (t = l.slice(n, n + N)) || void 0 === t ? void 0 : t.map((e, t) => {
+        children: null == l ? void 0 : null === (t = l.slice(n, n + E)) || void 0 === t ? void 0 : t.map((e, t) => {
           var i;
           let l = n + t;
           return (0, r.jsx)("div", {
             style: x,
             className: o()(s.tile, {
-              [s.padColumn]: P,
-              [s.noVerticalMargin]: l >= (O - 1) * N,
-              [s.noHorizontalMargin]: (l + 1) % N == 0 || l === C - 1
+              [s.padColumn]: I,
+              [s.noVerticalMargin]: l >= (O - 1) * E,
+              [s.noHorizontalMargin]: (l + 1) % E == 0 || l === C - 1
             }),
             children: (0, r.jsx)("div", {
               className: s.tileSizer,
@@ -110,7 +110,7 @@ function p(e) {
     },
     rowCount: O,
     rowCountBySection: [O],
-    rowHeight: I,
+    rowHeight: P,
     onResize: g
   })
 }

@@ -24,10 +24,10 @@ var r = n(200651),
   x = n(351127),
   j = n(981631),
   O = n(388032),
-  N = n(211971),
-  E = n(163253);
+  E = n(211971),
+  N = n(163253);
 
-function P(e) {
+function I(e) {
   var t, n, l, a;
   let {
     permission: s,
@@ -35,24 +35,24 @@ function P(e) {
     guild: C,
     specMap: v,
     categoryTitle: y,
-    userId: N
-  } = e, P = (0, c.e7)([b.Z], () => b.Z.getRoles(C.id)), I = j.Plq[s], S = null !== (l = null === (t = v[I.toString()]) || void 0 === t ? void 0 : t.title) && void 0 !== l ? l : (0, m.wt)(I), Z = null !== (a = null === (n = v[I.toString()]) || void 0 === n ? void 0 : n.description) && void 0 !== a ? a : "", T = x._o.has(I), A = x.Qn.includes(s), w = g.length, R = (0, c.e7)([_.Z], () => _.Z.can(j.Plq.MANAGE_ROLES, C), [C]), k = i.useCallback(async e => {
+    userId: E
+  } = e, I = (0, c.e7)([b.Z], () => b.Z.getRoles(C.id)), P = j.Plq[s], S = null !== (l = null === (t = v[P.toString()]) || void 0 === t ? void 0 : t.title) && void 0 !== l ? l : (0, m.wt)(P), Z = null !== (a = null === (n = v[P.toString()]) || void 0 === n ? void 0 : n.description) && void 0 !== a ? a : "", T = x._o.has(P), A = x.Qn.includes(s), w = g.length, R = (0, c.e7)([_.Z], () => _.Z.can(j.Plq.MANAGE_ROLES, C), [C]), M = i.useCallback(async e => {
     R && (await f.Z.open(C.id, j.pNK.ROLES), await f.Z.selectRole(e))
   }, [R, C.id]);
   return (0, r.jsxs)("div", {
-    className: o()(E.permissionItemContainer, {
-      [E.elevatedPermission]: T
+    className: o()(N.permissionItemContainer, {
+      [N.elevatedPermission]: T
     }),
     children: [(0, r.jsxs)("div", {
-      className: E.permissionItemHeader,
+      className: N.permissionItemHeader,
       children: [(0, r.jsxs)("div", {
-        className: E.permissionTitle,
+        className: N.permissionTitle,
         children: [(0, r.jsx)(u.Text, {
           variant: "text-md/medium",
           color: "header-primary",
           children: S
         }), null != y && (0, r.jsxs)("div", {
-          className: E.permissionItemSubheader,
+          className: N.permissionItemSubheader,
           children: [(0, r.jsx)(u.Text, {
             variant: "text-xs/normal",
             color: "header-muted",
@@ -85,7 +85,7 @@ function P(e) {
                   }
                   return e
                 }({
-                  className: E.elevatedPermissionContainer
+                  className: N.elevatedPermissionContainer
                 }, e), n = n = {
                   children: [(0, r.jsx)(u.tQf, {
                     size: "custom",
@@ -116,7 +116,7 @@ function P(e) {
               "aria-hidden": "true",
               color: u.TVs.colors.INTERACTIVE_MUTED.css
             }), (0, r.jsx)("div", {
-              className: E.elevatedPermissionContainer,
+              className: N.elevatedPermissionContainer,
               children: (0, r.jsx)(u.Text, {
                 variant: "text-xs/normal",
                 color: "header-muted",
@@ -133,18 +133,18 @@ function P(e) {
         })
       })]
     }), null != Z && (0, r.jsx)("div", {
-      className: E.permissionItemDescription,
+      className: N.permissionItemDescription,
       children: (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: Z
       })
     }), (0, r.jsx)("div", {
-      className: E.permissionItemRoleContainer,
-      children: g.map(e => (0, x.Ov)(e, N) ? (0, r.jsx)("div", {
-        className: E.roleTooltipItem,
+      className: N.permissionItemRoleContainer,
+      children: g.map(e => (0, x.Ov)(e, E) ? (0, r.jsx)("div", {
+        className: N.roleTooltipItem,
         children: (0, r.jsx)("div", {
-          className: E.roleChiplet,
+          className: N.roleChiplet,
           children: (0, r.jsx)(u.Text, {
             variant: "text-xs/medium",
             color: "text-normal",
@@ -152,21 +152,21 @@ function P(e) {
           })
         })
       }, e) : (0, r.jsx)(u.P3F, {
-        className: o()(E.roleTooltipItem, {
-          [E.editable]: R && !(0, d.pM)(C.id, e)
+        className: o()(N.roleTooltipItem, {
+          [N.editable]: R && !(0, d.pM)(C.id, e)
         }),
-        onClick: () => k(e),
+        onClick: () => M(e),
         children: (0, r.jsx)(h.Z, {
-          role: P[e],
+          role: I[e],
           guildId: C.id,
-          className: E.roleChiplet
+          className: N.roleChiplet
         })
       }, e))
     })]
   })
 }
 
-function I(e, t) {
+function P(e, t) {
   return t.toLowerCase().includes(e.toLowerCase())
 }
 
@@ -177,10 +177,10 @@ function S(e) {
     location: l,
     className: a,
     onNavigate: d
-  } = e, p = (0, c.e7)([C.default], () => C.default.getUser(t), [t]), h = (0, c.e7)([b.Z], () => b.Z.getGuild(n), [n]), f = (0, c.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]), _ = (0, x.B2)(t, n, x.pd), S = Object.keys(_).length, Z = i.useMemo(() => null != h ? v.Z.getGuildPermissionSpecMap(h) : null, [h]), T = i.useMemo(() => null != h ? v.Z.generateGuildPermissionSpec(h) : null, [h]), [A, w] = i.useState(""), [R, k] = i.useState(""), M = i.useMemo(() => s()(k, 300), []), L = i.useCallback(e => {
-    w(e), M(e)
-  }, [M]), D = i.useCallback(() => {
-    w(""), k("")
+  } = e, p = (0, c.e7)([C.default], () => C.default.getUser(t), [t]), h = (0, c.e7)([b.Z], () => b.Z.getGuild(n), [n]), f = (0, c.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]), _ = (0, x.B2)(t, n, x.pd), S = Object.keys(_).length, Z = i.useMemo(() => null != h ? v.Z.getGuildPermissionSpecMap(h) : null, [h]), T = i.useMemo(() => null != h ? v.Z.generateGuildPermissionSpec(h) : null, [h]), [A, w] = i.useState(""), [R, M] = i.useState(""), k = i.useMemo(() => s()(M, 300), []), L = i.useCallback(e => {
+    w(e), k(e)
+  }, [k]), D = i.useCallback(() => {
+    w(""), M("")
   }, []), W = i.useMemo(() => {
     if (null == h || null == Z || null == f) return null;
     if (0 === S) return (0, r.jsx)(u.Text, {
@@ -203,13 +203,13 @@ function S(e) {
               i = x._o.has(l),
               a = x.Qn.includes(o),
               h = i ? O.NW.string(O.t.k7Kqj4) : a ? O.NW.string(O.t.IfqUEB) : null,
-              f = I(R, e),
-              g = I(R, t),
-              b = I(R, r),
-              _ = null != h && I(R, h);
+              f = P(R, e),
+              g = P(R, t),
+              b = P(R, r),
+              _ = null != h && P(R, h);
             if (!f && !g && !b && !_) return
           }
-          e.push((0, r.jsx)(P, {
+          e.push((0, r.jsx)(I, {
             permission: o,
             roleIds: a,
             guild: h,
@@ -222,19 +222,19 @@ function S(e) {
     }), e
   }, [h, Z, f, S, T, _, R, t]);
   return null == p || null == f ? null : (0, r.jsxs)("div", {
-    className: o()(N.container, a),
+    className: o()(E.container, a),
     children: [(0, r.jsx)(y.Z, {
       guildId: n,
       userId: t,
       onNavigate: d
     }), (0, r.jsx)(u.Ttm, {
-      className: E.permissionsGroupContainer,
+      className: N.permissionsGroupContainer,
       children: (0, r.jsx)(u.xJW, {
         title: O.NW.string(O.t.BBWnpq),
         children: (0, r.jsxs)("div", {
-          className: E.permissionsItemContainer,
+          className: N.permissionsItemContainer,
           children: [(0, r.jsx)(u.E1j, {
-            className: E.searchBar,
+            className: N.searchBar,
             query: A,
             placeholder: O.NW.string(O.t["yD9+dH"]),
             onChange: L,

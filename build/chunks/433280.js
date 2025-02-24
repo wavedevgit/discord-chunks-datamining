@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
@@ -14,13 +14,13 @@ var i = n(990547),
   d = n(981631),
   p = n(388032),
   h = n(404059),
-  f = n(968153);
+  g = n(968153);
 
-function g(e) {
+function f(e) {
   let {
     guildId: t,
     markAsDismissed: n
-  } = e, g = (0, l.e7)([c.Z, u.default], () => {
+  } = e, f = (0, l.e7)([c.Z, u.default], () => {
     let e = u.default.getCurrentUser(),
       n = c.Z.getGuild(t);
     return (null == n ? void 0 : n.isOwner(e)) === !0
@@ -30,7 +30,7 @@ function g(e) {
     name: i.ImpressionNames.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL,
     properties: {
       guild_id: t,
-      is_owner: g
+      is_owner: f
     }
   }), (0, r.jsx)("div", {
     className: h.container,
@@ -41,7 +41,7 @@ function g(e) {
         className: h.image,
         children: (0, r.jsx)("img", {
           alt: p.NW.string(p.t.xad4wc),
-          src: f,
+          src: g,
           className: h.image
         })
       }),

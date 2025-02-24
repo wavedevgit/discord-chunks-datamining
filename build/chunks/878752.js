@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => N
+  Z: () => E
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -25,15 +25,15 @@ var r = n(200651),
   j = n(159909),
   O = n(898159);
 
-function N(e) {
+function E(e) {
   let {
     channel: t,
     hasActiveStream: n,
-    showRightDivider: N,
-    themeable: E = !1
-  } = e, P = (0, m.Z)({
+    showRightDivider: E,
+    themeable: N = !1
+  } = e, I = (0, m.Z)({
     location: "VoiceEffectsActionBar"
-  }), I = (0, d.Ou)(t), S = i.useRef(null), Z = (0, s.Z)(), {
+  }), P = (0, d.Ou)(t), S = i.useRef(null), Z = (0, s.Z)(), {
     isSharedCanvasEnabled: T
   } = p.Z.useExperiment({
     guildId: null == t ? void 0 : t.guild_id,
@@ -44,11 +44,11 @@ function N(e) {
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: !1
-  }), w = (0, o.Z)(g.Z), R = (0, d.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [k, M] = (0, a.US)(R, void 0, !0), L = k === l.z.CONSUMABLE_HD_POTION_UPSELL, D = (0, f.Z)(t);
+  }), w = (0, o.Z)(g.Z), R = (0, d.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [M, k] = (0, a.US)(R, void 0, !0), L = M === l.z.CONSUMABLE_HD_POTION_UPSELL, D = (0, f.Z)(t);
   if (null == t || null != Z) return null;
   let W = (0, h.Z)(t),
-    U = !P && W,
-    B = !P && D,
+    U = !I && W,
+    B = !I && D,
     F = A && w,
     H = T && n;
   return (0, r.jsxs)(r.Fragment, {
@@ -56,7 +56,7 @@ function N(e) {
       className: O.voiceEffectsActionBar,
       children: [U && (0, r.jsx)(x.Z, {
         channel: t,
-        themeable: E
+        themeable: N
       }), B && (0, r.jsx)(v.Z, {
         channel: t
       }), F && (0, r.jsx)(b.Z, {
@@ -64,15 +64,15 @@ function N(e) {
       }), L && (0, r.jsx)(u.t, {
         potionRef: S,
         channel: t,
-        markAsDismissed: M
-      }), I && (0, r.jsx)(y.Z, {
+        markAsDismissed: k
+      }), P && (0, r.jsx)(y.Z, {
         ref: S,
         channel: t,
         glow: L
       }), H && (0, r.jsx)(_.Z, {}), H && (0, r.jsx)(C.Z, {
         channel: t
       }), H && (0, r.jsx)(j.Z, {})]
-    }), N && (U || B || F || L || I || H) && (0, r.jsx)("div", {
+    }), E && (U || B || F || L || P || H) && (0, r.jsx)("div", {
       className: O.divider
     })]
   })

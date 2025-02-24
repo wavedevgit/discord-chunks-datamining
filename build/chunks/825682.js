@@ -18,17 +18,17 @@ let h = function(e) {
     hovered: t,
     activities: n,
     applicationStream: h,
-    status: f,
-    user: g,
+    status: g,
+    user: f,
     userIgnored: m
-  } = e, b = (0, c.Z)(null == g ? void 0 : g.id, "StatusText"), {
+  } = e, b = (0, c.Z)(null == f ? void 0 : f.id, "StatusText"), {
     voiceActivityStatusEnabled: _
   } = (0, i.U)({
     location: "StatusText"
   }), {
     voiceChannel: E
   } = (0, o.Z)({
-    userId: null == g ? void 0 : g.id,
+    userId: null == f ? void 0 : f.id,
     surface: "status-text"
   }), O = _ ? E : void 0;
   return m ? (0, r.jsx)("div", {
@@ -36,7 +36,7 @@ let h = function(e) {
     children: d.NW.string(d.t.tFY5ZW)
   }) : (0, l.Z)({
     activities: n,
-    status: f,
+    status: g,
     applicationStream: h,
     voiceChannel: O
   }) ? (0, r.jsx)(a.Z, {
@@ -47,13 +47,13 @@ let h = function(e) {
     applicationStream: h,
     voiceChannel: O,
     animate: t,
-    user: g,
+    user: f,
     textSize: "sm"
   }) : null != b ? (0, r.jsx)(s.Z, {
     textClassName: p.text,
     entry: b
   }) : (0, r.jsx)("div", {
     className: p.text,
-    children: (0, u.u5)(f)
+    children: (0, u.u5)(g)
   })
 }

@@ -49,13 +49,13 @@ let A = (0, u.Z)(e => {
   } = e, M = (0, s.e7)([m.default], () => {
     let e = m.default.getCurrentUser();
     return o()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-  }), L = W === v.Y.STREAM_PREVIEW || null != a, U = (0, b.Z)(t), G = U || L ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL, V = G === f.Z.Direction.VERTICAL;
+  }), L = W === v.Y.STREAM_PREVIEW || null != a, U = (0, b.Z)(t), V = U || L ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL, G = V === f.Z.Direction.VERTICAL;
   return (0, r.jsx)(f.Z, {
     grow: 0,
     align: f.Z.Align.STRETCH,
-    direction: G,
-    wrap: V ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
-    className: i()(u, T.buttonsWrapper, V ? T.vertical : T.horizontal),
+    direction: V,
+    wrap: G ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
+    className: i()(u, T.buttonsWrapper, G ? T.vertical : T.horizontal),
     children: (() => {
       if ((0, h.Z)(t)) return (0, r.jsx)(O.Z, {
         platform: d.Z.get(Z.ABu.XBOX),

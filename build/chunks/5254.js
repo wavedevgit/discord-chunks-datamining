@@ -20,8 +20,8 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = {},
-  f = 0,
-  g = !1,
+  g = 0,
+  f = !1,
   m = !1;
 
 function b(e) {
@@ -40,7 +40,7 @@ class _ extends(r = o.ZP.Store) {
     this.waitFor(c.default)
   }
   getSuggestionCount() {
-    return f
+    return g
   }
   getSuggestions() {
     return Object.entries(h).map(e => {
@@ -55,13 +55,13 @@ class _ extends(r = o.ZP.Store) {
 p(_, "displayName", "FriendSuggestionStore");
 let E = new _(a.Z, {
   CONNECTION_OPEN: function(e) {
-    h = {}, (f = e.friendSuggestionCount) > 0 ? (m = !0, g || !m || (g = !0, m = !1, u.Z.fetch())) : (0, d.Z)()
+    h = {}, (g = e.friendSuggestionCount) > 0 ? (m = !0, f || !m || (f = !0, m = !1, u.Z.fetch())) : (0, d.Z)()
   },
   FRIEND_SUGGESTION_CREATE: function(e) {
     var t, n;
     let r = b(e.suggestion);
     if (null != h[r.key]) return !1;
-    f++, t = function(e) {
+    g++, t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -86,13 +86,13 @@ let E = new _(a.Z, {
     }), h = t
   },
   FRIEND_SUGGESTION_DELETE: function(e) {
-    f = Math.max(0, --f), delete h[e.suggestedUserId]
+    g = Math.max(0, --g), delete h[e.suggestedUserId]
   },
   LOAD_FRIEND_SUGGESTIONS_SUCCESS: function(e) {
     var t;
-    g = !1, t = e.suggestions, h = l().chain(t).map(e => b(e)).keyBy(e => e.key).value(), f = l().keys(h).length
+    f = !1, t = e.suggestions, h = l().chain(t).map(e => b(e)).keyBy(e => e.key).value(), g = l().keys(h).length
   },
   LOAD_FRIEND_SUGGESTIONS_FAILURE: function() {
-    g = !1, h = {}
+    f = !1, h = {}
   }
 })

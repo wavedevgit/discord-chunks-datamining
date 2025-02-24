@@ -12,8 +12,8 @@ var r, i = n(200651),
   d = n(481060),
   p = n(37234),
   h = n(134616),
-  f = n(714338),
-  g = n(663993),
+  g = n(714338),
+  f = n(663993),
   m = n(84615),
   b = n(210887),
   _ = n(819640),
@@ -55,22 +55,22 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = (0, g.Un)({
+let C = (0, f.Un)({
     createPromise: () => n.e("69470").then(n.bind(n, 989804)),
     webpackId: 989804,
     name: "UserSettings"
   }),
-  S = (0, g.Un)({
+  S = (0, f.Un)({
     createPromise: () => Promise.all([n.e("7654"), n.e("79783"), n.e("86915")]).then(n.bind(n, 869779)),
     webpackId: 869779,
     name: "ChannelSettings"
   }),
-  T = (0, g.Un)({
+  T = (0, f.Un)({
     createPromise: () => n.e("45620").then(n.bind(n, 838819)),
     webpackId: 838819,
     name: "CollectiblesShop"
   }),
-  P = (0, g.Un)({
+  P = (0, f.Un)({
     createPromise: () => Promise.all([n.e("7654"), n.e("44156"), n.e("79783"), n.e("6850"), n.e("16114"), n.e("58227"), n.e("54408"), n.e("71567"), n.e("95140")]).then(n.bind(n, 994763)),
     webpackId: 994763,
     name: "GuildSettings"
@@ -89,7 +89,7 @@ let C = (0, g.Un)({
   };
 
 function L() {
-  return l.useEffect(() => (f.Z.enable(), f.Z.enableTemp(h.u), () => f.Z.disableTemp()), []), null
+  return l.useEffect(() => (g.Z.enable(), g.Z.enableTemp(h.u), () => g.Z.disableTemp()), []), null
 }
 class w extends(r = l.PureComponent) {
   static getDerivedStateFromProps(e, t) {

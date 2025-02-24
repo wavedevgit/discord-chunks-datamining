@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  $: () => f,
-  h: () => g
+  $: () => g,
+  h: () => f
 }), n(47120);
 var r = n(512722),
   i = n.n(r),
@@ -24,7 +24,7 @@ async function h(e) {
   return null != r && p.set(e, r), r
 }
 
-function f(e) {
+function g(e) {
   let {
     soundKey: t,
     soundURL: n,
@@ -41,7 +41,7 @@ function f(e) {
   })
 }
 
-function g(e, t) {
+function f(e, t) {
   let {
     soundKey: n,
     soundURL: r,

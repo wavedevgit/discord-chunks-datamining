@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(570140),
   p = n(569984),
   h = n(918701),
-  f = n(93127),
-  g = n(814443),
+  g = n(93127),
+  f = n(814443),
   m = n(594174),
   b = n(801077),
   _ = n(626135),
@@ -47,20 +47,20 @@ let A = 15 * E.Z.Millis.MINUTE,
       partiedMembers: d,
       applicationStreams: p,
       currentActivities: h,
-      voiceChannels: f
-    } = t, g = d.length, m = p.length, b = h.length, E = f.length > 0, O = i.useCallback(() => {
+      voiceChannels: g
+    } = t, f = d.length, m = p.length, b = h.length, E = g.length > 0, O = i.useCallback(() => {
       let e = h.filter(e => {
         var t, n;
         return (null === (t = e.game) || void 0 === t ? void 0 : t.name) != null && (null === (n = e.game) || void 0 === n ? void 0 : n.type) === T.wW.GAME
       }).map(e => e.game.name);
       _.default.track(S.rMx.NOW_PLAYING_CARD_HOVERED, {
-        num_users: g,
+        num_users: f,
         num_streams: m,
         num_activities: b,
         in_voice_channel: E,
         games_detected: e
       })
-    }, [g, m, b, E, h]), C = s()(O, A);
+    }, [f, m, b, E, h]), C = s()(O, A);
     return null != a || null != c ? (0, r.jsx)(u.yRy, {
       position: "left",
       renderPopout: e => {
@@ -116,7 +116,7 @@ let A = 15 * E.Z.Millis.MINUTE,
       }
     }) : null
   }),
-  x = o().throttle(() => f.W(!1), 3e5);
+  x = o().throttle(() => g.W(!1), 3e5);
 
 function L() {
   let {
@@ -125,11 +125,11 @@ function L() {
     needsRefresh: n,
     fetching: l,
     currentUser: o
-  } = (0, c.cj)([b.Z, g.Z, m.default], () => ({
+  } = (0, c.cj)([b.Z, f.Z, m.default], () => ({
     nowPlayingCards: b.Z.nowPlayingCards,
     loaded: b.Z.loaded,
-    needsRefresh: g.Z.needsRefresh(),
-    fetching: g.Z.getFetching(),
+    needsRefresh: f.Z.needsRefresh(),
+    fetching: f.Z.getFetching(),
     currentUser: m.default.getCurrentUser()
   })), a = (0, c.e7)([p.Z], () => p.Z.quests);
   i.useEffect(() => (d.Z.wait(() => O.L()), () => d.Z.wait(() => O.v())), [null == o ? void 0 : o.id]), i.useEffect(() => {
@@ -149,8 +149,8 @@ function L() {
       });
       return t
     }, [e, a]),
-    f = null;
-  return t ? (f = e.length > 0 ? e.map(e => {
+    g = null;
+  return t ? (g = e.length > 0 ? e.map(e => {
     let {
       party: t
     } = e;
@@ -171,7 +171,7 @@ function L() {
       children: P.NW.string(P.t["99ZWxc"])
     })]
   }), (0, r.jsx)(r.Fragment, {
-    children: f
+    children: g
   })) : (0, r.jsx)("div", {
     className: j.emptyCard,
     children: (0, r.jsx)(u.$jN, {})

@@ -24,18 +24,18 @@ var r = n(200651),
   x = n(314897),
   j = n(323873),
   O = n(607744),
-  N = n(375954),
-  E = n(496675),
-  P = n(306680),
-  I = n(62817),
+  E = n(375954),
+  N = n(496675),
+  I = n(306680),
+  P = n(62817),
   S = n(594174),
   Z = n(459273),
   T = n(255269),
   A = n(47481),
   w = n(977391),
   R = n(959258),
-  k = n(73274),
-  M = n(419388),
+  M = n(73274),
+  k = n(419388),
   L = n(406534),
   D = n(981631),
   W = n(388032),
@@ -104,9 +104,9 @@ let G = i.memo(function(e) {
       hasUnreads: x,
       editingMessageId: j,
       fontSize: O,
-      keyboardModeEnabled: N,
-      filterAfterTimestamp: P,
-      showingQuarantineBanner: I,
+      keyboardModeEnabled: E,
+      filterAfterTimestamp: I,
+      showingQuarantineBanner: P,
       hideSummaries: S = !1,
       jumpBarClassName: T
     } = e, [A, R] = i.useState(!1), G = i.useMemo(() => _ ? (0, w.aJ)({
@@ -123,22 +123,22 @@ let G = i.memo(function(e) {
       attachments: 8,
       fontSize: O,
       groupSpacing: l
-    }), [_, O, l]), V = (0, M.ZP)({
+    }), [_, O, l]), V = (0, k.ZP)({
       messages: m,
       channel: f,
       compact: _,
       hasUnreads: x,
       focusId: j,
       placeholderHeight: G.totalHeight,
-      canLoadMore: null == P,
+      canLoadMore: null == I,
       handleScrollToBottom: i.useCallback(() => R(!0), [R]),
       handleScrollFromBottom: i.useCallback(() => R(!1), [R])
-    }), z = (0, k.Z)({
+    }), z = (0, M.Z)({
       scrollerRef: V.ref,
       isEditing: null != j,
-      keyboardModeEnabled: N,
+      keyboardModeEnabled: E,
       hasMoreAfter: m.hasMoreAfter
-    }), q = (0, s.e7)([C.Z], () => E.Z.can(D.Plq.READ_MESSAGE_HISTORY, f) ? null : C.Z.getViewingRolesTimestamp(f.getGuildId())), {
+    }), q = (0, s.e7)([C.Z], () => N.Z.can(D.Plq.READ_MESSAGE_HISTORY, f) ? null : C.Z.getViewingRolesTimestamp(f.getGuildId())), {
       channelStreamMarkup: Y,
       newMessagesBar: K,
       jumpToPresentBar: X,
@@ -155,8 +155,8 @@ let G = i.memo(function(e) {
       loadMore: V.loadMore,
       scrollManager: V,
       specs: G,
-      filterAfterTimestamp: null != P ? P : q,
-      showingQuarantineBanner: I,
+      filterAfterTimestamp: null != I ? I : q,
+      showingQuarantineBanner: P,
       hideSummaries: S,
       isAtBottom: A,
       jumpToPresent: () => {
@@ -236,7 +236,7 @@ let G = i.memo(function(e) {
               children: W.NW.string(W.t.Spb3s7)
             }), Y, (0, r.jsx)("div", {
               className: o()({
-                [U.scrollerSpacer]: !I,
+                [U.scrollerSpacer]: !P,
                 [U.empty]: 0 === m.length && !m.loadingMore,
                 [U.emptyForum]: 1 === m.length && !m.loadingMore && f.isForumPost() && (null === (t = m.first()) || void 0 === t ? void 0 : t.isFirstMessageInForumPost(f))
               })
@@ -264,9 +264,9 @@ let G = i.memo(function(e) {
         {
           canManageMessages: r,
           permissionVersion: i
-        } = (0, s.cj)([E.Z], () => ({
-          canManageMessages: E.Z.can(D.Plq.MANAGE_MESSAGES, e),
-          permissionVersion: null != t ? E.Z.getGuildVersion(t) : null
+        } = (0, s.cj)([N.Z], () => ({
+          canManageMessages: N.Z.can(D.Plq.MANAGE_MESSAGES, e),
+          permissionVersion: null != t ? N.Z.getGuildVersion(t) : null
         }), [e, t]);
       return {
         canChat: n,
@@ -276,8 +276,8 @@ let G = i.memo(function(e) {
     }(t), {
       messageGroupSpacing: Z,
       fontSize: w,
-      messageDisplayCompact: k,
-      renderSpoilers: M,
+      messageDisplayCompact: M,
+      renderSpoilers: k,
       keyboardModeEnabled: L
     } = function() {
       let e = y.jU.useSetting(),
@@ -312,10 +312,10 @@ let G = i.memo(function(e) {
       editingMessageId: z
     } = function(e) {
       var t, n;
-      let r = (0, s.e7)([N.Z], () => N.Z.getMessages(e.id), [e.id]),
-        l = (0, s.e7)([P.ZP], () => {
+      let r = (0, s.e7)([E.Z], () => E.Z.getMessages(e.id), [e.id]),
+        l = (0, s.e7)([I.ZP], () => {
           var t;
-          return null !== (t = P.ZP.getOldestUnreadMessageId(e.id)) && void 0 !== t ? t : null
+          return null !== (t = I.ZP.getOldestUnreadMessageId(e.id)) && void 0 !== t ? t : null
         }, [e.id]),
         {
           enabled: o
@@ -361,18 +361,18 @@ let G = i.memo(function(e) {
       }
     }(t);
     return (0, r.jsx)(g.a.Provider, {
-      value: (0, T.Z)(M, u),
+      value: (0, T.Z)(k, u),
       children: (0, r.jsx)(R.v, {
         children: (0, r.jsx)(G, F(B({}, c), {
           messageGroupSpacing: Z,
           showNewMessagesBar: !0,
           channel: t,
-          messageDisplayCompact: !a && (o || k),
+          messageDisplayCompact: !a && (o || M),
           messages: W,
           channelStream: U,
           permissionVersion: p,
-          uploads: (0, s.e7)([I.Z], () => I.Z.getFiles(t.id), [t]),
-          unreadCount: (0, s.e7)([P.ZP], () => P.ZP.getUnreadCount(t.id), [t]),
+          uploads: (0, s.e7)([P.Z], () => P.Z.getFiles(t.id), [t]),
+          unreadCount: (0, s.e7)([I.ZP], () => I.ZP.getUnreadCount(t.id), [t]),
           hasUnreads: null != V,
           canChat: C,
           editingMessageId: z,

@@ -39,16 +39,17 @@ function a(e, t) {
   }), e
 }
 
-function o(e, t, o, s) {
-  let c = o.getGuildId();
-  return null != c ? (0, l.jW)(e, async () => {
+function o(e, t, o, s, c) {
+  let u = o.getGuildId();
+  return null != u ? (0, l.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([n.e("97589"), n.e("80125"), n.e("87168")]).then(n.bind(n, 357823));
     return n => (0, r.jsx)(e, a(i({}, n), {
       user: t,
       channel: o,
-      guildId: c
+      guildId: u,
+      onInteraction: e => c("GuildVoiceUserContextMenu", e)
     }))
   }, s) : (0, l.jW)(e, async () => {
     let {
@@ -56,7 +57,8 @@ function o(e, t, o, s) {
     } = await Promise.all([n.e("80125"), n.e("66067")]).then(n.bind(n, 238296));
     return n => (0, r.jsx)(e, a(i({}, n), {
       user: t,
-      channel: o
+      channel: o,
+      onInteraction: e => c("BaseVoiceUserContextMenu", e)
     }))
   }, s)
 }

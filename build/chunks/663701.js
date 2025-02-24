@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => ef
+  Z: () => eg
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(442837),
   p = n(704215),
   h = n(952265),
-  f = n(481060),
-  g = n(493683),
+  g = n(481060),
+  f = n(493683),
   m = n(529103),
   b = n(607070),
   _ = n(213609),
@@ -127,7 +127,7 @@ let ei = e => {
         }
       })
     }, [h]);
-    let [g, E] = i.useState(!1);
+    let [f, E] = i.useState(!1);
     return (0, r.jsxs)("div", {
       className: ee.friendsButtonContainer,
       children: [(0, r.jsx)(Y.Qj, en(et({
@@ -139,7 +139,7 @@ let ei = e => {
         interactiveClassName: h ? ee.friendsBadge : void 0,
         selected: t,
         route: Q.Z5c.FRIENDS,
-        icon: f.iFz,
+        icon: g.iFz,
         text: $.NW.string($.t.TdEu5e),
         onMouseEnter: () => {
           E(!0)
@@ -148,7 +148,7 @@ let ei = e => {
           E(!1)
         }
       }, n, l), {
-        children: o > 0 ? (0, r.jsx)(f.mAB, {
+        children: o > 0 ? (0, r.jsx)(g.mAB, {
           count: o
         }) : null
       })), h && !u && (0, r.jsx)(R.Z, {
@@ -156,7 +156,7 @@ let ei = e => {
         wind: 0,
         sprites: X.CA,
         spriteColors: X.Br,
-        firing: g,
+        firing: f,
         confettiConfig: {
           opacity: {
             type: "static",
@@ -182,7 +182,7 @@ let ei = e => {
     return (0, r.jsx)(Y.Qj, en(et({
       selected: t,
       route: Q.Z5c.APPLICATION_LIBRARY,
-      icon: f.vqy,
+      icon: g.vqy,
       text: $.NW.string($.t.cw57am)
     }, i, l), {
       children: (0, r.jsx)(q.Z, {
@@ -194,7 +194,7 @@ let ei = e => {
   },
   eo = () => {
     let e = (0, S.q)();
-    return e > 0 ? (0, r.jsx)(f.mAB, {
+    return e > 0 ? (0, r.jsx)(g.mAB, {
       count: e
     }) : null
   },
@@ -205,11 +205,11 @@ let ei = e => {
       channelId: i
     } = (0, C._)();
     if (!(0, T.a)()) return null;
-    let l = null == i ? void 0 : () => g.Z.preload(Q.ME, i);
+    let l = null == i ? void 0 : () => f.Z.preload(Q.ME, i);
     return (0, r.jsx)(Y.Qj, en(et({
       selected: t,
       route: Q.Z5c.MESSAGE_REQUESTS,
-      icon: f._XJ,
+      icon: g._XJ,
       text: $.NW.string($.t.e7GWjY),
       onClick: l
     }, n), {
@@ -223,7 +223,7 @@ let ei = e => {
     return (0, r.jsx)(Y.Qj, en(et({
       selected: t,
       route: Q.Z5c.FAMILY_CENTER,
-      icon: f.BFJ,
+      icon: g.BFJ,
       text: n,
       onMouseEnter: () => {
         a(!0)
@@ -254,7 +254,7 @@ let ei = e => {
       "aria-label": $.NW.string($.t.cpT0Cg)
     }) : i > 0 ? (0, r.jsx)("div", {
       className: ee.familyCenterPendingBadge,
-      children: (0, r.jsx)(f.mAB, {
+      children: (0, r.jsx)(g.mAB, {
         count: i
       })
     }) : (0, r.jsx)(I.ZP, {
@@ -263,7 +263,7 @@ let ei = e => {
         let {
           visibleContent: t
         } = e;
-        return t === p.z.FAMILY_CENTER_NEW_BADGE ? (0, r.jsx)(f.IGR, {
+        return t === p.z.FAMILY_CENTER_NEW_BADGE ? (0, r.jsx)(g.IGR, {
           text: $.NW.string($.t.y2b7CA),
           color: v.Z.BG_BRAND
         }) : null
@@ -295,7 +295,7 @@ let ep = i.memo(function(e) {
     shouldShowFamilyCenterRow: d,
     shouldShowQuickLauncherRow: p,
     selectedChannelId: h,
-    path: g
+    path: f
   } = e;
   return (0, r.jsxs)("nav", {
     className: ee.privateChannels,
@@ -308,10 +308,10 @@ let ep = i.memo(function(e) {
         className: o()(ee.searchBar, {
           [ee.themedHeaderMobile]: u.tq
         }),
-        children: a ? (0, r.jsx)(f.zxk, {
+        children: a ? (0, r.jsx)(g.zxk, {
           grow: !0,
-          color: f.zxk.Colors.PRIMARY,
-          size: f.zxk.Sizes.SMALL,
+          color: g.zxk.Colors.PRIMARY,
+          size: g.zxk.Sizes.SMALL,
           fullWidth: !0,
           onClick: eu,
           children: $.NW.string($.t.LzcpeX)
@@ -325,18 +325,18 @@ let ep = i.memo(function(e) {
         })
       })
     }), (0, r.jsxs)(K.Z, en(et({}, e), {
-      version: g,
+      version: f,
       selectedChannelId: h,
       showDMHeader: !0,
       children: [(0, r.jsx)(ei, {
-        selected: null != g ? g === Q.Z5c.FRIENDS : i === Q.Z5c.FRIENDS
+        selected: null != f ? f === Q.Z5c.FRIENDS : i === Q.Z5c.FRIENDS
       }, "friends"), n && t ? (0, r.jsx)(el, {
-        selected: null == g ? null != i && i.startsWith(Q.Z5c.APPLICATION_LIBRARY) : g.startsWith(Q.Z5c.APPLICATION_LIBRARY),
+        selected: null == f ? null != i && i.startsWith(Q.Z5c.APPLICATION_LIBRARY) : f.startsWith(Q.Z5c.APPLICATION_LIBRARY),
         hideGameUpdateProgressIndicator: i === Q.Z5c.APPLICATION_LIBRARY
       }, "library") : null, c ? (0, r.jsx)(ea, {
-        selected: null == g ? null != i && i.startsWith(Q.Z5c.MESSAGE_REQUESTS) : g === Q.Z5c.MESSAGE_REQUESTS
+        selected: null == f ? null != i && i.startsWith(Q.Z5c.MESSAGE_REQUESTS) : f === Q.Z5c.MESSAGE_REQUESTS
       }, "message-requests") : null, s ? (0, r.jsx)(w.g, {
-        selected: null == g ? l : g.startsWith(Q.Z5c.APPLICATION_STORE),
+        selected: null == f ? l : f.startsWith(Q.Z5c.APPLICATION_STORE),
         route: Q.Z5c.APPLICATION_STORE,
         locationState: {
           analyticsSource: {
@@ -346,7 +346,7 @@ let ep = i.memo(function(e) {
           }
         }
       }, "premium") : null, (0, r.jsx)(N.i, {
-        selected: g === Q.Z5c.COLLECTIBLES_SHOP || (null == i ? void 0 : i.startsWith(Q.Z5c.COLLECTIBLES_SHOP)),
+        selected: f === Q.Z5c.COLLECTIBLES_SHOP || (null == i ? void 0 : i.startsWith(Q.Z5c.COLLECTIBLES_SHOP)),
         locationState: {
           analyticsSource: {
             page: ed(i),
@@ -355,7 +355,7 @@ let ep = i.memo(function(e) {
           }
         }
       }, "discord-shop"), d ? (0, r.jsx)(es, {
-        selected: null != i && i.startsWith(Q.Z5c.FAMILY_CENTER) || null != g && g.startsWith(Q.Z5c.FAMILY_CENTER)
+        selected: null != i && i.startsWith(Q.Z5c.FAMILY_CENTER) || null != f && f.startsWith(Q.Z5c.FAMILY_CENTER)
       }, "family-center") : null, a ? (0, r.jsx)(eh, {}, "section-divider-top") : null, p ? (0, r.jsx)(O.Z, {
         bottomDivider: a ? (0, r.jsx)(eh, {}) : null
       }, "dm-quick-launcher") : null]
@@ -369,7 +369,7 @@ function eh() {
   })
 }
 
-function ef() {
+function eg() {
   let e = (0, d.e7)([H.Z], () => H.Z.getHomeLink()),
     t = (0, d.e7)([B.Z], () => {
       if (e === Q.Z5c.APPLICATION_STORE) return !0;
@@ -400,12 +400,12 @@ function ef() {
       selected: null == u ? t : u.startsWith(Q.Z5c.APPLICATION_STORE)
     }),
     h = (0, T.a)(),
-    f = function() {
+    g = function() {
       let e = G.Ex.useSetting(),
         t = (0, P.Z)();
       return !0 === e && !0 === t
     }(),
-    g = (0, E.FW)();
+    f = (0, E.FW)();
   return (0, r.jsx)(ep, {
     theme: i,
     showLibrary: n,
@@ -416,8 +416,8 @@ function ef() {
     isVisualRefreshEnabled: s,
     shouldShowNitroTab: p,
     shouldShowMessageRequestsRow: h,
-    shouldShowFamilyCenterRow: f,
-    shouldShowQuickLauncherRow: g,
+    shouldShowFamilyCenterRow: g,
+    shouldShowQuickLauncherRow: f,
     selectedChannelId: c,
     path: u
   })

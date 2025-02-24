@@ -36,27 +36,23 @@ let w = (0, g.IC)(90),
     } = e, {
       analyticsLocations: r
     } = (0, u.ZP)(), l = i.useRef(null), o = (0, s.e7)([h.default], () => h.default.getCurrentUser());
-    return m.ZP.canUseCollectibles(o) ? (0, n.jsx)(n.Fragment, {
-      children: t.summary
-    }) : (0, n.jsx)(n.Fragment, {
-      children: P.NW.format(P.t["9hafRk"], {
-        getPremium: e => (0, n.jsx)(c.P3F, {
-          innerRef: l,
-          className: S.getPremiumHook,
-          onClick: () => {
-            (0, f.Z)({
-              subscriptionTier: k.Si.TIER_2,
-              analyticsLocations: r,
-              returnRef: l
-            })
-          },
-          tag: "span",
-          children: (0, n.jsx)(c.Text, {
-            variant: "text-md/normal",
-            color: "always-white",
-            tag: "span",
-            children: e
+    return m.ZP.canUseCollectibles(o) ? t.summary : P.NW.format(P.t["9hafRk"], {
+      getPremium: e => (0, n.jsx)(c.P3F, {
+        innerRef: l,
+        className: S.getPremiumHook,
+        onClick: () => {
+          (0, f.Z)({
+            subscriptionTier: k.Si.TIER_2,
+            analyticsLocations: r,
+            returnRef: l
           })
+        },
+        tag: "span",
+        children: (0, n.jsx)(c.Text, {
+          variant: "text-md/normal",
+          color: "always-white",
+          tag: "span",
+          children: e
         })
       })
     })

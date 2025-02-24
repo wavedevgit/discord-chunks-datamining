@@ -10,17 +10,17 @@ var r, i, l, o = n(442837),
   d = n(496675),
   p = n(135899),
   h = n(981631);
-let f = "publicUpsellChannelNoticeGuilds",
-  g = new Set;
+let g = "publicUpsellChannelNoticeGuilds",
+  f = new Set;
 class m extends(r = o.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(d.Z, u.Z, c.Z), this.syncWith([d.Z, u.Z, c.Z], h.dG4), g = e = new Set(a.K.get(f))
+    this.waitFor(d.Z, u.Z, c.Z), this.syncWith([d.Z, u.Z, c.Z], h.dG4), f = e = new Set(a.K.get(g))
   }
   isVisible(e) {
     if (null == e) return;
     let t = c.Z.getMemberCount(e.id);
-    return !g.has(e.id) && null != t && t >= p.U3 && d.Z.can(h.Plq.ADMINISTRATOR, e) && !e.hasFeature(h.oNc.COMMUNITY)
+    return !f.has(e.id) && null != t && t >= p.U3 && d.Z.can(h.Plq.ADMINISTRATOR, e) && !e.hasFeature(h.oNc.COMMUNITY)
   }
 }
 l = "EnablePublicGuildUpsellNoticeStore", (i = "displayName") in m ? Object.defineProperty(m, i, {
@@ -32,6 +32,6 @@ l = "EnablePublicGuildUpsellNoticeStore", (i = "displayName") in m ? Object.defi
 let b = new m(s.Z, {
   PUBLIC_UPSELL_NOTICE_DISMISS: function(e) {
     let t = e.guildId;
-    if (!g.has(t)) return g.add(t), a.K.set(f, g), !0
+    if (!f.has(t)) return f.add(t), a.K.set(g, f), !0
   }
 })

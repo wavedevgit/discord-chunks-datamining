@@ -21,8 +21,8 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let f = "CollectiblesExpiryModal";
-class g extends o.Z {
+let g = "CollectiblesExpiryModal";
+class f extends o.Z {
   _initialize() {
     l.Z.subscribe("POST_CONNECTION_OPEN", this.handleMaybeOpenModal), l.Z.subscribe("CURRENT_USER_UPDATE", this.handleMaybeOpenModal)
   }
@@ -38,13 +38,13 @@ class g extends o.Z {
       ("1251324401459265537" === r || "1252353273256480818" === r) && (i = 0x66e24cff), null != i && (0, d.v)("CollectiblesExpiryManager") && (this.maybeOpenModal() || (null != this.timeout && clearTimeout(this.timeout), this.timeout = setTimeout(this.maybeOpenModal, 1e3 * i - Date.now() + 1e3)))
     }), h(this, "maybeOpenModal", () => {
       var e, t, l, o, d;
-      let g = s.default.getCurrentUser(),
+      let f = s.default.getCurrentUser(),
         m = a.Z.getState(),
-        b = null == g ? void 0 : null === (e = g.avatarDecoration) || void 0 === e ? void 0 : e.skuId,
-        _ = null == g ? void 0 : null === (t = g.avatarDecoration) || void 0 === t ? void 0 : t.expiresAt;
-      if (("1251324401459265537" === b || "1252353273256480818" === b) && (_ = 0x66e24cff), null == g) return !1;
-      let E = c.Z.getVoiceStateForUser(g.id);
-      return null != _ && 1e3 * _ < Date.now() && m !== p.hes.RTC_CONNECTED ? ((0, i.Mr3)(f), (0, i.ZDy)(async () => {
+        b = null == f ? void 0 : null === (e = f.avatarDecoration) || void 0 === e ? void 0 : e.skuId,
+        _ = null == f ? void 0 : null === (t = f.avatarDecoration) || void 0 === t ? void 0 : t.expiresAt;
+      if (("1251324401459265537" === b || "1252353273256480818" === b) && (_ = 0x66e24cff), null == f) return !1;
+      let E = c.Z.getVoiceStateForUser(f.id);
+      return null != _ && 1e3 * _ < Date.now() && m !== p.hes.RTC_CONNECTED ? ((0, i.Mr3)(g), (0, i.ZDy)(async () => {
         let {
           default: e
         } = await n.e("77370").then(n.bind(n, 83950));
@@ -75,7 +75,7 @@ class g extends o.Z {
           }), n))
         }
       }, {
-        modalKey: f
+        modalKey: g
       }), u.Z.captureMessage("Collectible expiry modal shown"), !0) : (("1251324401459265537" === b || "1252353273256480818" === b) && u.Z.captureMessage("Collectible expiry modal not shown", {
         tags: {
           isExpired: (null != _ && 1e3 * _ < Date.now()).toString(),
@@ -88,4 +88,4 @@ class g extends o.Z {
     })
   }
 }
-let m = new g
+let m = new f

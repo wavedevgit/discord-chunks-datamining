@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 }), n(47120);
 var r, i, l, o = n(442837),
   a = n(570140),
@@ -17,7 +17,7 @@ function p(e) {
 function h() {
   return !0
 }
-class f extends(r = o.ZP.Store) {
+class g extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(c.Z, s.Z), this.syncWith([s.Z], h)
   }
@@ -25,13 +25,13 @@ class f extends(r = o.ZP.Store) {
     return !!e.hasFeature(u.oNc.LINKED_TO_HUB) && !d
   }
 }
-l = "HubLinkNoticeStore", (i = "displayName") in f ? Object.defineProperty(f, i, {
+l = "HubLinkNoticeStore", (i = "displayName") in g ? Object.defineProperty(g, i, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : f[i] = l;
-let g = new f(a.Z, {
+}) : g[i] = l;
+let f = new g(a.Z, {
   CONNECTION_OPEN: function(e) {
     for (let t of e.guilds)
       if (p(t.id)) return !0;

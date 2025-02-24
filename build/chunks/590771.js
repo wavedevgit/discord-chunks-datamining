@@ -14,7 +14,7 @@ var r = n(200651),
   p = n(149788),
   h = n(128449);
 
-function f(e) {
+function g(e) {
   let {
     onScroll: t,
     onGuildCardSeen: n,
@@ -42,18 +42,18 @@ function f(e) {
   })
 }
 
-function g(e) {
+function f(e) {
   let {
     tab: t,
     onScroll: n,
     onGuildCardSeen: o,
     onGuildCardClick: a
-  } = e, p = (0, u.lg)(t), f = (0, l.e7)([c.Z], () => {
+  } = e, p = (0, u.lg)(t), g = (0, l.e7)([c.Z], () => {
     var e;
     return null !== (e = c.Z.getGuildIds({
       categoryId: p
     })) && void 0 !== e ? e : h.q5
-  }), g = (0, l.e7)([c.Z], () => {
+  }), f = (0, l.e7)([c.Z], () => {
     var e;
     return null === (e = c.Z.getIsFetching({
       categoryId: p
@@ -65,8 +65,8 @@ function g(e) {
     })
   }, [p]), (0, r.jsx)(d.Z, {
     tab: t,
-    guildIds: f,
-    loading: g,
+    guildIds: g,
+    loading: f,
     onScroll: n,
     onGuildCardSeen: o,
     onGuildCardClick: a
@@ -87,7 +87,7 @@ function m(e) {
       })
     }, [t]), t) {
     case h.vf.FEATURED:
-      return (0, r.jsx)(f, {
+      return (0, r.jsx)(g, {
         tab: t,
         onScroll: n,
         onGuildCardClick: s,
@@ -98,7 +98,7 @@ function m(e) {
     case h.vf.ENTERTAINMENT:
     case h.vf.TECH:
     case h.vf.EDUCATION:
-      return (0, r.jsx)(g, {
+      return (0, r.jsx)(f, {
         tab: t,
         onScroll: n,
         onGuildCardClick: s,

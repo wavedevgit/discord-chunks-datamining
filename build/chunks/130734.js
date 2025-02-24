@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 });
 var r, i = n(442837),
   l = n(433517),
@@ -52,7 +52,7 @@ function h(e) {
     [t]: !1
   })
 }
-class f extends(r = i.ZP.Store) {
+class g extends(r = i.ZP.Store) {
   shouldShowGuildTemplateDirtyTooltip(e) {
     var t;
     return null !== (t = d[e]) && void 0 !== t && t
@@ -61,8 +61,8 @@ class f extends(r = i.ZP.Store) {
     return !p
   }
 }
-a(f, "displayName", "GuildTemplateTooltipStore");
-let g = new f(o.Z, {
+a(g, "displayName", "GuildTemplateTooltipStore");
+let f = new g(o.Z, {
   GUILD_TEMPLATE_DIRTY_TOOLTIP_REFRESH: function(e) {
     let {
       guildTemplate: t

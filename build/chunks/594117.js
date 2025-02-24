@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
@@ -74,7 +74,7 @@ function h(e) {
   })
 }
 
-function f(e) {
+function g(e) {
   let {
     channel: t
   } = e;
@@ -90,13 +90,13 @@ function f(e) {
   })
 }
 
-function g(e) {
+function f(e) {
   let {
     channel: t
   } = e;
   return t.isGuildStageVoice() ? (0, r.jsx)(h, {
     channel: t
-  }) : (0, r.jsx)(f, {
+  }) : (0, r.jsx)(g, {
     channel: t
   })
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => M
+  Z: () => k
 });
 var r = n(200651),
   i = n(192379),
@@ -24,10 +24,10 @@ var r = n(200651),
   x = n(502762),
   j = n(952124),
   O = n(544989),
-  N = n(481932),
-  E = n(272510),
-  P = n(4517),
-  I = n(171368),
+  E = n(481932),
+  N = n(272510),
+  I = n(4517),
+  P = n(171368),
   S = n(348540),
   Z = n(179142),
   T = n(228168),
@@ -35,7 +35,7 @@ var r = n(200651),
   w = n(388032),
   R = n(666820);
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,11 +54,11 @@ function k(e) {
   return e
 }
 
-function M(e) {
+function k(e) {
   let {
     user: t,
     currentUser: n,
-    channel: M
+    channel: k
   } = e, L = __OVERLAY__, D = (0, g.ZP)(t.id), W = (0, c.ZP)(), U = (0, b.Z)({
     user: t,
     currentUser: n,
@@ -66,7 +66,7 @@ function M(e) {
   }), B = (0, f.ZB)({
     layout: U ? "SIMPLIFIED_DM_PANEL" : "SIMPLIFIED_DM_PANEL_RESTRICTED_BLOCKER_PROFILE",
     userId: t.id,
-    channelId: M.id
+    channelId: k.id
   }), {
     analyticsLocations: F
   } = (0, d.ZP)(u.Z.PROFILE_PANEL), H = i.useRef(null), G = (0, s.Z)(H), V = (0, _.$m)(), z = (0, a.q_F)({
@@ -75,7 +75,7 @@ function M(e) {
       duration: 150
     }
   }), q = e => {
-    (0, I.openUserProfileModal)(k({
+    (0, P.openUserProfileModal)(M({
       sourceAnalyticsLocations: F
     }, B, e))
   };
@@ -97,13 +97,13 @@ function M(e) {
           }), (0, r.jsxs)(o.u2, {
             children: [(0, r.jsxs)(O.Z, {
               profileType: T.y0.PANEL,
-              children: [(0, r.jsx)(N.Z, {
+              children: [(0, r.jsx)(E.Z, {
                 user: t,
                 profileType: T.y0.PANEL,
                 shouldShowTooltip: null === V.interactionType
               }), t.bot ? (0, r.jsx)(j.Z, {
                 user: t
-              }) : (0, r.jsx)(E.Z, {
+              }) : (0, r.jsx)(N.Z, {
                 user: t
               })]
             }), (0, r.jsxs)("header", {
@@ -121,13 +121,13 @@ function M(e) {
                 location: "UserProfilePanel",
                 user: t,
                 displayProfile: D,
-                channelId: M.id,
+                channelId: k.id,
                 profileType: T.y0.PANEL,
                 onOpenProfile: L ? void 0 : q
-              }), (0, r.jsx)(P.Z, {
+              }), (0, r.jsx)(I.Z, {
                 location: "UserProfilePanel",
                 user: t,
-                channelId: M.id,
+                channelId: k.id,
                 profileType: T.y0.PANEL
               }), t.isClyde() && (0, r.jsx)(p.Z, {
                 className: R.headerTag
@@ -136,7 +136,7 @@ function M(e) {
               user: t,
               currentUser: n,
               displayProfile: D,
-              channel: M,
+              channel: k,
               isHovering: null == V.interactionType && G,
               onOpenProfile: L ? void 0 : q
             }), (0, r.jsx)(Z.Z, {
@@ -150,7 +150,7 @@ function M(e) {
               look: a.zxk.Looks.BLANK,
               color: R.footerButtonColor,
               onClick: () => {
-                q(), (0, m.pQ)(k({
+                q(), (0, m.pQ)(M({
                   action: "PRESS_VIEW_PROFILE",
                   analyticsLocations: F
                 }, B))

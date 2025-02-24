@@ -21,18 +21,18 @@ var i, l, o, a = n(392711),
   x = n(981631);
 let j = !1,
   O = "",
-  N = 0,
-  E = [],
-  P = !1,
-  I = new Set,
+  E = 0,
+  N = [],
+  I = !1,
+  P = new Set,
   S = null;
 
 function Z() {
-  O = "", N = 0, E = [], I = new Set, j = !1, S = null
+  O = "", E = 0, N = [], P = new Set, j = !1, S = null
 }
 
 function T(e) {
-  O = e, N = 0, A()
+  O = e, E = 0, A()
 }
 
 function A() {
@@ -41,7 +41,7 @@ function A() {
   if (0 === O.trim().length) {
     var t;
     let n;
-    return null != r && r.clearQuery(), t = e, n = v.Z.getFriendIDs(), (null == t ? void 0 : t.isPrivate()) && (n = n.filter(e => !t.recipients.includes(e))), E = n.reduce((e, t) => {
+    return null != r && r.clearQuery(), t = e, n = v.Z.getFriendIDs(), (null == t ? void 0 : t.isPrivate()) && (n = n.filter(e => !t.recipients.includes(e))), N = n.reduce((e, t) => {
       let n = y.default.getUser(t);
       return null == n || n.isProvisional || e.push({
         user: n,
@@ -74,8 +74,8 @@ function A() {
 
 function w() {
   if (!j) return !1;
-  let e = P;
-  return (P = s().some(v.Z.getRelationships(), e => e === x.OGo.FRIEND)) !== e
+  let e = I;
+  return (I = s().some(v.Z.getRelationships(), e => e === x.OGo.FRIEND)) !== e
 }
 
 function R(e, t) {
@@ -88,7 +88,7 @@ function R(e, t) {
   return (0, m._I)(g.ZP.getName(e.user).toLocaleLowerCase()).localeCompare((0, m._I)(g.ZP.getName(t.user).toLocaleLowerCase()))
 }
 
-function k(e) {
+function M(e) {
   let {
     results: t
   } = e;
@@ -105,16 +105,16 @@ function k(e) {
       comparator: r
     })
   }
-  E = n, B.emitChange()
+  N = n, B.emitChange()
 }
 
-function M() {
-  return null != r && (r.destroy(), r = null), d.Z.getSearchContext(k, 1e3)
+function k() {
+  return null != r && (r.destroy(), r = null), d.Z.getSearchContext(M, 1e3)
 }
 
 function L(e) {
   if (e.key !== x.vTt) return !1;
-  j = !0, w(), r = M(), S = null, T("")
+  j = !0, w(), r = k(), S = null, T("")
 }
 
 function D(e) {
@@ -130,13 +130,13 @@ class U extends(i = c.ZP.Store) {
     this.waitFor(y.default, b.Z, v.Z, p.Z, _.Z), this.syncWith([y.default, b.Z], A), this.syncWith([v.Z], w)
   }
   getResults() {
-    return E
+    return N
   }
   hasFriends() {
-    return P
+    return I
   }
   getSelectedUsers() {
-    return I
+    return P
   }
   getQuery() {
     return O
@@ -144,10 +144,10 @@ class U extends(i = c.ZP.Store) {
   getState() {
     return {
       query: O,
-      selectedRow: N,
-      selectedUsers: I,
-      results: E,
-      hasFriends: P
+      selectedRow: E,
+      selectedUsers: P,
+      results: N,
+      hasFriends: I
     }
   }
 }
@@ -173,7 +173,7 @@ let B = new U(u.Z, {
     MODAL_PUSH: L,
     SHOW_ACTION_SHEET: L,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      j = !0, w(), r = M(), S = e.channelId, T("")
+      j = !0, w(), r = k(), S = e.channelId, T("")
     },
     MODAL_POP: D,
     HIDE_ACTION_SHEET: D,
@@ -182,19 +182,19 @@ let B = new U(u.Z, {
       S = e.channelId, T(e.query)
     },
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
-      N = e.row
+      E = e.row
     },
     PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: function(e) {
       let {
         userId: t
       } = e;
-      I.add(t), I = new Set(I)
+      P.add(t), P = new Set(P)
     },
     PRIVATE_CHANNEL_RECIPIENTS_REMOVE_USER: function(e) {
       let {
         userId: t
       } = e;
-      I.delete(t), I = new Set(I)
+      P.delete(t), P = new Set(P)
     }
   }),
   F = B

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(410575),
   p = n(100527),
   h = n(906732),
-  f = n(835473),
-  g = n(372460),
+  g = n(835473),
+  f = n(372460),
   m = n(327419),
   b = n(795448),
   _ = n(699516),
@@ -105,7 +105,7 @@ let M = function(e) {
   } = (0, a.cj)([_.Z], () => ({
     relationshipCount: _.Z.getRelationshipCount(),
     hasBlockedOrIgnored: _.Z.getBlockedOrIgnoredIDs().length > 0
-  })), G = (0, g.wn)({
+  })), G = (0, f.wn)({
     location: "PeopleList"
   }), W = (0, m.U)({
     location: "PeopleList"
@@ -166,7 +166,7 @@ let M = function(e) {
       null != n && e.push(n)
     }), e
   }, [q, K]);
-  (0, f.Z)(Q, q);
+  (0, g.Z)(Q, q);
   let X = i.useMemo(() => {
       if (c === j.pJs.PENDING) {
         let e = [],

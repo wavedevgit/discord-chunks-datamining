@@ -27,11 +27,11 @@ let O = e => {
   var t;
   let {
     channel: O,
-    guild: N
+    guild: E
   } = e, {
-    currentCategoryId: E,
-    directoryEntries: P,
-    categoryCounts: I,
+    currentCategoryId: N,
+    directoryEntries: I,
+    categoryCounts: P,
     allEntriesCount: S,
     isLoading: Z
   } = (0, l.cj)([m.Z], () => {
@@ -52,7 +52,7 @@ let O = e => {
       (0, s.In)(O.id, !0, !0, e)
     })
   }, [O.id]);
-  let T = i.useMemo(() => null != P ? (0, C.v)(Object.values(P), E) : null, [P, E]),
+  let T = i.useMemo(() => null != I ? (0, C.v)(Object.values(I), N) : null, [I, N]),
     {
       mostRecentQuery: A,
       searchFetching: w,
@@ -68,12 +68,12 @@ let O = e => {
         searchResults: f.Z.getSearchResults(O.id, e)
       }
     }),
-    [k, M] = i.useState(A),
+    [M, k] = i.useState(A),
     L = "" !== A,
     {
       showHubEventsList: D
     } = c.Z.useExperiment({
-      guildId: null !== (t = N.id) && void 0 !== t ? t : "",
+      guildId: null !== (t = E.id) && void 0 !== t ? t : "",
       location: "6f7fb0_1"
     }, {
       autoTrackExposure: !1
@@ -90,14 +90,14 @@ let O = e => {
       mostRecentQuery: e,
       showHubEventsList: t
     } = U.current;
-    h.c$(O.id), h.YZ(O.id), t && p.c(O.id), M(e)
+    h.c$(O.id), h.YZ(O.id), t && p.c(O.id), k(e)
   }, [O.id]), i.useEffect(() => {
     d.default.track(x.rMx.GUILD_DIRECTORY_CHANNEL_VIEWED, {
       directory_channel_id: O.id,
-      directory_guild_id: N.id,
-      primary_category_id: E
+      directory_guild_id: E.id,
+      primary_category_id: N
     })
-  }, [O.id, N.id, E]);
+  }, [O.id, E.id, N]);
   let B = (0, g.G)(O) ? () => {
       (0, o.ZDy)(async () => {
         let {
@@ -123,10 +123,10 @@ let O = e => {
             }
             return e
           }({}, t), i = i = {
-            directoryGuildName: N.name,
-            directoryGuildId: N.id,
+            directoryGuildName: E.name,
+            directoryGuildId: E.id,
             directoryChannelId: O.id,
-            currentCategoryId: E === y.AR.ALL ? null : E
+            currentCategoryId: N === y.AR.ALL ? null : N
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -141,47 +141,47 @@ let O = e => {
       })
     } : void 0,
     F = e => {
-      0 !== k.trim().length && e.charCode === x.yXg.ENTER && (h.Rq(O.id, k), d.default.track(x.rMx.GUILD_DIRECTORY_SEARCH, {
+      0 !== M.trim().length && e.charCode === x.yXg.ENTER && (h.Rq(O.id, M), d.default.track(x.rMx.GUILD_DIRECTORY_SEARCH, {
         directory_channel_id: O.id,
-        directory_guild_id: N.id
+        directory_guild_id: E.id
       }))
     },
     H = () => {
-      M(""), h.So(O.id)
+      k(""), h.So(O.id)
     };
   return L ? (0, r.jsx)(v.Z, {
-    searchQuery: k,
-    setSearchQuery: M,
+    searchQuery: M,
+    setSearchQuery: k,
     mostRecentQuery: A,
     handleSearchKeyPress: F,
     handleClearSearch: H,
     handleCreateOrAddGuild: B,
     searchResults: R,
     searchFetching: w
-  }) : null == T && null == E ? (0, r.jsx)("div", {
+  }) : null == T && null == N ? (0, r.jsx)("div", {
     className: j.pageContainer,
     children: (0, r.jsx)(o.$jN, {
       className: j.spinner
     })
-  }) : (null == T ? void 0 : T.length) === 0 && null == E ? (0, r.jsx)("div", {
+  }) : (null == T ? void 0 : T.length) === 0 && null == N ? (0, r.jsx)("div", {
     className: j.pageContainer,
     children: (0, r.jsx)(b.Z, {
-      guild: N,
+      guild: E,
       onAddGuild: B
     })
   }) : (0, r.jsx)(_.Z, {
     channel: O,
-    searchQuery: k,
-    setSearchQuery: M,
+    searchQuery: M,
+    setSearchQuery: k,
     handleSearchKeyPress: F,
     handleClearSearch: H,
     handleCreateOrAddGuild: B,
-    currentCategoryId: E,
+    currentCategoryId: N,
     handleSelectCategory: e => {
       h.Su(O.id, e)
     },
     directoryEntries: T,
-    categoryCounts: I,
+    categoryCounts: P,
     allEntriesCount: S,
     isLoading: Z
   })

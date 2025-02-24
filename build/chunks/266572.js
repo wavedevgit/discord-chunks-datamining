@@ -14,8 +14,8 @@ var i = n(544891),
   d = n(580130),
   p = n(695103),
   h = n(70956),
-  f = n(998502),
-  g = n(996106),
+  g = n(998502),
+  f = n(996106),
   m = n(186901),
   b = n(981631);
 
@@ -59,31 +59,31 @@ let O = 10 * h.Z.Millis.SECOND,
           socket: t
         } = e, i = t.application.id;
         try {
-          if (null == i) throw new g.Z({
+          if (null == i) throw new f.Z({
             errorCode: b.lTL.INVALID_COMMAND
           }, "No application.");
           let e = c.Z.getApplication(i);
-          if (null == e) throw new g.Z({
+          if (null == e) throw new f.Z({
             errorCode: b.lTL.INVALID_ENTITLEMENT
           }, "SKU does not exist.");
           let t = e.primarySkuId;
-          if (null == t) throw new g.Z({
+          if (null == t) throw new f.Z({
             errorCode: b.lTL.INVALID_ENTITLEMENT
           }, "SKU does not exist.");
           return Promise.race([(function(e, t) {
             let n = d.Z.isEntitledToSku(u.default.getCurrentUser(), e, t);
             return null != n ? Promise.resolve(n) : (0, a.yD)(t).then(() => !0 === d.Z.isEntitledToSku(u.default.getCurrentUser(), e, t))
           })(t, e.id).then(e => {
-            if (!e) throw new g.Z({
+            if (!e) throw new f.Z({
               errorCode: b.lTL.INVALID_ENTITLEMENT
             }, "User does not have entitlement.")
           }), (0, l.GR)(O).then(() => {
-            throw new g.Z({
+            throw new f.Z({
               errorCode: b.lTL.INVALID_ENTITLEMENT
             }, "Timed out fetching entitlement.")
           })])
         } catch (e) {
-          throw e.code === b.lTL.INVALID_ENTITLEMENT && (f.ZP.focus(null, !0), (0, o.ZDy)(async () => {
+          throw e.code === b.lTL.INVALID_ENTITLEMENT && (g.ZP.focus(null, !0), (0, o.ZDy)(async () => {
             let {
               default: e
             } = await n.e("48748").then(n.bind(n, 52004));
@@ -100,7 +100,7 @@ let O = 10 * h.Z.Millis.SECOND,
         let {
           socket: t
         } = e, l = t.application.id;
-        if (null == l) throw new g.Z({
+        if (null == l) throw new f.Z({
           errorCode: b.lTL.INVALID_COMMAND
         }, "No application.");
         return i.tn.post({
@@ -117,7 +117,7 @@ let O = 10 * h.Z.Millis.SECOND,
           } = e;
           return t
         }).catch(e => {
-          throw f.ZP.focus(null, !0), (0, o.ZDy)(async () => {
+          throw g.ZP.focus(null, !0), (0, o.ZDy)(async () => {
             let {
               default: e
             } = await n.e("48748").then(n.bind(n, 52004));

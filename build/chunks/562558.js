@@ -3,19 +3,19 @@ n.d(t, {
   Z: () => a
 }), n(230036);
 var r = n(192379),
-  i = n(835473),
-  l = n(823379);
+  l = n(835473),
+  i = n(823379);
 
 function a(e) {
   let t = e.gameActivity,
     n = function(e) {
-      let t = (0, i.Z)(e.gameApplicationIds);
-      return r.useMemo(() => t.filter(l.lm), [t])
+      let t = (0, l.Z)(e.gameApplicationIds);
+      return r.useMemo(() => t.filter(i.lm), [t])
     }(e),
     a = r.useMemo(() => (n.sort((e, n) => {
-      var r, i, l, a;
-      let o = null !== (l = null === (r = t[e.id]) || void 0 === r ? void 0 : r.score) && void 0 !== l ? l : 0,
-        s = null !== (a = null === (i = t[n.id]) || void 0 === i ? void 0 : i.score) && void 0 !== a ? a : 0;
+      var r, l, i, a;
+      let o = null !== (i = null === (r = t[e.id]) || void 0 === r ? void 0 : r.score) && void 0 !== i ? i : 0,
+        s = null !== (a = null === (l = t[n.id]) || void 0 === l ? void 0 : l.score) && void 0 !== a ? a : 0;
       return o !== s ? s - o : 0
     }), n), [n, t]),
     o = r.useMemo(() => a.slice(0, 5), [a]);

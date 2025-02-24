@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(809206),
   p = n(110924),
   h = n(714338),
-  f = n(213609),
-  g = n(429142),
+  g = n(213609),
+  f = n(429142),
   m = n(144114),
   b = n(210887),
   _ = n(23434),
@@ -65,7 +65,7 @@ function T() {
     action: _.Z.getAction(),
     theme: b.Z.theme
   })), T = E.Z.getVerificationTypes(e), [P, j] = i.useState(0), A = (0, p.Z)(T);
-  (0, f.Z)({
+  (0, g.Z)({
     type: l.ImpressionTypes.MODAL,
     name: l.ImpressionNames.USER_ACTION_REQUIRED,
     properties: {
@@ -81,7 +81,7 @@ function T() {
         return t => (0, r.jsx)(e, C({}, t))
       }, {
         modalKey: N.F0,
-        Layer: g.ZP
+        Layer: f.ZP
       })
     },
     x = () => {
@@ -94,7 +94,7 @@ function T() {
         }, t))
       }, {
         modalKey: y.M,
-        Layer: g.ZP
+        Layer: f.ZP
       })
     };
   return i.useEffect(() => (h.Z.disable(), () => {
@@ -111,7 +111,7 @@ function T() {
       }))
     }, {
       modalKey: N.HR,
-      Layer: g.ZP,
+      Layer: f.ZP,
       onCloseCallback: Z
     })
   }, [T, A]), (0, r.jsx)(O.Z, {
@@ -151,7 +151,7 @@ function T() {
           })
         }))
       }, {
-        Layer: g.ZP
+        Layer: f.ZP
       })
     }
   })

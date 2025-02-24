@@ -1,7 +1,7 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  ZP: () => P,
-  xL: () => E
+  ZP: () => I,
+  xL: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -27,16 +27,16 @@ var r = n(200651),
 let O = (0, a.U)(() => ({
     visible: !1
   })),
-  N = e => {
+  E = e => {
     (0, s.j)(() => {
       O.setState({
         visible: e
       })
     })
   },
-  E = O;
+  N = O;
 
-function P(e) {
+function I(e) {
   let {
     context: t,
     entryPointCommandButtonRef: n,
@@ -60,9 +60,9 @@ function P(e) {
       source: g._b.TEXT
     }))
   }, [c, f]), j = null != C && C.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, O = !o && null != a && !0 === j;
-  return (i.useEffect(() => (N(O), () => {
-    N(!1)
-  }), [O]), O) ? (0, r.jsx)(I, {
+  return (i.useEffect(() => (E(O), () => {
+    E(!1)
+  }), [O]), O) ? (0, r.jsx)(P, {
     context: t,
     application: a,
     primaryEntryPointCommand: s,
@@ -72,7 +72,7 @@ function P(e) {
   }) : null
 }
 
-function I(e) {
+function P(e) {
   let {
     context: t,
     application: n,
@@ -106,11 +106,11 @@ function I(e) {
     channelRecipientUserId: b,
     setIsExecutingLaunchInteraction: _,
     analyticsLocations: y
-  }), N = h ? c.zxk.Colors.RED : c.zxk.Colors.BRAND, E = (0, C.Q3)("LoadedEntryPointCommandButton");
+  }), E = h ? c.zxk.Colors.RED : c.zxk.Colors.BRAND, N = (0, C.Q3)("LoadedEntryPointCommandButton");
   return (0, r.jsx)(c.zxk, {
     className: o()(j.entryPointAppCommandButton, x.Id),
-    size: E ? c.zxk.Sizes.SMALL : c.zxk.Sizes.LARGE,
-    color: N,
+    size: N ? c.zxk.Sizes.SMALL : c.zxk.Sizes.LARGE,
+    color: E,
     submitting: d,
     onClick: O,
     buttonRef: a,

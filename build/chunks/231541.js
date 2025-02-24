@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  M: () => f
+  M: () => g
 });
 var r = n(355467),
   i = n(594174),
@@ -20,7 +20,7 @@ let p = e => {
     let n = null === (t = (0, s.Af)(e)) || void 0 === t ? void 0 : t.planId;
     return void 0 === n || s.ZP.getPremiumType(n) !== d.p9.TIER_2
   };
-async function f(e) {
+async function g(e) {
   let {
     location: t
   } = e;

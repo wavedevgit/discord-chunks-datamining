@@ -24,18 +24,18 @@ var r = n(200651),
   x = n(518738),
   j = n(965376),
   O = n(159299),
-  N = n(184301),
-  E = n(347475),
-  P = n(199902),
-  I = n(271383),
+  E = n(184301),
+  N = n(347475),
+  I = n(199902),
+  P = n(271383),
   S = n(430824),
   Z = n(158776),
   T = n(885110),
   A = n(111583),
   w = n(594174),
   R = n(499033),
-  k = n(626135),
-  M = n(585483),
+  M = n(626135),
+  k = n(585483),
   L = n(700785),
   D = n(51144),
   W = n(998502),
@@ -84,10 +84,10 @@ let q = W.ZP.getEnableHardwareAcceleration(),
       sectionId: l,
       userId: o,
       guildOwnerId: a
-    } = e, s = (0, p.e7)([A.Z], () => A.Z.isTyping(t.id, o)), u = (0, p.e7)([I.ZP], () => I.ZP.getMember(t.guild_id, o)), g = (0, p.e7)([S.Z], () => {
+    } = e, s = (0, p.e7)([A.Z], () => A.Z.isTyping(t.id, o)), u = (0, p.e7)([P.ZP], () => P.ZP.getMember(t.guild_id, o)), g = (0, p.e7)([S.Z], () => {
       var e;
       return (null == u ? void 0 : u.colorRoleId) != null ? null === (e = S.Z.getRole(t.guild_id, u.colorRoleId)) || void 0 === e ? void 0 : e.name : void 0
-    }, [t.guild_id, u]), b = (0, p.e7)([w.default], () => w.default.getUser(o)), _ = (0, p.e7)([w.default], () => w.default.getCurrentUser()), C = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), v = (0, p.e7)([Z.Z, T.Z], () => C ? T.Z.getStatus() : Z.Z.getStatus(o, t.guild_id)), x = (0, p.e7)([Z.Z], () => Z.Z.isMobileOnline(o)), j = (0, p.e7)([Z.Z, T.Z], () => C ? T.Z.getActivities() : Z.Z.getActivities(o, t.guild_id)), R = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(o)), k = (0, c.JA)(o), L = (0, p.e7)([O.Z], () => O.Z.canUserViewChannel(t.id, l, o)), W = (null == b ? void 0 : b.id) != null && b.id === a, H = i.useCallback(e => {
+    }, [t.guild_id, u]), b = (0, p.e7)([w.default], () => w.default.getUser(o)), _ = (0, p.e7)([w.default], () => w.default.getCurrentUser()), C = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), v = (0, p.e7)([Z.Z, T.Z], () => C ? T.Z.getStatus() : Z.Z.getStatus(o, t.guild_id)), x = (0, p.e7)([Z.Z], () => Z.Z.isMobileOnline(o)), j = (0, p.e7)([Z.Z, T.Z], () => C ? T.Z.getActivities() : Z.Z.getActivities(o, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(o)), M = (0, c.JA)(o), L = (0, p.e7)([O.Z], () => O.Z.canUserViewChannel(t.id, l, o)), W = (null == b ? void 0 : b.id) != null && b.id === a, H = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -104,7 +104,7 @@ let q = W.ZP.getEnableHardwareAcceleration(),
           decoration: "never"
         })),
         n = "<@".concat(b.id, ">");
-      M.S.dispatchToLastSubscribed(B.CkL.INSERT_TEXT, {
+      k.S.dispatchToLastSubscribed(B.CkL.INSERT_TEXT, {
         plainText: e,
         rawText: n
       }), m.Z.startTyping(t.id)
@@ -120,11 +120,11 @@ let q = W.ZP.getEnableHardwareAcceleration(),
     if (null == b) return null;
     let K = null == u ? void 0 : u.premiumSince;
     return (0, r.jsx)(h.yRy, {
-      preload: () => (0, N.Z)(b, {
+      preload: () => (0, E.Z)(b, {
         guildId: t.guild_id,
         channelId: t.id
       }),
-      renderPopout: e => (0, r.jsx)(E.Z, z(V({}, e), {
+      renderPopout: e => (0, r.jsx)(N.Z, z(V({}, e), {
         userId: b.id,
         guildId: t.guild_id,
         channelId: t.id
@@ -154,7 +154,7 @@ let q = W.ZP.getEnableHardwareAcceleration(),
           applicationStream: R,
           premiumSince: null == K ? null : new Date(K),
           onClickPremiumGuildIcon: Y,
-          itemProps: k,
+          itemProps: M,
           lostPermissionTooltipText: L ? void 0 : F.NW.string(F.t["/QcoT0"]),
           isOwner: W
         }, e))
@@ -275,7 +275,7 @@ function J(e) {
     }
   }(l, Y), v = 0 === d.length || d.every(e => 0 === e.userIds.length);
   if (i.useEffect(() => {
-      k.default.track(B.rMx.MEMBER_LIST_VIEWED, {
+      M.default.track(B.rMx.MEMBER_LIST_VIEWED, {
         channel_id: t.id,
         channel_type: t.type,
         guild_id: t.guild_id

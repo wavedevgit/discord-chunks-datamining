@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -13,11 +13,11 @@ var r = n(200651),
   d = n(388032),
   p = n(206755);
 let h = (0, c.Q)() || !1,
-  f = i.memo(function(e) {
+  g = i.memo(function(e) {
     let {
       currentRoute: t,
       renderToolbar: n
-    } = e, c = i.useContext(s.AnalyticsContext), f = h || t === u.Z5c.APPLICATION_LIBRARY_SETTINGS;
+    } = e, c = i.useContext(s.AnalyticsContext), g = h || t === u.Z5c.APPLICATION_LIBRARY_SETTINGS;
     return (0, r.jsxs)(o.Z, {
       className: p.libraryHeader,
       toolbar: null == n ? void 0 : n(),
@@ -71,7 +71,7 @@ let h = (0, c.Q)() || !1,
         children: [(0, r.jsx)(l.njP.Item, {
           id: u.Z5c.APPLICATION_LIBRARY,
           children: d.NW.string(d.t.p7ARTE)
-        }), f ? (0, r.jsx)(l.njP.Item, {
+        }), g ? (0, r.jsx)(l.njP.Item, {
           id: u.Z5c.APPLICATION_LIBRARY_SETTINGS,
           children: d.NW.string(d.t["3D5yo6"])
         }) : null]

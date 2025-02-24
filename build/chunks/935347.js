@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(481060),
   p = n(205355),
   h = n(607070),
-  f = n(38618),
-  g = n(197344),
+  g = n(38618),
+  f = n(197344),
   m = n(460181),
   b = n(474873),
   _ = n(706454),
@@ -200,7 +200,7 @@ class P extends i.PureComponent {
       })];
       return _.default.locale.startsWith("en-") && e.push(C.NW.string(C.t.dQ9Wqq)), e[s().random(e.length - 1)]
     }()), T(this, "_eventLoadingText", function() {
-      let e = g.Z.getLoadingTips();
+      let e = f.Z.getLoadingTips();
       if (null != e && e.length > 0) return e[s().random(e.length - 1)]
     }()), T(this, "handleReady", () => {
       this.setState({
@@ -226,9 +226,9 @@ class P extends i.PureComponent {
     }, this._connectedSound.volume = 1
   }
 }
-let j = c.ZP.connectStores([f.Z, E.Z, b.Z, h.Z], () => ({
-  isTryingToConnect: f.Z.isTryingToConnect(),
-  connected: f.Z.isConnected(),
+let j = c.ZP.connectStores([g.Z, E.Z, b.Z, h.Z], () => ({
+  isTryingToConnect: g.Z.isTryingToConnect(),
+  connected: g.Z.isConnected(),
   incident: E.Z.getIncident(),
   soundpack: b.Z.getSoundpack(),
   reducedMotion: h.Z.useReducedMotion

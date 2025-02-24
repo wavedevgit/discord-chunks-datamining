@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => E
+  Z: () => N
 });
 var r = n(200651);
 n(192379);
@@ -47,7 +47,7 @@ function O(e) {
   })
 }
 
-function N(e) {
+function E(e) {
   let {
     channel: t
   } = e, {
@@ -84,14 +84,14 @@ function N(e) {
   })
 }
 
-function E(e) {
+function N(e) {
   let {
     channel: t,
     onContinueClick: n
   } = e, i = (0, o.e7)([b.Z], () => b.Z.can(_.yP, t), [t]), a = (0, u.Q3)("StartStageChannelCallView"), c = t.guild_id, {
     canCreateGuildEvent: d
-  } = (0, m.XJ)(t), E = (0, v.Z)(t.id), {
-    usersInSummary: P
+  } = (0, m.XJ)(t), N = (0, v.Z)(t.id), {
+    usersInSummary: I
   } = (0, C.Z)(t.id);
   return (0, r.jsxs)("div", {
     className: j.container,
@@ -120,7 +120,7 @@ function E(e) {
           variant: a ? "heading-lg/normal" : "text-sm/normal",
           children: x.NW.string(x.t.djfK39)
         })]
-      }), E ? null : (0, r.jsx)(h.Z, {
+      }), N ? null : (0, r.jsx)(h.Z, {
         channelId: t.id
       }), i ? (0, r.jsx)(f.Z, {
         className: j.eventPrompt,
@@ -128,14 +128,14 @@ function E(e) {
       }) : null, d ? (0, r.jsx)(p.Z, {
         className: j.eventPrompt,
         guildId: c
-      }) : null, (i || P.length > 0) && !a && (0, r.jsx)("hr", {
+      }) : null, (i || I.length > 0) && !a && (0, r.jsx)("hr", {
         className: j.separator
       }), i ? (0, r.jsx)(O, {
         className: l()({
           [j.eventPrompt]: a
         }),
         onClick: n
-      }) : null, (0, r.jsx)(N, {
+      }) : null, (0, r.jsx)(E, {
         channel: t
       })]
     })]

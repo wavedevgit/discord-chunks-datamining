@@ -24,10 +24,10 @@ var r = n(200651),
   x = n(430824),
   j = n(979651),
   O = n(664342),
-  N = n(124368),
-  E = n(981631),
-  P = n(388032),
-  I = n(35821);
+  E = n(124368),
+  N = n(981631),
+  I = n(388032),
+  P = n(35821);
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -74,22 +74,22 @@ function T(e) {
         type: "SIDEBAR_CLOSE",
         baseChannelId: e.parent_id
       }), (0, C.ad)(e, {
-        source: N.on.VOICE_AUTO_OPEN
+        source: E.on.VOICE_AUTO_OPEN
       }))
     }, [t, e])
   }(A);
-  let k = i.useRef(!1);
+  let M = i.useRef(!1);
   if (i.useEffect(() => {
-      if (null == A || k.current) return;
-      k.current = !0;
+      if (null == A || M.current) return;
+      M.current = !0;
       let e = (0, p.K)(v.Z.getChannel(A.id), !0);
-      (0, d.yw)(E.rMx.CHANNEL_OPENED, Z(S({}, e, (0, d.$H)(A.id)), {
+      (0, d.yw)(N.rMx.CHANNEL_OPENED, Z(S({}, e, (0, d.$H)(A.id)), {
         channel_view: T
-      })), (0, h.a)(E.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      })), (0, h.a)(N.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: A.id
       })
     }, [A, T]), null == A || null == w) return null;
-  let M = (0, r.jsx)(O.Z, {
+  let k = (0, r.jsx)(O.Z, {
     channel: A,
     baseChannelId: l
   });
@@ -98,8 +98,8 @@ function T(e) {
       channel: A,
       draftType: y.d.ChannelMessage
     }), (0, r.jsx)(b.ZP, {
-      toolbar: M,
-      "aria-label": P.NW.string(P.t.Pwe8tL),
+      toolbar: k,
+      "aria-label": I.NW.string(I.t.Pwe8tL),
       children: (0, _.ud)({
         channel: A,
         channelName: R,
@@ -120,7 +120,7 @@ function T(e) {
         }
       })
     }), (0, r.jsx)("div", {
-      className: I.chat,
+      className: P.chat,
       children: (0, r.jsx)(m.Z, {
         channel: A,
         guild: w,

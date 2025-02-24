@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(377743),
   p = n(834743),
   h = n(862099),
-  f = n(704631),
-  g = n(819792),
+  g = n(704631),
+  f = n(819792),
   m = n(919285),
   b = n(118470),
   _ = n(413307),
@@ -36,7 +36,7 @@ function j(e) {
   var t;
   let {
     guild: n
-  } = e, [u, h] = i.useState(null !== (t = a.K.get(S.Iv)) && void 0 !== t ? t : 0), g = e => {
+  } = e, [u, h] = i.useState(null !== (t = a.K.get(S.Iv)) && void 0 !== t ? t : 0), f = e => {
     a.K.set(S.Iv, e), h(e)
   }, m = (0, l.Wu)(S.HG, () => S.XN.filter(e => {
     let {
@@ -52,11 +52,11 @@ function j(e) {
         visibleContent: t,
         markAsDismissed: i
       } = e, l = () => {
-        g(Date.now()), i(T.L.UNKNOWN)
+        f(Date.now()), i(T.L.UNKNOWN)
       }, a = (() => {
         switch (t) {
           case o.z.CHANNEL_NOTICE_HUBLINK:
-            return (0, r.jsx)(f.Z, {
+            return (0, r.jsx)(g.Z, {
               guild: n,
               markAsDismissed: l
             });
@@ -130,7 +130,7 @@ let A = e => {
         guild: t
       });
     case C.R.HUB_STUDY_ROOM:
-      return (0, r.jsx)(g.Z, {
+      return (0, r.jsx)(f.Z, {
         guild: t
       });
     case C.R.SIGNUP:

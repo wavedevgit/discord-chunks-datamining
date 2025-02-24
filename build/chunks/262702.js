@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 }), n(47120);
 var r = n(570140),
   i = n(846027),
@@ -21,7 +21,7 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class f extends o.Z {
+class g extends o.Z {
   _initialize() {
     r.Z.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
   }
@@ -45,4 +45,4 @@ class f extends o.Z {
     })
   }
 }
-let g = new f
+let f = new g

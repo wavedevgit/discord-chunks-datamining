@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => f
 });
 var r = n(200651),
-  i = n(192379),
-  l = n(120356),
-  a = n.n(l),
+  l = n(192379),
+  i = n(120356),
+  a = n.n(i),
   o = n(97028),
   s = n(481060),
   c = n(686546),
@@ -48,9 +48,9 @@ function v(e) {
   let {
     game: t,
     activityLevel: n,
-    hideTooltip: i
-  } = e, l = t.getIconURL(24);
-  if (null == l) return null;
+    hideTooltip: l
+  } = e, i = t.getIconURL(24);
+  if (null == i) return null;
   let a = (null == n ? void 0 : n.level) === o.m.HIGH,
     u = (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
@@ -61,12 +61,12 @@ function v(e) {
     text: u,
     position: "bottom",
     "aria-label": t.name,
-    shouldShow: !i,
+    shouldShow: !l,
     children: e => (0, r.jsxs)("div", x(m({}, e), {
       className: d.gameIcon,
       children: [(0, r.jsx)("img", {
         className: d.gameIconImage,
-        src: l,
+        src: i,
         alt: t.name
       }), a && (0, r.jsx)(c.ZP, {
         mask: c.QS.GAMEPLAY_HIGH_ACTIVITY_ICON,
@@ -131,10 +131,10 @@ function f(e) {
   let {
     profile: t
   } = e, n = t.gameActivity, {
-    gamesToDisplay: l,
+    gamesToDisplay: i,
     lastGameToDisplay: o,
     remainingGames: c
-  } = (0, u.Z)(t), f = i.useMemo(() => {
+  } = (0, u.Z)(t), f = l.useMemo(() => {
     if (null == o) return null;
     let e = o.getIconURL(24);
     return null == e ? null : 0 === c.length ? (0, r.jsx)(v, {
@@ -165,15 +165,15 @@ function f(e) {
       }))
     })
   }, [o, c, n]);
-  return null == l || 0 === l.length ? null : 1 === l.length ? (0, r.jsx)("div", {
+  return null == i || 0 === i.length ? null : 1 === i.length ? (0, r.jsx)("div", {
     className: d.container,
     children: (0, r.jsx)(h, {
-      game: l[0],
-      activityLevel: n[l[0].id]
+      game: i[0],
+      activityLevel: n[i[0].id]
     })
   }) : (0, r.jsxs)("div", {
     className: d.container,
-    children: [l.map(e => (0, r.jsx)(v, {
+    children: [i.map(e => (0, r.jsx)(v, {
       game: e,
       activityLevel: n[e.id]
     }, e.id)), f]

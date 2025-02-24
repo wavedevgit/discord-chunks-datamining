@@ -15,8 +15,8 @@ var r, i = n(200651),
   d = n(471445),
   p = n(986332),
   h = n(662842),
-  f = n(540059),
-  g = n(703656),
+  g = n(540059),
+  f = n(703656),
   m = n(922482),
   b = n(565799),
   _ = n(501655),
@@ -53,7 +53,7 @@ let V = l.memo(function(e) {
     topic: s,
     onClickCloseIcon: u,
     children: d
-  } = e, p = (0, f.Q3)("GuildNoticeBody");
+  } = e, p = (0, g.Q3)("GuildNoticeBody");
   return (0, i.jsxs)("div", {
     className: W.channelNotice,
     children: [(0, i.jsxs)("div", {
@@ -172,14 +172,14 @@ function F(e) {
   let {
     guildEvent: n,
     noticeType: r
-  } = e, o = (0, f.Q3)("GuildUpcomingEventNotice"), s = (0, R.cS)(n), u = null != s ? (0, Z.m)(s, !0) : null, p = (0, R.nE)(n), h = (0, d.KS)(p), {
-    startTime: g,
+  } = e, o = (0, g.Q3)("GuildUpcomingEventNotice"), s = (0, R.cS)(n), u = null != s ? (0, Z.m)(s, !0) : null, p = (0, R.nE)(n), h = (0, d.KS)(p), {
+    startTime: f,
     endTime: m
   } = (0, L.ZP)(n), {
     startDateTimeString: b,
     upcomingEvent: _,
     diffMinutes: E
-  } = (0, D.ub)(g.toISOString(), null == m ? void 0 : m.toISOString()), O = _ ? E > 0 ? G.NW.formatToPlainString(G.t.PQlCWl, {
+  } = (0, D.ub)(f.toISOString(), null == m ? void 0 : m.toISOString()), O = _ ? E > 0 ? G.NW.formatToPlainString(G.t.PQlCWl, {
     minutes: E
   }) : G.NW.string(G.t.WINqKS) : G.NW.formatToPlainString(G.t.DC6h3N, {
     date: b
@@ -308,7 +308,7 @@ function K(e) {
     fullWidth: !0,
     className: W.joinButton,
     onClick: () => {
-      null != t && null != t.getGuildId() && ((0, m.Cq)(t), (0, g.XU)(t.getGuildId(), t.id))
+      null != t && null != t.getGuildId() && ((0, m.Cq)(t), (0, f.XU)(t.getGuildId(), t.id))
     },
     color: c.zxk.Colors.GREEN,
     size: c.zxk.Sizes.SMALL,
@@ -359,16 +359,16 @@ function X(e) {
     channel: t,
     speakers: n,
     voiceType: r
-  } = e, o = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([v.Z], () => v.Z.can(U.Plq.CONNECT, t)), h = (0, N.Z)(t.id), f = G.NW.string(G.t.VJlc0d);
+  } = e, o = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([v.Z], () => v.Z.can(U.Plq.CONNECT, t)), h = (0, N.Z)(t.id), g = G.NW.string(G.t.VJlc0d);
   switch (r) {
     case 1:
-      f = G.NW.string(G.t.VJlc0d);
+      g = G.NW.string(G.t.VJlc0d);
       break;
     case 2:
-      f = G.NW.string(G.t.ZYO5OD), (null == h ? void 0 : h.speaker) ? f = G.NW.string(G.t["/cnSFR"]) : null != h && (f = G.NW.string(G.t.btSGOj));
+      g = G.NW.string(G.t.ZYO5OD), (null == h ? void 0 : h.speaker) ? g = G.NW.string(G.t["/cnSFR"]) : null != h && (g = G.NW.string(G.t.btSGOj));
       break;
     case 3:
-      f = G.NW.string(G.t.wBoE6O);
+      g = G.NW.string(G.t.wBoE6O);
       break;
     default:
       (0, C.vE)(r)
@@ -389,7 +389,7 @@ function X(e) {
       })]
     }) : null, p && null == h && (0, i.jsx)(K, {
       channel: t,
-      label: f
+      label: g
     })]
   })
 }
@@ -408,14 +408,14 @@ let J = l.memo(function(e) {
     isEventNoticeHidden: j.Z.isLiveChannelNoticeHidden({
       eventId: null == l ? void 0 : l.id
     })
-  }), [a, l]), d = null, f = null != a && null != r && !c;
+  }), [a, l]), d = null, g = null != a && null != r && !c;
   if (n) return (0, i.jsx)(h.Z, {
     guild: t
   });
-  null == l || u ? f && (d = (0, i.jsx)(q, {
+  null == l || u ? g && (d = (0, i.jsx)(q, {
     stageInstance: a,
     channel: r
-  })) : l.entity_type === M.WX.STAGE_INSTANCE && f ? d = (0, i.jsx)(q, {
+  })) : l.entity_type === M.WX.STAGE_INSTANCE && g ? d = (0, i.jsx)(q, {
     stageInstance: a,
     channel: r
   }) : l.entity_type === M.WX.EXTERNAL ? d = (0, i.jsx)(z, {
@@ -424,8 +424,8 @@ let J = l.memo(function(e) {
     guildEvent: l,
     channel: r
   }));
-  let g = t.hasFeature(U.oNc.COMMUNITY) || t.hasFeature(U.oNc.HUB);
-  if (null == d && null != o && !g) {
+  let f = t.hasFeature(U.oNc.COMMUNITY) || t.hasFeature(U.oNc.HUB);
+  if (null == d && null != o && !f) {
     let {
       upcomingEvent: e,
       noticeType: t

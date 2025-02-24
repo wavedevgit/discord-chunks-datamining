@@ -96,13 +96,13 @@ function _(e) {
         modalKey: f.X_
       }), j(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
     }, [t, C, _, j]),
-    N = i.useCallback(() => {
+    E = i.useCallback(() => {
       v(), j(p.NM.USER_BANNER_BLOCK_CONFIRM)
     }, [v, j]),
-    E = i.useCallback(() => {
+    N = i.useCallback(() => {
       v(), j(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
     }, [v, j]),
-    P = i.useCallback(() => {
+    I = i.useCallback(() => {
       (0, a.ZDy)(async () => {
         let {
           default: e
@@ -114,8 +114,8 @@ function _(e) {
           } = n;
           return (0, r.jsx)(e, {
             transitionState: i,
-            onBlock: N,
-            onBlockAndReport: E,
+            onBlock: E,
+            onBlockAndReport: N,
             onCancel: () => {
               null == l || l(), j(p.NM.USER_BANNER_BLOCK_CANCEL)
             },
@@ -125,7 +125,7 @@ function _(e) {
           })
         }
       })
-    }, [N, E, C, t, j]);
+    }, [E, N, C, t, j]);
   return (0, r.jsx)(h.Q, {
     channelId: t,
     warningId: _,
@@ -141,7 +141,7 @@ function _(e) {
     }, ...y ? [] : [{
       text: m.NW.string(m.t["7q0bNT"]),
       color: a.zxk.Colors.PRIMARY,
-      onclick: P
+      onclick: I
     }]]
   })
 }

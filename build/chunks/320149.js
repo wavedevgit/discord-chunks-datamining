@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(333984),
   p = n(26373),
   h = n(486622),
-  f = n(718538),
-  g = n(359110),
+  g = n(718538),
+  f = n(359110),
   m = n(6025),
   b = n(433355),
   _ = n(933557),
@@ -27,8 +27,8 @@ function y(e) {
   let {
     channel: t,
     baseChannelId: n
-  } = e, y = (0, _.ZP)(t), I = (0, p.K)(), C = (0, p.V)(), S = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), T = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), P = (0, f.V)(t.id, t.getRecipientId()), j = i.useCallback(() => {
-    m.Z.closeChannelSidebar(b.uZ), S && I && (0, g.Kh)(t.id), T && C && (0, g.Kh)(t.id)
+  } = e, y = (0, _.ZP)(t), I = (0, p.K)(), C = (0, p.V)(), S = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), T = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), P = (0, g.V)(t.id, t.getRecipientId()), j = i.useCallback(() => {
+    m.Z.closeChannelSidebar(b.uZ), S && I && (0, f.Kh)(t.id), T && C && (0, f.Kh)(t.id)
   }, [t.id, T, C, S, I]), A = i.useCallback(() => {
     (0, o.showToast)((0, o.createToast)(O.NW.string(O.t.pIQ3h4), o.ToastType.FAILURE))
   }, []), {

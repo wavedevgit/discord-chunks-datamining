@@ -24,18 +24,18 @@ var r = n(200651),
   x = n(367907),
   j = n(906732),
   O = n(493324),
-  N = n(611064),
-  E = n(677432),
-  P = n(178762),
-  I = n(868671),
+  E = n(611064),
+  N = n(677432),
+  I = n(178762),
+  P = n(868671),
   S = n(82295),
   Z = n(91218),
   T = n(313201),
   A = n(540059),
   w = n(623624),
   R = n(518738),
-  k = n(570096),
-  M = n(155409),
+  M = n(570096),
+  k = n(155409),
   L = n(184301),
   D = n(347475),
   W = n(662594),
@@ -382,9 +382,9 @@ class ea extends i.Component {
         groups: n,
         channel: l
       } = this.props, o = n[t];
-      return (0, N.R)(o) ? (0, i.createElement)(N.Z, J(Q({}, o), {
+      return (0, E.R)(o) ? (0, i.createElement)(E.Z, J(Q({}, o), {
         key: "section-".concat(t)
-      })) : 0 === t ? (0, r.jsx)(M.Z, {
+      })) : 0 === t ? (0, r.jsx)(k.Z, {
         tutorialId: "whos-online",
         position: "left",
         inlineSpecs: en,
@@ -446,15 +446,15 @@ class ea extends i.Component {
         if (o.type === W.so.CONTENT_INVENTORY) {
           let e = "content-inventory-".concat(o.entry.id);
           null != o.entry.original_id && (e += "-".concat(o.entry.original_id));
-          let t = (0, r.jsx)(P.ZP, J(Q({}, o), {
+          let t = (0, r.jsx)(I.ZP, J(Q({}, o), {
             channel: this.props.channel,
             index: i
           }), e);
-          return o.entry.content_type === p.s.LEADERBOARD ? (0, r.jsx)(k.N, {
+          return o.entry.content_type === p.s.LEADERBOARD ? (0, r.jsx)(M.N, {
             children: t
           }, e) : t
         }
-        if (o.type === W.so.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(E.Z, {}, "content-inventory-hidden-entry")
+        if (o.type === W.so.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(N.Z, {}, "content-inventory-hidden-entry")
       }
       return (0, r.jsx)(eo, {
         index: i
@@ -470,8 +470,8 @@ class ea extends i.Component {
       } = e.getScrollerState();
       this.props.updateMaxContentFeedRowSeen(n + t - 40)
     }, 50)), X(this, "getContentFeedGroup", () => {
-      let e = this.props.groups[I.T];
-      if ((0, N.R)(e)) return e
+      let e = this.props.groups[P.T];
+      if ((0, E.R)(e)) return e
     }), X(this, "hasContentFeed", () => null != this.getContentFeedGroup()), X(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
         {
@@ -482,9 +482,9 @@ class ea extends i.Component {
           rows: n
         } = this.props, r = e.index;
         return function(e, i) {
-          if (e === I.T) {
+          if (e === P.T) {
             let e = n[r + 1 + i];
-            return (0, P.iZ)(e)
+            return (0, I.iZ)(e)
           }
           return t
         }
@@ -517,7 +517,7 @@ class ea extends i.Component {
           rowsVisible: n
         } = this.getDimensions();
       if (void 0 === n || 0 === n || null == t) return;
-      this.hasContentFeed() && (t = t.filter(e => e.section !== I.T));
+      this.hasContentFeed() && (t = t.filter(e => e.section !== P.T));
       let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(G.lm);
       if (0 === r.length) return;
       let i = r.reduce((e, t) => (t.type !== W.so.MEMBER || (e.num_users_visible++, t.isMobileOnline && e.num_users_visible_with_mobile_indicator++, null != t.activities && t.activities.length > 0 && (e.num_users_visible_with_activity++, t.activities.some(e => e.type === q.IIU.PLAYING) && e.num_users_visible_with_game_activity++), null != t.user.avatarDecoration && e.num_users_visible_with_avatar_decoration++), e), {
@@ -543,7 +543,7 @@ function es(e) {
     groups: p,
     version: f,
     updateMaxRowSeen: g
-  } = (0, I.H)({
+  } = (0, P.H)({
     memberStoreProps: s,
     channelId: t.id,
     guildId: t.guild_id
@@ -568,13 +568,13 @@ function es(e) {
         })
       }
     })
-  }, [x]), N = i.useCallback(() => new Promise(e => {
+  }, [x]), E = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), []), E = i.useCallback(() => new Promise(e => {
+  }), []), N = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToBottom({
@@ -582,19 +582,19 @@ function es(e) {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), []), P = (0, u.ZP)({
+  }), []), I = (0, u.ZP)({
     id: "members-".concat(t.id),
     setFocus: O,
     isEnabled: a,
-    scrollToStart: N,
-    scrollToEnd: E
+    scrollToStart: E,
+    scrollToEnd: N
   });
   return (0, r.jsx)(j.Gt, {
     value: l,
     children: (0, r.jsx)("div", {
       className: o()(K.container, n),
       children: (0, r.jsx)(c.bG, {
-        navigator: P,
+        navigator: I,
         children: (0, r.jsx)(ea, J(Q({}, e, s), {
           version: f,
           groups: p,

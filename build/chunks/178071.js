@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f,
+  Z: () => g,
   y: () => p
 }), n(47120);
 var r = n(200651),
@@ -107,7 +107,7 @@ class h extends i.PureComponent {
     })
   }
 }
-let f = l.ZP.connectStores([c.Z], e => {
+let g = l.ZP.connectStores([c.Z], e => {
   let {
     skuId: t
   } = e;

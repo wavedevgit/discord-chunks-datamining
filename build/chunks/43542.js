@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => v
 });
 var r = n(200651),
-  i = n(192379),
-  l = n(442837),
+  l = n(192379),
+  i = n(442837),
   a = n(481060),
   o = n(523751),
   s = n(706454),
@@ -17,7 +17,7 @@ var r = n(200651),
 function v(e) {
   let {
     profile: t
-  } = e, n = (0, l.e7)([s.default], () => s.default.locale), v = (0, d.M)(u.default.extractTimestamp(t.id), n), j = i.useMemo(() => {
+  } = e, n = (0, i.e7)([s.default], () => s.default.locale), v = (0, d.M)(u.default.extractTimestamp(t.id), n), j = l.useMemo(() => {
     let e = new c.ZP(t);
     return (0, r.jsx)(o.Z, {
       guild: e,

@@ -45,17 +45,18 @@ function E(e) {
     onClose: E,
     onSelect: v,
     appContext: b = h.IlC.APP,
-    disableChangeWindows: y = !1
-  } = e, O = null !== (t = s.find(e => e.ownerId === (null == i ? void 0 : i.id))) && void 0 !== t ? t : null, S = g(n, i, s), I = (0, c.Z)(O, b), {
-    enabled: T
+    disableChangeWindows: y = !1,
+    onInteraction: O
+  } = e, S = null !== (t = s.find(e => e.ownerId === (null == i ? void 0 : i.id))) && void 0 !== t ? t : null, I = g(n, i, s), T = (0, c.Z)(S, b), {
+    enabled: N
   } = (0, l.Z)({
     location: "ManageStreamsMenu"
-  }), N = (0, u.b)({
+  }), A = (0, u.b)({
     disableChangeWindows: y,
-    stream: O,
+    stream: S,
     showReportOption: p,
     handleGoLive: _,
-    simplified: T,
+    simplified: N,
     appContext: b
   });
   return (0, r.jsx)(a.Z, {
@@ -64,9 +65,10 @@ function E(e) {
       onSelect: v,
       navId: "manage-streams",
       onClose: E,
-      "aria-label": null != O ? m.NW.string(m.t.S5anIS) : m.NW.string(m.t.fjBNo6),
+      onInteraction: O,
+      "aria-label": null != S ? m.NW.string(m.t.S5anIS) : m.NW.string(m.t.fjBNo6),
       children: [(0, r.jsx)(o.kSQ, {
-        children: S.map(e => {
+        children: I.map(e => {
           let {
             stream: t,
             username: n
@@ -80,11 +82,11 @@ function E(e) {
             action: () => (0, d.Z)(t)
           }, "manage-stream-menu".concat(t.ownerId))
         })
-      }), f ? null : N, T && !f ? (0, r.jsx)(o.kSQ, {
+      }), f ? null : A, N && !f ? (0, r.jsx)(o.kSQ, {
         children: (0, r.jsx)(o.sNh, {
           id: "more-options",
           label: m.NW.string(m.t.PdRCRk),
-          children: I
+          children: T
         })
       }) : null]
     })

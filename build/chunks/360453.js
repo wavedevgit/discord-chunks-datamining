@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -14,11 +14,11 @@ var i = n(442837),
   d = n(981631),
   p = n(388032),
   h = n(571472);
-let f = e => {
+let g = e => {
   let {
     guild: t
-  } = e, n = t.id, f = (0, i.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(t.id));
-  return null == f || 0 >= (0, u._k)(f, n) ? null : (0, r.jsx)(a.Z, {
+  } = e, n = t.id, g = (0, i.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(t.id));
+  return null == g || 0 >= (0, u._k)(g, n) ? null : (0, r.jsx)(a.Z, {
     guild: t,
     onDismissed: () => {
       (0, o.GO)(n)

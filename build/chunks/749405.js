@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  C: () => f
+  C: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -14,18 +14,18 @@ var r = n(200651),
   p = n(388032),
   h = n(310037);
 
-function f(e) {
+function g(e) {
   let {
     active: t,
     user: n,
-    channel: f
-  } = e, g = (0, c.K)(), m = i.useCallback(() => {
+    channel: g
+  } = e, f = (0, c.K)(), m = i.useCallback(() => {
     (0, l.showToast)((0, l.createToast)(p.NW.string(p.t.EDYbS0), l.ToastType.FAILURE))
   }, []), b = i.useCallback(() => {
     a.Z.closeChannelSidebar(s.uZ)
   }, []), _ = i.useCallback(() => {
-    a.Z.closeChannelSidebar(s.uZ), g && (0, o.Kh)(f.id)
-  }, [f.id, g]), {
+    a.Z.closeChannelSidebar(s.uZ), f && (0, o.Kh)(g.id)
+  }, [g.id, f]), {
     acceptMessageRequest: E,
     rejectMessageRequest: O,
     isAcceptLoading: N,
@@ -42,7 +42,7 @@ function f(e) {
   return (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsx)(d.Z, {
-      channel: f,
+      channel: g,
       otherUser: n,
       active: t
     }), (0, r.jsxs)("div", {
@@ -52,7 +52,7 @@ function f(e) {
         color: l.Ttl.PRIMARY,
         size: l.zxk.Sizes.SMALL,
         onClick: e => {
-          e.stopPropagation(), O(f.id)
+          e.stopPropagation(), O(g.id)
         },
         disabled: S,
         submitting: v || C,
@@ -62,7 +62,7 @@ function f(e) {
         color: l.Ttl.BRAND,
         size: l.zxk.Sizes.SMALL,
         onClick: e => {
-          e.stopPropagation(), E(f.id)
+          e.stopPropagation(), E(g.id)
         },
         disabled: S,
         submitting: N || y || I,

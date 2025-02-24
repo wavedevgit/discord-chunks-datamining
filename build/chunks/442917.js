@@ -287,9 +287,7 @@ class el extends i.PureComponent {
       let {
         canSeeParticipantName: e
       } = this.viewProperties;
-      return (0, r.jsx)(r.Fragment, {
-        children: e ? this.renderParticipantName() : null
-      })
+      return e ? this.renderParticipantName() : null
     }), ei(this, "renderBottomRightControls", () => {
       let {
         canSettings: e,

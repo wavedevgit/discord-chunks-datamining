@@ -25,7 +25,7 @@ function b(e) {
     appContext: b,
     exitFullScreen: _,
     onSelect: C
-  } = e, v = (0, i.e7)([s.Z], () => s.Z.getSelectedParticipant(t)), y = (null == v ? void 0 : v.type) === m.fO.STREAM ? v.stream : null, x = (0, i.e7)([o.Z], () => (null == v ? void 0 : v.type) === m.fO.ACTIVITY ? o.Z.getApplication(v.applicationId) : void 0), j = (0, c.Z)(t), O = (0, d.Z)(), N = (0, u.Z)(t), E = (0, f.Z)(t), P = (0, p.Z)(x, t), I = (0, a.Z)({
+  } = e, v = (0, i.e7)([s.Z], () => s.Z.getSelectedParticipant(t)), y = (null == v ? void 0 : v.type) === m.fO.STREAM ? v.stream : null, x = (0, i.e7)([o.Z], () => (null == v ? void 0 : v.type) === m.fO.ACTIVITY ? o.Z.getApplication(v.applicationId) : void 0), j = (0, c.Z)(t), O = (0, d.Z)(), E = (0, u.Z)(t), N = (0, f.Z)(t), I = (0, p.Z)(x, t), P = (0, a.Z)({
     id: null == x ? void 0 : x.id,
     label: g.NW.string(g.t["+NP/b2"])
   });
@@ -34,8 +34,8 @@ function b(e) {
     onClose: n,
     "aria-label": g.NW.string(g.t.pkYeAw),
     onSelect: C,
-    children: [j, O, N, E, (0, h.Z)(y, b, _), P, (0, r.jsx)(l.kSQ, {
-      children: I
+    children: [j, O, E, N, (0, h.Z)(y, b, _), I, (0, r.jsx)(l.kSQ, {
+      children: P
     })]
   })
 }

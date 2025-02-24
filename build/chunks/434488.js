@@ -24,11 +24,11 @@ var r = n(200651),
   x = n(607187),
   j = n(981631),
   O = n(388032),
-  N = n(29983),
-  E = n(359165),
-  P = n(334732);
+  E = n(29983),
+  N = n(359165),
+  I = n(334732);
 
-function I(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -111,7 +111,7 @@ function T(e) {
   return (0, r.jsx)(g.Gt, {
     value: l,
     children: (0, r.jsxs)(x.Z, {
-      className: N.root,
+      className: E.root,
       children: [(0, r.jsx)(c.ua7, {
         text: O.NW.string(O.t.qJvTKS),
         children: e => {
@@ -132,13 +132,13 @@ function T(e) {
             }
             return i
           }(e, ["onClick"]);
-          return (0, r.jsx)(c.P3F, S(I({}, n), {
-            className: N.clickableTile,
+          return (0, r.jsx)(c.P3F, S(P({}, n), {
+            className: E.clickableTile,
             onClick: () => {
               null == t || t(), d()
             },
             children: (0, r.jsx)("div", {
-              className: N.iconContainer,
+              className: E.iconContainer,
               children: (0, r.jsx)(c.gQj, {
                 size: "custom",
                 color: "currentColor",
@@ -152,11 +152,11 @@ function T(e) {
         theme: j.BRd.DARK,
         children: e => (0, r.jsx)(c.P3F, {
           onClick: i,
-          className: o()(e, N.shelfButtonCloseButton),
+          className: o()(e, E.shelfButtonCloseButton),
           children: (0, r.jsx)(c.k$p, {
             size: "md",
             color: "currentColor",
-            className: N.closeButtonIcon,
+            className: E.closeButtonIcon,
             secondaryColor: s.Z.colors.INTERACTIVE_NORMAL.css
           })
         })
@@ -189,7 +189,7 @@ function A(e) {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("33781")]).then(n.bind(n, 560114));
-      return n => (0, r.jsx)(e, S(I({}, n), {
+      return n => (0, r.jsx)(e, S(P({}, n), {
         guild: l,
         channel: t,
         source: j.t4x.ACTIVITY_ENTRY_POINT_TILE
@@ -215,29 +215,29 @@ function A(e) {
       disableAdaptiveTheme: !0,
       theme: j.BRd.MIDNIGHT,
       children: e => (0, r.jsxs)(x.Z, {
-        className: o()(N.root, N.singleUserRoot, e),
+        className: o()(E.root, E.singleUserRoot, e),
         children: [s > 400 && !h ? (0, r.jsx)("img", {
-          src: P,
-          className: N.art,
+          src: I,
+          className: E.art,
           alt: O.NW.string(O.t["3Y9xdH"])
         }) : (0, r.jsx)("img", {
-          src: E,
-          className: N.art,
+          src: N,
+          className: E.art,
           alt: ""
         }), h ? null : (0, r.jsx)(c.Text, {
-          className: N.heading,
+          className: E.heading,
           variant: "text-md/semibold",
           color: "always-white",
           children: O.NW.string(O.t["6pKGKS"])
         }), (0, r.jsxs)("div", {
-          className: N.buttonContainer,
+          className: E.buttonContainer,
           children: [(0, r.jsxs)(c.zxk, {
             size: c.zxk.Sizes.LARGE,
             color: c.zxk.Colors.PRIMARY,
             className: o()({
-              [N.button]: !h
+              [E.button]: !h
             }),
-            innerClassName: N.buttonContents,
+            innerClassName: E.buttonContents,
             onClick: b,
             children: [(0, r.jsx)(c.iFz, {
               size: "xs",
@@ -247,9 +247,9 @@ function A(e) {
             size: c.zxk.Sizes.LARGE,
             color: c.zxk.Colors.PRIMARY,
             className: o()({
-              [N.button]: !h
+              [E.button]: !h
             }),
-            innerClassName: N.buttonContents,
+            innerClassName: E.buttonContents,
             onClick: C,
             children: [(0, r.jsx)(c.nG3, {
               size: "xs",
@@ -276,41 +276,41 @@ function w(e) {
       n_participants: u
     })
   });
-  let E = (0, p.Z)({
+  let N = (0, p.Z)({
       guildId: n.id
     }).slice(0, 3),
     {
-      analyticsLocations: I
+      analyticsLocations: P
     } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_SUGGESTION),
     S = i.useMemo(() => ({
       channel: t,
       type: "channel"
     }), [t]);
   return (0, r.jsx)(g.Gt, {
-    value: I,
+    value: P,
     children: (0, r.jsxs)(x.Z, {
-      className: N.root,
+      className: E.root,
       children: [s > 480 && !f ? (0, r.jsx)("img", {
-        className: N.art,
-        src: P,
+        className: E.art,
+        src: I,
         alt: O.NW.string(O.t["3Y9xdH"])
       }) : null, s > 300 ? (0, r.jsx)(c.Text, {
-        className: N.heading,
+        className: E.heading,
         variant: s > 550 ? "text-md/semibold" : "text-sm/semibold",
         children: O.NW.string(O.t["7BKMcH"])
       }) : null, (0, r.jsx)("div", {
-        className: o()(N.activitiesContainer, {
-          [N.activitiesContainerSmol]: s <= 300
+        className: o()(E.activitiesContainer, {
+          [E.activitiesContainerSmol]: s <= 300
         }),
-        children: E.map(e => (0, r.jsx)(h.Y, {
+        children: N.map(e => (0, r.jsx)(h.Y, {
           context: S,
           activityItem: e,
           aspectRatio: h.Y.AspectRatio.SIXTEEN_BY_NINE,
-          animatedDivClass: N.activitySuggestion,
+          animatedDivClass: E.activitySuggestion,
           commandOrigin: b.bB.VOICE_TILE_ACTIVITY_SUGGESTIONS
         }, e.application.id))
       }), (0, r.jsxs)(c.P3F, {
-        className: N.checkboxContainer,
+        className: E.checkboxContainer,
         onClick: function() {
           y.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
@@ -323,7 +323,7 @@ function w(e) {
           children: O.NW.string(O.t["5E9SBw"])
         })]
       }), (0, r.jsx)(c.P3F, {
-        className: N.closeButtonContainer,
+        className: E.closeButtonContainer,
         onClick: function() {
           y.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
@@ -334,7 +334,7 @@ function w(e) {
         children: (0, r.jsx)(c.Dio, {
           size: "md",
           color: "currentColor",
-          className: N.closeButton
+          className: E.closeButton
         })
       })]
     })

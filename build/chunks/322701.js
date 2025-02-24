@@ -17,15 +17,15 @@ let h = function(e) {
     rows: t,
     renderRow: n,
     renderSection: h,
-    hasSearchQuery: f,
-    sectionFilter: g,
+    hasSearchQuery: g,
+    sectionFilter: f,
     footer: m
   } = e, b = (0, a.e7)([u.Z], () => u.Z.keyboardModeEnabled), _ = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, l.ZP)({
     id: "people",
     isEnabled: b,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), O = g !== d.pJs.ONLINE && g !== d.pJs.ALL, N = _ || f || O, v = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : N ? (0, r.jsxs)("div", {
+  }), O = f !== d.pJs.ONLINE && f !== d.pJs.ALL, N = _ || g || O, v = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : N ? (0, r.jsxs)("div", {
     children: [h(t), e.map(n)]
   }, t) : (0, r.jsxs)(s.W, {
     transitionAppear: !1,

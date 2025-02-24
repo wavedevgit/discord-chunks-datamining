@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -24,10 +24,10 @@ var r = n(200651),
   x = n(287151),
   j = n(569471),
   O = n(346479),
-  N = n(592125),
-  E = n(934415),
-  P = n(456269),
-  I = n(109590),
+  E = n(592125),
+  N = n(934415),
+  I = n(456269),
+  P = n(109590),
   S = n(228392),
   Z = n(981631),
   T = n(388032),
@@ -53,7 +53,7 @@ function R(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,24 +66,24 @@ function k(e, t) {
   }), e
 }
 
-function M(e) {
+function k(e) {
   let {
     postId: t,
     isFirstMessage: n,
     isLastItem: l = !1,
-    parentChannelId: M
+    parentChannelId: k
   } = e, {
     ref: L,
     width: D
-  } = (0, h.Z)(), [W, U] = i.useState(3), [B, F] = i.useState(!n), [H, G] = (0, f.Z)(!1, 2e3), V = (0, s.e7)([N.Z], () => N.Z.getChannel(t), [t]), {
+  } = (0, h.Z)(), [W, U] = i.useState(3), [B, F] = i.useState(!n), [H, G] = (0, f.Z)(!1, 2e3), V = (0, s.e7)([E.Z], () => E.Z.getChannel(t), [t]), {
     firstMessage: z
-  } = (0, I.cl)(V), q = (0, s.e7)([j.Z], () => j.Z.hasJoined(t)), {
+  } = (0, P.cl)(V), q = (0, s.e7)([j.Z], () => j.Z.hasJoined(t)), {
     disableReactionUpdates: Y,
     disableReactionCreates: K,
     isLurking: X,
     isGuest: Q,
     isPendingMember: J
-  } = (0, _.Z)(V), $ = (0, s.e7)([N.Z], () => N.Z.getChannel(M)), ee = (0, P.Bs)($), et = (0, s.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && !0 === n, [t, n]), en = i.useCallback(e => {
+  } = (0, _.Z)(V), $ = (0, s.e7)([E.Z], () => E.Z.getChannel(k)), ee = (0, I.Bs)($), et = (0, s.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && !0 === n, [t, n]), en = i.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -115,7 +115,7 @@ function M(e) {
         location: {
           section: Z.jXE.CHANNEL_HEADER
         }
-      }), (0, a.J)((0, E.EO)(V, $)), G(!0)
+      }), (0, a.J)((0, N.EO)(V, $)), G(!0)
     },
     es = () => {
       d.Z.jumpToMessage({
@@ -182,7 +182,7 @@ function M(e) {
         className: A.buttons,
         children: [(0, r.jsx)(u.ua7, {
           text: T.NW.string(T.t.F7oeDg),
-          children: e => (0, r.jsxs)(u.zxk, k(R({}, e), {
+          children: e => (0, r.jsxs)(u.zxk, M(R({}, e), {
             look: u.zxk.Looks.BLANK,
             size: u.zxk.Sizes.SMALL,
             onClick: eo,
@@ -197,7 +197,7 @@ function M(e) {
           }))
         }), (0, r.jsx)(u.ua7, {
           text: T.NW.string(T.t.WqhZsr),
-          children: e => (0, r.jsxs)(u.zxk, k(R({}, e), {
+          children: e => (0, r.jsxs)(u.zxk, M(R({}, e), {
             look: u.zxk.Looks.BLANK,
             size: u.zxk.Sizes.SMALL,
             onClick: ea,
@@ -217,7 +217,7 @@ function M(e) {
           }))
         }), !n && (0, r.jsx)(u.ua7, {
           text: T.NW.string(T.t.nFP4oa),
-          children: e => (0, r.jsx)(u.zxk, k(R({}, e), {
+          children: e => (0, r.jsx)(u.zxk, M(R({}, e), {
             look: u.zxk.Looks.BLANK,
             size: u.zxk.Sizes.SMALL,
             onClick: es,

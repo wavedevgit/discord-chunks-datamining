@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -45,7 +45,7 @@ let p = e => {
       })]
     })
   };
-class f extends i.Component {
+class g extends i.Component {
   render() {
     let {
       reason: e,

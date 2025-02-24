@@ -20,10 +20,10 @@ let d = function(e) {
     showAccountIdentifier: d,
     status: p,
     isMobile: h,
-    className: f
-  } = e, g = (0, o.e7)([c.Z], () => c.Z.getNickname(t.id));
+    className: g
+  } = e, f = (0, o.e7)([c.Z], () => c.Z.getNickname(t.id));
   return (0, r.jsxs)("div", {
-    className: l()(u.userInfo, f, {
+    className: l()(u.userInfo, g, {
       [u.hovered]: n
     }),
     children: [(0, r.jsx)(s.Z, {
@@ -36,7 +36,7 @@ let d = function(e) {
       className: u.text,
       children: [(0, r.jsx)(a.Z, {
         user: t,
-        nick: g,
+        nick: f,
         botClass: u.botTag,
         className: l()(u.discordTag, {
           [u.alignPomelo]: t.isPomelo()

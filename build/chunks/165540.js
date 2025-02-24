@@ -24,10 +24,10 @@ var r = n(200651),
   x = n(291407),
   j = n(685006),
   O = n(61356),
-  N = n(981631),
-  E = n(314734),
-  P = n(921944),
-  I = n(388032),
+  E = n(981631),
+  N = n(314734),
+  I = n(921944),
+  P = n(388032),
   S = n(387220),
   Z = n(795361);
 let T = i.forwardRef(function(e, t) {
@@ -46,12 +46,12 @@ let T = i.forwardRef(function(e, t) {
     }
   }), [y]);
   let O = i.useCallback(() => {
-    (0, d.yw)(N.rMx.APP_LAUNCHER_ENTRYPOINT_BUTTON_CLICKED), b ? p.yT(f.ti.DISMISSED) : ((0, v.EW)(s.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
-      dismissAction: P.L.TAKE_ACTION
+    (0, d.yw)(E.rMx.APP_LAUNCHER_ENTRYPOINT_BUTTON_CLICKED), b ? p.yT(f.ti.DISMISSED) : ((0, v.EW)(s.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
+      dismissAction: I.L.TAKE_ACTION
     }), p.__(f._b.TEXT, m)), x()
   }, [b, m, x]);
   return (0, r.jsx)("div", {
-    className: o()(S.buttonContainer, E.t4),
+    className: o()(S.buttonContainer, N.t4),
     ref: t,
     children: (0, r.jsx)(u.zxk, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -78,7 +78,7 @@ let T = i.forwardRef(function(e, t) {
         [S.buttonActive]: b
       }),
       onClick: O,
-      "aria-label": I.NW.string(I.t.erHFxM),
+      "aria-label": P.NW.string(P.t.erHFxM),
       focusProps: {
         offset: {
           top: 4,
@@ -126,7 +126,7 @@ function A(e) {
     className: S.channelAppLauncherButtonPopoutIconContainer,
     children: [(0, r.jsx)("img", {
       className: o()(S.buttonContainer, S.button, S.channelAppLauncherButtonPopoutIcon),
-      alt: I.NW.string(I.t.X4IxWF),
+      alt: P.NW.string(P.t.X4IxWF),
       src: null == c ? void 0 : c.iconURL,
       "aria-hidden": !0,
       draggable: !1
@@ -134,7 +134,7 @@ function A(e) {
       className: S.channelAppLauncherButtonPopoutIconShimmerContainer,
       children: (0, r.jsx)("img", {
         className: o()(S.channelAppLauncherButtonPopoutIconShimmer),
-        alt: I.NW.string(I.t.X4IxWF),
+        alt: P.NW.string(P.t.X4IxWF),
         src: Z,
         "aria-hidden": !0,
         draggable: !1
@@ -142,7 +142,7 @@ function A(e) {
     })]
   }) : null;
   return d ? (0, r.jsx)(u.ua7, {
-    text: I.NW.string(I.t.JDj6Xl),
+    text: P.NW.string(P.t.JDj6Xl),
     shouldShow: s,
     forceOpen: s,
     children: () => (0, r.jsxs)(r.Fragment, {

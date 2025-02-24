@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  M: () => E
+  M: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -25,7 +25,7 @@ var r = n(200651),
   j = n(981631),
   O = n(388032);
 
-function N(e) {
+function E(e) {
   let {
     senderId: t,
     channelId: n,
@@ -86,7 +86,7 @@ function N(e) {
   })
 }
 
-function E(e) {
+function N(e) {
   let {
     channelId: t,
     warningId: s,
@@ -97,7 +97,7 @@ function E(e) {
     isBlocked: m.Z.isBlocked(d)
   }), [d]), g = i.useCallback(() => {
     (0, _.T)(t, [s])
-  }, [t, s]), b = (0, x.C2)(), E = i.useCallback(e => () => {
+  }, [t, s]), b = (0, x.C2)(), N = i.useCallback(e => () => {
     c.Z.addRelationship({
       userId: d,
       context: {
@@ -122,7 +122,7 @@ function E(e) {
       name: l.V.SAFETY_WARNING_VIEW
     })
   }, [t, s, d]);
-  let P = () => {
+  let I = () => {
       (0, a.ZDy)(async () => {
         let {
           default: e
@@ -145,7 +145,7 @@ function E(e) {
               title: e
             }, t)),
             actionRows: (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(N, {
+              children: [(0, r.jsx)(E, {
                 senderId: d,
                 channelId: t,
                 warningId: s
@@ -155,7 +155,7 @@ function E(e) {
                 buttonText: O.NW.string(O.t["5QYPOz"]),
                 buttonColor: a.zxk.Colors.RED,
                 onButtonPress: () => {
-                  l(), I(v.NM.USER_MODAL_BLOCK_CONFIRM, v.NM.USER_MODAL_BLOCK_CANCEL, P)
+                  l(), P(v.NM.USER_MODAL_BLOCK_CONFIRM, v.NM.USER_MODAL_BLOCK_CANCEL, I)
                 }
               }, "block-button")]
             })
@@ -163,7 +163,7 @@ function E(e) {
         }
       })
     },
-    I = (e, i, l) => {
+    P = (e, i, l) => {
       (0, a.ZDy)(async () => {
         let {
           default: o
@@ -189,7 +189,7 @@ function E(e) {
             return e
           }({}, n), c = c = {
             userId: d,
-            confirmBlock: E(e),
+            confirmBlock: N(e),
             onCancel: () => {
               null == l || l(), (0, v.qc)({
                 channelId: t,
@@ -224,7 +224,7 @@ function E(e) {
       text: O.NW.string(O.t["Qk/c4+"]),
       color: a.zxk.Colors.BRAND,
       onclick: () => {
-        P(), (0, v.qc)({
+        I(), (0, v.qc)({
           channelId: t,
           warningId: s,
           senderId: d,
@@ -235,7 +235,7 @@ function E(e) {
     }, ...p ? [] : [{
       text: O.NW.string(O.t.ie0QdH),
       color: a.zxk.Colors.RED,
-      onclick: () => I(v.NM.USER_BANNER_BLOCK_CONFIRM, v.NM.USER_BANNER_BLOCK_CANCEL)
+      onclick: () => P(v.NM.USER_BANNER_BLOCK_CONFIRM, v.NM.USER_BANNER_BLOCK_CANCEL)
     }]]
   })
 }

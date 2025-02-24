@@ -1,7 +1,7 @@
 /** Chunk was on 71611 **/
 n.d(t, {
   V: () => O,
-  Z: () => N
+  Z: () => E
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -153,7 +153,7 @@ class O extends i.PureComponent {
         [v.notAnimating]: !t,
         [v.highPriority]: u
       }
-    }, N = this.getTutorialPopoutText();
+    }, E = this.getTutorialPopoutText();
     return (0, r.jsx)(f.ZP, j(x({
       position: m,
       renderMedia: a,
@@ -165,7 +165,7 @@ class O extends i.PureComponent {
       arrowAlignment: h,
       onSkipAll: this.handleSkipTips,
       onComplete: this.handleDismiss
-    }, N), {
+    }, E), {
       children: (e, t) => {
         let {
           isShown: n
@@ -194,7 +194,7 @@ class O extends i.PureComponent {
     })
   }
 }
-let N = 12633 == n.j ? function() {
+let E = 12633 == n.j ? function() {
   let {
     indicators: e,
     tutorialData: t,

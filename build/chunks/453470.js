@@ -27,11 +27,11 @@ function x(e) {
     channelId: t,
     warningId: x,
     senderId: j
-  } = e, O = (0, _.E4)(), N = i.useCallback(() => {
+  } = e, O = (0, _.E4)(), E = i.useCallback(() => {
     (0, p.T)(t, [x])
-  }, [t, x]), E = (0, b.t)({
+  }, [t, x]), N = (0, b.t)({
     location: v.zr
-  }), P = e => {
+  }), I = e => {
     a.Z.updateChannelOverrideSettings(null, t, {
       muted: !0
     }, g.ZB.Muted), c.Z.showMuteSuccessToast(j, t), (0, f.qc)({
@@ -40,8 +40,8 @@ function x(e) {
       senderId: j,
       warningType: h.pj.LIKELY_ATO,
       cta: e
-    }), N()
-  }, I = () => {
+    }), E()
+  }, P = () => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -69,7 +69,7 @@ function x(e) {
             description: y.NW.string(y.t.w2ve0t),
             buttonText: y.NW.string(y.t.ftIK2N),
             onButtonPress: () => {
-              P(f.NM.USER_MODAL_MUTE), l()
+              I(f.NM.USER_MODAL_MUTE), l()
             }
           }, "likely-ato-mute")],
           learnMore: (0, r.jsx)(o.P3F, {
@@ -93,7 +93,7 @@ function x(e) {
     })
   };
   return (i.useEffect(() => {
-    E && ((0, f.MC)(C.rMx.SAFETY_WARNING_VIEWED, {
+    N && ((0, f.MC)(C.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
       warningId: x,
       senderId: j,
@@ -101,19 +101,19 @@ function x(e) {
     }), s.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     }))
-  }, [t, x, j, E]), E) ? (0, r.jsx)(m.Q, {
+  }, [t, x, j, N]), N) ? (0, r.jsx)(m.Q, {
     channelId: t,
     warningId: x,
     senderId: j,
     warningType: h.pj.LIKELY_ATO,
     header: y.NW.string(y.t.R8UsiI),
     description: y.NW.string(y.t.lI8nQk),
-    onDismiss: N,
+    onDismiss: E,
     buttons: [{
       text: y.NW.string(y.t.tC1pvL),
       color: o.zxk.Colors.BRAND,
       onclick: () => {
-        I(), (0, f.qc)({
+        P(), (0, f.qc)({
           channelId: t,
           warningId: x,
           senderId: j,
@@ -124,7 +124,7 @@ function x(e) {
     }, {
       text: y.NW.string(y.t.ftIK2N),
       color: o.zxk.Colors.PRIMARY,
-      onclick: () => P(f.NM.USER_BANNER_MUTE)
+      onclick: () => I(f.NM.USER_BANNER_MUTE)
     }]
   }) : null
 }

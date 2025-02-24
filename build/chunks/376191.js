@@ -14,8 +14,8 @@ var i = n(442837),
   d = n(125988),
   p = n(43267),
   h = n(522289),
-  f = n(699516),
-  g = n(51144),
+  g = n(699516),
+  f = n(51144),
   m = n(998502),
   b = n(620924),
   _ = n(332712),
@@ -56,7 +56,7 @@ function I(e) {
     channel: n,
     otherUser: c,
     active: h
-  } = e, m = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), _ = (0, i.e7)([f.Z], () => null == c ? null : f.Z.getNickname(c.id)), I = !m && h, C = (0, b.c)(n), {
+  } = e, m = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), _ = (0, i.e7)([g.Z], () => null == c ? null : g.Z.getNickname(c.id)), I = !m && h, C = (0, b.c)(n), {
     avatarDecorationSrc: S
   } = (0, d.Z)({
     user: c,
@@ -80,7 +80,7 @@ function I(e) {
           showAccountIdentifier: !0,
           className: N.tagContainer,
           usernameClass: N.username,
-          discriminatorClass: null != g.ZP.getGlobalName(c) ? N.globalName : N.discriminator
+          discriminatorClass: null != f.ZP.getGlobalName(c) ? N.globalName : N.discriminator
         }), (0, r.jsx)(l.Text, {
           className: N.timestampWithPreview,
           color: "text-muted",

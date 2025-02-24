@@ -24,18 +24,18 @@ var r = n(200651),
   x = n(696900),
   j = n(456631),
   O = n(963838),
-  N = n(535879),
-  E = n(310892),
-  P = n(12168),
-  I = n(353368),
+  E = n(535879),
+  N = n(310892),
+  I = n(12168),
+  P = n(353368),
   S = n(981631),
   Z = n(354459),
   T = n(185923),
   A = n(474936),
   w = n(526761),
   R = n(388032),
-  k = n(436638);
-let M = T.Hz.CHAT,
+  M = n(436638);
+let k = T.Hz.CHAT,
   L = {
     section: S.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER,
     openPopoutType: "voice_channel_effect_emoji_picker"
@@ -51,7 +51,7 @@ function W(e) {
   } = e, T = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), W = (0, o.e7)([b.default], () => b.default.getCurrentUser()), U = v.ZP.canUseFancyVoiceChannelReactions(W), B = (0, o.e7)([x.Z], () => x.Z.getState().animationType), F = i.useRef(!1), H = (0, f.wC)(n.guild_id), G = (0, l.uniqBy)([...H, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: n,
-    intention: M
+    intention: k
   })).slice(0, Z.e5), V = (null !== (t = j.Z.recentlyUsedEmojis) && void 0 !== t ? t : []).filter(e => !G.slice(0, Z.e5 - 1).some(t => t.name === e.name));
   V.length > 0 && G.splice(G.length - 1, 1, V[0]);
   let z = (0, O.Iu)(B),
@@ -69,7 +69,7 @@ function W(e) {
       })
     },
     Y = () => {
-      (0, E.h)({
+      (0, N.h)({
         analytics: {
           type: A.cd.EMOJI_PICKER_EMOJI_CLICKED,
           object: S.qAy.BUTTON_CTA,
@@ -94,7 +94,7 @@ function W(e) {
     })
   }, [X, Q]);
   let J = T ? [a.z.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP] : [],
-    $ = B === I.q.PREMIUM;
+    $ = B === P.q.PREMIUM;
   return (0, r.jsx)(h.ZP, {
     contentTypes: J,
     children: e => {
@@ -109,7 +109,7 @@ function W(e) {
         renderPopout: () => (0, r.jsx)("div", {
           onMouseEnter: C,
           children: (0, r.jsx)(g.ZP, {
-            className: k.reducedMotionTooltip,
+            className: M.reducedMotionTooltip,
             header: R.NW.string(R.t["6gGHnZ"]),
             content: R.NW.string(R.t.S2RGUF),
             onClick: () => {
@@ -123,7 +123,7 @@ function W(e) {
             caretPosition: g.DF.RIGHT_CENTER
           })
         }),
-        children: () => (0, r.jsx)(P.Z, {
+        children: () => (0, r.jsx)(I.Z, {
           title: R.NW.string(R.t.Nn8lPz),
           channel: n,
           closePopout: m,
@@ -133,7 +133,7 @@ function W(e) {
           onExpandedToggle: K,
           analyticsOverride: L,
           emojiSearchProps: {
-            accessory: (0, r.jsx)(N.Z, {
+            accessory: (0, r.jsx)(E.Z, {
               labelText: R.NW.string(R.t["ktEv/v"]),
               value: $,
               onChange: () => {
@@ -145,7 +145,7 @@ function W(e) {
                   type: "VOICE_CHANNEL_EFFECT_TOGGLE_ANIMATION_TYPE"
                 })
               },
-              onShowUpsell: () => (0, E.h)({
+              onShowUpsell: () => (0, N.h)({
                 analytics: {
                   type: F.current ? A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED : A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED,
                   object: S.qAy.VOICE_CHANNEL_EFFECTS_TOGGLE,

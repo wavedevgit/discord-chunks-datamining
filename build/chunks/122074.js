@@ -1,8 +1,8 @@
 /** Chunk was on 56826 **/
 n.d(t, {
   U: () => C,
-  Uf: () => I,
-  ng: () => m
+  Uf: () => m,
+  ng: () => I
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -27,7 +27,7 @@ var r = n(200651),
   x = n(388032),
   S = n(381345);
 
-function m(e, t) {
+function I(e, t) {
   let n = g.Y.useExperiment({
       location: "guild_context_menu"
     }, {
@@ -40,7 +40,7 @@ function m(e, t) {
   })
 }
 
-function I(e, t, n) {
+function m(e, t, n) {
   return P(e, t, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE, n)
 }
 
@@ -59,8 +59,8 @@ function C() {
   })
 }
 
-function P(e, t, a, m) {
-  var I, C;
+function P(e, t, a, I) {
+  var m, C;
   let P = (0, b.OR)(e),
     E = (0, b._c)(e, t),
     T = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
@@ -90,7 +90,7 @@ function P(e, t, a, m) {
     },
     L = A ? o.Text : h.Z,
     Y = (0, _.LB)(),
-    Q = null !== (C = null === (I = Y.find(e => e.value === U)) || void 0 === I ? void 0 : I.label) && void 0 !== C ? C : x.NW.string(x.t.p3Hg5e),
+    Q = null !== (C = null === (m = Y.find(e => e.value === U)) || void 0 === m ? void 0 : m.label) && void 0 !== C ? C : x.NW.string(x.t.p3Hg5e),
     V = (0, r.jsx)(o.IGR, {
       className: S.newBadge,
       text: x.NW.string(x.t.y2b7CA)
@@ -104,7 +104,7 @@ function P(e, t, a, m) {
       return t && w(t), (0, r.jsxs)("div", {
         className: S.rootContainer,
         children: [(0, r.jsxs)("div", {
-          children: [G && "top" === m && V, (0, r.jsxs)("div", {
+          children: [G && "top" === I && V, (0, r.jsxs)("div", {
             className: S.headerContainer,
             children: [(0, r.jsx)(L, {
               className: S.text,
@@ -122,7 +122,7 @@ function P(e, t, a, m) {
             variant: "text-xs/normal",
             children: Q
           })]
-        }), G && "trailing" === m && V]
+        }), G && "trailing" === I && V]
       })
     },
     action: e !== v.aIL ? () => (0, o.ZDy)(async () => {

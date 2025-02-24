@@ -43,7 +43,7 @@ function d(e) {
   }), {
     itemCount: j,
     focusedIndex: O
-  } = y, [N] = r.useState(() => (0, o.P2)(x, 16));
+  } = y, [E] = r.useState(() => (0, o.P2)(x, 16));
   return r.useEffect(() => {
       x({
         type: i.G.UPDATE_ITEM_COUNT,
@@ -71,15 +71,15 @@ function d(e) {
       r.useEffect(() => {
         O.current = C
       }, [C]);
-      let [N, E] = r.useState(!1), [P] = r.useState(() => new o.$o(e => () => {
+      let [E, N] = r.useState(!1), [I] = r.useState(() => new o.$o(e => () => {
         let t = null != j.current && "string" == typeof e ? j.current(e) : e;
         "number" != typeof t || t < 0 || m({
           type: i.G.SET_FOCUSED_INDEX,
           index: t
         })
       }));
-      r.useEffect(() => () => P.clean(), [P]);
-      let I = r.useCallback((e, t) => {
+      r.useEffect(() => () => I.clean(), [I]);
+      let P = r.useCallback((e, t) => {
           O.current && h(e, t)
         }, [h]),
         [S, Z] = r.useState(!0);
@@ -88,7 +88,7 @@ function d(e) {
           Z(!1);
           return
         }
-        I(v(t, d), d)
+        P(v(t, d), d)
       }, [d]);
       let T = r.useCallback(function() {
           let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
@@ -96,8 +96,8 @@ function d(e) {
           n !== d && m({
             type: i.G.SET_FOCUSED_INDEX,
             index: n
-          }), e && I(v(t, n), n)
-        }, [v, d, f, m, t, I]),
+          }), e && P(v(t, n), n)
+        }, [v, d, f, m, t, P]),
         A = r.useCallback(e => {
           if (!O.current) return;
           if (a.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
@@ -141,34 +141,34 @@ function d(e) {
           }
         }, [v, t, m, d, T, p]),
         w = r.useCallback(() => {
-          N || E(!0)
-        }, [N]),
+          E || N(!0)
+        }, [E]),
         R = r.useCallback(() => {
-          !N && (g ? I(v(t, d), d) : T(!0))
-        }, [v, t, I, g, N, d, T]),
-        k = r.useCallback(e => {
+          !E && (g ? P(v(t, d), d) : T(!0))
+        }, [v, t, P, g, E, d, T]),
+        M = r.useCallback(e => {
           !e.currentTarget.contains(e.relatedTarget) && requestAnimationFrame(() => {
             if (null == c(s(v, t, d))) {
-              I(t);
+              P(t);
               return
             }
-            E(!1)
+            N(!1)
           })
-        }, [v, t, d, I]),
-        M = r.useRef(null);
+        }, [v, t, d, P]),
+        k = r.useRef(null);
       r.useLayoutEffect(() => {
-        let e = M.current;
-        if (null != e) return e.addEventListener("focusin", w), e.addEventListener("focus", R), e.addEventListener("focusout", k), () => {
-          e.removeEventListener("focusin", w), e.removeEventListener("focus", R), e.removeEventListener("focusout", k)
+        let e = k.current;
+        if (null != e) return e.addEventListener("focusin", w), e.addEventListener("focus", R), e.addEventListener("focusout", M), () => {
+          e.removeEventListener("focusin", w), e.removeEventListener("focus", R), e.removeEventListener("focusout", M)
         }
-      }, [R, w, k]);
+      }, [R, w, M]);
       let L = r.useCallback(() => ({
           role: "list",
-          tabIndex: N && g ? -1 : 0,
+          tabIndex: E && g ? -1 : 0,
           id: t,
           onKeyDown: A,
-          ref: M
-        }), [t, N, A, g]),
+          ref: k
+        }), [t, E, A, g]),
         D = r.useCallback(e => {
           let {
             index: n
@@ -179,9 +179,9 @@ function d(e) {
             "aria-posinset": b ? n + 1 : void 0,
             id: v(t, n),
             tabIndex: g && n === d ? 0 : -1,
-            onFocus: P.get(null != j.current ? v(t, n) : n)
+            onFocus: I.get(null != j.current ? v(t, n) : n)
           }
-        }, [v, t, d, g, P, b]);
+        }, [v, t, d, g, I, b]);
       return r.useMemo(() => ({
         dispatch: m,
         getContainerProps: L,
@@ -191,7 +191,7 @@ function d(e) {
       navId: t,
       itemCount: j,
       focusedIndex: O,
-      dispatch: N,
+      dispatch: E,
       onSelect: p,
       setFocus: h,
       getNewFocusIndex: f,

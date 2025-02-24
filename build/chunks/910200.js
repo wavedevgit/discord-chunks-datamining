@@ -4,8 +4,8 @@ n.d(t, {
 }), n(266796);
 var r = n(200651);
 n(192379);
-var i = n(120356),
-  l = n.n(i),
+var l = n(120356),
+  i = n.n(l),
   a = n(692547),
   o = n(481060),
   s = n(220082),
@@ -31,11 +31,11 @@ function b(e) {
       }),
       r = (0, s.ZP)(n, t);
     return null != e.brandColorPrimary ? e.brandColorPrimary : r
-  }(t, (0, o.dQu)(a.Z.colors.BG_BASE_TERTIARY).hex()), i = (0, f.d)(n);
+  }(t, (0, o.dQu)(a.Z.colors.BG_BASE_TERTIARY).hex()), l = (0, f.d)(n);
   return (0, r.jsx)("div", {
     className: g.banner,
     style: {
-      background: i
+      background: l
     }
   })
 }
@@ -70,7 +70,7 @@ function p(e) {
         width: 70,
         height: 70,
         children: (0, r.jsxs)("div", {
-          className: l()(g.avatarWrapper, g.clickable),
+          className: i()(g.avatarWrapper, g.clickable),
           children: [(0, r.jsx)(c.b, {
             guildId: t.id,
             guildName: t.name,
@@ -98,11 +98,11 @@ function y(e) {
   let {
     profile: t,
     onIconChange: n,
-    className: i,
+    className: l,
     disableCTA: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: l()(g.container, i),
+    className: i()(g.container, l),
     children: [(0, r.jsx)(b, {
       profile: t
     }), (0, r.jsx)(p, {

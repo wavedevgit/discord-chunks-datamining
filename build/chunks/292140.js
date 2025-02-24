@@ -14,8 +14,8 @@ var i = n(481060),
   d = n(247530),
   p = n(260889),
   h = n(981631),
-  f = n(674563),
-  g = n(388032);
+  g = n(674563),
+  f = n(388032);
 
 function m(e) {
   let {
@@ -26,7 +26,7 @@ function m(e) {
   return (0, l.ZP)(() => {
     let e = t.currentActivities.filter(e => {
       var t, n;
-      return (null === (t = e.game) || void 0 === t ? void 0 : t.name) != null && (null === (n = e.game) || void 0 === n ? void 0 : n.type) === f.wW.GAME
+      return (null === (t = e.game) || void 0 === t ? void 0 : t.name) != null && (null === (n = e.game) || void 0 === n ? void 0 : n.type) === g.wW.GAME
     }).map(e => e.game.name);
     o.default.track(h.rMx.OPEN_POPOUT, {
       type: "Now Playing Card Popout",
@@ -35,7 +35,7 @@ function m(e) {
   }), (0, r.jsxs)(i.v2r, {
     navId: "now-playing-menu",
     onClose: n,
-    "aria-label": g.NW.string(g.t.ogxXGh),
+    "aria-label": f.NW.string(f.t.ogxXGh),
     onSelect: m,
     children: [b, (0, r.jsxs)(i.kSQ, {
       children: [_, E]

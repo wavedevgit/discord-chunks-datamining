@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(468846),
   p = n(313201),
   h = n(70097),
-  f = n(605236),
-  g = n(524444),
+  g = n(605236),
+  f = n(524444),
   m = n(626135),
   b = n(960048),
   _ = n(565216),
@@ -169,7 +169,7 @@ function P(e) {
       })
     }
   }, [R, l.type]), i.useEffect(() => {
-    null != P && (0, f.kk)(P);
+    null != P && (0, g.kk)(P);
     let e = Date.now();
     return m.default.track(E.rMx.CHANGE_LOG_OPENED, {
       change_log_id: R
@@ -177,7 +177,7 @@ function P(e) {
       m.default.track(E.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: R,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), null != P && (0, f.EW)(P, {
+      }), null != P && (0, g.EW)(P, {
         dismissAction: O.L.DISMISS
       })
     }
@@ -239,9 +239,9 @@ function P(e) {
         provider: d.pn.YOUTUBE,
         maxWidth: l.embed.width,
         maxHeight: l.embed.height,
-        renderVideoComponent: g.lV,
-        renderImageComponent: g.Yi,
-        renderLinkComponent: g.iT,
+        renderVideoComponent: f.lV,
+        renderImageComponent: f.Yi,
+        renderLinkComponent: f.iT,
         onPlay: () => {
           m.default.track(E.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
             change_log_id: R

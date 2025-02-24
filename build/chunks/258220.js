@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  default: () => g,
-  r: () => f
+  default: () => f,
+  r: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -14,10 +14,10 @@ var r = n(200651),
   d = n(981631),
   p = n(388032),
   h = n(358373);
-let f = "Activity Encourages Hardware Acceleration";
+let g = "Activity Encourages Hardware Acceleration";
 
-function g(e) {
-  var t, n, g, {
+function f(e) {
+  var t, n, f, {
       applicationId: m
     } = e,
     b = function(e, t) {
@@ -35,10 +35,10 @@ function g(e) {
       }
       return i
     }(e, ["applicationId"]);
-  let [_, E] = i.useState(!1), [O] = (0, a.Z)([m]), N = null !== (g = null == O ? void 0 : O.name) && void 0 !== g ? g : "This Activity";
+  let [_, E] = i.useState(!1), [O] = (0, a.Z)([m]), N = null !== (f = null == O ? void 0 : O.name) && void 0 !== f ? f : "This Activity";
   i.useEffect(() => {
     c.default.track(d.rMx.OPEN_MODAL, {
-      type: f
+      type: g
     })
   }, []);
   let v = () => {
@@ -46,7 +46,7 @@ function g(e) {
     _ && (e = "permanent", o.ZP.updatedUnsyncedSettings({
       disableActivityHardwareAccelerationPrompt: !0
     })), c.default.track(d.rMx.MODAL_DISMISSED, {
-      type: f,
+      type: g,
       dismiss_type: e
     }), b.onClose()
   };

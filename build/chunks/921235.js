@@ -32,10 +32,10 @@ function j(e) {
     (0, u.FQ)("847199849233514549", !0)
   }, []);
   let O = (0, a.e7)([f.Z, h.default], () => !!o()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === C.yb.SENT && !(0, _.Z)(e))),
-    N = (0, a.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
-    E = null !== (t = b.ZP.useName(N)) && void 0 !== t ? t : v.NW.string(v.t.y1Wu2d),
-    P = (0, a.e7)([d.Z], () => d.Z.getStickerById(x)),
-    I = i.useCallback(async () => {
+    E = (0, a.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
+    N = null !== (t = b.ZP.useName(E)) && void 0 !== t ? t : v.NW.string(v.t.y1Wu2d),
+    I = (0, a.e7)([d.Z], () => d.Z.getStickerById(x)),
+    P = i.useCallback(async () => {
       if (null == l || "" === l) try {
         await c.Z.sendGreetMessage(n.id, x), g.default.track(C.rMx.DM_EMPTY_ACTION, {
           channel_id: n.id,
@@ -48,7 +48,7 @@ function j(e) {
       }
     }, [n.id, n.type, l]),
     S = v.NW.formatToPlainString(v.t.m0zYbW, {
-      username: E
+      username: N
     }),
     Z = null != l && "" !== l ? (0, r.jsx)(s.Text, {
       className: y.error,
@@ -61,9 +61,9 @@ function j(e) {
     children: [(0, r.jsxs)(s.P3F, {
       className: null != l && "" !== l ? y.compactButtonDisabled : y.compactButton,
       "aria-label": v.NW.string(v.t.pJObYG),
-      onClick: I,
+      onClick: P,
       children: [(0, r.jsx)(p.ZP, {
-        sticker: P,
+        sticker: I,
         size: 24
       }), (0, r.jsx)(s.Text, {
         className: y.text,
@@ -74,11 +74,11 @@ function j(e) {
   }) : (0, r.jsxs)("div", {
     className: y.containerExpanded,
     children: [(0, r.jsx)(p.ZP, {
-      sticker: P,
+      sticker: I,
       size: 160
     }), (0, r.jsx)(s.zxk, {
       className: y.button,
-      onClick: I,
+      onClick: P,
       disabled: !!l,
       children: S
     }), Z]

@@ -24,18 +24,18 @@ var r = n(200651),
   x = n(607070),
   j = n(367907),
   O = n(450936),
-  N = n(993766),
-  E = n(499254),
-  P = n(541099),
-  I = n(827498),
+  E = n(993766),
+  N = n(499254),
+  I = n(541099),
+  P = n(827498),
   S = n(46332),
   Z = n(533379),
   T = n(555573),
   A = n(456007),
   w = n(10718),
   R = n(998698),
-  k = n(895924),
-  M = n(581364),
+  M = n(895924),
+  k = n(581364),
   L = n(667204),
   D = n(404295),
   W = n(541716),
@@ -78,18 +78,18 @@ var r = n(200651),
   ex = n(323873),
   ej = n(271383),
   eO = n(375954),
-  eN = n(496675),
-  eE = n(944486),
-  eP = n(117530),
-  eI = n(594174),
+  eE = n(496675),
+  eN = n(944486),
+  eI = n(117530),
+  eP = n(594174),
   eS = n(626135),
   eZ = n(934415),
   eT = n(459273),
   eA = n(585483),
   ew = n(709054),
   eR = n(838440),
-  ek = n(127654),
-  eM = n(979956),
+  eM = n(127654),
+  ek = n(979956),
   eL = n(655687),
   eD = n(165540),
   eW = n(583027),
@@ -201,7 +201,7 @@ class e1 extends i.PureComponent {
     } = this.props, {
       commandKey: n,
       interactionOptions: r
-    } = (0, M.XA)(e.interactionData), {
+    } = (0, k.XA)(e.interactionData), {
       command: i,
       application: l
     } = w.Xq({
@@ -211,7 +211,7 @@ class e1 extends i.PureComponent {
     if (null != i) {
       var o, a;
       let e = null != l ? {
-        type: k.Qi.APPLICATION,
+        type: M.Qi.APPLICATION,
         id: l.id,
         icon: l.icon,
         name: null !== (a = null == l ? void 0 : null === (o = l.bot) || void 0 === o ? void 0 : o.username) && void 0 !== a ? a : l.name,
@@ -221,7 +221,7 @@ class e1 extends i.PureComponent {
         channelId: t.id,
         command: i,
         section: e,
-        location: k.Vh.RECALL,
+        location: M.Vh.RECALL,
         initialValues: (0, A.Dw)(i, null != r ? r : [])
       })
     }
@@ -266,7 +266,7 @@ class e1 extends i.PureComponent {
       renderApplicationCommandIcon: this.renderApplicationCommandIcon,
       renderAppLauncherButton: g,
       renderAppCommandButton: b,
-      promptToUpload: ek.d,
+      promptToUpload: eM.d,
       highlighted: o,
       setEditorRef: e => this.editorRef = e,
       onCommandSentinelTyped: m,
@@ -328,7 +328,7 @@ class e1 extends i.PureComponent {
           return;
         case eV.yXg.ARROW_UP:
           if (i || l) return;
-          if (e.preventDefault(), t) eP.Z.getUploadCount(r.id, ey.d.ChannelMessage) > 0 ? eA.S.dispatchToLastSubscribed(eV.CkL.FOCUS_ATTACHMENT_AREA) : eA.S.dispatchToLastSubscribed(eV.CkL.FOCUS_MESSAGES, {
+          if (e.preventDefault(), t) eI.Z.getUploadCount(r.id, ey.d.ChannelMessage) > 0 ? eA.S.dispatchToLastSubscribed(eV.CkL.FOCUS_ATTACHMENT_AREA) : eA.S.dispatchToLastSubscribed(eV.CkL.FOCUS_MESSAGES, {
             atEnd: !0
           });
           else {
@@ -344,7 +344,7 @@ class e1 extends i.PureComponent {
             (0, y.rf)();
             return
           }
-          if (eP.Z.getUploadCount(r.id, ey.d.ChannelMessage) > 0) {
+          if (eI.Z.getUploadCount(r.id, ey.d.ChannelMessage) > 0) {
             g.Z.clearAll(r.id, ey.d.ChannelMessage);
             return
           }
@@ -398,7 +398,7 @@ class e1 extends i.PureComponent {
         chatInputType: d
       } = this.props, p = !1;
       if (null != l) {
-        if (l.inputType === k.iw.BUILT_IN_INTEGRATION) return eA.S.dispatch(eV.CkL.SHAKE_APP, {
+        if (l.inputType === M.iw.BUILT_IN_INTEGRATION) return eA.S.dispatch(eV.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
         }), Promise.resolve({
@@ -406,12 +406,12 @@ class e1 extends i.PureComponent {
           shouldRefocus: !0
         });
         let e = R.Z.getCommandOrigin(c.id);
-        if (e === k.bB.APPLICATION_LAUNCHER || e === k.bB.IMAGE_RECS_MENU || e === k.bB.IMAGE_RECS_SUBMENU) {
+        if (e === M.bB.APPLICATION_LAUNCHER || e === M.bB.IMAGE_RECS_MENU || e === M.bB.IMAGE_RECS_SUBMENU) {
           var h;
           let {
             location: t,
             sectionName: n
-          } = null !== (h = (0, eW._U)(l)) && void 0 !== h ? h : {}, r = e === k.bB.APPLICATION_LAUNCHER ? P.Z.lastShownEntrypoint() : I._b.TEXT;
+          } = null !== (h = (0, eW._U)(l)) && void 0 !== h ? h : {}, r = e === M.bB.APPLICATION_LAUNCHER ? I.Z.lastShownEntrypoint() : P._b.TEXT;
           if (!await (0, S.L)({
               applicationId: l.applicationId,
               channel: c,
@@ -432,7 +432,7 @@ class e1 extends i.PureComponent {
             channel: c
           }
         });
-        if (l.inputType !== k.iw.BUILT_IN_TEXT) return Promise.resolve({
+        if (l.inputType !== M.iw.BUILT_IN_TEXT) return Promise.resolve({
           shouldClear: !0,
           shouldRefocus: !0
         });
@@ -486,8 +486,8 @@ class e1 extends i.PureComponent {
           shouldRefocus: !0
         };
         if (null != n && n.length > 0) {
-          let e = (0, eM.KZ)(n);
-          if ((0, eM.Bf)(e, null == s ? void 0 : s.id)) return (0, ek.G)(c, e), {
+          let e = (0, ek.KZ)(n);
+          if ((0, ek.Bf)(e, null == s ? void 0 : s.id)) return (0, eM.G)(c, e), {
             shouldClear: !1,
             shouldRefocus: !1
           };
@@ -553,7 +553,7 @@ class e2 extends i.PureComponent {
       currentChannelId: r
     } = t;
     return n.id !== r ? {
-      textAreaFocused: null != n && !c.tq && eN.Z.can(eV.Plq.SEND_MESSAGES, n),
+      textAreaFocused: null != n && !c.tq && eE.Z.can(eV.Plq.SEND_MESSAGES, n),
       currentChannelId: n.id
     } : null
   }
@@ -587,10 +587,10 @@ class e2 extends i.PureComponent {
       showAutomodUserProfileChatBlocker: x,
       showAppLauncherButton: j,
       showAppDMsUI: O,
-      isInitialLoading: N,
-      isRefreshChatInputEnabled: E,
-      isRefreshEnabled: P,
-      pendingScheduledMessage: I
+      isInitialLoading: E,
+      isRefreshChatInputEnabled: N,
+      isRefreshEnabled: I,
+      pendingScheduledMessage: P
     } = this.props, {
       textAreaFocused: S,
       textAreaHighlighted: Z
@@ -625,13 +625,13 @@ class e2 extends i.PureComponent {
             onCommandSentinelTyped: this.handleCommandSentinelTyped,
             renderAppLauncherButton: this.renderAppLauncherButton,
             renderAppCommandButton: this.renderAppCommandButton,
-            pendingScheduledMessage: I
+            pendingScheduledMessage: P
           })
-        }), P ? null : this.renderAppLauncherButton(), E ? null : this.renderAppCommandButton()]
+        }), I ? null : this.renderAppLauncherButton(), N ? null : this.renderAppCommandButton()]
       }),
-      R = O && N,
-      k = R && N ? A : w,
-      M = o()({
+      R = O && E,
+      M = R && E ? A : w,
+      k = o()({
         [eY.barWithAppLauncherButton]: j,
         [eY.barWithAppsDMsUI]: O
       });
@@ -679,7 +679,7 @@ class e2 extends i.PureComponent {
                   forceCozy: y,
                   filterAfterTimestamp: m,
                   showingQuarantineBanner: f,
-                  jumpBarClassName: M
+                  jumpBarClassName: k
                 }), y ? null : null !== (e = this.renderMessageBanner({
                   channel: n,
                   showQuarantinedUserBanner: f,
@@ -696,11 +696,11 @@ class e2 extends i.PureComponent {
                     channelId: n.id
                   }), n.isPrivate() ? (0, r.jsx)(eH.Z, {
                     channel: n,
-                    children: k
+                    children: M
                   }) : (0, r.jsx)(eG.Z, {
                     channel: n,
-                    children: k
-                  }), E ? null : (0, r.jsx)(_.Z, {
+                    children: M
+                  }), N ? null : (0, r.jsx)(_.Z, {
                     channel: n,
                     poggermodeEnabled: v
                   }), !T && (0, r.jsx)(V.Z, {})]
@@ -750,7 +750,7 @@ class e2 extends i.PureComponent {
       if (t) switch (e.which) {
         case eV.yXg.ARROW_LEFT:
           n === W.Ie.SIDEBAR && eA.S.dispatch(eV.CkL.FOCUS_CHANNEL_TEXT_AREA, {
-            channelId: eE.Z.getChannelId()
+            channelId: eN.Z.getChannelId()
           });
           return;
         case eV.yXg.ARROW_RIGHT:
@@ -767,7 +767,7 @@ class e2 extends i.PureComponent {
       let {
         applicationId: t
       } = e;
-      return E.__(I._b.TEXT, this.props.chatInputType, {
+      return N.__(P._b.TEXT, this.props.chatInputType, {
         applicationId: t
       })
     }), eK(this, "handleChatInteract", () => {
@@ -784,7 +784,7 @@ class e2 extends i.PureComponent {
         communicationDisabledUntil: l,
         showAutomodUserProfileChatBlocker: o
       } = e;
-      return t.type === eV.d4z.DM && n ? (0, r.jsx)(ed.Z, {}) : null != l && (0, X.J)(l) && null != i && !eN.Z.can(eV.Plq.ADMINISTRATOR, i) ? (0, r.jsx)(J.T, {
+      return t.type === eV.d4z.DM && n ? (0, r.jsx)(ed.Z, {}) : null != l && (0, X.J)(l) && null != i && !eE.Z.can(eV.Plq.ADMINISTRATOR, i) ? (0, r.jsx)(J.T, {
         guild: i,
         disabledUntil: l
       }) : o ? (0, r.jsx)(K.h, {
@@ -835,7 +835,7 @@ let e3 = i.memo(function(e) {
     accessibilityLabel: s
   } = (0, eL.Z)({
     channel: t
-  }), c = (0, ed.S)(eI.default.getCurrentUser(), t), [u] = (0, Q.AB)(null == n ? void 0 : n.id), h = (0, Y.Ux)(null == n ? void 0 : n.id), f = (0, d.e7)([eI.default], () => eI.default.getCurrentUser()), m = (0, d.e7)([ej.ZP], () => {
+  }), c = (0, ed.S)(eP.default.getCurrentUser(), t), [u] = (0, Q.AB)(null == n ? void 0 : n.id), h = (0, Y.Ux)(null == n ? void 0 : n.id), f = (0, d.e7)([eP.default], () => eP.default.getCurrentUser()), m = (0, d.e7)([ej.ZP], () => {
     var e, t, r;
     return null != f && null !== (r = null === (e = ej.ZP.getMember(null !== (t = null == n ? void 0 : n.id) && void 0 !== t ? t : eV.lds, null == f ? void 0 : f.id)) || void 0 === e ? void 0 : e.isPending) && void 0 !== r && r
   }), g = (0, d.e7)([ea.Z], () => ea.Z.isEnabled()), b = (0, eu.Z)(t.id), _ = (0, $.Z)(t.id), C = (0, Z.R)({
@@ -844,8 +844,8 @@ let e3 = i.memo(function(e) {
     location: "ChannelChatMemo"
   }), v = (0, D.h9)(t.id), y = (0, em.k)(t.id), {
     isInitialLoading: j,
-    primaryEntryPointCommand: E,
-    isProfileFetching: I,
+    primaryEntryPointCommand: N,
+    isProfileFetching: P,
     wasProfileFetching: S,
     applicationId: T,
     channelId: A,
@@ -856,16 +856,16 @@ let e3 = i.memo(function(e) {
       type: "channel"
     }
   });
-  (0, N.Z)({
-    isProfileFetching: I,
+  (0, E.Z)({
+    isProfileFetching: P,
     wasProfileFetching: S,
     applicationId: T,
     channelId: A,
     commands: w
   });
   let R = i.useRef(null),
-    k = (0, d.e7)([P.Z], () => P.Z.appDMChannelsWithFailedLoads().has(t.id)),
-    M = (0, z.R6)("ChannelChat"),
+    M = (0, d.e7)([I.Z], () => I.Z.appDMChannelsWithFailedLoads().has(t.id)),
+    k = (0, z.R6)("ChannelChat"),
     L = (0, z.Q3)("ChannelChat");
   return (0, r.jsx)(e2, {
     channel: t,
@@ -887,10 +887,10 @@ let e3 = i.memo(function(e) {
     showAppLauncherButton: C,
     showAppDMsUI: v,
     isInitialLoading: j,
-    showEntryPointAppCommandButton: null != E,
+    showEntryPointAppCommandButton: null != N,
     entryPointCommandButtonRef: R,
-    isFailedAppDMLoad: k,
-    isRefreshChatInputEnabled: M,
+    isFailedAppDMLoad: M,
+    isRefreshChatInputEnabled: k,
     isRefreshEnabled: L,
     pendingScheduledMessage: y
   })

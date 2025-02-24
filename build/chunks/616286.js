@@ -84,10 +84,10 @@ function x(e) {
   }(e, ["channelId", "className", "showingClassName", "onClick", "inPopout", "showRequestToSpeakSidebar", "toggleRequestToSpeakSidebar"]);
   let {
     disabled: j
-  } = x, O = i.useRef(null), N = (0, s.e7)([u.Z], () => u.Z.getChatOpen(n), [n]), {
-    isShowing: E,
-    unreadCount: P,
-    mentionCount: I
+  } = x, O = i.useRef(null), E = (0, s.e7)([u.Z], () => u.Z.getChatOpen(n), [n]), {
+    isShowing: N,
+    unreadCount: I,
+    mentionCount: P
   } = function(e) {
     let {
       unreadCount: t,
@@ -108,8 +108,8 @@ function x(e) {
       mentionCount: n
     }
   }(n), S = i.useCallback(() => {
-    null == d || d(), !N && h && (null == g || g()), c.Z.updateChatOpen(n, !N)
-  }, [n, N, d, h, g]), Z = i.useCallback(e => {
+    null == d || d(), !E && h && (null == g || g()), c.Z.updateChatOpen(n, !E)
+  }, [n, E, d, h, g]), Z = i.useCallback(e => {
     let {
       className: t
     } = e;
@@ -139,10 +139,10 @@ function x(e) {
       clearTimeout(e)
     }
   }, [A]);
-  let k = [t = p && j ? C.NW.string(C.t.DPgc5u) : N ? C.NW.string(C.t.nthdxM) : C.NW.string(C.t["5KxXrK"])];
-  return I > 0 && k.push(C.NW.formatToPlainString(C.t["3l1GOz"], {
-    mentionCount: I
-  })), P > 0 && k.push(C.NW.string(C.t.x5zAGR)), (0, r.jsx)(b.Z, function(e) {
+  let M = [t = p && j ? C.NW.string(C.t.DPgc5u) : E ? C.NW.string(C.t.nthdxM) : C.NW.string(C.t["5KxXrK"])];
+  return P > 0 && M.push(C.NW.formatToPlainString(C.t["3l1GOz"], {
+    mentionCount: P
+  })), I > 0 && M.push(C.NW.string(C.t.x5zAGR)), (0, r.jsx)(b.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -163,11 +163,11 @@ function x(e) {
     buttonRef: O,
     onClick: S,
     label: t,
-    "aria-label": k.join(", "),
+    "aria-label": M.join(", "),
     iconComponent: Z,
     tooltipPosition: "bottom",
     wrapperClassName: o()(l, null != a && {
-      [a]: E
+      [a]: N
     }),
     forceTooltipOpen: A
   }, x))

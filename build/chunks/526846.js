@@ -24,18 +24,18 @@ var r = n(200651),
   x = n(34674),
   j = n(703656),
   O = n(390322),
-  N = n(857192),
-  E = n(626135),
-  P = n(566620),
-  I = n(127255),
+  E = n(857192),
+  N = n(626135),
+  I = n(566620),
+  P = n(127255),
   S = n(5200),
   Z = n(558317),
   T = n(403404),
   A = n(981631),
   w = n(388032),
   R = n(454510);
-let k = c.Y.APP_LAUNCHER_IN_VOICE_BANNER,
-  M = "vc-activities-".concat((0, a.Z)());
+let M = c.Y.APP_LAUNCHER_IN_VOICE_BANNER,
+  k = "vc-activities-".concat((0, a.Z)());
 
 function L(e) {
   var t;
@@ -46,19 +46,19 @@ function L(e) {
       fetchState: a,
       voiceBannerCollection: c
     } = function() {
-      let e = (0, d.e7)([N.default], () => N.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE;
+      let e = (0, d.e7)([E.default], () => E.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE;
       return i.useEffect(() => {
         (0, v.XK)({
-          surface: k,
+          surface: M,
           activeState: e
         })
       }, [e]), {
         fetchState: (0, d.e7)([y.Z], () => y.Z.getFetchState({
-          surface: k,
+          surface: M,
           activeState: e
         })),
         voiceBannerCollection: (0, d.e7)([y.Z], () => y.Z.getCollections({
-          surface: k,
+          surface: M,
           activeState: e
         }))[0]
       }
@@ -116,24 +116,24 @@ let D = i.forwardRef(function(e, t) {
     guild_id: j
   } = l;
   i.useEffect(() => {
-    E.default.track(A.rMx.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
+    N.default.track(A.rMx.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
       channel_id: x,
       guild_id: j
     })
   }, [x, j]), i.useEffect(() => {
     a || s()
   }, [s, a]);
-  let N = (0, f.bp)(),
+  let E = (0, f.bp)(),
     {
-      analyticsLocations: k
+      analyticsLocations: M
     } = (0, b.ZP)(g.Z.ACTIVITIES_MINI_SHELF),
-    D = N === A.IlC.POPOUT,
+    D = E === A.IlC.POPOUT,
     W = (0, h.O)(),
-    U = (n = l.getGuildId(), (0, I.Z)({
+    U = (n = l.getGuildId(), (0, P.Z)({
       guildId: n
     }).slice(0, 5));
   i.useEffect(() => {
-    let e = setTimeout(() => P.ux(), 1e3);
+    let e = setTimeout(() => I.ux(), 1e3);
     return () => clearTimeout(e)
   }, []);
   let B = i.useCallback(() => {
@@ -143,28 +143,28 @@ let D = i.forwardRef(function(e, t) {
         guildId: null !== (e = l.getGuildId()) && void 0 !== e ? e : void 0,
         locationObject: W.location,
         openInPopout: D,
-        analyticsLocations: k,
+        analyticsLocations: M,
         opensAppLauncherModal: !0
       }), u(), _()
-    }, [W, k, l, _, u, D]),
+    }, [W, M, l, _, u, D]),
     F = i.useCallback(e => {
-      c(), E.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
+      c(), N.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
         channel_id: l.id,
         guild_id: l.getGuildId()
       })
     }, [c, l]);
   return (0, r.jsx)(b.Gt, {
-    value: k,
+    value: M,
     children: (0, r.jsx)(O.Z, {
       children: (0, r.jsxs)(p.VqE, {
         ref: t,
-        "aria-labelledby": M,
+        "aria-labelledby": k,
         className: v,
         children: [(0, r.jsx)(p.y5t, {
           forceLevel: 2,
           children: (0, r.jsx)(p.nn4, {
             children: (0, r.jsx)(p.H, {
-              id: M,
+              id: k,
               children: w.NW.string(w.t["2lnYtL"])
             })
           })

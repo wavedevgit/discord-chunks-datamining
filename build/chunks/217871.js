@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => N
+  Z: () => E
 }), n(47120), n(177593);
 var r = n(200651),
   i = n(192379),
@@ -119,39 +119,39 @@ let j = i.memo(function(e) {
       })]
     })
   }),
-  N = i.memo(function(e) {
+  E = i.memo(function(e) {
     let {
       channelId: t
     } = e, n = (0, s.e7)([h.default], () => h.default.getId()), l = (0, s.e7)([f.Z], () => f.Z.isTyping(t, n), [t, n]), o = (0, s.e7)([b.Z], () => b.Z.isEnabled()), d = (0, s.e7)([_.ZP], () => _.ZP.isComboing(n, t), [t, n]), {
       ref: p,
       width: m = 0
-    } = (0, u.Z)(), [g, C] = i.useState(!1), y = (0, v.Z)(t), N = o && d && l;
+    } = (0, u.Z)(), [g, C] = i.useState(!1), y = (0, v.Z)(t), E = o && d && l;
     i.useEffect(() => {
-      N && C(!0);
-      let e = setTimeout(() => C(N), 1e3);
+      E && C(!0);
+      let e = setTimeout(() => C(E), 1e3);
       return () => clearTimeout(e)
-    }, [N]);
-    let E = (0, c.q_F)({
+    }, [E]);
+    let N = (0, c.q_F)({
         opacity: +!!g,
         transform: g ? "translateY(0)" : "translateY(100%)",
         pointerEvents: "none",
         config: a.config.stiff
       }),
-      P = i.useMemo(() => null != y ? y : {
+      I = i.useMemo(() => null != y ? y : {
         value: 0,
         multiplier: 1
       }, [y]),
-      I = i.useRef(P);
+      P = i.useRef(I);
     i.useEffect(() => {
-      (P.multiplier > 1 || P.value > 0) && (I.current = P)
-    }, [P]);
+      (I.multiplier > 1 || I.value > 0) && (P.current = I)
+    }, [I]);
     let {
       multiplier: S,
       value: Z
     } = i.useMemo(() => ({
-      value: N ? P.value : I.current.value,
-      multiplier: N ? P.multiplier : I.current.multiplier
-    }), [N, P, I]);
+      value: E ? I.value : P.current.value,
+      multiplier: E ? I.multiplier : P.current.multiplier
+    }), [E, I, P]);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(j, {
         channelId: t,
@@ -159,7 +159,7 @@ let j = i.memo(function(e) {
       }), (0, r.jsx)(a.animated.div, {
         ref: p,
         className: x.combo,
-        style: E,
+        style: N,
         children: (0, r.jsx)(O, {
           value: Z,
           multiplier: S

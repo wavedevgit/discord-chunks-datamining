@@ -30,8 +30,8 @@ function b(e) {
     id: x = "fancybutton-toggle",
     collapseWhenChecked: j = !0,
     onClick: O,
-    disabled: N
-  } = e, E = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), [P, I] = i.useState(!1), S = (0, d.ZP)(), Z = (0, s.wj)(S) || t ? g : m, {
+    disabled: E
+  } = e, N = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), [I, P] = i.useState(!1), S = (0, d.ZP)(), Z = (0, s.wj)(S) || t ? g : m, {
     width: T = 0,
     ref: A
   } = (0, u.Z)(), {
@@ -44,7 +44,7 @@ function b(e) {
       tooltipText: l
     }),
     position: "top",
-    color: null != v ? v : N ? c.ua7.Colors.BLACK : c.ua7.Colors.BRAND,
+    color: null != v ? v : E ? c.ua7.Colors.BLACK : c.ua7.Colors.BRAND,
     "aria-label": l,
     tooltipClassName: f.tooltip,
     className: f.tooltipContainer,
@@ -54,17 +54,17 @@ function b(e) {
       onChange: function() {
         if (b) {
           let e = !t;
-          I(!0), null == C || C(e)
+          P(!0), null == C || C(e)
         }
         "function" == typeof O && O()
       },
       id: x,
       type: "checkbox",
-      disabled: N
+      disabled: E
     }), (0, r.jsxs)("label", {
       htmlFor: x,
       className: o()(f.label, y, {
-        [f.transition]: P,
+        [f.transition]: I,
         [f.labelChecked]: t,
         [f.labelUnchecked]: !t && !b
       }),
@@ -73,7 +73,7 @@ function b(e) {
       } : void 0,
       children: [t ? (0, r.jsx)(c.ZX5, {
         className: f.shine,
-        shinePaused: E
+        shinePaused: N
       }) : null, (0, r.jsx)("img", {
         ref: A,
         src: Z,

@@ -44,7 +44,7 @@ async function h(e, t) {
     }), r.filter(e => (null == e ? void 0 : e.price) != null).forEach(e => i.push(e))
   }), i
 }
-async function f(e) {
+async function g(e) {
   let {
     socket: t
   } = e;
@@ -62,7 +62,7 @@ async function f(e) {
   return [...r.filter(e => e.sku.type !== p.epS.SUBSCRIPTION_GROUP).map(e => e.sku).filter(e => null != e.price), ...await h(n, r.map(e => e.sku))]
 }
 
-function g(e) {
+function f(e) {
   let {
     socket: t
   } = e;
@@ -76,22 +76,22 @@ function g(e) {
 let m = {
   [p.Etm.GET_SKUS]: {
     [d.Gp.ANY]: [d.wE, d.lH],
-    handler: f
+    handler: g
   },
   [p.Etm.GET_ENTITLEMENTS]: {
     [d.Gp.ANY]: [d.wE, d.lH],
-    handler: g
+    handler: f
   },
   [p.Etm.GET_SKUS_EMBEDDED]: {
     [d.Gp.ANY]: [d.wE, d.lH],
     handler: async e => ({
-      skus: await f(e)
+      skus: await g(e)
     })
   },
   [p.Etm.GET_ENTITLEMENTS_EMBEDDED]: {
     [d.Gp.ANY]: [d.wE, d.lH],
     handler: async e => ({
-      entitlements: await g(e)
+      entitlements: await f(e)
     })
   }
 }

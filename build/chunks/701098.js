@@ -3,8 +3,8 @@ n.d(t, {
   G: () => g
 });
 var r = n(200651),
-  l = n(192379),
-  i = n(442837),
+  i = n(192379),
+  l = n(442837),
   o = n(481060),
   a = n(569545),
   c = n(352954),
@@ -21,7 +21,7 @@ function g(e) {
   } = e, b = (0, u.J)({
     channelId: n,
     location: g
-  }), p = (0, i.e7)([d.Z], () => null != d.Z.getActiveStreamForApplicationStream(t)), h = (0, a.V9)(t), j = (0, s.t)(h), m = l.useCallback(() => {
+  }), p = (0, l.e7)([d.Z], () => null != d.Z.getActiveStreamForApplicationStream(t)), h = (0, a.V9)(t), j = (0, s.t)(h), m = i.useCallback(() => {
     c.Z.openSecureFramesStreamVerification(h, n)
   }, [n, h]);
   return b && p && !j ? (0, r.jsx)(o.sNh, {

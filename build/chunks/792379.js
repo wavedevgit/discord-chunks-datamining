@@ -24,10 +24,10 @@ var r = n(200651),
   x = n(900927),
   j = n(678738),
   O = n(502762),
-  N = n(530),
-  E = n(679332),
-  P = n(544989),
-  I = n(171368),
+  E = n(530),
+  N = n(679332),
+  I = n(544989),
+  P = n(171368),
   S = n(228168),
   Z = n(388032),
   T = n(666820),
@@ -56,14 +56,14 @@ function R(e) {
   let {
     user: t,
     channel: n
-  } = e, R = __OVERLAY__ || !(0, d.Z)(t.id), k = (0, b.ZP)(t.id), M = (0, s.ZP)(), {
+  } = e, R = __OVERLAY__ || !(0, d.Z)(t.id), M = (0, b.ZP)(t.id), k = (0, s.ZP)(), {
     analyticsLocations: L
   } = (0, u.ZP)(c.Z.PROFILE_PANEL), D = (0, m.ZB)({
     layout: "SIMPLIFIED_DM_PANEL",
     userId: t.id,
     channelId: n.id
   }), W = i.useRef(null), U = (0, a.Z)(W), B = e => {
-    (0, I.openUserProfileModal)(w({
+    (0, P.openUserProfileModal)(w({
       sourceAnalyticsLocations: L
     }, D, e))
   };
@@ -74,25 +74,25 @@ function R(e) {
       children: (0, r.jsxs)(O.Z, {
         ref: W,
         user: t,
-        displayProfile: k,
+        displayProfile: M,
         profileType: S.y0.PANEL,
-        themeOverride: M,
+        themeOverride: k,
         children: [(0, r.jsxs)(l.u2, {
-          children: [(0, r.jsx)(P.Z, {
+          children: [(0, r.jsx)(I.Z, {
             profileType: S.y0.PANEL,
-            children: (0, r.jsx)(E.Z, {
+            children: (0, r.jsx)(N.Z, {
               user: t
             })
           }), (0, r.jsxs)("header", {
             className: T.header,
             children: [(0, r.jsx)(v.Z, {
               user: t,
-              displayProfile: k,
+              displayProfile: M,
               profileType: S.y0.PANEL,
               animateOnHover: !U
             }), (0, r.jsx)(_.Z, {
               user: t,
-              displayProfile: k,
+              displayProfile: M,
               channelId: n.id,
               profileType: S.y0.PANEL,
               onOpenProfile: R ? void 0 : B
@@ -101,14 +101,14 @@ function R(e) {
             })]
           }), (0, r.jsxs)("div", {
             className: A.body,
-            children: [(0, r.jsx)(N.Z, {
+            children: [(0, r.jsx)(E.Z, {
               user: t,
               profileType: S.y0.PANEL,
               nickname: f.ZP.getName(null, n.id, t),
-              pronouns: null == k ? void 0 : k.pronouns,
+              pronouns: null == M ? void 0 : M.pronouns,
               onOpenProfile: R ? void 0 : B,
               tags: (0, r.jsx)(C.Z, {
-                displayProfile: k,
+                displayProfile: M,
                 profileType: S.y0.PANEL
               })
             }), (0, r.jsxs)(O.Z.Overlay, {
@@ -117,7 +117,7 @@ function R(e) {
                 heading: Z.NW.string(Z.t["61W33d"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(y.Z, {
-                  userBio: null == k ? void 0 : k.bio,
+                  userBio: null == M ? void 0 : M.bio,
                   userId: t.id,
                   animateOnHover: !0,
                   isHovering: U
@@ -146,8 +146,8 @@ function R(e) {
             },
             children: Z.NW.string(Z.t["+Xp3ho"])
           })
-        }), (null == k ? void 0 : k.profileEffectId) != null && (0, r.jsx)(h.Z, {
-          profileEffectId: null == k ? void 0 : k.profileEffectId,
+        }), (null == M ? void 0 : M.profileEffectId) != null && (0, r.jsx)(h.Z, {
+          profileEffectId: null == M ? void 0 : M.profileEffectId,
           isHovering: U
         })]
       })

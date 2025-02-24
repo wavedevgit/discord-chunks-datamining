@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 });
 var r, i, l, o = n(442837),
   a = n(570140),
@@ -28,7 +28,7 @@ i = "GuildMFAWarningStore", (r = "displayName") in h ? Object.defineProperty(h, 
   configurable: !0,
   writable: !0
 }) : h[r] = i;
-let f = new h(a.Z, {
+let g = new h(a.Z, {
   CONNECTION_OPEN: p,
   GUILD_UPDATE: function() {
     return !0

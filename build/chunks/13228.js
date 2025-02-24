@@ -27,16 +27,16 @@ function p(e) {
         numberOfGamesLaunchedSinceDismissal: p,
         numberOfTimesDismissed: h
       },
-      hasTakenDecoupledClip: f,
+      hasTakenDecoupledClip: g,
       clipsSettings: {
-        clipsEnabled: g
+        clipsEnabled: f
       }
     } = s.Z.getState();
     if (null === r) return !0;
     if (!(null != e && (0, a.xt)(e))) return !1;
     let m = Date.now() - r > u.xx,
       b = p >= u._U,
-      _ = g ? u.xd : u.A5;
-    return m && b && h < _ && !f
+      _ = f ? u.xd : u.A5;
+    return m && b && h < _ && !g
   })
 }

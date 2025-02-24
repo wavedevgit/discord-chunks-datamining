@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -18,7 +18,7 @@ function h() {
   (0, c.qV)(), (0, a.uL)(u.Z5c.LOGIN)
 }
 
-function f(e) {
+function g(e) {
   let {
     underageMessage: t,
     transitionState: a

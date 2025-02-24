@@ -24,10 +24,10 @@ var r = n(200651),
   x = n(981631),
   j = n(37113),
   O = n(388032),
-  N = n(534184),
-  E = n(574169);
+  E = n(534184),
+  N = n(574169);
 
-function P(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function P(e) {
   }
   return e
 }
-let I = e => 1 - Math.pow(1 - e, 3);
+let P = e => 1 - Math.pow(1 - e, 3);
 
 function S(e) {
   let {
@@ -53,13 +53,13 @@ function S(e) {
     buyer: l,
     onClose: a,
     dismissibleContent: S
-  } = e, Z = (0, u.Wu)([g.Z], () => g.Z.getAllActiveStreams()), T = (0, u.e7)([_.default], () => _.default.getCurrentUser()), A = null != Z.find(e => e.ownerId === (null == T ? void 0 : T.id)), w = (0, u.e7)([y.Z], () => y.Z.getPreviousGoLiveSettings()), R = A && null != w && w.resolution !== j.LY.RESOLUTION_1440 && w.frameRate !== j.ws.FPS_60, [k, M] = (0, i.useState)(!1);
+  } = e, Z = (0, u.Wu)([g.Z], () => g.Z.getAllActiveStreams()), T = (0, u.e7)([_.default], () => _.default.getCurrentUser()), A = null != Z.find(e => e.ownerId === (null == T ? void 0 : T.id)), w = (0, u.e7)([y.Z], () => y.Z.getPreviousGoLiveSettings()), R = A && null != w && w.resolution !== j.LY.RESOLUTION_1440 && w.frameRate !== j.ws.FPS_60, [M, k] = (0, i.useState)(!1);
   (0, i.useEffect)(() => {
-    M(!0)
+    k(!0)
   }, []);
   let L = (0, i.useContext)(m.h9),
     D = (0, d.q_F)({
-      from: k ? {
+      from: M ? {
         opacity: 0,
         transform: "translateX(-50%) translateY(30px) scale(0.9)"
       } : {},
@@ -69,8 +69,8 @@ function S(e) {
       },
       config: {
         duration: 250,
-        easing: I,
-        immediate: !k
+        easing: P,
+        immediate: !M
       }
     }),
     {
@@ -99,22 +99,22 @@ function S(e) {
     z = R ? O.NW.string(O.t.o7NIjY) : F ? O.NW.string(O.t.r6xhBw) : O.NW.string(O.t.yKw8Dg);
   return null == l || null == T ? null : (0, r.jsxs)(c.animated.div, {
     style: D,
-    className: N.banner,
+    className: E.banner,
     children: [(0, r.jsxs)("div", {
-      children: [(0, r.jsx)(d.qEK, P({
+      children: [(0, r.jsx)(d.qEK, I({
         src: W,
         "aria-label": l.username,
         size: d.EFr.SIZE_48
       }, U)), (0, r.jsx)("img", {
-        className: N.potion,
-        src: E,
+        className: E.potion,
+        src: N,
         alt: ""
       })]
     }), (0, r.jsx)(d.X6q, {
       variant: "heading-sm/medium",
       children: V
     }), (0, r.jsxs)("div", {
-      className: N.subsection,
+      className: E.subsection,
       children: [(0, r.jsx)(d.zxk, {
         onClick: () => {
           if (R) {
@@ -135,17 +135,17 @@ function S(e) {
             let {
               default: e
             } = await Promise.all([n.e("93382"), n.e("79477"), n.e("3458")]).then(n.bind(n, 60594));
-            return t => (0, r.jsx)(e, P({
+            return t => (0, r.jsx)(e, I({
               analyticsLocation: "HDStreamingPotionBanner"
             }, t))
           }), a()
         },
         className: o()({
-          [N.actionButton]: !0 !== A
+          [E.actionButton]: !0 !== A
         }),
         children: z
       }), !F && (0, r.jsx)(d.P3F, {
-        className: N.x,
+        className: E.x,
         onClick: a,
         children: (0, r.jsx)(d.Dio, {
           name: "close"

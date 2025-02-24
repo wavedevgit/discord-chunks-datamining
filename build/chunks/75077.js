@@ -166,7 +166,9 @@ let v = (e, t, n) => (0, s.wj)(e) ? t : n,
     }, {
       autoTrackExposure: !1
     }), f = g && !p && !h, b = P();
-    return null != n.tenureBadge && o({
+    return null != n.collectibleDeco && o({
+      card: n.collectibleDeco
+    }), null != n.tenureBadge && o({
       card: n.tenureBadge
     }), null != n.tenureRewardCollectible && !0 === i && o({
       card: n.tenureRewardCollectible

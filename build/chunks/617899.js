@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -21,7 +21,7 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class f extends i.PureComponent {
+class g extends i.PureComponent {
   render() {
     let e = "".concat(d.NW.string(d.t.VWqWZW), "\n").concat(d.NW.string(d.t["0Lgb/P"]));
     return (0, r.jsx)(s.Z, {
@@ -81,4 +81,4 @@ class f extends i.PureComponent {
     })
   }
 }
-let g = f
+let f = g

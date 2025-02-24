@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(975298),
   p = n(605236),
   h = n(243778),
-  f = n(819640),
-  g = n(594174),
+  g = n(819640),
+  f = n(594174),
   m = n(351402),
   b = n(78839),
   _ = n(626135),
@@ -47,9 +47,9 @@ let B = "NitroTabButton",
   H = e => {
     let {
       selected: t
-    } = e, n = (0, o.e7)([g.default], () => g.default.getCurrentUser()), r = (0, o.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()), i = (0, T.N)(), l = (0, S.Ng)(), a = (0, Z.Vi)(), s = (0, D.vx)(B), c = (0, D.wG)(B), u = (0, j.$_)(), d = (0, w.V)(), p = (0, E.Qo)(n, r), h = (0, o.e7)([O.Z], () => O.Z.getCreatedAtOverride()), f = (0, I.m)({
+    } = e, n = (0, o.e7)([f.default], () => f.default.getCurrentUser()), r = (0, o.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()), i = (0, T.N)(), l = (0, S.Ng)(), a = (0, Z.Vi)(), s = (0, D.vx)(B), c = (0, D.wG)(B), u = (0, j.$_)(), d = (0, w.V)(), p = (0, E.Qo)(n, r), h = (0, o.e7)([O.Z], () => O.Z.getCreatedAtOverride()), g = (0, I.m)({
       location: B
-    }), m = t || null != i || null != l || a || s || c || null != u || null != d || !0 === f || p, _ = null != h ? h : null == n ? void 0 : n.createdAt;
+    }), m = t || null != i || null != l || a || s || c || null != u || null != d || !0 === g || p, _ = null != h ? h : null == n ? void 0 : n.createdAt;
     return m || null != n && null != _ && Date.now() - _.getTime() > 12096e5
   },
   F = e => {
@@ -74,7 +74,7 @@ let B = "NitroTabButton",
         }
         return i
       }(e, ["selected", "route", "locationState"]);
-    let J = (0, o.e7)([g.default], () => g.default.getCurrentUser()),
+    let J = (0, o.e7)([f.default], () => f.default.getCurrentUser()),
       $ = (0, o.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()),
       ee = (0, E.Qo)(J, $),
       et = (0, l.JA)("nitro"),
@@ -88,16 +88,16 @@ let B = "NitroTabButton",
       ec = (0, D.Kn)(B),
       eu = (0, D.vx)(B),
       ed = (0, D.wG)(B),
-      ep = (0, o.e7)([f.Z], () => f.Z.hasLayers()),
+      ep = (0, o.e7)([g.Z], () => g.Z.hasLayers()),
       {
         fractionalState: eh,
-        startsAt: ef,
-        endsAt: eg
+        startsAt: eg,
+        endsAt: ef
       } = (0, d.Z)({
         forceFetch: !0
       }),
       [em, eb] = (0, h.bf)(eh !== M.a$.NONE ? a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
-        showAfterTimestamp: ef.valueOf(),
+        showAfterTimestamp: eg.valueOf(),
         cooldownDurationMs: 0
       }),
       {
@@ -125,8 +125,8 @@ let B = "NitroTabButton",
       })) return null;
     eh === M.a$.NONE || ei || (F = 9, O = (0, r.jsx)(y.Z, {
       className: "",
-      startsAt: ef,
-      endsAt: eg,
+      startsAt: eg,
+      endsAt: ef,
       messageStyle: u.a.SHORT_TIME,
       upperCase: !0
     })), !0 === ev ? O = !0 === ey ? (0, r.jsx)(L.Du, {}) : (0, r.jsx)(k.Z, {

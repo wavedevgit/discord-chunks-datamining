@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => P
+  Z: () => I
 }), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -27,11 +27,11 @@ let O = {
   height: v.lv
 };
 
-function N() {
+function E() {
   m.yT(b.ti.DISMISSED)
 }
 
-function E(e) {
+function N(e) {
   let {
     channel: t,
     closeOnModalOuterClick: n = !1,
@@ -39,7 +39,7 @@ function E(e) {
   } = e, p = i.useRef(null), {
     renderWindow: m,
     windowDispatch: x
-  } = i.useContext(c.ZP), j = null != d, O = (0, a.Jw)(null != d ? d : ""), E = i.useCallback(e => {
+  } = i.useContext(c.ZP), j = null != d, O = (0, a.Jw)(null != d ? d : ""), N = i.useCallback(e => {
     var t;
     if (!j && (0, a.$s)() || j && !(O && n)) return;
     let {
@@ -56,27 +56,27 @@ function E(e) {
       if (r.classList.contains(v.NN)) return;
       r = r.parentNode
     }
-    N();
+    E();
     let i = null === (t = (0, f.uB)(e)) || void 0 === t ? void 0 : t.activeElement;
     (null == i || "BODY" === i.tagName) && h.S.dispatchToLastSubscribed(y.CkL.TEXTAREA_FOCUS)
   }, [n, O, j]);
-  i.useLayoutEffect(() => (m.addEventListener("mousedown", E), m.addEventListener("contextmenu", E), x.subscribe(y.CkL.POPOUT_CLOSE, N), () => {
-    m.removeEventListener("mousedown", E), m.removeEventListener("contextmenu", E), x.unsubscribe(y.CkL.POPOUT_CLOSE, N)
-  }), [E, m, x]), (0, s.Tbt)(p), i.useEffect(() => {
-    (!j && (0, a.$s)() || j && !O) && N()
+  i.useLayoutEffect(() => (m.addEventListener("mousedown", N), m.addEventListener("contextmenu", N), x.subscribe(y.CkL.POPOUT_CLOSE, E), () => {
+    m.removeEventListener("mousedown", N), m.removeEventListener("contextmenu", N), x.unsubscribe(y.CkL.POPOUT_CLOSE, E)
+  }), [N, m, x]), (0, s.Tbt)(p), i.useEffect(() => {
+    (!j && (0, a.$s)() || j && !O) && E()
   }, [O, j]);
-  let P = (0, o.e7)([g.Z], () => g.Z.initialState(), []),
-    I = (0, u.q)(null == P ? void 0 : P.applicationId),
+  let I = (0, o.e7)([g.Z], () => g.Z.initialState(), []),
+    P = (0, u.q)(null == I ? void 0 : I.applicationId),
     S = i.useMemo(() => {
-      if (null == P) return;
+      if (null == I) return;
       let e = [{
         type: _.gc.HOME
       }];
-      return null != P.applicationId && null != I && e.push({
+      return null != I.applicationId && null != P && e.push({
         type: _.gc.APPLICATION,
-        application: I
+        application: P
       }), e
-    }, [P, I]);
+    }, [I, P]);
   return (0, r.jsx)(C.Z, {
     ref: p,
     context: {
@@ -87,7 +87,7 @@ function E(e) {
     initHistory: S
   })
 }
-let P = i.memo(function(e) {
+let I = i.memo(function(e) {
   var {
     positionTargetRef: t
   } = e, n = function(e, t) {
@@ -125,7 +125,7 @@ let P = i.memo(function(e) {
           role: "dialog",
           style: O,
           "aria-label": x.NW.string(x.t["3CNGLC"]),
-          children: t && (0, r.jsx)(E, function(e) {
+          children: t && (0, r.jsx)(N, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);

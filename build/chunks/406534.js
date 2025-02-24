@@ -24,18 +24,18 @@ var r = n(200651),
   x = n(248789),
   j = n(88101),
   O = n(576954),
-  N = n(765104),
-  E = n(122707),
-  P = n(779836),
-  I = n(23750),
+  E = n(765104),
+  N = n(122707),
+  I = n(779836),
+  P = n(23750),
   S = n(496675),
   Z = n(306680),
   T = n(944486),
   A = n(594174),
   w = n(55935),
   R = n(70956),
-  k = n(709054),
-  M = n(534091),
+  M = n(709054),
+  k = n(534091),
   L = n(900164),
   D = n(554838),
   W = n(481369),
@@ -88,7 +88,7 @@ let en = i.memo(function(e) {
     compact: o,
     isGroupStart: l,
     channel: n,
-    message: new I.ZP({
+    message: new P.ZP({
       id: t.id,
       key: "pending-upload-".concat(t.id),
       type: Q.uaV.DEFAULT,
@@ -131,12 +131,12 @@ function er(e) {
     e_ = (0, U.$)(er),
     eC = ei.length > 0 && (null === (t = ei.first()) || void 0 === t ? void 0 : t.isFirstMessageInForumPost(er)),
     ev = (0, c.ts)(er),
-    ey = (0, l.e7)([N.Z], () => N.Z.shouldShowTopicsBar() && !ef),
+    ey = (0, l.e7)([E.Z], () => E.Z.shouldShowTopicsBar() && !ef),
     ex = (0, j.P)(er.id),
     ej = (0, y.z)(er.id, J.zr),
     eO = (0, p.k)(er.id),
-    eN = (0, W.Z)(),
-    eE = (i = er, s = null !== (n = null != ex ? ex : ej) && void 0 !== n ? n : eO, i.isDM() && null != s ? s.type === v.pj.STRANGER_DANGER ? (0, r.jsx)(O.M, {
+    eE = (0, W.Z)(),
+    eN = (i = er, s = null !== (n = null != ex ? ex : ej) && void 0 !== n ? n : eO, i.isDM() && null != s ? s.type === v.pj.STRANGER_DANGER ? (0, r.jsx)(O.M, {
       channelId: i.id,
       warningId: s.id,
       senderId: i.getRecipientId()
@@ -149,10 +149,10 @@ function er(e) {
       warningId: s.id,
       senderId: i.getRecipientId()
     }) : null),
-    eP = er.isForumPost() && !eC ? (0, r.jsx)(g.Z, {
+    eI = er.isForumPost() && !eC ? (0, r.jsx)(g.Z, {
       postId: er.id
     }) : null,
-    eI = (0, _.Z)(er.id);
+    eP = (0, _.Z)(er.id);
   (0, Y.Z)();
   let eS = null,
     eZ = [],
@@ -160,7 +160,7 @@ function er(e) {
       if (e.type === Q.ys_.DIVIDER) {
         var n, i;
         let l = null != e.unreadId;
-        return null != ep ? null : e.isSummaryDivider ? (0, r.jsx)(P.Z, {
+        return null != ep ? null : e.isSummaryDivider ? (0, r.jsx)(I.Z, {
           index: t,
           item: e,
           channel: er,
@@ -200,15 +200,15 @@ function er(e) {
         message: e.content,
         groupId: o,
         flashKey: e.flashKey,
-        id: (0, M.p)(er.id, e.content.id),
+        id: (0, k.p)(er.id, e.content.id),
         isLastItem: t >= es.length - 1,
-        renderContentOnly: eI
+        renderContentOnly: eP
       }, e.content.id)
     });
   eZ.push(...eT);
   let eA = es[es.length - 1];
   if (null != eg && ec.forEach((e, t) => {
-      let n = 0 === t && (0, D.J)(er, eA, new I.ZP({
+      let n = 0 === t && (0, D.J)(er, eA, new P.ZP({
         type: Q.uaV.DEFAULT,
         author: eg
       }));
@@ -243,11 +243,11 @@ function er(e) {
     })), el > 0 && eo && eb()) {
     let e, t;
     let n = Z.ZP.getOldestUnreadTimestamp(er.id),
-      i = 0 !== n ? n : k.default.extractTimestamp(er.id),
+      i = 0 !== n ? n : M.default.extractTimestamp(er.id),
       l = (0, w.KC)(new Date, new Date(i));
-    if (Z.ZP.isEstimated(er.id) ? (e = l ? $.t.wvtbbG : $.t.tHqbtr, t = $.t.vaPWFR) : (e = l ? $.t.BctFHx : $.t["3wXb9P"], t = $.t["4H8ldH"]), ev && (0, c.tW)(er) && eN.includes(K.E.SUMMARIES)) {
+    if (Z.ZP.isEstimated(er.id) ? (e = l ? $.t.wvtbbG : $.t.tHqbtr, t = $.t.vaPWFR) : (e = l ? $.t.BctFHx : $.t["3wXb9P"], t = $.t["4H8ldH"]), ev && (0, c.tW)(er) && eE.includes(K.E.SUMMARIES)) {
       let n = Z.ZP.ackMessageId(er.id),
-        l = (0, E.q)(er.id, Z.ZP.getOldestUnreadMessageId(er.id));
+        l = (0, N.q)(er.id, Z.ZP.getOldestUnreadMessageId(er.id));
       if ((0, d.yw)(Q.rMx.SUMMARIES_UNREAD_BAR_VIEWED, {
           num_unread_summaries: l,
           num_unread_messages: el,
@@ -333,7 +333,7 @@ function er(e) {
           })
         }
       }
-    } else eN.includes(K.E.NEW_MESSAGES) && (f = (0, r.jsx)(V.LE, {
+    } else eE.includes(K.E.NEW_MESSAGES) && (f = (0, r.jsx)(V.LE, {
       content: $.NW.format(e, {
         count: el,
         timestamp: i
@@ -341,7 +341,7 @@ function er(e) {
       channelId: er.id
     }))
   }
-  if (null == f && (0, c.Lp)(er) && ey && eN.includes(K.E.SUMMARIES) && (f = (0, r.jsx)(V.BO, {
+  if (null == f && (0, c.Lp)(er) && ey && eE.includes(K.E.SUMMARIES) && (f = (0, r.jsx)(V.BO, {
       channel: er,
       scrollManager: eu
     })), ei.error) B = (0, r.jsx)(V.Rp, {
@@ -385,7 +385,7 @@ function er(e) {
     channelStreamMarkup: eZ,
     newMessagesBar: f,
     jumpToPresentBar: B,
-    forumPostActionBar: eP,
-    safetyWarningBanner: eE
+    forumPostActionBar: eI,
+    safetyWarningBanner: eN
   }
 }

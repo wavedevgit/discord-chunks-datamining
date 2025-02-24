@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => P
+  Z: () => S
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -21,12 +21,13 @@ var r = n(200651),
   C = n(871499),
   v = n(131951),
   y = n(459273),
-  x = n(304388),
-  j = n(981631),
-  O = n(127379),
+  x = n(795318),
+  j = n(304388),
+  O = n(981631),
+  E = n(127379),
   N = n(388032);
 
-function E(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,115 +46,118 @@ function E(e) {
   return e
 }
 
-function P(e) {
+function P(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function S(e) {
   let {
     channel: t,
-    themeable: P,
-    whichPopoutIsOpen: I,
-    setWhichPopoutIsOpen: S
+    themeable: S,
+    whichPopoutIsOpen: Z,
+    setWhichPopoutIsOpen: T
   } = e, {
-    Component: Z,
+    Component: A,
     events: {
-      onMouseEnter: T,
-      onMouseLeave: A
+      onMouseEnter: w,
+      onMouseLeave: R
     }
-  } = (0, a.j)(), w = t.getGuildId(), {
-    mute: R,
-    suppress: k
-  } = (0, b.Z)(t), M = (0, l.e7)([v.Z], () => v.Z.isDeaf()), L = R || k || M, D = (0, d.sR)({
-    isSoundboardButtonDisabled: L
-  }), [W, U] = (0, u.cv)(D), {
-    mode: B
+  } = (0, a.j)(), M = t.getGuildId(), {
+    mute: k,
+    suppress: L
+  } = (0, b.Z)(t), D = (0, l.e7)([v.Z], () => v.Z.isDeaf()), W = k || L || D, U = (0, d.sR)({
+    isSoundboardButtonDisabled: W
+  }), [B, F] = (0, u.cv)(U), {
+    mode: H
   } = (0, f.ZP)({
     location: "ActionBarSoundboardButton"
-  }), F = (0, g.Z)({
+  }), G = (0, g.Z)({
     location: "ActionBarSoundboardButton"
   }), {
-    coloredIcons: H,
-    squareButtons: G
+    coloredIcons: V,
+    squareButtons: z
   } = (0, m.Z)({
     location: "ActionBarSoundboardButton"
-  }), V = B === f.BK.GroupedButtonsRedMic || G ? "green" : void 0;
+  }), q = H === f.BK.GroupedButtonsRedMic || z ? "green" : void 0;
 
-  function z() {
-    return R ? N.NW.string(N.t["Ox4/zc"]) : k ? N.NW.string(N.t["+YBKYG"]) : M ? N.NW.string(N.t.X1lQlp) : void 0
+  function Y() {
+    return k ? N.NW.string(N.t["Ox4/zc"]) : L ? N.NW.string(N.t["+YBKYG"]) : D ? N.NW.string(N.t.X1lQlp) : void 0
   }
 
-  function q(e) {
-    null != w && (0, c.jW)(e, async () => {
+  function K(e) {
+    null != M && (0, c.jW)(e, async () => {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
-      return t => (0, r.jsx)(e, E({
-        guildId: w
-      }, t))
+      return t => (0, r.jsx)(e, P(I({
+        guildId: M
+      }, t), {
+        onInteraction: (0, x.u)("SoundboardContextMenu", "ActionBarSoundboardButton")
+      }))
     })
   }
-  H && (V = "primaryDark");
-  let Y = i.useRef(null),
-    K = i.useCallback(() => {
+  V && (q = "primaryDark");
+  let X = i.useRef(null),
+    Q = i.useCallback(() => {
       var e;
-      null === (e = Y.current) || void 0 === e || e.hidePopout()
+      null === (e = X.current) || void 0 === e || e.hidePopout()
     }, []);
   return (0, y.yp)({
-    event: j.CkL.TOGGLE_SOUNDBOARD,
-    handler: K
-  }), (0, r.jsx)(x.Z, {
-    ref: Y,
-    isPopoutBlocked: null != I && I !== O.D.SOUNDBOARD,
-    onPopoutClose: () => null == S ? void 0 : S(void 0),
-    onPopoutOpen: () => null == S ? void 0 : S(O.D.SOUNDBOARD),
-    align: F ? "center" : "left",
+    event: O.CkL.TOGGLE_SOUNDBOARD,
+    handler: Q
+  }), (0, r.jsx)(j.Z, {
+    ref: X,
+    isPopoutBlocked: null != Z && Z !== E.D.SOUNDBOARD,
+    onPopoutClose: () => null == T ? void 0 : T(void 0),
+    onPopoutOpen: () => null == T ? void 0 : T(E.D.SOUNDBOARD),
+    align: G ? "center" : "left",
     renderPopout: e => {
       let {
         closePopout: n
       } = e;
-      return L ? null : (0, r.jsx)(_.Z, {
+      return W ? null : (0, r.jsx)(_.Z, {
         children: (0, r.jsx)(h.Z, {
-          guildId: w,
+          guildId: M,
           channel: t,
           onClose: n,
-          gridNotice: W === o.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(p.o, {
+          gridNotice: B === o.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(p.o, {
             onClose: n,
-            markAsDismissed: U
+            markAsDismissed: F
           }),
           analyticsSource: "action bar button"
         })
       })
     },
-    children: e => {
-      var t, n;
-      return F ? (0, r.jsx)(C.d, (t = E({
-        themeable: P,
-        label: z(),
-        iconComponent: Z,
-        disabled: L,
-        onContextMenu: q
-      }, e), n = n = {
-        onMouseEnter: t => {
-          e.onMouseEnter(t), T()
-        },
-        onMouseLeave: () => {
-          e.onMouseLeave(), A()
-        },
-        color: e.isActive ? V : void 0,
-        className: ""
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-      }), t)) : (0, r.jsx)(C.Z, E({
-        themeable: P,
-        label: z(),
-        iconComponent: s.KY1,
-        disabled: L,
-        onContextMenu: q
-      }, e))
-    }
+    children: e => G ? (0, r.jsx)(C.d, P(I({
+      themeable: S,
+      label: Y(),
+      iconComponent: A,
+      disabled: W,
+      onContextMenu: K
+    }, e), {
+      onMouseEnter: t => {
+        e.onMouseEnter(t), w()
+      },
+      onMouseLeave: () => {
+        e.onMouseLeave(), R()
+      },
+      color: e.isActive ? q : void 0,
+      className: ""
+    })) : (0, r.jsx)(C.Z, I({
+      themeable: S,
+      label: Y(),
+      iconComponent: s.KY1,
+      disabled: W,
+      onContextMenu: K
+    }, e))
   })
 }

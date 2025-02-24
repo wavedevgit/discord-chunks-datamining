@@ -24,18 +24,18 @@ var r = n(200651),
   x = n(585483),
   j = n(51144),
   O = n(566620),
-  N = n(317381),
-  E = n(619915),
-  P = n(988980),
-  I = n(16609),
+  E = n(317381),
+  N = n(619915),
+  I = n(988980),
+  P = n(16609),
   S = n(952561),
   Z = n(563218),
   T = n(884338),
   A = n(719296),
   w = n(651612),
   R = n(918559),
-  k = n(981631),
-  M = n(388032),
+  M = n(981631),
+  k = n(388032),
   L = n(394657);
 let D = T.u.SIZE_32,
   W = {
@@ -51,9 +51,9 @@ function U(e) {
     renderExternalHeader: B
   } = e, F = (0, m.Z)({
     location: "ActivityPanelFocusedView"
-  }), H = (0, S.Z)(), G = (0, a.Wu)([N.ZP], () => N.ZP.getEmbeddedActivitiesForLocation(U), [U]), V = (0, I.pY)(U), z = (0, a.e7)([_.Z], () => _.Z.getChannel(V)), q = (0, E.gb)(G), Y = (0, E.uF)(q), K = i.useCallback(() => {
+  }), H = (0, S.Z)(), G = (0, a.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(U), [U]), V = (0, P.pY)(U), z = (0, a.e7)([_.Z], () => _.Z.getChannel(V)), q = (0, N.gb)(G), Y = (0, N.uF)(q), K = i.useCallback(() => {
     (0, O.tg)(R.Ez.PIP)
-  }, []), X = i.useRef(null), Q = (0, a.e7)([N.ZP], () => N.ZP.getFocusedLayout()), J = Q !== R.MI.NO_CHAT, [$, ee] = i.useState(null !== (t = f.ZP.activityPanelHeight) && void 0 !== t ? t : l), et = i.useCallback(e => {
+  }, []), X = i.useRef(null), Q = (0, a.e7)([E.ZP], () => E.ZP.getFocusedLayout()), J = Q !== R.MI.NO_CHAT, [$, ee] = i.useState(null !== (t = f.ZP.activityPanelHeight) && void 0 !== t ? t : l), et = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
       activityPanelHeight: e
     })
@@ -75,7 +75,7 @@ function U(e) {
   let el = er.width / Math.max(er.height, 1) < R.I0,
     eo = 0,
     ea = 0,
-    es = (0, P.Z)(null == H ? void 0 : H.id);
+    es = (0, I.Z)(null == H ? void 0 : H.id);
   if (!es) {
     let e = er.width,
       t = er.height;
@@ -162,7 +162,7 @@ function U(e) {
     }, e.id)
   };
   return (0, r.jsx)(c.f6W, {
-    theme: k.BRd.DARK,
+    theme: M.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
       className: o()(L.wrapper, W[Q], e),
       ref: X,
@@ -211,7 +211,7 @@ function U(e) {
               children: [(0, r.jsx)(w.Z, {
                 channelId: eu
               }), (0, r.jsx)(g.d, {
-                label: M.NW.string(M.t.brPQ5e),
+                label: k.NW.string(k.t.brPQ5e),
                 onClick: K,
                 iconComponent: c.dOc,
                 themeable: !0
@@ -226,7 +226,7 @@ function U(e) {
                 className: F ? void 0 : L.leaveActivityButton
               })
             }), F ? null : (0, r.jsx)(g.d, {
-              label: M.NW.string(M.t.brPQ5e),
+              label: k.NW.string(k.t.brPQ5e),
               onClick: K,
               iconComponent: c.dOc,
               themeable: !0,
@@ -241,12 +241,12 @@ function U(e) {
         maxHeight: l,
         resizableNode: X,
         onResize: e => {
-          x.S.dispatch(k.CkL.MANUAL_IFRAME_RESIZING, {
+          x.S.dispatch(M.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: !0
           }), ee(e)
         },
         onResizeEnd: e => {
-          x.S.dispatch(k.CkL.MANUAL_IFRAME_RESIZING, {
+          x.S.dispatch(M.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: !1
           }), et(e)
         }

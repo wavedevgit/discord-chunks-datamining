@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(481060),
   p = n(393238),
   h = n(410030),
-  f = n(204418),
-  g = n(70097),
+  g = n(204418),
+  f = n(70097),
   m = n(594174),
   b = n(626135),
   _ = n(617136),
@@ -98,14 +98,14 @@ let T = (0, i.memo)(function(e) {
         style: {
           top: L
         },
-        children: (0, r.jsx)(f.Z, {
+        children: (0, r.jsx)(g.Z, {
           avatarDecorationOverride: Q,
           user: G,
           guildId: null
         })
       }), Y ? (0, r.jsx)(v.Z, {
         className: S.image
-      }) : $.isAnimated ? (0, r.jsx)(g.Z, {
+      }) : $.isAnimated ? (0, r.jsx)(f.Z, {
         className: S.assetBlurred,
         autoPlay: !1,
         children: (0, r.jsx)("source", {

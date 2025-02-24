@@ -14,8 +14,8 @@ var i = n(481060),
   d = n(758119),
   p = n(920644),
   h = n(208381),
-  f = n(723359),
-  g = n(981631);
+  g = n(723359),
+  f = n(981631);
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -40,7 +40,7 @@ function b(e, t) {
   var n;
   if (null == e) return;
   let r = u.default.getCurrentUser();
-  (null === (n = a.Z.getChannel(t)) || void 0 === n ? void 0 : n.isNSFW()) && null != r && null == r.nsfwAllowed && (0, d.mN)(f.L0.NSFW_CHANNEL)
+  (null === (n = a.Z.getChannel(t)) || void 0 === n ? void 0 : n.isNSFW()) && null != r && null == r.nsfwAllowed && (0, d.mN)(g.L0.NSFW_CHANNEL)
 }
 class _ extends o.Z {
   _initialize() {
@@ -71,23 +71,23 @@ class _ extends o.Z {
         source: t
       }, n))
     }, {
-      modalKey: f.dG,
-      onCloseRequest: g.dG4
+      modalKey: g.dG,
+      onCloseRequest: f.dG4
     })
   }
   handleAgeGateSuccess() {
-    (0, i.oav)(f.dG, e => (0, r.jsx)(h.Z, m({}, e)))
+    (0, i.oav)(g.dG, e => (0, r.jsx)(h.Z, m({}, e)))
   }
   handleAgeGateFailure(e) {
     let {
       underageMessage: t
     } = e;
-    (0, i.oav)(f.dG, e => (0, r.jsx)(p.Z, m({
+    (0, i.oav)(g.dG, e => (0, r.jsx)(p.Z, m({
       underageMessage: t
     }, e)))
   }
   handleAgeGateModalClose() {
-    (0, i.Mr3)(f.dG)
+    (0, i.Mr3)(g.dG)
   }
 }
 let E = new _

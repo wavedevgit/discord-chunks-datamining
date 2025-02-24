@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 }), n(653041), n(47120), n(13667), n(390547);
 var r = n(200651),
   i = n(192379),
@@ -50,13 +50,13 @@ function h(e) {
     totalMembers: i,
     activity: o,
     guildId: h,
-    sourceAnalyticsLocations: f
-  } = e, g = [];
+    sourceAnalyticsLocations: g
+  } = e, f = [];
   for (let {
       user: e,
       status: n
     }
-    of t) g.push((0, r.jsx)(l.sNh, {
+    of t) f.push((0, r.jsx)(l.sNh, {
     id: e.id,
     keepItemStyles: !0,
     render: t => (0, r.jsx)(s.Z, p(d({}, t), {
@@ -67,13 +67,13 @@ function h(e) {
     action: () => (0, a.openUserProfileModal)({
       userId: e.id,
       guildId: h,
-      sourceAnalyticsLocations: f,
+      sourceAnalyticsLocations: g,
       analyticsLocation: {
         section: c.jXE.ACTIVITY_FEED_NOW_PLAYING_CONTEXT_MENU
       }
     })
   }));
-  for (let e of n) g.push((0, r.jsx)(l.sNh, {
+  for (let e of n) f.push((0, r.jsx)(l.sNh, {
     id: e.id,
     keepItemStyles: !0,
     render: t => (0, r.jsx)(s.Z, p(d({}, t), {
@@ -83,24 +83,24 @@ function h(e) {
     action: () => (0, a.openUserProfileModal)({
       userId: e.id,
       guildId: h,
-      sourceAnalyticsLocations: f,
+      sourceAnalyticsLocations: g,
       analyticsLocation: {
         section: c.jXE.ACTIVITY_FEED_NOW_PLAYING_CONTEXT_MENU
       }
     })
   }));
-  let m = i - g.length;
-  return m > 0 && g.push((0, r.jsx)(l.sNh, {
+  let m = i - f.length;
+  return m > 0 && f.push((0, r.jsx)(l.sNh, {
     id: "unknown-members-".concat(null == o ? void 0 : o.session_id),
     render: e => (0, r.jsx)(s.Y, p(d({}, e), {
       label: u.NW.formatToPlainString(u.t["6Kqn9P"], {
         count: m
       })
     }))
-  })), g
+  })), f
 }
 
-function f(e) {
+function g(e) {
   let {
     priorityMembers: t,
     partiedMembers: n,
@@ -113,7 +113,7 @@ function f(e) {
     return t.id
   })), d = n.filter(e => !c.has(e.id)), {
     analyticsLocations: p
-  } = (0, o.ZP)(), f = i.useMemo(() => {
+  } = (0, o.ZP)(), g = i.useMemo(() => {
     let e = a.flatMap(e => {
       let {
         playingMembers: t
@@ -122,8 +122,8 @@ function f(e) {
     }).map(e => e.id);
     return n.filter(t => !e.includes(t.id))
   }, [n, a]);
-  if (a.length <= 1 && 0 === f.length) {
-    var g, m;
+  if (a.length <= 1 && 0 === g.length) {
+    var f, m;
     return (0, r.jsx)(l.kSQ, {
       label: n.length > 1 ? u.NW.formatToPlainString(u.t.C4WXvb, {
         memberCount: n.length
@@ -132,7 +132,7 @@ function f(e) {
         priorityMembers: t,
         otherMembers: d,
         totalMembers: n.length,
-        activity: null !== (m = null === (g = a[0]) || void 0 === g ? void 0 : g.activity) && void 0 !== m ? m : void 0,
+        activity: null !== (m = null === (f = a[0]) || void 0 === f ? void 0 : f.activity) && void 0 !== m ? m : void 0,
         guildId: null == s ? void 0 : s.id,
         sourceAnalyticsLocations: p
       })
@@ -161,9 +161,9 @@ function f(e) {
         })
       }, n)
     }),
-    _ = f.map(e => e.id);
+    _ = g.map(e => e.id);
   return [...b, (0, r.jsx)(l.kSQ, {
-    label: "".concat(u.NW.string(u.t["mIx+gI"]), " - ").concat(f.length),
+    label: "".concat(u.NW.string(u.t["mIx+gI"]), " - ").concat(g.length),
     children: h({
       priorityMembers: t.filter(e => {
         let {
@@ -171,8 +171,8 @@ function f(e) {
         } = e;
         return _.includes(t.id)
       }),
-      otherMembers: f.filter(e => !c.has(e.id)),
-      totalMembers: f.length,
+      otherMembers: g.filter(e => !c.has(e.id)),
+      totalMembers: g.length,
       guildId: null == s ? void 0 : s.id,
       sourceAnalyticsLocations: p
     })

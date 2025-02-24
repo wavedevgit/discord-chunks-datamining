@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(31569),
   p = n(164991),
   h = n(859921),
-  f = n(220068),
-  g = n(836768),
+  g = n(220068),
+  f = n(836768),
   m = n(766219),
   b = n(749681),
   _ = n(49898),
@@ -25,7 +25,7 @@ var r = n(200651),
 function v(e) {
   let {
     tab: t
-  } = e, n = g.Z.useField("selectedTab"), l = i.useMemo(() => (function(e) {
+  } = e, n = f.Z.useField("selectedTab"), l = i.useMemo(() => (function(e) {
     switch (e) {
       case _.GlobalDiscoveryTab.SERVERS:
         return (0, r.jsx)(s.QTo, {
@@ -43,7 +43,7 @@ function v(e) {
   })(t), [t]), O = i.useMemo(() => (0, m.s)(t), [t]), v = n === t, y = i.useCallback(() => {
     switch (t) {
       case _.GlobalDiscoveryTab.QUESTS:
-        return v && f.Z.resetState(), (0, b.transitionToGlobalDiscovery)({
+        return v && g.Z.resetState(), (0, b.transitionToGlobalDiscovery)({
           tab: _.GlobalDiscoveryTab.QUESTS,
           location: E.dr.DISCOVERY_SIDEBAR,
           questContent: a.j.DISCOVERY_SIDEBAR

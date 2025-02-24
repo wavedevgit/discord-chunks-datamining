@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(410575),
   p = n(613311),
   h = n(601564),
-  f = n(981631),
-  g = n(479445);
+  g = n(981631),
+  f = n(479445);
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,10 +30,10 @@ class b extends i.Component {
   }
   render() {
     return null != this.props.skuId ? (0, r.jsx)(d.Z, {
-      page: f.ZY5.CHANNEL_STORE_LISTING,
+      page: g.ZY5.CHANNEL_STORE_LISTING,
       root: !0,
       children: (0, r.jsx)("div", {
-        className: g.applicationStore,
+        className: f.applicationStore,
         children: (0, r.jsx)(l.AW, {
           path: "*",
           render: this.renderApplicationListing

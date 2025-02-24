@@ -24,18 +24,18 @@ var r = n(200651),
   x = n(967128),
   j = n(665149),
   O = n(294218),
-  N = n(913663),
-  E = n(268350),
-  P = n(695346),
-  I = n(592125),
+  E = n(913663),
+  N = n(268350),
+  I = n(695346),
+  P = n(592125),
   S = n(703558),
   Z = n(375954),
   T = n(496675),
   A = n(117530),
   w = n(459273),
   R = n(838440),
-  k = n(127654),
-  M = n(241309),
+  M = n(127654),
+  k = n(241309),
   L = n(928477),
   D = n(456077),
   W = n(488131),
@@ -70,7 +70,7 @@ function q(e) {
     parentChannelId: t,
     parentMessageId: n,
     location: i
-  } = e, l = (0, a.e7)([I.Z], () => I.Z.getChannel(t)), {
+  } = e, l = (0, a.e7)([P.Z], () => P.Z.getChannel(t)), {
     analyticsLocations: o
   } = (0, m.ZP)(f.Z.CREATE_THREAD);
   return null == l ? null : (0, r.jsx)(m.Gt, {
@@ -161,8 +161,8 @@ function Y(e) {
   }(t, m), v = (0, L.vH)(t), {
     nameError: j,
     messageError: O,
-    submit: P,
-    submitting: I
+    submit: I,
+    submitting: P
   } = function(e) {
     let {
       parentChannel: t,
@@ -189,11 +189,11 @@ function Y(e) {
           shouldClear: !1,
           shouldRefocus: !1
         };
-        h(!0), null == e && (e = o.textValue), e = e.trim(), (null == i || 0 === i.length) && (i = null === (a = N.Z.getStickerPreview(t.id, z.drafts.type)) || void 0 === a ? void 0 : a.map(e => e.id)), (null == l || 0 === l.length) && (l = A.Z.getUploads(t.id, S.d.FirstThreadMessage));
+        h(!0), null == e && (e = o.textValue), e = e.trim(), (null == i || 0 === i.length) && (i = null === (a = E.Z.getStickerPreview(t.id, z.drafts.type)) || void 0 === a ? void 0 : a.map(e => e.id)), (null == l || 0 === l.length) && (l = A.Z.getUploads(t.id, S.d.FirstThreadMessage));
         let m = null !== (s = r.name) && void 0 !== s ? s : "",
           g = null == n && 0 === m.length,
           b = "" === e && (null == i || 0 === i.length) && 0 === l.length;
-        if (c(g ? (0, M.V_)() : null), d(b ? (0, M.T4)() : null), g || b) return h(!1), {
+        if (c(g ? (0, k.V_)() : null), d(b ? (0, k.T4)() : null), g || b) return h(!1), {
           shouldClear: !1,
           shouldRefocus: !0
         };
@@ -215,12 +215,12 @@ function Y(e) {
         try {
           await f(e, i, l)
         } catch (e) {
-          return (null === (u = e.body) || void 0 === u ? void 0 : u.code) === B.evJ.AUTOMOD_TITLE_BLOCKED && c((0, M.Gx)(e.body, t)), h(!1), {
+          return (null === (u = e.body) || void 0 === u ? void 0 : u.code) === B.evJ.AUTOMOD_TITLE_BLOCKED && c((0, k.Gx)(e.body, t)), h(!1), {
             shouldClear: !1,
             shouldRefocus: !0
           }
         }
-        return (0, E.qB)(t.id, z.drafts.type), h(!1), {
+        return (0, N.qB)(t.id, z.drafts.type), h(!1), {
           shouldClear: !0,
           shouldRefocus: !1
         }
@@ -243,7 +243,7 @@ function Y(e) {
       className: o()(H.messagesWrapper, "group-spacing-".concat(u)),
       children: (0, r.jsxs)("form", {
         onSubmit: e => {
-          e.preventDefault(), P()
+          e.preventDefault(), I()
         },
         className: H.form,
         children: [(0, r.jsx)(s.Ttm, {
@@ -264,7 +264,7 @@ function Y(e) {
                 threadSettings: f,
                 updateThreadSettings: g,
                 error: j,
-                disabled: I
+                disabled: P
               }), t.type === B.d4z.GUILD_TEXT ? (0, r.jsx)(K, {
                 startedFromMessage: null != n,
                 threadSettings: f,
@@ -282,7 +282,7 @@ function Y(e) {
             parentChannel: t,
             textAreaState: _,
             setTextAreaState: C,
-            submit: P,
+            submit: I,
             error: O
           }), T ? null : (0, r.jsx)(d.Z, {
             channel: t,
@@ -341,7 +341,7 @@ function X(e) {
     updateThreadSettings: o,
     error: a,
     disabled: c
-  } = e, d = null !== (t = l.name) && void 0 !== t ? t : "", p = (0, M.Op)(a, {
+  } = e, d = null !== (t = l.name) && void 0 !== t ? t : "", p = (0, k.Op)(a, {
     content: d
   }), h = (0, L.Od)(n, i), f = null != i, m = (0, v.Dt)();
   return (0, r.jsx)(s.hjN, {
@@ -399,7 +399,7 @@ function Q(e) {
     handler: g
   });
   let y = (0, a.e7)([T.Z], () => T.Z.can(B.Plq.ATTACH_FILES, t)),
-    x = (0, M.Op)(p, {
+    x = (0, k.Op)(p, {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {
@@ -427,7 +427,7 @@ function Q(e) {
       onBlur: g,
       onChange: b,
       onSubmit: v,
-      promptToUpload: k.d
+      promptToUpload: M.d
     })]
   })
 }
@@ -436,7 +436,7 @@ function J(e) {
   let {
     parentChannel: t,
     parentMessageId: n
-  } = e, i = (0, a.e7)([Z.Z], () => null == n ? null : Z.Z.getMessage(t.id, n)), l = P.jU.useSetting();
+  } = e, i = (0, a.e7)([Z.Z], () => null == n ? null : Z.Z.getMessage(t.id, n)), l = I.jU.useSetting();
   return null != i ? (0, r.jsx)(O.Z, {
     className: H.messagePreview,
     message: i,

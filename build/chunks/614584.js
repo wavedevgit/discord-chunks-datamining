@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => E
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -54,23 +54,23 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = i.memo(function(e) {
+let E = i.memo(function(e) {
   var t;
   let {
     baseMessage: n,
-    referencedMessage: N,
-    channel: E,
-    compact: P = !1,
-    referencedUsernameProfile: I,
+    referencedMessage: E,
+    channel: N,
+    compact: I = !1,
+    referencedUsernameProfile: P,
     referencedAvatarProfile: S,
     setPopout: Z,
     isReplySpineClickable: T,
     showReplySpine: A
-  } = e, w = N.state === h.Y.LOADED ? N.message : void 0, R = (0, b.Uj)(w), k = (0, c.p)(), M = (0, u.A)((null !== (t = n.editedTimestamp) && void 0 !== t ? t : n.timestamp).valueOf()), L = i.useMemo(() => {
+  } = e, w = E.state === h.Y.LOADED ? E.message : void 0, R = (0, b.Uj)(w), M = (0, c.p)(), k = (0, u.A)((null !== (t = n.editedTimestamp) && void 0 !== t ? t : n.timestamp).valueOf()), L = i.useMemo(() => {
     if (null == w) return null;
     let e = (0, a.Z)(w);
     if (e.type === y.uaV.USER_JOIN) {
-      let t = m.Z.getWelcomeMessageKind(E.guild_id);
+      let t = m.Z.getWelcomeMessageKind(N.guild_id);
       return (0, o.Rp)(x.NW.formatToParts(m.Z.getSystemMessageUserJoin(e.id, t), {
         username: null != R ? R.nick : e.author.username,
         usernameHook: e => e
@@ -78,7 +78,7 @@ let N = i.memo(function(e) {
     }
     if (e.type === y.uaV.ROLE_SUBSCRIPTION_PURCHASE) return (0, o.Rp)((0, s.PA)({
       username: null != R ? R.nick : e.author.username,
-      guildId: null == E ? void 0 : E.guild_id,
+      guildId: null == N ? void 0 : N.guild_id,
       roleSubscriptionData: e.roleSubscriptionData
     }));
     if (e.type === y.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, o.Rp)((0, d.Y)({
@@ -98,27 +98,27 @@ let N = i.memo(function(e) {
       let t = {
           formatInline: !0,
           allowLinks: !0,
-          shouldFilterKeywords: k
+          shouldFilterKeywords: M
         },
-        n = e.isFirstMessageInForumPost(E) ? O(j({}, t), {
+        n = e.isFirstMessageInForumPost(N) ? O(j({}, t), {
           noStyleAndInteraction: !0,
           allowHeading: !0,
           allowList: !0
         }) : O(j({}, t), {
           formatInline: !0,
-          allowHeading: M,
-          allowList: M
+          allowHeading: k,
+          allowList: k
         });
       return (0, g.ZP)(e, n).content
     }
     return null
-  }, [w, R, E, M, k]), {
+  }, [w, R, N, k, M]), {
     isReplyAuthorBlocked: D,
     isReplyAuthorIgnored: W
   } = (0, l.cj)([f.Z], () => ({
     isReplyAuthorBlocked: null != w && f.Z.isBlockedForMessage(w),
     isReplyAuthorIgnored: null != w && f.Z.isIgnoredForMessage(w)
-  }), [w]), U = (0, v.wq)(null == w ? void 0 : w.author.id, E.id), B = (0, v.$3)(n, w, D, W), F = (0, v.Wl)(w, E, I, Z), H = (0, v.rY)(S, Z), G = i.useCallback(() => {
+  }), [w]), U = (0, v.wq)(null == w ? void 0 : w.author.id, N.id), B = (0, v.$3)(n, w, D, W), F = (0, v.Wl)(w, N, P, Z), H = (0, v.rY)(S, Z), G = i.useCallback(() => {
     Z({
       referencedUsernameProfile: !1,
       referencedAvatarProfile: !1
@@ -127,15 +127,15 @@ let N = i.memo(function(e) {
   return (0, r.jsx)(_.Z, {
     repliedAuthor: R,
     baseMessage: n,
-    channel: E,
+    channel: N,
     baseAuthor: V,
-    referencedMessage: N,
+    referencedMessage: E,
     content: L,
-    compact: P,
+    compact: I,
     isReplyAuthorBlocked: D,
     isReplyAuthorIgnored: W,
     showAvatarPopout: S,
-    showUsernamePopout: I,
+    showUsernamePopout: P,
     renderPopout: C.Z,
     onClickAvatar: H,
     onClickUsername: F,
@@ -147,7 +147,7 @@ let N = i.memo(function(e) {
   })
 });
 
-function E(e) {
+function N(e) {
   let {
     message: t,
     channel: n,
@@ -159,7 +159,7 @@ function E(e) {
     replyMessage: c,
     isReplySpineClickable: u,
     showReplySpine: d = !0
-  } = e, p = null != s && (0, r.jsx)(N, {
+  } = e, p = null != s && (0, r.jsx)(E, {
     baseMessage: t,
     replyReference: s,
     referencedMessage: c,

@@ -14,8 +14,8 @@ var i = n(481060),
   d = n(36246),
   p = n(305342),
   h = n(726324),
-  f = n(981631),
-  g = n(388032),
+  g = n(981631),
+  f = n(388032),
   m = n(818488);
 let b = e => {
   var t, n;
@@ -25,7 +25,7 @@ let b = e => {
   (0, s.Z)({
     guildId: b.id,
     groupListingId: null == _ ? void 0 : _.id,
-    location: f.Sbl.ROLE_SUBSCRIPTIONS_TAB,
+    location: g.Sbl.ROLE_SUBSCRIPTIONS_TAB,
     relevantSubscriptionListingIds: null == _ ? void 0 : _.subscription_listings_ids
   });
   let {
@@ -35,7 +35,7 @@ let b = e => {
   } = o.B7(null !== (t = null == _ ? void 0 : _.id) && void 0 !== t ? t : null, b.id);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(h.Z, {
-      title: g.NW.format(g.t["rm+ojI"], {
+      title: f.NW.format(f.t["rm+ojI"], {
         serverName: b.toString()
       }),
       description: null != N ? N : null,
@@ -57,7 +57,7 @@ let b = e => {
             guildId: b.id,
             groupListingId: null !== (t = null == _ ? void 0 : _.id) && void 0 !== t ? t : "",
             listingId: e,
-            analyticsLocation: f.Sbl.ROLE_SUBSCRIPTIONS_TAB
+            analyticsLocation: g.Sbl.ROLE_SUBSCRIPTIONS_TAB
           }, e)
         })
       })

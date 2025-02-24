@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 }), n(47120), n(653041), n(301563);
 var r = n(392711),
   i = n.n(r),
@@ -34,7 +34,7 @@ function h(e) {
     }
   })
 }
-let f = [{
+let g = [{
   version: 2,
   run(e) {
     let t = h(1);

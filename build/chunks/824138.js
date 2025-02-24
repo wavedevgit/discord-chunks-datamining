@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(600164),
   p = n(184301),
   h = n(347475),
-  f = n(237583),
-  g = n(63063),
+  g = n(237583),
+  f = n(63063),
   m = n(870569),
   b = n(345243),
   _ = n(115530),
@@ -93,7 +93,7 @@ class S extends i.PureComponent {
     return this.isHost() ? (0, r.jsx)(m.Z, {
       tooltipText: O.NW.string(O.t.U7N2Hh),
       onClick: () => {
-        window.open(g.Z.getArticleURL(E.BhN.SPOTIFY_CONNECTION), "_blank")
+        window.open(f.Z.getArticleURL(E.BhN.SPOTIFY_CONNECTION), "_blank")
       },
       icon: c.d3s
     }) : null
@@ -104,7 +104,7 @@ class S extends i.PureComponent {
       children: [this.renderTitle(), (0, r.jsx)(d.Z, {
         justify: d.Z.Justify.END,
         className: N.party,
-        children: (0, r.jsx)(f.Z, {
+        children: (0, r.jsx)(g.Z, {
           users: this.props.party,
           max: this.isHost() ? C.HOST : C.LISTENER,
           renderUser: this.renderPartyMember,

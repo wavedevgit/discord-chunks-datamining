@@ -13,8 +13,8 @@ var r = n(664751),
   d = n(812206),
   p = n(979200),
   h = n(489863),
-  f = n(166148),
-  g = n(307643),
+  g = n(166148),
+  f = n(307643),
   m = n(973616),
   b = n(594174),
   _ = n(630388),
@@ -64,7 +64,7 @@ async function P(e, t, n) {
   let r, l, a, s, c, {
     client_id: u,
     response_type: d = "code",
-    redirect_uri: g,
+    redirect_uri: f,
     code_challenge: m,
     code_challenge_method: N,
     state: v,
@@ -85,7 +85,7 @@ async function P(e, t, n) {
   if (null == u) throw new O.Z({
     errorCode: y.lTL.OAUTH2_ERROR
   }, "No Client ID provided");
-  if (null != g) throw new O.Z({
+  if (null != f) throw new O.Z({
     errorCode: y.lTL.OAUTH2_ERROR
   }, "Redirect URI cannot be used in the RPC OAuth2 Authorization flow");
   let w = [];
@@ -101,7 +101,7 @@ async function P(e, t, n) {
       clientId: u,
       scopes: w,
       responseType: d,
-      redirectUri: g,
+      redirectUri: f,
       codeChallenge: m,
       codeChallengeMethod: N,
       state: v,
@@ -120,13 +120,13 @@ async function P(e, t, n) {
     var R;
     l = null != a.application.flags && (0, _.yE)(a.application.flags, y.udG.EMBEDDED) && (null === (R = a.application.integration_types_config) || void 0 === R ? void 0 : R[i.Y.USER_INSTALL]) != null ? i.Y.USER_INSTALL : i.Y.GUILD_INSTALL
   }
-  if (j === f.s.NONE && null != a && a.authorized && c) try {
+  if (j === g.s.NONE && null != a && a.authorized && c) try {
     return (await (0, h.Iq)({
       authorize: !0,
       clientId: u,
       scopes: w,
       responseType: d,
-      redirectUri: g,
+      redirectUri: f,
       codeChallenge: m,
       codeChallengeMethod: N,
       state: v,
@@ -152,7 +152,7 @@ async function P(e, t, n) {
     scopes: w,
     parsedPermissions: D,
     responseType: d,
-    redirectUri: g,
+    redirectUri: f,
     codeChallenge: m,
     codeChallengeMethod: N,
     state: v,
@@ -200,7 +200,7 @@ async function j(e, t, n) {
     errorCode: y.lTL.OAUTH2_ERROR
   }, "Client is not logged in");
   let V = null !== (l = d.Z.getApplication(C)) && void 0 !== l ? l : null;
-  (null == V || (a = V.id, (null !== (s = d.Z.getApplicationLastUpdated(a)) && void 0 !== s ? s : 0) < Date.now() - 5e3)) && (V = m.ZP.createFromServer(await (0, g.UM)(C, G)));
+  (null == V || (a = V.id, (null !== (s = d.Z.getApplicationLastUpdated(a)) && void 0 !== s ? s : 0) < Date.now() - 5e3)) && (V = m.ZP.createFromServer(await (0, f.UM)(C, G)));
   let B = null != V && (0, _.yE)(V.flags, y.udG.EMBEDDED) && (null === (r = V.integrationTypesConfig) || void 0 === r ? void 0 : r[i.Y.USER_INSTALL]) != null;
   u = null == M ? B ? i.Y.USER_INSTALL : i.Y.GUILD_INSTALL : Number(M);
   try {
@@ -236,7 +236,7 @@ async function j(e, t, n) {
       errorCode: y.lTL.OAUTH2_ERROR
     }, "OAuth2 Authorization Error: ".concat((null == e ? void 0 : e.message) || "Unknown Error"))
   }
-  if (D === f.s.NONE && null != N && N.authorized && I) try {
+  if (D === g.s.NONE && null != N && N.authorized && I) try {
     return (await (0, h.Iq)({
       authorize: !0,
       clientId: C,

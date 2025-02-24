@@ -85,13 +85,14 @@ let E = (0, c.Z)((0, l.Z)(function(e) {
     user: t,
     channel: n,
     onSelect: l,
-    context: c
-  } = e, a = n.id, u = t.isNonUserBot(), s = t.id === g.default.getId(), d = h({
-    isOwnSettings: s,
+    onInteraction: c,
+    context: a
+  } = e, u = n.id, s = t.isNonUserBot(), d = t.id === g.default.getId(), f = h({
+    isOwnSettings: d,
     userId: t.id,
-    channelId: a,
-    context: c
-  }), f = x(t, a), O = (0, b.Z)({
+    channelId: u,
+    context: a
+  }), O = x(t, u), p = (0, b.Z)({
     id: t.id,
     label: S.NW.string(S.t["/AXYnJ"])
   });
@@ -100,16 +101,17 @@ let E = (0, c.Z)((0, l.Z)(function(e) {
     onClose: o.Zy,
     "aria-label": S.NW.string(S.t.liqwPD),
     onSelect: l,
+    onInteraction: c,
     variant: "fixed",
-    children: !u && (0, r.jsxs)(r.Fragment, {
-      children: [d, !s && (0, r.jsx)(i.kSQ, {
+    children: !s && (0, r.jsxs)(r.Fragment, {
+      children: [f, !d && (0, r.jsx)(i.kSQ, {
         children: (0, r.jsx)(i.sNh, {
           id: "more-options",
           label: S.NW.string(S.t.PdRCRk),
-          children: f
+          children: O
         })
-      }), s && (0, r.jsx)(i.kSQ, {
-        children: O
+      }), d && (0, r.jsx)(i.kSQ, {
+        children: p
       })]
     })
   })

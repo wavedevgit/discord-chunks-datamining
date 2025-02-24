@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -13,10 +13,10 @@ var r = n(200651),
   d = n(981631),
   p = n(388032),
   h = n(968284);
-let f = function(e) {
+let g = function(e) {
   let {
     guild: t
-  } = e, l = (0, s.e7)([u.Z], () => u.Z.getActiveGuildSignUp(t.id)), f = i.useCallback(() => {
+  } = e, l = (0, s.e7)([u.Z], () => u.Z.getActiveGuildSignUp(t.id)), g = i.useCallback(() => {
     null != l && (0, a.ZDy)(async () => {
       let {
         default: e
@@ -55,7 +55,7 @@ let f = function(e) {
         }), i))
       }
     })
-  }, [l, t.id]), g = i.useCallback(() => {
+  }, [l, t.id]), f = i.useCallback(() => {
     null != l && (0, c.b)(l.key, l.dismissibleContent)
   }, [l]);
   if (null == l) return null;
@@ -85,7 +85,7 @@ let f = function(e) {
         }), (0, r.jsx)(a.zxk, {
           className: h.button,
           color: "none",
-          onClick: f,
+          onClick: g,
           children: (0, r.jsx)(a.Text, {
             variant: "text-sm/medium",
             color: "none",
@@ -94,7 +94,7 @@ let f = function(e) {
         }), (0, r.jsx)("div", {
           className: h.dismiss,
           children: (0, r.jsx)(a.P3F, {
-            onClick: g,
+            onClick: f,
             "aria-label": p.NW.string(p.t.cpT0Cg),
             children: (0, r.jsx)(a.Dio, {
               size: "xs",

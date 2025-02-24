@@ -35,7 +35,7 @@ function v(e) {
     onActivityItemSelected: x,
     imageBackground: j,
     activityAction: O,
-    labelType: N
+    labelType: E
   } = (0, u.ZP)({
     context: n,
     activityItem: r,
@@ -45,20 +45,20 @@ function v(e) {
     embeddedActivitiesManager: h.Z,
     assetNames: b,
     commandOrigin: y
-  }), [E, P] = l.useState(!1), I = l.useCallback(() => {
-    P(!0)
-  }, [P]), S = l.useCallback(() => {
-    P(!1)
-  }, [P]), Z = l.useMemo(() => (0, i.jsx)("div", {
+  }), [N, I] = l.useState(!1), P = l.useCallback(() => {
+    I(!0)
+  }, [I]), S = l.useCallback(() => {
+    I(!1)
+  }, [I]), Z = l.useMemo(() => (0, i.jsx)("div", {
     className: g.overlayBadge,
     children: (0, i.jsx)("div", {
       className: g.badgeContainer,
       children: (0, i.jsx)(p.Z, {
         name: r.application.name,
-        labelType: N
+        labelType: E
       })
     })
-  }), [r.application.name, N]), T = l.useMemo(() => {
+  }), [r.application.name, E]), T = l.useMemo(() => {
     switch (O) {
       case u.JS.JOIN:
         return (0, i.jsx)("div", {
@@ -94,9 +94,9 @@ function v(e) {
     color: "transparent",
     look: c.zxk.Looks.BLANK,
     size: c.zxk.Sizes.NONE,
-    onFocus: I,
+    onFocus: P,
     onBlur: S,
-    onMouseEnter: I,
+    onMouseEnter: P,
     onMouseLeave: S,
     innerClassName: g.activityItemButtonInnerClass,
     children: (0, i.jsx)(c.AMe, {
@@ -105,7 +105,7 @@ function v(e) {
         value: 0
       },
       to: {
-        value: +!!E
+        value: +!!N
       },
       children: e => {
         let {

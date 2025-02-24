@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  H: () => f,
+  H: () => g,
   f: () => h
 }), n(566702);
 var r = n(192379),
@@ -27,7 +27,7 @@ function h(e) {
   }), h = (0, i.e7)([s.Z], () => {
     var e;
     return null !== (e = s.Z.getIsFetching(u)) && void 0 !== e && e
-  }), f = c.Z.useField("resultsQuery"), g = f !== n, m = r.useCallback(() => {
+  }), g = c.Z.useField("resultsQuery"), f = g !== n, m = r.useCallback(() => {
     let e = s.Z.getGuildIds(u),
       n = s.Z.getTotal(u);
     if (null == e || null == n) return;
@@ -43,14 +43,14 @@ function h(e) {
   }, [t, u]);
   return r.useMemo(() => ({
     guildIds: d,
-    loading: g || h,
-    searchResultsQuery: f,
+    loading: f || h,
+    searchResultsQuery: g,
     loadMore: m,
     searchCategoryId: l
-  }), [d, g, h, f, m, l])
+  }), [d, f, h, g, m, l])
 }
 
-function f(e) {
+function g(e) {
   let {
     loadId: t
   } = e, n = d.Z.useField("isSearchVisible"), i = c.Z.useField("query");

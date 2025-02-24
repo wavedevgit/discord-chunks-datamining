@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => E
+  Z: () => N
 }), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -24,50 +24,50 @@ var r = n(200651),
   x = n(251564),
   j = n(695492),
   O = n(981631),
-  N = n(910860);
+  E = n(910860);
 
-function E(e) {
+function N(e) {
   let {
     participants: t,
     onClick: n,
-    onDoubleClick: E,
-    onContextMenu: P,
-    channel: I,
+    onDoubleClick: N,
+    onContextMenu: I,
+    channel: P,
     className: S,
     inCall: Z,
     totalNumberOfParticipants: T,
     paused: A = !1
-  } = e, w = (0, c.bp)() === O.IlC.POPOUT, R = (0, a.e7)([_.Z], () => _.Z.getGuild(I.guild_id), [I.guild_id]), {
-    dismissedActivityEntryPointTileChannel: k
-  } = (0, x.d)(), M = (0, a.e7)([h.Z], () => h.Z.getUserParticipantCount(I.id), [I]), L = (0, b.bt)(I.id, t), D = i.useCallback(() => {
+  } = e, w = (0, c.bp)() === O.IlC.POPOUT, R = (0, a.e7)([_.Z], () => _.Z.getGuild(P.guild_id), [P.guild_id]), {
+    dismissedActivityEntryPointTileChannel: M
+  } = (0, x.d)(), k = (0, a.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), L = (0, b.bt)(P.id, t), D = i.useCallback(() => {
     (0, o.j)(() => {
       x.d.setState({
-        dismissedActivityEntryPointTileChannel: I.id
+        dismissedActivityEntryPointTileChannel: P.id
       })
     })
-  }, [I.id]);
+  }, [P.id]);
   i.useEffect(() => {
-    null != k && I.id !== k && (0, o.j)(() => {
+    null != M && P.id !== M && (0, o.j)(() => {
       x.d.setState({
         dismissedActivityEntryPointTileChannel: null
       })
     })
-  }, [I.id, k]);
-  let W = (0, a.e7)([C.Z], () => I.isPrivate() || (0, m.b)(C.Z, R, I), [R, I]),
-    U = (null == R ? void 0 : R.afkChannelId) === I.id,
-    B = I.userLimit <= 0 || I.userLimit > 1,
-    F = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
+  }, [P.id, M]);
+  let W = (0, a.e7)([C.Z], () => P.isPrivate() || (0, m.b)(C.Z, R, P), [R, P]),
+    U = (null == R ? void 0 : R.afkChannelId) === P.id,
+    B = P.userLimit <= 0 || P.userLimit > 1,
+    F = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).length <= 0),
     H = (0, f.N)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
-    G = (0, d.KF)(I.id) !== d.jy.CAN_LAUNCH,
-    V = null != k && k === I.id,
+    G = (0, d.KF)(P.id) !== d.jy.CAN_LAUNCH,
+    V = null != M && M === P.id,
     z = L.map(e => t => (0, r.jsx)(y.ZP, {
       participant: e,
-      channel: I,
-      className: N.tile,
+      channel: P,
+      className: E.tile,
       paused: A,
       onClick: n,
-      onDoubleClick: E,
-      onContextMenu: P,
+      onDoubleClick: N,
+      onContextMenu: I,
       inCall: Z,
       width: t,
       inPopout: w
@@ -79,29 +79,29 @@ function E(e) {
       total_participants: T,
       can_invite: W,
       is_afk_channel: U,
-      channel_user_limit: I.userLimit
+      channel_user_limit: P.userLimit
     }
   }, {
     trackOnInitialLoad: !0
-  }, []), null != R && !U && (!(M >= 2) || !F || G || H || V ? B && 1 === M && W && (F && !G ? z.push(e => (0, r.jsx)(v.h, {
-    channel: I,
+  }, []), null != R && !U && (!(k >= 2) || !F || G || H || V ? B && 1 === k && W && (F && !G ? z.push(e => (0, r.jsx)(v.h, {
+    channel: P,
     guild: R,
     width: e,
     inPopout: w,
     handleClose: D,
-    userParticipantCount: M
+    userParticipantCount: k
   })) : z.push(e => (0, r.jsx)(j.Z, {
     width: e,
-    channel: I,
+    channel: P,
     guild: R,
     inPopout: w
   }))) : z.push(e => (0, r.jsx)(v.h, {
-    channel: I,
+    channel: P,
     guild: R,
     width: e,
     inPopout: w,
     handleClose: D,
-    userParticipantCount: M
+    userParticipantCount: k
   })));
   let q = i.useCallback(e => {
     var t, n;

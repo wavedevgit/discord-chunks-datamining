@@ -1,7 +1,7 @@
 /** Chunk was on 46906 **/
 "use strict";
 n.d(t, {
-  Y: () => V,
+  Y: () => G,
   Z: () => X
 }), n(789020), n(47120);
 var r, l, i = n(200651),
@@ -49,7 +49,7 @@ function U(e, t, n) {
   }) : e[t] = n, e
 }
 
-function G(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,16 +61,16 @@ function G(e) {
   }
   return e
 }
-var V = ((l = {}).ACTIVITY_FEED = "ActivityFeed", l.STREAM_PREVIEW = "StreamPreview", l.VOICE_CHANNEL = "VoiceChannel", l);
+var G = ((l = {}).ACTIVITY_FEED = "ActivityFeed", l.STREAM_PREVIEW = "StreamPreview", l.VOICE_CHANNEL = "VoiceChannel", l);
 let F = {
     StreamPreview: [108, 60],
     VoiceChannel: [108, 60],
     ActivityFeed: [900, 500]
   },
   {
-    getAssetImage: Y
+    getAssetImage: B
   } = n(81063),
-  B = (0, p.Z)(class extends a.PureComponent {
+  Y = (0, p.Z)(class extends a.PureComponent {
     render() {
       return (0, i.jsx)("div", {
         className: L.timestamp,
@@ -196,7 +196,7 @@ class H extends(r = a.PureComponent) {
     let p = (0, C.Z)(e),
       m = null != u.large_image ? (0, i.jsx)("img", {
         alt: null !== (t = u.large_text) && void 0 !== t ? t : "",
-        src: Y(d, u.large_image, null != l ? l : [W.Si.LARGE, W.Si.LARGE]),
+        src: B(d, u.large_image, null != l ? l : [W.Si.LARGE, W.Si.LARGE]),
         className: s()(this.getTypeClass("assetsLargeImage", this.isStreamerOnTypeActivityFeed() ? R.ABu.TWITCH : ""), {
           [null !== (n = this.getTypeClass("assetsLargeMask")) && void 0 !== n ? n : ""]: null != u.small_image,
           [L.assetsLargeImageSpotify]: p
@@ -247,9 +247,9 @@ class H extends(r = a.PureComponent) {
       position: "top",
       children: e => {
         var t;
-        return (0, i.jsx)("img", G({
+        return (0, i.jsx)("img", V({
           alt: null !== (t = u.small_text) && void 0 !== t ? t : "",
-          src: Y(d, u.small_image, [W.Si.SMALL, W.Si.SMALL]),
+          src: B(d, u.small_image, [W.Si.SMALL, W.Si.SMALL]),
           className: this.getTypeClass("assetsSmallImage", null == m ? "WithoutLargeImage" : void 0)
         }, e))
       }
@@ -392,7 +392,7 @@ class H extends(r = a.PureComponent) {
     let {
       timestamps: n
     } = e;
-    return null == n ? null : (0, T.Z)(e) ? (0, i.jsx)(B, {
+    return null == n ? null : (0, T.Z)(e) ? (0, i.jsx)(Y, {
       timestamps: n
     }) : (0, i.jsx)(N.ZP, {
       start: n.start,
@@ -524,7 +524,7 @@ class H extends(r = a.PureComponent) {
     })
   }
 }
-U(H, "Types", V);
+U(H, "Types", G);
 let J = e => {
   var t, n, r, l, a;
   let o = (0, j.Z)({
@@ -534,7 +534,7 @@ let J = e => {
     sourceUserId: e.user.id,
     trackEntryPointImpression: !0
   });
-  return (0, i.jsx)(H, (l = G({}, e), a = a = {
+  return (0, i.jsx)(H, (l = V({}, e), a = a = {
     onOpenGameProfileModal: o
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
     var n = Object.keys(e);
@@ -547,5 +547,5 @@ let J = e => {
     Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
   }), l))
 };
-J.Types = V;
+J.Types = G;
 let X = J

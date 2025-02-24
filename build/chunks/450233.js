@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  G: () => f,
+  G: () => g,
   Z: () => m
 });
 var r, i, l, o, a = n(200651),
@@ -10,8 +10,8 @@ var r, i, l, o, a = n(200651),
   d = n(16084),
   p = n(855775),
   h = n(388032),
-  f = ((r = {}).SHORT = "SHORT", r.LONG = "LONG", r);
-class g extends(o = s.PureComponent) {
+  g = ((r = {}).SHORT = "SHORT", r.LONG = "LONG", r);
+class f extends(o = s.PureComponent) {
   getText(e, t) {
     if (429 === e.status) switch (t) {
       case "SHORT":
@@ -43,12 +43,12 @@ class g extends(o = s.PureComponent) {
 }
 l = {
   messageStyle: "LONG"
-}, (i = "defaultProps") in g ? Object.defineProperty(g, i, {
+}, (i = "defaultProps") in f ? Object.defineProperty(f, i, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : g[i] = l;
+}) : f[i] = l;
 let m = c.ZP.connectStores([p.Z], () => ({
   purchaseError: p.Z.error
-}))(g)
+}))(f)

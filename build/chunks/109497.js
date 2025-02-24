@@ -21,7 +21,7 @@ let d = [],
 function h() {
   return d.length >= 4 && d.some(e => e < Date.now() - 3 * s.Z.Millis.DAY)
 }
-class f extends(r = i.ZP.PersistedStore) {
+class g extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     null != e && Array.isArray(e.sessionStartsWithDND) && (d = e.sessionStartsWithDND)
   }
@@ -39,7 +39,7 @@ class f extends(r = i.ZP.PersistedStore) {
     }
   }
 }
-u(f, "displayName", "HabitualDNDStore"), u(f, "persistKey", "habitualDND"), new f(l.Z, {
+u(g, "displayName", "HabitualDNDStore"), u(g, "persistKey", "habitualDND"), new g(l.Z, {
   POST_CONNECTION_OPEN: function() {
     a.Z.getStatus() === c.Skl.DND && "0" === o.Cr.getSetting() ? (d.push(Date.now()), d = d.filter(e => e > Date.now() - 5 * s.Z.Millis.DAY), h() && setTimeout(() => {
       l.Z.dispatch({

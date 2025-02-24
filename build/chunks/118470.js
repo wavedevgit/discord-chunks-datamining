@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -14,13 +14,13 @@ var r = n(200651),
   p = n(388032),
   h = n(466389);
 
-function f(e) {
+function g(e) {
   let t, {
       guild: n
     } = e,
-    f = (0, u.h6)(n),
-    g = () => (0, c.sB)(n.id),
-    m = i.useMemo(() => new Set(f.map(e => e.applicationId)), [f]),
+    g = (0, u.h6)(n),
+    f = () => (0, c.sB)(n.id),
+    m = i.useMemo(() => new Set(g.map(e => e.applicationId)), [g]),
     b = (0, l.Wu)([o.Z], () => {
       let e = [];
       for (let t of m) {
@@ -40,12 +40,12 @@ function f(e) {
     c: b[2].name
   }) : p.NW.string(p.t.MvfowM), (0, r.jsx)(a.Z, {
     guild: n,
-    onDismissed: g,
+    onDismissed: f,
     message: t,
     type: d.vID.APPLICATION_SUBSCRIPTION_EXPIRATION,
     image: h,
     onClick: () => {
-      g(), s.Z.open(n.id, d.pNK.INTEGRATIONS)
+      f(), s.Z.open(n.id, d.pNK.INTEGRATIONS)
     },
     imageMarginTop: 6,
     imageMarginX: 46,

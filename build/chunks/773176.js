@@ -24,18 +24,18 @@ var r = n(200651),
   x = n(245216),
   j = n(223606),
   O = n(188597),
-  N = n(41776),
-  E = n(980463),
-  P = n(328908),
-  I = n(992970),
+  E = n(41776),
+  N = n(980463),
+  I = n(328908),
+  P = n(992970),
   S = n(135793),
   Z = n(576645),
   T = n(84040),
   A = n(222677),
   w = n(995774),
   R = n(931651),
-  k = n(280845),
-  M = n(2818),
+  M = n(280845),
+  k = n(2818),
   L = n(768943),
   D = n(665906),
   W = n(695346),
@@ -213,7 +213,7 @@ function em(e) {
     } = (0, c.cj)([V.Z], () => ({
       canAddNewReactions: _ && V.Z.can(el.Plq.ADD_REACTIONS, t),
       canManageMessages: V.Z.can(el.Plq.MANAGE_MESSAGES, t)
-    }), [t, _]), j = (0, k.U)(t, n), O = (0, D.NE)(t, n), E = (0, D.Ek)(n), P = (0, c.e7)([N.Z], () => null != t.guild_id && N.Z.isLurking(t.guild_id), [t]), I = (0, c.e7)([F.ZP], () => null != t.guild_id && F.ZP.isCurrentUserGuest(t.guild_id), [t]), S = s.id === d, Z = (C || n.canDeleteOwnMessage(d)) && p && !el.V$x.UNDELETABLE.has(n.type);
+    }), [t, _]), j = (0, M.U)(t, n), O = (0, D.NE)(t, n), N = (0, D.Ek)(n), I = (0, c.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), P = (0, c.e7)([F.ZP], () => null != t.guild_id && F.ZP.isCurrentUserGuest(t.guild_id), [t]), S = s.id === d, Z = (C || n.canDeleteOwnMessage(d)) && p && !el.V$x.UNDELETABLE.has(n.type);
     n.type === el.uaV.AUTO_MODERATION_ACTION && (Z = Z && C);
     let T = (0, X.a4)(n),
       A = (0, J.Z)(n, t, C),
@@ -225,8 +225,8 @@ function em(e) {
         canChat: _,
         renderReactions: g,
         canAddNewReactions: x,
-        isLurking: P,
-        isGuest: I,
+        isLurking: I,
+        isGuest: P,
         isActiveChannelOrUnarchivableThread: p
       }),
       B = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != u && u.hasFeature(el.oNc.NEWS) && (S || C) && (0, f.Z)(n),
@@ -244,7 +244,7 @@ function em(e) {
       ee = (0, y.a)(n),
       {
         enabled: et
-      } = M.Z.useExperiment({
+      } = k.Z.useExperiment({
         location: "message_utilities"
       }),
       en = (0, c.e7)([L.Z], () => null != L.Z.getSavedMessage(t.id, n.id)),
@@ -259,7 +259,7 @@ function em(e) {
       canReport: T,
       canReply: j,
       canStartThread: O,
-      canViewThread: E,
+      canViewThread: N,
       canForward: K && ee,
       canCopy: q.wS,
       hasDeveloperMode: b,
@@ -287,14 +287,14 @@ function em(e) {
     ea({
       emojiPicker: !Y
     })
-  }, [Y, ea]), eb = (0, D.$R)(t), eC = n.hasFlag(el.iLy.CROSSPOSTED), [ev, ey] = (0, m.cv)(w ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = ev === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eO] = i.useState(!1), eN = i.useCallback(() => {
+  }, [Y, ea]), eb = (0, D.$R)(t), eC = n.hasFlag(el.iLy.CROSSPOSTED), [ev, ey] = (0, m.cv)(w ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = ev === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eO] = i.useState(!1), eE = i.useCallback(() => {
     eO(!0)
-  }, []), eE = i.useCallback(() => {
+  }, []), eN = i.useCallback(() => {
     eO(!1)
-  }, []), eP = i.useCallback((e, t) => {
+  }, []), eI = i.useCallback((e, t) => {
     ey(eo.L.TAKE_ACTION), (0, et.ts)(e, t)
   }, [ey]), {
-    canShowReactionsOnMessageHover: eI
+    canShowReactionsOnMessageHover: eP
   } = b.ZP.useExperiment({
     location: "ExpandingButtons"
   }, {
@@ -310,7 +310,7 @@ function em(e) {
     eT = eS && eZ && !n.hasPotions(),
     eA = i.useCallback(e => {
       try {
-        (0, E.qc)(t.id, n.id, e)
+        (0, N.qc)(t.id, n.id, e)
       } catch (e) {
         (0, d.showToast)((0, d.createToast)(es.NW.string(es.t.xsfC2d), d.ToastType.FAILURE))
       }
@@ -351,7 +351,7 @@ function em(e) {
         onClick: e => (0, et.HH)(t, n, e)
       }, "reply-self") : null]
     }) : null, _ && !ed ? (0, r.jsxs)(r.Fragment, {
-      children: [eI && !R ? (0, r.jsxs)(r.Fragment, {
+      children: [eP && !R ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(ef, {
           channel: t,
           message: n
@@ -368,13 +368,13 @@ function em(e) {
         icon: d.l22,
         onClick: () => {
           z.default.track(el.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
-            location: I.MG.MessageExpandingButtons
+            location: P.MG.MessageExpandingButtons
           }), (0, S.s)({
             channelId: t.id,
             message: n,
             onRedeem: eA,
-            onClose: P.Qy,
-            source: I.YD.MessageExpandingButtons
+            onClose: I.Qy,
+            source: P.YD.MessageExpandingButtons
           })
         }
       }, "add-confetti-potion") : null]
@@ -389,9 +389,9 @@ function em(e) {
     }, "edit") : null, w ? (0, r.jsx)(ee.sF, {
       label: es.NW.string(es.t.I3ltXF),
       icon: x.Z,
-      onClick: () => eP(t, n),
-      onTooltipShow: eN,
-      onTooltipHide: eE,
+      onClick: () => eI(t, n),
+      onTooltipShow: eE,
+      onTooltipHide: eN,
       showNewBadge: !ej && ex
     }, "forward") : null, O && !w ? (0, r.jsx)(ee.sF, {
       label: es.NW.string(es.t.rBIGBA),

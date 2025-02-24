@@ -23,11 +23,11 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, _ = (0, f.Z)(), [C, v] = r.useState(!1), [y, x] = r.useState(!1), [j, O] = r.useState(!1), [N, E] = r.useState(!1), [P, I] = r.useState(!1), S = C || y || j, Z = r.useCallback(async e => {
+  } = e, _ = (0, f.Z)(), [C, v] = r.useState(!1), [y, x] = r.useState(!1), [j, O] = r.useState(!1), [E, N] = r.useState(!1), [I, P] = r.useState(!1), S = C || y || j, Z = r.useCallback(async e => {
     if (!S) {
       v(!0);
       try {
-        await (0, p.e4)(e), E(!0), null == n || n()
+        await (0, p.e4)(e), N(!0), null == n || n()
       } catch (t) {
         let e = new o.Hx(t);
         null == b || b(e)
@@ -39,7 +39,7 @@ function b(e) {
     if (!S) {
       x(!0);
       try {
-        await (0, p.gN)(e), I(!0), null == i || i()
+        await (0, p.gN)(e), P(!0), null == i || i()
       } catch (t) {
         let e = new o.Hx(t);
         null == b || b(e)
@@ -53,7 +53,7 @@ function b(e) {
     let t = l()(e, m.t$);
     try {
       for (let e of t) await (0, p.r_)(e);
-      I(!0), null == i || i()
+      P(!0), null == i || i()
     } catch (t) {
       let e = new o.Hx(t);
       null == b || b(e)
@@ -126,7 +126,7 @@ function b(e) {
     isAcceptLoading: C,
     isRejectLoading: y,
     isUserProfileLoading: j,
-    isOptimisticAccepted: N,
-    isOptimisticRejected: P
+    isOptimisticAccepted: E,
+    isOptimisticRejected: I
   }
 }

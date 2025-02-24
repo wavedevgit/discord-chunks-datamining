@@ -14,8 +14,8 @@ var i = n(243814),
   d = n(479531),
   p = n(40851),
   h = n(636449),
-  f = n(566620),
-  g = n(531826),
+  g = n(566620),
+  f = n(531826),
   m = n(596223),
   b = n(838195),
   _ = n(333861),
@@ -171,7 +171,7 @@ let G = {
       } = e, {
         channel: i,
         guild: l
-      } = (0, w.T)(), a = (0, g.ZP)({
+      } = (0, w.T)(), a = (0, f.ZP)({
         application: t.application,
         channelId: i.id
       }), s = null != a ? E.Z.getWindow(a) : void 0;
@@ -263,7 +263,7 @@ let G = {
             l()
           }), n.document.body.addEventListener("focus", l, !0), n.document.body.appendChild(i), i.click()
         }(async n => {
-          let l = await (0, f.kv)(r, i, n);
+          let l = await (0, g.kv)(r, i, n);
           (0, S.lm)(l) && (0, S.lm)(l.url) && !(l instanceof d.Z) ? e({
             image_url: l.url
           }): t(l)

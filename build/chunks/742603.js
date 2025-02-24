@@ -25,18 +25,18 @@ var i = n(120356),
   x = n(454585),
   j = n(134483),
   O = n(210975),
-  N = n(809244),
-  E = n(618158),
-  P = n(358221),
-  I = n(362721),
+  E = n(809244),
+  N = n(618158),
+  I = n(358221),
+  P = n(362721),
   S = n(887012),
   Z = n(613548),
   T = n(221888),
   A = n(339340),
   w = n(354459),
   R = n(981631),
-  k = n(231338),
-  M = n(388032),
+  M = n(231338),
+  k = n(388032),
   L = n(767789),
   D = n(368365);
 
@@ -76,8 +76,8 @@ function B(e) {
   let {
     focusedParticipant: t,
     channel: n
-  } = e, i = (0, c.bp)(), l = (0, o.e7)([P.Z], () => P.Z.getLayout(n.id, i));
-  return (0, r.jsx)(E.Z, {
+  } = e, i = (0, c.bp)(), l = (0, o.e7)([I.Z], () => I.Z.getLayout(n.id, i));
+  return (0, r.jsx)(N.Z, {
     children: (0, r.jsx)(T.Z, {
       className: L.participants,
       participant: t,
@@ -95,7 +95,7 @@ function F(e) {
     channel: n,
     stream: i,
     color: l
-  } = e, o = (0, N.Z)(n, t, i);
+  } = e, o = (0, E.Z)(n, t, i);
   return null == t || null == i ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       className: L.avatar,
@@ -173,16 +173,16 @@ function G(e) {
     exitFullScreen: m
   } = e, {
     focusedParticipant: g
-  } = (0, o.cj)([P.Z], () => ({
-    focusedParticipant: P.Z.getSelectedParticipant(t.id),
-    participantsOpen: P.Z.getParticipantsOpen(t.id)
-  }), [t.id]), b = (0, h.ZP)(t), _ = (0, f.KS)(t), [N] = (0, d.Z)((null == g ? void 0 : g.type) === w.fO.ACTIVITY ? [g.applicationId] : []), E = M.NW.string(M.t.BVZqJi);
-  t.isDM() ? E = M.NW.string(M.t.jN2DfX) : t.isGroupDM() && (E = M.NW.string(M.t["e5y+go"]));
+  } = (0, o.cj)([I.Z], () => ({
+    focusedParticipant: I.Z.getSelectedParticipant(t.id),
+    participantsOpen: I.Z.getParticipantsOpen(t.id)
+  }), [t.id]), b = (0, h.ZP)(t), _ = (0, f.KS)(t), [E] = (0, d.Z)((null == g ? void 0 : g.type) === w.fO.ACTIVITY ? [g.applicationId] : []), N = k.NW.string(k.t.BVZqJi);
+  t.isDM() ? N = k.NW.string(k.t.jN2DfX) : t.isGroupDM() && (N = k.NW.string(k.t["e5y+go"]));
   let S = (0, o.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     T = t.isGuildVoice() && c && null != S && S.length > 0,
-    B = (0, I.ZP)(t),
+    B = (0, P.ZP)(t),
     F = T ? (0, r.jsx)(a.ua7, {
-      text: M.NW.string(M.t.Mgpxi4),
+      text: k.NW.string(k.t.Mgpxi4),
       delay: 500,
       position: "bottom",
       shouldShow: B,
@@ -228,7 +228,7 @@ function G(e) {
   return (0, r.jsxs)("div", {
     className: L.subtitleContainer,
     children: [(0, r.jsx)(a.f6W, {
-      theme: k.BR.DARK,
+      theme: M.BR.DARK,
       children: e => (0, r.jsxs)(C.ZP, {
         onDoubleClick: v.O,
         transparent: !0,
@@ -245,14 +245,14 @@ function G(e) {
         children: [null != _ ? (0, r.jsx)(C.ZP.Icon, {
           icon: _,
           disabled: !0,
-          "aria-label": E
+          "aria-label": N
         }) : null, (0, r.jsx)(C.ZP.Title, {
           children: (0, r.jsxs)(r.Fragment, {
             children: [b, V && (0, r.jsx)(a.ua7, {
-              text: M.NW.string(M.t.QyZ4TU),
+              text: k.NW.string(k.t.QyZ4TU),
               children: e => (0, r.jsx)(a.tQf, U(W({}, e), {
                 size: "xs",
-                "aria-label": M.NW.string(M.t.VHXh8f),
+                "aria-label": k.NW.string(k.t.VHXh8f),
                 color: a.TVs.colors.INTERACTIVE_NORMAL,
                 className: L.secureFramesIcon
               }))
@@ -262,7 +262,7 @@ function G(e) {
           channel: t,
           guild: i
         }), (0, r.jsx)(H, {
-          focusedApplication: N,
+          focusedApplication: E,
           focusedParticipant: g,
           channel: t
         })]

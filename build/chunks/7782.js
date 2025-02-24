@@ -24,9 +24,9 @@ var r = n(200651),
   x = n(981631),
   j = n(377668),
   O = n(228168),
-  N = n(388032),
-  E = n(864754);
-let P = e => {
+  E = n(388032),
+  N = n(864754);
+let I = e => {
     let {
       userId: t,
       channelId: n
@@ -43,10 +43,10 @@ let P = e => {
         a = (0, r.jsx)("img", {
           src: i,
           alt: "",
-          className: E.avatar
+          className: N.avatar
         }, t);
       return o ? a : (0, r.jsx)(c.ZP, {
-        className: E.avatarMask,
+        className: N.avatarMask,
         mask: c.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
         width: 24,
         height: 24,
@@ -56,10 +56,10 @@ let P = e => {
     return null == l || 0 === l.length ? (0, r.jsx)(a.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: N.NW.string(N.t.zjVh8v)
+      children: E.NW.string(E.t.zjVh8v)
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: E.avatarContainer,
+        className: N.avatarContainer,
         children: s
       }), (0, r.jsx)(a.P3F, {
         onClick: () => {
@@ -73,16 +73,16 @@ let P = e => {
           })
         },
         children: (0, r.jsx)(a.Text, {
-          className: E.mutualGuilds,
+          className: N.mutualGuilds,
           variant: "text-sm/normal",
-          children: N.NW.format(N.t.eE3oen, {
+          children: E.NW.format(E.t.eE3oen, {
             count: l.length
           })
         })
       })]
     })
   },
-  I = e => {
+  P = e => {
     var t;
     let {
       relationshipType: n,
@@ -96,7 +96,7 @@ let P = e => {
         }
       })
     }, u = (0, r.jsx)(a.zxk, {
-      className: E.action,
+      className: N.action,
       size: a.zxk.Sizes.TINY,
       color: a.zxk.Colors.PRIMARY,
       onClick: () => {
@@ -108,22 +108,22 @@ let P = e => {
           type: x.OGo.BLOCKED
         })
       },
-      children: N.NW.string(N.t.l4EmaW)
+      children: E.NW.string(E.t.l4EmaW)
     });
     switch (n) {
       case x.OGo.NONE:
         return (0, r.jsxs)(r.Fragment, {
           children: [!o && !l && (0, r.jsx)(a.zxk, {
-            className: E.action,
+            className: N.action,
             size: a.zxk.Sizes.TINY,
             onClick: c,
-            children: N.NW.string(N.t.w5uwoK)
+            children: E.NW.string(E.t.w5uwoK)
           }), u]
         });
       case x.OGo.FRIEND:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.zxk, {
-            className: E.action,
+            className: N.action,
             size: a.zxk.Sizes.TINY,
             onClick: () => {
               s.Z.removeFriend(i, {
@@ -131,12 +131,12 @@ let P = e => {
               })
             },
             color: a.zxk.Colors.PRIMARY,
-            children: N.NW.string(N.t.cvSt1N)
+            children: E.NW.string(E.t.cvSt1N)
           }), u]
         });
       case x.OGo.BLOCKED:
         return (0, r.jsx)(a.zxk, {
-          className: E.action,
+          className: N.action,
           size: a.zxk.Sizes.TINY,
           onClick: () => {
             s.Z.unblockUser(i, {
@@ -144,22 +144,22 @@ let P = e => {
             })
           },
           color: a.zxk.Colors.PRIMARY,
-          children: N.NW.string(N.t.XyHpKC)
+          children: E.NW.string(E.t.XyHpKC)
         });
       case x.OGo.PENDING_INCOMING:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.Text, {
-            className: E.action,
+            className: N.action,
             color: "header-secondary",
             variant: "text-sm/normal",
-            children: N.NW.string(N.t.c2v5nJ)
+            children: E.NW.string(E.t.c2v5nJ)
           }), (0, r.jsx)(a.zxk, {
-            className: E.action,
+            className: N.action,
             size: a.zxk.Sizes.TINY,
             onClick: c,
-            children: N.NW.string(N.t["+WbSn5"])
+            children: E.NW.string(E.t["+WbSn5"])
           }), (0, r.jsx)(a.zxk, {
-            className: E.action,
+            className: N.action,
             size: a.zxk.Sizes.TINY,
             color: a.zxk.Colors.PRIMARY,
             onClick: () => {
@@ -167,16 +167,16 @@ let P = e => {
                 location: x.ZY5.DM_CHANNEL
               })
             },
-            children: N.NW.string(N.t.rQSndn)
+            children: E.NW.string(E.t.rQSndn)
           }), u]
         });
       case x.OGo.PENDING_OUTGOING:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.zxk, {
-            className: E.action,
+            className: N.action,
             size: a.zxk.Sizes.TINY,
             disabled: !0,
-            children: N.NW.string(N.t.xMH6vL)
+            children: E.NW.string(E.t.xMH6vL)
           }), u]
         });
       default:
@@ -188,7 +188,7 @@ let P = e => {
       channelId: t,
       otherUserId: n
     } = e, l = i.useCallback(() => {
-      (0, a.showToast)((0, a.createToast)(N.NW.string(N.t.a2j0ho), a.ToastType.FAILURE))
+      (0, a.showToast)((0, a.createToast)(E.NW.string(E.t.a2j0ho), a.ToastType.FAILURE))
     }, []), o = i.useCallback(() => {
       f.Z.closeChannelSidebar(b.uZ)
     }, []), s = i.useCallback(() => {
@@ -208,20 +208,20 @@ let P = e => {
     }), _ = p || h || m || g;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.zxk, {
-        className: E.action,
+        className: N.action,
         size: a.zxk.Sizes.TINY,
         onClick: () => c(t),
         disabled: _,
         submitting: p,
-        children: N.NW.string(N.t.Kz8Pws)
+        children: E.NW.string(E.t.Kz8Pws)
       }), (0, r.jsx)(a.zxk, {
-        className: E.action,
+        className: N.action,
         size: a.zxk.Sizes.TINY,
         onClick: () => u(t),
         color: a.zxk.Colors.PRIMARY,
         disabled: _,
         submitting: h,
-        children: N.NW.string(N.t.B2nygY)
+        children: E.NW.string(E.t.B2nygY)
       })]
     })
   },
@@ -242,7 +242,7 @@ let P = e => {
         channel: n
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(I, {
+      children: [(0, r.jsx)(P, {
         relationshipType: c,
         userId: t,
         showingBanner: i
@@ -253,17 +253,17 @@ let P = e => {
       })]
     });
     return (0, r.jsxs)("div", {
-      className: m ? E.mobileContainer : E.container,
+      className: m ? N.mobileContainer : N.container,
       children: [(0, r.jsx)("div", {
-        className: E.inline,
-        children: (0, r.jsx)(P, {
+        className: N.inline,
+        children: (0, r.jsx)(I, {
           userId: t,
           channelId: n.id
         })
       }), !m && (0, r.jsx)("div", {
-        className: E.divider
+        className: N.divider
       }), (0, r.jsx)("div", {
-        className: E.inline,
+        className: N.inline,
         children: g
       })]
     })

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(79712),
   p = n(171368),
   h = n(594174),
-  f = n(626135),
-  g = n(51144),
+  g = n(626135),
+  f = n(51144),
   m = n(743056),
   b = n(321488),
   _ = n(417183),
@@ -38,9 +38,9 @@ function y(e) {
     applicationId: l,
     isGameRelationship: s,
     location: "Friends"
-  }), f = i.useCallback(e => {
+  }), g = i.useCallback(e => {
     e.stopPropagation(), d()
-  }, [d]), g = i.useCallback(e => {
+  }, [d]), f = i.useCallback(e => {
     e.stopPropagation(), p()
   }, [p]);
   return (0, r.jsxs)(r.Fragment, {
@@ -54,13 +54,13 @@ function y(e) {
       icon: a.dz2,
       actionType: b.Z.ActionTypes.ACCEPT,
       tooltip: N.NW.string(N.t.ZcibdX),
-      onClick: f,
+      onClick: g,
       shouldHighlight: c
     }), (0, r.jsx)(b.Z, {
       icon: a.Dio,
       actionType: b.Z.ActionTypes.DENY,
       tooltip: N.NW.string(N.t.xuio0N),
-      onClick: g,
+      onClick: f,
       shouldHighlight: c
     })]
   })
@@ -128,7 +128,7 @@ function S(e) {
     disambiguateGameRelationships: l,
     isGameRelationship: o,
     applicationId: a
-  } = e, s = g.ZP.useUserTag(t);
+  } = e, s = f.ZP.useUserTag(t);
   return (0, r.jsx)(E.Z, {
     user: t,
     hovered: n,
@@ -152,9 +152,9 @@ function T(e) {
     applicationId: a,
     disambiguateGameRelationships: c,
     isGameRelationship: u
-  } = e, d = i.useContext(f.AnalyticsContext), {
+  } = e, d = i.useContext(g.AnalyticsContext), {
     analyticsLocations: h
-  } = (0, s.ZP)(), g = l === O.Skl.OFFLINE ? O.Skl.UNKNOWN : l, m = i.useCallback(() => (0, p.openUserProfileModal)({
+  } = (0, s.ZP)(), f = l === O.Skl.OFFLINE ? O.Skl.UNKNOWN : l, m = i.useCallback(() => (0, p.openUserProfileModal)({
     userId: t.id,
     sourceAnalyticsLocations: h,
     analyticsLocation: d.location
@@ -168,7 +168,7 @@ function T(e) {
       children: [(0, r.jsx)(S, {
         user: t,
         hovered: e,
-        status: g,
+        status: f,
         disambiguateGameRelationships: c,
         isGameRelationship: u,
         applicationId: a

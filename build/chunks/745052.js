@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(481060),
   p = n(150063),
   h = n(230711),
-  f = n(112724),
-  g = n(183126),
+  g = n(112724),
+  f = n(183126),
   m = n(493773),
   b = n(607070),
   _ = n(209613),
@@ -61,7 +61,7 @@ function en() {
     t = (0, B.q)(),
     n = (0, H.Z)(),
     l = (0, G.K)(),
-    c = (0, g.N)(),
+    c = (0, f.N)(),
     u = i.useCallback(() => {
       (0, d.showToast)((0, d.createToast)($.NW.string($.t.EDYbS0), d.ToastType.FAILURE))
     }, []),
@@ -72,7 +72,7 @@ function en() {
     }),
     h = (0, _.Z)("message-requests-list"),
     {
-      channelId: f
+      channelId: g
     } = (0, V._)(),
     m = i.useCallback(() => {
       p(n.map(e => e.channel.id))
@@ -85,14 +85,14 @@ function en() {
       return (0, r.jsx)(Y.Z, {
         index: a,
         className: o()({
-          [ee.selected]: null != f && f === u,
-          [ee.siblingSelected]: null != f && f === c
+          [ee.selected]: null != g && g === u,
+          [ee.siblingSelected]: null != g && g === c
         }),
         channel: s.channel,
         user: s.user,
         hasSingleMessageRequest: l
       }, u)
-    }, [l, n, f]),
+    }, [l, n, g]),
     E = i.useCallback(() => (0, r.jsxs)(N.Z, {
       className: ee.sectionTitle,
       children: [t > 0 ? $.NW.formatToPlainString($.t.rA4iWV, {
@@ -261,7 +261,7 @@ function eo(e) {
   } = e;
   return t === q.pS.SPAM ? (0, r.jsx)(K.Z, {}) : (0, r.jsx)(en, {})
 }
-let ea = (0, f.Z)(function(e) {
+let ea = (0, g.Z)(function(e) {
   let {
     width: t
   } = e, n = (0, B.q)();
@@ -275,17 +275,17 @@ let ea = (0, f.Z)(function(e) {
   let l = (0, c.e7)([x.Z], () => x.Z.theme),
     a = (0, F.w)(),
     [u, h] = i.useState(!1),
-    f = (0, c.e7)([L.ZP], () => {
+    g = (0, c.e7)([L.ZP], () => {
       let e = L.ZP.getSidebarState(L.uZ);
       return null != e && e.type === j.tI.VIEW_MESSAGE_REQUEST ? e : null
     }),
-    g = null == f ? void 0 : f.channelId,
-    b = null != f,
-    _ = (0, M.T)(g),
-    E = (0, k.J)(g);
+    f = null == g ? void 0 : g.channelId,
+    b = null != g,
+    _ = (0, M.T)(f),
+    E = (0, k.J)(f);
   i.useEffect(() => {
-    null != g && !_ && E && b && ((0, T.Kh)(g), P.Z.closeChannelSidebar(L.uZ))
-  }, [g, E, b, _]);
+    null != f && !_ && E && b && ((0, T.Kh)(f), P.Z.closeChannelSidebar(L.uZ))
+  }, [f, E, b, _]);
   let [O, N] = i.useState(q.pS.REQUESTS), y = e => {
     N(e)
   };

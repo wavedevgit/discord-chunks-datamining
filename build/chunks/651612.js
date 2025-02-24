@@ -62,20 +62,20 @@ function C(e) {
         isTyping: t
       }
     }(t),
-    N = i.useCallback(() => {
+    E = i.useCallback(() => {
       var e;
       null === (e = v.current) || void 0 === e || e.focus()
     }, []);
   (0, p.yp)({
     event: g.CkL.FOCUS_CHAT_BUTTON,
-    handler: N
+    handler: E
   });
-  let E = y ? b.NW.string(b.t["5MstTk"]) : b.NW.string(b.t.kkKapK),
-    P = [E];
-  O > 0 && P.push(b.NW.formatToPlainString(b.t["3l1GOz"], {
+  let N = y ? b.NW.string(b.t["5MstTk"]) : b.NW.string(b.t.kkKapK),
+    I = [N];
+  O > 0 && I.push(b.NW.formatToPlainString(b.t["3l1GOz"], {
     mentionCount: O
-  })), j > 0 && P.push(b.NW.string(b.t.x5zAGR));
-  let I = (0, o.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
+  })), j > 0 && I.push(b.NW.string(b.t.x5zAGR));
+  let P = (0, o.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
     S = O > 0 ? O : j,
     Z = S > 0;
   return (0, r.jsxs)("div", {
@@ -100,10 +100,10 @@ function C(e) {
     }({
       buttonRef: v,
       onClick: x,
-      label: E,
-      "aria-label": P.join(", "),
+      label: N,
+      "aria-label": I.join(", "),
       tooltipPosition: "top",
-      iconComponent: I === m.MI.NO_CHAT ? a.sXD : a.hic,
+      iconComponent: P === m.MI.NO_CHAT ? a.sXD : a.hic,
       themeable: !0,
       className: n
     }, C)), Z ? (0, r.jsx)(s.Z, {

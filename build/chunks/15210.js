@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => b
 });
 var r = n(200651),
-  i = n(192379),
-  l = n(442837),
+  l = n(192379),
+  i = n(442837),
   a = n(481060),
   o = n(447543),
   s = n(234383),
@@ -55,40 +55,39 @@ function b(e) {
   } = e, {
     id: n,
     features: b
-  } = t, p = (0, l.e7)([d.default], () => d.default.getId()), y = (0, l.e7)([m.ZP], () => {
+  } = t, p = (0, i.e7)([d.default], () => d.default.getId()), y = (0, i.e7)([m.ZP], () => {
     var e;
     return (null === (e = null != n ? m.ZP.getMember(n, p) : null) || void 0 === e ? void 0 : e.joinedAt) != null
-  }, [n, p]), O = (0, s.Z)(), I = i.useCallback(() => {
+  }, [n, p]), O = (0, i.e7)([x.Z], () => x.Z.getInviteKeyForGuildId(n)), I = (0, s.Z)(), N = l.useCallback(() => {
     (0, u.X)(n)
-  }, [n]), N = i.useCallback(() => {
+  }, [n]), P = l.useCallback(() => {
     (0, c.uL)(j.Z5c.GUILD_MEMBER_VERIFICATION(n))
-  }, [n]), P = i.useCallback(async () => {
-    let e = x.Z.getInviteKeyForGuildId(n);
-    null != e && await o.Z.acceptInvite({
-      inviteKey: e,
+  }, [n]), E = l.useCallback(async () => {
+    null != O && await o.Z.acceptInvite({
+      inviteKey: O,
       context: {
         location: "guild_profile"
       }
     })
-  }, [n]), E = i.useCallback(() => {
+  }, [O]), C = l.useCallback(() => {
     (0, v.Ub)(n, {
       object: j.qAy.GUILD_PROFILE
     })
-  }, [n]), C = i.useMemo(() => ({
+  }, [n]), Z = l.useMemo(() => ({
     size: a.zxk.Sizes.SMALL,
     fullWidth: !0
   }), []);
-  return i.useMemo(() => y ? (0, r.jsx)(a.zxk, g(f({}, C), {
-    onClick: I,
-    children: h.NW.string(h.t.KLOhbG)
-  })) : O.includes(n) ? (0, r.jsx)(a.zxk, g(f({}, C), {
+  return l.useMemo(() => y ? (0, r.jsx)(a.zxk, g(f({}, Z), {
     onClick: N,
-    children: h.NW.string(h.t["4yfIDg"])
-  })) : (null == b ? void 0 : b.includes(j.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == b ? void 0 : b.includes(j.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) ? (0, r.jsx)(a.zxk, g(f({}, C), {
+    children: h.NW.string(h.t.KLOhbG)
+  })) : I.includes(n) ? (0, r.jsx)(a.zxk, g(f({}, Z), {
     onClick: P,
-    children: h.NW.string(h.t["7XdMW1"])
-  })) : (null == b ? void 0 : b.includes(j.oNc.DISCOVERABLE)) ? (0, r.jsx)(a.zxk, g(f({}, C), {
+    children: h.NW.string(h.t["4yfIDg"])
+  })) : (null == b ? void 0 : b.includes(j.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == b ? void 0 : b.includes(j.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && null != O ? (0, r.jsx)(a.zxk, g(f({}, Z), {
     onClick: E,
+    children: h.NW.string(h.t["7XdMW1"])
+  })) : (null == b ? void 0 : b.includes(j.oNc.DISCOVERABLE)) ? (0, r.jsx)(a.zxk, g(f({}, Z), {
+    onClick: C,
     children: h.NW.string(h.t.d6r93d)
-  })) : void 0, [C, b, n, N, I, E, P, y, O])
+  })) : null, [Z, b, n, P, N, C, E, O, y, I])
 }

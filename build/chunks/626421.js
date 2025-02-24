@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -34,7 +34,7 @@ let h = i.memo(function(e) {
   })
 });
 
-function f() {
+function g() {
   let e = (0, a.e7)([c.Z], () => c.Z.getGuildId()),
     t = (0, u.Eg)(e),
     [n, i] = (0, s.US)(Object.values(t).filter(e => {

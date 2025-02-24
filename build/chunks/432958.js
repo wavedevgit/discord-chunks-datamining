@@ -1,7 +1,7 @@
 /** Chunk was on 71611 **/
 n.d(t, {
   A: () => S,
-  Z: () => I
+  Z: () => P
 });
 var r = n(200651),
   i = n(192379),
@@ -25,10 +25,10 @@ var r = n(200651),
   x = n(475413),
   j = n(228168),
   O = n(388032),
-  N = n(497345),
-  E = n(321975);
+  E = n(497345),
+  N = n(321975);
 
-function P(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function P(e) {
   return e
 }
 
-function I(e) {
+function P(e) {
   let {
     user: t,
     channel: n,
@@ -71,20 +71,20 @@ function I(e) {
         themeOverride: s,
         children: (0, r.jsx)(a.u2, {
           children: (0, r.jsxs)("div", {
-            className: N.container,
+            className: E.container,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: E,
-              className: N.previewForCollected,
+              src: N,
+              className: E.previewForCollected,
               "aria-hidden": !0
             }), (0, r.jsxs)("div", {
-              className: N.body,
+              className: E.body,
               children: [(0, r.jsx)(_.Z, {
                 user: t,
                 guildId: null
               }), (0, r.jsx)(c.X6q, {
                 variant: "heading-lg/bold",
-                className: N.header,
+                className: E.header,
                 children: O.NW.string(O.t.VNJ7UF)
               }), (0, r.jsx)(c.Text, {
                 variant: "text-sm/medium",
@@ -95,13 +95,13 @@ function I(e) {
                 variant: "text-sm/medium",
                 children: O.NW.string(O.t["20WzZ2"])
               }), (0, r.jsx)(x.tG, {
-                className: N.centeredButton,
+                className: E.centeredButton,
                 action: "VIEW_BLOCKED_PROFILE",
                 text: O.NW.string(O.t.iXAna2),
                 autoFocus: !0,
                 fullWidth: !1,
                 onClick: () => {
-                  null == l || l(), (0, g.pQ)(P({
+                  null == l || l(), (0, g.pQ)(I({
                     action: "VIEW_BLOCKED_PROFILE",
                     analyticsLocations: h
                   }, f))
@@ -120,7 +120,7 @@ function S(e) {
     user: t,
     channel: n,
     onViewBlockedProfileClick: l
-  } = e, x = (0, b.ZP)(t.id), I = (0, u.ZP)(), S = (0, s.e7)([h.Z], () => h.Z.isBlocked(t.id)), {
+  } = e, x = (0, b.ZP)(t.id), P = (0, u.ZP)(), S = (0, s.e7)([h.Z], () => h.Z.isBlocked(t.id)), {
     analyticsLocations: Z
   } = (0, p.ZP)(S ? d.Z.BLOCKED_PROFILE_PANEL : d.Z.IGNORED_PROFILE_PANEL), T = (0, m.ZB)({
     layout: S ? "BLOCKED_PROFILE_PANEL" : "IGNORED_PROFILE_PANEL",
@@ -136,19 +136,19 @@ function S(e) {
         user: t,
         displayProfile: x,
         profileType: j.y0.PANEL,
-        themeOverride: I,
+        themeOverride: P,
         children: (0, r.jsx)(a.u2, {
           children: (0, r.jsxs)("div", {
-            className: N.container,
+            className: E.container,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: E,
-              className: N.previewForCollected,
+              src: N,
+              className: E.previewForCollected,
               "aria-hidden": !0
             }), (0, r.jsxs)("div", {
-              className: o()(N.body, N.bodySpacing),
+              className: o()(E.body, E.bodySpacing),
               children: [(0, r.jsxs)("div", {
-                className: N.headerContainer,
+                className: E.headerContainer,
                 children: [(0, r.jsx)(_.i, {
                   user: t
                 }), (0, r.jsx)(c.X6q, {
@@ -165,7 +165,7 @@ function S(e) {
                 children: [(0, r.jsx)(y.Z, {
                   isBlocked: S,
                   onClick: () => {
-                    null == l || l(), (0, g.pQ)(P({
+                    null == l || l(), (0, g.pQ)(I({
                       action: S ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                       analyticsLocations: Z
                     }, T))
@@ -173,7 +173,7 @@ function S(e) {
                 }), (0, r.jsx)(v.Z, {
                   userId: t.id,
                   onClick: () => {
-                    null == l || l(), (0, g.pQ)(P({
+                    null == l || l(), (0, g.pQ)(I({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                       analyticsLocations: Z
                     }, T))

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(433280),
   p = n(34131),
   h = n(434404),
-  f = n(978946),
-  g = n(567458),
+  g = n(978946),
+  f = n(567458),
   m = n(782959),
   b = n(276645),
   _ = n(970731),
@@ -34,13 +34,13 @@ var r = n(200651),
   x = n(642301);
 
 function L(e) {
-  null != e && h.Z.open(e.id, (0, f.r)(e.id), {
+  null != e && h.Z.open(e.id, (0, g.r)(e.id), {
     section: v.jXE.PREMIUM_GUILD_PROGRESS_BAR
   }, v.KsC.DISPLAY)
 }
 
 function w(e, t) {
-  null != t && ((0, O.f2)(t, v.Eu4.TIER_1) ? h.Z.open(t.id, (0, f.r)(t.id), {
+  null != t && ((0, O.f2)(t, v.Eu4.TIER_1) ? h.Z.open(t.id, (0, g.r)(t.id), {
     section: v.jXE.PREMIUM_GUILD_INVITE_SPLASH
   }, v.KsC.INVITE) : (0, u.Z)({
     analyticsLocations: e,
@@ -75,7 +75,7 @@ let D = i.memo(function(e) {
     renderGuildHeaderDropdownButton: a
   } = e, {
     analyticsLocations: u
-  } = (0, s.ZP)(), f = () => {
+  } = (0, s.ZP)(), g = () => {
     E.default.track(v.rMx.TOOLTIP_VIEWED, {
       type: C.cd.PREMIUM_PROGRESS_BAR,
       location: {
@@ -105,7 +105,7 @@ let D = i.memo(function(e) {
         case l.z.GUILD_HEADER_PREMIUM_GUILD_PROGRESS:
           return (0, r.jsx)(R, {
             renderPopout: (0, r.jsx)(_.ZP, {
-              onComponentMount: f,
+              onComponentMount: g,
               header: S.NW.string(S.t.nxtaFx),
               asset: (0, r.jsx)("img", {
                 alt: "",
@@ -124,7 +124,7 @@ let D = i.memo(function(e) {
         case l.z.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK:
           return (0, r.jsx)(R, {
             renderPopout: (0, r.jsx)(_.ZP, {
-              onComponentMount: f,
+              onComponentMount: g,
               header: S.NW.string(S.t.KAsfPT),
               asset: (0, r.jsx)("img", {
                 alt: "",
@@ -181,7 +181,7 @@ let D = i.memo(function(e) {
           });
         case l.z.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP:
           return (0, r.jsx)(R, {
-            renderPopout: (0, r.jsx)(g.Z, {
+            renderPopout: (0, r.jsx)(f.Z, {
               markAsDismissed: M
             }),
             renderGuildHeaderDropdownButton: a

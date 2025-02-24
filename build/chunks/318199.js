@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
   default: () => m,
-  r: () => g
+  r: () => f
 }), n(566702);
 var r = n(200651);
 n(192379);
@@ -15,9 +15,9 @@ var i = n(581282),
   d = n(605236),
   p = n(960048),
   h = n(276792),
-  f = n(290347);
+  g = n(290347);
 
-function g(e) {
+function f(e) {
   let {
     content: t,
     isPreview: n
@@ -33,16 +33,16 @@ function m(e) {
     location: i
   } = (0, a.O)(), {
     analyticsLocations: l
-  } = (0, u.ZP)(c.Z.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), d = (0, s.ZP)(), g = (0, o.ap)(d);
+  } = (0, u.ZP)(c.Z.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), d = (0, s.ZP)(), f = (0, o.ap)(d);
   if ("announcementModalVariant1" === n.properties.oneofKind) {
     let e = (0, h.N)({
       content: n.properties.announcementModalVariant1,
       renderModalProps: t,
       analyticsLocations: l,
       analyticsLocation: i,
-      isLightTheme: g
+      isLightTheme: f
     });
-    return (0, r.jsx)(f.Z, function(e) {
+    return (0, r.jsx)(g.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

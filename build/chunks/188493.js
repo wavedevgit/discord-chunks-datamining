@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -14,10 +14,10 @@ var r = n(200651),
   p = n(128449),
   h = n(388032);
 
-function f(e) {
+function g(e) {
   let {
     loadId: t
-  } = e, n = (0, l.e7)([a.default], () => (0, d.Xp)([a.default])), f = u.Z.useField("languageCode"), g = null != f ? f : n, m = i.useCallback(e => {
+  } = e, n = (0, l.e7)([a.default], () => (0, d.Xp)([a.default])), g = u.Z.useField("languageCode"), f = null != g ? g : n, m = i.useCallback(e => {
     u.Z.setState({
       languageCode: e
     });
@@ -35,14 +35,14 @@ function f(e) {
     label: e.name
   })), []), _ = i.useMemo(() => {
     var e;
-    let t = (0, p.Cf)().find(e => e.code === g);
+    let t = (0, p.Cf)().find(e => e.code === f);
     return null !== (e = null == t ? void 0 : t.name) && void 0 !== e ? e : h.NW.string(h.t.LQLMGB)
-  }, [g]);
+  }, [f]);
   return (0, r.jsx)(o.ZP, {
     items: b,
     title: _,
     onSelect: m,
-    selected: g,
+    selected: f,
     "aria-label": h.NW.string(h.t.Ng5cTE)
   })
 }

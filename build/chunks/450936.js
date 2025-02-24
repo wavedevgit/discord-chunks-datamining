@@ -43,7 +43,7 @@ function b(e) {
       botUserId: C.id
     })
   }, [null == C ? void 0 : C.id]);
-  let N = (0, s.v1)({
+  let E = (0, s.v1)({
       channel: _,
       type: "channel"
     }, {
@@ -53,25 +53,25 @@ function b(e) {
       allowFetch: (null == C ? void 0 : C.id) != null,
       allowApplicationState: !0
     }),
-    E = N.commands.filter(e => e.type === o.yU.PRIMARY_ENTRY_POINT && e.applicationId === O)[0],
-    P = N.commands.filter(e => "0" !== e.id && !e.id.startsWith("-")),
-    I = N.loading,
-    S = null === (t = N.descriptors.find(e => {
+    N = E.commands.filter(e => e.type === o.yU.PRIMARY_ENTRY_POINT && e.applicationId === O)[0],
+    I = E.commands.filter(e => "0" !== e.id && !e.id.startsWith("-")),
+    P = E.loading,
+    S = null === (t = E.descriptors.find(e => {
       var t;
       return (null === (t = e.application) || void 0 === t ? void 0 : t.id) === O
     })) || void 0 === t ? void 0 : t.application,
     Z = r.useMemo(() => null != S ? h.ZP.createFromServer(S) : void 0, [S]),
     T = (0, u.q)(null == Z ? O : void 0),
     A = null !== (n = null != Z ? Z : T) && void 0 !== n ? n : void 0,
-    w = null == A || I && 0 === P.length;
+    w = null == A || P && 0 === I.length;
   return {
     application: A,
     isInitialLoading: w,
-    primaryEntryPointCommand: E,
+    primaryEntryPointCommand: N,
     isProfileFetching: v,
     wasProfileFetching: y,
     applicationId: O,
     channelId: _.id,
-    commands: P
+    commands: I
   }
 }

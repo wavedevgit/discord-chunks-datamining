@@ -14,8 +14,8 @@ var i = n(704215),
   d = n(823188),
   p = n(474936),
   h = n(981631),
-  f = n(388032),
-  g = n(14249),
+  g = n(388032),
+  f = n(14249),
   m = n(74316);
 
 function b(e) {
@@ -28,7 +28,7 @@ function b(e) {
     isLightTheme: N
   } = e, v = "AnnouncementModalVariant1_".concat(i.z[Number(b.dismissKey)]), {
     onClose: y
-  } = _, I = null != b.button && "" !== b.button.copy ? b.button.copy : f.NW.string(f.t.YScQSE), C = (null === (t = b.button) || void 0 === t ? void 0 : t.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", S = (null === (n = b.button) || void 0 === n ? void 0 : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? () => {
+  } = _, I = null != b.button && "" !== b.button.copy ? b.button.copy : g.NW.string(g.t.YScQSE), C = (null === (t = b.button) || void 0 === t ? void 0 : t.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", S = (null === (n = b.button) || void 0 === n ? void 0 : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? () => {
     (0, s.uL)(h.Z5c.APPLICATION_STORE), y()
   } : () => {
     var e, t;
@@ -71,9 +71,9 @@ function b(e) {
     })
   }, T = "" !== b.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
     children: ["\xa0", (0, r.jsx)(o.eee, {
-      className: g.termsApplyAnchor,
+      className: f.termsApplyAnchor,
       href: u.Z.getArticleURL(b.helpArticleId),
-      children: f.NW.string(f.t["sBp+u7"])
+      children: g.NW.string(g.t["sBp+u7"])
     })]
   }) : void 0, P = {
     type: "video",
@@ -90,7 +90,7 @@ function b(e) {
   let j = N ? d.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : d.VE.PREMIUM_TIER_2_WHITE_FILL,
     A = "" !== b.modalTopPill ? () => (0, r.jsx)(d.Cy, {
       text: b.modalTopPill,
-      className: g.modalTopPill,
+      className: f.modalTopPill,
       colorOptions: j
     }) : void 0;
   return {
@@ -111,9 +111,9 @@ function b(e) {
     button: () => {
       let e = Date.now();
       return (0, r.jsxs)(o.gtL, {
-        className: g.buttonWide,
-        innerClassName: g.innerButton,
-        wrapperClassName: g.tier2Gradient,
+        className: f.buttonWide,
+        innerClassName: f.innerButton,
+        wrapperClassName: f.tier2Gradient,
         size: o.zxk.Sizes.SMALL,
         onClick: () => {
           c.default.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
@@ -125,7 +125,7 @@ function b(e) {
         },
         children: [(0, r.jsx)("img", {
           alt: "",
-          className: g.nitroIconSubHeader,
+          className: f.nitroIconSubHeader,
           src: m
         }), I]
       })
