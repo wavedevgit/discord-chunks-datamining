@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (2c78ad33b01d1e4b.js) **/
+/** Chunk was on 1272 (4b1b41bf0e3472e1.js) **/
 n.d(t, {
   Z: () => m
 }), n(47120);
@@ -45,7 +45,7 @@ let g = "isHideDevBanner",
       children: [(0, r.jsx)(p.Z, {
         className: f.icon
       }), h.NW.format(h.t.uyrfYG, {
-        buildNumber: "370967"
+        buildNumber: "370979"
       }), (0, r.jsx)(b, {})]
     }) : null
   }

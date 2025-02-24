@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.9f0be545d3e34886.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.767fb3b3f685bfe8.js.js) **/
 function t(e) {
   let t = ["bool", "byte", "char", "decimal", "delegate", "double", "dynamic", "enum", "float", "int", "long", "nint", "nuint", "object", "sbyte", "short", "string", "ulong", "uint", "ushort"],
     n = ["public", "private", "protected", "static", "internal", "protected", "abstract", "async", "extern", "override", "unsafe", "virtual", "new", "sealed", "partial"],

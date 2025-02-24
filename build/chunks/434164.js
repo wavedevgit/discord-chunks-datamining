@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (2c78ad33b01d1e4b.js) **/
+/** Chunk was on 1272 (4b1b41bf0e3472e1.js) **/
 e.exports = {
   wrapper: "wrapper_a6f654",
   installationPath: "installationPath_a6f654",

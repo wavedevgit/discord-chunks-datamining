@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (2c78ad33b01d1e4b.js) **/
+/** Chunk was on 1272 (4b1b41bf0e3472e1.js) **/
 n.r(e.exports = {
   "heading-sm/normal": "heading-sm/normal__4ed1a",
   fontScaling: "fontScaling__4ed1a",

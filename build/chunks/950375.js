@@ -1,2 +1,2 @@
-/** Chunk was on 11814 (fd05d34d70cdbd56.js) **/
+/** Chunk was on 11814 (5d38d8f10d63a4b1.js) **/
 e.exports = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='271' height='141'><g fill='#000000' fill-rule='evenodd'><rect width='130' height='20' rx='5'/><rect width='254' height='20' y='30' rx='5'/><rect width='190' height='20' y='60' rx='5'/><rect width='66' height='32' y='102' rx='3'/></g></svg>"

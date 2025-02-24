@@ -1,2 +1,2 @@
-/** Chunk was on web (https://canary.discord.comweb.9f0be545d3e34886.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.767fb3b3f685bfe8.js.js) **/
 (t = e.exports = n(555170)).Stream = t, t.Readable = t, t.Writable = n(833327), t.Duplex = n(827664), t.Transform = n(92057), t.PassThrough = n(203163), t.finished = n(133495), t.pipeline = n(614805)

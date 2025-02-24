@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.9f0be545d3e34886.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.767fb3b3f685bfe8.js.js) **/
 "use strict";
 t.randomBytes = t.rng = t.pseudoRandomBytes = t.prng = n(706178), t.createHash = t.Hash = n(108381), t.createHmac = t.Hmac = n(294415);
 var r = ["sha1", "sha224", "sha256", "sha384", "sha512", "md5", "rmd160"].concat(Object.keys(n(518401)));
