@@ -36,7 +36,7 @@ function getChunks(code, moduleId, moduleFileName) {
                         const chunk = prop.value.body;
                         const chunkCode = code.slice(chunk.start, chunk.end);
                         const codeFormatted = formatCode(chunkCode);
-                        result[key] = `/** Chunk was on ${moduleId} (${moduleFileName}.js) **/\n` + codeFormatted;
+                        result[key] = `/** Chunk was on ${moduleId} **/\n` + codeFormatted;
                     }
                 }
             },
