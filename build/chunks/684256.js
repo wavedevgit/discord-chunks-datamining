@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Z: () => f
 });
@@ -11,8 +11,8 @@ var i = n(200651),
   c = n(827498),
   u = n(106066),
   d = n(98880),
-  m = n(772606),
-  p = n(388032),
+  p = n(772606),
+  m = n(388032),
   h = n(268190);
 
 function f(e) {
@@ -27,12 +27,12 @@ function f(e) {
   } = e, y = (0, u.s)("AppLauncherApplicationListViewScreen"), b = l.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
   return (0, i.jsxs)("section", {
     className: h.container,
-    "aria-label": p.NW.formatToPlainString(p.t.iobNIC, {
+    "aria-label": m.NW.formatToPlainString(m.t.iobNIC, {
       sectionTitle: r
     }),
     children: [(0, i.jsxs)("div", {
       className: h.header,
-      children: [(0, i.jsx)(m.Z, {
+      children: [(0, i.jsx)(p.Z, {
         className: h.backButton
       }), (0, i.jsx)(a.X6q, {
         variant: "heading-md/medium",

@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   P: () => h,
   Z: () => f
@@ -12,8 +12,8 @@ var i = n(200651),
   c = n(914010),
   u = n(499254),
   d = n(827498),
-  m = n(314734),
-  p = n(388032);
+  p = n(314734),
+  m = n(388032);
 
 function h(e) {
   var t;
@@ -24,7 +24,7 @@ function h(e) {
     application: n,
     guildId: i,
     onItemClick: () => {
-      (0, l.Mr3)(m.e9), (0, u.yT)(d.ti.DISMISSED)
+      (0, l.Mr3)(p.e9), (0, u.yT)(d.ti.DISMISSED)
     }
   })
 }
@@ -35,14 +35,14 @@ function f(e) {
     onSelect: n
   } = e, a = s.Sb.useSetting(), c = (0, o.Z)({
     id: t.id,
-    label: p.NW.string(p.t["+NP/b2"])
+    label: m.NW.string(m.t["+NP/b2"])
   }), u = h({
     application: t
   });
   return (0, i.jsxs)(l.v2r, {
     navId: "activity-shelf-item-context",
     onClose: r.Zy,
-    "aria-label": p.NW.string(p.t.WkcHT0),
+    "aria-label": m.NW.string(m.t.WkcHT0),
     onSelect: n,
     children: [null != u && (0, i.jsxs)(l.kSQ, {
       children: [...u]

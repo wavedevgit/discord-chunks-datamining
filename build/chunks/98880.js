@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   U4: () => B,
   cG: () => ee,
@@ -13,8 +13,8 @@ var i, l = n(200651),
   c = n(481060),
   u = n(239091),
   d = n(110924),
-  m = n(607070),
-  p = n(115130),
+  p = n(607070),
+  m = n(115130),
   h = n(317381),
   f = n(361213),
   v = n(542094),
@@ -96,8 +96,8 @@ function F(e) {
     children: s,
     sectionName: c,
     resultsPosition: u,
-    sectionOverallPosition: m,
-    tracksImpression: p = !0,
+    sectionOverallPosition: p,
+    tracksImpression: m = !0,
     disabled: h = !1,
     overrideImageUrl: f,
     showsPromoted: v
@@ -108,9 +108,9 @@ function F(e) {
     sectionName: c,
     resultsPosition: u,
     disabled: h,
-    tracksImpression: p,
+    tracksImpression: m,
     look: i,
-    sectionOverallPosition: m,
+    sectionOverallPosition: p,
     children: "icon" === i ? (0, l.jsx)(z, {
       application: n,
       imageStyle: o,
@@ -136,8 +136,8 @@ function G(e) {
     sectionName: o,
     resultsPosition: s,
     sectionOverallPosition: d,
-    tracksImpression: m,
-    disabled: p,
+    tracksImpression: p,
+    disabled: m,
     containerStyle: h,
     look: f
   } = e, v = r.useCallback(e => {
@@ -161,19 +161,19 @@ function G(e) {
     sectionPosition: s,
     sectionOverallPosition: d
   }), b = r.useMemo(() => {
-    let e = p ? w.containerDisabled : w.container;
+    let e = m ? w.containerDisabled : w.container;
     return a()(e, {
       [w.containerBorderRadius]: "row" !== f,
       [w.rowContainer]: "row" === f,
       [w.iconCard]: "icon" === f
     }, h)
-  }, [h, p, f]);
-  return p ? (0, l.jsx)("div", {
-    ref: m ? y : void 0,
+  }, [h, m, f]);
+  return m ? (0, l.jsx)("div", {
+    ref: p ? y : void 0,
     className: b,
     children: i
   }) : (0, l.jsx)(c.P3F, {
-    innerRef: m ? y : void 0,
+    innerRef: p ? y : void 0,
     className: b,
     onClick: n,
     onContextMenu: v,
@@ -228,7 +228,7 @@ function Y(e) {
     enableVideoBanner: o,
     disableBannerFadeIn: u,
     children: d,
-    overrideImageUrl: m,
+    overrideImageUrl: p,
     showsPromoted: h
   } = e, {
     iconURL: f,
@@ -238,7 +238,7 @@ function Y(e) {
     fakeAppIconURL: U
   }), [t]), x = r.useMemo(() => null == N ? null : (0, S.ae)(N), [N]), y = (0, b.ZP)(f, ""), [E, C] = r.useState(!1), g = r.useCallback(() => {
     !0 === o && C(!0)
-  }, [o]), P = h || (0, O.lf)(t), A = "large_banner" === n || "medium_banner" === n, I = r.useCallback(() => C(!1), []), _ = (0, s.e7)([p.Z, j.Z], () => p.Z.inDevModeForApplication(t.id) || j.Z.inTestModeForApplication(t.id), [t.id]);
+  }, [o]), P = h || (0, O.lf)(t), A = "large_banner" === n || "medium_banner" === n, I = r.useCallback(() => C(!1), []), _ = (0, s.e7)([m.Z, j.Z], () => m.Z.inDevModeForApplication(t.id) || j.Z.inTestModeForApplication(t.id), [t.id]);
   return (0, l.jsxs)(l.Fragment, {
     children: [A ? (0, l.jsxs)("div", {
       onMouseEnter: g,
@@ -256,7 +256,7 @@ function Y(e) {
           fallbackColor: y,
           showVideo: E,
           disableFadeIn: u,
-          overrideImageUrl: m
+          overrideImageUrl: p
         })
       }), _ || P ? (0, l.jsxs)("div", {
         className: w.bannerUpperRightContainer,
@@ -428,7 +428,7 @@ function K(e) {
     bot: t,
     fallbackColor: n,
     disableFadeIn: i
-  } = e, r = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), o = (0, A.aN)({
+  } = e, r = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), o = (0, A.aN)({
     id: t.id,
     banner: t.banner,
     canAnimate: !r,
@@ -520,9 +520,9 @@ function en(e) {
     return l
   }(e, ["context", "application", "location", "sectionName", "isOneClickCTA", "fetchesApplication"]);
   if (!(0, O.BQ)(n)) throw Error("PerformActivityActionAppCard was passed the Built-in App, which is not supported.");
-  let m = r.useId(),
-    [p, f] = (0, s.Wu)([h.ZP], () => [h.ZP.isLaunchingActivity(), h.ZP.getLaunchState(n.id, "channel" === t.type ? t.channel.id : void 0)]),
-    N = null != f && f.isLaunching && f.componentId === m,
+  let p = r.useId(),
+    [m, f] = (0, s.Wu)([h.ZP], () => [h.ZP.isLaunchingActivity(), h.ZP.getLaunchState(n.id, "channel" === t.type ? t.channel.id : void 0)]),
+    N = null != f && f.isLaunching && f.componentId === p,
     {
       onActivityItemSelected: x,
       activityAction: y,
@@ -533,14 +533,14 @@ function en(e) {
       application: n,
       location: i,
       sectionName: o,
-      launchingComponentId: m,
+      launchingComponentId: p,
       fetchesApplication: u
     });
   return y === v.JS.START || y === v.JS.JOIN ? a ? (0, l.jsx)(F, V(H({}, d), {
     sectionName: o,
     application: n,
     onClick: x,
-    disabled: p,
+    disabled: m,
     enableVideoBanner: !N,
     children: N ? (0, l.jsx)(c.$jN, {
       type: c.$jN.Type.PULSING_ELLIPSIS,
@@ -567,7 +567,7 @@ function en(e) {
         type: "submit",
         size: c.zxk.Sizes.LARGE,
         color: b,
-        disabled: p,
+        disabled: m,
         onClick: x,
         "aria-label": k.NW.formatToPlainString(k.t["XjP/R0"], {
           buttonText: E,

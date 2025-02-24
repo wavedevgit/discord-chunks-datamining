@@ -1,7 +1,7 @@
 /** Chunk was on 55849 **/
 n.d(t, {
   Z: () => N
-}), n(266796), n(47120);
+}), n(266796), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
 var r = n(200651),
   a = n(192379),
   l = n(120356),
@@ -110,9 +110,10 @@ function A(e) {
     try {
       let t = await fetch(u),
         s = await t.blob(),
+        d = URL.createObjectURL(s),
         {
-          filename: d,
-          type: f
+          filename: f,
+          type: m
         } = (0, p.mh)(a, o);
       i(), (0, c.ZDy)(async () => {
         let {
@@ -136,9 +137,9 @@ function A(e) {
           }
           return e
         }({
-          imageUri: u,
-          file: new File([s], d, {
-            type: f
+          imageUri: d,
+          file: new File([s], f, {
+            type: m
           }),
           originalAsset: e,
           onCrop: l,

@@ -1,6 +1,6 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => m
+  Z: () => p
 }), n(47120);
 var i = n(192379),
   l = n(392711),
@@ -12,12 +12,12 @@ var i = n(192379),
   u = n(148958),
   d = n(689079);
 
-function m(e) {
+function p(e) {
   var t;
   let {
     context: n
-  } = e, l = "channel" === n.type ? n.channel : void 0, m = (0, s.LD)(null == l ? void 0 : l.guild_id, !0), {
-    commandsByActiveSection: p,
+  } = e, l = "channel" === n.type ? n.channel : void 0, p = (0, s.LD)(null == l ? void 0 : l.guild_id, !0), {
+    commandsByActiveSection: m,
     loading: h
   } = c.wi({
     context: n,
@@ -30,21 +30,21 @@ function m(e) {
       includeFrecency: !0
     },
     allowFetch: !0
-  }), f = i.useMemo(() => p.reduce((e, t) => {
+  }), f = i.useMemo(() => m.reduce((e, t) => {
     let {
       section: n,
       data: i
     } = t;
     return i.length > 0 && e.add(n.id), e
-  }, new Set), [p]), v = i.useMemo(() => {
+  }, new Set), [m]), v = i.useMemo(() => {
     var e, t;
-    return Object.values(null !== (t = null === (e = m.result) || void 0 === e ? void 0 : e.sections) && void 0 !== t ? t : {}).map(e => {
+    return Object.values(null !== (t = null === (e = p.result) || void 0 === e ? void 0 : e.sections) && void 0 !== t ? t : {}).map(e => {
       let {
         descriptor: t
       } = e;
       return t
     }).filter(e => !(e.id in a.Tm) && f.has(e.id))
-  }, [null === (t = m.result) || void 0 === t ? void 0 : t.sections, f]), N = (0, u.h)(v);
+  }, [null === (t = p.result) || void 0 === t ? void 0 : t.sections, f]), N = (0, u.h)(v);
   return {
     appsInThisServer: i.useMemo(() => r().compact(N.map(e => {
       let {
@@ -54,6 +54,6 @@ function m(e) {
     })).map(e => ({
       application: e
     })), [N]),
-    isLoading: m.fetchState.fetching || h
+    isLoading: p.fetchState.fetching || h
   }
 }

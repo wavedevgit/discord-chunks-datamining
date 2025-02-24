@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Z: () => d
 }), n(47120);
@@ -16,8 +16,8 @@ function d(e) {
     botUserId: t,
     applicationId: n,
     buttonSize: d,
-    analyticsLocations: m
-  } = e, [p, h] = l.useState(!1), f = l.useRef(null), v = l.useCallback(async () => {
+    analyticsLocations: p
+  } = e, [m, h] = l.useState(!1), f = l.useRef(null), v = l.useCallback(async () => {
     o.default.track(c.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
       application_id: n,
       button_action: a._y.OPEN_APP_DM
@@ -26,16 +26,16 @@ function d(e) {
       await (0, s.W)({
         appId: n,
         botId: t,
-        analyticsLocations: m
+        analyticsLocations: p
       })
     } catch (e) {}
     clearTimeout(f.current), h(!1)
-  }, [t, n, m]);
+  }, [t, n, p]);
   return (0, i.jsx)(r.zxk, {
     type: "submit",
     size: d,
     color: r.zxk.Colors.PRIMARY,
-    submitting: p,
+    submitting: m,
     onClick: v,
     "aria-label": u.NW.string(u.t.AUM8hY),
     children: u.NW.string(u.t.AUM8hY)

@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Z: () => a
 });
@@ -13,11 +13,11 @@ function a(e) {
     context: n,
     launchingComponentId: a,
     onSubmissionComplete: s
-  } = e, c = "channel" === n.type ? n.channel.id : void 0, u = (0, l.e7)([o.ZP], () => o.ZP.getLaunchState(t, c)), d = null != u && u.isLaunching && u.componentId === a, m = (0, r.Z)(d);
+  } = e, c = "channel" === n.type ? n.channel.id : void 0, u = (0, l.e7)([o.ZP], () => o.ZP.getLaunchState(t, c)), d = null != u && u.isLaunching && u.componentId === a, p = (0, r.Z)(d);
   return i.useEffect(() => {
-    !d && m && (null == s || s())
-  }, [d, m, s]), {
+    !d && p && (null == s || s())
+  }, [d, p, s]), {
     submitting: d,
-    wasSubmitting: m
+    wasSubmitting: p
   }
 }

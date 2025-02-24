@@ -1,6 +1,6 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
-  A: () => m
+  A: () => p
 });
 var i = n(200651);
 n(192379);
@@ -13,15 +13,15 @@ var l = n(780384),
   u = n(983008),
   d = n(478408);
 
-function m(e) {
+function p(e) {
   let {
     searchQuery: t,
     textContent: n,
-    type: m
-  } = e, p = (0, a.Q3)("AppLauncherEmptyState"), h = (0, o.ZP)(), f = (0, l.ap)(h) ? d : u;
-  return (0, s.Bm)(m, t), (0, i.jsxs)("div", {
+    type: p
+  } = e, m = (0, a.Q3)("AppLauncherEmptyState"), h = (0, o.ZP)(), f = (0, l.ap)(h) ? d : u;
+  return (0, s.Bm)(p, t), (0, i.jsxs)("div", {
     className: c.emptyStateContainer,
-    children: [p ? null : (0, i.jsx)("img", {
+    children: [m ? null : (0, i.jsx)("img", {
       className: c.emptyStateImage,
       src: f,
       alt: "empty state"

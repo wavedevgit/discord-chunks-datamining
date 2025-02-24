@@ -40,26 +40,27 @@ function _(e) {
   let {
     context: t,
     openInPopout: f,
-    analyticsLocation: _
+    analyticsLocation: _,
+    initialState: h
   } = e;
   f && (0, o.Z)(d.KJ3.CHANNEL_CALL_POPOUT);
-  let h = f ? i.u1M : i.z1l;
-  (0, l.yT)(c.ti.DISMISSED), (0, l.__)(c._b.VOICE);
-  let m = "contextless" !== t.type && (a.ZP.hasUnread(t.channel.id) || a.ZP.getMentionCount(t.channel.id) > 0);
+  let m = f ? i.u1M : i.z1l;
+  (0, l.yT)(c.ti.DISMISSED), (0, l.__)(c._b.VOICE, void 0, h);
+  let g = "contextless" !== t.type && (a.ZP.hasUnread(t.channel.id) || a.ZP.getMentionCount(t.channel.id) > 0);
   return s.default.track(d.rMx.VOICE_PANEL_TAB_OPENED, {
     tab: "activities",
     location: _,
     source: c._b.VOICE,
-    is_chat_badged: m
+    is_chat_badged: g
   }), (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("69057"), n.e("23919"), n.e("72320")]).then(n.bind(n, 743161));
+    } = await Promise.all([n.e("69057"), n.e("35755"), n.e("72320")]).then(n.bind(n, 743161));
     return n => (0, r.jsx)(e, p({
       context: t
     }, n))
   }, {
     modalKey: u.e9,
-    contextKey: h
+    contextKey: m
   })
 }

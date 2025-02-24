@@ -22,8 +22,8 @@ var i = n(200651),
   A = n(197712),
   w = n(511004),
   O = n(486324),
-  y = n(981631),
-  D = n(678916),
+  D = n(981631),
+  y = n(678916),
   b = n(388032),
   N = n(488629);
 
@@ -80,12 +80,12 @@ function v(e) {
   return (0, l.EQ)(e).with(O.pC.BANNER, () => ({
     height: O.f,
     width: O.L0
-  })).with(O.pC.VIDEO_BACKGROUND, () => D.HE).with(O.pC.AVATAR, () => ({
-    height: y.dGM,
-    width: y.dGM
+  })).with(O.pC.VIDEO_BACKGROUND, () => y.HE).with(O.pC.AVATAR, () => ({
+    height: D.dGM,
+    width: D.dGM
   })).with(O.pC.AVATAR_DECORATION, () => ({
-    height: y.dGM,
-    width: y.dGM
+    height: D.dGM,
+    width: D.dGM
   })).with(O.pC.GUILD_BANNER, () => ({
     height: O._T,
     width: O.X_
@@ -197,7 +197,7 @@ function S(e) {
     originalAsset: a,
     transitionState: l,
     onCrop: R,
-    onClose: D,
+    onClose: y,
     uploadType: M = O.pC.AVATAR,
     showUpsellHeader: S = !1,
     analyticsPage: j
@@ -216,8 +216,8 @@ function S(e) {
   r.useEffect(() => {
     (0, w.Z)()
   }, []), r.useEffect(() => {
-    en && S && C.default.track(y.rMx.OPEN_MODAL, {
-      type: y.jXE.CROP_GIF_MODAL,
+    en && S && C.default.track(D.rMx.OPEN_MODAL, {
+      type: D.jXE.CROP_GIF_MODAL,
       location: {
         page: j
       },
@@ -418,15 +418,15 @@ function S(e) {
         imageUri: e,
         file: t,
         originalAsset: a
-      }), $(!1), D()
-    }, [H, t, Y, W, en, D, R, a, M]),
+      }), $(!1), y()
+    }, [H, t, Y, W, en, y, R, a, M]),
     ep = r.useCallback(() => {
       if (null != z.current) {
         z.current(), z.current = null, $(!1);
         return
       }
-      D()
-    }, [D]);
+      y()
+    }, [y]);
   r.useEffect(() => (window.addEventListener("mouseup", es), window.addEventListener("resize", er), () => {
     window.removeEventListener("mouseup", es), window.removeEventListener("resize", er)
   }), [er, es]), r.useEffect(() => {
@@ -448,7 +448,7 @@ function S(e) {
       children: [S && !ef && (0, i.jsx)(h.Z, {
         type: M,
         analyticsPage: j,
-        analyticsSection: y.jXE.CROP_GIF_MODAL,
+        analyticsSection: D.jXE.CROP_GIF_MODAL,
         isGIF: en,
         banner: n
       }), (0, i.jsxs)(u.xBx, {
@@ -458,7 +458,7 @@ function S(e) {
           variant: "heading-lg/semibold",
           children: b.NW.string(b.t.DxAYCA)
         }), (0, i.jsx)(u.olH, {
-          onClick: D,
+          onClick: y,
           className: N.modalCloseButton
         })]
       }), (0, i.jsxs)(u.hzk, {
@@ -475,8 +475,7 @@ function S(e) {
             alt: "avatar",
             ref: P,
             onMouseDown: ea,
-            draggable: !1,
-            crossOrigin: "anonymous"
+            draggable: !1
           }), (0, i.jsx)("div", {
             className: M === O.pC.AVATAR ? N.overlayAvatar : N.overlayBanner,
             style: {

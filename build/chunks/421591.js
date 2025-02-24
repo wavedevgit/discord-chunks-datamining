@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Z: () => y
 }), n(47120), n(852437);
@@ -11,8 +11,8 @@ var i = n(200651),
   c = n(541099),
   u = n(695676),
   d = n(173790),
-  m = n(692656),
-  p = n(684256),
+  p = n(692656),
+  m = n(684256),
   h = n(314734),
   f = n(981631),
   v = n(820190);
@@ -71,7 +71,7 @@ function b(e) {
     children: n
   } = e, [r, o] = l.useState(null != t ? t : [{
     type: u.gc.HOME
-  }]), [a, s] = l.useState({}), c = r[r.length - 1], [d, m] = l.useState(!1), p = l.useCallback(e => {
+  }]), [a, s] = l.useState({}), c = r[r.length - 1], [d, p] = l.useState(!1), m = l.useCallback(e => {
     o(t => [...t, e])
   }, []), h = l.useCallback(() => {
     let e = null;
@@ -116,11 +116,11 @@ function b(e) {
       history: r,
       discard: a,
       currentView: c,
-      pushHistory: p,
+      pushHistory: m,
       goBack: h,
       getMostRecentHistoryItemByType: f,
       isSlideReady: d,
-      setSlideReady: m
+      setSlideReady: p
     },
     children: n
   })
@@ -172,7 +172,7 @@ function E(e) {
       children: (0, i.jsx)("div", {
         className: v.slideContent,
         style: x,
-        children: (0, i.jsx)(m.Z, {
+        children: (0, i.jsx)(p.Z, {
           isScrollCloseToBottom: c,
           setScroller: s,
           context: t,
@@ -186,7 +186,7 @@ function E(e) {
       children: (0, i.jsx)("div", {
         className: v.slideContent,
         style: x,
-        children: null != E && (0, i.jsx)(p.Z, {
+        children: null != E && (0, i.jsx)(m.Z, {
           context: t,
           entrypoint: n,
           title: E.title,

@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Z: () => N
 });
@@ -11,8 +11,8 @@ var i = n(200651),
   c = n(63063),
   u = n(827498),
   d = n(888617),
-  m = n(981631),
-  p = n(388032),
+  p = n(981631),
+  m = n(388032),
   h = n(609152),
   f = n(983008),
   v = n(478408);
@@ -22,7 +22,7 @@ function N(e) {
     showImage: t = !0,
     padding: n = !1
   } = e, N = (0, a.ZP)(), x = (0, r.ap)(N) ? v : f, y = l.useCallback(() => {
-    (0, s.Z)(c.Z.getAppsSupportURL(m.BhN.APPS_LEARN_MORE))
+    (0, s.Z)(c.Z.getAppsSupportURL(p.BhN.APPS_LEARN_MORE))
   }, []), {
     trackSectionImpressionRef: b
   } = (0, d.Z)({
@@ -45,20 +45,20 @@ function N(e) {
         children: [(0, i.jsx)(o.X6q, {
           variant: "heading-lg/bold",
           color: "header-primary",
-          children: p.NW.string(p.t["kw8/ER"])
+          children: m.NW.string(m.t["kw8/ER"])
         }), (0, i.jsx)(o.Text, {
           variant: "text-xs/normal",
           color: "text-normal",
-          children: p.NW.string(p.t.GZoV1N)
+          children: m.NW.string(m.t.GZoV1N)
         })]
       }), (0, i.jsx)(o.zxk, {
         size: o.zxk.Sizes.MEDIUM,
-        "aria-label": p.NW.formatToPlainString(p.t.xx5Sur, {
-          sectionTitle: p.NW.string(p.t["kw8/ER"]),
-          sectionBody: p.NW.string(p.t.GZoV1N)
+        "aria-label": m.NW.formatToPlainString(m.t.xx5Sur, {
+          sectionTitle: m.NW.string(m.t["kw8/ER"]),
+          sectionBody: m.NW.string(m.t.GZoV1N)
         }),
         onClick: y,
-        children: p.NW.string(p.t.Ye51oa)
+        children: m.NW.string(m.t.Ye51oa)
       })]
     })
   })

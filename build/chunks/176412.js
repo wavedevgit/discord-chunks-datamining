@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Bm: () => S,
   P7: () => _,
@@ -11,8 +11,8 @@ var i, l, r = n(192379),
   c = n(25209),
   u = n(481060),
   d = n(2052),
-  m = n(542094),
-  p = n(513202),
+  p = n(542094),
+  m = n(513202),
   h = n(367907),
   f = n(213459),
   v = n(895924),
@@ -75,17 +75,17 @@ function _(e) {
     launchingComponentId: c,
     submitting: N = !1,
     fetchesApplication: x = !0
-  } = e, y = (0, d.O)(), A = (0, m.Qv)({
+  } = e, y = (0, d.O)(), A = (0, p.Qv)({
     context: t,
     applicationId: n.id,
     fetchesApplication: x
   }), I = (0, g.Q)(A), O = (0, s.e7)([E.Z], () => E.Z.entrypoint()), _ = r.useMemo(() => {
     var e, i, l;
     if ("channel" !== t.type) return null !== (l = null === (e = n.bot) || void 0 === e ? void 0 : e.id) && void 0 !== l ? l : null === (i = (0, f.If)(t, n.id).descriptor) || void 0 === i ? void 0 : i.botId
-  }, [t, n.id, n.bot]), S = (0, m.w1)({
+  }, [t, n.id, n.bot]), S = (0, p.w1)({
     applicationId: n.id,
     botUserIdForAppDM: _,
-    embeddedActivitiesManager: p.Z,
+    embeddedActivitiesManager: m.Z,
     context: t,
     locationObject: y.location,
     onActivityItemSelectedProp: e => {
@@ -106,7 +106,7 @@ function _(e) {
     source: O,
     fetchesApplication: x
   }), T = u.Ttl.BRAND, L = null != o ? o : P.NW.string(P.t.zKX8Nj);
-  return I === m.JS.JOIN ? (T = u.Ttl.GREEN, L = P.NW.string(P.t.d9PsMj)) : I !== m.JS.LEAVE || N || (T = u.Ttl.RED, L = P.NW.string(P.t["Hi1/aW"])), {
+  return I === p.JS.JOIN ? (T = u.Ttl.GREEN, L = P.NW.string(P.t.d9PsMj)) : I !== p.JS.LEAVE || N || (T = u.Ttl.RED, L = P.NW.string(P.t["Hi1/aW"])), {
     onActivityItemSelected: S,
     activityAction: I,
     buttonColor: T,

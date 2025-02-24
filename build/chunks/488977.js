@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Z: () => S
 }), n(789020);
@@ -11,8 +11,8 @@ var i = n(200651),
   c = n(895924),
   u = n(970321),
   d = n(311819),
-  m = n(299206),
-  p = n(726721),
+  p = n(299206),
+  m = n(726721),
   h = n(726521),
   f = n(973616),
   v = n(914010),
@@ -63,11 +63,11 @@ function S(e) {
     application_id: l.id,
     section_name: L,
     source: C.Z.lastShownEntrypoint()
-  }, D = N.default.getCurrentUser(), W = p.Z.useExperiment({
+  }, D = N.default.getCurrentUser(), W = m.Z.useExperiment({
     location: c.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU
   }, {
     autoTrackExposure: !0
-  }).enabled, H = (0, m.Z)({
+  }).enabled, H = (0, p.Z)({
     id: l.id,
     label: I.NW.string(I.t["+NP/b2"])
   }), V = (0, j.P)({

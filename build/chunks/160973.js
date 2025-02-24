@@ -1,6 +1,6 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => p
+  Z: () => m
 });
 var i = n(442837),
   l = n(595519),
@@ -11,12 +11,12 @@ var i = n(442837),
   c = n(496675),
   u = n(358085),
   d = n(231338),
-  m = n(388032);
+  p = n(388032);
 
-function p(e) {
+function m(e) {
   let t, {
       context: n,
-      application: p,
+      application: m,
       activityAction: h
     } = e,
     f = "channel" === n.type ? n.channel : void 0,
@@ -34,11 +34,11 @@ function p(e) {
       (null == f ? void 0 : f.isGuildVoice()) ? x = !v: (0, l.WS)(f) || (x = !0)
   }
   if (h !== a.JS.LEAVE) {
-    let e = p instanceof s.ZP ? p.embeddedActivityConfig : p.embedded_activity_config,
+    let e = m instanceof s.ZP ? m.embeddedActivityConfig : m.embedded_activity_config,
       n = (0, o.Z)((0, u.getOS)());
-    null == e || e.supported_platforms.includes(n) ? (null == f ? void 0 : f.isThread()) && (x = !0, t = m.NW.string(m.t.ddSR3t)) : (x = !1, t = m.NW.string(m.t.z2YTgI))
+    null == e || e.supported_platforms.includes(n) ? (null == f ? void 0 : f.isThread()) && (x = !0, t = p.NW.string(p.t.ddSR3t)) : (x = !1, t = p.NW.string(p.t.z2YTgI))
   }
-  return x && null == t && (t = m.NW.string(m.t.f41E1t)), {
+  return x && null == t && (t = p.NW.string(p.t.f41E1t)), {
     disabled: x,
     reason: t
   }

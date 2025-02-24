@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Z: () => f
 }), n(266796);
@@ -11,8 +11,8 @@ var i = n(200651),
   c = n(176412),
   u = n(570949),
   d = n(753972),
-  m = n(532309),
-  p = n(834380),
+  p = n(532309),
+  m = n(834380),
   h = n(413097);
 
 function f(e) {
@@ -59,26 +59,26 @@ function f(e) {
     return null == t ? null : (0, c.ae)(t, void 0)
   }, [C, null == n ? void 0 : n.displayDescription]), {
     trackSearchResultsItemImpressionRef: j
-  } = (0, m.Z)({
+  } = (0, p.Z)({
     applicationId: f.id,
     commandId: null == n ? void 0 : n.id,
     query: N,
     searchResultsPosition: x
   });
   return (0, i.jsx)(r.P3F, {
-    className: p.clickable,
+    className: m.clickable,
     innerRef: e => j.current = e,
     onClick: v,
     onContextMenu: y,
     children: (0, i.jsxs)(r.Rny, {
-      className: p.focusBlock,
+      className: m.focusBlock,
       children: [(0, i.jsx)(d.Z, {
         src: b,
-        className: p.icon,
+        className: m.icon,
         "aria-hidden": !0,
         rendersPlaceholder: !0
       }), (0, i.jsxs)("div", {
-        className: p.cmdDetails,
+        className: m.cmdDetails,
         children: [(0, i.jsx)(r.X6q, {
           variant: "heading-md/semibold",
           color: "header-primary",
@@ -91,12 +91,12 @@ function f(e) {
           children: g
         })]
       }), null != n ? (0, i.jsx)(r.Text, {
-        className: p.cmdAppName,
+        className: m.cmdAppName,
         variant: "text-sm/normal",
         color: "text-secondary",
         children: E
       }) : null, (0, i.jsx)("div", {
-        className: p.underline
+        className: m.underline
       })]
     })
   })

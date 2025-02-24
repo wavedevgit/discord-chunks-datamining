@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Q2: () => I,
   pe: () => A
@@ -12,8 +12,8 @@ var i = n(192379),
   c = n(911969),
   u = n(127255),
   d = n(654455),
-  m = n(213459),
-  p = n(807169),
+  p = n(213459),
+  m = n(807169),
   h = n(104793),
   f = n(674588),
   v = n(809547),
@@ -32,11 +32,11 @@ function g(e, t) {
 function j(e, t) {
   let n = (0, b.$d)(e),
     i = (0, b.$d)(t);
-  return (0, m.un)(n, i)
+  return (0, p.un)(n, i)
 }
 
 function P(e, t) {
-  return (0, m.un)(e.displayName, t.displayName)
+  return (0, p.un)(e.displayName, t.displayName)
 }
 
 function A(e) {
@@ -60,24 +60,24 @@ function A(e) {
       context: l,
       includeBuiltIn: r = !0,
       allowFetch: o = !0
-    } = e, a = (0, m.em)(l, !0, o), s = (0, m.PL)(!0, o);
+    } = e, a = (0, p.em)(l, !0, o), s = (0, p.PL)(!0, o);
     return i.useMemo(() => {
       var e, t, n, i, o;
       let c = null !== (n = null === (e = a.result) || void 0 === e ? void 0 : e.sections) && void 0 !== n ? n : {},
         u = null !== (i = null === (t = s.result) || void 0 === t ? void 0 : t.sections) && void 0 !== i ? i : {},
         d = [...Object.keys(c), ...Object.keys(u).filter(e => !(e in c))];
       r && d.push(E.bi.BUILT_IN);
-      let p = [],
+      let m = [],
         h = {};
       for (let e of d) {
-        let t = (0, m.If)(l, e),
+        let t = (0, p.If)(l, e),
           n = null !== (o = t.sectionCommands) && void 0 !== o ? o : [];
-        p.push(...n), n.forEach(e => {
+        m.push(...n), n.forEach(e => {
           null != t.descriptor && (h[e.id] = t.descriptor)
         })
       }
       return {
-        commands: p,
+        commands: m,
         commandSectionMap: h,
         loading: !0 === a.fetchState.fetching || !0 === s.fetchState.fetching
       }
@@ -95,7 +95,7 @@ function A(e) {
       allowFetch: r = !0,
       includeEmbeddedApps: o,
       includeNonEmbeddedApps: a
-    } = e, s = "channel" === t.type ? t.channel : void 0, u = (0, p.Hs)(s, [c.yU.CHAT]).hasBaseAccessPermissions, d = (0, m.em)(t, u, r), h = (0, m.PL)(u, r), f = i.useCallback(e => {
+    } = e, s = "channel" === t.type ? t.channel : void 0, u = (0, m.Hs)(s, [c.yU.CHAT]).hasBaseAccessPermissions, d = (0, p.em)(t, u, r), h = (0, p.PL)(u, r), f = i.useCallback(e => {
       let t = e.descriptor.application;
       return null != t && (!!(o && (0, b.ye)(t)) || null != t && a && !(0, b.ye)(t) && (!n || Object.keys(e.commands).length > 0))
     }, [o, a, n]), v = [], N = new Set;
@@ -127,7 +127,7 @@ function A(e) {
     return (0, x.N)(v, {
       limit: l,
       filterPredicates: [function(e) {
-        let t = (0, p.k)("channel" === e.type ? e.channel : void 0, [c.yU.CHAT]),
+        let t = (0, m.k)("channel" === e.type ? e.channel : void 0, [c.yU.CHAT]),
           n = {};
         return i => {
           let {
@@ -141,7 +141,7 @@ function A(e) {
               descriptor: t,
               isGuildInstalled: s,
               isUserInstalled: c
-            } = (0, m.If)(e, i.applicationId), u = (null == l ? void 0 : l.guild_id) != null ? h.ML(null == t ? void 0 : t.permissions, l.guild_id, r, o, a) : null, d = (null == l ? void 0 : l.guild_id) != null ? h.ZJ(null == t ? void 0 : t.permissions, l, l.guild_id) : null;
+            } = (0, p.If)(e, i.applicationId), u = (null == l ? void 0 : l.guild_id) != null ? h.ML(null == t ? void 0 : t.permissions, l.guild_id, r, o, a) : null, d = (null == l ? void 0 : l.guild_id) != null ? h.ZJ(null == t ? void 0 : t.permissions, l, l.guild_id) : null;
             n[i.applicationId] = {
               descriptor: t,
               applicationAllowedForUser: u,
@@ -155,14 +155,14 @@ function A(e) {
             applicationAllowedForChannel: c,
             applicationAllowedForUser: u,
             isGuildInstalled: d,
-            isUserInstalled: p
+            isUserInstalled: m
           } = n[i.applicationId];
           return h.Ft(i, t, {
             applicationAllowedForUser: u,
             applicationAllowedForChannel: c,
             commandBotId: null == s ? void 0 : s.botId,
             isGuildInstalled: d,
-            isUserInstalled: p
+            isUserInstalled: m
           }) === h.mF.ALLOWED
         }
       }(t)],
@@ -250,7 +250,7 @@ function A(e) {
     return (0, x.N)(u, {
       limit: o,
       filterPredicates: [function(e) {
-        let t = (0, p.k)("channel" === e.type ? e.channel : void 0, [c.yU.CHAT, c.yU.PRIMARY_ENTRY_POINT]);
+        let t = (0, m.k)("channel" === e.type ? e.channel : void 0, [c.yU.CHAT, c.yU.PRIMARY_ENTRY_POINT]);
         return n => {
           let {
             context: i,
@@ -262,10 +262,10 @@ function A(e) {
             sectionCommands: s,
             isGuildInstalled: c,
             isUserInstalled: u
-          } = (0, m.If)(e, n.id), d = (null == i ? void 0 : i.guild_id) != null ? h.ML(null == a ? void 0 : a.permissions, i.guild_id, l, r, o) : null, p = (null == i ? void 0 : i.guild_id) != null ? h.ZJ(null == a ? void 0 : a.permissions, i, i.guild_id) : null;
+          } = (0, p.If)(e, n.id), d = (null == i ? void 0 : i.guild_id) != null ? h.ML(null == a ? void 0 : a.permissions, i.guild_id, l, r, o) : null, m = (null == i ? void 0 : i.guild_id) != null ? h.ZJ(null == a ? void 0 : a.permissions, i, i.guild_id) : null;
           return null == s || !(s.length > 0) || s.some(e => h.Ft(e, t, {
             applicationAllowedForUser: d,
-            applicationAllowedForChannel: p,
+            applicationAllowedForChannel: m,
             commandBotId: null == a ? void 0 : a.botId,
             isGuildInstalled: c,
             isUserInstalled: u
@@ -305,9 +305,9 @@ function I(e) {
   n.startsWith("".concat(C.GI)) && (n = n.substring(1));
   let u = c === y._b.VOICE,
     d = "channel" === t.type ? t.channel.guild_id : void 0,
-    [m, p] = i.useState(1),
-    h = i.useRef(m);
-  h.current = m;
+    [p, m] = i.useState(1),
+    h = i.useRef(p);
+  h.current = p;
   let {
     fetchState: N,
     totalPages: x
@@ -317,7 +317,7 @@ function I(e) {
       fetchState: v.Z.getFetchState({
         query: n,
         guildId: d,
-        page: m,
+        page: p,
         integrationType: o.Y.USER_INSTALL,
         minUserInstallCommandCount: 1,
         excludeAppsWithCustomInstallUrl: !0,
@@ -328,7 +328,7 @@ function I(e) {
       totalPages: null !== (t = null === (e = v.Z.getSearchResults({
         query: n,
         guildId: d,
-        page: m,
+        page: p,
         integrationType: o.Y.USER_INSTALL,
         minUserInstallCommandCount: 1,
         excludeAppsWithCustomInstallUrl: !0,
@@ -337,8 +337,8 @@ function I(e) {
         source: a.F.APP_LAUNCHER
       })) || void 0 === e ? void 0 : e.totalPages) && void 0 !== t ? t : 0
     }
-  }, [n, d, m, u]), b = i.useMemo(() => Array.from({
-    length: N === v.M.FETCHED || N === v.M.ERROR ? m : m - 1
+  }, [n, d, p, u]), b = i.useMemo(() => Array.from({
+    length: N === v.M.FETCHED || N === v.M.ERROR ? p : p - 1
   }, (e, t) => {
     var i, l;
     return null !== (l = null === (i = v.Z.getSearchResults({
@@ -352,9 +352,9 @@ function I(e) {
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: !0,
       source: a.F.APP_LAUNCHER
     })) || void 0 === i ? void 0 : i.results) && void 0 !== l ? l : []
-  }), [N, d, n, m, u]), E = i.useCallback(() => {
+  }), [N, d, n, p, u]), E = i.useCallback(() => {
     let e = b.length;
-    N === v.M.FETCHED && e === h.current && e > 0 && e < x && e < r && b[e - 1].length > 0 && (h.current++, p(e => e + 1))
+    N === v.M.FETCHED && e === h.current && e > 0 && e < x && e < r && b[e - 1].length > 0 && (h.current++, m(e => e + 1))
   }, [N, r, b, x]), g = i.useCallback(e => {
     let {
       query: t,
@@ -378,11 +378,11 @@ function I(e) {
   return i.useEffect(() => {
     l && g({
       query: n,
-      page: m,
+      page: p,
       guildId: d
     })
-  }, [n, d, g, m, l]), i.useEffect(() => {
-    p(1)
+  }, [n, d, g, p, l]), i.useEffect(() => {
+    m(1)
   }, [d, n]), {
     fetchState: N,
     applicationResults: b.flat(),

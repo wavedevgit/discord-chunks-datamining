@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Z: () => Z
 }), n(47120);
@@ -11,8 +11,8 @@ var i = n(200651),
   c = n(367907),
   u = n(555573),
   d = n(895924),
-  m = n(809547),
-  p = n(583027),
+  p = n(809547),
+  m = n(583027),
   h = n(585483),
   f = n(499254),
   v = n(541099),
@@ -65,7 +65,7 @@ function k(e) {
     isScrollCloseToBottom: s
   } = e, c = r === N._b.TEXT, u = r === N._b.TEXT, {
     loading: d,
-    isEmptyState: p,
+    isEmptyState: m,
     commandResults: h,
     hasCommandResults: f,
     applicationResults: v
@@ -87,9 +87,9 @@ function k(e) {
     entrypoint: r
   });
   l.useEffect(() => {
-    s && y === m.M.FETCHED && E()
+    s && y === p.M.FETCHED && E()
   }, [E, y, s]);
-  let C = null == y || y === m.M.FETCHING,
+  let C = null == y || y === p.M.FETCHING,
     j = l.useMemo(() => {
       let e = v.map(e => ({
           application: e,
@@ -107,7 +107,7 @@ function k(e) {
       }))]
     }, [b, v]),
     P = j.length > 0,
-    A = p && !P && !C;
+    A = m && !P && !C;
   return d ? (0, i.jsx)(H, {}) : A ? (0, i.jsx)(g.A, {
     type: N.LG.SEARCH_EMPTY,
     searchQuery: n,
@@ -133,7 +133,7 @@ function w(e) {
     context: r,
     commandResults: o,
     query: a
-  } = e, m = o.length > 4, x = l.useMemo(() => m ? o.slice(0, 4) : o, [o, m]), [y, b] = l.useState(!1), C = null !== (t = (0, s.Z)(y)) && void 0 !== t ? t : y, g = l.useCallback(() => b(e => !e), []), A = (null !== (n = (0, s.Z)(a)) && void 0 !== n ? n : a)[0] !== a[0], T = y && !A;
+  } = e, p = o.length > 4, x = l.useMemo(() => p ? o.slice(0, 4) : o, [o, p]), [y, b] = l.useState(!1), C = null !== (t = (0, s.Z)(y)) && void 0 !== t ? t : y, g = l.useCallback(() => b(e => !e), []), A = (null !== (n = (0, s.Z)(a)) && void 0 !== n ? n : a)[0] !== a[0], T = y && !A;
   l.useLayoutEffect(() => b(!1), [A]);
   let {
     ref: L,
@@ -159,7 +159,7 @@ function w(e) {
     children: [(0, i.jsx)(j.Z, {
       title: _.NW.string(_.t["0hKkS0"]),
       buttonType: k,
-      onClickViewButton: m ? g : void 0
+      onClickViewButton: p ? g : void 0
     }), (0, i.jsx)("div", {
       className: S.sectionContentContainer,
       ref: L,
@@ -177,7 +177,7 @@ function w(e) {
           searchResultsPosition: t,
           onClick: () => {
             let e = v.Z.entrypoint();
-            f.yT(N.ti.DISMISSED), (0, p.Mo)({
+            f.yT(N.ti.DISMISSED), (0, m.Mo)({
               command: n,
               location: d.Vh.APP_LAUNCHER_HOME_SEARCH,
               sectionName: N.L3.SEARCH

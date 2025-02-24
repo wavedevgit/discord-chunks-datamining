@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -11,8 +11,8 @@ var i = n(200651),
   c = n(778569),
   u = n(213459),
   d = n(835473),
-  m = n(541099),
-  p = n(827498),
+  p = n(541099),
+  m = n(827498),
   h = n(783097),
   f = n(753972),
   v = n(387658),
@@ -29,7 +29,7 @@ function g(e) {
     context: n,
     application: s,
     sectionName: c
-  } = e, g = "channel" === n.type ? n.channel : void 0, P = (0, r.e7)([m.Z], () => m.Z.entrypoint()), A = null !== (t = (0, d.q)(s.id === y.bi.BUILT_IN ? null : s.id)) && void 0 !== t ? t : s, I = (0, h.ye)(A) ? j : x.Z, O = l.useRef(null), [_, S] = l.useState(!1), {
+  } = e, g = "channel" === n.type ? n.channel : void 0, P = (0, r.e7)([p.Z], () => p.Z.entrypoint()), A = null !== (t = (0, d.q)(s.id === y.bi.BUILT_IN ? null : s.id)) && void 0 !== t ? t : s, I = (0, h.ye)(A) ? j : x.Z, O = l.useRef(null), [_, S] = l.useState(!1), {
     iconURL: T,
     name: L
   } = l.useMemo(() => (0, h.sl)(A, {
@@ -63,7 +63,7 @@ function g(e) {
       application: A,
       sectionName: c,
       hasCommands: _
-    }), P === p._b.TEXT ? (0, i.jsx)(v.Z, {
+    }), P === m._b.TEXT ? (0, i.jsx)(v.Z, {
       context: n,
       application: A,
       sectionName: c,

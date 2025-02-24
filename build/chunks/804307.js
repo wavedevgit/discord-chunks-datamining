@@ -1,6 +1,6 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => m
+  Z: () => p
 });
 var i = n(200651),
   l = n(192379),
@@ -12,12 +12,12 @@ var i = n(200651),
   u = n(98880),
   d = n(116965);
 
-function m(e) {
+function p(e) {
   let {
     look: t = u.U4.LARGE_BANNER
   } = e, n = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), {
     styleLarge: r,
-    styleSmall: m
+    styleSmall: p
   } = l.useMemo(() => ({
     styleLarge: {
       width: "".concat(10 + 50 * Math.random(), "%")
@@ -59,7 +59,7 @@ function m(e) {
           })
         }), (0, i.jsx)("div", {
           className: d.textPlaceholder,
-          style: m,
+          style: p,
           children: (0, i.jsx)(s.Text, {
             className: d.hidden,
             variant: "text-sm/normal",

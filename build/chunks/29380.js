@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Z: () => x
 }), n(47120);
@@ -11,8 +11,8 @@ var i = n(200651),
   c = n(499254),
   u = n(827498),
   d = n(160973),
-  m = n(783097),
-  p = n(890280),
+  p = n(783097),
+  m = n(890280),
   h = n(176412),
   f = n(981631),
   v = n(388032),
@@ -30,7 +30,7 @@ function x(e) {
   }, []), {
     submitting: g,
     wasSubmitting: j
-  } = (0, p.Z)({
+  } = (0, m.Z)({
     applicationId: n.id,
     context: t,
     launchingComponentId: E,
@@ -38,7 +38,7 @@ function x(e) {
   }), [P, A] = l.useState(!1), I = (0, o.Qv)({
     applicationId: n.id,
     context: t
-  }), O = l.useMemo(() => (0, m.XZ)(y.displayName), [y.displayName]), {
+  }), O = l.useMemo(() => (0, p.XZ)(y.displayName), [y.displayName]), {
     onActivityItemSelected: _,
     buttonColor: S,
     buttonText: T

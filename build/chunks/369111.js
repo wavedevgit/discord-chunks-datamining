@@ -20,21 +20,25 @@ function f(e) {
     guildId: f
   } = e, p = (0, i.e7)([u.default], () => u.default.getCurrentUser()), _ = (0, i.e7)([l.ZP], () => null != f && null != p ? l.ZP.getMember(f, p.id) : null), h = null != _ ? _.avatarDecoration : null == p ? void 0 : p.avatarDecoration, m = (0, o.Z)(n), {
     pendingAvatar: g,
-    pendingAvatarDecoration: E,
-    pendingErrors: v
+    pendingAvatarV2: E,
+    pendingAvatarDecoration: v,
+    pendingErrors: b
   } = (0, i.cj)([c.Z, a.Z], () => ({
     pendingAvatar: t ? c.Z.getTryItOutAvatar() : null != f ? a.Z.getPendingAvatar() : c.Z.getPendingAvatar(),
+    pendingAvatarV2: t ? c.Z.getTryItOutAvatarV2() : null != f ? a.Z.getPendingAvatarV2() : c.Z.getPendingAvatarV2(),
     pendingAvatarDecoration: t ? c.Z.getTryItOutAvatarDecoration() : null != f ? a.Z.getPendingAvatarDecoration() : c.Z.getPendingAvatarDecoration(),
     pendingErrors: null != f ? a.Z.getErrors().avatarDecoration : c.Z.getErrors().avatarDecoration
-  })), b = (0, r.useCallback)(e => (0, s.Jw)(e, null == p ? void 0 : p.avatar), [null == p ? void 0 : p.avatar]), y = (0, r.useCallback)(e => {
+  })), y = (0, r.useCallback)(e => (0, s.Jw)(e, null == p ? void 0 : p.avatar), [null == p ? void 0 : p.avatar]), O = (0, r.useCallback)(e => (0, s.RZ)(e, null == p ? void 0 : p.avatar), [null == p ? void 0 : p.avatar]), S = (0, r.useCallback)(e => {
     (0, s.PO)(f, e), null != e && m(e)
   }, [m, f]);
   return {
     pendingAvatar: g,
-    pendingAvatarDecoration: E,
-    setPendingAvatar: t ? d.c_ : b,
-    setPendingAvatarDecoration: t ? d.Xz : y,
+    pendingAvatarV2: E,
+    pendingAvatarDecoration: v,
+    setPendingAvatar: t ? d.c_ : y,
+    setPendingAvatarV2: t ? d.US : O,
+    setPendingAvatarDecoration: t ? d.Xz : S,
     savedAvatarDecoration: h,
-    pendingErrors: v
+    pendingErrors: b
   }
 }

@@ -18,11 +18,11 @@ var r = n(200651),
   g = n(100527),
   b = n(906732),
   _ = n(226026),
-  C = n(895924),
-  v = n(674588),
-  y = n(368862),
-  x = n(34674),
-  j = n(703656),
+  C = n(397698),
+  v = n(895924),
+  y = n(674588),
+  x = n(368862),
+  j = n(34674),
   O = n(390322),
   E = n(857192),
   N = n(626135),
@@ -40,60 +40,67 @@ let M = c.Y.APP_LAUNCHER_IN_VOICE_BANNER,
 function L(e) {
   var t;
   let n, {
-      onClick: l
+      channel: l,
+      openInPopout: a,
+      onClick: c
     } = e,
     {
-      fetchState: a,
-      voiceBannerCollection: c
+      fetchState: h,
+      voiceBannerCollection: f
     } = function() {
       let e = (0, d.e7)([E.default], () => E.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE;
       return i.useEffect(() => {
-        (0, v.XK)({
+        (0, y.XK)({
           surface: M,
           activeState: e
         })
       }, [e]), {
-        fetchState: (0, d.e7)([y.Z], () => y.Z.getFetchState({
+        fetchState: (0, d.e7)([x.Z], () => x.Z.getFetchState({
           surface: M,
           activeState: e
         })),
-        voiceBannerCollection: (0, d.e7)([y.Z], () => y.Z.getCollections({
+        voiceBannerCollection: (0, d.e7)([x.Z], () => x.Z.getCollections({
           surface: M,
           activeState: e
         }))[0]
       }
     }(),
-    h = a === y.M.FETCHING,
-    {
-      analyticsLocations: f
-    } = (0, b.ZP)(g.Z.APP_LAUNCHER_IN_VOICE_BANNER),
-    m = i.useMemo(() => {
-      let e = null == c ? void 0 : c.application_directory_collection_items[0];
+    m = h === x.M.FETCHING,
+    b = i.useMemo(() => {
+      let e = null == f ? void 0 : f.application_directory_collection_items[0];
       return null == e ? null : e.type === u.C.APPLICATION_BANNER ? e : null
-    }, [null == c ? void 0 : c.application_directory_collection_items]),
+    }, [null == f ? void 0 : f.application_directory_collection_items]),
     {
-      trackItemImpressionRef: C
+      trackItemImpressionRef: v
     } = (0, _.Z)({
-      applicationId: null !== (t = null == m ? void 0 : m.application.id) && void 0 !== t ? t : "",
-      applicationFlags: null == m ? void 0 : m.application.flags,
+      applicationId: null !== (t = null == b ? void 0 : b.application.id) && void 0 !== t ? t : "",
+      applicationFlags: null == b ? void 0 : b.application.flags,
       sectionName: "app_launcher_in_voice_banner",
-      sectionPosition: null == m ? void 0 : m.position,
+      sectionPosition: null == b ? void 0 : b.position,
       sectionOverallPosition: 0
     });
-  return null == m || null == c || h ? null : (null != m.id && null != m.image_hash && (n = (0, x.$_)({
-    itemId: m.id,
-    hash: m.image_hash,
+  return null == b || null == f || m ? null : (null != b.id && null != b.image_hash && (n = (0, j.$_)({
+    itemId: b.id,
+    hash: b.image_hash,
     containerWidth: 584
   })), (0, r.jsxs)(p.P3F, {
     className: o()(R.clickableBanner),
-    innerRef: C,
+    innerRef: v,
     onClick: () => {
-      l(), (0, j.uL)(A.Z5c.ACTIVITY_DETAILS(m.application.id), {
-        sourceLocationStack: f
+      c(), (0, C.Z)({
+        context: {
+          type: "channel",
+          channel: l
+        },
+        openInPopout: a,
+        analyticsLocation: g.Z.APP_LAUNCHER_IN_VOICE_BANNER,
+        initialState: {
+          applicationId: b.application.id
+        }
       })
     },
     children: [(0, r.jsx)("img", {
-      alt: m.description,
+      alt: b.description,
       src: n,
       className: R.poster
     }), (0, r.jsx)("div", {
@@ -110,7 +117,7 @@ let D = i.forwardRef(function(e, t) {
     onMouseEnter: c,
     onMouseLeave: u,
     onClick: _,
-    className: v
+    className: C
   } = e, y = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), {
     id: x,
     guild_id: j
@@ -159,7 +166,7 @@ let D = i.forwardRef(function(e, t) {
       children: (0, r.jsxs)(p.VqE, {
         ref: t,
         "aria-labelledby": k,
-        className: v,
+        className: C,
         children: [(0, r.jsx)(p.y5t, {
           forceLevel: 2,
           children: (0, r.jsx)(p.nn4, {
@@ -199,6 +206,8 @@ let D = i.forwardRef(function(e, t) {
               })]
             })]
           }), (0, r.jsx)(L, {
+            openInPopout: D,
+            channel: l,
             onClick: () => {
               _(), s()
             }
@@ -215,7 +224,7 @@ let D = i.forwardRef(function(e, t) {
               },
               aspectRatio: S.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
               animatedDivClass: R.activitySuggestion,
-              commandOrigin: C.bB.MINI_SHELF
+              commandOrigin: v.bB.MINI_SHELF
             }, e.application.id)), (0, r.jsx)("div", {
               className: o()(R.wumpusRocketOuterContainer, {
                 [R.wumpusReducedMotion]: y

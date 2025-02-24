@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Z: () => a
 }), n(230036), n(47120);
@@ -62,18 +62,18 @@ function a(e) {
   }, [t]), i.useLayoutEffect(() => {
     d && s(o.bS.POPULAR)
   }, [d]);
-  let m = c;
+  let p = c;
   switch (a) {
     case o.bS.POPULAR:
-      m = u;
+      p = u;
       break;
     case o.bS.ALPHABETICAL:
-      m = c
+      p = c
   }
   return {
     sortOrder: a,
     setSortOrder: s,
-    commands: m,
+    commands: p,
     canSort: d
   }
 }

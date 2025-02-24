@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Z: () => _
 }), n(47120), n(266796);
@@ -11,8 +11,8 @@ var i = n(200651),
   c = n(115130),
   u = n(147865),
   d = n(427996),
-  m = n(906732),
-  p = n(706302),
+  p = n(906732),
+  m = n(706302),
   h = n(812236),
   f = n(835473),
   v = n(70097),
@@ -36,8 +36,8 @@ function _(e) {
     videoUrl: r,
     imageCoverUrl: s,
     sectionName: u,
-    hasCommands: m
-  } = e, p = l.useMemo(() => {
+    hasCommands: p
+  } = e, m = l.useMemo(() => {
     var e;
     return null !== (e = (0, b.jD)(n)) && void 0 !== e ? e : ""
   }, [n]), h = (0, a.e7)([c.Z], () => c.Z.inDevModeForApplication(n.id)), f = null != r, {
@@ -68,8 +68,8 @@ function _(e) {
           application: n
         }), (0, i.jsx)(L, {
           application: n
-        }), p.length > 0 ? (0, i.jsx)(Z, {
-          description: p
+        }), m.length > 0 ? (0, i.jsx)(Z, {
+          description: m
         }) : null, h ? (0, i.jsx)("div", {
           className: I.developerShelfControlsContainer,
           children: (0, i.jsx)(d.W, {
@@ -81,7 +81,7 @@ function _(e) {
           application: n,
           sectionName: u,
           isDeveloperOfThisApp: h,
-          hasCommands: m
+          hasCommands: p
         })]
       })]
     }), (0, i.jsx)(S, {
@@ -192,13 +192,13 @@ function M(e) {
     sectionName: o,
     hasCommands: a,
     isDeveloperOfThisApp: c
-  } = e, u = (0, h.Fs)(n, r.id), d = (0, f.q)(r.id), v = null == d ? void 0 : null === (t = d.bot) || void 0 === t ? void 0 : t.id, N = (0, p.Z)({
+  } = e, u = (0, h.Fs)(n, r.id), d = (0, f.q)(r.id), v = null == d ? void 0 : null === (t = d.bot) || void 0 === t ? void 0 : t.id, N = (0, m.Z)({
     context: n,
     applicationId: r.id,
     botUserId: v
   }), {
     analyticsLocations: x
-  } = (0, m.ZP)();
+  } = (0, p.ZP)();
   if (l.useEffect(() => {
       if (!(0, b.BQ)(r) || !(0, b.ye)(r)) return;
       let e = setTimeout(() => {
@@ -276,8 +276,8 @@ function Z(e) {
       }
     }, [u, c]),
     {
-      ref: m,
-      isTransitioning: p,
+      ref: p,
+      isTransitioning: m,
       onTransitionEnd: h
     } = (0, C.Z)(function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -299,11 +299,11 @@ function Z(e) {
     }({
       isExpanded: n
     }, d)),
-    f = n || p;
+    f = n || m;
   return (0, i.jsxs)("div", {
     className: I.descriptionContainer,
     children: [(0, i.jsx)("div", {
-      ref: m,
+      ref: p,
       className: I.overflowHidden,
       onTransitionEnd: h,
       children: (0, i.jsx)(s.Text, {

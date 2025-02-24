@@ -1,4 +1,4 @@
-/** Chunk was on 23919 **/
+/** Chunk was on 35755 **/
 n.d(t, {
   Z: () => W
 }), n(47120);
@@ -11,8 +11,8 @@ var i = n(200651),
   c = n(442837),
   u = n(481060),
   d = n(911969),
-  m = n(607070),
-  p = n(555573),
+  p = n(607070),
+  m = n(555573),
   h = n(213459),
   f = n(10718),
   v = n(895924),
@@ -49,7 +49,7 @@ function k(e) {
       command: o,
       location: v.Vh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c
-    }), "channel" === r.type && (p.Po({
+    }), "channel" === r.type && (m.Po({
       channelId: r.channel.id,
       command: o,
       section: s,
@@ -60,7 +60,7 @@ function k(e) {
     }), x.S.dispatch(_.CkL.FOCUS_CHANNEL_TEXT_AREA, {
       channelId: r.channel.id
     }))
-  }, [r, o, s, c]), m = (null !== (n = null === (t = o.options) || void 0 === t ? void 0 : t.length) && void 0 !== n ? n : 0) > 0, h = l.useMemo(() => (0, I.ae)(o.displayDescription, void 0), [o.displayDescription]), f = l.useMemo(() => (0, i.jsxs)("div", {
+  }, [r, o, s, c]), p = (null !== (n = null === (t = o.options) || void 0 === t ? void 0 : t.length) && void 0 !== n ? n : 0) > 0, h = l.useMemo(() => (0, I.ae)(o.displayDescription, void 0), [o.displayDescription]), f = l.useMemo(() => (0, i.jsxs)("div", {
     className: R.commandTextContainer,
     children: [(0, i.jsx)(u.Text, {
       variant: "text-sm/semibold",
@@ -79,7 +79,7 @@ function k(e) {
     children: [(0, i.jsx)(u.Rny, {
       className: R.commandFocusBlock,
       children: f
-    }), m ? (0, i.jsx)(a.F, {}) : (0, i.jsx)(U, {
+    }), p ? (0, i.jsx)(a.F, {}) : (0, i.jsx)(U, {
       context: r,
       command: o,
       sectionName: c
@@ -88,7 +88,7 @@ function k(e) {
 }
 
 function w() {
-  let e = (0, c.e7)([m.Z], () => m.Z.useReducedMotion),
+  let e = (0, c.e7)([p.Z], () => p.Z.useReducedMotion),
     {
       styleLarge: t,
       styleSmall: n
@@ -228,8 +228,8 @@ function W(e) {
   } = e, {
     filterSection: c,
     commandsByActiveSection: u,
-    sectionDescriptors: m,
-    loading: p
+    sectionDescriptors: p,
+    loading: m
   } = f.wi({
     context: n,
     filters: {
@@ -244,7 +244,7 @@ function W(e) {
       applicationId: r.id
     },
     allowFetch: !0
-  }), h = null !== (t = m.find(e => e.id === r.id)) && void 0 !== t ? t : null, {
+  }), h = null !== (t = p.find(e => e.id === r.id)) && void 0 !== t ? t : null, {
     sortOrder: v,
     setSortOrder: N,
     commands: x,
@@ -263,7 +263,7 @@ function W(e) {
   });
   return (l.useEffect(() => {
     s(x.length > 0)
-  }, [s, x]), p || 0 !== x.length) ? (0, i.jsxs)("ul", {
+  }, [s, x]), m || 0 !== x.length) ? (0, i.jsxs)("ul", {
     className: R.contentContainer,
     children: [(0, i.jsx)(D, {
       context: n,
@@ -274,7 +274,7 @@ function W(e) {
     }), (0, i.jsx)(D, {
       context: n,
       section: h,
-      commands: p ? Z : x,
+      commands: m ? Z : x,
       headerName: T.NW.string(T.t.DUU9Ly),
       sectionName: o,
       children: y && (0, i.jsx)(O.Z, {
