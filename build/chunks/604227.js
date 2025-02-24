@@ -1,4 +1,4 @@
-/** Chunk was on 624 (51273709882b01ef.js) **/
+/** Chunk was on 624 (c8fedef2e72d2e9e.js) **/
 n.d(t, {
   Z: () => g
 }), n(47120), n(757143), n(301563), n(653041);
@@ -17,8 +17,8 @@ var i = n(525654),
 function g() {
   var e, t, n, i, g;
   let p = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    h = "371029",
-    f = "98b7dab26eb3184f73fb93781e145f776475ec7a".substring(0, 7),
+    h = "371077",
+    f = "9ece6b8de1dd40d536621cdeda7aae963fe0767b".substring(0, 7),
     b = null === l.Z || void 0 === l.Z ? void 0 : l.Z.remoteApp.getVersion(),
     N = null === l.Z || void 0 === l.Z ? void 0 : null === (e = (t = l.Z.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t),
     x = null === l.Z || void 0 === l.Z ? void 0 : null === (n = (i = l.Z.remoteApp).getAppArch) || void 0 === n ? void 0 : n.call(i),

@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
   Z: () => x
 }), n(47120);
@@ -27,7 +27,7 @@ let h = [{
 }];
 
 function x() {
-  let [e, t] = a.useState(null), [n, x] = a.useState(0), [f, p] = a.useState(1e3), [b, _] = a.useState(0), g = (0, i.e7)([c.Z], () => {
+  let [e, t] = a.useState(null), [n, x] = a.useState(0), [p, f] = a.useState(1e3), [b, _] = a.useState(0), g = (0, i.e7)([c.Z], () => {
     var t;
     return null === e ? null : null !== (t = c.Z.getFeedbackConfig(e)) && void 0 !== t ? t : s.R[e]
   }), v = Object.keys(s.R).map(e => ({
@@ -89,9 +89,9 @@ function x() {
           onChange: e => x(parseFloat(e))
         }), (0, r.jsx)(l.q4e, {
           options: h,
-          value: f,
+          value: p,
           onChange: e => {
-            p(e)
+            f(e)
           },
           popoutLayerContext: u.O$
         })]
@@ -136,7 +136,7 @@ function x() {
         onClick: () => void o.Z.dispatch({
           type: "FEEDBACK_OVERRIDE_SET",
           feedbackType: e,
-          cooldown: n * f,
+          cooldown: n * p,
           chance: b / 100
         }),
         disabled: !j,

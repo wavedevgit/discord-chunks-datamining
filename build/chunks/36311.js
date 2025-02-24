@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (f97ce343811d4d7d.js) **/
+/** Chunk was on 71611 (6f02c158d7813e32.js) **/
 n.d(t, {
   Z: () => _
 }), n(627341);
@@ -10,7 +10,7 @@ var r = n(200651),
   s = n(442837),
   c = n(481060),
   u = n(749210),
-  d = n(191237),
+  d = n(622822),
   p = n(986035),
   h = n(594174),
   f = n(63063),
@@ -24,7 +24,7 @@ let _ = function(e) {
   } = e, l = (0, s.e7)([h.default], () => {
     var e;
     return (null === (e = h.default.getCurrentUser()) || void 0 === e ? void 0 : e.nsfwAllowed) === !1
-  }), _ = i.useRef(null), C = d.Z.useShouldShowTiggerPawtect(), v = i.useCallback(() => {
+  }), _ = i.useRef(null), C = (0, d.Kt)(), v = i.useCallback(() => {
     null != t && u.Z.nsfwReturnToSafety(t.id)
   }, [t]), y = i.useCallback(() => {
     null != t && u.Z.nsfwAgree(t.id)

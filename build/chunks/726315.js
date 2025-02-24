@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
 "use strict";
 t.readUInt32BE = function(e, t) {
   return (e[0 + t] << 24 | e[1 + t] << 16 | e[2 + t] << 8 | e[3 + t]) >>> 0

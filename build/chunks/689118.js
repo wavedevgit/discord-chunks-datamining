@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
 "function" == typeof Object.create ? e.exports = function(e, t) {
   t && (e.super_ = t, e.prototype = Object.create(t.prototype, {
     constructor: {

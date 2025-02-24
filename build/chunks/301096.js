@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (f97ce343811d4d7d.js) **/
+/** Chunk was on 71611 (6f02c158d7813e32.js) **/
 e.exports = {
   attachWrapper: "attachWrapper__0923f",
   attachButton: "attachButton__0923f",

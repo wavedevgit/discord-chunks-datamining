@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
 function t(e) {
   let t = e.regex,
     n = ["div", "mod", "in", "and", "or", "not", "xor", "asserterror", "begin", "case", "do", "downto", "else", "end", "exit", "for", "local", "if", "of", "repeat", "then", "to", "until", "while", "with", "var"],

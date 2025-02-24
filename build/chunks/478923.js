@@ -1,4 +1,4 @@
-/** Chunk was on 97652 (6e27dfa349424c64.js) **/
+/** Chunk was on 97652 (b234dd42277bc936.js) **/
 r.d(e, {
   default: () => v
 });
@@ -63,7 +63,7 @@ function y(t) {
     disallowIgnore: a,
     guildId: d,
     channelId: y
-  } = t, v = (0, p.Do)({
+  } = t, v = (0, p.D)({
     location: "confirm_block_modal_body"
   }), T = (0, c.e7)([f.Z], () => f.Z.isIgnored(e.id));
   return v ? (0, n.jsxs)("div", {
@@ -154,7 +154,7 @@ function v(t) {
     }
     return i
   }(t, ["user", "onBlock", "onCancel", "onIgnore", "location", "disallowIgnore", "guildId", "channelId"]);
-  let I = (0, p.Do)({
+  let I = (0, p.D)({
     location: "block-confirm-modal"
   });
   return i.useLayoutEffect(() => () => {

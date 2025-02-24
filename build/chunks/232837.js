@@ -1,4 +1,4 @@
-/** Chunk was on 24028 (d0a41bdfccf625b8.js) **/
+/** Chunk was on 24028 (53b159f6aafd7d2f.js) **/
 n.d(t, {
   default: () => b
 }), n(627341);
@@ -28,7 +28,7 @@ function b(e) {
     userId: n,
     transitionState: b,
     onClose: C
-  } = e, E = (0, _.e7)([u.Z], () => u.Z.isBlocked(n)), M = (0, c.Do)({
+  } = e, E = (0, _.e7)([u.Z], () => u.Z.isBlocked(n)), M = (0, c.D)({
     location: "BlockedUserJoinedVoiceChannelModal"
   }), O = (0, _.e7)([d.Z], () => d.Z.getChannel(t)), w = l.default.getUser(n);
   if (null == w) return null;

@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
   Z: () => A
 }), n(47120), n(653041), n(978209);
@@ -14,8 +14,8 @@ var r = n(200651),
   m = n(615287),
   h = n(594190),
   x = n(306381),
-  f = n(371651),
-  p = n(829907),
+  p = n(371651),
+  f = n(829907),
   b = n(610394),
   _ = n(355863),
   g = n(449224),
@@ -119,7 +119,7 @@ function R(e) {
     }), (0, r.jsxs)(c.Text, {
       variant: "text-sm/normal",
       color: "text-normal",
-      children: ["fullscreenType: ", (0, p.sS)(t.fullscreenType)]
+      children: ["fullscreenType: ", (0, f.sS)(t.fullscreenType)]
     }), (0, r.jsxs)(c.Text, {
       variant: "text-sm/normal",
       color: "text-normal",
@@ -139,7 +139,7 @@ function R(e) {
     }), (0, r.jsxs)(c.Text, {
       variant: "text-sm/normal",
       color: "text-normal",
-      children: ["overlayMethod: ", (0, p.P_)(t.overlayMethod)]
+      children: ["overlayMethod: ", (0, f.P_)(t.overlayMethod)]
     }), (0, r.jsxs)(c.Text, {
       variant: "text-sm/normal",
       color: "text-normal",
@@ -167,7 +167,7 @@ function R(e) {
 function P(e) {
   let {
     pid: t
-  } = e, n = (0, s.cj)([v.ZP], () => v.ZP.getOverlayPIDStatuses()), a = (0, s.cj)([f.default], () => f.default.getTrackedGames()), i = (0, s.e7)([v.ZP], () => v.ZP.isInputLocked(t), [t]), l = (0, s.e7)([v.ZP], () => v.ZP.DEV_isInputLockedV3(t), [t]), o = (0, s.e7)([v.ZP], () => v.ZP.DEV_isInputLocked(t), [t]), d = (0, s.e7)([v.ZP], () => v.ZP.isReady(t), [t]);
+  } = e, n = (0, s.cj)([v.ZP], () => v.ZP.getOverlayPIDStatuses()), a = (0, s.cj)([p.default], () => p.default.getTrackedGames()), i = (0, s.e7)([v.ZP], () => v.ZP.isInputLocked(t), [t]), l = (0, s.e7)([v.ZP], () => v.ZP.DEV_isInputLockedV3(t), [t]), o = (0, s.e7)([v.ZP], () => v.ZP.DEV_isInputLocked(t), [t]), d = (0, s.e7)([v.ZP], () => v.ZP.isReady(t), [t]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/semibold",
@@ -242,7 +242,7 @@ function Z(e) {
 
 function A() {
   var e, t;
-  let [n, i] = Z(O.Odu.CLICK_ZONE_DEBUG), [o, d] = Z(O.Odu.PERFORMANCE_DEBUG), _ = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(x.G.ClickZones)), g = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(x.G.WidgetAreas)), N = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(x.G.DisabledGPUBoost)), I = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(x.G.ForceGPUBoost)), w = (0, s.e7)([f.default], () => f.default.getForcedRenderMode()), [A, L] = a.useState({}), [D, B] = a.useState(w), M = e => {
+  let [n, i] = Z(O.Odu.CLICK_ZONE_DEBUG), [o, d] = Z(O.Odu.PERFORMANCE_DEBUG), _ = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(x.G.ClickZones)), g = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(x.G.WidgetAreas)), N = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(x.G.DisabledGPUBoost)), I = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(x.G.ForceGPUBoost)), w = (0, s.e7)([p.default], () => p.default.getForcedRenderMode()), [A, L] = a.useState({}), [D, B] = a.useState(w), M = e => {
     B(e), u.Z.forceRenderMode(e)
   }, F = [{
     label: m.R5.UNSET,
@@ -261,7 +261,7 @@ function A() {
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
   }].map(e => k(S({}, e), {
     label: "".concat(e.label, " ").concat(w === e.value ? "(current)" : "")
-  })), z = (0, s.cj)([f.default], () => f.default.getTrackedGames()), U = (0, s.e7)([v.ZP], () => v.ZP.getFocusedPID()), G = (0, s.e7)([v.ZP], () => v.ZP.isFocusedPidOutOfProcess()), W = (0, C.QF)(), H = (0, s.e7)([f.default], () => f.default.isOverlayOOPEnabledForPid(W), [W]), V = (0, s.e7)([h.ZP], () => h.ZP.getRunningGames());
+  })), z = (0, s.cj)([p.default], () => p.default.getTrackedGames()), U = (0, s.e7)([v.ZP], () => v.ZP.getFocusedPID()), G = (0, s.e7)([v.ZP], () => v.ZP.isFocusedPidOutOfProcess()), W = (0, C.QF)(), H = (0, s.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(W), [W]), V = (0, s.e7)([h.ZP], () => h.ZP.getRunningGames());
   a.useEffect(() => {
     L(e => {
       for (let t of Object.keys(z)) e[Number(t)] = z[Number(t)];
@@ -273,7 +273,7 @@ function A() {
     let e = h.ZP.getRunningGames(),
       t = [],
       n = Date.now();
-    for (let r of e) t.push((0, p.hj)(r.pid, 0).then(e => [r.pid, e, n]));
+    for (let r of e) t.push((0, f.hj)(r.pid, 0).then(e => [r.pid, e, n]));
     let r = await Promise.all(t);
     X(e => r.reduce((e, t) => {
       var n;
@@ -527,7 +527,7 @@ function A() {
                   return (0, r.jsx)(c.Text, {
                     variant: "text-xs/normal",
                     color: "text-normal",
-                    children: "".concat(n, ":").concat((0, p.sS)(n), " @ ").concat(a)
+                    children: "".concat(n, ":").concat((0, f.sS)(n), " @ ").concat(a)
                   }, "".concat(e.pid, "-").concat(n, "-").concat(a))
                 })]
               }, e.pid)

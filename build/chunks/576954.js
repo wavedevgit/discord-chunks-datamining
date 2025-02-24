@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (f97ce343811d4d7d.js) **/
+/** Chunk was on 71611 (6f02c158d7813e32.js) **/
 n.d(t, {
   M: () => E
 }), n(47120);
@@ -34,7 +34,7 @@ function N(e) {
     isIgnored: a
   } = (0, o.cj)([m.Z], () => ({
     isIgnored: m.Z.isIgnored(t)
-  }), [t]), u = (0, d.Do)({
+  }), [t]), u = (0, d.D)({
     location: "web_stranger_danger_more"
   }), h = (0, o.e7)([g.ZP], () => g.ZP.isChannelMuted(null, n)), _ = i.useCallback(() => {
     (0, v.qc)({

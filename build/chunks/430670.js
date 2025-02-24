@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (f97ce343811d4d7d.js) **/
+/** Chunk was on 71611 (6f02c158d7813e32.js) **/
 n.d(t, {
   Z: () => v
 }), n(47120);
@@ -75,7 +75,7 @@ function v(e) {
   } = (0, a.cj)([d.Z], () => ({
     isBlocked: d.Z.isBlocked(y.id),
     isIgnored: d.Z.isIgnored(y.id)
-  })), N = (0, c.Do)({
+  })), N = (0, c.D)({
     location: "UserProfilePanelWrapper"
   }), [E, P] = i.useState(j || N && (O || j)), I = (0, h.sS)({
     location: "UserProfilePopoutWrapper"

@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
   E: () => x
 }), n(47120);
@@ -38,10 +38,10 @@ function x(e) {
     style: n,
     className: i,
     key: x,
-    offsetControlRef: f
+    offsetControlRef: p
   } = e;
   let {
-    offsets: p,
+    offsets: f,
     updateElementOffsets: b,
     updateElementOffsetsWithPolling: _
   } = function(e) {
@@ -52,8 +52,8 @@ function x(e) {
       onGetBoundingRect: i = () => {},
       debounceTime: l = 60,
       minimumOffsets: u
-    } = e, [x, f] = a.useState(null), {
-      hasLayers: p
+    } = e, [x, p] = a.useState(null), {
+      hasLayers: f
     } = (0, s.cj)([d.Z], () => ({
       hasLayers: d.Z.hasLayers()
     })), b = a.useCallback(() => {
@@ -73,12 +73,12 @@ function x(e) {
       return void 0 !== a.top && (a.top = h(l.top + a.top, null == u ? void 0 : u.top)), void 0 !== a.left && (a.left = h(l.left + a.left, null == u ? void 0 : u.left)), void 0 !== a.right && (a.right = h(window.innerWidth - l.right + a.right, null == u ? void 0 : u.right)), void 0 !== a.bottom && (a.bottom = h(window.innerHeight - l.bottom + a.bottom, null == u ? void 0 : u.bottom)), i(l), a
     }, [n, r, b, u, t, i]), g = a.useCallback(() => {
       let e = _();
-      return (0, o.isEqual)(e, x) || f(e), e
+      return (0, o.isEqual)(e, x) || p(e), e
     }, [_, x]);
     a.useEffect(() => {
       g()
     }, [g]);
-    let v = (0, c.Z)(p),
+    let v = (0, c.Z)(f),
       j = a.useRef(null),
       C = a.useRef(0),
       y = a.useCallback(() => {
@@ -91,8 +91,8 @@ function x(e) {
         }, 200))
       }, [g]);
     a.useEffect(() => {
-      v && !p && y()
-    }, [g, y, p, v]);
+      v && !f && y()
+    }, [g, y, f, v]);
     let O = a.useMemo(() => (0, o.debounce)(() => {
       g()
     }, l), [g, l]);
@@ -119,13 +119,13 @@ function x(e) {
       for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
     }
     return a
-  }(e, ["children", "style", "className", "key", "offsetControlRef"]))), g = m({}, p, n);
+  }(e, ["children", "style", "className", "key", "offsetControlRef"]))), g = m({}, f, n);
   return (a.useEffect(() => {
-    void 0 !== f && (f.current = {
+    void 0 !== p && (p.current = {
       updateElementOffsets: b,
       updateElementOffsetsWithPolling: _
     })
-  }, [b, _, f]), null === p) ? null : (0, r.jsx)("div", {
+  }, [b, _, p]), null === f) ? null : (0, r.jsx)("div", {
     style: g,
     className: l()(u.wrapper, i),
     children: t

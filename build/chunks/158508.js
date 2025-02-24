@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
 "use strict";
 n.d(t, {
   Z: () => O
@@ -86,7 +86,7 @@ function O(e) {
   } = (0, i.cj)([d.Z], () => ({
     isIgnored: d.Z.isIgnored(N),
     isBlocked: d.Z.isBlocked(N)
-  }), [N]), P = (0, u.Do)({
+  }), [N]), P = (0, u.D)({
     location: "use-block-user-item-web"
   }), w = P ? [o.z.IGNORE_USER_NEW_BADGE] : [], [D, x] = (0, c.US)(w), L = D === o.z.IGNORE_USER_NEW_BADGE;
   return !P || A || R ? null : (0, r.jsx)(a.sNh, {

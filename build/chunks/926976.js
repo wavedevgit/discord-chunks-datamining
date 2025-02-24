@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
   Z: () => w
 }), n(47120), n(26686);
@@ -14,8 +14,8 @@ var r = n(200651),
   m = n(129861),
   h = n(665149),
   x = n(301801),
-  f = n(594174),
-  p = n(55935),
+  p = n(594174),
+  f = n(55935),
   b = n(120816),
   _ = n(31336),
   g = n(257785),
@@ -84,7 +84,7 @@ let k = [{
           fingerprint: i
         },
         onClose: o
-      } = e, s = f.default.getUser(i), d = c()(a);
+      } = e, s = p.default.getUser(i), d = c()(a);
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(h.ZP, {
           className: l()(N.headerBar, O.subPanelHeaderBar),
@@ -105,8 +105,8 @@ let k = [{
             name: "Timestamp (local)",
             children: (0, r.jsxs)("time", {
               dateTime: a.toISOString(),
-              title: (0, p.vc)(d, "LLLL"),
-              children: [c().locale(), (0, p.Y4)(d)]
+              title: (0, f.vc)(d, "LLLL"),
+              children: [c().locale(), (0, f.Y4)(d)]
             })
           }), null != s && (0, r.jsx)(g.Z9, {
             name: "User",
@@ -169,21 +169,21 @@ function w() {
     i = (0, d.e7)([b.Z], () => b.Z.loggedEventsVersion),
     s = a.useMemo(() => b.Z.loggedEvents, [i]),
     [c, m] = a.useState(Object.keys(I)),
-    [h, f] = a.useState(s),
-    p = a.useRef(null),
+    [h, p] = a.useState(s),
+    f = a.useRef(null),
     g = a.useMemo(() => (0, o.throttle)(async (e, t) => {
       if ("" === e) {
-        f(t);
+        p(t);
         return
       }
-      p.current = (0, o.uniqueId)();
+      f.current = (0, o.uniqueId)();
       let n = await (0, x.H)(t, e => {
         let {
           event: t
         } = e;
         return t
       }, e, !0);
-      null != p.current && f(n)
+      null != f.current && p(n)
     }, 300, {
       leading: !0
     }), []),

@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
 "use strict";
 n.d(t, {
   $h: () => eo,
@@ -398,9 +398,13 @@ function ei(e) {
   if (null != a) {
     var s;
     let e = b.Z.getSelectedParticipantId(a),
-      t = null === (s = w.default.getCurrentUser()) || void 0 === s ? void 0 : s.id;
-    if (null == B.ZP.getEmbeddedActivitiesForChannel(a).find(e => e.applicationId === n) || null == t || "" === t) return;
-    e === (0, v.oW)(n) && c.Z.selectParticipant(a, null)
+      t = null === (s = w.default.getCurrentUser()) || void 0 === s ? void 0 : s.id,
+      r = B.ZP.getEmbeddedActivitiesForChannel(a).find(e => e.applicationId === n);
+    if (null == r || null == t || "" === t) return;
+    e === (0, v.gN)({
+      applicationId: n,
+      instanceId: null == r ? void 0 : r.compositeInstanceId
+    }) && c.Z.selectParticipant(a, null)
   }
 }
 async function eo() {

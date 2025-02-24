@@ -1,4 +1,4 @@
-/** Chunk was on 73049 (3f1f94e277187cab.js) **/
+/** Chunk was on 73049 (5df71b25786cf661.js) **/
 t.d(n, {
   default: () => v
 }), t(47120);
@@ -77,7 +77,7 @@ function v(e) {
   } = (0, s.cj)([u.Z], () => ({
     isBlocked: u.Z.isBlocked(n.id),
     isIgnored: u.Z.isIgnored(n.id)
-  })), x = (0, a.Do)({
+  })), x = (0, a.D)({
     location: "UserProfileModalWrapper"
   }), [O, _] = o.useState(c || x && (v || c)), Z = (0, p.sS)({
     location: "UserProfileModalWrapper"

@@ -1,4 +1,4 @@
-/** Chunk was on 48923 (dce5ea7ad6fc1246.js) **/
+/** Chunk was on 48923 (05423627440510f9.js) **/
 e.exports = {
   heading: "heading__4169d",
   subheading: "subheading__4169d",

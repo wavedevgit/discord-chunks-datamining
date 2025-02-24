@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (f97ce343811d4d7d.js) **/
+/** Chunk was on 71611 (6f02c158d7813e32.js) **/
 e.exports = {
   chatHeaderBar: "chatHeaderBar_dc83f5",
   chatHeaderBarText: "chatHeaderBarText_dc83f5",

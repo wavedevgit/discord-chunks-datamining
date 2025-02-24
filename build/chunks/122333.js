@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (71bced4ddae32ad3.js) **/
+/** Chunk was on 1272 (001d1b875900c1de.js) **/
 let r;
 n.d(t, {
   Z: () => L
@@ -94,7 +94,7 @@ class x extends a.Z {
       null != e && (0, d.Dc)(e) && (a = !0, (0, f.RM)(e.id))
     }
     let x = () => 0 === m.Z.totalGuilds && !N.isPlatformEmbedded,
-      L = s.b();
+      L = s.bN();
     e = [{
       key: "Unified NUF Modal",
       open: async function(e) {

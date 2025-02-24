@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.r(t), n.d(t, {
   default: () => ee
 }), n(653041), n(47120);
@@ -14,8 +14,8 @@ var r = n(200651),
   m = n(213713),
   h = n(665149),
   x = n(906467),
-  f = n(259580),
-  p = n(31336),
+  p = n(259580),
+  f = n(31336),
   b = n(19759),
   _ = n(432877);
 n(381996);
@@ -199,7 +199,7 @@ function q() {
       tabs: t,
       initialSelectedTabId: null !== (e = b.Z.lastOpenTabId) && void 0 !== e ? e : void 0,
       onChangeTab: e => {
-        (0, p.Qh)({
+        (0, f.Qh)({
           lastOpenTabId: e
         })
       }
@@ -216,7 +216,7 @@ function q() {
       toolbar: (0, r.jsx)(h.ZP.Icon, {
         icon: c.Dio,
         tooltip: Y.NW.string(Y.t.cpT0Cg),
-        onClick: p.SO
+        onClick: f.SO
       }),
       children: [(0, r.jsx)(h.ZP.Icon, {
         icon: c.Ymb,
@@ -234,7 +234,7 @@ function $() {
   let e = a.useRef(null),
     t = (0, s.e7)([b.Z], () => b.Z.sidebarWidth),
     [n, i] = a.useState(null),
-    o = a.useCallback(e => (0, p.Qh)({
+    o = a.useCallback(e => (0, f.Qh)({
       sidebarWidth: e
     }), []);
   return (a.useEffect(() => {
@@ -268,11 +268,11 @@ function Q() {
   }) : (0, r.jsx)("div", {
     className: X.container,
     children: (0, r.jsx)(c.P3F, {
-      onClick: p.SO,
+      onClick: f.SO,
       children: (0, r.jsxs)(h.ZP, {
         className: l()(K.headerBar, X.mobileHeaderCollapsed),
-        toolbar: (0, r.jsx)(f.Z, {
-          direction: f.Z.Directions.UP
+        toolbar: (0, r.jsx)(p.Z, {
+          direction: p.Z.Directions.UP
         }),
         children: [(0, r.jsx)(h.ZP.Icon, {
           icon: c.Ymb,

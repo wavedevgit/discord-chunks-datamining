@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/ ! function(e, r) {
+/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/ ! function(e, r) {
   r(t, n(192379))
 }(0, function(e, t) {
   "use strict";

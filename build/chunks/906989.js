@@ -1,4 +1,4 @@
-/** Chunk was on 11814 (8608d0474a894e52.js) **/
+/** Chunk was on 11814 (b9188d9bdd9a4469.js) **/
 e.exports = {
   guildShopEmbed: "guildShopEmbed__86fa6",
   spinnerContainer: "spinnerContainer__86fa6",

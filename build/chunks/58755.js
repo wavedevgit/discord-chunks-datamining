@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
   P: () => g
 }), n(47120), n(301563), n(26686);
@@ -15,7 +15,7 @@ var r = n(200651),
   h = n(500949),
   x = n(452721);
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -83,7 +83,7 @@ function g(e) {
           easing: h.iw.LINEAR,
           easingStrength: 1,
           steps: 26
-        }, n(p(f({}, t), {
+        }, n(f(p({}, t), {
           scales: [...t.scales, r]
         })))
       },
@@ -98,7 +98,7 @@ function g(e) {
           },
           children: (0, r.jsx)(j, {
             scale: e,
-            onRemove: () => n(p(f({}, t), {
+            onRemove: () => n(f(p({}, t), {
               scales: t.scales.filter(t => t.name !== e.name)
             }))
           })
@@ -122,8 +122,8 @@ function v(e) {
     onClose: a
   } = e, {
     name: c,
-    base: f,
-    darkness: p,
+    base: p,
+    darkness: f,
     lightness: _,
     showColumnarPalettePreview: g,
     colorSpace: v,
@@ -175,7 +175,7 @@ function v(e) {
         }), " palette is generated from."]
       }), (0, r.jsx)("input", {
         type: "color",
-        value: f,
+        value: p,
         onChange: e => (0, h.Ib)(c, e.target.value, n)
       })]
     }), (0, r.jsxs)(d.xJW, {
@@ -209,7 +209,7 @@ function v(e) {
           onMarkerRender: () => null
         })]
       }), (0, r.jsxs)(d.xJW, {
-        title: "Darken (".concat((100 * p).toFixed(), "%)"),
+        title: "Darken (".concat((100 * f).toFixed(), "%)"),
         children: [(0, r.jsx)(d.R94, {
           type: d.geA.DESCRIPTION,
           children: "Increase the darkness of the lightest color in the palette. Increasing this makes the lighter colors in the palette darker."

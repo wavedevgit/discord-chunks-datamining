@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/ ! function(e, t) {
+/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/ ! function(e, t) {
   t(n(913527))
 }(0, function(e) {
   return e.defineLocale("mk", {

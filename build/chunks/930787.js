@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (71bced4ddae32ad3.js) **/
+/** Chunk was on 1272 (001d1b875900c1de.js) **/
 e.exports = {
   wrapper: "wrapper__960df",
   submenuIcon: "submenuIcon__960df",

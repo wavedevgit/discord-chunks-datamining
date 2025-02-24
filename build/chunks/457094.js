@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (71bced4ddae32ad3.js) **/
+/** Chunk was on 1272 (001d1b875900c1de.js) **/
 n.r(t), n.d(t, {
   default: () => tr
 }), n(301563), n(47120);
@@ -180,10 +180,10 @@ let e3 = a.ZP.connectStores([H.Z, eM.Z, eR.default], () => ({
       return null
     }
   }),
-  e5 = (0, C.e)(T.Z, null, {
+  e7 = (0, C.e)(T.Z, null, {
     passProps: !1
   }),
-  e7 = (0, C.e)(I.default, null, {
+  e5 = (0, C.e)(I.default, null, {
     passProps: !1
   }),
   e9 = [eJ.Z5c.GUILD_BOOSTING_MARKETING(em.Hw.guildId()), ...Array.from(e$.Vg).map(e => eJ.Z5c.CHANNEL(em.Hw.guildId(), e))];
@@ -423,12 +423,12 @@ let e8 = [{
   path: [eJ.Z5c.CHANNEL_THREAD_VIEW(em.Hw.guildId(), em.Hw.channelId(), ":threadId", ":messageId?"), eJ.Z5c.CHANNEL(em.Hw.guildId(), em.Hw.channelId({
     optional: !0
   }), ":messageId?"), eJ.Z5c.ACTIVITY, eJ.Z5c.ACTIVITIES, eJ.Z5c.ACTIVITIES_HAPPENING_NOW, eJ.Z5c.ACTIVITY_DETAILS(":applicationId"), eJ.Z5c.APPLICATION_LIBRARY, eJ.Z5c.APPLICATION_STORE, eJ.Z5c.MESSAGE_REQUESTS, eJ.Z5c.COLLECTIBLES_SHOP, eJ.Z5c.COLLECTIBLES_SHOP_FULLSCREEN, eJ.Z5c.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"), eJ.Z5c.GUILD_DISCOVERY, eJ.Z5c.QUEST_HOME, eJ.Z5c.GLOBAL_DISCOVERY, eJ.Z5c.GUILD_MEMBER_VERIFICATION(em.Hw.guildId()), eJ.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB(em.Hw.guildId(), ":inviteCode?"), eJ.Z5c.GUILD_BOOSTING_MARKETING(em.Hw.guildId()), eJ.Z5c.FEATURE(":feature"), eJ.Z5c.FAMILY_CENTER],
-  render: e5,
+  render: e7,
   isSessionRequired: !0,
   isChatRoute: !0
 }, {
   path: [eJ.Z5c.APPLICATION_DIRECTORY],
-  render: e7,
+  render: e5,
   isSessionRequired: !0
 }];
 

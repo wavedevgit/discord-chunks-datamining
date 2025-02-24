@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
 "use strict";
 n.d(t, {
   Z: () => S
@@ -91,7 +91,7 @@ function S(e) {
   } = (0, s.cj)([u.Z], () => ({
     isBlocked: u.Z.isBlocked(v.id),
     isIgnored: u.Z.isIgnored(v.id)
-  })), T = (0, l.Do)({
+  })), T = (0, l.D)({
     location: "UserProfileModalWrapper"
   }), [N, A] = i.useState(S || T && (I || S)), C = (0, f.sS)({
     location: "UserProfilePopoutWrapper"

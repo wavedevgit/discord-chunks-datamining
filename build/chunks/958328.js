@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
   Z: () => v
 });
@@ -15,8 +15,8 @@ var a = n(120356),
   m = n(496675),
   h = n(944486),
   x = n(914010),
-  f = n(233608),
-  p = n(71080),
+  p = n(233608),
+  f = n(71080),
   b = n(735063),
   _ = n(841699);
 
@@ -50,8 +50,8 @@ function v() {
     v = (0, o.e7)([m.Z], () => m.Z.computePermissions(n)),
     j = (0, o.e7)([m.Z], () => m.Z.computePermissions(a)),
     C = (0, c.ZP)(n, !0),
-    y = null != n ? (0, p.IG)(n, !1, !0) : null,
-    O = null != a ? f.Z.getGuildPermissionSpecMap(a) : null,
+    y = null != n ? (0, f.IG)(n, !1, !0) : null,
+    O = null != a ? p.Z.getGuildPermissionSpecMap(a) : null,
     N = Object.values(null != y ? y : {}).map(e => {
       let {
         title: t,

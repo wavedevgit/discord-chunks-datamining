@@ -1,4 +1,4 @@
-/** Chunk was on 51092 (fdd7b312f95e228f.js) **/
+/** Chunk was on 51092 (24656380eb6bc1ee.js) **/
 o.d(n, {
   default: () => p
 });
@@ -23,7 +23,7 @@ function p(e) {
     userId: p,
     onCancel: C,
     confirmBlock: b
-  } = e, h = (0, i.e7)([u.default], () => u.default.getUser(p)), N = f.ZP.useName(h), x = (0, c.Do)({
+  } = e, h = (0, i.e7)([u.default], () => u.default.getUser(p)), N = f.ZP.useName(h), x = (0, c.D)({
     location: "confirm_block_user_modal"
   }), O = () => {
     b(), d.default.track(m.rMx.BLOCK_USER_CONFIRMED)

@@ -1,6 +1,6 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
-  Qo: () => p,
+  Qo: () => f,
   ZP: () => _
 });
 var r, a = n(200651),
@@ -14,19 +14,19 @@ var r, a = n(200651),
   m = n(967538),
   h = n(885302),
   x = n(914677),
-  f = n(647508),
-  p = ((r = {})[r.NITRO_GEM = 0] = "NITRO_GEM", r[r.NITRO_LOGO = 1] = "NITRO_LOGO", r[r.AVATAR_DECO = 2] = "AVATAR_DECO", r);
+  p = n(647508),
+  f = ((r = {})[r.NITRO_GEM = 0] = "NITRO_GEM", r[r.NITRO_LOGO = 1] = "NITRO_LOGO", r[r.AVATAR_DECO = 2] = "AVATAR_DECO", r);
 let b = e => {
     let {
       avatarDecoAssetId: t,
       avatarDecoAssetDescription: n
     } = e, r = i.useMemo(() => (0, u.Z)(t, c.EFr.SIZE_120, !1), [t]);
     return (0, a.jsx)("div", {
-      className: f.avatarDecoContainer,
+      className: p.avatarDecoContainer,
       children: (0, a.jsx)("div", {
-        className: f.avatarDeco,
+        className: p.avatarDeco,
         children: (0, a.jsx)("img", {
-          className: f.avatarDecoImage,
+          className: p.avatarDecoImage,
           alt: n,
           src: r
         })
@@ -42,7 +42,7 @@ let b = e => {
       progressCircleStrokeSize: l,
       backgroundCircleSize: c,
       percentage: u,
-      initialPercentage: p,
+      initialPercentage: f,
       progressCircleVariation: _ = 0,
       avatarDecoAssetId: g,
       avatarDecoAssetDescription: v,
@@ -52,23 +52,23 @@ let b = e => {
       circleStroke: O
     } = e, N = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), T = t && !N;
     return (0, a.jsx)("div", {
-      className: o()(f.progressCircle, n),
+      className: o()(p.progressCircle, n),
       children: (0, a.jsx)(x.Z, {
-        animationClassName: o()(f.activeProgressCircle, {
-          [f.activeProgressCircleAnimation]: T,
+        animationClassName: o()(p.activeProgressCircle, {
+          [p.activeProgressCircleAnimation]: T,
           [null != C ? C : ""]: T
         }),
         progressCircleStroke: O,
         progressCircleStrokeSize: l,
         percentage: null != r ? r : u,
-        initialPercentage: null != r ? r : p,
+        initialPercentage: null != r ? r : f,
         progressCircleVariation: _,
         children: (() => {
           switch (_) {
             case 0:
               return (0, a.jsx)(m.Z, {
-                className: T ? f.nitroGemAnimation : void 0,
-                backgroundColor: o()(f.gemBackgroundFill, i),
+                className: T ? p.nitroGemAnimation : void 0,
+                backgroundColor: o()(p.gemBackgroundFill, i),
                 backgroundCircleSize: c
               });
             case 1:

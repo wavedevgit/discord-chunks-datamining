@@ -1,4 +1,4 @@
-/** Chunk was on 94739 (59bd93818dc123c5.js) **/
+/** Chunk was on 94739 (63a3520128031ff2.js) **/
 n.d(t, {
   default: () => b
 }), n(47120), n(733860);
@@ -22,7 +22,7 @@ let p = e => {
     let {
       multipleBlockedUsers: t
     } = e;
-    return (0, a.Do)({
+    return (0, a.D)({
       location: "blocked_user_in_voice_channel_header"
     }) ? N.NW.string(N.t.zPUmzc) : t ? N.NW.string(N.t.aJRlSU) : N.NW.string(N.t.rlBMub)
   },
@@ -31,7 +31,7 @@ let p = e => {
       numOfBlockedUsers: t,
       numOfIgnoredUsers: n
     } = e;
-    if (!(0, a.Do)({
+    if (!(0, a.D)({
         location: "blocked_user_in_voice_channel_header"
       })) return N.NW.string(N.t.K8YIgY);
     let r = t > 0,
@@ -117,7 +117,7 @@ function b(e) {
     transitionState: o,
     onClose: _,
     onJoin: g
-  } = e, h = (0, a.Do)({
+  } = e, h = (0, a.D)({
     location: "blocked_user_in_voice_channel_modal"
   }), b = Array.from(n).map(e => c.default.getUser(e)).filter(e => null !== e), E = Array.from(i).map(e => c.default.getUser(e)).filter(e => null !== e);
   if (0 === b.length && 0 === E.length) return null;

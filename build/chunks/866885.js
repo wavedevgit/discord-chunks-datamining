@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
 "use strict";
 n.d(t, {
   Z: () => V
@@ -100,14 +100,20 @@ function F(e) {
     selectedParticipant: q,
     participantsOpen: Q
   } = (0, s.cj)([h.Z], () => ({
-    activityParticipant: null != B ? h.Z.getParticipant(T.id, (0, _.oW)(B.applicationId)) : null,
+    activityParticipant: null != B ? h.Z.getParticipant(T.id, (0, _.gN)({
+      applicationId: B.applicationId,
+      instanceId: B.compositeInstanceId
+    })) : null,
     selectedParticipant: h.Z.getSelectedParticipant(T.id),
     participantsOpen: h.Z.getParticipantsOpen(T.id)
   })), X = H || null != K, J = (0, C.Z)(T.id), $ = J && (null == q ? void 0 : q.type) !== L.fO.ACTIVITY, ee = !J && Z === D.Ez.PIP, et = X && ($ || ee) && null == W, en = (!X || et) && !Y, er = en && null != v.Z.pipVideoWindow && null != v.Z.pipActivityWindow;
 
   function ei() {
     var e;
-    null != B && u.Z.selectParticipant(T.id, (0, _.oW)(B.applicationId));
+    null != B && u.Z.selectParticipant(T.id, (0, _.gN)({
+      applicationId: B.applicationId,
+      instanceId: B.compositeInstanceId
+    }));
     let t = null !== (e = T.getGuildId()) && void 0 !== e ? e : x.ME;
     d.Z.channelListScrollTo(t, T.id), (0, m.XU)(t, T.id), null == K && (0, f.Ou)()
   }

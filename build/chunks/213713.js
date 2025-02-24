@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
   Z: () => Z
 }), n(47120);
@@ -14,8 +14,8 @@ var r = n(200651),
   m = n(433517),
   h = n(481060),
   x = n(570140),
-  f = n(812206),
-  p = n(835473),
+  p = n(812206),
+  f = n(835473),
   b = n(246992),
   _ = n(681619),
   g = n(810568),
@@ -112,9 +112,9 @@ function Z() {
       return (null === (e = N.Z.getFeedState(k.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
     }),
     [Z, L] = a.useState(""),
-    D = (0, u.e7)([j.Z, f.Z], () => {
+    D = (0, u.e7)([j.Z, p.Z], () => {
       var e, t, n;
-      return parseInt(Z) > 0 ? Z : null !== (n = null === (e = j.Z.getGameByName(Z)) || void 0 === e ? void 0 : e.id) && void 0 !== n ? n : null === (t = f.Z.getApplicationByName(Z)) || void 0 === t ? void 0 : t.id
+      return parseInt(Z) > 0 ? Z : null !== (n = null === (e = j.Z.getGameByName(Z)) || void 0 === e ? void 0 : e.id) && void 0 !== n ? n : null === (t = p.Z.getApplicationByName(Z)) || void 0 === t ? void 0 : t.id
     }, [Z]),
     B = (0, v.Z)({
       applicationId: D,
@@ -128,7 +128,7 @@ function Z() {
       let [t] = e;
       return t
     }),
-    F = (0, p.Z)(M).filter(C.lm),
+    F = (0, f.Z)(M).filter(C.lm),
     z = (0, u.e7)([y.Z], () => y.Z.getFakeGameToShow());
   return (0, r.jsx)("div", {
     className: l()(w.panel),

@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (37916180435b2d51.js) **/
+/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
 n.d(t, {
   Z: () => ec
 }), n(47120);
@@ -250,7 +250,10 @@ class es extends i.PureComponent {
         channel: t,
         embeddedActivity: n
       } = this.props;
-      s()(null != t, "Channel is null during navigation click"), s()(null != n, "Activity null during navigation click"), h.Z.channelListScrollTo(null !== (e = t.guild_id) && void 0 !== e ? e : en.ME, t.id), !(0, b.R)() && ((0, M.vd)(t.type) && p.Z.selectParticipant(t.id, (0, x.oW)(n.applicationId)), (0, M.Qm)(t.type) && (0, y.tg)(er.Ez.PANEL))
+      s()(null != t, "Channel is null during navigation click"), s()(null != n, "Activity null during navigation click"), h.Z.channelListScrollTo(null !== (e = t.guild_id) && void 0 !== e ? e : en.ME, t.id), !(0, b.R)() && ((0, M.vd)(t.type) && p.Z.selectParticipant(t.id, (0, x.gN)({
+        applicationId: n.applicationId,
+        instanceId: n.compositeInstanceId
+      })), (0, M.Qm)(t.type) && (0, y.tg)(er.Ez.PANEL))
     })
   }
 }

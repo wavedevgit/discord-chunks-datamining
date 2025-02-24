@@ -1,4 +1,4 @@
-/** Chunk was on 25176 (51a23832922bd019.js) **/
+/** Chunk was on 25176 (dc05afd7ec002be9.js) **/
 r.d(t, {
   Z: () => f
 });
@@ -24,7 +24,7 @@ function f(e) {
     stayButtonText: E,
     transitionState: I,
     impression: O
-  } = e, b = (0, c.Do)({
+  } = e, b = (0, c.D)({
     location: "blocked_user_warning_modal"
   });
   return (0, n.jsxs)(l.Y0X, {

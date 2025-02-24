@@ -1,3 +1,3 @@
-/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
 "use strict";
 t.sha1 = n(70687), t.sha224 = n(897819), t.sha256 = n(585741), t.sha384 = n(572906), t.sha512 = n(740245)

@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
   Z: () => E
 }), n(47120), n(230036);
@@ -14,8 +14,8 @@ var r = n(200651),
   m = n(481060),
   h = n(570140),
   x = n(665149),
-  f = n(55935),
-  p = n(120816),
+  p = n(55935),
+  f = n(120816),
   b = n(31336),
   _ = n(257785),
   g = n(484036),
@@ -82,8 +82,8 @@ let N = [{
             name: "Timestamp (local)",
             children: (0, r.jsx)("time", {
               dateTime: o.toISOString(),
-              title: (0, f.vc)(u, "LLLL"),
-              children: (0, f.Y4)(u)
+              title: (0, p.vc)(u, "LLLL"),
+              children: (0, p.Y4)(u)
             })
           }), "guild" === n.type && (0, r.jsx)(_.Z9, {
             name: "Guild ID",
@@ -132,12 +132,12 @@ let N = [{
   }];
 
 function E() {
-  let [e, t] = a.useState(""), n = a.useRef(null), i = (0, u.Wu)([p.Z], () => p.Z.loggedTriggers), o = a.useMemo(() => i.filter(t => 0 === e.length || s()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [i, e]), [c, d] = a.useState(void 0), x = o.find(e => e.key === c), {
-    TabBar: f,
+  let [e, t] = a.useState(""), n = a.useRef(null), i = (0, u.Wu)([f.Z], () => f.Z.loggedTriggers), o = a.useMemo(() => i.filter(t => 0 === e.length || s()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [i, e]), [c, d] = a.useState(void 0), x = o.find(e => e.key === c), {
+    TabBar: p,
     renderSelectedTab: _
   } = (0, j.Z)({
     tabs: T
-  }, []), E = (0, u.e7)([p.Z], () => p.Z.trackTriggers), S = a.useCallback(e => {
+  }, []), E = (0, u.e7)([f.Z], () => f.Z.trackTriggers), S = a.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
@@ -185,7 +185,7 @@ function E() {
       className: y.subPanel,
       minHeight: 100,
       initialHeight: null != n.current ? n.current.clientHeight / 2 : 300,
-      children: [(0, r.jsx)(f, {}), _({
+      children: [(0, r.jsx)(p, {}), _({
         loggedTrigger: x
       })]
     })]

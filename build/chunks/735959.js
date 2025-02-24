@@ -1,6 +1,6 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
-  Z: () => p
+  Z: () => f
 }), n(47120);
 var r = n(200651),
   a = n(192379),
@@ -14,13 +14,13 @@ var r = n(200651),
   m = n(706454),
   h = n(428530),
   x = n(257785),
-  f = n(388032);
+  p = n(388032);
 
-function p() {
+function f() {
   let e = (0, c.e7)([m.default], () => m.default.locale),
     [t, n] = a.useState(),
     l = (0, i.runtimeHashMessageKey)(null != t ? t : ""),
-    p = a.useMemo(() => f.t[l], [l]);
+    f = a.useMemo(() => p.t[l], [l]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)(u.ZP, {
       children: [(0, r.jsx)(u.ZP.Icon, {
@@ -38,7 +38,7 @@ function p() {
         children: e
       }), (0, r.jsx)(x.Z9, {
         name: "@discord/intl",
-        children: f.NW.currentLocale
+        children: p.NW.currentLocale
       }), (0, r.jsx)(x.Z9, {
         name: "common i18n",
         children: s.Z.getLocale()
@@ -56,7 +56,7 @@ function p() {
     }), (0, r.jsx)(x.E, {
       children: (0, r.jsx)(x.Z9, {
         name: "Unique Rendered Main Messages",
-        children: Object.keys(f.t).length
+        children: Object.keys(p.t).length
       })
     }), (0, r.jsx)(d.oil, {
       onChange: function(e) {
@@ -73,10 +73,10 @@ function p() {
         children: l
       }), (0, r.jsx)(x.Z9, {
         name: "Exists?",
-        children: null != p ? "yes" : "no"
+        children: null != f ? "yes" : "no"
       })]
     }), (0, r.jsx)(h.Z, {
-      data: null == p ? void 0 : p(e)
+      data: null == f ? void 0 : f(e)
     })]
   })
 }

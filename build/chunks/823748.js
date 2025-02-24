@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (f97ce343811d4d7d.js) **/
+/** Chunk was on 71611 (6f02c158d7813e32.js) **/
 n.d(t, {
   Z: () => to
 }), n(47120), n(653041);
@@ -789,7 +789,10 @@ let tl = (0, j.Z)(ti),
       return (null !== (e = null == x ? void 0 : x.channelId) && void 0 !== e ? e : eG.Z.getVoiceChannelId()) === (null == c ? void 0 : c.id)
     }), P = (0, p.e7)([E.ZP], () => null != c ? E.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), A = (0, p.e7)([eF.Z], () => eF.Z.isConnected()), w = (0, N.Z)(A), R = A && !1 === w;
     i.useEffect(() => {
-      j && R && null != P && null != c && g.Z.selectParticipant(c.id, (0, Z.oW)(P.applicationId))
+      j && R && null != P && null != c && g.Z.selectParticipant(c.id, (0, Z.gN)({
+        applicationId: P.applicationId,
+        instanceId: P.compositeInstanceId
+      }))
     }, [R, c, j, P]);
     let k = (0, p.e7)([E.ZP], () => {
         var e;

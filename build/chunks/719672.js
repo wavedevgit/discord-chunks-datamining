@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
   Z: () => _
 }), n(47120);
@@ -15,7 +15,7 @@ var a = n(913527),
   m = n(675478),
   h = n(681619),
   x = n(60223);
-let f = e => {
+let p = e => {
     switch (e) {
       case c.D.DC_DISMISSED:
         return "DISMISS:";
@@ -27,7 +27,7 @@ let f = e => {
         return "UNKNOWN TYPE:"
     }
   },
-  p = [{
+  f = [{
     key: "events",
     render(e) {
       let {
@@ -58,8 +58,8 @@ function _() {
         dismissibleContent: n
       } = e;
       return {
-        key: f(t) + n.toString(),
-        event: f(t),
+        key: p(t) + n.toString(),
+        event: p(t),
         dismissibleContent: n
       }
     }),
@@ -95,7 +95,7 @@ function _() {
         data: _
       })
     }), (0, r.jsx)("br", {}), (0, r.jsx)(h.Z, {
-      columns: p,
+      columns: f,
       data: o
     })]
   })

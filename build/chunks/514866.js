@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
   Z: () => b
 });
@@ -15,8 +15,8 @@ var a = n(120356),
   m = n(601948),
   h = n(594174),
   x = n(148817),
-  f = n(455812);
-let p = () => {
+  p = n(455812);
+let f = () => {
   Promise.all([n.e("52030"), n.e("62250")]).then(n.bind(n, 24031)).then(e => {
     let {
       openMFAModal: t
@@ -44,42 +44,42 @@ function b() {
     n = u.Rt.useSetting();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: i()(x.buttonsContainer, f.marginBottom20),
+      className: i()(x.buttonsContainer, p.marginBottom20),
       children: (0, r.jsx)(m.S, {
         isDevTools: !0
       })
     }), (0, r.jsx)("div", {
-      className: i()(x.buttonsContainer, f.marginBottom20),
+      className: i()(x.buttonsContainer, p.marginBottom20),
       children: (0, r.jsx)(l.zxk, {
-        onClick: p,
+        onClick: f,
         children: "Launch MFA"
       })
     }), (0, r.jsx)("div", {
-      className: i()(x.buttonsContainer, f.marginBottom20),
+      className: i()(x.buttonsContainer, p.marginBottom20),
       children: (0, r.jsx)(l.zxk, {
         onClick: () => (0, d.Z)(),
         children: "Launch Vibing Wumpus"
       })
     }), t && (0, r.jsx)("div", {
-      className: i()(x.buttonsContainer, f.marginBottom20),
+      className: i()(x.buttonsContainer, p.marginBottom20),
       children: (0, r.jsx)(l.zxk, {
         onClick: () => (0, c.N)(),
         children: "Launch Captcha Test Tool"
       })
     }), t && (0, r.jsx)("div", {
-      className: i()(x.buttonsContainer, f.marginBottom20),
+      className: i()(x.buttonsContainer, p.marginBottom20),
       children: (0, r.jsx)(l.zxk, {
         onClick: () => (0, s.E)(),
         children: "Launch Age Verification Test Tool"
       })
     }), t && (0, r.jsx)("div", {
-      className: i()(x.buttonsContainer, f.marginBottom20),
+      className: i()(x.buttonsContainer, p.marginBottom20),
       children: (0, r.jsx)(l.zxk, {
         onClick: () => o.Z.showAgeVerificationGetStartedModal(),
         children: "Launch Age Verification Modal"
       })
     }), t && (0, r.jsx)("div", {
-      className: i()(x.buttonsContainer, f.marginBottom20),
+      className: i()(x.buttonsContainer, p.marginBottom20),
       children: (0, r.jsx)(l.j7V, {
         value: n,
         onChange: e => u.Rt.updateSetting(e),

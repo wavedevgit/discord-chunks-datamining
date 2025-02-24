@@ -1,4 +1,4 @@
-/** Chunk was on 84686 (2c5fbe9432beb376.js) **/
+/** Chunk was on 84686 (7f5f208e793f2d59.js) **/
 n.d(t, {
   Ie: () => x,
   mv: () => j
@@ -54,7 +54,7 @@ let j = e => {
     let {
       channelId: t
     } = e, n = (0, b._d)(t);
-    return (0, d.Do)({
+    return (0, d.D)({
       location: "blocked-users-notice"
     }) ? (0, r.jsx)(N, {
       channelId: t

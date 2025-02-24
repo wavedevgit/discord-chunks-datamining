@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
   Z: () => T,
   q: () => N
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(481060),
   h = n(410030),
   x = n(705262),
-  f = n(374794),
-  p = n(58755),
+  p = n(374794),
+  f = n(58755),
   b = n(246992),
   _ = n(500949),
   g = n(452721);
@@ -177,7 +177,7 @@ function T() {
           onClick: o,
           disabled: !u,
           children: (0, r.jsx)(m.zGS, {})
-        }), (0, r.jsx)(f.Z, {
+        }), (0, r.jsx)(p.Z, {
           "aria-label": "Import",
           filters: [{
             name: "JSON",
@@ -221,7 +221,7 @@ function T() {
     }), (0, r.jsx)("div", {
       className: g.tab,
       hidden: O !== _.H8.PALETTES,
-      children: (0, r.jsx)(p.P, {
+      children: (0, r.jsx)(f.P, {
         state: t,
         setState: n
       })
@@ -279,7 +279,7 @@ function E(e) {
         semanticColorOverrides: r
       })
     })
-  }, [n]), f = a.useCallback(e => {
+  }, [n]), p = a.useCallback(e => {
     n(t => {
       let {
         semanticColorOverrides: n
@@ -290,7 +290,7 @@ function E(e) {
         semanticColorOverrides: a
       })
     })
-  }, [n]), p = Object.keys(C).map(e => ({
+  }, [n]), f = Object.keys(C).map(e => ({
     value: e,
     label: y(e)
   })), N = Object.keys(u.b).map(e => ({
@@ -302,7 +302,7 @@ function E(e) {
       variant: "text-lg/semibold",
       children: "Semantic Tokens"
     }), (0, r.jsx)(m.VcW, {
-      options: p,
+      options: f,
       placeholder: "Search for a semantic token...",
       value: void 0,
       onChange: c,
@@ -341,7 +341,7 @@ function E(e) {
             })
           },
           onRemove: () => x(t),
-          onHighlightToggle: () => f(t),
+          onHighlightToggle: () => p(t),
           children: (0, r.jsxs)("div", {
             className: g.semanticOverride,
             children: [(0, r.jsx)(m.VcW, {

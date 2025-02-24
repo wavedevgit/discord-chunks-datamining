@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
   $R: () => Y,
   A0: () => et,
@@ -33,8 +33,8 @@ var r, a, i = n(192379),
   m = n(385787),
   h = n(566162),
   x = n(567027),
-  f = n(461195),
-  p = n(857702),
+  p = n(461195),
+  f = n(857702),
   b = n(20450),
   _ = n(312976),
   g = n(147591),
@@ -99,8 +99,8 @@ let z = {
     HSLuv: m.Z,
     HSV: h.Z,
     HWB: x.Z,
-    ICTCP: f.Z,
-    JzCzHz: p.Z,
+    ICTCP: p.Z,
+    JzCzHz: f.Z,
     Jzazbz: b.Z,
     LCH: _.Z,
     LCHuv: g.Z,
@@ -227,22 +227,22 @@ function ea(e) {
     outputSpace: s,
     space: s,
     progression: e => e ** o
-  }), f = (0, A.w6)(u, c, {
+  }), p = (0, A.w6)(u, c, {
     steps: h,
     outputSpace: s,
     space: s,
     progression: e => e ** o
-  }), p = [];
+  }), f = [];
   for (let e = 0; e < m; e++) {
     let t = x(e / m);
-    p.push(t)
+    f.push(t)
   }
-  p.push(c);
+  f.push(c);
   for (let e = 1; e < h; e++) {
-    let t = f(1 - e / h);
-    p.push(t)
+    let t = p(1 - e / h);
+    f.push(t)
   }
-  return Object.fromEntries(p.map((e, n) => ["".concat(t, "-").concat(n), e]))
+  return Object.fromEntries(f.map((e, n) => ["".concat(t, "-").concat(n), e]))
 }
 
 function ei(e, t, n) {

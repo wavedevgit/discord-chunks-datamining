@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (1d5eb829541a42b4.js) **/
+/** Chunk was on 93886 (c39579f01d1aedae.js) **/
 n.d(t, {
   Z: () => O
 }), n(47120), n(301563);
@@ -14,8 +14,8 @@ var r = n(200651),
   m = n(258732),
   h = n(592125),
   x = n(699516),
-  f = n(594174),
-  p = n(55589),
+  p = n(594174),
+  f = n(55589),
   b = n(630388),
   _ = n(98357),
   g = n(432877),
@@ -25,18 +25,18 @@ var r = n(200651),
 
 function y() {
   var e;
-  let t = (0, s.Wu)([p.Z], () => p.Z.getSortedChannels()[1]),
+  let t = (0, s.Wu)([f.Z], () => f.Z.getSortedChannels()[1]),
     [n, i] = a.useState(t.length > 0 ? t[0].channelId : void 0),
     {
       selectedChannel: l,
       options: _
-    } = (0, s.cj)([h.Z, f.default, x.Z], () => ({
+    } = (0, s.cj)([h.Z, p.default, x.Z], () => ({
       selectedChannel: h.Z.getChannel(n),
       options: t.map(e => {
         let t = h.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, u.F6)(t, f.default, x.Z) : e.channelId
+          label: null != t ? (0, u.F6)(t, p.default, x.Z) : e.channelId
         }
       })
     })),

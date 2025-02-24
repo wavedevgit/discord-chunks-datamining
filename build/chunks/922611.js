@@ -1,9 +1,8 @@
-/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
 "use strict";
 n.d(t, {
-  Do: () => s,
-  JX: () => a,
-  S2: () => o
+  D: () => a,
+  S: () => o
 });
 var r = n(818083),
   i = n(987338);
@@ -25,17 +24,6 @@ let o = (0, r.B)({
 });
 
 function a(e) {
-  let {
-    location: t
-  } = e;
-  return o.getCurrentConfig({
-    location: t
-  }, {
-    autoTrackExposure: !1
-  }).enabled
-}
-
-function s(e) {
   let {
     location: t
   } = e;

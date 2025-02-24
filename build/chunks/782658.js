@@ -1,4 +1,4 @@
-/** Chunk was on 11814 (8608d0474a894e52.js) **/
+/** Chunk was on 11814 (b9188d9bdd9a4469.js) **/
 n.d(t, {
   Z: () => A
 });
@@ -65,7 +65,7 @@ function A(e) {
     U = () => {
       if (null == D && (null == w ? void 0 : w.guild) != null) {
         let e = v.Qs(w.guild);
-        if ((0, c.b)() && (0, c.Y)(e)) {
+        if ((0, c.bN)() && (0, c.Yt)(e)) {
           (0, s.mN)(T.L0.NSFW_SERVER_INVITE_EMBED);
           return
         }

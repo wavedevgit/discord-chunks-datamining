@@ -1,4 +1,4 @@
-/** Chunk was on 48923 (dce5ea7ad6fc1246.js) **/
+/** Chunk was on 48923 (05423627440510f9.js) **/
 n.d(t, {
   Z: () => j
 }), n(47120);
@@ -110,10 +110,10 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [v, P, q, S]), W = (0, u.Z)(y);
+    }, [v, P, q, S]), I = (0, u.Z)(y);
     return (o.useEffect(() => {
-      O && y && !W && (C(), D())
-    }, [y, O, C, D, W]), o.useEffect(() => {
+      O && y && !I && (C(), D())
+    }, [y, O, C, D, I]), o.useEffect(() => {
       O && !N && E && setTimeout(() => {
         C(), D()
       }, 200)
