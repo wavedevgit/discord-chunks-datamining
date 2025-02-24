@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
 "use strict";
 n.d(t, {
   Z: () => v
@@ -102,8 +102,8 @@ class E {
         body: {
           metrics: e,
           client_info: {
-            built_at: "1740405187714",
-            build_number: "370986"
+            built_at: "1740413544851",
+            build_number: "371006"
           }
         },
         retries: 1,

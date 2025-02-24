@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
 let t = "2.0.0",
   n = 256,
   r = Number.MAX_SAFE_INTEGER || 0x1fffffffffffff,

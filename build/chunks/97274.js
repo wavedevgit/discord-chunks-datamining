@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
 var t = "[0-9](_*[0-9])*",
   n = `\\.(${t})`,
   r = "[0-9a-fA-F](_*[0-9a-fA-F])*",

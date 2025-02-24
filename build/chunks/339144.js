@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (809533fdbc51a5c1.js) **/
+/** Chunk was on 32098 (37916180435b2d51.js) **/
 n.d(t, {
   J: () => O,
   y: () => _
@@ -27,8 +27,8 @@ function _(e, t, n) {
 let O = i.memo(function(e) {
   let t, l, u, O, {
       stream: j,
-      canGoLive: C,
-      guildId: x,
+      canGoLive: x,
+      guildId: C,
       isStreaming: S,
       channel: P,
       canStream: N,
@@ -58,7 +58,7 @@ let O = i.memo(function(e) {
     }, [j]),
     k = i.useCallback(() => {
       let e = null != P && (0, f.vd)(P.type) ? P : null,
-        t = null != e ? e.getGuildId() : x;
+        t = null != e ? e.getGuildId() : C;
       (0, a.ZDy)(async () => {
         let {
           default: e
@@ -98,10 +98,10 @@ let O = i.memo(function(e) {
           }), i))
         }
       })
-    }, [P, x]),
-    M = (null != I || null == Z || (0, c.R)()) && (S || C) ? (S ? (t = !1, l = L, u = a.g5r, O = v.NW.string(v.t.S5anIS)) : N ? (t = !1, l = k, u = a.hGI, O = null != I ? v.NW.formatToPlainString(v.t.AB5gT0, {
+    }, [P, C]),
+    M = (null != I || null == Z || (0, c.R)()) && (S || x) ? (S ? (t = !1, l = L, u = a.g5r, O = v.NW.string(v.t.S5anIS)) : N ? (t = !1, l = k, u = a.hGI, O = null != I ? v.NW.formatToPlainString(v.t.AB5gT0, {
       game: I.name
-    }) : v.NW.string(v.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, O = null != P && (0, f.vd)(P.type) ? v.NW.string(v.t.uQn9Bw) : null != x ? v.NW.string(v.t.fBXEoK) : v.NW.string(v.t.n3feND)), (0, r.jsx)("div", {
+    }) : v.NW.string(v.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, O = null != P && (0, f.vd)(P.type) ? v.NW.string(v.t.uQn9Bw) : null != C ? v.NW.string(v.t.fBXEoK) : v.NW.string(v.t.n3feND)), (0, r.jsx)("div", {
       className: y.panelButtonContainer,
       children: (0, r.jsx)(m.Z, {
         tooltipText: O,

@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (809533fdbc51a5c1.js) **/
+/** Chunk was on 32098 (37916180435b2d51.js) **/
 n.d(t, {
   j: () => w
 }), n(47120);
@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(903002),
   O = n(214492),
   j = n(981631),
-  C = n(921944),
-  x = n(46140),
+  x = n(921944),
+  C = n(46140),
   S = n(388032),
   P = n(94594),
   N = n(204794);
@@ -118,13 +118,13 @@ let I = {
     } = e, {
       rtcPopoutEnabled: s
     } = (0, y.S)("SharingPrivacyPopout"), u = (0, g.Ws)({
-      location: x.dr.CONFLICT_CHECKS
+      location: C.dr.CONFLICT_CHECKS
     }), d = m.G6.useSetting(), [p, h] = (0, i.useState)(!1), _ = (0, o.e7)([b.Z], () => b.Z.getLayers().includes(j.S9g.USER_SETTINGS));
     return ((0, i.useEffect)(() => {
       n && v.default.track(j.rMx.OPEN_POPOUT, {
         type: "SharingPrivacyPopout"
       })
-    }, [n]), s && u && (!d || p) && !_) ? (0, r.jsx)(f.ZP, {
+    }, [n]), s && (u || n) && (!d || p) && !_) ? (0, r.jsx)(f.ZP, {
       contentTypes: n ? [] : [a.z.SHARE_ACTIVITY_COACHMARK_V2],
       children: e => {
         let {
@@ -136,7 +136,7 @@ let I = {
           position: "bottom",
           align: "center",
           onRequestClose: () => {
-            o(C.L.USER_DISMISS), l(!1), h(!1)
+            o(x.L.USER_DISMISS), l(!1), h(!1)
           },
           renderPopout: e => {
             let {

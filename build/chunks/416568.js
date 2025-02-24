@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (809533fdbc51a5c1.js) **/
+/** Chunk was on 32098 (37916180435b2d51.js) **/
 n.d(t, {
   Z: () => ec
 }), n(47120);
@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(100527),
   O = n(906732),
   j = n(358221),
-  C = n(540059),
-  x = n(706590),
+  x = n(540059),
+  C = n(706590),
   S = n(940777),
   P = n(41776),
   N = n(905423),
@@ -49,8 +49,8 @@ var r = n(200651),
   q = n(222059),
   Y = n(751277),
   Q = n(65721),
-  K = n(843343),
-  J = n(654142),
+  J = n(843343),
+  K = n(654142),
   X = n(695301),
   $ = n(836697),
   ee = n(921230),
@@ -161,7 +161,7 @@ function es(e) {
     isOverlay: n = !1,
     className: l,
     themeOverride: a
-  } = e, s = (0, C.Q3)("GuildsBar"), {
+  } = e, s = (0, x.Q3)("GuildsBar"), {
     density: d
   } = (0, m.TCT)(), [h] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
@@ -182,7 +182,7 @@ function es(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(ey, ["ref"]), ej = (0, m.mFp)(), [eC, ex] = i.useState(!1), [eS, eP] = i.useState(!1), eN = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eI = i.useMemo(() => new ea(h, ex, eP, () => {
+  }(ey, ["ref"]), ej = (0, m.mFp)(), [ex, eC] = i.useState(!1), [eS, eP] = i.useState(!1), eN = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eI = i.useMemo(() => new ea(h, eC, eP, () => {
     var e, t;
     null === (e = eb.current) || void 0 === e || e.calculateState(), null === (t = ev.current) || void 0 === t || t.calculateState()
   }, function(e, t, n) {
@@ -239,7 +239,7 @@ function es(e) {
   let eD = i.useCallback(function e(t) {
       switch (t.type) {
         case M.eD.FOLDER:
-          return (0, r.jsx)(J.Z, {
+          return (0, r.jsx)(K.Z, {
             folderNode: t,
             setNodeRef: eI.setNodeRef,
             draggable: !0,
@@ -262,7 +262,7 @@ function es(e) {
       }
     }, [eh, ef, ed, eI.setNodeRef]),
     eR = h.getRoots(),
-    eL = (0, x.Z)(),
+    eL = (0, C.Z)(),
     ek = (0, I.U)(),
     {
       enabled: eM
@@ -318,7 +318,7 @@ function es(e) {
               children: [(0, r.jsxs)(m.xVE, {
                 className: o()({
                   [er.scroller]: !0,
-                  [er.scrolling]: eC
+                  [er.scrolling]: ex
                 }),
                 experimental_useStack: s,
                 gap: "xs",
@@ -340,7 +340,7 @@ function es(e) {
                 }), eH, n ? null : (0, r.jsx)(V.Z, {
                   disableTooltip: y.length > 0,
                   lastTargetNode: eR[eR.length - 1]
-                }), (0, r.jsx)(K.Z, {}), !n && s ? (0, r.jsx)(H.Z, {
+                }), (0, r.jsx)(J.Z, {}), !n && s ? (0, r.jsx)(H.Z, {
                   ref: eG,
                   questId: eF,
                   onClick: eU,

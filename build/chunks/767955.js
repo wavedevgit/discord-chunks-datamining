@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (809533fdbc51a5c1.js) **/
+/** Chunk was on 32098 (37916180435b2d51.js) **/
 e.exports = {
   panel: "panel__5dec7",
   body: "body__5dec7",

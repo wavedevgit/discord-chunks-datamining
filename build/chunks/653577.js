@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (809533fdbc51a5c1.js) **/
+/** Chunk was on 32098 (37916180435b2d51.js) **/
 n.d(t, {
   Z: () => v
 });
@@ -25,14 +25,14 @@ function v(e) {
     hovered: l,
     subtitle: v,
     onClick: y
-  } = e, _ = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), O = null != _ && _.length > 0, j = (0, c.ZP)(t, !0), C = null != v && v.length > 0;
+  } = e, _ = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), O = null != _ && _.length > 0, j = (0, c.ZP)(t, !0), x = null != v && v.length > 0;
   i.useEffect(() => {
     O && h.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
       guild_id: t.guild_id,
       channel_id: t.id
     })
   }, [t.id, O, t.guild_id]);
-  let x = (0, s.bWb)().enabled ? 12 : 14;
+  let C = (0, s.bWb)().enabled ? 12 : 14;
   if (null == t.guild_id) return null;
   let S = o()(m.statusDiv, n && j ? m.hoverable : null);
   return O ? (0, r.jsx)(s.P3F, {
@@ -47,7 +47,7 @@ function v(e) {
         })
       })
     })
-  }) : n && j && (!C || l) ? (0, r.jsxs)(s.P3F, {
+  }) : n && j && (!x || l) ? (0, r.jsxs)(s.P3F, {
     className: S,
     onClick: y,
     children: [(0, r.jsx)(s.Text, {
@@ -58,10 +58,10 @@ function v(e) {
       size: "custom",
       color: "currentColor",
       className: m.pencilIcon,
-      width: x,
-      height: x
+      width: C,
+      height: C
     })]
-  }) : C ? (0, r.jsx)(d.Z, {
+  }) : x ? (0, r.jsx)(d.Z, {
     children: v
   }) : null
 }

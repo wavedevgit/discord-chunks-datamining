@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (809533fdbc51a5c1.js) **/
+/** Chunk was on 32098 (37916180435b2d51.js) **/
 n.d(t, {
   Z: () => D
 });
@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(714794),
   O = n(876548),
   j = n(25601),
-  C = n(207055),
-  x = n(981631),
+  x = n(207055),
+  C = n(981631),
   S = n(124368),
   P = n(388032),
   N = n(436804),
@@ -172,22 +172,22 @@ let D = i.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(z, ["role"]), Q = i.useRef(null), K = G > 0 ? P.NW.formatToPlainString(P.t["ZL7+Iy"], {
+  }(z, ["role"]), Q = i.useRef(null), J = G > 0 ? P.NW.formatToPlainString(P.t["ZL7+Iy"], {
     channelName: t.name,
     mentionCount: G
   }) : M ? P.NW.formatToPlainString(P.t.YlVvmZ, {
     channelName: t.name
   }) : P.NW.formatToPlainString(P.t["0nZpiI"], {
     channelName: t.name
-  }), J = (0, h.Q3)("GuildSidebarThreadListEntry") ? T : A;
+  }), K = (0, h.Q3)("GuildSidebarThreadListEntry") ? T : A;
   return (0, r.jsxs)("li", {
     role: q,
     className: o()(N.containerDefault, {
       [N.selected]: l
     }),
-    children: [(0, r.jsx)(J, {
+    children: [(0, r.jsx)(K, {
       withGuildIcon: R
-    }), D ? null : (0, r.jsx)(J, {
+    }), D ? null : (0, r.jsx)(K, {
       withGuildIcon: R,
       inverted: !0,
       style: {
@@ -216,7 +216,7 @@ let D = i.memo(function(e) {
           innerRef: Q,
           className: I.link,
           onClick: W,
-          "aria-label": K,
+          "aria-label": J,
           focusProps: {
             enabled: !1
           },
@@ -240,12 +240,12 @@ let D = i.memo(function(e) {
           })
         }))]
       })
-    }), (0, r.jsx)(C.Z, {
+    }), (0, r.jsx)(x.Z, {
       channel: t,
       collapsed: !Z,
       collapsedMax: 6,
       voiceStates: L,
-      location: x.Sbl.GUILD_CHANNEL_LIST
+      location: C.Sbl.GUILD_CHANNEL_LIST
     })]
   })
 })

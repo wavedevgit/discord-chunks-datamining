@@ -1,3 +1,3 @@
-/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
 "use strict";
 e.exports = "https://cdn.discordapp.com/assets/content/03fd0662b5ff101e4fc8c43309a51174a8d6de4275ebc364897623093487fa45.png"

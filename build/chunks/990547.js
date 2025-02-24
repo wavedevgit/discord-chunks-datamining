@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
 "use strict";
 let r, i;
 n.r(t), n.d(t, {
@@ -254,7 +254,7 @@ function W() {
   let r = {},
     i = window.GLOBAL_ENV.RELEASE_CHANNEL;
   i && (null == r.release_channel || "" === r.release_channel) && (r.release_channel = i.split("-")[0]);
-  let o = parseInt((n = "370986", "370986"), 10);
+  let o = parseInt((n = "371006", "371006"), 10);
   isNaN(o) || (r.client_build_number = o);
   let a = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
   return isNaN(a) || (r.native_build_number = a), r.client_event_source = H(), r.has_client_mods = (0, f.e)(), r

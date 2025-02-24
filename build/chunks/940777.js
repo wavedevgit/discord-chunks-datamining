@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (809533fdbc51a5c1.js) **/
+/** Chunk was on 32098 (37916180435b2d51.js) **/
 n.d(t, {
   Z: () => R
 }), n(47120), n(653041);
@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(199902),
   O = n(592125),
   j = n(944486),
-  C = n(979651),
-  x = n(709054),
+  x = n(979651),
+  C = n(709054),
   S = n(853856),
   P = n(593214),
   N = n(919755),
@@ -90,8 +90,8 @@ function R() {
           return null != t && null != e[t.channelId]
         }),
         i = (0, s.e7)([_.Z], () => _.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
-        l = (0, s.e7)([C.Z], () => n && null != t && C.Z.hasVideo(t), [n, t]),
-        o = (0, s.Wu)([p.ZP], () => x.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
+        l = (0, s.e7)([x.Z], () => n && null != t && x.Z.hasVideo(t), [n, t]),
+        o = (0, s.Wu)([p.ZP], () => C.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
         a = (0, s.e7)([p.ZP], () => Array.from(p.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n

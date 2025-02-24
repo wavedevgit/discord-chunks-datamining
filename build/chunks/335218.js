@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
 e.exports = function(e, t, n, r) {
   var i = n ? n.call(r, e, t) : void 0;
   if (void 0 !== i) return !!i;

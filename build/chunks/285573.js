@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (809533fdbc51a5c1.js) **/
+/** Chunk was on 32098 (37916180435b2d51.js) **/
 n.d(t, {
   Z: () => v
 });
@@ -27,8 +27,8 @@ let v = (0, c.B)(function(e) {
     sortingType: _,
     sortingPosition: O,
     connectChannelDragSource: j,
-    connectChannelDropTarget: C,
-    tabIndex: x
+    connectChannelDropTarget: x,
+    tabIndex: C
   } = e, S = (0, a.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
@@ -90,13 +90,13 @@ let v = (0, c.B)(function(e) {
         resolvedUnreadSetting: m.i.ONLY_MENTIONS,
         children: [(0, r.jsx)(h.eP, {
           channel: S,
-          tabIndex: x
+          tabIndex: C
         }), (0, r.jsx)(h.hR, {
           channel: S,
           disableManageChannels: v,
-          tabIndex: x
+          tabIndex: C
         })]
       })
     });
-  return I && (T = C(j(T))), T
+  return I && (T = x(j(T))), T
 })

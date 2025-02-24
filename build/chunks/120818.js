@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (809533fdbc51a5c1.js) **/
+/** Chunk was on 32098 (37916180435b2d51.js) **/
 n.d(t, {
   T: () => v
 });
@@ -34,7 +34,7 @@ let v = i.memo(function(e) {
     return y.forEach(t => {
       null != _[t.channelId] && e++
     }), e
-  }, [_, y]), j = null == y ? 0 : y.length, C = (0, l.JA)("progress-bar-".concat(v.id));
+  }, [_, y]), j = null == y ? 0 : y.length, x = (0, l.JA)("progress-bar-".concat(v.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(a.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -53,7 +53,7 @@ let v = i.memo(function(e) {
         })
       }
       return e
-    }({}, C), n = n = {
+    }({}, x), n = n = {
       role: "button",
       focusProps: {
         offset: {

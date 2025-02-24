@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
 "use strict";
 let r;
 n.d(t, {
@@ -501,7 +501,7 @@ function ex(e) {
   } = e;
   X = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "8fad24a51f9b638547c7bb4afa495136231f5ebf"), n.append("rpc", String(t)), n.append("rpc_auth_token", X), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "f28ad921fabac0351a879d263f87880b7a06d9d6"), n.append("rpc", String(t)), n.append("rpc_auth_token", X), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eL(e) {

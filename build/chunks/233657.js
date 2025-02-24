@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (809533fdbc51a5c1.js) **/
+/** Chunk was on 32098 (37916180435b2d51.js) **/
 n.d(t, {
   Z: () => v
 });
@@ -70,9 +70,9 @@ function v(e) {
       }))
     }), (0, s.EW)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
-  let C = (0, c.ZP)(t.id),
-    x = C.length > 0 ? f.NW.formatToPlainString(f.t.IBdqSk, {
-      number: C.length
+  let x = (0, c.ZP)(t.id),
+    C = x.length > 0 ? f.NW.formatToPlainString(f.t.IBdqSk, {
+      number: x.length
     }) : f.NW.string(f.t.tlopTE);
   return (0, r.jsx)(p.m, {
     id: "upcoming-events-".concat(t.id),
@@ -81,7 +81,7 @@ function v(e) {
       color: "currentColor",
       className: e
     }),
-    text: x,
+    text: C,
     selected: v,
     onClick: j,
     onContextMenu: e => {

@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (809533fdbc51a5c1.js) **/
+/** Chunk was on 32098 (37916180435b2d51.js) **/
 n.d(t, {
   Z: () => b
 });
@@ -21,7 +21,7 @@ let b = i.memo(function(e) {
   let {
     guildNode: b,
     lowerBadge: v
-  } = e, y = b.id, _ = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), O = (0, a.E)(_), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), x = (0, c.Z)(e => e.guildId), S = (0, f.Z)(y), {
+  } = e, y = b.id, _ = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), O = (0, a.E)(_), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), C = (0, c.Z)(e => e.guildId), S = (0, f.Z)(y), {
     badge: P,
     unread: N,
     isMentionLowImportance: I
@@ -58,9 +58,9 @@ let b = i.memo(function(e) {
     return e
   }({}, e), n = n = {
     guild: _,
-    unavailable: C,
+    unavailable: x,
     animatable: j,
-    selected: x === y,
+    selected: C === y,
     badge: P,
     isMentionLowImportance: I,
     lowerBadge: w,

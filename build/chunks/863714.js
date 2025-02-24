@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
 "use strict";
 var n = "(?:[a-z0-9]{5,8}|\\d[a-z0-9]{3})",
   r = "[0-9a-wy-z]",

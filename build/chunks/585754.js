@@ -1,2 +1,2 @@
-/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
 t.pbkdf2 = n(508219), t.pbkdf2Sync = n(275227)
