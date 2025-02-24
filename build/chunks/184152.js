@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.767fb3b3f685bfe8.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.a4687b32e07d48ae.js.js) **/
 function t(e) {
   let t = e.regex,
     n = t.concat(/[\p{L}_]/u, t.optional(/[\p{L}0-9_.-]*:/u), /[\p{L}0-9_.-]*/u),

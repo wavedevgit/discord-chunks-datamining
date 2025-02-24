@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.767fb3b3f685bfe8.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.a4687b32e07d48ae.js.js) **/
 let t = "[A-Za-z$_][0-9A-Za-z$_]*",
   n = ["as", "in", "of", "if", "for", "while", "finally", "var", "new", "function", "do", "return", "void", "else", "break", "catch", "instanceof", "with", "throw", "case", "default", "try", "switch", "continue", "typeof", "delete", "let", "yield", "const", "class", "debugger", "async", "await", "static", "import", "from", "export", "extends", "using"],
   r = ["true", "false", "null", "undefined", "NaN", "Infinity"],

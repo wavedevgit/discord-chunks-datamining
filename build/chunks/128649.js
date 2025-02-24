@@ -1,4 +1,4 @@
-/** Chunk was on 624 (94b3a5f5b7262b20.js) **/
+/** Chunk was on 624 (572fcf0aa11379cf.js) **/
 e.exports = {
   container: "container__60b20",
   lightTextLink: "lightTextLink__60b20",
