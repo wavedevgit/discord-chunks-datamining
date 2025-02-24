@@ -1,4 +1,4 @@
-/** Chunk was on 78226 (be06091776028b1c.js) **/
+/** Chunk was on 78226 **/
 e.exports = {
   partnerBranding: "partnerBranding__83420",
   partnerBrandingGameTile: "partnerBrandingGameTile__83420",

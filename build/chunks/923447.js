@@ -1,4 +1,4 @@
-/** Chunk was on 624 (c8fedef2e72d2e9e.js) **/
+/** Chunk was on 624 **/
 e.exports = {
   container: "container__8e864",
   guildPrefixContainer: "guildPrefixContainer__8e864",

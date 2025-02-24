@@ -1,4 +1,4 @@
-/** Chunk was on 64648 (6847817c4133f493.js) **/
+/** Chunk was on 64648 **/
 t.exports = {
   bugReporterSubmitModalRoot: "bugReporterSubmitModalRoot__341b5",
   modalContent: "modalContent__341b5",

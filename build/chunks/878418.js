@@ -1,4 +1,4 @@
-/** Chunk was on 59650 (77bde56551862fe7.js) **/
+/** Chunk was on 59650 **/
 t.exports = {
   buttonContainer: "buttonContainer__3e6b4",
   button: "button__3e6b4",

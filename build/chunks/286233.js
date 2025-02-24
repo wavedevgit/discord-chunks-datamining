@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 "use strict";
 var r = n(538315),
   i = "function" == typeof Symbol && "symbol" == typeof Symbol("foo"),

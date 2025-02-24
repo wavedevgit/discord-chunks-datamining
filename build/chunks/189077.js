@@ -1,4 +1,4 @@
-/** Chunk was on 61526 (01a92c1d206da859.js) **/
+/** Chunk was on 61526 **/
 e.exports = {
   root: "root_f90ef0",
   userItem: "userItem_f90ef0",

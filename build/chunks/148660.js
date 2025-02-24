@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 var r = {
   "./icon-file-acrobat.svg": "621680",
   "./icon-file-ae.svg": "725345",

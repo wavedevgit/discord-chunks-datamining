@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (6f02c158d7813e32.js) **/
+/** Chunk was on 71611 **/
 n.d(t, {
   Z: () => _
 });
@@ -47,21 +47,22 @@ function _(e) {
   } = (0, h.ZP)({
     location: "MicButton"
   }), {
-    squareButtons: N
+    squareButtons: N,
+    coloredIcons: E
   } = (0, f.Z)({
     location: "MuteButton"
-  }), E = t || n || _, P = C ? g.d : g.Z, I = (0, p.Z)(t, n, _, v, O === h.BK.GroupedButtonsRedMic), S = (0, c.O)(E ? "unmute" : "mute"), Z = (0, u.P)(E ? "unmute" : "mute"), {
-    activeVoice: T
-  } = (0, m.o)(), A = null != T, w = A ? Z : S, {
-    events: R,
-    play: k
-  } = w;
-  i.useEffect(() => () => k(), [k, E]);
-  let M = w.Component;
-  (0, d.bp)() === b.IlC.POPOUT && (M = A ? E ? o.T : l.x : E ? s.n : a.S);
-  let L = (N || O === h.BK.GroupedButtonsRedMic) && E ? "red" : void 0,
-    D = O !== h.BK.GroupedButtonsRedMic && !N;
-  return (0, r.jsx)(P, function(e) {
+  }), P = t || n || _, I = C ? g.d : g.Z, S = (0, p.Z)(t, n, _, v, O === h.BK.GroupedButtonsRedMic), Z = (0, c.O)(P ? "unmute" : "mute"), T = (0, u.P)(P ? "unmute" : "mute"), {
+    activeVoice: A
+  } = (0, m.o)(), w = null != A, R = w ? T : Z, {
+    events: k,
+    play: M
+  } = R;
+  i.useEffect(() => () => M(), [M, P]);
+  let L = R.Component;
+  (0, d.bp)() === b.IlC.POPOUT && (L = w ? P ? o.T : l.x : P ? s.n : a.S);
+  let D = (N || O === h.BK.GroupedButtonsRedMic) && P ? "red" : void 0,
+    W = O !== h.BK.GroupedButtonsRedMic && !N;
+  return (0, r.jsx)(I, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -79,16 +80,16 @@ function _(e) {
     }
     return e
   }({
-    isActive: !!D && !E,
-    iconComponent: M,
-    caretColor: "primaryDark",
-    color: L,
-    label: I,
+    isActive: !!W && !P,
+    iconComponent: L,
+    caretColor: E && P ? "red" : "primaryDark",
+    color: D,
+    label: S,
     onMouseEnter: e => {
-      null == y || y(e), R.onMouseEnter()
+      null == y || y(e), k.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == x || x(e), R.onMouseLeave()
+      null == x || x(e), k.onMouseLeave()
     }
   }, j))
 }

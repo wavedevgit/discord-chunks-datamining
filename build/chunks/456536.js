@@ -1,4 +1,4 @@
-/** Chunk was on 94085 (a586e6f414159600.js) **/
+/** Chunk was on 94085 **/
 var a = {
   wrapper: "wrapper_c19a55",
   compact: "compact_c19a55",

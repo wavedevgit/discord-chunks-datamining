@@ -1,4 +1,4 @@
-/** Chunk was on 76837 (b170549a2683ee24.js) **/
+/** Chunk was on 76837 **/
 t.exports = {
   header: "header__7560f",
   customGiftHeader: "customGiftHeader__7560f",

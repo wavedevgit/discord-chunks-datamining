@@ -1,4 +1,4 @@
-/** Chunk was on 16169 (100410ba0a7c3046.js) **/
+/** Chunk was on 16169 **/
 t.exports = {
   modalContent: "modalContent__9ae4f",
   spinner: "spinner__9ae4f",

@@ -1,6 +1,6 @@
-/** Chunk was on 44799 (d8fb5aa27239cf1c.js) **/
+/** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => j
+  Z: () => b
 });
 var i = t(200651),
   r = t(120356),
@@ -16,7 +16,7 @@ var i = t(200651),
   m = t(78555),
   p = t(355135);
 
-function b(e) {
+function j(e) {
   let n, {
     active: t,
     nextActive: r,
@@ -40,26 +40,26 @@ function b(e) {
   })
 }
 
-function j(e) {
+function b(e) {
   var n, t;
   let r, {
       index: a,
       powerup: l,
-      nextPowerup: j
+      nextPowerup: b
     } = e,
     {
       onActivate: h,
       onShowMore: C
     } = (0, u.Z)(l);
-  return r = 0 === a ? "start" : null == j ? "end" : "middle", (0, i.jsxs)(d.Z, {
+  return r = 0 === a ? "start" : null == b ? "end" : "middle", (0, i.jsxs)(d.Z, {
     label: l.title,
     onClick: C,
     active: l.active,
     className: m.card,
-    children: [(0, i.jsx)(b, {
+    children: [(0, i.jsx)(j, {
       position: r,
       active: l.active,
-      nextActive: null == j ? void 0 : j.active
+      nextActive: null == b ? void 0 : b.active
     }), (0, i.jsxs)("div", {
       className: p.contentContainer,
       children: [(0, i.jsx)(o.X6, {

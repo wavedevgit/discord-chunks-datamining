@@ -1,4 +1,4 @@
-/** Chunk was on 58121 (396bfcc6a8f93a0e.js) **/
+/** Chunk was on 58121 **/
 e.exports = {
   categoryRow: "categoryRow_e4503a",
   uncategorized: "uncategorized_e4503a",

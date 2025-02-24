@@ -1,4 +1,4 @@
-/** Chunk was on 48923 (05423627440510f9.js) **/
+/** Chunk was on 48923 **/
 n.d(t, {
   Z: () => Y
 }), n(47120), n(266796), n(627341);
@@ -36,8 +36,8 @@ var r = n(200651),
   k = n(710235),
   q = n(694802),
   D = n(95985),
-  I = n(50476),
-  W = n(46140),
+  W = n(50476),
+  I = n(46140),
   M = n(743294),
   L = n(388032),
   Z = n(996093);
@@ -137,7 +137,7 @@ function H(e) {
     learnMoreStyle: "text",
     quest: t,
     questContent: h.jn.QUEST_BAR_V2,
-    location: W.dr.QUESTS_BAR
+    location: I.dr.QUESTS_BAR
   })
 }
 
@@ -153,7 +153,7 @@ function z(e) {
       variant: "text-xs/normal",
       children: (0, y.DD)({
         quest: t,
-        location: W.dr.QUESTS_BAR,
+        location: I.dr.QUESTS_BAR,
         questContent: h.jn.QUEST_BAR_V2,
         taskDetails: n
       })
@@ -174,7 +174,7 @@ function F(e) {
     variant: "text-xs/normal",
     children: (0, y.DD)({
       quest: e.quest,
-      location: W.dr.QUESTS_BAR,
+      location: I.dr.QUESTS_BAR,
       questContent: h.jn.QUEST_BAR_V2,
       taskDetails: e.taskDetails
     })
@@ -196,13 +196,13 @@ function X(e) {
     null != C.current && (d && f ? (C.current.pause(), C.current.currentTime = 0) : !d && f && C.current.play())
   }, [d, f]);
   let O = (0, v.j)({
-      location: W.dr.QUESTS_BAR
+      location: I.dr.QUESTS_BAR
     }),
     S = (0, b.Kr)(t.config),
     N = (0, y.mK)(t.config),
     E = (0, y.CR)({
       quest: t,
-      location: W.dr.QUESTS_BAR
+      location: I.dr.QUESTS_BAR
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
@@ -324,7 +324,7 @@ function K(e) {
   }), X = (0, b.q8)(n), K = o.useCallback(() => {
     (0, E.openVideoQuestModal)(n)
   }, [n]), Y = (0, v.j)({
-    location: W.dr.QUESTS_BAR
+    location: I.dr.QUESTS_BAR
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.animated.div, {
@@ -381,9 +381,9 @@ function K(e) {
         taskDetails: s,
         activeScreen: w
       }), (0, r.jsx)(T.n, {
-        children: (!_ || Y) && !(0, b.Gd)(n) && (0, l.EQ)(w).with(h.LI.SELECT, () => (0, r.jsx)(I.Z, {
-          onConsole: () => P(W.cd.CONSOLE),
-          onDesktop: () => P(W.cd.DESKTOP)
+        children: (!_ || Y) && !(0, b.Gd)(n) && (0, l.EQ)(w).with(h.LI.SELECT, () => (0, r.jsx)(W.Z, {
+          onConsole: () => P(I.cd.CONSOLE),
+          onDesktop: () => P(I.cd.DESKTOP)
         })).with(h.LI.DESKTOP, () => (0, r.jsxs)(r.Fragment, {
           children: [Y && (0, r.jsx)(k.Z, {
             quest: n,

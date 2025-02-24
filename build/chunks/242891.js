@@ -1,4 +1,4 @@
-/** Chunk was on 80237 (68cc2a668cd36f89.js) **/
+/** Chunk was on 80237 **/
 "use strict";
 e.exports = {
   spinner: "spinner_a2de16",

@@ -1,4 +1,4 @@
-/** Chunk was on 2026 (61eedd5611521d75.js) **/
+/** Chunk was on 2026 **/
 n.d(t, {
   Z: () => c
 });
@@ -22,7 +22,8 @@ function c(e) {
         children: s.NW.string(s.t.eFNRzc)
       }), (0, i.jsx)(a.Z, {})]
     }), (0, i.jsx)(l.Z, {
-      orbAmount: t.amount
+      orbAmount: t.amount,
+      showInsufficientOrbBalanceTooltip: !0
     })]
   })
 }

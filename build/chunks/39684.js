@@ -1,4 +1,4 @@
-/** Chunk was on 11814 (b9188d9bdd9a4469.js) **/
+/** Chunk was on 11814 **/
 e.exports = {
   mainContainer: "mainContainer_b99f57",
   compact: "compact_b99f57",

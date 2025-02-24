@@ -1,4 +1,4 @@
-/** Chunk was on 84239 (623ddd73ffcf805b.js) **/
+/** Chunk was on 84239 **/
 n.r(t), n.d(t, {
   openGuildProductLink: () => d
 });

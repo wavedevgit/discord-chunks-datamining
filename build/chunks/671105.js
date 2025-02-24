@@ -1,4 +1,4 @@
-/** Chunk was on 70205 (5a251f584425ad2f.js) **/
+/** Chunk was on 70205 **/
 n.d(t, {
   OR: () => o,
   _c: () => u,

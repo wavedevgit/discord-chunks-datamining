@@ -1,4 +1,4 @@
-/** Chunk was on 48923 (05423627440510f9.js) **/
+/** Chunk was on 48923 **/
 e.exports = {
   connectConsoleButton: "connectConsoleButton_b69c3a",
   playstationButtonConnected: "playstationButtonConnected_b69c3a",

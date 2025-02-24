@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
   Z: () => y
 }), n(653041);
@@ -26,15 +26,15 @@ function y(e) {
     _ = (0, i.u)(e),
     O = (0, u.g)(e.id),
     j = (0, r.e7)([s.Z], () => s.Z.getNewMemberActions(e.id), [e.id]),
-    x = (0, d.Z)(e.id),
-    C = (0, c.PE)(e.id),
-    S = (0, a.n2)(e.id),
-    P = [],
+    C = (0, d.Z)(e.id),
+    x = (0, c.PE)(e.id),
+    P = (0, a.n2)(e.id),
+    S = [],
     N = e.hasFeature(v.oNc.HUB),
     I = e.hasFeature(v.oNc.COMMUNITY),
     Z = (0, m.lN)(!(0, f.r1)(e.id)),
     w = e.hasFeature(v.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
     E = (0, l.jS)(e.id, "Guild Sidebar"),
     T = (0, g.Ek)(e, "useGuildActionRow");
-  return N && P.push(b.z.GUILD_HUB_HEADER_OPTIONS), !C && O && x && null != j && j.length > 0 ? P.push(b.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && P.push(b.z.GUILD_PREMIUM_PROGRESS_BAR), !N && O && P.push(b.z.GUILD_HOME), t && P.push(b.z.GUILD_SCHEDULED_EVENTS), !N && I && Z && P.push(b.z.CHANNELS_AND_ROLES), y && P.push(b.z.GUILD_ROLE_SUBSCRIPTIONS), _ && P.push(b.z.GUILD_SHOP), !E && n && P.push(b.z.GUILD_MEMBER_APPLICATIONS), S && (I || w || E && e.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && P.push(b.z.GUILD_MOD_DASH_MEMBER_SAFETY), T && P.push(b.z.GUILD_BOOSTS), P
+  return N && S.push(b.z.GUILD_HUB_HEADER_OPTIONS), !x && O && C && null != j && j.length > 0 ? S.push(b.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && S.push(b.z.GUILD_PREMIUM_PROGRESS_BAR), !N && O && S.push(b.z.GUILD_HOME), t && S.push(b.z.GUILD_SCHEDULED_EVENTS), !N && I && Z && S.push(b.z.CHANNELS_AND_ROLES), y && S.push(b.z.GUILD_ROLE_SUBSCRIPTIONS), _ && S.push(b.z.GUILD_SHOP), !E && n && S.push(b.z.GUILD_MEMBER_APPLICATIONS), P && (I || w || E && e.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && S.push(b.z.GUILD_MOD_DASH_MEMBER_SAFETY), T && S.push(b.z.GUILD_BOOSTS), S
 }

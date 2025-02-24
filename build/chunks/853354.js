@@ -1,4 +1,4 @@
-/** Chunk was on 23303 (7666fad8314f58de.js) **/
+/** Chunk was on 23303 **/
 e.exports = {
   container: "container_f792fa",
   guildSidebar: "guildSidebar_f792fa",

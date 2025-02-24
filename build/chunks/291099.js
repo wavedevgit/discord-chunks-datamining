@@ -1,4 +1,4 @@
-/** Chunk was on 47240 (6df86f0da340a6bb.js) **/
+/** Chunk was on 47240 **/
 e.exports = {
   container: "container_ea79f0",
   content: "content_ea79f0",

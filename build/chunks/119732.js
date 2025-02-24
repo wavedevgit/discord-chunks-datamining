@@ -1,4 +1,4 @@
-/** Chunk was on 226 (61395df0b59aef3d.js) **/
+/** Chunk was on 226 **/
 t.exports = {
   splash: "splash__15293",
   gameIcon: "gameIcon__15293",

@@ -1,4 +1,4 @@
-/** Chunk was on 50506 (a99b7c755d6deb86.js) **/
+/** Chunk was on 50506 **/
 n.d(e, {
   b: () => o
 });

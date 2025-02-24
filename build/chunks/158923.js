@@ -1,4 +1,4 @@
-/** Chunk was on 99617 (122d0aaf6d1e53b3.js) **/
+/** Chunk was on 99617 **/
 n.exports = {
   contentPadding: "contentPadding__1db97",
   title: "title__1db97",

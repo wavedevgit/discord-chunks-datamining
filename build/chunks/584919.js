@@ -1,4 +1,4 @@
-/** Chunk was on 47240 (6df86f0da340a6bb.js) **/
+/** Chunk was on 47240 **/
 e.exports = {
   clipItem: "clipItem__1d12e",
   disabled: "disabled__1d12e",

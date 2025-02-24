@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 "use strict";
 let r, i, o, a, s, l, c;
 n.d(t, {

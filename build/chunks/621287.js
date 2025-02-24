@@ -1,4 +1,4 @@
-/** Chunk was on 40580 (29804edbfa36af1f.js) **/
+/** Chunk was on 40580 **/
 var n = {
   "./bg.png": "135316",
   "./cs.png": "107217",

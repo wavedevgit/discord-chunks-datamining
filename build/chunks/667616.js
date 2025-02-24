@@ -1,4 +1,4 @@
-/** Chunk was on 3908 (1c8a74cbe09e204a.js) **/
+/** Chunk was on 3908 **/
 e.exports = {
   content: "content__4c084",
   stageIconBackground: "stageIconBackground__4c084",

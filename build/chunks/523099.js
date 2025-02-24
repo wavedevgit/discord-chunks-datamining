@@ -1,4 +1,4 @@
-/** Chunk was on 73396 (b9e28d1090aaa67c.js) **/
+/** Chunk was on 73396 **/
 n.exports = {
   card: "card__88264",
   lurking: "lurking__88264",

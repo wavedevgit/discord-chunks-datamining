@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (6f02c158d7813e32.js) **/
+/** Chunk was on 71611 **/
 e.exports = {
   messagesWrapper: "messagesWrapper__36d07",
   scrollerContent: "scrollerContent__36d07",

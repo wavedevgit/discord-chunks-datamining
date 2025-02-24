@@ -1,4 +1,4 @@
-/** Chunk was on 78718 (eea7819d3c896569.js) **/
+/** Chunk was on 78718 **/
 e.exports = {
   close: "close__8118d",
   modal: "modal__8118d",

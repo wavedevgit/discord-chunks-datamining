@@ -1,2 +1,2 @@
-/** Chunk was on 50331 (cd5814dde28c53e5.js) **/
+/** Chunk was on 50331 **/
 e.exports = {}

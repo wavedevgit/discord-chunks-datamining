@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 var r = {
   "./spritesheet--32.png": "188244",
   "./spritesheet--40.png": "40853",

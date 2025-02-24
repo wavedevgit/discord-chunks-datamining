@@ -1,4 +1,4 @@
-/** Chunk was on 86872 (daf5b29f8f9f756b.js) **/
+/** Chunk was on 86872 **/
 e.exports = {
   container: "container_fa285e",
   guildBadge: "guildBadge_fa285e",

@@ -1,4 +1,4 @@
-/** Chunk was on 21971 (24c33e148678b204.js) **/
+/** Chunk was on 21971 **/
 e.exports = {
   footer: "footer__1c948",
   content: "content__1c948",

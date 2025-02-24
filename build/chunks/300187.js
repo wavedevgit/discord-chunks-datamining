@@ -1,4 +1,4 @@
-/** Chunk was on 97292 (a8a1cc511f2135f2.js) **/
+/** Chunk was on 97292 **/
 e.exports = {
   error: "error__584e1",
   subTitle: "subTitle__584e1",

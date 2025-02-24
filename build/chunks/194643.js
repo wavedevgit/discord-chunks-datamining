@@ -1,4 +1,4 @@
-/** Chunk was on 79764 (44b5215fe97eceb1.js) **/
+/** Chunk was on 79764 **/
 e.exports = {
   header: "header__66057",
   closeButton: "closeButton__66057",

@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (c39579f01d1aedae.js) **/
+/** Chunk was on 93886 **/
 e.exports = {
   premiumIcon: "premiumIcon__9671b",
   platformIcon: "platformIcon__9671b",

@@ -1,4 +1,4 @@
-/** Chunk was on 67127 (c4ec2ce61d19db74.js) **/
+/** Chunk was on 67127 **/
 e.exports = {
   buttonContainer: "buttonContainer_eeed5f",
   message: "message_eeed5f",

@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 "use strict";
 var r, i, o, a, s = n(67867),
   l = n(414629),

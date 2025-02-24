@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 var r = n(257693);
 t.encrypt = function(e, t) {
   var n = r(t, e._prev);

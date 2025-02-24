@@ -1,4 +1,4 @@
-/** Chunk was on 79783 (b93f927a079fdfee.js) **/
+/** Chunk was on 79783 **/
 e.exports = {
   breadcrumbs: "breadcrumbs_befe67",
   breadcrumbActive: "breadcrumbActive_befe67",

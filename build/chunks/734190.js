@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
   Z: () => D
 });
@@ -22,10 +22,10 @@ var r = n(200651),
   _ = n(714794),
   O = n(876548),
   j = n(25601),
-  x = n(207055),
-  C = n(981631),
-  S = n(124368),
-  P = n(388032),
+  C = n(207055),
+  x = n(981631),
+  P = n(124368),
+  S = n(388032),
   N = n(436804),
   I = n(81503),
   Z = n(366772);
@@ -143,7 +143,7 @@ let D = i.memo(function(e) {
     mentionCount: b.ZP.getMentionCount(t.id),
     isMentionLowImportance: b.ZP.getIsMentionLowImportance(t.id)
   })), U = (0, s.e7)([f.Z], () => f.Z.isMuted(t.id)), W = i.useCallback(e => {
-    (0, g.ok)(t, !e.shiftKey, S.on.CHANNEL_LIST)
+    (0, g.ok)(t, !e.shiftKey, P.on.CHANNEL_LIST)
   }, [t]), V = i.useCallback(() => {
     u.Z.preload(t.guild_id, t.id)
   }, [t.guild_id, t.id]), F = i.useCallback(e => {
@@ -172,22 +172,22 @@ let D = i.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(z, ["role"]), Q = i.useRef(null), J = G > 0 ? P.NW.formatToPlainString(P.t["ZL7+Iy"], {
+  }(z, ["role"]), Q = i.useRef(null), K = G > 0 ? S.NW.formatToPlainString(S.t["ZL7+Iy"], {
     channelName: t.name,
     mentionCount: G
-  }) : M ? P.NW.formatToPlainString(P.t.YlVvmZ, {
+  }) : M ? S.NW.formatToPlainString(S.t.YlVvmZ, {
     channelName: t.name
-  }) : P.NW.formatToPlainString(P.t["0nZpiI"], {
+  }) : S.NW.formatToPlainString(S.t["0nZpiI"], {
     channelName: t.name
-  }), K = (0, h.Q3)("GuildSidebarThreadListEntry") ? T : A;
+  }), J = (0, h.Q3)("GuildSidebarThreadListEntry") ? T : A;
   return (0, r.jsxs)("li", {
     role: q,
     className: o()(N.containerDefault, {
       [N.selected]: l
     }),
-    children: [(0, r.jsx)(K, {
+    children: [(0, r.jsx)(J, {
       withGuildIcon: R
-    }), D ? null : (0, r.jsx)(K, {
+    }), D ? null : (0, r.jsx)(J, {
       withGuildIcon: R,
       inverted: !0,
       style: {
@@ -216,7 +216,7 @@ let D = i.memo(function(e) {
           innerRef: Q,
           className: I.link,
           onClick: W,
-          "aria-label": J,
+          "aria-label": K,
           focusProps: {
             enabled: !1
           },
@@ -240,12 +240,12 @@ let D = i.memo(function(e) {
           })
         }))]
       })
-    }), (0, r.jsx)(x.Z, {
+    }), (0, r.jsx)(C.Z, {
       channel: t,
       collapsed: !Z,
       collapsedMax: 6,
       voiceStates: L,
-      location: C.Sbl.GUILD_CHANNEL_LIST
+      location: x.Sbl.GUILD_CHANNEL_LIST
     })]
   })
 })

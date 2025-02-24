@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (001d1b875900c1de.js) **/
+/** Chunk was on 1272 **/
 e.exports = {
   categories: "categories_fe77d6",
   category: "category_fe77d6",

@@ -1,4 +1,4 @@
-/** Chunk was on 47435 (92835352d5ecf4f1.js) **/
+/** Chunk was on 47435 **/
 e.exports = {
   confrimationContainer: "confrimationContainer_daaad8",
   closeButtonContainer: "closeButtonContainer_daaad8",

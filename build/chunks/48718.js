@@ -1,4 +1,4 @@
-/** Chunk was on 97573 (65e049e0c86e2af5.js) **/
+/** Chunk was on 97573 **/
 e.exports = {
   container: "container_a429ea",
   row: "row_a429ea",

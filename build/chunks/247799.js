@@ -1,4 +1,4 @@
-/** Chunk was on 25070 (bc2239e4996a489b.js) **/
+/** Chunk was on 25070 **/
 e.exports = {
   description: "description_d9ee11",
   input: "input_d9ee11",

@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
   E: () => I,
   Z: () => Z
@@ -23,7 +23,7 @@ var r, i = n(200651),
   O = n(388032),
   j = n(707057);
 
-function x(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,19 +32,19 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
 }
-let S = {
+let P = {
   [_.vxO.INSTALLING]: {
     [f.J6.NONE]: (e, t) => O.NW.formatToPlainString(O.t["p+2sEx"], {
       name: e
@@ -97,7 +97,7 @@ let S = {
     })
   }
 };
-class P extends l.PureComponent {
+class S extends l.PureComponent {
   renderText() {
     let {
       state: e,
@@ -118,7 +118,7 @@ class P extends l.PureComponent {
     return null != e ? e : O.NW.string(O.t.cw57am)
   }
   constructor(...e) {
-    super(...e), x(this, "renderProgressBody", (e, t) => {
+    super(...e), C(this, "renderProgressBody", (e, t) => {
       let {
         state: n,
         application: r
@@ -131,7 +131,7 @@ class P extends l.PureComponent {
       if (null == l || null == o || null == i) return null;
       let s = e[e.length - 1] / t * 1e3,
         c = 0 !== s ? Math.max(1, (o - l) / s) : null,
-        u = S[a],
+        u = P[a],
         d = null != u ? Object.keys(u) : [],
         {
           unit: p,
@@ -167,7 +167,7 @@ class N extends(r = l.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? O.NW.string(O.t.cw57am) : (0, i.jsx)(P, {
+    return null == e || null == t ? O.NW.string(O.t.cw57am) : (0, i.jsx)(S, {
       application: e,
       state: t,
       isPaused: n
@@ -193,7 +193,7 @@ class N extends(r = l.PureComponent) {
         "aria-label": !1,
         children: n => {
           var r, l;
-          return (0, i.jsx)("div", (r = C({}, n), l = l = {
+          return (0, i.jsx)("div", (r = x({}, n), l = l = {
             children: (0, i.jsx)(p._3P, {
               percent: e,
               colorOverride: t ? u.Z.unsafe_rawColors.PRIMARY_500.css : null,
@@ -218,9 +218,9 @@ class N extends(r = l.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "state", {
+    super(...e), C(this, "state", {
       animationScale: new s.Z.Value(0)
-    }), x(this, "handleOnClick", e => {
+    }), C(this, "handleOnClick", e => {
       let {
         onClick: t
       } = this.props;
@@ -238,7 +238,7 @@ function I(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-x(N, "defaultProps", {
+C(N, "defaultProps", {
   strokeSize: p._3P.StrokeSizes.MEDIUM
 });
 let Z = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
@@ -274,6 +274,6 @@ let Z = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(N, C({}, n)) : null
-  }) : (0, i.jsx)(N, C({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(N, x({}, n)) : null
+  }) : (0, i.jsx)(N, x({}, n))
 })

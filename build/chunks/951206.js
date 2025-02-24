@@ -1,4 +1,4 @@
-/** Chunk was on 17024 (e8c120d202886a30.js) **/
+/** Chunk was on 17024 **/
 n.d(t, {
   F: () => _
 });

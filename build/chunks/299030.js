@@ -1,4 +1,4 @@
-/** Chunk was on 80404 (1aeaea4203dc8729.js) **/
+/** Chunk was on 80404 **/
 e.exports = {
   modalHeader: "modalHeader_da1bc3",
   subtitle: "subtitle_da1bc3",

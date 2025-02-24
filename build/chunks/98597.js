@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
   CN: () => I,
   ZP: () => D,
@@ -25,10 +25,10 @@ var r, i = n(200651),
   _ = n(914010),
   O = n(281029),
   j = n(981631),
-  x = n(388032),
-  C = n(436804);
+  C = n(388032),
+  x = n(436804);
 
-function S(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,14 +37,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -68,7 +68,7 @@ function I(e, t, n) {
 }
 
 function Z(e, t) {
-  return null == t ? C.containerDefault : e > t ? C.containerDragAfter : C.containerDragBefore
+  return null == t ? x.containerDefault : e > t ? x.containerDragAfter : x.containerDragBefore
 }
 
 function w(e) {
@@ -85,7 +85,7 @@ function w(e) {
     u.ZP.open(t.id)
   }
   return (0, i.jsx)(c.ua7, {
-    text: x.NW.string(x.t["3gUsJS"]),
+    text: C.NW.string(C.t["3gUsJS"]),
     children: e => {
       let {
         onMouseEnter: t,
@@ -94,10 +94,10 @@ function w(e) {
         onBlur: u
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: a()(C.iconItem, l ? C.alwaysShown : void 0, o ? C.iconWithChannelInfo : C.iconNoChannelInfo),
+        className: a()(x.iconItem, l ? x.alwaysShown : void 0, o ? x.iconWithChannelInfo : x.iconNoChannelInfo),
         onClick: d,
         tabIndex: r,
-        "aria-label": x.NW.string(x.t["3gUsJS"]),
+        "aria-label": C.NW.string(C.t["3gUsJS"]),
         onMouseEnter: t,
         onMouseLeave: n,
         onFocus: s,
@@ -105,7 +105,7 @@ function w(e) {
         children: (0, i.jsx)(c.ewm, {
           size: "xs",
           color: "currentColor",
-          className: C.actionIcon
+          className: x.actionIcon
         })
       })
     }
@@ -120,8 +120,8 @@ function E(e) {
     tabIndex: o,
     forceShowButtons: u,
     hasChannelInfo: h = !1
-  } = e, m = (0, s.e7)([v.Z], () => v.Z.getGuild(t.getGuildId())), _ = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), O = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), S = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, m, t, _)), I = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? x.NW.string(x.t.zJrgTE) : x.NW.string(x.t.Sd8Ix8));
-  if (l || !S) return null;
+  } = e, m = (0, s.e7)([v.Z], () => v.Z.getGuild(t.getGuildId())), _ = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), O = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), P = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, m, t, _)), I = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? C.NW.string(C.t.zJrgTE) : C.NW.string(C.t.Sd8Ix8));
+  if (l || !P) return null;
 
   function Z() {
     if (null != m) {
@@ -130,7 +130,7 @@ function E(e) {
         let {
           default: r
         } = await Promise.all([n.e("7654"), n.e("33781")]).then(n.bind(n, 560114));
-        return n => (0, i.jsx)(r, N(P({}, n), {
+        return n => (0, i.jsx)(r, N(S({}, n), {
           guild: m,
           channel: t,
           streamUserId: 1 === e.length ? e[0].ownerId : null,
@@ -142,7 +142,7 @@ function E(e) {
   }
   let w = (0, i.jsx)(c.ejJ, {
     size: "xs",
-    className: C.actionIcon,
+    className: x.actionIcon,
     "aria-hidden": !0,
     color: "currentColor"
   });
@@ -154,8 +154,8 @@ function E(e) {
     })
   })), (0, i.jsx)(c.ua7, {
     text: I,
-    children: e => (0, i.jsx)(c.P3F, N(P({
-      className: a()(C.iconItem, u ? C.alwaysShown : void 0, h ? C.iconWithChannelInfo : C.iconNoChannelInfo)
+    children: e => (0, i.jsx)(c.P3F, N(S({
+      className: a()(x.iconItem, u ? x.alwaysShown : void 0, h ? x.iconWithChannelInfo : x.iconNoChannelInfo)
     }, e), {
       onClick: Z,
       tabIndex: o,
@@ -172,16 +172,16 @@ function T(e) {
     (0, h._U)(t.guild_id, t.id)
   };
   return (0, i.jsx)(c.ua7, {
-    text: x.NW.string(x.t.ROh4T0),
-    children: e => (0, i.jsx)(c.P3F, N(P({
-      className: C.iconItem
+    text: C.NW.string(C.t.ROh4T0),
+    children: e => (0, i.jsx)(c.P3F, N(S({
+      className: x.iconItem
     }, e), {
       onClick: n,
-      "aria-label": x.NW.string(x.t.ROh4T0),
+      "aria-label": C.NW.string(C.t.ROh4T0),
       children: (0, i.jsx)(c.Dio, {
         size: "xs",
         color: "currentColor",
-        className: C.actionIcon
+        className: x.actionIcon
       })
     }))
   })
@@ -196,32 +196,32 @@ function A(e) {
     })
   };
   return (0, i.jsx)(c.ua7, {
-    text: x.NW.string(x.t["N2c/Ul"]),
-    children: e => (0, i.jsx)(c.P3F, N(P({
-      className: C.iconItem
+    text: C.NW.string(C.t["N2c/Ul"]),
+    children: e => (0, i.jsx)(c.P3F, N(S({
+      className: x.iconItem
     }, e), {
       onClick: n,
-      "aria-label": x.NW.string(x.t["N2c/Ul"]),
+      "aria-label": C.NW.string(C.t["N2c/Ul"]),
       children: (0, i.jsx)(c.dz2, {
         size: "xs",
         color: "currentColor",
-        className: C.actionIcon
+        className: x.actionIcon
       })
     }))
   })
 }
 class D extends(r = l.PureComponent) {
   renderEditButton() {
-    return (0, i.jsx)(w, P({}, this.props))
+    return (0, i.jsx)(w, S({}, this.props))
   }
   renderInviteButton() {
-    return (0, i.jsx)(E, P({}, this.props))
+    return (0, i.jsx)(E, S({}, this.props))
   }
   renderRemoveSuggestionButton() {
-    return (0, i.jsx)(T, P({}, this.props))
+    return (0, i.jsx)(T, S({}, this.props))
   }
   renderAcceptSuggestionButton() {
-    return (0, i.jsx)(A, P({}, this.props))
+    return (0, i.jsx)(A, S({}, this.props))
   }
   getClassName() {
     let {
@@ -239,6 +239,6 @@ class D extends(r = l.PureComponent) {
     return I(e, t, n)
   }
 }
-S(D, "defaultProps", {
+P(D, "defaultProps", {
   isDefaultChannel: !1
 })

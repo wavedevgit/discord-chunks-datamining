@@ -1,4 +1,4 @@
-/** Chunk was on 26812 (fa1ee2864cbf120e.js) **/
+/** Chunk was on 26812 **/
 e.exports = {
   modalRoot: "modalRoot__1d6c7",
   sidebarContainer: "sidebarContainer__1d6c7",

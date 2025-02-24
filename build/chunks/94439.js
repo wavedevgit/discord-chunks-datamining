@@ -1,4 +1,4 @@
-/** Chunk was on 9924 (bb00f90c16650736.js) **/
+/** Chunk was on 9924 **/
 e.exports = {
   table: "table_ce03f4",
   headerCell: "headerCell_ce03f4",

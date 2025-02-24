@@ -1,4 +1,4 @@
-/** Chunk was on 3940 (169ea6e5f7a69f6e.js) **/
+/** Chunk was on 3940 **/
 n.d(e, {
   A: () => E
 });

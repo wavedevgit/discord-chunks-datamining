@@ -1,4 +1,4 @@
-/** Chunk was on 94949 (7395fc8cea1c28c0.js) **/
+/** Chunk was on 94949 **/
 e.exports = {
   animationContainer: "animationContainer__884d1",
   container: "container__884d1",

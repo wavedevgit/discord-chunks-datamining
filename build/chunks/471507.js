@@ -1,4 +1,4 @@
-/** Chunk was on 67127 (c4ec2ce61d19db74.js) **/
+/** Chunk was on 67127 **/
 e.exports = {
   verifyConnectedAccount: "verifyConnectedAccount_fb52a4",
   logos: "logos_fb52a4",

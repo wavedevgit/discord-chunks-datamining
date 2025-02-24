@@ -1,4 +1,4 @@
-/** Chunk was on 73217 (4bc49ef68cd99f8f.js) **/
+/** Chunk was on 73217 **/
 e.exports = {
   subtitleContainer: "subtitleContainer__8dbfd",
   winnerImage: "winnerImage__8dbfd",

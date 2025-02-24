@@ -1,4 +1,4 @@
-/** Chunk was on 9335 (2f9f6ec633dcc68a.js) **/
+/** Chunk was on 9335 **/
 e.exports = {
   channelInfo: "channelInfo__68fc0",
   speakerIcon: "speakerIcon__68fc0",

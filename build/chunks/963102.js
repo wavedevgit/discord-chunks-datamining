@@ -1,13 +1,13 @@
-/** Chunk was on 45620 (eb98f0baf40470d3.js) **/
+/** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  I: () => j
+  I: () => _
 }), r(653041);
 var n = r(200651),
-  l = r(192379),
-  i = r(120356),
-  a = r.n(i),
-  o = r(442837),
+  i = r(192379),
+  l = r(120356),
+  o = r.n(l),
+  a = r(442837),
   s = r(481060),
   c = r(425493),
   d = r(410030),
@@ -15,74 +15,74 @@ var n = r(200651),
   p = r(341907),
   f = r(822857),
   h = r(775451),
-  C = r(594174),
-  m = r(471731),
-  b = r(335131),
+  b = r(594174),
+  C = r(471731),
+  m = r(335131),
   g = r(215023),
   v = r(388032),
   x = r(470602);
 
-function _(e) {
+function j(e) {
   let {
     tab: t,
     displayText: r,
-    selected: l,
-    handleTransition: i
+    selected: i,
+    handleTransition: l
   } = e;
   return (0, n.jsx)(u.Z.Title, {
-    onClick: () => i(t),
+    onClick: () => l(t),
     wrapperClassName: x.tabWrapper,
-    className: a()(x.tab, {
-      [x.selected]: l
+    className: o()(x.tab, {
+      [x.selected]: i
     }),
     children: r
   })
 }
 
-function j(e) {
+function _(e) {
   let {
     isFullScreen: t,
     isLayer: r,
-    onClose: i,
-    selectedTab: j,
+    onClose: l,
+    selectedTab: _,
     handleTransition: y
-  } = e, O = (0, d.ZP)(), k = (0, o.e7)([C.default], () => C.default.getCurrentUser()), P = (null == k ? void 0 : k.isStaff()) || (null == k ? void 0 : k.isStaffPersonal()) || !1, {
+  } = e, O = (0, d.ZP)(), k = (0, a.e7)([b.default], () => b.default.getCurrentUser()), P = (null == k ? void 0 : k.isStaff()) || (null == k ? void 0 : k.isStaffPersonal()) || !1, {
     enabled: S
   } = (0, f.W)({
     location: "collectibles_shop_header_bar"
-  }), E = [{
+  }), w = [{
     tab: g.AW.HOME,
     displayText: v.NW.string(v.t.ijDDw8)
   }, {
     tab: g.AW.CATALOG,
     displayText: v.NW.string(v.t.xFcotb)
   }];
-  return S && E.push({
+  return S && w.push({
     tab: g.AW.ORBS,
     displayText: v.NW.string(v.t.q6uIys)
   }), (0, n.jsx)(s.f6W, {
     theme: O,
     children: e => (0, n.jsxs)(u.Z, {
-      className: a()(e, x.headerBar, {
+      className: o()(e, x.headerBar, {
         [x.fullscreenHeaderBar]: t
       }),
       innerClassname: S ? x.headerBarInner : void 0,
-      toolbar: t || !P ? null : (0, n.jsx)(l.Fragment, {}),
-      children: [(0, n.jsx)(m.Z, {
+      toolbar: t || !P ? null : (0, n.jsx)(i.Fragment, {}),
+      children: [(0, n.jsx)(C.Z, {
         className: x.discordLogo
       }), (0, n.jsx)(u.Z.Title, {
         children: v.NW.string(v.t.pWG4zc)
       }), (0, n.jsx)("div", {
         className: x.tabs,
-        children: E.map(e => {
+        children: w.map(e => {
           let {
             tab: t,
             displayText: r
           } = e;
-          return (0, n.jsx)(_, {
+          return (0, n.jsx)(j, {
             tab: t,
             displayText: r,
-            selected: j === t,
+            selected: _ === t,
             handleTransition: y
           }, t)
         })
@@ -94,7 +94,7 @@ function j(e) {
           ctaText: v.NW.string(v.t["H57f4+"]),
           ctaOnClick: () => (0, p.navigateToQuestHome)()
         }), t && (0, n.jsx)(c.Z, {
-          closeAction: r ? b.DR : i,
+          closeAction: r ? m.DR : l,
           keybind: "ESC"
         })]
       })]

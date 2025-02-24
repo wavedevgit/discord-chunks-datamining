@@ -1,4 +1,4 @@
-/** Chunk was on 83264 (b448e7c18a6db3bc.js) **/
+/** Chunk was on 83264 **/
 e.exports = {
   outerContentWrapper: "outerContentWrapper__91747",
   innerContentWrapper: "innerContentWrapper__91747",

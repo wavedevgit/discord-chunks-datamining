@@ -1,4 +1,4 @@
-/** Chunk was on 97811 (d795d77fb4299013.js) **/
+/** Chunk was on 97811 **/
 e.exports = {
   content: "content__2d2fa",
   listControls: "listControls__2d2fa",

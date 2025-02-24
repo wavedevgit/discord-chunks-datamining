@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 e.exports = {
   iconRow: "iconRow_a653e3",
   icon: "icon_a653e3",

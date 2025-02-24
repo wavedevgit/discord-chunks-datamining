@@ -1,4 +1,4 @@
-/** Chunk was on 73049 (5df71b25786cf661.js) **/
+/** Chunk was on 73049 **/
 e.exports = {
   scroller: "scroller_ac477d"
 }

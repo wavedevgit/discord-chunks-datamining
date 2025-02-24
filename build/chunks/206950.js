@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (6f02c158d7813e32.js) **/
+/** Chunk was on 71611 **/
 e.exports = {
   activityItemButtonInnerClass: "activityItemButtonInnerClass__8a940",
   activityItem: "activityItem__8a940",

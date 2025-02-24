@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (6f02c158d7813e32.js) **/
+/** Chunk was on 71611 **/
 e.exports = {
   cell: "cell_f70307",
   iconContainer: "iconContainer_f70307",

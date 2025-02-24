@@ -1,4 +1,4 @@
-/** Chunk was on 263 (eb10115daf9482e0.js) **/
+/** Chunk was on 263 **/
 e.exports = {
   modalContent: "modalContent_ae1425",
   root: "root_ae1425",

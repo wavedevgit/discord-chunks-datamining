@@ -1,4 +1,4 @@
-/** Chunk was on 39369 (2df8849bbd5536ba.js) **/
+/** Chunk was on 39369 **/
 e.exports = {
   root: "root__4325e",
   banner: "banner__4325e",

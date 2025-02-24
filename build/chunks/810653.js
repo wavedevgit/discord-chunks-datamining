@@ -1,4 +1,4 @@
-/** Chunk was on 78226 (be06091776028b1c.js) **/
+/** Chunk was on 78226 **/
 e.exports = {
   rewardsDisclosures: "rewardsDisclosures__311b6",
   rewardsDisclosuresStack: "rewardsDisclosuresStack__311b6",

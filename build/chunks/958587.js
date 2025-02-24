@@ -1,4 +1,4 @@
-/** Chunk was on 77875 (47cd5089815da6be.js) **/
+/** Chunk was on 77875 **/
 t.exports = {
   animation: "animation_d123a6",
   modalContent: "modalContent_d123a6",

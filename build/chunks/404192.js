@@ -1,4 +1,4 @@
-/** Chunk was on 67376 (70f373de4c749bd9.js) **/
+/** Chunk was on 67376 **/
 e.exports = {
   modal: "modal__657c0",
   close: "close__657c0",

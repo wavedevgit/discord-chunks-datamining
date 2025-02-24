@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (001d1b875900c1de.js) **/
+/** Chunk was on 1272 **/
 e.exports = {
   scroller: "scroller__68617",
   voiceUsers: "voiceUsers__68617",

@@ -1,4 +1,4 @@
-/** Chunk was on 88938 (5def86b935f19373.js) **/
+/** Chunk was on 88938 **/
 e.exports = {
   rootContainer: "rootContainer_dd04e8",
   rootContainerLoading: "rootContainerLoading_dd04e8",

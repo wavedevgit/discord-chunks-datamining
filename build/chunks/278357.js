@@ -1,4 +1,4 @@
-/** Chunk was on 88806 (5ca26bacc3448a8c.js) **/
+/** Chunk was on 88806 **/
 e.exports = {
   headerImage: "headerImage__96095",
   header: "header__96095",

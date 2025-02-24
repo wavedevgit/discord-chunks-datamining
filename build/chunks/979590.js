@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/ ! function(t) {
+/** Chunk was on web.js **/ ! function(t) {
   var n = /^\s+/,
     r = /\s+$/,
     i = 0,

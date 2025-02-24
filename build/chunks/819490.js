@@ -1,7 +1,7 @@
-/** Chunk was on 45620 (eb98f0baf40470d3.js) **/
+/** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  B: () => l
+  B: () => i
 });
 let n = (0, r(818083).B)({
     kind: "user",
@@ -18,6 +18,6 @@ let n = (0, r(818083).B)({
       }
     }]
   }),
-  l = e => n.useExperiment({
+  i = e => n.useExperiment({
     location: e
   }).enabled

@@ -1,4 +1,4 @@
-/** Chunk was on 41941 (2e372bdaa3f2a7b1.js) **/
+/** Chunk was on 41941 **/
 e.exports = {
   header: "header__9f397",
   channelPrompt: "channelPrompt__9f397",

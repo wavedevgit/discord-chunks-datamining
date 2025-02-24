@@ -1,6 +1,6 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
-  Z: () => P
+  Z: () => S
 }), n(411104), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -43,12 +43,12 @@ function j(e) {
   return e
 }
 
-function x(e, t) {
+function C(e, t) {
   let n = t.getGuildId();
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
   s.Z.preload(n, t.id)
 }
-class C extends m.ZP {
+class x extends m.ZP {
   render() {
     let {
       channel: e,
@@ -67,7 +67,7 @@ class C extends m.ZP {
         channel: e,
         selected: t,
         onClick: this.handleClick,
-        onMouseDown: x,
+        onMouseDown: C,
         onContextMenu: this.handleContextMenu,
         connectDragPreview: a ? l : null,
         "aria-label": (0, d.ZP)({
@@ -122,8 +122,8 @@ class C extends m.ZP {
     })
   }
 }
-let S = (0, u.B)(C),
-  P = i.memo(function(e) {
+let P = (0, u.B)(x),
+  S = i.memo(function(e) {
     let {
       channel: t,
       guild: n,
@@ -135,5 +135,5 @@ let S = (0, u.B)(C),
         canReorderChannel: !0 !== i && null != e ? g.Z.can(v.Plq.MANAGE_CHANNELS, e) : g.Z.can(v.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(S, j({}, l, e))
+    return (0, r.jsx)(P, j({}, l, e))
   })

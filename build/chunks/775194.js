@@ -1,4 +1,4 @@
-/** Chunk was on 80960 (b0ceed6dc6299b2b.js) **/
+/** Chunk was on 80960 **/
 r.d(t, {
   Z: () => p
 }), r(230036), r(653041), r(47120);

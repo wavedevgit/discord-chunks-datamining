@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 var r = {
   "./source-code-pro/sourcecodepro-700-bold.woff2": ["711313"],
   "./gg-mono/ggmono-600-semibold.woff2": ["750499", "44999"],

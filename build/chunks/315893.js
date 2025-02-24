@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 var r = e.exports = function(e) {
   var t = r[e = e.toLowerCase()];
   if (!t) throw Error(e + " is not supported (we accept pull requests)");

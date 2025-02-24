@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 function t(e) {
   let t = {
       keyword: "if then not for in while do return else elseif break continue switch and or unless when class extends super local import export from using",

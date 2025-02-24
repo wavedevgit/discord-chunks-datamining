@@ -1,4 +1,4 @@
-/** Chunk was on 79783 (b93f927a079fdfee.js) **/
+/** Chunk was on 79783 **/
 e.exports = {
   divider: "divider__98b95",
   sectionHeader: "sectionHeader__98b95",

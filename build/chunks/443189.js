@@ -1,4 +1,4 @@
-/** Chunk was on 6074 (368b2d20b07d00ba.js) **/
+/** Chunk was on 6074 **/
 a.d(t, {
   default: () => h
 });

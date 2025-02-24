@@ -1,4 +1,4 @@
-/** Chunk was on 75347 (dbb8f43488fa5a21.js) **/
+/** Chunk was on 75347 **/
 "use strict";
 e.exports = {
   avatarBackground: "avatarBackground_eb2508",

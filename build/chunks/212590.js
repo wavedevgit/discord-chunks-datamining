@@ -1,4 +1,4 @@
-/** Chunk was on 44799 (d8fb5aa27239cf1c.js) **/
+/** Chunk was on 44799 **/
 e.exports = {
   textContainer: "textContainer_df65b5",
   iconContainer: "iconContainer_df65b5",

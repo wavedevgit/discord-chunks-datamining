@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 let r = n(868667),
   i = (e, t) => {
     let n = r(e.trim().replace(/^[=v]+/, ""), t);

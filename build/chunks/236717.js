@@ -1,4 +1,4 @@
-/** Chunk was on 73396 (b9e28d1090aaa67c.js) **/
+/** Chunk was on 73396 **/
 n.exports = {
   recurrences: "recurrences__4fb8c",
   heading: "heading__4fb8c",

@@ -1,4 +1,4 @@
-/** Chunk was on 48923 (05423627440510f9.js) **/
+/** Chunk was on 48923 **/
 n.d(t, {
   P: () => B,
   Z: () => R
@@ -86,7 +86,7 @@ function B(e) {
   }), R = (0, y.qN)({
     quest: s,
     location: S.dr.QUESTS_BAR
-  }), k = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, l.e7)([p.Z], () => p.Z.hasLayers()), D = o.useRef(null), I = o.useMemo(() => (0, x.q8)(s), [s]), W = (null === (t = s.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null, M = (0, d.Z)(W), L = (null === (n = s.userStatus) || void 0 === n ? void 0 : n.completedAt) != null, Z = (0, d.Z)(L), {
+  }), k = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, l.e7)([p.Z], () => p.Z.hasLayers()), D = o.useRef(null), W = o.useMemo(() => (0, x.q8)(s), [s]), I = (null === (t = s.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null, M = (0, d.Z)(I), L = (null === (n = s.userStatus) || void 0 === n ? void 0 : n.completedAt) != null, Z = (0, d.Z)(L), {
     hasError: V,
     isLoading: Q
   } = (0, v.d7)(), U = o.useContext(w.T) || B && R && !Q, H = o.useRef(U), z = (0, O.B)(s, U && !V), F = o.useRef(-1), X = o.useRef(!1), [K, Y] = o.useState(!1), [G, J] = o.useState(!1), [$, ee] = o.useState(!0), [et, en] = o.useState(!0), [er, eo] = o.useState(z.preEnrollmentExpandedHeight), es = o.useRef(null), ea = o.useCallback(e => {
@@ -137,13 +137,13 @@ function B(e) {
   o.useLayoutEffect(() => {
     L && z.shouldExpandOnQuestComplete && el()
   }, [el, L, z.shouldExpandOnQuestComplete]), o.useLayoutEffect(() => {
-    W && !M && X.current && el()
-  }, [el, W, M]), o.useLayoutEffect(() => {
-    L || !W || M || X.current || ea(!1)
-  }, [W, L, M, ea]), o.useLayoutEffect(() => {
+    I && !M && X.current && el()
+  }, [el, I, M]), o.useLayoutEffect(() => {
+    L || !I || M || X.current || ea(!1)
+  }, [I, L, M, ea]), o.useLayoutEffect(() => {
     U !== H.current && en(!1), H.current = U
   }, [U]);
-  let eh = W ? S.XZ : S.R4,
+  let eh = I ? S.XZ : S.R4,
     [{
       expansionSpring: eb
     }, ej] = (0, c.q_F)(() => ({
@@ -186,8 +186,8 @@ function B(e) {
     }
   });
   return (o.useEffect(() => {
-    I && (0, _.loadVideoQuestModal)()
-  }, [I]), o.useLayoutEffect(() => {
+    W && (0, _.loadVideoQuestModal)()
+  }, [W]), o.useLayoutEffect(() => {
     L && !Z && z.canCollapseOnBlur && ei()
   }, [L, el, z.canCollapseOnBlur, ei, Z]), o.useEffect(() => {
     var e, t;
@@ -237,11 +237,11 @@ function B(e) {
           children: (0, r.jsx)(i.animated.div, {
             className: a()(N.contentWrapper, {
               [N.contentWrapperExpanded]: G,
-              [N.contentWrapperAccepted]: W
+              [N.contentWrapperAccepted]: I
             }),
             style: {
               backgroundColor: z.preEnrollmentBackgroundColor,
-              backgroundImage: W ? z.postEnrollmentBackgroundImage : void 0
+              backgroundImage: I ? z.postEnrollmentBackgroundImage : void 0
             },
             children: (0, r.jsx)(C.t, {
               springConfig: eh,

@@ -1,4 +1,4 @@
-/** Chunk was on 74824 (2535eaf4600431d2.js) **/
+/** Chunk was on 74824 **/
 e.exports = {
   title: "title_fb71d6",
   modalContent: "modalContent_fb71d6",

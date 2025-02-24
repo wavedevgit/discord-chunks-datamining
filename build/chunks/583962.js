@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
   PD: () => A,
   ZP: () => L,
@@ -24,10 +24,10 @@ var r = n(200651),
   _ = n(267642),
   O = n(624138),
   j = n(667815),
-  x = n(531572),
-  C = n(26323),
-  S = n(30513),
-  P = n(981631),
+  C = n(531572),
+  x = n(26323),
+  P = n(30513),
+  S = n(981631),
   N = n(388032),
   I = n(331972);
 
@@ -67,7 +67,7 @@ let E = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     let {
       guild: t,
       onSelect: n
-    } = e, [l, o] = i.useState(t.premiumProgressBarEnabled), [a, s] = i.useState(!1), u = (0, c.e7)([v.Z], () => v.Z.can(P.Plq.MANAGE_GUILD, t)), h = async () => {
+    } = e, [l, o] = i.useState(t.premiumProgressBarEnabled), [a, s] = i.useState(!1), u = (0, c.e7)([v.Z], () => v.Z.can(S.Plq.MANAGE_GUILD, t)), h = async () => {
       u && (s(!0), await b.Z.saveGuild(t.id, {
         premiumProgressBarEnabled: !l
       }), o(!l), s(!1))
@@ -101,10 +101,10 @@ let E = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     } = (0, g.ZP)(h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), {
       premiumSubscriberCount: b,
       id: O
-    } = t, E = (0, _.rF)(b, O), A = (0, _.FZ)(E, t.id), D = null == A, L = null != A ? A : E, k = (0, c.e7)([x.Z], () => {
+    } = t, E = (0, _.rF)(b, O), A = (0, _.FZ)(E, t.id), D = null == A, L = null != A ? A : E, k = (0, c.e7)([C.Z], () => {
       var e;
-      return null !== (e = x.Z.getCountForGuild(O)) && void 0 !== e ? e : 0
-    }), M = (0, c.e7)([v.Z], () => v.Z.can(P.Plq.MANAGE_GUILD, t));
+      return null !== (e = C.Z.getCountForGuild(O)) && void 0 !== e ? e : 0
+    }), M = (0, c.e7)([v.Z], () => v.Z.can(S.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
       k !== b && (0, j.v)(O, b)
     }, [O, k, b]);
@@ -123,21 +123,21 @@ let E = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
       },
       [W, V] = (0, d.q_F)(() => U),
       F = () => {
-        (0, f.yw)(P.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+        (0, f.yw)(S.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
           location: {
-            section: P.jXE.PREMIUM_GUILD_PROGRESS_BAR
+            section: S.jXE.PREMIUM_GUILD_PROGRESS_BAR
           },
           guild_id: O,
           location_stack: u
-        }), (0, C.Z)({
+        }), (0, x.Z)({
           analyticsLocations: u,
           analyticsSourceLocation: {
-            page: P.ZY5.GUILD_CHANNEL,
-            section: P.jXE.PREMIUM_GUILD_PROGRESS_BAR,
-            object: P.qAy.TOOLTIP
+            page: S.ZY5.GUILD_CHANNEL,
+            section: S.jXE.PREMIUM_GUILD_PROGRESS_BAR,
+            object: S.qAy.TOOLTIP
           },
           guild: t,
-          perks: (0, S.VF)(),
+          perks: (0, P.VF)(),
           perkIntro: N.NW.string(N.t.ZhvSn5)
         })
       },

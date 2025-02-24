@@ -1,4 +1,4 @@
-/** Chunk was on 78083 (842deca94358553b.js) **/
+/** Chunk was on 78083 **/
 e.exports = {
   row: "row__5fe04",
   clickable: "clickable__5fe04",

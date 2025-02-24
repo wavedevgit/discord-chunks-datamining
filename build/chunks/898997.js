@@ -1,4 +1,4 @@
-/** Chunk was on 56627 (40b4d129d5695ad7.js) **/
+/** Chunk was on 56627 **/
 e.exports = {
   cont: "cont__370d1",
   hitboxArea: "hitboxArea__370d1",

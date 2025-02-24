@@ -1,4 +1,4 @@
-/** Chunk was on 72891 (727d2ac86f713c3c.js) **/
+/** Chunk was on 72891 **/
 i.d(n, {
   c: () => f
 });

@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
   J: () => O,
   y: () => _
@@ -27,10 +27,10 @@ function _(e, t, n) {
 let O = i.memo(function(e) {
   let t, l, u, O, {
       stream: j,
-      canGoLive: x,
-      guildId: C,
-      isStreaming: S,
-      channel: P,
+      canGoLive: C,
+      guildId: x,
+      isStreaming: P,
+      channel: S,
       canStream: N,
       runningGame: I,
       embeddedActivity: Z,
@@ -57,8 +57,8 @@ let O = i.memo(function(e) {
       (0, h.Z)(j)
     }, [j]),
     k = i.useCallback(() => {
-      let e = null != P && (0, f.vd)(P.type) ? P : null,
-        t = null != e ? e.getGuildId() : C;
+      let e = null != S && (0, f.vd)(S.type) ? S : null,
+        t = null != e ? e.getGuildId() : x;
       (0, a.ZDy)(async () => {
         let {
           default: e
@@ -98,10 +98,10 @@ let O = i.memo(function(e) {
           }), i))
         }
       })
-    }, [P, C]),
-    M = (null != I || null == Z || (0, c.R)()) && (S || x) ? (S ? (t = !1, l = L, u = a.g5r, O = v.NW.string(v.t.S5anIS)) : N ? (t = !1, l = k, u = a.hGI, O = null != I ? v.NW.formatToPlainString(v.t.AB5gT0, {
+    }, [S, x]),
+    M = (null != I || null == Z || (0, c.R)()) && (P || C) ? (P ? (t = !1, l = L, u = a.g5r, O = v.NW.string(v.t.S5anIS)) : N ? (t = !1, l = k, u = a.hGI, O = null != I ? v.NW.formatToPlainString(v.t.AB5gT0, {
       game: I.name
-    }) : v.NW.string(v.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, O = null != P && (0, f.vd)(P.type) ? v.NW.string(v.t.uQn9Bw) : null != C ? v.NW.string(v.t.fBXEoK) : v.NW.string(v.t.n3feND)), (0, r.jsx)("div", {
+    }) : v.NW.string(v.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, O = null != S && (0, f.vd)(S.type) ? v.NW.string(v.t.uQn9Bw) : null != x ? v.NW.string(v.t.fBXEoK) : v.NW.string(v.t.n3feND)), (0, r.jsx)("div", {
       className: y.panelButtonContainer,
       children: (0, r.jsx)(m.Z, {
         tooltipText: O,
@@ -115,7 +115,7 @@ let O = i.memo(function(e) {
       onClick: D,
       icon: a.ejJ
     }) : null,
-    B = null == Z || null == P ? null : (0, r.jsx)(m.Z, {
+    B = null == Z || null == S ? null : (0, r.jsx)(m.Z, {
       tooltipText: v.NW.string(v.t["R/FK4O"]),
       onClick: R(Z.applicationId, Z.location),
       icon: a.PBZ

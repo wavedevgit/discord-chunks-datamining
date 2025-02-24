@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 function t(e) {
   let t = "(_?[ui](8|16|32|64|128))?",
     n = "(_?f(32|64))?",

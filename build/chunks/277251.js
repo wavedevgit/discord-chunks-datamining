@@ -1,4 +1,4 @@
-/** Chunk was on 6850 (8da95b630813dff8.js) **/
+/** Chunk was on 6850 **/
 e.exports = {
   searchContainer: "searchContainer__6ae25",
   searchBox: "searchBox__6ae25",

@@ -1,4 +1,4 @@
-/** Chunk was on 46398 (b004163f3e28de53.js) **/
+/** Chunk was on 46398 **/
 t.exports = {
   fullArt: "fullArt_a1a33b",
   header: "header_a1a33b",

@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (6f02c158d7813e32.js) **/
+/** Chunk was on 71611 **/
 n.d(t, {
   O: () => u
 });
@@ -42,17 +42,18 @@ function u(e) {
   } = (0, o.ZP)({
     location: "StreamButton"
   }), {
-    squareButtons: y
+    squareButtons: y,
+    coloredIcons: x
   } = (0, a.Z)({
     location: "StreamButton"
-  }), x = h ? s.d : s.Z;
+  }), j = h ? s.d : s.Z;
   t = d ? p ? c.NW.string(c.t.S5anIS) : c.NW.string(c.t.q3O3Jy) : u ? c.NW.string(c.t.fjBNo6) : c.NW.string(c.t.uQn9Bw);
   let {
-    Component: j,
-    events: O,
-    play: N
+    Component: O,
+    events: N,
+    play: E
   } = (0, l.P)(d ? "disable" : "enable");
-  return i.useEffect(() => () => N(), [d, N]), (0, r.jsx)(x, function(e) {
+  return i.useEffect(() => () => E(), [d, E]), (0, r.jsx)(j, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -73,15 +74,15 @@ function u(e) {
     buttonRef: _,
     label: t,
     disabled: !u,
-    iconComponent: j,
+    iconComponent: O,
     isActive: d,
     color: (b ? n = "premiumGradient" : (y || v === o.BK.GroupedButtonsRedMic) && d && (n = "green"), n),
-    caretColor: "primaryDark",
+    caretColor: x ? "green" : "primaryDark",
     onMouseEnter: e => {
-      null == f || f(e), O.onMouseEnter()
+      null == f || f(e), N.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == m || m(e), O.onMouseLeave()
+      null == m || m(e), N.onMouseLeave()
     },
     premiumGlow: g
   }, C))

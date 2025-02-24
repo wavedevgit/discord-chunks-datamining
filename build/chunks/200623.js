@@ -1,4 +1,4 @@
-/** Chunk was on 522 (79395f7741b17977.js) **/
+/** Chunk was on 522 **/
 t.d(r, {
   default: () => h
 });

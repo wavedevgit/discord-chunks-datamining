@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 t.encrypt = function(e, t) {
   return e._cipher.encryptBlock(t)
 }, t.decrypt = function(e, t) {

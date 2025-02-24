@@ -1,4 +1,4 @@
-/** Chunk was on 226 (61395df0b59aef3d.js) **/
+/** Chunk was on 226 **/
 t.exports = {
   error: "error__6e36d"
 }

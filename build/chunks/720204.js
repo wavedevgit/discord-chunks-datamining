@@ -1,4 +1,4 @@
-/** Chunk was on 9766 (87890f0986da3bfe.js) **/
+/** Chunk was on 9766 **/
 e.exports = {
   closeButton: "closeButton_b1292a",
   content: "content_b1292a",

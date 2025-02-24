@@ -1,4 +1,4 @@
-/** Chunk was on 66951 (e0826cd7060b6f61.js) **/
+/** Chunk was on 66951 **/
 e.exports = {
   content: "content__2cbe8",
   guildCard: "guildCard__2cbe8",

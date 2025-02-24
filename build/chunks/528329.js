@@ -1,4 +1,4 @@
-/** Chunk was on 11814 (b9188d9bdd9a4469.js) **/
+/** Chunk was on 11814 **/
 e.exports = {
   channelHeader: "channelHeader__35a7e",
   dmIcon: "dmIcon__35a7e",

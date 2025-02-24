@@ -1,4 +1,4 @@
-/** Chunk was on 82190 (9c5bc88865470660.js) **/
+/** Chunk was on 82190 **/
 e.exports = {
   imgContainer: "imgContainer__8f9ad",
   img: "img__8f9ad"

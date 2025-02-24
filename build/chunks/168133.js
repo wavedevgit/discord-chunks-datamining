@@ -1,4 +1,4 @@
-/** Chunk was on 94706 (aa21f09425687557.js) **/
+/** Chunk was on 94706 **/
 i.d(e, {
   default: () => l
 });

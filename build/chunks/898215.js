@@ -1,4 +1,4 @@
-/** Chunk was on 70846 (2c51dd3a340115ff.js) **/
+/** Chunk was on 70846 **/
 e.exports = {
   "heading-lg/medium": "heading-lg/medium_a76279",
   "heading-xl/bold": "heading-xl/bold_a76279",

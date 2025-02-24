@@ -1,4 +1,4 @@
-/** Chunk was on 59207 (eea21df3c25d0a1f.js) **/
+/** Chunk was on 59207 **/
 t.exports = {
   categoryButton: "categoryButton__7ac97",
   modalRoot: "modalRoot__7ac97",

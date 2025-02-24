@@ -1,4 +1,4 @@
-/** Chunk was on 65396 (0ddd6aac0b56545f.js) **/
+/** Chunk was on 65396 **/
 "use strict";
 i.exports = {
   image: "image__859a7",

@@ -1,4 +1,4 @@
-/** Chunk was on 94949 (7395fc8cea1c28c0.js) **/
+/** Chunk was on 94949 **/
 e.exports = {
   body: "body__89307",
   title: "title__89307",

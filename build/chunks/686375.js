@@ -1,4 +1,4 @@
-/** Chunk was on 16359 (c5ce65c7e10d07ee.js) **/
+/** Chunk was on 16359 **/
 e.exports = {
   container: "container_fe72c8",
   modal: "modal_fe72c8",

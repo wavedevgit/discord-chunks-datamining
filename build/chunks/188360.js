@@ -1,4 +1,4 @@
-/** Chunk was on 6850 (8da95b630813dff8.js) **/
+/** Chunk was on 6850 **/
 e.exports = {
   flagContainer: "flagContainer__71c22",
   roleContainer: "roleContainer__71c22",

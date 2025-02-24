@@ -1,4 +1,4 @@
-/** Chunk was on 37709 (45d2e2b1bfaef449.js) **/
+/** Chunk was on 37709 **/
 e.exports = {
   main: "main_c08b38",
   artwork: "artwork_c08b38",

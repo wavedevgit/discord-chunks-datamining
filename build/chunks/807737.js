@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 let r = n(176191),
   i = (e, t) => e.sort((e, n) => r(n, e, t));
 e.exports = i

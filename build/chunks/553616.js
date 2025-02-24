@@ -1,4 +1,4 @@
-/** Chunk was on 38597 (284c18b018f79f5f.js) **/
+/** Chunk was on 38597 **/
 var a = r(296585),
   n = {};
 for (var s in a) a.hasOwnProperty(s) && (n[a[s]] = s);

@@ -1,4 +1,4 @@
-/** Chunk was on 9007 (3bc3145bc8d4d920.js) **/
+/** Chunk was on 9007 **/
 e.exports = {
   seperator: "seperator__6bf29",
   closeButton: "closeButton__6bf29",

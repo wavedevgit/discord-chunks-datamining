@@ -1,4 +1,4 @@
-/** Chunk was on 78226 (be06091776028b1c.js) **/
+/** Chunk was on 78226 **/
 e.exports = {
   outerContainer: "outerContainer__092f9",
   outerContainerGiftInventory: "outerContainerGiftInventory__092f9",

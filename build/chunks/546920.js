@@ -1,4 +1,4 @@
-/** Chunk was on 18367 (a8da915592ebd41d.js) **/
+/** Chunk was on 18367 **/
 e.exports = {
   modalRoot: "modalRoot__9c82a",
   birbContainer: "birbContainer__9c82a",

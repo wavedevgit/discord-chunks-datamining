@@ -1,4 +1,4 @@
-/** Chunk was on 90728 (f68c32709458369a.js) **/
+/** Chunk was on 90728 **/
 e.exports = {
   container: "container__65d41",
   measurements: "measurements__65d41",

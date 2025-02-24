@@ -1,4 +1,4 @@
-/** Chunk was on 48923 (05423627440510f9.js) **/
+/** Chunk was on 48923 **/
 n.d(t, {
   Z: () => O
 }), n(47120);
@@ -69,8 +69,8 @@ function O(e) {
     month: "numeric",
     day: "numeric"
   }), {
-    isClaiming: I,
-    isEnrolling: W
+    isClaiming: W,
+    isEnrolling: I
   } = (0, i.cj)([m.Z], () => ({
     isClaiming: m.Z.isClaimingReward(w.id) || m.Z.isFetchingRewardCode(w.id),
     isEnrolling: m.Z.isEnrolling(w.id)
@@ -109,7 +109,7 @@ function O(e) {
   }), ei = (null === (O = w.userStatus) || void 0 === O ? void 0 : O.claimedAt) != null, el = null;
   return (V && Z ? el = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
-    submitting: I,
+    submitting: W,
     onClick: null != er ? er : void 0,
     className: y.button,
     children: en
@@ -154,7 +154,7 @@ function O(e) {
     })
   }, eo) : Q && Z ? el = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
-    submitting: I,
+    submitting: W,
     onClick: null != er ? er : void 0,
     className: y.button,
     children: en
@@ -198,7 +198,7 @@ function O(e) {
     className: y.button,
     children: v.NW.string(v.t["9KoPyM"])
   }) : Q && !M && (el = (0, r.jsx)(l.zxk, {
-    submitting: W,
+    submitting: I,
     color: l.Ttl.BRAND,
     onClick: null != er ? er : void 0,
     className: y.button,

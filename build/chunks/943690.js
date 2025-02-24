@@ -1,4 +1,4 @@
-/** Chunk was on 61366 (f1025ebb1a62cf40.js) **/
+/** Chunk was on 61366 **/
 e.exports = {
   getXboxApp: "getXboxApp__7ba5f",
   getXboxAppBody: "getXboxAppBody__7ba5f",

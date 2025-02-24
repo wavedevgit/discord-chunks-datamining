@@ -1,4 +1,4 @@
-/** Chunk was on 50721 (643a742bc705e3d0.js) **/
+/** Chunk was on 50721 **/
 "use strict";
 e.exports = {
   container: "container_dc3bcc",

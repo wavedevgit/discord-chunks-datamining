@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (001d1b875900c1de.js) **/
+/** Chunk was on 1272 **/
 e.exports = {
   countDown: "countDown__61bcd",
   sparkleStar1: "sparkleStar1__61bcd",

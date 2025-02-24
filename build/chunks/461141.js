@@ -1,4 +1,4 @@
-/** Chunk was on 66462 (338899401593ec6c.js) **/
+/** Chunk was on 66462 **/
 e.exports = {
   content: "content_fec266",
   art: "art_fec266",

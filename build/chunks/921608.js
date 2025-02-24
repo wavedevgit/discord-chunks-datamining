@@ -1,4 +1,4 @@
-/** Chunk was on 78447 (e62b456706a3d293.js) **/
+/** Chunk was on 78447 **/
 i.d(e, {
   F: () => s,
   n: () => n

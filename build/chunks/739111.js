@@ -1,4 +1,4 @@
-/** Chunk was on 76233 (9e9141dd2fd57b04.js) **/
+/** Chunk was on 76233 **/
 t.exports = {
   header: "header__4b6c5",
   countdown: "countdown__4b6c5",

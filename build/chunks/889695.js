@@ -1,4 +1,4 @@
-/** Chunk was on 72618 (822c3de4d958b45d.js) **/
+/** Chunk was on 72618 **/
 n.d(t, {
   Z: () => E
 }), n(47120), n(653041);

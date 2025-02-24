@@ -1,4 +1,4 @@
-/** Chunk was on 85885 (ff72fd9617e200a0.js) **/
+/** Chunk was on 85885 **/
 e.exports = {
   content: "content__296bb",
   iconBackground: "iconBackground__296bb",

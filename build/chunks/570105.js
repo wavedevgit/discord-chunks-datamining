@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 "use strict";
 var r = {
   controlIcon: "controlIcon_f1ceac",
@@ -11,6 +11,7 @@ var r = {
   experimentRed: "experimentRed_f1ceac",
   disconnect: "disconnect_f1ceac",
   redGlow: "redGlow_f1ceac",
+  popoutOpen: "popoutOpen_f1ceac",
   primaryDark: "primaryDark_f1ceac",
   primaryLight: "primaryLight_f1ceac",
   activeLight: "activeLight_f1ceac",
@@ -25,6 +26,7 @@ var r = {
   experimentActiveLight: "experimentActiveLight_f1ceac",
   centerButton: "centerButton_f1ceac colorable_f1ceac",
   experimentButton: "experimentButton_f1ceac colorable_f1ceac",
+  attachedButton: "attachedButton_f1ceac",
   fullRegionButton: "fullRegionButton_f1ceac",
   fullRegionDropdownButton: "fullRegionDropdownButton_f1ceac",
   fullRegionIcon: "fullRegionIcon_f1ceac",
@@ -33,7 +35,9 @@ var r = {
   staticButton: "staticButton_f1ceac",
   contextMenuNub: "contextMenuNub_f1ceac colorable_f1ceac",
   caretButtonContainer: "caretButtonContainer_f1ceac",
+  attachedCaretButtonContainer: "attachedCaretButtonContainer_f1ceac",
   contextMenuNubExperiment: "contextMenuNubExperiment_f1ceac colorable_f1ceac",
+  attachedCaret: "attachedCaret_f1ceac",
   contextMenuCaret: "contextMenuCaret_f1ceac",
   open: "open_f1ceac",
   contextMenuCaretExperiment: "contextMenuCaretExperiment_f1ceac",

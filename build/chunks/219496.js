@@ -1,4 +1,4 @@
-/** Chunk was on 70846 (2c51dd3a340115ff.js) **/
+/** Chunk was on 70846 **/
 a.d(t, {
   K: () => i
 });

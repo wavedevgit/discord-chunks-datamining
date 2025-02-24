@@ -1,4 +1,4 @@
-/** Chunk was on 94085 (a586e6f414159600.js) **/
+/** Chunk was on 94085 **/
 e.exports = {
   gameIcon: "gameIcon__5a366",
   gameMessageTooltip: "gameMessageTooltip__5a366",

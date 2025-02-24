@@ -1,4 +1,4 @@
-/** Chunk was on 13965 (6ef771844636bacd.js) **/
+/** Chunk was on 13965 **/
 e.exports = {
   confettiCanvas: "confettiCanvas__8fcbd",
   close: "close__8fcbd",

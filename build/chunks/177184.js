@@ -1,4 +1,4 @@
-/** Chunk was on 60301 (17c3517ca63d7288.js) **/
+/** Chunk was on 60301 **/
 e.exports = {
   root: "root_ea9caa",
   applicationIcon: "applicationIcon_ea9caa",

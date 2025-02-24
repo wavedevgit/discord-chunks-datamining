@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 "use strict";
 n.d(t, {
   Z: () => A,
@@ -232,7 +232,7 @@ function w(e) {
       location: "CenterControlButton"
     }),
     V = L || F,
-    H = V ? [v.experimentButton, Z ? P[k] : R[k], x && null == O && v.fullRegionButton] : [C[k]],
+    H = V ? [v.experimentButton, Z ? P[k] : R[k], x && null == O && v.fullRegionButton, Z && !x && null != O && v.attachedButton] : [C[k]],
     W = (0, r.jsx)(A, S(y({}, M), {
       grow: !1,
       onContextMenu: O,
@@ -240,13 +240,14 @@ function w(e) {
       className: a()(U ? s : null, v.staticButton, v.centerButton, o && v.active, ...H)
     }));
   return U ? W : V ? (0, r.jsxs)("div", {
-    className: a()(v.caretButtonContainer, s, x && null != O && [v.fullRegionDropdownButton, R[k]]),
+    className: a()(Z ? v.attachedCaretButtonContainer : v.caretButtonContainer, Z && T && v.popoutOpen, s, x && null != O && [v.fullRegionDropdownButton, R[k]]),
     children: [W, null != O ? (0, r.jsx)(m.Z, {
       children: (0, r.jsx)(l.P3F, {
         "aria-label": E.NW.string(E.t.PdRCRk),
         onClick: w ? void 0 : O,
         onContextMenu: w ? void 0 : O,
-        className: a()(v.contextMenuNubExperiment, R[j], {
+        className: a()(v.contextMenuNubExperiment, Z && !x && v.attachedCaret, Z ? P[j] : R[j], {
+          [v.popoutOpen]: T && Z,
           [v.active]: T,
           [v.disabled]: w
         }),

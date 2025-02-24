@@ -1,4 +1,4 @@
-/** Chunk was on 30243 (f9bbfb433f11e972.js) **/
+/** Chunk was on 30243 **/
 r.d(t, {
   F: () => a,
   c: () => o

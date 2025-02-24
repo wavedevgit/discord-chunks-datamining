@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 6113923316943bc7
+  Original File Name: d84c0439a1418190
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -954,6 +954,10 @@
 
 .anniversaryCountResetButton__6edf0 {
     padding: 0
+}
+
+.container__9b0bb {
+    padding: var(--spacing-24)
 }
 
 .switch__9d40d {
@@ -4824,4 +4828,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=6113923316943bc7.css.map*/
+/*# sourceMappingURL=d84c0439a1418190.css.map*/

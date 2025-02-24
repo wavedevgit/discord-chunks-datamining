@@ -1,4 +1,4 @@
-/** Chunk was on 48623 (797e47a9a525b148.js) **/
+/** Chunk was on 48623 **/
 t.r(n), t.d(n, {
   ItemDetailsModal: () => v
 }), t(266796), t(566702);

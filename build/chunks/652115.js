@@ -1,4 +1,4 @@
-/** Chunk was on 86915 (89ba4a848a25cd7a.js) **/
+/** Chunk was on 86915 **/
 "use strict";
 var r = {
   settingCard: "settingCard__1a4ef",

@@ -1,4 +1,4 @@
-/** Chunk was on 78431 (65a16bbcbe56bf07.js) **/
+/** Chunk was on 78431 **/
 e.exports = {
   cardContainer: "cardContainer__8833c",
   card: "card__8833c",

@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
   R: () => v,
   Z: () => y
@@ -46,14 +46,14 @@ let y = e => {
     notClaimed: _,
     notEmailVerified: O,
     notPhoneVerified: j,
-    newAccount: x,
-    newMember: C
-  } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), S = 0 === t ? g.NW.string(g.t["6zY8BA"]) : null, P = null, N = null;
-  return (0 === t && (_ ? (P = g.NW.string(g.t.IRxUlJ), N = g.NW.string(g.t.fiNVio)) : j ? (P = g.NW.string(g.t.vW8iUF), N = g.NW.string(g.t["50gfOj"])) : O ? (P = g.NW.string(g.t.vdSOp6), N = g.NW.string(g.t.lm1UKi)) : C ? (P = g.NW.formatToPlainString(g.t.v1ktYW, {
+    newAccount: C,
+    newMember: x
+  } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), P = 0 === t ? g.NW.string(g.t["6zY8BA"]) : null, S = null, N = null;
+  return (0 === t && (_ ? (S = g.NW.string(g.t.IRxUlJ), N = g.NW.string(g.t.fiNVio)) : j ? (S = g.NW.string(g.t.vW8iUF), N = g.NW.string(g.t["50gfOj"])) : O ? (S = g.NW.string(g.t.vdSOp6), N = g.NW.string(g.t.lm1UKi)) : x ? (S = g.NW.formatToPlainString(g.t.v1ktYW, {
     min: h.YeM.MEMBER_AGE
-  }), N = g.NW.string(g.t.BddRzc)) : x && (P = g.NW.formatToPlainString(g.t["sncw4+"], {
+  }), N = g.NW.string(g.t.BddRzc)) : C && (S = g.NW.formatToPlainString(g.t["sncw4+"], {
     min: h.YeM.ACCOUNT_AGE
-  }), N = g.NW.string(g.t.BddRzc))), null == S || null == P) ? null : (0, i.jsxs)(o.VqE, {
+  }), N = g.NW.string(g.t.BddRzc))), null == P || null == S) ? null : (0, i.jsxs)(o.VqE, {
     className: m.container,
     "aria-labelledby": y,
     children: [(0, i.jsx)("img", {
@@ -65,11 +65,11 @@ let y = e => {
       children: [(0, i.jsx)(o.X6q, {
         variant: "heading-md/semibold",
         id: y,
-        children: S
+        children: P
       }), (0, i.jsx)(o.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: P
+        children: S
       }), (0, i.jsxs)("div", {
         className: m.buttonContainer,
         children: [null != N ? (0, i.jsx)(o.zxk, {

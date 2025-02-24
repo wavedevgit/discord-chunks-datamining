@@ -1,4 +1,4 @@
-/** Chunk was on 21112 (0f5f56e0fab706ae.js) **/
+/** Chunk was on 21112 **/
 e.exports = {
   closeButton: "closeButton__9cef2",
   modalContent: "modalContent__9cef2",

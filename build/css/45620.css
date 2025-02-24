@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 41e3a642df4bcbaa
+  Original File Name: dd12ac3d36e3b934
 **/
 .countDownWrapper_a1b7b8 {
     display: flex;
@@ -772,7 +772,7 @@
     overflow: visible
 }
 
-.newBadge_c3d04b {
+.badge_c3d04b {
     position: absolute;
     top: 16px;
     right: 16px;
@@ -780,7 +780,7 @@
     color: var(--black-500)
 }
 
-.theme-light .newBadge_c3d04b {
+.theme-light .badge_c3d04b {
     background-color: var(--interactive-active);
     color: var(--white-500)
 }
@@ -1605,4 +1605,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=41e3a642df4bcbaa.css.map*/
+/*# sourceMappingURL=dd12ac3d36e3b934.css.map*/

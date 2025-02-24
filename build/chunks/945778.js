@@ -1,4 +1,4 @@
-/** Chunk was on 80960 (b0ceed6dc6299b2b.js) **/
+/** Chunk was on 80960 **/
 r.r(t), r.d(t, {
   default: () => l
 });

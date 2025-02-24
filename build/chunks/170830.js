@@ -1,4 +1,4 @@
-/** Chunk was on 21617 (d6150ba5f4fbc8a1.js) **/
+/** Chunk was on 21617 **/
 function s(i) {
   let t = 0,
     e = [];

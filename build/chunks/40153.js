@@ -1,6 +1,6 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
-  OG: () => x,
+  OG: () => C,
   ZP: () => O,
   Zu: () => j
 }), n(47120);
@@ -161,7 +161,7 @@ function j(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     children: t
   } = e, [, n] = (0, c.L)({

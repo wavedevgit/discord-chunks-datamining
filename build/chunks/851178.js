@@ -1,4 +1,4 @@
-/** Chunk was on 69473 (39b6e1164d4c4f7d.js) **/
+/** Chunk was on 69473 **/
 t.exports = {
   notice: "notice__3b8c1",
   body: "body__3b8c1",

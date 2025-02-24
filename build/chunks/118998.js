@@ -1,4 +1,4 @@
-/** Chunk was on 56236 (2904e6350ea865b5.js) **/
+/** Chunk was on 56236 **/
 t.d(n, {
   H: () => r
 });

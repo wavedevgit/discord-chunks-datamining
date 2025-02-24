@@ -1,4 +1,4 @@
-/** Chunk was on 96013 (7bba8e20e4c355fc.js) **/
+/** Chunk was on 96013 **/
 t.exports = {
   rootContainer: "rootContainer_f4adbd",
   headerContainer: "headerContainer_f4adbd",

@@ -1,4 +1,4 @@
-/** Chunk was on 47240 (6df86f0da340a6bb.js) **/
+/** Chunk was on 47240 **/
 e.exports = {
   root: "root__578ba",
   clipGrid: "clipGrid__578ba",

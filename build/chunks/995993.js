@@ -1,6 +1,6 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
-  m: () => C
+  m: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -22,21 +22,21 @@ var r = n(200651),
   _ = n(176505),
   O = n(490897),
   j = n(388032),
-  x = n(160031);
+  C = n(160031);
 
-function C(e) {
+function x(e) {
   let {
     guild: t,
-    selected: C
-  } = e, S = (0, p.Z)(t), P = (0, u.wE)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), N = (0, l.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), I = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, O.W.GUILD_ONBOARDING_QUESTION)), Z = N.length > b.Cb, w = (0, l.e7)([d.Z, g.ZP], () => {
+    selected: x
+  } = e, P = (0, p.Z)(t), S = (0, u.wE)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), N = (0, l.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), I = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, O.W.GUILD_ONBOARDING_QUESTION)), Z = N.length > b.Cb, w = (0, l.e7)([d.Z, g.ZP], () => {
     let e = d.Z.lastFetchedAt(t.id),
       n = g.ZP.lastMessageId(t.id, O.W.GUILD_ONBOARDING_QUESTION);
     if (null == n) return !1;
     let r = m.default.extractTimestamp(n);
     return null != e && e > r
   }), E = i.useCallback(() => {
-    (0, f.uL)(y.Z5c.CHANNEL(t.id, S ? _.oC.CUSTOMIZE_COMMUNITY : _.oC.CHANNEL_BROWSER))
-  }, [t.id, S]), T = i.useCallback(e => {
+    (0, f.uL)(y.Z5c.CHANNEL(t.id, P ? _.oC.CUSTOMIZE_COMMUNITY : _.oC.CHANNEL_BROWSER))
+  }, [t.id, P]), T = i.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -75,10 +75,10 @@ function C(e) {
       }
     })
   }, [t]), A = null;
-  return P && !I && !Z || C || w || (A = (0, r.jsx)(s.IGR, {
+  return S && !I && !Z || x || w || (A = (0, r.jsx)(s.IGR, {
     color: a.Z.colors.BADGE_BRAND_BG.css,
     text: j.NW.string(j.t.y2b7CA),
-    className: x.newChannel
+    className: C.newChannel
   })), (0, r.jsx)(v.m, {
     id: "channels-".concat(t.id),
     renderIcon: e => (0, r.jsx)(s.H$4, {
@@ -86,8 +86,8 @@ function C(e) {
       color: "currentColor",
       className: e
     }),
-    text: S ? j.NW.string(j.t.h9mGOD) : j.NW.string(j.t.et6wam),
-    selected: C,
+    text: P ? j.NW.string(j.t.h9mGOD) : j.NW.string(j.t.et6wam),
+    selected: x,
     onClick: E,
     onContextMenu: T,
     trailing: A

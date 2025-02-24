@@ -1,4 +1,4 @@
-/** Chunk was on 45620 (eb98f0baf40470d3.js) **/
+/** Chunk was on 45620 **/
 "use strict";
 e.exports = {
   shopCard: "shopCard_c3d04b",
@@ -30,7 +30,7 @@ e.exports = {
   variantsGroup: "variantsGroup_c3d04b",
   profileEffectShopPreview: "profileEffectShopPreview_c3d04b",
   productName: "productName_c3d04b",
-  newBadge: "newBadge_c3d04b",
+  badge: "badge_c3d04b",
   partiallyOwned: "partiallyOwned_c3d04b",
   preview: "preview_c3d04b",
   nameplatePreviewRootContainer: "nameplatePreviewRootContainer_c3d04b",

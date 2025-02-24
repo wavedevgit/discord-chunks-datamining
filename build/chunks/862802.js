@@ -1,4 +1,4 @@
-/** Chunk was on 72320 (1e8df417eada106d.js) **/
+/** Chunk was on 72320 **/
 e.exports = {
   sectionContentContainer: "sectionContentContainer_b18295",
   sectionActivitiesContentContainer: "sectionActivitiesContentContainer_b18295",

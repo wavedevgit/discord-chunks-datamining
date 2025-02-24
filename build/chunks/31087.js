@@ -1,4 +1,4 @@
-/** Chunk was on 41849 (ec201fdaa2dc80fc.js) **/
+/** Chunk was on 41849 **/
 e.exports = {
   similarGames: "similarGames_a02225",
   similarGameImageWrapper: "similarGameImageWrapper_a02225",

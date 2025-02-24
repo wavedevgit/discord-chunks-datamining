@@ -1,4 +1,4 @@
-/** Chunk was on 21897 (9bfcb78b400ae76d.js) **/
+/** Chunk was on 21897 **/
 s.exports = {
   header: "header__2f4ff",
   permissionList: "permissionList__2f4ff",

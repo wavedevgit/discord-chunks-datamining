@@ -1,6 +1,6 @@
 /**
   Module ID: 71611
-  Original File Name: 32302ca029fe2afb
+  Original File Name: d5ebf036256b800e
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -3308,6 +3308,10 @@ strong {
     border-radius: 12px;
     border: 1px solid var(--border-faint);
     background: var(--primary-630)
+}
+
+.buttonSection__1405b.experimentButtonSection__1405b {
+    background: var(--plum-23)
 }
 
 .avSpacing__1405b {
@@ -13836,6 +13840,10 @@ div.profileThemedContainer__656be {
     background: var(--primary-630)
 }
 
+.buttonSection_fcb27c.experimentButtonSection_fcb27c {
+    background: var(--plum-23)
+}
+
 .avSpacing_fcb27c {
     width: 0
 }
@@ -15365,4 +15373,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=32302ca029fe2afb.css.map*/
+/*# sourceMappingURL=d5ebf036256b800e.css.map*/

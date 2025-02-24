@@ -1,4 +1,4 @@
-/** Chunk was on 18327 (f66f03082d375bf2.js) **/
+/** Chunk was on 18327 **/
 t.d(e, {
   default: () => j
 });

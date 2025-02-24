@@ -1,4 +1,4 @@
-/** Chunk was on 39369 (2df8849bbd5536ba.js) **/
+/** Chunk was on 39369 **/
 e.exports = {
   container: "container_b5010b",
   eventName: "eventName_b5010b",

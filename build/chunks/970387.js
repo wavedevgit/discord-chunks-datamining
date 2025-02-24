@@ -1,4 +1,4 @@
-/** Chunk was on 53162 (fa96b2e0399e2c20.js) **/
+/** Chunk was on 53162 **/
 t.exports = {
   modal: "modal__1e7f0",
   header: "header__1e7f0",

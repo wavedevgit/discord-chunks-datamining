@@ -1,4 +1,4 @@
-/** Chunk was on 7302 (8b812fe1e4cb973a.js) **/
+/** Chunk was on 7302 **/
 e.exports = {
   header: "header__89b2b",
   divider: "divider__89b2b",

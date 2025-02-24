@@ -1,4 +1,4 @@
-/** Chunk was on 12009 (09ba7d0bfdebba98.js) **/
+/** Chunk was on 12009 **/
 e.exports = {
   maxWidthWrapper: "maxWidthWrapper__7449f",
   homeContainer: "homeContainer__7449f",

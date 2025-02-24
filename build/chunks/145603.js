@@ -1,4 +1,4 @@
-/** Chunk was on 26545 (a22e99465597d574.js) **/
+/** Chunk was on 26545 **/
 t.exports = {
   content: "content_d7fb2d",
   card: "card_d7fb2d",

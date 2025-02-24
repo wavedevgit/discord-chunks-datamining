@@ -1,4 +1,4 @@
-/** Chunk was on 52432 (59f3f3afa457ced3.js) **/
+/** Chunk was on 52432 **/
 e.exports = {
   headerContainer: "headerContainer__3131d",
   ratingBody: "ratingBody__3131d",

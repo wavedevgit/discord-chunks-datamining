@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (001d1b875900c1de.js) **/
+/** Chunk was on 1272 **/
 e.exports = {
   page: "page__99a7e",
   contentWrapper: "contentWrapper__99a7e",

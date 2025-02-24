@@ -1,4 +1,4 @@
-/** Chunk was on 29396 (7cad0e8a557020ea.js) **/
+/** Chunk was on 29396 **/
 t.exports = {
   closeButton: "closeButton_c9f030",
   content: "content_c9f030",

@@ -1,4 +1,4 @@
-/** Chunk was on 75613 (cbeb230c9d17f153.js) **/
+/** Chunk was on 75613 **/
 e.exports = {
   wrapper: "wrapper__7b551",
   heroImage: "heroImage__7b551",

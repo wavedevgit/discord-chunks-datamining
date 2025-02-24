@@ -1,4 +1,4 @@
-/** Chunk was on 94739 (63a3520128031ff2.js) **/
+/** Chunk was on 94739 **/
 e.exports = {
   row: "row__6e3d6",
   icon: "icon__6e3d6",

@@ -1,4 +1,4 @@
-/** Chunk was on 87626 (7302f874375eaddb.js) **/
+/** Chunk was on 87626 **/
 a.r(e.exports = {
   footer: "footer__0c41a",
   footerPrimary: "footerPrimary__0c41a footer__0c41a",

@@ -1,4 +1,4 @@
-/** Chunk was on 26660 (d4e420763b576c28.js) **/
+/** Chunk was on 26660 **/
 "use strict";
 e.exports = {
   modal: "modal__7e85a",

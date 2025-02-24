@@ -1,4 +1,4 @@
-/** Chunk was on 50721 (643a742bc705e3d0.js) **/
+/** Chunk was on 50721 **/
 "use strict";
 r.d(t, {
   default: () => y

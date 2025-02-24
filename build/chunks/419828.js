@@ -1,4 +1,4 @@
-/** Chunk was on 31238 (81afcda248348e24.js) **/
+/** Chunk was on 31238 **/
 e.exports = {
   header: "header_adbad8",
   title: "title_adbad8",

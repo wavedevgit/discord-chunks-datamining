@@ -1,4 +1,4 @@
-/** Chunk was on 77578 (58425c8f79eabc2c.js) **/
+/** Chunk was on 77578 **/
 e.exports = {
   headerGuildName: "headerGuildName__949ab",
   headerGuildBadge: "headerGuildBadge__949ab",

@@ -1,4 +1,4 @@
-/** Chunk was on 6850 (8da95b630813dff8.js) **/
+/** Chunk was on 6850 **/
 e.exports = {
   newMembersNotice: "newMembersNotice_acdcc0",
   memberNoticeAction: "memberNoticeAction_acdcc0",

@@ -1,4 +1,4 @@
-/** Chunk was on 96075 (77b73fe6a0b5210f.js) **/
+/** Chunk was on 96075 **/
 t.exports = {
   art: "art__0668f"
 }

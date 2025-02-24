@@ -1,4 +1,4 @@
-/** Chunk was on 80237 (68cc2a668cd36f89.js) **/
+/** Chunk was on 80237 **/
 "use strict";
 var r = {
   title: "title__1964c " + n(382840).modalContent,

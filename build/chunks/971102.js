@@ -1,4 +1,4 @@
-/** Chunk was on 22173 (61d976ec9ebaf5d5.js) **/
+/** Chunk was on 22173 **/
 e.exports = {
   container: "container_faa96b",
   isOpen: "isOpen_faa96b",

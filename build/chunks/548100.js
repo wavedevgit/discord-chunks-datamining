@@ -1,4 +1,4 @@
-/** Chunk was on 2026 (61eedd5611521d75.js) **/
+/** Chunk was on 2026 **/
 e.exports = {
   container: "container__12f17",
   darkText: "darkText__12f17",

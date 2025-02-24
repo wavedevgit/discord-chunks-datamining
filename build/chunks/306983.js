@@ -1,4 +1,4 @@
-/** Chunk was on 78226 (be06091776028b1c.js) **/
+/** Chunk was on 78226 **/
 e.exports = {
   wrapper: "wrapper_ef0e9b",
   percentCompleteWrapper: "percentCompleteWrapper_ef0e9b",

@@ -1,4 +1,4 @@
-/** Chunk was on 94739 (63a3520128031ff2.js) **/
+/** Chunk was on 94739 **/
 e.exports = {
   container: "container__1ce5d",
   circularImage: "circularImage__1ce5d",

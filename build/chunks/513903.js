@@ -1,4 +1,4 @@
-/** Chunk was on 98077 (30da9e093627eedd.js) **/
+/** Chunk was on 98077 **/
 e.exports = {
   wrapperBase: "wrapperBase__523ab",
   termsRow: "termsRow__523ab",

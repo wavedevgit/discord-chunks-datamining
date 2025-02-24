@@ -1,4 +1,4 @@
-/** Chunk was on 6850 (8da95b630813dff8.js) **/
+/** Chunk was on 6850 **/
 e.exports = {
   paginationContainer: "paginationContainer_e8f197",
   pagination: "pagination_e8f197",

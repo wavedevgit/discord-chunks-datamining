@@ -1,4 +1,4 @@
-/** Chunk was on 4530 (92ad5e184eaf30ca.js) **/
+/** Chunk was on 4530 **/
 e.exports = {
   modalRoot: "modalRoot__4a43b",
   header: "header__4a43b",

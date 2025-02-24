@@ -1,4 +1,4 @@
-/** Chunk was on 65652 (c1947051a07a04a7.js) **/
+/** Chunk was on 65652 **/
 e.exports = {
   modalContent: "modalContent__2379f",
   disclaimer: "disclaimer__2379f"

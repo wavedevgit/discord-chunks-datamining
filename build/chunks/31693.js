@@ -1,4 +1,4 @@
-/** Chunk was on 6074 (368b2d20b07d00ba.js) **/
+/** Chunk was on 6074 **/
 e.exports = {
   container: "container_b2b772",
   inner: "inner_b2b772",

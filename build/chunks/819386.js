@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (6f02c158d7813e32.js) **/
+/** Chunk was on 71611 **/
 e.exports = {
   upsellPage: "upsellPage_d204dc",
   upsellContainer: "upsellContainer_d204dc",

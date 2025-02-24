@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (001d1b875900c1de.js) **/
+/** Chunk was on 1272 **/
 e.exports = {
   tabs: "tabs_f1dca0",
   separator: "separator_f1dca0",

@@ -1,4 +1,4 @@
-/** Chunk was on 94739 (63a3520128031ff2.js) **/
+/** Chunk was on 94739 **/
 e.exports = {
   ephemeral: "ephemeral__5126c",
   nitroMessage: "nitroMessage__5126c",

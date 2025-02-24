@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (6f02c158d7813e32.js) **/
+/** Chunk was on 71611 **/
 e.exports = {
   box: "box_ee23ac",
   textContainer: "textContainer_ee23ac",

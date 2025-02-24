@@ -1,4 +1,4 @@
-/** Chunk was on 22942 (b322cf68d01bc134.js) **/
+/** Chunk was on 22942 **/
 n.d(a, {
   default: () => I
 }), n(47120);

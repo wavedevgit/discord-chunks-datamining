@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/ ! function() {
+/** Chunk was on web.js **/ ! function() {
   "use strict";
   var t = {}.hasOwnProperty;
 

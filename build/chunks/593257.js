@@ -1,4 +1,4 @@
-/** Chunk was on 97811 (d795d77fb4299013.js) **/
+/** Chunk was on 97811 **/
 e.exports = {
   editCard: "editCard_a25a68",
   toggled: "toggled_a25a68",

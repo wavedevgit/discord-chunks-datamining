@@ -1,4 +1,4 @@
-/** Chunk was on 48923 (05423627440510f9.js) **/
+/** Chunk was on 48923 **/
 e.exports = {
   rewardTileContainer: "rewardTileContainer__8a22c",
   rewardTileSpacer: "rewardTileSpacer__8a22c",

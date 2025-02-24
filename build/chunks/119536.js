@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (c39579f01d1aedae.js) **/
+/** Chunk was on 93886 **/
 e.exports = {
   button: "button__67645",
   redGlow: "redGlow__67645",

@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 t.read = function(e, t, n, r, i) {
   var o, a, s = 8 * i - r - 1,
     l = (1 << s) - 1,

@@ -1,6 +1,6 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
-  B: () => P
+  B: () => S
 });
 var r = n(200651);
 n(192379);
@@ -24,7 +24,7 @@ var i = n(155281),
   O = n(700785),
   j = n(981631);
 
-function x(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,9 +42,9 @@ function x(e) {
   }
   return e
 }
-let C = "DRAGGABLE_GUILD_CHANNEL";
+let x = "DRAGGABLE_GUILD_CHANNEL";
 
-function S(e, t) {
+function P(e, t) {
   var n, r;
   if (null == e || null == t) return null;
   if (e !== j.I_8) return f.Z.getChannel(t);
@@ -53,20 +53,20 @@ function S(e, t) {
   return null == l ? void 0 : l.channel
 }
 
-function P(e) {
-  return (0, i.G)(C, {
+function S(e) {
+  return (0, i.G)(x, {
     drop(e, t) {
       let n;
       let i = y.Z.getGuildId(),
         l = t.getItem(),
-        o = (0, _.if)(S(i, l.id), l.position, e.channel, e.position, l.channelList);
+        o = (0, _.if)(P(i, l.id), l.position, e.channel, e.position, l.channelList);
       if (null == o) return;
-      let u = S(i, l.id);
+      let u = P(i, l.id);
       if (null == u) return;
       let p = g.Z.getCategories(i),
         h = b.Z.getGuild(i);
       if (null == h) return;
-      let m = (0, _.Dn)(u, S(i, o.referenceId), o.parentId, p);
+      let m = (0, _.Dn)(u, P(i, o.referenceId), o.parentId, p);
       if (0 !== m.length) {
         if (i === j.I_8) {
           (0, d.s3)(m);
@@ -90,7 +90,7 @@ function P(e) {
           let e = f.Z.getChannel(n.parent_id);
           null != e && (0, a.h7j)(t => {
             var l, o;
-            return (0, r.jsx)(c.default, (l = x({}, t), o = o = {
+            return (0, r.jsx)(c.default, (l = C({}, t), o = o = {
               channel: u,
               category: e,
               onConfirm: () => {
@@ -144,7 +144,7 @@ function P(e) {
       sortingPosition: t.isOver() && t.canDrop() ? n.position : null,
       sortingParent: t.isOver() && t.canDrop() ? n.parentId : null
     }
-  })((0, l.E)(C, {
+  })((0, l.E)(x, {
     canDrag(e) {
       let {
         channel: t
@@ -156,7 +156,7 @@ function P(e) {
         let {
           default: e
         } = await n.e("82560").then(n.bind(n, 391312));
-        return t => (0, r.jsx)(e, x({}, t))
+        return t => (0, r.jsx)(e, C({}, t))
       }), !1;
       if (t.type === j.d4z.GUILD_CATEGORY) return v.Z.can(j.Plq.MANAGE_CHANNELS, i) && !(0, p.r1)(i.id);
       let l = f.Z.getChannel(t.parent_id);

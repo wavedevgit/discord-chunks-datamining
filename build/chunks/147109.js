@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (6f02c158d7813e32.js) **/
+/** Chunk was on 71611 **/
 e.exports = {
   blockedEdit: "blockedEdit_b7ab2c",
   blockedSend: "blockedSend_b7ab2c",

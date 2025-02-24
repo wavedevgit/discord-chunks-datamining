@@ -1,4 +1,4 @@
-/** Chunk was on 93886 (c39579f01d1aedae.js) **/
+/** Chunk was on 93886 **/
 e.exports = {
   panelHeader: "panelHeader__6edf0",
   panelInner: "panelInner__6edf0",

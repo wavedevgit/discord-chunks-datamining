@@ -1,4 +1,4 @@
-/** Chunk was on 96888 (23e085a6af666071.js) **/
+/** Chunk was on 96888 **/
 e.exports = {
   headerContainer: "headerContainer__6c12c",
   modalCloseButton: "modalCloseButton__6c12c",

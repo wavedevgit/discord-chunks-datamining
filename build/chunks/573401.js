@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 var r = n(940151),
   i = "object" == typeof self && self && self.Object === Object && self,
   o = r || i || Function("return this")();

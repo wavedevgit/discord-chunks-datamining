@@ -1,4 +1,4 @@
-/** Chunk was on 38795 (ee6d098f6cc6dc6d.js) **/
+/** Chunk was on 38795 **/
 n.exports = {
   content: "content_fc289e",
   header: "header_fc289e",

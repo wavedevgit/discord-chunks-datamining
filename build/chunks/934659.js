@@ -1,4 +1,4 @@
-/** Chunk was on 14021 (188186ea82ecd67c.js) **/
+/** Chunk was on 14021 **/
 e.exports = {
   headerImg: "headerImg__3b9cf",
   modalBody: "modalBody__3b9cf",

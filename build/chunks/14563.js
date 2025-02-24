@@ -1,3 +1,3 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 "use strict";
 e.exports = "/assets/e60f28f718ca79b5.svg"

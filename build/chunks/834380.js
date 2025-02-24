@@ -1,4 +1,4 @@
-/** Chunk was on 72320 (1e8df417eada106d.js) **/
+/** Chunk was on 72320 **/
 e.exports = {
   icon: "icon__761e5",
   focusBlock: "focusBlock__761e5",

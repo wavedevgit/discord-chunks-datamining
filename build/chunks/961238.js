@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 function t(e) {
   for (var t = -1, n = null == e ? 0 : e.length, r = {}; ++t < n;) {
     var i = e[t];

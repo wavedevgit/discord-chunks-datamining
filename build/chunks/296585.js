@@ -1,4 +1,4 @@
-/** Chunk was on 38597 (284c18b018f79f5f.js) **/
+/** Chunk was on 38597 **/
 "use strict";
 e.exports = {
   aliceblue: [240, 248, 255],

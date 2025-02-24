@@ -1,4 +1,4 @@
-/** Chunk was on 27978 (f779563f0d0d4e3d.js) **/
+/** Chunk was on 27978 **/
 e.exports = {
   header: "header__1d5fc",
   horizontalAuthBox: "horizontalAuthBox__1d5fc",

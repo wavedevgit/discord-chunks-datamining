@@ -1,4 +1,4 @@
-/** Chunk was on 90728 (f68c32709458369a.js) **/
+/** Chunk was on 90728 **/
 e.exports = {
   alignCenter: "alignCenter__31873",
   alignLeft: "alignLeft__31873",

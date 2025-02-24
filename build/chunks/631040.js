@@ -1,4 +1,4 @@
-/** Chunk was on 87074 (c0ef59c6ee38e622.js) **/
+/** Chunk was on 87074 **/
 e.exports = {
   placeholderFill: "placeholderFill__7ffbc"
 }

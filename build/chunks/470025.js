@@ -1,4 +1,4 @@
-/** Chunk was on 82195 (bb66b9579959d7a9.js) **/
+/** Chunk was on 82195 **/
 e.exports = {
   image: "image__74f72",
   header: "header__74f72",

@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
   Z: () => ec
 }), n(47120);
@@ -22,10 +22,10 @@ var r = n(200651),
   _ = n(317381),
   O = n(736409),
   j = n(835473),
-  x = n(413523),
-  C = n(933557),
-  S = n(194082),
-  P = n(550532),
+  C = n(413523),
+  x = n(933557),
+  P = n(194082),
+  S = n(550532),
   N = n(436774),
   I = n(594190),
   Z = n(925329),
@@ -49,8 +49,8 @@ var r = n(200651),
   q = n(699516),
   Y = n(944486),
   Q = n(594174),
-  J = n(449224),
-  K = n(358085),
+  K = n(449224),
+  J = n(358085),
   X = n(345243),
   $ = n(115530),
   ee = n(339144),
@@ -138,9 +138,9 @@ class es extends i.PureComponent {
       className: ei.gameWrapper,
       children: [e ? (0, r.jsx)(A.Z, {
         title: l
-      }) : (0, r.jsx)(S.ZP, {
-        look: S.ZP.Looks.GRAY,
-        size: S.ZP.Sizes.SMALL,
+      }) : (0, r.jsx)(P.ZP, {
+        look: P.ZP.Looks.GRAY,
+        size: P.ZP.Sizes.SMALL,
         className: ei.liveIndicator
       }), (0, r.jsxs)("div", {
         className: ei.info,
@@ -250,7 +250,7 @@ class es extends i.PureComponent {
         channel: t,
         embeddedActivity: n
       } = this.props;
-      s()(null != t, "Channel is null during navigation click"), s()(null != n, "Activity null during navigation click"), h.Z.channelListScrollTo(null !== (e = t.guild_id) && void 0 !== e ? e : en.ME, t.id), !(0, b.R)() && ((0, M.vd)(t.type) && p.Z.selectParticipant(t.id, (0, x.gN)({
+      s()(null != t, "Channel is null during navigation click"), s()(null != n, "Activity null during navigation click"), h.Z.channelListScrollTo(null !== (e = t.guild_id) && void 0 !== e ? e : en.ME, t.id), !(0, b.R)() && ((0, M.vd)(t.type) && p.Z.selectParticipant(t.id, (0, C.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
       })), (0, M.Qm)(t.type) && (0, y.tg)(er.Ez.PANEL))
@@ -277,37 +277,37 @@ let ec = (0, g.Z)(function(e) {
       return i
     }(e, ["guildId"]);
   let s = (0, c.e7)([B.default], () => B.default.getId()),
-    u = (0, c.e7)([I.ZP, J.Z], () => (0, D.Z)(I.ZP, J.Z)),
+    u = (0, c.e7)([I.ZP, K.Z], () => (0, D.Z)(I.ZP, K.Z)),
     d = (0, c.e7)([Y.Z, U.Z], () => U.Z.getChannel(Y.Z.getVoiceChannelId())),
     p = (0, c.e7)([_.ZP], () => _.ZP.getConnectedActivityChannelId()),
     h = (0, c.e7)([U.Z], () => U.Z.getChannel(p)),
     f = (0, c.e7)([V.Z], () => V.Z.getGuild(null == h ? void 0 : h.guild_id)),
     [g, y] = (0, c.Wu)([G.Z], () => [G.Z.getCurrentUserActiveStream(), G.Z.getStreamerActiveStreamMetadata()]),
     O = (0, c.e7)([m.Z], () => m.Z.useReducedMotion),
-    x = (0, c.e7)([_.ZP], () => null != h ? _.ZP.getSelfEmbeddedActivityForChannel(h.id) : null),
-    S = (0, c.e7)([V.Z, H.Z, W.ZP], () => null != d ? w.JL(d, V.Z, H.Z, !1) : null != o && w.h_(W.ZP.getChannels(o), V.Z, H.Z).length > 0),
-    [N] = (0, j.Z)([null !== (l = null != y && null != y.id ? y.id : null != u && null != u.id ? u.id : null != x ? x.applicationId : void 0) && void 0 !== l ? l : ""]),
-    Z = (0, c.e7)([P.Z], () => P.Z.getFakeGameData()),
+    C = (0, c.e7)([_.ZP], () => null != h ? _.ZP.getSelfEmbeddedActivityForChannel(h.id) : null),
+    P = (0, c.e7)([V.Z, H.Z, W.ZP], () => null != d ? w.JL(d, V.Z, H.Z, !1) : null != o && w.h_(W.ZP.getChannels(o), V.Z, H.Z).length > 0),
+    [N] = (0, j.Z)([null !== (l = null != y && null != y.id ? y.id : null != u && null != u.id ? u.id : null != C ? C.applicationId : void 0) && void 0 !== l ? l : ""]),
+    Z = (0, c.e7)([S.Z], () => S.Z.getFakeGameData()),
     T = (0, c.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()),
     A = (0, v.Z0)() && null != T && (0, b.R)(),
-    R = (0, c.e7)([F.Z], () => (0, E.Z)(F.Z) && (0, K.isWindows)()),
+    R = (0, c.e7)([F.Z], () => (0, E.Z)(F.Z) && (0, J.isWindows)()),
     k = (0, c.e7)([z.Z], () => null != s ? z.Z.findActivity(s, e => e.type === en.IIU.PLAYING) : null),
     M = null != g && g.ownerId === s && g.state !== en.jm8.ENDED,
-    X = (0, c.e7)([Q.default, q.Z], () => null != h ? (0, C.F6)(h, Q.default, q.Z) : void 0),
+    X = (0, c.e7)([Q.default, q.Z], () => null != h ? (0, x.F6)(h, Q.default, q.Z) : void 0),
     $ = (0, L.Z)(),
     [ee, et] = i.useState(!1);
   return (0, r.jsx)(es, (t = eo({}, a), n = n = {
     guildId: o,
     canGoLive: R || A || void 0 !== Z,
     activity: k,
-    embeddedActivity: x,
+    embeddedActivity: C,
     userId: s,
     runningGame: null != Z ? Z : u,
     application: N,
     useReducedMotion: O,
     isStreaming: M,
     channel: h,
-    canStream: S,
+    canStream: P,
     stream: g,
     streamMetadata: y,
     channelName: X,

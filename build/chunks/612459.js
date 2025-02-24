@@ -1,4 +1,4 @@
-/** Chunk was on 66951 (e0826cd7060b6f61.js) **/
+/** Chunk was on 66951 **/
 e.exports = {
   modal: "modal__39466",
   modalCloseButton: "modalCloseButton__39466",

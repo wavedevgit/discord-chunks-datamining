@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 "use strict";
 n.d(t, {
   C: () => T,
@@ -135,15 +135,16 @@ function T(e) {
       location: "VideoButton"
     }),
     {
-      squareButtons: A
+      squareButtons: A,
+      coloredIcons: C
     } = (0, f.Z)({
       location: "VideoButton"
     }),
-    C = ((0, p.Z)({
+    R = (0, p.Z)({
       location: "VideoButton"
-    }) || N === d.BK.GroupedButtonsRedMic) && !n ? "primaryDark" : "green";
-  n && (C = "join");
-  let R = e => n ? "join" : (A || N === d.BK.GroupedButtonsRedMic) && e ? "green" : S.color;
+    }),
+    P = () => n ? "join" : C && t ? "green" : R || N === d.BK.GroupedButtonsRedMic ? "primaryDark" : "green",
+    w = e => n ? "join" : (A || N === d.BK.GroupedButtonsRedMic) && e ? "green" : S.color;
   return (0, r.jsx)(I, {
     enabled: t,
     join: n,
@@ -162,8 +163,8 @@ function T(e) {
         isActive: s
       } = e, l = O(e, ["unavailable", "onMouseEnter", "onMouseLeave", "isActive"]);
       return (0, r.jsx)(T, y(v({}, l, S), {
-        color: R(s),
-        caretColor: C,
+        color: w(s),
+        caretColor: P(),
         isActive: s,
         onMouseEnter: e => {
           var t;

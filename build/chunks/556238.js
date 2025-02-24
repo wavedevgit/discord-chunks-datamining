@@ -1,4 +1,4 @@
-/** Chunk was on 72320 (1e8df417eada106d.js) **/
+/** Chunk was on 72320 **/
 e.exports = {
   sortDropdown: "sortDropdown__27f60",
   sortDropdownInner: "sortDropdownInner__27f60",

@@ -1,4 +1,4 @@
-/** Chunk was on 27919 (ccd8c662fa1093a3.js) **/
+/** Chunk was on 27919 **/
 e.exports = {
   content: "content__3ff0e",
   warning: "warning__3ff0e",

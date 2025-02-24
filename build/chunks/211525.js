@@ -1,4 +1,4 @@
-/** Chunk was on 9924 (bb00f90c16650736.js) **/
+/** Chunk was on 9924 **/
 e.exports = {
   sidebar: "sidebar__6b102",
   innerContainer: "innerContainer__6b102",

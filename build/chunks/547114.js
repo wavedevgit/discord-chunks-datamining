@@ -1,4 +1,4 @@
-/** Chunk was on 10125 (9bad2507b7648bc0.js) **/
+/** Chunk was on 10125 **/
 e.exports = {
   page: "page__4c945",
   bgImg: "bgImg__4c945",

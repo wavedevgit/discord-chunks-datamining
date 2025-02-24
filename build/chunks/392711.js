@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 e = n.nmd(e), (function() {
   var r, i = "4.17.19",
     o = 200,

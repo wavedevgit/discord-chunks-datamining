@@ -1,4 +1,4 @@
-/** Chunk was on 90728 (f68c32709458369a.js) **/
+/** Chunk was on 90728 **/
 e.exports = {
   headerBar: "headerBar__8a7fc",
   overlay: "overlay__8a7fc",

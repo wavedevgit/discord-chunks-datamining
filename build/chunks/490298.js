@@ -1,4 +1,4 @@
-/** Chunk was on 80237 (68cc2a668cd36f89.js) **/
+/** Chunk was on 80237 **/
 "use strict";
 e.exports = {
   wrapper: "wrapper_d5ee5c",

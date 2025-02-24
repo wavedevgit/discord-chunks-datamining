@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
   Z: () => B
 }), n(47120);
@@ -21,10 +21,10 @@ var r, i = n(200651),
   _ = n(540059),
   O = n(860144),
   j = n(214852),
-  x = n(518311),
-  C = n(355298),
-  S = n(869404),
-  P = n(333984),
+  C = n(518311),
+  x = n(355298),
+  P = n(869404),
+  S = n(333984),
   N = n(210887),
   I = n(592125),
   Z = n(158776),
@@ -382,7 +382,7 @@ class G extends(r = l.Component) {
         children: [(0, i.jsx)("span", {
           className: D.headerText,
           children: A.NW.string(A.t.YUU0RE)
-        }), (0, i.jsx)(x.Z, {
+        }), (0, i.jsx)(C.Z, {
           tooltip: A.NW.string(A.t["6Urw1t"]),
           tooltipPosition: "top",
           popoutAlign: "left",
@@ -431,10 +431,10 @@ let B = e => {
     } = e,
     h = l.Children.count(a),
     g = I.Z.getMutablePrivateChannels(),
-    m = (0, S.k1)(g),
-    b = (0, u.Wu)([w.Z, C.Z, P.Z], () => {
+    m = (0, P.k1)(g),
+    b = (0, u.Wu)([w.Z, x.Z, S.Z], () => {
       let e = w.Z.getPrivateChannelIds();
-      return (0, S.tU)(e, [C.Z, P.Z])
+      return (0, P.tU)(e, [x.Z, S.Z])
     }, []);
   (0, j.z)(O.R);
   let v = (0, u.cj)([f.Z, N.Z, I.Z], () => ({
@@ -442,9 +442,9 @@ let B = e => {
       keyboardModeEnabled: f.Z.keyboardModeEnabled,
       version: null != r ? "".concat(r, ":").concat(I.Z.getPrivateChannelsVersion()) : I.Z.getPrivateChannelsVersion()
     })),
-    x = l.useRef(null),
+    C = l.useRef(null),
     Z = l.useCallback(e => {
-      let t = x.current,
+      let t = C.current,
         n = document.querySelector(e);
       null != t && null != n && t.scrollIntoViewNode({
         node: n,
@@ -459,14 +459,14 @@ let B = e => {
       })
     }, []),
     E = l.useCallback(() => new Promise(e => {
-      let t = x.current;
+      let t = C.current;
       if (null == t) return e();
       t.scrollToTop({
         callback: () => requestAnimationFrame(() => e())
       })
     }), []),
     A = l.useCallback(() => new Promise(e => {
-      let t = x.current;
+      let t = C.current;
       if (null == t) return e();
       t.scrollToBottom({
         callback() {
@@ -490,7 +490,7 @@ let B = e => {
       isVisualRefreshEnabled: t,
       channels: m,
       privateChannelIds: b,
-      listRef: x,
+      listRef: C,
       theme: o,
       version: r
     }, e), {

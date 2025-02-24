@@ -1,4 +1,4 @@
-/** Chunk was on 15066 (25d936b030f826b6.js) **/
+/** Chunk was on 15066 **/
 e.exports = {
   container: "container_b7e1cb",
   gifFavoriteButton: "gifFavoriteButton_b7e1cb",

@@ -1,4 +1,4 @@
-/** Chunk was on 43350 (5b004351567d6d46.js) **/
+/** Chunk was on 43350 **/
 e.exports = {
   spacing: "spacing__837b7",
   modalContent: "modalContent__837b7",

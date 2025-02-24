@@ -1,4 +1,4 @@
-/** Chunk was on 37874 (f9f84ee34eb11b63.js) **/
+/** Chunk was on 37874 **/
 e.exports = {
   button: "button__46219",
   separatorDot: "separatorDot__46219",

@@ -1,4 +1,4 @@
-/** Chunk was on 26812 (fa1ee2864cbf120e.js) **/
+/** Chunk was on 26812 **/
 e.exports = {
   container: "container_a3fac7",
   centerText: "centerText_a3fac7",

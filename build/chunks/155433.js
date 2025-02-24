@@ -1,4 +1,4 @@
-/** Chunk was on 87209 (19cc23bc6782e89c.js) **/
+/** Chunk was on 87209 **/
 e.d(a, {
   P: () => i
 });

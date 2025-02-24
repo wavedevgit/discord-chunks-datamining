@@ -1,4 +1,4 @@
-/** Chunk was on 59650 (77bde56551862fe7.js) **/
+/** Chunk was on 59650 **/
 t.exports = {
   container: "container_ca98d9",
   footer: "footer_ca98d9",

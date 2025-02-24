@@ -1,4 +1,4 @@
-/** Chunk was on 7232 (ebde331f36d9ec84.js) **/
+/** Chunk was on 7232 **/
 t.exports = {
   modal: "modal__28393",
   closeIcon: "closeIcon__28393",

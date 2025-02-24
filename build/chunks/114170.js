@@ -1,4 +1,4 @@
-/** Chunk was on 38597 (284c18b018f79f5f.js) **/
+/** Chunk was on 38597 **/
 var a = r(553616),
   n = r(64774),
   s = {};

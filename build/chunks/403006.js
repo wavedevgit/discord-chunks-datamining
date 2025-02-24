@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 "use strict";
 var t, n = "function" == typeof Map && Map.prototype ? Map : null,
   r = "function" == typeof Set && Set.prototype ? Set : null;

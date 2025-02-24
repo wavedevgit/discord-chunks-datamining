@@ -1,4 +1,4 @@
-/** Chunk was on 17712 (77dc08ca03477156.js) **/
+/** Chunk was on 17712 **/
 l.exports = {
   card: "card__9522a",
   itemGroup: "itemGroup__9522a",

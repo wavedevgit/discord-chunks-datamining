@@ -1,4 +1,4 @@
-/** Chunk was on 67650 (ca36fce5e5a478d7.js) **/
+/** Chunk was on 67650 **/
 e.exports = {
   header: "header__38262",
   subtitle: "subtitle__38262",

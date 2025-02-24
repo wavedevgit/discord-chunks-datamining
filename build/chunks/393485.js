@@ -1,4 +1,4 @@
-/** Chunk was on 39369 (2df8849bbd5536ba.js) **/
+/** Chunk was on 39369 **/
 e.exports = {
   eventStatusContainer: "eventStatusContainer__29021",
   isRecurring: "isRecurring__29021",

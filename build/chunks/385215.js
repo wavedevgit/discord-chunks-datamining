@@ -1,4 +1,4 @@
-/** Chunk was on 72365 (318c2bcb7e4ad854.js) **/
+/** Chunk was on 72365 **/
 t.exports = {
   header: "header_d0b769",
   content: "content_d0b769",

@@ -1,4 +1,4 @@
-/** Chunk was on 958 (3d7058ebe6bce065.js) **/
+/** Chunk was on 958 **/
 e.exports = {
   closeIcon: "closeIcon__4f15b"
 }

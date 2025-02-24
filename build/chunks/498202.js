@@ -1,4 +1,4 @@
-/** Chunk was on 54642 (e1778b6d367ef99c.js) **/
+/** Chunk was on 54642 **/
 e.exports = {
   bottomMargin: "bottomMargin_d5f35b",
   topMargin: "topMargin_d5f35b",

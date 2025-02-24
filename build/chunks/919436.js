@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
   Z: () => R
 }), n(411104), n(47120);
@@ -21,10 +21,10 @@ var r, i = n(200651),
   _ = n(944486),
   O = n(594174),
   j = n(451478),
-  x = n(276952),
-  C = n(682662),
-  S = n(662146),
-  P = n(674552),
+  C = n(276952),
+  x = n(682662),
+  P = n(662146),
+  S = n(674552),
   N = n(981631),
   I = n(704857);
 
@@ -165,20 +165,20 @@ class D extends(r = l.PureComponent) {
     } = this.state, v = e.isMultiUserDM() && null == e.icon && h;
     return (0, i.jsx)(o.animated.div, {
       style: this.getAnimatedStyle(),
-      children: (0, i.jsxs)(C.H, {
-        children: [(0, i.jsx)(x.Z, {
+      children: (0, i.jsxs)(x.H, {
+        children: [(0, i.jsx)(C.Z, {
           hovered: !b && g,
           selected: !b && n,
           unread: !b && p,
           className: I.pill
-        }), (0, i.jsx)(S.Z, {
+        }), (0, i.jsx)(P.Z, {
           text: null != t ? t : "",
           selected: n,
           children: (0, i.jsx)(c.aRk, {
             rounded: f,
             selected: !f && (n || g),
-            lowerBadge: r > 0 ? (0, P.Ne)(r) : null,
-            upperBadge: (0, P.Or)({
+            lowerBadge: r > 0 ? (0, S.Ne)(r) : null,
+            upperBadge: (0, S.Or)({
               audio: l,
               video: s,
               screenshare: u,
@@ -273,10 +273,10 @@ let R = l.forwardRef(function(e, t) {
     }),
     O = l === n,
     j = !1,
-    x = !1;
-  O && (j = o === N.WtW.VOICE, x = o === N.WtW.VIDEO);
-  let C = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
-    S = (0, f.Q3)("DirectMessage");
+    C = !1;
+  O && (j = o === N.WtW.VOICE, C = o === N.WtW.VIDEO);
+  let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
+    P = (0, f.Q3)("DirectMessage");
   return (0, i.jsx)(D, E(w({}, e), {
     ref: t,
     channelName: r,
@@ -284,11 +284,11 @@ let R = l.forwardRef(function(e, t) {
     selected: u === n,
     badge: p,
     audio: j,
-    video: x,
+    video: C,
     stream: a,
     isCurrentUserInThisDMCall: O,
     isGDMFacepileEnabled: m,
-    size: S ? C : 56,
-    isVisualRefreshEnabled: S
+    size: P ? x : 56,
+    isVisualRefreshEnabled: P
   }))
 })

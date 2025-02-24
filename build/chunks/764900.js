@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 var r = n(957578).Buffer,
   i = n(63523).Transform,
   o = n(2682).StringDecoder;

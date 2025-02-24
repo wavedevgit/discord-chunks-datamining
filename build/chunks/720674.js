@@ -1,4 +1,4 @@
-/** Chunk was on 59716 (7b0c49f5c125b612.js) **/
+/** Chunk was on 59716 **/
 e.exports = {
   root: "root__59ad9",
   disclaimer: "disclaimer__59ad9",

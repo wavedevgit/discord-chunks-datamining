@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (6f02c158d7813e32.js) **/
+/** Chunk was on 71611 **/
 n.d(t, {
   Z: () => ef
 }), n(47120);
@@ -100,11 +100,17 @@ let ea = i.memo(function(e) {
     enabled: l
   } = (0, p.Z)({
     location: "AudienceControlTray"
+  }), {
+    coloredIcons: s
+  } = (0, x.Z)({
+    location: "AudienceControlTray"
   });
   return i ? (0, r.jsxs)("div", {
     className: ei.container,
     children: [(0, r.jsxs)("div", {
-      className: ei.buttonSection,
+      className: o()(ei.buttonSection, {
+        [ei.experimentButtonSection]: s
+      }),
       children: [(0, r.jsx)(ed, {
         channelId: t.id
       }), n ? (0, r.jsx)(eo, {
@@ -330,16 +336,20 @@ let ep = i.memo(function(e) {
     enabled: C
   } = (0, j.Z)(), v = (0, E.Z)(t), {
     limit: y,
-    reachedLimit: x
-  } = (0, O.Z)(t), A = (0, a.e7)([U.default], () => U.default.getCurrentUser()), w = (0, a.e7)([L.Z], () => (0, b.Z)(L.Z)), M = (0, a.e7)([W.Z], () => W.Z.getVoiceChannelId() === t.id, [t.id]), D = (0, a.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, Y.PK)(t.id), H = y > 0, V = x && !B || null != D && D.user.id !== (null == A ? void 0 : A.id), z = (0, N.Z)({
+    reachedLimit: A
+  } = (0, O.Z)(t), w = (0, a.e7)([U.default], () => U.default.getCurrentUser()), M = (0, a.e7)([L.Z], () => (0, b.Z)(L.Z)), D = (0, a.e7)([W.Z], () => W.Z.getVoiceChannelId() === t.id, [t.id]), B = (0, a.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), H = (0, Y.PK)(t.id), V = y > 0, z = A && !H || null != B && B.user.id !== (null == w ? void 0 : w.id), q = (0, N.Z)({
     location: "SpeakerControlTray"
   }), {
-    enabled: q
+    enabled: K
   } = (0, p.Z)({
     location: "SpeakerControlTray"
+  }), {
+    coloredIcons: X
+  } = (0, x.Z)({
+    location: "SpeakerControlTray"
   });
-  if (null == A) return null;
-  let K = (0, r.jsxs)(r.Fragment, {
+  if (null == w) return null;
+  let Q = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.yRy, {
       renderPopout: e => {
         let {
@@ -348,13 +358,13 @@ let ep = i.memo(function(e) {
         return (0, r.jsx)(T.Z, {
           children: (0, r.jsx)(f.Z, {
             onClose: t,
-            simplified: q
+            simplified: K
           })
         })
       },
       position: "top",
-      align: z ? "right" : "center",
-      spacing: z ? 16 : void 0,
+      align: q ? "right" : "center",
+      spacing: q ? 16 : void 0,
       animation: s.yRy.Animation.FADE,
       children: (e, t) => {
         let {
@@ -369,25 +379,27 @@ let ep = i.memo(function(e) {
           cameraUnavailable: _,
           onChange: I.r,
           onCameraUnavailable: Z.Z,
-          channelLimitReached: x,
+          channelLimitReached: A,
           channelLimit: y,
           popoutOpen: i,
           onPopoutClick: n
         })
       }
-    }), z ? null : (0, r.jsx)(I.NZ, {
+    }), q ? null : (0, r.jsx)(I.NZ, {
       channel: t,
-      currentUser: A,
+      currentUser: w,
       exitFullScreen: () => null,
-      canGoLive: w,
+      canGoLive: M,
       hasPermission: v,
-      disabled: V
+      disabled: z
     })]
   });
-  return z ? (0, r.jsxs)("div", {
+  return q ? (0, r.jsxs)("div", {
     className: ei.experimentWrapper,
-    children: [M && !n ? (0, r.jsx)("div", {
-      className: ei.buttonSection,
+    children: [D && !n ? (0, r.jsx)("div", {
+      className: o()(ei.buttonSection, {
+        [ei.experimentButtonSection]: X
+      }),
       children: (0, r.jsxs)("div", {
         className: o()(ei.avControls),
         children: [(0, r.jsx)(s.yRy, {
@@ -396,7 +408,7 @@ let ep = i.memo(function(e) {
               closePopout: t
             } = e;
             return (0, r.jsx)(T.Z, {
-              children: q ? (0, r.jsx)(h.default, {
+              children: K ? (0, r.jsx)(h.default, {
                 onClose: t,
                 renderInputDevices: !0,
                 renderInputModes: !0,
@@ -434,30 +446,32 @@ let ep = i.memo(function(e) {
               awaitingRemote: u
             })
           }
-        }), H && (0, r.jsx)("div", {
+        }), V && (0, r.jsx)("div", {
           className: ei.avSpacing,
           "aria-hidden": "true",
           role: "presentation"
-        }), H && K]
+        }), V && Q]
       })
     }) : null, (0, r.jsxs)("div", {
-      className: ei.buttonSection,
-      children: [M && !n && H ? (0, r.jsx)(I.NZ, {
+      className: o()(ei.buttonSection, {
+        [ei.experimentButtonSection]: X
+      }),
+      children: [D && !n && V ? (0, r.jsx)(I.NZ, {
         channel: t,
-        currentUser: A,
+        currentUser: w,
         exitFullScreen: () => null,
-        canGoLive: w,
+        canGoLive: M,
         hasPermission: v,
-        disabled: V
+        disabled: z
       }) : null, (0, r.jsx)(ed, {
         channelId: t.id
-      }), M && (0, r.jsx)(eo, {
+      }), D && (0, r.jsx)(eo, {
         channel: t
-      }), M && c && n && (0, r.jsx)(es, {
+      }), D && c && n && (0, r.jsx)(es, {
         onClick: () => (0, F.RK)(t, !1)
-      }), M && !n && (0, r.jsx)(eu, {
+      }), D && !n && (0, r.jsx)(eu, {
         onClick: () => (0, F.yi)(t)
-      }), q ? (0, r.jsx)(S.Z, {
+      }), K ? (0, r.jsx)(S.Z, {
         channel: t
       }) : null]
     }), (0, r.jsx)(ec, {
@@ -467,11 +481,11 @@ let ep = i.memo(function(e) {
     className: ei.container,
     children: [(0, r.jsx)(ed, {
       channelId: t.id
-    }), M && (0, r.jsx)(eo, {
+    }), D && (0, r.jsx)(eo, {
       channel: t
-    }), M && !n ? (0, r.jsxs)("div", {
+    }), D && !n ? (0, r.jsxs)("div", {
       className: o()(ei.avControls, ei.buttonSpacing),
-      children: [H && K, (0, r.jsx)(s.yRy, {
+      children: [V && Q, (0, r.jsx)(s.yRy, {
         renderPopout: e => {
           let {
             closePopout: t
@@ -505,9 +519,9 @@ let ep = i.memo(function(e) {
           })
         }
       })]
-    }) : null, M && c && n && (0, r.jsx)(es, {
+    }) : null, D && c && n && (0, r.jsx)(es, {
       onClick: () => (0, F.RK)(t, !1)
-    }), M && !n && (0, r.jsx)(eu, {
+    }), D && !n && (0, r.jsx)(eu, {
       onClick: () => (0, F.yi)(t)
     }), (0, r.jsx)(ec, {
       channel: t
@@ -520,11 +534,17 @@ function eh(e) {
     channel: t
   } = e, n = (0, N.Z)({
     location: "StartStageControlTray"
+  }), {
+    coloredIcons: i
+  } = (0, x.Z)({
+    location: "StartStageControlTray"
   });
   return n ? (0, r.jsxs)("div", {
     className: ei.experimentWrapper,
     children: [(0, r.jsx)("div", {
-      className: n ? ei.buttonSection : void 0,
+      className: o()(ei.buttonSection, {
+        [ei.experimentButtonSection]: i
+      }),
       children: (0, r.jsx)(ed, {
         channelId: t.id
       })

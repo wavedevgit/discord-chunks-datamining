@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
   Z: () => Y
 }), n(47120), n(411104);
@@ -23,10 +23,10 @@ var i = n(120356),
   _ = n(431328),
   O = n(501655),
   j = n(427679),
-  x = n(368442),
-  C = n(201469),
-  S = n(680089),
-  P = n(592125),
+  C = n(368442),
+  x = n(201469),
+  P = n(680089),
+  S = n(592125),
   N = n(430824),
   I = n(607744),
   Z = n(496675),
@@ -141,7 +141,7 @@ class z extends D.ZP {
       isFavoriteSuggestion: _
     } = this.props, {
       shouldShowGuildVerificationPopout: O
-    } = this.state, j = this.getVoiceStatesCount(), x = (0, r.jsxs)("li", {
+    } = this.state, j = this.getVoiceStatesCount(), C = (0, r.jsxs)("li", {
       className: l()(this.getModeClass(), {
         [U.disabled]: this.isDisabled()
       }),
@@ -209,7 +209,7 @@ class z extends D.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return h && (x = c(x)), d && (x = o(s(x))), x
+    return h && (C = c(C)), d && (C = o(s(C))), C
   }
   constructor(...e) {
     super(...e), V(this, "state", {
@@ -319,8 +319,8 @@ function Y(e) {
   } = e, c = (0, o.cj)([w.ZP], () => ({
     unread: w.ZP.hasUnread(n.id),
     mentionCount: w.ZP.getMentionCount(n.id)
-  })), u = (0, o.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(n)), d = (0, o.cj)([P.Z, I.Z, Z.Z], () => {
-    let e = P.Z.getChannel(n.parent_id),
+  })), u = (0, o.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(n)), d = (0, o.cj)([S.Z, I.Z, Z.Z], () => {
+    let e = S.Z.getChannel(n.parent_id),
       r = I.Z.getCheck(n.guild_id);
     return {
       canManageChannel: null != t && Z.Z.can(M.Plq.MANAGE_CHANNELS, n),
@@ -330,10 +330,10 @@ function Y(e) {
       bypassLimit: Z.Z.can(M.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, o.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), h = (0, C.ZP)(n.id), f = (0, o.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, _.Rk)(n.id, O.pV.AUDIENCE), {
+  }), p = (0, o.e7)([P.Z], () => P.Z.isCollapsed(n.parent_id)), h = (0, x.ZP)(n.id), f = (0, o.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, _.Rk)(n.id, O.pV.AUDIENCE), {
     isSubscriptionGated: b,
     needSubscriptionToAccess: v
-  } = (0, m.Z)(n.id), y = (0, o.e7)([E.ZP], () => E.ZP.isFavorite(t.id, n.id)), N = (0, x.xJ)(n.id), T = (0, R.Z)({
+  } = (0, m.Z)(n.id), y = (0, o.e7)([E.ZP], () => E.ZP.isFavorite(t.id, n.id)), N = (0, C.xJ)(n.id), T = (0, R.Z)({
     channel: n,
     isChannelSelected: !1,
     isChannelCollapsed: a,

@@ -1,4 +1,4 @@
-/** Chunk was on 18879 (61c33b8684717ba5.js) **/
+/** Chunk was on 18879 **/
 t.exports = {
   contentContainer: "contentContainer_f0889e",
   title: "title_f0889e",

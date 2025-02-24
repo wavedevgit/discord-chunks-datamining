@@ -1,4 +1,4 @@
-/** Chunk was on 90728 (f68c32709458369a.js) **/
+/** Chunk was on 90728 **/
 e.exports = {
   sectionTitle: "sectionTitle_d2a5f7",
   titleExtraPadding: "titleExtraPadding_d2a5f7",

@@ -1,4 +1,4 @@
-/** Chunk was on 45620 (eb98f0baf40470d3.js) **/
+/** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
   K: () => p,
@@ -6,16 +6,16 @@ r.d(t, {
 });
 var n = r(200651);
 r(192379);
-var l = r(120356),
-  i = r.n(l),
-  a = r(800108),
-  o = r(697604),
+var i = r(120356),
+  l = r.n(i),
+  o = r(800108),
+  a = r(697604),
   s = r(615259),
   c = r(864544);
 let d = () => 4 * Math.random() + 8,
   u = [d(), d(), d()],
   p = () => (0, n.jsx)("div", {
-    className: i()(s.skeleton, c.shopCard),
+    className: l()(s.skeleton, c.shopCard),
     children: (0, n.jsxs)("div", {
       className: s.cardBody,
       children: [(0, n.jsx)("div", {
@@ -30,11 +30,11 @@ let d = () => 4 * Math.random() + 8,
     })
   }),
   f = () => (0, n.jsx)("div", {
-    className: a.skeletons,
+    className: o.skeletons,
     children: u.map(e => (0, n.jsxs)("div", {
-      className: a.cardsContainer,
+      className: o.cardsContainer,
       children: [(0, n.jsx)("div", {
-        className: i()(s.skeleton, o.shopBanner),
+        className: l()(s.skeleton, a.shopBanner),
         children: (0, n.jsx)("div", {
           className: s.bannerBody
         })

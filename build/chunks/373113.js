@@ -1,50 +1,50 @@
-/** Chunk was on 45620 (eb98f0baf40470d3.js) **/
+/** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => i
+  Z: () => l
 });
 var n = r(200651);
 r(192379);
-var l = r(569954);
+var i = r(569954);
 
-function i() {
+function l() {
   return (0, n.jsxs)("div", {
-    className: l.__invalid_snowflakes,
+    className: i.__invalid_snowflakes,
     children: [(0, n.jsx)("div", {
-      className: l.snowflake,
+      className: i.snowflake,
       children: "❅"
     }), (0, n.jsx)("div", {
-      className: l.snowflake,
+      className: i.snowflake,
       children: "❅"
     }), (0, n.jsx)("div", {
-      className: l.snowflake,
+      className: i.snowflake,
       children: "❅"
     }), (0, n.jsx)("div", {
-      className: l.snowflake,
+      className: i.snowflake,
       children: "❅"
     }), (0, n.jsx)("div", {
-      className: l.snowflake,
+      className: i.snowflake,
       children: "❅"
     }), (0, n.jsx)("div", {
-      className: l.snowflake,
+      className: i.snowflake,
       children: "❅"
     }), (0, n.jsx)("div", {
-      className: l.snowflake,
+      className: i.snowflake,
       children: "❅"
     }), (0, n.jsx)("div", {
-      className: l.snowflake,
+      className: i.snowflake,
       children: "❅"
     }), (0, n.jsx)("div", {
-      className: l.snowflake,
+      className: i.snowflake,
       children: "❅"
     }), (0, n.jsx)("div", {
-      className: l.snowflake,
+      className: i.snowflake,
       children: "❅"
     }), (0, n.jsx)("div", {
-      className: l.snowflake,
+      className: i.snowflake,
       children: "❅"
     }), (0, n.jsx)("div", {
-      className: l.snowflake,
+      className: i.snowflake,
       children: "❅"
     })]
   })

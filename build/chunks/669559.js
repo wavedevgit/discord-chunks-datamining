@@ -1,4 +1,4 @@
-/** Chunk was on 70846 (2c51dd3a340115ff.js) **/
+/** Chunk was on 70846 **/
 e.exports = {
   footer: "footer_d9f765",
   closeContainer: "closeContainer_d9f765",

@@ -1,4 +1,4 @@
-/** Chunk was on 79783 (b93f927a079fdfee.js) **/
+/** Chunk was on 79783 **/
 var r = {
   channelIcon: "channelIcon_e98186",
   lockIcon: "lockIcon_e98186",

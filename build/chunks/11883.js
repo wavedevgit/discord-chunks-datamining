@@ -1,4 +1,4 @@
-/** Chunk was on 39369 (2df8849bbd5536ba.js) **/
+/** Chunk was on 39369 **/
 t.r(e.exports = {
   wrapper: "wrapper_d5f3cd",
   header: "header_d5f3cd",

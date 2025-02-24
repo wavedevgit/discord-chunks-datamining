@@ -1,4 +1,4 @@
-/** Chunk was on 50256 (6cc35ec2a752b10d.js) **/
+/** Chunk was on 50256 **/
 i.r(s), i.d(s, {
   default: () => t
 });

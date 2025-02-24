@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (001d1b875900c1de.js) **/
+/** Chunk was on 1272 **/
 e.exports = {
   inviteSmall: "inviteSmall_f1d99d",
   content: "content_f1d99d",

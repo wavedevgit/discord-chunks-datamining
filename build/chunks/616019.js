@@ -1,4 +1,4 @@
-/** Chunk was on 55183 (0d0ebe2c1804408a.js) **/
+/** Chunk was on 55183 **/
 e.exports = {
   previewContainer: "previewContainer__92e52",
   effectDescriptionBorder: "effectDescriptionBorder__92e52",

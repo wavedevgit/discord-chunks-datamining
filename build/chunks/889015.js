@@ -1,4 +1,4 @@
-/** Chunk was on 87626 (7302f874375eaddb.js) **/
+/** Chunk was on 87626 **/
 a.r(e.exports = {
   header: "header__659bf",
   headerInner: "headerInner__659bf",

@@ -1,4 +1,4 @@
-/** Chunk was on 58131 (371aeba7b5e22b33.js) **/
+/** Chunk was on 58131 **/
 e.exports = {
   root: "root__0d52d",
   wrapper: "wrapper__0d52d",

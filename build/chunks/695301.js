@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
   Z: () => b
 });
@@ -21,15 +21,15 @@ let b = i.memo(function(e) {
   let {
     guildNode: b,
     lowerBadge: v
-  } = e, y = b.id, _ = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), O = (0, a.E)(_), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), C = (0, c.Z)(e => e.guildId), S = (0, f.Z)(y), {
-    badge: P,
+  } = e, y = b.id, _ = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), O = (0, a.E)(_), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), x = (0, c.Z)(e => e.guildId), P = (0, f.Z)(y), {
+    badge: S,
     unread: N,
     isMentionLowImportance: I
   } = (0, l.cj)([d.default], () => ({
     badge: d.default.getMentionCount(y),
     isMentionLowImportance: d.default.getIsMentionLowImportance(y),
     unread: d.default.hasUnread(y)
-  })), Z = (0, s.Ij)(_) && 0 === P, w = i.useMemo(() => null != v ? v : Z ? (0, r.jsx)("div", {
+  })), Z = (0, s.Ij)(_) && 0 === S, w = i.useMemo(() => null != v ? v : Z ? (0, r.jsx)("div", {
     className: m.pauseBackground,
     children: (0, r.jsx)(o.fpf, {
       size: "custom",
@@ -58,14 +58,14 @@ let b = i.memo(function(e) {
     return e
   }({}, e), n = n = {
     guild: _,
-    unavailable: x,
+    unavailable: C,
     animatable: j,
-    selected: C === y,
-    badge: P,
+    selected: x === y,
+    badge: S,
     isMentionLowImportance: I,
     lowerBadge: w,
     unread: N,
-    mediaState: S,
+    mediaState: P,
     guildJoinRequestStatus: O
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

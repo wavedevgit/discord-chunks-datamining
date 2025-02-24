@@ -1,6 +1,6 @@
 /**
   Module ID: 32098
-  Original File Name: 98277897ff6da371
+  Original File Name: db514154b12380e1
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -2537,6 +2537,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .visual-refresh .content__65844 {
     gap: var(--space-12)
+}
+
+.textImportant__877f0 {
+    color: var(--text-primary)
 }
 
 .message_dae006 {
@@ -5327,4 +5331,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=98277897ff6da371.css.map*/
+/*# sourceMappingURL=db514154b12380e1.css.map*/

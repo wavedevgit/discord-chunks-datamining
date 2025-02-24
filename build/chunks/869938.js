@@ -1,4 +1,4 @@
-/** Chunk was on 27978 (f779563f0d0d4e3d.js) **/
+/** Chunk was on 27978 **/
 e.exports = {
   qrLogin: "qrLogin_e16417",
   qrLoginInner: "qrLoginInner_e16417",

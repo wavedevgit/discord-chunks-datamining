@@ -1,4 +1,4 @@
-/** Chunk was on 95883 (28f4eebe68e843c9.js) **/
+/** Chunk was on 95883 **/
 e.exports = {
   mainContainer: "mainContainer_e1323c",
   modal: "modal_e1323c",

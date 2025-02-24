@@ -1,4 +1,4 @@
-/** Chunk was on 78952 (9e16406d44f6a01a.js) **/
+/** Chunk was on 78952 **/
 e.exports = {
   inline: "inline__99afd",
   footer: "footer__99afd",

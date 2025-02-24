@@ -1,4 +1,4 @@
-/** Chunk was on 58121 (396bfcc6a8f93a0e.js) **/
+/** Chunk was on 58121 **/
 e.exports = {
   returnButton: "returnButton__0b563",
   returnButtonText: "returnButtonText__0b563",

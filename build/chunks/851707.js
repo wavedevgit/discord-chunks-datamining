@@ -1,4 +1,4 @@
-/** Chunk was on 71567 (60ad2434a2d9f37a.js) **/
+/** Chunk was on 71567 **/
 var r = n(975412)({
   À: "A",
   Á: "A",

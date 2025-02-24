@@ -1,4 +1,4 @@
-/** Chunk was on 27278 (bd601620f7125751.js) **/
+/** Chunk was on 27278 **/
 e.exports = {
   iframe: "iframe__8c55d"
 }

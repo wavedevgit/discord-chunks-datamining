@@ -1,4 +1,4 @@
-/** Chunk was on 72323 (82d5d2142da8c0a7.js) **/
+/** Chunk was on 72323 **/
 t.exports = {
   image: "image_f3406e",
   optionsContainerWrapper: "optionsContainerWrapper_f3406e",

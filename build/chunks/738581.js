@@ -1,4 +1,4 @@
-/** Chunk was on 87188 (749db1ddb934936b.js) **/
+/** Chunk was on 87188 **/
 e.exports = {
   connectedAccountVanityMetadata: "connectedAccountVanityMetadata_fffe42",
   connectedAccountVanityMetadataTag: "connectedAccountVanityMetadataTag_fffe42",

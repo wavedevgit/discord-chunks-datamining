@@ -1,4 +1,4 @@
-/** Chunk was on 71567 (60ad2434a2d9f37a.js) **/
+/** Chunk was on 71567 **/
 var r = n(851707),
   i = n(263604),
   s = /[\xc0-\xd6\xd8-\xf6\xf8-\xff\u0100-\u017f]/g,

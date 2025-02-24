@@ -1,4 +1,4 @@
-/** Chunk was on 78226 (be06091776028b1c.js) **/
+/** Chunk was on 78226 **/
 e.exports = {
   modalBody: "modalBody_b83a17",
   modalContent: "modalContent_b83a17",

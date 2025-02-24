@@ -1,4 +1,4 @@
-/** Chunk was on 74824 (2535eaf4600431d2.js) **/
+/** Chunk was on 74824 **/
 n.d(t, {
   Ei: () => a,
   He: () => o

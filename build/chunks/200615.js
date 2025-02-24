@@ -1,13 +1,13 @@
-/** Chunk was on 45620 (eb98f0baf40470d3.js) **/
+/** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
   F: () => d
 });
 var n = r(200651),
-  l = r(192379),
-  i = r(481060),
-  a = r(906732),
-  o = r(963249),
+  i = r(192379),
+  l = r(481060),
+  o = r(906732),
+  a = r(963249),
   s = r(474936),
   c = r(923250);
 let d = e => {
@@ -15,12 +15,12 @@ let d = e => {
     text: t
   } = e, {
     analyticsLocations: r
-  } = (0, a.ZP)(), d = l.useRef(null);
-  return (0, n.jsx)(i.P3F, {
+  } = (0, o.ZP)(), d = i.useRef(null);
+  return (0, n.jsx)(l.P3F, {
     className: c.subscribeNow,
     innerRef: d,
     onClick: () => {
-      (0, o.Z)({
+      (0, a.Z)({
         subscriptionTier: s.Si.TIER_2,
         analyticsLocations: r,
         returnRef: d

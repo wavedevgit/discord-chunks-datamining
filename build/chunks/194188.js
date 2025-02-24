@@ -1,4 +1,4 @@
-/** Chunk was on 69057 (20b8a41859a6e2a4.js) **/
+/** Chunk was on 69057 **/
 n.d(t, {
   x: () => i
 });

@@ -1,4 +1,4 @@
-/** Chunk was on 11814 (b9188d9bdd9a4469.js) **/
+/** Chunk was on 11814 **/
 e.exports = {
   tile: "tile__72090",
   tileHorizontal: "tileHorizontal__72090",

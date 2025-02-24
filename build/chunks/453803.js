@@ -1,4 +1,4 @@
-/** Chunk was on 2026 (61eedd5611521d75.js) **/
+/** Chunk was on 2026 **/
 e.exports = {
   modalRoot: "modalRoot_c50f62",
   modalContent: "modalContent_c50f62",

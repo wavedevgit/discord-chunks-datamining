@@ -1,6 +1,6 @@
-/** Chunk was on 44799 (d8fb5aa27239cf1c.js) **/
+/** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => j
+  Z: () => C
 });
 var i = t(200651);
 t(192379);
@@ -13,32 +13,34 @@ var r = t(793030),
   d = t(430824),
   u = t(800869),
   x = t(767218),
-  v = t(981631),
-  m = t(783684),
-  p = t(388032),
-  b = t(599985);
+  v = t(309945),
+  m = t(953476),
+  p = t(981631),
+  j = t(783684),
+  b = t(388032),
+  h = t(599985);
 
-function j(e) {
+function C(e) {
   let {
     guildId: n
   } = e, t = (0, a.e7)([d.Z], () => d.Z.getGuild(n));
   if (null != t) return (0, i.jsxs)("div", {
-    className: b.container,
+    className: h.container,
     children: [(0, i.jsxs)("div", {
-      className: b.headerContainer,
+      className: h.headerContainer,
       children: [(0, i.jsx)(r.xv, {
         variant: "eyebrow",
-        children: p.NW.string(m.Z.hjvcLC)
+        children: b.NW.string(j.Z.hjvcLC)
       }), (0, i.jsx)(l.Z, {
         onClick: () => {},
         children: (0, i.jsx)(r.xv, {
           variant: "text-xs/semibold",
           color: "currentColor",
-          children: p.NW.string(p.t.hvVgAQ)
+          children: b.NW.string(b.t.hvVgAQ)
         })
       })]
     }), (0, i.jsxs)("div", {
-      className: b.contentContainer,
+      className: h.contentContainer,
       children: [(0, i.jsx)(x.Z, {
         count: 3,
         type: x.b.AVAILABLE
@@ -49,18 +51,20 @@ function j(e) {
         count: 5,
         type: x.b.TOTAL
       })]
+    }), (0, i.jsx)(u.Z, {}), (0, i.jsx)(v.Z, {
+      powerup: m.O["0"]
     }), (0, i.jsx)(s.Z, {
-      className: b.boostButton,
+      className: h.boostButton,
       guild: t,
       analyticsLocation: {
-        page: v.ZY5.POWERUPS_OVERVIEW,
-        section: v.jXE.POWERUPS_OVERVIEW_SIDEABAR
+        page: p.ZY5.POWERUPS_OVERVIEW,
+        section: p.jXE.POWERUPS_OVERVIEW_SIDEABAR
       },
       color: o.Ttl.CUSTOM,
       size: o.PhG.LARGE,
       icon: (0, i.jsx)(c.Z, {
-        className: b.boostButtonIcon
+        className: h.boostButtonIcon
       })
-    }), (0, i.jsx)(u.Z, {})]
+    })]
   })
 }

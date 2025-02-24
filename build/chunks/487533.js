@@ -1,4 +1,4 @@
-/** Chunk was on 44156 (1f2a21a2a2aa8278.js) **/
+/** Chunk was on 44156 **/
 function k(a, i, x) {
   a.assets[0].p = i;
   let k = a.layers.findIndex(a => "flag" === a.nm);

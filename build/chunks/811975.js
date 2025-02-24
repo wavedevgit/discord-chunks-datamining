@@ -1,4 +1,4 @@
-/** Chunk was on 96858 (4c976e4680766aa4.js) **/
+/** Chunk was on 96858 **/
 e.exports = {
   canvas: "canvas_e99198",
   fallbackImage: "fallbackImage_e99198",

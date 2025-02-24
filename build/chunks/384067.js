@@ -1,13 +1,13 @@
-/** Chunk was on 45620 (eb98f0baf40470d3.js) **/
+/** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
   Z: () => h
 }), r(47120);
 var n = r(200651),
-  l = r(192379),
-  i = r(120356),
-  a = r.n(i),
-  o = r(622535),
+  i = r(192379),
+  l = r(120356),
+  o = r.n(l),
+  a = r(622535),
   s = r(481060),
   c = r(597688),
   d = r(297651),
@@ -18,11 +18,11 @@ let h = e => {
   var t;
   let {
     wideBannerBlock: r,
-    handleTransition: i,
+    handleTransition: l,
     tab: h
-  } = e, C = null === (t = c.Z.getCategoryByStoreListingId(r.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, m = l.useRef(null), [b, g] = l.useState();
-  l.useEffect(() => {
-    let e = m.current;
+  } = e, b = null === (t = c.Z.getCategoryByStoreListingId(r.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, C = i.useRef(null), [m, g] = i.useState();
+  i.useEffect(() => {
+    let e = C.current;
     if (null == e) return;
     let t = () => {
       e.naturalWidth > 0 && e.naturalHeight > 0 && g(1080 * (e.naturalHeight / e.naturalWidth))
@@ -31,25 +31,25 @@ let h = e => {
       e.onload = null
     }
   }, []);
-  let v = null != C ? C : "",
+  let v = null != b ? b : "",
     {
       handleCardVisibilityChange: x
     } = (0, d.E)(v, "home", "marketing wide banner"),
-    _ = r.bannerUrl;
-  return null == _ ? null : (0, n.jsx)(o.$, {
+    j = r.bannerUrl;
+  return null == j ? null : (0, n.jsx)(a.$, {
     onChange: x,
     threshold: 0,
     children: (0, n.jsxs)("div", {
-      className: a()(f.row, f.between, f.section, f.bannerBlockContainer),
+      className: o()(f.row, f.between, f.section, f.bannerBlockContainer),
       children: [(0, n.jsx)("div", {
         className: f.wideBannerBackgroundImg,
         children: (0, n.jsx)("img", {
-          ref: m,
-          src: _,
+          ref: C,
+          src: j,
           alt: r.title,
           style: {
             width: "100%",
-            height: null != b ? "".concat(b, "px") : "auto",
+            height: null != m ? "".concat(m, "px") : "auto",
             objectFit: "cover",
             objectPosition: "left center",
             display: "block"
@@ -58,7 +58,7 @@ let h = e => {
       }), (0, n.jsx)("div", {
         className: f.wideBannerContentContainer,
         style: {
-          maxHeight: null != b ? "".concat(b, "px") : "auto"
+          maxHeight: null != m ? "".concat(m, "px") : "auto"
         },
         children: (0, n.jsxs)("div", {
           className: f.wideBannerTextContainer,
@@ -80,7 +80,7 @@ let h = e => {
       }), !0 !== r.disableCta && (0, n.jsx)(s.zxk, {
         className: f.wideBannerBlockButton,
         color: s.Ttl.WHITE,
-        onClick: () => i("shop wide banner", v),
+        onClick: () => l("shop wide banner", v),
         children: p.NW.string(p.t.jVcuVV)
       })]
     })

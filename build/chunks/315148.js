@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 "use strict";
 e = n.nmd(e);
 var r = this && this.__awaiter || function(e, t, n, r) {

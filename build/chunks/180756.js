@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 var t = 0x3fffffff;
 e.exports = function(e, n) {
   if ("number" != typeof e) throw TypeError("Iterations not a number");

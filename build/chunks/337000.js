@@ -1,4 +1,4 @@
-/** Chunk was on 39511 (da585838472163eb.js) **/
+/** Chunk was on 39511 **/
 e.exports = {
   headerWithImage: "headerWithImage_fa5bb9",
   backgroundImage: "backgroundImage_fa5bb9",

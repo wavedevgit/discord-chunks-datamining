@@ -1,4 +1,4 @@
-/** Chunk was on 18417 (605b1aa80881455f.js) **/
+/** Chunk was on 18417 **/
 e.exports = {
   container: "container_ee8e87",
   browser: "browser_ee8e87",

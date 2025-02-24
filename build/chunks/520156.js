@@ -1,4 +1,4 @@
-/** Chunk was on 54663 (7f1a0631fb746ca5.js) **/
+/** Chunk was on 54663 **/
 s.d(e, {
   AnnouncementModal: () => g
 });

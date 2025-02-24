@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 let t = /^[0-9]+$/,
   n = (e, n) => {
     let r = t.test(e),

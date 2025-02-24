@@ -1,4 +1,4 @@
-/** Chunk was on 11212 (5dc55a6ee4209f2c.js) **/
+/** Chunk was on 11212 **/
 var d = {
   "./champion_1.jpg": "337818",
   "./champion_10.jpg": "489367",

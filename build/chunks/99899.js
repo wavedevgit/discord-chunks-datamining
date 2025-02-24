@@ -1,4 +1,4 @@
-/** Chunk was on 97811 (d795d77fb4299013.js) **/
+/** Chunk was on 97811 **/
 e.exports = {
   title: "title__74df5",
   container: "container__74df5",

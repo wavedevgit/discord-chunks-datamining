@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.ada7066db2976a65.js.js) **/
+/** Chunk was on web.js **/
 "use strict";
 var t, n = "object" == typeof Reflect ? Reflect : null,
   r = n && "function" == typeof n.apply ? n.apply : function(e, t, n) {

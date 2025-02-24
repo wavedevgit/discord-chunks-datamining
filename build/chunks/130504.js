@@ -1,4 +1,4 @@
-/** Chunk was on 72891 (727d2ac86f713c3c.js) **/
+/** Chunk was on 72891 **/
 e.exports = {
   gifPickerContent: "gifPickerContent__6c39d",
   gifPicker: "gifPicker__6c39d",

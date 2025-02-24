@@ -1,4 +1,4 @@
-/** Chunk was on 79005 (4b4b2de560864052.js) **/
+/** Chunk was on 79005 **/
 e.exports = {
   topBar: "topBar__6088c",
   author: "author__6088c",

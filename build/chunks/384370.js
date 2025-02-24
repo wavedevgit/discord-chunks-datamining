@@ -1,4 +1,4 @@
-/** Chunk was on 41849 (ec201fdaa2dc80fc.js) **/
+/** Chunk was on 41849 **/
 e.exports = {
   row: "row__8e830",
   column: "column__8e830",

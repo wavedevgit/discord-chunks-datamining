@@ -1,4 +1,4 @@
-/** Chunk was on 40390 (c2bcd3880510692c.js) **/
+/** Chunk was on 40390 **/
 e.exports = {
   headerContainer: "headerContainer__56d15",
   guildIconContainer: "guildIconContainer__56d15",

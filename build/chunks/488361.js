@@ -1,4 +1,4 @@
-/** Chunk was on 56627 (40b4d129d5695ad7.js) **/
+/** Chunk was on 56627 **/
 e.exports = {
   endScreenOverlay: "endScreenOverlay_afedfc",
   "animate-fade-in": "animate-fade-in_afedfc",

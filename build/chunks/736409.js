@@ -1,4 +1,4 @@
-/** Chunk was on 32098 (8d42f73987ffffd5.js) **/
+/** Chunk was on 32098 **/
 n.d(t, {
   j: () => w
 }), n(47120);
@@ -22,10 +22,10 @@ var r = n(200651),
   _ = n(903002),
   O = n(214492),
   j = n(981631),
-  x = n(921944),
-  C = n(46140),
-  S = n(388032),
-  P = n(94594),
+  C = n(921944),
+  x = n(46140),
+  P = n(388032),
+  S = n(94594),
   N = n(204794);
 let I = {
     topLeftDark: "rgba(62, 22, 137, 0.8)",
@@ -44,18 +44,18 @@ let I = {
       count: b
     } = (0, O.fq)(), v = (0, i.useRef)(null);
     return (0, c.Tbt)(v), (0, r.jsxs)("div", {
-      className: P.wrapper,
+      className: S.wrapper,
       ref: v,
       children: [(0, r.jsx)("div", {
-        className: P.gradient,
+        className: S.gradient,
         style: {
           background: "radial-gradient(75% 75% at 0% 0%, ".concat((0, s.wj)(a) ? I.topLeftDark : I.topLeftLight, " 0%, transparent 100%),\n    radial-gradient(70% 50% at 100% 0%, ").concat((0, s.wj)(a) ? I.topRightDark : I.topRightLight, " 0%, transparent 100%)")
         }
       }), (0, r.jsxs)("div", {
-        className: P.content,
+        className: S.content,
         children: [(0, r.jsx)(c.zxk, {
-          className: P.closeButton,
-          "aria-label": S.NW.string(S.t.cpT0Cg),
+          className: S.closeButton,
+          "aria-label": P.NW.string(P.t.cpT0Cg),
           look: c.zxk.Looks.BLANK,
           size: c.zxk.Sizes.NONE,
           onClick: t,
@@ -66,19 +66,19 @@ let I = {
         }), (0, r.jsx)("img", {
           alt: "",
           src: N.Z,
-          className: P.controllerImage
+          className: S.controllerImage
         }), (0, r.jsx)(l.X6, {
           variant: "heading-md/bold",
-          className: P.title,
-          children: S.NW.string(S.t.PRjSRk)
+          className: S.title,
+          children: P.NW.string(P.t.PRjSRk)
         }), (0, r.jsxs)("div", {
-          className: P.contentContainer,
+          className: S.contentContainer,
           children: [(0, r.jsxs)("div", {
-            className: P.toggleContainer,
+            className: S.toggleContainer,
             children: [(0, r.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "header-primary",
-              children: S.NW.string(S.t.KY0ilp)
+              children: P.NW.string(P.t.KY0ilp)
             }), (0, r.jsx)(c.rsf, {
               onChange: e => {
                 m.G6.updateSetting(e), e && n(e)
@@ -88,14 +88,14 @@ let I = {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "text-secondary",
-            children: S.NW.string(S.t.JW4KKS)
+            children: P.NW.string(P.t.JW4KKS)
           }), (0, r.jsx)(_.D, {
             assets: g,
             assetCount: b,
             size: _.F.SMALL
           })]
         }), (0, r.jsx)(c.zxk, {
-          className: P.viewSettingsButton,
+          className: S.viewSettingsButton,
           onClick: () => {
             t(), u.Z.open(j.oAB.ACTIVITY_PRIVACY, null, {
               analyticsLocations: o
@@ -105,7 +105,7 @@ let I = {
           color: c.zxk.Colors.CUSTOM,
           size: c.zxk.Sizes.TINY,
           fullWidth: !0,
-          children: S.NW.string(S.t.UPLpRU)
+          children: P.NW.string(P.t.UPLpRU)
         })]
       })]
     })
@@ -118,7 +118,7 @@ let I = {
     } = e, {
       rtcPopoutEnabled: s
     } = (0, y.S)("SharingPrivacyPopout"), u = (0, g.Ws)({
-      location: C.dr.CONFLICT_CHECKS
+      location: x.dr.CONFLICT_CHECKS
     }), d = m.G6.useSetting(), [p, h] = (0, i.useState)(!1), _ = (0, o.e7)([b.Z], () => b.Z.getLayers().includes(j.S9g.USER_SETTINGS));
     return ((0, i.useEffect)(() => {
       n && v.default.track(j.rMx.OPEN_POPOUT, {
@@ -136,7 +136,7 @@ let I = {
           position: "bottom",
           align: "center",
           onRequestClose: () => {
-            o(x.L.USER_DISMISS), l(!1), h(!1)
+            o(C.L.USER_DISMISS), l(!1), h(!1)
           },
           renderPopout: e => {
             let {

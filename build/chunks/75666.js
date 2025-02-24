@@ -1,4 +1,4 @@
-/** Chunk was on 72365 (318c2bcb7e4ad854.js) **/
+/** Chunk was on 72365 **/
 n.d(e, {
   AR: () => u,
   C2: () => c,

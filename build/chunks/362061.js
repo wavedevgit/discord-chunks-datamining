@@ -1,11 +1,11 @@
-/** Chunk was on 45620 (eb98f0baf40470d3.js) **/
+/** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => l
+  Z: () => i
 });
 var n = r(200651);
 
-function l(e) {
+function i(e) {
   let {
     isDark: t,
     style: r

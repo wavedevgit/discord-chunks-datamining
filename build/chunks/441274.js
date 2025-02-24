@@ -1,4 +1,4 @@
-/** Chunk was on 71611 (6f02c158d7813e32.js) **/
+/** Chunk was on 71611 **/
 e.exports = {
   wrapper: "wrapper_cb9592",
   normal: "normal_cb9592",

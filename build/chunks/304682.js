@@ -1,4 +1,4 @@
-/** Chunk was on 54934 (485941f9e2d2ddce.js) **/
+/** Chunk was on 54934 **/
 t.exports = {
   header: "header_fc3cf0",
   closeButton: "closeButton_fc3cf0",

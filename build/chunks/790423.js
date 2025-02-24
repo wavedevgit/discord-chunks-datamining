@@ -1,4 +1,4 @@
-/** Chunk was on 53682 (7441ce39592117dc.js) **/
+/** Chunk was on 53682 **/
 e.exports = {
   previewContainer: "previewContainer__9a244",
   quote: "quote__9a244",
