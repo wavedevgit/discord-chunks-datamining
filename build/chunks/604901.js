@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.a4687b32e07d48ae.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
 var r = {
   "./spritesheet-emoji-32.png": "63215",
   "./spritesheet-emoji-40.png": "926720",

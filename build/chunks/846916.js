@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.a4687b32e07d48ae.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
 function t(e) {
   let t = "[A-Za-z_\\u00A1-\\uFFFF][A-Za-z_0-9\\u00A1-\\uFFFF]*",
     n = {

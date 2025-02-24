@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.a4687b32e07d48ae.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
 function t(e) {
   var n = this;
   if (n instanceof t || (n = new t), n.tail = null, n.head = null, n.length = 0, e && "function" == typeof e.forEach) e.forEach(function(e) {

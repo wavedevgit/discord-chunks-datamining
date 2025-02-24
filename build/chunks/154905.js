@@ -1,4 +1,4 @@
-/** Chunk was on 624 (572fcf0aa11379cf.js) **/
+/** Chunk was on 624 (6327fcf0ec798877.js) **/
 e.exports = {
   "max-width": "max-width__5b321",
   container: "container__5b321 max-width__5b321",

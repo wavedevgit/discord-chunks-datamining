@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.a4687b32e07d48ae.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
 function t(e) {
   let t = ["struct", "enum", "interface", "union", "group", "import", "using", "const", "annotation", "extends", "in", "of", "on", "as", "with", "from", "fixed"],
     n = ["Void", "Bool", "Int8", "Int16", "Int32", "Int64", "UInt8", "UInt16", "UInt32", "UInt64", "Float32", "Float64", "Text", "Data", "AnyPointer", "AnyStruct", "Capability", "List"],

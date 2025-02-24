@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.a4687b32e07d48ae.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
 "use strict";
 n(653041), n(411104), ! function(e) {
   var t = Date.now ? Date.now() : +new Date,

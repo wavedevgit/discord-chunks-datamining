@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.a4687b32e07d48ae.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/
 function t(e) {
   let t = ["abs", "acos", "ambient", "area", "asin", "atan", "atmosphere", "attribute", "calculatenormal", "ceil", "cellnoise", "clamp", "comp", "concat", "cos", "degrees", "depth", "Deriv", "diffuse", "distance", "Du", "Dv", "environment", "exp", "faceforward", "filterstep", "floor", "format", "fresnel", "incident", "length", "lightsource", "log", "match", "max", "min", "mod", "noise", "normalize", "ntransform", "opposite", "option", "phong", "pnoise", "pow", "printf", "ptlined", "radians", "random", "reflect", "refract", "renderinfo", "round", "setcomp", "setxcomp", "setycomp", "setzcomp", "shadow", "sign", "sin", "smoothstep", "specular", "specularbrdf", "spline", "sqrt", "step", "tan", "texture", "textureinfo", "trace", "transform", "vtransform", "xcomp", "ycomp", "zcomp"],
     n = ["matrix", "float", "color", "point", "normal", "vector"],

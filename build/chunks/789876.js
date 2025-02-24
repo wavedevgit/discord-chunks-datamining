@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.a4687b32e07d48ae.js.js) **/ ! function(t) {
+/** Chunk was on web (https://canary.discord.comweb.6d4953f88f353958.js.js) **/ ! function(t) {
   "function" == typeof define && define.amd ? define([], t) : e.exports ? e.exports = t() : window.idleCallbackShim = t()
 }(function() {
   "use strict";

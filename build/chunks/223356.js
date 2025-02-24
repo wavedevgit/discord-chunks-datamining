@@ -1,4 +1,4 @@
-/** Chunk was on 83051 (ccf9160888782ea8.js) **/
+/** Chunk was on 83051 (e1d8dc1b24fce132.js) **/
 r.d(t, {
   Tj: () => m,
   WG: () => u,
@@ -9,9 +9,9 @@ var i = r(990547);
 r(804098);
 var n = r(544891),
   l = r(729345),
-  o = r(210887);
+  a = r(210887);
 r(358085);
-var a = r(573261),
+var o = r(573261),
   s = r(981631),
   c = r(388032);
 async function u() {
@@ -62,7 +62,7 @@ async function h(e, t, r) {
     value: "".concat(t.overridePlatformInformation)
   }, {
     name: "theme",
-    value: o.Z.theme
+    value: a.Z.theme
   }];
   "" !== e.description && u.push({
     name: "description",
@@ -106,7 +106,7 @@ async function h(e, t, r) {
     value: t.locale
   })), (0, l.E)(s.GU0.WEB_APP);
   try {
-    return await a.Z.post({
+    return await o.Z.post({
       url: s.ANM.BUG_REPORTS,
       attachments: r,
       fields: u,

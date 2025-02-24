@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (46194273c01318d9.js) **/
+/** Chunk was on 1272 (d3552a4012cf86c5.js) **/
 e.exports = {
   friendsEmpty: "friendsEmpty_c7ea19",
   button: "button_c7ea19",
