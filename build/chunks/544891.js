@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   J9: () => l.J,
-  Jt: () => L,
+  Jt: () => x,
   K0: () => P,
   Pd: () => g,
   f$: () => s.f$,
@@ -102,7 +102,7 @@ function E(e, t, n, r, a) {
     null === (n = t.onRequestProgress) || void 0 === n || n.call(t, e)
   });
   let b = () => {
-    t.backoff = null != t.backoff ? t.backoff : new o.Z, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => x(t.url).then(() => E(e, t, n, r, a)))
+    t.backoff = null != t.backoff ? t.backoff : new o.Z, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => L(t.url).then(() => E(e, t, n, r, a)))
   };
   null == w || null === (d = w.prepareRequest) || void 0 === d || d.call(w, v), v.ok(e => null != e.status), v.then(i => {
     var o, c, u;
@@ -256,10 +256,10 @@ let w = null;
 function D(e) {
   w = e
 }
-let x = () => Promise.resolve();
+let L = () => Promise.resolve();
 
-function L(e) {
-  x = e
+function x(e) {
+  L = e
 }
 
 function M(e) {

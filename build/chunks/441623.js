@@ -72,7 +72,7 @@ function D(e) {
   return !w(e, e.getFullYear()) && w(e, new Date().getFullYear())
 }
 
-function x() {
+function L() {
   if (null != P) {
     q(P);
     return
@@ -112,7 +112,7 @@ function x() {
   }
 }
 
-function L(e) {
+function x(e) {
   return Math.round(s()().diff(e, "years", !0))
 }
 
@@ -182,7 +182,7 @@ function z(e) {
     total: t
   } = e;
   if (null == t) {
-    P = null, x();
+    P = null, L();
     return
   }
   q(t)
@@ -212,7 +212,7 @@ function q(e) {
 }
 class Q extends(r = l.ZP.PersistedStore) {
   initialize(e) {
-    N = T(), null != e && (N.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, N.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), N.messageGiftIntentLastShownMap = v({}, e.messageGiftIntentLastShownMap)), this.syncWith([p.Z, d.Z, f.Z, u.Z], x), H()
+    N = T(), null != e && (N.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, N.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), N.messageGiftIntentLastShownMap = v({}, e.messageGiftIntentLastShownMap)), this.syncWith([p.Z, d.Z, f.Z, u.Z], L), H()
   }
   getState() {
     return N
@@ -239,7 +239,7 @@ class Q extends(r = l.ZP.PersistedStore) {
   }
   getFriendAnniversaryYears(e) {
     let t = R[e];
-    return null == t ? 0 : L(t.friendsSince)
+    return null == t ? 0 : x(t.friendsSince)
   }
   isGiftIntentMessageInCooldown(e) {
     return null != N.messageGiftIntentLastShownMap[e]

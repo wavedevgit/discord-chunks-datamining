@@ -49,16 +49,16 @@ function R(e) {
     analyticsLocations: a,
     isTryItOut: b,
     guildId: null == T ? void 0 : T.id
-  }), [D, x] = i.useState(() => {
+  }), [D, L] = i.useState(() => {
     var e, t;
     if (null != p) return p;
     let r = (0, d.iC)(o, n);
     return null != v ? null !== (e = r.find(e => e.id === v)) && void 0 !== e ? e : null : void 0 !== R ? R : null == w ? null : null !== (t = r.find(e => (0, O.sr)(e, w))) && void 0 !== t ? t : null
   }), {
-    product: L,
+    product: x,
     purchase: M
   } = (0, f.Z)(null == D ? void 0 : D.skuId), k = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, _.Z)(a), G = (0, O.sr)(D, void 0 === R ? w : R), B = e => {
-    x(e), null != e && U(e)
+    L(e), null != e && U(e)
   }, Z = () => {
     P(D), c()
   }, F = i.useCallback(e => {
@@ -71,9 +71,9 @@ function R(e) {
     onClick: Z,
     disabled: G,
     children: A.NW.string(A.t.d6sv6u)
-  }) : null == M && (k || !(0, d.G1)(L)) ? (0, r.jsx)(s.zxk, {
+  }) : null == M && (k || !(0, d.G1)(x)) ? (0, r.jsx)(s.zxk, {
     className: C.modalFooterShopButton,
-    onClick: () => F(null == L ? void 0 : L.skuId),
+    onClick: () => F(null == x ? void 0 : x.skuId),
     children: A.NW.string(A.t.fYfGgI)
   }) : (0, r.jsx)(g.Z, {
     subscriptionTier: N.Si.TIER_2,
@@ -115,8 +115,8 @@ function R(e) {
         color: s.zxk.Colors.PRIMARY,
         onClick: c,
         children: A.NW.string(A.t["ETE/oK"])
-      }), V && (0, d.G1)(L) && (0, r.jsx)(m.Z, {
-        product: L,
+      }), V && (0, d.G1)(x) && (0, r.jsx)(m.Z, {
+        product: x,
         onSecondaryClick: c
       })]
     })]

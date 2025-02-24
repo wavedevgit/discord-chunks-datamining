@@ -14,14 +14,14 @@ n.d(t, {
   ap: () => C,
   bT: () => R,
   dw: () => N,
-  ig: () => L,
+  ig: () => x,
   kr: () => E,
   n2: () => y,
   q_: () => D,
   vU: () => w,
   yA: () => S,
   yh: () => m,
-  zo: () => x
+  zo: () => L
 }), n(301563);
 var r = n(164369),
   i = n(913527),
@@ -213,7 +213,7 @@ function D(e) {
   return !(Date.now() - n > 48 * l.Z.Millis.HOUR)
 }
 
-function x(e) {
+function L(e) {
   let t = S(e);
   if (null == t) return {
     text: null,
@@ -233,7 +233,7 @@ function x(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   var t;
   return null === (t = g(e, a.N.TRENDING_CONTENT)) || void 0 === t ? void 0 : t.trending
 }

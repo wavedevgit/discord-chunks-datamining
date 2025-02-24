@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => L
+  Z: () => x
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -53,7 +53,7 @@ function D(e) {
   }
   return e
 }
-let x = e => {
+let L = e => {
   if (null != e) switch (e) {
     case A.JN.PREMIUM_TENURE_1_MONTH:
       return P.tieredTenureBadgeBronzeGlow;
@@ -76,13 +76,13 @@ let x = e => {
   }
 };
 
-function L(e) {
+function x(e) {
   let {
     badges: t,
     className: n,
     badgeClassName: o,
     displayProfile: w,
-    onClose: L
+    onClose: x
   } = e, {
     analyticsLocations: M
   } = (0, u.ZP)(c.Z.BADGE), {
@@ -113,7 +113,7 @@ function L(e) {
               (null == w ? void 0 : w.userId) === (null == B ? void 0 : B.id) ? (0, m.uL)(N.Z5c.NITRO_HOME) : (0, p.k)({
                 analyticsLocations: M,
                 displayProfile: w
-              }), null == L || L();
+              }), null == x || x();
               return
             }
             if ((null == w ? void 0 : w.userId) === (null == B ? void 0 : B.id)) {
@@ -121,17 +121,17 @@ function L(e) {
                 analyticsLocations: M
               }) : null;
               if (null == n) return;
-              return null == L || L(), n(t)
+              return null == x || x(), n(t)
             }
             return (0, p.k)({
               analyticsLocations: M,
               displayProfile: w
-            }), void(null == L || L())
+            }), void(null == x || x())
           }
           let r = null != e.link ? (0, l.default)(e.link, {
             analyticsLocations: M
           }) : null;
-          if (null != r) return null == L || L(), r(t)
+          if (null != r) return null == x || x(), r(t)
         },
         c = () => {
           e.id === S.i && E.default.track(N.rMx.QUEST_CONTENT_VIEWED, D({}, (0, _.mH)(h.jn.QUEST_BADGE))), j({
@@ -141,7 +141,7 @@ function L(e) {
             analyticsLocations: M
           }, k))
         },
-        u = x(null == t ? void 0 : t.id),
+        u = L(null == t ? void 0 : t.id),
         d = null != t && U,
         g = n && e.id !== C.a ? (0, r.jsx)(f.Z, {
           profileBadge: e,

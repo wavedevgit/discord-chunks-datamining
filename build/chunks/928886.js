@@ -44,8 +44,8 @@ function I(e) {
   } = (0, g.JL)(), {
     isGift: w,
     selectedGiftStyle: D,
-    giftRecipient: x
-  } = (0, m.wD)(), L = w && (0, h.pO)(x) && N === E.h8.CONFIRM && null != D && (null == P ? void 0 : P.productLine) !== v.POd.COLLECTIBLES, M = null != n && null != N, k = [E.h8.SKU_SELECT, E.h8.SELECT_FREE_SKU], j = null != N && !k.includes(N) && null != T, U = (0, d.N)(o), G = !w && null != U && null != T && b.nG[U.trial_id].skus.includes(T), B = (0, u.Ng)(), Z = null == B ? void 0 : null === (t = B.discount) || void 0 === t ? void 0 : t.plan_ids.some(e => b.GP[e].skuId === T), F = !w && null != B && null != T && Z, {
+    giftRecipient: L
+  } = (0, m.wD)(), x = w && (0, h.pO)(L) && N === E.h8.CONFIRM && null != D && (null == P ? void 0 : P.productLine) !== v.POd.COLLECTIBLES, M = null != n && null != N, k = [E.h8.SKU_SELECT, E.h8.SELECT_FREE_SKU], j = null != N && !k.includes(N) && null != T, U = (0, d.N)(o), G = !w && null != U && null != T && b.nG[U.trial_id].skus.includes(T), B = (0, u.Ng)(), Z = null == B ? void 0 : null === (t = B.discount) || void 0 === t ? void 0 : t.plan_ids.some(e => b.GP[e].skuId === T), F = !w && null != B && null != T && Z, {
     enabled: V
   } = c.ZP.useExperiment({
     location: "PaymentModalHeader"
@@ -55,7 +55,7 @@ function I(e) {
   return i.useMemo(() => {
     if (null == N) return;
     let e = null;
-    return L ? e = (0, r.jsxs)("div", {
+    return x ? e = (0, r.jsxs)("div", {
       className: O.container,
       children: [(0, r.jsx)(f.Z, {
         defaultAnimationState: l.SR.LOOP,
@@ -76,8 +76,8 @@ function I(e) {
       showTrialBadge: G,
       showDiscountBadge: F,
       isGift: w,
-      giftRecipient: x,
+      giftRecipient: L,
       useWinterTheme: W
     })), e
-  }, [D, I, C, n, A, T, N, G, F, L, j, M, R, w, x, W])
+  }, [D, I, C, n, A, T, N, G, F, x, j, M, R, w, L, W])
 }

@@ -122,7 +122,7 @@ function T(e, t) {
         action: () => P(i, b, t, m.Qqv.RESOLUTION)
       }, "stream-settings-fps-".concat(t))
     }),
-    x = g.km.map(e => {
+    L = g.km.map(e => {
       let {
         value: t,
         label: n
@@ -141,7 +141,7 @@ function T(e, t) {
       children: D
     }), (0, r.jsx)(a.kSQ, {
       label: v.NW.string(v.t.rHyPXl),
-      children: x
+      children: L
     })]
   })
 }

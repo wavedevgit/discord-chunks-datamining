@@ -119,15 +119,15 @@
     }
   });
   var D = d.unpack,
-    x = d.last,
-    L = function(e) {
+    L = d.last,
+    x = function(e) {
       return Math.round(100 * e) / 100
     },
     M = function() {
       for (var e = [], t = arguments.length; t--;) e[t] = arguments[t];
       var n = D(e, "hsla"),
-        r = x(e) || "lsa";
-      return n[0] = L(n[0] || 0), n[1] = L(100 * n[1]) + "%", n[2] = L(100 * n[2]) + "%", "hsla" === r || n.length > 3 && n[3] < 1 ? (n[3] = n.length > 3 ? n[3] : 1, r = "hsla") : n.length = 3, r + "(" + n.join(",") + ")"
+        r = L(e) || "lsa";
+      return n[0] = x(n[0] || 0), n[1] = x(100 * n[1]) + "%", n[2] = x(100 * n[2]) + "%", "hsla" === r || n.length > 3 && n[3] < 1 ? (n[3] = n.length > 3 ? n[3] : 1, r = "hsla") : n.length = 3, r + "(" + n.join(",") + ")"
     },
     k = d.unpack,
     j = function() {
@@ -362,20 +362,20 @@
       throw Error("unknown hex color: " + e)
     },
     eD = b,
-    ex = E,
-    eL = d.type,
+    eL = E,
+    ex = d.type,
     eM = f,
     ek = eC;
-  ex.prototype.hex = function(e) {
+  eL.prototype.hex = function(e) {
     return ek(this._rgb, e)
   }, eD.hex = function() {
     for (var e = [], t = arguments.length; t--;) e[t] = arguments[t];
-    return new(Function.prototype.bind.apply(ex, [null].concat(e, ["hex"])))
+    return new(Function.prototype.bind.apply(eL, [null].concat(e, ["hex"])))
   }, eM.format.hex = ew, eM.autodetect.push({
     p: 4,
     test: function(e) {
       for (var t = [], n = arguments.length - 1; n-- > 0;) t[n] = arguments[n + 1];
-      if (!t.length && "string" === eL(e) && [3, 4, 5, 6, 7, 8, 9].indexOf(e.length) >= 0) return "hex"
+      if (!t.length && "string" === ex(e) && [3, 4, 5, 6, 7, 8, 9].indexOf(e.length) >= 0) return "hex"
     }
   });
   var ej = d.unpack,
@@ -579,8 +579,8 @@
   var tP = d.unpack,
     tw = d.RAD2DEG,
     tD = Math.sqrt,
-    tx = Math.atan2,
-    tL = Math.round,
+    tL = Math.atan2,
+    tx = Math.round,
     tM = function() {
       for (var e = [], t = arguments.length; t--;) e[t] = arguments[t];
       var n = tP(e, "lab"),
@@ -588,8 +588,8 @@
         i = n[1],
         o = n[2],
         a = tD(i * i + o * o),
-        s = (tx(o, i) * tw + 360) % 360;
-      return 0 === tL(1e4 * a) && (s = Number.NaN), [r, a, s]
+        s = (tL(o, i) * tw + 360) % 360;
+      return 0 === tx(1e4 * a) && (s = Number.NaN), [r, a, s]
     },
     tk = d.unpack,
     tj = tg,
@@ -937,8 +937,8 @@
   }
   var nw = d.unpack,
     nD = Math.pow,
-    nx = Math.sign,
-    nL = function() {
+    nL = Math.sign,
+    nx = function() {
       for (var e = [], t = arguments.length; t--;) e[t] = arguments[t];
       var n = (e = nw(e, "lab"))[0],
         r = e[1],
@@ -951,7 +951,7 @@
 
   function nM(e) {
     var t = Math.abs(e);
-    return t > .0031308 ? (nx(e) || 1) * (1.055 * nD(t, 1 / 2.4) - .055) : 12.92 * e
+    return t > .0031308 ? (nL(e) || 1) * (1.055 * nD(t, 1 / 2.4) - .055) : 12.92 * e
   }
   var nk = d.unpack,
     nj = d.type,
@@ -964,7 +964,7 @@
   }, nU.oklab = function() {
     for (var e = [], t = arguments.length; t--;) e[t] = arguments[t];
     return new(Function.prototype.bind.apply(nG, [null].concat(e, ["oklab"])))
-  }, nB.format.oklab = nL, nB.autodetect.push({
+  }, nB.format.oklab = nx, nB.autodetect.push({
     p: 3,
     test: function() {
       for (var e = [], t = arguments.length; t--;) e[t] = arguments[t];
@@ -982,7 +982,7 @@
     },
     nY = d.unpack,
     nK = tH,
-    nz = nL,
+    nz = nx,
     nq = function() {
       for (var e = [], t = arguments.length; t--;) e[t] = arguments[t];
       var n = nK((e = nY(e, "lch"))[0], e[1], e[2]),
@@ -1182,11 +1182,11 @@
       return rw(e, t, n, "hsi")
     };
   rr.hsi = rD;
-  var rx = rI,
-    rL = function(e, t, n) {
-      return rx(e, t, n, "hsl")
+  var rL = rI,
+    rx = function(e, t, n) {
+      return rL(e, t, n, "hsl")
     };
-  rr.hsl = rL;
+  rr.hsl = rx;
   var rM = rI,
     rk = function(e, t, n) {
       return rM(e, t, n, "hsv")
@@ -1617,10 +1617,10 @@
             }
           for (var P = Array(n), w = 0; w < n; w++) P[w] = null;
           for (var D = 0; D < m; D++) null === P[h = g[D]] ? P[h] = o[D] : P[h] += o[D];
-          for (var x = 0; x < n; x++) P[x] *= 1 / E[x];
+          for (var L = 0; L < n; L++) P[L] *= 1 / E[L];
           v = !1;
-          for (var L = 0; L < n; L++)
-            if (P[L] !== y[L]) {
+          for (var x = 0; x < n; x++)
+            if (P[x] !== y[x]) {
               v = !0;
               break
             } y = P, ++b > 200 && (v = !1)
@@ -1637,8 +1637,8 @@
         }
       }
       return a
-    }, iD = iP, ix = iw, iL = E, iM = function(e, t) {
-      e = new iL(e), t = new iL(t);
+    }, iD = iP, iL = iw, ix = E, iM = function(e, t) {
+      e = new ix(e), t = new ix(t);
       var n = e.luminance(),
         r = t.luminance();
       return n > r ? (n + .05) / (r + .05) : (r + .05) / (n + .05)
@@ -1678,11 +1678,11 @@
       var P = f - l,
         w = y - b,
         D = 1 + .015 * iU(h - 50, 2) / ij(20 + iU(h - 50, 2)),
-        x = 1 + .045 * O,
-        L = 1 + .015 * O * C,
+        L = 1 + .045 * O,
+        x = 1 + .015 * O * C,
         M = 30 * iW(-iU((A - 275) / 25, 2)),
         k = -(2 * ij(iU(O, 7) / (iU(O, 7) + iU(25, 7)))) * iH(2 * a(M));
-      return iB(0, iG(100, ij(iU(P / (n * D), 2) + iU(w / (r * x), 2) + iU(R / (i * L), 2) + w / (r * x) * k * (R / (i * L)))))
+      return iB(0, iG(100, ij(iU(P / (n * D), 2) + iU(w / (r * L), 2) + iU(R / (i * x), 2) + w / (r * L) * k * (R / (i * x)))))
     }, iz = E, iq = function(e, t, n) {
       void 0 === n && (n = "lab"), e = new iz(e), t = new iz(t);
       var r = e.get(n),
@@ -1750,5 +1750,5 @@
   }
   var i6 = i1,
     i5 = b;
-  return i5.average = rq, i5.bezier = r5, i5.blend = iu, i5.cubehelix = iv, i5.mix = i5.interpolate = rs, i5.random = iI, i5.scale = r0, i5.analyze = iD, i5.contrast = iM, i5.deltaE = iK, i5.distance = iq, i5.limits = ix, i5.valid = iX, i5.scales = i0, i5.colors = t4, i5.brewer = i6, i5
+  return i5.average = rq, i5.bezier = r5, i5.blend = iu, i5.cubehelix = iv, i5.mix = i5.interpolate = rs, i5.random = iI, i5.scale = r0, i5.analyze = iD, i5.contrast = iM, i5.deltaE = iK, i5.distance = iq, i5.limits = iL, i5.valid = iX, i5.scales = i0, i5.colors = t4, i5.brewer = i6, i5
 })

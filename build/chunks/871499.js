@@ -212,8 +212,8 @@ function w(e) {
     popoutOpen: T = !1,
     popoutDisabled: w = !1,
     premiumGlow: D = !1,
-    fullRegionButton: x = !1,
-    forceGroupedButtons: L = !1
+    fullRegionButton: L = !1,
+    forceGroupedButtons: x = !1
   } = e, M = I(e, ["color", "caretColor", "isActive", "className", "iconClassName", "onPopoutClick", "popoutOpen", "popoutDisabled", "premiumGlow", "fullRegionButton", "forceGroupedButtons"]);
   let k = (0, g.Z)(t, o),
     j = null != n ? n : k,
@@ -231,22 +231,22 @@ function w(e) {
   let F = (0, p.Z)({
       location: "CenterControlButton"
     }),
-    V = L || F,
-    H = V ? [v.experimentButton, Z ? P[k] : R[k], x && null == O && v.fullRegionButton, Z && !x && null != O && v.attachedButton] : [C[k]],
+    V = x || F,
+    H = V ? [v.experimentButton, Z ? P[k] : R[k], L && null == O && v.fullRegionButton, Z && !L && null != O && v.attachedButton] : [C[k]],
     W = (0, r.jsx)(A, S(y({}, M), {
       grow: !1,
       onContextMenu: O,
-      iconClassName: a()(b, v.centerIcon, V && v.experimentControlIcon, V && x && null == O && v.fullRegionIcon),
+      iconClassName: a()(b, v.centerIcon, V && v.experimentControlIcon, V && L && null == O && v.fullRegionIcon),
       className: a()(U ? s : null, v.staticButton, v.centerButton, o && v.active, ...H)
     }));
   return U ? W : V ? (0, r.jsxs)("div", {
-    className: a()(Z ? v.attachedCaretButtonContainer : v.caretButtonContainer, Z && T && v.popoutOpen, s, x && null != O && [v.fullRegionDropdownButton, R[k]]),
+    className: a()(Z ? v.attachedCaretButtonContainer : v.caretButtonContainer, Z && T && v.popoutOpen, s, L && null != O && [v.fullRegionDropdownButton, R[k]]),
     children: [W, null != O ? (0, r.jsx)(m.Z, {
       children: (0, r.jsx)(l.P3F, {
         "aria-label": E.NW.string(E.t.PdRCRk),
         onClick: w ? void 0 : O,
         onContextMenu: w ? void 0 : O,
-        className: a()(v.contextMenuNubExperiment, Z && !x && v.attachedCaret, Z ? P[j] : R[j], {
+        className: a()(v.contextMenuNubExperiment, Z && !L && v.attachedCaret, Z ? P[j] : R[j], {
           [v.popoutOpen]: T && Z,
           [v.active]: T,
           [v.disabled]: w

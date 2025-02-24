@@ -1,21 +1,21 @@
-/** Chunk was on 54433 **/
-n.d(t, {
-  c1: () => r,
-  zb: () => s
-}), n(47120);
-var l = n(200651);
-n(192379);
-let [i, s] = (0, n(975104).Z)();
+/** Chunk was on 37768 **/
+t.d(e, {
+  c1: () => i,
+  zb: () => a
+}), t(47120);
+var n = t(200651);
+t(192379);
+let [r, a] = (0, t(975104).Z)();
 
-function r(e) {
+function i(o) {
   let {
-    children: t,
-    confirmationFooter: n
-  } = e;
-  return (0, l.jsx)(i.Provider, {
+    children: e,
+    confirmationFooter: t
+  } = o;
+  return (0, n.jsx)(r.Provider, {
     value: {
-      confirmationFooter: n
+      confirmationFooter: t
     },
-    children: t
+    children: e
   })
 }

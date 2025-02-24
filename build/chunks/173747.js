@@ -55,18 +55,18 @@ function D() {
   l.Z.wait(() => c.o(t))
 }
 
-function x() {
+function L() {
   if (!(0, E.Q)()) return !1;
   for (let e of I) {
     let {
       applicationId: t,
       branchId: n
     } = (0, g.CP)(e);
-    null != f.Z.getApplication(t) && (I.delete(e), L(t, n))
+    null != f.Z.getApplication(t) && (I.delete(e), x(t, n))
   }
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null != y[t] && h.Z.shouldBeInstalled(e, t)) {
     let n = y[t],
       r = n.manifestIds,
@@ -106,7 +106,7 @@ function k(e) {
     branchId: n,
     locale: r,
     manifestIds: o
-  }, L(t, n)
+  }, x(t, n)
 }
 
 function j(e) {
@@ -206,7 +206,7 @@ class W extends(r = a.ZP.Store) {
 v(W, "displayName", "ApplicationBuildStore");
 let Y = new W(l.Z, {
   CONNECTION_OPEN: w,
-  GAMES_DATABASE_UPDATE: x,
+  GAMES_DATABASE_UPDATE: L,
   APPLICATION_BUILD_FETCH_START: M,
   APPLICATION_BUILD_FETCH_SUCCESS: k,
   APPLICATION_BUILD_NOT_FOUND: j,

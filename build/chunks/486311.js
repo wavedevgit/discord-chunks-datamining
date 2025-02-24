@@ -25,7 +25,7 @@ function _(e) {
     guild: t,
     selected: n
   } = e, l = i.useCallback(() => {
-    (0, p.j)(t.id), (0, d.uL)(g.Z5c.CHANNEL(t.id, m.oC.GUILD_BOOSTS))
+    (0, p.jd)(t.id), (0, d.uL)(g.Z5c.CHANNEL(t.id, m.oC.GUILD_BOOSTS))
   }, [t.id]), _ = (0, f.Z)(t), O = (null == _ ? void 0 : _.type) === h.o.UNREAD;
   return (0, r.jsx)(u.m, {
     id: "skill-trees-".concat(t.id),

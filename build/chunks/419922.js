@@ -204,7 +204,7 @@ let P = e => {
       })
     })
   },
-  x = e => {
+  L = e => {
     let {
       disableAnimation: t,
       enlargeScaleFactor: n,
@@ -242,7 +242,7 @@ let P = e => {
         children: [(0, r.jsx)(c.animated.div, {
           className: y.overlayStickerWrapper,
           style: e,
-          children: (0, r.jsx)(L, {
+          children: (0, r.jsx)(x, {
             className: y.__invalid_overlaySticker,
             disableAnimation: t,
             enlargeOnInteraction: !1,
@@ -264,7 +264,7 @@ let P = e => {
       })
     }))
   },
-  L = e => {
+  x = e => {
     let {
       isInteracting: t = !1,
       disableAnimation: n = !1,
@@ -295,7 +295,7 @@ let P = e => {
         assetData: p,
         fileUri: _,
         onError: h
-      }), o && (0, r.jsx)(x, {
+      }), o && (0, r.jsx)(L, {
         disableAnimation: n,
         enlargeScaleFactor: s,
         enlargeWithName: a,
@@ -306,4 +306,4 @@ let P = e => {
       })]
     }, "".concat(u.id, ",").concat(c))
   },
-  M = L
+  M = x

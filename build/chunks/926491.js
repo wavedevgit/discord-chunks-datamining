@@ -86,16 +86,16 @@ function D(e) {
   for (let [e, n] of t)
     if (f.Z.isMember(e) && !C.has(e)) {
       let t = p.Z.getGuild(e);
-      for (let e of n) x(e, !0, t);
+      for (let e of n) L(e, !0, t);
       R(e, n)
     }
 }
-let x = function(e) {
+let L = function(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
       n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
-    S.set(e.id, e), t && L(e, n)
+    S.set(e.id, e), t && x(e, n)
   },
-  L = function(e) {
+  x = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
     if (null == I) return;
     let {
@@ -145,14 +145,14 @@ let x = function(e) {
     let r = [...T];
     if (t) {
       let t = r.findIndex(t => t.id === e.id); - 1 !== t ? r[t] = e : r.push(e), T = r
-    }(t || n) && e.stickers.forEach(e => x(e))
+    }(t || n) && e.stickers.forEach(e => L(e))
   },
   k = () => {
     C.forEach((e, t) => {
       let n = p.Z.getGuild(t);
-      null != n && e.forEach(e => L(e, n))
+      null != n && e.forEach(e => x(e, n))
     }), T.forEach(e => {
-      e.stickers.forEach(e => L(e))
+      e.stickers.forEach(e => x(e))
     })
   },
   j = e => {
@@ -167,7 +167,7 @@ let x = function(e) {
 
 function G(e) {
   let t = p.Z.getGuild(e.id);
-  null != t && null != e.stickers && (e.stickers.forEach(e => x(e, !0, t)), R(t.id, e.stickers))
+  null != t && null != e.stickers && (e.stickers.forEach(e => L(e, !0, t)), R(t.id, e.stickers))
 }
 
 function B(e) {
@@ -210,7 +210,7 @@ let F = () => {
       guildId: t,
       stickers: n
     } = e;
-    n.forEach(e => x(e)), R(t, n)
+    n.forEach(e => L(e)), R(t, n)
   },
   K = e => {
     var t, n;
@@ -218,13 +218,13 @@ let F = () => {
       guildId: r,
       sticker: i
     } = e, o = null !== (t = C.get(r)) && void 0 !== t ? t : [];
-    R(r, [...null !== (n = o.filter(e => e.id !== i.id)) && void 0 !== n ? n : [], i]), x(i)
+    R(r, [...null !== (n = o.filter(e => e.id !== i.id)) && void 0 !== n ? n : [], i]), L(i)
   },
   z = e => {
     let {
       sticker: t
     } = e;
-    x(t, !1)
+    L(t, !1)
   },
   q = e => {
     var t;
@@ -242,7 +242,7 @@ let F = () => {
       S.delete(e.id), null != I && I.delete(e.id)
     });
     let o = r.map(e => i(e));
-    o.forEach(e => x(e)), R(n, o)
+    o.forEach(e => L(e)), R(n, o)
   };
 class Q extends(r = o.ZP.Store) {
   initialize() {

@@ -75,14 +75,14 @@ function _() {
   function w() {}
 
   function D() {}
-  var x = {};
-  O(x, v, function() {
+  var L = {};
+  O(L, v, function() {
     return this
   });
-  var L = s,
-    M = L && L(L(H([])));
-  M && M !== h && m.call(M, v) && (x = M);
-  var k = D.prototype = P.prototype = a(x);
+  var x = s,
+    M = x && x(x(H([])));
+  M && M !== h && m.call(M, v) && (L = M);
+  var k = D.prototype = P.prototype = a(L);
 
   function j(e) {
     var t;

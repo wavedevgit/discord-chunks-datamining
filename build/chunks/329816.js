@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(559407),
   w = n(556766),
   D = n(514361),
-  x = n(724145),
-  L = n(195302),
+  L = n(724145),
+  x = n(195302),
   M = n(260035),
   k = n(482215),
   j = n(540059),
@@ -205,7 +205,7 @@ let eh = (0, et.Un)({
                           children: (0, r.jsx)(V.OR, {
                             children: (0, r.jsx)(I.Z.Provider, {
                               value: T.Z,
-                              children: (0, r.jsxs)(L.p, {
+                              children: (0, r.jsxs)(x.p, {
                                 children: [(0, r.jsx)("div", {
                                   className: a()(b ? eu.mobileApp : eu.app),
                                   children: t
@@ -214,7 +214,7 @@ let eh = (0, et.Un)({
                             })
                           })
                         })
-                      }), (0, r.jsx)(w.Z, {}), (0, r.jsx)(m.Z, {}), eA && !eP && (0, r.jsx)(x.Z, {
+                      }), (0, r.jsx)(w.Z, {}), (0, r.jsx)(m.Z, {}), eA && !eP && (0, r.jsx)(L.Z, {
                         markAsDismissed: eT ? eS : () => {
                           (0, G.EW)(d.z.CLIENT_THEMES_COACHMARK, {
                             dismissAction: ec.L.INDIRECT_ACTION,

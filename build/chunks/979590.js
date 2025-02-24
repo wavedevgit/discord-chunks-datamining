@@ -352,7 +352,7 @@
       return 1 == this._a ? "rgb(" + o(100 * k(this._r, 255)) + "%, " + o(100 * k(this._g, 255)) + "%, " + o(100 * k(this._b, 255)) + "%)" : "rgba(" + o(100 * k(this._r, 255)) + "%, " + o(100 * k(this._g, 255)) + "%, " + o(100 * k(this._b, 255)) + "%, " + this._roundA + ")"
     },
     toName: function() {
-      return 0 === this._a ? "transparent" : !(this._a < 1) && (x[m(this._r, this._g, this._b, !0)] || !1)
+      return 0 === this._a ? "transparent" : !(this._a < 1) && (L[m(this._r, this._g, this._b, !0)] || !1)
     },
     toFilter: function(e) {
       var t = "#" + E(this._r, this._g, this._b, this._a),
@@ -625,9 +625,9 @@
       yellow: "ff0",
       yellowgreen: "9acd32"
     },
-    x = c.hexNames = L(D);
+    L = c.hexNames = x(D);
 
-  function L(e) {
+  function x(e) {
     var t = {};
     for (var n in e) e.hasOwnProperty(n) && (t[e[n]] = n);
     return t

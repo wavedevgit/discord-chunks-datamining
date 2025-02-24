@@ -68,12 +68,12 @@ function S(e) {
     maxCharacterCount: I,
     showRemainingCharsAfterCount: T,
     className: N
-  } = e, A = (0, a.e7)([f.default], () => p.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), C = (0, u.Z)(), R = null != I ? I : C, P = null !== (v = null != T ? T : I) && void 0 !== v ? v : C / 10, w = S.length, D = null != y.upsellLongMessages && (null != w ? w : 0) > h.J6R && A, x = null != y.upsellLongMessages && !A, L = (null === (n = (0, d.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === m.Si.TIER_2, M = R - w, k = M > P, j = M < 0 && L, U = 0 === M ? g.NW.string(g.t.tU6YQ0) : M > 0 ? g.NW.formatToPlainString(g.t.qH8uFR, {
+  } = e, A = (0, a.e7)([f.default], () => p.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), C = (0, u.Z)(), R = null != I ? I : C, P = null !== (v = null != T ? T : I) && void 0 !== v ? v : C / 10, w = S.length, D = null != y.upsellLongMessages && (null != w ? w : 0) > h.J6R && A, L = null != y.upsellLongMessages && !A, x = (null === (n = (0, d.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === m.Si.TIER_2, M = R - w, k = M > P, j = M < 0 && x, U = 0 === M ? g.NW.string(g.t.tU6YQ0) : M > 0 ? g.NW.formatToPlainString(g.t.qH8uFR, {
     count: M
   }) : g.NW.string(g.t.YSRIqa), {
     analyticsLocations: G
   } = (0, c.ZP)(l.Z.CHARACTER_COUNT);
-  if (!(D && M >= 0 || !k || x && !k)) return null;
+  if (!(D && M >= 0 || !k || L && !k)) return null;
   let B = M >= 0;
   return (0, r.jsx)(c.Gt, {
     value: G,
@@ -107,7 +107,7 @@ function S(e) {
         children: g.NW.format(g.t.qH8uFR, {
           count: M
         })
-      }), x && !k ? (0, r.jsx)(_.Z, {
+      }), L && !k ? (0, r.jsx)(_.Z, {
         className: E.upsell,
         iconOnly: (null === (i = y.upsellLongMessages) || void 0 === i ? void 0 : i.iconOnly) || !1,
         remaining: M

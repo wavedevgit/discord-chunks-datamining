@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A: () => L,
+  A: () => x,
   Z: () => M
 }), n(653041);
 var r = n(392711),
@@ -69,8 +69,8 @@ function P(e, t) {
 }
 let w = 10,
   D = 15e5,
-  x = 15e5;
-class L {
+  L = 15e5;
+class x {
   setActionContext(e) {
     this.actionContext = e
   }
@@ -161,7 +161,7 @@ class M extends s.Z {
       E = null === (n = e.find(e => e.connection === this._connection)) || void 0 === n ? void 0 : n.stats;
     if (null != E && h) {
       let e = E.transport.inboundBitrateEstimate;
-      null != e && e < 1e8 && (this._bandwidthSamples.push(e), this._bandwidthSamples.length > w && this._bandwidthSamples.shift(), this._bandwidthSamples.length === w && ((_ = i().mean(this._bandwidthSamples)) > x ? g = "HQ" : _ < D && (g = "LQ")))
+      null != e && e < 1e8 && (this._bandwidthSamples.push(e), this._bandwidthSamples.length > w && this._bandwidthSamples.shift(), this._bandwidthSamples.length === w && ((_ = i().mean(this._bandwidthSamples)) > L ? g = "HQ" : _ < D && (g = "LQ")))
     }
     let v = null !== (o = null === (r = this._goLiveQualityManager) || void 0 === r ? void 0 : r.isDowngraded()) && void 0 !== o && o;
     if ("HQ" === g && v ? (this.logger.info("Attempting to upgrade to HQ simulcast stream, bandwidth estimate: ".concat(_)), null === (a = this._goLiveQualityManager) || void 0 === a || a.setGoLiveStreamDowngraded(!1)) : "LQ" === g && !v && m && (this.logger.info("Attempting to downgrade to LQ simulcast stream, bandwidth estimate: ".concat(_)), null === (s = this._goLiveQualityManager) || void 0 === s || s.setGoLiveStreamDowngraded(!0)), h) {
@@ -209,8 +209,8 @@ class M extends s.Z {
               w = (null == O ? void 0 : null === (S = O.desktopSource) || void 0 === S ? void 0 : S.sourcePid) != null ? p.ZP.getGameForPID(O.desktopSource.sourcePid) : null,
               {
                 gameName: D,
-                gameId: x,
-                exe: L,
+                gameId: L,
+                exe: x,
                 distributor: M
               } = (0, f.G8)(w);
             y.default.track(T.rMx.SCREENSHARE_FINISHED, C({
@@ -236,8 +236,8 @@ class M extends s.Z {
               activity: h,
               soundshare_session: null !== (A = null == O ? void 0 : null === (I = O.desktopSource) || void 0 === I ? void 0 : I.soundshareSession) && void 0 !== A ? A : void 0,
               share_game_name: D,
-              share_game_id: x,
-              share_game_exe: L,
+              share_game_id: L,
+              share_game_exe: x,
               share_game_distributor: M,
               picker_type_used: null != this.analyticsContext.nativePickerStyleUsed ? "native" : "internal",
               duration: this.analyticsContext.getDuration()

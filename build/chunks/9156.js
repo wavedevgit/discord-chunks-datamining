@@ -71,7 +71,7 @@ let N = {},
   },
   w = new l.ZP,
   D = new l.ZP,
-  x = {
+  L = {
     suppress_everyone: !1,
     suppress_roles: !1,
     mute_scheduled_events: !1,
@@ -85,11 +85,11 @@ let N = {},
     version: -1,
     mute_config: null
   },
-  L = {
-    [E.bL.ALL_MESSAGES]: T(S({}, x), {
+  x = {
+    [E.bL.ALL_MESSAGES]: T(S({}, L), {
       message_notifications: E.bL.ALL_MESSAGES
     }),
-    [E.bL.ONLY_MENTIONS]: T(S({}, x), {
+    [E.bL.ONLY_MENTIONS]: T(S({}, L), {
       message_notifications: E.bL.ONLY_MENTIONS
     })
   },
@@ -200,7 +200,7 @@ function q(e, t, n) {
 
 function Q(e) {
   let t = m.Z.getGuild(e);
-  return L[null != t ? t.defaultMessageNotifications : E.bL.ALL_MESSAGES]
+  return x[null != t ? t.defaultMessageNotifications : E.bL.ALL_MESSAGES]
 }
 
 function X() {

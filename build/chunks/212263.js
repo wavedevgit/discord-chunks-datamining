@@ -42,7 +42,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,7 +67,7 @@ function L(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,7 +75,7 @@ let k = e => {
   let t, {
       onLearnMore: o,
       onClose: D,
-      channel: L,
+      channel: x,
       emojiDescriptor: k,
       pickerIntention: j,
       analyticsLocation: U,
@@ -84,7 +84,7 @@ let k = e => {
     B = (0, s.e7)([y.Z], () => y.Z.theme) === A.BRd.LIGHT ? "light" : "dark",
     [Z, F] = i.useState(!1),
     V = () => {
-      (0, T.A3)(L), (0, _.z)(), o()
+      (0, T.A3)(x), (0, _.z)(), o()
     },
     H = n(577391)("./img_premium_emoji_".concat(B, ".svg")),
     W = "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_".concat(B, ".png"),
@@ -106,7 +106,7 @@ let k = e => {
   t = j === C.Hz.REACTION ? R.cd.EMOJI_PICKER_REACTION_EMOJI_CLICKED : null == k ? R.cd.EMOJI_PICKER_FLOATING_UPSELL : k.subCategory === N.t0.TOP_GUILD_EMOJI ? R.cd.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED : k.subCategory === N.t0.NEWLY_ADDED_EMOJI ? R.cd.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED : R.cd.EMOJI_PICKER_EMOJI_CLICKED;
   let ee = null != k ? k.emoji : void 0,
     et = null != ee && ee.animated,
-    en = null != ee && !S.ZP.isInternalEmojiForGuildId(ee, null == L ? void 0 : L.getGuildId()),
+    en = null != ee && !S.ZP.isInternalEmojiForGuildId(ee, null == x ? void 0 : x.getGuildId()),
     er = null != ee ? A.qAy.EMOJI : A.qAy.EMOJI_PICKER_FLOATING_UPSELL;
   i.useEffect(() => {
     J || O.default.track(A.rMx.PREMIUM_UPSELL_VIEWED, {
@@ -114,7 +114,7 @@ let k = e => {
       is_animated: et,
       is_external: en,
       has_search_query: null != q && "" !== q,
-      location: M(x({}, U), {
+      location: M(L({}, U), {
         object: er
       }),
       location_stack: Q,
@@ -143,7 +143,7 @@ let k = e => {
       upsellViewedTrackingData: {
         type: t,
         is_external: en,
-        location: M(x({}, U), {
+        location: M(L({}, U), {
           object: er
         }),
         location_stack: Q,

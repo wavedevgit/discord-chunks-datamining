@@ -75,8 +75,8 @@ function _(e) {
     sectionFooterHeight: P,
     itemNodeWidth: w,
     listPaddingRight: D,
-    itemNodeMargin: x,
-    listPadding: L,
+    itemNodeMargin: L,
+    listPadding: x,
     gridNavigatorId: M,
     gridNotice: k,
     renderHeader: j,
@@ -98,7 +98,7 @@ function _(e) {
     gridWidth: Y,
     listPaddingRight: D,
     itemNodeWidth: w,
-    itemNodeMargin: x
+    itemNodeMargin: L
   }), {
     getItemProps: J,
     getRowProps: $,
@@ -161,7 +161,7 @@ function _(e) {
           ref: Z,
           store: f,
           hasSearchResults: m,
-          listPadding: L,
+          listPadding: x,
           renderRow: er,
           renderSection: null != y ? ei : void 0,
           renderSectionHeader: null != O ? eo : void 0,

@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(617579),
   w = n(239840);
 let D = 512,
-  x = 7,
-  L = 56,
+  L = 7,
+  x = 56,
   M = 16,
   k = 32,
   j = 20,
@@ -71,7 +71,7 @@ let D = 512,
         applicationCommands: !o
       },
       options: {
-        placeholderCount: x,
+        placeholderCount: L,
         limit: A.tn,
         includeFrecency: !0
       },
@@ -90,7 +90,7 @@ let D = 512,
       scrollOffset: j,
       searchQuery: ""
     }), er = e => {
-      let t = q.length * (k + M) + (Q.reduce((e, t) => e + t.data.length, 0) - (X ? x : 0)) * L - D;
+      let t = q.length * (k + M) + (Q.reduce((e, t) => e + t.data.length, 0) - (X ? L : 0)) * x - D;
       X && e + U > t && ee(), en(e), B(), l.current = e
     }, ei = i.useRef(er);
     i.useEffect(() => {
@@ -139,7 +139,7 @@ let D = 512,
       },
       onMoveSelection: e => {
         if (0 === J.length) return !0;
-        let t = X ? x : 0,
+        let t = X ? L : 0,
           n = J.length + t,
           r = null == Z ? 0 : Z + e;
         return r >= n ? r = n - 1 : r < 0 && (r = 0), V(r), Y(!0), !0
@@ -230,7 +230,7 @@ let D = 512,
         renderSectionHeader: ec,
         rowCount: q.length,
         rowCountBySection: ea,
-        rowHeight: L,
+        rowHeight: x,
         sectionHeaderHeight: k,
         sectionMarginBottom: eo,
         ref: H,

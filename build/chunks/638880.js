@@ -41,8 +41,8 @@ async function S(e) {
       joinSecret: P,
       inviterUserId: w,
       isContextlessActivity: D,
-      customId: x,
-      referrerId: L
+      customId: L,
+      referrerId: x
     } = e,
     M = (0, g.Z)(),
     k = o.Z.getChannel(c),
@@ -90,7 +90,7 @@ async function S(e) {
     joinSecret: P,
     inviterUserId: w,
     isContextlessActivity: D,
-    customId: x,
-    referrerId: L
+    customId: L,
+    referrerId: x
   })
 }

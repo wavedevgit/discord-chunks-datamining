@@ -74,7 +74,7 @@ let I = e => {
     setSoundEffect: C
   } = (0, l.wD)(), [R, P] = i.useState(!1), w = i.useRef(null), D = (0, s.arW)({
     orientation: "horizontal"
-  }), x = (0, u.MY)(b, t), L = x === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, M = x !== u.xr.DEFAULT, k = (0, f.rK)(), {
+  }), L = (0, u.MY)(b, t), x = L === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, M = L !== u.xr.DEFAULT, k = (0, f.rK)(), {
     enabled: j
   } = f.ZP.useExperiment({
     location: "premiumGiftSelect_GiftAnimationOptions"
@@ -100,7 +100,7 @@ let I = e => {
         className: v.animation
       }) : (0, r.jsx)(s.$jN, {
         className: v.spinner
-      }), L && (0, r.jsxs)("div", {
+      }), x && (0, r.jsxs)("div", {
         className: v.soundEmojiContainer,
         children: [(0, r.jsx)("div", {
           className: v.sound,

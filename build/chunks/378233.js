@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   B0: () => R,
-  Hc: () => x,
-  J8: () => L,
+  Hc: () => L,
+  J8: () => x,
   Q6: () => A,
   V9: () => j,
   WD: () => D,
@@ -102,7 +102,7 @@ let {
   name: e.name,
   stickers: e.stickers,
   previewSticker: S(e)
-}), D = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, x = (e, t, n, i) => {
+}), D = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, L = (e, t, n, i) => {
   if (s.Z.getUploadCount(n, i) > 0) return !0;
   let o = u.Z.getStickerPreview(n, i);
   if (null != o && o.length > 0) return !0;
@@ -116,7 +116,7 @@ let {
     default:
       return !1
   }
-}, L = e => e.type === d.n0.GUILD, M = e => e.type === d.n0.STANDARD, k = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], j = e => {
+}, x = e => e.type === d.n0.GUILD, M = e => e.type === d.n0.STANDARD, k = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], j = e => {
   if (null === e) return !1;
   let t = e.guild_id;
   return void 0 !== a.Z.getGuild(t)

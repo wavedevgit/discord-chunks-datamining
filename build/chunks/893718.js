@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(805680),
   w = n(278754),
   D = n(151574),
-  x = n(368844),
-  L = n(41776),
+  L = n(368844),
+  x = n(41776),
   M = n(849522),
   k = n(780291),
   j = n(328908),
@@ -128,7 +128,7 @@ function eS(e, t, o, a) {
     let v = null !== (g = null === (m = G.Z.getStickerPreview(a, t.drafts.type)) || void 0 === m ? void 0 : m.map(e => e.id)) && void 0 !== g ? g : [],
       b = null !== (E = z.Z.getUploads(a, t.drafts.type)) && void 0 !== E ? E : [],
       y = (0, j.q5)(a);
-    if (null == u && !f && !p && (0, x.CB)(b, a)) {
+    if (null == u && !f && !p && (0, L.CB)(b, a)) {
       l(!1), (0, _.ZDy)(async () => {
         let {
           default: e
@@ -292,9 +292,9 @@ function eD(e) {
   }
 }
 
-function ex(e, t, n, r) {
+function eL(e, t, n, r) {
   let i = e.getGuildId(),
-    o = (0, p.e7)([L.Z], () => null != i && L.Z.isLurking(i), [i]),
+    o = (0, p.e7)([x.Z], () => null != i && x.Z.isLurking(i), [i]),
     a = (0, p.e7)([H.ZP, q.default], () => {
       var e, t;
       let n = q.default.getCurrentUser();
@@ -322,7 +322,7 @@ function ex(e, t, n, r) {
   }, s)
 }
 
-function eL(e, t, n) {
+function ex(e, t, n) {
   let [r, o] = (0, R.Iu)(e => [e.activeView, e.activeViewType], u.X), a = (0, p.e7)([y.Z], () => y.Z.shouldShowPopup() && y.Z.activeViewType() === e), s = (0, C.Q3)("ChannelTextAreaContainer");
   i.useEffect(() => () => {
     (0, R._Q)(e)
@@ -370,7 +370,7 @@ function ek(e, t, n, r) {
 }
 
 function ej(e, t) {
-  var n, o, s, l, u, f, h, y, R, w, x, L, j, G, B;
+  var n, o, s, l, u, f, h, y, R, w, L, x, j, G, B;
   let {
     textValue: Z,
     richValue: F,
@@ -446,7 +446,7 @@ function ej(e, t) {
     canAttachFiles: th,
     canCreateThreads: tm,
     canEveryoneSendMessages: tg
-  } = ex(eo, e_, tu, Q), tE = e_.toolbarType === et.OW.STATIC, tv = !V.dN.useSetting() && !(0, $.isAndroidWeb)() && null != window.ResizeObserver, tb = !tv || !(null === (n = e_.commands) || void 0 === n ? void 0 : n.enabled) || !em || Z !== ep.GI, ty = (0, M.Z)(), {
+  } = eL(eo, e_, tu, Q), tE = e_.toolbarType === et.OW.STATIC, tv = !V.dN.useSetting() && !(0, $.isAndroidWeb)() && null != window.ResizeObserver, tb = !tv || !(null === (n = e_.commands) || void 0 === n ? void 0 : n.enabled) || !em || Z !== ep.GI, ty = (0, M.Z)(), {
     isSubmitButtonEnabled: tO,
     fontSize: tS
   } = (0, p.cj)([E.Z], () => ({
@@ -468,8 +468,8 @@ function ej(e, t) {
     handleSubmit: tw
   } = eS(eV, e_, tr, eo.id), {
     autocompleteRef: tD,
-    handleMaybeShowAutocomplete: tx,
-    handleHideAutocomplete: tL
+    handleMaybeShowAutocomplete: tL,
+    handleHideAutocomplete: tx
   } = eP(), tM = eI(tP, e_, tr), tk = eT(tr), tj = eN({
     editorRef: tr,
     disabled: t_,
@@ -492,7 +492,7 @@ function ej(e, t) {
     shouldHideExpressionPicker: tY,
     handleAutocompleteVisibilityChange: tK,
     handleOuterClick: tz
-  } = eL(e_, tA, tr);
+  } = ex(e_, tA, tr);
   (0, ee.S)(tA, eo.guild_id, eo.id);
   let tq = null != ej,
     tQ = t_ && !((tf || tp) && tg) || tR && (null === (s = e_.submit) || void 0 === s ? void 0 : s.useDisabledStylesOnSubmit),
@@ -633,8 +633,8 @@ function ej(e, t) {
                 onEnter: tV,
                 onMoveSelection: tH,
                 onSelectionChanged: tC,
-                onMaybeShowAutocomplete: tx,
-                onHideAutocomplete: tL,
+                onMaybeShowAutocomplete: tL,
+                onHideAutocomplete: tx,
                 promptToUpload: eH,
                 fontSize: tS,
                 spellcheckEnabled: tI,
@@ -650,7 +650,7 @@ function ej(e, t) {
               className: eh.rightAccessories,
               children: [t4 ? (0, r.jsx)(N.Z, {
                 channel: eo
-              }) : null, null !== (L = null == ey ? void 0 : ey()) && void 0 !== L ? L : null, (null === (l = e_.submit) || void 0 === l ? void 0 : l.button) != null && ((null === (u = e_.submit) || void 0 === u ? void 0 : u.ignorePreference) || tO) ? (0, r.jsx)(er.Z, {
+              }) : null, null !== (x = null == ey ? void 0 : ey()) && void 0 !== x ? x : null, (null === (l = e_.submit) || void 0 === l ? void 0 : l.button) != null && ((null === (u = e_.submit) || void 0 === u ? void 0 : u.ignorePreference) || tO) ? (0, r.jsx)(er.Z, {
                 onClick: tw,
                 disabled: t_ || t3
               }) : null]
@@ -691,7 +691,7 @@ function ej(e, t) {
           isEditorFocused: em,
           onSelectSticker: tj,
           submitButtonVisible: (null === (y = e_.submit) || void 0 === y ? void 0 : y.button) && (null !== (j = null === (R = e_.submit) || void 0 === R ? void 0 : R.ignorePreference) && void 0 !== j ? j : tO),
-          stickerIconVisible: null !== (G = null === (w = e_.stickers) || void 0 === w ? void 0 : w.button) && void 0 !== G && G && !(ta && null !== (B = null === (x = e_.confetti) || void 0 === x ? void 0 : x.button) && void 0 !== B && B)
+          stickerIconVisible: null !== (G = null === (w = e_.stickers) || void 0 === w ? void 0 : w.button) && void 0 !== G && G && !(ta && null !== (B = null === (L = e_.confetti) || void 0 === L ? void 0 : L.button) && void 0 !== B && B)
         }) : null, e2]
       }), tY ? null : (0, r.jsx)(P.Z, {
         positionTargetRef: tt,

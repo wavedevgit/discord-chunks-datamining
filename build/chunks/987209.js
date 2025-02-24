@@ -36,9 +36,9 @@ function O(e) {
     enabled: D
   } = c.O.useExperiment({
     location: "gift card"
-  }), x = E;
-  P && (x = w ? h.Cj.SEASONAL_STANDARD_BOX : null != b ? b : g, D && (x = h.Cj.NITROWEEN_STANDARD));
-  let [L, M] = i.useState(x), k = (0, d.iE)(), [j, U] = i.useState(), [G, B] = i.useState(t && (0, p.MY)(I) === p.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? m.NW.string(m.t.ZkOo1d) : f), [Z, F] = i.useState(void 0), [V, H] = i.useState(void 0), W = (0, p.E5)(S, t), [Y, K] = i.useState(!1), [z, q] = i.useState(!1), [Q, X] = i.useState(), J = i.useCallback(e => {
+  }), L = E;
+  P && (L = w ? h.Cj.SEASONAL_STANDARD_BOX : null != b ? b : g, D && (L = h.Cj.NITROWEEN_STANDARD));
+  let [x, M] = i.useState(L), k = (0, d.iE)(), [j, U] = i.useState(), [G, B] = i.useState(t && (0, p.MY)(I) === p.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? m.NW.string(m.t.ZkOo1d) : f), [Z, F] = i.useState(void 0), [V, H] = i.useState(void 0), W = (0, p.E5)(S, t), [Y, K] = i.useState(!1), [z, q] = i.useState(!1), [Q, X] = i.useState(), J = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
     } = e;
@@ -65,7 +65,7 @@ function O(e) {
       setEmojiConfetti: H,
       customGiftMessage: G,
       setCustomGiftMessage: B,
-      selectedGiftStyle: L,
+      selectedGiftStyle: x,
       setSelectedGiftStyle: M,
       sendGiftMessage: J,
       hasSentMessage: Y,

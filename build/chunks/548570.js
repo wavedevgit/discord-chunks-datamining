@@ -33,8 +33,8 @@ var r = n(512722),
   P = n(508569),
   w = n(183139),
   D = n(645436),
-  x = n(833508),
-  L = n(981631);
+  L = n(833508),
+  x = n(981631);
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -104,7 +104,7 @@ function Z(e) {
       })), c = l.state.open, u = l.state.identify, d = l.state.messages, f = l.state.clientState
     }
   }
-  null == t && ((t = (0, x.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(o), t.onopen = () => i(u, f), t.onmessage = o, t.onclose = s, t.onerror = a
+  null == t && ((t = (0, L.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(o), t.onopen = () => i(u, f), t.onmessage = o, t.onclose = s, t.onerror = a
 }
 
 function F() {}
@@ -294,7 +294,7 @@ class $ extends w.Z {
   }
   _tryDetectInvalidIOSToken(e, t, n) {
     (0, S.isIOS)() && null != this.token && e === H && t === W && (this.iosGoingAwayEventCount += 1, 3 === this.iosGoingAwayEventCount && u.tn.get({
-      url: L.ANM.ME,
+      url: x.ANM.ME,
       headers: {
         authorization: this.token
       },
@@ -303,14 +303,14 @@ class $ extends w.Z {
       let {
         status: t
       } = e;
-      b.default.track(L.rMx.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
+      b.default.track(x.rMx.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
         api_status_code: t
       })
     }, e => {
       let {
         status: t
       } = e;
-      401 === t && (this.connectionState = T.Z.CLOSED, G.warn("[WS CLOSED] because of manual authentication failure, marking as closed."), this._reset(n, Y, "invalid token manually detected")), b.default.track(L.rMx.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
+      401 === t && (this.connectionState = T.Z.CLOSED, G.warn("[WS CLOSED] because of manual authentication failure, marking as closed."), this._reset(n, Y, "invalid token manually detected")), b.default.track(x.rMx.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
         api_status_code: t
       })
     }))
@@ -453,7 +453,7 @@ class $ extends w.Z {
       tags: {
         socketCrashedAction: t
       }
-    }), b.default.track(L.rMx.GATEWAY_SOCKET_RESET, {
+    }), b.default.track(x.rMx.GATEWAY_SOCKET_RESET, {
       error_message: n.message,
       error_stack: n.stack,
       action: t

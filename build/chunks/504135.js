@@ -76,8 +76,8 @@ function v(e) {
     focusedClassName: P,
     subMenuIconClassName: w,
     dontCloseOnActionIfHoldingShiftKey: D,
-    dontCloseOnAction: x,
-    iconProps: L,
+    dontCloseOnAction: L,
+    iconProps: x,
     sparkle: M
   } = e, {
     onSelect: k,
@@ -88,8 +88,8 @@ function v(e) {
         rootItemId: T.rootItemId,
         type: c.U.DEFAULT
       }), null == N) return !1;
-    e.shiftKey && D || x || A(), e.persist(), null == k || k(), requestAnimationFrame(() => N(e))
-  }, [N, A, k, D, x, T, j]);
+    e.shiftKey && D || L || A(), e.persist(), null == k || k(), requestAnimationFrame(() => N(e))
+  }, [N, A, k, D, L, T, j]);
   return i.useEffect(() => {
     I && ((0, u.F)(U), null == C || C())
   }, [I, C]), (0, r.jsxs)(s.P, E(m({
@@ -109,8 +109,8 @@ function v(e) {
       }),
       children: (0, r.jsx)(h, E(m({
         color: "currentColor"
-      }, L), {
-        className: a()(_.icon, null == L ? void 0 : L.className),
+      }, x), {
+        className: a()(_.icon, null == x ? void 0 : x.className),
         isFocused: I
       }))
     }), (0, r.jsxs)("div", {
@@ -130,8 +130,8 @@ function v(e) {
       className: a()(_.iconContainer),
       children: (0, r.jsx)(o, E(m({
         color: "currentColor"
-      }, L), {
-        className: a()(_.icon, null == L ? void 0 : L.className),
+      }, x), {
+        className: a()(_.icon, null == x ? void 0 : x.className),
         isFocused: I
       }))
     }), O && (0, r.jsxs)("div", {

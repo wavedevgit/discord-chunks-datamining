@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => L
 }), n(627341);
 var r = n(200651),
   i = n(192379),
@@ -155,7 +155,7 @@ let N = 3,
       }), D()]
     }))
   },
-  x = e => {
+  L = e => {
     let {
       user: t,
       guild: n,

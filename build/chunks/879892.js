@@ -110,8 +110,8 @@ async function O(e) {
   }
   let D = [];
   u.Z.isLoadedForPremiumSKUs() || D.push((0, s.Y2)()), c.Z.hasFetched || (D.push(o.jg()), D.push((0, a.X8)())), D.length > 0 && await Promise.allSettled(D);
-  let x = (0, f.vx)(c.Z.boostSlots),
-    L = x.length,
+  let L = (0, f.vx)(c.Z.boostSlots),
+    x = L.length,
     M = e => {
       null == O || O(), null == N || N(e)
     },
@@ -121,9 +121,9 @@ async function O(e) {
         location_section: h.section
       })
     };
-  if (L > 0 && (null == b || L >= b)) {
+  if (x > 0 && (null == b || x >= b)) {
     let e;
-    1 === L ? e = x.slice(0, 1) : null != b && (e = x.slice(0, b)), await (0, i.ZDy)(async () => {
+    1 === x ? e = L.slice(0, 1) : null != b && (e = L.slice(0, b)), await (0, i.ZDy)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("8016"), n.e("22646"), n.e("30419"), n.e("66951")]).then(n.bind(n, 760558));

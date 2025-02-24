@@ -173,7 +173,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     channelIds: n
@@ -183,7 +183,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t,
     mode: n
@@ -274,6 +274,6 @@ let G = new U(s.Z, {
   GUILD_ONBOARDING_UPDATE_RESPONSES_SUCCESS: D,
   GUILD_ONBOARDING_PROMPTS_LOCAL_UPDATE: R,
   GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_SUCCESS: R,
-  GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS: x,
-  GUILD_SETTINGS_ONBOARDING_SET_MODE: L
+  GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS: L,
+  GUILD_SETTINGS_ONBOARDING_SET_MODE: x
 })

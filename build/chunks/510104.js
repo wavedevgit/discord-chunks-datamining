@@ -42,13 +42,13 @@ function f(e, t) {
       strategy: "absolute",
       placement: p
     }),
-    x = (0, s.Z)(Object.assign({}, C, D)),
-    L = y === l.k5 ? x : w,
+    L = (0, s.Z)(Object.assign({}, C, D)),
+    x = y === l.k5 ? L : w,
     M = {
-      top: P.top - L.top + N.top,
-      bottom: L.bottom - P.bottom + N.bottom,
-      left: P.left - L.left + N.left,
-      right: L.right - P.right + N.right
+      top: P.top - x.top + N.top,
+      bottom: x.bottom - P.bottom + N.bottom,
+      left: P.left - x.left + N.left,
+      right: x.right - P.right + N.right
     },
     k = e.modifiersData.offset;
   if (y === l.k5 && k) {

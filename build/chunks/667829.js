@@ -54,7 +54,7 @@ function D(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,8 +65,8 @@ function x(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -213,7 +213,7 @@ class j extends i.Component {
       canOnlyUseTextCommands: A,
       className: R,
       id: w,
-      required: x,
+      required: L,
       maxCharacterCount: M,
       allowNewLines: j,
       "aria-describedby": U,
@@ -230,7 +230,7 @@ class j extends i.Component {
       }),
       id: w,
       placeholder: this.getPlaceholder(),
-      required: x,
+      required: L,
       accessibilityLabel: B,
       disabled: u || !1,
       submitting: Z,
@@ -267,14 +267,14 @@ class j extends i.Component {
       "aria-describedby": U,
       "aria-labelledby": G,
       "aria-autocomplete": "list"
-    }, H = v ? (0, r.jsx)(N.Z, L(D({
+    }, H = v ? (0, r.jsx)(N.Z, x(D({
       ref: this.ref
     }, V), {
       type: g,
       value: u ? (0, S.JM)("") : c,
       canUseCommands: null === (t = g.commands) || void 0 === t ? void 0 : t.enabled,
       canOnlyUseTextCommands: A
-    })) : (0, r.jsx)(T.Z, L(D({
+    })) : (0, r.jsx)(T.Z, x(D({
       ref: this.ref
     }, V), {
       value: u ? "" : l

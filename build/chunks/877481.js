@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => L
 }), n(411104), n(47120);
 var r = n(274616),
   i = n(710845),
@@ -123,7 +123,7 @@ function D(e) {
     null == p.Z.safeParseWithQuery(e.launchTarget) ? n(Error("Failed to parse launch target. ".concat(e.launchTarget))) : (window.open(e.launchTarget), t([]))
   })
 }
-let x = {
+let L = {
   waitSubscribed: (e, t) => new Promise((n, r) => w(() => a.Z.isSubscribed(e, t), n, r)),
   waitConnected(e) {
     return new Promise(w.bind(this, () => l.Z.isConnected(e)))

@@ -1,17 +1,19 @@
 /** Chunk was on 78718 **/
 r.d(t, {
-  default: () => c
+  default: () => l
 }), r(266796);
 var n = r(200651),
   o = r(481060),
-  a = r(773),
-  s = r(217719);
+  a = r(11658),
+  s = r(773),
+  c = r(535396),
+  i = r(217719);
 
-function c(e) {
+function l(e) {
   var t, r, {
-      powerup: c
+      powerup: l
     } = e,
-    i = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -44,43 +46,52 @@ function c(e) {
     }
     return e
   }({
-    className: s.modal,
+    className: i.modal,
     size: o.CgR.DYNAMIC
-  }, i), r = r = {
+  }, p), r = r = {
     children: [(0, n.jsxs)(o.hzk, {
-      className: s.modalContentContainer,
+      className: i.modalContentContainer,
       scrollbarType: "none",
       children: [(0, n.jsxs)("div", {
-        className: s.sidebar,
+        className: i.sidebar,
         children: [(0, n.jsx)("img", {
           alt: "",
           src: "",
-          className: s.powerupImage
+          className: i.powerupImage
         }), (0, n.jsxs)("div", {
-          className: s.contentContainer,
+          className: i.contentContainer,
           children: [(0, n.jsx)(o.X6q, {
             variant: "heading-xl/extrabold",
-            children: c.title
-          }), (0, n.jsx)(o.Text, {
-            className: s.description,
-            variant: "text-sm/normal",
-            children: c.description
-          }), (0, n.jsx)(a.Z, {
-            className: s.footer,
-            skuId: c.skuId,
-            active: c.active
+            children: l.title
+          }), (() => {
+            switch (l.type) {
+              case c.U.LEVEL:
+                return (0, n.jsx)(a.KV, {
+                  index: 0
+                });
+              case c.U.PERK:
+                return (0, n.jsx)(o.Text, {
+                  className: i.description,
+                  variant: "text-sm/normal",
+                  children: l.description
+                })
+            }
+          })(), (0, n.jsx)(s.Z, {
+            className: i.footer,
+            skuId: l.skuId,
+            active: l.active
           })]
         })]
       }), (0, n.jsx)("div", {
-        className: s.exampleImage,
+        className: i.exampleImage,
         children: (0, n.jsx)("img", {
           alt: "",
           src: ""
         })
       })]
     }), (0, n.jsx)(o.olH, {
-      className: s.close,
-      onClick: i.onClose
+      className: i.close,
+      onClick: p.onClose
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

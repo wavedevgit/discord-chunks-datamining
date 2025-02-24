@@ -29,11 +29,11 @@ var r = "function" == typeof Map && Map.prototype,
   P = "function" == typeof Symbol && "object" == typeof Symbol.iterator,
   w = "function" == typeof Symbol && Symbol.toStringTag && (typeof Symbol.toStringTag === P ? "object" : "symbol") ? Symbol.toStringTag : null,
   D = Object.prototype.propertyIsEnumerable,
-  x = ("function" == typeof Reflect ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(e) {
+  L = ("function" == typeof Reflect ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(e) {
     return e.__proto__
   } : null);
 
-function L(e, t) {
+function x(e, t) {
   if (e === 1 / 0 || e === -1 / 0 || e != e || e && e > -1e3 && e < 1e3 || O.call(/e/, t)) return t;
   var n = /[0-9](?=(?:[0-9]{3})+(?![0-9]))/g;
   if ("number" == typeof e) {
@@ -120,11 +120,11 @@ e.exports = function e(t, r, i, s) {
   if ("number" == typeof t) {
     if (0 === t) return 1 / 0 / t > 0 ? "0" : "-0";
     var p = String(t);
-    return f ? L(t, p) : p
+    return f ? x(t, p) : p
   }
   if ("bigint" == typeof t) {
     var h = String(t) + "n";
-    return f ? L(t, h) : h
+    return f ? x(t, h) : h
   }
   var m = void 0 === l.depth ? 5 : l.depth;
   if (void 0 === i && (i = 0), i >= m && m > 0 && "object" == typeof t) return B(t) ? "[Array]" : "[Object]";
@@ -192,7 +192,7 @@ e.exports = function e(t, r, i, s) {
   if (t === n.g) return "{ [object globalThis] }";
   if (!Z(t) && !F(t)) {
     var ev = e_(t, b),
-      eb = x ? x(t) === Object.prototype : t instanceof Object || t.constructor === Object,
+      eb = L ? L(t) === Object.prototype : t instanceof Object || t.constructor === Object,
       ey = t instanceof Object ? "" : "null prototype",
       eO = !eb && w && Object(t) === t && w in t ? E.call(X(t), 8, -1) : ey ? "Object" : "",
       eS = (eb || "function" != typeof t.constructor ? "" : t.constructor.name ? t.constructor.name + " " : "") + (eO || ey ? "[" + I.call(S.call([], eO || [], ey || []), ": ") + "] " : "");

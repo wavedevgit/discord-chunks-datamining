@@ -137,15 +137,15 @@ function D(e) {
   }), t
 }
 
-function x() {
+function L() {
   let e = document.referrer;
   return 0 === e.search("https?://(.*)google.([^/?]*)") ? "google" : 0 === e.search("https?://(.*)bing.com") ? "bing" : 0 === e.search("https?://(.*)yahoo.com") ? "yahoo" : 0 === e.search("https?://(.*)duckduckgo.com") ? "duckduckgo" : null
 }
 
-function L() {
+function x() {
   let e = {},
     t = document.referrer,
-    n = x(),
+    n = L(),
     r = "yahoo" !== n ? "q" : "p";
   if (null != n) {
     e.search_engine = n;
@@ -225,7 +225,7 @@ function B() {
 
 function Z() {
   let e = {};
-  return e.referrer = document.referrer, e.referring_domain = U(), e = O({}, e, D(window.location.href), L())
+  return e.referrer = document.referrer, e.referring_domain = U(), e = O({}, e, D(window.location.href), x())
 }
 
 function F(e, t) {
@@ -254,7 +254,7 @@ function W() {
   let r = {},
     i = window.GLOBAL_ENV.RELEASE_CHANNEL;
   i && (null == r.release_channel || "" === r.release_channel) && (r.release_channel = i.split("-")[0]);
-  let o = parseInt((n = "371190", "371190"), 10);
+  let o = parseInt((n = "371253", "371253"), 10);
   isNaN(o) || (r.client_build_number = o);
   let a = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
   return isNaN(a) || (r.native_build_number = a), r.client_event_source = H(), r.has_client_mods = (0, f.e)(), r

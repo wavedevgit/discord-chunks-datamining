@@ -141,25 +141,25 @@ function R(e) {
     newAnalyticsLocations: P = []
   } = e, w = (0, s.e7)([f.Z], () => f.Z.isBlocked(t.id)), {
     analyticsLocations: D
-  } = (0, u.ZP)([...P, w ? c.Z.BLOCKED_PROFILE_POPOUT : c.Z.IGNORED_PROFILE_POPOUT]), x = (0, _.ZB)({
+  } = (0, u.ZP)([...P, w ? c.Z.BLOCKED_PROFILE_POPOUT : c.Z.IGNORED_PROFILE_POPOUT]), L = (0, _.ZB)({
     layout: w ? "BLOCKED_PROFILE_POPOUT" : "IGNORED_PROFILE_POPOUT",
     userId: t.id,
     guildId: n,
     channelId: y,
     messageId: N,
     roleId: C
-  }), L = i.useRef(null), M = (0, m.ZP)(t.id, n), k = (0, s.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t.id) : null);
+  }), x = i.useRef(null), M = (0, m.ZP)(t.id, n), k = (0, s.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t.id) : null);
   i.useEffect(() => {
-    null == o || o(null == L ? void 0 : L.current)
-  }, [L, o]);
+    null == o || o(null == x ? void 0 : x.current)
+  }, [x, o]);
   let j = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE";
   return (0, r.jsx)(u.Gt, {
     value: D,
     children: (0, r.jsx)(_.Mt, {
-      value: x,
+      value: L,
       shouldTrackViewOnMount: null == k || null != k.fullProfileLoadedTimestamp,
       children: (0, r.jsx)(l.VqE, {
-        ref: L,
+        ref: x,
         "aria-label": t.username,
         children: (0, r.jsx)(E.Z, {
           user: t,
@@ -196,7 +196,7 @@ function R(e) {
                     null == R || R(), (0, h.pQ)(A({
                       action: j,
                       analyticsLocations: D
-                    }, x))
+                    }, L))
                   }
                 }), (0, r.jsx)(v.Z, {
                   userId: t.id,
@@ -204,7 +204,7 @@ function R(e) {
                     null == R || R(), (0, h.pQ)(A({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                       analyticsLocations: D
-                    }, x))
+                    }, L))
                   }
                 })]
               })]

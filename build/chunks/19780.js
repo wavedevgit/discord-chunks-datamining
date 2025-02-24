@@ -179,7 +179,7 @@ function D() {
   b = null
 }
 
-function x(e) {
+function L(e) {
   let {
     guild: t
   } = e;
@@ -187,7 +187,7 @@ function x(e) {
   N()
 }
 
-function L(e) {
+function x(e) {
   let {
     channelId: t
   } = e;
@@ -347,10 +347,10 @@ let H = new V(s.Z, __OVERLAY__ ? {} : {
   CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: w,
   REMOTE_SESSION_CONNECT: w,
   CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: D,
-  GUILD_DELETE: x,
+  GUILD_DELETE: L,
   CHANNEL_DELETE: M,
   THREAD_DELETE: M,
-  CALL_DELETE: L,
+  CALL_DELETE: x,
   APP_STATE_UPDATE: j,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: Z
 });

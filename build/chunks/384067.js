@@ -35,8 +35,8 @@ let h = e => {
     {
       handleCardVisibilityChange: x
     } = (0, d.E)(v, "home", "marketing wide banner"),
-    j = r.bannerUrl;
-  return null == j ? null : (0, n.jsx)(a.$, {
+    _ = r.bannerUrl;
+  return null == _ ? null : (0, n.jsx)(a.$, {
     onChange: x,
     threshold: 0,
     children: (0, n.jsxs)("div", {
@@ -45,7 +45,7 @@ let h = e => {
         className: f.wideBannerBackgroundImg,
         children: (0, n.jsx)("img", {
           ref: C,
-          src: j,
+          src: _,
           alt: r.title,
           style: {
             width: "100%",

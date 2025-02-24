@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => L
+  ZP: () => x
 }), n(47120);
 var r, i = n(392711),
   o = n.n(i),
@@ -136,7 +136,7 @@ function D(e) {
     (null == n || n.guild_id === t.id) && delete g[e]
   }
 }
-class x extends(r = a.ZP.Store) {
+class L extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(c.ZP, l.Z, u.Z, d.default, f.Z)
   }
@@ -159,8 +159,8 @@ class x extends(r = a.ZP.Store) {
     return null != i ? r && null == i.moderator ? O(e, t, !0) : i : O(e, t, r)
   }
 }
-m(x, "displayName", "StageChannelRoleStore");
-let L = new x(s.Z, {
+m(L, "displayName", "StageChannelRoleStore");
+let x = new L(s.Z, {
   CHANNEL_UPDATES: N,
   CONNECTION_OPEN: w,
   GUILD_MEMBER_REMOVE: C,

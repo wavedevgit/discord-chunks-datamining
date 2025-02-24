@@ -73,8 +73,8 @@ let R = {
   P = [],
   w = [],
   D = "0",
-  x = new Map,
   L = new Map,
+  x = new Map,
   M = new Map,
   k = new Map,
   j = new Map;
@@ -119,7 +119,7 @@ function J(e) {
     R = A.some(e => e === C),
     w = null === (t = h.find(e => e.userId === C)) || void 0 === t ? void 0 : t.sessionId,
     D = h.some(e => (0, E.J)(e)),
-    B = x.get(d),
+    B = L.get(d),
     Z = G.get(U(null != b ? b : null, d)),
     F = null == Z ? void 0 : Z.launchParams,
     V = {
@@ -133,9 +133,9 @@ function J(e) {
       referrerId: null !== (i = null == B ? void 0 : B.referrerId) && void 0 !== i ? i : null == F ? void 0 : F.referrerId,
       customId: null !== (o = null == B ? void 0 : B.customId) && void 0 !== o ? o : null == F ? void 0 : F.customId
     };
-  R && null != B && x.set(B.applicationId, N({}, B, V));
+  R && null != B && L.set(B.applicationId, N({}, B, V));
   let H = !D;
-  null != B && u.id === B.location.id && d === (null == B ? void 0 : B.applicationId) && (!R && Array.from(B.userIds).some(e => e === C) || H) ? (x.delete(d), p.S.dispatch(I.CkL.RELEASE_ACTIVITY_WEB_VIEW)) : R && (null == B || B.applicationId !== d || B.location.id !== u.id) && w === c.default.getSessionId() && ei({
+  null != B && u.id === B.location.id && d === (null == B ? void 0 : B.applicationId) && (!R && Array.from(B.userIds).some(e => e === C) || H) ? (L.delete(d), p.S.dispatch(I.CkL.RELEASE_ACTIVITY_WEB_VIEW)) : R && (null == B || B.applicationId !== d || B.location.id !== u.id) && w === c.default.getSessionId() && ei({
     applicationId: d,
     launchId: f,
     compositeInstanceId: _,
@@ -157,8 +157,8 @@ function J(e) {
   if (null != b) {
     let e = (null !== (s = M.get(b)) && void 0 !== s ? s : []).filter(e => e.applicationId !== d),
       t = X((0, v.jS)(u)),
-      n = (null !== (l = L.get(t)) && void 0 !== l ? l : []).filter(e => e.applicationId !== d || e.location.id !== u.id);
-    A.length > 0 && (e.push(V), n.push(V)), M.set(b, e), L.set(t, n)
+      n = (null !== (l = x.get(t)) && void 0 !== l ? l : []).filter(e => e.applicationId !== d || e.location.id !== u.id);
+    A.length > 0 && (e.push(V), n.push(V)), M.set(b, e), x.set(t, n)
   }
 }
 
@@ -190,7 +190,7 @@ function ee(e) {
   let {
     guilds: t
   } = e;
-  M.clear(), L.clear(), j.clear(), k.clear(), t.forEach(e => $(e))
+  M.clear(), x.clear(), j.clear(), k.clear(), t.forEach(e => $(e))
 }
 
 function et(e) {
@@ -207,8 +207,8 @@ function en(e) {
   } = e, i = null !== (t = M.get(r.id)) && void 0 !== t ? t : [];
   M.set(r.id, []);
   let o = X(r.guild_id),
-    a = (null !== (n = L.get(o)) && void 0 !== n ? n : []).filter(e => (0, v.pY)(e.location) !== r.id);
-  L.set(o, a), i.forEach(e => {
+    a = (null !== (n = x.get(o)) && void 0 !== n ? n : []).filter(e => (0, v.pY)(e.location) !== r.id);
+  x.set(o, a), i.forEach(e => {
     j.delete(e.location.id)
   }), k.set(r.id, [])
 }
@@ -248,7 +248,7 @@ function ei(e) {
     customId: T,
     inviterUserId: N
   } = e, A = (0, g.ZP)(i), C = c.default.getSessionId();
-  if (null == A || null == C || (null === (t = x.get(i)) || void 0 === t ? void 0 : t.location.id) === l.id) return !1;
+  if (null == A || null == C || (null === (t = L.get(i)) || void 0 === t ? void 0 : t.location.id) === l.id) return !1;
   let R = (0, v.pY)(l),
     P = u.Z.getChannel(R),
     w = null == P ? void 0 : P.getGuildId();
@@ -266,7 +266,7 @@ function ei(e) {
     referrerId: O,
     customId: T
   };
-  x.set(i, D), p.S.dispatch(I.CkL.OPEN_EMBEDDED_ACTIVITY, {
+  L.set(i, D), p.S.dispatch(I.CkL.OPEN_EMBEDDED_ACTIVITY, {
     location: l,
     applicationId: i,
     isFirstActivityInChannel: E,
@@ -284,8 +284,8 @@ function ei(e) {
 function eo(e) {
   let {
     applicationId: t
-  } = e, n = x.get(t);
-  x.delete(t), (null == n ? void 0 : n.location.id) === (null == r ? void 0 : r.id) && (r = void 0)
+  } = e, n = L.get(t);
+  L.delete(t), (null == n ? void 0 : n.location.id) === (null == r ? void 0 : r.id) && (r = void 0)
 }
 
 function ea(e) {
@@ -301,17 +301,17 @@ function es(e) {
     activity: n
   } = e;
   if (null == n) return !1;
-  let r = x.get(null !== (t = n.application_id) && void 0 !== t ? t : "");
+  let r = L.get(null !== (t = n.application_id) && void 0 !== t ? t : "");
   if (null == r) return !1;
-  x.set(r.applicationId, N({}, r))
+  L.set(r.applicationId, N({}, r))
 }
 
 function el(e) {
   let {
     applicationId: t,
     config: n
-  } = e, r = x.get(t);
-  null != r && x.set(r.applicationId, C(N({}, r), {
+  } = e, r = L.get(t);
+  null != r && L.set(r.applicationId, C(N({}, r), {
     config: n
   }))
 }
@@ -488,21 +488,21 @@ class eT extends(i = o.ZP.PersistedStore) {
   }
   getSelfEmbeddedActivityForChannel(e) {
     var t;
-    return null == e ? null : null !== (t = Array.from(x.values()).find(t => (0, v.pY)(t.location) === e)) && void 0 !== t ? t : null
+    return null == e ? null : null !== (t = Array.from(L.values()).find(t => (0, v.pY)(t.location) === e)) && void 0 !== t ? t : null
   }
   getSelfEmbeddedActivityForLocation(e) {
     var t;
-    return null == e ? null : null !== (t = Array.from(x.values()).find(t => t.location.id === e.id)) && void 0 !== t ? t : null
+    return null == e ? null : null !== (t = Array.from(L.values()).find(t => t.location.id === e.id)) && void 0 !== t ? t : null
   }
   getSelfEmbeddedActivitiesForStartingChannel(e) {
-    if (null != location) return Array.from(x.values()).find(t => (0, v.wq)(t.location) === e)
+    if (null != location) return Array.from(L.values()).find(t => (0, v.wq)(t.location) === e)
   }
   getSelfEmbeddedActivities() {
-    return x
+    return L
   }
   getEmbeddedActivitiesForGuild(e) {
     var t;
-    return null !== (t = L.get(e)) && void 0 !== t ? t : P
+    return null !== (t = x.get(e)) && void 0 !== t ? t : P
   }
   getEmbeddedActivitiesForChannel(e) {
     var t;

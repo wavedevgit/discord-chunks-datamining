@@ -108,7 +108,7 @@ function D(e, t) {
     if (!(0, h.zi)(n) && (0, h.KM)(n)) return n
 }
 
-function x(e) {
+function L(e) {
   let t = D(_.Z.quests, e);
   if (null == t) return {
     quest: null,
@@ -120,7 +120,7 @@ function x(e) {
     activity: null != n ? n : null
   }
 }
-class L extends i.Z {
+class x extends i.Z {
   constructor(...e) {
     super(...e), b(this, "streamKeyToHeartbeatState", new Map), b(this, "initiateHeartbeat", e => {
       let {
@@ -328,7 +328,7 @@ class L extends i.Z {
       let {
         quest: t,
         activity: n
-      } = x(e);
+      } = L(e);
       if (null == t || !(0, h.pO)(t)) return;
       let r = T(t.id),
         i = null == n && this.streamKeyToHeartbeatState.has(r),
@@ -410,4 +410,4 @@ class L extends i.Z {
     })
   }
 }
-let M = new L
+let M = new x

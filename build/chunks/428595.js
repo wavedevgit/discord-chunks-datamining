@@ -54,7 +54,7 @@ function D(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,8 +65,8 @@ function x(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -104,10 +104,10 @@ let Z = e => {
   V = {
     newline: a().defaultRules.newline,
     paragraph: a().defaultRules.paragraph,
-    escape: L(D({}, a().defaultRules.escape), {
+    escape: x(D({}, a().defaultRules.escape), {
       match: (e, t, n) => !1 === t.allowEscape ? null : a().defaultRules.escape.match(e, t, n)
     }),
-    blockQuote: L(D({}, a().defaultRules.blockQuote), {
+    blockQuote: x(D({}, a().defaultRules.blockQuote), {
       requiredFirstCharacters: [" ", ">"],
       match(e, t) {
         let {
@@ -139,10 +139,10 @@ let Z = e => {
       }
     }),
     link: E.ZP,
-    autolink: L(D({}, a().defaultRules.autolink), {
+    autolink: x(D({}, a().defaultRules.autolink), {
       parse: B
     }),
-    url: L(D({}, a().defaultRules.url), {
+    url: x(D({}, a().defaultRules.url), {
       requiredFirstCharacters: ["h", "s"],
       match(e, t) {
         if (!t.inline) return null;
@@ -169,10 +169,10 @@ let Z = e => {
     u: a().defaultRules.u,
     br: a().defaultRules.br,
     text: O.ZP,
-    inlineCode: L(D({}, a().defaultRules.inlineCode), {
+    inlineCode: x(D({}, a().defaultRules.inlineCode), {
       parse(e, t, n) {
         let r = a().defaultRules.inlineCode.parse(e, t, n);
-        return !0 === n.parseInlineCodeChildContent ? L(D({}, r), {
+        return !0 === n.parseInlineCodeChildContent ? x(D({}, r), {
           validationChildContent: t(r.content, n)
         }) : r
       }
@@ -435,7 +435,7 @@ let ee = 10,
       parse(e, t, n) {
         var r;
         let i = null !== (r = n.parseDepth) && void 0 !== r ? r : 0,
-          o = L(D({}, n), {
+          o = x(D({}, n), {
             parseDepth: i + 1
           }),
           a = t(e[2], o),

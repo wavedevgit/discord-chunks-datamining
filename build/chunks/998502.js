@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => j,
-  jK: () => L,
+  jK: () => x,
   tS: () => M
 }), n(301563), n(47120), n(411104), n(26686), n(653041);
 var r, i, o, a, s = n(512722),
@@ -77,10 +77,10 @@ async function D(e) {
   return l()(null != r, "Data is null"), r
 }
 
-function x(e) {
+function L(e) {
   return D(e)
 }
-var L = function(e) {
+var x = function(e) {
     return e[e.Camera = 0] = "Camera", e[e.Microphone = 1] = "Microphone", e[e.Photo = 2] = "Photo", e[e.InputMonitoring = 3] = "InputMonitoring", e[e.ScreenRecording = 4] = "ScreenRecording", e
   }({}),
   M = function(e) {
@@ -257,7 +257,7 @@ let j = {
   },
   async copyImage(e) {
     l()(h.isPlatformEmbedded, "Copy image method called outside native app"), l()("function" == typeof S.clipboard.copyImage, "Copy image not supported");
-    let t = await x(e);
+    let t = await L(e);
     S.clipboard.copyImage(E.from(t), e)
   },
   async copyImageBlob(e, t) {
@@ -271,7 +271,7 @@ let j = {
     if (null == n) return;
     let r = null !== (t = n.pathname.split("/").pop()) && void 0 !== t ? t : "unknown",
       i = f.K.get(w),
-      o = await x(e),
+      o = await L(e),
       a = E.from(o),
       s = await S.fileManager.saveWithDialog(a, r, null != i ? i : void 0);
     null != s && f.K.set(w, s)

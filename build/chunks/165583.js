@@ -34,9 +34,9 @@ var r = n(200651),
   P = n(981631),
   w = n(388032),
   D = n(182666),
-  x = n(867250);
+  L = n(867250);
 
-function L(e) {
+function x(e) {
   if (null == e) return null;
   let t = u()(e),
     n = t.diff(u()(), "h");
@@ -94,7 +94,7 @@ function M(e) {
     }), (0, r.jsx)(_.Text, {
       variant: "eyebrow",
       className: D.countdownText,
-      children: L(d)
+      children: x(d)
     })]
   })
 }
@@ -202,7 +202,7 @@ function G(e) {
     }), (0, r.jsx)(_.Text, {
       variant: "eyebrow",
       className: D.countdownTextInSetting,
-      children: L(null == i ? void 0 : i.expires_at)
+      children: x(null == i ? void 0 : i.expires_at)
     })]
   })
 }
@@ -260,7 +260,7 @@ function Z(e) {
           className: D.contentContainer,
           children: [(0, r.jsx)("img", {
             className: D.upsellImage,
-            src: x,
+            src: L,
             alt: w.NW.string(w.t.do7AoK)
           }), (0, r.jsx)(_.X6q, {
             variant: "heading-xl/bold",
@@ -291,7 +291,7 @@ function Z(e) {
           className: D.contentContainer,
           children: [(0, r.jsx)("img", {
             className: D.upsellImage,
-            src: x,
+            src: L,
             alt: w.NW.string(w.t.do7AoK)
           }), (0, r.jsx)(_.X6q, {
             variant: "heading-xl/bold",
@@ -318,14 +318,14 @@ function Z(e) {
       });
     case R.cd.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI:
       l()(null != o, "You must specify children for this upsell type");
-      let L = (0, p.ap)(A) ? n(537381) : n(341048);
+      let x = (0, p.ap)(A) ? n(537381) : n(341048);
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: D.contentContainer,
           children: [(0, r.jsx)("img", {
             alt: "",
             className: D.upsellImage,
-            src: L
+            src: x
           }), (0, r.jsx)(_.X6q, {
             variant: "heading-xl/bold",
             color: "header-primary",

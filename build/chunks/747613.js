@@ -84,8 +84,8 @@ function R(e, t) {
 let P = 20,
   w = 125,
   D = (0, g.hQ)(),
-  x = d.Z.convert.fromCodePoint("1f44f"),
-  L = (0, b.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
+  L = d.Z.convert.fromCodePoint("1f44f"),
+  x = (0, b.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
   M = (0, b.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
 
 function k(e) {
@@ -111,7 +111,7 @@ let j = e => {
       onClick: i,
       delay: o,
       index: a
-    } = e, s = (0, u.JA)("item-".concat(a)), l = v.ZP.getURL(x + n), d = (0, p.q_F)({
+    } = e, s = (0, u.JA)("item-".concat(a)), l = v.ZP.getURL(L + n), d = (0, p.q_F)({
       opacity: 1,
       from: {
         opacity: +!t
@@ -139,7 +139,7 @@ let j = e => {
       onClick: o,
       hasTabWrapper: s
     } = e, d = (0, m.Z)("diversity"), f = (0, p.q_F)({
-      height: (M + 2 * L) * (E.gw.length + 1),
+      height: (M + 2 * x) * (E.gw.length + 1),
       from: {
         height: M
       },
@@ -184,7 +184,7 @@ let j = e => {
       selectedSurrogate: n,
       className: o,
       hasTabWrapper: a
-    } = e, s = v.ZP.getURL(x + n), [l, c] = i.useState(!1), u = (0, h.Z)(null, () => c(!1)), d = i.useRef(null), f = () => {
+    } = e, s = v.ZP.getURL(L + n), [l, c] = i.useState(!1), u = (0, h.Z)(null, () => c(!1)), d = i.useRef(null), f = () => {
       c(!0)
     }, m = e => {
       e.keyCode === y.yXg.ESCAPE && (e.stopPropagation(), c(!1), null != d.current && d.current.focus())

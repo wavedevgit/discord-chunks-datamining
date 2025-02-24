@@ -103,14 +103,14 @@ function C(e) {
     bannerHeight: R,
     themePadding: P,
     animateOnHover: w = !1
-  } = e, D = (0, p.Dt)(), [x, L] = i.useState(!1), M = (0, l.e7)([m.Z], () => m.Z.isFocused()), k = h.QK.getSetting(), {
+  } = e, D = (0, p.Dt)(), [L, x] = i.useState(!1), M = (0, l.e7)([m.Z], () => m.Z.isFocused()), k = h.QK.getSetting(), {
     bannerSrc: j,
     status: U
   } = (0, E.Z)({
     displayProfile: o,
     pendingBanner: y,
     size: C,
-    canAnimate: w || !k ? x : M
+    canAnimate: w || !k ? L : M
   }), G = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), B = n.getAvatarURL(v, (0, u.pxk)(I)), Z = (0, s._i)((0, d.ZP)(B, G, !1)), F = (0, f.Z)(null !== (t = null == o ? void 0 : o.primaryColor) && void 0 !== t ? t : Z).hex, V = A(I), H = V + T - P, W = R - N - P;
   return (0, r.jsxs)("svg", {
     className: b.mask,
@@ -142,8 +142,8 @@ function C(e) {
       mask: "url(#".concat(D, ")"),
       children: [O, (0, r.jsxs)("div", {
         className: a()(b.banner, S),
-        onMouseMove: () => L(!0),
-        onMouseLeave: () => L(!1),
+        onMouseMove: () => x(!0),
+        onMouseLeave: () => x(!1),
         style: {
           height: R,
           minHeight: R,

@@ -121,11 +121,11 @@ let O = function(e) {
     N(!1), null == n || n(e.currentTarget.checked, e)
   }
 
-  function x(e) {
+  function L(e) {
     !h && !e.repeat && (" " === e.key || "Enter" === e.key) && N(!0)
   }
 
-  function L(e) {
+  function x(e) {
     var t;
     !h && T && !e.repeat && (N(!1), "Enter" === e.key && (null === (t = I.current) || void 0 === t || t.click()))
   }
@@ -185,8 +185,8 @@ let O = function(e) {
         },
         className: _.input,
         tabIndex: h ? -1 : 0,
-        onKeyDown: x,
-        onKeyUp: L,
+        onKeyDown: L,
+        onKeyUp: x,
         onChange: D,
         checked: o,
         disabled: h

@@ -169,7 +169,7 @@
     P = / *\n+$/,
     w = RegExp("^( *)(" + S + ") [\\s\\S]+?(?:\n{2,}(?! )(?!\\1" + S + " )\\n*|\\s*\n*$)"),
     D = /(?:^|\n)( *)$/,
-    x = function() {
+    L = function() {
       var e = /^ *\| *| *\| *$/g,
         t = / *$/,
         n = /^ *-+: *$/,
@@ -219,7 +219,7 @@
         NPTABLE_REGEX: /^ *(\S.*\|.*)\n *([-:]+ *\|[-| :]*)\n((?:.*\|.*(?:\n|$))*)\n*/
       }
     }(),
-    L = "(?:\\[[^\\]]*\\]|[^\\[\\]]|\\](?=[^\\[]*\\]))*",
+    x = "(?:\\[[^\\]]*\\]|[^\\[\\]]|\\](?=[^\\[]*\\]))*",
     M = "\\s*<?((?:\\([^)]*\\)|[^\\s\\\\]|\\\\.)*?)>?(?:\\s+['\"]([\\s\\S]*?)['\"])?\\s*",
     k = /mailto:/i,
     j = function(e, t, n) {
@@ -283,8 +283,8 @@
       },
       nptable: {
         order: G++,
-        match: s(x.NPTABLE_REGEX),
-        parse: x.parseNpTable,
+        match: s(L.NPTABLE_REGEX),
+        parse: L.parseNpTable,
         react: null,
         html: null
       },
@@ -446,8 +446,8 @@
       },
       table: {
         order: G++,
-        match: s(x.TABLE_REGEX),
-        parse: x.parseTable,
+        match: s(L.TABLE_REGEX),
+        parse: L.parseTable,
         react: function(e, t, n) {
           var r = function(t) {
               return null == e.align[t] ? {} : {
@@ -619,7 +619,7 @@
       link: {
         order: G++,
         requiredFirstCharacters: ["["],
-        match: a(RegExp("^\\[(" + L + ")\\]\\(" + M + "\\)")),
+        match: a(RegExp("^\\[(" + x + ")\\]\\(" + M + "\\)")),
         parse: function(e, t, n) {
           return {
             content: t(e[1], n),
@@ -644,7 +644,7 @@
       },
       image: {
         order: G++,
-        match: a(RegExp("^!\\[(" + L + ")\\]\\(" + M + "\\)")),
+        match: a(RegExp("^!\\[(" + x + ")\\]\\(" + M + "\\)")),
         parse: function(e, t, n) {
           return {
             alt: e[1],
@@ -669,7 +669,7 @@
       },
       reflink: {
         order: G++,
-        match: a(RegExp("^\\[(" + L + ")\\]\\s*\\[([^\\]]*)\\]")),
+        match: a(RegExp("^\\[(" + x + ")\\]\\s*\\[([^\\]]*)\\]")),
         parse: function(e, t, n) {
           return j(e, n, {
             type: "link",
@@ -681,7 +681,7 @@
       },
       refimage: {
         order: G++,
-        match: a(RegExp("^!\\[(" + L + ")\\]\\s*\\[([^\\]]*)\\]")),
+        match: a(RegExp("^!\\[(" + x + ")\\]\\s*\\[([^\\]]*)\\]")),
         parse: function(e, t, n) {
           return j(e, n, {
             type: "image",

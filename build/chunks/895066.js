@@ -268,7 +268,7 @@ class f {
                 relativeReceptionDelay: t.relativeReceptionDelay,
                 relativePlayoutDelay: t.relativePlayoutDelay
               },
-              x = {
+              L = {
                 silent: t.opSilence,
                 normal: t.opNormal,
                 merged: t.opMerge,
@@ -277,7 +277,7 @@ class f {
                 preemptiveExpanded: t.opPreemptiveExpand,
                 cng: t.opCNG
               },
-              L = {
+              x = {
                 passthroughCount: null !== (l = t.passthroughCount) && void 0 !== l ? l : 0,
                 decryptSuccessCount: null !== (c = t.decryptSuccessCount) && void 0 !== c ? c : 0,
                 decryptFailureCount: null !== (d = t.decryptFailureCount) && void 0 !== d ? d : 0,
@@ -303,12 +303,12 @@ class f {
                 mosCount: this.inboundStats[n].mosCount + +(o > 0),
                 mosBuckets: a,
                 bufferStats: D,
-                frameOpStats: x
-              }, L), this.periodicInboundStats[n] = {
+                frameOpStats: L
+              }, x), this.periodicInboundStats[n] = {
                 previousTimestampMs: this.periodicInboundStats[n].previousTimestampMs,
                 previous: this.periodicInboundStats[n].previous,
                 currentTimestampMs: Date.now(),
-                current: x,
+                current: L,
                 accelerateRateSum: this.periodicInboundStats[n].accelerateRateSum + (null !== (m = t.accelerateRate) && void 0 !== m ? m : 0),
                 expandRateSum: this.periodicInboundStats[n].expandRateSum + (null !== (g = t.expandRate) && void 0 !== g ? g : 0),
                 preemptiveExpandRateSum: this.periodicInboundStats[n].preemptiveExpandRateSum + (null !== (E = t.preemptiveExpandRate) && void 0 !== E ? E : 0),
@@ -327,12 +327,12 @@ class f {
               mosCount: 0,
               mosBuckets: [0, 0, 0, 0, 0],
               bufferStats: D,
-              frameOpStats: x
-            }, L), this.periodicInboundStats[n] = {
+              frameOpStats: L
+            }, x), this.periodicInboundStats[n] = {
               previousTimestampMs: Date.now(),
-              previous: x,
+              previous: L,
               currentTimestampMs: Date.now(),
-              current: x,
+              current: L,
               accelerateRateSum: null !== (b = t.accelerateRate) && void 0 !== b ? b : 0,
               expandRateSum: null !== (y = t.expandRate) && void 0 !== y ? y : 0,
               preemptiveExpandRateSum: null !== (O = t.preemptiveExpandRate) && void 0 !== O ? O : 0,

@@ -88,11 +88,11 @@ function D() {
   O = !0
 }
 
-function x() {
+function L() {
   b = !0
 }
 
-function L(e) {
+function x(e) {
   var t;
   v = {}, e.invites.forEach(e => {
     v[e.code] = p.Z.createFromServer(e)
@@ -134,7 +134,7 @@ let j = new k(f.Z, {
   INSTANT_INVITE_REVOKE_SUCCESS: A,
   FRIEND_INVITE_REVOKE_REQUEST: w,
   FRIEND_INVITE_CREATE_REQUEST: D,
-  FRIEND_INVITES_FETCH_REQUEST: x,
-  FRIEND_INVITES_FETCH_RESPONSE: L,
+  FRIEND_INVITES_FETCH_REQUEST: L,
+  FRIEND_INVITES_FETCH_RESPONSE: x,
   INSTANT_INVITE_CLEAR: M
 })

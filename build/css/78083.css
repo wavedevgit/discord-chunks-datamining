@@ -1,6 +1,6 @@
 /**
   Module ID: 78083
-  Original File Name: afc2be7b10d4d5ea
+  Original File Name: aea4c4f1d59dd5e7
 **/
 .rootContainer_f4adbd {
     align-items: center;
@@ -214,8 +214,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -1265,4 +1265,4 @@
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=afc2be7b10d4d5ea.css.map*/
+/*# sourceMappingURL=aea4c4f1d59dd5e7.css.map*/

@@ -15,7 +15,7 @@ function o() {
       children: "Reset Notifications"
     }), (0, r.jsx)(a.zxk, {
       onClick: () => {
-        (0, i.Q)()
+        (0, i.Qh)()
       },
       children: "Reset"
     })]

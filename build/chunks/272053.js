@@ -181,10 +181,10 @@ class D {
     m(this, "_nextCheck", void 0), m(this, "_started", void 0), this._started = !1
   }
 }
-let x = new D;
+let L = new D;
 
-function L() {
-  _.Z.enabled ? x.start() : x.stop()
+function x() {
+  _.Z.enabled ? L.start() : L.stop()
 }
 
 function M(e) {
@@ -194,7 +194,7 @@ function M(e) {
 }
 class k extends(r = a.ZP.Store) {
   initialize() {
-    L(), this.waitFor(p.Z), this.syncWith([_.Z], L)
+    x(), this.waitFor(p.Z), this.syncWith([_.Z], x)
   }
   getStream() {
     return I
@@ -203,5 +203,5 @@ class k extends(r = a.ZP.Store) {
 m(k, "displayName", "ExternalStreamingStore");
 let j = new k(l.Z, {
   STREAMING_UPDATE: M,
-  USER_CONNECTIONS_UPDATE: () => x._check()
+  USER_CONNECTIONS_UPDATE: () => L._check()
 })

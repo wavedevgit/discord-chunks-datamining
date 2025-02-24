@@ -76,7 +76,7 @@ function T(e) {
     sound: t,
     trigger: n
   } = e;
-  if (!L()) return;
+  if (!x()) return;
   let r = t.soundId.toString();
   n === h.YQ.SOUNDBOARD && C(r)
 }
@@ -87,7 +87,7 @@ function N(e) {
     soundId: n,
     userId: r
   } = e;
-  if (!x()) return;
+  if (!L()) return;
   let i = n.toString();
   r !== (null === (t = f.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && R(i) && A(i)
 }
@@ -117,7 +117,7 @@ function P(e) {
 
 function w() {
   var e;
-  if (!L()) return;
+  if (!x()) return;
   let t = null === (e = d.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) || void 0 === e ? void 0 : e.playedSounds;
   I.overwriteHistory(P(null != t ? t : {}), O)
 }
@@ -129,17 +129,17 @@ function D(e) {
     },
     wasSaved: n
   } = e;
-  L() && t === g.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (O = [])
+  x() && t === g.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (O = [])
 }
 
-function x() {
+function L() {
   return (0, p.v)({
     location: "soundboard_event_store",
     autoTrackExposure: !1
   }).canSeeRecentlyHeard
 }
 
-function L() {
+function x() {
   return (0, p.v)({
     location: "soundboard_event_store",
     autoTrackExposure: !1

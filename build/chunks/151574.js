@@ -42,7 +42,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,7 +67,7 @@ function L(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -107,7 +107,7 @@ function V(e) {
   } = e, d = (0, s.JA)("".concat(o)), {
     tabIndex: p
   } = d, _ = k(d, ["tabIndex"]);
-  return (0, r.jsxs)(f.P3F, M(x({}, _), {
+  return (0, r.jsxs)(f.P3F, M(L({}, _), {
     tabIndex: n ? -1 : p,
     className: a()(w.suggestedExpression, {
       [w.suggestedExpressionFocused]: t
@@ -192,14 +192,14 @@ let W = i.memo(function(e) {
     onSelectSticker: c,
     stickerIconVisible: u = !1,
     submitButtonVisible: d = !1
-  } = e, m = i.useContext(h.ZP), [O, S] = i.useState(null), [D, L] = i.useState(!1), [j, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [F, W] = i.useState(""), [Y, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, N.Z)(F, D, o), {
+  } = e, m = i.useContext(h.ZP), [O, S] = i.useState(null), [D, x] = i.useState(!1), [j, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [F, W] = i.useState(""), [Y, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, N.Z)(F, D, o), {
     analyticsLocations: $
   } = (0, _.ZP)(p.Z.EXPRESSION_SUGGESTIONS), {
     handleTextChange: ee,
     debouncedSetTextInputValue: et
   } = (0, N.m)({
     setTextInputValue: W,
-    setHasDismissed: L,
+    setHasDismissed: x,
     setHasSelection: X,
     setFocusedSuggestionType: S
   });
@@ -237,7 +237,7 @@ let W = i.memo(function(e) {
       shouldRenderSuggestions: eo,
       focusedSuggestionType: O,
       setFocusedSuggestionType: S,
-      setHasDismissed: L,
+      setHasDismissed: x,
       setFocusedStickerListItem: U,
       setTextInputValue: W
     }),
@@ -246,7 +246,7 @@ let W = i.memo(function(e) {
         if (T.default.track(R.rMx.AUTO_SUGGEST_EXPRESSION_SELECTED, {
             sticker_id: e.id,
             suggestion_trigger: Y
-          }), t === E.eb.SENDABLE) L(!0), c(e, b.V0.EXPRESSION_SUGGESTIONS), et.cancel(), W("");
+          }), t === E.eb.SENDABLE) x(!0), c(e, b.V0.EXPRESSION_SUGGESTIONS), et.cancel(), W("");
         else if ((0, y.jl)(e)) {
           let t = v.Z.getStickerPack(e.pack_id);
           null != t && (0, I.Z)({
@@ -291,7 +291,7 @@ let W = i.memo(function(e) {
                 ref: t,
                 tabIndex: n
               } = e, i = k(e, ["ref", "tabIndex"]);
-              return (0, r.jsx)("div", M(x({
+              return (0, r.jsx)("div", M(L({
                 className: w.stickerResults,
                 ref: e => {
                   t.current = e
@@ -352,7 +352,7 @@ let W = i.memo(function(e) {
               },
               children: (0, r.jsx)(f.ua7, {
                 text: P.NW.string(P.t.XNMs5u),
-                children: e => (0, r.jsx)(f.Dio, M(x({
+                children: e => (0, r.jsx)(f.Dio, M(L({
                   size: "md",
                   color: "currentColor"
                 }, e), {

@@ -32,11 +32,11 @@ let f = {
       analyticsLocations: S,
       upsellType: N,
       themeOverride: y = f.NITRO_BASIC
-    } = e, [I, v] = i.useState(m), [O, P] = i.useState(p);
+    } = e, [I, O] = i.useState(m), [v, P] = i.useState(p);
     return i.useEffect(() => {
       P(u)
     }, [y]), i.useEffect(() => {
-      setTimeout(() => v(!1), 3e3)
+      setTimeout(() => O(!1), 3e3)
     }, []), i.useEffect(() => {
       o.default.track(C.rMx.POST_ACTION_UPSELL_SHOWN, {
         type: N,
@@ -78,7 +78,7 @@ let f = {
             children: (0, l.jsx)("img", {
               alt: "",
               className: c.image,
-              src: O
+              src: v
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);

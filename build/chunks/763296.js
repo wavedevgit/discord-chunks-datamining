@@ -81,7 +81,7 @@ function D(e) {
   E.set(t, n)
 }
 
-function x(e) {
+function L(e) {
   let {
     soundId: t,
     guildId: n
@@ -89,7 +89,7 @@ function x(e) {
   null == r || null == i || i < 0 || (r.splice(i, 1), E.set(n, [...r]))
 }
 
-function L() {
+function x() {
   y = 1
 }
 
@@ -233,13 +233,13 @@ let W = new H(s.Z, {
   GUILD_SOUNDBOARD_FETCH: C,
   GUILD_SOUNDBOARD_SOUND_CREATE: w,
   GUILD_SOUNDBOARD_SOUND_UPDATE: w,
-  GUILD_SOUNDBOARD_SOUND_DELETE: x,
+  GUILD_SOUNDBOARD_SOUND_DELETE: L,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: k,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: j,
   USER_SOUNDBOARD_SET_VOLUME: G,
   VOICE_CHANNEL_SELECT: A,
   USER_SETTINGS_PROTO_UPDATE: Z,
-  SOUNDBOARD_FETCH_DEFAULT_SOUNDS: L,
+  SOUNDBOARD_FETCH_DEFAULT_SOUNDS: x,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: M,
   SOUNDBOARD_SOUNDS_RECEIVED: R,
   GUILD_DELETE: P,

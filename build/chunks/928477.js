@@ -4,8 +4,8 @@ n.d(t, {
   JA: () => D,
   Jw: () => A,
   Od: () => w,
-  Wj: () => L,
-  gK: () => x,
+  Wj: () => x,
+  gK: () => L,
   oD: () => R,
   vH: () => C
 }), n(301563), n(757143), n(653041), n(47120);
@@ -120,7 +120,7 @@ function D(e) {
   }, [t, n, o, u, a, l, d, f])
 }
 
-function x(e, t, n, r, o) {
+function L(e, t, n, r, o) {
   return k(e, () => i.tn.post({
     url: T.ANM.CHANNEL_THREADS(e.id),
     body: {
@@ -133,7 +133,7 @@ function x(e, t, n, r, o) {
   }))
 }
 
-function L(e) {
+function x(e) {
   let {
     parentChannel: t,
     name: n,

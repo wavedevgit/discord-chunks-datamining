@@ -279,8 +279,8 @@ let N = {
     maxAge: +_.Z.Millis.MINUTE,
     updateAgeOnGet: !0
   },
-  x = new(a())(D),
-  L = new(a())(D);
+  L = new(a())(D),
+  x = new(a())(D);
 
 function M(e, t, n) {
   let r = [],
@@ -290,7 +290,7 @@ function M(e, t, n) {
       guildId: t
     },
     o = n ? w : P,
-    a = n ? L : x,
+    a = n ? x : L,
     s = a.get(e);
   if (null != s) return s;
   let l = e.replace(/\r\n/g, " \n").replace(/[\r\f]/g, " ").replace(/\t/g, " ") + "\n\n",

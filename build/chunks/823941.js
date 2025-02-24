@@ -2,7 +2,7 @@
 "use strict";
 r.d(t, {
   Z: () => I,
-  n: () => w
+  n: () => E
 }), r(301563);
 var n = r(200651),
   i = r(192379),
@@ -22,15 +22,15 @@ var n = r(200651),
   g = r(884697),
   v = r(624377),
   x = r(141011),
-  j = r(813083),
-  _ = r(67938),
+  _ = r(813083),
+  j = r(67938),
   y = r(372654),
   O = r(215023),
   k = r(474936),
   P = r(388032),
   S = r(697604);
-let w = (0, g.IC)(90),
-  E = e => {
+let E = (0, g.IC)(90),
+  w = e => {
     let {
       category: t
     } = e, {
@@ -82,7 +82,7 @@ function I(e) {
   } = e, {
     backgroundColors: P
   } = (0, v.Z)(h.styles), I = (0, O.ZS)(h.skuId), T = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), N = (0, s.e7)([b.Z], () => b.Z.isFocused());
-  if (h.skuId === a.T.CHANCE) return (0, n.jsx)(_.O, {
+  if (h.skuId === a.T.CHANCE) return (0, n.jsx)(j.O, {
     category: h
   });
   let B = !!(null == I ? void 0 : I.showDarkBannerText),
@@ -112,7 +112,7 @@ function I(e) {
     }), (null === (l = O.Ve[h.skuId]) || void 0 === l ? void 0 : l.addLogo) ? (0, n.jsx)("img", {
       className: S.categoryLogo,
       src: (0, g.uV)(h.logo, {
-        size: w
+        size: E
       }),
       alt: h.name,
       style: {
@@ -125,10 +125,10 @@ function I(e) {
         [S.blackSummary]: B
       }),
       variant: "text-md/normal",
-      children: h.skuId === a.T.DISXCORE ? (0, n.jsx)(E, {
+      children: h.skuId === a.T.DISXCORE ? (0, n.jsx)(w, {
         category: h
       }) : h.summary
-    }), !k && (0, n.jsx)(j.Z, {
+    }), !k && (0, n.jsx)(_.Z, {
       category: h,
       className: S.limitedTimeBadge,
       display: "banner"

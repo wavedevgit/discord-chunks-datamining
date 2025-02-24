@@ -67,8 +67,8 @@ let I = 200,
   P = !1,
   w = 0,
   D = 0,
-  x = 0,
-  L = [],
+  L = 0,
+  x = [],
   M = [],
   k = [],
   j = !1;
@@ -214,10 +214,10 @@ function H(e) {
 function W(e) {
   let t = Date.now(),
     n = t - N;
-  L = (L = [{
+  x = (x = [{
     bytes: e,
     timestamp: t
-  }, ...L]).slice(0, T).filter(e => {
+  }, ...x]).slice(0, T).filter(e => {
     let {
       timestamp: t
     } = e;
@@ -259,7 +259,7 @@ function X(e) {
         let r = Q(n, a, F);
         r > 0 && q(D += r);
         let s = Q(n, a, V);
-        if (s > 0 && z(x += s), i === t) {
+        if (s > 0 && z(L += s), i === t) {
           let e = n[a];
           if (!0 !== e.paused && (e.type === v.vxO.UNINSTALLING || e.type === v.vxO.INSTALLING || e.type === v.vxO.UPDATING)) switch (e.stage) {
             case v.f07.PATCHING:
@@ -335,7 +335,7 @@ class J extends(r = a.ZP.Store) {
     return null == n || null == n.launchOptions ? [] : Object.values(n.launchOptions)
   }
   getHistoricalTotalBytesRead() {
-    return L
+    return x
   }
   getHistoricalTotalBytesDownloaded() {
     return M

@@ -116,12 +116,12 @@ function D(e, t, n) {
   })
 }
 
-function x(e) {
+function L(e) {
   let t = h.Z.getChannel(e);
-  return null == t ? C : null == t.memberListId ? L(t) : t.memberListId
+  return null == t ? C : null == t.memberListId ? x(t) : t.memberListId
 }
 
-function L(e) {
+function x(e) {
   return f.oz(O.Plq.VIEW_CHANNEL, e) ? C : s().v3(o()(e.permissionOverwrites).reduce((e, t) => {
     let {
       id: n,
@@ -315,7 +315,7 @@ class z extends(r = c.ZP.Store) {
     this.waitFor(y.default, E.Z, h.Z, g.ZP, v.Z, b.Z, _.default, m.Z, p.Z, d.Z), this.syncWith([b.Z], Y), this.syncWith([p.Z], W)
   }
   getProps(e, t) {
-    let n = j.get(e, x(t));
+    let n = j.get(e, L(t));
     return {
       listId: "".concat(n.guildId, ":").concat(n.listId),
       groups: n.groups,
@@ -324,7 +324,7 @@ class z extends(r = c.ZP.Store) {
     }
   }
   getRows(e, t) {
-    return j.get(e, x(t)).rows
+    return j.get(e, L(t)).rows
   }
 }
 I(z, "displayName", "ChannelMemberStore");

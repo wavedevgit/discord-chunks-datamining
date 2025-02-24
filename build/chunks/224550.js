@@ -50,57 +50,57 @@ let m = function(e) {
       primaryText: w,
       paidURL: f.EYA.PAID_TERMS
     }),
-    x = _.NW.format(_.t.H2uH5e, {
+    L = _.NW.format(_.t.H2uH5e, {
       primaryText: w,
       paidURL: f.EYA.PAID_TERMS
     }),
-    L = "",
+    x = "",
     M = "";
   if (y) {
-    if (null != m && (null == O ? void 0 : O.subscriptionPeriodEnd) != null) L = _.NW.format(_.t["2VPTa2"], {
+    if (null != m && (null == O ? void 0 : O.subscriptionPeriodEnd) != null) x = _.NW.format(_.t["2VPTa2"], {
       subtotalRate: g
     });
     else switch (t) {
       case p.rV.MONTH:
-        L = 1 === n ? _.NW.format(_.t["+ywPmZ"], {}) : _.NW.format(_.t.oBwZfn, {
+        x = 1 === n ? _.NW.format(_.t["+ywPmZ"], {}) : _.NW.format(_.t.oBwZfn, {
           intervalCount: n
         });
         break;
       case p.rV.YEAR:
-        L = _.NW.format(_.t.y9gsX1, {});
+        x = _.NW.format(_.t.y9gsX1, {});
         break;
       case void 0:
-        M = D, L = _.NW.format(_.t.UxGFHx, {});
+        M = D, x = _.NW.format(_.t.UxGFHx, {});
         break;
       default:
         throw Error("Unexpected interval: ".concat(t))
     }
   } else if (T === f.GZQ.ONE_TIME) switch (N) {
     case f.POd.COLLECTIBLES:
-      M = D, L = v ? _.NW.format(_.t.ofqyUl, {
+      M = D, x = v ? _.NW.format(_.t.ofqyUl, {
         paidURL: f.EYA.PAID_TERMS
       }) : _.NW.format(_.t.G3l0s7, {
         paidURL: f.EYA.PAID_TERMS
       });
       break;
     case f.POd.GUILD_PRODUCT:
-      M = D, L = _.NW.format(_.t["GEAQ+v"], {
+      M = D, x = _.NW.format(_.t["GEAQ+v"], {
         paidURL: f.EYA.PAID_TERMS
       });
       break;
     default:
-      M = x, L = _.NW.string(_.t["9/siSU"])
+      M = L, x = _.NW.string(_.t["9/siSU"])
   } else if (null == E || v) switch (v && (M = D), t) {
     case p.rV.MONTH:
-      L = v ? _.NW.string(_.t.IjNapq) : _.NW.string(_.t["/sGXPj"]), L = v ? _.NW.string(_.t.IjNapq) : 1 === n ? _.NW.string(_.t["/sGXPj"]) : _.NW.formatToPlainString(_.t.Fqjiho, {
+      x = v ? _.NW.string(_.t.IjNapq) : _.NW.string(_.t["/sGXPj"]), x = v ? _.NW.string(_.t.IjNapq) : 1 === n ? _.NW.string(_.t["/sGXPj"]) : _.NW.formatToPlainString(_.t.Fqjiho, {
         intervalCount: n
       });
       break;
     case p.rV.YEAR:
-      L = v ? _.NW.string(_.t.vAfbGx) : _.NW.string(_.t.IGzFc3);
+      x = v ? _.NW.string(_.t.vAfbGx) : _.NW.string(_.t.IGzFc3);
       break;
     case void 0:
-      L = "";
+      x = "";
       break;
     default:
       throw Error("Unexpected interval: ".concat(t))
@@ -122,7 +122,7 @@ let m = function(e) {
         }
       })
     }
-    L = (null == C ? void 0 : C.isPaused) ? _.NW.format(_.t.B6oNwM, {
+    x = (null == C ? void 0 : C.isPaused) ? _.NW.format(_.t.B6oNwM, {
       primaryText: r,
       rate: e,
       paidURL: f.EYA.PAID_TERMS,
@@ -159,8 +159,8 @@ let m = function(e) {
       }), (0, r.jsx)("div", {
         className: h.divider
       })]
-    }), "" !== L && (0, r.jsx)("div", {
-      children: L
+    }), "" !== x && (0, r.jsx)("div", {
+      children: x
     }), S === f.HeQ.PAYSAFE_CARD && (0, r.jsx)("div", {
       className: h.paymentSourceNoticeCopy,
       children: _.NW.string(_.t.kj9VLC)

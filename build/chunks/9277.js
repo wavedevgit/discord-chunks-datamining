@@ -82,9 +82,9 @@ function I(e, t) {
     {
       Component: w,
       events: D,
-      play: x
+      play: L
     } = (0, c.V)(),
-    L = (0, d.Q3)("ChannelGIFPickerButton");
+    x = (0, d.Q3)("ChannelGIFPickerButton");
   if (n) return null;
   let M = T === g.X1.GIF && N === o;
   return (0, r.jsx)(u.ua7, {
@@ -99,7 +99,7 @@ function I(e, t) {
         onMouseEnter: D.onMouseEnter,
         onMouseLeave: D.onMouseLeave,
         onClick: () => {
-          P(), x()
+          P(), L()
         },
         isActive: M,
         pulse: b,
@@ -108,7 +108,7 @@ function I(e, t) {
         "aria-haspopup": "dialog",
         "aria-controls": A,
         children: (0, r.jsx)(w, {
-          size: L ? "refresh_sm" : void 0,
+          size: x ? "refresh_sm" : void 0,
           color: "currentColor"
         })
       })

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  j: () => x,
+  j: () => L,
   t: () => I
 }), n(47120), n(411104);
 var r, i = n(200651),
@@ -156,7 +156,7 @@ function D(e, t) {
     r = w(t);
   return n.top === r.top && n.left === r.left
 }
-class x extends(r = o.Component) {
+class L extends(r = o.Component) {
   formatDimension(e) {
     return this.props.useRawTargetDimensions ? e : Math.ceil(e)
   }
@@ -432,7 +432,7 @@ class x extends(r = o.Component) {
     })
   }
 }
-v(x, "defaultProps", {
+v(L, "defaultProps", {
   nudgeAlignIntoViewport: !1,
   spacing: 0,
   autoInvert: !1,

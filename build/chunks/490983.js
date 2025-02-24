@@ -33,7 +33,7 @@ var r, i = n(658722),
   w = n(7956),
   D = n(981631);
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,7 +41,7 @@ function x(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let L = 5,
+let x = 5,
   M = c()().subtract(1, "week"),
   k = [],
   j = "",
@@ -156,7 +156,7 @@ function X() {
     }),
     i = Object.values(E.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, !0)).filter(N.lm),
     o = [...r.map(r => Q(r, n, t, e)).filter(N.lm), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1);
-  return U = null != g.Z.lastFetched && E.Z.fetched, !s().isEqual(o, k) && (k = o, C.isPlatformEmbedded && R.ZP.setSystemTrayApplications(V(k).map(e => e.application).slice(0, L)), !0)
+  return U = null != g.Z.lastFetched && E.Z.fetched, !s().isEqual(o, k) && (k = o, C.isPlatformEmbedded && R.ZP.setSystemTrayApplications(V(k).map(e => e.application).slice(0, x)), !0)
 }
 class J extends(r = u.ZP.Store) {
   initialize() {
@@ -187,7 +187,7 @@ class J extends(r = u.ZP.Store) {
     return U
   }
 }
-x(J, "displayName", "ApplicationViewStore");
+L(J, "displayName", "ApplicationViewStore");
 let $ = new J(d.Z, {
   LIBRARY_APPLICATION_FILTER_UPDATE: z
 })

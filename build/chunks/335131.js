@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B1: () => L,
+  B1: () => x,
   DR: () => N,
   F$: () => P,
   K$: () => M,
   Ov: () => j,
   R2: () => k,
   Sm: () => I,
-  fK: () => x,
+  fK: () => L,
   jr: () => D,
   mK: () => T,
   oK: () => A,
@@ -175,7 +175,7 @@ let I = e => {
         error: t
       })
     }
-  }, x = async e => {
+  }, L = async e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_CLAIM",
       skuId: e
@@ -202,7 +202,7 @@ let I = e => {
         error: t
       }), t
     }
-  }, L = async (e, t) => {
+  }, x = async (e, t) => {
     try {
       return (await a.tn.get({
         url: v.ANM.COLLECTIBLES_VALID_GIFT_RECIPIENT,

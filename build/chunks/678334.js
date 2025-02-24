@@ -39,8 +39,8 @@ function T(e) {
     onPurchaseError: P,
     baseAnalyticsData: w,
     flowStartTime: D,
-    trialId: x,
-    planGroup: L,
+    trialId: L,
+    planGroup: x,
     analyticsLocation: M,
     purchaseTokenAuthState: k,
     openInvoiceId: j,
@@ -74,7 +74,7 @@ function T(e) {
   } = (0, E.wD)(), ec = (0, u.a5)(F), eu = (0, m.MY)(es), ed = {};
   ed.gift_style = er, ed.reward_sku_ids = ec && (null == el ? void 0 : el.skuId) != null ? [null == el ? void 0 : el.skuId] : [], eu === m.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (a()(null != es, "Gift recipient must be set at purchase review step for these gift options."), ed.recipient_id = es.id, ed.custom_message = ei, ed.emoji_id = null == eo ? void 0 : eo.id, ed.emoji_name = (null == eo ? void 0 : eo.id) == null ? null == eo ? void 0 : eo.surrogates : void 0, ed.sound_id = null == ea ? void 0 : ea.soundId);
   let ef = null == F ? void 0 : F.id,
-    ep = (0, y.sE)(x, V.paymentSourceId, ef),
+    ep = (0, y.sE)(L, V.paymentSourceId, ef),
     {
       analyticsLocations: e_
     } = (0, l.ZP)(),
@@ -110,8 +110,8 @@ function T(e) {
       analyticsLocations: e_,
       flowStartTime: D,
       subscriptionPlan: F,
-      planGroup: L,
-      trialId: x,
+      planGroup: x,
+      trialId: L,
       priceOptions: V,
       paymentSource: eh,
       isPrepaidPaymentPastDue: eS,
@@ -158,7 +158,7 @@ function T(e) {
       isSubmitting: em,
       premiumSubscription: t,
       isGift: en,
-      planGroup: L,
+      planGroup: x,
       isPrepaid: ey,
       isTrial: Z,
       makePurchase: eA,

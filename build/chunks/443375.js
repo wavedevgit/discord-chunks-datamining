@@ -34,8 +34,8 @@ var i = n(120356),
   P = n(979038),
   w = n(448980),
   D = n(336383),
-  x = n(194811),
-  L = n(373826),
+  L = n(194811),
+  x = n(373826),
   M = n(315324),
   k = n(262210),
   j = n(103479),
@@ -146,18 +146,18 @@ function K(e) {
         size: "xxs",
         color: s.TVs.colors.TEXT_NORMAL,
         className: H.voiceIcon
-      }), (0, r.jsx)(L.Z, {
+      }), (0, r.jsx)(x.Z, {
         variant: "heading-sm/semibold",
         text: q.name
       })]
-    }) : (0, u.Z)(W) ? (0, r.jsx)(L.Z, {
+    }) : (0, u.Z)(W) ? (0, r.jsx)(x.Z, {
       variant: "heading-sm/semibold",
       text: W.name
-    }) : (0, r.jsx)(L.Z, {
+    }) : (0, r.jsx)(x.Z, {
       variant: "heading-sm/semibold",
       text: null !== (e = W.details) && void 0 !== e ? e : W.name
     })
-  }, e_ = () => (0, d.Z)(W) && null != z ? (0, r.jsx)(L.Z, {
+  }, e_ = () => (0, d.Z)(W) && null != z ? (0, r.jsx)(x.Z, {
     variant: "text-xs/normal",
     text: V.NW.formatToPlainString(V.t["hq/Qzc"], {
       guildName: z.name
@@ -167,15 +167,15 @@ function K(e) {
         action: "OPEN_VOICE_GUILD"
       }), null == J || J()
     }
-  }) : (0, u.Z)(W) ? (0, r.jsx)(L.Z, {
+  }) : (0, u.Z)(W) ? (0, r.jsx)(x.Z, {
     variant: "text-xs/normal",
     text: W.details
-  }) : (0, r.jsx)(L.Z, {
+  }) : (0, r.jsx)(x.Z, {
     text: W.state,
     variant: "text-xs/normal"
   }), eh = () => {
     var e;
-    return W.type === Z.IIU.WATCHING ? null : (0, u.Z)(W) ? em() : (0, r.jsx)(L.Z, {
+    return W.type === Z.IIU.WATCHING ? null : (0, u.Z)(W) ? em() : (0, r.jsx)(x.Z, {
       text: null === (e = W.assets) || void 0 === e ? void 0 : e.large_text,
       variant: "text-xs/normal"
     })
@@ -183,10 +183,10 @@ function K(e) {
     var e, t, n, i;
     return (null === (e = W.party) || void 0 === e ? void 0 : e.size) == null && W.application_id === F.Zc ? (0, r.jsxs)("div", {
       className: H.gameState,
-      children: [(0, r.jsx)(L.Z, {
+      children: [(0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
         text: W.state
-      }), (0, r.jsx)(L.Z, {
+      }), (0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
         text: V.NW.formatToPlainString(V.t["u//9Bw"], {
           count: "0",
@@ -195,10 +195,10 @@ function K(e) {
       })]
     }) : (0, c.Z)(W) && (null === (t = W.party) || void 0 === t ? void 0 : t.size) != null && (null === (n = W.party) || void 0 === n ? void 0 : n.size.length) >= 2 ? (0, r.jsxs)("div", {
       className: H.gameState,
-      children: [(0, r.jsx)(L.Z, {
+      children: [(0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
         text: W.state
-      }), (0, r.jsx)(L.Z, {
+      }), (0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
         text: 0 === W.party.size[1] ? V.NW.formatToPlainString(V.t.IM4J4e, {
           count: W.party.size[0]
@@ -207,7 +207,7 @@ function K(e) {
           max: W.party.size[1]
         })
       })]
-    }) : null == W.party ? (0, r.jsx)(L.Z, {
+    }) : null == W.party ? (0, r.jsx)(x.Z, {
       variant: "text-xs/normal",
       text: W.state
     }) : null
@@ -287,7 +287,7 @@ function K(e) {
             }),
             onAction: ea,
             onClose: J,
-            children: [(0, r.jsx)(x.Z, Y({}, el)), (0, r.jsxs)("div", {
+            children: [(0, r.jsx)(L.Z, Y({}, el)), (0, r.jsxs)("div", {
               className: H.body,
               children: [(0, r.jsxs)("div", {
                 className: o()(H.content, et),

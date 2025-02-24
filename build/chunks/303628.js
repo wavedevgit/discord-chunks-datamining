@@ -85,14 +85,14 @@ function w(e, t) {
 }
 let D = [];
 
-function x(e) {
+function L(e) {
   let {
     channelId: t,
     type: n
   } = e, o = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), N = (0, _.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([v.Z], () => v.Z.getUploads(t, n.drafts.type)), {
     isApplicationCommand: w,
-    commandOptions: x,
-    commandOptionStates: L
+    commandOptions: L,
+    commandOptionStates: x
   } = (0, c.cj)([h.Z], () => {
     let e = h.Z.getActiveCommand(t);
     if (null == e) return {
@@ -108,11 +108,11 @@ function x(e) {
     }
   }), M = i.useMemo(() => {
     var e;
-    return null !== (e = null == x ? void 0 : x.filter(e => {
+    return null !== (e = null == L ? void 0 : L.filter(e => {
       var t;
-      return e.type === f.jw.ATTACHMENT && (null == L ? void 0 : null === (t = L[e.name]) || void 0 === t ? void 0 : t.hasValue)
+      return e.type === f.jw.ATTACHMENT && (null == x ? void 0 : null === (t = x[e.name]) || void 0 === t ? void 0 : t.hasValue)
     })) && void 0 !== e ? e : []
-  }, [x, L]), [k, j] = i.useState([]);
+  }, [L, x]), [k, j] = i.useState([]);
   i.useEffect(() => {
     let e = () => {
       d.Z.clearAll(t, n.drafts.type)
@@ -180,15 +180,15 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     channelId: t,
     type: n,
     canAttachFiles: i
   } = e;
-  return i ? (0, r.jsx)(x, {
+  return i ? (0, r.jsx)(L, {
     channelId: t,
     type: n
   }) : null
 }
-let M = i.memo(L)
+let M = i.memo(x)

@@ -162,7 +162,7 @@ function D(e, t, n, r, i) {
       if (n)
         for (t in n) r && n[t] === r[t] || w(e.style, t, n[t])
     }
-  } else if ("o" === t[0] && "n" === t[1]) o = t !== (t = t.replace(/Capture$/, "")), t = t.toLowerCase() in e ? t.toLowerCase().slice(2) : t.slice(2), e.l || (e.l = {}), e.l[t + o] = n, n ? r || e.addEventListener(t, o ? L : x, o) : e.removeEventListener(t, o ? L : x, o);
+  } else if ("o" === t[0] && "n" === t[1]) o = t !== (t = t.replace(/Capture$/, "")), t = t.toLowerCase() in e ? t.toLowerCase().slice(2) : t.slice(2), e.l || (e.l = {}), e.l[t + o] = n, n ? r || e.addEventListener(t, o ? x : L, o) : e.removeEventListener(t, o ? x : L, o);
   else if ("dangerouslySetInnerHTML" !== t) {
     if (i) t = t.replace(/xlink(H|:h)/, "h").replace(/sName$/, "s");
     else if ("width" !== t && "height" !== t && "href" !== t && "list" !== t && "form" !== t && "tabIndex" !== t && "download" !== t && t in e) try {
@@ -173,11 +173,11 @@ function D(e, t, n, r, i) {
   }
 }
 
-function x(e) {
+function L(e) {
   return this.l[e.type + !1](i.event ? i.event(e) : e)
 }
 
-function L(e) {
+function x(e) {
   return this.l[e.type + !0](i.event ? i.event(e) : e)
 }
 

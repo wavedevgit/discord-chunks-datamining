@@ -76,7 +76,7 @@ function v(e) {
     onUserPopoutRequestClose: P
   } = e, [w, D] = i.useState(!1);
 
-  function x() {
+  function L() {
     return (0, r.jsx)(c.VqE, {
       className: _.popoutWrapper,
       children: (0, r.jsx)(c.Ttm, {
@@ -108,7 +108,7 @@ function v(e) {
     })
   }
 
-  function L() {
+  function x() {
     let e = l()(t).take(o).map(e => {
         let t = p.ZP.getName(e);
         return T ? (0, r.jsx)("div", {
@@ -130,7 +130,7 @@ function v(e) {
       }).value(),
       n = t.length - o;
     return n > 0 && !I && (e[e.length - 1] = (0, r.jsx)(c.yRy, {
-      renderPopout: x,
+      renderPopout: L,
       shouldShow: w,
       position: "bottom",
       onRequestClose: () => D(!1),
@@ -152,6 +152,6 @@ function v(e) {
   }
   return t.length <= 0 ? null : (0, r.jsx)("div", {
     className: a()(g, _.avatars),
-    children: L()
+    children: x()
   })
 }

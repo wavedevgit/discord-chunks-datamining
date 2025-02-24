@@ -53,8 +53,8 @@ function R(e) {
       guildBoostProps: P,
       analyticsSource: w,
       analyticsLocation: D,
-      body: x,
-      context: L,
+      body: L,
+      context: x,
       glowUp: M,
       modalClassName: k,
       modalContentClassName: j,
@@ -189,7 +189,7 @@ function R(e) {
           type: R,
           subscriptionTier: null !== (o = null == ed ? void 0 : null === (n = ed.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== o ? o : O.Si.TIER_2,
           headingText: C,
-          context: L,
+          context: x,
           analyticsLocationObject: D,
           discountOffer: ef,
           trialOffer: ed,
@@ -209,7 +209,7 @@ function R(e) {
             }) : void 0, ei, (0, r.jsx)(l.Text, {
               variant: es ? "text-sm/normal" : "text-md/normal",
               className: a()(B, T.subHeader),
-              children: x
+              children: L
             })]
           })]
         })

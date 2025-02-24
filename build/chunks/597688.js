@@ -43,14 +43,14 @@ let m = new Map,
     } = e;
     (C = new Set(C)).add(t), (R = new Map(R)).delete(t), (P = new Map(P)).delete(t)
   },
-  x = e => {
+  L = e => {
     let {
       skuId: t,
       error: n
     } = e;
     (C = new Set(C)).delete(t), (R = new Map(R)).set(t, n), (P = new Map(P)).set(t, Date.now())
   },
-  L = e => {
+  x = e => {
     let {
       skuId: t,
       product: n
@@ -173,8 +173,8 @@ let V = new F(c.Z, {
   COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: j,
   COLLECTIBLES_CATEGORIES_FETCH_FAILURE: k,
   COLLECTIBLES_PRODUCT_FETCH: D,
-  COLLECTIBLES_PRODUCT_FETCH_SUCCESS: L,
-  COLLECTIBLES_PRODUCT_FETCH_FAILURE: x,
+  COLLECTIBLES_PRODUCT_FETCH_SUCCESS: x,
+  COLLECTIBLES_PRODUCT_FETCH_FAILURE: L,
   COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: U,
   LOGOUT: B
 })

@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(631771),
   w = n(695346),
   D = n(594174),
-  x = n(626135),
-  L = n(111361),
+  L = n(626135),
+  x = n(111361),
   M = n(74538),
   k = n(624138),
   j = n(543241),
@@ -80,7 +80,7 @@ let z = 0,
       channelGuildId: P,
       channelId: w,
       messageId: D,
-      isBurstReaction: L,
+      isBurstReaction: x,
       listHeaderClassName: M,
       activeSectionIndex: k,
       upsellGlowOpacity: W,
@@ -98,12 +98,12 @@ let z = 0,
       let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
         r = new Set(t),
         i = t.has(e);
-      i ? r.delete(e) : r.add(e), null != n && x.default.track(V.rMx.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
+      i ? r.delete(e) : r.add(e), null != n && L.default.track(V.rMx.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
         location: er.location,
         tab: H.X1.EMOJI,
         collapsed: !i,
         guild_id: n.id
-      }), e === F.UX.SOUNDMOJI && x.default.track(V.rMx.SOUNDMOJI_EMOJI_PICKER_SECTION_TOGGLED, {
+      }), e === F.UX.SOUNDMOJI && L.default.track(V.rMx.SOUNDMOJI_EMOJI_PICKER_SECTION_TOGGLED, {
         collapsed: !i
       }), g(r)
     }, [er, t, g]), ed = i.useCallback(e => {
@@ -142,11 +142,11 @@ let z = 0,
         selectedItemClassName: K.__invalid_selectedItem,
         channelId: w,
         messageId: D,
-        isBurstReaction: L,
+        isBurstReaction: x,
         inNitroLockedSection: i.isNitroLocked,
         handleScrollUpOnSectionCollapse: a
       }, e)
-    }), [o, m, s, es, ed, c, f, y, T, N, A, C, ef, P, w, D, L, z]);
+    }), [o, m, s, es, ed, c, f, y, T, N, A, C, ef, P, w, D, x, z]);
     i.useEffect(() => () => {
       var e, t;
       return null === (t = ep.cache) || void 0 === t ? void 0 : null === (e = t.clear) || void 0 === e ? void 0 : e.call(t)
@@ -180,7 +180,7 @@ let z = 0,
           g = s === F.En.SOUNDMOJI ? (0, r.jsx)(p.P3F, {
             className: K.soundmojiViewMore,
             onClick: () => {
-              (0, v.hr)(H.X1.SOUNDBOARD), x.default.track(V.rMx.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK)
+              (0, v.hr)(H.X1.SOUNDBOARD), L.default.track(V.rMx.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK)
             },
             children: Y.NW.string(Y.t.rUEjBQ)
           }) : void 0;
@@ -256,7 +256,7 @@ let z = 0,
       messageId: G,
       isBurstReaction: Z,
       listHeaderClassName: F
-    } = e, H = i.useRef(!1), q = E.kJ.useStore(e => e.activeCategoryIndex), Q = (0, v.Iu)(e => e.searchQuery), X = w.Yk.useSetting(), J = (0, u.e7)([D.default], () => D.default.getCurrentUser()), $ = (0, L.I5)(J), {
+    } = e, H = i.useRef(!1), q = E.kJ.useStore(e => e.activeCategoryIndex), Q = (0, v.Iu)(e => e.searchQuery), X = w.Yk.useSetting(), J = (0, u.e7)([D.default], () => D.default.getCurrentUser()), $ = (0, x.I5)(J), {
       location: ee
     } = (0, h.O)(), {
       analyticsLocations: et
@@ -351,7 +351,7 @@ let z = 0,
       return Y.NW.string(Y.t.BmJkbW)
     }
     return i.useEffect(() => {
-      ei && x.default.track(V.rMx.PREMIUM_UPSELL_VIEWED, {
+      ei && L.default.track(V.rMx.PREMIUM_UPSELL_VIEWED, {
         type: W.cd.EMOJI_PICKER_FLOATING_UPSELL,
         location: ee,
         location_stack: et

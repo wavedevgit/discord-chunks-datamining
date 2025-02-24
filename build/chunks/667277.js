@@ -99,12 +99,12 @@ function T(e, t, n, g) {
     O = (0, _.j)(),
     T = null !== (R = null !== (P = null == g ? void 0 : g.locale) && void 0 !== P ? P : O.locale) && void 0 !== R ? R : r.Z;
   if (!T.match) throw RangeError("locale must contain match property");
-  var A = (0, u.Z)(null !== (w = null !== (D = null !== (x = null !== (L = null == g ? void 0 : g.firstWeekContainsDate) && void 0 !== L ? L : null == g ? void 0 : null === (M = g.locale) || void 0 === M ? void 0 : null === (k = M.options) || void 0 === k ? void 0 : k.firstWeekContainsDate) && void 0 !== x ? x : O.firstWeekContainsDate) && void 0 !== D ? D : null === (j = O.locale) || void 0 === j ? void 0 : null === (U = j.options) || void 0 === U ? void 0 : U.firstWeekContainsDate) && void 0 !== w ? w : 1);
+  var A = (0, u.Z)(null !== (w = null !== (D = null !== (L = null !== (x = null == g ? void 0 : g.firstWeekContainsDate) && void 0 !== x ? x : null == g ? void 0 : null === (M = g.locale) || void 0 === M ? void 0 : null === (k = M.options) || void 0 === k ? void 0 : k.firstWeekContainsDate) && void 0 !== L ? L : O.firstWeekContainsDate) && void 0 !== D ? D : null === (j = O.locale) || void 0 === j ? void 0 : null === (U = j.options) || void 0 === U ? void 0 : U.firstWeekContainsDate) && void 0 !== w ? w : 1);
   if (!(A >= 1 && A <= 7)) throw RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
   var C = (0, u.Z)(null !== (G = null !== (B = null !== (Z = null !== (F = null == g ? void 0 : g.weekStartsOn) && void 0 !== F ? F : null == g ? void 0 : null === (V = g.locale) || void 0 === V ? void 0 : null === (H = V.options) || void 0 === H ? void 0 : H.weekStartsOn) && void 0 !== Z ? Z : O.weekStartsOn) && void 0 !== B ? B : null === (W = O.locale) || void 0 === W ? void 0 : null === (Y = W.options) || void 0 === Y ? void 0 : Y.weekStartsOn) && void 0 !== G ? G : 0);
   if (!(C >= 0 && C <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
   if ("" === y) return "" === E ? (0, o.default)(n) : new Date(NaN);
-  var R, P, w, D, x, L, M, k, j, U, G, B, Z, F, V, H, W, Y, K, z = {
+  var R, P, w, D, L, x, M, k, j, U, G, B, Z, F, V, H, W, Y, K, z = {
       firstWeekContainsDate: A,
       weekStartsOn: C,
       locale: T

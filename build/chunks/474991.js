@@ -30,14 +30,14 @@ var r = n(325008),
   P = o("".replace),
   w = o("".indexOf),
   D = o("".slice),
-  x = /^\?<[^\s\d!#%&*+<=>@^][^\s!#%&*+<=>@^]*>/,
-  L = /a/g,
+  L = /^\?<[^\s\d!#%&*+<=>@^][^\s!#%&*+<=>@^]*>/,
+  x = /a/g,
   M = /a/g,
-  k = new T(L) !== L,
+  k = new T(x) !== x,
   j = _.MISSED_STICKY,
   U = _.UNSUPPORTED_Y,
   G = r && (!k || j || O || S || g(function() {
-    return M[I] = !1, T(L) !== L || T(M) === M || "/a/i" !== String(T(L, "i"))
+    return M[I] = !1, T(x) !== x || T(M) === M || "/a/i" !== String(T(x, "i"))
   })),
   B = function(e) {
     for (var t, n = e.length, r = 0, i = "", o = !1; r <= n; r++) {
@@ -58,7 +58,7 @@ var r = n(325008),
           s = !0;
           break;
         case "(" === t:
-          C(x, D(e, r + 1)) && (r += 2, l = !0), i += t, c++;
+          C(L, D(e, r + 1)) && (r += 2, l = !0), i += t, c++;
           continue;
         case ">" === t && l:
           if ("" === u || E(a, u)) throw new A("Invalid capture group name");
@@ -77,7 +77,7 @@ if (a("RegExp", G)) {
         g = [],
         E = e;
       if (!_ && h && m && e.constructor === F) return e;
-      if ((h || u(N, e)) && (e = e.source, m && (t = p(E))), e = void 0 === e ? "" : f(e), t = void 0 === t ? "" : f(t), E = e, O && "dotAll" in L && (r = !!t && w(t, "s") > -1) && (t = P(t, /s/g, "")), n = t, j && "sticky" in L && (i = !!t && w(t, "y") > -1) && U && (t = P(t, /y/g, "")), S && (e = (o = Z(e))[0], g = o[1]), a = s(T(e, t), _ ? this : N, F), (r || i || g.length) && (c = v(a), r && (c.dotAll = !0, c.raw = F(B(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
+      if ((h || u(N, e)) && (e = e.source, m && (t = p(E))), e = void 0 === e ? "" : f(e), t = void 0 === t ? "" : f(t), E = e, O && "dotAll" in x && (r = !!t && w(t, "s") > -1) && (t = P(t, /s/g, "")), n = t, j && "sticky" in x && (i = !!t && w(t, "y") > -1) && U && (t = P(t, /y/g, "")), S && (e = (o = Z(e))[0], g = o[1]), a = s(T(e, t), _ ? this : N, F), (r || i || g.length) && (c = v(a), r && (c.dotAll = !0, c.raw = F(B(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
         l(a, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
       return a

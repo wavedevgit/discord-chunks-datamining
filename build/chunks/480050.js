@@ -94,10 +94,10 @@ function E(e) {
     x: 0,
     y: 0,
     config: h
-  })), [P, w] = i.useState(!1), [D, x] = i.useState({
+  })), [P, w] = i.useState(!1), [D, L] = i.useState({
     x: 0,
     y: 0
-  }), L = (null != I ? I : 0) > window.innerWidth || (null != T ? T : 0) > window.innerHeight;
+  }), x = (null != I ? I : 0) > window.innerWidth || (null != T ? T : 0) > window.innerHeight;
   i.useEffect(() => {
     let e = c.Z.useReducedMotion;
     n ? A({
@@ -130,7 +130,7 @@ function E(e) {
       C.x.set(i.x), C.y.set(i.y)
     },
     k = e => {
-      n && 0 === e.button && (e.preventDefault(), w(!0), x({
+      n && 0 === e.button && (e.preventDefault(), w(!0), L({
         x: e.clientX,
         y: e.clientY
       }))
@@ -151,7 +151,7 @@ function E(e) {
     onClick: e => e.stopPropagation(),
     className: a()(f, d.wrapper, {
       [d.panning]: n && P,
-      [d.pannable]: n && L
+      [d.pannable]: n && x
     }),
     style: p({}, N, C),
     children: t

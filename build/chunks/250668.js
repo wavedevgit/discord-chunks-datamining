@@ -30,11 +30,11 @@ var r = n(147018),
   P = n(4340),
   w = n(97131),
   D = n(347722),
-  x = n(644659),
-  L = n(95948),
-  M = x.get,
-  k = x.set,
-  j = x.enforce,
+  L = n(644659),
+  x = n(95948),
+  M = L.get,
+  k = L.set,
+  j = L.enforce,
   U = w.f,
   G = D.f,
   B = i.RangeError,
@@ -111,7 +111,7 @@ a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLen
       })
     };
   H ? s && (E = t(function(e, t, n, r) {
-    return u(e, v), L(function() {
+    return u(e, v), x(function() {
       return y(t) ? ee(t) ? void 0 !== r ? new p(t, m(n, a), r) : void 0 !== n ? new p(t, m(n, a)) : new p(t) : q(t) ? J(E, t) : o(A, E, t) : new p(h(t))
     }(), e, E)
   }), T && T(E, Y), C(N(p), function(e) {

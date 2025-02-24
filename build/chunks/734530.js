@@ -232,7 +232,7 @@
       if (null === e || A(e)) return e;
       throw Error(t)
     },
-    x = function(e) {
+    L = function(e) {
       var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : w;
       if (N(e)) return {
         tag: "async",
@@ -248,7 +248,7 @@
         stripe: n
       }
     },
-    L = function(e) {
+    x = function(e) {
       e && e._registerWrapper && e.registerAppInfo && (e._registerWrapper({
         name: "react-stripe-js",
         version: "2.7.0"
@@ -269,7 +269,7 @@
         r = e.options,
         i = e.children,
         o = t.useMemo(function() {
-          return x(n)
+          return L(n)
         }, [n]),
         a = l(t.useState(function() {
           return {
@@ -307,7 +307,7 @@
           e && s.elements.update(e)
         }
       }, [r, d, s.elements]), t.useEffect(function() {
-        L(s.stripe)
+        x(s.stripe)
       }, [s.stripe]), t.createElement(M.Provider, {
         value: s
       }, i)
@@ -349,7 +349,7 @@
         r = e.options,
         i = e.children,
         o = t.useMemo(function() {
-          return x(n, Y)
+          return L(n, Y)
         }, [n]),
         a = l(t.useState(null), 2),
         s = a[0],
@@ -397,7 +397,7 @@
           i && !R(i, n) && d.customCheckoutSdk.changeAppearance(i)
         }
       }, [r, m, d.customCheckoutSdk]), t.useEffect(function() {
-        L(d.stripe)
+        x(d.stripe)
       }, [d.stripe]);
       var g = t.useMemo(function() {
         return W(d.customCheckoutSdk, s)
@@ -460,22 +460,22 @@
             R = C[0],
             w = C[1],
             D = t.useRef(null),
-            x = t.useRef(null);
+            L = t.useRef(null);
           S(R, "blur", u), S(R, "focus", d), S(R, "escape", _), S(R, "click", h), S(R, "loaderror", m), S(R, "loaderstart", g), S(R, "networkschange", E), S(R, "confirm", v), S(R, "cancel", b), S(R, "shippingaddresschange", y), S(R, "shippingratechange", O), S(R, "change", p), f && (i = "expressCheckout" === e ? f : function() {
             f(R)
           }), S(R, "ready", i), t.useLayoutEffect(function() {
-            if (null === D.current && null !== x.current && (N || A)) {
+            if (null === D.current && null !== L.current && (N || A)) {
               var t = null;
-              A ? t = A.createElement(e, c) : N && (t = N.create(e, c)), D.current = t, w(t), t && t.mount(x.current)
+              A ? t = A.createElement(e, c) : N && (t = N.create(e, c)), D.current = t, w(t), t && t.mount(L.current)
             }
           }, [N, A, c]);
-          var L = I(c);
+          var x = I(c);
           return t.useEffect(function() {
             if (D.current) {
-              var e = P(c, L, ["paymentRequest"]);
+              var e = P(c, x, ["paymentRequest"]);
               e && D.current.update(e)
             }
-          }, [c, L]), t.useLayoutEffect(function() {
+          }, [c, x]), t.useLayoutEffect(function() {
             return function() {
               if (D.current && "function" == typeof D.current.destroy) try {
                 D.current.destroy(), D.current = null
@@ -484,7 +484,7 @@
           }, []), t.createElement("div", {
             id: o,
             className: a,
-            ref: x
+            ref: L
           })
         },
         o = function(e) {
@@ -530,7 +530,7 @@
         r = e.options,
         i = e.children,
         o = t.useMemo(function() {
-          return x(n, en)
+          return L(n, en)
         }, [n]),
         a = t.useRef(null),
         s = t.useRef(null),
@@ -559,7 +559,7 @@
           })
         }
       }, [u.embeddedCheckout]), t.useEffect(function() {
-        L(s)
+        x(s)
       }, [s]);
       var f = I(n);
       t.useEffect(function() {

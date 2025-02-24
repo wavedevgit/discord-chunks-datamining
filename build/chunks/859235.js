@@ -99,7 +99,7 @@ function I(e, t) {
   } = A, R = b(A, ["onFocus"]), {
     handleFocus: P,
     handleBlur: w
-  } = (0, f.b)(C), D = 0 === N, x = null != E, L = e => {
+  } = (0, f.b)(C), D = 0 === N, L = null != E, x = e => {
     if (O) {
       switch (e.which) {
         case p.yXg.D:
@@ -124,14 +124,14 @@ function I(e, t) {
     children: (0, r.jsx)("li", v(g({}, R), {
       onFocus: P,
       onBlur: w,
-      onKeyDown: L,
+      onKeyDown: x,
       className: a()(h.upload, o, {
         [h.sizeClip]: 2 === N
       }),
       ref: t,
       children: (0, r.jsxs)("div", {
         className: h.uploadContainer,
-        children: [m, x ? (0, r.jsx)("div", {
+        children: [m, L ? (0, r.jsx)("div", {
           className: h.actionBarContainer,
           children: (0, r.jsx)("div", {
             className: a()(h.actionBar, {

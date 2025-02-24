@@ -118,7 +118,7 @@ function P(e) {
     a = C(e.guild_scheduled_event_exception_id),
     s = (null === (n = I[e.guild_scheduled_event_id]) || void 0 === n ? void 0 : null === (t = n[a]) || void 0 === t ? void 0 : t[e.user_id]) != null,
     l = e.user_id === c.default.getId();
-  (s || !l) && (null === (i = I[e.guild_scheduled_event_id]) || void 0 === i || null === (r = i[a]) || void 0 === r || delete r[e.user_id], x(e), o && (y += 1))
+  (s || !l) && (null === (i = I[e.guild_scheduled_event_id]) || void 0 === i || null === (r = i[a]) || void 0 === r || delete r[e.user_id], L(e), o && (y += 1))
 }
 
 function w(e, t, n) {
@@ -133,14 +133,14 @@ function D(e) {
   w(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i)
 }
 
-function x(e) {
+function L(e) {
   var t, n;
   let r = C(e.guild_scheduled_event_exception_id),
     i = (null !== (n = null === (t = T[e.guild_scheduled_event_id]) || void 0 === t ? void 0 : t[r]) && void 0 !== n ? n : 0) + (null != e.guild_scheduled_event_exception_id && e.response === f.gv.UNINTERESTED || null == e.guild_scheduled_event_exception_id && e.response === f.gv.INTERESTED ? -1 : 1);
   w(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i)
 }
 
-function L(e) {
+function x(e) {
   let {
     guilds: t
   } = e;
@@ -368,7 +368,7 @@ class et extends(r = a.ZP.Store) {
 }
 p(et, "displayName", "GuildScheduledEventStore");
 let en = new et(l.Z, {
-  CONNECTION_OPEN: L,
+  CONNECTION_OPEN: x,
   GUILD_CREATE: j,
   GUILD_DELETE: U,
   FETCH_GUILD_EVENT: M,

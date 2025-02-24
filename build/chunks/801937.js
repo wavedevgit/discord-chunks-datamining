@@ -102,9 +102,9 @@ let N = new p.Z("ChoosePaymentSourceType"),
     [E.HeQ.PAYSAFE_CARD, new Set(["DE"])]
   ]),
   D = "40c266_1",
-  x = 1e3;
+  L = 1e3;
 
-function L(e) {
+function x(e) {
   let {
     enabledPaymentTypes: t,
     forceCountryCode: n,
@@ -131,13 +131,13 @@ class M extends i.PureComponent {
     var e;
     (0, c.GE)(), (null !== (e = this.props.paymentRequestWallets) && void 0 !== e ? e : []).length > 0 && setTimeout(() => {
       this.considerPaymentRequestWalletsLoaded()
-    }, x)
+    }, L)
   }
   considerPaymentRequestWalletsLoaded() {
     var e;
     let t = null !== (e = this.props.paymentRequestWallets) && void 0 !== e ? e : [];
     if (0 === t.length || !this.arePaymentRequestWalletsLoading()) return;
-    N.warn("Payment request wallets failed to load in time: ".concat(t.join(", "), ". Max time allowed: ").concat(x, " ms"));
+    N.warn("Payment request wallets failed to load in time: ".concat(t.join(", "), ". Max time allowed: ").concat(L, " ms"));
     let n = t.reduce((e, t) => T(S({}, e), {
       ["".concat(t, "Loaded")]: !0
     }), {});
@@ -211,12 +211,12 @@ class M extends i.PureComponent {
         o = "".concat(e, "-").concat(t);
       return "applePay" === e ? (0, r.jsx)(f.Ch, S({}, h, i), o) : (0, r.jsx)(f.Tr, S({}, h, i), o)
     }), g = [], E = [], O = void 0 === s || this.arePaymentRequestWalletsLoading();
-    if (c) g.push(...this.createPaymentButtons(L("ALL").countryPaymentMethods));
+    if (c) g.push(...this.createPaymentButtons(x("ALL").countryPaymentMethods));
     else {
       let {
         countryPaymentMethods: e,
         remainingPaymentMethods: t
-      } = L(s);
+      } = x(s);
       g.push(...this.createPaymentButtons(e)), E.push(...this.createPaymentButtons(t))
     }
     let I = (0, r.jsxs)("div", {

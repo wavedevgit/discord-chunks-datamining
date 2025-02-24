@@ -30,8 +30,8 @@ var r = n(67867),
   P = n(964653),
   w = n(511364),
   D = n(348343),
-  x = n(360518),
-  L = n(862602),
+  L = n(360518),
+  x = n(862602),
   M = n(187203),
   k = n(29657),
   j = n(414847),
@@ -146,8 +146,8 @@ c || (A(K = (Y = function() {
   return H(this).tag
 }), A(Y, "withoutSetter", function(e) {
   return el(D(e), e)
-}), N.f = ef, I.f = ec, T.f = eu, S.f = ep, b.f = y.f = e_, O.f = eh, L.f = function(e) {
-  return el(x(e), e)
+}), N.f = ef, I.f = ec, T.f = eu, S.f = ep, b.f = y.f = e_, O.f = eh, x.f = function(e) {
+  return el(L(e), e)
 }, l && (C(K, "description", {
   configurable: !0,
   get: function() {

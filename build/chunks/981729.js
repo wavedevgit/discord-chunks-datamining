@@ -167,11 +167,11 @@ let D = e => {
       }
     })
   },
-  x = {
+  L = {
     scale: .95,
     opacity: 0
   },
-  L = {
+  x = {
     scale: 1,
     opacity: 0
   },
@@ -191,9 +191,9 @@ let D = e => {
     return (0, h.Yzy)(t, {
       keys: e => e ? "tooltip" : "empty",
       config: p.F,
-      from: s.enabled ? L : x,
+      from: s.enabled ? x : L,
       enter: M,
-      leave: s.enabled ? L : x,
+      leave: s.enabled ? x : L,
       onRest: n
     }, "animate-always")((e, t) => t ? (0, i.jsx)(D, b({
       animationStyle: e,

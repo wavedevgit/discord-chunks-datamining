@@ -40,8 +40,8 @@ function y(e) {
     pendingProfileEffectId: P,
     avatarClassName: w,
     containerClassName: D,
-    isTryItOutFlow: x = !1,
-    disabledInputs: L = !1,
+    isTryItOutFlow: L = !1,
+    disabledInputs: x = !1,
     hideCustomStatus: M = !1,
     hideBioSection: k = !1,
     hideMessageInput: j = !0,
@@ -83,8 +83,8 @@ function y(e) {
         guildId: null == n ? void 0 : n.id,
         canUsePremiumCustomization: i,
         pendingBanner: O,
-        isTryItOutFlow: x,
-        disabledInputs: L,
+        isTryItOutFlow: L,
+        disabledInputs: x,
         onUpsellClick: () => null == y ? void 0 : y({
           object: E.qAy.EDIT_PROFILE_BANNER
         })
@@ -98,8 +98,8 @@ function y(e) {
         previewTheme: V,
         previewPrimaryColor: H,
         className: w,
-        disabledInputs: L,
-        isTryItOutFlow: x,
+        disabledInputs: x,
+        isTryItOutFlow: L,
         onUpsellClick: () => null == y ? void 0 : y({
           object: E.qAy.AVATAR
         })
@@ -117,7 +117,7 @@ function y(e) {
       pendingGlobalName: C,
       pendingBio: S,
       pendingPronouns: I,
-      isTryItOutFlow: x,
+      isTryItOutFlow: L,
       hideBioSection: k
     }), (0, r.jsx)(g.Z, {
       user: t,

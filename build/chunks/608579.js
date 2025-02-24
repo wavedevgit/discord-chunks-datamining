@@ -76,8 +76,8 @@ function D(e) {
     onStepChange: C,
     transitionState: P,
     loadId: D,
-    skuId: x,
-    isGift: L = !1,
+    skuId: L,
+    isGift: x = !1,
     giftRecipient: M,
     giftMessage: k,
     giftingOrigin: j,
@@ -85,21 +85,21 @@ function D(e) {
     returnRef: G
   } = e, {
     analyticsLocations: B
-  } = (0, d.ZP)([...U, u.Z.COLLECTIBLES_PAYMENT_MODAL]), Z = i.useRef(new s.qA), [F, V] = i.useState(null), [H, W] = i.useState(!1), Y = i.useMemo(() => (0, T.UY)(x), [x]), K = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), z = null != x ? [x] : K, q = null !== (t = z[0]) && void 0 !== t ? t : null, Q = null != x && p.Rm.has(x), X = i.useCallback(() => {
+  } = (0, d.ZP)([...U, u.Z.COLLECTIBLES_PAYMENT_MODAL]), Z = i.useRef(new s.qA), [F, V] = i.useState(null), [H, W] = i.useState(!1), Y = i.useMemo(() => (0, T.UY)(L), [L]), K = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), z = null != L ? [L] : K, q = null !== (t = z[0]) && void 0 !== t ? t : null, Q = null != L && p.Rm.has(L), X = i.useCallback(() => {
     W(!0), null == o || o()
   }, [o]), J = i.useCallback(e => {
     W(!1), n(e), c.Z.dispatch({
       type: "SKU_PURCHASE_MODAL_CLOSE",
       error: null
     })
-  }, [n]), $ = (e, t, n) => L ? (0, r.jsx)(v.Z, {
+  }, [n]), $ = (e, t, n) => x ? (0, r.jsx)(v.Z, {
     step: n,
     onClose: () => t(!1),
     giftingOrigin: j
   }) : (0, r.jsx)(S.Z, {
     step: n,
     onClose: () => t(!1)
-  }), ee = i.useMemo(() => [E.WA, ...L ? [O.Dd] : [], b.n, ...E.yp, E.wo, {
+  }), ee = i.useMemo(() => [E.WA, ...x ? [O.Dd] : [], b.n, ...E.yp, E.wo, {
     key: m.h8.CONFIRM,
     renderStep: e => (0, r.jsx)(y.x, w(R({}, e), {
       confettiCanvas: F,
@@ -110,7 +110,7 @@ function D(e) {
       bodyClassName: A.modalOverrideBody,
       sliderBodyClassName: A.modalOverrideSliderBody
     }
-  }], [B, F, Y, L]);
+  }], [B, F, Y, x]);
   return (0, r.jsxs)(d.Gt, {
     value: B,
     children: [(0, r.jsx)(s.O_, {
@@ -130,11 +130,11 @@ function D(e) {
       stepConfigs: ee,
       applicationId: I.XAJ,
       skuIDs: z,
-      isGift: L,
+      isGift: x,
       activeSubscription: null,
       purchaseType: N.GZ.ONE_TIME,
       children: (0, r.jsx)(_.KB, {
-        isGift: L,
+        isGift: x,
         giftRecipient: M,
         giftMessage: k,
         giftingOrigin: j,

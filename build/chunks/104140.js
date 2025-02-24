@@ -99,12 +99,12 @@ let T = 108e5,
     tension: 100,
     mass: 1
   },
-  x = e => {
+  L = e => {
     let t = (0, m.dQu)(m.TVs.modules.guildbar.AVATAR_SIZE),
       n = (0, m.dQu)(m.TVs.modules.guildbar.FOLDER_SIZE);
     return e ? n : t
   },
-  L = e => e / 2,
+  x = e => e / 2,
   M = e => e ? 2 : 4,
   k = e => {
     switch (e) {
@@ -206,9 +206,9 @@ function W(e) {
   } = e, a = S(e, ["selected", "lowerBadgeSize", "highlight", "rounded"]);
   let s = (0, g.Q3)("BlobMask"),
     l = !!a.isFolder,
-    c = x(!1),
-    u = x(l),
-    d = L(u),
+    c = L(!1),
+    u = L(l),
+    d = x(u),
     f = M(s);
   return s ? (0, i.jsx)(K, O(b({}, a), {
     rounded: o,
@@ -416,8 +416,8 @@ class Y extends o.Component {
       P = "".concat(b, "-blob_mask"),
       w = "".concat(b, "-stroke_mask"),
       D = "".concat(b, "-highlight_mask"),
-      x = (null == a ? void 0 : a.width) != null ? a.width : A,
-      L = (null == a ? void 0 : a.height) != null ? a.height : A,
+      L = (null == a ? void 0 : a.width) != null ? a.width : A,
+      x = (null == a ? void 0 : a.height) != null ? a.height : A,
       M = {
         width: g ? f + 8 : f,
         height: g ? f + 8 : f,
@@ -456,13 +456,13 @@ class Y extends o.Component {
             transform: this.getBadgePositionInterpolation(O, -1)
           }) : null, I ? (0, i.jsx)(d.animated.rect, {
             id: R,
-            x: f - (x + 2 * m) + m,
-            y: f - (L + 2 * m) + m,
-            width: x + 2 * m,
-            height: L + 2 * m,
+            x: f - (L + 2 * m) + m,
+            y: f - (x + 2 * m) + m,
+            width: L + 2 * m,
+            height: x + 2 * m,
             rx: _ / 2,
             ry: _ / 2,
-            transform: this.getBadgePositionInterpolation(y, 1, x + m)
+            transform: this.getBadgePositionInterpolation(y, 1, L + m)
           }) : null]
         }), (0, i.jsxs)("mask", {
           id: b,
@@ -589,7 +589,7 @@ function K(e) {
     b(!0)
   }, O = () => {
     b(!1)
-  }, S = null != h, I = null != m, T = o.useId(), N = "".concat(T, "-upper_badge_masks"), R = "".concat(T, "-lower_badge_masks"), P = "".concat(T, "-blob_mask"), w = "".concat(T, "-stroke_mask"), D = "".concat(T, "-highlight_mask"), x = (null == u ? void 0 : u.width) != null ? u.width : A, L = (null == u ? void 0 : u.height) != null ? u.height : A, M = {
+  }, S = null != h, I = null != m, T = o.useId(), N = "".concat(T, "-upper_badge_masks"), R = "".concat(T, "-lower_badge_masks"), P = "".concat(T, "-blob_mask"), w = "".concat(T, "-stroke_mask"), D = "".concat(T, "-highlight_mask"), L = (null == u ? void 0 : u.width) != null ? u.width : A, x = (null == u ? void 0 : u.height) != null ? u.height : A, M = {
     width: n + 8,
     height: n + 8,
     x: -4,
@@ -627,10 +627,10 @@ function K(e) {
         }) : null, null != m ? (0, i.jsx)("rect", {
           id: R,
           className: E.badgeStroke,
-          x: n - (x + 2 * f) + f,
-          y: n - (L + 2 * f) + f,
-          width: x + 2 * f,
-          height: L + 2 * f,
+          x: n - (L + 2 * f) + f,
+          y: n - (x + 2 * f) + f,
+          width: L + 2 * f,
+          height: x + 2 * f,
           rx: _ / 2,
           ry: _ / 2
         }) : null]

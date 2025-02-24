@@ -93,7 +93,7 @@ function D(e) {
   n.status !== _.Skl.OFFLINE && (E[e] = n.status, v[e] = n.activities, b[e] = n.hiddenActivities, null != n.clientStatus && (y[e] = n.clientStatus))
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     userId: n,
@@ -129,7 +129,7 @@ function x(e) {
   return delete O[n], P(n), !0
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t,
     userId: n,
@@ -204,7 +204,7 @@ function U(e) {
         activities: s,
         hiddenActivities: l
       } = t;
-      L({
+      x({
         guildId: e.id,
         userId: n.id,
         status: r,
@@ -222,7 +222,7 @@ function U(e) {
       activities: a,
       hiddenActivities: s
     } = e;
-    null != t && (L({
+    null != t && (x({
       guildId: _.ME,
       userId: t.id,
       status: n,
@@ -253,7 +253,7 @@ function B(e) {
       activities: i,
       hiddenActivities: o
     } = e;
-    null != t && x({
+    null != t && L({
       guildId: _.ME,
       userId: t.id,
       status: n,
@@ -276,7 +276,7 @@ function Z(e) {
       activities: o,
       hiddenActivities: a
     } = e;
-    x({
+    L({
       guildId: t.id,
       userId: n.id,
       status: r,
@@ -315,7 +315,7 @@ function H(e) {
       activities: o,
       hiddenActivities: a
     } = e;
-    return x({
+    return L({
       guildId: null != t ? t : _.ME,
       userId: n.id,
       status: r,
@@ -332,7 +332,7 @@ function W(e) {
     members: n
   } = e;
   n.forEach(e => {
-    null != e.presence && x({
+    null != e.presence && L({
       guildId: t,
       userId: e.user_id,
       status: e.presence.status,
@@ -349,7 +349,7 @@ function Y(e) {
     addedMembers: n
   } = e;
   null == n || n.forEach(e => {
-    null != e.presence && x({
+    null != e.presence && L({
       guildId: t,
       userId: e.userId,
       status: e.presence.status,

@@ -98,8 +98,8 @@ function N(e) {
       autoplay: w,
       registerAnimatedElementRef: D
     } = e,
-    x = S(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerAnimatedElementRef"]);
-  let [L, M] = i.useState(!1), [k, j] = i.useState(void 0), U = i.useRef(), {
+    L = S(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerAnimatedElementRef"]);
+  let [x, M] = i.useState(!1), [k, j] = i.useState(void 0), U = i.useRef(), {
     triggerAnimation: G,
     untriggerAnimation: B
   } = i.useContext(u.Rm), Z = p.Yk.useSetting(), F = T(), V = null == w ? Z : w, H = E.kV[I], W = i.useRef(null), Y = i.useMemo(() => {
@@ -108,13 +108,13 @@ function N(e) {
       let e = !0 === A && V;
       return h.ZP.getEmojiURL({
         id: f,
-        animated: F && !0 === y && (e || L || !0 === N),
+        animated: F && !0 === y && (e || x || !0 === N),
         size: H
       })
     }
     if (null != _) return m.ZP.getURL(_);
     throw Error("Unknown Src for Emoji")
-  }, [y, V, f, _, H, F, L, N, A, o]), K = i.useCallback(() => {
+  }, [y, V, f, _, H, F, x, N, A, o]), K = i.useCallback(() => {
     null != Y && (U.current = (0, d.po)(Y, e => {
       e || j(Date.now())
     }))
@@ -128,7 +128,7 @@ function N(e) {
     } : {
       "data-name": _
     };
-    return b(O(b({}, x), {
+    return b(O(b({}, L), {
       className: a()("emoji", c, {
         jumboable: "jumbo" === I,
         reactionLarge: "reactionLarge" === I
@@ -138,7 +138,7 @@ function N(e) {
       onMouseLeave: q,
       "data-type": "emoji"
     }), e)
-  }, [c, f, _, z, q, K, x, I]);
+  }, [c, f, _, z, q, K, L, I]);
   i.useEffect(() => () => {
     var e;
     return null === (e = U.current) || void 0 === e ? void 0 : e.call(U)

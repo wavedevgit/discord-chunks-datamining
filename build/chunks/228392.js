@@ -16,14 +16,14 @@ n.d(t, {
   P_: () => O,
   Vn: () => I,
   ab: () => A,
-  e5: () => x,
+  e5: () => L,
   e7: () => y,
   lN: () => B,
   nE: () => G,
   nH: () => S,
   qs: () => E,
   qz: () => Z,
-  ws: () => L,
+  ws: () => x,
   xI: () => M,
   zI: () => b
 }), n(566702);
@@ -321,7 +321,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     onboardingCTA: t
   } = e;
@@ -330,7 +330,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     forumDemoId: t
   } = e;

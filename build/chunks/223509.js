@@ -28,8 +28,8 @@ var r, i, o = n(754793),
   P = 7,
   w = 8,
   D = 9,
-  x = 10,
-  L = 11,
+  L = 10,
+  x = 11,
   M = 12,
   k = 13,
   j = 14,
@@ -142,7 +142,7 @@ function e_(e, t) {
         e.msg = "invalid window size", n.mode = $;
         break
       }
-      n.dmax = 1 << ey, e.adler = n.check = 1, n.mode = 512 & ea ? x : M, ea = 0, es = 0;
+      n.dmax = 1 << ey, e.adler = n.check = 1, n.mode = 512 & ea ? L : M, ea = 0, es = 0;
       break;
     case T:
       for (; es < 16;) {
@@ -212,13 +212,13 @@ function e_(e, t) {
       }
       n.head && (n.head.hcrc = n.flags >> 9 & 1, n.head.done = !0), e.adler = n.check = 0, n.mode = M;
       break;
-    case x:
+    case L:
       for (; es < 32;) {
         if (0 === er) break r;
         er--, ea += r[et++] << es, es += 8
       }
-      e.adler = n.check = ei(ea), ea = 0, es = 0, n.mode = L;
-    case L:
+      e.adler = n.check = ei(ea), ea = 0, es = 0, n.mode = x;
+    case x:
       if (0 === n.havedict) return e.next_out = en, e.avail_out = eo, e.next_in = et, e.avail_in = er, n.hold = ea, n.bits = es, E;
       e.adler = n.check = 1, n.mode = M;
     case M:
@@ -492,6 +492,6 @@ function em(e, t) {
 
 function eg(e, t) {
   var n, r, i = t.length;
-  return e && e.state && (0 === (n = e.state).wrap || n.mode === L) ? n.mode === L && (r = a(r = 1, t, i, 0)) !== n.check ? b : ep(e, t, i, i) ? (n.mode = ee, y) : (n.havedict = 1, m) : v
+  return e && e.state && (0 === (n = e.state).wrap || n.mode === x) ? n.mode === x && (r = a(r = 1, t, i, 0)) !== n.check ? b : ep(e, t, i, i) ? (n.mode = ee, y) : (n.havedict = 1, m) : v
 }
 t.inflateReset = es, t.inflateReset2 = el, t.inflateResetKeep = ea, t.inflateInit = eu, t.inflateInit2 = ec, t.inflate = e_, t.inflateEnd = eh, t.inflateGetHeader = em, t.inflateSetDictionary = eg, t.inflateInfo = "pako inflate (from Nodeca project)"

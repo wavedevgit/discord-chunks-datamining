@@ -33,9 +33,9 @@ var r = n(200651),
   P = n(5192),
   w = n(981631),
   D = n(388032),
-  x = n(808043);
+  L = n(808043);
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -51,7 +51,7 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -119,14 +119,14 @@ class Z extends i.PureComponent {
       isRefreshChatInputEnabled: t
     } = this.props;
     return (0, r.jsxs)("div", {
-      className: a()(x.activityInviteEducation, {
-        [x.activityInviteEducationFadeIn]: this.state.fadeIn
+      className: a()(L.activityInviteEducation, {
+        [L.activityInviteEducationFadeIn]: this.state.fadeIn
       }),
       children: [t ? (0, r.jsx)(d.whL, {
         size: "sm",
-        className: x.activityInviteEducationLeftArrow
+        className: L.activityInviteEducationLeftArrow
       }) : (0, r.jsx)("div", {
-        className: x.activityInviteEducationArrow
+        className: L.activityInviteEducationArrow
       }), (0, r.jsx)("span", {
         children: D.NW.format(D.t["i/MoCg"], {
           game: e.name,
@@ -136,9 +136,9 @@ class Z extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), L(this, "state", {
+    super(...e), x(this, "state", {
       fadeIn: !1
-    }), L(this, "timeout", null), L(this, "handleDismissInviteEducation", () => {
+    }), x(this, "timeout", null), x(this, "handleDismissInviteEducation", () => {
       let {
         activity: e
       } = this.props;
@@ -188,7 +188,7 @@ function V(e) {
     channel: u,
     guild: y
   });
-  let [C, w, L] = T, M = "";
+  let [C, w, x] = T, M = "";
   return 1 === T.length ? M = D.NW.format(D.t.lJ9sZW, {
     a: C
   }) : 2 === T.length ? M = D.NW.format(D.t.rB0CUV, {
@@ -197,20 +197,20 @@ function V(e) {
   }) : 3 === T.length ? M = D.NW.format(D.t.StKTho, {
     a: C,
     b: w,
-    c: L
+    c: x
   }) : T.length > 3 && (M = D.NW.string(D.t.uVDhqa)), (0, r.jsxs)("div", {
-    className: a()(x.typing, {
+    className: a()(L.typing, {
       "stop-animation": !o,
-      [x.isComboing]: _ && g
+      [L.isComboing]: _ && g
     }, c),
     children: [(0, r.jsxs)("div", {
-      className: x.typingDots,
+      className: L.typingDots,
       children: [T.length > 0 && !1 !== p && (0, r.jsx)(d.bbz, {
-        className: x.ellipsis,
+        className: L.ellipsis,
         dotRadius: 3.5,
         themed: !0
       }), (0, r.jsx)("span", {
-        className: x.text,
+        className: L.text,
         "aria-live": "polite",
         "aria-atomic": !0,
         children: M

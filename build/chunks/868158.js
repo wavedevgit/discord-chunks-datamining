@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Eb: () => w,
-  Fx: () => L,
+  Fx: () => x,
   IM: () => D,
   J2: () => G,
   r$: () => P
@@ -103,7 +103,7 @@ function P(e, t) {
         members: r
       })
     })) && void 0 !== n ? n : [],
-    c = x(t, r, e => ({
+    c = L(t, r, e => ({
       id: e.id,
       members: e.members,
       presences: e.presences,
@@ -146,7 +146,7 @@ function D(e, t, n) {
     null != t && (e.recipients = t.map(e => (i()(null != R[e], "Missing user in compressed ready payload"), R[e]))), delete e.recipient_ids
   });
   let p = null !== (r = null == u ? void 0 : u.map((e, t) => !0 === e.unavailable ? e : (e.members = M(R, null == c ? void 0 : c[t]), U(e)))) && void 0 !== r ? r : [],
-    _ = x(t, u, e => U(e));
+    _ = L(t, u, e => U(e));
   return null != _ && p.push(_), S(y({}, d), {
     users: o,
     presences: [],
@@ -156,11 +156,11 @@ function D(e, t, n) {
   })
 }
 
-function x(e, t, n) {
+function L(e, t, n) {
   return null == C || C.identifyTime !== e || null != t && t.some(e => e.id === C.guild.id) ? null : n(C.guild)
 }
 
-function L(e, t) {
+function x(e, t) {
   var n, r, i;
   let o = g.Z.getGuild(e.id),
     a = G(e, null == o ? void 0 : {

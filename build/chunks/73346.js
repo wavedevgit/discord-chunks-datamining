@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Gg: () => L,
+  Gg: () => x,
   Kb: () => R,
   Ww: () => k,
   ZI: () => N,
@@ -166,11 +166,11 @@ function D(e, t, n) {
     userInfo: i
   }
 }
-let x = [];
+let L = [];
 
-function L(e, t, n, r, o) {
+function x(e, t, n, r, o) {
   let a = t.get(e);
-  if (null == a) return x;
+  if (null == a) return L;
   let s = a.applicationId,
     l = [],
     c = [],

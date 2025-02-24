@@ -59,8 +59,8 @@ function P(e) {
     messageId: P,
     roleId: w,
     setPopoutRef: D,
-    closePopout: x,
-    disableUserProfileLink: L = __OVERLAY__,
+    closePopout: L,
+    disableUserProfileLink: x = __OVERLAY__,
     newAnalyticsLocations: M = []
   } = e, k = (0, h.ZP)(t.id, n), {
     analyticsLocations: j
@@ -76,11 +76,11 @@ function P(e) {
     null == D || D(null == G ? void 0 : G.current)
   }, [G, D]);
   let Z = () => {
-      null == x || x(), (0, I.openUserProfileModal)(R({
+      null == L || L(), (0, I.openUserProfileModal)(R({
         sourceAnalyticsLocations: j
       }, U))
     },
-    F = !L && (0, c.Z)(t.id),
+    F = !x && (0, c.Z)(t.id),
     V = () => F ? (0, r.jsx)(o.sNh, {
       id: "view-profile",
       label: N.NW.string(N.t["+Xp3ho"]),
@@ -136,7 +136,7 @@ function P(e) {
               tags: (0, r.jsx)(g.Z, {
                 displayProfile: k,
                 profileType: T.y0.BITE_SIZE,
-                onClose: x
+                onClose: L
               })
             }), (0, r.jsx)(v.Z, {
               userId: t.id,

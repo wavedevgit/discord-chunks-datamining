@@ -52,7 +52,7 @@ function D(e, t) {
   return null != T && T.applicationId === e && T.branchId === t || null != N && N.applicationId === e && N.branchId === t
 }
 
-function x() {
+function L() {
   let e = O[0];
   if (null != e) {
     let {
@@ -71,7 +71,7 @@ function x() {
   }
 }
 
-function L(e, t) {
+function x(e, t) {
   let n = (0, p.Tu)(e, t);
   return O.findIndex(e => e.comboId === n)
 }
@@ -83,14 +83,14 @@ function M(e, t, n, r) {
       action: r
     },
     a = S.indexOf(i); - 1 !== a && S.splice(a, 1);
-  let s = L(e, t);
-  0 !== s && (n ? -1 === s && (O.push(o), x()) : (s > 0 && O.splice(s, 1), O.unshift(o), x())), !n && I && _.Z.resume(), w()
+  let s = x(e, t);
+  0 !== s && (n ? -1 === s && (O.push(o), L()) : (s > 0 && O.splice(s, 1), O.unshift(o), L())), !n && I && _.Z.resume(), w()
 }
 
 function k(e, t) {
   let n = (0, p.Tu)(e, t),
     r = S.indexOf(n); - 1 !== r && S.splice(r, 1);
-  let i = L(e, t); - 1 !== i && (O.splice(i, 1), w()), x()
+  let i = x(e, t); - 1 !== i && (O.splice(i, 1), w()), L()
 }
 
 function j(e) {
@@ -134,9 +134,9 @@ function F(e) {
   let {
     applicationId: t,
     branchId: n
-  } = e, r = L(t, n);
+  } = e, r = x(t, n);
   if (r < 1) return !1;
-  O.splice(0, 0, O.splice(r, 1)[0]), x(), I && _.Z.resume(), w()
+  O.splice(0, 0, O.splice(r, 1)[0]), L(), I && _.Z.resume(), w()
 }
 
 function V(e) {
@@ -150,7 +150,7 @@ function H(e) {
   let {
     state: t
   } = e;
-  A || (A = !0, x(), I || _.Z.resume());
+  A || (A = !0, L(), I || _.Z.resume());
   let n = I;
   I = t.paused, T = t.currentTask, N = t.nextTask;
   let r = !1;
@@ -175,7 +175,7 @@ function H(e) {
       return r = !0, !1
     }
     return !0
-  }), x(), (r || n !== I) && w()
+  }), L(), (r || n !== I) && w()
 }
 
 function W() {
@@ -252,7 +252,7 @@ class X extends(r = a.ZP.Store) {
     return I
   }
   getQueuePosition(e, t) {
-    return L(e, t)
+    return x(e, t)
   }
   isCorruptInstallation() {
     return R

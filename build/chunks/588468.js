@@ -35,7 +35,7 @@ var r, i = n(200651),
   w = n(388032),
   D = n(953637);
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -44,14 +44,14 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -117,7 +117,7 @@ class F extends o.PureComponent {
         selected: a
       }
     } = this, l = this.isSelectable();
-    return (0, i.jsx)(d.P3F, k(L({}, e), {
+    return (0, i.jsx)(d.P3F, k(x({}, e), {
       className: s()(D.clickable, r, n),
       id: null !== (t = G(o)) && void 0 !== t ? t : void 0,
       onClick: l ? this.handleClick : void 0,
@@ -148,14 +148,14 @@ class F extends o.PureComponent {
     }) : this.renderClickable()
   }
   constructor(e) {
-    super(e), x(this, "selectable", !0), x(this, "layoutClass", D.autocompleteRowVertical), x(this, "handleMouseEnter", () => {
+    super(e), L(this, "selectable", !0), L(this, "layoutClass", D.autocompleteRowVertical), L(this, "handleMouseEnter", () => {
       let {
         onHover: e,
         index: t,
         selected: n
       } = this.props;
       null == e || n || "number" != typeof t || e(t)
-    }), x(this, "handleClick", e => {
+    }), L(this, "handleClick", e => {
       let {
         onClick: t,
         index: n
@@ -230,7 +230,7 @@ class Y extends F {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "layoutClass", D.dividerContainer), x(this, "selectable", !1)
+    super(...e), L(this, "layoutClass", D.dividerContainer), L(this, "selectable", !1)
   }
 }
 class K extends F {
@@ -394,7 +394,7 @@ class J extends F {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "layoutClass", s()(D.autocompleteRowVertical, D.autocompleteRowVerticalSmall))
+    super(...e), L(this, "layoutClass", s()(D.autocompleteRowVertical, D.autocompleteRowVerticalSmall))
   }
 }
 class $ extends F {
@@ -426,7 +426,7 @@ class $ extends F {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "layoutClass", s()(D.autocompleteRowVertical, D.autocompleteRowVerticalSmall))
+    super(...e), L(this, "layoutClass", s()(D.autocompleteRowVertical, D.autocompleteRowVerticalSmall))
   }
 }
 class ee extends F {
@@ -444,7 +444,7 @@ class ee extends F {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "layoutClass", D.autocompleteRowHorizontal)
+    super(...e), L(this, "layoutClass", D.autocompleteRowHorizontal)
   }
 }
 class et extends F {
@@ -456,7 +456,7 @@ class et extends F {
 }
 class en extends F {
   renderContent() {
-    return (0, i.jsx)(v.Z, L({}, this.props))
+    return (0, i.jsx)(v.Z, x({}, this.props))
   }
 }
 class er extends(r = o.PureComponent) {
@@ -475,7 +475,7 @@ class er extends(r = o.PureComponent) {
       },
       children: (0, i.jsx)("div", {
         className: s()(D.autocomplete, n),
-        children: (0, i.jsx)("div", k(L({
+        children: (0, i.jsx)("div", k(x({
           className: s()(D.autocompleteInner, r)
         }, l), {
           children: t
@@ -484,5 +484,5 @@ class er extends(r = o.PureComponent) {
     }) : null
   }
 }
-x(er, "Generic", V), x(er, "Loading", H), x(er, "Title", W), x(er, "Divider", Y), x(er, "User", K), x(er, "Role", z), x(er, "Channel", q), x(er, "Command", Q), x(er, "NewCommand", X), x(er, "Emoji", J), x(er, "GIFIntegration", ee), x(er, "Sticker", $), x(er, "EmojiUpsell", et), x(er, "Soundmoji", en);
+L(er, "Generic", V), L(er, "Loading", H), L(er, "Title", W), L(er, "Divider", Y), L(er, "User", K), L(er, "Role", z), L(er, "Channel", q), L(er, "Command", Q), L(er, "NewCommand", X), L(er, "Emoji", J), L(er, "GIFIntegration", ee), L(er, "Sticker", $), L(er, "EmojiUpsell", et), L(er, "Soundmoji", en);
 let ei = er

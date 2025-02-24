@@ -65,11 +65,11 @@ let P = null,
   w = {},
   D = null;
 
-function x() {
+function L() {
   r = new Map, i = {}, o = {}, a = {}
 }
 
-function L(e) {
+function x(e) {
   var t;
   null == i[e.ownerId] && (i[e.ownerId] = {}), i[e.ownerId][null !== (t = e.guildId) && void 0 !== t ? t : I.kod] = e
 }
@@ -113,7 +113,7 @@ function G(e) {
       selfStream: a,
       discoverable: s
     } = t;
-    if (a && null != i) return L({
+    if (a && null != i) return x({
       streamType: null != r ? T.lo.GUILD : T.lo.CALL,
       ownerId: n,
       guildId: r,
@@ -291,7 +291,7 @@ function J(e) {
   let t = g.Z.getBasicChannel(e.channelId);
   return null != t && (0, p.p9)(t, S.Z, E.Z, b.Z, u.Z)[0]
 }
-x();
+L();
 class $ extends(s = l.ZP.PersistedStore) {
   initialize(e) {
     this.syncWith([b.Z], () => !0), this.waitFor(d.ZP, b.Z), (null == e ? void 0 : e.selfStreamParticipantsHidden) !== void 0 && Object.assign(w, null == e ? void 0 : e.selfStreamParticipantsHidden)
@@ -419,7 +419,7 @@ let ee = new $(c.Z, {
   SET_STREAM_APP_INTENT: Q,
   RTC_CONNECTION_STATE: z,
   CHANNEL_RTC_SELECT_PARTICIPANT: W,
-  CONNECTION_OPEN: x,
-  CONNECTION_CLOSED: x,
-  LOGOUT: x
+  CONNECTION_OPEN: L,
+  CONNECTION_CLOSED: L,
+  LOGOUT: L
 })

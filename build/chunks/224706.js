@@ -46,7 +46,7 @@ function w(e) {
     joinUserId: d,
     joinSessionId: f
   } = e;
-  L({
+  x({
     applicationId: t,
     channelId: r,
     embedded: o,
@@ -78,7 +78,7 @@ function D(e, t) {
   }
 }
 
-function x(e) {
+function L(e) {
   return a.tn.post({
     url: N.ANM.OAUTH2_AUTHORIZE,
     query: {
@@ -106,7 +106,7 @@ function x(e) {
     throw e
   })
 }
-async function L(e) {
+async function x(e) {
   let {
     applicationId: t,
     branchId: n,
@@ -143,7 +143,7 @@ async function L(e) {
     if (null == e) throw Error("Missing dispatch game when launching");
     let i = m.Z.getLibraryApplication(t, n);
     if (null == i) throw Error("Missing library application when launching");
-    v = x(t).then(t => b.Z.launchDispatchApplication(e, t, p.default.locale, i.getBranchName(), r))
+    v = L(t).then(t => b.Z.launchDispatchApplication(e, t, p.default.locale, i.getBranchName(), r))
   } else {
     let e = u.Z.getApplication(t);
     v = null != e ? b.Z.launch(e) : b.Z.launchGame(t)
@@ -379,7 +379,7 @@ let M = {
       game: e
     })
   },
-  launch: L,
+  launch: x,
   async join(e) {
     let {
       userId: t,

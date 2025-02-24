@@ -38,7 +38,7 @@ var r = n(192379),
   w = n(185923),
   D = n(388032);
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -47,14 +47,14 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -88,7 +88,7 @@ let U = [w.Z5.DISALLOW_EXTERNAL, w.Z5.DISALLOW_CUSTOM],
       pickerIntention: l,
       emojiSearchResults: _,
       gridWidth: h,
-      emojiPaddingHorizontal: x,
+      emojiPaddingHorizontal: L,
       emojiSpriteSize: M,
       shouldShowSoundmojiInEmojiPicker: j
     } = e, G = (0, s.e7)([c.ZP], () => c.ZP.categories), B = (0, s.e7)([b.Z], () => b.Z.getGuild(null == t ? void 0 : t.getGuildId()), [t]), Z = null == t ? null : t.getGuildId(), F = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(Z), [Z]), V = (0, A.NJ)(Z), H = (0, A.wC)(Z), W = (0, A.q5)(Z), {
@@ -133,7 +133,7 @@ let U = [w.Z5.DISALLOW_EXTERNAL, w.Z5.DISALLOW_CUSTOM],
         u = 0,
         d = 0;
       if (null != F && null != h) {
-        let f = Math.floor(h / (M + 2 * x)),
+        let f = Math.floor(h / (M + 2 * L)),
           m = 3 * f,
           g = (a, p) => {
             let _ = new Map,
@@ -155,11 +155,11 @@ let U = [w.Z5.DISALLOW_EXTERNAL, w.Z5.DISALLOW_CUSTOM],
               R = null != b && S && eo && ea === N.B.WITH_TOP_LIST && ei[b.id].length < b.getMaxEmojiSlots(),
               w = i && J && null != b && (T || C || R);
             w && R && v.length === f && v.shift();
-            let x = v.length > m && null != b && p.isNitroLocked,
-              j = x && !X.has(b.id);
+            let L = v.length > m && null != b && p.isNitroLocked,
+              j = L && !X.has(b.id);
             j && v.splice(m - 1);
             let U = eo && w && !h,
-              G = Math.ceil((w || x ? v.length + 1 : v.length) / f),
+              G = Math.ceil((w || L ? v.length + 1 : v.length) / f),
               B = [];
             for (let e = 0; e < G; e++) {
               let t = 0 === e,
@@ -200,7 +200,7 @@ let U = [w.Z5.DISALLOW_EXTERNAL, w.Z5.DISALLOW_CUSTOM],
                     visibleRowIndex: u
                   })
                 }
-                if (x && e === G - 1) {
+                if (L && e === G - 1) {
                   let t = B[e];
                   t.push({
                     type: 2,
@@ -218,7 +218,7 @@ let U = [w.Z5.DISALLOW_EXTERNAL, w.Z5.DISALLOW_CUSTOM],
               d++
             }
             let Z = h ? 0 : G,
-              F = k(L({}, p), {
+              F = k(x({}, p), {
                 count: a.length
               });
             r.push(F), e.push(Z)
@@ -342,7 +342,7 @@ let U = [w.Z5.DISALLOW_EXTERNAL, w.Z5.DISALLOW_CUSTOM],
         rowCountBySection: e,
         sectionDescriptors: r
       }
-    }, [F, h, M, x, _, n, eo, ea, ei, i, J, X, t, l, z, q, ee, G, B, Q, Y, K, W, H, V, et, es, j])
+    }, [F, h, M, L, _, n, eo, ea, ei, i, J, X, t, l, z, q, ee, G, B, Q, Y, K, W, H, V, et, es, j])
   };
 var B = function(e) {
   return e[e.PREMIUM = 0] = "PREMIUM", e[e.ROLE_SUBSCRIPTION = 1] = "ROLE_SUBSCRIPTION", e

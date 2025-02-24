@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  G: () => L,
+  G: () => x,
   Z: () => M
 }), n(47120), n(653041);
 var r = n(200651),
@@ -56,17 +56,17 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   var t, n, i, _, m, g, E, S, T;
   let {
     type: N,
-    disabled: x,
+    disabled: L,
     channel: M,
     handleSubmit: k,
     isEmpty: j,
     showAllButtons: U,
     children: G
-  } = e, B = (0, a.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), Z = L(M.id, N, j), {
+  } = e, B = (0, a.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), Z = x(M.id, N, j), {
     activeCommand: F,
     activeCommandOption: V
   } = (0, a.cj)([c.Z], () => ({
@@ -98,39 +98,39 @@ function x(e) {
   return (o.tq || (M.isDM() && (null === (g = N.gifts) || void 0 === g ? void 0 : g.button) != null && null == F && (b.ZP.isPremiumExactly(K, P.p9.TIER_2) && J && h.Z.trackExposure({
     location: "dc120b_5"
   }), X && W.push((0, r.jsx)(A.Z, {
-    disabled: x,
+    disabled: L,
     referralsRemaining: z,
     channel: M,
     isResending: q
   }, "referral"))), (null === (E = N.gifts) || void 0 === E ? void 0 : E.button) != null && null == F && !H && (null == Q || b.ZP.isPremiumEligible(Q)) && W.push((0, r.jsx)(D, {
-    disabled: x,
+    disabled: L,
     channel: M
   }, "gift")), (null === (S = N.gifs) || void 0 === S ? void 0 : S.button) != null && null == F && U && W.push((0, r.jsx)(O.Z, {
-    disabled: x,
+    disabled: L,
     type: N
   }, "gif")), ee && null == F && W.push((0, r.jsx)(I.Z, {
-    disabled: x,
+    disabled: L,
     channel: M
   }, "confetti")), !ee && (null === (T = N.stickers) || void 0 === T ? void 0 : T.button) != null && null == F && U && W.push((0, r.jsx)(R.Z, {
-    disabled: x,
+    disabled: L,
     type: N
   }, "sticker"))), (null === (n = N.emojis) || void 0 === n ? void 0 : n.button) != null && (null == F || null != V && V.type !== s.jw.ATTACHMENT) && W.push((0, r.jsx)(y.Z, {
-    disabled: x,
+    disabled: L,
     type: N
   }, "emoji")), $ || null == G || W.push(G), (null === (i = N.submit) || void 0 === i ? void 0 : i.button) != null && ((null === (_ = N.submit) || void 0 === _ ? void 0 : _.ignorePreference) || B) && !$ && W.push((0, r.jsx)(C.Z, {
     onClick: k,
-    disabled: x || Z
+    disabled: L || Z
   }, "submit")), $ && null != G && W.push(G), 0 === W.length) ? null : (0, r.jsx)("div", {
     className: w.buttons,
     children: W
   })
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   return (0, a.e7)([g.Z, E.Z], () => {
     let r = g.Z.getStickerPreview(e, t.drafts.type),
       i = null != r && r.length > 0;
     return 0 === E.Z.getUploads(e, t.drafts.type).length && n && !i
   })
 }
-let M = i.memo(x)
+let M = i.memo(L)

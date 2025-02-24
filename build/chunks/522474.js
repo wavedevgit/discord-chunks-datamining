@@ -69,7 +69,7 @@ let O = new d.Z("PopoutWindowStore"),
   w = s().debounce(P, 150),
   D = !1;
 
-function x(e, t) {
+function L(e, t) {
   let n = t.document,
     r = n.body;
   for (let e of (o()(null != r, "Body for popout window is null!"), document.querySelectorAll("style"))) {
@@ -82,7 +82,7 @@ function x(e, t) {
   }
 }
 
-function L(e) {
+function x(e) {
   let t = T[e];
   null == t || t.closed || (S[e] = {
     x: t.screenX,
@@ -125,7 +125,7 @@ function U(e) {
     return
   }
   let r = t.document;
-  (0, h.uF)(r, P), t.addEventListener("focus", P), t.addEventListener("blur", P), t.addEventListener("resize", w), D ? x(e, t) : j(e, t);
+  (0, h.uF)(r, P), t.addEventListener("focus", P), t.addEventListener("blur", P), t.addEventListener("resize", w), D ? L(e, t) : j(e, t);
   let i = (0, l.createRoot)(r.getElementById(R));
   o()(null != i, "No render target for popout!"), N[e] = i, i.render(n(e))
 }
@@ -172,7 +172,7 @@ function B(e) {
 
 function Z(e) {
   let t = T[e];
-  null != t && (t.closed || L(e), M(e), setTimeout(() => {
+  null != t && (t.closed || x(e), M(e), setTimeout(() => {
     V(t)
   }, 100), q.emitChange())
 }
@@ -203,7 +203,7 @@ function H(e) {
   let {
     key: t
   } = e, n = T[t];
-  null == n || n.closed || (L(t), f.default.preventPopoutClose || V(n))
+  null == n || n.closed || (x(t), f.default.preventPopoutClose || V(n))
 }
 
 function W() {

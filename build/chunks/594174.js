@@ -175,12 +175,12 @@ function D(e) {
   return !("incomplete" in e)
 }
 
-function x(e) {
+function L(e) {
   if (null != e.users)
     for (let t of e.users) !(t.id in E && D(t)) && (E[t.id] = new c.Z(t))
 }
 
-function L(e) {
+function x(e) {
   let {
     user: t
   } = e;
@@ -639,9 +639,9 @@ class eN extends p.Z {
       CONNECTION_OPEN: P,
       CONNECTION_OPEN_SUPPLEMENTAL: w,
       UPDATE_CLIENT_PREMIUM_TYPE: k,
-      OVERLAY_INITIALIZE: x,
+      OVERLAY_INITIALIZE: L,
       CACHE_LOADED: e => this.handleLoadCache(e),
-      USER_UPDATE: L,
+      USER_UPDATE: x,
       CURRENT_USER_UPDATE: M,
       PRESENCE_UPDATES: Q,
       SEARCH_FINISH: G,

@@ -5,10 +5,10 @@ n.d(t, {
   FQ: () => S,
   Il: () => T,
   Jf: () => R,
-  SA: () => x,
+  SA: () => L,
   Um: () => A,
   eu: () => P,
-  hW: () => L,
+  hW: () => x,
   lY: () => C,
   pk: () => N,
   qB: () => w
@@ -176,7 +176,7 @@ function D(e) {
   return f.Z.totalUnavailableGuilds > 0 || !l.Z.isConnected() ? e : e.filter(e => null != h.Z.getStickerById(e))
 }
 
-function x(e) {
+function L(e) {
   u.DZ.updateAsync("favoriteStickers", t => (t.stickerIds = D(t.stickerIds), i().size(t.stickerIds) >= g.oX) ? (s.Z.show({
     title: E.NW.string(E.t["+XYXtb"]),
     body: E.NW.formatToPlainString(E.t.JaIyFh, {
@@ -185,7 +185,7 @@ function x(e) {
   }), !1) : !t.stickerIds.includes(e) && void t.stickerIds.push(e), g.fy.INFREQUENT_USER_ACTION)
 }
 
-function L(e) {
+function x(e) {
   u.DZ.updateAsync("favoriteStickers", t => {
     t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = D(t.stickerIds)
   }, g.fy.INFREQUENT_USER_ACTION)

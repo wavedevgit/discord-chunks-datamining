@@ -24,23 +24,23 @@ let h = e => {
     handleTransition: x
   } = e;
   null != g && (C = null === (t = s.Z.getCategoryByStoreListingId(null == g ? void 0 : g.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId);
-  let j = null !== (r = null != C ? C : null == m ? void 0 : m.skuId) && void 0 !== r ? r : "",
+  let _ = null !== (r = null != C ? C : null == m ? void 0 : m.skuId) && void 0 !== r ? r : "",
     {
-      handleCardVisibilityChange: _
-    } = (0, d.E)(j, "home", "marketing featured block"),
+      handleCardVisibilityChange: j
+    } = (0, d.E)(_, "home", "marketing featured block"),
     y = null !== (h = null == g ? void 0 : g.bannerUrl) && void 0 !== h ? h : (0, c.uV)(null !== (i = null == m ? void 0 : m.featuredBlock) && void 0 !== i ? i : "", {
       size: u.J0,
       format: "png"
     });
   return (0, n.jsx)(o.$, {
-    onChange: _,
+    onChange: j,
     threshold: 0,
     children: (0, n.jsxs)(a.P3F, {
       className: l()(f.featuredBlock),
       style: {
         backgroundImage: "url(".concat(y, ")")
       },
-      onClick: () => x("shop marketing tile", j),
+      onClick: () => x("shop marketing tile", _),
       children: [null != v && (0, n.jsx)(a.IGR, {
         disableColor: !0,
         text: v,

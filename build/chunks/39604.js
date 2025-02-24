@@ -10,11 +10,11 @@ n.d(t, {
   _Q: () => M,
   eL: () => K,
   eU: () => G,
-  em: () => L,
+  em: () => x,
   jv: () => q,
   rO: () => X,
   sS: () => Q,
-  yg: () => x,
+  yg: () => L,
   yi: () => U,
   yl: () => B,
   zq: () => z
@@ -84,7 +84,7 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function x(e) {
+async function L(e) {
   let {
     allowVoiceRecording: t
   } = e;
@@ -94,7 +94,7 @@ async function x(e) {
     type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE"
   })
 }
-async function L(e) {
+async function x(e) {
   let {
     clipsEnabled: t,
     guildId: n,

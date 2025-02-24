@@ -76,7 +76,7 @@ let h = 24,
       "aria-checked": P,
       "aria-expanded": w,
       "aria-haspopup": D
-    } = e, x = (0, f.Q3)("BaseHeaderBar"), L = (0, r.jsx)(E, {
+    } = e, L = (0, f.Q3)("BaseHeaderBar"), x = (0, r.jsx)(E, {
       x: 0,
       y: 0,
       width: v,
@@ -143,10 +143,10 @@ let h = 24,
           tabIndex: s || null == b ? -1 : 0,
           children: [l ? (0, r.jsx)(d.ZP, {
             mask: "top" === u ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-            height: x ? v : void 0,
-            width: x ? v : void 0,
-            children: L
-          }) : L, l ? (0, r.jsx)("span", {
+            height: L ? v : void 0,
+            width: L ? v : void 0,
+            children: x
+          }) : x, l ? (0, r.jsx)("span", {
             className: a()(_.iconBadge, "top" === u ? _.iconBadgeTop : _.iconBadgeBottom)
           }) : null, i]
         })

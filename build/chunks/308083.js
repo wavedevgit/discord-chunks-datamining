@@ -22,13 +22,13 @@ n.d(t, {
   f4: () => O,
   gh: () => R,
   i1: () => M,
-  i6: () => x,
+  i6: () => L,
   jK: () => N,
   lt: () => Z,
   mv: () => y,
   n1: () => F,
   q2: () => f,
-  qC: () => L,
+  qC: () => x,
   uw: () => E,
   ym: () => k,
   zv: () => l.z
@@ -111,7 +111,7 @@ let I = ["Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP"
   R = new Set(["Bulgarian", "Chinese (Simplified)", "Chinese (Traditional)", "Croatian", "Czech", "Danish", "Dutch", "English", "Finnish", "French", "German", "Greek", "Hindi", "Hungarian", "Italian", "Japanese", "Korean", "Lithuanian", "Norwegian", "Polish", "Portuguese", "Romanian", "Russian", "Spanish", "Swedish", "Thai", "Turkish", "Ukrainian", "Vietnamese"]);
 
 function P(e) {
-  return !C.has(e) && !x.has(e) && !R.has(e)
+  return !C.has(e) && !L.has(e) && !R.has(e)
 }
 
 function w(e) {
@@ -121,14 +121,14 @@ function w(e) {
 function D(e, t) {
   return i().sortBy(e, w(t))
 }
-let x = new Set(["anime", "fanart", "venting", "mudae", "OwO bot", "movie nights", "study together", "scheduled gaming", "all day vc", "slow paced", "art streams", "work from home", "gartic phone", "fast food reviews", "dress to impress", "music production", "variety shows", "manga", "webtoon", "brainrot", "topsters", "dad jokes", "photography", "minecraft smp", "pirate shows", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pics", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "horses", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1", "roman history", "ssense doomscrolling", "skibidi toilet", "capcut editing", "tiktok rizz party", "industrial grade glycine", "frutiger aero", "y2k", "sanrio", "nuzlockes", "small form factor pcs", "esports", "game modding", "chiikawa", "underground rap", "pc music", "homestuck", "horse hoof cleaning", "analog horror", "pimple popping", "asmr", "ya fiction", "fanfiction", "cosplay", "fanart", "zines", "vtubers", "JRPGs", "retro gaming", "collecting", "coquette", "true crime", "critical role", "cottagecore", "goblincore", "renfaire", "letterboxd", "tarot readings", "fortune telling", "magic tricks", "ice cold sprite", "slime", "soap cutting", "mukbang", "premier league", "NBA", "hyperpop", "dance covers", "photocard trading", "toploader decorating", "unboxing", "decoden", "jpop", "mandopop", "cantopop", "amapiano", "ghibli", "pokemon vgc", "subway surfers", "family guy funny moments", "cranking 90s", "friday night funkin", "FNAF"]);
-var L = function(e) {
+let L = new Set(["anime", "fanart", "venting", "mudae", "OwO bot", "movie nights", "study together", "scheduled gaming", "all day vc", "slow paced", "art streams", "work from home", "gartic phone", "fast food reviews", "dress to impress", "music production", "variety shows", "manga", "webtoon", "brainrot", "topsters", "dad jokes", "photography", "minecraft smp", "pirate shows", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pics", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "horses", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1", "roman history", "ssense doomscrolling", "skibidi toilet", "capcut editing", "tiktok rizz party", "industrial grade glycine", "frutiger aero", "y2k", "sanrio", "nuzlockes", "small form factor pcs", "esports", "game modding", "chiikawa", "underground rap", "pc music", "homestuck", "horse hoof cleaning", "analog horror", "pimple popping", "asmr", "ya fiction", "fanfiction", "cosplay", "fanart", "zines", "vtubers", "JRPGs", "retro gaming", "collecting", "coquette", "true crime", "critical role", "cottagecore", "goblincore", "renfaire", "letterboxd", "tarot readings", "fortune telling", "magic tricks", "ice cold sprite", "slime", "soap cutting", "mukbang", "premier league", "NBA", "hyperpop", "dance covers", "photocard trading", "toploader decorating", "unboxing", "decoden", "jpop", "mandopop", "cantopop", "amapiano", "ghibli", "pokemon vgc", "subway surfers", "family guy funny moments", "cranking 90s", "friday night funkin", "FNAF"]);
+var x = function(e) {
   return e[e.NIGHT_SKY = 0] = "NIGHT_SKY", e[e.CASTLE = 1] = "CASTLE", e[e.WORLD_MAP = 2] = "WORLD_MAP", e[e.SEA_FOAM = 3] = "SEA_FOAM", e[e.WARP_TUNNEL = 4] = "WARP_TUNNEL", e[e.HOUSE = 5] = "HOUSE", e[e.HEIGHTMAP = 6] = "HEIGHTMAP", e[e.MESH = 7] = "MESH", e[e.SPATTER = 8] = "SPATTER", e
 }({});
 
 function M() {
-  let e = Object.keys(L).filter(e => isNaN(Number(e)));
-  return L[e[Math.floor(Math.random() * e.length)]]
+  let e = Object.keys(x).filter(e => isNaN(Number(e)));
+  return x[e[Math.floor(Math.random() * e.length)]]
 }
 let k = [{
     name: "Boulder",

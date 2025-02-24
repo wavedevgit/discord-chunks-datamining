@@ -44,19 +44,19 @@ function b(e) {
     let e = w ? c.Z.getStatus() : l.Z.getStatus(t.id, y);
     return e === v.Sk.OFFLINE || e === v.Sk.INVISIBLE
   }), {
-    recentActivityEnabled: x
+    recentActivityEnabled: L
   } = (0, u.i)({
     location: "UserProfileFeaturedActivity"
   }), {
-    voiceActivityStatusEnabled: L
+    voiceActivityStatusEnabled: x
   } = (0, a.U)({
     location: "UserProfileFeaturedActivity"
   }), {
     voiceActivityCardEnabled: M
   } = (0, d.o)({
     location: "UserProfileFeaturedActivity"
-  }), k = L || M, j = (0, p.Z)(t.id, "UserProfileFeaturedActivity"), U = i.useMemo(() => w ? T.find(s.Ae) : j, [w, T, j]);
-  return D || null == N ? !k || D || null == C || P ? D || null == A ? x && null != U ? (0, r.jsx)(m.Z, {
+  }), k = x || M, j = (0, p.Z)(t.id, "UserProfileFeaturedActivity"), U = i.useMemo(() => w ? T.find(s.Ae) : j, [w, T, j]);
+  return D || null == N ? !k || D || null == C || P ? D || null == A ? L && null != U ? (0, r.jsx)(m.Z, {
     location: "UserProfileFeaturedActivity",
     user: t,
     currentUser: n,

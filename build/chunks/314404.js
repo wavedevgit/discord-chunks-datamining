@@ -34,8 +34,8 @@ var r = n(200651),
   P = n(55610),
   w = n(653798),
   D = n(553797),
-  x = n(927699),
-  L = n(987716),
+  L = n(927699),
+  x = n(987716),
   M = n(311821),
   k = n(459965),
   j = n(811616),
@@ -194,8 +194,8 @@ function Q(e) {
   }, [eD, el, K, eb, eA]), i.useEffect(() => {
     eE && null != e_ && e_.length > 0 && eh(e_[0])
   }, [e_, eh, eE]);
-  let ex = !eg && (el || !eR && !eP) && eD && $,
-    eL = (0, u.arW)(),
+  let eL = !eg && (el || !eR && !eP) && eD && $,
+    ex = (0, u.arW)(),
     eM = (null == eN ? void 0 : eN.id) != null ? (0, y.aS)(eN.id, !1, el, eC) : void 0,
     {
       ipCountryCode: ek
@@ -248,7 +248,7 @@ function Q(e) {
       })
     },
     eV = () => {
-      if (em === v.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null != ef) return (0, r.jsx)(x.Z, {
+      if (em === v.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null != ef) return (0, r.jsx)(L.Z, {
         sectionTitle: F.NW.string(F.t.B3miEx),
         className: a()(H.customGiftMessageWrapper, {
           [H.compactCustomGiftMessageWrapper]: et
@@ -268,11 +268,11 @@ function Q(e) {
     }),
     eW = ep === G.Wt.DM_CHANNEL && eH,
     eY = eW ? H.bodyColumnLeft : H.bodyColumnMiddle,
-    eK = () => eg && null != eu ? eW ? (0, r.jsx)(L.q, {
+    eK = () => eg && null != eu ? eW ? (0, r.jsx)(x.q, {
       className: V.adjustedGiftMainAnimation,
       optionsContainerClassName: V.adjustedGiftBoxOptionContainer
-    }) : (0, r.jsx)(L.q, {}) : null,
-    ez = () => (0, r.jsx)("div", z(Y({}, eL), {
+    }) : (0, r.jsx)(x.q, {}) : null,
+    ez = () => (0, r.jsx)("div", z(Y({}, ex), {
       children: K.map(e => (0, r.jsx)(j.Z, {
         planId: e,
         premiumSubscription: el ? null : null != m ? m : null,
@@ -310,7 +310,7 @@ function Q(e) {
         className: H.bodyText,
         children: q(eb, E)
       }), !eW && eq(), !eW && ez(), (0, r.jsx)("div", {
-        children: ex && null != eN && null != eM ? (0, r.jsxs)("div", {
+        children: eL && null != eN && null != eM ? (0, r.jsxs)("div", {
           children: [(0, r.jsx)("div", {
             className: H.selectPlanDivider
           }), (0, r.jsx)(w.Ji, {

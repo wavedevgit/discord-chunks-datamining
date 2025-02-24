@@ -129,7 +129,7 @@ function I(e) {
   } = (0, f.k)({
     location: "soundboard-useSoundGrid",
     autoTrackExposure: !0
-  }), x = N(), L = (0, i.Wu)([p.Z], () => p.Z.recentlyHeardSoundIds);
+  }), L = N(), x = (0, i.Wu)([p.Z], () => p.Z.recentlyHeardSoundIds);
   return r.useMemo(() => {
     let e = 0,
       r = 0,
@@ -153,14 +153,14 @@ function I(e) {
       sections: i,
       guildIds: T,
       allSounds: g,
-      potentialSoundIdsForSection: L,
+      potentialSoundIdsForSection: x,
       sectionType: h.bg.RECENTLY_HEARD,
       sortById: !1
     }), D && b({
       sections: i,
       guildIds: T,
       allSounds: g,
-      potentialSoundIdsForSection: x.map(e => e.soundId),
+      potentialSoundIdsForSection: L.map(e => e.soundId),
       sectionType: h.bg.FREQUENTLY_USED,
       sortById: !1
     }), O(i, R, P, g, t), C || S(i, g), y(i, A, null == R ? void 0 : R.id, g, d), C && S(i, g), i.forEach(t => {
@@ -174,7 +174,7 @@ function I(e) {
         lockedCustomSoundCount: r
       }
     })
-  }, [T, g, v, L, x, D, w, R, P, t, C, A, n, I, d])
+  }, [T, g, v, x, L, D, w, R, P, t, C, A, n, I, d])
 }
 
 function T(e, t, n) {

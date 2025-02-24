@@ -4,7 +4,7 @@ n.d(t, {
   BT: () => F,
   Hn: () => O,
   Hu: () => B,
-  I0: () => x,
+  I0: () => L,
   Og: () => M,
   TP: () => I,
   Uu: () => V,
@@ -13,7 +13,7 @@ n.d(t, {
   o4: () => k,
   oz: () => H,
   r6: () => U,
-  uB: () => L,
+  uB: () => x,
   we: () => Z,
   ym: () => R
 }), n(47120);
@@ -114,7 +114,7 @@ function D(e) {
   return f = o.e$(f, v.Plq.ADMINISTRATOR) ? S : w(r.id, n, f, i), (u.Z.isLurking(r.id) || (null == n ? void 0 : n.isPending)) && (f = o.hX(f, c)), h.ZP.isCurrentUserGuest(r.id) && (f = o.hX(f, N)), P(f, r, t, s)
 }
 
-function x(e) {
+function L(e) {
   let t, {
       forceRoles: n,
       context: r,
@@ -129,7 +129,7 @@ function x(e) {
     if (r.isScheduledForDeletion()) return O;
     if (f.Ec.has(r.type)) {
       let e = _.Z.getChannel(r.parent_id);
-      return null == e ? O : M(r, x({
+      return null == e ? O : M(r, L({
         forceRoles: n,
         context: e,
         overwrites: i,
@@ -168,7 +168,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   var t, n, r;
   let i, {
     user: o,
@@ -187,7 +187,7 @@ function L(e) {
       let e = _.Z.getChannel(a.parent_id);
       if (null == e || e.isScheduledForDeletion()) return O;
       let t = E === (null === (n = g.default.getCurrentUser()) || void 0 === n ? void 0 : n.id) && d.Z.hasJoined(a.id);
-      return M(a, L({
+      return M(a, x({
         user: o,
         context: e,
         overwrites: s,
@@ -273,7 +273,7 @@ function F(e) {
     roles: a,
     excludeGuildPermissions: s
   } = e;
-  return o.e$(L({
+  return o.e$(x({
     user: n,
     context: r,
     overwrites: i,

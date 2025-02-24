@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(46140),
   w = n(981631),
   D = n(231338),
-  x = n(388032),
-  L = n(624978);
+  L = n(388032),
+  x = n(624978);
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -163,23 +163,23 @@ function Z(e) {
       ec()
     },
     ef = z && !Y ? {
-      headerText: x.NW.string(x.t.gHerLS),
-      ctaText: x.NW.string(x.t.cfY4PD),
+      headerText: L.NW.string(L.t.gHerLS),
+      ctaText: L.NW.string(L.t.cfY4PD),
       handleClickCta: H,
       tileAssetType: "reward"
     } : K && !Y ? {
-      headerText: x.NW.string(x.t.uH2sf3),
-      ctaText: x.NW.string(x.t.VN1Ajo),
+      headerText: L.NW.string(L.t.uH2sf3),
+      ctaText: L.NW.string(L.t.VN1Ajo),
       handleClickCta: ec,
       tileAssetType: "reward"
     } : B(N, V) ? {
-      headerText: x.NW.string(x.t.Bz6SkJ),
-      ctaText: x.NW.string(x.t.BXFP39),
+      headerText: L.NW.string(L.t.Bz6SkJ),
+      ctaText: L.NW.string(L.t.BXFP39),
       handleClickCta: ed,
       tileAssetType: "game"
     } : {
-      headerText: x.NW.string(x.t.Bz6SkJ),
-      ctaText: x.NW.string(x.t.BSXPZ2),
+      headerText: L.NW.string(L.t.Bz6SkJ),
+      ctaText: L.NW.string(L.t.BSXPZ2),
       handleClickCta: ec,
       tileAssetType: "game"
     };
@@ -188,7 +188,7 @@ function Z(e) {
       F.current = e
     },
     "aria-expanded": ee,
-    className: L.wrapper,
+    className: x.wrapper,
     style: {
       width: null !== (v = null === (m = y.current) || void 0 === m ? void 0 : m.clientWidth) && void 0 !== v ? v : G,
       height: ei.height,
@@ -199,53 +199,53 @@ function Z(e) {
       ref: e => {
         J.current = e
       },
-      className: L.container,
+      className: x.container,
       style: {
         borderRadius: es
       },
       children: [(0, r.jsxs)("div", {
-        className: L.top,
+        className: x.top,
         children: [(0, r.jsxs)("div", {
-          className: L.left,
+          className: x.left,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-sm/semibold",
             children: ef.headerText
           }), (0, r.jsxs)(c.P3F, {
-            className: L.help,
+            className: x.help,
             onClick: e => {
               ea(), eu(e)
             },
             children: [(0, r.jsx)(c.Text, {
               variant: "text-xs/medium",
               color: "text-muted",
-              className: L.helpText,
-              children: x.NW.format(x.t["Lm8/mJ"], {
+              className: x.helpText,
+              children: L.NW.format(L.t["Lm8/mJ"], {
                 gamePublisher: b.config.messages.gamePublisher
               })
             }), (0, r.jsx)(c.idN, {
               size: "custom",
-              className: L.helpIcon,
+              className: x.helpIcon,
               width: U,
               height: U,
               color: c.TVs.colors.INTERACTIVE_NORMAL
             })]
           })]
         }), (0, r.jsx)("div", {
-          className: L.right,
+          className: x.right,
           children: (0, r.jsxs)("div", {
-            className: L.imgWrapper,
+            className: x.imgWrapper,
             children: [eo((e, t) => t && (0, r.jsx)(o.animated.div, {
               style: e,
-              className: L.imgUnderlay
+              className: x.imgUnderlay
             })), "game" === ef.tileAssetType && (0, r.jsx)("img", {
-              alt: x.NW.formatToPlainString(x.t.IskzPj, {
+              alt: L.NW.formatToPlainString(L.t.IskzPj, {
                 gameTitle: b.config.messages.gameTitle,
                 gamePublisher: b.config.messages.gamePublisher
               }),
-              className: L.assetTile,
+              className: x.assetTile,
               src: (0, T.fh)(b, T.eC.GAME_TILE, Q).url
             }), "reward" === ef.tileAssetType && (0, r.jsx)(A.Z, {
-              className: L.assetTile,
+              className: x.assetTile,
               quest: b,
               questContent: I.jn.MEMBERS_LIST,
               learnMoreStyle: "icon",
@@ -259,7 +259,7 @@ function Z(e) {
           ea(), ef.handleClickCta()
         },
         color: c.zxk.Colors.CUSTOM,
-        className: L.ctaButton,
+        className: x.ctaButton,
         children: ef.ctaText
       })]
     })

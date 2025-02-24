@@ -72,8 +72,8 @@ let y = "scientist:triggered",
     rawGuildExperiments: []
   },
   D = {},
-  x = {},
   L = {},
+  x = {},
   M = {},
   k = {},
   j = "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL,
@@ -270,7 +270,7 @@ function ee(e) {
     current_snapshot_source: w.source,
     current_snapshot_session_id: w.sessionId,
     current_snapshot_fingerprint: w.fingerprint
-  }), D = {}, x = {}, L = {};
+  }), D = {}, L = {}, x = {};
   let r = "CONNECTION_OPEN" === e.type || null == e.fingerprint || e.fingerprint === d.default.getFingerprint(),
     {
       experiments: i,
@@ -320,7 +320,7 @@ function et(e) {
     }
   }), null != n && n.forEach(e => {
     let [t, n, s, l, c, u, d, f, p, _] = e;
-    x[t] = {
+    L[t] = {
       hashKey: n,
       revision: s,
       populations: l.map($),
@@ -376,7 +376,7 @@ let er = 1e4;
 function ei(e, t) {
   var n, r;
   let i = G(t),
-    o = x["".concat(i)];
+    o = L["".concat(i)];
   if (null == o) return null;
   let {
     revision: a,
@@ -449,7 +449,7 @@ function ea(e) {
     source: t.assignmentSource,
     sessionId: t.assignmentSessionId,
     fingerprint: t.assignmentFingerprint
-  }), x = eo(t.loadedGuildExperiments), L = {}
+  }), L = eo(t.loadedGuildExperiments), x = {}
 }
 
 function es() {
@@ -466,7 +466,7 @@ function el(e) {
 }
 
 function ec() {
-  A = !1, C = {}, x = {}, s.K.remove(y)
+  A = !1, C = {}, L = {}, s.K.remove(y)
 }
 
 function eu() {
@@ -594,9 +594,9 @@ function em(e) {
   let {
     guild: t
   } = e;
-  for (let e in L) {
+  for (let e in x) {
     let [n] = e.split(":");
-    t.id === n && delete L[e]
+    t.id === n && delete x[e]
   }
 }
 class eg extends f.Z {
@@ -605,7 +605,7 @@ class eg extends f.Z {
   }
   loadCache() {
     let e = this.readSnapshot(eg.LATEST_SNAPSHOT_VERSION);
-    null != e && ("loadedUserExperiments" in e ? (D = e.loadedUserExperiments, x = eo(e.loadedGuildExperiments), Object.values(D).forEach(e => e.loadedFromCache = !0), Object.values(x).forEach(e => e.loadedFromCache = !0)) : et(e, !0))
+    null != e && ("loadedUserExperiments" in e ? (D = e.loadedUserExperiments, L = eo(e.loadedGuildExperiments), Object.values(D).forEach(e => e.loadedFromCache = !0), Object.values(L).forEach(e => e.loadedFromCache = !0)) : et(e, !0))
   }
   takeSnapshot() {
     return {
@@ -632,9 +632,9 @@ class eg extends f.Z {
       r = k[e];
     if (j && null != r) return r;
     let i = "".concat(n, ":").concat(e);
-    if (i in L) return L[i];
+    if (i in x) return x[i];
     let o = ei(n, e);
-    return L[i] = o, o
+    return x[i] = o, o
   }
   getUserExperimentBucket(e) {
     let t = this.getUserExperimentDescriptor(e);
@@ -648,13 +648,13 @@ class eg extends f.Z {
     return D
   }
   getGuildExperiments() {
-    return x
+    return L
   }
   getLoadedUserExperiment(e) {
     return D[G(e)]
   }
   getLoadedGuildExperiment(e) {
-    return x[G(e)]
+    return L[G(e)]
   }
   getRecentExposures(e, t) {
     let n = "".concat(e, "|").concat(t, "|");
@@ -687,16 +687,16 @@ class eg extends f.Z {
       let r = t[n];
       null != r && (e[r] = D[n].bucket)
     }
-    for (let t in L) {
-      let n = L[t];
+    for (let t in x) {
+      let n = x[t];
       null != n && (e[t] = n.bucket)
     }
     return e
   }
   getSerializedState() {
     let e = {};
-    for (let t in x)
-      for (let n of (e[t] = JSON.parse(JSON.stringify(x[t])), e[t].populations)) n.filters = [];
+    for (let t in L)
+      for (let n of (e[t] = JSON.parse(JSON.stringify(L[t])), e[t].populations)) n.filters = [];
     return {
       hasLoadedExperiments: A,
       trackedExposureExperiments: C,

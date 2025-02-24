@@ -79,9 +79,9 @@ function R(e) {
   } = e, {
     theme: D
   } = (0, v.z)(), {
-    analyticsLocations: x
+    analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
-    trackUserProfileAction: L
+    trackUserProfileAction: x
   } = (0, m.KZ)(), M = _.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, O.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
     live: j
   } = (0, g.Z)(t.id), [U] = j, {
@@ -124,9 +124,9 @@ function R(e) {
       ringClassName: S.focusRing
     },
     onClick: () => {
-      L({
+      x({
         action: "PRESS_VIEW_PROFILE",
-        analyticsLocations: x
+        analyticsLocations: L
       }), null == R || R()
     },
     children: K

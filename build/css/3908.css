@@ -1,6 +1,6 @@
 /**
   Module ID: 3908
-  Original File Name: b47079874c87b640
+  Original File Name: eb5fbbcf8bcbbf43
 **/
 .container__05cdc {
     display: flex
@@ -141,12 +141,13 @@
 .gameIcon__80da8 {
     width: 26px;
     height: 26px;
-    position: relative
+    position: relative;
+    flex-shrink: 0
 }
 
 .gameIconImage__80da8 {
     border-radius: 4px;
-    border: 1px solid var(--border-subtle);
+    border: 1px solid var(--border-faint);
     max-height: 100%;
     max-width: 100%;
     -o-object-fit: contain;
@@ -294,7 +295,7 @@
     align-items: center;
     padding: 4px 8px;
     border-radius: 16px;
-    border: 1px solid var(--border-subtle);
+    border: 1px solid var(--border-faint);
     max-width: 268px
 }
 
@@ -314,7 +315,7 @@
     overflow: hidden;
     border-radius: 16px;
     box-shadow: var(--elevation-high);
-    width: 256px
+    width: 300px
 }
 
 .spinnerContainer__86bf6 {
@@ -1051,4 +1052,4 @@
     max-height: max(200px, min(calc(100vh - 80px), 660px))
 }
 
-/*# sourceMappingURL=b47079874c87b640.css.map*/
+/*# sourceMappingURL=eb5fbbcf8bcbbf43.css.map*/

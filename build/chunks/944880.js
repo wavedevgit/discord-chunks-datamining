@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => L
+  Z: () => x
 }), n(47120);
 var r = n(913527),
   i = n.n(r),
@@ -113,7 +113,7 @@ function w() {
 function D() {
   I()
 }
-class x extends a.Z {
+class L extends a.Z {
   forceRefreshIfOutdated() {
     let e = h.Z.getState();
     null != e.lastFetchTimeMs && Date.now() - e.lastFetchTimeMs > O && I({
@@ -132,4 +132,4 @@ class x extends a.Z {
     })
   }
 }
-let L = new x
+let x = new L

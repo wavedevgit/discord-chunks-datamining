@@ -35,8 +35,8 @@ var i = n(658722),
   P = n(592125),
   w = n(984933),
   D = n(271383),
-  x = n(430824),
-  L = n(375954),
+  L = n(430824),
+  x = n(375954),
   M = n(496675),
   k = n(158776),
   j = n(699516),
@@ -234,7 +234,7 @@ function eD(e, t) {
   return e === w.sH && (0, C.bw)(t)
 }
 
-function ex(e) {
+function eL(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = e.split(" ").filter(e => "" !== e || t).map(e => {
       let t = e.toLocaleLowerCase();
@@ -257,7 +257,7 @@ function ex(e) {
   return n
 }
 
-function eL(e, t, n) {
+function ex(e, t, n) {
   let r = 0,
     i = null;
   for (let o of t) {
@@ -272,7 +272,7 @@ function eM(e, t) {
   let n = t[e.guild_id];
   if (null == n) {
     var r;
-    n = t[e.guild_id] = null === (r = x.Z.getGuild(e.guild_id)) || void 0 === r ? void 0 : r.toString().toLocaleLowerCase()
+    n = t[e.guild_id] = null === (r = L.Z.getGuild(e.guild_id)) || void 0 === r ? void 0 : r.toString().toLocaleLowerCase()
   }
   return n
 }
@@ -289,7 +289,7 @@ function ek(e, t) {
 
 function ej(e, t) {
   let n = P.Z.getChannel(e);
-  return null == e || null == n ? [] : s()(L.Z.getMessages(e).toArray()).reverse().uniqBy(e => e.author.id).map(e => B.default.getUser(e.author.id)).filter(e => {
+  return null == e || null == n ? [] : s()(x.Z.getMessages(e).toArray()).reverse().uniqBy(e => e.author.id).map(e => B.default.getUser(e.author.id)).filter(e => {
     if (null == e || e.isNonUserBot()) return !1;
     let t = n.getGuildId();
     return null == t || eC(D.ZP.getMember(t, e.id))
@@ -389,7 +389,7 @@ let eU = {
       filter: a,
       allowSnowflake: s
     } = e;
-    if (null == x.Z.getGuild(t)) return [];
+    if (null == L.Z.getGuild(t)) return [];
     if (0 === n.length && o) {
       let e = ej(U.Z.getChannelId(t), r);
       if (e.length > 0) return e
@@ -427,7 +427,7 @@ let eU = {
         boosters: p = {},
         allowSnowflake: _
       } = e,
-      h = ex(n, c);
+      h = eL(n, c);
     t = null != r ? s()(w.ZP.getChannels(r)[l]).map(e => e.channel).concat(N.Z.computeAllActiveJoinedThreads(r)).value() : s()(P.Z.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(N.Z.computeAllActiveJoinedThreads()).value();
     let m = {},
       g = [];
@@ -436,12 +436,12 @@ let eU = {
       let t = [...h],
         i = e.name.toLocaleLowerCase(),
         s = _ && n === e.id,
-        c = s ? ea : eL(i, t, o);
+        c = s ? ea : ex(i, t, o);
       if (0 !== c) {
         if (t.length > 0) {
           for (let n of [eM(e, m), ek(e, m)]) {
             if (null == n || "" === n) continue;
-            let e = eL(n, t, !1);
+            let e = ex(n, t, !1);
             0 !== e && (c += .5 * e)
           }
           c = Math.min(es - eu, c)
@@ -470,7 +470,7 @@ let eU = {
       containQuery: RegExp(W.Z.escape(a), "i"),
       queryLower: a
     }, c = [];
-    for (let e of s()(x.Z.getGuilds()).values().value()) {
+    for (let e of s()(L.Z.getGuilds()).values().value()) {
       if (!i(e)) continue;
       let t = e.name.toLocaleLowerCase(),
         n = eA(t, l, r);
@@ -651,8 +651,8 @@ let eU = {
     }) : [], m = h.length, g = t.toLowerCase(), E = [];
     if (m < f && l) {
       let e = n.getGuildId(),
-        t = x.Z.getGuild(e);
-      null != t && (s()(x.Z.getRoles(t.id)).filter(t => {
+        t = L.Z.getGuild(e);
+      null != t && (s()(L.Z.getRoles(t.id)).filter(t => {
         let {
           mentionable: n,
           name: i,
@@ -685,8 +685,8 @@ let eU = {
       status: k.Z.getStatus(e.record.id)
     })) : [], u = c.length, d = t.toLowerCase(), p = [];
     if (u < q.rnv && a) {
-      let e = x.Z.getGuild(n);
-      null != e && (s()(x.Z.getRoles(e.id)).filter(e => {
+      let e = L.Z.getGuild(n);
+      null != e && (s()(L.Z.getRoles(e.id)).filter(e => {
         let {
           mentionable: t,
           name: i,
@@ -883,11 +883,11 @@ let eU = {
   matchSentinel: (e, t, n) => !ev.test(t) && e === n,
   hasSameRoleAsUsername(e, t) {
     if (!t.isPomelo()) return !1;
-    let n = x.Z.getGuild(e.getGuildId());
+    let n = L.Z.getGuild(e.getGuildId());
     for (let {
         name: e
       }
-      of Object.values(null != n ? x.Z.getRoles(n.id) : {}))
+      of Object.values(null != n ? L.Z.getRoles(n.id) : {}))
       if (t.username.startsWith(e.toLowerCase())) return !0;
     return !1
   }

@@ -176,7 +176,7 @@ function N(e) {
 }
 
 function A(e) {
-  return C(e) && "[object RegExp]" === x(e)
+  return C(e) && "[object RegExp]" === L(e)
 }
 
 function C(e) {
@@ -184,11 +184,11 @@ function C(e) {
 }
 
 function R(e) {
-  return C(e) && "[object Date]" === x(e)
+  return C(e) && "[object Date]" === L(e)
 }
 
 function P(e) {
-  return C(e) && ("[object Error]" === x(e) || e instanceof Error)
+  return C(e) && ("[object Error]" === L(e) || e instanceof Error)
 }
 
 function w(e) {
@@ -199,11 +199,11 @@ function D(e) {
   return null === e || "boolean" == typeof e || "number" == typeof e || "string" == typeof e || "symbol" == typeof e || void 0 === e
 }
 
-function x(e) {
+function L(e) {
   return Object.prototype.toString.call(e)
 }
 
-function L(e) {
+function x(e) {
   return e < 10 ? "0" + e.toString(10) : e.toString(10)
 }
 t.debuglog = function(e) {
@@ -245,7 +245,7 @@ var M = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "
 
 function k() {
   var e = new Date,
-    t = [L(e.getHours()), L(e.getMinutes()), L(e.getSeconds())].join(":");
+    t = [x(e.getHours()), x(e.getMinutes()), x(e.getSeconds())].join(":");
   return [e.getDate(), M[e.getMonth()], t].join(" ")
 }
 

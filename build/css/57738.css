@@ -1,6 +1,6 @@
 /**
   Module ID: 57738
-  Original File Name: a3290fd5742bb1ca
+  Original File Name: ce2e03d73fdb6e41
 **/
 .clickable_c69b6d {
     cursor: pointer
@@ -1466,12 +1466,13 @@
 .gameIcon__80da8 {
     width: 26px;
     height: 26px;
-    position: relative
+    position: relative;
+    flex-shrink: 0
 }
 
 .gameIconImage__80da8 {
     border-radius: 4px;
-    border: 1px solid var(--border-subtle);
+    border: 1px solid var(--border-faint);
     max-height: 100%;
     max-width: 100%;
     -o-object-fit: contain;
@@ -1619,7 +1620,7 @@
     align-items: center;
     padding: 4px 8px;
     border-radius: 16px;
-    border: 1px solid var(--border-subtle);
+    border: 1px solid var(--border-faint);
     max-width: 268px
 }
 
@@ -2383,4 +2384,4 @@
     background-image: url(/assets/436b5a86429f186a.svg)
 }
 
-/*# sourceMappingURL=a3290fd5742bb1ca.css.map*/
+/*# sourceMappingURL=ce2e03d73fdb6e41.css.map*/

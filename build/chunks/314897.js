@@ -40,8 +40,8 @@ let A = new m.Z("AuthenticationStore"),
   P = null,
   w = null,
   D = null,
-  x = null,
   L = null,
+  x = null,
   M = null,
   k = null,
   j = I.u34.NONE,
@@ -68,8 +68,8 @@ function q(e) {
 
 function Q() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-  if (L = c.K.get(C), null != W) return W;
-  let t = null != L ? L : o.getToken();
+  if (x = c.K.get(C), null != W) return W;
+  let t = null != x ? x : o.getToken();
   !(!(0, g.m1)() || !e && null != t || O.Z.isHandoffAvailable()) && X({
     withGuildExperiments: !0
   })
@@ -79,7 +79,7 @@ function X(e) {
   let {
     withGuildExperiments: t
   } = e, n = {}, r = v.default.getSuperPropertiesBase64();
-  null != r && (n["X-Super-Properties"] = r), null != L && (n["X-Fingerprint"] = L), W = l.tn.get({
+  null != r && (n["X-Super-Properties"] = r), null != x && (n["X-Fingerprint"] = x), W = l.tn.get({
     url: I.ANM.EXPERIMENTS,
     query: {
       with_guild_experiments: t
@@ -114,7 +114,7 @@ function X(e) {
 }
 
 function J() {
-  M = L, L = null, c.K.remove(C)
+  M = x, x = null, c.K.remove(C)
 }
 
 function $(e, t) {
@@ -201,11 +201,11 @@ function ep(e) {
 
 function e_(e) {
   let t = e.fingerprint;
-  null == L ? null != t ? (v.default.track(I.rMx.USER_FINGERPRINT_CHANGED, {
+  null == x ? null != t ? (v.default.track(I.rMx.USER_FINGERPRINT_CHANGED, {
     old_fingerprint: null != M ? (0, a.s)(M) : null,
     new_fingerprint: (0, a.s)(t)
-  }), L = t, M = t, c.K.set(C, L)) : Q() : null != t && L !== t && v.default.track(I.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
-    fingerprint: (0, a.s)(L),
+  }), x = t, M = t, c.K.set(C, x)) : Q() : null != t && x !== t && v.default.track(I.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
+    fingerprint: (0, a.s)(x),
     dropped_fingerprint: (0, a.s)(t)
   })
 }
@@ -227,7 +227,7 @@ function em(e) {
     auth: a,
     staticAuthSessionId: s
   } = e;
-  q("handleConnectionOpen called"), y.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.Z)(n)), w = r, D = i, x = s, k = o, P = n.id, void 0 !== a && (G = a.authenticator_types), c.K.set(R, n.id)
+  q("handleConnectionOpen called"), y.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.Z)(n)), w = r, D = i, L = s, k = o, P = n.id, void 0 !== a && (G = a.authenticator_types), c.K.set(R, n.id)
 }
 
 function eg(e) {
@@ -331,7 +331,7 @@ class eC extends(i = s.ZP.Store) {
     return D
   }
   getStaticAuthSessionId() {
-    return x
+    return L
   }
   getToken() {
     return (0, b.LP)()
@@ -340,7 +340,7 @@ class eC extends(i = s.ZP.Store) {
     return (0, b.$8)()
   }
   getFingerprint() {
-    return L
+    return x
   }
   getAnalyticsToken() {
     return k

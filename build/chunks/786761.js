@@ -87,7 +87,7 @@ function C(e) {
     timestamp: new Date(e.timestamp),
     editedTimestamp: null != e.edited_timestamp ? new Date(e.edited_timestamp) : null,
     attachments: D(e),
-    embeds: L(e),
+    embeds: x(e),
     components: (0, a.uZ)(null !== (t = e.components) && void 0 !== t ? t : [], {
       includeEmojiSrc: !1
     }),
@@ -101,7 +101,7 @@ function R(e) {
   let {
     reactions: _,
     interactionData: h
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, v = C(e), y = null !== (i = null === (t = e.mentions) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== i ? i : [], S = null !== (o = e.mention_roles) && void 0 !== o ? o : [], T = null !== (a = e.mention_channels) && void 0 !== a ? a : [], R = e.message_reference, P = N(e), w = null, D = null == e ? void 0 : e.gift_info, L = e.gifting_prompt, j = null != e.interaction ? c.Z.createFromServer(e.interaction) : null, U = e.type === b.uaV.THREAD_STARTER_MESSAGE ? null === (r = e.referenced_message) || void 0 === r ? void 0 : null === (n = r.author) || void 0 === n ? void 0 : n.id : void 0, G = e.content;
+  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, v = C(e), y = null !== (i = null === (t = e.mentions) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== i ? i : [], S = null !== (o = e.mention_roles) && void 0 !== o ? o : [], T = null !== (a = e.mention_channels) && void 0 !== a ? a : [], R = e.message_reference, P = N(e), w = null, D = null == e ? void 0 : e.gift_info, x = e.gifting_prompt, j = null != e.interaction ? c.Z.createFromServer(e.interaction) : null, U = e.type === b.uaV.THREAD_STARTER_MESSAGE ? null === (r = e.referenced_message) || void 0 === r ? void 0 : null === (n = r.author) || void 0 === n ? void 0 : n.id : void 0, G = e.content;
   return new u.ZP((e.type === b.uaV.PREMIUM_REFERRAL && (d = g.default.isProbablyAValidSnowflake(e.content) ? e.content : void 0, G = ""), A(e)) ? I(O({}, w), {
     id: e.id,
     channel_id: e.channel_id,
@@ -129,7 +129,7 @@ function R(e) {
     giftCodes: (0, m.Fp)(e) ? (0, m.Q_)(null == e ? void 0 : e.embeds[0].url) : (0, m.Q_)(e.content),
     content: G,
     referralTrialOfferId: d,
-    call: x(e.call, v.timestamp),
+    call: L(e.call, v.timestamp),
     messageSnapshots: k(e),
     reactions: M(null != _ ? _ : e.reactions, e.poll),
     interaction: j,
@@ -140,7 +140,7 @@ function R(e) {
     poll: null == e.poll ? void 0 : (0, s.Z)(e.poll),
     potions: e.potions,
     giftInfo: null == D ? void 0 : D,
-    giftingPrompt: L
+    giftingPrompt: x
   }))
 }
 
@@ -158,7 +158,7 @@ function w(e, t) {
   });
   let n = e,
     r = !1;
-  if (null != t.call && (n = n.set("call", x(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", D(t))), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", L(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", k(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new d.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, a.uZ)(t.components, {
+  if (null != t.call && (n = n.set("call", L(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", D(t))), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", x(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", k(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new d.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, a.uZ)(t.components, {
       includeEmojiSrc: !1
     }))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
     var i;
@@ -176,7 +176,7 @@ function D(e) {
   }))
 }
 
-function x(e, t) {
+function L(e, t) {
   if (null != e) {
     let n = null != e.ended_timestamp ? i()(new Date(e.ended_timestamp)) : null,
       r = null != n ? i().duration(n.diff(t)) : null;
@@ -189,7 +189,7 @@ function x(e, t) {
   return null
 }
 
-function L(e) {
+function x(e) {
   if (null == e.embeds) return [];
   let t = e.embeds.map(t => (0, h.kC)(e.channel_id, e.id, t));
   return (0, h.o3)(t)

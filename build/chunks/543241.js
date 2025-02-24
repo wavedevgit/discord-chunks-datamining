@@ -17,9 +17,9 @@ n.d(t, {
   kI: () => R,
   nV: () => K,
   q5: () => F,
-  to: () => L,
+  to: () => x,
   wC: () => Z,
-  y$: () => x
+  y$: () => L
 }), n(733860), n(653041), n(47120), n(627341), n(757143), n(301563);
 var r = n(192379),
   i = n(392711),
@@ -86,8 +86,8 @@ let R = function(e, t) {
         return null === (e = _.Z.getGuild(n)) || void 0 === e ? void 0 : e.name
       }),
       D = (0, a.e7)([m.default], () => m.default.getCurrentUser()),
-      x = (0, b.I5)(D),
-      L = (0, f.g2)({
+      L = (0, b.I5)(D),
+      x = (0, f.g2)({
         location: "useEmojiCategories"
       });
     return r.useMemo(() => {
@@ -123,7 +123,7 @@ let R = function(e, t) {
           t === S.En.GUILD && (f = {
             type: S.En.GUILD,
             guild: e,
-            isNitroLocked: !x && u && l === o.length,
+            isNitroLocked: !L && u && l === o.length,
             emojis: o,
             emojisDisabled: a
           }), null != f && (e.id === n ? c.unshift(f) : c.push(f))
@@ -183,8 +183,8 @@ let R = function(e, t) {
           isNitroLocked: !1
         });
         return t
-      }, L && i ? [u] : [])
-    }, [P, t, n, e, x, R, w, g, E, p, s, I, o, L, i])
+      }, x && i ? [u] : [])
+    }, [P, t, n, e, L, R, w, g, E, p, s, I, o, x, i])
   },
   P = e => {
     let t = (null == e ? void 0 : e.getGuildId()) != null;
@@ -208,7 +208,7 @@ let R = function(e, t) {
       location: n
     })
   },
-  x = e => {
+  L = e => {
     var t, n, r;
     let {
       emoji: i,
@@ -240,7 +240,7 @@ let R = function(e, t) {
       }).filter(e => null != e)
     })
   },
-  L = (e, t) => {
+  x = (e, t) => {
     s.ZP.trackWithMetadata(I.rMx.SEARCH_RESULT_EMPTY, {
       search_type: I.aib.EMOJI,
       query: t,

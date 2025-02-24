@@ -79,17 +79,17 @@ async function O(e) {
   let w = d.default.getUser(v);
   if (null == w) return;
   let D = p.Z.getUserProfile(v),
-    x = c.Z.getPrimaryActivity(v),
-    L = c.Z.getStatus(v),
+    L = c.Z.getPrimaryActivity(v),
+    x = c.Z.getStatus(v),
     M = c.Z.isMobileOnline(v),
     {
       party: k,
       assets: j,
       application_id: U
-    } = null != x ? x : {},
+    } = null != L ? L : {},
     G = null != U ? l.Z.getApplication(U) : null,
     B = M ? _.j28.ONLINE_MOBILE : _.j28.ONLINE_DESKTOP,
-    Z = L === _.Skl.ONLINE ? B : L;
+    Z = x === _.Skl.ONLINE ? B : x;
   b = await (0, i.ZDy)(async () => {
     let {
       default: e
@@ -111,15 +111,15 @@ async function O(e) {
     guild_id: I,
     channel_id: T,
     other_user_id: v,
-    application_id: null !== (o = null == x ? void 0 : x.application_id) && void 0 !== o ? o : null,
-    application_name: null == x ? void 0 : x.name,
+    application_id: null !== (o = null == L ? void 0 : L.application_id) && void 0 !== o ? o : null,
+    application_name: null == L ? void 0 : L.name,
     sku_id: null !== (a = null == G ? void 0 : G.primarySkuId) && void 0 !== a ? a : null,
     is_friend: u.Z.isFriend(v),
     has_images: !!(null !== (m = null == j ? void 0 : j.large_image) && void 0 !== m ? m : null == j ? void 0 : j.small_image),
     party_max: null == k ? void 0 : null === (t = k.size) || void 0 === t ? void 0 : t[1],
     party_id: null == k ? void 0 : k.id,
     party_platform: (0, h.Ps)(null == k ? void 0 : k.id) ? _.ABu.SPOTIFY : null,
-    game_platform: (0, s.Z)(x),
+    game_platform: (0, s.Z)(L),
     profile_user_status: Z,
     profile_has_nitro_customization: (null == D ? void 0 : D.banner) != null,
     profile_has_profile_effect: (null == D ? void 0 : D.profileEffectId) != null

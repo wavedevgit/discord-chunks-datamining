@@ -29,8 +29,8 @@ var s, l = n(512722),
   P = n(594190),
   w = n(502286),
   D = n(12898),
-  x = n(355552),
-  L = n(294473),
+  L = n(355552),
+  x = n(294473),
   M = n(706629),
   k = n(166884),
   j = n(998594),
@@ -121,8 +121,8 @@ let ey = new N.Z("MediaEngineStore"),
   eP = 500,
   ew = 5 * Q.Z.Millis.SECOND,
   eD = -60,
-  ex = 100,
-  eL = ">=21.0.0",
+  eL = 100,
+  ex = ">=21.0.0",
   eM = 2 * Q.Z.Millis.SECOND;
 
 function ek() {
@@ -348,7 +348,7 @@ function tN() {
         muteBeforeProcessing: c,
         pttBeforeProcessing: u,
         skipEncode: d
-      } = (null != l ? M.Z : L.Z).getCurrentConfig(eE({
+      } = (null != l ? M.Z : x.Z).getCurrentConfig(eE({
         location: "setupMediaEngine"
       }, null != l && {
         guildId: l
@@ -369,7 +369,7 @@ function tN() {
     }, {
       autoTrackExposure: !0
     }).signalAV1Support ? e.setExperimentFlag(eh.V8.SIGNAL_AV1, !0) : e.setExperimentFlag(eh.V8.SIGNAL_AV1_DECODE, !0): ((0, X.isMac)() || (0, X.isLinux)()) && e.setExperimentFlag(eh.V8.SIGNAL_AV1_DECODE, !0), (0, X.isWindows)() && e.setExperimentFlag(eh.V8.SIGNAL_AV1_HARDWARE_DECODE, !0), ej.setHasFullbandPerformance((0, A.Z)());
-    let h = (0, x.D)("setupMediaEngine").enabled;
+    let h = (0, L.D)("setupMediaEngine").enabled;
     if (e.setRemoteAudioHistory(1e3 * !!h), (0, I.Z)(r)) {
       let t = S.Z.getSettings();
       e.setExperimentFlag(eh.V8.STREAMER_CLIP, t.clipsEnabled);
@@ -382,7 +382,7 @@ function tN() {
       });
       e.setViewerSideClip(n), e.setClipsKeyFrameInterval(eh.ux)
     }
-    for (let t of (s = tE(e.context), e.setPostponeDecodeLevel(ex), Object.keys(s.localMutes))) t !== en.default.getId() && e.setLocalMute(t, s.localMutes[t]);
+    for (let t of (s = tE(e.context), e.setPostponeDecodeLevel(eL), Object.keys(s.localMutes))) t !== en.default.getId() && e.setLocalMute(t, s.localMutes[t]);
     for (let t of Object.keys(s.localVolumes)) t !== en.default.getId() && e.setLocalVolume(t, s.localVolumes[t]);
     for (let t of Object.keys(s.localPans)) {
       let n = s.localPans[t];
@@ -672,7 +672,7 @@ function tw() {
       var t;
       e.vadThrehsoldMigrated = !0, (null === (t = e.modeOptions) || void 0 === t ? void 0 : t.threshold) === -40 && (e.modeOptions.threshold = eD)
     }(0, X.isWeb)() ? e.ncUseKrispjsSettingVersion !== eT && (e.ncUseKrispjsSettingVersion = eT, e.noiseSuppression = !1, e.noiseCancellation = !0): e.ncUseKrispSettingVersion !== eI && (e.ncUseKrispSettingVersion = eI, e.noiseSuppression = !1, e.noiseCancellation = !0), e.hardwareEnabledVersion !== eN && (e.hardwareH264 = !0, e.hardwareEnabledVersion = eN), null == e.hardwareEncoding && (e.hardwareEncoding = e.hardwareH264)
-  }), tL()
+  }), tx()
 }
 
 function tD(e) {
@@ -682,11 +682,11 @@ function tD(e) {
   return Object.assign(r, e), !__OVERLAY__ && n && g.K.set(eO, eU), r
 }
 
-function tx() {
+function tL() {
   g.K.remove(eO), location.reload()
 }
 
-function tL() {
+function tx() {
   var e, t, n;
   let r = tE();
   ej.setAudioInputDevice(r.inputDeviceId), ej.setAudioOutputDevice(r.outputDeviceId), tS(), ej.setInputVolume(r.inputVolume), ej.setOutputVolume(r.outputVolume), ej.setH264Enabled(null === (e = r.hardwareEncoding) || void 0 === e || e || r.openH264), ej.setAv1Enabled(null === (t = r.hardwareEncoding) || void 0 === t || t), ej.setH265Enabled(null === (n = r.hardwareEncoding) || void 0 === n || n), ej.setAecDump(r.aecDumpEnabled), ej.setSidechainCompression(r.sidechainCompression), ej.setSidechainCompressionStrength(r.sidechainCompressionStrength)
@@ -1276,7 +1276,7 @@ function nI(e) {
 }
 
 function nT() {
-  tx()
+  tL()
 }
 
 function nN(e) {
@@ -1335,7 +1335,7 @@ async function nP() {
 }
 
 function nw() {
-  return (0, X.isWindows)() || (0, X.isLinux)() || (0, X.isMac)() && p().satisfies(null === b.Z || void 0 === b.Z ? void 0 : b.Z.os.release, eL)
+  return (0, X.isWindows)() || (0, X.isLinux)() || (0, X.isMac)() && p().satisfies(null === b.Z || void 0 === b.Z ? void 0 : b.Z.os.release, ex)
 }
 
 function nD() {
@@ -1344,7 +1344,7 @@ function nD() {
   }) : (e8 = !0, nP())
 }
 
-function nx(e) {
+function nL(e) {
   let {
     enabled: t
   } = e;
@@ -1356,7 +1356,7 @@ function nx(e) {
   })
 }
 
-function nL(e) {
+function nx(e) {
   let {
     newVoiceFilterId: t
   } = e;
@@ -2112,8 +2112,8 @@ let n9 = r = new n8(v.Z, {
   CLIPS_INIT: nY,
   CLIPS_SETTINGS_UPDATE: nK,
   MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE: n7,
-  VOICE_FILTER_REQUEST_SWITCH: nL,
-  VOICE_FILTER_LOOPBACK_TOGGLE: nx,
+  VOICE_FILTER_REQUEST_SWITCH: nx,
+  VOICE_FILTER_LOOPBACK_TOGGLE: nL,
   VOICE_FILTER_APPLIED: nk,
   VOICE_FILTER_DOWNLOAD_FAILED: nM,
   VOICE_FILTER_APPLY_FAILED: nM

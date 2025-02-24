@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(422195),
   w = n(657795),
   D = n(489762),
-  x = n(31543),
-  L = n(814042),
+  L = n(31543),
+  x = n(814042),
   M = n(15350),
   k = n(611480),
   j = n(981631),
@@ -105,7 +105,7 @@ let V = (0, O.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       analyticsLocations: z
     } = (0, p.ZP)(f.Z.STICKER_PICKER), q = (null === (o = (0, E.N)()) || void 0 === o ? void 0 : o.subscription_trial) != null, Q = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, S.Q)(e => e.showPremiumUpsell), [eo, ea] = (0, h.Iu)(e => [e.searchQuery, e.isSearchSuggestion], s.X), es = i.useRef("");
     i.useImperativeHandle(t, () => ({
-      onPickerOpen: eL
+      onPickerOpen: ex
     }));
     let el = (0, N.Sd)(c),
       ec = 0 === el.filter(e => e.type !== C.Ih.EMPTY_GUILD_UPSELL).length,
@@ -174,7 +174,7 @@ let V = (0, O.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         getRowProps: eP,
         gridContainerProps: ew,
         handleGridContainerKeyDown: eD,
-        isUsingKeyboardNavigation: ex
+        isUsingKeyboardNavigation: eL
       } = (0, R.t)({
         columnCounts: eA,
         stickersListRef: ee,
@@ -185,7 +185,7 @@ let V = (0, O.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         gridNavigatorId: k.Vr
       });
     i.useEffect(() => _.ZN.resetStoreState, []);
-    let eL = () => {
+    let ex = () => {
       let e = c.getGuildId(),
         t = [];
       if (null !== e) {
@@ -220,7 +220,7 @@ let V = (0, O.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       value: z,
       children: [!(q && ec) && (0, r.jsx)("div", {
         className: U.header,
-        children: (0, r.jsx)(x.Z, {
+        children: (0, r.jsx)(L.Z, {
           ref: er,
           onKeyDown: eD,
           stickersListRef: ee,
@@ -243,7 +243,7 @@ let V = (0, O.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
             getStickerRowProps: eP,
             gridWidth: eu,
             gutterWidth: eN,
-            isUsingKeyboardNavigation: ex,
+            isUsingKeyboardNavigation: eL,
             onSelectSticker: ey,
             rowCount: eS,
             rowCountBySection: eI,
@@ -255,7 +255,7 @@ let V = (0, O.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
           stickersListRef: ee,
           channel: c
         })]
-      }), ei && (0, r.jsx)(L.C, {
+      }), ei && (0, r.jsx)(x.C, {
         onLearnMore: eM
       })]
     })

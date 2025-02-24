@@ -55,7 +55,7 @@ function D(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,8 +66,8 @@ function x(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -89,7 +89,7 @@ let M = 190,
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 135793));
-      return t => (0, r.jsx)(e, L(D({}, t), {
+      return t => (0, r.jsx)(e, x(D({}, t), {
         channel: d,
         message: i,
         onRedeem: o,
@@ -163,8 +163,8 @@ function B(e) {
         variantsReturnStyle: a.v.INDIVIDUAL_PRODUCTS
       })
     }, [w, C]),
-    x = (0, i.useCallback)(() => R ? w() : D(), [w, D, R]),
-    L = (0, i.useMemo)(() => {
+    L = (0, i.useCallback)(() => R ? w() : D(), [w, D, R]),
+    x = (0, i.useMemo)(() => {
       if (null != b) {
         if ("apply" === s) return 3;
         if (b.type === N.qc2.DEVELOPER_GIFT) return 1;
@@ -172,13 +172,13 @@ function B(e) {
       }
       return 0
     }, [b, R, s]),
-    M = (0, i.useMemo)(() => 0 === L ? 1 : f ? 2 : 3 * (null == p), [f, p, L]);
+    M = (0, i.useMemo)(() => 0 === x ? 1 : f ? 2 : 3 * (null == p), [f, p, x]);
   return (0, r.jsx)(Z, {
     channel: t,
-    buttonPurchaseState: L,
+    buttonPurchaseState: x,
     buttonDisabledState: M,
     price: h,
-    onActionClick: x,
+    onActionClick: L,
     loading: P,
     selectedEmoji: null != p ? p : void 0,
     isReaction: c
@@ -419,7 +419,7 @@ let Z = e => {
       tooltipContentClassName: R.tooltip,
       text: u,
       shouldShow: !!s,
-      children: e => (0, r.jsx)(l.zxk, L(D({}, e), {
+      children: e => (0, r.jsx)(l.zxk, x(D({}, e), {
         onClick: a,
         disabled: s,
         children: (0, r.jsx)("div", {

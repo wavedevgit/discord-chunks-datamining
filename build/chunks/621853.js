@@ -68,8 +68,8 @@ let y = Symbol("NO GUILD ID"),
   P = new Map,
   w = new Map,
   D = new Map,
-  x = new Map,
-  L = !1;
+  L = new Map,
+  x = !1;
 
 function M(e) {
   let t = A.get(e);
@@ -103,7 +103,7 @@ function k(e, t) {
 }
 
 function j() {
-  O.clear(), S.clear(), A.clear(), C.clear(), w.clear(), D.clear(), x.clear(), L = !1
+  O.clear(), S.clear(), A.clear(), C.clear(), w.clear(), D.clear(), L.clear(), x = !1
 }
 
 function U(e) {
@@ -138,8 +138,8 @@ function Z(e) {
 }
 
 function F(e) {
-  var t, n, r, i, s, l, c, d, f, h, g, v, S, N, L, j, U, G, Z, F, V, H, W, Y, K, z, q;
-  let Q = null !== (L = null === (t = e.guild_member_profile) || void 0 === t ? void 0 : t.guild_id) && void 0 !== L ? L : y;
+  var t, n, r, i, s, l, c, d, f, h, g, v, S, N, x, j, U, G, Z, F, V, H, W, Y, K, z, q;
+  let Q = null !== (x = null === (t = e.guild_member_profile) || void 0 === t ? void 0 : t.guild_id) && void 0 !== x ? x : y;
   if (null === (n = O.get(e.user.id)) || void 0 === n || n.delete(Q), null != e.mutual_guilds) {
     let t = {};
     e.mutual_guilds.forEach(e => {
@@ -151,7 +151,7 @@ function F(e) {
         guild: i,
         nick: r
       })
-    }), x.set(e.user.id, p.ZP.getFlattenedGuildIds().filter(e => null != t[e]).map(e => ({
+    }), L.set(e.user.id, p.ZP.getFlattenedGuildIds().filter(e => null != t[e]).map(e => ({
       guild: t[e].guild,
       nick: t[e].nick
     })))
@@ -352,15 +352,15 @@ function Y(e) {
 }
 
 function K(e) {
-  L = !0
+  x = !0
 }
 
 function z(e) {
-  L = !1, null != e.guild_id ? Y(e) : W(e)
+  x = !1, null != e.guild_id ? Y(e) : W(e)
 }
 
 function q(e) {
-  L = !1
+  x = !1
 }
 
 function Q(e) {
@@ -372,15 +372,15 @@ function Q(e) {
 }
 
 function X(e) {
-  if (x.size < 1 && A.size < 1) return !1;
-  for (let e of (x.clear(), A.values())) et(e)
+  if (L.size < 1 && A.size < 1) return !1;
+  for (let e of (L.clear(), A.values())) et(e)
 }
 
 function J(e) {
   let t = e.user.id,
     n = A.get(t);
-  if (null == x.get(t) && null == n) return !1;
-  x.delete(t), et(n)
+  if (null == L.get(t) && null == n) return !1;
+  L.delete(t), et(n)
 }
 
 function $(e) {
@@ -409,7 +409,7 @@ class en extends f.Z {
     return S.has(e)
   }
   get isSubmitting() {
-    return L
+    return x
   }
   getUserProfile(e) {
     return A.get(e)
@@ -425,7 +425,7 @@ class en extends f.Z {
     return D.get(e)
   }
   getMutualGuilds(e) {
-    return x.get(e)
+    return L.get(e)
   }
   takeSnapshot() {
     let e = c.default.getId(),

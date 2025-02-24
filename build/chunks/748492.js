@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   Ds: () => M,
-  YB: () => x,
+  YB: () => L,
   of: () => k,
-  q5: () => L
+  q5: () => x
 });
 var r = n(200651);
 n(192379);
@@ -52,7 +52,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   var t, n;
   let {
     channel: i,
@@ -63,8 +63,8 @@ function x(e) {
     onJumpToChannel: T,
     idle: R,
     selectedParticipant: D,
-    embeddedActivity: x
-  } = e, L = (0, c.bp)() === A.IlC.POPOUT, M = (0, a.e7)([S.Z], () => S.Z.isVideoEnabled()), k = (0, a.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), j = !1 === (null === (t = null == k ? void 0 : k.disabled) || void 0 === t || t), U = (0, u.Z)([o])[0], G = (0, _.Z)(i), B = e => {
+    embeddedActivity: L
+  } = e, x = (0, c.bp)() === A.IlC.POPOUT, M = (0, a.e7)([S.Z], () => S.Z.isVideoEnabled()), k = (0, a.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), j = !1 === (null === (t = null == k ? void 0 : k.disabled) || void 0 === t || t), U = (0, u.Z)([o])[0], G = (0, _.Z)(i), B = e => {
     l.Z.setVideoEnabled(e)
   }, Z = () => {
     j ? B(!0) : (0, h.Z)()
@@ -113,14 +113,14 @@ function x(e) {
         justify: f.Z.Justify.END,
         basis: "50%",
         align: f.Z.Align.CENTER,
-        children: [L || (0, I.R)() ? null : (0, r.jsx)(b.Z, {
+        children: [x || (0, I.R)() ? null : (0, r.jsx)(b.Z, {
           className: P.rightPipIcon,
           popoutOpen: !1,
           onOpenPopout: F,
           onClosePopout: C.Vq
         }), (0, r.jsx)(v.Z, {
           applicationId: o,
-          location: x.location,
+          location: L.location,
           className: P.rightPipIcon
         })]
       })]
@@ -128,7 +128,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   var t;
   let {
     channel: n,

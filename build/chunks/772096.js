@@ -158,18 +158,18 @@ let C = m(_({}, l().defaultRules.link), {
       w = null == P,
       D = (0, c.ZP)(o).length > 0 || (0, c.ZP)(s).length > 0;
     if (w || D) return u();
-    let x = m(_({}, n), {
+    let L = m(_({}, n), {
         allowEscape: !1,
         parseInlineCodeChildContent: !0
       }),
-      L = n.allowEmojiLinks ? y : b,
-      M = [...L, ...O],
+      x = n.allowEmojiLinks ? y : b,
+      M = [...x, ...O],
       k = [...S, ...I],
-      j = T(t(v, x), M, [d.b.EMOJI]),
-      U = T(t(C, x), k);
+      j = T(t(v, L), M, [d.b.EMOJI]),
+      U = T(t(C, L), k);
     if (null == j || null == U || 0 === N(j).trim().length) return u();
-    let G = i().pick(t.rules, L),
-      B = l().parserFor(G)(p.whitespaceSanitized, x),
+    let G = i().pick(t.rules, x),
+      B = l().parserFor(G)(p.whitespaceSanitized, L),
       Z = h.whitespaceSanitized,
       {
         target: F

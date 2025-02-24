@@ -73,10 +73,10 @@ function y(e) {
 
 function O(e) {
   if (g = !1, y(e), !m) {
-    if (null !== r(u)) m = !0, x(S);
+    if (null !== r(u)) m = !0, L(S);
     else {
       var t = r(d);
-      null !== t && L(O, t.startTime - e)
+      null !== t && x(O, t.startTime - e)
     }
   }
 }
@@ -97,7 +97,7 @@ function S(e, n) {
     if (null !== p) var l = !0;
     else {
       var c = r(d);
-      null !== c && L(O, c.startTime - n), l = !1
+      null !== c && x(O, c.startTime - n), l = !1
     }
     return l
   } finally {
@@ -140,11 +140,11 @@ else if ("undefined" != typeof MessageChannel) {
   E(P, 0)
 };
 
-function x(e) {
+function L(e) {
   T = e, I || (I = !0, a())
 }
 
-function L(e, n) {
+function x(e, n) {
   N = E(function() {
     e(t.unstable_now())
   }, n)
@@ -152,7 +152,7 @@ function L(e, n) {
 t.unstable_IdlePriority = 5, t.unstable_ImmediatePriority = 1, t.unstable_LowPriority = 4, t.unstable_NormalPriority = 3, t.unstable_Profiling = null, t.unstable_UserBlockingPriority = 2, t.unstable_cancelCallback = function(e) {
   e.callback = null
 }, t.unstable_continueExecution = function() {
-  m || h || (m = !0, x(S))
+  m || h || (m = !0, L(S))
 }, t.unstable_forceFrameRate = function(e) {
   0 > e || 125 < e ? console.error("forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported") : A = 0 < e ? Math.floor(1e3 / e) : 5
 }, t.unstable_getCurrentPriorityLevel = function() {
@@ -219,7 +219,7 @@ t.unstable_IdlePriority = 5, t.unstable_ImmediatePriority = 1, t.unstable_LowPri
     startTime: o,
     expirationTime: s,
     sortIndex: -1
-  }, o > a ? (e.sortIndex = o, n(d, e), null === r(u) && e === r(d) && (g ? (v(N), N = -1) : g = !0, L(O, o - a))) : (e.sortIndex = s, n(u, e), m || h || (m = !0, x(S))), e
+  }, o > a ? (e.sortIndex = o, n(d, e), null === r(u) && e === r(d) && (g ? (v(N), N = -1) : g = !0, x(O, o - a))) : (e.sortIndex = s, n(u, e), m || h || (m = !0, L(S))), e
 }, t.unstable_shouldYield = R, t.unstable_wrapCallback = function(e) {
   var t = _;
   return function() {

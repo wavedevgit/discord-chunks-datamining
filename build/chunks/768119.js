@@ -172,7 +172,7 @@ function D(e) {
   null != e && null == m[e] && g(e), I = e
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     channelId: n
@@ -180,7 +180,7 @@ function x(e) {
   D(null != t ? t : n)
 }
 
-function L(e) {
+function x(e) {
   let {
     searchId: t
   } = e;
@@ -333,8 +333,8 @@ let V = new F(l.Z, {
   SEARCH_ENSURE_SEARCH_STATE: N,
   SEARCH_EDITOR_STATE_CHANGE: T,
   SEARCH_SET_SHOW_BLOCKED_RESULTS: U,
-  SEARCH_SCREEN_OPEN: L,
-  CHANNEL_SELECT: x,
+  SEARCH_SCREEN_OPEN: x,
+  CHANNEL_SELECT: L,
   CHANNEL_TOGGLE_MEMBERS_SECTION: Z,
   SEARCH_CLEAR_HISTORY: M,
   SEARCH_REMOVE_HISTORY: k,

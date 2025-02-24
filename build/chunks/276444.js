@@ -43,9 +43,9 @@ let d = 5,
 function D() {
   f = null, p = new Map, _ = new Set, m = new Set, g = !1, E = new Set, v = new Set, b = new Map, y = 0, O = null, S = [], I = !1, T = 0, N = !1, A = null, h = new Map, C = !1, R = !1, P = !1, w = c.g2L.NOT_ELIGIBLE
 }
-let x = () => !0;
+let L = () => !0;
 
-function L(e) {
+function x(e) {
   let {} = e;
   A = null, g = !0
 }
@@ -183,7 +183,7 @@ function ee() {
 }
 class et extends(r = o.ZP.Store) {
   initialize() {
-    this.waitFor(s.default), this.syncWith([s.default], x)
+    this.waitFor(s.default), this.syncWith([s.default], L)
   }
   checkAndFetchReferralsRemaining() {
     null == f && !g && y < d && (null == O || O < Date.now()) && (0, l.C$)()
@@ -246,7 +246,7 @@ class et extends(r = o.ZP.Store) {
 u(et, "displayName", "ReferralTrialStore");
 let en = new et(a.Z, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: K,
-  BILLING_REFERRALS_REMAINING_FETCH_START: L,
+  BILLING_REFERRALS_REMAINING_FETCH_START: x,
   BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: M,
   BILLING_REFERRALS_REMAINING_FETCH_FAIL: k,
   BILLING_CREATE_REFERRAL_PREVIEW_START: j,

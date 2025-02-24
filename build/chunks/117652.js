@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Dd: () => x
+  Dd: () => L
 });
 var r = n(200651);
 n(192379);
@@ -54,7 +54,7 @@ function D(e) {
   }
   return e
 }
-let x = {
+let L = {
   key: I.h8.GIFT_CUSTOMIZATION,
   renderStep: e => (0, r.jsx)(M, D({}, e)),
   options: {
@@ -63,7 +63,7 @@ let x = {
   }
 };
 
-function L(e) {
+function x(e) {
   let {
     onStepChange: t,
     onBackClick: n,
@@ -96,7 +96,7 @@ function M(e) {
     setGiftRecipientError: I,
     validatingGiftRecipient: w,
     giftRecipient: D,
-    recommendedGiftSkuIds: x,
+    recommendedGiftSkuIds: L,
     giftingOrigin: M,
     setValidatingGiftRecipient: j
   } = (0, O.wD)(), {
@@ -158,7 +158,7 @@ function M(e) {
         color: "header-secondary",
         className: R.selectGiftTitle,
         children: K.toLocaleUpperCase()
-      }), x.map(e => Q(e)), (0, r.jsx)(k, {
+      }), L.map(e => Q(e)), (0, r.jsx)(k, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
@@ -204,7 +204,7 @@ function M(e) {
       children: (0, r.jsx)(o.mzw, {
         justify: f.Z.Justify.BETWEEN,
         align: f.Z.Align.CENTER,
-        children: (0, r.jsx)(L, {
+        children: (0, r.jsx)(x, {
           onStepChange: t,
           onBackClick: n,
           disabled: null != m || null == D || D.id === (null == V ? void 0 : V.id) || s.length > A.$n,

@@ -110,8 +110,8 @@ class T extends a.Z {
       CHANNEL_DELETE: P,
       CHANNEL_UPDATES: R,
       CONNECTION_OPEN_SUPPLEMENTAL: A,
-      GUILD_DELETE: x,
-      LOGIN_SUCCESS: L,
+      GUILD_DELETE: L,
+      LOGIN_SUCCESS: x,
       THREAD_DELETE: D,
       THREAD_UPDATE: w
     })
@@ -150,11 +150,11 @@ function D(e) {
   T.deleteChannel(e.channel.id)
 }
 
-function x(e) {
+function L(e) {
   return !e.guild.unavailable && (T.deleteGuild(e.guild.id), !0)
 }
 
-function L(e) {
+function x(e) {
   O.clear(), S.clear(), I = !1
 }
 

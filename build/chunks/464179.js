@@ -86,12 +86,12 @@ let y = "US",
   P = (0, u.hQ)(),
   w = (0, u.hQ)(),
   D = (0, u.hQ)();
-var x = function(e) {
+var L = function(e) {
     return e.MODAL_US = "modalUS", e.MODAL_INTL = "modalInternational", e.MODAL_US_WITH_NAME = "modalUSWithName", e.MODAL_INTL_WITH_NAME = "modalInternationalWithName", e.SETTINGS_US = "settingsUS", e.SETTINGS_INTL = "settingsInternational", e.SETTINGS_INTL_NO_NAME = "settingsInternationalWithoutName", e.SETTINGS_US_MOBILE = "settingsUSMobile", e.SETTINGS_INTL_MOBILE = "settingsInternationalMobile", e.SETTINGS_INTL_NO_NAME_MOBILE = "settingsInternationalWithoutNameMobile", e
-  }(x || {}),
-  L = function(e) {
+  }(L || {}),
+  x = function(e) {
     return e.EDIT = "edit", e.CREATE = "create", e
-  }(L || {});
+  }(x || {});
 let M = {
     [y]: l.G,
     [O]: a.X
@@ -457,7 +457,7 @@ class H extends(r = o.PureComponent) {
     })
   }
 }
-h(H, "Layouts", x), h(H, "Modes", L), h(H, "defaultProps", {
+h(H, "Layouts", L), h(H, "Modes", x), h(H, "defaultProps", {
   name: "",
   country: "",
   line1: "",

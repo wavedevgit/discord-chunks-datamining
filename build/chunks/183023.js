@@ -37,8 +37,8 @@ var r = n(200651),
   P = n(197115),
   w = n(703656),
   D = n(944486),
-  x = n(914010),
-  L = n(594174),
+  L = n(914010),
+  x = n(594174),
   M = n(626135),
   k = n(768581),
   j = n(900849),
@@ -92,7 +92,7 @@ function q(e, t) {
 let Q = 32,
   X = 12,
   J = () => ({
-    page: null != (0, l.e7)([x.Z], () => x.Z.getGuildId()) ? Z.ZY5.GUILD_CHANNEL : Z.ZY5.DM_CHANNEL,
+    page: null != (0, l.e7)([L.Z], () => L.Z.getGuildId()) ? Z.ZY5.GUILD_CHANNEL : Z.ZY5.DM_CHANNEL,
     section: Z.jXE.EMOJI_UPSELL_POPOUT
   }),
   $ = e => {
@@ -101,7 +101,7 @@ let Q = 32,
     } = e;
     (0, O.u)({
       emojiId: t.emojiId,
-      currentGuildId: x.Z.getGuildId()
+      currentGuildId: L.Z.getGuildId()
     });
     let n = (0, C.Z)(t.name);
     return (0, r.jsx)(c.V, {
@@ -276,7 +276,7 @@ let Q = 32,
       guildEmoji: D,
       demoMode: k = !1,
       nonce: j
-    } = e, Y = (0, l.e7)([L.default], () => L.default.getCurrentUser()), K = (0, l.e7)([x.Z], () => x.Z.getGuildId()), z = U.ZP.isPremium(Y), q = null != K && (K === (null == S ? void 0 : S.id) || K === (null == I ? void 0 : I.id)), Q = null != I, X = null !== (t = null == S ? void 0 : S.isDiscoverable()) && void 0 !== t && t;
+    } = e, Y = (0, l.e7)([x.default], () => x.default.getCurrentUser()), K = (0, l.e7)([L.Z], () => L.Z.getGuildId()), z = U.ZP.isPremium(Y), q = null != K && (K === (null == S ? void 0 : S.id) || K === (null == I ? void 0 : I.id)), Q = null != I, X = null !== (t = null == S ? void 0 : S.isDiscoverable()) && void 0 !== t && t;
     k && (z = !0, X = !0, Q = !1, q = !1);
     let $ = J(),
       {
@@ -307,7 +307,7 @@ let Q = 32,
     }, {
       disableTrack: !et
     });
-    let es = x.Z.getGuildId(),
+    let es = L.Z.getGuildId(),
       el = (0, G.a)({
         sourceType: g,
         expressionSourceApplication: b,

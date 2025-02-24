@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  f: () => L
+  f: () => x
 });
 var r = n(368762),
   i = n(159796),
@@ -33,8 +33,8 @@ var r = n(368762),
   P = n(6061),
   w = n(137602),
   D = n(811691),
-  x = n(499669),
-  L = {
+  L = n(499669),
+  x = {
     G: new r.z,
     y: new i.q,
     Y: new o.x,
@@ -65,5 +65,5 @@ var r = n(368762),
     X: new P.F,
     x: new w.g,
     t: new D.l,
-    T: new x.T
+    T: new L.T
   }

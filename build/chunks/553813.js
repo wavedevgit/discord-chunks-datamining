@@ -205,13 +205,13 @@ function D(e, t, n) {
   return R(t, e, n)
 }
 
-function x(e, n) {
+function L(e, n) {
   return e.sort(function(e, r) {
     return t.compareBuild(e, r, n)
   })
 }
 
-function L(e, n) {
+function x(e, n) {
   return e.sort(function(e, r) {
     return t.compareBuild(r, e, n)
   })
@@ -277,7 +277,7 @@ function F(e, t) {
   if (!(this instanceof F)) return new F(e, t);
   r("comparator", e, t), this.options = t, this.loose = !!t.loose, this.parse(e), this.semver === V ? this.value = "" : this.value = this.operator + this.semver.version, r("comp", this)
 }
-t.rcompareIdentifiers = T, t.major = N, t.minor = A, t.patch = C, t.compare = R, t.compareLoose = P, t.compareBuild = w, t.rcompare = D, t.sort = x, t.rsort = L, t.gt = M, t.lt = k, t.eq = j, t.neq = U, t.gte = G, t.lte = B, t.cmp = Z, t.Comparator = F;
+t.rcompareIdentifiers = T, t.major = N, t.minor = A, t.patch = C, t.compare = R, t.compareLoose = P, t.compareBuild = w, t.rcompare = D, t.sort = L, t.rsort = x, t.gt = M, t.lt = k, t.eq = j, t.neq = U, t.gte = G, t.lte = B, t.cmp = Z, t.Comparator = F;
 var V = {};
 
 function H(e, t) {

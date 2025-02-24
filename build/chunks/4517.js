@@ -70,7 +70,7 @@ function w(e, t) {
 
 function D(e, t) {
   if (null == e) return {};
-  var n, r, i = x(e, t);
+  var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -78,14 +78,14 @@ function D(e, t) {
   return i
 }
 
-function x(e, t) {
+function L(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let L = 1.25,
+let x = 1.25,
   M = 36,
   k = 144,
   j = 150,
@@ -160,18 +160,18 @@ function Z(e) {
     [A.biteSize]: _ === T.y0.BITE_SIZE,
     [A.fullSize]: _ === T.y0.FULL_SIZE,
     [A.panel]: _ === T.y0.PANEL
-  }, I = null != o ? L : 0, C = M + I, R = k + I, P = i.useRef(null), w = i.useRef(null), D = i.useRef(null), x = i.useRef(C), B = i.useRef(R), Z = null != o && null == p, [F, V] = i.useState(!1), [H, W] = i.useState(!0), [Y, K] = i.useState(!Z && b), z = !Z && b && F;
+  }, I = null != o ? x : 0, C = M + I, R = k + I, P = i.useRef(null), w = i.useRef(null), D = i.useRef(null), L = i.useRef(C), B = i.useRef(R), Z = null != o && null == p, [F, V] = i.useState(!1), [H, W] = i.useState(!0), [Y, K] = i.useState(!Z && b), z = !Z && b && F;
   i.useLayoutEffect(() => {
     if (V(!0), null == w.current || null == D.current || !z) return;
     let e = w.current.getBoundingClientRect().height,
       t = D.current.getBoundingClientRect().height;
-    K(t > e), x.current = e, B.current = t
+    K(t > e), L.current = e, B.current = t
   }, [z, p, o]);
   let q = (0, l.e7)([d.Z], () => d.Z.useReducedMotion),
     [Q] = i.useState(() => new c.V7);
   i.useEffect(() => () => Q.stop(), [Q]);
   let [X, J] = (0, u.q_F)(() => ({
-    maxHeight: "".concat(x.current, "px"),
+    maxHeight: "".concat(L.current, "px"),
     config: {
       clamp: !0,
       duration: j
@@ -185,7 +185,7 @@ function Z(e) {
         duration: q ? 0 : j
       }
     }) : J({
-      maxHeight: "".concat(Math.min(x.current, C), "px"),
+      maxHeight: "".concat(Math.min(L.current, C), "px"),
       delay: 0
     }), q ? W(!e) : Q.start(e ? G : U, () => W(!e)))
   }, ee = null != o ? (0, r.jsx)(f.Z, {
@@ -332,7 +332,7 @@ function V(e) {
   }, [f, p, t, n]);
   let [N, C] = i.useState(!1), P = i.useCallback(e => {
     (e || !g) && C(e)
-  }, [g]), x = () => {
+  }, [g]), L = () => {
     if (null == t) return n;
     let e = null != t.id ? "`" + ":".concat(t.name, ":") + "`" : m.ZP.translateSurrogatesToInlineEmoji(t.name);
     return null == n ? e : "".concat(e, " ").concat(n)
@@ -342,7 +342,7 @@ function V(e) {
     guildId: a,
     channelId: s,
     profileType: l,
-    sourceDetails: x(),
+    sourceDetails: L(),
     sourceType: T.n_.STATUS,
     onAction: u,
     onClose: () => C(!1),

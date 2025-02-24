@@ -63,7 +63,7 @@ let T = !1,
   D = e => {
     r = void 0
   },
-  x = e => {
+  L = e => {
     let {
       channelId: t,
       guildId: n
@@ -73,7 +73,7 @@ let T = !1,
     null != i && (0, m.zi)(i.type) && (A = !0)
   };
 
-function L() {
+function x() {
   k()
 }
 
@@ -155,6 +155,6 @@ let Z = new B(l.Z, {
   CLIENT_THEMES_EDITOR_OPEN: P,
   CLIENT_THEMES_EDITOR_CLOSE: w,
   RESET_PREVIEW_CLIENT_THEME: D,
-  CHANNEL_SELECT: x,
-  LOGOUT: L
+  CHANNEL_SELECT: L,
+  LOGOUT: x
 })

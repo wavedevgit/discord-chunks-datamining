@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(626135),
   w = n(960870),
   D = n(139793),
-  x = n(510659),
-  L = n(287954),
+  L = n(510659),
+  x = n(287954),
   M = n(660579),
   k = n(652853),
   j = n(64621),
@@ -67,7 +67,7 @@ function J(e) {
   } = (0, k.z)(), {
     interactionSource: er,
     interactionSourceId: ei
-  } = (0, x.Xo)(), eo = {
+  } = (0, L.Xo)(), eo = {
     [q.fullSize]: et === W.y0.FULL_SIZE,
     [z.fullSize]: et === W.y0.FULL_SIZE
   }, {
@@ -239,7 +239,7 @@ function J(e) {
     children: (0, r.jsx)(j.Z, {
       sourceType: W.n_.ACTIVITY,
       user: t,
-      children: (0, r.jsx)(L.Z, {
+      children: (0, r.jsx)(x.Z, {
         user: t,
         guildId: ee,
         profileType: et,

@@ -69,8 +69,8 @@ let A = new f.Z("GuildMemberStore"),
   P = {},
   w = {},
   D = {},
-  x = !1,
-  L = 0,
+  L = !1,
+  x = 0,
   M = 0,
   k = {},
   j = {},
@@ -97,7 +97,7 @@ function B(e, t) {
 }
 
 function Z(e) {
-  L += 1, k[e] = L
+  x += 1, k[e] = x
 }
 
 function F(e) {
@@ -199,7 +199,7 @@ function K(e) {
 }
 
 function z(e) {
-  x ? x = !1 : (C = {}, R = {}), D = {}, Q(e)
+  L ? L = !1 : (C = {}, R = {}), D = {}, Q(e)
 }
 
 function q(e) {
@@ -233,7 +233,7 @@ function J(e) {
     guildMembers: t,
     guilds: n
   } = e;
-  x = !0, C = I({}, t), R = {}, w = {}, ee(n)
+  L = !0, C = I({}, t), R = {}, w = {}, ee(n)
 }
 
 function $(e) {
@@ -258,9 +258,9 @@ function ee(e) {
 function et(e) {
   var t, n;
   if (null == e.guildId || null == y.Z.getGuild(e.guildId)) return !1;
-  x = !0, C[e.guildId] = null !== (t = C[e.guildId]) && void 0 !== t ? t : {};
+  L = !0, C[e.guildId] = null !== (t = C[e.guildId]) && void 0 !== t ? t : {};
   let r = !1;
-  for (let t of (x = !0, C[e.guildId] = null !== (n = C[e.guildId]) && void 0 !== n ? n : {}, e.members)) null == C[e.guildId][t.userId] && (r = !0, C[e.guildId][t.userId] = t);
+  for (let t of (L = !0, C[e.guildId] = null !== (n = C[e.guildId]) && void 0 !== n ? n : {}, e.members)) null == C[e.guildId][t.userId] && (r = !0, C[e.guildId][t.userId] = t);
   return r
 }
 
@@ -749,7 +749,7 @@ class eR extends(r = s.ZP.Store) {
     return D
   }
   getCommunicationDisabledVersion() {
-    return L
+    return x
   }
   getPendingRoleUpdates(e) {
     var t;

@@ -68,7 +68,7 @@ function P(e, t) {
 }
 
 function w(e, t) {
-  let n = t === S.PZ.PUBLIC ? T.NW.string(T.t.op2cJy) : T.NW.string(T.t.TME4LC);
+  let n = t === S.PZ.PUBLIC ? T.NW.string(T.t.op2cJy) : t === S.PZ.APPLY_TO_JOIN ? T.NW.string(T.t.YwZfbm) : T.NW.string(T.t.TME4LC);
   switch (e) {
     case O.Q.STAFF:
       return {
@@ -88,7 +88,7 @@ function w(e, t) {
       };
     case O.Q.COMMUNITY:
       return {
-        tooltipTitle: T.NW.string(T.t.K7iRio), tooltipDescription: T.NW.string(T.t.TME4LC)
+        tooltipTitle: T.NW.string(T.t.K7iRio), tooltipDescription: n
       };
     case O.Q.DISCOVERABLE:
       return {
@@ -157,7 +157,7 @@ let D = {
   [O.Q.NONE]: {}
 };
 
-function x(e) {
+function L(e) {
   let {
     guildTraits: t
   } = e;
@@ -187,7 +187,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     badgeType: t,
     guildTraits: n
@@ -212,7 +212,7 @@ function L(e) {
         variant: "text-xs/medium",
         children: a
       }) : null]
-    }), n.premium ? (0, r.jsx)(x, {
+    }), n.premium ? (0, r.jsx)(L, {
       guildTraits: n
     }) : null]
   })
@@ -230,7 +230,7 @@ function M(e) {
       badgeColor: A,
       size: R = 16,
       disableBoostClick: w,
-      "aria-label": x = !1
+      "aria-label": L = !1
     } = e,
     M = (0, s.e7)([E.default, g.ZP], () => {
       let e = E.default.getCurrentUser();
@@ -255,8 +255,8 @@ function M(e) {
     return null == e ? null : (0, r.jsx)(u.ua7, {
       color: l,
       position: p,
-      "aria-label": x,
-      text: (0, r.jsx)(L, {
+      "aria-label": L,
+      text: (0, r.jsx)(x, {
         badgeType: U,
         guildTraits: j
       }),
@@ -290,8 +290,8 @@ function M(e) {
   return (0, r.jsx)(u.ua7, {
     color: l,
     position: p,
-    "aria-label": x,
-    text: (0, r.jsx)(L, {
+    "aria-label": L,
+    text: (0, r.jsx)(x, {
       badgeType: U,
       guildTraits: j
     }),

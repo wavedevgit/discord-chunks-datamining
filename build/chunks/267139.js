@@ -140,7 +140,7 @@ function D(e, t, i, o, a) {
   return l
 }
 
-function x(e, t, n) {
+function L(e, t, n) {
   if (null == e) return e;
   var r = [],
     i = 0;
@@ -149,7 +149,7 @@ function x(e, t, n) {
   }), r
 }
 
-function L(e) {
+function x(e) {
   if (-1 === e._status) {
     var t = e._result;
     (t = t()).then(function(t) {
@@ -177,20 +177,20 @@ function U() {
   throw Error("act(...) is not supported in production builds of React.")
 }
 t.Children = {
-  map: x,
+  map: L,
   forEach: function(e, t, n) {
-    x(e, function() {
+    L(e, function() {
       t.apply(this, arguments)
     }, n)
   },
   count: function(e) {
     var t = 0;
-    return x(e, function() {
+    return L(e, function() {
       t++
     }), t
   },
   toArray: function(e) {
-    return x(e, function(e) {
+    return L(e, function(e) {
       return e
     }) || []
   },
@@ -256,7 +256,7 @@ t.Children = {
       _status: -1,
       _result: e
     },
-    _init: L
+    _init: x
   }
 }, t.memo = function(e, t) {
   return {

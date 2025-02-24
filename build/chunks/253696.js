@@ -83,7 +83,7 @@ function v(e) {
     }),
     {
       visibleTopEmojis: D,
-      visibleNewlyAddedEmojis: x
+      visibleNewlyAddedEmojis: L
     } = (0, d.J)({
       topEmojis: P,
       newlyAddedEmojis: w,
@@ -105,8 +105,8 @@ function v(e) {
     num_custom_expressions_total: R,
     num_expressions_top_server: D.length,
     num_animated_expressions_top_server: D.filter(e => e.animated).length,
-    num_expressions_newly_added: x.length,
-    num_animated_expressions_newly_added: x.filter(e => e.animated).length
+    num_expressions_newly_added: L.length,
+    num_animated_expressions_newly_added: L.filter(e => e.animated).length
   }, n === _.Hz.REACTION && {
     is_burst: E
   }, null != v && {

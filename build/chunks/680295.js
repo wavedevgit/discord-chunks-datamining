@@ -61,8 +61,8 @@ let y = e => {
       accessibilityLabel: R
     } = v, [P, w] = i.useState(-y), {
       stop: D,
-      reset: x,
-      ticking: L
+      reset: L,
+      ticking: x
     } = (0, f.Z)(e => {
       w(t => t + e)
     }), M = i.useRef(y);
@@ -80,8 +80,8 @@ let y = e => {
     }, [C, S]);
     let [k, j] = i.useState(!1);
     return i.useEffect(() => {
-      !0 === c || s || (D(), w(0)), !s && k && L.current && (D(), w(0)), o && s && !L.current && (x(), v.animationType === d.Q.PERSISTENT ? w(h === d.j.FromStart ? 0 : T) : w(0))
-    }, [s, k, T, o, D, x, L, v.animationType, c, h]), (0, r.jsx)("div", {
+      !0 === c || s || (D(), w(0)), !s && k && x.current && (D(), w(0)), o && s && !x.current && (L(), v.animationType === d.Q.PERSISTENT ? w(h === d.j.FromStart ? 0 : T) : w(0))
+    }, [s, k, T, o, D, L, x, v.animationType, c, h]), (0, r.jsx)("div", {
       ref: O,
       className: a()(E.profileEffects, {
         [E.hovered]: s && l
@@ -89,7 +89,7 @@ let y = e => {
       children: (0, r.jsx)("div", {
         className: b ? E.innerNoRadius : E.inner,
         children: S.map((e, i) => {
-          if (!L.current && v.animationType === d.Q.PERSISTENT && null != v.staticFrameSrc && 0 === i && !0 === c) {
+          if (!x.current && v.animationType === d.Q.PERSISTENT && null != v.staticFrameSrc && 0 === i && !0 === c) {
             var o, a, s, l;
             let {
               staticFrameSrc: n
@@ -107,7 +107,7 @@ let y = e => {
           return (0, r.jsx)(_.Z, {
             layerConfig: e,
             animationType: v.animationType,
-            ticking: L.current,
+            ticking: x.current,
             time: P,
             accessibilityLabel: R,
             hasPlayedThrough: k,

@@ -41,7 +41,7 @@ let m = e => {
     D = e => {
       null != e && e.preventDefault(), null == S || S(), null == I || I()
     },
-    x = () => {
+    L = () => {
       null == S || S(), null == T || T()
     };
   return null != g && "" !== g && (t = (0, r.jsx)(a.zx, {
@@ -59,7 +59,7 @@ let m = e => {
     autoFocus: !0,
     children: b
   })), null != y && "" !== y && (i = (0, r.jsx)(s.P, {
-    onClick: x,
+    onClick: L,
     className: h.minorContainer,
     children: (0, r.jsx)(u.x, {
       className: h.secondaryAction,

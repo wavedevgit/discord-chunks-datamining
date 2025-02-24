@@ -12,7 +12,7 @@ n.d(t, {
   C1: () => e8,
   C9: () => e7,
   Dr: () => eA,
-  FE: () => ex,
+  FE: () => eL,
   FI: () => ta,
   Fs: () => e9,
   GN: () => ed,
@@ -40,7 +40,7 @@ n.d(t, {
   b7: () => eW,
   dh: () => W,
   f$: () => tt,
-  f2: () => eL,
+  f2: () => ex,
   fY: () => e2,
   gI: () => e3,
   hQ: () => et,
@@ -106,7 +106,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -119,7 +119,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -131,7 +131,7 @@ function L(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -471,8 +471,8 @@ function ey(e, t) {
 }
 
 function eO(e, t) {
-  b.Z.captureException(e, M(x({}, t), {
-    tags: M(x({}, null == t ? void 0 : t.tags), {
+  b.Z.captureException(e, M(L({}, t), {
+    tags: M(L({}, null == t ? void 0 : t.tags), {
       app_context: "quests"
     })
   }))
@@ -543,7 +543,7 @@ function eD(e) {
   return r.type === c.w.REWARD_CODE ? r : null
 }
 
-function ex(e, t) {
+function eL(e, t) {
   let n = N.r.build(e.config).application.link;
   (0, v.q)({
     href: n,
@@ -558,7 +558,7 @@ function ex(e, t) {
     }
   })
 }
-let eL = (e, t) => {
+let ex = (e, t) => {
     (0, y._3)({
       questId: e,
       questContent: t.content,

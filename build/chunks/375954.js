@@ -33,7 +33,7 @@ var r, i = n(392711),
   w = n(594174),
   D = n(981631);
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,7 +41,7 @@ function x(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let L = new Set,
+let x = new Set,
   M = new d.Z("MessageStore"),
   k = !1;
 
@@ -51,7 +51,7 @@ function j() {
       ready: !1,
       loadingMore: !1
     }))
-  }), L.clear()
+  }), x.clear()
 }
 
 function U(e) {
@@ -89,7 +89,7 @@ function Z(e) {
   let {
     channelId: t
   } = e;
-  M.log("Clearing messages for ".concat(t)), c.Z.clear(t), L.clear()
+  M.log("Clearing messages for ".concat(t)), c.Z.clear(t), x.clear()
 }
 
 function F(e) {
@@ -143,7 +143,7 @@ function W(e) {
   let {
     message: t
   } = e;
-  null != t.nonce && L.add(t.nonce)
+  null != t.nonce && x.add(t.nonce)
 }
 
 function Y(e) {
@@ -151,11 +151,11 @@ function Y(e) {
     channelId: t,
     messageRecord: n
   } = e, r = null == n ? void 0 : n.nonce;
-  if (null != r && L.has(r)) {
+  if (null != r && x.has(r)) {
     let e = c.Z.getOrCreate(t),
       n = e.get(r);
     if (null == n) return;
-    e = (e = e.remove(r)).merge([n]), L.delete(r), c.Z.commit(e)
+    e = (e = e.remove(r)).merge([n]), x.delete(r), c.Z.commit(e)
   }
 }
 
@@ -170,7 +170,7 @@ function K(e) {
     return
   }
   if (!i.ready) return !1;
-  null != n.nonce && n.state !== D.yb.SENDING && L.has(n.nonce) && (i = i.remove(n.nonce), L.delete(n.nonce)), i = i.receiveMessage(n, !0 === S.Z.isAtBottom(t)), c.Z.commit(i)
+  null != n.nonce && n.state !== D.yb.SENDING && x.has(n.nonce) && (i = i.remove(n.nonce), x.delete(n.nonce)), i = i.receiveMessage(n, !0 === S.Z.isAtBottom(t)), c.Z.commit(i)
 }
 
 function z(e) {
@@ -198,7 +198,7 @@ function q(e) {
       revealedMessageId: null
     })
   }
-  r = r.remove(t), c.Z.commit(r), L.delete(t)
+  r = r.remove(t), c.Z.commit(r), x.delete(t)
 }
 
 function Q(e) {
@@ -218,7 +218,7 @@ function Q(e) {
     })
   }
   c.Z.commit(i), t.forEach(e => {
-    L.delete(e)
+    x.delete(e)
   })
 }
 
@@ -350,7 +350,7 @@ function eu(e) {
 function ed() {
   c.Z.forEach(e => {
     c.Z.clear(e.channelId)
-  }), L.clear()
+  }), x.clear()
 }
 
 function ef(e) {
@@ -435,7 +435,7 @@ class eh extends(r = a.ZP.Store) {
     return k
   }
 }
-x(eh, "displayName", "MessageStore");
+L(eh, "displayName", "MessageStore");
 let em = new eh(s.Z, {
   BACKGROUND_SYNC_CHANNEL_MESSAGES: U,
   CONNECTION_OPEN: j,

@@ -34,8 +34,8 @@ var r = n(200651),
   P = n(600164),
   w = n(299206),
   D = n(726721),
-  x = n(726521),
-  L = n(713938),
+  L = n(726521),
+  x = n(713938),
   M = n(973616),
   k = n(881998),
   j = n(592125),
@@ -146,7 +146,7 @@ let ec = e => {
     }, [t])
   },
   eu = (e, t, n) => {
-    (0, x.uu)({
+    (0, L.uu)({
       application: e,
       entrypoint: "authorized_apps_settings",
       contextualGuildId: t,
@@ -246,7 +246,7 @@ let ec = e => {
       autoTrackExposure: !0
     }).enabled, m = () => {
       let e = [];
-      for (let n of t) e.push(...(0, L.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(ee.NW.string(ee.t.Ls2XRk));
+      for (let n of t) e.push(...(0, x.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(ee.NW.string(ee.t.Ls2XRk));
       if (e.length > 0 || null != u && u.length > 0) return (0, r.jsx)(g.xJW, {
         faded: !0,
         title: ee.NW.string(ee.t.xrmhRU),
@@ -373,7 +373,7 @@ let ec = e => {
       autoTrackExposure: !0
     }).enabled, A = () => {
       let e = [];
-      for (let n of t) e.push(...(0, L.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(ee.NW.string(ee.t.Ls2XRk));
+      for (let n of t) e.push(...(0, x.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(ee.NW.string(ee.t.Ls2XRk));
       if (e.length > 0 || null != d && d.length > 0) return (0, r.jsxs)("div", {
         className: et.appDetailsSection,
         children: [(0, r.jsx)(g.X6q, {
@@ -452,7 +452,7 @@ let ec = e => {
           selectedChannelId: s
         })]
       })
-    }, x = e => {
+    }, L = e => {
       z.hW.updateAsync("applications", t => {
         E in t.appSettings ? null == t.appSettings[E].appDmSettings ? t.appSettings[E].appDmSettings = h.c$.create({
           dmDisabled: !e
@@ -489,7 +489,7 @@ let ec = e => {
         children: ee.NW.string(ee.t.YUU0RE)
       }), (0, r.jsx)(g.j7V, {
         hideBorder: !0,
-        onChange: x,
+        onChange: L,
         className: et.dmSettingsSwitch,
         note: ee.NW.string(ee.t.anBbIS),
         value: !O,

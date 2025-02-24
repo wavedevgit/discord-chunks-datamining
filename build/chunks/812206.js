@@ -176,7 +176,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     botUserId: t
   } = e, n = g.botUserIdToAppUsage[t];
@@ -185,7 +185,7 @@ function x(e) {
   }))
 }
 
-function L(e) {
+function x(e) {
   let {
     applicationIds: t
   } = e, n = !1;
@@ -358,7 +358,7 @@ let K = new Y(o.Z, {
   APPLICATION_FETCH_FAIL: A,
   APPLICATIONS_FETCH: C,
   APPLICATIONS_FETCH_SUCCESS: P,
-  APPLICATIONS_FETCH_FAIL: L,
+  APPLICATIONS_FETCH_FAIL: x,
   APPLICATION_UPDATE: S,
   APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: M,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
@@ -373,7 +373,7 @@ let K = new Y(o.Z, {
   LOAD_MESSAGES_SUCCESS: F,
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: w,
   USER_PROFILE_FETCH_SUCCESS: D,
-  APP_DM_OPEN: x,
+  APP_DM_OPEN: L,
   USER_AUTHORIZED_APPS_UPDATE: H,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: W
 })

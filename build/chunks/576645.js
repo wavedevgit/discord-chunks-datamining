@@ -4,14 +4,14 @@ n.d(t, {
   J: () => M,
   Nt: () => V,
   Ou: () => G,
-  R2: () => x,
+  R2: () => L,
   T$: () => w,
   Uu: () => k,
   ZC: () => F,
   Zm: () => D,
   bK: () => j,
   mx: () => U,
-  t6: () => L,
+  t6: () => x,
   tv: () => B,
   vY: () => Z
 }), n(47120);
@@ -81,7 +81,7 @@ let C = 35e5,
     return i && o && r.length > 0
   };
 
-function x(e) {
+function L(e) {
   let [t, n, i] = (0, s.Wu)([y.Z], () => [y.Z.isFetchingPrice(e), y.Z.getPrice(e), y.Z.getErrored(e)]);
   return (0, r.useEffect)(() => {
     t || null != n || i || (0, b.Gq)(e)
@@ -92,7 +92,7 @@ function x(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   let t = (0, S.V1)("Utils.tsx"),
     [n, i, o, a, l] = (0, s.Wu)([y.Z], () => [y.Z.isEntitlementFetched(e), y.Z.fetchPotionCount(e), y.Z.isEntitlementFetching(e), y.Z.getEntitlement(e), y.Z.getErrored(e)]);
   return (0, r.useEffect)(() => {
@@ -177,6 +177,6 @@ let V = () => {
   let {
     entitlement: e,
     numPotions: t
-  } = L(O.D1);
+  } = x(O.D1);
   return null != e && e.type === N.qc2.PURCHASE && null != t && t > 0
 }

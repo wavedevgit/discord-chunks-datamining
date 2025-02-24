@@ -58,14 +58,14 @@ function D(e) {
   }))
 }
 
-function x(e) {
+function L(e) {
   let t = R[e];
   if (null != t) return t;
   let n = _.Z.getChannel(e);
-  return null != n && n.isGuildStageVoice() && (D(n.guild_id), M(n)) ? L(e) : null
+  return null != n && n.isGuildStageVoice() && (D(n.guild_id), M(n)) ? x(e) : null
 }
 
-function L(e) {
+function x(e) {
   let t = R[e];
   return null == t && (t = new O.ZP(e), R[e] = t, t.rebuild()), t
 }
@@ -82,7 +82,7 @@ function k(e, t) {
 function j(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : w();
   return t.reduce((t, n) => {
-    let r = L(n);
+    let r = x(n);
     return e(r) ? (k(n, r), !0) : t
   }, !1)
 }
@@ -133,7 +133,7 @@ function H(e) {
 
 function W(e) {
   let t = !1;
-  for (let n of w(e.guildId)) t = L(n).rebuild() || t;
+  for (let n of w(e.guildId)) t = x(n).rebuild() || t;
   return t
 }
 
@@ -211,23 +211,23 @@ class et extends(r = l.ZP.Store) {
   }
   getParticipantsVersion(e) {
     var t, n;
-    return null == e ? -1 : null !== (n = null === (t = x(e)) || void 0 === t ? void 0 : t.version) && void 0 !== n ? n : -1
+    return null == e ? -1 : null !== (n = null === (t = L(e)) || void 0 === t ? void 0 : t.version) && void 0 !== n ? n : -1
   }
   getMutableParticipants(e, t) {
     var n, r;
-    return null == e ? ee : null !== (r = null === (n = x(e)) || void 0 === n ? void 0 : n.toArray(t)) && void 0 !== r ? r : ee
+    return null == e ? ee : null !== (r = null === (n = L(e)) || void 0 === n ? void 0 : n.toArray(t)) && void 0 !== r ? r : ee
   }
   getMutableRequestToSpeakParticipants(e) {
     var t, n;
-    return null !== (n = null === (t = x(e)) || void 0 === t ? void 0 : t.getRequestToSpeakParticipants()) && void 0 !== n ? n : ee
+    return null !== (n = null === (t = L(e)) || void 0 === t ? void 0 : t.getRequestToSpeakParticipants()) && void 0 !== n ? n : ee
   }
   getRequestToSpeakParticipantsVersion(e) {
     var t, n;
-    return null !== (n = null === (t = x(e)) || void 0 === t ? void 0 : t.requestToSpeakVersion) && void 0 !== n ? n : -1
+    return null !== (n = null === (t = L(e)) || void 0 === t ? void 0 : t.requestToSpeakVersion) && void 0 !== n ? n : -1
   }
   getParticipantCount(e, t) {
     var n, r;
-    return null !== (r = null === (n = x(e)) || void 0 === n ? void 0 : n.size(t)) && void 0 !== r ? r : 0
+    return null !== (r = null === (n = L(e)) || void 0 === n ? void 0 : n.size(t)) && void 0 !== r ? r : 0
   }
   getChannels(e) {
     return D(null != e ? e : N), A.values(null != e ? e : N)
@@ -237,7 +237,7 @@ class et extends(r = l.ZP.Store) {
   }
   getParticipant(e, t) {
     var n, r;
-    return null !== (r = null === (n = x(e)) || void 0 === n ? void 0 : n.getParticipant(t)) && void 0 !== r ? r : null
+    return null !== (r = null === (n = L(e)) || void 0 === n ? void 0 : n.getParticipant(t)) && void 0 !== r ? r : null
   }
 }
 T(et, "displayName", "StageChannelParticipantStore");

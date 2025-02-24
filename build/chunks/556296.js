@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Ek: () => x,
+  Ek: () => L,
   ZP: () => es
 }), n(653041), n(47120), n(757143), n(301563);
 var i, o = n(879443),
@@ -68,7 +68,7 @@ function w(e, t) {
   }), e
 }
 let D = new m.Z("KeybindsStore"),
-  x = {
+  L = {
     id: "1000",
     action: I.kg4.TOGGLE_MUTE,
     shortcut: (0, O.Kd)("mod+shift+m"),
@@ -76,7 +76,7 @@ let D = new m.Z("KeybindsStore"),
     managed: !0,
     params: {}
   },
-  L = {
+  x = {
     id: "1001",
     action: I.kg4.TOGGLE_OVERLAY_INPUT_LOCK,
     shortcut: (0, O.Kd)("shift+`"),
@@ -94,10 +94,10 @@ let D = new m.Z("KeybindsStore"),
 
 function F(e) {
   switch (e) {
-    case x.id:
-      return x;
     case L.id:
       return L;
+    case x.id:
+      return x;
     default:
       return k[e]
   }
@@ -114,12 +114,12 @@ function H() {
   } = g.Z.getCurrentConfig({
     location: "KeybindsStore"
   });
-  null == f().find(k, e => x.action === e.action && e.enabled && e.shortcut.length > 0) && !__OVERLAY__ && !B && U && e && (q(x), B = !0)
+  null == f().find(k, e => L.action === e.action && e.enabled && e.shortcut.length > 0) && !__OVERLAY__ && !B && U && e && (q(L), B = !0)
 }
 
 function W() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-  (B || e) && (z(x.id), B = !1)
+  (B || e) && (z(L.id), B = !1)
 }
 
 function Y(e) {
@@ -301,7 +301,7 @@ h.Z.setGetKeybindList(() => {
   } = g.Z.getCurrentConfig({
     location: "KeybindsStore"
   });
-  return t && e.push((0, O.BB)(x.shortcut)), e
+  return t && e.push((0, O.BB)(L.shortcut)), e
 });
 class ea extends(i = p.ZP.DeviceSettingsStore) {
   initialize(e) {
@@ -332,11 +332,11 @@ class ea extends(i = p.ZP.DeviceSettingsStore) {
         location: "KeybindsStore"
       }),
       i = f().find(k, r => r.action === e && (!t || r.managed) && (!n || r.shortcut.length > 0 && r.enabled));
-    return null != i ? i : r && e === I.kg4.TOGGLE_MUTE ? x : null
+    return null != i ? i : r && e === I.kg4.TOGGLE_MUTE ? L : null
   }
   getOverlayKeybind() {
     let e = this.getKeybindForAction(I.kg4.TOGGLE_OVERLAY_INPUT_LOCK, !0);
-    return null != e ? e : L
+    return null != e ? e : x
   }
   getOverlayChatKeybind() {
     return this.getKeybindForAction(I.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, !0)

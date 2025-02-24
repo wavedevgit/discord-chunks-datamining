@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => L
+  Z: () => x
 }), n(757143), n(301563), n(47120);
 var r, i = n(442837),
   o = n(377108),
@@ -163,7 +163,7 @@ function D(e) {
   } = e;
   S = t
 }
-class x extends(r = i.ZP.Store) {
+class L extends(r = i.ZP.Store) {
   getAnalyticsID() {
     return m
   }
@@ -189,8 +189,8 @@ class x extends(r = i.ZP.Store) {
     return S
   }
 }
-c(x, "displayName", "GIFPickerViewStore");
-let L = new x(a.Z, {
+c(L, "displayName", "GIFPickerViewStore");
+let x = new L(a.Z, {
   GIF_PICKER_INITIALIZE: I,
   GIF_PICKER_QUERY: T,
   GIF_PICKER_QUERY_SUCCESS: C,

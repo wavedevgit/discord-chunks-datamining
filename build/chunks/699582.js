@@ -439,7 +439,7 @@ function D(e) {
   return t
 }
 
-function x(e, t) {
+function L(e, t) {
   for (var n = t;;) {
     if (d.call(e, n) > -1) return n;
     var r = n.lastIndexOf("-");
@@ -448,11 +448,11 @@ function x(e, t) {
   }
 }
 
-function L(e, t) {
+function x(e, t) {
   for (var n, r = 0, i = t.length; r < i && !n;) {
     var o = t[r],
       a = String(o).replace(T, ""),
-      n = x(e, a);
+      n = L(e, a);
     r++
   }
   var s = new ef;
@@ -467,12 +467,12 @@ function L(e, t) {
 }
 
 function M(e, t) {
-  return L(e, t)
+  return x(e, t)
 }
 
 function k(e, t, n, r, i) {
   if (0 === e.length) throw ReferenceError("No locale data has been provided for this object yet.");
-  if ("lookup" === n["[[localeMatcher]]"]) var o = L(e, t);
+  if ("lookup" === n["[[localeMatcher]]"]) var o = x(e, t);
   else var o = M(e, t);
   var a = o["[[locale]]"];
   if (c.call(o, "[[extension]]")) var s = o["[[extension]]"],
@@ -514,7 +514,7 @@ function k(e, t, n, r, i) {
 function j(e, t) {
   for (var n = t.length, r = new ep, i = 0; i < n;) {
     var o = t[i];
-    void 0 !== x(e, String(o).replace(T, "")) && h.call(r, o), i++
+    void 0 !== L(e, String(o).replace(T, "")) && h.call(r, o), i++
   }
   return p.call(r)
 }

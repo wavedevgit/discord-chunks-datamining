@@ -34,7 +34,7 @@ var r = n(200651),
   w = n(368365),
   D = n(700241);
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -43,14 +43,14 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -103,7 +103,7 @@ function U(e) {
       guildId: i,
       channelId: o
     }),
-    renderPopout: e => (0, r.jsx)(I.Z, k(L({}, e), {
+    renderPopout: e => (0, r.jsx)(I.Z, k(x({}, e), {
       userId: t.userId,
       guildId: i,
       channelId: o,
@@ -114,7 +114,7 @@ function U(e) {
       let {
         isShown: u
       } = o;
-      return (0, r.jsx)(p.Z, L({
+      return (0, r.jsx)(p.Z, x({
         selected: u,
         colorString: t.colorString,
         colorRoleName: a.name,
@@ -129,7 +129,7 @@ function U(e) {
             let {
               default: e
             } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("59409")]).then(n.bind(n, 757387));
-            return t => (0, r.jsx)(e, k(L({}, t), {
+            return t => (0, r.jsx)(e, k(x({}, t), {
               user: l,
               guildId: i,
               channel: c,
@@ -185,7 +185,7 @@ function G(e) {
     title: h.name,
     count: m
   });
-  return (0, r.jsx)("div", k(L({
+  return (0, r.jsx)("div", k(x({
     className: w.rolePopout,
     ref: s
   }, t), {
@@ -222,7 +222,7 @@ function B(e) {
     inlinePreview: f = !1
   } = e, {
     analyticsLocations: p
-  } = (0, g.ZP)(m.Z.ROLE_MENTION), _ = (0, u.e7)([h.Z], () => h.Z.roleStyle), E = null != t && 0 !== t && !f, v = E && "dot" === _, b = e => (0, r.jsxs)(O.Z, k(L({
+  } = (0, g.ZP)(m.Z.ROLE_MENTION), _ = (0, u.e7)([h.Z], () => h.Z.roleStyle), E = null != t && 0 !== t && !f, v = E && "dot" === _, b = e => (0, r.jsxs)(O.Z, k(x({
     className: a()(w.roleMention),
     color: "username" === _ && E ? t : null
   }, e), {

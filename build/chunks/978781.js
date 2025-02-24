@@ -57,7 +57,7 @@ var D = function(e) {
   return e[e.CLIENT_THEMES = 0] = "CLIENT_THEMES", e[e.APP_ICONS = 1] = "APP_ICONS", e
 }({});
 
-function x(e) {
+function L(e) {
   let {
     isCoachmark: t
   } = e, n = (0, v.q)();
@@ -70,7 +70,7 @@ function x(e) {
   })
 }
 
-function L() {
+function x() {
   let e = (0, m.Z)();
   return i.useEffect(() => {
     (0, p.nJ)(), e()
@@ -210,9 +210,9 @@ function k(e) {
         })]
       }), (0, r.jsxs)(c.Ttm, {
         className: R.scrollContainer,
-        children: [0 === a && (0, r.jsx)(x, {
+        children: [0 === a && (0, r.jsx)(L, {
           isCoachmark: o
-        }), 1 === a && (0, r.jsx)(L, {})]
+        }), 1 === a && (0, r.jsx)(x, {})]
       }), (0, r.jsx)(M, {
         tab: a,
         isPreview: m,

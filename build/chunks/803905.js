@@ -11,7 +11,7 @@ n.d(t, {
   O8: () => D,
   Pl: () => S,
   Ry: () => N,
-  Uw: () => L,
+  Uw: () => x,
   ZE: () => k,
   _G: () => y,
   _O: () => T,
@@ -24,7 +24,7 @@ n.d(t, {
   ks: () => V,
   lX: () => b,
   m_: () => h,
-  qH: () => x,
+  qH: () => L,
   tj: () => E,
   uw: () => C,
   wN: () => B,
@@ -83,8 +83,8 @@ let _ = new p(r.q.ANIMATED_EMOJIS),
   P = new p("freeBoosts"),
   w = new p(r.q.STREAM_MID_QUALITY),
   D = new p(r.q.STREAM_HIGH_QUALITY),
-  x = new p(r.q.CUSTOM_NOTIFICATION_SOUNDS),
-  L = new p("fancyVoiceChannelReactions"),
+  L = new p(r.q.CUSTOM_NOTIFICATION_SOUNDS),
+  x = new p("fancyVoiceChannelReactions"),
   M = new p("installPremiumApplications"),
   k = new p("redeemPremiumPerks"),
   j = new p(r.q.VIDEO_FILTER_ASSETS);
@@ -95,8 +95,8 @@ let U = new p(r.q.INCREASED_GUILD_LIMIT),
   Z = new p("uploadLargeFiles"),
   F = Object.freeze({
     [c.Si.TIER_0]: new l.Z(c.Si.TIER_0, [_, h, m, S, j, B, Z, A]),
-    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [_, h, b, y, S, R, w, L, B, Z, A]),
-    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [_, h, m, g, E, b, y, O, S, I, C, R, P, w, D, L, M, k, j, U, G, B, Z, A, T, x, v, N])
+    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [_, h, b, y, S, R, w, x, B, Z, A]),
+    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [_, h, m, g, E, b, y, O, S, I, C, R, P, w, D, x, M, k, j, U, G, B, Z, A, T, L, v, N])
   });
 
 function V(e, t) {

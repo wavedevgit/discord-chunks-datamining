@@ -44,8 +44,8 @@ let P = e => {
   },
   w = i.memo(function(e) {
     let t, w, D, {
-        className: x,
-        emojiGrid: L,
+        className: L,
+        emojiGrid: x,
         guildId: M,
         pickerIntention: k,
         channel: j
@@ -64,8 +64,8 @@ let P = e => {
           rowIndex: t,
           columnIndex: n
         } = G;
-        return null === (e = L[t]) || void 0 === e ? void 0 : e[n]
-      }, [L, G]);
+        return null === (e = x[t]) || void 0 === e ? void 0 : e[n]
+      }, [x, G]);
     switch (null == B ? void 0 : B.type) {
       case I.ld.EMOJI:
         t = null == B ? void 0 : B.emoji;
@@ -161,7 +161,7 @@ let P = e => {
       guild: Z
     });
     return (0, r.jsx)(_.Z, {
-      className: x,
+      className: L,
       graphicPrimary: w,
       graphicSecondary: X,
       titlePrimary: D,

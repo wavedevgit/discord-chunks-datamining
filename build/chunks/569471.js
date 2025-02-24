@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => L
+  Z: () => x
 }), n(47120), n(789020);
 var r, i = n(392711),
   o = n.n(i),
@@ -76,7 +76,7 @@ function b(e) {
 function y(e) {
   let t = h[e];
   m.clearTimer(e), !0 === t.muted ? ((g = new Set(g)).add(e), m.setTimer(e, t.muteConfig, () => {
-    h[e].muted = !1, (g = new Set(g)).delete(e), x.emitChange()
+    h[e].muted = !1, (g = new Set(g)).delete(e), L.emitChange()
   }) && (h[e].muted = !1, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
 }
 
@@ -214,7 +214,7 @@ class D extends(r = a.ZP.Store) {
   }
 }
 d(D, "displayName", "JoinedThreadsStore");
-let x = new D(s.Z, {
+let L = new D(s.Z, {
     CONNECTION_OPEN: O,
     OVERLAY_INITIALIZE: S,
     GUILD_CREATE: I,
@@ -230,4 +230,4 @@ let x = new D(s.Z, {
     THREAD_MEMBER_LOCAL_UPDATE: P,
     THREAD_MEMBERS_UPDATE: w
   }),
-  L = x
+  x = L

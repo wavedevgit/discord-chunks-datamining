@@ -34,8 +34,8 @@ var r = n(200651),
   P = n(981631),
   w = n(674563),
   D = n(524484),
-  x = n(388032),
-  L = n(748241);
+  L = n(388032),
+  x = n(748241);
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -138,8 +138,8 @@ let G = (0, C.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
     i.useEffect(() => {
       n && eD(!1)
     }, [n]);
-    let ex = (0, O.Fr)(H),
-      eL = null != ex && !eg && n && !ew,
+    let eL = (0, O.Fr)(H),
+      ex = null != eL && !eg && n && !ew,
       eM = () => {
         eb(!0)
       },
@@ -175,40 +175,40 @@ let G = (0, C.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
             voiceChannel: eT,
             animate: ev,
             hideEmoji: e,
-            hasQuest: null != ex,
-            textClassName: L.activityText
+            hasQuest: null != eL,
+            textClassName: x.activityText
           })
         }
         return null != eN ? (0, r.jsx)(_.Z, {
-          textClassName: L.activityText,
+          textClassName: x.activityText,
           entry: eN
         }) : null
       },
       eG = () => null != C && C && null == j ? (0, r.jsx)(l.ua7, {
-        text: null != M ? M : x.NW.string(x.t.pclUFB),
+        text: null != M ? M : L.NW.string(L.t.pclUFB),
         children: e => (0, r.jsx)(l.CEn, U(k({
           size: "md",
           color: "currentColor"
         }, e), {
-          className: L.ownerIcon
+          className: x.ownerIcon
         }))
       }) : null,
       eB = () => null == q ? null : (0, r.jsx)(l.ua7, {
-        text: x.NW.formatToPlainString(x.t.IWkAq6, {
+        text: L.NW.formatToPlainString(L.t.IWkAq6, {
           date: q
         }),
         children: e => (0, r.jsx)(l.P3F, {
           onClick: ea,
           tabIndex: -1,
           children: (0, r.jsx)(A.Z, U(k({}, e), {
-            className: L.premiumIcon
+            className: x.premiumIcon
           }))
         })
       }),
       eZ = () => {
         let e = (null == F ? void 0 : F.isClyde()) ? w.Hb.AI : w.Hb.BOT;
         return null != F && F.bot ? (0, r.jsx)(h.Z, {
-          className: L.botTag,
+          className: x.botTag,
           type: e,
           verified: F.isVerifiedBot()
         }) : null
@@ -245,18 +245,18 @@ let G = (0, C.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
           roleName: s,
           color: null != o ? o : void 0,
           name: null != Z ? Z : em,
-          className: L.name
+          className: x.name
         }), !ee && (0, r.jsx)(g.ZP, {
           primaryGuild: null == F ? void 0 : F.primaryGuild,
           userId: null == F ? void 0 : F.id,
           contextGuildId: X,
           disableGuildProfile: !0,
-          className: L.clanTag,
+          className: x.clanTag,
           profileViewedAnalytics: eH
         })]
       }),
       eY = e => (0, r.jsx)(S.Z, U(k({
-        quest: ex,
+        quest: eL,
         memberListItemRef: eE,
         applicationStream: W
       }, e), {
@@ -265,11 +265,11 @@ let G = (0, C.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       eK = Y === P.Skl.OFFLINE;
     return null == F ? (0, r.jsx)(m.Z, {
       avatarSize: l.EFr.SIZE_32,
-      className: L.placeholder
+      className: x.placeholder
     }) : (0, r.jsx)(l.yRy, {
       renderPopout: eY,
       position: "bottom",
-      shouldShow: eL,
+      shouldShow: ex,
       nudgeAlignIntoViewport: !1,
       useRawTargetDimensions: !0,
       animation: l.yRy.Animation.NONE,
@@ -277,10 +277,10 @@ let G = (0, C.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       children: () => (0, r.jsx)(E.Z, k({
         ref: eE,
         selected: n,
-        className: a()(L.member, J, {
-          [L.offline]: eK && !n
+        className: a()(x.member, J, {
+          [x.offline]: eK && !n
         }),
-        innerClassName: L.memberInner,
+        innerClassName: x.memberInner,
         onClick: ei,
         onKeyDown: er,
         onMouseDown: en,
@@ -289,12 +289,12 @@ let G = (0, C.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         onMouseLeave: ek,
         hovered: ev,
         name: null == j ? (0, r.jsx)("span", {
-          className: L.username,
+          className: x.username,
           children: eW()
         }) : (0, r.jsx)(l.ua7, {
           text: j,
           children: e => (0, r.jsx)("span", U(k({}, e), {
-            className: a()(L.username, L.lostPermission),
+            className: a()(x.username, x.lostPermission),
             children: eW()
           }))
         }),

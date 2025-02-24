@@ -64,13 +64,13 @@ function S(e, t, n) {
   let {
     channel: C,
     type: R
-  } = e, [P, w] = r.useState(() => (0, _.P)()), D = (0, i.Z)(), x = (0, o.e7)([u.ZP], () => {
+  } = e, [P, w] = r.useState(() => (0, _.P)()), D = (0, i.Z)(), L = (0, o.e7)([u.ZP], () => {
     if (null != e.guild) {
       var t;
       return null != u.ZP.getMember(null === (t = e.guild) || void 0 === t ? void 0 : t.id, g.fL)
     }
     return !1
-  }), L = (0, c.Ib)(e.guild, e.channel) && !x && !(0, c.g0)(e.guild), M = (0, o.e7)([u.ZP, p.default], () => {
+  }), x = (0, c.Ib)(e.guild, e.channel) && !L && !(0, c.g0)(e.guild), M = (0, o.e7)([u.ZP, p.default], () => {
     var e, t;
     let n = p.default.getCurrentUser();
     return null !== (t = null != C.guild_id && null != n ? null === (e = u.ZP.getMember(C.guild_id, n.id)) || void 0 === e ? void 0 : e.isPending : null) && void 0 !== t && t
@@ -97,7 +97,7 @@ function S(e, t, n) {
     activeCommandOption: G,
     canMentionUsers: null !== (T = null === (y = R.users) || void 0 === y ? void 0 : y.allowMentioning) && void 0 !== T && T,
     canMentionEveryone: k,
-    canMentionClyde: L,
+    canMentionClyde: x,
     hidePersonalInformation: j,
     hideMentionDescription: R === l.Ie.RULES_INPUT,
     emojiIntention: R === l.Ie.RULES_INPUT ? E.Hz.COMMUNITY_CONTENT : E.Hz.CHAT,

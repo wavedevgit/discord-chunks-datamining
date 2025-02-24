@@ -124,19 +124,19 @@ function T(e) {
     } = i.useContext(l.S),
     w = i.useContext(f.Z),
     D = T[A].impressionName,
-    x = E(m({}, T[A].impressionProperties), {
+    L = E(m({}, T[A].impressionProperties), {
       location_stack: N
     });
   w({
     type: a.ImpressionTypes.MODAL,
     name: D,
-    properties: x,
+    properties: L,
     _stackContext: {
       isSlide: !0
     }
   });
   let {
-    ref: L,
+    ref: x,
     width: M = 0,
     height: k = 0
   } = (0, u.Z)(A), j = m({}, y, I.springConfig, P.enabled ? {
@@ -187,7 +187,7 @@ function T(e) {
         opacity: e.value.to(e => 1 - Math.abs(e))
       };
       return (0, r.jsx)(o.animated.div, {
-        ref: t === A ? L : null,
+        ref: t === A ? x : null,
         style: m({
           position: "absolute",
           display: g,

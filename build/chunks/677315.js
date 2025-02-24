@@ -26,8 +26,8 @@ var r, i, o, a, s = n(67867),
   P = "Promise",
   w = C.CONSTRUCTOR,
   D = C.REJECTION_EVENT,
-  x = C.SUBCLASSING,
-  L = N.getterFor(P),
+  L = C.SUBCLASSING,
+  x = N.getterFor(P),
   M = N.set,
   k = A && A.prototype,
   j = A,
@@ -126,7 +126,7 @@ var r, i, o, a, s = n(67867),
   };
 if (w && (U = (j = function(e) {
     v(this, U), m(e), d(r, this);
-    var t = L(this);
+    var t = x(this);
     try {
       e(eo(es, t), eo(ea, t))
     } catch (e) {
@@ -144,19 +144,19 @@ if (w && (U = (j = function(e) {
       value: void 0
     })
   }).prototype = f(U, "then", function(e, t) {
-    var n = L(this),
+    var n = x(this),
       r = F(b(this, j));
     return n.parent = !0, r.ok = !g(e) || e, r.fail = g(t) && t, r.domain = c ? Z.domain : void 0, n.state === K ? n.reactions.add(r) : O(function() {
       $(r, n)
     }), r.promise
   }), i = function() {
     var e = new r,
-      t = L(e);
+      t = x(e);
     this.promise = e, this.resolve = eo(es, t), this.reject = eo(ea, t)
   }, R.f = F = function(e) {
     return e === j || e === o ? new i(e) : V(e)
   }, !l && g(A) && k !== Object.prototype)) {
-  a = k.then, x || f(k, "then", function(e, t) {
+  a = k.then, L || f(k, "then", function(e, t) {
     var n = this;
     return new j(function(e, t) {
       d(a, n, e, t)

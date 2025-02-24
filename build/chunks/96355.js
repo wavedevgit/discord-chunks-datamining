@@ -296,11 +296,11 @@
     }), this.length = c, this.partialLengths = u, this.curves = d
   }
 
-  function x(e, t, n, r) {
+  function L(e, t, n, r) {
     this.x0 = e, this.x1 = t, this.y0 = n, this.y1 = r
   }
 
-  function L(e, t) {
+  function x(e, t) {
     return Math.sqrt((e[0] - t[0]) * (e[0] - t[0]) + (e[1] - t[1]) * (e[1] - t[1]))
   }
 
@@ -309,7 +309,7 @@
   }
 
   function k(e, t) {
-    return 1e-9 > L(e, t)
+    return 1e-9 > x(e, t)
   }
 
   function j(e, t, n) {
@@ -425,7 +425,7 @@
     for (var n = e.length + t, r = e2(e) / t, i = 0, o = 0, a = r / 2; e.length < n;) {
       var s = e[i],
         l = e[(i + 1) % e.length],
-        c = L(s, l);
+        c = x(s, l);
       a <= o + c ? (e.splice(i + 1, 0, c ? M(s, l, (a - o) / c) : s.slice(0)), a += r) : (o += c, i++)
     }
   }
@@ -433,7 +433,7 @@
   function X(e, t) {
     void 0 === t && (t = 1 / 0);
     for (var n = 0; n < e.length; n++)
-      for (var r = e[n], i = n === e.length - 1 ? e[0] : e[n + 1]; L(r, i) > t;) i = M(r, i, .5), e.splice(n + 1, 0, i)
+      for (var r = e[n], i = n === e.length - 1 ? e[0] : e[n + 1]; x(r, i) > t;) i = M(r, i, .5), e.splice(n + 1, 0, i)
   }
 
   function J(e, t) {
@@ -793,7 +793,7 @@
     return Math.abs(o)
   }
 
-  function ex(e, t) {
+  function eL(e, t) {
     function n(e) {
       switch (e.type) {
         case "GeometryCollection":
@@ -855,7 +855,7 @@
     }
   }
 
-  function eL(e) {
+  function ex(e) {
     return function(t, n) {
       return tw(e(t), n)
     }
@@ -900,7 +900,7 @@
       var t = n[0],
         i = tP(n)[0][0],
         o = n[i],
-        a = ex(e, [t, o]);
+        a = eL(e, [t, o]);
       a.area = t.area + o.area, a.type = "Polygon", a.arcs = a.arcs[0], n.splice(i, 1), n.shift(), n.splice(r(n, a.area), 0, a)
     }();
     if (t > n.length) throw RangeError("Can't collapse topology into " + t + " pieces.");
@@ -937,7 +937,7 @@
   }
 
   function eG(e, t) {
-    var n = L(B(e), B(t));
+    var n = x(B(e), B(t));
     return n * n
   }
 
@@ -951,7 +951,7 @@
     void 0 === o && (o = !1);
     var a = J(e, r);
     a.length < t.length + 2 && Q(a, t.length + 2 - a.length);
-    var s, l = tx(a, t.length),
+    var s, l = tL(a, t.length),
       c = t.map(function(e) {
         return J(e, r)
       }),
@@ -1022,7 +1022,7 @@
       o = n.t0,
       a = n.t1,
       s = n.match,
-      l = s ? tL(e, t) : e.map(function(e, t) {
+      l = s ? tx(e, t) : e.map(function(e, t) {
         return t
       }),
       c = l.map(function(n, i) {
@@ -1097,7 +1097,7 @@
         s = 0;
       return r.map(function(i, l) {
         var c;
-        return l && (s += L(i, r[l - 1])), [Math.cos(c = a + 2 * Math.PI * (o ? s / o : l / r.length)) * n + e, Math.sin(c) * n + t]
+        return l && (s += x(i, r[l - 1])), [Math.cos(c = a + 2 * Math.PI * (o ? s / o : l / r.length)) * n + e, Math.sin(c) * n + t]
       })
     }
   }
@@ -1111,7 +1111,7 @@
       s < 0 && (s = 2 * Math.PI + s);
       var c = s / (2 * Math.PI);
       return i.map(function(o, s) {
-        s && (l += L(o, i[s - 1]));
+        s && (l += x(o, i[s - 1]));
         var u = eX((c + (a ? l / a : s / i.length)) % 1);
         return [e + u[0] * n, t + u[1] * r]
       })
@@ -1639,11 +1639,11 @@
     }
   };
   var tg = function(e, t, n, r) {
-    return new x(e, t, n, r)
+    return new L(e, t, n, r)
   };
-  x.prototype.getTotalLength = function() {
+  L.prototype.getTotalLength = function() {
     return Math.sqrt(Math.pow(this.x0 - this.x1, 2) + Math.pow(this.y0 - this.y1, 2))
-  }, x.prototype.getPointAtLength = function(e) {
+  }, L.prototype.getPointAtLength = function(e) {
     var t = e / Math.sqrt(Math.pow(this.x0 - this.x1, 2) + Math.pow(this.y0 - this.y1, 2)),
       n = (this.x1 - this.x0) * t,
       r = (this.y1 - this.y0) * t;
@@ -1651,13 +1651,13 @@
       x: this.x0 + n,
       y: this.y0 + r
     }
-  }, x.prototype.getTangentAtLength = function() {
+  }, L.prototype.getTangentAtLength = function() {
     var e = Math.sqrt((this.x1 - this.x0) * (this.x1 - this.x0) + (this.y1 - this.y0) * (this.y1 - this.y0));
     return {
       x: (this.x1 - this.x0) / e,
       y: (this.y1 - this.y0) / e
     }
-  }, x.prototype.getPropertiesAtLength = function(e) {
+  }, L.prototype.getPropertiesAtLength = function(e) {
     var t = this.getPointAtLength(e),
       n = this.getTangentAtLength();
     return {
@@ -1703,7 +1703,7 @@
     ty = function(e, t) {
       for (var n, r, i, o = e.length, a = 1 / 0, s = 0; s < o; s++) ! function(i) {
         r = 0, t.forEach(function(t, n) {
-          var a = L(e[(i + n) % o], t);
+          var a = x(e[(i + n) % o], t);
           r += a * a
         }), r < a && (a = r, n = i)
       }(s);
@@ -1880,7 +1880,7 @@
       return e < t ? -1 : e > t ? 1 : e >= t ? 0 : NaN
     },
     tD = function(e) {
-      return 1 === e.length && (e = eL(e)), {
+      return 1 === e.length && (e = ex(e)), {
         left: function(t, n, r, i) {
           for (null == r && (r = 0), null == i && (i = t.length); r < i;) {
             var o = r + i >>> 1;
@@ -1897,10 +1897,10 @@
         }
       }
     },
-    tx = (tD(tw).right, function(e, t) {
+    tL = (tD(tw).right, function(e, t) {
       return ek(eM(ej(e), e), t)
     }),
-    tL = function(e, t) {
+    tx = function(e, t) {
       if (e.length > 8) return e.map(function(e, t) {
         return t
       });

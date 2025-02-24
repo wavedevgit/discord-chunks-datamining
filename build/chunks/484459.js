@@ -37,10 +37,10 @@ async function p(e, t) {
     w = u.Z.getMutualFriends(e),
     D = u.Z.getMutualFriendsCount(e);
   g = g || null != S;
-  let x = null == w && v,
-    L = null == D && E,
+  let L = null == w && v,
+    x = null == D && E,
     M = null != S && null == R;
-  if (!(null == P && g) && !x && !L && !M && !C) return;
+  if (!(null == P && g) && !L && !x && !M && !C) return;
   (0, s.z)(), null != t && (0, o.vM)(t);
   let k = {
       type: m,

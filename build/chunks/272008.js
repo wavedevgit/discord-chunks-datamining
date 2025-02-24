@@ -2,10 +2,10 @@
 "use strict";
 n.d(t, {
   AH: () => I,
-  Ag: () => L,
+  Ag: () => x,
   CS: () => b,
   EW: () => D,
-  OR: () => x,
+  OR: () => L,
   QB: () => T,
   T0: () => w,
   Wf: () => R,
@@ -355,14 +355,14 @@ function D(e) {
   })
 }
 
-function x(e, t) {
+function L(e, t) {
   o.Z.dispatch({
     type: "QUESTS_SELECT_TASK_PLATFORM",
     questId: e,
     platform: t
   })
 }
-async function L() {
+async function x() {
   if (!d.Z.isFetchingClaimedQuests) {
     o.Z.dispatch({
       type: "QUESTS_FETCH_CLAIMED_QUESTS_BEGIN"

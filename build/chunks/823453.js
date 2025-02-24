@@ -52,9 +52,9 @@ function N(e) {
     } = p,
     w = (0, u.e7)([m.Z], () => m.Z.confettiMode),
     D = (0, l.TH)(),
-    x = i.useMemo(() => T.has(D.pathname), [D.pathname]);
-  (0, O.Z)(window, x);
-  let L = (0, S.Z)(window, __OVERLAY__ || n),
+    L = i.useMemo(() => T.has(D.pathname), [D.pathname]);
+  (0, O.Z)(window, L);
+  let x = (0, S.Z)(window, __OVERLAY__ || n),
     M = (0, u.e7)([h.Z], () => h.Z.sidebarWidth),
     k = (0, f.bWb)().enabled,
     j = (0, _.Q3)("AppHelmet"),
@@ -64,7 +64,7 @@ function N(e) {
     style: "font-size: ".concat(I, "%; --saturation-factor: ").concat(A, "; --devtools-sidebar-width: ").concat(M, "px;"),
     className: a()(e, b, {
       overlay: __OVERLAY__,
-      "mouse-mode": L,
+      "mouse-mode": x,
       "reduce-motion": d.enabled,
       "full-motion": !d.enabled,
       "is-mobile": c.tq,

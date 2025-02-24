@@ -104,20 +104,20 @@ function w(e) {
     viewingChannelId: w
   } = e, {
     analyticsLocations: D
-  } = (0, f.ZP)(d.Z.USER_MENTION), x = (0, l.e7)([O.default], () => O.default.getUser(i)), L = (0, l.e7)([E.Z], () => E.Z.getChannel(o)), M = null != L ? L.getGuildId() : null, k = C || null == x || null == M || null == o ? void 0 : e => {
-    null != L && (0, u.jW)(e, async () => {
+  } = (0, f.ZP)(d.Z.USER_MENTION), L = (0, l.e7)([O.default], () => O.default.getUser(i)), x = (0, l.e7)([E.Z], () => E.Z.getChannel(o)), M = null != x ? x.getGuildId() : null, k = C || null == L || null == M || null == o ? void 0 : e => {
+    null != x && (0, u.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("59409")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, R(A({}, t), {
         viewingChannelId: w,
-        user: x,
-        channel: L,
+        user: L,
+        channel: x,
         guildId: M
       }))
     })
-  }, j = I.ZP.useName(x), U = (0, l.e7)([E.Z, v.ZP, y.Z], () => S.ZP.getNickname(M, o, x)), G = b.Z.getGuild(M), B = (0, p.Ib)(G, L) && i === T.fL ? T.jM : null;
-  if (null == x) return (0, r.jsx)(P, {
+  }, j = I.ZP.useName(L), U = (0, l.e7)([E.Z, v.ZP, y.Z], () => S.ZP.getNickname(M, o, L)), G = b.Z.getGuild(M), B = (0, p.Ib)(G, x) && i === T.fL ? T.jM : null;
+  if (null == L) return (0, r.jsx)(P, {
     userId: _,
     className: t,
     children: N
@@ -135,12 +135,12 @@ function w(e) {
   }) : (0, r.jsx)(f.Gt, {
     value: D,
     children: (0, r.jsx)(c.yRy, {
-      preload: null == x ? void 0 : () => (0, m.Z)(x.id, x.getAvatarURL(M, 80), {
+      preload: null == L ? void 0 : () => (0, m.Z)(L.id, L.getAvatarURL(M, 80), {
         guildId: null != M ? M : void 0,
         channelId: null != o ? o : void 0
       }),
-      renderPopout: e => (a()(null != x, "Unexpected missing user"), (0, r.jsx)(g.Z, A({
-        userId: x.id,
+      renderPopout: e => (a()(null != L, "Unexpected missing user"), (0, r.jsx)(g.Z, A({
+        userId: L.id,
         guildId: null != M ? M : void 0,
         channelId: o
       }, e))),

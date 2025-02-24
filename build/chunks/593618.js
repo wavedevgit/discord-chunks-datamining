@@ -34,8 +34,8 @@ var r = n(200651),
   P = n(699516),
   w = n(9156),
   D = n(594174),
-  x = n(938475),
-  L = n(981631),
+  L = n(938475),
+  x = n(981631),
   M = n(388032),
   k = n(430666),
   j = n(399491);
@@ -86,7 +86,7 @@ function F(e) {
       let {
         channel: t
       } = e;
-      return t.type === L.d4z.GUILD_VOICE
+      return t.type === x.d4z.GUILD_VOICE
     }).map(e => {
       let {
         channel: t
@@ -95,7 +95,7 @@ function F(e) {
     }), ...Object.values(A.Z.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]),
     r = (0, N.ZP)(t),
     o = i.useMemo(() => r.map(e => e.id), [r]),
-    a = (0, c.e7)([x.ZP], () => x.ZP.getVoiceStates(t), [t]),
+    a = (0, c.e7)([L.ZP], () => L.ZP.getVoiceStates(t), [t]),
     s = (0, c.Wu)([P.Z], () => P.Z.getBlockedOrIgnoredIDs()),
     {
       enabled: u

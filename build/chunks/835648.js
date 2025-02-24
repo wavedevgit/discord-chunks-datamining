@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => L
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -178,7 +178,7 @@ function D(e) {
   }
 }
 
-function x(e) {
+function L(e) {
   let {
     category: t,
     categoryIndex: n,
@@ -194,7 +194,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     soundboardListRef: t,
     categories: n,
@@ -204,7 +204,7 @@ function L(e) {
     inExpressionPicker: c
   } = e, u = i.useRef(null), p = (0, l.e7)([_.default], () => _.default.getCurrentUser()), m = (0, h.I5)(p, E.p9.TIER_2), v = i.useCallback((e, t, n, i) => {
     let a = o && (0, g.O)(e.categoryInfo, m, s);
-    return (0, r.jsx)(x, {
+    return (0, r.jsx)(L, {
       category: e,
       categoryIndex: t,
       onClick: n,

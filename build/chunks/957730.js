@@ -64,13 +64,13 @@ function D(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
   if (t[0] !== e) return null;
   let i = t.substr(e.length);
@@ -101,7 +101,7 @@ function L(e, t, n) {
 function M(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
   if (t[0] !== e) return null;
-  if ('"' !== t[1]) return L(e, t, n, r);
+  if ('"' !== t[1]) return x(e, t, n, r);
   let i = 2;
   for (; i < t.length; i++) {
     if ("\\" === t[i]) {
@@ -171,9 +171,9 @@ let U = u.Z.RULES,
       match(e, t, n) {
         let r = n.split(" ").pop() + e;
         if (/^[^ ]+@[^ ]+\.[^ .]+/.test(r)) return null;
-        let i = L("@", e, t.users, "mention");
-        if (i || (i = L("@", e, t.mentionableRoles, "roleMention"))) return i;
-        if (!(i = L("@", e, t.users.map(e => x(w({}, e), {
+        let i = x("@", e, t.users, "mention");
+        if (i || (i = x("@", e, t.mentionableRoles, "roleMention"))) return i;
+        if (!(i = x("@", e, t.users.map(e => L(w({}, e), {
             text: e.text.split("#")[0]
           })), "mention"))) return null;
         let o = H.exec(e);
@@ -251,7 +251,7 @@ let U = u.Z.RULES,
         }
       }
     },
-    text: x(w({}, G), {
+    text: L(w({}, G), {
       match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, d.T9)(t.textExclusions).exec(e) : null != G.match ? G.match(e, t, "") : null
     })
   },
@@ -339,7 +339,7 @@ let U = u.Z.RULES,
         content: "<id:".concat(e[1], ">")
       })
     },
-    timestamp: x(w({}, U.timestamp), {
+    timestamp: L(w({}, U.timestamp), {
       parse() {
         for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
         let r = U.timestamp.parse(...t);

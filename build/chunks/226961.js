@@ -149,11 +149,11 @@ function D() {
   P()
 }
 
-function x(e) {
+function L(e) {
   null != e.channelId && (C(), g.clear())
 }
 
-function L(e) {
+function x(e) {
   if (null === e.streamId) {
     let t = y(e.userId, e.context);
     g.set(t, d.Z.NO_OVERRIDE)
@@ -312,7 +312,7 @@ let H = new V(a.Z, {
   RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: B,
   RTC_DEBUG_SET_RECORDING_FLAG: Z,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F,
-  VOICE_CHANNEL_SELECT: x,
-  RTC_CONNECTION_VIDEO: L
+  VOICE_CHANNEL_SELECT: L,
+  RTC_CONNECTION_VIDEO: x
 });
 l.Z.getMediaEngine().on(o.aB.ConnectionStats, R)

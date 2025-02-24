@@ -71,11 +71,11 @@ var r = n(478497),
     }];
     else if (l(g)) N = g;
     else {
-      var x = Object.keys(A);
-      N = E ? x.sort(E) : x
+      var L = Object.keys(A);
+      N = E ? L.sort(E) : L
     }
-    var L = f ? n.replace(/\./g, "%2E") : n,
-      M = a && l(A) && 1 === A.length ? L + "[]" : L;
+    var x = f ? n.replace(/\./g, "%2E") : n,
+      M = a && l(A) && 1 === A.length ? x + "[]" : x;
     if (s && l(A) && 0 === A.length) return M + "[]";
     for (var k = 0; k < N.length; ++k) {
       var j = N[k],

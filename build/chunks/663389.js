@@ -92,7 +92,7 @@ function D(e) {
   null != t ? delete m[t] : null != _ && delete m[_]
 }
 
-function x(e) {
+function L(e) {
   let {
     settings: t
   } = e;
@@ -101,7 +101,7 @@ function x(e) {
   v[c.oAB.ACCOUNT] = d({}, n, t)
 }
 
-function L() {
+function x() {
   f = c.QZA.SUBMITTING
 }
 
@@ -181,12 +181,12 @@ let G = new U(s.Z, {
   USER_SETTINGS_MODAL_INIT: C,
   USER_SETTINGS_MODAL_CLOSE: R,
   LOGOUT: R,
-  USER_SETTINGS_MODAL_SUBMIT: L,
+  USER_SETTINGS_MODAL_SUBMIT: x,
   USER_SETTINGS_MODAL_SUBMIT_FAILURE: j,
   USER_SETTINGS_MODAL_SET_SECTION: P,
   USER_SETTINGS_MODAL_CLEAR_SUBSECTION: w,
   USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: D,
-  USER_SETTINGS_MODAL_UPDATE_ACCOUNT: x,
+  USER_SETTINGS_MODAL_UPDATE_ACCOUNT: L,
   USER_SETTINGS_MODAL_SUBMIT_COMPLETE: k,
   USER_SETTINGS_MODAL_RESET: M
 })

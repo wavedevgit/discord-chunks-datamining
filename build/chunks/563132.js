@@ -34,8 +34,8 @@ var r = n(200651),
   P = n(712297),
   w = n(585686),
   D = n(771206),
-  x = n(362755),
-  L = n(981631),
+  L = n(362755),
+  x = n(981631),
   M = n(474936);
 
 function k(e, t, n) {
@@ -89,7 +89,7 @@ function V(e) {
     isGift: H = !1,
     children: W,
     defaultPlanId: Y,
-    purchaseType: K = L.GZQ.SUBSCRIPTION,
+    purchaseType: K = x.GZQ.SUBSCRIPTION,
     applicationId: z,
     referralCode: q,
     repeatPurchase: Q = !1
@@ -144,7 +144,7 @@ function V(e) {
     setSelectedSkuId: eP,
     setSelectedPlanId: ew,
     setSelectedPlanNotification: eD
-  } = (0, O.Z)(), [ex, eL] = (0, s.Wu)([h.Z], () => [h.Z.purchaseTokenAuthState, h.Z.purchaseTokenHash]), [eM, ek, ej, eU] = (0, s.Wu)([x.Z], () => [x.Z.browserCheckoutState, x.Z.loadId, x.Z.skuId, x.Z.planId]), [eG, eB] = i.useState(null), [eZ, eF] = i.useState(null), [eV, eH] = i.useState(null), [eW, eY] = i.useState(null), [eK, ez] = i.useState(null), [eq, eQ] = i.useState(void 0), [eX, eJ] = i.useState([]), e$ = i.useMemo(() => null == eC || (0, b.PV)(eC.id), [eC]), e0 = i.useRef(null != U ? U.planId : null);
+  } = (0, O.Z)(), [eL, ex] = (0, s.Wu)([h.Z], () => [h.Z.purchaseTokenAuthState, h.Z.purchaseTokenHash]), [eM, ek, ej, eU] = (0, s.Wu)([L.Z], () => [L.Z.browserCheckoutState, L.Z.loadId, L.Z.skuId, L.Z.planId]), [eG, eB] = i.useState(null), [eZ, eF] = i.useState(null), [eV, eH] = i.useState(null), [eW, eY] = i.useState(null), [eK, ez] = i.useState(null), [eq, eQ] = i.useState(void 0), [eX, eJ] = i.useState([]), e$ = i.useMemo(() => null == eC || (0, b.PV)(eC.id), [eC]), e0 = i.useRef(null != U ? U.planId : null);
   i.useEffect(() => {
     null == e0.current && null != U && (e0.current = U.planId)
   }, [U]);
@@ -166,9 +166,9 @@ function V(e) {
     data: e9
   } = (0, f.IX)(z), te = _.Sb.useSetting(), tt = (0, s.e7)([c.Z], () => c.Z.getFetchState());
   i.useEffect(() => {
-    null != e9 && (0, v.yE)(e9.flags, L.udG.EMBEDDED) && te && null == tt && (0, u.$h)()
+    null != e9 && (0, v.yE)(e9.flags, x.udG.EMBEDDED) && te && null == tt && (0, u.$h)()
   }, [e9, te, tt]);
-  let tn = (0, v.yE)(null !== (t = null == e9 ? void 0 : e9.flags) && void 0 !== t ? t : 0, L.udG.EMBEDDED) && (0, v.yE)(null !== (n = null == e9 ? void 0 : e9.flags) && void 0 !== n ? n : 0, L.udG.EMBEDDED_IAP),
+  let tn = (0, v.yE)(null !== (t = null == e9 ? void 0 : e9.flags) && void 0 !== t ? t : 0, x.udG.EMBEDDED) && (0, v.yE)(null !== (n = null == e9 ? void 0 : e9.flags) && void 0 !== n ? n : 0, x.udG.EMBEDDED_IAP),
     tr = (0, s.e7)([d.ZP], () => Array.from(d.ZP.getSelfEmbeddedActivities().values()).find(e => {
       let {
         applicationId: t
@@ -219,8 +219,8 @@ function V(e) {
       purchasePreviewError: e5,
       setPurchasePreviewError: e7,
       purchaseErrorBlockRef: eI,
-      purchaseTokenAuthState: ex,
-      purchaseTokenHash: eL,
+      purchaseTokenAuthState: eL,
+      purchaseTokenHash: ex,
       browserCheckoutState: eM,
       browserCheckoutStateLoadId: ek,
       browserCheckoutStateSkuId: ej,
@@ -263,7 +263,7 @@ function V(e) {
       inReverseTrial: tc
     }),
     children: (0, r.jsx)(o.Elements, {
-      options: L.OBo,
+      options: x.OBo,
       stripe: X,
       children: W
     })

@@ -48,15 +48,15 @@ function E(e) {
       } = e;
       return t === m.IIU.CUSTOM_STATUS
     })) && void 0 !== t ? t : null,
-    x = (null == D ? void 0 : D.emoji) == null || O ? null : (0, r.jsx)(p.Z, {
+    L = (null == D ? void 0 : D.emoji) == null || O ? null : (0, r.jsx)(p.Z, {
       emoji: D.emoji,
       animate: b,
       hideTooltip: y,
       className: o()(g.emoji, v)
     });
-  return w || null != x ? (0, r.jsxs)("div", {
+  return w || null != L ? (0, r.jsxs)("div", {
     className: g.container,
-    children: [x, (0, r.jsx)(h.Z, {
+    children: [L, (0, r.jsx)(h.Z, {
       className: E,
       children: P
     }), I && (0, r.jsx)(_.Z, {

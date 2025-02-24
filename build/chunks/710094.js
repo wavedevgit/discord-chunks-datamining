@@ -37,8 +37,8 @@ function w(e) {
   let o, {
       handleStepChange: w,
       trialId: D,
-      trialFooterMessageOverride: x,
-      reviewWarningMessage: L,
+      trialFooterMessageOverride: L,
+      reviewWarningMessage: x,
       planGroup: M,
       openInvoiceId: k,
       analyticsData: j,
@@ -110,8 +110,8 @@ function w(e) {
     eR = i.useRef(null),
     [eP, ew] = i.useState(null),
     eD = !e_ && null != eS && null != ee && A.nG[eS.trial_id].skus.includes(ee),
-    ex = null == eI ? void 0 : null === (t = eI.discount) || void 0 === t ? void 0 : t.plan_ids,
-    eL = !e_ && null != eI && null != ex && null != $ && ex.includes($.id),
+    eL = null == eI ? void 0 : null === (t = eI.discount) || void 0 === t ? void 0 : t.plan_ids,
+    ex = !e_ && null != eI && null != eL && null != $ && eL.includes($.id),
     eM = e_ && (0, h.pO)(em),
     ek = null == B && null == Z && ec === C.GZ.SUBSCRIPTION,
     ej = (0, O.Kp)({
@@ -152,12 +152,12 @@ function w(e) {
     legalTermsNodeRef: eR,
     hasLegalTermsFlash: ev,
     trialId: eO,
-    trialFooterMessageOverride: x,
-    reviewWarningMessage: L,
+    trialFooterMessageOverride: L,
+    reviewWarningMessage: x,
     purchaseState: ea,
     referralTrialOfferId: G,
-    isTrial: eD || null != D && null != x,
-    isDiscount: eL,
+    isTrial: eD || null != D && null != L,
+    isDiscount: ex,
     handleClose: F
   })) : (a()(null != $, "Expected plan to be selected"), o = (0, r.jsx)(p.Z, {
     premiumSubscription: V,

@@ -203,7 +203,7 @@ function D() {
   B()
 }
 
-function x(e) {
+function L(e) {
   let {
     voiceStates: t
   } = e;
@@ -216,7 +216,7 @@ function x(e) {
   }, !1)
 }
 
-function L(e) {
+function x(e) {
   var t, n;
   let r = !1,
     i = new Set(null === (t = S[e.guildId]) || void 0 === t ? void 0 : t.getUserIds()),
@@ -302,9 +302,9 @@ let F = new Z(l.Z, {
   CONNECTION_OPEN: w,
   OVERLAY_INITIALIZE: D,
   VOICE_CHANNEL_SELECT: M,
-  VOICE_STATE_UPDATES: x,
+  VOICE_STATE_UPDATES: L,
   GUILD_MEMBER_UPDATE: j,
   GUILD_CREATE: U,
   GUILD_DELETE: G,
-  PASSIVE_UPDATE_V2: L
+  PASSIVE_UPDATE_V2: x
 })

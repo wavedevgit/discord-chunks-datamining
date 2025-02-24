@@ -40,11 +40,11 @@ function y(e) {
     planError: P,
     onScroll: w,
     scrollerClassName: D,
-    hasCurrencies: x = !1
-  } = e, L = null;
-  null != y && null == (0, _.ly)(y) ? L = y : null != C ? L = C : null != P && (L = P);
-  let M = null != L ? L.message : "";
-  null != L && L instanceof d.HF && (L.code === f.SM.CARD_DECLINED && x && (M += " ".concat(E.NW.string(E.t.iWvwQU))), L.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.NW.string(E.t.ypuSd3)), L.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.NW.string(E.t.mXMmWF)));
+    hasCurrencies: L = !1
+  } = e, x = null;
+  null != y && null == (0, _.ly)(y) ? x = y : null != C ? x = C : null != P && (x = P);
+  let M = null != x ? x.message : "";
+  null != x && x instanceof d.HF && (x.code === f.SM.CARD_DECLINED && L && (M += " ".concat(E.NW.string(E.t.iWvwQU))), x.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.NW.string(E.t.ypuSd3)), x.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.NW.string(E.t.mXMmWF)));
   let {
     stripe: k
   } = (0, p.JL)();
@@ -82,7 +82,7 @@ function y(e) {
         })
       }), (0, r.jsxs)("div", {
         className: v.bodyWrapper,
-        children: [null == L ? null : (0, r.jsx)("div", {
+        children: [null == x ? null : (0, r.jsx)("div", {
           className: v.errorBlockWrapper,
           children: (0, r.jsx)(c.kzN, {
             ref: R,

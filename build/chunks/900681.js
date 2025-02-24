@@ -194,8 +194,8 @@ function C(e) {
     showBrandingFooter: P = !1,
     bannerUrl: w,
     onlyAnimateIconOnHover: D = !1,
-    hasPendingJoinRequest: x = !1,
-    atMaxMemberCapacity: L = !1,
+    hasPendingJoinRequest: L = !1,
+    atMaxMemberCapacity: x = !1,
     footer: M = null
   } = e, {
     tag: k,
@@ -240,8 +240,8 @@ function C(e) {
       className: v.cardBrandingHeader,
       style: J,
       children: [$, (0, r.jsx)(A, {
-        hasPendingJoinRequest: x,
-        atMaxMemberCapacity: L,
+        hasPendingJoinRequest: L,
+        atMaxMemberCapacity: x,
         isGuildMember: h
       })]
     }), (0, r.jsxs)("div", {

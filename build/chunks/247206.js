@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Cm: () => z,
-  HH: () => x,
+  HH: () => L,
   Hc: () => W,
   IV: () => Y,
   KP: () => k,
@@ -20,7 +20,7 @@ n.d(t, {
   tG: () => A,
   vx: () => D,
   xx: () => K,
-  zj: () => L
+  zj: () => x
 }), n(789020);
 var r = n(286379),
   i = n(524437);
@@ -150,7 +150,7 @@ function D(e) {
   return e === i.Q4.BLUR || e === i.Q4.BLOCK
 }
 
-function x(e) {
+function L(e) {
   var t;
   let n = f.default.getCurrentUser();
   if (null == n || (null === (t = e.author) || void 0 === t ? void 0 : t.id) === n.id) return !1;
@@ -161,7 +161,7 @@ function x(e) {
   } = w(), a = u.Z.getChannel(e.channel_id);
   return null != a && (a.isDM() || a.isGroupDM() ? null != e.author && d.Z.getFriendIDs().includes(e.author.id) ? D(i) : D(o) : D(r))
 }
-let L = e => {
+let x = e => {
   let t = w();
   c.Sh.updateSetting(y({}, t, e))
 };
@@ -186,7 +186,7 @@ function k(e, t) {
 }
 
 function j(e) {
-  return x(e) ? {
+  return L(e) ? {
     obscuredAttachments: e.attachments.filter(e => k({
       type: 0,
       media: e

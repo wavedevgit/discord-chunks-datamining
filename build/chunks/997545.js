@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => L
+  Z: () => x
 }), n(47120), n(411104), n(26686), n(230036), n(301563), n(653041);
 var r = n(595182),
   i = n.n(r),
@@ -72,16 +72,16 @@ function D(e) {
   return (null != e ? e : S.Qx) / S.Qx
 }
 
-function x(e) {
+function L(e) {
   return null != e && 0 !== e ? e + 1 : 0
 }
-class L extends p.Z {
+class x extends p.Z {
   static create(e, t, n) {
-    let r = new L(e, t, !0);
+    let r = new x(e, t, !0);
     return r.initialize(n), r
   }
   static createReplay(e, t) {
-    let n = new L(e, "0", !0),
+    let n = new x(e, "0", !0),
       r = (0, v.zS)();
     n.initializeStreamParameters([{
       type: O.Tr.VIDEO,
@@ -231,7 +231,7 @@ class L extends p.Z {
           ssrc: t,
           videoSsrc: r,
           videoSsrcs: n,
-          rtxSsrc: x(r),
+          rtxSsrc: L(r),
           mute: this.getLocalMute(e),
           volume: this.getLocalVolume(e)
         };
@@ -560,7 +560,7 @@ class L extends p.Z {
       c = -1 !== l && this.videoStreamParameters.length > l,
       u = this.videoQualityManager.shouldEnableGoliveSimulcastForHqQuality(i),
       d = c && this.videoStreamParameters[l].active !== u;
-    c && (this.videoStreamParameters[l].active = u, this.simulcastLQDisabledSsrc = u ? void 0 : this.videoStreamParameters[l].ssrc), (a || d) && (this.emit(m.Sh.Video, this.userId, null, this.audioSSRC, this.videoStreamParameters[s].ssrc, x(this.videoStreamParameters[s].ssrc), this.videoStreamParameters), this.conn.setTransportOptions(this.applyQualityConstraints().constraints))
+    c && (this.videoStreamParameters[l].active = u, this.simulcastLQDisabledSsrc = u ? void 0 : this.videoStreamParameters[l].ssrc), (a || d) && (this.emit(m.Sh.Video, this.userId, null, this.audioSSRC, this.videoStreamParameters[s].ssrc, L(this.videoStreamParameters[s].ssrc), this.videoStreamParameters), this.conn.setTransportOptions(this.applyQualityConstraints().constraints))
   }
   setSDP(e) {}
   setRemoteVideoSinkWants(e) {
@@ -647,7 +647,7 @@ class L extends p.Z {
         ssrc: this.remoteAudioSSRCs[e],
         videoSsrc: t,
         videoSsrcs: this.remoteVideoSSRCs[e],
-        rtxSsrc: x(t),
+        rtxSsrc: L(t),
         mute: this.getLocalMute(e),
         volume: this.getLocalVolume(e)
       }
@@ -860,7 +860,7 @@ class L extends p.Z {
             })
           }
         })
-      }) : t > 0 ? (i[0].active = !0, i[0].ssrc = t, i[0].rtxSsrc = x(t)) : i[0].active = !1 : t > 0 && (void 0 !== this.remoteVideoSSRCs[e] ? this.remoteVideoSSRCs[e].includes(t) || (this.remoteVideoSSRCs[e] = [...this.remoteVideoSSRCs[e], t]) : this.remoteVideoSSRCs[e] = [t]), this.videoStreamParameters = i, this.emit(m.Sh.Video, e, null != n && "" !== n ? n : null, e === this.userId ? this.audioSSRC : this.remoteAudioSSRCs[e], t, x(t), this.videoStreamParameters)
+      }) : t > 0 ? (i[0].active = !0, i[0].ssrc = t, i[0].rtxSsrc = L(t)) : i[0].active = !1 : t > 0 && (void 0 !== this.remoteVideoSSRCs[e] ? this.remoteVideoSSRCs[e].includes(t) || (this.remoteVideoSSRCs[e] = [...this.remoteVideoSSRCs[e], t]) : this.remoteVideoSSRCs[e] = [t]), this.videoStreamParameters = i, this.emit(m.Sh.Video, e, null != n && "" !== n ? n : null, e === this.userId ? this.audioSSRC : this.remoteAudioSSRCs[e], t, L(t), this.videoStreamParameters)
     }), I(this, "handleFirstFrame", (e, t, n) => {
       this.emit(m.Sh.FirstFrame, e, t, n)
     }), I(this, "handleNoInput", e => {

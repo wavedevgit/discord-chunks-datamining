@@ -394,7 +394,7 @@ function A(e) {
     size: r,
     opacity: i
   } = e;
-  return N(t, (e, t) => x(e, n, r, i))
+  return N(t, (e, t) => L(e, n, r, i))
 }
 
 function C(e) {
@@ -442,7 +442,7 @@ function D(e) {
   })
 }
 
-function x(e, t, n, r) {
+function L(e, t, n, r) {
   i = v(g({}, i), {
     [e.id]: e.merge({
       anchor: null != t ? t : e.anchor,
@@ -452,7 +452,7 @@ function x(e, t, n, r) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     widgetId: t
   } = e;
@@ -754,7 +754,7 @@ let H = new V(d.Z, {
   LAYOUT_SET_PINNED: D,
   LAYOUT_UPDATE_WIDGET: A,
   LAYOUT_SET_TOP_WIDGET: C,
-  LAYOUT_DELETE_WIDGET: L,
+  LAYOUT_DELETE_WIDGET: x,
   LAYOUT_DELETE_ALL_WIDGETS: M,
   LAYOUT_CREATE_WIDGETS: k,
   LAYOUT_SET_WIDGET_META: P

@@ -7,9 +7,9 @@ n.d(t, {
   aP: () => k,
   dV: () => B,
   g: () => M,
-  iV: () => L,
+  iV: () => x,
   n9: () => j,
-  pR: () => x,
+  pR: () => L,
   rn: () => D,
   tK: () => P,
   xc: () => U
@@ -108,7 +108,7 @@ function D(e, t) {
   }), o || null != t && t.noFocus || S.Z.selectParticipant(e.channelId, i)
 }
 
-function x(e, t) {
+function L(e, t) {
   s.Z.dispatch({
     type: "STREAM_UPDATE_SELF_HIDDEN",
     channelId: e,
@@ -116,7 +116,7 @@ function x(e, t) {
   })
 }
 
-function L(e, t) {
+function x(e, t) {
   let {
     guildId: n,
     channelId: r

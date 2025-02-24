@@ -36,8 +36,8 @@ var i, o = n(392711),
   P = n(998502),
   w = n(145597),
   D = n(370862),
-  x = n(981631),
-  L = n(987650);
+  L = n(981631),
+  x = n(987650);
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -154,7 +154,7 @@ let G = new m.Z("RunningGameStore"),
       os: "linux",
       name: "spotify"
     }],
-    name: _.Z.get(x.ABu.SPOTIFY).name
+    name: _.Z.get(L.ABu.SPOTIFY).name
   }],
   H = [],
   W = !0,
@@ -364,7 +364,7 @@ function eT() {
 }
 
 function eN(e) {
-  return null != J[e.exePath] ? x.GQo.DISCORD : /steamapps/.test(e.cmdLine) ? x.GQo.STEAM : /-epicapp/.test(e.cmdLine) ? x.GQo.EPIC : e.distributor
+  return null != J[e.exePath] ? L.GQo.DISCORD : /steamapps/.test(e.cmdLine) ? L.GQo.STEAM : /-epicapp/.test(e.cmdLine) ? L.GQo.EPIC : e.distributor
 }
 
 function eA(e) {
@@ -416,14 +416,14 @@ function eD() {
   W = !1
 }
 
-function ex(e) {
+function eL(e) {
   let {
     pid: t
   } = e;
   ei = t, eo = null
 }
 
-function eL(e) {
+function ex(e) {
   let {
     pid: t
   } = e;
@@ -472,7 +472,7 @@ function eB(e) {
     let t = H.some(t => e.cleanedExePath.includes(t));
     return t && es.add(e.pid), t
   }).map(e => e.cleanedExePath);
-  t.length > 0 && T.default.track(x.rMx.GAME_DETECTION_DEBUGGING_KEYWORD_MATCH, {
+  t.length > 0 && T.default.track(L.rMx.GAME_DETECTION_DEBUGGING_KEYWORD_MATCH, {
     keywords: H,
     paths: t,
     debugging_level: ec,
@@ -496,7 +496,7 @@ function eF(e) {
   let {
     game: t
   } = e, n = ev(t);
-  ee.enableDetection[em(t)] = !n, ey(), T.default.track(x.rMx.USER_SETTINGS_GAME_DETECTION_TOGGLE, {
+  ee.enableDetection[em(t)] = !n, ey(), T.default.track(L.rMx.USER_SETTINGS_GAME_DETECTION_TOGGLE, {
     enabled: !n
   })
 }
@@ -533,7 +533,7 @@ function eW(e) {
 
 function eY() {
   g.Z.hasLoadedExperiments && F.length > 0 && (eA(F), F = [])
-}!__OVERLAY__ && ((0, R.isDesktop)() || L.iP) && (et = function() {
+}!__OVERLAY__ && ((0, R.isDesktop)() || x.iP) && (et = function() {
   let e = [],
     t = new Set;
   r = {};
@@ -693,9 +693,9 @@ let ez = new eK(d.Z, {
     RUNNING_GAMES_CHANGE: eP,
     CANDIDATE_GAMES_CHANGE: ew,
     PERMISSION_CLEAR_PTT_ADMIN_WARNING: eD,
-    PERMISSION_REQUEST_ELEVATED_PROCESS: ex,
+    PERMISSION_REQUEST_ELEVATED_PROCESS: eL,
     PERMISSION_CLEAR_ELEVATED_PROCESS: eM,
-    PERMISSION_CONTINUE_NONELEVATED_PROCESS: eL,
+    PERMISSION_CONTINUE_NONELEVATED_PROCESS: ex,
     RUNNING_GAME_ADD_OVERRIDE: ek,
     RUNNING_GAME_TOGGLE_OVERLAY: eZ,
     RUNNING_GAME_TOGGLE_DETECTION: eF,

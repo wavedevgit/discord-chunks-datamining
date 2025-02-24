@@ -1,6 +1,6 @@
 /**
   Module ID: 60482
-  Original File Name: 4ab4dd8e53686e20
+  Original File Name: 18b4d4264127e694
 **/
 @value minColumnWidth: 460px;
 
@@ -1399,8 +1399,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -2539,12 +2539,13 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 .gameIcon__80da8 {
     width: 26px;
     height: 26px;
-    position: relative
+    position: relative;
+    flex-shrink: 0
 }
 
 .gameIconImage__80da8 {
     border-radius: 4px;
-    border: 1px solid var(--border-subtle);
+    border: 1px solid var(--border-faint);
     max-height: 100%;
     max-width: 100%;
     -o-object-fit: contain;
@@ -2692,7 +2693,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     align-items: center;
     padding: 4px 8px;
     border-radius: 16px;
-    border: 1px solid var(--border-subtle);
+    border: 1px solid var(--border-faint);
     max-width: 268px
 }
 
@@ -3611,4 +3612,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=4ab4dd8e53686e20.css.map*/
+/*# sourceMappingURL=18b4d4264127e694.css.map*/

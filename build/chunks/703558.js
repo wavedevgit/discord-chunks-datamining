@@ -180,16 +180,16 @@ function D(e) {
   e.userId in v && delete v[e.userId]
 }
 
-function x() {
+function L() {
   for (let [e, t] of c.default.entries(v))
     for (let [n, r] of c.default.entries(t)) {
       let t = r[0];
       null != t && ("" === t.draft || "" === t.draft.trim()) && T(n, 0, e)
     }
 }
-class L extends(r = a.ZP.PersistedStore) {
+class x extends(r = a.ZP.PersistedStore) {
   initialize(e) {
-    v = null != e ? e : {}, x(), this.waitFor(u.default, d.Z, f.Z)
+    v = null != e ? e : {}, L(), this.waitFor(u.default, d.Z, f.Z)
   }
   getState() {
     return v
@@ -242,7 +242,7 @@ class L extends(r = a.ZP.PersistedStore) {
     return null == n ? null : n[1]
   }
 }
-p(L, "displayName", "DraftStore"), p(L, "persistKey", "DraftStore"), p(L, "migrations", [e => {
+p(x, "displayName", "DraftStore"), p(x, "persistKey", "DraftStore"), p(x, "migrations", [e => {
   if (null == e) return {};
   for (let t in e) "timestamp" in e[t] && (e[t] = {
     0: e[t]
@@ -256,7 +256,7 @@ p(L, "displayName", "DraftStore"), p(L, "persistKey", "DraftStore"), p(L, "migra
   for (let t in e) r[t] = e[t];
   return n
 }]);
-let M = new L(s.Z, {
+let M = new x(s.Z, {
   CONNECTION_OPEN: A,
   LOGOUT: w,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: D,

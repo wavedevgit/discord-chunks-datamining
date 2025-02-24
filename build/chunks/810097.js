@@ -101,11 +101,11 @@ function P(e) {
   } = e, P = (0, c.e7)([_.default], () => _.default.getId() === t.id), w = (0, h.Z)(t.id), {
     profileType: D
   } = (0, v.z)(), {
-    onInteraction: x
+    onInteraction: L
   } = (0, E.Xo)(), {
-    live: L,
+    live: x,
     stream: M
-  } = (0, m.Z)(t.id), k = (0, g.Z)(n === b.n_.STATUS ? t.id : null, "UserProfileInteractionToolbar"), j = !o && D !== b.y0.FULL_SIZE && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === L.length && null == M && null == k).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [U, G] = i.useState(j);
+  } = (0, m.Z)(t.id), k = (0, g.Z)(n === b.n_.STATUS ? t.id : null, "UserProfileInteractionToolbar"), j = !o && D !== b.y0.FULL_SIZE && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === x.length && null == M && null == k).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [U, G] = i.useState(j);
   if (i.useEffect(() => {
       U && !j && G(!1)
     }, [U, j]), t.bot || P || !w) return null;
@@ -116,7 +116,7 @@ function P(e) {
         action: "PRESS_REACT_CUSTOM_STATUS"
       }) : A({
         action: "PRESS_REACT_ACTIVITY"
-      }), null == x || x({
+      }), null == L || L({
         interactionType: b.P.REACT,
         interactionSource: n,
         interactionSourceId: T
@@ -129,7 +129,7 @@ function P(e) {
         action: "PRESS_REPLY_CUSTOM_STATUS"
       }) : A({
         action: "PRESS_REPLY_ACTIVITY"
-      }), null == x || x({
+      }), null == L || L({
         interactionType: b.P.REPLY,
         interactionSource: n,
         interactionSourceId: T

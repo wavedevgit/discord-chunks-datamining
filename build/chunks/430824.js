@@ -140,7 +140,7 @@ function D(e) {
   b = m({}, b), delete b[t.id], v[t.id] = void 0, r--
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     role: n
@@ -151,7 +151,7 @@ function x(e) {
   }), r = u.iw(t, Object.values(r)), v[t] = r
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t,
     roleId: n
@@ -219,9 +219,9 @@ let G = new U(s.Z, {
   GUILD_CREATE: R,
   GUILD_UPDATE: P,
   GUILD_DELETE: D,
-  GUILD_ROLE_CREATE: x,
-  GUILD_ROLE_UPDATE: x,
-  GUILD_ROLE_DELETE: L,
+  GUILD_ROLE_CREATE: L,
+  GUILD_ROLE_UPDATE: L,
+  GUILD_ROLE_DELETE: x,
   GUILD_MEMBER_ADD: M,
   GUILD_SETTINGS_SUBMIT_SUCCESS: k,
   GUILD_GEO_RESTRICTED: w

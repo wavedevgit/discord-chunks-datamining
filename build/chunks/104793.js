@@ -55,16 +55,16 @@ function g(e, t, n) {
       })) return 3
   }
   if (e.applicationId === _.bi.BUILT_IN) return 0;
-  let x = null != l ? (0, p.ny)(l) : void 0;
-  if (null == x || a.e$(O, h.Plq.ADMINISTRATOR) || P && (null === (r = e.integration_types) || void 0 === r ? void 0 : r.includes(o.Y.USER_INSTALL))) return 0;
+  let L = null != l ? (0, p.ny)(l) : void 0;
+  if (null == L || a.e$(O, h.Plq.ADMINISTRATOR) || P && (null === (r = e.integration_types) || void 0 === r ? void 0 : r.includes(o.Y.USER_INSTALL))) return 0;
   if (!N && R && (null == e.integration_types || e.integration_types.includes(o.Y.GUILD_INSTALL))) return 5;
   if (l instanceof c.Sf) {
     i()(void 0 !== C, "missing applicationAllowedForChannel");
-    let t = b(e.permissions, l, x);
+    let t = b(e.permissions, l, L);
     if (v(t) || !E(t) && v(C)) return 6
   }
-  let L = y(e.permissions, x, S, I, T);
-  return E(L) ? 0 : v(L) ? 7 : v(A) || null != e.defaultMemberPermissions && !(!a.fS(e.defaultMemberPermissions, f.BO) && a.e$(O, e.defaultMemberPermissions)) ? 7 : 0
+  let x = y(e.permissions, L, S, I, T);
+  return E(x) ? 0 : v(x) ? 7 : v(A) || null != e.defaultMemberPermissions && !(!a.fS(e.defaultMemberPermissions, f.BO) && a.e$(O, e.defaultMemberPermissions)) ? 7 : 0
 }
 
 function E(e) {

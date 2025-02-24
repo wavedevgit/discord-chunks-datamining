@@ -213,7 +213,7 @@ function D(e) {
   return y(t, e => P(n, e))
 }
 
-function x(e) {
+function L(e) {
   let {
     message: t
   } = e;
@@ -223,7 +223,7 @@ function x(e) {
   })
 }
 
-function L() {
+function x() {
   v.clear()
 }
 
@@ -278,10 +278,10 @@ let U = new j(s.Z, {
   MESSAGE_UPDATE: A,
   MESSAGE_DELETE: w,
   MESSAGE_DELETE_BULK: D,
-  CREATE_PENDING_REPLY: x,
+  CREATE_PENDING_REPLY: L,
   CHANNEL_DELETE: C,
   THREAD_DELETE: C,
   GUILD_DELETE: R,
-  CONNECTION_OPEN: L,
-  LOGOUT: L
+  CONNECTION_OPEN: x,
+  LOGOUT: x
 })

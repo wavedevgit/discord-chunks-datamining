@@ -101,11 +101,11 @@ function D() {
     [y.NW.string(y.t["dXC/ho"])]: () => P("year")
   }
 }
-let x = "([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})",
-  L = "\\d{4}",
+let L = "([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})",
+  x = "\\d{4}",
   M = "([0-9]{4})-([0-9]{1,2})",
   k = "([^\\d\\s]+)",
-  j = RegExp("(?:\\s*(".concat(x, "|").concat(M, "|").concat(L, "|").concat(k, "))"), "i"),
+  j = RegExp("(?:\\s*(".concat(L, "|").concat(M, "|").concat(x, "|").concat(k, "))"), "i"),
   U = RegExp("\\s*(true|false)", "i");
 
 function G(e) {

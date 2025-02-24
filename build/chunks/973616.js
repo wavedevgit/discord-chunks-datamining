@@ -147,7 +147,7 @@ class m extends h {
     }))
   }
   mergeFromApplicationUpdate(e) {
-    var t, n, r, i, o, a, s, l, c, d, f, p, _, h, g, E, v, b, y, O, S, I, T, N, A, C, R, P, w, D, x, L, M, k, j, U, G, B, Z, F, V, H;
+    var t, n, r, i, o, a, s, l, c, d, f, p, _, h, g, E, v, b, y, O, S, I, T, N, A, C, R, P, w, D, L, x, M, k, j, U, G, B, Z, F, V, H;
     return new m({
       id: null !== (t = e.id) && void 0 !== t ? t : this.id,
       name: null !== (n = e.name) && void 0 !== n ? n : this.name,
@@ -179,8 +179,8 @@ class m extends h {
       embeddedActivityConfig: null !== (P = e.embeddedActivityConfig) && void 0 !== P ? P : null != this.embeddedActivityConfig ? u({}, this.embeddedActivityConfig) : void 0,
       type: null !== (w = e.type) && void 0 !== w ? w : this.type,
       team: null !== (D = e.team) && void 0 !== D ? D : this.team,
-      roleConnectionsVerificationUrl: null !== (x = e.roleConnectionsVerificationUrl) && void 0 !== x ? x : this.roleConnectionsVerificationUrl,
-      integrationTypesConfig: null !== (L = e.integrationTypesConfig) && void 0 !== L ? L : this.integrationTypesConfig,
+      roleConnectionsVerificationUrl: null !== (L = e.roleConnectionsVerificationUrl) && void 0 !== L ? L : this.roleConnectionsVerificationUrl,
+      integrationTypesConfig: null !== (x = e.integrationTypesConfig) && void 0 !== x ? x : this.integrationTypesConfig,
       isMonetized: null !== (M = e.isMonetized) && void 0 !== M ? M : this.isMonetized,
       storefront_available: null !== (k = e.storefront_available) && void 0 !== k ? k : this.storefront_available,
       termsOfServiceUrl: null !== (j = e.termsOfServiceUrl) && void 0 !== j ? j : this.termsOfServiceUrl,

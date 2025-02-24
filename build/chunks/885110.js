@@ -44,19 +44,19 @@ function D(e) {
   return (0, _.OT)(e, g.Z)
 }
 
-function x(e) {
+function L(e) {
   let t = h.Z.getGameByName(e);
   return null != t ? D(t.id) : f.G6.getSetting()
 }
 
-function L(e) {
+function x(e) {
   switch (e.type) {
     case y.IIU.LISTENING:
       if ((0, u.Z)(e)) return d.Z.shouldShowActivity();
       if (null != e.application_id) return D(e.application_id);
       return !1;
     case y.IIU.PLAYING:
-      return null != e.application_id ? D(e.application_id) : x(e.name);
+      return null != e.application_id ? D(e.application_id) : L(e.name);
     case y.IIU.STREAMING:
     case y.IIU.WATCHING:
     default:
@@ -78,7 +78,7 @@ function k() {
   }
   I === y.Skl.ONLINE && N > 0 && (I = y.Skl.IDLE);
   let t = !1,
-    n = R || I === y.Skl.INVISIBLE ? [] : E.Z.getActivities().filter(L);
+    n = R || I === y.Skl.INVISIBLE ? [] : E.Z.getActivities().filter(x);
   o()(A, n) || (A = n, t = !0);
   let r = b.Z.getRemoteActivities();
   P !== r && (P = r, t = !0), t && (w = s()([...A, ...P.filter(e => e.type !== y.IIU.CUSTOM_STATUS)].sort(v.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value())

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => L
 });
 var r, i = n(512722),
   o = n.n(i),
@@ -210,7 +210,7 @@ class D extends(r = l.ZP.PersistedStore) {
   }
 }
 m(D, "displayName", "UserSettingsProtoStore"), m(D, "persistKey", "UserSettingsProtoStore-Cache");
-let x = new D(f.Z, {
+let L = new D(f.Z, {
   CACHE_LOADED: P,
   USER_SETTINGS_PROTO_UPDATE: C,
   USER_SETTINGS_PROTO_ENQUEUE_UPDATE: C,

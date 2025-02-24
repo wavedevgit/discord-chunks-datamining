@@ -42,19 +42,19 @@ let b = [],
   w = new Set,
   D = new Set;
 
-function x(e) {
+function L(e) {
   var t;
   return null !== (t = _.ZP.lastMessageId(e)) && void 0 !== t ? t : e
 }
 
-function L(e) {
+function x(e) {
   let t = d.Z.getCount(e);
   return null === t || 0 === t
 }
 
 function M(e) {
   return function(t, n) {
-    return (0, E.yv)(t) ? -1 : (0, E.yv)(n) ? 1 : e === s.z.LATEST_ACTIVITY ? g.default.compare(x(n), x(t)) : g.default.compare(n, t)
+    return (0, E.yv)(t) ? -1 : (0, E.yv)(n) ? 1 : e === s.z.LATEST_ACTIVITY ? g.default.compare(L(n), L(t)) : g.default.compare(n, t)
   }
 }
 
@@ -99,7 +99,7 @@ function B(e) {
     return t
   }), T = 0, A = !0), 0 !== w.size && (C = C.filter(e => !w.has(e)), w.clear()), 0 !== D.size && (C = Array.from(new Set([...C, ...D])), D.clear()), ((null == e ? void 0 : e.refreshThreadIds) || (null == e ? void 0 : e.sortThreadIds)) && (P = a().chain(C).sort(M(s.z.LATEST_ACTIVITY)), R = a().chain(C).sort(M(s.z.CREATION_DATE)));
   let n = (I === s.z.LATEST_ACTIVITY ? P : R).value(),
-    i = (N = 0 === S.size ? n : n.filter(k(S))).find(e => L(e));
+    i = (N = 0 === S.size ? n : n.filter(k(S))).find(e => x(e));
   r = null == i ? null : i
 }
 

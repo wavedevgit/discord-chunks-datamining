@@ -159,20 +159,20 @@ function D(e) {
   b(t)
 }
 
-function x() {
+function L() {
   b(f.I_8)
 }
 
-function L(e) {
+function x(e) {
   let t = h[e];
   return null != t ? t : b(e)
 }
 class M extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(u.ZP, d.Z, l.default, c.Z, s.Z), this.syncWith([s.Z], x)
+    this.waitFor(u.ZP, d.Z, l.default, c.Z, s.Z), this.syncWith([s.Z], L)
   }
   getCategories(e) {
-    return null != e ? L(e) : E
+    return null != e ? x(e) : E
   }
 }
 p(M, "displayName", "GuildCategoryStore");

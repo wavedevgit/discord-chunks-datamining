@@ -30,9 +30,9 @@ var r = n(161581),
   P = "Wrong index",
   w = S.getterFor(N),
   D = S.getterFor(A),
-  x = S.set,
-  L = r[N],
-  M = L,
+  L = S.set,
+  x = r[N],
+  M = x,
   k = M && M[C],
   j = r[A],
   U = j && j[C],
@@ -88,20 +88,20 @@ var r = n(161581),
     for (var u = a.bytes, d = s + a.byteOffset, f = 0; f < t; f++) u[d + f] = l[c ? f : t - f - 1]
   };
 if (a) {
-  var et = I && L.name !== N;
+  var et = I && x.name !== N;
   if (!d(function() {
-      L(1)
+      x(1)
     }) || !d(function() {
-      new L(-1)
+      new x(-1)
     }) || d(function() {
-      return new L, new L(1.5), new L(NaN), 1 !== L.length || et && !T
+      return new x, new x(1.5), new x(NaN), 1 !== x.length || et && !T
     })) {
     (M = function(e) {
-      return f(this, k), new L(h(e))
+      return f(this, k), new x(h(e))
     })[C] = k;
-    for (var en, er = v(L), ei = 0; er.length > ei;)(en = er[ei++]) in M || l(M, en, L[en]);
+    for (var en, er = v(x), ei = 0; er.length > ei;)(en = er[ei++]) in M || l(M, en, x[en]);
     k.constructor = M
-  } else et && T && l(L, "name", N);
+  } else et && T && l(x, "name", N);
   E && g(U) !== G && E(U, G);
   var eo = new j(new M(2)),
     ea = i(U.setInt8);
@@ -118,7 +118,7 @@ if (a) {
 } else k = (M = function(e) {
   f(this, k);
   var t = h(e);
-  x(this, {
+  L(this, {
     type: N,
     bytes: F(B(t), 0),
     byteLength: t
@@ -130,7 +130,7 @@ if (a) {
     a = p(t);
   if (a < 0 || a > i) throw Z("Wrong offset");
   if (n = void 0 === n ? i - a : _(n), a + n > i) throw Z(R);
-  x(this, {
+  L(this, {
     type: A,
     buffer: e,
     byteLength: n,

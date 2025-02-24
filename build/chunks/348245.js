@@ -84,7 +84,7 @@ function P(e) {
       jumpType: a
     });
     else {
-      if ((null == d ? void 0 : d.isThread()) && x(n)) return R.log("Jumping to start of thread ".concat(d.id)), c.Z.fetchMessages({
+      if ((null == d ? void 0 : d.isThread()) && L(n)) return R.log("Jumping to start of thread ".concat(d.id)), c.Z.fetchMessages({
         channelId: n,
         limit: T.AQB,
         jump: {
@@ -123,7 +123,7 @@ function P(e) {
 let w = 90 * S.Z.Millis.DAY,
   D = "viewedThreadIds";
 
-function x(e) {
+function L(e) {
   if (b.ZP.hasOpenedThread(e)) return !1;
   if (null == r) {
     var t;
@@ -136,7 +136,7 @@ function x(e) {
   return a.K.set(D, r), !0
 }
 
-function L() {
+function x() {
   let e = y.Z.getChannelId();
   if (null != e) {
     let n = E.Z.getChannel(e);
@@ -305,15 +305,15 @@ function Y(e) {
 }
 class K extends d.Z {
   _initialize() {
-    s.Z.subscribe("CONNECTION_OPEN", L)
+    s.Z.subscribe("CONNECTION_OPEN", x)
   }
   _terminate() {
-    s.Z.unsubscribe("CONNECTION_OPEN", L)
+    s.Z.unsubscribe("CONNECTION_OPEN", x)
   }
   constructor(...e) {
     super(...e), C(this, "fetchMessages", P), C(this, "loadSelectedChannelIfNecessary", M), C(this, "stores", new Map().set(g.ZP, G)), C(this, "actions", {
       APP_STATE_UPDATE: Y,
-      OVERLAY_INITIALIZE: L,
+      OVERLAY_INITIALIZE: x,
       CHANNEL_SELECT: k,
       VOICE_CHANNEL_SELECT: j,
       THREAD_CREATE: Z,

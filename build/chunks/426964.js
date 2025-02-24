@@ -77,32 +77,32 @@ let w = i.memo(function(e) {
     onClose: C,
     profileViewedAnalytics: w,
     userId: D
-  } = e, x = null == n ? void 0 : n.identityGuildId, L = (0, g.Cc)(null != x ? x : null), M = null == n ? void 0 : n.tag, {
+  } = e, L = null == n ? void 0 : n.identityGuildId, x = (0, g.Cc)(null != L ? L : null), M = null == n ? void 0 : n.tag, {
     newestAnalyticsLocation: k
   } = (0, l.ZP)(), j = i.useMemo(() => A({
     tagUserId: D,
     source: k
-  }, w), [D, k, w]), U = (0, a.e7)([p.default], () => p.default.getId()), G = (0, a.e7)([_.ZP], () => null != x ? _.ZP.getMember(x, U) : null, [x, U]), B = (0, a.e7)([u.Z], () => {
+  }, w), [D, k, w]), U = (0, a.e7)([p.default], () => p.default.getId()), G = (0, a.e7)([_.ZP], () => null != L ? _.ZP.getMember(L, U) : null, [L, U]), B = (0, a.e7)([u.Z], () => {
     var e;
-    return (null == L ? void 0 : L.id) != null && (null === (e = u.Z.getRequest(L.id)) || void 0 === e ? void 0 : e.applicationStatus) === c.wB.SUBMITTED
-  }), Z = null != L && L.memberCount >= O.Du, F = (0, a.e7)([h.default], () => h.default.getUser(U), [U]), V = (null == G ? void 0 : G.joinedAt) != null, H = (0, v.Z4)(x, null == F ? void 0 : F.primaryGuild), W = null != (0, d.Z)(x);
+    return (null == x ? void 0 : x.id) != null && (null === (e = u.Z.getRequest(x.id)) || void 0 === e ? void 0 : e.applicationStatus) === c.wB.SUBMITTED
+  }), Z = null != x && x.memberCount >= O.Du, F = (0, a.e7)([h.default], () => h.default.getUser(U), [U]), V = (null == G ? void 0 : G.joinedAt) != null, H = (0, v.Z4)(L, null == F ? void 0 : F.primaryGuild), W = null != (0, d.Z)(L);
   i.useEffect(() => {
-    null != x && (0, m.u0)(R(A({
-      guildId: x,
+    null != L && (0, m.u0)(R(A({
+      guildId: L,
       hasJoinRequest: W
     }, j), {
       location: s.Z.CLAN_GUILD_PROFILE
     }))
-  }, [x, W, j]);
+  }, [L, W, j]);
   let Y = i.useCallback(e => {
-      null != x && (e.stopPropagation(), e.preventDefault(), null == C || C(), (0, m.hM)(x, m.UE.TAG_ADOPTION), (0, E.SJ)(x))
-    }, [x, C]),
+      null != L && (e.stopPropagation(), e.preventDefault(), null == C || C(), (0, m.hM)(L, m.UE.TAG_ADOPTION), (0, E.SJ)(L))
+    }, [L, C]),
     K = i.useCallback(() => {
-      null != x && ((0, m.hM)(x, m.UE.APPLICATION), (0, f.uL)(S.Z5c.GUILD_MEMBER_VERIFICATION(x)))
-    }, [x]),
+      null != L && ((0, m.hM)(L, m.UE.APPLICATION), (0, f.uL)(S.Z5c.GUILD_MEMBER_VERIFICATION(L)))
+    }, [L]),
     z = i.useCallback(() => {
-      null != x && ((0, m.hM)(x, m.UE.GUILD), (0, f.XU)(x))
-    }, [x]),
+      null != L && ((0, m.hM)(L, m.UE.GUILD), (0, f.XU)(L))
+    }, [L]),
     q = i.useMemo(() => {
       var e, t;
       return {
@@ -110,9 +110,9 @@ let w = i.memo(function(e) {
         size: o.zxk.Sizes.SMALL,
         fullWidth: !0,
         className: T.button,
-        themeColor: null !== (t = null == L ? void 0 : null === (e = L.branding) || void 0 === e ? void 0 : e.primaryColor) && void 0 !== t ? t : null
+        themeColor: null !== (t = null == x ? void 0 : null === (e = x.branding) || void 0 === e ? void 0 : e.primaryColor) && void 0 !== t ? t : null
       }
-    }, [null == L ? void 0 : null === (t = L.branding) || void 0 === t ? void 0 : t.primaryColor]),
+    }, [null == x ? void 0 : null === (t = x.branding) || void 0 === t ? void 0 : t.primaryColor]),
     Q = i.useMemo(() => {
       var e;
       switch (!0) {
@@ -122,7 +122,7 @@ let w = i.memo(function(e) {
           }, q), {
             children: I.NW.string(I.t.dXvKgY)
           }));
-        case !V && (null == L ? void 0 : null === (e = L.discoveryProfileFeatures) || void 0 === e ? void 0 : e.has(S.oNc.CLAN_DISCOVERY_DISABLED)):
+        case !V && (null == x ? void 0 : null === (e = x.discoveryProfileFeatures) || void 0 === e ? void 0 : e.has(S.oNc.CLAN_DISCOVERY_DISABLED)):
           return null;
         case V && !H:
           return (0, r.jsx)(y.Z, R(A({
@@ -139,18 +139,18 @@ let w = i.memo(function(e) {
         default:
           return null
       }
-    }, [V, W, null == L ? void 0 : L.discoveryProfileFeatures, H, K, q, Y, z]),
+    }, [V, W, null == x ? void 0 : x.discoveryProfileFeatures, H, K, q, Y, z]),
     X = i.useMemo(() => ({
       className: T.container,
       onClick: P
     }), []);
-  if (null == M || null == L || null == x || N) return (0, r.jsx)("div", R(A({}, X), {
+  if (null == M || null == x || null == L || N) return (0, r.jsx)("div", R(A({}, X), {
     children: (0, r.jsx)(o.$jN, {})
   }));
   let J = null != Q;
   return (0, r.jsxs)("div", R(A({}, X), {
     children: [(0, r.jsx)(b.x, {
-      clan: L,
+      clan: x,
       className: T.cardContainer,
       isMember: V,
       hasPendingJoinRequest: B,

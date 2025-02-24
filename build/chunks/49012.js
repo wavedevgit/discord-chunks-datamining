@@ -46,10 +46,10 @@ function R(e, t) {
       onCancel: P,
       shouldConfirm: w,
       messageId: D,
-      channelId: x
+      channelId: L
     } = e,
-    L = i().sanitizeUrl(e.href);
-  if (null == L) {
+    x = i().sanitizeUrl(e.href);
+  if (null == x) {
     null != t && t.preventDefault(), o.Z.show({
       title: A.NW.string(A.t.x87gam),
       body: A.NW.format(A.t["9rqRws"], {
@@ -60,21 +60,21 @@ function R(e, t) {
     });
     return
   }
-  let M = L;
+  let M = x;
   try {
-    decodeURI(L)
+    decodeURI(x)
   } catch (e) {
-    M = encodeURI(L)
+    M = encodeURI(x)
   }
   let k = null,
     j = !1,
     U = D,
-    G = x,
+    G = L,
     B = null;
-  if (null != D && null != x) {
+  if (null != D && null != L) {
     var Z, F, V;
-    let e = O.Z.getMessage(x, D),
-      t = E.Z.getBasicChannel(x);
+    let e = O.Z.getMessage(L, D),
+      t = E.Z.getBasicChannel(L);
     k = null !== (V = null == t ? void 0 : t.guild_id) && void 0 !== V ? V : null;
     let n = v.Z.getGuild(k),
       r = (null == e ? void 0 : null === (Z = e.messageReference) || void 0 === Z ? void 0 : Z.guild_id) != null && (null == e ? void 0 : e.webhookId) != null && (null == e ? void 0 : e.hasFlag(N.iLy.IS_CROSSPOST)) && null != k;
@@ -83,14 +83,14 @@ function R(e, t) {
       o = (null == e ? void 0 : e.hasFlag(N.iLy.EPHEMERAL)) === !0;
     j = null != e && !o && (r || i)
   }
-  if (null != x) {
-    let e = E.Z.getChannel(x),
+  if (null != L) {
+    let e = E.Z.getChannel(L),
       t = v.Z.getGuild(null == e ? void 0 : e.getGuildId());
     null != e && null != t && t.hasFeature(N.oNc.DISCOVERABLE) && T.default.track(N.rMx.URL_CLICKED, {
       url_domain: (0, y.F)(M),
       guild_id: t.id,
       channel_id: e.id
-    }), (0, u.Z)(x) && T.default.track(N.rMx.CHANGE_LOG_CTA_CLICKED, {
+    }), (0, u.Z)(L) && T.default.track(N.rMx.CHANGE_LOG_CTA_CLICKED, {
       cta_type: "inline_link",
       target: M
     })
@@ -109,7 +109,7 @@ function R(e, t) {
   let H = () => {
       if (j && p.Z.trackAnnouncementMessageLinkClicked({
           messageId: U,
-          channelId: x,
+          channelId: L,
           guildId: k,
           sourceChannelId: G,
           sourceGuildId: B
@@ -137,7 +137,7 @@ function R(e, t) {
   if (!z && (Y || b.Z.isTrustedDomain(M)) || z && b.Z.isTrustedProtocol(M)) {
     null == t || null != w && w ? H() : j && p.Z.trackAnnouncementMessageLinkClicked({
       messageId: U,
-      channelId: x,
+      channelId: L,
       guildId: k,
       sourceChannelId: G,
       sourceGuildId: B

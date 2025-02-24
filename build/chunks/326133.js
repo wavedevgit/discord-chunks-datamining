@@ -84,8 +84,8 @@ function P(e, t) {
 }
 let w = 490,
   D = 490,
-  x = 245,
-  L = 200,
+  L = 245,
+  x = 200,
   M = 175,
   k = i.forwardRef(function(e, t) {
     var n, o, T, A, P;
@@ -140,7 +140,7 @@ let w = 490,
         [I.autocompleteTop]: Q
       },
       ee = w;
-    null != q && (ee = (null === (T = j.autocomplete) || void 0 === T ? void 0 : T.small) ? L : (null === (A = V.query) || void 0 === A ? void 0 : A.type) === b.eq.EMOJIS_AND_STICKERS ? D : x), ee = Math.min(window.innerHeight - M, ee);
+    null != q && (ee = (null === (T = j.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (A = V.query) || void 0 === A ? void 0 : A.type) === b.eq.EMOJIS_AND_STICKERS ? D : L), ee = Math.min(window.innerHeight - M, ee);
     let et = (0, r.jsx)(p.ZP, {
       id: B,
       className: a()(I.autocomplete, $),

@@ -35,8 +35,8 @@ var r = n(200651),
   P = n(474936),
   w = n(874893),
   D = n(526761),
-  x = n(231338),
-  L = n(388032),
+  L = n(231338),
+  x = n(388032),
   M = n(77500);
 
 function k(e, t, n) {
@@ -120,14 +120,14 @@ let Z = Object.freeze({
       type: "EDITOR",
       isCoachmark: !0,
       isPreview: !0
-    }, () => L.NW.string(L.t.D29k19)).with({
+    }, () => x.NW.string(x.t.D29k19)).with({
       type: "EDITOR",
       isCoachmark: !0
-    }, () => L.NW.string(L.t["8+vbqa"])).with({
+    }, () => x.NW.string(x.t["8+vbqa"])).with({
       appearanceUpsellExperimentEnabled: !0
-    }, () => L.NW.string(L.t.Ksh3io)).with({
+    }, () => x.NW.string(x.t.Ksh3io)).with({
       isVisualRefreshEnabled: !0
-    }, () => L.NW.string(L.t.hjV0fX)).otherwise(() => L.NW.string(L.t.OCOOiI));
+    }, () => x.NW.string(x.t.hjV0fX)).otherwise(() => x.NW.string(x.t.OCOOiI));
     return (0, r.jsxs)("div", {
       className: M.title,
       children: [(0, r.jsx)(u.X6q, {
@@ -162,19 +162,19 @@ let Z = Object.freeze({
     }).with({
       type: "EDITOR",
       isPreview: !0
-    }, () => L.NW.format(L.t.G8yQXl, {
+    }, () => x.NW.format(x.t.G8yQXl, {
       onPremiumClick: () => g.z
     })).with({
       type: "EDITOR",
       isCoachmark: !0
-    }, () => L.NW.string(L.t.jmZiNj)).with({
+    }, () => x.NW.string(x.t.jmZiNj)).with({
       type: "EDITOR",
       isPreview: !1
-    }, () => L.NW.string(L.t.dqDFwc)).with({
+    }, () => x.NW.string(x.t.dqDFwc)).with({
       isPreview: !0
-    }, () => L.NW.format(L.t.DWIjJy, {
+    }, () => x.NW.format(x.t.DWIjJy, {
       onPremiumClick: () => g.z
-    })).otherwise(() => L.NW.string(L.t["np0X/v"]));
+    })).otherwise(() => x.NW.string(x.t["np0X/v"]));
     return c ? (0, r.jsxs)("div", {
       className: M.description,
       children: [(0, r.jsx)(u.SrA, {
@@ -183,7 +183,7 @@ let Z = Object.freeze({
         className: M.nitroWheel
       }), (0, r.jsx)(u.X6q, {
         variant: "text-sm/normal",
-        children: L.NW.format(L.t.x2dQxM, {
+        children: x.NW.format(x.t.x2dQxM, {
           onClick: () => {
             (0, g.$)()
           }
@@ -207,7 +207,7 @@ let Z = Object.freeze({
       children: "EDITOR" === s && c && u ? (0, r.jsx)(b.ZP, {
         type: P.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
         subscriptionTier: P.Si.TIER_2,
-        children: L.NW.format(L.t.G8yQXl, {
+        children: x.NW.format(x.t.G8yQXl, {
           onPremiumClick: () => g.z
         })
       }) : (0, r.jsxs)("div", {
@@ -366,22 +366,22 @@ let Z = Object.freeze({
         isSelected: c && u,
         onSelect: () => f("system")
       }), (0, r.jsx)(A.bD, {
-        theme: x.BR.LIGHT,
-        isSelected: c && !u && s === x.BR.LIGHT,
-        onSelect: () => f(x.BR.LIGHT)
+        theme: L.BR.LIGHT,
+        isSelected: c && !u && s === L.BR.LIGHT,
+        onSelect: () => f(L.BR.LIGHT)
       }), (0, r.jsx)(A.bD, {
-        theme: x.BR.DARK,
-        isSelected: c && !u && s === x.BR.DARK,
-        onSelect: () => f(x.BR.DARK)
+        theme: L.BR.DARK,
+        isSelected: c && !u && s === L.BR.DARK,
+        onSelect: () => f(L.BR.DARK)
       }), h && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(A.bD, {
-          theme: x.BR.DARKER,
-          isSelected: c && !u && s === x.BR.DARKER,
-          onSelect: () => f(x.BR.DARKER)
+          theme: L.BR.DARKER,
+          isSelected: c && !u && s === L.BR.DARKER,
+          onSelect: () => f(L.BR.DARKER)
         }), (0, r.jsx)(A.bD, {
-          theme: x.BR.MIDNIGHT,
-          isSelected: c && !u && s === x.BR.MIDNIGHT,
-          onSelect: () => f(x.BR.MIDNIGHT)
+          theme: L.BR.MIDNIGHT,
+          isSelected: c && !u && s === L.BR.MIDNIGHT,
+          onSelect: () => f(L.BR.MIDNIGHT)
         })]
       }), !n && !t && (0, r.jsx)(A.bD, {
         theme: "system",
@@ -417,7 +417,7 @@ let Z = Object.freeze({
       }), t && o && (0, r.jsx)(u.X6q, {
         className: M.upsellText,
         variant: "heading-sm/semibold",
-        children: L.NW.string(L.t.POSLGR)
+        children: x.NW.string(x.t.POSLGR)
       }), (0, r.jsxs)("div", {
         className: a()(M.presets, {
           [M.presetsJustify]: t

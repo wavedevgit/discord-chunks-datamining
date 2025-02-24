@@ -131,7 +131,7 @@ function D(e) {
     lastUpdated: Date.now()
   })
 }
-async function x(e) {
+async function L(e) {
   await (0, c._v)(200), null != C(e) && A(e, {
     requestState: 3,
     abortController: null,
@@ -139,7 +139,7 @@ async function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   A(e, {
     requestState: 4,
     abortController: null,
@@ -339,7 +339,7 @@ async function H(e) {
     D(s);
     return
   }
-  await x(s)
+  await L(s)
 }
 
 function W(e) {
@@ -384,13 +384,13 @@ class K extends u.Z {
     let {
       guildId: t
     } = e;
-    return x(I(t))
+    return L(I(t))
   }
   handleGuildMemberSearchStillIndexing(e) {
     let {
       guildId: t
     } = e;
-    return L(I(t))
+    return x(I(t))
   }
   handleNewMemberTimestampRefresh(e) {
     let {

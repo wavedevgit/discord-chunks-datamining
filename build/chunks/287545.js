@@ -34,8 +34,8 @@ var i = n(772848),
   P = n(115130),
   w = n(566620),
   D = n(317381),
-  x = n(969345),
-  L = n(155268),
+  L = n(969345),
+  x = n(155268),
   M = n(148720),
   k = n(122613),
   j = n(782769),
@@ -124,7 +124,7 @@ async function ee(e) {
   if (null == c || null == u || null == d) return;
   let f = u.getGuildId(),
     p = D.ZP.getShelfActivities(f),
-    h = (0, x.Z)({
+    h = (0, L.Z)({
       applicationId: r,
       activityConfigs: p
     }),
@@ -177,12 +177,12 @@ function et(e) {
   if (null == N || A) return;
   let P = (0, i.Z)(),
     w = "location" in u ? 2 : 1,
-    L = null == v ? void 0 : v.getGuildId(),
+    x = null == v ? void 0 : v.getGuildId(),
     M = I.default.getCurrentUser();
   if (null == v || null == M) return;
-  let k = D.ZP.getShelfActivities(L),
+  let k = D.ZP.getShelfActivities(x),
     j = R.Z.getState().shelfOrder,
-    G = (0, x.Z)({
+    G = (0, L.Z)({
       applicationId: o,
       activityConfigs: k
     }),
@@ -287,7 +287,7 @@ class er extends c.Z {
         nonce: t,
         applicationId: n
       } = e;
-      J(n, t), (0, L.n9)() && this.showDevShelfOverrideEnabled()
+      J(n, t), (0, x.n9)() && this.showDevShelfOverrideEnabled()
     }), H(this, "handleActivityLaunchFail", async e => {
       let t, n, r, {
           error: i,
@@ -420,7 +420,7 @@ class er extends c.Z {
         } = await (0, w.w1)({
           guildId: p
         });
-      if (null == (0, x.Z)({
+      if (null == (0, L.Z)({
           applicationId: o,
           activityConfigs: _,
           applications: h
@@ -429,7 +429,7 @@ class er extends c.Z {
           guildId: p,
           force: !0
         });
-        (0, x.Z)({
+        (0, L.Z)({
           applicationId: o,
           activityConfigs: e.activityConfigs,
           applications: e.applications

@@ -34,9 +34,9 @@ let T = 3e5,
   w = 512,
   D = 288;
 P.width = w, P.height = D;
-let x = P.getContext("2d");
+let L = P.getContext("2d");
 
-function L() {
+function x() {
   C.stop(), null != r && (u.Z.removeSink(r, A), r = null)
 }
 let M = s().debounce((e, t, n, r) => {
@@ -58,7 +58,7 @@ function k(e) {
   i.width = e.width, i.height = e.height;
   let a = new ImageData(e.data, e.width, e.height);
   return null == o || o.putImageData(a, 0, 0), new Promise(t => {
-    null == x || x.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r), t()
+    null == L || L.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r), t()
   })
 }
 async function j(e, t) {
@@ -154,7 +154,7 @@ function B(e, t) {
 }
 let Z = {
   init() {
-    p.Z.subscribe("CONNECTION_OPEN", L), p.Z.subscribe("LOGOUT", L), p.Z.subscribe("STREAM_DELETE", L), p.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
+    p.Z.subscribe("CONNECTION_OPEN", x), p.Z.subscribe("LOGOUT", x), p.Z.subscribe("STREAM_DELETE", x), p.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
       let {
         guildId: t,
         channelId: n,
@@ -162,7 +162,7 @@ let Z = {
         streamId: o,
         context: a
       } = e;
-      null == o || a !== I.Yn.STREAM || i !== E.default.getId() || __OVERLAY__ || (L(), r = o, M(o, t, n, i))
+      null == o || a !== I.Yn.STREAM || i !== E.default.getId() || __OVERLAY__ || (x(), r = o, M(o, t, n, i))
     }), p.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
       let {
         videoState: t

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => L
 }), n(86693), n(536091), n(411104), n(47120), n(789020);
 var r = n(392711),
   i = n.n(r),
@@ -130,7 +130,7 @@ function D(e, t, n) {
     removedRoleIds: n
   })
 }
-let x = {
+let L = {
   selectOption(e, t, n, r) {
     let o = y.Z.getOnboardingPrompt(t);
     if (null == o) return;
@@ -174,8 +174,8 @@ let x = {
       }), (0, u.og)(e, Array.from(i));
       let t = h.default.getCurrentUser();
       if (null != t) {
-        var x, L;
-        let n = null !== (L = null === (x = _.ZP.getMember(e, t.id)) || void 0 === x ? void 0 : x.flags) && void 0 !== L ? L : 0;
+        var L, x;
+        let n = null !== (x = null === (L = _.ZP.getMember(e, t.id)) || void 0 === L ? void 0 : L.flags) && void 0 !== x ? x : 0;
         (0, u.aq)(e, {
           memberOptions: {
             flags: (0, g.mB)(n, T.q.COMPLETED_ONBOARDING, !0)

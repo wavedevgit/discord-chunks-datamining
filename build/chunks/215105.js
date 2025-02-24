@@ -87,8 +87,8 @@ function A(e) {
     resetInteraction: w,
     setInteractionToast: D
   } = (0, g.Xo)(), {
-    primaryColor: x
-  } = (0, v.z)(), [L, M] = i.useState(""), [k, j] = i.useState((0, u.JM)(L)), U = i.useRef(!1), G = i.useRef(null), B = i.useCallback(e => {
+    primaryColor: L
+  } = (0, v.z)(), [x, M] = i.useState(""), [k, j] = i.useState((0, u.JM)(x)), U = i.useRef(!1), G = i.useRef(null), B = i.useCallback(e => {
     e.key === y.vn.ESCAPE && (e.stopPropagation(), w())
   }, [w]);
   i.useEffect(() => {
@@ -135,7 +135,7 @@ function A(e) {
     onKeyDown: B,
     children: (0, r.jsx)("div", {
       className: a()(S.container, F, V, {
-        [S.customProfileTheme]: null != x
+        [S.customProfileTheme]: null != L
       }),
       children: (0, r.jsx)(d.Z, {
         parentModalKey: A,
@@ -148,10 +148,10 @@ function A(e) {
           username: _.ZP.getName(n, o, t)
         }),
         channel: I,
-        textValue: L,
+        textValue: x,
         richValue: k,
         onChange: (e, t, n) => {
-          t !== L && (M(t), j(n))
+          t !== x && (M(t), j(n))
         },
         focused: U.current,
         onFocus: () => {

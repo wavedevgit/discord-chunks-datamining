@@ -84,7 +84,7 @@ function f(e) {
         null != e ? (w(e), A(!1)) : requestAnimationFrame(() => A(!0))
       })
     }, [t, h, w]),
-    x = r.useCallback(function() {
+    L = r.useCallback(function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
         [n, r] = null != m ? m(f, p) : [f, p];
       if ((n !== f || r !== p) && (g({
@@ -98,9 +98,9 @@ function f(e) {
       let o = u(c(t, n, r));
       null != o && (R(!0), w(o))
     }, [g, f, p, m, t, w]),
-    [L, M] = r.useState(!1);
+    [x, M] = r.useState(!1);
   r.useEffect(() => {
-    if (!L || !I) return;
+    if (!x || !I) return;
     M(!1);
     let e = u(c(t, f, p));
     if (null != e) {
@@ -110,7 +110,7 @@ function f(e) {
     T(!1);
     let n = u(c(t));
     null != n && w(n)
-  }, [t, L, I, w, f, p]);
+  }, [t, x, I, w, f, p]);
   let k = r.useCallback(e => {
     O.current && null == e && M(!0)
   }, []);
@@ -122,7 +122,7 @@ function f(e) {
   let j = r.useCallback(e => {
       if (!O.current) return;
       if (!y && s.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
-        e.preventDefault(), e.stopPropagation(), x();
+        e.preventDefault(), e.stopPropagation(), L();
         return
       }
       let t = l(e);
@@ -145,8 +145,8 @@ function f(e) {
             type: t
           }), null != _ ? _(f, p, e) : null != S && S.click()
       }
-    }, [x, g, b, S, _, f, p]),
-    U = r.useCallback(e => e.currentTarget !== e.target ? (I || (T(!0), R(!0)), !1) : I ? (x(!1), !1) : void(E && null != S ? D(f, p) : x(!0)), [I, E, S, x, D, f, p]),
+    }, [L, g, b, S, _, f, p]),
+    U = r.useCallback(e => e.currentTarget !== e.target ? (I || (T(!0), R(!0)), !1) : I ? (L(!1), !1) : void(E && null != S ? D(f, p) : L(!0)), [I, E, S, L, D, f, p]),
     G = r.useCallback(e => {
       if (e.target !== e.currentTarget) {
         if (e.currentTarget.contains(e.relatedTarget)) return !1;

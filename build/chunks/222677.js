@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $E: () => x,
+  $E: () => L,
   T6: () => w,
   TW: () => I,
   U0: () => R,
-  WO: () => L,
+  WO: () => x,
   rU: () => P,
   wX: () => D
 });
@@ -256,7 +256,7 @@ async function D(e, t, n) {
     })
   })
 }
-async function x(e, t, n, i) {
+async function L(e, t, n, i) {
   let o = null != i && !!i.isRetry;
   await c.Z.unarchiveThreadIfNecessary(e);
   let a = null === n.id ? n.name : "".concat(n.name, ":").concat(n.id);
@@ -265,14 +265,14 @@ async function x(e, t, n, i) {
     oldFormErrors: !0,
     rejectWithError: !1
   }).catch(r => {
-    T(r, () => x(e, t, n, {
+    T(r, () => L(e, t, n, {
       isRetry: !0
     }), {
       isRetry: o
     })
   })
 }
-async function L(e) {
+async function x(e) {
   let {
     channelId: t,
     messageId: n,
@@ -306,7 +306,7 @@ async function L(e) {
       name: o.name
     }))
   }).catch(async e => {
-    if (T(e, () => L({
+    if (T(e, () => x({
         channelId: t,
         messageId: n,
         emoji: o,

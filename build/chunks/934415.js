@@ -4,8 +4,8 @@ n.d(t, {
   EO: () => G,
   LY: () => k,
   Nj: () => o.Z,
-  a5: () => L,
-  c4: () => x,
+  a5: () => x,
+  c4: () => L,
   g7: () => w,
   jZ: () => A,
   mE: () => B,
@@ -124,7 +124,7 @@ function D(e) {
   }), o
 }
 
-function x(e) {
+function L(e) {
   let {
     channels: t,
     selectedChannelId: n,
@@ -139,7 +139,7 @@ function x(e) {
   }).map(e => e.user)
 }
 
-function L(e) {
+function x(e) {
   let {
     type: t
   } = e;

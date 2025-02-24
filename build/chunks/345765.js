@@ -48,7 +48,7 @@ function D() {
   return Math.random() * (e + 1) * I
 }
 
-function x(e, t) {
+function L(e, t) {
   o.Z.dispatch({
     type: "CONTENT_INVENTORY_SET_FEED_STATE",
     feedId: e,
@@ -56,7 +56,7 @@ function x(e, t) {
   })
 }
 
-function L(e) {
+function x(e) {
   if (C.has(e) || e === b.YN.GAME_PROFILE_FEED && (!(0, s._J)("ContentInventoryManager") || void 0 !== v.Z.getFeed(e))) return !1;
   if (e === T) {
     if (!(0, m.sA)("ContentInventoryManager") || E.Z.hidden && null != v.Z.getFeed(e) || !_.Z.isFocused() || !l.Z.isConnected()) return !1;
@@ -67,7 +67,7 @@ function L(e) {
 }
 
 function M(e) {
-  x(e, {
+  L(e, {
     loading: !1
   });
   let t = A.get(e);
@@ -77,12 +77,12 @@ function M(e) {
 function k() {
   var e;
   let t = null !== (e = R.get(T)) && void 0 !== e ? e : 0;
-  if (t > 0 && t <= S || (M(T), !L(T))) return;
+  if (t > 0 && t <= S || (M(T), !x(T))) return;
   let n = v.Z.getFeed(T);
   if ((null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null && null == P) return;
   let r = (null == n ? void 0 : n.expired_at) == null ? 0 : new Date(n.expired_at).getTime() - Date.now(),
     o = Math.max(0, null == P ? 0 : new Date(P).getTime() - Date.now(), r) + (t > 0 ? D() : 0);
-  x(T, {
+  L(T, {
     loading: !1,
     nextFetchDate: new Date(Date.now() + o)
   }), A.set(T, setTimeout(() => j({
@@ -96,9 +96,9 @@ async function j(e) {
     feature: n,
     force: r = !1
   } = e;
-  if (L(t) || r) try {
+  if (x(t) || r) try {
     let e = v.Z.getFeed(t);
-    C.add(t), x(t, {
+    C.add(t), L(t, {
       loading: !0
     });
     let r = await (0, g.mt)({
@@ -110,7 +110,7 @@ async function j(e) {
       type: "CONTENT_INVENTORY_SET_FEED",
       feedId: t,
       feed: r
-    }), R.set(t, 0), C.delete(t), x(t, {
+    }), R.set(t, 0), C.delete(t), L(t, {
       loading: !1
     }), t === T && (P = null, k())
   } catch (a) {

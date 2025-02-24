@@ -159,11 +159,11 @@ function D(e) {
   i = t.id, k(n)
 }
 
-function x() {
+function L() {
   r = void 0, i = void 0
 }
 
-function L(e) {
+function x(e) {
   let {
     modalKey: t
   } = e;
@@ -239,8 +239,8 @@ let G = new U(s.Z, {
   MESSAGE_CREATE: C,
   CHANNEL_SELECT: P,
   INTERACTION_IFRAME_MODAL_CREATE: D,
-  INTERACTION_IFRAME_MODAL_CLOSE: x,
-  INTERACTION_IFRAME_MODAL_KEY_CREATE: L,
+  INTERACTION_IFRAME_MODAL_CLOSE: L,
+  INTERACTION_IFRAME_MODAL_KEY_CREATE: x,
   INTERACTION_MODAL_CREATE: w,
   EMBEDDED_ACTIVITY_UPDATE_V2: M
 })

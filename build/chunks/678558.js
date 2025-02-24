@@ -92,8 +92,8 @@ let C = e => {
     applicationId: P,
     handleSubscribeModalClose: w,
     withHighlight: D = !1,
-    icon: x
-  } = e, L = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon"]), {
+    icon: L
+  } = e, x = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon"]), {
     analyticsLocations: M
   } = (0, u.ZP)(), k = (0, c.bp)() === E.IlC.POPOUT, [j, U] = i.useState(!1), {
     fractionalState: G
@@ -119,7 +119,7 @@ let C = e => {
       }), U(!1)
     }, W = h.ZP.getPremiumTypeSubscription(), Y = (0, r.jsxs)("div", {
       className: y.button,
-      children: [x, null != O ? O : b.NW.string(b.t.gKmQ1N)]
+      children: [L, null != O ? O : b.NW.string(b.t.gKmQ1N)]
     });
   return ((null == W ? void 0 : W.isPausedOrPausePending) && (G === v.a$.NONE || 0 === Z.length) && (Y = (0, r.jsxs)("div", {
     className: y.button,
@@ -127,20 +127,20 @@ let C = e => {
       size: "xs",
       className: y.buttonIcon
     }), " ", Y]
-  }), L.disabled = !0), null != V) ? (0, r.jsx)(f.Z, {
+  }), x.disabled = !0), null != V) ? (0, r.jsx)(f.Z, {
     text: B ? void 0 : V,
     "aria-label": !1,
     children: e => (0, r.jsx)(s.gtL, T(S(T(S({}, e), {
       disabled: !0,
       size: s.zxk.Sizes.SMALL,
       pauseAnimation: R
-    }), L), {
+    }), x), {
       children: Y
     }))
   }) : (0, r.jsx)(s.gtL, T(S({
     size: s.zxk.Sizes.SMALL
-  }, L), {
-    className: a()(L.className, {
+  }, x), {
+    className: a()(x.className, {
       [y.buttonHighlighted]: D
     }),
     submitting: j,

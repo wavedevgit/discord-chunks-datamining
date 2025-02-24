@@ -155,7 +155,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     targetId: t
   } = e, n = I.getNode(t);
@@ -166,7 +166,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t,
     joinedAt: n,
@@ -258,12 +258,12 @@ class V extends E.Z {
       CACHE_LOADED: () => this.loadCache(),
       GUILD_CREATE: C,
       GUILD_DELETE: C,
-      GUILD_MEMBER_ADD: L,
+      GUILD_MEMBER_ADD: x,
       USER_SETTINGS_PROTO_UPDATE: R,
       GUILD_MOVE_BY_ID: P,
       GUILD_FOLDER_CREATE_LOCAL: w,
       GUILD_FOLDER_EDIT_LOCAL: D,
-      GUILD_FOLDER_DELETE_LOCAL: x,
+      GUILD_FOLDER_DELETE_LOCAL: L,
       TOGGLE_GUILD_FOLDER_EXPAND: M,
       SET_GUILD_FOLDER_EXPANDED: k,
       GUILD_FOLDER_COLLAPSE: j

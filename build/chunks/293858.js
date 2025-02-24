@@ -30,8 +30,8 @@ function E(e) {
       onSubscriptionConfirmation: N,
       renderPurchaseConfirmation: y,
       postSuccessGuild: I,
-      followupSKUInfo: v,
-      continueSessionToInitialStep: O
+      followupSKUInfo: O,
+      continueSessionToInitialStep: v
     } = e,
     {
       activeSubscription: P,
@@ -76,7 +76,7 @@ function E(e) {
     null != z && null != z.reminderNotice && X && (0, o.wH)(a.z.GIFTING_PROMOTION_REMINDER, z.dismissibleContentVersion, {
       dismissAction: g.L.INDIRECT_ACTION
     })
-  }, [z, X]), s = null != y ? y(M, J, k) : null != O ? (0, l.jsx)(u.VY, {}) : A ? (0, l.jsx)(u.TB, {
+  }, [z, X]), s = null != y ? y(M, J, k) : null != v ? (0, l.jsx)(u.VY, {}) : A ? (0, l.jsx)(u.TB, {
     planId: M.id,
     onClose: J
   }) : U.current === M.id ? (0, l.jsx)(u.ZP, {
@@ -86,7 +86,7 @@ function E(e) {
     paymentSourceType: null === (t = b[null != T ? T : ""]) || void 0 === t ? void 0 : t.type,
     hideClose: K
   }) : (0, l.jsx)(u.ZP, {
-    followupSKUInfo: v,
+    followupSKUInfo: O,
     startingPremiumSubscriptionPlanId: U.current,
     planId: M.id,
     onClose: J,

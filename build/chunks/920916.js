@@ -34,8 +34,8 @@ var r = n(200651),
   P = n(114732),
   w = n(46140),
   D = n(675654),
-  x = n(388032),
-  L = n(955617);
+  L = n(388032),
+  x = n(955617);
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -107,12 +107,12 @@ function Z(e) {
     decoration: _,
     onUseNow: h,
     preview: g
-  } = e, E = i.useRef(null), [v, b] = i.useState(null), y = i.useRef(new s.qA), S = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), T = (0, c.e7)([O.default], () => O.default.getCurrentUser()), A = i.useMemo(() => (0, C.fh)(l, C.eC.HERO), [l]), R = (null === (t = l.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [w, x] = i.useState(!0 === g || R ? "claimed" : "loading");
+  } = e, E = i.useRef(null), [v, b] = i.useState(null), y = i.useRef(new s.qA), S = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), T = (0, c.e7)([O.default], () => O.default.getCurrentUser()), A = i.useMemo(() => (0, C.fh)(l, C.eC.HERO), [l]), R = (null === (t = l.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [w, L] = i.useState(!0 === g || R ? "claimed" : "loading");
   i.useEffect(() => {
-    R || !0 === g || (0, I.QB)(l.id, N.y$.CROSS_PLATFORM, d).then(() => x("claimed")).catch(() => x("error"))
+    R || !0 === g || (0, I.QB)(l.id, N.y$.CROSS_PLATFORM, d).then(() => L("claimed")).catch(() => L("error"))
   }, [l, d, R, g]);
   let M = () => {
-      x("applying"), h().finally(o)
+      L("applying"), h().finally(o)
     },
     k = !0 === g && null === _ && (null == p ? void 0 : p.skuId) !== "",
     j = null == _ && !0 !== g,
@@ -121,21 +121,21 @@ function Z(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
       ref: b,
-      className: L.confettiCanvas,
+      className: x.confettiCanvas,
       environment: y.current
     }), (0, r.jsx)("div", {
       ref: E,
       children: (0, r.jsx)(u.Y0X, {
         transitionState: n,
         size: u.CgR.DYNAMIC,
-        className: a()(L.rootContainer, {
-          [L.rootContainerLoading]: U
+        className: a()(x.rootContainer, {
+          [x.rootContainerLoading]: U
         }),
         hideShadow: !0,
         children: "error" === w ? (0, r.jsx)(P.Z, {
           onClose: o
         }) : U ? (0, r.jsx)("div", {
-          className: L.loadingIndicatorWrapper,
+          className: x.loadingIndicatorWrapper,
           children: (0, r.jsx)(u.$jN, {
             type: u.$jN.Type.SPINNING_CIRCLE
           })
@@ -163,11 +163,11 @@ function F(e) {
     quest: t
   } = e, n = i.useMemo(() => (0, C.fh)(t, C.eC.LOGO_TYPE, "dark"), [t]), o = R.r.build(t.config).defaultRewardRedemptionInstructionsByPlatform[N.y$.CROSS_PLATFORM];
   return (0, r.jsxs)("div", {
-    className: L.additionalRedemptionInstructions,
+    className: x.additionalRedemptionInstructions,
     children: [(0, r.jsx)("img", {
       src: n.url,
       alt: "",
-      className: L.sponsorLogo
+      className: x.sponsorLogo
     }), (0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
       color: "always-white",
@@ -189,11 +189,11 @@ function V(e) {
     onConfirm: l
   } = e, c = (0, C.fh)(t, C.eC.REWARD).url, d = (0, T.Qy)(t.config);
   return (0, r.jsxs)("div", {
-    className: L.claimedRootContainer,
+    className: x.claimedRootContainer,
     children: [(0, r.jsxs)("div", {
-      className: L.headerContainer,
+      className: x.headerContainer,
       children: [(0, r.jsx)(g.Z, {
-        className: L.headerBackground,
+        className: x.headerBackground,
         autoPlay: !1,
         loop: !1,
         muted: !0,
@@ -201,9 +201,9 @@ function V(e) {
         controls: !1,
         poster: o
       }), (0, r.jsx)("div", {
-        className: L.headerForeground,
+        className: x.headerForeground,
         children: (0, r.jsx)(u.olH, {
-          className: L.close,
+          className: x.close,
           withCircleBackground: !0,
           onClick: s
         })
@@ -211,9 +211,9 @@ function V(e) {
     }), (0, r.jsx)(u.mzw, {
       separator: !1,
       children: (0, r.jsxs)("div", {
-        className: L.footerBody,
+        className: x.footerBody,
         children: [(0, r.jsx)("div", {
-          className: L.previewContainer,
+          className: x.previewContainer,
           children: (0, r.jsx)(_.Z, {
             user: n,
             guildId: null,
@@ -224,17 +224,17 @@ function V(e) {
         }), (0, r.jsx)(u.X6q, {
           variant: "heading-lg/bold",
           color: "header-primary",
-          className: L.heading,
-          children: x.NW.string(x.t["0/Yz+f"])
+          className: x.heading,
+          children: L.NW.string(L.t["0/Yz+f"])
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-normal",
-          className: L.text,
+          className: x.text,
           children: d
         }), (0, r.jsx)(u.zxk, {
           submitting: a,
           onClick: l,
-          children: x.NW.string(x.t.MAS7uL)
+          children: L.NW.string(L.t.MAS7uL)
         }), (0, A.zK)(t, w.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(F, {
           quest: t
         })]

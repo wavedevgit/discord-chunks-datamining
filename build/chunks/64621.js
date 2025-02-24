@@ -47,8 +47,8 @@ function N(e) {
       type: t
     } = e;
     return t === E.IIU.CUSTOM_STATUS
-  })), D = !P && A === g.y0.BITE_SIZE && (0, o.EQ)(t).with(g.n_.AVATAR, () => R && null == w).with(g.n_.STATUS, () => R).with(g.n_.ACTIVITY, () => !R && C).exhaustive(), [x, L] = i.useState(!1);
-  (0, c.Z)(() => L(!0), D ? S : null);
+  })), D = !P && A === g.y0.BITE_SIZE && (0, o.EQ)(t).with(g.n_.AVATAR, () => R && null == w).with(g.n_.STATUS, () => R).with(g.n_.ACTIVITY, () => !R && C).exhaustive(), [L, x] = i.useState(!1);
+  (0, c.Z)(() => x(!0), D ? S : null);
   let {
     asset: M,
     assetClassName: k,
@@ -73,7 +73,7 @@ function N(e) {
     header: v.NW.string(v.t.XDBiPT),
     spacing: I,
     dismissibleContentType: s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
-  }, F = (0, u.N)(s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), V = x && !F ? [Z] : [], [H, W] = (0, d.US)(V);
+  }, F = (0, u.N)(s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), V = L && !F ? [Z] : [], [H, W] = (0, d.US)(V);
   return (0, r.jsx)(l.yRy, {
     align: "center",
     position: t === g.n_.AVATAR ? "left" : "right",

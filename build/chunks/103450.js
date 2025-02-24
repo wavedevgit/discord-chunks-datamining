@@ -33,8 +33,8 @@ var r = n(192379),
   P = n(944486),
   w = n(594174),
   D = n(979651),
-  x = n(181106),
-  L = n(417363),
+  L = n(181106),
+  x = n(417363),
   M = n(358085),
   k = n(804739),
   j = n(981631),
@@ -56,10 +56,10 @@ function B(e) {
     channelId: (0, _.pY)(null == F ? void 0 : F.location),
     userId: V.id,
     activity: Z
-  }), ee = (0, o.e7)([A.Z, O.Z, L.Z, I.Z], () => Q || null != q && (0, k.t)({
+  }), ee = (0, o.e7)([A.Z, O.Z, x.Z, I.Z], () => Q || null != q && (0, k.t)({
     LibraryApplicationStore: A.Z,
     LaunchableGameStore: O.Z,
-    DispatchApplicationStore: L.Z,
+    DispatchApplicationStore: x.Z,
     ConnectedAppsStore: I.Z,
     applicationId: q
   })), et = (0, o.e7)([d.ZP], () => Array.from(d.ZP.getSelfEmbeddedActivities().values()).some(e => {
@@ -68,7 +68,7 @@ function B(e) {
       location: n
     } = e;
     return (t === (null == Z ? void 0 : Z.application_id) || t === (null == F ? void 0 : F.applicationId)) && (0, _.pY)(n) === $
-  })), en = (0, o.e7)([x.Z], () => null != Z && null != Z.application_id && x.Z.getState(Z.application_id, j.mFx.JOIN) === j.OcF.LOADING), er = (0, y.q)(q), ei = (0, m.s5)({
+  })), en = (0, o.e7)([L.Z], () => null != Z && null != Z.application_id && L.Z.getState(Z.application_id, j.mFx.JOIN) === j.OcF.LOADING), er = (0, y.q)(q), ei = (0, m.s5)({
     userId: V.id,
     activity: Z,
     channelId: $,

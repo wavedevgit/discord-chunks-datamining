@@ -410,8 +410,8 @@ class y extends o.Z {
         freezeCount: P,
         totalPausesDuration: w,
         totalFreezesDuration: D,
-        totalFramesDuration: x,
-        keyframes: L,
+        totalFramesDuration: L,
+        keyframes: x,
         passthroughCount: M,
         cryptorSuccessCount: k,
         cryptorFailureCount: j,
@@ -425,7 +425,7 @@ class y extends o.Z {
         qualityFrameDrops: W,
         qualitySizeMismatches: Y
       } = e.aggregatedProperties;
-    return e instanceof f.nt ? (E.sender_freeze_count = P, E.sender_total_freezes_duration = D, E.sender_total_frames_duration = x) : (E.receiver_freeze_count = P, E.receiver_total_freezes_duration = D, E.receiver_total_frames_duration = x, E.receiver_pause_count = R, E.receiver_total_pauses_duration = w), m(_({}, E), {
+    return e instanceof f.nt ? (E.sender_freeze_count = P, E.sender_total_freezes_duration = D, E.sender_total_frames_duration = L) : (E.receiver_freeze_count = P, E.receiver_total_freezes_duration = D, E.receiver_total_frames_duration = L, E.receiver_pause_count = R, E.receiver_total_pauses_duration = w), m(_({}, E), {
       avg_bitrate: r > 0 ? Math.round((null != v ? v : 0) * 8 / r) : 0,
       avg_fps: r > 0 ? Math.round((null != O ? O : 0) / r) : 0,
       num_bytes: v,
@@ -438,7 +438,7 @@ class y extends o.Z {
       num_nacks: N,
       num_plis: A,
       qp_sum: C,
-      num_keyframes: L,
+      num_keyframes: x,
       cryptor_passthrough_count: M,
       cryptor_success_count: k,
       cryptor_failure_count: j,

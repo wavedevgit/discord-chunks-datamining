@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(922745),
   w = n(197016),
   D = n(800965),
-  x = n(445062),
-  L = n(7188),
+  L = n(445062),
+  x = n(7188),
   M = n(199902),
   k = n(314897),
   j = n(131951),
@@ -305,7 +305,7 @@ class el extends i.PureComponent {
       let {
         isSelf: e
       } = this.viewProperties;
-      return (0, r.jsx)(x.Z, {
+      return (0, r.jsx)(L.Z, {
         isSelfStream: e,
         className: en.rightTrayIcon,
         onClick: this.handleStopStream
@@ -336,7 +336,7 @@ class el extends i.PureComponent {
       } = this.props;
       a()((0, et._5)(e), "Cannot render settings for non stream participant");
       let n = t.find(t => (0, y.V9)(t) === e.id);
-      return null == n || n.state === ee.jm8.ENDED ? null : (0, r.jsx)(L.Z, {
+      return null == n || n.state === ee.jm8.ENDED ? null : (0, r.jsx)(x.Z, {
         stream: n,
         className: en.rightTrayIcon,
         appContext: ee.IlC.APP

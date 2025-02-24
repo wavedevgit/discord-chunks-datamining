@@ -92,8 +92,8 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
       gutterWidth: T,
       inspectedStickerPosition: C,
       isScrolling: D,
-      isUsingKeyboardNavigation: x,
-      onInspect: L,
+      isUsingKeyboardNavigation: L,
+      onInspect: x,
       onSelect: M,
       rowIndex: k,
       stickerClassName: j,
@@ -126,12 +126,12 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
         let f = e.visibleRowIndex === (null == C ? void 0 : C.rowIndex) && e.columnIndex === (null == C ? void 0 : C.columnIndex),
           S = e.type === m.al.STICKER && F && f,
           T = t => {
-            if ((null == D ? void 0 : D.current) === !0 || (null == x ? void 0 : x.current) === !0) return;
+            if ((null == D ? void 0 : D.current) === !0 || (null == L ? void 0 : L.current) === !0) return;
             let n = t.altKey;
             n && e.type === m.al.STICKER && !(0, g.gM)(e.sticker.id) && X(e.sticker.id), null == M || M(e, n)
           },
           R = (0, s.throttle)(() => {
-            (null == D ? void 0 : D.current) === !0 || (null == x ? void 0 : x.current) === !0 || f || null == L || L(e)
+            (null == D ? void 0 : D.current) === !0 || (null == L ? void 0 : L.current) === !0 || f || null == x || x(e)
           }, w),
           P = () => {
             e.type === m.al.CREATE_STICKER && (_.default.track(b.rMx.OPEN_MODAL, {

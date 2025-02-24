@@ -44,11 +44,11 @@ function b(e) {
   }, {
     disable: !w,
     autoTrackExposure: !0
-  }).enabled, x = i.useCallback(() => {
+  }).enabled, L = i.useCallback(() => {
     (null == I ? void 0 : I.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
       e.context === E.Yn.STREAM && e.presentDesktopSourcePicker()
     }): n()
-  }, [I, n]), L = i.useCallback(() => {
+  }, [I, n]), x = i.useCallback(() => {
     let {
       preset: e,
       resolution: t,
@@ -86,13 +86,13 @@ function b(e) {
       id: "stream-settings-audio-enable",
       label: O ? v.NW.string(v.t.af2Tw8) : v.NW.string(v.t.ZJEHt7),
       checked: T,
-      action: L
+      action: x
     }) : null,
     j = N && !y ? (0, r.jsx)(a.sNh, {
       id: "change-windows",
       label: O ? v.NW.string(v.t.eAktHh) : v.NW.string(v.t.qntSam),
       icon: a.hGI,
-      action: x
+      action: L
     }) : null,
     U = (0, r.jsx)(a.sNh, {
       id: "stop-streaming",

@@ -172,11 +172,11 @@ function D(e) {
   }
 }
 
-function x(e) {
+function L(e) {
   return null != e ? w(e) : D("#".concat(b.NW.string(b.t.J90oLS)))
 }
 
-function L() {
+function x() {
   return A({
     name: b.NW.string(b.t.zLZPmp).toLowerCase(),
     type: v.d4z.UNKNOWN,
@@ -194,7 +194,7 @@ function M(e, t, n, r, i) {
     messageId: n,
     originalLink: i,
     inContent: null == o || a ? null : [N(o)],
-    content: [L()]
+    content: [x()]
   }
 }
 
@@ -249,7 +249,7 @@ function j(e, t, n, r) {
     guildId: v.ME,
     inContent: [A(e)],
     content: [R(!1)]
-  }) : x(r);
+  }) : L(r);
   let a = e.guildId === n;
   return O({}, i, k(o, e, a, null != t))
 }

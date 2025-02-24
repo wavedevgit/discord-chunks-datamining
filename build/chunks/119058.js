@@ -22,12 +22,12 @@ var r = n(310644),
 
 function v(e, t, n) {
   (0, d.Z)(2, arguments);
-  var m, g, v, y, O, S, I, T, N, A, C, R, P, w, D, x, L, M, k = String(t),
+  var m, g, v, y, O, S, I, T, N, A, C, R, P, w, D, L, x, M, k = String(t),
     j = (0, f.j)(),
     U = null !== (m = null !== (g = null == n ? void 0 : n.locale) && void 0 !== g ? g : j.locale) && void 0 !== m ? m : p.Z,
     G = (0, u.Z)(null !== (v = null !== (y = null !== (O = null !== (S = null == n ? void 0 : n.firstWeekContainsDate) && void 0 !== S ? S : null == n ? void 0 : null === (I = n.locale) || void 0 === I ? void 0 : null === (T = I.options) || void 0 === T ? void 0 : T.firstWeekContainsDate) && void 0 !== O ? O : j.firstWeekContainsDate) && void 0 !== y ? y : null === (N = j.locale) || void 0 === N ? void 0 : null === (A = N.options) || void 0 === A ? void 0 : A.firstWeekContainsDate) && void 0 !== v ? v : 1);
   if (!(G >= 1 && G <= 7)) throw RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
-  var B = (0, u.Z)(null !== (C = null !== (R = null !== (P = null !== (w = null == n ? void 0 : n.weekStartsOn) && void 0 !== w ? w : null == n ? void 0 : null === (D = n.locale) || void 0 === D ? void 0 : null === (x = D.options) || void 0 === x ? void 0 : x.weekStartsOn) && void 0 !== P ? P : j.weekStartsOn) && void 0 !== R ? R : null === (L = j.locale) || void 0 === L ? void 0 : null === (M = L.options) || void 0 === M ? void 0 : M.weekStartsOn) && void 0 !== C ? C : 0);
+  var B = (0, u.Z)(null !== (C = null !== (R = null !== (P = null !== (w = null == n ? void 0 : n.weekStartsOn) && void 0 !== w ? w : null == n ? void 0 : null === (D = n.locale) || void 0 === D ? void 0 : null === (L = D.options) || void 0 === L ? void 0 : L.weekStartsOn) && void 0 !== P ? P : j.weekStartsOn) && void 0 !== R ? R : null === (x = j.locale) || void 0 === x ? void 0 : null === (M = x.options) || void 0 === M ? void 0 : M.weekStartsOn) && void 0 !== C ? C : 0);
   if (!(B >= 0 && B <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
   if (!U.localize) throw RangeError("locale must contain localize property");
   if (!U.formatLong) throw RangeError("locale must contain formatLong property");

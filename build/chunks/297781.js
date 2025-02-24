@@ -6,7 +6,7 @@ n.d(t, {
   E6: () => Y,
   EE: () => B,
   Gk: () => J,
-  Gt: () => x,
+  Gt: () => L,
   OV: () => G,
   PZ: () => ee,
   Rg: () => X,
@@ -108,13 +108,13 @@ let D = {
   [c.s.WATCHED_MEDIA]: [Q, X],
   [c.s.LAUNCHED_ACTIVITY]: [G, B, U, q, z, V]
 };
-var x = function(e) {
+var L = function(e) {
   return e[e.CARD = 0] = "CARD", e[e.POPOUT = 1] = "POPOUT", e[e.STREAMING_POPOUT = 2] = "STREAMING_POPOUT", e[e.GAME_PROFILE = 3] = "GAME_PROFILE", e[e.USER_PROFILE = 4] = "USER_PROFILE", e[e.EMBED = 5] = "EMBED", e[e.LEADERBOARD_POPOUT = 6] = "LEADERBOARD_POPOUT", e[e.OVERLAY = 7] = "OVERLAY", e
 }({});
-let L = i.createContext({});
+let x = i.createContext({});
 
 function M() {
-  return i.useContext(L)
+  return i.useContext(x)
 }
 
 function k(e) {
@@ -439,7 +439,7 @@ function J(e) {
     defaultTextColor: "text-muted"
   } : {
     defaultTextColor: "text-secondary"
-  }, (0, r.jsx)(L.Provider, {
+  }, (0, r.jsx)(x.Provider, {
     value: A({
       location: n
     }, t),

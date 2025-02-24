@@ -88,18 +88,18 @@ function O(e) {
     isBlocked: d.Z.isBlocked(N)
   }), [N]), P = (0, u.D)({
     location: "use-block-user-item-web"
-  }), w = P ? [o.z.IGNORE_USER_NEW_BADGE] : [], [D, x] = (0, c.US)(w), L = D === o.z.IGNORE_USER_NEW_BADGE;
+  }), w = P ? [o.z.IGNORE_USER_NEW_BADGE] : [], [D, L] = (0, c.US)(w), x = D === o.z.IGNORE_USER_NEW_BADGE;
   return !P || A || R ? null : (0, r.jsx)(a.sNh, {
     id: "ignore",
     color: "default",
     label: C ? h.NW.string(h.t["8wXU9P"]) : (0, r.jsxs)("div", {
       className: m.label,
-      children: [h.NW.string(h.t.ytCpKi), L ? (0, r.jsx)(y, {}) : null]
+      children: [h.NW.string(h.t.ytCpKi), x ? (0, r.jsx)(y, {}) : null]
     }),
     action: C ? () => {
       null == S || S(), s.Z.unignoreUser(N, null != I ? I : "use-ignore-user-item-web", null != g ? g : void 0)
     } : () => {
-      L && x(_.L.TAKE_ACTION), (0, a.ZDy)(async () => {
+      x && L(_.L.TAKE_ACTION), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("97652"), n.e("25726")]).then(n.bind(n, 240515));

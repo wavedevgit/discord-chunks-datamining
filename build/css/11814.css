@@ -1,6 +1,6 @@
 /**
   Module ID: 11814
-  Original File Name: 230b1daa136a34ec
+  Original File Name: e43b294f0010c25d
 **/
 .image__04666 {
     width: 100%;
@@ -1996,7 +1996,7 @@ div.clanTagBadgeContainer__07f91 {
     border-radius: 4px;
     height: 24px;
     width: 24px;
-    margin-right: 5px;
+    right: 5px;
     flex-shrink: 0
 }
 
@@ -9689,7 +9689,7 @@ html .progress__61462 {
     overflow: hidden;
     border-radius: 16px;
     box-shadow: var(--elevation-high);
-    width: 256px
+    width: 300px
 }
 
 .spinnerContainer__86bf6 {
@@ -14892,4 +14892,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=230b1daa136a34ec.css.map*/
+/*# sourceMappingURL=e43b294f0010c25d.css.map*/

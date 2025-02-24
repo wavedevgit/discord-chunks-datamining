@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(748492),
   w = n(701488),
   D = n(918559),
-  x = n(981631),
-  L = n(354459),
+  L = n(981631),
+  x = n(354459),
   M = n(378308),
   k = n(717268),
   j = n(459918);
@@ -106,7 +106,7 @@ function F(e) {
     })) : null,
     selectedParticipant: h.Z.getSelectedParticipant(T.id),
     participantsOpen: h.Z.getParticipantsOpen(T.id)
-  })), X = H || null != K, J = (0, C.Z)(T.id), $ = J && (null == q ? void 0 : q.type) !== L.fO.ACTIVITY, ee = !J && Z === D.Ez.PIP, et = X && ($ || ee) && null == W, en = (!X || et) && !Y, er = en && null != v.Z.pipVideoWindow && null != v.Z.pipActivityWindow;
+  })), X = H || null != K, J = (0, C.Z)(T.id), $ = J && (null == q ? void 0 : q.type) !== x.fO.ACTIVITY, ee = !J && Z === D.Ez.PIP, et = X && ($ || ee) && null == W, en = (!X || et) && !Y, er = en && null != v.Z.pipVideoWindow && null != v.Z.pipActivityWindow;
 
   function ei() {
     var e;
@@ -114,7 +114,7 @@ function F(e) {
       applicationId: B.applicationId,
       instanceId: B.compositeInstanceId
     }));
-    let t = null !== (e = T.getGuildId()) && void 0 !== e ? e : x.ME;
+    let t = null !== (e = T.getGuildId()) && void 0 !== e ? e : L.ME;
     d.Z.channelListScrollTo(t, T.id), (0, m.XU)(t, T.id), null == K && (0, f.Ou)()
   }
 
@@ -124,7 +124,7 @@ function F(e) {
 
   function ea(e, t, n, i, o) {
     var a;
-    return en && null != B && ((null == z ? void 0 : z.type) === L.fO.ACTIVITY || i) ? (null === (a = B.config) || void 0 === a ? void 0 : a.useInteractivePIP) ? (0, r.jsx)(P.of, {
+    return en && null != B && ((null == z ? void 0 : z.type) === x.fO.ACTIVITY || i) ? (null === (a = B.config) || void 0 === a ? void 0 : a.useInteractivePIP) ? (0, r.jsx)(P.of, {
       onJumpToChannel: ei,
       applicationId: B.applicationId,
       channel: T,

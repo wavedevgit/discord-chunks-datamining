@@ -67,8 +67,8 @@ function w(e, t) {
   }), e
 }
 let D = new d.Z("ChannelRTCStore"),
-  x = Object.freeze([]),
-  L = [],
+  L = Object.freeze([]),
+  x = [],
   M = {},
   k = {},
   j = {},
@@ -87,7 +87,7 @@ function Y(e) {
 }
 
 function K() {
-  for (let e of L) ei(e);
+  for (let e of x) ei(e);
   eo()
 }
 
@@ -99,18 +99,18 @@ function z() {
   null == n || e.includes(n) || e.push(n);
   let r = f.Z.getRemoteSessionId(),
     i = I.Z.getVoiceStateForSession(m.default.getId(), r);
-  (null == i ? void 0 : i.channelId) != null && e.push(null == i ? void 0 : i.channelId), s().difference(L, e).forEach(ei);
-  let o = s().difference(e, L);
-  return L = e, o
+  (null == i ? void 0 : i.channelId) != null && e.push(null == i ? void 0 : i.channelId), s().difference(x, e).forEach(ei);
+  let o = s().difference(e, x);
+  return x = e, o
 }
 
 function q(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : L;
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : x;
   return t.reduce((t, n) => e(Y(n)) ? (er(n), en(n), !0) : t, !1)
 }
 
 function Q(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : L;
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : x;
   return q(t => t.updateParticipant(e), t)
 }
 
@@ -228,7 +228,7 @@ function el(e) {
       location: "voice_status_update"
     }, {
       autoTrackExposure: !1
-    }).enabled && Y(i).updateGuildRingingUsers(r, !1), n && null != i && !L.includes(i)) ? e : Q(r) || e
+    }).enabled && Y(i).updateGuildRingingUsers(r, !1), n && null != i && !x.includes(i)) ? e : Q(r) || e
   }, !1)
 }
 
@@ -272,7 +272,7 @@ function eh(e) {
   let {
     guild: t
   } = e, n = [];
-  if (s().forEach(L, e => {
+  if (s().forEach(x, e => {
       let r = E.Z.getChannel(e);
       (null == r || r.getGuildId() === t.id) && n.push(e)
     }), 0 === n.length) return !1;
@@ -450,7 +450,7 @@ function eD(e) {
   return q(e => e.updateParticipantQuality(n, r, i), [t])
 }
 
-function ex(e) {
+function eL(e) {
   let {
     channelId: t,
     guildId: n,
@@ -464,7 +464,7 @@ function ex(e) {
   return r.forEach(e => i.updateGuildRingingUsers(e, !0)), q(e => e.rebuild(), [t])
 }
 
-function eL(e) {
+function ex(e) {
   let {
     channelId: t,
     guildId: n,
@@ -496,26 +496,26 @@ class ek extends(r = l.ZP.PersistedStore) {
   }
   getParticipants(e) {
     var t;
-    return null !== (t = Y(e).toArray()) && void 0 !== t ? t : x
+    return null !== (t = Y(e).toArray()) && void 0 !== t ? t : L
   }
   getSpeakingParticipants(e) {
     var t;
-    return null !== (t = Y(e).toArray(T.sI.SPEAKING)) && void 0 !== t ? t : x
+    return null !== (t = Y(e).toArray(T.sI.SPEAKING)) && void 0 !== t ? t : L
   }
   getFilteredParticipants(e) {
     return Z[e] ? Y(e).toArray(T.sI.FILTERED) : Y(e).toArray()
   }
   getVideoParticipants(e) {
     var t;
-    return null !== (t = Y(e).toArray(T.sI.VIDEO)) && void 0 !== t ? t : x
+    return null !== (t = Y(e).toArray(T.sI.VIDEO)) && void 0 !== t ? t : L
   }
   getStreamParticipants(e) {
     var t;
-    return null !== (t = Y(e).toArray(T.sI.STREAM)) && void 0 !== t ? t : x
+    return null !== (t = Y(e).toArray(T.sI.STREAM)) && void 0 !== t ? t : L
   }
   getActivityParticipants(e) {
     var t;
-    return null !== (t = Y(e).toArray(T.sI.ACTIVITY)) && void 0 !== t ? t : x
+    return null !== (t = Y(e).toArray(T.sI.ACTIVITY)) && void 0 !== t ? t : L
   }
   getParticipant(e, t) {
     return Y(e).getParticipant(t)
@@ -619,8 +619,8 @@ let ej = new ek(c.Z, {
   SPEAKING: ed,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: ed,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: ed,
-  GUILD_RING_START: ex,
-  GUILD_RING_STOP: eL,
+  GUILD_RING_START: eL,
+  GUILD_RING_STOP: ex,
   USER_UPDATE: ef,
   GUILD_MEMBER_UPDATE: ef,
   GUILD_DELETE: eh

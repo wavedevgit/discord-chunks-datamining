@@ -48,15 +48,15 @@ function D(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = new Map;
+let x = new Map;
 
 function M() {
-  r = !1, i = !1, o = new Map, a = new Map, s = 0, l = new Set, c = new Set, u = new Set, d = new Set, L = new Map, p = new Map, _ = new Map, h = new Map, m = null, g = new Map, f = new Set, E = new Map
+  r = !1, i = !1, o = new Map, a = new Map, s = 0, l = new Set, c = new Set, u = new Set, d = new Set, x = new Map, p = new Map, _ = new Map, h = new Map, m = null, g = new Map, f = new Set, E = new Map
 }
 
 function k(e, t) {
@@ -83,7 +83,7 @@ function G(e, t) {
   let n = o.get(e),
     r = null == n ? void 0 : n.userStatus;
   null != r && null == r.claimedAt && j(e, {
-    userStatus: x(w({}, r), {
+    userStatus: L(w({}, r), {
       claimedAt: t.claimedAt
     })
   })
@@ -108,7 +108,7 @@ function Z(e, t) {
       entitlements: t
     });
     null != n && U(e, n), j(e, {
-      userStatus: x(w({}, i), {
+      userStatus: L(w({}, i), {
         claimedAt: t.claimedAt,
         claimedTier: null !== (a = null == n ? void 0 : n.tier) && void 0 !== a ? a : null
       })
@@ -303,7 +303,7 @@ function e_(e) {
   let r = (0, N.U3)(t);
   j(t.quest_id, {
     userStatus: r
-  }), 0 === Object.keys(r.progress).length && L.has(r.questId) && (n.log("Removing optimistic progress for ".concat(r.questId)), L.delete(r.questId))
+  }), 0 === Object.keys(r.progress).length && x.has(r.questId) && (n.log("Removing optimistic progress for ".concat(r.questId)), x.delete(r.questId))
 }
 
 function eh(e) {
@@ -336,8 +336,8 @@ function eE(e) {
     questId: n,
     taskEventName: r,
     progress: i
-  } = e, o = null !== (t = L.get(n)) && void 0 !== t ? t : new Map;
-  o.set(r, i), L.set(n, o)
+  } = e, o = null !== (t = x.get(n)) && void 0 !== t ? t : new Map;
+  o.set(r, i), x.set(n, o)
 }
 
 function ev(e) {
@@ -414,7 +414,7 @@ class ey extends(v = S.ZP.Store) {
   }
   getOptimisticProgress(e, t) {
     var n;
-    return null === (n = L.get(e)) || void 0 === n ? void 0 : n.get(t)
+    return null === (n = x.get(e)) || void 0 === n ? void 0 : n.get(t)
   }
 }
 P(ey, "displayName", "QuestsStore");

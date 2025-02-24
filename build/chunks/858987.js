@@ -104,15 +104,15 @@ function T(e) {
     onNext: w
   } = e, {
     application: D,
-    selectedPlan: x,
-    hasAcceptedTerms: L,
+    selectedPlan: L,
+    hasAcceptedTerms: x,
     purchaseType: M,
     paymentSourceId: k,
     activeSubscription: j,
     devShelfFetchState: U
   } = (0, c.JL)(), G = S({
     purchaseType: M,
-    plan: x,
+    plan: L,
     premiumSubscription: v,
     isGift: y,
     planGroup: T,
@@ -148,8 +148,8 @@ function T(e) {
   });
   if (A) return (0, r.jsxs)(a.gtL, {
     innerClassName: g.innerButton,
-    "data-testid": L ? "purchase" : "submitButton",
-    onClick: L ? C : () => I(n, f),
+    "data-testid": x ? "purchase" : "submitButton",
+    onClick: x ? C : () => I(n, f),
     color: a.zxk.Colors.GREEN,
     submitting: h,
     children: [(0, r.jsx)("img", {
@@ -158,7 +158,7 @@ function T(e) {
       src: E
     }), G]
   });
-  if (!L) return (0, r.jsx)(a.ua7, {
+  if (!x) return (0, r.jsx)(a.ua7, {
     text: m.NW.string(m.t.XdvBLS),
     children: e => (0, r.jsx)(a.zxk, O(b({}, e), {
       color: a.zxk.Colors.GREEN,

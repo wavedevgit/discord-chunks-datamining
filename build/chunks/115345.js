@@ -38,9 +38,9 @@ var r = n(192379),
   P = n(981631),
   w = n(490897),
   D = n(526761),
-  x = n(388032);
+  L = n(388032);
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -56,7 +56,7 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -219,8 +219,8 @@ async function H(e, t) {
     } else n()
   } catch (e) {
     S.Z.captureException(e), c.Z.show({
-      title: x.NW.string(x.t.j2d6Ki),
-      body: x.NW.string(x.t.mCjLAQ),
+      title: L.NW.string(L.t.j2d6Ki),
+      body: L.NW.string(L.t.mCjLAQ),
       onConfirm: t
     })
   }

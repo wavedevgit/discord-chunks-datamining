@@ -283,9 +283,9 @@ function A(e) {
   i.useEffect(() => {
     D.isUsingKeyboardNavigation ? _.Z.keyboardModeEnabled || (0, p.Qj)() : _.Z.keyboardModeEnabled && (0, p.rf)()
   }, [D.isUsingKeyboardNavigation]);
-  let x = i.useRef(null);
-  (0, u.T)(x);
-  let L = s ? d.u2 : d.zJ,
+  let L = i.useRef(null);
+  (0, u.T)(L);
+  let x = s ? d.u2 : d.zJ,
     M = i.useMemo(() => ({
       onSelect: y,
       onInteraction: S
@@ -295,9 +295,9 @@ function A(e) {
     children: (0, r.jsx)("div", O(b({
       className: a()(E.menu, E[o], f)
     }, D.getContainerProps()), {
-      ref: x,
+      ref: L,
       "aria-label": e["aria-label"],
-      children: (0, r.jsxs)(L, {
+      children: (0, r.jsxs)(x, {
         className: E.scroller,
         children: [0 === A.length && (0, r.jsx)(g.ck, {
           disabled: !0,

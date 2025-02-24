@@ -3,7 +3,7 @@
 n.d(t, {
   $d: () => I,
   AA: () => T,
-  Db: () => x,
+  Db: () => L,
   Dx: () => S,
   R: () => w,
   TB: () => N,
@@ -179,7 +179,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   a.Z.dispatch({
     type: "SOUNDBOARD_MUTE_JOIN_SOUND",
     channelId: e

@@ -77,9 +77,9 @@ function D(e) {
     onClose: P
   } = e, {
     profileType: D
-  } = (0, E.z)(), x = {
+  } = (0, E.z)(), L = {
     [A.fullSize]: D === N.y0.FULL_SIZE
-  }, L = (0, p.Z)({
+  }, x = (0, p.Z)({
     activity: o,
     user: t
   }), M = (0, g.Z)(o), {
@@ -90,7 +90,7 @@ function D(e) {
     display: "live",
     user: t,
     activity: o,
-    entry: L,
+    entry: x,
     analyticsLocations: j
   }), G = (0, m.Z)({
     userId: t.id,
@@ -133,7 +133,7 @@ function D(e) {
       })
     },
     F = () => t.id === n.id ? null : (0, r.jsx)("div", {
-      className: a()(A.actions, x),
+      className: a()(A.actions, L),
       children: (0, r.jsx)(I.Z, {
         user: t,
         activity: o,
@@ -152,13 +152,13 @@ function D(e) {
           display: "live",
           user: t,
           activity: o,
-          entry: L,
+          entry: x,
           onClose: P
         })
       })), (0, r.jsx)("div", {
         className: A.body,
         children: (0, r.jsxs)("div", {
-          className: a()(A.content, x),
+          className: a()(A.content, L),
           children: [(0, r.jsx)(f.E, {
             image: k,
             size: f.J.SIZE_60,

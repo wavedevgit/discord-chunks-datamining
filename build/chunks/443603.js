@@ -103,8 +103,8 @@ function O(e) {
     notification: P,
     "aria-label": w,
     "aria-expanded": D,
-    "aria-haspopup": x,
-    "aria-controls": L
+    "aria-haspopup": L,
+    "aria-controls": x
   } = e, M = (0, u.Q3)("ChannelTextAreaButton"), k = (0, l.Yzy)(null != E, g(h({}, y), {
     keys: e => e ? "children" : "icon"
   })), j = e => {
@@ -129,8 +129,8 @@ function O(e) {
     size: l.zxk.Sizes.NONE,
     "aria-label": w,
     "aria-expanded": D,
-    "aria-haspopup": x,
-    "aria-controls": L,
+    "aria-haspopup": L,
+    "aria-controls": x,
     disabled: n,
     className: a()(t, {
       [p.active]: S

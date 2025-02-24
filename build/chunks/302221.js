@@ -5,11 +5,11 @@ n.d(t, {
   BM: () => j,
   Cj: () => f,
   WY: () => A,
-  YD: () => L,
+  YD: () => x,
   ZJ: () => m,
   aD: () => _,
   j: () => D,
-  k8: () => x,
+  k8: () => L,
   oo: () => p,
   pz: () => h,
   vq: () => g,
@@ -274,7 +274,7 @@ function D(e, t) {
   return n ? r.lightness = r.lightness + t > 1 ? .9 : r.lightness + t : r.lightness = r.lightness - t < 0 ? .1 : r.lightness - t, w(r.hue, r.saturation, r.lightness)
 }
 
-function x(e) {
+function L(e) {
   let {
     colors: t,
     ratio: n = 5,
@@ -299,7 +299,7 @@ function x(e) {
   return w(u.hue, u.saturation, u.lightness)
 }
 
-function L(e) {
+function x(e) {
   return e.slice(0, 3).map(e => {
     var t;
     return {

@@ -100,8 +100,8 @@ let S = {
   P = 9e5,
   w = 36e5,
   D = 864e5,
-  x = .001,
-  L = performance.now(),
+  L = .001,
+  x = performance.now(),
   M = [];
 
 function k(e) {
@@ -211,12 +211,12 @@ let j = {
   [_.rMx.RPC_COMMAND_SENT]: {
     throttlePeriod: D,
     throttleKeys: e => [e.application_id, e.command],
-    throttlePercent: x
+    throttlePercent: L
   },
   [_.rMx.RPC_SUBSCRIPTION_REQUESTED]: {
     throttlePeriod: D,
     throttleKeys: e => [e.application_id, e.event],
-    throttlePercent: x
+    throttlePercent: L
   },
   [_.rMx.ACTIVITY_HANDSHAKE]: {
     throttlePeriod: D,
@@ -367,7 +367,7 @@ function H(e) {
     } = o;
     o = E({}, y(o, ["source"]), G(e))
   }
-  o.client_performance_cpu = f.Z.getCurrentCPUUsagePercent(), o.client_performance_memory = f.Z.getCurrentMemoryUsageKB(), o.cpu_core_count = f.Z.getCPUCoreCount(), o.accessibility_features = B(), o.rendered_locale = m.NW.currentLocale, o.uptime_app = Math.floor((performance.now() - L) / 1e3);
+  o.client_performance_cpu = f.Z.getCurrentCPUUsagePercent(), o.client_performance_memory = f.Z.getCurrentMemoryUsageKB(), o.cpu_core_count = f.Z.getCPUCoreCount(), o.accessibility_features = B(), o.rendered_locale = m.NW.currentLocale, o.uptime_app = Math.floor((performance.now() - x) / 1e3);
   let a = f.Z.getProcessUptime();
   null != a && (o.uptime_process_renderer = Math.floor(a));
   let {

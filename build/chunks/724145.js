@@ -45,7 +45,7 @@ let D = () => (0, r.jsx)("div", {
       })]
     })
   }),
-  x = e => {
+  L = e => {
     let {
       markAsDismissed: t
     } = e, n = (0, T.q)(), i = () => {
@@ -67,7 +67,7 @@ let D = () => (0, r.jsx)("div", {
       })]
     })
   },
-  L = e => {
+  x = e => {
     var t, n, i;
     let {
       onSubscribeSuccess: o,
@@ -117,7 +117,7 @@ let D = () => (0, r.jsx)("div", {
     }, () => P.NW.string(P.t["dqH+qq"])).otherwise(() => P.NW.string(P.t.Olc2Ky));
     return (0, r.jsxs)("div", {
       className: w.editorFooter,
-      children: [o && (0, r.jsx)(L, {
+      children: [o && (0, r.jsx)(x, {
         onSubscribeSuccess: () => {
           c(!0)
         },
@@ -164,7 +164,7 @@ function k(e) {
       "data-app-right-panel": !0,
       className: a()(w.themeEditor, d ? w.editorAnimate : null),
       children: (0, r.jsxs)(u.y5t, {
-        children: [n ? (0, r.jsx)(D, {}) : (0, r.jsx)(x, {
+        children: [n ? (0, r.jsx)(D, {}) : (0, r.jsx)(L, {
           markAsDismissed: t
         }), (0, r.jsx)(u.Ttm, {
           className: w.editorBody,

@@ -38,9 +38,9 @@ function R(e) {
     guild: P,
     isHovering: w,
     onOpenProfile: D,
-    channelId: x,
-    onClose: L
-  } = e, M = d.ZP.useName(null == P ? void 0 : P.id, x, t), {
+    channelId: L,
+    onClose: x
+  } = e, M = d.ZP.useName(null == P ? void 0 : P.id, L, t), {
     relationshipType: k,
     originApplicationId: j
   } = (0, i.cj)([c.Z], () => ({
@@ -65,7 +65,7 @@ function R(e) {
       tags: (0, r.jsx)(p.Z, {
         displayProfile: R,
         profileType: N.y0.BITE_SIZE,
-        onClose: L
+        onClose: x
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(m.Z, {
@@ -80,7 +80,7 @@ function R(e) {
       children: (0, r.jsx)(g.Z, {
         user: t,
         guildId: null == P ? void 0 : P.id,
-        channelId: x,
+        channelId: L,
         applicationId: G ? j : void 0
       })
     }), G && U.map(e => (0, r.jsx)(v.Z.Overlay, {
@@ -88,7 +88,7 @@ function R(e) {
         user: t,
         isGameRelationship: !0,
         applicationId: e.applicationId,
-        channelId: x
+        channelId: L
       })
     }, e.applicationId)), (0, r.jsx)(E.Z, {
       user: t,
@@ -105,17 +105,17 @@ function R(e) {
       user: t,
       bio: null == R ? void 0 : R.bio,
       hidePersonalInformation: B,
-      onClose: L
+      onClose: x
     }), Z && (0, r.jsx)(_.Z, {
       isPremiumUser: F,
-      onInteraction: L,
+      onInteraction: x,
       className: C.upsell
     }), (0, r.jsx)(h.Z, {
       user: t,
       currentUser: n,
       displayProfile: R,
       guildId: null == P ? void 0 : P.id,
-      onClose: L,
+      onClose: x,
       className: C.activity
     }), null != P && (0, r.jsx)(I.Z, {
       user: t,

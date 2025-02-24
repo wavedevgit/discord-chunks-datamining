@@ -69,30 +69,30 @@ function w(e, t) {
   }), e
 }
 let D = 3e3,
-  x = 800,
-  L = {};
+  L = 800,
+  x = {};
 
 function M(e) {
   return "".concat(e.channel_id, ":").concat(e.id)
 }
 
 function k() {
-  Object.values(L).forEach(e => {
+  Object.values(x).forEach(e => {
     let {
       timeout: t
     } = e;
     clearTimeout(t)
-  }), L = {}
+  }), x = {}
 }
 
 function j(e, t) {
   if (null == e.id || null == e.channel_id) return !1;
   let n = M(e);
-  if (null != L[n]) {
+  if (null != x[n]) {
     let {
       timeout: r
-    } = L[n];
-    return clearTimeout(r), U(e, t), delete L[n], !0
+    } = x[n];
+    return clearTimeout(r), U(e, t), delete x[n], !0
   }
   return !1
 }
@@ -100,7 +100,7 @@ function j(e, t) {
 function U(e, t) {
   let {
     setAt: n
-  } = L[M(e)];
+  } = x[M(e)];
   if (t === O.Pq.UPDATE) {
     var r, i;
     let t = null !== (r = e.attachments) && void 0 !== r ? r : [],
@@ -159,9 +159,9 @@ function Z(e, t) {
   } = null != t ? t : {}, i = (null == t ? void 0 : t.isMessageUpdate) ? e.filter(b.N7) : e;
   i.forEach(e => {
     let t = M(e);
-    null == L[t] && (d.Z.increment({
+    null == x[t] && (d.Z.increment({
       name: s.V.EXPLICIT_MEDIA_SCAN_CLIENT_TIMEOUT_CREATE
-    }), L[t] = {
+    }), x[t] = {
       setAt: Date.now(),
       timeout: setTimeout(() => {
         G(e)
@@ -170,8 +170,8 @@ function Z(e, t) {
   });
   let o = n || new Set(i.map(e => e.channel_id)).size > 1;
   r ? setTimeout(() => {
-    B(i.filter(e => null != L[M(e)]), o)
-  }, Math.random() * x) : B(i, o)
+    B(i.filter(e => null != x[M(e)]), o)
+  }, Math.random() * L) : B(i, o)
 }
 
 function F(e) {

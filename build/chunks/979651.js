@@ -75,7 +75,7 @@ function P(e) {
     voiceStates: t
   } = e;
   return t.reduce((e, t) => {
-    let [n, r, o] = x(t.guildId, t);
+    let [n, r, o] = L(t.guildId, t);
     return n ? (t.sessionId === i && null != r && null != o && o.channelId !== r.channelId && (_ += 1), h++, !0) : e
   }, !1)
 }
@@ -83,7 +83,7 @@ function P(e) {
 function w(e) {
   let t = !1;
   for (let n of e.voiceStates) {
-    let [r] = x(e.guildId, n);
+    let [r] = L(e.guildId, n);
     t = t || r
   }
   for (let n of e.removedVoiceStateUsers) R(e.guildId, n, () => null), t = !0;
@@ -99,7 +99,7 @@ function D(e) {
   O[S(t, n)] = r
 }
 
-function x(e, t) {
+function L(e, t) {
   return R(e, t.userId, e => {
     if (null == t.channelId) return null;
     {
@@ -122,7 +122,7 @@ function x(e, t) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t,
     channelId: n
@@ -252,7 +252,7 @@ let F = new Z(c.Z, {
   CONNECTION_OPEN: M,
   CONNECTION_OPEN_SUPPLEMENTAL: k,
   OVERLAY_INITIALIZE: j,
-  VOICE_CHANNEL_SELECT: L,
+  VOICE_CHANNEL_SELECT: x,
   VOICE_STATE_UPDATES: P,
   GUILD_DELETE: U,
   GUILD_CREATE: U,

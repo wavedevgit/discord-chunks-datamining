@@ -68,9 +68,9 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = b.Z.Millis.DAYS_30;
+let L = b.Z.Millis.DAYS_30;
 
-function L(e) {
+function x(e) {
   let {
     animatedIconComponent: t,
     hovered: i,
@@ -120,7 +120,7 @@ function M(e) {
     channel: n
   } = e, {
     analyticsLocations: o
-  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [a, u] = i.useState(!1), b = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([v.default], () => v.default.getCurrentUser()), w = null != R ? y.default.age(R.id) : 0, M = !t && b && w >= x, {
+  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [a, u] = i.useState(!1), b = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([v.default], () => v.default.getCurrentUser()), w = null != R ? y.default.age(R.id) : 0, M = !t && b && w >= L, {
     enabled: k
   } = m.O.useExperiment({
     location: "gift-button"
@@ -169,7 +169,7 @@ function M(e) {
         }), W()
       }
     }, V), {
-      children: (0, r.jsx)(L, {
+      children: (0, r.jsx)(x, {
         animatedIconComponent: F,
         hovered: a,
         isCoachmarkDismissed: !B

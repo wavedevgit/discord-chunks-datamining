@@ -39,7 +39,7 @@ function A(e) {
     onOpenProfile: P,
     channelId: w,
     onClose: D
-  } = e, x = c.ZP.getName(null == C ? void 0 : C.id, w, t), L = (0, i.e7)([u.Z], () => {
+  } = e, L = c.ZP.getName(null == C ? void 0 : C.id, w, t), x = (0, i.e7)([u.Z], () => {
     var e;
     return null === (e = u.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
   }), M = (0, i.e7)([a.Z, s.Z], () => a.Z.getChannel(s.Z.getChannelId())), k = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation);
@@ -50,7 +50,7 @@ function A(e) {
       user: t,
       profileType: S.y0.BITE_SIZE,
       onOpenProfile: P,
-      nickname: x,
+      nickname: L,
       pronouns: null == A ? void 0 : A.pronouns,
       tags: (0, r.jsx)(f.Z, {
         displayProfile: A,
@@ -94,9 +94,9 @@ function A(e) {
       guildId: null == C ? void 0 : C.id,
       onClose: D,
       className: N.activity
-    }), (null == L ? void 0 : L.popularApplicationCommandIds) != null && null != M && (0, r.jsx)(d.Z, {
-      applicationId: L.id,
-      commandIds: L.popularApplicationCommandIds,
+    }), (null == x ? void 0 : x.popularApplicationCommandIds) != null && null != M && (0, r.jsx)(d.Z, {
+      applicationId: x.id,
+      commandIds: x.popularApplicationCommandIds,
       channel: M,
       guildId: null == C ? void 0 : C.id,
       onClick: D

@@ -112,11 +112,11 @@ function D(e) {
   return A(t.id)
 }
 
-function x() {
+function L() {
   T = _.Z.getStatus() === m.Skl.DND || c.QZ.getSetting()
 }
 
-function L() {
+function x() {
   let e = f.default.getId();
   I.forEach(t => {
     var n;
@@ -126,7 +126,7 @@ function L() {
 }
 class M extends(i = o.ZP.Store) {
   initialize() {
-    this.waitFor(p.Z, _.Z), this.syncWith([_.Z], x), this.syncWith([u.Z], x), this.syncWith([l.Z], L)
+    this.waitFor(p.Z, _.Z), this.syncWith([_.Z], L), this.syncWith([u.Z], L), this.syncWith([l.Z], x)
   }
   getIncomingCalls() {
     return T ? O : Array.from(S.values())

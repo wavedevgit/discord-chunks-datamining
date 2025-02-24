@@ -5,7 +5,7 @@ n.d(t, {
   AB: () => U,
   JS: () => k,
   ZP: () => H,
-  hH: () => L,
+  hH: () => x,
   kO: () => F,
   oG: () => V,
   v_: () => j,
@@ -62,13 +62,13 @@ function D(e) {
   return e
 }
 
-function x(e) {
+function L(e) {
   let t = 0;
   for (let n in e) t += 1;
   return t
 }
 
-function L(e) {
+function x(e) {
   var t;
   if (null == e) return null;
   let n = _.Z.getGuild(e);
@@ -86,12 +86,12 @@ function L(e) {
     guild_num_channels: s + l,
     guild_num_text_channels: s,
     guild_num_voice_channels: l,
-    guild_num_roles: x(r),
+    guild_num_roles: L(r),
     guild_member_num_roles: null != o ? o.roles.length : 0,
     guild_member_perms: String(null !== (t = m.Z.getGuildPermissions(n)) && void 0 !== t ? t : A.Hn),
     guild_is_vip: n.hasFeature(R.oNc.VIP_REGIONS),
     is_member: null != o,
-    num_voice_channels_active: x(u)
+    num_voice_channels_active: L(u)
   }
 }
 
@@ -157,7 +157,7 @@ function B(e) {
     i = "guild_id" in t ? t.guild_id : r ? y.Z.getGuildId() : null,
     o = "channel_id" in t ? t.channel_id : r ? b.Z.getChannelId(i) : null,
     a = u.Z.getChannel(o),
-    s = D({}, t, L(G(a, i)), null != i && null != o && (0, P.AB)(o) ? M(i, o) : j(a));
+    s = D({}, t, x(G(a, i)), null != i && null != o && (0, P.AB)(o) ? M(i, o) : j(a));
   T.default.track(e, s, {
     flush: n
   })

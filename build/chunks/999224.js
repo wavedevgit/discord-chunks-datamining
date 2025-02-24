@@ -33,15 +33,15 @@ var r = n(771356),
   P = n(912609),
   w = n(565792),
   D = n(583498),
-  x = n(442866),
-  L = n(263984),
+  L = n(442866),
+  x = n(263984),
   M = n(591501),
   k = n(595867),
   j = n(865790);
 let U = {
   skye: {
     name: "Skye",
-    iconURL: x.Z,
+    iconURL: L.Z,
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(242, 96, 195, 0.50) 0%, rgba(242, 96, 195, 0.00) 100%), linear-gradient(90deg, rgba(53, 236, 125, 0.25) 0%, rgba(53, 236, 125, 0.00) 15%)",
     baseColor: "#380527",
     styleKey: "skye",
@@ -137,7 +137,7 @@ let U = {
   },
   solara: {
     name: "Solara",
-    iconURL: L.Z,
+    iconURL: x.Z,
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(214, 155, 56, 0.50) 0%, rgba(214, 155, 56, 0.00) 100%), linear-gradient(90deg, rgba(254, 76, 209, 0.25) 0%, rgba(254, 76, 209, 0.00) 15%)",
     baseColor: "#33240A",
     styleKey: "solara",

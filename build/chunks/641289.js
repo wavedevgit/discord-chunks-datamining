@@ -91,14 +91,14 @@ function I(e) {
       }]
     }],
     D = "([0-9]_*)+",
-    x = "([0-9a-fA-F]_*)+",
-    L = {
+    L = "([0-9a-fA-F]_*)+",
+    x = {
       className: "number",
       relevance: 0,
       variants: [{
         match: `\\b(${D})(\\.(${D}))?([eE][+-]?(${D}))?\\b`
       }, {
-        match: `\\b0x(${x})(\\.(${x}))?([pP][+-]?(${D}))?\\b`
+        match: `\\b0x(${L})(\\.(${L}))?([pP][+-]?(${D}))?\\b`
       }, {
         match: /\b0o([0-7]_*)+\b/
       }, {
@@ -183,7 +183,7 @@ function I(e) {
           begin: /\(/,
           end: /\)/,
           keywords: S,
-          contains: [...w, L, B]
+          contains: [...w, x, B]
         }]
       }
     }, {
@@ -230,7 +230,7 @@ function I(e) {
         match: r(b, /\s*:/),
         keywords: "_|0",
         relevance: 0
-      }, ...h, H, ...C, ...R, ...w, L, B, ...Y, ...K, z]
+      }, ...h, H, ...C, ...R, ...w, x, B, ...Y, ...K, z]
     },
     X = {
       begin: /</,
@@ -253,7 +253,7 @@ function I(e) {
           className: "params",
           match: b
         }]
-      }, ...h, ...C, ...w, L, B, ...K, z, Q],
+      }, ...h, ...C, ...w, x, B, ...K, z, Q],
       endsParent: !0,
       illegal: /["']/
     },
@@ -327,7 +327,7 @@ function I(e) {
   for (let e of B.variants) {
     let t = e.contains.find(e => "interpol" === e.label);
     t.keywords = A;
-    let n = [...C, ...R, ...w, L, B, ...Y];
+    let n = [...C, ...R, ...w, x, B, ...Y];
     t.contains = [...n, {
       begin: /\(/,
       end: /\)/,
@@ -342,7 +342,7 @@ function I(e) {
       end: /$/,
       contains: [...h],
       relevance: 0
-    }, H, ...C, ...R, ...w, L, B, ...Y, ...K, z, Q]
+    }, H, ...C, ...R, ...w, x, B, ...Y, ...K, z, Q]
   }
 }
 e.exports = I

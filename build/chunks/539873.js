@@ -79,12 +79,12 @@ function P(e) {
   }, {
     autoTrackExposure: w,
     disable: !w
-  }), x = i.useRef(null);
-  (0, m.Z)(x, O.h1.CUSTOM_APP_ICONS);
-  let L = (0, d.Dt)(),
+  }), L = i.useRef(null);
+  (0, m.Z)(L, O.h1.CUSTOM_APP_ICONS);
+  let x = (0, d.Dt)(),
     M = (0, l.arW)({
       orientation: "horizontal",
-      labelledBy: L
+      labelledBy: x
     }),
     k = (0, f.Q3)("AppIconSelectionGroup"),
     j = e => {
@@ -109,7 +109,7 @@ function P(e) {
       })
     };
   return (0, r.jsx)("div", {
-    ref: x,
+    ref: L,
     children: (0, r.jsx)("div", R(A({}, M), {
       className: I.__invalid_container,
       children: (0, r.jsxs)("div", {

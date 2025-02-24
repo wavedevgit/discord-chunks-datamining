@@ -37,8 +37,8 @@ let w = i.forwardRef(function(e, t) {
     type: o,
     channel: w,
     className: D,
-    id: x,
-    disabled: L,
+    id: L,
+    disabled: x,
     submitting: M,
     placeholder: k,
     required: j,
@@ -71,7 +71,7 @@ let w = i.forwardRef(function(e, t) {
     "aria-describedby": eu,
     "aria-labelledby": ed,
     "aria-autocomplete": ef
-  } = e, ep = i.useRef(null), e_ = i.useRef(null), eh = i.useRef(!0), em = i.useRef(!0), eg = L || M, eE = i.useCallback((e, t, n) => {
+  } = e, ep = i.useRef(null), e_ = i.useRef(null), eh = i.useRef(!0), em = i.useRef(!0), eg = x || M, eE = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -208,7 +208,7 @@ let w = i.forwardRef(function(e, t) {
       ref: ep,
       className: a()(D, P.slateContainer),
       children: (0, r.jsx)(h.Z, {
-        id: x,
+        id: L,
         editor: ey,
         channelId: w.id,
         guildId: w.guild_id,
@@ -217,7 +217,7 @@ let w = i.forwardRef(function(e, t) {
         readOnly: eg,
         spellCheck: J,
         autoFocus: !et,
-        canFocus: !L,
+        canFocus: !x,
         onChange: eR,
         onFocus: F,
         onBlur: V,

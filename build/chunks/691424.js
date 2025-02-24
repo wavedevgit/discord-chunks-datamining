@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(142990),
   w = n(532901),
   D = n(311739),
-  x = n(981631),
-  L = n(176505),
+  L = n(981631),
+  x = n(176505),
   M = n(368365),
   k = n(28149);
 
@@ -138,18 +138,18 @@ function V(e, t, n) {
   let r = S.Z.getGuild(e);
   if (null == e || null == r) return;
   let i = t => {
-    r.hasFeature(x.oNc.COMMUNITY) && (0, y.uL)(x.Z5c.CHANNEL(e, t))
+    r.hasFeature(L.oNc.COMMUNITY) && (0, y.uL)(L.Z5c.CHANNEL(e, t))
   };
   switch (t) {
     case "home":
     case "guide":
-      i(L.oC.GUILD_HOME);
+      i(x.oC.GUILD_HOME);
       break;
     case "browse":
-      i(L.oC.CHANNEL_BROWSER);
+      i(x.oC.CHANNEL_BROWSER);
       break;
     case "customize":
-      i(L.oC.CUSTOMIZE_COMMUNITY);
+      i(x.oC.CUSTOMIZE_COMMUNITY);
       break;
     case "linked-roles":
       if (null != n) {

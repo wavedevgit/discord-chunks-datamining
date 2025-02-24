@@ -6,12 +6,12 @@ n.d(t, {
   UI: () => P,
   Uu: () => N,
   _N: () => w,
-  cS: () => x,
+  cS: () => L,
   cZ: () => G,
   e1: () => F,
   eQ: () => R,
   fw: () => C,
-  uY: () => L,
+  uY: () => x,
   x9: () => k
 }), n(757143), n(301563), n(47120), n(566702);
 var r = n(392711),
@@ -105,10 +105,10 @@ function w() {
 }
 
 function D(e, t, n) {
-  return 0 === e.length && null == t.find(e => x(e, n))
+  return 0 === e.length && null == t.find(e => L(e, n))
 }
 
-function x(e, t) {
+function L(e, t) {
   if (t === a.C.IMAGE_ONLY_ANSWERS) return null != e.image;
   {
     var n;
@@ -117,7 +117,7 @@ function x(e, t) {
   }
 }
 
-function L(e, t) {
+function x(e, t) {
   var n;
   let r = null === (n = e.text) || void 0 === n ? void 0 : n.trim();
   return t === a.C.DEFAULT && null != e.image && (null == r || 0 === r.length)

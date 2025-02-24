@@ -74,20 +74,20 @@ function D(e) {
   return null != n ? n : A[e] = w(e, t)
 }
 
-function x(e) {
+function L(e) {
   if (null != e) {
     var t;
     C[e] = (null !== (t = C[e]) && void 0 !== t ? t : 0) + 1
   }
 }
 
-function L() {
+function x() {
   for (let e in N = {}, A = {}, C) C[e] += 1;
   R += 1
 }
 
 function M() {
-  L()
+  x()
 }
 
 function k() {
@@ -95,7 +95,7 @@ function k() {
 }
 
 function j() {
-  L()
+  x()
 }
 
 function U(e) {
@@ -104,7 +104,7 @@ function U(e) {
     user: n
   } = e;
   if (n.id !== (null === (t = O.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) return !1;
-  L()
+  x()
 }
 
 function G(e) {
@@ -120,7 +120,7 @@ function G(e) {
       context: n
     });
   if (A[n.id] === i) return !1;
-  A[n.id] = i, R += 1, x(n.getGuildId())
+  A[n.id] = i, R += 1, L(n.getGuildId())
 }
 
 function B(e) {
@@ -138,7 +138,7 @@ function B(e) {
         user: r,
         context: t
       });
-    A[t.id] !== i && (A[t.id] = i, x(t.getGuildId()), n = !0)
+    A[t.id] !== i && (A[t.id] = i, L(t.getGuildId()), n = !0)
   }
   return !!n && (R += 1, n)
 }
@@ -149,11 +149,11 @@ function Z() {
 
 function F(e) {
   var t;
-  return (null === (t = O.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === e.userId && (x(e.guildId), !0)
+  return (null === (t = O.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === e.userId && (L(e.guildId), !0)
 }
 
 function V(e) {
-  return !!(0, p.s)(e) && (x(e.guildId), !0)
+  return !!(0, p.s)(e) && (L(e.guildId), !0)
 }
 
 function H(e) {
@@ -175,7 +175,7 @@ function Y(e) {
   let {
     channel: t
   } = e;
-  return delete A[t.id], R += 1, x(t.guild_id), !1
+  return delete A[t.id], R += 1, L(t.guild_id), !1
 }
 
 function K(e) {
@@ -186,7 +186,7 @@ function K(e) {
   let n = v.Z.getMutableBasicGuildChannelsForGuild(t);
   o().forEach(n, e => {
     delete A[e.id]
-  }), R += 1, x(t)
+  }), R += 1, L(t)
 }
 
 function z(e) {
@@ -211,7 +211,7 @@ function q(e) {
   let n = v.Z.getMutableBasicGuildChannelsForGuild(t);
   o().forEach(n, e => {
     delete A[e.id]
-  }), R += 1, x(t)
+  }), R += 1, L(t)
 }
 
 function Q(e, t, n, r) {

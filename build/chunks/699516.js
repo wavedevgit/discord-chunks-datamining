@@ -80,11 +80,11 @@ function D(e) {
   }), w()
 }
 
-function x(e) {
+function L(e) {
   g = _({}, e.relationships), w()
 }
 
-function L(e) {
+function x(e) {
   let t = g[e.relationship.id];
   g = m(_({}, g), {
     [e.relationship.id]: e.relationship.type
@@ -215,8 +215,8 @@ class U extends(r = a.ZP.Store) {
 p(U, "displayName", "RelationshipStore");
 let G = new U(s.Z, {
   CONNECTION_OPEN: D,
-  OVERLAY_INITIALIZE: x,
-  RELATIONSHIP_ADD: L,
+  OVERLAY_INITIALIZE: L,
+  RELATIONSHIP_ADD: x,
   RELATIONSHIP_REMOVE: M,
   RELATIONSHIP_UPDATE: k,
   RELATIONSHIP_PENDING_INCOMING_REMOVED: j

@@ -1,6 +1,6 @@
 /**
   Module ID: 23303
-  Original File Name: 651f8ad7ea9bb250
+  Original File Name: 9804304a219bbd5c
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px hsl(var(--black-500-hsl)/0.2);
@@ -96,8 +96,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -141,12 +141,13 @@
 .gameIcon__80da8 {
     width: 26px;
     height: 26px;
-    position: relative
+    position: relative;
+    flex-shrink: 0
 }
 
 .gameIconImage__80da8 {
     border-radius: 4px;
-    border: 1px solid var(--border-subtle);
+    border: 1px solid var(--border-faint);
     max-height: 100%;
     max-width: 100%;
     -o-object-fit: contain;
@@ -294,7 +295,7 @@
     align-items: center;
     padding: 4px 8px;
     border-radius: 16px;
-    border: 1px solid var(--border-subtle);
+    border: 1px solid var(--border-faint);
     max-width: 268px
 }
 
@@ -1214,4 +1215,4 @@ div:has(>div>.container_f792fa) {
     background-color: var(--bg-base-tertiary)!important
 }
 
-/*# sourceMappingURL=651f8ad7ea9bb250.css.map*/
+/*# sourceMappingURL=9804304a219bbd5c.css.map*/

@@ -132,7 +132,7 @@ function D(e) {
   return n
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     restrictions: n
@@ -140,7 +140,7 @@ function x(e) {
   (0, l.uq)(n) ? O.add(t): O.delete(t)
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t
   } = e;
@@ -183,6 +183,6 @@ let k = new M(a.Z, {
   CHANNEL_CREATE: w,
   CHANNEL_DELETE: w,
   CHANNEL_UPDATES: D,
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: x,
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: L
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: L,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: x
 })

@@ -94,8 +94,8 @@ class m extends i.Component {
         onPause: P,
         onEnded: w,
         onControlsShow: D,
-        onControlsHide: x,
-        onVolumeChange: L,
+        onControlsHide: L,
+        onVolumeChange: x,
         onMute: M,
         alt: k = c.NW.string(c.t.FlNoSU)
       } = e,
@@ -142,10 +142,10 @@ class m extends i.Component {
           onPlay: R,
           onPause: P,
           onEnded: w,
-          onVolumeChange: L,
+          onVolumeChange: x,
           onMute: M,
           onControlsShow: D,
-          onControlsHide: x,
+          onControlsHide: L,
           mimeType: T,
           downloadable: v
         })

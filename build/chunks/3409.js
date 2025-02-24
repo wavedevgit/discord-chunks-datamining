@@ -34,8 +34,8 @@ var r = n(200651),
   P = n(737143),
   w = n(926841),
   D = n(35248),
-  x = n(439021),
-  L = n(698708),
+  L = n(439021),
+  x = n(698708),
   M = n(351402),
   k = n(975060),
   j = n(505649),
@@ -301,7 +301,7 @@ function eT(e) {
         }
     }
   }
-  let [ew, eD] = i.useState(h), [ex, eL] = i.useState(null), [eM, ek] = i.useState(eP(h)), {
+  let [ew, eD] = i.useState(h), [eL, ex] = i.useState(null), [eM, ek] = i.useState(eP(h)), {
     stripe: ej,
     contextMetadata: eU,
     activitySessionId: eG
@@ -312,7 +312,7 @@ function eT(e) {
 
   function eH(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-    eL(null), eD(e), t && b({
+    ex(null), eD(e), t && b({
       currentStep: ew,
       toStep: e
     })
@@ -443,12 +443,12 @@ function eT(e) {
       if (ew === T.h8.ATTEMPT_GOOGLE_PAY || ew === T.h8.ATTEMPT_APPLE_PAY) {
         let e = z.NW.string(ew === T.h8.ATTEMPT_APPLE_PAY ? z.t.czhXDg : z.t.Zj2xQ0),
           i = z.NW.string(ew === T.h8.ATTEMPT_APPLE_PAY ? z.t.WoXvJC : z.t.wnVVr6);
-        t = (0, r.jsx)(x.t, {
+        t = (0, r.jsx)(L.t, {
           onChooseType: t_,
           paymentRequestWallet: ew === T.h8.ATTEMPT_APPLE_PAY ? "applePay" : "googlePay",
           onStripePaymentMethodReceived: tg,
           onPaymentRequestFailure: () => {
-            t_(K.He.CARD), eL(e)
+            t_(K.He.CARD), ex(e)
           },
           onValidPaymentRequest: () => td(!0),
           paymentRequestRef: tf
@@ -490,7 +490,7 @@ function eT(e) {
         }
       };
       t = (0, r.jsx)(em, {
-        infoNotice: ex,
+        infoNotice: eL,
         onCardInfoChange: (e, t) => {
           ez({
             info: e,
@@ -801,7 +801,7 @@ function eT(e) {
       className: q.paymentModalBreadcrumbs,
       isEligibleForTrial: Y
     }), (0, r.jsxs)(C.C3, {
-      children: [(0, r.jsx)(L.Z, {
+      children: [(0, r.jsx)(x.Z, {
         className: q.paymentModalError
       }), tI]
     }), (0, r.jsx)(C.O3, {
@@ -856,7 +856,7 @@ function eN(e) {
       u.Z.unsubscribe("BRAINTREE_TOKENIZE_PAYPAL_SUCCESS", e), (0, p.fw)()
     }
   }, []);
-  let [D, x] = i.useState(!1), [L, M] = i.useState(!1), [B, Z] = i.useState(null), V = i.useRef(null), Y = (0, l.e7)([j.Z], () => j.Z.isAwaitingAuthentication), [K, z] = (0, l.Wu)([G.Z], () => [G.Z.purchaseTokenAuthState, G.Z.purchaseTokenHash]);
+  let [D, L] = i.useState(!1), [x, M] = i.useState(!1), [B, Z] = i.useState(null), V = i.useRef(null), Y = (0, l.e7)([j.Z], () => j.Z.isAwaitingAuthentication), [K, z] = (0, l.Wu)([G.Z], () => [G.Z.purchaseTokenAuthState, G.Z.purchaseTokenHash]);
   return i.useEffect(() => {
     null != B && null != V.current && V.current.scrollIntoView({
       behavior: "smooth"
@@ -873,8 +873,8 @@ function eN(e) {
     billingAddressState: _,
     setBillingAddressState: h,
     isSubmittingCurrentStep: D,
-    setIsSubmittingCurrentStep: x,
-    hasRedirectURL: L,
+    setIsSubmittingCurrentStep: L,
+    hasRedirectURL: x,
     setHasRedirectURL: M,
     braintreeEmail: T,
     braintreeNonce: N,

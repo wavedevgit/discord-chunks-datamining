@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(451478),
   w = n(768581),
   D = n(358221),
-  x = n(584511),
-  L = n(793865),
+  L = n(584511),
+  x = n(793865),
   M = n(795318),
   k = n(354459),
   j = n(981631),
@@ -146,7 +146,7 @@ function J(e) {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(L.Z, {
+        return (0, r.jsx)(x.Z, {
           onClose: t,
           onInteraction: (0, M.u)("VideoDeviceMenu", "IncomingCallModal", {
             entrypoint: k.A5.CARET
@@ -200,7 +200,7 @@ function $(e) {
     id: v.id,
     icon: v.icon,
     size: Q
-  }) : null, y = null !== (t = (0, _.x)(m, Q, !0)) && void 0 !== t ? t : b, O = (0, h.ZP)(m), [S, I] = (0, l.Wu)([C.Z], () => [C.Z.supports(U.AN.VIDEO), Object.keys(C.Z.getVideoDevices()).length]), T = null != v ? "".concat(O, ", ").concat(v.name) : O, N = (0, l.e7)([P.Z], () => P.Z.isFocused()), R = (0, l.e7)([D.Z], () => D.Z.getMode(m.id)), L = i.useCallback(e => {
+  }) : null, y = null !== (t = (0, _.x)(m, Q, !0)) && void 0 !== t ? t : b, O = (0, h.ZP)(m), [S, I] = (0, l.Wu)([C.Z], () => [C.Z.supports(U.AN.VIDEO), Object.keys(C.Z.getVideoDevices()).length]), T = null != v ? "".concat(O, ", ").concat(v.name) : O, N = (0, l.e7)([P.Z], () => P.Z.isFocused()), R = (0, l.e7)([D.Z], () => D.Z.getMode(m.id)), x = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
   }, []), M = (0, c.q_F)({
     value: +!!g,
@@ -216,11 +216,11 @@ function $(e) {
   }, [m]);
   let k = R === j.WtW.VIDEO && S && I > 0,
     F = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(x.Z, {
+      children: [(0, r.jsx)(L.Z, {
         className: B.icon,
         ringing: N,
         src: null != y ? y : "",
-        ringingType: x.Z.RingingType.INCOMING,
+        ringingType: L.Z.RingingType.INCOMING,
         size: g ? c.EFr.SIZE_40 : c.EFr.SIZE_80
       }), (0, r.jsxs)("div", {
         className: B.titleGroup,
@@ -248,7 +248,7 @@ function $(e) {
     },
     maxX: $.width,
     maxY: $.height,
-    onDragEnd: L,
+    onDragEnd: x,
     dragAnywhere: !0,
     children: (0, r.jsx)(c.f6W, {
       theme: g ? j.BRd.DARK : void 0,

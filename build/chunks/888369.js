@@ -73,19 +73,19 @@ function D(e) {
   return C[null != e ? e : A] = null !== (t = C[null != e ? e : A]) && void 0 !== t ? t : w(e)
 }
 
-function x(e) {
+function L(e) {
   let t = D(e);
   t.sentinel++, P++
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   return null != e.guild_id && n && !((0, d.Q5)(e.type) || b.ZP.isChannelRecordOrParentOptedIn(e)) && 0 === t
 }
 
 function M(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-  return !(null == e || e.isGuildVocal() && 0 === t || e.hasFlag(S.zZ.IS_GUILD_RESOURCE_CHANNEL) || (0 === t || n) && (e.isThread() ? c.Z.isMuted(e.id) || b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.parent_id) : b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)) || !e.isPrivate() && (L(e, t, (0, a.r1)(e.guild_id)) || !m.Z.can(e.accessPermissions, e))) && (t > 0 || b.ZP.resolveUnreadSetting(e) === I.i.ALL_MESSAGES)
+  return !(null == e || e.isGuildVocal() && 0 === t || e.hasFlag(S.zZ.IS_GUILD_RESOURCE_CHANNEL) || (0 === t || n) && (e.isThread() ? c.Z.isMuted(e.id) || b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.parent_id) : b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)) || !e.isPrivate() && (x(e, t, (0, a.r1)(e.guild_id)) || !m.Z.can(e.accessPermissions, e))) && (t > 0 || b.ZP.resolveUnreadSetting(e) === I.i.ALL_MESSAGES)
 }
 
 function k(e) {
@@ -93,7 +93,7 @@ function k(e) {
 }
 
 function j(e, t, n) {
-  return !((0, d.bw)(e.type) && 0 === t || !m.Z.canBasicChannel((0, d.Gz)(e.type), e) || L(e, t, n) || k(e) && e.hasFlag(S.zZ.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || b.ZP.resolveUnreadSetting(e) === I.i.ALL_MESSAGES)
+  return !((0, d.bw)(e.type) && 0 === t || !m.Z.canBasicChannel((0, d.Gz)(e.type), e) || x(e, t, n) || k(e) && e.hasFlag(S.zZ.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || b.ZP.resolveUnreadSetting(e) === I.i.ALL_MESSAGES)
 }
 
 function U(e) {
@@ -130,7 +130,7 @@ function V(e, t, n) {
       isMentionLowImportance: r
     } = e;
     r ? t.lowImportanceMentionCount += n : t.highImportanceMentionCount += n
-  }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (C[null != e ? e : A] = t, null != e && (t.unread ? R.add(e) : R.delete(e)), P++, x(null != e ? e : A), !0)
+  }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (C[null != e ? e : A] = t, null != e && (t.unread ? R.add(e) : R.delete(e)), P++, L(null != e ? e : A), !0)
 }
 
 function H(e, t) {
@@ -234,7 +234,7 @@ function Y(e, t) {
   }
   Z(r);
   let f = D(n);
-  return (r.unread !== f.unread || r.highImportanceMentionCount !== f.highImportanceMentionCount || r.lowImportanceMentionCount !== f.lowImportanceMentionCount) && (C[null != n ? n : A] = r, null != n && (r.unread ? R.add(n) : R.delete(n)), P++, x(null != n ? n : A), !0)
+  return (r.unread !== f.unread || r.highImportanceMentionCount !== f.highImportanceMentionCount || r.lowImportanceMentionCount !== f.lowImportanceMentionCount) && (C[null != n ? n : A] = r, null != n && (r.unread ? R.add(n) : R.delete(n)), P++, L(null != n ? n : A), !0)
 }
 
 function K(e) {

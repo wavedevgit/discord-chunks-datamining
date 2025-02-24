@@ -67,7 +67,7 @@ e = n.nmd(e),
       return S(r + (O + 1) * e / (e + p))
     }
 
-    function x(e) {
+    function L(e) {
       var t, n, r, i, o, a, s, l, p, _, E = [],
         v = e.length,
         b = 0,
@@ -81,7 +81,7 @@ e = n.nmd(e),
       return R(E)
     }
 
-    function L(e) {
+    function x(e) {
       var t, n, r, i, o, a, s, l, p, _, E, v, b, y, O, N = [];
       for (a = 0, v = (e = C(e)).length, t = m, n = 0, o = h; a < v; ++a)(E = e[a]) < 128 && N.push(I(E));
       for (r = i = N.length, i && N.push(g); r < v;) {
@@ -97,13 +97,13 @@ e = n.nmd(e),
 
     function M(e) {
       return A(e, function(e) {
-        return E.test(e) ? x(e.slice(4).toLowerCase()) : e
+        return E.test(e) ? L(e.slice(4).toLowerCase()) : e
       })
     }
 
     function k(e) {
       return A(e, function(e) {
-        return v.test(e) ? "xn--" + L(e) : e
+        return v.test(e) ? "xn--" + x(e) : e
       })
     }
     if (s = {
@@ -112,8 +112,8 @@ e = n.nmd(e),
           decode: C,
           encode: R
         },
-        decode: x,
-        encode: L,
+        decode: L,
+        encode: x,
         toASCII: k,
         toUnicode: M
       }, "function" == typeof define && "object" == typeof define.amd && define.amd) define("punycode", function() {

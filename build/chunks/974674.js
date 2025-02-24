@@ -270,7 +270,7 @@ function D(e, t, n) {
   })
 }
 
-function x(e, t, n) {
+function L(e, t, n) {
   let {
     size: r,
     status: i,
@@ -286,7 +286,7 @@ function x(e, t, n) {
   }
 }
 
-function L(e, t, n, i) {
+function x(e, t, n, i) {
   let o = D(n, i, t, !1),
     a = (0, u.lm)(i, e);
   if (!t) {
@@ -326,7 +326,7 @@ function M(e) {
     isTyping: r,
     size: i
   } = e, o = n && !r && t === m.Skl.ONLINE, a = (0, h.UC)(i);
-  return y({}, x(a, o, r), (0, u.Dk)({
+  return y({}, L(a, o, r), (0, u.Dk)({
     status: t,
     size: a.status,
     isMobile: o,
@@ -467,7 +467,7 @@ function U(e) {
           isSpeaking: p,
           className: T
         })
-      }), null != N && null != b ? L(b, s, A, N) : null, null != N ? (0, r.jsx)(d.u, {
+      }), null != N && null != b ? x(b, s, A, N) : null, null != N ? (0, r.jsx)(d.u, {
         text: g ? (0, _.u5)(N) : null,
         "aria-label": !1,
         position: "top",
@@ -512,7 +512,7 @@ function B(e) {
     statusTooltipDelay: P,
     statusBackdropColor: w,
     "aria-hidden": D = !1,
-    "aria-label": x,
+    "aria-label": L,
     imageClassName: U
   } = e, B = (0, u.vj)(O, T), Z = i.useId(), F = i.useId(), [V] = i.useState(() => y({
     fill: o
@@ -541,7 +541,7 @@ function B(e) {
     fill: X
   } = W, J = I(W, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), $ = (0, h.px)(E), ee = (0, h.UC)(E), et = ee.status * h.D6, en = ee.status * h.EW, er = null != O ? (ee.status * h.D6 - ee.status) / 2 : 0, ei = ee.size - ee.status - er - ee.offset, eo = ee.size - en - ee.offset, ea = ee.size + Math.ceil(er);
   return (0, r.jsx)(k, S(y({}, e), {
-    ariaLabel: x,
+    ariaLabel: L,
     ariaHidden: D,
     typingOffset: er,
     specs: ee,
@@ -581,7 +581,7 @@ function B(e) {
           isSpeaking: g,
           className: U
         })
-      }), null != w && L(w, l, ee, O), (0, r.jsx)(d.u, {
+      }), null != w && x(w, l, ee, O), (0, r.jsx)(d.u, {
         text: R ? (0, _.u5)(O) : null,
         "aria-label": !1,
         position: "top",

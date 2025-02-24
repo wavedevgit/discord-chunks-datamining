@@ -33,10 +33,10 @@ let u = i.memo(i.forwardRef((e, t) => {
     fade: N = !1,
     initialScrollTop: A = 0,
     role: C = "list"
-  } = e, [R, P] = i.useState(-1), [w, D] = i.useState(-1), x = i.useRef(null), L = i.useRef(0), M = i.useRef(-1);
+  } = e, [R, P] = i.useState(-1), [w, D] = i.useState(-1), L = i.useRef(null), x = i.useRef(0), M = i.useRef(-1);
   (0, l.Ng)(() => {
     var e;
-    let t = null === (e = x.current) || void 0 === e ? void 0 : e.getScrollerNode();
+    let t = null === (e = L.current) || void 0 === e ? void 0 : e.getScrollerNode();
     null != t && (t.scrollTop = A)
   });
   let k = i.useCallback(() => {
@@ -105,7 +105,7 @@ let u = i.memo(i.forwardRef((e, t) => {
   Z.current = W, F.current = H;
   let Y = i.useCallback(() => {
     var e;
-    let t = null === (e = x.current) || void 0 === e ? void 0 : e.getScrollerNode();
+    let t = null === (e = L.current) || void 0 === e ? void 0 : e.getScrollerNode();
     if (null == t) return;
     let {
       offsetWidth: n,
@@ -121,7 +121,7 @@ let u = i.memo(i.forwardRef((e, t) => {
     -1 === w && Y()
   }, [w, Y]), i.useEffect(() => {
     var e;
-    let t = null === (e = x.current) || void 0 === e ? void 0 : e.getScrollerNode(),
+    let t = null === (e = L.current) || void 0 === e ? void 0 : e.getScrollerNode(),
       n = null == t ? void 0 : t.ownerDocument.defaultView;
     if (null == t || null == n) return;
     let r = new n.ResizeObserver(Y);
@@ -129,12 +129,12 @@ let u = i.memo(i.forwardRef((e, t) => {
   }, [Y]);
   let K = i.useCallback(() => {
     var e;
-    let t = null === (e = x.current) || void 0 === e ? void 0 : e.getScrollerNode();
+    let t = null === (e = L.current) || void 0 === e ? void 0 : e.getScrollerNode();
     null != t && (window.cancelAnimationFrame(M.current), M.current = window.requestAnimationFrame(() => {
       let {
         scrollTop: e
       } = t;
-      L.current = e, null == n || n(e), P(e)
+      x.current = e, null == n || n(e), P(e)
     }))
   }, [n]);
   i.useImperativeHandle(t, () => ({
@@ -144,7 +144,7 @@ let u = i.memo(i.forwardRef((e, t) => {
         {
           animate: r = !1
         } = n;
-      null === (t = x.current) || void 0 === t || t.scrollTo({
+      null === (t = L.current) || void 0 === t || t.scrollTo({
         to: e,
         animate: r
       })
@@ -164,18 +164,18 @@ let u = i.memo(i.forwardRef((e, t) => {
             top: s,
             bottom: l
           }
-        } = i, c = U(a), u = s - (S ? c : 0) - r <= L.current, d = l + r >= L.current + w;
+        } = i, c = U(a), u = s - (S ? c : 0) - r <= x.current, d = l + r >= x.current + w;
         if (u) {
-          let i = L.current + c - s,
-            o = S ? L.current - i : s;
-          null === (t = x.current) || void 0 === t || t.scrollTo({
+          let i = x.current + c - s,
+            o = S ? x.current - i : s;
+          null === (t = L.current) || void 0 === t || t.scrollTo({
             to: 0 === e ? 0 : o - r,
             animate: n
           })
         } else if (d) {
-          let e = l - (L.current + w);
-          null === (o = x.current) || void 0 === o || o.scrollTo({
-            to: L.current + e + r,
+          let e = l - (x.current + w);
+          null === (o = L.current) || void 0 === o || o.scrollTo({
+            to: x.current + e + r,
             animate: n
           })
         }
@@ -190,7 +190,7 @@ let u = i.memo(i.forwardRef((e, t) => {
         i = Z.current[e];
       null != i && window.requestAnimationFrame(() => {
         var t;
-        null === (t = x.current) || void 0 === t || t.scrollTo({
+        null === (t = L.current) || void 0 === t || t.scrollTo({
           to: (0 === e ? 0 : i.offset.top) + r,
           animate: n
         })
@@ -204,11 +204,11 @@ let u = i.memo(i.forwardRef((e, t) => {
     getRowDescriptors: () => F.current,
     getScrollerNode: () => {
       var e;
-      return null === (e = x.current) || void 0 === e ? void 0 : e.getScrollerNode()
+      return null === (e = L.current) || void 0 === e ? void 0 : e.getScrollerNode()
     },
     scrollIntoViewNode: e => {
       var t;
-      return null === (t = x.current) || void 0 === t ? void 0 : t.scrollIntoViewNode({
+      return null === (t = L.current) || void 0 === t ? void 0 : t.scrollIntoViewNode({
         node: e
       })
     }
@@ -283,7 +283,7 @@ let u = i.memo(i.forwardRef((e, t) => {
   return (0, r.jsxs)(J, {
     fade: N,
     className: a()(c.scroller, I),
-    ref: x,
+    ref: L,
     onScroll: K,
     children: [(0, r.jsx)("div", {
       role: C,

@@ -2,13 +2,13 @@
 "use strict";
 n.d(t, {
   Cg: () => P,
-  Y0: () => x,
+  Y0: () => L,
   YA: () => G,
   fM: () => D,
   hz: () => k,
   mz: () => j,
   ol: () => U,
-  xB: () => L
+  xB: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -101,7 +101,7 @@ var D = function(e) {
   return e.DEFAULT = "default", e.SUBTLE = "subtle", e
 }({});
 
-function x(e) {
+function L(e) {
   var t, {
       transitionState: n,
       children: o,
@@ -129,8 +129,8 @@ function x(e) {
       },
       onRest: v
     }, "animate-always"),
-    x = i.useRef(null),
-    L = null != N["aria-label"],
+    L = i.useRef(null),
+    x = null != N["aria-label"],
     M = null != N["aria-labelledby"],
     k = i.useId(),
     j = null !== (t = N["aria-labelledby"]) && void 0 !== t ? t : k,
@@ -145,17 +145,17 @@ function x(e) {
       role: h,
       returnRef: O,
       impressionType: l.ImpressionTypes.MODAL,
-      "aria-labelledby": L ? void 0 : U.headerId
+      "aria-labelledby": x ? void 0 : U.headerId
     }, N), {
       children: (0, r.jsx)(s.animated.div, {
         className: a()(m, S.root, w[f], {
           [S.fullscreenOnMobile]: g,
           [S.rootWithShadow]: !E
         }),
-        ref: x,
+        ref: L,
         style: D,
         children: (0, r.jsx)(_.J, {
-          containerRef: x,
+          containerRef: L,
           children: o
         })
       })
@@ -163,7 +163,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   var t, n, o, s, l;
   let {
     headerId: c,

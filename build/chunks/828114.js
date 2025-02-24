@@ -29,7 +29,7 @@ e.exports = function(e, t, n, a, _, m, N) {
   l(n, t, a);
   var A, C, R, P = function(e) {
       if (e === _ && M) return M;
-      if (!b && e && e in x) return x[e];
+      if (!b && e && e in L) return L[e];
       switch (e) {
         case O:
         case S:
@@ -44,26 +44,26 @@ e.exports = function(e, t, n, a, _, m, N) {
     },
     w = t + " Iterator",
     D = !1,
-    x = e.prototype,
-    L = x[y] || x["@@iterator"] || _ && x[_],
-    M = !b && L || P(_),
-    k = "Array" === t && x.entries || L;
-  if (k && (A = c(k.call(new e))) !== Object.prototype && A.next && (o || c(A) === v || (u ? u(A, v) : s(A[y]) || p(A, y, T)), d(A, w, !0, !0), o && (h[w] = T)), g && _ === S && L && L.name !== S && (!o && E ? f(x, "name", S) : (D = !0, M = function() {
-      return i(L, this)
+    L = e.prototype,
+    x = L[y] || L["@@iterator"] || _ && L[_],
+    M = !b && x || P(_),
+    k = "Array" === t && L.entries || x;
+  if (k && (A = c(k.call(new e))) !== Object.prototype && A.next && (o || c(A) === v || (u ? u(A, v) : s(A[y]) || p(A, y, T)), d(A, w, !0, !0), o && (h[w] = T)), g && _ === S && x && x.name !== S && (!o && E ? f(L, "name", S) : (D = !0, M = function() {
+      return i(x, this)
     })), _) {
     if (C = {
         values: P(S),
         keys: m ? M : P(O),
         entries: P(I)
       }, N)
-      for (R in C) !b && !D && R in x || p(x, R, C[R]);
+      for (R in C) !b && !D && R in L || p(L, R, C[R]);
     else r({
       target: t,
       proto: !0,
       forced: b || D
     }, C)
   }
-  return (!o || N) && x[y] !== M && p(x, y, M, {
+  return (!o || N) && L[y] !== M && p(L, y, M, {
     name: _
   }), h[t] = M, C
 }

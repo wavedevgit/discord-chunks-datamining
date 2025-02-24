@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Qk: () => w,
-  WG: () => L,
+  WG: () => x,
   ZP: () => M
 }), n(47120);
 var r = n(200651),
@@ -64,7 +64,7 @@ function D(e, t) {
   return (e % t + t) % t
 }
 
-function x(e) {
+function L(e) {
   let {
     children: t,
     isObscured: n,
@@ -92,7 +92,7 @@ function x(e) {
   })
 }
 
-function L(e, t) {
+function x(e, t) {
   if ("IMAGE" === e.type) {
     if (!(0, v._H)(e)) {
       (0, p.po)(e.url);
@@ -136,7 +136,7 @@ function M(e) {
     }
   }, [v, g]);
   let w = t[p],
-    L = (0, f.KP)({
+    x = (0, f.KP)({
       type: f.lJ.GenericMedia,
       media: w
     }, s),
@@ -166,8 +166,8 @@ function M(e) {
     }), (0, r.jsx)(O.Z, {
       items: t,
       currentIndex: p,
-      children: (e, t) => (0, r.jsx)(x, {
-        isObscured: !m && L,
+      children: (e, t) => (0, r.jsx)(L, {
+        isObscured: !m && x,
         src: w.url,
         children: n => (0, r.jsx)(N.Z, {
           media: w,

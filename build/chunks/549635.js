@@ -105,15 +105,15 @@ function T(e) {
       zoomed: w,
       setZoomed: D
     } = (0, m.Y)(),
-    x = A(w, b, S),
-    L = null != _ && 0 !== _ && null != E && 0 !== E;
-  if ("VIDEO" === N && L && null != S) {
+    L = A(w, b, S),
+    x = null != _ && 0 !== _ && null != E && 0 !== E;
+  if ("VIDEO" === N && x && null != S) {
     var M;
     let e = I(S);
     if (null == e) return null;
     let t = null !== (M = n.renderLinkComponent) && void 0 !== M ? M : d.iT;
     return (0, r.jsx)(c.Z, y(v({}, P), {
-      src: x,
+      src: L,
       width: _,
       height: E,
       maxWidth: o,
@@ -131,8 +131,8 @@ function T(e) {
       onContextMenu: f
     }))
   }
-  return "IMAGE" === N && (t = L ? (0, r.jsx)(l.ZP, y(v({}, P), {
-    src: x,
+  return "IMAGE" === N && (t = x ? (0, r.jsx)(l.ZP, y(v({}, P), {
+    src: L,
     width: _,
     height: E,
     maxWidth: o,
@@ -145,7 +145,7 @@ function T(e) {
     alt: T,
     onContextMenu: f
   })) : (0, r.jsx)("img", {
-    src: x,
+    src: L,
     alt: T,
     onContextMenu: f,
     className: g.dimensionlessImage,

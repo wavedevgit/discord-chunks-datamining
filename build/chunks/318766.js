@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => k,
-  u: () => x
+  u: () => L
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -69,11 +69,11 @@ let R = 20,
   P = 24,
   w = 18,
   D = 77,
-  x = {
+  L = {
     tension: 800,
     friction: 24
   },
-  L = () => {
+  x = () => {
     let e = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
     return (0, r.jsxs)("div", {
       className: I.premiumTooltipContainer,
@@ -131,7 +131,7 @@ let k = function(e) {
     animationPosition: "bottom",
     onRequestClose: () => et(!0),
     children: e => (0, r.jsx)(u.ua7, {
-      text: () => (0, r.jsx)(L, {}),
+      text: () => (0, r.jsx)(x, {}),
       "aria-label": S.NW.formatToMarkdownString(S.t["/7R4q6"], {}),
       position: "top",
       shouldShow: Q,
@@ -165,7 +165,7 @@ let k = function(e) {
         focusProps: P,
         onContextMenu: i.onContextMenu,
         children: null != o ? o() : (0, r.jsx)(u.AMe, {
-          config: x,
+          config: L,
           to: {
             value: +!!B
           },

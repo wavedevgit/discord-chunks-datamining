@@ -93,8 +93,8 @@ function N(e) {
     confirmationFooter: P,
     isGift: w = !1,
     giftMessage: D,
-    giftStyle: x,
-    giftingOrigin: L,
+    giftStyle: L,
+    giftingOrigin: x,
     subscriptionTier: M,
     trialId: k,
     postSuccessGuild: j,
@@ -110,7 +110,7 @@ function N(e) {
   return (0, s.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("8016"), n.e("17938"), n.e("54433"), n.e("8301")]).then(n.bind(n, 7305));
+    } = await Promise.all([n.e("8016"), n.e("17938"), n.e("54433"), n.e("37768")]).then(n.bind(n, 7305));
     return n => {
       var {
         onClose: o
@@ -121,8 +121,8 @@ function N(e) {
         skuId: X,
         isGift: w,
         giftMessage: D,
-        giftStyle: x,
-        giftingOrigin: L,
+        giftStyle: L,
+        giftingOrigin: x,
         giftRecipient: Z,
         initialPlanId: t,
         followupSKUInfo: i,

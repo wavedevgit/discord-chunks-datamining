@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A5: () => L,
+  A5: () => x,
   Bg: () => p,
   D5: () => l,
   D_: () => c,
@@ -28,7 +28,7 @@ n.d(t, {
   mg: () => m,
   nU: () => h,
   wD: () => I,
-  xd: () => x,
+  xd: () => L,
   xx: () => w,
   yl: () => N
 });
@@ -70,5 +70,5 @@ let c = "alt+c",
   P = 10,
   w = 14 * i.Z.Millis.DAY,
   D = 5,
-  x = 5,
-  L = 1
+  L = 5,
+  x = 1

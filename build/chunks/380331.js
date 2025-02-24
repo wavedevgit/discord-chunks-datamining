@@ -64,12 +64,12 @@ function D(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
+let x = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
   M = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
   k = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
   j = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
@@ -78,7 +78,7 @@ let L = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
   B = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
   Z = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
   F = k + M + 2 * U,
-  V = L + M,
+  V = x + M,
   H = V + (B + 2 * Z),
   W = k + j + 2 * U,
   Y = 7;
@@ -93,7 +93,7 @@ function K(e) {
     handleCategorySelect: u,
     isWindowFocused: d,
     useReducedMotion: p
-  } = e, _ = (0, c.JA)("expression-guild-".concat(n)), h = l.type === T.En.GUILD ? null : l.id, m = t === n, E = l.type === T.En.GUILD ? l.guild : null, b = (0, r.jsxs)(f.P3F, x(w({}, _), {
+  } = e, _ = (0, c.JA)("expression-guild-".concat(n)), h = l.type === T.En.GUILD ? null : l.id, m = t === n, E = l.type === T.En.GUILD ? l.guild : null, b = (0, r.jsxs)(f.P3F, L(w({}, _), {
     "aria-label": (0, y.Nf)(l, E),
     className: a()({
       [R.categoryItemGuildCategory]: null != E,
@@ -165,8 +165,8 @@ let z = e => {
     }
     return W
   }, [O]), {
-    nonUnicodeCategoryCount: x,
-    firstUnicodeCategoryIndex: L,
+    nonUnicodeCategoryCount: L,
+    firstUnicodeCategoryIndex: x,
     firstUnicodeCategoryOffsetTop: U,
     rowCountBySection: z
   } = i.useMemo(() => {
@@ -186,8 +186,8 @@ let z = e => {
     }
   }, [O]), [q, Q] = i.useState(!0);
   i.useLayoutEffect(() => {
-    Q(x >= Y)
-  }, [x]);
+    Q(L >= Y)
+  }, [L]);
   let X = i.useCallback(e => {
       var t;
       let n = null === (t = S.current) || void 0 === t ? void 0 : t.getListDimensions();
@@ -195,8 +195,8 @@ let z = e => {
     }, [U]),
     J = i.useCallback(e => {
       var t;
-      e(L), null === (t = S.current) || void 0 === t || t.scrollTo(U)
-    }, [U, L]),
+      e(x), null === (t = S.current) || void 0 === t || t.scrollTo(U)
+    }, [U, x]),
     $ = i.useCallback((e, t) => {
       let n = O[e];
       if (null == n) return 0;
@@ -228,7 +228,7 @@ let z = e => {
     categoryHeight: D,
     getScrollOffsetForIndex: $,
     rowCountBySection: z,
-    children: e => x >= Y && (0, r.jsx)(f.P3F, {
+    children: e => L >= Y && (0, r.jsx)(f.P3F, {
       "aria-hidden": !q,
       "aria-label": C.NW.string(C.t.dT0ct7),
       className: a()(R.unicodeShortcut, {

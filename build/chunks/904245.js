@@ -33,8 +33,8 @@ var r = n(278074),
   P = n(459618),
   w = n(541288),
   D = n(3148),
-  x = n(48854),
-  L = n(785359),
+  L = n(48854),
+  x = n(785359),
   M = n(646504),
   k = n(64078),
   j = n(351780),
@@ -387,7 +387,7 @@ let eP = {
       })).otherwise(() => ({
         message: eg.NW.string(eg.t.bNMQVF),
         messageName: "BOT_GUILD_EXPLICIT_CONTENT"
-      })), l = (0, x.r)();
+      })), l = (0, L.r)();
       ew.sendBotMessage(e, o, s, l), (0, v.aP)({
         action: v.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT,
         messageId: l,
@@ -692,7 +692,7 @@ let eP = {
       if (null != o) return ew.sendMessage(o, t, r, i);
       let a = () => ew._sendMessage(e, t, i),
         s = C.ZP.backgroundify(a, void 0),
-        l = null !== (n = i.nonce) && void 0 !== n ? n : (0, x.r)();
+        l = null !== (n = i.nonce) && void 0 !== n ? n : (0, L.r)();
       return (i = ey(ev({}, i), {
         nonce: l
       }), P.Z.recordMessageSendAttempt(e, l), en.Z.isReady(e)) ? s() : r && e !== h.V ? (eS.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
@@ -864,7 +864,7 @@ let eP = {
       let C = (null === (r = n.messageReference) || void 0 === r ? void 0 : r.type) === eh.Uvt.FORWARD;
       if ("" === c && null == p && null == m && null == b && null == y && !C) return Promise.resolve();
       let R = null != E ? eh.uaV.REPLY : eh.uaV.DEFAULT,
-        M = null !== (o = n.nonce) && void 0 !== o ? o : (0, x.r)(),
+        M = null !== (o = n.nonce) && void 0 !== o ? o : (0, L.r)(),
         B = M;
       if (!1 !== n.eagerDispatch) {
         let t = (0, D.ZP)({
@@ -1008,7 +1008,7 @@ let eP = {
               messageId: B,
               channelId: e,
               shouldNotify: !n.doNotNotifyOnError
-            }), (0, L.x)({
+            }), (0, x.x)({
               failureCode: s.hasErr ? void 0 : s.status,
               errorMessage: s.hasErr ? s.err.message : void 0
             }), l.ZP.cancelPendingSendRequests(e).forEach(e => {

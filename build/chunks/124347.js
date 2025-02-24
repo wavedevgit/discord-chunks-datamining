@@ -330,12 +330,12 @@ class w extends(r = o.Component) {
       dataSafeSrc: P,
       srcIsAnimated: D
     } = this.props, {
-      readyState: x,
-      hasMouseOver: L,
+      readyState: L,
+      hasMouseOver: x,
       hasFocus: M
     } = this.state, k = null != n, j = this.getRatio(), U = (0, a.clamp)(Math.round(h * j), null != g ? g : 0, null != b ? b : 1 / 0), G = (0, a.clamp)(Math.round(m * j), null != E ? E : 0, null != y ? y : 1 / 0), B = {
       alt: e,
-      readyState: x,
+      readyState: L,
       onContextMenu: null != o ? o : void 0,
       zoomable: k,
       className: u,
@@ -373,14 +373,14 @@ class w extends(r = o.Component) {
       onBlur: this.onBlur
     };
     if (1 === B.width && 1 === B.height) return null;
-    switch ((k || null != S) && (B.onClick = this.onClick), r && (B.original = null != l && "" !== l ? l : B.src), x) {
+    switch ((k || null != S) && (B.onClick = this.onClick), r && (B.original = null != l && "" !== l ? l : B.src), L) {
       case v.zo9.LOADING:
         null != t && (B.src = t);
         break;
       case v.zo9.READY:
         if (w.isAnimated(this.props)) {
           B.onMouseLeave = this.onMouseLeave;
-          let e = (s || L || M) && (null == _ || _) && w.visibilityObserver.isVisible(this);
+          let e = (s || x || M) && (null == _ || _) && w.visibilityObserver.isVisible(this);
           e ? (B.src = this.getSrc(j), B.renderAccessory = I) : (B.src = this.getSrc(j, !p || !s), B.renderAccessory = this.renderAccessory), null != f && (B.children = t => {
             let {
               src: n,

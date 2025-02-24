@@ -90,8 +90,8 @@ let S = {
       tierMarkerAnimationPosition: N
     } = e, {
       analyticsLocations: A
-    } = (0, l.ZP)(), C = (0, c.Z)(), R = _.oCV[T] - i.premiumSubscriberCount, P = T <= N || E, w = P && T <= i.premiumTier, D = P && T < i.premiumTier, x = P && T === i.premiumTier, {
-      scaleFactor: L
+    } = (0, l.ZP)(), C = (0, c.Z)(), R = _.oCV[T] - i.premiumSubscriberCount, P = T <= N || E, w = P && T <= i.premiumTier, D = P && T < i.premiumTier, L = P && T === i.premiumTier, {
+      scaleFactor: x
     } = (0, s.q_F)({
       from: {
         scaleFactor: 0
@@ -107,7 +107,7 @@ let S = {
       children: [(0, r.jsx)(a.animated.div, {
         className: g.progressBarMarkerIndicator,
         style: {
-          transform: L.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
+          transform: x.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
         }
       }), T !== _.Eu4.NONE && (0, r.jsx)(u.Z, {
         tier: T,
@@ -150,7 +150,7 @@ let S = {
           [g.progressBarMarkerUnlocked]: w,
           [g.progressBarMarkerLocked]: j,
           [g.progressBarMarkerLower]: D,
-          [g.progressBarMarkerCurrent]: x
+          [g.progressBarMarkerCurrent]: L
         }),
         style: {
           left: "".concat(100 * S[T], "%")

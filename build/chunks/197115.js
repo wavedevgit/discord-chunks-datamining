@@ -176,8 +176,8 @@ let D = function(e) {
     isTrialCTA: N,
     buttonText: R,
     buttonTextClassName: D,
-    iconClassName: x,
-    postSuccessGuild: L,
+    iconClassName: L,
+    postSuccessGuild: x,
     onSubscribeModalClose: M,
     premiumModalAnalyticsLocation: k,
     showIcon: j = !0,
@@ -215,7 +215,7 @@ let D = function(e) {
         isGift: t,
         subscriptionTier: n,
         trialId: X ? null === (r = Q.subscription_trial) || void 0 === r ? void 0 : r.id : null,
-        postSuccessGuild: L,
+        postSuccessGuild: x,
         onSubscribeModalClose: M,
         analyticsLocations: q,
         premiumModalAnalyticsLocation: k,
@@ -287,7 +287,7 @@ let D = function(e) {
       children: [j && (0, r.jsx)(s.SrA, {
         size: "md",
         color: "currentColor",
-        className: o()(S.premiumIcon, x)
+        className: o()(S.premiumIcon, L)
       }), (0, r.jsx)("span", {
         className: o()(S.buttonText, D),
         children: null !== (i = null !== (t = null == eo ? void 0 : eo.disabledButtonText) && void 0 !== t ? t : R) && void 0 !== i ? i : $

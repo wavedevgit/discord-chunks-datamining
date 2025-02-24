@@ -78,8 +78,8 @@ class w {
   }
 }
 let D = new c.Z("OverlayStoreV3"),
-  x = new Set,
   L = new Set,
+  x = new Set,
   M = {},
   k = new w,
   j = null,
@@ -214,8 +214,8 @@ function ee(e, t) {
 
 function et(e, t) {
   try {
-    if (null != t && (H[e] = t), null == j || j.trackGame(e), J(e), x.has(e)) return;
-    x.add(e), a.Z.updateOverlayState(e, s.mM.WAITING_FOR_OVERLAY_OPEN)
+    if (null != t && (H[e] = t), null == j || j.trackGame(e), J(e), L.has(e)) return;
+    L.add(e), a.Z.updateOverlayState(e, s.mM.WAITING_FOR_OVERLAY_OPEN)
   } catch (t) {
     D.error("Error tracking game:", t), $(e, t)
   }
@@ -223,7 +223,7 @@ function et(e, t) {
 
 function en(e) {
   try {
-    null == j || j.untrackGame(e), x.delete(e), delete V[e], delete H[e], D.verbose("Removing tracked game ".concat(e))
+    null == j || j.untrackGame(e), L.delete(e), delete V[e], delete H[e], D.verbose("Removing tracked game ".concat(e))
   } catch (t) {
     D.error("Error removing tracked game:", t), $(e, t)
   }
@@ -231,8 +231,8 @@ function en(e) {
 
 function er() {
   try {
-    for (let e of x) null == j || j.untrackGame(e);
-    x.clear(), V = {}, H = {}, D.verbose("Cleared all tracked games")
+    for (let e of L) null == j || j.untrackGame(e);
+    L.clear(), V = {}, H = {}, D.verbose("Cleared all tracked games")
   } catch (e) {
     D.error("Error clearing tracked games:", e), $(g.R2, e)
   }
@@ -248,8 +248,8 @@ function eo() {
     return
   }
   let e = new Set(d.ZP.getRunningGames().filter(e => d.ZP.getOverlayEnabledForGame(e)).map(e => e.pid));
-  for (let t of new Set([...x].filter(t => !e.has(t)))) en(t);
-  for (let e of x) et(e)
+  for (let t of new Set([...L].filter(t => !e.has(t)))) en(t);
+  for (let e of L) et(e)
 }
 
 function ea(e) {
@@ -304,7 +304,7 @@ function ec() {
   } catch (e) {
     D.error("Error setting background throttling:", e), $(null != B ? B : g.R2, e)
   }
-  em(), L.clear(), null != B && eu(B), B = null, (0, g.tB)(null != B ? B : g.R2)
+  em(), x.clear(), null != B && eu(B), B = null, (0, g.tB)(null != B ? B : g.R2)
 }
 
 function eu(e) {
@@ -313,7 +313,7 @@ function eu(e) {
 
 function ed(e) {
   try {
-    D.verbose("Refreshing OOP host window for pid ".concat(e)), es(e), L.delete(null != B ? B : g.R2), B = e, (0, g.tB)(null != B ? B : g.R2);
+    D.verbose("Refreshing OOP host window for pid ".concat(e)), es(e), x.delete(null != B ? B : g.R2), B = e, (0, g.tB)(null != B ? B : g.R2);
     let t = f.Z.getWindow(I.$J),
       n = () => new Promise(e => {
         let n = t => {
@@ -438,7 +438,7 @@ function eN(e) {
     pid: t,
     error: n
   } = e;
-  if (x.has(t)) {
+  if (L.has(t)) {
     let e = "string" == typeof n ? Error(n) : n;
     ee(t, null != e ? e : Error("unknown error"))
   }
@@ -475,19 +475,19 @@ function eD(e) {
     locked: t,
     pid: n
   } = e, r = V[n];
-  if (t || r !== s.mM.OVERLAY_CRASHED_DISABLED) t ? L.delete(n) : L.add(n), (null == F || (clearTimeout(F), F = null, !t)) && (t ? ea(t) : F = setTimeout(() => {
+  if (t || r !== s.mM.OVERLAY_CRASHED_DISABLED) t ? x.delete(n) : x.add(n), (null == F || (clearTimeout(F), F = null, !t)) && (t ? ea(t) : F = setTimeout(() => {
     ea(t), F = null
   }, 100))
 }
 
-function ex(e) {
+function eL(e) {
   let {
     region: t
   } = e;
   ea(!1)
 }
 
-function eL() {
+function ex() {
   ea(!0)
 }
 
@@ -511,7 +511,7 @@ class eU extends(r = i.ZP.Store) {
     this.waitFor(d.ZP, p.default, u.Z), this.syncWith([u.Z], ek)
   }
   isInputLocked(e) {
-    return !L.has(e)
+    return !x.has(e)
   }
   isSupported() {
     return S.iP
@@ -520,7 +520,7 @@ class eU extends(r = i.ZP.Store) {
     return ei()
   }
   isOverlayV3EnabledForPID(e) {
-    return x.has(e)
+    return L.has(e)
   }
   isPinned(e) {
     let t = _.Z.getLayout(I.OVERLAY_V3_LAYOUT_ID);
@@ -546,7 +546,7 @@ class eU extends(r = i.ZP.Store) {
     return null == G ? null : null !== (e = d.ZP.getRunningGames().find(e => e.pid === G)) && void 0 !== e ? e : null
   }
   isReady(e) {
-    return x.has(e)
+    return L.has(e)
   }
   isGPUBoosted() {
     return k.isGPUBoosted
@@ -563,8 +563,8 @@ let eG = new eU(o.Z, {
     RUNNING_GAME_TOGGLE_OVERLAY: eS,
     OVERLAY_SET_CLICK_ZONES: eP,
     OVERLAY_SET_INPUT_LOCKED: eD,
-    OVERLAY_ACTIVATE_REGION: ex,
-    OVERLAY_DEACTIVATE_ALL_REGIONS: eL,
+    OVERLAY_ACTIVATE_REGION: eL,
+    OVERLAY_DEACTIVATE_ALL_REGIONS: ex,
     OVERLAY_RENDER_DEBUG_MODE: eM,
     OVERLAY_UPDATE_OVERLAY_METHOD: eT,
     OVERLAY_UPDATE_OVERLAY_STATE: ew,

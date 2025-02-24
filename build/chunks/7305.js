@@ -27,8 +27,8 @@ var l = n(200651),
   N = n(92594),
   y = n(293858),
   I = n(183813),
-  v = n(614223),
-  O = n(174827),
+  O = n(614223),
+  v = n(174827),
   P = n(846464),
   b = n(184160),
   T = n(48175),
@@ -74,8 +74,8 @@ function R(e) {
     onSubscriptionConfirmation: N,
     renderPurchaseConfirmation: y,
     postSuccessGuild: I,
-    followupSKUInfo: v,
-    renderHeader: O,
+    followupSKUInfo: O,
+    renderHeader: v,
     applicationId: P,
     guildId: b,
     referralTrialOfferId: T,
@@ -117,8 +117,8 @@ function R(e) {
     onSubscriptionConfirmation: N,
     renderPurchaseConfirmation: y,
     postSuccessGuild: I,
-    followupSKUInfo: v,
-    renderHeader: O,
+    followupSKUInfo: O,
+    renderHeader: v,
     applicationId: P,
     guildId: b,
     referralTrialOfferId: T,
@@ -138,7 +138,7 @@ function H(e) {
   } = (0, f.JL)(), {
     isGift: l
   } = (0, x.wD)();
-  return (0, v.Kp)({
+  return (0, O.Kp)({
     isTrial: null != e && e,
     isGift: l,
     selectedSkuId: n,
@@ -204,7 +204,7 @@ let B = [{
   }
 }, {
   key: h.h8.PLAN_SELECT,
-  renderStep: e => (0, l.jsx)(O.x, U({}, e)),
+  renderStep: e => (0, l.jsx)(v.x, U({}, e)),
   options: {
     renderHeader: !0,
     useBreadcrumbLabel: e => H(e) ? null : w.NW.string(w.t["r+SebW"])

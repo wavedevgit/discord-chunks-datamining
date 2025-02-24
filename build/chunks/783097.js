@@ -3,7 +3,7 @@
 n.d(t, {
   $d: () => N,
   BQ: () => T,
-  Cb: () => L,
+  Cb: () => x,
   Hu: () => M,
   L1: () => B,
   Ow: () => G,
@@ -15,7 +15,7 @@ n.d(t, {
   jD: () => A,
   lf: () => P,
   pF: () => U,
-  sl: () => x,
+  sl: () => L,
   vJ: () => R,
   yJ: () => w,
   ye: () => C
@@ -167,7 +167,7 @@ function D(e) {
   return h()
 }
 
-function x(e) {
+function L(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
     {
       fakeAppIconURL: n
@@ -187,7 +187,7 @@ function x(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   return !!T(e) && (e instanceof c.ZP ? e.isMonetized : e.is_monetized)
 }
 

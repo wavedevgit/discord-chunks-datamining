@@ -166,11 +166,11 @@ function D(e) {
   return u[e]
 }
 
-function x(e) {
+function L(e) {
   return S.test(e)
 }
 
-function L(e) {
+function x(e) {
   return e.replace(b, (e, t) => F(t, e))
 }
 
@@ -191,7 +191,7 @@ let k = String.fromCodePoint(917631),
 
 function G(e, t) {
   var n;
-  if (!0 !== t && !x(e)) return [{
+  if (!0 !== t && !L(e)) return [{
     type: "text",
     text: e
   }];
@@ -228,7 +228,7 @@ function B(e) {
 }
 
 function Z(e) {
-  if (!x(e)) return null;
+  if (!L(e)) return null;
   let t = G(e, !0).map(e => "text" === e.type ? e.text : e.emojiName).join("");
   return t === e ? null : t
 }
@@ -254,8 +254,8 @@ let W = {
   getCategories: P,
   getByName: w,
   getByCategory: D,
-  contentHasUnicodeOrEmoji: x,
-  translateInlineEmojiToSurrogates: L,
+  contentHasUnicodeOrEmoji: L,
+  translateInlineEmojiToSurrogates: x,
   maybeTranslateSurrogatesToInlineEmoji: Z,
   findInlineEmojisFromSurrogates: G,
   translateSurrogatesToInlineEmoji: B,

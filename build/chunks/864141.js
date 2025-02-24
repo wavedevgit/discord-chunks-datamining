@@ -41,10 +41,10 @@ function w(e) {
     onClose: w
   } = e, {
     profileType: D
-  } = (0, b.z)(), x = {
+  } = (0, b.z)(), L = {
     [P.fullSize]: D === C.y0.FULL_SIZE
   }, {
-    analyticsLocations: L
+    analyticsLocations: x
   } = (0, d.ZP)(u.Z.USER_PROFILE_VOICE_ACTIVITY_CARD), M = (0, E.Z)({
     display: "voice",
     activity: {
@@ -52,7 +52,7 @@ function w(e) {
     },
     voiceChannelId: n.id,
     user: t,
-    analyticsLocations: L
+    analyticsLocations: x
   }), k = (0, v.Z)({
     userId: t.id,
     onAction: M
@@ -94,7 +94,7 @@ function w(e) {
       })
     })
   }, F = () => (0, r.jsx)("div", {
-    className: o()(P.actions, x),
+    className: o()(P.actions, L),
     children: (0, r.jsx)(N.Z, {
       channel: n,
       onAction: M,
@@ -102,7 +102,7 @@ function w(e) {
     })
   });
   return (0, r.jsx)(d.Gt, {
-    value: L,
+    value: x,
     children: (0, r.jsxs)(y.Z, {
       ref: k,
       className: o()(P.card, i),
@@ -118,7 +118,7 @@ function w(e) {
       }), (0, r.jsx)("div", {
         className: P.body,
         children: (0, r.jsxs)("div", {
-          className: o()(P.content, x),
+          className: o()(P.content, L),
           children: [(0, r.jsx)(I.Z, {
             users: U,
             channel: n

@@ -39,7 +39,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,7 +64,7 @@ function L(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -476,7 +476,7 @@ function eD(e) {
   return ew(t)
 }
 
-function ex(e) {
+function eL(e) {
   let {
     voiceStates: t
   } = e;
@@ -488,7 +488,7 @@ function ex(e) {
   }, !1)
 }
 
-function eL(e) {
+function ex(e) {
   let {
     accountId: t,
     isPremium: n
@@ -551,7 +551,7 @@ function ek(e, t, n) {
     artists: [],
     isLocal: !1
   });
-  if (null != b && !0 !== b.is_active && (b = M(x({}, b), {
+  if (null != b && !0 !== b.is_active && (b = M(L({}, b), {
       is_active: !0
     })), null != T && [P.Hw.PLAYLIST, P.Hw.ALBUM].includes(T.type)) {
     let n = eG.getPlayerState(e);
@@ -702,7 +702,7 @@ let eG = new eU(p.Z, {
     CONNECTION_OPEN: eb,
     SPOTIFY_ACCOUNT_ACCESS_TOKEN: ey,
     SPOTIFY_ACCOUNT_ACCESS_TOKEN_REVOKE: eO,
-    SPOTIFY_PROFILE_UPDATE: eL,
+    SPOTIFY_PROFILE_UPDATE: ex,
     SPOTIFY_PLAYER_STATE: eS,
     SPOTIFY_PLAYER_PLAY: eI,
     ACTIVITY_PLAY: eA,
@@ -711,7 +711,7 @@ let eG = new eU(p.Z, {
     SPOTIFY_SET_DEVICES: eT,
     SPOTIFY_SET_ACTIVE_DEVICE: eN,
     SPEAKING: eD,
-    VOICE_STATE_UPDATES: ex,
+    VOICE_STATE_UPDATES: eL,
     MEDIA_ENGINE_SET_GO_LIVE_SOURCE: eM
   }),
   eB = eG

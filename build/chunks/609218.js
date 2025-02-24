@@ -47,8 +47,8 @@ function I(e) {
     p.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, N), null == C || C()
   }, [C, N]);
   let D = P.length > 1 && I,
-    x = () => 2 === t ? O.hasTabParentContainer : 1 === t ? O.hasParentContainer : O.noParentContainer,
-    L = () => {
+    L = () => 2 === t ? O.hasTabParentContainer : 1 === t ? O.hasParentContainer : O.noParentContainer,
+    x = () => {
       p.default.track(b.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: T,
         location_object: b.qAy.NAVIGATION_LINK
@@ -66,7 +66,7 @@ function I(e) {
       "aria-label": y.NW.string(y.t.cpT0Cg),
       isVisible: !0
     }), (0, r.jsxs)("div", {
-      className: a()(O.container, x()),
+      className: a()(O.container, L()),
       children: [(0, r.jsx)(l.olH, {
         onClick: A,
         className: O.closeButton
@@ -98,7 +98,7 @@ function I(e) {
           size: l.zxk.Sizes.SMALL,
           color: l.zxk.Colors.CUSTOM,
           look: l.zxk.Looks.LINK,
-          onClick: L,
+          onClick: x,
           children: y.NW.string(y.t.ZnqyZ2)
         }), (0, r.jsx)(g.Z, {
           showGradient: !0,

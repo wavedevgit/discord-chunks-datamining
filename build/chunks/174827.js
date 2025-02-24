@@ -26,8 +26,8 @@ var l = n(200651),
   N = n(509545),
   y = n(669079),
   I = n(63063),
-  v = n(74538),
-  O = n(987209),
+  O = n(74538),
+  v = n(987209),
   P = n(563132),
   b = n(409813),
   T = n(51499),
@@ -66,7 +66,7 @@ function B(e) {
     giftRecipient: es,
     giftMessage: er,
     claimableRewards: ea
-  } = (0, O.wD)(), eo = (0, f.a5)($), eC = (null === (t = (0, h.Z)()) || void 0 === t ? void 0 : t.planSelectionBanner) != null, ed = ei && eo && null != ea && ea.length > 0 && eC, ec = null != Q ? q[Q] : null, {
+  } = (0, v.wD)(), eo = (0, f.a5)($), eC = (null === (t = (0, h.Z)()) || void 0 === t ? void 0 : t.planSelectionBanner) != null, ed = ei && eo && null != ea && ea.length > 0 && eC, ec = null != Q ? q[Q] : null, {
     newPlans: eu
   } = c.ZP.useExperiment({
     location: "d17fd6_3"
@@ -78,7 +78,7 @@ function B(e) {
     location: "d17fd6_4"
   }, {
     autoTrackExposure: !1
-  }), eE = i.useMemo(() => (0, v.V7)({
+  }), eE = i.useMemo(() => (0, O.V7)({
     skuId: J,
     isPremium: el,
     multiMonthPlans: ex ? eu : [],
@@ -90,7 +90,7 @@ function B(e) {
   }), [J, el, eu, z, ex, ei, eh, et, eg]), eS = em && eE.includes(R.Xh.PREMIUM_MONTH_TIER_2) ? R.Xh.PREMIUM_MONTH_TIER_2 : eE[0], eN = (0, a.e7)([N.Z], () => N.Z.get(eS)), ey = [{
     planId: null == eN ? void 0 : eN.id,
     quantity: 1
-  }], [eI, ev] = i.useState(eL), [eO, eP] = (0, u.ED)({
+  }], [eI, eO] = i.useState(eL), [ev, eP] = (0, u.ED)({
     items: ey,
     renewal: !1,
     preventFetch: !eL,
@@ -100,9 +100,9 @@ function B(e) {
     currency: en.currency
   });
   i.useEffect(() => {
-    eL && ev((null == eO ? void 0 : eO.subscriptionPeriodEnd) == null)
-  }, [eO, eL]), (0, C.Z)("Payment Modal Plan Select Step", eI, 5, {
-    proratedInvoicePreview: eO,
+    eL && eO((null == ev ? void 0 : ev.subscriptionPeriodEnd) == null)
+  }, [ev, eL]), (0, C.Z)("Payment Modal Plan Select Step", eI, 5, {
+    proratedInvoicePreview: ev,
     proratedInvoiceError: eP,
     isEligibleForOffer: eL
   }, {
@@ -113,7 +113,7 @@ function B(e) {
   let eb = null !== (B = null == eP ? void 0 : eP.message) && void 0 !== B ? B : H.NW.string(H.t.R0RpRU),
     eT = eL && null == eP,
     eM = eL && null != eP,
-    eZ = eT && null == z && !!eL && (null == eO ? void 0 : eO.subscriptionPeriodEnd) == null,
+    eZ = eT && null == z && !!eL && (null == ev ? void 0 : ev.subscriptionPeriodEnd) == null,
     {
       enabled: ew
     } = p._.useExperiment({
@@ -138,8 +138,8 @@ function B(e) {
         eligibleForMultiMonthPlans: ex,
         referralTrialOfferId: K,
         selectedPlanId: null == $ ? void 0 : $.id,
-        subscriptionPeriodEnd: null == eO ? void 0 : eO.subscriptionPeriodEnd,
-        discountInvoiceItems: em ? null == eO ? void 0 : eO.invoiceItems : void 0,
+        subscriptionPeriodEnd: null == ev ? void 0 : ev.subscriptionPeriodEnd,
+        discountInvoiceItems: em ? null == ev ? void 0 : ev.invoiceItems : void 0,
         useCompactGiftComponents: ed,
         handleClose: X
       }), eT && (0, l.jsxs)(l.Fragment, {

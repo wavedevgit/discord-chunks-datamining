@@ -114,11 +114,11 @@ function D(e, t, n) {
   }
 }
 
-function x(e) {
+function L(e) {
   return new a.OG(N[e])
 }
 
-function L(e, t) {
+function x(e, t) {
   let n;
   return null != e && (n = {
     startDate: o()(e),
@@ -147,11 +147,11 @@ function k(e, t) {
 }
 
 function j(e) {
-  return L(e.scheduledStartTime, e.scheduledEndTime)
+  return x(e.scheduledStartTime, e.scheduledEndTime)
 }
 
 function U(e) {
-  return L(e.scheduled_start_time, e.scheduled_end_time)
+  return x(e.scheduled_start_time, e.scheduled_end_time)
 }
 
 function G(e, t) {
@@ -215,21 +215,21 @@ function W(e, t) {
 }
 
 function Y(e) {
-  let t = x(e.toDate().getDay()),
-    n = x(e.toDate().getUTCDay());
+  let t = L(e.toDate().getDay()),
+    n = L(e.toDate().getUTCDay());
   return n.weekday - t.weekday > 0 ? O : n.weekday - t.weekday < 0 ? y : b
 }
 
 function K(e) {
-  let t = x(e.toDate().getDay()),
-    n = x(e.toDate().getUTCDay());
+  let t = L(e.toDate().getDay()),
+    n = L(e.toDate().getUTCDay());
   return n.weekday - t.weekday > 0 ? T : n.weekday - t.weekday < 0 ? I : S
 }
 
 function z(e, t) {
   let n = Y(t),
     r = K(t),
-    i = x(t.toDate().getUTCDay()),
+    i = L(t.toDate().getUTCDay()),
     o = Math.ceil(t.toDate().getUTCDate() / 7),
     s = t.toDate();
   switch (s.setMilliseconds(0), e) {

@@ -67,7 +67,7 @@ function D(e, t, n, r, i) {
   e.moveTo(t, n + i), e.lineTo(t, n + r - i), e.arc(t + i, n + r - i, i, Math.PI, 0, !0), e.lineTo(t + 2 * i, n + i), e.arc(t + i, n + i, i, 0, Math.PI, !0), e.closePath()
 }
 
-function x(e) {
+function L(e) {
   let {
     showAll: t,
     currentTime: n,
@@ -77,7 +77,7 @@ function x(e) {
   return t ? i : Math.max(0, Math.round(n / r * i))
 }
 
-function L(e) {
+function x(e) {
   let {
     context: t,
     devicePixelRatio: n,
@@ -166,7 +166,7 @@ function G(e) {
       currentTime: e,
       duration: t,
       played: n
-    } = F.current, r = x({
+    } = F.current, r = L({
       showAll: !n,
       currentTime: e,
       duration: t,
@@ -176,7 +176,7 @@ function G(e) {
   }, [y]), i.useEffect(() => {
     let e = b.current;
     if (null == e) return;
-    let t = x({
+    let t = L({
       showAll: !l,
       currentTime: o,
       duration: s,
@@ -204,7 +204,7 @@ function G(e) {
       i.clearRect(0, 0, r.width, r.height), i.beginPath();
       let [c, u] = U(R, w, n, N.current);
       a = a || u, i.fillStyle = c;
-      for (let e = 0; e < y.length; e++) L({
+      for (let e = 0; e < y.length; e++) x({
         context: i,
         devicePixelRatio: C,
         canvasHeight: s,
@@ -220,7 +220,7 @@ function G(e) {
       for (let e = 0; e < o.length; e++) {
         let t = o[e],
           n = Math.max(t.getCurrentValue(), y[e] - .1);
-        i.beginPath(), i.fillStyle = t.isReset ? f : _, L({
+        i.beginPath(), i.fillStyle = t.isReset ? f : _, x({
           context: i,
           devicePixelRatio: C,
           canvasHeight: s,

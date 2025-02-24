@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(937615),
   w = n(987209),
   D = n(563132),
-  x = n(45572),
-  L = n(119226),
+  L = n(45572),
+  x = n(119226),
   M = n(981631),
   k = n(388032),
   j = n(772228);
@@ -138,7 +138,7 @@ function B(e) {
   let es = (0, l.e7)([h.Z, N.Z], () => N.Z.inTestModeForApplication(P.id) || h.Z.inDevModeForApplication(P.id), [P.id]),
     el = (0, l.e7)([O.Z], () => O.Z.enabled),
     ec = s.M.EEA_COUNTRIES.has(S.Z.ipCountryCodeWithFallback),
-    eu = B === x.A.PURCHASING || B === x.A.COMPLETED,
+    eu = B === L.A.PURCHASING || B === L.A.COMPLETED,
     ed = null != F ? Z[F].type : null,
     ef = (0, m.ed)("SKUInvoice"),
     ep = er.productLine === M.POd.COLLECTIBLES && ef;
@@ -168,7 +168,7 @@ function B(e) {
       application: P,
       sku: er,
       isEmbeddedIAP: K
-    }), ee && (0, r.jsx)(L.Z, {
+    }), ee && (0, r.jsx)(x.Z, {
       sku: er
     }), null != $ ? (0, r.jsx)(y.s, {
       giftRecipient: $

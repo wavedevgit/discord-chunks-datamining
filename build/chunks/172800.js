@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => L
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -84,15 +84,15 @@ function D(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let x = e => {
+let L = e => {
   let {
     emojiDescriptors: t,
     emojiSize: o,
     onSelect: A,
     onSelectSoundmoji: R,
     onInspect: D,
-    surrogateCodePoint: x,
-    getEmojiItemProps: L,
+    surrogateCodePoint: L,
+    getEmojiItemProps: x,
     getEmojiRowProps: M,
     isScrolling: k,
     isUsingKeyboardNavigation: j,
@@ -133,7 +133,7 @@ let x = e => {
           } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, {
             visibleRowIndex: p,
             columnIndex: _
-          } = e, h = null !== (n = L(_, U)) && void 0 !== n ? n : {}, {
+          } = e, h = null !== (n = x(_, U)) && void 0 !== n ? n : {}, {
             ref: m,
             tabIndex: g,
             onFocus: E
@@ -220,13 +220,13 @@ let x = e => {
             isInspected: a,
             isScrolling: k,
             isUsingKeyboardNavigation: j,
-            surrogateCodePoint: x,
+            surrogateCodePoint: L,
             allowAnimatedEmoji: G,
             selectedItemClassName: V,
             onSelect: A,
             onInspect: D,
             channelGuildId: Z,
-            getEmojiItemProps: L,
+            getEmojiItemProps: x,
             isMediumSize: ef,
             isLargeSize: ed,
             pulseItemKey: el,

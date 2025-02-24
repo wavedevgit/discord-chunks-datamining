@@ -27,8 +27,8 @@ var r, i, o, a = n(212036),
   P = N && E(N),
   w = Object.prototype,
   D = l.TypeError,
-  x = b("toStringTag"),
-  L = y("TYPED_ARRAY_TAG"),
+  L = b("toStringTag"),
+  x = y("TYPED_ARRAY_TAG"),
   M = "TypedArrayConstructor",
   k = a && !!v && "Opera" !== f(l.opera),
   j = !1,
@@ -113,16 +113,16 @@ if ((!k || !c(R) || R === Function.prototype) && (R = function() {
   for (r in U) l[r] && v(l[r], R);
 if ((!k || !P || P === w) && (P = R.prototype, k))
   for (r in U) l[r] && v(l[r].prototype, P);
-if (k && E(C) !== P && v(C, P), s && !d(P, x))
-  for (r in j = !0, m(P, x, {
+if (k && E(C) !== P && v(C, P), s && !d(P, L))
+  for (r in j = !0, m(P, L, {
       configurable: !0,
       get: function() {
-        return u(this) ? this[L] : void 0
+        return u(this) ? this[x] : void 0
       }
-    }), U) l[r] && _(l[r], L, r);
+    }), U) l[r] && _(l[r], x, r);
 e.exports = {
   NATIVE_ARRAY_BUFFER_VIEWS: k,
-  TYPED_ARRAY_TAG: j && L,
+  TYPED_ARRAY_TAG: j && x,
   aTypedArray: V,
   aTypedArrayConstructor: H,
   exportTypedArrayMethod: W,

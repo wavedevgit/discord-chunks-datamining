@@ -155,8 +155,8 @@ class T extends(r = o.PureComponent) {
       onValueRender: P,
       renderMarker: w,
       getAriaValueText: D,
-      barClassName: x,
-      grabberClassName: L,
+      barClassName: L,
+      grabberClassName: x,
       grabberStyles: M = {},
       markerPosition: k = 0,
       "aria-hidden": j,
@@ -233,7 +233,7 @@ class T extends(r = o.PureComponent) {
               className: g.track,
               children: V
             }), (0, i.jsx)("div", {
-              className: s()(g.bar, x),
+              className: s()(g.bar, L),
               style: S,
               children: (0, i.jsx)("div", {
                 className: g.barFill,
@@ -249,7 +249,7 @@ class T extends(r = o.PureComponent) {
                 text: A || E ? null : H,
                 forceOpen: n || r && h.Z.keyboardModeEnabled,
                 children: e => (0, i.jsx)("div", y(v({}, e), {
-                  className: s()(g.grabber, L),
+                  className: s()(g.grabber, x),
                   style: y(v({}, M), {
                     left: F
                   }),

@@ -44,8 +44,8 @@ var r = n(990547),
   P = n(496675),
   w = n(594174),
   D = n(979651),
-  x = n(626135),
-  L = n(585483),
+  L = n(626135),
+  x = n(585483),
   M = n(630388),
   k = n(823379),
   j = n(573261),
@@ -234,7 +234,7 @@ async function en(e) {
           null == l || l(), e()
         },
         onFailure: (e, n, o, a) => {
-          null == l || l(), x.default.track(q.rMx.ACTIVITY_INTERACTION_CALLBACK_ERROR, {
+          null == l || l(), L.default.track(q.rMx.ACTIVITY_INTERACTION_CALLBACK_ERROR, {
             channel_id: r,
             guild_id: i,
             application_id: t,
@@ -281,7 +281,7 @@ async function er(e) {
     result: "failure",
     reason: 2
   };
-  if (!g && null == i) return L.S.dispatch(q.CkL.SHOW_ACTIVITIES_CHANNEL_SELECTOR, {
+  if (!g && null == i) return x.S.dispatch(q.CkL.SHOW_ACTIVITIES_CHANNEL_SELECTOR, {
     applicationId: m
   }), {
     result: "failure",

@@ -9,8 +9,8 @@ n.r(t), n.d(t, {
   openDisclosureModal: () => j,
   openQuestInGameRewardModal: () => M,
   openQuestOrbsRewardModal: () => k,
-  openQuestsNitroRewardModal: () => L,
-  openQuestsRewardCodeModal: () => x,
+  openQuestsNitroRewardModal: () => x,
+  openQuestsRewardCodeModal: () => L,
   openVideoQuestModal: () => F
 });
 var r = n(200651);
@@ -80,7 +80,7 @@ function P(e, t) {
 let w = "in-app",
   D = "Discord Widget";
 
-function x(e) {
+function L(e) {
   let {
     questId: t,
     location: i,
@@ -102,7 +102,7 @@ function x(e) {
   })
 }
 
-function L(e, t) {
+function x(e, t) {
   (0, s.ZDy)(async () => {
     let {
       default: i

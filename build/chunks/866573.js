@@ -38,7 +38,7 @@ var r = n(147018),
     return f(g, e) && g[e].m ? g[e].c : 0
   },
   D = function() {
-    p(this, x);
+    p(this, L);
     var e = arguments.length,
       t = m(e < 1 ? void 0 : arguments[0]),
       n = m(e < 2 ? void 0 : arguments[1], "Error"),
@@ -53,8 +53,8 @@ var r = n(147018),
       i.name = O, c(this, "stack", l(1, E(i.stack, 1)))
     }
   },
-  x = D.prototype = s(A),
-  L = function(e) {
+  L = D.prototype = s(A),
+  x = function(e) {
     return {
       enumerable: !0,
       configurable: !0,
@@ -62,11 +62,11 @@ var r = n(147018),
     }
   },
   M = function(e) {
-    return L(function() {
+    return x(function() {
       return R(this)[e]
     })
   };
-b && (d(x, "code", M("code")), d(x, "message", M("message")), d(x, "name", M("name"))), c(x, "constructor", l(1, D));
+b && (d(L, "code", M("code")), d(L, "message", M("message")), d(L, "name", M("name"))), c(L, "constructor", l(1, D));
 var k = a(function() {
     return !(new T instanceof I)
   }),
@@ -87,7 +87,7 @@ r({
 });
 var Z = o(O),
   F = Z.prototype;
-for (var V in j && (y || T === Z) && u(F, "toString", h), U && b && T === Z && d(F, "code", L(function() {
+for (var V in j && (y || T === Z) && u(F, "toString", h), U && b && T === Z && d(F, "code", x(function() {
     return w(_(this).name)
   })), g)
   if (f(g, V)) {

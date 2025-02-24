@@ -52,15 +52,15 @@ var r = n(430901),
       P = h ? e.offsetWidth - A - e.clientWidth : 0,
       w = a ? T + A : 0,
       D = a ? N + C : 0,
-      x = r ? r.width : d(n.width) - w - P,
-      L = r ? r.height : d(n.height) - D - R,
-      M = x + T + P + A,
-      k = L + N + R + C,
+      L = r ? r.width : d(n.width) - w - P,
+      x = r ? r.height : d(n.height) - D - R,
+      M = L + T + P + A,
+      k = x + N + R + C,
       j = Object.freeze({
-        devicePixelContentBoxSize: f(Math.round(x * devicePixelRatio), Math.round(L * devicePixelRatio), _),
+        devicePixelContentBoxSize: f(Math.round(L * devicePixelRatio), Math.round(x * devicePixelRatio), _),
         borderBoxSize: f(M, k, _),
-        contentBoxSize: f(x, L, _),
-        contentRect: new i.N(b, g, x, L)
+        contentBoxSize: f(L, x, _),
+        contentRect: new i.N(b, g, L, x)
       });
     return s.set(e, j), j
   },

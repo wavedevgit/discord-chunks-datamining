@@ -238,7 +238,7 @@ e.exports = function(e) {
         b.dir = "ltr", b.style.cssText = p, b.className = l, y.className = l, y.style.cssText = h, O.style.cssText = m, S.style.cssText = E, I.style.cssText = g, T.style.cssText = v, O.appendChild(S), I.appendChild(T), y.appendChild(O), y.appendChild(I), b.appendChild(y), o.appendChild(b), _(O, "scroll", N), _(I, "scroll", A), i(s).onExpandScroll = N, i(s).onShrinkScroll = A
       }
 
-      function x() {
+      function L() {
         function a(t, n, r) {
           var i = S(t),
             o = N(n),
@@ -332,7 +332,7 @@ e.exports = function(e) {
         a(s, _.width, _.height)
       }
 
-      function L() {
+      function x() {
         if (d("finalizeDomMutation invoked."), !i(s)) {
           d("Aborting because element has been uninstalled");
           return
@@ -346,7 +346,7 @@ e.exports = function(e) {
       }
 
       function k() {
-        d("Installing..."), b(), v(), n.add(0, y), n.add(1, D), n.add(2, x), n.add(3, L), n.add(4, M)
+        d("Installing..."), b(), v(), n.add(0, y), n.add(1, D), n.add(2, L), n.add(3, x), n.add(4, M)
       }
       c || (c = s, s = e, e = null), e = e || {}, d("Making detectable..."), f(s) ? (d("Element is detached"), w(), d("Waiting until element is attached..."), i(s).onRendered = function() {
         d("Element is now attached"), k()

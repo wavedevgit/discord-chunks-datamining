@@ -72,9 +72,9 @@ function N(e) {
     }))
   }, [g, P, t.guildId, t.soundId]);
   let {
-    buttonType: x,
-    description: L
-  } = (0, v.Z)(t, n, N, A), M = x === v.y.JOIN_GUILD, k = !b && w, j = i.useMemo(() => N ? u.JO.createFromGuildRecord(y) : null != A ? u.JO.createFromDiscoverableGuild(A) : void 0, [y, N, A]);
+    buttonType: L,
+    description: x
+  } = (0, v.Z)(t, n, N, A), M = L === v.y.JOIN_GUILD, k = !b && w, j = i.useMemo(() => N ? u.JO.createFromGuildRecord(y) : null != A ? u.JO.createFromDiscoverableGuild(A) : void 0, [y, N, A]);
   return k ? (0, r.jsx)(f.SE, {}) : (0, r.jsxs)("div", {
     className: I.infoContainer,
     children: [(0, r.jsxs)(f.W_, {
@@ -89,7 +89,7 @@ function N(e) {
           onSelectItem: () => {}
         }), (0, r.jsx)(a.xv, {
           variant: "text-sm/normal",
-          children: L
+          children: x
         })]
       }), null != j && (0, r.jsxs)("div", {
         className: I.infoExpandedGuildContainer,
@@ -106,7 +106,7 @@ function N(e) {
             isDisplayingJoinGuildButtonInPopout: M
           })
         }), (0, r.jsx)(T, {
-          buttonType: x,
+          buttonType: L,
           discoverableGuildId: null == A ? void 0 : A.id,
           closePopout: c
         })]

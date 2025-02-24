@@ -83,8 +83,8 @@ let R = new u.Z("OverlayRenderStore"),
   P = l.R5.UNSET,
   w = !1,
   D = !1,
-  x = !1,
-  L = null,
+  L = !1,
+  x = null,
   M = {},
   k = null,
   j = null,
@@ -379,7 +379,7 @@ async function eo(e) {
     newFullscreenType: r
   }), z(e, "previousFullscreenType", n.fullscreenType), z(e, "fullscreenType", r), eA.emitChange(), t = !0);
   let i = J(n, r);
-  if (n.overlayMethod === i.overlayMethod && n.oopEnabled === i.enabledOOP && n.legacyEnabled === i.enabledLegacy && i.overlayMethod !== l.gl.Disabled || (L === m.R2 || null === L) && n.state === l.mM.OVERLAY_RENDERING) return t;
+  if (n.overlayMethod === i.overlayMethod && n.oopEnabled === i.enabledOOP && n.legacyEnabled === i.enabledLegacy && i.overlayMethod !== l.gl.Disabled || (x === m.R2 || null === x) && n.state === l.mM.OVERLAY_RENDERING) return t;
   let o = P === l.R5.OUT_OF_PROCESS_V2 || P === l.R5.OUT_OF_PROCESS_V3 || P === l.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
     a = P === l.R5.IN_PROCESS_V2,
     s = (0, b.PD)(n, r, Z()),
@@ -454,7 +454,7 @@ async function eu(e, t) {
 }
 
 function ed() {
-  ei(), x = !1, j = null, eS()
+  ei(), L = !1, j = null, eS()
 }
 
 function ef(e) {
@@ -537,26 +537,26 @@ function ey(e) {
 }
 
 function eO(e) {
-  L = e.pid
+  x = e.pid
 }
 
 function eS() {
-  d.Z.hasLoadedExperiments && !x && (x = !0, eu(g.v.legacyEnabled, g.v.oopEnabled))
+  d.Z.hasLoadedExperiments && !L && (L = !0, eu(g.v.legacyEnabled, g.v.oopEnabled))
 }
 
 function eI() {
-  x = !1, j = null
+  L = !1, j = null
 }
 
 function eT() {
-  x = !1, j = null, eg()
+  L = !1, j = null, eg()
 }
 class eN extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(f.ZP, _.default, d.Z, y.ZP), this.syncWith([d.Z], eS)
   }
   getHasLoadedExperiments() {
-    return x
+    return L
   }
   getForcedRenderMode() {
     return P

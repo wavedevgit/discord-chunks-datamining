@@ -40,8 +40,8 @@ function P(e, t, n) {
 }
 let w = "seenQSTutorial",
   D = 5,
-  x = 100,
-  L = [u.h8.USER, u.h8.GROUP_DM, u.h8.TEXT_CHANNEL, u.h8.GUILD, u.h8.APPLICATION, u.h8.LINK, u.h8.IN_APP_NAVIGATION],
+  L = 100,
+  x = [u.h8.USER, u.h8.GROUP_DM, u.h8.TEXT_CHANNEL, u.h8.GUILD, u.h8.APPLICATION, u.h8.LINK, u.h8.IN_APP_NAVIGATION],
   M = 0,
   k = !1,
   j = !1,
@@ -179,7 +179,7 @@ function q(e) {
     query: n,
     queryMode: i
   } = e, o = null !== (t = I.Z.getGuildId()) && void 0 !== t ? t : void 0, a = new Set(["user:".concat(h.default.getId())]);
-  null != o && a.add("guild:".concat(o)), r = null != r ? r : new u.ZP(J, L, null != i ? x : D, {
+  null != o && a.add("guild:".concat(o)), r = null != r ? r : new u.ZP(J, x, null != i ? L : D, {
     frecencyBoosters: !0,
     blacklist: a
   }), B = null, Z = n.length, U = i, r.search(n)
@@ -220,7 +220,7 @@ function ee(e) {
   if (null == r) return !1;
   let a = null !== (t = I.Z.getGuildId()) && void 0 !== t ? t : null;
   if (U !== o) {
-    r.setResultTypes(null != o ? [o] : L), r.setLimit(null != o ? x : D);
+    r.setResultTypes(null != o ? [o] : x), r.setLimit(null != o ? L : D);
     let e = null !== (n = I.Z.getGuildId()) && void 0 !== n ? n : void 0;
     o === u.h8.USER && null != e ? r.setOptions({
       userFilters: {

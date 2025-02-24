@@ -3,7 +3,7 @@
 let r;
 n.d(t, {
   $k: () => O,
-  CA: () => x,
+  CA: () => L,
   F8: () => ee,
   JM: () => D,
   NZ: () => k,
@@ -165,7 +165,7 @@ function D(e) {
   }))
 }
 
-function x(e) {
+function L(e) {
   let {
     userId: t,
     avatar: n,
@@ -179,9 +179,9 @@ function x(e) {
   })
 }
 
-function L(e, t) {
+function x(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = x(e, n);
+    r = L(e, n);
   return null != r ? et(r) : t.getAvatarSource(e.guildId, n)
 }
 
@@ -442,9 +442,9 @@ function et(e) {
 let en = {
   getUserAvatarURL: w,
   getDefaultAvatarURL: R,
-  getGuildMemberAvatarURL: x,
+  getGuildMemberAvatarURL: L,
   getGuildMemberAvatarURLSimple: D,
-  getGuildMemberAvatarSource: L,
+  getGuildMemberAvatarSource: x,
   getGuildMemberBannerURL: j,
   getUserBannerURL: M,
   getAvatarDecorationURL: k,

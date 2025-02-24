@@ -7,7 +7,7 @@ n.d(t, {
   n4: () => M,
   q8: () => A,
   t$: () => T,
-  xl: () => L
+  xl: () => x
 }), n(411104), n(47120), n(566702);
 var r = n(683860),
   i = n(344185),
@@ -130,7 +130,7 @@ function D(e) {
   return null !== (n = null === (t = r.appliedTags) || void 0 === t ? void 0 : t.filter(e => a.has(e))) && void 0 !== n ? n : []
 }
 
-function x(e) {
+function L(e) {
   let t = R(e);
   return null == t ? [] : t.attachments.map(e => {
     var t;
@@ -138,7 +138,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   var t, n, r, i;
   let {
     channelId: o,
@@ -168,7 +168,7 @@ function M(e) {
   } = e, m = l.Z.getChannel(p);
   if (null == m || !m.isForumPost()) return null;
   let g = l.Z.getChannel(m.parent_id);
-  return null != g && g.isForumLikeChannel() ? S(y({}, L({
+  return null != g && g.isForumLikeChannel() ? S(y({}, x({
     channelId: g.id,
     sessionId: _
   })), {
@@ -187,6 +187,6 @@ function M(e) {
     forum_post_is_new: null === (i = h.Z.getReadStateSnapshotAnalytics(m.id)) || void 0 === i ? void 0 : i.isNew,
     forum_post_is_unread: null === (c = h.Z.getReadStateSnapshotAnalytics(m.id)) || void 0 === c ? void 0 : c.hasUnreads,
     forum_post_is_following: o.Z.hasJoined(m.id),
-    forum_post_attachment_mimetypes: x(m.id)
+    forum_post_attachment_mimetypes: L(m.id)
   }) : null
 }

@@ -59,14 +59,14 @@ function D(e) {
   i = t, _ = void 0
 }
 
-function x(e) {
+function L(e) {
   let {
     globalName: t
   } = e;
   o = t
 }
 
-function L(e) {
+function x(e) {
   let {
     avatarDecoration: t
   } = e;
@@ -84,7 +84,7 @@ function k(e) {
   let {
     item: t
   } = e;
-  (null == t ? void 0 : t.type) === v.Z.PROFILE_EFFECT ? (h = null, m = null == t ? void 0 : t.id) : (m = null, h = t)
+  (null == t ? void 0 : t.type) === v.Z.PROFILE_EFFECT ? (h = null, m = null == t ? void 0 : t.id) : (null == t ? void 0 : t.type) === v.Z.AVATAR_DECORATION && (m = null, h = t)
 }
 
 function j(e) {
@@ -293,8 +293,8 @@ let er = new en(y.Z, {
   USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: R,
   USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: w,
   USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_V2: D,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: x,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION: L,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: L,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION: x,
   USER_SETTINGS_ACCOUNT_SET_SINGLE_TRY_IT_OUT_COLLECTIBLES_ITEM: k,
   USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID: M,
   USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER: j,

@@ -120,7 +120,7 @@ function D(e) {
   S = {}, y.clear(), e.guilds.forEach(C)
 }
 
-function x(e) {
+function L(e) {
   let {
     threadMessages: t
   } = e;
@@ -132,7 +132,7 @@ function x(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     guild: t
   } = e;
@@ -309,8 +309,8 @@ class q extends(r = a.ZP.Store) {
 g(q, "displayName", "ThreadMessageStore");
 let Q = new q(s.Z, {
   CONNECTION_OPEN: D,
-  OVERLAY_INITIALIZE: x,
-  GUILD_CREATE: L,
+  OVERLAY_INITIALIZE: L,
+  GUILD_CREATE: x,
   GUILD_DELETE: M,
   THREAD_CREATE: k,
   THREAD_UPDATE: k,

@@ -56,8 +56,8 @@ let N = "recentMentionFilterSettings",
     everyoneFilter: !0,
     roleFilter: !0
   }),
-  x = !1,
-  L = 0,
+  L = !1,
+  x = 0,
   M = !1;
 
 function k(e) {
@@ -103,7 +103,7 @@ function B(e) {
     addedMessages: i
   }), r ? A = A.concat(i) : (A = i, R = {}), o().forEach(i, e => {
     R[e.id] = !0
-  }), P = !1, w = t, L = (0, l.zO)(), x = !0
+  }), P = !1, w = t, x = (0, l.zO)(), L = !0
 }
 
 function Z() {
@@ -206,16 +206,16 @@ function z(e) {
   r && A.forEach(e => {
     let t = F(e);
     null != t && (i.push(t), R[t.id] = !0)
-  }), k(A = i), 0 === A.length && (x = !1)
+  }), k(A = i), 0 === A.length && (L = !1)
 }
 
 function q() {
   if (D.guildFilter !== S.NgX.THIS_SERVER) return !1;
-  x = !1
+  L = !1
 }
 
 function Q() {
-  A = [], R = {}, x = !1, M = !1, C = {}
+  A = [], R = {}, L = !1, M = !1, C = {}
 }
 
 function X(e) {
@@ -268,13 +268,13 @@ class er extends(r = a.ZP.Store) {
     this.waitFor(O.default, m.Z, g.Z, E.ZP)
   }
   get hasLoadedEver() {
-    return x
-  }
-  get lastLoaded() {
     return L
   }
+  get lastLoaded() {
+    return x
+  }
   getMentions() {
-    return x || A.length > 0 ? A : null
+    return L || A.length > 0 ? A : null
   }
   hasMention(e) {
     return R[e]

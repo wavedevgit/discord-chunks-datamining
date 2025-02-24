@@ -228,7 +228,7 @@ function _(e) {
       productId: eA
     }, e)), e1)
   }, [_, e1, eA]);
-  let e9 = async e => {
+  let e3 = async e => {
     let t = (0, y.pM)({
       newRoleParams: ek
     });
@@ -250,7 +250,7 @@ function _(e) {
   }, [eX, _, el]), n.useEffect(() => {
     eM && eY(void 0)
   }, [eM]);
-  let e3 = n.useRef(null);
+  let e9 = n.useRef(null);
   return (0, A.jsxs)(u.Y0X, {
     transitionState: et,
     size: u.CgR.DYNAMIC,
@@ -281,7 +281,7 @@ function _(e) {
       children: [(0, A.jsx)(u.zJl, {
         children: (0, A.jsxs)("div", {
           className: R.productFieldsSection,
-          ref: e3,
+          ref: e9,
           children: [(0, A.jsx)(u.xJW, {
             title: B.NW.string(B.t.Hsk7xc),
             tag: "label",
@@ -355,7 +355,7 @@ function _(e) {
             children: (0, A.jsx)(T.s, {
               onFileAdded: () => {
                 var e;
-                null === (e = e3.current) || void 0 === e || e.scrollIntoView({
+                null === (e = e9.current) || void 0 === e || e.scrollIntoView({
                   behavior: "smooth",
                   block: "end"
                 })
@@ -380,7 +380,7 @@ function _(e) {
             disabledTooltip: ea ? B.NW.string(B.t["0NQ00t"]) : B.NW.string(B.t["Ax89/f"]),
             published: ea,
             onClick: () => {
-              i()(e$, "Attempting to publish/unpublish when not allowed"), eY(ea ? "unpublish" : "publish"), e9(E(L({}, eH), {
+              i()(e$, "Attempting to publish/unpublish when not allowed"), eY(ea ? "unpublish" : "publish"), e3(E(L({}, eH), {
                 published: !ea
               }))
             },
@@ -460,7 +460,7 @@ function _(e) {
             disabled: !e_,
             submitting: eS,
             onClick: () => {
-              i()(e_, "cannot save changes for published product without adding all fields"), eY("update_publish"), e9(eH)
+              i()(e_, "cannot save changes for published product without adding all fields"), eY("update_publish"), e3(eH)
             },
             children: B.NW.string(B.t.XYBEaW)
           }) : (0, A.jsx)(u.zxk, {
@@ -468,7 +468,7 @@ function _(e) {
             disabled: !eJ,
             submitting: eS,
             onClick: () => {
-              i()(eJ, "cannot save changes without name or price tier"), eY("draft"), e9(eH)
+              i()(eJ, "cannot save changes without name or price tier"), eY("draft"), e3(eH)
             },
             children: B.NW.string(B.t.ZCjwoa)
           })

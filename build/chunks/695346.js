@@ -24,7 +24,7 @@ n.d(t, {
   Rt: () => ej,
   SE: () => eN,
   Sb: () => eb,
-  Sh: () => ex,
+  Sh: () => eL,
   T4: () => C,
   UP: () => eo,
   Wp: () => eI,
@@ -45,13 +45,13 @@ n.d(t, {
   d4: () => N,
   dN: () => h,
   eR: () => v,
-  eo: () => x,
+  eo: () => L,
   ev: () => q,
   fq: () => E,
   fv: () => I,
   fz: () => O,
   gR: () => W,
-  gw: () => eL,
+  gw: () => ex,
   h2: () => Y,
   hg: () => eM,
   iG: () => H,
@@ -65,7 +65,7 @@ n.d(t, {
   qF: () => w,
   rN: () => eg,
   tU: () => ef,
-  uL: () => L,
+  uL: () => x,
   up: () => g,
   vF: () => y,
   x4: () => ep,
@@ -166,11 +166,11 @@ let O = (0, c.Zc)("notifications", "reactionNotifications", e => null != e ? e :
   D = (0, c.Zc)("voiceAndVideo", "disableStreamPreviews", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e
   })),
-  x = (0, c.Zc)("notifications", "notifyFriendsOnGoLive", e => null == e ? void 0 : e.value, e => o.D5.create({
+  L = (0, c.Zc)("notifications", "notifyFriendsOnGoLive", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e
   })),
-  L = "0",
-  M = (0, c.Zc)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : L, e => e),
+  x = "0",
+  M = (0, c.Zc)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : x, e => e),
   k = (0, c.Zc)("gameLibrary", "installShortcutDesktop", e => {
     var t;
     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
@@ -456,7 +456,7 @@ let eb = (0, c.KM)((0, c.Zc)("appearance", "developerMode", e => null != e && e,
   }, e => o.D5.create({
     value: e
   })),
-  ex = (0, c.Zc)("textAndImages", "explicitContentSettings", e => {
+  eL = (0, c.Zc)("textAndImages", "explicitContentSettings", e => {
     let {
       explicitContentGuilds: t,
       explicitContentFriendDm: n,
@@ -479,7 +479,7 @@ let eb = (0, c.KM)((0, c.Zc)("appearance", "developerMode", e => null != e && e,
       explicitContentNonFriendDm: null != r ? r : void 0
     }
   }),
-  eL = (0, c.Zc)("textAndImages", "keywordFilterSettings", e => {
+  ex = (0, c.Zc)("textAndImages", "keywordFilterSettings", e => {
     let {
       profanity: t,
       sexualContent: n,

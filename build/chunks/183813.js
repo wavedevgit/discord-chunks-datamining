@@ -34,12 +34,12 @@ function E(e) {
     setSelectedGiftingPromotionReward: N,
     selectedGiftingPromotionReward: y,
     claimableRewards: I
-  } = (0, f.wD)(), v = (0, a.e7)([p.default], () => p.default.getCurrentUser());
+  } = (0, f.wD)(), O = (0, a.e7)([p.default], () => p.default.getCurrentUser());
   i.useEffect(() => {
     let e = null != I && I.length > 0;
     null == y && e && N(I[0])
   }, [I, y, N]);
-  let O = e => {
+  let v = e => {
       let t = e.skuId;
       return (0, l.jsx)(d.Z, {
         skuId: t,
@@ -51,12 +51,12 @@ function E(e) {
     },
     P = (0, c.Q3)("PremiumPaymentFreeSKUSelectStep");
   r()(null != s, "Expected plan to selected"), r()(null != E, "Expected selectedSkuId"), r()(null != S, "Step should be set");
-  let b = null == I ? void 0 : I.map(e => O(e)),
-    T = null != y && null != v ? (0, l.jsx)(C.Z, {
+  let b = null == I ? void 0 : I.map(e => v(e)),
+    T = null != y && null != O ? (0, l.jsx)(C.Z, {
       avatarDecorationOverride: {
         asset: y.assetId
       },
-      user: v,
+      user: O,
       guildId: null,
       avatarSize: o.EFr.SIZE_152
     }) : null,
@@ -65,8 +65,8 @@ function E(e) {
         className: g.modalFooter,
         children: (0, l.jsx)(u.y, {
           onStepChange: e => {
-            null != v && null != y && x.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
-              user_id: v.id,
+            null != O && null != y && x.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+              user_id: O.id,
               reward_sku_id: y.skuId
             }), t(e)
           },

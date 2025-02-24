@@ -5,7 +5,7 @@ n.d(t, {
   Ks: () => U,
   Ws: () => Z,
   g2: () => k,
-  hf: () => L,
+  hf: () => x,
   k3: () => j,
   qN: () => B,
   tP: () => M
@@ -71,13 +71,13 @@ function D(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function L(e) {
+function x(e) {
   let {
     quest: t,
     location: n,
@@ -171,7 +171,7 @@ function U(e) {
     questContentRowIndex: f,
     inGiftInventory: p,
     isVideoQuest: E
-  } = e, v = L({
+  } = e, v = x({
     quest: n,
     location: s,
     questContentPosition: u,
@@ -251,10 +251,10 @@ function U(e) {
           tooltipText: null,
           onClick: v
         };
-        if (a) return x(w({}, i), {
+        if (a) return L(w({}, i), {
           text: R.NW.string(R.t.MAS7uL)
         });
-        if ((0, b.vQ)(n.config)) return x(w({}, i), {
+        if ((0, b.vQ)(n.config)) return L(w({}, i), {
           text: R.NW.string(R.t.vTgCW1)
         });
         if ((0, b.Bg)(n.config)) return {
@@ -267,7 +267,7 @@ function U(e) {
           text: R.NW.string(R.t.iEw2Nz),
           onClick: M
         };
-        return x(w({}, i), {
+        return L(w({}, i), {
           text: R.NW.string(R.t.bAGFz8)
         })
     }

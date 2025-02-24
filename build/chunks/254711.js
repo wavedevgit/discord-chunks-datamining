@@ -69,8 +69,8 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = n(227419).Z,
-  L = (e, t) => {
+let L = n(227419).Z,
+  x = (e, t) => {
     var n;
     return null === (n = e.find(e => e.name === t)) || void 0 === n ? void 0 : n.value
   },
@@ -90,7 +90,7 @@ let x = n(227419).Z,
       }
     }
   },
-  k = [...x, {
+  k = [...L, {
     id: "-1",
     untranslatedName: "shrug",
     displayName: "shrug",
@@ -116,7 +116,7 @@ let x = n(227419).Z,
     }],
     execute: e => {
       var t;
-      let n = null !== (t = L(e, "message")) && void 0 !== t ? t : "";
+      let n = null !== (t = x(e, "message")) && void 0 !== t ? t : "";
       return {
         content: "".concat(n, " \xaf\\_(ツ)_/\xaf").trim()
       }
@@ -147,7 +147,7 @@ let x = n(227419).Z,
     }],
     execute: e => {
       var t;
-      let n = null !== (t = L(e, "message")) && void 0 !== t ? t : "";
+      let n = null !== (t = x(e, "message")) && void 0 !== t ? t : "";
       return {
         content: "".concat(n, " (╯\xb0□\xb0)╯︵ ┻━┻").trim()
       }
@@ -178,7 +178,7 @@ let x = n(227419).Z,
     }],
     execute: e => {
       var t;
-      let n = null !== (t = L(e, "message")) && void 0 !== t ? t : "";
+      let n = null !== (t = x(e, "message")) && void 0 !== t ? t : "";
       return {
         content: "".concat(n, " ┬─┬ノ( \xba _ \xbaノ)").trim()
       }
@@ -217,7 +217,7 @@ let x = n(227419).Z,
     execute: e => {
       var t;
       return {
-        content: null !== (t = L(e, "message")) && void 0 !== t ? t : "",
+        content: null !== (t = x(e, "message")) && void 0 !== t ? t : "",
         tts: !0
       }
     }
@@ -248,7 +248,7 @@ let x = n(227419).Z,
     }],
     execute: e => {
       var t;
-      let n = null !== (t = L(e, "message")) && void 0 !== t ? t : "";
+      let n = null !== (t = x(e, "message")) && void 0 !== t ? t : "";
       return {
         content: "_".concat(n, "_")
       }
@@ -280,7 +280,7 @@ let x = n(227419).Z,
     }],
     execute: e => {
       var t;
-      let n = null !== (t = L(e, "message")) && void 0 !== t ? t : "";
+      let n = null !== (t = x(e, "message")) && void 0 !== t ? t : "";
       return {
         content: (0, N.XmY)(n).trim()
       }
@@ -322,7 +322,7 @@ let x = n(227419).Z,
         channel: i
       } = t;
       if (null == r || null == i) return;
-      let o = null !== (n = L(e, "new_nick")) && void 0 !== n ? n : "";
+      let o = null !== (n = x(e, "new_nick")) && void 0 !== n ? n : "";
       l.Z.changeNickname(r.id, i.id, N.ME, o || "")
     }
   }, {
@@ -371,7 +371,7 @@ let x = n(227419).Z,
       var n, r;
       let {
         channel: i
-      } = t, o = null !== (n = L(e, "name")) && void 0 !== n ? n : "", a = null !== (r = L(e, "message")) && void 0 !== r ? r : "", l = await (0, m.gK)(i, o, s.d.PUBLIC_THREAD, (0, h.WD)(i, null), "Slash Command");
+      } = t, o = null !== (n = x(e, "name")) && void 0 !== n ? n : "", a = null !== (r = x(e, "message")) && void 0 !== r ? r : "", l = await (0, m.gK)(i, o, s.d.PUBLIC_THREAD, (0, h.WD)(i, null), "Slash Command");
       d.Z.sendMessage(l.id, _.ZP.parse(l, a))
     }
   }, {
@@ -423,7 +423,7 @@ let x = n(227419).Z,
         channel: i
       } = t;
       if (null == r || null == i) return;
-      let o = null !== (n = L(e, "user")) && void 0 !== n ? n : "";
+      let o = null !== (n = x(e, "user")) && void 0 !== n ? n : "";
       if (!b.Z.canManageUser(N.Plq.KICK_MEMBERS, o, r)) {
         d.Z.sendBotMessage(i.id, C.NW.string(C.t["6RIwPD"]));
         return
@@ -431,7 +431,7 @@ let x = n(227419).Z,
         var t;
         let n = y.default.getUser(o);
         if (null == n) throw Error();
-        await u.Z.kickUser(r.id, o, null !== (t = L(e, "reason")) && void 0 !== t ? t : ""), d.Z.sendBotMessage(i.id, C.NW.formatToPlainString(C.t["9wzHDQ"], {
+        await u.Z.kickUser(r.id, o, null !== (t = x(e, "reason")) && void 0 !== t ? t : ""), d.Z.sendBotMessage(i.id, C.NW.formatToPlainString(C.t["9wzHDQ"], {
           user: S.ZP.getUserTag(n)
         }))
       })().catch(() => {
@@ -529,15 +529,15 @@ let x = n(227419).Z,
         channel: i
       } = t;
       if (null == r || null == i) return;
-      let o = null !== (n = L(e, "user")) && void 0 !== n ? n : "";
+      let o = null !== (n = x(e, "user")) && void 0 !== n ? n : "";
       if (!b.Z.canManageUser(N.Plq.BAN_MEMBERS, o, r)) {
         d.Z.sendBotMessage(i.id, C.NW.string(C.t.R27LJi));
         return
       }(async () => {
         var t, n;
         if ("" === o) throw Error();
-        let a = null !== (t = L(e, "delete_messages")) && void 0 !== t ? t : 0,
-          s = null !== (n = L(e, "reason")) && void 0 !== n ? n : "",
+        let a = null !== (t = x(e, "delete_messages")) && void 0 !== t ? t : 0,
+          s = null !== (n = x(e, "reason")) && void 0 !== n ? n : "",
           l = y.default.getUser(o);
         await u.Z.banUser(r.id, o, a, s), d.Z.sendBotMessage(i.id, C.NW.formatToPlainString(C.t.YflWdH, {
           user: null != l ? S.ZP.getUserTag(l) : o
@@ -611,14 +611,14 @@ let x = n(227419).Z,
         channel: r
       } = t;
       if (null == n || null == r) return;
-      let i = L(e, "user");
+      let i = x(e, "user");
       if (!(0, p.F)(n.id, i)) {
         d.Z.sendBotMessage(r.id, C.NW.string(C.t.F5pqSU));
         return
       }(async () => {
         var t, o;
-        let s = null !== (t = L(e, "duration")) && void 0 !== t ? t : "",
-          l = null !== (o = L(e, "reason")) && void 0 !== o ? o : "",
+        let s = null !== (t = x(e, "duration")) && void 0 !== t ? t : "",
+          l = null !== (o = x(e, "reason")) && void 0 !== o ? o : "",
           c = y.default.getUser(i);
         if (null == c) throw Error();
         await u.Z.setCommunicationDisabledUntil({
@@ -681,8 +681,8 @@ let x = n(227419).Z,
         channel: r
       } = t;
       if (null == r) return;
-      let o = L(e, "user"),
-        a = null !== (n = L(e, "message")) && void 0 !== n ? n : "";
+      let o = x(e, "user"),
+        a = null !== (n = x(e, "message")) && void 0 !== n ? n : "";
       (async () => {
         await c.Z.openPrivateChannel(o).then(e => {
           let t = v.Z.getChannel(e);

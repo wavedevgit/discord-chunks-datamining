@@ -34,7 +34,7 @@ function g() {
     setSelectedPlanNotification: y
   } = (0, h.JL)(), {
     isGift: I
-  } = (0, f.wD)(), [v, O] = i.useState(!1), [P, b] = i.useState(!1), [T, M] = i.useState(!1);
+  } = (0, f.wD)(), [O, v] = i.useState(!1), [P, b] = i.useState(!1), [T, M] = i.useState(!1);
   return i.useEffect(() => {
     let l = setTimeout(() => {
       g === j.Si.TIER_2 && (null == e || !e.isPremium) && !I && ((null == t ? void 0 : t.code) === d.SM.BILLING_INSUFFICIENT_FUNDS || (null == n ? void 0 : n.code) === d.SM.BILLING_INSUFFICIENT_FUNDS) && M(!0)
@@ -49,9 +49,9 @@ function g() {
         message: m.NW.format(m.t.dk8zl5, {
           perkHover: (e, t) => (0, l.jsx)("span", {
             onMouseEnter: () => {
-              x.default.track(_.rMx.NITRO_BASIC_UPSELL_PERK_HOVERED), O(!0)
+              x.default.track(_.rMx.NITRO_BASIC_UPSELL_PERK_HOVERED), v(!0)
             },
-            onMouseLeave: () => O(!1),
+            onMouseLeave: () => v(!1),
             children: e
           }, "post-failure-nitro-basic-upsell-perk-hover")
         }),
@@ -69,7 +69,7 @@ function g() {
         themeOverride: c.T.NITRO_BASIC,
         analyticsLocations: _.Sbl.NITRO_BASIC_UPSELL
       })
-    }), v && (0, l.jsxs)("div", {
+    }), O && (0, l.jsxs)("div", {
       className: L.tooltip,
       children: [(0, l.jsx)(p.lq, {
         className: L.tier0Card,

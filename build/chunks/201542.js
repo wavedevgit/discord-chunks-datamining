@@ -82,7 +82,7 @@ let I = i.memo(function(e) {
     } = e,
     P = i.useRef(null),
     [w, D] = i.useState(0),
-    [x, L] = i.useState(I),
+    [L, x] = i.useState(I),
     [M, k] = i.useState(!1),
     [j, U] = i.useState(!1),
     [G, B] = i.useState(!1),
@@ -98,7 +98,7 @@ let I = i.memo(function(e) {
     }, []),
     Q = i.useCallback(e => {
       let t = e.currentTarget.duration;
-      !isNaN(t) && L(t)
+      !isNaN(t) && x(t)
     }, []),
     X = i.useCallback(() => {
       U(!1), null == K.current && (K.current = setTimeout(() => {
@@ -125,14 +125,14 @@ let I = i.memo(function(e) {
       B(!0)
     }, []),
     er = i.useCallback(() => {
-      B(!1), w === x && X()
-    }, [w, x, X]),
+      B(!1), w === L && X()
+    }, [w, L, X]),
     ei = i.useCallback(e => {
       let t = P.current;
-      if (null == x || null == t) return;
-      let n = e * x;
+      if (null == L || null == t) return;
+      let n = e * L;
       D(n), t.currentTime = n, F(!0), clearTimeout(K.current), K.current = void 0
-    }, [x]);
+    }, [L]);
   i.useEffect(() => {
     !Z && j && F(!0)
   }, [j, Z]);
@@ -228,7 +228,7 @@ let I = i.memo(function(e) {
       className: v.waveform,
       waveform: g,
       currentTime: w,
-      duration: null != x ? x : 1,
+      duration: null != L ? L : 1,
       playing: j,
       played: Z,
       onDrag: ei,
@@ -237,7 +237,7 @@ let I = i.memo(function(e) {
     }), (0, r.jsx)(y, {
       played: Z,
       currentTime: w,
-      duration: x
+      duration: L
     }), (0, r.jsx)(f.Z, {
       className: v.volumeButton,
       iconClassName: v.volumeButtonIcon,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => L
 }), n(411104), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -146,7 +146,7 @@ function w(e) {
 }
 let D = [];
 
-function x(e) {
+function L(e) {
   let {
     channelId: t,
     guildId: o,
@@ -155,7 +155,7 @@ function x(e) {
     compact: v = !1,
     disableInteraction: O = !1,
     maxVisibleUsers: I = 3
-  } = e, N = (0, _.Z)(), [R, x] = i.useState(!1), L = i.useRef(new u.sW(C, () => x(!1))), M = (0, c.Wu)([m.Z, g.default], () => {
+  } = e, N = (0, _.Z)(), [R, L] = i.useState(!1), x = i.useRef(new u.sW(C, () => L(!1))), M = (0, c.Wu)([m.Z, g.default], () => {
     if (s.type === b.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
@@ -163,13 +163,13 @@ function x(e) {
     return s.type === b.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : D
   }, [s]);
   i.useEffect(() => {
-    N && (L.current.cancel(), x(!1))
+    N && (x.current.cancel(), L(!1))
   }, [N]);
   let k = i.useCallback(() => {
-      L.current.cancel(), x(!0)
+      x.current.cancel(), L(!0)
     }, []),
     j = i.useCallback(() => {
-      L.current.delay()
+      x.current.delay()
     }, []),
     U = i.useCallback((e, t) => {
       k(), (0, f.jW)(e, async () => {

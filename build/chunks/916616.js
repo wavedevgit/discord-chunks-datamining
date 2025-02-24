@@ -98,8 +98,8 @@ class A extends(r = o.PureComponent) {
         mediaLayoutType: A,
         limitResponsiveWidth: w = !0,
         accessory: D,
-        zoomable: x,
-        original: L,
+        zoomable: L,
+        original: x,
         children: M,
         renderAccessory: k,
         onClick: j,
@@ -142,18 +142,18 @@ class A extends(r = o.PureComponent) {
       focusTarget: this._clickableRef,
       children: (0, i.jsxs)("div", I(O({
         className: s()(E.imageWrapper, {
-          [E.imageZoom]: x,
+          [E.imageZoom]: L,
           [E.imageWrapperBackground]: o !== h.zo9.READY,
           [E.clickable]: null != j
         }, n),
         style: R(F, w, B, A)
       }, Z), {
-        children: [null != L && (0, i.jsx)("a", {
+        children: [null != x && (0, i.jsx)("a", {
           tabIndex: -1,
           onClick: j,
           "aria-hidden": !0,
           className: E.originalLink,
-          href: L,
+          href: x,
           ref: this._containerRef,
           "data-role": "img",
           "data-safe-src": null != G ? G : a

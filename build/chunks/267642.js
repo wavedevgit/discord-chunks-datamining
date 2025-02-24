@@ -11,7 +11,7 @@ n.d(t, {
   Vx: () => k,
   _k: () => j,
   _p: () => C,
-  aq: () => L,
+  aq: () => x,
   cP: () => T,
   e9: () => A,
   f2: () => D,
@@ -23,7 +23,7 @@ n.d(t, {
   tb: () => w,
   tl: () => H,
   vn: () => U,
-  vx: () => x,
+  vx: () => L,
   yw: () => F
 }), n(411104), n(47120), n(627341), n(230036);
 var r = n(392711),
@@ -280,16 +280,16 @@ function D(e, t) {
   return w(e.premiumTier, t)
 }
 
-function x(e) {
+function L(e) {
   return i().values(e).filter(e => e.isAvailable())
 }
 
-function L(e) {
+function x(e) {
   let {
     fractionalState: t
   } = e, n = c.ZP.getPremiumTypeSubscription();
   l.Z.hasFetched || (0, s.X8)();
-  let r = x(l.Z.boostSlots),
+  let r = L(l.Z.boostSlots),
     i = null == n ? void 0 : n.isPausedOrPausePending,
     a = r.length > 0,
     u = m.NW.format(m.t.kJ1AZG, {

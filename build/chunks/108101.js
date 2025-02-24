@@ -29,8 +29,8 @@ var r = n(687249),
   P = "[object Date]",
   w = "[object Error]",
   D = "[object Function]",
-  x = "[object GeneratorFunction]",
-  L = "[object Map]",
+  L = "[object GeneratorFunction]",
+  x = "[object Map]",
   M = "[object Number]",
   k = "[object Object]",
   j = "[object RegExp]",
@@ -52,23 +52,23 @@ var r = n(687249),
   $ = {};
 
 function ee(e, t, n, C, R, P) {
-  var w, L = t & I,
+  var w, x = t & I,
     M = t & T,
     j = t & N;
   if (n && (w = R ? n(e, C, R, P) : n(e)), void 0 !== w) return w;
   if (!y(e)) return e;
   var U = E(e);
   if (U) {
-    if (w = h(e), !L) return c(e, w)
+    if (w = h(e), !x) return c(e, w)
   } else {
     var G = _(e),
-      B = G == D || G == x;
-    if (v(e)) return l(e, L);
+      B = G == D || G == L;
+    if (v(e)) return l(e, x);
     if (G == k || G == A || B && !R) {
-      if (w = M || B ? {} : g(e), !L) return M ? d(e, s(w, e)) : u(e, a(w, e))
+      if (w = M || B ? {} : g(e), !x) return M ? d(e, s(w, e)) : u(e, a(w, e))
     } else {
       if (!$[G]) return R ? e : {};
-      w = m(e, G, L)
+      w = m(e, G, x)
     }
   }
   P || (P = new r);
@@ -85,4 +85,4 @@ function ee(e, t, n, C, R, P) {
     V && (r = e[i = r]), o(w, i, ee(r, t, n, i, e, P))
   }), w
 }
-$[A] = $[C] = $[F] = $[V] = $[R] = $[P] = $[H] = $[W] = $[Y] = $[K] = $[z] = $[L] = $[M] = $[k] = $[j] = $[U] = $[G] = $[B] = $[q] = $[Q] = $[X] = $[J] = !0, $[w] = $[D] = $[Z] = !1, e.exports = ee
+$[A] = $[C] = $[F] = $[V] = $[R] = $[P] = $[H] = $[W] = $[Y] = $[K] = $[z] = $[x] = $[M] = $[k] = $[j] = $[U] = $[G] = $[B] = $[q] = $[Q] = $[X] = $[J] = !0, $[w] = $[D] = $[Z] = !1, e.exports = ee

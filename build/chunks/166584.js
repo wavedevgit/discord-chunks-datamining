@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => L
+  Z: () => x
 }), n(47120), n(653041), n(230036);
 var r = n(200651),
   i = n(192379),
@@ -91,7 +91,7 @@ let R = 4,
     return t > 0 ? t + R : 0
   };
 
-function x(e) {
+function L(e) {
   let {
     user: t,
     currentUser: n,
@@ -104,7 +104,7 @@ function x(e) {
     onRemoveRole: S
   } = e, T = i.useRef({}), C = (e, t) => {
     null != t ? T.current[e] = t : delete T.current[e]
-  }, [x, L] = i.useState(d), [M, k] = i.useState(P), [j, U] = i.useState(!1), G = i.useRef(null), B = i.useRef(null), Z = i.useRef(0);
+  }, [L, x] = i.useState(d), [M, k] = i.useState(P), [j, U] = i.useState(!1), G = i.useRef(null), B = i.useRef(null), Z = i.useRef(0);
   i.useLayoutEffect(() => {
     Z.current = 0
   }, [d]), i.useLayoutEffect(() => {
@@ -127,8 +127,8 @@ function x(e) {
         e += a + R, n.push(i)
       }
     }
-    L(n.length === x.length ? x : n), k(r), Z.current++
-  }, [d, x, j]);
+    x(n.length === L.length ? L : n), k(r), Z.current++
+  }, [d, L, j]);
   let F = i.useMemo(() => "roles-".concat((0, o.Z)()), []),
     V = (0, a.ZP)({
       id: F,
@@ -141,13 +141,13 @@ function x(e) {
     W = 0 === H ? y.NW.string(y.t["vR7M+/"]) : y.NW.formatToPlainString(y.t.PCs0oq, {
       numRoles: H
     }),
-    Y = (j ? d : x).map((e, i) => {
+    Y = (j ? d : L).map((e, i) => {
       var o;
       return (0, r.jsx)(E.Z, {
         role: e,
         guildId: l.id,
         style: {
-          maxWidth: j || i !== x.length - 1 ? P : M
+          maxWidth: j || i !== L.length - 1 ? P : M
         },
         disableBorderColor: !0,
         ref: t => C(e.id, t),
@@ -180,7 +180,7 @@ function x(e) {
           "aria-label": W,
           ref: t
         }, n), {
-          children: [Y, x.length < d.length ? j ? (0, r.jsx)(c.DY3, {
+          children: [Y, L.length < d.length ? j ? (0, r.jsx)(c.DY3, {
             text: y.NW.string(y.t.XnXtCg),
             children: (0, r.jsx)(c.P3F, {
               onClick: q,
@@ -199,7 +199,7 @@ function x(e) {
               className: O.expandButton,
               children: (0, r.jsx)(c.Text, {
                 variant: "text-xs/medium",
-                children: "+".concat(d.length - x.length)
+                children: "+".concat(d.length - L.length)
               })
             })
           }) : null, p && null != u ? (0, r.jsx)(v.Z, {
@@ -216,7 +216,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     user: t,
     currentUser: n,
@@ -241,7 +241,7 @@ function L(e) {
     });
     let n = null != h ? h : []; - 1 === n.indexOf(e) && (n = n.concat([e])), d.Z.updateMemberRoles(o.id, t.id, n, [e], [])
   }, [h, o.id, t.id, a]), I = y && null != s;
-  return 0 !== E.length || I ? (0, r.jsx)(x, {
+  return 0 !== E.length || I ? (0, r.jsx)(L, {
     user: t,
     currentUser: n,
     guild: o,

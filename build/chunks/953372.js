@@ -41,8 +41,8 @@ function O(e) {
     blockerExperimentEnabled: D
   } = (0, u.NR)(P);
   (0, d.Z)(null == t ? void 0 : t.id, P);
-  let x = w && (null == o ? void 0 : o.discoverable) === !1 ? null : o,
-    L = i.useMemo(() => {
+  let L = w && (null == o ? void 0 : o.discoverable) === !1 ? null : o,
+    x = i.useMemo(() => {
       var e, t;
       let r = null == n ? void 0 : n.find(e => {
         let {
@@ -57,9 +57,9 @@ function O(e) {
     M = (0, l.e7)([f.Z], () => f.Z.isBlockedOrIgnored(null == t ? void 0 : t.id));
   if (D && M) return null;
   let k = (null == t ? void 0 : t.bot) === !0,
-    j = (null == L ? void 0 : L.state) != null && "xs" === T,
+    j = (null == x ? void 0 : x.state) != null && "xs" === T,
     U = () => {
-      if (null != x) return (0, r.jsx)(m.Z, {
+      if (null != L) return (0, r.jsx)(m.Z, {
         game: null == n ? void 0 : n.find(c.Z),
         textVariant: "text-".concat(T, "/medium"),
         textClassName: S,
@@ -90,9 +90,9 @@ function O(e) {
       }) : null
     },
     G = () => {
-      if (null == L) return null;
-      let e = L.emoji,
-        t = L.state;
+      if (null == x) return null;
+      let e = x.emoji,
+        t = x.state;
       return (0, r.jsxs)(r.Fragment, {
         children: [null != e && !C && (0, r.jsx)(p.Z, {
           emoji: e,

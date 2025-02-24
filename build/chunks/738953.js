@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(978395),
   w = n(161572),
   D = n(228168),
-  x = n(981631),
-  L = n(388032),
+  L = n(981631),
+  x = n(388032),
   M = n(913340);
 
 function k(e, t, n) {
@@ -88,13 +88,13 @@ function B(e) {
     setPopoutRef: V,
     disableUserProfileLink: H = __OVERLAY__,
     newAnalyticsLocations: W = [],
-    appContext: Y = x.IlC.APP
+    appContext: Y = L.IlC.APP
   } = e, {
     analyticsLocations: K
   } = (0, d.ZP)([...W, u.Z.BITE_SIZE_PROFILE_POPOUT]), z = (0, E.Z)({
     user: t,
     currentUser: n,
-    location: x.Sbl.BITE_SIZE_POPOUT
+    location: L.Sbl.BITE_SIZE_POPOUT
   }), q = (0, h.ZB)({
     layout: z ? "BITE_SIZE_POPOUT" : "BITE_SIZE_POPOUT_RESTRICTED_BLOCKER_PROFILE",
     userId: t.id,
@@ -128,7 +128,7 @@ function B(e) {
     },
     eo = () => H ? null : (0, r.jsx)(s.sNh, {
       id: "view-profile",
-      label: L.NW.string(L.t["+Xp3ho"]),
+      label: x.NW.string(x.t["+Xp3ho"]),
       action: () => {
         ei(), (0, m.pQ)(j({
           action: "PRESS_VIEW_PROFILE",

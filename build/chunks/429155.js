@@ -39,16 +39,16 @@ let u = 20,
       searchQuery: R,
       nitroLockedSectionStates: w,
       setShowUpsell: N
-    }), x = (0, l.Qs)({
+    }), L = (0, l.Qs)({
       activeCategoryIndex: P,
       isScrolling: A,
       listRef: C,
       onActiveCategoryIndexChange: d.setActiveCategoryIndex,
       scrollOffset: u,
       searchQuery: R
-    }), L = i.useCallback(e => {
-      D(e), x(e)
-    }, [D, x]);
+    }), x = i.useCallback(e => {
+      D(e), L(e)
+    }, [D, L]);
     return (0, l.Xs)({
       searchQuery: R,
       activeCategoryIndex: P,
@@ -94,7 +94,7 @@ let u = 20,
       children: [R.length > 0 && !f && null != v ? v() : (0, r.jsx)(o.Z, {
         role: "none presentation",
         listPadding: p,
-        onScroll: L,
+        onScroll: x,
         renderRow: _,
         renderSection: h,
         renderSectionHeader: m,

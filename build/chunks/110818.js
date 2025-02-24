@@ -4,7 +4,7 @@ n.d(t, {
   Db: () => A,
   HC: () => y,
   NQ: () => E,
-  fe: () => L
+  fe: () => x
 }), n(47120);
 var r, i, o, a, s = n(200651),
   l = n(192379),
@@ -455,7 +455,7 @@ let R = {
     EASING_END: f.Z.Easing.bezier(0, -.01, .99, 0)
   });
 
-function x(e) {
+function L(e) {
   let {
     animate: t
   } = e, [n, r] = l.useState(0), i = (0, p.bYB)(w.length, w.map((e, i) => {
@@ -513,7 +513,7 @@ function x(e) {
     })
   })
 }
-class L extends(a = l.PureComponent) {
+class x extends(a = l.PureComponent) {
   static getNextScene(e) {
     switch (e) {
       case "entry":
@@ -552,10 +552,10 @@ class L extends(a = l.PureComponent) {
         onSceneComplete: i,
         pauseWhileUnfocused: o,
         pause: n
-      }), (0, s.jsx)(x, {
+      }), (0, s.jsx)(L, {
         animate: !n && "stars" === t
       })]
     })
   }
 }
-h(L, "Scenes", C)
+h(x, "Scenes", C)

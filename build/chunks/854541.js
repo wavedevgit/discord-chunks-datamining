@@ -3,7 +3,7 @@
 n.d(t, {
   AG: () => D,
   Z$: () => M,
-  jH: () => x,
+  jH: () => L,
   zH: () => k
 }), n(47120);
 var r = n(200651),
@@ -156,7 +156,7 @@ class D extends i.PureComponent {
     })
   }
 }
-class x extends i.PureComponent {
+class L extends i.PureComponent {
   render() {
     let {
       customColor: e,
@@ -174,7 +174,7 @@ class x extends i.PureComponent {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     value: t,
     eagerUpdate: n = !1,
@@ -186,7 +186,7 @@ function L(e) {
     showEyeDropper: v,
     wrapperComponentType: O,
     className: I
-  } = e, N = (0, h.Z)(), A = P(t), R = null != A ? A : 0, w = (0, c.Rf)(R), D = (0, c.O)(R), [x, L] = i.useState({
+  } = e, N = (0, h.Z)(), A = P(t), R = null != A ? A : 0, w = (0, c.Rf)(R), D = (0, c.O)(R), [L, x] = i.useState({
     current: R,
     pending: {
       hex: w,
@@ -195,10 +195,10 @@ function L(e) {
     input: w
   });
   i.useEffect(() => {
-    if (null == A || A === x.current) return;
+    if (null == A || A === L.current) return;
     let e = (0, c.Rf)(A),
       t = (0, c.O)(A);
-    L({
+    x({
       current: A,
       pending: {
         hex: e,
@@ -206,18 +206,18 @@ function L(e) {
       },
       input: e
     })
-  }, [A, x]), i.useEffect(() => s, [s]);
+  }, [A, L]), i.useEffect(() => s, [s]);
   let M = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
       if (!(0, c.FX)(t)) {
-        L(e => T(S({}, e), {
+        x(e => T(S({}, e), {
           input: t
         }));
         return
       }
       let n = (0, c._i)(t),
         r = (0, c.O)(n);
-      L({
+      x({
         current: n,
         pending: {
           hex: t,
@@ -234,7 +234,7 @@ function L(e) {
         M(e)
       } catch (e) {}
     }, j = i.useCallback(e => {
-      L(t => T(S({}, t), {
+      x(t => T(S({}, t), {
         pending: e,
         input: e.hex
       })), n && o((0, c._i)(e.hex))
@@ -249,7 +249,7 @@ function L(e) {
           } = e;
           return U(t)
         },
-        color: x.pending.hsl
+        color: L.pending.hsl
       }), f, (0, r.jsxs)("div", {
         className: y.customColorPickerInputContainer,
         children: [v && null != N && (0, r.jsx)(g.JO, {
@@ -260,7 +260,7 @@ function L(e) {
           icon: _.ilE
         }), (0, r.jsx)(p.o, {
           className: y.customColorPickerInput,
-          value: x.input,
+          value: L.input,
           onChange: M,
           maxLength: C
         })]
@@ -282,7 +282,7 @@ function L(e) {
     children: G
   })
 }
-let M = i.memo(L);
+let M = i.memo(x);
 
 function k(e) {
   let {

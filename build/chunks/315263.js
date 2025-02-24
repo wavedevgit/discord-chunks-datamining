@@ -33,7 +33,7 @@ var r = n(873546),
   P = n(782568),
   w = n(981631),
   D = n(46140);
-async function x(e, t) {
+async function L(e, t) {
   await o.Z.dispatch({
     type: "INVITE_MODAL_OPEN",
     invite: e,
@@ -41,7 +41,7 @@ async function x(e, t) {
     context: w.IlC.APP
   })
 }
-async function L(e) {
+async function x(e) {
   var t;
   let n = I.Z.getInvite(e.code);
   if (null == n) {
@@ -52,12 +52,12 @@ async function L(e) {
   }
   if (null == n) return;
   if (n.state === w.r2o.EXPIRED || n.state === w.r2o.BANNED || n.state === w.r2o.ERROR) {
-    await x(n, e.code);
+    await L(n, e.code);
     return
   }
   let r = A.ZP.getFlattenedGuildIds(),
     i = null == n ? void 0 : null === (t = n.guild) || void 0 === t ? void 0 : t.id;
-  null != i && r.includes(i) ? s.Z.transitionToInviteSync(n) : await x(n, e.code)
+  null != i && r.includes(i) ? s.Z.transitionToInviteSync(n) : await L(n, e.code)
 }
 let M = {
   skipExtensionCheck: void 0,
@@ -70,7 +70,7 @@ function k(e) {
     skipExtensionCheck: o,
     analyticsLocations: s
   } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : M, I = (0, _.zO)(e);
-  if (null != I && (I.type === p.g.INVITE || I.type === p.g.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), L(I), !0);
+  if (null != I && (I.type === p.g.INVITE || I.type === p.g.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), x(I), !0);
   if (null != I && (I.type === p.g.APP_DIRECTORY_PROFILE || I.type === p.g.APP_DIRECTORY_STOREFRONT || I.type === p.g.APP_DIRECTORY_STOREFRONT_SKU)) return t => {
     var i, o;
     null == t || t.preventDefault();
@@ -149,11 +149,11 @@ function k(e) {
   }), !0);
   let {
     host: A,
-    hostname: x,
+    hostname: L,
     pathname: k,
     search: j,
     hash: U
-  } = null !== (t = R.Z.toURLSafe(e)) && void 0 !== t ? t : {}, G = R.Z.isDiscordHostname(null != x ? x : null) || R.Z.isDiscordLocalhost(null != A ? A : null, null != x ? x : null);
+  } = null !== (t = R.Z.toURLSafe(e)) && void 0 !== t ? t : {}, G = R.Z.isDiscordHostname(null != L ? L : null) || R.Z.isDiscordLocalhost(null != A ? A : null, null != L ? L : null);
   if (G && ((null == k ? void 0 : k.startsWith("/application-directory")) || (null == k ? void 0 : k.startsWith("/discovery/applications")))) {
     let e = k.split("/"),
       t = null == k ? void 0 : k.startsWith("/discovery/applications"),

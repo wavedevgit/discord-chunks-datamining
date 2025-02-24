@@ -165,7 +165,7 @@ function c(e) {
       keywords: E,
       contains: w
     },
-    x = {
+    L = {
       variants: [{
         match: [/class/, /\s+/, d, /\s+/, /extends/, /\s+/, c.concat(d, "(", c.concat(/\./, d), ")*")],
         scope: {
@@ -182,7 +182,7 @@ function c(e) {
         }
       }]
     },
-    L = {
+    x = {
       relevance: 0,
       match: c.either(/\bJSON/, /\b[A-Z][a-z]+([A-Z][a-z]*|\d)*/, /\b[A-Z]{2,}([A-Z][a-z]+|\d)+([A-Z][a-z]*)*/, /\b[A-Z]{2,}[a-z]+([A-Z][a-z]+|\d)*([A-Z][a-z]*)*/),
       className: "title.class",
@@ -258,7 +258,7 @@ function c(e) {
     keywords: E,
     exports: {
       PARAMS_CONTAINS: w,
-      CLASS_REFERENCE: L
+      CLASS_REFERENCE: x
     },
     illegal: /#(?![$_A-z])/,
     contains: [e.SHEBANG({
@@ -267,7 +267,7 @@ function c(e) {
       relevance: 5
     }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, I, T, N, A, C, {
       match: /\$\d+/
-    }, O, L, {
+    }, O, x, {
       scope: "attr",
       match: d + c.lookahead(":"),
       relevance: 0
@@ -345,7 +345,7 @@ function c(e) {
         1: "title.function"
       },
       contains: [D]
-    }, G, j, x, Z, {
+    }, G, j, L, Z, {
       match: /\$[(.]/
     }]
   }

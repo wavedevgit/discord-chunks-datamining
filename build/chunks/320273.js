@@ -31,8 +31,8 @@ var r = n(147018),
   P = C("iterator"),
   w = "URLSearchParams",
   D = w + "Iterator",
-  x = _.set,
-  L = _.getterFor(w),
+  L = _.set,
+  x = _.getterFor(w),
   M = _.getterFor(D),
   k = Object.getOwnPropertyDescriptor,
   j = function(e) {
@@ -95,9 +95,9 @@ var r = n(147018),
     return Q(Y(e), ea, el)
   },
   eu = p(function(e, t) {
-    x(this, {
+    L(this, {
       type: D,
-      iterator: T(L(e).entries),
+      iterator: T(x(e).entries),
       kind: t
     })
   }, "Iterator", function() {
@@ -151,20 +151,20 @@ ed.prototype = {
 var ef = function() {
     h(this, ep);
     var e = arguments.length > 0 ? arguments[0] : void 0,
-      t = x(this, new ed(e));
+      t = L(this, new ed(e));
     s || (this.size = t.entries.length)
   },
   ep = ef.prototype;
 if (d(ep, {
     append: function(e, t) {
-      var n = L(this);
+      var n = x(this);
       A(arguments.length, 2), q(n.entries, {
         key: O(e),
         value: O(t)
       }), !s && this.length++, n.updateURL()
     },
     delete: function(e) {
-      for (var t = L(this), n = A(arguments.length, 1), r = t.entries, i = O(e), o = n < 2 ? void 0 : arguments[1], a = void 0 === o ? o : O(o), l = 0; l < r.length;) {
+      for (var t = x(this), n = A(arguments.length, 1), r = t.entries, i = O(e), o = n < 2 ? void 0 : arguments[1], a = void 0 === o ? o : O(o), l = 0; l < r.length;) {
         var c = r[l];
         if (c.key === i && (void 0 === a || c.value === a)) {
           if (J(r, l, 1), void 0 !== a) break
@@ -173,27 +173,27 @@ if (d(ep, {
       s || (this.size = r.length), t.updateURL()
     },
     get: function(e) {
-      var t = L(this).entries;
+      var t = x(this).entries;
       A(arguments.length, 1);
       for (var n = O(e), r = 0; r < t.length; r++)
         if (t[r].key === n) return t[r].value;
       return null
     },
     getAll: function(e) {
-      var t = L(this).entries;
+      var t = x(this).entries;
       A(arguments.length, 1);
       for (var n = O(e), r = [], i = 0; i < t.length; i++) t[i].key === n && q(r, t[i].value);
       return r
     },
     has: function(e) {
-      for (var t = L(this).entries, n = A(arguments.length, 1), r = O(e), i = n < 2 ? void 0 : arguments[1], o = void 0 === i ? i : O(i), a = 0; a < t.length;) {
+      for (var t = x(this).entries, n = A(arguments.length, 1), r = O(e), i = n < 2 ? void 0 : arguments[1], o = void 0 === i ? i : O(i), a = 0; a < t.length;) {
         var s = t[a++];
         if (s.key === r && (void 0 === o || s.value === o)) return !0
       }
       return !1
     },
     set: function(e, t) {
-      var n, r = L(this);
+      var n, r = x(this);
       A(arguments.length, 1);
       for (var i = r.entries, o = !1, a = O(e), l = O(t), c = 0; c < i.length; c++)(n = i[c]).key === a && (o ? J(i, c--, 1) : (o = !0, n.value = l));
       o || q(i, {
@@ -202,13 +202,13 @@ if (d(ep, {
       }), s || (this.size = i.length), r.updateURL()
     },
     sort: function() {
-      var e = L(this);
+      var e = x(this);
       R(e.entries, function(e, t) {
         return e.key > t.key ? 1 : -1
       }), e.updateURL()
     },
     forEach: function(e) {
-      for (var t, n = L(this).entries, r = E(e, arguments.length > 1 ? arguments[1] : void 0), i = 0; i < n.length;) r((t = n[i++]).value, t.key, this)
+      for (var t, n = x(this).entries, r = E(e, arguments.length > 1 ? arguments[1] : void 0), i = 0; i < n.length;) r((t = n[i++]).value, t.key, this)
     },
     keys: function() {
       return new eu(this, "keys")
@@ -224,12 +224,12 @@ if (d(ep, {
   }), c(ep, P, ep.entries, {
     name: "entries"
   }), c(ep, "toString", function() {
-    return L(this).serialize()
+    return x(this).serialize()
   }, {
     enumerable: !0
   }), s && u(ep, "size", {
     get: function() {
-      return L(this).entries.length
+      return x(this).entries.length
     },
     configurable: !0,
     enumerable: !0
@@ -277,5 +277,5 @@ if (d(ep, {
 }
 e.exports = {
   URLSearchParams: ef,
-  getState: L
+  getState: x
 }

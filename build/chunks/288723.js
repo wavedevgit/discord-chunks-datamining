@@ -35,13 +35,13 @@ let d = {
             allowedAutoPlacements: O
           }) : n)
         }, []), A = t.rects.reference, C = t.rects.popper, R = new Map, P = !0, w = N[0], D = 0; D < N.length; D++) {
-        var x = N[D],
-          L = (0, i.Z)(x),
-          M = (0, c.Z)(x) === l.BL,
-          k = [l.we, l.I].indexOf(L) >= 0,
+        var L = N[D],
+          x = (0, i.Z)(L),
+          M = (0, c.Z)(L) === l.BL,
+          k = [l.we, l.I].indexOf(x) >= 0,
           j = k ? "width" : "height",
           U = (0, a.Z)(t, {
-            placement: x,
+            placement: L,
             boundary: g,
             rootBoundary: E,
             altBoundary: v,
@@ -51,13 +51,13 @@ let d = {
         A[j] > C[j] && (G = (0, r.Z)(G));
         var B = (0, r.Z)(G),
           Z = [];
-        if (f && Z.push(U[L] <= 0), _ && Z.push(U[G] <= 0, U[B] <= 0), Z.every(function(e) {
+        if (f && Z.push(U[x] <= 0), _ && Z.push(U[G] <= 0, U[B] <= 0), Z.every(function(e) {
             return e
           })) {
-          w = x, P = !1;
+          w = L, P = !1;
           break
         }
-        R.set(x, Z)
+        R.set(L, Z)
       }
       if (P)
         for (var F = y ? 3 : 1, V = function(e) {

@@ -69,7 +69,7 @@ function P() {
   for (let e in O = {}, N = {}, S = {}, I = {}, T = {}, C = f.Z.getChannelId(), R) clearTimeout(R[e]);
   R = {}, _.Z.forEachGuild(e => {
     D(e)
-  }), x()
+  }), L()
 }
 
 function w(e) {
@@ -103,12 +103,12 @@ function D(e) {
     }
 }
 
-function x() {
+function L() {
   for (let e in A = {}, I)
     for (let t in I[e]) M(e, t)
 }
 
-function L(e) {
+function x(e) {
   let t = c.Z.getBasicChannel(e);
   null != t && l.uC.has(t.type) && M(t.guild_id, t.id)
 }
@@ -248,7 +248,7 @@ function V() {
         let r = I[e][t][n];
         d.ZP.isForumPostUnread(n) && $(T, r, r, !1)
       }
-  x()
+  L()
 }
 
 function H(e) {
@@ -276,7 +276,7 @@ function K(e) {
 function z() {
   let e = C;
   if ((C = f.Z.getChannelId()) === e) return !1;
-  L(e), L(C)
+  x(e), x(C)
 }
 
 function q(e) {

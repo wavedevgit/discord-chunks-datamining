@@ -5,9 +5,9 @@ n.d(t, {
   Io: () => M,
   NY: () => k,
   Ox: () => D,
-  Vq: () => L,
+  Vq: () => x,
   Wf: () => j,
-  cB: () => x,
+  cB: () => L,
   dy: () => P,
   wP: () => w
 });
@@ -120,7 +120,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     id: t,
     guildId: n,
@@ -161,7 +161,7 @@ function x(e) {
   return d
 }
 
-function L(e) {
+function x(e) {
   let {
     id: t,
     guildId: n

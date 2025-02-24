@@ -38,8 +38,8 @@ var r = n(200651),
   P = n(560067),
   w = n(353926),
   D = n(341298),
-  x = n(703656),
-  L = n(973616),
+  L = n(703656),
+  x = n(973616),
   M = n(598077),
   k = n(314897),
   j = n(585483),
@@ -251,17 +251,17 @@ function eg(e) {
       isExternalStandaloneOAuthPage: ew = !1
     } = e,
     eD = null != ey ? null == em ? void 0 : em.get(ey) : void 0,
-    ex = (0, s.TH)(),
-    eL = (0, p.e7)([w.Z], () => w.Z.hasLoadedExperiments);
+    eL = (0, s.TH)(),
+    ex = (0, p.e7)([w.Z], () => w.Z.hasLoadedExperiments);
   i.useEffect(() => {
-    k.default.isAuthenticated() && !eL && b.Z.getExperiments()
-  }, [eL]);
+    k.default.isAuthenticated() && !ex && b.Z.getExperiments()
+  }, [ex]);
   let [eM, ek] = i.useState(null), [ej, eU] = i.useState(null), [eG, eB] = i.useState(null), [eZ, eF] = i.useState(!1), [eV, eH] = i.useState(!1), eW = null == eM ? void 0 : eM.guilds, [eY, eK] = i.useState(null != ev ? ev : null), [ez, eq] = i.useState(null != eb ? eb : null), [eQ, eX] = i.useState(G.Hn), eJ = i.useMemo(() => (null == eM ? void 0 : eM.user) != null ? new M.Z(eM.user) : null, [null == eM ? void 0 : eM.user]), e$ = i.useMemo(() => null == eW ? void 0 : eW.find(e => e.id === eY), [eW, eY]), [e0, e1] = i.useState(null), e2 = i.useMemo(() => {
     var e;
     return null == eD && null == ey && (null !== (e = null == eg ? void 0 : eg.length) && void 0 !== e ? e : 0) === 0 && null == eo
   }, [eD, null == eg ? void 0 : eg.length, eo, ey]), [e3, e4] = i.useState(null);
   i.useEffect(() => {
-    e2 && A.ZP.fetchApplication(j).then(e => e4(L.ZP.createFromServer(e)))
+    e2 && A.ZP.fetchApplication(j).then(e => e4(x.ZP.createFromServer(e)))
   }, [j, e2]);
   let e6 = i.useMemo(() => {
       var e, t;
@@ -303,7 +303,7 @@ function eg(e) {
           body: t
         } = n;
         if (401 === e) {
-          (0, F.c$)(ex);
+          (0, F.c$)(eL);
           return
         }
         eB(Error(null != t.message ? t.message : "".concat(Object.keys(t)[0], ": ").concat(Object.values(t)[0])))
@@ -313,12 +313,12 @@ function eg(e) {
     };
     if (null == eP) {
       if (!k.default.isAuthenticated()) {
-        (0, F.c$)(ex);
+        (0, F.c$)(eL);
         return
       }
       e()
     }
-  }, [j, ex, eP, tt, eB, tr, eU]);
+  }, [j, eL, eP, tt, eB, tr, eU]);
   let ti = i.useCallback(async e => {
       if (null != eC) {
         eF(!0), eC(e);
@@ -362,7 +362,7 @@ function eg(e) {
         else if (null != n.location) {
           var t;
           let e = null === (t = B.Z.toURLSafe(n.location)) || void 0 === t ? void 0 : t.pathname;
-          B.Z.isDiscordUrl(n.location) && e === ei.Z5c.OAUTH2_AUTHORIZED ? (0, x.uL)(ei.Z5c.OAUTH2_AUTHORIZED, {
+          B.Z.isDiscordUrl(n.location) && e === ei.Z5c.OAUTH2_AUTHORIZED ? (0, L.uL)(ei.Z5c.OAUTH2_AUTHORIZED, {
             state: {
               application: null == eM ? void 0 : eM.application,
               guild: e$
@@ -377,7 +377,7 @@ function eg(e) {
     to = i.useRef(!1),
     ta = i.useCallback(async () => {
       if (!k.default.isAuthenticated()) {
-        (0, F.c$)(ex);
+        (0, F.c$)(eL);
         return
       }
       if (!e9.current && !to.current) {
@@ -403,7 +403,7 @@ function eg(e) {
             body: t
           } = n;
           if (401 === e) {
-            (0, F.c$)(ex);
+            (0, F.c$)(eL);
             return
           }
           eB(Error(null != t.message ? t.message : "".concat(Object.keys(t)[0], ": ").concat(Object.values(t)[0])))
@@ -411,7 +411,7 @@ function eg(e) {
           to.current = !1
         }
       }
-    }, [ex, eD, j, e5, ee, eo, el, eu, ef, ep, e0, eh, ti, tn]),
+    }, [eL, eD, j, e5, ee, eo, el, eu, ef, ep, e0, eh, ti, tn]),
     ts = i.useMemo(() => {
       var e;
       return null != e3 && e2 ? Object.entries(null !== (e = e3.integrationTypesConfig) && void 0 !== e ? e : {}).filter(e => {
@@ -432,13 +432,13 @@ function eg(e) {
       permissions: e8.toString()
     }))
   }, [j, e0, e8, e5, ej]), i.useEffect(() => {
-    if (null == ej && (!e2 || null != e3) && eL) {
+    if (null == ej && (!e2 || null != e3) && ex) {
       if (null != eD) {
         var e;
         e1(null !== (e = eD.integration_type) && void 0 !== e ? e : c.Y.GUILD_INSTALL), eU("AUTHORIZE_SCOPES")
       } else ts.length > 1 ? eU("SELECT_INSTALL_TYPE") : (1 === ts.length ? e1(ts[0]) : null != ey ? e1(ey) : e1(c.Y.GUILD_INSTALL), eU("AUTHORIZE_SCOPES"))
     }
-  }, [eD, ts, e3, e2, ey, ej, eL]), i.useEffect(() => {
+  }, [eD, ts, e3, e2, ey, ej, ex]), i.useEffect(() => {
     if (null == e0 || null != eM || null != eG) return;
     e0 === c.Y.USER_INSTALL && (eK(null), eq(null));
     let e = e5.filter(e => !W.ak.includes(e));
@@ -594,7 +594,7 @@ function eg(e) {
     bot: eM.bot,
     accountScopes: e7,
     showLogout: eS || !1,
-    location: ex
+    location: eL
   })), tg && (D = (0, r.jsxs)("div", {
     className: a()(es.footer),
     children: [null != T ? (0, r.jsx)(h.zx, {

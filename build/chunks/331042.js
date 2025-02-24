@@ -34,8 +34,8 @@ var r = n(200651),
   P = n(318028),
   w = n(635552),
   D = n(905357),
-  x = n(328456),
-  L = n(624377),
+  L = n(328456),
+  x = n(624377),
   M = n(530618),
   k = n(141011),
   j = n(372654),
@@ -230,12 +230,12 @@ let Q = 880,
       return null != e ? I.Z.getProduct(e) : void 0
     }, [b, y.skuId, y.type, O]), {
       confettiColors: N
-    } = (0, L.Z)(y.styles), A = (0, d.e7)([_.Z], () => _.Z.useReducedMotion), R = i.useRef(null), {
+    } = (0, x.Z)(y.styles), A = (0, d.e7)([_.Z], () => _.Z.useReducedMotion), R = i.useRef(null), {
       analyticsLocations: w
     } = (0, m.ZP)([...c, h.Z.COLLECTIBLES_COLLECTED_MODAL]), {
       category: D,
-      isFetching: x
-    } = (0, P.l)(y.skuId), U = null !== (t = null == D ? void 0 : D.successModalBg) && void 0 !== t ? t : y.banner, G = x ? void 0 : U;
+      isFetching: L
+    } = (0, P.l)(y.skuId), U = null !== (t = null == D ? void 0 : D.successModalBg) && void 0 !== t ? t : y.banner, G = L ? void 0 : U;
     return (0, r.jsxs)(m.Gt, {
       value: w,
       children: [(0, r.jsxs)("div", {
@@ -297,7 +297,7 @@ let Q = 880,
     }), {
       firstAvatarDecoration: S,
       firstProfileEffect: I
-    } = (0, x.R)(n), T = (0, A.x6)(n) ? null != S && null != I : null != S || null != I, N = i.useMemo(() => null != l ? l : g ? H.NW.format(new Date < F.a$ ? H.t.BhGU09 : H.t.Jfv5Qk, {
+    } = (0, L.R)(n), T = (0, A.x6)(n) ? null != S && null != I : null != S || null != I, N = i.useMemo(() => null != l ? l : g ? H.NW.format(new Date < F.a$ ? H.t.BhGU09 : H.t.Jfv5Qk, {
       purchased_item: h,
       suggested_item: m
     }) : _ && !p ? H.NW.string(H.t["1xr2SU"]) : H.NW.format(H.t.YNaxMj, {

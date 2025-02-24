@@ -98,8 +98,8 @@ let P = Object.freeze({
   }),
   w = null,
   D = {},
-  x = null,
-  L = new Set,
+  L = null,
+  x = new Set,
   M = !1,
   k = !1,
   j = !1,
@@ -182,7 +182,7 @@ function z(e) {
 }
 
 function q() {
-  L.clear()
+  x.clear()
 }
 
 function Q(e) {
@@ -205,7 +205,7 @@ function X() {
 function J() {
   if (!__OVERLAY__) return !1;
   let e = w === (0, v.QF)(),
-    t = L.has((0, v.QF)()) || U.size > 0;
+    t = x.has((0, v.QF)()) || U.size > 0;
   e && t ? (0, l.T_)(window, !0) : (0, l.T_)(window, !1)
 }
 
@@ -216,7 +216,7 @@ function ee(e) {
     locked: t,
     pid: n
   } = e;
-  t ? L.delete(n) : L.add(n), en(), J(), G = !1
+  t ? x.delete(n) : x.add(n), en(), J(), G = !1
 }
 
 function et(e) {
@@ -251,11 +251,11 @@ function eo(e) {
   let {
     callId: t
   } = e;
-  x = t
+  L = t
 }
 
 function ea() {
-  x = null
+  L = null
 }
 
 function es() {
@@ -400,7 +400,7 @@ function eS() {
 }
 
 function eI(e) {
-  L.delete(e.previousAssociatedGamePID)
+  x.delete(e.previousAssociatedGamePID)
 }
 class eT extends(i = o.ZP.PersistedStore) {
   initialize(e) {
@@ -412,7 +412,7 @@ class eT extends(i = o.ZP.PersistedStore) {
         let e = (0, b.M)();
         null == e && B.error("Overlay module failed loaded"), r = e
       }
-      L.delete((0, v.QF)())
+      x.delete((0, v.QF)())
     }
     if (null != e) {
       D = e;
@@ -424,10 +424,10 @@ class eT extends(i = o.ZP.PersistedStore) {
     return D
   }
   isLocked(e) {
-    return !L.has(e)
+    return !x.has(e)
   }
   isInstanceLocked() {
-    return !L.has((0, v.QF)())
+    return !x.has((0, v.QF)())
   }
   isInstanceFocused() {
     return w === (0, v.QF)()
@@ -449,7 +449,7 @@ class eT extends(i = o.ZP.PersistedStore) {
     return F.selectedChannelId
   }
   getSelectedCallId() {
-    return x
+    return L
   }
   getDisplayUserMode() {
     return F.displayUserMode
