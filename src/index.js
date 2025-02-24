@@ -82,7 +82,7 @@ async function main() {
                     const chunkNode = prop.value.body;
                     const chunkCode = chunk.slice(chunkNode.start, chunkNode.end);
                     const codeFormatted = formatCode(chunkCode);
-                    chunks[key] = `/** Chunk was on web (${webjs.replace('/assets/', '')}.js) **/\n` + codeFormatted;
+                    chunks[key] = `/** Chunk was on web.js **/\n` + codeFormatted;
                 }
             },
         });
@@ -110,19 +110,14 @@ async function main() {
                 type,
                 data: chunkData,
                 fromModule: {
-                    id: everyChunks[chunk].split('/** Chunk was on')[1].split(' **/')[0].split(' ')[1],
-                    fileName: everyChunks[chunk]
-                        .split('/** Chunk was on')[1]
-                        .split(' **/')[0]
-                        .split(' ')[2]
-                        .replaceAll(/[\(\)]/gm, ''),
-                },
+                    id: everyChunks[chunk].split('/** Chunk was on')[1].split(' **/')[0].split(' ')[1]
+                }
             };
             if (data.type !== 'unknown') console.log('Chunk ', data.id, data.type, data.data);
             if (data.type === 'intl-loader') {
                 for (let language in data.data.languages) {
                     languagesChunks[data.data.languages[language].chunkId] = language;
-                }
+                } 
             }
             if (!all[data.type]) all[data.type] = [];
             all[data.type].push({ id: data.id, data: data.data });
