@@ -1,7 +1,7 @@
-/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => w
 }), n(230036), n(47120), n(51350);
 var r, i = n(315008),
   o = n(347715),
@@ -57,7 +57,8 @@ let h = new a.Yd("VoiceFilterStore"),
     modelState: {},
     sortedVoiceFilters: [],
     catalogUpdateTime: void 0,
-    limitedTimeVoices: void 0
+    limitedTimeVoices: void 0,
+    catalogFailed: !1
   };
 
 function g(e) {
@@ -91,7 +92,7 @@ function v(e) {
     h.warn("No limited time voices available to update");
     return
   }
-  m.limitedTimeVoices.current_set_end = e.toISOString(), m.limitedTimeVoices.next_set_start = e.toISOString(), m.limitedTimeVoices.next_set_end = (0, i.default)(e, 2).toISOString(), S()
+  m.limitedTimeVoices.current_set_end = e.toISOString(), m.limitedTimeVoices.next_set_start = e.toISOString(), m.limitedTimeVoices.next_set_end = (0, i.default)(e, 2).toISOString(), I()
 }
 
 function b(e) {
@@ -105,7 +106,7 @@ function y(e) {
   let {
     catalog: t
   } = e;
-  m.models = t.models, m.limitedTimeVoices = t.limited_time_voices;
+  m.catalogFailed = !1, m.models = t.models, m.limitedTimeVoices = t.limited_time_voices;
   let n = {},
     r = E(m.limitedTimeVoices);
   for (let {
@@ -121,7 +122,11 @@ function y(e) {
   }));
   return m.voiceFilters = n, m.sortedVoiceFilters = b(m.voiceFilters), !0
 }
-class O extends(r = s.ZP.Store) {
+
+function O() {
+  m.catalogFailed = !0
+}
+class S extends(r = s.ZP.Store) {
   getVoiceFilterModels() {
     return m.models
   }
@@ -150,19 +155,22 @@ class O extends(r = s.ZP.Store) {
   isNativeModuleLoading() {
     return m.nativeVoiceFilterModuleState === c.O.LOADING
   }
-  hasNativeModuleFailed() {
-    return m.nativeVoiceFilterModuleState === c.O.FAILED
+  showFailure() {
+    var e;
+    if (Object.keys(null !== (e = null == m ? void 0 : m.models) && void 0 !== e ? e : {}).length) return !1;
+    let t = m.nativeVoiceFilterModuleState === c.O.FAILED;
+    return m.catalogFailed || t
   }
 }
 
-function S() {
+function I() {
   let e = E(m.limitedTimeVoices);
   m.catalogUpdateTime = e.catalogUpdateTime, Object.keys(m.voiceFilters).forEach(t => {
     m.voiceFilters[t].temporarilyAvailable = e.currentSet.includes(t)
   }), m.sortedVoiceFilters = b(m.voiceFilters)
 }
 
-function I(e) {
+function T(e) {
   let {
     modelId: t
   } = e;
@@ -172,7 +180,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function N(e) {
   let {
     modelId: t
   } = e;
@@ -182,7 +190,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   let {
     modelId: t,
     downloadedBytes: n,
@@ -194,7 +202,7 @@ function N(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   var t;
   let {
     modelId: n
@@ -204,24 +212,25 @@ function A(e) {
   }))
 }
 
-function C(e) {
+function R(e) {
   let {
     timeInSeconds: t
   } = e;
   v((0, o.Z)(new Date, t))
 }
 
-function R(e) {
+function P(e) {
   m.nativeVoiceFilterModuleState = e.state
 }
-d(O, "displayName", "VoiceFilterStore");
-let P = new O(l.Z, {
-  VOICE_FILTER_DOWNLOAD_STARTED: I,
-  VOICE_FILTER_DOWNLOAD_READY: T,
-  VOICE_FILTER_DOWNLOAD_PROGRESS: N,
-  VOICE_FILTER_DOWNLOAD_FAILED: A,
+d(S, "displayName", "VoiceFilterStore");
+let w = new S(l.Z, {
+  VOICE_FILTER_DOWNLOAD_STARTED: T,
+  VOICE_FILTER_DOWNLOAD_READY: N,
+  VOICE_FILTER_DOWNLOAD_PROGRESS: A,
+  VOICE_FILTER_DOWNLOAD_FAILED: C,
   VOICE_FILTER_CATALOG_FETCH_SUCCESS: y,
-  VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: S,
-  VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: C,
-  VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: R
+  VOICE_FILTER_CATALOG_FETCH_FAILED: O,
+  VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: I,
+  VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: R,
+  VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: P
 })

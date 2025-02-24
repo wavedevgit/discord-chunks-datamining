@@ -1,4 +1,4 @@
-/** Chunk was on 23919 (023960ccd6b2eef0.js) **/
+/** Chunk was on 23919 (0a3f5146aab554d2.js) **/
 n.d(t, {
   Z: () => en
 }), n(47120), n(653041), n(789020);
@@ -22,12 +22,12 @@ var i = n(200651),
   b = n(880308),
   E = n(427996),
   C = n(367907),
-  j = n(10718),
-  g = n(895924),
+  g = n(10718),
+  j = n(895924),
   P = n(151517),
   A = n(674588),
-  O = n(368862),
-  I = n(34674),
+  I = n(368862),
+  O = n(34674),
   _ = n(835473),
   S = n(857192),
   T = n(630388),
@@ -73,7 +73,7 @@ function en(e) {
     setSearchQuery: o,
     setScroller: a,
     isScrollCloseToBottom: s
-  } = e, c = (0, h.e7)([N.Z], () => N.Z.getIsEnabled(), []), u = n === M._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, U.Yn)(n), m = !(0, U.Yn)(n), p = n === M._b.TEXT, [v, y] = eu(!0), [b, E] = eu(u), [C, j] = eu(d), [g, P] = eu(m), A = v && b && C && g, O = (d || u) && !A, I = m && c;
+  } = e, c = (0, h.e7)([N.Z], () => N.Z.getIsEnabled(), []), u = n === M._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, U.Yn)(n), m = !(0, U.Yn)(n), p = n === M._b.TEXT, [v, y] = eu(!0), [b, E] = eu(u), [C, g] = eu(d), [j, P] = eu(m), A = v && b && C && j, I = (d || u) && !A, O = m && c;
   l.useEffect(() => {
     var e;
     let n = "channel" === t.type ? null === (e = t.channel) || void 0 === e ? void 0 : e.guild_id : void 0;
@@ -87,7 +87,7 @@ function en(e) {
   let _ = r.length > 0;
   return (0, i.jsxs)("div", {
     className: J.container,
-    children: [I ? (0, i.jsx)(ei, {}) : null, (0, i.jsx)(el, {
+    children: [O ? (0, i.jsx)(ei, {}) : null, (0, i.jsx)(el, {
       searchQuery: r,
       setSearchQuery: o,
       placeholder: p ? Q.NW.string(Q.t.ziyFv7) : Q.NW.string(Q.t["pw+r5e"])
@@ -111,14 +111,14 @@ function en(e) {
         }), d && (0, i.jsx)(es, {
           context: t,
           entrypoint: n,
-          onEmptyState: j
+          onEmptyState: g
         }), m && (0, i.jsx)(eo, {
           context: t,
           onEmptyState: P
         }), A && (0, i.jsx)(B.A, {
           type: M.LG.HOME_EMPTY,
           textContent: n === M._b.TEXT ? Q.NW.string(Q.t.iKZctb) : Q.NW.string(Q.t.RL7Ncn)
-        }), O && (0, i.jsx)(G.Z, {})]
+        }), I && (0, i.jsx)(G.Z, {})]
       })
     })]
   })
@@ -146,7 +146,7 @@ function el(e) {
     (0, C.yw)(X.rMx.APP_LAUNCHER_SEARCH_QUERY_TYPED, {
       query: e,
       source: R.Z.entrypoint(),
-      location: g.Vh.APP_LAUNCHER_HOME
+      location: j.Vh.APP_LAUNCHER_HOME
     })
   }, 400, {
     leading: !1,
@@ -154,7 +154,7 @@ function el(e) {
   }), []), d = l.useCallback(() => n(""), [n]), m = l.useCallback(() => {
     c(!0), (0, C.yw)(X.rMx.APP_LAUNCHER_SEARCH_FOCUSED, {
       source: R.Z.entrypoint(),
-      location: g.Vh.APP_LAUNCHER_HOME
+      location: j.Vh.APP_LAUNCHER_HOME
     })
   }, []), p = l.useCallback(() => {
     c(!1)
@@ -318,7 +318,7 @@ function eo(e) {
           context: n,
           application: l,
           look: a,
-          location: g.Vh.APP_LAUNCHER_HOME,
+          location: j.Vh.APP_LAUNCHER_HOME,
           sectionName: M.L3.ACTIVITIES,
           resultsPosition: t,
           sectionOverallPosition: 0,
@@ -379,7 +379,7 @@ function ea(e) {
           look: W.U4.ROW,
           sectionName: r,
           resultsPosition: n,
-          location: g.Vh.APP_LAUNCHER_HOME
+          location: j.Vh.APP_LAUNCHER_HOME
         }, l.id) : null
       })
     })]
@@ -416,7 +416,7 @@ function es(e) {
     }, [i]);
     let {
       sectionDescriptors: r
-    } = j.wi({
+    } = g.wi({
       context: t,
       filters: {
         commandTypes: [v.yU.CHAT]
@@ -427,10 +427,10 @@ function es(e) {
         includeFrecency: !0
       },
       allowFetch: !0
-    }), o = l.useCallback(e => null == r.find(t => t.id === e.id), [r]), c = (0, h.e7)([O.Z], () => O.Z.getFetchState({
+    }), o = l.useCallback(e => null == r.find(t => t.id === e.id), [r]), c = (0, h.e7)([I.Z], () => I.Z.getFetchState({
       surface: et,
       activeState: i
-    })), u = (0, h.e7)([O.Z], () => O.Z.getCollections({
+    })), u = (0, h.e7)([I.Z], () => I.Z.getCollections({
       surface: et,
       activeState: i
     })), d = n === a.I.APP_LAUNCHER_VOICE;
@@ -464,7 +464,7 @@ function es(e) {
   }({
     context: t,
     recommendationsSections: u
-  }), f = o === O.M.FETCHING, N = !f && 0 === u.length;
+  }), f = o === I.M.FETCHING, N = !f && 0 === u.length;
   return (l.useEffect(() => {
     r(N)
   }, [N, r]), N) ? null : (0, i.jsx)(i.Fragment, {
@@ -578,7 +578,7 @@ function ec(e) {
           installOnDemand: c,
           showsPromoted: u
         } = e;
-        return null != r && null != o && (l = (0, I.$_)({
+        return null != r && null != o && (l = (0, O.$_)({
           itemId: r,
           hash: o,
           containerWidth: Y.Gy
@@ -588,7 +588,7 @@ function ec(e) {
           look: t,
           sectionName: v,
           resultsPosition: n,
-          location: g.Vh.APP_LAUNCHER_HOME,
+          location: j.Vh.APP_LAUNCHER_HOME,
           installOnDemand: c,
           enableVideoBanner: b,
           sectionOverallPosition: s,

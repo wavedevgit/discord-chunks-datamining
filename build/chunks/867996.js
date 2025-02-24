@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
 var r = n(903425),
   i = n(661233),
   o = "[object AsyncFunction]",

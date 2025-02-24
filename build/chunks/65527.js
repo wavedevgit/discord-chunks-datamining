@@ -1,4 +1,4 @@
-/** Chunk was on 11814 (3b351e4cb7c7b881.js) **/
+/** Chunk was on 11814 (8608d0474a894e52.js) **/
 e.exports = {
   iconWrapper: "iconWrapper__9f20a",
   icon: "icon__9f20a",

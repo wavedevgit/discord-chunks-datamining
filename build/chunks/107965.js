@@ -1,4 +1,4 @@
-/** Chunk was on 11814 (3b351e4cb7c7b881.js) **/
+/** Chunk was on 11814 (8608d0474a894e52.js) **/
 n.d(t, {
   Z: () => b
 }), n(653041);
@@ -74,7 +74,7 @@ class b {
         oldFormErrors: !0,
         rejectWithError: !0
       }).then(e => {
-        if (null == e.body || "f28ad921fabac0351a879d263f87880b7a06d9d6" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "98b7dab26eb3184f73fb93781e145f776475ec7a" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, o.fD)()) return this._handleUpdateDownloaded(!1);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? f : h;
         if (Date.now() - g > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(!1)

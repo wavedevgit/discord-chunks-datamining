@@ -1,4 +1,4 @@
-/** Chunk was on 40580 (32d7a9293deb2c0d.js) **/
+/** Chunk was on 40580 (29804edbfa36af1f.js) **/
 "use strict";
 r.d(t, {
   m: () => x
@@ -34,6 +34,10 @@ function x(e) {
     location: t
   }), x = (0, s.e7)([a.ZP], () => a.ZP.getMostRecentPremiumTypeSubscription()), j = (0, s.e7)([c.Z], () => !c.Z.shouldFetchOffer()), y = (0, s.e7)([a.ZP], () => a.ZP.hasFetchedMostRecentPremiumTypeSubscription()), C = (0, s.e7)([l.default], () => l.default.getCurrentUser()), v = (0, d.I5)(C);
   return (0, o.ZP)(() => {
+    if (!1 === g.enabled) {
+      p(!1);
+      return
+    }
     if (y || (0, i.ou)(), c.Z.shouldFetchOffer()) {
       let e;
       (0, u.isAndroid)() ? e = O.gg.GOOGLE: (0, u.isIOS)() && (e = O.gg.APPLE), (0, f.T)("useCollectibleDecoIsEligible", e)

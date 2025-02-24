@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
 "use strict";
 t.byteLength = c, t.toByteArray = d, t.fromByteArray = _;
 for (var n = [], r = [], i = "undefined" != typeof Uint8Array ? Uint8Array : Array, o = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", a = 0, s = o.length; a < s; ++a) n[a] = o[a], r[o.charCodeAt(a)] = a;

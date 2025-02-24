@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
 "use strict";
 for (var r = n(293303), i = n(294377), o = n(96403), a = n(538769), s = n(360518), l = i("Symbol"), c = l.isWellKnownSymbol, u = i("Object", "getOwnPropertyNames"), d = o(l.prototype.valueOf), f = r("wks"), p = 0, _ = u(l), h = _.length; p < h; p++) try {
   var m = _[p];

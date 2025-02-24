@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (d2669c1c27f74703.js) **/
+/** Chunk was on 1272 (71bced4ddae32ad3.js) **/
 e.exports = {
   userInfo: "userInfo__0a06e",
   avatar: "avatar__0a06e",

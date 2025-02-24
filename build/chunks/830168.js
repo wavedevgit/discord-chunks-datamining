@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
 "use strict";
 let r, i;
 n.d(t, {
@@ -66,7 +66,7 @@ let y = {
       var c;
       let u = {
           environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-          build_number: "371006"
+          build_number: "371029"
         },
         d = l.default.getCurrentUser();
       null != d && (u.user_id = d.id, u.user_name = d.tag, null != d.email && (u.email = d.email));

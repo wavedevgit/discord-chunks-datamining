@@ -1,4 +1,4 @@
-/** Chunk was on 23919 (023960ccd6b2eef0.js) **/
+/** Chunk was on 23919 (0a3f5146aab554d2.js) **/
 n.d(t, {
   Z: () => f
 }), n(266796);
@@ -53,12 +53,12 @@ function f(e) {
     description: C
   } = l.useMemo(() => (0, s.sl)(f, {
     fakeAppIconURL: h
-  }), [f]), j = l.useMemo(() => {
+  }), [f]), g = l.useMemo(() => {
     var e;
     let t = null !== (e = null == n ? void 0 : n.displayDescription) && void 0 !== e ? e : C;
     return null == t ? null : (0, c.ae)(t, void 0)
   }, [C, null == n ? void 0 : n.displayDescription]), {
-    trackSearchResultsItemImpressionRef: g
+    trackSearchResultsItemImpressionRef: j
   } = (0, m.Z)({
     applicationId: f.id,
     commandId: null == n ? void 0 : n.id,
@@ -67,7 +67,7 @@ function f(e) {
   });
   return (0, i.jsx)(r.P3F, {
     className: p.clickable,
-    innerRef: e => g.current = e,
+    innerRef: e => j.current = e,
     onClick: v,
     onContextMenu: y,
     children: (0, i.jsxs)(r.Rny, {
@@ -88,7 +88,7 @@ function f(e) {
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
-          children: j
+          children: g
         })]
       }), null != n ? (0, i.jsx)(r.Text, {
         className: p.cmdAppName,

@@ -1,4 +1,4 @@
-/** Chunk was on 23919 (023960ccd6b2eef0.js) **/
+/** Chunk was on 23919 (0a3f5146aab554d2.js) **/
 n.d(t, {
   Z: () => x
 }), n(47120);
@@ -28,17 +28,17 @@ function x(e) {
   } = e, E = l.useId(), C = l.useCallback(() => {
     c.yT(u.ti.ACTIVITY)
   }, []), {
-    submitting: j,
-    wasSubmitting: g
+    submitting: g,
+    wasSubmitting: j
   } = (0, p.Z)({
     applicationId: n.id,
     context: t,
     launchingComponentId: E,
     onSubmissionComplete: C
-  }), [P, A] = l.useState(!1), O = (0, o.Qv)({
+  }), [P, A] = l.useState(!1), I = (0, o.Qv)({
     applicationId: n.id,
     context: t
-  }), I = l.useMemo(() => (0, m.XZ)(y.displayName), [y.displayName]), {
+  }), O = l.useMemo(() => (0, m.XZ)(y.displayName), [y.displayName]), {
     onActivityItemSelected: _,
     buttonColor: S,
     buttonText: T
@@ -47,17 +47,17 @@ function x(e) {
     application: n,
     location: a.Vh.APP_LAUNCHER_APPLICATION_VIEW,
     sectionName: x,
-    commandName: I,
-    autoDismissOnClick: O === o.JS.LEAVE,
+    commandName: O,
+    autoDismissOnClick: I === o.JS.LEAVE,
     launchingComponentId: E,
-    submitting: null != g ? g : j
+    submitting: null != j ? j : g
   }), {
     disabled: L,
     reason: R
   } = (0, d.Z)({
     context: t,
     application: n,
-    activityAction: O
+    activityAction: I
   });
   return (0, i.jsx)(r.ua7, {
     shouldShow: null != R,

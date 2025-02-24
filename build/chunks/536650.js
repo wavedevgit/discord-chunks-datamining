@@ -1,4 +1,4 @@
-/** Chunk was on 23919 (023960ccd6b2eef0.js) **/
+/** Chunk was on 23919 (0a3f5146aab554d2.js) **/
 n.d(t, {
   Z: () => N
 }), n(47120);
@@ -31,19 +31,19 @@ function N(e) {
     iconURL: x,
     scrollerRef: y,
     sectionName: b
-  } = e, E = (0, o.ap)((0, s.ZP)()), C = l.useRef(null), j = l.useRef(null), g = l.useRef(null), P = l.useRef(null), A = (0, a.dQu)(a.TVs.colors.BG_BASE_PRIMARY).hex(), O = (0, c.ZP)("number" == typeof x ? "" : x, null != A ? A : ""), I = l.useMemo(() => {
+  } = e, E = (0, o.ap)((0, s.ZP)()), C = l.useRef(null), g = l.useRef(null), j = l.useRef(null), P = l.useRef(null), A = (0, a.dQu)(a.TVs.colors.BG_BASE_PRIMARY).hex(), I = (0, c.ZP)("number" == typeof x ? "" : x, null != A ? A : ""), O = l.useMemo(() => {
     var e, t;
-    let n = (0, r.compact)([u.Z.parseHexString(O), u.Z.parseHexString(E ? "#000000" : "#ffffff")]);
+    let n = (0, r.compact)([u.Z.parseHexString(I), u.Z.parseHexString(E ? "#000000" : "#ffffff")]);
     return null !== (t = null === (e = (0, d.k8)({
       colors: n,
       ratio: 5,
       saturationFactor: .6
-    })) || void 0 === e ? void 0 : e.toHexString()) && void 0 !== t ? t : O
-  }, [O, E]), _ = v(C), S = v(j), T = l.useCallback(() => {
+    })) || void 0 === e ? void 0 : e.toHexString()) && void 0 !== t ? t : I
+  }, [I, E]), _ = v(C), S = v(g), T = l.useCallback(() => {
     var e, t, n, i;
     let l = y.current,
       o = C.current,
-      a = g.current,
+      a = j.current,
       s = null == P ? void 0 : P.current,
       c = parseInt(null !== (e = null == _ ? void 0 : _.height) && void 0 !== e ? e : ""),
       u = parseInt(null !== (t = null == S ? void 0 : S.height) && void 0 !== t ? t : "");
@@ -54,9 +54,9 @@ function N(e) {
         m = u - c,
         p = (0, r.clamp)(t - d, m + 1, u + 20),
         h = m === p ? 1 : (0, r.clamp)((e - m) / (p - m), 0, 1);
-      o.style.filter = "brightness(".concat(1 + ((E ? 1.4 : .6) - 1) * h, ")"), o.style.backgroundColor = "color-mix(in oklab,".concat(O, " ").concat((1 - h) * 100, "%, ").concat(I, ")"), a.style.opacity = "".concat(0 + +h), a.style.transform = "translateY(".concat((i = c / 4) + (0 - i) * h, "px)"), null != s && (s.style.opacity = "".concat(1 + -1 * h))
+      o.style.filter = "brightness(".concat(1 + ((E ? 1.4 : .6) - 1) * h, ")"), o.style.backgroundColor = "color-mix(in oklab,".concat(I, " ").concat((1 - h) * 100, "%, ").concat(O, ")"), a.style.opacity = "".concat(0 + +h), a.style.transform = "translateY(".concat((i = c / 4) + (0 - i) * h, "px)"), null != s && (s.style.opacity = "".concat(1 + -1 * h))
     }
-  }, [I, O, null == S ? void 0 : S.height, E, y, null == _ ? void 0 : _.height]);
+  }, [O, I, null == S ? void 0 : S.height, E, y, null == _ ? void 0 : _.height]);
   return l.useEffect(() => {
     T()
   }, [T, E]), l.useEffect(() => {
@@ -84,7 +84,7 @@ function N(e) {
       }), (0, i.jsx)("div", {
         className: f.nameContainer,
         children: (0, i.jsx)(a.X6q, {
-          ref: g,
+          ref: j,
           className: f.textApplicationName,
           variant: "heading-lg/extrabold",
           children: N
@@ -100,10 +100,10 @@ function N(e) {
         sectionName: b
       })
     }) : null, (0, i.jsx)("div", {
-      ref: j,
+      ref: g,
       className: f.bannerBackground,
       style: {
-        backgroundColor: O
+        backgroundColor: I
       }
     })]
   })

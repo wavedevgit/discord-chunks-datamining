@@ -1,4 +1,4 @@
-/** Chunk was on 1272 (d2669c1c27f74703.js) **/
+/** Chunk was on 1272 (71bced4ddae32ad3.js) **/
 e.exports = {
   channelName: "channelName__7c7a6",
   username: "username__7c7a6",

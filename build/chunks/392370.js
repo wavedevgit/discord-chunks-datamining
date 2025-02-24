@@ -1,6 +1,6 @@
-/** Chunk was on 23919 (023960ccd6b2eef0.js) **/
+/** Chunk was on 23919 (0a3f5146aab554d2.js) **/
 n.d(t, {
-  Q2: () => O,
+  Q2: () => I,
   pe: () => A
 }), n(47120), n(653041), n(301563), n(86693), n(536091);
 var i = n(192379),
@@ -24,12 +24,12 @@ var i = n(192379),
   E = n(689079),
   C = n(665692);
 
-function j(e, t) {
+function g(e, t) {
   let n = N.Z.getScoreWithoutLoadingLatest(e.id);
   return N.Z.getScoreWithoutLoadingLatest(t.id) - n
 }
 
-function g(e, t) {
+function j(e, t) {
   let n = (0, b.$d)(e),
     i = (0, b.$d)(t);
   return (0, m.un)(n, i)
@@ -119,9 +119,9 @@ function A(e) {
     includeBuiltIn: !0,
     includeEmbeddedApps: f,
     includeNonEmbeddedApps: s
-  }), O = (0, u.Z)({
+  }), I = (0, u.Z)({
     guildId: "channel" === t.type ? t.channel.guild_id : null
-  }), I = i.useMemo(() => {
+  }), O = i.useMemo(() => {
     var e, i, r, o, s, u;
     if (!a) return [];
     return (0, x.N)(v, {
@@ -210,9 +210,9 @@ function A(e) {
       }), P]
     })
   }, [a, v, l, t, n]), _ = i.useMemo(() => {
-    if (0 === I.length) return [];
+    if (0 === O.length) return [];
     let e = new Map(A.map(e => [e.id, e]));
-    return r().compact(I.map(t => {
+    return r().compact(O.map(t => {
       var n;
       let i = e.get(t.applicationId);
       if (null == i) return null;
@@ -223,7 +223,7 @@ function A(e) {
         section: l
       }
     }))
-  }, [A, I, N]), S = i.useMemo(() => {
+  }, [A, O, N]), S = i.useMemo(() => {
     var e, i, l, r, a;
     let u = [];
     if (f) {
@@ -233,7 +233,7 @@ function A(e) {
         } = e;
         return t
       }));
-      u.push(...A), u.push(...O.filter(t => {
+      u.push(...A), u.push(...I.filter(t => {
         let {
           application: {
             id: n
@@ -281,9 +281,9 @@ function A(e) {
         let i = null === (t = (0, b.jD)(e)) || void 0 === t ? void 0 : t.toLocaleLowerCase();
         return null !== (n = null == i ? void 0 : i.includes(a.toLocaleLowerCase())) && void 0 !== n && n
       })],
-      sortComparers: [j, g]
+      sortComparers: [g, j]
     })
-  }, [s, f, o, t, n, A, O]), T = _.length > 0, L = S.length > 0;
+  }, [s, f, o, t, n, A, I]), T = _.length > 0, L = S.length > 0;
   return {
     commandResults: _,
     hasCommandResults: T,
@@ -294,7 +294,7 @@ function A(e) {
   }
 }
 
-function O(e) {
+function I(e) {
   let {
     context: t,
     query: n,
@@ -355,7 +355,7 @@ function O(e) {
   }), [N, d, n, m, u]), E = i.useCallback(() => {
     let e = b.length;
     N === v.M.FETCHED && e === h.current && e > 0 && e < x && e < r && b[e - 1].length > 0 && (h.current++, p(e => e + 1))
-  }, [N, r, b, x]), j = i.useCallback(e => {
+  }, [N, r, b, x]), g = i.useCallback(e => {
     let {
       query: t,
       page: n,
@@ -376,12 +376,12 @@ function O(e) {
     })
   }, [u]);
   return i.useEffect(() => {
-    l && j({
+    l && g({
       query: n,
       page: m,
       guildId: d
     })
-  }, [n, d, j, m, l]), i.useEffect(() => {
+  }, [n, d, g, m, l]), i.useEffect(() => {
     p(1)
   }, [d, n]), {
     fetchState: N,

@@ -1,4 +1,4 @@
-/** Chunk was on 23919 (023960ccd6b2eef0.js) **/
+/** Chunk was on 23919 (0a3f5146aab554d2.js) **/
 n.d(t, {
   Z: () => Z
 }), n(47120);
@@ -22,12 +22,12 @@ var i = n(200651),
   b = n(804307),
   E = n(520315),
   C = n(532309),
-  j = n(561160),
-  g = n(41558),
+  g = n(561160),
+  j = n(41558),
   P = n(106771),
   A = n(79984),
-  O = n(314734),
-  I = n(981631),
+  I = n(314734),
+  O = n(981631),
   _ = n(388032),
   S = n(862802);
 
@@ -90,7 +90,7 @@ function k(e) {
     s && y === m.M.FETCHED && E()
   }, [E, y, s]);
   let C = null == y || y === m.M.FETCHING,
-    g = l.useMemo(() => {
+    j = l.useMemo(() => {
       let e = v.map(e => ({
           application: e,
           installOnDemand: !0
@@ -106,9 +106,9 @@ function k(e) {
         installOnDemand: !0
       }))]
     }, [b, v]),
-    P = g.length > 0,
+    P = j.length > 0,
     A = p && !P && !C;
-  return d ? (0, i.jsx)(H, {}) : A ? (0, i.jsx)(j.A, {
+  return d ? (0, i.jsx)(H, {}) : A ? (0, i.jsx)(g.A, {
     type: N.LG.SEARCH_EMPTY,
     searchQuery: n,
     textContent: r === N._b.TEXT ? _.NW.string(_.t.LSNOYW) : _.NW.string(_.t.Clu7Qk)
@@ -119,7 +119,7 @@ function k(e) {
       query: n
     }), (P || C) && (0, i.jsx)(D, {
       context: t,
-      applicationResults: g,
+      applicationResults: j,
       includePlaceholder: C,
       query: n,
       searchesBots: u
@@ -133,7 +133,7 @@ function w(e) {
     context: r,
     commandResults: o,
     query: a
-  } = e, m = o.length > 4, x = l.useMemo(() => m ? o.slice(0, 4) : o, [o, m]), [y, b] = l.useState(!1), C = null !== (t = (0, s.Z)(y)) && void 0 !== t ? t : y, j = l.useCallback(() => b(e => !e), []), A = (null !== (n = (0, s.Z)(a)) && void 0 !== n ? n : a)[0] !== a[0], T = y && !A;
+  } = e, m = o.length > 4, x = l.useMemo(() => m ? o.slice(0, 4) : o, [o, m]), [y, b] = l.useState(!1), C = null !== (t = (0, s.Z)(y)) && void 0 !== t ? t : y, g = l.useCallback(() => b(e => !e), []), A = (null !== (n = (0, s.Z)(a)) && void 0 !== n ? n : a)[0] !== a[0], T = y && !A;
   l.useLayoutEffect(() => b(!1), [A]);
   let {
     ref: L,
@@ -143,23 +143,23 @@ function w(e) {
     key: a,
     isExpanded: T,
     durationMs: 200,
-    maxAnimationHeight: O.K7
+    maxAnimationHeight: I.K7
   });
   l.useEffect(() => {
-    !C && y && (0, c.yw)(I.rMx.APP_LAUNCHER_SECTION_VIEW_MORE, {
+    !C && y && (0, c.yw)(O.rMx.APP_LAUNCHER_SECTION_VIEW_MORE, {
       section_name: N.L3.SEARCH,
       source: v.Z.entrypoint(),
       num: o.length
     })
   }, [o.length, C, y]);
   let Z = T || R,
-    k = T ? g.Z.buttonTypes.VIEW_LESS : g.Z.buttonTypes.VIEW_MORE,
+    k = T ? j.Z.buttonTypes.VIEW_LESS : j.Z.buttonTypes.VIEW_MORE,
     w = Z ? o : x;
   return (0, i.jsxs)("div", {
-    children: [(0, i.jsx)(g.Z, {
+    children: [(0, i.jsx)(j.Z, {
       title: _.NW.string(_.t["0hKkS0"]),
       buttonType: k,
-      onClickViewButton: m ? j : void 0
+      onClickViewButton: m ? g : void 0
     }), (0, i.jsx)("div", {
       className: S.sectionContentContainer,
       ref: L,
@@ -192,7 +192,7 @@ function w(e) {
               query: a,
               searchResultsPosition: t,
               source: e
-            }), h.S.dispatch(I.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+            }), h.S.dispatch(O.CkL.FOCUS_CHANNEL_TEXT_AREA, {
               channelId: r.channel.id
             }))
           }
@@ -239,7 +239,7 @@ function D(e) {
     searchesBots: o
   } = e;
   return o ? (0, i.jsxs)("div", {
-    children: [(0, i.jsx)(g.Z, {
+    children: [(0, i.jsx)(j.Z, {
       title: _.NW.string(_.t.PHjkRE)
     }), (0, i.jsxs)("div", {
       className: S.sectionContentContainer,
@@ -260,7 +260,7 @@ function D(e) {
       }), l && R.map(e => (0, i.jsx)(A.Z, {}, e))]
     })]
   }) : (0, i.jsxs)("div", {
-    children: [(0, i.jsx)(g.Z, {
+    children: [(0, i.jsx)(j.Z, {
       title: _.NW.string(_.t.shUONj)
     }), (0, i.jsxs)("div", {
       className: S.sectionActivitiesContentContainer,
@@ -298,12 +298,12 @@ function W(e) {
 
 function H() {
   return (0, i.jsxs)("div", {
-    children: [(0, i.jsx)(g.Z, {
+    children: [(0, i.jsx)(j.Z, {
       title: _.NW.string(_.t["0hKkS0"])
     }), (0, i.jsx)("div", {
       className: S.sectionContentContainer,
       children: L.map(e => (0, i.jsx)(A.Z, {}, e))
-    }), (0, i.jsx)(g.Z, {
+    }), (0, i.jsx)(j.Z, {
       title: _.NW.string(_.t.PHjkRE)
     }), (0, i.jsx)("div", {
       className: S.sectionContentContainer,

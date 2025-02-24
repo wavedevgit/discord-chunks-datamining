@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
 "use strict";
 n.d(t, {
   fz: () => S,
@@ -6,7 +6,7 @@ n.d(t, {
   r5: () => A,
   rk: () => I,
   wV: () => T
-});
+}), n(411104);
 var r = n(512722),
   i = n.n(r),
   o = n(259443),
@@ -125,13 +125,17 @@ async function T() {
   try {
     y = !0;
     let n = f.ZP.getVoiceFilters(),
-      r = await n.fetchCatalog(e, t);
+      r = await n.fetchCatalog(e, t),
+      i = JSON.parse(r);
+    if (!i.models) throw Error("Voice filters catalog repsonse is empty");
     await a.Z.dispatch({
       type: "VOICE_FILTER_CATALOG_FETCH_SUCCESS",
-      catalog: JSON.parse(r)
+      catalog: i
     })
   } catch (e) {
-    b.warn("Failed to refresh voice filters catalog: ".concat(e.message)), d.Z.captureException(e)
+    b.warn("Failed to refresh voice filters catalog: ".concat(e.message)), d.Z.captureException(e), await a.Z.dispatch({
+      type: "VOICE_FILTER_CATALOG_FETCH_FAILED"
+    })
   } finally {
     y = !1
   }

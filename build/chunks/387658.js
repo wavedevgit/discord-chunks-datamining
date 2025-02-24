@@ -1,4 +1,4 @@
-/** Chunk was on 23919 (023960ccd6b2eef0.js) **/
+/** Chunk was on 23919 (0a3f5146aab554d2.js) **/
 n.d(t, {
   Z: () => W
 }), n(47120);
@@ -22,12 +22,12 @@ var i = n(200651),
   b = n(541099),
   E = n(827498),
   C = n(496158),
-  j = n(183634),
-  g = n(660090),
+  g = n(183634),
+  j = n(660090),
   P = n(783097),
   A = n(46332),
-  O = n(176412),
-  I = n(870205),
+  I = n(176412),
+  O = n(870205),
   _ = n(981631),
   S = n(689079),
   T = n(388032),
@@ -60,7 +60,7 @@ function k(e) {
     }), x.S.dispatch(_.CkL.FOCUS_CHANNEL_TEXT_AREA, {
       channelId: r.channel.id
     }))
-  }, [r, o, s, c]), m = (null !== (n = null === (t = o.options) || void 0 === t ? void 0 : t.length) && void 0 !== n ? n : 0) > 0, h = l.useMemo(() => (0, O.ae)(o.displayDescription, void 0), [o.displayDescription]), f = l.useMemo(() => (0, i.jsxs)("div", {
+  }, [r, o, s, c]), m = (null !== (n = null === (t = o.options) || void 0 === t ? void 0 : t.length) && void 0 !== n ? n : 0) > 0, h = l.useMemo(() => (0, I.ae)(o.displayDescription, void 0), [o.displayDescription]), f = l.useMemo(() => (0, i.jsxs)("div", {
     className: R.commandTextContainer,
     children: [(0, i.jsx)(u.Text, {
       variant: "text-sm/semibold",
@@ -249,14 +249,14 @@ function W(e) {
     setSortOrder: N,
     commands: x,
     canSort: y
-  } = (0, g.Z)({
+  } = (0, j.Z)({
     sectionId: r.id,
     commandsByActiveSection: u
   });
   l.useEffect(() => {
     c(r.id)
   }, [r.id, c]);
-  let b = (0, j.Z)({
+  let b = (0, g.Z)({
     context: n,
     commands: x,
     limit: 5
@@ -277,7 +277,7 @@ function W(e) {
       commands: p ? Z : x,
       headerName: T.NW.string(T.t.DUU9Ly),
       sectionName: o,
-      children: y && (0, i.jsx)(I.Z, {
+      children: y && (0, i.jsx)(O.Z, {
         sortOrder: v,
         onSortOptionClick: N
       })

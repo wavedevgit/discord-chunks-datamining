@@ -1,4 +1,4 @@
-/** Chunk was on web (https://canary.discord.comweb.895a2488cd77ea6e.js.js) **/
+/** Chunk was on web (https://canary.discord.comweb.38a06e56c3da3c7f.js.js) **/
 function n(e) {
   if (e && "object" == typeof e) {
     var t = e.which || e.keyCode || e.charCode;

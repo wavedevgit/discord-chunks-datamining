@@ -1,6 +1,6 @@
-/** Chunk was on 23919 (023960ccd6b2eef0.js) **/
+/** Chunk was on 23919 (0a3f5146aab554d2.js) **/
 n.d(t, {
-  Z: () => j
+  Z: () => g
 }), n(47120);
 var i = n(200651),
   l = n(192379),
@@ -23,25 +23,25 @@ var i = n(200651),
   E = n(225977),
   C = n(413097);
 
-function j(e) {
+function g(e) {
   var t;
   let {
     context: n,
     application: s,
     sectionName: c
-  } = e, j = "channel" === n.type ? n.channel : void 0, P = (0, r.e7)([m.Z], () => m.Z.entrypoint()), A = null !== (t = (0, d.q)(s.id === y.bi.BUILT_IN ? null : s.id)) && void 0 !== t ? t : s, O = (0, h.ye)(A) ? g : x.Z, I = l.useRef(null), [_, S] = l.useState(!1), {
+  } = e, g = "channel" === n.type ? n.channel : void 0, P = (0, r.e7)([m.Z], () => m.Z.entrypoint()), A = null !== (t = (0, d.q)(s.id === y.bi.BUILT_IN ? null : s.id)) && void 0 !== t ? t : s, I = (0, h.ye)(A) ? j : x.Z, O = l.useRef(null), [_, S] = l.useState(!1), {
     iconURL: T,
     name: L
   } = l.useMemo(() => (0, h.sl)(A, {
     fakeAppIconURL: C,
     size: 84
-  }), [A]), R = (0, u.PL)(!0, !0), M = (0, u.LD)(null == j ? void 0 : j.guild_id, !0), Z = l.useMemo(() => (0, u.If)(n, A.id), [R, M, n, A.id]), k = !Z.isGuildInstalled && !Z.isUserInstalled;
+  }), [A]), R = (0, u.PL)(!0, !0), M = (0, u.LD)(null == g ? void 0 : g.guild_id, !0), Z = l.useMemo(() => (0, u.If)(n, A.id), [R, M, n, A.id]), k = !Z.isGuildInstalled && !Z.isUserInstalled;
   return l.useEffect(() => {
-    k && u.ZP.queryInstallOnDemandApp(A.id, null == j ? void 0 : j.id)
-  }, [A.id, null == j ? void 0 : j.id, k]), (0, i.jsxs)(a.u2D, {
+    k && u.ZP.queryInstallOnDemandApp(A.id, null == g ? void 0 : g.id)
+  }, [A.id, null == g ? void 0 : g.id, k]), (0, i.jsxs)(a.u2D, {
     className: E.container,
     fade: !0,
-    ref: I,
+    ref: O,
     role: "region",
     "aria-label": b.NW.formatToPlainString(b.t["4OP4Ul"], {
       applicationName: L
@@ -51,14 +51,14 @@ function j(e) {
       context: n,
       name: L,
       iconURL: T,
-      scrollerRef: I,
+      scrollerRef: O,
       sectionName: c
     }), null != T && (0, i.jsx)(f.Z, {
       src: T,
       className: E.appIcon
     }), (0, i.jsx)(o.Z, {
       size: 54
-    }), (0, i.jsx)(O, {
+    }), (0, i.jsx)(I, {
       context: n,
       application: A,
       sectionName: c,
@@ -73,7 +73,7 @@ function j(e) {
   })
 }
 
-function g(e) {
+function j(e) {
   let {
     context: t,
     application: n,

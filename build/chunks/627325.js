@@ -1,4 +1,4 @@
-/** Chunk was on 11814 (3b351e4cb7c7b881.js) **/
+/** Chunk was on 11814 (8608d0474a894e52.js) **/
 n.d(t, {
   w: () => S
 });
@@ -53,11 +53,11 @@ function S(e) {
   } = e, A = (0, y.S)(), w = (0, u.e7)([g.default], () => (0, b.I5)(g.default.getCurrentUser())), {
     voicesById: Z,
     isNativeModuleLoading: k,
-    hasNativeModuleFailed: R
+    showFailure: R
   } = (0, u.cj)([v.Z], () => ({
     voicesById: v.Z.getVoiceFilters(),
     isNativeModuleLoading: v.Z.isNativeModuleLoading(),
-    hasNativeModuleFailed: v.Z.hasNativeModuleFailed()
+    showFailure: v.Z.showFailure()
   })), L = (0, u.cj)([v.Z], () => v.Z.getSortedVoiceFilters()), D = w ? Object.values(Z) : L, M = i.useMemo(() => {
     let e = (0, d._I)(T.toLowerCase());
     return ["" === e ? D : D.filter(t => {
