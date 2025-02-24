@@ -1,10 +1,10 @@
 /** Chunk was on 61526 **/
 n.d(t, {
-  Z: () => a
+  Z: () => r
 });
-var r = n(356659);
+var a = n(356659);
 
-function a(e, t) {
-  let n = e / r.ji;
-  return t && (n /= r.i$), n
+function r(e, t) {
+  let n = e / a.ji;
+  return t && (n /= a.i$), n
 }

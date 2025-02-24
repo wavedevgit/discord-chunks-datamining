@@ -34,15 +34,15 @@ async function p(e, t) {
   if (((null == A ? void 0 : null === (n = A.fetchError) || void 0 === n ? void 0 : n.status) === 404 || (null == A ? void 0 : null === (p = A.fetchError) || void 0 === p ? void 0 : p.status) === 429) && !C) return;
   let R = u.Z.getGuildMemberProfile(e, S),
     P = u.Z.getMutualGuilds(e),
-    w = u.Z.getMutualFriends(e),
-    D = u.Z.getMutualFriendsCount(e);
+    D = u.Z.getMutualFriends(e),
+    w = u.Z.getMutualFriendsCount(e);
   g = g || null != S;
-  let L = null == w && v,
-    x = null == D && E,
+  let L = null == D && v,
+    x = null == w && E,
     M = null != S && null == R;
   if (!(null == P && g) && !L && !x && !M && !C) return;
   (0, s.z)(), null != t && (0, o.vM)(t);
-  let k = {
+  let j = {
       type: m,
       withMutualGuilds: g,
       withMutualFriends: v,
@@ -56,7 +56,7 @@ async function p(e, t) {
         channel: l.Z.getChannel(I)
       })) || void 0 === _ ? void 0 : _.id
     },
-    j = y ? d.Z : void 0;
-  if (O) return r.Z.wait(() => (0, i.In)(e, k, j));
-  await (0, i.In)(e, k, j)
+    k = y ? d.Z : void 0;
+  if (O) return r.Z.wait(() => (0, i.In)(e, j, k));
+  await (0, i.In)(e, j, k)
 }

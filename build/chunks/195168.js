@@ -1,8 +1,8 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => o
+r.d(t, {
+  Z: () => a
 });
-var r = n(816569),
-  i = "object" == typeof self && self && self.Object === Object && self;
-let o = r.Z || i || Function("return this")()
+var n = r(816569),
+  o = "object" == typeof self && self && self.Object === Object && self;
+let a = n.Z || o || Function("return this")()

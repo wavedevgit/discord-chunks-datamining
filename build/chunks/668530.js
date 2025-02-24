@@ -1,8 +1,8 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = function(e) {
-  return e && e.Math === Math && e
+var e = function(t) {
+  return t && t.Math === Math && t
 };
-e.exports = r("object" == typeof globalThis && globalThis) || r("object" == typeof window && window) || r("object" == typeof self && self) || r("object" == typeof n.g && n.g) || r("object" == typeof this && this) || function() {
+t.exports = e("object" == typeof globalThis && globalThis) || e("object" == typeof window && window) || e("object" == typeof self && self) || e("object" == typeof n.g && n.g) || e("object" == typeof this && this) || function() {
   return this
 }() || Function("return this")()

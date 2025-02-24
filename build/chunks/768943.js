@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => Z
+  Z: () => F
 }), n(411104), n(47120);
 var r, i = n(442837),
   o = n(759174),
@@ -137,7 +137,7 @@ function P(e) {
   return o.message = null, h.set(r, o), !0
 }
 
-function w(e) {
+function D(e) {
   let {
     id: t,
     channelId: n
@@ -148,7 +148,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     ids: t,
     channelId: n
@@ -187,7 +187,7 @@ function M(e) {
   m = !0
 }
 
-function k(e) {
+function j(e) {
   let {
     channels: t
   } = e;
@@ -197,7 +197,7 @@ function k(e) {
   return n
 }
 
-function j(e) {
+function k(e) {
   let {
     channel: t
   } = e;
@@ -268,21 +268,21 @@ class B extends(r = i.ZP.Store) {
   }
 }
 u(B, "displayName", "SavedMessagesStore");
-let Z = new B(a.Z, {
+let F = new B(a.Z, {
   POST_CONNECTION_OPEN: T,
   LOGOUT: N,
   SAVED_MESSAGES_UPDATE: A,
   SAVED_MESSAGE_CREATE: C,
   SAVED_MESSAGE_DELETE: R,
-  MESSAGE_DELETE: w,
-  MESSAGE_DELETE_BULK: D,
+  MESSAGE_DELETE: D,
+  MESSAGE_DELETE_BULK: w,
   MESSAGE_UPDATE: L,
   GUILD_CREATE: x,
   GUILD_UPDATE: x,
   GUILD_DELETE: x,
   CHANNEL_CREATE: M,
-  CHANNEL_UPDATES: k,
-  CHANNEL_DELETE: j,
+  CHANNEL_UPDATES: j,
+  CHANNEL_DELETE: k,
   GUILD_MEMBER_UPDATE: U,
   GUILD_ROLE_CREATE: x,
   GUILD_ROLE_UPDATE: x,

@@ -31,19 +31,19 @@ var r = n(200651),
   C = n(699516),
   R = n(938475),
   P = n(626135),
-  w = n(960870),
-  D = n(139793),
+  D = n(960870),
+  w = n(139793),
   L = n(510659),
   x = n(287954),
   M = n(660579),
-  k = n(652853),
-  j = n(64621),
+  j = n(652853),
+  k = n(64621),
   U = n(336383),
   G = n(194811),
   B = n(373826),
-  Z = n(315324),
-  F = n(788858),
-  V = n(599864),
+  F = n(315324),
+  V = n(788858),
+  Z = n(599864),
   H = n(386019),
   W = n(228168),
   Y = n(981631),
@@ -64,7 +64,7 @@ function J(e) {
   } = e, {
     profileType: et,
     theme: en
-  } = (0, k.z)(), {
+  } = (0, j.z)(), {
     interactionSource: er,
     interactionSourceId: ei
   } = (0, L.Xo)(), eo = {
@@ -80,13 +80,13 @@ function J(e) {
     return t
   }) : []), ed = (0, s.e7)([A.Z], () => A.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, p.Z)(e))), {
     analyticsLocations: ef
-  } = (0, h.ZP)(_.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ep = (0, w.Z)({
+  } = (0, h.ZP)(_.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ep = (0, D.Z)({
     display: "live",
     voiceChannelId: null == ec ? void 0 : ec.id,
     user: t,
     stream: o,
     analyticsLocations: ef
-  }), e_ = (0, D.Z)({
+  }), e_ = (0, w.Z)({
     userId: t.id,
     onAction: ep
   }), [eh, em] = (0, b.wq)(ec), {
@@ -179,7 +179,7 @@ function J(e) {
             variant: "heading-sm/semibold",
             color: "text-normal",
             className: z.voiceChannelHeading,
-            children: [(0, r.jsx)(F.Z, {
+            children: [(0, r.jsx)(V.Z, {
               channel: ec,
               size: "xxs",
               color: l.TVs.colors.TEXT_NORMAL,
@@ -200,7 +200,7 @@ function J(e) {
           users: eu,
           guildId: el.id,
           channelId: ec.id,
-          maxUsers: Z.W,
+          maxUsers: F.W,
           size: l.EFr.SIZE_16,
           onClick: e => {
             null == e || e.stopPropagation(), null == ep || ep({
@@ -214,7 +214,7 @@ function J(e) {
         })]
       })
     },
-    eT = () => et === W.y0.FULL_SIZE ? null : (0, r.jsx)(Z.Z, {
+    eT = () => et === W.y0.FULL_SIZE ? null : (0, r.jsx)(F.Z, {
       user: t,
       guild: el,
       channel: ec,
@@ -223,7 +223,7 @@ function J(e) {
     }),
     eN = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: a()(z.actions, eo),
-      children: (0, r.jsx)(V.Z, {
+      children: (0, r.jsx)(Z.Z, {
         channel: ec,
         onAction: ep,
         onClose: $
@@ -236,7 +236,7 @@ function J(e) {
     }) : K.NW.string(K.t["Jpkr/v"]);
   return (0, r.jsx)(h.Gt, {
     value: ef,
-    children: (0, r.jsx)(j.Z, {
+    children: (0, r.jsx)(k.Z, {
       sourceType: W.n_.ACTIVITY,
       user: t,
       children: (0, r.jsx)(x.Z, {

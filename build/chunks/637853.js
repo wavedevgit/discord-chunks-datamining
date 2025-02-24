@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   Ee: () => y,
-  L6: () => D,
+  L6: () => w,
   V7: () => S,
-  VF: () => w,
+  VF: () => D,
   b$: () => g,
   d9: () => R,
   dF: () => O,
@@ -157,7 +157,7 @@ function P(e, t) {
   return e[0].length === t[0].length && e[1].length === t[1].length && (0, i.Z)(e[0], t[0]) && (0, i.Z)(e[1], t[1])
 }
 
-function w(e, t) {
+function D(e, t) {
   return (0, r.e7)([s.ZP], () => {
     let n = s.ZP.getChannels(e),
       r = [],
@@ -168,7 +168,7 @@ function w(e, t) {
   }, [e, t], P)
 }
 
-function D(e) {
+function w(e) {
   return new Set(e.map(e => e.roleIds).flat().filter(d.lm))
 }
 

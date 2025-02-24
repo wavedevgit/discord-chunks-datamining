@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => j
 }), n(47120), n(627341);
 var r = n(200651),
   i = n(192379),
@@ -31,13 +31,13 @@ var r = n(200651),
   C = n(921944),
   R = n(474936),
   P = n(388032),
-  w = n(156753);
-let D = () => (0, r.jsx)("div", {
-    className: w.editorHeader,
+  D = n(156753);
+let w = () => (0, r.jsx)("div", {
+    className: D.editorHeader,
     children: (0, r.jsxs)("div", {
-      className: w.bannerUpsell,
+      className: D.bannerUpsell,
       children: [(0, r.jsx)(v.Z, {
-        className: w.premiumIcon
+        className: D.premiumIcon
       }), (0, r.jsx)(u.X6q, {
         variant: "heading-md/bold",
         color: "always-white",
@@ -52,14 +52,14 @@ let D = () => (0, r.jsx)("div", {
       null != t && t(C.L.DISMISS), n(A.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, S.Mo)()
     };
     return (0, r.jsxs)("div", {
-      className: w.editorHeader,
+      className: D.editorHeader,
       children: [(0, r.jsx)(u.P3F, {
-        className: w.closeCircleButton,
+        className: D.closeCircleButton,
         onClick: i,
         children: (0, r.jsx)(u.k$p, {
           size: "md",
           color: "currentColor",
-          className: w.closeCircle
+          className: D.closeCircle
         })
       }), (0, r.jsx)(u.X6q, {
         variant: "heading-lg/extrabold",
@@ -116,14 +116,14 @@ let D = () => (0, r.jsx)("div", {
       isPreview: !0
     }, () => P.NW.string(P.t["dqH+qq"])).otherwise(() => P.NW.string(P.t.Olc2Ky));
     return (0, r.jsxs)("div", {
-      className: w.editorFooter,
+      className: D.editorFooter,
       children: [o && (0, r.jsx)(x, {
         onSubscribeSuccess: () => {
           c(!0)
         },
         markAsDismissed: t
       }), (0, r.jsx)(u.zxk, {
-        className: w.footerButton,
+        className: D.footerButton,
         onClick: p,
         color: u.zxk.Colors.PRIMARY,
         size: u.zxk.Sizes.MEDIUM,
@@ -132,7 +132,7 @@ let D = () => (0, r.jsx)("div", {
     })
   };
 
-function k(e) {
+function j(e) {
   let {
     markAsDismissed: t,
     showClientThemesCoachmark: n
@@ -162,18 +162,18 @@ function k(e) {
     children: (0, r.jsx)("div", {
       ref: E,
       "data-app-right-panel": !0,
-      className: a()(w.themeEditor, d ? w.editorAnimate : null),
+      className: a()(D.themeEditor, d ? D.editorAnimate : null),
       children: (0, r.jsxs)(u.y5t, {
-        children: [n ? (0, r.jsx)(D, {}) : (0, r.jsx)(L, {
+        children: [n ? (0, r.jsx)(w, {}) : (0, r.jsx)(L, {
           markAsDismissed: t
         }), (0, r.jsx)(u.Ttm, {
-          className: w.editorBody,
+          className: D.editorBody,
           children: (0, r.jsxs)(N.ZP, {
             type: N.yH.EDITOR,
             children: [!s && (0, r.jsx)(N.ZP.Basic, {
-              className: w.selectionGroup
+              className: D.selectionGroup
             }), (0, r.jsx)(N.ZP.Gradient, {
-              className: w.selectionGroup,
+              className: D.selectionGroup,
               isCoachmark: n
             })]
           })

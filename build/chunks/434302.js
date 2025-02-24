@@ -1,19 +1,19 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(67867),
-  i = n(828596),
-  o = n(821819),
-  a = n(502640),
+var e = n(766362),
+  o = n(828596),
+  i = n(821819),
+  u = n(502640),
   s = n(611345);
-r({
+e({
   target: "Object",
   stat: !0,
-  forced: !i || o(function() {
-    a.f(1)
+  forced: !o || i(function() {
+    u.f(1)
   })
 }, {
-  getOwnPropertySymbols: function(e) {
-    var t = a.f;
-    return t ? t(s(e)) : []
+  getOwnPropertySymbols: function(t) {
+    var r = u.f;
+    return r ? r(s(t)) : []
   }
 })

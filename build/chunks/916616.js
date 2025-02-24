@@ -96,20 +96,20 @@ class A extends(r = o.PureComponent) {
         minWidth: S,
         minHeight: N,
         mediaLayoutType: A,
-        limitResponsiveWidth: w = !0,
-        accessory: D,
+        limitResponsiveWidth: D = !0,
+        accessory: w,
         zoomable: L,
         original: x,
         children: M,
-        renderAccessory: k,
-        onClick: j,
+        renderAccessory: j,
+        onClick: k,
         tabIndex: U,
         dataSafeSrc: G,
         useFullWidth: B = !1
       } = t,
-      Z = T(t, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth"]);
+      F = T(t, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth"]);
     if (1 === m && 1 === v) return null;
-    let F = (0, f.Tj)({
+    let V = (0, f.Tj)({
         width: m,
         height: v,
         maxWidth: b,
@@ -117,50 +117,50 @@ class A extends(r = o.PureComponent) {
         minWidth: S,
         minHeight: N
       }),
-      V = 0 !== F.width ? F.width / F.height : 1;
+      Z = 0 !== V.width ? V.width / V.height : 1;
     "" !== a && o !== h.zo9.ERROR ? e = M({
       src: a,
-      size: F,
+      size: V,
       alt: p,
       className: r,
       mediaLayoutType: A
     }) : o !== h.zo9.LOADING && (e = (0, i.jsx)(C, {
-      size: F,
+      size: V,
       mediaLayoutType: A,
       alt: p
     })), e = (0, i.jsx)(_.N, {
       readyState: o,
-      aspectRatio: V,
+      aspectRatio: Z,
       placeholder: l,
       placeholderVersion: u,
-      placeholderStyle: P(F, A),
+      placeholderStyle: P(V, A),
       children: e
     });
-    let H = null != k ? k() : null;
-    return H = null != H ? H : D, (0, i.jsx)(c.tEY, {
+    let H = null != j ? j() : null;
+    return H = null != H ? H : w, (0, i.jsx)(c.tEY, {
       ringTarget: this._containerRef,
       focusTarget: this._clickableRef,
       children: (0, i.jsxs)("div", I(O({
         className: s()(E.imageWrapper, {
           [E.imageZoom]: L,
           [E.imageWrapperBackground]: o !== h.zo9.READY,
-          [E.clickable]: null != j
+          [E.clickable]: null != k
         }, n),
-        style: R(F, w, B, A)
-      }, Z), {
+        style: R(V, D, B, A)
+      }, F), {
         children: [null != x && (0, i.jsx)("a", {
           tabIndex: -1,
-          onClick: j,
+          onClick: k,
           "aria-hidden": !0,
           className: E.originalLink,
           href: x,
           ref: this._containerRef,
           "data-role": "img",
           "data-safe-src": null != G ? G : a
-        }), null != j ? (0, i.jsx)(c.P3F, {
+        }), null != k ? (0, i.jsx)(c.P3F, {
           className: E.clickableWrapper,
           tabIndex: null != U ? U : 0,
-          onClick: j,
+          onClick: k,
           "aria-label": null != p ? p : g.NW.string(g.t.X4IxWF),
           "aria-describedby": d.r5,
           innerRef: this._clickableRef,
@@ -188,7 +188,7 @@ function C(e) {
   } = e, o = (0, u.ZP)();
   return (0, i.jsx)("div", {
     className: E.imageErrorWrapper,
-    style: w(t, n),
+    style: D(t, n),
     children: (0, i.jsx)("img", {
       src: (0, l.ap)(o) ? b : v,
       className: E.imageError,
@@ -218,20 +218,20 @@ function P(e, t) {
         display: "block", objectFit: "cover", minWidth: "100%", minHeight: "100%", maxWidth: 1 === (0, p.Z)() ? "calc(100% + 1px)" : "100%"
       };
     case m.hV.RESPONSIVE:
-      return D(e);
+      return w(e);
     default:
       return e
   }
 }
 
-function w(e, t) {
+function D(e, t) {
   switch (t) {
     case m.hV.MOSAIC:
       return {
         width: "100%", height: "100%", aspectRatio: "".concat(e.width, " / ").concat(e.height), display: "flex", maxHeight: "inherit"
       };
     case m.hV.RESPONSIVE:
-      return I(O({}, D(e)), {
+      return I(O({}, w(e)), {
         display: "flex"
       });
     default:
@@ -239,7 +239,7 @@ function w(e, t) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     width: t,
     height: n

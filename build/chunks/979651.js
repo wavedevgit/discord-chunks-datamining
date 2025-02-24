@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(47120);
 var o, a = n(392711),
   s = n.n(a),
@@ -80,7 +80,7 @@ function P(e) {
   }, !1)
 }
 
-function w(e) {
+function D(e) {
   let t = !1;
   for (let n of e.voiceStates) {
     let [r] = L(e.guildId, n);
@@ -90,7 +90,7 @@ function w(e) {
   return t && h++, t
 }
 
-function D(e) {
+function w(e) {
   let {
     userId: t,
     channelId: n,
@@ -138,11 +138,11 @@ function M(e) {
   return o && (m = {}, v = {}, y = {}, b = {}, E.clear()), r = t.id, i = n, o
 }
 
-function k() {
+function j() {
   m = {}, v = {}, y = {}, b = {}, E.clear()
 }
 
-function j(e) {
+function k(e) {
   let {
     voiceStates: t,
     user: n,
@@ -175,7 +175,7 @@ function B(e) {
   } = e;
   T(t)
 }
-class Z extends(o = l.ZP.Store) {
+class F extends(o = l.ZP.Store) {
   getAllVoiceStates() {
     return m
   }
@@ -247,17 +247,17 @@ class Z extends(o = l.ZP.Store) {
     return _
   }
 }
-p(Z, "displayName", "VoiceStateStore");
-let F = new Z(c.Z, {
+p(F, "displayName", "VoiceStateStore");
+let V = new F(c.Z, {
   CONNECTION_OPEN: M,
-  CONNECTION_OPEN_SUPPLEMENTAL: k,
-  OVERLAY_INITIALIZE: j,
+  CONNECTION_OPEN_SUPPLEMENTAL: j,
+  OVERLAY_INITIALIZE: k,
   VOICE_CHANNEL_SELECT: x,
   VOICE_STATE_UPDATES: P,
   GUILD_DELETE: U,
   GUILD_CREATE: U,
   CHANNEL_DELETE: G,
   CALL_DELETE: B,
-  PASSIVE_UPDATE_V2: w,
-  RTC_CONNECTION_PLATFORM: D
+  PASSIVE_UPDATE_V2: D,
+  RTC_CONNECTION_PLATFORM: w
 })

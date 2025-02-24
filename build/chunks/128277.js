@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 }), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -62,13 +62,13 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function D(e) {
+function w(e) {
   let {
     user: t,
     currentUser: n,
@@ -76,22 +76,22 @@ function D(e) {
     className: C,
     onClose: P
   } = e, {
-    profileType: D
+    profileType: w
   } = (0, E.z)(), L = {
-    [A.fullSize]: D === N.y0.FULL_SIZE
+    [A.fullSize]: w === N.y0.FULL_SIZE
   }, x = (0, p.Z)({
     activity: o,
     user: t
   }), M = (0, g.Z)(o), {
-    largeImage: k
+    largeImage: j
   } = (0, d.FO)(o), {
-    analyticsLocations: j
+    analyticsLocations: k
   } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), U = (0, h.Z)({
     display: "live",
     user: t,
     activity: o,
     entry: x,
-    analyticsLocations: j
+    analyticsLocations: k
   }), G = (0, m.Z)({
     userId: t.id,
     onAction: U
@@ -118,7 +118,7 @@ function D(e) {
         }, n))
       })
     },
-    Z = () => {
+    F = () => {
       let {
         timestamps: e
       } = o;
@@ -132,7 +132,7 @@ function D(e) {
         end: n
       })
     },
-    F = () => t.id === n.id ? null : (0, r.jsx)("div", {
+    V = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: a()(A.actions, L),
       children: (0, r.jsx)(I.Z, {
         user: t,
@@ -141,13 +141,13 @@ function D(e) {
       })
     });
   return (0, r.jsx)(u.Gt, {
-    value: j,
+    value: k,
     children: (0, r.jsxs)(b.Z, {
       ref: G,
       className: a()(A.card, C),
       onAction: U,
       onClose: P,
-      children: [(0, r.jsx)(y.Z, w(R({}, M), {
+      children: [(0, r.jsx)(y.Z, D(R({}, M), {
         contextMenu: (0, r.jsx)(T.Z, {
           display: "live",
           user: t,
@@ -160,7 +160,7 @@ function D(e) {
         children: (0, r.jsxs)("div", {
           className: a()(A.content, L),
           children: [(0, r.jsx)(f.E, {
-            image: k,
+            image: j,
             size: f.J.SIZE_60,
             className: A.clickableImage,
             onClick: e => {
@@ -184,10 +184,10 @@ function D(e) {
               user: t,
               activity: o,
               className: A.badges
-            }), Z()]
-          }), D === N.y0.FULL_SIZE && F()]
+            }), F()]
+          }), w === N.y0.FULL_SIZE && V()]
         })
-      }), D !== N.y0.FULL_SIZE && F()]
+      }), w !== N.y0.FULL_SIZE && V()]
     })
   })
 }

@@ -10,10 +10,10 @@ let r = n(889658),
     if (e === t) return !0;
     e = new r(e, n), t = new r(t, n);
     let i = !1;
-    s: for (let r of e.set) {
+    a: for (let r of e.set) {
       for (let e of t.set) {
         let t = d(r, e, n);
-        if (i = i || null !== t, t) continue s
+        if (i = i || null !== t, t) continue a
       }
       if (i) return !1
     }

@@ -172,11 +172,11 @@ function P(e) {
   }
 }
 
-function w(e) {
+function D(e) {
   e.isSwitchingAccount || (v = {})
 }
 
-function D(e) {
+function w(e) {
   e.userId in v && delete v[e.userId]
 }
 
@@ -258,8 +258,8 @@ p(x, "displayName", "DraftStore"), p(x, "persistKey", "DraftStore"), p(x, "migra
 }]);
 let M = new x(s.Z, {
   CONNECTION_OPEN: A,
-  LOGOUT: w,
-  MULTI_ACCOUNT_REMOVE_ACCOUNT: D,
+  LOGOUT: D,
+  MULTI_ACCOUNT_REMOVE_ACCOUNT: w,
   GUILD_DELETE: C,
   CHANNEL_DELETE: R,
   THREAD_DELETE: R,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => j
 }), n(653041), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -138,7 +138,7 @@ function P(e) {
   return null == t && null != m ? R(c.Z.getChannel(m), null) : R(c.Z.getChannel(t), t)
 }
 
-function w(e) {
+function D(e) {
   let {
     voiceStates: t
   } = e;
@@ -151,7 +151,7 @@ function w(e) {
   }, !1)
 }
 
-function D(e) {
+function w(e) {
   let {
     guildId: t
   } = e;
@@ -176,8 +176,8 @@ class M extends(r = i.ZP.Store) {
   }
 }
 p(M, "displayName", "GuildCategoryStore");
-let k = new M(o.Z, {
-  CHANNEL_SELECT: D,
+let j = new M(o.Z, {
+  CHANNEL_SELECT: w,
   CONNECTION_OPEN: y,
   OVERLAY_INITIALIZE: y,
   CACHE_LOADED_LAZY: y,
@@ -195,5 +195,5 @@ let k = new M(o.Z, {
   IMPERSONATE_UPDATE: C,
   IMPERSONATE_STOP: C,
   VOICE_CHANNEL_SELECT: P,
-  VOICE_STATE_UPDATES: w
+  VOICE_STATE_UPDATES: D
 })

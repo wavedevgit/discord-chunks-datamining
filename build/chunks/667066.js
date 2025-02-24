@@ -1,18 +1,15 @@
-/** Chunk was on web.js **/
-var r = n(657398),
-  i = n(708187),
-  o = n(389109),
-  a = "[object Object]",
-  s = Object.prototype,
+/** Chunk was on 26436 **/
+var n = r(657398),
+  o = r(708187),
+  a = r(389109),
+  i = Object.prototype,
   l = Function.prototype.toString,
-  c = s.hasOwnProperty,
+  s = i.hasOwnProperty,
   u = l.call(Object);
-
-function d(e) {
-  if (!o(e) || r(e) != a) return !1;
-  var t = i(e);
+e.exports = function(e) {
+  if (!a(e) || "[object Object]" != n(e)) return !1;
+  var t = o(e);
   if (null === t) return !0;
-  var n = c.call(t, "constructor") && t.constructor;
-  return "function" == typeof n && n instanceof n && l.call(n) == u
+  var r = s.call(t, "constructor") && t.constructor;
+  return "function" == typeof r && r instanceof r && l.call(r) == u
 }
-e.exports = d

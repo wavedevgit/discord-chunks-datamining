@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Jc: () => Z,
+  Jc: () => F,
   dx: () => M,
   tE: () => H
 });
@@ -333,12 +333,12 @@ var R = function(e, t, n, r) {
   return !0
 };
 let P = !1,
-  w, D = {};
+  D, w = {};
 
 function L() {
   if (!P) return;
   let e = null == r ? void 0 : r.getStyle();
-  null == e || R(e, D) ? null != w && cancelAnimationFrame(w) : (D = e, null == r || r.invalidate()), w = requestAnimationFrame(L)
+  null == e || R(e, w) ? null != D && cancelAnimationFrame(D) : (w = e, null == r || r.invalidate()), D = requestAnimationFrame(L)
 }
 let x = !1,
   M = {
@@ -349,19 +349,19 @@ let x = !1,
       x = e, null == r || r.invalidate()
     },
     enableAnimationTracking() {
-      P = !0, w = requestAnimationFrame(L)
+      P = !0, D = requestAnimationFrame(L)
     },
     disableAnimationTracking() {
-      P = !1, null != w && cancelAnimationFrame(w)
+      P = !1, null != D && cancelAnimationFrame(D)
     }
   };
-var k = {
+var j = {
     exports: {}
   },
-  j = {};
+  k = {};
 
 function U() {
-  if (i) return j;
+  if (i) return k;
   i = 1;
   var e = a,
     t = Symbol.for("react.element"),
@@ -391,14 +391,14 @@ function U() {
       _owner: o.current
     }
   }
-  return j.Fragment = n, j.jsx = l, j.jsxs = l, j
+  return k.Fragment = n, k.jsx = l, k.jsxs = l, k
 }! function(e) {
   e.exports = U()
-}(k);
-let G = k.exports.jsx,
-  B = k.exports.jsxs;
+}(j);
+let G = j.exports.jsx,
+  B = j.exports.jsxs;
 
-function Z(e) {
+function F(e) {
   let {
     containerRef: t,
     children: n,
@@ -408,11 +408,11 @@ function Z(e) {
     i.current.setContainer(t.current), i.current.setThemeOptions(r)
   }, [t.current]), B(C.Provider, {
     value: i.current,
-    children: [n, G(F, {})]
+    children: [n, G(V, {})]
   })
 }
 
-function F() {
+function V() {
   let e = a.useContext(C),
     [, t] = a.useState({});
   return a.useEffect(() => (e.invalidate = () => t({}), () => {
@@ -422,7 +422,7 @@ function F() {
     style: e.getStyle()
   }) : null
 }
-let V = "u" > typeof window && (null == (o = window.document) ? void 0 : o.createElement) != null ? a.useLayoutEffect : a.useEffect;
+let Z = "u" > typeof window && (null == (o = window.document) ? void 0 : o.createElement) != null ? a.useLayoutEffect : a.useEffect;
 
 function H(e) {
   let {
@@ -451,7 +451,7 @@ function H(e) {
       className: l,
       offset: i
     }), [l, i]);
-  V(() => {
+  Z(() => {
     n && g.invalidate()
   }), a.useEffect(() => {
     n || g.hide()
@@ -460,7 +460,7 @@ function H(e) {
   }, [g]), a.useEffect(() => {
     let e = null == s ? void 0 : s.current;
     null == r || null == e || (_.current = r, r ? g.showElement(e, O) : !1 === r && g.hide())
-  }, [r, O, g, s]), V(() => {
+  }, [r, O, g, s]), Z(() => {
     if (null != r) return;
     let e = null == o ? void 0 : o.current,
       n = null == s ? void 0 : s.current;

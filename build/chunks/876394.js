@@ -1,9 +1,9 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r = n(67867),
-  i = n(96403),
-  o = n(952256),
-  a = i([].reverse),
+var r = n(766362),
+  o = n(96403),
+  a = n(952256),
+  i = o([].reverse),
   s = [1, 2];
 r({
   target: "Array",
@@ -11,6 +11,6 @@ r({
   forced: String(s) === String(s.reverse())
 }, {
   reverse: function() {
-    return o(this) && (this.length = this.length), a(this)
+    return a(this) && (this.length = this.length), i(this)
   }
 })

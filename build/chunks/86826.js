@@ -19,11 +19,11 @@ let p = function(e) {
     className: i,
     color: p,
     animate: h,
-    gradientStopColor: g,
-    getHistoricalTotalBytes: f
-  } = e, m = (0, o.Sl)(p).hex, b = null === (t = (0, o.Sl)(g)) || void 0 === t ? void 0 : t.hex;
+    gradientStopColor: f,
+    getHistoricalTotalBytes: g
+  } = e, m = (0, o.Sl)(p).hex, b = null === (t = (0, o.Sl)(f)) || void 0 === t ? void 0 : t.hex;
   return (0, r.jsx)(c.Z, {
-    getHistoricalTotalBytes: f,
+    getHistoricalTotalBytes: g,
     children: (e, t, o) => {
       var c;
       return (0, r.jsx)("div", {

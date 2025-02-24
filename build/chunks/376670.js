@@ -1,19 +1,19 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => s
+r.d(t, {
+  Z: () => l
 });
-var r = n(192379),
-  i = n(723184),
-  o = n(820611),
-  a = n(877837);
-let s = function(e) {
+var n = r(192379),
+  o = r(723184),
+  a = r(820611),
+  i = r(877837);
+let l = function(e) {
   var t = e.onChange,
-    n = e.rgb,
-    s = e.hsl,
-    l = e.hex,
-    c = e.disableAlpha,
-    u = (0, i.default)({
+    r = e.rgb,
+    l = e.hsl,
+    s = e.hex,
+    u = e.disableAlpha,
+    c = (0, o.default)({
       default: {
         fields: {
           display: "flex",
@@ -53,85 +53,85 @@ let s = function(e) {
         }
       }
     }, {
-      disableAlpha: c
+      disableAlpha: u
     }),
-    d = function(e, r) {
-      e.hex ? o.FX(e.hex) && t({
+    p = function(e, n) {
+      e.hex ? a.FX(e.hex) && t({
         hex: e.hex,
         source: "hex"
-      }, r) : e.r || e.g || e.b ? t({
-        r: e.r || n.r,
-        g: e.g || n.g,
-        b: e.b || n.b,
-        a: n.a,
+      }, n) : e.r || e.g || e.b ? t({
+        r: e.r || r.r,
+        g: e.g || r.g,
+        b: e.b || r.b,
+        a: r.a,
         source: "rgb"
-      }, r) : e.a && (e.a < 0 ? e.a = 0 : e.a > 100 && (e.a = 100), e.a /= 100, t({
-        h: s.h,
-        s: s.s,
-        l: s.l,
+      }, n) : e.a && (e.a < 0 ? e.a = 0 : e.a > 100 && (e.a = 100), e.a /= 100, t({
+        h: l.h,
+        s: l.s,
+        l: l.l,
         a: e.a,
         source: "rgb"
-      }, r))
+      }, n))
     };
-  return r.createElement("div", {
-    style: u.fields,
+  return n.createElement("div", {
+    style: c.fields,
     className: "flexbox-fix"
-  }, r.createElement("div", {
-    style: u.double
-  }, r.createElement(a.Vm, {
+  }, n.createElement("div", {
+    style: c.double
+  }, n.createElement(i.Vm, {
     style: {
-      input: u.input,
-      label: u.label
+      input: c.input,
+      label: c.label
     },
     label: "hex",
-    value: l.replace("#", ""),
-    onChange: d
-  })), r.createElement("div", {
-    style: u.single
-  }, r.createElement(a.Vm, {
+    value: s.replace("#", ""),
+    onChange: p
+  })), n.createElement("div", {
+    style: c.single
+  }, n.createElement(i.Vm, {
     style: {
-      input: u.input,
-      label: u.label
+      input: c.input,
+      label: c.label
     },
     label: "r",
-    value: n.r,
-    onChange: d,
+    value: r.r,
+    onChange: p,
     dragLabel: "true",
     dragMax: "255"
-  })), r.createElement("div", {
-    style: u.single
-  }, r.createElement(a.Vm, {
+  })), n.createElement("div", {
+    style: c.single
+  }, n.createElement(i.Vm, {
     style: {
-      input: u.input,
-      label: u.label
+      input: c.input,
+      label: c.label
     },
     label: "g",
-    value: n.g,
-    onChange: d,
+    value: r.g,
+    onChange: p,
     dragLabel: "true",
     dragMax: "255"
-  })), r.createElement("div", {
-    style: u.single
-  }, r.createElement(a.Vm, {
+  })), n.createElement("div", {
+    style: c.single
+  }, n.createElement(i.Vm, {
     style: {
-      input: u.input,
-      label: u.label
+      input: c.input,
+      label: c.label
     },
     label: "b",
-    value: n.b,
-    onChange: d,
+    value: r.b,
+    onChange: p,
     dragLabel: "true",
     dragMax: "255"
-  })), r.createElement("div", {
-    style: u.alpha
-  }, r.createElement(a.Vm, {
+  })), n.createElement("div", {
+    style: c.alpha
+  }, n.createElement(i.Vm, {
     style: {
-      input: u.input,
-      label: u.label
+      input: c.input,
+      label: c.label
     },
     label: "a",
-    value: Math.round(100 * n.a),
-    onChange: d,
+    value: Math.round(100 * r.a),
+    onChange: p,
     dragLabel: "true",
     dragMax: "100"
   })))

@@ -32,7 +32,7 @@ let T = function(e) {
     onClose: T
   } = e, [N, A] = i.useState(!0), C = i.useRef(!1), R = (0, l.Z)(() => Date.now()), {
     analyticsLocations: P
-  } = (0, c.ZP)(), w = i.useCallback(() => {
+  } = (0, c.ZP)(), D = i.useCallback(() => {
     T(), f.default.track(O.rMx.MODAL_DISMISSED, {
       type: O.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: P,
@@ -41,7 +41,7 @@ let T = function(e) {
       guild_id: n.id,
       duration_open_ms: Date.now() - R
     })
-  }, [T, t, P, R, n.id]), D = i.useCallback(e => {
+  }, [T, t, P, R, n.id]), w = i.useCallback(e => {
     e && !C.current && (f.default.track(O.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: O.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: P,
@@ -60,17 +60,17 @@ let T = function(e) {
     })
   }, [n.id, t, P]), i.useEffect(() => {
     function e(e) {
-      "Escape" === e.key && w()
+      "Escape" === e.key && D()
     }
     return window.addEventListener("keydown", e), () => {
       window.removeEventListener("keydown", e)
     }
-  }, [w]), (0, r.jsxs)(r.Fragment, {
+  }, [D]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: I.closeIconWrapper,
       children: (0, r.jsx)(s.Z, {
         className: I.closeIcon,
-        closeAction: w,
+        closeAction: D,
         keybind: "ESC",
         variant: s.Z.Variants.SOLID
       })
@@ -89,7 +89,7 @@ let T = function(e) {
             children: S.NW.string(S.t.N4sqzM)
           }), (0, r.jsx)(_.Z, {
             guild: n,
-            closeLayer: w,
+            closeLayer: D,
             onCtaVisibilityChange: A
           }), (0, r.jsx)(g.Z, {
             guild: n
@@ -116,7 +116,7 @@ let T = function(e) {
           className: I.lowerBodyBackgroundImage
         })]
       }), (0, r.jsx)(o.$, {
-        onChange: D,
+        onChange: w,
         children: (0, r.jsx)("div", {
           className: I.persistentCtaSpacer
         })
@@ -124,7 +124,7 @@ let T = function(e) {
     }), (0, r.jsx)(m.Z, {
       guild: n,
       isVisible: !N,
-      closeLayer: w
+      closeLayer: D
     })]
   })
 }

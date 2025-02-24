@@ -116,7 +116,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     users: t,
     guildId: n,
@@ -144,7 +144,7 @@ function w(e) {
     })
   })
 }
-let D = [];
+let w = [];
 
 function L(e) {
   let {
@@ -158,21 +158,21 @@ function L(e) {
   } = e, N = (0, _.Z)(), [R, L] = i.useState(!1), x = i.useRef(new u.sW(C, () => L(!1))), M = (0, c.Wu)([m.Z, g.default], () => {
     if (s.type === b.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
-      return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
+      return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : w
     }
-    return s.type === b.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : D
+    return s.type === b.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : w
   }, [s]);
   i.useEffect(() => {
     N && (x.current.cancel(), L(!1))
   }, [N]);
-  let k = i.useCallback(() => {
+  let j = i.useCallback(() => {
       x.current.cancel(), L(!0)
     }, []),
-    j = i.useCallback(() => {
+    k = i.useCallback(() => {
       x.current.delay()
     }, []),
     U = i.useCallback((e, t) => {
-      k(), (0, f.jW)(e, async () => {
+      j(), (0, f.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220"), n.e("31327")]).then(n.bind(n, 881351));
@@ -180,11 +180,11 @@ function L(e) {
           user: t
         }))
       }, {
-        onClose: j
+        onClose: k
       })
-    }, [j, k]);
+    }, [k, j]);
   if (0 === M.length) return null;
-  if (v) return (0, r.jsx)(w, {
+  if (v) return (0, r.jsx)(D, {
     maxVisibleUsers: I,
     users: M,
     guildId: o,
@@ -204,8 +204,8 @@ function L(e) {
   }, "overflow")), (0, r.jsx)(p.Z, {
     section: y.jXE.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {
-      onMouseEnter: k,
-      onMouseLeave: j,
+      onMouseEnter: j,
+      onMouseLeave: k,
       children: (0, r.jsx)(d.yRy, {
         renderPopout: () => (0, r.jsx)(P, {
           participantType: s.type,

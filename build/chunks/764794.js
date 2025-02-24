@@ -67,9 +67,9 @@ function S(e) {
     isResending: y
   } = e, S = y ? g.NW.string(g.t.zzfBQk) : g.NW.string(g.t.ziPEBg), [I, T] = i.useState(!1), [N, A] = i.useState(!1), C = (0, s.Z)(null, () => A(!1)), {
     analyticsLocations: R
-  } = (0, u.ZP)(c.Z.REFERRAL_TRIALS_COMPOSER_BUTTON), P = v.isDM() && void 0 !== v.recipients ? v.recipients[0] : null, w = (0, l.ZP)();
+  } = (0, u.ZP)(c.Z.REFERRAL_TRIALS_COMPOSER_BUTTON), P = v.isDM() && void 0 !== v.recipients ? v.recipients[0] : null, D = (0, l.ZP)();
 
-  function D() {
+  function w() {
     A(e => !e)
   }
   return t ? null : (0, r.jsxs)("div", {
@@ -102,7 +102,7 @@ function S(e) {
           "aria-label": S.toString(),
           "aria-haspopup": "dialog",
           onClick: () => {
-            D(), p.default.track(h.rMx.SHARE_NITRO_FLOW_STEPS, {
+            w(), p.default.track(h.rMx.SHARE_NITRO_FLOW_STEPS, {
               location_stack: R,
               step: m.fz.BADGE_CLICKED,
               other_user_id: Number(P)
@@ -112,7 +112,7 @@ function S(e) {
             referralsRemaining: n,
             hovered: I,
             isResending: y,
-            isLightTheme: (0, a.ap)(w)
+            isLightTheme: (0, a.ap)(D)
           })
         }))
       })

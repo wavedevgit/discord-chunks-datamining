@@ -40,13 +40,13 @@ function I(e) {
     onClose: A,
     onDisplay: C,
     onLearnMore: R
-  } = e, P = (0, s.e7)([h.Z], () => h.Z.affinities), w = (0, s.e7)([h.Z], () => h.Z.hasFetched);
+  } = e, P = (0, s.e7)([h.Z], () => h.Z.affinities), D = (0, s.e7)([h.Z], () => h.Z.hasFetched);
   i.useEffect(() => {
-    !w && I && c.MH()
-  }, [w, I]), i.useEffect(() => {
+    !D && I && c.MH()
+  }, [D, I]), i.useEffect(() => {
     p.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, N), null == C || C()
   }, [C, N]);
-  let D = P.length > 1 && I,
+  let w = P.length > 1 && I,
     L = () => 2 === t ? O.hasTabParentContainer : 1 === t ? O.hasParentContainer : O.noParentContainer,
     x = () => {
       p.default.track(b.rMx.PREMIUM_PROMOTION_OPENED, {
@@ -55,7 +55,7 @@ function I(e) {
       }), null == R || R(), (0, d.Z)(), A(), (0, u.xf)(), (0, f.uL)(b.Z5c.APPLICATION_STORE)
     },
     M = (0, m.N)(),
-    k = i.useCallback(() => {
+    j = i.useCallback(() => {
       var e;
       return null !== (e = (0, _.fr)(M)) && void 0 !== e ? e : y.NW.string(y.t.pj0XBA)
     }, [M]);
@@ -80,11 +80,11 @@ function I(e) {
           alt: "Nitro Perk"
         }), (0, r.jsx)(l.X6q, {
           className: a()(O.title, {
-            [O.titleNoSocialProof]: !D
+            [O.titleNoSocialProof]: !w
           }),
           variant: "heading-xl/bold",
           children: o
-        }), D && (0, r.jsx)(E.Z, {
+        }), w && (0, r.jsx)(E.Z, {
           affinities: P
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
@@ -112,7 +112,7 @@ function I(e) {
           onClick: () => {
             A()
           },
-          buttonText: k()
+          buttonText: j()
         })]
       })]
     })]

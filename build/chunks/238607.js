@@ -101,15 +101,15 @@ function S(e) {
     handleJoinRequest: C,
     buttonCTA: R,
     tooltip: P,
-    isEnabled: w,
-    isEmbedded: D
+    isEnabled: D,
+    isEmbedded: w
   } = N;
-  return D ? (0, r.jsx)(o.ua7, {
+  return w ? (0, r.jsx)(o.ua7, {
     text: P,
     children: e => (0, r.jsx)(m.tG, O(b({}, e), {
       icon: o.YVR,
       text: R,
-      disabled: !w,
+      disabled: !D,
       submitting: A,
       fullWidth: !0,
       onClick: e => {
@@ -123,7 +123,7 @@ function S(e) {
     children: e => (0, r.jsx)(m.tG, O(b({}, e), {
       icon: o.iWm,
       text: R,
-      disabled: !w,
+      disabled: !D,
       submitting: A,
       fullWidth: !0,
       onClick: e => {

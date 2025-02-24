@@ -140,12 +140,12 @@ function P() {
   null != T && (T.destroy(), T = null)
 }
 
-function w(e) {
+function D(e) {
   var t;
   h = null !== (t = e.section) && void 0 !== t ? t : _
 }
 
-function D() {
+function w() {
   P()
 }
 
@@ -164,7 +164,7 @@ function M(e) {
   h = e.section
 }
 
-function k(e) {
+function j(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : Date.now(),
     r = {};
@@ -177,12 +177,12 @@ function k(e) {
         for (let e = 0; e < o.length; e++) {
           let r = t[e],
             i = "object" == typeof r ? r : {};
-          a.push(k(o[e], i, n))
+          a.push(j(o[e], i, n))
         }
       } else r[i] = o
     } else if ("object" == typeof o && null !== o) {
       let t = "object" == typeof e && null !== e ? e : {};
-      r[i] = k(o, t, n)
+      r[i] = j(o, t, n)
     } else if (i in E && "number" == typeof o) {
       let t = r[i] = Array.isArray(e) ? e : [];
       t.push({
@@ -194,7 +194,7 @@ function k(e) {
   return r
 }
 
-function j(e) {
+function k(e) {
   let {
     context: t,
     stats: n,
@@ -210,7 +210,7 @@ function j(e) {
       } = n;
       Object.keys(e).includes(o) || (h = _)
     }
-    i[r] = k(n, i[r])
+    i[r] = j(n, i[r])
   } else delete i[r]
 }
 
@@ -239,14 +239,14 @@ function B(e) {
   S = S.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
 }
 
-function Z(e) {
+function F(e) {
   let {
     value: t
   } = e;
   I = t
 }
 
-function F(e) {
+function V(e) {
   let {
     userId: t,
     context: n,
@@ -255,7 +255,7 @@ function F(e) {
   g.set(y(t, n), r)
 }
 C();
-class V extends(r = i.ZP.Store) {
+class Z extends(r = i.ZP.Store) {
   getSection() {
     return h
   }
@@ -301,17 +301,17 @@ class V extends(r = i.ZP.Store) {
     return g.has(n) ? g.get(n) : d.Z.NO_OVERRIDE
   }
 }
-f(V, "displayName", "RTCDebugStore");
-let H = new V(a.Z, {
-  RTC_DEBUG_MODAL_OPEN: w,
-  RTC_DEBUG_MODAL_CLOSE: D,
+f(Z, "displayName", "RTCDebugStore");
+let H = new Z(a.Z, {
+  RTC_DEBUG_MODAL_OPEN: D,
+  RTC_DEBUG_MODAL_CLOSE: w,
   RTC_DEBUG_MODAL_SET_SECTION: M,
-  RTC_DEBUG_MODAL_UPDATE: j,
+  RTC_DEBUG_MODAL_UPDATE: k,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,
   RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: B,
-  RTC_DEBUG_SET_RECORDING_FLAG: Z,
-  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F,
+  RTC_DEBUG_SET_RECORDING_FLAG: F,
+  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: V,
   VOICE_CHANNEL_SELECT: L,
   RTC_CONNECTION_VIDEO: x
 });

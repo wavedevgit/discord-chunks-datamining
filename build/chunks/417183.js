@@ -22,7 +22,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function g(e) {
   return e
 }
 
-function f(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -87,7 +87,7 @@ class m extends i.PureComponent {
           left: -8,
           right: -8
         },
-        children: (0, r.jsx)(a.Z.div, f(g({
+        children: (0, r.jsx)(a.Z.div, g(f({
           className: o()(m, p.peopleListItem, null != b ? {
             [b]: h || i
           } : null, {
@@ -135,7 +135,7 @@ class m extends i.PureComponent {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220"), n.e("31923")]).then(n.bind(n, 881351));
-        return n => (0, r.jsx)(e, f(g({}, n), {
+        return n => (0, r.jsx)(e, g(f({}, n), {
           user: t
         }))
       }, {

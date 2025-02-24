@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(239091),
   p = n(100527),
   h = n(906732),
-  g = n(795318),
-  f = n(540059),
+  f = n(795318),
+  g = n(540059),
   m = n(706140),
   b = n(221241),
   _ = n(294629),
@@ -81,7 +81,7 @@ function A(e) {
     }
     return i
   }(e, ["channel", "iconClassName", "className", "innerClassName"]);
-  let L = (0, f.Q3)("SoundBoardRTCPanelButton"),
+  let L = (0, g.Q3)("SoundBoardRTCPanelButton"),
     {
       coloredIcons: w
     } = (0, b.Z)({
@@ -111,7 +111,7 @@ function A(e) {
       return t => (0, r.jsx)(e, j(P({
         guildId: W
       }, t), {
-        onInteraction: (0, g.u)("SoundboardContextMenu", "RTCConnection")
+        onInteraction: (0, f.u)("SoundboardContextMenu", "RTCConnection")
       }))
     })
   }

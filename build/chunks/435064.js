@@ -65,8 +65,8 @@ let y = "default",
   C = {},
   R = null,
   P = null,
-  w = {},
-  D = {
+  D = {},
+  w = {
     clipsEnabled: !1,
     storageLocation: y,
     clipsQuality: {
@@ -80,7 +80,7 @@ let y = "default",
     viewerConnectivity: _.dJ.ALL
   },
   L = {
-    clipsSettings: D,
+    clipsSettings: w,
     hardwareClassification: null,
     hardwareClassificationForDecoupled: null,
     hardwareClassificationVersion: 0,
@@ -108,7 +108,7 @@ function M(e) {
   L.hardwareClassificationForDecoupled = t, L.hardwareClassificationForDecoupled === p.x.MEETS_AUTO_ENABLE && r !== p.x.MEETS_AUTO_ENABLE && L.clipsSettings.clipsEnabled && (L.clipsSettings.decoupledClipsEnabled = !0)
 }
 
-function k(e) {
+function j(e) {
   let {
     clip: t
   } = e;
@@ -119,7 +119,7 @@ function k(e) {
     }
 }
 
-function j(e) {
+function k(e) {
   let {
     settings: t
   } = e;
@@ -137,7 +137,7 @@ function U(e) {
   if (T += 1, L.hasTakenDecoupledClip = L.hasTakenDecoupledClip || t === _.X9.DECOUPLED, null != n && null != r) {
     var i;
     let e = Date.now();
-    P = null != P ? P : e, w[n] = [...null !== (i = w[n]) && void 0 !== i ? i : [], {
+    P = null != P ? P : e, D[n] = [...null !== (i = D[n]) && void 0 !== i ? i : [], {
       timestamp: e,
       thumbnail: r
     }]
@@ -149,14 +149,14 @@ function G(e) {
     streamKey: t,
     timestamp: n
   } = e;
-  P === n && (P = null), null == n ? w[t] = [] : w[t] = w[t].filter(e => e.timestamp !== n)
+  P === n && (P = null), null == n ? D[t] = [] : D[t] = D[t].filter(e => e.timestamp !== n)
 }
 
 function B() {
   T = Math.max(T - 1, 0)
 }
 
-function Z(e) {
+function F(e) {
   var t, n;
   let {
     clip: r
@@ -176,14 +176,14 @@ function Z(e) {
   }), S = [r, ...S], L.hasClips = !0
 }
 
-function F(e) {
+function V(e) {
   let {
     clip: t
   } = e;
   I = [t, ...I]
 }
 
-function V(e) {
+function Z(e) {
   let {
     clipId: t
   } = e;
@@ -252,7 +252,7 @@ function q(e) {
   let {
     streamKey: t
   } = e;
-  if (P = null, w[t] = [], null == A || (0, l.my)(t).ownerId !== c.default.getId()) return !1;
+  if (P = null, D[t] = [], null == A || (0, l.my)(t).ownerId !== c.default.getId()) return !1;
   A = 0 === A.newClipIds.length ? null : b(E({}, A), {
     ended: !0
   })
@@ -335,10 +335,10 @@ class er extends(r = i.ZP.DeviceSettingsStore) {
   }
   getStreamClipAnimations(e) {
     var t;
-    return null !== (t = w[e]) && void 0 !== t ? t : O
+    return null !== (t = D[e]) && void 0 !== t ? t : O
   }
   hasAnyClipAnimations() {
-    return Object.values(w).some(e => e.length > 0)
+    return Object.values(D).some(e => e.length > 0)
   }
   getHardwareClassification() {
     return L.hardwareClassification
@@ -382,10 +382,10 @@ class er extends(r = i.ZP.DeviceSettingsStore) {
   }
 }
 g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "migrations", [e => ({
-  clipsSettings: null != e ? e : D,
+  clipsSettings: null != e ? e : w,
   newClipsCount: 0
 }), e => {
-  let t = E({}, D, e.clipsSettings);
+  let t = E({}, w, e.clipsSettings);
   return b(E({}, e), {
     clipsSettings: t
   })
@@ -407,7 +407,7 @@ g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "mi
   })
 }, e => b(E({}, e), {
   clipsSettings: b(E({}, e.clipsSettings), {
-    decoupledClipsEnabled: D.decoupledClipsEnabled
+    decoupledClipsEnabled: w.decoupledClipsEnabled
   })
 }), e => {
   var t;
@@ -431,13 +431,13 @@ g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "mi
   })
 }, e => b(E({}, e), {
   clipsSettings: b(E({}, e.clipsSettings), {
-    clipsQuality: "number" == typeof e.clipsSettings.clipsQuality || null == e.clipsSettings.clipsQuality ? D.clipsQuality : e.clipsSettings.clipsQuality
+    clipsQuality: "number" == typeof e.clipsSettings.clipsQuality || null == e.clipsSettings.clipsQuality ? w.clipsQuality : e.clipsSettings.clipsQuality
   })
 }), e => {
   var t;
   return b(E({}, e), {
     clipsSettings: b(E({}, e.clipsSettings), {
-      remindersEnabled: null !== (t = e.clipsSettings.remindersEnabled) && void 0 !== t ? t : D.remindersEnabled
+      remindersEnabled: null !== (t = e.clipsSettings.remindersEnabled) && void 0 !== t ? t : w.remindersEnabled
     })
   })
 }, e => b(E({}, e), {
@@ -449,10 +449,10 @@ g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "mi
   }
 })]);
 let ei = new er(o.Z, {
-    CLIPS_SETTINGS_UPDATE: j,
-    CLIPS_SAVE_CLIP: Z,
-    CLIPS_SAVE_CLIP_PLACEHOLDER: F,
-    CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: V,
+    CLIPS_SETTINGS_UPDATE: k,
+    CLIPS_SAVE_CLIP: F,
+    CLIPS_SAVE_CLIP_PLACEHOLDER: V,
+    CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: Z,
     CLIPS_SAVE_CLIP_START: U,
     CLIPS_SAVE_CLIP_ERROR: B,
     CLIPS_SAVE_ANIMATION_END: G,
@@ -462,7 +462,7 @@ let ei = new er(o.Z, {
     CLIPS_CLEAR_NEW_CLIP_IDS: $,
     CLIPS_LOAD_DIRECTORY_SUCCESS: Q,
     CLIPS_DELETE_CLIP: X,
-    CLIPS_UPDATE_METADATA: k,
+    CLIPS_UPDATE_METADATA: j,
     RTC_CONNECTION_FLAGS: ee,
     CLIPS_SHOW_CALL_WARNING: H,
     VOICE_CHANNEL_SELECT: W,

@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Eb: () => w,
+  Eb: () => D,
   Fx: () => x,
-  IM: () => D,
+  IM: () => w,
   J2: () => G,
   r$: () => P
 }), n(653041), n(47120), n(411104);
@@ -117,7 +117,7 @@ function P(e, t) {
   })
 }
 
-function w() {
+function D() {
   let e = s.Z.database(),
     t = (0, f.O)() ? l.Z.getCommittedVersions() : Promise.resolve({});
   return Promise.all([t, (0, f.O)() ? u.Z.getGuildIds() : Promise.resolve(new Set), null != e ? c.Z.okAsync(e) : Promise.resolve(!1)]).then(e => {
@@ -130,7 +130,7 @@ function w() {
   })
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   var r, {
       users: o,
       relationships: s,
@@ -139,7 +139,7 @@ function D(e, t, n) {
       guilds: u
     } = e,
     d = I(e, ["users", "relationships", "private_channels", "merged_members", "guilds"]);
-  j(n);
+  k(n);
   let f = M(R = a().keyBy(o, e => e.id), s);
   null == l || l.forEach(e => {
     let t = e.recipient_ids;
@@ -185,12 +185,12 @@ function M(e, t) {
   }), n
 }
 
-function k(e) {
+function j(e) {
   let t = A[e];
   return delete A[e], t
 }
 
-function j(e) {
+function k(e) {
   null != s.Z.database() && !1 === e.databaseOk && d.Z.replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok"), A = {};
   let t = Object.values(g.Z.getGuilds()),
     n = _.ZP.getGuilds(),
@@ -210,7 +210,7 @@ function j(e) {
 
 function U(e) {
   var t, n, r, i, o, a, s, l, c, u, d, f;
-  let p = k(e.id);
+  let p = j(e.id);
   if ("partial" !== e.data_mode) return {
     id: e.id,
     dataMode: e.data_mode,
@@ -241,7 +241,7 @@ function U(e) {
       deletes: null !== (a = e.partial_updates.deleted_channel_ids) && void 0 !== a ? a : []
     },
     channelTimestampUpdates: e.channel_updates,
-    emojis: null == p.emojis ? null : Z(p.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
+    emojis: null == p.emojis ? null : F(p.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
     emojiUpdates: {
       writes: null !== (s = e.partial_updates.emojis) && void 0 !== s ? s : [],
       deletes: null !== (l = e.partial_updates.deleted_emoji_ids) && void 0 !== l ? l : []
@@ -255,7 +255,7 @@ function U(e) {
     properties: null !== (c = e.properties) && void 0 !== c ? c : null,
     roles: v.EO(e.id, p.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
     stage_instances: e.stage_instances,
-    stickers: null == p.stickers ? null : Z(p.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
+    stickers: null == p.stickers ? null : F(p.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
     stickerUpdates: {
       writes: null !== (u = e.partial_updates.stickers) && void 0 !== u ? u : [],
       deletes: null !== (d = e.partial_updates.deleted_sticker_ids) && void 0 !== d ? d : []
@@ -270,7 +270,7 @@ function U(e) {
 
 function G(e, t) {
   var n, r, i, o, a, s, l, c, u, d, f, p;
-  if (null == t && (t = k(e.id)), "partial" !== e.data_mode) return {
+  if (null == t && (t = j(e.id)), "partial" !== e.data_mode) return {
     id: e.id,
     emojis: e.emojis,
     guild_scheduled_events: e.guild_scheduled_events,
@@ -302,7 +302,7 @@ function G(e, t) {
     },
     channelTimestampUpdates: e.channel_updates,
     activity_instances: e.activity_instances,
-    emojis: null == t.emojis ? null : Z(t.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
+    emojis: null == t.emojis ? null : F(t.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
     emojiUpdates: {
       writes: null !== (l = e.partial_updates.emojis) && void 0 !== l ? l : [],
       deletes: null !== (c = e.partial_updates.deleted_emoji_ids) && void 0 !== c ? c : []
@@ -317,7 +317,7 @@ function G(e, t) {
     properties: null !== (u = e.properties) && void 0 !== u ? u : t.properties,
     roles: v.EO(e.id, t.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
     stage_instances: e.stage_instances,
-    stickers: null == t.stickers ? null : Z(t.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
+    stickers: null == t.stickers ? null : F(t.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
     stickerUpdates: {
       writes: null !== (d = e.partial_updates.stickers) && void 0 !== d ? d : [],
       deletes: null !== (f = e.partial_updates.deleted_sticker_ids) && void 0 !== f ? f : []
@@ -338,7 +338,7 @@ function B(e) {
   return t
 }
 
-function Z(e, t, n) {
+function F(e, t, n) {
   t = null != t ? t : [];
   let r = new Set((null != n ? n : []).concat(t.map(e => e.id)));
   return e.filter(e => !r.has(e.id)).concat(t)

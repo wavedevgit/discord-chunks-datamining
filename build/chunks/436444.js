@@ -90,7 +90,7 @@ let S = {
       tierMarkerAnimationPosition: N
     } = e, {
       analyticsLocations: A
-    } = (0, l.ZP)(), C = (0, c.Z)(), R = _.oCV[T] - i.premiumSubscriberCount, P = T <= N || E, w = P && T <= i.premiumTier, D = P && T < i.premiumTier, L = P && T === i.premiumTier, {
+    } = (0, l.ZP)(), C = (0, c.Z)(), R = _.oCV[T] - i.premiumSubscriberCount, P = T <= N || E, D = P && T <= i.premiumTier, w = P && T < i.premiumTier, L = P && T === i.premiumTier, {
       scaleFactor: x
     } = (0, s.q_F)({
       from: {
@@ -115,7 +115,7 @@ let S = {
       })]
     });
 
-    function k() {
+    function j() {
       P && (0, f.u)({
         analyticsLocations: A,
         analyticsLocation: {
@@ -128,13 +128,13 @@ let S = {
         guild: i
       })
     }
-    let j = !w && C.fractionalState === h.a$.NONE,
-      U = j ? s.P3F : "div",
-      G = j ? {
-        onClick: k
+    let k = !D && C.fractionalState === h.a$.NONE,
+      U = k ? s.P3F : "div",
+      G = k ? {
+        onClick: j
       } : {};
     return (0, r.jsx)(s.ua7, {
-      text: w ? m.NW.formatToPlainString(m.t["1o48kp"], {
+      text: D ? m.NW.formatToPlainString(m.t["1o48kp"], {
         tierName: (0, d.nW)(T, {
           useLevels: !1
         })
@@ -147,18 +147,18 @@ let S = {
       shouldShow: T !== _.Eu4.NONE,
       children: e => (0, r.jsxs)(U, y(v({
         className: o()(g.progressBarMarker, {
-          [g.progressBarMarkerUnlocked]: w,
-          [g.progressBarMarkerLocked]: j,
-          [g.progressBarMarkerLower]: D,
+          [g.progressBarMarkerUnlocked]: D,
+          [g.progressBarMarkerLocked]: k,
+          [g.progressBarMarkerLower]: w,
           [g.progressBarMarkerCurrent]: L
         }),
         style: {
           left: "".concat(100 * S[T], "%")
         }
       }, e, G), {
-        children: [!w && (0, r.jsx)("div", {
+        children: [!D && (0, r.jsx)("div", {
           className: g.boostedTierIconBackground
-        }), w && T === _.Eu4.TIER_3 ? (0, r.jsx)(p.m, {
+        }), D && T === _.Eu4.TIER_3 ? (0, r.jsx)(p.m, {
           confettiTriggerRef: n,
           setConfettiCount: b,
           setShouldFireConfetti: I,
@@ -166,7 +166,7 @@ let S = {
         }) : M, (0, r.jsxs)(s.Text, {
           className: g.progressBarMarkerLabel,
           variant: "text-md/normal",
-          children: [w && T !== _.Eu4.NONE && (0, r.jsx)(s.dz2, {
+          children: [D && T !== _.Eu4.NONE && (0, r.jsx)(s.dz2, {
             size: "md",
             color: "currentColor",
             className: g.progressBarMarkerUnlockedIcon

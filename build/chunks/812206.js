@@ -154,7 +154,7 @@ function P(e) {
   for (let e of t) v(a.ZP.createFromServer(e))
 }
 
-function w(e) {
+function D(e) {
   let {
     recommendations: t
   } = e;
@@ -165,7 +165,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     user: t,
     application: n
@@ -207,7 +207,7 @@ function M(e) {
   return n
 }
 
-function k(e) {
+function j(e) {
   let {
     guildId: t,
     applications: n
@@ -216,7 +216,7 @@ function k(e) {
   p[t] = r
 }
 
-function j(e) {
+function k(e) {
   let {
     payments: t
   } = e, n = new Set;
@@ -254,7 +254,7 @@ function B(e) {
   v(a.ZP.createFromServer(t.target_application))
 }
 
-function Z(e) {
+function F(e) {
   let {
     storeListing: t
   } = e;
@@ -262,14 +262,14 @@ function Z(e) {
   v(a.ZP.createFromServer(t.sku.application))
 }
 
-function F(e) {
+function V(e) {
   let {
     messages: t
   } = e;
-  t.forEach(e => V(e))
+  t.forEach(e => Z(e))
 }
 
-function V(e) {
+function Z(e) {
   var t;
   null === (t = e.attachments) || void 0 === t || t.forEach(e => {
     null != e.application && v(a.ZP.createFromServer(e.application))
@@ -363,16 +363,16 @@ let K = new Y(o.Z, {
   APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: M,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: M,
-  GUILD_APPLICATIONS_FETCH_SUCCESS: k,
-  BILLING_PAYMENTS_FETCH_SUCCESS: j,
+  GUILD_APPLICATIONS_FETCH_SUCCESS: j,
+  BILLING_PAYMENTS_FETCH_SUCCESS: k,
   PAYMENT_UPDATE: U,
   INVITE_RESOLVE_SUCCESS: B,
   GIFT_CODE_RESOLVE_SUCCESS: G,
   LIBRARY_FETCH_SUCCESS: R,
-  STORE_LISTING_FETCH_SUCCESS: Z,
-  LOAD_MESSAGES_SUCCESS: F,
-  APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: w,
-  USER_PROFILE_FETCH_SUCCESS: D,
+  STORE_LISTING_FETCH_SUCCESS: F,
+  LOAD_MESSAGES_SUCCESS: V,
+  APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: D,
+  USER_PROFILE_FETCH_SUCCESS: w,
   APP_DM_OPEN: L,
   USER_AUTHORIZED_APPS_UPDATE: H,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: W

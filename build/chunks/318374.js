@@ -74,7 +74,7 @@ function v(e) {
     onFocus: C,
     onUserClick: R,
     onUserPopoutRequestClose: P
-  } = e, [w, D] = i.useState(!1);
+  } = e, [D, w] = i.useState(!1);
 
   function L() {
     return (0, r.jsx)(c.VqE, {
@@ -89,7 +89,7 @@ function v(e) {
           disablePopout: "function" == typeof N ? N(e.id) : N,
           onClick: R,
           onPopoutRequestClose: () => {
-            D(!1), null == P || P()
+            w(!1), null == P || P()
           },
           onContextMenu: t => (0, u.jW)(t, async () => {
             let {
@@ -101,7 +101,7 @@ function v(e) {
               channelId: h
             }))
           }, {
-            onClose: () => D(!1)
+            onClose: () => w(!1)
           })
         }, e.id))
       })
@@ -131,14 +131,14 @@ function v(e) {
       n = t.length - o;
     return n > 0 && !I && (e[e.length - 1] = (0, r.jsx)(c.yRy, {
       renderPopout: L,
-      shouldShow: w,
+      shouldShow: D,
       position: "bottom",
-      onRequestClose: () => D(!1),
+      onRequestClose: () => w(!1),
       children: () => (0, r.jsx)(c.zxk, {
         className: a()(_.avatar, _.overflow, S),
         onFocus: C,
         onClick: e => {
-          null == A || A(e), D(!0)
+          null == A || A(e), w(!0)
         },
         look: c.zxk.Looks.BLANK,
         size: c.zxk.Sizes.NONE,

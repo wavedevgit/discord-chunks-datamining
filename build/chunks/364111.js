@@ -14,7 +14,7 @@ function u(e, t) {
   let n = (0, i.e7)([l.Z], () => l.Z.hasLoadedExperiments),
     u = (0, c.hv)("useMaybeFetchCollectiblesShopHome"),
     d = (0, o.isDesktop)() || (0, o.isWeb)(),
-    [p, h, g, f, m, b] = (0, i.Wu)([s.Z], () => {
+    [p, h, f, g, m, b] = (0, i.Wu)([s.Z], () => {
       var t, n;
       return [s.Z.getShopBlocks(e), null !== (t = s.Z.getLastSuccessfulFetch(e)) && void 0 !== t ? t : 0, null !== (n = s.Z.getLastErrorTimestamp(e)) && void 0 !== n ? n : 0, s.Z.getLastFetchOptions(e), s.Z.getFetchShopHomeError(e), s.Z.getIsFetchingShopHome(e)]
     }),
@@ -53,13 +53,13 @@ function u(e, t) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
       }), e
     }, [t, u, d]),
-    E = (0, r.useMemo)(() => !(0, a.oc)(f, _), [f, _]),
+    E = (0, r.useMemo)(() => !(0, a.oc)(g, _), [g, _]),
     O = (0, r.useMemo)(() => Date.now() - h < 6e5, [h]);
   return (0, r.useEffect)(() => {
     if (!n || b) return;
-    let t = Date.now() - g < 6e5;
+    let t = Date.now() - f < 6e5;
     (null == m || !t) && (E || !O) && (0, a.Ov)(e, _)
-  }, [n, b, m, g, O, E, _, e]), {
+  }, [n, b, m, f, O, E, _, e]), {
     isFetchingShopHome: b,
     fetchShopHomeError: m,
     shopBlocks: p,

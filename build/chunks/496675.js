@@ -52,7 +52,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   var t;
   let n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     r = O.default.getCurrentUser();
@@ -68,10 +68,10 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = A[e];
-  return null != n ? n : A[e] = w(e, t)
+  return null != n ? n : A[e] = D(e, t)
 }
 
 function L(e) {
@@ -90,11 +90,11 @@ function M() {
   x()
 }
 
-function k() {
+function j() {
   J()
 }
 
-function j() {
+function k() {
   x()
 }
 
@@ -143,16 +143,16 @@ function B(e) {
   return !!n && (R += 1, n)
 }
 
-function Z() {
+function F() {
   return !0
 }
 
-function F(e) {
+function V(e) {
   var t;
   return (null === (t = O.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === e.userId && (L(e.guildId), !0)
 }
 
-function V(e) {
+function Z(e) {
   return !!(0, p.s)(e) && (L(e.guildId), !0)
 }
 
@@ -221,7 +221,7 @@ function Q(e, t, n, r) {
       let i = v.Z.getChannel(e.parent_id);
       return null == i ? E.Hn : E.Og(e, Q(i, t, n, r), f.Z.hasJoined(e.id))
     }
-    i = D(e.id)
+    i = w(e.id)
   } else e instanceof h.ZP && (i = P(e.id));
   return void 0 !== t || void 0 !== n || void 0 !== r ? E.uB({
     user: O.default.getCurrentUser(),
@@ -237,7 +237,7 @@ class X extends(r = s.ZP.Store) {
     this.waitFor(O.default, y.Z, v.Z, b.ZP, f.Z, d.Z, c.Z)
   }
   getChannelPermissions(e) {
-    return _.Ec.has(e.type) ? w(e.id) : D(e.id)
+    return _.Ec.has(e.type) ? D(e.id) : w(e.id)
   }
   getGuildPermissions(e) {
     return P(e.id)
@@ -327,25 +327,25 @@ let $ = new X(l.Z, {
   OVERLAY_INITIALIZE: M,
   CACHE_LOADED: M,
   CACHE_LOADED_LAZY: M,
-  CONNECTION_CLOSED: k,
-  GUILD_CREATE: j,
-  GUILD_UPDATE: j,
-  GUILD_DELETE: j,
+  CONNECTION_CLOSED: j,
+  GUILD_CREATE: k,
+  GUILD_UPDATE: k,
+  GUILD_DELETE: k,
   GUILD_MEMBER_ADD: U,
   GUILD_MEMBER_UPDATE: U,
   CURRENT_USER_UPDATE: U,
   CHANNEL_CREATE: G,
-  THREAD_CREATE: Z,
-  THREAD_UPDATE: Z,
-  THREAD_LIST_SYNC: Z,
-  LOAD_THREADS_SUCCESS: Z,
-  LOAD_ARCHIVED_THREADS_SUCCESS: Z,
+  THREAD_CREATE: F,
+  THREAD_UPDATE: F,
+  THREAD_LIST_SYNC: F,
+  LOAD_THREADS_SUCCESS: F,
+  LOAD_ARCHIVED_THREADS_SUCCESS: F,
   CHANNEL_UPDATES: B,
   LOAD_MESSAGES_SUCCESS: H,
   SEARCH_FINISH: W,
   MOD_VIEW_SEARCH_FINISH: W,
-  THREAD_MEMBER_UPDATE: F,
-  THREAD_MEMBERS_UPDATE: V,
+  THREAD_MEMBER_UPDATE: V,
+  THREAD_MEMBERS_UPDATE: Z,
   CHANNEL_DELETE: Y,
   GUILD_ROLE_CREATE: K,
   GUILD_ROLE_UPDATE: K,

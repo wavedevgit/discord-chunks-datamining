@@ -62,13 +62,13 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -87,8 +87,8 @@ function L(e, t) {
 }
 let x = 1.25,
   M = 36,
-  k = 144,
-  j = 150,
+  j = 144,
+  k = 150,
   U = 150,
   G = 300;
 
@@ -111,7 +111,7 @@ function B(e) {
       let {
         default: e
       } = await n.e("31649").then(n.bind(n, 475613));
-      return t => (0, r.jsx)(e, w(R({}, t), {
+      return t => (0, r.jsx)(e, D(R({}, t), {
         sourceAnalyticsLocations: o,
         location: "UserProfileCustomStatusBubble"
       }))
@@ -142,7 +142,7 @@ function B(e) {
   })
 }
 
-function Z(e) {
+function F(e) {
   var t, n;
   let {
     emoji: o,
@@ -160,11 +160,11 @@ function Z(e) {
     [A.biteSize]: _ === T.y0.BITE_SIZE,
     [A.fullSize]: _ === T.y0.FULL_SIZE,
     [A.panel]: _ === T.y0.PANEL
-  }, I = null != o ? x : 0, C = M + I, R = k + I, P = i.useRef(null), w = i.useRef(null), D = i.useRef(null), L = i.useRef(C), B = i.useRef(R), Z = null != o && null == p, [F, V] = i.useState(!1), [H, W] = i.useState(!0), [Y, K] = i.useState(!Z && b), z = !Z && b && F;
+  }, I = null != o ? x : 0, C = M + I, R = j + I, P = i.useRef(null), D = i.useRef(null), w = i.useRef(null), L = i.useRef(C), B = i.useRef(R), F = null != o && null == p, [V, Z] = i.useState(!1), [H, W] = i.useState(!0), [Y, K] = i.useState(!F && b), z = !F && b && V;
   i.useLayoutEffect(() => {
-    if (V(!0), null == w.current || null == D.current || !z) return;
-    let e = w.current.getBoundingClientRect().height,
-      t = D.current.getBoundingClientRect().height;
+    if (Z(!0), null == D.current || null == w.current || !z) return;
+    let e = D.current.getBoundingClientRect().height,
+      t = w.current.getBoundingClientRect().height;
     K(t > e), L.current = e, B.current = t
   }, [z, p, o]);
   let q = (0, l.e7)([d.Z], () => d.Z.useReducedMotion),
@@ -174,7 +174,7 @@ function Z(e) {
     maxHeight: "".concat(L.current, "px"),
     config: {
       clamp: !0,
-      duration: j
+      duration: k
     }
   })), $ = e => {
     Y && (e ? J({
@@ -182,7 +182,7 @@ function Z(e) {
       delay: q ? 0 : G,
       config: {
         clamp: !0,
-        duration: q ? 0 : j
+        duration: q ? 0 : k
       }
     }) : J({
       maxHeight: "".concat(Math.min(L.current, C), "px"),
@@ -210,11 +210,11 @@ function Z(e) {
       children: (0, r.jsxs)("span", {
         className: A.inner,
         children: [(0, r.jsxs)("div", {
-          ref: w,
+          ref: D,
           className: a()(A.content, S),
           children: [ee, er]
         }), (0, r.jsxs)("div", {
-          ref: D,
+          ref: w,
           className: a()(A.content, A.unclamped, S),
           children: [ee, er]
         })]
@@ -291,14 +291,14 @@ function Z(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   var {
     emoji: t,
     text: n,
     onCloseProfile: o
-  } = e, a = D(e, ["emoji", "text", "onCloseProfile"]);
+  } = e, a = w(e, ["emoji", "text", "onCloseProfile"]);
   let [s, l] = i.useState(!1);
-  return (0, r.jsx)(Z, w(R({}, a), {
+  return (0, r.jsx)(F, D(R({}, a), {
     emoji: t,
     text: n,
     className: A.editable,
@@ -311,7 +311,7 @@ function F(e) {
   }))
 }
 
-function V(e) {
+function Z(e) {
   var {
     emoji: t,
     text: n,
@@ -319,7 +319,7 @@ function V(e) {
     guildId: a,
     channelId: s,
     profileType: l
-  } = e, c = D(e, ["emoji", "text", "user", "guildId", "channelId", "profileType"]);
+  } = e, c = w(e, ["emoji", "text", "user", "guildId", "channelId", "profileType"]);
   let {
     trackUserProfileAction: u
   } = (0, E.KZ)(), {
@@ -349,7 +349,7 @@ function V(e) {
     children: () => (0, r.jsx)(S.Z, {
       sourceType: T.n_.STATUS,
       user: o,
-      children: (0, r.jsx)(Z, w(R({}, c), {
+      children: (0, r.jsx)(F, D(R({}, c), {
         emoji: t,
         text: n,
         profileType: l,
@@ -376,7 +376,7 @@ function H(e) {
       previewEmoji: c,
       placeholderText: u
     } = e,
-    d = D(e, ["location", "user", "onCloseProfile", "previewText", "previewEmoji", "placeholderText"]);
+    d = w(e, ["location", "user", "onCloseProfile", "previewText", "previewEmoji", "placeholderText"]);
   let f = (0, l.e7)([g.default], () => g.default.getId() === o.id),
     m = (0, h.Z)(o.id),
     {
@@ -393,7 +393,7 @@ function H(e) {
       t = null != s && "" !== s ? s : null;
     return (0, r.jsx)(_.Gt, {
       value: E,
-      children: (0, r.jsx)(Z, R({
+      children: (0, r.jsx)(F, R({
         emoji: e,
         text: t,
         placeholderText: u
@@ -410,21 +410,21 @@ function H(e) {
     }, d))
   }) : y ? (0, r.jsx)(_.Gt, {
     value: E,
-    children: (0, r.jsx)(V, R({
+    children: (0, r.jsx)(Z, R({
       user: o,
       emoji: O,
       text: I
     }, d))
   }) : f ? (0, r.jsx)(_.Gt, {
     value: E,
-    children: (0, r.jsx)(F, R({
+    children: (0, r.jsx)(V, R({
       emoji: O,
       text: I,
       onCloseProfile: a
     }, d))
   }) : (0, r.jsx)(_.Gt, {
     value: E,
-    children: (0, r.jsx)(Z, R({
+    children: (0, r.jsx)(F, R({
       emoji: O,
       text: I
     }, d))

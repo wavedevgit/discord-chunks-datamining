@@ -74,8 +74,8 @@ let h = 24,
       "aria-label": C,
       "aria-hidden": R,
       "aria-checked": P,
-      "aria-expanded": w,
-      "aria-haspopup": D
+      "aria-expanded": D,
+      "aria-haspopup": w
     } = e, L = (0, f.Q3)("BaseHeaderBar"), x = (0, r.jsx)(E, {
       x: 0,
       y: 0,
@@ -138,8 +138,8 @@ let h = 24,
           "aria-label": M,
           "aria-hidden": R,
           "aria-checked": P,
-          "aria-haspopup": D,
-          "aria-expanded": w,
+          "aria-haspopup": w,
+          "aria-expanded": D,
           tabIndex: s || null == b ? -1 : 0,
           children: [l ? (0, r.jsx)(d.ZP, {
             mask: "top" === u ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,

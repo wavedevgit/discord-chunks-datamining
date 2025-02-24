@@ -5,13 +5,13 @@ n.d(t, {
   Dx: () => O,
   EJ: () => L,
   Ee: () => I,
-  Hh: () => D,
+  Hh: () => w,
   II: () => R,
   MC: () => C,
   Vj: () => A,
-  ZP: () => k,
+  ZP: () => j,
   gO: () => P,
-  i_: () => w,
+  i_: () => D,
   jQ: () => x,
   qE: () => N,
   v6: () => M,
@@ -232,7 +232,7 @@ let R = e => {
       children: n
     })
   },
-  w = e => {
+  D = e => {
     let {
       className: t,
       children: n
@@ -243,7 +243,7 @@ let R = e => {
       children: n
     })
   },
-  D = e => {
+  w = e => {
     let {
       className: t
     } = e;
@@ -332,7 +332,7 @@ let R = e => {
         children: h.NW.format(h.t.JoS1i4, {
           platform: (0, f.DW)()
         })
-      }), (0, r.jsx)(w, {
+      }), (0, r.jsx)(D, {
         className: m.downloadButtonSubtext,
         children: h.NW.format(h.t.wO1VBg, {
           supportedBrowserURL: p.Z.getArticleURL(_.BhN.SUPPORTED_BROWSERS)
@@ -340,7 +340,7 @@ let R = e => {
       })]
     })
   },
-  k = e => {
+  j = e => {
     let {
       className: t,
       contentClassName: n,

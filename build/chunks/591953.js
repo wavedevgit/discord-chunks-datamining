@@ -1,9 +1,9 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
 var r = n(875604),
-  i = n(865488),
-  o = String.prototype;
+  o = n(865488),
+  a = String.prototype;
 e.exports = function(e) {
   var t = e.trimStart;
-  return "string" == typeof e || e === o || r(o, e) && t === o.trimStart ? i : t
+  return "string" == typeof e || e === a || r(a, e) && t === a.trimStart ? o : t
 }

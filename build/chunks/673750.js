@@ -88,8 +88,8 @@ var A = function(e) {
 let C = e => 0 === e.type,
   R = e => 1 === e.type,
   P = e => C(e) ? e.message.nonce : R(e) ? e.message.messageId : e.message.data.id,
-  w = [+p.Z.Millis.MINUTE, 5 * p.Z.Millis.MINUTE];
-class D extends h.Z {
+  D = [+p.Z.Millis.MINUTE, 5 * p.Z.Millis.MINUTE];
+class w extends h.Z {
   isFull() {
     return this.queue.length >= this.maxSize
   }
@@ -122,7 +122,7 @@ class D extends h.Z {
     return this.queue.push(...n), this.logger.log("Cancel pending send requests", t.length), t
   }
   startQueueMetricTimers(e) {
-    let t = w.map(e => setTimeout(() => {
+    let t = D.map(e => setTimeout(() => {
       (0, s.yw)(E.rMx.SEND_MESSAGE_QUEUED, {
         queued_duration_ms: e
       })
@@ -259,4 +259,4 @@ class D extends h.Z {
     super(new l.Z("MessageQueue")), b(this, "maxSize", void 0), b(this, "requests", void 0), b(this, "analyticsTimeouts", void 0), this.maxSize = e, this.requests = new Map, this.analyticsTimeouts = new Map
   }
 }
-let L = new D
+let L = new w

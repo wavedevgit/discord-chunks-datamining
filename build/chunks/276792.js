@@ -14,8 +14,8 @@ var i = n(704215),
   d = n(823188),
   p = n(114625),
   h = n(474936),
-  g = n(981631),
-  f = n(388032),
+  f = n(981631),
+  g = n(388032),
   m = n(14249),
   b = n(74316);
 
@@ -64,12 +64,12 @@ function O(e) {
     {
       onClose: j
     } = I,
-    A = null !== (N = null === (t = y.button) || void 0 === t ? void 0 : t.copy) && void 0 !== N ? N : f.NW.string(f.t.YScQSE),
+    A = null !== (N = null === (t = y.button) || void 0 === t ? void 0 : t.copy) && void 0 !== N ? N : g.NW.string(g.t.YScQSE),
     Z = (null === (n = y.button) || void 0 === n ? void 0 : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
   switch (null === (O = y.button) || void 0 === O ? void 0 : O.buttonAction) {
     case l.Wc.OPEN_MARKETING_PAGE:
       v = () => {
-        (0, s.uL)(g.Z5c.APPLICATION_STORE), j()
+        (0, s.uL)(f.Z5c.APPLICATION_STORE), j()
       };
       break;
     case l.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
@@ -77,8 +77,8 @@ function O(e) {
         subscriptionTier: h.Si.TIER_2,
         analyticsLocations: C,
         analyticsObject: E(_({}, S), {
-          object: g.qAy.BUTTON_CTA,
-          objectType: g.Qqv.TIER_2
+          object: f.qAy.BUTTON_CTA,
+          objectType: f.Qqv.TIER_2
         }),
         confirmationFooter: (0, r.jsx)(p.Z, {}),
         onClose: e => {
@@ -91,8 +91,8 @@ function O(e) {
         subscriptionTier: h.Si.TIER_1,
         analyticsLocations: C,
         analyticsObject: E(_({}, S), {
-          object: g.qAy.BUTTON_CTA,
-          objectType: g.Qqv.TIER_1
+          object: f.qAy.BUTTON_CTA,
+          objectType: f.Qqv.TIER_1
         }),
         onClose: e => {
           e && j()
@@ -105,8 +105,8 @@ function O(e) {
         subscriptionTier: h.Si.TIER_2,
         analyticsLocations: C,
         analyticsObject: E(_({}, S), {
-          object: g.qAy.BUTTON_CTA,
-          objectType: g.Qqv.TIER_2
+          object: f.qAy.BUTTON_CTA,
+          objectType: f.Qqv.TIER_2
         }),
         onClose: e => {
           e && j()
@@ -117,7 +117,7 @@ function O(e) {
       children: ["\xa0", (0, r.jsx)(o.eee, {
         className: m.termsApplyAnchor,
         href: u.Z.getArticleURL(y.helpArticleId),
-        children: f.NW.string(f.t["sBp+u7"])
+        children: g.NW.string(g.t["sBp+u7"])
       })]
     }) : void 0,
     L = {
@@ -161,7 +161,7 @@ function O(e) {
         wrapperClassName: m.tier2Gradient,
         size: o.zxk.Sizes.SMALL,
         onClick: () => {
-          c.default.track(g.rMx.CHANGE_LOG_CTA_CLICKED, {
+          c.default.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
             change_log_id: P,
             cta_type: Z,
             seconds_open: Math.round((Date.now() - e) / 1e3),

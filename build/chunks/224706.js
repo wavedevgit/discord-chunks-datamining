@@ -32,7 +32,7 @@ var r = n(664751),
 let R = 3,
   P = 20;
 
-function w(e) {
+function D(e) {
   let {
     applicationId: t,
     secret: n,
@@ -71,7 +71,7 @@ function w(e) {
   }))
 }
 
-function D(e, t) {
+function w(e, t) {
   return null == e || "" === e ? null : {
     distributor: e,
     sku: t
@@ -336,7 +336,7 @@ let M = {
         name: t,
         os: (0, y.getPlatformName)(),
         icon: n,
-        distributor_application: D(i, o),
+        distributor_application: w(i, o),
         executable: c,
         publisher: r,
         report_version: R
@@ -408,7 +408,7 @@ let M = {
     });
     try {
       let e = await S.Z.getJoinSecret(t, n, r, i, o);
-      return w({
+      return D({
         applicationId: r,
         secret: e,
         channelId: i,
@@ -428,5 +428,5 @@ let M = {
       }), !1
     }
   },
-  joinWithSecret: w
+  joinWithSecret: D
 }

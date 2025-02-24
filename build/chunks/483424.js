@@ -40,8 +40,8 @@ function b(e) {
     userId: t.id,
     guildId: y,
     surface: "user-profile-featured-activity"
-  }), P = null != A && A === R, w = t.id === n.id, D = (0, o.e7)([c.Z, l.Z], () => {
-    let e = w ? c.Z.getStatus() : l.Z.getStatus(t.id, y);
+  }), P = null != A && A === R, D = t.id === n.id, w = (0, o.e7)([c.Z, l.Z], () => {
+    let e = D ? c.Z.getStatus() : l.Z.getStatus(t.id, y);
     return e === v.Sk.OFFLINE || e === v.Sk.INVISIBLE
   }), {
     recentActivityEnabled: L
@@ -55,8 +55,8 @@ function b(e) {
     voiceActivityCardEnabled: M
   } = (0, d.o)({
     location: "UserProfileFeaturedActivity"
-  }), k = x || M, j = (0, p.Z)(t.id, "UserProfileFeaturedActivity"), U = i.useMemo(() => w ? T.find(s.Ae) : j, [w, T, j]);
-  return D || null == N ? !k || D || null == C || P ? D || null == A ? L && null != U ? (0, r.jsx)(m.Z, {
+  }), j = x || M, k = (0, p.Z)(t.id, "UserProfileFeaturedActivity"), U = i.useMemo(() => D ? T.find(s.Ae) : k, [D, T, k]);
+  return w || null == N ? !j || w || null == C || P ? w || null == A ? L && null != U ? (0, r.jsx)(m.Z, {
     location: "UserProfileFeaturedActivity",
     user: t,
     currentUser: n,

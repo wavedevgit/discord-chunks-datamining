@@ -1,6 +1,6 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => r
+r.d(t, {
+  Z: () => n
 });
-let r = "object" == typeof global && global && global.Object === Object && global
+let n = "object" == typeof global && global && global.Object === Object && global

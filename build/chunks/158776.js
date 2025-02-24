@@ -73,20 +73,20 @@ function P(e) {
   if (delete E[e], delete v[e], delete b[e], delete y[e], null == g[e]) return;
   let t = s().sortBy(g[e], e => -e.timestamp),
     [n] = t;
-  n.status !== _.Skl.OFFLINE ? (E[e] = n.status, v[e] = n.activities, b[e] = w(Object.values(t).flatMap(e => {
+  n.status !== _.Skl.OFFLINE ? (E[e] = n.status, v[e] = n.activities, b[e] = D(Object.values(t).flatMap(e => {
     var t;
     return null !== (t = e.hiddenActivities) && void 0 !== t ? t : []
   })), null != n.clientStatus && (y[e] = n.clientStatus)) : s().every(g[e], e => e.status === _.Skl.OFFLINE) && delete g[e]
 }
 
-function w(e) {
+function D(e) {
   return 0 === e.length ? e : [...new Map([...e].reverse().map(e => {
     var t;
     return ["".concat(e.application_id, ":").concat(null === (t = e.party) || void 0 === t ? void 0 : t.id), e]
   })).values()]
 }
 
-function D(e) {
+function w(e) {
   let t = g[e];
   if (null == t) return;
   let n = s().maxBy(Object.values(t), e => e.timestamp);
@@ -171,11 +171,11 @@ function M(e, t) {
   delete n[e], 0 === Object.keys(n).length && delete g[t], P(t)
 }
 
-function k(e) {
+function j(e) {
   for (let t of d.default.keys(g)) M(e, t)
 }
 
-function j() {
+function k() {
   return !0
 }
 
@@ -231,7 +231,7 @@ function U(e) {
       hiddenActivities: s,
       timestamp: o
     }), i.add(t.id))
-  }), i.delete(r), i.forEach(D)
+  }), i.delete(r), i.forEach(w)
 }
 
 function G(e) {
@@ -245,7 +245,7 @@ function B(e) {
   let {
     presences: t
   } = e;
-  k(_.ME), t.forEach(e => {
+  j(_.ME), t.forEach(e => {
     let {
       user: t,
       status: n,
@@ -264,7 +264,7 @@ function B(e) {
   })
 }
 
-function Z(e) {
+function F(e) {
   let {
     guild: t
   } = e;
@@ -287,14 +287,14 @@ function Z(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     guild: t
   } = e;
-  k(t.id)
+  j(t.id)
 }
 
-function V(e) {
+function Z(e) {
   let {
     guildId: t,
     user: n
@@ -454,12 +454,12 @@ class q extends(r = l.ZP.Store) {
 }
 h(q, "displayName", "PresenceStore");
 let Q = new q(c.Z, {
-  CONNECTION_OPEN: j,
+  CONNECTION_OPEN: k,
   CONNECTION_OPEN_SUPPLEMENTAL: U,
   OVERLAY_INITIALIZE: G,
-  GUILD_CREATE: Z,
-  GUILD_DELETE: F,
-  GUILD_MEMBER_REMOVE: V,
+  GUILD_CREATE: F,
+  GUILD_DELETE: V,
+  GUILD_MEMBER_REMOVE: Z,
   PRESENCE_UPDATES: H,
   PRESENCES_REPLACE: B,
   ACTIVITY_METADATA_UPDATE: z,

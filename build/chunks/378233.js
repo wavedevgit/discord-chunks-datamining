@@ -5,17 +5,17 @@ n.d(t, {
   Hc: () => L,
   J8: () => x,
   Q6: () => A,
-  V9: () => j,
-  WD: () => D,
+  V9: () => k,
+  WD: () => w,
   X_: () => P,
   Zt: () => S,
   Zv: () => T,
   _V: () => N,
-  cv: () => k,
+  cv: () => j,
   gM: () => B,
   jl: () => M,
   sM: () => C,
-  z: () => w
+  z: () => D
 }), n(474991), n(398202), n(301563), n(411104), n(566702);
 var r = n(606301),
   i = n(134432),
@@ -96,13 +96,13 @@ let {
     format_type: t
   } = e;
   return t === d.u3.APNG || t === d.u3.LOTTIE || t === d.u3.GIF
-}), w = e => ({
+}), D = e => ({
   type: d.Ih.PACK,
   id: e.id,
   name: e.name,
   stickers: e.stickers,
   previewSticker: S(e)
-}), D = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, L = (e, t, n, i) => {
+}), w = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, L = (e, t, n, i) => {
   if (s.Z.getUploadCount(n, i) > 0) return !0;
   let o = u.Z.getStickerPreview(n, i);
   if (null != o && o.length > 0) return !0;
@@ -116,7 +116,7 @@ let {
     default:
       return !1
   }
-}, x = e => e.type === d.n0.GUILD, M = e => e.type === d.n0.STANDARD, k = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], j = e => {
+}, x = e => e.type === d.n0.GUILD, M = e => e.type === d.n0.STANDARD, j = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], k = e => {
   if (null === e) return !1;
   let t = e.guild_id;
   return void 0 !== a.Z.getGuild(t)

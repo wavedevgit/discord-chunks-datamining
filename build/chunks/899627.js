@@ -1,51 +1,51 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => s
+r.d(t, {
+  Z: () => l
 });
-var r = n(192379),
-  i = n(723184),
-  o = n(820611),
-  a = n(877837);
-let s = function(e) {
+var n = r(192379),
+  o = r(723184),
+  a = r(820611),
+  i = r(877837);
+let l = function(e) {
   var t = e.onChange,
-    n = e.rgb,
-    s = e.hsl,
-    l = e.hex,
-    c = e.hsv,
-    u = function(e, n) {
-      if (e.hex) o.FX(e.hex) && t({
+    r = e.rgb,
+    l = e.hsl,
+    s = e.hex,
+    u = e.hsv,
+    c = function(e, r) {
+      if (e.hex) a.FX(e.hex) && t({
         hex: e.hex,
         source: "hex"
-      }, n);
+      }, r);
       else if (e.rgb) {
-        var r = e.rgb.split(",");
-        o.p7(e.rgb, "rgb") && t({
-          r: r[0],
-          g: r[1],
-          b: r[2],
+        var n = e.rgb.split(",");
+        a.p7(e.rgb, "rgb") && t({
+          r: n[0],
+          g: n[1],
+          b: n[2],
           a: 1,
           source: "rgb"
-        }, n)
+        }, r)
       } else if (e.hsv) {
-        var i = e.hsv.split(",");
-        o.p7(e.hsv, "hsv") && (i[2] = i[2].replace("%", ""), i[1] = i[1].replace("%", ""), i[0] = i[0].replace("\xb0", ""), 1 == i[1] ? i[1] = .01 : 1 == i[2] && (i[2] = .01), t({
+        var o = e.hsv.split(",");
+        a.p7(e.hsv, "hsv") && (o[2] = o[2].replace("%", ""), o[1] = o[1].replace("%", ""), o[0] = o[0].replace("\xb0", ""), 1 == o[1] ? o[1] = .01 : 1 == o[2] && (o[2] = .01), t({
+          h: Number(o[0]),
+          s: Number(o[1]),
+          v: Number(o[2]),
+          source: "hsv"
+        }, r))
+      } else if (e.hsl) {
+        var i = e.hsl.split(",");
+        a.p7(e.hsl, "hsl") && (i[2] = i[2].replace("%", ""), i[1] = i[1].replace("%", ""), i[0] = i[0].replace("\xb0", ""), 1 == h[1] ? h[1] = .01 : 1 == h[2] && (h[2] = .01), t({
           h: Number(i[0]),
           s: Number(i[1]),
           v: Number(i[2]),
-          source: "hsv"
-        }, n))
-      } else if (e.hsl) {
-        var a = e.hsl.split(",");
-        o.p7(e.hsl, "hsl") && (a[2] = a[2].replace("%", ""), a[1] = a[1].replace("%", ""), a[0] = a[0].replace("\xb0", ""), 1 == _[1] ? _[1] = .01 : 1 == _[2] && (_[2] = .01), t({
-          h: Number(a[0]),
-          s: Number(a[1]),
-          v: Number(a[2]),
           source: "hsl"
-        }, n))
+        }, r))
       }
     },
-    d = (0, i.default)({
+    p = (0, o.default)({
       default: {
         wrap: {
           display: "flex",
@@ -122,55 +122,55 @@ let s = function(e) {
         }
       }
     }),
-    f = n.r + ", " + n.g + ", " + n.b,
-    p = Math.round(s.h) + "\xb0, " + Math.round(100 * s.s) + "%, " + Math.round(100 * s.l) + "%",
-    _ = Math.round(c.h) + "\xb0, " + Math.round(100 * c.s) + "%, " + Math.round(100 * c.v) + "%";
-  return r.createElement("div", {
-    style: d.wrap,
+    f = r.r + ", " + r.g + ", " + r.b,
+    d = Math.round(l.h) + "\xb0, " + Math.round(100 * l.s) + "%, " + Math.round(100 * l.l) + "%",
+    h = Math.round(u.h) + "\xb0, " + Math.round(100 * u.s) + "%, " + Math.round(100 * u.v) + "%";
+  return n.createElement("div", {
+    style: p.wrap,
     className: "flexbox-fix"
-  }, r.createElement("div", {
-    style: d.fields
-  }, r.createElement("div", {
-    style: d.double
-  }, r.createElement(a.Vm, {
+  }, n.createElement("div", {
+    style: p.fields
+  }, n.createElement("div", {
+    style: p.double
+  }, n.createElement(i.Vm, {
     style: {
-      input: d.input,
-      label: d.label
+      input: p.input,
+      label: p.label
     },
     label: "hex",
-    value: l,
-    onChange: u
-  })), r.createElement("div", {
-    style: d.column
-  }, r.createElement("div", {
-    style: d.single
-  }, r.createElement(a.Vm, {
+    value: s,
+    onChange: c
+  })), n.createElement("div", {
+    style: p.column
+  }, n.createElement("div", {
+    style: p.single
+  }, n.createElement(i.Vm, {
     style: {
-      input: d.input2,
-      label: d.label2
+      input: p.input2,
+      label: p.label2
     },
     label: "rgb",
     value: f,
-    onChange: u
-  })), r.createElement("div", {
-    style: d.single
-  }, r.createElement(a.Vm, {
+    onChange: c
+  })), n.createElement("div", {
+    style: p.single
+  }, n.createElement(i.Vm, {
     style: {
-      input: d.input2,
-      label: d.label2
+      input: p.input2,
+      label: p.label2
     },
     label: "hsv",
-    value: _,
-    onChange: u
-  })), r.createElement("div", {
-    style: d.single
-  }, r.createElement(a.Vm, {
+    value: h,
+    onChange: c
+  })), n.createElement("div", {
+    style: p.single
+  }, n.createElement(i.Vm, {
     style: {
-      input: d.input2,
-      label: d.label2
+      input: p.input2,
+      label: p.label2
     },
     label: "hsl",
-    value: p,
-    onChange: u
+    value: d,
+    onChange: c
   })))))
 }

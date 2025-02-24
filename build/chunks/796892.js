@@ -1,26 +1,26 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => u
+r.d(t, {
+  Z: () => c
 });
-var r = n(192379),
-  i = n(476400),
-  o = n.n(i),
-  a = n(723184),
-  s = n(877837),
-  l = Object.assign || function(e) {
+var n = r(192379),
+  o = r(476400),
+  a = r.n(o),
+  i = r(723184),
+  l = r(877837),
+  s = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var n = arguments[t];
-      for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+      var r = arguments[t];
+      for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
     }
     return e
   },
-  c = function(e) {
+  u = function(e) {
     var t = e.colors,
-      n = e.onClick,
-      i = void 0 === n ? function() {} : n,
-      o = e.onSwatchHover,
-      c = (0, a.default)({
+      r = e.onClick,
+      o = void 0 === r ? function() {} : r,
+      a = e.onSwatchHover,
+      u = (0, i.default)({
         default: {
           colors: {
             margin: "0 -10px",
@@ -48,37 +48,37 @@ var r = n(192379),
       }, {
         "no-presets": !t || !t.length
       }),
-      u = function(e, t) {
-        i({
+      c = function(e, t) {
+        o({
           hex: e,
           source: "hex"
         }, t)
       };
-    return r.createElement("div", {
-      style: c.colors,
+    return n.createElement("div", {
+      style: u.colors,
       className: "flexbox-fix"
     }, t.map(function(e) {
       var t = "string" == typeof e ? {
           color: e
         } : e,
-        n = "" + t.color + (t.title || "");
-      return r.createElement("div", {
-        key: n,
-        style: c.swatchWrap
-      }, r.createElement(s.m4, l({}, t, {
-        style: c.swatch,
-        onClick: u,
-        onHover: o,
+        r = "" + t.color + (t.title || "");
+      return n.createElement("div", {
+        key: r,
+        style: u.swatchWrap
+      }, n.createElement(l.m4, s({}, t, {
+        style: u.swatch,
+        onClick: c,
+        onHover: a,
         focusStyle: {
           boxShadow: "inset 0 0 0 1px rgba(0,0,0,.15), 0 0 4px " + t.color
         }
       })))
     }))
   };
-c.propTypes = {
-  colors: o().arrayOf(o().oneOfType([o().string, o().shape({
-    color: o().string,
-    title: o().string
+u.propTypes = {
+  colors: a().arrayOf(a().oneOfType([a().string, a().shape({
+    color: a().string,
+    title: a().string
   })])).isRequired
 };
-let u = c
+let c = u

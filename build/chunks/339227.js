@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Q: () => k
+  Q: () => j
 }), n(47120), n(411104), n(301563), n(757143), n(653041), n(26686);
 var r = n(512722),
   i = n.n(r),
@@ -273,14 +273,14 @@ let N = {
   C = (0, p.Z)([S, N]),
   R = (0, p.Z)([I, N]),
   P = l._p(C),
-  w = l._p(R),
-  D = {
+  D = l._p(R),
+  w = {
     max: 1 / 0,
     maxAge: +_.Z.Millis.MINUTE,
     updateAgeOnGet: !0
   },
-  L = new(a())(D),
-  x = new(a())(D);
+  L = new(a())(w),
+  x = new(a())(w);
 
 function M(e, t, n) {
   let r = [],
@@ -289,7 +289,7 @@ function M(e, t, n) {
       disableAutoBlockNewlines: !0,
       guildId: t
     },
-    o = n ? w : P,
+    o = n ? D : P,
     a = n ? x : L,
     s = a.get(e);
   if (null != s) return s;
@@ -303,11 +303,11 @@ function M(e, t, n) {
       content: o(l, !0, i)
     };
   U(r, l, c, 0, []);
-  let u = j(r);
+  let u = k(r);
   return a.set(e, u), u
 }
 
-function k(e, t) {
+function j(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     i = m.rN(e);
@@ -337,7 +337,7 @@ function k(e, t) {
   return s
 }
 
-function j(e) {
+function k(e) {
   if (0 === (e = e.filter(e => e.text.length > 0)).length) return e;
   let t = [e[0]];
   for (let n = 1; n < e.length; n++) {
@@ -365,7 +365,7 @@ function U(e, t, n, r, o) {
     case "emoji":
     case "customEmoji": {
       let i = t.substring(r);
-      if (i.startsWith(l[0]) || (r = H(e, t, r, t.length), i = t.substring(r)), i.startsWith(l[0])) return F({
+      if (i.startsWith(l[0]) || (r = H(e, t, r, t.length), i = t.substring(r)), i.startsWith(l[0])) return V({
         result: e,
         sourceText: t,
         text: l[0],
@@ -376,7 +376,7 @@ function U(e, t, n, r, o) {
       throw Error("Slate: Unable to find emoji: ".concat(l[0], " in ").concat(t, " at ").concat(r))
     }
     case "soundboard":
-      return F({
+      return V({
         result: e,
         sourceText: t,
         text: l[0],
@@ -397,7 +397,7 @@ function U(e, t, n, r, o) {
         text: o,
         id: a
       } = n;
-      if (null != o) return i()(o === l[0], "Slate: text mentions must exactly match the regex match"), F({
+      if (null != o) return i()(o === l[0], "Slate: text mentions must exactly match the regex match"), V({
         result: e,
         sourceText: t,
         text: o,
@@ -407,7 +407,7 @@ function U(e, t, n, r, o) {
           text: o
         }
       });
-      return F({
+      return V({
         result: e,
         sourceText: t,
         text: l[0],
@@ -422,7 +422,7 @@ function U(e, t, n, r, o) {
       let {
         id: c, itemId: u
       } = n;
-      return F({
+      return V({
         result: e,
         sourceText: t,
         text: l[0],
@@ -438,7 +438,7 @@ function U(e, t, n, r, o) {
           location: "c70cbb_1"
         }, {
           autoTrackExposure: !1
-        }).enabled) return F({
+        }).enabled) return V({
         result: e,
         sourceText: t,
         text: l[0],
@@ -460,12 +460,12 @@ function U(e, t, n, r, o) {
     case "url":
     case "link":
     case "subtext": {
-      r = V(t, r);
+      r = Z(t, r);
       let {
         before: n,
         after: i
       } = G(t, s, r, l);
-      return r = Z(e, t, n, r, "syntaxBefore"), o.push(s), r = B(e, t, null != a ? a : "", r, o), o.pop(), r = Z(e, t, i, r, "syntaxAfter"), V(t, r)
+      return r = F(e, t, n, r, "syntaxBefore"), o.push(s), r = B(e, t, null != a ? a : "", r, o), o.pop(), r = F(e, t, i, r, "syntaxAfter"), Z(t, r)
     }
     default:
       throw Error("Slate: Unknown rule type: ".concat(s))
@@ -491,7 +491,7 @@ function G(e, t, n, r) {
 }
 
 function B(e, t, n, r, i) {
-  return "string" == typeof n ? r = F({
+  return "string" == typeof n ? r = V({
     result: e,
     sourceText: t,
     text: n,
@@ -500,10 +500,10 @@ function B(e, t, n, r, i) {
     data: null
   }) : (n instanceof Array || (n = [n]), n.forEach(n => {
     r = U(e, t, n, r, i)
-  })), V(t, r)
+  })), Z(t, r)
 }
 
-function Z(e, t, n, r, o) {
+function F(e, t, n, r, o) {
   if (n.length > 0) {
     let a = t.indexOf(n, r),
       s = t.substring(r, a + n.length);
@@ -517,7 +517,7 @@ function Z(e, t, n, r, o) {
   return r
 }
 
-function F(e) {
+function V(e) {
   let {
     result: t,
     sourceText: n,
@@ -525,7 +525,7 @@ function F(e) {
     originalStart: i,
     attributes: o,
     data: a
-  } = e, s = V(n, i);
+  } = e, s = Z(n, i);
   for (;
     "\n" === r.charAt(0) || " " === r.charAt(0);) r = r.substring(1);
   let l = n.indexOf(r, s);
@@ -545,7 +545,7 @@ function F(e) {
   }), u
 }
 
-function V(e, t) {
+function Z(e, t) {
   for (;
     "\n" === e.charAt(t) || " " === e.charAt(t);) t++;
   return t
@@ -553,7 +553,7 @@ function V(e, t) {
 
 function H(e, t, n, r) {
   for (; n < r;)
-    if (O.has(t[n])) n = Z(e, t, t[n], n, "syntaxBefore"), n = V(t, n);
+    if (O.has(t[n])) n = F(e, t, t[n], n, "syntaxBefore"), n = Z(t, n);
     else break;
   return n
 }

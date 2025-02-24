@@ -141,22 +141,22 @@ let R = function(e) {
     location: "SoundboardMention"
   }), R = i.useRef(null), {
     isPlaying: P,
-    playSound: w
-  } = (0, _.Z)(O, I), D = i.useCallback(() => {
-    if (w()) {
+    playSound: D
+  } = (0, _.Z)(O, I), w = i.useCallback(() => {
+    if (D()) {
       var e;
       null === (e = R.current) || void 0 === e || e.addAnimation()
     }
-  }, [w]);
+  }, [D]);
   return A ? null == O ? (0, r.jsx)(N, {
-    playSound: D
+    playSound: w
   }) : c && !d ? (0, r.jsx)(g.ZP, {
     containerClassName: y.jumboContainer,
     className: y.jumboButton,
     sound: O,
     channel: I,
     refreshEnabled: !0,
-    onSelectItem: D,
+    onSelectItem: w,
     isPlayingSoundOverride: P,
     isSoundmoji: !0,
     buttonOverlay: m.Pb.SOUNDMOJI,
@@ -178,7 +178,7 @@ let R = function(e) {
     children: e => (0, r.jsx)("span", T(S({}, e), {
       children: (0, r.jsx)(C, {
         sound: O,
-        playSound: D,
+        playSound: w,
         isPlaying: P
       })
     }))

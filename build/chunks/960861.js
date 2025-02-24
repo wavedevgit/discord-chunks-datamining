@@ -3,7 +3,7 @@
 n.d(t, {
   UB: () => C,
   Uc: () => v,
-  ZP: () => j,
+  ZP: () => k,
   kE: () => R
 });
 var r, i = n(192379),
@@ -70,7 +70,7 @@ function P() {
   let e = c.Z.getChannel(p.Z.getVoiceChannelId());
   return b = null != e && (0, h.Z)(d.Z) && (0, _.JL)(e, u.Z, f.Z, !1), A(), !1
 }
-class w extends(r = o.ZP.Store) {
+class D extends(r = o.ZP.Store) {
   initialize() {
     this.syncWith([d.Z, p.Z, c.Z, u.Z, f.Z], P), l.Z.subscribe({
       location: "NativeScreenSharePickerStore_initialize"
@@ -90,7 +90,7 @@ class w extends(r = o.ZP.Store) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     existing: t
   } = e;
@@ -131,14 +131,14 @@ function M(e) {
   }
 }
 
-function k() {
+function j() {
   I = {}
 }
-E(w, "displayName", "NativeScreenSharePickerStore");
-let j = new w(a.Z, {
-  NATIVE_SCREEN_SHARE_PICKER_UPDATE: D,
+E(D, "displayName", "NativeScreenSharePickerStore");
+let k = new D(a.Z, {
+  NATIVE_SCREEN_SHARE_PICKER_UPDATE: w,
   NATIVE_SCREEN_SHARE_PICKER_CANCEL: L,
   NATIVE_SCREEN_SHARE_PICKER_ERROR: x,
   NATIVE_SCREEN_SHARE_PICKER_PRESENT: M,
-  NATIVE_SCREEN_SHARE_PICKER_RELEASE: k
+  NATIVE_SCREEN_SHARE_PICKER_RELEASE: j
 })

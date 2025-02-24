@@ -3,12 +3,12 @@
 n.d(t, {
   Bg: () => U,
   E5: () => ee,
-  Fp: () => Z,
+  Fp: () => F,
   JT: () => $,
   L2: () => z,
-  MY: () => k,
-  Nz: () => V,
-  Q_: () => F,
+  MY: () => j,
+  Nz: () => Z,
+  Q_: () => V,
   TO: () => Y,
   Z0: () => G,
   bT: () => H,
@@ -16,7 +16,7 @@ n.d(t, {
   dQ: () => K,
   e$: () => X,
   iM: () => Q,
-  pO: () => j,
+  pO: () => k,
   xr: () => M,
   z2: () => J
 }), n(47120), n(474991), n(398202), n(301563), n(757143), n(627341), n(566702);
@@ -68,15 +68,15 @@ let b = ["discordapp.com/gifts", "discord.com/gifts"],
   C = A(4, 4),
   R = A(4, 6),
   P = A(5, 3),
-  w = "WUMP-?",
-  D = [C, R, P, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
-  L = new RegExp("^(".concat(w, ")?(").concat(D, ")$")),
+  D = "WUMP-?",
+  w = [C, R, P, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
+  L = new RegExp("^(".concat(D, ")?(").concat(w, ")$")),
   x = "-";
 var M = function(e) {
   return e[e.DEFAULT = 0] = "DEFAULT", e[e.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", e[e.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD = 2] = "CUSTOM_MESSAGE_EMOJI_SOUNDBOARD", e
 }({});
-let k = (e, t) => i.tq || i.Em ? 0 : null != e || t ? 2 : 1,
-  j = e => 0 !== k(e);
+let j = (e, t) => i.tq || i.Em ? 0 : null != e || t ? 2 : 1,
+  k = e => 0 !== j(e);
 
 function U(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
@@ -96,8 +96,8 @@ function G(e) {
 function B(e) {
   return e.replace(/[^A-Za-z0-9]/g, "")
 }
-let Z = e => (null == e ? void 0 : e.type) === h.uaV.CUSTOM_GIFT && (null == e ? void 0 : e.embeds.length) === 1 && (null == e ? void 0 : e.embeds[0].type) === h.hBH.GIFT,
-  F = e => {
+let F = e => (null == e ? void 0 : e.type) === h.uaV.CUSTOM_GIFT && (null == e ? void 0 : e.embeds.length) === 1 && (null == e ? void 0 : e.embeds[0].type) === h.hBH.GIFT,
+  V = e => {
     let t;
     if (null == e) return [];
     let n = new Set;
@@ -106,7 +106,7 @@ let Z = e => (null == e ? void 0 : e.type) === h.uaV.CUSTOM_GIFT && (null == e ?
     return Array.from(n)
   };
 
-function V() {
+function Z() {
   let e, t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
     n = window.GLOBAL_ENV.GIFT_CODE_HOST;
   return null != n ? e = "/".concat(t) : (n = location.host, e = "/gifts/".concat(t)), "".concat(location.protocol, "//").concat(n).concat(e)

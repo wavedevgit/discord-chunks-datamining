@@ -38,17 +38,17 @@ function y(e) {
     pendingGlobalName: C,
     pendingThemeColors: R,
     pendingProfileEffectId: P,
-    avatarClassName: w,
-    containerClassName: D,
+    avatarClassName: D,
+    containerClassName: w,
     isTryItOutFlow: L = !1,
     disabledInputs: x = !1,
     hideCustomStatus: M = !1,
-    hideBioSection: k = !1,
-    hideMessageInput: j = !0,
+    hideBioSection: j = !1,
+    hideMessageInput: k = !0,
     hideExampleButton: U = !1
   } = e, G = (0, l.ZP)(t.id, null == n ? void 0 : n.id), {
     avatarSrc: B,
-    avatarDecorationSrc: Z
+    avatarDecorationSrc: F
   } = (0, u.Z)({
     user: t,
     guildId: null == n ? void 0 : n.id,
@@ -56,11 +56,11 @@ function y(e) {
     avatarOverride: T,
     size: a.EFr.SIZE_80,
     showPending: !0
-  }), F = (0, p.ZT)({
+  }), V = (0, p.ZT)({
     pendingProfileEffectId: P,
     displayProfile: G
   }), {
-    theme: V,
+    theme: Z,
     primaryColor: H
   } = (0, c.Z)({
     user: t,
@@ -73,7 +73,7 @@ function y(e) {
     displayProfile: G,
     profileType: v.y0.BITE_SIZE,
     pendingThemeColors: R,
-    className: o()(b.container, D),
+    className: o()(b.container, w),
     forceShowPremium: i,
     children: [(0, r.jsxs)("header", {
       className: b.header,
@@ -94,10 +94,10 @@ function y(e) {
         displayProfile: G,
         canUsePremiumCustomization: i,
         previewAvatar: B,
-        previewAvatarDecoration: Z,
-        previewTheme: V,
+        previewAvatarDecoration: F,
+        previewTheme: Z,
         previewPrimaryColor: H,
-        className: w,
+        className: D,
         disabledInputs: x,
         isTryItOutFlow: L,
         onUpsellClick: () => null == y ? void 0 : y({
@@ -118,13 +118,13 @@ function y(e) {
       pendingBio: S,
       pendingPronouns: I,
       isTryItOutFlow: L,
-      hideBioSection: k
+      hideBioSection: j
     }), (0, r.jsx)(g.Z, {
       user: t,
-      hideMessageInput: j,
+      hideMessageInput: k,
       hideExampleButton: U
-    }), null != F && (0, r.jsx)(s.Z, {
-      profileEffectId: F
+    }), null != V && (0, r.jsx)(s.Z, {
+      profileEffectId: V
     })]
   })
 }

@@ -123,11 +123,11 @@ function P(e) {
   return T(e.guildId)
 }
 
-function w() {
+function D() {
   g = {}
 }
 
-function D(e) {
+function w(e) {
   let {
     guild: t
   } = e;
@@ -162,12 +162,12 @@ class L extends(r = a.ZP.Store) {
 m(L, "displayName", "StageChannelRoleStore");
 let x = new L(s.Z, {
   CHANNEL_UPDATES: N,
-  CONNECTION_OPEN: w,
+  CONNECTION_OPEN: D,
   GUILD_MEMBER_REMOVE: C,
   GUILD_MEMBER_UPDATE: C,
   GUILD_ROLE_UPDATE: A,
   PASSIVE_UPDATE_V2: P,
   VOICE_STATE_UPDATES: R,
-  GUILD_CREATE: D,
-  GUILD_DELETE: D
+  GUILD_CREATE: w,
+  GUILD_DELETE: w
 })

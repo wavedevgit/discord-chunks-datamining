@@ -27,19 +27,19 @@ var r = n(687249),
   C = "[object Array]",
   R = "[object Boolean]",
   P = "[object Date]",
-  w = "[object Error]",
-  D = "[object Function]",
+  D = "[object Error]",
+  w = "[object Function]",
   L = "[object GeneratorFunction]",
   x = "[object Map]",
   M = "[object Number]",
-  k = "[object Object]",
-  j = "[object RegExp]",
+  j = "[object Object]",
+  k = "[object RegExp]",
   U = "[object Set]",
   G = "[object String]",
   B = "[object Symbol]",
-  Z = "[object WeakMap]",
-  F = "[object ArrayBuffer]",
-  V = "[object DataView]",
+  F = "[object WeakMap]",
+  V = "[object ArrayBuffer]",
+  Z = "[object DataView]",
   H = "[object Float32Array]",
   W = "[object Float64Array]",
   Y = "[object Int8Array]",
@@ -52,37 +52,37 @@ var r = n(687249),
   $ = {};
 
 function ee(e, t, n, C, R, P) {
-  var w, x = t & I,
+  var D, x = t & I,
     M = t & T,
-    j = t & N;
-  if (n && (w = R ? n(e, C, R, P) : n(e)), void 0 !== w) return w;
+    k = t & N;
+  if (n && (D = R ? n(e, C, R, P) : n(e)), void 0 !== D) return D;
   if (!y(e)) return e;
   var U = E(e);
   if (U) {
-    if (w = h(e), !x) return c(e, w)
+    if (D = h(e), !x) return c(e, D)
   } else {
     var G = _(e),
-      B = G == D || G == L;
+      B = G == w || G == L;
     if (v(e)) return l(e, x);
-    if (G == k || G == A || B && !R) {
-      if (w = M || B ? {} : g(e), !x) return M ? d(e, s(w, e)) : u(e, a(w, e))
+    if (G == j || G == A || B && !R) {
+      if (D = M || B ? {} : g(e), !x) return M ? d(e, s(D, e)) : u(e, a(D, e))
     } else {
       if (!$[G]) return R ? e : {};
-      w = m(e, G, x)
+      D = m(e, G, x)
     }
   }
   P || (P = new r);
-  var Z = P.get(e);
-  if (Z) return Z;
-  P.set(e, w), O(e) ? e.forEach(function(r) {
-    w.add(ee(r, t, n, r, e, P))
+  var F = P.get(e);
+  if (F) return F;
+  P.set(e, D), O(e) ? e.forEach(function(r) {
+    D.add(ee(r, t, n, r, e, P))
   }) : b(e) && e.forEach(function(r, i) {
-    w.set(i, ee(r, t, n, i, e, P))
+    D.set(i, ee(r, t, n, i, e, P))
   });
-  var F = j ? M ? p : f : M ? keysIn : S,
-    V = U ? void 0 : F(e);
-  return i(V || e, function(r, i) {
-    V && (r = e[i = r]), o(w, i, ee(r, t, n, i, e, P))
-  }), w
+  var V = k ? M ? p : f : M ? keysIn : S,
+    Z = U ? void 0 : V(e);
+  return i(Z || e, function(r, i) {
+    Z && (r = e[i = r]), o(D, i, ee(r, t, n, i, e, P))
+  }), D
 }
-$[A] = $[C] = $[F] = $[V] = $[R] = $[P] = $[H] = $[W] = $[Y] = $[K] = $[z] = $[x] = $[M] = $[k] = $[j] = $[U] = $[G] = $[B] = $[q] = $[Q] = $[X] = $[J] = !0, $[w] = $[D] = $[Z] = !1, e.exports = ee
+$[A] = $[C] = $[V] = $[Z] = $[R] = $[P] = $[H] = $[W] = $[Y] = $[K] = $[z] = $[x] = $[M] = $[j] = $[k] = $[U] = $[G] = $[B] = $[q] = $[Q] = $[X] = $[J] = !0, $[D] = $[w] = $[F] = !1, e.exports = ee

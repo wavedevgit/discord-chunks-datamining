@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -79,7 +79,7 @@ function P(e) {
     format: null !== (t = null == n ? void 0 : n.format) && void 0 !== t ? t : u.EO.IMAGE
   }
 }
-class w extends i.PureComponent {
+class D extends i.PureComponent {
   componentDidMount() {
     0 === this.props.trendingCategories.length && (0, _.Tg)()
   }
@@ -210,11 +210,11 @@ class w extends i.PureComponent {
   }
 }
 
-function D(e) {
+function w(e) {
   let t = (0, c.e7)([m.Z], () => m.Z.getTrendingCategories()),
     n = (0, E.gG)(),
     i = (0, y.PY)();
-  return (0, r.jsx)(w, C(N({}, e, i), {
+  return (0, r.jsx)(D, C(N({}, e, i), {
     trendingCategories: t,
     favorites: n
   }))

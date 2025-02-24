@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AG: () => D,
+  AG: () => w,
   Z$: () => M,
   jH: () => L,
-  zH: () => k
+  zH: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -21,12 +21,11 @@ var r = n(200651),
   h = n(408886),
   m = n(44315),
   g = n(665149),
-  E = n(534828),
-  v = n(981631),
-  b = n(388032),
-  y = n(324945);
+  E = n(981631),
+  v = n(388032),
+  b = n(324945);
 
-function O(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -35,20 +34,20 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,15 +58,15 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function N(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = A(e, t);
+  var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -75,21 +74,22 @@ function N(e, t) {
   return i
 }
 
-function A(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let C = 7,
+let A = i.lazy(() => Promise.all([n.e("26436"), n.e("28102")]).then(n.bind(n, 534828))),
+  C = 7,
   R = () => Promise.resolve();
 
 function P(e) {
   return null == e ? null : "string" == typeof e ? (0, c.FX)(e) ? (0, c._i)(e) : null : e
 }
 
-function w(e) {
+function D(e) {
   let {
     color: t,
     isDefault: n = !1,
@@ -99,47 +99,47 @@ function w(e) {
     style: u = {},
     onClick: d,
     "aria-label": p
-  } = e, h = (0, s.JA)("color-".concat(t)), g = null != t ? (0, c.Rf)(t) : u.backgroundColor, E = !1;
+  } = e, h = (0, s.JA)("color-".concat(t)), g = null != t ? (0, c.Rf)(t) : u.backgroundColor, v = !1;
 
-  function b() {
+  function y() {
     let e = 16,
       t = 16;
     if ((i || n) && (e = 32, t = 24), o) return (0, r.jsx)(_.dz2, {
       size: "custom",
       width: e,
       height: t,
-      color: (0, m.Lq)(E ? v.Ilk.WHITE_500 : v.Ilk.BLACK_500)
+      color: (0, m.Lq)(v ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
     })
   }
-  return i && !o ? E = !0 : (i || o) && (E = (0, c.Bd)(t) > .1), (0, r.jsx)(f.t, {
+  return i && !o ? v = !0 : (i || o) && (v = (0, c.Bd)(t) > .1), (0, r.jsx)(f.t, {
     offset: -2,
-    children: (0, r.jsxs)("button", T(S({
+    children: (0, r.jsxs)("button", I(O({
       type: "button",
-      className: a()(y.colorPickerSwatch, {
-        [y.disabled]: l,
-        [y.default]: n,
-        [y.custom]: i,
-        [y.noColor]: null == t
+      className: a()(b.colorPickerSwatch, {
+        [b.disabled]: l,
+        [b.default]: n,
+        [b.custom]: i,
+        [b.noColor]: null == t
       }),
       disabled: l,
       onClick: () => null == d ? void 0 : d(t),
-      style: T(S({}, u), {
+      style: I(O({}, u), {
         backgroundColor: g
       }),
       "aria-label": null != p ? p : g
     }, h), {
       children: [i ? (0, r.jsx)(_.vdY, {
         size: "custom",
-        className: y.colorPickerDropper,
-        colorClass: y.colorPickerDropperFg,
+        className: b.colorPickerDropper,
+        colorClass: b.colorPickerDropperFg,
         width: 14,
         height: 14,
-        color: (0, m.Lq)(E ? v.Ilk.WHITE_500 : v.Ilk.BLACK_500)
-      }) : null, b()]
+        color: (0, m.Lq)(v ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
+      }) : null, y()]
     }))
   })
 }
-class D extends i.PureComponent {
+class w extends i.PureComponent {
   render() {
     let {
       color: e,
@@ -147,7 +147,7 @@ class D extends i.PureComponent {
       value: n,
       disabled: i
     } = this.props;
-    return (0, r.jsx)(w, {
+    return (0, r.jsx)(D, {
       isDefault: !0,
       color: e,
       isSelected: e === n || 0 === n,
@@ -164,7 +164,7 @@ class L extends i.PureComponent {
       disabled: n,
       "aria-label": i
     } = this.props;
-    return (0, r.jsx)(w, {
+    return (0, r.jsx)(D, {
       isCustom: !0,
       color: e,
       isSelected: t === e,
@@ -183,34 +183,34 @@ function x(e) {
     suggestedColors: l,
     middle: f,
     footer: m,
-    showEyeDropper: v,
-    wrapperComponentType: O,
-    className: I
-  } = e, N = (0, h.Z)(), A = P(t), R = null != A ? A : 0, w = (0, c.Rf)(R), D = (0, c.O)(R), [L, x] = i.useState({
+    showEyeDropper: E,
+    wrapperComponentType: y,
+    className: S
+  } = e, T = (0, h.Z)(), N = P(t), R = null != N ? N : 0, D = (0, c.Rf)(R), w = (0, c.O)(R), [L, x] = i.useState({
     current: R,
     pending: {
-      hex: w,
-      hsl: D
+      hex: D,
+      hsl: w
     },
-    input: w
+    input: D
   });
   i.useEffect(() => {
-    if (null == A || A === L.current) return;
-    let e = (0, c.Rf)(A),
-      t = (0, c.O)(A);
+    if (null == N || N === L.current) return;
+    let e = (0, c.Rf)(N),
+      t = (0, c.O)(N);
     x({
-      current: A,
+      current: N,
       pending: {
         hex: e,
         hsl: t
       },
       input: e
     })
-  }, [A, L]), i.useEffect(() => s, [s]);
+  }, [N, L]), i.useEffect(() => s, [s]);
   let M = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
       if (!(0, c.FX)(t)) {
-        x(e => T(S({}, e), {
+        x(e => I(O({}, e), {
           input: t
         }));
         return
@@ -226,65 +226,68 @@ function x(e) {
         input: t
       }), o(n)
     },
-    k = async () => {
-      if (null != N) try {
+    j = async () => {
+      if (null != T) try {
         let {
           sRGBHex: e
-        } = await N.open();
+        } = await T.open();
         M(e)
       } catch (e) {}
-    }, j = i.useCallback(e => {
-      x(t => T(S({}, t), {
+    }, k = i.useCallback(e => {
+      x(t => I(O({}, t), {
         pending: e,
         input: e.hex
       })), n && o((0, c._i)(e.hex))
     }, [n, o]), U = e => {
       o((0, c._i)(e))
     }, G = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(E.Z, {
-        onChange: j,
-        onChangeComplete: e => {
-          let {
-            hex: t
-          } = e;
-          return U(t)
-        },
-        color: L.pending.hsl
+      children: [(0, r.jsx)(i.Suspense, {
+        fallback: null,
+        children: (0, r.jsx)(A, {
+          onChange: k,
+          onChangeComplete: e => {
+            let {
+              hex: t
+            } = e;
+            return U(t)
+          },
+          color: L.pending.hsl
+        })
       }), f, (0, r.jsxs)("div", {
-        className: y.customColorPickerInputContainer,
-        children: [v && null != N && (0, r.jsx)(g.JO, {
-          onClick: k,
-          tooltip: b.NW.string(b.t["0dU9Nz"]),
+        className: b.customColorPickerInputContainer,
+        children: [E && null != T && (0, r.jsx)(g.JO, {
+          onClick: j,
+          tooltip: v.NW.string(v.t["0dU9Nz"]),
           tooltipPosition: "top",
-          className: y.customColorPickerEyeDropper,
+          className: b.customColorPickerEyeDropper,
           icon: _.ilE
         }), (0, r.jsx)(p.o, {
-          className: y.customColorPickerInput,
+          className: b.customColorPickerInput,
           value: L.input,
           onChange: M,
           maxLength: C
         })]
       }), null != l && l.length > 0 && (0, r.jsx)("div", {
-        className: y.suggestedColors,
+        className: b.suggestedColors,
         children: l.map((e, t) => (0, r.jsx)(u.P, {
           "aria-label": "",
           style: {
             backgroundColor: e
           },
-          className: y.suggestedColor,
+          className: b.suggestedColor,
           onClick: () => M(e)
         }, "".concat(e, "-").concat(t)))
       }), m]
-    }), B = null != O ? O : d.V;
+    }), B = null != y ? y : d.V;
   return (0, r.jsx)(B, {
-    "aria-label": b.NW.string(b.t.WTqQ5e),
-    className: a()(y.customColorPicker, I),
+    "aria-label": v.NW.string(v.t.WTqQ5e),
+    className: a()(b.customColorPicker, S),
     children: G
   })
 }
 let M = i.memo(x);
 
-function k(e) {
+function j(e) {
   let {
     className: t,
     defaultColor: n,
@@ -297,8 +300,8 @@ function k(e) {
     renderCustomButton: p,
     colorContainerClassName: _
   } = e, h = e => (0, r.jsx)("div", {
-    className: y.colorPickerRow,
-    children: e.map(e => (0, r.jsx)(w, {
+    className: b.colorPickerRow,
+    children: e.map(e => (0, r.jsx)(D, {
       color: e,
       isSelected: e === c,
       onClick: d,
@@ -316,13 +319,13 @@ function k(e) {
       children: e => {
         var {
           ref: o
-        } = e, s = N(e, ["ref"]);
-        return (0, r.jsxs)("div", T(S({
-          className: a()(y.container, t),
+        } = e, s = T(e, ["ref"]);
+        return (0, r.jsxs)("div", I(O({
+          className: a()(b.container, t),
           ref: o
         }, s), {
           children: [(0, r.jsx)("div", {
-            className: a()(y.defaultContainer, _),
+            className: a()(b.defaultContainer, _),
             children: f({
               value: c,
               color: n,
@@ -330,7 +333,7 @@ function k(e) {
               disabled: u
             })
           }), (0, r.jsx)("div", {
-            className: a()(y.customContainer, _),
+            className: a()(b.customContainer, _),
             children: p({
               value: c,
               customColor: i,

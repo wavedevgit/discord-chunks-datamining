@@ -260,8 +260,8 @@ class f {
               C = t.nackCount,
               R = null !== (o = t.fecPacketsReceived) && void 0 !== o ? o : 0,
               P = null !== (a = t.fecPacketsDiscarded) && void 0 !== a ? a : 0,
-              w = null !== (s = t.jitterBuffer) && void 0 !== s ? s : 0,
-              D = {
+              D = null !== (s = t.jitterBuffer) && void 0 !== s ? s : 0,
+              w = {
                 audioJitterBuffer: t.audioJitterBuffer,
                 audioJitterTarget: t.audioJitterTarget,
                 audioJitterDelay: t.audioJitterDelay,
@@ -291,7 +291,7 @@ class f {
                 r = N - this.inboundStats[n].packetsLost,
                 o = 0,
                 a = this.inboundStats[n].mosBuckets;
-              e > 0 && r >= 0 && (o = this.calculateMos(I + w, i().clamp(r / (e + r), 0, 1)), a[Math.floor(o)]++), this.inboundStats[n] = u({
+              e > 0 && r >= 0 && (o = this.calculateMos(I + D, i().clamp(r / (e + r), 0, 1)), a[Math.floor(o)]++), this.inboundStats[n] = u({
                 packetsReceived: T,
                 bytesReceived: A,
                 packetsLost: N,
@@ -302,7 +302,7 @@ class f {
                 mosSum: this.inboundStats[n].mosSum + o,
                 mosCount: this.inboundStats[n].mosCount + +(o > 0),
                 mosBuckets: a,
-                bufferStats: D,
+                bufferStats: w,
                 frameOpStats: L
               }, x), this.periodicInboundStats[n] = {
                 previousTimestampMs: this.periodicInboundStats[n].previousTimestampMs,
@@ -326,7 +326,7 @@ class f {
               mosSum: 0,
               mosCount: 0,
               mosBuckets: [0, 0, 0, 0, 0],
-              bufferStats: D,
+              bufferStats: w,
               frameOpStats: L
             }, x), this.periodicInboundStats[n] = {
               previousTimestampMs: Date.now(),

@@ -7,7 +7,7 @@ n.d(t, {
   Nl: () => C,
   Ns: () => v,
   Rx: () => N,
-  nX: () => w,
+  nX: () => D,
   sc: () => R
 }), n(47120), n(86693), n(536091), n(411104), n(653041), n(26686), n(474991), n(398202), n(301563), n(852437), n(566702);
 var r = n(403644),
@@ -428,7 +428,7 @@ function P(e) {
   return !(t.split(" ").length < 3) || (E.error("Incorrect c-line: ".concat(t)), !1)
 }
 
-function w(e) {
+function D(e) {
   return [...new Set(e.split(/\r\n/).filter(e => e.startsWith("a=extmap:")))].map(e => {
     let t = e.split(" ");
     return {

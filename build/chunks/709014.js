@@ -54,7 +54,7 @@ function m(e, t) {
     enabled: R
   } = d.Z.useExperiment({
     location: "LottieIcon web entry point"
-  }), P = C || !R, w = i.useRef(v);
+  }), P = C || !R, D = i.useRef(v);
   return i.useImperativeHandle(t, () => ({
     play: e => {
       if (null != T.current) {
@@ -77,7 +77,7 @@ function m(e, t) {
     let n, {
         default: r
       } = e,
-      i = null !== (t = I.current) && void 0 !== t ? t : w.current;
+      i = null !== (t = I.current) && void 0 !== t ? t : D.current;
     if (null != i && null != b[i]) {
       let e = b[i];
       n = [e.start, e.start + e.duration]

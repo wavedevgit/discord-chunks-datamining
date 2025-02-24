@@ -150,14 +150,14 @@ function P(e) {
   }))]
 }
 
-function w(e) {
+function D(e) {
   let {
     items: t
   } = e;
   O = t
 }
 
-function D(e) {
+function w(e) {
   let {
     items: t
   } = e;
@@ -196,6 +196,6 @@ let x = new L(a.Z, {
   GIF_PICKER_QUERY_SUCCESS: C,
   GIF_PICKER_QUERY_FAILURE: R,
   GIF_PICKER_TRENDING_FETCH_SUCCESS: P,
-  GIF_PICKER_SUGGESTIONS_SUCCESS: w,
-  GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: D
+  GIF_PICKER_SUGGESTIONS_SUCCESS: D,
+  GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: w
 })

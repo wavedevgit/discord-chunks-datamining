@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(795318),
   p = n(512384),
   h = n(184301),
-  g = n(347475),
-  f = n(314897),
+  f = n(347475),
+  g = n(314897),
   m = n(131951),
   b = n(51144),
   _ = n(524484),
@@ -87,16 +87,16 @@ function C(e) {
   var t, i;
   let {
     channel: l,
-    user: f,
+    user: g,
     nick: C,
     mute: S,
     deaf: T,
     serverMute: P,
     serverDeaf: j
-  } = e, A = (0, a.e7)([m.Z], () => m.Z.isLocalMute(f.id)), Z = (0, u.Z)({
-    userId: f.id,
+  } = e, A = (0, a.e7)([m.Z], () => m.Z.isLocalMute(g.id)), Z = (0, u.Z)({
+    userId: g.id,
     checkSoundSharing: !0
-  }), x = null !== (t = l.getGuildId()) && void 0 !== t ? t : void 0, L = f.getAvatarURL(l.guild_id, 24), w = null != C ? C : b.ZP.getName(f), {
+  }), x = null !== (t = l.getGuildId()) && void 0 !== t ? t : void 0, L = g.getAvatarURL(l.guild_id, 24), w = null != C ? C : b.ZP.getName(g), {
     icon: R,
     colorize: D,
     getStatus: k
@@ -130,12 +130,12 @@ function C(e) {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("83944")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, v(N({}, t), {
-        user: f,
+        user: g,
         guildId: x,
         channel: l,
         showMediaItems: !0,
         onInteraction: (0, d.u)("GuildChannelUserContextMenu", "RTCConnection", {
-          targetUserId: f.id
+          targetUserId: g.id
         })
       }))
     }) : (0, c.jW)(e, async () => {
@@ -143,22 +143,22 @@ function C(e) {
         default: e
       } = await Promise.all([n.e("79695"), n.e("69220"), n.e("31923")]).then(n.bind(n, 881351));
       return t => (0, r.jsx)(e, v(N({}, t), {
-        user: f,
+        user: g,
         showMediaItems: !0,
         onInteraction: (0, d.u)("UserGenericContextMenu", "RTCConnection", {
-          targetUserId: f.id
+          targetUserId: g.id
         })
       }))
     })
   }
   return (0, r.jsx)(s.yRy, {
-    preload: () => (0, h.Z)(f.id, f.getAvatarURL(x, 80), {
+    preload: () => (0, h.Z)(g.id, g.getAvatarURL(x, 80), {
       guildId: x,
       channelId: l.id
     }),
     position: "top",
-    renderPopout: e => (0, r.jsx)(g.Z, N({
-      userId: f.id,
+    renderPopout: e => (0, r.jsx)(f.Z, N({
+      userId: g.id,
       guildId: x,
       channelId: l.id
     }, e)),
@@ -208,14 +208,14 @@ function S(e) {
       color: "currentColor"
     }),
     focusProps: y
-  }), h = (0, a.e7)([f.default], () => f.default.getId(), []), [g, m] = function(e, t) {
+  }), h = (0, a.e7)([g.default], () => g.default.getId(), []), [f, m] = function(e, t) {
     let n = [];
     for (let r of e)
       if (!(r.user.id === t || n.some(e => e.user.id === r.user.id))) {
         if (n.length >= 7) return [n, !0];
         n.push(r)
       } return [n, !1]
-  }(t, h), b = m && c ? t : g;
+  }(t, h), b = m && c ? t : f;
   return b.length <= 0 ? null : (0, r.jsx)(s.zJl, {
     className: o()(O.scroller, l),
     fade: !0,

@@ -1,29 +1,27 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-var r = n(192379),
-  i = n(476400),
-  o = n.n(i),
-  a = n(723184),
-  s = n(829307),
-  l = n(877837),
-  c = n(122900),
-  u = n(717487),
-  d = n(99737),
+var n = r(192379),
+  o = r(476400),
+  a = r.n(o),
+  i = r(723184),
+  l = r(829307),
+  s = r(877837),
+  u = r(122900),
+  c = r(717487),
+  p = r(99737),
   f = function(e) {
     var t = e.width,
-      n = e.onChange,
-      i = e.disableAlpha,
-      o = e.rgb,
+      r = e.onChange,
+      o = e.disableAlpha,
+      a = e.rgb,
       f = e.hsl,
-      p = e.hsv,
-      _ = e.hex,
-      h = e.renderers,
-      m = e.styles,
-      g = void 0 === m ? {} : m,
-      E = e.className,
-      v = void 0 === E ? "" : E,
-      b = e.defaultView,
-      y = (0, a.default)((0, s.Z)({
+      d = e.hsv,
+      h = e.hex,
+      b = e.renderers,
+      v = e.styles,
+      g = e.className,
+      x = e.defaultView,
+      y = (0, i.default)((0, l.Z)({
         default: {
           picker: {
             width: t,
@@ -64,7 +62,7 @@ var r = n(192379),
             absolute: "0px 0px 0px 0px",
             borderRadius: "8px",
             boxShadow: "inset 0 0 0 1px rgba(0,0,0,.1)",
-            background: "rgba(" + o.r + ", " + o.g + ", " + o.b + ", " + o.a + ")",
+            background: "rgba(" + a.r + ", " + a.g + ", " + a.b + ", " + a.a + ")",
             zIndex: "2"
           },
           toggles: {
@@ -102,67 +100,67 @@ var r = n(192379),
             marginTop: "0px"
           }
         }
-      }, g), {
-        disableAlpha: i
+      }, void 0 === v ? {} : v), {
+        disableAlpha: o
       });
-    return r.createElement("div", {
+    return n.createElement("div", {
       style: y.picker,
-      className: "chrome-picker " + v
-    }, r.createElement("div", {
+      className: "chrome-picker " + (void 0 === g ? "" : g)
+    }, n.createElement("div", {
       style: y.saturation
-    }, r.createElement(l.OQ, {
+    }, n.createElement(s.OQ, {
       style: y.Saturation,
       hsl: f,
-      hsv: p,
-      pointer: d.Z,
-      onChange: n
-    })), r.createElement("div", {
+      hsv: d,
+      pointer: p.Z,
+      onChange: r
+    })), n.createElement("div", {
       style: y.body
-    }, r.createElement("div", {
+    }, n.createElement("div", {
       style: y.controls,
       className: "flexbox-fix"
-    }, r.createElement("div", {
+    }, n.createElement("div", {
       style: y.color
-    }, r.createElement("div", {
+    }, n.createElement("div", {
       style: y.swatch
-    }, r.createElement("div", {
+    }, n.createElement("div", {
       style: y.active
-    }), r.createElement(l.QN, {
-      renderers: h
-    }))), r.createElement("div", {
+    }), n.createElement(s.QN, {
+      renderers: b
+    }))), n.createElement("div", {
       style: y.toggles
-    }, r.createElement("div", {
+    }, n.createElement("div", {
       style: y.hue
-    }, r.createElement(l.PS, {
+    }, n.createElement(s.PS, {
       style: y.Hue,
       hsl: f,
-      pointer: u.Z,
-      onChange: n
-    })), r.createElement("div", {
+      pointer: c.Z,
+      onChange: r
+    })), n.createElement("div", {
       style: y.alpha
-    }, r.createElement(l.xV, {
+    }, n.createElement(s.xV, {
       style: y.Alpha,
-      rgb: o,
+      rgb: a,
       hsl: f,
-      pointer: u.Z,
-      renderers: h,
-      onChange: n
-    })))), r.createElement(c.Z, {
-      rgb: o,
+      pointer: c.Z,
+      renderers: b,
+      onChange: r
+    })))), n.createElement(u.Z, {
+      rgb: a,
       hsl: f,
-      hex: _,
-      view: b,
-      onChange: n,
-      disableAlpha: i
+      hex: h,
+      view: x,
+      onChange: r,
+      disableAlpha: o
     })))
   };
 f.propTypes = {
-  width: o().oneOfType([o().string, o().number]),
-  disableAlpha: o().bool,
-  styles: o().object,
-  defaultView: o().oneOf(["hex", "rgb", "hsl"])
+  width: a().oneOfType([a().string, a().number]),
+  disableAlpha: a().bool,
+  styles: a().object,
+  defaultView: a().oneOf(["hex", "rgb", "hsl"])
 }, f.defaultProps = {
   width: 225,
   disableAlpha: !1,
   styles: {}
-}, (0, l.t1)(f)
+}, (0, s.t1)(f)

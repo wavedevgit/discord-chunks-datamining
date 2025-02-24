@@ -106,11 +106,11 @@ function R(e) {
 }
 var P = /\/+/g;
 
-function w(e, t) {
+function D(e, t) {
   return "object" == typeof e && null !== e && null != e.key ? R("" + e.key) : t.toString(36)
 }
 
-function D(e, t, i, o, a) {
+function w(e, t, i, o, a) {
   var s = typeof e;
   ("undefined" === s || "boolean" === s) && (e = null);
   var l = !1;
@@ -127,15 +127,15 @@ function D(e, t, i, o, a) {
           l = !0
       }
   }
-  if (l) return a = a(l = e), e = "" === o ? "." + w(l, 0) : o, O(a) ? (i = "", null != e && (i = e.replace(P, "$&/") + "/"), D(a, t, i, "", function(e) {
+  if (l) return a = a(l = e), e = "" === o ? "." + D(l, 0) : o, O(a) ? (i = "", null != e && (i = e.replace(P, "$&/") + "/"), w(a, t, i, "", function(e) {
     return e
   })) : null != a && (C(a) && (a = A(a, i + (!a.key || l && l.key === a.key ? "" : ("" + a.key).replace(P, "$&/") + "/") + e)), t.push(a)), 1;
   if (l = 0, o = "" === o ? "." : o + ":", O(e))
     for (var c = 0; c < e.length; c++) {
-      var u = o + w(s = e[c], c);
-      l += D(s, t, i, u, a)
+      var u = o + D(s = e[c], c);
+      l += w(s, t, i, u, a)
     } else if ("function" == typeof(u = _(e)))
-      for (e = u.call(e), c = 0; !(s = e.next()).done;) u = o + w(s = s.value, c++), l += D(s, t, i, u, a);
+      for (e = u.call(e), c = 0; !(s = e.next()).done;) u = o + D(s = s.value, c++), l += w(s, t, i, u, a);
     else if ("object" === s) throw Error("Objects are not valid as a React child (found: " + ("[object Object]" === (t = String(e)) ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
   return l
 }
@@ -144,7 +144,7 @@ function L(e, t, n) {
   if (null == e) return e;
   var r = [],
     i = 0;
-  return D(e, r, "", "", function(e) {
+  return w(e, r, "", "", function(e) {
     return t.call(n, e, i++)
   }), r
 }
@@ -164,12 +164,12 @@ function x(e) {
 var M = {
     current: null
   },
-  k = {
+  j = {
     transition: null
   },
-  j = {
+  k = {
     ReactCurrentDispatcher: M,
-    ReactCurrentBatchConfig: k,
+    ReactCurrentBatchConfig: j,
     ReactCurrentOwner: I
   };
 
@@ -198,7 +198,7 @@ t.Children = {
     if (!C(e)) throw Error("React.Children.only expected to receive a single React element child.");
     return e
   }
-}, t.Component = E, t.Fragment = i, t.Profiler = a, t.PureComponent = b, t.StrictMode = o, t.Suspense = u, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = j, t.act = U, t.cloneElement = function(e, t, r) {
+}, t.Component = E, t.Fragment = i, t.Profiler = a, t.PureComponent = b, t.StrictMode = o, t.Suspense = u, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = k, t.act = U, t.cloneElement = function(e, t, r) {
   if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
   var i = m({}, e.props),
     o = e.key,
@@ -265,12 +265,12 @@ t.Children = {
     compare: void 0 === t ? null : t
   }
 }, t.startTransition = function(e) {
-  var t = k.transition;
-  k.transition = {};
+  var t = j.transition;
+  j.transition = {};
   try {
     e()
   } finally {
-    k.transition = t
+    j.transition = t
   }
 }, t.unstable_act = U, t.useCallback = function(e, t) {
   return M.current.useCallback(e, t)

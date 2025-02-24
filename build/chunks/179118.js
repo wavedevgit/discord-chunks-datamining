@@ -31,8 +31,8 @@ var r = n(200651),
   C = n(51144),
   R = n(987209),
   P = n(981631),
-  w = n(474936),
-  D = n(388032),
+  D = n(474936),
+  w = n(388032),
   L = n(183706);
 let x = 1500;
 
@@ -48,15 +48,15 @@ function M(e) {
     giftRecipient: h,
     giftMessageError: v,
     isSendingMessage: b
-  } = e, [O, I] = i.useState(u.kO8.Modes.DEFAULT), M = (0, c.e7)([S.Z], () => S.Z.enabled), j = f || null != l && null != h, U = (null == o ? void 0 : o.productLine) === P.POd.COLLECTIBLES, G = (0, E.Z)(), {
+  } = e, [O, I] = i.useState(u.kO8.Modes.DEFAULT), M = (0, c.e7)([S.Z], () => S.Z.enabled), k = f || null != l && null != h, U = (null == o ? void 0 : o.productLine) === P.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
-  } = (0, R.wD)(), Z = null == G ? void 0 : G.giftPurchaseConfirmation, F = (0, g.tK)(null == B ? void 0 : B.skuId), V = (0, g.a5)(s) && null != F && null != Z, H = () => null != s ? s.skuId : null != o ? o.id : null, W = () => {
+  } = (0, R.wD)(), F = null == G ? void 0 : G.giftPurchaseConfirmation, V = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != V && null != F, H = () => null != s ? s.skuId : null != o ? o.id : null, W = () => {
     let e;
-    return null != v ? D.NW.string(D.t.qB8ayc) : null == s ? null : (e = s.interval === w.rV.MONTH ? j ? V ? Z.monthGiftText : D.t["4ZJ+7e"] : D.t["P+z55e"] : j ? V ? Z.yearGiftText : D.t.p0pZXF : D.t.bXqk3t, D.NW.format(e, {
+    return null != v ? w.NW.string(w.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? k ? Z ? F.monthGiftText : w.t["4ZJ+7e"] : w.t["P+z55e"] : k ? Z ? F.yearGiftText : w.t.p0pZXF : w.t.bXqk3t, w.NW.format(e, {
       skuName: (0, A.aq)(s.id),
       intervalCount: s.intervalCount
     }))
-  }, Y = () => null != h || f && null == v ? D.NW.string(D.t.zOmK9P) : null != v ? D.NW.string(D.t.d1lrmZ) : D.NW.string(D.t["/s1xR0"]), K = (e, t) => {
+  }, Y = () => null != h || f && null == v ? w.NW.string(w.t.zOmK9P) : null != v ? w.NW.string(w.t.d1lrmZ) : w.NW.string(w.t["/s1xR0"]), K = (e, t) => {
     null != o && (0, N.dM)(new y.Z({
       code: t,
       maxUses: 1
@@ -74,20 +74,20 @@ function M(e) {
     if (null == t) return null;
     switch (O) {
       case u.kO8.Modes.SUCCESS:
-        e = D.NW.string(D.t.XVvPjY);
+        e = w.NW.string(w.t.XVvPjY);
         break;
       case u.kO8.Modes.ERROR:
-        e = D.NW.string(D.t.i4GM3N);
+        e = w.NW.string(w.t.i4GM3N);
         break;
       default:
-        e = D.NW.string(D.t.OpuAlJ)
+        e = w.NW.string(w.t.OpuAlJ)
     }
     return (0, r.jsxs)("div", {
       className: L.giftCodeSection,
       children: [(0, r.jsx)(u.vwX, {
-        children: D.NW.string(D.t["/dG4ND"])
+        children: w.NW.string(w.t["/dG4ND"])
       }), null != t && (0, r.jsx)(u.kO8, {
-        hideMessage: M ? D.NW.string(D.t["0RLn4+"]) : null,
+        hideMessage: M ? w.NW.string(w.t["0RLn4+"]) : null,
         value: (0, N.Nz)(t),
         mode: O,
         text: e,
@@ -98,7 +98,7 @@ function M(e) {
         buttonLook: u.iLD.LINK
       }), (0, r.jsx)("div", {
         className: L.subtext,
-        children: D.NW.string(D.t.QWKUpq)
+        children: w.NW.string(w.t.QWKUpq)
       })]
     })
   }, q = () => {
@@ -116,7 +116,7 @@ function M(e) {
       children: [(0, r.jsx)("div", {
         className: L.blurb,
         children: W()
-      }), i && (0, r.jsx)(k, {
+      }), i && (0, r.jsx)(j, {
         giftCode: t,
         onClose: d
       }), (0, r.jsx)("div", {
@@ -152,7 +152,7 @@ function M(e) {
     })]
   }) : (0, r.jsxs)("div", {
     className: a()(L.confirmation, {
-      [L.seasonalConfirmationPadding]: V
+      [L.seasonalConfirmationPadding]: Z
     }),
     children: [null != n ? (0, r.jsx)(_.Z, {
       game: n,
@@ -166,10 +166,10 @@ function M(e) {
         [L.headerCustomGifting]: null != l && !U
       }),
       children: Y()
-    }), f && null != h && null == v || j ? Q() : q()]
+    }), f && null != h && null == v || k ? Q() : q()]
   })
 }
-let k = e => {
+let j = e => {
   let {
     giftCode: t,
     onClose: n
@@ -189,11 +189,11 @@ let k = e => {
   return (0, r.jsxs)("div", {
     className: L.giftRecipientSection,
     children: [(0, r.jsx)(u.vwX, {
-      children: D.NW.string(D.t.MJw05e)
+      children: w.NW.string(w.t.MJw05e)
     }), (0, r.jsxs)("div", {
       className: L.giftRecipient,
       children: [(0, r.jsx)(u.VcW, {
-        placeholder: D.NW.string(D.t.J019jY),
+        placeholder: w.NW.string(w.t.J019jY),
         wrapperClassName: L.giftRecipientInputWrapper,
         className: s ? L.giftRecipientInputError : void 0,
         renderOptionPrefix: e => (null == e ? void 0 : e.value) == null ? null : (0, r.jsx)(p.Z, {
@@ -222,11 +222,11 @@ let k = e => {
             _(!0), g(!1)
           })
         },
-        children: D.NW.string(D.t["+EgwQk"])
+        children: w.NW.string(w.t["+EgwQk"])
       })]
     }), (0, r.jsx)("div", {
       className: s ? L.subtextError : L.subtext,
-      children: s ? D.NW.string(D.t.jo5Vbm) : D.NW.string(D.t["8/N3v7"])
+      children: s ? w.NW.string(w.t.jo5Vbm) : w.NW.string(w.t["8/N3v7"])
     })]
   })
 }

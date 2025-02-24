@@ -50,9 +50,9 @@ var r = n(478497),
   h = {},
   m = function e(t, n, o, a, s, c, d, f, m, g, E, v, b, y, O, S, I, T) {
     for (var N, A = t, C = T, R = 0, P = !1; void 0 !== (C = C.get(h)) && !P;) {
-      var w = C.get(t);
-      if (R += 1, void 0 !== w) {
-        if (w === R) throw RangeError("Cyclic object value");
+      var D = C.get(t);
+      if (R += 1, void 0 !== D) {
+        if (D === R) throw RangeError("Cyclic object value");
         P = !0
       }
       void 0 === C.get(h) && (R = 0)
@@ -64,8 +64,8 @@ var r = n(478497),
       A = ""
     }
     if (_(A) || i.isBuffer(A)) return m ? [O(S ? n : m(n, p.encoder, I, "key", y)) + "=" + O(m(A, p.encoder, I, "value", y))] : [O(n) + "=" + O(String(A))];
-    var D = [];
-    if (void 0 === A) return D;
+    var w = [];
+    if (void 0 === A) return w;
     if ("comma" === o && l(A)) S && m && (A = i.maybeMap(A, m)), N = [{
       value: A.length > 0 ? A.join(",") || null : void 0
     }];
@@ -77,18 +77,18 @@ var r = n(478497),
     var x = f ? n.replace(/\./g, "%2E") : n,
       M = a && l(A) && 1 === A.length ? x + "[]" : x;
     if (s && l(A) && 0 === A.length) return M + "[]";
-    for (var k = 0; k < N.length; ++k) {
-      var j = N[k],
-        U = "object" == typeof j && void 0 !== j.value ? j.value : A[j];
+    for (var j = 0; j < N.length; ++j) {
+      var k = N[j],
+        U = "object" == typeof k && void 0 !== k.value ? k.value : A[k];
       if (!d || null !== U) {
-        var G = v && f ? j.replace(/\./g, "%2E") : j,
+        var G = v && f ? k.replace(/\./g, "%2E") : k,
           B = l(A) ? "function" == typeof o ? o(M, G) : M : M + (v ? "." + G : "[" + G + "]");
         T.set(t, R);
-        var Z = r();
-        Z.set(h, T), u(D, e(U, B, o, a, s, c, d, f, "comma" === o && S && l(A) ? null : m, g, E, v, b, y, O, S, I, Z))
+        var F = r();
+        F.set(h, T), u(w, e(U, B, o, a, s, c, d, f, "comma" === o && S && l(A) ? null : m, g, E, v, b, y, O, S, I, F))
       }
     }
-    return D
+    return w
   },
   g = function(e) {
     if (!e) return p;

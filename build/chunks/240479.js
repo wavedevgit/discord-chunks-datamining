@@ -63,19 +63,19 @@ function N(e) {
     refreshPosition: g
   } = e, b = t.guildId === O.X8, y = (0, s.e7)([m.Z], () => m.Z.getGuild(t.guildId)), N = !b && null != y, [A, C] = i.useState(), R = (0, E.V2)({
     location: "SoundmojiGuildInfo"
-  }), P = b || N || null != A || !R, [w, D] = i.useState(!P);
+  }), P = b || N || null != A || !R, [D, w] = i.useState(!P);
   i.useEffect(() => {
-    !P && (D(!0), (0, p.xU)(t.soundId, t.guildId).then(e => {
+    !P && (w(!0), (0, p.xU)(t.soundId, t.guildId).then(e => {
       C(e)
     }).finally(() => {
-      D(!1), g()
+      w(!1), g()
     }))
   }, [g, P, t.guildId, t.soundId]);
   let {
     buttonType: L,
     description: x
-  } = (0, v.Z)(t, n, N, A), M = L === v.y.JOIN_GUILD, k = !b && w, j = i.useMemo(() => N ? u.JO.createFromGuildRecord(y) : null != A ? u.JO.createFromDiscoverableGuild(A) : void 0, [y, N, A]);
-  return k ? (0, r.jsx)(f.SE, {}) : (0, r.jsxs)("div", {
+  } = (0, v.Z)(t, n, N, A), M = L === v.y.JOIN_GUILD, j = !b && D, k = i.useMemo(() => N ? u.JO.createFromGuildRecord(y) : null != A ? u.JO.createFromDiscoverableGuild(A) : void 0, [y, N, A]);
+  return j ? (0, r.jsx)(f.SE, {}) : (0, r.jsxs)("div", {
     className: I.infoContainer,
     children: [(0, r.jsxs)(f.W_, {
       children: [(0, r.jsxs)("div", {
@@ -91,7 +91,7 @@ function N(e) {
           variant: "text-sm/normal",
           children: x
         })]
-      }), null != j && (0, r.jsxs)("div", {
+      }), null != k && (0, r.jsxs)("div", {
         className: I.infoExpandedGuildContainer,
         children: [(0, r.jsx)(a.xv, {
           variant: "eyebrow",
@@ -101,7 +101,7 @@ function N(e) {
         }), (0, r.jsx)("div", {
           className: I.infoExpandedGuildInfo,
           children: (0, r.jsx)(d.Oe, {
-            expressionSourceGuild: j,
+            expressionSourceGuild: k,
             hasJoinedExpressionSourceGuild: N,
             isDisplayingJoinGuildButtonInPopout: M
           })

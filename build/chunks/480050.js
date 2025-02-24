@@ -94,7 +94,7 @@ function E(e) {
     x: 0,
     y: 0,
     config: h
-  })), [P, w] = i.useState(!1), [D, L] = i.useState({
+  })), [P, D] = i.useState(!1), [w, L] = i.useState({
     x: 0,
     y: 0
   }), x = (null != I ? I : 0) > window.innerWidth || (null != T ? T : 0) > window.innerHeight;
@@ -129,25 +129,25 @@ function E(e) {
         });
       C.x.set(i.x), C.y.set(i.y)
     },
-    k = e => {
-      n && 0 === e.button && (e.preventDefault(), w(!0), L({
+    j = e => {
+      n && 0 === e.button && (e.preventDefault(), D(!0), L({
         x: e.clientX,
         y: e.clientY
       }))
     },
-    j = e => {
+    k = e => {
       if (!n) {
         0 === e.button && (null == o || o(e));
         return
-      }(e.clientX - D.x) ** 2 + (e.clientY - D.y) ** 2 < _ && (null == o || o(e)), w(!1)
+      }(e.clientX - w.x) ** 2 + (e.clientY - w.y) ** 2 < _ && (null == o || o(e)), D(!1)
     };
   return (0, r.jsx)(s.animated.div, {
     ref: O,
-    onMouseDown: k,
-    onMouseUp: j,
+    onMouseDown: j,
+    onMouseUp: k,
     onMouseMove: e => P && M(e.movementX, e.movementY),
     onWheel: e => !e.ctrlKey && M(-e.deltaX, -e.deltaY),
-    onMouseLeave: () => w(!1),
+    onMouseLeave: () => D(!1),
     onClick: e => e.stopPropagation(),
     className: a()(f, d.wrapper, {
       [d.panning]: n && P,

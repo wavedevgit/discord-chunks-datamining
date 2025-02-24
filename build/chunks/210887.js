@@ -66,7 +66,7 @@ let A = null !== (i = (0, _.Z)()) && void 0 !== i ? i : y.BRd.DARK,
   R = null,
   P = !1;
 
-function w() {
+function D() {
   var e, t;
   if (__OVERLAY__) return y.BRd.DARK;
   if (d.Z.syncForcedColors && "active" === d.Z.systemForcedColors && null != r) return r;
@@ -89,35 +89,35 @@ function w() {
   }
 }
 
-function D() {
-  return w()
+function w() {
+  return D()
 }
 
 function L() {
-  return F()
+  return V()
 }
 
 function x() {
-  return F()
+  return V()
 }
 
 function M() {
-  return (0, c.ap)(D())
-}
-
-function k(e) {
-  return !e.isSwitchingAccount && A !== y.BRd.DARK && (A = y.BRd.DARK, V(), F())
+  return (0, c.ap)(w())
 }
 
 function j(e) {
+  return !e.isSwitchingAccount && A !== y.BRd.DARK && (A = y.BRd.DARK, Z(), V())
+}
+
+function k(e) {
   let {
     systemTheme: t
   } = e;
-  return R = t, F()
+  return R = t, V()
 }
 
 function U(e) {
-  return r = e.systemPrefersColorScheme, F()
+  return r = e.systemPrefersColorScheme, V()
 }
 
 function G(e) {
@@ -125,9 +125,9 @@ function G(e) {
   let {
     presetId: r
   } = e;
-  A = null != r && null !== (n = null === (t = O.qt[r]) || void 0 === t ? void 0 : t.theme) && void 0 !== n ? n : D();
+  A = null != r && null !== (n = null === (t = O.qt[r]) || void 0 === t ? void 0 : t.theme) && void 0 !== n ? n : w();
   let i = null != r;
-  return P !== i ? (P = i, !0) : Z()
+  return P !== i ? (P = i, !0) : F()
 }
 
 function B(e) {
@@ -137,24 +137,24 @@ function B(e) {
   C = t
 }
 
-function Z() {
-  let e = D();
+function F() {
+  let e = w();
   return !(0, f.qu)(A, e) && (A = e, !0)
 }
 
-function F() {
-  let e = D();
-  return e !== A && (V(A = e), !0)
+function V() {
+  let e = w();
+  return e !== A && (Z(A = e), !0)
 }
 
-function V(e) {
+function Z(e) {
   if (!__OVERLAY__ && m.isPlatformEmbedded) {
     let t = [],
       n = (0, p.O_)("ThemeStore");
     n && t.push("visual-refresh");
     try {
       let r = (0, l.uJ)(n ? "BACKGROUND_TERTIARY" : "BACKGROUND_SECONDARY", {
-        theme: null != e ? e : D(),
+        theme: null != e ? e : w(),
         saturation: d.Z.saturation,
         enabledExperiments: t
       });
@@ -166,7 +166,7 @@ class H extends(o = a.ZP.PersistedStore) {
   initialize(e) {
     if ((null == e ? void 0 : e.theme) != null) {
       var t;
-      V(A = e.theme), C = null !== (t = e.selectedDarkTheme) && void 0 !== t ? t : null
+      Z(A = e.theme), C = null !== (t = e.selectedDarkTheme) && void 0 !== t ? t : null
     }
     this.waitFor(E.ZP, g.Z, v.Z, d.Z)
   }
@@ -180,7 +180,7 @@ class H extends(o = a.ZP.PersistedStore) {
     return (0, c.ap)(this.theme) && E.ZP.darkSidebar && !P
   }
   get theme() {
-    return D()
+    return w()
   }
   get selectedDarkTheme() {
     return C
@@ -204,14 +204,14 @@ S(H, "displayName", "ThemeStore"), S(H, "persistKey", "ThemeStore"), S(H, "migra
 let W = new H(u.Z, {
   CACHE_LOADED: L,
   CONNECTION_OPEN: L,
-  LOGOUT: k,
+  LOGOUT: j,
   OVERLAY_INITIALIZE: L,
   SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: x,
   UNSYNCED_USER_SETTINGS_UPDATE: x,
   USER_SETTINGS_PROTO_UPDATE: L,
   UPDATE_BACKGROUND_GRADIENT_PRESET: G,
   RESET_PREVIEW_CLIENT_THEME: L,
-  SYSTEM_THEME_CHANGE: j,
+  SYSTEM_THEME_CHANGE: k,
   ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: U,
   ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: M,
   SET_DARK_MODE_THEME: B

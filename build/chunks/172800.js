@@ -67,9 +67,9 @@ function P(e, t) {
   }), e
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
-  var n, r, i = D(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -77,7 +77,7 @@ function w(e, t) {
   return i
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -90,18 +90,18 @@ let L = e => {
     emojiSize: o,
     onSelect: A,
     onSelectSoundmoji: R,
-    onInspect: D,
+    onInspect: w,
     surrogateCodePoint: L,
     getEmojiItemProps: x,
     getEmojiRowProps: M,
-    isScrolling: k,
-    isUsingKeyboardNavigation: j,
+    isScrolling: j,
+    isUsingKeyboardNavigation: k,
     rowIndex: U,
     allowAnimatedEmoji: G,
     showEmojiFavoriteTooltip: B,
-    channelGuildId: Z,
-    category: F,
-    selectedItemClassName: V,
+    channelGuildId: F,
+    category: V,
+    selectedItemClassName: Z,
     channelId: H,
     messageId: W,
     isBurstReaction: Y,
@@ -137,8 +137,8 @@ let L = e => {
             ref: m,
             tabIndex: g,
             onFocus: E
-          } = h, v = w(h, ["ref", "tabIndex", "onFocus"]), b = ea.rowIndex === p && ea.columnIndex === _, y = () => {
-            k.current || j.current || D(e)
+          } = h, v = D(h, ["ref", "tabIndex", "onFocus"]), b = ea.rowIndex === p && ea.columnIndex === _, y = () => {
+            j.current || k.current || w(e)
           };
           return (0, i.createElement)("li", P(C({}, v), {
             key: t
@@ -150,7 +150,7 @@ let L = e => {
                 [N.emojiItemLarge]: ed,
                 [N.emojiItemMedium]: ef,
                 [N.emojiItemSelected]: b && !f,
-                [null != V ? V : ""]: b,
+                [null != Z ? Z : ""]: b,
                 [N.showPulse]: el === t
               }),
               onFocus: null != E ? E : y,
@@ -169,7 +169,7 @@ let L = e => {
             visibleRowIndex: t,
             columnIndex: i
           } = e, o = ea.rowIndex === t && ea.columnIndex === i, a = t => {
-            t.stopPropagation(), k.current || j.current || (A(e, {
+            t.stopPropagation(), j.current || k.current || (A(e, {
               isFinalSelection: !0,
               toggleFavorite: !1
             }), (0, d.D)(e.guildId), e.sectionCollapsedToThreeRows || z(), v.default.track(I.rMx.EMOJI_PICKER_THREE_ROW_COLLAPSE_TOGGLED, {
@@ -190,7 +190,7 @@ let L = e => {
         }
         case y.ld.CREATE_EMOJI: {
           let t = t => {
-            t.stopPropagation(), k.current || j.current || (A(e, {
+            t.stopPropagation(), j.current || k.current || (A(e, {
               isFinalSelection: !0,
               toggleFavorite: !1
             }), h.Z.open(e.guildId, I.pNK.EMOJI, I.jXE.EMOJI_PICKER_POPOUT))
@@ -218,14 +218,14 @@ let L = e => {
             descriptor: e,
             emojiItemKey: t,
             isInspected: a,
-            isScrolling: k,
-            isUsingKeyboardNavigation: j,
+            isScrolling: j,
+            isUsingKeyboardNavigation: k,
             surrogateCodePoint: L,
             allowAnimatedEmoji: G,
-            selectedItemClassName: V,
+            selectedItemClassName: Z,
             onSelect: A,
-            onInspect: D,
-            channelGuildId: Z,
+            onInspect: w,
+            channelGuildId: F,
             getEmojiItemProps: x,
             isMediumSize: ef,
             isLargeSize: ed,
@@ -250,7 +250,7 @@ let L = e => {
       ref: eu,
       children: e.map(ep)
     }));
-  if (F === S.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
+  if (V === S.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
     className: a()(N.emojiListRow),
     ref: eu,
     children: (0, r.jsx)(m.Z, {
@@ -258,7 +258,7 @@ let L = e => {
       onSelectSoundmoji: R
     })
   });
-  if (F !== S.En.TOP_GUILD_EMOJI) return e_(t);
+  if (V !== S.En.TOP_GUILD_EMOJI) return e_(t);
   let eh = t.filter(e => {
       if (q && e.type === y.ld.CREATE_EMOJI) return !0;
       let t = e;

@@ -32,8 +32,8 @@ var r = n(200651),
   C = n(475595),
   R = n(566078),
   P = n(114732),
-  w = n(46140),
-  D = n(675654),
+  D = n(46140),
+  w = n(675654),
   L = n(388032),
   x = n(955617);
 
@@ -46,7 +46,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function k(e) {
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,7 +71,7 @@ function j(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -96,7 +96,7 @@ function B(e) {
   return [r, o]
 }
 
-function Z(e) {
+function F(e) {
   var t;
   let {
     transitionState: n,
@@ -107,17 +107,17 @@ function Z(e) {
     decoration: _,
     onUseNow: h,
     preview: g
-  } = e, E = i.useRef(null), [v, b] = i.useState(null), y = i.useRef(new s.qA), S = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), T = (0, c.e7)([O.default], () => O.default.getCurrentUser()), A = i.useMemo(() => (0, C.fh)(l, C.eC.HERO), [l]), R = (null === (t = l.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [w, L] = i.useState(!0 === g || R ? "claimed" : "loading");
+  } = e, E = i.useRef(null), [v, b] = i.useState(null), y = i.useRef(new s.qA), S = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), T = (0, c.e7)([O.default], () => O.default.getCurrentUser()), A = i.useMemo(() => (0, C.fh)(l, C.eC.HERO), [l]), R = (null === (t = l.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [D, L] = i.useState(!0 === g || R ? "claimed" : "loading");
   i.useEffect(() => {
     R || !0 === g || (0, I.QB)(l.id, N.y$.CROSS_PLATFORM, d).then(() => L("claimed")).catch(() => L("error"))
   }, [l, d, R, g]);
   let M = () => {
       L("applying"), h().finally(o)
     },
-    k = !0 === g && null === _ && (null == p ? void 0 : p.skuId) !== "",
-    j = null == _ && !0 !== g,
-    U = null == T || j || k || "loading" === w,
-    G = !S && !R && "claimed" === w;
+    j = !0 === g && null === _ && (null == p ? void 0 : p.skuId) !== "",
+    k = null == _ && !0 !== g,
+    U = null == T || k || j || "loading" === D,
+    G = !S && !R && "claimed" === D;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
       ref: b,
@@ -132,19 +132,19 @@ function Z(e) {
           [x.rootContainerLoading]: U
         }),
         hideShadow: !0,
-        children: "error" === w ? (0, r.jsx)(P.Z, {
+        children: "error" === D ? (0, r.jsx)(P.Z, {
           onClose: o
         }) : U ? (0, r.jsx)("div", {
           className: x.loadingIndicatorWrapper,
           children: (0, r.jsx)(u.$jN, {
             type: u.$jN.Type.SPINNING_CIRCLE
           })
-        }) : (0, r.jsx)(V, {
+        }) : (0, r.jsx)(Z, {
           quest: l,
           user: T,
           decoration: _,
           backgroundUrl: A.url,
-          isSaving: "applying" === w,
+          isSaving: "applying" === D,
           onClose: o,
           onConfirm: M
         })
@@ -152,13 +152,13 @@ function Z(e) {
     }), G && (0, r.jsx)(m.Z, {
       confettiTarget: E.current,
       confettiCanvas: v,
-      sprites: D.CA,
-      colors: D.Br
+      sprites: w.CA,
+      colors: w.Br
     })]
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     quest: t
   } = e, n = i.useMemo(() => (0, C.fh)(t, C.eC.LOGO_TYPE, "dark"), [t]), o = R.r.build(t.config).defaultRewardRedemptionInstructionsByPlatform[N.y$.CROSS_PLATFORM];
@@ -178,7 +178,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function Z(e) {
   let {
     quest: t,
     user: n,
@@ -235,7 +235,7 @@ function V(e) {
           submitting: a,
           onClick: l,
           children: L.NW.string(L.t.MAS7uL)
-        }), (0, A.zK)(t, w.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(F, {
+        }), (0, A.zK)(t, D.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(V, {
           quest: t
         })]
       })
@@ -258,7 +258,7 @@ function H(e) {
     onClose: s,
     analyticsLocations: [],
     initialSelectedDecoration: d
-  }) : (0, r.jsx)(Z, {
+  }) : (0, r.jsx)(F, {
     onClose: s,
     transitionState: l,
     quest: o,
@@ -275,7 +275,7 @@ function W(e, t, i) {
     let {
       default: o
     } = await Promise.resolve().then(n.bind(n, 920916));
-    return n => (0, r.jsx)(o, U(k({}, n), {
+    return n => (0, r.jsx)(o, U(j({}, n), {
       quest: e,
       location: t,
       preview: i

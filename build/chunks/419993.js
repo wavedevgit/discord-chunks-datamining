@@ -132,7 +132,7 @@ class I extends(r = o.Component) {
       required: A,
       onInvalid: C,
       inputRef: R
-    } = this.props, P = N ? p.l : "textarea", w = this.hasError(), D = null !== (t = this.props["aria-labelledby"]) && void 0 !== t ? t : null === (e = this.context) || void 0 === e ? void 0 : e.titleId, L = this.getAriaDescribedBy();
+    } = this.props, P = N ? p.l : "textarea", D = this.hasError(), w = null !== (t = this.props["aria-labelledby"]) && void 0 !== t ? t : null === (e = this.context) || void 0 === e ? void 0 : e.titleId, L = this.getAriaDescribedBy();
     return (0, i.jsxs)("div", {
       className: s()(m.inputWrapper, {
         [h.flex]: T
@@ -145,13 +145,13 @@ class I extends(r = o.Component) {
           children: (0, i.jsx)(P, {
             type: "text",
             className: s()(m.inputDefault, h.textArea, g.scrollbarDefault, O, {
-              [m.error]: w,
+              [m.error]: D,
               [m.disabled]: n,
               [h.resizeable]: v
             }),
-            "aria-labelledby": D,
+            "aria-labelledby": w,
             "aria-describedby": L,
-            "aria-invalid": w,
+            "aria-invalid": D,
             style: {
               paddingRight: this.getPaddingRight()
             },

@@ -3,7 +3,7 @@
 n.d(t, {
   PY: () => G,
   ZP: () => B,
-  iR: () => j
+  iR: () => k
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -63,12 +63,12 @@ function P(e) {
   return null !== (t = e.id) && void 0 !== t ? t : e.src
 }
 
-function w(e, t) {
+function D(e, t) {
   let n = R[t];
   return null == n ? 0 : n.height
 }
 
-function D(e, t, n, i) {
+function w(e, t, n, i) {
   if (!(e > 0)) return null == R[t] ? null : (0, r.jsx)("div", {
     className: S.placeholder,
     style: T({
@@ -90,11 +90,11 @@ function M(e) {
   return ((0, g._M)(e) || (0, g.MO)(e)) && (e.pathname.toLowerCase().endsWith(".webp") || e.pathname.toLowerCase().endsWith(".avif"))
 }
 
-function k(e) {
+function j(e) {
   let t = v.Z.toURLSafe(e);
   return null != t && M(t) ? (t.searchParams.set("animated", "true"), t.toString()) : e
 }
-class j extends i.PureComponent {
+class k extends i.PureComponent {
   componentDidMount() {
     let {
       props: {
@@ -141,7 +141,7 @@ class j extends i.PureComponent {
       loaded: i
     } = this.state;
     return i ? (0, r.jsx)("img", {
-      src: k(e),
+      src: j(e),
       width: t,
       height: n,
       className: S.gif,
@@ -328,7 +328,7 @@ class U extends i.PureComponent {
       let {
         focusedId: o
       } = this.state, a = this.props.data[t];
-      return null == a ? null : (0, r.jsx)(j, {
+      return null == a ? null : (0, r.jsx)(k, {
         item: a,
         index: t,
         format: a.format,
@@ -393,8 +393,8 @@ class U extends i.PureComponent {
         columns: e,
         itemGutter: 12,
         getItemKey: L,
-        getItemHeight: w,
-        renderItem: D,
+        getItemHeight: D,
+        renderItem: w,
         chunkSize: 128
       }, s) : (0, r.jsx)(f.GMG, {
         ref: this._masonryRef,

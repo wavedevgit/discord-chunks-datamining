@@ -1,19 +1,18 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => s
+r.d(t, {
+  Z: () => l
 });
-var r = n(192379),
-  i = n(723184),
-  o = n(820611),
-  a = n(877837);
-let s = function(e) {
+var n = r(192379),
+  o = r(723184),
+  a = r(820611),
+  i = r(877837);
+let l = function(e) {
   var t = e.color,
-    n = e.onClick,
-    s = void 0 === n ? function() {} : n,
+    r = e.onClick,
     l = e.onSwatchHover,
-    c = e.active,
-    u = (0, i.default)({
+    s = e.active,
+    u = (0, o.default)({
       default: {
         color: {
           background: t,
@@ -27,7 +26,7 @@ let s = function(e) {
         },
         dot: {
           absolute: "5px 5px 5px 5px",
-          background: o.Qg(t),
+          background: a.Qg(t),
           borderRadius: "50%",
           opacity: "0"
         }
@@ -51,19 +50,19 @@ let s = function(e) {
         }
       }
     }, {
-      active: c,
+      active: s,
       "color-#FFFFFF": "#FFFFFF" === t,
       transparent: "transparent" === t
     });
-  return r.createElement(a.m4, {
+  return n.createElement(i.m4, {
     style: u.color,
     color: t,
-    onClick: s,
+    onClick: void 0 === r ? function() {} : r,
     onHover: l,
     focusStyle: {
       boxShadow: "0 0 4px " + t
     }
-  }, r.createElement("div", {
+  }, n.createElement("div", {
     style: u.dot
   }))
 }

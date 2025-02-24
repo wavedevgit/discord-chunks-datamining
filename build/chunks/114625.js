@@ -1,38 +1,43 @@
 /** Chunk was on 624 **/
 n.d(t, {
-  Z: () => c
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
-var i = n(481060),
-  s = n(600164),
-  a = n(614277),
-  l = n(388032),
-  o = n(835211);
+var i = n(442837),
+  s = n(481060),
+  a = n(607070),
+  l = n(600164),
+  o = n(614277),
+  c = n(388032),
+  d = n(835211),
+  u = n(436858),
+  m = n(275554);
 
-function c() {
-  return (0, r.jsx)(a.O3, {
-    children: (0, r.jsxs)(i.mzw, {
-      align: s.Z.Align.CENTER,
-      direction: s.Z.Direction.HORIZONTAL,
-      className: o.container,
-      children: [(0, r.jsxs)(i.Kqy, {
+function g() {
+  let e = (0, i.e7)([a.Z], () => a.Z.useReducedMotion);
+  return (0, r.jsx)(o.O3, {
+    children: (0, r.jsxs)(s.mzw, {
+      align: l.Z.Align.CENTER,
+      direction: l.Z.Direction.HORIZONTAL,
+      className: d.container,
+      children: [(0, r.jsxs)(s.Kqy, {
         direction: "horizontal",
         gap: 8,
         align: "center",
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: "",
-          className: o.image
-        }), (0, r.jsx)(i.Text, {
+          src: e ? m.Z : u.Z,
+          className: d.image
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
-          children: l.NW.string(l.t.n9Tp5O)
+          children: c.NW.string(c.t.n9Tp5O)
         })]
-      }), (0, r.jsx)(i.zxk, {
-        look: i.iLD.FILLED,
-        color: i.Ttl.BRAND,
+      }), (0, r.jsx)(s.zxk, {
+        look: s.iLD.FILLED,
+        color: s.Ttl.BRAND,
         onClick: () => {
-          (0, i.ZDy)(async () => {
+          (0, s.ZDy)(async () => {
             let {
               default: e
             } = await n.e("74824").then(n.bind(n, 817357));
@@ -56,7 +61,7 @@ function c() {
             }({}, t))
           })
         },
-        children: l.NW.string(l.t.PDTjLC)
+        children: c.NW.string(c.t.PDTjLC)
       })]
     })
   })

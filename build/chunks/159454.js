@@ -1,2 +1,2 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 e.exports = n(18287)

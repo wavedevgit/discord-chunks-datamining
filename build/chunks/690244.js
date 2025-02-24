@@ -189,8 +189,8 @@ var S = function e(t) {
   C = T.call(Function.apply, Array.prototype.splice),
   R = T.call(Function.call, String.prototype.replace),
   P = T.call(Function.call, String.prototype.slice),
-  w = T.call(Function.call, RegExp.prototype.exec),
-  D = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
+  D = T.call(Function.call, RegExp.prototype.exec),
+  w = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
   L = /\\(\\)?/g,
   x = function(e) {
     var t = P(e, 0, 1),
@@ -198,7 +198,7 @@ var S = function e(t) {
     if ("%" === t && "%" !== n) throw new l("invalid intrinsic syntax, expected closing `%`");
     if ("%" === n && "%" !== t) throw new l("invalid intrinsic syntax, expected opening `%`");
     var r = [];
-    return R(e, D, function(e, t, n, i) {
+    return R(e, w, function(e, t, n, i) {
       r[r.length] = n ? R(i, L, "$1") : t || e
     }), r
   },
@@ -218,7 +218,7 @@ var S = function e(t) {
 e.exports = function(e, t) {
   if ("string" != typeof e || 0 === e.length) throw new c("intrinsic name must be a non-empty string");
   if (arguments.length > 1 && "boolean" != typeof t) throw new c('"allowMissing" argument must be a boolean');
-  if (null === w(/^%?[^%]*%?$/, e)) throw new l("`%` may not be present anywhere but at the beginning and end of the intrinsic name");
+  if (null === D(/^%?[^%]*%?$/, e)) throw new l("`%` may not be present anywhere but at the beginning and end of the intrinsic name");
   var n = x(e),
     r = n.length > 0 ? n[0] : "",
     i = M("%" + r + "%", t),

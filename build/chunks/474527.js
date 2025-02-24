@@ -1,14 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  C: () => l
+r.d(t, {
+  C: () => s
 });
-var r = n(192379),
-  i = n(723184),
-  o = n(476400),
-  a = n.n(o),
-  s = function(e) {
-    var t = (0, i.default)({
+var n = r(192379),
+  o = r(723184),
+  a = r(476400),
+  i = r.n(a),
+  l = function(e) {
+    var t = (0, o.default)({
       default: {
         picker: {
           width: "20px",
@@ -20,18 +20,18 @@ var r = n(192379),
         }
       }
     });
-    return r.createElement("div", {
+    return n.createElement("div", {
       style: t.picker
     })
   };
-s.propTypes = {
-  hsl: a().shape({
-    h: a().number,
-    s: a().number,
-    l: a().number,
-    a: a().number
+l.propTypes = {
+  hsl: i().shape({
+    h: i().number,
+    s: i().number,
+    l: i().number,
+    a: i().number
   })
-}, s.defaultProps = {
+}, l.defaultProps = {
   hsl: {
     a: 1,
     h: 249.94,
@@ -39,4 +39,4 @@ s.propTypes = {
     s: .5
   }
 };
-let l = s
+let s = l

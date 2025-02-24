@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 });
 var r = n(200651),
   i = n(192379),
@@ -13,10 +13,10 @@ var r = n(200651),
   d = n(388032),
   p = n(391308),
   h = n(882008);
-let g = function(e) {
+let f = function(e) {
   let {
     loadId: t
-  } = e, n = s.Z.useField("categoryId"), g = (0, l.e7)([c.Z], () => c.Z.getCategoryName(n)), f = i.useCallback(() => {
+  } = e, n = s.Z.useField("categoryId"), f = (0, l.e7)([c.Z], () => c.Z.getCategoryName(n)), g = i.useCallback(() => {
     s.Z.setState({
       categoryId: u.Hk
     }), a.Z.loadCategoryResults({
@@ -26,9 +26,9 @@ let g = function(e) {
       languageCode: s.Z.getField("languageCode")
     })
   }, [t]), m = n === u.Hk ? d.NW.string(d.t.Ivw1Ii) : d.NW.formatToPlainString(d.t["+1WAFR"], {
-    categoryName: g
+    categoryName: f
   }), b = n === u.Hk ? d.NW.string(d.t.aXvEjY) : d.NW.format(d.t.XLioqq, {
-    onClick: f
+    onClick: g
   });
   return (0, r.jsxs)("div", {
     className: p.container,

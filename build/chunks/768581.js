@@ -5,17 +5,17 @@ n.d(t, {
   $k: () => O,
   CA: () => L,
   F8: () => ee,
-  JM: () => D,
-  NZ: () => k,
+  JM: () => w,
+  NZ: () => j,
   ZP: () => en,
   aN: () => M,
   ay: () => J,
   gT: () => C,
-  ov: () => w,
+  ov: () => D,
   pK: () => b,
   pU: () => er,
   rI: () => z,
-  tp: () => j,
+  tp: () => k,
   xR: () => X
 }), n(301563), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120);
 var i = n(654861),
@@ -140,7 +140,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f.IXf,
@@ -148,7 +148,7 @@ function w(e) {
   return null !== (t = P(e, n, r, i)) && void 0 !== t ? t : R(e.id, e.discriminator, e.isProvisional)
 }
 
-function D(e) {
+function w(e) {
   let t, {
       guildId: n,
       userId: r,
@@ -171,7 +171,7 @@ function L(e) {
     avatar: n,
     guildId: r
   } = e, i = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  return null == n ? null : D({
+  return null == n ? null : w({
     userId: t,
     avatar: n,
     guildId: r,
@@ -198,7 +198,7 @@ function M(e) {
   return (null != a ? "".concat(location.protocol, "//").concat(a, "/banners/").concat(n, "/").concat(r, ".").concat(s) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.USER_BANNER(n, r, s)) + "?size=".concat((0, l.oO)(o * (0, l.x_)()))
 }
 
-function k(e) {
+function j(e) {
   let {
     avatarDecoration: t,
     size: n,
@@ -213,7 +213,7 @@ function k(e) {
   return c.searchParams.set("size", "".concat((0, l.oO)(n * (0, l.x_)()))), c.searchParams.set("passthrough", "".concat(r && (0, s.ae)(t.asset))), c.toString()
 }
 
-function j(e) {
+function k(e) {
   let t, {
     id: n,
     guildId: r,
@@ -258,7 +258,7 @@ function B(e) {
   return t = (null != c ? "".concat(location.protocol, "//").concat(c, "/banners/").concat(n, "/").concat(r, ".").concat(s) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_BANNER(n, r, s)) + "?size=".concat(o), "jpg" === s && (t += "&quality=lossless"), t
 }
 
-function Z(e) {
+function F(e) {
   let t, {
     id: n,
     homeHeader: r
@@ -269,7 +269,7 @@ function Z(e) {
   return (null != o ? "".concat(location.protocol, "//").concat(o, "/home-headers/").concat(n, "/").concat(r, ".png") : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_HOME_HEADER(n, r)) + "?size=".concat(i)
 }
 
-function F(e) {
+function V(e) {
   let t, {
     id: n,
     splash: r,
@@ -281,8 +281,8 @@ function F(e) {
   return (null != o ? "".concat(location.protocol, "//").concat(o, "/discovery-splashes/").concat(n, "/").concat(r, ".jpg") : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_DISCOVERY_SPLASH(n, r)) + "?size=".concat(i)
 }
 
-function V(e) {
-  return et(F(e))
+function Z(e) {
+  return et(V(e))
 }
 
 function H(e) {
@@ -440,26 +440,26 @@ function et(e) {
   }
 }
 let en = {
-  getUserAvatarURL: w,
+  getUserAvatarURL: D,
   getDefaultAvatarURL: R,
   getGuildMemberAvatarURL: L,
-  getGuildMemberAvatarURLSimple: D,
+  getGuildMemberAvatarURLSimple: w,
   getGuildMemberAvatarSource: x,
-  getGuildMemberBannerURL: j,
+  getGuildMemberBannerURL: k,
   getUserBannerURL: M,
-  getAvatarDecorationURL: k,
+  getAvatarDecorationURL: j,
   hasAnimatedGuildIcon: function e(e) {
     return X(null == e ? void 0 : e.icon)
   },
   isAnimatedIconHash: X,
-  getUserAvatarSource: (e, t, n) => et(w(e, t, n)),
+  getUserAvatarSource: (e, t, n) => et(D(e, t, n)),
   getGuildIconURL: H,
   getGuildSplashURL: U,
   getGuildSplashSource: G,
-  getGuildDiscoverySplashURL: F,
-  getGuildDiscoverySplashSource: V,
+  getGuildDiscoverySplashURL: V,
+  getGuildDiscoverySplashSource: Z,
   getGuildBannerURL: B,
-  getGuildHomeHeaderURL: Z,
+  getGuildHomeHeaderURL: F,
   getResourceChannelIconURL: function e(e) {
     let {
       channelId: t,
@@ -501,7 +501,7 @@ let en = {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     return et(B(e, t))
   },
-  getGuildHomeHeaderSource: e => et(Z(e)),
+  getGuildHomeHeaderSource: e => et(F(e)),
   getChannelIconSource: e => et(Q(e)),
   getApplicationIconSource: e => et(Y(e)),
   makeSource: et,

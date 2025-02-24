@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => j,
+  ZP: () => k,
   jK: () => x,
   tS: () => M
 }), n(301563), n(47120), n(411104), n(26686), n(653041);
@@ -65,8 +65,8 @@ let S = window.DiscordNative,
 null != S && (T = S.remoteApp.getVersion().split(".").map(e => parseInt(e)), A = null === (r = (i = S.remoteApp).getModuleVersions) || void 0 === r ? void 0 : r.call(i), N = null === (o = (a = S.remoteApp).getBuildNumber) || void 0 === o ? void 0 : o.call(a));
 let R = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]),
   P = !1,
-  w = "lastImageSaveDirectory";
-async function D(e) {
+  D = "lastImageSaveDirectory";
+async function w(e) {
   let t = {
       method: "GET",
       mode: "cors"
@@ -78,7 +78,7 @@ async function D(e) {
 }
 
 function L(e) {
-  return D(e)
+  return w(e)
 }
 var x = function(e) {
     return e[e.Camera = 0] = "Camera", e[e.Microphone = 1] = "Microphone", e[e.Photo = 2] = "Photo", e[e.InputMonitoring = 3] = "InputMonitoring", e[e.ScreenRecording = 4] = "ScreenRecording", e
@@ -87,7 +87,7 @@ var x = function(e) {
     return e.VIDEO = "VIDEO", e.MUTE = "MUTE", e.DEAFEN = "DEAFEN", e.DISCONNECT = "DISCONNECT", e
   }({});
 
-function k(e) {
+function j(e) {
   var t, n, r, i, o, a, s, l;
   return {
     id: C[null !== (t = e.id) && void 0 !== t ? t : ""],
@@ -109,7 +109,7 @@ function k(e) {
     fullscreenType: null !== (l = e.fullscreenType) && void 0 !== l ? l : p.Jx.UNKNOWN
   }
 }
-let j = {
+let k = {
   requireModule: e => S.nativeModules.requireModule(e),
   ensureModule: e => h.isPlatformEmbedded ? __OVERLAY__ && R.has(e) ? Promise.resolve() : S.nativeModules.ensureModule(e) : Promise.reject(Error("not embedded")),
   get canBootstrapNewUpdater() {
@@ -150,11 +150,11 @@ let j = {
           cmdline: e.cmdLine,
           id: t
         })
-      }), e => t(e.map(k)))
+      }), e => t(e.map(j)))
     } catch (e) {}
   },
   setCandidateGamesCallback(e) {
-    this.getDiscordUtils().setCandidateGamesCallback(t => e(t.map(k)))
+    this.getDiscordUtils().setCandidateGamesCallback(t => e(t.map(j)))
   },
   clearCandidateGamesCallback() {
     this.getDiscordUtils().clearCandidateGamesCallback()
@@ -270,11 +270,11 @@ let j = {
     let n = m.Z.toURLSafe(e);
     if (null == n) return;
     let r = null !== (t = n.pathname.split("/").pop()) && void 0 !== t ? t : "unknown",
-      i = f.K.get(w),
+      i = f.K.get(D),
       o = await L(e),
       a = E.from(o),
       s = await S.fileManager.saveWithDialog(a, r, null != i ? i : void 0);
-    null != s && f.K.set(w, s)
+    null != s && f.K.set(D, s)
   },
   async saveFile(e, t) {
     var n;
@@ -282,7 +282,7 @@ let j = {
     let r = m.Z.toURLSafe(e);
     if (null == r) return null;
     let i = null !== (n = null != t ? t : r.pathname.split("/").pop()) && void 0 !== n ? n : "unknown",
-      o = await D(e),
+      o = await w(e),
       a = E.from(o);
     return S.fileManager.saveWithDialog(a, i)
   },

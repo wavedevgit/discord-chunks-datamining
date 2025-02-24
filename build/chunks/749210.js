@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  V: () => k,
+  V: () => j,
   Z: () => U
 }), n(411104), n(177593), n(566702);
 var r = n(990547),
@@ -68,9 +68,9 @@ function P(e, t) {
   }), e
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
-  var n, r, i = D(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -78,7 +78,7 @@ function w(e, t) {
   return i
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -108,14 +108,14 @@ let L = e => {
     })
   };
 
-function k(e) {
+function j(e) {
   return new Promise(t => m.Z.addConditionalChangeListener(() => {
     let n = m.Z.getGuild(e);
     return null == n || (t(n), !1)
   }))
 }
 
-function j(e, t) {
+function k(e, t) {
   return null != t ? t : (0, d.V)(e)
 }
 let U = {
@@ -186,9 +186,9 @@ let U = {
       throw (null === (s = t.body) || void 0 === s ? void 0 : s.code) === T.evJ.GUILD_AT_CAPACITY && M(), b && (null === (l = t.body) || void 0 === l ? void 0 : l.code) === T.evJ.UNKNOWN_GUILD && x(e), t
     }
   },
-  waitForGuild: k,
+  waitForGuild: j,
   async transitionToGuildSync(e, t, n) {
-    let r = j((await k(e)).id, n),
+    let r = k((await j(e)).id, n),
       i = t;
     (null == t ? void 0 : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (i = P(C({}, t), {
       welcomeModalChannelId: null != r ? r : void 0
@@ -327,7 +327,7 @@ let U = {
     let {
       icon: r,
       unicodeEmoji: i
-    } = n, a = w(n, ["icon", "unicodeEmoji"]), s = null === r || (null == r ? void 0 : r.startsWith("data:")) ? r : void 0, c = await o.tn.patch({
+    } = n, a = D(n, ["icon", "unicodeEmoji"]), s = null === r || (null == r ? void 0 : r.startsWith("data:")) ? r : void 0, c = await o.tn.patch({
       url: T.ANM.GUILD_ROLE(e, t),
       body: P(C({}, a), {
         icon: s,

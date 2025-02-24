@@ -1,7 +1,7 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(726433),
-  i = n(96403);
-e.exports = function(e) {
-  if ("Function" === r(e)) return i(e)
+var e = n(726433),
+  o = n(96403);
+t.exports = function(t) {
+  if ("Function" === e(t)) return o(t)
 }

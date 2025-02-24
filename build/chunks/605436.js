@@ -15,14 +15,14 @@ n.d(t, {
   Yk: () => z,
   _A: () => W,
   aq: () => I,
-  cR: () => F,
+  cR: () => V,
   iI: () => B,
   ik: () => R,
   kA: () => L,
   nT: () => Q,
   pM: () => N,
   yv: () => H,
-  zB: () => V
+  zB: () => Z
 }), n(230036), n(653041);
 var r = n(149765),
   i = n(866442),
@@ -132,11 +132,11 @@ function P(e, t, n, i) {
   return Object.values(t).filter(t => !b(t) && T(n, t.id, i) && C(e, t) && o(t.name)).sort(S).map(e => O(e, r.e$(e.permissions, i)))
 }
 
-function w(e, t, n, r, i) {
+function D(e, t, n, r, i) {
   return Object.values(t).filter(t => b(t) || !T(n, t.id, r, i) && C(e, t))
 }
 
-function D(e, t, n, i, o) {
+function w(e, t, n, i, o) {
   return Object.values(t).filter(t => {
     var a;
     return b(t) || !T(n, t.id, i, o) && C(e, t) || r.e$(r.$e(t.permissions, null === (a = n.permissionOverwrites[t.id]) || void 0 === a ? void 0 : a.allow), i)
@@ -145,12 +145,12 @@ function D(e, t, n, i, o) {
 
 function L(e, t, n, r, i) {
   let o = [];
-  return 0 === (o = w(e, t, n, r, i).sort(S).map(e => O(e))).length ? I(g.NW.string(g.t.nZfHsb)) : o
+  return 0 === (o = D(e, t, n, r, i).sort(S).map(e => O(e))).length ? I(g.NW.string(g.t.nZfHsb)) : o
 }
 
 function x(e, t, n, i, o) {
   let a = [];
-  return 0 === (a = D(e, t, n, i, o).sort(S).map(e => O(e, r.e$(e.permissions, i)))).length ? I(g.NW.string(g.t.nZfHsb)) : a
+  return 0 === (a = w(e, t, n, i, o).sort(S).map(e => O(e, r.e$(e.permissions, i)))).length ? I(g.NW.string(g.t.nZfHsb)) : a
 }
 
 function M(e, t) {
@@ -158,17 +158,17 @@ function M(e, t) {
   return null !== (n = l.ZP.getNick(t.id, e.id)) && void 0 !== n ? n : _.ZP.getName(e)
 }
 
-function k(e, t) {
+function j(e, t) {
   return t.isOwner(e)
 }
 
-function j(e, t) {
+function k(e, t) {
   return t.isOwner(e) ? h.aC.OWNER : h.aC.MEMBER
 }
 
 function U(e, t) {
   var n;
-  let r = j(e, t);
+  let r = k(e, t);
   return {
     rowType: r,
     name: M(e, t),
@@ -178,7 +178,7 @@ function U(e, t) {
     avatarURL: e.getAvatarURL(t.id, 24),
     bot: e.bot,
     verifiedBot: e.isVerifiedBot(),
-    disabled: k(e, t),
+    disabled: j(e, t),
     key: "".concat(r, ":").concat(e.id)
   }
 }
@@ -192,15 +192,15 @@ function B(e, t, n, r) {
   return e.map(c.default.getUser).filter(d.lm).filter(e => !n.isOwner(e) && T(t, e.id, r) && (i(M(e, n)) || i(e.username) || i(e.discriminator))).map(e => U(e, n)).sort(G)
 }
 
-function Z(e, t, n, r, i) {
-  return e.map(c.default.getUser).filter(d.lm).filter(e => !T(t, e.id, r, i) || k(e, n))
-}
-
 function F(e, t, n, r, i) {
-  return Z(e, t, n, r, i).map(e => U(e, n)).sort(G)
+  return e.map(c.default.getUser).filter(d.lm).filter(e => !T(t, e.id, r, i) || j(e, n))
 }
 
-function V(e, t) {
+function V(e, t, n, r, i) {
+  return F(e, t, n, r, i).map(e => U(e, n)).sort(G)
+}
+
+function Z(e, t) {
   switch (e) {
     case h.aC.ROLE:
       return g.NW.string(g.t.ZxoFOD);

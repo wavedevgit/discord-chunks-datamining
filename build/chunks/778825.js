@@ -2,7 +2,7 @@
 "use strict";
 let r, i, o, a, s, l, c, u, d, f, p, _;
 n.d(t, {
-  Z: () => V
+  Z: () => Z
 });
 var h, m = n(442837),
   g = n(570140),
@@ -66,14 +66,14 @@ function P(e) {
   o = t
 }
 
-function w(e) {
+function D(e) {
   let {
     profileEffectId: t
   } = e;
   a = t
 }
 
-function D(e) {
+function w(e) {
   let {
     banner: t
   } = e;
@@ -101,14 +101,14 @@ function M(e) {
   u = t
 }
 
-function k(e) {
+function j(e) {
   let {
     themeColors: t
   } = e;
   d = t
 }
 
-function j() {
+function k() {
   U(), G(), y = {}, b = E.QZA.OPEN
 }
 
@@ -124,10 +124,10 @@ function B() {
   y = {}
 }
 
-function Z() {
-  j(), S()
+function F() {
+  k(), S()
 }
-class F extends(h = m.ZP.Store) {
+class V extends(h = m.ZP.Store) {
   getFormState() {
     return b
   }
@@ -193,10 +193,10 @@ class F extends(h = m.ZP.Store) {
     return _
   }
 }
-v(F, "displayName", "GuildIdentitySettingsStore");
-let V = new F(g.Z, {
+v(V, "displayName", "GuildIdentitySettingsStore");
+let Z = new V(g.Z, {
   GUILD_IDENTITY_SETTINGS_INIT: O,
-  GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: Z,
+  GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: F,
   GUILD_IDENTITY_SETTINGS_SET_GUILD: T,
   GUILD_IDENTITY_SETTINGS_SUBMIT: I,
   GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: N,
@@ -204,15 +204,15 @@ let V = new F(g.Z, {
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: C,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_V2: R,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_DECORATION: P,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT_ID: w,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: D,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT_ID: D,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: w,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: L,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: x,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: M,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: k,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: j,
   GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: U,
   GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: G,
-  GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: j,
-  GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: j,
+  GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: k,
+  GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: k,
   GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: B
 })

@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Vi: () => C,
-  W1: () => D,
-  k: () => w,
+  W1: () => w,
+  k: () => D,
   l2: () => P
 });
 var r = n(913527),
@@ -129,7 +129,7 @@ async function P() {
   let e = O.Z.bogoPromotion;
   !(null != e && new Date(e.endDate).valueOf() >= Date.now()) && await (0, b.L9)()
 }
-async function w() {
+async function D() {
   let e = O.Z.bogoPromotion,
     t = null != e && new Date(e.endDate).valueOf() >= Date.now() && new Date(e.startDate).valueOf() <= Date.now(),
     n = await R(),
@@ -150,7 +150,7 @@ async function w() {
   return t && i && r && n
 }
 
-function D() {
+function w() {
   switch (l.default.locale) {
     case "de":
     case "es-ES":

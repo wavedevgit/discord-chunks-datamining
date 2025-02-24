@@ -1,19 +1,19 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r = n(67867),
-  i = n(294377),
-  o = n(414629),
-  a = n(197859),
+var r = n(766362),
+  o = n(294377),
+  a = n(414629),
+  i = n(197859),
   s = n(732116).CONSTRUCTOR,
-  l = n(607672),
-  c = i("Promise"),
-  u = o && !s;
+  c = n(607672),
+  l = o("Promise"),
+  u = a && !s;
 r({
   target: "Promise",
   stat: !0,
-  forced: o || s
+  forced: a || s
 }, {
   resolve: function(e) {
-    return l(u && this === c ? a : this, e)
+    return c(u && this === l ? i : this, e)
   }
 })

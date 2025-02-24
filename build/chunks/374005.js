@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(746508),
   p = n(210724),
   h = n(905423),
-  g = n(316173),
-  f = n(410575),
+  f = n(316173),
+  g = n(410575),
   m = n(981631),
   b = n(388032),
   _ = n(972929);
@@ -60,26 +60,26 @@ function E(e) {
 let O = i.memo(function() {
   let e = (0, a.Q3)("AppPanels"),
     t = i.useRef(null);
-  return (0, o.P)(t, t => {
+  return (0, o.P)(t, e => {
     let {
-      height: n
-    } = t;
-    e && document.body.style.setProperty("--custom-app-panels-height", "".concat(n, "px"))
+      height: t
+    } = e;
+    document.body.style.setProperty("--custom-app-panels-height", "".concat(t, "px"))
   }, []), (0, r.jsx)("section", {
     ref: t,
     className: _.panels,
     "aria-label": b.NW.string(b.t.StREWF),
     children: (0, r.jsxs)(l.Jc, {
       containerRef: t,
-      children: [e && (0, r.jsx)(g.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(u.Z, {}), (0, r.jsx)(f.Z, {
+      children: [e && (0, r.jsx)(f.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(u.Z, {}), (0, r.jsx)(g.Z, {
         section: m.jXE.ACTIVITY_PANEL,
         children: (0, r.jsx)(E, {
           className: _.activityPanel
         })
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(g.Z, {
         section: m.jXE.RTC_CONNECTION_PANEL,
         children: (0, r.jsx)(d.Z, {})
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(g.Z, {
         section: m.jXE.ACCOUNT_PANEL,
         children: (0, r.jsx)(s.Z, {})
       })]

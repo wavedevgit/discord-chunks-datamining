@@ -109,7 +109,7 @@ function R(e) {
     r = e.guild_scheduled_event_id;
   null == I[r] && (I[r] = {});
   let i = C(e.guild_scheduled_event_exception_id);
-  null == I[r][i] && (I[r][i] = {}), I[r][i][e.user_id] = e, t && D(e), n && (y += 1)
+  null == I[r][i] && (I[r][i] = {}), I[r][i][e.user_id] = e, t && w(e), n && (y += 1)
 }
 
 function P(e) {
@@ -121,23 +121,23 @@ function P(e) {
   (s || !l) && (null === (i = I[e.guild_scheduled_event_id]) || void 0 === i || null === (r = i[a]) || void 0 === r || delete r[e.user_id], L(e), o && (y += 1))
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   let r = C(t);
   null == T[e] && (T[e] = {}), T[e][r] = n
 }
 
-function D(e) {
+function w(e) {
   var t, n;
   let r = C(e.guild_scheduled_event_exception_id),
     i = (null !== (n = null === (t = T[e.guild_scheduled_event_id]) || void 0 === t ? void 0 : t[r]) && void 0 !== n ? n : 0) + (null != e.guild_scheduled_event_exception_id && e.response === f.gv.UNINTERESTED || null == e.guild_scheduled_event_exception_id && e.response === f.gv.INTERESTED ? 1 : -1);
-  w(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i)
+  D(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i)
 }
 
 function L(e) {
   var t, n;
   let r = C(e.guild_scheduled_event_exception_id),
     i = (null !== (n = null === (t = T[e.guild_scheduled_event_id]) || void 0 === t ? void 0 : t[r]) && void 0 !== n ? n : 0) + (null != e.guild_scheduled_event_exception_id && e.response === f.gv.UNINTERESTED || null == e.guild_scheduled_event_exception_id && e.response === f.gv.INTERESTED ? -1 : 1);
-  w(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i)
+  D(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i)
 }
 
 function x(e) {
@@ -154,7 +154,7 @@ function M(e) {
   N(t)
 }
 
-function k(e) {
+function j(e) {
   let {
     guildId: t,
     guildScheduledEvents: n
@@ -165,7 +165,7 @@ function k(e) {
   return !0
 }
 
-function j(e) {
+function k(e) {
   let {
     guild: t
   } = e;
@@ -190,14 +190,14 @@ function B(e) {
   return N(t), !0
 }
 
-function Z(e) {
+function F(e) {
   let {
     guildScheduledEvent: t
   } = e;
   return A(t.id), !0
 }
 
-function F(e) {
+function V(e) {
   let {
     eventException: t
   } = e, n = b.get(t.event_id);
@@ -209,7 +209,7 @@ function F(e) {
   })), !0
 }
 
-function V(e) {
+function Z(e) {
   let {
     eventException: t
   } = e, n = b.get(t.event_id);
@@ -283,8 +283,8 @@ function q(e) {
     eventId: t,
     counts: n
   } = e;
-  w(t, null, n.eventCount), d.default.forEachKey(n.recurrenceCounts, e => {
-    w(t, e, n.eventCount - n.recurrenceCounts[e])
+  D(t, null, n.eventCount), d.default.forEachKey(n.recurrenceCounts, e => {
+    D(t, e, n.eventCount - n.recurrenceCounts[e])
   })
 }
 
@@ -369,22 +369,22 @@ class et extends(r = a.ZP.Store) {
 p(et, "displayName", "GuildScheduledEventStore");
 let en = new et(l.Z, {
   CONNECTION_OPEN: x,
-  GUILD_CREATE: j,
+  GUILD_CREATE: k,
   GUILD_DELETE: U,
   FETCH_GUILD_EVENT: M,
-  FETCH_GUILD_EVENTS_FOR_GUILD: k,
+  FETCH_GUILD_EVENTS_FOR_GUILD: j,
   GUILD_SCHEDULED_EVENT_CREATE: B,
   GUILD_SCHEDULED_EVENT_UPDATE: B,
-  GUILD_SCHEDULED_EVENT_DELETE: Z,
+  GUILD_SCHEDULED_EVENT_DELETE: F,
   GUILD_SCHEDULED_EVENT_USER_ADD: K,
   GUILD_SCHEDULED_EVENT_USER_REMOVE: z,
   GUILD_SCHEDULED_EVENT_RSVPS_FETCH_SUCESS: W,
   GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: Y,
   GUILD_SCHEDULED_EVENT_USER_COUNTS_FETCH_SUCCESS: q,
   INVITE_RESOLVE_SUCCESS: X,
-  GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: F,
-  GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: F,
-  GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: V,
+  GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: V,
+  GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: V,
+  GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: Z,
   GUILD_SCHEDULED_EVENT_EXCEPTIONS_DELETE: H,
   LOGOUT: Q
 })

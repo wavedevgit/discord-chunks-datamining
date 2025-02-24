@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L6: () => w,
+  L6: () => D,
   ZP: () => E,
   iF: () => P
 }), n(47120), n(301563), n(411104), n(653041), n(757143);
@@ -215,7 +215,7 @@ function P(e, t) {
   return n % 2 != 0
 }
 
-function w(e) {
+function D(e) {
   if (null == e.selection) return !1;
   let t = d.M8.start(e.selection);
   return P(e, t)

@@ -1,17 +1,17 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(726433),
-  i = n(729605),
-  o = n(937443).f,
-  a = n(960081),
+var e = n(726433),
+  o = n(729605),
+  i = n(937443).f,
+  u = n(960081),
   s = "object" == typeof window && window && Object.getOwnPropertyNames ? Object.getOwnPropertyNames(window) : [],
-  l = function(e) {
+  c = function(t) {
     try {
-      return o(e)
-    } catch (e) {
-      return a(s)
+      return i(t)
+    } catch (t) {
+      return u(s)
     }
   };
-e.exports.f = function(e) {
-  return s && "Window" === r(e) ? l(e) : o(i(e))
+t.exports.f = function(t) {
+  return s && "Window" === e(t) ? c(t) : i(o(t))
 }

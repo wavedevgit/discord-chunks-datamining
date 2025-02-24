@@ -62,7 +62,7 @@ let y = function(e) {
     P = i.useCallback(e => {
       O(e), C(!1)
     }, [O]),
-    w = i.useCallback(() => {
+    D = i.useCallback(() => {
       (0, _.s)({
         channelId: t.id,
         onRedeem: () => {},
@@ -99,7 +99,7 @@ let y = function(e) {
       children: [(0, r.jsx)(l.zxk, {
         look: l.zxk.Looks.LINK,
         size: l.zxk.Sizes.SMALL,
-        onClick: w,
+        onClick: D,
         color: l.zxk.Colors.TRANSPARENT,
         className: v.learnMoreButton,
         children: (0, r.jsx)(s.xv, {

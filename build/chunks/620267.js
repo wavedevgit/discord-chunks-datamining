@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-function t(e, t, n) {
-  switch (n.length) {
+/** Chunk was on 26436 **/
+e.exports = function(e, t, r) {
+  switch (r.length) {
     case 0:
       return e.call(t);
     case 1:
-      return e.call(t, n[0]);
+      return e.call(t, r[0]);
     case 2:
-      return e.call(t, n[0], n[1]);
+      return e.call(t, r[0], r[1]);
     case 3:
-      return e.call(t, n[0], n[1], n[2])
+      return e.call(t, r[0], r[1], r[2])
   }
-  return e.apply(t, n)
+  return e.apply(t, r)
 }
-e.exports = t

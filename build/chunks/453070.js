@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Go: () => R,
-  LZ: () => D,
+  LZ: () => w,
   Pq: () => O,
   RJ: () => P,
   Sd: () => M,
@@ -184,15 +184,15 @@ function P() {
   return (0, i.Wu)([g.Z], () => e.map(e => g.Z.getStickerById(e)).filter(e => null != e && (!(0, v.J8)(e) || (0, v.V9)(e))), [e])
 }
 
-function w() {
+function D() {
   var e, t;
   let n = (0, s.D)(),
     r = C;
   return (null == n ? void 0 : null === (e = n.stickerFrecency) || void 0 === e ? void 0 : e.stickers) != null && (r = Object.keys(null == n ? void 0 : null === (t = n.stickerFrecency) || void 0 === t ? void 0 : t.stickers)), r
 }
 
-function D() {
-  let e = w();
+function w() {
+  let e = D();
   return (0, i.Wu)([g.Z], () => e.map(e => g.Z.getStickerById(e)).filter(e => void 0 !== e), [e])
 }
 let L = e => {

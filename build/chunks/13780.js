@@ -1,8 +1,8 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(875604),
-  i = TypeError;
-e.exports = function(e, t) {
-  if (r(t, e)) return e;
-  throw new i("Incorrect invocation")
+var e = n(875604),
+  o = TypeError;
+t.exports = function(t, r) {
+  if (e(r, t)) return t;
+  throw new o("Incorrect invocation")
 }

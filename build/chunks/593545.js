@@ -266,7 +266,7 @@ function C(e) {
   }));
   let R = (null == v ? void 0 : v.slice(0, y).join("\n")) + C,
     P = (0, u.yx)(R),
-    w = c || y < b;
+    D = c || y < b;
   return (0, r.jsxs)("div", {
     className: a()(E, h.container),
     children: [(0, r.jsx)("div", {
@@ -283,7 +283,7 @@ function C(e) {
       color: "header-secondary",
       className: h.footer,
       variant: "text-sm/normal",
-      children: [w ? (0, r.jsxs)(r.Fragment, {
+      children: [D ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(I, {
           expanded: c,
           setExpanded: d,

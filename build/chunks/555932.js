@@ -82,8 +82,8 @@ function y(e) {
     progressBarFillWidthFactor: C,
     isProgressBarAnimationComplete: R,
     setShouldFireConfetti: P,
-    shouldFireConfetti: w,
-    tierMarkerAnimationPosition: D
+    shouldFireConfetti: D,
+    tierMarkerAnimationPosition: w
   } = b({
     fillFactor: t.premiumTier === f.Eu4.TIER_3 ? 1 : T * (A - N) + N,
     isRevealed: s || n,
@@ -130,12 +130,12 @@ function y(e) {
       setConfettiCount: E,
       setShouldFireConfetti: P,
       tier: e,
-      tierMarkerAnimationPosition: D,
+      tierMarkerAnimationPosition: w,
       children: (0, c.nW)(e)
     }, e)), (0, r.jsx)(u.Z, {
       confettiCount: g,
       confettiTriggerRef: y,
-      isFiring: w
+      isFiring: D
     })]
   })
 }

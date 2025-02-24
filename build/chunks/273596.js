@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(626135),
   p = n(823379),
   h = n(900849),
-  g = n(356164),
-  f = n(164991),
+  f = n(356164),
+  g = n(164991),
   m = n(726115),
   b = n(28494),
   _ = n(746728),
@@ -80,7 +80,7 @@ function j(e) {
       loadId: t,
       searchId: L,
       query: y,
-      guildResults: s.map(g.Z.getGuild).filter(p.lm),
+      guildResults: s.map(f.Z.getGuild).filter(p.lm),
       analyticsContext: x,
       categoryId: A
     })
@@ -152,7 +152,7 @@ function j(e) {
       var i, o;
       await l(e, t, n, r);
       let a = null === (o = W.current) || void 0 === o ? void 0 : null === (i = o.getScrollerState()) || void 0 === i ? void 0 : i.scrollTop;
-      null != a && f.Z.setState({
+      null != a && g.Z.setState({
         scrollPosition: a
       })
     }, [l]),
@@ -175,19 +175,19 @@ function j(e) {
     return () => {
       var t;
       let n = null == e ? void 0 : null === (t = e.getScrollerState()) || void 0 === t ? void 0 : t.scrollTop;
-      null != n && f.Z.setState({
+      null != n && g.Z.setState({
         scrollPosition: n
       })
     }
   }, []), i.useLayoutEffect(() => {
-    let e = f.Z.getField("scrollPosition");
+    let e = g.Z.getField("scrollPosition");
     null != e && setTimeout(() => {
       var t;
       null === (t = W.current) || void 0 === t || t.scrollTo({
         to: e,
         animate: !1,
         callback: () => {
-          f.Z.setState({
+          g.Z.setState({
             scrollPosition: null
           })
         }

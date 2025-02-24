@@ -31,19 +31,19 @@ var r = n(200651),
   C = n(937995),
   R = n(618158),
   P = n(922745),
-  w = n(197016),
-  D = n(800965),
+  D = n(197016),
+  w = n(800965),
   L = n(445062),
   x = n(7188),
   M = n(199902),
-  k = n(314897),
-  j = n(131951),
+  j = n(314897),
+  k = n(131951),
   U = n(699516),
   G = n(594174),
   B = n(248402),
-  Z = n(33039),
-  F = n(451478),
-  V = n(626135),
+  F = n(33039),
+  V = n(451478),
+  Z = n(626135),
   H = n(5192),
   W = n(51144),
   Y = n(484286),
@@ -142,7 +142,7 @@ class el extends i.PureComponent {
     let {
       channel: e
     } = this.props;
-    V.default.track(ee.rMx.VIDEO_LAYOUT_TOGGLED, eo({
+    Z.default.track(ee.rMx.VIDEO_LAYOUT_TOGGLED, eo({
       video_layout: "pip"
     }, (0, m.AB)(e.id)))
   }
@@ -150,7 +150,7 @@ class el extends i.PureComponent {
     let {
       channel: e
     } = this.props;
-    V.default.track(ee.rMx.VIDEO_LAYOUT_TOGGLED, eo({
+    Z.default.track(ee.rMx.VIDEO_LAYOUT_TOGGLED, eo({
       video_layout: g.Z.getLayout(e.id)
     }, (0, m.AB)(e.id)))
   }
@@ -209,11 +209,11 @@ class el extends i.PureComponent {
       participantOnScreen: n,
       isVideoEnabled: i,
       width: o
-    } = this.props, a = (0, b.F6)(e, G.default, U.Z), s = (null == n ? void 0 : n.id) === k.default.getId() && i, l = this.renderStreamState(), c = null;
+    } = this.props, a = (0, b.F6)(e, G.default, U.Z), s = (null == n ? void 0 : n.id) === j.default.getId() && i, l = this.renderStreamState(), c = null;
     return (null == n ? void 0 : n.type) !== et.fO.ACTIVITY && (null != l ? c = l : ((null == n ? void 0 : n.type) === et.fO.USER || (null == n ? void 0 : n.type) === et.fO.STREAM) && (c = (0, r.jsx)(Y.Z, {
       paused: this.streamerPaused,
       streamId: t,
-      component: j.Z.getVideoComponent(),
+      component: k.Z.getVideoComponent(),
       mirror: s,
       children: (0, r.jsx)(T.Z, {
         size: u.EFr.SIZE_80,
@@ -299,7 +299,7 @@ class el extends i.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [o ? this.renderViewersIcon() : null, e ? this.renderSettingsIcon() : null, t ? this.renderPopoutIcon() : null, i ? this.renderStopStreamButton() : null, n ? this.renderDisconnectButton() : null]
       })
-    }), ei(this, "renderDisconnectButton", () => (0, r.jsx)(w.Z, {
+    }), ei(this, "renderDisconnectButton", () => (0, r.jsx)(D.Z, {
       className: en.rightTrayIcon
     })), ei(this, "renderStopStreamButton", () => {
       let {
@@ -324,7 +324,7 @@ class el extends i.PureComponent {
           compact: !0
         })
       })
-    }), ei(this, "renderPopoutIcon", () => (0, r.jsx)(D.Z, {
+    }), ei(this, "renderPopoutIcon", () => (0, r.jsx)(w.Z, {
       className: en.rightTrayIcon,
       popoutOpen: !1,
       onOpenPopout: this.handleOpenPopout,
@@ -344,10 +344,10 @@ class el extends i.PureComponent {
     })
   }
 }
-let ec = c.ZP.connectStores([j.Z, B.Z, g.Z, k.default, M.Z, Z.Z, F.Z], e => {
+let ec = c.ZP.connectStores([k.Z, B.Z, g.Z, j.default, M.Z, F.Z, V.Z], e => {
   let {
     channel: t
-  } = e, n = B.Z.getSpeaker(t.id), r = g.Z.getParticipant(t.id, n), i = l()(j.Z.getVideoDevices()).values().first(), o = null == i || i.disabled, a = null != r && r.type !== et.fO.ACTIVITY && r.type !== et.fO.HIDDEN_STREAM ? Z.Z.getStreamId(r.user.id, t.getGuildId(), (0, E.Z)(r.type)) : null, s = !1 === o, c = !o && j.Z.isVideoEnabled(), u = (0, O.Z)(j.Z), d = k.default.getId(), f = M.Z.getCurrentUserActiveStream(), p = !1;
+  } = e, n = B.Z.getSpeaker(t.id), r = g.Z.getParticipant(t.id, n), i = l()(k.Z.getVideoDevices()).values().first(), o = null == i || i.disabled, a = null != r && r.type !== et.fO.ACTIVITY && r.type !== et.fO.HIDDEN_STREAM ? F.Z.getStreamId(r.user.id, t.getGuildId(), (0, E.Z)(r.type)) : null, s = !1 === o, c = !o && k.Z.isVideoEnabled(), u = (0, O.Z)(k.Z), d = j.default.getId(), f = M.Z.getCurrentUserActiveStream(), p = !1;
   return {
     channel: t,
     streamId: a,
@@ -358,7 +358,7 @@ let ec = c.ZP.connectStores([j.Z, B.Z, g.Z, k.default, M.Z, Z.Z, F.Z], e => {
     currentUserId: d,
     activeStreams: M.Z.getAllActiveStreams(),
     activeSelfStream: f,
-    isMainWindowFocused: F.Z.isFocused(),
+    isMainWindowFocused: V.Z.isFocused(),
     isOverlayRenderingVideo: p
   }
 })(el)

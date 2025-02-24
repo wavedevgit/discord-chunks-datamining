@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
+r.d(t, {
   Z: () => a
 });
-var r = n(176338),
-  i = n(370873),
-  o = "[object Arguments]";
+var n = r(176338),
+  o = r(370873);
 let a = function(e) {
-  return (0, i.Z)(e) && (0, r.Z)(e) == o
+  return (0, o.Z)(e) && "[object Arguments]" == (0, n.Z)(e)
 }

@@ -35,10 +35,10 @@ let m = e => {
     } = e,
     R = (0, p.Q3)("ConfirmModal"),
     P = R ? a.zx.Sizes.MEDIUM : a.zx.Sizes.LARGE,
-    w = () => {
+    D = () => {
       null == S || S(), null == O || O()
     },
-    D = e => {
+    w = e => {
       null != e && e.preventDefault(), null == S || S(), null == I || I()
     },
     L = () => {
@@ -48,7 +48,7 @@ let m = e => {
     type: "button",
     size: P,
     color: a.zx.Colors.PRIMARY,
-    onClick: w,
+    onClick: D,
     className: h.secondaryButton,
     children: g
   })), null != b && "" !== b && (n = (0, r.jsx)(a.zx, {
@@ -72,7 +72,7 @@ let m = e => {
     className: o()(E, h.container),
     "aria-label": N,
     children: (0, r.jsxs)("form", {
-      onSubmit: D,
+      onSubmit: w,
       className: h.form,
       children: [(0, r.jsx)(c.xB, {
         children: null != N && R ? (0, r.jsx)(d.X6q, {

@@ -50,14 +50,14 @@ function N(e) {
       useForcedColors: R,
       systemForcedColors: P
     } = p,
-    w = (0, u.e7)([m.Z], () => m.Z.confettiMode),
-    D = (0, l.TH)(),
-    L = i.useMemo(() => T.has(D.pathname), [D.pathname]);
+    D = (0, u.e7)([m.Z], () => m.Z.confettiMode),
+    w = (0, l.TH)(),
+    L = i.useMemo(() => T.has(w.pathname), [w.pathname]);
   (0, O.Z)(window, L);
   let x = (0, S.Z)(window, __OVERLAY__ || n),
     M = (0, u.e7)([h.Z], () => h.Z.sidebarWidth),
-    k = (0, f.bWb)().enabled,
-    j = (0, _.Q3)("AppHelmet"),
+    j = (0, f.bWb)().enabled,
+    k = (0, _.Q3)("AppHelmet"),
     U = (0, _.R6)("AppHelmet");
   return (0, r.jsx)("html", {
     lang: t,
@@ -72,10 +72,10 @@ function N(e) {
       "desaturate-user-colors": C,
       "disable-forced-colors": !R && "active" === P,
       "enable-forced-colors": R,
-      "show-redesigned-icons": k,
-      "visual-refresh": j,
+      "show-redesigned-icons": j,
+      "visual-refresh": k,
       "visual-refresh-chat-input": U,
-      "confetti-mode": w
+      "confetti-mode": D
     }, (0, f.QeD)(o), "density-".concat(s), (0, v.Z)(), N)
   })
 }

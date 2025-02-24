@@ -1,5 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
 var r = n(668530),
-  i = n(726433);
-e.exports = "process" === i(r.process)
+  o = n(726433);
+e.exports = "process" === o(r.process)

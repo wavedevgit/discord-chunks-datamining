@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => k
+  Z: () => j
 }), n(47120);
 var i, o = n(442837),
   a = n(433517),
@@ -94,7 +94,7 @@ function P(e) {
   return A(t)
 }
 
-function w(e) {
+function D(e) {
   let {
     x: t,
     y: n
@@ -105,7 +105,7 @@ function w(e) {
   }, a.K.set(E, r), !1
 }
 
-function D(e) {
+function w(e) {
   let {
     channel: t
   } = e;
@@ -142,13 +142,13 @@ class M extends(i = o.ZP.Store) {
   }
 }
 g(M, "displayName", "IncomingCallStore");
-let k = new M(s.Z, {
+let j = new M(s.Z, {
   CALL_CREATE: C,
   CALL_UPDATE: C,
   CALL_DELETE: R,
   GUILD_RING_START: C,
   GUILD_RING_STOP: R,
   VOICE_CHANNEL_SELECT: P,
-  INCOMING_CALL_MOVE: w,
-  CHANNEL_DELETE: D
+  INCOMING_CALL_MOVE: D,
+  CHANNEL_DELETE: w
 })

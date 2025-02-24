@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $R: () => w,
+  $R: () => D,
   C7: () => N,
   Ek: () => S,
   Gu: () => U,
   JQ: () => T,
   NE: () => E,
-  RG: () => D,
+  RG: () => w,
   Xb: () => M,
   Xu: () => b,
-  Y: () => j,
+  Y: () => k,
   cD: () => y,
   ki: () => v,
   kn: () => P,
@@ -123,17 +123,17 @@ function R(e) {
 
 function P(e) {
   let t = A(e, p.Z),
-    n = k(e);
+    n = j(e);
   return C(e, t, n)
 }
 
-function w(e) {
+function D(e) {
   var t;
   let n = (0, a.e7)([p.Z], () => null != e && p.Z.can(m.Plq.SEND_MESSAGES_IN_THREADS, e));
   return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null === (t = e.threadMetadata) || void 0 === t ? void 0 : t.locked) !== !0 && n)
 }
 
-function D(e) {
+function w(e) {
   var t;
   return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null === (t = e.threadMetadata) || void 0 === t ? void 0 : t.locked) !== !0 && p.Z.can(m.Plq.SEND_MESSAGES_IN_THREADS, e))
 }
@@ -151,14 +151,14 @@ function M(e) {
   return (0, a.e7)([p.Z], () => x(e, p.Z))
 }
 
-function k(e) {
+function j(e) {
   return x(e, p.Z)
 }
 
-function j(e) {
+function k(e) {
   let t = (0, l.Z)(),
     n = (0, a.e7)([p.Z], () => p.Z.can(m.Plq.CONNECT, e)),
-    r = w(e),
+    r = D(e),
     i = g.useExperiment({
       guildId: e.guild_id,
       location: "e791ea_1"

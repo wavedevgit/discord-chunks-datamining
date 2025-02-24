@@ -32,7 +32,7 @@ var r = n(200651),
   R = n(388032),
   P = n(566076);
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,14 +41,14 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -81,15 +81,15 @@ function x(e) {
     badges: t,
     className: n,
     badgeClassName: o,
-    displayProfile: w,
+    displayProfile: D,
     onClose: x
   } = e, {
     analyticsLocations: M
   } = (0, u.ZP)(c.Z.BADGE), {
-    context: k,
-    trackUserProfileAction: j
-  } = (0, y.KZ)(), [U, G] = i.useState(!1), B = g.default.getCurrentUser(), Z = (0, v.yd)(null == B ? void 0 : B.premiumType, A.p9.TIER_2), {
-    isBadgeVersion2: F
+    context: j,
+    trackUserProfileAction: k
+  } = (0, y.KZ)(), [U, G] = i.useState(!1), B = g.default.getCurrentUser(), F = (0, v.yd)(null == B ? void 0 : B.premiumType, A.p9.TIER_2), {
+    isBadgeVersion2: V
   } = (0, d.D)();
   return (0, r.jsx)("div", {
     className: a()(P.container, n),
@@ -97,26 +97,26 @@ function x(e) {
     role: "group",
     children: t.map(e => {
       let t = (0, b.fv)(e.id),
-        n = F && (null != t || e.id === C.a),
+        n = V && (null != t || e.id === C.a),
         i = t => {
-          if (j({
+          if (k({
               action: "PRESS_BADGE"
-            }), (0, O.NE)(D({
+            }), (0, O.NE)(w({
               badge: e.id,
               analyticsLocations: M
-            }, k)), n) {
+            }, j)), n) {
             if (t.preventDefault(), E.default.track(N.rMx.TIERED_TENURE_BADGE_CLICKED, {
                 badge: e.id,
-                premium_type: Z,
-                viewed_user_id: null == w ? void 0 : w.userId
-              }), Z) {
-              (null == w ? void 0 : w.userId) === (null == B ? void 0 : B.id) ? (0, m.uL)(N.Z5c.NITRO_HOME) : (0, p.k)({
+                premium_type: F,
+                viewed_user_id: null == D ? void 0 : D.userId
+              }), F) {
+              (null == D ? void 0 : D.userId) === (null == B ? void 0 : B.id) ? (0, m.uL)(N.Z5c.NITRO_HOME) : (0, p.k)({
                 analyticsLocations: M,
-                displayProfile: w
+                displayProfile: D
               }), null == x || x();
               return
             }
-            if ((null == w ? void 0 : w.userId) === (null == B ? void 0 : B.id)) {
+            if ((null == D ? void 0 : D.userId) === (null == B ? void 0 : B.id)) {
               let n = null != e.link ? (0, l.default)(e.link, {
                 analyticsLocations: M
               }) : null;
@@ -125,7 +125,7 @@ function x(e) {
             }
             return (0, p.k)({
               analyticsLocations: M,
-              displayProfile: w
+              displayProfile: D
             }), void(null == x || x())
           }
           let r = null != e.link ? (0, l.default)(e.link, {
@@ -134,12 +134,12 @@ function x(e) {
           if (null != r) return null == x || x(), r(t)
         },
         c = () => {
-          e.id === S.i && E.default.track(N.rMx.QUEST_CONTENT_VIEWED, D({}, (0, _.mH)(h.jn.QUEST_BADGE))), j({
+          e.id === S.i && E.default.track(N.rMx.QUEST_CONTENT_VIEWED, w({}, (0, _.mH)(h.jn.QUEST_BADGE))), k({
             action: "HOVER_BADGE"
-          }), (0, O.Qf)(D({
+          }), (0, O.Qf)(w({
             badge: e.id,
             analyticsLocations: M
-          }, k))
+          }, j))
         },
         u = L(null == t ? void 0 : t.id),
         d = null != t && U,

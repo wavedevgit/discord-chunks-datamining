@@ -53,7 +53,7 @@ function m(e) {
   let P = i.useCallback(() => {
       (null == O ? void 0 : O.id) != null && (u.Z.open(O.id, _.pNK.INTEGRATIONS), s.Z.setSection(_.b4C.APPLICATION, y), null == b || b())
     }, [y, null == O ? void 0 : O.id, b]),
-    w = i.useCallback(() => {
+    D = i.useCallback(() => {
       l.Z.open(_.oAB.AUTHORIZED_APPS);
       let e = "";
       null != g ? e = g.name : null != m && (e = m.username), "" !== e && d.J.setState({
@@ -61,14 +61,14 @@ function m(e) {
       }), null == b || b()
     }, [g, b, m]);
   if (v === _.IlC.POPOUT) return null;
-  let D = [];
-  return R && S && D.push((0, r.jsx)(a.sNh, {
+  let w = [];
+  return R && S && w.push((0, r.jsx)(a.sNh, {
     id: "manage-server-integration",
     label: h.NW.string(h.t.IuSJT0),
     action: P
-  }, "manage-server-integration")), C && D.push((0, r.jsx)(a.sNh, {
+  }, "manage-server-integration")), C && w.push((0, r.jsx)(a.sNh, {
     id: "manage-authorized-app",
     label: h.NW.string(h.t.V8ruv7),
-    action: w
-  }, "manage-authorized-app")), D
+    action: D
+  }, "manage-authorized-app")), w
 }

@@ -182,11 +182,11 @@ function s(e) {
       }, A],
       relevance: 2
     },
-    w = {
+    D = {
       scope: "string",
       match: i(/'/, a(/[^\\']/, /\\(?:.|\d{3}|x[a-fA-F\d]{2}|u[a-fA-F\d]{4}|U[a-fA-F\d]{8})/), /'/)
     };
-  return A.contains = [R, C, T, I, w, n, c, d, E, y, O, S, p, h], {
+  return A.contains = [R, C, T, I, D, n, c, d, E, y, O, S, p, h], {
     name: "F#",
     aliases: ["fs", "f#"],
     keywords: l,
@@ -195,13 +195,13 @@ function s(e) {
       "computation-expression": "keyword"
     },
     contains: [n, {
-      variants: [P, R, C, N, T, I, w]
+      variants: [P, R, C, N, T, I, D]
     }, c, d, b, {
       scope: "meta",
       begin: /\[</,
       end: />\]/,
       relevance: 2,
-      contains: [d, N, T, I, w, S]
+      contains: [d, N, T, I, D, S]
     }, v, E, y, O, S, p, h]
   }
 }

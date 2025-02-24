@@ -77,9 +77,9 @@ function I(e) {
         return t => (0, r.jsx)(e, S({}, t))
       })
     },
-    w = (0, c.un)(o.z.SOUNDBOARD_KEYBIND_TIP),
-    D = () => (0, c.EW)(o.z.SOUNDBOARD_KEYBIND_TIP),
-    L = null != R && (0, m.isWindows)() && !w ? b.NW.format(b.t.udMTtr, {
+    D = (0, c.un)(o.z.SOUNDBOARD_KEYBIND_TIP),
+    w = () => (0, c.EW)(o.z.SOUNDBOARD_KEYBIND_TIP),
+    L = null != R && (0, m.isWindows)() && !D ? b.NW.format(b.t.udMTtr, {
       keybind: (0, g.BB)(R.shortcut, !0),
       openSettingsHook: (e, t) => (0, r.jsx)(a.eee, {
         onClick: P,
@@ -101,7 +101,7 @@ function I(e) {
       children: L
     }), (0, r.jsx)(a.P3F, {
       className: y.closeButton,
-      onClick: D,
+      onClick: w,
       children: (0, r.jsx)(a.Dio, {
         size: "xs",
         color: "currentColor"

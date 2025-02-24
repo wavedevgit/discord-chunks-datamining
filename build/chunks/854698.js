@@ -4,10 +4,10 @@ n.d(t, {
   BP: () => X,
   DK: () => H,
   G3: () => _,
-  Ho: () => Z,
+  Ho: () => F,
   Ib: () => h,
   P8: () => C,
-  PJ: () => F,
+  PJ: () => V,
   Rp: () => W,
   Uq: () => G,
   Y4: () => B,
@@ -16,9 +16,9 @@ n.d(t, {
   ib: () => R,
   lh: () => J,
   mF: () => q,
-  ub: () => D,
-  v1: () => j,
-  x6: () => k,
+  ub: () => w,
+  v1: () => k,
+  x6: () => j,
   zi: () => Q
 }), n(47120), n(653041);
 var r = n(392711),
@@ -94,18 +94,18 @@ let R = () => {
     return e.minutes() >= 30 && (t += 1), e.hour(t).minutes(0).seconds(0)
   },
   P = (e, t) => (0, l.vc)(e, e.get("years") === t.get("years") ? m : g),
-  w = (e, t) => {
+  D = (e, t) => {
     let n = (0, l.wY)(e.toDate(), t.toDate());
     return n > 1 || n < 0 ? P(e, t) : (0, l.vc)(e, e.localeData().calendar(n < 1 ? "sameDay" : "nextDay", e, t))
   };
 
-function D(e, t, n) {
+function w(e, t, n) {
   null == n && (n = o()());
   let r = o()(e),
     i = null != t && "" !== t ? o()(t) : void 0,
     a = null != t && r.isSame(i, "day");
   return {
-    startDateTimeString: w(r, n),
+    startDateTimeString: D(r, n),
     endDateTimeString: null != i ? a ? i.format(E) : P(i, n) : void 0,
     currentOrPastEvent: r <= n,
     upcomingEvent: r <= o()().add(1, "hour"),
@@ -136,7 +136,7 @@ function M(e, t) {
   }
 }
 
-function k(e, t) {
+function j(e, t) {
   var n;
   if (null == t) return e;
   let r = null !== (n = t.scheduled_end_time) && void 0 !== n ? n : e.endDate;
@@ -146,7 +146,7 @@ function k(e, t) {
   }
 }
 
-function j(e) {
+function k(e) {
   return x(e.scheduledStartTime, e.scheduledEndTime)
 }
 
@@ -162,7 +162,7 @@ function B(e, t) {
   return null == e || null == t ? null == e && null == t : G(e.startDate, t.startDate) && G(e.endDate, t.endDate)
 }
 
-function Z(e) {
+function F(e) {
   var t;
   let n = null != e.byWeekday ? [...e.byWeekday] : null,
     r = null === (t = e.byNWeekday) || void 0 === t ? void 0 : t.map(e => new a.OG(e.day, e.n)),
@@ -180,7 +180,7 @@ function Z(e) {
   })
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     i = n > new Date ? n : new Date,
     o = new Date;
@@ -189,13 +189,13 @@ function F(e, t, n) {
   return r && a.length > 0 && n.getTime() === a[0].getTime() ? a.slice(1) : a.slice(0, e)
 }
 
-function V(e) {
+function Z(e) {
   return null == e.recurrence_rule ? null : new Date(e.scheduled_start_time)
 }
 
 function H(e) {
   if (null == e) return null;
-  let t = V(e);
+  let t = Z(e);
   return null != t ? u.default.fromTimestamp(Math.floor(t.getTime() / c.Z.Millis.SECOND) * c.Z.Millis.SECOND) : null
 }
 
@@ -306,7 +306,7 @@ function q(e, t) {
 
 function Q(e, t) {
   if (null == t) return d.z.NONE;
-  let n = Z(t);
+  let n = F(t);
   switch (n.options.freq) {
     case a.Ci.WEEKLY:
       if (n.options.interval < 1 || n.options.interval > 2) return d.z.NONE;

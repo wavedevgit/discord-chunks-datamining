@@ -66,8 +66,8 @@ let O = {
       C = _.Z.getVoiceStateForSession(f.default.getId(), A),
       R = (null == C ? void 0 : C.channelId) === t.id || p.Z.getChannelId() === _.Z.getCurrentClientVoiceChannelId(t.guild_id),
       P = c.Z.getBlockedUsersForVoiceChannel(t.id),
-      w = c.Z.getIgnoredUsersForVoiceChannel(t.id);
-    return ((0, l.B)(t.id) && (T = !0), T || O || s || !(P.size > 0) && !(w.size > 0)) ? !I && !O && (0, m._)(t) ? new Promise(e => {
+      D = c.Z.getIgnoredUsersForVoiceChannel(t.id);
+    return ((0, l.B)(t.id) && (T = !0), T || O || s || !(P.size > 0) && !(D.size > 0)) ? !I && !O && (0, m._)(t) ? new Promise(e => {
       (0, i.ZDy)(async () => {
         let {
           default: i
@@ -97,7 +97,7 @@ let O = {
           return (0, r.jsx)(i, {
             channelId: t.id,
             blockedUserIds: P,
-            ignoredUserIds: w,
+            ignoredUserIds: D,
             transitionState: a,
             onClose: o,
             onJoin: () => e(this.handleVoiceConnect({
@@ -117,7 +117,7 @@ let O = {
             action: E.q.DISMISS,
             channel_id: t.id,
             blocked_user_ids: Array.from(P),
-            ignored_user_ids: Array.from(w),
+            ignored_user_ids: Array.from(D),
             warning_surface: E.fz.PRE_JOIN_MODAL
           })
         }

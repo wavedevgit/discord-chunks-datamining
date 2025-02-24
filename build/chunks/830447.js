@@ -273,16 +273,16 @@ function A(e) {
     onInteraction: S
   } = e, A = I(h), C = T(A), P = i.useRef([]);
   l()(P.current, C) || (P.current = C);
-  let w = null === (t = A.find(e => null != e.key)) || void 0 === t ? void 0 : t.key,
-    D = (0, c.ZP)({
+  let D = null === (t = A.find(e => null != e.key)) || void 0 === t ? void 0 : t.key,
+    w = (0, c.ZP)({
       navId: n,
       items: P.current,
-      initialFocusPath: _.Z.keyboardModeEnabled && null != w ? [w] : [],
+      initialFocusPath: _.Z.keyboardModeEnabled && null != D ? [D] : [],
       closeMenu: v
     });
   i.useEffect(() => {
-    D.isUsingKeyboardNavigation ? _.Z.keyboardModeEnabled || (0, p.Qj)() : _.Z.keyboardModeEnabled && (0, p.rf)()
-  }, [D.isUsingKeyboardNavigation]);
+    w.isUsingKeyboardNavigation ? _.Z.keyboardModeEnabled || (0, p.Qj)() : _.Z.keyboardModeEnabled && (0, p.rf)()
+  }, [w.isUsingKeyboardNavigation]);
   let L = i.useRef(null);
   (0, u.T)(L);
   let x = s ? d.u2 : d.zJ,
@@ -294,7 +294,7 @@ function A(e) {
     value: M,
     children: (0, r.jsx)("div", O(b({
       className: a()(E.menu, E[o], f)
-    }, D.getContainerProps()), {
+    }, w.getContainerProps()), {
       ref: L,
       "aria-label": e["aria-label"],
       children: (0, r.jsxs)(x, {
@@ -302,13 +302,13 @@ function A(e) {
         children: [0 === A.length && (0, r.jsx)(g.ck, {
           disabled: !0,
           label: () => (0, r.jsx)(R, {}),
-          menuItemProps: D.getItemProps({
+          menuItemProps: w.getItemProps({
             path: ["empty"]
           }),
           isFocused: !1,
           onFocus: () => {},
           onClose: v
-        }), A.length > 0 && N(A, D, [], v)]
+        }), A.length > 0 && N(A, w, [], v)]
       })
     }))
   })

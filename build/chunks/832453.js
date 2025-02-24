@@ -1,10 +1,10 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r = n(67867),
-  i = n(668530);
+var r = n(766362),
+  o = n(668530);
 r({
   global: !0,
-  forced: i.globalThis !== i
+  forced: o.globalThis !== o
 }, {
-  globalThis: i
+  globalThis: o
 })

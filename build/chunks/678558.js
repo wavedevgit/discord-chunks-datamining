@@ -90,18 +90,18 @@ let C = e => {
     closeLayer: C = () => {},
     pauseAnimation: R = !1,
     applicationId: P,
-    handleSubscribeModalClose: w,
-    withHighlight: D = !1,
+    handleSubscribeModalClose: D,
+    withHighlight: w = !1,
     icon: L
   } = e, x = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon"]), {
     analyticsLocations: M
-  } = (0, u.ZP)(), k = (0, c.bp)() === E.IlC.POPOUT, [j, U] = i.useState(!1), {
+  } = (0, u.ZP)(), j = (0, c.bp)() === E.IlC.POPOUT, [k, U] = i.useState(!1), {
     fractionalState: G
   } = (0, d.Z)(), B = (0, p.W)();
   _.Z.hasFetched || (0, l.X8)();
-  let Z = (0, m.vx)(_.Z.boostSlots),
-    F = null != I ? Math.max((0, m.KK)(o, I), 1) : 1,
-    V = (0, m.aq)({
+  let F = (0, m.vx)(_.Z.boostSlots),
+    V = null != I ? Math.max((0, m.KK)(o, I), 1) : 1,
+    Z = (0, m.aq)({
       fractionalState: G
     }),
     H = async () => {
@@ -110,25 +110,25 @@ let C = e => {
         analyticsLocation: t,
         analyticsSourceLocation: n,
         guild: o,
-        numberOfBoostsToAdd: F,
+        numberOfBoostsToAdd: V,
         onClose: A,
         closeLayer: C,
-        inPopout: k,
+        inPopout: j,
         applicationId: P,
-        handleSubscribeModalClose: w
+        handleSubscribeModalClose: D
       }), U(!1)
     }, W = h.ZP.getPremiumTypeSubscription(), Y = (0, r.jsxs)("div", {
       className: y.button,
       children: [L, null != O ? O : b.NW.string(b.t.gKmQ1N)]
     });
-  return ((null == W ? void 0 : W.isPausedOrPausePending) && (G === v.a$.NONE || 0 === Z.length) && (Y = (0, r.jsxs)("div", {
+  return ((null == W ? void 0 : W.isPausedOrPausePending) && (G === v.a$.NONE || 0 === F.length) && (Y = (0, r.jsxs)("div", {
     className: y.button,
     children: [(0, r.jsx)(s.mBM, {
       size: "xs",
       className: y.buttonIcon
     }), " ", Y]
-  }), x.disabled = !0), null != V) ? (0, r.jsx)(f.Z, {
-    text: B ? void 0 : V,
+  }), x.disabled = !0), null != Z) ? (0, r.jsx)(f.Z, {
+    text: B ? void 0 : Z,
     "aria-label": !1,
     children: e => (0, r.jsx)(s.gtL, T(S(T(S({}, e), {
       disabled: !0,
@@ -141,9 +141,9 @@ let C = e => {
     size: s.zxk.Sizes.SMALL
   }, x), {
     className: a()(x.className, {
-      [y.buttonHighlighted]: D
+      [y.buttonHighlighted]: w
     }),
-    submitting: j,
+    submitting: k,
     onClick: H,
     pauseAnimation: R,
     children: Y

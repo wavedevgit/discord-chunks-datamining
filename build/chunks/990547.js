@@ -15,9 +15,9 @@ n.r(t), n.d(t, {
   analyticsTrackingStoreMaker: () => E.l,
   encodeProperties: () => g.Z,
   extendSuperProperties: () => K,
-  getCampaignParams: () => D,
-  getDevice: () => j,
-  getOS: () => k,
+  getCampaignParams: () => w,
+  getDevice: () => k,
+  getOS: () => j,
   getSuperProperties: () => q,
   getSuperPropertiesBase64: () => Q,
   isThrottled: () => Y,
@@ -122,17 +122,17 @@ if (null != R) {
 }
 let P = "utm_source utm_medium utm_campaign utm_content utm_term".split(" ");
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return "";
   t = t.replace(/[[]/, "\\[").replace(/[\]]/, "\\]");
   let n = new RegExp("[\\?&]".concat(t, "=([^&#]*)")).exec(e);
   return null === n || "string" != typeof n[1] && n[1].length ? "" : decodeURIComponent(n[1]).replace(/\+/g, " ")
 }
 
-function D(e) {
+function w(e) {
   let t = {};
   return P.forEach(n => {
-    let r = w(e, n);
+    let r = D(e, n);
     r.length > 0 && (t[n] = r)
   }), t
 }
@@ -149,7 +149,7 @@ function x() {
     r = "yahoo" !== n ? "q" : "p";
   if (null != n) {
     e.search_engine = n;
-    let i = w(t, r);
+    let i = D(t, r);
     i.length > 0 && (e.mp_keyword = i)
   }
   return e
@@ -177,7 +177,7 @@ function M() {
   else return ""
 }
 
-function k() {
+function j() {
   let {
     userAgent: e
   } = window.navigator;
@@ -190,7 +190,7 @@ function k() {
   else return ""
 }
 
-function j() {
+function k() {
   let {
     userAgent: e
   } = window.navigator;
@@ -209,8 +209,8 @@ function U() {
 
 function G() {
   let e = {},
-    t = k();
-  return e.os = t, e.browser = M(), e.device = j(), e.system_locale = (0, p.qf)(), e.has_client_mods = (0, f.e)(), e
+    t = j();
+  return e.os = t, e.browser = M(), e.device = k(), e.system_locale = (0, p.qf)(), e.has_client_mods = (0, f.e)(), e
 }
 
 function B() {
@@ -223,23 +223,23 @@ function B() {
   })
 }
 
-function Z() {
+function F() {
   let e = {};
-  return e.referrer = document.referrer, e.referring_domain = U(), e = O({}, e, D(window.location.href), x())
+  return e.referrer = document.referrer, e.referring_domain = U(), e = O({}, e, w(window.location.href), x())
 }
 
-function F(e, t) {
+function V(e, t) {
   let n = {};
   return Object.keys(e).map(r => n["".concat(r).concat(t)] = e[r]), n
 }
 
-function V() {
+function Z() {
   let e = _.K.get(T);
   null == e && (e = G(), _.K.set(T, e));
   let t = _.K.get(N);
-  null == t && (t = Z(), _.K.set(N, t));
+  null == t && (t = F(), _.K.set(N, t));
   let n = h.x.get(N);
-  return null == n && (n = F(Z(), "_current"), h.x.set(N, n)), O({}, e, B(), t, n)
+  return null == n && (n = V(F(), "_current"), h.x.set(N, n)), O({}, e, B(), t, n)
 }
 
 function H() {
@@ -254,7 +254,7 @@ function W() {
   let r = {},
     i = window.GLOBAL_ENV.RELEASE_CHANNEL;
   i && (null == r.release_channel || "" === r.release_channel) && (r.release_channel = i.split("-")[0]);
-  let o = parseInt((n = "371253", "371253"), 10);
+  let o = parseInt((n = "371308", "371308"), 10);
   isNaN(o) || (r.client_build_number = o);
   let a = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
   return isNaN(a) || (r.native_build_number = a), r.client_event_source = H(), r.has_client_mods = (0, f.e)(), r
@@ -264,7 +264,7 @@ function Y(e) {
   return null != A[e] && A[e] > Date.now()
 }
 if (null == r) try {
-  r = V()
+  r = Z()
 } catch (e) {
   r = {}
 }

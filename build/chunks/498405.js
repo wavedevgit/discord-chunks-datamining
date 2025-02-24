@@ -144,9 +144,9 @@ function m(e) {
     }
   }, [y, t, O, c, g]), P = r.useCallback(() => {
     S || I(!0)
-  }, [S]), w = r.useCallback(e => {
+  }, [S]), D = r.useCallback(e => {
     e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && S && I(!1)
-  }, [S]), D = r.useCallback(() => {
+  }, [S]), w = r.useCallback(() => {
     b({
       type: i.B.SET_FOCUS_PATH,
       path: []
@@ -157,10 +157,10 @@ function m(e) {
     tabIndex: -1,
     onKeyDown: R,
     onFocus: P,
-    onBlur: w,
-    onMouseLeave: D,
+    onBlur: D,
+    onMouseLeave: w,
     "aria-activedescendant": O.length > 0 ? (0, a.qR)(t, O.join(d)) : void 0
-  }), [t, R, P, w, D, O]), M = r.useCallback(e => {
+  }), [t, R, P, D, w, O]), M = r.useCallback(e => {
     let {
       path: n
     } = e;
@@ -171,7 +171,7 @@ function m(e) {
       focusIndex: v.focusIndex,
       isUsingKeyboardNavigation: T
     }
-  }, [t, O, L, v.focusIndex, T]), k = r.useCallback(e => {
+  }, [t, O, L, v.focusIndex, T]), j = r.useCallback(e => {
     var n;
     let {
       path: r,
@@ -195,8 +195,8 @@ function m(e) {
     dispatch: y,
     getContainerProps: x,
     getSubmenuProps: M,
-    getItemProps: k,
+    getItemProps: j,
     isFocused: L,
     isUsingKeyboardNavigation: T
-  }), [y, x, M, k, L, T])
+  }), [y, x, M, j, L, T])
 }

@@ -43,7 +43,7 @@ function P(e) {
   return null !== (t = e.getGuildId()) && void 0 !== t ? t : N
 }
 
-function w(e) {
+function D(e) {
   return A.values(null != e ? e : void 0, !0).map(e => {
     let {
       id: t
@@ -52,7 +52,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   C.has(e) || (C.add(e), s()(_.Z.getMutableGuildChannelsForGuild(e)).values().forEach(e => {
     M(e) && A.set(e.id, e)
   }))
@@ -62,7 +62,7 @@ function L(e) {
   let t = R[e];
   if (null != t) return t;
   let n = _.Z.getChannel(e);
-  return null != n && n.isGuildStageVoice() && (D(n.guild_id), M(n)) ? x(e) : null
+  return null != n && n.isGuildStageVoice() && (w(n.guild_id), M(n)) ? x(e) : null
 }
 
 function x(e) {
@@ -74,22 +74,22 @@ function M(e) {
   return null != e && e.isGuildStageVoice() && y.ZP.countVoiceStatesForChannel(e.id) > 0
 }
 
-function k(e, t) {
+function j(e, t) {
   let n = _.Z.getChannel(e);
   return null != n && n.isGuildStageVoice() ? 0 === t.size() ? B(n.id) : null == A.get(n.id) && A.set(n.id, n) : B(e)
 }
 
-function j(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : w();
+function k(e) {
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : D();
   return t.reduce((t, n) => {
     let r = x(n);
-    return e(r) ? (k(n, r), !0) : t
+    return e(r) ? (j(n, r), !0) : t
   }, !1)
 }
 
 function U(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : w();
-  return j(t => t.updateParticipant(e), t)
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : D();
+  return k(t => t.updateParticipant(e), t)
 }
 
 function G(e) {
@@ -101,24 +101,24 @@ function B(e) {
   return null != e && (delete R[e], A.delete(e), !0)
 }
 
-function Z() {
+function F() {
   C.clear(), A.clear(), R = {}
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   if (null == n || e.has(n)) return;
   let r = _.Z.getChannel(n);
   (null == r ? void 0 : r.isGuildStageVoice()) && (t.add(n), e.add(n))
 }
 
-function V(e) {
+function Z(e) {
   let {
     voiceStates: t
   } = e, n = new Set;
   return t.reduce((e, t) => {
     if (null == t.guildId || !C.has(t.guildId)) return e;
     let r = new Set;
-    return (F(n, r, t.oldChannelId), F(n, r, t.channelId), 0 === r.size) ? e : U(t.userId, Array.from(r)) || e
+    return (V(n, r, t.oldChannelId), V(n, r, t.channelId), 0 === r.size) ? e : U(t.userId, Array.from(r)) || e
   }, !1)
 }
 
@@ -133,7 +133,7 @@ function H(e) {
 
 function W(e) {
   let t = !1;
-  for (let n of w(e.guildId)) t = x(n).rebuild() || t;
+  for (let n of D(e.guildId)) t = x(n).rebuild() || t;
   return t
 }
 
@@ -195,14 +195,14 @@ function J(e) {
     let n = A.get(t.id);
     return null == n || o()(t.permissionOverwrites, n.permissionOverwrites) || (e.push(t.id), A.set(t.id, t)), e
   }, []);
-  return j(e => e.rebuild(), n), n.length > 0
+  return k(e => e.rebuild(), n), n.length > 0
 }
 
 function $(e) {
   let {
     guildId: t
   } = e;
-  if (C.has(t)) return j(e => e.rebuild(), w(t))
+  if (C.has(t)) return k(e => e.rebuild(), D(t))
 }
 let ee = [];
 class et extends(r = l.ZP.Store) {
@@ -230,7 +230,7 @@ class et extends(r = l.ZP.Store) {
     return null !== (r = null === (n = L(e)) || void 0 === n ? void 0 : n.size(t)) && void 0 !== r ? r : 0
   }
   getChannels(e) {
-    return D(null != e ? e : N), A.values(null != e ? e : N)
+    return w(null != e ? e : N), A.values(null != e ? e : N)
   }
   getChannelsVersion() {
     return A.version
@@ -242,9 +242,9 @@ class et extends(r = l.ZP.Store) {
 }
 T(et, "displayName", "StageChannelParticipantStore");
 let en = new et(u.Z, {
-  CONNECTION_OPEN: Z,
-  OVERLAY_INITIALIZE: Z,
-  VOICE_STATE_UPDATES: V,
+  CONNECTION_OPEN: F,
+  OVERLAY_INITIALIZE: F,
+  VOICE_STATE_UPDATES: Z,
   CHANNEL_DELETE: X,
   GUILD_MEMBERS_CHUNK_BATCH: H,
   USER_UPDATE: Y,

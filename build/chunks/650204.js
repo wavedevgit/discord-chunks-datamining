@@ -23,45 +23,45 @@ var d = n(616254),
   C = n(703656),
   R = n(284737),
   P = n(473159),
-  w = n(846519),
-  D = n(579806),
+  D = n(846519),
+  w = n(579806),
   L = n(896361),
   x = n(892254);
 n(422859);
 var M = n(857192),
-  k = n(195309),
-  j = n(44163),
+  j = n(195309),
+  k = n(44163),
   U = n(710845),
   G = n(70956);
 M.default.cssDebuggingEnabled && n.e("62195").then(n.bind(n, 640646));
 let B = 5 * G.Z.Millis.MINUTE,
-  Z = document.getElementById("app-mount");
-p()(null != Z, "Could not find app-mount"), Z.className = __OVERLAY__ ? "" : k.appMount;
-let F = (0, d.createRoot)(Z),
-  V = {
+  F = document.getElementById("app-mount");
+p()(null != F, "Could not find app-mount"), F.className = __OVERLAY__ ? "" : j.appMount;
+let V = (0, d.createRoot)(F),
+  Z = {
     "/oauth2/authorize": N.Z
   };
 
 function H(e, t, n) {
   var r;
   let i = null != n ? new URLSearchParams(n) : null;
-  (null === (r = V[t]) || void 0 === r || !r.call(V, i)) && (0, C.uL)(t)
+  (null === (r = Z[t]) || void 0 === r || !r.call(Z, i)) && (0, C.uL)(t)
 }
-let W = e => F.render((0, u.jsx)(x.Z, {
+let W = e => V.render((0, u.jsx)(x.Z, {
   children: (0, u.jsx)(L.Z, {
     children: (0, u.jsx)(e, {})
   })
 }));
-if (null != D.Z) {
-  null === (r = D.Z.setUncaughtExceptionHandler) || void 0 === r || r.call(D.Z, (e, t) => {
+if (null != w.Z) {
+  null === (r = w.Z.setUncaughtExceptionHandler) || void 0 === r || r.call(w.Z, (e, t) => {
     setImmediate(() => {
       throw y.Z.captureCrash(e), e
     })
   }), I.ZP.appLoaded();
-  let e = null === (i = (o = D.Z.remoteApp).getVersion) || void 0 === i ? void 0 : i.call(o),
-    t = null === (a = (s = D.Z.remoteApp).getBuildNumber) || void 0 === a ? void 0 : a.call(s),
+  let e = null === (i = (o = w.Z.remoteApp).getVersion) || void 0 === i ? void 0 : i.call(o),
+    t = null === (a = (s = w.Z.remoteApp).getBuildNumber) || void 0 === a ? void 0 : a.call(s),
     n = {};
-  null != D.Z.remoteApp.getModuleVersions && (n = D.Z.remoteApp.getModuleVersions()), y.Z.setExtra({
+  null != w.Z.remoteApp.getModuleVersions && (n = w.Z.remoteApp.getModuleVersions()), y.Z.setExtra({
     hostVersion: e,
     moduleVersions: n
   }), y.Z.setTags({
@@ -69,7 +69,7 @@ if (null != D.Z) {
   });
   let u = Object.keys(n).filter(e => null != n[e]).map(e => "".concat(e, ": ").concat(n[e])).join(", ");
   new U.Z().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(u, ", build: ").concat(t));
-  let d = null === (l = (c = D.Z.remoteApp).getReleaseChannel) || void 0 === l ? void 0 : l.call(c);
+  let d = null === (l = (c = w.Z.remoteApp).getReleaseChannel) || void 0 === l ? void 0 : l.call(c);
   ("canary" === d || "development" === d) && I.ZP.pauseFrameEvictor(), I.ZP.initializeExitHook(), I.ZP.initializeWERHandler()
 }
 if ((0, P.O)(window), __OVERLAY__) W(_.Z.Overlay);
@@ -77,7 +77,7 @@ else if (null != window.require && null == window.DiscordNative) W(_.Z.OutdatedC
 else {
   if (document.addEventListener("scroll", e => e.preventDefault()), A.isPlatformEmbedded) {
     window.onbeforeunload = () => I.ZP.beforeUnload(), I.ZP.on("HELP_OPEN", () => window.open(O.Z.getCommunityURL()));
-    let e = new w.sW(B, () => I.ZP.purgeMemory());
+    let e = new D.sW(B, () => I.ZP.purgeMemory());
     I.ZP.on("MAIN_WINDOW_BLUR", () => {
       e.delay(), I.ZP.setFocused(!1), (0, R.T_)(window, !1)
     }), I.ZP.on("MAIN_WINDOW_FOCUS", () => {
@@ -86,5 +86,5 @@ else {
       (0, R.al)(window)
     })
   }
-  E.Z.initialize(), h.Z.initialize(), m.Z.init(), b.Z.init(), j.Z.init(), g.Z.initialize(), S.Z.initialize(), T.Z.initialize(), v.j(), W(_.Z.App)
+  E.Z.initialize(), h.Z.initialize(), m.Z.init(), b.Z.init(), k.Z.init(), g.Z.initialize(), S.Z.initialize(), T.Z.initialize(), v.j(), W(_.Z.App)
 }

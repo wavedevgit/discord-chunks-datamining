@@ -113,7 +113,7 @@ function P(e) {
   } else I.moveNextTo(o, a, r)
 }
 
-function w(e) {
+function D(e) {
   let {
     sourceIds: t,
     name: n
@@ -128,7 +128,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   var {
     targetId: t,
     sourceIds: n
@@ -185,7 +185,7 @@ function M(e) {
   U(n, r)
 }
 
-function k(e) {
+function j(e) {
   let {
     folderId: t,
     expanded: n
@@ -194,7 +194,7 @@ function k(e) {
   U(r, n)
 }
 
-function j() {
+function k() {
   for (let e of I.allNodes()) e.type === c.eD.FOLDER && e.expanded && U(e, !1)
 }
 
@@ -204,7 +204,7 @@ function U(e, t) {
 }
 let G = (0, f.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
   B = (0, f.oH)((e, t) => e.getRoots().map(N)),
-  Z = (0, f.oH)((e, t) => {
+  F = (0, f.oH)((e, t) => {
     let n = [];
 
     function r(e) {
@@ -217,8 +217,8 @@ let G = (0, f.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
     }
     return r(e.root), n
   }),
-  F = (0, f.oH)((e, t) => e.root.children.map(N));
-class V extends E.Z {
+  V = (0, f.oH)((e, t) => e.root.children.map(N));
+class Z extends E.Z {
   initialize() {
     this.waitFor(g.Z, v.ZP, d.Z, h.Z, u.Z, _.Z, l.Z)
   }
@@ -235,17 +235,17 @@ class V extends E.Z {
     return G(I, I.version)
   }
   getFlattenedGuildFolderList() {
-    return Z(I, I.version)
+    return F(I, I.version)
   }
   getCompatibleGuildFolders() {
-    return F(I, I.version)
+    return V(I, I.version)
   }
   getFastListGuildFolders() {
     return I.getRoots()
   }
   takeSnapshot() {
     return {
-      version: V.LATEST_SNAPSHOT_VERSION,
+      version: Z.LATEST_SNAPSHOT_VERSION,
       data: {
         tree: I.getSnapshot()
       }
@@ -261,19 +261,19 @@ class V extends E.Z {
       GUILD_MEMBER_ADD: x,
       USER_SETTINGS_PROTO_UPDATE: R,
       GUILD_MOVE_BY_ID: P,
-      GUILD_FOLDER_CREATE_LOCAL: w,
-      GUILD_FOLDER_EDIT_LOCAL: D,
+      GUILD_FOLDER_CREATE_LOCAL: D,
+      GUILD_FOLDER_EDIT_LOCAL: w,
       GUILD_FOLDER_DELETE_LOCAL: L,
       TOGGLE_GUILD_FOLDER_EXPAND: M,
-      SET_GUILD_FOLDER_EXPANDED: k,
-      GUILD_FOLDER_COLLAPSE: j
+      SET_GUILD_FOLDER_EXPANDED: j,
+      GUILD_FOLDER_COLLAPSE: k
     }), y(this, "loadCache", () => {
-      let e = this.readSnapshot(V.LATEST_SNAPSHOT_VERSION),
+      let e = this.readSnapshot(Z.LATEST_SNAPSHOT_VERSION),
         t = null == e ? void 0 : e.tree;
       if (null != t)
         for (let e of ((I = new c.g8).loadSnapshot(t), I.allNodes())) e.type === c.eD.FOLDER && (e.expanded = _.Z.isFolderExpanded(e.id))
     })
   }
 }
-y(V, "displayName", "SortedGuildStore"), y(V, "LATEST_SNAPSHOT_VERSION", 2);
-let H = new V
+y(Z, "displayName", "SortedGuildStore"), y(Z, "LATEST_SNAPSHOT_VERSION", 2);
+let H = new Z

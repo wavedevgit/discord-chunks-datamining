@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: e3b1f16f2774b341
+  Original File Name: 301217cc05759b04
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -2524,8 +2524,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -4614,6 +4614,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .container__6e9b4 {
     position: relative;
+    pointer-events: all;
     width: 256px;
     height: 228px;
     padding: 16px 0;
@@ -4638,6 +4639,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .closeButton__6e9b4 {
     transition-duration: 0s;
+    pointer-events: all;
+    cursor: pointer;
     position: absolute;
     right: 12px;
     top: 16px;
@@ -5409,4 +5412,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=e3b1f16f2774b341.css.map*/
+/*# sourceMappingURL=301217cc05759b04.css.map*/

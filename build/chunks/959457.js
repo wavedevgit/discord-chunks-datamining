@@ -37,25 +37,25 @@ let A = {},
   C = {},
   R = {},
   P = {},
-  w = {},
-  D = I.hVg.THEATRE,
+  D = {},
+  w = I.hVg.THEATRE,
   L = {},
   x = [],
   M = 30;
 
-function k(e, t, n) {
+function j(e, t, n) {
   return s()(null != r, "Creating RTCConnection without session."), new _.Z({
     sessionId: r,
     streamKey: e,
     serverId: t,
-    initialLayout: D,
+    initialLayout: w,
     analyticsContext: n,
     isStreamer: null != C[e],
     parentMediaSessionId: S.Z.getMediaSessionId()
   })
 }
 
-function j() {
+function k() {
   c().forEach(L, (e, t) => {
     e.destroy(e.isOwner ? "sender-disconnect" : "receiver-disconnect"), delete L[t]
   })
@@ -81,14 +81,14 @@ function U(e) {
 }
 
 function G(e) {
-  r = e.sessionId, i = null, j()
+  r = e.sessionId, i = null, k()
 }
 
 function B() {
-  r = null, i = null, j()
+  r = null, i = null, k()
 }
 
-function Z(e) {
+function F(e) {
   let {
     streamType: t,
     guildId: n,
@@ -119,10 +119,10 @@ function Z(e) {
       distributor: e.distributor
     })
   }
-  null != l ? w[u] = l : delete w[u]
+  null != l ? D[u] = l : delete D[u]
 }
 
-function F(e) {
+function V(e) {
   let {
     appContext: t,
     streamKey: n
@@ -133,10 +133,10 @@ function F(e) {
       isOwner: r
     } = e;
     n.setActionContext(t), r && n.trackEnd()
-  }), P[n] = null, R[n] = null, delete w[n]
+  }), P[n] = null, R[n] = null, delete D[n]
 }
 
-function V(e) {
+function Z(e) {
   let {
     streamKey: t,
     rtcServerId: n,
@@ -155,9 +155,9 @@ function V(e) {
       streamSourceType: et(P[t]),
       actionContext: A[t],
       numViewers: null != o ? o.length : 0,
-      goLiveModalDurationMs: w[t]
+      goLiveModalDurationMs: D[t]
     });
-    a = k(t, n, i), L[t] = a
+    a = j(t, n, i), L[t] = a
   }
   x = [], y.Z.getMediaEngine().on(d.aB.ConnectionStats, U)
 }
@@ -198,7 +198,7 @@ function z(e) {
   let {
     layout: t
   } = e;
-  D = t, Object.values(L).forEach(e => e.layoutChange(t))
+  w = t, Object.values(L).forEach(e => e.layoutChange(t))
 }
 
 function q() {
@@ -356,9 +356,9 @@ let er = new en(f.Z, !y.Z.isSupported() || __OVERLAY__ ? {} : {
   RTC_CONNECTION_LOSS_RATE: q,
   RTC_CONNECTION_UPDATE_ID: Q,
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: q,
-  STREAM_START: Z,
-  STREAM_STOP: F,
-  STREAM_CREATE: V,
+  STREAM_START: F,
+  STREAM_STOP: V,
+  STREAM_CREATE: Z,
   STREAM_SERVER_UPDATE: H,
   STREAM_UPDATE: Y,
   STREAM_DELETE: K,

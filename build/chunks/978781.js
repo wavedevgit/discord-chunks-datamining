@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k,
-  _: () => D
+  Z: () => j,
+  _: () => w
 }), n(627341), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -41,7 +41,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function w(e) {
   }
   return e
 }
-var D = function(e) {
+var w = function(e) {
   return e[e.CLIENT_THEMES = 0] = "CLIENT_THEMES", e[e.APP_ICONS = 1] = "APP_ICONS", e
 }({});
 
@@ -100,7 +100,7 @@ function M(e) {
         let {
           default: e
         } = await n.e("69052").then(n.bind(n, 184250));
-        return t => (0, r.jsx)(e, w({
+        return t => (0, r.jsx)(e, D({
           analyticsSource: f.Z.APP_ICON_EDITOR,
           analyticsLocation: {
             section: T.jXE.SETTINGS_APP_ICONS
@@ -114,7 +114,7 @@ function M(e) {
         let {
           default: e
         } = await n.e("68192").then(n.bind(n, 742234));
-        return t => (0, r.jsx)(e, w({
+        return t => (0, r.jsx)(e, D({
           analyticsSource: f.Z.CLIENT_THEMES_EDITOR,
           analyticsLocation: {
             section: T.jXE.SETTINGS_CLIENT_THEMES
@@ -163,7 +163,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     initialTab: t,
     markAsDismissed: n,

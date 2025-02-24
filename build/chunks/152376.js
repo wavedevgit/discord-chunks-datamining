@@ -5,7 +5,7 @@ n.d(t, {
   Mo: () => A,
   QG: () => C,
   XQ: () => S,
-  _U: () => w,
+  _U: () => D,
   dM: () => R,
   k$: () => I
 }), n(47120);
@@ -207,7 +207,7 @@ function P(e) {
   (0, d.PS)(e, e => (!(0, h.yE)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_CLEARED) || !!(0, h.yE)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_SHOWN)) && (e.guildOnboardingProgress = (0, h.pj)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_CLEARED), e.guildOnboardingProgress = (0, h.mB)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_SHOWN, !1), !0), d.fy.INFREQUENT_USER_ACTION)
 }
 
-function w(e, t) {
+function D(e, t) {
   o.Z.dispatch({
     type: "DISMISS_FAVORITE_SUGGESTION",
     guildId: e,

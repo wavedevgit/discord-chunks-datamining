@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(321488),
   p = n(417183),
   h = n(170245),
-  g = n(981631),
-  f = n(388032),
+  f = n(981631),
+  g = n(388032),
   m = n(400609);
 
 function b(e) {
@@ -37,7 +37,7 @@ function b(e) {
     })
   }, v = e => {
     null == e || e.stopPropagation(), s.Z.ignore(t.id)
-  }, y = b === g.Skl.OFFLINE ? g.Skl.UNKNOWN : b;
+  }, y = b === f.Skl.OFFLINE ? f.Skl.UNKNOWN : b;
   return (0, r.jsx)(p.Z, {
     isFocused: _,
     user: t,
@@ -51,13 +51,13 @@ function b(e) {
         children: [(0, r.jsx)(d.Z, {
           icon: l.dz2,
           actionType: d.Z.ActionTypes.ACCEPT,
-          tooltip: f.NW.string(f.t.ZcibdX),
+          tooltip: g.NW.string(g.t.ZcibdX),
           onClick: N,
           shouldHighlight: e
         }), (0, r.jsx)(d.Z, {
           icon: l.Dio,
           actionType: d.Z.ActionTypes.DENY,
-          tooltip: f.NW.string(f.t.xuio0N),
+          tooltip: g.NW.string(g.t.xuio0N),
           onClick: v,
           shouldHighlight: e
         })]

@@ -1,10 +1,7 @@
-/** Chunk was on web.js **/
-var r = n(657398),
-  i = n(402428),
-  o = n(389109),
-  a = "[object String]";
-
-function s(e) {
-  return "string" == typeof e || !i(e) && o(e) && r(e) == a
+/** Chunk was on 26436 **/
+var n = r(657398),
+  o = r(402428),
+  a = r(389109);
+e.exports = function(e) {
+  return "string" == typeof e || !o(e) && a(e) && "[object String]" == n(e)
 }
-e.exports = s

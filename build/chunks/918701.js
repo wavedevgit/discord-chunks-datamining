@@ -32,9 +32,9 @@ n.d(t, {
   WP: () => J,
   Xh: () => eo,
   Xv: () => eg,
-  ZZ: () => F,
+  ZZ: () => V,
   Zp: () => ts,
-  _D: () => Z,
+  _D: () => F,
   _j: () => e5,
   _p: () => tn,
   b7: () => eW,
@@ -47,7 +47,7 @@ n.d(t, {
   iQ: () => K,
   il: () => eH,
   lQ: () => H,
-  o9: () => eD,
+  o9: () => ew,
   oo: () => eI,
   pO: () => eC,
   q6: () => z,
@@ -62,7 +62,7 @@ n.d(t, {
   yI: () => en,
   ys: () => eO,
   zE: () => ef,
-  zK: () => ew,
+  zK: () => eD,
   zi: () => Y
 }), n(47120), n(627341), n(266796), n(411104), n(230036), n(571269), n(298267), n(653041);
 var r = n(991998),
@@ -95,9 +95,9 @@ var h = n(572004),
   C = n(46140),
   R = n(981631),
   P = n(701488),
-  w = n(388032);
+  D = n(388032);
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -113,7 +113,7 @@ function L(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -135,8 +135,8 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = 2592e6,
-  j = new Set([l.n.PREMIUM_EXTENSION, l.n.PREMIUM_PERMANENT]);
+let j = 2592e6,
+  k = new Set([l.n.PREMIUM_EXTENSION, l.n.PREMIUM_PERMANENT]);
 
 function U(e) {
   try {
@@ -151,33 +151,33 @@ function U(e) {
 let G = e => e.application_id === P.Ev || e.platform === R.M7m.XBOX,
   B = e => e.platform === R.M7m.PS4 || e.platform === R.M7m.PS5;
 
-function Z(e, t) {
+function F(e, t) {
   if (null == e) return !1;
   let n = e.name.toLowerCase(),
     r = N.r.build(t.config).application.name.toLowerCase();
-  return G(e) || B(e) ? n === r : null != e.application_id && V(e.application_id, t)
-}
-
-function F(e, t) {
-  for (let [n, r] of e)
-    if (Z(t, r) && !Y(r)) return r
+  return G(e) || B(e) ? n === r : null != e.application_id && Z(e.application_id, t)
 }
 
 function V(e, t) {
+  for (let [n, r] of e)
+    if (F(t, r) && !Y(r)) return r
+}
+
+function Z(e, t) {
   return null != N.r.build(t.config).application.ids.find(t => t === e)
 }
 
 function H(e, t) {
   let n;
   for (let [r, i] of e)
-    if (V(t, i) && !Y(i)) {
+    if (Z(t, i) && !Y(i)) {
       n = i;
       break
     } return n
 }
 
 function W(e, t) {
-  return Array.from(e.values()).filter(e => V(t, e) && !Y(e) && eN({
+  return Array.from(e.values()).filter(e => Z(t, e) && !Y(e) && eN({
     quest: e
   }))
 }
@@ -188,7 +188,7 @@ function Y(e) {
 
 function K(e) {
   if (!Y(e)) return !1;
-  let t = Date.now() - k,
+  let t = Date.now() - j,
     n = new Date(e.config.expiresAt).valueOf();
   return null != e.config.expiresAt && !(n <= t)
 }
@@ -364,15 +364,15 @@ function el(e, t, n) {
 let ec = e => {
   switch (e) {
     case I.y$.XBOX:
-      return w.NW.string(w.t.G84UWV);
+      return D.NW.string(D.t.G84UWV);
     case I.y$.PLAYSTATION:
-      return w.NW.string(w.t["6IeKx8"]);
+      return D.NW.string(D.t["6IeKx8"]);
     case I.y$.SWITCH:
-      return w.NW.string(w.t["1pp0sr"]);
+      return D.NW.string(D.t["1pp0sr"]);
     case I.y$.PC:
-      return w.NW.string(w.t["YK+wUl"]);
+      return D.NW.string(D.t["YK+wUl"]);
     case I.y$.CROSS_PLATFORM:
-      return w.NW.string(w.t.UWVbzc)
+      return D.NW.string(D.t.UWVbzc)
   }
 };
 
@@ -383,14 +383,14 @@ function eu(e) {
     taskDetails: i,
     thirdPartyTaskDetails: o
   } = e;
-  if ((null === (t = r.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return w.NW.string(w.t.BzFeTE);
+  if ((null === (t = r.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return D.NW.string(D.t.BzFeTE);
   if ((null === (n = r.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null) {
     let {
       percentComplete: e
     } = i, t = null != o ? o.completedRatio : e;
-    return t >= .75 ? w.NW.string(w.t.gvCR4O) : t >= .45 && t <= .55 ? w.NW.string(w.t.JNx8sL) : t > 0 ? w.NW.string(w.t.JMbfnZ) : w.NW.string(w.t["7e5k7O"])
+    return t >= .75 ? D.NW.string(D.t.gvCR4O) : t >= .45 && t <= .55 ? D.NW.string(D.t.JNx8sL) : t > 0 ? D.NW.string(D.t.JMbfnZ) : D.NW.string(D.t["7e5k7O"])
   }
-  return w.NW.formatToPlainString(w.t.EQa7oq, {
+  return D.NW.formatToPlainString(D.t.EQa7oq, {
     questName: r.config.messages.questName
   })
 }
@@ -419,21 +419,21 @@ function e_(e) {
     a = Math.floor(o / 30) + +(o % 30 >= 25);
   if (a >= 12) {
     let e = Math.floor(a / 12);
-    return w.NW.formatToPlainString(w.t.PClsr6, {
+    return D.NW.formatToPlainString(D.t.PClsr6, {
       years: e
     })
   }
-  if (a > 0) return w.NW.formatToPlainString(w.t.kridzM, {
+  if (a > 0) return D.NW.formatToPlainString(D.t.kridzM, {
     months: a
   });
   {
     let e = (0, r.Z)(i, n);
-    if (!(e >= 7)) return w.NW.formatToPlainString(w.t.k2UNz8, {
+    if (!(e >= 7)) return D.NW.formatToPlainString(D.t.k2UNz8, {
       days: e
     });
     {
       let t = Math.ceil(e / 7);
-      return w.NW.formatToPlainString(w.t.EmoBDw, {
+      return D.NW.formatToPlainString(D.t.EmoBDw, {
         weeks: t
       })
     }
@@ -481,7 +481,7 @@ function eO(e, t) {
 function eS(e, t) {
   if (null == t || null == e) return null;
   for (let n of t) {
-    let t = F(e, n);
+    let t = V(e, n);
     if (null != t) return t
   }
   return null
@@ -529,11 +529,11 @@ function eP(e) {
   return eC(e) && t === C.Ts
 }
 
-function ew(e, t) {
+function eD(e, t) {
   return N.r.build(e.config).features.has(t)
 }
 
-function eD(e) {
+function ew(e) {
   let {
     quest: t,
     idx: n
@@ -568,11 +568,11 @@ let ex = (e, t) => {
     }), (0, h.JG)(es(e))
   },
   eM = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
-  ek = e => e$(e) || S.Z.isProgressingOnDesktop(e.id),
-  ej = (e, t) => {
+  ej = e => e$(e) || S.Z.isProgressingOnDesktop(e.id),
+  ek = (e, t) => {
     var n, r, o, a;
     let s = null === (a = e.userStatus) || void 0 === a ? void 0 : null === (o = a.progress) || void 0 === o ? void 0 : null === (r = o[t.eventName]) || void 0 === r ? void 0 : null === (n = r.heartbeat) || void 0 === n ? void 0 : n.lastBeatAt;
-    if (null == s || !ek(e)) return 0;
+    if (null == s || !ej(e)) return 0;
     let l = Date.now() - new Date(s).valueOf();
     return (0, i.floor)(l / m.Z.Millis.SECOND, 2)
   },
@@ -584,7 +584,7 @@ let ex = (e, t) => {
       let n = S.Z.getOptimisticProgress(e.id, t.eventName);
       return null == n || n < l ? l : n
     }
-    return l + ej(e, t)
+    return l + ek(e, t)
   },
   eG = .99,
   eB = (e, t) => {
@@ -594,7 +594,7 @@ let ex = (e, t) => {
     let o = Math.min(r * eG, eU(e, t));
     return Math.max((0, i.floor)(o, 2), 0)
   },
-  eZ = e => {
+  eF = e => {
     var t, n;
     let {
       quest: r,
@@ -615,8 +615,8 @@ let ex = (e, t) => {
       taskType: l
     }
   },
-  eF = e => a.T.ALL.has(e) ? e : null,
-  eV = e => {
+  eV = e => a.T.ALL.has(e) ? e : null,
+  eZ = e => {
     var t, n;
     let {
       quest: r,
@@ -628,14 +628,14 @@ let ex = (e, t) => {
           o = null == t ? void 0 : null === (r = t.heartbeat) || void 0 === r ? void 0 : r.lastBeatAt;
         return null != i && null != o ? new Date(i).valueOf() > new Date(o).valueOf() ? -1 : 1 : null == i && null == o && (null == e ? void 0 : e.updatedAt) != null && (null == t ? void 0 : t.updatedAt) != null ? new Date(e.updatedAt).valueOf() > new Date(t.updatedAt).valueOf() ? -1 : 1 : null != i && null == o ? -1 : 1
       }).filter(E.lm)) {
-      let t = eF(e.eventName);
-      if (null != t && (null == i ? void 0 : i.has(t))) return eZ({
+      let t = eV(e.eventName);
+      if (null != t && (null == i ? void 0 : i.has(t))) return eF({
         quest: r,
         taskType: t,
         includeTaskTypes: i
       })
     }
-    return eZ({
+    return eF({
       quest: r,
       includeTaskTypes: i
     })
@@ -646,19 +646,19 @@ let ex = (e, t) => {
     targetMinutes: 1,
     percentComplete: 0,
     taskType: a.X.STREAM_ON_DESKTOP
-  } : eq(e) ? eV({
+  } : eq(e) ? eZ({
     quest: e,
     includeTaskTypes: null != t ? t : e$(e) ? a.T.CONSOLE : a.T.ALL
-  }) : eQ(e) ? eZ({
+  }) : eQ(e) ? eF({
     quest: e,
     taskType: a.X.WATCH_VIDEO
-  }) : eR(e) ? eZ({
+  }) : eR(e) ? eF({
     quest: e,
     taskType: a.X.PLAY_ON_DESKTOP
-  }) : eC(e) ? eZ({
+  }) : eC(e) ? eF({
     quest: e,
     taskType: a.X.PLAY_ACTIVITY
-  }) : eZ({
+  }) : eF({
     quest: e,
     taskType: a.X.STREAM_ON_DESKTOP
   });
@@ -781,7 +781,7 @@ function e5(e) {
 }
 
 function e7(e) {
-  return e5(e) === R.ABu.XBOX ? w.t.mytEv7 : w.t.iDiwb2
+  return e5(e) === R.ABu.XBOX ? D.t.mytEv7 : D.t.iDiwb2
 }
 
 function e8(e) {
@@ -793,7 +793,7 @@ function e8(e) {
     sharedQuestFields: l
   } = e, c = eI({
     quest: o
-  }), u = null != s ? s : null == a ? void 0 : a.platform, d = c ? eD({
+  }), u = null != s ? s : null == a ? void 0 : a.platform, d = c ? ew({
     quest: o,
     idx: null !== (r = null == a ? void 0 : a.tier) && void 0 !== r ? r : null === (t = o.userStatus) || void 0 === t ? void 0 : t.claimedTier
   }) : null, f = null !== (i = null == d ? void 0 : null === (n = d.messages) || void 0 === n ? void 0 : n.redemptionInstructionsByPlatform) && void 0 !== i ? i : l.defaultRewardRedemptionInstructionsByPlatform;
@@ -807,12 +807,12 @@ function e9(e) {
     gameTitle: r,
     cosponsorName: i
   } = e;
-  return t ? null == i ? w.NW.formatToPlainString(w.t.Piihy8, {
+  return t ? null == i ? D.NW.formatToPlainString(D.t.Piihy8, {
     gamePublisher: n
-  }) : w.NW.formatToPlainString(w.t.DV47Gx, {
+  }) : D.NW.formatToPlainString(D.t.DV47Gx, {
     gamePublisher: n,
     cosponsorName: i
-  }) : w.NW.formatToPlainString(w.t.tOWwxM, {
+  }) : D.NW.formatToPlainString(D.t.tOWwxM, {
     gamePublisher: n,
     gameTitle: r
   })
@@ -832,7 +832,7 @@ function te(e) {
 function tt(e) {
   var t;
   let n = null === (t = ep(e)) || void 0 === t ? void 0 : t.expirationMode;
-  return !!(0, T.U)() && !!n && j.has(n)
+  return !!(0, T.U)() && !!n && k.has(n)
 }
 
 function tn(e) {

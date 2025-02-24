@@ -44,8 +44,8 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = !1,
-  f = {},
+let f = !1,
+  g = {},
   m = {};
 
 function b(e) {
@@ -59,7 +59,7 @@ function _(e) {
   let t = m[e];
   if (null == t) return !1;
   let n = t.gameId;
-  return null != f[n] && (f = p({}, f), delete f[n][e], 0 === Object.values(f[n]).length && delete f[n]), m = p({}, m), delete m[e], !0
+  return null != g[n] && (g = p({}, g), delete g[n][e], 0 === Object.values(g[n]).length && delete g[n]), m = p({}, m), delete m[e], !0
 }
 
 function E(e) {
@@ -84,8 +84,8 @@ function E(e) {
           activity: e,
           startedPlaying: a
         };
-      return f = h(p({}, f), {
-        [i]: h(p({}, f[i]), {
+      return g = h(p({}, g), {
+        [i]: h(p({}, g[i]), {
           [s.userId]: s
         })
       }), m = h(p({}, m), {
@@ -100,9 +100,9 @@ function E(e) {
 
 function O() {
   let e = !1;
-  if (!a.Z.needsRefresh() && !g) {
+  if (!a.Z.needsRefresh() && !f) {
     let t;
-    f = {}, m = {}, t = !1, s.Z.getUserIds().forEach(e => {
+    g = {}, m = {}, t = !1, s.Z.getUserIds().forEach(e => {
       let n = c.default.getUser(e);
       null != n && (t = E({
         user: n,
@@ -110,23 +110,23 @@ function O() {
       }) || t)
     }), e = t
   }
-  return g = !a.Z.needsRefresh(), e
+  return f = !a.Z.needsRefresh(), e
 }
 class N extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(a.Z), this.syncWith([a.Z], O)
   }
   get games() {
-    return f
+    return g
   }
   get usersPlaying() {
     return m
   }
   get gameIds() {
-    return Object.keys(f)
+    return Object.keys(g)
   }
   getNowPlaying(e) {
-    return f[e]
+    return g[e]
   }
   getUserGame(e) {
     return m[e]
@@ -135,7 +135,7 @@ class N extends(r = i.ZP.Store) {
 d(N, "displayName", "NowPlayingStore");
 let v = new N(l.Z, {
   CONNECTION_OPEN: function() {
-    f = {}, m = {}
+    g = {}, m = {}
   },
   CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
     let {
@@ -147,7 +147,7 @@ let v = new N(l.Z, {
     }), b(n) && (r = !0), r
   },
   LOGOUT: function() {
-    f = {}, m = {}
+    g = {}, m = {}
   },
   PRESENCE_UPDATES: function(e) {
     let {

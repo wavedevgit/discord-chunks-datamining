@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  V: () => w,
-  Z: () => D
+  V: () => D,
+  Z: () => w
 }), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(47120), n(26686), n(789020);
 var r = n(512722),
   i = n.n(r),
@@ -117,10 +117,10 @@ function P(e) {
     } : void 0
   }))) && void 0 !== t ? t : []
 }
-var w = function(e) {
+var D = function(e) {
   return e.Connecting = "connecting", e.Connect = "connect", e.Disconnect = "disconnect", e.Resuming = "resuming", e.Ready = "ready", e.Speaking = "speaking", e.Video = "video", e.Ping = "ping", e.ClientConnect = "client-connect", e.ClientDisconnect = "client-disconnect", e.Codecs = "codecs", e.MediaSessionId = "media-session-id", e.MediaSinkWants = "media-sink-wants", e.VoiceBackendVersion = "voice-backend-version", e.KeyframeInterval = "keyframe-interval", e.ChannelOptionsUpdateSecureFramesProtocol = "update-secure-frames-protocol", e.Flags = "flags", e.Platform = "platform", e.SDP = "sdp", e.Encryption = "encryption", e.BandwidthEstimationExperiment = "bandwidth-estimation-experiment", e.SecureFramesInit = "secure-frames-init", e.SecureFramesPrepareTransition = "secure-frames-prepare-transition", e.SecureFramesExecuteTransition = "secure-frames-execute-transition", e.SecureFramesPrepareEpoch = "secure-frames-prepare-epoch", e.MLSExternalSenderPackage = "mls-external-sender-package", e.MLSProposals = "mls-proposals", e.MLSPrepareCommitTransition = "mls-prepare-commit-transition", e.MLSWelcome = "mls-welcome", e
 }({});
-class D extends a.Z {
+class w extends a.Z {
   createWebSocket() {
     this.logger.info("[CONNECT] ".concat(this.url)), null !== this.webSocket && (this.logger.error("Connect called with already existing websocket"), this.cleanupWebSocket(e => e.close(4e3))), this.connectionStartTime = Date.now(), this.helloTimeout = setTimeout(() => {
       let e = Date.now() - this.connectionStartTime;

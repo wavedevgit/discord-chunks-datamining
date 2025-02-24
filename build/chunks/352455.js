@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
@@ -15,7 +15,7 @@ var i = n(120356),
   p = n(388032),
   h = n(894204);
 
-function g(e) {
+function f(e) {
   let {
     className: t,
     markAsDismissed: n

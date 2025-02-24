@@ -88,7 +88,7 @@ function N(e) {
         window.open(h.Z.getArticleURL(v.BhN.NITRO_FAQ), "_blank")
       }
     }),
-    w = (0, r.jsx)("div", {
+    D = (0, r.jsx)("div", {
       className: y.body,
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
@@ -96,7 +96,7 @@ function N(e) {
       })
     });
 
-  function D() {
+  function w() {
     (0, s.Z)(), t(), f.default.track(v.rMx.PREMIUM_PROMOTION_OPENED, {
       location_section: v.jXE.FILE_UPLOAD_UPSELL_MODAL,
       location_object: v.qAy.NAVIGATION_LINK
@@ -108,7 +108,7 @@ function N(e) {
     enableArtBoxShadow: !1,
     type: E.cd.UPLOAD_ERROR_UPSELL,
     title: b.NW.string(b.t["9C+41t"]),
-    body: w,
+    body: D,
     context: b.NW.formatToPlainString(b.t.q5fTZm, {
       maxSize: R
     }),
@@ -119,7 +119,7 @@ function N(e) {
     onClose: t,
     subscriptionTier: E.Si.TIER_2,
     secondaryCTA: b.NW.string(b.t.ZnqyZ2),
-    onSecondaryClick: D,
+    onSecondaryClick: w,
     showEnhancedUpsell: !0
   }, n))
 }

@@ -79,7 +79,7 @@ function I(e) {
     var t;
     let e = b[n.id];
     if (null == e || "unavailable" === n.data_mode) return;
-    b[n.id] = c.sp(n, e), v[n.id] = "partial" === n.data_mode ? c.EO(n.id, null !== (t = v[n.id]) && void 0 !== t ? t : j, n.partial_updates.roles, n.partial_updates.deleted_role_ids) : u.C5(n.id, n.roles)
+    b[n.id] = c.sp(n, e), v[n.id] = "partial" === n.data_mode ? c.EO(n.id, null !== (t = v[n.id]) && void 0 !== t ? t : k, n.partial_updates.roles, n.partial_updates.deleted_role_ids) : u.C5(n.id, n.roles)
   }
   r = Object.keys(b).length
 }
@@ -118,7 +118,7 @@ function P(e) {
   }), v[t.id] = u.C5(t.id, e.guild.roles)
 }
 
-function w(e) {
+function D(e) {
   O = [...O, {
     id: e.guildId,
     name: e.name,
@@ -128,7 +128,7 @@ function w(e) {
   }]
 }
 
-function D(e) {
+function w(e) {
   let {
     guild: t
   } = e, n = O.findIndex(e => e.id === t.id);
@@ -174,10 +174,10 @@ function M(e) {
   })
 }
 
-function k() {
+function j() {
   return !0
 }
-let j = Object.freeze({});
+let k = Object.freeze({});
 class U extends(i = o.ZP.Store) {
   getGuild(e) {
     return null == e ? void 0 : e === p.I_8 ? _.g : b[e]
@@ -202,7 +202,7 @@ class U extends(i = o.ZP.Store) {
   }
   getRoles(e) {
     var t;
-    return null !== (t = v[e]) && void 0 !== t ? t : j
+    return null !== (t = v[e]) && void 0 !== t ? t : k
   }
   getRole(e, t) {
     var n;
@@ -218,11 +218,11 @@ let G = new U(s.Z, {
   CACHE_LOADED_LAZY: A,
   GUILD_CREATE: R,
   GUILD_UPDATE: P,
-  GUILD_DELETE: D,
+  GUILD_DELETE: w,
   GUILD_ROLE_CREATE: L,
   GUILD_ROLE_UPDATE: L,
   GUILD_ROLE_DELETE: x,
   GUILD_MEMBER_ADD: M,
-  GUILD_SETTINGS_SUBMIT_SUCCESS: k,
-  GUILD_GEO_RESTRICTED: w
+  GUILD_SETTINGS_SUBMIT_SUCCESS: j,
+  GUILD_GEO_RESTRICTED: D
 })

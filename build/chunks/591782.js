@@ -1,7 +1,7 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
 var r = n(858698),
-  i = TypeError;
+  o = TypeError;
 e.exports = function(e, t) {
-  if (!delete e[t]) throw new i("Cannot delete property " + r(t) + " of " + r(e))
+  if (!delete e[t]) throw new o("Cannot delete property " + r(t) + " of " + r(e))
 }

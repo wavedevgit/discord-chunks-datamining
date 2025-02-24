@@ -67,13 +67,13 @@ let A = new f.Z("GuildMemberStore"),
   C = {},
   R = {},
   P = {},
-  w = {},
   D = {},
+  w = {},
   L = !1,
   x = 0,
   M = 0,
-  k = {},
   j = {},
+  k = {},
   U = {
     added: [],
     removed: []
@@ -81,30 +81,30 @@ let A = new f.Z("GuildMemberStore"),
 
 function G(e, t) {
   if (null == t.communicationDisabledUntil || !(0, p.b)(t)) return B(e, t.userId);
-  let n = V(e, t.userId);
-  D[n] !== t.communicationDisabledUntil && (0, p.b)(t) && (D[n] = t.communicationDisabledUntil, Z(n))
+  let n = Z(e, t.userId);
+  w[n] !== t.communicationDisabledUntil && (0, p.b)(t) && (w[n] = t.communicationDisabledUntil, F(n))
 }
 
 function B(e, t) {
   if (null != t) {
-    let n = V(e, t);
-    null != D[n] && Z(n), F(V(e, t))
+    let n = Z(e, t);
+    null != w[n] && F(n), V(Z(e, t))
   } else
-    for (let t in D) {
+    for (let t in w) {
       let n = t;
-      W(n) === e && (Z(t), F(n))
+      W(n) === e && (F(t), V(n))
     }
 }
 
-function Z(e) {
-  x += 1, k[e] = x
-}
-
 function F(e) {
-  H(e) === v.default.getId() && (0, _.l)(W(e)), delete D[e]
+  x += 1, j[e] = x
 }
 
-function V(e, t) {
+function V(e) {
+  H(e) === v.default.getId() && (0, _.l)(W(e)), delete w[e]
+}
+
+function Z(e, t) {
   let n = [];
   return n[0] = e, n[1] = t, n.join("-")
 }
@@ -166,7 +166,7 @@ function K(e) {
     iconRoleId: T,
     hoistRoleId: A,
     highestRoleId: R
-  } = Y(l, c), w = {
+  } = Y(l, c), D = {
     userId: r,
     nick: i,
     guildId: o,
@@ -186,20 +186,20 @@ function K(e) {
     fullProfileLoadedTimestamp: g,
     flags: b
   };
-  if ((0, m.yE)(null !== (t = w.flags) && void 0 !== t ? t : 0, O.q.IS_GUEST) && (w.flags = (0, m.pj)(null !== (n = w.flags) && void 0 !== n ? n : 0, O.q.BYPASSES_VERIFICATION)), null == C[o]) return w;
+  if ((0, m.yE)(null !== (t = D.flags) && void 0 !== t ? t : 0, O.q.IS_GUEST) && (D.flags = (0, m.pj)(null !== (n = D.flags) && void 0 !== n ? n : 0, O.q.BYPASSES_VERIFICATION)), null == C[o]) return D;
   if (r === v.default.getId()) {
     if (h.Z.isViewingRoles(o) || h.Z.isFullServerPreview(o)) {
       let e = h.Z.getViewingRoles(o);
-      P[o] = N(I({}, w, h.Z.getMemberOptions(o)), {
+      P[o] = N(I({}, D, h.Z.getMemberOptions(o)), {
         roles: null != e ? E.default.keys(e) : []
       })
     } else null != P[o] && delete P[o]
   }
-  return w
+  return D
 }
 
 function z(e) {
-  L ? L = !1 : (C = {}, R = {}), D = {}, Q(e)
+  L ? L = !1 : (C = {}, R = {}), w = {}, Q(e)
 }
 
 function q(e) {
@@ -233,7 +233,7 @@ function J(e) {
     guildMembers: t,
     guilds: n
   } = e;
-  L = !0, C = I({}, t), R = {}, w = {}, ee(n)
+  L = !0, C = I({}, t), R = {}, D = {}, ee(n)
 }
 
 function $(e) {
@@ -245,7 +245,7 @@ function $(e) {
 
 function ee(e) {
   for (let t of e)
-    if (null != t.member && (null == w[t.id] ? w[t.id] = t.member : w[t.id] = N(I({}, t.member), {
+    if (null != t.member && (null == D[t.id] ? D[t.id] = t.member : D[t.id] = N(I({}, t.member), {
         roles: t.member.roles
       }), null != C[t.id])) {
       let e = C[t.id];
@@ -545,8 +545,8 @@ function ey(e) {
   if (null == f) return !1;
   let p = y.Z.getGuild(i);
   if (null == p) return !1;
-  let _ = null !== (t = j[i]) && void 0 !== t ? t : {};
-  j[i] = {
+  let _ = null !== (t = k[i]) && void 0 !== t ? t : {};
+  k[i] = {
     added: o().difference(o().union(null !== (n = _.added) && void 0 !== n ? n : [], s), null != l ? l : []),
     removed: o().difference(o().union(null !== (r = _.removed) && void 0 !== r ? r : [], l), null != s ? s : [])
   }, d[u] = K({
@@ -570,7 +570,7 @@ function eO(e) {
     guildId: t
   } = e;
   if (null == t) return !1;
-  delete j[t]
+  delete k[t]
 }
 
 function eS(e) {
@@ -738,7 +738,7 @@ class eR extends(r = s.ZP.Store) {
   }
   getCachedSelfMember(e) {
     var t;
-    return null !== (t = w[e]) && void 0 !== t ? t : null
+    return null !== (t = D[e]) && void 0 !== t ? t : null
   }
   getNick(e, t) {
     if (null == e || null == t) return null;
@@ -746,19 +746,19 @@ class eR extends(r = s.ZP.Store) {
     return null != n ? n.nick : null
   }
   getCommunicationDisabledUserMap() {
-    return D
+    return w
   }
   getCommunicationDisabledVersion() {
     return x
   }
   getPendingRoleUpdates(e) {
     var t;
-    return null !== (t = j[e]) && void 0 !== t ? t : U
+    return null !== (t = k[e]) && void 0 !== t ? t : U
   }
   getMemberRoleWithPendingUpdates(e, t) {
     var n, r;
     let i = null !== (r = null === (n = this.getMember(e, t)) || void 0 === n ? void 0 : n.roles) && void 0 !== r ? r : [],
-      a = j[e];
+      a = k[e];
     return null == a ? i : o().difference(o().union(i, a.added), a.removed)
   }
   getMemberVersion() {

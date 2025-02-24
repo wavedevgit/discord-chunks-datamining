@@ -1,5 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
 n(995194);
-var r = n(974802);
-e.exports = r.Object.assign
+var e = n(974802);
+t.exports = e.Object.assign

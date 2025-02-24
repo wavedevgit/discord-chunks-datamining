@@ -62,8 +62,8 @@ function R(e, t) {
   }), e
 }
 let P = null,
-  w = {},
-  D = null;
+  D = {},
+  w = null;
 
 function L() {
   r = new Map, i = {}, o = {}, a = {}
@@ -80,11 +80,11 @@ function M(e, t) {
   return (null === (n = i[e]) || void 0 === n ? void 0 : n[r]) != null && (delete i[e][r], !0)
 }
 
-function k(e) {
+function j(e) {
   r.delete(e)
 }
 
-function j() {
+function k() {
   let e = [];
   for (let t in i) {
     let n = i[t];
@@ -133,10 +133,10 @@ function B(e) {
   } = e, n = (0, f.my)(t);
   r.delete(t), r.set(t, R(A({}, n), {
     state: I.jm8.CONNECTING
-  })), n.ownerId === m.default.getId() && (w[n.channelId] = !1)
+  })), n.ownerId === m.default.getId() && (D[n.channelId] = !1)
 }
 
-function Z(e) {
+function F(e) {
   var t;
   let {
     streamType: n,
@@ -166,14 +166,14 @@ function Z(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     streamKey: t
   } = e;
   a[t] = null
 }
 
-function V(e) {
+function Z(e) {
   let {
     streamKey: t,
     region: n,
@@ -193,7 +193,7 @@ function H(e) {
   let {
     streamKey: t
   } = e;
-  k(t)
+  j(t)
 }
 
 function W(e) {
@@ -202,8 +202,8 @@ function W(e) {
     channelId: n
   } = e;
   P = t, Array.from(r.values()).forEach(e => {
-    (0, f.V9)(e) !== P && e.state === I.jm8.ENDED && k((0, f.V9)(e))
-  }), null != t && (0, f.DB)(t) && t.includes(m.default.getId()) && (w[n] = !1)
+    (0, f.V9)(e) !== P && e.state === I.jm8.ENDED && j((0, f.V9)(e))
+  }), null != t && (0, f.DB)(t) && t.includes(m.default.getId()) && (D[n] = !1)
 }
 
 function Y(e) {
@@ -231,7 +231,7 @@ function Y(e) {
   }
   r.set(t, R(A({}, s), {
     state: l
-  })), l === I.jm8.ENDED && P !== t && k(t)
+  })), l === I.jm8.ENDED && P !== t && j(t)
 }
 
 function K(e) {
@@ -271,14 +271,14 @@ function q(e) {
     channelId: t,
     selfStreamHidden: n
   } = e;
-  (0, f.DB)(P) && (null == P ? void 0 : P.includes(m.default.getId())) && !1 === w[t] && !0 === n && (P = null), w[t] = n
+  (0, f.DB)(P) && (null == P ? void 0 : P.includes(m.default.getId())) && !1 === D[t] && !0 === n && (P = null), D[t] = n
 }
 
 function Q(e) {
   let {
     intent: t
   } = e;
-  D = t
+  w = t
 }
 
 function X(e, t) {
@@ -294,16 +294,16 @@ function J(e) {
 L();
 class $ extends(s = l.ZP.PersistedStore) {
   initialize(e) {
-    this.syncWith([b.Z], () => !0), this.waitFor(d.ZP, b.Z), (null == e ? void 0 : e.selfStreamParticipantsHidden) !== void 0 && Object.assign(w, null == e ? void 0 : e.selfStreamParticipantsHidden)
+    this.syncWith([b.Z], () => !0), this.waitFor(d.ZP, b.Z), (null == e ? void 0 : e.selfStreamParticipantsHidden) !== void 0 && Object.assign(D, null == e ? void 0 : e.selfStreamParticipantsHidden)
   }
   getState() {
     return {
-      selfStreamParticipantsHidden: w
+      selfStreamParticipantsHidden: D
     }
   }
   isSelfStreamHidden(e) {
     var t;
-    return null !== (t = w[e]) && void 0 !== t && t
+    return null !== (t = D[e]) && void 0 !== t && t
   }
   getLastActiveStream() {
     var e;
@@ -375,10 +375,10 @@ class $ extends(s = l.ZP.PersistedStore) {
     return (0, _.Z)(v.Z) && null !== (t = o[e]) && void 0 !== t ? t : null
   }
   getAllApplicationStreams() {
-    return (0, _.Z)(v.Z) ? j().filter(e => null != e && X(e.streamType, e.channelId)) : []
+    return (0, _.Z)(v.Z) ? k().filter(e => null != e && X(e.streamType, e.channelId)) : []
   }
   getAllApplicationStreamsForChannel(e) {
-    return (0, _.Z)(v.Z) ? j().filter(t => null != t && t.channelId === e && X(t.streamType, t.channelId)) : []
+    return (0, _.Z)(v.Z) ? k().filter(t => null != t && t.channelId === e && X(t.streamType, t.channelId)) : []
   }
   getViewerIds(e) {
     if (!(0, _.Z)(v.Z)) return [];
@@ -387,7 +387,7 @@ class $ extends(s = l.ZP.PersistedStore) {
     return null != n ? n.viewerIds : []
   }
   getCurrentAppIntent() {
-    return D
+    return w
   }
   getStreamingState() {
     return (0, _.Z)(v.Z) ? {
@@ -408,10 +408,10 @@ let ee = new $(c.Z, {
   OVERLAY_INITIALIZE: U,
   VOICE_STATE_UPDATES: G,
   STREAM_WATCH: B,
-  STREAM_START: Z,
-  STREAM_STOP: F,
-  STREAM_CREATE: V,
-  STREAM_UPDATE: V,
+  STREAM_START: F,
+  STREAM_STOP: V,
+  STREAM_CREATE: Z,
+  STREAM_UPDATE: Z,
   STREAM_TIMED_OUT: K,
   STREAM_DELETE: Y,
   STREAM_CLOSE: H,

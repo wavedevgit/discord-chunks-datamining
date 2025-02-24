@@ -1,20 +1,20 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  BT: () => F,
+  BT: () => V,
   Hn: () => O,
   Hu: () => B,
   I0: () => L,
   Og: () => M,
   TP: () => I,
-  Uu: () => V,
+  Uu: () => Z,
   e9: () => G,
-  iJ: () => j,
-  o4: () => k,
+  iJ: () => k,
+  o4: () => j,
   oz: () => H,
   r6: () => U,
   uB: () => x,
-  we: () => Z,
+  we: () => F,
   ym: () => R
 }), n(47120);
 var r = n(392711),
@@ -74,7 +74,7 @@ function P(e, t, n) {
   return e
 }
 
-function w(e, t, n, r) {
+function D(e, t, n, r) {
   let i = r[e];
   if (null != i && (n = o.Od(n, i.deny), n = o.IH(n, i.allow)), null != t) {
     let e = O,
@@ -92,7 +92,7 @@ function w(e, t, n, r) {
   return n
 }
 
-function D(e) {
+function w(e) {
   let {
     userId: t,
     member: n,
@@ -103,7 +103,7 @@ function D(e) {
     excludeGuildPermissions: l = !1,
     lurkerPermissionsMask: c = T
   } = e;
-  if (l) return w(r.id, n, O, i);
+  if (l) return D(r.id, n, O, i);
   let d = (a = null != a ? y({}, m.Z.getRoles(r.id), a) : m.Z.getRoles(r.id))[r.getEveryoneRoleId()],
     f = null != d ? d.permissions : I;
   if (null != n)
@@ -111,7 +111,7 @@ function D(e) {
       let t = a[n.roles[e]];
       void 0 !== t && (f = o.IH(f, t.permissions))
     }
-  return f = o.e$(f, v.Plq.ADMINISTRATOR) ? S : w(r.id, n, f, i), (u.Z.isLurking(r.id) || (null == n ? void 0 : n.isPending)) && (f = o.hX(f, c)), h.ZP.isCurrentUserGuest(r.id) && (f = o.hX(f, N)), P(f, r, t, s)
+  return f = o.e$(f, v.Plq.ADMINISTRATOR) ? S : D(r.id, n, f, i), (u.Z.isLurking(r.id) || (null == n ? void 0 : n.isPending)) && (f = o.hX(f, c)), h.ZP.isCurrentUserGuest(r.id) && (f = o.hX(f, N)), P(f, r, t, s)
 }
 
 function L(e) {
@@ -156,7 +156,7 @@ function L(e) {
     joinedAt: new Date().toISOString(),
     communicationDisabledUntil: null
   };
-  return D({
+  return w({
     userId: v.lds,
     member: u,
     guild: t,
@@ -203,7 +203,7 @@ function x(e) {
   if (null == i) return O;
   if (!(E === (null === (t = g.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && c.Z.isViewingRoles(i.id)) && i.isOwner(E)) return P(S, i, E, u);
   let b = h.ZP.getMember(i.id, E);
-  return D({
+  return w({
     userId: E,
     member: b,
     guild: i,
@@ -219,7 +219,7 @@ function M(e, t, n) {
   return e.type !== v.d4z.PRIVATE_THREAD || n || o.e$(t, v.Plq.MANAGE_THREADS) ? o.e$(t, v.Plq.SEND_MESSAGES_IN_THREADS) ? e.isLockedThread() && !o.e$(t, v.Plq.MANAGE_THREADS) ? o.Od(t, v.Plq.SEND_MESSAGES) : o.$e(t, v.Plq.SEND_MESSAGES) : o.Od(t, v.Plq.SEND_MESSAGES) : O
 }
 
-function k(e, t) {
+function j(e, t) {
   if (f.Ec.has(e.type)) return !0;
   let {
     guild_id: n
@@ -227,14 +227,14 @@ function k(e, t) {
   if (null == t || null == n || n !== t.guild_id) return !1;
   let r = y({}, e.permissionOverwrites),
     i = y({}, t.permissionOverwrites);
-  return null == r[n] && (r[n] = Z(n)), null == i[n] && (i[n] = Z(n)), Object.keys(r).length === Object.keys(i).length && !Object.keys(r).some(e => {
+  return null == r[n] && (r[n] = F(n)), null == i[n] && (i[n] = F(n)), Object.keys(r).length === Object.keys(i).length && !Object.keys(r).some(e => {
     let t = r[e],
       n = i[e];
     return !(null != n && o.fS(n.deny, t.deny) && o.fS(n.allow, t.allow))
   })
 }
 
-function j(e) {
+function k(e) {
   var t;
   return i().some(m.Z.getRoles(e.id), e => e.hoist && o.e$(e.permissions, v.Plq.ADMINISTRATOR)) ? void 0 : null !== (t = e.ownerId) && void 0 !== t ? t : void 0
 }
@@ -255,7 +255,7 @@ function B(e, t) {
   return null == t.hoistRoleId ? null : m.Z.getRole(e.id, t.hoistRoleId)
 }
 
-function Z(e) {
+function F(e) {
   return {
     id: e,
     type: a.BN.ROLE,
@@ -264,7 +264,7 @@ function Z(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     permission: t,
     user: n,
@@ -283,7 +283,7 @@ function F(e) {
   }), t)
 }
 
-function V(e, t) {
+function Z(e, t) {
   let n;
   let r = {};
   if (t instanceof f.Sf) {

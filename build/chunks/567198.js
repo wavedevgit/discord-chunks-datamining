@@ -234,20 +234,20 @@
     }
     return function(r, i, o, s) {
       var l, c, u, d, _, h, m, g, E, v, b, y, S, I, T, N, C, R, P = r.constructor,
-        w = r.s == i.s ? 1 : -1,
-        D = r.d,
+        D = r.s == i.s ? 1 : -1,
+        w = r.d,
         L = i.d;
       if (!r.s) return new P(r);
       if (!i.s) throw Error(a + "Division by zero");
-      for (u = 0, c = r.e - i.e, C = L.length, T = D.length, g = (m = new P(w)).d = []; L[u] == (D[u] || 0);) ++u;
-      if (L[u] > (D[u] || 0) && --c, (y = null == o ? o = P.precision : s ? o + (O(r) - O(i)) + 1 : o) < 0) return new P(0);
+      for (u = 0, c = r.e - i.e, C = L.length, T = w.length, g = (m = new P(D)).d = []; L[u] == (w[u] || 0);) ++u;
+      if (L[u] > (w[u] || 0) && --c, (y = null == o ? o = P.precision : s ? o + (O(r) - O(i)) + 1 : o) < 0) return new P(0);
       if (y = y / p + 2 | 0, u = 0, 1 == C)
         for (d = 0, L = L[0], y++;
-          (u < T || d) && y--; u++) S = d * f + (D[u] || 0), g[u] = S / L | 0, d = S % L | 0;
+          (u < T || d) && y--; u++) S = d * f + (w[u] || 0), g[u] = S / L | 0, d = S % L | 0;
       else {
-        for ((d = f / (L[0] + 1) | 0) > 1 && (L = e(L, d), D = e(D, d), C = L.length, T = D.length), I = C, v = (E = D.slice(0, C)).length; v < C;) E[v++] = 0;
+        for ((d = f / (L[0] + 1) | 0) > 1 && (L = e(L, d), w = e(w, d), C = L.length, T = w.length), I = C, v = (E = w.slice(0, C)).length; v < C;) E[v++] = 0;
         (R = L.slice()).unshift(0), N = L[0], L[1] >= f / 2 && ++N;
-        do d = 0, (l = t(L, E, C, v)) < 0 ? (b = E[0], C != v && (b = b * f + (E[1] || 0)), (d = b / N | 0) > 1 ? (d >= f && (d = f - 1), h = (_ = e(L, d)).length, v = E.length, 1 == (l = t(_, E, h, v)) && (d--, n(_, C < h ? R : L, h))) : (0 == d && (l = d = 1), _ = L.slice()), (h = _.length) < v && _.unshift(0), n(E, _, v), -1 == l && (v = E.length, (l = t(L, E, C, v)) < 1 && (d++, n(E, C < v ? R : L, v))), v = E.length) : 0 === l && (d++, E = [0]), g[u++] = d, l && E[0] ? E[v++] = D[I] || 0 : (E = [D[I]], v = 1); while ((I++ < T || void 0 !== E[0]) && y--)
+        do d = 0, (l = t(L, E, C, v)) < 0 ? (b = E[0], C != v && (b = b * f + (E[1] || 0)), (d = b / N | 0) > 1 ? (d >= f && (d = f - 1), h = (_ = e(L, d)).length, v = E.length, 1 == (l = t(_, E, h, v)) && (d--, n(_, C < h ? R : L, h))) : (0 == d && (l = d = 1), _ = L.slice()), (h = _.length) < v && _.unshift(0), n(E, _, v), -1 == l && (v = E.length, (l = t(L, E, C, v)) < 1 && (d++, n(E, C < v ? R : L, v))), v = E.length) : 0 === l && (d++, E = [0]), g[u++] = d, l && E[0] ? E[v++] = w[I] || 0 : (E = [w[I]], v = 1); while ((I++ < T || void 0 !== E[0]) && y--)
       }
       return g[0] || g.shift(), m.e = c, A(m, s ? o + O(m) + 1 : o)
     }
@@ -380,7 +380,7 @@
     if (e.length > t) return e.length = t, !0
   }
 
-  function w(e) {
+  function D(e) {
     var t, n, r;
 
     function i(e) {
@@ -408,12 +408,12 @@
       if (45 === e.charCodeAt(0) ? (e = e.slice(1), t.s = -1) : t.s = 1, d.test(e)) N(t, e);
       else throw Error(s + e)
     }
-    if (i.prototype = m, i.ROUND_UP = 0, i.ROUND_DOWN = 1, i.ROUND_CEIL = 2, i.ROUND_FLOOR = 3, i.ROUND_HALF_UP = 4, i.ROUND_HALF_DOWN = 5, i.ROUND_HALF_EVEN = 6, i.ROUND_HALF_CEIL = 7, i.ROUND_HALF_FLOOR = 8, i.clone = w, i.config = i.set = D, void 0 === e && (e = {}), e)
+    if (i.prototype = m, i.ROUND_UP = 0, i.ROUND_DOWN = 1, i.ROUND_CEIL = 2, i.ROUND_FLOOR = 3, i.ROUND_HALF_UP = 4, i.ROUND_HALF_DOWN = 5, i.ROUND_HALF_EVEN = 6, i.ROUND_HALF_CEIL = 7, i.ROUND_HALF_FLOOR = 8, i.clone = D, i.config = i.set = w, void 0 === e && (e = {}), e)
       for (t = 0, r = ["precision", "rounding", "toExpNeg", "toExpPos", "LN10"]; t < r.length;) e.hasOwnProperty(n = r[t++]) || (e[n] = this[n]);
     return i.config(e), i
   }
 
-  function D(e) {
+  function w(e) {
     if (!e || "object" != typeof e) throw Error(a + "Object expected");
     var t, n, i, o = ["precision", 1, r, "rounding", 0, 8, "toExpNeg", -1 / 0, 0, "toExpPos", 0, 1 / 0];
     for (t = 0; t < o.length; t += 3)
@@ -425,7 +425,7 @@
       else throw Error(s + n + ": " + i)
     }
     return this
-  }(i = w(i)).default = i.Decimal = i, n = new i(1), "function" == typeof define && define.amd ? define(function() {
+  }(i = D(i)).default = i.Decimal = i, n = new i(1), "function" == typeof define && define.amd ? define(function() {
     return i
   }) : e.exports ? e.exports = i : (t || (t = "undefined" != typeof self && self && self.self == self ? self : Function("return this")()), t.Decimal = i)
 }(this)

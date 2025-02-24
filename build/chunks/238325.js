@@ -1,14 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r = n(67867),
-  i = n(96403),
-  o = Date,
-  a = i(o.prototype.getTime);
+var r = n(766362),
+  o = n(96403),
+  a = Date,
+  i = o(a.prototype.getTime);
 r({
   target: "Date",
   stat: !0
 }, {
   now: function() {
-    return a(new o)
+    return i(new a)
   }
 })

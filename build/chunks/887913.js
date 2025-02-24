@@ -1,12 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => i
+r.d(t, {
+  Z: () => o
 });
-var r = n(177624);
-let i = function() {
+var n = r(177624);
+let o = function() {
   try {
-    var e = (0, r.Z)(Object, "defineProperty");
+    var e = (0, n.Z)(Object, "defineProperty");
     return e({}, "", {}), e
   } catch (e) {}
 }()

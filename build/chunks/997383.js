@@ -52,13 +52,13 @@ let T = 100,
   R = Object.freeze({}),
   P = 300;
 
-function w() {
+function D() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
     t = arguments.length > 1 ? arguments[1] : void 0;
   return N * e * (null != t ? t : 1)
 }
 
-function D(e, t) {
+function w(e, t) {
   var n, r;
   if (!t.frecencyBoosters) return {};
   let i = f.Z.getFrequentlyWithoutFetchingLatest(),
@@ -158,7 +158,7 @@ class L {
   }
   queryTextChannels(e, t) {
     if (!this._include(y.h8.TEXT_CHANNEL)) return [];
-    let n = D(y.h8.TEXT_CHANNEL, this.options),
+    let n = w(y.h8.TEXT_CHANNEL, this.options),
       {
         blacklist: r
       } = this.options,
@@ -176,7 +176,7 @@ class L {
     if (!this._include(y.h8.VOICE_CHANNEL)) return [];
     let {
       voiceChannelGuildFilter: n
-    } = this.options, r = D(y.h8.VOICE_CHANNEL, this.options);
+    } = this.options, r = w(y.h8.VOICE_CHANNEL, this.options);
     return m.ZP.queryChannels({
       query: e,
       guildId: n,
@@ -188,7 +188,7 @@ class L {
   }
   queryGuilds(e, t) {
     if (!this._include(y.h8.GUILD)) return [];
-    let n = D(y.h8.GUILD, this.options),
+    let n = w(y.h8.GUILD, this.options),
       {
         blacklist: r
       } = this.options,
@@ -209,13 +209,13 @@ class L {
     let {
       userFilters: i
     } = this.options;
-    void 0 !== t && g.Z.requestMembers(t, e, 100), r.setLimit(n), r.setQuery(e, i, this._userBlacklist, D(y.h8.USER, this.options))
+    void 0 !== t && g.Z.requestMembers(t, e, 100), r.setLimit(n), r.setQuery(e, i, this._userBlacklist, w(y.h8.USER, this.options))
   }
   queryGroupDMs(e, t) {
     if (!this._include(y.h8.GROUP_DM)) return [];
     let {
       blacklist: n
-    } = this.options, r = D(y.h8.GROUP_DM, this.options), i = null != n ? e => !n.has("channel:".concat(e.id)) : void 0;
+    } = this.options, r = w(y.h8.GROUP_DM, this.options), i = null != n ? e => !n.has("channel:".concat(e.id)) : void 0;
     return m.ZP.queryGroupDMs({
       query: e,
       limit: t,
@@ -274,7 +274,7 @@ class L {
           null != t && this._userResults.push({
             type: y.h8.USER,
             record: t,
-            score: w(n),
+            score: D(n),
             comparator: null != r ? r : void 0
           })
         }

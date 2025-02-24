@@ -1,20 +1,20 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => i
 });
 var r = n(335832),
-  i = n(665336);
+  o = n(665336);
 
-function o(e, t) {
+function a(e, t) {
   for (var n = 0; n < t.length; n++) {
-    var o = t[n];
-    o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), r(e, (0, i.Z)(o.key), o)
+    var a = t[n];
+    a.enumerable = a.enumerable || !1, a.configurable = !0, "value" in a && (a.writable = !0), r(e, (0, o.Z)(a.key), a)
   }
 }
 
-function a(e, t, n) {
-  return t && o(e.prototype, t), n && o(e, n), r(e, "prototype", {
+function i(e, t, n) {
+  return t && a(e.prototype, t), n && a(e, n), r(e, "prototype", {
     writable: !1
   }), e
 }

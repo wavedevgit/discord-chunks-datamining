@@ -148,11 +148,11 @@ function P(e) {
   b.syncForcedColors = e.syncForcedColors
 }
 
-function w(e) {
+function D(e) {
   (b = _({}, b)).saturation = e.saturation
 }
 
-function D() {
+function w() {
   (b = _({}, b)).desaturateUserColors = !b.desaturateUserColors
 }
 
@@ -168,14 +168,14 @@ function M() {
   (b = _({}, b)).syncProfileThemeWithUserTheme = !b.syncProfileThemeWithUserTheme
 }
 
-function k(e) {
+function j(e) {
   if (b.systemPrefersReducedMotion === e.systemPrefersReducedMotion) return !1;
   b = m(_({}, b), {
     systemPrefersReducedMotion: e.systemPrefersReducedMotion
   })
 }
 
-function j(e) {
+function k(e) {
   if (b.systemPrefersCrossfades === e.systemPrefersCrossfades) return !1;
   b = m(_({}, b), {
     systemPrefersCrossfades: e.systemPrefersCrossfades
@@ -202,18 +202,18 @@ function B(e) {
   })
 }
 
-function Z(e) {
+function F(e) {
   var t;
   return b = m(_({}, b), {
     systemForcedColors: null !== (t = e.systemForcedColors) && void 0 !== t ? t : "none"
   }), !0
 }
 
-function F() {
+function V() {
   b.forcedColorsModalSeen = !0
 }
 
-function V() {
+function Z() {
   b = m(_({}, b), {
     keyboardNavigationExplainerModalSeen: !0
   })
@@ -424,18 +424,18 @@ let z = new K(s.Z, {
   ACCESSIBILITY_KEYBOARD_MODE_DISABLE: A,
   ACCESSIBILITY_COLORBLIND_TOGGLE: C,
   ACCESSIBILITY_LOW_CONTRAST_TOGGLE: R,
-  ACCESSIBILITY_SET_SATURATION: w,
-  ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: D,
-  ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: Z,
+  ACCESSIBILITY_SET_SATURATION: D,
+  ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: w,
+  ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: F,
   ACCESSIBILITY_SYSTEM_PREFERS_CONTRAST_CHANGED: G,
-  ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED: k,
-  ACCESSIBILITY_SYSTEM_PREFERS_CROSSFADES_CHANGED: j,
+  ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED: j,
+  ACCESSIBILITY_SYSTEM_PREFERS_CROSSFADES_CHANGED: k,
   ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION: U,
   ACCESSIBILITY_SET_SYNC_FORCED_COLORS: P,
   ACCESSIBILITY_SET_ALWAYS_SHOW_LINK_DECORATIONS: B,
   ACCESSIBILITY_SET_ROLE_STYLE: L,
-  ACCESSIBILITY_FORCED_COLORS_MODAL_SEEN: F,
-  KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN: V,
+  ACCESSIBILITY_FORCED_COLORS_MODAL_SEEN: V,
+  KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN: Z,
   ACCESSIBILITY_SET_MESSAGE_GROUP_SPACING: H,
   ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE: x,
   ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE: M,

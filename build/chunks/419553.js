@@ -1,6 +1,6 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-n(67867)({
+n(766362)({
   target: "Object",
   stat: !0
 }, {

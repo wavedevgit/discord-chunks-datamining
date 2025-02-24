@@ -143,7 +143,7 @@ function P(e, t, n) {
   return n
 }
 
-function w(e) {
+function D(e) {
   let {
     targetRef: t,
     overrideTargetRect: n
@@ -151,9 +151,9 @@ function w(e) {
   return null != n ? n : (c()(null != t.current, "Invalid ref"), t.current.getBoundingClientRect())
 }
 
-function D(e, t) {
-  let n = w(e),
-    r = w(t);
+function w(e, t) {
+  let n = D(e),
+    r = D(t);
   return n.top === r.top && n.left === r.left
 }
 class L extends(r = o.Component) {
@@ -269,7 +269,7 @@ class L extends(r = o.Component) {
   calculatePositionStyle(e, t, n) {
     let {
       spacing: r = 0
-    } = this.props, i = w(this.props), o = n.getBoundingClientRect(), a = C(i, o.left, o.top);
+    } = this.props, i = D(this.props), o = n.getBoundingClientRect(), a = C(i, o.left, o.top);
     switch (e) {
       case "top":
         return this.getHorizontalAlignmentStyle(a, t, n, {
@@ -343,7 +343,7 @@ class L extends(r = o.Component) {
     c()(null != i, "Missing elementRef"), null != n.current && S.set(i, n.current), _.S.subscribe(g.CkL.LAYER_POP_START, this.handleLayerPopStart), _.S.subscribe(g.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == i || null === (t = i.ownerDocument) || void 0 === t || null === (e = t.defaultView) || void 0 === e || e.addEventListener("resize", this.handleLayerPopComplete), this.unsubscribeDesktopVisualRefreshExperiment = (0, p.yl)("ReferencePositionLayer", this.handleDesktopVisualRefreshExperimentChange), null == r || r()
   }
   componentDidUpdate(e, t) {
-    if (N(e) === N(this.props) && D(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
+    if (N(e) === N(this.props) && w(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
       var n, r;
       null === (n = (r = this.props).onPositionChange) || void 0 === n || n.call(r, this.state.position)
     }

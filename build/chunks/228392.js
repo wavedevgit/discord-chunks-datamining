@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B: () => D,
+  B: () => w,
   B5: () => R,
-  Do: () => w,
-  GX: () => k,
-  HR: () => F,
+  Do: () => D,
+  GX: () => j,
+  HR: () => V,
   Hr: () => C,
   Je: () => N,
   Js: () => v,
   KR: () => P,
   MO: () => U,
-  N3: () => j,
+  N3: () => k,
   Oq: () => T,
   P_: () => O,
   Vn: () => I,
@@ -22,7 +22,7 @@ n.d(t, {
   nE: () => G,
   nH: () => S,
   qs: () => E,
-  qz: () => Z,
+  qz: () => F,
   ws: () => x,
   xI: () => M,
   zI: () => b
@@ -295,7 +295,7 @@ function P(e) {
   }))
 }
 
-function w(e) {
+function D(e) {
   let {
     guildId: t,
     channelId: n,
@@ -310,7 +310,7 @@ function w(e) {
   }))
 }
 
-function D(e) {
+function w(e) {
   let {
     postId: t,
     location: n
@@ -348,7 +348,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     readGuideCta: t
   } = e;
@@ -357,7 +357,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     isMobile: t
   } = e;
@@ -383,7 +383,7 @@ function B(e) {
   })
 }
 
-function Z() {
+function F() {
   r.ZP.trackWithMetadata(p.rMx.OPEN_MODAL, {
     type: "Forum Channel Upsell Modal",
     location: {
@@ -392,7 +392,7 @@ function Z() {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     channelId: n

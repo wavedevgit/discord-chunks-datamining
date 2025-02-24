@@ -173,7 +173,7 @@ e.exports = function(e) {
         r.scrollLeft = o, r.scrollTop = a, i.scrollLeft = s, i.scrollTop = l
       }
 
-      function w() {
+      function D() {
         var e = i(s).container;
         if (!e) {
           (e = document.createElement("div")).className = l, e.style.cssText = u(["visibility: hidden", "display: inline", "width: 0px", "height: 0px", "z-index: -1", "overflow: hidden", "margin: 0", "padding: 0"]), i(s).container = e, p(e), s.appendChild(e);
@@ -185,7 +185,7 @@ e.exports = function(e) {
         return e
       }
 
-      function D() {
+      function w() {
         function n() {
           var n = i(s).style;
           if ("static" === n.position) {
@@ -210,7 +210,7 @@ e.exports = function(e) {
         }
         n();
         var o = i(s).container;
-        o || (o = w());
+        o || (o = D());
         var c = a.width,
           f = a.height,
           p = u(["position: absolute", "flex: none", "overflow: hidden", "z-index: -1", "visibility: hidden", "width: 100%", "height: 100%", "left: 0px", "top: 0px"]),
@@ -345,12 +345,12 @@ e.exports = function(e) {
         c(s)
       }
 
-      function k() {
-        d("Installing..."), b(), v(), n.add(0, y), n.add(1, D), n.add(2, L), n.add(3, x), n.add(4, M)
+      function j() {
+        d("Installing..."), b(), v(), n.add(0, y), n.add(1, w), n.add(2, L), n.add(3, x), n.add(4, M)
       }
-      c || (c = s, s = e, e = null), e = e || {}, d("Making detectable..."), f(s) ? (d("Element is detached"), w(), d("Waiting until element is attached..."), i(s).onRendered = function() {
-        d("Element is now attached"), k()
-      }) : k()
+      c || (c = s, s = e, e = null), e = e || {}, d("Making detectable..."), f(s) ? (d("Element is detached"), D(), d("Waiting until element is attached..."), i(s).onRendered = function() {
+        d("Element is now attached"), j()
+      }) : j()
     },
     addListener: function(e, t) {
       if (!i(e).listeners.push) throw Error("Cannot add listener to an element that is not detectable.");

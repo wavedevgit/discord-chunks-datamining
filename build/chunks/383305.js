@@ -1,10 +1,10 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r = n(67867),
-  i = n(595069);
+var r = n(766362),
+  o = n(595069);
 r({
   global: !0,
-  forced: parseInt !== i
+  forced: parseInt !== o
 }, {
-  parseInt: i
+  parseInt: o
 })

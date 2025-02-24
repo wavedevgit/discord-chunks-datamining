@@ -1,16 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(821819),
-  i = n(360518),
-  o = n(882708),
-  a = i("species");
-e.exports = function(e) {
-  return o >= 51 || !r(function() {
-    var t = [];
-    return (t.constructor = {})[a] = function() {
+var e = n(821819),
+  o = n(360518),
+  i = n(882708),
+  u = o("species");
+t.exports = function(t) {
+  return i >= 51 || !e(function() {
+    var r = [];
+    return (r.constructor = {})[u] = function() {
       return {
         foo: 1
       }
-    }, 1 !== t[e](Boolean).foo
+    }, 1 !== r[t](Boolean).foo
   })
 }

@@ -32,7 +32,7 @@ var r = n(392711),
   R = n(377668),
   P = n(388032);
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,14 +41,14 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -71,8 +71,8 @@ function x(e, t) {
   }), e
 }
 let M = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/,
-  k = /^$|\n *$/,
-  j = /^ *>>> ?/,
+  j = /^$|\n *$/,
+  k = /^ *>>> ?/,
   U = /^ *> ?/gm,
   G = /^((?:https?|steam):\/\/[^\s<]+[^<.,:;"'\]\s])/;
 
@@ -96,18 +96,18 @@ function B(e) {
     title: void 0
   }
 }
-let Z = e => {
+let F = e => {
     let t = u.Z.getChannel(e);
     return null == t ? void 0 : t.getGuildId()
   },
-  F = e => null != e.guildId ? d.Z.getGuild(e.guildId) : null != e.channelId ? d.Z.getGuild(Z(e.channelId)) : null,
-  V = {
+  V = e => null != e.guildId ? d.Z.getGuild(e.guildId) : null != e.channelId ? d.Z.getGuild(F(e.channelId)) : null,
+  Z = {
     newline: a().defaultRules.newline,
     paragraph: a().defaultRules.paragraph,
-    escape: x(D({}, a().defaultRules.escape), {
+    escape: x(w({}, a().defaultRules.escape), {
       match: (e, t, n) => !1 === t.allowEscape ? null : a().defaultRules.escape.match(e, t, n)
     }),
-    blockQuote: x(D({}, a().defaultRules.blockQuote), {
+    blockQuote: x(w({}, a().defaultRules.blockQuote), {
       requiredFirstCharacters: [" ", ">"],
       match(e, t) {
         let {
@@ -118,12 +118,12 @@ let Z = e => {
         if (r || i) return null;
         if (null == n) return M.exec(e);
         let o = n[0];
-        return k.test(o) ? M.exec(e) : null
+        return j.test(o) ? M.exec(e) : null
       },
       parse(e, t, n) {
         let r = e[0],
-          i = !!j.exec(r),
-          o = i ? j : U,
+          i = !!k.exec(r),
+          o = i ? k : U,
           a = r.replace(o, ""),
           s = n.inQuote || !1,
           l = n.inline || !1;
@@ -139,10 +139,10 @@ let Z = e => {
       }
     }),
     link: E.ZP,
-    autolink: x(D({}, a().defaultRules.autolink), {
+    autolink: x(w({}, a().defaultRules.autolink), {
       parse: B
     }),
-    url: x(D({}, a().defaultRules.url), {
+    url: x(w({}, a().defaultRules.url), {
       requiredFirstCharacters: ["h", "s"],
       match(e, t) {
         if (!t.inline) return null;
@@ -169,10 +169,10 @@ let Z = e => {
     u: a().defaultRules.u,
     br: a().defaultRules.br,
     text: O.ZP,
-    inlineCode: x(D({}, a().defaultRules.inlineCode), {
+    inlineCode: x(w({}, a().defaultRules.inlineCode), {
       parse(e, t, n) {
         let r = a().defaultRules.inlineCode.parse(e, t, n);
-        return !0 === n.parseInlineCodeChildContent ? x(D({}, r), {
+        return !0 === n.parseInlineCodeChildContent ? x(w({}, r), {
           validationChildContent: t(r.content, n)
         }) : r
       }
@@ -209,7 +209,7 @@ let Z = e => {
           type: "roleMention",
           id: i
         };
-        let o = F(n),
+        let o = V(n),
           a = null != o ? d.Z.getRole(o.id, i) : null;
         return null == a ? {
           type: "text",
@@ -235,7 +235,7 @@ let Z = e => {
       requiredFirstCharacters: ["<", "@"],
       match(e, t) {
         let n = /^<@!?(\d+)>|^(@(?:everyone|here|Clyde))/.exec(e);
-        return null != n && ("@Clyde" !== n[0] || (0, s.gJ)(F(t), u.Z.getChannel(t.channelId))) ? n : null
+        return null != n && ("@Clyde" !== n[0] || (0, s.gJ)(V(t), u.Z.getChannel(t.channelId))) ? n : null
       },
       parse(e, t, n) {
         let r, i;
@@ -252,7 +252,7 @@ let Z = e => {
           var l;
           r = null !== (l = p.ZP.getNickname(a.getGuildId(), n.channelId, o)) && void 0 !== l ? l : _.ZP.getName(o)
         }
-        null == o && "@Clyde" === e[0] && (0, s.gJ)(F(n), a) && (i = R.fL);
+        null == o && "@Clyde" === e[0] && (0, s.gJ)(V(n), a) && (i = R.fL);
         let c = e[1],
           d = null != c && A.Xyh.test(c.trim()),
           h = d && n.unknownUserMentionPlaceholder ? "@".concat(P.NW.string(P.t.sKdZ6e)) : e[0];
@@ -371,7 +371,7 @@ let Z = e => {
       match: e => A.PEY.exec(e),
       parse(e, t, n) {
         var r;
-        let [, i, o] = e, a = (0, I.l)(i), s = (0, I.W)(i, o, null === (r = F(n)) || void 0 === r ? void 0 : r.id);
+        let [, i, o] = e, a = (0, I.l)(i), s = (0, I.W)(i, o, null === (r = V(n)) || void 0 === r ? void 0 : r.id);
 
         function l(e) {
           return null == e ? null : [{
@@ -385,7 +385,7 @@ let Z = e => {
           itemContent: l(s),
           itemId: o,
           id: i,
-          guildId: Z(n.channelId),
+          guildId: F(n.channelId),
           channelId: i
         }
       }
@@ -394,7 +394,7 @@ let Z = e => {
     list: v.Z,
     subtext: y.Z
   },
-  H = (0, N.Z)([V, S.Z]),
+  H = (0, N.Z)([Z, S.Z]),
   W = i().omit(H, ["inlineCode", "codeBlock", "br", "blockQuote", "subtext", "soundboard"]),
   Y = i().omit(H, ["inlineCode", "codeBlock", "br", "blockQuote", "autolink", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink", "subtext", "soundboard"]),
   K = i().omit(H, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard"]),
@@ -435,7 +435,7 @@ let ee = 10,
       parse(e, t, n) {
         var r;
         let i = null !== (r = n.parseDepth) && void 0 !== r ? r : 0,
-          o = x(D({}, n), {
+          o = x(w({}, n), {
             parseDepth: i + 1
           }),
           a = t(e[2], o),

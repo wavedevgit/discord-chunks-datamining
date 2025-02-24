@@ -6,7 +6,7 @@ n.d(t, {
   K0: () => P,
   Pd: () => g,
   f$: () => s.f$,
-  lg: () => D,
+  lg: () => w,
   sX: () => s.Hx,
   tn: () => R,
   yZ: () => c.H
@@ -104,7 +104,7 @@ function E(e, t, n, r, a) {
   let b = () => {
     t.backoff = null != t.backoff ? t.backoff : new o.Z, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => L(t.url).then(() => E(e, t, n, r, a)))
   };
-  null == w || null === (d = w.prepareRequest) || void 0 === d || d.call(w, v), v.ok(e => null != e.status), v.then(i => {
+  null == D || null === (d = D.prepareRequest) || void 0 === d || d.call(D, v), v.ok(e => null != e.status), v.then(i => {
     var o, c, u;
     if (null != t.retries && t.retries-- > 0 && m.has(i.status)) return b();
     let d = {
@@ -130,7 +130,7 @@ function E(e, t, n, r, a) {
           err: e
         }))
       };
-    if ((null == t ? void 0 : null === (o = t.interceptResponse) || void 0 === o ? void 0 : o.call(t, i, h, v)) !== !0 && (null == w ? void 0 : null === (c = w.interceptResponse) || void 0 === c ? void 0 : c.call(w, i, h, v)) !== !0) {
+    if ((null == t ? void 0 : null === (o = t.interceptResponse) || void 0 === o ? void 0 : o.call(t, i, h, v)) !== !0 && (null == D ? void 0 : null === (c = D.interceptResponse) || void 0 === c ? void 0 : c.call(D, i, h, v)) !== !0) {
       if (i.ok) n(d);
       else {
         if (t.oldFormErrors && (null == d ? void 0 : null === (u = d.body) || void 0 === u ? void 0 : u.code) === s.f$) {
@@ -251,10 +251,10 @@ function P() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
   return "https:" + window.GLOBAL_ENV.API_ENDPOINT + (e ? "/v".concat(window.GLOBAL_ENV.API_VERSION) : "")
 }
-let w = null;
+let D = null;
 
-function D(e) {
-  w = e
+function w(e) {
+  D = e
 }
 let L = () => Promise.resolve();
 

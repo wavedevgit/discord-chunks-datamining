@@ -4,12 +4,12 @@ n.d(t, {
   AH: () => I,
   Ag: () => x,
   CS: () => b,
-  EW: () => D,
+  EW: () => w,
   OR: () => L,
   QB: () => T,
-  T0: () => w,
+  T0: () => D,
   Wf: () => R,
-  cT: () => j,
+  cT: () => k,
   eT: () => P,
   gU: () => G,
   gl: () => A,
@@ -19,7 +19,7 @@ n.d(t, {
   nE: () => C,
   pf: () => N,
   qm: () => M,
-  w: () => k,
+  w: () => j,
   xw: () => O
 }), n(411104);
 var r = n(990547),
@@ -325,7 +325,7 @@ async function P(e) {
     })
   }
 }
-async function w(e) {
+async function D(e) {
   try {
     o.Z.dispatch({
       type: "QUESTS_DOCK_RESET_SOFT_DISMISSAL"
@@ -348,7 +348,7 @@ async function w(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   o.Z.dispatch({
     type: "QUESTS_DELIVERY_OVERRIDE",
     questId: e
@@ -393,7 +393,7 @@ function M(e, t, n) {
     progress: n
   })
 }
-async function k(e) {
+async function j(e) {
   o.Z.dispatch({
     type: "QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN",
     placement: e
@@ -418,7 +418,7 @@ async function k(e) {
     })
   }
 }
-async function j(e, t) {
+async function k(e, t) {
   var n;
   await l.Z.post({
     url: g.ANM.QUESTS_VIDEO_PROGRESS(e),

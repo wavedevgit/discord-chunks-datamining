@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => k
+  ZP: () => j
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -98,10 +98,10 @@ let N = new p.Z("ChoosePaymentSourceType"),
     [E.HeQ.IDEAL, new Set(["ALL", "NL"])],
     [E.HeQ.CASH_APP, new Set(["ALL", "US"])]
   ]),
-  w = new Map([
+  D = new Map([
     [E.HeQ.PAYSAFE_CARD, new Set(["DE"])]
   ]),
-  D = "40c266_1",
+  w = "40c266_1",
   L = 1e3;
 
 function x(e) {
@@ -110,7 +110,7 @@ function x(e) {
     forceCountryCode: n,
     validCountryCodes: r
   } = d.ZP.getCurrentConfig({
-    location: D
+    location: w
   }, {
     autoTrackExposure: !1
   }), i = null != e ? e : "ALL";
@@ -119,7 +119,7 @@ function x(e) {
     a = [];
   return P.forEach((e, n) => {
     t.includes(n) && (e.has(i) ? o.add(n) : a.push(n))
-  }), w.forEach((e, t) => {
+  }), D.forEach((e, t) => {
     e.has(i) && o.add(t)
   }), {
     countryPaymentMethods: [...C, ...Array.from(o)],
@@ -266,7 +266,7 @@ class M extends i.PureComponent {
     }
   }
 }
-let k = s.ZP.connectStores([m.Z], () => ({
+let j = s.ZP.connectStores([m.Z], () => ({
   ipCountryCode: m.Z.ipCountryCode,
   ipCountryCodeHasError: m.Z.ipCountryCodeHasError,
   localizedPromo: m.Z.localizedPricingPromo

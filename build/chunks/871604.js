@@ -80,19 +80,19 @@ function C(e) {
       var e;
       return null === (e = p.Z.getChannel(C)) || void 0 === e ? void 0 : e.guild_id
     }),
-    w = i.useMemo(() => null != R ? {
+    D = i.useMemo(() => null != R ? {
       channel: R,
       type: "channel"
     } : {
       type: "contextless"
     }, [R]),
-    D = (0, s.Z)({
-      context: w
+    w = (0, s.Z)({
+      context: D
     }),
     L = t.id,
     x = i.useCallback(() => {
       if (null != A) {
-        if (D) {
+        if (w) {
           let e = _.Z.getCurrentlySelectedChannelId(),
             t = p.Z.getChannel(e),
             r = null != f.ZP.getSidebarState(e) || (null == t ? void 0 : t.isGuildVocal()) ? d.Ie.SIDEBAR : d.Ie.NORMAL;
@@ -105,12 +105,12 @@ function C(e) {
           applicationId: A.id
         }, A))
       }
-    }, [D, A, L, P, n]),
-    M = D ? S.NW.string(S.t["Cia+Aw"]) : S.NW.string(S.t.NgXl3N);
+    }, [w, A, L, P, n]),
+    M = w ? S.NW.string(S.t["Cia+Aw"]) : S.NW.string(S.t.NgXl3N);
   if (null == A || !(0, E.Eb)(A)) return null;
   let {
-    customInstallUrl: k
-  } = A, j = null == k || g.Z.isDiscordUrl(k) ? a.qJs : a.Gr1, U = D ? void 0 : j;
+    customInstallUrl: j
+  } = A, k = null == j || g.Z.isDiscordUrl(j) ? a.qJs : a.Gr1, U = w ? void 0 : k;
   return m.wS ? (0, r.jsx)(a.yRy, {
     renderPopout: e => {
       let {

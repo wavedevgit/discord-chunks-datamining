@@ -1,6 +1,6 @@
 /**
   Module ID: 72618
-  Original File Name: 6c33deee3ccfad5b
+  Original File Name: 137c5e665b2adaa7
 **/
 .badgeContainer__98c7b {
     position: relative;
@@ -1175,8 +1175,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -1574,4 +1574,4 @@
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=6c33deee3ccfad5b.css.map*/
+/*# sourceMappingURL=137c5e665b2adaa7.css.map*/

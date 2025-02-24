@@ -1,13 +1,13 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => o
+r.d(t, {
+  Z: () => a
 });
-var r = n(192379),
-  i = n(723184);
-let o = function(e) {
+var n = r(192379),
+  o = r(723184);
+let a = function(e) {
   var t = e.direction,
-    n = (0, i.default)({
+    r = (0, o.default)({
       default: {
         picker: {
           width: "18px",
@@ -26,7 +26,7 @@ let o = function(e) {
     }, {
       vertical: "vertical" === t
     });
-  return r.createElement("div", {
-    style: n.picker
+  return n.createElement("div", {
+    style: r.picker
   })
 }

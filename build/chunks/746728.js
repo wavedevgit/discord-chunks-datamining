@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  I: () => g,
+  I: () => f,
   Z: () => m
 }), n(47120);
 var r = n(200651),
@@ -15,7 +15,7 @@ var r = n(200651),
   p = n(533703),
   h = n(363885);
 
-function g(e) {
+function f(e) {
   let {
     categoryId: t,
     loadId: n
@@ -30,17 +30,17 @@ function g(e) {
   })
 }
 
-function f(e) {
+function g(e) {
   let {
     loadId: t,
     categoryId: n,
     count: l
   } = e, c = i.useCallback(() => {
-    g({
+    f({
       categoryId: n,
       loadId: t
     })
-  }, [n, t]), p = u.Z.useField("categoryId") === n, f = l.toLocaleString(s.default.locale), m = (0, d.E)({
+  }, [n, t]), p = u.Z.useField("categoryId") === n, g = l.toLocaleString(s.default.locale), m = (0, d.E)({
     categoryId: n
   });
   return (0, r.jsxs)(a.P3F, {
@@ -57,7 +57,7 @@ function f(e) {
       className: h.count,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: f
+      children: g
     })]
   })
 }
@@ -69,7 +69,7 @@ let m = function(e) {
     className: h.categories,
     children: n.map(e => {
       let [n, i] = e;
-      return (0, r.jsx)(f, {
+      return (0, r.jsx)(g, {
         loadId: t,
         categoryId: n,
         count: i

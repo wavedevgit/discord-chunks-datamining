@@ -1,10 +1,10 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => i
+r.d(t, {
+  Z: () => o
 });
-var r = Object.prototype;
-let i = function(e) {
+var n = Object.prototype;
+let o = function(e) {
   var t = e && e.constructor;
-  return e === ("function" == typeof t && t.prototype || r)
+  return e === ("function" == typeof t && t.prototype || n)
 }

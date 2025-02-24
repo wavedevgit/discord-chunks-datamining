@@ -78,14 +78,14 @@ function P(e) {
   p = _, _ = e.section, S = null, I = null !== (t = e.analyticsLocations) && void 0 !== t ? t : [], null != e.subsection && (h[_] = e.subsection)
 }
 
-function w(e) {
+function D(e) {
   let {
     forSection: t
   } = e;
   null != t ? delete h[t] : null != _ && delete h[_]
 }
 
-function D(e) {
+function w(e) {
   let {
     forSection: t
   } = e;
@@ -107,7 +107,7 @@ function x() {
 
 function M() {
   let e = l.default.getCurrentUser();
-  k(), null != e && (v = d({}, E = {
+  j(), null != e && (v = d({}, E = {
     [c.oAB.ACCOUNT]: {
       userId: e.id,
       username: e.username,
@@ -121,11 +121,11 @@ function M() {
   }))
 }
 
-function k() {
+function j() {
   f = c.QZA.OPEN, g = {}
 }
 
-function j(e) {
+function k(e) {
   var t;
   if (f !== c.QZA.SUBMITTING) return !1;
   f = c.QZA.OPEN, _ = c.oAB.ACCOUNT, g = null !== (t = e.errors) && void 0 !== t ? t : {}
@@ -182,11 +182,11 @@ let G = new U(s.Z, {
   USER_SETTINGS_MODAL_CLOSE: R,
   LOGOUT: R,
   USER_SETTINGS_MODAL_SUBMIT: x,
-  USER_SETTINGS_MODAL_SUBMIT_FAILURE: j,
+  USER_SETTINGS_MODAL_SUBMIT_FAILURE: k,
   USER_SETTINGS_MODAL_SET_SECTION: P,
-  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: w,
-  USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: D,
+  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: D,
+  USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: w,
   USER_SETTINGS_MODAL_UPDATE_ACCOUNT: L,
-  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: k,
+  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: j,
   USER_SETTINGS_MODAL_RESET: M
 })

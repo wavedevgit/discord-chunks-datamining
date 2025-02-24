@@ -39,7 +39,7 @@ let b = [E.ff.AUTHENTICATION_FAILED, E.ff.NOT_ENTITLED],
   R = !1,
   P = null;
 
-function w() {
+function D() {
   let e = {
     queue: O,
     paused: I,
@@ -48,7 +48,7 @@ function w() {
   s.K.set(y, e)
 }
 
-function D(e, t) {
+function w(e, t) {
   return null != T && T.applicationId === e && T.branchId === t || null != N && N.applicationId === e && N.branchId === t
 }
 
@@ -62,7 +62,7 @@ function L() {
       applicationId: r,
       branchId: i
     } = (0, p.CP)(t);
-    if (!D(r, i)) {
+    if (!w(r, i)) {
       let e = d.default.getToken(),
         t = d.default.getId();
       if (null == e) throw Error("missing user token");
@@ -84,16 +84,16 @@ function M(e, t, n, r) {
     },
     a = S.indexOf(i); - 1 !== a && S.splice(a, 1);
   let s = x(e, t);
-  0 !== s && (n ? -1 === s && (O.push(o), L()) : (s > 0 && O.splice(s, 1), O.unshift(o), L())), !n && I && _.Z.resume(), w()
+  0 !== s && (n ? -1 === s && (O.push(o), L()) : (s > 0 && O.splice(s, 1), O.unshift(o), L())), !n && I && _.Z.resume(), D()
 }
 
-function k(e, t) {
+function j(e, t) {
   let n = (0, p.Tu)(e, t),
     r = S.indexOf(n); - 1 !== r && S.splice(r, 1);
-  let i = x(e, t); - 1 !== i && (O.splice(i, 1), w()), L()
+  let i = x(e, t); - 1 !== i && (O.splice(i, 1), D()), L()
 }
 
-function j(e) {
+function k(e) {
   let {
     applicationId: t,
     branchId: n
@@ -102,7 +102,7 @@ function j(e) {
 }
 
 function U(e) {
-  Z(e), V(e)
+  F(e), Z(e)
 }
 
 function G(e) {
@@ -122,24 +122,24 @@ function B(e) {
   M(t, n, r, "Patch")
 }
 
-function Z(e) {
+function F(e) {
   let {
     applicationId: t,
     branchId: n
   } = e;
-  k(t, n)
+  j(t, n)
 }
 
-function F(e) {
+function V(e) {
   let {
     applicationId: t,
     branchId: n
   } = e, r = x(t, n);
   if (r < 1) return !1;
-  O.splice(0, 0, O.splice(r, 1)[0]), L(), I && _.Z.resume(), w()
+  O.splice(0, 0, O.splice(r, 1)[0]), L(), I && _.Z.resume(), D()
 }
 
-function V(e) {
+function Z(e) {
   let {
     applicationId: t,
     branchId: n
@@ -175,7 +175,7 @@ function H(e) {
       return r = !0, !1
     }
     return !0
-  }), L(), (r || n !== I) && w()
+  }), L(), (r || n !== I) && D()
 }
 
 function W() {
@@ -201,7 +201,7 @@ function Y(e) {
           application_id: t,
           branch_id: n
         } = e;
-        k(t, n)
+        j(t, n)
       }
     }
   }
@@ -260,13 +260,13 @@ class X extends(r = a.ZP.Store) {
 }
 v(X, "displayName", "DispatchManagerStore");
 let J = new X(l.Z, {
-  DISPATCH_APPLICATION_INSTALL: j,
+  DISPATCH_APPLICATION_INSTALL: k,
   DISPATCH_APPLICATION_UPDATE: B,
   DISPATCH_APPLICATION_UNINSTALL: U,
-  DISPATCH_APPLICATION_CANCEL: Z,
+  DISPATCH_APPLICATION_CANCEL: F,
   DISPATCH_APPLICATION_REPAIR: G,
-  DISPATCH_APPLICATION_MOVE_UP: F,
-  DISPATCH_APPLICATION_REMOVE_FINISHED: V,
+  DISPATCH_APPLICATION_MOVE_UP: V,
+  DISPATCH_APPLICATION_REMOVE_FINISHED: Z,
   DISPATCH_APPLICATION_STATE_UPDATE: H,
   DISPATCH_APPLICATION_ERROR: Y,
   CONNECTION_OPEN: z,

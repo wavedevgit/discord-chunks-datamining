@@ -13,12 +13,12 @@ var r = n(72924),
   d = n(186901),
   p = n(981631),
   h = n(474936);
-let g = [i.Z.RPC];
+let f = [i.Z.RPC];
 
-function f(e, t) {
+function g(e, t) {
   let n = {
     subscriptionTier: h.Si.TIER_2,
-    analyticsLocations: g,
+    analyticsLocations: f,
     analyticsObject: t
   };
   switch (e) {
@@ -65,8 +65,8 @@ let m = {
           let e = await (0, r.S)({
             applicationId: l,
             skuId: n,
-            openPremiumPaymentModal: () => f(h, m),
-            analyticsLocations: g,
+            openPremiumPaymentModal: () => g(h, m),
+            analyticsLocations: f,
             analyticsLocationObject: m,
             context: h
           });
@@ -104,7 +104,7 @@ let m = {
         lock: r,
         context: i
       } = (0, u.jU)(t.transport !== d.He.POST_MESSAGE ? n : null);
-      return f(i, {
+      return g(i, {
         page: p.ZY5.IN_APP
       }).then(() => {
         r()

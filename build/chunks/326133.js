@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -82,25 +82,25 @@ function P(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let w = 490,
-  D = 490,
+let D = 490,
+  w = 490,
   L = 245,
   x = 200,
   M = 175,
-  k = i.forwardRef(function(e, t) {
+  j = i.forwardRef(function(e, t) {
     var n, o, T, A, P;
     let {
-      channel: k,
-      type: j,
+      channel: j,
+      type: k,
       editorHeight: U,
       onVisibilityChange: G
-    } = e, B = (0, h.Dt)(), Z = (0, l.e7)([E.Z], () => {
+    } = e, B = (0, h.Dt)(), F = (0, l.e7)([E.Z], () => {
       var e;
-      return null !== (e = E.Z.getGuild(k.guild_id)) && void 0 !== e ? e : null
-    }, [k.guild_id]), F = i.useRef(), [V, H, W] = (0, O.Z)(C(N({}, e), {
-      guild: Z
-    }), t, F), Y = (null === (n = j.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, p.DJ)(V.selectedIndex);
-    (0, _.KR)(B, V.isVisible, K), v.Z.trackExposure({
+      return null !== (e = E.Z.getGuild(j.guild_id)) && void 0 !== e ? e : null
+    }, [j.guild_id]), V = i.useRef(), [Z, H, W] = (0, O.Z)(C(N({}, e), {
+      guild: F
+    }), t, V), Y = (null === (n = k.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, p.DJ)(Z.selectedIndex);
+    (0, _.KR)(B, Z.isVisible, K), v.Z.trackExposure({
       location: "6e9811_1"
     });
     let {
@@ -111,24 +111,24 @@ let w = 490,
       autoTrackExposure: !1
     }), q = (0, y.Z)({
       editorHeight: U,
-      type: j,
-      state: V,
+      type: k,
+      state: Z,
       isInPopoutExperiment: z
     }), Q = (0, l.e7)([d.ZP], () => {
-      let e = d.ZP.getSelfEmbeddedActivityForChannel(k.id),
+      let e = d.ZP.getSelfEmbeddedActivityForChannel(j.id),
         t = d.ZP.getActivityPanelMode();
-      return (0, u.l5)(k) && null != e && (0, f.pY)(e.location) === k.id && t === S.Ez.PANEL
-    }, [k]), X = i.useMemo(() => (null == q ? void 0 : q.top) == null && (null == q ? void 0 : q.left) == null && (null == q ? void 0 : q.bottom) == null && (null == q ? void 0 : q.right) == null ? "" : String(Date.now()), [null == q ? void 0 : q.top, null == q ? void 0 : q.left, null == q ? void 0 : q.bottom, null == q ? void 0 : q.right]);
+      return (0, u.l5)(j) && null != e && (0, f.pY)(e.location) === j.id && t === S.Ez.PANEL
+    }, [j]), X = i.useMemo(() => (null == q ? void 0 : q.top) == null && (null == q ? void 0 : q.left) == null && (null == q ? void 0 : q.bottom) == null && (null == q ? void 0 : q.right) == null ? "" : String(Date.now()), [null == q ? void 0 : q.top, null == q ? void 0 : q.left, null == q ? void 0 : q.bottom, null == q ? void 0 : q.right]);
     if (i.useEffect(() => {
-        G(V.isVisible)
-      }, [G, V.isVisible]), !V.isVisible || null == V.query || void 0 === q) return null;
-    let J = null !== (o = V.query.typeInfo.renderResults({
-      results: V.query.results,
-      selectedIndex: V.selectedIndex,
-      channel: k,
-      guild: Z,
-      query: V.query.queryText,
-      options: V.query.options,
+        G(Z.isVisible)
+      }, [G, Z.isVisible]), !Z.isVisible || null == Z.query || void 0 === q) return null;
+    let J = null !== (o = Z.query.typeInfo.renderResults({
+      results: Z.query.results,
+      selectedIndex: Z.selectedIndex,
+      channel: j,
+      guild: F,
+      query: Z.query.queryText,
+      options: Z.query.options,
       onHover: e => H.onResultHover(e),
       onClick: e => H.onResultClick(e)
     })) && void 0 !== o ? o : null;
@@ -139,8 +139,8 @@ let w = 490,
         [I.bottom]: null == q && "bottom" === e.position,
         [I.autocompleteTop]: Q
       },
-      ee = w;
-    null != q && (ee = (null === (T = j.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (A = V.query) || void 0 === A ? void 0 : A.type) === b.eq.EMOJIS_AND_STICKERS ? D : L), ee = Math.min(window.innerHeight - M, ee);
+      ee = D;
+    null != q && (ee = (null === (T = k.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (A = Z.query) || void 0 === A ? void 0 : A.type) === b.eq.EMOJIS_AND_STICKERS ? w : L), ee = Math.min(window.innerHeight - M, ee);
     let et = (0, r.jsx)(p.ZP, {
       id: B,
       className: a()(I.autocomplete, $),
@@ -157,7 +157,7 @@ let w = 490,
               id: B,
               ref: e => {
                 var n;
-                t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null, F.current = e
+                t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null, V.current = e
               }
             }, n), {
               className: I.scroller,

@@ -1,6 +1,6 @@
 /**
   Module ID: 50677
-  Original File Name: 9643363ed1290d4d
+  Original File Name: 016a6626d6608710
 **/
 .hoverRoll__0263c {
     display: inline-block;
@@ -1121,6 +1121,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .container__6e9b4 {
     position: relative;
+    pointer-events: all;
     width: 256px;
     height: 228px;
     padding: 16px 0;
@@ -1145,6 +1146,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .closeButton__6e9b4 {
     transition-duration: 0s;
+    pointer-events: all;
+    cursor: pointer;
     position: absolute;
     right: 12px;
     top: 16px;
@@ -1244,4 +1247,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=9643363ed1290d4d.css.map*/
+/*# sourceMappingURL=016a6626d6608710.css.map*/

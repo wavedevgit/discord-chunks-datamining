@@ -95,28 +95,28 @@ function N(e) {
       onMouseEnter: C,
       onMouseLeave: R,
       canSelect: P = !0,
-      autoplay: w,
-      registerAnimatedElementRef: D
+      autoplay: D,
+      registerAnimatedElementRef: w
     } = e,
     L = S(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerAnimatedElementRef"]);
-  let [x, M] = i.useState(!1), [k, j] = i.useState(void 0), U = i.useRef(), {
+  let [x, M] = i.useState(!1), [j, k] = i.useState(void 0), U = i.useRef(), {
     triggerAnimation: G,
     untriggerAnimation: B
-  } = i.useContext(u.Rm), Z = p.Yk.useSetting(), F = T(), V = null == w ? Z : w, H = E.kV[I], W = i.useRef(null), Y = i.useMemo(() => {
+  } = i.useContext(u.Rm), F = p.Yk.useSetting(), V = T(), Z = null == D ? F : D, H = E.kV[I], W = i.useRef(null), Y = i.useMemo(() => {
     if (null != o) return o;
     if (null != f) {
-      let e = !0 === A && V;
+      let e = !0 === A && Z;
       return h.ZP.getEmojiURL({
         id: f,
-        animated: F && !0 === y && (e || x || !0 === N),
+        animated: V && !0 === y && (e || x || !0 === N),
         size: H
       })
     }
     if (null != _) return m.ZP.getURL(_);
     throw Error("Unknown Src for Emoji")
-  }, [y, V, f, _, H, F, x, N, A, o]), K = i.useCallback(() => {
+  }, [y, Z, f, _, H, V, x, N, A, o]), K = i.useCallback(() => {
     null != Y && (U.current = (0, d.po)(Y, e => {
-      e || j(Date.now())
+      e || k(Date.now())
     }))
   }, [Y]), z = i.useCallback(e => {
     y && M(!0), null == f && G(_), null == C || C(e)
@@ -144,8 +144,8 @@ function N(e) {
     return null === (e = U.current) || void 0 === e ? void 0 : e.call(U)
   }, []);
   let X = i.useCallback(e => {
-      W.current = e, null == D || D(e)
-    }, [D]),
+      W.current = e, null == w || w(e)
+    }, [w]),
     J = (0, l.Z)(W);
   return null == Y || "" === Y ? (0, r.jsx)("span", {
     className: a()("emoji", "emoji-text"),
@@ -155,14 +155,14 @@ function N(e) {
       channelId: g,
       messageId: v,
       emojiName: _,
-      disable: !1 === V || !1 === Z,
+      disable: !1 === Z || !1 === F,
       emojiRef: J
     }), P ? (0, r.jsx)("img", O(b({}, Q), {
       ref: X,
       src: Y,
       alt: null !== (t = null != s ? s : _) && void 0 !== t ? t : void 0,
       draggable: !1
-    }), k) : (0, r.jsx)("div", O(b({}, Q), {
+    }), j) : (0, r.jsx)("div", O(b({}, Q), {
       ref: X,
       role: "img",
       "aria-label": null !== (n = null != s ? s : _) && void 0 !== n ? n : void 0,
@@ -172,7 +172,7 @@ function N(e) {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center"
       }
-    }), k)]
+    }), j)]
   })
 }
 

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -62,30 +62,30 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function D(e) {
+function w(e) {
   var t;
   let {
     onClose: n,
     onComplete: o,
     onStepChange: C,
     transitionState: P,
-    loadId: D,
+    loadId: w,
     skuId: L,
     isGift: x = !1,
     giftRecipient: M,
-    giftMessage: k,
-    giftingOrigin: j,
+    giftMessage: j,
+    giftingOrigin: k,
     analyticsLocations: U,
     returnRef: G
   } = e, {
     analyticsLocations: B
-  } = (0, d.ZP)([...U, u.Z.COLLECTIBLES_PAYMENT_MODAL]), Z = i.useRef(new s.qA), [F, V] = i.useState(null), [H, W] = i.useState(!1), Y = i.useMemo(() => (0, T.UY)(L), [L]), K = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), z = null != L ? [L] : K, q = null !== (t = z[0]) && void 0 !== t ? t : null, Q = null != L && p.Rm.has(L), X = i.useCallback(() => {
+  } = (0, d.ZP)([...U, u.Z.COLLECTIBLES_PAYMENT_MODAL]), F = i.useRef(new s.qA), [V, Z] = i.useState(null), [H, W] = i.useState(!1), Y = i.useMemo(() => (0, T.UY)(L), [L]), K = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), z = null != L ? [L] : K, q = null !== (t = z[0]) && void 0 !== t ? t : null, Q = null != L && p.Rm.has(L), X = i.useCallback(() => {
     W(!0), null == o || o()
   }, [o]), J = i.useCallback(e => {
     W(!1), n(e), c.Z.dispatch({
@@ -95,14 +95,14 @@ function D(e) {
   }, [n]), $ = (e, t, n) => x ? (0, r.jsx)(v.Z, {
     step: n,
     onClose: () => t(!1),
-    giftingOrigin: j
+    giftingOrigin: k
   }) : (0, r.jsx)(S.Z, {
     step: n,
     onClose: () => t(!1)
   }), ee = i.useMemo(() => [E.WA, ...x ? [O.Dd] : [], b.n, ...E.yp, E.wo, {
     key: m.h8.CONFIRM,
-    renderStep: e => (0, r.jsx)(y.x, w(R({}, e), {
-      confettiCanvas: F,
+    renderStep: e => (0, r.jsx)(y.x, D(R({}, e), {
+      confettiCanvas: V,
       analyticsLocations: B,
       hideConfetti: null != Y
     })),
@@ -110,13 +110,13 @@ function D(e) {
       bodyClassName: A.modalOverrideBody,
       sliderBodyClassName: A.modalOverrideSliderBody
     }
-  }], [B, F, Y, x]);
+  }], [B, V, Y, x]);
   return (0, r.jsxs)(d.Gt, {
     value: B,
     children: [(0, r.jsx)(s.O_, {
-      ref: V,
+      ref: Z,
       className: A.confettiCanvas,
-      environment: Z.current
+      environment: F.current
     }), null != Y && (0, r.jsx)("img", {
       src: Y.imageSrc,
       className: a()(A.customConfetti, {
@@ -126,7 +126,7 @@ function D(e) {
       alt: "",
       "aria-hidden": !0
     }), (0, r.jsx)(h.PaymentContextProvider, {
-      loadId: D,
+      loadId: w,
       stepConfigs: ee,
       applicationId: I.XAJ,
       skuIDs: z,
@@ -136,8 +136,8 @@ function D(e) {
       children: (0, r.jsx)(_.KB, {
         isGift: x,
         giftRecipient: M,
-        giftMessage: k,
-        giftingOrigin: j,
+        giftMessage: j,
+        giftingOrigin: k,
         children: (0, r.jsx)(g.PaymentModal, {
           onClose: J,
           onComplete: X,

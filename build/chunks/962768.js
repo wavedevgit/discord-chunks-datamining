@@ -1,9 +1,9 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(735471),
-  i = String,
-  o = TypeError;
-e.exports = function(e) {
-  if ("object" == typeof e || r(e)) return e;
-  throw new o("Can't set " + i(e) + " as a prototype")
+var e = n(735471),
+  o = String,
+  i = TypeError;
+t.exports = function(t) {
+  if ("object" == typeof t || e(t)) return t;
+  throw new i("Can't set " + o(t) + " as a prototype")
 }

@@ -168,19 +168,19 @@ function O(e, t, n, o) {
       rowHeight: C,
       footerHeight: R = 0,
       sidebarHeight: P,
-      listHeaderHeight: w = 0,
-      renderSection: D,
+      listHeaderHeight: D = 0,
+      renderSection: w,
       renderRow: L,
       renderFooter: x,
       renderSidebar: M,
-      renderListHeader: k,
-      stickyListHeader: j,
+      renderListHeader: j,
+      stickyListHeader: k,
       wrapSection: U,
       getAnchorId: G,
       paddingTop: B,
-      paddingBottom: Z,
-      fade: F = !1,
-      customTheme: V = !1,
+      paddingBottom: F,
+      fade: V = !1,
+      customTheme: Z = !1,
       chunkSize: H,
       style: W,
       innerId: Y,
@@ -220,9 +220,9 @@ function O(e, t, n, o) {
       rowHeight: C,
       footerHeight: R,
       sidebarHeight: P,
-      listHeaderHeight: w,
+      listHeaderHeight: D,
       paddingTop: B,
-      paddingBottom: Z,
+      paddingBottom: F,
       chunkSize: H,
       getScrollerState: ea,
       getAnchorId: G
@@ -270,7 +270,7 @@ function O(e, t, n, o) {
     }, [O, eg]);
     return i.useLayoutEffect(() => {
       2 !== eo.current.dirty && (eo.current.dirty = 2)
-    }, [ec, D, L, x, U, el, es, eo]), (0, u.rS)({
+    }, [ec, w, L, x, U, el, es, eo]), (0, u.rS)({
       scrollerRef: ei,
       anchor: ep,
       getScrollerState: ea,
@@ -282,8 +282,8 @@ function O(e, t, n, o) {
       onScroll: ey,
       className: a()(g, {
         [e]: !0,
-        [t]: F,
-        [n]: V,
+        [t]: V,
+        [n]: Z,
         [d.scrolling]: en
       }),
       style: (0, u.uT)(W)
@@ -303,16 +303,16 @@ function O(e, t, n, o) {
           containerRef: et,
           children: b({
             items: ec,
-            renderListHeader: k,
-            stickyListHeader: j,
-            renderSection: D,
+            renderListHeader: j,
+            stickyListHeader: k,
+            renderSection: w,
             renderRow: L,
             renderFooter: x,
             wrapSection: U,
             spacerTop: es
           })
         })
-      }), [J, Y, K, z, q, Q, el, X, ec, k, j, D, L, x, U, es]), i.useMemo(() => y({
+      }), [J, Y, K, z, q, Q, el, X, ec, j, k, w, L, x, U, es]), i.useMemo(() => y({
         isSidebarVisible: eu,
         renderSidebar: M,
         sidebarHeight: P,

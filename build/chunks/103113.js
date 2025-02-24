@@ -57,42 +57,42 @@ function P(e) {
     guildId: n,
     channelId: C,
     messageId: P,
-    roleId: w,
-    setPopoutRef: D,
+    roleId: D,
+    setPopoutRef: w,
     closePopout: L,
     disableUserProfileLink: x = __OVERLAY__,
     newAnalyticsLocations: M = []
-  } = e, k = (0, h.ZP)(t.id, n), {
-    analyticsLocations: j
+  } = e, j = (0, h.ZP)(t.id, n), {
+    analyticsLocations: k
   } = (0, l.ZP)([...M, s.Z.BITE_SIZE_PROFILE_POPOUT]), U = (0, p.ZB)({
     layout: "BITE_SIZE_POPOUT",
     userId: t.id,
     guildId: n,
     channelId: C,
     messageId: P,
-    roleId: w
+    roleId: D
   }), G = i.useRef(null), B = (0, a.Z)(G);
   i.useEffect(() => {
-    null == D || D(null == G ? void 0 : G.current)
-  }, [G, D]);
-  let Z = () => {
+    null == w || w(null == G ? void 0 : G.current)
+  }, [G, w]);
+  let F = () => {
       null == L || L(), (0, I.openUserProfileModal)(R({
-        sourceAnalyticsLocations: j
+        sourceAnalyticsLocations: k
       }, U))
     },
-    F = !x && (0, c.Z)(t.id),
-    V = () => F ? (0, r.jsx)(o.sNh, {
+    V = !x && (0, c.Z)(t.id),
+    Z = () => V ? (0, r.jsx)(o.sNh, {
       id: "view-profile",
       label: N.NW.string(N.t["+Xp3ho"]),
       action: () => {
-        Z(), (0, _.pQ)(R({
+        F(), (0, _.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
-          analyticsLocations: j
+          analyticsLocations: k
         }, U))
       }
     }) : null;
   return (0, r.jsx)(l.Gt, {
-    value: j,
+    value: k,
     children: (0, r.jsx)(p.Mt, {
       value: U,
       children: (0, r.jsxs)(o.VqE, {
@@ -100,28 +100,28 @@ function P(e) {
         "aria-label": t.username,
         children: [(0, r.jsxs)(b.Z, {
           user: t,
-          displayProfile: k,
+          displayProfile: j,
           profileType: T.y0.BITE_SIZE,
           children: [(0, r.jsx)(S.Z, {
             profileType: T.y0.BITE_SIZE,
             children: (0, r.jsx)(O.Z, {
               user: t,
-              viewProfileItem: V()
+              viewProfileItem: Z()
             })
           }), (0, r.jsxs)("header", {
             className: A.header,
             children: [(0, r.jsx)(E.Z, {
               user: t,
-              displayProfile: k,
+              displayProfile: j,
               guildId: n,
               profileType: T.y0.BITE_SIZE
             }), (0, r.jsx)(m.Z, {
               user: t,
-              displayProfile: k,
+              displayProfile: j,
               guildId: n,
               channelId: C,
               profileType: T.y0.BITE_SIZE,
-              onOpenProfile: F ? Z : void 0
+              onOpenProfile: V ? F : void 0
             }), t.isClyde() && (0, r.jsx)(u.Z, {
               className: A.headerTag
             })]
@@ -132,23 +132,23 @@ function P(e) {
               user: t,
               profileType: T.y0.BITE_SIZE,
               nickname: f.ZP.getName(n, C, t),
-              onOpenProfile: F ? Z : void 0,
+              onOpenProfile: V ? F : void 0,
               tags: (0, r.jsx)(g.Z, {
-                displayProfile: k,
+                displayProfile: j,
                 profileType: T.y0.BITE_SIZE,
                 onClose: L
               })
             }), (0, r.jsx)(v.Z, {
               userId: t.id,
-              userBio: null == k ? void 0 : k.bio,
+              userBio: null == j ? void 0 : j.bio,
               setLineClamp: !1,
               textColor: "header-primary"
             })]
           }), (0, r.jsx)("footer", {
             className: A.footer
           })]
-        }), (null == k ? void 0 : k.profileEffectId) != null && (0, r.jsx)(d.Z, {
-          profileEffectId: null == k ? void 0 : k.profileEffectId,
+        }), (null == j ? void 0 : j.profileEffectId) != null && (0, r.jsx)(d.Z, {
+          profileEffectId: null == j ? void 0 : j.profileEffectId,
           isHovering: B
         })]
       })

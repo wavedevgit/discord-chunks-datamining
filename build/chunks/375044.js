@@ -1,9 +1,9 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
 var r = n(982665),
-  i = n(726433),
-  o = n(360518)("match");
+  o = n(726433),
+  a = n(360518)("match");
 e.exports = function(e) {
   var t;
-  return r(e) && (void 0 !== (t = e[o]) ? !!t : "RegExp" === i(e))
+  return r(e) && (void 0 !== (t = e[a]) ? !!t : "RegExp" === o(e))
 }

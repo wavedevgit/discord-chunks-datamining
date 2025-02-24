@@ -102,10 +102,10 @@ function T(e) {
     } = n,
     P = O(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
     {
-      zoomed: w,
-      setZoomed: D
+      zoomed: D,
+      setZoomed: w
     } = (0, m.Y)(),
-    L = A(w, b, S),
+    L = A(D, b, S),
     x = null != _ && 0 !== _ && null != E && 0 !== E;
   if ("VIDEO" === N && x && null != S) {
     var M;
@@ -158,12 +158,12 @@ function T(e) {
     height: E,
     maxWidth: o,
     maxHeight: s,
-    active: w,
+    active: D,
     className: a()(g.wrapper, {
-      [g.zoomed]: w
+      [g.zoomed]: D
     }),
     onClick: () => {
-      D(!w), (0, h.yg)(w ? h.uG.ZOOM_OUT_IMAGE_PRESSED : h.uG.ZOOM_IN_IMAGE_PRESSED)
+      w(!D), (0, h.yg)(D ? h.uG.ZOOM_OUT_IMAGE_PRESSED : h.uG.ZOOM_IN_IMAGE_PRESSED)
     },
     children: t
   }) : null

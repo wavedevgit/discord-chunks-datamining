@@ -1,8 +1,8 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(96403),
-  i = r({}.toString),
-  o = r("".slice);
-e.exports = function(e) {
-  return o(i(e), 8, -1)
+var e = n(96403),
+  o = e({}.toString),
+  i = e("".slice);
+t.exports = function(t) {
+  return i(o(t), 8, -1)
 }

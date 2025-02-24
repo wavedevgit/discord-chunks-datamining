@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => k
 }), n(47120), n(653041), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -32,7 +32,7 @@ var r = n(200651),
   R = n(388032),
   P = n(342203);
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,14 +41,14 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -74,7 +74,7 @@ new E.Z("ChannelEditor.tsx");
 let M = function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
-  k = {
+  j = {
     12: P.fontSize12Padding,
     14: P.fontSize14Padding,
     15: P.fontSize15Padding,
@@ -83,7 +83,7 @@ let M = function() {
     20: P.fontSize20Padding,
     24: P.fontSize24Padding
   };
-class j extends i.Component {
+class k extends i.Component {
   componentDidMount() {
     this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload)
   }
@@ -212,28 +212,28 @@ class j extends i.Component {
       useNewSlashCommands: I,
       canOnlyUseTextCommands: A,
       className: R,
-      id: w,
+      id: D,
       required: L,
       maxCharacterCount: M,
-      allowNewLines: j,
+      allowNewLines: k,
       "aria-describedby": U,
       "aria-labelledby": G,
       accessibilityLabel: B
     } = this.props, {
-      submitting: Z,
-      popup: F
-    } = this.state, V = {
+      submitting: F,
+      popup: V
+    } = this.state, Z = {
       channel: m,
       className: a()(R, P.textArea, {
         [P.textAreaSlate]: v,
-        [P.textAreaDisabled]: u || Z
+        [P.textAreaDisabled]: u || F
       }),
-      id: w,
+      id: D,
       placeholder: this.getPlaceholder(),
       required: L,
       accessibilityLabel: B,
       disabled: u || !1,
-      submitting: Z,
+      submitting: F,
       isEdit: g === O.Ie.EDIT,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
@@ -243,12 +243,12 @@ class j extends i.Component {
       moveSelection: this.handleMoveSelection,
       maybeShowAutocomplete: this.maybeShowAutocomplete,
       hideAutocomplete: this.hideAutocomplete,
-      allowNewLines: j,
+      allowNewLines: k,
       onChange: d,
       onResize: _,
       onKeyDown: p,
       onSubmit: h,
-      textAreaPaddingClassName: a()(k[E], {
+      textAreaPaddingClassName: a()(j[E], {
         [P.textAreaWithoutAttachmentButton]: g !== O.Ie.NORMAL && g !== O.Ie.OVERLAY && g !== O.Ie.THREAD_CREATION && g !== O.Ie.SIDEBAR,
         [P.textAreaForPostCreation]: g === O.Ie.CREATE_FORUM_POST,
         [P.textAreaCustomGift]: g === O.Ie.CUSTOM_GIFT,
@@ -259,24 +259,24 @@ class j extends i.Component {
       useNewSlashCommands: I,
       disableAutoFocus: f.tq || null !== (n = g.disableAutoFocus) && void 0 !== n && n,
       disableEnterToSubmit: null !== (i = null === (e = g.submit) || void 0 === e ? void 0 : e.disableEnterToSubmit) && void 0 !== i && i,
-      "aria-controls": null !== (o = F.id) && void 0 !== o ? o : void 0,
+      "aria-controls": null !== (o = V.id) && void 0 !== o ? o : void 0,
       "aria-haspopup": "listbox",
-      "aria-expanded": null !== F.id || void 0,
-      "aria-activedescendant": null !== (s = F.activeDescendant) && void 0 !== s ? s : void 0,
+      "aria-expanded": null !== V.id || void 0,
+      "aria-activedescendant": null !== (s = V.activeDescendant) && void 0 !== s ? s : void 0,
       "aria-invalid": l.length > M,
       "aria-describedby": U,
       "aria-labelledby": G,
       "aria-autocomplete": "list"
-    }, H = v ? (0, r.jsx)(N.Z, x(D({
+    }, H = v ? (0, r.jsx)(N.Z, x(w({
       ref: this.ref
-    }, V), {
+    }, Z), {
       type: g,
       value: u ? (0, S.JM)("") : c,
       canUseCommands: null === (t = g.commands) || void 0 === t ? void 0 : t.enabled,
       canOnlyUseTextCommands: A
-    })) : (0, r.jsx)(T.Z, x(D({
+    })) : (0, r.jsx)(T.Z, x(w({
       ref: this.ref
-    }, V), {
+    }, Z), {
       value: u ? "" : l
     }));
     return (0, r.jsxs)(r.Fragment, {
@@ -291,12 +291,12 @@ class j extends i.Component {
   }
   constructor(e) {
     var t;
-    super(e), t = this, w(this, "ref", i.createRef()), w(this, "_focusBlurQueue", Promise.resolve()), w(this, "_unsubscribe", void 0), w(this, "handleSelectionChange", () => {
+    super(e), t = this, D(this, "ref", i.createRef()), D(this, "_focusBlurQueue", Promise.resolve()), D(this, "_unsubscribe", void 0), D(this, "handleSelectionChange", () => {
       if (this.props.focused) {
         var e, t, n;
         this.props.onSelectionChanged(null === (t = (n = document).getSelection) || void 0 === t ? void 0 : null === (e = t.call(n)) || void 0 === e ? void 0 : e.toString())
       }
-    }), w(this, "focus", () => {
+    }), D(this, "focus", () => {
       var e;
       null === (e = this._focusBlurQueue) || void 0 === e || e.then(() => {
         this.setState({
@@ -306,41 +306,41 @@ class j extends i.Component {
           null != e && e.focus()
         })
       })
-    }), w(this, "saveCurrentText", function() {
+    }), D(this, "saveCurrentText", function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
         {
           type: n,
           channel: r
         } = t.props;
       n.drafts.autoSave && (e && t.saveCurrentTextThrottled.cancel(), t.handleSaveCurrentText(r.id))
-    }), w(this, "handleBeforeUnload", () => this.saveCurrentText()), w(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, !1), 500)), w(this, "handleEnter", e => {
+    }), D(this, "handleBeforeUnload", () => this.saveCurrentText()), D(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, !1), 500)), D(this, "handleEnter", e => {
       var t, n;
       return null === (t = (n = this.props).onEnter) || void 0 === t ? void 0 : t.call(n, e)
-    }), w(this, "handleTab", () => {
+    }), D(this, "handleTab", () => {
       var e, t;
       return null === (e = (t = this.props).onTab) || void 0 === e ? void 0 : e.call(t)
-    }), w(this, "handleMoveSelection", e => {
+    }), D(this, "handleMoveSelection", e => {
       var t, n;
       return null === (t = (n = this.props).onMoveSelection) || void 0 === t ? void 0 : t.call(n, e)
-    }), w(this, "maybeShowAutocomplete", () => {
+    }), D(this, "maybeShowAutocomplete", () => {
       var e, t;
       return null === (e = (t = this.props).onMaybeShowAutocomplete) || void 0 === e ? void 0 : e.call(t)
-    }), w(this, "hideAutocomplete", () => {
+    }), D(this, "hideAutocomplete", () => {
       var e, t;
       return null === (e = (t = this.props).onHideAutocomplete) || void 0 === e ? void 0 : e.call(t)
-    }), w(this, "handleSaveCurrentText", e => {
+    }), D(this, "handleSaveCurrentText", e => {
       p.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
-    }), w(this, "handleClearText", () => {
+    }), D(this, "handleClearText", () => {
       var e, t;
       null === (e = (t = this.props).onChange) || void 0 === e || e.call(t, null, "", (0, S.JM)(""))
-    }), w(this, "handleInsertText", e => {
+    }), D(this, "handleInsertText", e => {
       let {
         plainText: t,
         rawText: n,
         addSpace: r = !1
       } = e;
       this.props.disabled || (this.appendText(t, n, r), this.focus())
-    }), w(this, "handleFocus", e => {
+    }), D(this, "handleFocus", e => {
       let {
         onFocus: t
       } = this.props, {
@@ -349,7 +349,7 @@ class j extends i.Component {
       null == t || t(e), n || this.setState({
         focused: !0
       })
-    }), w(this, "handleBlur", e => {
+    }), D(this, "handleBlur", e => {
       let {
         onBlur: t
       } = this.props, {
@@ -358,7 +358,7 @@ class j extends i.Component {
       null == t || t(e), n && this.setState({
         focused: !1
       })
-    }), w(this, "handlePaste", e => {
+    }), D(this, "handlePaste", e => {
       let {
         channel: t,
         canPasteFiles: n,

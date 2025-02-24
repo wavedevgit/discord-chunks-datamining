@@ -197,7 +197,7 @@ function P(e, t) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     id: t,
     channelId: n
@@ -205,7 +205,7 @@ function w(e) {
   return P(n, t)
 }
 
-function D(e) {
+function w(e) {
   let {
     ids: t,
     channelId: n
@@ -234,7 +234,7 @@ function M(e) {
   return null != t && y(t, e => b(e))
 }
 
-function k(e) {
+function j(e) {
   let {
     threads: t
   } = e;
@@ -245,7 +245,7 @@ function k(e) {
     return null != t && b(t)
   })
 }
-class j extends(r = a.ZP.Store) {
+class k extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(d.Z, u.Z)
   }
@@ -262,8 +262,8 @@ class j extends(r = a.ZP.Store) {
     return null != e && (t = v.getCachedMessageIdsForChannel(e)), null != t ? t : m
   }
 }
-p(j, "displayName", "ReferencedMessageStore");
-let U = new j(s.Z, {
+p(k, "displayName", "ReferencedMessageStore");
+let U = new k(s.Z, {
   CACHE_LOADED: S,
   LOCAL_MESSAGES_LOADED: O,
   LOAD_MESSAGES_SUCCESS: O,
@@ -273,11 +273,11 @@ let U = new j(s.Z, {
   LOAD_THREADS_SUCCESS: M,
   LOAD_ARCHIVED_THREADS_SUCCESS: M,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: N,
-  LOAD_FORUM_POSTS: k,
+  LOAD_FORUM_POSTS: j,
   MESSAGE_CREATE: T,
   MESSAGE_UPDATE: A,
-  MESSAGE_DELETE: w,
-  MESSAGE_DELETE_BULK: D,
+  MESSAGE_DELETE: D,
+  MESSAGE_DELETE_BULK: w,
   CREATE_PENDING_REPLY: L,
   CHANNEL_DELETE: C,
   THREAD_DELETE: C,

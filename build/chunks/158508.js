@@ -88,7 +88,7 @@ function O(e) {
     isBlocked: d.Z.isBlocked(N)
   }), [N]), P = (0, u.D)({
     location: "use-block-user-item-web"
-  }), w = P ? [o.z.IGNORE_USER_NEW_BADGE] : [], [D, L] = (0, c.US)(w), x = D === o.z.IGNORE_USER_NEW_BADGE;
+  }), D = P ? [o.z.IGNORE_USER_NEW_BADGE] : [], [w, L] = (0, c.US)(D), x = w === o.z.IGNORE_USER_NEW_BADGE;
   return !P || A || R ? null : (0, r.jsx)(a.sNh, {
     id: "ignore",
     color: "default",

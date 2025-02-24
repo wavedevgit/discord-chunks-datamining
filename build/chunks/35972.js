@@ -1,11 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
 n.d(t, {
-  Z: () => i
+  Z: () => o
 });
 var r = n(871074);
 
-function i() {
+function o() {
   if ("undefined" == typeof Reflect || !r || r.sham) return !1;
   if ("function" == typeof Proxy) return !0;
   try {

@@ -67,8 +67,8 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = 10,
-  D = 15e5,
+let D = 10,
+  w = 15e5,
   L = 15e5;
 class x {
   setActionContext(e) {
@@ -161,7 +161,7 @@ class M extends s.Z {
       E = null === (n = e.find(e => e.connection === this._connection)) || void 0 === n ? void 0 : n.stats;
     if (null != E && h) {
       let e = E.transport.inboundBitrateEstimate;
-      null != e && e < 1e8 && (this._bandwidthSamples.push(e), this._bandwidthSamples.length > w && this._bandwidthSamples.shift(), this._bandwidthSamples.length === w && ((_ = i().mean(this._bandwidthSamples)) > L ? g = "HQ" : _ < D && (g = "LQ")))
+      null != e && e < 1e8 && (this._bandwidthSamples.push(e), this._bandwidthSamples.length > D && this._bandwidthSamples.shift(), this._bandwidthSamples.length === D && ((_ = i().mean(this._bandwidthSamples)) > L ? g = "HQ" : _ < w && (g = "LQ")))
     }
     let v = null !== (o = null === (r = this._goLiveQualityManager) || void 0 === r ? void 0 : r.isDowngraded()) && void 0 !== o && o;
     if ("HQ" === g && v ? (this.logger.info("Attempting to upgrade to HQ simulcast stream, bandwidth estimate: ".concat(_)), null === (a = this._goLiveQualityManager) || void 0 === a || a.setGoLiveStreamDowngraded(!1)) : "LQ" === g && !v && m && (this.logger.info("Attempting to downgrade to LQ simulcast stream, bandwidth estimate: ".concat(_)), null === (s = this._goLiveQualityManager) || void 0 === s || s.setGoLiveStreamDowngraded(!0)), h) {
@@ -206,13 +206,13 @@ class M extends s.Z {
               }
             }
             let P = (null != e ? e : 0) + (null != t ? t : 0) + (null != n ? n : 0) + (null != r ? r : 0) + (null != i ? i : 0) + (null != o ? o : 0) + (null != c ? c : 0) + (null != g ? g : 0) + (null != m ? m : 0),
-              w = (null == O ? void 0 : null === (S = O.desktopSource) || void 0 === S ? void 0 : S.sourcePid) != null ? p.ZP.getGameForPID(O.desktopSource.sourcePid) : null,
+              D = (null == O ? void 0 : null === (S = O.desktopSource) || void 0 === S ? void 0 : S.sourcePid) != null ? p.ZP.getGameForPID(O.desktopSource.sourcePid) : null,
               {
-                gameName: D,
+                gameName: w,
                 gameId: L,
                 exe: x,
                 distributor: M
-              } = (0, f.G8)(w);
+              } = (0, f.G8)(D);
             y.default.track(T.rMx.SCREENSHARE_FINISHED, C({
               screenshare_frames: e,
               videohook_frames: t,
@@ -235,7 +235,7 @@ class M extends s.Z {
               windows: _,
               activity: h,
               soundshare_session: null !== (A = null == O ? void 0 : null === (I = O.desktopSource) || void 0 === I ? void 0 : I.soundshareSession) && void 0 !== A ? A : void 0,
-              share_game_name: D,
+              share_game_name: w,
               share_game_id: L,
               share_game_exe: x,
               share_game_distributor: M,

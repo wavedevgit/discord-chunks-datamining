@@ -32,13 +32,13 @@ function O(e) {
     children: O
   } = e, {
     selectedSkuId: S
-  } = (0, _.JL)(), [I, T] = i.useState(n), [N, A] = i.useState(), [C, R] = i.useState(!1), P = (0, p.pO)(I), w = (0, l.TX)(), {
-    enabled: D
+  } = (0, _.JL)(), [I, T] = i.useState(n), [N, A] = i.useState(), [C, R] = i.useState(!1), P = (0, p.pO)(I), D = (0, l.TX)(), {
+    enabled: w
   } = c.O.useExperiment({
     location: "gift card"
   }), L = E;
-  P && (L = w ? h.Cj.SEASONAL_STANDARD_BOX : null != b ? b : g, D && (L = h.Cj.NITROWEEN_STANDARD));
-  let [x, M] = i.useState(L), k = (0, d.iE)(), [j, U] = i.useState(), [G, B] = i.useState(t && (0, p.MY)(I) === p.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? m.NW.string(m.t.ZkOo1d) : f), [Z, F] = i.useState(void 0), [V, H] = i.useState(void 0), W = (0, p.E5)(S, t), [Y, K] = i.useState(!1), [z, q] = i.useState(!1), [Q, X] = i.useState(), J = i.useCallback(e => {
+  P && (L = D ? h.Cj.SEASONAL_STANDARD_BOX : null != b ? b : g, w && (L = h.Cj.NITROWEEN_STANDARD));
+  let [x, M] = i.useState(L), j = (0, d.iE)(), [k, U] = i.useState(), [G, B] = i.useState(t && (0, p.MY)(I) === p.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? m.NW.string(m.t.ZkOo1d) : f), [F, V] = i.useState(void 0), [Z, H] = i.useState(void 0), W = (0, p.E5)(S, t), [Y, K] = i.useState(!1), [z, q] = i.useState(!1), [Q, X] = i.useState(), J = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
     } = e;
@@ -59,9 +59,9 @@ function O(e) {
       setGiftRecipientError: A,
       validatingGiftRecipient: C,
       setValidatingGiftRecipient: R,
-      soundEffect: Z,
-      setSoundEffect: F,
-      emojiConfetti: V,
+      soundEffect: F,
+      setSoundEffect: V,
+      emojiConfetti: Z,
       setEmojiConfetti: H,
       customGiftMessage: G,
       setCustomGiftMessage: B,
@@ -74,8 +74,8 @@ function O(e) {
       alreadyHasHalloweenDeco: $,
       recommendedGiftSkuIds: ee,
       giftingOrigin: y,
-      claimableRewards: k,
-      selectedGiftingPromotionReward: j,
+      claimableRewards: j,
+      selectedGiftingPromotionReward: k,
       setSelectedGiftingPromotionReward: U
     },
     children: O

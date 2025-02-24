@@ -2,18 +2,18 @@
 "use strict";
 n.d(t, {
   J: () => M,
-  Nt: () => V,
+  Nt: () => Z,
   Ou: () => G,
   R2: () => L,
-  T$: () => w,
-  Uu: () => k,
-  ZC: () => F,
-  Zm: () => D,
-  bK: () => j,
+  T$: () => D,
+  Uu: () => j,
+  ZC: () => V,
+  Zm: () => w,
+  bK: () => k,
   mx: () => U,
   t6: () => x,
   tv: () => B,
-  vY: () => Z
+  vY: () => F
 }), n(47120);
 var r = n(192379),
   i = n(525654),
@@ -43,7 +43,7 @@ var r = n(192379),
 let C = 35e5,
   R = 1e4,
   P = new a.Yd("HDStreamingConsumableModal"),
-  w = e => {
+  D = e => {
     let t = (0, s.e7)([p.Z], () => p.Z.getGuild(null == e ? void 0 : e.guild_id)),
       n = (0, s.e7)([g.default], () => {
         var e;
@@ -70,14 +70,14 @@ let C = 35e5,
     let _ = (0, r.useMemo)(() => 0 === c.length || !c.some(e => null == e || e < C), [c]);
     return ((null == t ? void 0 : t.premiumTier) === N.Eu4.NONE || (null == t ? void 0 : t.premiumTier) === N.Eu4.TIER_1) && _ && !o
   },
-  D = (e, t) => {
+  w = (e, t) => {
     let n = (0, s.e7)([g.default], () => {
         var e;
         return null === (e = g.default.getCurrentUser()) || void 0 === e ? void 0 : e.id
       }),
       r = (0, s.Wu)([f.Z], () => null == e ? [] : f.Z.getAllActiveStreamsForChannel(e.id).filter(e => e.ownerId !== n)),
       i = (0, I.j)(t),
-      o = w(e);
+      o = D(e);
     return i && o && r.length > 0
   };
 
@@ -120,7 +120,7 @@ function M(e, t) {
   }, [i])
 }
 
-function k(e) {
+function j(e) {
   M(e, () => {
     let t = f.Z.getCurrentUserActiveStream();
     if (null != t && t.channelId === e.id) {
@@ -132,7 +132,7 @@ function k(e) {
   })
 }
 
-function j() {
+function k() {
   var e;
   let t = (null !== (e = o().name) && void 0 !== e ? e : "unknown").toLowerCase(),
     n = (0, s.e7)([E.Z], () => E.Z.isFocused()),
@@ -156,7 +156,7 @@ function B(e, t, n, r) {
   return !t && null == n && ("" !== e || null != r && r.length > 0)
 }
 
-function Z(e) {
+function F(e) {
   if (null != e) return {
     message_emoji: {
       id: e.emoji.id,
@@ -165,7 +165,7 @@ function Z(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   if (null == e || null == e.potions || 0 === e.potions.length) return null;
   for (let r of e.potions) {
     var t, n;
@@ -173,7 +173,7 @@ function F(e) {
   }
   return null
 }
-let V = () => {
+let Z = () => {
   let {
     entitlement: e,
     numPotions: t

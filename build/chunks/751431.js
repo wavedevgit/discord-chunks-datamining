@@ -1,22 +1,22 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(67867),
-  i = n(294377),
-  o = n(141603),
-  a = n(342545),
+var e = n(766362),
+  o = n(294377),
+  i = n(141603),
+  u = n(342545),
   s = n(293303),
-  l = n(56684),
-  c = s("string-to-symbol-registry"),
-  u = s("symbol-to-string-registry");
-r({
+  c = n(56684),
+  f = s("string-to-symbol-registry"),
+  a = s("symbol-to-string-registry");
+e({
   target: "Symbol",
   stat: !0,
-  forced: !l
+  forced: !c
 }, {
-  for: function(e) {
-    var t = a(e);
-    if (o(c, t)) return c[t];
-    var n = i("Symbol")(t);
-    return c[t] = n, u[n] = t, n
+  for: function(t) {
+    var r = u(t);
+    if (i(f, r)) return f[r];
+    var n = o("Symbol")(r);
+    return f[r] = n, a[n] = r, n
   }
 })

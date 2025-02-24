@@ -1,31 +1,31 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
 var r = n(548828),
-  i = n(611345),
-  o = n(186973),
-  a = n(474883),
+  o = n(611345),
+  a = n(186973),
+  i = n(474883),
   s = TypeError,
-  l = function(e) {
-    return function(t, n, l, c) {
-      var u = i(t),
-        d = o(u),
-        f = a(u);
+  c = function(e) {
+    return function(t, n, c, l) {
+      var u = o(t),
+        d = a(u),
+        p = i(u);
       r(n);
-      var p = e ? f - 1 : 0,
-        _ = e ? -1 : 1;
-      if (l < 2)
+      var h = e ? p - 1 : 0,
+        f = e ? -1 : 1;
+      if (c < 2)
         for (;;) {
-          if (p in d) {
-            c = d[p], p += _;
+          if (h in d) {
+            l = d[h], h += f;
             break
           }
-          if (p += _, e ? p < 0 : f <= p) throw new s("Reduce of empty array with no initial value")
+          if (h += f, e ? h < 0 : p <= h) throw new s("Reduce of empty array with no initial value")
         }
-      for (; e ? p >= 0 : f > p; p += _) p in d && (c = n(c, d[p], p, u));
-      return c
+      for (; e ? h >= 0 : p > h; h += f) h in d && (l = n(l, d[h], h, u));
+      return l
     }
   };
 e.exports = {
-  left: l(!1),
-  right: l(!0)
+  left: c(!1),
+  right: c(!0)
 }

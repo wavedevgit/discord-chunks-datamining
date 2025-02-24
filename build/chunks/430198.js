@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => j
 }), n(47120);
 var r, i = n(149765),
   o = n(442837),
@@ -117,14 +117,14 @@ function P(e) {
   delete y[t]
 }
 
-function w(e) {
+function D(e) {
   let {
     channel: t
   } = e;
   return null != t.guild_id && A(t.guild_id, t.id)
 }
 
-function D(e) {
+function w(e) {
   let {
     channels: t
   } = e, n = !1;
@@ -168,7 +168,7 @@ class M extends(r = o.ZP.Store) {
   }
 }
 b(M, "displayName", "GatedChannelStore");
-let k = new M(a.Z, {
+let j = new M(a.Z, {
   CONNECTION_OPEN: C,
   OVERLAY_INITIALIZE: C,
   CACHE_LOADED_LAZY: C,
@@ -180,9 +180,9 @@ let k = new M(a.Z, {
   GUILD_ROLE_DELETE: P,
   IMPERSONATE_UPDATE: P,
   IMPERSONATE_STOP: P,
-  CHANNEL_CREATE: w,
-  CHANNEL_DELETE: w,
-  CHANNEL_UPDATES: D,
+  CHANNEL_CREATE: D,
+  CHANNEL_DELETE: D,
+  CHANNEL_UPDATES: w,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: L,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: x
 })

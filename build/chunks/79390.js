@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  D$: () => D,
+  D$: () => w,
   N4: () => U,
   UI: () => P,
   Uu: () => N,
-  _N: () => w,
+  _N: () => D,
   cS: () => L,
   cZ: () => G,
-  e1: () => F,
+  e1: () => V,
   eQ: () => R,
   fw: () => C,
   uY: () => x,
-  x9: () => k
+  x9: () => j
 }), n(757143), n(301563), n(47120), n(566702);
 var r = n(392711),
   i = n.n(r),
@@ -100,11 +100,11 @@ function P(e) {
   return (0, l.e7)([h.Z], () => !!(null != e && e.id !== c.V && b.TPd.POLLS.has(e.type)) && (!!e.isPrivate() || h.Z.can(b.Plq.SEND_MESSAGES, e) && h.Z.can(b.Plq.SEND_POLLS, e)))
 }
 
-function w() {
+function D() {
   return !1
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   return 0 === e.length && null == t.find(e => L(e, n))
 }
 
@@ -127,7 +127,7 @@ function M(e) {
   return new Date(Date.now() + e * g.Z.Millis.HOUR).toISOString()
 }
 
-function k(e) {
+function j(e) {
   var t;
   if (null == e) return;
   let n = null == e ? void 0 : null === (t = e.answers) || void 0 === t ? void 0 : t.map((e, t) => {
@@ -151,7 +151,7 @@ function k(e) {
   })
 }
 
-function j(e, t) {
+function k(e, t) {
   var n, r, i, o;
   let a = null !== (o = null === (i = e.embeds[0]) || void 0 === i ? void 0 : null === (r = i.fields) || void 0 === r ? void 0 : null === (n = r.find(e => "poll_question_text" === e.rawName)) || void 0 === n ? void 0 : n.rawValue) && void 0 !== o ? o : "";
   return null != t ? (0, s.aF)(a, t) : a
@@ -159,7 +159,7 @@ function j(e, t) {
 
 function U(e) {
   let t = (0, d.ZH)(e),
-    n = j(e, v.Dv);
+    n = k(e, v.Dv);
   return y.NW.format(y.t.Vn97KS, {
     username: t.nick,
     title: n
@@ -186,7 +186,7 @@ function B(e, t) {
   return i()(o).reject(e => m.Z.isBlockedOrIgnored(e.id)).take(v.$J).map(e => E.ZP.getName(s, null == a ? void 0 : a.id, e)).value()
 }
 
-function Z(e, t) {
+function F(e, t) {
   let n = Math.max(0, t - e.length);
   return 1 === e.length ? n > 0 ? y.NW.formatToPlainString(y.t["SV/iZm"], {
     a: e[0],
@@ -212,7 +212,7 @@ function Z(e, t) {
   })
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   var r, i;
   let o = _.Z.getMessage(t, e);
   if (null == o) return "";
@@ -223,5 +223,5 @@ function F(e, t, n) {
     }),
     s = null !== (i = null == a ? void 0 : null === (r = a.count_details) || void 0 === r ? void 0 : r.vote) && void 0 !== i ? i : 0,
     l = B(o, n);
-  return 0 === l.length ? "" : Z(l, s)
+  return 0 === l.length ? "" : F(l, s)
 }

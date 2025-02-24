@@ -1,16 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(668530),
-  i = Object.defineProperty;
-e.exports = function(e, t) {
+var e = n(668530),
+  o = Object.defineProperty;
+t.exports = function(t, r) {
   try {
-    i(r, e, {
-      value: t,
+    o(e, t, {
+      value: r,
       configurable: !0,
       writable: !0
     })
   } catch (n) {
-    r[e] = t
+    e[t] = r
   }
-  return t
+  return r
 }

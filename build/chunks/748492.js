@@ -3,7 +3,7 @@
 n.d(t, {
   Ds: () => M,
   YB: () => L,
-  of: () => k,
+  of: () => j,
   q5: () => x
 });
 var r = n(200651);
@@ -35,9 +35,9 @@ var i = n(120356),
   C = n(231338),
   R = n(388032),
   P = n(229905),
-  w = n(717268);
+  D = n(717268);
 
-function D(e) {
+function w(e) {
   let {
     onClick: t,
     isExpanded: n
@@ -62,22 +62,22 @@ function L(e) {
     onMouseLeave: y,
     onJumpToChannel: T,
     idle: R,
-    selectedParticipant: D,
+    selectedParticipant: w,
     embeddedActivity: L
-  } = e, x = (0, c.bp)() === A.IlC.POPOUT, M = (0, a.e7)([S.Z], () => S.Z.isVideoEnabled()), k = (0, a.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), j = !1 === (null === (t = null == k ? void 0 : k.disabled) || void 0 === t || t), U = (0, u.Z)([o])[0], G = (0, _.Z)(i), B = e => {
+  } = e, x = (0, c.bp)() === A.IlC.POPOUT, M = (0, a.e7)([S.Z], () => S.Z.isVideoEnabled()), j = (0, a.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), k = !1 === (null === (t = null == j ? void 0 : j.disabled) || void 0 === t || t), U = (0, u.Z)([o])[0], G = (0, _.Z)(i), B = e => {
     l.Z.setVideoEnabled(e)
-  }, Z = () => {
-    j ? B(!0) : (0, h.Z)()
   }, F = () => {
+    k ? B(!0) : (0, h.Z)()
+  }, V = () => {
     (0, N.Z)(() => p.hP(i))
   };
   return (0, r.jsxs)("div", {
-    className: w.videoControls,
+    className: D.videoControls,
     onMouseMove: E,
     onMouseDown: s,
     onMouseLeave: y,
     children: [(0, r.jsx)("div", {
-      className: w.topControls,
+      className: D.topControls,
       children: (0, r.jsx)(g.r, {
         idle: R,
         title: null !== (n = null == U ? void 0 : U.name) && void 0 !== n ? n : i.name,
@@ -85,7 +85,7 @@ function L(e) {
         preventIdleComponent: m.Z
       })
     }), (0, r.jsxs)("div", {
-      className: w.bottomControls,
+      className: D.bottomControls,
       children: [(0, r.jsxs)(f.Z, {
         grow: 0,
         shrink: 1,
@@ -94,16 +94,16 @@ function L(e) {
         children: [(0, r.jsx)(O.C, {
           className: P.leftPipIcon,
           enabled: M,
-          cameraUnavailable: !j,
+          cameraUnavailable: !k,
           hasPermission: G,
           onChange: B,
-          onCameraUnavailable: Z
+          onCameraUnavailable: F
         }), (0, r.jsx)(m.Z, {
           children: (0, r.jsx)(d.Z, {
             channelId: i.id,
             guildId: i.getGuildId(),
-            className: w.__invalid_leftTrayIcon,
-            participant: D,
+            className: D.__invalid_leftTrayIcon,
+            participant: w,
             compact: !0
           })
         })]
@@ -116,7 +116,7 @@ function L(e) {
         children: [x || (0, I.R)() ? null : (0, r.jsx)(b.Z, {
           className: P.rightPipIcon,
           popoutOpen: !1,
-          onOpenPopout: F,
+          onOpenPopout: V,
           onClosePopout: C.Vq
         }), (0, r.jsx)(v.Z, {
           applicationId: o,
@@ -142,13 +142,13 @@ function x(e) {
     embeddedActivity: _
   } = e, h = (0, u.Z)([i])[0];
   return (0, r.jsxs)(s.P3F, {
-    className: o()(w.videoControls, w.videoControlsTextActivity),
+    className: o()(D.videoControls, D.videoControlsTextActivity),
     onMouseMove: l,
     onMouseDown: a,
     onMouseLeave: c,
     onDoubleClick: d,
     children: [(0, r.jsx)("div", {
-      className: o()(w.topControls),
+      className: o()(D.topControls),
       children: (0, r.jsx)(g.r, {
         idle: f,
         title: null !== (t = null == h ? void 0 : h.name) && void 0 !== t ? t : n.name,
@@ -156,7 +156,7 @@ function x(e) {
         preventIdleComponent: m.Z
       })
     }), (0, r.jsxs)("div", {
-      className: w.bottomControls,
+      className: D.bottomControls,
       children: [(0, r.jsx)(T.Z, {
         renderIcon: !1,
         users: p,
@@ -186,7 +186,7 @@ function M(e) {
   }) : null
 }
 
-function k(e) {
+function j(e) {
   var t;
   let {
     onMouseDown: n,
@@ -207,7 +207,7 @@ function k(e) {
     onMouseDown: n,
     onMouseLeave: a,
     children: (0, r.jsxs)("div", {
-      className: o()(w.topControls, P.pipHeaderContent, {
+      className: o()(D.topControls, P.pipHeaderContent, {
         [P.pipHeaderContentOpen]: l
       }),
       children: [!l && (0, r.jsx)(s.xhG, {
@@ -222,7 +222,7 @@ function k(e) {
           preventIdleComponent: m.Z
         }), (0, r.jsxs)("div", {
           className: P.pipHeaderButtonsRight,
-          children: [h ? null : (0, r.jsx)(D, {
+          children: [h ? null : (0, r.jsx)(w, {
             isExpanded: _,
             onClick: p
           }), (0, r.jsx)(v.Z, {

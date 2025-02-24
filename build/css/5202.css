@@ -1,6 +1,6 @@
 /**
   Module ID: 5202
-  Original File Name: 553c4bfe3715b3de
+  Original File Name: 8c9c4baa0e3de543
 **/
 @value minColumnWidth: 460px;
 
@@ -1399,8 +1399,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -3503,6 +3503,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .container__6e9b4 {
     position: relative;
+    pointer-events: all;
     width: 256px;
     height: 228px;
     padding: 16px 0;
@@ -3527,6 +3528,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .closeButton__6e9b4 {
     transition-duration: 0s;
+    pointer-events: all;
+    cursor: pointer;
     position: absolute;
     right: 12px;
     top: 16px;
@@ -3661,4 +3664,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=553c4bfe3715b3de.css.map*/
+/*# sourceMappingURL=8c9c4baa0e3de543.css.map*/

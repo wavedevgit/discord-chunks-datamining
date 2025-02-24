@@ -15,8 +15,8 @@ var r = n(442837),
   d = n(740492),
   p = n(973616),
   h = n(592125),
-  g = n(626135),
-  f = n(823379),
+  f = n(626135),
+  g = n(823379),
   m = n(728345),
   b = n(812206),
   _ = n(981631);
@@ -24,8 +24,8 @@ async function E(e, t, n) {
   t(e.id);
   let r = e.bot;
   if (null == r) try {
-    var s, d, f;
-    r = null !== (f = null === (s = b.Z.getApplication(e.id)) || void 0 === s ? void 0 : s.bot) && void 0 !== f ? f : null === (d = p.ZP.createFromServer(await (0, m.UM)(e.id))) || void 0 === d ? void 0 : d.bot
+    var s, d, g;
+    r = null !== (g = null === (s = b.Z.getApplication(e.id)) || void 0 === s ? void 0 : s.bot) && void 0 !== g ? g : null === (d = p.ZP.createFromServer(await (0, m.UM)(e.id))) || void 0 === d ? void 0 : d.bot
   } catch (e) {
     t(void 0);
     return
@@ -38,7 +38,7 @@ async function E(e, t, n) {
     } catch (e) {
       t(void 0)
     }
-    if (g.default.track(_.rMx.APP_DMS_QUICK_LAUNCHER_CLICKED, {
+    if (f.default.track(_.rMx.APP_DMS_QUICK_LAUNCHER_CLICKED, {
         application_id: e.id,
         is_new_dm: d,
         channel_id: s
@@ -87,7 +87,7 @@ function N() {
     includeAuthorizedAppsAndFetch: !1
   });
   return {
-    frecentApps: e.map(e => e.application).filter(f.lm),
+    frecentApps: e.map(e => e.application).filter(g.lm),
     loading: t
   }
 }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 }), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -127,7 +127,7 @@ function P() {
   }
   return !1
 }
-class w extends(r = i.ZP.PersistedStore) {
+class D extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     v = null != e ? e : E, this.waitFor(l.default), this.syncWith([l.default], A), this.syncWith([u.ZP], C), this.syncWith([a.Z], P)
   }
@@ -199,7 +199,7 @@ class w extends(r = i.ZP.PersistedStore) {
     N()
   }
 }
-f(w, "displayName", "UserOfferStore"), f(w, "persistKey", "UserOfferStore"), f(w, "migrations", [e => {
+f(D, "displayName", "UserOfferStore"), f(D, "persistKey", "UserOfferStore"), f(D, "migrations", [e => {
   let t = null == e ? void 0 : e.userDiscounts;
   if (null != t) return h(p({}, e), {
     userDiscountOffers: t
@@ -213,7 +213,7 @@ f(w, "displayName", "UserOfferStore"), f(w, "persistKey", "UserOfferStore"), f(w
     isFetching: !1
   }) : e
 }]);
-let D = new w(o.Z, {
+let w = new D(o.Z, {
   BILLING_USER_OFFER_FETCH_START: b,
   BILLING_USER_TRIAL_OFFER_FETCH_SUCCESS: y,
   BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: I,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => k
 }), n(47120), n(301563), n(411104), n(653041), n(998459);
 var r, i = n(348327),
   o = n.n(i),
@@ -53,7 +53,7 @@ function P(e, t, n) {
     rejectWithError: !1
   })
 }
-async function w(e, t) {
+async function D(e, t) {
   var n;
   let r = C[e];
   if (null != r) return r;
@@ -66,7 +66,7 @@ async function w(e, t) {
   }, t), o = null === (n = i[0]) || void 0 === n ? void 0 : n.name;
   return C[e] = o, o
 }
-class D {
+class w {
   start() {
     this._started || (this._started = !0, p.Z.isFetching() ? c.Z.fetch() : this._check())
   }
@@ -96,7 +96,7 @@ class D {
         title: c
       } = a, f = {
         large_image: null != s && null !== (r = (0, d.getAssetFromImageURL)(h.ABu.TWITCH, s)) && void 0 !== r ? r : void 0
-      }, p = await w(l, t), _ = u.Z.get(h.ABu.TWITCH), m = null !== (i = R(s)) && void 0 !== i ? i : e.name, g = null != c && "" !== c ? c.slice(0, S) : void 0, E = null != p && "" !== p ? p.slice(0, S) : void 0;
+      }, p = await D(l, t), _ = u.Z.get(h.ABu.TWITCH), m = null !== (i = R(s)) && void 0 !== i ? i : e.name, g = null != c && "" !== c ? c.slice(0, S) : void 0, E = null != p && "" !== p ? p.slice(0, S) : void 0;
       return {
         url: null === (n = _.getPlatformUserUrl) || void 0 === n ? void 0 : n.call(_, {
           id: e.id,
@@ -181,7 +181,7 @@ class D {
     m(this, "_nextCheck", void 0), m(this, "_started", void 0), this._started = !1
   }
 }
-let L = new D;
+let L = new w;
 
 function x() {
   _.Z.enabled ? L.start() : L.stop()
@@ -192,7 +192,7 @@ function M(e) {
   if (o()(e.stream, I)) return !1;
   I = null !== (t = e.stream) && void 0 !== t ? t : null
 }
-class k extends(r = a.ZP.Store) {
+class j extends(r = a.ZP.Store) {
   initialize() {
     x(), this.waitFor(p.Z), this.syncWith([_.Z], x)
   }
@@ -200,8 +200,8 @@ class k extends(r = a.ZP.Store) {
     return I
   }
 }
-m(k, "displayName", "ExternalStreamingStore");
-let j = new k(l.Z, {
+m(j, "displayName", "ExternalStreamingStore");
+let k = new j(l.Z, {
   STREAMING_UPDATE: M,
   USER_CONNECTIONS_UPDATE: () => L._check()
 })

@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => w
+  Z: () => D
 });
 var i, o = n(442837),
   a = n(544891),
@@ -162,7 +162,7 @@ class P extends(i = o.ZP.Store) {
   }
 }
 p(P, "displayName", "TypingStore");
-let w = new P(s.Z, {
+let D = new P(s.Z, {
   TYPING_START: T,
   TYPING_STOP: N,
   TYPING_START_LOCAL: y,

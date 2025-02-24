@@ -45,14 +45,14 @@ function P(e) {
   return t === O.oAB.ACCOUNT && N()
 }
 
-function w(e) {
+function D(e) {
   let {
     avatar: t
   } = e;
   r = t, _ = void 0
 }
 
-function D(e) {
+function w(e) {
   let {
     avatar: t
   } = e;
@@ -80,14 +80,14 @@ function M(e) {
   s = t
 }
 
-function k(e) {
+function j(e) {
   let {
     item: t
   } = e;
   (null == t ? void 0 : t.type) === v.Z.PROFILE_EFFECT ? (h = null, m = null == t ? void 0 : t.id) : (null == t ? void 0 : t.type) === v.Z.AVATAR_DECORATION && (m = null, h = t)
 }
 
-function j(e) {
+function k(e) {
   let {
     banner: t
   } = e;
@@ -115,21 +115,21 @@ function B(e) {
   d = t
 }
 
-function Z(e) {
+function F(e) {
   let {
     themeColors: t
   } = e;
   f = t
 }
 
-function F(e) {
+function V(e) {
   let {
     themeColors: t
   } = e;
   p = t
 }
 
-function V(e) {
+function Z(e) {
   let {
     avatar: t
   } = e;
@@ -291,22 +291,22 @@ let er = new en(y.Z, {
   USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: et,
   USER_SETTINGS_ACCOUNT_SUBMIT: C,
   USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: R,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: w,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_V2: D,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: D,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_V2: w,
   USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: L,
   USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION: x,
-  USER_SETTINGS_ACCOUNT_SET_SINGLE_TRY_IT_OUT_COLLECTIBLES_ITEM: k,
+  USER_SETTINGS_ACCOUNT_SET_SINGLE_TRY_IT_OUT_COLLECTIBLES_ITEM: j,
   USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID: M,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER: j,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER: k,
   USER_SETTINGS_ACCOUNT_SET_PENDING_BIO: U,
   USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS: G,
   USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR: B,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS: Z,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR: V,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS: F,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR: Z,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION: H,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT_ID: W,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER: Y,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS: F,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS: V,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET: K,
   USER_SETTINGS_CLEAR_ERRORS: q,
   USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES: X,

@@ -31,9 +31,9 @@ var r = n(200651),
   C = n(278754),
   R = n(981631),
   P = n(388032),
-  w = n(509340);
+  D = n(509340);
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -49,7 +49,7 @@ function L(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -72,9 +72,9 @@ function M(e, t) {
   }), e
 }
 
-function k(e, t) {
+function j(e, t) {
   if (null == e) return {};
-  var n, r, i = j(e, t);
+  var n, r, i = k(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -82,7 +82,7 @@ function k(e, t) {
   return i
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -92,10 +92,10 @@ function j(e, t) {
 let U = 4,
   G = (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_CONTAINER_PADDING),
   B = (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_STICKER_SUGGESTION_SIZE),
-  Z = 2 * B + (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_STICKER_SUGGESTION_MARGIN) + 2 * G,
-  F = () => Promise.resolve();
+  F = 2 * B + (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_STICKER_SUGGESTION_MARGIN) + 2 * G,
+  V = () => Promise.resolve();
 
-function V(e) {
+function Z(e) {
   let {
     isFocused: t,
     isHidden: n,
@@ -106,11 +106,11 @@ function V(e) {
     onSelectSticker: u
   } = e, d = (0, s.JA)("".concat(o)), {
     tabIndex: p
-  } = d, _ = k(d, ["tabIndex"]);
+  } = d, _ = j(d, ["tabIndex"]);
   return (0, r.jsxs)(f.P3F, M(L({}, _), {
     tabIndex: n ? -1 : p,
-    className: a()(w.suggestedExpression, {
-      [w.suggestedExpressionFocused]: t
+    className: a()(D.suggestedExpression, {
+      [D.suggestedExpressionFocused]: t
     }),
     focusProps: {
       enabled: !1
@@ -121,15 +121,15 @@ function V(e) {
       mask: m.ZP.Masks.STICKER_ROUNDED_RECT,
       width: B + U,
       height: B + U,
-      className: w.mask,
+      className: D.mask,
       children: (0, r.jsx)("div", {
-        className: w.maskBackground
+        className: D.maskBackground
       })
     }), (0, r.jsx)(O.ZP, {
       maskAsset: !0,
       size: B,
       sticker: l,
-      className: w.__invalid_sticker
+      className: D.__invalid_sticker
     }), i !== E.eb.SENDABLE && (0, r.jsx)(S.Z, {
       size: 14
     })]
@@ -151,8 +151,8 @@ function H(e) {
   }, [a]), p = (0, l.ZP)({
     id: "expression-suggestions-stickers",
     isEnabled: !0,
-    scrollToStart: F,
-    scrollToEnd: F,
+    scrollToStart: V,
+    scrollToEnd: V,
     orientation: c.hy.HORIZONTAL,
     setFocus: f,
     useVirtualFocus: !0
@@ -192,7 +192,7 @@ let W = i.memo(function(e) {
     onSelectSticker: c,
     stickerIconVisible: u = !1,
     submitButtonVisible: d = !1
-  } = e, m = i.useContext(h.ZP), [O, S] = i.useState(null), [D, x] = i.useState(!1), [j, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [F, W] = i.useState(""), [Y, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, N.Z)(F, D, o), {
+  } = e, m = i.useContext(h.ZP), [O, S] = i.useState(null), [w, x] = i.useState(!1), [k, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [V, W] = i.useState(""), [Y, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, N.Z)(V, w, o), {
     analyticsLocations: $
   } = (0, _.ZP)(p.Z.EXPRESSION_SUGGESTIONS), {
     handleTextChange: ee,
@@ -228,7 +228,7 @@ let W = i.memo(function(e) {
     })
   }, [l]);
   let ei = J.length > 0,
-    eo = en && !G && !z && !D && !Q && ei,
+    eo = en && !G && !z && !w && !Q && ei,
     {
       stickersNavigator: ea
     } = H({
@@ -260,8 +260,8 @@ let W = i.memo(function(e) {
     el = i.useRef([]),
     ec = i.useRef(!1);
   i.useEffect(() => {
-    eo && (el.current = J), eo !== ec.current && (m.emit(eo ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), eo && ((0, A.Tk)(F), K(F))), ec.current = eo
-  }, [m, eo, J, F]);
+    eo && (el.current = J), eo !== ec.current && (m.emit(eo ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), eo && ((0, A.Tk)(V), K(V))), ec.current = eo
+  }, [m, eo, J, V]);
   let eu = !eo,
     ed = eo ? J : el.current;
   return (0, r.jsx)(_.Gt, {
@@ -269,14 +269,14 @@ let W = i.memo(function(e) {
     children: (0, r.jsxs)(f.P3F, {
       tabIndex: eu ? -1 : 0,
       "aria-hidden": eu,
-      className: a()(w.container, {
-        [w.hidden]: eu,
-        [w.submitButtonOffset]: d,
-        [w.stickerIconOffset]: u
+      className: a()(D.container, {
+        [D.hidden]: eu,
+        [D.submitButtonOffset]: d,
+        [D.stickerIconOffset]: u
       }),
       innerRef: B,
       style: {
-        minWidth: Z
+        minWidth: F
       },
       onClick: () => {
         var e;
@@ -290,9 +290,9 @@ let W = i.memo(function(e) {
               var {
                 ref: t,
                 tabIndex: n
-              } = e, i = k(e, ["ref", "tabIndex"]);
+              } = e, i = j(e, ["ref", "tabIndex"]);
               return (0, r.jsx)("div", M(L({
-                className: w.stickerResults,
+                className: D.stickerResults,
                 ref: e => {
                   t.current = e
                 },
@@ -306,8 +306,8 @@ let W = i.memo(function(e) {
                     sticker: n,
                     sendability: i
                   } = e;
-                  return (0, r.jsx)(V, {
-                    isFocused: j === "".concat(t),
+                  return (0, r.jsx)(Z, {
+                    isFocused: k === "".concat(t),
                     isHidden: eu,
                     sendability: i,
                     listIndex: t,
@@ -322,23 +322,23 @@ let W = i.memo(function(e) {
             }
           })
         }), (0, r.jsxs)("div", {
-          className: w.bottomInformationTextContainer,
+          className: D.bottomInformationTextContainer,
           children: [(0, r.jsx)("div", {
-            className: w.textDivider
+            className: D.textDivider
           }), (0, r.jsxs)("div", {
-            className: w.bottomInformationLayout,
+            className: D.bottomInformationLayout,
             children: [(0, r.jsx)(f.Text, {
-              className: w.descriptionText,
+              className: D.descriptionText,
               style: {
-                maxWidth: Z
+                maxWidth: F
               },
               variant: "text-sm/normal",
-              children: null != j ? P.NW.format(P.t["5gglIi"], {
-                stickerName: null === (t = J[+j]) || void 0 === t ? void 0 : t.sticker.name
+              children: null != k ? P.NW.format(P.t["5gglIi"], {
+                stickerName: null === (t = J[+k]) || void 0 === t ? void 0 : t.sticker.name
               }) : P.NW.format(P.t["8DjNnJ"], {
                 upHook: (e, t) => (0, r.jsx)(f.M2$, {
                   shortcut: "up",
-                  className: w.keybind
+                  className: D.keybind
                 }, t)
               })
             }), (0, r.jsx)(f.P3F, {
@@ -356,14 +356,14 @@ let W = i.memo(function(e) {
                   size: "md",
                   color: "currentColor"
                 }, e), {
-                  className: w.closeIcon
+                  className: D.closeIcon
                 }))
               })
             })]
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: w.containerBackground
+        className: D.containerBackground
       })]
     })
   })

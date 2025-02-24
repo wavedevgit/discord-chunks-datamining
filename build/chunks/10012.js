@@ -1,10 +1,10 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(447631),
-  i = n(821819),
-  o = n(535538);
-e.exports = !r && !i(function() {
-  return 7 !== Object.defineProperty(o("div"), "a", {
+var e = n(447631),
+  o = n(821819),
+  i = n(535538);
+t.exports = !e && !o(function() {
+  return 7 !== Object.defineProperty(i("div"), "a", {
     get: function() {
       return 7
     }

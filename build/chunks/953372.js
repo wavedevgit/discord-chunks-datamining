@@ -37,11 +37,11 @@ function O(e) {
     hideEmoji: C = !1,
     hideTooltip: R = !1
   } = e, P = "live-activity-status-web", {
-    blockeeExperimentEnabled: w,
-    blockerExperimentEnabled: D
+    blockeeExperimentEnabled: D,
+    blockerExperimentEnabled: w
   } = (0, u.NR)(P);
   (0, d.Z)(null == t ? void 0 : t.id, P);
-  let L = w && (null == o ? void 0 : o.discoverable) === !1 ? null : o,
+  let L = D && (null == o ? void 0 : o.discoverable) === !1 ? null : o,
     x = i.useMemo(() => {
       var e, t;
       let r = null == n ? void 0 : n.find(e => {
@@ -55,23 +55,23 @@ function O(e) {
       return null == ("" === i ? null : i) && null == r.emoji ? null : r
     }, [n]),
     M = (0, l.e7)([f.Z], () => f.Z.isBlockedOrIgnored(null == t ? void 0 : t.id));
-  if (D && M) return null;
-  let k = (null == t ? void 0 : t.bot) === !0,
-    j = (null == x ? void 0 : x.state) != null && "xs" === T,
+  if (w && M) return null;
+  let j = (null == t ? void 0 : t.bot) === !0,
+    k = (null == x ? void 0 : x.state) != null && "xs" === T,
     U = () => {
       if (null != L) return (0, r.jsx)(m.Z, {
         game: null == n ? void 0 : n.find(c.Z),
         textVariant: "text-".concat(T, "/medium"),
         textClassName: S,
-        hideText: j,
-        hideIcon: k,
+        hideText: k,
+        hideIcon: j,
         hideTooltip: R
       });
       if (null != O) return (0, r.jsx)(E.Z, {
         channel: O,
         textVariant: "text-".concat(T, "/medium"),
         textClassName: S,
-        hideText: j,
+        hideText: k,
         hideTooltip: R
       });
       let e = null == n ? void 0 : n.find(e => {
@@ -84,8 +84,8 @@ function O(e) {
         activity: e,
         textVariant: "text-".concat(T, "/medium"),
         textClassName: S,
-        hideText: j,
-        hideIcon: k,
+        hideText: k,
+        hideIcon: j,
         hideTooltip: R
       }) : null
     },

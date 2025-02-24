@@ -7,7 +7,7 @@ var r = n(818083),
   i = n(987338);
 let o = (0, r.B)({
   kind: "user",
-  id: "2025-02-voice_call_buttons_v2",
+  id: "2025-02_voice_call_buttons_v2",
   label: "Voice and Video buttons V2",
   defaultConfig: {
     squareButtons: !1,

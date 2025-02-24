@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  JA: () => D,
+  JA: () => w,
   Jw: () => A,
-  Od: () => w,
+  Od: () => D,
   Wj: () => x,
   gK: () => L,
   oD: () => R,
@@ -51,7 +51,7 @@ function P(e, t) {
   return e.length > t ? e.substring(0, t) + "..." : e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n, r, i, o, a, s, l;
   let c = null == t ? null : m.Z.getMessage(e.id, t),
     u = null !== (a = null == c ? void 0 : null === (r = c.embeds) || void 0 === r ? void 0 : null === (n = r[0]) || void 0 === n ? void 0 : n.rawTitle) && void 0 !== a ? a : "",
@@ -81,7 +81,7 @@ function w(e, t) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     parentChannel: t,
     parentMessageId: n,
@@ -98,12 +98,12 @@ function D(e) {
       E = R(o, a),
       v = null !== (m = o.name) && void 0 !== m ? m : "";
     if ("" === v && d) {
-      let e = w(t, n);
+      let e = D(t, n);
       v = "" !== e ? e : N.NW.string(N.t["7Xm5QE"])
     }
     let O = (0, y.WD)(t),
       S = _.Z.getChannel(b.default.castMessageIdAsChannelId(n)),
-      I = await k(t, () => {
+      I = await j(t, () => {
         let e = null != n ? T.ANM.CHANNEL_MESSAGE_THREADS(t.id, n) : T.ANM.CHANNEL_THREADS(t.id);
         return i.tn.post({
           url: e,
@@ -121,7 +121,7 @@ function D(e) {
 }
 
 function L(e, t, n, r, o) {
-  return k(e, () => i.tn.post({
+  return j(e, () => i.tn.post({
     url: T.ANM.CHANNEL_THREADS(e.id),
     body: {
       name: t,
@@ -157,7 +157,7 @@ function x(e) {
           flags: 0 !== f ? f : void 0
         }
       },
-      O = await k(t, () => null != u && u.length > 0 ? l(E, b, u) : i.tn.post({
+      O = await j(t, () => null != u && u.length > 0 ? l(E, b, u) : i.tn.post({
         url: E,
         body: b,
         rejectWithError: !1
@@ -175,7 +175,7 @@ function M(e, t, n, r, i) {
   else if (null != n && n.length > 0) return l.Z.sendStickers(e.id, n, t);
   else return l.Z.sendMessage(e.id, f.ZP.parse(e, t))
 }
-async function k(e, t) {
+async function j(e, t) {
   let n;
   let r = e.isForumLikeChannel();
   try {

@@ -88,9 +88,9 @@ async function O(e) {
     disablePremiumUpsell: A,
     inPopout: C,
     applicationId: R
-  } = e, P = C ? i.u1M : i.z1l, w = l.default.getCurrentUser();
-  if (null == w) return;
-  if (!w.verified) {
+  } = e, P = C ? i.u1M : i.z1l, D = l.default.getCurrentUser();
+  if (null == D) return;
+  if (!D.verified) {
     (0, i.ZDy)(async () => {
       let {
         default: e
@@ -108,14 +108,14 @@ async function O(e) {
     });
     return
   }
-  let D = [];
-  u.Z.isLoadedForPremiumSKUs() || D.push((0, s.Y2)()), c.Z.hasFetched || (D.push(o.jg()), D.push((0, a.X8)())), D.length > 0 && await Promise.allSettled(D);
+  let w = [];
+  u.Z.isLoadedForPremiumSKUs() || w.push((0, s.Y2)()), c.Z.hasFetched || (w.push(o.jg()), w.push((0, a.X8)())), w.length > 0 && await Promise.allSettled(w);
   let L = (0, f.vx)(c.Z.boostSlots),
     x = L.length,
     M = e => {
       null == O || O(), null == N || N(e)
     },
-    k = () => {
+    j = () => {
       null == O || O(), null == S || S(), d.default.track(_.rMx.MODAL_DISMISSED, {
         type: _.ZY5.PREMIUM_GUILD_USER_MODAL,
         location_section: h.section
@@ -152,7 +152,7 @@ async function O(e) {
     analyticsLocation: h,
     analyticsSourceLocation: g,
     guildId: T.id,
-    closeLayer: k,
+    closeLayer: j,
     totalNumberOfSlotsToAssign: null != b ? b : 1,
     onCloseModal: M,
     disablePremiumUpsell: A,

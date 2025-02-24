@@ -155,29 +155,29 @@ let C = m(_({}, l().defaultRules.link), {
     }), f = E(a), p = E(o), h = E(null != s ? s : ""), g = f.whitespaceSanitized, v = p.fullySanitized, C = h.fullySanitized, R = v.trim();
     if (0 === g.trim().length || 0 === R.length) return u();
     let P = A(l().unescapeUrl(a)),
-      w = null == P,
-      D = (0, c.ZP)(o).length > 0 || (0, c.ZP)(s).length > 0;
-    if (w || D) return u();
+      D = null == P,
+      w = (0, c.ZP)(o).length > 0 || (0, c.ZP)(s).length > 0;
+    if (D || w) return u();
     let L = m(_({}, n), {
         allowEscape: !1,
         parseInlineCodeChildContent: !0
       }),
       x = n.allowEmojiLinks ? y : b,
       M = [...x, ...O],
-      k = [...S, ...I],
-      j = T(t(v, L), M, [d.b.EMOJI]),
-      U = T(t(C, L), k);
-    if (null == j || null == U || 0 === N(j).trim().length) return u();
+      j = [...S, ...I],
+      k = T(t(v, L), M, [d.b.EMOJI]),
+      U = T(t(C, L), j);
+    if (null == k || null == U || 0 === N(k).trim().length) return u();
     let G = i().pick(t.rules, x),
       B = l().parserFor(G)(p.whitespaceSanitized, L),
-      Z = h.whitespaceSanitized,
+      F = h.whitespaceSanitized,
       {
-        target: F
+        target: V
       } = P;
     return {
       content: B,
-      target: F,
-      title: Z
+      target: V,
+      title: F
     }
   }
 })

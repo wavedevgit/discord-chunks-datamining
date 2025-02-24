@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 n.d(t, {
   GC: () => m,
-  _X: () => f,
-  em: () => g,
+  _X: () => g,
+  em: () => f,
   jU: () => h
 });
 var r = n(13245),
@@ -34,14 +34,14 @@ function h(e) {
     context: d.IlC.APP
   })
 }
-let g = async (e, t, n) => {
+let f = async (e, t, n) => {
   if ((0, c.YK)(e, t), (null == n || "" === n) && (0, c.s9)(t)) return e.authorization.scopes = [u.cE, u.CN], Promise.resolve();
   if (null == n || "" === n) return Promise.reject(new s.Z({
     closeCode: d.$VG.INVALID_CLIENTID
   }, "No Client ID Specified"));
   let r = o.ZP.releaseChannel !== d.R5N.CANARY && !p.includes(n) && e.transport !== u.He.POST_MESSAGE;
   return await (0, c.vv)(n, r), (0, c.YS)(e, n, t)
-}, f = () => (0, c.tr)(e => {
+}, g = () => (0, c.tr)(e => {
   let t = [];
   return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = e.modeOptions.shortcut.map(e => {
     var t;

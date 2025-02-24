@@ -59,17 +59,17 @@ let y = e => {
     (0, m.Z)(v);
     let [T, N] = i.useState(0), [A, C] = i.useState(0), {
       accessibilityLabel: R
-    } = v, [P, w] = i.useState(-y), {
-      stop: D,
+    } = v, [P, D] = i.useState(-y), {
+      stop: w,
       reset: L,
       ticking: x
     } = (0, f.Z)(e => {
-      w(t => t + e)
+      D(t => t + e)
     }), M = i.useRef(y);
     i.useEffect(() => {
       M.current = y
     }), i.useEffect(() => {
-      w(-M.current), I((0, p.H)(v.effects))
+      D(-M.current), I((0, p.H)(v.effects))
     }, [v]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
@@ -78,10 +78,10 @@ let y = e => {
         r > e && (e = r), n.loop && n.start < t && (t = n.start)
       }), N(t), C(e)
     }, [C, S]);
-    let [k, j] = i.useState(!1);
+    let [j, k] = i.useState(!1);
     return i.useEffect(() => {
-      !0 === c || s || (D(), w(0)), !s && k && x.current && (D(), w(0)), o && s && !x.current && (L(), v.animationType === d.Q.PERSISTENT ? w(h === d.j.FromStart ? 0 : T) : w(0))
-    }, [s, k, T, o, D, L, x, v.animationType, c, h]), (0, r.jsx)("div", {
+      !0 === c || s || (w(), D(0)), !s && j && x.current && (w(), D(0)), o && s && !x.current && (L(), v.animationType === d.Q.PERSISTENT ? D(h === d.j.FromStart ? 0 : T) : D(0))
+    }, [s, j, T, o, w, L, x, v.animationType, c, h]), (0, r.jsx)("div", {
       ref: O,
       className: a()(E.profileEffects, {
         [E.hovered]: s && l
@@ -110,8 +110,8 @@ let y = e => {
             ticking: x.current,
             time: P,
             accessibilityLabel: R,
-            hasPlayedThrough: k,
-            setHasPlayedThrough: j,
+            hasPlayedThrough: j,
+            setHasPlayedThrough: k,
             urlQueryString: g,
             maxLoops: n,
             loopEnd: A,

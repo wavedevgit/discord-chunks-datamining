@@ -42,16 +42,16 @@ function I(e) {
     purchaseType: R,
     selectedSku: P
   } = (0, g.JL)(), {
-    isGift: w,
-    selectedGiftStyle: D,
+    isGift: D,
+    selectedGiftStyle: w,
     giftRecipient: L
-  } = (0, m.wD)(), x = w && (0, h.pO)(L) && N === E.h8.CONFIRM && null != D && (null == P ? void 0 : P.productLine) !== v.POd.COLLECTIBLES, M = null != n && null != N, k = [E.h8.SKU_SELECT, E.h8.SELECT_FREE_SKU], j = null != N && !k.includes(N) && null != T, U = (0, d.N)(o), G = !w && null != U && null != T && b.nG[U.trial_id].skus.includes(T), B = (0, u.Ng)(), Z = null == B ? void 0 : null === (t = B.discount) || void 0 === t ? void 0 : t.plan_ids.some(e => b.GP[e].skuId === T), F = !w && null != B && null != T && Z, {
-    enabled: V
+  } = (0, m.wD)(), x = D && (0, h.pO)(L) && N === E.h8.CONFIRM && null != w && (null == P ? void 0 : P.productLine) !== v.POd.COLLECTIBLES, M = null != n && null != N, j = [E.h8.SKU_SELECT, E.h8.SELECT_FREE_SKU], k = null != N && !j.includes(N) && null != T, U = (0, d.N)(o), G = !D && null != U && null != T && b.nG[U.trial_id].skus.includes(T), B = (0, u.Ng)(), F = null == B ? void 0 : null === (t = B.discount) || void 0 === t ? void 0 : t.plan_ids.some(e => b.GP[e].skuId === T), V = !D && null != B && null != T && F, {
+    enabled: Z
   } = c.ZP.useExperiment({
     location: "PaymentModalHeader"
   }, {
     autoTrackExposure: !1
-  }), H = (0, c.rK)(), W = V && H;
+  }), H = (0, c.rK)(), W = Z && H;
   return i.useMemo(() => {
     if (null == N) return;
     let e = null;
@@ -59,7 +59,7 @@ function I(e) {
       className: O.container,
       children: [(0, r.jsx)(f.Z, {
         defaultAnimationState: l.SR.LOOP,
-        giftStyle: D,
+        giftStyle: w,
         className: O.seasonalGiftBoxHeaderIcon
       }), (0, r.jsx)(s.olH, {
         onClick: I,
@@ -68,16 +68,16 @@ function I(e) {
     }) : M ? e = n(null != A ? A : null, I, N) : R === y.GZ.ONE_TIME ? e = (0, r.jsx)(_.t, {
       step: N,
       onClose: I
-    }) : j && (a()(S(T, b.y7), "invalid sku id: ".concat(T)), e = (0, r.jsx)(p.Z, {
+    }) : k && (a()(S(T, b.y7), "invalid sku id: ".concat(T)), e = (0, r.jsx)(p.Z, {
       currentStep: null != N ? N : void 0,
       purchaseState: C,
       premiumType: b.y7[T],
       onClose: I,
       showTrialBadge: G,
-      showDiscountBadge: F,
-      isGift: w,
+      showDiscountBadge: V,
+      isGift: D,
       giftRecipient: L,
       useWinterTheme: W
     })), e
-  }, [D, I, C, n, A, T, N, G, F, x, j, M, R, w, L, W])
+  }, [w, I, C, n, A, T, N, G, V, x, k, M, R, D, L, W])
 }

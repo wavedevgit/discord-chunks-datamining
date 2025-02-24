@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   C: () => O,
-  Z: () => w
+  Z: () => D
 }), n(301563), n(653041);
 var r, i = n(392711),
   o = n.n(i),
@@ -142,7 +142,7 @@ class P extends(r = a.ZP.PersistedStore) {
   }
 }
 m(P, "displayName", "FrecencyStore"), m(P, "persistKey", "FrecencyStore");
-let w = new P(s.Z, {
+let D = new P(s.Z, {
   CHANNEL_SELECT: N,
   VOICE_CHANNEL_SELECT: N,
   USER_SETTINGS_PROTO_UPDATE: A

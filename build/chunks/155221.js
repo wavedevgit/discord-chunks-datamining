@@ -41,7 +41,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function w(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,7 +66,7 @@ function D(e, t) {
 }
 
 function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -81,12 +81,12 @@ let x = (0, h.Un)({
     webpackId: 431583,
     name: "DownloadApps"
   }),
-  k = (0, h.Un)({
+  j = (0, h.Un)({
     createPromise: () => n.e("81226").then(n.bind(n, 484097)),
     webpackId: 484097,
     name: "InviteProxy"
   }),
-  j = (0, h.Un)({
+  k = (0, h.Un)({
     createPromise: () => n.e("30556").then(n.bind(n, 675207)),
     webpackId: 675207,
     name: "VerifyConnectedAccount"
@@ -106,17 +106,17 @@ let x = (0, h.Un)({
     webpackId: 832462,
     name: "LinkConnectedAccount"
   }),
-  Z = (0, h.Un)({
+  F = (0, h.Un)({
     createPromise: () => n.e("46455").then(n.bind(n, 924339)),
     webpackId: 924339,
     name: "LinkAuthorize"
   }),
-  F = (0, h.Un)({
+  V = (0, h.Un)({
     createPromise: () => Promise.all([n.e("62729"), n.e("69773")]).then(n.bind(n, 197528)),
     webpackId: 197528,
     name: "ActivateDevice"
   }),
-  V = (0, h.Un)({
+  Z = (0, h.Un)({
     createPromise: () => Promise.all([n.e("50506"), n.e("68880"), n.e("93828"), n.e("48835"), n.e("99152"), n.e("35535"), n.e("34981"), n.e("25292"), n.e("8016"), n.e("22878"), n.e("90508"), n.e("13351"), n.e("95477"), n.e("11212"), n.e("66711"), n.e("78447"), n.e("97349"), n.e("55186"), n.e("17938"), n.e("53937"), n.e("83366"), n.e("6380"), n.e("46097"), n.e("76540"), n.e("84335"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("22173"), n.e("40580"), n.e("46906"), n.e("30243"), n.e("99393"), n.e("68241"), n.e("49508"), n.e("22646"), n.e("3940"), n.e("25183"), n.e("80284"), n.e("85574"), n.e("11814"), n.e("48923"), n.e("89444"), n.e("30419"), n.e("99839"), n.e("18824"), n.e("60691"), n.e("38902"), n.e("42743"), n.e("49049"), n.e("624"), n.e("56650"), n.e("70205"), n.e("7590"), n.e("91689"), n.e("93375"), n.e("64679"), n.e("69057"), n.e("98254"), n.e("22356"), n.e("57738"), n.e("23919"), n.e("12416"), n.e("94458"), n.e("21881"), n.e("94989"), n.e("37220"), n.e("17024"), n.e("82158"), n.e("91315"), n.e("71611"), n.e("48710"), n.e("77803"), n.e("78553"), n.e("32098"), n.e("20011"), n.e("35467"), n.e("11663"), n.e("90728"), n.e("95468"), n.e("1272")]).then(n.bind(n, 457094)),
     webpackId: 457094,
     name: "ViewsWithMainInterface",
@@ -173,7 +173,7 @@ let x = (0, h.Un)({
     webpackId: 332116,
     name: "ApplicationDirectoryGlobalDiscoveryRoutes"
   }),
-  ee = () => (0, r.jsx)(V, {}),
+  ee = () => (0, r.jsx)(Z, {}),
   et = new Set([A.Z5c.LOGIN, A.Z5c.LOGIN_HANDOFF, A.Z5c.INVITE_LOGIN(":inviteCode"), A.Z5c.GIFT_CODE_LOGIN(":giftCode"), A.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode")]);
 
 function en(e, t) {
@@ -210,7 +210,7 @@ class er extends i.Component {
         component: H
       }), (0, r.jsx)(_.Z, {
         path: A.Z5c.INVITE_PROXY(b.Hw.channelId()),
-        component: k
+        component: j
       }), (0, r.jsx)(a.l_, {
         from: A.Z5c.INVITE(""),
         to: A.Z5c.LOGIN
@@ -241,7 +241,7 @@ class er extends i.Component {
         to: A.Z5c.LOGIN
       }), (0, r.jsx)(_.Z, {
         path: A.Z5c.INVITE_PROXY(b.Hw.channelId()),
-        component: k
+        component: j
       }), (0, r.jsx)(a.l_, {
         from: A.Z5c.GIFT_CODE(""),
         to: A.Z5c.LOGIN
@@ -268,13 +268,13 @@ class er extends i.Component {
         component: B
       }), (0, r.jsx)(_.Z, {
         path: A.Z5c.CONNECTION_LINK_AUTHORIZE(":type"),
-        component: Z
+        component: F
       }), (0, r.jsx)(_.Z, {
         path: A.Z5c.ACTIVATE,
-        component: F
+        component: V
       }), (0, r.jsx)(_.Z, {
         path: A.Z5c.ACTIVATE_HANDOFF,
-        component: F
+        component: V
       }), (0, r.jsx)(_.Z, {
         path: A.Z5c.CONNECTIONS_AUTHORIZE_CONTINUE(":type"),
         component: X
@@ -286,7 +286,7 @@ class er extends i.Component {
         component: G
       }), (0, r.jsx)(_.Z, {
         path: A.Z5c.CONNECTIONS(":type"),
-        component: j
+        component: k
       }), (0, r.jsx)(_.Z, {
         path: A.Z5c.DOWNLOAD_QR_CODE_REDIRECT,
         render: () => {
@@ -325,7 +325,7 @@ class er extends i.Component {
         }
       }), (0, r.jsx)(a.l_, {
         from: A.Z5c.CONNECT_AUTHORIZE,
-        to: L(w({}, location), {
+        to: L(D({}, location), {
           pathname: A.Z5c.OAUTH2_AUTHORIZE
         })
       }), (0, r.jsx)(a.AW, {
@@ -368,7 +368,7 @@ function ei() {
 
 function eo(e) {
   let t = ei();
-  return (0, r.jsx)(er, L(w({}, e), {
+  return (0, r.jsx)(er, L(D({}, e), {
     skipsSettingDefaultPageTitle: t
   }))
 }

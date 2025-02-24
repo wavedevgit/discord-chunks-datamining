@@ -1,4 +1,4 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(928222);
-e.exports = r
+var e = n(928222);
+t.exports = e

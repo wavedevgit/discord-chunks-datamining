@@ -88,11 +88,11 @@ function P(e) {
   return R(l()().startOf(e).add(t, e), e)
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   return R(l()(e, t).local(), n)
 }
 
-function D() {
+function w() {
   return {
     [y.NW.string(y.t.HYiVER)]: () => P("day"),
     [y.NW.string(y.t.cu86KC)]: () => P("day", -1),
@@ -104,8 +104,8 @@ function D() {
 let L = "([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})",
   x = "\\d{4}",
   M = "([0-9]{4})-([0-9]{1,2})",
-  k = "([^\\d\\s]+)",
-  j = RegExp("(?:\\s*(".concat(L, "|").concat(M, "|").concat(x, "|").concat(k, "))"), "i"),
+  j = "([^\\d\\s]+)",
+  k = RegExp("(?:\\s*(".concat(L, "|").concat(M, "|").concat(x, "|").concat(j, "))"), "i"),
   U = RegExp("\\s*(true|false)", "i");
 
 function G(e) {
@@ -116,21 +116,21 @@ function B(e) {
   return RegExp(G(e), "i")
 }
 
-function Z(e) {
+function F(e) {
   let t;
   let n = e.getMatch(1),
     r = e => null != e ? null == e ? void 0 : e.id : null;
   return null != (t = b.Xyh.test(n) ? n : r(n === b.ME ? m.default.getCurrentUser() : null != e.getMatch(4) ? m.default.findByTag(e.getMatch(4)) : m.default.findByTag(e.getMatch(2), e.getMatch(3)))) && (e.setData("userId", t), !0)
 }
 
-function F(e, t) {
+function V(e, t) {
   let n, r;
   let i = e.getFullMatch().trim().toLowerCase(),
-    o = D()[i];
-  return null != o ? [n, r] = o() : N().has(i) ? [n, r] = w(i, "MMMM", "month") : A().has(i) ? [n, r] = w(i, "dddd", "day") : C().has(i) ? [n, r] = w(i, "YYYY", "year") : [n, r] = w(i, b.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), !0)
+    o = w()[i];
+  return null != o ? [n, r] = o() : N().has(i) ? [n, r] = D(i, "MMMM", "month") : A().has(i) ? [n, r] = D(i, "dddd", "day") : C().has(i) ? [n, r] = D(i, "YYYY", "year") : [n, r] = D(i, b.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), !0)
 }
 
-function V(e) {
+function Z(e) {
   let t = e.getMatch(1),
     n = _.Z.getGuildId(),
     r = u.ZP.getChannels(n)[u.sH].concat(u.ZP.getChannels(n)[u.Zb]),
@@ -163,7 +163,7 @@ function H(e) {
 }
 
 function W() {
-  return [...Array.from(N()), ...Array.from(A()), ...Array.from(C()), ...Object.keys(D())]
+  return [...Array.from(N()), ...Array.from(A()), ...Array.from(C()), ...Object.keys(w())]
 }
 
 function Y() {
@@ -265,7 +265,7 @@ function ee() {
     [b.dCx.ANSWER_USERNAME_FROM]: {
       follows: [b.dCx.FILTER_FROM],
       regex: J,
-      validator: Z,
+      validator: F,
       mutable: !0,
       componentType: "ANSWER",
       queryKey: "author_id"
@@ -281,7 +281,7 @@ function ee() {
     [b.dCx.ANSWER_USERNAME_MENTIONS]: {
       follows: [b.dCx.FILTER_MENTIONS],
       regex: J,
-      validator: Z,
+      validator: F,
       mutable: !0,
       componentType: "ANSWER",
       queryKey: "mentions"
@@ -348,25 +348,25 @@ function ee() {
       getAutocompletions: (e, t, n) => K(e, n, b.dCx.FILTER_AFTER)
     },
     [b.dCx.ANSWER_BEFORE]: {
-      regex: j,
+      regex: k,
       follows: [b.dCx.FILTER_BEFORE],
       componentType: "ANSWER",
       mutable: !0,
-      validator: e => F(e, "before")
+      validator: e => V(e, "before")
     },
     [b.dCx.ANSWER_ON]: {
-      regex: j,
+      regex: k,
       follows: [b.dCx.FILTER_ON],
       componentType: "ANSWER",
       mutable: !0,
-      validator: e => F(e, "on")
+      validator: e => V(e, "on")
     },
     [b.dCx.ANSWER_AFTER]: {
-      regex: j,
+      regex: k,
       follows: [b.dCx.FILTER_AFTER],
       componentType: "ANSWER",
       mutable: !0,
-      validator: e => F(e, "after")
+      validator: e => V(e, "after")
     },
     [b.dCx.FILTER_IN]: {
       regex: B(y.NW.string(y.t.WNpFHR)),
@@ -412,7 +412,7 @@ function ee() {
       mutable: !0,
       follows: [b.dCx.FILTER_IN],
       componentType: "ANSWER",
-      validator: V,
+      validator: Z,
       queryKey: "channel_id"
     },
     [b.dCx.FILTER_PINNED]: {

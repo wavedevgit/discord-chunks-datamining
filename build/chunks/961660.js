@@ -1,13 +1,13 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => l
+r.d(t, {
+  Z: () => s
 });
-var r = n(6170),
-  i = n(238363),
-  o = n(965537),
-  a = n(315162),
-  s = n(69958);
-let l = function(e) {
-  return "function" == typeof e ? e : null == e ? o.Z : "object" == typeof e ? (0, a.Z)(e) ? (0, i.Z)(e[0], e[1]) : (0, r.Z)(e) : (0, s.Z)(e)
+var n = r(6170),
+  o = r(238363),
+  a = r(965537),
+  i = r(315162),
+  l = r(69958);
+let s = function(e) {
+  return "function" == typeof e ? e : null == e ? a.Z : "object" == typeof e ? (0, i.Z)(e) ? (0, o.Z)(e[0], e[1]) : (0, n.Z)(e) : (0, l.Z)(e)
 }

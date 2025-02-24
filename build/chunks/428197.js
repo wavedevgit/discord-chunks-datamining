@@ -1,13 +1,13 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
 n(621271);
-var r = n(67867),
-  i = n(38548);
+var r = n(766362),
+  o = n(38548);
 r({
   target: "String",
   proto: !0,
   name: "trimStart",
-  forced: "".trimStart !== i
+  forced: "".trimStart !== o
 }, {
-  trimStart: i
+  trimStart: o
 })

@@ -84,13 +84,13 @@ function b(e, t) {
     play: R
   } = (0, l.z)(), P = (0, u.Q3)("ChannelStickerPickerButton");
   if (n) return null;
-  let w = O;
+  let D = O;
   return (0, r.jsx)("div", {
     className: a()(p.CT, h.buttonContainer),
     ref: t,
     children: (0, r.jsx)(f.Z, v(g({
       innerClassName: a()(h.button, h.stickerButton, {
-        [h.stickerButtonTilted]: w && !I
+        [h.stickerButtonTilted]: D && !I
       })
     }, C), {
       onClick: () => {

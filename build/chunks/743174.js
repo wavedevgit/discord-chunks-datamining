@@ -1,12 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r = n(67867),
-  i = n(476508),
-  o = n(228042),
-  a = n(146321),
+var r = n(766362),
+  o = n(476508),
+  a = n(228042),
+  i = n(146321),
   s = n(292137),
-  l = a.Map,
-  c = a.set;
+  c = i.Map,
+  l = i.set;
 r({
   target: "Map",
   proto: !0,
@@ -14,11 +14,11 @@ r({
   forced: !0
 }, {
   mapValues: function(e) {
-    var t = o(this),
-      n = i(e, arguments.length > 1 ? arguments[1] : void 0),
-      r = new l;
-    return s(t, function(e, i) {
-      c(r, i, n(e, i, t))
+    var t = a(this),
+      n = o(e, arguments.length > 1 ? arguments[1] : void 0),
+      r = new c;
+    return s(t, function(e, o) {
+      l(r, o, n(e, o, t))
     }), r
   }
 })

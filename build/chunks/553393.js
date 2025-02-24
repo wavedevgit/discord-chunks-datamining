@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -31,8 +31,8 @@ var r = n(200651),
   C = n(667105),
   R = n(341907),
   P = n(46140),
-  w = n(981631),
-  D = n(231338),
+  D = n(981631),
+  w = n(231338),
   L = n(388032),
   x = n(624978);
 
@@ -45,7 +45,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function k(e) {
   }
   return e
 }
-let j = "4px",
+let k = "4px",
   U = "11px",
   G = 222;
 
@@ -65,43 +65,43 @@ function B(e, t) {
   return null != e && null != t && (0, m.p9)(t, y.Z, v.Z, b.Z, h.Z)[0]
 }
 
-function Z(e) {
+function F(e) {
   var t, n, h, m, v;
   let {
     quest: b,
     memberListItemRef: y,
     applicationStream: N,
     position: M,
-    closePopout: k,
-    updatePosition: Z,
-    impressionRef: F
-  } = e, V = (0, s.e7)([E.Z], () => {
+    closePopout: j,
+    updatePosition: F,
+    impressionRef: V
+  } = e, Z = (0, s.e7)([E.Z], () => {
     var e;
     return null !== (e = E.Z.getChannel(null == N ? void 0 : N.channelId)) && void 0 !== e ? e : null
   }), H = (0, C.hf)({
     quest: b,
     location: I.jn.MEMBERS_LIST
-  }), W = (0, S.tP)(b), Y = (null == b ? void 0 : null === (t = b.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, K = (null == b ? void 0 : null === (n = b.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null, z = (null == b ? void 0 : null === (h = b.userStatus) || void 0 === h ? void 0 : h.completedAt) != null, q = (0, s.e7)([g.Z], () => g.Z.getState().theme), Q = (0, l.wj)(q) ? D.BR.DARK : D.BR.LIGHT, X = (0, s.e7)([_.Z], () => _.Z.useReducedMotion), {
+  }), W = (0, S.tP)(b), Y = (null == b ? void 0 : null === (t = b.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, K = (null == b ? void 0 : null === (n = b.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null, z = (null == b ? void 0 : null === (h = b.userStatus) || void 0 === h ? void 0 : h.completedAt) != null, q = (0, s.e7)([g.Z], () => g.Z.getState().theme), Q = (0, l.wj)(q) ? w.BR.DARK : w.BR.LIGHT, X = (0, s.e7)([_.Z], () => _.Z.useReducedMotion), {
     ref: J,
     height: $
   } = (0, f.Z)(), [ee, et] = i.useState(X), en = (0, p.Aq)(), er = (0, a.eg)();
   i.useEffect(() => {
     let e = er.current;
-    return null == e || e.addEventListener("scroll", k), () => {
-      null == e || e.removeEventListener("scroll", k)
+    return null == e || e.addEventListener("scroll", j), () => {
+      null == e || e.removeEventListener("scroll", j)
     }
-  }, [k, er]), i.useEffect(() => {
+  }, [j, er]), i.useEffect(() => {
     let e = er.current,
       t = y.current;
     if (null == e || null == t) return;
-    let n = new MutationObserver(() => Z());
+    let n = new MutationObserver(() => F());
     return n.observe(e, {
       childList: !0,
       subtree: !0
     }), () => {
       n.disconnect()
     }
-  }, [y, er, Z]);
+  }, [y, er, F]);
   let ei = (0, c.q_F)({
       from: {
         height: 0
@@ -124,10 +124,10 @@ function Z(e) {
       }
     }),
     ea = () => {
-      en.dispatch(w.CkL.POPOUT_CLOSE)
+      en.dispatch(D.CkL.POPOUT_CLOSE)
     },
-    es = "top" === M ? "".concat(j, " ").concat(j, " 0 0") : "0 0 ".concat(j, " ").concat(j);
-  if (null == b || W || Y && !B(N, V)) return null;
+    es = "top" === M ? "".concat(k, " ").concat(k, " 0 0") : "0 0 ".concat(k, " ").concat(k);
+  if (null == b || W || Y && !B(N, Z)) return null;
   let el = () => {
       (0, O._3)({
         questId: b.id,
@@ -154,12 +154,12 @@ function Z(e) {
       e.stopPropagation(), el()
     },
     ed = () => {
-      if (B(N, V) && null != V) return (0, O._3)({
+      if (B(N, Z) && null != Z) return (0, O._3)({
         questId: b.id,
         questContent: I.jn.MEMBERS_LIST,
         questContentCTA: O.jZ.WATCH_STREAM,
         trackGuildAndChannelMetadata: !0
-      }), u.default.selectVoiceChannel(V.id), (0, d.iV)(N);
+      }), u.default.selectVoiceChannel(Z.id), (0, d.iV)(N);
       ec()
     },
     ef = z && !Y ? {
@@ -172,7 +172,7 @@ function Z(e) {
       ctaText: L.NW.string(L.t.VN1Ajo),
       handleClickCta: ec,
       tileAssetType: "reward"
-    } : B(N, V) ? {
+    } : B(N, Z) ? {
       headerText: L.NW.string(L.t.Bz6SkJ),
       ctaText: L.NW.string(L.t.BXFP39),
       handleClickCta: ed,
@@ -185,7 +185,7 @@ function Z(e) {
     };
   return (0, r.jsx)(o.animated.div, {
     ref: e => {
-      F.current = e
+      V.current = e
     },
     "aria-expanded": ee,
     className: x.wrapper,
@@ -266,12 +266,12 @@ function Z(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   return null == e.quest ? null : (0, r.jsx)(N.A, {
     questOrQuests: e.quest,
     questContent: I.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: !0,
-    children: t => (0, r.jsx)(Z, k({
+    children: t => (0, r.jsx)(F, j({
       impressionRef: t
     }, e))
   })

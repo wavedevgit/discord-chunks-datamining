@@ -75,13 +75,13 @@ function b(e) {
     setPurchaseError: C,
     purchaseErrorBlockRef: R,
     paymentAuthenticationState: P,
-    selectedSkuId: w,
-    activeSubscription: D,
+    selectedSkuId: D,
+    activeSubscription: w,
     previousStepRef: L,
     setPurchaseState: x
   } = (0, u.JL)(), {
     isGift: M
-  } = (0, c.wD)(), k = v(g({}, (0, s.fL)()), {
+  } = (0, c.wD)(), j = v(g({}, (0, s.fL)()), {
     paymentSources: I,
     paymentSourceId: T,
     setPaymentSourceId: N,
@@ -89,19 +89,19 @@ function b(e) {
     setPurchaseError: C,
     purchaseErrorBlockRef: R,
     paymentAuthenticationState: P,
-    selectedSkuId: w,
+    selectedSkuId: D,
     isGift: M
-  }), j = (0, a.N)(E), U = !M && null != j && null != w && h.nG[j.trial_id].skus.includes(w), G = () => {
+  }), k = (0, a.N)(E), U = !M && null != k && null != D && h.nG[k.trial_id].skus.includes(D), G = () => {
     m(Object.values(I).length < 1 && null == n ? d.h8.PLAN_SELECT : d.h8.REVIEW, {
       trackedFromStep: d.h8.PAYMENT_TYPE
     })
   }, B = null != b ? b : G;
   i()(S, "Step should be set here");
-  let Z = (0, o.Z)(() => Date.now(), [S]),
-    F = null != y && null == L.current ? y : d.h8.PAYMENT_TYPE;
+  let F = (0, o.Z)(() => Date.now(), [S]),
+    V = null != y && null == L.current ? y : d.h8.PAYMENT_TYPE;
   return (0, s.vP)({
-    paymentModalArgs: k,
-    initialStep: F,
+    paymentModalArgs: j,
+    initialStep: V,
     prependSteps: [d.h8.PROMOTION_INFO],
     appendSteps: [d.h8.REVIEW, d.h8.CONFIRM],
     breadcrumpSteps: r,
@@ -123,11 +123,11 @@ function b(e) {
       l.default.track(_.rMx.PAYMENT_FLOW_STEP, v(g({}, t), {
         from_step: n,
         to_step: r,
-        step_duration_ms: i - Z,
+        step_duration_ms: i - F,
         flow_duration_ms: i - O.startTime
       }))
     },
     isEligibleForTrial: U,
-    allowDesktopRedirectPurchase: (0, p.tr)(w, M, D)
+    allowDesktopRedirectPurchase: (0, p.tr)(D, M, w)
   })
 }

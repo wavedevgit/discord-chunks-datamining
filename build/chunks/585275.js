@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => Z
+  Z: () => F
 }), n(242167), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(411104), n(773603);
 var i = n(512722),
   o = n.n(i),
@@ -31,16 +31,16 @@ let T = 3e5,
   C = new f.V7,
   R = !1,
   P = window.document.createElement("canvas"),
-  w = 512,
-  D = 288;
-P.width = w, P.height = D;
+  D = 512,
+  w = 288;
+P.width = D, P.height = w;
 let L = P.getContext("2d");
 
 function x() {
   C.stop(), null != r && (u.Z.removeSink(r, A), r = null)
 }
 let M = s().debounce((e, t, n, r) => {
-  j(e, (0, y.V9)({
+  k(e, (0, y.V9)({
     streamType: null != t ? O.lo.GUILD : O.lo.CALL,
     guildId: t,
     channelId: n,
@@ -48,8 +48,8 @@ let M = s().debounce((e, t, n, r) => {
   }))
 }, 500);
 
-function k(e) {
-  let t = Math.min(w / e.width, D / e.height),
+function j(e) {
+  let t = Math.min(D / e.width, w / e.height),
     n = e.width * t,
     r = e.height * t;
   P.width = n, P.height = r;
@@ -61,7 +61,7 @@ function k(e) {
     null == L || L.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r), t()
   })
 }
-async function j(e, t) {
+async function k(e, t) {
   if (r !== e) return;
   let {
     enabled: n
@@ -69,10 +69,10 @@ async function j(e, t) {
     location: "uploadStreamPreviews"
   }), i = (0, v.isWeb)() && m.I0.getSetting() || g.Z.getIsActiveStreamPreviewDisabled(t);
   if (n && i) return;
-  let a = () => j(e, t);
+  let a = () => k(e, t);
   if (!R) try {
     let n = await U(e, 60);
-    await k(n);
+    await j(n);
     let r = P.toDataURL("image/jpeg");
     if (p.Z.dispatch({
         type: "STREAM_PREVIEW_FETCH_SUCCESS",
@@ -117,7 +117,7 @@ function G(e, t) {
     width: r,
     height: i
   } = n.getVideoTracks()[0].getSettings(), o = document.createElement("video"), a = document.createElement("canvas");
-  o.width = a.width = null != r ? r : w, o.height = a.height = null != i ? i : D, o.srcObject = n, o.play();
+  o.width = a.width = null != r ? r : D, o.height = a.height = null != i ? i : w, o.srcObject = n, o.play();
   let s = a.getContext("2d");
   return new Promise((e, n) => {
     o.ontimeupdate = () => {
@@ -152,7 +152,7 @@ function B(e, t) {
     i || u.Z.removeSink(e, A)
   })
 }
-let Z = {
+let F = {
   init() {
     p.Z.subscribe("CONNECTION_OPEN", x), p.Z.subscribe("LOGOUT", x), p.Z.subscribe("STREAM_DELETE", x), p.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
       let {

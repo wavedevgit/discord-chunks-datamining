@@ -32,19 +32,19 @@ var r = n(200651),
   C = n(979200),
   R = n(870822),
   P = n(600164),
-  w = n(299206),
-  D = n(726721),
+  D = n(299206),
+  w = n(726721),
   L = n(726521),
   x = n(713938),
   M = n(973616),
-  k = n(881998),
-  j = n(592125),
+  j = n(881998),
+  k = n(592125),
   U = n(944486),
   G = n(246946),
   B = n(9156),
-  Z = n(768581),
-  F = n(585483),
-  V = n(49012),
+  F = n(768581),
+  V = n(585483),
+  Z = n(49012),
   H = n(621600),
   W = n(709054),
   Y = n(706454),
@@ -188,12 +188,12 @@ let ec = e => {
     let {
       application: t
     } = e, n = () => {
-      null != t.terms_of_service_url && (0, V.q)({
+      null != t.terms_of_service_url && (0, Z.q)({
         href: t.terms_of_service_url,
         shouldConfirm: !0
       })
     }, i = () => {
-      null != t.privacy_policy_url && (0, V.q)({
+      null != t.privacy_policy_url && (0, Z.q)({
         href: t.privacy_policy_url,
         shouldConfirm: !0
       })
@@ -240,7 +240,7 @@ let ec = e => {
       disclosures: u,
       locale: d,
       id: p
-    } = e, _ = i.useMemo(() => M.ZP.createFromServer(o), [o]), h = D.Z.useExperiment({
+    } = e, _ = i.useMemo(() => M.ZP.createFromServer(o), [o]), h = w.Z.useExperiment({
       location: "Authorized Applications"
     }, {
       autoTrackExposure: !0
@@ -280,7 +280,7 @@ let ec = e => {
           children: o.description
         })
       })
-    }, v = (0, w.Z)({
+    }, v = (0, D.Z)({
       id: o.id,
       label: ee.NW.string(ee.t["+NP/b2"])
     }), y = i.useMemo(() => {
@@ -295,7 +295,7 @@ let ec = e => {
         })
       }
     }, [v]), O = () => {
-      let e = Z.ZP.getApplicationIconURL({
+      let e = F.ZP.getApplicationIconURL({
           id: o.id,
           icon: o.icon
         }),
@@ -367,7 +367,7 @@ let ec = e => {
     } = e, E = o.id, b = i.useMemo(() => M.ZP.createFromServer(o), [o]), O = (0, p.e7)([q.Z], () => {
       var e, t, n, r;
       return null === (r = q.Z.settings.applications) || void 0 === r ? void 0 : null === (n = r.appSettings) || void 0 === n ? void 0 : null === (t = n[E]) || void 0 === t ? void 0 : null === (e = t.appDmSettings) || void 0 === e ? void 0 : e.dmDisabled
-    }, [E]), S = o.bot, I = (0, p.e7)([j.Z], () => j.Z.getDMFromUserId(null == S ? void 0 : S.id)), T = (0, p.e7)([B.ZP], () => null == I ? null : B.ZP.isChannelMuted(null, I)), N = D.Z.useExperiment({
+    }, [E]), S = o.bot, I = (0, p.e7)([k.Z], () => k.Z.getDMFromUserId(null == S ? void 0 : S.id)), T = (0, p.e7)([B.ZP], () => null == I ? null : B.ZP.isChannelMuted(null, I)), N = w.Z.useExperiment({
       location: "Authorized Applications"
     }, {
       autoTrackExposure: !0
@@ -416,8 +416,8 @@ let ec = e => {
       }), (0, r.jsx)(ef, {
         application: o
       })]
-    }), w = () => {
-      let e = Z.ZP.getApplicationIconURL({
+    }), D = () => {
+      let e = F.ZP.getApplicationIconURL({
           id: o.id,
           icon: o.icon
         }),
@@ -462,7 +462,7 @@ let ec = e => {
           })
         })
       }, z.fy.INFREQUENT_USER_ACTION)
-    }, k = i.useCallback(async () => {
+    }, j = i.useCallback(async () => {
       if (u()(null != S, "dm channel mute setting requires having a bot user"), null == I) {
         let e = await v.Z.ensurePrivateChannel(S.id);
         y.Z.updateChannelOverrideSettings(null, e, {
@@ -513,11 +513,11 @@ let ec = e => {
         }), (0, r.jsx)(g.zxk, {
           color: g.Ttl.PRIMARY,
           size: g.PhG.SMALL,
-          onClick: k,
+          onClick: j,
           children: T ? ee.NW.string(ee.t.YqAjX1) : ee.NW.string(ee.t["w4m94+"])
         })]
       }) : null]
-    }), G = (0, Q.O)(o.id), F = () => (0, r.jsxs)("div", {
+    }), G = (0, Q.O)(o.id), V = () => (0, r.jsxs)("div", {
       className: et.footer,
       children: [G && (0, r.jsx)(el, {
         application: o,
@@ -533,10 +533,10 @@ let ec = e => {
     return (0, r.jsx)("div", {
       className: a()(et.authedAppV2, en.marginBottom8),
       children: (0, r.jsx)(g.y5t, {
-        component: w(),
+        component: D(),
         children: (0, r.jsxs)("div", {
           className: et.appDetailsContainer,
-          children: [R(), A(), U(), F()]
+          children: [R(), A(), U(), V()]
         })
       })
     })
@@ -546,10 +546,10 @@ let ec = e => {
   })),
   em = () => {
     let e = (0, p.e7)([G.Z], () => G.Z.hidePersonalInformation),
-      t = (0, p.e7)([k.Z], () => k.Z.getApps()),
+      t = (0, p.e7)([j.Z], () => j.Z.getApps()),
       o = (0, p.e7)([Y.default], () => Y.default.locale),
       a = (0, p.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivities()),
-      s = (0, p.e7)([j.Z, U.Z], () => j.Z.getChannel(U.Z.getChannelId())),
+      s = (0, p.e7)([k.Z, U.Z], () => k.Z.getChannel(U.Z.getChannelId())),
       c = null == s ? void 0 : s.getGuildId(),
       u = A.J.useExperiment({
         location: "UserSettingsAuthedApps"
@@ -568,7 +568,7 @@ let ec = e => {
           id: t,
           application: n
         } = e;
-        E.Z.delete(t), F.S.safeDispatch($.CkL.HIDE_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION, {
+        E.Z.delete(t), V.S.safeDispatch($.CkL.HIDE_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION, {
           applicationId: n.id
         });
         let r = a.get(n.id);

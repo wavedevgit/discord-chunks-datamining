@@ -1,8 +1,8 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(250765),
-  i = TypeError;
-e.exports = function(e) {
-  if (r(e)) throw new i("Can't call method on " + e);
-  return e
+var e = n(250765),
+  o = TypeError;
+t.exports = function(t) {
+  if (e(t)) throw new o("Can't call method on " + t);
+  return t
 }

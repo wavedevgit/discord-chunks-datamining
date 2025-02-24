@@ -36,10 +36,10 @@ var R = function(e) {
       R(e)
     }
   },
-  w = function(e) {
+  D = function(e) {
     R(e.data)
   },
-  D = function(e) {
+  w = function(e) {
     s.postMessage(T(e), r.protocol + "//" + r.host)
   };
 v && b || (v = function(e) {
@@ -55,7 +55,7 @@ v && b || (v = function(e) {
   y.nextTick(P(e))
 } : O && O.now ? i = function(e) {
   O.now(P(e))
-} : I && !g ? (a = (o = new I).port2, o.port1.onmessage = w, i = c(a.postMessage, a)) : s.addEventListener && u(s.postMessage) && !s.importScripts && r && "file:" !== r.protocol && !f(D) ? (i = D, s.addEventListener("message", w, !1)) : i = C in h("script") ? function(e) {
+} : I && !g ? (a = (o = new I).port2, o.port1.onmessage = D, i = c(a.postMessage, a)) : s.addEventListener && u(s.postMessage) && !s.importScripts && r && "file:" !== r.protocol && !f(w) ? (i = w, s.addEventListener("message", D, !1)) : i = C in h("script") ? function(e) {
   p.appendChild(h("script"))[C] = function() {
     p.removeChild(this), R(e)
   }

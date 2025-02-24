@@ -84,17 +84,17 @@ function A(e) {
     onClose: R,
     entry: P
   } = e, {
-    resetInteraction: w,
-    setInteractionToast: D
+    resetInteraction: D,
+    setInteractionToast: w
   } = (0, g.Xo)(), {
     primaryColor: L
-  } = (0, v.z)(), [x, M] = i.useState(""), [k, j] = i.useState((0, u.JM)(x)), U = i.useRef(!1), G = i.useRef(null), B = i.useCallback(e => {
-    e.key === y.vn.ESCAPE && (e.stopPropagation(), w())
-  }, [w]);
+  } = (0, v.z)(), [x, M] = i.useState(""), [j, k] = i.useState((0, u.JM)(x)), U = i.useRef(!1), G = i.useRef(null), B = i.useCallback(e => {
+    e.key === y.vn.ESCAPE && (e.stopPropagation(), D())
+  }, [D]);
   i.useEffect(() => {
     null == E || E(null == G ? void 0 : G.current)
   }, [G, E]);
-  let Z = async e => {
+  let F = async e => {
     if (null == e) return;
     f === b.n_.AVATAR ? C({
       action: "SEND_REPLY_AVATAR"
@@ -109,7 +109,7 @@ function A(e) {
       sourceType: f,
       sourceDetails: p
     });
-    D(null);
+    w(null);
     try {
       await (0, m.Z)({
         userId: t.id,
@@ -120,12 +120,12 @@ function A(e) {
         entry: P
       })
     } catch (e) {}
-    D(b.P.REPLY)
-  }, F = {
+    w(b.P.REPLY)
+  }, V = {
     [S.biteSize]: s === b.y0.BITE_SIZE,
     [S.panel]: s === b.y0.PANEL,
     [S.fullSize]: s === b.y0.FULL_SIZE
-  }, V = {
+  }, Z = {
     [S.status]: f === b.n_.STATUS,
     [S.avatar]: f === b.n_.AVATAR,
     [S.activity]: f === b.n_.ACTIVITY
@@ -134,7 +134,7 @@ function A(e) {
     ref: G,
     onKeyDown: B,
     children: (0, r.jsx)("div", {
-      className: a()(S.container, F, V, {
+      className: a()(S.container, V, Z, {
         [S.customProfileTheme]: null != L
       }),
       children: (0, r.jsx)(d.Z, {
@@ -149,9 +149,9 @@ function A(e) {
         }),
         channel: I,
         textValue: x,
-        richValue: k,
+        richValue: j,
         onChange: (e, t, n) => {
-          t !== x && (M(t), j(n))
+          t !== x && (M(t), k(n))
         },
         focused: U.current,
         onFocus: () => {
@@ -166,7 +166,7 @@ function A(e) {
             shouldRefocus: !1
           };
           try {
-            return await Z(n), w(), null == R || R(), {
+            return await F(n), D(), null == R || R(), {
               shouldClear: !0,
               shouldRefocus: !1
             }

@@ -14,8 +14,8 @@ var i = n(120356),
   d = n(410575),
   p = n(730749),
   h = n(666743),
-  g = n(410030),
-  f = n(100527),
+  f = n(410030),
+  g = n(100527),
   m = n(906732),
   b = n(600164),
   _ = n(984370),
@@ -35,7 +35,7 @@ let T = s.ZP.connectStores([N.default], () => ({
     user: n
   } = e, {
     analyticsLocations: i
-  } = (0, m.ZP)(f.Z.HOME_PAGE_PREMIUM_TAB), s = (0, E.xP)("ApplicationStoreHome"), p = (0, v.I5)(n), h = s && !p, N = (0, g.ZP)();
+  } = (0, m.ZP)(g.Z.HOME_PAGE_PREMIUM_TAB), s = (0, E.xP)("ApplicationStoreHome"), p = (0, v.I5)(n), h = s && !p, N = (0, f.ZP)();
   return t ? (0, r.jsxs)("div", {
     className: S.homeWrapperNormal,
     children: [(0, r.jsx)(d.Z, {

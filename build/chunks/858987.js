@@ -101,14 +101,14 @@ function T(e) {
     makePurchase: C,
     needsPaymentSource: R,
     inReverseTrial: P,
-    onNext: w
+    onNext: D
   } = e, {
-    application: D,
+    application: w,
     selectedPlan: L,
     hasAcceptedTerms: x,
     purchaseType: M,
-    paymentSourceId: k,
-    activeSubscription: j,
+    paymentSourceId: j,
+    activeSubscription: k,
     devShelfFetchState: U
   } = (0, c.JL)(), G = S({
     purchaseType: M,
@@ -136,7 +136,7 @@ function T(e) {
       children: G
     }))
   });
-  if ((0, u.yE)(null !== (t = null == D ? void 0 : D.flags) && void 0 !== t ? t : 0, _.udG.EMBEDDED) && U === s.O.LOADING) return (0, r.jsx)(a.ua7, {
+  if ((0, u.yE)(null !== (t = null == w ? void 0 : w.flags) && void 0 !== t ? t : 0, _.udG.EMBEDDED) && U === s.O.LOADING) return (0, r.jsx)(a.ua7, {
     text: m.NW.string(m.t.cjA5tr),
     children: e => (0, r.jsx)(a.zxk, O(b({}, e), {
       color: a.zxk.Colors.GREEN,
@@ -168,11 +168,11 @@ function T(e) {
       children: G
     }))
   });
-  else if (P && null != j && null != k) return (0, r.jsx)(p.Z, {
-    activeSubscription: j,
-    onNext: w,
+  else if (P && null != k && null != j) return (0, r.jsx)(p.Z, {
+    activeSubscription: k,
+    onNext: D,
     isSubmitting: h,
-    paymentSourceId: k,
+    paymentSourceId: j,
     buttonLabel: G,
     analyticsLocations: B
   });

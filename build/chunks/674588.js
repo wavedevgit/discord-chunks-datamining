@@ -3,7 +3,7 @@
 n.d(t, {
   CP: () => C,
   T4: () => R,
-  XK: () => D,
+  XK: () => w,
   g5: () => L,
   gZ: () => N,
   i6: () => A,
@@ -281,10 +281,10 @@ async function P(e) {
   }
 }
 
-function w() {
+function D() {
   return (0, f.isAndroid)() ? o.R.ANDROID : (0, f.isIOS)() ? o.R.IOS : o.R.WEB
 }
-async function D() {
+async function w() {
   let {
     surface: e = a.Y.APPLICATION_DIRECTORY,
     activeState: t = i.E.ACTIVE
@@ -309,7 +309,7 @@ async function D() {
         query: {
           surface: e,
           active_state: t,
-          platform: w(),
+          platform: D(),
           locale: u.default.locale,
           cache: f
         },

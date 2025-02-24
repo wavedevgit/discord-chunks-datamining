@@ -13,39 +13,39 @@ var r = n(200651),
   d = n(865427),
   p = n(820254),
   h = n(388032),
-  g = n(179439);
-let f = "isHideDevBanner",
+  f = n(179439);
+let g = "isHideDevBanner",
   m = () => {
     var e;
-    let [t, n] = (0, i.useState)((null === (e = s.K.get(f, "false")) || void 0 === e ? void 0 : e.toString()) === "true"), l = (0, a.e7)([u.C], () => {
+    let [t, n] = (0, i.useState)((null === (e = s.K.get(g, "false")) || void 0 === e ? void 0 : e.toString()) === "true"), l = (0, a.e7)([u.C], () => {
       var e;
       return (0, d.fD)() ? null === (e = u.C.getCurrentBuildOverride().overrides) || void 0 === e ? void 0 : e.discord_web : null
     });
     if (t) return null;
     let m = () => {
-        s.K.set(f, !0), n(!0)
+        s.K.set(g, !0), n(!0)
       },
       b = () => (0, r.jsx)(c.P3F, {
         onClick: m,
-        className: g.closeButton,
+        className: f.closeButton,
         "aria-label": h.NW.string(h.t.WAI6xs),
         children: (0, r.jsx)(c.Dio, {
           size: "md",
           color: "currentColor",
-          className: g.closeIcon
+          className: f.closeIcon
         })
       });
     return null != l ? (0, r.jsxs)("div", {
-      className: o()(g.devBanner, g.buildOverride),
+      className: o()(f.devBanner, f.buildOverride),
       children: [(0, r.jsx)(p.Z, {
-        className: g.icon
+        className: f.icon
       }), h.NW.string(h.t.Wj3LW1), (0, r.jsx)(b, {})]
     }) : "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, r.jsxs)("div", {
-      className: o()(g.devBanner, g.staging),
+      className: o()(f.devBanner, f.staging),
       children: [(0, r.jsx)(p.Z, {
-        className: g.icon
+        className: f.icon
       }), h.NW.format(h.t.uyrfYG, {
-        buildNumber: "371253"
+        buildNumber: "371308"
       }), (0, r.jsx)(b, {})]
     }) : null
   }

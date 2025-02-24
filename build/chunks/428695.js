@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -13,14 +13,14 @@ var r = n(200651),
   d = n(981631),
   p = n(388032),
   h = n(877662);
-let g = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
-  f = function(e) {
+let f = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
+  g = function(e) {
     let {
       guild: t,
       title: n,
       message: l,
       image: a,
-      type: f,
+      type: g,
       imageStyles: m,
       imageMarginX: b,
       imageMarginTop: _,
@@ -34,20 +34,20 @@ let g = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
       className: S
     } = e;
     i.useEffect(() => {
-      g(d.rMx.CHANNEL_NOTICE_VIEWED, {
-        notice_type: f,
+      f(d.rMx.CHANNEL_NOTICE_VIEWED, {
+        notice_type: g,
         guild_id: t.id
       })
-    }, [t.id, f]);
+    }, [t.id, g]);
     let T = null;
     "function" == typeof y ? T = y() : null != y && (T = (0, r.jsx)(s.zxk, {
       className: h.button,
       size: s.zxk.Sizes.SMALL,
       onClick: () => {
-        null != f && u.default.track(d.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
+        null != g && u.default.track(d.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
           source: E,
           guild_id: t.id,
-          notice_type: f
+          notice_type: g
         }), null == v || v()
       },
       fullWidth: !0,
@@ -80,7 +80,7 @@ let g = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
       children: [!0 === O ? null : (0, r.jsx)(s.P3F, {
         onClick: () => {
           c.ZP.trackWithMetadata(d.rMx.CHANNEL_NOTICE_CLOSED, {
-            notice_type: f
+            notice_type: g
           }), null == N || N()
         },
         className: h.close,

@@ -136,7 +136,7 @@ let S = e => {
         channelId: g,
         messageId: v
       }))
-    }, P = (0, s.Z)(), w = e => (0, r.jsx)(l.ua7, O(b({
+    }, P = (0, s.Z)(), D = e => (0, r.jsx)(l.ua7, O(b({
       text: (0, _.Y)(t.name, u),
       "aria-label": t.name
     }, _.b_), {
@@ -171,8 +171,8 @@ let S = e => {
         children: R(n)
       }))
     }));
-    if (!u) return w();
-    let D = e => (0, r.jsx)(p.vk, O(b({}, e), {
+    if (!u) return D();
+    let w = e => (0, r.jsx)(p.vk, O(b({}, e), {
       node: t,
       refreshPositionKey: () => S(String(Date.now())),
       nonce: P
@@ -188,9 +188,9 @@ let S = e => {
       autoInvert: !0,
       nudgeAlignIntoViewport: !0,
       position: "right",
-      renderPopout: D,
+      renderPopout: w,
       positionKey: y,
-      children: w
+      children: D
     })
   },
   T = e => {

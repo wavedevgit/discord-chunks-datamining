@@ -1,36 +1,34 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(67867),
-  i = n(611345),
-  o = n(474883),
-  a = n(520078),
-  s = n(741674),
-  l = n(821819)(function() {
+var e = n(766362),
+  o = n(611345),
+  i = n(474883),
+  u = n(520078),
+  s = n(741674);
+e({
+  target: "Array",
+  proto: !0,
+  arity: 1,
+  forced: n(821819)(function() {
     return 0x100000001 !== [].push.call({
       length: 0x100000000
     }, 1)
-  }),
-  c = function() {
+  }) || ! function() {
     try {
       Object.defineProperty([], "length", {
         writable: !1
       }).push()
-    } catch (e) {
-      return e instanceof TypeError
+    } catch (t) {
+      return t instanceof TypeError
     }
-  };
-r({
-  target: "Array",
-  proto: !0,
-  arity: 1,
-  forced: l || !c()
+  }()
 }, {
-  push: function(e) {
-    var t = i(this),
-      n = o(t),
-      r = arguments.length;
-    s(n + r);
-    for (var l = 0; l < r; l++) t[n] = arguments[l], n++;
-    return a(t, n), n
+  push: function(t) {
+    var r = o(this),
+      n = i(r),
+      e = arguments.length;
+    s(n + e);
+    for (var c = 0; c < e; c++) r[n] = arguments[c], n++;
+    return u(r, n), n
   }
 })

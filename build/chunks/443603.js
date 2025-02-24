@@ -101,13 +101,13 @@ function O(e) {
     pulse: C,
     sparkle: R,
     notification: P,
-    "aria-label": w,
-    "aria-expanded": D,
+    "aria-label": D,
+    "aria-expanded": w,
     "aria-haspopup": L,
     "aria-controls": x
-  } = e, M = (0, u.Q3)("ChannelTextAreaButton"), k = (0, l.Yzy)(null != E, g(h({}, y), {
+  } = e, M = (0, u.Q3)("ChannelTextAreaButton"), j = (0, l.Yzy)(null != E, g(h({}, y), {
     keys: e => e ? "children" : "icon"
-  })), j = e => {
+  })), k = e => {
     let {
       component: t
     } = e;
@@ -127,8 +127,8 @@ function O(e) {
   return (0, r.jsxs)(l.zxk, {
     look: l.zxk.Looks.BLANK,
     size: l.zxk.Sizes.NONE,
-    "aria-label": w,
-    "aria-expanded": D,
+    "aria-label": D,
+    "aria-expanded": w,
     "aria-haspopup": L,
     "aria-controls": x,
     disabled: n,
@@ -149,20 +149,20 @@ function O(e) {
         bottom: 4
       }
     },
-    children: [k((e, t, n) => {
+    children: [j((e, t, n) => {
       let {
         key: i
       } = n;
       return t ? (0, r.jsx)(s.animated.div, {
         style: e,
         className: a()(p.buttonWrapper, o),
-        children: j({
+        children: k({
           component: E
         })
       }, i) : null != m ? (0, r.jsx)(s.animated.div, {
         style: e,
         className: a()(p.buttonWrapper, o),
-        children: j({
+        children: k({
           component: (0, r.jsx)(m, {
             className: a()(p.icon, _, {
               [p.pulseIcon]: C

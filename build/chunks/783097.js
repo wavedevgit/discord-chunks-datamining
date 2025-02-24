@@ -8,16 +8,16 @@ n.d(t, {
   L1: () => B,
   Ow: () => G,
   Wx: () => I,
-  X: () => Z,
-  XZ: () => j,
-  Y$: () => D,
-  Yn: () => k,
+  X: () => F,
+  XZ: () => k,
+  Y$: () => w,
+  Yn: () => j,
   jD: () => A,
   lf: () => P,
   pF: () => U,
   sl: () => L,
   vJ: () => R,
-  yJ: () => w,
+  yJ: () => D,
   ye: () => C
 }), n(266796), n(789020), n(627494), n(757143), n(301563), n(653041), n(47120);
 var r = n(912370),
@@ -123,11 +123,11 @@ function P(e) {
   return T(e) && (0, f.yE)(null !== (t = e.flags) && void 0 !== t ? t : 0, h.udG.PROMOTED)
 }
 
-function w(e) {
+function D(e) {
   return T(e) && C(e) ? e instanceof c.ZP ? e.embeddedActivityConfig : e.embedded_activity_config : null
 }
 
-function D(e) {
+function w(e) {
   let {
     command: t,
     optionValues: n,
@@ -192,15 +192,15 @@ function x(e) {
 }
 
 function M(e) {
-  let t = w(e);
+  let t = D(e);
   return null != t && t.displays_advertisements
 }
 
-function k(e) {
+function j(e) {
   return e === _._b.TEXT
 }
 
-function j(e) {
+function k(e) {
   return null == e ? "" : (e.charAt(0).toLocaleUpperCase() + e.slice(1)).replaceAll("_", " ")
 }
 
@@ -238,7 +238,7 @@ function B(e) {
   }
 }
 
-function Z(e) {
+function F(e) {
   d.S.dispatchToLastSubscribed(h.CkL.OPEN_APP_LAUNCHER, {
     applicationId: e
   })

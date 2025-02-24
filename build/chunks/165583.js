@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => Z,
-  dz: () => j
+  ZP: () => F,
+  dz: () => k
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -32,8 +32,8 @@ var r = n(200651),
   C = n(823188),
   R = n(474936),
   P = n(981631),
-  w = n(388032),
-  D = n(182666),
+  D = n(388032),
+  w = n(182666),
   L = n(867250);
 
 function x(e) {
@@ -42,15 +42,15 @@ function x(e) {
     n = t.diff(u()(), "h");
   if (n > 24) {
     let e = t.diff(u()(), "d");
-    return w.NW.formatToPlainString(w.t.xs9VPj, {
+    return D.NW.formatToPlainString(D.t.xs9VPj, {
       numDays: e
     })
   }
-  if (n > 1) return w.NW.formatToPlainString(w.t["p7KX5+"], {
+  if (n > 1) return D.NW.formatToPlainString(D.t["p7KX5+"], {
     numHours: n
   });
   let r = t.diff(u()(), "minutes");
-  return w.NW.formatToPlainString(w.t["XtQ+Ag"], {
+  return D.NW.formatToPlainString(D.t["XtQ+Ag"], {
     numMinutes: r
   })
 }
@@ -65,41 +65,41 @@ function M(e) {
     trialOffer: u
   } = e, d = null !== (t = null == u ? void 0 : u.expires_at) && void 0 !== t ? t : null == c ? void 0 : c.expires_at, f = null == u ? void 0 : u.subscription_trial, p = null !== (i = null !== (n = e.subscriptionTier) && void 0 !== n ? n : null == f ? void 0 : f.sku_id) && void 0 !== i ? i : R.Si.TIER_2;
   return (0, r.jsxs)("div", {
-    className: a()(o, D.gradientUpsellWrapper, {
-      [D.gradientUpsellWrapperTier0]: p === R.Si.TIER_0,
-      [D.gradientUpsellWrapperTier2]: p === R.Si.TIER_2,
-      [D.gradientUpsellWrapperWithBottomMargin]: l
+    className: a()(o, w.gradientUpsellWrapper, {
+      [w.gradientUpsellWrapperTier0]: p === R.Si.TIER_0,
+      [w.gradientUpsellWrapperTier2]: p === R.Si.TIER_2,
+      [w.gradientUpsellWrapperWithBottomMargin]: l
     }),
     children: [(0, r.jsxs)("div", {
-      className: D.logo,
+      className: w.logo,
       children: [(0, r.jsx)(_.SrA, {
         size: "md",
         color: "currentColor",
-        className: D.logoIcon
+        className: w.logoIcon
       }), p === R.Si.TIER_0 && (0, r.jsx)(b.Z, {
-        className: D.logoWordmark
+        className: w.logoWordmark
       }), p === R.Si.TIER_2 && (0, r.jsx)(v.Z, {
-        className: D.logoWordmark
+        className: w.logoWordmark
       })]
     }), (0, r.jsx)(_.Text, {
       variant: "text-md/medium",
-      className: D.copy,
+      className: w.copy,
       color: "none",
       children: s
     }), (0, r.jsx)(C.Cy, {
-      text: null != c ? w.NW.formatToPlainString(w.t.iiLbvr, {
+      text: null != c ? D.NW.formatToPlainString(D.t.iiLbvr, {
         percent: c.discount.amount
-      }) : w.NW.string(w.t.IBYG5e),
+      }) : D.NW.string(D.t.IBYG5e),
       colorOptions: p === R.Si.TIER_0 ? C.VE.PREMIUM_TIER_0_WHITE_FILL : C.VE.PREMIUM_TIER_2_WHITE_FILL
     }), (0, r.jsx)(_.Text, {
       variant: "eyebrow",
-      className: D.countdownText,
+      className: w.countdownText,
       children: x(d)
     })]
   })
 }
 
-function k(e) {
+function j(e) {
   var t, n;
   let {
     className: o,
@@ -108,7 +108,7 @@ function k(e) {
     analyticsLocationObject: l,
     trialOffer: c,
     discountOffer: u
-  } = e, [d, f] = i.useState(!1), p = null != u ? w.NW.formatToPlainString(w.t.bkQ4bG, {
+  } = e, [d, f] = i.useState(!1), p = null != u ? D.NW.formatToPlainString(D.t.bkQ4bG, {
     percent: u.discount.amount
   }) : (0, O.Rt)({
     intervalType: null == c ? void 0 : null === (t = c.subscription_trial) || void 0 === t ? void 0 : t.interval,
@@ -131,15 +131,15 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   var t, n;
   let i = null === (t = (0, N.N)()) || void 0 === t ? void 0 : t.subscription_trial,
     o = null !== (n = null == i ? void 0 : i.sku_id) && void 0 !== n ? n : R.Si.TIER_2;
   return (0, r.jsx)(_.Text, {
     variant: "text-xs/bold",
-    className: a()(D.trialBadge, e.className, {
-      [D.trialBadgeGradientTier0]: o === R.Si.TIER_0,
-      [D.trialBadgeGradientTier2]: o === R.Si.TIER_2
+    className: a()(w.trialBadge, e.className, {
+      [w.trialBadgeGradientTier0]: o === R.Si.TIER_0,
+      [w.trialBadgeGradientTier2]: o === R.Si.TIER_2
     }),
     color: "none",
     children: (0, O.a5)({
@@ -158,15 +158,15 @@ function U(e) {
     discountOffer: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: D.footer,
+    className: w.footer,
     children: [(0, r.jsx)(_.zxk, {
       onClick: n,
       size: _.zxk.Sizes.SMALL,
       look: _.iLD.BLANK,
-      className: D.cancelButton,
-      children: w.NW.string(w.t.cpT0Cg)
-    }), (0, r.jsx)(k, {
-      className: D.subscribeButton,
+      className: w.cancelButton,
+      children: D.NW.string(D.t.cpT0Cg)
+    }), (0, r.jsx)(j, {
+      className: w.subscribeButton,
       subscriptionTier: t,
       analyticsLocationObject: i,
       onClose: n,
@@ -182,26 +182,26 @@ function G(e) {
     analyticsLocationObject: n
   } = e, i = (0, N.N)();
   return (0, r.jsxs)("div", {
-    className: D.tryOutUpsellContainer,
+    className: w.tryOutUpsellContainer,
     children: [(0, r.jsx)(C.Cy, {
-      className: D.topRimPill,
-      text: w.NW.string(w.t["8CVUra"]),
+      className: w.topRimPill,
+      text: D.NW.string(D.t["8CVUra"]),
       colorOptions: C.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     }), (0, r.jsx)(_.X6q, {
       variant: "heading-md/semibold",
       color: "text-normal",
-      children: w.NW.format(w.t["fF+cgY"], {
+      children: D.NW.format(D.t["fF+cgY"], {
         onClick: () => (0, T.z)()
       })
-    }), (0, r.jsx)(k, {
+    }), (0, r.jsx)(j, {
       trialOffer: i,
-      className: D.subscribeButtonWide,
+      className: w.subscribeButtonWide,
       subscriptionTier: R.Si.TIER_2,
       analyticsLocationObject: n,
       onClose: t
     }), (0, r.jsx)(_.Text, {
       variant: "eyebrow",
-      className: D.countdownTextInSetting,
+      className: w.countdownTextInSetting,
       children: x(null == i ? void 0 : i.expires_at)
     })]
   })
@@ -216,12 +216,12 @@ function B(e) {
     discountOffer: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: D.contentContainer,
+    className: w.contentContainer,
     children: [(0, r.jsx)(_.X6q, {
       variant: "heading-xl/semibold",
       children: t
     }), null != n && (0, r.jsx)(_.Text, {
-      className: D.context,
+      className: w.context,
       variant: "text-md/normal",
       children: n
     }), (0, r.jsx)(M, {
@@ -232,7 +232,7 @@ function B(e) {
   })
 }
 
-function Z(e) {
+function F(e) {
   let {
     headingText: t,
     context: i,
@@ -250,26 +250,26 @@ function Z(e) {
     case R.cd.EMPTY_STICKER_PICKER_UPSELL:
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(_.P3F, {
-          className: D.upsellClose,
+          className: w.upsellClose,
           onClick: s,
           children: (0, r.jsx)(_.Dio, {
             size: "md",
             color: "currentColor"
           })
         }), (0, r.jsxs)("div", {
-          className: D.contentContainer,
+          className: w.contentContainer,
           children: [(0, r.jsx)("img", {
-            className: D.upsellImage,
+            className: w.upsellImage,
             src: L,
-            alt: w.NW.string(w.t.do7AoK)
+            alt: D.NW.string(D.t.do7AoK)
           }), (0, r.jsx)(_.X6q, {
             variant: "heading-xl/bold",
             color: "header-primary",
-            children: w.NW.string(w.t.HEm04O)
+            children: D.NW.string(D.t.HEm04O)
           }), (0, r.jsx)(M, {
             trialOffer: b,
             discountOffer: T,
-            children: w.NW.format(w.t["2HoFKC"], {
+            children: D.NW.format(D.t["2HoFKC"], {
               planName: (0, O.jP)(u),
               onClick: () => (0, E.uL)(P.Z5c.APPLICATION_STORE)
             })
@@ -288,19 +288,19 @@ function Z(e) {
     case R.cd.STICKER_PICKER_UPSELL:
       return l()(null != o, "You must specify children for this upsell type"), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: D.contentContainer,
+          className: w.contentContainer,
           children: [(0, r.jsx)("img", {
-            className: D.upsellImage,
+            className: w.upsellImage,
             src: L,
-            alt: w.NW.string(w.t.do7AoK)
+            alt: D.NW.string(D.t.do7AoK)
           }), (0, r.jsx)(_.X6q, {
             variant: "heading-xl/bold",
             color: "header-primary",
-            children: w.NW.string(w.t.jJG1pq)
+            children: D.NW.string(D.t.jJG1pq)
           }), (0, r.jsx)(M, {
             trialOffer: b,
             discountOffer: T,
-            children: w.NW.format(w.t["2HoFKC"], {
+            children: D.NW.format(D.t["2HoFKC"], {
               planName: (0, O.jP)(u),
               onClick: () => (0, E.uL)(P.Z5c.APPLICATION_STORE)
             })
@@ -321,19 +321,19 @@ function Z(e) {
       let x = (0, p.ap)(A) ? n(537381) : n(341048);
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: D.contentContainer,
+          className: w.contentContainer,
           children: [(0, r.jsx)("img", {
             alt: "",
-            className: D.upsellImage,
+            className: w.upsellImage,
             src: x
           }), (0, r.jsx)(_.X6q, {
             variant: "heading-xl/bold",
             color: "header-primary",
-            children: w.NW.string(w.t["1SsvhY"])
+            children: D.NW.string(D.t["1SsvhY"])
           }), (0, r.jsx)(M, {
             trialOffer: b,
             discountOffer: T,
-            children: w.NW.format(w.t.md4nPz, {
+            children: D.NW.format(D.t.md4nPz, {
               planName: (0, O.jP)(u),
               onClick: () => (0, E.uL)(P.Z5c.APPLICATION_STORE)
             })
@@ -353,19 +353,19 @@ function Z(e) {
     case R.cd.BURST_REACTION_UPSELL:
     case R.cd.STREAM_QUALITY_UPSELL:
     case R.cd.MESSAGE_LENGTH_UPSELL:
-      let j;
+      let k;
       switch (c) {
         case R.cd.UPLOAD_ERROR_UPSELL:
-          j = w.NW.format(w.t.F4qoDw, {
+          k = D.NW.format(D.t.F4qoDw, {
             planName: (0, O.jP)(u),
-            premiumMaxSize: u === R.Si.TIER_0 ? w.NW.string(w.t["C/Rhb2"]) : C,
+            premiumMaxSize: u === R.Si.TIER_0 ? D.NW.string(D.t["C/Rhb2"]) : C,
             onClick: () => {
               (0, E.uL)(P.Z5c.APPLICATION_STORE), null == s || s()
             }
           });
           break;
         case R.cd.BURST_REACTION_UPSELL:
-          j = w.NW.format(w.t.poib9P, {
+          k = D.NW.format(D.t.poib9P, {
             planName: (0, O.jP)(u),
             onClick: () => {
               (0, E.uL)(P.Z5c.APPLICATION_STORE), null == s || s()
@@ -373,22 +373,22 @@ function Z(e) {
           });
           break;
         case R.cd.STREAM_QUALITY_UPSELL:
-          j = w.NW.format(w.t.WspKp6, {
+          k = D.NW.format(D.t.WspKp6, {
             onClick: () => {
               (0, E.uL)(P.Z5c.APPLICATION_STORE), null == s || s(), (0, f.pT)()
             }
           });
           break;
         case R.cd.MESSAGE_LENGTH_UPSELL:
-          j = w.NW.format(w.t.GUHtEx, {
+          k = D.NW.format(D.t.GUHtEx, {
             premiumMaxMessageLength: P.en1,
             onClick: () => {
               (0, E.uL)(P.Z5c.APPLICATION_STORE), null == s || s()
             }
           })
       }
-      return l()(null != j, "There must be some upsell context"), (0, r.jsxs)("div", {
-        className: D.contentContainer,
+      return l()(null != k, "There must be some upsell context"), (0, r.jsxs)("div", {
+        className: w.contentContainer,
         children: [(0, r.jsx)(_.X6q, {
           variant: "heading-xl/bold",
           color: "header-primary",
@@ -399,12 +399,12 @@ function Z(e) {
         }), (0, r.jsx)(M, {
           trialOffer: b,
           discountOffer: T,
-          children: j
+          children: k
         })]
       });
     case R.cd.BURST_REACTION_QUICK_ACTION_UPSELL:
       return (0, r.jsxs)("div", {
-        className: D.contentContainer,
+        className: w.contentContainer,
         children: [(0, r.jsx)(_.X6q, {
           variant: "heading-xl/bold",
           color: "header-primary",
@@ -415,12 +415,12 @@ function Z(e) {
         }), (0, r.jsx)(M, {
           trialOffer: b,
           discountOffer: T,
-          children: w.NW.format(w.t.poib9P, {
+          children: D.NW.format(D.t.poib9P, {
             planName: (0, O.jP)(u),
             onClick: () => (0, E.uL)(P.Z5c.APPLICATION_STORE)
           })
-        }), (0, r.jsx)(k, {
-          className: D.upsellButton,
+        }), (0, r.jsx)(j, {
+          className: w.upsellButton,
           subscriptionTier: u,
           analyticsLocationObject: v,
           onClose: s,
@@ -432,7 +432,7 @@ function Z(e) {
       return l()(null != o, "You must specify children for this upsell type"), (0, r.jsx)(M, {
         trialOffer: b,
         discountOffer: T,
-        children: w.NW.format(w.t["5KMAnJ"], {
+        children: D.NW.format(D.t["5KMAnJ"], {
           onClick: () => {
             (0, E.uL)(P.Z5c.APPLICATION_STORE), (0, g.Mo)()
           }
@@ -440,8 +440,8 @@ function Z(e) {
       });
     case R.cd.MESSAGE_LENGTH_IN_EDITOR_UPSELL:
       return (0, r.jsxs)("div", {
-        className: a()(D.messageLengthUpsellContainer, {
-          [D.messageLengthUpsellAppearAnimation]: !N
+        className: a()(w.messageLengthUpsellContainer, {
+          [w.messageLengthUpsellAppearAnimation]: !N
         }),
         children: [(0, r.jsx)(_.Text, {
           variant: "text-lg/bold",
@@ -450,22 +450,22 @@ function Z(e) {
         }), (0, r.jsx)(_.X6q, {
           variant: "heading-lg/extrabold",
           color: "header-primary",
-          className: D.messageLengthUpsellHeader,
-          children: w.NW.string(w.t.ZvHg3N)
+          className: w.messageLengthUpsellHeader,
+          children: D.NW.string(D.t.ZvHg3N)
         }), (0, r.jsx)("div", {
-          className: D.divider
+          className: w.divider
         }), (0, r.jsx)(M, {
           trialOffer: b,
           discountOffer: T,
-          className: D.messageLengthBrandedContainer,
+          className: w.messageLengthBrandedContainer,
           subscriptionTier: u,
-          children: w.NW.format(w.t.GUHtEx, {
+          children: D.NW.format(D.t.GUHtEx, {
             premiumMaxMessageLength: P.en1,
             onClick: () => {
               (0, E.uL)(P.Z5c.APPLICATION_STORE), null == s || s()
             }
           })
-        }), (0, r.jsx)(k, {
+        }), (0, r.jsx)(j, {
           subscriptionTier: u,
           analyticsLocationObject: v,
           onClose: s,

@@ -1,31 +1,31 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
 Object.defineProperty(t, "__esModule", {
   value: !0
 }), t.mergeClasses = void 0;
-var r = a(n(320403)),
-  i = a(n(117806)),
-  o = Object.assign || function(e) {
+var n = i(r(320403)),
+  o = i(r(117806)),
+  a = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var n = arguments[t];
-      for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+      var r = arguments[t];
+      for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
     }
     return e
   };
 
-function a(e) {
+function i(e) {
   return e && e.__esModule ? e : {
     default: e
   }
 }
-var s = t.mergeClasses = function(e) {
+var l = t.mergeClasses = function(e) {
   var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
-    n = e.default && (0, i.default)(e.default) || {};
+    r = e.default && (0, o.default)(e.default) || {};
   return t.map(function(t) {
-    var i = e[t];
-    return i && (0, r.default)(i, function(e, t) {
-      n[t] || (n[t] = {}), n[t] = o({}, n[t], i[t])
+    var o = e[t];
+    return o && (0, n.default)(o, function(e, t) {
+      r[t] || (r[t] = {}), r[t] = a({}, r[t], o[t])
     }), t
-  }), n
+  }), r
 };
-t.default = s
+t.default = l

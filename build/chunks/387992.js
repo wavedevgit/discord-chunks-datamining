@@ -1,12 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(668530),
-  i = n(974802);
-e.exports = function(e, t) {
-  var n = i[e + "Prototype"],
-    o = n && n[t];
-  if (o) return o;
-  var a = r[e],
-    s = a && a.prototype;
-  return s && s[t]
+var e = n(668530),
+  o = n(974802);
+t.exports = function(t, r) {
+  var n = o[t + "Prototype"],
+    i = n && n[r];
+  if (i) return i;
+  var u = e[t],
+    s = u && u.prototype;
+  return s && s[r]
 }

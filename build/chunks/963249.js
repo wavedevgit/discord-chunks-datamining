@@ -91,19 +91,19 @@ function N(e) {
     analyticsLocation: C,
     analyticsSourceLocation: R,
     confirmationFooter: P,
-    isGift: w = !1,
-    giftMessage: D,
+    isGift: D = !1,
+    giftMessage: w,
     giftStyle: L,
     giftingOrigin: x,
     subscriptionTier: M,
-    trialId: k,
-    postSuccessGuild: j,
+    trialId: j,
+    postSuccessGuild: k,
     openInvoiceId: U,
     applicationId: G,
     referralTrialOfferId: B,
-    giftRecipient: Z,
-    returnRef: F,
-    subscription: V,
+    giftRecipient: F,
+    returnRef: V,
+    subscription: Z,
     skipConfirm: H,
     repeatPurchase: W
   } = null != e ? e : {}, Y = !1, K = (0, a.Z)(), z = _.default.getCurrentUser(), q = (0, g.M5)(z, v.p9.TIER_2), Q = o()("payment-modal"), X = (0, g.Wz)(M);
@@ -119,21 +119,21 @@ function N(e) {
         loadId: K,
         subscriptionTier: M,
         skuId: X,
-        isGift: w,
-        giftMessage: D,
+        isGift: D,
+        giftMessage: w,
         giftStyle: L,
         giftingOrigin: x,
-        giftRecipient: Z,
+        giftRecipient: F,
         initialPlanId: t,
         followupSKUInfo: i,
         onClose: (e, t) => {
-          o(), null == b || b(e), e && (null == T || T(), (0, p.I)(w, q, t) && m.S.dispatch(E.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
+          o(), null == b || b(e), e && (null == T || T(), (0, p.I)(D, q, t) && m.S.dispatch(E.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
             type: "PREMIUM_PAYMENT_MODAL_CLOSE",
             didSucceed: e
           })
         },
         onComplete: e => {
-          Y = !0, null == O || O(), (0, p.I)(w, q, (0, g.k5)(null == e ? void 0 : e.subscription)) && (0, f.H)(!0)
+          Y = !0, null == O || O(), (0, p.I)(D, q, (0, g.k5)(null == e ? void 0 : e.subscription)) && (0, f.H)(!0)
         },
         onSubscriptionConfirmation: T,
         analyticsLocations: N,
@@ -141,14 +141,14 @@ function N(e) {
         analyticsLocation: C,
         analyticsSourceLocation: R,
         confirmationFooter: P,
-        trialId: k,
-        postSuccessGuild: j,
+        trialId: j,
+        postSuccessGuild: k,
         planGroup: v.Y1,
         openInvoiceId: U,
         applicationId: G,
         referralTrialOfferId: B,
-        returnRef: F,
-        subscription: V,
+        returnRef: V,
+        subscription: Z,
         skipConfirm: !!H,
         repeatPurchase: W
       }))
@@ -162,9 +162,9 @@ function N(e) {
         location: null != C ? C : A,
         source: R,
         subscription_type: E.NYc.PREMIUM,
-        is_gift: w,
+        is_gift: D,
         sku_id: X,
-        eligible_for_trial: null != k,
+        eligible_for_trial: null != j,
         application_id: G,
         location_stack: N
       }), (0, u.fw)(), (0, c.fw)(), (0, d.p)(), null == b || b(Y), Y && (null == T || T())

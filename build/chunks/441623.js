@@ -58,7 +58,7 @@ let N = T(),
   R = {},
   P = null;
 
-function w(e, t) {
+function D(e, t) {
   let n = new Date,
     r = new Date(e.getTime());
   r.setFullYear(t);
@@ -68,8 +68,8 @@ function w(e, t) {
   return o.setDate(r.getDate() + O), n > i && n < o
 }
 
-function D(e) {
-  return !w(e, e.getFullYear()) && w(e, new Date().getFullYear())
+function w(e) {
+  return !D(e, e.getFullYear()) && D(e, new Date().getFullYear())
 }
 
 function L() {
@@ -77,7 +77,7 @@ function L() {
     q(P);
     return
   }
-  if (k(), !f.Z.hasConsented(g.pjP.PERSONALIZATION)) return;
+  if (j(), !f.Z.hasConsented(g.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
   } = m.G.getCurrentConfig({
@@ -98,7 +98,7 @@ function L() {
         n = d.Z.getUserAffinity(e);
       if (p.Z.getRelationshipType(e) === g.OGo.FRIEND && !p.Z.isIgnored(e) && null != n && n.affinity > 0 && null != t) {
         let n = new Date(t);
-        D(n) && (A.push(e), R[e] = {
+        w(n) && (A.push(e), R[e] = {
           friendsSince: n
         })
       }
@@ -120,16 +120,16 @@ function M() {
   return Array.from(C).some(e => !N.lastShownFriendsListGiftIntents.includes(e))
 }
 
-function k() {
+function j() {
   A.length = 0, C.clear(), R = {}
 }
 
-function j() {
-  k()
+function k() {
+  j()
 }
 
 function U() {
-  N = T(), k()
+  N = T(), j()
 }
 
 function G() {
@@ -140,21 +140,21 @@ function B(e) {
   let {
     recipientUserId: t
   } = e;
-  V(t)
+  Z(t)
 }
 
-function Z() {
+function F() {
   N.friendsTabBadgeLastDismissedTime = Date.now()
 }
 
-function F(e) {
+function V(e) {
   let {
     recipientUserId: t
   } = e;
-  V(t)
+  Z(t)
 }
 
-function V(e) {
+function Z(e) {
   null == N.messageGiftIntentLastShownMap[e] && (N.messageGiftIntentLastShownMap[e] = Date.now())
 }
 
@@ -189,7 +189,7 @@ function z(e) {
 }
 
 function q(e) {
-  k();
+  j();
   let {
     enabled: t
   } = h.w.getCurrentConfig({
@@ -257,12 +257,12 @@ E(Q, "displayName", "PremiumGiftingIntentStore"), E(Q, "persistKey", "PremiumGif
   }
 }]);
 let X = new Q(c.Z, {
-  CONNECTION_OPEN: j,
+  CONNECTION_OPEN: k,
   LOGOUT: U,
   MESSAGE_GIFT_INTENT_SHOWN: B,
   FRIENDS_LIST_GIFT_INTENTS_SHOWN: G,
-  FRIENDS_TAB_BADGE_DISMISS: Z,
-  GIFT_INTENT_FLOW_PURCHASED_GIFT: F,
+  FRIENDS_TAB_BADGE_DISMISS: F,
+  GIFT_INTENT_FLOW_PURCHASED_GIFT: V,
   DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: W,
   DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET: Y,
   DEV_TOOLS_FRIENDS_TAB_BADGE_COOLDOWN_RESET: K,

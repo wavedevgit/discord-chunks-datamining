@@ -1,16 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(821819),
-  i = n(735471),
-  o = /#|\.prototype\./,
-  a = function(e, t) {
-    var n = l[s(e)];
-    return n === u || n !== c && (i(t) ? r(t) : !!t)
+var e = n(821819),
+  o = n(735471),
+  i = /#|\.prototype\./,
+  u = function(t, r) {
+    var n = c[s(t)];
+    return n === a || n !== f && (o(r) ? e(r) : !!r)
   },
-  s = a.normalize = function(e) {
-    return String(e).replace(o, ".").toLowerCase()
+  s = u.normalize = function(t) {
+    return String(t).replace(i, ".").toLowerCase()
   },
-  l = a.data = {},
-  c = a.NATIVE = "N",
-  u = a.POLYFILL = "P";
-e.exports = a
+  c = u.data = {},
+  f = u.NATIVE = "N",
+  a = u.POLYFILL = "P";
+t.exports = u

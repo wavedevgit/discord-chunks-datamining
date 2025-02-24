@@ -9,19 +9,19 @@ n.d(t, {
   Fg: () => z,
   G6: () => es,
   H1: () => R,
-  I0: () => D,
+  I0: () => w,
   L1: () => ey,
   NA: () => eh,
   OW: () => ei,
   Ok: () => ed,
   Ou: () => G,
-  Pe: () => j,
+  Pe: () => k,
   QK: () => eO,
   QZ: () => S,
   R$: () => m,
   RS: () => e_,
-  R_: () => ew,
-  Rt: () => ej,
+  R_: () => eD,
+  Rt: () => ek,
   SE: () => eN,
   Sb: () => eb,
   Sh: () => eL,
@@ -29,13 +29,13 @@ n.d(t, {
   UP: () => eo,
   Wp: () => eI,
   Wz: () => eR,
-  Xc: () => k,
+  Xc: () => j,
   Xk: () => P,
   Xr: () => ea,
   YC: () => eU,
   Yk: () => eS,
   _O: () => A,
-  _j: () => eD,
+  _j: () => ew,
   bh: () => $,
   bm: () => er,
   cC: () => b,
@@ -57,12 +57,12 @@ n.d(t, {
   iG: () => H,
   iH: () => eC,
   jU: () => Q,
-  kJ: () => V,
+  kJ: () => Z,
   kU: () => X,
-  l4: () => ek,
-  mX: () => F,
+  l4: () => ej,
+  mX: () => V,
   nc: () => em,
-  qF: () => w,
+  qF: () => D,
   rN: () => eg,
   tU: () => ef,
   uL: () => x,
@@ -71,7 +71,7 @@ n.d(t, {
   x4: () => ep,
   xM: () => en,
   xq: () => K,
-  zA: () => Z
+  zA: () => F
 }), n(47120);
 var r = n(442837),
   i = n(524437),
@@ -157,13 +157,13 @@ let O = (0, c.Zc)("notifications", "reactionNotifications", e => null != e ? e :
   }, e => o.D5.create({
     value: e
   })),
-  w = (0, c.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
+  D = (0, c.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
     var t;
     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
   }, e => o.D5.create({
     value: e
   })),
-  D = (0, c.Zc)("voiceAndVideo", "disableStreamPreviews", e => null == e ? void 0 : e.value, e => o.D5.create({
+  w = (0, c.Zc)("voiceAndVideo", "disableStreamPreviews", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e
   })),
   L = (0, c.Zc)("notifications", "notifyFriendsOnGoLive", e => null == e ? void 0 : e.value, e => o.D5.create({
@@ -171,13 +171,13 @@ let O = (0, c.Zc)("notifications", "reactionNotifications", e => null != e ? e :
   })),
   x = "0",
   M = (0, c.Zc)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : x, e => e),
-  k = (0, c.Zc)("gameLibrary", "installShortcutDesktop", e => {
+  j = (0, c.Zc)("gameLibrary", "installShortcutDesktop", e => {
     var t;
     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
   }, e => o.D5.create({
     value: e
   })),
-  j = (0, c.Zc)("gameLibrary", "installShortcutStartMenu", e => {
+  k = (0, c.Zc)("gameLibrary", "installShortcutStartMenu", e => {
     var t;
     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
   }, e => o.D5.create({
@@ -196,11 +196,11 @@ let O = (0, c.Zc)("notifications", "reactionNotifications", e => null != e ? e :
     value: e
   })),
   B = [],
-  Z = (0, c.Zc)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : B, e => e),
-  F = (0, c.Zc)("privacy", "defaultMessageRequestRestricted", e => null == e ? void 0 : e.value, e => o.D5.create({
+  F = (0, c.Zc)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : B, e => e),
+  V = (0, c.Zc)("privacy", "defaultMessageRequestRestricted", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e
   })),
-  V = (0, c.Zc)("privacy", "nonSpamRetrainingOptIn", e => null == e ? void 0 : e.value, e => null == e ? void 0 : o.D5.create({
+  Z = (0, c.Zc)("privacy", "nonSpamRetrainingOptIn", e => null == e ? void 0 : e.value, e => null == e ? void 0 : o.D5.create({
     value: e
   }));
 (0, c.Zc)("privacy", "contactSyncEnabled", e => {
@@ -444,13 +444,13 @@ let eb = (0, c.KM)((0, c.Zc)("appearance", "developerMode", e => null != e && e,
   eP = (0, c.Zc)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e
   })),
-  ew = (0, c.Zc)("privacy", "hideLegacyUsername", e => {
+  eD = (0, c.Zc)("privacy", "hideLegacyUsername", e => {
     var t;
     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
   }, e => o.D5.create({
     value: e
   })),
-  eD = (0, c.Zc)("privacy", "allowGameFriendDmsInDiscord", e => {
+  ew = (0, c.Zc)("privacy", "allowGameFriendDmsInDiscord", e => {
     var t;
     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
   }, e => o.D5.create({
@@ -521,6 +521,6 @@ let eb = (0, c.KM)((0, c.Zc)("appearance", "developerMode", e => null != e && e,
 }));
 let eM = (0, c.Zc)("appearance", "timestampHourCycle", e => null != e ? e : i.hg.AUTO, e => e);
 (0, c.Zc)("appearance", "launchPadMode", e => null != e ? e : i.l1.LAUNCH_PAD_DISABLED, e => e);
-let ek = (0, c.Zc)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e),
-  ej = (0, c.Zc)("safetySettings", "ignoreProfileSpeedbumpDisabled", e => null != e && e, e => e),
+let ej = (0, c.Zc)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e),
+  ek = (0, c.Zc)("safetySettings", "ignoreProfileSpeedbumpDisabled", e => null != e && e, e => e),
   eU = (0, c.Zc)("appearance", "uiDensity", e => e === i.Pi.UNSET_UI_DENSITY ? i.Pi.COMPACT : null != e ? e : i.Pi.COMPACT, e => e)

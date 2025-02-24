@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => j
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -52,7 +52,7 @@ function P(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,8 +63,8 @@ function w(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -120,22 +120,22 @@ function M(e) {
     channel: n
   } = e, {
     analyticsLocations: o
-  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [a, u] = i.useState(!1), b = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([v.default], () => v.default.getCurrentUser()), w = null != R ? y.default.age(R.id) : 0, M = !t && b && w >= L, {
-    enabled: k
+  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [a, u] = i.useState(!1), b = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([v.default], () => v.default.getCurrentUser()), D = null != R ? y.default.age(R.id) : 0, M = !t && b && D >= L, {
+    enabled: j
   } = m.O.useExperiment({
     location: "gift-button"
-  }), j = [];
-  k && M && j.push(l.z.NITROWEEN_COACHMARKS);
-  let [U, G] = (0, _.US)(j), B = null != U, Z = (0, O.Ft)(n), {
-    Component: F,
-    events: V,
+  }), k = [];
+  j && M && k.push(l.z.NITROWEEN_COACHMARKS);
+  let [U, G] = (0, _.US)(k), B = null != U, F = (0, O.Ft)(n), {
+    Component: V,
+    events: Z,
     play: H
   } = (0, c.$)();
   if (t) return null;
   let W = () => {
     (0, h.Z)({
       isGift: !0,
-      giftRecipient: null == Z ? void 0 : Z,
+      giftRecipient: null == F ? void 0 : F,
       giftMessage: N.NW.string(N.t["rX/m/f"]),
       initialPlanId: null,
       analyticsLocations: o,
@@ -159,7 +159,7 @@ function M(e) {
       onComplete: () => u(!1),
       onCheckItOutClick: W,
       markAsDismissed: G
-    }), (0, r.jsx)(S.Z, D(P({
+    }), (0, r.jsx)(S.Z, w(P({
       innerClassName: C.button,
       "aria-label": N.NW.string(N.t.Z1RnTk),
       isActive: !1,
@@ -168,13 +168,13 @@ function M(e) {
           dismissAction: T.L.TAKE_ACTION
         }), W()
       }
-    }, V), {
+    }, Z), {
       children: (0, r.jsx)(x, {
-        animatedIconComponent: F,
+        animatedIconComponent: V,
         hovered: a,
         isCoachmarkDismissed: !B
       })
     }))]
   })
 }
-let k = i.memo(M)
+let j = i.memo(M)

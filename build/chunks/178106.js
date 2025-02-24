@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => j
 }), n(653041), n(47120);
 var r, i = n(392711),
   o = n.n(i),
@@ -115,14 +115,14 @@ function P(e) {
   }))
 }
 
-function w() {
+function D() {
   var e;
   if (!x()) return;
   let t = null === (e = d.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) || void 0 === e ? void 0 : e.playedSounds;
   I.overwriteHistory(P(null != t ? t : {}), O)
 }
 
-function D(e) {
+function w(e) {
   let {
     settings: {
       type: t
@@ -147,7 +147,7 @@ function x() {
 }
 class M extends(r = l.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(f.default, _.Z), (null == e ? void 0 : e.recentlyHeardCache) != null && S.load(e.recentlyHeardCache), (null == e ? void 0 : e.playedEventsPendingFlush) != null && (O = e.playedEventsPendingFlush), this.syncWith([d.Z], w)
+    this.waitFor(f.default, _.Z), (null == e ? void 0 : e.recentlyHeardCache) != null && S.load(e.recentlyHeardCache), (null == e ? void 0 : e.playedEventsPendingFlush) != null && (O = e.playedEventsPendingFlush), this.syncWith([d.Z], D)
   }
   getState() {
     return {
@@ -169,8 +169,8 @@ class M extends(r = l.ZP.PersistedStore) {
   }
 }
 E(M, "displayName", "SoundboardEventStore"), E(M, "persistKey", "SoundboardEventStore");
-let k = new M(c.Z, {
+let j = new M(c.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: T,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: N,
-  USER_SETTINGS_PROTO_UPDATE: D
+  USER_SETTINGS_PROTO_UPDATE: w
 })

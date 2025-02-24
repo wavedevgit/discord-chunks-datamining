@@ -38,31 +38,31 @@ function y(e) {
     purchaseError: C,
     purchaseErrorBlockRef: R,
     planError: P,
-    onScroll: w,
-    scrollerClassName: D,
+    onScroll: D,
+    scrollerClassName: w,
     hasCurrencies: L = !1
   } = e, x = null;
   null != y && null == (0, _.ly)(y) ? x = y : null != C ? x = C : null != P && (x = P);
   let M = null != x ? x.message : "";
   null != x && x instanceof d.HF && (x.code === f.SM.CARD_DECLINED && L && (M += " ".concat(E.NW.string(E.t.iWvwQU))), x.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.NW.string(E.t.ypuSd3)), x.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.NW.string(E.t.mXMmWF)));
   let {
-    stripe: k
+    stripe: j
   } = (0, p.JL)();
-  A = A || null == k;
-  let j = i.useRef(new l.V7);
+  A = A || null == j;
+  let k = i.useRef(new l.V7);
   i.useEffect(() => {
-    let e = j.current;
-    return null != k || e.isStarted() ? null != k && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
+    let e = k.current;
+    return null != j || e.isStarted() ? null != j && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
       let e = Error("Stripe took too long to load");
       (0, h.q2)(e)
     }), () => {
       e.stop()
     }
-  }, [k]);
+  }, [j]);
   let U = t.includes(_.h8.PAYMENT_TYPE) ? _.h8.PAYMENT_TYPE : _.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(o.Elements, {
     options: g.OBo,
-    stripe: k,
+    stripe: j,
     children: [O, (0, r.jsxs)("div", {
       className: s()("paymentModalContent", v.content),
       children: [I && n !== _.h8.CONFIRM ? (0, r.jsx)(u.Z, {
@@ -99,8 +99,8 @@ function y(e) {
           steps: t,
           sideMargin: 20,
           children: (0, r.jsx)(c.h21, {
-            onScroll: w,
-            className: s()(v.scroller, D),
+            onScroll: D,
+            className: s()(v.scroller, w),
             children: a
           })
         })]

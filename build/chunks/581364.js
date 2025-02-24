@@ -3,12 +3,12 @@
 n.d(t, {
   $z: () => R,
   BH: () => A,
-  BO: () => w,
+  BO: () => D,
   D7: () => x,
   Dd: () => C,
-  Ft: () => D,
-  X0: () => k,
-  XA: () => j,
+  Ft: () => w,
+  X0: () => j,
+  XA: () => k,
   Z8: () => O,
   bD: () => P,
   nG: () => N,
@@ -242,9 +242,9 @@ function R(e) {
 function P(e) {
   return i()(e).subtract(1).toString()
 }
-let w = c.vB(0);
+let D = c.vB(0);
 
-function D(e) {
+function w(e) {
   let {
     PermissionStore: t,
     guild: n,
@@ -260,7 +260,7 @@ function D(e) {
     if ("boolean" == typeof e) return e
   }
   let l = L(r, s, i);
-  return ("boolean" != typeof l || !!l) && (null == a || !c.fS(a, w) && t.can(a, n))
+  return ("boolean" != typeof l || !!l) && (null == a || !c.fS(a, D) && t.can(a, n))
 }
 
 function L(e, t, n) {
@@ -302,7 +302,7 @@ function M(e) {
   return null == e ? void 0 : e.id === h.bi.BUILT_IN ? _.ub.BUILT_IN : e.id === h.bi.FRECENCY ? _.ub.FRECENCY : _.ub.APP
 }
 
-function k(e, t) {
+function j(e, t) {
   var n, r;
   return {
     type: _.Qi.APPLICATION,
@@ -314,7 +314,7 @@ function k(e, t) {
   }
 }
 
-function j(e) {
+function k(e) {
   let t = e.id,
     n = e.options,
     r = null == n ? void 0 : n.find(e => e.type === u.jw.SUB_COMMAND_GROUP);

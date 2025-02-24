@@ -1,18 +1,18 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r = n(67867),
-  i = n(447631),
-  o = n(688313),
-  a = n(729605),
+var r = n(766362),
+  o = n(447631),
+  a = n(688313),
+  i = n(729605),
   s = n(65007),
-  l = n(256110);
+  c = n(256110);
 r({
   target: "Object",
   stat: !0,
-  sham: !i
+  sham: !o
 }, {
   getOwnPropertyDescriptors: function(e) {
-    for (var t, n, r = a(e), i = s.f, c = o(r), u = {}, d = 0; c.length > d;) void 0 !== (n = i(r, t = c[d++])) && l(u, t, n);
+    for (var t, n, r = i(e), o = s.f, l = a(r), u = {}, d = 0; l.length > d;) void 0 !== (n = o(r, t = l[d++])) && c(u, t, n);
     return u
   }
 })

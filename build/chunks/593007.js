@@ -1,16 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => c
+r.d(t, {
+  Z: () => a
 });
-var r = n(176338),
-  i = n(675717),
-  o = "[object AsyncFunction]",
-  a = "[object Function]",
-  s = "[object GeneratorFunction]",
-  l = "[object Proxy]";
-let c = function(e) {
-  if (!(0, i.Z)(e)) return !1;
-  var t = (0, r.Z)(e);
-  return t == a || t == s || t == o || t == l
+var n = r(176338),
+  o = r(675717);
+let a = function(e) {
+  if (!(0, o.Z)(e)) return !1;
+  var t = (0, n.Z)(e);
+  return "[object Function]" == t || "[object GeneratorFunction]" == t || "[object AsyncFunction]" == t || "[object Proxy]" == t
 }

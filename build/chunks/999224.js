@@ -31,13 +31,13 @@ var r = n(771356),
   C = n(691545),
   R = n(58587),
   P = n(912609),
-  w = n(565792),
-  D = n(583498),
+  D = n(565792),
+  w = n(583498),
   L = n(442866),
   x = n(263984),
   M = n(591501),
-  k = n(595867),
-  j = n(865790);
+  j = n(595867),
+  k = n(865790);
 let U = {
   skye: {
     name: "Skye",
@@ -65,7 +65,7 @@ let U = {
   },
   sebastien: {
     name: "S\xe9bastien",
-    iconURL: D.Z,
+    iconURL: w.Z,
     splashGradient: "radial-gradient(9% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(100% 555.56% at 0% 100%, rgba(92, 119, 31, 0.50) 0%, rgba(92, 119, 31, 0.00) 100%), linear-gradient(90deg, rgba(104, 188, 254, 0.25) 0%, rgba(104, 188, 254, 0.00) 15%)",
     baseColor: "#25300D",
     styleKey: "sebastien",
@@ -81,7 +81,7 @@ let U = {
   },
   robot: {
     name: "\uD83D\uDEA7 DR01D",
-    iconURL: w.Z,
+    iconURL: D.Z,
     underDevelopment: !0,
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(61, 72, 79, 0.50) 0%, rgba(61, 72, 79, 0.00) 100%), linear-gradient(90deg, rgba(118, 233, 136, 0.25) 0%, rgba(118, 233, 136, 0.00) 15%)",
     baseColor: "#1B1F23",
@@ -89,7 +89,7 @@ let U = {
   },
   tunes: {
     name: "\uD83D\uDEA7 Tunetron",
-    iconURL: k.Z,
+    iconURL: j.Z,
     underDevelopment: !0,
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(100% 555.56% at 0% 100%, rgba(111, 134, 253, 0.50) 0%, rgba(111, 134, 253, 0.00) 100%), linear-gradient(90deg, rgba(254, 76, 209, 0.25) 0%, rgba(254, 76, 209, 0.00) 15%)",
     baseColor: "#010A3C",
@@ -129,7 +129,7 @@ let U = {
   },
   villain: {
     name: "Villain",
-    iconURL: j.Z,
+    iconURL: k.Z,
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(100% 555.56% at 0% 100%, rgba(219, 2, 34, 0.50) 0%, rgba(219, 2, 34, 0.00) 100%), linear-gradient(90deg, rgba(53, 236, 125, 0.25) 0%, rgba(53, 236, 125, 0.00) 15%)",
     baseColor: "#3D0109",
     styleKey: "villain",

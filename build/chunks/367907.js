@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $H: () => Z,
+  $H: () => F,
   AB: () => U,
-  JS: () => k,
+  JS: () => j,
   ZP: () => H,
   hH: () => x,
-  kO: () => F,
-  oG: () => V,
-  v_: () => j,
+  kO: () => V,
+  oG: () => Z,
+  v_: () => k,
   yw: () => B
 });
 var r = n(392711),
@@ -40,7 +40,7 @@ var r = n(392711),
   R = n(981631),
   P = n(176505);
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -49,14 +49,14 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -102,13 +102,13 @@ function M(e, t) {
   }
 }
 
-function k(e) {
+function j(e) {
   if (null == e) return null;
   let t = u.Z.getChannel(e);
-  return null == t ? null : j(t)
+  return null == t ? null : k(t)
 }
 
-function j(e) {
+function k(e) {
   var t;
   if (null == e) return null;
   let n = !1,
@@ -136,12 +136,12 @@ function U(e) {
   if (null == t) return null;
   let n = h.Z.isVideoEnabled(),
     r = E.Z.getMediaSessionId();
-  return D({
+  return w({
     channel_id: t.id,
     channel_type: t.type,
     guild_id: t.getGuildId(),
     media_session_id: r
-  }, F(t.getGuildId(), t.id, n), (0, C.V)())
+  }, V(t.getGuildId(), t.id, n), (0, C.V)())
 }
 
 function G(e, t) {
@@ -157,13 +157,13 @@ function B(e) {
     i = "guild_id" in t ? t.guild_id : r ? y.Z.getGuildId() : null,
     o = "channel_id" in t ? t.channel_id : r ? b.Z.getChannelId(i) : null,
     a = u.Z.getChannel(o),
-    s = D({}, t, x(G(a, i)), null != i && null != o && (0, P.AB)(o) ? M(i, o) : j(a));
+    s = w({}, t, x(G(a, i)), null != i && null != o && (0, P.AB)(o) ? M(i, o) : k(a));
   T.default.track(e, s, {
     flush: n
   })
 }
 
-function Z(e) {
+function F(e) {
   let t = u.Z.getChannel(e);
   if (null == t) return {
     channel_id: e
@@ -203,7 +203,7 @@ function Z(e) {
   }
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   let r = {
     voice_state_count: 0,
     video_stream_count: 0,
@@ -214,7 +214,7 @@ function F(e, t, n) {
   }), r
 }
 
-function V(e, t) {
+function Z(e, t) {
   let n = {
     custom_status_count: 0
   };
@@ -224,5 +224,5 @@ function V(e, t) {
 }
 let H = {
   trackWithMetadata: B,
-  getVoiceStateMetadata: F
+  getVoiceStateMetadata: V
 }

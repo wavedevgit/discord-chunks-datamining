@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 });
 var r = n(200651);
 n(192379);
@@ -63,12 +63,12 @@ function P(e) {
   return "".concat(E.Iv).concat(e.name).concat(E.Iv)
 }
 
-function w(e) {
+function D(e) {
   var t;
   let n = e.animated ? "a" : "";
   return e.managed || null == e.id ? "".concat(E.Iv).concat(e.name).concat(E.Iv) : "<".concat(n, ":").concat(null !== (t = e.originalName) && void 0 !== t ? t : e.name, ":").concat(e.id, ">")
 }
-let D = {
+let w = {
   sentinel: E.Iv,
   stores: [u.Z],
   matches: (e, t, n, r, i) => n.length > 1,
@@ -249,7 +249,7 @@ let D = {
     } = e;
     if (o < t.length) {
       let e = t[o];
-      return a.insertText(P(e), w(e)), {
+      return a.insertText(P(e), D(e)), {
         type: g.z2.EMOJI,
         metadata: {
           emojiId: e.id,

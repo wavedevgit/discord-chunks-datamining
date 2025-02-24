@@ -171,11 +171,11 @@ function P(e) {
   r.connect(e.endpoint, e.token)
 }
 
-function w() {
+function D() {
   v = null
 }
 
-function D() {
+function w() {
   b = null
 }
 
@@ -203,7 +203,7 @@ function M(e) {
   N()
 }
 
-function k(e) {
+function j(e) {
   let {
     channelId: t
   } = e;
@@ -211,7 +211,7 @@ function k(e) {
   N()
 }
 
-function j(e) {
+function k(e) {
   return e.state === _.$7l.ACTIVE && null != r && r.resetBackoff("App state is active"), !1
 }
 
@@ -227,7 +227,7 @@ function B(e) {
   return e.connection === r
 }
 
-function Z(e) {
+function F(e) {
   let {
     userId: t,
     context: n,
@@ -236,7 +236,7 @@ function Z(e) {
   null == r || r.setSimulcastDebugOverride(t, n, i)
 }
 
-function F(e) {
+function V(e) {
   let {
     streamId: t,
     width: n,
@@ -244,7 +244,7 @@ function F(e) {
   } = e;
   null == r || r.setVideoSize(t, n, i)
 }
-class V extends(o = a.ZP.Store) {
+class Z extends(o = a.ZP.Store) {
   initialize() {
     this.waitFor(p.ZP), (0, d.r)(this.getRTCConnectionId, this.getMediaSessionId)
   }
@@ -329,8 +329,8 @@ class V extends(o = a.ZP.Store) {
     return null == t ? void 0 : t.get(e)
   }
 }
-m(V, "displayName", "RTCConnectionStore");
-let H = new V(s.Z, __OVERLAY__ ? {} : {
+m(Z, "displayName", "RTCConnectionStore");
+let H = new Z(s.Z, __OVERLAY__ ? {} : {
   CONNECTION_OPEN: A,
   CONNECTION_CLOSED: C,
   RTC_CONNECTION_STATE: U,
@@ -340,19 +340,19 @@ let H = new V(s.Z, __OVERLAY__ ? {} : {
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: G,
   RTC_CONNECTION_CLIENT_CONNECT: G,
   RTC_CONNECTION_CLIENT_DISCONNECT: G,
-  VIDEO_SIZE_UPDATE: F,
+  VIDEO_SIZE_UPDATE: V,
   VOICE_STATE_UPDATES: R,
-  VOICE_CHANNEL_SELECT: k,
+  VOICE_CHANNEL_SELECT: j,
   VOICE_SERVER_UPDATE: P,
-  CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: w,
-  REMOTE_SESSION_CONNECT: w,
-  CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: D,
+  CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: D,
+  REMOTE_SESSION_CONNECT: D,
+  CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: w,
   GUILD_DELETE: L,
   CHANNEL_DELETE: M,
   THREAD_DELETE: M,
   CALL_DELETE: x,
-  APP_STATE_UPDATE: j,
-  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: Z
+  APP_STATE_UPDATE: k,
+  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F
 });
 Promise.resolve().then(n.bind(n, 626135)).then(e => {
   let {

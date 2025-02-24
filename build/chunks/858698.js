@@ -1,10 +1,10 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var t = String;
-e.exports = function(e) {
+var r = String;
+t.exports = function(t) {
   try {
-    return t(e)
-  } catch (e) {
+    return r(t)
+  } catch (t) {
     return "Object"
   }
 }

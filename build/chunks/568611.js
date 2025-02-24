@@ -120,12 +120,12 @@ void 0 === v && (v = E), v(function(e, t) {
         strict: S
       }) : null,
       P = !!(m ? m(R, n) : R),
-      w = P ? b(_, u) : _,
-      D = P ? (0, s.Z)({}, I, {}, p) : I,
+      D = P ? b(_, u) : _,
+      w = P ? (0, s.Z)({}, I, {}, p) : I,
       L = (0, s.Z)({
         "aria-current": P && i || null,
-        className: w,
-        style: D,
+        className: D,
+        style: w,
         to: a
       }, A);
     return E !== v ? L.ref = t || N : L.innerRef = N, o.createElement(g, L)

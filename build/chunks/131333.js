@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  t: () => j
+  t: () => k
 }), n(47120), n(301563), n(474991), n(398202);
 var r = n(200651),
   i = n(192379),
@@ -66,7 +66,7 @@ let v = [],
   C = 48,
   R = .01,
   P = new Set(["jack_o_lantern", "nose"]),
-  w = {
+  D = {
     jack_o_lantern: {
       sprites: (0, c.Z)(["chocolate_bar", "lollipop", "candy"])
     },
@@ -75,7 +75,7 @@ let v = [],
     }
   };
 
-function D(e) {
+function w(e) {
   if (null == e) return null;
   for (let t of P)
     if (null != e.match(new RegExp(":".concat(t, "(_tone[1-9])?")))) return t;
@@ -116,7 +116,7 @@ function M(e) {
       return "enter"
   }
 }
-let k = i.forwardRef(function(e, t) {
+let j = i.forwardRef(function(e, t) {
   let {
     sprites: n
   } = e, [a, s] = i.useState(null), {
@@ -163,12 +163,12 @@ let k = i.forwardRef(function(e, t) {
   })
 });
 
-function j(e) {
+function k(e) {
   let {
     children: t
   } = e, n = i.useRef({}), [o, l] = i.useState(null), c = M(o), p = i.useRef(null), [h, m] = i.useState(!1), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), v = i.useCallback(e => {
     if (!h) {
-      let t = D(e);
+      let t = w(e);
       null != t && (g.current = t, m(!0), l(null))
     }
   }, [h]), b = i.useMemo(() => ({
@@ -194,9 +194,9 @@ function j(e) {
     children: t
   }) : (0, r.jsxs)(d.Rm.Provider, {
     value: b,
-    children: [t, Object.keys(w).map(e => {
-      let t = w[e];
-      return (0, r.jsx)(k, {
+    children: [t, Object.keys(D).map(e => {
+      let t = D[e];
+      return (0, r.jsx)(j, {
         ref: t => {
           null != t ? n.current[e] = t : delete n.current[e]
         },

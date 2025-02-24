@@ -122,14 +122,14 @@ function T(e) {
     {
       reducedMotion: P
     } = i.useContext(l.S),
-    w = i.useContext(f.Z),
-    D = T[A].impressionName,
+    D = i.useContext(f.Z),
+    w = T[A].impressionName,
     L = E(m({}, T[A].impressionProperties), {
       location_stack: N
     });
-  w({
+  D({
     type: a.ImpressionTypes.MODAL,
-    name: D,
+    name: w,
     properties: L,
     _stackContext: {
       isSlide: !0
@@ -138,13 +138,13 @@ function T(e) {
   let {
     ref: x,
     width: M = 0,
-    height: k = 0
-  } = (0, u.Z)(A), j = m({}, y, I.springConfig, P.enabled ? {
+    height: j = 0
+  } = (0, u.Z)(A), k = m({}, y, I.springConfig, P.enabled ? {
     clamp: !0
   } : null), U = (0, c.q_F)({
     width: null !== (n = I.width) && void 0 !== n ? n : M,
-    height: k,
-    config: j
+    height: j,
+    config: k
   }, null == C ? "animate-never" : "respect-motion-settings"), G = (0, c.Yzy)(A, {
     value: 0,
     from: {
@@ -156,7 +156,7 @@ function T(e) {
     leave: {
       value: -1
     },
-    config: j,
+    config: k,
     onRest: (e, t) => {
       let {
         item: n
@@ -164,9 +164,9 @@ function T(e) {
       n === A && null != I.onSlideReady && I.onSlideReady(n)
     }
   }, null == C ? "animate-never" : "respect-motion-settings"), B = (0, _.Z)(R), {
-    width: Z,
-    centered: F = !0
-  } = I, V = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), W = s.tq ? {} : F ? {
+    width: F,
+    centered: V = !0
+  } = I, Z = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), W = s.tq ? {} : V ? {
     transform: "translate3d(0, -50%, 0) scale(1.0, 1.0)",
     top: "50%"
   } : {
@@ -177,7 +177,7 @@ function T(e) {
   return (0, r.jsx)(o.animated.div, {
     style: m({
       position: "relative",
-      minWidth: V,
+      minWidth: Z,
       minHeight: H
     }, Y),
     children: G((e, t, n) => {
@@ -193,7 +193,7 @@ function T(e) {
           display: g,
           flexDirection: "column",
           backfaceVisibility: "hidden",
-          width: s.tq ? "100%" : Z
+          width: s.tq ? "100%" : F
         }, W, P.enabled ? a : m({
           left: e.value.to(S("left", B)),
           right: e.value.to(S("right", B))

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => k
+  ZP: () => j
 }), n(47120);
 var r = n(592125),
   i = n(650774),
@@ -112,8 +112,8 @@ class T extends a.Z {
       CONNECTION_OPEN_SUPPLEMENTAL: A,
       GUILD_DELETE: L,
       LOGIN_SUCCESS: x,
-      THREAD_DELETE: D,
-      THREAD_UPDATE: w
+      THREAD_DELETE: w,
+      THREAD_UPDATE: D
     })
   }
 }
@@ -142,11 +142,11 @@ function P(e) {
   T.deleteChannel(e.channel.id)
 }
 
-function w(e) {
+function D(e) {
   C(e.channel)
 }
 
-function D(e) {
+function w(e) {
   T.deleteChannel(e.channel.id)
 }
 
@@ -162,4 +162,4 @@ function M(e) {
   I = !0
 }
 _(T, "displayName", "SaveableChannelsStore"), _(T, "LATEST_SNAPSHOT_VERSION", 1);
-let k = new T
+let j = new T

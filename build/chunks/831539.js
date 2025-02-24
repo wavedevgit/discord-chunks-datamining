@@ -1,16 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
 n(771008);
-var r = n(327192),
-  i = n(141603),
-  o = n(875604),
-  a = n(194085),
+var e = n(174525),
+  o = n(141603),
+  i = n(875604),
+  u = n(194085),
   s = Array.prototype,
-  l = {
+  c = {
     DOMTokenList: !0,
     NodeList: !0
   };
-e.exports = function(e) {
-  var t = e.entries;
-  return e === s || o(s, e) && t === s.entries || i(l, r(e)) ? a : t
+t.exports = function(t) {
+  var r = t.entries;
+  return t === s || i(s, t) && r === s.entries || o(c, e(t)) ? u : r
 }

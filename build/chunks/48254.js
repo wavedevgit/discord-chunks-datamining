@@ -1,16 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  C: () => o
+r.d(t, {
+  C: () => a
 });
-var r = n(192379),
-  i = n(723184);
-let o = function(e) {
+var n = r(192379),
+  o = r(723184);
+let a = function(e) {
   var t = e.onClick,
-    n = e.label,
-    o = e.children,
-    a = e.active,
-    s = (0, i.default)({
+    r = e.label,
+    a = e.children,
+    i = e.active,
+    l = (0, o.default)({
       default: {
         button: {
           backgroundImage: "linear-gradient(-180deg, #FFFFFF 0%, #E6E6E6 100%)",
@@ -32,10 +32,10 @@ let o = function(e) {
         }
       }
     }, {
-      active: a
+      active: i
     });
-  return r.createElement("div", {
-    style: s.button,
+  return n.createElement("div", {
+    style: l.button,
     onClick: t
-  }, n || o)
+  }, r || a)
 }

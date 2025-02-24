@@ -1,13 +1,13 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(67867),
-  i = n(447631),
-  o = n(349446).f;
-r({
+var e = n(766362),
+  o = n(447631),
+  i = n(349446).f;
+e({
   target: "Object",
   stat: !0,
-  forced: Object.defineProperty !== o,
-  sham: !i
+  forced: Object.defineProperty !== i,
+  sham: !o
 }, {
-  defineProperty: o
+  defineProperty: i
 })

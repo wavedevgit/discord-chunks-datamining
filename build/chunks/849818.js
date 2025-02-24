@@ -1,14 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => o
+r.d(t, {
+  Z: () => a
 });
-var r = n(192379),
-  i = n(723184);
-let o = function(e) {
+var n = r(192379),
+  o = r(723184);
+let a = function(e) {
   var t = e.rgb,
-    n = e.currentColor,
-    o = (0, i.default)({
+    r = e.currentColor,
+    a = (0, o.default)({
       default: {
         swatches: {
           border: "1px solid #B3B3B3",
@@ -23,7 +23,7 @@ let o = function(e) {
         },
         current: {
           height: "34px",
-          background: n,
+          background: r,
           boxShadow: "inset 1px 0 0 #000, inset -1px 0 0 #000, inset 0 -1px 0 #000"
         },
         label: {
@@ -33,15 +33,15 @@ let o = function(e) {
         }
       }
     });
-  return r.createElement("div", null, r.createElement("div", {
-    style: o.label
-  }, "new"), r.createElement("div", {
-    style: o.swatches
-  }, r.createElement("div", {
-    style: o.new
-  }), r.createElement("div", {
-    style: o.current
-  })), r.createElement("div", {
-    style: o.label
+  return n.createElement("div", null, n.createElement("div", {
+    style: a.label
+  }, "new"), n.createElement("div", {
+    style: a.swatches
+  }, n.createElement("div", {
+    style: a.new
+  }), n.createElement("div", {
+    style: a.current
+  })), n.createElement("div", {
+    style: a.label
   }, "current"))
 }

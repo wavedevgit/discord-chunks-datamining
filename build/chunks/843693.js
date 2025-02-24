@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => k,
-  wU: () => D
+  ZP: () => j,
+  wU: () => w
 }), n(47120);
 var r, i = n(442837),
   o = n(759174),
@@ -157,7 +157,7 @@ function P(e) {
   C(n)
 }
 
-function w(e) {
+function D(e) {
   let {
     comboMessage: t
   } = e;
@@ -165,7 +165,7 @@ function w(e) {
   R(t)
 }
 
-function D(e, t, n, r) {
+function w(e, t, n, r) {
   return !(e !== t || null == n || r.has(n)) && (r.add(n), !0)
 }
 
@@ -181,7 +181,7 @@ function L(e) {
   } = e;
   if (!d.Z.isEnabled()) return !1;
   let s = l.default.getId();
-  if (!D(null == o ? void 0 : o.id, s, a, S)) return !1;
+  if (!w(null == o ? void 0 : o.id, s, a, S)) return !1;
   let c = I.get(A({
     userId: null !== (t = null == o ? void 0 : o.id) && void 0 !== t ? t : "???",
     channelId: r
@@ -233,7 +233,7 @@ class x extends(r = i.ZP.Store) {
 h(x, "displayName", "PoggermodeStore");
 let M = new x(s.Z, {
     POGGERMODE_UPDATE_COMBO: P,
-    POGGERMODE_UPDATE_MESSAGE_COMBO: w,
+    POGGERMODE_UPDATE_MESSAGE_COMBO: D,
     MESSAGE_CREATE: L
   }),
-  k = M
+  j = M

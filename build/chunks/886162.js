@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,20 +13,20 @@ var r = n(200651),
   d = n(23434),
   p = n(981631),
   h = n(388032),
-  g = n(670430);
+  f = n(670430);
 
-function f(e) {
+function g(e) {
   let {
     transitionState: t
-  } = e, f = (0, o.e7)([d.Z], () => d.Z.getAction()), [m, b] = i.useState(!1), _ = (0, u.Dt)();
+  } = e, g = (0, o.e7)([d.Z], () => d.Z.getAction()), [m, b] = i.useState(!1), _ = (0, u.Dt)();
   async function E() {
-    return b(!0), f === p.c2C.AGREEMENTS && b(await (0, s.Lr)()), null
+    return b(!0), g === p.c2C.AGREEMENTS && b(await (0, s.Lr)()), null
   }
   return (0, c.Z)({
     type: l.ImpressionTypes.VIEW,
     name: l.ImpressionNames.USER_AGREEMENTS,
     properties: {
-      required_action: f
+      required_action: g
     }
   }, {}, []), (0, r.jsxs)(a.Y0X, {
     "aria-labelledby": _,
@@ -42,11 +42,11 @@ function f(e) {
     }), (0, r.jsxs)(a.hzk, {
       children: [(0, r.jsx)(a.Text, {
         variant: "text-md/normal",
-        children: f === p.c2C.AGREEMENTS ? h.NW.format(h.t.zHolhY, {}) : null
+        children: g === p.c2C.AGREEMENTS ? h.NW.format(h.t.zHolhY, {}) : null
       }), (0, r.jsxs)("div", {
-        className: g.container,
+        className: f.container,
         children: [(0, r.jsxs)("ul", {
-          className: g.links,
+          className: f.links,
           children: [(0, r.jsx)("li", {
             children: h.NW.format(h.t.iw0hFh, {
               url: p.EYA.TERMS
@@ -65,13 +65,13 @@ function f(e) {
             })
           })]
         }), (0, r.jsx)("img", {
-          className: g.image,
+          className: f.image,
           alt: "",
           src: n(146714)
         })]
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
-        className: g.agreementDescription,
+        className: f.agreementDescription,
         children: h.NW.string(h.t["+USXQE"])
       })]
     }), (0, r.jsx)(a.mzw, {

@@ -38,7 +38,7 @@ let m = function(e) {
     let e = c.ZP.getIntervalForInvoice(O);
     t = e.intervalType, n = e.intervalCount, m = (0, u.og)((0, u.T4)(O.total, O.currency), t, n), g = (0, u.og)((0, u.T4)(O.subtotal, O.currency), t, n)
   } else null != E && (t = E.interval, n = E.intervalCount);
-  let w = (0, o.K)({
+  let D = (0, o.K)({
       purchaseType: T || f.GZQ.SUBSCRIPTION,
       plan: E,
       premiumSubscription: null == C ? null : C,
@@ -46,12 +46,12 @@ let m = function(e) {
       planGroup: P,
       isPrepaidPaymentSource: !1
     }),
-    D = _.NW.format(_.t.Y2Rkqa, {
-      primaryText: w,
+    w = _.NW.format(_.t.Y2Rkqa, {
+      primaryText: D,
       paidURL: f.EYA.PAID_TERMS
     }),
     L = _.NW.format(_.t.H2uH5e, {
-      primaryText: w,
+      primaryText: D,
       paidURL: f.EYA.PAID_TERMS
     }),
     x = "",
@@ -70,27 +70,27 @@ let m = function(e) {
         x = _.NW.format(_.t.y9gsX1, {});
         break;
       case void 0:
-        M = D, x = _.NW.format(_.t.UxGFHx, {});
+        M = w, x = _.NW.format(_.t.UxGFHx, {});
         break;
       default:
         throw Error("Unexpected interval: ".concat(t))
     }
   } else if (T === f.GZQ.ONE_TIME) switch (N) {
     case f.POd.COLLECTIBLES:
-      M = D, x = v ? _.NW.format(_.t.ofqyUl, {
+      M = w, x = v ? _.NW.format(_.t.ofqyUl, {
         paidURL: f.EYA.PAID_TERMS
       }) : _.NW.format(_.t.G3l0s7, {
         paidURL: f.EYA.PAID_TERMS
       });
       break;
     case f.POd.GUILD_PRODUCT:
-      M = D, x = _.NW.format(_.t["GEAQ+v"], {
+      M = w, x = _.NW.format(_.t["GEAQ+v"], {
         paidURL: f.EYA.PAID_TERMS
       });
       break;
     default:
       M = L, x = _.NW.string(_.t["9/siSU"])
-  } else if (null == E || v) switch (v && (M = D), t) {
+  } else if (null == E || v) switch (v && (M = w), t) {
     case p.rV.MONTH:
       x = v ? _.NW.string(_.t.IjNapq) : _.NW.string(_.t["/sGXPj"]), x = v ? _.NW.string(_.t.IjNapq) : 1 === n ? _.NW.string(_.t["/sGXPj"]) : _.NW.formatToPlainString(_.t.Fqjiho, {
         intervalCount: n

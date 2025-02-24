@@ -1,22 +1,21 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => l
+r.d(t, {
+  Z: () => s
 });
-var r = n(192379),
-  i = n(723184),
-  o = n(820611),
-  a = n(877837),
-  s = n(197499);
-let l = function(e) {
+var n = r(192379),
+  o = r(723184),
+  a = r(820611),
+  i = r(877837),
+  l = r(197499);
+let s = function(e) {
   var t = e.color,
-    n = e.onClick,
-    l = void 0 === n ? function() {} : n,
-    c = e.onSwatchHover,
+    r = e.onClick,
+    s = e.onSwatchHover,
     u = e.first,
-    d = e.last,
-    f = e.active,
-    p = (0, i.default)({
+    c = e.last,
+    p = e.active,
+    f = (0, o.default)({
       default: {
         color: {
           width: "40px",
@@ -26,7 +25,7 @@ let l = function(e) {
           marginBottom: "1px"
         },
         check: {
-          color: o.Qg(t),
+          color: a.Qg(t),
           marginLeft: "8px",
           display: "none"
         }
@@ -63,20 +62,20 @@ let l = function(e) {
       }
     }, {
       first: u,
-      last: d,
-      active: f,
+      last: c,
+      active: p,
       "color-#FFFFFF": "#FFFFFF" === t,
       transparent: "transparent" === t
     });
-  return r.createElement(a.m4, {
+  return n.createElement(i.m4, {
     color: t,
-    style: p.color,
-    onClick: l,
-    onHover: c,
+    style: f.color,
+    onClick: void 0 === r ? function() {} : r,
+    onHover: s,
     focusStyle: {
       boxShadow: "0 0 4px " + t
     }
-  }, r.createElement("div", {
-    style: p.check
-  }, r.createElement(s.default, null)))
+  }, n.createElement("div", {
+    style: f.check
+  }, n.createElement(l.default, null)))
 }

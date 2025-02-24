@@ -150,20 +150,20 @@ function c(e) {
     contains: ["self"].concat(R)
   });
   let P = [].concat(C, S.contains),
-    w = P.concat([{
+    D = P.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
       keywords: E,
       contains: ["self"].concat(P)
     }]),
-    D = {
+    w = {
       className: "params",
       begin: /(\s*)\(/,
       end: /\)/,
       excludeBegin: !0,
       excludeEnd: !0,
       keywords: E,
-      contains: w
+      contains: D
     },
     L = {
       variants: [{
@@ -196,7 +196,7 @@ function c(e) {
       relevance: 10,
       begin: /^\s*['"]use (strict|asm)['"]/
     },
-    k = {
+    j = {
       variants: [{
         match: [/function/, /\s+/, d, /(?=\s*\()/]
       }, {
@@ -207,10 +207,10 @@ function c(e) {
         3: "title.function"
       },
       label: "func.def",
-      contains: [D],
+      contains: [w],
       illegal: /%/
     },
-    j = {
+    k = {
       relevance: 0,
       match: /\b[A-Z][A-Z_0-9]+\b/,
       className: "variable.constant"
@@ -232,7 +232,7 @@ function c(e) {
       className: "property",
       relevance: 0
     },
-    Z = {
+    F = {
       match: [/get|set/, /\s+/, d, /(?=\()/],
       className: {
         1: "keyword",
@@ -240,24 +240,24 @@ function c(e) {
       },
       contains: [{
         begin: /\(\)/
-      }, D]
+      }, w]
     },
-    F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
-    V = {
-      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(F)],
+    V = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
+    Z = {
+      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(V)],
       keywords: "async",
       className: {
         1: "keyword",
         3: "title.function"
       },
-      contains: [D]
+      contains: [w]
     };
   return {
     name: "JavaScript",
     aliases: ["js", "jsx", "mjs", "cjs"],
     keywords: E,
     exports: {
-      PARAMS_CONTAINS: w,
+      PARAMS_CONTAINS: D,
       CLASS_REFERENCE: x
     },
     illegal: /#(?![$_A-z])/,
@@ -271,13 +271,13 @@ function c(e) {
       scope: "attr",
       match: d + c.lookahead(":"),
       relevance: 0
-    }, V, {
+    }, Z, {
       begin: "(" + e.RE_STARTERS_RE + "|\\b(case|return|throw)\\b)\\s*",
       keywords: "return throw case",
       relevance: 0,
       contains: [C, e.REGEXP_MODE, {
         className: "function",
-        begin: F,
+        begin: V,
         returnBegin: !0,
         end: "\\s*=>",
         contains: [{
@@ -295,7 +295,7 @@ function c(e) {
             excludeBegin: !0,
             excludeEnd: !0,
             keywords: E,
-            contains: w
+            contains: D
           }]
         }]
       }, {
@@ -323,13 +323,13 @@ function c(e) {
           contains: ["self"]
         }]
       }]
-    }, k, {
+    }, j, {
       beginKeywords: "while if switch catch for"
     }, {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
       returnBegin: !0,
       label: "func.def",
-      contains: [D, e.inherit(e.TITLE_MODE, {
+      contains: [w, e.inherit(e.TITLE_MODE, {
         begin: d,
         className: "title.function"
       })]
@@ -344,8 +344,8 @@ function c(e) {
       className: {
         1: "title.function"
       },
-      contains: [D]
-    }, G, j, L, Z, {
+      contains: [w]
+    }, G, k, L, F, {
       match: /\$[(.]/
     }]
   }

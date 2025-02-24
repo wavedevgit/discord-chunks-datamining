@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -26,17 +26,17 @@ function h(e) {
   })
 }
 
-function g(e) {
+function f(e) {
   let {
     loadId: t
-  } = e, n = a.Z.useField("categoryId"), g = (0, c.q)(), f = (0, s.E)({
+  } = e, n = a.Z.useField("categoryId"), f = (0, c.q)(), g = (0, s.E)({
     categoryId: n
   }), m = i.useCallback(e => {
     (0, u.I)({
       loadId: t,
       categoryId: Number(e)
     })
-  }, [t]), b = i.useMemo(() => null == g ? [] : g.map(e => {
+  }, [t]), b = i.useMemo(() => null == f ? [] : f.map(e => {
     let [t, n] = e;
     return {
       id: "".concat(t),
@@ -45,8 +45,8 @@ function g(e) {
         count: n
       })
     }
-  }), [g]);
-  return null == g ? null : (0, r.jsxs)("div", {
+  }), [f]);
+  return null == f ? null : (0, r.jsxs)("div", {
     className: p.container,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
@@ -54,7 +54,7 @@ function g(e) {
       children: d.NW.string(d.t.f09BQE)
     }), (0, r.jsx)(o.ZP, {
       items: b,
-      title: f,
+      title: g,
       onSelect: m,
       selected: "".concat(n),
       "aria-label": d.NW.string(d.t.Ng5cTE),

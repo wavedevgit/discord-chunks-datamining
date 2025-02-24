@@ -77,7 +77,7 @@ function O(e) {
       document.removeEventListener("keydown", e)
     }
   }, [I, T]);
-  let w = async e => {
+  let D = async e => {
     if (null == e) return;
     p === h.n_.AVATAR ? S({
       action: "SEND_REACT_AVATAR"
@@ -110,7 +110,7 @@ function O(e) {
     guildId: null != n ? n : void 0,
     closePopout: E.dG,
     onSelectEmoji: async (e, t) => {
-      await w(e), t && (T(), null == I || I())
+      await D(e), t && (T(), null == I || I())
     },
     pickerIntention: m.Hz.PROFILE
   })

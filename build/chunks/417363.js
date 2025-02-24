@@ -65,13 +65,13 @@ let I = 200,
   C = "content",
   R = "file://",
   P = !1,
-  w = 0,
   D = 0,
+  w = 0,
   L = 0,
   x = [],
   M = [],
-  k = [],
-  j = !1;
+  j = [],
+  k = !1;
 
 function U() {
   P = !1
@@ -192,15 +192,15 @@ function B(e) {
   throw Error("Invalid Dispatch State. state=".concat(e.state.type))
 }
 
-function Z(e) {
+function F(e) {
   return e.type === v.vxO.INSTALLING || e.type === v.vxO.UPDATING || e.type === v.vxO.REPAIRING ? e.networkProgress : null
 }
 
-function F(e) {
+function V(e) {
   return e.type === v.vxO.INSTALLING || e.type === v.vxO.UPDATING || e.type === v.vxO.REPAIRING ? e.diskProgress : null
 }
 
-function V(e) {
+function Z(e) {
   return e.type === v.vxO.INSTALLING || e.type === v.vxO.UPDATING || e.type === v.vxO.REPAIRING ? e.readerProgress : null
 }
 
@@ -226,10 +226,10 @@ function W(e) {
 }
 
 function Y(e) {
-  k = (k = [{
+  j = (j = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...k]).slice(0, T)
+  }, ...j]).slice(0, T)
 }
 let K = o().throttle(H, I),
   z = o().throttle(W, I),
@@ -254,11 +254,11 @@ function X(e) {
     for (let t in r[e]) {
       let a = (0, _.Tu)(e, t);
       if (n[a] = B(r[e][t]), null != A[a]) {
-        let e = Q(n, a, Z);
-        e > 0 && K(w += e);
-        let r = Q(n, a, F);
-        r > 0 && q(D += r);
-        let s = Q(n, a, V);
+        let e = Q(n, a, F);
+        e > 0 && K(D += e);
+        let r = Q(n, a, V);
+        r > 0 && q(w += r);
+        let s = Q(n, a, Z);
         if (s > 0 && z(L += s), i === t) {
           let e = n[a];
           if (!0 !== e.paused && (e.type === v.vxO.UNINSTALLING || e.type === v.vxO.INSTALLING || e.type === v.vxO.UPDATING)) switch (e.stage) {
@@ -271,7 +271,7 @@ function X(e) {
           }
         }
       }
-      if (!j) {
+      if (!k) {
         let r = l.Z.fileManager.dirname(n[a].installPath);
         E.Z.getInstallationPath(e, t) !== r && s.Z.wait(() => {
           s.Z.dispatch({
@@ -290,7 +290,7 @@ function X(e) {
         })
       }
     }
-  o || "dispatch_application_progress" !== c.Z.taskID || c.Z.clearProgress("dispatch_application_progress"), A = n, j = !0
+  o || "dispatch_application_progress" !== c.Z.taskID || c.Z.clearProgress("dispatch_application_progress"), A = n, k = !0
 }
 class J extends(r = a.ZP.Store) {
   initialize() {
@@ -341,7 +341,7 @@ class J extends(r = a.ZP.Store) {
     return M
   }
   getHistoricalTotalBytesWritten() {
-    return k
+    return j
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {

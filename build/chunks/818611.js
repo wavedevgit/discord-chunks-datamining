@@ -82,7 +82,7 @@ let N = 3,
   C = 12,
   R = 16,
   P = () => A,
-  w = e => {
+  D = e => {
     var {
       children: t,
       className: n,
@@ -96,7 +96,7 @@ let N = 3,
       children: t
     }))
   },
-  D = e => {
+  w = e => {
     var {
       user: t,
       avatarDecoration: n,
@@ -121,7 +121,7 @@ let N = 3,
         size: A,
         onlyAnimateOnHover: !R
       }),
-      D = () => a === m.$0.PURCHASE || a === m.$0.PREMIUM_PURCHASE && T ? null : O ? (0, r.jsx)(u.lBU, {
+      w = () => a === m.$0.PURCHASE || a === m.$0.PREMIUM_PURCHASE && T ? null : O ? (0, r.jsx)(u.lBU, {
         className: v.newBadge,
         text: (0, r.jsxs)("div", {
           className: v.newBadgeText,
@@ -143,7 +143,7 @@ let N = 3,
         color: l.Z.BACKGROUND_ACCENT,
         className: v.iconBadge
       });
-    return (0, r.jsxs)(w, S(y({
+    return (0, r.jsxs)(D, S(y({
       className: N ? v.decorationGridItemChurned : void 0,
       innerRef: null != o ? o : C,
       isSelected: s
@@ -152,7 +152,7 @@ let N = 3,
         className: v.presetDecorationImg,
         src: P,
         alt: n.label
-      }), D()]
+      }), w()]
     }))
   },
   L = e => {
@@ -170,7 +170,7 @@ let N = 3,
         section: _,
         items: g
       } = d[e];
-      return (0, s.EQ)(g[i]).with(m.Tm, () => (0, r.jsxs)(w, {
+      return (0, s.EQ)(g[i]).with(m.Tm, () => (0, r.jsxs)(D, {
         style: y({}, c),
         isSelected: null === o,
         onSelect: () => l(null),
@@ -183,7 +183,7 @@ let N = 3,
           color: "header-primary",
           children: (0, h.ad)(t, n) ? E.NW.string(E.t["GsW4/v"]) : E.NW.string(E.t.PoWNfX)
         })]
-      }, p)).with(m.oT, () => (0, r.jsxs)(w, {
+      }, p)).with(m.oT, () => (0, r.jsxs)(D, {
         style: c,
         onSelect: f,
         children: [(0, r.jsx)(u.EOn, {
@@ -199,7 +199,7 @@ let N = 3,
         })]
       }, p)).otherwise(e => {
         let n = (null == o ? void 0 : o.id) === e.id;
-        return (0, r.jsx)(D, {
+        return (0, r.jsx)(w, {
           style: y({}, c),
           user: t,
           avatarDecoration: e,

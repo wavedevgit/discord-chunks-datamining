@@ -75,22 +75,22 @@ function R(e) {
     animateOnHover: N,
     onOpenProfile: R,
     className: P,
-    previewStatus: w
+    previewStatus: D
   } = e, {
-    theme: D
+    theme: w
   } = (0, v.z)(), {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: x
-  } = (0, m.KZ)(), M = _.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, O.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
-    live: j
-  } = (0, g.Z)(t.id), [U] = j, {
+  } = (0, m.KZ)(), M = _.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, O.p9.TIER_2), j = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
+    live: k
+  } = (0, g.Z)(t.id), [U] = k, {
     status: G,
     isMobileOnline: B
   } = (0, s.cj)([p.Z], () => ({
     status: (0, c.Z)(U) ? y.Skl.STREAMING : p.Z.getStatus(t.id),
     isMobileOnline: p.Z.isMobileOnline(t.id)
-  })), Z = void 0 !== w ? w : G, F = I === b.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, V = a()(S.avatar, {
+  })), F = void 0 !== D ? D : G, V = I === b.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(S.avatar, {
     [S.biteSize]: I === b.y0.BITE_SIZE,
     [S.fullSize]: I === b.y0.FULL_SIZE,
     [S.panel]: I === b.y0.PANEL
@@ -101,25 +101,25 @@ function R(e) {
   } = (0, E.Z)({
     user: t,
     guildId: null != n ? n.guildId : o,
-    size: F,
+    size: V,
     animateOnHover: N
   }), K = (0, r.jsx)(C, {
     src: W,
     avatarDecoration: H,
-    size: F,
+    size: V,
     "aria-label": t.username,
     imageClassName: null != R ? S.overlay : void 0,
-    status: k ? y.Skl.UNKNOWN : Z,
-    statusBackdropColor: M && !k ? (0, l.QFD)(D) : void 0,
+    status: j ? y.Skl.UNKNOWN : F,
+    statusBackdropColor: M && !j ? (0, l.QFD)(w) : void 0,
     isMobile: B,
     statusTooltip: !0,
     statusTooltipDelay: b.vB
   });
   return null == R ? (0, r.jsx)("div", A(T({}, Y), {
-    className: V,
+    className: Z,
     children: K
   })) : (0, r.jsx)(l.P3F, A(T({}, Y), {
-    className: a()(V, S.clickable),
+    className: a()(Z, S.clickable),
     focusProps: {
       ringClassName: S.focusRing
     },

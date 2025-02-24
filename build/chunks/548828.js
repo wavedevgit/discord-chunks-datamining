@@ -1,9 +1,9 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(735471),
-  i = n(858698),
-  o = TypeError;
-e.exports = function(e) {
-  if (r(e)) return e;
-  throw new o(i(e) + " is not a function")
+var e = n(735471),
+  o = n(858698),
+  i = TypeError;
+t.exports = function(t) {
+  if (e(t)) return t;
+  throw new i(o(t) + " is not a function")
 }

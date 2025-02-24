@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 }), n(47120);
 var r = n(512722),
   i = n.n(r),
@@ -55,7 +55,7 @@ function P(e) {
     return n && i && r
   })
 }
-class w extends l.Z {
+class D extends l.Z {
   constructor(...e) {
     super(...e), I(this, "rollbackCommandTimeout", new o.V7), I(this, "awaitRemoteTimeout", new o.V7), I(this, "actions", {
       WAIT_FOR_REMOTE_SESSION: () => this.handleWaitForRemoteSession(),
@@ -148,4 +148,4 @@ class w extends l.Z {
     })
   }
 }
-let D = new w
+let w = new D

@@ -74,22 +74,22 @@ function v(e) {
     onFocus: C,
     className: R,
     focusedClassName: P,
-    subMenuIconClassName: w,
-    dontCloseOnActionIfHoldingShiftKey: D,
+    subMenuIconClassName: D,
+    dontCloseOnActionIfHoldingShiftKey: w,
     dontCloseOnAction: L,
     iconProps: x,
     sparkle: M
   } = e, {
-    onSelect: k,
-    onInteraction: j
+    onSelect: j,
+    onInteraction: k
   } = i.useContext(c.p), U = i.useRef(null), G = i.useCallback(e => {
-    if (null == j || j({
+    if (null == k || k({
         id: T.id,
         rootItemId: T.rootItemId,
         type: c.U.DEFAULT
       }), null == N) return !1;
-    e.shiftKey && D || L || A(), e.persist(), null == k || k(), requestAnimationFrame(() => N(e))
-  }, [N, A, k, D, L, T, j]);
+    e.shiftKey && w || L || A(), e.persist(), null == j || j(), requestAnimationFrame(() => N(e))
+  }, [N, A, j, w, L, T, k]);
   return i.useEffect(() => {
     I && ((0, u.F)(U), null == C || C())
   }, [I, C]), (0, r.jsxs)(s.P, E(m({
@@ -139,7 +139,7 @@ function v(e) {
       children: [(0, r.jsx)(f.Fbu, {
         size: "md",
         color: "currentColor",
-        className: a()(_.caret, w)
+        className: a()(_.caret, D)
       }), M && (0, r.jsx)(f.K1N, {
         className: _.sparkles
       })]

@@ -1,16 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => s
+r.d(t, {
+  Z: () => l
 });
-var r = n(816569),
-  i = "object" == typeof exports && exports && !exports.nodeType && exports,
-  o = i && "object" == typeof module && module && !module.nodeType && module,
-  a = o && o.exports === i && r.Z.process;
-let s = function() {
+var n = r(816569),
+  o = "object" == typeof exports && exports && !exports.nodeType && exports,
+  a = o && "object" == typeof module && module && !module.nodeType && module,
+  i = a && a.exports === o && n.Z.process;
+let l = function() {
   try {
-    var e = o && o.require && o.require("util").types;
+    var e = a && a.require && a.require("util").types;
     if (e) return e;
-    return a && a.binding && a.binding("util")
+    return i && i.binding && i.binding("util")
   } catch (e) {}
 }()

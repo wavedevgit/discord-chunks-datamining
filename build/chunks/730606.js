@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Qk: () => w,
+  Qk: () => D,
   WG: () => x,
   ZP: () => M
 }), n(47120);
@@ -34,7 +34,7 @@ var r = n(200651),
   R = n(609748);
 let P = 300;
 
-function w(e) {
+function D(e) {
   let {
     src: t,
     width: n,
@@ -60,7 +60,7 @@ function w(e) {
   })
 }
 
-function D(e, t) {
+function w(e, t) {
   return (e % t + t) % t
 }
 
@@ -98,7 +98,7 @@ function x(e, t) {
       (0, p.po)(e.url);
       return
     }
-    w({
+    D({
       src: (0, g.q)({
         proxyURL: e.proxyUrl,
         url: e.url
@@ -122,7 +122,7 @@ function M(e) {
     zoomed: m,
     setZoomed: g
   } = (0, y.Y)(), v = i.useCallback(e => {
-    _(e = D(e, t.length)), h.current = e, null == n || n(e), g(!1)
+    _(e = w(e, t.length)), h.current = e, null == n || n(e), g(!1)
   }, [n, t, g]);
   i.useEffect(() => {
     let e = l()(() => {
@@ -135,18 +135,18 @@ function M(e) {
       E.S.unsubscribe(A.CkL.MODAL_CAROUSEL_NEXT, e), E.S.unsubscribe(A.CkL.MODAL_CAROUSEL_PREV, t)
     }
   }, [v, g]);
-  let w = t[p],
+  let D = t[p],
     x = (0, f.KP)({
       type: f.lJ.GenericMedia,
-      media: w
+      media: D
     }, s),
     M = d ? e => {
       e.stopPropagation(), e.preventDefault()
     } : () => (0, b.yg)(b.uG.CONTEXT_MENU_OPENED),
-    k = t.length > 1;
+    j = t.length > 1;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(S.ZP, {
-      children: e => k ? (0, r.jsxs)(r.Fragment, {
+      children: e => j ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(T.Z, {
           onClick: e => {
             e.stopPropagation(), E.S.dispatch(A.CkL.MODAL_CAROUSEL_PREV)
@@ -168,16 +168,16 @@ function M(e) {
       currentIndex: p,
       children: (e, t) => (0, r.jsx)(L, {
         isObscured: !m && x,
-        src: w.url,
+        src: D.url,
         children: n => (0, r.jsx)(N.Z, {
-          media: w,
+          media: D,
           maxWidth: e,
           maxHeight: t,
           obscured: n,
           onContextMenu: M
         })
       })
-    }), k && (0, r.jsx)(S.ZP, {
+    }), j && (0, r.jsx)(S.ZP, {
       children: e => (0, r.jsx)(I.Z, {
         items: t,
         currentIndex: p,

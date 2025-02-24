@@ -1,19 +1,19 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  U: () => o
+r.d(t, {
+  U: () => a
 });
-var r = {},
-  i = function(e, t, n, r) {
-    if ("undefined" == typeof document && !r) return null;
-    var i = r ? new r : document.createElement("canvas");
-    i.width = 2 * n, i.height = 2 * n;
-    var o = i.getContext("2d");
-    return o ? (o.fillStyle = e, o.fillRect(0, 0, i.width, i.height), o.fillStyle = t, o.fillRect(0, 0, n, n), o.translate(n, n), o.fillRect(0, 0, n, n), i.toDataURL()) : null
+var n = {},
+  o = function(e, t, r, n) {
+    if ("undefined" == typeof document && !n) return null;
+    var o = n ? new n : document.createElement("canvas");
+    o.width = 2 * r, o.height = 2 * r;
+    var a = o.getContext("2d");
+    return a ? (a.fillStyle = e, a.fillRect(0, 0, o.width, o.height), a.fillStyle = t, a.fillRect(0, 0, r, r), a.translate(r, r), a.fillRect(0, 0, r, r), o.toDataURL()) : null
   },
-  o = function(e, t, n, o) {
-    var a = e + "-" + t + "-" + n + (o ? "-server" : "");
-    if (r[a]) return r[a];
-    var s = i(e, t, n, o);
-    return r[a] = s, s
+  a = function(e, t, r, a) {
+    var i = e + "-" + t + "-" + r + (a ? "-server" : "");
+    if (n[i]) return n[i];
+    var l = o(e, t, r, a);
+    return n[i] = l, l
   }

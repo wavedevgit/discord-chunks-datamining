@@ -2,26 +2,26 @@
 "use strict";
 n.d(t, {
   $0: () => P,
-  AN: () => j,
+  AN: () => k,
   Ct: () => A,
-  EQ: () => Z,
+  EQ: () => F,
   Ej: () => I,
   ME: () => m,
   O1: () => O,
-  O8: () => D,
+  O8: () => w,
   Pl: () => S,
   Ry: () => N,
   Uw: () => x,
-  ZE: () => k,
+  ZE: () => j,
   _G: () => y,
   _O: () => T,
   _y: () => g,
   do: () => U,
-  g7: () => w,
+  g7: () => D,
   g_: () => _,
   hs: () => v,
   j4: () => R,
-  ks: () => V,
+  ks: () => Z,
   lX: () => b,
   m_: () => h,
   qH: () => L,
@@ -50,7 +50,7 @@ function f(e, t) {
   try {
     let n = d[t.premiumType];
     if (null == n) return u.warn("Cannot find the corresponding SKU to the user's premium type ".concat(t.premiumType)), !1;
-    let r = F[n];
+    let r = V[n];
     if (null == r) return u.warn("Cannot find the corresponding product catalog entry to the user's SKU ".concat(n, " and premium type ").concat(t.premiumType)), !1;
     return r.skuFeatures.includes(e)
   } catch (e) {
@@ -81,24 +81,24 @@ let _ = new p(r.q.ANIMATED_EMOJIS),
   C = new p(r.q.CLIENT_THEMES),
   R = new p("boostDiscount"),
   P = new p("freeBoosts"),
-  w = new p(r.q.STREAM_MID_QUALITY),
-  D = new p(r.q.STREAM_HIGH_QUALITY),
+  D = new p(r.q.STREAM_MID_QUALITY),
+  w = new p(r.q.STREAM_HIGH_QUALITY),
   L = new p(r.q.CUSTOM_NOTIFICATION_SOUNDS),
   x = new p("fancyVoiceChannelReactions"),
   M = new p("installPremiumApplications"),
-  k = new p("redeemPremiumPerks"),
-  j = new p(r.q.VIDEO_FILTER_ASSETS);
+  j = new p("redeemPremiumPerks"),
+  k = new p(r.q.VIDEO_FILTER_ASSETS);
 new a.Z(r.q.INCREASED_FILE_UPLOAD_SIZE, o.h);
 let U = new p(r.q.INCREASED_GUILD_LIMIT),
   G = new p(r.q.INCREASED_MESSAGE_LENGTH),
   B = new p("increasedVideoUploadQuality"),
-  Z = new p("uploadLargeFiles"),
-  F = Object.freeze({
-    [c.Si.TIER_0]: new l.Z(c.Si.TIER_0, [_, h, m, S, j, B, Z, A]),
-    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [_, h, b, y, S, R, w, x, B, Z, A]),
-    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [_, h, m, g, E, b, y, O, S, I, C, R, P, w, D, x, M, k, j, U, G, B, Z, A, T, L, v, N])
+  F = new p("uploadLargeFiles"),
+  V = Object.freeze({
+    [c.Si.TIER_0]: new l.Z(c.Si.TIER_0, [_, h, m, S, k, B, F, A]),
+    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [_, h, b, y, S, R, D, x, B, F, A]),
+    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [_, h, m, g, E, b, y, O, S, I, C, R, P, D, w, x, M, j, k, U, G, B, F, A, T, L, v, N])
   });
 
-function V(e, t) {
+function Z(e, t) {
   return !(0, s.U)("canUserUse", t) && e.getFeatureValue(t)
 }

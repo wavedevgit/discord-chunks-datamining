@@ -1,28 +1,28 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r = n(67867),
-  i = n(414629),
-  o = n(197859),
-  a = n(821819),
+var r = n(766362),
+  o = n(414629),
+  a = n(197859),
+  i = n(821819),
   s = n(294377),
-  l = n(735471),
-  c = n(992416),
+  c = n(735471),
+  l = n(992416),
   u = n(607672),
   d = n(691244),
-  f = o && o.prototype;
+  p = a && a.prototype;
 if (r({
     target: "Promise",
     proto: !0,
     real: !0,
-    forced: !!o && a(function() {
-      f.finally.call({
+    forced: !!a && i(function() {
+      p.finally.call({
         then: function() {}
       }, function() {})
     })
   }, {
     finally: function(e) {
-      var t = c(this, s("Promise")),
-        n = l(e);
+      var t = l(this, s("Promise")),
+        n = c(e);
       return this.then(n ? function(n) {
         return u(t, e()).then(function() {
           return n
@@ -33,9 +33,9 @@ if (r({
         })
       } : e)
     }
-  }), !i && l(o)) {
-  var p = s("Promise").prototype.finally;
-  f.finally !== p && d(f, "finally", p, {
+  }), !o && c(a)) {
+  var h = s("Promise").prototype.finally;
+  p.finally !== h && d(p, "finally", h, {
     unsafe: !0
   })
 }

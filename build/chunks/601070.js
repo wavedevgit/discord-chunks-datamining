@@ -68,15 +68,15 @@ let O = {},
 function P() {
   for (let e in O = {}, N = {}, S = {}, I = {}, T = {}, C = f.Z.getChannelId(), R) clearTimeout(R[e]);
   R = {}, _.Z.forEachGuild(e => {
-    D(e)
+    w(e)
   }), L()
 }
 
-function w(e) {
-  for (let t in delete O[e], delete N[e], delete S[e], delete I[e], delete T[e], D(e), I[e]) M(e, t)
+function D(e) {
+  for (let t in delete O[e], delete N[e], delete S[e], delete I[e], delete T[e], w(e), I[e]) M(e, t)
 }
 
-function D(e) {
+function w(e) {
   let t = _.Z.getThreadsForGuild(e);
   for (let e in t)
     for (let n in t[e]) {
@@ -126,7 +126,7 @@ function M(e, t) {
   for (let n in I[e][t]) t === C ? d.ZP.isNewForumThread(n, t, r) && A[e][t]++ : p.default.compare(n, i) > 0 && !d.ZP.hasOpenedThread(n) && A[e][t]++
 }
 
-function k(e, t, n) {
+function j(e, t, n) {
   if (null == t) return !1;
   let r = c.Z.getChannel(n),
     i = h.Z.joinTimestamp(n);
@@ -150,8 +150,8 @@ function k(e, t, n) {
   } else ee(O, e, t, n), ee(N, e, t, n), ee(S, e, t, n), ee(I, e, t, n), ee(T, e, t, n), J(n), M(e, t)
 }
 
-function j(e) {
-  return k(e.channel.guild_id, e.channel.parent_id, e.channel.id)
+function k(e) {
+  return j(e.channel.guild_id, e.channel.parent_id, e.channel.id)
 }
 
 function U(e) {
@@ -189,14 +189,14 @@ function B(e) {
   return null != t.guild_id && null != t.parent_id && (t.guild_id in O && t.parent_id in O[t.guild_id] && (delete O[t.guild_id][t.parent_id], n = !0), t.guild_id in S && t.parent_id in S[t.guild_id] && (delete S[t.guild_id][t.parent_id], n = !0), t.guild_id in N && t.parent_id in N[t.guild_id] && (p.default.keys(N[t.guild_id][t.parent_id]).forEach(J), delete N[t.guild_id][t.parent_id], n = !0), t.guild_id in I && t.parent_id in I[t.guild_id] && (delete I[t.guild_id][t.parent_id], n = !0), t.guild_id in T && t.parent_id in T[t.guild_id] && (delete T[t.guild_id][t.parent_id], n = !0), n && M(t.guild_id, t.parent_id)), n
 }
 
-function Z(e) {
+function F(e) {
   let t = c.Z.getChannel(e.id);
-  return !!(null != t && _.Z.isActive(e.guildId, t.parent_id, e.id)) && k(t.guild_id, t.parent_id, t.id)
+  return !!(null != t && _.Z.isActive(e.guildId, t.parent_id, e.id)) && j(t.guild_id, t.parent_id, t.id)
 }
 
-function F(e) {
+function V(e) {
   let t = c.Z.getChannel(e.channelId);
-  if (null == t) V();
+  if (null == t) Z();
   else {
     let {
       guild_id: e,
@@ -230,7 +230,7 @@ function F(e) {
   }
 }
 
-function V() {
+function Z() {
   for (let e in S = {}, N = {}, O)
     for (let t in O[e])
       for (let n in O[e][t]) {
@@ -252,25 +252,25 @@ function V() {
 }
 
 function H(e) {
-  if (e.channels.length > 0) return w(e.guildId)
+  if (e.channels.length > 0) return D(e.guildId)
 }
 
 function W(e) {
   let {
     guild: t
   } = e;
-  return w(t.id)
+  return D(t.id)
 }
 
 function Y(e) {
   let {
     guildId: t
   } = e;
-  return w(t)
+  return D(t)
 }
 
 function K(e) {
-  F(e), z()
+  V(e), z()
 }
 
 function z() {
@@ -419,24 +419,24 @@ let ec = new el(s.Z, {
   GUILD_CREATE: W,
   GUILD_DELETE: P,
   CURRENT_USER_UPDATE: P,
-  THREAD_CREATE: j,
-  THREAD_UPDATE: j,
-  THREAD_DELETE: j,
+  THREAD_CREATE: k,
+  THREAD_UPDATE: k,
+  THREAD_DELETE: k,
   CHANNEL_UPDATES: U,
   CHANNEL_DELETE: B,
-  THREAD_MEMBER_UPDATE: Z,
-  THREAD_MEMBERS_UPDATE: Z,
-  LOAD_MESSAGES_SUCCESS: F,
-  MESSAGE_CREATE: F,
-  MESSAGE_DELETE: F,
-  MESSAGE_DELETE_BULK: F,
-  MESSAGE_ACK: F,
-  CHANNEL_ACK: F,
-  CHANNEL_LOCAL_ACK: F,
+  THREAD_MEMBER_UPDATE: F,
+  THREAD_MEMBERS_UPDATE: F,
+  LOAD_MESSAGES_SUCCESS: V,
+  MESSAGE_CREATE: V,
+  MESSAGE_DELETE: V,
+  MESSAGE_DELETE_BULK: V,
+  MESSAGE_ACK: V,
+  CHANNEL_ACK: V,
+  CHANNEL_LOCAL_ACK: V,
   CHANNEL_SELECT: K,
   PASSIVE_UPDATE_V2: H,
-  WINDOW_FOCUS: V,
-  UPDATE_CHANNEL_DIMENSIONS: V,
-  TRY_ACK: V,
-  BULK_ACK: V
+  WINDOW_FOCUS: Z,
+  UPDATE_CHANNEL_DIMENSIONS: Z,
+  TRY_ACK: Z,
+  BULK_ACK: Z
 })

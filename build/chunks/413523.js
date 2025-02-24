@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Yr: () => R,
-  ZP: () => w,
+  ZP: () => D,
   gN: () => C,
   sI: () => P
 }), n(301563), n(47120), n(653041);
@@ -93,7 +93,7 @@ function R(e) {
 var P = function(e) {
   return e.VIDEO = "VIDEO", e.STREAM = "STREAM", e.FILTERED = "FILTERED", e.SPEAKING = "SPEAKING", e.ACTIVITY = "ACTIVITY", e
 }({});
-class w {
+class D {
   get version() {
     return this.participantByIndex.version
   }

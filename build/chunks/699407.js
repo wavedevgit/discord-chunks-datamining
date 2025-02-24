@@ -158,7 +158,7 @@ let h = 1500,
         null != l && (s.properties.client_uuid = v.generate(l)), y.push(s), y.length > m && (y = y.slice(-m)), r ? R() : C()
       }), !1
     };
-    class w extends(t = l.ZP.Store) {
+    class D extends(t = l.ZP.Store) {
       initialize() {
         null != T && this.waitFor(...T)
       }
@@ -166,5 +166,5 @@ let h = 1500,
         super(...e), d(this, "submitEventsImmediately", P)
       }
     }
-    return d(w, "displayName", "AnalyticsTrackingStore"), new w(n, a)
+    return d(D, "displayName", "AnalyticsTrackingStore"), new D(n, a)
   }

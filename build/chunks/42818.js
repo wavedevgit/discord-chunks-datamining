@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  As: () => k,
-  By: () => j,
+  As: () => j,
+  By: () => k,
   Lu: () => U,
   e9: () => W,
-  hG: () => Z,
+  hG: () => F,
   nd: () => H,
   yT: () => Y
 }), n(411104), n(230036), n(47120);
@@ -68,12 +68,12 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = (e, t) => {
+let w = (e, t) => {
     var n;
     return !!(null === (n = e.discounts) || void 0 === n ? void 0 : n.some(e => e.type === t))
   },
@@ -83,7 +83,7 @@ let D = (e, t) => {
   };
 
 function x(e, t, n, r) {
-  let i = D(e, d.eW.PREMIUM_TRIAL);
+  let i = w(e, d.eW.PREMIUM_TRIAL);
   switch (e.subscriptionPlanId) {
     case I.Xh.PREMIUM_MONTH_LEGACY:
     case I.Xh.PREMIUM_YEAR_LEGACY:
@@ -153,7 +153,7 @@ function M(e) {
       text: N.NW.format(N.t.UDop9f, {}),
       "aria-label": N.NW.string(N.t.P68ePD),
       tooltipClassName: A.invoiceItemTooltip,
-      children: e => (0, r.jsx)(u.idN, w(R({
+      children: e => (0, r.jsx)(u.idN, D(R({
         size: "md",
         color: "currentColor"
       }, e), {
@@ -176,7 +176,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     label: t,
     tooltipText: n,
@@ -189,7 +189,7 @@ function k(e) {
       text: n,
       "aria-label": i,
       tooltipClassName: A.invoiceItemTooltip,
-      children: e => (0, r.jsx)(u.idN, w(R({
+      children: e => (0, r.jsx)(u.idN, D(R({
         size: "md",
         color: "currentColor"
       }, e), {
@@ -199,7 +199,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     invoice: t,
     isPrepaidPaymentSource: n
@@ -234,7 +234,7 @@ function U(e) {
   l()(null != s, "Expected newPlanInvoiceItem");
   let c = a.find(e => !(0, g.Z8)(e.subscriptionPlanId) && e.amount < 0),
     u = a.find(e => null == e.subscriptionPlanId && null != e.discounts && e.discounts.find(e => e.type === d.eW.PREMIUM_LEGACY_UPGRADE_PROMOTION)),
-    f = D(s, d.eW.PREMIUM_TRIAL),
+    f = w(s, d.eW.PREMIUM_TRIAL),
     p = L(s, d.eW.SUBSCRIPTION_PLAN),
     _ = s.quantity * p,
     h = s.amount + (null != c ? c.amount : 0) - _ + (null != u ? u.amount : 0),
@@ -247,7 +247,7 @@ function U(e) {
       isPrepaidPaymentSource: i,
       referralTrialOfferId: o
     }), 0 === h || f ? null : (0, r.jsx)(O.R$, {
-      label: (0, r.jsx)(k, {
+      label: (0, r.jsx)(j, {
         label: N.NW.formatToPlainString(N.t.ZSVgeX, {
           planName: (0, g.PV)(n.id) ? (0, g.aq)(n.id) : n.name
         }),
@@ -255,7 +255,7 @@ function U(e) {
       }),
       value: (0, E.T4)(h, t.currency)
     }), 0 !== m ? (0, r.jsx)(O.R$, {
-      label: (0, r.jsx)(k, {
+      label: (0, r.jsx)(j, {
         label: N.NW.string(N.t["+as5ZW"]),
         tooltipText: N.NW.format(N.t.UDop9f, {}),
         tooltipAriaLabel: N.NW.string(N.t.P68ePD)
@@ -288,7 +288,7 @@ function B(e) {
   })
 }
 
-function Z(e) {
+function F(e) {
   let {
     proratedInvoice: t,
     renewalInvoice: n
@@ -307,7 +307,7 @@ function Z(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     isUpdate: t,
     currentInvoice: n,
@@ -352,7 +352,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function Z(e) {
   var t;
   let {
     proratedInvoice: n,
@@ -415,7 +415,7 @@ function H(e) {
   }, c), [b] = (0, v.ED)(E), [y, S] = i.useState(!1);
   return (0, r.jsxs)(r.Fragment, {
     children: [d ? null : (0, r.jsx)(O.HE, {
-      children: (0, r.jsx)(V, {
+      children: (0, r.jsx)(Z, {
         proratedInvoice: n,
         renewalInvoice: o,
         isTrial: l,
@@ -431,7 +431,7 @@ function H(e) {
           direction: y ? h.Z.Directions.UP : h.Z.Directions.DOWN,
           className: A.subscriptionDetailsToggleCaret
         })]
-      }), y ? (0, r.jsx)(F, {
+      }), y ? (0, r.jsx)(V, {
         isUpdate: s,
         currentInvoice: b,
         newInvoice: o,

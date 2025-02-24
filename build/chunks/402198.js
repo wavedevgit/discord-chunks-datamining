@@ -22,7 +22,7 @@ let {
   id: () => n.e("69380").then(n.t.bind(n, 384312, 19)),
   it: () => n.e("80417").then(n.t.bind(n, 122089, 19)),
   ja: () => n.e("51208").then(n.t.bind(n, 333667, 19)),
-  ko: () => n.e("56713").then(n.t.bind(n, 628470, 19)),
+  ko: () => n.e("56713").then(n.t.bind(n, 67867, 19)),
   lt: () => n.e("84229").then(n.t.bind(n, 198407, 19)),
   nl: () => n.e("53894").then(n.t.bind(n, 353260, 19)),
   no: () => n.e("24456").then(n.t.bind(n, 453637, 19)),

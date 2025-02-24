@@ -31,18 +31,18 @@ var r = n(200651),
   C = n(457040),
   R = n(740492),
   P = n(585483),
-  w = n(5967),
-  D = n(28546),
+  D = n(5967),
+  w = n(28546),
   L = n(957825),
   x = n(981631),
   M = n(921944),
-  k = n(149203),
-  j = n(185923),
+  j = n(149203),
+  k = n(185923),
   U = n(611480),
   G = n(388032),
   B = n(94394);
 
-function Z(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -51,20 +51,20 @@ function Z(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      Z(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
 }
 
-function V(e, t) {
+function Z(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -76,7 +76,7 @@ function V(e, t) {
 }
 
 function H(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -98,7 +98,7 @@ function Y(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let K = L.Om + k.Su.MEDIUM,
+let K = L.Om + j.Su.MEDIUM,
   z = i.memo(function(e) {
     var {
       isActive: t,
@@ -107,7 +107,7 @@ let K = L.Om + k.Su.MEDIUM,
       autoFocus: o = !1,
       "aria-controls": s
     } = e, l = W(e, ["isActive", "className", "viewType", "autoFocus", "aria-controls"]);
-    return (0, r.jsx)(_.zxk, H(F({
+    return (0, r.jsx)(_.zxk, H(V({
       role: "tab",
       autoFocus: o,
       "aria-controls": t ? s : void 0
@@ -116,7 +116,7 @@ let K = L.Om + k.Su.MEDIUM,
         v.ZP.trackWithMetadata(x.rMx.EXPRESSION_PICKER_TAB_CLICKED, {
           tab: i,
           badged: !1
-        }), (0, D.hr)(i)
+        }), (0, w.hr)(i)
       },
       "aria-current": t ? "page" : void 0,
       className: a()(n, B.navButton, B.navItem, {
@@ -176,9 +176,9 @@ function Q(e) {
     positionTargetRef: l,
     hideGifFavorites: h,
     includeCreateEmojiButton: R,
-    onSelectGIF: Z,
-    onSelectEmoji: F,
-    onSelectSticker: V,
+    onSelectGIF: F,
+    onSelectEmoji: V,
+    onSelectSticker: Z,
     onSelectSound: H,
     channel: W,
     type: Y,
@@ -194,7 +194,7 @@ function Q(e) {
     positionContainerRef: et,
     drawerRef: ei,
     orientation: "left" === X ? g.y.HORIZONTAL_RIGHT : g.y.HORIZONTAL_LEFT
-  }), es = (0, D.Iu)(e => e.activeView), el = (0, N.fQ)(W), {
+  }), es = (0, w.Iu)(e => e.activeView), el = (0, N.fQ)(W), {
     renderWindow: ec,
     windowDispatch: eu
   } = i.useContext(E.ZP), ed = (0, d.e7)([A.Z], () => !A.Z.hasLoadedStickerPacks), ef = (0, I.V2)({
@@ -210,15 +210,15 @@ function Q(e) {
       (0, u.k)(n);) {
       if (n === ei.current || "true" === n.getAttribute("data-menu-item") || "true" === n.getAttribute("data-premium-tutorial-expression-picker-tooltip") || "true" === n.getAttribute("data-premium-tutorial-persistent-coachmark-emoji-step")) return;
       n = n.parentNode
-    }(0, D._Q)();
-    let r = null === (t = (0, w.uB)(e)) || void 0 === t ? void 0 : t.activeElement;
+    }(0, w._Q)();
+    let r = null === (t = (0, D.uB)(e)) || void 0 === t ? void 0 : t.activeElement;
     (null == r || "BODY" === r.tagName) && P.S.dispatchToLastSubscribed(x.CkL.TEXTAREA_FOCUS)
   }, [$, e_, ep]), em = i.useCallback(() => {
-    (0, D._Q)()
+    (0, w._Q)()
   }, []);
   i.useLayoutEffect(() => {
     let e = () => {
-      es === L.X1.GIF && (0, D._Q)()
+      es === L.X1.GIF && (0, w._Q)()
     };
     return ec.addEventListener("mousedown", eh), ec.addEventListener("contextmenu", eh), eu.subscribe(x.CkL.POPOUT_CLOSE, em), P.S.subscribe(x.CkL.CLOSE_GIF_PICKER, e), () => {
       ec.removeEventListener("mousedown", eh), ec.removeEventListener("contextmenu", eh), eu.unsubscribe(x.CkL.POPOUT_CLOSE, em), P.S.unsubscribe(x.CkL.CLOSE_GIF_PICKER, e)
@@ -230,9 +230,9 @@ function Q(e) {
   }, [es]), i.useEffect(() => () => {
     ev && eE(M.L.TAKE_ACTION)
   }, [ev, eE]), i.useEffect(() => {
-    (0, D.ql)("")
+    (0, w.ql)("")
   }, []), i.useEffect(() => {
-    (!ep && (0, p.$s)() || ep && !e_) && (0, D._Q)()
+    (!ep && (0, p.$s)() || ep && !e_) && (0, w._Q)()
   }, [e_, ep]), i.useEffect(() => {
     if (null != ei.current && !en.current) {
       var e, t, n, r;
@@ -243,8 +243,8 @@ function Q(e) {
       }), en.current = !0)
     }
   });
-  let ey = (null === (t = Y.gifs) || void 0 === t ? void 0 : t.allowSending) && !c.tq && null != Z,
-    eO = (null === (n = Y.stickers) || void 0 === n ? void 0 : n.allowSending) && null != V,
+  let ey = (null === (t = Y.gifs) || void 0 === t ? void 0 : t.allowSending) && !c.tq && null != F,
+    eO = (null === (n = Y.stickers) || void 0 === n ? void 0 : n.allowSending) && null != Z,
     eS = i.useCallback((e, t) => null == H ? void 0 : H(e, "emoji_picker", t), [H]),
     eI = i.useCallback((e, t) => null == H ? void 0 : H(e, "soundboard_picker", t), [H]),
     eT = (null === (o = Y.soundmoji) || void 0 === o ? void 0 : o.allowSending) === !0 && null != H,
@@ -295,8 +295,8 @@ function Q(e) {
                   role: "tablist",
                   "aria-label": G.NW.string(G.t["2j4VgY"]),
                   children: [ey ? (0, r.jsx)(z, {
-                    id: k._3,
-                    "aria-controls": k.vO,
+                    id: j._3,
+                    "aria-controls": j.vO,
                     "aria-selected": es === L.X1.GIF,
                     isActive: es === L.X1.GIF,
                     viewType: L.X1.GIF,
@@ -313,15 +313,15 @@ function Q(e) {
                       children: G.NW.string(G.t.nf1s3t)
                     })
                   }) : null, (0, r.jsx)(z, {
-                    id: k.td,
-                    "aria-controls": k.cZ,
+                    id: j.td,
+                    "aria-controls": j.cZ,
                     "aria-selected": es === L.X1.EMOJI,
                     isActive: es === L.X1.EMOJI,
                     viewType: L.X1.EMOJI,
                     children: G.NW.string(G.t.Xu3wEx)
                   }), ef && eT && (0, r.jsx)(z, {
-                    id: k.Hr,
-                    "aria-controls": k.gV,
+                    id: j.Hr,
+                    "aria-controls": j.gV,
                     "aria-selected": es === L.X1.SOUNDBOARD,
                     isActive: es === L.X1.SOUNDBOARD,
                     viewType: L.X1.SOUNDBOARD,
@@ -337,13 +337,13 @@ function Q(e) {
                 isLoading: ed,
                 channel: W,
                 containerWidth: eo,
-                onSelectSticker: V,
+                onSelectSticker: Z,
                 closePopout: em,
                 ref: e => {
                   er.current = e
                 }
               }) : null, es === L.X1.GIF && ey ? (0, r.jsx)(O.Z, {
-                onSelectGIF: Z,
+                onSelectGIF: F,
                 hideFavorites: h,
                 persistSearch: !0
               }) : null, es === L.X1.EMOJI ? (0, r.jsx)(y.Z, {
@@ -353,10 +353,10 @@ function Q(e) {
                 channel: W,
                 containerWidth: eo,
                 includeCreateEmojiButton: R,
-                emojiSize: null != eo && eo < K ? k.Su.MEDIUM : k.Su.LARGE,
-                pickerIntention: j.Hz.CHAT,
+                emojiSize: null != eo && eo < K ? j.Su.MEDIUM : j.Su.LARGE,
+                pickerIntention: k.Hz.CHAT,
                 closePopout: em,
-                onSelectEmoji: F,
+                onSelectEmoji: V,
                 onSelectSoundmoji: eS,
                 ref: e => {
                   er.current = e

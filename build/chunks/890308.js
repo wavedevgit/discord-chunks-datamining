@@ -57,11 +57,11 @@ e = n.nmd(e),
       return e - 48 < 10 ? e - 22 : e - 65 < 26 ? e - 65 : e - 97 < 26 ? e - 97 : u
     }
 
-    function w(e, t) {
+    function D(e, t) {
       return e + 22 + 75 * (e < 26) - ((0 != t) << 5)
     }
 
-    function D(e, t, n) {
+    function w(e, t, n) {
       var r = 0;
       for (e = n ? S(e / _) : e >> 1, e += S(e / t); e > O * f >> 1; r += u) e = S(e / O);
       return S(r + (O + 1) * e / (e + p))
@@ -76,7 +76,7 @@ e = n.nmd(e),
       for ((n = e.lastIndexOf(g)) < 0 && (n = 0), r = 0; r < n; ++r) e.charCodeAt(r) >= 128 && T("not-basic"), E.push(e.charCodeAt(r));
       for (i = n > 0 ? n + 1 : 0; i < v;) {
         for (o = b, a = 1, s = u; i >= v && T("invalid-input"), ((l = P(e.charCodeAt(i++))) >= u || l > S((c - b) / a)) && T("overflow"), b += l * a, !(l < (p = s <= O ? d : s >= O + f ? f : s - O)); s += u) a > S(c / (_ = u - p)) && T("overflow"), a *= _;
-        O = D(b - o, t = E.length + 1, 0 == o), S(b / t) > c - y && T("overflow"), y += S(b / t), b %= t, E.splice(b++, 0, y)
+        O = w(b - o, t = E.length + 1, 0 == o), S(b / t) > c - y && T("overflow"), y += S(b / t), b %= t, E.splice(b++, 0, y)
       }
       return R(E)
     }
@@ -88,8 +88,8 @@ e = n.nmd(e),
         for (s = c, a = 0; a < v; ++a)(E = e[a]) >= t && E < s && (s = E);
         for (s - t > S((c - n) / (b = r + 1)) && T("overflow"), n += (s - t) * b, t = s, a = 0; a < v; ++a)
           if ((E = e[a]) < t && ++n > c && T("overflow"), E == t) {
-            for (l = n, p = u; !(l < (_ = p <= o ? d : p >= o + f ? f : p - o)); p += u) O = l - _, y = u - _, N.push(I(w(_ + O % y, 0))), l = S(O / y);
-            N.push(I(w(l, 0))), o = D(n, b, r == i), n = 0, ++r
+            for (l = n, p = u; !(l < (_ = p <= o ? d : p >= o + f ? f : p - o)); p += u) O = l - _, y = u - _, N.push(I(D(_ + O % y, 0))), l = S(O / y);
+            N.push(I(D(l, 0))), o = w(n, b, r == i), n = 0, ++r
           }++ n, ++t
       }
       return N.join("")
@@ -101,7 +101,7 @@ e = n.nmd(e),
       })
     }
 
-    function k(e) {
+    function j(e) {
       return A(e, function(e) {
         return v.test(e) ? "xn--" + x(e) : e
       })
@@ -114,7 +114,7 @@ e = n.nmd(e),
         },
         decode: L,
         encode: x,
-        toASCII: k,
+        toASCII: j,
         toUnicode: M
       }, "function" == typeof define && "object" == typeof define.amd && define.amd) define("punycode", function() {
       return s

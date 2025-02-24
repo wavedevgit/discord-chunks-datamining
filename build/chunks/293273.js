@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 }), n(653041), n(47120);
 var r, i = n(348327),
   o = n.n(i),
@@ -138,7 +138,7 @@ class P extends(r = l.ZP.Store) {
   }
 }
 y(P, "displayName", "LocalActivityStore");
-let w = new P(c.Z, {
+let D = new P(c.Z, {
   OVERLAY_INITIALIZE: R,
   START_SESSION: N,
   LOCAL_ACTIVITY_UPDATE: A,

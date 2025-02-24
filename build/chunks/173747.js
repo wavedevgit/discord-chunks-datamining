@@ -42,11 +42,11 @@ function P(e) {
   R.start(e + Math.random() * N, c.o)
 }
 
-function w() {
-  return P(A), D()
+function D() {
+  return P(A), w()
 }
 
-function D() {
+function w() {
   if (!(0, E.Q)()) return !1;
   let e = p.Z.entitledBranchIds,
     t = [];
@@ -85,7 +85,7 @@ function M(e) {
   b.add(t)
 }
 
-function k(e) {
+function j(e) {
   let {
     applicationId: t,
     branchId: n,
@@ -109,7 +109,7 @@ function k(e) {
   }, x(t, n)
 }
 
-function j(e) {
+function k(e) {
   let {
     branchId: t
   } = e;
@@ -138,7 +138,7 @@ function B(e) {
   null == S[t] && delete S[t]
 }
 
-function Z(e) {
+function F(e) {
   let {
     branches: t
   } = e, n = {};
@@ -160,11 +160,11 @@ function Z(e) {
   P(A)
 }
 
-function F() {
+function V() {
   P(C)
 }
 
-function V() {
+function Z() {
   R.stop()
 }
 
@@ -182,7 +182,7 @@ function H(e) {
 }
 class W extends(r = a.ZP.Store) {
   initialize() {
-    this.syncWith([p.Z], D), this.waitFor(_.Z, p.Z, f.Z)
+    this.syncWith([p.Z], w), this.waitFor(_.Z, p.Z, f.Z)
   }
   getTargetBuildId(e, t) {
     return null == y[t] ? null : y[t].id
@@ -205,17 +205,17 @@ class W extends(r = a.ZP.Store) {
 }
 v(W, "displayName", "ApplicationBuildStore");
 let Y = new W(l.Z, {
-  CONNECTION_OPEN: w,
+  CONNECTION_OPEN: D,
   GAMES_DATABASE_UPDATE: L,
   APPLICATION_BUILD_FETCH_START: M,
-  APPLICATION_BUILD_FETCH_SUCCESS: k,
-  APPLICATION_BUILD_NOT_FOUND: j,
+  APPLICATION_BUILD_FETCH_SUCCESS: j,
+  APPLICATION_BUILD_NOT_FOUND: k,
   APPLICATION_BUILD_SIZE_FETCH_START: U,
   APPLICATION_BUILD_SIZE_FETCH_SUCCESS: G,
   APPLICATION_BUILD_SIZE_FETCH_FAIL: B,
-  APPLICATION_BRANCHES_FETCH_SUCCESS: Z,
-  APPLICATION_BRANCHES_FETCH_FAIL: F,
-  CONNECTION_CLOSED: V,
-  LOGOUT: V,
+  APPLICATION_BRANCHES_FETCH_SUCCESS: F,
+  APPLICATION_BRANCHES_FETCH_FAIL: V,
+  CONNECTION_CLOSED: Z,
+  LOGOUT: Z,
   SKU_PURCHASE_SUCCESS: H
 })

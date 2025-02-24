@@ -5,7 +5,7 @@ n.d(t, {
   Sq: () => H,
   ZP: () => K,
   el: () => z,
-  oO: () => D,
+  oO: () => w,
   zO: () => Q
 }), n(474991), n(398202), n(301563), n(757143), n(47120), n(653041);
 var r, i, o, a, s, l, c = n(729594),
@@ -32,19 +32,19 @@ let v = 10,
   C = /^\/channels\/([0-9]+)\/shop$/,
   R = /^\/quests\/([0-9-]+)\/?$/,
   P = /^\/oauth2\/authorize/,
-  w = /^#itemSkuId=([0-9]+)$/,
-  D = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
-  L = F(window.GLOBAL_ENV.INVITE_HOST),
-  x = F(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
-  M = F(null !== (r = window.GLOBAL_ENV.WEBAPP_ENDPOINT) && void 0 !== r ? r : "//canary.".concat(E.$R1)),
-  k = F("//canary.".concat(E.$R1)),
-  j = F("//ptb.".concat(E.$R1)),
-  U = F("discordapp.com"),
-  G = F("discord.com"),
+  D = /^#itemSkuId=([0-9]+)$/,
+  w = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
+  L = V(window.GLOBAL_ENV.INVITE_HOST),
+  x = V(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
+  M = V(null !== (r = window.GLOBAL_ENV.WEBAPP_ENDPOINT) && void 0 !== r ? r : "//canary.".concat(E.$R1)),
+  j = V("//canary.".concat(E.$R1)),
+  k = V("//ptb.".concat(E.$R1)),
+  U = V("discordapp.com"),
+  G = V("discord.com"),
   B = [h.Z.escape(null !== (i = L.host) && void 0 !== i ? i : ""), h.Z.escape(null !== (o = x.host) && void 0 !== o ? o : ""), h.Z.escape(null !== (a = M.host) && void 0 !== a ? a : ""), h.Z.escape(null !== (s = U.host) && void 0 !== s ? s : ""), h.Z.escape(null !== (l = G.host) && void 0 !== l ? l : "")].filter(Boolean),
-  Z = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(B.join("|"), ")"), "g");
+  F = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(B.join("|"), ")"), "g");
 
-function F(e) {
+function V(e) {
   if (null == e) return {
     host: null,
     pathPrefix: null
@@ -62,7 +62,7 @@ function F(e) {
   }
 }
 
-function V(e, t) {
+function Z(e, t) {
   var n, r, i;
   if ((null === (n = t.host) || void 0 === n ? void 0 : n.replace(/^www[.]/i, "")) !== e.host) return null;
   let o = null !== (r = t.pathname) && void 0 !== r ? r : "",
@@ -74,7 +74,7 @@ function V(e, t) {
 
 function H(e) {
   var t, n, r, i;
-  return null !== (i = null !== (r = null !== (n = null !== (t = V(M, e)) && void 0 !== t ? t : V(k, e)) && void 0 !== n ? n : V(j, e)) && void 0 !== r ? r : V(U, e)) && void 0 !== i ? i : V(G, e)
+  return null !== (i = null !== (r = null !== (n = null !== (t = Z(M, e)) && void 0 !== t ? t : Z(j, e)) && void 0 !== n ? n : Z(k, e)) && void 0 !== r ? r : Z(U, e)) && void 0 !== i ? i : Z(G, e)
 }
 
 function W(e) {
@@ -96,9 +96,9 @@ function Y(e) {
     templateHostRemainingPath: null,
     primaryHostRemainingPath: null
   };
-  let a = V(L, o),
-    s = V(x, o),
-    l = null !== (i = null !== (r = null !== (n = null !== (t = V(M, o)) && void 0 !== t ? t : V(k, o)) && void 0 !== n ? n : V(j, o)) && void 0 !== r ? r : V(U, o)) && void 0 !== i ? i : V(G, o);
+  let a = Z(L, o),
+    s = Z(x, o),
+    l = null !== (i = null !== (r = null !== (n = null !== (t = Z(M, o)) && void 0 !== t ? t : Z(j, o)) && void 0 !== n ? n : Z(k, o)) && void 0 !== r ? r : Z(U, o)) && void 0 !== i ? i : Z(G, o);
   return {
     url: o,
     inviteHostRemainingPath: a,
@@ -111,8 +111,8 @@ function K(e) {
   if (null == e) return [];
   let t = new Set,
     n = [],
-    r = (e = e.replace(Z, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(m.Z.URL_REGEX),
-    i = e.match(D);
+    r = (e = e.replace(F, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(m.Z.URL_REGEX),
+    i = e.match(w);
   if (null == (r = (null != r ? r : []).concat(null != i ? i : [])) || 0 === r.length) return [];
   for (let e of r) {
     var o, a, s;
@@ -163,9 +163,9 @@ function K(e) {
         h(g.g.APP_DIRECTORY_STOREFRONT_SKU, n)
       } else h(g.g.APP_DIRECTORY_STOREFRONT, e)
     }
-    let D = null == c ? void 0 : c.match(N);
-    if (null != D) {
-      let e = D[1];
+    let w = null == c ? void 0 : c.match(N);
+    if (null != w) {
+      let e = w[1];
       h(g.g.ACTIVITY_BOOKMARK, e)
     }
     let L = null == c ? void 0 : c.match(A);
@@ -174,7 +174,7 @@ function K(e) {
     null != x && h(g.g.SERVER_SHOP, x[1]);
     let M = z(e);
     if (null != M && h(g.g.QUESTS_EMBED, M), "/shop" === c) {
-      let e = null === (a = r.hash) || void 0 === a ? void 0 : a.match(w);
+      let e = null === (a = r.hash) || void 0 === a ? void 0 : a.match(D);
       h(g.g.COLLECTIBLES_SHOP, null !== (s = null == e ? void 0 : e[1]) && void 0 !== s ? s : "")
     }
   }

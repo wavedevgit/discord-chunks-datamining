@@ -53,7 +53,7 @@ let A = O.kod,
   R = new Set,
   P = 0;
 
-function w(e) {
+function D(e) {
   var t;
   let n = C[null != e ? e : A];
   return {
@@ -68,13 +68,13 @@ function w(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   var t;
-  return C[null != e ? e : A] = null !== (t = C[null != e ? e : A]) && void 0 !== t ? t : w(e)
+  return C[null != e ? e : A] = null !== (t = C[null != e ? e : A]) && void 0 !== t ? t : D(e)
 }
 
 function L(e) {
-  let t = D(e);
+  let t = w(e);
   t.sentinel++, P++
 }
 
@@ -88,12 +88,12 @@ function M(e) {
   return !(null == e || e.isGuildVocal() && 0 === t || e.hasFlag(S.zZ.IS_GUILD_RESOURCE_CHANNEL) || (0 === t || n) && (e.isThread() ? c.Z.isMuted(e.id) || b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.parent_id) : b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)) || !e.isPrivate() && (x(e, t, (0, a.r1)(e.guild_id)) || !m.Z.can(e.accessPermissions, e))) && (t > 0 || b.ZP.resolveUnreadSetting(e) === I.i.ALL_MESSAGES)
 }
 
-function k(e) {
+function j(e) {
   return "flags" in e
 }
 
-function j(e, t, n) {
-  return !((0, d.bw)(e.type) && 0 === t || !m.Z.canBasicChannel((0, d.Gz)(e.type), e) || x(e, t, n) || k(e) && e.hasFlag(S.zZ.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || b.ZP.resolveUnreadSetting(e) === I.i.ALL_MESSAGES)
+function k(e, t, n) {
+  return !((0, d.bw)(e.type) && 0 === t || !m.Z.canBasicChannel((0, d.Gz)(e.type), e) || x(e, t, n) || j(e) && e.hasFlag(S.zZ.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || b.ZP.resolveUnreadSetting(e) === I.i.ALL_MESSAGES)
 }
 
 function U(e) {
@@ -113,18 +113,18 @@ function G(e, t) {
 }
 
 function B(e, t) {
-  let n = w(e);
+  let n = D(e);
   return n.mentionCounts = N({}, t.mentionCounts), n.unreadByType = N({}, t.unreadByType), n
 }
 
-function Z(e) {
+function F(e) {
   return e.unread = Object.values(e.unreadByType).some(e => e), e
 }
 
-function F(e, t) {}
+function V(e, t) {}
 
-function V(e, t, n) {
-  return Z(t), t.lowImportanceMentionCount = 0, t.highImportanceMentionCount = 0, f.default.forEach(t.mentionCounts, e => {
+function Z(e, t, n) {
+  return F(t), t.lowImportanceMentionCount = 0, t.highImportanceMentionCount = 0, f.default.forEach(t.mentionCounts, e => {
     let {
       count: n,
       isMentionLowImportance: r
@@ -135,7 +135,7 @@ function V(e, t, n) {
 
 function H(e, t) {
   let n = U(e),
-    r = D(n),
+    r = w(n),
     i = B(n, r),
     {
       enabled: a,
@@ -163,19 +163,19 @@ function H(e, t) {
     if (!(null != e && !t.includes(e.id) && g.ZP.hasUnread(e.id) && M(e))) return Y(n);
     null != n && R.add(n), i.unreadByType[I.W.CHANNEL] = !0
   }
-  return V(n, i, r)
+  return Z(n, i, r)
 }
 
 function W(e, t) {
   if (null == e) return;
-  let n = D(e),
+  let n = w(e),
     r = B(e, n);
-  return r.unreadByType[I.W.GUILD_EVENT] = G(e, t), V(e, r, n)
+  return r.unreadByType[I.W.GUILD_EVENT] = G(e, t), Z(e, r, n)
 }
 
 function Y(e, t) {
   let n = U(e),
-    r = w(n),
+    r = D(n),
     {
       enabled: i,
       removeHomeMentionBadges: u
@@ -212,7 +212,7 @@ function Y(e, t) {
         h = c > 0;
       if (!h && a) continue;
       let m = !l && (!a || h) && p;
-      if ((m || h) && j(n, c, u) && (m && (r.unreadByType[I.W.CHANNEL] = !0, r.unreadChannelId = t), h)) {
+      if ((m || h) && k(n, c, u) && (m && (r.unreadByType[I.W.CHANNEL] = !0, r.unreadChannelId = t), h)) {
         let e = Math.max(c - (d ? s.Z.getMentionCountForChannel(n.id) : 0), 0);
         _ ? r.lowImportanceMentionCount += e : r.highImportanceMentionCount += e, r.mentionCounts[n.id] = {
           count: e,
@@ -232,8 +232,8 @@ function Y(e, t) {
         })
       }!r.unreadByType[I.W.GUILD_EVENT] && G(n, I.W.GUILD_EVENT) && (r.unreadByType[I.W.GUILD_EVENT] = !0)
   }
-  Z(r);
-  let f = D(n);
+  F(r);
+  let f = w(n);
   return (r.unread !== f.unread || r.highImportanceMentionCount !== f.highImportanceMentionCount || r.lowImportanceMentionCount !== f.lowImportanceMentionCount) && (C[null != n ? n : A] = r, null != n && (r.unread ? R.add(n) : R.delete(n)), P++, L(null != n ? n : A), !0)
 }
 
@@ -323,7 +323,7 @@ function en(e) {
   } = e, n = _.Z.getChannel(t);
   if (null == n) return !1;
   if (null != n.guild_id) {
-    let e = D(n.guild_id);
+    let e = w(n.guild_id);
     if (((n.isThread() ? !c.Z.hasJoined(n.id) || c.Z.isMuted(n.id) : b.ZP.isGuildOrCategoryOrChannelMuted(n.guild_id, n.id)) || e.unreadByType[I.W.CHANNEL]) && 0 === g.ZP.getMentionCount(t)) return !1
   }
   return H(n.getGuildId(), [n.id])
@@ -496,11 +496,11 @@ class ey extends v.Z {
     return R.has(e)
   }
   getMentionCount(e) {
-    let t = D(e);
+    let t = w(e);
     return t.highImportanceMentionCount + t.lowImportanceMentionCount
   }
   getIsMentionLowImportance(e) {
-    return 0 === D(e).highImportanceMentionCount
+    return 0 === w(e).highImportanceMentionCount
   }
   getGuildHasUnreadIgnoreMuted(e) {
     let t = _.Z.getMutableGuildChannelsForGuild(e);
@@ -541,7 +541,7 @@ class ey extends v.Z {
     return null !== (n = null === (t = C[A]) || void 0 === t ? void 0 : t.mentionCounts[e]) && void 0 !== n ? n : 0
   }
   getGuildChangeSentinel(e) {
-    return D(e).sentinel
+    return w(e).sentinel
   }
   constructor() {
     super({

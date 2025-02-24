@@ -1,16 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(594463).IteratorPrototype,
-  i = n(224106),
-  o = n(241777),
-  a = n(414847),
+var e = n(594463).IteratorPrototype,
+  o = n(224106),
+  i = n(241777),
+  u = n(414847),
   s = n(519723),
-  l = function() {
+  c = function() {
     return this
   };
-e.exports = function(e, t, n, c) {
-  var u = t + " Iterator";
-  return e.prototype = i(r, {
-    next: o(+!c, n)
-  }), a(e, u, !1, !0), s[u] = l, e
+t.exports = function(t, r, n, f) {
+  var a = r + " Iterator";
+  return t.prototype = o(e, {
+    next: i(+!f, n)
+  }), u(t, a, !1, !0), s[a] = c, t
 }

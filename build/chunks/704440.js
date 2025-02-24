@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 }), n(773603), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -200,7 +200,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     shouldShowPopout: t,
     referralsRemaining: n,

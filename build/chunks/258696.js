@@ -32,9 +32,9 @@ var r = n(200651),
   C = n(319417),
   R = n(728386),
   P = n(474936),
-  w = n(342203);
+  D = n(342203);
 
-function D(e) {
+function w(e) {
   let {
     disabled: t,
     channel: n
@@ -62,13 +62,13 @@ function L(e) {
     type: N,
     disabled: L,
     channel: M,
-    handleSubmit: k,
-    isEmpty: j,
+    handleSubmit: j,
+    isEmpty: k,
     showAllButtons: U,
     children: G
-  } = e, B = (0, a.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), Z = x(M.id, N, j), {
-    activeCommand: F,
-    activeCommandOption: V
+  } = e, B = (0, a.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), F = x(M.id, N, k), {
+    activeCommand: V,
+    activeCommandOption: Z
   } = (0, a.cj)([c.Z], () => ({
     activeCommand: c.Z.getActiveCommand(M.id),
     activeCommandOption: c.Z.getActiveOption(M.id)
@@ -95,33 +95,33 @@ function L(e) {
       n = p.Z.getRecipientEligibility(Q.id);
     return [Y && t && n, n]
   }), $ = (0, d.R6)("ChannelTextAreaButtons"), ee = (0, f.Nt)() && (null === (t = N.confetti) || void 0 === t ? void 0 : t.button) != null;
-  return (o.tq || (M.isDM() && (null === (g = N.gifts) || void 0 === g ? void 0 : g.button) != null && null == F && (b.ZP.isPremiumExactly(K, P.p9.TIER_2) && J && h.Z.trackExposure({
+  return (o.tq || (M.isDM() && (null === (g = N.gifts) || void 0 === g ? void 0 : g.button) != null && null == V && (b.ZP.isPremiumExactly(K, P.p9.TIER_2) && J && h.Z.trackExposure({
     location: "dc120b_5"
   }), X && W.push((0, r.jsx)(A.Z, {
     disabled: L,
     referralsRemaining: z,
     channel: M,
     isResending: q
-  }, "referral"))), (null === (E = N.gifts) || void 0 === E ? void 0 : E.button) != null && null == F && !H && (null == Q || b.ZP.isPremiumEligible(Q)) && W.push((0, r.jsx)(D, {
+  }, "referral"))), (null === (E = N.gifts) || void 0 === E ? void 0 : E.button) != null && null == V && !H && (null == Q || b.ZP.isPremiumEligible(Q)) && W.push((0, r.jsx)(w, {
     disabled: L,
     channel: M
-  }, "gift")), (null === (S = N.gifs) || void 0 === S ? void 0 : S.button) != null && null == F && U && W.push((0, r.jsx)(O.Z, {
+  }, "gift")), (null === (S = N.gifs) || void 0 === S ? void 0 : S.button) != null && null == V && U && W.push((0, r.jsx)(O.Z, {
     disabled: L,
     type: N
-  }, "gif")), ee && null == F && W.push((0, r.jsx)(I.Z, {
+  }, "gif")), ee && null == V && W.push((0, r.jsx)(I.Z, {
     disabled: L,
     channel: M
-  }, "confetti")), !ee && (null === (T = N.stickers) || void 0 === T ? void 0 : T.button) != null && null == F && U && W.push((0, r.jsx)(R.Z, {
+  }, "confetti")), !ee && (null === (T = N.stickers) || void 0 === T ? void 0 : T.button) != null && null == V && U && W.push((0, r.jsx)(R.Z, {
     disabled: L,
     type: N
-  }, "sticker"))), (null === (n = N.emojis) || void 0 === n ? void 0 : n.button) != null && (null == F || null != V && V.type !== s.jw.ATTACHMENT) && W.push((0, r.jsx)(y.Z, {
+  }, "sticker"))), (null === (n = N.emojis) || void 0 === n ? void 0 : n.button) != null && (null == V || null != Z && Z.type !== s.jw.ATTACHMENT) && W.push((0, r.jsx)(y.Z, {
     disabled: L,
     type: N
   }, "emoji")), $ || null == G || W.push(G), (null === (i = N.submit) || void 0 === i ? void 0 : i.button) != null && ((null === (_ = N.submit) || void 0 === _ ? void 0 : _.ignorePreference) || B) && !$ && W.push((0, r.jsx)(C.Z, {
-    onClick: k,
-    disabled: L || Z
+    onClick: j,
+    disabled: L || F
   }, "submit")), $ && null != G && W.push(G), 0 === W.length) ? null : (0, r.jsx)("div", {
-    className: w.buttons,
+    className: D.buttons,
     children: W
   })
 }

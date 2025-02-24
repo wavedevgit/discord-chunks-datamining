@@ -42,13 +42,13 @@ e.exports = function(e, t, n, a, _, m, N) {
         return new n(this)
       }
     },
-    w = t + " Iterator",
-    D = !1,
+    D = t + " Iterator",
+    w = !1,
     L = e.prototype,
     x = L[y] || L["@@iterator"] || _ && L[_],
     M = !b && x || P(_),
-    k = "Array" === t && L.entries || x;
-  if (k && (A = c(k.call(new e))) !== Object.prototype && A.next && (o || c(A) === v || (u ? u(A, v) : s(A[y]) || p(A, y, T)), d(A, w, !0, !0), o && (h[w] = T)), g && _ === S && x && x.name !== S && (!o && E ? f(L, "name", S) : (D = !0, M = function() {
+    j = "Array" === t && L.entries || x;
+  if (j && (A = c(j.call(new e))) !== Object.prototype && A.next && (o || c(A) === v || (u ? u(A, v) : s(A[y]) || p(A, y, T)), d(A, D, !0, !0), o && (h[D] = T)), g && _ === S && x && x.name !== S && (!o && E ? f(L, "name", S) : (w = !0, M = function() {
       return i(x, this)
     })), _) {
     if (C = {
@@ -56,11 +56,11 @@ e.exports = function(e, t, n, a, _, m, N) {
         keys: m ? M : P(O),
         entries: P(I)
       }, N)
-      for (R in C) !b && !D && R in L || p(L, R, C[R]);
+      for (R in C) !b && !w && R in L || p(L, R, C[R]);
     else r({
       target: t,
       proto: !0,
-      forced: b || D
+      forced: b || w
     }, C)
   }
   return (!o || N) && L[y] !== M && p(L, y, M, {

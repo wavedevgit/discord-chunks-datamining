@@ -1,13 +1,13 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(294377),
-  i = n(802973),
-  o = r("Map");
-e.exports = {
-  Map: o,
-  set: i("set", 2),
-  get: i("get", 1),
-  has: i("has", 1),
-  remove: i("delete", 1),
-  proto: o.prototype
+var e = n(294377),
+  o = n(802973),
+  i = e("Map");
+t.exports = {
+  Map: i,
+  set: o("set", 2),
+  get: o("get", 1),
+  has: o("has", 1),
+  remove: o("delete", 1),
+  proto: i.prototype
 }

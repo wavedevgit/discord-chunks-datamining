@@ -1,21 +1,21 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
 var r = n(960081),
-  i = Math.floor,
-  o = function(e, t) {
-    var n = e.length,
-      l = i(n / 2);
-    return n < 8 ? a(e, t) : s(e, o(r(e, 0, l), t), o(r(e, l), t), t)
-  },
+  o = Math.floor,
   a = function(e, t) {
-    for (var n, r, i = e.length, o = 1; o < i;) {
-      for (r = o, n = e[o]; r && t(e[r - 1], n) > 0;) e[r] = e[--r];
-      r !== o++ && (e[r] = n)
+    var n = e.length,
+      c = o(n / 2);
+    return n < 8 ? i(e, t) : s(e, a(r(e, 0, c), t), a(r(e, c), t), t)
+  },
+  i = function(e, t) {
+    for (var n, r, o = e.length, a = 1; a < o;) {
+      for (r = a, n = e[a]; r && t(e[r - 1], n) > 0;) e[r] = e[--r];
+      r !== a++ && (e[r] = n)
     }
     return e
   },
   s = function(e, t, n, r) {
-    for (var i = t.length, o = n.length, a = 0, s = 0; a < i || s < o;) e[a + s] = a < i && s < o ? 0 >= r(t[a], n[s]) ? t[a++] : n[s++] : a < i ? t[a++] : n[s++];
+    for (var o = t.length, a = n.length, i = 0, s = 0; i < o || s < a;) e[i + s] = i < o && s < a ? 0 >= r(t[i], n[s]) ? t[i++] : n[s++] : i < o ? t[i++] : n[s++];
     return e
   };
-e.exports = o
+e.exports = a

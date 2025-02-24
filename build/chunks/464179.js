@@ -84,8 +84,8 @@ let y = "US",
   C = (0, u.hQ)(),
   R = (0, u.hQ)(),
   P = (0, u.hQ)(),
-  w = (0, u.hQ)(),
-  D = (0, u.hQ)();
+  D = (0, u.hQ)(),
+  w = (0, u.hQ)();
 var L = function(e) {
     return e.MODAL_US = "modalUS", e.MODAL_INTL = "modalInternational", e.MODAL_US_WITH_NAME = "modalUSWithName", e.MODAL_INTL_WITH_NAME = "modalInternationalWithName", e.SETTINGS_US = "settingsUS", e.SETTINGS_INTL = "settingsInternational", e.SETTINGS_INTL_NO_NAME = "settingsInternationalWithoutName", e.SETTINGS_US_MOBILE = "settingsUSMobile", e.SETTINGS_INTL_MOBILE = "settingsInternationalMobile", e.SETTINGS_INTL_NO_NAME_MOBILE = "settingsInternationalWithoutNameMobile", e
   }(L || {}),
@@ -96,7 +96,7 @@ let M = {
     [y]: l.G,
     [O]: a.X
   },
-  k = e => ({
+  j = e => ({
     name: "name",
     id: N,
     title: () => p.NW.string(p.t.vyuULS),
@@ -104,7 +104,7 @@ let M = {
     getClassNameForLayout: e => ["modalUS", "modalInternational", "modalUSWithName", "modalInternationalWithName", "settingsUSMobile", "settingsInternationalMobile", "settingsInternationalWithoutNameMobile"].includes(e) ? _.width100 : _.width60,
     renderInput: e => (0, i.jsx)(c.oil, m({}, e))
   }),
-  j = e => ({
+  k = e => ({
     name: "country",
     id: A,
     title: () => p.NW.string(p.t.eDdrAA),
@@ -177,7 +177,7 @@ let M = {
     },
     renderInput: e => (0, i.jsx)(c.oil, m({}, e))
   }),
-  Z = e => {
+  F = e => {
     let t, n;
     switch (e) {
       case y:
@@ -191,7 +191,7 @@ let M = {
     }
     return {
       name: "postalCode",
-      id: w,
+      id: D,
       title: () => t,
       autoComplete: "postal-code",
       placeholder: () => n,
@@ -215,7 +215,7 @@ let M = {
       renderInput: e => (0, i.jsx)(c.oil, m({}, e))
     }
   },
-  F = e => {
+  V = e => {
     let t;
     switch (e) {
       case y:
@@ -229,7 +229,7 @@ let M = {
     }
     return {
       name: "state",
-      id: D,
+      id: w,
       title: () => t,
       autoComplete: "address-level1",
       getClassNameForLayout: e => {
@@ -272,83 +272,83 @@ let M = {
       }
     }
   },
-  V = {
+  Z = {
     modalUS: [
-      [j],
+      [k],
       [U],
       [G],
       [B],
-      [F, Z]
+      [V, F]
     ],
     modalInternational: [
-      [j],
+      [k],
       [U],
       [G],
       [B],
-      [F],
-      [Z]
+      [V],
+      [F]
     ],
     modalUSWithName: [
-      [j],
       [k],
+      [j],
       [U],
       [G],
       [B],
-      [F, Z]
+      [V, F]
     ],
     modalInternationalWithName: [
-      [j],
       [k],
+      [j],
       [U],
       [G],
       [B],
-      [F],
-      [Z]
+      [V],
+      [F]
     ],
     settingsUS: [
-      [k],
+      [j],
       [U, G],
-      [B, F, Z],
-      [j]
+      [B, V, F],
+      [k]
     ],
     settingsUSMobile: [
-      [k],
+      [j],
       [U],
       [G],
       [B],
+      [V],
       [F],
-      [Z],
-      [j]
+      [k]
     ],
     settingsInternational: [
-      [k],
+      [j],
       [U, G],
       [B],
-      [F, Z],
-      [j]
+      [V, F],
+      [k]
     ],
     settingsInternationalMobile: [
-      [k],
+      [j],
       [U],
       [G],
       [B],
+      [V],
       [F],
-      [Z],
-      [j]
+      [k]
     ],
     settingsInternationalWithoutName: [
       [U, G],
       [B],
-      [F, Z],
-      [j]
+      [V, F],
+      [k]
     ],
     settingsInternationalWithoutNameMobile: [
       [U],
       [G],
       [B],
+      [V],
       [F],
-      [Z],
-      [j]
+      [k]
     ]
   };
 class H extends(r = o.PureComponent) {
@@ -400,7 +400,7 @@ class H extends(r = o.PureComponent) {
       mode: r,
       className: o,
       error: a
-    } = this.props, s = V[n];
+    } = this.props, s = Z[n];
     if (null == s) throw Error("Provide a proper layout property.");
     let l = t.country,
       c = s.map(e => {

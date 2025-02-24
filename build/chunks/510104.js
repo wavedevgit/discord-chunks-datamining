@@ -35,28 +35,28 @@ function f(e, t) {
     C = e.rects.popper,
     R = e.elements[S ? A : y],
     P = (0, r.Z)((0, c.kK)(R) ? R : R.contextElement || (0, i.Z)(e.elements.popper), g, v, h),
-    w = (0, o.Z)(e.elements.reference),
-    D = (0, a.Z)({
-      reference: w,
+    D = (0, o.Z)(e.elements.reference),
+    w = (0, a.Z)({
+      reference: D,
       element: C,
       strategy: "absolute",
       placement: p
     }),
-    L = (0, s.Z)(Object.assign({}, C, D)),
-    x = y === l.k5 ? L : w,
+    L = (0, s.Z)(Object.assign({}, C, w)),
+    x = y === l.k5 ? L : D,
     M = {
       top: P.top - x.top + N.top,
       bottom: x.bottom - P.bottom + N.bottom,
       left: P.left - x.left + N.left,
       right: x.right - P.right + N.right
     },
-    k = e.modifiersData.offset;
-  if (y === l.k5 && k) {
-    var j = k[p];
+    j = e.modifiersData.offset;
+  if (y === l.k5 && j) {
+    var k = j[p];
     Object.keys(M).forEach(function(e) {
       var t = [l.F2, l.I].indexOf(e) >= 0 ? 1 : -1,
         n = [l.we, l.I].indexOf(e) >= 0 ? "y" : "x";
-      M[e] += j[n] * t
+      M[e] += k[n] * t
     })
   }
   return M

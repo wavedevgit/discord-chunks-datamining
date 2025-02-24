@@ -33,7 +33,7 @@ var i = n(442837),
   R = n(654412),
   P = n(572408);
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -42,21 +42,21 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
 }
 let L = {
   key: I.h8.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, r.jsx)(M, D({}, e)),
+  renderStep: e => (0, r.jsx)(M, w({}, e)),
   options: {
     isLargeModal: !0,
     useBreadcrumbLabel: () => C.NW.string(C.t["W685+f"])
@@ -94,18 +94,18 @@ function M(e) {
     setCustomGiftMessage: l,
     giftRecipientError: m,
     setGiftRecipientError: I,
-    validatingGiftRecipient: w,
-    giftRecipient: D,
+    validatingGiftRecipient: D,
+    giftRecipient: w,
     recommendedGiftSkuIds: L,
     giftingOrigin: M,
-    setValidatingGiftRecipient: j
+    setValidatingGiftRecipient: k
   } = (0, O.wD)(), {
     selectedSkuId: U,
     setSelectedSkuId: G,
     selectedSkuPricePreview: B,
-    paymentSourceId: Z,
-    skuPricePreviewsById: F
-  } = (0, S.JL)(), V = (0, i.e7)([E.default], () => E.default.getCurrentUser()), {
+    paymentSourceId: F,
+    skuPricePreviewsById: V
+  } = (0, S.JL)(), Z = (0, i.e7)([E.default], () => E.default.getCurrentUser()), {
     enabled: H,
     giftRecommendationAlgorithm: W
   } = p.G.useExperiment({
@@ -113,24 +113,24 @@ function M(e) {
   }, {
     autoTrackExposure: !1
   }), Y = H && M === A.Wt.DM_CHANNEL, K = W === p.u.POPULAR ? C.NW.string(C.t.Kwgrrq) : C.NW.string(C.t.r1huYW), z = async (e, t) => {
-    j(!0), null != m && I(), await (0, c.B1)(e.id, t) || I(C.NW.string(C.t["4kgVqa"])), j(!1)
+    k(!0), null != m && I(), await (0, c.B1)(e.id, t) || I(C.NW.string(C.t["4kgVqa"])), k(!1)
   };
   (0, a.ZP)(() => {
-    null != U && null != D && (b.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != U && null != w && (b.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: U
-    }), z(D, U))
+    }), z(w, U))
   });
   let q = e => {
       b.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
-      }), null != D && z(D, e), G(e)
+      }), null != w && z(w, e), G(e)
     },
     Q = e => {
-      let t = F[e],
+      let t = V[e],
         n = null;
       if (null != t) {
         var i;
-        n = null != Z && null !== (i = t[Z]) && void 0 !== i ? i : t[v.c]
+        n = null != F && null !== (i = t[F]) && void 0 !== i ? i : t[v.c]
       }
       if (null == n) return;
       let o = (0, y.T4)(n.amount, n.currency);
@@ -158,7 +158,7 @@ function M(e) {
         color: "header-secondary",
         className: R.selectGiftTitle,
         children: K.toLocaleUpperCase()
-      }), L.map(e => Q(e)), (0, r.jsx)(k, {
+      }), L.map(e => Q(e)), (0, r.jsx)(j, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
@@ -171,7 +171,7 @@ function M(e) {
       if (Y) return (0, r.jsxs)("div", {
         className: R.bodyColumnRight,
         children: [(0, r.jsx)(g.s, {
-          giftRecipient: D
+          giftRecipient: w
         }), (0, r.jsx)(h.q, {
           isShopGift: !0,
           className: P.adjustedGiftMainAnimation,
@@ -207,15 +207,15 @@ function M(e) {
         children: (0, r.jsx)(x, {
           onStepChange: t,
           onBackClick: n,
-          disabled: null != m || null == D || D.id === (null == V ? void 0 : V.id) || s.length > A.$n,
-          loading: w
+          disabled: null != m || null == w || w.id === (null == Z ? void 0 : Z.id) || s.length > A.$n,
+          loading: D
         })
       })
     })]
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     handleClose: t
   } = e, {

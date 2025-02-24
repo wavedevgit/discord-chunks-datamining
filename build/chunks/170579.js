@@ -76,18 +76,18 @@ let S = e => {
       className: C,
       showTrialBadge: R = !1,
       showDiscountBadge: P = !1
-    } = e, w = N === v.p9.TIER_2;
+    } = e, D = N === v.p9.TIER_2;
     n = N === v.p9.TIER_0 ? d.Z : N === v.p9.TIER_1 ? f.Z : u.Z;
-    let D = (0, a.e7)([l.Z], () => l.Z.useReducedMotion),
+    let w = (0, a.e7)([l.Z], () => l.Z.useReducedMotion),
       L = (0, m.Ng)(),
       x = null == L ? void 0 : null === (t = L.discount) || void 0 === t ? void 0 : t.amount;
     return (0, r.jsxs)("div", {
       "aria-hidden": !0,
       className: o()({
-        [y.headerBackground]: !w,
-        [y.tier2HeaderBackground]: w
+        [y.headerBackground]: !D,
+        [y.tier2HeaderBackground]: D
       }, C),
-      children: [D || A !== v.nL.WINTER ? null : (0, r.jsx)(E.Z, {
+      children: [w || A !== v.nL.WINTER ? null : (0, r.jsx)(E.Z, {
         className: y.snow,
         wind: 5
       }), (R || P) && (0, r.jsx)(p.Z, {
@@ -99,7 +99,7 @@ let S = e => {
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsx)(n, {
             className: o()(y.headerIcon, {
-              [y.nonTier2]: !w
+              [y.nonTier2]: !D
             })
           }), (R || P) && (0, r.jsx)(S, {
             isTier0: N === v.p9.TIER_0,

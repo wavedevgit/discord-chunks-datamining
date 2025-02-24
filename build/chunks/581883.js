@@ -131,10 +131,10 @@ function P(e) {
   let {
     userSettings: t
   } = e;
-  w(t)
+  D(t)
 }
 
-function w(e) {
+function D(e) {
   null != e && s().forEach(b, (t, n) => {
     var r, i;
     let a = e[Number(n)];
@@ -149,9 +149,9 @@ function w(e) {
     null != u && (t.editInfo.protoToSave = u, t.editInfo.offlineEditDataVersion = a.offlineEditDataVersion)
   })
 }
-class D extends(r = l.ZP.PersistedStore) {
+class w extends(r = l.ZP.PersistedStore) {
   initialize(e) {
-    w(e)
+    D(e)
   }
   getState() {
     return this.computeState()
@@ -209,8 +209,8 @@ class D extends(r = l.ZP.PersistedStore) {
     return null !== (t = null === (e = this.settings.guilds) || void 0 === e ? void 0 : e.guilds) && void 0 !== t ? t : null
   }
 }
-m(D, "displayName", "UserSettingsProtoStore"), m(D, "persistKey", "UserSettingsProtoStore-Cache");
-let L = new D(f.Z, {
+m(w, "displayName", "UserSettingsProtoStore"), m(w, "persistKey", "UserSettingsProtoStore-Cache");
+let L = new w(f.Z, {
   CACHE_LOADED: P,
   USER_SETTINGS_PROTO_UPDATE: C,
   USER_SETTINGS_PROTO_ENQUEUE_UPDATE: C,

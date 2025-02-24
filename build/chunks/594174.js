@@ -154,7 +154,7 @@ function P(e) {
   }))
 }
 
-function w(e) {
+function D(e) {
   let {
     guilds: t,
     lazyPrivateChannels: n
@@ -171,13 +171,13 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   return !("incomplete" in e)
 }
 
 function L(e) {
   if (null != e.users)
-    for (let t of e.users) !(t.id in E && D(t)) && (E[t.id] = new c.Z(t))
+    for (let t of e.users) !(t.id in E && w(t)) && (E[t.id] = new c.Z(t))
 }
 
 function x(e) {
@@ -194,14 +194,14 @@ function M(e) {
   N(t)
 }
 
-function k(e) {
+function j(e) {
   let {
     user: t
   } = e;
   N(t)
 }
 
-function j(e) {
+function k(e) {
   let {
     messages: t
   } = e;
@@ -219,7 +219,7 @@ function G(e) {
   let {
     messages: t
   } = e;
-  return t.forEach(e => j({
+  return t.forEach(e => k({
     messages: e
   })), !1
 }
@@ -232,7 +232,7 @@ function B(e) {
   null != t && t.forEach(e => R(e, !0)), null != n && n.forEach(e => N(e.user, !0))
 }
 
-function Z(e) {
+function F(e) {
   let {
     threads: t
   } = e;
@@ -246,7 +246,7 @@ function Z(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     supplementalData: t
   } = e;
@@ -258,7 +258,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function Z(e) {
   let {
     guildScheduledEventUsers: t,
     guildId: n
@@ -596,7 +596,7 @@ class eN extends p.Z {
     if (null != t)
       for (let e of t.users) E[e.id] = new c.Z(e);
     if (null != e.users)
-      for (let t of e.users) !(t.id in E && D(t)) && (E[t.id] = new c.Z(t));
+      for (let t of e.users) !(t.id in E && w(t)) && (E[t.id] = new c.Z(t));
     for (let t of [e.privateChannels, e.initialGuildChannels])
       for (let e of t) {
         var n;
@@ -637,8 +637,8 @@ class eN extends p.Z {
   constructor() {
     super({
       CONNECTION_OPEN: P,
-      CONNECTION_OPEN_SUPPLEMENTAL: w,
-      UPDATE_CLIENT_PREMIUM_TYPE: k,
+      CONNECTION_OPEN_SUPPLEMENTAL: D,
+      UPDATE_CLIENT_PREMIUM_TYPE: j,
       OVERLAY_INITIALIZE: L,
       CACHE_LOADED: e => this.handleLoadCache(e),
       USER_UPDATE: x,
@@ -646,10 +646,10 @@ class eN extends p.Z {
       PRESENCE_UPDATES: Q,
       SEARCH_FINISH: G,
       MOD_VIEW_SEARCH_FINISH: G,
-      LOAD_MESSAGES_SUCCESS: j,
-      LOAD_MESSAGES_AROUND_SUCCESS: j,
-      LOAD_PINNED_MESSAGES_SUCCESS: j,
-      LOAD_RECENT_MENTIONS_SUCCESS: j,
+      LOAD_MESSAGES_SUCCESS: k,
+      LOAD_MESSAGES_AROUND_SUCCESS: k,
+      LOAD_PINNED_MESSAGES_SUCCESS: k,
+      LOAD_RECENT_MENTIONS_SUCCESS: k,
       THREAD_LIST_SYNC: U,
       MESSAGE_CREATE: Y,
       MESSAGE_UPDATE: Y,
@@ -681,11 +681,11 @@ class eN extends p.Z {
       GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: em,
       LOAD_THREADS_SUCCESS: B,
       LOAD_ARCHIVED_THREADS_SUCCESS: B,
-      LOAD_FORUM_POSTS: Z,
-      GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: V,
+      LOAD_FORUM_POSTS: F,
+      GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: Z,
       LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: H,
       NOTIFICATION_CENTER_ITEM_CREATE: W,
-      LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS: F,
+      LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS: V,
       PASSIVE_UPDATE_V2: ei,
       LOCAL_MESSAGES_LOADED: eo,
       FAMILY_CENTER_INITIAL_LOAD: eE,

@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(981631),
   p = n(388032),
   h = n(594181);
-let g = [{
+let f = [{
     feature: d.Qa3.SINGLE_PLAYER,
     getText: () => p.NW.string(p.t["V+/FjI"]),
     getTooltip: () => p.NW.string(p.t["w+X9sb"]),
@@ -79,7 +79,7 @@ let g = [{
     getTooltip: () => p.NW.string(p.t.VudViI),
     IconComponent: u.Z
   }],
-  f = e => {
+  g = e => {
     let {
       IconComponent: t,
       text: n,
@@ -123,7 +123,7 @@ class m extends i.PureComponent {
   render() {
     let {
       sku: e
-    } = this.props, t = g.filter(t => {
+    } = this.props, t = f.filter(t => {
       let {
         feature: n
       } = t;
@@ -135,7 +135,7 @@ class m extends i.PureComponent {
         getText: i,
         getTooltip: l
       } = e;
-      return (0, r.jsx)(f, {
+      return (0, r.jsx)(g, {
         IconComponent: n,
         text: i(),
         tooltip: l()

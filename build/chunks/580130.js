@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(47120), n(653041);
 var r, i = n(392711),
   o = n.n(i),
@@ -64,7 +64,7 @@ function P(e) {
   S.add(t)
 }
 
-function w(e) {
+function D(e) {
   let {
     applicationId: t,
     entitlements: n
@@ -72,7 +72,7 @@ function w(e) {
   for (let e of (S.delete(t), I.add(t), n)) !0 !== e.consumed && A(e)
 }
 
-function D(e) {
+function w(e) {
   let {
     entitlements: t
   } = e;
@@ -93,11 +93,11 @@ function M(e) {
   for (let e of (y = !0, b = !1, O = !n, t)) A(e)
 }
 
-function k() {
+function j() {
   y = !1, b = !1, O = !1
 }
 
-function j(e) {
+function k(e) {
   let {
     entitlements: t
   } = e;
@@ -120,7 +120,7 @@ function G(e) {
 function B(e) {
   return R(e.entitlement)
 }
-class Z extends(r = s.yh) {
+class F extends(r = s.yh) {
   initialize() {
     this.syncWith([u.Z], () => !0)
   }
@@ -215,14 +215,14 @@ class Z extends(r = s.yh) {
     }), t
   }
 }
-h(Z, "displayName", "EntitlementStore");
-let F = new Z(l.Z, {
+h(F, "displayName", "EntitlementStore");
+let V = new F(l.Z, {
   ENTITLEMENT_FETCH_APPLICATION_START: P,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: w,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: D,
   ENTITLEMENT_FETCH_APPLICATION_FAIL: L,
-  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: D,
-  SKU_PURCHASE_SUCCESS: j,
-  VIRTUAL_CURRENCY_REDEEM_SUCCESS: j,
+  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: w,
+  SKU_PURCHASE_SUCCESS: k,
+  VIRTUAL_CURRENCY_REDEEM_SUCCESS: k,
   LIBRARY_FETCH_SUCCESS: U,
   ENTITLEMENT_CREATE: G,
   ENTITLEMENT_UPDATE: G,
@@ -230,5 +230,5 @@ let F = new Z(l.Z, {
   LOGOUT: N,
   ENTITLEMENTS_FETCH_FOR_USER_START: x,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
-  ENTITLEMENTS_FETCH_FOR_USER_FAIL: k
+  ENTITLEMENTS_FETCH_FOR_USER_FAIL: j
 })

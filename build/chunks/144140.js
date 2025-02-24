@@ -108,7 +108,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   if (null != e && !(e.id in O)) {
     let t = f.Z.getChannel(e.id);
     if (null != t) return P(t), !0
@@ -116,7 +116,7 @@ function w(e) {
   return !1
 }
 
-function D(e) {
+function w(e) {
   S = {}, y.clear(), e.guilds.forEach(C)
 }
 
@@ -146,14 +146,14 @@ function M(e) {
   I(t.id)
 }
 
-function k(e) {
+function j(e) {
   let {
     channel: t
   } = e;
   P(t)
 }
 
-function j(e) {
+function k(e) {
   let {
     threads: t,
     mostRecentMessages: n
@@ -170,7 +170,7 @@ function U(e) {
   let {
     threads: t
   } = e;
-  t.forEach(w)
+  t.forEach(D)
 }
 
 function G(e) {
@@ -179,8 +179,8 @@ function G(e) {
     threads: n
   } = e;
   for (let e of t)
-    for (let t of e) w(t.thread);
-  n.forEach(w)
+    for (let t of e) D(t.thread);
+  n.forEach(D)
 }
 
 function B(e) {
@@ -190,14 +190,14 @@ function B(e) {
   T(t.id)
 }
 
-function Z(e) {
+function F(e) {
   let {
     channel: t
   } = e;
   delete O[t.id]
 }
 
-function F(e) {
+function V(e) {
   let {
     message: t,
     optimistic: n,
@@ -206,13 +206,13 @@ function F(e) {
   } = e;
   if (n || r || null != i) return !1;
   let o = f.Z.getChannel(t.channel_id);
-  if (null == o || !c.Ec.has(o.type) || !V(o, t)) return !1;
+  if (null == o || !c.Ec.has(o.type) || !Z(o, t)) return !1;
   N(o, e => {
     e.count = Math.min(e.count + 1, h.M3), e.mostRecentRawMessage = t, e.mostRecentMessage = null
   })
 }
 
-function V(e, t) {
+function Z(e, t) {
   return !(t.type === m.uaV.THREAD_STARTER_MESSAGE || e.isForumPost() && t.id === _.default.castChannelIdAsMessageId(e.id))
 }
 
@@ -262,7 +262,7 @@ function Y(e) {
 
 function K(e) {
   let t = !1;
-  for (let n of e.messages) t = w(n.thread) || t;
+  for (let n of e.messages) t = D(n.thread) || t;
   if (e.isAfter || e.isBefore || e.hasMoreAfter) return t;
   let n = f.Z.getChannel(e.channelId);
   if (null == n || !c.Ec.has(n.type)) return t;
@@ -308,13 +308,13 @@ class q extends(r = a.ZP.Store) {
 }
 g(q, "displayName", "ThreadMessageStore");
 let Q = new q(s.Z, {
-  CONNECTION_OPEN: D,
+  CONNECTION_OPEN: w,
   OVERLAY_INITIALIZE: L,
   GUILD_CREATE: x,
   GUILD_DELETE: M,
-  THREAD_CREATE: k,
-  THREAD_UPDATE: k,
-  THREAD_LIST_SYNC: j,
+  THREAD_CREATE: j,
+  THREAD_UPDATE: j,
+  THREAD_LIST_SYNC: k,
   LOAD_THREADS_SUCCESS: U,
   LOAD_ARCHIVED_THREADS_SUCCESS: U,
   RELATIONSHIP_ADD: z,
@@ -322,9 +322,9 @@ let Q = new q(s.Z, {
   RELATIONSHIP_REMOVE: z,
   SEARCH_FINISH: G,
   MOD_VIEW_SEARCH_FINISH: G,
-  THREAD_DELETE: Z,
+  THREAD_DELETE: F,
   CHANNEL_DELETE: B,
-  MESSAGE_CREATE: F,
+  MESSAGE_CREATE: V,
   MESSAGE_UPDATE: H,
   MESSAGE_DELETE: W,
   MESSAGE_DELETE_BULK: Y,

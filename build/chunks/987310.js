@@ -1,16 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => l
+r.d(t, {
+  Z: () => s
 });
-var r = n(195168),
-  i = "object" == typeof exports && exports && !exports.nodeType && exports,
-  o = i && "object" == typeof module && module && !module.nodeType && module,
-  a = o && o.exports === i ? r.Z.Buffer : void 0,
-  s = a ? a.allocUnsafe : void 0;
-let l = function(e, t) {
+var n = r(195168),
+  o = "object" == typeof exports && exports && !exports.nodeType && exports,
+  a = o && "object" == typeof module && module && !module.nodeType && module,
+  i = a && a.exports === o ? n.Z.Buffer : void 0,
+  l = i ? i.allocUnsafe : void 0;
+let s = function(e, t) {
   if (t) return e.slice();
-  var n = e.length,
-    r = s ? s(n) : new e.constructor(n);
-  return e.copy(r), r
+  var r = e.length,
+    n = l ? l(r) : new e.constructor(r);
+  return e.copy(n), n
 }

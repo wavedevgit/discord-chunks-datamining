@@ -42,21 +42,21 @@ function N(e) {
   }), P = (0, a.e7)([_.default], () => {
     var e;
     return (null === (e = _.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === N.id
-  }), w = (0, a.e7)([p.Z], () => p.Z.findActivity(N.id, e => {
+  }), D = (0, a.e7)([p.Z], () => p.Z.findActivity(N.id, e => {
     let {
       type: t
     } = e;
     return t === E.IIU.CUSTOM_STATUS
-  })), D = !P && A === g.y0.BITE_SIZE && (0, o.EQ)(t).with(g.n_.AVATAR, () => R && null == w).with(g.n_.STATUS, () => R).with(g.n_.ACTIVITY, () => !R && C).exhaustive(), [L, x] = i.useState(!1);
-  (0, c.Z)(() => x(!0), D ? S : null);
+  })), w = !P && A === g.y0.BITE_SIZE && (0, o.EQ)(t).with(g.n_.AVATAR, () => R && null == D).with(g.n_.STATUS, () => R).with(g.n_.ACTIVITY, () => !R && C).exhaustive(), [L, x] = i.useState(!1);
+  (0, c.Z)(() => x(!0), w ? S : null);
   let {
     asset: M,
-    assetClassName: k,
-    className: j,
+    assetClassName: j,
+    className: k,
     content: U,
     header: G,
     spacing: B,
-    dismissibleContentType: Z
+    dismissibleContentType: F
   } = R ? {
     asset: O,
     assetClassName: b.profileImage,
@@ -73,7 +73,7 @@ function N(e) {
     header: v.NW.string(v.t.XDBiPT),
     spacing: I,
     dismissibleContentType: s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
-  }, F = (0, u.N)(s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), V = L && !F ? [Z] : [], [H, W] = (0, d.US)(V);
+  }, V = (0, u.N)(s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), Z = L && !V ? [F] : [], [H, W] = (0, d.US)(Z);
   return (0, r.jsx)(l.yRy, {
     align: "center",
     position: t === g.n_.AVATAR ? "left" : "right",
@@ -88,11 +88,11 @@ function N(e) {
       return (0, r.jsx)(l.VqE, {
         ref: i,
         children: (0, r.jsx)(f.ZP, {
-          className: j,
+          className: k,
           asset: (0, r.jsx)("img", {
             alt: "",
             src: M,
-            className: k
+            className: j
           }),
           buttonCTA: v.NW.string(v.t["+IrDzM"]),
           buttonLayout: f._F.STACKED,

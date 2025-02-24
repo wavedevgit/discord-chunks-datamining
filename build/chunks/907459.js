@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 });
 var r = n(200651),
   i = n(192379),
@@ -88,7 +88,7 @@ let C = () => {
     })
   };
 
-function w(e) {
+function D(e) {
   let {
     isCoachmark: t,
     markAsDismissed: n

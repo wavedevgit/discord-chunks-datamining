@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -52,7 +52,7 @@ class h extends i.PureComponent {
     }) : this[t] = n
   }
 }
-let g = l.ZP.connectStores([s.Z], e => {
+let f = l.ZP.connectStores([s.Z], e => {
   let {
     guild: t
   } = e;

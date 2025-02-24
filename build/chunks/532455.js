@@ -1,11 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => l
+r.d(t, {
+  Z: () => s
 });
-var r = n(195168),
-  i = n(980687),
-  o = "object" == typeof exports && exports && !exports.nodeType && exports,
-  a = o && "object" == typeof module && module && !module.nodeType && module,
-  s = a && a.exports === o ? r.Z.Buffer : void 0;
-let l = (s ? s.isBuffer : void 0) || i.Z
+var n = r(195168),
+  o = r(980687),
+  a = "object" == typeof exports && exports && !exports.nodeType && exports,
+  i = a && "object" == typeof module && module && !module.nodeType && module,
+  l = i && i.exports === a ? n.Z.Buffer : void 0;
+let s = (l ? l.isBuffer : void 0) || o.Z

@@ -93,7 +93,7 @@ function y(e) {
       action: "UNIGNORE",
       analyticsLocations: S
     })
-  }), w = (0, _.Z)({
+  }), D = (0, _.Z)({
     user: t,
     guildId: n,
     location: I,
@@ -102,7 +102,7 @@ function y(e) {
       action: "REPORT",
       analyticsLocations: S
     })
-  }), D = (0, u.Z)({
+  }), w = (0, u.Z)({
     id: null == A ? void 0 : A.id,
     label: E.NW.string(E.t["+NP/b2"]),
     onSuccess: () => O({
@@ -111,7 +111,7 @@ function y(e) {
     })
   }), L = [
     [v], T ? [C] : [],
-    [P, R, w],
+    [P, R, D],
     [(0, c.Z)({
       application: A,
       label: E.NW.string(E.t.WqhZsr),
@@ -119,7 +119,7 @@ function y(e) {
         action: "COPY_APP_LINK",
         analyticsLocations: S
       })
-    }), D]
+    }), w]
   ];
   return L.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
     renderPopout: e => {

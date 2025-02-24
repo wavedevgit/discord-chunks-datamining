@@ -1,43 +1,43 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r, i, o, a, s, l = n(668530),
-  c = n(476508),
+var r, o, a, i, s, c = n(668530),
+  l = n(476508),
   u = n(65007).f,
   d = n(62691).set,
-  f = n(6938),
-  p = n(378636),
-  _ = n(192006),
-  h = n(325435),
-  m = n(42433),
-  g = l.MutationObserver || l.WebKitMutationObserver,
-  E = l.document,
-  v = l.process,
-  b = l.Promise,
-  y = u(l, "queueMicrotask"),
-  O = y && y.value;
-if (!O) {
-  var S = new f,
-    I = function() {
+  p = n(6938),
+  h = n(378636),
+  f = n(192006),
+  m = n(325435),
+  y = n(42433),
+  v = c.MutationObserver || c.WebKitMutationObserver,
+  g = c.document,
+  b = c.process,
+  _ = c.Promise,
+  k = u(c, "queueMicrotask"),
+  C = k && k.value;
+if (!C) {
+  var Z = new p,
+    w = function() {
       var e, t;
-      for (m && (e = v.domain) && e.exit(); t = S.get();) try {
+      for (y && (e = b.domain) && e.exit(); t = Z.get();) try {
         t()
       } catch (e) {
-        throw S.head && r(), e
+        throw Z.head && r(), e
       }
       e && e.enter()
     };
-  p || m || h || !g || !E ? !_ && b && b.resolve ? ((a = b.resolve(void 0)).constructor = b, s = c(a.then, a), r = function() {
-    s(I)
-  }) : m ? r = function() {
-    v.nextTick(I)
-  } : (d = c(d, l), r = function() {
-    d(I)
-  }) : (i = !0, o = E.createTextNode(""), new g(I).observe(o, {
+  h || y || m || !v || !g ? !f && _ && _.resolve ? ((i = _.resolve(void 0)).constructor = _, s = l(i.then, i), r = function() {
+    s(w)
+  }) : y ? r = function() {
+    b.nextTick(w)
+  } : (d = l(d, c), r = function() {
+    d(w)
+  }) : (o = !0, a = g.createTextNode(""), new v(w).observe(a, {
     characterData: !0
   }), r = function() {
-    o.data = i = !i
-  }), O = function(e) {
-    S.head || r(), S.add(e)
+    a.data = o = !o
+  }), C = function(e) {
+    Z.head || r(), Z.add(e)
   }
 }
-e.exports = O
+e.exports = C

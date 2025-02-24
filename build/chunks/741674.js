@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var t = TypeError,
-  n = 0x1fffffffffffff;
-e.exports = function(e) {
-  if (e > n) throw t("Maximum allowed index exceeded");
-  return e
+var r = TypeError;
+t.exports = function(t) {
+  if (t > 0x1fffffffffffff) throw r("Maximum allowed index exceeded");
+  return t
 }

@@ -13,8 +13,8 @@ var r = n(392711),
   d = n(626135),
   p = n(81063),
   h = n(70956),
-  g = n(996106),
-  f = n(914946),
+  f = n(996106),
+  g = n(914946),
   m = n(452426),
   b = n(186901),
   _ = n(981631);
@@ -87,10 +87,10 @@ let O = ["349134787773988865"],
           },
           isSocketConnected: T
         } = e;
-        if (![b.He.IPC, b.He.WEBSOCKET, b.He.POST_MESSAGE].includes(I.transport)) throw new g.Z({
+        if (![b.He.IPC, b.He.WEBSOCKET, b.He.POST_MESSAGE].includes(I.transport)) throw new f.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, 'command not available from "'.concat(I.transport, '" transport'));
-        if (null == C && b.He.IPC === I.transport) throw new g.Z({
+        if (null == C && b.He.IPC === I.transport) throw new f.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, "nonzero pid required");
         if (null == S) return o.Z.dispatch({
@@ -103,7 +103,7 @@ let O = ["349134787773988865"],
         let P = I.application.id;
         S.application_id = P;
         let j = I.transport === b.He.POST_MESSAGE,
-          A = (0, f.S5)(S, j);
+          A = (0, g.S5)(S, j);
         A > 0 && (S.flags = A);
         let Z = u.Z.getApplication(null != P ? P : void 0);
         if (null != Z && (0, a.Kb)(Z) && j) {
@@ -128,13 +128,13 @@ let O = ["349134787773988865"],
         } = S;
         if (null == k && (S.type = _.IIU.PLAYING), null != w) {
           let e = i().values(w).filter(e => !!e);
-          if (null != L && i().intersection(e, [L.id]).length > 0 && !O.includes(I.application.id)) throw new g.Z({
+          if (null != L && i().intersection(e, [L.id]).length > 0 && !O.includes(I.application.id)) throw new f.Z({
             errorCode: _.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot match the party id");
-          if (i().uniq(e).length < e.length) throw new g.Z({
+          if (i().uniq(e).length < e.length) throw new f.Z({
             errorCode: _.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets must be unique");
-          if (null != D) throw new g.Z({
+          if (null != D) throw new f.Z({
             errorCode: _.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot currently be sent with buttons")
         }

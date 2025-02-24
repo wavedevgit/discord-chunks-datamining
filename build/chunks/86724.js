@@ -160,7 +160,7 @@ function C(e) {
     let e = b.bN.richValue(i)[0],
       t = e.children[0];
     if (N.has(e.type) && b.LC.isText(t)) {
-      let e = k(t.text, s);
+      let e = j(t.text, s);
       if (null != e) return o.Po({
         channelId: s.id,
         command: e.command,
@@ -169,7 +169,7 @@ function C(e) {
     }
   }
   if (null != h && null != p) {
-    w(i, h) || D(i, h);
+    D(i, h) || w(i, h);
     let e = m.tM(i, h, s.id),
       t = b.bN.above(i, {
         match: e => b.bN.isInline(i, e) && "applicationCommandOption" === e.type,
@@ -222,7 +222,7 @@ function R(e, t, n) {
     if (null != d)
       for (let r of d) {
         e.add(r.name);
-        let i = null !== (s = j(n, t, r.name)) && void 0 !== s ? s : r.text,
+        let i = null !== (s = k(n, t, r.name)) && void 0 !== s ? s : r.text,
           o = {
             type: "applicationCommandOption",
             optionName: r.name,
@@ -237,7 +237,7 @@ function R(e, t, n) {
     for (let r of u.options)
       if (!e.has(r.name) && (r.required || null != c[r.name])) {
         let e, i;
-        p.length > 0 && !T.has(r.type) ? (e = p, p = "") : e = null != (i = j(n, t, r.name)) ? i : "";
+        p.length > 0 && !T.has(r.type) ? (e = p, p = "") : e = null != (i = k(n, t, r.name)) ? i : "";
         let o = {
           type: "applicationCommandOption",
           optionName: r.name,
@@ -271,7 +271,7 @@ function R(e, t, n) {
     })
   });
   let C = null;
-  return null != I ? (v.Q.selectCommandOption(e, I.optionName), C = I.optionName) : null != N ? (v.Q.selectCommandOption(e, N.optionName, !1), C = N.optionName) : v.Q.resetSelectionToEnd(e), null == N && D(e, u), C
+  return null != I ? (v.Q.selectCommandOption(e, I.optionName), C = I.optionName) : null != N ? (v.Q.selectCommandOption(e, N.optionName, !1), C = N.optionName) : v.Q.resetSelectionToEnd(e), null == N && w(e, u), C
 }
 
 function P(e, t, n, r) {
@@ -296,7 +296,7 @@ function P(e, t, n, r) {
   })
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == t.options || 0 === t.options.length) return !1;
   let n = m.zb(e, t);
   return 0 !== n.length && (b.bN.withoutNormalizing(e, () => {
@@ -331,7 +331,7 @@ function w(e, t) {
   }), !0)
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == t.options || 1 !== t.options.length || !0 === t.options[0].required || T.has(t.options[0].type) || m.cu(e).length > 0 || null == m.cr(e)) return !1;
   let n = b.bN.getFirstText(e);
   if (null == n) return !1;
@@ -425,7 +425,7 @@ function M(e, t) {
   }) && v.Q.insertText(e, " ")
 }
 
-function k(e, t) {
+function j(e, t) {
   if (!e.startsWith("/")) return null;
   let n = (0, f.hV)(t, e.substring(1));
   if (!n.hasSpaceTerminator) return null;
@@ -454,7 +454,7 @@ function k(e, t) {
   return null
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   var r, o, a, s;
   let l = null === (o = e.activeCommand) || void 0 === o ? void 0 : null === (r = o.options) || void 0 === r ? void 0 : r.find(e => e.name === n),
     c = e.initialValues[n];

@@ -30,8 +30,8 @@ var r, i = n(392711),
   C = n(699516),
   R = n(944486),
   P = n(914010),
-  w = n(594174),
-  D = n(981631);
+  D = n(594174),
+  w = n(981631);
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -43,9 +43,9 @@ function L(e, t, n) {
 }
 let x = new Set,
   M = new d.Z("MessageStore"),
-  k = !1;
+  j = !1;
 
-function j() {
+function k() {
   c.Z.forEach(e => {
     c.Z.commit(e.mutate({
       ready: !1,
@@ -85,14 +85,14 @@ function B(e) {
   i = i.truncate(n, r), c.Z.commit(i)
 }
 
-function Z(e) {
+function F(e) {
   let {
     channelId: t
   } = e;
   M.log("Clearing messages for ".concat(t)), c.Z.clear(t), x.clear()
 }
 
-function F(e) {
+function V(e) {
   let {
     channelId: t,
     jump: n,
@@ -105,7 +105,7 @@ function F(e) {
   (null == n ? void 0 : n.present) ? l = l.jumpToPresent(a): (null == r ? void 0 : r.messageId) != null ? l = l.focusOnMessage(r.messageId) : (null == n ? void 0 : n.messageId) != null ? l = l.jumpToMessage(n.messageId, n.flash, n.offset, n.returnMessageId, n.jumpType) : (null != i || null != o) && (l = l.loadFromCache(null != i, a)), null != s && (null != i || null != o) && (null == i || null == o) && (l = l.truncate(null != i, null != o)), c.Z.commit(l)
 }
 
-function V(e) {
+function Z(e) {
   let {
     channelId: t,
     isBefore: n,
@@ -170,7 +170,7 @@ function K(e) {
     return
   }
   if (!i.ready) return !1;
-  null != n.nonce && n.state !== D.yb.SENDING && x.has(n.nonce) && (i = i.remove(n.nonce), x.delete(n.nonce)), i = i.receiveMessage(n, !0 === S.Z.isAtBottom(t)), c.Z.commit(i)
+  null != n.nonce && n.state !== w.yb.SENDING && x.has(n.nonce) && (i = i.remove(n.nonce), x.delete(n.nonce)), i = i.receiveMessage(n, !0 === S.Z.isAtBottom(t)), c.Z.commit(i)
 }
 
 function z(e) {
@@ -181,7 +181,7 @@ function z(e) {
   } = e, i = c.Z.getOrCreate(t);
   if (null == i || !i.has(n)) return !1;
   let o = i.get(n, !0);
-  i = (null == o ? void 0 : o.isPoll()) === !0 ? i.remove(n) : i.update(n, e => ((e = e.set("state", D.yb.SEND_FAILED)).isCommandType() ? e = (e = e.set("interactionError", null != r ? r : "")).set("flags", (0, v.pj)(e.flags, D.iLy.EPHEMERAL)) : null != r && (e = e.set("interactionError", null != r ? r : "")), e)), c.Z.commit(i)
+  i = (null == o ? void 0 : o.isPoll()) === !0 ? i.remove(n) : i.update(n, e => ((e = e.set("state", w.yb.SEND_FAILED)).isCommandType() ? e = (e = e.set("interactionError", null != r ? r : "")).set("flags", (0, v.pj)(e.flags, w.iLy.EPHEMERAL)) : null != r && (e = e.set("interactionError", null != r ? r : "")), e)), c.Z.commit(i)
 }
 
 function q(e) {
@@ -310,7 +310,7 @@ function es(e) {
   if (null == i) return !1;
   i = i.update(n, e => {
     var t;
-    return e.addReactionBatch(r, null === (t = w.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)
+    return e.addReactionBatch(r, null === (t = D.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)
   }), c.Z.commit(i)
 }
 
@@ -324,7 +324,7 @@ function el(e) {
   if (!a.has(i)) return !1;
   a = a.update(i, e => {
     var n;
-    return (null === (n = e.embeds) || void 0 === n ? void 0 : n.filter(p.K).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, v.pj)(e.flags, D.iLy.EPHEMERAL))), e
+    return (null === (n = e.embeds) || void 0 === n ? void 0 : n.filter(p.K).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, v.pj)(e.flags, w.iLy.EPHEMERAL))), e
   }), c.Z.commit(a)
 }
 
@@ -368,18 +368,18 @@ function ep(e) {
 function e_(e) {
   let {
     message: t
-  } = e, n = w.default.getCurrentUser();
-  null != t && null != t.author && null != n && t.author.id === n.id && (k = !0)
+  } = e, n = D.default.getCurrentUser();
+  null != t && null != t.author && null != n && t.author.id === n.id && (j = !0)
 }
 class eh extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(w.default, O.Z, S.Z, T.ZP, E.default, R.Z, P.Z, N.Z, C.Z, I.ZP), this.syncWith([_.Z], () => {})
+    this.waitFor(D.default, O.Z, S.Z, T.ZP, E.default, R.Z, P.Z, N.Z, C.Z, I.ZP), this.syncWith([_.Z], () => {})
   }
   getMessages(e) {
     if (_.Z.hasViewingRoles()) {
       let t = O.Z.getChannel(e),
         n = null == t ? void 0 : t.getGuildId();
-      if (_.Z.isViewingRoles(n) && !A.Z.can(D.Plq.VIEW_CHANNEL, t)) return new c.Z(e)
+      if (_.Z.isViewingRoles(n) && !A.Z.can(w.Plq.VIEW_CHANNEL, t)) return new c.Z(e)
     }
     return c.Z.getOrCreate(e)
   }
@@ -387,11 +387,11 @@ class eh extends(r = a.ZP.Store) {
     return c.Z.getOrCreate(e).get(t)
   }
   getLastEditableMessage(e) {
-    let t = w.default.getCurrentUser();
+    let t = D.default.getCurrentUser();
     return o()(this.getMessages(e).toArray()).reverse().find(e => (0, m.Z)(e, null == t ? void 0 : t.id))
   }
   getLastChatCommandMessage(e) {
-    let t = w.default.getCurrentUser();
+    let t = D.default.getCurrentUser();
     return this.getMessages(e).toArray().reverse().find(e => {
       var n, r;
       return (null === (n = e.interaction) || void 0 === n ? void 0 : n.type) === l.B8.APPLICATION_COMMAND && (null === (r = e.interactionData) || void 0 === r ? void 0 : r.type) === l.yU.CHAT && e.interaction.user.id === (null == t ? void 0 : t.id)
@@ -401,7 +401,7 @@ class eh extends(r = a.ZP.Store) {
     return o()(this.getMessages(e).toArray()).reverse().get(0)
   }
   getLastNonCurrentUserMessage(e) {
-    let t = w.default.getCurrentUser();
+    let t = D.default.getCurrentUser();
     return o()(this.getMessages(e).toArray()).reverse().find(e => e.author.id !== (null == t ? void 0 : t.id))
   }
   jumpedMessageId(e) {
@@ -428,27 +428,27 @@ class eh extends(r = a.ZP.Store) {
     return c.Z.getOrCreate(e).loadingMore
   }
   hasCurrentUserSentMessage(e) {
-    let t = w.default.getCurrentUser();
+    let t = D.default.getCurrentUser();
     return null != this.getMessages(e).findNewest(e => e.author.id === (null == t ? void 0 : t.id))
   }
   hasCurrentUserSentMessageSinceAppStart() {
-    return k
+    return j
   }
 }
 L(eh, "displayName", "MessageStore");
 let em = new eh(s.Z, {
   BACKGROUND_SYNC_CHANNEL_MESSAGES: U,
-  CONNECTION_OPEN: j,
-  OVERLAY_INITIALIZE: j,
+  CONNECTION_OPEN: k,
+  OVERLAY_INITIALIZE: k,
   CACHE_LOADED: ef,
   LOAD_MESSAGES: G,
-  LOAD_MESSAGES_SUCCESS: V,
+  LOAD_MESSAGES_SUCCESS: Z,
   LOAD_MESSAGES_FAILURE: H,
-  LOAD_MESSAGES_SUCCESS_CACHED: F,
+  LOAD_MESSAGES_SUCCESS_CACHED: V,
   LOCAL_MESSAGES_LOADED: ep,
   LOAD_MESSAGE_INTERACTION_DATA_SUCCESS: $,
   TRUNCATE_MESSAGES: B,
-  CLEAR_MESSAGES: Z,
+  CLEAR_MESSAGES: F,
   MESSAGE_CREATE: K,
   MESSAGE_SEND_FAILED: z,
   MESSAGE_SEND_FAILED_AUTOMOD: el,

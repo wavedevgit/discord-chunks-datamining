@@ -1,12 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => o
+r.d(t, {
+  Z: () => a
 });
-var r = n(192379),
-  i = n(723184);
-let o = function() {
-  var e = (0, i.default)({
+var n = r(192379),
+  o = r(723184);
+let a = function() {
+  var e = (0, o.default)({
     default: {
       triangle: {
         width: 0,
@@ -43,15 +43,15 @@ let o = function() {
       }
     }
   });
-  return r.createElement("div", {
+  return n.createElement("div", {
     style: e.pointer
-  }, r.createElement("div", {
+  }, n.createElement("div", {
     style: e.left
-  }, r.createElement("div", {
+  }, n.createElement("div", {
     style: e.leftInside
-  })), r.createElement("div", {
+  })), n.createElement("div", {
     style: e.right
-  }, r.createElement("div", {
+  }, n.createElement("div", {
     style: e.rightInside
   })))
 }

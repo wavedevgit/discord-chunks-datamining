@@ -17,8 +17,8 @@ n.d(t, {
   ig: () => x,
   kr: () => E,
   n2: () => y,
-  q_: () => D,
-  vU: () => w,
+  q_: () => w,
+  vU: () => D,
   yA: () => S,
   yh: () => m,
   zo: () => L
@@ -201,13 +201,13 @@ function P(e) {
   return e.content_type === s.s.TOP_GAME
 }
 
-function w(e) {
+function D(e) {
   var t;
   return null === (t = g(e, a.N.STREAK_DAYS)) || void 0 === t ? void 0 : t.streak_count_days
 }
 
-function D(e) {
-  let t = w(e);
+function w(e) {
+  let t = D(e);
   if (null == t || t < 3) return !1;
   let n = c.default.extractTimestamp(e.id);
   return !(Date.now() - n > 48 * l.Z.Millis.HOUR)

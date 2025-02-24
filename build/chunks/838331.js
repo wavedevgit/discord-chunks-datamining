@@ -3,7 +3,7 @@
 n.d(t, {
   A7: () => N,
   hQ: () => R,
-  lo: () => w
+  lo: () => D
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -117,36 +117,36 @@ function R(e) {
     maxVisibleItems: N = 5,
     itemToString: R = A,
     showScrollbar: P = !1
-  } = e, [w, D] = i.useState(""), [L] = i.useState(!0), [x, M] = i.useState(null), k = i.useId(), j = i.useRef(null);
+  } = e, [D, w] = i.useState(""), [L] = i.useState(!0), [x, M] = i.useState(null), j = i.useId(), k = i.useRef(null);
   i.useLayoutEffect(() => {
     let e = document.querySelector("[".concat(S, '="').concat(x, '"]')),
-      t = j.current;
+      t = k.current;
     null != t && null != e && t.scrollIntoViewNode({
       node: e,
       padding: 12
     })
   }, [x]);
-  let U = n(w),
+  let U = n(D),
     G = 0 === U.length,
     B = i.useId(),
-    Z = i.useCallback(() => new Promise(e => {
-      let t = j.current;
-      if (null == t) return e();
-      t.scrollToTop({
-        callback: () => requestAnimationFrame(() => e())
-      })
-    }), []),
     F = i.useCallback(() => new Promise(e => {
-      let t = j.current;
+      let t = k.current;
       if (null == t) return e();
       t.scrollToTop({
         callback: () => requestAnimationFrame(() => e())
       })
     }), []),
-    V = i.useCallback((e, t) => {
+    V = i.useCallback(() => new Promise(e => {
+      let t = k.current;
+      if (null == t) return e();
+      t.scrollToTop({
+        callback: () => requestAnimationFrame(() => e())
+      })
+    }), []),
+    Z = i.useCallback((e, t) => {
       M(t);
       let n = document.querySelector(e),
-        r = j.current;
+        r = k.current;
       null != r && null != n && r.scrollIntoViewNode({
         node: n
       })
@@ -155,9 +155,9 @@ function R(e) {
       id: B,
       isEnabled: !0,
       useVirtualFocus: !0,
-      scrollToStart: Z,
-      scrollToEnd: F,
-      setFocus: V
+      scrollToStart: F,
+      scrollToEnd: V,
+      setFocus: Z
     }),
     W = P ? d.Tv : d.lW;
   return (0, r.jsx)(l.bG, {
@@ -173,19 +173,19 @@ function R(e) {
           role: "combobox",
           "aria-label": v,
           "aria-expanded": L,
-          "aria-controls": L ? k : void 0,
-          "aria-owns": k,
+          "aria-controls": L ? j : void 0,
+          "aria-owns": j,
           "aria-haspopup": "listbox",
           className: a()(m.combobox, u),
           children: [(0, r.jsx)(f.E, {
             autoFocus: T,
             size: f.E.Sizes.MEDIUM,
             placeholder: t,
-            query: w,
-            onChange: D,
+            query: D,
+            onChange: w,
             onKeyDown: i,
             onBlur: () => M(null),
-            onClear: () => D(""),
+            onClear: () => w(""),
             className: a()({
               [m.searchWithScrollbar]: P
             }),
@@ -216,8 +216,8 @@ function R(e) {
                   maxHeight: N * (I + 6)
                 },
                 "aria-multiselectable": O,
-                id: k,
-                ref: j,
+                id: j,
+                ref: k,
                 className: a()(m.list, g, {
                   [m.scroller]: P
                 }),
@@ -241,7 +241,7 @@ function R(e) {
 }
 let P = i.createContext(null);
 
-function w(e) {
+function D(e) {
   var t, {
       value: n,
       children: o,
@@ -275,7 +275,7 @@ function w(e) {
     })
   }))
 }
-w.Colors = T, w.Label = function(e) {
+D.Colors = T, D.Label = function(e) {
   let {
     children: t
   } = e;
@@ -283,7 +283,7 @@ w.Colors = T, w.Label = function(e) {
     className: m.itemLabel,
     children: t
   })
-}, w.Icon = function(e) {
+}, D.Icon = function(e) {
   let {
     children: t
   } = e;
@@ -291,7 +291,7 @@ w.Colors = T, w.Label = function(e) {
     className: m.itemCheckbox,
     children: t
   })
-}, w.Checkbox = function(e) {
+}, D.Checkbox = function(e) {
   let {
     checked: t
   } = e, {
@@ -306,7 +306,7 @@ w.Colors = T, w.Label = function(e) {
       size: 20
     })
   })
-}, w.Checkmark = function() {
+}, D.Checkmark = function() {
   let {
     selected: e
   } = i.useContext(C), t = i.useContext(P);

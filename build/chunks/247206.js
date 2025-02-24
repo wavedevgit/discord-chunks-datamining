@@ -5,20 +5,20 @@ n.d(t, {
   HH: () => L,
   Hc: () => W,
   IV: () => Y,
-  KP: () => k,
+  KP: () => j,
   OP: () => H,
-  Pq: () => V,
+  Pq: () => Z,
   Sv: () => U,
-  Tw: () => j,
-  UU: () => Z,
+  Tw: () => k,
+  UU: () => F,
   Yy: () => B,
-  aP: () => F,
+  aP: () => V,
   bR: () => X,
-  l4: () => w,
+  l4: () => D,
   lJ: () => M,
   oh: () => G,
   tG: () => A,
-  vx: () => D,
+  vx: () => w,
   xx: () => K,
   zj: () => x
 }), n(789020);
@@ -128,7 +128,7 @@ let O = {
     } = e;
     return t && !n ? i.Q4.BLOCK : i.Q4.BLUR
   },
-  w = () => {
+  D = () => {
     let e = c.Sh.getSetting();
     return {
       explicitContentGuilds: A({
@@ -146,7 +146,7 @@ let O = {
     }
   };
 
-function D(e) {
+function w(e) {
   return e === i.Q4.BLUR || e === i.Q4.BLOCK
 }
 
@@ -158,18 +158,18 @@ function L(e) {
     explicitContentGuilds: r,
     explicitContentFriendDm: i,
     explicitContentNonFriendDm: o
-  } = w(), a = u.Z.getChannel(e.channel_id);
-  return null != a && (a.isDM() || a.isGroupDM() ? null != e.author && d.Z.getFriendIDs().includes(e.author.id) ? D(i) : D(o) : D(r))
+  } = D(), a = u.Z.getChannel(e.channel_id);
+  return null != a && (a.isDM() || a.isGroupDM() ? null != e.author && d.Z.getFriendIDs().includes(e.author.id) ? w(i) : w(o) : w(r))
 }
 let x = e => {
-  let t = w();
+  let t = D();
   c.Sh.updateSetting(y({}, t, e))
 };
 var M = function(e) {
   return e[e.Attachment = 0] = "Attachment", e[e.Embed = 1] = "Embed", e[e.GenericMedia = 2] = "GenericMedia", e
 }({});
 
-function k(e, t) {
+function j(e, t) {
   var n, r, i, s;
   if (!t) return !1;
   if (o.ZP.get("obscure_blur_effect_enabled")) return !0;
@@ -185,13 +185,13 @@ function k(e, t) {
   }
 }
 
-function j(e) {
+function k(e) {
   return L(e) ? {
-    obscuredAttachments: e.attachments.filter(e => k({
+    obscuredAttachments: e.attachments.filter(e => j({
       type: 0,
       media: e
     }, !0)),
-    obscuredEmbeds: e.embeds.filter(e => k({
+    obscuredEmbeds: e.embeds.filter(e => j({
       type: 1,
       media: e
     }, !0))
@@ -211,11 +211,11 @@ function G(e) {
 var B = function(e) {
     return e.EXPLICIT_MEDIA_LEARN_MORE_VIEWED = "explicit_media_learn_more_viewed", e.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS = "explicit_media_learn_more_click_settings", e.EXPLICIT_MEDIA_LEARN_MORE_CLICK_LEARN_MORE = "explicit_media_learn_more_click_learn_more", e.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS = "explicit_media_learn_more_click_dismiss", e.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE = "explicit_media_learn_more_click_false_positive", e.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED = "explicit_media_false_positive_viewed", e.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM = "explicit_media_false_positive_click_confirm", e.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL = "explicit_media_false_positive_click_cancel", e.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED = "explicit_media_sender_false_positive_button_clicked", e.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT = "explicit_media_false_positive_clyde_message_sent", e
   }({}),
-  Z = function(e) {
+  F = function(e) {
     return e.EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW = "explicit_media_obscured_false_positive_flow", e.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW = "explicit_media_sender_false_positive_flow", e.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED = "explicit_media_message_send_blocked", e.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED = "explicit_media_add_media_to_forum_post_blocked", e
   }({});
 
-function F(e) {
+function V(e) {
   let {
     action: t,
     channelId: n,
@@ -233,7 +233,7 @@ function F(e) {
     context: i
   })
 }
-var V = function(e) {
+var Z = function(e) {
   return e.UPDATE = "update", e.TIMEOUT = "timeout", e
 }({});
 

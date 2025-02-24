@@ -31,8 +31,8 @@ var r = n(200651),
   C = n(594174),
   R = n(51144),
   P = n(388032),
-  w = n(368365),
-  D = n(700241);
+  D = n(368365),
+  w = n(700241);
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,12 +67,12 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = (0, v.B)({
+let k = (0, v.B)({
   kind: "user",
   id: "2021-07_role_popout",
   label: "Role Popout",
@@ -103,7 +103,7 @@ function U(e) {
       guildId: i,
       channelId: o
     }),
-    renderPopout: e => (0, r.jsx)(I.Z, k(x({}, e), {
+    renderPopout: e => (0, r.jsx)(I.Z, j(x({}, e), {
       userId: t.userId,
       guildId: i,
       channelId: o,
@@ -129,7 +129,7 @@ function U(e) {
             let {
               default: e
             } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("59409")]).then(n.bind(n, 757387));
-            return t => (0, r.jsx)(e, k(x({}, t), {
+            return t => (0, r.jsx)(e, j(x({}, t), {
               user: l,
               guildId: i,
               channel: c,
@@ -185,14 +185,14 @@ function G(e) {
     title: h.name,
     count: m
   });
-  return (0, r.jsx)("div", k(x({
-    className: w.rolePopout,
+  return (0, r.jsx)("div", j(x({
+    className: D.rolePopout,
     ref: s
   }, t), {
     children: (0, r.jsxs)(d.Ttm, {
-      className: w.roleScroller,
+      className: D.roleScroller,
       children: [(0, r.jsx)(E.Z, {
-        className: w.roleHeader,
+        className: D.roleHeader,
         "aria-label": P.NW.formatToPlainString(P.t.UaqbkZ, {
           title: h.name,
           count: g.length
@@ -202,7 +202,7 @@ function G(e) {
           children: v
         })
       }), g, null == m || m <= g.length ? null : (0, r.jsx)(E.Z, {
-        className: w.roleHeader,
+        className: D.roleHeader,
         children: P.NW.formatToPlainString(P.t["9oMmZG"], {
           count: m - g.length
         })
@@ -222,19 +222,19 @@ function B(e) {
     inlinePreview: f = !1
   } = e, {
     analyticsLocations: p
-  } = (0, g.ZP)(m.Z.ROLE_MENTION), _ = (0, u.e7)([h.Z], () => h.Z.roleStyle), E = null != t && 0 !== t && !f, v = E && "dot" === _, b = e => (0, r.jsxs)(O.Z, k(x({
-    className: a()(w.roleMention),
+  } = (0, g.ZP)(m.Z.ROLE_MENTION), _ = (0, u.e7)([h.Z], () => h.Z.roleStyle), E = null != t && 0 !== t && !f, v = E && "dot" === _, b = e => (0, r.jsxs)(O.Z, j(x({
+    className: a()(D.roleMention),
     color: "username" === _ && E ? t : null
   }, e), {
     children: [v && (0, r.jsx)(d.FhE, {
       color: (0, c.Rf)(t),
-      className: D.roleDot,
+      className: w.roleDot,
       background: !1,
       tooltip: !1
     }), l]
   })), {
     enabled: S
-  } = j.getCurrentConfig({
+  } = k.getCurrentConfig({
     location: "2ec235_1"
   }, {
     autoTrackExposure: !1

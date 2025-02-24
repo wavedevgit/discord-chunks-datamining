@@ -32,19 +32,19 @@ var i = n(120356),
   C = n(652853),
   R = n(64621),
   P = n(979038),
-  w = n(448980),
-  D = n(336383),
+  D = n(448980),
+  w = n(336383),
   L = n(194811),
   x = n(373826),
   M = n(315324),
-  k = n(262210),
-  j = n(103479),
+  j = n(262210),
+  k = n(103479),
   U = n(386019),
   G = n(553375),
   B = n(228168),
-  Z = n(981631),
-  F = n(701488),
-  V = n(388032),
+  F = n(981631),
+  V = n(701488),
+  Z = n(388032),
   H = n(481736);
 
 function W(e, t, n) {
@@ -114,7 +114,7 @@ function K(e) {
     largeImage: ec,
     smallImage: eu
   } = (0, _.FO)(W, K), ed = (0, a.EQ)(W).when(u.Z, () => eo).when(l.Z, () => {
-    if (n.id !== i.id) return () => (0, j.s)({
+    if (n.id !== i.id) return () => (0, k.s)({
       activity: W,
       user: n,
       index: 0
@@ -159,7 +159,7 @@ function K(e) {
     })
   }, e_ = () => (0, d.Z)(W) && null != z ? (0, r.jsx)(x.Z, {
     variant: "text-xs/normal",
-    text: V.NW.formatToPlainString(V.t["hq/Qzc"], {
+    text: Z.NW.formatToPlainString(Z.t["hq/Qzc"], {
       guildName: z.name
     }),
     onClick: () => {
@@ -175,20 +175,20 @@ function K(e) {
     variant: "text-xs/normal"
   }), eh = () => {
     var e;
-    return W.type === Z.IIU.WATCHING ? null : (0, u.Z)(W) ? em() : (0, r.jsx)(x.Z, {
+    return W.type === F.IIU.WATCHING ? null : (0, u.Z)(W) ? em() : (0, r.jsx)(x.Z, {
       text: null === (e = W.assets) || void 0 === e ? void 0 : e.large_text,
       variant: "text-xs/normal"
     })
   }, em = () => {
     var e, t, n, i;
-    return (null === (e = W.party) || void 0 === e ? void 0 : e.size) == null && W.application_id === F.Zc ? (0, r.jsxs)("div", {
+    return (null === (e = W.party) || void 0 === e ? void 0 : e.size) == null && W.application_id === V.Zc ? (0, r.jsxs)("div", {
       className: H.gameState,
       children: [(0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
         text: W.state
       }), (0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
-        text: V.NW.formatToPlainString(V.t["u//9Bw"], {
+        text: Z.NW.formatToPlainString(Z.t["u//9Bw"], {
           count: "0",
           max: null !== (i = null == K ? void 0 : K.getMaxParticipants()) && void 0 !== i ? i : 0
         })
@@ -200,9 +200,9 @@ function K(e) {
         text: W.state
       }), (0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
-        text: 0 === W.party.size[1] ? V.NW.formatToPlainString(V.t.IM4J4e, {
+        text: 0 === W.party.size[1] ? Z.NW.formatToPlainString(Z.t.IM4J4e, {
           count: W.party.size[0]
-        }) : V.NW.formatToPlainString(V.t["u//9Bw"], {
+        }) : Z.NW.formatToPlainString(Z.t["u//9Bw"], {
           count: W.party.size[0],
           max: W.party.size[1]
         })
@@ -217,7 +217,7 @@ function K(e) {
       start: e,
       end: t
     } = W.timestamps;
-    return (0, r.jsx)(k.Z, {
+    return (0, r.jsx)(j.Z, {
       start: e,
       end: t
     })
@@ -280,7 +280,7 @@ function K(e) {
           onShowToolbar: () => ea({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          children: (0, r.jsxs)(D.Z, {
+          children: (0, r.jsxs)(w.Z, {
             ref: es,
             className: o()(X, {
               [H.hoisted]: eO
@@ -293,7 +293,7 @@ function K(e) {
                 className: o()(H.content, et),
                 children: [!n.bot && ef(), (0, r.jsxs)("div", {
                   className: H.details,
-                  children: [eE(), !n.bot && (0, r.jsx)(w.Z, {
+                  children: [eE(), !n.bot && (0, r.jsx)(D.Z, {
                     user: n,
                     activity: W,
                     className: H.badges

@@ -62,9 +62,9 @@ var r = n(581031),
           for (var T = p, N = o;;) {
             var P = N <= _ ? a : N >= _ + s ? s : N - _;
             if (T < P) break;
-            var w = T - P,
-              D = o - P;
-            S(r, b(C(P + w % D))), T = v(w / D), N += o
+            var D = T - P,
+              w = o - P;
+            S(r, b(C(P + D % w))), T = v(D / w), N += o
           }
           S(r, b(C(T))), _ = R(p, I, E === m), p = 0, E++
         }

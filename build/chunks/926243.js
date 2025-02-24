@@ -98,7 +98,7 @@ let C = (e, t) => "".concat(e, ":").concat(t),
       inNitroLockedSection: C
     } = e, R = N(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
     let P = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : void 0, [n]),
-      w = () => {
+      D = () => {
         let e = n.allNamesString;
         return ((null == P ? void 0 : P.name) != null && (e = b.NW.formatToPlainString(b.t["nXv4/P"], {
           names: e,
@@ -107,7 +107,7 @@ let C = (e, t) => "".concat(e, ":").concat(t),
           names: e
         }) : e
       },
-      D = d && !C;
+      w = d && !C;
     return (0, r.jsx)(l.tEY, {
       children: (0, r.jsx)("button", T(S({}, R), {
         className: a()(y.emojiItem, {
@@ -124,14 +124,14 @@ let C = (e, t) => "".concat(e, ":").concat(t),
         "data-animated": n.animated ? "true" : null,
         ref: t,
         children: (0, r.jsx)(v.Z, {
-          "aria-label": w(),
+          "aria-label": D(),
           columnIndex: h,
           rowIndex: m,
           emoji: n,
           size: E,
           surrogateCodePoint: O,
           allowAnimatedEmoji: I,
-          isLocked: D
+          isLocked: w
         })
       }))
     })
@@ -151,17 +151,17 @@ function P(e) {
     showEmojiFavoriteTooltip: I,
     surrogateCodePoint: A,
     selectedItemClassName: P,
-    getEmojiItemProps: w,
-    isMediumSize: D,
+    getEmojiItemProps: D,
+    isMediumSize: w,
     isLargeSize: L,
     pulseItemKey: x,
     allowAnimatedEmoji: M,
-    setPulseItemKey: k,
-    messageId: j,
+    setPulseItemKey: j,
+    messageId: k,
     isBurstReaction: U,
     rowPosition: G,
     inNitroLockedSection: B
-  } = e, [Z, F] = i.useState(""), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(_), [_]), W = i.useRef(null), {
+  } = e, [F, V] = i.useState(""), Z = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(_), [_]), W = i.useRef(null), {
     emoji: Y,
     size: K,
     isDisabled: z,
@@ -169,7 +169,7 @@ function P(e) {
   } = t, Q = e => {
     if (e.stopPropagation(), y.current || O.current) return;
     let n = e.altKey;
-    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(Y) && k(o), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), v(t, {
+    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(Y) && j(o), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), v(t, {
       isFinalSelection: !e.shiftKey,
       toggleFavorite: n
     })
@@ -187,7 +187,7 @@ function P(e) {
     let {
       onMouseEnter: t,
       onMouseLeave: n
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, s = null !== (e = w(q, f)) && void 0 !== e ? e : {}, {
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, s = null !== (e = D(q, f)) && void 0 !== e ? e : {}, {
       ref: l,
       tabIndex: c,
       onFocus: u
@@ -195,12 +195,12 @@ function P(e) {
     return (0, i.createElement)("li", T(S({}, d), {
       key: o,
       ref: W
-    }), Z !== C(q, f) && (0, r.jsx)(R, {
+    }), F !== C(q, f) && (0, r.jsx)(R, {
       ref: l,
       emoji: Y,
       isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(Y),
       isLargeSize: L,
-      isMediumSize: D,
+      isMediumSize: w,
       isInspected: a,
       isDisabled: z,
       showPulse: x === o,
@@ -210,10 +210,10 @@ function P(e) {
       onMouseEnter: t,
       onMouseLeave: n,
       onClick: e => {
-        if (null != W.current && null != G && null != j && !e.shiftKey && null != Y.name && U && !V && M) {
+        if (null != W.current && null != G && null != k && !e.shiftKey && null != Y.name && U && !Z && M) {
           let e = null == Y.id ? p.ZP.convertNameToSurrogate(Y.name) : Y.name,
             t = W.current.getBoundingClientRect();
-          t.x = G.x + (q + 1) * K, F(C(q, f)), (0, m.U)(j, e, Y.id, t)
+          t.x = G.x + (q + 1) * K, V(C(q, f)), (0, m.U)(k, e, Y.id, t)
         }
         Q(e)
       },

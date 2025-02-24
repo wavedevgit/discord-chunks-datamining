@@ -32,9 +32,9 @@ var o = n(442837),
   C = n(936101),
   R = n(868158),
   P = n(483012),
-  w = n(955132);
+  D = n(955132);
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -50,7 +50,7 @@ function L(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -73,9 +73,9 @@ function M(e, t) {
   }), e
 }
 
-function k(e, t) {
+function j(e, t) {
   if (null == e) return {};
-  var n, r, i = j(e, t);
+  var n, r, i = k(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -83,7 +83,7 @@ function k(e, t) {
   return i
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -91,7 +91,7 @@ function j(e, t) {
   return i
 }
 let U = new d.Z("ConnectionStore"),
-  G = new P.Z(w.Wb, (e, t) => {
+  G = new P.Z(D.Wb, (e, t) => {
     var n;
     e = null != e ? e : {
       type: "CHANNEL_UPDATES",
@@ -105,7 +105,7 @@ let U = new d.Z("ConnectionStore"),
       }));
     return e.channels.push(null != o ? o : r), e
   }, e => "CHANNEL_UPDATE" !== e),
-  B = new P.Z(w.Wb, (e, t) => ((e = null == e ? {
+  B = new P.Z(D.Wb, (e, t) => ((e = null == e ? {
     type: "SOUNDBOARD_SOUNDS_RECEIVED",
     updates: []
   } : e).updates.push({
@@ -121,36 +121,36 @@ let U = new d.Z("ConnectionStore"),
       guildId: t.guild_id
     }))
   }), e), e => "SOUNDBOARD_SOUNDS" !== e),
-  Z = new P.Z(w.Wb, (e, t) => ((e = null != e ? e : {
+  F = new P.Z(D.Wb, (e, t) => ((e = null != e ? e : {
     type: "GUILD_MEMBERS_CHUNK_BATCH",
     chunks: []
   }).chunks.push(t), e), e => "GUILD_MEMBERS_CHUNK" !== e),
-  F = new P.Z(w.Wb, (e, t) => ((e = null == e ? {
+  V = new P.Z(D.Wb, (e, t) => ((e = null == e ? {
     type: "PRESENCE_UPDATES",
     updates: []
   } : e).updates.push(t), e), e => "PRESENCE_UPDATE" !== e && "GUILD_MEMBERS_CHUNK" !== e),
-  V = {};
+  Z = {};
 
 function H(e, t) {
-  for (let n of e) V[n] = {
+  for (let n of e) Z[n] = {
     preload: () => null,
     dispatch: t
   }
 }
 
 function W(e, t, n) {
-  for (let r of e) V[r] = {
+  for (let r of e) Z[r] = {
     preload: t,
     dispatch: n
   }
 }
 
 function Y(e) {
-  return V[e]
+  return Z[e]
 }
 
 function K(e) {
-  a.Z.dispatch(e).catch(t => w.Wb.resetSocketOnDispatchError({
+  a.Z.dispatch(e).catch(t => D.Wb.resetSocketOnDispatchError({
     error: t,
     action: e.type
   }))
@@ -224,7 +224,7 @@ function X(e) {
     hiddenActivities: o,
     clientStatus: a
   } = e;
-  F.add({
+  V.add({
     guildId: t,
     user: n,
     status: r,
@@ -236,7 +236,7 @@ function X(e) {
 W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id]), e => {
   m.Z.initialGuild.measure(() => {
     o.ZP.Emitter.batched(() => {
-      let t = R.Fx(e, w.Wb.identifyStartTime);
+      let t = R.Fx(e, D.Wb.identifyStartTime);
       null != I.default.getCurrentUser() && (K({
         type: "GUILD_CREATE",
         guild: t
@@ -267,7 +267,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
   m.Z.readySupplemental.measure(() => {
     o.ZP.Emitter.batched(() => {
       var t, n;
-      e = m.Z.hydrateReadySupplemental.measure(() => R.r$(e, w.Wb.identifyStartTime));
+      e = m.Z.hydrateReadySupplemental.measure(() => R.r$(e, D.Wb.identifyStartTime));
       let r = e => e.map(e => ({
           user: e.user,
           status: e.status,
@@ -315,7 +315,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
         type: "VOICE_STATE_UPDATES",
         voiceStates: l,
         initial: !0
-      }), w.GC.update()
+      }), D.GC.update()
     })
   }), setTimeout(() => K({
     type: "POST_CONNECTION_OPEN"
@@ -340,7 +340,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
   }
   m.Z.ready.measure(() => {
     o.ZP.Emitter.batched(() => {
-      let t = (e = m.Z.hydrateReady.measure(() => R.IM(e, w.Wb.identifyStartTime, n))).private_channels.map(e => (0, E.q_)(e)),
+      let t = (e = m.Z.hydrateReady.measure(() => R.IM(e, D.Wb.identifyStartTime, n))).private_channels.map(e => (0, E.q_)(e)),
         r = e.guilds.filter(e => !0 === e.unavailable && !0 !== e.geo_restricted).map(e => e.id),
         i = e.guilds.filter(e => !0 !== e.unavailable),
         o = e.guilds.filter(e => !0 === e.geo_restricted);
@@ -390,11 +390,11 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
         type: "UPDATE_TOKEN",
         token: e.auth_token,
         userId: e.user.id
-      }), w.RR.update(), w.GC.update()
+      }), D.RR.update(), D.GC.update()
     })
   })
 }), H(["RESUMED"], () => {
-  w.RR.forceUpdate(), w.GC.forceUpdate(), K({
+  D.RR.forceUpdate(), D.GC.forceUpdate(), K({
     type: "CONNECTION_RESUMED"
   })
 }), H(["TYPING_START"], e => {
@@ -519,7 +519,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
 }), W(["THREAD_CREATE", "THREAD_UPDATE", "THREAD_DELETE"], e => y.o.loadGuildIds([e.guild_id]), (e, t) => {
   let {
     newly_created: n
-  } = e, r = k(e, ["newly_created"]);
+  } = e, r = j(e, ["newly_created"]);
   K({
     type: t,
     isNewlyCreated: n,
@@ -638,7 +638,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
   })
 }), H(["GUILD_MEMBERS_CHUNK"], e => {
   o.ZP.Emitter.batched(() => {
-    Z.add({
+    F.add({
       guildId: e.guild_id,
       members: e.members,
       notFound: e.not_found

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 });
 var r = n(200651),
   i = n(192379),
@@ -93,7 +93,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     className: t,
     userId: i,
@@ -101,39 +101,39 @@ function w(e) {
     parsedUserId: _,
     content: N,
     inlinePreview: C = !1,
-    viewingChannelId: w
+    viewingChannelId: D
   } = e, {
-    analyticsLocations: D
-  } = (0, f.ZP)(d.Z.USER_MENTION), L = (0, l.e7)([O.default], () => O.default.getUser(i)), x = (0, l.e7)([E.Z], () => E.Z.getChannel(o)), M = null != x ? x.getGuildId() : null, k = C || null == L || null == M || null == o ? void 0 : e => {
+    analyticsLocations: w
+  } = (0, f.ZP)(d.Z.USER_MENTION), L = (0, l.e7)([O.default], () => O.default.getUser(i)), x = (0, l.e7)([E.Z], () => E.Z.getChannel(o)), M = null != x ? x.getGuildId() : null, j = C || null == L || null == M || null == o ? void 0 : e => {
     null != x && (0, u.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("59409")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, R(A({}, t), {
-        viewingChannelId: w,
+        viewingChannelId: D,
         user: L,
         channel: x,
         guildId: M
       }))
     })
-  }, j = I.ZP.useName(L), U = (0, l.e7)([E.Z, v.ZP, y.Z], () => S.ZP.getNickname(M, o, L)), G = b.Z.getGuild(M), B = (0, p.Ib)(G, x) && i === T.fL ? T.jM : null;
+  }, k = I.ZP.useName(L), U = (0, l.e7)([E.Z, v.ZP, y.Z], () => S.ZP.getNickname(M, o, L)), G = b.Z.getGuild(M), B = (0, p.Ib)(G, x) && i === T.fL ? T.jM : null;
   if (null == L) return (0, r.jsx)(P, {
     userId: _,
     className: t,
     children: N
   });
-  let Z = e => (0, r.jsx)(h.Z, R(A({
+  let F = e => (0, r.jsx)(h.Z, R(A({
     className: t,
-    onContextMenu: k,
+    onContextMenu: j,
     color: B
   }, e), {
-    children: "@".concat(null != U ? U : j)
+    children: "@".concat(null != U ? U : k)
   }));
   return C ? (0, r.jsx)(f.Gt, {
-    value: D,
-    children: Z()
+    value: w,
+    children: F()
   }) : (0, r.jsx)(f.Gt, {
-    value: D,
+    value: w,
     children: (0, r.jsx)(c.yRy, {
       preload: null == L ? void 0 : () => (0, m.Z)(L.id, L.getAvatarURL(M, 80), {
         guildId: null != M ? M : void 0,
@@ -145,7 +145,7 @@ function w(e) {
         channelId: o
       }, e))),
       position: s.tq ? "top" : "right",
-      children: e => Z(e)
+      children: e => F(e)
     })
   })
 }

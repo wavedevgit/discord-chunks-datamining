@@ -53,7 +53,7 @@ function P(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,8 +64,8 @@ function w(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -90,7 +90,7 @@ let L = n(227419).Z,
       }
     }
   },
-  k = [...L, {
+  j = [...L, {
     id: "-1",
     untranslatedName: "shrug",
     displayName: "shrug",
@@ -582,7 +582,7 @@ let L = n(227419).Z,
       },
       required: !0,
       get choices() {
-        return (0, A.tr)().map(e => D(P({}, e), {
+        return (0, A.tr)().map(e => w(P({}, e), {
           name: e.label,
           displayName: e.label
         }))
@@ -671,8 +671,8 @@ let L = n(227419).Z,
       },
       required: !0,
       get maxLength() {
-        var j;
-        return (null === (j = y.default.getCurrentUser()) || void 0 === j ? void 0 : j.premiumType) ? N.en1 : N.J6R
+        var k;
+        return (null === (k = y.default.getCurrentUser()) || void 0 === k ? void 0 : k.premiumType) ? N.en1 : N.J6R
       }
     }],
     execute: (e, t) => {
@@ -693,8 +693,8 @@ let L = n(227419).Z,
       })
     }
   }],
-  U = k.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
+  U = j.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
   G = (e, t, n) => {
-    let r = t ? k : U;
+    let r = t ? j : U;
     return r.filter(t => e.includes(t.type) && (!n || t.inputType === I.iw.BUILT_IN_TEXT || t.inputType === I.iw.BUILT_IN_INTEGRATION))
   }

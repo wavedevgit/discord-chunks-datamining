@@ -61,11 +61,11 @@ function P() {
   O && (O = R(O)), y = R(y)
 }
 
-function w() {
+function D() {
   y && (y = R(y)), O = R(O)
 }
 
-function D() {
+function w() {
   S || l.S.dispatch(m.CkL.SEARCH_RESULTS_CLOSE), S = R(S)
 }
 
@@ -109,7 +109,7 @@ function M(e) {
   }, !0)
 }
 
-function k(e) {
+function j(e) {
   let {
     parentChannelId: t,
     parentMessageId: n,
@@ -125,7 +125,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     channel: t
   } = e;
@@ -171,19 +171,19 @@ function B() {
   return e
 }
 
-function Z(e) {
+function F(e) {
   let {
     baseChannelId: t
   } = e, n = A(t);
   null != n && delete T[n]
 }
 
-function F() {
+function V() {
   if (I === f.Z.isActive()) return !1;
   I = f.Z.isActive()
 }
 
-function V() {
+function Z() {
   i.tq && y && (y = !1, O = !1)
 }
 class H extends(r = o.ZP.PersistedStore) {
@@ -192,7 +192,7 @@ class H extends(r = o.ZP.PersistedStore) {
       var t, n, r, i, o;
       y = null !== (t = e.isMembersOpen) && void 0 !== t && t, O = null !== (n = e.isSummariesOpen) && void 0 !== n && n, S = null === (r = e.isProfileOpen) || void 0 === r || r, T = null !== (i = e.sidebars) && void 0 !== i ? i : {}, N = null !== (o = e.guildSidebars) && void 0 !== o ? o : {}
     }
-    this.syncWith([f.Z], F), this.syncWith([d.Z], B)
+    this.syncWith([f.Z], V), this.syncWith([d.Z], B)
   }
   getState() {
     return {
@@ -232,15 +232,15 @@ class H extends(r = o.ZP.PersistedStore) {
 v(H, "displayName", "ChannelSectionStore"), v(H, "persistKey", "ChannelSectionStore2");
 let W = new H(a.Z, {
   CHANNEL_TOGGLE_MEMBERS_SECTION: P,
-  PROFILE_PANEL_TOGGLE_SECTION: D,
-  CHANNEL_TOGGLE_SUMMARIES_SECTION: w,
+  PROFILE_PANEL_TOGGLE_SECTION: w,
+  CHANNEL_TOGGLE_SUMMARIES_SECTION: D,
   SIDEBAR_VIEW_CHANNEL: M,
   SIDEBAR_VIEW_GUILD: L,
-  SIDEBAR_CREATE_THREAD: k,
-  SIDEBAR_CLOSE: Z,
+  SIDEBAR_CREATE_THREAD: j,
+  SIDEBAR_CLOSE: F,
   SIDEBAR_CLOSE_GUILD: x,
-  CHANNEL_DELETE: j,
-  CHANNEL_SELECT: V,
+  CHANNEL_DELETE: k,
+  CHANNEL_SELECT: Z,
   THREAD_CREATE: G,
   THREAD_DELETE: U
 })

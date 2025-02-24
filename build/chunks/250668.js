@@ -28,19 +28,19 @@ var r = n(147018),
   C = n(335225).forEach,
   R = n(930990),
   P = n(4340),
-  w = n(97131),
-  D = n(347722),
+  D = n(97131),
+  w = n(347722),
   L = n(644659),
   x = n(95948),
   M = L.get,
-  k = L.set,
-  j = L.enforce,
-  U = w.f,
-  G = D.f,
+  j = L.set,
+  k = L.enforce,
+  U = D.f,
+  G = w.f,
   B = i.RangeError,
-  Z = c.ArrayBuffer,
-  F = Z.prototype,
-  V = c.DataView,
+  F = c.ArrayBuffer,
+  V = F.prototype,
+  Z = c.DataView,
   H = l.NATIVE_ARRAY_BUFFER_VIEWS,
   W = l.TYPED_ARRAY_TAG,
   Y = l.TypedArray,
@@ -64,7 +64,7 @@ var r = n(147018),
   },
   ee = function(e) {
     var t;
-    return I(F, e) || "ArrayBuffer" === (t = b(e)) || "SharedArrayBuffer" === t
+    return I(V, e) || "ArrayBuffer" === (t = b(e)) || "SharedArrayBuffer" === t
   },
   et = function(e, t) {
     return q(e) && !O(t) && t in e && p(+t) && t >= 0
@@ -75,7 +75,7 @@ var r = n(147018),
   er = function(e, t, n) {
     return et(e, t = E(t)) && y(n) && v(n, "value") && !v(n, "get") && !v(n, "set") && !n.configurable && (!v(n, "writable") || n.writable) && (!v(n, "enumerable") || n.enumerable) ? (e[t] = n.value, e) : U(e, t, n)
   };
-a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLength"), $(K, "length")), r({
+a ? (H || (w.f = en, D.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLength"), $(K, "length")), r({
   target: "Object",
   stat: !0,
   forced: !H
@@ -130,20 +130,20 @@ a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLen
         l = s / a
       } else if (q(t)) return J(E, t);
       else return o(A, E, t)
-    } else i = new Z(s = (l = h(t)) * a);
-    for (k(e, {
+    } else i = new F(s = (l = h(t)) * a);
+    for (j(e, {
         buffer: i,
         byteOffset: d,
         byteLength: s,
         length: l,
-        view: new V(i)
+        view: new Z(i)
       }); c < l;) P(e, c++)
-  }), T && T(E, Y), v = E.prototype = S(K)), v.constructor !== E && f(v, "constructor", E), j(v).TypedArrayConstructor = E, W && f(v, W, l);
-  var w = E !== p;
+  }), T && T(E, Y), v = E.prototype = S(K)), v.constructor !== E && f(v, "constructor", E), k(v).TypedArrayConstructor = E, W && f(v, W, l);
+  var D = E !== p;
   b[l] = E, r({
     global: !0,
     constructor: !0,
-    forced: w,
+    forced: D,
     sham: !H
   }, b), Q in E || f(E, Q, a), Q in v || f(v, Q, a), R(l)
 }) : e.exports = function() {}

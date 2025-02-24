@@ -131,10 +131,10 @@ if ("function" == typeof b) a = function() {
   b(P)
 };
 else if ("undefined" != typeof MessageChannel) {
-  var w = new MessageChannel,
-    D = w.port2;
-  w.port1.onmessage = P, a = function() {
-    D.postMessage(null)
+  var D = new MessageChannel,
+    w = D.port2;
+  D.port1.onmessage = P, a = function() {
+    w.postMessage(null)
   }
 } else a = function() {
   E(P, 0)

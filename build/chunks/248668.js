@@ -1,11 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r = n(67867),
-  i = n(570596),
-  o = n(548828),
-  a = n(653457),
+var r = n(766362),
+  o = n(570596),
+  a = n(548828),
+  i = n(653457),
   s = n(139545),
-  l = n(730427);
+  c = n(730427);
 r({
   target: "Promise",
   stat: !0,
@@ -13,14 +13,14 @@ r({
 }, {
   race: function(e) {
     var t = this,
-      n = a.f(t),
+      n = i.f(t),
       r = n.reject,
-      c = s(function() {
-        var a = o(t.resolve);
-        l(e, function(e) {
-          i(a, t, e).then(n.resolve, r)
+      l = s(function() {
+        var i = a(t.resolve);
+        c(e, function(e) {
+          o(i, t, e).then(n.resolve, r)
         })
       });
-    return c.error && r(c.value), n.promise
+    return l.error && r(l.value), n.promise
   }
 })

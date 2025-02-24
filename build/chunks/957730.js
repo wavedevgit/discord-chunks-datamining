@@ -40,7 +40,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function w(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,7 +65,7 @@ function D(e, t) {
 }
 
 function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -130,7 +130,7 @@ function M(e, t, n) {
   }).first()
 }
 
-function k(e) {
+function j(e) {
   return {
     order: e.order,
     match: e.match,
@@ -141,7 +141,7 @@ function k(e) {
   }
 }
 
-function j(e) {
+function k(e) {
   return {
     match: a().anyScopeRegex(e),
     parse: e => ({
@@ -153,27 +153,27 @@ function j(e) {
 let U = u.Z.RULES,
   G = d.ZP,
   B = /^<@!?(\d+)>/,
-  Z = /^<@&(\d+)>/,
-  F = /^<#(\d+)>/,
-  V = /^<a?:(\w+):(\d+)>/,
+  F = /^<@&(\d+)>/,
+  V = /^<#(\d+)>/,
+  Z = /^<a?:(\w+):(\d+)>/,
   H = /(@everyone|@here|@Clyde)\b/,
   W = {
-    link: k(a().defaultRules.link),
-    autolink: k(a().defaultRules.autolink),
-    url: k(a().defaultRules.url),
-    inlineCode: k(U.inlineCode),
-    codeBlock: k(U.codeBlock),
-    rawUserMention: j(B),
-    rawRoleMention: j(Z),
-    rawChannelMention: j(F),
-    rawEmoji: j(V),
+    link: j(a().defaultRules.link),
+    autolink: j(a().defaultRules.autolink),
+    url: j(a().defaultRules.url),
+    inlineCode: j(U.inlineCode),
+    codeBlock: j(U.codeBlock),
+    rawUserMention: k(B),
+    rawRoleMention: k(F),
+    rawChannelMention: k(V),
+    rawEmoji: k(Z),
     mention: {
       match(e, t, n) {
         let r = n.split(" ").pop() + e;
         if (/^[^ ]+@[^ ]+\.[^ .]+/.test(r)) return null;
         let i = x("@", e, t.users, "mention");
         if (i || (i = x("@", e, t.mentionableRoles, "roleMention"))) return i;
-        if (!(i = x("@", e, t.users.map(e => L(w({}, e), {
+        if (!(i = x("@", e, t.users.map(e => L(D({}, e), {
             text: e.text.split("#")[0]
           })), "mention"))) return null;
         let o = H.exec(e);
@@ -251,13 +251,13 @@ let U = u.Z.RULES,
         }
       }
     },
-    text: L(w({}, G), {
+    text: L(D({}, G), {
       match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, d.T9)(t.textExclusions).exec(e) : null != G.match ? G.match(e, t, "") : null
     })
   },
   Y = {
-    inlineCode: k(U.inlineCode),
-    codeBlock: k(U.codeBlock),
+    inlineCode: j(U.inlineCode),
+    codeBlock: j(U.codeBlock),
     mention: {
       match: a().anyScopeRegex(B),
       parse(e, t, n) {
@@ -282,7 +282,7 @@ let U = u.Z.RULES,
       }
     },
     roleMention: {
-      match: a().anyScopeRegex(Z),
+      match: a().anyScopeRegex(F),
       parse(e, t, n) {
         let {
           guild: r
@@ -299,7 +299,7 @@ let U = u.Z.RULES,
       }
     },
     channel: {
-      match: a().anyScopeRegex(F),
+      match: a().anyScopeRegex(V),
       parse(e) {
         let t = m.Z.getChannel(e[1]);
         return {
@@ -308,7 +308,7 @@ let U = u.Z.RULES,
       }
     },
     emoji: {
-      match: a().anyScopeRegex(V),
+      match: a().anyScopeRegex(Z),
       parse(e, t, n) {
         let [r, i, o] = e, {
           guild: a
@@ -339,7 +339,7 @@ let U = u.Z.RULES,
         content: "<id:".concat(e[1], ">")
       })
     },
-    timestamp: L(w({}, U.timestamp), {
+    timestamp: L(D({}, U.timestamp), {
       parse() {
         for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
         let r = U.timestamp.parse(...t);
@@ -350,7 +350,7 @@ let U = u.Z.RULES,
         }
       }
     }),
-    text: w({}, G)
+    text: D({}, G)
   };
 [W, Y].forEach(e => {
   Object.keys(e).forEach((t, n) => {

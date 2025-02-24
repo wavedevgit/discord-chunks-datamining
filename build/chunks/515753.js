@@ -139,65 +139,66 @@ let ee = Y.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
     size: "xs",
     color: "currentColor",
     className: q.favoriteIcon
-  });
-
-function ea(e) {
-  var {
-    route: t,
-    selected: n,
-    icon: r,
-    iconClassName: i,
-    avatarWithTextClassName: o,
-    interactiveClassName: s,
-    text: u,
-    children: E,
-    locationState: C,
-    onClick: _,
-    className: h,
-    role: p,
-    "aria-posinset": O,
-    "aria-setsize": g
-  } = e, T = $(e, ["route", "selected", "icon", "iconClassName", "avatarWithTextClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize"]);
-  let I = (0, R.Q3)("PrivateChannelLinkButton");
-  return (0, l.jsx)(P.Z, {
-    className: a()(q.channel, {
-      [q.fullWidth]: d.tq
-    }, h),
-    onClick: _,
-    role: p,
-    focusProps: X({
-      within: !0
-    }, et),
-    "aria-posinset": O,
-    "aria-setsize": g,
-    children: (0, l.jsx)(f.vjx, {
-      as: "div",
+  }),
+  ea = e => {
+    var {
+      route: t,
       selected: n,
-      className: a()(s, q.interactive, q.linkButton, {
-        [q.interactiveSelected]: n
-      }),
-      children: (0, l.jsxs)(c.rU, J(X({
-        to: {
-          pathname: t,
-          state: C
-        },
-        className: q.link
-      }, T), {
-        children: [(0, l.jsx)(N.Z, {
-          selected: n,
-          muted: !1,
-          avatar: (0, l.jsx)(r, {
-            size: I ? "refresh_sm" : void 0,
-            className: a()(q.linkButtonIcon, i),
-            color: "currentColor"
-          }),
-          name: u,
-          innerClassName: a()(q.avatarWithText, o)
-        }), E]
-      }))
+      icon: r,
+      iconClassName: i,
+      avatarWithTextClassName: o,
+      interactiveClassName: s,
+      text: u,
+      children: E,
+      locationState: C,
+      onClick: _,
+      className: h,
+      role: p,
+      "aria-posinset": O,
+      "aria-setsize": g,
+      listItemRef: T
+    } = e, I = $(e, ["route", "selected", "icon", "iconClassName", "avatarWithTextClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
+    let S = (0, R.Q3)("PrivateChannelLinkButton");
+    return (0, l.jsx)(P.Z, {
+      className: a()(q.channel, {
+        [q.fullWidth]: d.tq
+      }, h),
+      onClick: _,
+      role: p,
+      focusProps: X({
+        within: !0
+      }, et),
+      "aria-posinset": O,
+      "aria-setsize": g,
+      ref: T,
+      children: (0, l.jsx)(f.vjx, {
+        as: "div",
+        selected: n,
+        className: a()(s, q.interactive, q.linkButton, {
+          [q.interactiveSelected]: n
+        }),
+        children: (0, l.jsxs)(c.rU, J(X({
+          to: {
+            pathname: t,
+            state: C
+          },
+          className: q.link
+        }, I), {
+          children: [(0, l.jsx)(N.Z, {
+            selected: n,
+            muted: !1,
+            avatar: (0, l.jsx)(r, {
+              size: S ? "refresh_sm" : void 0,
+              className: a()(q.linkButtonIcon, i),
+              color: "currentColor"
+            }),
+            name: u,
+            innerClassName: a()(q.avatarWithText, o)
+          }), E]
+        }))
+      })
     })
-  })
-}
+  };
 
 function eo(e) {
   var t;

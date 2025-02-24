@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $l: () => w,
+  $l: () => D,
   G1: () => y,
   JR: () => N,
   U$: () => A,
-  ZP: () => D,
+  ZP: () => w,
   e7: () => S,
   wv: () => I,
   yK: () => O
@@ -218,7 +218,7 @@ function P() {
     }
   }, [n, t])
 }
-async function w(e) {
+async function D(e) {
   try {
     await s.tn.del({
       url: h.Z5c.CHANNEL_SUMMARY(e.channelId, e.id),
@@ -231,7 +231,7 @@ async function w(e) {
     throw new c.Hx(e)
   }
 }
-let D = {
+let w = {
   setSummaryFeedback: A,
   updateVisibleMessages: N,
   setSelectedSummary: I,
@@ -245,5 +245,5 @@ let D = {
     } = e;
     return P(t), (0, a.Wu)([_.Z], () => _.Z.topSummaries(), [])
   },
-  deleteSummary: w
+  deleteSummary: D
 }

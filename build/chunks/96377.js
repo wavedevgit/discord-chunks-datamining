@@ -43,21 +43,21 @@ let _ = {
       C = (0, i.Z)(t.placement),
       R = (0, d.Z)(t.placement),
       P = !R,
-      w = (0, o.Z)(C),
-      D = (0, a.Z)(w),
+      D = (0, o.Z)(C),
+      w = (0, a.Z)(D),
       L = t.modifiersData.popperOffsets,
       x = t.rects.reference,
       M = t.rects.popper,
-      k = "function" == typeof N ? N(Object.assign({}, t.rects, {
+      j = "function" == typeof N ? N(Object.assign({}, t.rects, {
         placement: t.placement
       })) : N,
-      j = "number" == typeof k ? {
-        mainAxis: k,
-        altAxis: k
+      k = "number" == typeof j ? {
+        mainAxis: j,
+        altAxis: j
       } : Object.assign({
         mainAxis: 0,
         altAxis: 0
-      }, k),
+      }, j),
       U = t.modifiersData.offset ? t.modifiersData.offset[t.placement] : null,
       G = {
         x: 0,
@@ -65,47 +65,47 @@ let _ = {
       };
     if (L) {
       if (m) {
-        var B, Z = "y" === w ? r.we : r.t$,
-          F = "y" === w ? r.I : r.F2,
-          V = "y" === w ? "height" : "width",
-          H = L[w],
-          W = H + A[Z],
-          Y = H - A[F],
-          K = I ? -M[V] / 2 : 0,
-          z = R === r.BL ? x[V] : M[V],
-          q = R === r.BL ? -M[V] : -x[V],
+        var B, F = "y" === D ? r.we : r.t$,
+          V = "y" === D ? r.I : r.F2,
+          Z = "y" === D ? "height" : "width",
+          H = L[D],
+          W = H + A[F],
+          Y = H - A[V],
+          K = I ? -M[Z] / 2 : 0,
+          z = R === r.BL ? x[Z] : M[Z],
+          q = R === r.BL ? -M[Z] : -x[Z],
           Q = t.elements.arrow,
           X = I && Q ? (0, l.Z)(Q) : {
             width: 0,
             height: 0
           },
           J = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : (0, f.Z)(),
-          $ = J[Z],
-          ee = J[F],
-          et = (0, s.u)(0, x[V], X[V]),
-          en = P ? x[V] / 2 - K - et - $ - j.mainAxis : z - et - $ - j.mainAxis,
-          er = P ? -x[V] / 2 + K + et + ee + j.mainAxis : q + et + ee + j.mainAxis,
+          $ = J[F],
+          ee = J[V],
+          et = (0, s.u)(0, x[Z], X[Z]),
+          en = P ? x[Z] / 2 - K - et - $ - k.mainAxis : z - et - $ - k.mainAxis,
+          er = P ? -x[Z] / 2 + K + et + ee + k.mainAxis : q + et + ee + k.mainAxis,
           ei = t.elements.arrow && (0, c.Z)(t.elements.arrow),
-          eo = ei ? "y" === w ? ei.clientTop || 0 : ei.clientLeft || 0 : 0,
-          ea = null != (B = null == U ? void 0 : U[w]) ? B : 0,
+          eo = ei ? "y" === D ? ei.clientTop || 0 : ei.clientLeft || 0 : 0,
+          ea = null != (B = null == U ? void 0 : U[D]) ? B : 0,
           es = H + en - ea - eo,
           el = H + er - ea,
           ec = (0, s.u)(I ? (0, p.VV)(W, es) : W, H, I ? (0, p.Fp)(Y, el) : Y);
-        L[w] = ec, G[w] = ec - H
+        L[D] = ec, G[D] = ec - H
       }
       if (E) {
-        var eu, ed = "x" === w ? r.we : r.t$,
-          ef = "x" === w ? r.I : r.F2,
-          ep = L[D],
-          e_ = "y" === D ? "height" : "width",
+        var eu, ed = "x" === D ? r.we : r.t$,
+          ef = "x" === D ? r.I : r.F2,
+          ep = L[w],
+          e_ = "y" === w ? "height" : "width",
           eh = ep + A[ed],
           em = ep - A[ef],
           eg = -1 !== [r.we, r.t$].indexOf(C),
-          eE = null != (eu = null == U ? void 0 : U[D]) ? eu : 0,
-          ev = eg ? eh : ep - x[e_] - M[e_] - eE + j.altAxis,
-          eb = eg ? ep + x[e_] + M[e_] - eE - j.altAxis : em,
+          eE = null != (eu = null == U ? void 0 : U[w]) ? eu : 0,
+          ev = eg ? eh : ep - x[e_] - M[e_] - eE + k.altAxis,
+          eb = eg ? ep + x[e_] + M[e_] - eE - k.altAxis : em,
           ey = I && eg ? (0, s.q)(ev, ep, eb) : (0, s.u)(I ? ev : eh, ep, I ? eb : em);
-        L[D] = ey, G[D] = ey - ep
+        L[w] = ey, G[w] = ey - ep
       }
       t.modifiersData[_] = G
     }

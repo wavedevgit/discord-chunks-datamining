@@ -108,8 +108,8 @@ function T(e, t) {
     }))
   }, [t, C, T]);
   if (null == e) return null;
-  let w = n === g.tI.PRESET_DOCUMENTS ? g.ws.FPS_30 : O,
-    D = g.af.map(e => {
+  let D = n === g.tI.PRESET_DOCUMENTS ? g.ws.FPS_30 : O,
+    w = g.af.map(e => {
       let {
         value: t,
         label: n
@@ -126,19 +126,19 @@ function T(e, t) {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, t, w, N, A, R);
+      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, t, D, N, A, R);
       return (0, r.jsx)(a.k5B, {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),
         label: n,
         checked: t === b,
-        action: () => P(i, t, w, m.Qqv.RESOLUTION)
+        action: () => P(i, t, D, m.Qqv.RESOLUTION)
       }, "stream-settings-resolution-".concat(t))
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.kSQ, {
       label: v.NW.string(v.t.SkkeIi),
-      children: D
+      children: w
     }), (0, r.jsx)(a.kSQ, {
       label: v.NW.string(v.t.rHyPXl),
       children: L

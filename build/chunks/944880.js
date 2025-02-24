@@ -106,11 +106,11 @@ function P() {
   clearTimeout(v), v = null
 }
 
-function w() {
+function D() {
   P()
 }
 
-function D() {
+function w() {
   I()
 }
 class L extends a.Z {
@@ -122,8 +122,8 @@ class L extends a.Z {
   }
   constructor(...e) {
     super(...e), E(this, "actions", {
-      POST_CONNECTION_OPEN: D,
-      CONNECTION_CLOSED: w,
+      POST_CONNECTION_OPEN: w,
+      CONNECTION_CLOSED: D,
       ENTITLEMENT_FETCH_APPLICATION_SUCCESS: () => I(),
       ENTITLEMENT_CREATE: S,
       ENTITLEMENT_UPDATE: () => I(),

@@ -1,11 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(809235),
-  i = Function.prototype,
-  o = i.call,
-  a = r && i.bind.bind(o, o);
-e.exports = r ? a : function(e) {
+var e = n(809235),
+  o = Function.prototype,
+  i = o.call,
+  u = e && o.bind.bind(i, i);
+t.exports = e ? u : function(t) {
   return function() {
-    return o.apply(e, arguments)
+    return i.apply(t, arguments)
   }
 }

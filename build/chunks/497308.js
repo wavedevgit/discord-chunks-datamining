@@ -1,13 +1,13 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(821819),
-  i = n(982665),
-  o = n(726433),
-  a = n(448894),
+var e = n(821819),
+  o = n(982665),
+  i = n(726433),
+  u = n(448894),
   s = Object.isExtensible,
-  l = r(function() {
+  c = e(function() {
     s(1)
   });
-e.exports = l || a ? function(e) {
-  return !!i(e) && (!a || "ArrayBuffer" !== o(e)) && (!s || s(e))
+t.exports = c || u ? function(t) {
+  return !!o(t) && (!u || "ArrayBuffer" !== i(t)) && (!s || s(t))
 } : s

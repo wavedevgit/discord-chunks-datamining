@@ -110,14 +110,14 @@ let O = function(e) {
     reducedMotion: S
   } = i.useContext(c.S), I = i.useRef(null), [T, N] = i.useState(!1), A = (0, p.Q3)("Switch"), C = (0, d.d)(A ? l.Z.colors.INTERACTIVE_MUTED : l.Z.unsafe_rawColors.PRIMARY_400).spring(), R = (0, d.d)(A ? l.Z.colors.REDESIGN_INPUT_CONTROL_SELECTED : l.Z.unsafe_rawColors.GREEN_360).spring(), {
     state: P,
-    opacity: w
+    opacity: D
   } = (0, f.q_F)({
     config: v,
     opacity: h ? A ? .5 : .3 : 1,
     state: T ? o ? .7 : .3 : +!!o
   }, "animate-always");
 
-  function D(e) {
+  function w(e) {
     N(!1), null == n || n(e.currentTarget.checked, e)
   }
 
@@ -141,7 +141,7 @@ let O = function(e) {
       onMouseUp: () => N(!1),
       onMouseLeave: () => N(!1),
       style: {
-        opacity: w,
+        opacity: D,
         backgroundColor: P.to({
           output: [C, R]
         })
@@ -187,7 +187,7 @@ let O = function(e) {
         tabIndex: h ? -1 : 0,
         onKeyDown: L,
         onKeyUp: x,
-        onChange: D,
+        onChange: w,
         checked: o,
         disabled: h
       })]

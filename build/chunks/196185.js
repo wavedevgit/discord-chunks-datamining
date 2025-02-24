@@ -1,8 +1,8 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var t = Math.ceil,
+var r = Math.ceil,
   n = Math.floor;
-e.exports = Math.trunc || function(e) {
-  var r = +e;
-  return (r > 0 ? n : t)(r)
+t.exports = Math.trunc || function(t) {
+  var e = +t;
+  return (e > 0 ? n : r)(e)
 }

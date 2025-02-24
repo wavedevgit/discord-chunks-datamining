@@ -72,13 +72,13 @@ function P(e) {
     disabled: o,
     isEditor: N,
     renderCTAButtons: C
-  } = e, [P, w] = (0, s.Wu)([g.Z], () => [g.Z.getCurrentDesktopIcon(), g.Z.isUpsellPreview]), {
-    enabled: D
+  } = e, [P, D] = (0, s.Wu)([g.Z], () => [g.Z.getCurrentDesktopIcon(), g.Z.isUpsellPreview]), {
+    enabled: w
   } = _.Z.getCurrentConfig({
     location: "UserSettingsAppearanceInAppIcon"
   }, {
-    autoTrackExposure: w,
-    disable: !w
+    autoTrackExposure: D,
+    disable: !D
   }), L = i.useRef(null);
   (0, m.Z)(L, O.h1.CUSTOM_APP_ICONS);
   let x = (0, d.Dt)(),
@@ -86,9 +86,9 @@ function P(e) {
       orientation: "horizontal",
       labelledBy: x
     }),
-    k = (0, f.Q3)("AppIconSelectionGroup"),
-    j = e => {
-      if (D && !N && e !== E.aH.DEFAULT) {
+    j = (0, f.Q3)("AppIconSelectionGroup"),
+    k = e => {
+      if (w && !N && e !== E.aH.DEFAULT) {
         (0, l.ZDy)(async () => {
           let {
             default: e
@@ -122,12 +122,12 @@ function P(e) {
               className: I.title,
               children: [(0, r.jsx)(l.X6q, {
                 className: I.titleText,
-                variant: k ? "text-lg/medium" : "text-md/medium",
+                variant: j ? "text-lg/medium" : "text-md/medium",
                 children: S.NW.string(S.t.NThqT0)
-              }), !D && (0, r.jsx)(h.Z, {
+              }), !w && (0, r.jsx)(h.Z, {
                 className: I.premiumIcon
               })]
-            }), D ? N ? null : (0, r.jsxs)("div", {
+            }), w ? N ? null : (0, r.jsxs)("div", {
               className: I.description,
               children: [(0, r.jsx)(l.SrA, {
                 size: "md",
@@ -144,14 +144,14 @@ function P(e) {
             }) : (0, r.jsx)(l.X6q, {
               variant: "text-sm/normal",
               className: a()({
-                [T.subtext]: k
+                [T.subtext]: j
               }),
               children: S.NW.string(S.t.IgENJi)
             })]
           }), null == C ? void 0 : C()]
         }), (0, r.jsx)("div", {
           className: a()(I.presets, {
-            [I.presetsJustified]: D && N
+            [I.presetsJustified]: w && N
           }),
           children: (0, b.wu)().filter(e => {
             let {
@@ -161,10 +161,10 @@ function P(e) {
           }).map((e, t) => (0, r.jsx)(v.Z, {
             icon: e,
             isSelected: P === e.id,
-            onSelect: e => j(e),
+            onSelect: e => k(e),
             disabled: o,
             tabIndex: 0 !== t || o ? void 0 : 0,
-            locked: D && !N && e.id !== E.aH.DEFAULT
+            locked: w && !N && e.id !== E.aH.DEFAULT
           }, e.id))
         })]
       })

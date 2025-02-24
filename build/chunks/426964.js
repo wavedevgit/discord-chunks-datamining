@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 });
 var r = n(200651),
   i = n(192379),
@@ -69,31 +69,31 @@ function R(e, t) {
 function P(e) {
   e.stopPropagation()
 }
-let w = i.memo(function(e) {
+let D = i.memo(function(e) {
   var t;
   let {
     clan: n,
     isLoading: N,
     onClose: C,
-    profileViewedAnalytics: w,
-    userId: D
+    profileViewedAnalytics: D,
+    userId: w
   } = e, L = null == n ? void 0 : n.identityGuildId, x = (0, g.Cc)(null != L ? L : null), M = null == n ? void 0 : n.tag, {
-    newestAnalyticsLocation: k
-  } = (0, l.ZP)(), j = i.useMemo(() => A({
-    tagUserId: D,
-    source: k
-  }, w), [D, k, w]), U = (0, a.e7)([p.default], () => p.default.getId()), G = (0, a.e7)([_.ZP], () => null != L ? _.ZP.getMember(L, U) : null, [L, U]), B = (0, a.e7)([u.Z], () => {
+    newestAnalyticsLocation: j
+  } = (0, l.ZP)(), k = i.useMemo(() => A({
+    tagUserId: w,
+    source: j
+  }, D), [w, j, D]), U = (0, a.e7)([p.default], () => p.default.getId()), G = (0, a.e7)([_.ZP], () => null != L ? _.ZP.getMember(L, U) : null, [L, U]), B = (0, a.e7)([u.Z], () => {
     var e;
     return (null == x ? void 0 : x.id) != null && (null === (e = u.Z.getRequest(x.id)) || void 0 === e ? void 0 : e.applicationStatus) === c.wB.SUBMITTED
-  }), Z = null != x && x.memberCount >= O.Du, F = (0, a.e7)([h.default], () => h.default.getUser(U), [U]), V = (null == G ? void 0 : G.joinedAt) != null, H = (0, v.Z4)(L, null == F ? void 0 : F.primaryGuild), W = null != (0, d.Z)(L);
+  }), F = null != x && x.memberCount >= O.Du, V = (0, a.e7)([h.default], () => h.default.getUser(U), [U]), Z = (null == G ? void 0 : G.joinedAt) != null, H = (0, v.Z4)(L, null == V ? void 0 : V.primaryGuild), W = null != (0, d.Z)(L);
   i.useEffect(() => {
     null != L && (0, m.u0)(R(A({
       guildId: L,
       hasJoinRequest: W
-    }, j), {
+    }, k), {
       location: s.Z.CLAN_GUILD_PROFILE
     }))
-  }, [L, W, j]);
+  }, [L, W, k]);
   let Y = i.useCallback(e => {
       null != L && (e.stopPropagation(), e.preventDefault(), null == C || C(), (0, m.hM)(L, m.UE.TAG_ADOPTION), (0, E.SJ)(L))
     }, [L, C]),
@@ -116,21 +116,21 @@ let w = i.memo(function(e) {
     Q = i.useMemo(() => {
       var e;
       switch (!0) {
-        case !V && W:
+        case !Z && W:
           return (0, r.jsx)(y.Z, R(A({
             onClick: K
           }, q), {
             children: I.NW.string(I.t.dXvKgY)
           }));
-        case !V && (null == x ? void 0 : null === (e = x.discoveryProfileFeatures) || void 0 === e ? void 0 : e.has(S.oNc.CLAN_DISCOVERY_DISABLED)):
+        case !Z && (null == x ? void 0 : null === (e = x.discoveryProfileFeatures) || void 0 === e ? void 0 : e.has(S.oNc.CLAN_DISCOVERY_DISABLED)):
           return null;
-        case V && !H:
+        case Z && !H:
           return (0, r.jsx)(y.Z, R(A({
             onClick: Y
           }, q), {
             children: I.NW.string(I.t["1keBy8"])
           }));
-        case V && H:
+        case Z && H:
           return (0, r.jsx)(y.Z, R(A({
             onClick: z
           }, q), {
@@ -139,7 +139,7 @@ let w = i.memo(function(e) {
         default:
           return null
       }
-    }, [V, W, null == x ? void 0 : x.discoveryProfileFeatures, H, K, q, Y, z]),
+    }, [Z, W, null == x ? void 0 : x.discoveryProfileFeatures, H, K, q, Y, z]),
     X = i.useMemo(() => ({
       className: T.container,
       onClick: P
@@ -152,9 +152,9 @@ let w = i.memo(function(e) {
     children: [(0, r.jsx)(b.x, {
       clan: x,
       className: T.cardContainer,
-      isMember: V,
+      isMember: Z,
       hasPendingJoinRequest: B,
-      atMaxMemberCapacity: Z
+      atMaxMemberCapacity: F
     }), J && (0, r.jsx)("div", {
       className: T.buttonGroupContainer,
       children: null != Q && Q

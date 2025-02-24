@@ -34,15 +34,15 @@ var r = n(147018),
   C = v.set,
   R = v.getterFor(O),
   P = "stack" in I(O),
-  w = function(e) {
+  D = function(e) {
     return f(g, e) && g[e].m ? g[e].c : 0
   },
-  D = function() {
+  w = function() {
     p(this, L);
     var e = arguments.length,
       t = m(e < 1 ? void 0 : arguments[0]),
       n = m(e < 2 ? void 0 : arguments[1], "Error"),
-      r = w(n);
+      r = D(n);
     if (C(this, {
         type: O,
         name: n,
@@ -53,7 +53,7 @@ var r = n(147018),
       i.name = O, c(this, "stack", l(1, E(i.stack, 1)))
     }
   },
-  L = D.prototype = s(A),
+  L = w.prototype = s(A),
   x = function(e) {
     return {
       enumerable: !0,
@@ -66,33 +66,33 @@ var r = n(147018),
       return R(this)[e]
     })
   };
-b && (d(L, "code", M("code")), d(L, "message", M("message")), d(L, "name", M("name"))), c(L, "constructor", l(1, D));
-var k = a(function() {
+b && (d(L, "code", M("code")), d(L, "message", M("message")), d(L, "name", M("name"))), c(L, "constructor", l(1, w));
+var j = a(function() {
     return !(new T instanceof I)
   }),
-  j = k || a(function() {
+  k = j || a(function() {
     return A.toString !== h || "2: 1" !== String(new T(1, 2))
   }),
-  U = k || a(function() {
+  U = j || a(function() {
     return 25 !== new T(1, "DataCloneError").code
   }),
-  G = k || 25 !== T[S] || 25 !== N[S],
-  B = y ? j || U || G : k;
+  G = j || 25 !== T[S] || 25 !== N[S],
+  B = y ? k || U || G : j;
 r({
   global: !0,
   constructor: !0,
   forced: B
 }, {
-  DOMException: B ? D : T
+  DOMException: B ? w : T
 });
-var Z = o(O),
-  F = Z.prototype;
-for (var V in j && (y || T === Z) && u(F, "toString", h), U && b && T === Z && d(F, "code", x(function() {
-    return w(_(this).name)
+var F = o(O),
+  V = F.prototype;
+for (var Z in k && (y || T === F) && u(V, "toString", h), U && b && T === F && d(V, "code", x(function() {
+    return D(_(this).name)
   })), g)
-  if (f(g, V)) {
-    var H = g[V],
+  if (f(g, Z)) {
+    var H = g[Z],
       W = H.s,
       Y = l(6, H.c);
-    f(Z, W) || c(Z, W, Y), f(F, W) || c(F, W, Y)
+    f(F, W) || c(F, W, Y), f(V, W) || c(V, W, Y)
   }

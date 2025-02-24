@@ -1,9 +1,9 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(809235),
-  i = Function.prototype,
-  o = i.apply,
-  a = i.call;
-e.exports = "object" == typeof Reflect && Reflect.apply || (r ? a.bind(o) : function() {
-  return a.apply(o, arguments)
+var e = n(809235),
+  o = Function.prototype,
+  i = o.apply,
+  u = o.call;
+t.exports = "object" == typeof Reflect && Reflect.apply || (e ? u.bind(i) : function() {
+  return u.apply(i, arguments)
 })

@@ -1,18 +1,18 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(67867),
-  i = n(804104).find,
-  o = n(501953),
-  a = "find",
+var e = n(766362),
+  o = n(804104).find,
+  i = n(501953),
+  u = "find",
   s = !0;
-a in [] && [, ][a](function() {
+u in [] && [, ][u](function() {
   s = !1
-}), r({
+}), e({
   target: "Array",
   proto: !0,
   forced: s
 }, {
-  find: function(e) {
-    return i(this, e, arguments.length > 1 ? arguments[1] : void 0)
+  find: function(t) {
+    return o(this, t, arguments.length > 1 ? arguments[1] : void 0)
   }
-}), o(a)
+}), i(u)

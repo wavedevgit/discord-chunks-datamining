@@ -29,23 +29,23 @@ var r = n(147018),
   C = n(641236),
   R = n(976418),
   P = C("iterator"),
-  w = "URLSearchParams",
-  D = w + "Iterator",
+  D = "URLSearchParams",
+  w = D + "Iterator",
   L = _.set,
-  x = _.getterFor(w),
-  M = _.getterFor(D),
-  k = Object.getOwnPropertyDescriptor,
-  j = function(e) {
+  x = _.getterFor(D),
+  M = _.getterFor(w),
+  j = Object.getOwnPropertyDescriptor,
+  k = function(e) {
     if (!s) return i[e];
-    var t = k(i, e);
+    var t = j(i, e);
     return t && t.value
   },
-  U = j("fetch"),
-  G = j("Request"),
-  B = j("Headers"),
-  Z = G && G.prototype,
-  F = B && B.prototype,
-  V = i.RegExp,
+  U = k("fetch"),
+  G = k("Request"),
+  B = k("Headers"),
+  F = G && G.prototype,
+  V = B && B.prototype,
+  Z = i.RegExp,
   H = i.TypeError,
   W = i.decodeURIComponent,
   Y = i.encodeURIComponent,
@@ -60,7 +60,7 @@ var r = n(147018),
   et = /\+/g,
   en = [, , , , ],
   er = function(e) {
-    return en[e - 1] || (en[e - 1] = V("((?:%[\\da-f]{2}){" + e + "})", "gi"))
+    return en[e - 1] || (en[e - 1] = Z("((?:%[\\da-f]{2}){" + e + "})", "gi"))
   },
   ei = function(e) {
     try {
@@ -96,7 +96,7 @@ var r = n(147018),
   },
   eu = p(function(e, t) {
     L(this, {
-      type: D,
+      type: w,
       iterator: T(x(e).entries),
       kind: t
     })
@@ -111,7 +111,7 @@ var r = n(147018),
     this.entries = [], this.url = null, void 0 !== e && (y(e) ? this.parseObject(e) : this.parseQuery("string" == typeof e ? "?" === K(e, 0) ? ee(e, 1) : e : O(e)))
   };
 ed.prototype = {
-  type: w,
+  type: D,
   bindURL: function(e) {
     this.url = e, this.update()
   },
@@ -233,19 +233,19 @@ if (d(ep, {
     },
     configurable: !0,
     enumerable: !0
-  }), f(ef, w), r({
+  }), f(ef, D), r({
     global: !0,
     constructor: !0,
     forced: !l
   }, {
     URLSearchParams: ef
   }), !l && m(B)) {
-  var e_ = a(F.has),
-    eh = a(F.set),
+  var e_ = a(V.has),
+    eh = a(V.set),
     em = function(e) {
       if (y(e)) {
         var t, n = e.body;
-        if (v(n) === w) return e_(t = e.headers ? new B(e.headers) : new B, "content-type") || eh(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), S(e, {
+        if (v(n) === D) return e_(t = e.headers ? new B(e.headers) : new B, "content-type") || eh(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), S(e, {
           body: I(0, O(n)),
           headers: I(0, t)
         })
@@ -263,9 +263,9 @@ if (d(ep, {
       }
     }), m(G)) {
     var eg = function(e) {
-      return h(this, Z), new G(e, arguments.length > 1 ? em(arguments[1]) : {})
+      return h(this, F), new G(e, arguments.length > 1 ? em(arguments[1]) : {})
     };
-    Z.constructor = eg, eg.prototype = Z, r({
+    F.constructor = eg, eg.prototype = F, r({
       global: !0,
       constructor: !0,
       dontCallGetSet: !0,

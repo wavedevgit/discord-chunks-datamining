@@ -1,11 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r = n(67867),
-  i = n(228042),
-  o = n(146321),
-  a = o.get,
-  s = o.has,
-  l = o.set;
+var r = n(766362),
+  o = n(228042),
+  a = n(146321),
+  i = a.get,
+  s = a.has,
+  c = a.set;
 r({
   target: "Map",
   proto: !0,
@@ -13,7 +13,7 @@ r({
   forced: !0
 }, {
   emplace: function(e, t) {
-    var n, r, o = i(this);
-    return s(o, e) ? (n = a(o, e), "update" in t && (n = t.update(n, e, o), l(o, e, n)), n) : (r = t.insert(e, o), l(o, e, r), r)
+    var n, r, a = o(this);
+    return s(a, e) ? (n = i(a, e), "update" in t && (n = t.update(n, e, a), c(a, e, n)), n) : (r = t.insert(e, a), c(a, e, r), r)
   }
 })

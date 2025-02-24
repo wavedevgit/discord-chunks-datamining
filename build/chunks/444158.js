@@ -1,16 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(327192),
-  i = n(141603),
-  o = n(875604),
-  a = n(570138);
+var e = n(174525),
+  o = n(141603),
+  i = n(875604),
+  u = n(570138);
 n(63972);
 var s = Array.prototype,
-  l = {
+  c = {
     DOMTokenList: !0,
     NodeList: !0
   };
-e.exports = function(e) {
-  var t = e.forEach;
-  return e === s || o(s, e) && t === s.forEach || i(l, r(e)) ? a : t
+t.exports = function(t) {
+  var r = t.forEach;
+  return t === s || i(s, t) && r === s.forEach || o(c, e(t)) ? u : r
 }

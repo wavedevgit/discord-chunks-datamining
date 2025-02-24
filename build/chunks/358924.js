@@ -12,8 +12,8 @@ var r, i = n(200651),
   d = n(287734),
   p = n(438139),
   h = n(2052),
-  g = n(726542),
-  f = n(638880),
+  f = n(726542),
+  g = n(638880),
   m = n(655922),
   b = n(122810),
   _ = n(833664),
@@ -314,7 +314,7 @@ er.Header = en, er.Body = e => {
     partySize: s,
     members: c,
     onChannelContextMenu: p
-  } = e, h = l.useRef(null), g = (0, I.ZP)(o, !0);
+  } = e, h = l.useRef(null), f = (0, I.ZP)(o, !0);
   return (0, i.jsx)(J, {
     children: (0, i.jsxs)("div", {
       className: z.voiceSection,
@@ -357,7 +357,7 @@ er.Header = en, er.Body = e => {
         },
         children: (0, i.jsxs)("div", {
           className: z.voiceSectionDetails,
-          children: [q(r.toString(), z.voiceSectionText), Q(g, z.voiceSectionText)]
+          children: [q(r.toString(), z.voiceSectionText), Q(f, z.voiceSectionText)]
         })
       }), (0, i.jsx)(B.Z, {
         partySize: s,
@@ -457,7 +457,7 @@ er.Header = en, er.Body = e => {
       application_id: h
     } = r;
   if (null != p && (0, O.Z)(r)) {
-    var f;
+    var g;
     t = (0, i.jsx)(S.Z, {
       className: z.twitchSectionPreviewWrapper,
       aspectRatio: 16 / 9,
@@ -466,7 +466,7 @@ er.Header = en, er.Body = e => {
         tag: "a",
         target: "_blank",
         children: [(0, i.jsx)("img", {
-          alt: null !== (f = p.large_text) && void 0 !== f ? f : "",
+          alt: null !== (g = p.large_text) && void 0 !== g ? g : "",
           src: o(h, p.large_image, [900, 500]),
           className: z.twitchSectionPreview
         }), (0, i.jsx)("img", {
@@ -485,7 +485,7 @@ er.Header = en, er.Body = e => {
       }),
       children: [(0, i.jsx)("img", {
         alt: "",
-        src: g.Z.get(H.ABu.TWITCH).icon.lightSVG,
+        src: f.Z.get(H.ABu.TWITCH).icon.lightSVG,
         className: z.twitchSectionIcon
       }), (0, i.jsxs)("div", {
         children: [q(c), null != d ? Q(d) : null]
@@ -505,7 +505,7 @@ er.Header = en, er.Body = e => {
     applicationStream: o,
     onPreviewClick: a,
     guildId: c
-  } = e, d = (0, s.e7)([D.Z], () => D.Z.getChannel(o.channelId)), [p, h] = (0, j.wq)(d), g = (0, i.jsxs)(u.P3F, {
+  } = e, d = (0, s.e7)([D.Z], () => D.Z.getChannel(o.channelId)), [p, h] = (0, j.wq)(d), f = (0, i.jsxs)(u.P3F, {
     onClick: p ? a : void 0,
     className: z.applicationStreamingPreviewWrapper,
     children: [(0, i.jsx)(A.Z, {
@@ -517,7 +517,7 @@ er.Header = en, er.Body = e => {
       color: "always-white",
       children: (0, j.P9)(h)
     })]
-  }), f = null !== (n = null === (t = (0, N.Z)(r, o)) || void 0 === t ? void 0 : t.activityText) && void 0 !== n ? n : F.NW.string(F.t.eXan7O);
+  }), g = null !== (n = null === (t = (0, N.Z)(r, o)) || void 0 === t ? void 0 : t.activityText) && void 0 !== n ? n : F.NW.string(F.t.eXan7O);
   return (0, i.jsxs)(J, {
     children: [(0, i.jsxs)("div", {
       className: z.applicationStreamingSection,
@@ -527,11 +527,11 @@ er.Header = en, er.Body = e => {
         "aria-label": l.username,
         className: z.applicationStreamingAvatar
       }), (0, i.jsxs)("div", {
-        children: [q(V.ZP.getName(l)), Q(f)]
+        children: [q(V.ZP.getName(l)), Q(g)]
       }), (0, i.jsx)(C.ZP, {
         size: C.ZP.Sizes.SMALL
       })]
-    }), g]
+    }), f]
   })
 }, er.EmbeddedActivitySection = e => {
   let {
@@ -547,7 +547,7 @@ er.Header = en, er.Body = e => {
     })
   }, [d]);
   let p = (0, s.Wu)([k.default, R.default], () => Array.from(o).map(e => R.default.getId() === e ? null : k.default.getUser(e)).filter(W.lm)),
-    g = (0, h.O)(),
+    f = (0, h.O)(),
     {
       analyticsLocations: m
     } = (0, v.ZP)();
@@ -598,10 +598,10 @@ er.Header = en, er.Body = e => {
           children: (0, i.jsx)(u.zxk, {
             size: u.zxk.Sizes.SMALL,
             onClick: e => {
-              e.stopPropagation(), (0, f.Z)({
+              e.stopPropagation(), (0, g.Z)({
                 applicationId: d,
                 activityChannelId: n.id,
-                locationObject: g.location,
+                locationObject: f.location,
                 analyticsLocations: m
               })
             },

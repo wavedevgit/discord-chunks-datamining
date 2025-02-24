@@ -8,7 +8,7 @@ n.d(t, {
   bp: () => R,
   ef: () => O,
   s6: () => y,
-  sh: () => D
+  sh: () => w
 }), n(653041), n(47120);
 var r = n(434179),
   i = n(771649),
@@ -62,7 +62,7 @@ async function y() {
     type: "REMOTE_SESSION_DISCONNECT"
   });
   let n = [];
-  ((null == e ? void 0 : e.type) === m.ABu.PLAYSTATION || (null == e ? void 0 : e.type) === m.ABu.PLAYSTATION_STAGING) && (null == e ? void 0 : e.commandId) != null && (null == e ? void 0 : e.deviceId) != null && n.push(w(e.type, e.deviceId, e.commandId)), null != t && n.push(A(t));
+  ((null == e ? void 0 : e.type) === m.ABu.PLAYSTATION || (null == e ? void 0 : e.type) === m.ABu.PLAYSTATION_STAGING) && (null == e ? void 0 : e.commandId) != null && (null == e ? void 0 : e.deviceId) != null && n.push(D(e.type, e.deviceId, e.commandId)), null != t && n.push(A(t));
   try {
     await Promise.all(n)
   } catch (e) {
@@ -210,7 +210,7 @@ async function P(e, t, n, i) {
     commandId: l
   }), l
 }
-async function w(e, t, n) {
+async function D(e, t, n) {
   a.Z.dispatch({
     type: "GAME_CONSOLE_DEVICE_CANCEL_COMMAND_START",
     platform: e,
@@ -238,7 +238,7 @@ async function w(e, t, n) {
     commandId: n
   })
 }
-async function D(e, t, n) {
+async function w(e, t, n) {
   await p.Z.maybeShowPTTAlert(e), await y();
   let r = await N();
   await P(e, t, n, r), (0, h.Z)(n.id, e)

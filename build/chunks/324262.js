@@ -13,9 +13,9 @@ var r = n(200651),
   d = n(428695),
   p = n(981631),
   h = n(388032),
-  g = n(907229);
+  f = n(907229);
 
-function f(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ let m = o().debounce(s.ZP.trackWithMetadata, 500),
       image: o,
       type: u,
       imageMarginX: d,
-      imageMarginTop: f,
+      imageMarginTop: g,
       trackingSource: b,
       undismissable: _,
       onDismissed: E,
@@ -58,7 +58,7 @@ let m = o().debounce(s.ZP.trackWithMetadata, 500),
     }, [t.id, u]);
     let y = null;
     "function" == typeof N ? y = N() : null != N && (y = (0, r.jsx)(a.zxk, {
-      className: g.btn,
+      className: f.btn,
       size: a.zxk.Sizes.SMALL,
       onClick: () => {
         null != u && c.default.track(p.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
@@ -73,37 +73,37 @@ let m = o().debounce(s.ZP.trackWithMetadata, 500),
     }));
     let I = null != d ? "".concat(d, "px") : "16px";
     return (0, r.jsxs)("div", {
-      className: g.channelNotice,
+      className: f.channelNotice,
       children: [!0 === _ ? null : (0, r.jsx)(a.P3F, {
         onClick: () => {
           s.ZP.trackWithMetadata(p.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: u
           }), null == E || E()
         },
-        className: g.close,
+        className: f.close,
         "aria-label": h.NW.string(h.t.WAI6xs),
         children: (0, r.jsx)(a.Dio, {
           size: "md",
           color: "currentColor",
-          className: g.closeIcon
+          className: f.closeIcon
         })
       }), (0, r.jsx)("div", {
-        className: g.imageContainer,
+        className: f.imageContainer,
         style: {
-          marginTop: "".concat(f, "px"),
+          marginTop: "".concat(g, "px"),
           marginLeft: I,
           marginRight: I
         },
         children: (0, r.jsx)("img", {
-          className: g.image,
+          className: f.image,
           src: o,
           alt: ""
         })
       }), (0, r.jsxs)("div", {
-        className: g.message,
+        className: f.message,
         children: [null != n ? (0, r.jsx)(a.X6q, {
           variant: "heading-md/semibold",
-          className: g.title,
+          className: f.title,
           children: n
         }) : null, (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
@@ -116,5 +116,5 @@ let m = o().debounce(s.ZP.trackWithMetadata, 500),
     let {
       showRedesignedChannelNotice: t
     } = (0, u.o)(!0);
-    return t ? (0, r.jsx)(d.Z, f({}, e)) : (0, r.jsx)(b, f({}, e))
+    return t ? (0, r.jsx)(d.Z, g({}, e)) : (0, r.jsx)(b, g({}, e))
   }

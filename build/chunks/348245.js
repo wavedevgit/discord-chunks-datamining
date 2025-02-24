@@ -120,20 +120,20 @@ function P(e) {
     }
   }
 }
-let w = 90 * S.Z.Millis.DAY,
-  D = "viewedThreadIds";
+let D = 90 * S.Z.Millis.DAY,
+  w = "viewedThreadIds";
 
 function L(e) {
   if (b.ZP.hasOpenedThread(e)) return !1;
   if (null == r) {
     var t;
-    r = null !== (t = a.K.get(D, {})) && void 0 !== t ? t : {}
+    r = null !== (t = a.K.get(w, {})) && void 0 !== t ? t : {}
   }
   if (e in r) return !1;
   r[e] = Date.now();
-  let n = Date.now() - w;
+  let n = Date.now() - D;
   for (let e in r) r[e] < n && delete r[e];
-  return a.K.set(D, r), !0
+  return a.K.set(w, r), !0
 }
 
 function x() {
@@ -173,7 +173,7 @@ function M() {
   } else n && R.log("Skipping fetch because there is no selected channel")
 }
 
-function k(e) {
+function j(e) {
   let {
     guildId: t,
     channelId: n,
@@ -188,7 +188,7 @@ function k(e) {
   }), U(t, n)
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t,
     channelId: n
@@ -228,7 +228,7 @@ function B(e) {
   }), U(t, n))
 }
 
-function Z(e) {
+function F(e) {
   let {
     channel: t,
     messageId: n
@@ -240,7 +240,7 @@ function Z(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     response: t
   } = e;
@@ -255,7 +255,7 @@ function F(e) {
     })
   }
 }
-let V = {};
+let Z = {};
 
 function H(e) {
   var t;
@@ -266,9 +266,9 @@ function H(e) {
     isPreview: o = !1
   } = e;
   if (o) return;
-  let a = null !== (t = V[n]) && void 0 !== t ? t : 0;
+  let a = null !== (t = Z[n]) && void 0 !== t ? t : 0;
   if (Date.now() - a < 10 * S.Z.Millis.SECOND) return;
-  V[n] = Date.now();
+  Z[n] = Date.now();
   let s = y.Z.getChannelId(),
     l = g.ZP.getCurrentSidebarChannelId(s),
     u = n === s || n === l;
@@ -314,14 +314,14 @@ class K extends d.Z {
     super(...e), C(this, "fetchMessages", P), C(this, "loadSelectedChannelIfNecessary", M), C(this, "stores", new Map().set(g.ZP, G)), C(this, "actions", {
       APP_STATE_UPDATE: Y,
       OVERLAY_INITIALIZE: x,
-      CHANNEL_SELECT: k,
-      VOICE_CHANNEL_SELECT: j,
-      THREAD_CREATE: Z,
+      CHANNEL_SELECT: j,
+      VOICE_CHANNEL_SELECT: k,
+      THREAD_CREATE: F,
       THREAD_LIST_SYNC: () => M(),
-      CHANNEL_CREATE: Z,
+      CHANNEL_CREATE: F,
       CHANNEL_PRELOAD: B,
       GUILD_CREATE: () => M(),
-      MESSAGE_END_EDIT: F,
+      MESSAGE_END_EDIT: V,
       LOAD_MESSAGES_SUCCESS: H,
       UPLOAD_FAIL: W,
       CHANNEL_DELETE: () => M(),

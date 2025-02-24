@@ -1,35 +1,35 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(360518)("iterator"),
-  i = !1;
+var e = n(360518)("iterator"),
+  o = !1;
 try {
-  var o = 0,
-    a = {
+  var i = 0,
+    u = {
       next: function() {
         return {
-          done: !!o++
+          done: !!i++
         }
       },
       return: function() {
-        i = !0
+        o = !0
       }
     };
-  a[r] = function() {
+  u[e] = function() {
     return this
-  }, Array.from(a, function() {
+  }, Array.from(u, function() {
     throw 2
   })
-} catch (e) {}
-e.exports = function(e, t) {
+} catch (t) {}
+t.exports = function(t, r) {
   try {
-    if (!t && !i) return !1
-  } catch (e) {
+    if (!r && !o) return !1
+  } catch (t) {
     return !1
   }
   var n = !1;
   try {
-    var o = {};
-    o[r] = function() {
+    var i = {};
+    i[e] = function() {
       return {
         next: function() {
           return {
@@ -37,7 +37,7 @@ e.exports = function(e, t) {
           }
         }
       }
-    }, e(o)
-  } catch (e) {}
+    }, t(i)
+  } catch (t) {}
   return n
 }

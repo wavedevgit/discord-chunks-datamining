@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Cj: () => g,
+  Cj: () => f,
   M$: () => h,
   Zw: () => p
 }), n(789020);
@@ -17,7 +17,7 @@ async function p(e) {
   var t, n;
   let {
     applicationId: p,
-    socketId: f
+    socketId: g
   } = e, m = u.ZP.getCurrentEmbeddedActivity();
   if ((null == m ? void 0 : m.applicationId) !== p) return;
   let b = m.compositeInstanceId,
@@ -34,13 +34,13 @@ async function p(e) {
     party: {
       size: h
     },
-    flags: g
+    flags: f
   };
   r.Z.dispatch({
     type: "LOCAL_ACTIVITY_UPDATE",
-    socketId: f,
+    socketId: g,
     activity: E
   })
 }
 let h = [1, 100],
-  g = d.xjy.JOIN | d.xjy.PARTY_PRIVACY_FRIENDS | d.xjy.PARTY_PRIVACY_VOICE_CHANNEL | d.xjy.EMBEDDED | d.xjy.CONTEXTLESS
+  f = d.xjy.JOIN | d.xjy.PARTY_PRIVACY_FRIENDS | d.xjy.PARTY_PRIVACY_VOICE_CHANNEL | d.xjy.EMBEDDED | d.xjy.CONTEXTLESS

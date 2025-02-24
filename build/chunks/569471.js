@@ -173,7 +173,7 @@ function P(e) {
   } : delete h[t]
 }
 
-function w(e) {
+function D(e) {
   var t, n;
   let r = !1;
   return (null === (t = e.removedMemberIds) || void 0 === t ? void 0 : t.includes(u.default.getId())) && e.id in h && (h = f({}, h), delete h[e.id], r = !0), null === (n = e.addedMembers) || void 0 === n || n.forEach(t => {
@@ -187,7 +187,7 @@ function w(e) {
     }, y(e.id), r = !0)
   }), r
 }
-class D extends(r = a.ZP.Store) {
+class w extends(r = a.ZP.Store) {
   hasJoined(e) {
     return e in h
   }
@@ -213,8 +213,8 @@ class D extends(r = a.ZP.Store) {
     return g.has(e)
   }
 }
-d(D, "displayName", "JoinedThreadsStore");
-let L = new D(s.Z, {
+d(w, "displayName", "JoinedThreadsStore");
+let L = new w(s.Z, {
     CONNECTION_OPEN: O,
     OVERLAY_INITIALIZE: S,
     GUILD_CREATE: I,
@@ -228,6 +228,6 @@ let L = new D(s.Z, {
     THREAD_DELETE: C,
     THREAD_MEMBER_UPDATE: R,
     THREAD_MEMBER_LOCAL_UPDATE: P,
-    THREAD_MEMBERS_UPDATE: w
+    THREAD_MEMBERS_UPDATE: D
   }),
   x = L

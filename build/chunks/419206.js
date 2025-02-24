@@ -1,35 +1,33 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-var r = n(192379),
-  i = n(476400),
-  o = n.n(i),
-  a = n(723184),
-  s = n(829307),
-  l = n(820611),
-  c = n(877837),
-  u = n(726621),
-  d = function(e) {
+var n = r(192379),
+  o = r(476400),
+  a = r.n(o),
+  i = r(723184),
+  l = r(829307),
+  s = r(820611),
+  u = r(877837),
+  c = r(726621),
+  p = function(e) {
     var t = e.onChange,
-      n = e.onSwatchHover,
-      i = e.hex,
-      o = e.colors,
-      d = e.width,
+      r = e.onSwatchHover,
+      o = e.hex,
+      a = e.colors,
+      p = e.width,
       f = e.triangle,
-      p = e.styles,
-      _ = void 0 === p ? {} : p,
+      d = e.styles,
       h = e.className,
-      m = void 0 === h ? "" : h,
-      g = "transparent" === i,
-      E = function(e, n) {
-        l.FX(e) && t({
+      b = "transparent" === o,
+      v = function(e, r) {
+        s.FX(e) && t({
           hex: e,
           source: "hex"
-        }, n)
+        }, r)
       },
-      v = (0, a.default)((0, s.Z)({
+      g = (0, i.default)((0, l.Z)({
         default: {
           card: {
-            width: d,
+            width: p,
             background: "#fff",
             boxShadow: "0 1px rgba(0,0,0,.1)",
             borderRadius: "6px",
@@ -37,7 +35,7 @@ var r = n(192379),
           },
           head: {
             height: "110px",
-            background: i,
+            background: o,
             borderRadius: "6px 6px 0 0",
             display: "flex",
             alignItems: "center",
@@ -49,7 +47,7 @@ var r = n(192379),
           },
           label: {
             fontSize: "18px",
-            color: l.Qg(i),
+            color: s.Qg(o),
             position: "relative"
           },
           triangle: {
@@ -57,7 +55,7 @@ var r = n(192379),
             height: "0px",
             borderStyle: "solid",
             borderWidth: "0 10px 10px 10px",
-            borderColor: "transparent transparent " + i + " transparent",
+            borderColor: "transparent transparent " + o + " transparent",
             position: "absolute",
             top: "-10px",
             left: "50%",
@@ -81,42 +79,42 @@ var r = n(192379),
             display: "none"
           }
         }
-      }, _), {
+      }, void 0 === d ? {} : d), {
         "hide-triangle": "hide" === f
       });
-    return r.createElement("div", {
-      style: v.card,
-      className: "block-picker " + m
-    }, r.createElement("div", {
-      style: v.triangle
-    }), r.createElement("div", {
-      style: v.head
-    }, g && r.createElement(c.QN, {
+    return n.createElement("div", {
+      style: g.card,
+      className: "block-picker " + (void 0 === h ? "" : h)
+    }, n.createElement("div", {
+      style: g.triangle
+    }), n.createElement("div", {
+      style: g.head
+    }, b && n.createElement(u.QN, {
       borderRadius: "6px 6px 0 0"
-    }), r.createElement("div", {
-      style: v.label
-    }, i)), r.createElement("div", {
-      style: v.body
-    }, r.createElement(u.Z, {
-      colors: o,
-      onClick: E,
-      onSwatchHover: n
-    }), r.createElement(c.Vm, {
+    }), n.createElement("div", {
+      style: g.label
+    }, o)), n.createElement("div", {
+      style: g.body
+    }, n.createElement(c.Z, {
+      colors: a,
+      onClick: v,
+      onSwatchHover: r
+    }), n.createElement(u.Vm, {
       style: {
-        input: v.input
+        input: g.input
       },
-      value: i,
-      onChange: E
+      value: o,
+      onChange: v
     })))
   };
-d.propTypes = {
-  width: o().oneOfType([o().string, o().number]),
-  colors: o().arrayOf(o().string),
-  triangle: o().oneOf(["top", "hide"]),
-  styles: o().object
-}, d.defaultProps = {
+p.propTypes = {
+  width: a().oneOfType([a().string, a().number]),
+  colors: a().arrayOf(a().string),
+  triangle: a().oneOf(["top", "hide"]),
+  styles: a().object
+}, p.defaultProps = {
   width: 170,
   colors: ["#D9E3F0", "#F47373", "#697689", "#37D67A", "#2CCCE4", "#555555", "#dce775", "#ff8a65", "#ba68c8"],
   triangle: "top",
   styles: {}
-}, (0, c.t1)(d)
+}, (0, u.t1)(p)

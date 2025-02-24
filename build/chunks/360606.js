@@ -82,10 +82,10 @@ function P(e) {
   v = null, I = _.QZA.OPEN, T = {}, N = !1
 }
 
-function w() {
+function D() {
   r = null, g = [], E = [], v = null, b = null, y = null, I = _.QZA.CLOSED, N = !1
 }
-let D = s().debounce(() => {
+let w = s().debounce(() => {
   N && (null != b ? s().isEqual(b, K(b.id)) && (N = !1) : null != y && s().isEqual(y, z(y.id)) && (N = !1), N || Q.emitChange())
 }, 500);
 
@@ -94,7 +94,7 @@ function L(e) {
     settings: t
   } = e;
   if (null == b) return !1;
-  b = m({}, b), null != t.enableEmoticons && b.enable_emoticons !== t.enableEmoticons && (b.enable_emoticons = t.enableEmoticons, N = !0), null != t.expireBehavior && b.expire_behavior !== t.expireBehavior && (b.expire_behavior = t.expireBehavior, N = !0), null != t.expireGracePeriod && b.expire_grace_period !== t.expireGracePeriod && (b.expire_grace_period = t.expireGracePeriod, N = !0), N && D()
+  b = m({}, b), null != t.enableEmoticons && b.enable_emoticons !== t.enableEmoticons && (b.enable_emoticons = t.enableEmoticons, N = !0), null != t.expireBehavior && b.expire_behavior !== t.expireBehavior && (b.expire_behavior = t.expireBehavior, N = !0), null != t.expireGracePeriod && b.expire_grace_period !== t.expireGracePeriod && (b.expire_grace_period = t.expireGracePeriod, N = !0), N && w()
 }
 
 function x(e) {
@@ -102,20 +102,20 @@ function x(e) {
     settings: t
   } = e;
   if (null == y) return !1;
-  y = m({}, y), null != t.name && y.name !== t.name && (y.name = t.name, N = !0), void 0 !== t.avatar && y.avatar !== t.avatar && (y.avatar = t.avatar, N = !0), null != t.channelId && y.channel_id !== t.channelId && (y.channel_id = t.channelId, N = !0), N && D()
+  y = m({}, y), null != t.name && y.name !== t.name && (y.name = t.name, N = !0), void 0 !== t.avatar && y.avatar !== t.avatar && (y.avatar = t.avatar, N = !0), null != t.channelId && y.channel_id !== t.channelId && (y.channel_id = t.channelId, N = !0), N && w()
 }
 
 function M() {
   I = _.QZA.SUBMITTING, T = {}
 }
 
-function k(e) {
+function j(e) {
   var t;
   if (I !== _.QZA.SUBMITTING) return !1;
   I = _.QZA.OPEN, T = null !== (t = e.errors) && void 0 !== t ? t : {}
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t,
     integrations: n
@@ -143,7 +143,7 @@ function j(e) {
       (null == b ? void 0 : b.id) !== n.id || (!1 === n.enabled ? b = null : N || (b = n)), g[e] = n
     } else(null == b ? void 0 : b.id) === t.id && (b = null), g.splice(e, 1)
   }
-  g = [...g], D()
+  g = [...g], w()
 }
 
 function U(e) {
@@ -173,7 +173,7 @@ function U(e) {
       } = t;
       if (n === e.id) return !0
     }) && E.push(e);
-    E = [...E], D()
+    E = [...E], w()
   }
 }
 
@@ -192,7 +192,7 @@ function B(e) {
   v = null, T = {}, N = !1
 }
 
-function Z(e) {
+function F(e) {
   let {
     integrationId: t
   } = e, n = K(t);
@@ -200,11 +200,11 @@ function Z(e) {
   b = n, v = null, y = null, T = {}, N = !1
 }
 
-function F() {
+function V() {
   b = null, T = {}, N = !1
 }
 
-function V(e) {
+function Z(e) {
   let {
     webhookId: t
   } = e, n = z(t);
@@ -307,16 +307,16 @@ let Q = new q(c.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_SET_SECTION: R,
     INTEGRATION_SETTINGS_START_EDITING_COMMAND: G,
     INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: B,
-    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: Z,
-    INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: F,
+    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: F,
+    INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: V,
     INTEGRATION_SETTINGS_UPDATE_INTEGRATION: L,
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: x,
-    INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: V,
+    INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: Z,
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: H,
-    GUILD_SETTINGS_CLOSE: w,
-    GUILD_SETTINGS_LOADED_INTEGRATIONS: j,
+    GUILD_SETTINGS_CLOSE: D,
+    GUILD_SETTINGS_LOADED_INTEGRATIONS: k,
     WEBHOOKS_UPDATE: U,
     INTEGRATION_SETTINGS_SUBMITTING: M,
-    INTEGRATION_SETTINGS_SAVE_FAILURE: k
+    INTEGRATION_SETTINGS_SAVE_FAILURE: j
   }),
   X = Q

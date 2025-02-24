@@ -5,15 +5,15 @@ n.d(t, {
   DR: () => N,
   F$: () => P,
   K$: () => M,
-  Ov: () => j,
-  R2: () => k,
+  Ov: () => k,
+  R2: () => j,
   Sm: () => I,
   fK: () => L,
-  jr: () => D,
+  jr: () => w,
   mK: () => T,
   oK: () => A,
   oc: () => R,
-  qg: () => w
+  qg: () => D
 });
 var r = n(561842),
   i = n(664081),
@@ -123,7 +123,7 @@ let I = e => {
         error: e
       })
     }
-  }, w = async e => {
+  }, D = async e => {
     if (!d.Z.isFetching) {
       s.Z.dispatch({
         type: "COLLECTIBLES_PURCHASES_FETCH"
@@ -149,7 +149,7 @@ let I = e => {
         }), e
       }
     }
-  }, D = async (e, t) => {
+  }, w = async (e, t) => {
     s.Z.dispatch({
       type: "COLLECTIBLES_PRODUCT_FETCH",
       skuId: e
@@ -219,7 +219,7 @@ let I = e => {
     s.Z.dispatch(y({
       type: "COLLECTIBLES_CATEGORY_ITEMS_VIEWED"
     }, e))
-  }, k = async e => {
+  }, j = async e => {
     let {
       release: t = i.P.PROD
     } = e;
@@ -245,7 +245,7 @@ let I = e => {
         type: "COLLECTIBLES_MARKETING_FETCH_FAILURE"
       })
     }
-  }, j = async (e, t) => {
+  }, k = async (e, t) => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SHOP_HOME_FETCH",
       tab: e,

@@ -1,11 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r = n(67867),
-  i = n(570596),
-  o = n(548828),
-  a = n(653457),
+var r = n(766362),
+  o = n(570596),
+  a = n(548828),
+  i = n(653457),
   s = n(139545),
-  l = n(730427);
+  c = n(730427);
 r({
   target: "Promise",
   stat: !0,
@@ -13,30 +13,30 @@ r({
 }, {
   allSettled: function(e) {
     var t = this,
-      n = a.f(t),
+      n = i.f(t),
       r = n.resolve,
-      c = n.reject,
+      l = n.reject,
       u = s(function() {
-        var n = o(t.resolve),
-          a = [],
+        var n = a(t.resolve),
+          i = [],
           s = 0,
-          c = 1;
-        l(e, function(e) {
-          var o = s++,
-            l = !1;
-          c++, i(n, t, e).then(function(e) {
-            !l && (l = !0, a[o] = {
+          l = 1;
+        c(e, function(e) {
+          var a = s++,
+            c = !1;
+          l++, o(n, t, e).then(function(e) {
+            !c && (c = !0, i[a] = {
               status: "fulfilled",
               value: e
-            }, --c || r(a))
+            }, --l || r(i))
           }, function(e) {
-            !l && (l = !0, a[o] = {
+            !c && (c = !0, i[a] = {
               status: "rejected",
               reason: e
-            }, --c || r(a))
+            }, --l || r(i))
           })
-        }), --c || r(a)
+        }), --l || r(i)
       });
-    return u.error && c(u.value), n.promise
+    return u.error && l(u.value), n.promise
   }
 })

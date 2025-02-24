@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L6: () => Z,
+  L6: () => F,
   Rc: () => G,
   WH: () => R,
-  aP: () => k,
+  aP: () => j,
   dV: () => B,
   g: () => M,
   iV: () => x,
-  n9: () => j,
+  n9: () => k,
   pR: () => L,
-  rn: () => D,
+  rn: () => w,
   tK: () => P,
   xc: () => U
 });
@@ -82,18 +82,18 @@ function P(e, t) {
   })
 }
 
-function w(e, t) {
+function D(e, t) {
   let n = h.Z.getChannel(t);
   return i()(null != n, "Cannot join a null voice channel"), !E.Z.isInChannel(t) && (0, v.rY)(n, E.Z, m.Z)
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null != l.Z.getRemoteSessionId()) return;
   let {
     guildId: n,
     channelId: r
   } = e;
-  if (null != n && w(n, r)) return;
+  if (null != n && D(n, r)) return;
   let i = (0, c.V9)(e),
     o = (null == t ? void 0 : t.forceMultiple) || p.Z.getAllActiveStreamsForChannel(r).filter(e => {
       let {
@@ -121,8 +121,8 @@ function x(e, t) {
     guildId: n,
     channelId: r
   } = e;
-  if (null != n && w(n, r)) return;
-  D(e, t);
+  if (null != n && D(n, r)) return;
+  w(e, t);
   let i = d.Z.getWindowOpen(I.KJ3.CHANNEL_CALL_POPOUT),
     o = g.Z.getVoiceChannelId();
   (!i || o !== r) && (0, u.Z)(e)
@@ -130,14 +130,14 @@ function x(e, t) {
 
 function M(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-  k(e, t), s.Z.dispatch({
+  j(e, t), s.Z.dispatch({
     type: "STREAM_STOP",
     streamKey: e,
     appContext: __OVERLAY__ ? I.IlC.OVERLAY : I.IlC.APP
   })
 }
 
-function k(e) {
+function j(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
   s.Z.dispatch({
     type: "STREAM_CLOSE",
@@ -145,7 +145,7 @@ function k(e) {
     canShowFeedback: t
   })
 }
-async function j(e, t, n) {
+async function k(e, t, n) {
   if (!f.Z.shouldFetchPreview(e, t, n)) return;
   let r = (0, c.V9)({
     streamType: null != e ? T.lo.GUILD : T.lo.CALL,
@@ -210,7 +210,7 @@ function B(e, t) {
   })
 }
 
-function Z() {
+function F() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
     t = p.Z.getCurrentUserActiveStream();
   null != t && M((0, c.V9)(t), e)

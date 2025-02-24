@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => B,
-  sE: () => j
+  sE: () => k
 }), n(653041), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -80,7 +80,7 @@ function C(e) {
       return
     }
     let t = l.Q.createFromServer(e);
-    n[t.id] = t, k(t) && (r[t.id] = t, t.type === d.NYc.GUILD && t.status !== d.O0b.ENDED && i.push(t), t.type === d.NYc.APPLICATION && t.status !== d.O0b.ENDED && o.push(t))
+    n[t.id] = t, j(t) && (r[t.id] = t, t.type === d.NYc.GUILD && t.status !== d.O0b.ENDED && i.push(t), t.type === d.NYc.APPLICATION && t.status !== d.O0b.ENDED && o.push(t))
   }), g = n, E = r, b = i, y = o
 }
 
@@ -92,7 +92,7 @@ function R(e) {
   if (-1 === r) return [n, ...t];
   {
     let e = [...t];
-    return k(n) && n.status !== d.O0b.ENDED ? e[r] = n : e.splice(r, 1), e
+    return j(n) && n.status !== d.O0b.ENDED ? e[r] = n : e.splice(r, 1), e
   }
 }
 
@@ -102,7 +102,7 @@ function P(e) {
   } = e, n = l.Q.createFromServer(t);
   g = m(_({}, g), {
     [n.id]: n
-  }), k(n) && (E = m(_({}, E), {
+  }), j(n) && (E = m(_({}, E), {
     [n.id]: n
   })), null != b && n.type === d.NYc.GUILD && (b = R({
     activeSubscriptions: b,
@@ -113,7 +113,7 @@ function P(e) {
   }))
 }
 
-function w(e) {
+function D(e) {
   let {
     subscription: t
   } = e;
@@ -133,7 +133,7 @@ function w(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     subscription: t
   } = e;
@@ -169,11 +169,11 @@ function M() {
   g = null, E = null, v = null, b = null, y = null, O = !1, S = !1, I = null, T = !1
 }
 
-function k(e) {
+function j(e) {
   return e.status !== d.O0b.UNPAID
 }
 
-function j(e) {
+function k(e) {
   let t = c.default.getId();
   return e.userId === t
 }
@@ -184,7 +184,7 @@ function U(e, t) {
   if (null == r) return null;
   for (let n in r) {
     let i = r[n];
-    if (!j(i)) {
+    if (!k(i)) {
       if (!S) {
         let e = c.default.getId();
         A.log("user id mismatch between logged in user and SubscriptionStore user"), (0, u.g9)("user id mismatch between logged in user and SubscriptionStore user", {
@@ -258,8 +258,8 @@ p(G, "displayName", "SubscriptionStore");
 let B = new G(o.Z, {
   BILLING_SUBSCRIPTION_FETCH_SUCCESS: C,
   BILLING_SUBSCRIPTION_UPDATE_SUCCESS: P,
-  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: w,
-  BILLING_PREVIOUS_PREMIUM_SUBSCRIPTION_FETCH_SUCCESS: D,
+  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: D,
+  BILLING_PREVIOUS_PREMIUM_SUBSCRIPTION_FETCH_SUCCESS: w,
   BILLING_SUBSCRIPTION_RESET: M,
   BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_SUCCESS: L,
   BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_FAILURE: x,

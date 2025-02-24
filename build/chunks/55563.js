@@ -117,13 +117,13 @@ function P() {
   d = new Map, f = new Set, p = new Set, _ = new Map, h = new Map, m = new Map
 }
 
-function w() {
+function D() {
   if (r === s.default.locale) return !1;
   r = s.default.locale, P()
 }
-class D extends(i = o.yh) {
+class w extends(i = o.yh) {
   initialize() {
-    this.waitFor(s.default, c.Z), this.syncWith([s.default], w), r = s.default.locale
+    this.waitFor(s.default, c.Z), this.syncWith([s.default], D), r = s.default.locale
   }
   get(e) {
     return _.get(e)
@@ -146,8 +146,8 @@ class D extends(i = o.yh) {
     return p.has(e)
   }
 }
-u(D, "displayName", "SKUStore");
-let L = new D(a.Z, {
+u(w, "displayName", "SKUStore");
+let L = new w(a.Z, {
   STORE_LISTINGS_FETCH_START: v,
   STORE_LISTINGS_FETCH_FAIL: y,
   STORE_LISTINGS_FETCH_SUCCESS: A,

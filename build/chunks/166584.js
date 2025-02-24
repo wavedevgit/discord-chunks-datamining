@@ -82,8 +82,8 @@ function C(e, t) {
 }
 let R = 4,
   P = 268,
-  w = 2,
-  D = e => {
+  D = 2,
+  w = e => {
     if (null == e) return 0;
     let {
       width: t
@@ -104,22 +104,22 @@ function L(e) {
     onRemoveRole: S
   } = e, T = i.useRef({}), C = (e, t) => {
     null != t ? T.current[e] = t : delete T.current[e]
-  }, [L, x] = i.useState(d), [M, k] = i.useState(P), [j, U] = i.useState(!1), G = i.useRef(null), B = i.useRef(null), Z = i.useRef(0);
+  }, [L, x] = i.useState(d), [M, j] = i.useState(P), [k, U] = i.useState(!1), G = i.useRef(null), B = i.useRef(null), F = i.useRef(0);
   i.useLayoutEffect(() => {
-    Z.current = 0
+    F.current = 0
   }, [d]), i.useLayoutEffect(() => {
-    if (j) return;
-    let e = D(G.current),
-      t = D(B.current),
+    if (k) return;
+    let e = w(G.current),
+      t = w(B.current),
       n = [],
       r = P - e - t;
-    for (let e = 0; e < w; e++) {
-      let t = e === w - 1 ? r : P;
+    for (let e = 0; e < D; e++) {
+      let t = e === D - 1 ? r : P;
       for (let e = 0, r = n.length; r < d.length; r++) {
         let i = d[r],
           o = T.current[i.id];
         if (null == o) {
-          0 === Z.current && n.push(i);
+          0 === F.current && n.push(i);
           continue
         }
         let a = Math.min(o.getBoundingClientRect().width, t);
@@ -127,11 +127,11 @@ function L(e) {
         e += a + R, n.push(i)
       }
     }
-    x(n.length === L.length ? L : n), k(r), Z.current++
-  }, [d, L, j]);
-  let F = i.useMemo(() => "roles-".concat((0, o.Z)()), []),
-    V = (0, a.ZP)({
-      id: F,
+    x(n.length === L.length ? L : n), j(r), F.current++
+  }, [d, L, k]);
+  let V = i.useMemo(() => "roles-".concat((0, o.Z)()), []),
+    Z = (0, a.ZP)({
+      id: V,
       isEnabled: !0,
       scrollToStart: b.Cyb,
       scrollToEnd: b.Cyb,
@@ -141,13 +141,13 @@ function L(e) {
     W = 0 === H ? y.NW.string(y.t["vR7M+/"]) : y.NW.formatToPlainString(y.t.PCs0oq, {
       numRoles: H
     }),
-    Y = (j ? d : L).map((e, i) => {
+    Y = (k ? d : L).map((e, i) => {
       var o;
       return (0, r.jsx)(E.Z, {
         role: e,
         guildId: l.id,
         style: {
-          maxWidth: j || i !== L.length - 1 ? P : M
+          maxWidth: k || i !== L.length - 1 ? P : M
         },
         disableBorderColor: !0,
         ref: t => C(e.id, t),
@@ -169,7 +169,7 @@ function L(e) {
       })
     }, [K]);
   return (0, r.jsx)(s.bG, {
-    navigator: V,
+    navigator: Z,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {
@@ -180,7 +180,7 @@ function L(e) {
           "aria-label": W,
           ref: t
         }, n), {
-          children: [Y, L.length < d.length ? j ? (0, r.jsx)(c.DY3, {
+          children: [Y, L.length < d.length ? k ? (0, r.jsx)(c.DY3, {
             text: y.NW.string(y.t.XnXtCg),
             children: (0, r.jsx)(c.P3F, {
               onClick: q,

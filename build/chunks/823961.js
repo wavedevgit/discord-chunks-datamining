@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => w
+  Z: () => D
 }), n(47120);
 var i, o = n(442837),
   a = n(570140),
@@ -104,7 +104,7 @@ class P extends(i = o.ZP.Store) {
   }
 }
 c(P, "displayName", "ConsumablesStore");
-let w = new P(a.Z, {
+let D = new P(a.Z, {
   CONSUMABLES_PRICE_FETCH_STARTED: E,
   CONSUMABLES_PRICE_FETCH_SUCCEEDED: v,
   CONSUMABLES_PRICE_FETCH_FAILED: b,

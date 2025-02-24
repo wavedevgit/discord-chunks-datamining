@@ -68,17 +68,17 @@ var r = n(728804),
     }];
     else if (l(f)) I = f;
     else {
-      var w = Object.keys(T);
-      I = m ? w.sort(m) : w
+      var D = Object.keys(T);
+      I = m ? D.sort(m) : D
     }
-    for (var D = a && l(T) && 1 === T.length ? n + "[]" : n, L = 0; L < I.length; ++L) {
+    for (var w = a && l(T) && 1 === T.length ? n + "[]" : n, L = 0; L < I.length; ++L) {
       var x = I[L],
         M = "object" == typeof x && void 0 !== x.value ? x.value : T[x];
       if (!c || null !== M) {
-        var k = l(T) ? "function" == typeof o ? o(D, x) : D : D + (g ? "." + x : "[" + x + "]");
+        var j = l(T) ? "function" == typeof o ? o(w, x) : w : w + (g ? "." + x : "[" + x + "]");
         S.set(t, A);
-        var j = r();
-        j.set(h, S), u(P, e(M, k, o, a, s, c, "comma" === o && y && l(T) ? null : d, f, m, g, E, v, b, y, O, j))
+        var k = r();
+        k.set(h, S), u(P, e(M, j, o, a, s, c, "comma" === o && y && l(T) ? null : d, f, m, g, E, v, b, y, O, k))
       }
     }
     return P

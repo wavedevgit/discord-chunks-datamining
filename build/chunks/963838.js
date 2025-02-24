@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   Iu: () => G,
-  Jw: () => j,
+  Jw: () => k,
   _r: () => B,
-  cX: () => F,
+  cX: () => V,
   lv: () => U,
   v: () => x
 });
@@ -36,23 +36,23 @@ var r = n(392711),
   C = n(134432),
   R = n(594174),
   P = n(768581),
-  w = n(176354),
-  D = n(353368),
+  D = n(176354),
+  w = n(353368),
   L = n(388032);
 let x = {
     start: 10,
     end: 15
   },
   M = [o],
-  k = [a, s, l, c, u, d, f, p, _, h, m, g, E, v, b, y, O, S, I, T, N],
-  j = {
-    [D.q.BASIC]: M,
-    [D.q.PREMIUM]: k
+  j = [a, s, l, c, u, d, f, p, _, h, m, g, E, v, b, y, O, S, I, T, N],
+  k = {
+    [w.q.BASIC]: M,
+    [w.q.PREMIUM]: j
   },
   U = i().memoize(e => new Promise(t => {
     let n = new Image;
     n.src = e, n.crossOrigin = "Anonymous", n.onload = () => {
-      let r = D.v * (0, C.x_)();
+      let r = w.v * (0, C.x_)();
       if (n.width === r && n.height === r) t(e);
       else {
         var i;
@@ -62,8 +62,8 @@ let x = {
     }
   })),
   G = (e, t) => {
-    let n = j[e];
-    if (null != t && e === D.q.PREMIUM) {
+    let n = k[e];
+    if (null != t && e === w.q.PREMIUM) {
       let e = t.end + 1;
       return Math.floor(Math.random() * (t.start - e) + e)
     }
@@ -71,7 +71,7 @@ let x = {
   };
 
 function B(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : D.v;
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : w.v;
   if (null != e.id) {
     var n;
     return P.ZP.getEmojiURL({
@@ -82,21 +82,21 @@ function B(e) {
   }
   let r = A.ZP.convertSurrogateToName(e.name, !1),
     i = A.ZP.getByName(r);
-  return null != i ? w.ZP.getURL(i.surrogates) : ""
+  return null != i ? D.ZP.getURL(i.surrogates) : ""
 }
 
-function Z(e, t) {
+function F(e, t) {
   return i()(e).map(e => {
     var n;
     return null !== (n = e[t]) && void 0 !== n ? n : null
   }).filter(e => null != e).uniq().value()
 }
 
-function F(e) {
+function V(e) {
   var t, n, r, i, o, a;
   if (e.length < 1) return "";
-  let s = Z(e, "userId"),
-    l = Z(e, "emojiName"),
+  let s = F(e, "userId"),
+    l = F(e, "emojiName"),
     c = l.length < 2 ? null !== (t = null == l ? void 0 : l[0]) && void 0 !== t ? t : "" : l.join(", ");
   return s.length < 1 ? "" : 1 === s.length ? L.NW.formatToPlainString(L.t.yZYxzM, {
     firstUsername: null === (n = R.default.getUser(s[0])) || void 0 === n ? void 0 : n.username,

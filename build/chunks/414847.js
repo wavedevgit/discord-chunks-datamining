@@ -1,15 +1,15 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(273511),
-  i = n(349446).f,
-  o = n(948634),
-  a = n(141603),
+var e = n(273511),
+  o = n(349446).f,
+  i = n(948634),
+  u = n(141603),
   s = n(867028),
-  l = n(360518)("toStringTag");
-e.exports = function(e, t, n, c) {
-  var u = n ? e : e && e.prototype;
-  u && (a(u, l) || i(u, l, {
+  c = n(360518)("toStringTag");
+t.exports = function(t, r, n, f) {
+  var a = n ? t : t && t.prototype;
+  a && (u(a, c) || o(a, c, {
     configurable: !0,
-    value: t
-  }), c && !r && o(u, "toString", s))
+    value: r
+  }), f && !e && i(a, "toString", s))
 }

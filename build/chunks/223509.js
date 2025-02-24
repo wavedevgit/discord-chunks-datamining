@@ -26,19 +26,19 @@ var r, i, o = n(754793),
   C = 5,
   R = 6,
   P = 7,
-  w = 8,
-  D = 9,
+  D = 8,
+  w = 9,
   L = 10,
   x = 11,
   M = 12,
-  k = 13,
-  j = 14,
+  j = 13,
+  k = 14,
   U = 15,
   G = 16,
   B = 17,
-  Z = 18,
-  F = 19,
-  V = 20,
+  F = 18,
+  V = 19,
+  Z = 20,
   H = 21,
   W = 22,
   Y = 23,
@@ -114,11 +114,11 @@ function e_(e, t) {
     eN = new o.Buf8(4),
     eA = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15];
   if (!e || !e.state || !e.output || !e.input && 0 !== e.avail_in) return v;
-  (n = e.state).mode === M && (n.mode = k), en = e.next_out, i = e.output, eo = e.avail_out, et = e.next_in, r = e.input, er = e.avail_in, ea = n.hold, es = n.bits, el = er, ec = eo, eO = m;
+  (n = e.state).mode === M && (n.mode = j), en = e.next_out, i = e.output, eo = e.avail_out, et = e.next_in, r = e.input, er = e.avail_in, ea = n.hold, es = n.bits, el = er, ec = eo, eO = m;
   r: for (;;) switch (n.mode) {
     case I:
       if (0 === n.wrap) {
-        n.mode = k;
+        n.mode = j;
         break
       }
       for (; es < 16;) {
@@ -189,16 +189,16 @@ function e_(e, t) {
         do ey = r[et + eu++], n.head && ey && n.length < 65536 && (n.head.name += String.fromCharCode(ey)); while (ey && eu < er);
         if (512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, ey) break r
       } else n.head && (n.head.name = null);
-      n.length = 0, n.mode = w;
-    case w:
+      n.length = 0, n.mode = D;
+    case D:
       if (4096 & n.flags) {
         if (0 === er) break r;
         eu = 0;
         do ey = r[et + eu++], n.head && ey && n.length < 65536 && (n.head.comment += String.fromCharCode(ey)); while (ey && eu < er);
         if (512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, ey) break r
       } else n.head && (n.head.comment = null);
-      n.mode = D;
-    case D:
+      n.mode = w;
+    case w:
       if (512 & n.flags) {
         for (; es < 16;) {
           if (0 === er) break r;
@@ -223,7 +223,7 @@ function e_(e, t) {
       e.adler = n.check = 1, n.mode = M;
     case M:
       if (t === _ || t === h) break r;
-    case k:
+    case j:
       if (n.last) {
         ea >>>= 7 & es, es -= 7 & es, n.mode = Q;
         break
@@ -234,10 +234,10 @@ function e_(e, t) {
       }
       switch (n.last = 1 & ea, es -= 1, 3 & (ea >>>= 1)) {
         case 0:
-          n.mode = j;
+          n.mode = k;
           break;
         case 1:
-          if (ef(n), n.mode = V, t === h) {
+          if (ef(n), n.mode = Z, t === h) {
             ea >>>= 2, es -= 2;
             break r
           }
@@ -250,7 +250,7 @@ function e_(e, t) {
       }
       ea >>>= 2, es -= 2;
       break;
-    case j:
+    case k:
       for (ea >>>= 7 & es, es -= 7 & es; es < 32;) {
         if (0 === er) break r;
         er--, ea += r[et++] << es, es += 8
@@ -279,8 +279,8 @@ function e_(e, t) {
         e.msg = "too many length or distance symbols", n.mode = $;
         break
       }
-      n.have = 0, n.mode = Z;
-    case Z:
+      n.have = 0, n.mode = F;
+    case F:
       for (; n.have < n.ncode;) {
         for (; es < 3;) {
           if (0 === er) break r;
@@ -295,8 +295,8 @@ function e_(e, t) {
         e.msg = "invalid code lengths set", n.mode = $;
         break
       }
-      n.have = 0, n.mode = F;
-    case F:
+      n.have = 0, n.mode = V;
+    case V:
       for (; n.have < n.nlen + n.ndist;) {
         for (; eh = (eT = n.lencode[ea & (1 << n.lenbits) - 1]) >>> 24, em = eT >>> 16 & 255, eg = 65535 & eT, !(eh <= es);) {
           if (0 === er) break r;
@@ -351,8 +351,8 @@ function e_(e, t) {
         e.msg = "invalid distances set", n.mode = $;
         break
       }
-      if (n.mode = V, t === h) break r;
-    case V:
+      if (n.mode = Z, t === h) break r;
+    case Z:
       n.mode = H;
     case H:
       if (er >= 6 && eo >= 258) {
@@ -476,7 +476,7 @@ function e_(e, t) {
     default:
       return v
   }
-  return (e.next_out = en, e.avail_out = eo, e.next_in = et, e.avail_in = er, n.hold = ea, n.bits = es, (n.wsize || ec !== e.avail_out && n.mode < $ && (n.mode < Q || t !== p)) && ep(e, e.output, e.next_out, ec - e.avail_out)) ? (n.mode = ee, y) : (el -= e.avail_in, ec -= e.avail_out, e.total_in += el, e.total_out += ec, n.total += ec, n.wrap && ec && (e.adler = n.check = n.flags ? s(n.check, i, ec, e.next_out - ec) : a(n.check, i, ec, e.next_out - ec)), e.data_type = n.bits + 64 * !!n.last + 128 * (n.mode === M) + 256 * (n.mode === V || n.mode === U), (0 === el && 0 === ec || t === p) && eO === m && (eO = O), eO)
+  return (e.next_out = en, e.avail_out = eo, e.next_in = et, e.avail_in = er, n.hold = ea, n.bits = es, (n.wsize || ec !== e.avail_out && n.mode < $ && (n.mode < Q || t !== p)) && ep(e, e.output, e.next_out, ec - e.avail_out)) ? (n.mode = ee, y) : (el -= e.avail_in, ec -= e.avail_out, e.total_in += el, e.total_out += ec, n.total += ec, n.wrap && ec && (e.adler = n.check = n.flags ? s(n.check, i, ec, e.next_out - ec) : a(n.check, i, ec, e.next_out - ec)), e.data_type = n.bits + 64 * !!n.last + 128 * (n.mode === M) + 256 * (n.mode === Z || n.mode === U), (0 === el && 0 === ec || t === p) && eO === m && (eO = O), eO)
 }
 
 function eh(e) {

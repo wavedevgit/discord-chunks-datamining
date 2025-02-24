@@ -31,19 +31,19 @@ var r = n(200651),
   C = n(699516),
   R = n(938475),
   P = n(626135),
-  w = n(960870),
-  D = n(139793),
+  D = n(960870),
+  w = n(139793),
   L = n(652853),
   x = n(336383),
   M = n(194811),
-  k = n(373826),
-  j = n(315324),
+  j = n(373826),
+  k = n(315324),
   U = n(788858),
   G = n(599864),
   B = n(670451),
-  Z = n(228168),
-  F = n(981631),
-  V = n(388032),
+  F = n(228168),
+  V = n(981631),
+  Z = n(388032),
   H = n(481736),
   W = n(713467),
   Y = n(924482),
@@ -60,8 +60,8 @@ function z(e) {
     profileType: Q,
     theme: X
   } = (0, L.z)(), J = {
-    [W.fullSize]: Q === Z.y0.FULL_SIZE,
-    [H.fullSize]: Q === Z.y0.FULL_SIZE
+    [W.fullSize]: Q === F.y0.FULL_SIZE,
+    [H.fullSize]: Q === F.y0.FULL_SIZE
   }, {
     enabled: $,
     analyticsEligible: ee
@@ -72,23 +72,23 @@ function z(e) {
     return t
   }) : []), ei = (0, s.e7)([A.Z], () => A.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, p.Z)(e))), {
     analyticsLocations: eo
-  } = (0, h.ZP)(_.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ea = (0, w.Z)({
+  } = (0, h.ZP)(_.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ea = (0, D.Z)({
     display: "live",
     voiceChannelId: null == en ? void 0 : en.id,
     user: t,
     stream: o,
     analyticsLocations: eo
-  }), es = (0, D.Z)({
+  }), es = (0, w.Z)({
     userId: t.id,
     onAction: ea
   }), {
     previewUrl: el,
     isLoading: ec
-  } = (0, v.Z)(null == o ? void 0 : o.guildId, null == o ? void 0 : o.channelId, null == o ? void 0 : o.ownerId), [eu, ed] = (0, b.wq)(en), ef = (0, s.e7)([N.Z], () => null != en && N.Z.canBasicChannel(F.S7T.CONNECT, en)), ep = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
+  } = (0, v.Z)(null == o ? void 0 : o.guildId, null == o ? void 0 : o.channelId, null == o ? void 0 : o.ownerId), [eu, ed] = (0, b.wq)(en), ef = (0, s.e7)([N.Z], () => null != en && N.Z.canBasicChannel(V.S7T.CONNECT, en)), ep = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
   i.useEffect(() => {
     if (ee) {
       var e;
-      P.default.track(F.rMx.USER_VOICE_ACTIVITY_VIEWED, {
+      P.default.track(V.rMx.USER_VOICE_ACTIVITY_VIEWED, {
         activity_user_id: t.id,
         discoverable: null === (e = o.discoverable) || void 0 === e || e,
         surface: "user-profile-stream-activity-card",
@@ -117,8 +117,8 @@ function z(e) {
         onClick: eu ? t : void 0,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: X === F.BRd.LIGHT ? K : Y
-        }), Q !== Z.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
+          src: X === V.BRd.LIGHT ? K : Y
+        }), Q !== F.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
             className: W.overlayText,
             variant: "text-sm/medium",
@@ -126,7 +126,7 @@ function z(e) {
             children: (0, b.P9)(ed)
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
-            children: ef ? V.NW.string(V.t.uQZTBQ) : V.NW.string(V.t.pgUTZG)
+            children: ef ? Z.NW.string(Z.t.uQZTBQ) : Z.NW.string(Z.t.pgUTZG)
           })]
         })]
       }) : (0, r.jsxs)(l.P3F, {
@@ -138,7 +138,7 @@ function z(e) {
           alt: "",
           src: eh,
           className: W.image
-        }), Q !== Z.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
+        }), Q !== F.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
             className: W.overlayText,
             variant: "text-sm/medium",
@@ -153,7 +153,7 @@ function z(e) {
       })
     },
     eg = () => {
-      if (Q !== Z.y0.FULL_SIZE) return null;
+      if (Q !== F.y0.FULL_SIZE) return null;
       let e = e => {
           e.stopPropagation(), null == ea || ea({
             action: "OPEN_VOICE_CHANNEL"
@@ -181,9 +181,9 @@ function z(e) {
               onClick: e,
               children: en.name
             })]
-          }), (0, r.jsx)(k.Z, {
+          }), (0, r.jsx)(j.Z, {
             variant: "text-xs/normal",
-            text: V.NW.formatToPlainString(V.t["hq/Qzc"], {
+            text: Z.NW.formatToPlainString(Z.t["hq/Qzc"], {
               guildName: et.name
             }),
             onClick: n
@@ -192,7 +192,7 @@ function z(e) {
           users: er,
           guildId: et.id,
           channelId: en.id,
-          maxUsers: j.W,
+          maxUsers: k.W,
           size: l.EFr.SIZE_16,
           onClick: e => {
             e.stopPropagation(), null == ea || ea({
@@ -206,7 +206,7 @@ function z(e) {
         })]
       })
     },
-    eE = () => Q === Z.y0.FULL_SIZE ? null : (0, r.jsx)(j.Z, {
+    eE = () => Q === F.y0.FULL_SIZE ? null : (0, r.jsx)(k.Z, {
       user: t,
       guild: et,
       channel: en,
@@ -229,9 +229,9 @@ function z(e) {
       onAction: ea,
       onClose: q,
       children: [(0, r.jsx)(M.Z, {
-        text: null != ei ? V.NW.formatToPlainString(V.t["4CQq9f"], {
+        text: null != ei ? Z.NW.formatToPlainString(Z.t["4CQq9f"], {
           name: ei.name
-        }) : V.NW.string(V.t["Jpkr/v"]),
+        }) : Z.NW.string(Z.t["Jpkr/v"]),
         tags: (0, r.jsx)(g.ZP, {
           size: g.OH.SMALL
         }),
@@ -244,9 +244,9 @@ function z(e) {
         className: H.body,
         children: [(0, r.jsxs)("div", {
           className: a()(H.content, J),
-          children: [em(), eg(), Q === Z.y0.FULL_SIZE && ev()]
+          children: [em(), eg(), Q === F.y0.FULL_SIZE && ev()]
         }), eE()]
-      }), Q !== Z.y0.FULL_SIZE && ev()]
+      }), Q !== F.y0.FULL_SIZE && ev()]
     })
   })
 }

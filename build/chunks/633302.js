@@ -158,11 +158,11 @@ function P() {
   return Object.keys(u)
 }
 
-function w(e) {
+function D(e) {
   return Object.prototype.hasOwnProperty.call(d, e) ? d[e] : null
 }
 
-function D(e) {
+function w(e) {
   return u[e]
 }
 
@@ -171,7 +171,7 @@ function L(e) {
 }
 
 function x(e) {
-  return e.replace(b, (e, t) => F(t, e))
+  return e.replace(b, (e, t) => V(t, e))
 }
 
 function M(e) {
@@ -185,8 +185,8 @@ function M(e) {
     text: e
   }
 }
-let k = String.fromCodePoint(917631),
-  j = String.fromCodePoint(127988),
+let j = String.fromCodePoint(917631),
+  k = String.fromCodePoint(127988),
   U = RegExp("^[\\u{E0061}-\\u{E007A}]$", "u");
 
 function G(e, t) {
@@ -201,12 +201,12 @@ function G(e, t) {
   for (let e = 0; e < o.length; e++) {
     let t = o[e];
     if (null != r && "" !== r) {
-      if (t === k) t = r + t, r = "";
+      if (t === j) t = r + t, r = "";
       else if (U.test(t)) {
         r += t;
         continue
       } else i.push(M(r)), r = ""
-    } else if (t === j) {
+    } else if (t === k) {
       r = t;
       continue
     }
@@ -227,18 +227,18 @@ function B(e) {
   return G(e).map(e => "text" === e.type ? e.text : e.emojiName).join("")
 }
 
-function Z(e) {
+function F(e) {
   if (!L(e)) return null;
   let t = G(e, !0).map(e => "text" === e.type ? e.text : e.emojiName).join("");
   return t === e ? null : t
 }
 
-function F(e) {
+function V(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
   return Object.prototype.hasOwnProperty.call(f, e) ? f[e] : t
 }
 
-function V(e) {
+function Z(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "",
     r = n;
@@ -246,21 +246,21 @@ function V(e) {
 }
 
 function H(e) {
-  return w(V(E.reduce((e, t) => e.replace(t, ""), e), !1))
+  return D(Z(E.reduce((e, t) => e.replace(t, ""), e), !1))
 }
 let W = {
   getDefaultDiversitySurrogate: R,
   setDefaultDiversitySurrogate: C,
   getCategories: P,
-  getByName: w,
-  getByCategory: D,
+  getByName: D,
+  getByCategory: w,
   contentHasUnicodeOrEmoji: L,
   translateInlineEmojiToSurrogates: x,
-  maybeTranslateSurrogatesToInlineEmoji: Z,
+  maybeTranslateSurrogatesToInlineEmoji: F,
   findInlineEmojisFromSurrogates: G,
   translateSurrogatesToInlineEmoji: B,
-  convertNameToSurrogate: F,
-  convertSurrogateToName: V,
+  convertNameToSurrogate: V,
+  convertSurrogateToName: Z,
   convertShortcutToName: function e(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
       n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "",

@@ -1,12 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r = n(67867),
-  i = n(668530),
-  o = n(867325)(i.setTimeout, !0);
+var r = n(766362),
+  o = n(668530),
+  a = n(867325)(o.setTimeout, !0);
 r({
   global: !0,
   bind: !0,
-  forced: i.setTimeout !== o
+  forced: o.setTimeout !== a
 }, {
-  setTimeout: o
+  setTimeout: a
 })

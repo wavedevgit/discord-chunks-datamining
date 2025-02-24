@@ -1,22 +1,22 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(447631),
-  i = n(952256),
-  o = TypeError,
-  a = Object.getOwnPropertyDescriptor,
-  s = r && ! function() {
+var e = n(447631),
+  o = n(952256),
+  i = TypeError,
+  u = Object.getOwnPropertyDescriptor,
+  s = e && ! function() {
     if (void 0 !== this) return !0;
     try {
       Object.defineProperty([], "length", {
         writable: !1
       }).length = 1
-    } catch (e) {
-      return e instanceof TypeError
+    } catch (t) {
+      return t instanceof TypeError
     }
   }();
-e.exports = s ? function(e, t) {
-  if (i(e) && !a(e, "length").writable) throw new o("Cannot set read only .length");
-  return e.length = t
-} : function(e, t) {
-  return e.length = t
+t.exports = s ? function(t, r) {
+  if (o(t) && !u(t, "length").writable) throw new i("Cannot set read only .length");
+  return t.length = r
+} : function(t, r) {
+  return t.length = r
 }

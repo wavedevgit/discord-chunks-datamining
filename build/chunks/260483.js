@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 }), n(47120);
 var r, i = n(392711),
   o = n.n(i),
@@ -153,7 +153,7 @@ function P(e) {
   if (null == t) return !1;
   null != e.memberIdsPreview && (t.memberIdsPreview = e.memberIdsPreview), t.memberCount = e.memberCount
 }
-class w extends(r = a.ZP.Store) {
+class D extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(c.Z)
   }
@@ -169,8 +169,8 @@ class w extends(r = a.ZP.Store) {
     return f
   }
 }
-u(w, "displayName", "ThreadMembersStore");
-let D = new w(s.Z, {
+u(D, "displayName", "ThreadMembersStore");
+let w = new D(s.Z, {
   CONNECTION_OPEN: E,
   OVERLAY_INITIALIZE: v,
   GUILD_CREATE: b,

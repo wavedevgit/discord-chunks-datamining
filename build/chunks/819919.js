@@ -1,13 +1,13 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r = n(67867),
-  i = n(548828),
-  o = n(228042),
-  a = n(146321),
+var r = n(766362),
+  o = n(548828),
+  a = n(228042),
+  i = n(146321),
   s = TypeError,
-  l = a.get,
-  c = a.has,
-  u = a.set;
+  c = i.get,
+  l = i.has,
+  u = i.set;
 r({
   target: "Map",
   proto: !0,
@@ -15,12 +15,12 @@ r({
   forced: !0
 }, {
   update: function(e, t) {
-    var n = o(this),
+    var n = a(this),
       r = arguments.length;
-    i(t);
-    var a = c(n, e);
-    if (!a && r < 3) throw new s("Updating absent value");
-    var d = a ? l(n, e) : i(r > 2 ? arguments[2] : void 0)(e, n);
+    o(t);
+    var i = l(n, e);
+    if (!i && r < 3) throw new s("Updating absent value");
+    var d = i ? c(n, e) : o(r > 2 ? arguments[2] : void 0)(e, n);
     return u(n, e, t(d, e, n)), n
   }
 })

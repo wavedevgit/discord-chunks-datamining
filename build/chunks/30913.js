@@ -1,25 +1,25 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
-var r = n(67867),
-  i = n(294377),
-  o = n(821819),
-  a = n(274745),
+var r = n(766362),
+  o = n(294377),
+  a = n(821819),
+  i = n(274745),
   s = n(342545),
-  l = n(502754),
-  c = i("URL");
+  c = n(502754),
+  l = o("URL");
 r({
   target: "URL",
   stat: !0,
-  forced: !(l && o(function() {
-    c.canParse()
+  forced: !(c && a(function() {
+    l.canParse()
   }))
 }, {
   canParse: function(e) {
-    var t = a(arguments.length, 1),
+    var t = i(arguments.length, 1),
       n = s(e),
       r = t < 2 || void 0 === arguments[1] ? void 0 : s(arguments[1]);
     try {
-      return new c(n, r), !0
+      return new l(n, r), !0
     } catch (e) {
       return !1
     }

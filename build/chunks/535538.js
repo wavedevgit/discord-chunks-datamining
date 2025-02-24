@@ -1,9 +1,9 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(668530),
-  i = n(982665),
-  o = r.document,
-  a = i(o) && i(o.createElement);
-e.exports = function(e) {
-  return a ? o.createElement(e) : {}
+var e = n(668530),
+  o = n(982665),
+  i = e.document,
+  u = o(i) && o(i.createElement);
+t.exports = function(t) {
+  return u ? i.createElement(t) : {}
 }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  VF: () => w,
+  VF: () => D,
   WW: () => C,
   XO: () => N,
   Yp: () => T,
@@ -146,6 +146,6 @@ function P() {
   return [h(), O()]
 }
 
-function w() {
+function D() {
   return [v(), b(), E(), y()]
 }

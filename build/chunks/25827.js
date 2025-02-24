@@ -144,7 +144,7 @@ function T(e) {
       location: "VideoButton"
     }),
     P = () => n ? "join" : C && t ? "green" : R || N === d.BK.GroupedButtonsRedMic ? "primaryDark" : "green",
-    w = e => n ? "join" : (A || N === d.BK.GroupedButtonsRedMic) && e ? "green" : S.color;
+    D = e => n ? "join" : (A || N === d.BK.GroupedButtonsRedMic) && e ? "green" : S.color;
   return (0, r.jsx)(I, {
     enabled: t,
     join: n,
@@ -163,7 +163,7 @@ function T(e) {
         isActive: s
       } = e, l = O(e, ["unavailable", "onMouseEnter", "onMouseLeave", "isActive"]);
       return (0, r.jsx)(T, y(v({}, l, S), {
-        color: w(s),
+        color: D(s),
         caretColor: P(),
         isActive: s,
         onMouseEnter: e => {

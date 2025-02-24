@@ -80,8 +80,8 @@ function I(e, t) {
       (0, f.RO)(g.X1.GIF, o)
     }, [o]),
     {
-      Component: w,
-      events: D,
+      Component: D,
+      events: w,
       play: L
     } = (0, c.V)(),
     x = (0, d.Q3)("ChannelGIFPickerButton");
@@ -96,8 +96,8 @@ function I(e, t) {
     }, e), {
       children: (0, r.jsx)(h.Z, {
         innerClassName: v.button,
-        onMouseEnter: D.onMouseEnter,
-        onMouseLeave: D.onMouseLeave,
+        onMouseEnter: w.onMouseEnter,
+        onMouseLeave: w.onMouseLeave,
         onClick: () => {
           P(), L()
         },
@@ -107,7 +107,7 @@ function I(e, t) {
         "aria-expanded": M,
         "aria-haspopup": "dialog",
         "aria-controls": A,
-        children: (0, r.jsx)(w, {
+        children: (0, r.jsx)(D, {
           size: x ? "refresh_sm" : void 0,
           color: "currentColor"
         })

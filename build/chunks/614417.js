@@ -69,14 +69,14 @@ function C(e) {
     channelId: a,
     messageId: f,
     roleId: p
-  }), R = i.useRef(null), P = (0, m.ZP)(t.id, n), w = (0, s.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t.id) : null);
+  }), R = i.useRef(null), P = (0, m.ZP)(t.id, n), D = (0, s.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t.id) : null);
   return i.useEffect(() => {
     null == o || o(null == R ? void 0 : R.current)
   }, [R, o]), (0, r.jsx)(u.Gt, {
     value: N,
     children: (0, r.jsx)(_.Mt, {
       value: C,
-      shouldTrackViewOnMount: null == w || null != w.fullProfileLoadedTimestamp,
+      shouldTrackViewOnMount: null == D || null != D.fullProfileLoadedTimestamp,
       children: (0, r.jsx)(l.VqE, {
         ref: R,
         "aria-label": t.username,
@@ -139,25 +139,25 @@ function R(e) {
     roleId: C,
     onViewBlockedProfileClick: R,
     newAnalyticsLocations: P = []
-  } = e, w = (0, s.e7)([f.Z], () => f.Z.isBlocked(t.id)), {
-    analyticsLocations: D
-  } = (0, u.ZP)([...P, w ? c.Z.BLOCKED_PROFILE_POPOUT : c.Z.IGNORED_PROFILE_POPOUT]), L = (0, _.ZB)({
-    layout: w ? "BLOCKED_PROFILE_POPOUT" : "IGNORED_PROFILE_POPOUT",
+  } = e, D = (0, s.e7)([f.Z], () => f.Z.isBlocked(t.id)), {
+    analyticsLocations: w
+  } = (0, u.ZP)([...P, D ? c.Z.BLOCKED_PROFILE_POPOUT : c.Z.IGNORED_PROFILE_POPOUT]), L = (0, _.ZB)({
+    layout: D ? "BLOCKED_PROFILE_POPOUT" : "IGNORED_PROFILE_POPOUT",
     userId: t.id,
     guildId: n,
     channelId: y,
     messageId: N,
     roleId: C
-  }), x = i.useRef(null), M = (0, m.ZP)(t.id, n), k = (0, s.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t.id) : null);
+  }), x = i.useRef(null), M = (0, m.ZP)(t.id, n), j = (0, s.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t.id) : null);
   i.useEffect(() => {
     null == o || o(null == x ? void 0 : x.current)
   }, [x, o]);
-  let j = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE";
+  let k = D ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE";
   return (0, r.jsx)(u.Gt, {
-    value: D,
+    value: w,
     children: (0, r.jsx)(_.Mt, {
       value: L,
-      shouldTrackViewOnMount: null == k || null != k.fullProfileLoadedTimestamp,
+      shouldTrackViewOnMount: null == j || null != j.fullProfileLoadedTimestamp,
       children: (0, r.jsx)(l.VqE, {
         ref: x,
         "aria-label": t.username,
@@ -184,18 +184,18 @@ function R(e) {
                   children: S.NW.string(S.t.b33pLC)
                 }), (0, r.jsx)(l.Text, {
                   variant: "text-sm/medium",
-                  children: S.NW.format(w ? S.t["8F+WNz"] : S.t["/cZp5u"], {
+                  children: S.NW.format(D ? S.t["8F+WNz"] : S.t["/cZp5u"], {
                     username: p.ZP.getName(n, y, t)
                   })
                 })]
               }), (0, r.jsxs)(l.Kqy, {
                 align: "center",
                 children: [(0, r.jsx)(b.Z, {
-                  isBlocked: w,
+                  isBlocked: D,
                   onClick: () => {
                     null == R || R(), (0, h.pQ)(A({
-                      action: j,
-                      analyticsLocations: D
+                      action: k,
+                      analyticsLocations: w
                     }, L))
                   }
                 }), (0, r.jsx)(v.Z, {
@@ -203,7 +203,7 @@ function R(e) {
                   onClick: () => {
                     null == R || R(), (0, h.pQ)(A({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                      analyticsLocations: D
+                      analyticsLocations: w
                     }, L))
                   }
                 })]

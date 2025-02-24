@@ -79,12 +79,12 @@ function g(e) {
       action: () => g(n)
     })
   }
-  let w = [];
+  let D = [];
   return (I.forEach(e => {
     let {
       applicationId: t
     } = e, n = P.get(t);
-    null != n && w.push((0, r.jsx)(a.sNh, {
+    null != n && D.push((0, r.jsx)(a.sNh, {
       id: t,
       label: n.name,
       icon: (0, r.jsx)(l.Z, {
@@ -93,11 +93,11 @@ function g(e) {
       }),
       action: () => g(n)
     }, t))
-  }), 0 === w.length) ? null : (0, r.jsx)(a.sNh, {
+  }), 0 === D.length) ? null : (0, r.jsx)(a.sNh, {
     color: E,
     id: t,
     label: s,
     onFocus: A,
-    children: w
+    children: D
   })
 }

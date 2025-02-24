@@ -73,7 +73,7 @@ let O = e => {
     giftRecipientError: T
   } = (0, c.wD)(), N = (0, s.e7)([f.default], () => f.default.getCurrentUser()), A = (0, _.k)(S);
   if (null == S) return null;
-  let [C] = S.items, R = () => C.type === a.Z.AVATAR_DECORATION ? m.NW.string(m.t["7v0T9P"]) : C.type === a.Z.PROFILE_EFFECT ? m.NW.string(m.t.wR5wOj) : null, P = null != I && I.id !== (null == N ? void 0 : N.id), w = () => {
+  let [C] = S.items, R = () => C.type === a.Z.AVATAR_DECORATION ? m.NW.string(m.t["7v0T9P"]) : C.type === a.Z.PROFILE_EFFECT ? m.NW.string(m.t.wR5wOj) : null, P = null != I && I.id !== (null == N ? void 0 : N.id), D = () => {
     null != t && null != E && E(t)
   };
   return (0, r.jsxs)("div", {
@@ -106,7 +106,7 @@ let O = e => {
       }, I.id)]
     }), (0, r.jsxs)(l.P3F, {
       tag: "div",
-      onClick: w,
+      onClick: D,
       className: o()(g.previewContainer, {
         [g.previewContainerSelected]: n && null == T,
         [g.previewContainerError]: n && null != T

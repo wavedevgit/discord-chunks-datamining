@@ -83,30 +83,30 @@ i.prototype.parse = function(e, t, n) {
     } - 1 === A && (A = b.length), this.host = b.slice(0, A), b = b.slice(A), this.parseHost(), this.hostname = this.hostname || "";
     var P = "[" === this.hostname[0] && "]" === this.hostname[this.hostname.length - 1];
     if (!P)
-      for (var w = this.hostname.split(/\./), C = 0, D = w.length; C < D; C++) {
-        var L = w[C];
+      for (var D = this.hostname.split(/\./), C = 0, w = D.length; C < w; C++) {
+        var L = D[C];
         if (L && !L.match(f)) {
-          for (var x = "", M = 0, k = L.length; M < k; M++) L.charCodeAt(M) > 127 ? x += "x" : x += L[M];
+          for (var x = "", M = 0, j = L.length; M < j; M++) L.charCodeAt(M) > 127 ? x += "x" : x += L[M];
           if (!x.match(f)) {
-            var j = w.slice(0, C),
-              U = w.slice(C + 1),
+            var k = D.slice(0, C),
+              U = D.slice(C + 1),
               G = L.match(p);
-            G && (j.push(G[1]), U.unshift(G[2])), U.length && (b = "/" + U.join(".") + b), this.hostname = j.join(".");
+            G && (k.push(G[1]), U.unshift(G[2])), U.length && (b = "/" + U.join(".") + b), this.hostname = k.join(".");
             break
           }
         }
       }
     this.hostname.length > d ? this.hostname = "" : this.hostname = this.hostname.toLowerCase(), P || (this.hostname = r.toASCII(this.hostname));
     var B = this.port ? ":" + this.port : "",
-      Z = this.hostname || "";
-    this.host = Z + B, this.href += this.host, P && (this.hostname = this.hostname.substr(1, this.hostname.length - 2), "/" !== b[0] && (b = "/" + b))
+      F = this.hostname || "";
+    this.host = F + B, this.href += this.host, P && (this.hostname = this.hostname.substr(1, this.hostname.length - 2), "/" !== b[0] && (b = "/" + b))
   }
   if (!_[S])
-    for (var C = 0, D = l.length; C < D; C++) {
-      var F = l[C];
-      if (-1 !== b.indexOf(F)) {
-        var V = encodeURIComponent(F);
-        V === F && (V = escape(F)), b = b.split(F).join(V)
+    for (var C = 0, w = l.length; C < w; C++) {
+      var V = l[C];
+      if (-1 !== b.indexOf(V)) {
+        var Z = encodeURIComponent(V);
+        Z === V && (Z = escape(V)), b = b.split(V).join(Z)
       }
     }
   var H = b.indexOf("#"); - 1 !== H && (this.hash = b.substr(H), b = b.slice(0, H));

@@ -13,9 +13,9 @@ var r = n(200651),
   d = n(703656),
   p = n(55563),
   h = n(981631),
-  g = n(582803);
+  f = n(582803);
 
-function f(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -55,7 +55,7 @@ class m extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "handleClick", e => {
+    super(...e), g(this, "handleClick", e => {
       let {
         sku: t
       } = this.props;
@@ -68,8 +68,8 @@ class m extends i.PureComponent {
           }
         }
       })
-    }), f(this, "renderCustomBreadcrumb", (e, t) => (0, r.jsx)(u.Z.Title, {
-      className: t ? null : g.breadcrumb,
+    }), g(this, "renderCustomBreadcrumb", (e, t) => (0, r.jsx)(u.Z.Title, {
+      className: t ? null : f.breadcrumb,
       muted: !t,
       children: e.label
     }))

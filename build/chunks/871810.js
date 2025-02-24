@@ -1,15 +1,15 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => a
+r.d(t, {
+  Z: () => i
 });
-var r = n(192379),
-  i = n(723184),
-  o = n(341518);
-let a = function(e) {
+var n = r(192379),
+  o = r(723184),
+  a = r(341518);
+let i = function(e) {
   var t = e.onClick,
-    n = e.hsl,
-    a = (0, i.default)({
+    r = e.hsl,
+    i = (0, o.default)({
       default: {
         swatches: {
           marginTop: "20px"
@@ -24,48 +24,47 @@ let a = function(e) {
           clear: "both"
         }
       }
-    }),
-    s = .1;
-  return r.createElement("div", {
-    style: a.swatches
-  }, r.createElement("div", {
-    style: a.swatch
-  }, r.createElement(o.Z, {
-    hsl: n,
+    });
+  return n.createElement("div", {
+    style: i.swatches
+  }, n.createElement("div", {
+    style: i.swatch
+  }, n.createElement(a.Z, {
+    hsl: r,
     offset: ".80",
-    active: Math.abs(n.l - .8) < s && Math.abs(n.s - .5) < s,
+    active: .1 > Math.abs(r.l - .8) && .1 > Math.abs(r.s - .5),
     onClick: t,
     first: !0
-  })), r.createElement("div", {
-    style: a.swatch
-  }, r.createElement(o.Z, {
-    hsl: n,
+  })), n.createElement("div", {
+    style: i.swatch
+  }, n.createElement(a.Z, {
+    hsl: r,
     offset: ".65",
-    active: Math.abs(n.l - .65) < s && Math.abs(n.s - .5) < s,
+    active: .1 > Math.abs(r.l - .65) && .1 > Math.abs(r.s - .5),
     onClick: t
-  })), r.createElement("div", {
-    style: a.swatch
-  }, r.createElement(o.Z, {
-    hsl: n,
+  })), n.createElement("div", {
+    style: i.swatch
+  }, n.createElement(a.Z, {
+    hsl: r,
     offset: ".50",
-    active: Math.abs(n.l - .5) < s && Math.abs(n.s - .5) < s,
+    active: .1 > Math.abs(r.l - .5) && .1 > Math.abs(r.s - .5),
     onClick: t
-  })), r.createElement("div", {
-    style: a.swatch
-  }, r.createElement(o.Z, {
-    hsl: n,
+  })), n.createElement("div", {
+    style: i.swatch
+  }, n.createElement(a.Z, {
+    hsl: r,
     offset: ".35",
-    active: Math.abs(n.l - .35) < s && Math.abs(n.s - .5) < s,
+    active: .1 > Math.abs(r.l - .35) && .1 > Math.abs(r.s - .5),
     onClick: t
-  })), r.createElement("div", {
-    style: a.swatch
-  }, r.createElement(o.Z, {
-    hsl: n,
+  })), n.createElement("div", {
+    style: i.swatch
+  }, n.createElement(a.Z, {
+    hsl: r,
     offset: ".20",
-    active: Math.abs(n.l - .2) < s && Math.abs(n.s - .5) < s,
+    active: .1 > Math.abs(r.l - .2) && .1 > Math.abs(r.s - .5),
     onClick: t,
     last: !0
-  })), r.createElement("div", {
-    style: a.clear
+  })), n.createElement("div", {
+    style: i.clear
   }))
 }

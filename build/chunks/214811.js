@@ -1,18 +1,18 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => s
+r.d(t, {
+  Z: () => l
 });
-var r = n(192379),
-  i = n(723184),
-  o = n(329022),
-  a = n(730320);
-let s = function(e) {
+var n = r(192379),
+  o = r(723184),
+  a = r(329022),
+  i = r(730320);
+let l = function(e) {
   var t = e.onClick,
-    n = e.onSwatchHover,
-    s = e.group,
-    l = e.active,
-    c = (0, i.default)({
+    r = e.onSwatchHover,
+    l = e.group,
+    s = e.active,
+    u = (0, o.default)({
       default: {
         group: {
           paddingBottom: "10px",
@@ -22,17 +22,17 @@ let s = function(e) {
         }
       }
     });
-  return r.createElement("div", {
-    style: c.group
-  }, (0, o.Z)(s, function(e, i) {
-    return r.createElement(a.Z, {
+  return n.createElement("div", {
+    style: u.group
+  }, (0, a.Z)(l, function(e, o) {
+    return n.createElement(i.Z, {
       key: e,
       color: e,
-      active: e.toLowerCase() === l,
-      first: 0 === i,
-      last: i === s.length - 1,
+      active: e.toLowerCase() === s,
+      first: 0 === o,
+      last: o === l.length - 1,
       onClick: t,
-      onSwatchHover: n
+      onSwatchHover: r
     })
   }))
 }

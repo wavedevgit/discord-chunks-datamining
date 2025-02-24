@@ -1,10 +1,10 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
 var r = n(28886),
-  i = n(982665),
-  o = n(653457);
+  o = n(982665),
+  a = n(653457);
 e.exports = function(e, t) {
-  if (r(e), i(t) && t.constructor === e) return t;
-  var n = o.f(e);
+  if (r(e), o(t) && t.constructor === e) return t;
+  var n = a.f(e);
   return (0, n.resolve)(t), n.promise
 }

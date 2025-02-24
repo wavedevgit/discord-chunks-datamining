@@ -3,10 +3,10 @@
 n.d(t, {
   DH: () => G,
   Ks: () => U,
-  Ws: () => Z,
-  g2: () => k,
+  Ws: () => F,
+  g2: () => j,
   hf: () => x,
-  k3: () => j,
+  k3: () => k,
   qN: () => B,
   tP: () => M
 }), n(47120);
@@ -47,7 +47,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function w(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,7 +72,7 @@ function D(e, t) {
 }
 
 function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -107,7 +107,7 @@ function M(e) {
   let n = (0, a.Wu)([u.ZP], () => u.ZP.getGamesSeen(!1)).find(t => (null == t ? void 0 : t.id) === e);
   return null != n && Date.now() - 2592e7 <= (null !== (t = n.lastLaunched) && void 0 !== t ? t : 0)
 }
-let k = e => {
+let j = e => {
     let {
       useReducedMotion: t,
       className: n
@@ -141,7 +141,7 @@ let k = e => {
       }
     }
   },
-  j = (e, t) => {
+  k = (e, t) => {
     let {
       message: n,
       xboxURL: i
@@ -178,7 +178,7 @@ function U(e) {
     questContentRowIndex: f
   }), y = (0, g._s)({
     quest: n
-  }), S = (0, g.Rf)(n), I = (0, g.GU)(n), P = I.length > 0 ? I[0] : null, D = i.useCallback(() => {
+  }), S = (0, g.Rf)(n), I = (0, g.GU)(n), P = I.length > 0 ? I[0] : null, w = i.useCallback(() => {
     (0, d.$)()
   }, []), M = i.useCallback(() => {
     (0, c.mK)({
@@ -187,7 +187,7 @@ function U(e) {
       analyticsLocations: [],
       analyticsSource: l.Z.QUEST_HOME_PAGE
     })
-  }, []), k = null === (t = (0, h.WD)()) || void 0 === t ? void 0 : t.getId(), j = n.id === A.V;
+  }, []), j = null === (t = (0, h.WD)()) || void 0 === t ? void 0 : t.getId(), k = n.id === A.V;
   return i.useMemo(() => {
     if (null != P) return {
       text: R.NW.string(R.t.k4z4en),
@@ -197,7 +197,7 @@ function U(e) {
     switch (o) {
       case g.OH.UNACCEPTED:
         let e = R.NW.string(R.t.kUQLMD);
-        E && j ? e = R.NW.string(R.t.CwGuEx) : E && (e = R.NW.string(R.t.umdNio));
+        E && k ? e = R.NW.string(R.t.CwGuEx) : E && (e = R.NW.string(R.t.umdNio));
         let t = E ? _.jZ.START_QUEST : _.jZ.ACCEPT_QUEST;
         return {
           text: e, tooltipText: e, onClick: () => {
@@ -221,7 +221,7 @@ function U(e) {
             ctaContent: _.jZ.CONNECT_CONSOLE,
             position: u,
             rowIndex: f,
-            impressionId: k
+            impressionId: j
           })
         };
         if (E) return {
@@ -251,15 +251,15 @@ function U(e) {
           tooltipText: null,
           onClick: v
         };
-        if (a) return L(w({}, i), {
+        if (a) return L(D({}, i), {
           text: R.NW.string(R.t.MAS7uL)
         });
-        if ((0, b.vQ)(n.config)) return L(w({}, i), {
+        if ((0, b.vQ)(n.config)) return L(D({}, i), {
           text: R.NW.string(R.t.vTgCW1)
         });
         if ((0, b.Bg)(n.config)) return {
           tooltipText: null,
-          onClick: D,
+          onClick: w,
           text: R.NW.string(R.t["eQX+go"])
         };
         else if ((0, b.xN)(n.config)) return {
@@ -267,11 +267,11 @@ function U(e) {
           text: R.NW.string(R.t.iEw2Nz),
           onClick: M
         };
-        return L(w({}, i), {
+        return L(D({}, i), {
           text: R.NW.string(R.t.bAGFz8)
         })
     }
-  }, [P, o, E, y, p, v, a, n, s, u, f, k, S, D, j, M])
+  }, [P, o, E, y, p, v, a, n, s, u, f, j, S, w, k, M])
 }
 
 function G() {
@@ -301,7 +301,7 @@ function B(e) {
   return i && !d && !u && !o
 }
 
-function Z(e) {
+function F(e) {
   let {
     location: t
   } = e, n = B({

@@ -1,44 +1,43 @@
 /** Chunk was on 61526 **/
-n.d(t, {
-  w: () => a
-}), n(47120), n(653041);
-var r = n(735630);
 async function a(e) {
-  let t = r.createFile(),
-    n = r.createFile(),
-    a = {};
-  e.fileStart = 0, t.onReady = e => {
-    for (let r of (n.init({
+  let {
+    default: t
+  } = await n.e("32990").then(n.t.bind(n, 735630, 19)), a = t.createFile(), r = t.createFile(), l = {};
+  e.fileStart = 0, a.onReady = e => {
+    for (let t of (r.init({
         duration: e.duration,
         timescale: e.timescale
-      }), e.audioTracks)) a[r.id] = r, t.setExtractionOptions(r.id, null, {
+      }), e.audioTracks)) l[t.id] = t, a.setExtractionOptions(t.id, null, {
       nbSamples: 1 / 0
-    }), n.addTrack({
-      id: r.id,
-      timescale: r.timescale,
+    }), r.addTrack({
+      id: t.id,
+      timescale: t.timescale,
       hdlr: "soun",
       type: "mp4a",
-      duration: r.duration,
-      layer: r.layer,
-      channel_count: r.audio.channel_count,
-      samplerate: r.audio.sample_rate,
-      samplesize: r.audio.sample_size,
-      name: r.name
+      duration: t.duration,
+      layer: t.layer,
+      channel_count: t.audio.channel_count,
+      samplerate: t.audio.sample_rate,
+      samplesize: t.audio.sample_size,
+      name: t.name
     });
-    t.start()
+    a.start()
   };
-  let l = new Promise(e => {
-    t.onSamples = (r, l, i) => {
-      for (let e of i) n.addSample(r, e.data, e);
-      t.releaseUsedSamples(r, i.length), delete a[r];
-      let o = n.getTrackById(r),
-        s = t.getTrackById(r);
+  let i = new Promise(e => {
+    a.onSamples = (t, n, i) => {
+      for (let e of i) r.addSample(t, e.data, e);
+      a.releaseUsedSamples(t, i.length), delete l[t];
+      let o = r.getTrackById(t),
+        s = a.getTrackById(t);
       if (null != s.edts) {
         let e = s.edts.elst;
         o.add("edts").boxes.push(e)
       }
-      0 === Object.keys(a).length && e()
+      0 === Object.keys(l).length && e()
     }
   });
-  return t.appendBuffer(e), t.flush(), await l, n.getBuffer()
+  return a.appendBuffer(e), a.flush(), await i, r.getBuffer()
 }
+n.d(t, {
+  w: () => a
+}), n(47120), n(653041)

@@ -5,14 +5,14 @@ n.d(t, {
   AA: () => T,
   Db: () => L,
   Dx: () => S,
-  R: () => w,
+  R: () => D,
   TB: () => N,
   XE: () => R,
   hs: () => A,
   w: () => O,
   xR: () => P,
   xU: () => C,
-  xz: () => D
+  xz: () => w
 }), n(47120), n(653041);
 var r = n(392711),
   i = n.n(r),
@@ -164,7 +164,7 @@ function P(e, t) {
   })
 }
 
-function w(e, t) {
+function D(e, t) {
   a.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_END",
     soundId: e,
@@ -172,7 +172,7 @@ function w(e, t) {
   })
 }
 
-function D(e) {
+function w(e) {
   a.Z.dispatch({
     type: "USER_SOUNDBOARD_SET_VOLUME",
     volume: e

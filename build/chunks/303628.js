@@ -68,7 +68,7 @@ function R(e, t) {
 
 function P(e, t) {
   if (null == e) return {};
-  var n, r, i = w(e, t);
+  var n, r, i = D(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -76,28 +76,28 @@ function P(e, t) {
   return i
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let D = [];
+let w = [];
 
 function L(e) {
   let {
     channelId: t,
     type: n
   } = e, o = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), N = (0, _.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([v.Z], () => v.Z.getUploads(t, n.drafts.type)), {
-    isApplicationCommand: w,
+    isApplicationCommand: D,
     commandOptions: L,
     commandOptionStates: x
   } = (0, c.cj)([h.Z], () => {
     let e = h.Z.getActiveCommand(t);
     if (null == e) return {
       isApplicationCommand: !1,
-      commandOptions: D,
+      commandOptions: w,
       commandOptionStates: null
     };
     let n = h.Z.getOptionStates(t);
@@ -112,7 +112,7 @@ function L(e) {
       var t;
       return e.type === f.jw.ATTACHMENT && (null == x ? void 0 : null === (t = x[e.name]) || void 0 === t ? void 0 : t.hasValue)
     })) && void 0 !== e ? e : []
-  }, [L, x]), [k, j] = i.useState([]);
+  }, [L, x]), [j, k] = i.useState([]);
   i.useEffect(() => {
     let e = () => {
       d.Z.clearAll(t, n.drafts.type)
@@ -127,8 +127,8 @@ function L(e) {
     handler: U
   });
   let G = {
-      isApplicationCommand: w,
-      previousUploadOptions: k,
+      isApplicationCommand: D,
+      previousUploadOptions: j,
       uploadOptions: M
     },
     B = i.useRef(G);
@@ -146,11 +146,11 @@ function L(e) {
         i.some(e => t.name === e.name) || e.push(t)
       }), e.forEach(e => {
         d.Z.remove(t, e.name, n.drafts.type)
-      }), j(i)
+      }), k(i)
     }
   }, [t, M.length, n]);
-  let Z = (0, m.Q3)("ChannelAttachmentArea");
-  return !w && 0 === C.length || w && 0 === M.length ? null : (0, r.jsxs)(i.Fragment, {
+  let F = (0, m.Q3)("ChannelAttachmentArea");
+  return !D && 0 === C.length || D && 0 === M.length ? null : (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(s.bG, {
       navigator: N,
       children: (0, r.jsx)(s.SJ, {
@@ -162,7 +162,7 @@ function L(e) {
             ref: i
           }, s), {
             className: a()(I.channelAttachmentArea, T.scrollbarGhost),
-            children: w ? M.map(e => (0, r.jsx)(y.Z, {
+            children: D ? M.map(e => (0, r.jsx)(y.Z, {
               channelId: t,
               keyboardModeEnabled: o,
               option: e
@@ -176,7 +176,7 @@ function L(e) {
           }))
         }
       })
-    }), n.drafts.type === E.d.FirstThreadMessage || Z ? null : (0, r.jsx)(g.Z, {})]
+    }), n.drafts.type === E.d.FirstThreadMessage || F ? null : (0, r.jsx)(g.Z, {})]
   })
 }
 

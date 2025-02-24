@@ -51,19 +51,19 @@ function R(e) {
       title: C,
       type: R,
       guildBoostProps: P,
-      analyticsSource: w,
-      analyticsLocation: D,
+      analyticsSource: D,
+      analyticsLocation: w,
       body: L,
       context: x,
       glowUp: M,
-      modalClassName: k,
-      modalContentClassName: j,
+      modalClassName: j,
+      modalContentClassName: k,
       artContainerClassName: U,
       headerClassName: G,
       bodyClassName: B,
-      transitionState: Z,
-      onClose: F,
-      onSubscribeClick: V,
+      transitionState: F,
+      onClose: V,
+      onSubscribeClick: Z,
       onSubscribeFinish: H,
       onSecondaryClick: W,
       secondaryCTA: Y,
@@ -93,9 +93,9 @@ function R(e) {
       analyticsLocations: e_
     } = (0, d.ZP)(u.Z.PREMIUM_UPSELL_MODAL),
     eh = {
-      analyticsLocation: D,
+      analyticsLocation: w,
       analyticsLocations: e_,
-      analyticsSource: w,
+      analyticsSource: D,
       guildBoostProps: P,
       type: R
     },
@@ -133,9 +133,9 @@ function R(e) {
   }, [ev]);
   let eb = () => {
       if (eu) return (0, r.jsx)(f.Z, {
-        analyticsLocation: D,
+        analyticsLocation: w,
         guild: P.guild,
-        onClose: F
+        onClose: V
       });
       let e = ee ? I.NW.string(I.t.pj0XBA) : void 0;
       if (ep) {
@@ -152,12 +152,12 @@ function R(e) {
       return (0, r.jsx)(v.Z, {
         className: en,
         showGradient: ee || et,
-        premiumModalAnalyticsLocation: D,
+        premiumModalAnalyticsLocation: w,
         subscriptionTier: Q,
         size: l.zxk.Sizes.SMALL,
         color: ee || et ? l.zxk.Colors.CUSTOM : l.zxk.Colors.GREEN,
         onClick: () => {
-          null == V || V(), F()
+          null == Z || Z(), V()
         },
         onSubscribeModalClose: H,
         buttonText: null != K ? K : e
@@ -170,9 +170,9 @@ function R(e) {
     alt: "",
     src: ec.artURL
   }) : null != ec.artElement && (eO = ec.artElement), (0, r.jsxs)(l.Y0X, {
-    className: a()(T.root, !ep && k),
+    className: a()(T.root, !ep && j),
     "aria-label": C,
-    transitionState: Z,
+    transitionState: F,
     children: [null != eO && (0, r.jsxs)("div", {
       className: ey,
       children: [eO, z ? (0, r.jsx)("img", {
@@ -182,15 +182,15 @@ function R(e) {
       }) : null]
     }), (0, r.jsx)(l.hzk, {
       scrollbarType: "none",
-      className: a()(ee ? T.enhancedContent : T.content, !ep && j),
+      className: a()(ee ? T.enhancedContent : T.content, !ep && k),
       children: X ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)(r.Fragment, {
         children: ep ? (0, r.jsx)(E.ZP, {
-          onClose: F,
+          onClose: V,
           type: R,
           subscriptionTier: null !== (o = null == ed ? void 0 : null === (n = ed.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== o ? o : O.Si.TIER_2,
           headingText: C,
           context: x,
-          analyticsLocationObject: D,
+          analyticsLocationObject: w,
           discountOffer: ef,
           trialOffer: ed,
           children: M
@@ -233,14 +233,14 @@ function R(e) {
           children: Y
         }) : null, eb()]
       }), !J && !ee && (0, r.jsx)(l.zxk, {
-        onClick: F,
+        onClick: V,
         size: l.zxk.Sizes.SMALL,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,
         children: null != $ ? $ : I.NW.string(I.t["13/7kZ"])
       })]
     }), ee ? (0, r.jsx)(l.olH, {
-      onClick: F,
+      onClick: V,
       className: T.closeButton
     }) : null, ea]
   })

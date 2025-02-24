@@ -3,13 +3,13 @@
 n.d(t, {
   C0: () => A,
   GN: () => C,
-  M2: () => w,
+  M2: () => D,
   Nq: () => N,
   SZ: () => x,
   aC: () => L,
   pI: () => I,
-  sR: () => D,
-  tt: () => k
+  sR: () => w,
+  tt: () => j
 }), n(653041);
 var r = n(399606),
   i = n(704215),
@@ -70,7 +70,7 @@ function P() {
   var e, t;
   return Object.values(null !== (t = null === (e = l.Z.settings.guilds) || void 0 === e ? void 0 : e.guilds) && void 0 !== t ? t : {}).some(e => null != e.joinSound)
 }
-async function w(e) {
+async function D(e) {
   let t = p.default.getCurrentUser(),
     n = (0, o.Z)(),
     r = (0, y.k9)(e);
@@ -84,7 +84,7 @@ async function w(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     isSoundboardButtonDisabled: t = !1
   } = e, n = (0, r.e7)([p.default], () => p.default.getCurrentUser()), o = [];
@@ -142,7 +142,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     location: t
   } = e;

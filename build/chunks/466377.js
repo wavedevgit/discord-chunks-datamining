@@ -4,9 +4,9 @@ n.d(t, {
   Cg: () => P,
   Y0: () => L,
   YA: () => G,
-  fM: () => D,
-  hz: () => k,
-  mz: () => j,
+  fM: () => w,
+  hz: () => j,
+  mz: () => k,
   ol: () => U,
   xB: () => x
 });
@@ -91,13 +91,13 @@ function R(e, t) {
 var P = function(e) {
   return e.SMALL = "small", e.MEDIUM = "medium", e.LARGE = "large", e.DYNAMIC = "dynamic", e
 }({});
-let w = Object.freeze({
+let D = Object.freeze({
   small: S.small,
   medium: S.medium,
   large: S.large,
   dynamic: null
 });
-var D = function(e) {
+var w = function(e) {
   return e.DEFAULT = "default", e.SUBTLE = "subtle", e
 }({});
 
@@ -119,7 +119,7 @@ function L(e) {
     {
       reducedMotion: P
     } = i.useContext(d.S),
-    D = (0, u.q)({
+    w = (0, u.q)({
       opacity: +!!R,
       transform: R || P.enabled || "subtle" === I ? "scale(1)" : "scale(0.7)",
       config: {
@@ -132,12 +132,12 @@ function L(e) {
     L = i.useRef(null),
     x = null != N["aria-label"],
     M = null != N["aria-labelledby"],
-    k = i.useId(),
-    j = null !== (t = N["aria-labelledby"]) && void 0 !== t ? t : k,
+    j = i.useId(),
+    k = null !== (t = N["aria-labelledby"]) && void 0 !== t ? t : j,
     U = i.useMemo(() => ({
-      headerId: j,
+      headerId: k,
       headerIdIsManaged: M
-    }), [j, M]);
+    }), [k, M]);
   return (0, r.jsx)(b.zM.Provider, {
     value: U,
     children: (0, r.jsx)(p.V, A(T({
@@ -148,12 +148,12 @@ function L(e) {
       "aria-labelledby": x ? void 0 : U.headerId
     }, N), {
       children: (0, r.jsx)(s.animated.div, {
-        className: a()(m, S.root, w[f], {
+        className: a()(m, S.root, D[f], {
           [S.fullscreenOnMobile]: g,
           [S.rootWithShadow]: !E
         }),
         ref: L,
-        style: D,
+        style: w,
         children: (0, r.jsx)(_.J, {
           containerRef: L,
           children: o
@@ -195,7 +195,7 @@ function M(e) {
   }
 }
 
-function k(e) {
+function j(e) {
   let {
     className: t,
     children: n,
@@ -212,7 +212,7 @@ function k(e) {
   }))
 }
 
-function j(e) {
+function k(e) {
   var t, n, i, o, s;
   return (0, r.jsx)(v.Z, {
     grow: 0,

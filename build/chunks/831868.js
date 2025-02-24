@@ -28,32 +28,32 @@ var f = 0,
   C = 17,
   R = 18,
   P = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 0],
-  w = [0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13],
-  D = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7],
+  D = [0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13],
+  w = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7],
   L = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15],
   x = 512,
   M = Array(576);
 d(M);
-var k = Array(2 * b);
-d(k);
-var j = Array(x);
+var j = Array(2 * b);
 d(j);
+var k = Array(x);
+d(k);
 var U = Array(m - h + 1);
 d(U);
 var G = Array(g);
 d(G);
 var B = Array(b);
 
-function Z(e, t, n, r, i) {
+function F(e, t, n, r, i) {
   this.static_tree = e, this.extra_bits = t, this.extra_base = n, this.elems = r, this.max_length = i, this.has_stree = e && e.length
 }
 
-function F(e, t) {
+function V(e, t) {
   this.dyn_tree = e, this.max_code = 0, this.stat_desc = t
 }
 
-function V(e) {
-  return e < 256 ? j[e] : j[256 + (e >>> 7)]
+function Z(e) {
+  return e < 256 ? k[e] : k[256 + (e >>> 7)]
 }
 
 function H(e, t) {
@@ -114,16 +114,16 @@ function X() {
   for (a = 0, n = 0; a < g - 1; a++)
     for (e = 0, G[a] = n; e < 1 << P[a]; e++) U[n++] = a;
   for (U[n - 1] = a, s = 0, a = 0; a < 16; a++)
-    for (e = 0, B[a] = s; e < 1 << w[a]; e++) j[s++] = a;
+    for (e = 0, B[a] = s; e < 1 << D[a]; e++) k[s++] = a;
   for (s >>= 7; a < b; a++)
-    for (e = 0, B[a] = s << 7; e < 1 << w[a] - 7; e++) j[256 + s++] = a;
+    for (e = 0, B[a] = s << 7; e < 1 << D[a] - 7; e++) k[256 + s++] = a;
   for (t = 0; t <= S; t++) l[t] = 0;
   for (e = 0; e <= 143;) M[2 * e + 1] = 8, e++, l[8]++;
   for (; e <= 255;) M[2 * e + 1] = 9, e++, l[9]++;
   for (; e <= 279;) M[2 * e + 1] = 7, e++, l[7]++;
   for (; e <= 287;) M[2 * e + 1] = 8, e++, l[8]++;
-  for (Q(M, v + 1, l), e = 0; e < b; e++) k[2 * e + 1] = 5, k[2 * e] = K(e, 5);
-  r = new Z(M, P, E + 1, v, S), i = new Z(k, w, 0, b, S), o = new Z([], D, 0, y, T)
+  for (Q(M, v + 1, l), e = 0; e < b; e++) j[2 * e + 1] = 5, j[2 * e] = K(e, 5);
+  r = new F(M, P, E + 1, v, S), i = new F(j, D, 0, b, S), o = new F([], w, 0, y, T)
 }
 
 function J(e) {
@@ -156,7 +156,7 @@ function en(e, t, n) {
 function er(e, t, n) {
   var r, i, o, a, s = 0;
   if (0 !== e.last_lit)
-    do r = e.pending_buf[e.d_buf + 2 * s] << 8 | e.pending_buf[e.d_buf + 2 * s + 1], i = e.pending_buf[e.l_buf + s], s++, 0 === r ? Y(e, i, t) : (Y(e, (o = U[i]) + E + 1, t), 0 !== (a = P[o]) && W(e, i -= G[o], a), Y(e, o = V(--r), n), 0 !== (a = w[o]) && W(e, r -= B[o], a)); while (s < e.last_lit);
+    do r = e.pending_buf[e.d_buf + 2 * s] << 8 | e.pending_buf[e.d_buf + 2 * s + 1], i = e.pending_buf[e.l_buf + s], s++, 0 === r ? Y(e, i, t) : (Y(e, (o = U[i]) + E + 1, t), 0 !== (a = P[o]) && W(e, i -= G[o], a), Y(e, o = Z(--r), n), 0 !== (a = D[o]) && W(e, r -= B[o], a)); while (s < e.last_lit);
   Y(e, N, t)
 }
 
@@ -223,7 +223,7 @@ d(B);
 var eu = !1;
 
 function ed(e) {
-  eu || (X(), eu = !0), e.l_desc = new F(e.dyn_ltree, r), e.d_desc = new F(e.dyn_dtree, i), e.bl_desc = new F(e.bl_tree, o), e.bi_buf = 0, e.bi_valid = 0, J(e)
+  eu || (X(), eu = !0), e.l_desc = new V(e.dyn_ltree, r), e.d_desc = new V(e.dyn_dtree, i), e.bl_desc = new V(e.bl_tree, o), e.bi_buf = 0, e.bi_valid = 0, J(e)
 }
 
 function ef(e, t, n, r) {
@@ -236,10 +236,10 @@ function ep(e) {
 
 function e_(e, t, n, r) {
   var i, o, a = 0;
-  e.level > 0 ? (e.strm.data_type === u && (e.strm.data_type = ec(e)), ei(e, e.l_desc), ei(e, e.d_desc), a = es(e), i = e.opt_len + 3 + 7 >>> 3, (o = e.static_len + 3 + 7 >>> 3) <= i && (i = o)) : i = o = n + 5, n + 4 <= i && -1 !== t ? ef(e, t, n, r) : e.strategy === s || o === i ? (W(e, (p << 1) + +!!r, 3), er(e, M, k)) : (W(e, (_ << 1) + +!!r, 3), el(e, e.l_desc.max_code + 1, e.d_desc.max_code + 1, a + 1), er(e, e.dyn_ltree, e.dyn_dtree)), J(e), r && $(e)
+  e.level > 0 ? (e.strm.data_type === u && (e.strm.data_type = ec(e)), ei(e, e.l_desc), ei(e, e.d_desc), a = es(e), i = e.opt_len + 3 + 7 >>> 3, (o = e.static_len + 3 + 7 >>> 3) <= i && (i = o)) : i = o = n + 5, n + 4 <= i && -1 !== t ? ef(e, t, n, r) : e.strategy === s || o === i ? (W(e, (p << 1) + +!!r, 3), er(e, M, j)) : (W(e, (_ << 1) + +!!r, 3), el(e, e.l_desc.max_code + 1, e.d_desc.max_code + 1, a + 1), er(e, e.dyn_ltree, e.dyn_dtree)), J(e), r && $(e)
 }
 
 function eh(e, t, n) {
-  return e.pending_buf[e.d_buf + 2 * e.last_lit] = t >>> 8 & 255, e.pending_buf[e.d_buf + 2 * e.last_lit + 1] = 255 & t, e.pending_buf[e.l_buf + e.last_lit] = 255 & n, e.last_lit++, 0 === t ? e.dyn_ltree[2 * n]++ : (e.matches++, t--, e.dyn_ltree[(U[n] + E + 1) * 2]++, e.dyn_dtree[2 * V(t)]++), e.last_lit === e.lit_bufsize - 1
+  return e.pending_buf[e.d_buf + 2 * e.last_lit] = t >>> 8 & 255, e.pending_buf[e.d_buf + 2 * e.last_lit + 1] = 255 & t, e.pending_buf[e.l_buf + e.last_lit] = 255 & n, e.last_lit++, 0 === t ? e.dyn_ltree[2 * n]++ : (e.matches++, t--, e.dyn_ltree[(U[n] + E + 1) * 2]++, e.dyn_dtree[2 * Z(t)]++), e.last_lit === e.lit_bufsize - 1
 }
 t._tr_init = ed, t._tr_stored_block = ef, t._tr_flush_block = e_, t._tr_tally = eh, t._tr_align = ep

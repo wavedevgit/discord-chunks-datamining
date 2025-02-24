@@ -79,7 +79,7 @@ var d = {
   "./champion_29.jpg": "603640",
   "./champion_3.jpg": "196",
   "./champion_30.jpg": "986462",
-  "./champion_31.jpg": "735950",
+  "./champion_31.jpg": "695298",
   "./champion_32.jpg": "713070",
   "./champion_33.jpg": "882678",
   "./champion_34.jpg": "629666",

@@ -99,7 +99,7 @@ function P(e) {
   return "GUILD_ROLE_DELETE" === e.type && (t = n.removeRoleFromSearchState(e.roleId)), n.rebuildAllMembers() || t
 }
 
-function w(e) {
+function D(e) {
   let {
     guildId: t,
     userId: n
@@ -107,7 +107,7 @@ function w(e) {
   return b(t).updateMembersByMemberIds([n])
 }
 
-function D(e) {
+function w(e) {
   let {
     guildId: t,
     members: n
@@ -169,7 +169,7 @@ function M(e) {
   return i.updateMembersByMemberIds(o)
 }
 
-function k(e) {
+function j(e) {
   let {
     guildId: t,
     guildMember: n
@@ -177,7 +177,7 @@ function k(e) {
   return b(t).updateMembersByMemberIds([n.user.id])
 }
 
-function j(e) {
+function k(e) {
   let t = !1;
   return e.guilds.forEach(e => {
     let {
@@ -205,14 +205,14 @@ function U(e) {
 }
 
 function G(e) {
-  return E ? E = !1 : O(!0), j(e)
+  return E ? E = !1 : O(!0), k(e)
 }
 
 function B(e) {
   return U(e)
 }
 
-function Z(e) {
+function F(e) {
   let {
     guildMembers: t
   } = e, n = !1;
@@ -222,7 +222,7 @@ function Z(e) {
   }), n
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     members: n
@@ -235,7 +235,7 @@ function F(e) {
   return i.length > 0 && r.updateClientMembers(i)
 }
 
-function V(e) {
+function Z(e) {
   let {
     members: t,
     guildId: n
@@ -394,9 +394,9 @@ g(X, "displayName", "MemberSafetyStore");
 let J = new X(o.Z, {
   CONNECTION_OPEN: G,
   CONNECTION_OPEN_SUPPLEMENTAL: B,
-  LOCAL_MESSAGES_LOADED: F,
-  CACHE_LOADED: Z,
-  PASSIVE_UPDATE_V2: V,
+  LOCAL_MESSAGES_LOADED: V,
+  CACHE_LOADED: F,
+  PASSIVE_UPDATE_V2: Z,
   GUILD_CREATE: S,
   GUILD_DELETE: I,
   GUILD_MEMBERS_CHUNK_BATCH: A,
@@ -406,10 +406,10 @@ let J = new X(o.Z, {
   GUILD_MEMBER_REMOVE: R,
   GUILD_ROLE_UPDATE: P,
   GUILD_ROLE_DELETE: P,
-  GUILD_MEMBER_PROFILE_UPDATE: k,
-  GUILD_ROLE_MEMBER_REMOVE: w,
-  GUILD_ROLE_MEMBER_ADD: w,
-  THREAD_MEMBER_LIST_UPDATE: D,
+  GUILD_MEMBER_PROFILE_UPDATE: j,
+  GUILD_ROLE_MEMBER_REMOVE: D,
+  GUILD_ROLE_MEMBER_ADD: D,
+  THREAD_MEMBER_LIST_UPDATE: w,
   THREAD_MEMBERS_UPDATE: L,
   LOAD_ARCHIVED_THREADS_SUCCESS: x,
   LOAD_FORUM_POSTS: M,

@@ -1,10 +1,10 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => i
+r.d(t, {
+  Z: () => o
 });
-var r = n(478656);
-let i = function(e, t) {
-  var n = t ? (0, r.Z)(e.buffer) : e.buffer;
-  return new e.constructor(n, e.byteOffset, e.length)
+var n = r(478656);
+let o = function(e, t) {
+  var r = t ? (0, n.Z)(e.buffer) : e.buffer;
+  return new e.constructor(r, e.byteOffset, e.length)
 }

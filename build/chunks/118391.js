@@ -1,13 +1,13 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(67867),
-  i = n(168013);
-r({
+var e = n(766362),
+  o = n(168013);
+e({
   target: "Array",
   stat: !0,
-  forced: !n(546533)(function(e) {
-    Array.from(e)
+  forced: !n(546533)(function(t) {
+    Array.from(t)
   })
 }, {
-  from: i
+  from: o
 })

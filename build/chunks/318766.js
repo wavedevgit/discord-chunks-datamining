@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k,
+  Z: () => j,
   u: () => L
 }), n(47120);
 var r = n(200651),
@@ -67,8 +67,8 @@ function C(e, t) {
 }
 let R = 20,
   P = 24,
-  w = 18,
-  D = 77,
+  D = 18,
+  w = 77,
   L = {
     tension: 800,
     friction: 24
@@ -95,12 +95,12 @@ let R = 20,
 
 function M(e, t) {
   return {
-    "--custom-emoji-sprite-size": "".concat(t ? w : P, "px"),
+    "--custom-emoji-sprite-size": "".concat(t ? D : P, "px"),
     "--custom-emoji-sprite-row": Math.floor(e / R),
     "--custom-emoji-sprite-col": e % R
   }
 }
-let k = function(e) {
+let j = function(e) {
   let {
     tabIndex: t,
     className: n,
@@ -109,18 +109,18 @@ let k = function(e) {
     onClick: A,
     "aria-controls": R,
     focusProps: P,
-    shouldShowSoundmojiCoachmark: w = !1
-  } = e, [k, j] = i.useState(!1), [U, G] = i.useState(50), B = k || T, Z = (0, v.l)(I, "emojiButton", B ? "Hovered" : "Normal"), F = M(U, (0, f.Q3)("EmojiButton")), V = i.useCallback(() => {
+    shouldShowSoundmojiCoachmark: D = !1
+  } = e, [j, k] = i.useState(!1), [U, G] = i.useState(50), B = j || T, F = (0, v.l)(I, "emojiButton", B ? "Hovered" : "Normal"), V = M(U, (0, f.Q3)("EmojiButton")), Z = i.useCallback(() => {
     if (B) return;
-    let e = Math.floor(Math.random() * D);
-    j(!0), G(e), (0, _.x)(O.qR.EmojiButtonMouseEntered)
-  }, [B, j, G]), H = i.useCallback(() => {
-    j(!1)
-  }, [j]), W = i.useCallback(() => (0, _.x)(O.qR.EmojiButtonFocused), []), Y = (0, h.B4)({
+    let e = Math.floor(Math.random() * w);
+    k(!0), G(e), (0, _.x)(O.qR.EmojiButtonMouseEntered)
+  }, [B, k, G]), H = i.useCallback(() => {
+    k(!1)
+  }, [k]), W = i.useCallback(() => (0, _.x)(O.qR.EmojiButtonFocused), []), Y = (0, h.B4)({
     location: "EmojiButton"
   }), [K, z] = (0, p.US)(Y ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], void 0, !0), q = K === c.z.TRIAL_NUX_EMOJI_BUTTON, Q = !T && q, X = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [J, $] = i.useState(!1), [ee, et] = i.useState(!1), en = (0, m.V2)({
     location: "EmojiButton"
-  }), [er, ei] = (0, p.US)(w && en ? [c.z.SOUNDMOJI_COACHMARK] : []), eo = !J && er === c.z.SOUNDMOJI_COACHMARK && !ee;
+  }), [er, ei] = (0, p.US)(D && en ? [c.z.SOUNDMOJI_COACHMARK] : []), eo = !J && er === c.z.SOUNDMOJI_COACHMARK && !ee;
   return (0, r.jsx)(u.yRy, {
     renderPopout: () => (0, r.jsx)(g.Z, {
       markAsDismissed: ei
@@ -143,12 +143,12 @@ let k = function(e) {
         look: u.zxk.Looks.BLANK,
         size: u.zxk.Sizes.NONE,
         tabIndex: t,
-        className: a()(Z, n),
+        className: a()(F, n),
         onMouseEnter: () => {
           var e;
-          V(), null === (e = i.onMouseEnter) || void 0 === e || e.call(i), E.default.track(b.rMx.EMOJI_PICKER_BUTTON_HOVERED)
+          Z(), null === (e = i.onMouseEnter) || void 0 === e || e.call(i), E.default.track(b.rMx.EMOJI_PICKER_BUTTON_HOVERED)
         },
-        onMouseOver: V,
+        onMouseOver: Z,
         onMouseLeave: () => {
           var e;
           H(), null === (e = i.onMouseLeave) || void 0 === e || e.call(i), q && z(y.L.USER_DISMISS)
@@ -175,7 +175,7 @@ let k = function(e) {
             } = e;
             return (0, r.jsxs)(s.animated.div, {
               className: I.spriteContainer,
-              style: C(N({}, F), {
+              style: C(N({}, V), {
                 transform: t.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
               }),
               children: [(0, r.jsx)("div", {

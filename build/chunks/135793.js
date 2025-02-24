@@ -33,7 +33,7 @@ var r = n(200651),
   R = n(959791),
   P = n(99713);
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -42,14 +42,14 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -72,8 +72,8 @@ function x(e, t) {
   }), e
 }
 let M = 190,
-  k = 178,
-  j = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
+  j = 178,
+  k = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
   U = e => {
     let {
       channelId: t,
@@ -89,7 +89,7 @@ let M = 190,
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 135793));
-      return t => (0, r.jsx)(e, x(D({}, t), {
+      return t => (0, r.jsx)(e, x(w({}, t), {
         channel: d,
         message: i,
         onRedeem: o,
@@ -98,7 +98,7 @@ let M = 190,
         buttonUseState: c
       }))
     }, {
-      modalKey: j
+      modalKey: k
     }))
   };
 
@@ -150,20 +150,20 @@ function B(e) {
   (0, i.useEffect)(() => () => {
     A && (0, E.SN)(y.D1)
   }, [A, c]);
-  let w = (0, i.useCallback)(() => {
+  let D = (0, i.useCallback)(() => {
       null != p && ((0, l.pTH)(), o(p))
     }, [p, o]),
-    D = (0, i.useCallback)(() => {
+    w = (0, i.useCallback)(() => {
       (0, _.Z)({
         skuId: y.D1,
         analyticsLocations: C,
         onComplete: () => {
-          w(), (0, E.gA)(y.D1)
+          D(), (0, E.gA)(y.D1)
         },
         variantsReturnStyle: a.v.INDIVIDUAL_PRODUCTS
       })
-    }, [w, C]),
-    L = (0, i.useCallback)(() => R ? w() : D(), [w, D, R]),
+    }, [D, C]),
+    L = (0, i.useCallback)(() => R ? D() : w(), [D, w, R]),
     x = (0, i.useMemo)(() => {
       if (null != b) {
         if ("apply" === s) return 3;
@@ -173,7 +173,7 @@ function B(e) {
       return 0
     }, [b, R, s]),
     M = (0, i.useMemo)(() => 0 === x ? 1 : f ? 2 : 3 * (null == p), [f, p, x]);
-  return (0, r.jsx)(Z, {
+  return (0, r.jsx)(F, {
     channel: t,
     buttonPurchaseState: x,
     buttonDisabledState: M,
@@ -184,7 +184,7 @@ function B(e) {
     isReaction: c
   })
 }
-let Z = e => {
+let F = e => {
     let {
       channel: t,
       buttonPurchaseState: n,
@@ -217,7 +217,7 @@ let Z = e => {
       children: [(0, r.jsx)("div", {
         className: R.modal,
         ref: d,
-        children: (0, r.jsx)(F, {
+        children: (0, r.jsx)(V, {
           channel: t,
           selectedEmoji: c,
           isReaction: u
@@ -230,7 +230,7 @@ let Z = e => {
       })]
     })
   },
-  F = e => {
+  V = e => {
     let {
       channel: t,
       selectedEmoji: n,
@@ -263,7 +263,7 @@ let Z = e => {
         children: [(0, r.jsx)(l.Text, {
           variant: "eyebrow",
           children: C.NW.string(C.t.o8XwoK)
-        }), (0, r.jsx)(V, {
+        }), (0, r.jsx)(Z, {
           channel: t,
           selectedEmoji: n,
           isReaction: i
@@ -271,7 +271,7 @@ let Z = e => {
       })]
     })
   },
-  V = e => {
+  Z = e => {
     let {
       channel: t,
       selectedEmoji: n,
@@ -347,7 +347,7 @@ let Z = e => {
       className: R.footer,
       children: [(0, r.jsx)(l.zxk, {
         onClick: () => {
-          (0, l.Mr3)(j)
+          (0, l.Mr3)(k)
         },
         color: l.zxk.Colors.PRIMARY,
         children: C.NW.string(C.t.w2Qbd3)
@@ -419,7 +419,7 @@ let Z = e => {
       tooltipContentClassName: R.tooltip,
       text: u,
       shouldShow: !!s,
-      children: e => (0, r.jsx)(l.zxk, x(D({}, e), {
+      children: e => (0, r.jsx)(l.zxk, x(w({}, e), {
         onClick: a,
         disabled: s,
         children: (0, r.jsx)("div", {
@@ -435,7 +435,7 @@ let Z = e => {
       className: R.error,
       children: [(0, r.jsx)(l.Eep, {
         src: P,
-        width: k,
+        width: j,
         height: M
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",

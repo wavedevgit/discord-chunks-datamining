@@ -66,7 +66,7 @@ let g = {},
   R = 0,
   P = 0;
 
-function w() {
+function D() {
   C = Object.values(g).length;
   let {
     [f.OGo.PENDING_INCOMING]: e = 0, [f.OGo.PENDING_OUTGOING]: t = 0, [f.OGo.FRIEND]: n = 0
@@ -74,14 +74,14 @@ function w() {
   N = t, A = n, R = b.size, P = S.size, T = Math.max(e - R - P, 0)
 }
 
-function D(e) {
+function w(e) {
   g = {}, E = {}, v = {}, O = new Set, b = new Set, S = new Set, I = {}, y = new Set, e.relationships.forEach(e => {
     g[e.id] = e.type, null != e.nickname && (E[e.id] = e.nickname), null != e.since && (v[e.id] = e.since), e.is_spam_request && b.add(e.id), null != e.origin_application_id && (I[e.id] = e.origin_application_id), e.is_stranger_request && y.add(e.id), e.user_ignored && (O.add(e.id), e.type === f.OGo.PENDING_INCOMING && S.add(e.id))
-  }), w()
+  }), D()
 }
 
 function L(e) {
-  g = _({}, e.relationships), w()
+  g = _({}, e.relationships), D()
 }
 
 function x(e) {
@@ -94,29 +94,29 @@ function x(e) {
     [e.relationship.id]: e.relationship.since
   })), null != e.relationship.originApplicationId && (I = m(_({}, I), {
     [e.relationship.id]: e.relationship.originApplicationId
-  })), e.relationship.isSpamRequest ? b.add(e.relationship.id) : b.delete(e.relationship.id), e.relationship.isStrangerRequest ? y.add(e.relationship.id) : y.delete(e.relationship.id), e.relationship.userIgnored ? (O.add(e.relationship.id), e.relationship.type === f.OGo.PENDING_INCOMING ? S.add(e.relationship.id) : e.relationship.type === f.OGo.FRIEND && S.delete(e.relationship.id)) : (O.delete(e.relationship.id), S.delete(e.relationship.id)), w(), e.relationship.type === f.OGo.FRIEND && t === f.OGo.PENDING_OUTGOING && s.Z.dispatch({
+  })), e.relationship.isSpamRequest ? b.add(e.relationship.id) : b.delete(e.relationship.id), e.relationship.isStrangerRequest ? y.add(e.relationship.id) : y.delete(e.relationship.id), e.relationship.userIgnored ? (O.add(e.relationship.id), e.relationship.type === f.OGo.PENDING_INCOMING ? S.add(e.relationship.id) : e.relationship.type === f.OGo.FRIEND && S.delete(e.relationship.id)) : (O.delete(e.relationship.id), S.delete(e.relationship.id)), D(), e.relationship.type === f.OGo.FRIEND && t === f.OGo.PENDING_OUTGOING && s.Z.dispatch({
     type: "FRIEND_REQUEST_ACCEPTED",
     user: e.relationship.user
   })
 }
 
 function M(e) {
-  g = _({}, g), delete g[e.relationship.id], null != E[e.relationship.id] && (E = _({}, E), delete E[e.relationship.id]), null != v[e.relationship.id] && (v = _({}, v), delete v[e.relationship.id]), null != I[e.relationship.id] && (I = _({}, I), delete I[e.relationship.id]), e.relationship.userIgnored || (O.delete(e.relationship.id), S.delete(e.relationship.id)), b.delete(e.relationship.id), y.delete(e.relationship.id), w()
+  g = _({}, g), delete g[e.relationship.id], null != E[e.relationship.id] && (E = _({}, E), delete E[e.relationship.id]), null != v[e.relationship.id] && (v = _({}, v), delete v[e.relationship.id]), null != I[e.relationship.id] && (I = _({}, I), delete I[e.relationship.id]), e.relationship.userIgnored || (O.delete(e.relationship.id), S.delete(e.relationship.id)), b.delete(e.relationship.id), y.delete(e.relationship.id), D()
 }
 
-function k(e) {
+function j(e) {
   let {
     relationship: t
   } = e;
   g = m(_({}, g), {
     [t.id]: t.type
-  }), null == t.since ? delete v[t.id] : v[t.id] = t.since, null == t.nickname ? delete E[t.id] : E[t.id] = t.nickname, t.isSpamRequest ? b.add(t.id) : b.delete(t.id), t.isStrangerRequest ? y.add(t.id) : y.delete(t.id), null == t.originApplicationId ? delete I[t.id] : I[t.id] = t.originApplicationId, t.userIgnored ? (O.add(t.id), t.type === f.OGo.PENDING_INCOMING && S.add(t.id)) : (O.delete(t.id), S.delete(t.id)), w()
+  }), null == t.since ? delete v[t.id] : v[t.id] = t.since, null == t.nickname ? delete E[t.id] : E[t.id] = t.nickname, t.isSpamRequest ? b.add(t.id) : b.delete(t.id), t.isStrangerRequest ? y.add(t.id) : y.delete(t.id), null == t.originApplicationId ? delete I[t.id] : I[t.id] = t.originApplicationId, t.userIgnored ? (O.add(t.id), t.type === f.OGo.PENDING_INCOMING && S.add(t.id)) : (O.delete(t.id), S.delete(t.id)), D()
 }
 
-function j(e) {
+function k(e) {
   g = _({}, g), u.default.keys(g).forEach(e => {
     g[e] === f.OGo.PENDING_INCOMING && (delete g[e], b.delete(e), S.delete(e), y.delete(e))
-  }), w()
+  }), D()
 }
 class U extends(r = a.ZP.Store) {
   initialize() {
@@ -214,10 +214,10 @@ class U extends(r = a.ZP.Store) {
 }
 p(U, "displayName", "RelationshipStore");
 let G = new U(s.Z, {
-  CONNECTION_OPEN: D,
+  CONNECTION_OPEN: w,
   OVERLAY_INITIALIZE: L,
   RELATIONSHIP_ADD: x,
   RELATIONSHIP_REMOVE: M,
-  RELATIONSHIP_UPDATE: k,
-  RELATIONSHIP_PENDING_INCOMING_REMOVED: j
+  RELATIONSHIP_UPDATE: j,
+  RELATIONSHIP_PENDING_INCOMING_REMOVED: k
 })

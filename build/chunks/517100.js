@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 });
 var r, i = n(442837),
   o = n(570140),
@@ -111,7 +111,7 @@ __OVERLAY__ || (u.isPlatformEmbedded && (null === s.Z || void 0 === s.Z ? void 0
 }), s.Z.remotePowerMonitor.on("unlock-screen", () => {
   v = !1, P({})
 })) : setInterval(I, .25 * f.OSm));
-class w extends(r = i.ZP.Store) {
+class D extends(r = i.ZP.Store) {
   isIdle() {
     return m
   }
@@ -122,8 +122,8 @@ class w extends(r = i.ZP.Store) {
     return m ? h : null
   }
 }
-_(w, "displayName", "IdleStore");
-let D = new w(o.Z, {
+_(D, "displayName", "IdleStore");
+let w = new D(o.Z, {
   IDLE: N,
   AFK: A,
   SPEAKING: C,

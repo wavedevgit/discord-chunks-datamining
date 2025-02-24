@@ -1,9 +1,9 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
 var r = n(875604),
-  i = n(549842),
-  o = Array.prototype;
+  o = n(549842),
+  a = Array.prototype;
 e.exports = function(e) {
   var t = e.sort;
-  return e === o || r(o, e) && t === o.sort ? i : t
+  return e === a || r(a, e) && t === a.sort ? o : t
 }

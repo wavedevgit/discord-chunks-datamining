@@ -1,13 +1,13 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(335832),
-  i = n(665336);
+  o = n(665336);
 
-function o(e, t, n) {
-  return (t = (0, i.Z)(t)) in e ? r(e, t, {
+function a(e, t, n) {
+  return (t = (0, o.Z)(t)) in e ? r(e, t, {
     value: n,
     enumerable: !0,
     configurable: !0,

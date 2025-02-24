@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(558381),
   p = n(666743),
   h = n(770146),
-  g = n(600164),
-  f = n(565138),
+  f = n(600164),
+  g = n(565138),
   m = n(41776),
   b = n(703656),
   _ = n(769654),
@@ -39,9 +39,9 @@ class S extends i.PureComponent {
       approximateMemberCount: e,
       approximatePresenceCount: t
     } = this.props.guild;
-    return null == e || null == t ? null : (0, r.jsxs)(g.Z, {
+    return null == e || null == t ? null : (0, r.jsxs)(f.Z, {
       className: I.memberInfo,
-      align: g.Z.Align.CENTER,
+      align: f.Z.Align.CENTER,
       children: [(0, r.jsx)("div", {
         className: I.dotOnline
       }), (0, r.jsx)("span", {
@@ -75,8 +75,8 @@ class S extends i.PureComponent {
       p = this.handleJoinOrView,
       m = c.zxk.Looks.FILLED,
       b = c.zxk.Colors.PRIMARY;
-    return l ? n ? (m = c.zxk.Looks.OUTLINED, b = I.buttonColorInGuild, d = (0, r.jsxs)(g.Z, {
-      align: g.Z.Align.CENTER,
+    return l ? n ? (m = c.zxk.Looks.OUTLINED, b = I.buttonColorInGuild, d = (0, r.jsxs)(f.Z, {
+      align: f.Z.Align.CENTER,
       children: [(0, r.jsx)("div", {
         children: y.NW.string(y.t.cEnaW1)
       }), (0, r.jsx)(c.dz2, {
@@ -92,10 +92,10 @@ class S extends i.PureComponent {
         className: I.content,
         children: [(0, r.jsxs)("div", {
           className: I.info,
-          children: [(0, r.jsx)(f.Z, {
+          children: [(0, r.jsx)(g.Z, {
             guild: u,
             active: !0,
-            size: f.Z.Sizes.LARGE,
+            size: g.Z.Sizes.LARGE,
             className: I.guildIcon
           }), (0, r.jsxs)("div", {
             className: I.infoText,

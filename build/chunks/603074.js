@@ -37,23 +37,23 @@ function E(e) {
     renderHeader: C,
     defaultSoundsOnly: R
   } = e, P = (0, s.e7)([h.Z], () => h.Z.isFetchingSounds() || h.Z.isFetchingDefaultSounds()), {
-    analyticsLocations: w
+    analyticsLocations: D
   } = (0, u.ZP)(c.Z.SOUNDBOARD_POPOUT);
   i.useEffect(() => {
     p.w(), f.DZ.loadIfNecessary(), T || (0, d.ql)("")
   }, [T]);
   let {
-    refreshEnabled: D
+    refreshEnabled: w
   } = (0, _.Z)({
     location: "SoundboardSoundPicker"
   });
   return (0, r.jsx)(u.Gt, {
-    value: w,
+    value: D,
     children: (0, r.jsx)(l.VqE, {
       className: a()(g.picker, {
         [g.fetching]: P,
         [g.inExpressionPicker]: T,
-        [g.refresh]: D
+        [g.refresh]: w
       }),
       children: P ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)(m.Z, {
         guildId: t,
@@ -70,7 +70,7 @@ function E(e) {
         renderHeader: C,
         defaultSoundsOnly: R,
         inExpressionPicker: T,
-        refreshEnabled: D,
+        refreshEnabled: w,
         analyticsSource: b
       })
     })

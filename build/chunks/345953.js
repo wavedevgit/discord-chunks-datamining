@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => V
+  Z: () => Z
 }), n(47120), n(230036);
 var r = n(392711),
   i = n.n(r),
@@ -124,7 +124,7 @@ function P() {
   }, g.fy.AUTOMATED)
 }
 
-function w(e, t, n, r) {
+function D(e, t, n, r) {
   var i;
   let o = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4],
     a = (0, m.z)(n);
@@ -133,7 +133,7 @@ function w(e, t, n, r) {
   return s[t] = null !== (i = s[t]) && void 0 !== i ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), o && A(s, t, n), C(s), !0
 }
 
-function D() {
+function w() {
   P()
 }
 let L = i().debounce(() => {
@@ -152,12 +152,12 @@ function M(e, t, n) {
   }), L.cancel(), U()
 }
 
-function k(e, t, n) {
+function j(e, t, n) {
   (0, h.RF)(e, t, {
     soundboardMuted: n
   }), L.cancel(), U()
 }
-let j = i().debounce(c.On, 500, {
+let k = i().debounce(c.On, 500, {
   maxWait: 500
 });
 
@@ -165,7 +165,7 @@ function U() {
   g.hW.updateAsync("audioContextSettings", e => {
     let t = !1;
     return (0, h.$E)((n, r, i) => {
-      let o = w(e, r, n, e => {
+      let o = D(e, r, n, e => {
         Object.assign(e, i)
       });
       t = t || o
@@ -181,7 +181,7 @@ function G(e) {
   } = e;
   if (n === f.default.getId()) return;
   let i = u.Z.getRemoteSessionId();
-  null != i && j(i, n, t, {
+  null != i && k(i, n, t, {
     muted: p.Z.isLocalMute(n, t),
     volume: r
   }), x(t, n, r)
@@ -195,21 +195,21 @@ function B(e) {
   n !== f.default.getId() && M(t, n, p.Z.isLocalMute(n, t))
 }
 
-function Z(e) {
+function F(e) {
   let {
     context: t,
     userId: n
   } = e;
-  n !== f.default.getId() && k(t, n, d.Z.isLocalSoundboardMuted(n))
+  n !== f.default.getId() && j(t, n, d.Z.isLocalSoundboardMuted(n))
 }
-class F extends l.Z {
+class V extends l.Z {
   constructor(...e) {
     super(...e), v(this, "actions", {
-      POST_CONNECTION_OPEN: D,
+      POST_CONNECTION_OPEN: w,
       AUDIO_SET_LOCAL_VOLUME: G,
       AUDIO_TOGGLE_LOCAL_MUTE: B,
-      AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: Z
+      AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F
     })
   }
 }
-let V = new F
+let Z = new V

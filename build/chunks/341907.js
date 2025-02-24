@@ -2,16 +2,16 @@
 "use strict";
 n.r(t), n.d(t, {
   formatVideoProgressRatio: () => B,
-  loadVideoQuestModal: () => Z,
+  loadVideoQuestModal: () => F,
   maybeShowSurveyForQuest: () => G,
   navigateToQuestHome: () => U,
   openAppWithQuest: () => H,
-  openDisclosureModal: () => j,
+  openDisclosureModal: () => k,
   openQuestInGameRewardModal: () => M,
-  openQuestOrbsRewardModal: () => k,
+  openQuestOrbsRewardModal: () => j,
   openQuestsNitroRewardModal: () => x,
   openQuestsRewardCodeModal: () => L,
-  openVideoQuestModal: () => F
+  openVideoQuestModal: () => V
 });
 var r = n(200651);
 n(192379);
@@ -77,8 +77,8 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = "in-app",
-  D = "Discord Widget";
+let D = "in-app",
+  w = "Discord Widget";
 
 function L(e) {
   let {
@@ -126,7 +126,7 @@ function M(e, t) {
   })
 }
 
-function k(e, t) {
+function j(e, t) {
   (0, s.ZDy)(async () => {
     let {
       default: i
@@ -138,7 +138,7 @@ function k(e, t) {
   })
 }
 
-function j(e, t) {
+function k(e, t) {
   (0, _._3)({
     questId: e.id,
     questContent: t.content,
@@ -162,8 +162,8 @@ function U() {
     questId: t
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
   (0, S.Z.getState().setUtmCurrentContext)({
-    utmSourceCurrent: D,
-    utmMediumCurrent: w,
+    utmSourceCurrent: w,
+    utmMediumCurrent: D,
     utmCampaignCurrent: t,
     utmContentCurrent: Object.keys(m.jn).find(t => m.jn[t] === e)
   });
@@ -194,18 +194,18 @@ function B(e, t) {
   return e <= 0 || t <= 0 ? 0 : e >= t ? 1 : Math.min(1, Math.round(e / t * 100) / 100)
 }
 
-function Z() {
+function F() {
   return Promise.all([n.e("29976"), n.e("32249"), n.e("56627")]).then(n.bind(n, 536687))
 }
 
-function F(e) {
+function V(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = (0, i.Z)(),
     o = performance.now();
   (0, s.ZDy)(async () => {
     let {
       default: i
-    } = await Z();
+    } = await F();
     return a => (0, r.jsx)(i, P(C({}, a), {
       startTime: o,
       questId: e.id,
@@ -243,7 +243,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function Z(e) {
   var t;
   let n = null === (t = platform.os) || void 0 === t ? void 0 : t.family,
     r = "quest";
@@ -261,7 +261,7 @@ function V(e) {
 }
 
 function H(e) {
-  let t = V(e),
+  let t = Z(e),
     n = (0, o.zS)(t);
   null != n && f.default.track(T.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, a.K)(n.fingerprint),

@@ -39,10 +39,10 @@ function b(e) {
     return {
       desktopSourceId: null == t ? void 0 : t.id
     }
-  }), T = (0, o.e7)([d.Z], () => d.Z.getState().soundshareEnabled), N = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, o.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), C = (0, o.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), R = (0, h.Z)(t, S), P = (0, _.Z)(t, S, g.Vq), w = null != I && A && (!I.startsWith("screen") || C), D = u.Z.useExperiment({
+  }), T = (0, o.e7)([d.Z], () => d.Z.getState().soundshareEnabled), N = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, o.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), C = (0, o.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), R = (0, h.Z)(t, S), P = (0, _.Z)(t, S, g.Vq), D = null != I && A && (!I.startsWith("screen") || C), w = u.Z.useExperiment({
     location: "ManageStreamsMenu"
   }, {
-    disable: !w,
+    disable: !D,
     autoTrackExposure: !0
   }).enabled, L = i.useCallback(() => {
     (null == I ? void 0 : I.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
@@ -82,13 +82,13 @@ function b(e) {
       label: v.NW.string(v.t.ytAD9f),
       children: R
     }) : null,
-    k = D ? (0, r.jsx)(a.S89, {
+    j = w ? (0, r.jsx)(a.S89, {
       id: "stream-settings-audio-enable",
       label: O ? v.NW.string(v.t.af2Tw8) : v.NW.string(v.t.ZJEHt7),
       checked: T,
       action: x
     }) : null,
-    j = N && !y ? (0, r.jsx)(a.sNh, {
+    k = N && !y ? (0, r.jsx)(a.sNh, {
       id: "change-windows",
       label: O ? v.NW.string(v.t.eAktHh) : v.NW.string(v.t.qntSam),
       icon: a.hGI,
@@ -101,8 +101,8 @@ function b(e) {
       action: () => (0, c.Z)(t)
     });
   return O ? (0, r.jsxs)(r.Fragment, {
-    children: [U, j, M, k]
+    children: [U, k, M, j]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [M, b ? P : null, k, j, U]
+    children: [M, b ? P : null, j, k, U]
   })
 }

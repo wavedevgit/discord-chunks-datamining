@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   $E: () => L,
-  T6: () => w,
+  T6: () => D,
   TW: () => I,
   U0: () => R,
   WO: () => x,
   rU: () => P,
-  wX: () => D
+  wX: () => w
 });
 var r = n(544891),
   i = n(780384),
@@ -163,7 +163,7 @@ async function P(e, t, n) {
     u = arguments.length > 4 ? arguments[4] : void 0,
     f = null != u && !!u.burst,
     _ = null != u && !!u.isRetry;
-  if (!_ && k(e, t, n, f)) {
+  if (!_ && j(e, t, n, f)) {
     a.Z.show({
       title: v.NW.string(v.t["uaUU/v"]),
       body: v.NW.string(v.t.psMorq),
@@ -227,7 +227,7 @@ async function P(e, t, n) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     channelId: t,
     messageId: n,
@@ -242,14 +242,14 @@ function w(e) {
     key: i
   })
 }
-async function D(e, t, n) {
+async function w(e, t, n) {
   let i = null != n && !!n.isRetry;
   await c.Z.unarchiveThreadIfNecessary(e), r.tn.del({
     url: E.ANM.REMOVE_REACTIONS(e, t),
     oldFormErrors: !0,
     rejectWithError: !1
   }).catch(n => {
-    T(n, () => D(e, t, {
+    T(n, () => w(e, t, {
       isRetry: !0
     }), {
       isRetry: i
@@ -340,7 +340,7 @@ async function M(e, t) {
   return n
 }
 
-function k(e, t, n, r) {
+function j(e, t, n, r) {
   let i = f.Z.getMessage(e, t);
   return null != i && i.userHasReactedWithEmoji(n, r)
 }

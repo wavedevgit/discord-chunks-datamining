@@ -39,17 +39,17 @@ function C(e, t, n) {
 let R = window.DiscordNative;
 S.Wb.dispatcher.getDispatchHandler = T.Z;
 let P = new c.Z("ConnectionStore"),
-  w = 100,
-  D = 0,
+  D = 100,
+  w = 0,
   L = null,
   x = !0,
   M = null;
 
-function k() {
+function j() {
   return S.Wb.isClosed() ? (P.verbose("Socket is reconnecting because of starting new session"), S.Wb.connect()) : (P.verbose("Socket is not reconnecting during a new session because it is not closed"), !1)
 }
 
-function j(e) {
+function k(e) {
   e.isSwitchingAccount && S.RR.handleAccountSwitch(), P.verbose("Closing socket because of logout"), S.Wb.close()
 }
 
@@ -59,7 +59,7 @@ function U() {
   }), !!S.Wb.isSessionEstablished() && (S.Wb.close(), S.Wb.connect())
 }
 async function G(e) {
-  D = Date.now(), L = e.sessionId, S.RR.handleConnectionOpen();
+  w = Date.now(), L = e.sessionId, S.RR.handleConnectionOpen();
   let t = {},
     n = E.Z.getVoiceChannelId();
   if (null != n) {
@@ -77,27 +77,27 @@ async function G(e) {
 }
 
 function B() {
-  P.verbose("connection closed dispatched"), D = Date.now()
-}
-
-function Z(e) {
-  return e.resetSocket && (S.Wb.close(), S.Wb.dispatcher.clear(), S.Wb.connect()), !1
+  P.verbose("connection closed dispatched"), w = Date.now()
 }
 
 function F(e) {
+  return e.resetSocket && (S.Wb.close(), S.Wb.dispatcher.clear(), S.Wb.connect()), !1
+}
+
+function V(e) {
   return S.GC.update({
     guildId: e.guildId,
     channelId: e.channelId
   }), (0, y.isIOS)() && M === N.$7l.BACKGROUND && (null == e.channelId ? S.Wb.close(!0) : S.Wb.isClosed() && (I.Y(!1), S.Wb.connect())), !1
 }
 
-function V() {
+function Z() {
   S.GC.update()
 }
 
 function H(e) {
   var t;
-  e.settings.type === A.yP.PRELOADED_USER_SETTINGS && (null === (t = e.settings.proto.clips) || void 0 === t ? void 0 : t.allowVoiceRecording) != null && V()
+  e.settings.type === A.yP.PRELOADED_USER_SETTINGS && (null === (t = e.settings.proto.clips) || void 0 === t ? void 0 : t.allowVoiceRecording) != null && Z()
 }
 
 function W(e) {
@@ -166,7 +166,7 @@ function J() {
 }
 
 function $(e) {
-  return S.Wb.isSessionEstablished() && ("userIds" in e ? o()(e.userIds).chunk(w).forEach(t => {
+  return S.Wb.isSessionEstablished() && ("userIds" in e ? o()(e.userIds).chunk(D).forEach(t => {
     S.Wb.requestGuildMembers(e.guildIds, {
       userIds: t,
       presences: !!e.presences
@@ -268,7 +268,7 @@ function ed(e) {
   let {
     streamKey: t
   } = e;
-  return eo(t), V(), !1
+  return eo(t), Z(), !1
 }
 
 function ef() {
@@ -311,21 +311,21 @@ class em extends(r = a.ZP.Store) {
     return S.Wb.isSessionEstablished() || __OVERLAY__
   }
   lastTimeConnectedChanged() {
-    return D
+    return w
   }
 }
 C(em, "displayName", "GatewayConnectionStore");
 let eg = new em(s.Z, {
-  START_SESSION: k,
+  START_SESSION: j,
   LOGIN_SUCCESS: U,
-  LOGOUT: j,
-  CLEAR_CACHES: Z,
+  LOGOUT: k,
+  CLEAR_CACHES: F,
   CONNECTION_OPEN: e => {
     G(e)
   },
   CONNECTION_CLOSED: B,
   RTC_CONNECTION_STATE: q,
-  VOICE_CHANNEL_SELECT: F,
+  VOICE_CHANNEL_SELECT: V,
   VOICE_STATE_UPDATES: W,
   GUILD_DELETE: Y,
   CHANNEL_DELETE: z,
@@ -336,7 +336,7 @@ let eg = new em(s.Z, {
   GUILD_SUBSCRIPTIONS_FLUSH: et,
   CALL_CONNECT: en,
   CALL_CONNECT_MULTIPLE: er,
-  STREAM_CREATE: V,
+  STREAM_CREATE: Z,
   STREAM_START: el,
   STREAM_WATCH: eu,
   STREAM_STOP: ed,
@@ -346,7 +346,7 @@ let eg = new em(s.Z, {
   REQUEST_SOUNDBOARD_SOUNDS: eh,
   REMOTE_COMMAND: ei,
   RESET_SOCKET: e_,
-  CLIPS_SETTINGS_UPDATE: V,
-  RUNNING_GAMES_CHANGE: V,
+  CLIPS_SETTINGS_UPDATE: Z,
+  RUNNING_GAMES_CHANGE: Z,
   USER_SETTINGS_PROTO_UPDATE: H
 })

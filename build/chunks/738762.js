@@ -37,8 +37,8 @@ function h(e) {
       priorityMembers: n,
       partiedMembers: h
     } = e,
-    g = i.useContext(c.AnalyticsContext),
-    f = n.map(e => {
+    f = i.useContext(c.AnalyticsContext),
+    g = n.map(e => {
       let {
         user: t
       } = e;
@@ -46,13 +46,13 @@ function h(e) {
     }),
     m = 1 === h.length && 1 === n.length,
     b = n.length - h.length > 0;
-  return (m || t) && !b && 0 !== f.length ? (0, r.jsx)(l.sNh, {
+  return (m || t) && !b && 0 !== g.length ? (0, r.jsx)(l.sNh, {
     id: "message",
     action: function() {
-      o.Z.openPrivateChannel(f).then(t => {
+      o.Z.openPrivateChannel(g).then(t => {
         var n, r;
         return a.ZP.trackWithMetadata(u.rMx.ACTIVITY_FEED_DM_VISITED, p({
-          source: (n = p({}, g.location), r = r = {
+          source: (n = p({}, f.location), r = r = {
             object: u.qAy.LIST_ITEM
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var n = Object.keys(e);
@@ -65,7 +65,7 @@ function h(e) {
             Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
           }), n),
           channel_id: t,
-          recipient_id: "string" == typeof f ? f : f[0],
+          recipient_id: "string" == typeof g ? g : g[0],
           af_recently_played: !1
         }, (0, s.y)(e)))
       })

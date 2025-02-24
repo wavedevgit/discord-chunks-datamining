@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ji: () => D,
+  Ji: () => w,
   O_: () => P,
   qA: () => c,
   uR: () => L
@@ -629,12 +629,12 @@ var P = r.forwardRef(function(e, t) {
           clickHandler: c
         })
       }, [A, c]),
-      w = r.useCallback(function(e) {
+      D = r.useCallback(function(e) {
         return A(e, {
           mouseHandler: u
         })
       }, [A, u]),
-      D = r.useCallback(function(e) {
+      w = r.useCallback(function(e) {
         return A(e, {
           mouseHandler: d
         })
@@ -643,11 +643,11 @@ var P = r.forwardRef(function(e, t) {
       var e = function(e, t, n) {
         null != n && window.addEventListener(e, t)
       };
-      return e("click", C, l), e("mousedown", P, c), e("mousemove", w, u), e("mouseup", D, d),
+      return e("click", C, l), e("mousedown", P, c), e("mousemove", D, u), e("mouseup", w, d),
         function() {
-          window.removeEventListener("click", C), window.removeEventListener("mousedown", P), window.removeEventListener("mousemove", w), window.removeEventListener("mouseup", w)
+          window.removeEventListener("click", C), window.removeEventListener("mousedown", P), window.removeEventListener("mousemove", D), window.removeEventListener("mouseup", D)
         }
-    }, [C, P, w, D, l, c, u, d]), r.useEffect(function() {
+    }, [C, P, D, w, l, c, u, d]), r.useEffect(function() {
       var e = m.current,
         t = new ResizeObserver(function() {
           ! function(e) {
@@ -668,14 +668,14 @@ var P = r.forwardRef(function(e, t) {
       ref: m
     }))
   }),
-  w = {
+  D = {
     display: "none",
     position: "absolute",
     width: 0,
     height: 0,
     left: "-100%"
   },
-  D = r.forwardRef(function(e, t) {
+  w = r.forwardRef(function(e, t) {
     var n = e.className,
       o = e.visible,
       a = void 0 !== o && o,
@@ -791,7 +791,7 @@ var P = r.forwardRef(function(e, t) {
     }, [l.length, u, c, s.length]), r.createElement("canvas", {
       ref: d,
       className: n,
-      style: a ? void 0 : w
+      style: a ? void 0 : D
     })
   });
 

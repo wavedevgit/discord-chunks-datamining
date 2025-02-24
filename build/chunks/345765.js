@@ -39,11 +39,11 @@ let S = 4,
   C = new Set,
   R = new Map,
   P = null,
-  w = (0, r.debounce)(g.yK, 3e3, {
+  D = (0, r.debounce)(g.yK, 3e3, {
     trailing: !0
   });
 
-function D() {
+function w() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
   return Math.random() * (e + 1) * I
 }
@@ -74,23 +74,23 @@ function M(e) {
   void 0 !== t && (clearTimeout(t), A.delete(e))
 }
 
-function k() {
+function j() {
   var e;
   let t = null !== (e = R.get(T)) && void 0 !== e ? e : 0;
   if (t > 0 && t <= S || (M(T), !x(T))) return;
   let n = v.Z.getFeed(T);
   if ((null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null && null == P) return;
   let r = (null == n ? void 0 : n.expired_at) == null ? 0 : new Date(n.expired_at).getTime() - Date.now(),
-    o = Math.max(0, null == P ? 0 : new Date(P).getTime() - Date.now(), r) + (t > 0 ? D() : 0);
+    o = Math.max(0, null == P ? 0 : new Date(P).getTime() - Date.now(), r) + (t > 0 ? w() : 0);
   L(T, {
     loading: !1,
     nextFetchDate: new Date(Date.now() + o)
-  }), A.set(T, setTimeout(() => j({
+  }), A.set(T, setTimeout(() => k({
     feedId: T,
     feature: i.L.INBOX
   }), o))
 }
-async function j(e) {
+async function k(e) {
   let {
     feedId: t,
     feature: n,
@@ -112,13 +112,13 @@ async function j(e) {
       feed: r
     }), R.set(t, 0), C.delete(t), L(t, {
       loading: !1
-    }), t === T && (P = null, k())
+    }), t === T && (P = null, j())
   } catch (a) {
     var i;
     let e = null !== (i = R.get(t)) && void 0 !== i ? i : 0;
     if (e < S) {
-      let i = h.Z.Millis.MINUTE * Math.pow(2, e) + D(e);
-      A.set(t, setTimeout(() => j({
+      let i = h.Z.Millis.MINUTE * Math.pow(2, e) + w(e);
+      A.set(t, setTimeout(() => k({
         feedId: t,
         feature: n,
         force: r
@@ -132,7 +132,7 @@ async function j(e) {
 }
 
 function U() {
-  k()
+  j()
 }
 
 function G() {
@@ -143,7 +143,7 @@ function G() {
     location: "ContentInventoryManager",
     autoTrackExposure: !1
   });
-  e && j({
+  e && k({
     feedId: b.YN.GAME_PROFILE_FEED,
     feature: i.L.RECENT_ACTIVITY
   })
@@ -153,32 +153,32 @@ function B() {
   M(T)
 }
 
-function Z(e) {
+function F(e) {
   let {
     feedId: t,
     feature: n
   } = e;
-  M(t), j({
+  M(t), k({
     feedId: t,
     feature: n,
     force: !0
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     refreshAfterMs: t
   } = e, n = v.Z.getFeed(T);
-  (null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null && (P = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), k())
+  (null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null && (P = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), j())
 }
 
-function V(e) {
+function Z(e) {
   var t;
   let {
     connectionId: n,
     track: r
   } = e;
-  null != n && (null === (t = f.Z.getAccount(n, y.ABu.SPOTIFY)) || void 0 === t ? void 0 : t.showActivity) && w(n, r)
+  null != n && (null === (t = f.Z.getAccount(n, y.ABu.SPOTIFY)) || void 0 === t ? void 0 : t.showActivity) && D(n, r)
 }
 
 function H() {
@@ -189,7 +189,7 @@ function H() {
   }, {
     autoTrackExposure: !0
   });
-  e && j({
+  e && k({
     feedId: b.YN.GAME_PROFILE_FEED,
     feature: i.L.GAME_PROFILE
   })
@@ -203,7 +203,7 @@ function W() {
   }, {
     autoTrackExposure: !0
   }), t = (0, u.Rb)("ContentInventoryManager").allowActivityWidget;
-  (e || t) && j({
+  (e || t) && k({
     feedId: b.YN.GAME_PROFILE_FEED,
     feature: i.L.OVERLAY_INVITES
   })
@@ -216,9 +216,9 @@ class Y extends a.Z {
       WINDOW_FOCUS: U,
       IDLE: U,
       CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: U,
-      CONTENT_INVENTORY_MANUAL_REFRESH: Z,
-      CONTENT_INVENTORY_INBOX_STALE: F,
-      SPOTIFY_NEW_TRACK: V,
+      CONTENT_INVENTORY_MANUAL_REFRESH: F,
+      CONTENT_INVENTORY_INBOX_STALE: V,
+      SPOTIFY_NEW_TRACK: Z,
       GAME_PROFILE_OPEN: H,
       OVERLAY_READY: W
     })

@@ -1,16 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(67867),
-  i = n(611345),
-  o = n(302231);
-r({
+var e = n(766362),
+  o = n(611345),
+  i = n(302231);
+e({
   target: "Object",
   stat: !0,
   forced: n(821819)(function() {
-    o(1)
+    i(1)
   })
 }, {
-  keys: function(e) {
-    return o(i(e))
+  keys: function(t) {
+    return i(o(t))
   }
 })

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 });
 var r = n(200651);
 n(192379);
@@ -147,7 +147,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     ctaSubscriptionSkuId: t,
     currentPremiumType: n,
@@ -166,7 +166,7 @@ function w(e) {
     disabledButtonTooltipText: a
   }
 }
-let D = function(e) {
+let w = function(e) {
   var {
     isGift: t,
     subscriptionTier: n,
@@ -175,18 +175,18 @@ let D = function(e) {
     className: I,
     isTrialCTA: N,
     buttonText: R,
-    buttonTextClassName: D,
+    buttonTextClassName: w,
     iconClassName: L,
     postSuccessGuild: x,
     onSubscribeModalClose: M,
-    premiumModalAnalyticsLocation: k,
-    showIcon: j = !0,
+    premiumModalAnalyticsLocation: j,
+    showIcon: k = !0,
     disableShine: U,
     applicationId: G,
     giftMessage: B,
-    overrideDisabledButtonText: Z,
-    shinyButtonClassName: F,
-    showGradient: V = !1
+    overrideDisabledButtonText: F,
+    shinyButtonClassName: V,
+    showGradient: Z = !1
   } = e, H = C(e, ["isGift", "subscriptionTier", "onClick", "size", "className", "isTrialCTA", "buttonText", "buttonTextClassName", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "giftMessage", "overrideDisabledButtonText", "shinyButtonClassName", "showGradient"]);
   let W = (0, a.e7)([h.default], () => h.default.getCurrentUser()),
     Y = (0, a.e7)([g.Z], () => g.Z.isFocused()),
@@ -218,7 +218,7 @@ let D = function(e) {
         postSuccessGuild: x,
         onSubscribeModalClose: M,
         analyticsLocations: q,
-        premiumModalAnalyticsLocation: k,
+        premiumModalAnalyticsLocation: j,
         applicationId: G,
         giftMessage: B
       })
@@ -230,12 +230,12 @@ let D = function(e) {
     color: s.zxk.Colors.BRAND_INVERTED,
     onClick: J
   }, H), {
-    children: [j && (0, r.jsx)(s.SrA, {
+    children: [k && (0, r.jsx)(s.SrA, {
       size: "md",
       color: "currentColor",
       className: S.premiumIcon
     }), (0, r.jsx)("span", {
-      className: o()(S.buttonText, D),
+      className: o()(S.buttonText, w),
       children: null != R ? R : O.NW.string(O.t["Gd/XHB"])
     })]
   }));
@@ -251,7 +251,7 @@ let D = function(e) {
       color: "currentColor",
       className: S.giftIcon
     }), (0, r.jsx)("span", {
-      className: o()(S.buttonText, D),
+      className: o()(S.buttonText, w),
       children: null != R ? R : O.NW.string(O.t.PEjaCw)
     })]
   }));
@@ -262,7 +262,7 @@ let D = function(e) {
   en && ($ = O.NW.string(O.t.IJI7ys));
   let er = null != K && E.ZP.isSwitchingPlansDisabled(K, z),
     ei = null != K && K.status !== y.O0b.ACCOUNT_HOLD && !(0, _.Q0)(K.planId) && !en || er,
-    eo = ei ? null != Z ? Z : w({
+    eo = ei ? null != F ? F : D({
       ctaSubscriptionSkuId: n,
       currentPremiumType: et,
       isSwitchingDisabled: er,
@@ -277,19 +277,19 @@ let D = function(e) {
       innerClassName: S.premiumSubscribeButton,
       color: n === b.Si.TIER_1 ? s.zxk.Colors.PRIMARY : s.zxk.Colors.GREEN,
       size: f,
-      className: F,
+      className: V,
       wrapperClassName: o()({
-        [S.tier2Gradient]: V && n === b.Si.TIER_2,
-        [S.tier1Gradient]: V && n === b.Si.TIER_1
+        [S.tier2Gradient]: Z && n === b.Si.TIER_2,
+        [S.tier1Gradient]: Z && n === b.Si.TIER_1
       }, I),
       pauseAnimation: !Y || U
     }, H, e), {
-      children: [j && (0, r.jsx)(s.SrA, {
+      children: [k && (0, r.jsx)(s.SrA, {
         size: "md",
         color: "currentColor",
         className: o()(S.premiumIcon, L)
       }), (0, r.jsx)("span", {
-        className: o()(S.buttonText, D),
+        className: o()(S.buttonText, w),
         children: null !== (i = null !== (t = null == eo ? void 0 : eo.disabledButtonText) && void 0 !== t ? t : R) && void 0 !== i ? i : $
       })]
     }))

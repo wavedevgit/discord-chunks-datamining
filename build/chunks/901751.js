@@ -70,7 +70,7 @@ function R(e) {
   if (null == u || !C(u)) return "STOP";
   let d = null === (t = N()) || void 0 === t ? void 0 : t.config,
     f = null != l.Z.getRTCStream(r) && null != d && g.r.build(d).application.id === i && c,
-    p = null != w(u),
+    p = null != D(u),
     m = a.ZP.getRunningGames().map(e => e.id),
     E = (0, h.$H)(u) && m.includes(i);
   return f || p || E ? "BEAT" : "BEAT_TERMINAL"
@@ -83,11 +83,11 @@ function P(e) {
     activity: null
   } : {
     quest: t,
-    activity: w(t)
+    activity: D(t)
   }
 }
 
-function w(e) {
+function D(e) {
   let t = g.r.build(e.config);
   if (!(0, h.pO)(e)) return null;
   let n = o.ZP.getSelfEmbeddedActivities();
@@ -101,7 +101,7 @@ function w(e) {
   return null
 }
 
-function D(e, t) {
+function w(e, t) {
   let n = (0, h.lQ)(e, t);
   if (null != n && (0, h.pO)(n)) return n;
   for (let [t, n] of e)
@@ -109,7 +109,7 @@ function D(e, t) {
 }
 
 function L(e) {
-  let t = D(_.Z.quests, e);
+  let t = w(_.Z.quests, e);
   if (null == t) return {
     quest: null,
     activity: null

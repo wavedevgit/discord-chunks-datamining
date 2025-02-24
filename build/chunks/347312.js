@@ -57,13 +57,13 @@ function P(e) {
   return Math.floor(((t = e <= g ? m : e >= v ? E : (Math.min(e, v) - g) / (v - g) * (E - m) + m) + y) / O) * O - y
 }
 
-function w(e) {
+function D(e) {
   if (null == e) return;
   let t = 2 * b + y;
   return Math.floor((e + y) / t)
 }
 
-function D(e, t, n, r, i) {
+function w(e, t, n, r, i) {
   e.moveTo(t, n + i), e.lineTo(t, n + r - i), e.arc(t + i, n + r - i, i, Math.PI, 0, !0), e.lineTo(t + 2 * i, n + i), e.arc(t + i, n + i, i, 0, Math.PI, !0), e.closePath()
 }
 
@@ -86,19 +86,19 @@ function x(e) {
     segmentIndex: o,
     constrainMin: a
   } = e, s = a ? (S - I) * i + I : S * i;
-  0 !== s && D(t, o * (2 * b + y) * n, (r / 2 - s / 2) * n, s * n, b * n)
+  0 !== s && w(t, o * (2 * b + y) * n, (r / 2 - s / 2) * n, s * n, b * n)
 }
 
 function M(e, t) {
   let n = i.useMemo(() => C(e), [e]),
-    r = i.useMemo(() => w(t), [t]);
+    r = i.useMemo(() => D(t), [t]);
   return i.useMemo(() => {
     var e;
     return null !== (e = R(null != n ? n : [], r)) && void 0 !== e ? e : N
   }, [n, r])
 }
 
-function k(e, t, n) {
+function j(e, t, n) {
   let [r, o] = i.useState(e), [a, s] = i.useState(e), l = i.useRef(a);
   return i.useLayoutEffect(() => {
     l.current = a
@@ -107,16 +107,16 @@ function k(e, t, n) {
   }, [e, t, n]), [r, a]
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = (0, l.dQu)(s.Z.colors.INTERACTIVE_MUTED).hex(),
     r = (0, l.dQu)(s.Z.colors.INTERACTIVE_NORMAL).hex(),
     i = (0, l.dQu)(s.Z.colors.INTERACTIVE_ACTIVE).hex(),
     o = (0, l.dQu)(s.Z.unsafe_rawColors.BRAND_430).hex(),
     a = (0, l.dQu)(s.Z.unsafe_rawColors.WHITE_500).hex(),
     c = t ? o : n,
-    [u, d] = k(c, t, e),
-    [f, p] = k(t ? a : e ? i : r, t, e),
-    [_, h] = k(e ? c : r, t, e);
+    [u, d] = j(c, t, e),
+    [f, p] = j(t ? a : e ? i : r, t, e),
+    [_, h] = j(e ? c : r, t, e);
   return {
     lastBackgroundFillColor: u,
     backgroundFillColor: d,
@@ -149,24 +149,24 @@ function G(e) {
     width: E
   } = (0, c.Z)(), v = i.useMemo(() => P(s), [s]), b = i.useRef(), y = M(n, E), O = i.useRef(l), I = i.useRef(d), N = i.useRef(null), C = window.devicePixelRatio, {
     lastBackgroundFillColor: R,
-    backgroundFillColor: w,
-    lastActiveFillColor: D,
-    activeFillColor: k,
+    backgroundFillColor: D,
+    lastActiveFillColor: w,
+    activeFillColor: j,
     lastInactiveFillColor: G,
     inactiveFillColor: B
-  } = j(l, d), Z = {
+  } = k(l, d), F = {
     currentTime: o,
     duration: s,
     played: l
-  }, F = i.useRef(Z);
+  }, V = i.useRef(F);
   i.useEffect(() => {
-    F.current = Z
+    V.current = F
   }), i.useEffect(() => {
     let {
       currentTime: e,
       duration: t,
       played: n
-    } = F.current, r = L({
+    } = V.current, r = L({
       showAll: !n,
       currentTime: e,
       duration: t,
@@ -202,7 +202,7 @@ function G(e) {
       (O.current !== l || I.current !== d) && (O.current = l, I.current = d, N.current = n), null != N.current && n > N.current + A && (N.current = null);
       let s = r.height / C;
       i.clearRect(0, 0, r.width, r.height), i.beginPath();
-      let [c, u] = U(R, w, n, N.current);
+      let [c, u] = U(R, D, n, N.current);
       a = a || u, i.fillStyle = c;
       for (let e = 0; e < y.length; e++) x({
         context: i,
@@ -215,7 +215,7 @@ function G(e) {
       i.fill();
       let [f, p] = U(G, B, n, N.current);
       a = a || p;
-      let [_, h] = U(D, k, n, N.current);
+      let [_, h] = U(w, j, n, N.current);
       a = a || h;
       for (let e = 0; e < o.length; e++) {
         let t = o[e],
@@ -234,15 +234,15 @@ function G(e) {
     return e = requestAnimationFrame(t), () => {
       null != e && cancelAnimationFrame(e)
     }
-  }, [g, C, y, E, o, s, l, d, R, w, D, k, G, B]);
-  let [, V] = (0, u.Z)({
+  }, [g, C, y, E, o, s, l, d, R, D, w, j, G, B]);
+  let [, Z] = (0, u.Z)({
     ref: g,
     onDrag: f,
     onDragStart: _,
     onDragEnd: m
   });
   return (0, r.jsx)("canvas", {
-    onMouseDown: V,
+    onMouseDown: Z,
     className: a()(h.canvas, t),
     style: {
       width: v

@@ -1,7 +1,7 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(821819);
-e.exports = !r(function() {
-  var e = (function() {}).bind();
-  return "function" != typeof e || e.hasOwnProperty("prototype")
+var e = n(821819);
+t.exports = !e(function() {
+  var t = (function() {}).bind();
+  return "function" != typeof t || t.hasOwnProperty("prototype")
 })

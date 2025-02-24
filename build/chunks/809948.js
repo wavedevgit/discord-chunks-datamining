@@ -1,7 +1,7 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => i
+r.d(t, {
+  Z: () => o
 });
-var r = n(874528);
-let i = (0, n(245369).Z)(r.Z)
+var n = r(874528);
+let o = (0, r(245369).Z)(n.Z)

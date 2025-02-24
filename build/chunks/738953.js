@@ -31,13 +31,13 @@ var r = n(200651),
   C = n(4517),
   R = n(171368),
   P = n(978395),
-  w = n(161572),
-  D = n(228168),
+  D = n(161572),
+  w = n(228168),
   L = n(981631),
   x = n(388032),
   M = n(913340);
 
-function k(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -46,14 +46,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -80,12 +80,12 @@ function B(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: k,
+    guildId: j,
     channelId: U,
     messageId: B,
-    roleId: Z,
-    closePopout: F,
-    setPopoutRef: V,
+    roleId: F,
+    closePopout: V,
+    setPopoutRef: Z,
     disableUserProfileLink: H = __OVERLAY__,
     newAnalyticsLocations: W = [],
     appContext: Y = L.IlC.APP
@@ -98,16 +98,16 @@ function B(e) {
   }), q = (0, h.ZB)({
     layout: z ? "BITE_SIZE_POPOUT" : "BITE_SIZE_POPOUT_RESTRICTED_BLOCKER_PROFILE",
     userId: t.id,
-    guildId: k,
+    guildId: j,
     channelId: U,
     messageId: B,
-    roleId: Z
-  }), Q = (0, a.e7)([_.Z], () => null != k ? _.Z.getGuild(k) : null), X = (0, a.e7)([p.ZP], () => null != k ? p.ZP.getMember(k, t.id) : null), J = i.useMemo(() => null != k ? {
-    [k]: [t.id]
-  } : {}, [k, t.id]);
+    roleId: F
+  }), Q = (0, a.e7)([_.Z], () => null != j ? _.Z.getGuild(j) : null), X = (0, a.e7)([p.ZP], () => null != j ? p.ZP.getMember(j, t.id) : null), J = i.useMemo(() => null != j ? {
+    [j]: [t.id]
+  } : {}, [j, t.id]);
   (0, c.$)(J);
   let $ = i.useRef(null),
-    ee = (0, g.ZP)(t.id, k),
+    ee = (0, g.ZP)(t.id, j),
     et = (0, l.Z)($),
     en = (0, v.$m)(),
     er = (0, s.q_F)({
@@ -117,10 +117,10 @@ function B(e) {
       }
     });
   i.useEffect(() => {
-    null == V || V(null == $ ? void 0 : $.current)
-  }, [$, V]);
+    null == Z || Z(null == $ ? void 0 : $.current)
+  }, [$, Z]);
   let ei = e => {
-      null == F || F(), (0, R.openUserProfileModal)(G(j({
+      null == V || V(), (0, R.openUserProfileModal)(G(k({
         sourceAnalyticsLocations: K
       }, q, e), {
         appContext: Y
@@ -130,7 +130,7 @@ function B(e) {
       id: "view-profile",
       label: x.NW.string(x.t["+Xp3ho"]),
       action: () => {
-        ei(), (0, m.pQ)(j({
+        ei(), (0, m.pQ)(k({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: K
         }, q))
@@ -149,26 +149,26 @@ function B(e) {
           children: [(0, r.jsxs)(S.Z, {
             user: t,
             displayProfile: ee,
-            profileType: D.y0.BITE_SIZE,
+            profileType: w.y0.BITE_SIZE,
             children: [null != en.interactionType && (0, r.jsx)(o.animated.div, {
               style: er,
               className: M.backdrop
             }), (0, r.jsxs)(I.Z, {
-              profileType: D.y0.BITE_SIZE,
+              profileType: w.y0.BITE_SIZE,
               children: [(0, r.jsx)(N.Z, {
                 shouldShowTooltip: null === en.interactionType,
                 user: t,
-                guildId: k,
+                guildId: j,
                 channelId: U,
-                onClose: F,
+                onClose: V,
                 appContext: Y
               }), (0, r.jsx)(T.Z, {
                 shouldShowTooltip: null === en.interactionType,
-                profileType: D.y0.BITE_SIZE,
+                profileType: w.y0.BITE_SIZE,
                 user: t
               }), t.id !== n.id && (0, r.jsx)(A.Z, {
                 user: t,
-                guildId: k,
+                guildId: j,
                 viewProfileItem: eo(),
                 appContext: Y
               })]
@@ -177,27 +177,27 @@ function B(e) {
               children: [(0, r.jsx)(y.Z, {
                 user: t,
                 displayProfile: ee,
-                guildId: k,
-                profileType: D.y0.BITE_SIZE
+                guildId: j,
+                profileType: w.y0.BITE_SIZE
               }), (0, r.jsx)(O.Z, {
                 userId: t.id,
                 className: M.toast,
-                onClose: F
+                onClose: V
               }), (0, r.jsx)(b.Z, {
                 location: "UserProfilePopout",
                 user: t,
                 displayProfile: ee,
-                guildId: k,
+                guildId: j,
                 channelId: U,
-                profileType: D.y0.BITE_SIZE,
+                profileType: w.y0.BITE_SIZE,
                 onOpenProfile: H ? void 0 : ei
               }), (0, r.jsx)(C.Z, {
                 location: "UserProfilePopout",
                 user: t,
-                guildId: k,
+                guildId: j,
                 channelId: U,
-                profileType: D.y0.BITE_SIZE,
-                onCloseProfile: F
+                profileType: w.y0.BITE_SIZE,
+                onCloseProfile: V
               })]
             }), (0, r.jsx)(P.Z, {
               user: t,
@@ -207,12 +207,12 @@ function B(e) {
               isHovering: null == en.interactionType && et,
               onOpenProfile: H ? void 0 : ei,
               channelId: U,
-              onClose: F
-            }), (0, r.jsx)(w.Z, {
+              onClose: V
+            }), (0, r.jsx)(D.Z, {
               user: t,
-              guildId: k,
+              guildId: j,
               channelId: U,
-              onClose: F,
+              onClose: V,
               appContext: Y
             })]
           }), (null == ee ? void 0 : ee.profileEffectId) != null && (0, r.jsx)(f.Z, {

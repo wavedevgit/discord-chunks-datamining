@@ -82,13 +82,13 @@ function R(e, t) {
   return i
 }
 let P = 20,
-  w = 125,
-  D = (0, g.hQ)(),
+  D = 125,
+  w = (0, g.hQ)(),
   L = d.Z.convert.fromCodePoint("1f44f"),
   x = (0, b.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
   M = (0, b.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
 
-function k(e) {
+function j(e) {
   switch (d.Z.convert.toCodePoint(e)) {
     case "1f3fb":
       return O.NW.string(O.t.BVK5b2);
@@ -104,7 +104,7 @@ function k(e) {
       return O.NW.string(O.t.bGN1o6)
   }
 }
-let j = e => {
+let k = e => {
     let {
       fade: t,
       surrogate: n,
@@ -124,7 +124,7 @@ let j = e => {
       onClick: () => i(n),
       className: S.diversityEmojiItem,
       children: (0, r.jsx)(c.animated.div, {
-        "aria-label": k(n),
+        "aria-label": j(n),
         className: S.diversityEmojiItemImage,
         style: T({
           backgroundImage: 'url("'.concat(l, '")')
@@ -144,7 +144,7 @@ let j = e => {
         height: M
       },
       config: {
-        duration: w
+        duration: D
       }
     });
     i.useEffect(() => {
@@ -166,7 +166,7 @@ let j = e => {
             }),
             style: f,
             role: "listbox",
-            children: _.map((e, t) => (0, r.jsx)(j, {
+            children: _.map((e, t) => (0, r.jsx)(k, {
               index: t,
               fade: 0 !== t,
               delay: t * P,
@@ -202,7 +202,7 @@ let j = e => {
         "aria-label": O.NW.string(O.t.pAVHxc),
         "aria-haspopup": !0,
         "aria-expanded": l,
-        "aria-controls": D,
+        "aria-controls": w,
         tabIndex: l ? -1 : 0,
         children: (0, r.jsx)("div", {
           className: S.diversityEmojiItemImage,
@@ -213,7 +213,7 @@ let j = e => {
       }), l ? (0, r.jsx)("div", {
         onKeyDown: m,
         children: (0, r.jsx)(U, {
-          id: D,
+          id: w,
           hasTabWrapper: a,
           selectedSurrogate: n,
           onClick: g

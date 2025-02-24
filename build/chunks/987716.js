@@ -72,20 +72,20 @@ let I = e => {
     soundEffect: N,
     setEmojiConfetti: A,
     setSoundEffect: C
-  } = (0, l.wD)(), [R, P] = i.useState(!1), w = i.useRef(null), D = (0, s.arW)({
+  } = (0, l.wD)(), [R, P] = i.useState(!1), D = i.useRef(null), w = (0, s.arW)({
     orientation: "horizontal"
-  }), L = (0, u.MY)(b, t), x = L === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, M = L !== u.xr.DEFAULT, k = (0, f.rK)(), {
-    enabled: j
+  }), L = (0, u.MY)(b, t), x = L === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, M = L !== u.xr.DEFAULT, j = (0, f.rK)(), {
+    enabled: k
   } = f.ZP.useExperiment({
     location: "premiumGiftSelect_GiftAnimationOptions"
   }, {
-    autoTrackExposure: k
+    autoTrackExposure: j
   }), {
     enabled: U
   } = p.O.useExperiment({
     location: "gift card"
   }), G = null;
-  M && (G = k && j ? g.kJ : g.QI), U && (G = g.RQ);
+  M && (G = j && k ? g.kJ : g.QI), U && (G = g.RQ);
   let B = e => {
     null != C && C(null == e ? void 0 : e)
   };
@@ -120,16 +120,16 @@ let I = e => {
       tabIndex: null != O || R ? void 0 : 0,
       onFocus: e => {
         var t;
-        e.target === e.currentTarget && (null === (t = w.current) || void 0 === t || t.focus())
+        e.target === e.currentTarget && (null === (t = D.current) || void 0 === t || t.focus())
       },
       className: a()(v.giftBoxOptionContainer, o),
       "aria-label": E.NW.string(E.t.v54NrK)
-    }, D), {
+    }, w), {
       children: null != G && G.map((e, t) => (0, r.jsx)(m.m, {
         isSelected: O === e,
         giftStyle: e,
         setSelectedGiftStyle: I,
-        ref: 0 === t ? w : null,
+        ref: 0 === t ? D : null,
         onFocus: () => P(!0),
         onBlur: () => P(!1)
       }, e))

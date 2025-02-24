@@ -38,10 +38,10 @@ let d = 5,
   C = !1,
   R = !1,
   P = !1,
-  w = c.g2L.NOT_ELIGIBLE;
+  D = c.g2L.NOT_ELIGIBLE;
 
-function D() {
-  f = null, p = new Map, _ = new Set, m = new Set, g = !1, E = new Set, v = new Set, b = new Map, y = 0, O = null, S = [], I = !1, T = 0, N = !1, A = null, h = new Map, C = !1, R = !1, P = !1, w = c.g2L.NOT_ELIGIBLE
+function w() {
+  f = null, p = new Map, _ = new Set, m = new Set, g = !1, E = new Set, v = new Set, b = new Map, y = 0, O = null, S = [], I = !1, T = 0, N = !1, A = null, h = new Map, C = !1, R = !1, P = !1, D = c.g2L.NOT_ELIGIBLE
 }
 let L = () => !0;
 
@@ -61,15 +61,15 @@ function M(e) {
     isUserQualifiedForIncentive: s,
     userReferralIncentiveState: l
   } = e;
-  N = null == r && o, g = !1, f = t, _ = new Set(n), A = r, h = i, C = a && (o || h.size > 0), R = s, w = l
+  N = null == r && o, g = !1, f = t, _ = new Set(n), A = r, h = i, C = a && (o || h.size > 0), R = s, D = l
 }
 
-function k(e) {
+function j(e) {
   let {} = e;
   N = !1, A = null, g = !1, y += 1, O = Date.now() + 1e3 * Math.pow(2, y)
 }
 
-function j(e) {
+function k(e) {
   let {
     recipientId: t
   } = e;
@@ -98,18 +98,18 @@ function B(e) {
   (0, l.C$)(), b.set(t.id, t), _.add(t.user_id)
 }
 
-function Z(e) {
+function F(e) {
   let {
     userTrialOffers: t
   } = e;
   for (let e of ((0, l.C$)(), t)) b.set(e.id, e), _.add(e.user_id)
 }
 
-function F(e) {
+function V(e) {
   E.add(e)
 }
 
-function V(e) {
+function Z(e) {
   let {
     userTrialOffer: t
   } = e;
@@ -142,13 +142,13 @@ function K(e) {
     userTrialOfferId: t,
     recipientId: n
   } = e;
-  g || (0, l.C$)(), m.has(n) || (0, l.Ve)(n), E.has(t) || (F(t), a.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
+  g || (0, l.C$)(), m.has(n) || (0, l.Ve)(n), E.has(t) || (V(t), a.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
 }
 
 function z(e) {
   let t = e.type === i.u.PREMIUM_REFERRAL ? e.content : null;
   if (null == t) return !1;
-  v.has(t) || E.has(t) || (F(t), a.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
+  v.has(t) || E.has(t) || (V(t), a.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
 }
 
 function q() {
@@ -240,7 +240,7 @@ class et extends(r = o.ZP.Store) {
     return P
   }
   getSenderIncentiveState() {
-    return w
+    return D
   }
 }
 u(et, "displayName", "ReferralTrialStore");
@@ -248,16 +248,16 @@ let en = new et(a.Z, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: K,
   BILLING_REFERRALS_REMAINING_FETCH_START: x,
   BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: M,
-  BILLING_REFERRALS_REMAINING_FETCH_FAIL: k,
-  BILLING_CREATE_REFERRAL_PREVIEW_START: j,
+  BILLING_REFERRALS_REMAINING_FETCH_FAIL: j,
+  BILLING_CREATE_REFERRAL_PREVIEW_START: k,
   BILLING_GET_REFERRAL_INCENTIVE_STATUS_SUCCESS: J,
   BILLING_GET_REFERRAL_INCENTIVE_STATUS_FAIL: $,
   BILLING_GET_REFERRAL_INCENTIVE_STATUS_START: ee,
   BILLING_CREATE_REFERRAL_PREVIEW_SUCCESS: U,
   BILLING_CREATE_REFERRAL_PREVIEW_FAIL: G,
   BILLING_CREATE_REFERRAL_SUCCESS: B,
-  CREATE_REFERRALS_SUCCESS: Z,
-  BILLING_REFERRAL_RESOLVE_SUCCESS: V,
+  CREATE_REFERRALS_SUCCESS: F,
+  BILLING_REFERRAL_RESOLVE_SUCCESS: Z,
   BILLING_REFERRAL_RESOLVE_FAIL: H,
   REFERRALS_FETCH_ELIGIBLE_USER_START: q,
   REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: Q,
@@ -265,5 +265,5 @@ let en = new et(a.Z, {
   LOAD_MESSAGES_SUCCESS: Y,
   MESSAGE_CREATE: W,
   LOAD_MESSAGES_AROUND_SUCCESS: Y,
-  LOGOUT: D
+  LOGOUT: w
 })

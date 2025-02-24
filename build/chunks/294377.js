@@ -1,11 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-var r = n(974802),
-  i = n(668530),
-  o = n(735471),
-  a = function(e) {
-    return o(e) ? e : void 0
+var e = n(974802),
+  o = n(668530),
+  i = n(735471),
+  u = function(t) {
+    return i(t) ? t : void 0
   };
-e.exports = function(e, t) {
-  return arguments.length < 2 ? a(r[e]) || a(i[e]) : r[e] && r[e][t] || i[e] && i[e][t]
+t.exports = function(t, r) {
+  return arguments.length < 2 ? u(e[t]) || u(o[t]) : e[t] && e[t][r] || o[t] && o[t][r]
 }

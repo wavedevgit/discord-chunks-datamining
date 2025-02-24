@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $B: () => j,
+  $B: () => k,
   AW: () => R,
-  EN: () => D,
+  EN: () => w,
   F0: () => m,
   LX: () => C,
   TH: () => M,
-  UO: () => k,
+  UO: () => j,
   k6: () => x,
   l_: () => S,
-  rs: () => w,
+  rs: () => D,
   s6: () => h
 });
 var r = n(782726),
@@ -214,7 +214,7 @@ function P(e) {
   return "/" === e.charAt(0) ? e : "/" + e
 }
 i.Component;
-var w = function(e) {
+var D = function(e) {
   function t() {
     return e.apply(this, arguments) || this
   }
@@ -239,7 +239,7 @@ var w = function(e) {
   }, t
 }(i.Component);
 
-function D(e) {
+function w(e) {
   var t = "withRouter(" + (e.displayName || e.name) + ")",
     n = function(t) {
       var n = t.wrappedComponentRef,
@@ -262,12 +262,12 @@ function M() {
   return L(h).location
 }
 
-function k() {
+function j() {
   var e = L(h).match;
   return e ? e.params : {}
 }
 
-function j(e) {
+function k(e) {
   var t = M(),
     n = L(h).match;
   return e ? C(t.pathname, e) : n

@@ -1,9 +1,9 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77298 **/
 "use strict";
-e.exports = function(e) {
+t.exports = function(t) {
   try {
-    return !!e()
-  } catch (e) {
+    return !!t()
+  } catch (t) {
     return !0
   }
 }

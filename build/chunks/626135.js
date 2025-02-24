@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  AnalyticEventConfigs: () => j,
+  AnalyticEventConfigs: () => k,
   AnalyticsContext: () => I,
   AnalyticsSchema: () => d,
-  addExtraAnalyticsDecorator: () => k,
+  addExtraAnalyticsDecorator: () => j,
   clearAnalyticsEventsRecording: () => X,
   debugLogEvent: () => W,
   default: () => er,
@@ -12,7 +12,7 @@ n.r(t), n.d(t, {
   expandLocation: () => U,
   getAnalyticsEventsRecording: () => Q,
   getNewAnalyticsLoadId: () => en,
-  setUTMContext: () => V,
+  setUTMContext: () => Z,
   startRecordingAnalyticsEvents: () => z,
   stopRecordingAnalyticsEvents: () => q,
   trackNetworkAction: () => et
@@ -98,16 +98,16 @@ let S = {
   C = 12e4,
   R = 3e5,
   P = 9e5,
-  w = 36e5,
-  D = 864e5,
+  D = 36e5,
+  w = 864e5,
   L = .001,
   x = performance.now(),
   M = [];
 
-function k(e) {
+function j(e) {
   M.push(e)
 }
-let j = {
+let k = {
   [_.rMx.APP_OPENED]: {
     throttlePeriod: R,
     throttleKeys: () => []
@@ -150,7 +150,7 @@ let j = {
     throttleKeys: e => null != e.channel_static_route ? [e.guild_id, e.channel_static_route, e.channel_view] : [e.channel_id, e.channel_view]
   },
   [_.rMx.TEXT_IN_VOICE_OPENED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.channel_id]
   },
   [_.rMx.NOTIFICATION_VIEWED]: {
@@ -205,25 +205,25 @@ let j = {
     throttleKeys: () => []
   },
   [_.rMx.RPC_SERVER_ERROR_CAUGHT]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: () => []
   },
   [_.rMx.RPC_COMMAND_SENT]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.application_id, e.command],
     throttlePercent: L
   },
   [_.rMx.RPC_SUBSCRIPTION_REQUESTED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.application_id, e.event],
     throttlePercent: L
   },
   [_.rMx.ACTIVITY_HANDSHAKE]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.application_id]
   },
   [_.rMx.CHANNEL_BANNER_VIEWED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.banner_type, e.channel_id]
   },
   [_.rMx.PREMIUM_UPSELL_VIEWED]: {
@@ -275,7 +275,7 @@ let j = {
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [_.rMx.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: () => []
   },
   [_.rMx.KEYWORD_FILTER_MATCH]: {
@@ -339,16 +339,16 @@ function G(e) {
 }
 let B = () => h.E.NONE;
 
-function Z(e) {
+function F(e) {
   B = e
 }
-let F = (0, o.trackMaker)({
-  analyticEventConfigs: j,
+let V = (0, o.trackMaker)({
+  analyticEventConfigs: k,
   dispatcher: a.Z,
   TRACK_ACTION_NAME: "TRACK"
 });
 
-function V(e) {
+function Z(e) {
   return T = e
 }
 
@@ -416,13 +416,13 @@ function $(e, t) {
       message: "".concat(r)
     }), J(e, t), null != n.throttlePercent && Math.random() > n.throttlePercent) return Promise.resolve();
   let i = H(t);
-  return W(r, i, n.logEventProperties), F(e, i, {
+  return W(r, i, n.logEventProperties), V(e, i, {
     flush: n.flush,
     fingerprint: n.fingerprint
   })
 }
 let ee = (0, o.trackMaker)({
-  analyticEventConfigs: j,
+  analyticEventConfigs: k,
   dispatcher: a.Z,
   TRACK_ACTION_NAME: "TRACK"
 });
@@ -441,7 +441,7 @@ function en() {
 }
 let er = b(E({}, o), {
   getCampaignParams: o.getCampaignParams,
-  setSystemAccessibilityFeatures: Z,
+  setSystemAccessibilityFeatures: F,
   expandEventProperties: H,
   track: $
 })

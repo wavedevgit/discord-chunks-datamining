@@ -1,9 +1,9 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  Z: () => i
+r.d(t, {
+  Z: () => o
 });
-var r = n(965537);
-let i = function(e) {
-  return "function" == typeof e ? e : r.Z
+var n = r(965537);
+let o = function(e) {
+  return "function" == typeof e ? e : n.Z
 }

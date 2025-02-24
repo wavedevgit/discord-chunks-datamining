@@ -1,8 +1,8 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
 var r = n(375044),
-  i = TypeError;
+  o = TypeError;
 e.exports = function(e) {
-  if (r(e)) throw new i("The method doesn't accept regular expressions");
+  if (r(e)) throw new o("The method doesn't accept regular expressions");
   return e
 }

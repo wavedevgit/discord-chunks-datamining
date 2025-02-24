@@ -1,23 +1,23 @@
-/** Chunk was on web.js **/
+/** Chunk was on 26436 **/
 "use strict";
-n.d(t, {
-  T: () => r
+r.d(t, {
+  T: () => n
 });
-var r = function(e, t, n) {
-  var r = n.getBoundingClientRect(),
-    i = r.width,
-    o = r.height,
-    a = "number" == typeof e.pageX ? e.pageX : e.touches[0].pageX,
-    s = "number" == typeof e.pageY ? e.pageY : e.touches[0].pageY,
-    l = a - (n.getBoundingClientRect().left + window.pageXOffset),
-    c = s - (n.getBoundingClientRect().top + window.pageYOffset);
-  l < 0 ? l = 0 : l > i && (l = i), c < 0 ? c = 0 : c > o && (c = o);
-  var u = l / i,
-    d = 1 - c / o;
+var n = function(e, t, r) {
+  var n = r.getBoundingClientRect(),
+    o = n.width,
+    a = n.height,
+    i = "number" == typeof e.pageX ? e.pageX : e.touches[0].pageX,
+    l = "number" == typeof e.pageY ? e.pageY : e.touches[0].pageY,
+    s = i - (r.getBoundingClientRect().left + window.pageXOffset),
+    u = l - (r.getBoundingClientRect().top + window.pageYOffset);
+  s < 0 ? s = 0 : s > o && (s = o), u < 0 ? u = 0 : u > a && (u = a);
+  var c = s / o,
+    p = 1 - u / a;
   return {
     h: t.h,
-    s: u,
-    v: d,
+    s: c,
+    v: p,
     a: t.a,
     source: "hsv"
   }

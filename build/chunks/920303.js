@@ -3,7 +3,7 @@
 let r;
 n.d(t, {
   I: () => v,
-  Z: () => Z
+  Z: () => F
 }), n(47120), n(230036), n(978209);
 var i, o = n(392711),
   a = n.n(o),
@@ -49,7 +49,7 @@ function P(e) {
   e.channelId === I && e.sortOrder === T && (0, h.OL)(e.tagFilter, r) || C(), I = e.channelId, T = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), b = !0, y = !1
 }
 
-function w(e) {
+function D(e) {
   if (e.channelId !== I || e.sortOrder !== T || !(0, h.OL)(e.tagFilter, r)) return !1;
   let t = e.threads.filter(e => f.AW.has(e.type)).map(e => e.id);
   N = N.concat(t);
@@ -64,7 +64,7 @@ function w(e) {
   }), L(), O = e.hasMore, A = e.offset + v, b = !1, y = !1
 }
 
-function D(e) {
+function w(e) {
   return (null == I || null == e.channelId || I === e.channelId) && L()
 }
 
@@ -94,23 +94,23 @@ function M(e) {
   C()
 }
 
-function k(e) {
+function j(e) {
   if (!(N.indexOf(e) >= 0)) return !1;
   N = N.filter(t => t !== e)
 }
 
-function j(e) {
+function k(e) {
   let {
     channel: t
   } = e;
-  return k(t.id)
+  return j(t.id)
 }
 
 function U(e) {
   let {
     channel: t
   } = e;
-  return I === t.parent_id && !!(0, u.yv)(t.id) && void k(t.id)
+  return I === t.parent_id && !!(0, u.yv)(t.id) && void j(t.id)
 }
 let G = [];
 class B extends(i = l.ZP.Store) {
@@ -134,13 +134,13 @@ class B extends(i = l.ZP.Store) {
   }
 }
 E(B, "displayName", "ArchivedThreadsStore");
-let Z = new B(c.Z, {
+let F = new B(c.Z, {
   CONNECTION_OPEN: C,
-  THREAD_DELETE: j,
+  THREAD_DELETE: k,
   THREAD_UPDATE: U,
   CHANNEL_DELETE: M,
   LOAD_ARCHIVED_THREADS: P,
-  LOAD_ARCHIVED_THREADS_SUCCESS: w,
+  LOAD_ARCHIVED_THREADS_SUCCESS: D,
   LOAD_ARCHIVED_THREADS_FAIL: x,
-  RESORT_THREADS: D
+  RESORT_THREADS: w
 })

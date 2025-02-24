@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D,
-  r: () => w
+  Z: () => w,
+  r: () => D
 }), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -209,7 +209,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   var t;
   let {
     upload: n,
@@ -245,7 +245,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     channelId: t,
     draftType: n,
@@ -339,7 +339,7 @@ function D(e) {
     className: a()({
       [O.attachmentItemSmall]: C
     }),
-    children: [(0, r.jsx)(w, {
+    children: [(0, r.jsx)(D, {
       upload: o,
       size: h
     }), !S && !A && (0, r.jsx)("div", {

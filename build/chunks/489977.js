@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 });
 var r = n(570140),
   i = n(809206),
@@ -24,12 +24,12 @@ let p = e => {
     }
     let p = c.default.getCurrentUser(),
       h = null != r ? o.I5 : i.I5,
-      g = u.ZP.canUseAnimatedAvatar(p);
-    if (g || "image/gif" !== n.type) {
+      f = u.ZP.canUseAnimatedAvatar(p);
+    if (f || "image/gif" !== n.type) {
       h(t);
       return
     }
-    if (null != p && !g) {
+    if (null != p && !f) {
       (0, a.s)(d.pC.AVATAR, t);
       return
     }
@@ -56,7 +56,7 @@ let p = e => {
       return
     }
   };
-class g extends l.Z {
+class f extends l.Z {
   _initialize() {
     r.Z.subscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
   }
@@ -67,4 +67,4 @@ class g extends l.Z {
     return e.uploadType === d.pC.AVATAR ? p(e) : e.uploadType === d.pC.BANNER ? h(e) : void 0
   }
 }
-let f = new g
+let g = new f

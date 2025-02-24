@@ -24,7 +24,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function w(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,7 +49,7 @@ function D(e, t) {
 }
 
 function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -59,17 +59,17 @@ function M() {
   r = !1, i = !1, o = new Map, a = new Map, s = 0, l = new Set, c = new Set, u = new Set, d = new Set, x = new Map, p = new Map, _ = new Map, h = new Map, m = null, g = new Map, f = new Set, E = new Map
 }
 
-function k(e, t) {
+function j(e, t) {
   var n, r, i, o;
   if (null != t.userStatus)
     for (let a of Object.values(null !== (r = null === (n = t.userStatus) || void 0 === n ? void 0 : n.progress) && void 0 !== r ? r : {})) !(0, b.isNil)(a) && y.T.DESKTOP.has(a.eventName) && ((null === (i = a.heartbeat) || void 0 === i ? void 0 : i.lastBeatAt) != null ? f.add(e) : (null === (o = a.heartbeat) || void 0 === o ? void 0 : o.lastBeatAt) == null && f.delete(e))
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = (o = new Map(o)).get(e);
   if (null != n) {
-    let r = w({}, n, t);
-    k(e, t), o.set(e, r)
+    let r = D({}, n, t);
+    j(e, t), o.set(e, r)
   }
 }
 
@@ -82,8 +82,8 @@ function G(e, t) {
   U(e, t);
   let n = o.get(e),
     r = null == n ? void 0 : n.userStatus;
-  null != r && null == r.claimedAt && j(e, {
-    userStatus: L(w({}, r), {
+  null != r && null == r.claimedAt && k(e, {
+    userStatus: L(D({}, r), {
       claimedAt: t.claimedAt
     })
   })
@@ -97,7 +97,7 @@ function B(e) {
   return (null == r ? void 0 : r.tag) !== O.w.REWARD_CODE ? null : r.rewardCode
 }
 
-function Z(e, t) {
+function F(e, t) {
   let n = new Map(_);
   n.set(e, t.items), _ = n;
   let r = o.get(e),
@@ -107,8 +107,8 @@ function Z(e, t) {
     let n = B({
       entitlements: t
     });
-    null != n && U(e, n), j(e, {
-      userStatus: L(w({}, i), {
+    null != n && U(e, n), k(e, {
+      userStatus: L(D({}, i), {
         claimedAt: t.claimedAt,
         claimedTier: null !== (a = null == n ? void 0 : n.tier) && void 0 !== a ? a : null
       })
@@ -116,11 +116,11 @@ function Z(e, t) {
   }
 }
 
-function F(e) {
+function V(e) {
   null != h.get(e) && (h = new Map(h)).delete(e)
 }
 
-function V() {
+function Z() {
   M()
 }
 
@@ -162,9 +162,9 @@ function Q(e) {
     streamKey: n,
     userStatus: r
   } = e;
-  f.add(t), j(t, {
+  f.add(t), k(t, {
     userStatus: r
-  }), F(n)
+  }), V(n)
 }
 
 function X(e) {
@@ -183,7 +183,7 @@ function J(e) {
   let {
     streamKey: t
   } = e;
-  F(t)
+  V(t)
 }
 
 function $(e) {
@@ -202,7 +202,7 @@ function et(e) {
   let {
     enrolledQuestUserStatus: t
   } = e;
-  j(t.questId, {
+  k(t.questId, {
     userStatus: t
   }), $(t.questId)
 }
@@ -248,7 +248,7 @@ function es(e) {
     questId: t,
     entitlements: n
   } = e, r = new Set(c);
-  r.delete(t), c = r, Z(t, n)
+  r.delete(t), c = r, F(t, n)
 }
 
 function el(e) {
@@ -274,7 +274,7 @@ function ed(e) {
   let {
     dismissedQuestUserStatus: t
   } = e;
-  j(t.questId, {
+  k(t.questId, {
     userStatus: t
   }), ec(t.questId)
 }
@@ -290,7 +290,7 @@ function ep(e) {
   let {
     streamKey: t
   } = e;
-  F(t)
+  V(t)
 }
 
 function e_(e) {
@@ -301,7 +301,7 @@ function e_(e) {
   });
   n.log("Received user status update for ".concat(t.quest_id), t);
   let r = (0, N.U3)(t);
-  j(t.quest_id, {
+  k(t.quest_id, {
     userStatus: r
   }), 0 === Object.keys(r.progress).length && x.has(r.questId) && (n.log("Removing optimistic progress for ".concat(r.questId)), x.delete(r.questId))
 }
@@ -310,7 +310,7 @@ function eh(e) {
   let {
     previewQuestUserStatus: t
   } = e;
-  j(t.questId, {
+  k(t.questId, {
     userStatus: t
   }), null == t.claimedAt && (p = new Map(p)).delete(t.questId), null == t.enrolledAt && ((g = new Map(g)).delete(t.questId), A.ZP.getState().resetQuest(t.questId))
 }
@@ -419,7 +419,7 @@ class ey extends(v = S.ZP.Store) {
 }
 P(ey, "displayName", "QuestsStore");
 let eO = new ey(I.Z, {
-  LOGOUT: V,
+  LOGOUT: Z,
   QUESTS_FETCH_CURRENT_QUESTS_BEGIN: H,
   QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: W,
   QUESTS_FETCH_CURRENT_QUESTS_FAILURE: Y,

@@ -192,27 +192,27 @@ function C(e) {
     className: C,
     position: R,
     showBrandingFooter: P = !1,
-    bannerUrl: w,
-    onlyAnimateIconOnHover: D = !1,
+    bannerUrl: D,
+    onlyAnimateIconOnHover: w = !1,
     hasPendingJoinRequest: L = !1,
     atMaxMemberCapacity: x = !1,
     footer: M = null
   } = e, {
-    tag: k,
-    badge: j,
+    tag: j,
+    badge: k,
     branding: {
       primaryColor: U,
       secondaryColor: G
     },
     bannerHash: B,
-    gameActivity: Z
-  } = n, F = (0, l.Z)(n.games), [V, H] = i.useState(!1), W = i.useRef(null), [Y, K] = i.useState(!1), z = i.useCallback(() => {
+    gameActivity: F
+  } = n, V = (0, l.Z)(n.games), [Z, H] = i.useState(!1), W = i.useRef(null), [Y, K] = i.useState(!1), z = i.useCallback(() => {
     H(!0)
   }, []), q = i.useCallback(() => {
     H(!1)
   }, []), Q = E.NW.formatToPlainString(E.t["0WHArK"], {
     count: n.memberCount
-  }), X = null != w ? w : (0, f.pY)(n.id, B), J = null == o && null == X ? {
+  }), X = null != D ? D : (0, f.pY)(n.id, B), J = null == o && null == X ? {
     background: "linear-gradient(90deg, ".concat(U, ", ").concat(G, ")")
   } : void 0, $ = null != o ? o : null != X ? (0, r.jsx)("img", {
     alt: E.NW.string(E.t.nH6S2d),
@@ -262,7 +262,7 @@ function C(e) {
                 guildName: n.name,
                 guildIcon: n.icon,
                 iconSize: 64,
-                animate: !D || V
+                animate: !w || Z
               })
             })
           }), (0, r.jsx)("div", {
@@ -272,13 +272,13 @@ function C(e) {
               children: [(0, r.jsx)(m.A, {
                 width: 16,
                 height: 16,
-                badge: j.badgeKind,
-                primaryTintColor: j.primaryColor,
-                secondaryTintColor: j.secondaryColor
+                badge: k.badgeKind,
+                primaryTintColor: k.primaryColor,
+                secondaryTintColor: k.secondaryColor
               }), (0, r.jsx)(s.Text, {
                 variant: "text-xs/medium",
                 color: "text-primary",
-                children: k
+                children: j
               })]
             })
           })]
@@ -339,9 +339,9 @@ function C(e) {
       }), (0, r.jsx)("div", {
         className: v.cardFooterGames,
         children: (0, r.jsx)(p.Z, {
-          games: F,
+          games: V,
           prioritizedGameIds: O,
-          gameActivity: Z,
+          gameActivity: F,
           onInteraction: et("games")
         })
       })]

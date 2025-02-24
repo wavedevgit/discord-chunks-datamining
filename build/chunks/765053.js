@@ -160,7 +160,7 @@ var m = {
   P = function(e) {
     return Array.isArray(e) ? e.join("") : e
   },
-  w = function(e, t) {
+  D = function(e, t) {
     return Array.isArray(e) ? e.reduce(function(e, n) {
       return ! function(e, t) {
         for (var n = Object.keys(e), r = 0; r < n.length; r += 1)
@@ -174,7 +174,7 @@ var m = {
       default: e
     }
   },
-  D = function(e, t) {
+  w = function(e, t) {
     var n;
     return f({}, e, ((n = {})[t] = void 0, n))
   },
@@ -188,12 +188,12 @@ var m = {
       return t ? t + " " + r : r
     }, "")
   },
-  k = function(e, t) {
+  j = function(e, t) {
     return void 0 === t && (t = {}), Object.keys(e).reduce(function(t, n) {
       return t[y[n] || n] = e[n], t
     }, t)
   },
-  j = function(e, t) {
+  k = function(e, t) {
     return t.map(function(t, n) {
       var i, o = ((i = {
         key: n
@@ -214,7 +214,7 @@ var m = {
             var e, n, i, o;
             return n = t.titleAttributes, (i = {
               key: e = t.title
-            })["data-rh"] = !0, o = k(n, i), [r.createElement(m.TITLE, o, e)]
+            })["data-rh"] = !0, o = j(n, i), [r.createElement(m.TITLE, o, e)]
           }, toString: function() {
             return function(e, t, n, r) {
               var i = M(n),
@@ -227,7 +227,7 @@ var m = {
       case "htmlAttributes":
         return {
           toComponent: function() {
-            return k(t)
+            return j(t)
           }, toString: function() {
             return M(t)
           }
@@ -235,7 +235,7 @@ var m = {
       default:
         return {
           toComponent: function() {
-            return j(e, t)
+            return k(e, t)
           }, toString: function() {
             return function(e, t, n) {
               return t.reduce(function(t, r) {
@@ -278,13 +278,13 @@ var m = {
         var t = e.linkTags,
           n = e.scriptTags,
           r = e.encode,
-          i = w(e.metaTags, v),
-          o = w(t, g),
-          a = w(n, E);
+          i = D(e.metaTags, v),
+          o = D(t, g),
+          a = D(n, E);
         return {
           priorityMethods: {
             toComponent: function() {
-              return [].concat(j(m.META, i.priority), j(m.LINK, o.priority), j(m.SCRIPT, a.priority))
+              return [].concat(k(m.META, i.priority), k(m.LINK, o.priority), k(m.SCRIPT, a.priority))
             },
             toString: function() {
               return U(m.META, i.priority, r) + " " + U(m.LINK, o.priority, r) + " " + U(m.SCRIPT, a.priority, r)
@@ -314,7 +314,7 @@ var m = {
     }
   },
   B = [],
-  Z = function(e, t) {
+  F = function(e, t) {
     var n = this;
     void 0 === t && (t = "undefined" != typeof document), this.instances = [], this.value = {
       setHelmet: function(e) {
@@ -346,8 +346,8 @@ var m = {
       titleAttributes: {}
     }))
   },
-  F = r.createContext({}),
-  V = o().shape({
+  V = r.createContext({}),
+  Z = o().shape({
     setHelmet: o().func,
     helmetInstances: o().shape({
       get: o().func,
@@ -359,10 +359,10 @@ var m = {
   W = function(e) {
     function t(n) {
       var r;
-      return (r = e.call(this, n) || this).helmetData = new Z(r.props.context, t.canUseDOM), r
+      return (r = e.call(this, n) || this).helmetData = new F(r.props.context, t.canUseDOM), r
     }
     return p(t, e), t.prototype.render = function() {
-      return r.createElement(F.Provider, {
+      return r.createElement(V.Provider, {
         value: this.helmetData.value
       }, this.props.children)
     }, t
@@ -489,7 +489,7 @@ var Y = function(e, t) {
     }, t
   }(r.Component);
 Q.propTypes = {
-  context: V.isRequired
+  context: Z.isRequired
 }, Q.displayName = "HelmetDispatcher";
 var X = ["children"],
   J = ["children"],
@@ -500,7 +500,7 @@ var X = ["children"],
     p(t, e);
     var n = t.prototype;
     return n.shouldComponentUpdate = function(e) {
-      return !s()(D(this.props, "helmetData"), D(e, "helmetData"))
+      return !s()(w(this.props, "helmetData"), w(e, "helmetData"))
     }, n.mapNestedChildrenToProps = function(e, t) {
       if (!t) return null;
       switch (e.type) {
@@ -595,10 +595,10 @@ var X = ["children"],
         n = h(e, J),
         i = f({}, n),
         o = n.helmetData;
-      return t && (i = this.mapChildrenToProps(t, i)), !o || o instanceof Z || (o = new Z(o.context, o.instances)), o ? r.createElement(Q, f({}, i, {
+      return t && (i = this.mapChildrenToProps(t, i)), !o || o instanceof F || (o = new F(o.context, o.instances)), o ? r.createElement(Q, f({}, i, {
         context: o.value,
         helmetData: void 0
-      })) : r.createElement(F.Consumer, null, function(e) {
+      })) : r.createElement(V.Consumer, null, function(e) {
         return r.createElement(Q, f({}, i, {
           context: e
         }))

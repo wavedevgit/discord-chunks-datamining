@@ -31,8 +31,8 @@ var r = n(200651),
   C = n(626135),
   R = n(823379),
   P = n(5192),
-  w = n(981631),
-  D = n(388032),
+  D = n(981631),
+  w = n(388032),
   L = n(808043);
 
 function x(e, t, n) {
@@ -57,7 +57,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,8 +68,8 @@ function k(e, t) {
   return n
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -92,7 +92,7 @@ function G(e, t) {
   return i
 }
 let B = [];
-class Z extends i.PureComponent {
+class F extends i.PureComponent {
   componentDidMount() {
     this.timeout = setTimeout(() => {
       this.setState({
@@ -105,7 +105,7 @@ class Z extends i.PureComponent {
   }
   logShownEventIfNeeded() {
     let e = this.props.activity.application_id;
-    null != e && -1 === B.indexOf(e) && (C.default.track(w.rMx.SHOW_TUTORIAL, {
+    null != e && -1 === B.indexOf(e) && (C.default.track(D.rMx.SHOW_TUTORIAL, {
       tutorial: "activity-invite-nux-inline",
       application_id: e
     }), B.push(e))
@@ -128,7 +128,7 @@ class Z extends i.PureComponent {
       }) : (0, r.jsx)("div", {
         className: L.activityInviteEducationArrow
       }), (0, r.jsx)("span", {
-        children: D.NW.format(D.t["i/MoCg"], {
+        children: w.NW.format(w.t["i/MoCg"], {
           game: e.name,
           dismissOnClick: this.handleDismissInviteEducation
         })
@@ -147,7 +147,7 @@ class Z extends i.PureComponent {
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: t,
     guild: n
@@ -164,7 +164,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function Z(e) {
   let {
     guildId: t,
     activity: n,
@@ -180,25 +180,25 @@ function V(e) {
   } = e, {
     rateLimitPerUser: E
   } = u, b = N.default.getCurrentUser(), y = O.Z.getGuild(t), I = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == b ? void 0 : b.id)).reject(e => S.Z.isBlockedOrIgnored(e)).map(e => N.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), A = (0, m.R6)("TypingUsers");
-  if (0 === T.length && !I && !g) return i && null != n ? (0, r.jsx)(Z, {
+  if (0 === T.length && !I && !g) return i && null != n ? (0, r.jsx)(F, {
     activity: n,
     isFocused: o,
     isRefreshChatInputEnabled: A
-  }) : (0, r.jsx)(F, {
+  }) : (0, r.jsx)(V, {
     channel: u,
     guild: y
   });
-  let [C, w, x] = T, M = "";
-  return 1 === T.length ? M = D.NW.format(D.t.lJ9sZW, {
+  let [C, D, x] = T, M = "";
+  return 1 === T.length ? M = w.NW.format(w.t.lJ9sZW, {
     a: C
-  }) : 2 === T.length ? M = D.NW.format(D.t.rB0CUV, {
+  }) : 2 === T.length ? M = w.NW.format(w.t.rB0CUV, {
     a: C,
-    b: w
-  }) : 3 === T.length ? M = D.NW.format(D.t.StKTho, {
+    b: D
+  }) : 3 === T.length ? M = w.NW.format(w.t.StKTho, {
     a: C,
-    b: w,
+    b: D,
     c: x
-  }) : T.length > 3 && (M = D.NW.string(D.t.uVDhqa)), (0, r.jsxs)("div", {
+  }) : T.length > 3 && (M = w.NW.string(w.t.uVDhqa)), (0, r.jsxs)("div", {
     className: a()(L.typing, {
       "stop-animation": !o,
       [L.isComboing]: _ && g
@@ -232,7 +232,7 @@ function H(e) {
   let o = (0, c.e7)([I.Z], () => I.Z.findActivity(e => null != e.application_id)),
     a = (0, c.e7)([E.ZP, y.default], () => E.ZP.getUserCombo(y.default.getId(), t.id)),
     s = (0, c.e7)([b.Z, _.Z], () => (0, p.Z)(t, o, b.Z, _.Z)),
-    l = j(M({}, i), {
+    l = k(M({}, i), {
       baseTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
       activeTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
       showInviteEducation: s,
@@ -244,5 +244,5 @@ function H(e) {
       channel: t,
       isThreadCreation: n
     });
-  return (0, r.jsx)(V, M({}, l))
+  return (0, r.jsx)(Z, M({}, l))
 }

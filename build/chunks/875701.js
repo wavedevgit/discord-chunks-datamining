@@ -1,11 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 23357 **/
 "use strict";
 var r = n(670622).PROPER,
-  i = n(821819),
-  o = n(219479),
-  a = "​\x85᠎";
+  o = n(821819),
+  a = n(219479),
+  i = "​\x85᠎";
 e.exports = function(e) {
-  return i(function() {
-    return !!o[e]() || a[e]() !== a || r && o[e].name !== e
+  return o(function() {
+    return !!a[e]() || i[e]() !== i || r && a[e].name !== e
   })
 }

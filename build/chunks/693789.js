@@ -146,44 +146,44 @@ function I(e) {
     innerClassName: C,
     onClick: R,
     onDoubleClick: P,
-    onMouseDown: w,
-    onMouseUp: D,
+    onMouseDown: D,
+    onMouseUp: w,
     onMouseEnter: L,
     onMouseLeave: x,
     onKeyDown: M,
-    children: k,
-    rel: j,
+    children: j,
+    rel: k,
     buttonRef: U,
     focusProps: G,
     "aria-label": B,
-    submittingStartedLabel: Z,
-    submittingFinishedLabel: F
-  } = e, V = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
+    submittingStartedLabel: F,
+    submittingFinishedLabel: V
+  } = e, Z = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
   let H = h || E,
     W = H && (null != L || null != x),
     Y = W ? null : N,
     K = O(G, t),
     z = i.useRef(!1);
   i.useEffect(() => {
-    !0 === E && (z.current = !0, l.u.announce(null != Z ? Z : d.NW.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != F ? F : d.NW.string(d.t.SVPara))
-  }, [E, Z, F]);
+    !0 === E && (z.current = !0, l.u.announce(null != F ? F : d.NW.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != V ? V : d.NW.string(d.t.SVPara))
+  }, [E, F, V]);
   let q = (0, r.jsx)(c.t, m(_({}, G), {
     offset: K,
-    children: (0, r.jsxs)("button", m(_({}, H ? null : V), {
+    children: (0, r.jsxs)("button", m(_({}, H ? null : Z), {
       "aria-label": B,
       "aria-busy": !!E || void 0,
       ref: U,
       onClick: H ? e => e.preventDefault() : R,
       onDoubleClick: H ? e => e.preventDefault() : P,
-      onMouseUp: h ? void 0 : D,
-      onMouseDown: h ? void 0 : w,
+      onMouseUp: h ? void 0 : w,
+      onMouseDown: h ? void 0 : D,
       onMouseEnter: L,
       onMouseLeave: x,
       onKeyDown: h ? void 0 : M,
       type: I,
       disabled: h,
       style: T,
-      rel: j,
+      rel: k,
       className: a()(A, S({
         look: t,
         color: n,
@@ -199,7 +199,7 @@ function I(e) {
         itemClassName: f.spinnerItem
       }) : null, (0, r.jsx)("div", {
         className: a()(f.contents, C),
-        children: k
+        children: j
       })]
     }))
   }));
