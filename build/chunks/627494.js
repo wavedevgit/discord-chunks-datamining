@@ -10,11 +10,11 @@ var r = n(147018),
   u = n(714050),
   d = n(995739),
   f = n(87046),
-  p = n(115726),
-  _ = n(641236),
+  _ = n(115726),
+  p = n(641236),
   h = n(992051),
-  m = _("replace"),
-  g = TypeError,
+  g = p("replace"),
+  m = TypeError,
   E = o("".indexOf),
   v = o("".replace),
   b = o("".slice),
@@ -27,16 +27,16 @@ r({
   proto: !0
 }, {
   replaceAll: function(e, t) {
-    var n, r, o, _, S, I, T, N, A = a(this),
+    var n, r, o, p, S, I, T, N, A = a(this),
       C = 0,
       R = 0,
       P = "";
     if (!l(e)) {
-      if ((n = c(e)) && !~E(u(a(f(e))), "g")) throw g("`.replaceAll` does not allow non-global regexes");
-      if (r = d(e, m)) return i(r, e, A, t);
+      if ((n = c(e)) && !~E(u(a(f(e))), "g")) throw m("`.replaceAll` does not allow non-global regexes");
+      if (r = d(e, g)) return i(r, e, A, t);
       if (h && n) return v(u(A), e, t)
     }
-    for (o = u(A), _ = u(e), (S = s(t)) || (t = u(t)), T = y(1, I = _.length), C = O(o, _, 0); - 1 !== C;) N = S ? u(t(_, C, o)) : p(_, o, C, [], void 0, t), P += b(o, R, C) + N, R = C + I, C = O(o, _, C + T);
+    for (o = u(A), p = u(e), (S = s(t)) || (t = u(t)), T = y(1, I = p.length), C = O(o, p, 0); - 1 !== C;) N = S ? u(t(p, C, o)) : _(p, o, C, [], void 0, t), P += b(o, R, C) + N, R = C + I, C = O(o, p, C + T);
     return R < o.length && (P += b(o, R)), P
   }
 })

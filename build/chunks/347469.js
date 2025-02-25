@@ -24,16 +24,16 @@ let l = e => {
     onElementResizeStart: u,
     onElementResizeEnd: d,
     throttleDuration: f = o,
-    orientation: p,
-    usePointerEvents: _ = !1,
+    orientation: _,
+    usePointerEvents: p = !1,
     getClampedValue: h = i.clamp
-  } = e, [m, g] = r.useState(!1), E = r.useRef(0), v = r.useRef(!1), b = r.useRef(null == t ? 0 : t);
+  } = e, [g, m] = r.useState(!1), E = r.useRef(0), v = r.useRef(!1), b = r.useRef(null == t ? 0 : t);
   return r.useLayoutEffect(() => {
-    if (!m || null == n.current) return;
+    if (!g || null == n.current) return;
 
     function e(e) {
-      let t = 1 === s(p) ? e.screenX : e.screenY,
-        n = 0 === p || 2 === p,
+      let t = 1 === s(_) ? e.screenX : e.screenY,
+        n = 0 === _ || 2 === _,
         r = (t - E.current) * (n ? -1 : 1);
       return b.current + r
     }
@@ -46,23 +46,23 @@ let l = e => {
         if (null == n.current) return null;
         let o = e(i),
           a = t(o),
-          l = 1 === s(p) ? "width" : "height";
+          l = 1 === s(_) ? "width" : "height";
         n.current.style[l] = "".concat(a, "px"), v.current || (v.current = !0, null == u || u(a)), r(a, o)
       },
       y = n => {
-        g(!1);
+        m(!1);
         let r = e(n),
           i = t(r);
         c(i, r), null == d || d(i), v.current = !1
       },
-      O = _ ? "pointerup" : "mouseup",
-      S = _ ? "pointermove" : "mousemove",
+      O = p ? "pointerup" : "mouseup",
+      S = p ? "pointermove" : "mousemove",
       I = n.current.ownerDocument;
     return I.addEventListener(O, y), I.addEventListener(S, o), () => {
       I.removeEventListener(O, y), I.removeEventListener(S, o), r.cancel()
     }
-  }, [m, c, l, a, p, n, f, d, _, h, u]), r.useCallback(e => {
-    let t = 1 === s(p);
-    null != n.current && (b.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, g(!0)
-  }, [p, n])
+  }, [g, c, l, a, _, n, f, d, p, h, u]), r.useCallback(e => {
+    let t = 1 === s(_);
+    null != n.current && (b.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, m(!0)
+  }, [_, n])
 }

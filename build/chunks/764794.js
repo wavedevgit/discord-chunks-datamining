@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(906732),
   d = n(704440),
   f = n(632583),
-  p = n(626135),
-  _ = n(443603),
+  _ = n(626135),
+  p = n(443603),
   h = n(981631),
-  m = n(474936),
-  g = n(388032),
+  g = n(474936),
+  m = n(388032),
   E = n(342203);
 
 function v(e, t, n) {
@@ -65,7 +65,7 @@ function S(e) {
     referralsRemaining: n,
     channel: v,
     isResending: y
-  } = e, S = y ? g.NW.string(g.t.zzfBQk) : g.NW.string(g.t.ziPEBg), [I, T] = i.useState(!1), [N, A] = i.useState(!1), C = (0, s.Z)(null, () => A(!1)), {
+  } = e, S = y ? m.NW.string(m.t.zzfBQk) : m.NW.string(m.t.ziPEBg), [I, T] = i.useState(!1), [N, A] = i.useState(!1), C = (0, s.Z)(null, () => A(!1)), {
     analyticsLocations: R
   } = (0, u.ZP)(c.Z.REFERRAL_TRIALS_COMPOSER_BUTTON), P = v.isDM() && void 0 !== v.recipients ? v.recipients[0] : null, D = (0, l.ZP)();
 
@@ -87,24 +87,24 @@ function S(e) {
       "aria-label": S.toString(),
       children: e => (0, r.jsx)("div", {
         onMouseEnter: () => {
-          N || I || (T(!0), p.default.track(h.rMx.SHARE_NITRO_FLOW_STEPS, {
+          N || I || (T(!0), _.default.track(h.rMx.SHARE_NITRO_FLOW_STEPS, {
             location_stack: R,
-            step: m.fz.BADGE_TOOLTIP_VIEWED,
+            step: g.fz.BADGE_TOOLTIP_VIEWED,
             other_user_id: Number(P)
           }))
         },
         onMouseLeave: () => {
           T(!1)
         },
-        children: (0, r.jsx)(_.Z, O(b({}, e), {
+        children: (0, r.jsx)(p.Z, O(b({}, e), {
           innerClassName: E.button,
           isActive: N,
           "aria-label": S.toString(),
           "aria-haspopup": "dialog",
           onClick: () => {
-            w(), p.default.track(h.rMx.SHARE_NITRO_FLOW_STEPS, {
+            w(), _.default.track(h.rMx.SHARE_NITRO_FLOW_STEPS, {
               location_stack: R,
-              step: m.fz.BADGE_CLICKED,
+              step: g.fz.BADGE_CLICKED,
               other_user_id: Number(P)
             })
           },

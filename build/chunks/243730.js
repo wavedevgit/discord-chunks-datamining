@@ -47,7 +47,7 @@ function f(e) {
   i[n] += o
 }
 
-function p(e) {
+function _(e) {
   let {
     guildId: t,
     roleId: n
@@ -56,7 +56,7 @@ function p(e) {
   r[n] = r[n] + 1
 }
 
-function _(e) {
+function p(e) {
   let {
     guildId: t,
     roleId: n
@@ -73,13 +73,13 @@ function h(e) {
   null == l[t] && (l[t] = {}), l[t][n.id] = 0
 }
 
-function m(e) {
+function g(e) {
   let {
     guild: t
   } = e;
   delete l[t.id], delete c[t.id]
 }
-class g extends(r = i.ZP.Store) {
+class m extends(r = i.ZP.Store) {
   getRoleMemberCount(e) {
     return null != e ? l[e] : null
   }
@@ -89,13 +89,13 @@ class g extends(r = i.ZP.Store) {
     return null == t || Date.now() - t > s
   }
 }
-a(g, "displayName", "GuildRoleMemberCountStore");
-let E = new g(o.Z, {
+a(m, "displayName", "GuildRoleMemberCountStore");
+let E = new m(o.Z, {
   GUILD_ROLE_MEMBER_COUNT_FETCH_SUCCESS: u,
   GUILD_ROLE_MEMBER_COUNT_UPDATE: d,
   GUILD_ROLE_MEMBER_BULK_ADD: f,
-  GUILD_ROLE_MEMBER_ADD: p,
-  GUILD_ROLE_MEMBER_REMOVE: _,
+  GUILD_ROLE_MEMBER_ADD: _,
+  GUILD_ROLE_MEMBER_REMOVE: p,
   GUILD_ROLE_CREATE: h,
-  GUILD_DELETE: m
+  GUILD_DELETE: g
 })

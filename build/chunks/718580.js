@@ -14,8 +14,8 @@ var r = n(200651),
   u = n(393238),
   d = n(699682),
   f = n(793903),
-  p = n(906732),
-  _ = n(237617);
+  _ = n(906732),
+  p = n(237617);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,7 +26,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -100,14 +100,14 @@ function I(e) {
 
 function T(e) {
   var t, n, h, {
-      contentDisplay: g,
+      contentDisplay: m,
       fadeInOut: b = !1
     } = e,
     I = v(e, ["contentDisplay", "fadeInOut"]);
   let T = {},
     {
       analyticsLocations: N
-    } = (0, p.ZP)();
+    } = (0, _.ZP)();
   i.Children.forEach(I.children, (e, t) => {
     T[e.props.id] = {
       children: e.props.children,
@@ -124,7 +124,7 @@ function T(e) {
     } = i.useContext(l.S),
     D = i.useContext(f.Z),
     w = T[A].impressionName,
-    L = E(m({}, T[A].impressionProperties), {
+    L = E(g({}, T[A].impressionProperties), {
       location_stack: N
     });
   D({
@@ -139,7 +139,7 @@ function T(e) {
     ref: x,
     width: M = 0,
     height: j = 0
-  } = (0, u.Z)(A), k = m({}, y, I.springConfig, P.enabled ? {
+  } = (0, u.Z)(A), k = g({}, y, I.springConfig, P.enabled ? {
     clamp: !0
   } : null), U = (0, c.q_F)({
     width: null !== (n = I.width) && void 0 !== n ? n : M,
@@ -163,7 +163,7 @@ function T(e) {
       } = t;
       n === A && null != I.onSlideReady && I.onSlideReady(n)
     }
-  }, null == C ? "animate-never" : "respect-motion-settings"), B = (0, _.Z)(R), {
+  }, null == C ? "animate-never" : "respect-motion-settings"), B = (0, p.Z)(R), {
     width: F,
     centered: V = !0
   } = I, Z = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), W = s.tq ? {} : V ? {
@@ -175,7 +175,7 @@ function T(e) {
     overflow: null !== (h = I.overflow) && void 0 !== h ? h : "hidden"
   };
   return (0, r.jsx)(o.animated.div, {
-    style: m({
+    style: g({
       position: "relative",
       minWidth: Z,
       minHeight: H
@@ -188,13 +188,13 @@ function T(e) {
       };
       return (0, r.jsx)(o.animated.div, {
         ref: t === A ? x : null,
-        style: m({
+        style: g({
           position: "absolute",
-          display: g,
+          display: m,
           flexDirection: "column",
           backfaceVisibility: "hidden",
           width: s.tq ? "100%" : F
-        }, W, P.enabled ? a : m({
+        }, W, P.enabled ? a : g({
           left: e.value.to(S("left", B)),
           right: e.value.to(S("right", B))
         }, b && a)),

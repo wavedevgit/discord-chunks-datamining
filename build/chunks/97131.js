@@ -10,11 +10,11 @@ var r = n(325008),
   u = Object.getOwnPropertyDescriptor,
   d = "enumerable",
   f = "configurable",
-  p = "writable";
+  _ = "writable";
 t.f = r ? o ? function(e, t, n) {
-  if (a(e), t = s(t), a(n), "function" == typeof e && "prototype" === t && "value" in n && p in n && !n[p]) {
+  if (a(e), t = s(t), a(n), "function" == typeof e && "prototype" === t && "value" in n && _ in n && !n[_]) {
     var r = u(e, t);
-    r && r[p] && (e[t] = n.value, n = {
+    r && r[_] && (e[t] = n.value, n = {
       configurable: f in n ? n[f] : r[f],
       enumerable: d in n ? n[d] : r[d],
       writable: !1

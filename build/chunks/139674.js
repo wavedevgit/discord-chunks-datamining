@@ -11,9 +11,9 @@ var o, a = n(442837),
   u = n(626135),
   d = n(358085),
   f = n(704133),
-  p = n(981631);
+  _ = n(981631);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,9 +22,9 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 let h = "BlockedDomainStore",
-  m = "BlockedDomainRevision";
+  g = "BlockedDomainRevision";
 
-function g(e) {
+function m(e) {
   let {
     list: t,
     revision: n
@@ -35,13 +35,13 @@ function g(e) {
 }
 class E extends(o = a.ZP.Store) {
   initialize() {
-    i = null, s.K.get(h) && (s.K.remove(m), s.K.remove(h))
+    i = null, s.K.get(h) && (s.K.remove(g), s.K.remove(h))
   }
   getCurrentRevision() {
     if (!(0, d.isDesktop)()) return null;
     if (null == i) {
       var e;
-      i = null !== (e = s.K.get(m)) && void 0 !== e ? e : null
+      i = null !== (e = s.K.get(g)) && void 0 !== e ? e : null
     }
     return i
   }
@@ -63,12 +63,12 @@ class E extends(o = a.ZP.Store) {
     r[a] && (s = i);
     let l = i.indexOf(".");
     for (; - 1 !== l && "" === s;) i = i.substring(l + 1), o.reset(), r[a = t.codec.hex.fromBits(o.update(i).finalize())] && (s = i), l = i.indexOf(".");
-    return "" !== s ? (u.default.track(p.rMx.LINK_SECURITY_CHECK_BLOCKED, {
+    return "" !== s ? (u.default.track(_.rMx.LINK_SECURITY_CHECK_BLOCKED, {
       blocked_domain: s
     }), s) : null
   }
 }
-_(E, "displayName", "BlockedDomainStore");
+p(E, "displayName", "BlockedDomainStore");
 let v = new E(l.Z, {
-  BLOCKED_DOMAIN_LIST_FETCHED: g
+  BLOCKED_DOMAIN_LIST_FETCHED: m
 })

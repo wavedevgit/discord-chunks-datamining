@@ -20,13 +20,13 @@ function u(e, t, n) {
 }
 let d = 12e4,
   f = 1e4,
-  p = 5,
-  _ = {},
+  _ = 5,
+  p = {},
   h = {},
-  m = new Set;
+  g = new Set;
 
-function g() {
-  _ = {}, h = {}
+function m() {
+  p = {}, h = {}
 }
 
 function E(e) {
@@ -34,10 +34,10 @@ function E(e) {
     streamKey: t,
     previewURL: n
   } = e;
-  _[t] = {
+  p[t] = {
     url: n,
     expires: Date.now() + d
-  }, h[t] = 0, m.delete(t)
+  }, h[t] = 0, g.delete(t)
 }
 
 function v(e) {
@@ -45,10 +45,10 @@ function v(e) {
     streamKey: t,
     retryAfter: n
   } = e;
-  _[t] = {
+  p[t] = {
     url: null,
     expires: Date.now() + (null != n ? n : f * h[t])
-  }, m.delete(t)
+  }, g.delete(t)
 }
 
 function b(e) {
@@ -56,14 +56,14 @@ function b(e) {
   let {
     streamKey: n
   } = e;
-  h[n] = (null !== (t = h[n]) && void 0 !== t ? t : 0) + 1, m.add(n)
+  h[n] = (null !== (t = h[n]) && void 0 !== t ? t : 0) + 1, g.add(n)
 }
 
 function y(e) {
   let {
     voiceStates: t
   } = e;
-  return !(o().isEmpty(_) && o().isEmpty(h)) && t.reduce((e, t) => {
+  return !(o().isEmpty(p) && o().isEmpty(h)) && t.reduce((e, t) => {
     let {
       userId: n,
       guildId: r,
@@ -77,12 +77,12 @@ function y(e) {
       channelId: i,
       ownerId: n
     });
-    return delete _[a], delete h[a], !0
+    return delete p[a], delete h[a], !0
   }, !1)
 }
 class O extends(r = a.ZP.Store) {
   getPreviewURL(e, t, n) {
-    let r = _[(0, l.V9)({
+    let r = p[(0, l.V9)({
       streamType: null != e ? c.lo.GUILD : c.lo.CALL,
       guildId: e,
       channelId: t,
@@ -98,10 +98,10 @@ class O extends(r = a.ZP.Store) {
         channelId: t,
         ownerId: n
       }),
-      o = _[i],
+      o = p[i],
       a = null !== (r = h[i]) && void 0 !== r ? r : 0,
       s = null != o && Date.now() > o.expires;
-    return (null == o && a < p || s) && !m.has(i)
+    return (null == o && a < _ || s) && !g.has(i)
   }
   getPreviewURLForStreamKey(e) {
     let {
@@ -118,13 +118,13 @@ class O extends(r = a.ZP.Store) {
       channelId: t,
       ownerId: n
     });
-    return m.has(r)
+    return g.has(r)
   }
 }
 u(O, "displayName", "ApplicationStreamPreviewStore");
 let S = new O(s.Z, {
-  CONNECTION_OPEN: g,
-  LOGOUT: g,
+  CONNECTION_OPEN: m,
+  LOGOUT: m,
   STREAM_PREVIEW_FETCH_START: b,
   STREAM_PREVIEW_FETCH_SUCCESS: E,
   STREAM_PREVIEW_FETCH_FAIL: v,

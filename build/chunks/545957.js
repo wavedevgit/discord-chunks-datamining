@@ -17,8 +17,8 @@ function u(e, t) {
     blockerExperimentEnabled: u,
     analyticsEligible: d
   } = (0, l.NR)(t), f = (0, i.e7)([a.Z], () => null != e ? a.Z.getRelationshipType(e) : c.OGo.NONE), {
-    stream: p,
-    analyticsStream: _
+    stream: _,
+    analyticsStream: p
   } = (0, i.cj)([o.Z], () => {
     if (null == e) return {
       stream: null,
@@ -32,12 +32,12 @@ function u(e, t) {
   }, [n, e]);
   return (0, r.useEffect)(() => {
     var r;
-    d && null != _ && s.default.track(c.rMx.USER_VOICE_ACTIVITY_VIEWED, {
+    d && null != p && s.default.track(c.rMx.USER_VOICE_ACTIVITY_VIEWED, {
       surface: t,
       activity_user_id: e,
-      discoverable: null === (r = _.discoverable) || void 0 === r || r,
+      discoverable: null === (r = p.discoverable) || void 0 === r || r,
       relationship_type: f,
-      treatment: n && !1 === _.discoverable || u && f === c.OGo.BLOCKED ? l.h9.HIDE : l.h9.SHOW
+      treatment: n && !1 === p.discoverable || u && f === c.OGo.BLOCKED ? l.h9.HIDE : l.h9.SHOW
     })
-  }, [d, n, u, _, f, t, e]), u && f === c.OGo.BLOCKED ? null : p
+  }, [d, n, u, p, f, t, e]), u && f === c.OGo.BLOCKED ? null : _
 }

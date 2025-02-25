@@ -12,8 +12,8 @@ var i, o = n(569048),
   u = n.n(c),
   d = n(442837),
   f = n(570140),
-  p = n(758449),
-  _ = n(245335);
+  _ = n(758449),
+  p = n(245335);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -23,8 +23,8 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let m = {},
-  g = {},
+let g = {},
+  m = {},
   E = {},
   v = {},
   b = !1,
@@ -32,41 +32,41 @@ let m = {},
   O = !1;
 
 function S() {
-  m = {}, g = {}, E = {}, v = {}, r = null, y = !1, O = !1, b = !1
+  g = {}, m = {}, E = {}, v = {}, r = null, y = !1, O = !1, b = !1
 }
 
 function I(e) {
   let {
     channel: t
   } = e;
-  delete m[t.id], delete g[t.id], delete E[t.id]
+  delete g[t.id], delete m[t.id], delete E[t.id]
 }
 
 function T(e) {
   let {
     channelId: t,
     invite: n
-  } = e, r = p.Z.createFromServer(n);
-  r.targetType === _.Iq.STREAM && null != r.targetUser ? (null == g[t] && (g[t] = {}), g[t][String(r.targetUser.id)] = r) : r.targetType === _.Iq.EMBEDDED_APPLICATION && null != r.targetApplication ? (null == E[t] && (E[t] = {}), E[t][r.targetApplication.id] = r) : m[t] = r
+  } = e, r = _.Z.createFromServer(n);
+  r.targetType === p.Iq.STREAM && null != r.targetUser ? (null == m[t] && (m[t] = {}), m[t][String(r.targetUser.id)] = r) : r.targetType === p.Iq.EMBEDDED_APPLICATION && null != r.targetApplication ? (null == E[t] && (E[t] = {}), E[t][r.targetApplication.id] = r) : g[t] = r
 }
 
 function N(e) {
   let {
     channelId: t
   } = e;
-  m[t] = null
+  g[t] = null
 }
 
 function A(e) {
   let {
     channelId: t
   } = e;
-  m[t] = null
+  g[t] = null
 }
 
 function C(e) {
   var t;
-  v[e.invite.code] = p.Z.createFromServer(e.invite), r = null !== (t = a()(l()(u()(Object.values(v), "createdAt")))) && void 0 !== t ? t : null, O = !1
+  v[e.invite.code] = _.Z.createFromServer(e.invite), r = null !== (t = a()(l()(u()(Object.values(v), "createdAt")))) && void 0 !== t ? t : null, O = !1
 }
 
 function R() {
@@ -95,12 +95,12 @@ function L() {
 function x(e) {
   var t;
   v = {}, e.invites.forEach(e => {
-    v[e.code] = p.Z.createFromServer(e)
+    v[e.code] = _.Z.createFromServer(e)
   }), r = null !== (t = a()(l()(u()(Object.values(v), "createdAt")))) && void 0 !== t ? t : null, b = !1
 }
 
 function M(e) {
-  delete m[e.channelId]
+  delete g[e.channelId]
 }
 class j extends(i = d.ZP.Store) {
   getInvite(e) {
@@ -110,7 +110,7 @@ class j extends(i = d.ZP.Store) {
       targetUserId: i,
       targetApplicationId: o
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-    return r === _.Iq.STREAM && null != i ? null === (t = g[e]) || void 0 === t ? void 0 : t[i] : r === _.Iq.EMBEDDED_APPLICATION && null != o ? null === (n = E[e]) || void 0 === n ? void 0 : n[o] : m[e]
+    return r === p.Iq.STREAM && null != i ? null === (t = m[e]) || void 0 === t ? void 0 : t[i] : r === p.Iq.EMBEDDED_APPLICATION && null != o ? null === (n = E[e]) || void 0 === n ? void 0 : n[o] : g[e]
   }
   getFriendInvite() {
     return r

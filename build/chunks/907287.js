@@ -9,29 +9,29 @@ function a(e, t, n, a, s, l) {
     d = u.length;
   if (d != r(t).length && !c) return !1;
   for (var f = d; f--;) {
-    var p = u[f];
-    if (!(c ? p in t : o.call(t, p))) return !1
+    var _ = u[f];
+    if (!(c ? _ in t : o.call(t, _))) return !1
   }
-  var _ = l.get(e),
+  var p = l.get(e),
     h = l.get(t);
-  if (_ && h) return _ == t && h == e;
-  var m = !0;
+  if (p && h) return p == t && h == e;
+  var g = !0;
   l.set(e, t), l.set(t, e);
-  for (var g = c; ++f < d;) {
-    var E = e[p = u[f]],
-      v = t[p];
-    if (a) var b = c ? a(v, E, p, t, e, l) : a(E, v, p, e, t, l);
+  for (var m = c; ++f < d;) {
+    var E = e[_ = u[f]],
+      v = t[_];
+    if (a) var b = c ? a(v, E, _, t, e, l) : a(E, v, _, e, t, l);
     if (!(void 0 === b ? E === v || s(E, v, n, a, l) : b)) {
-      m = !1;
+      g = !1;
       break
     }
-    g || (g = "constructor" == p)
+    m || (m = "constructor" == _)
   }
-  if (m && !g) {
+  if (g && !m) {
     var y = e.constructor,
       O = t.constructor;
-    y != O && "constructor" in e && "constructor" in t && !("function" == typeof y && y instanceof y && "function" == typeof O && O instanceof O) && (m = !1)
+    y != O && "constructor" in e && "constructor" in t && !("function" == typeof y && y instanceof y && "function" == typeof O && O instanceof O) && (g = !1)
   }
-  return l.delete(e), l.delete(t), m
+  return l.delete(e), l.delete(t), g
 }
 e.exports = a

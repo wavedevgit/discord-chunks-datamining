@@ -13,20 +13,20 @@ var r = n(192379),
   u = n(561308),
   d = n(314897),
   f = n(158776),
-  p = n(9161),
-  _ = n(456644),
+  _ = n(9161),
+  p = n(456644),
   h = n(981631);
-let m = [],
-  g = [];
+let g = [],
+  m = [];
 
 function E(e) {
   let {
     recentActivityTabEnabled: t
-  } = (0, p.O)({
+  } = (0, _.O)({
     location: "useUserProfileActivity"
   }), {
     recentActivityEnabled: n
-  } = (0, _.i)({
+  } = (0, p.i)({
     location: "useUserProfileActivity"
   }), E = (0, o.e7)([d.default], () => d.default.getId() === e), v = (0, a.Z)(e, "use-user-profile-activity"), b = (0, o.e7)([f.Z], () => f.Z.getActivities(e)), y = (0, o.e7)([s.Z], () => E || t || n ? s.Z.getUserOutbox(e) : void 0), {
     live: O,
@@ -40,8 +40,8 @@ function E(e) {
       }), (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name),
       t = null == y ? void 0 : y.entries.filter(t => !(0, u.Jg)(t) && ((0, l.dU)(t) ? t.extra.entries.length > 0 && !e.some(e => null != e && (0, c.pB)(t, e)) : (0, l.y0)(t) ? !e.some(e => null != e && (0, c.RL)(t, e)) : (0, l.Rh)(t)));
     return {
-      live: 0 === e.length ? m : e,
-      recent: null == t || 0 === t.length ? g : t
+      live: 0 === e.length ? g : e,
+      recent: null == t || 0 === t.length ? m : t
     }
   }, [b, null == y ? void 0 : y.entries]);
   return {

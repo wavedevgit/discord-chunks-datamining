@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   F7: () => O,
-  WA: () => g,
+  WA: () => m,
   s2: () => E,
   wo: () => y,
   yp: () => S
@@ -19,7 +19,7 @@ var i = n(853872),
   d = n(865921),
   f = n(388032);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,14 +28,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -52,18 +52,18 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = {
+let m = {
     key: null,
-    renderStep: e => (0, r.jsx)(d.v, _({}, e))
+    renderStep: e => (0, r.jsx)(d.v, p({}, e))
   },
   E = {
     key: o.h8.ADD_PAYMENT_STEPS,
-    renderStep: e => (0, r.jsx)(a.J, m(_({}, e), {
+    renderStep: e => (0, r.jsx)(a.J, g(p({}, e), {
       breadcrumbSteps: [o.h8.ADD_PAYMENT_STEPS, o.h8.REVIEW, o.h8.CONFIRM],
       onReturn: () => {
         0 === Object.keys(i.Z.paymentSources).length ? e.handleClose() : e.handleStepChange(o.h8.REVIEW, {
@@ -88,13 +88,13 @@ let g = {
   },
   y = {
     key: o.h8.REVIEW,
-    renderStep: e => (0, r.jsx)(u.l, _({}, e)),
+    renderStep: e => (0, r.jsx)(u.l, p({}, e)),
     options: {
       useBreadcrumbLabel: () => f.NW.string(f.t.QBnNHh)
     }
   },
   O = {
     key: o.h8.CONFIRM,
-    renderStep: e => (0, r.jsx)(c.w, _({}, e))
+    renderStep: e => (0, r.jsx)(c.w, p({}, e))
   },
   S = [v, b]

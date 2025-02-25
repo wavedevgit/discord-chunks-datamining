@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(481060),
   d = n(37234),
   f = n(194359),
-  p = n(700582),
-  _ = n(925329),
+  _ = n(700582),
+  p = n(925329),
   h = n(479446),
-  m = n(522489),
-  g = n(717401),
+  g = n(522489),
+  m = n(717401),
   E = n(286961),
   v = n(93127),
   b = n(814443),
@@ -50,7 +50,7 @@ function M(e) {
     isSendingMessage: b
   } = e, [O, I] = i.useState(u.kO8.Modes.DEFAULT), M = (0, c.e7)([S.Z], () => S.Z.enabled), k = f || null != l && null != h, U = (null == o ? void 0 : o.productLine) === P.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
-  } = (0, R.wD)(), F = null == G ? void 0 : G.giftPurchaseConfirmation, V = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != V && null != F, H = () => null != s ? s.skuId : null != o ? o.id : null, W = () => {
+  } = (0, R.wD)(), F = null == G ? void 0 : G.giftPurchaseConfirmation, V = (0, m.tK)(null == B ? void 0 : B.skuId), Z = (0, m.a5)(s) && null != V && null != F, H = () => null != s ? s.skuId : null != o ? o.id : null, W = () => {
     let e;
     return null != v ? w.NW.string(w.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? k ? Z ? F.monthGiftText : w.t["4ZJ+7e"] : w.t["P+z55e"] : k ? Z ? F.yearGiftText : w.t.p0pZXF : w.t.bXqk3t, w.NW.format(e, {
       skuName: (0, A.aq)(s.id),
@@ -105,7 +105,7 @@ function M(e) {
     let e = (0, N.MY)(h, U),
       {
         removeGiftRecipientUI: n
-      } = m.m.getCurrentConfig({
+      } = g.m.getCurrentConfig({
         location: "GiftPurchaseConfirmation"
       }, {
         autoTrackExposure: !1,
@@ -124,7 +124,7 @@ function M(e) {
       }), z()]
     })
   }, Q = () => (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(p.Z, {
+    children: [(0, r.jsx)(_.Z, {
       user: h,
       className: L.giftRecipient,
       size: u.EFr.SIZE_80
@@ -142,10 +142,10 @@ function M(e) {
   });
   return b ? (0, r.jsxs)("div", {
     className: L.confirmation,
-    children: [null != n ? (0, r.jsx)(_.Z, {
+    children: [null != n ? (0, r.jsx)(p.Z, {
       game: n,
       className: L.__invalid_icon,
-      size: _.Z.Sizes.LARGE,
+      size: p.Z.Sizes.LARGE,
       skuId: H()
     }) : null, (0, r.jsx)(u.$jN, {
       type: u.RAz.PULSING_ELLIPSIS
@@ -154,10 +154,10 @@ function M(e) {
     className: a()(L.confirmation, {
       [L.seasonalConfirmationPadding]: Z
     }),
-    children: [null != n ? (0, r.jsx)(_.Z, {
+    children: [null != n ? (0, r.jsx)(p.Z, {
       game: n,
       className: L.__invalid_icon,
-      size: _.Z.Sizes.LARGE,
+      size: p.Z.Sizes.LARGE,
       skuId: H()
     }) : null, (0, r.jsx)(u.X6q, {
       variant: "heading-lg/semibold",
@@ -177,7 +177,7 @@ let j = e => {
   i.useEffect(() => {
     f.Z.fetchRelationships(), (0, v.W)()
   }, []);
-  let [o, a] = i.useState(), [s, _] = i.useState(!1), [m, g] = i.useState(!1), {
+  let [o, a] = i.useState(), [s, p] = i.useState(!1), [g, m] = i.useState(!1), {
     userAffinities: E,
     isLoading: y
   } = (0, c.cj)([b.Z], () => ({
@@ -196,7 +196,7 @@ let j = e => {
         placeholder: w.NW.string(w.t.J019jY),
         wrapperClassName: L.giftRecipientInputWrapper,
         className: s ? L.giftRecipientInputError : void 0,
-        renderOptionPrefix: e => (null == e ? void 0 : e.value) == null ? null : (0, r.jsx)(p.Z, {
+        renderOptionPrefix: e => (null == e ? void 0 : e.value) == null ? null : (0, r.jsx)(_.Z, {
           user: e.value,
           size: u.EFr.SIZE_20
         }),
@@ -205,7 +205,7 @@ let j = e => {
         }) : null,
         value: o,
         onChange: e => {
-          a(e), _(!1)
+          a(e), p(!1)
         },
         options: P.map(e => ({
           value: e,
@@ -213,13 +213,13 @@ let j = e => {
         }))
       }), (0, r.jsx)(u.zxk, {
         disabled: null == o,
-        submitting: m,
+        submitting: g,
         className: L.sendToRecipientButton,
         onClick: () => {
-          g(!0), (0, h.YD)(o, t).then(() => {
+          m(!0), (0, h.YD)(o, t).then(() => {
             n(), (0, d.Ou)()
           }).catch(() => {
-            _(!0), g(!1)
+            p(!0), m(!1)
           })
         },
         children: w.NW.string(w.t["+EgwQk"])

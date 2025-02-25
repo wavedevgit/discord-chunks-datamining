@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(846519),
   i = n(147913),
@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,13 +34,13 @@ function p(e) {
   }
   return e
 }
-let _ = 5 * l.Z.Millis.MINUTE;
+let p = 5 * l.Z.Millis.MINUTE;
 class h extends i.Z {
   _terminate() {
     this.stopHeartbeat()
   }
   maybeStartHeartbeat() {
-    this.heartbeatInterval.isStarted() || (this.logRunningGameHeartbeats(), this.heartbeatInterval.start(_, this.logRunningGameHeartbeats))
+    this.heartbeatInterval.isStarted() || (this.logRunningGameHeartbeats(), this.heartbeatInterval.start(p, this.logRunningGameHeartbeats))
   }
   stopHeartbeat() {
     this.heartbeatInterval.stop(), this.runningGameKeys.clear()
@@ -75,7 +75,7 @@ class h extends i.Z {
         let a = (0, u.rH)(e),
           l = !this.runningGameKeys.has(a),
           f = null !== (i = e.id) && void 0 !== i ? i : null === (r = o.Z.getGameByName(e.name)) || void 0 === r ? void 0 : r.id;
-        s.default.track(d.rMx.RUNNING_GAME_HEARTBEAT, p({
+        s.default.track(d.rMx.RUNNING_GAME_HEARTBEAT, _({
           game_id: f,
           game_name: e.name,
           game_distributor: e.distributor,
@@ -87,4 +87,4 @@ class h extends i.Z {
     })
   }
 }
-let m = new h
+let g = new h

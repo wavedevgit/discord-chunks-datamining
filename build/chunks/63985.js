@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(678916),
   i = n(190378),
@@ -13,8 +13,8 @@ var r = n(678916),
   u = n(221226),
   d = n(979954),
   f = n(197231),
-  p = n(48539);
-let _ = () => ({
+  _ = n(48539);
+let p = () => ({
   [r.dp.OPTION_1]: {
     id: r.dp.OPTION_1,
     source: l.Z,
@@ -58,7 +58,7 @@ let _ = () => ({
   },
   [r.dp.OPTION_10]: {
     id: r.dp.OPTION_10,
-    source: p.Z,
+    source: _.Z,
     name: o.NW.string(o.t.TSTgyM),
     isVideo: !0,
     hotspotLocation: i.v.ANIMATED_VIDEO_BG_WUMPICE_NEW

@@ -23,11 +23,11 @@ let c = null,
   u = {},
   d = {},
   f = {},
-  p = {},
-  _ = [],
+  _ = {},
+  p = [],
   h = 0,
-  m = 0,
-  g = {
+  g = 0,
+  m = {
     "1f3fb": 0,
     "1f3fc": 1,
     "1f3fd": 2,
@@ -43,7 +43,7 @@ let c = null,
   I = /\ud83c[\udffb-\udfff](?=\ud83c[\udffb-\udfff])|(?:[^\ud800-\udfff][\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]?|[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\ud800-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?(?:\u200d(?:[^\ud800-\udfff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?)*/g;
 for (let e = 0; e < E.length; e++) {
   let t = E[e];
-  f["skin-tone-".concat(e + 1)] = t, p[t] = "skin-tone-".concat(e + 1)
+  f["skin-tone-".concat(e + 1)] = t, _[t] = "skin-tone-".concat(e + 1)
 }
 class T {
   get names() {
@@ -86,7 +86,7 @@ class T {
     return null != e ? a.ZP.getURL(e.surrogates) : a.ZP.getURL(this.surrogates)
   }
   get name() {
-    return this.hasDiversity && null != c ? "".concat(this.uniqueName, "::").concat(p[c]) : this.uniqueName
+    return this.hasDiversity && null != c ? "".concat(this.uniqueName, "::").concat(_[c]) : this.uniqueName
   }
   get optionallyDiverseSequence() {
     let e = this.defaultDiversityChild;
@@ -117,9 +117,9 @@ for (let e in N) {
     let t = new T(e),
       n = t.surrogates,
       r = t.uniqueName;
-    if (t.setSpriteSheetIndex(t.hasDiversity ? h++ : m++), p[n] = r, 0 > n.indexOf("‍")) {
+    if (t.setSpriteSheetIndex(t.hasDiversity ? h++ : g++), _[n] = r, 0 > n.indexOf("‍")) {
       let e = n.replace("️", "");
-      e !== n && (p[e] = r)
+      e !== n && (_[e] = r)
     }
     for (let e of t.names) d[e] = t, f[e] = n;
     let i = t.diversityChildren;
@@ -128,15 +128,15 @@ for (let e in N) {
         r = n.surrogates;
       for (let e of n.names) d[e] = n, f[e] = r;
       if (!e.hasMultiDiversity) {
-        let t = g[n.emojiObject.diversity[0]];
+        let t = m[n.emojiObject.diversity[0]];
         for (let i of e.names) {
           let e = "".concat(i, "::skin-tone-").concat(t + 1);
           f[e] = r, d[e] = n
         }
       }
-      p[r] = n.uniqueName
+      _[r] = n.uniqueName
     }
-    return _.push(t), t
+    return p.push(t), t
   });
   u[e] = a.ZP.filterUnsupportedEmojis(t)
 }
@@ -175,7 +175,7 @@ function x(e) {
 }
 
 function M(e) {
-  let t = p[e];
+  let t = _[e];
   return null != t ? {
     type: "emoji",
     surrogate: e,
@@ -242,7 +242,7 @@ function Z(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "",
     r = n;
-  return Object.prototype.hasOwnProperty.call(p, e) && (r = p[e]), t ? ":".concat(r, ":") : r
+  return Object.prototype.hasOwnProperty.call(_, e) && (r = _[e]), t ? ":".concat(r, ":") : r
 }
 
 function H(e) {
@@ -268,14 +268,14 @@ let W = {
     return Object.prototype.hasOwnProperty.call(y, e) && (r = y[e]), t ? ":".concat(r, ":") : r
   },
   convertSurrogateToBase: H,
-  forEach: e => i().each(_, e),
-  all: () => _,
+  forEach: e => i().each(p, e),
+  all: () => p,
   numDiversitySprites: h,
-  numNonDiversitySprites: m,
+  numNonDiversitySprites: g,
   EMOJI_NAME_RE: v,
   EMOJI_NAME_AND_DIVERSITY_RE: b,
   EMOJI_SHORTCUT_RE: O,
   hasSurrogates: function e(e) {
-    return i().toArray(e).some(e => null != p[e])
+    return i().toArray(e).some(e => null != _[e])
   }
 }

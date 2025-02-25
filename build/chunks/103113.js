@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(688465),
   d = n(680295),
   f = n(5192),
-  p = n(785717),
-  _ = n(221292),
+  _ = n(785717),
+  p = n(221292),
   h = n(687158),
-  m = n(899007),
-  g = n(648052),
+  g = n(899007),
+  m = n(648052),
   E = n(867176),
   v = n(280885),
   b = n(502762),
@@ -64,7 +64,7 @@ function P(e) {
     newAnalyticsLocations: M = []
   } = e, j = (0, h.ZP)(t.id, n), {
     analyticsLocations: k
-  } = (0, l.ZP)([...M, s.Z.BITE_SIZE_PROFILE_POPOUT]), U = (0, p.ZB)({
+  } = (0, l.ZP)([...M, s.Z.BITE_SIZE_PROFILE_POPOUT]), U = (0, _.ZB)({
     layout: "BITE_SIZE_POPOUT",
     userId: t.id,
     guildId: n,
@@ -85,7 +85,7 @@ function P(e) {
       id: "view-profile",
       label: N.NW.string(N.t["+Xp3ho"]),
       action: () => {
-        F(), (0, _.pQ)(R({
+        F(), (0, p.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: k
         }, U))
@@ -93,7 +93,7 @@ function P(e) {
     }) : null;
   return (0, r.jsx)(l.Gt, {
     value: k,
-    children: (0, r.jsx)(p.Mt, {
+    children: (0, r.jsx)(_.Mt, {
       value: U,
       children: (0, r.jsxs)(o.VqE, {
         ref: G,
@@ -115,7 +115,7 @@ function P(e) {
               displayProfile: j,
               guildId: n,
               profileType: T.y0.BITE_SIZE
-            }), (0, r.jsx)(m.Z, {
+            }), (0, r.jsx)(g.Z, {
               user: t,
               displayProfile: j,
               guildId: n,
@@ -133,7 +133,7 @@ function P(e) {
               profileType: T.y0.BITE_SIZE,
               nickname: f.ZP.getName(n, C, t),
               onOpenProfile: V ? F : void 0,
-              tags: (0, r.jsx)(g.Z, {
+              tags: (0, r.jsx)(m.Z, {
                 displayProfile: j,
                 profileType: T.y0.BITE_SIZE,
                 onClose: L

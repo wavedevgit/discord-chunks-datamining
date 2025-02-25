@@ -29,13 +29,13 @@ function f(e) {
   return d(e) && !s.has(e.id) && (s.add(e.id), t = !0), !d(e) && s.has(e.id) && (s.delete(e.id), t = !0), !d(e) && l.has(e.id) && (l.delete(e.id), t = !0), t
 }
 
-function p(e) {
+function _(e) {
   var t;
   null != e && (u = null !== (t = (0, r.Zz)(e)) && void 0 !== t ? t : (0, r.K4)())
 }
 
-function _(e) {
-  "CONNECTION_OPEN" === e.type && p(e.countryCode), s.clear(), l.clear(), Object.values(i.Z.getMutablePrivateChannels()).forEach(e => {
+function p(e) {
+  "CONNECTION_OPEN" === e.type && _(e.countryCode), s.clear(), l.clear(), Object.values(i.Z.getMutablePrivateChannels()).forEach(e => {
     f(e)
   }), c = !0
 }
@@ -47,14 +47,14 @@ function h(e) {
   l.add(t)
 }
 
-function m(e) {
+function g(e) {
   let {
     channel: t
   } = e;
   return f(t)
 }
 
-function g(e) {
+function m(e) {
   let {
     channels: t
   } = e;
@@ -79,7 +79,7 @@ function b(e) {
   let {
     countryCode: t
   } = e;
-  p(t)
+  _(t)
 }
 class y extends o.Z {
   initialize() {
@@ -115,12 +115,12 @@ class y extends o.Z {
   }
   constructor() {
     super({
-      CONNECTION_OPEN: _,
-      CONNECTION_OPEN_SUPPLEMENTAL: _,
+      CONNECTION_OPEN: p,
+      CONNECTION_OPEN_SUPPLEMENTAL: p,
       CACHE_LOADED_LAZY: () => this.loadCache(),
       OVERLAY_INITIALIZE: v,
-      CHANNEL_CREATE: m,
-      CHANNEL_UPDATES: g,
+      CHANNEL_CREATE: g,
+      CHANNEL_UPDATES: m,
       CHANNEL_DELETE: E,
       SET_LOCATION_METADATA: b,
       MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: h

@@ -25,12 +25,12 @@ let d = {
       n = e.options,
       o = e.name;
     if (!t.modifiersData[o]._skip) {
-      for (var d = n.mainAxis, f = void 0 === d || d, p = n.altAxis, _ = void 0 === p || p, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, v = n.altBoundary, b = n.flipVariations, y = void 0 === b || b, O = n.allowedAutoPlacements, S = t.options.placement, I = (0, i.Z)(S) === S, T = h || (I || !y ? [(0, r.Z)(S)] : u(S)), N = [S].concat(T).reduce(function(e, n) {
+      for (var d = n.mainAxis, f = void 0 === d || d, _ = n.altAxis, p = void 0 === _ || _, h = n.fallbackPlacements, g = n.padding, m = n.boundary, E = n.rootBoundary, v = n.altBoundary, b = n.flipVariations, y = void 0 === b || b, O = n.allowedAutoPlacements, S = t.options.placement, I = (0, i.Z)(S) === S, T = h || (I || !y ? [(0, r.Z)(S)] : u(S)), N = [S].concat(T).reduce(function(e, n) {
           return e.concat((0, i.Z)(n) === l.d7 ? (0, s.Z)(t, {
             placement: n,
-            boundary: g,
+            boundary: m,
             rootBoundary: E,
-            padding: m,
+            padding: g,
             flipVariations: y,
             allowedAutoPlacements: O
           }) : n)
@@ -42,16 +42,16 @@ let d = {
           k = j ? "width" : "height",
           U = (0, a.Z)(t, {
             placement: L,
-            boundary: g,
+            boundary: m,
             rootBoundary: E,
             altBoundary: v,
-            padding: m
+            padding: g
           }),
           G = j ? M ? l.F2 : l.t$ : M ? l.I : l.we;
         A[k] > C[k] && (G = (0, r.Z)(G));
         var B = (0, r.Z)(G),
           F = [];
-        if (f && F.push(U[x] <= 0), _ && F.push(U[G] <= 0, U[B] <= 0), F.every(function(e) {
+        if (f && F.push(U[x] <= 0), p && F.push(U[G] <= 0, U[B] <= 0), F.every(function(e) {
             return e
           })) {
           D = L, P = !1;

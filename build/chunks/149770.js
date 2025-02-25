@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(47120);
 var r = n(570140),
   i = n(287734),
@@ -21,7 +21,7 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class p extends o.Z {
+class _ extends o.Z {
   handleGuildCreate(e) {
     let {
       guild: t
@@ -54,4 +54,4 @@ class p extends o.Z {
     })
   }
 }
-let _ = new p
+let p = new _

@@ -1,6 +1,6 @@
 /** Chunk was on 11814 **/
 n.d(t, {
-  O: () => P
+  O: () => T
 }), n(653041), n(571269), n(298267), n(266796), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -29,7 +29,7 @@ var r = n(200651),
   I = n(388032),
   S = n(405796);
 
-function P(e) {
+function T(e) {
   let {
     app: t,
     embedUrl: n,
@@ -37,9 +37,9 @@ function P(e) {
     activityReferrerId: b
   } = e, {
     name: S,
-    bot: P,
+    bot: T,
     isDiscoverable: w
-  } = t, Z = null == P ? void 0 : P.id, k = (0, j.Eb)({
+  } = t, Z = null == T ? void 0 : T.id, k = (0, j.Eb)({
     customInstallUrl: t.customInstallUrl,
     installParams: t.installParams,
     integrationTypesConfig: t.integrationTypesConfig
@@ -49,7 +49,7 @@ function P(e) {
   }), M = (0, f.PL)(!0, !1), W = (0, f.LD)(D, !1), F = (0, j.TK)(t.id, M), U = (0, j.TK)(t.id, W), B = (0, p.ye)(t), G = E.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
-    bot: P
+    bot: T
   }), {
     url: H
   } = (0, c.Z)({
@@ -63,17 +63,17 @@ function P(e) {
   } = i.useMemo(() => {
     let e, n;
     let r = N.u.BOT;
-    if (null != P) {
+    if (null != T) {
       let {
         banner: t
-      } = P;
+      } = T;
       e = (0, E.aN)({
-        id: P.id,
+        id: T.id,
         banner: t,
         size: 512,
         canAnimate: !1
       }), (0, E.xR)(t) && null == H && (n = (0, E.aN)({
-        id: P.id,
+        id: T.id,
         banner: t,
         size: 512,
         canAnimate: !0
@@ -90,7 +90,7 @@ function P(e) {
       videoBannerSrc: n,
       bannerAspectRatio: r
     }
-  }, [H, P, B, t]), {
+  }, [H, T, B, t]), {
     analyticsLocations: Y
   } = (0, u.ZP)(d.Z.APP_MESSAGE_EMBED), X = (0, o.e7)([v.Z, y.Z, x.Z], () => {
     let e = v.Z.getChannel(x.Z.getChannelId());
@@ -119,7 +119,7 @@ function P(e) {
       type: "contextless"
     },
     applicationId: t.id,
-    botUserId: null == P ? void 0 : P.id
+    botUserId: null == T ? void 0 : T.id
   }), et = null != Z && B && ee, en = i.useMemo(() => {
     let e = [];
     return et && e.push({
@@ -150,7 +150,7 @@ function P(e) {
     embedUrl: n,
     info: B ? (0, r.jsx)(A, {
       app: t
-    }) : (0, r.jsx)(T, {
+    }) : (0, r.jsx)(P, {
       app: t,
       isGuildInstallable: R
     }),
@@ -158,7 +158,7 @@ function P(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   var t, n, a;
   let {
     app: s,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L: () => g
+  L: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,9 +13,9 @@ var r = n(200651),
   u = n(390507),
   d = n(679400),
   f = n(580747),
-  p = n(650601);
+  _ = n(650601);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,26 +31,26 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   let {
     color: o,
     src: s,
-    size: _ = "md",
-    width: m,
-    height: g,
+    size: p = "md",
+    width: g,
+    height: m,
     className: E,
     initialAnimation: v,
     markers: b
-  } = e, [y, O] = i.useState(null), S = i.useRef(null), I = i.useRef(null), T = i.useRef(null), N = "custom" === _ ? {
-    width: m,
-    height: g
-  } : (0, u.m)(_), A = !(0, f.Z)("lottie_hover_multiple_loop"), C = i.useContext(c.S).reducedMotion.enabled, {
+  } = e, [y, O] = i.useState(null), S = i.useRef(null), I = i.useRef(null), T = i.useRef(null), N = "custom" === p ? {
+    width: g,
+    height: m
+  } : (0, u.m)(p), A = !(0, f.Z)("lottie_hover_multiple_loop"), C = i.useContext(c.S).reducedMotion.enabled, {
     enabled: R
   } = d.Z.useExperiment({
     location: "LottieIcon web entry point"
@@ -98,8 +98,8 @@ function m(e, t) {
       "--__lottieIconColor": null != o && "string" == typeof o ? o : null == o ? void 0 : o.css,
       display: "flex"
     }, N),
-    className: a()(p.lottieIcon, E),
+    className: a()(_.lottieIcon, E),
     ref: S
   })
 }
-let g = i.forwardRef(m)
+let m = i.forwardRef(g)

@@ -24,7 +24,7 @@ function l(e) {
     lazyCleanUpDelay: c
   } = e, u = i.useRef(-1);
   i.useLayoutEffect(() => () => clearTimeout(u.current));
-  let [, d] = i.useState(a), f = i.useRef(null), p = i.useMemo(() => {
+  let [, d] = i.useState(a), f = i.useRef(null), _ = i.useMemo(() => {
     var e;
     let r = new Set(null === (e = f.current) || void 0 === e ? void 0 : e.keys()),
       i = new Map(f.current);
@@ -80,13 +80,13 @@ function l(e) {
     }
     return i
   }, [t, o, n, c]);
-  i.useInsertionEffect(() => (f.current = p, () => {
+  i.useInsertionEffect(() => (f.current = _, () => {
     var e;
     return null === (e = f.current) || void 0 === e ? void 0 : e.clear()
-  }), [p]);
-  let _ = [];
-  for (let [, e] of p) _.push(e.children);
+  }), [_]);
+  let p = [];
+  for (let [, e] of _) p.push(e.children);
   return (0, r.jsx)(r.Fragment, {
-    children: _.length > 0 ? l(_, t) : null
+    children: p.length > 0 ? l(p, t) : null
   })
 }

@@ -12,11 +12,11 @@ var r, i = n(392711),
   u = n(594190),
   d = n(314897),
   f = n(173747),
-  p = n(780570),
-  _ = n(830168),
+  _ = n(780570),
+  p = n(830168),
   h = n(358085),
-  m = n(417363),
-  g = n(981631),
+  g = n(417363),
+  m = n(981631),
   E = n(186901);
 
 function v(e, t, n) {
@@ -61,34 +61,34 @@ function L() {
     } = e, {
       applicationId: r,
       branchId: i
-    } = (0, p.CP)(t);
+    } = (0, _.CP)(t);
     if (!w(r, i)) {
       let e = d.default.getToken(),
         t = d.default.getId();
       if (null == e) throw Error("missing user token");
-      R = !_.Z.setCurrentTask(r, i, n, t, e)
+      R = !p.Z.setCurrentTask(r, i, n, t, e)
     }
   }
 }
 
 function x(e, t) {
-  let n = (0, p.Tu)(e, t);
+  let n = (0, _.Tu)(e, t);
   return O.findIndex(e => e.comboId === n)
 }
 
 function M(e, t, n, r) {
-  let i = (0, p.Tu)(e, t),
+  let i = (0, _.Tu)(e, t),
     o = {
       comboId: i,
       action: r
     },
     a = S.indexOf(i); - 1 !== a && S.splice(a, 1);
   let s = x(e, t);
-  0 !== s && (n ? -1 === s && (O.push(o), L()) : (s > 0 && O.splice(s, 1), O.unshift(o), L())), !n && I && _.Z.resume(), D()
+  0 !== s && (n ? -1 === s && (O.push(o), L()) : (s > 0 && O.splice(s, 1), O.unshift(o), L())), !n && I && p.Z.resume(), D()
 }
 
 function j(e, t) {
-  let n = (0, p.Tu)(e, t),
+  let n = (0, _.Tu)(e, t),
     r = S.indexOf(n); - 1 !== r && S.splice(r, 1);
   let i = x(e, t); - 1 !== i && (O.splice(i, 1), D()), L()
 }
@@ -98,7 +98,7 @@ function k(e) {
     applicationId: t,
     branchId: n
   } = e;
-  C.set((0, p.Tu)(t, n), "Install"), M(t, n, !1, "Patch")
+  C.set((0, _.Tu)(t, n), "Install"), M(t, n, !1, "Patch")
 }
 
 function U(e) {
@@ -110,7 +110,7 @@ function G(e) {
     applicationId: t,
     branchId: n
   } = e;
-  C.set((0, p.Tu)(t, n), "Repair"), M(t, n, !1, "Repair")
+  C.set((0, _.Tu)(t, n), "Repair"), M(t, n, !1, "Repair")
 }
 
 function B(e) {
@@ -136,21 +136,21 @@ function V(e) {
     branchId: n
   } = e, r = x(t, n);
   if (r < 1) return !1;
-  O.splice(0, 0, O.splice(r, 1)[0]), L(), I && _.Z.resume(), D()
+  O.splice(0, 0, O.splice(r, 1)[0]), L(), I && p.Z.resume(), D()
 }
 
 function Z(e) {
   let {
     applicationId: t,
     branchId: n
-  } = e, r = (0, p.Tu)(t, n), i = S.indexOf(r); - 1 !== i && S.splice(i, 1)
+  } = e, r = (0, _.Tu)(t, n), i = S.indexOf(r); - 1 !== i && S.splice(i, 1)
 }
 
 function H(e) {
   let {
     state: t
   } = e;
-  A || (A = !0, L(), I || _.Z.resume());
+  A || (A = !0, L(), I || p.Z.resume());
   let n = I;
   I = t.paused, T = t.currentTask, N = t.nextTask;
   let r = !1;
@@ -160,8 +160,8 @@ function H(e) {
     } = e, {
       applicationId: n,
       branchId: i
-    } = (0, p.CP)(t), a = m.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
-    if (null != a && a.type === g.vxO.UP_TO_DATE && a.buildId === a.targetBuildId && a.buildId === s && o().isEqual(a.manifestIds, a.targetManifestIds) && o().isEqual(a.manifestIds, l)) {
+    } = (0, _.CP)(t), a = g.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
+    if (null != a && a.type === m.vxO.UP_TO_DATE && a.buildId === a.targetBuildId && a.buildId === s && o().isEqual(a.manifestIds, a.targetManifestIds) && o().isEqual(a.manifestIds, l)) {
       if (S.push(t), C.has(t)) {
         switch (C.get(t)) {
           case "Install":
@@ -181,7 +181,7 @@ function H(e) {
 function W() {
   let e = d.default.getToken(),
     t = d.default.getId();
-  null != e && _.Z.setCredentials(t, e)
+  null != e && p.Z.setCredentials(t, e)
 }
 
 function Y(e) {
@@ -218,7 +218,7 @@ function z() {
 }
 
 function q() {
-  s.K.remove(y), (0, h.isDesktop)() && _.Z.pause()
+  s.K.remove(y), (0, h.isDesktop)() && p.Z.pause()
 }
 
 function Q(e) {
@@ -235,18 +235,18 @@ class X extends(r = a.ZP.Store) {
       paused: null,
       userActions: null
     };
-    null != t.queue && (O = Q(t.queue)), null != t.paused && (I = t.paused), null != t.userActions && (C = new Map(Array.from(t.userActions))), this.waitFor(m.Z, u.ZP), this.syncWith([u.ZP], K), this.waitFor(m.Z)
+    null != t.queue && (O = Q(t.queue)), null != t.paused && (I = t.paused), null != t.userActions && (C = new Map(Array.from(t.userActions))), this.waitFor(g.Z, u.ZP), this.syncWith([u.ZP], K), this.waitFor(g.Z)
   }
   get activeItems() {
     return O.map(e => {
       let {
         comboId: t
       } = e;
-      return (0, p.CP)(t)
+      return (0, _.CP)(t)
     })
   }
   get finishedItems() {
-    return S.map(p.CP)
+    return S.map(_.CP)
   }
   get paused() {
     return I

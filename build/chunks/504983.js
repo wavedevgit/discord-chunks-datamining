@@ -36,13 +36,13 @@ let c = {
     });
     let {
       border: f,
-      background: p
+      background: _
     } = c[i];
     return (0, r.jsx)("div", {
       ref: t,
       className: a()(f, u),
       children: (0, r.jsx)("div", {
-        className: a()(l ? p : s.background, d),
+        className: a()(l ? _ : s.background, d),
         children: n
       })
     })

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -14,33 +14,33 @@ var i = n(442837),
   u = n(180335),
   d = n(553795),
   f = n(981631),
-  p = n(388032);
+  _ = n(388032);
 
-function _(e) {
+function p(e) {
   let {
     activity: t,
     entry: n,
-    display: _,
+    display: p,
     onAction: h,
-    onClose: m
-  } = e, g = (0, i.e7)([d.Z], () => null != d.Z.getAccount(null, f.ABu.CRUNCHYROLL));
+    onClose: g
+  } = e, m = (0, i.e7)([d.Z], () => null != d.Z.getAccount(null, f.ABu.CRUNCHYROLL));
   if (!(0, l.Z)(t) && !(0, u.gr)(n)) return null;
-  if (!g) return (0, r.jsx)(o.sNh, {
+  if (!m) return (0, r.jsx)(o.sNh, {
     id: "connect-crunchyroll",
-    label: p.NW.formatToPlainString(p.t.XWSHTU, {
+    label: _.NW.formatToPlainString(_.t.XWSHTU, {
       platform: s.Z.get(f.ABu.CRUNCHYROLL).name
     }),
     action: () => {
       null == h || h({
         action: "PRESS_CONNECT_CRUNCHYROLL_MENU_ITEM"
-      }), a.Z.open(f.oAB.CONNECTIONS), null == m || m()
+      }), a.Z.open(f.oAB.CONNECTIONS), null == g || g()
     }
   });
-  if ("recent" !== _ || !(0, u.gr)(n)) return null;
+  if ("recent" !== p || !(0, u.gr)(n)) return null;
   let E = n.extra.url;
   return null == E || "" === E ? null : (0, r.jsx)(o.sNh, {
     id: "watch-on-crunchyroll",
-    label: p.NW.string(p.t.OpxQVF),
+    label: _.NW.string(_.t.OpxQVF),
     action: () => {
       null == h || h({
         action: "PRESS_WATCH_ON_CRUNCHYROLL_MENU_ITEM"

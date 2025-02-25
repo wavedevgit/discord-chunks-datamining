@@ -13,11 +13,11 @@ var r = n(108131),
   u = n(339085),
   d = n(926491),
   f = n(592125),
-  p = n(430824),
-  _ = n(709054),
+  _ = n(430824),
+  p = n(709054),
   h = n(38618);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,7 +25,7 @@ function m(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let g = 2e3,
+let m = 2e3,
   E = new c.Z("EntityVersionsManager");
 class v extends s.Z {
   _initialize() {
@@ -35,7 +35,7 @@ class v extends s.Z {
     a.Z.unsubscribe("CONNECTION_OPEN", y)
   }
   constructor(...e) {
-    super(...e), m(this, "actions", {
+    super(...e), g(this, "actions", {
       GUILD_CREATE: O,
       DELETED_ENTITY_IDS: b
     })
@@ -44,7 +44,7 @@ class v extends s.Z {
 
 function b(e) {
   var t;
-  let n = null === (t = p.Z.getGuild(e.guild_id)) || void 0 === t ? void 0 : t.name;
+  let n = null === (t = _.Z.getGuild(e.guild_id)) || void 0 === t ? void 0 : t.name;
   E.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(n, ")")), o.ZP.Emitter.batched(() => {
     null != e.channels && N(e.guild_id, new Set(e.channels)), null != e.roles && A(e.guild_id, new Set(e.roles)), null != e.emojis && C(e.guild_id, new Set(e.emojis)), null != e.stickers && R(e.guild_id, new Set(e.stickers))
   })
@@ -64,15 +64,15 @@ function O(e) {
 }
 
 function S(e) {
-  setTimeout(() => I(e), Math.ceil(Math.random() * g))
+  setTimeout(() => I(e), Math.ceil(Math.random() * m))
 }
 
 function I(e) {
   var t, n, r;
-  let i = null === (t = p.Z.getGuild(e)) || void 0 === t ? void 0 : t.name;
+  let i = null === (t = _.Z.getGuild(e)) || void 0 === t ? void 0 : t.name;
   E.fileOnly("requesting deleted guild entities (id: ".concat(e, ", name: ").concat(i, ")"));
   let o = T(Object.keys(f.Z.getMutableBasicGuildChannelsForGuild(e))),
-    a = T(Object.keys(p.Z.getRoles(e))),
+    a = T(Object.keys(_.Z.getRoles(e))),
     s = T(u.ZP.getGuildEmoji(e).map(e => e.id)),
     l = T(null !== (r = null === (n = d.Z.getStickersByGuildId(e)) || void 0 === n ? void 0 : n.map(e => e.id)) && void 0 !== r ? r : []);
   h.Z.getSocket().getDeletedEntityIdsNotMatchingHash(e, o, a, s, l)
@@ -83,7 +83,7 @@ function T(e) {
 }
 
 function N(e, t) {
-  let n = _.default.keys(f.Z.getMutableBasicGuildChannelsForGuild(e));
+  let n = p.default.keys(f.Z.getMutableBasicGuildChannelsForGuild(e));
   E.fileOnly("syncChannels", {
     channelIdsInMemory: n,
     channelIdsFromServer: t
@@ -100,7 +100,7 @@ function N(e, t) {
 }
 
 function A(e, t) {
-  _.default.keys(p.Z.getRoles(e)).forEach(n => {
+  p.default.keys(_.Z.getRoles(e)).forEach(n => {
     t.has(n) || a.Z.dispatch({
       type: "GUILD_ROLE_DELETE",
       guildId: e,

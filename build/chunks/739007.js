@@ -17,28 +17,28 @@ let u = e => "".concat(e.toFixed(0), "%"),
       minValue: o = 0,
       maxValue: d = 100,
       onChange: f,
-      onInteraction: p,
-      renderValue: _ = u,
+      onInteraction: _,
+      renderValue: p = u,
       "aria-label": h
-    } = e, m = i.useRef(null), g = i.useRef(a().debounce(() => null == p ? void 0 : p(s.U.SLIDER), 100));
+    } = e, g = i.useRef(null), m = i.useRef(a().debounce(() => null == _ ? void 0 : _(s.U.SLIDER), 100));
     i.useImperativeHandle(t, () => ({
       focus: () => {
         var e;
-        return null === (e = m.current) || void 0 === e ? void 0 : e.focus()
+        return null === (e = g.current) || void 0 === e ? void 0 : e.focus()
       },
       blur: () => {
         var e;
-        return null === (e = m.current) || void 0 === e ? void 0 : e.blur()
+        return null === (e = g.current) || void 0 === e ? void 0 : e.blur()
       },
       activate: () => !1
     }), []);
     let E = e => {
-      f(e), g.current()
+      f(e), m.current()
     };
     return (0, r.jsx)("div", {
       className: c.sliderContainer,
       children: (0, r.jsx)(l.i, {
-        ref: m,
+        ref: g,
         mini: !0,
         handleSize: 16,
         className: c.slider,
@@ -47,7 +47,7 @@ let u = e => "".concat(e.toFixed(0), "%"),
         maxValue: d,
         onValueChange: E,
         asValueChanges: f,
-        onValueRender: _,
+        onValueRender: p,
         orientation: "horizontal",
         "aria-label": h
       })

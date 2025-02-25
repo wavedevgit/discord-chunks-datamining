@@ -28,8 +28,8 @@ var r = n(200651),
   C = n(51144),
   I = n(937889),
   S = n(739566),
-  P = n(779125),
-  T = n(890410),
+  T = n(779125),
+  P = n(890410),
   A = n(464891),
   w = n(507418),
   Z = n(348238),
@@ -276,7 +276,7 @@ let $ = i.memo(function(e) {
     className: B.spanCorrection,
     children: (0, _.Mq)(n, a, () => (0, r.jsx)("div", {
       className: B.channelNameContainer,
-      children: (0, r.jsx)(P.Z, {
+      children: (0, r.jsx)(T.Z, {
         channel: a,
         className: B.channelName,
         openChatWithoutConnecting: !0
@@ -300,7 +300,7 @@ function ee(e) {
     }
   } = (0, R.m)(!0), C = (0, c.JA)(null != n ? n : ""), {
     onFocus: S
-  } = C, P = V(C, ["onFocus"]), {
+  } = C, T = V(C, ["onFocus"]), {
     isFocused: w,
     handleFocus: k,
     handleBlur: D
@@ -379,7 +379,7 @@ function ee(e) {
           className: o()(B.messageContent, {
             [B.compact]: a
           }),
-          children: (0, r.jsx)(T.Z, H(G({}, P), {
+          children: (0, r.jsx)(P.Z, H(G({}, T), {
             message: l,
             channel: ee,
             content: eu,

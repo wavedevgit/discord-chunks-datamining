@@ -11,8 +11,8 @@ var o, a = n(392711),
   u = n(308063),
   d = n(496675),
   f = n(855674),
-  p = n(999382),
-  _ = n(981631);
+  _ = n(999382),
+  p = n(981631);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -23,7 +23,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,14 +35,14 @@ function m(e) {
   }
   return e
 }
-let g = [],
+let m = [],
   E = [],
   v = null,
   b = null,
   y = null,
   O = !1,
   S = !1,
-  I = _.QZA.CLOSED,
+  I = p.QZA.CLOSED,
   T = {},
   N = !1,
   A = null;
@@ -51,9 +51,9 @@ function C(e) {
   let {
     section: t
   } = e;
-  if (t !== _.pNK.INTEGRATIONS) return !1;
+  if (t !== p.pNK.INTEGRATIONS) return !1;
   if (null == r) {
-    let e = p.Z.getGuildId();
+    let e = _.Z.getGuildId();
     null != e && (u.Z.fetchForGuild(e), O = !0), P(!1)
   }
 }
@@ -67,11 +67,11 @@ function R(e) {
 }
 
 function P(e) {
-  if (null != (r = p.Z.getProps().guild) && d.Z.can(_.Plq.MANAGE_GUILD, r)) {
-    let e = p.Z.getProps().integrations;
-    null == e && (S = !0), g = null != e ? e : []
-  } else g = [];
-  if (E = null != r && d.Z.can(_.Plq.MANAGE_WEBHOOKS, r) ? f.Z.getWebhooksForGuild(r.id) : [], !e && null != b) {
+  if (null != (r = _.Z.getProps().guild) && d.Z.can(p.Plq.MANAGE_GUILD, r)) {
+    let e = _.Z.getProps().integrations;
+    null == e && (S = !0), m = null != e ? e : []
+  } else m = [];
+  if (E = null != r && d.Z.can(p.Plq.MANAGE_WEBHOOKS, r) ? f.Z.getWebhooksForGuild(r.id) : [], !e && null != b) {
     let e = K(b.id);
     null != e && (b = e)
   }
@@ -79,11 +79,11 @@ function P(e) {
     let e = z(y.id);
     null != e && (y = e)
   }
-  v = null, I = _.QZA.OPEN, T = {}, N = !1
+  v = null, I = p.QZA.OPEN, T = {}, N = !1
 }
 
 function D() {
-  r = null, g = [], E = [], v = null, b = null, y = null, I = _.QZA.CLOSED, N = !1
+  r = null, m = [], E = [], v = null, b = null, y = null, I = p.QZA.CLOSED, N = !1
 }
 let w = s().debounce(() => {
   N && (null != b ? s().isEqual(b, K(b.id)) && (N = !1) : null != y && s().isEqual(y, z(y.id)) && (N = !1), N || Q.emitChange())
@@ -94,7 +94,7 @@ function L(e) {
     settings: t
   } = e;
   if (null == b) return !1;
-  b = m({}, b), null != t.enableEmoticons && b.enable_emoticons !== t.enableEmoticons && (b.enable_emoticons = t.enableEmoticons, N = !0), null != t.expireBehavior && b.expire_behavior !== t.expireBehavior && (b.expire_behavior = t.expireBehavior, N = !0), null != t.expireGracePeriod && b.expire_grace_period !== t.expireGracePeriod && (b.expire_grace_period = t.expireGracePeriod, N = !0), N && w()
+  b = g({}, b), null != t.enableEmoticons && b.enable_emoticons !== t.enableEmoticons && (b.enable_emoticons = t.enableEmoticons, N = !0), null != t.expireBehavior && b.expire_behavior !== t.expireBehavior && (b.expire_behavior = t.expireBehavior, N = !0), null != t.expireGracePeriod && b.expire_grace_period !== t.expireGracePeriod && (b.expire_grace_period = t.expireGracePeriod, N = !0), N && w()
 }
 
 function x(e) {
@@ -102,17 +102,17 @@ function x(e) {
     settings: t
   } = e;
   if (null == y) return !1;
-  y = m({}, y), null != t.name && y.name !== t.name && (y.name = t.name, N = !0), void 0 !== t.avatar && y.avatar !== t.avatar && (y.avatar = t.avatar, N = !0), null != t.channelId && y.channel_id !== t.channelId && (y.channel_id = t.channelId, N = !0), N && w()
+  y = g({}, y), null != t.name && y.name !== t.name && (y.name = t.name, N = !0), void 0 !== t.avatar && y.avatar !== t.avatar && (y.avatar = t.avatar, N = !0), null != t.channelId && y.channel_id !== t.channelId && (y.channel_id = t.channelId, N = !0), N && w()
 }
 
 function M() {
-  I = _.QZA.SUBMITTING, T = {}
+  I = p.QZA.SUBMITTING, T = {}
 }
 
 function j(e) {
   var t;
-  if (I !== _.QZA.SUBMITTING) return !1;
-  I = _.QZA.OPEN, T = null !== (t = e.errors) && void 0 !== t ? t : {}
+  if (I !== p.QZA.SUBMITTING) return !1;
+  I = p.QZA.OPEN, T = null !== (t = e.errors) && void 0 !== t ? t : {}
 }
 
 function k(e) {
@@ -120,18 +120,18 @@ function k(e) {
     guildId: t,
     integrations: n
   } = e;
-  if (null == r || t !== r.id || I === _.QZA.SUBMITTING) return !1;
+  if (null == r || t !== r.id || I === p.QZA.SUBMITTING) return !1;
   for (let e of (S = !1, n))
-    if (null == g.find(t => {
+    if (null == m.find(t => {
         let {
           id: n
         } = t;
         if (n === e.id) return !0
       })) {
       var i, o;
-      g.push(e), e.type === (null == b ? void 0 : b.type) && (null === (i = e.account) || void 0 === i ? void 0 : i.id) === (null === (o = b.account) || void 0 === o ? void 0 : o.id) && (b = e)
-    } for (let e = g.length - 1; e >= 0; e--) {
-    let t = g[e],
+      m.push(e), e.type === (null == b ? void 0 : b.type) && (null === (i = e.account) || void 0 === i ? void 0 : i.id) === (null === (o = b.account) || void 0 === o ? void 0 : o.id) && (b = e)
+    } for (let e = m.length - 1; e >= 0; e--) {
+    let t = m[e],
       r = n.find(e => {
         let {
           id: n
@@ -139,11 +139,11 @@ function k(e) {
         if (n === t.id) return !0
       });
     if (null != r) {
-      let n = m({}, t, r);
-      (null == b ? void 0 : b.id) !== n.id || (!1 === n.enabled ? b = null : N || (b = n)), g[e] = n
-    } else(null == b ? void 0 : b.id) === t.id && (b = null), g.splice(e, 1)
+      let n = g({}, t, r);
+      (null == b ? void 0 : b.id) !== n.id || (!1 === n.enabled ? b = null : N || (b = n)), m[e] = n
+    } else(null == b ? void 0 : b.id) === t.id && (b = null), m.splice(e, 1)
   }
-  g = [...g], w()
+  m = [...m], w()
 }
 
 function U(e) {
@@ -152,7 +152,7 @@ function U(e) {
     channelId: n,
     webhooks: i
   } = e;
-  if (O = !1, null != r && t === r.id && null != i && I !== _.QZA.SUBMITTING) {
+  if (O = !1, null != r && t === r.id && null != i && I !== p.QZA.SUBMITTING) {
     for (let e = E.length - 1; e >= 0; e--) {
       let t = E[e];
       if (null != n && (null == t ? void 0 : t.channel_id) !== n) continue;
@@ -163,7 +163,7 @@ function U(e) {
         if (n === t.id) return !0
       });
       if (null != r) {
-        let n = m({}, t, r);
+        let n = g({}, t, r);
         E[e] = n, N || (null == y ? void 0 : y.id) !== n.id || (y = n)
       } else(null == y ? void 0 : y.id) === t.id && (y = null), E.splice(e, 1)
     }
@@ -225,7 +225,7 @@ function Y() {
 }
 
 function K(e) {
-  return g.find(t => {
+  return m.find(t => {
     let {
       id: n
     } = t;
@@ -243,7 +243,7 @@ function z(e) {
 }
 class q extends(o = l.ZP.Store) {
   initialize() {
-    this.waitFor(p.Z, f.Z, d.Z)
+    this.waitFor(_.Z, f.Z, d.Z)
   }
   hasChanges() {
     return N
@@ -252,7 +252,7 @@ class q extends(o = l.ZP.Store) {
     return r
   }
   get integrations() {
-    return g
+    return m
   }
   get webhooks() {
     return E
@@ -273,7 +273,7 @@ class q extends(o = l.ZP.Store) {
     return T
   }
   getSection() {
-    return null != i ? i : _.b4C.OVERVIEW
+    return null != i ? i : p.b4C.OVERVIEW
   }
   getSectionId() {
     return A
@@ -292,7 +292,7 @@ class q extends(o = l.ZP.Store) {
   }
   getApplication(e) {
     var t;
-    return null === (t = g.find(t => {
+    return null === (t = m.find(t => {
       var n;
       return (null === (n = t.application) || void 0 === n ? void 0 : n.id) === e
     })) || void 0 === t ? void 0 : t.application

@@ -14,11 +14,11 @@ var i = n(952265),
   u = n(926491),
   d = n(373228),
   f = n(419922),
-  p = n(430824),
-  _ = n(626135),
+  _ = n(430824),
+  p = n(626135),
   h = n(483360),
-  m = n(877565),
-  g = n(590921),
+  g = n(877565),
+  m = n(590921),
   E = n(665692),
   v = n(981631),
   b = n(388032),
@@ -102,23 +102,23 @@ let w = {
         r = Math.max(T, I - d.length);
       f = t.slice(0, r), "-" === n[0] && (f = t.filter(e => e.sticker.name === n))
     }
-    let p = [];
-    o && (p = h.ZP.querySoundmoji(n, e).map(e => ({
+    let _ = [];
+    o && (_ = h.ZP.querySoundmoji(n, e).map(e => ({
       sound: e
-    })).slice(0, N), "-" === n[0] && (p = p.filter(e => e.sound.name === n)));
-    let _ = d.slice(0, Math.max(C, u - f.length - p.length));
+    })).slice(0, N), "-" === n[0] && (_ = _.filter(e => e.sound.name === n)));
+    let p = d.slice(0, Math.max(C, u - f.length - _.length));
     return {
       results: {
-        emojis: _,
+        emojis: p,
         emojisLocked: [],
         stickers: f,
-        soundmoji: p
+        soundmoji: _
       },
       metadata: {
-        numEmojiResults: _.length,
+        numEmojiResults: p.length,
         numLockedEmojiResults: 0,
         numStickerResults: f.length,
-        numSoundmojiResults: p.length
+        numSoundmojiResults: _.length
       }
     }
   },
@@ -134,16 +134,16 @@ let w = {
       query: u,
       onHover: d,
       onClick: f
-    } = e, _ = () => {
+    } = e, p = () => {
       (0, i.ZD)(async () => {
         let {
           default: e
         } = await n.e("9766").then(n.bind(n, 889684));
         return t => (0, r.jsx)(e, S({}, t))
       })
-    }, h = t.length > 0 || l.length > 0, g = a.length > 0;
+    }, h = t.length > 0 || l.length > 0, m = a.length > 0;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, m.HI)({
+      children: [(0, g.HI)({
         query: u,
         selectedIndex: c,
         autocompletes: t,
@@ -156,16 +156,16 @@ let w = {
           emoji: e,
           key: e.id || e.uniqueName || e.name,
           sentinel: E.Iv,
-          guild: null != e.guildId ? p.Z.getGuild(e.guildId) : null
+          guild: null != e.guildId ? _.Z.getGuild(e.guildId) : null
         }),
         getQuery: e => "".concat(E.Iv).concat(e),
         key: "emoji"
-      }), l.length > 0 ? (0, m.HI)({
+      }), l.length > 0 ? (0, g.HI)({
         query: u,
         selectedIndex: c,
         autocompletes: l,
         onHover: d,
-        onClick: _,
+        onClick: p,
         titleWithQuery: 0 === t.length ? b.t.ksAVYm : null,
         titleWithoutQuery: 0 === t.length ? b.NW.string(b.t.sMOuub) : null,
         Component: o.ZP.EmojiUpsell,
@@ -181,9 +181,9 @@ let w = {
         getQuery: e => "".concat(E.Iv).concat(e),
         key: "emoji-upsell",
         indexOffset: t.length
-      }) : null, h && g && (0, r.jsx)(o.ZP.Divider, {
+      }) : null, h && m && (0, r.jsx)(o.ZP.Divider, {
         className: y.divider
-      }), (0, m.HI)({
+      }), (0, g.HI)({
         query: u,
         selectedIndex: c,
         autocompletes: a,
@@ -208,9 +208,9 @@ let w = {
         key: "stickers",
         indexOffset: t.length + l.length,
         headerClassName: h ? y.secondarySection : void 0
-      }), (h || g) && s.length > 0 && (0, r.jsx)(o.ZP.Divider, {
+      }), (h || m) && s.length > 0 && (0, r.jsx)(o.ZP.Divider, {
         className: y.divider
-      }), (0, m.HI)({
+      }), (0, g.HI)({
         query: u,
         selectedIndex: c,
         autocompletes: s,
@@ -231,7 +231,7 @@ let w = {
         getQuery: e => e,
         key: "soundmoji",
         indexOffset: t.length + l.length + a.length,
-        headerClassName: h || g ? y.secondarySection : void 0
+        headerClassName: h || m ? y.secondarySection : void 0
       })]
     })
   },
@@ -250,7 +250,7 @@ let w = {
     if (o < t.length) {
       let e = t[o];
       return a.insertText(P(e), D(e)), {
-        type: g.z2.EMOJI,
+        type: m.z2.EMOJI,
         metadata: {
           emojiId: e.id,
           numEmojiResults: t.length,
@@ -267,7 +267,7 @@ let w = {
     if ((o -= n.length) < i.length) {
       let e = i[o];
       return a.insertText(""), a.sendSticker(e.sticker, d.V0.AUTOCOMPLETE), {
-        type: g.z2.STICKER,
+        type: m.z2.STICKER,
         metadata: {
           numEmojiResults: t.length,
           numStickerResults: i.length,
@@ -277,14 +277,14 @@ let w = {
     }
     if ((o -= i.length) < r.length) {
       let e = r[o];
-      return a.insertText((0, s.Z)(e.sound.guildId, e.sound.soundId)), _.default.track(v.rMx.SOUNDMOJI_SELECT, {
+      return a.insertText((0, s.Z)(e.sound.guildId, e.sound.soundId)), p.default.track(v.rMx.SOUNDMOJI_SELECT, {
         channel_id: l.id,
         guild_id: l.guild_id,
         sound_guild_id: e.sound.guildId,
         sound_id: e.sound.soundId,
         source: "autocomplete"
       }), {
-        type: g.z2.SOUNDMOJI,
+        type: m.z2.SOUNDMOJI,
         metadata: {
           numEmojiResults: t.length,
           numStickerResults: i.length

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,15 +46,15 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -70,15 +70,15 @@ function m(e, t) {
   return i
 }
 
-function g(e) {
+function m(e) {
   let {
     user: t,
     guildId: n,
     channelId: i,
     nick: d,
-    className: p,
-    textClassName: m,
-    disablePopout: g,
+    className: _,
+    textClassName: g,
+    disablePopout: m,
     ignoreModalClicks: E,
     onClick: v,
     onContextMenu: b,
@@ -90,13 +90,13 @@ function g(e) {
       guildId: n,
       channelId: i
     }),
-    renderPopout: e => (0, r.jsx)(c.Z, _(f({}, e), {
+    renderPopout: e => (0, r.jsx)(c.Z, p(f({}, e), {
       userId: t.id,
       guildId: n,
       channelId: i
     })),
     position: "left",
-    shouldShow: !g && void 0,
+    shouldShow: !m && void 0,
     onRequestOpen: y,
     onRequestClose: O,
     ignoreModalClicks: E,
@@ -104,9 +104,9 @@ function g(e) {
       var {
         onClick: i
       } = e, l = h(e, ["onClick"]);
-      return (0, r.jsxs)(a.P3F, _(f({}, l), {
-        className: o()(u.userListItem, p, {
-          [u.popoutDisabled]: g
+      return (0, r.jsxs)(a.P3F, p(f({}, l), {
+        className: o()(u.userListItem, _, {
+          [u.popoutDisabled]: m
         }),
         onContextMenu: b,
         onClick: e => {
@@ -118,7 +118,7 @@ function g(e) {
           "aria-label": t.username,
           size: a.EFr.SIZE_24
         }), (0, r.jsx)(a.Text, {
-          className: o()(u.userListItemTag, m),
+          className: o()(u.userListItemTag, g),
           variant: "text-sm/normal",
           children: (0, r.jsx)(s.Z, {
             user: t,

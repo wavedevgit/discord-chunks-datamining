@@ -2,11 +2,11 @@
 "use strict";
 n.d(t, {
   $w: () => E,
-  Bh: () => m,
+  Bh: () => g,
   Gx: () => b,
-  TA: () => p,
+  TA: () => _,
   V$: () => h,
-  g5: () => g,
+  g5: () => m,
   i7: () => v,
   rD: () => u,
   sd: () => d
@@ -31,11 +31,11 @@ function f(e) {
   return d(e) ? l.X7.includes(e) : !!u(e) && ((0, s.xR)(e.asset) || (0, s.ay)(e.asset))
 }
 
-function p(e) {
+function _(e) {
   return null != e ? "Video Background" : "None"
 }
 
-function _(e) {
+function p(e) {
   switch (e) {
     case l.dp.OPTION_1:
       return "Cybercity";
@@ -57,17 +57,17 @@ function _(e) {
 }
 
 function h(e) {
-  return null == e ? "None" : u(e) ? "Custom" : "blur" === e ? "Blur" : "Preset - ".concat(_(e))
+  return null == e ? "None" : u(e) ? "Custom" : "blur" === e ? "Blur" : "Preset - ".concat(p(e))
 }
 
-function m(e, t, n) {
+function g(e, t, n) {
   let s = o.Z.getGuildId(),
     l = o.Z.getChannelId(),
     u = i.Z.getChannel(l),
     d = (0, r.kO)(s, l, !0);
   a.default.track(c.rMx.VIDEO_EFFECT_UPDATED, {
     location: t,
-    effect_type: p(e),
+    effect_type: _(e),
     effect_detail: h(e),
     effect_state: n,
     channel_id: l,
@@ -81,7 +81,7 @@ function m(e, t, n) {
   })
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   a.default.track(c.rMx.VIDEO_BACKGROUND_ADDED, {
     is_animated: f(e),
     is_video: t,

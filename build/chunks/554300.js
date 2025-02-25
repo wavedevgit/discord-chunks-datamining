@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,15 +45,15 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,21 +61,21 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let g = i.forwardRef(function(e, t) {
+let m = i.forwardRef(function(e, t) {
   var n, {
       avatar: i,
       name: o,
       nameplate: d,
-      children: p,
-      subText: m,
-      decorators: g,
+      children: _,
+      subText: g,
+      decorators: m,
       onClick: E,
       hovered: v,
       selected: b,
@@ -123,19 +123,19 @@ let g = i.forwardRef(function(e, t) {
               [u.wrappedName]: N
             }),
             children: o
-          }), g]
-        }), null != m ? (0, r.jsx)("div", {
+          }), m]
+        }), null != g ? (0, r.jsx)("div", {
           className: u.subText,
-          children: m
+          children: g
         }) : null]
-      }), null != p ? (0, r.jsx)("div", {
+      }), null != _ ? (0, r.jsx)("div", {
         className: u.children,
-        children: p
+        children: _
       }) : null]
     })]
   });
-  return null != O ? (0, r.jsx)(l.tEY, _(f({}, C), {
-    children: (0, r.jsx)(s.rU, _(f({
+  return null != O ? (0, r.jsx)(l.tEY, p(f({}, C), {
+    children: (0, r.jsx)(s.rU, p(f({
       to: O,
       onClick: E
     }, R), {
@@ -143,15 +143,15 @@ let g = i.forwardRef(function(e, t) {
       ref: t,
       children: P
     }))
-  })) : null != E ? (0, r.jsx)(l.P3F, _(f({
+  })) : null != E ? (0, r.jsx)(l.P3F, p(f({
     onClick: E,
     focusProps: C
   }, R), {
     role: "listitem",
     innerRef: t,
     children: P
-  })) : (0, r.jsx)(l.tEY, _(f({}, C), {
-    children: (0, r.jsx)("div", _(f({}, R), {
+  })) : (0, r.jsx)(l.tEY, p(f({}, C), {
+    children: (0, r.jsx)("div", p(f({}, R), {
       role: "listitem",
       ref: t,
       children: P

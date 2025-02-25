@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  P3: () => p,
+  P3: () => _,
   bO: () => f,
-  lC: () => _
+  lC: () => p
 });
 var r = n(200651);
 n(192379);
@@ -68,7 +68,7 @@ function f(e) {
     }, n))
   })
 }
-async function p(e, t) {
+async function _(e, t) {
   let {
     guild_id: n
   } = e;
@@ -78,7 +78,7 @@ async function p(e, t) {
   })
 }
 
-function _(e, t) {
+function p(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t

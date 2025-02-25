@@ -49,11 +49,11 @@ function d(e) {
 }
 
 function f(e) {
-  let t = _(e);
-  return t += p(e.pathname), t += p(e.search), t += p(e.hash)
+  let t = p(e);
+  return t += _(e.pathname), t += _(e.search), t += _(e.hash)
 }
 
-function p(e) {
+function _(e) {
   let t;
   try {
     t = decodeURIComponent(e)
@@ -79,7 +79,7 @@ function p(e) {
   return n
 }
 
-function _(e) {
+function p(e) {
   if ("null" === e.origin && e.pathname.startsWith("//")) return e.protocol;
   let t = "";
   return "" !== e.username && (t += e.username), "" !== e.password && (t += ":" + e.password), "" !== t && (t += "@"), "".concat(e.protocol, "//").concat(t).concat(e.host)

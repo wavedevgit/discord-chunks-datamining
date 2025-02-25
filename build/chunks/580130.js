@@ -12,8 +12,8 @@ var r, i = n(392711),
   u = n(283595),
   d = n(780570),
   f = n(55563),
-  p = n(981631),
-  _ = n(474936);
+  _ = n(981631),
+  p = n(474936);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -23,8 +23,8 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let m = {},
-  g = {},
+let g = {},
+  m = {},
   E = {},
   v = {},
   b = !1,
@@ -35,19 +35,19 @@ let m = {},
   T = {};
 
 function N() {
-  m = {}, E = {}, v = {}, b = !1, y = !1, O = !1, S = new Set, I = new Set
+  g = {}, E = {}, v = {}, b = !1, y = !1, O = !1, S = new Set, I = new Set
 }
 
 function A(e) {
-  m[e.id] = c.Z.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == v[e.application_id] && (v[e.application_id] = new Set), null != e.subscription_id && (null == T[e.subscription_id] && (T[e.subscription_id] = new Set), T[e.subscription_id].add(e.id)), v[e.application_id].add(e.id), E[e.sku_id].add(e.id)
+  g[e.id] = c.Z.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == v[e.application_id] && (v[e.application_id] = new Set), null != e.subscription_id && (null == T[e.subscription_id] && (T[e.subscription_id] = new Set), T[e.subscription_id].add(e.id)), v[e.application_id].add(e.id), E[e.sku_id].add(e.id)
 }
 
 function C(e) {
-  g[e.id] = c.Z.createFromServer(e)
+  m[e.id] = c.Z.createFromServer(e)
 }
 
 function R(e) {
-  delete m[e.id];
+  delete g[e.id];
   let t = v[e.application_id];
   null != t && t.delete(e.id);
   let n = E[e.sku_id];
@@ -76,7 +76,7 @@ function w(e) {
   let {
     entitlements: t
   } = e;
-  g = {}, t.forEach(C)
+  m = {}, t.forEach(C)
 }
 
 function L() {}
@@ -125,23 +125,23 @@ class F extends(r = s.yh) {
     this.syncWith([u.Z], () => !0)
   }
   get(e) {
-    return m[e]
+    return g[e]
   }
   getGiftable() {
-    return o().values(g)
+    return o().values(m)
   }
   getForApplication(e) {
     let t = v[e];
     if (null == t) return null;
     let n = new Set;
-    for (let e of t) n.add(m[e]);
+    for (let e of t) n.add(g[e]);
     return n
   }
   getForSku(e) {
     let t = E[e];
     if (null == t) return null;
     let n = new Set;
-    for (let e of t) n.add(m[e]);
+    for (let e of t) n.add(g[e]);
     return n
   }
   get fetchingAllEntitlements() {
@@ -169,7 +169,7 @@ class F extends(r = s.yh) {
     let t = T[e];
     if (null == t) return null;
     let n = new Set;
-    for (let e of t) n.add(m[e]);
+    for (let e of t) n.add(g[e]);
     return n
   }
   isEntitledToSku(e, t, n) {
@@ -177,7 +177,7 @@ class F extends(r = s.yh) {
       i = E[t];
     if (null != i)
       for (let t of i) {
-        let n = m[t];
+        let n = g[t];
         if (null != n && n.isValid(e, f.Z, r)) return !0
       }
     if (I.has(n)) return !1;
@@ -189,12 +189,12 @@ class F extends(r = s.yh) {
   }
   getReverseTrialEntitlement(e) {
     let t = new Date,
-      n = this.getForApplication(_.CL);
+      n = this.getForApplication(p.CL);
     if (null != n)
       for (let r of n) {
         let n = null != r.endsAt && r.endsAt < t,
           i = null != r.startsAt;
-        if (r.type === p.qc2.FRACTIONAL_REDEMPTION && r.sourceType === p.kNB.REVERSE_TRIAL && (!n || e) && i) return r
+        if (r.type === _.qc2.FRACTIONAL_REDEMPTION && r.sourceType === _.kNB.REVERSE_TRIAL && (!n || e) && i) return r
       }
     return null
   }
@@ -202,15 +202,15 @@ class F extends(r = s.yh) {
     var t;
     let n = [],
       r = new Date;
-    return null === (t = this.getForApplication(_.CL)) || void 0 === t || t.forEach(t => {
+    return null === (t = this.getForApplication(p.CL)) || void 0 === t || t.forEach(t => {
       let i = null != t.endsAt && t.endsAt < r;
-      t.type === p.qc2.FRACTIONAL_REDEMPTION && (!i || e) && n.push(t)
+      t.type === _.qc2.FRACTIONAL_REDEMPTION && (!i || e) && n.push(t)
     }), n
   }
   getUnactivatedFractionalPremiumUnits() {
     var e;
     let t = [];
-    return null === (e = this.getForApplication(_.CL)) || void 0 === e || e.forEach(e => {
+    return null === (e = this.getForApplication(p.CL)) || void 0 === e || e.forEach(e => {
       a.k.ACTIVE_FRACTIONAL_PREMIUM_SKUS.has(e.skuId) && !e.consumed && t.push(e)
     }), t
   }

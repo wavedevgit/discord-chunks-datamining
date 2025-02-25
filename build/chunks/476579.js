@@ -10,11 +10,11 @@ var r = n(161581),
   u = n(90338),
   d = n(936940),
   f = n(603528),
-  p = n(959318),
-  _ = n(552028),
+  _ = n(959318),
+  p = n(552028),
   h = n(646328),
-  m = n(339399),
-  g = n(144748),
+  g = n(339399),
+  m = n(144748),
   E = n(276321),
   v = n(537443).f,
   b = n(692994),
@@ -41,8 +41,8 @@ var r = n(161581),
   F = r.RangeError,
   V = i(b),
   Z = i([].reverse),
-  H = m.pack,
-  W = m.unpack,
+  H = g.pack,
+  W = g.unpack,
   Y = function(e) {
     return [255 & e]
   },
@@ -102,7 +102,7 @@ if (a) {
     for (var en, er = v(x), ei = 0; er.length > ei;)(en = er[ei++]) in M || l(M, en, x[en]);
     j.constructor = M
   } else et && T && l(x, "name", N);
-  E && g(U) !== G && E(U, G);
+  E && m(U) !== G && E(U, G);
   var eo = new k(new M(2)),
     ea = i(U.setInt8);
   eo.setInt8(0, 0x80000000), eo.setInt8(1, 0x80000001), (eo.getInt8(0) || !eo.getInt8(1)) && u(U, {
@@ -127,9 +127,9 @@ if (a) {
   f(this, U), f(e, j);
   var r = D(e),
     i = r.byteLength,
-    a = p(t);
+    a = _(t);
   if (a < 0 || a > i) throw F("Wrong offset");
-  if (n = void 0 === n ? i - a : _(n), a + n > i) throw F(R);
+  if (n = void 0 === n ? i - a : p(n), a + n > i) throw F(R);
   L(this, {
     type: A,
     buffer: e,

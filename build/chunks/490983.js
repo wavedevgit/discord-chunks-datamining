@@ -12,11 +12,11 @@ var r, i = n(658722),
   u = n(442837),
   d = n(570140),
   f = n(812206),
-  p = n(594190),
-  _ = n(592745),
+  _ = n(594190),
+  p = n(592745),
   h = n(706454),
-  m = n(757266),
-  g = n(77498),
+  g = n(757266),
+  m = n(77498),
   E = n(283595),
   v = n(246946),
   b = n(230307),
@@ -103,13 +103,13 @@ function q(e, t, n, r, i) {
     lastPlayed: a,
     supportsCloudSync: null != e && O.Z.supportsCloudSync(e.id, e.branchId),
     isNew: B(e, a),
-    isLaunching: _.Z.launchingGames.has(e.id),
+    isLaunching: p.Z.launchingGames.has(e.id),
     isRunning: r.has(e.id),
     isLaunchable: (0, P.t)({
       LibraryApplicationStore: E.Z,
-      LaunchableGameStore: _.Z,
+      LaunchableGameStore: p.Z,
       DispatchApplicationStore: O.Z,
-      ConnectedAppsStore: m.Z,
+      ConnectedAppsStore: g.Z,
       applicationId: e.id,
       branchId: e.branchId
     }),
@@ -129,13 +129,13 @@ function Q(e, t, n, r) {
     lastPlayed: o,
     supportsCloudSync: !1,
     isNew: !1,
-    isLaunching: _.Z.launchingGames.has(e),
+    isLaunching: p.Z.launchingGames.has(e),
     isRunning: r.has(e),
     isLaunchable: (0, P.t)({
       LibraryApplicationStore: E.Z,
-      LaunchableGameStore: _.Z,
+      LaunchableGameStore: p.Z,
       DispatchApplicationStore: O.Z,
-      ConnectedAppsStore: m.Z,
+      ConnectedAppsStore: g.Z,
       applicationId: e,
       branchId: null
     }),
@@ -147,20 +147,20 @@ function Q(e, t, n, r) {
 }
 
 function X() {
-  let e = new Set(p.ZP.getRunningVerifiedApplicationIds()),
+  let e = new Set(_.ZP.getRunningVerifiedApplicationIds()),
     t = {},
     n = new Set,
-    r = p.ZP.getGamesSeen(!1, !1).map(e => {
-      let n = g.Z.getGameByGameData(e);
+    r = _.ZP.getGamesSeen(!1, !1).map(e => {
+      let n = m.Z.getGameByGameData(e);
       return null != n ? (t[n.id] = e.lastFocused * I.Z.Millis.SECOND, n.id) : null
     }),
     i = Object.values(E.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, !0)).filter(N.lm),
     o = [...r.map(r => Q(r, n, t, e)).filter(N.lm), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1);
-  return U = null != g.Z.lastFetched && E.Z.fetched, !s().isEqual(o, j) && (j = o, C.isPlatformEmbedded && R.ZP.setSystemTrayApplications(Z(j).map(e => e.application).slice(0, x)), !0)
+  return U = null != m.Z.lastFetched && E.Z.fetched, !s().isEqual(o, j) && (j = o, C.isPlatformEmbedded && R.ZP.setSystemTrayApplications(Z(j).map(e => e.application).slice(0, x)), !0)
 }
 class J extends(r = u.ZP.Store) {
   initialize() {
-    this.syncWith([f.Z, g.Z, _.Z, p.ZP, O.Z, S.Z, E.Z, b.Z, v.Z, m.Z], X, 200), this.syncWith([y.Z, h.default], () => !0)
+    this.syncWith([f.Z, m.Z, p.Z, _.ZP, O.Z, S.Z, E.Z, b.Z, v.Z, g.Z], X, 200), this.syncWith([y.Z, h.default], () => !0)
   }
   get applicationFilterQuery() {
     return k

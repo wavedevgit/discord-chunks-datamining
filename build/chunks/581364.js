@@ -27,11 +27,11 @@ var r = n(654861),
   d = n(367907),
   f = n(399860);
 n(131704);
-var p = n(703558),
-  _ = n(895924),
+var _ = n(703558),
+  p = n(895924),
   h = n(689079),
-  m = n(981631),
-  g = n(231338);
+  g = n(981631),
+  m = n(231338);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,17 +84,17 @@ function O(e) {
   null != o.permissions && o.permissions.length > 0 && (d ? i = (0, f.tk)(o.permissions) : (i = {}, o.permissions.forEach(e => {
     i[e.id] = e
   })));
-  let p = (null != l ? l : []).map(e => e.name),
-    m = (null != l ? l : []).map(e => e.displayName);
+  let _ = (null != l ? l : []).map(e => e.name),
+    g = (null != l ? l : []).map(e => e.displayName);
   return {
     version: o.version,
     guildId: o.guild_id,
-    id: [o.id, ...p].join(h.oQ),
-    untranslatedName: [o.name, ...p].join(" "),
+    id: [o.id, ..._].join(h.oQ),
+    untranslatedName: [o.name, ..._].join(" "),
     serverLocalizedName: a.name_localized,
     applicationId: s,
     type: null !== (t = o.type) && void 0 !== t ? t : u.yU.CHAT,
-    inputType: _.iw.BOT,
+    inputType: p.iw.BOT,
     untranslatedDescription: a.description,
     options: S(a.options),
     rootCommand: o,
@@ -102,7 +102,7 @@ function O(e) {
     defaultMemberPermissions: null == o.default_member_permissions ? void 0 : c.vB(o.default_member_permissions),
     dmPermission: o.dm_permission,
     permissions: i,
-    displayName: [null !== (n = o.name_localized) && void 0 !== n ? n : o.name, ...m].join(" "),
+    displayName: [null !== (n = o.name_localized) && void 0 !== n ? n : o.name, ...g].join(" "),
     displayDescription: null !== (r = a.description_localized) && void 0 !== r ? r : a.description,
     nsfw: o.nsfw,
     contexts: o.contexts,
@@ -213,7 +213,7 @@ function N(e, t) {
 }
 
 function A(e) {
-  return m.Xyh.test(e.trim())
+  return g.Xyh.test(e.trim())
 }
 
 function C(e, t, n, r) {
@@ -253,7 +253,7 @@ function w(e) {
     commandLevelPermissions: o,
     defaultMemberPermissions: a
   } = e;
-  if (n.ownerId === r.userId || t.can(g.Pl.ADMINISTRATOR, n)) return !0;
+  if (n.ownerId === r.userId || t.can(m.Pl.ADMINISTRATOR, n)) return !0;
   let s = n.id;
   if (null != o) {
     let e = L(r, s, o);
@@ -264,48 +264,48 @@ function w(e) {
 }
 
 function L(e, t, n) {
-  let r = n[(0, f.rE)(e.userId, _.Kw.USER)];
+  let r = n[(0, f.rE)(e.userId, p.Kw.USER)];
   if (null != r) return r.permission;
   let i = !1;
   for (let t of e.roles) {
-    let e = n[(0, f.rE)(t, _.Kw.ROLE)];
+    let e = n[(0, f.rE)(t, p.Kw.ROLE)];
     if (null != e && (i = !0, e.permission)) return !0
   }
   if (i) return !1;
-  let o = n[(0, f.rE)(t, _.Kw.ROLE)];
+  let o = n[(0, f.rE)(t, p.Kw.ROLE)];
   return null != o ? o.permission : null
 }
 
 function x(e) {
   switch (e) {
-    case _.bB.CHAT:
-    case _.bB.APPLICATION_LAUNCHER:
-    case _.bB.APP_LAUNCHER_APPLICATION_VIEW:
-    case _.bB.CONTEXT_MENU:
-    case _.bB.VOICE_UI:
-    case _.bB.VOICE_TILE_ACTIVITY_SUGGESTIONS:
-    case _.bB.MINI_SHELF:
-    case _.bB.USER_PROFILE:
-    case _.bB.NOW_PLAYING:
-    case _.bB.ACTIVITY_DETAILS:
-    case _.bB.ACTIVITIES_HOME:
-    case _.bB.ACTIVITY_INSTANCE_EMBED:
-    case _.bB.ACTIVITY_BOOKMARK_EMBED:
-    case _.bB.APP_DMS_ENTRY_POINT_COMMAND_BUTTON:
-    case _.bB.IMAGE_RECS_MENU:
-    case _.bB.IMAGE_RECS_SUBMENU:
-      return p.d.SlashCommand
+    case p.bB.CHAT:
+    case p.bB.APPLICATION_LAUNCHER:
+    case p.bB.APP_LAUNCHER_APPLICATION_VIEW:
+    case p.bB.CONTEXT_MENU:
+    case p.bB.VOICE_UI:
+    case p.bB.VOICE_TILE_ACTIVITY_SUGGESTIONS:
+    case p.bB.MINI_SHELF:
+    case p.bB.USER_PROFILE:
+    case p.bB.NOW_PLAYING:
+    case p.bB.ACTIVITY_DETAILS:
+    case p.bB.ACTIVITIES_HOME:
+    case p.bB.ACTIVITY_INSTANCE_EMBED:
+    case p.bB.ACTIVITY_BOOKMARK_EMBED:
+    case p.bB.APP_DMS_ENTRY_POINT_COMMAND_BUTTON:
+    case p.bB.IMAGE_RECS_MENU:
+    case p.bB.IMAGE_RECS_SUBMENU:
+      return _.d.SlashCommand
   }
 }
 
 function M(e) {
-  return null == e ? void 0 : e.id === h.bi.BUILT_IN ? _.ub.BUILT_IN : e.id === h.bi.FRECENCY ? _.ub.FRECENCY : _.ub.APP
+  return null == e ? void 0 : e.id === h.bi.BUILT_IN ? p.ub.BUILT_IN : e.id === h.bi.FRECENCY ? p.ub.FRECENCY : p.ub.APP
 }
 
 function j(e, t) {
   var n, r;
   return {
-    type: _.Qi.APPLICATION,
+    type: p.Qi.APPLICATION,
     id: e.id,
     name: null !== (r = null == e ? void 0 : null === (n = e.bot) || void 0 === n ? void 0 : n.username) && void 0 !== r ? r : e.name,
     icon: e.icon,
@@ -338,7 +338,7 @@ function U(e) {
     searchResultsPosition: c,
     source: u
   } = e;
-  (0, d.yw)(m.rMx.APPLICATION_COMMAND_SELECTED, {
+  (0, d.yw)(g.rMx.APPLICATION_COMMAND_SELECTED, {
     command_id: null !== (n = null === (t = r.rootCommand) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : r.id,
     application_id: r.applicationId,
     location: i,

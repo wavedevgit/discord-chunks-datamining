@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  K: () => m
+  K: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -44,13 +44,13 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -67,7 +67,7 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = i.forwardRef(function(e, t) {
+let g = i.forwardRef(function(e, t) {
     var {
       as: n = "div",
       gap: i = 8,
@@ -77,25 +77,25 @@ let m = i.forwardRef(function(e, t) {
       padding: u = 0,
       style: f,
       className: h,
-      children: m
-    } = e, v = _(e, ["as", "gap", "direction", "align", "justify", "padding", "style", "className", "children"]);
-    return (0, r.jsx)(n, p(d({
+      children: g
+    } = e, v = p(e, ["as", "gap", "direction", "align", "justify", "padding", "style", "className", "children"]);
+    return (0, r.jsx)(n, _(d({
       ref: t,
       "data-align": s,
       "data-justify": l,
       "data-direction": o,
       className: a()(c.stack, h),
-      style: d(p(d({}, f), {
-        gap: g(i)
+      style: d(_(d({}, f), {
+        gap: m(i)
       }), E(u))
     }, v), {
-      children: m
+      children: g
     }))
   }),
-  g = e => "var(--space-".concat(e, ")"),
+  m = e => "var(--space-".concat(e, ")"),
   E = e => "number" == typeof e || "string" == typeof e ? {
-    padding: g(e)
+    padding: m(e)
   } : Object.entries(e).reduce((e, t) => {
     let [n, r] = t;
-    return e["padding".concat(l()(n))] = g(r), e
+    return e["padding".concat(l()(n))] = m(r), e
   }, {})

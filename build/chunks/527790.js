@@ -19,12 +19,12 @@ function u(e) {
     className: u,
     onClose: d,
     hideContextMenu: f = !1,
-    appContext: p
+    appContext: _
   } = e, {
-    analyticsLocations: _
+    analyticsLocations: p
   } = (0, o.ZP)(i.Z.USER_PROFILE_RECENT_ACTIVITY_CARD);
   return (0, a.Rh)(n) ? (0, r.jsx)(o.Gt, {
-    value: _,
+    value: p,
     children: (0, r.jsx)(l.Z, {
       entry: n,
       user: t,
@@ -36,7 +36,7 @@ function u(e) {
           entry: n,
           user: t,
           onClose: d,
-          appContext: p
+          appContext: _
         })
       })
     })

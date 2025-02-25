@@ -12,12 +12,12 @@ var r, i = n(442837),
   u = n(23750),
   d = n(699516),
   f = n(594174),
-  p = n(709054),
-  _ = n(497089),
+  _ = n(709054),
+  p = n(497089),
   h = n(178480),
-  m = n(981631);
+  g = n(981631);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,7 +33,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -132,7 +132,7 @@ function C(e) {
       user_ignored: l,
       origin_application_id: c
     } = e;
-    if (null == o || (l && r.add(o.id), i !== m.OGo.PENDING_INCOMING || s || l || null == a)) return null;
+    if (null == o || (l && r.add(o.id), i !== g.OGo.PENDING_INCOMING || s || l || null == a)) return null;
     let u = f.default.getUser(o.id);
     if (null == u) return null;
     let d = n ? c : void 0;
@@ -144,7 +144,7 @@ function C(e) {
       application_id: o,
       since: a
     } = e;
-    if (n !== m.OGo.PENDING_INCOMING || r.has(i)) return;
+    if (n !== g.OGo.PENDING_INCOMING || r.has(i)) return;
     let s = f.default.getUser(i);
     null != s && t.push((0, h.LF)(s, a, o))
   }), e.guilds.forEach(e => {
@@ -160,13 +160,13 @@ function R(e) {
     hasMore: n,
     cursor: r
   } = e;
-  y.loading && (y.loading = !1, y.initialized = !0, y.errored = !1, y.isDataStale = !1, null != r && y.notifCenterIds.has(r) || (y.paginationHasMore = t.length > 0 && n, y.paginationCursor = t.length > 0 ? r : void 0), y.notifCenterItems = [...y.notifCenterItems, ...t.map(A).filter(e => !y.notifCenterIds.has(e.id))], y.notifCenterItems.sort((e, t) => p.default.compare(t.id, e.id)), t.forEach(e => y.notifCenterIds.add(e.id)))
+  y.loading && (y.loading = !1, y.initialized = !0, y.errored = !1, y.isDataStale = !1, null != r && y.notifCenterIds.has(r) || (y.paginationHasMore = t.length > 0 && n, y.paginationCursor = t.length > 0 ? r : void 0), y.notifCenterItems = [...y.notifCenterItems, ...t.map(A).filter(e => !y.notifCenterIds.has(e.id))], y.notifCenterItems.sort((e, t) => _.default.compare(t.id, e.id)), t.forEach(e => y.notifCenterIds.add(e.id)))
 }
 
 function P(e) {
   let t = "NOTIFICATION_CENTER_ITEM_CREATE" === e.type ? A(e.item) : e.item;
   if (!y.initialized || !O(t) || y.notifCenterIds.has(t.id)) return !1;
-  y.notifCenterIds.add(t.id), y.notifCenterItems = [t, ...y.notifCenterItems], y.notifCenterItems.sort((e, t) => p.default.compare(t.id, e.id))
+  y.notifCenterIds.add(t.id), y.notifCenterItems = [t, ...y.notifCenterItems], y.notifCenterItems.sort((e, t) => _.default.compare(t.id, e.id))
 }
 
 function D(e) {
@@ -232,7 +232,7 @@ function G(e) {
     since: l,
     originApplicationId: c
   } = t;
-  if (r === m.OGo.PENDING_INCOMING && !i && !o) {
+  if (r === g.OGo.PENDING_INCOMING && !i && !o) {
     if (null == l) return null;
     if (null != a) {
       let e = (0, s.r8)({
@@ -242,16 +242,16 @@ function G(e) {
       null != t && (y.notifCenterLocalItems = [...y.notifCenterLocalItems, (0, h.mH)(t, l, e)])
     }
   }
-  r !== m.OGo.FRIEND || null == t.user || o || (y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => k(e, _.O7.INCOMING_FRIEND_REQUESTS, t.user.id) ? b(E({}, e), {
+  r !== g.OGo.FRIEND || null == t.user || o || (y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => k(e, p.O7.INCOMING_FRIEND_REQUESTS, t.user.id) ? b(E({}, e), {
     acked: !0,
     forceUnacked: !1,
     local_id: "incoming_friend_requests_accepted_".concat(a.id, "_").concat(e.id),
-    type: _.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED
-  }) : e)), (r === m.OGo.BLOCKED || o) && (y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => !k(e, _.O7.INCOMING_FRIEND_REQUESTS, n) && !k(e, _.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, n) && !k(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS, n) && !k(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, n)))
+    type: p.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED
+  }) : e)), (r === g.OGo.BLOCKED || o) && (y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => !k(e, p.O7.INCOMING_FRIEND_REQUESTS, n) && !k(e, p.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, n) && !k(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS, n) && !k(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, n)))
 }
 
 function B(e) {
-  y.notifCenterLocalItems = y.notifCenterLocalItems.filter(t => !k(t, _.O7.INCOMING_FRIEND_REQUESTS, e.relationship.id) && !k(t, _.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, e.relationship.id))
+  y.notifCenterLocalItems = y.notifCenterLocalItems.filter(t => !k(t, p.O7.INCOMING_FRIEND_REQUESTS, e.relationship.id) && !k(t, p.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, e.relationship.id))
 }
 
 function F(e) {
@@ -268,16 +268,16 @@ function F(e) {
     applicationId: o
   } = t;
   if (d.Z.isBlockedOrIgnored(n)) return !1;
-  if (r === m.OGo.PENDING_INCOMING) {
+  if (r === g.OGo.PENDING_INCOMING) {
     let e = f.default.getUser(n);
     null != i && null != e && (y.notifCenterLocalItems = [...y.notifCenterLocalItems, (0, h.LF)(e, i, o)])
   } else {
-    if (r !== m.OGo.FRIEND) return !1;
-    y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => U(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS, n, o) ? b(E({}, e), {
+    if (r !== g.OGo.FRIEND) return !1;
+    y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => U(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS, n, o) ? b(E({}, e), {
       acked: !0,
       forceUnacked: !1,
       local_id: "incoming_game_friend_requests_accepted_".concat(n, "_").concat(e.id),
-      type: _.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED
+      type: p.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED
     }) : e)
   }
 }
@@ -290,7 +290,7 @@ function V(e) {
   if (!(0, s.r8)({
       location: "NotificationCenterItemsStore"
     })) return !1;
-  y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => !U(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS, t, n) && !U(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, t, n))
+  y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => !U(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS, t, n) && !U(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, t, n))
 }
 
 function Z(e) {
@@ -311,7 +311,7 @@ function H(e) {
 }
 
 function W(e) {
-  (0, l.Z2)(e) && (y.notifCenterItems = y.notifCenterItems.map(t => t.type === _.DY.GUILD_SCHEDULED_EVENT_STARTED && t.guild_scheduled_event_id === e.id ? b(E({}, t), {
+  (0, l.Z2)(e) && (y.notifCenterItems = y.notifCenterItems.map(t => t.type === p.DY.GUILD_SCHEDULED_EVENT_STARTED && t.guild_scheduled_event_id === e.id ? b(E({}, t), {
     disable_action: !0
   }) : t))
 }
@@ -377,7 +377,7 @@ class K extends(r = i.ZP.PersistedStore) {
     return y.notifCenterTabFocused
   }
 }
-g(K, "displayName", "NotificationCenterItemsStore"), g(K, "persistKey", "NotificationCenterItemsStore_v2");
+m(K, "displayName", "NotificationCenterItemsStore"), m(K, "persistKey", "NotificationCenterItemsStore_v2");
 let z = new K(o.Z, {
   CONNECTION_OPEN: C,
   LOGOUT: () => S(),

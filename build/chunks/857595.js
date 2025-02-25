@@ -4,7 +4,7 @@ n.d(t, {
   Ej: () => O,
   Nc: () => E,
   Nv: () => C,
-  Qj: () => p,
+  Qj: () => _,
   TX: () => S,
   Uv: () => A,
   ZZ: () => d,
@@ -13,12 +13,12 @@ n.d(t, {
   eN: () => N,
   f1: () => h,
   gs: () => I,
-  lq: () => m,
+  lq: () => g,
   o2: () => v,
   oL: () => u,
   qz: () => y,
-  r_: () => g,
-  rf: () => _,
+  r_: () => m,
+  rf: () => p,
   u1: () => T
 });
 var r = n(570140),
@@ -51,7 +51,7 @@ function f(e) {
   })
 }
 
-function p() {
+function _() {
   r.Z.dispatch({
     type: "ACCESSIBILITY_KEYBOARD_MODE_ENABLE"
   }), o.default.track(s.rMx.KEYBOARD_MODE_TOGGLED, {
@@ -59,7 +59,7 @@ function p() {
   })
 }
 
-function _() {
+function p() {
   r.Z.dispatch({
     type: "ACCESSIBILITY_KEYBOARD_MODE_DISABLE"
   }), o.default.track(s.rMx.KEYBOARD_MODE_TOGGLED, {
@@ -73,13 +73,13 @@ function h() {
   })
 }
 
-function m() {
+function g() {
   r.Z.dispatch({
     type: "ACCESSIBILITY_DARK_SIDEBAR_TOGGLE"
   })
 }
 
-function g() {
+function m() {
   r.Z.dispatch({
     type: "KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN"
   })

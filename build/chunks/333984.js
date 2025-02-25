@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r = n(592125),
   i = n(412788);
@@ -40,14 +40,14 @@ function f(e) {
   s.add(t)
 }
 
-function p(e) {
+function _(e) {
   let {
     channel: t
   } = e;
   return u(t)
 }
 
-function _(e) {
+function p(e) {
   let {
     channels: t
   } = e;
@@ -60,17 +60,17 @@ function h(e) {
   } = e, n = !1;
   return a.has(t.id) && (a.delete(t.id), n = !0), n
 }
-class m extends i.Z {
+class g extends i.Z {
   initialize() {
     this.waitFor(r.Z)
   }
   loadCache() {
-    let e = this.readSnapshot(m.LATEST_SNAPSHOT_VERSION);
+    let e = this.readSnapshot(g.LATEST_SNAPSHOT_VERSION);
     null != e && (a = new Set(e))
   }
   takeSnapshot() {
     return {
-      version: m.LATEST_SNAPSHOT_VERSION,
+      version: g.LATEST_SNAPSHOT_VERSION,
       data: Array.from(a)
     }
   }
@@ -94,12 +94,12 @@ class m extends i.Z {
       CONNECTION_OPEN: d,
       CONNECTION_OPEN_SUPPLEMENTAL: d,
       CACHE_LOADED_LAZY: () => this.loadCache(),
-      CHANNEL_CREATE: p,
-      CHANNEL_UPDATES: _,
+      CHANNEL_CREATE: _,
+      CHANNEL_UPDATES: p,
       CHANNEL_DELETE: h,
       MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: f
     })
   }
 }
-o(m, "displayName", "SpamMessageRequestStore"), o(m, "LATEST_SNAPSHOT_VERSION", 1);
-let g = new m
+o(g, "displayName", "SpamMessageRequestStore"), o(g, "LATEST_SNAPSHOT_VERSION", 1);
+let m = new g

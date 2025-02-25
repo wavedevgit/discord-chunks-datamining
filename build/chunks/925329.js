@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -21,7 +21,7 @@ let f = {
   LARGE: d.large
 };
 
-function p(e) {
+function _(e) {
   switch (e) {
     case f.XXSMALL:
       return 16;
@@ -38,7 +38,7 @@ function p(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   if (null == e) return null;
   switch (e) {
     case c.Si.GUILD:
@@ -68,20 +68,20 @@ function h(e) {
       return l.Z.Sizes.MEDIUM
   }
 }
-let m = e => {
+let g = e => {
   let t, {
     game: n,
     guild: i,
     skuId: c,
-    pid: m,
-    className: g,
+    pid: g,
+    className: m,
     guildClassName: E,
     size: v = f.MEDIUM
   } = e;
-  if (null != c && (t = _(c)), null != n && null == t && (t = n.getIconURL(p(v))), null == (t = (0, s.Z)(m, t)) && null != i) {
+  if (null != c && (t = p(c)), null != n && null == t && (t = n.getIconURL(_(v))), null == (t = (0, s.Z)(g, t)) && null != i) {
     let e = h(v);
     return (0, r.jsx)(l.Z, {
-      className: o()(d.gameIcon, E, g),
+      className: o()(d.gameIcon, E, m),
       guild: i,
       size: e
     })
@@ -89,7 +89,7 @@ let m = e => {
   if (null == t) return (0, r.jsx)(a.IMN, {
     size: "md",
     color: "currentColor",
-    className: o()(d.gameIcon, v, g)
+    className: o()(d.gameIcon, v, m)
   });
   let b = null == n ? void 0 : n.name,
     y = null != b && "" !== b ? u.NW.formatToPlainString(u.t.tiKyYm, {
@@ -98,8 +98,8 @@ let m = e => {
   return (0, r.jsx)("img", {
     alt: y,
     src: t,
-    className: o()(d.gameIcon, v, g)
+    className: o()(d.gameIcon, v, m)
   })
 };
-m.Sizes = f;
-let g = m
+g.Sizes = f;
+let m = g

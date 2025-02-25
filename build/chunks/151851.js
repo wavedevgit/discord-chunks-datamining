@@ -14,11 +14,11 @@ var i = n(120356),
   u = n(40851),
   d = n(358221),
   f = n(754347),
-  p = n(428548),
-  _ = n(718759),
+  _ = n(428548),
+  p = n(718759),
   h = n(679219),
-  m = n(835225),
-  g = n(939039),
+  g = n(835225),
+  m = n(939039),
   E = n(117795),
   v = n(358085),
   b = n(998502),
@@ -41,7 +41,7 @@ let S = "#ffffff",
       onClick: () => I(n),
       "aria-label": y.NW.string(y.t.ZdNUj4),
       tabIndex: -1,
-      children: (0, r.jsx)(p.Z, {})
+      children: (0, r.jsx)(_.Z, {})
     }), c = (0, r.jsx)(s.P3F, {
       className: O.winButtonMinMax,
       onClick: e => N(n, e),
@@ -53,7 +53,7 @@ let S = "#ffffff",
       onClick: () => T(n),
       "aria-label": y.NW.string(y.t.CxOC4e),
       tabIndex: -1,
-      children: (0, r.jsx)(g.Z, {})
+      children: (0, r.jsx)(m.Z, {})
     }), d = (0, r.jsxs)(r.Fragment, {
       children: [l, c, u]
     });
@@ -94,7 +94,7 @@ let S = "#ffffff",
             onClick: () => I(n),
             "aria-label": y.NW.string(y.t.ZdNUj4),
             tabIndex: -1,
-            children: (0, r.jsx)(_.Z, {
+            children: (0, r.jsx)(p.Z, {
               color: "#4c0000"
             })
           }), (0, r.jsx)(s.P3F, {
@@ -110,7 +110,7 @@ let S = "#ffffff",
             onClick: e => N(n, e),
             "aria-label": y.NW.string(y.t["2nM3Pj"]),
             tabIndex: -1,
-            children: (0, r.jsx)(m.Z, {
+            children: (0, r.jsx)(g.Z, {
               color: "#006500"
             })
           })]
@@ -131,14 +131,14 @@ function R(e) {
     windowKey: i,
     macOSFrame: o = !1,
     themeOverride: s
-  } = e, c = (0, u.bp)(), f = (0, a.e7)([d.Z], () => d.Z.isFullscreenInContext(c)), p = (0, l.Z)();
+  } = e, c = (0, u.bp)(), f = (0, a.e7)([d.Z], () => d.Z.isFullscreenInContext(c)), _ = (0, l.Z)();
   if (f) return null;
   switch (n) {
     case v.PlatformTypes.WINDOWS:
       return (0, r.jsx)(A, {
         windowKey: i,
         themeOverride: s,
-        hasOpenLayer: p
+        hasOpenLayer: _
       });
     case v.PlatformTypes.OSX:
       return (0, r.jsx)(C, {
@@ -146,7 +146,7 @@ function R(e) {
         windowKey: i,
         frame: o,
         themeOverride: s,
-        hasOpenLayer: p
+        hasOpenLayer: _
       });
     default:
       return null

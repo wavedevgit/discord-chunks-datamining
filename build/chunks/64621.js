@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(381586),
   d = n(243778),
   f = n(970731),
-  p = n(158776),
-  _ = n(594174),
+  _ = n(158776),
+  p = n(594174),
   h = n(456644),
-  m = n(652853),
-  g = n(228168),
+  g = n(652853),
+  m = n(228168),
   E = n(981631),
   v = n(388032),
   b = n(103428),
@@ -34,20 +34,20 @@ function N(e) {
     user: N
   } = e, {
     profileType: A
-  } = (0, m.z)(), {
+  } = (0, g.z)(), {
     recentActivityEnabled: C,
     allProfileReactReplyEnabled: R
   } = (0, h.i)({
     location: "UserProfilePopoutInteractionCoachmark"
-  }), P = (0, a.e7)([_.default], () => {
+  }), P = (0, a.e7)([p.default], () => {
     var e;
-    return (null === (e = _.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === N.id
-  }), D = (0, a.e7)([p.Z], () => p.Z.findActivity(N.id, e => {
+    return (null === (e = p.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === N.id
+  }), D = (0, a.e7)([_.Z], () => _.Z.findActivity(N.id, e => {
     let {
       type: t
     } = e;
     return t === E.IIU.CUSTOM_STATUS
-  })), w = !P && A === g.y0.BITE_SIZE && (0, o.EQ)(t).with(g.n_.AVATAR, () => R && null == D).with(g.n_.STATUS, () => R).with(g.n_.ACTIVITY, () => !R && C).exhaustive(), [L, x] = i.useState(!1);
+  })), w = !P && A === m.y0.BITE_SIZE && (0, o.EQ)(t).with(m.n_.AVATAR, () => R && null == D).with(m.n_.STATUS, () => R).with(m.n_.ACTIVITY, () => !R && C).exhaustive(), [L, x] = i.useState(!1);
   (0, c.Z)(() => x(!0), w ? S : null);
   let {
     asset: M,
@@ -76,7 +76,7 @@ function N(e) {
   }, V = (0, u.N)(s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), Z = L && !V ? [F] : [], [H, W] = (0, d.US)(Z);
   return (0, r.jsx)(l.yRy, {
     align: "center",
-    position: t === g.n_.AVATAR ? "left" : "right",
+    position: t === m.n_.AVATAR ? "left" : "right",
     shouldShow: null != H,
     spacing: B,
     renderPopout: e => {

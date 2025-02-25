@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => m,
-  pi: () => _,
-  te: () => p
+  ZP: () => g,
+  pi: () => p,
+  te: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -15,9 +15,9 @@ var r = n(200651),
   u = n(297781),
   d = n(443487),
   f = n(62545);
-let p = [u.XF];
+let _ = [u.XF];
 
-function _(e) {
+function p(e) {
   var t, n, r, i;
   let s = (0, o.e7)([l.Z], () => l.Z.getMatchingActivity(e)),
     c = (0, o.e7)([a.default], () => a.default.getUser(e.author_id));
@@ -43,7 +43,7 @@ function h(e) {
   } = e, {
     activity: a,
     artist: l
-  } = _(t), {
+  } = p(t), {
     largeImage: h
   } = (0, s.rv)({
     entry: t
@@ -59,7 +59,7 @@ function h(e) {
         children: l
       }), (0, r.jsx)(u.Gk, {
         location: u.Gt.CARD,
-        children: p.map((e, n) => (0, r.jsx)(e, {
+        children: _.map((e, n) => (0, r.jsx)(e, {
           entry: t,
           hovered: o
         }, n))
@@ -71,4 +71,4 @@ function h(e) {
     })]
   })
 }
-let m = i.memo(h)
+let g = i.memo(h)

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   $: () => c,
-  a: () => p
+  a: () => _
 });
 var r = n(231053),
   i = n(388032);
@@ -70,12 +70,12 @@ let u = e => {
       userIsRoleSubscriber: u,
       isRoleSubscriptionEmoji: d,
       shouldHideRoleSubscriptionCTA: f,
-      onOpenPremiumSettings: p
-    } = e, _ = null;
+      onOpenPremiumSettings: _
+    } = e, p = null;
     return t === r.w6.APPLICATION && null != n ? i.NW.formatToPlainString(i.t.uERlTU, {
       appName: n.name
     }) : o ? a ? d ? f && s ? i.NW.string(i.t.xFb68v) : s ? u ? i.NW.string(i.t.vLklfH) : i.NW.string(i.t["g8i/bW"]) : i.NW.string(i.t.Eoynp6) : c ? i.NW.string(i.t.hU4kIS) : i.NW.string(i.t.GM0xaW) : l ? i.NW.string(i.t.xE9WGh) : i.NW.string(i.t["0LMpW1"]) : a ? f && s ? i.NW.string(i.t.xFb68v) : s ? u ? i.NW.string(i.t.vLklfH) : i.NW.string(i.t["g8i/bW"]) : c ? i.NW.string(i.t.ICPhqa) : i.NW.string(i.t.jQy3aG) : l ? i.NW.string(i.t.FJ6Z09) : i.NW.format(i.t.U6vLcH, {
-      openPremiumSettings: p
+      openPremiumSettings: _
     })
   },
   f = e => {
@@ -99,7 +99,7 @@ let u = e => {
       description: null
     }
   },
-  p = e => {
+  _ = e => {
     let t = d(e),
       n = u(e);
     return l(a({}, f(e)), {

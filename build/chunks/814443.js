@@ -39,18 +39,18 @@ let c = 864e5,
     userAffinitiesMap: new Map,
     affinityUserIds: new Set
   }),
-  p = l({}, d),
-  _ = l({}, f);
+  _ = l({}, d),
+  p = l({}, f);
 
 function h() {
-  p = l({}, d), _ = l({}, f)
-}
-
-function m() {
-  u = !1
+  _ = l({}, d), p = l({}, f)
 }
 
 function g() {
+  u = !1
+}
+
+function m() {
   u = !0
 }
 
@@ -59,52 +59,52 @@ function E(e) {
   let {
     affinities: n
   } = e;
-  p.userAffinities = null !== (t = n.user_affinities) && void 0 !== t ? t : [], p.lastFetched = Date.now(), v(), u = !1
+  _.userAffinities = null !== (t = n.user_affinities) && void 0 !== t ? t : [], _.lastFetched = Date.now(), v(), u = !1
 }
 
 function v() {
-  let e = new Map(p.userAffinities.filter(e => {
+  let e = new Map(_.userAffinities.filter(e => {
       let {
         user_id: t
       } = e;
       return !a.Z.isBlockedOrIgnored(t)
     }).map(e => [e.user_id, e])),
     t = new Set(e.keys());
-  _ = {
+  p = {
     userAffinitiesMap: e,
     affinityUserIds: t
   }
 }
 class b extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(a.Z), null != e && (p.userAffinities = e.userAffinities, p.lastFetched = e.lastFetched, v()), this.syncWith([a.Z], v)
+    this.waitFor(a.Z), null != e && (_.userAffinities = e.userAffinities, _.lastFetched = e.lastFetched, v()), this.syncWith([a.Z], v)
   }
   needsRefresh() {
-    return !u && Date.now() - p.lastFetched > c
+    return !u && Date.now() - _.lastFetched > c
   }
   getFetching() {
     return u
   }
   getState() {
-    return p
+    return _
   }
   getUserAffinities() {
-    return p.userAffinities
+    return _.userAffinities
   }
   getUserAffinitiesMap() {
-    return _.userAffinitiesMap
+    return p.userAffinitiesMap
   }
   getUserAffinity(e) {
-    return _.userAffinitiesMap.get(e)
+    return p.userAffinitiesMap.get(e)
   }
   getUserAffinitiesUserIds() {
-    return _.affinityUserIds
+    return p.affinityUserIds
   }
 }
 s(b, "displayName", "UserAffinitiesStore"), s(b, "persistKey", "UserAffinitiesStore"), s(b, "migrations", [e => null]);
 let y = new b(o.Z, {
   LOAD_USER_AFFINITIES_SUCCESS: E,
-  LOAD_USER_AFFINITIES: g,
-  LOAD_USER_AFFINITIES_FAILURE: m,
+  LOAD_USER_AFFINITIES: m,
+  LOAD_USER_AFFINITIES_FAILURE: g,
   LOGOUT: h
 })

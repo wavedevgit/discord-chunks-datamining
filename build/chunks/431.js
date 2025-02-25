@@ -21,7 +21,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,12 +46,12 @@ function _(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = 1728e5,
-  g = 6e5,
+let g = 1728e5,
+  m = 6e5,
   E = {
     userOffersLastFetchedAtDate: void 0,
     userAnnualOfferLastFetchedAtDate: void 0,
@@ -149,20 +149,20 @@ class D extends(r = i.ZP.PersistedStore) {
     var e;
     let t = v.userOffersLastFetchedAtDate,
       n = null !== (e = v.isFetching) && void 0 !== e && e;
-    return null == t ? !n : !n && Date.now() - m > t
+    return null == t ? !n : !n && Date.now() - g > t
   }
   shouldFetchReferralOffer(e) {
     var t;
     let n = v.userOffersLastFetchedAtDate,
       r = null !== (t = v.isFetching) && void 0 !== t && t;
     if (null == n) return !r;
-    let i = Date.now() - g > n,
+    let i = Date.now() - m > n,
       o = (null != e ? e : 0) > n;
     return !r && (i || o)
   }
   shouldFetchAnnualOffer() {
     let e = v.userAnnualOfferLastFetchedAtDate;
-    return null == e || Date.now() - m > e
+    return null == e || Date.now() - g > e
   }
   getAlmostExpiringTrialOffers(e) {
     let t = Object.values(d.nG).map(e => e.id),
@@ -201,15 +201,15 @@ class D extends(r = i.ZP.PersistedStore) {
 }
 f(D, "displayName", "UserOfferStore"), f(D, "persistKey", "UserOfferStore"), f(D, "migrations", [e => {
   let t = null == e ? void 0 : e.userDiscounts;
-  if (null != t) return h(p({}, e), {
+  if (null != t) return h(_({}, e), {
     userDiscountOffers: t
   })
 }, e => {
-  if (null != e) return (null == e ? void 0 : e.userAnnualOfferLastFetchedAtDate) == null ? h(p({}, e), {
+  if (null != e) return (null == e ? void 0 : e.userAnnualOfferLastFetchedAtDate) == null ? h(_({}, e), {
     userAnnualOfferLastFetchedAtDate: void 0
   }) : e
 }, e => {
-  if (null != e) return (null == e ? void 0 : e.isFetching) == null ? h(p({}, e), {
+  if (null != e) return (null == e ? void 0 : e.isFetching) == null ? h(_({}, e), {
     isFetching: !1
   }) : e
 }]);

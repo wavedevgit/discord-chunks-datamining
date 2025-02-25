@@ -22,12 +22,12 @@ function d(e) {
   let f = (0, r.parse)(e, {
       arrayFormat: "bracket"
     }),
-    p = l.Hn;
+    _ = l.Hn;
   try {
-    p = o.vB(null != f.permissions && "" !== f.permissions ? f.permissions : "0")
+    _ = o.vB(null != f.permissions && "" !== f.permissions ? f.permissions : "0")
   } catch (e) {}
-  let _ = f.channel_id,
-    h = null !== (c = null !== (i = null !== (n = f.guild_id) && void 0 !== n ? n : null === (t = a.Z.getChannel(_)) || void 0 === t ? void 0 : t.guild_id) && void 0 !== i ? i : s.Z.getGuildId()) && void 0 !== c ? c : void 0;
+  let p = f.channel_id,
+    h = null !== (c = null !== (i = null !== (n = f.guild_id) && void 0 !== n ? n : null === (t = a.Z.getChannel(p)) || void 0 === t ? void 0 : t.guild_id) && void 0 !== i ? i : s.Z.getGuildId()) && void 0 !== c ? c : void 0;
   return {
     clientId: null !== (u = f.client_id) && void 0 !== u ? u : "",
     scopes: (null !== (d = f.scope) && void 0 !== d ? d : "").split(" ").filter(e => e.length > 0),
@@ -36,8 +36,8 @@ function d(e) {
     codeChallenge: f.code_challenge,
     codeChallengeMethod: f.code_challenge_method,
     state: f.state,
-    permissions: p,
-    channelId: _,
+    permissions: _,
+    channelId: p,
     guildId: h,
     prompt: f.prompt,
     disableGuildSelect: "true" === f.disable_guild_select,

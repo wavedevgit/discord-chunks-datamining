@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   EO: () => l,
-  JM: () => _,
-  Lt: () => m,
+  JM: () => p,
+  Lt: () => g,
   ND: () => b,
   PL: () => O,
   UY: () => x,
@@ -45,7 +45,7 @@ class c extends a.C {
           o.favoriteGifs = f.internalBinaryRead(e, e.uint32(), n, o.favoriteGifs);
           break;
         case 3:
-          o.favoriteStickers = m.internalBinaryRead(e, e.uint32(), n, o.favoriteStickers);
+          o.favoriteStickers = g.internalBinaryRead(e, e.uint32(), n, o.favoriteStickers);
           break;
         case 4:
           o.stickerFrecency = E.internalBinaryRead(e, e.uint32(), n, o.stickerFrecency);
@@ -87,7 +87,7 @@ class c extends a.C {
     return o
   }
   internalBinaryWrite(e, t, n) {
-    e.versions && s.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.favoriteGifs && f.internalBinaryWrite(e.favoriteGifs, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.favoriteStickers && m.internalBinaryWrite(e.favoriteStickers, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.stickerFrecency && E.internalBinaryWrite(e.stickerFrecency, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.favoriteEmojis && b.internalBinaryWrite(e.favoriteEmojis, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.emojiFrecency && O.internalBinaryWrite(e.emojiFrecency, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.applicationCommandFrecency && I.internalBinaryWrite(e.applicationCommandFrecency, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.favoriteSoundboardSounds && C.internalBinaryWrite(e.favoriteSoundboardSounds, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.applicationFrecency && x.internalBinaryWrite(e.applicationFrecency, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.heardSoundFrecency && P.internalBinaryWrite(e.heardSoundFrecency, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.playedSoundFrecency && w.internalBinaryWrite(e.playedSoundFrecency, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.guildAndChannelFrecency && j.internalBinaryWrite(e.guildAndChannelFrecency, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.emojiReactionFrecency && O.internalBinaryWrite(e.emojiReactionFrecency, t.tag(13, r.TD.LengthDelimited).fork(), n).join();
+    e.versions && s.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.favoriteGifs && f.internalBinaryWrite(e.favoriteGifs, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.favoriteStickers && g.internalBinaryWrite(e.favoriteStickers, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.stickerFrecency && E.internalBinaryWrite(e.stickerFrecency, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.favoriteEmojis && b.internalBinaryWrite(e.favoriteEmojis, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.emojiFrecency && O.internalBinaryWrite(e.emojiFrecency, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.applicationCommandFrecency && I.internalBinaryWrite(e.applicationCommandFrecency, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.favoriteSoundboardSounds && C.internalBinaryWrite(e.favoriteSoundboardSounds, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.applicationFrecency && x.internalBinaryWrite(e.applicationFrecency, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.heardSoundFrecency && P.internalBinaryWrite(e.heardSoundFrecency, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.playedSoundFrecency && w.internalBinaryWrite(e.playedSoundFrecency, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.guildAndChannelFrecency && j.internalBinaryWrite(e.guildAndChannelFrecency, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.emojiReactionFrecency && O.internalBinaryWrite(e.emojiReactionFrecency, t.tag(13, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     return !1 !== i && (!0 == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -106,7 +106,7 @@ class c extends a.C {
       no: 3,
       name: "favorite_stickers",
       kind: "message",
-      T: () => m
+      T: () => g
     }, {
       no: 4,
       name: "sticker_frecency",
@@ -204,16 +204,16 @@ class d extends a.C {
           o = t.string();
           break;
         case 2:
-          a = _.internalBinaryRead(t, t.uint32(), n);
+          a = p.internalBinaryRead(t, t.uint32(), n);
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.discord_users.v1.FavoriteGIFs.gifs")
       }
     }
-    e[null != o ? o : ""] = null != a ? a : _.create()
+    e[null != o ? o : ""] = null != a ? a : p.create()
   }
   internalBinaryWrite(e, t, n) {
-    for (let i of Object.keys(e.gifs)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.LengthDelimited).string(i), t.tag(2, r.TD.LengthDelimited).fork(), _.internalBinaryWrite(e.gifs[i], t, n), t.join().join();
+    for (let i of Object.keys(e.gifs)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.LengthDelimited).string(i), t.tag(2, r.TD.LengthDelimited).fork(), p.internalBinaryWrite(e.gifs[i], t, n), t.join().join();
     !1 !== e.hideTooltip && t.tag(2, r.TD.Varint).bool(e.hideTooltip);
     let i = n.writeUnknownFields;
     return !1 !== i && (!0 == i ? r.z.onWrite : i)(this.typeName, e, t), t
@@ -226,7 +226,7 @@ class d extends a.C {
       K: 9,
       V: {
         kind: "message",
-        T: () => _
+        T: () => p
       }
     }, {
       no: 2,
@@ -237,7 +237,7 @@ class d extends a.C {
   }
 }
 let f = new d;
-class p extends a.C {
+class _ extends a.C {
   create(e) {
     let t = {
       format: 0,
@@ -315,7 +315,7 @@ class p extends a.C {
     }])
   }
 }
-let _ = new p;
+let p = new _;
 class h extends a.C {
   create(e) {
     let t = {
@@ -363,8 +363,8 @@ class h extends a.C {
     }])
   }
 }
-let m = new h;
-class g extends a.C {
+let g = new h;
+class m extends a.C {
   create(e) {
     let t = {
       stickers: {}
@@ -426,7 +426,7 @@ class g extends a.C {
     }])
   }
 }
-let E = new g;
+let E = new m;
 class v extends a.C {
   create(e) {
     let t = {

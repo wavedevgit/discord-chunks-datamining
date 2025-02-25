@@ -28,8 +28,8 @@ var r = n(200651),
   C = n(791914),
   I = n(981631),
   S = n(388032),
-  P = n(404431);
-let T = {
+  T = n(404431);
+let P = {
   offset: {
     left: 4,
     right: -12
@@ -56,7 +56,7 @@ function w(e) {
     loading: O,
     guildFilter: j,
     roleFilter: N,
-    everyoneFilter: T
+    everyoneFilter: P
   } = (0, l.cj)([x.Z], () => ({
     messages: x.Z.getMentions(),
     hasMore: x.Z.hasMore,
@@ -66,13 +66,13 @@ function w(e) {
     everyoneFilter: x.Z.everyoneFilter
   })), w = (0, g.Us)({
     location: "RecentMentions"
-  }), k = (0, m.Z)(j), L = (0, m.Z)(N), D = (0, m.Z)(T);
+  }), k = (0, m.Z)(j), L = (0, m.Z)(N), D = (0, m.Z)(P);
   i.useEffect(() => {
     if (!x.Z.hasLoadedEver) {
       A(h, !0);
       return
-    }(null != k && j !== k || null != L && N !== L || null != D && T !== D) && A(h, !0)
-  }, [k, j, L, N, D, T, h, !0]), (0, p.ZP)(() => {
+    }(null != k && j !== k || null != L && N !== L || null != D && P !== D) && A(h, !0)
+  }, [k, j, L, N, D, P, h, !0]), (0, p.ZP)(() => {
     (null == _ ? void 0 : _.some(f.k5)) && (d.Z.clearMentions(), A(h, !0))
   }), i.useEffect(() => () => {
     d.Z.truncateMentions(I.DJj)
@@ -85,10 +85,10 @@ function w(e) {
     children: (0, r.jsx)(E.Z, {})
   }), [!0, t, a, c]);
   return (0, r.jsx)(u.ZP, {
-    className: o()(P.recentMentionsPopout, {
-      [P.widerInbox]: w
+    className: o()(T.recentMentionsPopout, {
+      [T.widerInbox]: w
     }),
-    scrollerClassName: P.scroller,
+    scrollerClassName: T.scroller,
     onFetch: () => null,
     onJump: n,
     onCloseMessage: function(e) {
@@ -131,12 +131,12 @@ function k(e) {
   let o = v.Z.didAgree(a.getGuildId()),
     l = !!a.isNSFW() && !o;
   return (0, r.jsxs)("div", {
-    className: P.container,
+    className: T.container,
     children: [(0, r.jsx)(j.Z, {
       channel: a,
       gotoChannel: n,
       children: null != i ? (0, r.jsx)(c.M0o, {
-        className: P.closeButton,
+        className: T.closeButton,
         tooltip: S.NW.string(S.t.cpT0Cg),
         color: c.YX$.TERTIARY,
         icon: (0, r.jsx)(c.Dio, {
@@ -146,18 +146,18 @@ function k(e) {
         onClick: () => d.Z.deleteRecentMention(t.id)
       }) : null
     }), (0, r.jsxs)("div", {
-      className: P.messageContainer,
+      className: T.messageContainer,
       children: [(0, r.jsx)(O.Z, {
-        className: P.jumpMessageButton,
+        className: T.jumpMessageButton,
         onJump: n
       }), (0, r.jsx)(h.Z, {
         message: t,
         channel: a,
-        className: P.message,
+        className: T.message,
         hideAccessories: l,
         compact: _.jU.getSetting(),
         animateAvatar: !1,
-        focusProps: T,
+        focusProps: P,
         trackAnnouncementViews: !0
       }, t.id)]
     })]

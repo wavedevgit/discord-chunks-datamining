@@ -70,8 +70,8 @@ function I(e) {
   }))
 }
 let S = i.memo(function(e) {
-  var t, n, a, o, S, P;
-  let T, {
+  var t, n, a, o, S, T;
+  let P, {
       channel: A,
       messageId: w,
       interactionData: Z
@@ -86,7 +86,7 @@ let S = i.memo(function(e) {
     D = (0, l.e7)([g.Z], () => g.Z.getGuild(A.guild_id), [A.guild_id]);
   if (i.useEffect(() => {
       (null == Z || Z.type === c.yU.CHAT && void 0 === Z.application_command) && p.OG(A.id, w)
-    }, [A.id, w, Z]), null == Z) T = (0, r.jsx)(s.$jN, {
+    }, [A.id, w, Z]), null == Z) P = (0, r.jsx)(s.$jN, {
     type: s.$jN.Type.SPINNING_CIRCLE,
     className: O.spinner
   });
@@ -97,8 +97,8 @@ let S = i.memo(function(e) {
       var n, a, o, l, d, u, p;
       let O, {
           option: S,
-          channel: P,
-          guild: T,
+          channel: T,
+          guild: P,
           messageId: A,
           parentOptionKey: w,
           commandOptionSpec: Z,
@@ -114,8 +114,8 @@ let S = i.memo(function(e) {
           c = Object.fromEntries(null === (n = null !== (o = null == Z ? void 0 : Z.options) && void 0 !== o ? o : []) || void 0 === n ? void 0 : n.map(e => [e.name, e]));
         for (let n of null !== (l = S.options) && void 0 !== l ? l : []) t = t.concat(e({
           option: n,
-          channel: P,
-          guild: T,
+          channel: T,
+          guild: P,
           messageId: A,
           parentOptionKey: R,
           commandOptionSpec: c[n.name],
@@ -129,12 +129,12 @@ let S = i.memo(function(e) {
           let e = S.value.toString(),
             t = _.default.getUser(e);
           if (null != t) {
-            let e = (0, b.ij)(t, P);
+            let e = (0, b.ij)(t, T);
             O = (0, r.jsxs)(m.Z, j(E({}, C), {
               onClick: () => (0, f.openUserProfileModal)({
                 userId: t.id,
-                guildId: P.guild_id,
-                channelId: P.id,
+                guildId: T.guild_id,
+                channelId: T.id,
                 messageId: A,
                 sourceAnalyticsLocations: k,
                 analyticsLocation: {
@@ -156,7 +156,7 @@ let S = i.memo(function(e) {
         }
         case c.jw.ROLE: {
           let e = S.value.toString(),
-            t = null != T ? g.Z.getRole(T.id, e) : void 0;
+            t = null != P ? g.Z.getRole(P.id, e) : void 0;
           null != t && (O = (0, r.jsxs)(m.Z, j(E({}, C), {
             children: [y.ME, t.name]
           })));
@@ -164,18 +164,18 @@ let S = i.memo(function(e) {
         }
         case c.jw.MENTIONABLE: {
           let e = S.value.toString(),
-            t = null != T ? g.Z.getRole(T.id, e) : void 0;
+            t = null != P ? g.Z.getRole(P.id, e) : void 0;
           if (null != t) O = (0, r.jsxs)(m.Z, {
             children: [y.ME, t.name]
           });
           else {
             let t = _.default.getUser(e);
             if (null != t) {
-              let e = (0, b.ij)(t, P);
+              let e = (0, b.ij)(t, T);
               O = (0, r.jsxs)(m.Z, j(E({}, C), {
                 onClick: () => (0, f.openUserProfileModal)({
                   userId: t.id,
-                  guildId: P.guild_id,
+                  guildId: T.guild_id,
                   analyticsLocation: {
                     section: v.jXE.CHANNEL_TEXT_AREA_AUTOCOMPLETE
                   }
@@ -208,9 +208,9 @@ let S = i.memo(function(e) {
       commandOptionSpec: t[n.name],
       sourceAnalyticsLocations: k
     }));
-    T = (0, r.jsxs)(r.Fragment, {
+    P = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(s.Text, j(E({}, N), {
-        children: ["/", null !== (P = null === (a = Z.application_command) || void 0 === a ? void 0 : a.name_localized) && void 0 !== P ? P : Z.name]
+        children: ["/", null !== (T = null === (a = Z.application_command) || void 0 === a ? void 0 : a.name_localized) && void 0 !== T ? T : Z.name]
       })), e]
     })
   }
@@ -224,7 +224,7 @@ let S = i.memo(function(e) {
     children: [(0, r.jsx)("div", {
       className: O.tooltip,
       ref: L,
-      children: T
+      children: P
     }), (0, r.jsx)("div", {
       className: O.tooltipPointer
     })]

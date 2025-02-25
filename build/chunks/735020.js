@@ -41,7 +41,7 @@ function f(e) {
   }), !0)
 }
 
-function p(e) {
+function _(e) {
   let {
     messageId: t,
     channelId: n
@@ -52,18 +52,18 @@ function p(e) {
   null != i && (c[r] = (0, s.Cm)(i))
 }
 
-function _() {
-  m()
+function p() {
+  g()
 }
 
 function h() {
-  m()
+  g()
 }
 
-function m() {
+function g() {
   c = {}
 }
-class g extends(r = i.ZP.Store) {
+class m extends(r = i.ZP.Store) {
   getMessage(e, t) {
     return c[u({
       id: e,
@@ -71,12 +71,12 @@ class g extends(r = i.ZP.Store) {
     })]
   }
 }
-l(g, "displayName", "SearchMessageStore");
-let E = new g(o.Z, {
+l(m, "displayName", "SearchMessageStore");
+let E = new m(o.Z, {
   SEARCH_FINISH: d,
   MOD_VIEW_SEARCH_FINISH: d,
   MESSAGE_UPDATE: f,
-  LOGOUT: _,
+  LOGOUT: p,
   CONNECTION_OPEN: h,
-  MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: p
+  MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: _
 })

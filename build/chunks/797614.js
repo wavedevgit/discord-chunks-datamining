@@ -48,13 +48,13 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = new Set(["darwin", "linux", "win32", "ios", "android"]);
+let _ = new Set(["darwin", "linux", "win32", "ios", "android"]);
 
-function _() {
+function p() {
   if ((0, o.isWeb)()) return "web";
   {
     let e = (0, o.getPlatformName)();
-    return p.has(e) ? e : null
+    return _.has(e) ? e : null
   }
 }
 
@@ -62,8 +62,8 @@ function h() {
   let e = a.Z;
   return null != e && r.e.ALL.has(e) ? e : null
 }
-let m = 12e4,
-  g = 100;
+let g = 12e4,
+  m = 100;
 class E {
   _getMetricWithDefaults(e, t) {
     let {
@@ -77,7 +77,7 @@ class E {
     null != r && r.forEach(e => {
       i.tags.push(e)
     });
-    let o = _();
+    let o = p();
     null != o && i.tags.push("platform:".concat(o));
     let a = h();
     return null != a && i.tags.push("release_channel:".concat(a)), i
@@ -85,14 +85,14 @@ class E {
   increment(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
       n = this._getMetricWithDefaults(e, "count");
-    this._metrics.push(n), (t || this._metrics.length >= g) && this._flush()
+    this._metrics.push(n), (t || this._metrics.length >= m) && this._flush()
   }
   distribution(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
       r = f(u({}, this._getMetricWithDefaults(e, "distribution")), {
         value: t
       });
-    this._metrics.push(r), (n || this._metrics.length >= g) && this._flush()
+    this._metrics.push(r), (n || this._metrics.length >= m) && this._flush()
   }
   _flush() {
     if (this._metrics.length > 0) {
@@ -102,14 +102,14 @@ class E {
         body: {
           metrics: e,
           client_info: {
-            built_at: "1740499829060",
-            build_number: "371614"
+            built_at: "1740502324325",
+            build_number: "371637"
           }
         },
         retries: 1,
         rejectWithError: !0
       }).catch(t => {
-        this._metrics.length + e.length < g && (this._metrics = [...this._metrics, ...e])
+        this._metrics.length + e.length < m && (this._metrics = [...this._metrics, ...e])
       })
     }
     this._metrics = []
@@ -117,7 +117,7 @@ class E {
   constructor() {
     c(this, "_metrics", void 0), c(this, "_intervalId", void 0), this._metrics = [], this._intervalId = setInterval(() => {
       this._flush()
-    }, m)
+    }, g)
   }
 }
 let v = new E

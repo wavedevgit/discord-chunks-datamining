@@ -21,15 +21,15 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = "League of Legends",
-  p = new r.V7,
-  _ = !1,
+  _ = new r.V7,
+  p = !1,
   h = !1;
 
-function m(e) {
+function g(e) {
   return e.some(e => e.name === f)
 }
 
-function g() {
+function m() {
   let e = o.Z.getAccount(null, u.ABu.RIOT_GAMES),
     t = o.Z.getAccount(null, u.ABu.LEAGUE_OF_LEGENDS);
   return null == e && null == t ? "missing_connections" : null == e ? "missing_riot_connection" : null == t ? "missing_league_of_legends_connection" : {
@@ -43,10 +43,10 @@ async function E(e) {
     lolConnectionId: n,
     onlyUpdateIfStale: r
   } = e;
-  if (!_ && (!h || !r)) {
-    p.stop();
+  if (!p && (!h || !r)) {
+    _.stop();
     try {
-      _ = !0;
+      p = !0;
       let {
         next_update_timestamp: e
       } = await (0, l._7)({
@@ -54,16 +54,16 @@ async function E(e) {
         lolConnectionId: n,
         onlyUpdateIfStale: r
       });
-      _ = !1, h = !1;
+      p = !1, h = !1;
       let i = new Date(1e3 * e),
         o = new Date,
         a = Math.max(0, i.getTime() - o.getTime());
-      p.start(a, () => (0, l._7)({
+      _.start(a, () => (0, l._7)({
         riotConnectionId: t,
         lolConnectionId: n
       }))
     } catch (e) {
-      _ = !1, h = !0
+      p = !1, h = !0
     }
   }
 }
@@ -86,8 +86,8 @@ class y extends i.Z {
     let {
       removed: t
     } = e;
-    if (v() && m(t)) {
-      let e = g();
+    if (v() && g(t)) {
+      let e = m();
       if ("string" == typeof e) {
         b(e);
         return
@@ -99,10 +99,10 @@ class y extends i.Z {
     }
   }
   handleDependantStoreChanges() {
-    let e = g(),
+    let e = m(),
       t = "string" != typeof e,
       n = v() && t;
-    p.isStarted() && !n ? p.stop() : !p.isStarted() && n && E({
+    _.isStarted() && !n ? _.stop() : !_.isStarted() && n && E({
       riotConnectionId: e.riotConnection.id,
       lolConnectionId: e.lolConnection.id,
       onlyUpdateIfStale: !0

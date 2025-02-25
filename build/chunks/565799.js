@@ -12,11 +12,11 @@ var r, i = n(348327),
   u = n(570140),
   d = n(569545),
   f = n(199902),
-  p = n(314897),
-  _ = n(592125),
+  _ = n(314897),
+  p = n(592125),
   h = n(430824),
-  m = n(496675),
-  g = n(699516),
+  g = n(496675),
+  m = n(699516),
   E = n(606304),
   v = n(594174),
   b = n(979651),
@@ -53,7 +53,7 @@ function D(e) {
 }
 
 function w(e) {
-  C.has(e) || (C.add(e), s()(_.Z.getMutableGuildChannelsForGuild(e)).values().forEach(e => {
+  C.has(e) || (C.add(e), s()(p.Z.getMutableGuildChannelsForGuild(e)).values().forEach(e => {
     M(e) && A.set(e.id, e)
   }))
 }
@@ -61,7 +61,7 @@ function w(e) {
 function L(e) {
   let t = R[e];
   if (null != t) return t;
-  let n = _.Z.getChannel(e);
+  let n = p.Z.getChannel(e);
   return null != n && n.isGuildStageVoice() && (w(n.guild_id), M(n)) ? x(e) : null
 }
 
@@ -75,7 +75,7 @@ function M(e) {
 }
 
 function j(e, t) {
-  let n = _.Z.getChannel(e);
+  let n = p.Z.getChannel(e);
   return null != n && n.isGuildStageVoice() ? 0 === t.size() ? B(n.id) : null == A.get(n.id) && A.set(n.id, n) : B(e)
 }
 
@@ -107,7 +107,7 @@ function F() {
 
 function V(e, t, n) {
   if (null == n || e.has(n)) return;
-  let r = _.Z.getChannel(n);
+  let r = p.Z.getChannel(n);
   (null == r ? void 0 : r.isGuildStageVoice()) && (t.add(n), e.add(n))
 }
 
@@ -207,7 +207,7 @@ function $(e) {
 let ee = [];
 class et extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(p.default, v.default, _.Z, E.Z, b.Z, m.Z, y.ZP, h.Z, S.ZP, g.Z, I.Z, f.Z)
+    this.waitFor(_.default, v.default, p.Z, E.Z, b.Z, g.Z, y.ZP, h.Z, S.ZP, m.Z, I.Z, f.Z)
   }
   getParticipantsVersion(e) {
     var t, n;

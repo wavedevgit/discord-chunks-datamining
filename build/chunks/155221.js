@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(756647),
   d = n(442837),
   f = n(433517),
-  p = n(799656),
-  _ = n(765717),
+  _ = n(799656),
+  p = n(765717),
   h = n(663993),
-  m = n(329816),
-  g = n(554608),
+  g = n(329816),
+  m = n(554608),
   E = n(83949),
   v = n(137412),
   b = n(893607),
@@ -193,22 +193,22 @@ class er extends i.Component {
       migrationStatus: n,
       skipsSettingDefaultPageTitle: i
     } = this.props;
-    return e = n === g.P.IN_PROGRESS ? null : R.KO ? T.isPlatformEmbedded ? (0, r.jsxs)(a.rs, {
+    return e = n === m.P.IN_PROGRESS ? null : R.KO ? T.isPlatformEmbedded ? (0, r.jsxs)(a.rs, {
       children: [t ? null : (0, r.jsx)(a.AW, {
         path: A.Z5c.ACCOUNT_STANDING,
         component: q
       }), (0, r.jsx)(a.AW, {
         exact: !0,
         path: A.Z5c.INDEX,
-        render: () => (0, r.jsx)(p.Z, {})
-      }), (0, r.jsx)(_.Z, {
+        render: () => (0, r.jsx)(_.Z, {})
+      }), (0, r.jsx)(p.Z, {
         exact: !0,
         path: A.Z5c.APPS,
         component: M
       }), (0, r.jsx)(a.AW, {
         path: en([A.Z5c.LOGIN, A.Z5c.REGISTER, A.Z5c.INVITE(":inviteCode"), A.Z5c.INVITE_LOGIN(":inviteCode"), A.Z5c.GIFT_CODE(":giftCode"), A.Z5c.GIFT_CODE_LOGIN(":giftCode"), A.Z5c.RESET], C.a),
         component: H
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.INVITE_PROXY(b.Hw.channelId()),
         component: j
       }), (0, r.jsx)(a.l_, {
@@ -221,10 +221,10 @@ class er extends i.Component {
         render: ee
       })]
     }) : (0, r.jsxs)(a.rs, {
-      children: [(0, r.jsx)(_.Z, {
+      children: [(0, r.jsx)(p.Z, {
         exact: !0,
         path: A.Z5c.INDEX,
-        render: () => (0, r.jsx)(p.Z, {})
+        render: () => (0, r.jsx)(_.Z, {})
       }), (0, r.jsx)(a.AW, {
         path: en([A.Z5c.LOGIN, A.Z5c.LOGIN_HANDOFF, A.Z5c.REGISTER, A.Z5c.BILLING_PREFIX, A.Z5c.BILLING_PROMOTION_REDEMPTION(":code"), A.Z5c.INVITE(":inviteCode"), A.Z5c.INVITE_LOGIN(":inviteCode"), A.Z5c.GIFT_CODE(":giftCode"), A.Z5c.GIFT_CODE_LOGIN(":giftCode"), A.Z5c.GUILD_TEMPLATE(":guildTemplateCode"), A.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), A.Z5c.DISABLE_EMAIL_NOTIFICATIONS, A.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, A.Z5c.RESET, A.Z5c.REPORT, A.Z5c.REPORT_SECOND_LOOK, A.Z5c.ACCOUNT_REVERT(":token")], C.a),
         component: H
@@ -239,13 +239,13 @@ class er extends i.Component {
       }), (0, r.jsx)(a.l_, {
         from: A.Z5c.INVITE(""),
         to: A.Z5c.LOGIN
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.INVITE_PROXY(b.Hw.channelId()),
         component: j
       }), (0, r.jsx)(a.l_, {
         from: A.Z5c.GIFT_CODE(""),
         to: A.Z5c.LOGIN
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.QUESTS(":questId"),
         component: Q,
         impressionName: s.ImpressionNames.QUESTS_LANDING_PAGE,
@@ -257,37 +257,37 @@ class er extends i.Component {
             quest_id: t.params.questId
           }
         }
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.HANDOFF,
         component: Y
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.MOBILE_WEB_HANDOFF,
         component: K
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.CONNECTION_LINK(":type"),
         component: B
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.CONNECTION_LINK_AUTHORIZE(":type"),
         component: F
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.ACTIVATE,
         component: V
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.ACTIVATE_HANDOFF,
         component: V
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.CONNECTIONS_AUTHORIZE_CONTINUE(":type"),
         component: X
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.CONNECTIONS_SUCCESS(":type"),
         component: U
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.CONNECTIONS_ERROR(":type"),
         component: G
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.CONNECTIONS(":type"),
         component: k
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.DOWNLOAD_QR_CODE_REDIRECT,
         render: () => {
           var e, t, n;
@@ -303,7 +303,7 @@ class er extends i.Component {
             qr_code: !0
           }), window.location.href = (0, S.Gn)(null != a && "" !== a ? a : "qr_code", r), null
         }
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.OPEN_APP_FROM_EMAIL,
         render: () => {
           var e, t;
@@ -347,12 +347,12 @@ class er extends i.Component {
         to: A.Z5c.LOGIN
       })]
     }) : (0, r.jsx)(a.rs, {
-      children: (0, r.jsx)(_.Z, {
+      children: (0, r.jsx)(p.Z, {
         component: x
       })
-    }), (0, r.jsxs)(m.Z, {
+    }), (0, r.jsxs)(g.Z, {
       skipsSettingDefaultPageTitle: i,
-      children: [e, T.isPlatformEmbedded && (n === g.P.NOT_STARTED || n === g.P.IN_PROGRESS) && !0 !== f.K.get(l.SV) ? (0, r.jsx)(E.Z, {}) : null]
+      children: [e, T.isPlatformEmbedded && (n === m.P.NOT_STARTED || n === m.P.IN_PROGRESS) && !0 !== f.K.get(l.SV) ? (0, r.jsx)(E.Z, {}) : null]
     })
   }
 }
@@ -372,9 +372,9 @@ function eo(e) {
     skipsSettingDefaultPageTitle: t
   }))
 }
-let ea = d.ZP.connectStores([y.default, g.Z], () => ({
+let ea = d.ZP.connectStores([y.default, m.Z], () => ({
   isAuthenticated: y.default.isAuthenticated(),
-  migrationStatus: g.Z.getMigrationStatus()
+  migrationStatus: m.Z.getMigrationStatus()
 }), {
   forwardRef: !0
 })(eo)

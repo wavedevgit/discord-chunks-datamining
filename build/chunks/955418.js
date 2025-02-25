@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120), n(566702);
 var r = n(200651),
   i = n(192379),
@@ -13,22 +13,22 @@ var r = n(200651),
   u = n(5192),
   d = n(785717),
   f = n(698305),
-  p = n(981631),
-  _ = n(388032),
+  _ = n(981631),
+  p = n(388032),
   h = n(995773);
-let m = (0, c.kt)({
+let g = (0, c.kt)({
   id: "1",
-  type: p.d4z.DM
+  type: _.d4z.DM
 });
 
-function g(e) {
+function m(e) {
   let {
     user: t,
     guildId: n,
     channelId: c,
-    onClose: p
+    onClose: _
   } = e, {
-    newestAnalyticsLocation: g
+    newestAnalyticsLocation: m
   } = (0, o.ZP)(), {
     trackUserProfileAction: E
   } = (0, d.KZ)(), [v, b] = i.useState(""), [y, O] = i.useState((0, s.JM)(v)), S = i.useRef(!1);
@@ -37,10 +37,10 @@ function g(e) {
     innerClassName: h.inner,
     editorClassName: h.editor,
     type: a.Ie.USER_PROFILE,
-    placeholder: _.NW.formatToPlainString(_.t["0ZQw/f"], {
+    placeholder: p.NW.formatToPlainString(p.t["0ZQw/f"], {
       name: u.ZP.getName(n, c, t)
     }),
-    channel: m,
+    channel: g,
     textValue: v,
     richValue: y,
     onChange: (e, t, n) => {
@@ -63,8 +63,8 @@ function g(e) {
         }), await (0, f.Z)({
           userId: t.id,
           content: n.trim(),
-          location: g
-        }), null == p || p(), {
+          location: m
+        }), null == _ || _(), {
           shouldClear: !0,
           shouldRefocus: !1
         }

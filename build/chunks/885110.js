@@ -12,11 +12,11 @@ var r, i = n(348327),
   u = n(503438),
   d = n(768419),
   f = n(695346),
-  p = n(581883),
-  _ = n(780570),
+  _ = n(581883),
+  p = n(780570),
   h = n(77498),
-  m = n(517100),
-  g = n(283595),
+  g = n(517100),
+  m = n(283595),
   E = n(293273),
   v = n(158776),
   b = n(797258),
@@ -41,7 +41,7 @@ let S = !1,
   D = [];
 
 function w(e) {
-  return (0, _.OT)(e, g.Z)
+  return (0, p.OT)(e, m.Z)
 }
 
 function L(e) {
@@ -70,7 +70,7 @@ function M() {
 
 function j() {
   var e;
-  if (N = null !== (e = m.Z.getIdleSince()) && void 0 !== e ? e : 0, C = m.Z.isAFK(), R) I = T;
+  if (N = null !== (e = g.Z.getIdleSince()) && void 0 !== e ? e : 0, C = g.Z.isAFK(), R) I = T;
   else if (S) I = y.Skl.INVISIBLE;
   else {
     let e = f.co.getSetting();
@@ -101,7 +101,7 @@ function B() {
 }
 class F extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(m.Z, p.Z, E.Z, b.Z, g.Z, h.Z), this.syncWith([E.Z], j)
+    this.waitFor(g.Z, _.Z, E.Z, b.Z, m.Z, h.Z), this.syncWith([E.Z], j)
   }
   getLocalPresence() {
     return {

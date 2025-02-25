@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  BC: () => m,
-  LR: () => _,
-  ku: () => p
+  BC: () => g,
+  LR: () => p,
+  ku: () => _
 }), n(266796), n(789020);
 var r = n(830121),
   i = n(754688),
@@ -16,14 +16,14 @@ var r = n(830121),
   d = n(388032);
 let f = 40;
 
-function p(e) {
+function _(e) {
   var t, n, r, i, o;
   let {
     mediaPostEmbedData: c,
-    guild: p,
-    parentChannel: _,
-    postThread: m,
-    user: g,
+    guild: _,
+    parentChannel: p,
+    postThread: g,
+    user: m,
     selectedGuildId: E,
     canAccess: v = !1
   } = e;
@@ -31,8 +31,8 @@ function p(e) {
   let b = (0, l.EY)(c.thumbnail),
     y = !v && c.has_media_attachment,
     O = v ? d.NW.string(d.t.UsZEBA) : d.NW.string(d.t.ReFzYW),
-    S = null != g ? s.ZP.getName(c.guild_id, c.channel_id, g) : void 0,
-    I = null == g ? void 0 : g.getAvatarURL(null == p ? void 0 : p.id, f);
+    S = null != m ? s.ZP.getName(c.guild_id, c.channel_id, m) : void 0,
+    I = null == m ? void 0 : m.getAvatarURL(null == _ ? void 0 : _.id, f);
   (null == I || E !== c.guild_id) && (I = a.ZP.getGuildIconURL({
     id: c.guild_id,
     icon: c.guild_icon,
@@ -49,14 +49,14 @@ function p(e) {
     coverImageOverlayText: y ? d.NW.string(d.t.YonliY) : void 0,
     parentChannelId: c.parent_channel_id,
     threadId: c.channel_id,
-    postThread: m,
+    postThread: g,
     messageId: c.message_id,
     canAccess: v,
     guildId: c.guild_id,
-    guildName: null !== (o = null == p ? void 0 : p.name) && void 0 !== o ? o : c.guild_name,
+    guildName: null !== (o = null == _ ? void 0 : _.name) && void 0 !== o ? o : c.guild_name,
     authorId: null == c ? void 0 : c.author_id,
     authorName: S,
-    channelName: null == _ ? void 0 : _.name,
+    channelName: null == p ? void 0 : p.name,
     avatarUrl: I,
     shouldShowBlurredThumbnailImage: y,
     shouldContainMediaWithBackground: T,
@@ -67,7 +67,7 @@ function p(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   if (null == e) return;
   let t = (0, r.FO)(e);
   if (null == t) return;
@@ -84,7 +84,7 @@ function h(e) {
   return null != t && null != n && t >= n
 }
 
-function m(e, t) {
+function g(e, t) {
   let n = o.Z.getGuild(e);
   if (null == n || null == t) return !1;
   let r = n.hasFeature(c.oNc.CREATOR_MONETIZABLE) || n.hasFeature(c.oNc.CREATOR_MONETIZABLE_PROVISIONAL);

@@ -54,8 +54,8 @@ function t(e) {
       begin: /<<<[ \t]*'(\w+)'\n/,
       end: /[ \t]*(\w+)\b/
     }),
-    p = "[ 	\n]",
-    _ = {
+    _ = "[ 	\n]",
+    p = {
       scope: "string",
       variants: [u, c, d, f]
     },
@@ -72,23 +72,23 @@ function t(e) {
       }],
       relevance: 0
     },
-    m = ["false", "null", "true"],
-    g = ["__CLASS__", "__DIR__", "__FILE__", "__FUNCTION__", "__COMPILER_HALT_OFFSET__", "__LINE__", "__METHOD__", "__NAMESPACE__", "__TRAIT__", "die", "echo", "exit", "include", "include_once", "print", "require", "require_once", "array", "abstract", "and", "as", "binary", "bool", "boolean", "break", "callable", "case", "catch", "class", "clone", "const", "continue", "declare", "default", "do", "double", "else", "elseif", "empty", "enddeclare", "endfor", "endforeach", "endif", "endswitch", "endwhile", "enum", "eval", "extends", "final", "finally", "float", "for", "foreach", "from", "global", "goto", "if", "implements", "instanceof", "insteadof", "int", "integer", "interface", "isset", "iterable", "list", "match|0", "mixed", "new", "never", "object", "or", "private", "protected", "public", "readonly", "real", "return", "string", "switch", "throw", "trait", "try", "unset", "use", "var", "void", "while", "xor", "yield"],
+    g = ["false", "null", "true"],
+    m = ["__CLASS__", "__DIR__", "__FILE__", "__FUNCTION__", "__COMPILER_HALT_OFFSET__", "__LINE__", "__METHOD__", "__NAMESPACE__", "__TRAIT__", "die", "echo", "exit", "include", "include_once", "print", "require", "require_once", "array", "abstract", "and", "as", "binary", "bool", "boolean", "break", "callable", "case", "catch", "class", "clone", "const", "continue", "declare", "default", "do", "double", "else", "elseif", "empty", "enddeclare", "endfor", "endforeach", "endif", "endswitch", "endwhile", "enum", "eval", "extends", "final", "finally", "float", "for", "foreach", "from", "global", "goto", "if", "implements", "instanceof", "insteadof", "int", "integer", "interface", "isset", "iterable", "list", "match|0", "mixed", "new", "never", "object", "or", "private", "protected", "public", "readonly", "real", "return", "string", "switch", "throw", "trait", "try", "unset", "use", "var", "void", "while", "xor", "yield"],
     E = ["Error|0", "AppendIterator", "ArgumentCountError", "ArithmeticError", "ArrayIterator", "ArrayObject", "AssertionError", "BadFunctionCallException", "BadMethodCallException", "CachingIterator", "CallbackFilterIterator", "CompileError", "Countable", "DirectoryIterator", "DivisionByZeroError", "DomainException", "EmptyIterator", "ErrorException", "Exception", "FilesystemIterator", "FilterIterator", "GlobIterator", "InfiniteIterator", "InvalidArgumentException", "IteratorIterator", "LengthException", "LimitIterator", "LogicException", "MultipleIterator", "NoRewindIterator", "OutOfBoundsException", "OutOfRangeException", "OuterIterator", "OverflowException", "ParentIterator", "ParseError", "RangeException", "RecursiveArrayIterator", "RecursiveCachingIterator", "RecursiveCallbackFilterIterator", "RecursiveDirectoryIterator", "RecursiveFilterIterator", "RecursiveIterator", "RecursiveIteratorIterator", "RecursiveRegexIterator", "RecursiveTreeIterator", "RegexIterator", "RuntimeException", "SeekableIterator", "SplDoublyLinkedList", "SplFileInfo", "SplFileObject", "SplFixedArray", "SplHeap", "SplMaxHeap", "SplMinHeap", "SplObjectStorage", "SplObserver", "SplPriorityQueue", "SplQueue", "SplStack", "SplSubject", "SplTempFileObject", "TypeError", "UnderflowException", "UnexpectedValueException", "UnhandledMatchError", "ArrayAccess", "BackedEnum", "Closure", "Fiber", "Generator", "Iterator", "IteratorAggregate", "Serializable", "Stringable", "Throwable", "Traversable", "UnitEnum", "WeakReference", "WeakMap", "Directory", "__PHP_Incomplete_Class", "parent", "php_user_filter", "self", "static", "stdClass"],
     v = {
-      keyword: g,
+      keyword: m,
       literal: (e => {
         let t = [];
         return e.forEach(e => {
           t.push(e), e.toLowerCase() === e ? t.push(e.toUpperCase()) : t.push(e.toLowerCase())
         }), t
-      })(m),
+      })(g),
       built_in: E
     },
     b = e => e.map(e => e.replace(/\|\d+$/, "")),
     y = {
       variants: [{
-        match: [/new/, t.concat(p, "+"), t.concat("(?!", b(E).join("\\b|"), "\\b)"), i],
+        match: [/new/, t.concat(_, "+"), t.concat("(?!", b(E).join("\\b|"), "\\b)"), i],
         scope: {
           1: "keyword",
           4: "title.class"
@@ -135,32 +135,32 @@ function t(e) {
       begin: /\(/,
       end: /\)/,
       keywords: v,
-      contains: [I, a, S, e.C_BLOCK_COMMENT_MODE, _, h, y]
+      contains: [I, a, S, e.C_BLOCK_COMMENT_MODE, p, h, y]
     },
     N = {
       relevance: 0,
-      match: [/\b/, t.concat("(?!fn\\b|function\\b|", b(g).join("\\b|"), "|", b(E).join("\\b|"), "\\b)"), r, t.concat(p, "*"), t.lookahead(/(?=\()/)],
+      match: [/\b/, t.concat("(?!fn\\b|function\\b|", b(m).join("\\b|"), "|", b(E).join("\\b|"), "\\b)"), r, t.concat(_, "*"), t.lookahead(/(?=\()/)],
       scope: {
         3: "title.function.invoke"
       },
       contains: [T]
     };
   T.contains.push(N);
-  let A = [I, S, e.C_BLOCK_COMMENT_MODE, _, h, y],
+  let A = [I, S, e.C_BLOCK_COMMENT_MODE, p, h, y],
     C = {
       begin: t.concat(/#\[\s*\\?/, t.either(i, o)),
       beginScope: "meta",
       end: /]/,
       endScope: "meta",
       keywords: {
-        literal: m,
+        literal: g,
         keyword: ["new", "array"]
       },
       contains: [{
         begin: /\[/,
         end: /]/,
         keywords: {
-          literal: m,
+          literal: g,
           keyword: ["new", "array"]
         },
         contains: ["self", ...A]
@@ -221,7 +221,7 @@ function t(e) {
         excludeBegin: !0,
         excludeEnd: !0,
         keywords: v,
-        contains: ["self", C, a, S, e.C_BLOCK_COMMENT_MODE, _, h]
+        contains: ["self", C, a, S, e.C_BLOCK_COMMENT_MODE, p, h]
       }]
     }, {
       scope: "class",
@@ -254,7 +254,7 @@ function t(e) {
         match: /\b(as|const|function)\b/,
         scope: "keyword"
       }, e.UNDERSCORE_TITLE_MODE]
-    }, _, h]
+    }, p, h]
   }
 }
 e.exports = t

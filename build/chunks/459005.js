@@ -3,7 +3,7 @@
 n.d(t, {
   JV: () => s,
   aA: () => l,
-  mA: () => p,
+  mA: () => _,
   ug: () => a
 }), n(47120);
 var r = n(392711);
@@ -61,7 +61,7 @@ let c = Object.freeze({
     fired_due_to_max_timeout: 0,
     skip_idle_callback_due_to_backgrounded: 0
   });
-class p {
+class _ {
   reset() {
     this._timeTracking = (0, r.cloneDeep)(c), this._timingStats = (0, r.cloneDeep)(u), this._measurements = (0, r.cloneDeep)(d), this._eventCounts = (0, r.cloneDeep)(f)
   }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Bg: () => p,
+  Bg: () => _,
   ZP: () => f
 }), n(47120), n(266796);
 var r = n(81825),
@@ -125,7 +125,7 @@ class f extends r.Z {
     this.id = e.id, this.name = e.name || "", this.description = e.description || null, this.ownerId = e.ownerId || null, this.icon = e.icon || null, this.splash = e.splash || null, this.banner = e.banner || null, this.homeHeader = e.homeHeader || null, this.features = i, this.preferredLocale = e.preferredLocale || "en-US", this.afkChannelId = e.afkChannelId || null, this.afkTimeout = e.afkTimeout, this.systemChannelId = e.systemChannelId || null, this.verificationLevel = e.verificationLevel || s.sFg.NONE, this.joinedAt = e.joinedAt instanceof Date ? e.joinedAt : new Date(e.joinedAt), this.defaultMessageNotifications = e.defaultMessageNotifications || s.bL.ALL_MESSAGES, this.mfaLevel = e.mfaLevel || s.BpS.NONE, this.application_id = e.application_id || null, this.explicitContentFilter = e.explicitContentFilter || s.lxg.DISABLED, this.vanityURLCode = e.vanityURLCode || void 0, this.premiumTier = e.premiumTier || s.Eu4.NONE, this.premiumSubscriberCount = e.premiumSubscriberCount || 0, this.premiumProgressBarEnabled = e.premiumProgressBarEnabled || !1, this.systemChannelFlags = e.systemChannelFlags, this.discoverySplash = e.discoverySplash || null, this.rulesChannelId = e.rulesChannelId || null, this.safetyAlertsChannelId = e.safetyAlertsChannelId || null, this.publicUpdatesChannelId = e.publicUpdatesChannelId || null, this.maxStageVideoChannelUsers = e.maxStageVideoChannelUsers || -1, this.maxVideoChannelUsers = e.maxVideoChannelUsers || -1, this.maxMembers = e.maxMembers || -1, this.nsfwLevel = null !== (t = e.nsfwLevel) && void 0 !== t ? t : s.V_K.DEFAULT, this.hubType = e.hubType, this.latestOnboardingQuestionId = null !== (n = e.latestOnboardingQuestionId) && void 0 !== n ? n : null, this.profile = null !== (r = e.profile) && void 0 !== r ? r : null
   }
 }
-class p extends f {
+class _ extends f {
   constructor(e) {
     var t;
     super(e), u(this, "roles", void 0), u(this, "member", void 0), this.roles = null !== (t = e.roles) && void 0 !== t ? t : {}, e.member && e.member.userId && e.member.roles ? this.member = {

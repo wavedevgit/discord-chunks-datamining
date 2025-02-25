@@ -14,9 +14,9 @@ var r = n(200651),
   u = n(540059),
   d = n(855981),
   f = n(55543),
-  p = n(197042);
+  _ = n(197042);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,13 +32,13 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -89,8 +89,8 @@ function O(e) {
     disabled: n = !1,
     innerClassName: i,
     childClassName: o,
-    iconClassName: _,
-    icon: m,
+    iconClassName: p,
+    icon: g,
     children: E,
     onClick: O,
     isActive: S,
@@ -105,22 +105,22 @@ function O(e) {
     "aria-expanded": w,
     "aria-haspopup": L,
     "aria-controls": x
-  } = e, M = (0, u.Q3)("ChannelTextAreaButton"), j = (0, l.Yzy)(null != E, g(h({}, y), {
+  } = e, M = (0, u.Q3)("ChannelTextAreaButton"), j = (0, l.Yzy)(null != E, m(h({}, y), {
     keys: e => e ? "children" : "icon"
   })), k = e => {
     let {
       component: t
     } = e;
     return null != P ? (0, r.jsxs)("div", {
-      className: p.buttonContent,
+      className: _.buttonContent,
       children: [(0, r.jsx)(c.ZP, {
-        className: p.iconMask,
+        className: _.iconMask,
         mask: c.QS.CHAT_INPUT_BUTTON_NOTIFICATION,
         width: M ? b : v,
         height: M ? b : v,
         children: t
       }), (0, r.jsx)("span", {
-        className: p.notificationDot
+        className: _.notificationDot
       })]
     }) : t
   };
@@ -133,10 +133,10 @@ function O(e) {
     "aria-controls": x,
     disabled: n,
     className: a()(t, {
-      [p.active]: S
+      [_.active]: S
     }),
-    innerClassName: a()(p.button, i, {
-      [p.pulseButton]: C
+    innerClassName: a()(_.button, i, {
+      [_.pulseButton]: C
     }),
     onClick: O,
     onMouseEnter: I,
@@ -155,28 +155,28 @@ function O(e) {
       } = n;
       return t ? (0, r.jsx)(s.animated.div, {
         style: e,
-        className: a()(p.buttonWrapper, o),
+        className: a()(_.buttonWrapper, o),
         children: k({
           component: E
         })
-      }, i) : null != m ? (0, r.jsx)(s.animated.div, {
+      }, i) : null != g ? (0, r.jsx)(s.animated.div, {
         style: e,
-        className: a()(p.buttonWrapper, o),
+        className: a()(_.buttonWrapper, o),
         children: k({
-          component: (0, r.jsx)(m, {
-            className: a()(p.icon, _, {
-              [p.pulseIcon]: C
+          component: (0, r.jsx)(g, {
+            className: a()(_.icon, p, {
+              [_.pulseIcon]: C
             }),
             color: "currentColor"
           })
         })
       }, i) : void 0
     }), R && (0, r.jsxs)("div", {
-      className: p.sparkleContainer,
+      className: _.sparkleContainer,
       children: [(0, r.jsx)(f.Z, {
-        className: p.sparkleStar
+        className: _.sparkleStar
       }), (0, r.jsx)(d.Z, {
-        className: p.sparklePlus
+        className: _.sparklePlus
       })]
     })]
   })

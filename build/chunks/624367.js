@@ -33,9 +33,9 @@ function C(e) {
     applicationId: C,
     customId: I,
     referrerId: S,
-    embedUrl: P
+    embedUrl: T
   } = e, {
-    analyticsLocations: T
+    analyticsLocations: P
   } = (0, c.ZP)(s.Z.ACTIVITY_BOOKMARK), [A] = (0, _.Z)([C]), w = (0, a.e7)([b.Z], () => {
     var e;
     return null !== (e = b.Z.getGuildId()) && void 0 !== e ? e : void 0
@@ -48,7 +48,7 @@ function C(e) {
       await (0, u.W)({
         appId: A.id,
         botId: Z,
-        analyticsLocations: T,
+        analyticsLocations: P,
         customId: I,
         referrerId: S
       })
@@ -59,15 +59,15 @@ function C(e) {
     location: "ActivityBookmarkEmbed"
   });
   return null == A || !1 === k ? null : U ? (0, r.jsx)(c.Gt, {
-    value: T,
+    value: P,
     children: (0, r.jsx)(g.O, {
       app: A,
-      embedUrl: P,
+      embedUrl: T,
       activityCustomId: I,
       activityReferrerId: S
     })
   }) : (0, r.jsx)(c.Gt, {
-    value: T,
+    value: P,
     children: (0, r.jsxs)("div", {
       className: j.container,
       children: [(0, r.jsx)("div", {

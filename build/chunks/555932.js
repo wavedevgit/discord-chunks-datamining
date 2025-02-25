@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(198466),
   d = n(436444),
   f = n(981631),
-  p = n(388032),
-  _ = n(794747);
+  _ = n(388032),
+  p = n(794747);
 let h = 200,
-  m = 250,
-  g = 36,
+  g = 250,
+  m = 36,
   E = 660,
   v = [f.Eu4.NONE, f.Eu4.TIER_1, f.Eu4.TIER_2, f.Eu4.TIER_3];
 
@@ -28,14 +28,14 @@ function b(e) {
     premiumTier: r,
     isRevealed: o,
     useReducedMotion: a
-  } = e, [l, c] = i.useState(a ? r : -1), [u, p] = i.useState(0 === n), [_, m] = i.useState(!1), v = i.useRef(!0);
+  } = e, [l, c] = i.useState(a ? r : -1), [u, _] = i.useState(0 === n), [p, g] = i.useState(!1), v = i.useRef(!0);
 
   function b(e) {
     let {
       widthFactor: t
     } = e;
     for (let [e, n] of Object.entries(d.P).reverse())
-      if (t >= n - g / 2 / E) {
+      if (t >= n - m / 2 / E) {
         c(Number(e));
         break
       }
@@ -56,11 +56,11 @@ function b(e) {
     },
     onChange: b,
     onStart: () => {
-      p(!1)
+      _(!1)
     },
     onRest: () => {
-      p(!0), r === f.Eu4.TIER_3 && (m(!0), window.setTimeout(() => {
-        v.current && m(!1)
+      _(!0), r === f.Eu4.TIER_3 && (g(!0), window.setTimeout(() => {
+        v.current && g(!1)
       }, h))
     }
   });
@@ -69,8 +69,8 @@ function b(e) {
   }, []), {
     isProgressBarAnimationComplete: u,
     progressBarFillWidthFactor: y,
-    setShouldFireConfetti: m,
-    shouldFireConfetti: _,
+    setShouldFireConfetti: g,
+    shouldFireConfetti: p,
     tierMarkerAnimationPosition: l
   }
 }
@@ -78,7 +78,7 @@ function b(e) {
 function y(e) {
   let {
     guild: t
-  } = e, n = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), [s, h] = i.useState(!1), [g, E] = i.useState(0), y = i.useRef(null), O = Math.min(f.Eu4.TIER_3, t.premiumTier + 1), S = f.oCV[t.premiumTier], I = f.oCV[O], T = (t.premiumSubscriberCount - S) / (I - S), N = d.P[t.premiumTier], A = d.P[O], {
+  } = e, n = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), [s, h] = i.useState(!1), [m, E] = i.useState(0), y = i.useRef(null), O = Math.min(f.Eu4.TIER_3, t.premiumTier + 1), S = f.oCV[t.premiumTier], I = f.oCV[O], T = (t.premiumSubscriberCount - S) / (I - S), N = d.P[t.premiumTier], A = d.P[O], {
     progressBarFillWidthFactor: C,
     isProgressBarAnimationComplete: R,
     setShouldFireConfetti: P,
@@ -94,26 +94,26 @@ function y(e) {
   return i.useEffect(() => {
     let e = window.setTimeout(() => {
       h(!0)
-    }, m);
+    }, g);
     return () => {
       window.clearTimeout(e)
     }
   }, []), (0, r.jsxs)("div", {
-    className: _.progressBar,
+    className: p.progressBar,
     role: "progressbar",
     "aria-valuenow": t.premiumSubscriberCount,
-    "aria-valuetext": t.premiumTier === f.Eu4.NONE ? p.NW.formatToPlainString(p.t.Ukqm9v, {
+    "aria-valuetext": t.premiumTier === f.Eu4.NONE ? _.NW.formatToPlainString(_.t.Ukqm9v, {
       numSubscriptionsApplied: t.premiumSubscriberCount
-    }) : p.NW.formatToPlainString(p.t.qWunaW, {
+    }) : _.NW.formatToPlainString(_.t.qWunaW, {
       numSubscriptionsApplied: t.premiumSubscriberCount,
       tierName: (0, c.nW)(t.premiumTier, {
         useLevels: !1
       })
     }),
     children: [(0, r.jsxs)("div", {
-      className: _.progressBarScrubber,
+      className: p.progressBarScrubber,
       children: [(0, r.jsx)(o.animated.div, {
-        className: _.progressBarFill,
+        className: p.progressBarFill,
         style: {
           width: C.to({
             range: [0, 1],
@@ -121,7 +121,7 @@ function y(e) {
           }).to(e => "".concat(e, "%"))
         }
       }), (0, r.jsx)("div", {
-        className: _.progressBarTrack
+        className: p.progressBarTrack
       })]
     }), v.map(e => (0, r.jsx)(d.Z, {
       confettiTriggerRef: y,
@@ -133,7 +133,7 @@ function y(e) {
       tierMarkerAnimationPosition: w,
       children: (0, c.nW)(e)
     }, e)), (0, r.jsx)(u.Z, {
-      confettiCount: g,
+      confettiCount: m,
       confettiTriggerRef: y,
       isFiring: D
     })]

@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(502762),
   d = n(652853),
   f = n(171368),
-  p = n(228168),
-  _ = n(388032),
+  _ = n(228168),
+  p = n(388032),
   h = n(481736);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -78,7 +78,7 @@ let O = i.forwardRef(function(e, t) {
     children: n,
     className: i,
     subsection: o,
-    onAction: m,
+    onAction: g,
     onClose: E
   } = e, y = b(e, ["children", "className", "subsection", "onAction", "onClose"]);
   let {
@@ -88,24 +88,24 @@ let O = i.forwardRef(function(e, t) {
   } = (0, l.ZP)(), {
     context: I
   } = (0, c.KZ)();
-  return O === p.y0.FULL_SIZE || (null == I ? void 0 : I.userId) == null ? (0, r.jsx)(u.Z.Overlay, v(g({
+  return O === _.y0.FULL_SIZE || (null == I ? void 0 : I.userId) == null ? (0, r.jsx)(u.Z.Overlay, v(m({
     ref: t,
     className: a()(h.card, i)
   }, y), {
     children: n
   })) : (0, r.jsx)(s.P3F, {
     className: h.clickableContainer,
-    "aria-label": _.NW.string(_.t.pD1L1t),
+    "aria-label": p.NW.string(p.t.pD1L1t),
     onClick: () => {
-      null == m || m({
+      null == g || g({
         action: "PRESS_CARD"
-      }), (0, f.openUserProfileModal)(g({
-        section: p.oh.ACTIVITY,
+      }), (0, f.openUserProfileModal)(m({
+        section: _.oh.ACTIVITY,
         sourceAnalyticsLocations: S,
         subsection: o
       }, I)), null == E || E()
     },
-    children: (0, r.jsx)(u.Z.Overlay, v(g({
+    children: (0, r.jsx)(u.Z.Overlay, v(m({
       ref: t,
       className: a()(h.card, i)
     }, y), {

@@ -2,11 +2,11 @@
 "use strict";
 n.d(t, {
   Lh: () => u,
-  MR: () => m,
+  MR: () => g,
   g1: () => f,
   iD: () => d,
-  ir: () => p,
-  s4: () => _,
+  ir: () => _,
+  s4: () => p,
   sm: () => h
 }), n(757143), n(301563), n(566702);
 var r = n(633302),
@@ -39,7 +39,7 @@ function f(e) {
   }
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null != t.id) {
     let n = null != e.id ? "".concat(e.id) : e.id;
     return "".concat(t.id) === n
@@ -47,7 +47,7 @@ function p(e, t) {
   return null == e.id && t.name === e.name
 }
 
-function _(e) {
+function p(e) {
   return e.isThread() ? s.jXE.THREAD_TEXT_AREA : e.isForumPost() ? s.jXE.FORUM_CHANNEL_TEXT_AREA : e.isGuildVocal() ? s.jXE.TEXT_IN_VOICE : s.jXE.CHANNEL_TEXT_AREA
 }
 
@@ -59,7 +59,7 @@ function h(e) {
   return !n || !!r
 }
 
-function m(e, t) {
+function g(e, t) {
   i.fz.updateSetting(e), a.default.track(s.rMx.NOTIFICATION_SETTINGS_UPDATED, {
     update_type: l.I.ACCOUNT,
     reaction_notifications: e,

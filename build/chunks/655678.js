@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -13,27 +13,27 @@ var r = n(200651),
   u = n(992970),
   d = n(443603),
   f = n(957825),
-  p = n(388032),
-  _ = n(342203);
+  _ = n(388032),
+  p = n(342203);
 
 function h(e, t) {
   let {
     disabled: n,
     channel: o
-  } = e, h = (0, l.Q3)("ChannelMessageConfettiButton"), m = (0, c.LN)(o.id), g = i.useCallback(() => {
+  } = e, h = (0, l.Q3)("ChannelMessageConfettiButton"), g = (0, c.LN)(o.id), m = i.useCallback(() => {
     (0, c.Rg)(o.id, u.MG.MessageComposerButtons)
   }, [o.id]);
   return n ? null : (0, r.jsx)("div", {
-    className: a()(f.CT, _.buttonContainer),
+    className: a()(f.CT, p.buttonContainer),
     ref: t,
     children: (0, r.jsx)(d.Z, {
-      innerClassName: a()(_.button, _.messageConfettiButton),
-      childClassName: a()(_.messageConfettiIcon, {
-        [_.active]: m
+      innerClassName: a()(p.button, p.messageConfettiButton),
+      childClassName: a()(p.messageConfettiIcon, {
+        [p.active]: g
       }),
-      onClick: g,
-      isActive: m,
-      "aria-label": p.NW.string(p.t.yvN8bG),
+      onClick: m,
+      isActive: g,
+      "aria-label": _.NW.string(_.t.yvN8bG),
       "aria-haspopup": "false",
       children: (0, r.jsx)(s.l22, {
         size: h ? "refresh_sm" : void 0,
@@ -42,4 +42,4 @@ function h(e, t) {
     })
   })
 }
-let m = i.memo(i.forwardRef(h))
+let g = i.memo(i.forwardRef(h))

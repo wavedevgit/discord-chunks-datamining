@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(653041), n(47120);
 var r = n(147913),
   i = n(579806);
@@ -46,7 +46,7 @@ function f() {
   })));
   o.ZP.setChromiumSwitches(e)
 }
-class p extends r.Z {
+class _ extends r.Z {
   constructor(...e) {
     super(...e), a(this, "actions", {
       POST_CONNECTION_OPEN: async () => {
@@ -64,4 +64,4 @@ class p extends r.Z {
     })
   }
 }
-let _ = new p
+let p = new _

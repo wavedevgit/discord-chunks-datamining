@@ -8,8 +8,8 @@ var r = n(192379);
 
 function i() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-  let [i, a] = r.useState(void 0), [s, l] = r.useState(void 0), [c, u] = r.useState(void 0), [d, f] = r.useState(void 0), p = r.useRef(null);
-  return o(p, e => {
+  let [i, a] = r.useState(void 0), [s, l] = r.useState(void 0), [c, u] = r.useState(void 0), [d, f] = r.useState(void 0), _ = r.useRef(null);
+  return o(_, e => {
     let {
       width: t,
       height: n,
@@ -18,7 +18,7 @@ function i() {
     } = e;
     l(n), a(t), u(r), f(i)
   }, t), {
-    ref: p,
+    ref: _,
     width: i,
     height: s,
     scrollHeight: d,

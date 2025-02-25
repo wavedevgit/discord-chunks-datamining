@@ -13,7 +13,7 @@ var r, i = n(442837),
   d = n(981631),
   f = n(65154);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,32 +21,32 @@ function p(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = new Map,
+let p = new Map,
   h = null,
-  m = null,
-  g = null;
+  g = null,
+  m = null;
 
 function E() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f.Yn.DEFAULT,
-    t = _.get(e);
-  return null == t && (t = new Map, _.set(e, t)), t
+    t = p.get(e);
+  return null == t && (t = new Map, p.set(e, t)), t
 }
 
 function v(e, t) {
-  let n = _.get(e);
+  let n = p.get(e);
   if (null == n) return !1;
   let r = n.delete(t);
-  return 0 === n.size && _.delete(e), r
+  return 0 === n.size && p.delete(e), r
 }
 
 function b(e, t, n) {
   var r, i, o;
-  return ((null !== (o = null === (i = _.get(e)) || void 0 === i ? void 0 : null === (r = i.get(t)) || void 0 === r ? void 0 : r.flags) && void 0 !== o ? o : f.Dg.NONE) & n) === n
+  return ((null !== (o = null === (i = p.get(e)) || void 0 === i ? void 0 : null === (r = i.get(t)) || void 0 === r ? void 0 : r.flags) && void 0 !== o ? o : f.Dg.NONE) & n) === n
 }
 
 function y(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = _.get(e);
+    r = p.get(e);
   if (null == r) return !1;
   for (let [e, {
       flags: i
@@ -61,7 +61,7 @@ function O(e, t, n) {
     a = o.get(t),
     s = null !== (r = null == a ? void 0 : a.flags) && void 0 !== r ? r : 0;
   if (0 === s && 0 === n) return !1;
-  if (0 === n) o.delete(t), 0 === o.size && _.delete(e);
+  if (0 === n) o.delete(t), 0 === o.size && p.delete(e);
   else {
     let e = null !== (i = null == a ? void 0 : a.since) && void 0 !== i ? i : null,
       r = (s & f.Dg.VOICE) === f.Dg.VOICE,
@@ -79,7 +79,7 @@ function S(e) {
     user: t,
     sessionId: n
   } = e;
-  h = t.id, m = n, g = null
+  h = t.id, g = n, m = null
 }
 
 function I(e) {
@@ -108,8 +108,8 @@ function T(e) {
       userId: n,
       channelId: r,
       sessionId: i
-    } = t, o = !1, a = g;
-    return n === h && i === m && (g = null != r ? r : null), a !== g && (o = _.delete(f.Yn.DEFAULT) || o), null == r ? o = n === h && i === m ? _.delete(f.Yn.DEFAULT) || o : v(f.Yn.DEFAULT, n) || o : n === h && i !== m ? o = _.delete(f.Yn.DEFAULT) || o : n !== h && r !== c.Z.getChannelId() && (o = v(f.Yn.DEFAULT, n) || o), o || e
+    } = t, o = !1, a = m;
+    return n === h && i === g && (m = null != r ? r : null), a !== m && (o = p.delete(f.Yn.DEFAULT) || o), null == r ? o = n === h && i === g ? p.delete(f.Yn.DEFAULT) || o : v(f.Yn.DEFAULT, n) || o : n === h && i !== g ? o = p.delete(f.Yn.DEFAULT) || o : n !== h && r !== c.Z.getChannelId() && (o = v(f.Yn.DEFAULT, n) || o), o || e
   }, !1)
 }
 class N extends(r = i.ZP.Store) {
@@ -119,13 +119,13 @@ class N extends(r = i.ZP.Store) {
   getSpeakingDuration(e, t) {
     var n, r;
     let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f.Yn.DEFAULT,
-      o = null === (r = _.get(i)) || void 0 === r ? void 0 : null === (n = r.get(e)) || void 0 === n ? void 0 : n.since;
+      o = null === (r = p.get(i)) || void 0 === r ? void 0 : null === (n = r.get(e)) || void 0 === n ? void 0 : n.since;
     return null != o ? t - o : 0
   }
   getSpeakers() {
     var e, t;
     let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f.Yn.DEFAULT;
-    return Array.from(null !== (t = null === (e = _.get(n)) || void 0 === e ? void 0 : e.keys()) && void 0 !== t ? t : []).filter(e => b(n, e, f.Dg.VOICE))
+    return Array.from(null !== (t = null === (e = p.get(n)) || void 0 === e ? void 0 : e.keys()) && void 0 !== t ? t : []).filter(e => b(n, e, f.Dg.VOICE))
   }
   isSpeaking(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.Yn.DEFAULT;
@@ -156,7 +156,7 @@ class N extends(r = i.ZP.Store) {
     return null != h && this.isPrioritySpeaker(h, e) && this.isSpeaking(h, e)
   }
 }
-p(N, "displayName", "SpeakingStore");
+_(N, "displayName", "SpeakingStore");
 let A = new N(o.Z, {
   CONNECTION_OPEN: S,
   OVERLAY_INITIALIZE: S,

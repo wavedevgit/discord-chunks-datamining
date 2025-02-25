@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -50,36 +50,36 @@ function f(e, t) {
   return i
 }
 
-function p(e) {
+function _(e) {
   var {
     streamId: t,
     paused: n,
     onReady: o,
     onResize: c,
     className: f
-  } = e, p = d(e, ["streamId", "paused", "onReady", "onResize", "className"]);
-  let _ = i.useRef(null),
+  } = e, _ = d(e, ["streamId", "paused", "onReady", "onResize", "className"]);
+  let p = i.useRef(null),
     h = i.useRef({
       width: 0,
       height: 0
     });
   i.useLayoutEffect(() => {
-    let e = _.current;
+    let e = p.current;
     if (null != e) return (0, s.rY)(t), e.srcObject = (0, l.aG)(t), () => {
       (0, s.Bw)(t), e.srcObject = null, e.load()
     }
   }, [t]), i.useEffect(() => {
     var e, r;
-    return n ? (null === (e = _.current) || void 0 === e || e.pause(), (0, s.Bw)(t)) : null === (r = _.current) || void 0 === r || r.play().catch(() => {}), () => {
+    return n ? (null === (e = p.current) || void 0 === e || e.pause(), (0, s.Bw)(t)) : null === (r = p.current) || void 0 === r || r.play().catch(() => {}), () => {
       n && (0, s.rY)(t)
     }
   }, [n]);
-  let m = i.useCallback(() => {
+  let g = i.useCallback(() => {
     var e, t, n, r;
     let {
       width: i,
       height: o
-    } = h.current, a = null !== (n = null === (e = _.current) || void 0 === e ? void 0 : e.videoWidth) && void 0 !== n ? n : 0, s = null !== (r = null === (t = _.current) || void 0 === t ? void 0 : t.videoHeight) && void 0 !== r ? r : 0;
+    } = h.current, a = null !== (n = null === (e = p.current) || void 0 === e ? void 0 : e.videoWidth) && void 0 !== n ? n : 0, s = null !== (r = null === (t = p.current) || void 0 === t ? void 0 : t.videoHeight) && void 0 !== r ? r : 0;
     if (i !== a || o !== s) {
       let e = {
         width: a,
@@ -89,10 +89,10 @@ function p(e) {
     }
   }, [c]);
   i.useLayoutEffect(() => {
-    let e = _.current;
-    if (null != e) return e.addEventListener("resize", m), () => e.removeEventListener("resize", m)
-  }, [m]);
-  let g = i.useCallback(() => {
+    let e = p.current;
+    if (null != e) return e.addEventListener("resize", g), () => e.removeEventListener("resize", g)
+  }, [g]);
+  let m = i.useCallback(() => {
       null == o || o()
     }, [o]),
     E = i.useCallback(e => {
@@ -100,13 +100,13 @@ function p(e) {
     }, [n]);
   return (0, r.jsx)("video", u({
     className: a()("media-engine-video", f),
-    ref: _,
+    ref: p,
     autoPlay: !0,
     onPause: E,
-    onCanPlayThrough: g,
+    onCanPlayThrough: m,
     muted: !0
-  }, p))
+  }, _))
 }
-p.defaultProps = {
+_.defaultProps = {
   paused: !1
 }

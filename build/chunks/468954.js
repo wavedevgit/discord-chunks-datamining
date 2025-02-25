@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(200651),
   i = n(192379),
@@ -44,22 +44,22 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e) {
+function p(e) {
   let {
     categories: t,
     collapsedCategories: n,
     containerWidth: u,
     store: f,
-    onSelectItem: _,
+    onSelectItem: p,
     onSearchExpressions: h,
-    hasSearchResults: m,
-    defaultSearchPlaceholder: g,
+    hasSearchResults: g,
+    defaultSearchPlaceholder: m,
     emptySearchPlaceholder: E,
     renderEmptyState: v,
     renderRow: b,
@@ -109,7 +109,7 @@ function _(e) {
     columnCounts: Q,
     expressionsListRef: F,
     expressionsGrid: K,
-    onSelectItem: _,
+    onSelectItem: p,
     store: f,
     gridNavigatorId: M
   }), er = i.useCallback((e, t) => b(K[e], $(e), {
@@ -139,7 +139,7 @@ function _(e) {
       onKeyDown: et,
       expressionsListRef: F,
       gridNavigatorId: M,
-      defaultSearchPlaceholder: g,
+      defaultSearchPlaceholder: m,
       emptySearchPlaceholder: E
     }), null == A ? void 0 : A()]
   });
@@ -151,7 +151,7 @@ function _(e) {
       children: [N(F), null != j && (0, r.jsx)("div", {
         className: c.gridNoticeWrapper,
         children: j
-      }), (0, r.jsx)("div", p(d({
+      }), (0, r.jsx)("div", _(d({
         ref: B,
         className: c.listWrapper,
         id: M
@@ -160,7 +160,7 @@ function _(e) {
           categories: t,
           ref: F,
           store: f,
-          hasSearchResults: m,
+          hasSearchResults: g,
           listPadding: x,
           renderRow: er,
           renderSection: null != y ? ei : void 0,

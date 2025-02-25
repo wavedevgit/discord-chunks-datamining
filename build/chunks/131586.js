@@ -58,7 +58,7 @@ function t(e) {
         begin: /\}\}/
       }, e.BACKSLASH_ESCAPE, d]
     },
-    p = {
+    _ = {
       className: "string",
       begin: /\$@"/,
       end: '"',
@@ -70,7 +70,7 @@ function t(e) {
         begin: '""'
       }, u]
     },
-    _ = e.inherit(p, {
+    p = e.inherit(_, {
       illegal: /\n/,
       contains: [{
         begin: /\{\{/
@@ -80,20 +80,20 @@ function t(e) {
         begin: '""'
       }, d]
     });
-  u.contains = [p, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, a, e.C_BLOCK_COMMENT_MODE], d.contains = [_, f, c, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, a, e.inherit(e.C_BLOCK_COMMENT_MODE, {
+  u.contains = [_, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, a, e.C_BLOCK_COMMENT_MODE], d.contains = [p, f, c, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, a, e.inherit(e.C_BLOCK_COMMENT_MODE, {
     illegal: /\n/
   })];
   let h = {
-      variants: [s, p, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE]
+      variants: [s, _, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE]
     },
-    m = {
+    g = {
       begin: "<",
       end: ">",
       contains: [{
         beginKeywords: "in out"
       }, o]
     },
-    g = e.IDENT_RE + "(<" + e.IDENT_RE + "(\\s*,\\s*" + e.IDENT_RE + ")*>)?(\\[\\])?",
+    m = e.IDENT_RE + "(<" + e.IDENT_RE + "(\\s*,\\s*" + e.IDENT_RE + ")*>)?(\\[\\])?",
     E = {
       begin: "@" + e.IDENT_RE,
       relevance: 0
@@ -131,7 +131,7 @@ function t(e) {
       illegal: /[^\s:,]/,
       contains: [{
         beginKeywords: "where class"
-      }, o, m, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
+      }, o, g, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, {
       beginKeywords: "namespace",
       relevance: 0,
@@ -143,7 +143,7 @@ function t(e) {
       relevance: 0,
       end: /[{;=]/,
       illegal: /[^\s:]/,
-      contains: [o, m, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
+      contains: [o, g, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, {
       className: "meta",
       begin: "^\\s*\\[(?=[\\w])",
@@ -160,7 +160,7 @@ function t(e) {
       relevance: 0
     }, {
       className: "function",
-      begin: "(" + g + "\\s+)+" + e.IDENT_RE + "\\s*(<[^=]+>\\s*)?\\(",
+      begin: "(" + m + "\\s+)+" + e.IDENT_RE + "\\s*(<[^=]+>\\s*)?\\(",
       returnBegin: !0,
       end: /\s*[{;=]/,
       excludeEnd: !0,
@@ -171,7 +171,7 @@ function t(e) {
       }, {
         begin: e.IDENT_RE + "\\s*(<[^=]+>\\s*)?\\(",
         returnBegin: !0,
-        contains: [e.TITLE_MODE, m],
+        contains: [e.TITLE_MODE, g],
         relevance: 0
       }, {
         match: /\(\)/

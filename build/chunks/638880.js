@@ -13,11 +13,11 @@ var r = n(115911),
   u = n(774226),
   d = n(566620),
   f = n(317381),
-  p = n(672181),
-  _ = n(882347),
+  _ = n(672181),
+  p = n(882347),
   h = n(16609),
-  m = n(224189),
-  g = n(574952),
+  g = n(224189),
+  m = n(574952),
   E = n(917107),
   v = n(89425),
   b = n(197386),
@@ -45,7 +45,7 @@ async function S(e) {
       customId: x,
       referrerId: M
     } = e,
-    j = (0, g.Z)(),
+    j = (0, m.Z)(),
     k = o.Z.getChannel(c),
     U = null == k ? void 0 : k.getGuildId(),
     G = null == U || "" === U,
@@ -56,9 +56,9 @@ async function S(e) {
   (null == F ? void 0 : F.applicationId) != null && (t = i.Z.getApplication(null == F ? void 0 : F.applicationId));
   let V = (null == F ? void 0 : F.location.kind) === r.X.CONTEXTLESS;
   if ((V || a.Z.getVoiceChannelId() === c) && null != F && F.applicationId === n && (V || (0, h.pY)(F.location) === a.Z.getVoiceChannelId())) return (0, b.Z)(U, F.location), Promise.resolve(!0);
-  let Z = await (0, m.Z)(n, c),
+  let Z = await (0, g.Z)(n, c),
     H = (0, u.Kb)(Z);
-  if (L && (H ? c = void 0 : L = !1), !await (0, _.p)({
+  if (L && (H ? c = void 0 : L = !1), !await (0, p.p)({
       applicationId: n,
       application: Z,
       channel: k,
@@ -76,7 +76,7 @@ async function S(e) {
         })) return !1
     } else if (!(0, l.WS)(k) || !n) return !1
   } else if (null == k && !H) return !1;
-  return null != c && (0, p.Z)(c), null != F && (0, d.cG)(F.location), await (0, d.G6)({
+  return null != c && (0, _.Z)(c), null != F && (0, d.cG)(F.location), await (0, d.G6)({
     channelId: c,
     applicationId: n,
     isStart: !1,

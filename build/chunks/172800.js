@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(410030),
   d = n(255963),
   f = n(906411),
-  p = n(438332),
-  _ = n(806966),
+  _ = n(438332),
+  p = n(806966),
   h = n(434404),
-  m = n(598804),
-  g = n(675478),
+  g = n(598804),
+  m = n(675478),
   E = n(819758),
   v = n(626135),
   b = n(392552),
@@ -113,13 +113,13 @@ let L = e => {
     location: "EmojiPicker"
   }, {
     autoTrackExposure: !1
-  }), Q = n(187119), X = n(39874), J = n(853871), $ = n(63149), ee = n(263112), et = n(490567), en = n(292795), er = n(7940), ei = (0, u.ZP)(), eo = _.kJ.getState(), [ea, es] = i.useState(eo.inspectedExpressionPosition), [el, ec] = (0, c.Z)(null, 300), eu = i.useRef(null);
-  i.useEffect(() => _.kJ.subscribe(e => e.inspectedExpressionPosition, e => es(e)), []), i.useEffect(() => {
-    g.DZ.loadIfNecessary()
+  }), Q = n(187119), X = n(39874), J = n(853871), $ = n(63149), ee = n(263112), et = n(490567), en = n(292795), er = n(7940), ei = (0, u.ZP)(), eo = p.kJ.getState(), [ea, es] = i.useState(eo.inspectedExpressionPosition), [el, ec] = (0, c.Z)(null, 300), eu = i.useRef(null);
+  i.useEffect(() => p.kJ.subscribe(e => e.inspectedExpressionPosition, e => es(e)), []), i.useEffect(() => {
+    m.DZ.loadIfNecessary()
   }, []);
   let ed = o === S.Su.LARGE,
     ef = o === S.Su.MEDIUM,
-    ep = e => {
+    e_ = e => {
       let t = "".concat(e.rowIndex, "c").concat(e.columnIndex),
         n = function() {
           var n;
@@ -131,13 +131,13 @@ let L = e => {
             ariaLabel: d,
             shouldShowRoundHighlight: f
           } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, {
-            visibleRowIndex: p,
-            columnIndex: _
-          } = e, h = null !== (n = x(_, U)) && void 0 !== n ? n : {}, {
-            ref: m,
-            tabIndex: g,
+            visibleRowIndex: _,
+            columnIndex: p
+          } = e, h = null !== (n = x(p, U)) && void 0 !== n ? n : {}, {
+            ref: g,
+            tabIndex: m,
             onFocus: E
-          } = h, v = D(h, ["ref", "tabIndex", "onFocus"]), b = ea.rowIndex === p && ea.columnIndex === _, y = () => {
+          } = h, v = D(h, ["ref", "tabIndex", "onFocus"]), b = ea.rowIndex === _ && ea.columnIndex === p, y = () => {
             j.current || k.current || w(e)
           };
           return (0, i.createElement)("li", P(C({}, v), {
@@ -145,7 +145,7 @@ let L = e => {
           }), (0, r.jsx)(l.tEY, {
             children: (0, r.jsx)("button", {
               "aria-label": d,
-              ref: m,
+              ref: g,
               className: a()(N.emojiItem, {
                 [N.emojiItemLarge]: ed,
                 [N.emojiItemMedium]: ef,
@@ -158,7 +158,7 @@ let L = e => {
               onMouseEnter: o,
               onMouseLeave: s,
               onClick: c,
-              tabIndex: g,
+              tabIndex: m,
               children: u
             })
           }))
@@ -242,47 +242,47 @@ let L = e => {
           return
       }
     },
-    e_ = e => (0, r.jsx)("ul", P(C({}, M(U)), {
+    ep = e => (0, r.jsx)("ul", P(C({}, M(U)), {
       className: a()(N.emojiListRow, {
         [N.emojiListRowLargeSize]: ed,
         [N.emojiListRowMediumSize]: ef
       }),
       ref: eu,
-      children: e.map(ep)
+      children: e.map(e_)
     }));
   if (V === S.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
     className: a()(N.emojiListRow),
     ref: eu,
-    children: (0, r.jsx)(m.Z, {
+    children: (0, r.jsx)(g.Z, {
       channelId: H,
       onSelectSoundmoji: R
     })
   });
-  if (V !== S.En.TOP_GUILD_EMOJI) return e_(t);
+  if (V !== S.En.TOP_GUILD_EMOJI) return ep(t);
   let eh = t.filter(e => {
       if (q && e.type === y.ld.CREATE_EMOJI) return !0;
       let t = e;
-      return t.subCategory === S.t0.TOP_GUILD_EMOJI || t.subCategory === S.t0.NEWLY_ADDED_EMOJI && t.emoji.type === f.B.GUILD && !p.Z.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)
+      return t.subCategory === S.t0.TOP_GUILD_EMOJI || t.subCategory === S.t0.NEWLY_ADDED_EMOJI && t.emoji.type === f.B.GUILD && !_.Z.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)
     }),
-    em = t.filter(e => {
+    eg = t.filter(e => {
       let t = e;
-      return t.subCategory === S.t0.NEWLY_ADDED_EMOJI && t.emoji.type === f.B.GUILD && p.Z.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)
+      return t.subCategory === S.t0.NEWLY_ADDED_EMOJI && t.emoji.type === f.B.GUILD && _.Z.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)
     });
-  return 0 === em.length ? e_(t) : (0, r.jsxs)("div", {
+  return 0 === eg.length ? ep(t) : (0, r.jsxs)("div", {
     className: N.topEmojiSectionContainer,
     children: [(0, r.jsx)("div", {
       className: a()(N.topEmojiContainer, {
         [N.noEmojis]: 0 === eh.length
       }),
-      children: e_(eh)
+      children: ep(eh)
     }), (0, r.jsxs)("div", {
       className: N.newlyAddedHighlightContainer,
       children: [(0, r.jsx)("div", {
         className: a()(N.newlyAddedHighlight, {
-          [N.oneItem]: 1 === em.length,
+          [N.oneItem]: 1 === eg.length,
           [N.alignRight]: eh.length > 0
         }),
-        children: e_(em)
+        children: ep(eg)
       }), (0, r.jsxs)("div", {
         className: a()(N.newlyAddedBadge, {
           [N.newlyAddedBadgeLarge]: ed,

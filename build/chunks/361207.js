@@ -16,11 +16,11 @@ let l = "Ubuntu",
   u = "Fedora",
   d = "Red Hat",
   f = "SuSE",
-  p = "Linux",
-  _ = "OS X",
+  _ = "Linux",
+  p = "OS X",
   h = "win",
-  m = "osx",
-  g = "linux";
+  g = "osx",
+  m = "linux";
 
 function E(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -35,20 +35,20 @@ function v() {
     var e;
     return null === (e = i().os) || void 0 === e ? void 0 : e.family
   })();
-  return null == e ? h : -1 !== e.indexOf(l) || -1 !== e.indexOf(c) || -1 !== e.indexOf(u) || -1 !== e.indexOf(d) || -1 !== e.indexOf(f) || -1 !== e.indexOf(p) ? g : -1 !== e.indexOf(_) ? m : h
+  return null == e ? h : -1 !== e.indexOf(l) || -1 !== e.indexOf(c) || -1 !== e.indexOf(u) || -1 !== e.indexOf(d) || -1 !== e.indexOf(f) || -1 !== e.indexOf(_) ? m : -1 !== e.indexOf(p) ? g : h
 }
 
 function b(e) {
   return ({
     [h]: "Windows",
-    [m]: "Mac",
-    [g]: "Linux"
+    [g]: "Mac",
+    [m]: "Linux"
   })[v(e)]
 }
 
 function y() {
   let e = v(),
-    t = e === g ? "tar.gz" : null;
+    t = e === m ? "tar.gz" : null;
   return E(e, !1, t)
 }
 

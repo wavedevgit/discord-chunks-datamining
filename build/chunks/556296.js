@@ -13,11 +13,11 @@ var i, o = n(879443),
   u = n.n(c),
   d = n(392711),
   f = n.n(d),
-  p = n(442837),
-  _ = n(570140),
+  _ = n(442837),
+  p = n(570140),
   h = n(714338),
-  m = n(710845),
-  g = n(658785),
+  g = n(710845),
+  m = n(658785),
   E = n(131951),
   v = n(626135),
   b = n(358085),
@@ -67,7 +67,7 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = new m.Z("KeybindsStore"),
+let w = new g.Z("KeybindsStore"),
   L = {
     id: "1000",
     action: I.kg4.TOGGLE_MUTE,
@@ -111,7 +111,7 @@ function Z(e, t) {
 function H() {
   let {
     showKeybindIndicators: e
-  } = g.Z.getCurrentConfig({
+  } = m.Z.getCurrentConfig({
     location: "KeybindsStore"
   });
   null == f().find(j, e => L.action === e.action && e.enabled && e.shortcut.length > 0) && !__OVERLAY__ && !B && U && e && (q(L), B = !0)
@@ -240,7 +240,7 @@ function en(e) {
     } catch (t) {
       w.error("Failed to register keybind", e, t)
     }
-  }), U = !0, null == r && (r = g.Z.subscribe({
+  }), U = !0, null == r && (r = m.Z.subscribe({
     location: "KeybindsStore"
   }, Y))
 }
@@ -298,12 +298,12 @@ h.Z.setGetKeybindList(() => {
   for (let t in j) j.hasOwnProperty(t) && e.push((0, O.BB)(j[t].shortcut));
   let {
     showKeybindIndicators: t
-  } = g.Z.getCurrentConfig({
+  } = m.Z.getCurrentConfig({
     location: "KeybindsStore"
   });
   return t && e.push((0, O.BB)(L.shortcut)), e
 });
-class ea extends(i = p.ZP.DeviceSettingsStore) {
+class ea extends(i = _.ZP.DeviceSettingsStore) {
   initialize(e) {
     __OVERLAY__ || this.waitFor(E.Z, S.ZP), j = null != e ? e : {}
   }
@@ -328,7 +328,7 @@ class ea extends(i = p.ZP.DeviceSettingsStore) {
       n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
       {
         showKeybindIndicators: r
-      } = g.Z.getCurrentConfig({
+      } = m.Z.getCurrentConfig({
         location: "KeybindsStore"
       }),
       i = f().find(j, r => r.action === e && (!t || r.managed) && (!n || r.shortcut.length > 0 && r.enabled));
@@ -382,7 +382,7 @@ C(ea, "displayName", "KeybindsStore"), C(ea, "persistKey", "keybinds"), C(ea, "m
 }, e => f().reduce(e, (e, t, n) => t.action === I.kg4.TOGGLE_GO_LIVE_STREAMING && t.managed ? e : D(R({}, e), {
   [n]: t
 }), {})]);
-let es = new ea(_.Z, {
+let es = new ea(p.Z, {
   CONNECTION_OPEN: eo,
   AUDIO_SET_MODE: eo,
   OVERLAY_SET_ENABLED: eo,

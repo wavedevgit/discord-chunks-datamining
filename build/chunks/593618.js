@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(481060),
   d = n(317381),
   f = n(884338),
-  p = n(470883),
-  _ = n(750881),
+  _ = n(470883),
+  p = n(750881),
   h = n(540059),
-  m = n(666188),
-  g = n(372769),
+  g = n(666188),
+  m = n(372769),
   E = n(523751),
   v = n(246364),
   b = n(746916),
@@ -99,7 +99,7 @@ function V(e) {
     s = (0, c.Wu)([P.Z], () => P.Z.getBlockedOrIgnoredIDs()),
     {
       enabled: u
-    } = (0, _.bA)("guild-tooltip"),
+    } = (0, p.bA)("guild-tooltip"),
     f = l().flatMap(n, t => {
       var n;
       if (t === e.afkChannelId) return [];
@@ -109,7 +109,7 @@ function V(e) {
         } = e;
         return t
       });
-      return u ? (0, p.dq)(r, s) : r
+      return u ? (0, _.dq)(r, s) : r
     }),
     h = (0, c.Wu)([I.Z], () => l().flatMap(o, t => {
       if (t === e.afkChannelId) return [];
@@ -119,34 +119,34 @@ function V(e) {
         } = e;
         return t
       });
-      return u ? (0, p.dq)(n, s) : n
+      return u ? (0, _.dq)(n, s) : n
     })),
-    m = (0, c.e7)([I.Z], () => {
+    g = (0, c.e7)([I.Z], () => {
       let e = 0;
       for (let t of o) e += I.Z.getParticipantCount(t, T.pV.AUDIENCE);
       return e
     }),
-    g = (0, c.Wu)([C.Z], () => {
+    m = (0, c.Wu)([C.Z], () => {
       let e = C.Z.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);
-      return u ? (0, p._j)(e, s) : e
+      return u ? (0, _._j)(e, s) : e
     }, [u, s, t]),
     E = (0, c.Wu)([d.ZP], () => {
       let e = d.ZP.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
-      return u ? (0, p._j)(e, s) : e
+      return u ? (0, _._j)(e, s) : e
     }, [t, u, s]),
     v = (0, c.Wu)([w.default], () => {
       let e = E.map(e => w.default.getUser(e));
-      return u ? (0, p.dq)(e) : e
+      return u ? (0, _.dq)(e) : e
     }, [u, E]),
-    b = (0, c.Wu)([w.default], () => g.map(e => w.default.getUser(e)), [g]),
-    y = f.filter(e => !g.includes(e.id) && !E.includes(e.id)),
-    O = u ? (0, p.dq)(y) : y,
+    b = (0, c.Wu)([w.default], () => m.map(e => w.default.getUser(e)), [m]),
+    y = f.filter(e => !m.includes(e.id) && !E.includes(e.id)),
+    O = u ? (0, _.dq)(y) : y,
     S = b.filter(e => null != e && !E.includes(e.id)),
     D = h.length > 0 || y.length > 0 || S.length > 0 || v.length > 0;
   return {
     voiceUsersToShow: O,
     stageSpeakers: h,
-    numStageListeners: m,
+    numStageListeners: g,
     streamUsersToShow: S,
     embeddedActivitiesUsers: v,
     hasActivity: D
@@ -218,16 +218,16 @@ function Y(e) {
     numStageListeners: s,
     streamUsersToShow: l,
     embeddedActivitiesUsers: d
-  } = V(t), f = Z(u.gj8, i, n), p = H(n, o, s), _ = Z(u.hGI, l, n), h = Z(u.nG3, d, n), {
-    isMuted: m,
-    muteConfig: g
+  } = V(t), f = Z(u.gj8, i, n), _ = H(n, o, s), p = Z(u.hGI, l, n), h = Z(u.nG3, d, n), {
+    isMuted: g,
+    muteConfig: m
   } = (0, c.cj)([D.ZP], () => ({
     isMuted: D.ZP.isMuted(n),
     muteConfig: D.ZP.getMuteConfig(n)
-  }), [n]), E = null != f || null != _;
+  }), [n]), E = null != f || null != p;
   return (0, r.jsxs)(r.Fragment, {
-    children: [p, f, _, h, m ? (0, r.jsx)(W, {
-      muteConfig: g,
+    children: [_, f, p, h, g ? (0, r.jsx)(W, {
+      muteConfig: m,
       className: a()(j.muteText, {
         [j.muteTextWithActivity]: E
       })
@@ -264,18 +264,18 @@ function q(e) {
   let {
     guild: t,
     includeActivity: n = !0
-  } = e, i = (0, m.Z)(t), o = (0, b.E)(t), s = null != o ? (0, r.jsx)(z, {
+  } = e, i = (0, g.Z)(t), o = (0, b.E)(t), s = null != o ? (0, r.jsx)(z, {
     guildJoinRequestStatus: o
   }) : null, l = n ? (0, r.jsx)(Y, {
     guild: t
-  }) : null, d = (0, c.e7)([O.Z], () => O.Z.isViewingRoles(t.id)), f = null != s ? s : l, p = (0, y.Ij)(t);
+  }) : null, d = (0, c.e7)([O.Z], () => O.Z.isViewingRoles(t.id)), f = null != s ? s : l, _ = (0, y.Ij)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: a()(j.row, j.rowGuildName),
       children: [i ? (0, r.jsx)(E.Z, {
         guild: t,
         className: j.rowIconV2
-      }) : (0, r.jsx)(g.Z, {
+      }) : (0, r.jsx)(m.Z, {
         guild: t,
         size: 20,
         className: j.rowIcon
@@ -285,7 +285,7 @@ function q(e) {
         }),
         children: t.toString()
       })]
-    }), p ? (0, r.jsx)(u.Text, {
+    }), _ ? (0, r.jsx)(u.Text, {
       className: j.invitesDisabledTooltip,
       color: "header-secondary",
       variant: "text-sm/medium",

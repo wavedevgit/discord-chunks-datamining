@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  CW: () => m,
+  CW: () => g,
   G9: () => b,
   K9: () => v,
   q$: () => y,
-  r0: () => g,
+  r0: () => m,
   s$: () => E
 }), n(266796);
 var r = n(200651);
@@ -50,13 +50,13 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -73,12 +73,12 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = e => {
+let g = e => {
     var {
       application: t,
       asset: n,
       className: i
-    } = e, o = _(e, ["application", "asset", "className"]);
+    } = e, o = p(e, ["application", "asset", "className"]);
     return (0, r.jsx)(s.Z, d({
       application: t,
       size: s.H.MEDIUM,
@@ -86,13 +86,13 @@ let m = e => {
       className: i
     }, o))
   },
-  g = e => {
+  m = e => {
     var {
       children: t,
       className: n,
       id: i
-    } = e, s = _(e, ["children", "className", "id"]);
-    return (0, r.jsx)(a.X6q, p(d({
+    } = e, s = p(e, ["children", "className", "id"]);
+    return (0, r.jsx)(a.X6q, _(d({
       className: o()(c.header, n),
       variant: "heading-xl/extrabold",
       id: i
@@ -111,8 +111,8 @@ let v = e => {
       className: t,
       title: n,
       description: i
-    } = e, o = _(e, ["className", "title", "description"]);
-    return (0, r.jsxs)("div", p(d({
+    } = e, o = p(e, ["className", "title", "description"]);
+    return (0, r.jsxs)("div", _(d({
       className: t
     }, o), {
       children: [(0, r.jsx)(a.X6q, {
@@ -132,8 +132,8 @@ let v = e => {
       storeListingBenefits: n,
       skuBenefits: i,
       className: a
-    } = e, s = _(e, ["applicationId", "storeListingBenefits", "skuBenefits", "className"]);
-    return (0, r.jsx)("div", p(d({
+    } = e, s = p(e, ["applicationId", "storeListingBenefits", "skuBenefits", "className"]);
+    return (0, r.jsx)("div", _(d({
       className: o()(c.benefitsContainer, a)
     }, s), {
       children: (0, r.jsx)(l.GU, {
@@ -148,8 +148,8 @@ let v = e => {
     var {
       children: t,
       className: n
-    } = e, i = _(e, ["children", "className"]);
-    return (0, r.jsx)("div", p(d({
+    } = e, i = p(e, ["children", "className"]);
+    return (0, r.jsx)("div", _(d({
       className: o()(c.container, n)
     }, i), {
       children: t

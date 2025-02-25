@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(475179),
   d = n(925549),
   f = n(37234),
-  p = n(835473),
-  _ = n(413523),
+  _ = n(835473),
+  p = n(413523),
   h = n(358221),
-  m = n(703656),
-  g = n(607187),
+  g = n(703656),
+  m = n(607187),
   E = n(937995),
   v = n(366050),
   b = n(944486),
@@ -84,7 +84,7 @@ function V(e) {
   let {
     channel: T,
     isLoading: N
-  } = e, [U, G] = i.useState(!1), B = (0, s.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivityForChannel(T.id)), F = (0, s.e7)([S.ZP], () => S.ZP.getActivityPanelMode()), V = (0, p.q)(null == B ? void 0 : B.applicationId), Z = null == B ? void 0 : B.launchId, H = (0, s.e7)([b.Z], () => b.Z.getChannelId() === T.id), {
+  } = e, [U, G] = i.useState(!1), B = (0, s.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivityForChannel(T.id)), F = (0, s.e7)([S.ZP], () => S.ZP.getActivityPanelMode()), V = (0, _.q)(null == B ? void 0 : B.applicationId), Z = null == B ? void 0 : B.launchId, H = (0, s.e7)([b.Z], () => b.Z.getChannelId() === T.id), {
     dockedRect: W,
     isHidden: Y
   } = (0, s.cj)([v.Z], () => {
@@ -100,7 +100,7 @@ function V(e) {
     selectedParticipant: q,
     participantsOpen: Q
   } = (0, s.cj)([h.Z], () => ({
-    activityParticipant: null != B ? h.Z.getParticipant(T.id, (0, _.gN)({
+    activityParticipant: null != B ? h.Z.getParticipant(T.id, (0, p.gN)({
       applicationId: B.applicationId,
       instanceId: B.compositeInstanceId
     })) : null,
@@ -110,12 +110,12 @@ function V(e) {
 
   function ei() {
     var e;
-    null != B && u.Z.selectParticipant(T.id, (0, _.gN)({
+    null != B && u.Z.selectParticipant(T.id, (0, p.gN)({
       applicationId: B.applicationId,
       instanceId: B.compositeInstanceId
     }));
     let t = null !== (e = T.getGuildId()) && void 0 !== e ? e : L.ME;
-    d.Z.channelListScrollTo(t, T.id), (0, m.XU)(t, T.id), null == K && (0, f.Ou)()
+    d.Z.channelListScrollTo(t, T.id), (0, g.XU)(t, T.id), null == K && (0, f.Ou)()
   }
 
   function eo() {
@@ -196,7 +196,7 @@ function V(e) {
         onActive: o,
         onForceIdle: s
       } = e;
-      return (0, r.jsxs)(g.Z, {
+      return (0, r.jsxs)(m.Z, {
         className: a()(M.root, {
           [M.pipMode]: en,
           [k.elevationHigh]: en,

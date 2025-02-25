@@ -21,8 +21,8 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let p = 3,
-  _ = 18e4;
+let _ = 3,
+  p = 18e4;
 
 function h() {
   let e = c.Z.getCurrentClientVoiceChannelId(null);
@@ -31,25 +31,25 @@ function h() {
   return !(null == t || !t.isPrivate() || t.recipients.length > 1 || u.ZP.countVoiceStatesForChannel(e) > 1) && null == s.ZP.getSelfEmbeddedActivityForChannel(e)
 }
 
-function m() {
+function g() {
   if (!h()) return;
   let e = c.Z.getCurrentClientVoiceChannelId(null);
   null != e && (i.Z.sendBotMessage(e, d.NW.formatToPlainString(d.t.XYof5O, {
-    number: p
+    number: _
   })), o.default.selectVoiceChannel(null))
 }
-class g extends a.Z {
+class m extends a.Z {
   constructor(...e) {
     super(...e), f(this, "idleTimeout", new r.V7), f(this, "handleConnectionClosed", () => {
       this.idleTimeout.stop()
     }), f(this, "handleEmbeddedActivityDisconnect", () => {
-      h() && this.idleTimeout.start(_, m, !0)
+      h() && this.idleTimeout.start(p, g, !0)
     }), f(this, "handleVoiceStateUpdates", () => {
       if (!h()) {
         this.idleTimeout.stop();
         return
       }
-      this.idleTimeout.start(_, m, !1)
+      this.idleTimeout.start(p, g, !1)
     }), f(this, "actions", {
       VOICE_STATE_UPDATES: this.handleVoiceStateUpdates,
       CONNECTION_CLOSED: this.handleConnectionClosed,
@@ -57,4 +57,4 @@ class g extends a.Z {
     })
   }
 }
-let E = new g
+let E = new m

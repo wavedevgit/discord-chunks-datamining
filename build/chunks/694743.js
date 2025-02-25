@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  E: () => p
+  E: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -36,32 +36,32 @@ var d = function(e) {
 }(d || {});
 let f = "indeterminate";
 
-function p(e) {
+function _(e) {
   let t, {
       className: n,
       percent: o,
       size: c = "small",
       foregroundColor: d = s.Z.unsafe_rawColors.BRAND_500.css,
-      backgroundColor: p = "var(--background-modifier-active)",
-      foregroundGradientColor: _,
+      backgroundColor: _ = "var(--background-modifier-active)",
+      foregroundGradientColor: p,
       animate: h = !0
     } = e,
-    m = null != o ? o : 0;
-  return t = null != _ ? {
-    background: "linear-gradient(to right, ".concat(_[0], ", ").concat(_[1], ")")
+    g = null != o ? o : 0;
+  return t = null != p ? {
+    background: "linear-gradient(to right, ".concat(p[0], ", ").concat(p[1], ")")
   } : {
     backgroundColor: d
   }, (0, r.jsx)("div", {
     className: a()(n, l.progress, l[c]),
     style: {
-      backgroundColor: p
+      backgroundColor: _
     },
-    children: m !== f && "number" == typeof m ? (0, r.jsx)("div", {
+    children: g !== f && "number" == typeof g ? (0, r.jsx)("div", {
       className: a()(l.progressBar, l[c], {
         [l.animating]: h
       }),
       style: u({
-        transform: "translate3d(".concat(Math.min(Math.max(0, m), 100) - 100, "%, 0, 0)")
+        transform: "translate3d(".concat(Math.min(Math.max(0, g), 100) - 100, "%, 0, 0)")
       }, t)
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)("div", {
@@ -78,4 +78,4 @@ function p(e) {
     })
   })
 }
-p.Sizes = d, p.INDETERMINATE = f
+_.Sizes = d, _.INDETERMINATE = f

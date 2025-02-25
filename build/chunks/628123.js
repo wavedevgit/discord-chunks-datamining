@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(903772),
   d = n(442837),
   f = n(481060),
-  p = n(386506),
-  _ = n(304761),
+  _ = n(386506),
+  p = n(304761),
   h = n(865427),
-  m = n(406128),
-  g = n(797614),
+  g = n(406128),
+  m = n(797614),
   E = n(703656),
   v = n(626135),
   b = n(960048),
@@ -37,13 +37,13 @@ function T(e, t, n) {
 
 function N() {
   let [e, t] = i.useState(!1);
-  if (null == (0, d.e7)([_.C], () => {
+  if (null == (0, d.e7)([p.C], () => {
       var e;
-      return (0, h.fD)() ? null === (e = _.C.getCurrentBuildOverride().overrides) || void 0 === e ? void 0 : e.discord_web : null
+      return (0, h.fD)() ? null === (e = p.C.getCurrentBuildOverride().overrides) || void 0 === e ? void 0 : e.discord_web : null
     })) return null;
   let n = async () => {
     try {
-      t(!0), await (0, p.bF)(), window.location.reload(!0)
+      t(!0), await (0, _.bF)(), window.location.reload(!0)
     } catch (e) {
       t(!1)
     }
@@ -57,7 +57,7 @@ function N() {
   })
 }
 let A = a().throttle(e => {
-  g.Z.increment({
+  m.Z.increment({
     name: c.V.APP_CRASHED,
     tags: ["reason:".concat(s.v.UNHANDLED_JS_ERROR), "level:".concat(l.c.FATAL), "modded_client:".concat(e)]
   }, !0)
@@ -122,7 +122,7 @@ class C extends i.PureComponent {
             children: S.NW.string(S.t["+hivLS"])
           }), (0, r.jsx)(N, {})]
         });
-      return (0, r.jsx)(m.Z, {
+      return (0, r.jsx)(g.Z, {
         title: S.NW.string(S.t["3h+n+/"]),
         note: null != t ? t() : e,
         action: n,

@@ -13,13 +13,13 @@ var r = n(200651),
   u = n(893718),
   d = n(993413),
   f = n(131704),
-  p = n(474936),
-  _ = n(981631),
+  _ = n(474936),
+  p = n(981631),
   h = n(388032),
-  m = n(397381);
-let g = (0, f.kt)({
+  g = n(397381);
+let m = (0, f.kt)({
   id: "1",
-  type: _.d4z.DM
+  type: p.d4z.DM
 });
 
 function E(e) {
@@ -28,7 +28,7 @@ function E(e) {
     errors: n,
     onTextChange: o,
     pendingText: f,
-    placeholder: _,
+    placeholder: p,
     currentText: E,
     className: v,
     innerClassName: b,
@@ -56,18 +56,18 @@ function E(e) {
       I(E), N(e)
     }
   }, [f, E]), (0, r.jsx)("div", {
-    className: a()(m.body, v),
+    className: a()(g.body, v),
     children: (0, r.jsxs)(d.Z, {
       title: t,
       errors: n,
       disabled: y,
       children: [(0, r.jsx)(u.Z, {
-        innerClassName: a()(m.textArea, b),
-        editorClassName: m.editorTextArea,
-        maxCharacterCount: p.$n,
+        innerClassName: a()(g.textArea, b),
+        editorClassName: g.editorTextArea,
+        maxCharacterCount: _.$n,
         onChange: C,
-        placeholder: _,
-        channel: g,
+        placeholder: p,
+        channel: m,
         textValue: S,
         richValue: T,
         type: l.Ie.CUSTOM_GIFT,
@@ -82,7 +82,7 @@ function E(e) {
         disableThemedBackground: O
       }), (0, r.jsx)(s.nn4, {
         children: h.NW.format(h.t["+DFxLS"], {
-          maxLength: p.$n
+          maxLength: _.$n
         })
       })]
     })

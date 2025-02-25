@@ -62,8 +62,8 @@ function t(e) {
       begin: t.optional(i) + e.IDENT_RE,
       relevance: 0
     },
-    p = t.optional(i) + e.IDENT_RE + "\\s*\\(",
-    _ = {
+    _ = t.optional(i) + e.IDENT_RE + "\\s*\\(",
+    p = {
       type: ["bool", "char", "char16_t", "char32_t", "char8_t", "double", "float", "int", "long", "short", "void", "wchar_t", "unsigned", "signed", "const", "static"],
       keyword: ["alignas", "alignof", "and", "and_eq", "asm", "atomic_cancel", "atomic_commit", "atomic_noexcept", "auto", "bitand", "bitor", "break", "case", "catch", "class", "co_await", "co_return", "co_yield", "compl", "concept", "const_cast|10", "consteval", "constexpr", "constinit", "continue", "decltype", "default", "delete", "do", "dynamic_cast|10", "else", "enum", "explicit", "export", "extern", "false", "final", "for", "friend", "goto", "if", "import", "inline", "module", "mutable", "namespace", "new", "noexcept", "not", "not_eq", "nullptr", "operator", "or", "or_eq", "override", "private", "protected", "public", "reflexpr", "register", "reinterpret_cast|10", "requires", "return", "sizeof", "static_assert", "static_cast|10", "struct", "switch", "synchronized", "template", "this", "thread_local", "throw", "transaction_safe", "transaction_safe_dynamic", "true", "try", "typedef", "typeid", "typename", "union", "using", "virtual", "volatile", "while", "xor", "xor_eq"],
       literal: ["NULL", "false", "nullopt", "nullptr", "true"],
@@ -78,8 +78,8 @@ function t(e) {
       },
       begin: t.concat(/\b/, /(?!decltype)/, /(?!if)/, /(?!for)/, /(?!switch)/, /(?!while)/, e.IDENT_RE, t.lookahead(/(<[^<>]+>|)\s*\(/))
     },
-    m = [h, d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
-    g = {
+    g = [h, d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
+    m = {
       variants: [{
         begin: /=/,
         end: /;/
@@ -90,30 +90,30 @@ function t(e) {
         beginKeywords: "new throw return else",
         end: /;/
       }],
-      keywords: _,
-      contains: m.concat([{
+      keywords: p,
+      contains: g.concat([{
         begin: /\(/,
         end: /\)/,
-        keywords: _,
-        contains: m.concat(["self"]),
+        keywords: p,
+        contains: g.concat(["self"]),
         relevance: 0
       }]),
       relevance: 0
     },
     E = {
       className: "function",
-      begin: "(" + a + "[\\*&\\s]+)+" + p,
+      begin: "(" + a + "[\\*&\\s]+)+" + _,
       returnBegin: !0,
       end: /[{;=]/,
       excludeEnd: !0,
-      keywords: _,
+      keywords: p,
       illegal: /[^\w\s\*&:<>.]/,
       contains: [{
         begin: r,
-        keywords: _,
+        keywords: p,
         relevance: 0
       }, {
-        begin: p,
+        begin: _,
         returnBegin: !0,
         contains: [f],
         relevance: 0
@@ -131,12 +131,12 @@ function t(e) {
         className: "params",
         begin: /\(/,
         end: /\)/,
-        keywords: _,
+        keywords: p,
         relevance: 0,
         contains: [n, e.C_BLOCK_COMMENT_MODE, c, u, s, {
           begin: /\(/,
           end: /\)/,
-          keywords: _,
+          keywords: p,
           relevance: 0,
           contains: ["self", n, e.C_BLOCK_COMMENT_MODE, c, u, s]
         }]
@@ -145,19 +145,19 @@ function t(e) {
   return {
     name: "C++",
     aliases: ["cc", "c++", "h++", "hpp", "hh", "hxx", "cxx"],
-    keywords: _,
+    keywords: p,
     illegal: "</",
     classNameAliases: {
       "function.dispatch": "built_in"
     },
-    contains: [].concat(g, E, h, m, [d, {
+    contains: [].concat(m, E, h, g, [d, {
       begin: "\\b(deque|list|queue|priority_queue|pair|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array|tuple|optional|variant|function|flat_map|flat_set)\\s*<(?!<)",
       end: ">",
-      keywords: _,
+      keywords: p,
       contains: ["self", s]
     }, {
       begin: e.IDENT_RE + "::",
-      keywords: _
+      keywords: p
     }, {
       match: [/\b(?:enum(?:\s+(?:class|struct))?|class|struct|union)/, /\s+/, /\w+/],
       className: {

@@ -82,7 +82,7 @@ function f(e, t) {
   return r
 }
 
-function p(e, t) {
+function _(e, t) {
   let {
     items: n
   } = t, r = s(o({}, e), {
@@ -94,7 +94,7 @@ function p(e, t) {
   })
 }
 
-function _(e, t) {
+function p(e, t) {
   let {
     path: n
   } = t, r = s(o({}, e), {
@@ -119,7 +119,7 @@ function h(e, t) {
   })
 }
 
-function m(e, t) {
+function g(e, t) {
   let n = u(e),
     r = d(e);
   if (null == r) return e;
@@ -133,7 +133,7 @@ function m(e, t) {
   })
 }
 
-function g(e, t) {
+function m(e, t) {
   var n;
   let r = u(e),
     i = d(e);
@@ -170,15 +170,15 @@ function b(e, t) {
     case r.Us.NAVIGATE_UP:
       return h(e, t);
     case r.Us.NAVIGATE_DOWN:
-      return m(e, t);
-    case r.Us.NAVIGATE_IN:
       return g(e, t);
+    case r.Us.NAVIGATE_IN:
+      return m(e, t);
     case r.Us.NAVIGATE_OUT:
       return E(e, t);
     case "UPDATE_ITEMS":
-      return p(e, t);
-    case "SET_FOCUS_PATH":
       return _(e, t);
+    case "SET_FOCUS_PATH":
+      return p(e, t);
     case r.Us.SELECT_FOCUSED_ITEM:
       break;
     default:

@@ -12,11 +12,11 @@ var r, i = n(392711),
   u = n(430824),
   d = n(306680),
   f = n(944486),
-  p = n(709054),
-  _ = n(344185),
+  _ = n(709054),
+  p = n(344185),
   h = n(569471),
-  m = n(819168),
-  g = n(176505);
+  g = n(819168),
+  m = n(176505);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,7 +67,7 @@ let O = {},
 
 function P() {
   for (let e in O = {}, N = {}, S = {}, I = {}, T = {}, C = f.Z.getChannelId(), R) clearTimeout(R[e]);
-  R = {}, _.Z.forEachGuild(e => {
+  R = {}, p.Z.forEachGuild(e => {
     w(e)
   }), L()
 }
@@ -77,7 +77,7 @@ function D(e) {
 }
 
 function w(e) {
-  let t = _.Z.getThreadsForGuild(e);
+  let t = p.Z.getThreadsForGuild(e);
   for (let e in t)
     for (let n in t[e]) {
       J(n);
@@ -121,16 +121,16 @@ function M(e, t) {
   let i = d.ZP.getTrackedAckMessageId(t);
   if (null == i) {
     let e = Date.now();
-    null != r.joinedAt && (r.joinedAt instanceof Date ? e = r.joinedAt.getTime() : "string" == typeof r.joinedAt && (e = new Date(r.joinedAt).getTime())), i = p.default.fromTimestamp(e)
+    null != r.joinedAt && (r.joinedAt instanceof Date ? e = r.joinedAt.getTime() : "string" == typeof r.joinedAt && (e = new Date(r.joinedAt).getTime())), i = _.default.fromTimestamp(e)
   }
-  for (let n in I[e][t]) t === C ? d.ZP.isNewForumThread(n, t, r) && A[e][t]++ : p.default.compare(n, i) > 0 && !d.ZP.hasOpenedThread(n) && A[e][t]++
+  for (let n in I[e][t]) t === C ? d.ZP.isNewForumThread(n, t, r) && A[e][t]++ : _.default.compare(n, i) > 0 && !d.ZP.hasOpenedThread(n) && A[e][t]++
 }
 
 function j(e, t, n) {
   if (null == t) return !1;
   let r = c.Z.getChannel(n),
     i = h.Z.joinTimestamp(n);
-  if (null != r && _.Z.isActive(e, t, n)) {
+  if (null != r && p.Z.isActive(e, t, n)) {
     if (null != i) {
       let e = {
           channel: r,
@@ -186,12 +186,12 @@ function B(e) {
   let {
     channel: t
   } = e, n = !1;
-  return null != t.guild_id && null != t.parent_id && (t.guild_id in O && t.parent_id in O[t.guild_id] && (delete O[t.guild_id][t.parent_id], n = !0), t.guild_id in S && t.parent_id in S[t.guild_id] && (delete S[t.guild_id][t.parent_id], n = !0), t.guild_id in N && t.parent_id in N[t.guild_id] && (p.default.keys(N[t.guild_id][t.parent_id]).forEach(J), delete N[t.guild_id][t.parent_id], n = !0), t.guild_id in I && t.parent_id in I[t.guild_id] && (delete I[t.guild_id][t.parent_id], n = !0), t.guild_id in T && t.parent_id in T[t.guild_id] && (delete T[t.guild_id][t.parent_id], n = !0), n && M(t.guild_id, t.parent_id)), n
+  return null != t.guild_id && null != t.parent_id && (t.guild_id in O && t.parent_id in O[t.guild_id] && (delete O[t.guild_id][t.parent_id], n = !0), t.guild_id in S && t.parent_id in S[t.guild_id] && (delete S[t.guild_id][t.parent_id], n = !0), t.guild_id in N && t.parent_id in N[t.guild_id] && (_.default.keys(N[t.guild_id][t.parent_id]).forEach(J), delete N[t.guild_id][t.parent_id], n = !0), t.guild_id in I && t.parent_id in I[t.guild_id] && (delete I[t.guild_id][t.parent_id], n = !0), t.guild_id in T && t.parent_id in T[t.guild_id] && (delete T[t.guild_id][t.parent_id], n = !0), n && M(t.guild_id, t.parent_id)), n
 }
 
 function F(e) {
   let t = c.Z.getChannel(e.id);
-  return !!(null != t && _.Z.isActive(e.guildId, t.parent_id, e.id)) && j(t.guild_id, t.parent_id, t.id)
+  return !!(null != t && p.Z.isActive(e.guildId, t.parent_id, e.id)) && j(t.guild_id, t.parent_id, t.id)
 }
 
 function V(e) {
@@ -282,9 +282,9 @@ function z() {
 function q(e) {
   let t = d.ZP.getMentionCount(e.id) > 0,
     n = d.ZP.hasUnread(e.id) && !h.Z.isMuted(e.id),
-    r = e.hasFlag(g.zZ.PINNED),
+    r = e.hasFlag(m.zZ.PINNED),
     i = e.isActiveThread(),
-    o = i && (0, m.Z)(e) > Date.now();
+    o = i && (0, g.Z)(e) > Date.now();
   return {
     isUnread: (i || r) && n || t,
     isRelevant: o || r || n || t,
@@ -303,7 +303,7 @@ function X(e) {
       type: "THREAD_UPDATE",
       channel: t
     })
-  }, (0, m.Z)(e) - Date.now() + 1)
+  }, (0, g.Z)(e) - Date.now() + 1)
 }
 
 function J(e) {
@@ -341,7 +341,7 @@ let er = {},
   es = {};
 class el extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(_.Z, c.Z, h.Z, d.ZP), this.syncWith([f.Z], z)
+    this.waitFor(p.Z, c.Z, h.Z, d.ZP), this.syncWith([f.Z], z)
   }
   hasActiveJoinedUnreadThreads(e, t) {
     return e in S && t in S[e]

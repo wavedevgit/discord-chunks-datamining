@@ -24,7 +24,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,10 +36,10 @@ function p(e) {
   }
   return e
 }
-let _ = N(d.Yn.DEFAULT, u._s_.TRANSPORT, 0),
-  h = _,
-  m = {},
-  g = new Map,
+let p = N(d.Yn.DEFAULT, u._s_.TRANSPORT, 0),
+  h = p,
+  g = {},
+  m = new Map,
   E = {
     availableOutgoingBitrate: !0,
     bitrate: !0,
@@ -79,10 +79,10 @@ class O {
   }
   put(e, t, n, r) {
     if ("" === r) {
-      let r = p({}, this.state);
+      let r = _({}, this.state);
       return delete r[b(e, t, n)], new O(r)
     }
-    return new O(p({
+    return new O(_({
       [b(e, t, n)]: r
     }, this.state))
   }
@@ -112,7 +112,7 @@ function A(e) {
 
 function C() {
   Object.values(d.Yn).forEach(e => {
-    m[e] = {}
+    g[e] = {}
   })
 }
 
@@ -142,7 +142,7 @@ function P() {
 
 function D(e) {
   var t;
-  h = null !== (t = e.section) && void 0 !== t ? t : _
+  h = null !== (t = e.section) && void 0 !== t ? t : p
 }
 
 function w() {
@@ -150,13 +150,13 @@ function w() {
 }
 
 function L(e) {
-  null != e.channelId && (C(), g.clear())
+  null != e.channelId && (C(), m.clear())
 }
 
 function x(e) {
   if (null === e.streamId) {
     let t = y(e.userId, e.context);
-    g.set(t, d.Z.NO_OVERRIDE)
+    m.set(t, d.Z.NO_OVERRIDE)
   }
 }
 
@@ -199,7 +199,7 @@ function k(e) {
     context: t,
     stats: n,
     index: r
-  } = e, i = m[t];
+  } = e, i = g[t];
   if (null != n) {
     let [e, o, a] = h.split(":");
     if (e === t && parseInt(a) === r && null != c.default.getUser(o)) {
@@ -208,7 +208,7 @@ function k(e) {
           inbound: e
         }
       } = n;
-      Object.keys(e).includes(o) || (h = _)
+      Object.keys(e).includes(o) || (h = p)
     }
     i[r] = j(n, i[r])
   } else delete i[r]
@@ -252,7 +252,7 @@ function V(e) {
     context: n,
     quality: r
   } = e;
-  g.set(y(t, n), r)
+  m.set(y(t, n), r)
 }
 C();
 class Z extends(r = i.ZP.Store) {
@@ -261,7 +261,7 @@ class Z extends(r = i.ZP.Store) {
   }
   getStats() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d.Yn.DEFAULT;
-    return m[e][0]
+    return g[e][0]
   }
   getInboundStats(e, t) {
     var n, r;
@@ -288,7 +288,7 @@ class Z extends(r = i.ZP.Store) {
   }
   getAllStats() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d.Yn.DEFAULT;
-    return Object.values(m[e])
+    return Object.values(g[e])
   }
   getVideoStreams() {
     return S
@@ -298,7 +298,7 @@ class Z extends(r = i.ZP.Store) {
   }
   getSimulcastDebugOverride(e, t) {
     let n = y(e, t);
-    return g.has(n) ? g.get(n) : d.Z.NO_OVERRIDE
+    return m.has(n) ? m.get(n) : d.Z.NO_OVERRIDE
   }
 }
 f(Z, "displayName", "RTCDebugStore");

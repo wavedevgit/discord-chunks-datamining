@@ -14,19 +14,19 @@ var r = n(592125),
   d = n(981631);
 
 function f(e) {
-  return (0, a.C)(() => p(e))
+  return (0, a.C)(() => _(e))
 }
-async function p(e) {
+async function _(e) {
   let {
     targetApplicationId: t,
     locationObject: n,
     channelId: a,
     analyticsLocations: f,
-    componentId: p,
-    commandOrigin: _,
+    componentId: _,
+    commandOrigin: p,
     sectionName: h,
-    source: m,
-    onExecutedCallback: g,
+    source: g,
+    onExecutedCallback: m,
     referrerId: E,
     customId: v,
     inviterUserId: b
@@ -40,13 +40,13 @@ async function p(e) {
     applicationId: S.id,
     isStart: !0,
     embeddedActivitiesManager: y,
-    componentId: p,
-    commandOrigin: _,
+    componentId: _,
+    commandOrigin: p,
     sectionName: h,
     locationObject: n,
     analyticsLocations: f,
-    source: m,
-    onExecutedCallback: g,
+    source: g,
+    onExecutedCallback: m,
     referrerId: E,
     customId: v,
     instanceId: void 0,

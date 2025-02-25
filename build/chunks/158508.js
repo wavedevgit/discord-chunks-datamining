@@ -14,12 +14,12 @@ var i = n(442837),
   u = n(922611),
   d = n(699516),
   f = n(594174),
-  p = n(981631),
-  _ = n(921944),
+  _ = n(981631),
+  p = n(921944),
   h = n(388032),
-  m = n(607570);
+  g = n(607570);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -35,7 +35,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -69,12 +69,12 @@ function O(e) {
   let {
     user: t,
     guildId: l,
-    channelId: g,
+    channelId: m,
     onBlock: v,
     onIgnore: O,
     onUnignore: S,
     location: I = "ContextMenu",
-    appContext: T = p.IlC.APP
+    appContext: T = _.IlC.APP
   } = e, {
     id: N
   } = t, A = (0, i.e7)([f.default], () => {
@@ -93,19 +93,19 @@ function O(e) {
     id: "ignore",
     color: "default",
     label: C ? h.NW.string(h.t["8wXU9P"]) : (0, r.jsxs)("div", {
-      className: m.label,
+      className: g.label,
       children: [h.NW.string(h.t.ytCpKi), x ? (0, r.jsx)(y, {}) : null]
     }),
     action: C ? () => {
-      null == S || S(), s.Z.unignoreUser(N, null != I ? I : "use-ignore-user-item-web", null != g ? g : void 0)
+      null == S || S(), s.Z.unignoreUser(N, null != I ? I : "use-ignore-user-item-web", null != m ? m : void 0)
     } : () => {
-      x && L(_.L.TAKE_ACTION), (0, a.ZDy)(async () => {
+      x && L(p.L.TAKE_ACTION), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("97652"), n.e("25726")]).then(n.bind(n, 240515));
         return n => (0, r.jsx)(e, b(E({}, n), {
           guildId: l,
-          channelId: g,
+          channelId: m,
           user: t,
           onIgnore: O,
           onBlock: v,

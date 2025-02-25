@@ -30,9 +30,9 @@ var r = n(200651),
   C = n(585483),
   I = n(981631),
   S = n(388032),
-  P = n(238874);
+  T = n(238874);
 
-function T(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -52,9 +52,9 @@ let w = e => {
       className: a
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(a, P.header),
+      className: o()(a, T.header),
       children: [(0, r.jsxs)("div", {
-        className: P.titleContainer,
+        className: T.titleContainer,
         children: [null != n ? (0, r.jsx)(n, {
           color: u.TVs.colors.INTERACTIVE_NORMAL
         }) : null, null == t ? null : (0, r.jsx)(u.Text, {
@@ -71,14 +71,14 @@ let w = e => {
       image: n
     } = e;
     return (0, r.jsxs)("div", {
-      className: P.emptyPlaceholder,
+      className: T.emptyPlaceholder,
       children: [(0, r.jsx)("div", {
-        className: P.image,
+        className: T.image,
         style: {
           backgroundImage: "url(".concat(n, ")")
         }
       }), (0, r.jsx)("div", {
-        className: P.body,
+        className: T.body,
         children: t
       })]
     })
@@ -89,17 +89,17 @@ class k extends i.PureComponent {
       jumping: e
     } = this.props;
     return (0, r.jsxs)(u.P3F, {
-      className: P.jumpButton,
+      className: T.jumpButton,
       onClick: this.handleClickJump,
       children: [(0, r.jsx)("div", {
-        className: o()(P.__invalid_text, {
+        className: o()(T.__invalid_text, {
           hidden: e
         }),
         children: S.NW.string(S.t.k5WiPT)
       }), (0, r.jsx)(u.$jN, {
         type: u.$jN.Type.PULSING_ELLIPSIS,
-        className: o()(P.loading, {
-          [P.visible]: e
+        className: o()(T.loading, {
+          [T.visible]: e
         })
       })]
     })
@@ -118,24 +118,24 @@ class k extends i.PureComponent {
       children: (0, r.jsx)(u.Dio, {
         size: "md",
         color: "currentColor",
-        className: P.closeIcon
+        className: T.closeIcon
       })
     }) : null
   }
   render() {
     return (0, r.jsxs)("div", {
-      className: P.actionButtons,
+      className: T.actionButtons,
       children: [this.renderJumpButton(), this.renderCloseButton()]
     })
   }
   constructor(...e) {
-    super(...e), T(this, "handleClickJump", e => {
+    super(...e), P(this, "handleClickJump", e => {
       let {
         jumpTo: t,
         message: n
       } = this.props;
       t(n, e)
-    }), T(this, "handleClickClose", e => {
+    }), P(this, "handleClickClose", e => {
       let {
         onCloseMessage: t,
         message: n
@@ -198,7 +198,7 @@ function L(e) {
     W = [],
     F = !0;
   null == n ? W = [(0, r.jsx)("div", {
-    className: o()(P.emptyPlaceholder, P.loadingPlaceholder),
+    className: o()(T.emptyPlaceholder, T.loadingPlaceholder),
     children: (0, r.jsx)(u.$jN, {})
   }, "spinner")] : 0 === n.length ? W.push((0, r.jsx)(i.Fragment, {
     children: _(v.Z.theme)
@@ -207,10 +207,10 @@ function L(e) {
   }));
   let U = null;
   null != n && n.length > 0 && null != p && (U = l ? (0, r.jsx)("div", {
-    className: P.loadingMore,
+    className: T.loadingMore,
     children: (0, r.jsx)(u.$jN, {})
   }, "loading-more-after") : a ? (0, r.jsx)("div", {
-    className: P.hasMore,
+    className: T.hasMore,
     children: (0, r.jsx)(u.zxk, {
       look: u.zxk.Looks.FILLED,
       color: u.zxk.Colors.PRIMARY,
@@ -219,12 +219,12 @@ function L(e) {
       children: S.NW.string(S.t.XBlaiI)
     })
   }) : (0, r.jsx)("div", {
-    className: P.scrollingFooterWrap,
+    className: T.scrollingFooterWrap,
     children: _(v.Z.theme)
   }));
   let B = null == y ? void 0 : y(),
     G = F && null != B ? (0, r.jsx)("div", {
-      className: P.footer,
+      className: T.footer,
       children: (0, r.jsx)(h.Z, {
         style: {
           width: "100%",
@@ -240,7 +240,7 @@ function L(e) {
   R && (H.maxHeight -= 40), D && (H.maxHeight -= 48);
   let V = null != p && a;
   return (0, r.jsx)("div", {
-    className: o()(O, P.messagesPopoutWrap),
+    className: o()(O, T.messagesPopoutWrap),
     style: H,
     onClick: A,
     onDoubleClick: A,
@@ -248,7 +248,7 @@ function L(e) {
     children: (0, r.jsxs)(u.y5t, {
       component: m(),
       children: [(0, r.jsxs)(u.Den, {
-        className: o()(P.messagesPopout, x),
+        className: o()(T.messagesPopout, x),
         onScroll: V ? M : void 0,
         ref: Z,
         children: [(0, r.jsx)(c.bG, {
@@ -280,7 +280,7 @@ function L(e) {
                   "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                     return Object.getOwnPropertyDescriptor(n, e).enumerable
                   }))), r.forEach(function(t) {
-                    T(e, t, n[t])
+                    P(e, t, n[t])
                   })
                 }
                 return e
@@ -325,7 +325,7 @@ function D(e) {
     className: j,
     onCloseMessage: N,
     listName: C
-  } = e, T = (0, d.e7)([x.Z], () => {
+  } = e, P = (0, d.e7)([x.Z], () => {
     let e = null != a ? x.Z.getMessages(a.id) : null;
     return null != e && null != e.jumpTargetId && e.loadingMore && null == e.get(e.jumpTargetId)
   });
@@ -352,7 +352,7 @@ function D(e) {
       }),
       confirmText: S.NW.string(S.t.BddRzc)
     });
-    else if (!T) {
+    else if (!P) {
       let e = y.Z.getChannel(l);
       null != e && (m.Z.trackJump(l, r, t), (0, b.uL)(I.Z5c.CHANNEL(e.getGuildId(), l, r))), null == u || u(n)
     }
@@ -384,15 +384,15 @@ function D(e) {
       if (null != v) return v(t, e => A(t, e));
       let i = [];
       return null == n ? [] : (i.push((0, r.jsxs)("div", {
-        className: P.messageGroupWrapper,
+        className: T.messageGroupWrapper,
         children: [(0, r.jsx)(_.Z, {
-          className: P.messageGroupCozy,
+          className: T.messageGroupCozy,
           message: t,
           channel: n
         }), (0, r.jsx)(R, {
           channel: a,
           message: t,
-          jumping: T,
+          jumping: P,
           canCloseAllMessages: f,
           jumpTo: A,
           onCloseMessage: N

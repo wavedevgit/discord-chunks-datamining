@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Gw: () => h,
-  Ob: () => p,
-  XJ: () => _
+  Ob: () => _,
+  XJ: () => p
 }), n(47120);
 var r = n(192379),
   i = n(149765),
@@ -32,37 +32,37 @@ let d = {
     }
     return !1
   },
-  p = e => {
+  _ = e => {
     if (null == e) return [u.Pl.CREATE_EVENTS, u.Pl.MANAGE_EVENTS];
     let t = c.TT;
     return e.isGuildStageVoice() ? t = c.LK : e.isGuildVoice() && (t = c.AN), [i.$e(t, u.Pl.CREATE_EVENTS), i.$e(t, u.Pl.MANAGE_EVENTS)]
   },
-  _ = e => {
-    let [t, n] = e instanceof a.ZP ? [u.Pl.CREATE_EVENTS, u.Pl.MANAGE_EVENTS] : p(e), [i, c, _, h] = (0, o.Wu)([s.Z], () => [s.Z.can(u.Pl.CREATE_GUILD_EXPRESSIONS, e), s.Z.can(u.Pl.MANAGE_GUILD_EXPRESSIONS, e), s.Z.can(t, e), s.Z.can(n, e)]), m = (0, o.e7)([l.default], () => l.default.getCurrentUser()), g = r.useCallback(e => f(e, m, c, i), [i, c, m]), E = r.useCallback(e => f(e, m, h, _), [h, _, m]);
+  p = e => {
+    let [t, n] = e instanceof a.ZP ? [u.Pl.CREATE_EVENTS, u.Pl.MANAGE_EVENTS] : _(e), [i, c, p, h] = (0, o.Wu)([s.Z], () => [s.Z.can(u.Pl.CREATE_GUILD_EXPRESSIONS, e), s.Z.can(u.Pl.MANAGE_GUILD_EXPRESSIONS, e), s.Z.can(t, e), s.Z.can(n, e)]), g = (0, o.e7)([l.default], () => l.default.getCurrentUser()), m = r.useCallback(e => f(e, g, c, i), [i, c, g]), E = r.useCallback(e => f(e, g, h, p), [h, p, g]);
     return null == e ? d : {
       canCreateExpressions: i,
-      canCreateGuildEvent: _,
+      canCreateGuildEvent: p,
       canManageAllExpressions: c,
       canManageAllEvents: h,
-      canManageGuildExpression: g,
+      canManageGuildExpression: m,
       canManageGuildEvent: E
     }
   },
   h = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.Z,
       n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : l.default,
-      [r, i] = e instanceof a.ZP ? [u.Pl.CREATE_EVENTS, u.Pl.MANAGE_EVENTS] : p(e),
+      [r, i] = e instanceof a.ZP ? [u.Pl.CREATE_EVENTS, u.Pl.MANAGE_EVENTS] : _(e),
       o = t.can(u.Pl.CREATE_GUILD_EXPRESSIONS, e),
       c = t.can(u.Pl.MANAGE_GUILD_EXPRESSIONS, e),
-      _ = t.can(r, e),
+      p = t.can(r, e),
       h = t.can(i, e),
-      m = n.getCurrentUser();
+      g = n.getCurrentUser();
     return null == e ? d : {
       canCreateExpressions: o,
-      canCreateGuildEvent: _,
+      canCreateGuildEvent: p,
       canManageAllExpressions: c,
       canManageAllEvents: h,
-      canManageGuildExpression: e => f(e, m, c, o),
-      canManageGuildEvent: e => f(e, m, h, _)
+      canManageGuildExpression: e => f(e, g, c, o),
+      canManageGuildEvent: e => f(e, g, h, p)
     }
   }

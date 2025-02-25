@@ -28,8 +28,8 @@ var r = n(200651),
   C = n(526146),
   I = n(400565),
   S = n(148789),
-  P = n(11825),
-  T = n(981631),
+  T = n(11825),
+  P = n(981631),
   A = n(388032),
   w = n(632852),
   Z = n(756688),
@@ -153,12 +153,12 @@ let W = i.memo(function(e) {
               messageId: null === (e = a.message) || void 0 === e ? void 0 : e.id,
               sourceAnalyticsLocations: c,
               analyticsLocation: {
-                section: T.jXE.NOTIFICATION_CENTER
+                section: P.jXE.NOTIFICATION_CENTER
               }
             })
           } else await (0, u.Z)(r)
         }
-        b.default.track(T.rMx.NOTIFICATION_CENTER_ACTION, {
+        b.default.track(P.rMx.NOTIFICATION_CENTER_ACTION, {
           action_type: O.ud.CLICKED,
           notification_center_id: a.id,
           item_type: a.type,
@@ -214,7 +214,7 @@ let W = i.memo(function(e) {
             children: (0, E.a3)(v.default.extractTimestamp(a.id))
           }), g]
         })]
-      }), _ ? null : (0, r.jsx)(P.z, {
+      }), _ ? null : (0, r.jsx)(T.z, {
         item: a
       })]
     })

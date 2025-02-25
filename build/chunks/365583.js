@@ -15,12 +15,12 @@ var i = n(442837),
   u = n(833664),
   d = n(503438),
   f = n(579630),
-  p = n(26033),
-  _ = n(594174),
+  _ = n(26033),
+  p = n(594174),
   h = n(324745),
-  m = n(981631),
-  g = n(388032);
-let E = () => a.Z.open(m.oAB.CONNECTIONS, null);
+  g = n(981631),
+  m = n(388032);
+let E = () => a.Z.open(g.oAB.CONNECTIONS, null);
 
 function v(e) {
   let {
@@ -35,7 +35,7 @@ function b(e) {
     entry: t,
     onOpenGameSettings: n
   } = e;
-  return (0, p.aA)(t) || (0, p.y0)(t) || (0, p.dU)(t) ? E : (0, p.dX)(t) ? n : null
+  return (0, _.aA)(t) || (0, _.y0)(t) || (0, _.dU)(t) ? E : (0, _.dX)(t) ? n : null
 }
 
 function y(e) {
@@ -64,9 +64,9 @@ function O(e) {
   } = e, d = (0, h.Z)({
     onClose: c
   });
-  if (!(0, i.e7)([_.default], () => {
+  if (!(0, i.e7)([p.default], () => {
       var e;
-      return (null === (e = _.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === t.id
+      return (null === (e = p.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === t.id
     })) return null;
   let f = y({
     activity: n,
@@ -75,7 +75,7 @@ function O(e) {
   });
   return null == f ? null : (0, r.jsx)(o.sNh, {
     id: "manage-privacy",
-    label: g.NW.string(g.t.anfNPT),
+    label: m.NW.string(m.t.anfNPT),
     action: () => {
       null == l || l({
         action: "PRESS_MANAGE_PRIVACY_MENU_ITEM"

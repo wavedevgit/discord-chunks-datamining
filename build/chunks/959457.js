@@ -11,11 +11,11 @@ var o, a = n(512722),
   u = n(442837),
   d = n(46973),
   f = n(570140),
-  p = n(594190),
-  _ = n(444852),
+  _ = n(594190),
+  p = n(444852),
   h = n(569545),
-  m = n(687516),
-  g = n(139656),
+  g = n(687516),
+  m = n(139656),
   E = n(358085),
   v = n(199902),
   b = n(314897),
@@ -44,7 +44,7 @@ let A = {},
   M = 30;
 
 function j(e, t, n) {
-  return s()(null != r, "Creating RTCConnection without session."), new _.Z({
+  return s()(null != r, "Creating RTCConnection without session."), new p.Z({
     sessionId: r,
     streamKey: e,
     serverId: t,
@@ -111,7 +111,7 @@ function F(e) {
       } = e;
       t.setActionContext(i), t.setNativePickerStyleUsed(s), n && t.trackStart()
     }), P[u] = a, R[u] = o, null != o) {
-    let e = p.ZP.getGameForPID(o);
+    let e = _.ZP.getGameForPID(o);
     null != e && (C[u] = {
       name: e.name,
       id: e.id,
@@ -148,8 +148,8 @@ function Z(e) {
   if (null == a && null != n) {
     null == R[t] && (C[t] = null);
     let e = (0, h.my)(t);
-    null == C[t] && null == P[t] && (C[t] = (0, m.L2)(e, O.Z));
-    let i = new _.A({
+    null == C[t] && null == P[t] && (C[t] = (0, g.L2)(e, O.Z));
+    let i = new p.A({
       streamRegion: r,
       streamApplication: C[t],
       streamSourceType: et(P[t]),
@@ -271,7 +271,7 @@ function et(e) {
 }
 class en extends(o = u.ZP.Store) {
   getActiveStreamKey() {
-    return (0, g.Z)(y.Z) ? i : null
+    return (0, m.Z)(y.Z) ? i : null
   }
   getRTCConnections() {
     return L
@@ -283,7 +283,7 @@ class en extends(o = u.ZP.Store) {
     return L[e]
   }
   getStatsHistory(e, t, n) {
-    if (!(0, g.Z)(y.Z) || null == t) return null;
+    if (!(0, m.Z)(y.Z) || null == t) return null;
     if (n) {
       let n = v.Z.getActiveStreamForUser(t, e);
       if (null == n || 0 === v.Z.getViewerIds(n).length) return null
@@ -291,7 +291,7 @@ class en extends(o = u.ZP.Store) {
     return x.map(e => n ? $(e.rtp.outbound) : ee(e.rtp.inbound[t]))
   }
   getQuality() {
-    if (!(0, g.Z)(y.Z)) return I.IE4.UNKNOWN;
+    if (!(0, m.Z)(y.Z)) return I.IE4.UNKNOWN;
     let e = this.getActiveStreamKey(),
       t = null != e ? L[e] : null;
     return null != t ? t.quality : I.IE4.UNKNOWN

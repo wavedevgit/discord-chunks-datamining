@@ -14,11 +14,11 @@ var r = n(392711),
   u = n(671100),
   d = n(740492),
   f = n(866960),
-  p = n(626135),
-  _ = n(510990),
+  _ = n(626135),
+  p = n(510990),
   h = n(70956),
-  m = n(960048),
-  g = n(861990),
+  g = n(960048),
+  m = n(861990),
   E = n(476326),
   v = n(983544),
   b = n(981631);
@@ -140,9 +140,9 @@ class R extends E.ZP {
     if (this.item.platform === E.ow.REACT_NATIVE) {
       let r = this.item;
       if (e = null != r.mimeType && "" !== r.mimeType ? r.mimeType : "application/octet-stream", null == r.size || 0 === r.size || isNaN(r.size)) try {
-        t = await (0, g.Fm)(r.uri)
+        t = await (0, m.Fm)(r.uri)
       } catch (e) {
-        T.warn("Failed to peek content length for file id ".concat(this.id, ", reading whole file instead: ").concat(e)), t = (n = await (0, g.Lc)(r.uri)).size
+        T.warn("Failed to peek content length for file id ".concat(this.id, ", reading whole file instead: ").concat(e)), t = (n = await (0, m.Lc)(r.uri)).size
       } else t = r.size
     } else e = "application/octet-stream", t = this.item.file.size;
     return {
@@ -152,7 +152,7 @@ class R extends E.ZP {
     }
   }
   async getChunk(e, t, n) {
-    return this.item.platform !== E.ow.REACT_NATIVE ? this.item.file.slice(e, t) : null != n ? n.slice(e, t) : await (0, g.U4)(this.item.uri, e, t)
+    return this.item.platform !== E.ow.REACT_NATIVE ? this.item.file.slice(e, t) : null != n ? n.slice(e, t) : await (0, m.U4)(this.item.uri, e, t)
   }
   async uploadChunk(e) {
     let t = {
@@ -265,7 +265,7 @@ class R extends E.ZP {
       this.setResponseUrl(e.body.attachments[0].upload_url), this.setUploadedFilename(e.body.attachments[0].upload_filename)
     } catch (r) {
       let e = null !== (n = null == r ? void 0 : null === (t = r.body) || void 0 === t ? void 0 : t.code) && void 0 !== n ? n : r.status;
-      e !== b.evJ.ENTITY_TOO_LARGE && (T.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(r.body), " for ").concat(this.id)), m.Z.captureException(r)), this.handleError(e);
+      e !== b.evJ.ENTITY_TOO_LARGE && (T.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(r.body), " for ").concat(this.id)), g.Z.captureException(r)), this.handleError(e);
       return
     }
     try {
@@ -287,7 +287,7 @@ class R extends E.ZP {
     T.log("Starting compression/conversion for ".concat(this.id));
     let t = await this.trackTime("compressTimeMs", async () => {
       var e;
-      return await (0, _.J)(this, null !== (e = this.reactNativeFileIndex) && void 0 !== e ? e : 0)
+      return await (0, p.J)(this, null !== (e = this.reactNativeFileIndex) && void 0 !== e ? e : 0)
     });
     if (null == t || null == t.file) return T.error("Failed to get compressed file for ".concat(this.id)), this;
     let n = t.uri,
@@ -302,7 +302,7 @@ class R extends E.ZP {
       uri: n,
       mimeType: i
     }));
-    let o = null !== (e = t.fileSize) && void 0 !== e ? e : (await (0, g.Lc)(n)).size;
+    let o = null !== (e = t.fileSize) && void 0 !== e ? e : (await (0, m.Lc)(n)).size;
     if (this.postCompressionSize = o, this.currentSize = o, null == o) throw T.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
     T.log("Completed compression and conversion. Output size=".concat(o, " bytes; filename=").concat(r, " for ").concat(this.id));
     let a = {
@@ -349,7 +349,7 @@ class R extends E.ZP {
   }
   trackUploadStart() {
     var e;
-    p.default.track(b.rMx.ATTACHMENT_UPLOAD_STARTED, {
+    _.default.track(b.rMx.ATTACHMENT_UPLOAD_STARTED, {
       file_size: this.currentSize,
       mime_type: null !== (e = this.mimeType) && void 0 !== e ? e : "unknown",
       video_upload_quality: d.ZP.videoUploadQuality,
@@ -364,7 +364,7 @@ class R extends E.ZP {
   trackUploadFinished(e) {
     var t, n, r, i, o;
     let a = null != this.startTime ? performance.now() - this.startTime : -1;
-    p.default.track(b.rMx.ATTACHMENT_UPLOAD_FINISHED, {
+    _.default.track(b.rMx.ATTACHMENT_UPLOAD_FINISHED, {
       duration_ms: a,
       file_size: this.currentSize,
       pre_compression_file_size: this.preCompressionSize,

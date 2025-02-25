@@ -18,18 +18,18 @@ function d(e) {
     children: t
   } = e, n = (0, i.e7)([l.Z], () => l.Z.theme), d = (0, i.e7)([s.Z], () => s.Z.gradientPreset), {
     saturation: f,
-    contrast: p
+    contrast: _
   } = (0, i.cj)([a.Z], () => ({
     saturation: a.Z.saturation,
     contrast: a.Z.contrast
-  })), _ = 0;
-  null != d && (_ = d.theme === u.BR.LIGHT ? (0, o.Od)(_, o.bg.MOBILE_LIGHT_GRADIENT_THEME_ENABLED) : (0, o.Od)(_, o.bg.MOBILE_DARK_GRADIENT_THEME_ENABLED)), 1 !== f && (_ = (0, o.Od)(_, o.bg.REDUCE_SATURATION_ENABLED));
+  })), p = 0;
+  null != d && (p = d.theme === u.BR.LIGHT ? (0, o.Od)(p, o.bg.MOBILE_LIGHT_GRADIENT_THEME_ENABLED) : (0, o.Od)(p, o.bg.MOBILE_DARK_GRADIENT_THEME_ENABLED)), 1 !== f && (p = (0, o.Od)(p, o.bg.REDUCE_SATURATION_ENABLED));
   let h = (0, c.A)();
   return (0, r.jsx)(o.wM, {
     theme: n,
-    flags: _,
+    flags: p,
     saturation: f,
-    contrast: p,
+    contrast: _,
     density: h,
     children: t
   })

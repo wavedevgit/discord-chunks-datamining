@@ -13,11 +13,11 @@ var r, i = n(200651),
   u = n(84735),
   d = n(801787),
   f = n(663002),
-  p = n(540059),
-  _ = n(585483),
+  _ = n(540059),
+  p = n(585483),
   h = n(872801),
-  m = n(302901),
-  g = n(981631),
+  g = n(302901),
+  m = n(981631),
   E = n(625259);
 
 function v(e, t, n) {
@@ -305,7 +305,7 @@ class L extends(r = o.Component) {
       autoInvert: t
     } = this.props, n = this.elementRef.current;
     c()(null != n, "Unexpected null element");
-    let r = (0, m.wL)(n),
+    let r = (0, g.wL)(n),
       {
         style: i,
         nudge: o
@@ -340,7 +340,7 @@ class L extends(r = o.Component) {
       isPositioned: !0
     }, this.calculateState()));
     let i = this.elementRef.current;
-    c()(null != i, "Missing elementRef"), null != n.current && S.set(i, n.current), _.S.subscribe(g.CkL.LAYER_POP_START, this.handleLayerPopStart), _.S.subscribe(g.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == i || null === (t = i.ownerDocument) || void 0 === t || null === (e = t.defaultView) || void 0 === e || e.addEventListener("resize", this.handleLayerPopComplete), this.unsubscribeDesktopVisualRefreshExperiment = (0, p.yl)("ReferencePositionLayer", this.handleDesktopVisualRefreshExperimentChange), null == r || r()
+    c()(null != i, "Missing elementRef"), null != n.current && S.set(i, n.current), p.S.subscribe(m.CkL.LAYER_POP_START, this.handleLayerPopStart), p.S.subscribe(m.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == i || null === (t = i.ownerDocument) || void 0 === t || null === (e = t.defaultView) || void 0 === e || e.addEventListener("resize", this.handleLayerPopComplete), this.unsubscribeDesktopVisualRefreshExperiment = (0, _.yl)("ReferencePositionLayer", this.handleDesktopVisualRefreshExperimentChange), null == r || r()
   }
   componentDidUpdate(e, t) {
     if (N(e) === N(this.props) && w(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
@@ -351,7 +351,7 @@ class L extends(r = o.Component) {
   componentWillUnmount() {
     var e, t, n, r, i, o;
     let a = this.elementRef.current;
-    c()(null != a, "Missing elementRef"), S.delete(a), _.S.unsubscribe(g.CkL.LAYER_POP_START, this.handleLayerPopStart), _.S.unsubscribe(g.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == a || null === (t = a.ownerDocument) || void 0 === t || null === (e = t.defaultView) || void 0 === e || e.removeEventListener("resize", this.handleLayerPopComplete), null === (n = (r = this).unsubscribeDesktopVisualRefreshExperiment) || void 0 === n || n.call(r), null === (i = (o = this.props).onUnmount) || void 0 === i || i.call(o)
+    c()(null != a, "Missing elementRef"), S.delete(a), p.S.unsubscribe(m.CkL.LAYER_POP_START, this.handleLayerPopStart), p.S.unsubscribe(m.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == a || null === (t = a.ownerDocument) || void 0 === t || null === (e = t.defaultView) || void 0 === e || e.removeEventListener("resize", this.handleLayerPopComplete), null === (n = (r = this).unsubscribeDesktopVisualRefreshExperiment) || void 0 === n || n.call(r), null === (i = (o = this.props).onUnmount) || void 0 === i || i.call(o)
   }
   render() {
     let {
@@ -364,8 +364,8 @@ class L extends(r = o.Component) {
     } = this.props, {
       position: l,
       isPositioned: c,
-      isSettingsLayerTransitioning: p,
-      nudge: _
+      isSettingsLayerTransitioning: _,
+      nudge: p
     } = this.state;
     return (0, i.jsx)("div", {
       className: s()({
@@ -382,7 +382,7 @@ class L extends(r = o.Component) {
             id: e,
             className: s()(t, (0, f.Qe)(d), E.layer, {
               [E.emptyError]: !1,
-              [E.layerHidden]: p,
+              [E.layerHidden]: _,
               [E.disabledPointerEvents]: o,
               "disable-adaptive-theme": h
             }),
@@ -394,7 +394,7 @@ class L extends(r = o.Component) {
               containerRef: this.elementRef,
               children: n({
                 position: l,
-                nudge: _,
+                nudge: p,
                 isPositioned: c
               }, this.updatePosition)
             })
@@ -410,7 +410,7 @@ class L extends(r = o.Component) {
       nudge: 0,
       isPositioned: !1,
       isSettingsLayerTransitioning: !1,
-      isRefreshEnabled: (0, p.i9)("ReferencePositionLayer")
+      isRefreshEnabled: (0, _.i9)("ReferencePositionLayer")
     }), v(this, "handleLayerPopStart", () => {
       this.setState({
         isSettingsLayerTransitioning: !0

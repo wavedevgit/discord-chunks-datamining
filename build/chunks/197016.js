@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -51,7 +51,7 @@ function d(e, t) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,7 +59,7 @@ function f(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -67,31 +67,31 @@ function p(e, t) {
   return i
 }
 
-function _(e) {
+function p(e) {
   var {
     centerButton: t = !1,
     onClick: n,
     onMouseEnter: l,
     onMouseLeave: u
-  } = e, p = f(e, ["centerButton", "onClick", "onMouseEnter", "onMouseLeave"]);
-  let _ = t ? a.d : a.Z,
+  } = e, _ = f(e, ["centerButton", "onClick", "onMouseEnter", "onMouseLeave"]);
+  let p = t ? a.d : a.Z,
     h = () => {
       o.default.disconnect(), null == n || n()
     },
-    m = () => s.NW.string(s.t["6vrfgo"]),
+    g = () => s.NW.string(s.t["6vrfgo"]),
     {
-      Component: g,
+      Component: m,
       events: E
     } = (0, i.K)();
-  return (0, r.jsx)(_, d(c({}, p), {
+  return (0, r.jsx)(p, d(c({}, _), {
     onClick: h,
-    iconComponent: g,
+    iconComponent: m,
     onMouseEnter: e => {
       null == l || l(e), E.onMouseEnter()
     },
     onMouseLeave: e => {
       null == u || u(e), E.onMouseLeave()
     },
-    label: m()
+    label: g()
   }))
 }

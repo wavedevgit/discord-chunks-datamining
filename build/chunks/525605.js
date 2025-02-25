@@ -47,9 +47,9 @@ function d(e) {
     className: i,
     textColor: l = "text-normal",
     textVariant: d = "text-sm/medium"
-  } = e, f = c(n), p = u(n);
+  } = e, f = c(n), _ = u(n);
   return (0, r.jsxs)("div", {
-    className: o()(s.container, p, i),
+    className: o()(s.container, _, i),
     children: [(0, r.jsx)("div", {
       className: s.iconDiv,
       children: (0, r.jsx)(f, {

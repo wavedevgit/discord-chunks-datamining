@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(379649),
   i = n(846519),
@@ -52,7 +52,7 @@ function f(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
   return null != e ? Math.round(e) : t
 }
-class p {
+class _ {
   start() {
     let {
       resolution: e,

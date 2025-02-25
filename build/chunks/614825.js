@@ -1,6 +1,6 @@
 /** Chunk was on 11814 **/
 n.d(t, {
-  Z: () => T
+  Z: () => P
 }), n(266796), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -48,7 +48,7 @@ function S(e) {
   }
   return e
 }
-class P extends i.Component {
+class T extends i.Component {
   renderTitle(e, t, n) {
     let {
       trialOffer: r
@@ -184,7 +184,7 @@ class P extends i.Component {
   }
 }
 
-function T(e) {
+function P(e) {
   let {
     userTrialOfferId: t,
     canRenderReferralEmbed: n
@@ -202,7 +202,7 @@ function T(e) {
   } = (0, f.ZP)(m.Z.SHARE_NITRO_EMBED);
   return a ? (0, r.jsx)(p.OR, {
     isHorizontal: !c.tq
-  }) : n && null != i && void 0 !== o ? (0, r.jsx)(P, S({
+  }) : n && null != i && void 0 !== o ? (0, r.jsx)(T, S({
     trialOffer: i,
     currentUser: o,
     recipientHasNitro: l,

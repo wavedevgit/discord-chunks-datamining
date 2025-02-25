@@ -31,14 +31,14 @@ function f() {
   u = {}, d = {}
 }
 
-function p(e) {
+function _(e) {
   let {
     guildId: t
   } = e;
   u[t] = "started"
 }
 
-function _(e) {
+function p(e) {
   let {
     guildId: t,
     enabled: n
@@ -54,14 +54,14 @@ function h(e) {
   u[t] = "not_applicable"
 }
 
-function m(e) {
+function g(e) {
   let {
     guildId: t
   } = e;
   u[t] = "completed"
 }
 
-function g(e) {
+function m(e) {
   let {
     guild: t
   } = e;
@@ -97,11 +97,11 @@ class b extends(r = i.ZP.Store) {
 s(b, "displayName", "GuildOnboardingStore");
 let y = new b(o.Z, {
   LOGOUT: f,
-  GUILD_DELETE: g,
-  GUILD_ONBOARDING_START: p,
-  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: _,
+  GUILD_DELETE: m,
+  GUILD_ONBOARDING_START: _,
+  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: p,
   GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: h,
-  GUILD_ONBOARDING_COMPLETE: m,
+  GUILD_ONBOARDING_COMPLETE: g,
   GUILD_ONBOARDING_SET_STEP: E,
   CONNECTION_OPEN: v
 })

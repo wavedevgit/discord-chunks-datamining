@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(595519),
   d = n(317381),
   f = n(16609),
-  p = n(588468),
-  _ = n(30465),
+  _ = n(588468),
+  p = n(30465),
   h = n(313201),
-  m = n(314910),
-  g = n(549006),
+  g = n(314910),
+  m = n(549006),
   E = n(430824),
   v = n(436896),
   b = n(590921),
@@ -99,8 +99,8 @@ let D = 490,
       return null !== (e = E.Z.getGuild(j.guild_id)) && void 0 !== e ? e : null
     }, [j.guild_id]), V = i.useRef(), [Z, H, W] = (0, O.Z)(C(N({}, e), {
       guild: F
-    }), t, V), Y = (null === (n = k.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, p.DJ)(Z.selectedIndex);
-    (0, _.KR)(B, Z.isVisible, K), v.Z.trackExposure({
+    }), t, V), Y = (null === (n = k.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? m.ZP : g.ZP, K = (0, _.DJ)(Z.selectedIndex);
+    (0, p.KR)(B, Z.isVisible, K), v.Z.trackExposure({
       location: "6e9811_1"
     });
     let {
@@ -141,7 +141,7 @@ let D = 490,
       },
       ee = D;
     null != q && (ee = (null === (T = k.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (A = Z.query) || void 0 === A ? void 0 : A.type) === b.eq.EMOJIS_AND_STICKERS ? w : L), ee = Math.min(window.innerHeight - M, ee);
-    let et = (0, r.jsx)(p.ZP, {
+    let et = (0, r.jsx)(_.ZP, {
       id: B,
       className: a()(I.autocomplete, $),
       innerClassName: I.autocompleteInner,
@@ -165,7 +165,7 @@ let D = 490,
                 maxHeight: ee
               },
               role: "listbox",
-              "aria-labelledby": (0, p.rp)(B),
+              "aria-labelledby": (0, _.rp)(B),
               children: J
             }))
           }

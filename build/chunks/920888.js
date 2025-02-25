@@ -88,8 +88,8 @@ class j extends i.PureComponent {
       combinedReactions: I,
       visibleReactionsCount: S
     } = this.props, {
-      disableTransitionAppear: P
-    } = this.state, T = j ? _ : g, A = S > 0;
+      disableTransitionAppear: T
+    } = this.state, P = j ? _ : g, A = S > 0;
     if (!A && !O) return null;
     let {
       canShowImprovedReactionButton: w
@@ -100,10 +100,10 @@ class j extends i.PureComponent {
     }), Z = O || A;
     return (0, r.jsxs)(l.W, {
       component: "div",
-      className: o()(T.reactions, x, {
-        [T.largeReactions]: w
+      className: o()(P.reactions, x, {
+        [P.largeReactions]: w
       }),
-      transitionAppear: !P,
+      transitionAppear: !T,
       role: "group",
       transitionLeave: !1,
       id: (0, p.bY)(e),
@@ -128,10 +128,10 @@ class j extends i.PureComponent {
         onClick: t => {
           t.stopPropagation(), (0, f.op)(y, e)
         },
-        className: o()(T.reaction, E, T.remainingReactions),
+        className: o()(P.reaction, E, P.remainingReactions),
         "aria-label": h.NW.string(h.t.lfIHs7),
         children: (0, r.jsxs)(s.Text, {
-          className: T.reactionInner,
+          className: P.reactionInner,
           variant: "text-sm/normal",
           children: ["+", C]
         })
@@ -143,7 +143,7 @@ class j extends i.PureComponent {
         useChatFontScaling: j,
         isHovered: this.state.isHovered,
         className: o()({
-          [T.forceShow]: Z
+          [P.forceShow]: Z
         })
       })]
     })

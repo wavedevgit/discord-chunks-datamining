@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(377108),
   d = n(692547),
   f = n(552075),
-  p = n(481060),
-  _ = n(68405),
+  _ = n(481060),
+  p = n(68405),
   h = n(527429),
-  m = n(656733),
-  g = n(251625),
+  g = n(656733),
+  m = n(251625),
   E = n(985375),
   v = n(132748),
   b = n(353903),
@@ -74,14 +74,14 @@ function P(e) {
   return {
     type: O.wI2.FAVORITES,
     name: S.NW.string(S.t.y3LQCA),
-    icon: p.r7p,
+    icon: _.r7p,
     src: null != n ? n.src : "https://media.giphy.com/media/1TOSaJsWtnhe0/giphy.gif",
     format: null !== (t = null == n ? void 0 : n.format) && void 0 !== t ? t : u.EO.IMAGE
   }
 }
 class D extends i.PureComponent {
   componentDidMount() {
-    0 === this.props.trendingCategories.length && (0, _.Tg)()
+    0 === this.props.trendingCategories.length && (0, p.Tg)()
   }
   getData() {
     return this.memoizedData(this.state.favoritesTile, this.props.trendingCategories, this.props.hideFavoritesTile)
@@ -148,7 +148,7 @@ class D extends i.PureComponent {
       if (e > 0) return null;
       let n = this.getData()[t];
       return null != n ? n.name : null
-    }), T(this, "memoizedData", (0, g.oH)(function(e, t) {
+    }), T(this, "memoizedData", (0, m.oH)(function(e, t) {
       let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
       return n ? [...t] : [e, ...t]
     })), T(this, "renderItem", (e, t, n, i) => {
@@ -184,7 +184,7 @@ class D extends i.PureComponent {
         columns: e,
         width: t,
         renderColumn: R
-      }) : (0, r.jsx)(p.GMG, {
+      }) : (0, r.jsx)(_.GMG, {
         ref: this._masonryRef,
         fade: !0,
         className: a()(I.container, i),
@@ -211,7 +211,7 @@ class D extends i.PureComponent {
 }
 
 function w(e) {
-  let t = (0, c.e7)([m.Z], () => m.Z.getTrendingCategories()),
+  let t = (0, c.e7)([g.Z], () => g.Z.getTrendingCategories()),
     n = (0, E.gG)(),
     i = (0, y.PY)();
   return (0, r.jsx)(D, C(N({}, e, i), {

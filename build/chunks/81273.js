@@ -28,8 +28,8 @@ var r = n(200651),
   C = n(896083),
   I = n(939872),
   S = n(265985),
-  P = n(293810),
-  T = n(981631),
+  T = n(293810),
+  P = n(981631),
   A = n(388032);
 let w = (e, t, n, a) => {
   let l;
@@ -61,12 +61,12 @@ let w = (e, t, n, a) => {
     {
       analyticsLocations: Q
     } = (0, m.ZP)(),
-    J = (null == U ? void 0 : U.paymentGateway) === T.gg$.APPLE_PARTNER,
+    J = (null == U ? void 0 : U.paymentGateway) === P.gg$.APPLE_PARTNER,
     $ = !w && null != F && G && !R && !z && !K && !J;
   R ? l = A.NW.string(A.t.pQK5ho) : w && !Z ? l = A.NW.string(A.t.pQK5ho) : V === D ? l = A.NW.formatToPlainString(A.t.UlBRTk, {
     changeDate: null != U ? s()(U.currentPeriodEnd).format("MMM DD, YYYY") : ""
   }) : z ? l = A.NW.string(A.t.ePFYOT) : K ? l = A.NW.string(A.t["0lPoT0"]) : J && (l = A.NW.string(A.t.cEMaCg));
-  let ee = (0, p.Z)(P.iP);
+  let ee = (0, p.Z)(T.iP);
   i.useEffect(() => {
     M && null != W && d.Z.wait(() => {
       (0, u.GZ)(W)
@@ -82,16 +82,16 @@ let w = (e, t, n, a) => {
         } else i = A.NW.string(A.t.vuvsKy)
       }(0, v.Z)({
         activeSubscription: U,
-        analyticsSubscriptionType: T.NYc.GUILD,
+        analyticsSubscriptionType: P.NYc.GUILD,
         trialId: n,
         trialFooterMessageOverride: (null == q ? void 0 : q.active_trial) != null ? A.NW.format(A.t.zyGyNj, {
           buttonText: A.NW.string(A.t.BEeXiY),
           interval: (0, O.iG)(L),
           days: 1,
-          contactLink: T.EYA.CONTACT,
-          cancelSubscriptionArticle: x.Z.getArticleURL(T.BhN.ROLE_SUBSCRIPTION_CANCEL),
-          helpdeskArticle: x.Z.getArticleURL(T.BhN.ROLE_SUBSCRIPTION_TRIAL),
-          paidServiceTermsArticle: x.Z.getArticleURL(T.BhN.PAID_TERMS),
+          contactLink: P.EYA.CONTACT,
+          cancelSubscriptionArticle: x.Z.getArticleURL(P.BhN.ROLE_SUBSCRIPTION_CANCEL),
+          helpdeskArticle: x.Z.getArticleURL(P.BhN.ROLE_SUBSCRIPTION_TRIAL),
+          paidServiceTermsArticle: x.Z.getArticleURL(P.BhN.PAID_TERMS),
           tierName: L.name
         }) : void 0,
         analyticsLocations: Q,

@@ -41,7 +41,7 @@ function s(e) {
       level: u,
       getLevelAndMarkUsed: () => (l(!0), u)
     }), [u]),
-    p = i.useMemo(() => ({
+    _ = i.useMemo(() => ({
       level: d,
       getLevelAndMarkUsed: () => (l(!0), d)
     }), [d]);
@@ -50,7 +50,7 @@ function s(e) {
       value: f,
       children: t
     }) : null, (0, r.jsx)(c.Provider, {
-      value: p,
+      value: _,
       children: n
     })]
   })

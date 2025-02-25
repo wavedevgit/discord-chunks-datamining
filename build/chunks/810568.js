@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   IS: () => d,
-  MH: () => _,
-  UE: () => p,
+  MH: () => p,
+  UE: () => _,
   as: () => l,
   fP: () => u,
   m1: () => c,
@@ -59,7 +59,7 @@ let u = () => (0, r.Z)(),
       official_guild_id: d
     })
   },
-  p = e => {
+  _ = e => {
     let {
       gameName: t,
       applicationId: n,
@@ -79,7 +79,7 @@ let u = () => (0, r.Z)(),
       official_guild_id: c
     })
   },
-  _ = e => {
+  p = e => {
     let {
       viewId: t,
       applicationId: n,

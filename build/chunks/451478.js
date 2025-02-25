@@ -47,11 +47,11 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = null,
-  _ = new Map;
+let _ = null,
+  p = new Map;
 
 function h(e) {
-  let t = _.get(e);
+  let t = p.get(e);
   return null == t ? (console.warn("Window state not initialized", e), {
     isElementFullscreen: !1,
     focused: !1,
@@ -63,8 +63,8 @@ function h(e) {
   }) : t
 }
 
-function m(e) {
-  o()(!_.has(e.windowId), "Window initialized multiple times");
+function g(e) {
+  o()(!p.has(e.windowId), "Window initialized multiple times");
   let {
     width: t,
     height: n,
@@ -72,7 +72,7 @@ function m(e) {
     focused: i,
     visible: a
   } = e;
-  return _.set(e.windowId, {
+  return p.set(e.windowId, {
     windowSize: {
       width: t,
       height: n
@@ -80,33 +80,33 @@ function m(e) {
     isElementFullscreen: r,
     focused: i,
     visible: a
-  }), i && (p = e.windowId), !0
+  }), i && (_ = e.windowId), !0
 }
 
-function g(e) {
+function m(e) {
   let t = h(e.windowId);
-  return t.isElementFullscreen !== e.isElementFullscreen && (_.set(e.windowId, f(u({}, t), {
+  return t.isElementFullscreen !== e.isElementFullscreen && (p.set(e.windowId, f(u({}, t), {
     isElementFullscreen: e.isElementFullscreen
   })), !0)
 }
 
 function E(e) {
   let t = h(e.windowId);
-  return t.focused !== e.focused && (e.focused && (p = e.windowId), _.set(e.windowId, f(u({}, t), {
+  return t.focused !== e.focused && (e.focused && (_ = e.windowId), p.set(e.windowId, f(u({}, t), {
     focused: e.focused
   })), !0)
 }
 
 function v(e) {
   let t = h(e.windowId);
-  return t.visible !== e.visible && (_.set(e.windowId, f(u({}, t), {
+  return t.visible !== e.visible && (p.set(e.windowId, f(u({}, t), {
     visible: e.visible
   })), !0)
 }
 
 function b(e) {
   let t = h(e.windowId);
-  return (t.windowSize.width !== e.width || t.windowSize.height !== e.height) && (_.set(e.windowId, f(u({}, t), {
+  return (t.windowSize.width !== e.width || t.windowSize.height !== e.height) && (p.set(e.windowId, f(u({}, t), {
     windowSize: {
       width: e.width,
       height: e.height
@@ -115,7 +115,7 @@ function b(e) {
 }
 
 function y(e) {
-  return _.delete(e.windowId), p === e.windowId && (p = null), !0
+  return p.delete(e.windowId), _ === e.windowId && (_ = null), !0
 }
 class O extends(r = a.ZP.Store) {
   isFocused() {
@@ -128,12 +128,12 @@ class O extends(r = a.ZP.Store) {
   }
   getFocusedWindowId() {
     let e = null;
-    return _.forEach((t, n) => {
+    return p.forEach((t, n) => {
       t.focused && (e = n)
     }), e
   }
   getLastFocusedWindowId() {
-    return p
+    return _
   }
   isElementFullScreen() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, l.UU)();
@@ -146,8 +146,8 @@ class O extends(r = a.ZP.Store) {
 }
 c(O, "displayName", "WindowStore");
 let S = new O(s.Z, {
-  WINDOW_INIT: m,
-  WINDOW_FULLSCREEN_CHANGE: g,
+  WINDOW_INIT: g,
+  WINDOW_FULLSCREEN_CHANGE: m,
   WINDOW_FOCUS: E,
   WINDOW_RESIZED: b,
   WINDOW_UNLOAD: y,

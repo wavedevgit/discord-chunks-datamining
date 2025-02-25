@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  E: () => g,
+  E: () => m,
   Z: () => E
 });
 var r = n(200651);
@@ -15,19 +15,19 @@ var i = n(442837),
   u = n(786138),
   d = n(803647),
   f = n(199902),
-  p = n(594174),
-  _ = n(5192),
+  _ = n(594174),
+  p = n(5192),
   h = n(981631),
-  m = n(388032);
+  g = n(388032);
 
-function g(e, t, n) {
+function m(e, t, n) {
   let r = (0, i.e7)([s.Z], () => null != e ? s.Z.getSelectedParticipantId(e.id) : null),
     o = (0, i.e7)([f.Z], () => null != r ? f.Z.getActiveStreamForStreamKey(r) : null, [r]);
-  return (0, i.Wu)([p.default], () => {
+  return (0, i.Wu)([_.default], () => {
     if (null == e) return [];
     let r = n.filter(e => e.ownerId !== (null == t ? void 0 : t.id)).map(t => ({
       stream: t,
-      username: _.ZP.getName(e.getGuildId(), e.id, p.default.getUser(t.ownerId))
+      username: p.ZP.getName(e.getGuildId(), e.id, _.default.getUser(t.ownerId))
     }));
     return 1 === r.length && r[0].stream.ownerId === (null == o ? void 0 : o.ownerId) ? [] : r
   }, [e, o, n, t])
@@ -40,22 +40,22 @@ function E(e) {
     currentUser: i,
     activeStreams: s,
     hideSelfOptions: f = !1,
-    showReportOption: p = !1,
-    handleGoLive: _,
+    showReportOption: _ = !1,
+    handleGoLive: p,
     onClose: E,
     onSelect: v,
     appContext: b = h.IlC.APP,
     disableChangeWindows: y = !1,
     onInteraction: O
-  } = e, S = null !== (t = s.find(e => e.ownerId === (null == i ? void 0 : i.id))) && void 0 !== t ? t : null, I = g(n, i, s), T = (0, c.Z)(S, b), {
+  } = e, S = null !== (t = s.find(e => e.ownerId === (null == i ? void 0 : i.id))) && void 0 !== t ? t : null, I = m(n, i, s), T = (0, c.Z)(S, b), {
     enabled: N
   } = (0, l.Z)({
     location: "ManageStreamsMenu"
   }), A = (0, u.b)({
     disableChangeWindows: y,
     stream: S,
-    showReportOption: p,
-    handleGoLive: _,
+    showReportOption: _,
+    handleGoLive: p,
     simplified: N,
     appContext: b
   });
@@ -66,7 +66,7 @@ function E(e) {
       navId: "manage-streams",
       onClose: E,
       onInteraction: O,
-      "aria-label": null != S ? m.NW.string(m.t.S5anIS) : m.NW.string(m.t.fjBNo6),
+      "aria-label": null != S ? g.NW.string(g.t.S5anIS) : g.NW.string(g.t.fjBNo6),
       children: [(0, r.jsx)(o.kSQ, {
         children: I.map(e => {
           let {
@@ -75,7 +75,7 @@ function E(e) {
           } = e;
           return (0, r.jsx)(o.sNh, {
             id: t.ownerId,
-            label: m.NW.formatToPlainString(m.t["7rkg+/"], {
+            label: g.NW.formatToPlainString(g.t["7rkg+/"], {
               username: n
             }),
             icon: o.g5r,
@@ -85,7 +85,7 @@ function E(e) {
       }), f ? null : A, N && !f ? (0, r.jsx)(o.kSQ, {
         children: (0, r.jsx)(o.sNh, {
           id: "more-options",
-          label: m.NW.string(m.t.PdRCRk),
+          label: g.NW.string(g.t.PdRCRk),
           children: T
         })
       }) : null]

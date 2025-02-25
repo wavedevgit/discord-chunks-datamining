@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r, i = n(442837),
   o = n(570140),
@@ -21,7 +21,7 @@ let c = a.tI.PRESET_VIDEO,
   d = a.ws.FPS_30,
   f = !0;
 
-function p(e) {
+function _(e) {
   let {
     settings: t
   } = e;
@@ -31,7 +31,7 @@ function p(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   let {
     preset: t,
     resolution: n,
@@ -57,7 +57,7 @@ class h extends(r = i.ZP.PersistedStore) {
   }
 }
 l(h, "displayName", "ApplicationStreamingSettingsStore"), l(h, "persistKey", "ApplicationStreamingSettingStore");
-let m = new h(o.Z, {
-  MEDIA_ENGINE_SET_GO_LIVE_SOURCE: p,
-  STREAM_UPDATE_SETTINGS: _
+let g = new h(o.Z, {
+  MEDIA_ENGINE_SET_GO_LIVE_SOURCE: _,
+  STREAM_UPDATE_SETTINGS: p
 })

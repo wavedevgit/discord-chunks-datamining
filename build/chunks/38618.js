@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => eg
+  Z: () => em
 });
 var r, i = n(392711),
   o = n.n(i),
@@ -12,11 +12,11 @@ var r, i = n(392711),
   u = n(569545),
   d = n(581883),
   f = n(314897),
-  p = n(523746),
-  _ = n(592125),
+  _ = n(523746),
+  p = n(592125),
   h = n(131951),
-  m = n(19780),
-  g = n(936349),
+  g = n(19780),
+  m = n(936349),
   E = n(944486),
   v = n(885110),
   b = n(959457),
@@ -64,9 +64,9 @@ async function G(e) {
     n = E.Z.getVoiceChannelId();
   if (null != n) {
     var r, i, o, a, s, c, u, d;
-    if ((null === (s = window) || void 0 === s ? void 0 : null === (a = s.performance) || void 0 === a ? void 0 : null === (o = a.getEntriesByType) || void 0 === o ? void 0 : null === (i = o.call(a, "navigation")) || void 0 === i ? void 0 : null === (r = i[0]) || void 0 === r ? void 0 : r.type) !== "reload" && (null === (c = await (null == R ? void 0 : null === (d = R.processUtils) || void 0 === d ? void 0 : null === (u = d.getLastCrash) || void 0 === u ? void 0 : u.call(d))) || void 0 === c ? void 0 : c.rendererCrashReason) == null && x) m.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
+    if ((null === (s = window) || void 0 === s ? void 0 : null === (a = s.performance) || void 0 === a ? void 0 : null === (o = a.getEntriesByType) || void 0 === o ? void 0 : null === (i = o.call(a, "navigation")) || void 0 === i ? void 0 : null === (r = i[0]) || void 0 === r ? void 0 : r.type) !== "reload" && (null === (c = await (null == R ? void 0 : null === (d = R.processUtils) || void 0 === d ? void 0 : null === (u = d.getLastCrash) || void 0 === u ? void 0 : u.call(d))) || void 0 === c ? void 0 : c.rendererCrashReason) == null && x) g.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
     else {
-      let e = _.Z.getChannel(n);
+      let e = p.Z.getChannel(n);
       null != e && (t = {
         guildId: e.getGuildId(),
         channelId: n
@@ -242,8 +242,8 @@ function el(e) {
   } = e;
   if (S.Wb.isSessionEstablished()) {
     var i, o;
-    let e = null != n ? null === (i = _.Z.getChannel(r)) || void 0 === i ? void 0 : i.rtcRegion : null === (o = p.Z.getCall(r)) || void 0 === o ? void 0 : o.region;
-    S.Wb.streamCreate(t, n, r, null != e ? e : g.Z.getPreferredRegion())
+    let e = null != n ? null === (i = p.Z.getChannel(r)) || void 0 === i ? void 0 : i.rtcRegion : null === (o = _.Z.getCall(r)) || void 0 === o ? void 0 : o.region;
+    S.Wb.streamCreate(t, n, r, null != e ? e : m.Z.getPreferredRegion())
   }
   return !1
 }
@@ -275,7 +275,7 @@ function ef() {
   return S.Wb.expeditedHeartbeat(5e3, "user clicked on notification", !0), !1
 }
 
-function ep(e) {
+function e_(e) {
   let {
     guildId: t,
     channelId: n,
@@ -284,7 +284,7 @@ function ep(e) {
   S.Wb.requestForumUnreads(t, n, r)
 }
 
-function e_(e) {
+function ep(e) {
   S.Wb.connectionState !== O.Z.WILL_RECONNECT && S.Wb.resetSocketOnError(e.args)
 }
 
@@ -294,9 +294,9 @@ function eh(e) {
   } = e;
   S.Wb.requestSoundboardSounds(t)
 }
-class em extends(r = a.ZP.Store) {
+class eg extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(f.default, E.Z, _.Z, p.Z, d.Z), this.syncWith([h.Z], X), this.syncWith([v.Z], J)
+    this.waitFor(f.default, E.Z, p.Z, _.Z, d.Z), this.syncWith([h.Z], X), this.syncWith([v.Z], J)
   }
   getSocket() {
     return S.Wb
@@ -314,8 +314,8 @@ class em extends(r = a.ZP.Store) {
     return w
   }
 }
-C(em, "displayName", "GatewayConnectionStore");
-let eg = new em(s.Z, {
+C(eg, "displayName", "GatewayConnectionStore");
+let em = new eg(s.Z, {
   START_SESSION: j,
   LOGIN_SUCCESS: U,
   LOGOUT: k,
@@ -342,10 +342,10 @@ let eg = new em(s.Z, {
   STREAM_STOP: ed,
   STREAM_SET_PAUSED: ec,
   PUSH_NOTIFICATION_CLICK: ef,
-  REQUEST_FORUM_UNREADS: ep,
+  REQUEST_FORUM_UNREADS: e_,
   REQUEST_SOUNDBOARD_SOUNDS: eh,
   REMOTE_COMMAND: ei,
-  RESET_SOCKET: e_,
+  RESET_SOCKET: ep,
   CLIPS_SETTINGS_UPDATE: Z,
   RUNNING_GAMES_CHANGE: Z,
   USER_SETTINGS_PROTO_UPDATE: H

@@ -55,7 +55,7 @@ function c(e, n) {
     seen: [],
     stylize: d
   };
-  return arguments.length >= 3 && (r.depth = arguments[2]), arguments.length >= 4 && (r.colors = arguments[3]), b(n) ? r.showHidden = n : n && t._extend(r, n), N(r.showHidden) && (r.showHidden = !1), N(r.depth) && (r.depth = 2), N(r.colors) && (r.colors = !1), N(r.customInspect) && (r.customInspect = !0), r.colors && (r.stylize = u), p(r, e, r.depth)
+  return arguments.length >= 3 && (r.depth = arguments[2]), arguments.length >= 4 && (r.colors = arguments[3]), b(n) ? r.showHidden = n : n && t._extend(r, n), N(r.showHidden) && (r.showHidden = !1), N(r.depth) && (r.depth = 2), N(r.colors) && (r.colors = !1), N(r.customInspect) && (r.customInspect = !0), r.colors && (r.stylize = u), _(r, e, r.depth)
 }
 
 function u(e, t) {
@@ -74,12 +74,12 @@ function f(e) {
   }), t
 }
 
-function p(e, n, r) {
+function _(e, n, r) {
   if (e.customInspect && n && D(n.inspect) && n.inspect !== t.inspect && !(n.constructor && n.constructor.prototype === n)) {
     var i, o = n.inspect(r, e);
-    return I(o) || (o = p(e, o, r)), o
+    return I(o) || (o = _(e, o, r)), o
   }
-  var a = _(e, n);
+  var a = p(e, n);
   if (a) return a;
   var s = Object.keys(n),
     l = f(s);
@@ -96,12 +96,12 @@ function p(e, n, r) {
   var u = "",
     d = !1,
     b = ["{", "}"];
-  return (v(n) && (d = !0, b = ["[", "]"]), D(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), A(n) && (u = " " + RegExp.prototype.toString.call(n)), R(n) && (u = " " + Date.prototype.toUTCString.call(n)), P(n) && (u = " " + h(n)), 0 !== s.length || d && 0 != n.length) ? r < 0 ? A(n) ? e.stylize(RegExp.prototype.toString.call(n), "regexp") : e.stylize("[Object]", "special") : (e.seen.push(n), i = d ? m(e, n, r, l, s) : s.map(function(t) {
-    return g(e, n, r, l, t, d)
+  return (v(n) && (d = !0, b = ["[", "]"]), D(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), A(n) && (u = " " + RegExp.prototype.toString.call(n)), R(n) && (u = " " + Date.prototype.toUTCString.call(n)), P(n) && (u = " " + h(n)), 0 !== s.length || d && 0 != n.length) ? r < 0 ? A(n) ? e.stylize(RegExp.prototype.toString.call(n), "regexp") : e.stylize("[Object]", "special") : (e.seen.push(n), i = d ? g(e, n, r, l, s) : s.map(function(t) {
+    return m(e, n, r, l, t, d)
   }), e.seen.pop(), E(i, u, b)) : b[0] + u + b[1]
 }
 
-function _(e, t) {
+function p(e, t) {
   if (N(t)) return e.stylize("undefined", "undefined");
   if (I(t)) {
     var n = "'" + JSON.stringify(t).replace(/^"|"$/g, "").replace(/'/g, "\\'").replace(/\\"/g, '"') + "'";
@@ -114,18 +114,18 @@ function h(e) {
   return "[" + Error.prototype.toString.call(e) + "]"
 }
 
-function m(e, t, n, r, i) {
-  for (var o = [], a = 0, s = t.length; a < s; ++a) k(t, String(a)) ? o.push(g(e, t, n, r, String(a), !0)) : o.push("");
+function g(e, t, n, r, i) {
+  for (var o = [], a = 0, s = t.length; a < s; ++a) k(t, String(a)) ? o.push(m(e, t, n, r, String(a), !0)) : o.push("");
   return i.forEach(function(i) {
-    i.match(/^\d+$/) || o.push(g(e, t, n, r, i, !0))
+    i.match(/^\d+$/) || o.push(m(e, t, n, r, i, !0))
   }), o
 }
 
-function g(e, t, n, r, i, o) {
+function m(e, t, n, r, i, o) {
   var a, s, l;
   if ((l = Object.getOwnPropertyDescriptor(t, i) || {
       value: t[i]
-    }).get ? s = l.set ? e.stylize("[Getter/Setter]", "special") : e.stylize("[Getter]", "special") : l.set && (s = e.stylize("[Setter]", "special")), k(r, i) || (a = "[" + i + "]"), !s && (0 > e.seen.indexOf(l.value) ? (s = y(n) ? p(e, l.value, null) : p(e, l.value, n - 1)).indexOf("\n") > -1 && (s = o ? s.split("\n").map(function(e) {
+    }).get ? s = l.set ? e.stylize("[Getter/Setter]", "special") : e.stylize("[Getter]", "special") : l.set && (s = e.stylize("[Setter]", "special")), k(r, i) || (a = "[" + i + "]"), !s && (0 > e.seen.indexOf(l.value) ? (s = y(n) ? _(e, l.value, null) : _(e, l.value, n - 1)).indexOf("\n") > -1 && (s = o ? s.split("\n").map(function(e) {
       return "  " + e
     }).join("\n").slice(2) : "\n" + s.split("\n").map(function(e) {
       return "   " + e

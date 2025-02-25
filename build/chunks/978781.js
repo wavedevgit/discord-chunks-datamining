@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(230711),
   d = n(351773),
   f = n(100527),
-  p = n(94795),
-  _ = n(327943),
+  _ = n(94795),
+  p = n(327943),
   h = n(539873),
-  m = n(207164),
-  g = n(238302),
+  g = n(207164),
+  m = n(238302),
   E = n(514361),
   v = n(572397),
   b = n(705262),
@@ -61,7 +61,7 @@ function L(e) {
   let {
     isCoachmark: t
   } = e, n = (0, v.q)();
-  return i.useEffect(() => ((0, g.Kq)(), n(T.rMx.CLIENT_THEME_PREVIEW_VIEWED), () => n(T.rMx.CLIENT_THEME_PREVIEW_CLOSED)), [n]), (0, r.jsx)(b.ZP, {
+  return i.useEffect(() => ((0, m.Kq)(), n(T.rMx.CLIENT_THEME_PREVIEW_VIEWED), () => n(T.rMx.CLIENT_THEME_PREVIEW_CLOSED)), [n]), (0, r.jsx)(b.ZP, {
     type: b.yH.EDITOR,
     children: (0, r.jsx)(b.ZP.BasicAndGradient, {
       isEditor: !0,
@@ -71,9 +71,9 @@ function L(e) {
 }
 
 function x() {
-  let e = (0, m.Z)();
+  let e = (0, g.Z)();
   return i.useEffect(() => {
-    (0, p.nJ)(), e()
+    (0, _.nJ)(), e()
   }, [e]), (0, r.jsx)(h.Z, {
     isEditor: !0
   })
@@ -85,9 +85,9 @@ function M(e) {
     isPreview: o,
     isCoachmark: l,
     onClose: d
-  } = e, p = i.useCallback(() => {
+  } = e, _ = i.useCallback(() => {
     d(), l || u.Z.open()
-  }, [d, l]), _ = (0, s.EQ)({
+  }, [d, l]), p = (0, s.EQ)({
     isPreview: o,
     isCoachmark: l
   }).with({
@@ -146,8 +146,8 @@ function M(e) {
           className: a()(R.footerButton, R.footerButtonBack),
           color: c.Ttl.PRIMARY,
           size: c.zxk.Sizes.NONE,
-          onClick: p,
-          "aria-label": _,
+          onClick: _,
+          "aria-label": p,
           children: (0, r.jsx)(O.Z, {
             direction: O.Z.Directions.LEFT
           })
@@ -174,10 +174,10 @@ function j(e) {
   }, {
     name: C.NW.string(C.t.RPh2oq),
     value: 1
-  }], []), f = (0, l.e7)([E.Z], () => E.Z.isPreview), h = (0, l.e7)([_.Z], () => _.Z.isUpsellPreview), m = f || h, b = (0, v.J)(), y = i.useCallback(() => {
-    f && b(), h && (0, p.O7)()
-  }, [f, h, b]), O = (0, d.Z)(null, m ? y : T.dG4), S = i.useCallback(() => {
-    (0, p.G8)(), (0, g.Mo)(), y(), null == n || n(N.L.DISMISS)
+  }], []), f = (0, l.e7)([E.Z], () => E.Z.isPreview), h = (0, l.e7)([p.Z], () => p.Z.isUpsellPreview), g = f || h, b = (0, v.J)(), y = i.useCallback(() => {
+    f && b(), h && (0, _.O7)()
+  }, [f, h, b]), O = (0, d.Z)(null, g ? y : T.dG4), S = i.useCallback(() => {
+    (0, _.G8)(), (0, m.Mo)(), y(), null == n || n(N.L.DISMISS)
   }, [y, n]);
   return (0, r.jsx)(I.Z, {
     className: R.draggableContainer,
@@ -215,7 +215,7 @@ function j(e) {
         }), 1 === a && (0, r.jsx)(x, {})]
       }), (0, r.jsx)(M, {
         tab: a,
-        isPreview: m,
+        isPreview: g,
         onClose: S,
         isCoachmark: !1
       })]

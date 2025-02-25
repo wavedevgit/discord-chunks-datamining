@@ -28,9 +28,9 @@ function y(e) {
       guild: C,
       invite: I,
       author: S,
-      currentUserId: P
+      currentUserId: T
     } = e,
-    T = P === S.id,
+    P = T === S.id,
     {
       channel: A,
       approximate_member_count: w,
@@ -57,7 +57,7 @@ function y(e) {
   let K = L ? j : N,
     Y = (0, h.e)({
       isVoiceChannel: M,
-      isOwnInvite: T,
+      isOwnInvite: P,
       isGuest: F,
       isHubGuild: U,
       isStage: W,

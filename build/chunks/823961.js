@@ -20,11 +20,11 @@ function c(e, t, n) {
 let u = new Map,
   d = new Set,
   f = new Set,
-  p = new Set,
-  _ = new Map,
+  _ = new Set,
+  p = new Map,
   h = new Map,
-  m = null,
-  g = !1,
+  g = null,
+  m = !1,
   E = e => {
     d.add(e.skuId)
   },
@@ -32,30 +32,30 @@ let u = new Map,
     u.set(e.skuId, e.price), d.delete(e.skuId)
   },
   b = e => {
-    d.delete(e.skuId), p.add(e.skuId)
+    d.delete(e.skuId), _.add(e.skuId)
   },
   y = e => {
-    p.delete(e.skuId)
+    _.delete(e.skuId)
   },
   O = e => {
     if (1 !== e.entitlements.length) return;
     let t = e.entitlements[0];
-    l.Rm.has(t.sku_id) && _.set(e.skuId, s.Z.createFromServer(t))
+    l.Rm.has(t.sku_id) && p.set(e.skuId, s.Z.createFromServer(t))
   },
   S = e => {
-    f.delete(e.skuId), _.set(e.skuId, e.entitlement), null != e.numPotions && h.set(e.skuId, e.numPotions)
+    f.delete(e.skuId), p.set(e.skuId, e.entitlement), null != e.numPotions && h.set(e.skuId, e.numPotions)
   },
   I = e => {
-    p.add(e.skuId), f.delete(e.skuId)
+    _.add(e.skuId), f.delete(e.skuId)
   },
   T = e => {
     f.add(e.skuId)
   },
   N = e => {
-    m = e.previousGoLiveSettings
+    g = e.previousGoLiveSettings
   },
   A = e => {
-    _.delete(e.skuId)
+    p.delete(e.skuId)
   },
   C = e => {
     let {
@@ -69,14 +69,14 @@ let u = new Map,
     }
   },
   R = e => {
-    g = e.enabled
+    m = e.enabled
   };
 class P extends(i = o.ZP.Store) {
   get lastConfetti() {
     return r
   }
   get confettiMode() {
-    return g
+    return m
   }
   getPrice(e) {
     return u.get(e)
@@ -85,22 +85,22 @@ class P extends(i = o.ZP.Store) {
     return d.has(e)
   }
   getErrored(e) {
-    return p.has(e)
+    return _.has(e)
   }
   getEntitlement(e) {
-    return _.get(e)
+    return p.get(e)
   }
   fetchPotionCount(e) {
     return h.get(e)
   }
   isEntitlementFetched(e) {
-    return _.has(e)
+    return p.has(e)
   }
   isEntitlementFetching(e) {
     return f.has(e)
   }
   getPreviousGoLiveSettings() {
-    return m
+    return g
   }
 }
 c(P, "displayName", "ConsumablesStore");

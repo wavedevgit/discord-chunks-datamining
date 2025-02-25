@@ -13,11 +13,11 @@ var r = n(192379),
   u = n(774226),
   d = n(317381),
   f = n(638880),
-  p = n(255621),
-  _ = n(16609),
+  _ = n(255621),
+  p = n(16609),
   h = n(452634),
-  m = n(527805),
-  g = n(620662),
+  g = n(527805),
+  m = n(620662),
   E = n(841784),
   v = n(275920),
   b = n(906732),
@@ -53,7 +53,7 @@ function B(e) {
   } = e, {
     analyticsLocations: Y
   } = (0, b.ZP)(), [K, z] = r.useState(!1), q = null !== (t = null == V ? void 0 : V.applicationId) && void 0 !== t ? t : null == F ? void 0 : F.application_id, Q = null != V || (0, E.Z)(F), X = (0, o.e7)([D.default], () => D.default.getCurrentUser()), J = Z.id === (null == X ? void 0 : X.id), $ = (0, h.Z)({
-    channelId: (0, _.pY)(null == V ? void 0 : V.location),
+    channelId: (0, p.pY)(null == V ? void 0 : V.location),
     userId: Z.id,
     activity: F
   }), ee = (0, o.e7)([A.Z, O.Z, x.Z, I.Z], () => Q || null != q && (0, j.t)({
@@ -67,13 +67,13 @@ function B(e) {
       applicationId: t,
       location: n
     } = e;
-    return (t === (null == F ? void 0 : F.application_id) || t === (null == V ? void 0 : V.applicationId)) && (0, _.pY)(n) === $
-  })), en = (0, o.e7)([L.Z], () => null != F && null != F.application_id && L.Z.getState(F.application_id, k.mFx.JOIN) === k.OcF.LOADING), er = (0, y.q)(q), ei = ((0, g.Z)(F, k.xjy.CONTEXTLESS) || (null == V ? void 0 : V.location.kind) === i.X.CONTEXTLESS) && Q, eo = (0, m.s5)({
+    return (t === (null == F ? void 0 : F.application_id) || t === (null == V ? void 0 : V.applicationId)) && (0, p.pY)(n) === $
+  })), en = (0, o.e7)([L.Z], () => null != F && null != F.application_id && L.Z.getState(F.application_id, k.mFx.JOIN) === k.OcF.LOADING), er = (0, y.q)(q), ei = ((0, m.Z)(F, k.xjy.CONTEXTLESS) || (null == V ? void 0 : V.location.kind) === i.X.CONTEXTLESS) && Q, eo = (0, g.s5)({
     userId: Z.id,
     activity: F,
     channelId: $,
     application: er
-  }), ea = (0, u.GK)(null != er ? er : void 0), es = (0, o.e7)([S.Z, N.Z, T.Z, R.Z, P.Z, w.Z, C.Z], () => null == V || ei ? (0, p.Z)({
+  }), ea = (0, u.GK)(null != er ? er : void 0), es = (0, o.e7)([S.Z, N.Z, T.Z, R.Z, P.Z, w.Z, C.Z], () => null == V || ei ? (0, _.Z)({
     user: Z,
     activity: F,
     application: er,
@@ -87,27 +87,27 @@ function B(e) {
     SelectedChannelStore: P.Z,
     VoiceStateStore: w.Z,
     PermissionStore: C.Z
-  }) : eo === m.Fw.CAN_JOIN), el = (0, o.e7)([d.ZP], () => {
+  }) : eo === g.Fw.CAN_JOIN), el = (0, o.e7)([d.ZP], () => {
     if (Array.from(d.ZP.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == V ? void 0 : V.applicationId) && e.location.id === (null == V ? void 0 : V.location.id))) return !0;
     let e = d.ZP.getCurrentEmbeddedActivity();
     return null != e && e.applicationId === (null == F ? void 0 : F.application_id) && e.location.kind === i.X.CONTEXTLESS
   }), ec = (0, c.O)(), eu = !M.isPlatformEmbedded;
-  if (!((0, g.Z)(F, k.xjy.JOIN) || Q) || null == q) return null;
+  if (!((0, m.Z)(F, k.xjy.JOIN) || Q) || null == q) return null;
   let ed = !J || Q && !el,
     ef = ed && (eu || ee) && !K && !et;
   ed ? eu || ee || null == F || (B = G.NW.formatToPlainString(G.t.SqJBnJ, {
     name: F.name
   })) : B = G.NW.string(G.t["0OiwfH"]);
-  let ep = null !== (n = null == V ? void 0 : V.launchId) && void 0 !== n ? n : null == F ? void 0 : F.session_id,
-    e_ = async (e, t) => {
+  let e_ = null !== (n = null == V ? void 0 : V.launchId) && void 0 !== n ? n : null == F ? void 0 : F.session_id,
+    ep = async (e, t) => {
       var n, r;
-      if (null == ep || null == q) return;
-      let i = (0, g.Z)(t, k.xjy.EMBEDDED),
+      if (null == e_ || null == q) return;
+      let i = (0, m.Z)(t, k.xjy.EMBEDDED),
         o = P.Z.getVoiceChannelId(),
         a = S.Z.getChannel(o);
       await s.Z.join({
         userId: e.id,
-        sessionId: ep,
+        sessionId: e_,
         applicationId: q,
         channelId: o,
         messageId: null,
@@ -158,14 +158,14 @@ function B(e) {
       }
       if (!e) {
         if (es) {
-          null == H || H(), e_(Z, F);
+          null == H || H(), ep(Z, F);
           return
         }
         await t()
       }
-    }, em = es ? G.NW.string(G.t.VJlc0d) : G.NW.string(G.t.OKsSCQ);
-  return Q && !ea && (em = G.NW.string(G.t["4i2vj4"])), el && (em = G.NW.string(G.t.DPfdsr)), {
-    buttonCTA: em,
+    }, eg = es ? G.NW.string(G.t.VJlc0d) : G.NW.string(G.t.OKsSCQ);
+  return Q && !ea && (eg = G.NW.string(G.t["4i2vj4"])), el && (eg = G.NW.string(G.t.DPfdsr)), {
+    buttonCTA: eg,
     tooltip: B,
     handleJoinRequest: eh,
     isEnabled: ef,

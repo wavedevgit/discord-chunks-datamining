@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(210887),
   d = n(585483),
   f = n(531826),
-  p = n(53289),
-  _ = n(953101),
+  _ = n(53289),
+  p = n(953101),
   h = n(701488),
-  m = n(981631),
-  g = n(638920);
+  g = n(981631),
+  m = n(638920);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -64,11 +64,11 @@ function O(e) {
     className: n,
     style: o,
     onLoad: a,
-    shouldRefocus: g,
+    shouldRefocus: m,
     queryParams: E,
     allowPopups: b = !1,
     referrerPolicy: O = "origin"
-  } = e, S = (0, f.sU)({}), I = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), N = (0, p.Z)(T, g, null == S ? window : S), A = y(v({}, E), {
+  } = e, S = (0, f.sU)({}), I = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), N = (0, _.Z)(T, m, null == S ? window : S), A = y(v({}, E), {
     frame_id: I,
     platform: h.S4.DESKTOP
   }), [C, R] = i.useState(!1), P = u.Z.theme, D = v({}, o);
@@ -77,10 +77,10 @@ function O(e) {
     var n;
     null == a || a(e.target), T.current = e.target, N(!0), null === (n = e.target.contentWindow) || void 0 === n || n.postMessage([c.Z.HELLO, A], null != t ? t : "")
   }
-  return P === m.BRd.LIGHT ? D.colorScheme = "light" : D.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
+  return P === g.BRd.LIGHT ? D.colorScheme = "light" : D.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(g.CkL.IFRAME_MOUNT, {
     id: I
   }), () => {
-    d.S.dispatch(m.CkL.IFRAME_UNMOUNT, {
+    d.S.dispatch(g.CkL.IFRAME_UNMOUNT, {
       id: I
     })
   }), [I]), i.useEffect(() => {
@@ -90,15 +90,15 @@ function O(e) {
       } = e;
       R(t)
     };
-    return d.S.subscribe(m.CkL.MANUAL_IFRAME_RESIZING, e), () => {
-      d.S.unsubscribe(m.CkL.MANUAL_IFRAME_RESIZING, e)
+    return d.S.subscribe(g.CkL.MANUAL_IFRAME_RESIZING, e), () => {
+      d.S.unsubscribe(g.CkL.MANUAL_IFRAME_RESIZING, e)
     }
   }, []), C && (D.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
     style: D,
     allow: "autoplay; encrypted-media",
     referrerPolicy: O,
     onLoad: w,
-    sandbox: (0, _.Z)({
+    sandbox: (0, p.Z)({
       allowPopups: b
     }),
     className: n,
@@ -113,11 +113,11 @@ function S(e) {
     o(!0), null == t || t(e)
   }, [t]);
   return (0, r.jsxs)("div", {
-    className: g.fillParent,
+    className: m.fillParent,
     children: [!n && (0, r.jsx)("div", {
-      className: a()(g.fillParent, g.iframePlaceholder)
+      className: a()(m.fillParent, m.iframePlaceholder)
     }), (0, r.jsx)("div", {
-      className: a()(g.fillParent, n ? void 0 : g.hiddenIframeContainer),
+      className: a()(m.fillParent, n ? void 0 : m.hiddenIframeContainer),
       children: (0, r.jsx)(O, y(v({}, e), {
         onLoad: s
       }))

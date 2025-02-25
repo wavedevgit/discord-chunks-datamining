@@ -28,8 +28,8 @@ var r = n(200651),
   C = n(271383),
   I = n(594174),
   S = n(464891),
-  P = n(348238),
-  T = n(83561),
+  T = n(348238),
+  P = n(83561),
   A = n(834129),
   w = n(981631),
   Z = n(674563),
@@ -249,7 +249,7 @@ function G(e) {
     resolvedReason: g
   } = (0, v.FL)(n), x = (0, p.e7)([N.Z], () => N.Z.getChannel(n.channel_id), [n.channel_id]), O = null !== (t = null == x ? void 0 : x.guild_id) && void 0 !== t ? t : null, {
     shouldShowIncidentActions: E
-  } = (0, _.mI)(O), j = (0, P.sR)(n.author.id, n.channel_id), C = i.useCallback(() => {
+  } = (0, _.mI)(O), j = (0, T.sR)(n.author.id, n.channel_id), C = i.useCallback(() => {
     let e = null == x ? void 0 : x.guild_id;
     null != e && (0, y.kW)(n.id, e)
   }, [n.id, x]), I = h === u.$.DM_RAID, S = I ? f.P4T : f.b6m;
@@ -456,7 +456,7 @@ function z(e) {
       onMouseEnter: s,
       onMouseLeave: c
     }
-  } = (0, T.m)(!0), {
+  } = (0, P.m)(!0), {
     notificationType: u
   } = (0, v.FL)(i), p = null == u || u === d.p.RAID;
   return (0, r.jsx)("div", {
@@ -466,7 +466,7 @@ function z(e) {
       className: o()(R.mainContainer, {
         [R.compact]: n
       }),
-      iconNode: n ? null : (0, r.jsx)(T.S, {
+      iconNode: n ? null : (0, r.jsx)(P.S, {
         src: l
       }),
       iconContainerClassName: R.iconContainer,

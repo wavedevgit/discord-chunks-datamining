@@ -10,17 +10,17 @@ var r = n(299623),
   u = n(992051),
   d = n(325008),
   f = "Array Iterator",
-  p = a.set,
-  _ = a.getterFor(f);
+  _ = a.set,
+  p = a.getterFor(f);
 e.exports = l(Array, "Array", function(e, t) {
-  p(this, {
+  _(this, {
     type: f,
     target: r(e),
     index: 0,
     kind: t
   })
 }, function() {
-  var e = _(this),
+  var e = p(this),
     t = e.target,
     n = e.kind,
     r = e.index++;

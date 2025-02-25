@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   F9: () => b,
-  Zb: () => g,
-  cA: () => m,
+  Zb: () => m,
+  cA: () => g,
   e$: () => E,
   ll: () => y
 });
@@ -18,18 +18,18 @@ var i = n(120356),
   u = n(430824),
   d = n(594174),
   f = n(5192),
-  p = n(192918),
-  _ = n(388032),
+  _ = n(192918),
+  p = n(388032),
   h = n(62545);
 
-function m() {
+function g() {
   return (0, r.jsx)("div", {
     className: h.container,
     "aria-hidden": !0
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     children: t,
     selected: n
@@ -87,22 +87,22 @@ function b(e) {
     channelId: n,
     entry: i,
     maxAvatars: o = 3
-  } = e, l = i.author_id, m = (0, a.e7)([d.default], () => d.default.getUser(l)), {
-    displayParticipants: g,
+  } = e, l = i.author_id, g = (0, a.e7)([d.default], () => d.default.getUser(l)), {
+    displayParticipants: m,
     participant1: E,
     participant2: b,
     numOtherParticipants: y
-  } = (0, p.Z)(i, o), O = (0, a.e7)([c.ZP], () => c.ZP.getMember(t, l)), S = (0, a.e7)([u.Z], () => {
+  } = (0, _.Z)(i, o), O = (0, a.e7)([c.ZP], () => c.ZP.getMember(t, l)), S = (0, a.e7)([u.Z], () => {
     var e;
     return (null == O ? void 0 : O.colorRoleId) != null ? null === (e = u.Z.getRole(t, O.colorRoleId)) || void 0 === e ? void 0 : e.name : void 0
   }, [t, O]);
-  if (null == m) return null;
+  if (null == g) return null;
   let I = null == O ? void 0 : O.colorString,
-    T = f.ZP.getName(t, n, m);
+    T = f.ZP.getName(t, n, g);
   return (0, r.jsxs)("div", {
     className: h.userSection,
     children: [(0, r.jsx)(v, {
-      users: g,
+      users: m,
       guildId: t,
       "aria-hidden": !0
     }), (0, r.jsx)(s.PUh, {
@@ -121,7 +121,7 @@ function b(e) {
         children: ["+", y]
       })
     }) : null, (0, r.jsx)(s.nn4, {
-      children: _.NW.format(_.t.rH95Gh, {
+      children: p.NW.format(p.t.rH95Gh, {
         user0: f.ZP.getName(t, n, E),
         user1: f.ZP.getName(t, n, b),
         countOthers: y,

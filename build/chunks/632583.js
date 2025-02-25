@@ -64,11 +64,11 @@ function f(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let p = "currentColor",
-  _ = "url(#nitro_hover)",
+let _ = "currentColor",
+  p = "url(#nitro_hover)",
   h = "url(#birthday_gradient_1_light)",
-  m = "url(#birthday_gradient_2_light)",
-  g = "url(#birthday_gradient_3_light)",
+  g = "url(#birthday_gradient_2_light)",
+  m = "url(#birthday_gradient_3_light)",
   E = "url(#birthday_secondary_gradient_1_light)",
   v = "url(#birthday_secondary_gradient_2_light)",
   b = "url(#birthday_secondary_gradient_3_light)",
@@ -79,8 +79,8 @@ let p = "currentColor",
   ]),
   O = new Map([
     [h, E],
-    [m, v],
-    [g, b]
+    [g, v],
+    [m, b]
   ]),
   S = e => {
     let {
@@ -130,7 +130,7 @@ let p = "currentColor",
     })
   },
   T = (e, t, n, r) => {
-    if (n) return e ? _ : p;
+    if (n) return e ? p : _;
     let i = t ? [...O.keys()].filter(e => e !== r) : [...y.keys()].filter(e => e !== r),
       o = Math.floor(Math.random() * i.length);
     return i[o]
@@ -142,24 +142,24 @@ function N(e) {
       height: s = 22,
       referralsRemaining: c,
       isResending: f,
-      hovered: _,
+      hovered: p,
       isLightTheme: h
     } = e,
-    m = d(e, ["width", "height", "referralsRemaining", "isResending", "hovered", "isLightTheme"]);
-  let [g, E] = i.useState(p), v = null !== (t = y.get(g)) && void 0 !== t ? t : null;
+    g = d(e, ["width", "height", "referralsRemaining", "isResending", "hovered", "isLightTheme"]);
+  let [m, E] = i.useState(_), v = null !== (t = y.get(m)) && void 0 !== t ? t : null;
   return i.useEffect(() => {
-    _ ? E(e => T(_, h, f, e)) : f && E(p)
-  }, [_, h, f]), (0, r.jsxs)("svg", u(l({
+    p ? E(e => T(p, h, f, e)) : f && E(_)
+  }, [p, h, f]), (0, r.jsxs)("svg", u(l({
     width: n,
     height: s
-  }, (0, a.Z)(m)), {
+  }, (0, a.Z)(g)), {
     xmlns: "http://www.w3.org/2000/svg",
     children: [f ? (0, r.jsx)(I, {
-      fillColor: g
+      fillColor: m
     }) : (0, r.jsx)(S, {
       referralsRemaining: c,
-      fillColor: _ ? g : p,
-      secondaryFillColor: _ ? v : null
+      fillColor: p ? m : _,
+      secondaryFillColor: p ? v : null
     }), (0, r.jsxs)("defs", {
       children: [(0, r.jsxs)("linearGradient", {
         id: "nitro_hover",

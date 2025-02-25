@@ -27,8 +27,8 @@ var r, i = n(200651),
   C = n(831506),
   I = n(271383),
   S = n(283595),
-  P = n(293273),
-  T = n(885110),
+  T = n(293273),
+  P = n(885110),
   A = n(594174),
   w = n(181106),
   Z = n(417363),
@@ -277,7 +277,7 @@ class H extends(r = a.PureComponent) {
 F(H, "defaultProps", {
   isPreview: !1
 });
-let V = o.ZP.connectStores([y.Z, C.Z, P.Z, T.Z, N.Z, w.Z, S.Z, b.Z, Z.Z, A.default, I.ZP], e => {
+let V = o.ZP.connectStores([y.Z, C.Z, T.Z, P.Z, N.Z, w.Z, S.Z, b.Z, Z.Z, A.default, I.ZP], e => {
   var t;
   let {
     activity: n,
@@ -288,7 +288,7 @@ let V = o.ZP.connectStores([y.Z, C.Z, P.Z, T.Z, N.Z, w.Z, S.Z, b.Z, Z.Z, A.defau
     guildId: l
   } = e, {
     id: s
-  } = null != i ? i : {}, c = null != n && null != n.party && n.party.id === a ? C.Z.getParty(n.party.id) : null, d = null != s ? null !== (t = P.Z.getApplicationActivity(s)) && void 0 !== t ? t : T.Z.getApplicationActivity(s, !0) : P.Z.findActivity(e => e.type === M.IIU.LISTENING), u = !1;
+  } = null != i ? i : {}, c = null != n && null != n.party && n.party.id === a ? C.Z.getParty(n.party.id) : null, d = null != s ? null !== (t = T.Z.getApplicationActivity(s)) && void 0 !== t ? t : P.Z.getApplicationActivity(s, !0) : T.Z.findActivity(e => e.type === M.IIU.LISTENING), u = !1;
   null != s && (u = w.Z.getState(s, M.mFx.JOIN) === M.OcF.LOADING);
   let p = Array.from(null != c ? c : []).map(e => {
       let t = null != l ? I.ZP.getMember(l, e) : null,

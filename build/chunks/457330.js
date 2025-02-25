@@ -13,9 +13,9 @@ var r = n(990547),
   u = n(553795),
   d = n(626135),
   f = n(573261),
-  p = n(981631);
+  _ = n(981631);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,13 +31,13 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -58,10 +58,10 @@ let E = new l.Z("ConnectedAccounts");
 function v(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   return i.tn.post({
-    url: p.ANM.CONNECTIONS_CALLBACK(e),
-    body: h(g(h({}, t), {
+    url: _.ANM.CONNECTIONS_CALLBACK(e),
+    body: h(m(h({}, t), {
       insecure: n,
-      friend_sync: p.BFP.has(e)
+      friend_sync: _.BFP.has(e)
     }), s.g.getCurrentConfig({
       location: "ConnectedAccountsActionCreators.callback"
     }).enabled ? {
@@ -73,7 +73,7 @@ function v(e, t) {
 }
 let b = {
   fetch: () => i.tn.get({
-    url: p.ANM.CONNECTIONS,
+    url: _.ANM.CONNECTIONS,
     oldFormErrors: !0,
     rejectWithError: !0
   }).then(e => o.Z.dispatch({
@@ -93,27 +93,27 @@ let b = {
       userCode: o,
       twoWayLink: l,
       successRedirect: f,
-      handle: _
+      handle: p
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-    d.default.track(p.rMx.CONNECTED_ACCOUNT_INITIATED, {
+    d.default.track(_.rMx.CONNECTED_ACCOUNT_INITIATED, {
       platform_type: e,
       location: n
     });
-    let h = p.ANM.CONNECTIONS_AUTHORIZE(e),
-      m = new URLSearchParams;
-    null != o && m.append("two_way_user_code", o), null != f && m.append("success_redirect", f), null != r ? (m.append("two_way_link_type", r), m.append("two_way_link", "true")) : null != l && m.append("two_way_link", String(l)), null != _ && m.append("handle", _);
+    let h = _.ANM.CONNECTIONS_AUTHORIZE(e),
+      g = new URLSearchParams;
+    null != o && g.append("two_way_user_code", o), null != f && g.append("success_redirect", f), null != r ? (g.append("two_way_link_type", r), g.append("two_way_link", "true")) : null != l && g.append("two_way_link", String(l)), null != p && g.append("handle", p);
     let {
-      enabled: g
+      enabled: m
     } = s.g.getCurrentConfig({
       location: "ConnectedAcountsActionCreators.authorize"
     }, {
       autoTrackExposure: !0
     });
-    if (g) {
+    if (m) {
       let e = c.default.getSessionId();
-      null != e && m.append("session_id", e)
+      null != e && g.append("session_id", e)
     }
-    h = h + "?" + m.toString();
+    h = h + "?" + g.toString();
     let E = await i.tn.get({
         url: h,
         oldFormErrors: !0,
@@ -130,10 +130,10 @@ let b = {
   connect(e, t, n, i, o) {
     var a;
     return f.Z.put({
-      url: p.ANM.CONNECTION(e, t),
+      url: _.ANM.CONNECTION(e, t),
       body: {
         name: n,
-        friend_sync: null !== (a = null == o ? void 0 : o.friend_sync) && void 0 !== a ? a : p.BFP.has(e)
+        friend_sync: null !== (a = null == o ? void 0 : o.friend_sync) && void 0 !== a ? a : _.BFP.has(e)
       },
       context: {
         location: i
@@ -143,19 +143,19 @@ let b = {
         event: r.NetworkActionNames.USER_CONNECTIONS_UPDATE,
         properties: {
           name: n,
-          friend_sync: p.BFP.has(e)
+          friend_sync: _.BFP.has(e)
         }
       },
       rejectWithError: !1
     })
   },
   disconnect: (e, t) => i.tn.del({
-    url: p.ANM.CONNECTION(e, t),
+    url: _.ANM.CONNECTION(e, t),
     oldFormErrors: !0,
     rejectWithError: !1
   }),
   refresh: (e, t) => i.tn.post({
-    url: p.ANM.CONNECTION_REFRESH(e, t),
+    url: _.ANM.CONNECTION_REFRESH(e, t),
     oldFormErrors: !0,
     rejectWithError: !1
   }),
@@ -180,7 +180,7 @@ let b = {
     })
   },
   update: (e, t, n) => f.Z.patch({
-    url: p.ANM.CONNECTION(e, t),
+    url: _.ANM.CONNECTION(e, t),
     body: n,
     oldFormErrors: !0,
     trackedActionData: {
@@ -195,7 +195,7 @@ let b = {
       integrationId: e,
       joining: !0
     }), i.tn.post({
-      url: p.ANM.INTEGRATION_JOIN(e),
+      url: _.ANM.INTEGRATION_JOIN(e),
       oldFormErrors: !0,
       rejectWithError: !1
     }, n => {
@@ -217,7 +217,7 @@ let b = {
           access_token: n
         }
       } = await i.tn.get({
-        url: p.ANM.CONNECTION_ACCESS_TOKEN(e, t),
+        url: _.ANM.CONNECTION_ACCESS_TOKEN(e, t),
         oldFormErrors: !0,
         rejectWithError: !1
       });
@@ -228,7 +228,7 @@ let b = {
         accessToken: n
       }), n
     } catch (n) {
-      throw n.body.code === p.evJ.CONNECTION_REVOKED && o.Z.dispatch({
+      throw n.body.code === _.evJ.CONNECTION_REVOKED && o.Z.dispatch({
         type: "USER_CONNECTION_UPDATE",
         platformType: e,
         id: t,
@@ -237,7 +237,7 @@ let b = {
     }
   },
   linkDispatchAuthCallback: (e, t) => i.tn.post({
-    url: p.ANM.CONNECTIONS_LINK_DISPATCH_AUTH_CALLBACK(e),
+    url: _.ANM.CONNECTIONS_LINK_DISPATCH_AUTH_CALLBACK(e),
     body: h({}, t),
     oldFormErrors: !0,
     rejectWithError: !1
@@ -268,7 +268,7 @@ let b = {
   },
   sessionHandoff: function(e, t, n, r, o) {
     return i.tn.post({
-      url: p.ANM.CONNECTIONS_SESSION_HANDOFF(e),
+      url: _.ANM.CONNECTIONS_SESSION_HANDOFF(e),
       body: {
         state: t,
         code: n,
@@ -282,7 +282,7 @@ let b = {
   getHandoffStatus: function(e, t) {
     let n = new URLSearchParams;
     n.append("state", t);
-    let r = "".concat(p.ANM.CONNECTIONS_SESSION_HANDOFF(e), "?").concat(n.toString());
+    let r = "".concat(_.ANM.CONNECTIONS_SESSION_HANDOFF(e), "?").concat(n.toString());
     return i.tn.get({
       url: r,
       body: {

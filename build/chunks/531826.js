@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => p,
+  ZP: () => _,
   jA: () => h,
-  sU: () => m
+  sU: () => g
 }), n(789020);
 var r = n(442837),
   i = n(812206),
@@ -16,7 +16,7 @@ var r = n(442837),
   d = n(918559),
   f = n(981631);
 
-function p(e) {
+function _(e) {
   var t;
   let {
     application: n,
@@ -28,13 +28,13 @@ function p(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   let {
     channelId: t,
     EmbeddedActivitiesStore: n,
     ApplicationStore: r
   } = e, i = n.getSelfEmbeddedActivityForChannel(t), o = r.getApplication(null == i ? void 0 : i.applicationId);
-  if (null != o) return p({
+  if (null != o) return _({
     application: o,
     channelId: t
   })
@@ -46,18 +46,18 @@ function h(e) {
   } = e, n = l.ZP.getCurrentEmbeddedActivity();
   if (null == n || n.applicationId !== t) return;
   let r = i.Z.getApplication(t);
-  if (null != r) return p({
+  if (null != r) return _({
     application: r,
     channelId: (0, c.pY)(n.location)
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     channelId: t
   } = e;
   return (0, r.e7)([o.Z, l.ZP, i.Z], () => {
-    let e = _({
+    let e = p({
       channelId: null != t ? t : l.ZP.getConnectedActivityChannelId(),
       EmbeddedActivitiesStore: l.ZP,
       ApplicationStore: i.Z

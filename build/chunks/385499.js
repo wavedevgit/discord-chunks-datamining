@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,8 +46,8 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -56,17 +56,17 @@ let h = e => {
       invertColor: n = !1,
       type: i = l.Hb.BOT,
       className: d,
-      verified: p,
+      verified: _,
       hideIcon: h = !1,
-      useRemSizes: m = !1,
-      children: g = []
+      useRemSizes: g = !1,
+      children: m = []
     } = e,
     E = null,
     v = c.NW.string(c.t.g76OcH);
   switch (i) {
     case l.Hb.SYSTEM_DM:
     case l.Hb.OFFICIAL:
-      p = !0, v = c.NW.string(c.t["7s687u"]), E = c.NW.string(c.t.lKQ7Wl);
+      _ = !0, v = c.NW.string(c.t["7s687u"]), E = c.NW.string(c.t.lKQ7Wl);
       break;
     case l.Hb.SERVER:
       E = c.NW.string(c.t.PuJGuL);
@@ -78,10 +78,10 @@ let h = e => {
       E = c.NW.string(c.t.oMx98P);
       break;
     case l.Hb.AI:
-      p = !0, v = c.NW.string(c.t.d5YwQE), E = c.NW.string(c.t.pLTJZG);
+      _ = !0, v = c.NW.string(c.t.d5YwQE), E = c.NW.string(c.t.pLTJZG);
       break;
     case l.Hb.REMIX:
-      p = !1, E = c.NW.string(c.t.uXDG39);
+      _ = !1, E = c.NW.string(c.t.uXDG39);
       break;
     case l.Hb.BOT:
     default:
@@ -90,21 +90,21 @@ let h = e => {
   let b = i === l.Hb.ORIGINAL_POSTER,
     y = i === l.Hb.REMIX,
     O = null;
-  p && (O = (0, r.jsx)(a.u, {
+  _ && (O = (0, r.jsx)(a.u, {
     text: v,
     align: "center",
     position: "top",
-    children: e => (0, r.jsx)(s.kSu, _(f({}, e), {
+    children: e => (0, r.jsx)(s.kSu, p(f({}, e), {
       className: u.botTagVerified,
       color: s.TVs.colors.WHITE
     }))
   })), t = i === l.Hb.AI ? u.botTagAI : n ? u.botTagInvert : u.botTagRegular;
-  let S = e => (0, r.jsxs)("span", _(f({}, e), {
-    className: o()(d, t, m ? u.rem : u.px, {
+  let S = e => (0, r.jsxs)("span", p(f({}, e), {
+    className: o()(d, t, g ? u.rem : u.px, {
       [u.botTagOP]: b,
       [u.botTagRemix]: y
     }),
-    children: [h ? null : O, g, (0, r.jsx)("span", {
+    children: [h ? null : O, m, (0, r.jsx)("span", {
       className: u.botText,
       children: E
     })]
@@ -127,4 +127,4 @@ let h = e => {
   }
 };
 h.Types = l.Hb;
-let m = h
+let g = h

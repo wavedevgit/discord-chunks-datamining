@@ -71,7 +71,7 @@ function S(e) {
       onKeyDown: function(e) {
         null != u && null != d && ("ArrowRight" === e.key && d.collapsed || "ArrowLeft" === e.key && !d.collapsed) && (null == u || u(d))
       },
-      children: [(0, r.jsx)(P, {
+      children: [(0, r.jsx)(T, {
         channel: i,
         gotoChannel: l
       }), (0, r.jsx)(w, {
@@ -92,12 +92,12 @@ function S(e) {
   })
 }
 
-function P(e) {
+function T(e) {
   let {
     channel: t,
     gotoChannel: n
   } = e;
-  return t.isPrivate() ? (0, r.jsx)(T, {
+  return t.isPrivate() ? (0, r.jsx)(P, {
     channel: t,
     gotoChannel: n
   }) : (0, r.jsx)(A, {
@@ -106,7 +106,7 @@ function P(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   let {
     channel: t,
     gotoChannel: n

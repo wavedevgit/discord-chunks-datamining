@@ -10,7 +10,7 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 n.d(t, {
-  $o: () => p,
+  $o: () => _,
   NE: () => d,
   P1: () => c,
   P2: () => f,
@@ -52,7 +52,7 @@ function f(e, t) {
     n || (e(...i), n = !0, setTimeout(() => n = !1, t))
   }
 }
-class p {
+class _ {
   get(e) {
     let t = this.handlers.get(e);
     return null == t && (t = this.makeHandler(e), this.handlers.set(e, t)), t

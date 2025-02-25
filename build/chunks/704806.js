@@ -43,12 +43,12 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = {
+let p = {
   hashes: {}
 };
 async function h() {
@@ -57,9 +57,9 @@ async function h() {
   let e = c.ZP.requireModule("discord_media");
   return await e.getSystemAnalyticsBlob() || []
 }
-async function m() {
+async function g() {
   try {
-    let t = (await h()).filter(e => _.hashes[e.name] !== e.hash);
+    let t = (await h()).filter(e => p.hashes[e.name] !== e.hash);
     for (let {
         name: n,
         hash: r,
@@ -67,28 +67,28 @@ async function m() {
       }
       of t) {
       var e;
-      let t = p(d({}, i), {
+      let t = _(d({}, i), {
         gpus: null === (e = i.gpus) || void 0 === e ? void 0 : e.map(e => JSON.stringify(e))
       });
-      s.default.track(n, t), (_ = {
-        hashes: d({}, _.hashes)
+      s.default.track(n, t), (p = {
+        hashes: d({}, p.hashes)
       }).hashes[n] = r
     }
     t.length > 0 && v.emitChange()
   } catch (e) {}
 }
 
-function g() {
-  return m(), !1
+function m() {
+  return g(), !1
 }
 class E extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    _ = null != e && "object" == typeof e.hashes ? e : {
+    p = null != e && "object" == typeof e.hashes ? e : {
       hashes: {}
     }, this.waitFor(a.Z)
   }
   getState() {
-    return _
+    return p
   }
   async info() {
     try {
@@ -100,7 +100,7 @@ class E extends(r = i.ZP.PersistedStore) {
 }
 u(E, "displayName", "SystemAnalyticsStore"), u(E, "persistKey", "SystemAnalyticsStore");
 let v = new E(o.Z, {
-  START_SESSION: g
+  START_SESSION: m
 });
 
 function b() {

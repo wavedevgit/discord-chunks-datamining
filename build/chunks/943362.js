@@ -14,11 +14,11 @@ var i = n(120356),
   u = n(124072),
   d = n(198620),
   f = n(746878),
-  p = n(981631),
-  _ = n(556196),
+  _ = n(981631),
+  p = n(556196),
   h = n(405994);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -59,16 +59,16 @@ function v(e, t) {
 
 function b(e) {
   return {
-    react(t, i, m) {
-      let E = m.noStyleAndInteraction ? void 0 : async n => {
+    react(t, i, g) {
+      let E = g.noStyleAndInteraction ? void 0 : async n => {
         let r = await (0, d.B_)(t.attachmentUrl);
         e.shouldStopPropagation && (null == n || n.stopPropagation()), c.Z.trackLinkClicked(r), e.shouldCloseDefaultModals && (0, a.pTH)(), (0, l.Z)(r)
-      }, b = m.noStyleAndInteraction ? p.dG4 : e => {
+      }, b = g.noStyleAndInteraction ? _.dG4 : e => {
         (0, s.jW)(e, async () => {
           let {
             default: e
           } = await n.e("98466").then(n.bind(n, 151578));
-          return n => (0, r.jsx)(e, v(g({}, n), {
+          return n => (0, r.jsx)(e, v(m({}, n), {
             attachmentUrl: t.attachmentUrl,
             attachmentName: t.attachmentName
           }))
@@ -82,10 +82,10 @@ function b(e) {
         className: "attachmentLink",
         children: [(0, r.jsx)(a.Ujz, {
           size: "xs",
-          className: o()(h.icon, _.icon),
+          className: o()(h.icon, p.icon),
           color: a.TVs.colors.MENTION_FOREGROUND
-        }), (0, f.S)(t, i, m)]
-      }, m.key)
+        }), (0, f.S)(t, i, g)]
+      }, g.key)
     }
   }
 }

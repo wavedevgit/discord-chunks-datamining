@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  DF: () => _,
-  ZP: () => m,
+  DF: () => p,
+  ZP: () => g,
   _F: () => h
 });
 var r = n(200651);
@@ -47,29 +47,29 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var _ = function(e) {
+var p = function(e) {
     return e.TOP_CENTER = "caretTopCenter", e.TOP_RIGHT = "caretTopRight", e.TOP_LEFT = "caretTopLeft", e.BOTTOM_CENTER = "caretBottomCenter", e.BOTTOM_LEFT = "caretBottomLeft", e.BOTTOM_RIGHT = "caretBottomRight", e.LEFT_CENTER = "caretLeftCenter", e.LEFT_TOP = "caretLeftTop", e.RIGHT_CENTER = "caretRightCenter", e.RIGHT_TOP = "caretRightTop", e
   }({}),
   h = function(e) {
     return e[e.ADJACENT = 0] = "ADJACENT", e[e.STACKED = 1] = "STACKED", e
   }({});
 
-function m(e) {
+function g(e) {
   let {
     className: t,
     header: n,
     headerClassName: i,
     content: u,
     contentClassName: f,
-    buttonCTA: _,
+    buttonCTA: p,
     secondaryButtonCTA: h,
-    onClick: m,
-    onSecondaryClick: g,
+    onClick: g,
+    onSecondaryClick: m,
     buttonProps: E = {
       color: a.zxk.Colors.BRAND,
       look: a.zxk.Looks.FILLED
@@ -88,10 +88,10 @@ function m(e) {
   });
   let T = null != h,
     N = e => {
-      m(e), null == O || O(l.L.PRIMARY)
+      g(e), null == O || O(l.L.PRIMARY)
     },
     A = () => {
-      null == g || g(), null == O || O(l.L.SECONDARY)
+      null == m || m(), null == O || O(l.L.SECONDARY)
     };
   return (0, r.jsxs)("div", {
     className: o()(t, c.upsellTooltipWrapper, c[S]),
@@ -104,21 +104,21 @@ function m(e) {
       className: o()(f, c.content),
       variant: "text-sm/normal",
       children: u
-    }), null != _ || T ? (0, r.jsxs)("div", {
+    }), null != p || T ? (0, r.jsxs)("div", {
       className: o()(c.upsellButtonsContainer, {
         [c.upsellButtonsAdjacent]: 0 === I,
         [c.upsellButtonsStacked]: 1 === I
       }),
-      children: [T ? (0, r.jsx)(a.zxk, p(d({}, v), {
+      children: [T ? (0, r.jsx)(a.zxk, _(d({}, v), {
         fullWidth: 1 === I,
         onClick: A,
         children: h
-      })) : null, null == _ ? null : (0, r.jsx)(a.zxk, p(d({}, E), {
+      })) : null, null == p ? null : (0, r.jsx)(a.zxk, _(d({}, E), {
         fullWidth: !T || 1 === I,
         onClick: N,
-        children: _
+        children: p
       }))]
     }) : null]
   })
 }
-m.CaretPosition = _, m.ButtonLayout = h
+g.CaretPosition = p, g.ButtonLayout = h

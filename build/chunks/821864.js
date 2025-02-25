@@ -3,8 +3,8 @@
 n.d(t, {
   I4: () => f,
   Sn: () => u,
-  U3: () => _,
-  Ui: () => p,
+  U3: () => p,
+  Ui: () => _,
   W4: () => c,
   gq: () => d,
   kZ: () => l
@@ -84,13 +84,13 @@ function f(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   i.Z.dispatch({
     commandId: e,
     type: "INTEGRATION_PERMISSION_SETTINGS_RESET"
   })
 }
-async function _(e) {
+async function p(e) {
   let {
     applicationId: t,
     commandId: n,

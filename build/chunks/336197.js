@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(727429),
   i = n(703656),
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,8 +45,8 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -56,11 +56,11 @@ function h(e) {
   let t = a.Z.getChannel(e.channelId);
   if (null == t) return e;
   let n = (0, r.e)(t);
-  return _(f({}, e), {
+  return p(f({}, e), {
     guildId: null != n ? n : u.ME
   })
 }
-async function m(e, t) {
+async function g(e, t) {
   let n = (0, s.Qj)(e);
   if (null != n && !await (0, l.Z)(n)) {
     (0, c.k)({

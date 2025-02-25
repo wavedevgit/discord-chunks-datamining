@@ -16,17 +16,17 @@ function d(e) {
   var t, n, d;
   let {
     applicationId: f,
-    channel: p,
-    onSuccess: _,
+    channel: _,
+    onSuccess: p,
     sectionName: h,
-    location: m,
-    entrypoint: g,
+    location: g,
+    entrypoint: m,
     commandIntegrationTypes: E
   } = e;
-  if (null != E && !E.includes(r.Y.USER_INSTALL) || f === u.bi.BUILT_IN || o.ZP.hasUserStateApplication(f) || null != p && o.ZP.hasContextStateApplication(f, p.id, p.guild_id)) return null == _ || _(), Promise.resolve(!0);
-  let v = null != g ? g : l.Z.lastShownEntrypoint();
+  if (null != E && !E.includes(r.Y.USER_INSTALL) || f === u.bi.BUILT_IN || o.ZP.hasUserStateApplication(f) || null != _ && o.ZP.hasContextStateApplication(f, _.id, _.guild_id)) return null == p || p(), Promise.resolve(!0);
+  let v = null != m ? m : l.Z.lastShownEntrypoint();
   (0, i.yw)(c.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, {
-    location: m,
+    location: g,
     application_id: f,
     section_name: h,
     source: v
@@ -44,11 +44,11 @@ function d(e) {
           location: n
         } = t;
         null != n && ((0, i.yw)(c.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, {
-          location: m,
+          location: g,
           application_id: f,
           section_name: h,
           source: v
-        }), e(!0), null == _ || _())
+        }), e(!0), null == p || p())
       }
     }, () => {
       e(!1)

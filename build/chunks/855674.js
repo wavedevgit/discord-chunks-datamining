@@ -21,11 +21,11 @@ function u(e, t, n) {
 let d = {},
   f = {};
 
-function p(e, t) {
+function _(e, t) {
   return null == t && (t = "guild"), "".concat(e, ":").concat(t)
 }
 
-function _(e) {
+function p(e) {
   return null != d[e] || (d[e] = {}), d[e]
 }
 
@@ -37,30 +37,30 @@ function h(e) {
     error: o
   } = e;
   if (null == i) {
-    null != o ? (r = o, delete f[p(t, n)]) : null != n && null != d[t] && (r = null, c.Z.fetchForChannel(t, n));
+    null != o ? (r = o, delete f[_(t, n)]) : null != n && null != d[t] && (r = null, c.Z.fetchForChannel(t, n));
     return
   }
   r = null;
   let s = [];
-  null != n && (s = a()(_(t)).values().filter(e => e.channel_id !== n).value());
+  null != n && (s = a()(p(t)).values().filter(e => e.channel_id !== n).value());
   let l = d[t] = {};
-  s.concat(i).forEach(e => l[e.id] = e), delete f[p(t, n)]
-}
-
-function m(e) {
-  let {
-    guildId: t,
-    channelId: n
-  } = e;
-  f[p(t, n)] = !0
+  s.concat(i).forEach(e => l[e.id] = e), delete f[_(t, n)]
 }
 
 function g(e) {
   let {
     guildId: t,
+    channelId: n
+  } = e;
+  f[_(t, n)] = !0
+}
+
+function m(e) {
+  let {
+    guildId: t,
     webhook: n
   } = e;
-  _(t)[n.id] = n
+  p(t)[n.id] = n
 }
 
 function E(e) {
@@ -68,17 +68,17 @@ function E(e) {
     guildId: t,
     webhookId: n
   } = e;
-  delete _(t)[n]
+  delete p(t)[n]
 }
 class v extends(i = s.ZP.Store) {
   isFetching(e, t) {
-    return null != f[p(e, t)]
+    return null != f[_(e, t)]
   }
   getWebhooksForGuild(e) {
-    return a().values(_(e))
+    return a().values(p(e))
   }
   getWebhooksForChannel(e, t) {
-    return a()(_(e)).values().filter(e => e.channel_id === t).value()
+    return a()(p(e)).values().filter(e => e.channel_id === t).value()
   }
   get error() {
     return r
@@ -87,8 +87,8 @@ class v extends(i = s.ZP.Store) {
 u(v, "displayName", "WebhooksStore");
 let b = new v(l.Z, {
   WEBHOOKS_UPDATE: h,
-  WEBHOOKS_FETCHING: m,
-  WEBHOOK_CREATE: g,
-  WEBHOOK_UPDATE: g,
+  WEBHOOKS_FETCHING: g,
+  WEBHOOK_CREATE: m,
+  WEBHOOK_UPDATE: m,
   WEBHOOK_DELETE: E
 })

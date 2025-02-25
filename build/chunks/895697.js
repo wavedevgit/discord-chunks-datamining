@@ -14,11 +14,11 @@ var i = n(442837),
   u = n(621853),
   d = n(172351),
   f = n(648052),
-  p = n(483424),
-  _ = n(681837),
+  _ = n(483424),
+  p = n(681837),
   h = n(678738),
-  m = n(530),
-  g = n(871604),
+  g = n(530),
+  m = n(871604),
   E = n(53558),
   v = n(827313),
   b = n(420654),
@@ -46,7 +46,7 @@ function A(e) {
   return (0, r.jsxs)(o.Ttm, {
     fade: !0,
     className: N.body,
-    children: [(0, r.jsx)(m.Z, {
+    children: [(0, r.jsx)(g.Z, {
       user: t,
       profileType: S.y0.BITE_SIZE,
       onOpenProfile: P,
@@ -58,7 +58,7 @@ function A(e) {
         onClose: w
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(_.Z, {
+        children: [(0, r.jsx)(p.Z, {
           userId: t.id
         }), !j && (0, r.jsx)(v.Z, {
           userId: t.id,
@@ -73,7 +73,7 @@ function A(e) {
       })
     }), (0, r.jsxs)("div", {
       className: T.buttons,
-      children: [(0, r.jsx)(g.Z, {
+      children: [(0, r.jsx)(m.Z, {
         user: t,
         className: T.button,
         closePopout: w
@@ -87,7 +87,7 @@ function A(e) {
       bio: null == A ? void 0 : A.bio,
       hidePersonalInformation: j,
       onClose: w
-    }), (0, r.jsx)(p.Z, {
+    }), (0, r.jsx)(_.Z, {
       user: t,
       currentUser: n,
       displayProfile: A,

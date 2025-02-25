@@ -7,7 +7,7 @@ n.d(t, {
   W5: () => N,
   ZP: () => C,
   _T: () => E,
-  oY: () => g,
+  oY: () => m,
   u5: () => y
 }), n(411104);
 var r = n(442837),
@@ -40,8 +40,8 @@ function c(e) {
 let u = 864e5,
   d = "???",
   f = e => "".concat(e[0], "..."),
-  p = e => "@".concat(e),
-  _ = {
+  _ = e => "@".concat(e),
+  p = {
     mode: "full",
     decoration: "never",
     identifiable: "auto",
@@ -52,15 +52,15 @@ function h(e) {
   return !!(null != e && e.length > 0)
 }
 
-function m(e) {
+function g(e) {
   return h(e.global_name) ? e.global_name : h(e.globalName) ? e.globalName : h(e.username) ? e.username : d
 }
 
-function g(e) {
+function m(e) {
   var t;
   if (null == e) return;
   let n = i.Z.hidePersonalInformation,
-    r = m(e);
+    r = g(e);
   return n && r.toLocaleLowerCase() === (null === (t = e.username) || void 0 === t ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (r = f(r)), r
 }
 
@@ -68,7 +68,7 @@ function E(e) {
   var t;
   let n = (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation);
   if (null == e) return;
-  let o = m(e);
+  let o = g(e);
   return n && o.toLocaleLowerCase() === (null === (t = e.username) || void 0 === t ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (o = f(o)), o
 }
 
@@ -138,11 +138,11 @@ function T(e, t, n) {
   let r = n;
   if ("always" === t.identifiable ? r = !1 : "never" === t.identifiable && (r = !0), "0" !== e.discriminator && e.discriminator !== a.fo$ && !t.forcePomelo) return "username" === t.mode ? e.username : r ? e.username : "".concat(e.username, "#").concat(e.discriminator);
   let i = r ? f(e.username) : e.username;
-  return "never" !== t.decoration ? p(i) : i
+  return "never" !== t.decoration ? _(i) : i
 }
 
 function N(e, t) {
-  let n = c({}, _, t),
+  let n = c({}, p, t),
     r = "auto" !== n.identifiable || i.Z.hidePersonalInformation;
   return T(e, n, r)
 }
@@ -153,12 +153,12 @@ function A(e) {
   })
 }
 let C = {
-  getName: g,
+  getName: m,
   useName: E,
   isNameConcealed: e => 4 === e.length && e.endsWith("..."),
   getUserTag: N,
   useUserTag: function(e, t) {
-    return T(e, c({}, _, t), (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation))
+    return T(e, c({}, p, t), (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation))
   },
   getFormattedName: b,
   getGlobalName: v,

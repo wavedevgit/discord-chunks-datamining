@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(456644),
   d = n(308406),
   f = n(369566),
-  p = n(565640),
-  _ = n(29899),
+  _ = n(565640),
+  p = n(29899),
   h = n(151545),
-  m = n(744802),
-  g = n(493043),
+  g = n(744802),
+  m = n(493043),
   E = n(864141),
   v = n(231338);
 
@@ -36,7 +36,7 @@ function b(e) {
   } = (0, f.Z)(t.id), [A] = I, {
     voiceChannel: C,
     voiceActivity: R
-  } = (0, _.Z)({
+  } = (0, p.Z)({
     userId: t.id,
     guildId: y,
     surface: "user-profile-featured-activity"
@@ -55,8 +55,8 @@ function b(e) {
     voiceActivityCardEnabled: M
   } = (0, d.o)({
     location: "UserProfileFeaturedActivity"
-  }), j = x || M, k = (0, p.Z)(t.id, "UserProfileFeaturedActivity"), U = i.useMemo(() => D ? T.find(s.Ae) : k, [D, T, k]);
-  return w || null == N ? !j || w || null == C || P ? w || null == A ? L && null != U ? (0, r.jsx)(m.Z, {
+  }), j = x || M, k = (0, _.Z)(t.id, "UserProfileFeaturedActivity"), U = i.useMemo(() => D ? T.find(s.Ae) : k, [D, T, k]);
+  return w || null == N ? !j || w || null == C || P ? w || null == A ? L && null != U ? (0, r.jsx)(g.Z, {
     location: "UserProfileFeaturedActivity",
     user: t,
     currentUser: n,
@@ -76,7 +76,7 @@ function b(e) {
     voiceChannel: C,
     className: O,
     onClose: S
-  }) : (0, r.jsx)(g.Z, {
+  }) : (0, r.jsx)(m.Z, {
     location: "UserProfileFeaturedActivity",
     user: t,
     currentUser: n,

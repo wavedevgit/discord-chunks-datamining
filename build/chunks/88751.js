@@ -12,11 +12,11 @@ var r, i = n(392711),
   u = n(430824),
   d = n(594174),
   f = n(979651),
-  p = n(700785),
-  _ = n(146085),
+  _ = n(700785),
+  p = n(146085),
   h = n(590415);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,7 +24,7 @@ function m(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let g = {},
+let m = {},
   E = {
     speaker: !1,
     moderator: !1
@@ -36,8 +36,8 @@ function v(e, t) {
 }
 
 function b(e, t, n) {
-  return p.BT({
-    permission: _.yP,
+  return _.BT({
+    permission: p.yP,
     user: e,
     context: t,
     overwrites: n.permissionOverwrites,
@@ -58,29 +58,29 @@ function y(e, t) {
 
 function O(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-  null == g[t] && (g[t] = {});
+  null == m[t] && (m[t] = {});
   let r = y(e, t, n);
-  return g[t][e] = r, r
+  return m[t][e] = r, r
 }
 
 function S(e, t) {
   var n;
   if (null == t) return !1;
   let r = l.Z.getChannel(t);
-  return !!(null != r && r.isGuildStageVoice()) && (null === (n = g[t]) || void 0 === n || delete n[e], !0)
+  return !!(null != r && r.isGuildStageVoice()) && (null === (n = m[t]) || void 0 === n || delete n[e], !0)
 }
 
 function I(e, t) {
-  for (let n in g) {
+  for (let n in m) {
     let r = l.Z.getBasicChannel(n);
-    null != r && r.guild_id === t && delete g[n][e]
+    null != r && r.guild_id === t && delete m[n][e]
   }
   return !0
 }
 
 function T(e) {
   let t = Object.values(l.Z.getMutableGuildChannelsForGuild(e)).filter(e => e.isGuildStageVoice());
-  for (let e of t) delete g[e.id];
+  for (let e of t) delete m[e.id];
   return t.length > 0
 }
 
@@ -88,7 +88,7 @@ function N(e) {
   let {
     channels: t
   } = e;
-  for (let e of t) delete g[e.id]
+  for (let e of t) delete m[e.id]
 }
 
 function A(e) {
@@ -110,7 +110,7 @@ function R(e) {
   let {
     voiceStates: t
   } = e;
-  return !o().isEmpty(g) && t.reduce((e, t) => {
+  return !o().isEmpty(m) && t.reduce((e, t) => {
     let {
       userId: n,
       channelId: r
@@ -124,16 +124,16 @@ function P(e) {
 }
 
 function D() {
-  g = {}
+  m = {}
 }
 
 function w(e) {
   let {
     guild: t
   } = e;
-  for (let e in g) {
+  for (let e in m) {
     let n = l.Z.getBasicChannel(e);
-    (null == n || n.guild_id === t.id) && delete g[e]
+    (null == n || n.guild_id === t.id) && delete m[e]
   }
 }
 class L extends(r = a.ZP.Store) {
@@ -155,11 +155,11 @@ class L extends(r = a.ZP.Store) {
     var n;
     let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
     if (null == e || null == t) return E;
-    let i = null === (n = g[t]) || void 0 === n ? void 0 : n[e];
+    let i = null === (n = m[t]) || void 0 === n ? void 0 : n[e];
     return null != i ? r && null == i.moderator ? O(e, t, !0) : i : O(e, t, r)
   }
 }
-m(L, "displayName", "StageChannelRoleStore");
+g(L, "displayName", "StageChannelRoleStore");
 let x = new L(s.Z, {
   CHANNEL_UPDATES: N,
   CONNECTION_OPEN: D,

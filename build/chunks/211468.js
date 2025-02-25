@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   dO: () => l,
-  pq: () => p
+  pq: () => _
 }), n(47120);
 var r = n(688619),
   i = n.n(r);
@@ -31,7 +31,7 @@ let c = [1.3, .7],
   d = [.75, 1.5],
   f = [1.45, .45];
 
-function p(e, t, n, r) {
+function _(e, t, n, r) {
   switch (t) {
     case "background":
     case "border":

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  y: () => p
+  y: () => _
 }), n(653041), n(47120);
 var r = n(259443),
   i = n(379649),
@@ -21,7 +21,7 @@ let c = 16,
   u = 600,
   d = 900,
   f = !1;
-class p {
+class _ {
   calculateFps(e, t, n) {
     if (-1 === this.prevFramesCodec[e] || t < this.prevFramesCodec[e] || n < this.prevTimestamp[e] || n > this.prevTimestamp[e] + 1e3 * this.windowLength) return this.prevFramesCodec[e] = t, this.prevTimestamp[e] = n, this.perUserFpsWindow[e] = [], NaN;
     if (n < this.prevTimestamp[e] + d) return NaN;

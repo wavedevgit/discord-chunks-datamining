@@ -13,7 +13,7 @@ n.r(t), n.d(t, {
   StandardAnalyticsSchemaNameMap: () => b.StandardAnalyticsSchemaNameMap,
   TypedEventProperties: () => v.TypedEventProperties,
   analyticsTrackingStoreMaker: () => E.l,
-  encodeProperties: () => g.Z,
+  encodeProperties: () => m.Z,
   extendSuperProperties: () => K,
   getCampaignParams: () => w,
   getDevice: () => k,
@@ -31,11 +31,11 @@ var o, a = n(348327),
   d = n.n(u);
 n(804098);
 var f = n(903772),
-  p = n(627420),
-  _ = n(433517),
+  _ = n(627420),
+  p = n(433517),
   h = n(298444),
-  m = n(979675),
-  g = n(947486),
+  g = n(979675),
+  m = n(947486),
   E = n(699407),
   v = n(20281),
   b = n(525769);
@@ -91,7 +91,7 @@ if (null != R) {
     a = R.os.arch,
     s = R.os.appArch,
     l = R.remoteApp.getReleaseChannel(),
-    c = (0, p.qf)();
+    c = (0, _.qf)();
   switch (n) {
     case "win32":
       e = "Windows";
@@ -210,7 +210,7 @@ function U() {
 function G() {
   let e = {},
     t = j();
-  return e.os = t, e.browser = M(), e.device = k(), e.system_locale = (0, p.qf)(), e.has_client_mods = (0, f.e)(), e
+  return e.os = t, e.browser = M(), e.device = k(), e.system_locale = (0, _.qf)(), e.has_client_mods = (0, f.e)(), e
 }
 
 function B() {
@@ -234,10 +234,10 @@ function V(e, t) {
 }
 
 function Z() {
-  let e = _.K.get(T);
-  null == e && (e = G(), _.K.set(T, e));
-  let t = _.K.get(N);
-  null == t && (t = F(), _.K.set(N, t));
+  let e = p.K.get(T);
+  null == e && (e = G(), p.K.set(T, e));
+  let t = p.K.get(N);
+  null == t && (t = F(), p.K.set(N, t));
   let n = h.x.get(N);
   return null == n && (n = V(F(), "_current"), h.x.set(N, n)), O({}, e, B(), t, n)
 }
@@ -254,7 +254,7 @@ function W() {
   let r = {},
     i = window.GLOBAL_ENV.RELEASE_CHANNEL;
   i && (null == r.release_channel || "" === r.release_channel) && (r.release_channel = i.split("-")[0]);
-  let o = parseInt((n = "371614", "371614"), 10);
+  let o = parseInt((n = "371637", "371637"), 10);
   isNaN(o) || (r.client_build_number = o);
   let a = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
   return isNaN(a) || (r.native_build_number = a), r.client_event_source = H(), r.has_client_mods = (0, f.e)(), r
@@ -270,7 +270,7 @@ if (null == r) try {
 }
 
 function K(e) {
-  r = O({}, r, e), i = (0, g.Z)(r)
+  r = O({}, r, e), i = (0, m.Z)(r)
 }
 K(W());
 let z = e => {
@@ -278,7 +278,7 @@ let z = e => {
     analyticEventConfigs: t,
     dispatcher: r,
     TRACK_ACTION_NAME: i
-  } = e, o = (0, m.$)(r, i);
+  } = e, o = (0, g.$)(r, i);
   return function(e, r) {
     let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
     if (null != n.g.isServerRendering && !0 === n.g.isServerRendering) return Promise.resolve();

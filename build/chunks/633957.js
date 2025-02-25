@@ -28,8 +28,8 @@ var r = n(200651),
   C = n(592125),
   I = n(158776),
   S = n(594174),
-  P = n(626135),
-  T = n(768581),
+  T = n(626135),
+  P = n(768581),
   A = n(70956),
   w = n(823379),
   Z = n(506071),
@@ -86,7 +86,7 @@ let F = i.memo(function(e) {
     currentEmbeddedActivity: z,
     channel: B
   }), en = i.useId(), er = null != K && K.isLaunching && K.componentId === en, ei = async () => {
-    P.default.track(R.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+    T.default.track(R.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
       application_id: E.id,
       channel_id: A,
       channel_type: null == B ? void 0 : B.type,
@@ -115,7 +115,7 @@ let F = i.memo(function(e) {
   });
   if (eo) {
     let e;
-    let t = T.ZP.getApplicationIconURL({
+    let t = P.ZP.getApplicationIconURL({
       id: E.id,
       icon: E.icon,
       bot: E.bot
@@ -185,7 +185,7 @@ let F = i.memo(function(e) {
       }, {
         label: "View",
         onClick() {
-          P.default.track(R.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+          T.default.track(R.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
             application_id: E.id,
             channel_id: A,
             channel_type: null == B ? void 0 : B.type,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  v: () => _
+  v: () => p
 });
 var r = n(200651);
 n(192379);
@@ -51,7 +51,7 @@ function d(e, t) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,7 +59,7 @@ function f(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -67,15 +67,15 @@ function p(e, t) {
   return i
 }
 
-function _(e) {
+function p(e) {
   var {
     as: t,
     muted: n = !1,
     selected: i = !1,
     className: l
   } = e, u = f(e, ["as", "muted", "selected", "className"]);
-  let p = null != t ? t : a.P;
-  return (0, r.jsx)(p, d(c({}, u), {
+  let _ = null != t ? t : a.P;
+  return (0, r.jsx)(_, d(c({}, u), {
     className: o()(s.interactive, l, {
       [s.muted]: n,
       [s.selected]: i

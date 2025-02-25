@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -13,16 +13,16 @@ var r = n(200651),
   u = n(652853),
   d = n(228168),
   f = n(292481);
-let p = Object.assign(i.forwardRef(function(e, t) {
+let _ = Object.assign(i.forwardRef(function(e, t) {
   let {
     user: n,
     displayProfile: i,
     profileType: o,
-    className: p,
-    pendingThemeColors: _,
+    className: _,
+    pendingThemeColors: p,
     themeOverride: h,
-    children: m,
-    forceShowPremium: g = !1
+    children: g,
+    forceShowPremium: m = !1
   } = e, {
     theme: E,
     primaryColor: v,
@@ -30,8 +30,8 @@ let p = Object.assign(i.forwardRef(function(e, t) {
   } = (0, l.Z)({
     user: n,
     displayProfile: i,
-    pendingThemeColors: _,
-    isPreview: g
+    pendingThemeColors: p,
+    isPreview: m
   }), {
     profileThemeStyle: y,
     profileThemeClassName: O
@@ -45,7 +45,7 @@ let p = Object.assign(i.forwardRef(function(e, t) {
     [f.panel]: o === d.y0.PANEL
   };
   return (0, r.jsx)("div", {
-    className: a()(f.outer, O, S, p),
+    className: a()(f.outer, O, S, _),
     style: y,
     ref: t,
     children: (0, r.jsx)("div", {
@@ -57,7 +57,7 @@ let p = Object.assign(i.forwardRef(function(e, t) {
           theme: null != h ? h : E,
           primaryColor: v,
           secondaryColor: b,
-          children: m
+          children: g
         })
       })
     })

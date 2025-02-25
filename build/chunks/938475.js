@@ -14,11 +14,11 @@ var r, i = n(392711),
   u = n(314897),
   d = n(592125),
   f = n(271383),
-  p = n(594174),
-  _ = n(979651),
+  _ = n(594174),
+  p = n(979651),
   h = n(709054),
-  m = n(51144),
-  g = n(981631);
+  g = n(51144),
+  m = n(981631);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,7 +72,7 @@ function T(e, t) {
 
 function N(e, t, n) {
   var r;
-  let i = null !== (r = null == t ? void 0 : t.nick) && void 0 !== r ? r : m.ZP.getName(n);
+  let i = null !== (r = null == t ? void 0 : t.nick) && void 0 !== r ? r : g.ZP.getName(n);
   return {
     member: t,
     comparator: A(e, i)
@@ -88,7 +88,7 @@ function C(e, t, n) {
 }
 
 function R(e, t, n) {
-  let r = p.default.getUser(n),
+  let r = _.default.getUser(n),
     i = null == r;
   null == r && (r = new c.Z({
     id: n,
@@ -110,15 +110,15 @@ function R(e, t, n) {
 class P {
   updateVoiceState(e) {
     if (null != this._pending) return this._pending.add(e), !1;
-    let t = _.Z.getVoiceState(this.guildId, e),
+    let t = p.Z.getVoiceState(this.guildId, e),
       n = this._voiceStates.get(e),
-      r = p.default.getUser(e);
+      r = _.default.getUser(e);
     if (null != t && null != r) {
       if (null == n) return this._voiceStates.set(e, R(t, this.guildId, e)), !0;
       if (n.voiceState !== t) {
         var i;
         let o = T(this.guildId, r),
-          a = null !== (i = null == o ? void 0 : o.nick) && void 0 !== i ? i : m.ZP.getName(r);
+          a = null !== (i = null == o ? void 0 : o.nick) && void 0 !== i ? i : g.ZP.getName(r);
         return this._voiceStates.set(e, y(v({}, n), {
           member: o,
           comparator: A(t, a),
@@ -132,7 +132,7 @@ class P {
   updateMember(e) {
     if (null != this._pending) return this._pending.add(e), !1;
     let t = this._voiceStates.get(e),
-      n = p.default.getUser(e);
+      n = _.default.getUser(e);
     if (null != t && null != n) {
       var r, i;
       let o = T(this.guildId, n);
@@ -151,7 +151,7 @@ class P {
   }
   updateUsers() {
     return null == this._pending && this._voiceStates.values().reduce((e, t) => {
-      let n = p.default.getUser(t.user.id);
+      let n = _.default.getUser(t.user.id);
       return null != n && t.user !== n ? (this._voiceStates.set(n.id, R(t.voiceState, this.guildId, n.id)), !0) : e
     }, !1)
   }
@@ -212,7 +212,7 @@ function L(e) {
       guildId: n,
       userId: r
     } = t;
-    return I(null != n ? n : g.ME).updateVoiceState(r) || e
+    return I(null != n ? n : m.ME).updateVoiceState(r) || e
   }, !1)
 }
 
@@ -231,7 +231,7 @@ function M(e) {
   let {
     guildId: t
   } = e, n = u.default.getId();
-  return null != n && I(null != t ? t : g.ME).updateVoiceState(n)
+  return null != n && I(null != t ? t : m.ME).updateVoiceState(n)
 }
 
 function j() {
@@ -262,19 +262,19 @@ function G(e) {
 
 function B() {
   S = {};
-  let e = _.Z.getAllVoiceStates();
+  let e = p.Z.getAllVoiceStates();
   h.default.keys(e).forEach(t => {
     Object.keys(e[t]).forEach(e => {
-      I(null != t ? t : g.ME).updateVoiceState(e)
+      I(null != t ? t : m.ME).updateVoiceState(e)
     })
   })
 }
 class F extends(r = a.ZP.Store) {
   initialize() {
-    B(), this.waitFor(u.default, p.default, f.ZP, _.Z), this.syncWith([p.default], j)
+    B(), this.waitFor(u.default, _.default, f.ZP, p.Z), this.syncWith([_.default], j)
   }
   getVoiceStates(e) {
-    return I(null != e ? e : g.ME).getVoiceStates()
+    return I(null != e ? e : m.ME).getVoiceStates()
   }
   getAllVoiceStates() {
     return S
@@ -282,19 +282,19 @@ class F extends(r = a.ZP.Store) {
   getVoiceStatesForChannel(e) {
     let t = e.getGuildId(),
       n = e.id;
-    return I(null != t ? t : g.ME).getVoiceStatesForChannel(n)
+    return I(null != t ? t : m.ME).getVoiceStatesForChannel(n)
   }
   getVoiceStatesForChannelAlt(e, t) {
-    return I(null != t ? t : g.ME).getVoiceStatesForChannel(e)
+    return I(null != t ? t : m.ME).getVoiceStatesForChannel(e)
   }
   countVoiceStatesForChannel(e) {
     let t = d.Z.getChannel(e);
     if (null == t) return 0;
     let n = t.getGuildId();
-    return I(null != n ? n : g.ME).countVoiceStatesForChannel(e)
+    return I(null != n ? n : m.ME).countVoiceStatesForChannel(e)
   }
   getVoiceStateVersion(e) {
-    return I(null != e ? e : g.ME).getVersion()
+    return I(null != e ? e : m.ME).getVersion()
   }
 }
 E(F, "displayName", "SortedVoiceStateStore");

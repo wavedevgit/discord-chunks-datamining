@@ -19,7 +19,7 @@ function f(e) {
     className: n,
     collapsibleContent: o,
     isExpanded: f
-  } = e, [p, _] = i.useState(!1), [h, m] = i.useState(!0), [g, E] = i.useState(!1), v = null != f ? f : p, {
+  } = e, [_, p] = i.useState(!1), [h, g] = i.useState(!0), [m, E] = i.useState(!1), v = null != f ? f : _, {
     ref: b,
     height: y = 0
   } = (0, c.Z)(), {
@@ -30,11 +30,11 @@ function f(e) {
     config: s.config.stiff,
     onRest: () => E(!0)
   }, h ? "animate-never" : "respect-motion-settings"), T = i.useCallback(() => {
-    _(!p)
-  }, [p, _]);
+    p(!_)
+  }, [_, p]);
   return i.useLayoutEffect(() => {
     let e = setTimeout(() => {
-      m(!1)
+      g(!1)
     }, d);
     return () => clearTimeout(e)
   }, []), (0, r.jsx)("div", {
@@ -43,7 +43,7 @@ function f(e) {
     }, n),
     children: (0, r.jsxs)(s.animated.div, {
       className: a()(u.contentExpandContainer, {
-        [u.showOverflow]: v && g
+        [u.showOverflow]: v && m
       }),
       style: I,
       children: [(0, r.jsx)("div", {

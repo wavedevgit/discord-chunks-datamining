@@ -36,7 +36,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,15 +47,15 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -63,7 +63,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -71,7 +71,7 @@ function m(e, t) {
   return i
 }
 
-function g(e) {
+function m(e) {
   let {
     roleStyle: t,
     name: n,
@@ -102,25 +102,25 @@ function E(e) {
     roleName: i,
     dotAlignment: o,
     className: c
-  } = e, u = h(e, ["name", "color", "roleName", "dotAlignment", "className"]), d = (0, a.e7)([l.Z], () => l.Z.roleStyle), p = "username" === d, m = (0, r.jsx)(g, {
+  } = e, u = h(e, ["name", "color", "roleName", "dotAlignment", "className"]), d = (0, a.e7)([l.Z], () => l.Z.roleStyle), _ = "username" === d, g = (0, r.jsx)(m, {
     roleStyle: d,
     name: t,
     color: n,
     roleName: i,
     dotAlignment: o,
     className: c
-  }), E = p ? {
+  }), E = _ ? {
     color: n
   } : void 0;
-  return (0, r.jsx)(s.Anchor, _(f({}, u), {
-    children: m,
+  return (0, r.jsx)(s.Anchor, p(f({}, u), {
+    children: g,
     style: E
   }))
 }
 
 function v(e) {
   let t = (0, a.e7)([l.Z], () => l.Z.roleStyle);
-  return (0, r.jsx)(g, _(f({}, e), {
+  return (0, r.jsx)(m, p(f({}, e), {
     roleStyle: t
   }))
 }

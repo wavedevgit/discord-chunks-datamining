@@ -18,20 +18,20 @@ let c = i.memo(function(e) {
     className: u,
     selected: d,
     onMouseEnter: f,
-    onMouseLeave: p,
-    onClick: _
+    onMouseLeave: _,
+    onClick: p
   } = e, h = i.useMemo(() => {
-    if (null != _) return () => _(t)
-  }, [_, t]);
+    if (null != p) return () => p(t)
+  }, [p, t]);
   return (0, r.jsxs)(s.P3F, {
-    tabIndex: null == _ ? -1 : 0,
+    tabIndex: null == p ? -1 : 0,
     className: a()(l.trait, {
       [l.selectable]: null != h && !d,
       [l.selected]: d,
       [l.clickable]: null != h
     }, u),
     onMouseEnter: f,
-    onMouseLeave: p,
+    onMouseLeave: _,
     onClick: h,
     children: [null != c && (0, r.jsx)(c, {
       size: "xs",

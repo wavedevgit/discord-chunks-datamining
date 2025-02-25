@@ -3,7 +3,7 @@
 n.d(t, {
   Iu: () => u,
   OS: () => d,
-  g6: () => p,
+  g6: () => _,
   v3: () => f
 });
 var r = n(15729),
@@ -69,7 +69,7 @@ function f() {
   })
 }
 
-function p(e) {
+function _(e) {
   c.setState(t => ({
     channelDismissTimestamps: l(a({}, t.channelDismissTimestamps), {
       [e]: Date.now()

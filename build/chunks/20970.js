@@ -49,11 +49,11 @@ let {
   url: u,
   link: d,
   strong: f,
-  u: p,
-  br: _,
+  u: _,
+  br: p,
   em: h,
-  image: m,
-  text: g
+  image: g,
+  text: m
 } = r.defaultRules, E = {
   newline: l,
   paragraph: c,
@@ -65,12 +65,12 @@ let {
     }
   }),
   strong: f,
-  u: p,
-  br: _,
+  u: _,
+  br: p,
   em: h,
-  image: m,
+  image: g,
   hook: {
-    order: g.order,
+    order: m.order,
     match: (0, r.inlineRegex)(/^\$\[(.*?)\]\((\w+)\)/),
     parse(e, t, n) {
       let {
@@ -84,7 +84,7 @@ let {
     react: (e, t, n) => e.render(t(e.content, n), n.key)
   },
   noparse: {
-    order: g.order,
+    order: m.order,
     match: (0, r.inlineRegex)(/^!!(\d+?)!!/),
     parse(e, t, n) {
       let {
@@ -97,5 +97,5 @@ let {
     },
     react: e => e.content
   },
-  text: g
+  text: m
 }

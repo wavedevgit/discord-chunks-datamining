@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  z: () => g
+  z: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,15 +45,15 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,7 +61,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -69,10 +69,10 @@ function m(e, t) {
   return i
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   let o = (0, c.G6)(e),
     d = new Map,
-    p = new n(e => {
+    _ = new n(e => {
       e.forEach(e => {
         var t;
         let {
@@ -81,8 +81,8 @@ function g(e, t, n) {
         null === (t = d.get(n)) || void 0 === t || t(e)
       })
     });
-  return (0, i.forwardRef)(function(n, m) {
-    var g, {
+  return (0, i.forwardRef)(function(n, g) {
+    var m, {
         onScroll: E,
         dir: v = "ltr",
         sections: b,
@@ -164,9 +164,9 @@ function g(e, t, n) {
       ref: K,
       key: "container",
       onUpdate: es,
-      resizeObserver: p,
+      resizeObserver: _,
       listenerMap: d
-    }), (0, i.useImperativeHandle)(m, () => f({
+    }), (0, i.useImperativeHandle)(g, () => f({
       getScrollerNode: () => K.current,
       getItemGrid: eo,
       getCoordsMap: ea,
@@ -179,7 +179,7 @@ function g(e, t, n) {
     }, [E, er]);
     return i.useLayoutEffect(() => {
       2 !== z.current.dirty && (z.current.dirty = 2)
-    }, [ee, z]), (0, r.jsxs)("div", _(f({
+    }, [ee, z]), (0, r.jsxs)("div", p(f({
       ref: K,
       onScroll: el,
       className: a()(j, {
@@ -189,7 +189,7 @@ function g(e, t, n) {
       }),
       style: (0, c.uT)(k)
     }, F), {
-      children: [null !== (g = null == G ? void 0 : G(ee)) && void 0 !== g ? g : null, (0, i.useMemo)(() => (0, r.jsx)(l.J, {
+      children: [null !== (m = null == G ? void 0 : G(ee)) && void 0 !== m ? m : null, (0, i.useMemo)(() => (0, r.jsx)(l.J, {
         containerRef: Z,
         children: (0, r.jsx)("div", {
           style: {
@@ -204,7 +204,7 @@ function g(e, t, n) {
               o = $[e],
               a = X[(0, c.DP)(n)],
               s = null == C ? void 0 : C(n);
-            return null != i && null != o ? (0, r.jsxs)("div", _(f({}, s), {
+            return null != i && null != o ? (0, r.jsxs)("div", p(f({}, s), {
               style: f({}, i, null !== (t = null == s ? void 0 : s.style) && void 0 !== t ? t : {}),
               children: [null != N && null != a && N(n, a, e), o.map(e => {
                 let [t, n, r] = e, i = X[t];

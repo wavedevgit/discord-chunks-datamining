@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(979590),
   i = n.n(r),
@@ -42,7 +42,7 @@ let u = 50,
       b: l
     })
   },
-  p = (e, t) => 0 === t.length ? void 0 : 1 === t.length ? {
+  _ = (e, t) => 0 === t.length ? void 0 : 1 === t.length ? {
     primary: t[0],
     secondary: t[0],
     border: t[0].setAlpha(d),
@@ -53,7 +53,7 @@ let u = 50,
     border: f(t[0], t[1]).setAlpha(d),
     label: f(t[0], t[1]).isLight() ? e.dark : e.light
   },
-  _ = (e, t) => 0 === t.length ? void 0 : 1 === t.length ? {
+  p = (e, t) => 0 === t.length ? void 0 : 1 === t.length ? {
     primary: t[0],
     secondary: t[0],
     text: t[0].isLight() ? e.dark : e.light
@@ -74,12 +74,12 @@ let u = 50,
       l: o
     })
   },
-  m = e => t => {
+  g = e => t => {
     let n = (0, o.e7)([a.Z], () => a.Z.saturation);
     if (null == t) return {};
     let r = {
-      backgroundColors: p(e, t.backgroundColors),
-      buttonColors: _(e, t.buttonColors),
+      backgroundColors: _(e, t.backgroundColors),
+      buttonColors: p(e, t.buttonColors),
       confettiColors: t.confettiColors
     };
     return 1 === n ? c({}, r) : {

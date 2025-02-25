@@ -12,11 +12,11 @@ var i, o = n(213919),
   u = n(570140),
   d = n(911969),
   f = n(109728),
-  p = n(254942),
-  _ = n(670890),
+  _ = n(254942),
+  p = n(670890),
   h = n(569611),
-  m = n(710845),
-  g = n(703656),
+  g = n(710845),
+  m = n(703656),
   E = n(786213),
   v = n(626135),
   b = n(449934),
@@ -34,7 +34,7 @@ function N(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let A = new m.Z("AuthenticationStore"),
+let A = new g.Z("AuthenticationStore"),
   C = "fingerprint",
   R = "user_id_cache",
   P = null,
@@ -70,7 +70,7 @@ function Q() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
   if (x = c.K.get(C), null != W) return W;
   let t = null != x ? x : o.getToken();
-  !(!(0, g.m1)() || !e && null != t || O.Z.isHandoffAvailable()) && X({
+  !(!(0, m.m1)() || !e && null != t || O.Z.isHandoffAvailable()) && X({
     withGuildExperiments: !0
   })
 }
@@ -86,7 +86,7 @@ function X(e) {
     },
     headers: n,
     context: {
-      location: (0, g.Wf)()
+      location: (0, m.Wf)()
     },
     retries: 3,
     oldFormErrors: !0,
@@ -154,7 +154,7 @@ function eo(e) {
   let {
     error: t
   } = e;
-  B = "", F = !1, V = null, k = null != (0, p.p)(t).date_of_birth ? I.u34.LOGIN_AGE_GATE : I.u34.NONE
+  B = "", F = !1, V = null, k = null != (0, _.p)(t).date_of_birth ? I.u34.LOGIN_AGE_GATE : I.u34.NONE
 }
 
 function ea() {
@@ -165,7 +165,7 @@ function es(e) {
   let {
     error: t
   } = e;
-  B = "", F = !1, V = null, K = !1, k = null != (0, p.F)(t).date_of_birth ? I.u34.LOGIN_AGE_GATE : I.u34.NONE
+  B = "", F = !1, V = null, K = !1, k = null != (0, _.F)(t).date_of_birth ? I.u34.LOGIN_AGE_GATE : I.u34.NONE
 }
 
 function el(e) {
@@ -195,11 +195,11 @@ function ef(e) {
   k = I.u34.PASSWORD_RECOVERY_PHONE_VERIFICATION, r = e.credentials
 }
 
-function ep(e) {
+function e_(e) {
   k = I.u34.PHONE_IP_AUTHORIZATION, r = e.credentials
 }
 
-function e_(e) {
+function ep(e) {
   let t = e.fingerprint;
   null == x ? null != t ? (v.default.track(I.rMx.USER_FINGERPRINT_CHANGED, {
     old_fingerprint: null != M ? (0, a.s)(M) : null,
@@ -217,7 +217,7 @@ function eh(e) {
   $(t), J()
 }
 
-function em(e) {
+function eg(e) {
   var t;
   let {
     user: n,
@@ -230,7 +230,7 @@ function em(e) {
   q("handleConnectionOpen called"), y.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.Z)(n)), D = r, w = i, L = s, j = o, P = n.id, void 0 !== a && (G = a.authenticator_types), c.K.set(R, n.id)
 }
 
-function eg(e) {
+function em(e) {
   var t;
   let {
     user: n,
@@ -254,7 +254,7 @@ function eE(e) {
     }
     v.default.track(I.rMx.APP_USER_DEAUTHENTICATED, {
       user_id: c.K.get(R)
-    }), eO(), setImmediate(() => (0, g.uL)(I.Z5c.DEFAULT_LOGGED_OUT))
+    }), eO(), setImmediate(() => (0, m.uL)(I.Z5c.DEFAULT_LOGGED_OUT))
   }
 }
 
@@ -275,7 +275,7 @@ function eb(e) {
 
 function ey() {
   U = !0, eO(), u.Z.wait(() => {
-    (0, g.uL)(I.Z5c.REGISTER)
+    (0, m.uL)(I.Z5c.REGISTER)
   })
 }
 
@@ -308,15 +308,15 @@ function eN(e) {
   let {
     suspendedUserToken: t
   } = e;
-  K = !1, Y = t, setImmediate(() => (0, g.uL)(I.Z5c.ACCOUNT_STANDING))
+  K = !1, Y = t, setImmediate(() => (0, m.uL)(I.Z5c.ACCOUNT_STANDING))
 }
 
 function eA() {
-  Y = null, k = I.u34.NONE, eO(), setImmediate(() => (0, g.uL)(I.Z5c.DEFAULT_LOGGED_OUT))
+  Y = null, k = I.u34.NONE, eO(), setImmediate(() => (0, m.uL)(I.Z5c.DEFAULT_LOGGED_OUT))
 }
 class eC extends(i = s.ZP.Store) {
   initialize() {
-    P = c.K.get(R), null == o.getToken() && Q(), this.addChangeListener(() => (0, _.u)(P))
+    P = c.K.get(R), null == o.getToken() && Q(), this.addChangeListener(() => (0, p.u)(P))
   }
   getLoginStatus() {
     return k
@@ -384,8 +384,8 @@ class eC extends(i = s.ZP.Store) {
 }
 N(eC, "displayName", "AuthenticationStore");
 let eR = new eC(u.Z, {
-  CONNECTION_OPEN: em,
-  OVERLAY_INITIALIZE: eg,
+  CONNECTION_OPEN: eg,
+  OVERLAY_INITIALIZE: em,
   CONNECTION_CLOSED: eE,
   AUTH_SESSION_CHANGE: eb,
   LOGIN: et,
@@ -396,12 +396,12 @@ let eR = new eC(u.Z, {
   LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION: eu,
   LOGIN_ACCOUNT_DISABLED: ed,
   LOGIN_PASSWORD_RECOVERY_PHONE_VERIFICATION: ef,
-  LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED: ep,
+  LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED: e_,
   LOGIN_RESET: en,
   LOGIN_STATUS_RESET: er,
   LOGIN_SUSPENDED_USER: eN,
   LOGOUT: eO,
-  FINGERPRINT: e_,
+  FINGERPRINT: ep,
   REGISTER_SUCCESS: eh,
   FORGOT_PASSWORD_REQUEST: eS,
   FORGOT_PASSWORD_SENT: eI,

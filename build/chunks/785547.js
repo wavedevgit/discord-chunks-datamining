@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function P(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var T = ((i = T || {}).PLAY = "play", i.NOW_PLAYING = "now_playing", i.INSTALL = "install", i.UPDATE = "update", i.PAUSED = "paused", i.LOCATE = "locate", i.UNINSTALLING = "uninstalling", i.QUEUED = "queued", i.DOWNLOADING = "downloading", i.UNSUPPORTED_OS = "unsupported_os", i.ADD_TO_LIBRARY = "add_to_library", i.PREORDER_WAIT = "preorder_wait", i);
+var P = ((i = P || {}).PLAY = "play", i.NOW_PLAYING = "now_playing", i.INSTALL = "install", i.UPDATE = "update", i.PAUSED = "paused", i.LOCATE = "locate", i.UNINSTALLING = "uninstalling", i.QUEUED = "queued", i.DOWNLOADING = "downloading", i.UNSUPPORTED_OS = "unsupported_os", i.ADD_TO_LIBRARY = "add_to_library", i.PREORDER_WAIT = "preorder_wait", i);
 let A = Object.freeze({
     [j.apO.PLAY]: "play",
     [j.apO.INSTALL]: "install",
@@ -71,7 +71,7 @@ let A = Object.freeze({
   w = () => [N.NW.string(N.t.r9wmKi), N.NW.string(N.t["6CpimZ"]), N.NW.string(N.t.ysbNDQ), N.NW.string(N.t.TLnXx8), N.NW.string(N.t.Qi8mnZ), N.NW.string(N.t.yvMu3d), N.NW.string(N.t.PnNUZ2), N.NW.string(N.t.hU2TEB), N.NW.string(N.t.YyY519), N.NW.string(N.t.PbHJb2)];
 class Z extends(r = o.Component) {
   get analyticsLocation() {
-    return P(S({}, this.props.analyticsContext.location), {
+    return T(S({}, this.props.analyticsContext.location), {
       object: j.qAy.BUTTON_CTA
     })
   }
@@ -257,7 +257,7 @@ function k(e) {
   let {
     libraryApplication: t
   } = e, n = (0, u.O)(), [r, i] = (0, l.Wu)([_.Z, b.Z], () => [(0, h.i)(t, _.Z, b.Z), _.Z.getState(t.id, t.branchId)], [t]), o = (0, l.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), s = (0, l.e7)([f.Z], () => f.Z.hasNoBuild(t.id, t.branchId), [t]);
-  return (0, a.jsx)(Z, P(S({}, e), {
+  return (0, a.jsx)(Z, T(S({}, e), {
     analyticsContext: n,
     actionState: r,
     dispatchState: i,
@@ -271,4 +271,4 @@ I(Z, "defaultProps", {
   hideProgress: !1,
   isPlayShiny: !1,
   tooltipPosition: "top"
-}), I(Z, "ButtonStates", T)
+}), I(Z, "ButtonStates", P)

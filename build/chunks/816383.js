@@ -34,21 +34,21 @@ var s = function() {
     c.sort(function(e, n) {
       return t[e] < t[n] ? -1 : 1
     });
-    for (var d = [], f = [], p = [], _ = 0; _ < l - 1; _++) i = t[_ + 1] - t[_], o = n[_ + 1] - n[_], f.push(i), d.push(o), p.push(o / i);
-    for (var h = [p[0]], m = 0; m < f.length - 1; m++) {
-      var g = p[m],
-        E = p[m + 1];
-      if (g * E <= 0) h.push(0);
+    for (var d = [], f = [], _ = [], p = 0; p < l - 1; p++) i = t[p + 1] - t[p], o = n[p + 1] - n[p], f.push(i), d.push(o), _.push(o / i);
+    for (var h = [_[0]], g = 0; g < f.length - 1; g++) {
+      var m = _[g],
+        E = _[g + 1];
+      if (m * E <= 0) h.push(0);
       else {
-        i = f[m];
-        var v = f[m + 1],
+        i = f[g];
+        var v = f[g + 1],
           b = i + v;
-        h.push(3 * b / ((b + v) / g + (b + i) / E))
+        h.push(3 * b / ((b + v) / m + (b + i) / E))
       }
     }
-    h.push(p[p.length - 1]);
+    h.push(_[_.length - 1]);
     for (var y = [], O = [], S = 0; S < h.length - 1; S++) {
-      s = p[S];
+      s = _[S];
       var I = h[S],
         T = 1 / f[S],
         N = I + h[S + 1] - s - s;

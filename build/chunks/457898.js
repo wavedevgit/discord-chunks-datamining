@@ -71,13 +71,13 @@ function t(e) {
       }],
       contains: [d]
     }),
-    p = {
+    _ = {
       className: "built_in",
       variants: [{
         begin: "(".concat(n, ")+(-)[\\w\\d]+")
       }]
     },
-    _ = {
+    p = {
       className: "class",
       beginKeywords: "class enum",
       end: /\s*[{]/,
@@ -108,7 +108,7 @@ function t(e) {
         contains: [s]
       }]
     },
-    m = {
+    g = {
       begin: /using\s/,
       end: /$/,
       returnBegin: !0,
@@ -117,7 +117,7 @@ function t(e) {
         begin: /(using|assembly|command|module|namespace|type)/
       }]
     },
-    g = {
+    m = {
       variants: [{
         className: "operator",
         begin: "(".concat(r, ")\\b")
@@ -147,7 +147,7 @@ function t(e) {
         endsParent: !0
       })]
     },
-    b = [v, f, a, e.NUMBER_MODE, c, u, p, s, l, E],
+    b = [v, f, a, e.NUMBER_MODE, c, u, _, s, l, E],
     y = {
       begin: /\[/,
       end: /\]/,
@@ -169,7 +169,7 @@ function t(e) {
     aliases: ["pwsh", "ps", "ps1"],
     case_insensitive: !0,
     keywords: i,
-    contains: b.concat(_, h, m, g, y)
+    contains: b.concat(p, h, g, m, y)
   }
 }
 e.exports = t

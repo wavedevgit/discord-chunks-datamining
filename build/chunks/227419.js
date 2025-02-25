@@ -14,12 +14,12 @@ var i = n(392711),
   u = n(933557),
   d = n(699516),
   f = n(594174),
-  p = n(895924),
-  _ = n(689079),
+  _ = n(895924),
+  p = n(689079),
   h = n(981631),
-  m = n(388032);
+  g = n(388032);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -35,7 +35,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -62,7 +62,7 @@ function y(e) {
   switch (e) {
     case h.nkL.GIF.title:
     case h.nkL.TENOR.title:
-      return m.NW.string(m.t["0vrCgI"]);
+      return g.NW.string(g.t["0vrCgI"]);
     default:
       return ""
   }
@@ -72,8 +72,8 @@ let O = [...o()(h.nkL).values().map(e => ({
   untranslatedName: e.command,
   displayName: e.command,
   type: c.yU.CHAT,
-  inputType: p.iw.BUILT_IN_INTEGRATION,
-  applicationId: _.bi.BUILT_IN,
+  inputType: _.iw.BUILT_IN_INTEGRATION,
+  applicationId: p.bi.BUILT_IN,
   get untranslatedDescription() {
     return y(e.title)
   },
@@ -85,10 +85,10 @@ let O = [...o()(h.nkL).values().map(e => ({
     displayName: "query",
     type: c.jw.STRING,
     get description() {
-      return m.NW.string(m.t["+9g3Dg"])
+      return g.NW.string(g.t["+9g3Dg"])
     },
     get displayDescription() {
-      return m.NW.string(m.t["+9g3Dg"])
+      return g.NW.string(g.t["+9g3Dg"])
     },
     required: !0
   }] : [],
@@ -99,23 +99,23 @@ let O = [...o()(h.nkL).values().map(e => ({
   untranslatedName: "leave",
   displayName: "leave",
   type: c.yU.CHAT,
-  inputType: p.iw.BUILT_IN,
-  applicationId: _.bi.BUILT_IN,
+  inputType: _.iw.BUILT_IN,
+  applicationId: p.bi.BUILT_IN,
   get untranslatedDescription() {
-    return m.NW.string(m.t["26C4oq"])
+    return g.NW.string(g.t["26C4oq"])
   },
   get displayDescription() {
-    return m.NW.string(m.t["26C4oq"])
+    return g.NW.string(g.t["26C4oq"])
   },
   options: [{
     name: "silent",
     displayName: "silent",
     type: c.jw.BOOLEAN,
     get description() {
-      return m.NW.string(m.t.YH7PkJ)
+      return g.NW.string(g.t.YH7PkJ)
     },
     get displayDescription() {
-      return m.NW.string(m.t.bq3JXl)
+      return g.NW.string(g.t.bq3JXl)
     },
     required: !1
   }],
@@ -132,33 +132,33 @@ let O = [...o()(h.nkL).values().map(e => ({
     } = t;
     if (null == o) return;
     let c = (0, u.F6)(o, f.default, d.Z),
-      p = m.NW.formatToPlainString(m.t.hJ5Ap6, {
+      _ = g.NW.formatToPlainString(g.t.hJ5Ap6, {
         name: c
       }),
-      _ = m.NW.format(m.t.SSIVOj, {
+      p = g.NW.format(g.t.SSIVOj, {
         name: c
       }),
       h = null !== (i = null === (n = e.find(e => "silent" === e.name)) || void 0 === n ? void 0 : n.value) && void 0 !== i && i;
-    async function g() {
+    async function m() {
       if (null != o) try {
         await s.Z.closePrivateChannel(o.id, void 0, h)
       } catch (e) {
-        l.Z.sendBotMessage(o.id, m.NW.string(m.t.YOsuT0))
+        l.Z.sendBotMessage(o.id, g.NW.string(g.t.YOsuT0))
       }
     }
-    o.isManaged() && (p = m.NW.formatToPlainString(m.t.hVGjER, {
+    o.isManaged() && (_ = g.NW.formatToPlainString(g.t.hVGjER, {
       name: c
-    }), _ = m.NW.format(m.t.IK1Qvr, {
+    }), p = g.NW.format(g.t.IK1Qvr, {
       name: c
     })), (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, b(E({
-      header: p,
-      confirmText: m.NW.string(m.t["26C4oq"]),
-      cancelText: m.NW.string(m.t["ETE/oK"]),
-      onConfirm: g
+      header: _,
+      confirmText: g.NW.string(g.t["26C4oq"]),
+      cancelText: g.NW.string(g.t["ETE/oK"]),
+      onConfirm: m
     }, e), {
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
-        children: _
+        children: p
       })
     })))
   }
@@ -167,23 +167,23 @@ let O = [...o()(h.nkL).values().map(e => ({
   untranslatedName: "sticker",
   displayName: "sticker",
   type: c.yU.CHAT,
-  inputType: p.iw.BUILT_IN_INTEGRATION,
-  applicationId: _.bi.BUILT_IN,
+  inputType: _.iw.BUILT_IN_INTEGRATION,
+  applicationId: p.bi.BUILT_IN,
   get untranslatedDescription() {
-    return m.NW.string(m.t.GUH9IC)
+    return g.NW.string(g.t.GUH9IC)
   },
   get displayDescription() {
-    return m.NW.string(m.t.GUH9IC)
+    return g.NW.string(g.t.GUH9IC)
   },
   options: [{
     name: "query",
     displayName: "query",
     type: c.jw.STRING,
     get description() {
-      return m.NW.string(m.t.hIbHm5)
+      return g.NW.string(g.t.hIbHm5)
     },
     get displayDescription() {
-      return m.NW.string(m.t.hIbHm5)
+      return g.NW.string(g.t.hIbHm5)
     },
     required: !0
   }],

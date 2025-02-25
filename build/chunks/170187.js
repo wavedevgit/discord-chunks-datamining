@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -45,13 +45,13 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -69,13 +69,13 @@ function h(e, t) {
   return i
 }
 
-function m(e) {
+function g(e) {
   var {
     children: t,
     className: n,
     variant: i = "text-xs/medium"
-  } = e, u = _(e, ["children", "className", "variant"]);
-  return (0, r.jsx)(a.xv, p(d({
+  } = e, u = p(e, ["children", "className", "variant"]);
+  return (0, r.jsx)(a.xv, _(d({
     variant: i,
     color: "none",
     className: o()(c.text, n)

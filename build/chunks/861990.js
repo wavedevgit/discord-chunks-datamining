@@ -121,10 +121,10 @@ function f(e) {
       overrideFilename: d,
       overrideType: f
     } = e,
-    p = c.split("/"),
-    _ = p[p.length - 1];
-  _ = null !== (r = null === (n = _.split("?")) || void 0 === n ? void 0 : null === (t = n[0]) || void 0 === t ? void 0 : t.toLowerCase()) && void 0 !== r ? r : "";
-  let h = o.find(e => e.reName.test(_));
+    _ = c.split("/"),
+    p = _[_.length - 1];
+  p = null !== (r = null === (n = p.split("?")) || void 0 === n ? void 0 : null === (t = n[0]) || void 0 === t ? void 0 : t.toLowerCase()) && void 0 !== r ? r : "";
+  let h = o.find(e => e.reName.test(p));
   if (null == h && null != d && (h = o.find(e => e.reName.test(d))), null != h && null != d) {
     let e = h.name(u).split(".").pop(),
       t = d.lastIndexOf(".");

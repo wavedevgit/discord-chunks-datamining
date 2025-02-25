@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,15 +45,15 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,16 +61,16 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var g = function(e) {
+var m = function(e) {
   return e.NONE = "1", e.TRANSLATE = "2", e.SCALE = "3", e.FADE = "4", e
-}(g || {});
+}(m || {});
 let E = Object.freeze({
   2: c.l.Types.TRANSLATE,
   3: c.l.Types.SCALE,
@@ -105,11 +105,11 @@ class b extends(r = o.Component) {
       nudgeAlignIntoViewport: u,
       useRawTargetDimensions: d,
       spacing: f,
-      onShiftClick: p,
-      positionKey: _,
+      onShiftClick: _,
+      positionKey: p,
       overridePositionRef: h,
-      preload: m,
-      disablePointerEvents: g,
+      preload: g,
+      disablePointerEvents: m,
       ignoreModalClicks: E,
       closeOnScroll: b,
       useMouseEnter: y,
@@ -120,7 +120,7 @@ class b extends(r = o.Component) {
     return (0, i.jsx)(l.H, {
       ref: this.ref,
       overridePositionRef: h,
-      preload: m,
+      preload: g,
       position: n,
       align: null != a ? a : v(n),
       autoInvert: s,
@@ -132,9 +132,9 @@ class b extends(r = o.Component) {
       shouldShow: null != O && t,
       onRequestOpen: r,
       onRequestClose: o,
-      onShiftClick: p,
-      positionKey: _,
-      disablePointerEvents: g,
+      onShiftClick: _,
+      positionKey: p,
+      disablePointerEvents: m,
       ignoreModalClicks: E,
       closeOnScroll: b,
       useMouseEnter: y,
@@ -175,7 +175,7 @@ function y(e) {
     [l, c] = o.useState(0);
 
   function d() {
-    return m(), (0, i.jsx)(i.Fragment, {})
+    return g(), (0, i.jsx)(i.Fragment, {})
   }
   o.useLayoutEffect(() => {
     if (l > 0) {
@@ -186,19 +186,19 @@ function y(e) {
     let e = setTimeout(t, 20 + 20 * Math.random());
     return () => clearTimeout(e)
   });
-  let p = o.useRef(!1);
-  async function m() {
-    if (!p.current) {
-      p.current = !0;
+  let _ = o.useRef(!1);
+  async function g() {
+    if (!_.current) {
+      _.current = !0;
       let e = setTimeout(() => {
-          v(() => g), c(e => e + 1)
+          v(() => m), c(e => e + 1)
         }, 300),
         n = await t();
       v(() => n), c(e => e + 1), clearTimeout(e)
     }
   }
 
-  function g() {
+  function m() {
     var e, t, n, o;
     let s = null === (o = r.current) || void 0 === o ? void 0 : null === (n = o.ref) || void 0 === n ? void 0 : null === (t = n.current) || void 0 === t ? void 0 : null === (e = t.domElementRef) || void 0 === e ? void 0 : e.current,
       l = Math.max(100, null == s ? 100 : s.offsetWidth - 20);
@@ -214,20 +214,20 @@ function y(e) {
   return o.useEffect(() => {
     y.current = d
   }), o.useEffect(() => {
-    p.current ? t().then(e => {
+    _.current ? t().then(e => {
       v(() => e), c(e => e + 1)
     }) : v(y.current)
-  }, [t]), (0, i.jsx)(b, _(f({
+  }, [t]), (0, i.jsx)(b, p(f({
     ref: r
   }, n), {
     renderPopout: E
   }))
 }
-d(b, "Animation", g), d(b, "defaultProps", {
+d(b, "Animation", m), d(b, "defaultProps", {
   position: "right",
   autoInvert: !0,
   nudgeAlignIntoViewport: !0,
   spacing: 8,
   animation: "2",
   positionKey: void 0
-}), y.Animation = g
+}), y.Animation = m

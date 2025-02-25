@@ -17,27 +17,27 @@ var r = n(512722),
   u = n(981631);
 let d = "mp",
   f = 36e5,
-  p = "https://i.scdn.co/image/",
-  _ = (e, t, n) => "https://static-cdn.jtvnw.net/previews-ttv/live_user_".concat(e, "-").concat(t, "x").concat(n, ".jpg"),
+  _ = "https://i.scdn.co/image/",
+  p = (e, t, n) => "https://static-cdn.jtvnw.net/previews-ttv/live_user_".concat(e, "-").concat(t, "x").concat(n, ".jpg"),
   h = /https:\/\/static-cdn\.jtvnw\.net\/previews-ttv\/live_user_(.+)-\{width\}x\{height\}.jpg/,
-  m = e => "https://i.ytimg.com/vi/".concat(e, "/hqdefault_live.jpg"),
-  g = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/hqdefault_live\.jpg/,
+  g = e => "https://i.ytimg.com/vi/".concat(e, "/hqdefault_live.jpg"),
+  m = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/hqdefault_live\.jpg/,
   E = {
     [u.ABu.SPOTIFY]: {
-      deserialize: e => "".concat(p).concat(encodeURIComponent(e)),
-      serialize: e => e.split(p)[1]
+      deserialize: e => "".concat(_).concat(encodeURIComponent(e)),
+      serialize: e => e.split(_)[1]
     },
     [u.ABu.TWITCH]: {
-      deserialize: (e, t) => _(encodeURIComponent(e), t[0], t[1]),
+      deserialize: (e, t) => p(encodeURIComponent(e), t[0], t[1]),
       serialize: e => {
         let t = e.match(h);
         return null != t ? t[1] : null
       }
     },
     [u.ABu.YOUTUBE]: {
-      deserialize: e => m(encodeURIComponent(e)),
+      deserialize: e => g(encodeURIComponent(e)),
       serialize: e => {
-        let t = e.match(g);
+        let t = e.match(m);
         return null != t ? t[1] : null
       }
     },

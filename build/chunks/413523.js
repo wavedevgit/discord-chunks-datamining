@@ -16,11 +16,11 @@ var r = n(392711),
   u = n(314897),
   d = n(523746),
   f = n(592125),
-  p = n(131951),
-  _ = n(606304),
+  _ = n(131951),
+  p = n(606304),
   h = n(594174),
-  m = n(33039),
-  g = n(979651),
+  g = n(33039),
+  m = n(979651),
   E = n(5192),
   v = n(933546),
   b = n(354459),
@@ -106,7 +106,7 @@ class D {
   rebuild() {
     let e = f.Z.getChannel(this.channelId);
     if (null == e || e.type === y.d4z.GUILD_TEXT || (this.call = d.Z.getCall(this.channelId), e.isPrivate() && (null == this.call || this.call.unavailable))) return !1;
-    let t = new Set(e.isGuildVocalOrThread() ? Object.keys(g.Z.getVoiceStatesForChannel(e.id)) : e.recipients);
+    let t = new Set(e.isGuildVocalOrThread() ? Object.keys(m.Z.getVoiceStatesForChannel(e.id)) : e.recipients);
     return t.add(u.default.getId()), this.guildRingingUsers.size > 0 && (t = new Set([...t, ...this.guildRingingUsers])), c.Z.getAllActiveStreamsForChannel(this.channelId).forEach(e => {
       let {
         ownerId: n
@@ -145,7 +145,7 @@ class D {
         return t && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, N(I({}, n), {
           speaking: t,
           lastSpoke: this.lastSpoke[e],
-          soundsharing: _.Z.isSoundSharing(e)
+          soundsharing: p.Z.isSoundSharing(e)
         })), !0
       }
       return t
@@ -196,13 +196,13 @@ class D {
     let y = [],
       S = h.default.getUser(e);
     if (null == S) return y;
-    let T = g.Z.getVoiceStateForChannel(this.channelId, e),
-      A = g.Z.getVoicePlatformForChannel(this.channelId, e),
+    let T = m.Z.getVoiceStateForChannel(this.channelId, e),
+      A = m.Z.getVoicePlatformForChannel(this.channelId, e),
       C = f.Z.getChannel(this.channelId),
       R = null !== (r = (null === (n = this.call) || void 0 === n ? void 0 : null === (t = n.ringing) || void 0 === t ? void 0 : t.includes(e)) || this.guildRingingUsers.has(e)) && void 0 !== r && r;
     (null != T || R) && (d = N(I({
       type: b.fO.USER
-    }, m.Z.getUserStreamData(e, null == C ? void 0 : C.getGuildId())), {
+    }, g.Z.getUserStreamData(e, null == C ? void 0 : C.getGuildId())), {
       user: S,
       id: S.id,
       voiceState: T,
@@ -212,10 +212,10 @@ class D {
         checkIsMuted: !0
       }),
       lastSpoke: null !== (i = this.lastSpoke[e]) && void 0 !== i ? i : 0,
-      soundsharing: _.Z.isSoundSharing(e),
+      soundsharing: p.Z.isSoundSharing(e),
       ringing: R,
       userNick: E.ZP.getName(null == C ? void 0 : C.getGuildId(), this.channelId, S),
-      localVideoDisabled: p.Z.isLocalVideoDisabled(S.id)
+      localVideoDisabled: _.Z.isLocalVideoDisabled(S.id)
     }), y.push(d));
     let P = null !== (a = c.Z.getStreamForUser(e, null == C ? void 0 : C.getGuildId())) && void 0 !== a ? a : c.Z.getActiveStreamForUser(e, null == C ? void 0 : C.getGuildId());
     if (null != P && P.channelId === this.channelId) {
@@ -226,7 +226,7 @@ class D {
           maxResolution: null != n.maxResolution ? I({}, n.maxResolution) : void 0,
           maxFrameRate: n.maxFrameRate
         } : null;
-      v = N(I({}, m.Z.getUserStreamData(e, null == C ? void 0 : C.getGuildId(), O.Yn.STREAM), i), {
+      v = N(I({}, g.Z.getUserStreamData(e, null == C ? void 0 : C.getGuildId(), O.Yn.STREAM), i), {
         type: r ? b.fO.HIDDEN_STREAM : b.fO.STREAM,
         id: t,
         userVideo: null !== (s = null == T ? void 0 : T.selfVideo) && void 0 !== s && s,

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  G: () => _,
-  W: () => m
+  G: () => p,
+  W: () => g
 });
 var r = n(442837),
   i = n(496929),
@@ -14,8 +14,8 @@ var r = n(442837),
   u = n(937579),
   d = n(474936),
   f = n(981631);
-let p = 2592e5;
-async function _(e) {
+let _ = 2592e5;
+async function p(e) {
   let t = a.default.getCurrentUser(),
     n = (0, c.I5)(t);
   null == t || n || l.Z.fetchedEndedEntitlements || await (0, i.p0)({
@@ -23,7 +23,7 @@ async function _(e) {
     excludeEnded: !1
   });
   let r = l.Z.getReverseTrialEntitlement(!0);
-  return !!(!n && null != r && null != r.endsAt && r.endsAt.getTime() < Date.now()) && !(r.endsAt.getTime() < Date.now() - p) && r.sourceType === f.kNB.REVERSE_TRIAL && (null == e && await (0, u.T)(), null != s.Z.getUserTrialOffer(d.Rt))
+  return !!(!n && null != r && null != r.endsAt && r.endsAt.getTime() < Date.now()) && !(r.endsAt.getTime() < Date.now() - _) && r.sourceType === f.kNB.REVERSE_TRIAL && (null == e && await (0, u.T)(), null != s.Z.getUserTrialOffer(d.Rt))
 }
 
 function h() {
@@ -36,6 +36,6 @@ function h() {
   }), t
 }
 
-function m() {
+function g() {
   return null != h()
 }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -51,7 +51,7 @@ function f(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   let c = null != t ? t : "".concat(l.jXE.PREMIUM_GUILD_UPSELL_MODAL);
   null != e.targetBoostedGuildTier && (c += " - Tier ".concat(e.targetBoostedGuildTier));
   let f = () => {
@@ -65,17 +65,17 @@ function p(e, t) {
     location: e.analyticsSourceLocation
   });
   let {
-    openInPopoutEnabled: p
-  } = e, _ = d(e, ["openInPopoutEnabled"]), h = o.Z.getWindowOpen(l.KJ3.CHANNEL_CALL_POPOUT) && null != p && p;
+    openInPopoutEnabled: _
+  } = e, p = d(e, ["openInPopoutEnabled"]), h = o.Z.getWindowOpen(l.KJ3.CHANNEL_CALL_POPOUT) && null != _ && _;
   h && (0, a.Z)(l.KJ3.CHANNEL_CALL_POPOUT);
-  let m = h ? i.u1M : i.z1l;
+  let g = h ? i.u1M : i.z1l;
   (0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("89675").then(n.bind(n, 146747));
-    return t => (0, r.jsx)(e, u({}, _, t))
+    return t => (0, r.jsx)(e, u({}, p, t))
   }, {
     onCloseCallback: f,
-    contextKey: m
+    contextKey: g
   })
 }

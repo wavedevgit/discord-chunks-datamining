@@ -33,8 +33,8 @@ var r = n(192379),
         attributes: {}
       }),
       f = d[0],
-      p = d[1],
-      _ = r.useMemo(function() {
+      _ = d[1],
+      p = r.useMemo(function() {
         return {
           name: "updateState",
           enabled: !0,
@@ -43,7 +43,7 @@ var r = n(192379),
             var t = e.state,
               n = Object.keys(t.elements);
             i.flushSync(function() {
-              p({
+              _({
                 styles: (0, l.sq)(n.map(function(e) {
                   return [e, t.styles[e] || {}]
                 })),
@@ -61,29 +61,29 @@ var r = n(192379),
           onFirstUpdate: u.onFirstUpdate,
           placement: u.placement,
           strategy: u.strategy,
-          modifiers: [].concat(u.modifiers, [_, {
+          modifiers: [].concat(u.modifiers, [p, {
             name: "applyStyles",
             enabled: !1
           }])
         };
         return s()(a.current, e) ? a.current || e : (a.current = e, e)
-      }, [u.onFirstUpdate, u.placement, u.strategy, u.modifiers, _]),
-      m = r.useRef();
+      }, [u.onFirstUpdate, u.placement, u.strategy, u.modifiers, p]),
+      g = r.useRef();
     return (0, l.LI)(function() {
-      m.current && m.current.setOptions(h)
+      g.current && g.current.setOptions(h)
     }, [h]), (0, l.LI)(function() {
       if (null != e && null != t) {
         var r = (n.createPopper || o.fi)(e, t, h);
-        return m.current = r,
+        return g.current = r,
           function() {
-            r.destroy(), m.current = null
+            r.destroy(), g.current = null
           }
       }
     }, [e, t, n.createPopper]), {
-      state: m.current ? m.current.state : null,
+      state: g.current ? g.current.state : null,
       styles: f.styles,
       attributes: f.attributes,
-      update: m.current ? m.current.update : null,
-      forceUpdate: m.current ? m.current.forceUpdate : null
+      update: g.current ? g.current.update : null,
+      forceUpdate: g.current ? g.current.forceUpdate : null
     }
   }

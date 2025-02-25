@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function p(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,26 +48,26 @@ function _(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = 200,
-  g = {
+let g = 200,
+  m = {
     chance: .2,
     cooldown: 864e5
   },
   E = {
-    [d.nw.VOICE]: h(p({}, g), {
+    [d.nw.VOICE]: h(_({}, m), {
       hotspot: s.v6.VOICE_CALL_FEEDBACK,
       storageKey: "lastVoiceFeedback",
       eligibilityChecks: [S]
     }),
-    [d.nw.STREAM]: h(p({}, g), {
+    [d.nw.STREAM]: h(_({}, m), {
       hotspot: s.v6.REPORT_PROBLEM_POST_STREAM,
       storageKey: "lastStreamFeedback"
     }),
-    [d.nw.VIDEO_BACKGROUND]: h(p({}, g), {
+    [d.nw.VIDEO_BACKGROUND]: h(_({}, m), {
       hotspot: s.v6.VIDEO_BACKGROUND_FEEDBACK,
       storageKey: "lastVideoBackgroundFeedback"
     }),
@@ -137,6 +137,6 @@ class T extends a.Z {
   constructor(...e) {
     super(...e), f(this, "feedbackTypeToShow", null), f(this, "showFeedbackModalDebounced", i().debounce(e => {
       null != this.feedbackTypeToShow && (I(this.feedbackTypeToShow), this.feedbackTypeToShow = null, e())
-    }, m))
+    }, g))
   }
 }

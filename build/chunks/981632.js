@@ -18,8 +18,8 @@ function u(e) {
     shouldAnimate: u = !0,
     defaultAnimationState: d,
     idleAnimationState: f
-  } = e, p = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), [_, h] = i.useState(d), m = i.useRef((0, l._)(t, _)), [g, E] = i.useState(null == f), [v, b] = i.useState(!1), [y, O] = i.useState(-1), S = () => {
-    m.current = (0, l._)(t, _), O(e => e + 1)
+  } = e, _ = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), [p, h] = i.useState(d), g = i.useRef((0, l._)(t, p)), [m, E] = i.useState(null == f), [v, b] = i.useState(!1), [y, O] = i.useState(-1), S = () => {
+    g.current = (0, l._)(t, p), O(e => e + 1)
   }, I = () => {
     E(!1), b(!0), O(-1), h(d)
   };
@@ -54,7 +54,7 @@ function u(e) {
       idleAnimationState: n
     } = N.current;
     t && null != n || e()
-  }, [_]), i.useEffect(() => {
+  }, [p]), i.useEffect(() => {
     let {
       applyAnimation: e,
       idleAnimationState: t
@@ -66,11 +66,11 @@ function u(e) {
   };
   if (!c.Cj.hasOwnProperty(t)) throw Error("Unexpected giftStyle ".concat(t));
   return (0, r.jsx)(a.Fmz, {
-    importData: m.current,
-    shouldAnimate: !p && u,
+    importData: g.current,
+    shouldAnimate: !_ && u,
     className: n,
     versionKey: y,
     onComplete: null != f ? A : void 0,
-    loop: g
+    loop: m
   })
 }

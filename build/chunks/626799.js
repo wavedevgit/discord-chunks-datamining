@@ -202,7 +202,7 @@ C(I, "defaultProps", {
 });
 let S = [y.Z, v.Z, b.Z, x.Z];
 
-function P(e) {
+function T(e) {
   let {
     skuId: t
   } = e, n = y.Z.get(t), r = null != n ? _.Z.getApplication(n.applicationId) : null;
@@ -215,6 +215,6 @@ function P(e) {
     libraryApplication: null != n ? b.Z.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
   }
 }
-let T = (0, g.Z)((0, h.Z)(I)),
-  A = l.ZP.connectStores(S, P)(T),
-  w = (0, h.Z)(l.ZP.connectStores(S, P)(I))
+let P = (0, g.Z)((0, h.Z)(I)),
+  A = l.ZP.connectStores(S, T)(P),
+  w = (0, h.Z)(l.ZP.connectStores(S, T)(I))

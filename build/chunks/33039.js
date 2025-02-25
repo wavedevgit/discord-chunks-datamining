@@ -47,37 +47,37 @@ function d(e, t) {
   }), e
 }
 let f = null,
-  p = null,
-  _ = {};
+  _ = null,
+  p = {};
 
 function h(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
-    r = _[e];
+    r = p[e];
   if (null == r) return;
   let i = r[null != t ? t : a.kod];
   if (null != i) {
     for (let e of Object.values(s.Yn))(n === e || null == n) && delete i[e];
-    _[e][null != t ? t : a.kod] = i
+    p[e][null != t ? t : a.kod] = i
   }
 }
 
-function m(e, t, n, r) {
+function g(e, t, n, r) {
   var i;
-  e in _ || (_[e] = {});
-  let o = null !== (i = _[e][null != t ? t : a.kod]) && void 0 !== i ? i : {};
-  _[e][null != t ? t : a.kod] = d(c({}, o), {
+  e in p || (p[e] = {});
+  let o = null !== (i = p[e][null != t ? t : a.kod]) && void 0 !== i ? i : {};
+  p[e][null != t ? t : a.kod] = d(c({}, o), {
     [r]: {
       streamId: n
     }
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     user: t,
     sessionId: n
   } = e;
-  f = t.id, p = n
+  f = t.id, _ = n
 }
 
 function E(e) {
@@ -85,7 +85,7 @@ function E(e) {
     user: t,
     sessionId: n
   } = e;
-  f = t.id, p = n
+  f = t.id, _ = n
 }
 
 function v(e) {
@@ -95,7 +95,7 @@ function v(e) {
     streamId: r,
     context: i
   } = e;
-  null != r ? m(t, n, r, i) : h(t, n, i)
+  null != r ? g(t, n, r, i) : h(t, n, i)
 }
 
 function b(e) {
@@ -111,10 +111,10 @@ function b(e) {
       guildId: s
     } = t;
     if (null == o && r === f) {
-      if (i !== p) return e;
-      _ = {}
+      if (i !== _) return e;
+      p = {}
     } else {
-      if (null != o || (null === (n = _[r]) || void 0 === n ? void 0 : n[null != s ? s : a.kod]) == null) return e;
+      if (null != o || (null === (n = p[r]) || void 0 === n ? void 0 : n[null != s ? s : a.kod]) == null) return e;
       h(r, s)
     }
     return !0
@@ -124,17 +124,17 @@ class y extends(r = i.ZP.Store) {
   getStreamId(e, t) {
     var n, r, i;
     let o = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.Yn.DEFAULT;
-    return null === (i = _[e]) || void 0 === i ? void 0 : null === (r = i[null != t ? t : a.kod]) || void 0 === r ? void 0 : null === (n = r[o]) || void 0 === n ? void 0 : n.streamId
+    return null === (i = p[e]) || void 0 === i ? void 0 : null === (r = i[null != t ? t : a.kod]) || void 0 === r ? void 0 : null === (n = r[o]) || void 0 === n ? void 0 : n.streamId
   }
   getUserStreamData(e, t) {
     var n, r;
     let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.Yn.DEFAULT;
-    return null === (r = _[e]) || void 0 === r ? void 0 : null === (n = r[null != t ? t : a.kod]) || void 0 === n ? void 0 : n[i]
+    return null === (r = p[e]) || void 0 === r ? void 0 : null === (n = r[null != t ? t : a.kod]) || void 0 === n ? void 0 : n[i]
   }
 }
 l(y, "displayName", "VideoStreamStore");
 let O = new y(o.Z, {
-  CONNECTION_OPEN: g,
+  CONNECTION_OPEN: m,
   OVERLAY_INITIALIZE: E,
   RTC_CONNECTION_VIDEO: v,
   VOICE_STATE_UPDATES: b

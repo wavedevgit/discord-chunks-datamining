@@ -5,7 +5,7 @@ n.d(t, {
   Ld: () => $,
   Z2: () => ee,
   ZP: () => en,
-  bN: () => g,
+  bN: () => m,
   xt: () => J
 }), n(653041), n(47120);
 var r, i = n(392711),
@@ -18,7 +18,7 @@ var r, i = n(392711),
   d = n(709054),
   f = n(765305);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,14 +27,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -51,21 +51,21 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = {
+let m = {
   EVENT: "event",
   EVENT_ACTIVE: "active",
   EVENT_UPCOMING: "event-upcoming",
-  GUILD_EVENT: e => "".concat(e, "-").concat(g.EVENT),
-  GUILD_EVENT_ACTIVE: e => "".concat(e, "-").concat(g.EVENT_ACTIVE),
-  GUILD_EVENT_UPCOMING: e => "".concat(e, "-").concat(g.EVENT_UPCOMING),
-  CHANNEL_EVENT: e => "".concat(e, "-").concat(g.EVENT),
-  CHANNEL_EVENT_ACTIVE: e => "".concat(e, "-").concat(g.EVENT_ACTIVE),
-  CHANNEL_EVENT_UPCOMING: e => "".concat(e, "-").concat(g.EVENT_UPCOMING)
+  GUILD_EVENT: e => "".concat(e, "-").concat(m.EVENT),
+  GUILD_EVENT_ACTIVE: e => "".concat(e, "-").concat(m.EVENT_ACTIVE),
+  GUILD_EVENT_UPCOMING: e => "".concat(e, "-").concat(m.EVENT_UPCOMING),
+  CHANNEL_EVENT: e => "".concat(e, "-").concat(m.EVENT),
+  CHANNEL_EVENT_ACTIVE: e => "".concat(e, "-").concat(m.EVENT_ACTIVE),
+  CHANNEL_EVENT_UPCOMING: e => "".concat(e, "-").concat(m.EVENT_UPCOMING)
 };
 
 function E(e) {
@@ -81,7 +81,7 @@ let v = e => {
       entity_id: n,
       channel_id: r
     } = e, i = [t];
-    return null != n && i.push(n), i.push(g.GUILD_EVENT(t)), null != r && i.push(g.CHANNEL_EVENT(r)), J(e) && (i.push(g.EVENT_ACTIVE), i.push(g.GUILD_EVENT_ACTIVE(t)), null != r && i.push(g.CHANNEL_EVENT_ACTIVE(r))), $(e) && (i.push(g.EVENT_UPCOMING), i.push(g.GUILD_EVENT_UPCOMING(t)), null != r && i.push(g.CHANNEL_EVENT_UPCOMING(r))), i
+    return null != n && i.push(n), i.push(m.GUILD_EVENT(t)), null != r && i.push(m.CHANNEL_EVENT(r)), J(e) && (i.push(m.EVENT_ACTIVE), i.push(m.GUILD_EVENT_ACTIVE(t)), null != r && i.push(m.CHANNEL_EVENT_ACTIVE(r))), $(e) && (i.push(m.EVENT_UPCOMING), i.push(m.GUILD_EVENT_UPCOMING(t)), null != r && i.push(m.CHANNEL_EVENT_UPCOMING(r))), i
   },
   b = new s.h(v, E),
   y = 0,
@@ -158,7 +158,7 @@ function j(e) {
   let {
     guildId: t,
     guildScheduledEvents: n
-  } = e, r = b.values(g.GUILD_EVENT(t), !0).map(e => e.id), i = n.map(e => e.id);
+  } = e, r = b.values(m.GUILD_EVENT(t), !0).map(e => e.id), i = n.map(e => e.id);
   for (let e of (o().difference(r, i).forEach(e => {
       A(e)
     }), n)) N(e);
@@ -180,7 +180,7 @@ function U(e) {
 }
 
 function G(e, t) {
-  b.values(g.GUILD_EVENT(e)).forEach(e => A(e.id, t))
+  b.values(m.GUILD_EVENT(e)).forEach(e => A(e.id, t))
 }
 
 function B(e) {
@@ -204,7 +204,7 @@ function V(e) {
   if (null == n) return !1;
   let r = n.guild_scheduled_event_exceptions.findIndex(e => e.event_exception_id === t.event_exception_id),
     i = [...n.guild_scheduled_event_exceptions];
-  return r < 0 ? i.push(t) : i[r] = t, N(m(_({}, n), {
+  return r < 0 ? i.push(t) : i[r] = t, N(g(p({}, n), {
     guild_scheduled_event_exceptions: i
   })), !0
 }
@@ -215,7 +215,7 @@ function Z(e) {
   } = e, n = b.get(t.event_id);
   if (null == n) return !1;
   let r = n.guild_scheduled_event_exceptions.filter(e => e.event_exception_id !== t.event_exception_id);
-  return N(m(_({}, n), {
+  return N(g(p({}, n), {
     guild_scheduled_event_exceptions: r
   })), !0
 }
@@ -224,7 +224,7 @@ function H(e) {
   let {
     eventId: t
   } = e, n = b.get(t);
-  return null != n && (N(m(_({}, n), {
+  return null != n && (N(g(p({}, n), {
     guild_scheduled_event_exceptions: []
   })), !0)
 }
@@ -357,7 +357,7 @@ class et extends(r = a.ZP.Store) {
     return null != e && J(b.get(e))
   }
   getActiveEventByChannel(e) {
-    if (null != e) return this.getGuildScheduledEventsByIndex(g.CHANNEL_EVENT_ACTIVE(e))[0]
+    if (null != e) return this.getGuildScheduledEventsByIndex(m.CHANNEL_EVENT_ACTIVE(e))[0]
   }
   getUsersForGuildEvent(e, t) {
     var n, r;
@@ -366,7 +366,7 @@ class et extends(r = a.ZP.Store) {
     return null !== (r = null === (n = I[e]) || void 0 === n ? void 0 : n[i]) && void 0 !== r ? r : {}
   }
 }
-p(et, "displayName", "GuildScheduledEventStore");
+_(et, "displayName", "GuildScheduledEventStore");
 let en = new et(l.Z, {
   CONNECTION_OPEN: x,
   GUILD_CREATE: k,

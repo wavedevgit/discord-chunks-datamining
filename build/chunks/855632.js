@@ -38,13 +38,13 @@ function t(e) {
       }],
       end: '"[cwd]?'
     },
-    p = {
+    _ = {
       className: "string",
       begin: '[rq]"',
       end: '"[cwd]?',
       relevance: 5
     },
-    _ = {
+    p = {
       className: "string",
       begin: "`",
       end: "`[cwd]?"
@@ -54,12 +54,12 @@ function t(e) {
       begin: 'x"[\\da-fA-F\\s\\n\\r]*"[cwd]?',
       relevance: 10
     },
-    m = {
+    g = {
       className: "string",
       begin: 'q"\\{',
       end: '\\}"'
     },
-    g = {
+    m = {
       className: "meta",
       begin: "^#!",
       end: "$",
@@ -82,7 +82,7 @@ function t(e) {
   return {
     name: "D",
     keywords: t,
-    contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, b, h, f, p, _, m, u, c, d, g, E, v]
+    contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, b, h, f, _, p, g, u, c, d, m, E, v]
   }
 }
 e.exports = t

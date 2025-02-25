@@ -27,18 +27,18 @@ function c(e) {
     u = null !== (t = c.contrastRatio) && void 0 !== t ? t : s.NonText,
     d = null !== (n = c.tolerance) && void 0 !== n ? n : o,
     f = i()(null !== (r = c.base) && void 0 !== r ? r : e),
-    p = i()(e),
-    _ = f.luminance(),
-    h = p,
-    m = u,
-    g = u + d,
-    E = i().contrast(f, p),
+    _ = i()(e),
+    p = f.luminance(),
+    h = _,
+    g = u,
+    m = u + d,
+    E = i().contrast(f, _),
     v = a;
   for (; v-- > 0;) {
-    let e = E < m,
-      t = E > g;
+    let e = E < g,
+      t = E > m;
     if (!e && !t) break;
-    let n = h.luminance() > _;
+    let n = h.luminance() > p;
     h = t && n || e && !n ? h.darken() : h.brighten(), E = i().contrast(f, h)
   }
   return l(h)

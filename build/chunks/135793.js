@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(100527),
   d = n(906732),
   f = n(605236),
-  p = n(688465),
-  _ = n(333867),
+  _ = n(688465),
+  p = n(333867),
   h = n(592125),
-  m = n(63063),
-  g = n(937615),
+  g = n(63063),
+  m = n(937615),
   E = n(980463),
   v = n(328908),
   b = n(992970),
@@ -136,25 +136,25 @@ function B(e) {
     message: n,
     onRedeem: o,
     buttonUseState: s
-  } = e, c = null != n, f = c && (0, S.Uw)(n), p = (0, v.Qj)(t.id, c), {
+  } = e, c = null != n, f = c && (0, S.Uw)(n), _ = (0, v.Qj)(t.id, c), {
     price: h,
-    fetchingPrice: m,
-    error: g
+    fetchingPrice: g,
+    error: m
   } = (0, T.R2)(y.D1), {
     entitlement: b,
     fetchedEntitlement: O,
     error: I
-  } = (0, T.t6)(y.D1), A = g || I, {
+  } = (0, T.t6)(y.D1), A = m || I, {
     analyticsLocations: C
-  } = (0, d.ZP)([u.Z.CONFETTI_POTION_MODAL]), R = null != b && !b.consumed, P = m || !O;
+  } = (0, d.ZP)([u.Z.CONFETTI_POTION_MODAL]), R = null != b && !b.consumed, P = g || !O;
   (0, i.useEffect)(() => () => {
     A && (0, E.SN)(y.D1)
   }, [A, c]);
   let D = (0, i.useCallback)(() => {
-      null != p && ((0, l.pTH)(), o(p))
-    }, [p, o]),
+      null != _ && ((0, l.pTH)(), o(_))
+    }, [_, o]),
     w = (0, i.useCallback)(() => {
-      (0, _.Z)({
+      (0, p.Z)({
         skuId: y.D1,
         analyticsLocations: C,
         onComplete: () => {
@@ -172,7 +172,7 @@ function B(e) {
       }
       return 0
     }, [b, R, s]),
-    M = (0, i.useMemo)(() => 0 === x ? 1 : f ? 2 : 3 * (null == p), [f, p, x]);
+    M = (0, i.useMemo)(() => 0 === x ? 1 : f ? 2 : 3 * (null == _), [f, _, x]);
   return (0, r.jsx)(F, {
     channel: t,
     buttonPurchaseState: x,
@@ -180,7 +180,7 @@ function B(e) {
     price: h,
     onActionClick: L,
     loading: P,
-    selectedEmoji: null != p ? p : void 0,
+    selectedEmoji: null != _ ? _ : void 0,
     isReaction: c
   })
 }
@@ -245,7 +245,7 @@ let F = e => {
           children: [(0, r.jsx)(l.X6q, {
             variant: "heading-lg/bold",
             children: C.NW.string(C.t["5/knv7"])
-          }), (0, r.jsx)(p.Z, {})]
+          }), (0, r.jsx)(_.Z, {})]
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           children: C.NW.string(C.t.NFTQoa)
@@ -253,7 +253,7 @@ let F = e => {
           color: "text-link",
           variant: "text-sm/normal",
           children: C.NW.format(C.t["jerM9/"], {
-            helpCenterLink: m.Z.getArticleURL(N.BhN.CONFETTI_POTION)
+            helpCenterLink: g.Z.getArticleURL(N.BhN.CONFETTI_POTION)
           })
         })]
       }), (0, r.jsx)("div", {
@@ -280,20 +280,20 @@ let F = e => {
       s(!1)
     }, []), d = (0, i.useCallback)(e => (0, v.t0)(e, t.id, o), [o, t.id]), {
       emojiName: f,
-      selectionText: p
+      selectionText: _
     } = (0, i.useMemo)(() => null == n ? {
       emojiName: null,
       selectionText: C.NW.string(C.t.KgK5qq)
     } : {
       emojiName: null == n.id ? n.optionallyDiverseSequence : n.name,
       selectionText: n.name.replace(/_/g, " ")
-    }, [n]), _ = (0, i.useRef)(null);
+    }, [n]), p = (0, i.useRef)(null);
     return (0, r.jsx)(I.Z, {
       channel: t,
       shouldShow: a,
       onRequestClose: u,
       setEmojiConfetti: d,
-      positionRef: _,
+      positionRef: p,
       position: "left",
       align: "top",
       children: () => (0, r.jsx)(l.zxk, {
@@ -307,7 +307,7 @@ let F = e => {
           children: [(0, r.jsxs)("div", {
             className: R.selectedEmoji,
             children: [(0, r.jsx)("div", {
-              ref: _,
+              ref: p,
               children: null == n ? (0, r.jsx)(l.EO4, {
                 color: "currentColor",
                 size: "custom",
@@ -321,7 +321,7 @@ let F = e => {
             }), (0, r.jsx)(l.Text, {
               color: "interactive-active",
               variant: "text-sm/normal",
-              children: p
+              children: _
             })]
           }), a ? (0, r.jsx)(l.u04, {
             color: "currentColor",
@@ -397,7 +397,7 @@ let F = e => {
       let e = {
           0: C.NW.formatToPlainString(C.t.POGRmp, {
             amount: y.pe,
-            price: (0, g.T4)(o.amount, o.currency)
+            price: (0, m.T4)(o.amount, o.currency)
           }),
           1: C.NW.string(C.t.RrKeDw),
           2: C.NW.string(C.t.WOXaWF),

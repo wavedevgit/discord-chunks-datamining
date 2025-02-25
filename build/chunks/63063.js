@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p,
+  Z: () => _,
   w: () => s
 });
 var r = n(299379),
@@ -21,7 +21,7 @@ function d(e) {
 function f() {
   return i.default.locale.toLowerCase()
 }
-let p = {
+let _ = {
   getArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e)),
   getDevArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e), l),
   getCreatorSupportArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e), c),

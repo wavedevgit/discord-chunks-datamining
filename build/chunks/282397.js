@@ -11,9 +11,9 @@ var o, a = n(442837),
   u = n(314897),
   d = n(592125),
   f = n(70956),
-  p = n(622449);
+  _ = n(622449);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,13 +29,13 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,8 +46,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -76,7 +76,7 @@ function T(e) {
     onFailure: s
   } = e;
   null != n && (y[n] = t, O[t] = n), b[t] = {
-    state: p.F.QUEUED,
+    state: _.F.QUEUED,
     data: r,
     onCreate: i,
     onCancel: o,
@@ -93,8 +93,8 @@ function N(e) {
   } = e;
   if (null == n) return !1;
   let i = b[n];
-  if (null == i || i.state !== p.F.QUEUED) return !1;
-  i.state = p.F.CREATED, null === (t = i.onCreate) || void 0 === t || t.call(i, r)
+  if (null == i || i.state !== _.F.QUEUED) return !1;
+  i.state = _.F.CREATED, null === (t = i.onCreate) || void 0 === t || t.call(i, r)
 }
 
 function A(e) {
@@ -129,8 +129,8 @@ function R(e) {
   if (null == n) return !1;
   let s = b[n];
   if (null == s) return !1;
-  null === (t = s.onFailure) || void 0 === t || t.call(s, r, i, o, a), s.data.interactionType === c.B8.APPLICATION_COMMAND ? k(n) : b[n] = g(h({}, s), {
-    state: p.F.FAILED,
+  null === (t = s.onFailure) || void 0 === t || t.call(s, r, i, o, a), s.data.interactionType === c.B8.APPLICATION_COMMAND ? k(n) : b[n] = m(h({}, s), {
+    state: _.F.FAILED,
     errorCode: r,
     errorMessage: i
   })
@@ -141,7 +141,7 @@ function P(e) {
     channelId: t
   } = e;
   if (null == d.Z.getChannel(t)) return !1;
-  for (let [e, t] of Object.entries(b)) t.state === p.F.FAILED && k(e)
+  for (let [e, t] of Object.entries(b)) t.state === _.F.FAILED && k(e)
 }
 
 function D(e) {
@@ -220,7 +220,7 @@ class U extends(o = a.ZP.Store) {
   }
   canQueueInteraction(e, t) {
     let n = y[e];
-    return (null == n || null == b[n] || b[n].state === p.F.FAILED) && (null == b[t] || b[t].state === p.F.FAILED)
+    return (null == n || null == b[n] || b[n].state === _.F.FAILED) && (null == b[t] || b[t].state === _.F.FAILED)
   }
   getIFrameModalApplicationId() {
     return i
@@ -229,7 +229,7 @@ class U extends(o = a.ZP.Store) {
     return r
   }
 }
-_(U, "displayName", "InteractionStore");
+p(U, "displayName", "InteractionStore");
 let G = new U(s.Z, {
   LOGOUT: I,
   INTERACTION_QUEUE: T,

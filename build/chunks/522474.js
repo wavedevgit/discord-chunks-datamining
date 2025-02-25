@@ -12,11 +12,11 @@ var r, i = n(512722),
   u = n(570140),
   d = n(710845),
   f = n(857192),
-  p = n(358085),
-  _ = n(998502),
+  _ = n(358085),
+  p = n(998502),
   h = n(228488),
-  m = n(248977),
-  g = n(981631);
+  g = n(248977),
+  m = n(981631);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -89,7 +89,7 @@ function x(e) {
     y: t.screenY,
     width: t.innerWidth,
     height: t.innerHeight,
-    alwaysOnTop: !!p.isPlatformEmbedded && I[e]
+    alwaysOnTop: !!_.isPlatformEmbedded && I[e]
   })
 }
 
@@ -136,11 +136,11 @@ function G(e) {
     features: n,
     render: r
   } = e;
-  if (p.isPlatformEmbedded && !_.ZP.supportsFeature(g.eRX.POPOUT_WINDOWS)) throw Error("Popout windows not supported on this native module version!");
+  if (_.isPlatformEmbedded && !p.ZP.supportsFeature(m.eRX.POPOUT_WINDOWS)) throw Error("Popout windows not supported on this native module version!");
   let i = !0 === n.outOfProcessOverlay,
     o = T[t],
     a = null != o && !o.closed;
-  if (a && !i) return p.isPlatformEmbedded ? _.ZP.focus(t) : null != o && o.focus(), !1;
+  if (a && !i) return _.isPlatformEmbedded ? p.ZP.focus(t) : null != o && o.focus(), !1;
   if (a && i) return O.info("Already has open window, skipping focus"), !1;
   let {
     defaultWidth: s,
@@ -162,8 +162,8 @@ function G(e) {
       top: r
     }, u)
   }
-  let h = window.open(g.Z5c.POPOUT_WINDOW, t, (0, m.Z)(u));
-  h.windowKey = t, i || null == h || h.focus(), T[t] = h, A[t] = r, p.isPlatformEmbedded && (_.ZP.setAlwaysOnTop(t, d), I[t] = d, _.ZP.isAlwaysOnTop(t).then(e => I[t] = e)), C.add(t)
+  let h = window.open(m.Z5c.POPOUT_WINDOW, t, (0, g.Z)(u));
+  h.windowKey = t, i || null == h || h.focus(), T[t] = h, A[t] = r, _.isPlatformEmbedded && (p.ZP.setAlwaysOnTop(t, d), I[t] = d, p.ZP.isAlwaysOnTop(t).then(e => I[t] = e)), C.add(t)
 }
 
 function B(e) {
@@ -184,9 +184,9 @@ function V(e) {
   if (!(t instanceof Object && t.discordPopoutEvent instanceof Object)) return;
   let n = t.discordPopoutEvent;
   if (null != n.key) switch (n.type) {
-    case g.l9w.LOADED:
+    case m.l9w.LOADED:
       return B(n.key);
-    case g.l9w.UNLOADED:
+    case m.l9w.UNLOADED:
       return F(n.key)
   }
 }
@@ -218,7 +218,7 @@ function Y(e) {
     key: t,
     alwaysOnTop: n
   } = e;
-  p.isPlatformEmbedded && (_.ZP.setAlwaysOnTop(t, n), I[t] = n, _.ZP.isAlwaysOnTop(t).then(e => I[t] = e))
+  _.isPlatformEmbedded && (p.ZP.setAlwaysOnTop(t, n), I[t] = n, p.ZP.isAlwaysOnTop(t).then(e => I[t] = e))
 }
 
 function K(e) {

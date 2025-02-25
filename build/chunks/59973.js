@@ -24,33 +24,33 @@ function l(e) {
       r = n.publishSource,
       o = void 0 === r || r,
       l = n.clientOffset,
-      p = n.getSourceClientOffset,
-      _ = e.getMonitor(),
+      _ = n.getSourceClientOffset,
+      p = e.getMonitor(),
       h = e.getRegistry();
-    e.dispatch((0, i.T)(l)), c(t, _, h);
-    var m = f(t, _);
-    if (null === m) {
+    e.dispatch((0, i.T)(l)), c(t, p, h);
+    var g = f(t, p);
+    if (null === g) {
       e.dispatch(s);
       return
     }
-    var g = null;
+    var m = null;
     if (l) {
-      if (!p) throw Error("getSourceClientOffset must be defined");
-      u(p), g = p(m)
+      if (!_) throw Error("getSourceClientOffset must be defined");
+      u(_), m = _(g)
     }
-    e.dispatch((0, i.T)(l, g));
-    var E = h.getSource(m).beginDrag(_, m);
+    e.dispatch((0, i.T)(l, m));
+    var E = h.getSource(g).beginDrag(p, g);
     if (null != E) {
-      d(E), h.pinSource(m);
-      var v = h.getSourceType(m);
+      d(E), h.pinSource(g);
+      var v = h.getSourceType(g);
       return {
         type: a.qu,
         payload: {
           itemType: v,
           item: E,
-          sourceId: m,
+          sourceId: g,
           clientOffset: l || null,
-          sourceClientOffset: g || null,
+          sourceClientOffset: m || null,
           isSourcePublic: !!o
         }
       }

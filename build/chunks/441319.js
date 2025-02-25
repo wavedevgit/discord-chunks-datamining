@@ -15,11 +15,11 @@ var r = n(997945),
   u = n(760260),
   d = n(448578),
   f = n(946185),
-  p = n(480423),
-  _ = n(273593),
+  _ = n(480423),
+  p = n(273593),
   h = n(665801),
-  m = n(818143),
-  g = n(666475),
+  g = n(818143),
+  m = n(666475),
   E = n(591304),
   v = n(73375),
   b = n(328664),
@@ -84,7 +84,7 @@ function P() {
     name: i.NW.string(i.t.ixdjPD)
   }, {
     id: r.Ru.GALAXY,
-    iconSource: m,
+    iconSource: g,
     isPremium: !0,
     name: i.NW.string(i.t.cb78Li)
   }, {
@@ -104,12 +104,12 @@ function P() {
     name: i.NW.string(i.t.IoLVi4)
   }, {
     id: r.Ru.GAMING,
-    iconSource: g,
+    iconSource: m,
     isPremium: !0,
     name: i.NW.string(i.t["2Tf+c3"])
   }, {
     id: r.Ru.CIRCUIT,
-    iconSource: p,
+    iconSource: _,
     isPremium: !0,
     name: i.NW.string(i.t.dUpxKS)
   }, {
@@ -149,7 +149,7 @@ function P() {
     name: i.NW.string(i.t.nshUZW)
   }, {
     id: r.Ru.COLOR_WAVE,
-    iconSource: _,
+    iconSource: p,
     isPremium: !0,
     name: i.NW.string(i.t.MWRYqq)
   }]

@@ -12,11 +12,11 @@ var r, i = n(512722),
   u = n(317381),
   d = n(710845),
   f = n(258609),
-  p = n(569545),
-  _ = n(163612),
+  _ = n(569545),
+  p = n(163612),
   h = n(199902),
-  m = n(314897),
-  g = n(523746),
+  g = n(314897),
+  m = n(523746),
   E = n(592125),
   v = n(158776),
   b = n(944486),
@@ -98,7 +98,7 @@ function z() {
   let n = b.Z.getVoiceChannelId();
   null == n || e.includes(n) || e.push(n);
   let r = f.Z.getRemoteSessionId(),
-    i = I.Z.getVoiceStateForSession(m.default.getId(), r);
+    i = I.Z.getVoiceStateForSession(g.default.getId(), r);
   (null == i ? void 0 : i.channelId) != null && e.push(null == i ? void 0 : i.channelId), s().difference(x, e).forEach(ei);
   let o = s().difference(e, x);
   return x = e, o
@@ -155,7 +155,7 @@ function et(e) {
 }
 
 function en(e) {
-  let t = m.default.getId(),
+  let t = g.default.getId(),
     n = Y(e);
   if (0 === n.size() || b.Z.getVoiceChannelId() !== e) {
     ee(e, null);
@@ -223,7 +223,7 @@ function el(e) {
       channelId: i,
       guildId: o
     } = t;
-    return (null != o && null != i && _.Z.getCurrentConfig({
+    return (null != o && null != i && p.Z.getCurrentConfig({
       guildId: o,
       location: "voice_status_update"
     }, {
@@ -254,14 +254,14 @@ function ef(e) {
   return Q(t.id)
 }
 
-function ep(e) {
+function e_(e) {
   let {
     channelId: t
   } = e;
   return q(e => e.rebuild(), [t])
 }
 
-function e_(e) {
+function ep(e) {
   let {
     channelId: t
   } = e;
@@ -279,7 +279,7 @@ function eh(e) {
   s().forEach(n, e => ei(e))
 }
 
-function em(e) {
+function eg(e) {
   let {
     channelId: t,
     participantsOpen: n
@@ -287,7 +287,7 @@ function em(e) {
   B[t] = n
 }
 
-function eg(e) {
+function em(e) {
   let {
     channelId: t,
     voiceParticipantsHidden: n
@@ -299,10 +299,10 @@ function eE(e) {
   let {
     channelId: t,
     selfStreamHidden: n
-  } = e, r = m.default.getId();
+  } = e, r = g.default.getId();
   if (n) {
     let [e] = X(t);
-    (0, p.DB)(e) && e.includes(r) && ee(t, null)
+    (0, _.DB)(e) && e.includes(r) && ee(t, null)
   }
   Q(r, [t])
 }
@@ -348,12 +348,12 @@ function eS(e) {
     (0, N._5)(e) && r.updateParticipant(e.user.id)
   });
   let [, i] = X(t);
-  if (ee(t, [null != n ? n : N.dF.NONE, i]), (0, p.DB)(n)) {
+  if (ee(t, [null != n ? n : N.dF.NONE, i]), (0, _.DB)(n)) {
     try {
       let {
         ownerId: e
-      } = (0, p.my)(n);
-      e === m.default.getId() && Q(e, [t])
+      } = (0, _.my)(n);
+      e === g.default.getId() && Q(e, [t])
     } catch (e) {
       w.warn("INVALID STREAM KEY FORMAT ".concat(n), e)
     }
@@ -403,7 +403,7 @@ function eA(e) {
   } = e, {
     channelId: n,
     ownerId: r
-  } = (0, p.my)(t);
+  } = (0, _.my)(t);
   return Q(r, [n])
 }
 
@@ -413,7 +413,7 @@ function eC(e) {
   } = e, {
     channelId: n,
     ownerId: r
-  } = (0, p.my)(t);
+  } = (0, _.my)(t);
   return Q(r, [n])
 }
 
@@ -456,7 +456,7 @@ function eL(e) {
     guildId: n,
     ringing: r
   } = e;
-  if (!_.Z.getCurrentConfig({
+  if (!p.Z.getCurrentConfig({
       guildId: n,
       location: "guild_ring_start"
     }).enabled) return !1;
@@ -470,7 +470,7 @@ function ex(e) {
     guildId: n,
     ringing: r
   } = e;
-  if (!_.Z.getCurrentConfig({
+  if (!p.Z.getCurrentConfig({
       guildId: n,
       location: "guild_ring_start"
     }).enabled) return !1;
@@ -484,7 +484,7 @@ function eM(e) {
 }
 class ej extends(r = l.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, v.Z, b.Z, y.Z, O.default, S.Z, I.Z), this.syncWith([u.ZP], ec), this.syncWith([v.Z], eu), this.syncWith([f.Z], eo), (null == e ? void 0 : e.voiceParticipantsHidden) !== void 0 && Object.assign(F, null == e ? void 0 : e.voiceParticipantsHidden)
+    this.waitFor(h.Z, g.default, m.Z, E.Z, u.ZP, v.Z, b.Z, y.Z, O.default, S.Z, I.Z), this.syncWith([u.ZP], ec), this.syncWith([v.Z], eu), this.syncWith([f.Z], eo), (null == e ? void 0 : e.voiceParticipantsHidden) !== void 0 && Object.assign(F, null == e ? void 0 : e.voiceParticipantsHidden)
   }
   getState() {
     return {
@@ -597,13 +597,13 @@ let ek = new ej(c.Z, {
   CHANNEL_CREATE: eI,
   CHANNEL_DELETE: eT,
   THREAD_DELETE: eT,
-  CALL_CREATE: ep,
-  CALL_UPDATE: ep,
-  CALL_DELETE: e_,
+  CALL_CREATE: e_,
+  CALL_UPDATE: e_,
+  CALL_DELETE: ep,
   CHANNEL_RTC_SELECT_PARTICIPANT: eS,
   CHANNEL_RTC_UPDATE_LAYOUT: eN,
-  CHANNEL_RTC_UPDATE_PARTICIPANTS_OPEN: em,
-  CHANNEL_RTC_UPDATE_VOICE_PARTICIPANTS_HIDDEN: eg,
+  CHANNEL_RTC_UPDATE_PARTICIPANTS_OPEN: eg,
+  CHANNEL_RTC_UPDATE_VOICE_PARTICIPANTS_HIDDEN: em,
   CHANNEL_RTC_UPDATE_STAGE_STREAM_SIZE: ev,
   CHANNEL_RTC_UPDATE_STAGE_VIDEO_LIMIT_BOOST_UPSELL_DISMISSED: eb,
   STREAM_UPDATE_SELF_HIDDEN: eE,

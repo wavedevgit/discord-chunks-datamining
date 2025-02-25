@@ -20,7 +20,7 @@ function f(e) {
     icon: n,
     onAction: f
   } = e, {
-    newestAnalyticsLocation: p
+    newestAnalyticsLocation: _
   } = (0, a.ZP)();
   return (0, i.e7)([l.Z], () => null != l.Z.getAccount(null, t)) ? null : (0, r.jsx)(c.tG, {
     icon: n,
@@ -35,7 +35,7 @@ function f(e) {
         action: n ? "PRESS_CONNECT_XBOX_BUTTON" : "PRESS_CONNECT_PLAYSTATION_BUTTON"
       }), (0, s.Z)({
         platformType: t,
-        location: p
+        location: _
       })
     }
   })

@@ -21,21 +21,21 @@ function u(e, t, n) {
 }
 let d = new r.V7,
   f = new r.V7,
-  p = new r.V7;
-class _ extends i.Z {
+  _ = new r.V7;
+class p extends i.Z {
   constructor(...e) {
     super(...e), u(this, "actions", {
       USER_SETTINGS_PROTO_UPDATE: () => this.handleUpdateProto(),
       POST_CONNECTION_OPEN: () => this.handleUpdateProto()
     }), u(this, "handleUpdateProto", () => {
       let e = s.Ok.getSetting();
-      if (null == e) p.stop();
+      if (null == e) _.stop();
       else if (null != e.expiresAtMs && "0" !== e.expiresAtMs) {
         let t = new Date(Number(e.expiresAtMs)).getTime() - new Date().getTime();
-        t > 0 ? p.start(t, () => {
+        t > 0 ? _.start(t, () => {
           s.Ok.updateSetting(void 0)
-        }, !0) : (s.Ok.updateSetting(void 0), p.stop())
-      } else null != p && p.stop();
+        }, !0) : (s.Ok.updateSetting(void 0), _.stop())
+      } else null != _ && _.stop();
       let t = s.Cr.getSetting();
       if (null != t && "0" !== t && l.Z.getStatus() !== c.Skl.ONLINE) {
         let e = new Date(Number(t)).getTime() - new Date().getTime();
@@ -61,4 +61,4 @@ class _ extends i.Z {
     })
   }
 }
-let h = new _
+let h = new p

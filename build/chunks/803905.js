@@ -6,7 +6,7 @@ n.d(t, {
   Ct: () => A,
   EQ: () => F,
   Ej: () => I,
-  ME: () => m,
+  ME: () => g,
   O1: () => O,
   O8: () => w,
   Pl: () => S,
@@ -15,10 +15,10 @@ n.d(t, {
   ZE: () => j,
   _G: () => y,
   _O: () => T,
-  _y: () => g,
+  _y: () => m,
   do: () => U,
   g7: () => D,
-  g_: () => _,
+  g_: () => p,
   hs: () => v,
   j4: () => R,
   ks: () => Z,
@@ -59,44 +59,44 @@ function f(e, t) {
   }
   return !1
 }
-class p extends a.Z {
+class _ extends a.Z {
   constructor(e, t) {
     super(e, e => f(this, e), t)
   }
 }
-let _ = new p(r.q.ANIMATED_EMOJIS),
-  h = new p(r.q.EMOJIS_EVERYWHERE),
-  m = new p(r.q.STICKERS_EVERYWHERE),
-  g = new p(r.q.SOUNDBOARD_EVERYWHERE),
-  E = new p(r.q.CUSTOM_CALL_SOUNDS),
-  v = new p(r.q.PREMIUM_VOICE_FILTERS),
-  b = new p(r.q.ANIMATED_AVATAR),
-  y = new p(r.q.CUSTOM_DISCRIMINATOR),
-  O = new p(r.q.PREMIUM_GUILD_MEMBER_PROFILE),
-  S = new p("profileBadges"),
-  I = new p(r.q.PROFILE_PREMIUM_FEATURES, "custom banner and avatar decoration"),
-  T = new p("collectibles"),
-  N = new p(r.q.INCREASED_RECENT_AVATARS_LIMIT),
-  A = new p("appIcons"),
-  C = new p(r.q.CLIENT_THEMES),
-  R = new p("boostDiscount"),
-  P = new p("freeBoosts"),
-  D = new p(r.q.STREAM_MID_QUALITY),
-  w = new p(r.q.STREAM_HIGH_QUALITY),
-  L = new p(r.q.CUSTOM_NOTIFICATION_SOUNDS),
-  x = new p("fancyVoiceChannelReactions"),
-  M = new p("installPremiumApplications"),
-  j = new p("redeemPremiumPerks"),
-  k = new p(r.q.VIDEO_FILTER_ASSETS);
+let p = new _(r.q.ANIMATED_EMOJIS),
+  h = new _(r.q.EMOJIS_EVERYWHERE),
+  g = new _(r.q.STICKERS_EVERYWHERE),
+  m = new _(r.q.SOUNDBOARD_EVERYWHERE),
+  E = new _(r.q.CUSTOM_CALL_SOUNDS),
+  v = new _(r.q.PREMIUM_VOICE_FILTERS),
+  b = new _(r.q.ANIMATED_AVATAR),
+  y = new _(r.q.CUSTOM_DISCRIMINATOR),
+  O = new _(r.q.PREMIUM_GUILD_MEMBER_PROFILE),
+  S = new _("profileBadges"),
+  I = new _(r.q.PROFILE_PREMIUM_FEATURES, "custom banner and avatar decoration"),
+  T = new _("collectibles"),
+  N = new _(r.q.INCREASED_RECENT_AVATARS_LIMIT),
+  A = new _("appIcons"),
+  C = new _(r.q.CLIENT_THEMES),
+  R = new _("boostDiscount"),
+  P = new _("freeBoosts"),
+  D = new _(r.q.STREAM_MID_QUALITY),
+  w = new _(r.q.STREAM_HIGH_QUALITY),
+  L = new _(r.q.CUSTOM_NOTIFICATION_SOUNDS),
+  x = new _("fancyVoiceChannelReactions"),
+  M = new _("installPremiumApplications"),
+  j = new _("redeemPremiumPerks"),
+  k = new _(r.q.VIDEO_FILTER_ASSETS);
 new a.Z(r.q.INCREASED_FILE_UPLOAD_SIZE, o.h);
-let U = new p(r.q.INCREASED_GUILD_LIMIT),
-  G = new p(r.q.INCREASED_MESSAGE_LENGTH),
-  B = new p("increasedVideoUploadQuality"),
-  F = new p("uploadLargeFiles"),
+let U = new _(r.q.INCREASED_GUILD_LIMIT),
+  G = new _(r.q.INCREASED_MESSAGE_LENGTH),
+  B = new _("increasedVideoUploadQuality"),
+  F = new _("uploadLargeFiles"),
   V = Object.freeze({
-    [c.Si.TIER_0]: new l.Z(c.Si.TIER_0, [_, h, m, S, k, B, F, A]),
-    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [_, h, b, y, S, R, D, x, B, F, A]),
-    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [_, h, m, g, E, b, y, O, S, I, C, R, P, D, w, x, M, j, k, U, G, B, F, A, T, L, v, N])
+    [c.Si.TIER_0]: new l.Z(c.Si.TIER_0, [p, h, g, S, k, B, F, A]),
+    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [p, h, b, y, S, R, D, x, B, F, A]),
+    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [p, h, g, m, E, b, y, O, S, I, C, R, P, D, w, x, M, j, k, U, G, B, F, A, T, L, v, N])
   });
 
 function Z(e, t) {

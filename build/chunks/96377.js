@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(740078),
   i = n(126387),
@@ -13,19 +13,19 @@ var r = n(740078),
   u = n(510104),
   d = n(632471),
   f = n(607033),
-  p = n(894417);
-let _ = {
+  _ = n(894417);
+let p = {
   name: "preventOverflow",
   enabled: !0,
   phase: "main",
   fn: function(e) {
     var t = e.state,
       n = e.options,
-      _ = e.name,
+      p = e.name,
       h = n.mainAxis,
-      m = void 0 === h || h,
-      g = n.altAxis,
-      E = void 0 !== g && g,
+      g = void 0 === h || h,
+      m = n.altAxis,
+      E = void 0 !== m && m,
       v = n.boundary,
       b = n.rootBoundary,
       y = n.altBoundary,
@@ -64,7 +64,7 @@ let _ = {
         y: 0
       };
     if (L) {
-      if (m) {
+      if (g) {
         var B, F = "y" === D ? r.we : r.t$,
           V = "y" === D ? r.I : r.F2,
           Z = "y" === D ? "height" : "width",
@@ -90,24 +90,24 @@ let _ = {
           ea = null != (B = null == U ? void 0 : U[D]) ? B : 0,
           es = H + en - ea - eo,
           el = H + er - ea,
-          ec = (0, s.u)(I ? (0, p.VV)(W, es) : W, H, I ? (0, p.Fp)(Y, el) : Y);
+          ec = (0, s.u)(I ? (0, _.VV)(W, es) : W, H, I ? (0, _.Fp)(Y, el) : Y);
         L[D] = ec, G[D] = ec - H
       }
       if (E) {
         var eu, ed = "x" === D ? r.we : r.t$,
           ef = "x" === D ? r.I : r.F2,
-          ep = L[w],
-          e_ = "y" === w ? "height" : "width",
-          eh = ep + A[ed],
-          em = ep - A[ef],
-          eg = -1 !== [r.we, r.t$].indexOf(C),
+          e_ = L[w],
+          ep = "y" === w ? "height" : "width",
+          eh = e_ + A[ed],
+          eg = e_ - A[ef],
+          em = -1 !== [r.we, r.t$].indexOf(C),
           eE = null != (eu = null == U ? void 0 : U[w]) ? eu : 0,
-          ev = eg ? eh : ep - x[e_] - M[e_] - eE + k.altAxis,
-          eb = eg ? ep + x[e_] + M[e_] - eE - k.altAxis : em,
-          ey = I && eg ? (0, s.q)(ev, ep, eb) : (0, s.u)(I ? ev : eh, ep, I ? eb : em);
-        L[w] = ey, G[w] = ey - ep
+          ev = em ? eh : e_ - x[ep] - M[ep] - eE + k.altAxis,
+          eb = em ? e_ + x[ep] + M[ep] - eE - k.altAxis : eg,
+          ey = I && em ? (0, s.q)(ev, e_, eb) : (0, s.u)(I ? ev : eh, e_, I ? eb : eg);
+        L[w] = ey, G[w] = ey - e_
       }
-      t.modifiersData[_] = G
+      t.modifiersData[p] = G
     }
   },
   requiresIfExists: ["offset"]

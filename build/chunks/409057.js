@@ -14,11 +14,11 @@ var i = n(120356),
   u = n(833664),
   d = n(420660),
   f = n(100527),
-  p = n(906732),
-  _ = n(499254),
+  _ = n(906732),
+  p = n(499254),
   h = n(827498),
-  m = n(541716),
-  g = n(379357),
+  g = n(541716),
+  m = n(379357),
   E = n(358696),
   v = n(649700),
   b = n(810568),
@@ -97,7 +97,7 @@ function K(e) {
     appContext: Q
   } = e, {
     analyticsLocations: X
-  } = (0, p.ZP)(f.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
+  } = (0, _.ZP)(f.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     profileType: J
   } = (0, A.z)(), $ = {
     [V.fullSize]: J === U.y0.FULL_SIZE
@@ -122,13 +122,13 @@ function K(e) {
     userId: t.id,
     onAction: en
   }), ei = () => {
-    null != Z && (null == q || q(), _.__(h._b.TEXT, m.Ie.NORMAL, {
+    null != Z && (null == q || q(), p.__(h._b.TEXT, g.Ie.NORMAL, {
       applicationId: Z.id
     }))
   }, eo = (0, T.Z)(i), {
     largeImage: ea,
     smallImage: es
-  } = (0, g.FO)(i, Z), el = (0, a.EQ)(i).when(c.Z, () => null != Z ? ei : void 0).when(u.Z, () => et).when(l.Z, () => {
+  } = (0, m.FO)(i, Z), el = (0, a.EQ)(i).when(c.Z, () => null != Z ? ei : void 0).when(u.Z, () => et).when(l.Z, () => {
     if (t.id !== n.id) return () => (0, M.s)({
       activity: i,
       user: t,
@@ -190,11 +190,11 @@ function K(e) {
     variant: "text-xs/normal"
   }), ef = () => {
     var e;
-    return i.type === G.IIU.WATCHING ? null : (0, u.Z)(i) ? ep() : (0, r.jsx)(w.Z, {
+    return i.type === G.IIU.WATCHING ? null : (0, u.Z)(i) ? e_() : (0, r.jsx)(w.Z, {
       text: null === (e = i.assets) || void 0 === e ? void 0 : e.large_text,
       variant: "text-xs/normal"
     })
-  }, ep = () => {
+  }, e_ = () => {
     var e, t, n, o;
     return (null === (e = i.party) || void 0 === e ? void 0 : e.size) == null && i.application_id === B.Zc ? (0, r.jsxs)("div", {
       className: V.gameState,
@@ -226,7 +226,7 @@ function K(e) {
       variant: "text-xs/normal",
       text: i.state
     }) : null
-  }, e_ = () => {
+  }, ep = () => {
     if (!(0, N.Z)(i)) return null;
     let {
       start: e,
@@ -246,13 +246,13 @@ function K(e) {
       }), el(e)
     },
     children: [eu(), ed(), ef()]
-  }), em = () => null == W || null == K ? null : (0, r.jsx)(L.Z, {
+  }), eg = () => null == W || null == K ? null : (0, r.jsx)(L.Z, {
     user: t,
     guild: W,
     channel: K,
     onAction: en,
     onClose: q
-  }), eg = () => t.id === n.id ? null : (0, r.jsx)("div", {
+  }), em = () => t.id === n.id ? null : (0, r.jsx)("div", {
     className: o()(V.actions, $),
     children: (0, r.jsx)(C.Z, {
       activity: i,
@@ -261,7 +261,7 @@ function K(e) {
       onClose: q
     })
   });
-  return (0, r.jsx)(p.Gt, {
+  return (0, r.jsx)(_.Gt, {
     value: X,
     children: (0, r.jsxs)(P.Z, {
       ref: er,
@@ -287,10 +287,10 @@ function K(e) {
               user: t,
               activity: i,
               className: V.badges
-            }), e_()]
-          }), J === U.y0.FULL_SIZE && eg()]
-        }), em()]
-      }), J !== U.y0.FULL_SIZE && eg()]
+            }), ep()]
+          }), J === U.y0.FULL_SIZE && em()]
+        }), eg()]
+      }), J !== U.y0.FULL_SIZE && em()]
     })
   })
 }

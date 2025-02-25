@@ -12,9 +12,9 @@ var r, i = n(392711),
   u = n(630388),
   d = n(780570),
   f = n(314897),
-  p = n(981631);
+  _ = n(981631);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,13 +30,13 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,8 +47,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -67,13 +67,13 @@ let b = !1,
   N = !1;
 
 function A() {
-  s.K.set(E, g(h({}, v()), {
+  s.K.set(E, m(h({}, v()), {
     activeLaunchOptionIds: T
   }))
 }
 
 function C() {
-  s.K.set(E, g(h({}, v()), {
+  s.K.set(E, m(h({}, v()), {
     activeLibraryApplicationBranchIds: I
   }))
 }
@@ -109,7 +109,7 @@ function L(e) {
     branchId: n,
     flags: r
   } = e, i = (0, d.Tu)(t, n), o = B(t, n);
-  null != o && !o.isHidden() && u.yE(r, p.eHb.HIDDEN) && (N = !0), S.add(i)
+  null != o && !o.isHidden() && u.yE(r, _.eHb.HIDDEN) && (N = !0), S.add(i)
 }
 
 function x(e) {
@@ -226,7 +226,7 @@ class V extends(r = a.ZP.Store) {
     })
   }
 }
-_(V, "displayName", "LibraryApplicationStore");
+p(V, "displayName", "LibraryApplicationStore");
 let Z = new V(l.Z, {
   LOGOUT: P,
   LIBRARY_FETCH_SUCCESS: D,

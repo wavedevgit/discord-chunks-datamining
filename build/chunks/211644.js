@@ -54,7 +54,7 @@ function c(e, t) {
 let u = new(n(499303)).I,
   d = 3e5,
   f = 36e5,
-  p = () => ({
+  _ = () => ({
     candidates: new Map,
     shownFatigableCandidate: null,
     prevFatigableCandidate: null,
@@ -63,17 +63,17 @@ let u = new(n(499303)).I,
     currentlyShownGroup: new Set,
     lastWinnerTime: 0
   }),
-  _ = (0, r.F)(p),
+  p = (0, r.F)(_),
   h = e => c(s({}, e), {
     candidates: new Map(e.candidates),
     currentlyShown: new Set(e.currentlyShown),
     currentlyShownGroup: new Set(e.currentlyShownGroup)
   }),
-  m = (e, t) => {
+  g = (e, t) => {
     var n;
     return null == t || (null != t.content && e.currentlyShown.delete(t.content), null != t.groupName && e.currentlyShownGroup.delete(t.groupName), (null === (n = e.shownFatigableCandidate) || void 0 === n ? void 0 : n.content) === t.content && (e.shownFatigableCandidate = null)), e
   },
-  g = (e, t) => {
+  m = (e, t) => {
     var n, r;
     if (null == t) return e;
     e.currentlyShown.add(t.content);
@@ -82,7 +82,7 @@ let u = new(n(499303)).I,
   },
   E = (e, t) => (e.candidates.set(t.content, t), e),
   v = (e, t) => (e.candidates.delete(t.content), e),
-  b = (e, t) => g(m(e, e.shownFatigableCandidate), t),
+  b = (e, t) => m(g(e, e.shownFatigableCandidate), t),
   y = e => null != e.prevFatigableCandidate ? e.candidates.get(e.prevFatigableCandidate.content) : void 0,
   O = e => {
     let t = [...e.candidates.keys()];
@@ -100,7 +100,7 @@ let u = new(n(499303)).I,
     let n = new Date().getTime();
     return null == e.shownFatigableCandidate && n - e.lastWinnerTime < f || u.schedule(() => {
       (0, i.j)(() => {
-        _.setState(e => {
+        p.setState(e => {
           let t = h(e);
           return b(t, O(t))
         })
@@ -110,30 +110,30 @@ let u = new(n(499303)).I,
   T = e => {
     let t = o.O.has(e.content);
     (0, i.j)(() => {
-      _.setState(n => {
+      p.setState(n => {
         let r = h(n);
-        return t ? g(r, e) : I(E(r, e))
+        return t ? m(r, e) : I(E(r, e))
       })
     })
   },
   N = (e, t) => {
     (0, i.j)(() => {
-      _.setState(n => {
+      p.setState(n => {
         let r = h(n);
-        return t ? I(m(v(r, e), e)) : m(v(r, e), e)
+        return t ? I(g(v(r, e), e)) : g(v(r, e), e)
       })
     })
   },
-  A = e => _.getState().currentlyShown.has(e),
-  C = e => _(t => t.currentlyShown.has(e)),
+  A = e => p.getState().currentlyShown.has(e),
+  C = e => p(t => t.currentlyShown.has(e)),
   R = () => {
-    let e = [..._.getState().currentlyShown].filter(e => !o.O.has(e)).length;
-    return [_.getState().currentlyShown.size, e]
+    let e = [...p.getState().currentlyShown].filter(e => !o.O.has(e)).length;
+    return [p.getState().currentlyShown.size, e]
   },
   P = () => {
-    (0, i.j)(() => _.setState(p)), u.unschedule()
+    (0, i.j)(() => p.setState(_)), u.unschedule()
   };
 
 function D(e, t) {
-  return _(e, t)
+  return p(e, t)
 }

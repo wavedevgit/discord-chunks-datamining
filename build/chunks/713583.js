@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(388032),
   f = n(81923);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -47,16 +47,16 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e) {
+function m(e) {
   var t;
-  let o, p, h, {
-      className: g,
+  let o, _, h, {
+      className: m,
       activeCommand: E,
       activeOption: v,
       optionStates: b,
@@ -72,7 +72,7 @@ function g(e) {
         let {
           default: e
         } = await n.e("5396").then(n.bind(n, 731646));
-        return t => (0, r.jsx)(e, m(_({}, t), {
+        return t => (0, r.jsx)(e, g(p({}, t), {
           id: i,
           label: d.NW.string(d.t.oJ1Mu7)
         }))
@@ -88,10 +88,10 @@ function g(e) {
   if (null == E) return null;
   if (null != v) {
     let e = b[v.name].lastValidationResult;
-    o = v.displayName, p = v.displayDescription, h = (null == e ? void 0 : e.success) ? null : null == e ? void 0 : e.error
-  } else o = "".concat(u.GI).concat(E.displayName), p = E.displayDescription, h = null;
+    o = v.displayName, _ = v.displayDescription, h = (null == e ? void 0 : e.success) ? null : null == e ? void 0 : e.error
+  } else o = "".concat(u.GI).concat(E.displayName), _ = E.displayDescription, h = null;
   return (0, r.jsxs)("div", {
-    className: a()(g, f.bar),
+    className: a()(m, f.bar),
     onContextMenu: O,
     children: [(0, r.jsxs)("div", {
       className: f.commandInfo,
@@ -103,7 +103,7 @@ function g(e) {
         children: h
       }) : (0, r.jsx)("span", {
         className: f.description,
-        children: p
+        children: _
       })]
     }), (0, r.jsx)("div", {
       className: f.actions,

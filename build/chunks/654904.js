@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $r: () => _,
-  DP: () => g,
-  Ly: () => m,
+  $r: () => p,
+  DP: () => m,
+  Ly: () => g,
   SG: () => h
 });
 var r = n(200651);
@@ -28,7 +28,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,12 +41,12 @@ function p(e) {
   return e
 }
 
-function _(e, t, i, a) {
+function p(e, t, i, a) {
   (0, o.ZDy)(async () => {
     let {
       default: o
     } = await Promise.all([n.e("91689"), n.e("55849"), n.e("6812")]).then(n.bind(n, 192277));
-    return n => (0, r.jsx)(o, p({
+    return n => (0, r.jsx)(o, _({
       filters: a,
       maxFileSizeBytes: c.B,
       imageSpecifications: e === u.pC.BANNER ? d.NW.string(d.t.IhzZlp) : void 0,
@@ -79,7 +79,7 @@ function h(e, t, n) {
   return s && null == t ? a.ZP.getDefaultAvatarURL(n.id, n.discriminator) : s || (null == t ? void 0 : t.avatar) == null ? n.getAvatarURL(void 0, i, o) : n.getAvatarURL(null == t ? void 0 : t.guildId, i, o)
 }
 
-function m(e) {
+function g(e) {
   var t;
   let {
     pendingNickname: n,
@@ -90,6 +90,6 @@ function m(e) {
   return null !== (t = null != a ? a : l) && void 0 !== t ? t : s.ZP.getName(i)
 }
 
-function g(e) {
+function m(e) {
   return (null != e ? (0, i.Bd)(e) : 1) > .25
 }

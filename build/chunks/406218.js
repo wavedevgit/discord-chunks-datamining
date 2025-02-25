@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  o_: () => p,
+  o_: () => _,
   sO: () => f,
   xo: () => d
 }), n(47120), n(266796);
@@ -81,7 +81,7 @@ function f(e) {
   }).filter(a.lm)), null != e.gameApplicationIds && (t.game_application_ids = e.gameApplicationIds), t
 }
 
-function p(e) {
+function _(e) {
   return e.reduce((e, t) => (e[t.game_application_id] = {
     level: t.activity_level,
     score: t.activity_score

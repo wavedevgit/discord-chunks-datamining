@@ -13,11 +13,11 @@ var r = n(664751),
   u = n(620662),
   d = n(812206),
   f = n(439849),
-  p = n(669764),
-  _ = n(706454),
+  _ = n(669764),
+  p = n(706454),
   h = n(757266),
-  m = n(77498),
-  g = n(283595),
+  g = n(77498),
+  m = n(283595),
   E = n(417363),
   v = n(626135),
   b = n(630388),
@@ -46,7 +46,7 @@ function w(e) {
     analyticsLocations: u,
     joinUserId: d,
     joinSessionId: f,
-    activity: p
+    activity: _
   } = e;
   M({
     applicationId: t,
@@ -59,7 +59,7 @@ function w(e) {
     joinUserId: d,
     joinSessionId: f,
     secret: n,
-    activity: p
+    activity: _
   }).then(e => 0 === e ? null : y.Z.waitConnected(t).then(() => Promise.race([y.Z.waitSubscribed(t, A.zMe.ACTIVITY_JOIN)]))).then(() => {
     l.Z.dispatch({
       type: "ACTIVITY_JOIN",
@@ -119,8 +119,8 @@ async function M(e) {
     partyId: a,
     locationObject: s = {},
     analyticsLocations: f = [],
-    joinUserId: p,
-    joinSessionId: m,
+    joinUserId: _,
+    joinSessionId: g,
     secret: v,
     activity: b
   } = e;
@@ -131,8 +131,8 @@ async function M(e) {
     partyId: a,
     locationObject: s,
     analyticsLocations: f,
-    joinUserId: p,
-    joinSessionId: m,
+    joinUserId: _,
+    joinSessionId: g,
     secret: v,
     instanceId: void 0,
     isContextlessActivity: (0, u.Z)(b, A.xjy.EMBEDDED) && (0, u.Z)(b, A.xjy.CONTEXTLESS)
@@ -140,16 +140,16 @@ async function M(e) {
   if (h.Z.isConnected(t)) return Promise.resolve();
   let O = null;
   if (null == n) {
-    let e = g.Z.getActiveLibraryApplication(t);
+    let e = m.Z.getActiveLibraryApplication(t);
     n = null != e ? e.branchId : t
   }
   if (E.Z.isLaunchable(t, n)) {
     let e = E.Z.getState(t, n),
-      r = g.Z.getActiveLaunchOptionId(t, n);
+      r = m.Z.getActiveLaunchOptionId(t, n);
     if (null == e) throw Error("Missing dispatch game when launching");
-    let i = g.Z.getLibraryApplication(t, n);
+    let i = m.Z.getLibraryApplication(t, n);
     if (null == i) throw Error("Missing library application when launching");
-    O = x(t).then(t => y.Z.launchDispatchApplication(e, t, _.default.locale, i.getBranchName(), r))
+    O = x(t).then(t => y.Z.launchDispatchApplication(e, t, p.default.locale, i.getBranchName(), r))
   } else {
     let e = d.Z.getApplication(t);
     O = null != e ? y.Z.launch(e) : y.Z.launchGame(t)
@@ -190,9 +190,9 @@ let j = {
     })
   },
   toggleOverlay(e, t, n) {
-    let r = m.Z.getGameByName(e.name);
+    let r = g.Z.getGameByName(e.name);
     if (null != r) {
-      let e = g.Z.getActiveLibraryApplication(r.id);
+      let e = m.Z.getActiveLibraryApplication(r.id);
       if (null != e) {
         let r = e.getFlags(),
           i = b.yE(r, A.eHb.OVERLAY_DISABLED);
@@ -248,7 +248,7 @@ let j = {
       forceFetch: t
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
       forceFetch: !1
-    }, n = t ? e : e.filter(p.Z.canFetch);
+    }, n = t ? e : e.filter(_.Z.canFetch);
     if (0 === n.length) return;
     l.Z.dispatch({
       type: "DETECTABLE_GAME_SUPPLEMENTAL_FETCH",
@@ -278,8 +278,8 @@ let j = {
     for (; n.length > 0;) r(n.splice(0, D))
   },
   getDetectableGames() {
-    if (m.Z.fetching || null != m.Z.lastFetched) return;
-    let e = m.Z.detectableGamesEtag;
+    if (g.Z.fetching || null != g.Z.lastFetched) return;
+    let e = g.Z.detectableGamesEtag;
     l.Z.wait(() => {
       l.Z.dispatch({
         type: "GAMES_DATABASE_FETCH"
@@ -320,7 +320,7 @@ let j = {
         304 === t ? l.Z.dispatch({
           type: "GAMES_DATABASE_UPDATE",
           games: [],
-          etag: m.Z.detectableGamesEtag
+          etag: g.Z.detectableGamesEtag
         }) : l.Z.dispatch({
           type: "GAMES_DATABASE_FETCH_FAIL"
         })
@@ -399,7 +399,7 @@ let j = {
       partyId: u,
       locationObject: d,
       analyticsLocations: f,
-      activity: p
+      activity: _
     } = e;
     if (__OVERLAY__) return l.Z.dispatch({
       type: "OVERLAY_JOIN_GAME",
@@ -427,7 +427,7 @@ let j = {
         analyticsLocations: f,
         joinUserId: t,
         joinSessionId: n,
-        activity: p
+        activity: _
       }), !0
     } catch (e) {
       return l.Z.dispatch({

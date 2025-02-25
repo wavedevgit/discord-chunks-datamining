@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Kj: () => _,
-  NW: () => m,
+  Kj: () => p,
+  NW: () => g,
   St: () => h,
   Vb: () => c.Vb,
   t: () => l.k,
@@ -49,17 +49,17 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 n(938474);
-let _ = function(e) {
+let p = function(e) {
     return [Array.isArray(navigator.languages) ? navigator.languages[0] : null, navigator.language, navigator.browserLanguage, navigator.userLanguage, e].find(e => null != e && "" !== e)
   }("en-US"),
-  h = (0, c.YI)(_, "en-US"),
-  m = new o.IntlManager({
+  h = (0, c.YI)(p, "en-US"),
+  g = new o.IntlManager({
     initialLocale: h,
     defaultLocale: "en-US"
   }).withFormatters({
@@ -96,7 +96,7 @@ let _ = function(e) {
             if (null == o) break;
             l.onClick = null !== (c = o.onClick) && void 0 !== c ? c : o, l.onContextMenu = o.onContextMenu
         }
-        return (0, i.createElement)(a, p(d({}, l), {
+        return (0, i.createElement)(a, _(d({}, l), {
           key: t
         }), e)
       }

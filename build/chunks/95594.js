@@ -63,24 +63,24 @@ function f(e) {
     getItemKey: s,
     getItemHeight: c,
     getSectionHeight: f,
-    chunkSize: p = 250,
-    getScrollerState: _,
+    chunkSize: _ = 250,
+    getScrollerState: p,
     maxBufferWidth: h,
-    itemGutter: m,
-    removeEdgeItemGutters: g,
+    itemGutter: g,
+    removeEdgeItemGutters: m,
     sectionGutter: E,
     padding: v,
     paddingVertical: b,
     paddingHorizontal: y,
     dir: O
-  } = e, S = (0, o.Z)(), I = (0, r.useRef)(d), [T] = (0, r.useState)(() => new i.ZP), N = _(), A = Math.min(null != h ? h : 1 / 0, N.offsetWidth), C = null != h ? Math.max(0, N.offsetWidth - h) : 0, {
+  } = e, S = (0, o.Z)(), I = (0, r.useRef)(d), [T] = (0, r.useState)(() => new i.ZP), N = p(), A = Math.min(null != h ? h : 1 / 0, N.offsetWidth), C = null != h ? Math.max(0, N.offsetWidth - h) : 0, {
     dirty: R,
     chunkStart: P,
     chunkEnd: D,
     forceUpdateOnChunkChange: w
   } = (0, a.Z)({
-    chunkSize: p,
-    getScrollerState: _,
+    chunkSize: _,
+    getScrollerState: p,
     forceUpdate: S
   });
   return I.current = (0, r.useMemo)(() => R > 0 ? I.current : (T.mergeProps({
@@ -90,15 +90,15 @@ function f(e) {
     getItemHeight: c,
     getSectionHeight: f,
     bufferWidth: A,
-    itemGutter: m,
-    removeEdgeItemGutters: g,
+    itemGutter: g,
+    removeEdgeItemGutters: m,
     sectionGutter: E,
     padding: v,
     paddingVertical: b,
     paddingHorizontal: y,
     marginLeft: C / 2,
     dir: O
-  }), T.computeVisibleSections(Math.max(0, P * p), D * p), T.getState()), [R, T, t, n, s, c, f, P, D, p, m, g, E, v, b, y, A, O]), u(l({}, I.current), {
+  }), T.computeVisibleSections(Math.max(0, P * _), D * _), T.getState()), [R, T, t, n, s, c, f, P, D, _, g, m, E, v, b, y, A, O]), u(l({}, I.current), {
     masonryComputer: T,
     forceUpdateOnChunkChange: w,
     forceUpdate: S

@@ -28,8 +28,8 @@ var r = n(200651),
   C = n(448697),
   I = n(365831),
   S = n(639539),
-  P = n(627325),
-  T = n(981631),
+  T = n(627325),
+  P = n(981631),
   A = n(354459),
   w = n(474936),
   Z = n(388032),
@@ -111,7 +111,7 @@ function D(e) {
     }
   }), J = i.useRef(null);
   (0, d.ZP)(() => {
-    (0, N.r5)(), v.default.track(T.rMx.VOICE_FILTER_PICKER_OPENED, {
+    (0, N.r5)(), v.default.track(P.rMx.VOICE_FILTER_PICKER_OPENED, {
       active_voice_filter_id: null != Y ? Y : null
     })
   });
@@ -140,7 +140,7 @@ function D(e) {
         onChange: M,
         query: D,
         onClear: $
-      }), (0, r.jsx)(P.w, {
+      }), (0, r.jsx)(T.w, {
         query: D,
         columns: n ? 5 : 4,
         handleScroll: e => {
@@ -150,7 +150,7 @@ function D(e) {
             height: n,
             totalHeight: r
           } = t.getListDimensions();
-          e < r - n || (K(!0), v.default.track(T.rMx.VOICE_FILTER_PICKER_SCROLLED))
+          e < r - n || (K(!0), v.default.track(P.rMx.VOICE_FILTER_PICKER_SCROLLED))
         },
         voiceListRef: J
       }), !B && (0, r.jsxs)(l.animated.div, {
@@ -176,7 +176,7 @@ function D(e) {
               }),
               button: Z.NW.string(Z.t.cRCCJy),
               buttonAnalyticsObject: {
-                section: T.jXE.VOICE_FILTERS_FLOATING_UPSELL
+                section: P.jXE.VOICE_FILTERS_FLOATING_UPSELL
               },
               showShadow: !1,
               position: "inline",
@@ -209,7 +209,7 @@ function D(e) {
             innerClassName: k.voiceFiltersFooterButtonInner,
             onClick: t => {
               var n;
-              v.default.track(T.rMx.VOICE_FILTER_VOICE_SETTINGS_CLICKED, {
+              v.default.track(P.rMx.VOICE_FILTER_VOICE_SETTINGS_CLICKED, {
                 active_voice_filter_id: null != Y ? Y : null
               }), null === (n = e.onClick) || void 0 === n || n.call(e, t)
             },

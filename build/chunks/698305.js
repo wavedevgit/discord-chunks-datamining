@@ -17,27 +17,27 @@ let u = async e => {
     location: u,
     openChannel: d = !0,
     whenReady: f,
-    entry: p
+    entry: _
   } = e, {
-    valid: _,
+    valid: p,
     failureReason: h
   } = await (0, c.v)({
     type: o.Ie.NORMAL,
     content: n,
     channel: null
   });
-  if (!_) throw Error(h);
-  let m = d ? await r.Z.openPrivateChannel(t, !1, !1, u) : await r.Z.getOrEnsurePrivateChannel(t),
-    g = l.Z.getChannel(m);
-  if (null == g) throw Error("Failed to open private channel");
-  if (null != p)(0, a.p)({
-    channel: g,
+  if (!p) throw Error(h);
+  let g = d ? await r.Z.openPrivateChannel(t, !1, !1, u) : await r.Z.getOrEnsurePrivateChannel(t),
+    m = l.Z.getChannel(g);
+  if (null == m) throw Error("Failed to open private channel");
+  if (null != _)(0, a.p)({
+    channel: m,
     content: n,
-    entry: p,
+    entry: _,
     whenReady: f
   });
   else {
-    let e = s.ZP.parse(g, n);
-    return i.Z.sendMessage(g.id, e, f)
+    let e = s.ZP.parse(m, n);
+    return i.Z.sendMessage(m.id, e, f)
   }
 }

@@ -15,9 +15,9 @@ var r = n(570140),
   u = n(358085),
   d = n(998502),
   f = n(789465),
-  p = n(981631);
+  _ = n(981631);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,13 +33,13 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,8 +50,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -95,20 +95,20 @@ function O(e, t) {
       f = null;
     return new Promise(s => {
       let l = (e, n) => {
-          c.default.track(p.rMx.HOOK_RESULT, h({
+          c.default.track(_.rMx.HOOK_RESULT, h({
             game_name: u,
             game_id: null == d ? null : d.id,
             success: n,
             error: e
           }, t)), null != f && (clearTimeout(f), f = null), n ? s() : s(e = null != e ? e : "Unknown hook error")
         },
-        _ = a.ZP.getOverlayOptionsForPID(e),
-        m = g(h({}, o.r, _), {
+        p = a.ZP.getOverlayOptionsForPID(e),
+        g = m(h({}, o.r, p), {
           elevate: a.ZP.shouldElevateProcessForPID(e)
         });
-      null == m.allowHook || m.allowHook ? (f = setTimeout(() => {
+      null == g.allowHook || g.allowHook ? (f = setTimeout(() => {
         n.cancelAttachToProcess(e), l("Timed out waiting for hook response", !1)
-      }, 12e4), n.attachToProcess(e, m, l), r.Z.wait(() => i.Z.clearElevatedProcess())) : s("Hook is disabled for this game")
+      }, 12e4), n.attachToProcess(e, g, l), r.Z.wait(() => i.Z.clearElevatedProcess())) : s("Hook is disabled for this game")
     })
   })
 }

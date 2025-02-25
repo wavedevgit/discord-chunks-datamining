@@ -13,13 +13,13 @@ var r = n(879443),
   u = n(358085),
   d = n(981631);
 let f = {},
-  p = [],
-  _ = !1,
+  _ = [],
+  p = !1,
   h = a()(new(i())(window)),
-  m = (0, u.isMac)() || (0, u.isMacWeb)() ? "cmd" : "ctrl",
-  g = (0, u.isMac)() || (0, u.isMacWeb)() ? "opt" : "alt",
+  g = (0, u.isMac)() || (0, u.isMacWeb)() ? "cmd" : "ctrl",
+  m = (0, u.isMac)() || (0, u.isMacWeb)() ? "opt" : "alt",
   E = (0, u.isMac)() || (0, u.isMacWeb)() ? "return" : "enter",
-  v = [...s.u.binds, "mod+shift+[", "mod+shift+]", "mod+[", "mod+]", "alt+[", "alt+]", "ctrl+shift+tab", "ctrl+tab", "mod+n", "mod+t", "mod+shift+t", "mod+plus", "mod+minus", "mod+0"].map(e => e.replace("mod", m)),
+  v = [...s.u.binds, "mod+shift+[", "mod+shift+]", "mod+[", "mod+]", "alt+[", "alt+]", "ctrl+shift+tab", "ctrl+tab", "mod+n", "mod+t", "mod+shift+t", "mod+plus", "mod+minus", "mod+0"].map(e => e.replace("mod", g)),
   b = () => [],
   y = [];
 
@@ -31,7 +31,7 @@ function O(e, t) {
 function S(e) {
   let t = [];
   for (let n of Object.values(e)) null != n && t.push(...n.binds);
-  return t.map(e => e.replace("mod", m))
+  return t.map(e => e.replace("mod", g))
 }
 
 function I(e, t) {
@@ -45,7 +45,7 @@ function T(e) {
     if (null == n) continue;
     let e = b();
     u.isPlatformEmbedded || (e = e.concat(v));
-    let r = n.binds.filter(t => (t = t.replace("mod", m), 0 > e.indexOf(t)));
+    let r = n.binds.filter(t => (t = t.replace("mod", g), 0 > e.indexOf(t)));
     if (0 === r.length) continue;
     let i = n.comboKeysBindGlobal ? h.bindGlobal : h.bind;
     if (null != n.action && i.call(h, r, I(t, n.action)), null != n.keyup && i.call(h, r, I(t, n.keyup), "keyup"), null != n.keydown) {
@@ -56,8 +56,8 @@ function T(e) {
 }(0, u.isDesktop)() && new(i())(document.documentElement).bind("backspace", e => e.preventDefault());
 let N = {
   combokeys: h,
-  modKey: m,
-  altKey: g,
+  modKey: g,
+  altKey: m,
   returnKey: E,
   setGetKeybindList(e) {
     b = e
@@ -72,20 +72,20 @@ let N = {
     f = e
   },
   enable() {
-    !_ && (_ = !0, this.checkDupes(f), T(f))
+    !p && (p = !0, this.checkDupes(f), T(f))
   },
   enableTemp(e) {
-    p.push(f), f = e, T(e), _ = !0
+    _.push(f), f = e, T(e), p = !0
   },
   disableTemp() {
-    let e = p.pop();
+    let e = _.pop();
     null != e && (f = e), this.disable(), this.enable()
   },
   disable() {
-    _ && (_ = !1, y.forEach(e => e()), y = [], h.reset())
+    p && (p = !1, y.forEach(e => e()), y = [], h.reset())
   },
   validateKeybind(e) {
-    _ && this.hasBind(e) && h.unbind(e)
+    p && this.hasBind(e) && h.unbind(e)
   },
   hasBind(e) {
     let t = S(f);

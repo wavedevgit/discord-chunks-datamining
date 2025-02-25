@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Fq: () => f,
-  ZP: () => _,
+  ZP: () => p,
   Zj: () => u
 }), n(47120);
 var r, i = n(200651),
@@ -48,7 +48,7 @@ function f(e, t, n) {
     }
   })
 }
-class p extends(r = o.PureComponent) {
+class _ extends(r = o.PureComponent) {
   componentDidMount() {
     this._isMounted = !0
   }
@@ -107,9 +107,9 @@ class p extends(r = o.PureComponent) {
     })
   }
 }
-c(p, "defaultProps", {
+c(_, "defaultProps", {
   multiple: !0,
   tabIndex: -1,
   maxFileSizeBytes: 1 / 0
 });
-let _ = p
+let p = _

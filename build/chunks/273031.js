@@ -26,14 +26,14 @@ function u(e) {
     children: e => {
       let {
         onMouseEnter: s,
-        onMouseLeave: p,
-        onClick: _
+        onMouseLeave: _,
+        onClick: p
       } = e;
       return (0, r.jsx)(l.zx, {
         onMouseEnter: s,
-        onMouseLeave: p,
+        onMouseLeave: _,
         onClick: e => {
-          e.stopPropagation(), null == _ || _(), t(e)
+          e.stopPropagation(), null == p || p(), t(e)
         },
         dangerous: u,
         "aria-label": null != f ? f : o,

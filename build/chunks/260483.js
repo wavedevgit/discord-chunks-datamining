@@ -33,20 +33,20 @@ function d(e) {
 }
 let f = {};
 
-function p(e) {
+function _(e) {
   f = o().omitBy(f, t => t.guildId === e)
 }
 
-function _(e) {
+function p(e) {
   f = o().omitBy(f, t => t.parentId === e)
 }
 
 function h(e) {
   var t;
-  null === (t = e.threads) || void 0 === t || t.forEach(g)
+  null === (t = e.threads) || void 0 === t || t.forEach(m)
 }
 
-function m(e) {
+function g(e) {
   if (!(e.id in f)) {
     var t, n;
     f[e.id] = {
@@ -59,9 +59,9 @@ function m(e) {
   return f[e.id]
 }
 
-function g(e) {
+function m(e) {
   if (!l.AW.has(e.type)) return !1;
-  let t = m(e);
+  let t = g(e);
   null != e.memberCount && (t.memberCount = e.memberCount), null != e.memberIdsPreview && (t.memberIdsPreview = e.memberIdsPreview)
 }
 
@@ -87,21 +87,21 @@ function y(e) {
   let {
     guild: t
   } = e;
-  p(t.id)
+  _(t.id)
 }
 
 function O(e) {
   let {
     channel: t
   } = e;
-  return g(t)
+  return m(t)
 }
 
 function S(e) {
   let {
     threads: t
   } = e;
-  t.forEach(g)
+  t.forEach(m)
 }
 
 function I(e) {
@@ -115,7 +115,7 @@ function T(e) {
   let {
     channel: t
   } = e;
-  _(t.id)
+  p(t.id)
 }
 
 function N(e) {
@@ -143,7 +143,7 @@ function C(e) {
 function R(e) {
   if (null != e && !(e.id in f)) {
     let t = c.Z.getChannel(e.id);
-    if (null != t) return g(t), !0
+    if (null != t) return m(t), !0
   }
   return !1
 }

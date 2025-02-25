@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  V1: () => _,
-  ZI: () => g,
+  V1: () => p,
+  ZI: () => m,
   ZP: () => E
 });
 var r = n(524437),
@@ -15,9 +15,9 @@ var r = n(524437),
   u = n(695346),
   d = n(675478),
   f = n(981631),
-  p = n(874893);
+  _ = n(874893);
 
-function _(e) {
+function p(e) {
   return d.hW.updateAsync("guildFolders", t => {
     t.folders = e.map(e => {
       let t = r.yX.create({
@@ -49,7 +49,7 @@ function h(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   return {
     backgroundGradientPresetId: null != e.backgroundGradientPresetId ? i.yC.create({
       value: e.backgroundGradientPresetId
@@ -57,12 +57,12 @@ function m(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   let {
     backgroundGradientPresetId: t,
     theme: n,
     useSystemTheme: r
-  } = e, i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.fy.INFREQUENT_USER_ACTION, a = "system" === n ? p.K.ON : p.K.OFF, c = null != r ? r : a;
+  } = e, i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.fy.INFREQUENT_USER_ACTION, a = "system" === n ? _.K.ON : _.K.OFF, c = null != r ? r : a;
   if (o.Z.dispatch({
       type: "UNSYNCED_USER_SETTINGS_UPDATE",
       settings: {
@@ -81,7 +81,7 @@ function g(e) {
         }
       }
     }), s.Z.shouldSync("appearance")) return d.hW.updateAsync("appearance", e => {
-    e.theme = h(n), e.clientThemeSettings = m({
+    e.theme = h(n), e.clientThemeSettings = g({
       backgroundGradientPresetId: t
     })
   }, i)

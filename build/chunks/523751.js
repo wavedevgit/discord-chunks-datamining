@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(481060),
   d = n(353093),
   f = n(979264),
-  p = n(436774),
-  _ = n(623624),
+  _ = n(436774),
+  p = n(623624),
   h = n(297700),
-  m = n(210887),
-  g = n(271383),
+  g = n(210887),
+  m = n(271383),
   E = n(594174),
   v = n(665786),
   b = n(697725),
@@ -139,7 +139,7 @@ let w = {
     foregroundLightColor: l.Z.unsafe_rawColors.WHITE_400.css,
     backgroundDarkColor: l.Z.unsafe_rawColors.WHITE_400.css,
     backgroundLightColor: l.Z.unsafe_rawColors.PRIMARY_500.css,
-    premiumBackgroundColor: p.JX.PREMIUM_GUILD_BADGE_V2_BACKGROUND,
+    premiumBackgroundColor: _.JX.PREMIUM_GUILD_BADGE_V2_BACKGROUND,
     premiumForegroundColor: l.Z.unsafe_rawColors.WHITE_400.css,
     sizeAdjustment: 2
   },
@@ -149,7 +149,7 @@ let w = {
     foregroundLightColor: l.Z.unsafe_rawColors.WHITE_400.css,
     backgroundDarkColor: l.Z.unsafe_rawColors.WHITE_400.css,
     backgroundLightColor: l.Z.unsafe_rawColors.PRIMARY_500.css,
-    premiumBackgroundColor: p.JX.PREMIUM_GUILD_BADGE_V2_BACKGROUND,
+    premiumBackgroundColor: _.JX.PREMIUM_GUILD_BADGE_V2_BACKGROUND,
     premiumForegroundColor: l.Z.unsafe_rawColors.WHITE_400.css,
     sizeAdjustment: 2
   },
@@ -222,7 +222,7 @@ function M(e) {
   let t, n, {
       guild: o,
       tooltipColor: l = u.ua7.Colors.BRAND,
-      tooltipPosition: p,
+      tooltipPosition: _,
       className: v,
       flowerStarClassName: b,
       iconClassName: y,
@@ -232,15 +232,15 @@ function M(e) {
       disableBoostClick: D,
       "aria-label": L = !1
     } = e,
-    M = (0, s.e7)([E.default, g.ZP], () => {
+    M = (0, s.e7)([E.default, m.ZP], () => {
       let e = E.default.getCurrentUser();
-      return g.ZP.isMember(null == o ? void 0 : o.id, null == e ? void 0 : e.id)
+      return m.ZP.isMember(null == o ? void 0 : o.id, null == e ? void 0 : e.id)
     }),
-    j = (0, s.e7)([m.Z], () => m.Z.theme),
+    j = (0, s.e7)([g.Z], () => g.Z.theme),
     k = (0, S.XX)(o),
     U = (0, O.i)(k),
     G = i.useCallback(e => {
-      k.premium && M && !D && (e.stopPropagation(), e.preventDefault(), (0, _.f)({
+      k.premium && M && !D && (e.stopPropagation(), e.preventDefault(), (0, p.f)({
         guildId: o.id,
         location: {
           section: I.jXE.GUILD_HEADER,
@@ -254,7 +254,7 @@ function M(e) {
     let e = (0, d.ky)(o.id, null === (B = o.profile) || void 0 === B ? void 0 : B.badge, R);
     return null == e ? null : (0, r.jsx)(u.ua7, {
       color: l,
-      position: p,
+      position: _,
       "aria-label": L,
       text: (0, r.jsx)(x, {
         badgeType: U,
@@ -289,7 +289,7 @@ function M(e) {
   let X = Math.floor(.75 * R) - (null != z ? z : 0);
   return (0, r.jsx)(u.ua7, {
     color: l,
-    position: p,
+    position: _,
     "aria-label": L,
     text: (0, r.jsx)(x, {
       badgeType: U,

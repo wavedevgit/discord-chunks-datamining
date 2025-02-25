@@ -70,7 +70,7 @@ function f(e, t) {
     } = d();
     if (!a) return (0, r.jsx)(e, l({}, o));
     {
-      var c, u, f, p;
+      var c, u, f, _;
       let e = l({}, o);
       for (let [t, r] of Object.entries(n = l({
           foreground: "colorClass",
@@ -83,7 +83,7 @@ function f(e, t) {
         }
         e[r] = n
       }
-      return null !== (f = (c = e).width) && void 0 !== f || (c.width = i.size), null !== (p = (u = e).height) && void 0 !== p || (u.height = i.size), (0, r.jsx)(t, l({}, e))
+      return null !== (f = (c = e).width) && void 0 !== f || (c.width = i.size), null !== (_ = (u = e).height) && void 0 !== _ || (u.height = i.size), (0, r.jsx)(t, l({}, e))
     }
   }
 }

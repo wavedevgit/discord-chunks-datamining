@@ -20,10 +20,10 @@ function t(e) {
     f = {
       begin: u
     },
-    p = e.inherit(f, {
+    _ = e.inherit(f, {
       keywords: r
     }),
-    _ = {
+    p = {
       begin: /\(/,
       end: /\)/
     },
@@ -35,11 +35,11 @@ function t(e) {
         begin: /=/,
         end: /=/,
         starts: {
-          contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, p, _]
+          contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, _, p]
         }
       }
     },
-    m = {
+    g = {
       begin: /as\s+\|/,
       keywords: {
         keyword: "as"
@@ -49,22 +49,22 @@ function t(e) {
         begin: /\w+/
       }]
     },
-    g = {
-      contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, m, h, p, _],
+    m = {
+      contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, g, h, _, p],
       returnEnd: !0
     },
     E = e.inherit(f, {
       className: "name",
       keywords: n,
-      starts: e.inherit(g, {
+      starts: e.inherit(m, {
         end: /\)/
       })
     });
-  _.contains = [E];
+  p.contains = [E];
   let v = e.inherit(f, {
       keywords: n,
       className: "name",
-      starts: e.inherit(g, {
+      starts: e.inherit(m, {
         end: /\}\}/
       })
     }),
@@ -75,7 +75,7 @@ function t(e) {
     y = e.inherit(f, {
       className: "name",
       keywords: n,
-      starts: e.inherit(g, {
+      starts: e.inherit(m, {
         end: /\}\}/
       })
     });

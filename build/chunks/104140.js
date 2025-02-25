@@ -12,11 +12,11 @@ var r, i = n(200651),
   u = n.n(c),
   d = n(642128),
   f = n(772848),
-  p = n(722770),
-  _ = n(846519),
+  _ = n(722770),
+  p = n(846519),
   h = n(215569),
-  m = n(481060),
-  g = n(540059),
+  g = n(481060),
+  m = n(540059),
   E = n(562497);
 
 function v(e, t, n) {
@@ -100,8 +100,8 @@ let T = 108e5,
     mass: 1
   },
   L = e => {
-    let t = (0, m.dQu)(m.TVs.modules.guildbar.AVATAR_SIZE),
-      n = (0, m.dQu)(m.TVs.modules.guildbar.FOLDER_SIZE);
+    let t = (0, g.dQu)(g.TVs.modules.guildbar.AVATAR_SIZE),
+      n = (0, g.dQu)(g.TVs.modules.guildbar.FOLDER_SIZE);
     return e ? n : t
   },
   x = e => e / 2,
@@ -204,7 +204,7 @@ function W(e) {
     highlight: r = !1,
     rounded: o = !1
   } = e, a = S(e, ["selected", "lowerBadgeSize", "highlight", "rounded"]);
-  let s = (0, g.Q3)("BlobMask"),
+  let s = (0, m.Q3)("BlobMask"),
     l = !!a.isFolder,
     c = L(!1),
     u = L(l),
@@ -375,9 +375,9 @@ class Y extends o.Component {
       upperBadge: c,
       highlight: u,
       viewBoxSize: f,
-      badgeMaskSize: _,
-      badgeMaskStroke: m,
-      isVisualRefreshEnabled: g,
+      badgeMaskSize: p,
+      badgeMaskStroke: g,
+      isVisualRefreshEnabled: m,
       isFolder: v
     } = this.props, {
       maskId: b,
@@ -419,12 +419,12 @@ class Y extends o.Component {
       L = (null == a ? void 0 : a.width) != null ? a.width : A,
       x = (null == a ? void 0 : a.height) != null ? a.height : A,
       M = {
-        width: g ? f + 8 : f,
-        height: g ? f + 8 : f,
-        x: g ? -4 : 0,
-        y: g ? -4 : 0
+        width: m ? f + 8 : f,
+        height: m ? f + 8 : f,
+        x: m ? -4 : 0,
+        y: m ? -4 : 0
       },
-      j = g && v ? 20 : _;
+      j = m && v ? 20 : p;
     return (0, i.jsxs)("div", {
       className: s()(t, E.wrapper),
       style: l,
@@ -447,8 +447,8 @@ class Y extends o.Component {
             id: P
           }), I ? (0, i.jsx)(d.animated.rect, {
             id: N,
-            x: f - j + m,
-            y: -m,
+            x: f - j + g,
+            y: -g,
             width: j,
             height: j,
             rx: j / 2,
@@ -456,13 +456,13 @@ class Y extends o.Component {
             transform: this.getBadgePositionInterpolation(O, -1)
           }) : null, I ? (0, i.jsx)(d.animated.rect, {
             id: R,
-            x: f - (L + 2 * m) + m,
-            y: f - (x + 2 * m) + m,
-            width: L + 2 * m,
-            height: x + 2 * m,
-            rx: _ / 2,
-            ry: _ / 2,
-            transform: this.getBadgePositionInterpolation(y, 1, L + m)
+            x: f - (L + 2 * g) + g,
+            y: f - (x + 2 * g) + g,
+            width: L + 2 * g,
+            height: x + 2 * g,
+            rx: p / 2,
+            ry: p / 2,
+            transform: this.getBadgePositionInterpolation(y, 1, L + g)
           }) : null]
         }), (0, i.jsxs)("mask", {
           id: b,
@@ -521,7 +521,7 @@ class Y extends o.Component {
           })]
         }) : null, u && (0, i.jsx)(d.animated.path, {
           d: this.getPathInterpolation(),
-          stroke: p.Z.BRAND_500,
+          stroke: _.Z.BRAND_500,
           "stroke-width": C,
           className: E.highlight,
           mask: "url(#".concat(D, ")")
@@ -549,7 +549,7 @@ class Y extends o.Component {
     }, "wrapper")
   }
   constructor(...e) {
-    super(...e), v(this, "timeout", new _.V7), v(this, "state", {
+    super(...e), v(this, "timeout", new p.V7), v(this, "state", {
       renderComplex: !1,
       hasRenderedBadge: !1,
       maskId: (0, f.Z)(),
@@ -581,20 +581,20 @@ function K(e) {
     lowerBadgeSize: u,
     highlight: d,
     badgeMaskStroke: f,
-    badgeMaskSize: _,
+    badgeMaskSize: p,
     upperBadge: h,
-    lowerBadge: m,
-    rounded: g = !1
+    lowerBadge: g,
+    rounded: m = !1
   } = e, [v, b] = o.useState(!1), y = () => {
     b(!0)
   }, O = () => {
     b(!1)
-  }, S = null != h, I = null != m, T = o.useId(), N = "".concat(T, "-upper_badge_masks"), R = "".concat(T, "-lower_badge_masks"), P = "".concat(T, "-blob_mask"), D = "".concat(T, "-stroke_mask"), w = "".concat(T, "-highlight_mask"), L = (null == u ? void 0 : u.width) != null ? u.width : A, x = (null == u ? void 0 : u.height) != null ? u.height : A, M = {
+  }, S = null != h, I = null != g, T = o.useId(), N = "".concat(T, "-upper_badge_masks"), R = "".concat(T, "-lower_badge_masks"), P = "".concat(T, "-blob_mask"), D = "".concat(T, "-stroke_mask"), w = "".concat(T, "-highlight_mask"), L = (null == u ? void 0 : u.width) != null ? u.width : A, x = (null == u ? void 0 : u.height) != null ? u.height : A, M = {
     width: n + 8,
     height: n + 8,
     x: -4,
     y: -4
-  }, U = c ? 20 : _, G = g ? k(n) : j(n);
+  }, U = c ? 20 : p, G = m ? k(n) : j(n);
   return (0, i.jsxs)("div", {
     className: s()(r, E.wrapper),
     style: a,
@@ -624,15 +624,15 @@ function K(e) {
           height: U,
           rx: U / 2,
           ry: U / 2
-        }) : null, null != m ? (0, i.jsx)("rect", {
+        }) : null, null != g ? (0, i.jsx)("rect", {
           id: R,
           className: E.badgeStroke,
           x: n - (L + 2 * f) + f,
           y: n - (x + 2 * f) + f,
           width: L + 2 * f,
           height: x + 2 * f,
-          rx: _ / 2,
-          ry: _ / 2
+          rx: p / 2,
+          ry: p / 2
         }) : null]
       }), (0, i.jsxs)("mask", {
         id: T,
@@ -683,13 +683,13 @@ function K(e) {
           className: E.focusFill,
           children: [null != h ? (0, i.jsx)("use", {
             href: "#".concat(N)
-          }) : null, null != m ? (0, i.jsx)("use", {
+          }) : null, null != g ? (0, i.jsx)("use", {
             href: "#".concat(R)
           }) : null]
         })]
       }) : null, d && (0, i.jsx)("path", {
         d: G,
-        stroke: p.Z.BRAND_500,
+        stroke: _.Z.BRAND_500,
         "stroke-width": C,
         className: E.highlight,
         mask: "url(#".concat(D, ")")
@@ -702,9 +702,9 @@ function K(e) {
         height: n,
         children: t
       }, "foreign-object")]
-    }, "svg"), null != m ? (0, i.jsx)("div", {
+    }, "svg"), null != g ? (0, i.jsx)("div", {
       className: E.lowerBadge,
-      children: m
+      children: g
     }) : null, null != h ? (0, i.jsx)("div", {
       className: E.upperBadge,
       children: h

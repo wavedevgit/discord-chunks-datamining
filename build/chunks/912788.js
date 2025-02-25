@@ -30,7 +30,7 @@ function f() {
   h()
 }
 
-function p(e) {
+function _(e) {
   let {
     message: t,
     code: n
@@ -38,7 +38,7 @@ function p(e) {
   l = new a.HF(t, n)
 }
 
-function _(e) {
+function p(e) {
   let {
     message: t,
     code: n
@@ -50,11 +50,11 @@ function h() {
   l = null
 }
 
-function m(e) {
+function g(e) {
   c = e.giftCode, u = e.skuId
 }
 
-function g(e) {
+function m(e) {
   let {
     giftCode: t
   } = e;
@@ -84,10 +84,10 @@ let y = new b(o.Z, {
   PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: f,
   PREMIUM_PAYMENT_UPDATE_SUCCESS: h,
   PREMIUM_PAYMENT_ERROR_CLEAR: h,
-  BRAINTREE_TOKENIZE_PAYPAL_FAIL: p,
-  BRAINTREE_TOKENIZE_VENMO_FAIL: _,
-  SKU_PURCHASE_SUCCESS: m,
+  BRAINTREE_TOKENIZE_PAYPAL_FAIL: _,
+  BRAINTREE_TOKENIZE_VENMO_FAIL: p,
+  SKU_PURCHASE_SUCCESS: g,
   SKU_PURCHASE_FAIL: E,
   SKU_PURCHASE_AWAIT_CONFIRMATION: v,
-  GIFT_CODE_CREATE: g
+  GIFT_CODE_CREATE: m
 })

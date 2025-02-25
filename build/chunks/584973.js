@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,23 +36,23 @@ function p(e) {
   return e
 }
 
-function _(e) {
+function p(e) {
   let {
     emoji: t,
     className: n,
     animate: i = !0,
     hideTooltip: f = !1,
-    tooltipDelay: _ = u.X
-  } = e, h = c.Yk.useSetting(), m = null != t.id ? ":".concat(t.name, ":") : l.ZP.translateSurrogatesToInlineEmoji(t.name), g = {
+    tooltipDelay: p = u.X
+  } = e, h = c.Yk.useSetting(), g = null != t.id ? ":".concat(t.name, ":") : l.ZP.translateSurrogatesToInlineEmoji(t.name), m = {
     className: o()(d.emoji, n),
     emojiId: t.id,
     emojiName: t.name,
     autoplay: !0,
     animated: !!(t.animated && h && i)
   };
-  return f ? (0, r.jsx)(s.Z, p({}, g)) : (0, r.jsx)(a.ua7, {
-    text: m,
-    delay: _,
-    children: e => (0, r.jsx)(s.Z, p({}, e, g))
+  return f ? (0, r.jsx)(s.Z, _({}, m)) : (0, r.jsx)(a.ua7, {
+    text: g,
+    delay: p,
+    children: e => (0, r.jsx)(s.Z, _({}, e, m))
   })
 }

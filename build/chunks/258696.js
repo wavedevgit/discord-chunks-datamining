@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(211242),
   d = n(540059),
   f = n(576645),
-  p = n(276444),
-  _ = n(599659),
+  _ = n(276444),
+  p = n(599659),
   h = n(963198),
-  m = n(286961),
-  g = n(913663),
+  g = n(286961),
+  m = n(913663),
   E = n(117530),
   v = n(594174),
   b = n(74538),
@@ -40,9 +40,9 @@ function w(e) {
     channel: n
   } = e, {
     enabled: i
-  } = _.O.useExperiment({
+  } = p.O.useExperiment({
     location: "gift-button"
-  }), o = (0, m.Z)();
+  }), o = (0, g.Z)();
   return i ? (0, r.jsx)(S.Z, {
     disabled: t,
     channel: n
@@ -57,7 +57,7 @@ function w(e) {
 }
 
 function L(e) {
-  var t, n, i, _, m, g, E, S, T;
+  var t, n, i, p, g, m, E, S, T;
   let {
     type: N,
     disabled: L,
@@ -84,18 +84,18 @@ function L(e) {
     location: "dc120b_4"
   }, {
     autoTrackExposure: !1
-  }), K = v.default.getCurrentUser(), z = null !== (m = (0, a.e7)([p.Z], () => Y && b.ZP.isPremiumExactly(K, P.p9.TIER_2) ? p.Z.getReferralsRemaining() : 0)) && void 0 !== m ? m : 0, q = (0, a.e7)([p.Z], () => {
+  }), K = v.default.getCurrentUser(), z = null !== (g = (0, a.e7)([_.Z], () => Y && b.ZP.isPremiumExactly(K, P.p9.TIER_2) ? _.Z.getReferralsRemaining() : 0)) && void 0 !== g ? g : 0, q = (0, a.e7)([_.Z], () => {
     if (!M.isDM() || void 0 === M.recipients || M.recipients.length > 1 || !Y) return !1;
     let e = M.recipients[0];
-    return p.Z.getSentUserIds().includes(e)
-  }), Q = (0, a.e7)([v.default], () => !M.isDM() || void 0 === M.recipients || M.recipients.length > 1 ? null : v.default.getUser(M.recipients[0])), [X, J] = (0, a.Wu)([p.Z], () => {
+    return _.Z.getSentUserIds().includes(e)
+  }), Q = (0, a.e7)([v.default], () => !M.isDM() || void 0 === M.recipients || M.recipients.length > 1 ? null : v.default.getUser(M.recipients[0])), [X, J] = (0, a.Wu)([_.Z], () => {
     let e = [!1, !1];
     if (!M.isDM() || void 0 === M.recipients || M.recipients.length > 1 || null == Q || Q.bot) return e;
     let t = q || z > 0,
-      n = p.Z.getRecipientEligibility(Q.id);
+      n = _.Z.getRecipientEligibility(Q.id);
     return [Y && t && n, n]
   }), $ = (0, d.R6)("ChannelTextAreaButtons"), ee = (0, f.Nt)() && (null === (t = N.confetti) || void 0 === t ? void 0 : t.button) != null;
-  return (o.tq || (M.isDM() && (null === (g = N.gifts) || void 0 === g ? void 0 : g.button) != null && null == V && (b.ZP.isPremiumExactly(K, P.p9.TIER_2) && J && h.Z.trackExposure({
+  return (o.tq || (M.isDM() && (null === (m = N.gifts) || void 0 === m ? void 0 : m.button) != null && null == V && (b.ZP.isPremiumExactly(K, P.p9.TIER_2) && J && h.Z.trackExposure({
     location: "dc120b_5"
   }), X && W.push((0, r.jsx)(A.Z, {
     disabled: L,
@@ -117,7 +117,7 @@ function L(e) {
   }, "sticker"))), (null === (n = N.emojis) || void 0 === n ? void 0 : n.button) != null && (null == V || null != Z && Z.type !== s.jw.ATTACHMENT) && W.push((0, r.jsx)(y.Z, {
     disabled: L,
     type: N
-  }, "emoji")), $ || null == G || W.push(G), (null === (i = N.submit) || void 0 === i ? void 0 : i.button) != null && ((null === (_ = N.submit) || void 0 === _ ? void 0 : _.ignorePreference) || B) && !$ && W.push((0, r.jsx)(C.Z, {
+  }, "emoji")), $ || null == G || W.push(G), (null === (i = N.submit) || void 0 === i ? void 0 : i.button) != null && ((null === (p = N.submit) || void 0 === p ? void 0 : p.ignorePreference) || B) && !$ && W.push((0, r.jsx)(C.Z, {
     onClick: j,
     disabled: L || F
   }, "submit")), $ && null != G && W.push(G), 0 === W.length) ? null : (0, r.jsx)("div", {
@@ -127,8 +127,8 @@ function L(e) {
 }
 
 function x(e, t, n) {
-  return (0, a.e7)([g.Z, E.Z], () => {
-    let r = g.Z.getStickerPreview(e, t.drafts.type),
+  return (0, a.e7)([m.Z, E.Z], () => {
+    let r = m.Z.getStickerPreview(e, t.drafts.type),
       i = null != r && r.length > 0;
     return 0 === E.Z.getUploads(e, t.drafts.type).length && n && !i
   })

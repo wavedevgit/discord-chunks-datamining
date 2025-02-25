@@ -16,11 +16,11 @@ var r = n(200651),
   u = n(914010),
   d = n(594174),
   f = n(36703),
-  p = n(74538),
-  _ = n(125900),
+  _ = n(74538),
+  p = n(125900),
   h = n(824690),
-  m = n(240479),
-  g = n(710111),
+  g = n(240479),
+  m = n(710111),
   E = n(388032),
   v = n(595530),
   b = n(879580);
@@ -88,10 +88,10 @@ function N(e) {
   let {
     sound: t,
     forceShowBetaLabel: n = !1
-  } = e, i = (0, _.V2)({
+  } = e, i = (0, p.V2)({
     location: "SoundmojiBanner"
-  }), o = (0, l.e7)([d.default], () => p.ZP.canUseSoundboardEverywhere(d.default.getCurrentUser())), a = (0, l.e7)([u.Z], () => u.Z.getGuildId());
-  return n || o || t.guildId === g.X8 || t.guildId === a || !i ? (0, r.jsx)(c.IGR, {
+  }), o = (0, l.e7)([d.default], () => _.ZP.canUseSoundboardEverywhere(d.default.getCurrentUser())), a = (0, l.e7)([u.Z], () => u.Z.getGuildId());
+  return n || o || t.guildId === m.X8 || t.guildId === a || !i ? (0, r.jsx)(c.IGR, {
     text: "BETA",
     color: s.Z.BG_BRAND,
     className: v.betaBadge
@@ -158,14 +158,14 @@ function C(e) {
     children: s,
     setTooltipShowing: l,
     clickableClassName: u
-  } = e, [d, f] = i.useState(!1), [p, _] = i.useState(String(Date.now())), h = i.useCallback(e => {
+  } = e, [d, f] = i.useState(!1), [_, p] = i.useState(String(Date.now())), h = i.useCallback(e => {
     e.stopPropagation(), f(!d)
-  }, [d]), m = i.useCallback(() => {
-    _(String(Date.now()))
-  }, []), g = i.useRef(null);
+  }, [d]), g = i.useCallback(() => {
+    p(String(Date.now()))
+  }, []), m = i.useRef(null);
   i.useEffect(() => {
     var e, t;
-    d ? null === (e = g.current) || void 0 === e || e.focus() : null === (t = g.current) || void 0 === t || t.blur(), null == l || l(d)
+    d ? null === (e = m.current) || void 0 === e || e.focus() : null === (t = m.current) || void 0 === t || t.blur(), null == l || l(d)
   }, [d, l]);
   let E = !d;
   return (0, r.jsx)(c.yRy, {
@@ -173,7 +173,7 @@ function C(e) {
       onClick: e => e.stopPropagation(),
       onMouseOver: e => e.stopPropagation(),
       children: t(I(O({}, e), {
-        refreshPosition: m
+        refreshPosition: g
       }))
     }),
     align: "center",
@@ -182,7 +182,7 @@ function C(e) {
     shouldShow: d,
     onRequestClose: () => f(!1),
     animationPosition: "bottom",
-    positionKey: p,
+    positionKey: _,
     closeOnScroll: !0,
     children: e => (0, r.jsx)(c.ua7, {
       onTooltipHide: () => {
@@ -195,7 +195,7 @@ function C(e) {
       position: "top",
       shouldShow: E,
       children: t => (0, r.jsx)(c.P3F, I(O({
-        innerRef: g
+        innerRef: m
       }, t, e), {
         "aria-label": o,
         onClick: h,
@@ -225,7 +225,7 @@ function R(e) {
       })
     }), (0, r.jsx)(C, {
       setTooltipShowing: i,
-      renderPopout: e => (0, r.jsx)(m.Z, O({
+      renderPopout: e => (0, r.jsx)(g.Z, O({
         sound: t,
         channel: n
       }, e)),

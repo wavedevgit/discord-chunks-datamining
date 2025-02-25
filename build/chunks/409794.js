@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  X: () => _
+  X: () => p
 });
 var r = n(200651),
   i = n(192379),
@@ -35,7 +35,7 @@ function d(e) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -43,24 +43,24 @@ function f(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = i.forwardRef(function(e, t) {
+let p = i.forwardRef(function(e, t) {
   var {
     variant: n,
     className: i
   } = e, o = f(e, ["variant", "className"]);
   let u = (0, l.x)(),
-    p = "h".concat(Math.min(u, 6));
+    _ = "h".concat(Math.min(u, 6));
   return (0, r.jsx)(s.xv, d({
     ref: t,
     variant: n,
-    tag: p,
+    tag: _,
     className: a()(c.defaultColor, i)
   }, u > 6 ? {
     "data-excessive-heading-level": u

@@ -18,17 +18,17 @@ function u(e) {
     hovered: n,
     selected: i,
     reverse: u
-  } = e, d = (0, a.D)("Nameplate"), f = !!(n || i), p = (0, s.BY)(null == t ? void 0 : t.src, f), _ = (0, l.p)(t, n, i);
-  return null != t && d && null != p ? (0, r.jsx)("div", {
+  } = e, d = (0, a.D)("Nameplate"), f = !!(n || i), _ = (0, s.BY)(null == t ? void 0 : t.src, f), p = (0, l.p)(t, n, i);
+  return null != t && d && null != _ ? (0, r.jsx)("div", {
     className: o()(c.container),
-    style: _,
+    style: p,
     children: (0, r.jsx)("img", {
       className: o()(c.img, {
         [c.hover]: n,
         [c.selected]: i,
         [c.reverse]: u
       }),
-      src: p,
+      src: _,
       alt: t.imgAlt,
       height: "100%",
       width: "auto"

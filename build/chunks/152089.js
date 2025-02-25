@@ -3,7 +3,7 @@
 n.d(t, {
   FW: () => u,
   fZ: () => f,
-  py: () => p
+  py: () => _
 }), n(47120), n(411104);
 var r = n(911969),
   i = n(581364),
@@ -23,11 +23,11 @@ function u(e) {
     canMentionEveryone: u,
     canMentionClyde: d = !1,
     useNewSlashCommands: f,
-    canOnlyUseTextCommands: p,
-    canSendStickers: _,
+    canOnlyUseTextCommands: _,
+    canSendStickers: p,
     canSendSoundmoji: h,
-    hideMentionDescription: m,
-    hidePersonalInformation: g,
+    hideMentionDescription: g,
+    hidePersonalInformation: m,
     type: E,
     emojiIntention: v,
     editorRef: b,
@@ -43,11 +43,11 @@ function u(e) {
       clyde: l.cz.DENY
     },
     commands: l.L8.DISABLED,
-    allowStickers: !0 === _,
+    allowStickers: !0 === p,
     allowSoundmoji: !0 === h,
     forNonStringCommandOption: null != n && n.type !== r.jw.STRING,
-    hideMentionDescription: !0 === m,
-    hidePersonalInformation: !0 === g,
+    hideMentionDescription: !0 === g,
+    hidePersonalInformation: !0 === m,
     chatInputType: E,
     emojiIntention: v,
     sendMessage: y,
@@ -68,7 +68,7 @@ function u(e) {
     let e = (0, i.$z)(n);
     e.canMentionChannels && (I.mentions.channel = l.nS.ALLOW_SELECTABLE), e.canMentionEveryone && (I.mentions.global = e.canMentionHere ? l.VV.ALLOW_EVERYONE_OR_HERE : l.VV.ALLOW_EVERYONE), e.canMentionRoles && (I.mentions.role = e.canMentionNonMentionableRoles ? l.Fw.ALLOW_ALL : l.Fw.ALLOW_MENTIONABLE), e.canMentionUsers && (I.mentions.user = e.canMentionAnyGuildUser ? l.h3.ALLOW_GUILD : l.h3.ALLOW_CHANNEL), I.hideMentionDescription = !0
   } else c && (I.mentions.channel = l.nS.ALLOW_SELECTABLE), s && (I.mentions.role = l.Fw.ALLOW_MENTIONABLE), a && (I.mentions.user = l.h3.ALLOW_CHANNEL), u && (I.mentions.global = l.VV.ALLOW_EVERYONE_OR_HERE), d && (I.mentions.clyde = l.cz.ALLOW);
-  return (null === (t = E.commands) || void 0 === t ? void 0 : t.enabled) && (f ? I.commands = p ? l.L8.NEW_TEXT_ONLY : l.L8.NEW : I.commands = l.L8.OLD_BUILT_INS), null != n && null != n.channelTypes && (I.allowedChannelTypes = n.channelTypes), I
+  return (null === (t = E.commands) || void 0 === t ? void 0 : t.enabled) && (f ? I.commands = _ ? l.L8.NEW_TEXT_ONLY : l.L8.NEW : I.commands = l.L8.OLD_BUILT_INS), null != n && null != n.channelTypes && (I.allowedChannelTypes = n.channelTypes), I
 }
 
 function d(e) {
@@ -96,9 +96,9 @@ function f(e) {
     currentWordIsAtStart: o,
     textValue: u,
     optionText: f
-  } = e, p = null;
+  } = e, _ = null;
   for (let e of s.R) {
-    var _, h, m, g, E, v;
+    var p, h, g, m, E, v;
     let b = s.W[e];
     if (e === l.eq.GIFS || e === l.eq.CHOICES) {
       if (r.commands === l.L8.OLD_BUILT_INS) {
@@ -110,7 +110,7 @@ function f(e) {
             isAtStart: !1,
             options: r
           })) {
-          p = {
+          _ = {
             type: e,
             typeInfo: b,
             query: u
@@ -151,10 +151,10 @@ function f(e) {
           isAtStart: !0,
           options: r
         })) {
-        p = {
+        _ = {
           type: e,
           typeInfo: b,
-          query: u.substring(null !== (h = null === (_ = b.sentinel) || void 0 === _ ? void 0 : _.length) && void 0 !== h ? h : 0)
+          query: u.substring(null !== (h = null === (p = b.sentinel) || void 0 === p ? void 0 : p.length) && void 0 !== h ? h : 0)
         };
         break
       }
@@ -167,7 +167,7 @@ function f(e) {
           isAtStart: o,
           options: r
         })) {
-        p = {
+        _ = {
           type: e,
           typeInfo: b,
           query: u
@@ -183,10 +183,10 @@ function f(e) {
           isAtStart: o,
           options: r
         })) {
-        p = {
+        _ = {
           type: e,
           typeInfo: b,
-          query: i.substring(null !== (g = null === (m = b.sentinel) || void 0 === m ? void 0 : m.length) && void 0 !== g ? g : 0)
+          query: i.substring(null !== (m = null === (g = b.sentinel) || void 0 === g ? void 0 : g.length) && void 0 !== m ? m : 0)
         };
         break
       }
@@ -198,7 +198,7 @@ function f(e) {
         isAtStart: o,
         options: r
       })) {
-      p = {
+      _ = {
         type: e,
         typeInfo: b,
         query: i.substring(null !== (v = null === (E = b.sentinel) || void 0 === E ? void 0 : E.length) && void 0 !== v ? v : 0)
@@ -206,10 +206,10 @@ function f(e) {
       break
     }
   }
-  return null == p ? null : (p.query = p.query.toLocaleLowerCase(), p)
+  return null == _ ? null : (_.query = _.query.toLocaleLowerCase(), _)
 }
 
-function p(e, t) {
+function _(e, t) {
   let n;
   if (null == t || null == e) return null;
   if (null != e.choices || e.autocomplete) n = l.eq.CHOICES;

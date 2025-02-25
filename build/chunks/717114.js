@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,8 +13,8 @@ var r = n(200651),
   u = n(131951),
   d = n(19780),
   f = n(63063),
-  p = n(981631),
-  _ = n(388032);
+  _ = n(981631),
+  p = n(388032);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,22 +37,22 @@ function m(e) {
   }
   return e
 }
-let g = () => {
-  let [e, t] = (0, o.Wu)([c.ZP], () => [c.ZP.canShowAdminWarning, c.ZP.getVisibleGame()], []), n = (0, o.e7)([d.Z], () => d.Z.isConnected(), []), h = (0, o.e7)([u.Z], () => u.Z.getMode() === p.pM4.PUSH_TO_TALK, []), g = null != t && t.elevated && n && h && e, E = i.useRef(null);
+let m = () => {
+  let [e, t] = (0, o.Wu)([c.ZP], () => [c.ZP.canShowAdminWarning, c.ZP.getVisibleGame()], []), n = (0, o.e7)([d.Z], () => d.Z.isConnected(), []), h = (0, o.e7)([u.Z], () => u.Z.getMode() === _.pM4.PUSH_TO_TALK, []), m = null != t && t.elevated && n && h && e, E = i.useRef(null);
 
   function v() {
     null !== E.current && ((0, a.Mr3)(E.current), E.current = null)
   }
-  return i.useEffect(() => (g ? E.current = (0, a.h7j)(e => (0, r.jsx)(l.default, m({
-    title: _.NW.string(_.t.eotlXF),
-    body: _.NW.formatToPlainString(_.t.Lw6KXV, {
+  return i.useEffect(() => (m ? E.current = (0, a.h7j)(e => (0, r.jsx)(l.default, g({
+    title: p.NW.string(p.t.eotlXF),
+    body: p.NW.formatToPlainString(p.t.Lw6KXV, {
       game: null == t ? void 0 : t.name
     }),
-    secondaryConfirmText: _.NW.string(_.t["5E9SBw"]),
+    secondaryConfirmText: p.NW.string(p.t["5E9SBw"]),
     onConfirmSecondary: () => s.Z.clearPTTAdminWarning(),
-    onConfirm: () => window.open(f.Z.getArticleURL(p.BhN.PUSH_TO_TALK_ADMINISTRATOR_MODE), "_blank"),
-    confirmText: _.NW.string(_.t.psXQHB)
+    onConfirm: () => window.open(f.Z.getArticleURL(_.BhN.PUSH_TO_TALK_ADMINISTRATOR_MODE), "_blank"),
+    confirmText: p.NW.string(p.t.psXQHB)
   }, e))) : v(), () => {
     v()
-  }), [t, g]), null
+  }), [t, m]), null
 }

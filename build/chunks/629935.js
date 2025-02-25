@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  W4: () => m
+  W4: () => g
 }), n(47120);
 var r = n(688619),
   i = n.n(r);
@@ -13,8 +13,8 @@ let o = "--theme-base-color-amount",
   u = "--theme-base-color-dark",
   d = "--theme-text-color-dark",
   f = "--theme-base-color-dark-hsl",
-  p = 50,
-  _ = 38;
+  _ = 50,
+  p = 38;
 
 function h(e) {
   let {
@@ -32,13 +32,13 @@ function h(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   let {
     enabled: t,
     primaryColor: n,
     secondaryColor: r,
-    baseMixAmount: i = p,
-    textMixAmount: m = _
+    baseMixAmount: i = _,
+    textMixAmount: g = p
   } = e, {
     base: E,
     text: v
@@ -55,21 +55,21 @@ function m(e) {
     isDarkTheme: !1
   });
   return {
-    [c]: g(b),
+    [c]: m(b),
     [s]: b.css(),
     [l]: y.css(),
-    [f]: g(E),
+    [f]: m(E),
     [u]: E.css(),
     [d]: v.css(),
     [o]: "".concat(t ? i : 0, "%"),
-    [a]: "".concat(t ? m : 0, "%"),
+    [a]: "".concat(t ? g : 0, "%"),
     "--bg-overlay-selected": "unset",
     "--bg-overlay-hover": "unset",
     "--bg-overlay-active": "unset"
   }
 }
 
-function g(e) {
+function m(e) {
   let [t, n, r] = e.hsl();
   return "".concat(Number.isNaN(t) ? 0 : t, " ").concat(100 * n, "% ").concat(100 * r, "%")
 }

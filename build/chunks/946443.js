@@ -1,7 +1,7 @@
 /** Chunk was on 11814 **/
 n.d(t, {
   Z: () => S,
-  h: () => T
+  h: () => P
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -30,7 +30,7 @@ var r = n(200651),
   I = n(993217);
 
 function S(e) {
-  var t, n, a, l, S, T, A;
+  var t, n, a, l, S, P, A;
   let {
     setTab: w,
     onJump: Z,
@@ -74,14 +74,14 @@ function S(e) {
     return b.S.subscribe(N.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
       b.S.unsubscribe(N.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [S, l.channels]), T = F, i.useEffect(() => {
+  }, [S, l.channels]), P = F, i.useEffect(() => {
     let e = e => {
-      ((0, v.isMac)() || (0, v.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && T.undoMarkChannelRead()
+      ((0, v.isMac)() || (0, v.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && P.undoMarkChannelRead()
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
     }
-  }, [T]), i.useEffect(() => {
+  }, [P]), i.useEffect(() => {
     _.default.track(N.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
@@ -171,7 +171,7 @@ function S(e) {
           }, a), n = n = {
             onScroll: U === j.jd.Done ? void 0 : G,
             className: I.scroller,
-            children: [k ? (0, r.jsx)(P, {
+            children: [k ? (0, r.jsx)(T, {
               setSeenTutorial: R
             }) : null, (0, E.Z)(B, F, Z), U === j.jd.Done ? null : (0, r.jsx)(p.$jN, {
               className: I.spinner
@@ -192,7 +192,7 @@ function S(e) {
   })
 }
 
-function P(e) {
+function T(e) {
   let {
     setSeenTutorial: t
   } = e;
@@ -223,7 +223,7 @@ function P(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   let {
     setTab: t,
     badgeState: n,

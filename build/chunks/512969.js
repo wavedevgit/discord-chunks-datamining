@@ -4,7 +4,7 @@ n.d(t, {
   $B: () => k,
   AW: () => R,
   EN: () => w,
-  F0: () => m,
+  F0: () => g,
   LX: () => C,
   TH: () => M,
   UO: () => j,
@@ -25,8 +25,8 @@ var o = n(539528),
 n(165566);
 var d = n(226512),
   f = n(26095),
-  p = n.n(f),
-  _ = function(e) {
+  _ = n.n(f),
+  p = function(e) {
     var t = (0, a.Z)();
     return t.displayName = e, t
   }("Router-History"),
@@ -34,7 +34,7 @@ var d = n(226512),
     var t = (0, a.Z)();
     return t.displayName = e, t
   }("Router"),
-  m = function(e) {
+  g = function(e) {
     function t(t) {
       var n;
       return (n = e.call(this, t) || this).state = {
@@ -67,14 +67,14 @@ var d = n(226512),
           match: t.computeRootMatch(this.state.location.pathname),
           staticContext: this.props.staticContext
         }
-      }, i.createElement(_.Provider, {
+      }, i.createElement(p.Provider, {
         children: this.props.children || null,
         value: this.props.history
       }))
     }, t
   }(i.Component);
 i.Component;
-var g = function(e) {
+var m = function(e) {
     function t() {
       return e.apply(this, arguments) || this
     }(0, r.Z)(t, e);
@@ -118,7 +118,7 @@ function S(e) {
       d = (0, o.ob)(t ? "string" == typeof n ? O(n, t.params) : (0, l.Z)({}, n, {
         pathname: O(n.pathname, t.params)
       }) : n);
-    return c ? (u(d), null) : i.createElement(g, {
+    return c ? (u(d), null) : i.createElement(m, {
       onMount: function() {
         u(d)
       },
@@ -250,12 +250,12 @@ function w(e) {
         }))
       })
     };
-  return n.displayName = t, n.WrappedComponent = e, p()(n, e)
+  return n.displayName = t, n.WrappedComponent = e, _()(n, e)
 }
 var L = i.useContext;
 
 function x() {
-  return L(_)
+  return L(p)
 }
 
 function M() {

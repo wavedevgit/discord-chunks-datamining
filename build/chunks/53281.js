@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -60,7 +60,7 @@ function f(e) {
     })
   })
 }
-class p extends i.Component {
+class _ extends i.Component {
   activateUploadDialogue() {
     if (null != this._ref) return this._ref.activateUploadDialogue()
   }
@@ -78,4 +78,4 @@ class p extends i.Component {
     super(e), u(this, "_ref", i.createRef()), this.setRef = this.setRef.bind(this)
   }
 }
-let _ = p
+let p = _

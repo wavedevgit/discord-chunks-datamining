@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  I: () => g
+  I: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,8 +45,8 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -55,7 +55,7 @@ let h = {
     friction: 24,
     tension: 280
   },
-  m = {
+  g = {
     [c.az.TOP]: {
       styles: u.containerTop,
       transition: {
@@ -73,7 +73,7 @@ let h = {
         leave: {
           transform: "translate3d(0, -100%, 0)",
           opacity: 0,
-          config: _(f({}, h), {
+          config: p(f({}, h), {
             friction: 40,
             clamp: !0
           })
@@ -97,7 +97,7 @@ let h = {
         leave: {
           transform: "translate3d(0, 100%, 0)",
           opacity: 0,
-          config: _(f({}, h), {
+          config: p(f({}, h), {
             friction: 40,
             clamp: !0
           })
@@ -106,22 +106,22 @@ let h = {
     }
   };
 
-function g() {
+function m() {
   var e, t, n, u;
   let d = (0, l.Es)(e => e.currentToast),
-    p = i.useRef(null !== (n = null == d ? void 0 : null === (e = d.options) || void 0 === e ? void 0 : e.position) && void 0 !== n ? n : c.si.position),
-    _ = i.useRef(null !== (u = null == d ? void 0 : null === (t = d.options) || void 0 === t ? void 0 : t.duration) && void 0 !== u ? u : c.si.duration);
+    _ = i.useRef(null !== (n = null == d ? void 0 : null === (e = d.options) || void 0 === e ? void 0 : e.position) && void 0 !== n ? n : c.si.position),
+    p = i.useRef(null !== (u = null == d ? void 0 : null === (t = d.options) || void 0 === t ? void 0 : t.duration) && void 0 !== u ? u : c.si.duration);
   i.useEffect(() => {
     if (null != d) {
       var e, t, n, r;
-      p.current = null !== (n = null === (e = d.options) || void 0 === e ? void 0 : e.position) && void 0 !== n ? n : c.si.position, _.current = null !== (r = null === (t = d.options) || void 0 === t ? void 0 : t.duration) && void 0 !== r ? r : c.si.duration
+      _.current = null !== (n = null === (e = d.options) || void 0 === e ? void 0 : e.position) && void 0 !== n ? n : c.si.position, p.current = null !== (r = null === (t = d.options) || void 0 === t ? void 0 : t.duration) && void 0 !== r ? r : c.si.duration
     }
   }, [d]);
   let h = i.useMemo(() => {
       var e, t;
-      return m[null !== (t = null == d ? void 0 : null === (e = d.options) || void 0 === e ? void 0 : e.position) && void 0 !== t ? t : p.current]
+      return g[null !== (t = null == d ? void 0 : null === (e = d.options) || void 0 === e ? void 0 : e.position) && void 0 !== t ? t : _.current]
     }, [d]),
-    g = (0, a.Yzy)(d, f({
+    m = (0, a.Yzy)(d, f({
       keys: e => {
         var t;
         return null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : ""
@@ -130,10 +130,10 @@ function g() {
   return i.useEffect(() => {
     null != d && setTimeout(() => {
       (0, l.z5)()
-    }, _.current)
+    }, p.current)
   }, [d]), (0, r.jsx)("div", {
     className: h.styles,
-    children: g((e, t) => null === t ? null : (0, r.jsx)(o.animated.div, {
+    children: m((e, t) => null === t ? null : (0, r.jsx)(o.animated.div, {
       style: e,
       children: (0, r.jsx)(s.F, f({}, t))
     }, t.id))

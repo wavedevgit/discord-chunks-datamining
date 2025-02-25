@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r, i = n(200651),
   o = n(192379),
@@ -32,8 +32,8 @@ function f(e) {
   }
   return e
 }
-let p = 100,
-  _ = "search";
+let _ = 100,
+  p = "search";
 class h extends(r = o.Component) {
   render() {
     let {
@@ -46,8 +46,8 @@ class h extends(r = o.Component) {
       onChange: d,
       onFocus: f,
       onBlur: h,
-      onKeyPress: m,
-      autoComplete: g,
+      onKeyPress: g,
+      autoComplete: m,
       forwardedRef: E,
       closeIconClassName: v,
       searchIconClassName: b,
@@ -64,19 +64,19 @@ class h extends(r = o.Component) {
           focusProps: {
             enabled: !1
           },
-          name: _,
-          maxLength: p,
+          name: p,
+          maxLength: _,
           className: u.searchBoxInputWrapper,
           inputClassName: s()(u.searchBoxInput, o),
           onChange: d,
           onFocus: f,
           onBlur: h,
-          onKeyPress: m,
+          onKeyPress: g,
           value: O ? r : "",
           placeholder: n,
           autoFocus: e,
           "aria-label": t,
-          autoComplete: g ? "on" : "off"
+          autoComplete: m ? "on" : "off"
         }), null != y ? (0, i.jsx)(l.Text, {
           color: "text-muted",
           variant: "text-xs/normal",
@@ -115,6 +115,6 @@ class h extends(r = o.Component) {
 d(h, "defaultProps", {
   autoComplete: !1
 });
-let m = o.forwardRef((e, t) => (0, i.jsx)(h, f({
+let g = o.forwardRef((e, t) => (0, i.jsx)(h, f({
   forwardedRef: t
 }, e)))

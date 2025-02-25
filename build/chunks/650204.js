@@ -5,11 +5,11 @@ var r, i, o, a, s, l, c, u = n(200651);
 n(92138), n(192379);
 var d = n(616254),
   f = n(512722),
-  p = n.n(f),
-  _ = n(832037),
+  _ = n.n(f),
+  p = n(832037),
   h = n(749349),
-  m = n(464253),
-  g = n(485359),
+  g = n(464253),
+  m = n(485359),
   E = n(395727),
   v = n(471638),
   b = n(585275),
@@ -36,7 +36,7 @@ var M = n(857192),
 M.default.cssDebuggingEnabled && n.e("62195").then(n.bind(n, 640646));
 let B = 5 * G.Z.Millis.MINUTE,
   F = document.getElementById("app-mount");
-p()(null != F, "Could not find app-mount"), F.className = __OVERLAY__ ? "" : j.appMount;
+_()(null != F, "Could not find app-mount"), F.className = __OVERLAY__ ? "" : j.appMount;
 let V = (0, d.createRoot)(F),
   Z = {
     "/oauth2/authorize": N.Z
@@ -72,8 +72,8 @@ if (null != w.Z) {
   let d = null === (l = (c = w.Z.remoteApp).getReleaseChannel) || void 0 === l ? void 0 : l.call(c);
   ("canary" === d || "development" === d) && I.ZP.pauseFrameEvictor(), I.ZP.initializeExitHook(), I.ZP.initializeWERHandler()
 }
-if ((0, P.O)(window), __OVERLAY__) W(_.Z.Overlay);
-else if (null != window.require && null == window.DiscordNative) W(_.Z.OutdatedClient);
+if ((0, P.O)(window), __OVERLAY__) W(p.Z.Overlay);
+else if (null != window.require && null == window.DiscordNative) W(p.Z.OutdatedClient);
 else {
   if (document.addEventListener("scroll", e => e.preventDefault()), A.isPlatformEmbedded) {
     window.onbeforeunload = () => I.ZP.beforeUnload(), I.ZP.on("HELP_OPEN", () => window.open(O.Z.getCommunityURL()));
@@ -86,5 +86,5 @@ else {
       (0, R.al)(window)
     })
   }
-  E.Z.initialize(), h.Z.initialize(), m.Z.init(), b.Z.init(), k.Z.init(), g.Z.initialize(), S.Z.initialize(), T.Z.initialize(), v.j(), W(_.Z.App)
+  E.Z.initialize(), h.Z.initialize(), g.Z.init(), b.Z.init(), k.Z.init(), m.Z.initialize(), S.Z.initialize(), T.Z.initialize(), v.j(), W(p.Z.App)
 }

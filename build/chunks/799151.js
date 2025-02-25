@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  c: () => p
+  c: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(388032),
   f = n(281323);
 
-function p() {
+function _() {
   let e = [{
       keybinds: ["Spacebar", "Enter"],
       name: d.NW.string(d.t["cs/HVF"])

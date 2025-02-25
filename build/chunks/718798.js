@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(369711),
   f = n(649754);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -38,7 +38,7 @@ function _(e) {
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -46,7 +46,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -54,7 +54,7 @@ function m(e, t) {
   return i
 }
 
-function g(e) {
+function m(e) {
   var t, n, r, i;
   let o = null === (i = window) || void 0 === i ? void 0 : null === (r = i.DiscordNative) || void 0 === r ? void 0 : null === (n = r.app) || void 0 === n ? void 0 : null === (t = n.getReleaseChannel) || void 0 === t ? void 0 : t.call(n);
   return "canary" === o || "development" === o ? (0, d.m)(e) : (0, u.y)(e)
@@ -68,12 +68,12 @@ function E(e) {
     onResize: s,
     className: u
   } = e, d = h(e, ["streamId", "paused", "onReady", "onResize", "className"]);
-  let p = i.useRef(null),
+  let _ = i.useRef(null),
     {
-      current: m
+      current: g
     } = i.useRef(l()("media-engine-video-"));
   return i.useEffect(() => {
-    let e = p.current;
+    let e = _.current;
     if (!n && null != e) {
       let n = !1,
         r = (t, r) => {
@@ -83,23 +83,23 @@ function E(e) {
           }))
         },
         i = (0, c.zS)();
-      if (null != i.addVideoOutputSink) return i.addVideoOutputSink(m, t, r), () => {
-        i.removeVideoOutputSink(m, t)
+      if (null != i.addVideoOutputSink) return i.addVideoOutputSink(g, t, r), () => {
+        i.removeVideoOutputSink(g, t)
       };
       {
-        let n = g(e);
+        let n = m(e);
         if (null == n) return;
-        return f.Z.addSink(t, p, e => {
+        return f.Z.addSink(t, _, e => {
           r(e.width, e.height), n.render(e)
         }), () => {
-          f.Z.removeSink(t, p)
+          f.Z.removeSink(t, _)
         }
       }
     }
-  }, [t, n, s, o, m]), (0, r.jsx)("canvas", _({
-    id: m,
+  }, [t, n, s, o, g]), (0, r.jsx)("canvas", p({
+    id: g,
     className: a()("media-engine-video", u),
-    ref: p
+    ref: _
   }, d))
 }
 E.defaultProps = {

@@ -78,7 +78,7 @@ function f(e, t) {
   })
 }
 
-function p(e, t) {
+function _(e, t) {
   let n = c(0, e.focusedY - 1);
   return s(o({}, e), {
     focusedX: u(e.columnCounts[n] - 1, e.focusedX),
@@ -86,7 +86,7 @@ function p(e, t) {
   })
 }
 
-function _(e, t) {
+function p(e, t) {
   let n = u(e.focusedY + 1, e.columnCounts.length - 1);
   return s(o({}, e), {
     focusedX: u(e.columnCounts[n] - 1, e.focusedX),
@@ -104,7 +104,7 @@ function h(e, t) {
   })
 }
 
-function m(e, t) {
+function g(e, t) {
   let n = 0 !== e.focusedY && 0 === e.focusedX,
     r = n ? e.focusedY - 1 : e.focusedY,
     i = n ? e.columnCounts[r] - 1 : c(0, e.focusedX - 1);
@@ -114,7 +114,7 @@ function m(e, t) {
   })
 }
 
-function g(e, t) {
+function m(e, t) {
   return s(o({}, e), {
     focusedX: 0
   })
@@ -144,15 +144,15 @@ function b(e, t) {
 function y(e, t) {
   switch (t.type) {
     case r.Us.NAVIGATE_UP:
-      return p(e, t);
-    case r.Us.NAVIGATE_DOWN:
       return _(e, t);
+    case r.Us.NAVIGATE_DOWN:
+      return p(e, t);
     case r.Us.NAVIGATE_RIGHT:
       return h(e, t);
     case r.Us.NAVIGATE_LEFT:
-      return m(e, t);
-    case r.Us.NAVIGATE_INLINE_START:
       return g(e, t);
+    case r.Us.NAVIGATE_INLINE_START:
+      return m(e, t);
     case r.Us.NAVIGATE_INLINE_END:
       return E(e, t);
     case r.Us.NAVIGATE_START:

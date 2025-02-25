@@ -13,11 +13,11 @@ var r = n(392711),
   u = n(428595),
   d = n(594199),
   f = n(11637),
-  p = n(467798),
-  _ = n(601070),
+  _ = n(467798),
+  p = n(601070),
   h = n(695346),
-  m = n(592125),
-  g = n(984933),
+  g = n(592125),
+  m = n(984933),
   E = n(271383),
   v = n(430824),
   b = n(496675),
@@ -179,7 +179,7 @@ let U = u.Z.RULES,
         let o = H.exec(e);
         if (null != o && i[0].length <= o[0].length) return null;
         if ("" === n) {
-          let t = p.v.exec(e);
+          let t = _.v.exec(e);
           if (null != t && i[0].length <= t[0].length) return null
         }
         return i
@@ -301,7 +301,7 @@ let U = u.Z.RULES,
     channel: {
       match: a().anyScopeRegex(V),
       parse(e) {
-        let t = m.Z.getChannel(e[1]);
+        let t = g.Z.getChannel(e[1]);
         return {
           content: null == t ? e[0] : (0, s.F6)(t, S.default, y.Z, !0, !0)
         }
@@ -435,7 +435,7 @@ function J(e) {
         text: n
       }
     }),
-    c = i()(g.ZP.getTextChannelNameDisambiguations(n)).map(e => {
+    c = i()(m.ZP.getTextChannelNameDisambiguations(n)).map(e => {
       let {
         id: t,
         name: n
@@ -445,18 +445,18 @@ function J(e) {
         text: n
       }
     }),
-    u = null != n ? i()(I.k1).filter(e => e !== g.sH).flatMap(e => g.ZP.getChannels(n)[e].map(e => ({
+    u = null != n ? i()(I.k1).filter(e => e !== m.sH).flatMap(e => m.ZP.getChannels(n)[e].map(e => ({
       id: e.channel.id,
       text: e.channel.name
     }))).value() : [],
-    d = _.Z.computeAllActiveJoinedThreads(n).map(e => ({
+    d = p.Z.computeAllActiveJoinedThreads(n).map(e => ({
       id: e.id,
       text: e.name
     })),
     f = l.ZP.getDisambiguatedEmojiContext(n),
-    p = f.getEscapedCustomEmoticonNames(),
+    _ = f.getEscapedCustomEmoticonNames(),
     h = f.getCustomEmoji(),
-    m = f.getCustomEmoticonRegex();
+    g = f.getCustomEmoticonRegex();
   return {
     inline: !0,
     mentionableRoles: s,
@@ -464,9 +464,9 @@ function J(e) {
     users: a,
     channels: c.concat(u).concat(d),
     emojiContext: f,
-    customEmoticonsRegex: m,
+    customEmoticonsRegex: g,
     customEmoji: h,
-    textExclusions: p,
+    textExclusions: _,
     disableErrorGuards: !0
   }
 }
@@ -494,7 +494,7 @@ let ee = {
   },
   parsePreprocessor: (e, t) => K(t, J(e)),
   unparse(e, t, n) {
-    let r = m.Z.getChannel(t),
+    let r = g.Z.getChannel(t),
       o = null != r ? r.getGuildId() : null,
       s = null != o ? v.Z.getGuild(o) : null,
       l = n ? Y : i().omit(Y, ["spoiler", "timestamp"]),

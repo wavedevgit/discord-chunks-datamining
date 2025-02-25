@@ -17,11 +17,11 @@ let u = i.memo(i.forwardRef((e, t) => {
     listPadding: u = [0, 0, 0, 0],
     renderRow: d,
     renderSection: f,
-    renderSectionHeader: p,
-    renderSectionFooter: _,
+    renderSectionHeader: _,
+    renderSectionFooter: p,
     renderListHeader: h,
-    rowCount: m,
-    rowCountBySection: g,
+    rowCount: g,
+    rowCountBySection: m,
     rowHeight: E,
     sectionMarginBottom: v,
     sectionHeaderHeight: b,
@@ -67,15 +67,15 @@ let u = i.memo(i.forwardRef((e, t) => {
       sectionDescriptors: W
     } = i.useMemo(() => {
       let e = 0,
-        t = null != g,
-        n = t ? g.length : 1,
+        t = null != m,
+        n = t ? m.length : 1,
         r = u[0],
         i = [],
         o = [];
       r += j();
       for (let a = 0; a < n; a++) {
-        let n = t ? g[a] : m,
-          s = (null == g ? void 0 : g[a]) !== 0;
+        let n = t ? m[a] : g,
+          s = (null == m ? void 0 : m[a]) !== 0;
         o[a] = {
           firstRowIndex: e,
           offset: {
@@ -101,7 +101,7 @@ let u = i.memo(i.forwardRef((e, t) => {
         rowDescriptors: i,
         sectionDescriptors: o
       }
-    }, [k, G, U, B, u, m, g, j]);
+    }, [k, G, U, B, u, g, m, j]);
   F.current = W, V.current = H;
   let Y = i.useCallback(() => {
     var e;
@@ -239,18 +239,18 @@ let u = i.memo(i.forwardRef((e, t) => {
       if (0 === c) continue;
       let u = U(o),
         h = G(o),
-        m = B(o);
+        g = B(o);
       if (l <= e) r = l;
       else if (l > e && s < t) {
         n = a;
         let l = [],
-          g = 0,
+          m = 0,
           E = 0,
           v = s,
           b = v + u >= e && v <= t;
-        for (null != p && (S || b) && l.push(p(o)), b || S || (r += u); g + u + h < c - m;) {
+        for (null != _ && (S || b) && l.push(_(o)), b || S || (r += u); m + u + h < c - g;) {
           let i = k(o, E, n),
-            a = s + g + u,
+            a = s + m + u,
             c = a + i;
           if (c <= e) r = c - (S ? u : 0);
           else if (c > e && a < t) l.push(d(n, {
@@ -258,18 +258,18 @@ let u = i.memo(i.forwardRef((e, t) => {
             sectionRowIndex: E
           }));
           else break;
-          g += i, E++, n++
+          m += i, E++, n++
         }
-        let y = s + u + g,
+        let y = s + u + m,
           O = y + h >= e && y <= t;
-        null != _ && O && l.push(_(o)), null != f ? i.push(f(o, l)) : i = [...i, ...l]
+        null != p && O && l.push(p(o)), null != f ? i.push(f(o, l)) : i = [...i, ...l]
       } else break
     }
     return {
       visibleItems: i,
       listOffset: r
     }
-  }, [k, G, U, B, u, d, f, _, p, R, W, S, h, j, D]), Q = i.useMemo(() => {
+  }, [k, G, U, B, u, d, f, p, _, R, W, S, h, j, D]), Q = i.useMemo(() => {
     var e, t, n;
     return {
       top: q,

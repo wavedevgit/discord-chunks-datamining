@@ -24,11 +24,11 @@ var i = n(772848),
   u = n(314897),
   d = n(866960),
   f = n(626135),
-  p = n(954824),
-  _ = n(617136),
+  _ = n(954824),
+  p = n(617136),
   h = n(569984),
-  m = n(497505),
-  g = n(918701),
+  g = n(497505),
+  m = n(918701),
   E = n(184299),
   v = n(862847),
   b = n(5881),
@@ -139,7 +139,7 @@ function j(e, t) {
 }
 
 function k(e, t) {
-  (0, _._3)({
+  (0, p._3)({
     questId: e.id,
     questContent: t.content,
     questContentPosition: t.position,
@@ -165,7 +165,7 @@ function U() {
     utmSourceCurrent: w,
     utmMediumCurrent: D,
     utmCampaignCurrent: t,
-    utmContentCurrent: Object.keys(m.jn).find(t => m.jn[t] === e)
+    utmContentCurrent: Object.keys(g.jn).find(t => g.jn[t] === e)
   });
   let n = null != t ? "#".concat(t) : "";
   l.Z.setState({
@@ -213,16 +213,16 @@ function V(e) {
       videoSessionId: n
     }))
   }, {
-    modalKey: (0, g.u7)(e.id),
+    modalKey: (0, m.u7)(e.id),
     backdropStyle: s.fCB.IMMERSIVE,
     onCloseCallback: () => {
       var t, r;
       let i = E.ZP.getState().getVideoProgress(e.id);
       if (null == i) return;
       let o = h.Z.getQuest(e.id);
-      null != o && (null === (t = o.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null && (null === (r = o.userStatus) || void 0 === r ? void 0 : r.completedAt) == null && (0, g.FI)(o, i.maxTimestampSec);
+      null != o && (null === (t = o.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null && (null === (r = o.userStatus) || void 0 === r ? void 0 : r.completedAt) == null && (0, m.FI)(o, i.maxTimestampSec);
       let a = B(i.maxTimestampSec, i.duration);
-      (0, _.dA)({
+      (0, p.dA)({
         questId: e.id,
         event: T.rMx.QUEST_VIDEO_PROGRESSED,
         properties: {
@@ -230,7 +230,7 @@ function V(e) {
           video_timestamp_seconds: i.maxTimestampSec,
           video_session_id: n
         }
-      }), (0, _.dA)({
+      }), (0, p.dA)({
         questId: e.id,
         event: T.rMx.QUEST_VIDEO_MODAL_CLOSED,
         properties: {
@@ -267,7 +267,7 @@ function H(e) {
     fingerprint: (0, a.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
-  }), p.Z.launch(t, t => {
+  }), _.Z.launch(t, t => {
     t || (0, c.dL)({
       pathname: T.Z5c.QUEST_HOME,
       hash: e

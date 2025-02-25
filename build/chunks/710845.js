@@ -13,10 +13,10 @@ let o = Date.now(),
   let u = Date.now(),
     d = ((u - o) / 1e3).toFixed(3),
     f = ((u - a) / 1e3).toFixed(3),
-    p = "Σ:".concat(d, "s, Δ:").concat(f, "s");
+    _ = "Σ:".concat(d, "s, Δ:").concat(f, "s");
   a = u, i.Hj({
     name: e,
-    timing: p
+    timing: _
   }, n, ...l), "file-only" !== t && console[t]("%c[".concat(e, "]"), s, n, ...l)
 });
 let l = r.Yd

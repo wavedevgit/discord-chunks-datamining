@@ -28,8 +28,8 @@ var r = n(200651),
   C = n(592125),
   I = n(430824),
   S = n(496675),
-  P = n(594174),
-  T = n(626135),
+  T = n(594174),
+  P = n(626135),
   A = n(624138),
   w = n(358595),
   Z = n(981631),
@@ -144,7 +144,7 @@ function B(e) {
       e && q(e => {
         if (!e) {
           var t;
-          T.default.track(Z.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
+          P.default.track(Z.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
             application_id: H.id,
             invite_inviter_id: null === (t = x.inviter) || void 0 === t ? void 0 : t.id
           })
@@ -191,7 +191,7 @@ function B(e) {
       names: ["embedded_cover"]
     }),
     es = (0, c.Wu)([f.ZP], () => null != ei ? f.ZP.getEmbeddedActivitiesForChannel(ei.id).filter(e => e.applicationId === H.id).flatMap(e => Array.from(e.userIds)) : [], [ei, H.id]),
-    ec = (0, c.Wu)([P.default], () => es.map(e => P.default.getUser(e)), [es]),
+    ec = (0, c.Wu)([T.default], () => es.map(e => T.default.getUser(e)), [es]),
     ed = x.state === Z.r2o.ACCEPTING,
     eu = null != ee;
   if (null == ee) {

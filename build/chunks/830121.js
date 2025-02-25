@@ -14,11 +14,11 @@ var r, i, o, a, s, l, c = n(729594),
 n(865427);
 var f = n(264229);
 n(413605);
-var p = n(807675),
-  _ = n(701190),
+var _ = n(807675),
+  p = n(701190),
   h = n(226951),
-  m = n(591759),
-  g = n(960904),
+  g = n(591759),
+  m = n(960904),
   E = n(981631);
 let v = 10,
   b = /^\/([a-zA-Z0-9-]+)$/,
@@ -111,7 +111,7 @@ function K(e) {
   if (null == e) return [];
   let t = new Set,
     n = [],
-    r = (e = e.replace(F, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(m.Z.URL_REGEX),
+    r = (e = e.replace(F, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(g.Z.URL_REGEX),
     i = e.match(w);
   if (null == (r = (null != r ? r : []).concat(null != i ? i : [])) || 0 === r.length) return [];
   for (let e of r) {
@@ -133,26 +133,26 @@ function K(e) {
     };
     if ((null == i ? void 0 : i.match(b)) != null) {
       let e = (0, f.mb)(i.substring(1), r.search);
-      _.Z.getInvite(e), h(g.g.INVITE, e)
-    }(null == l ? void 0 : l.match(b)) != null && h(g.g.TEMPLATE, l.substring(1));
-    let m = null == c ? void 0 : c.match(O);
-    if (null != m) {
-      let e = m[1].toUpperCase();
-      if (e === g.g.INVITE) {
-        let e = (0, f.mb)(m[2], r.search);
-        h(g.g.INVITE, e)
-      } else h(e, m[2])
-    }(null == c ? void 0 : c.match(y)) != null && h(g.g.CHANNEL_LINK, c.replace("/channels/", ""));
+      p.Z.getInvite(e), h(m.g.INVITE, e)
+    }(null == l ? void 0 : l.match(b)) != null && h(m.g.TEMPLATE, l.substring(1));
+    let g = null == c ? void 0 : c.match(O);
+    if (null != g) {
+      let e = g[1].toUpperCase();
+      if (e === m.g.INVITE) {
+        let e = (0, f.mb)(g[2], r.search);
+        h(m.g.INVITE, e)
+      } else h(e, g[2])
+    }(null == c ? void 0 : c.match(y)) != null && h(m.g.CHANNEL_LINK, c.replace("/channels/", ""));
     let E = W(r.pathname);
-    if (null != E && h(g.g.EVENT, "".concat(E.guildId, "-").concat(E.guildEventId) + (null != E.recurrenceId ? "-".concat(E.recurrenceId) : "")), null != (null == c ? void 0 : c.match(P)) && null != r.query) {
-      let e = (0, p.y)(r.query),
+    if (null != E && h(m.g.EVENT, "".concat(E.guildId, "-").concat(E.guildEventId) + (null != E.recurrenceId ? "-".concat(E.recurrenceId) : "")), null != (null == c ? void 0 : c.match(P)) && null != r.query) {
+      let e = (0, _.y)(r.query),
         t = e.clientId;
-      null == t || "" === t || (null === (o = e.scopes) || void 0 === o ? void 0 : o.some(e => e !== u.x.APPLICATIONS_COMMANDS)) || h(g.g.APP_OAUTH2_LINK, t)
+      null == t || "" === t || (null === (o = e.scopes) || void 0 === o ? void 0 : o.some(e => e !== u.x.APPLICATIONS_COMMANDS)) || h(m.g.APP_OAUTH2_LINK, t)
     }
     let S = null == c ? void 0 : c.match(I);
     if (null != S) {
       let e = S[2];
-      h(g.g.APP_DIRECTORY_PROFILE, e)
+      h(m.g.APP_DIRECTORY_PROFILE, e)
     }
     let R = null == c ? void 0 : c.match(T);
     if (null != R) {
@@ -160,22 +160,22 @@ function K(e) {
         t = R[3];
       if (null != t) {
         let n = (0, d.l)(e, t);
-        h(g.g.APP_DIRECTORY_STOREFRONT_SKU, n)
-      } else h(g.g.APP_DIRECTORY_STOREFRONT, e)
+        h(m.g.APP_DIRECTORY_STOREFRONT_SKU, n)
+      } else h(m.g.APP_DIRECTORY_STOREFRONT, e)
     }
     let w = null == c ? void 0 : c.match(N);
     if (null != w) {
       let e = w[1];
-      h(g.g.ACTIVITY_BOOKMARK, e)
+      h(m.g.ACTIVITY_BOOKMARK, e)
     }
     let L = null == c ? void 0 : c.match(A);
-    null != L && h(g.g.GUILD_PRODUCT, "".concat(L[1], "-").concat(L[2]));
+    null != L && h(m.g.GUILD_PRODUCT, "".concat(L[1], "-").concat(L[2]));
     let x = null == c ? void 0 : c.match(C);
-    null != x && h(g.g.SERVER_SHOP, x[1]);
+    null != x && h(m.g.SERVER_SHOP, x[1]);
     let M = z(e);
-    if (null != M && h(g.g.QUESTS_EMBED, M), "/shop" === c) {
+    if (null != M && h(m.g.QUESTS_EMBED, M), "/shop" === c) {
       let e = null === (a = r.hash) || void 0 === a ? void 0 : a.match(D);
-      h(g.g.COLLECTIBLES_SHOP, null !== (s = null == e ? void 0 : e[1]) && void 0 !== s ? s : "")
+      h(m.g.COLLECTIBLES_SHOP, null !== (s = null == e ? void 0 : e[1]) && void 0 !== s ? s : "")
     }
   }
   return n

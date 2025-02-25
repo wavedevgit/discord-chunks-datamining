@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(126387),
   i = n(493623),
@@ -17,7 +17,7 @@ var r = n(126387),
       placement: t.placement
     })) : e, (0, c.Z)("number" != typeof e ? e : (0, u.Z)(e, d.mv))
   };
-let p = {
+let _ = {
   name: "arrow",
   enabled: !0,
   phase: "main",
@@ -26,23 +26,23 @@ let p = {
       o = e.name,
       c = e.options,
       u = n.elements.arrow,
-      p = n.modifiersData.popperOffsets,
-      _ = (0, r.Z)(n.placement),
-      h = (0, s.Z)(_),
-      m = [d.t$, d.F2].indexOf(_) >= 0 ? "height" : "width";
-    if (u && p) {
-      var g = f(c.padding, n),
+      _ = n.modifiersData.popperOffsets,
+      p = (0, r.Z)(n.placement),
+      h = (0, s.Z)(p),
+      g = [d.t$, d.F2].indexOf(p) >= 0 ? "height" : "width";
+    if (u && _) {
+      var m = f(c.padding, n),
         E = (0, i.Z)(u),
         v = "y" === h ? d.we : d.t$,
         b = "y" === h ? d.I : d.F2,
-        y = n.rects.reference[m] + n.rects.reference[h] - p[h] - n.rects.popper[m],
-        O = p[h] - n.rects.reference[h],
+        y = n.rects.reference[g] + n.rects.reference[h] - _[h] - n.rects.popper[g],
+        O = _[h] - n.rects.reference[h],
         S = (0, a.Z)(u),
         I = S ? "y" === h ? S.clientHeight || 0 : S.clientWidth || 0 : 0,
         T = y / 2 - O / 2,
-        N = g[v],
-        A = I - E[m] - g[b],
-        C = I / 2 - E[m] / 2 + T,
+        N = m[v],
+        A = I - E[g] - m[b],
+        C = I / 2 - E[g] / 2 + T,
         R = (0, l.u)(N, C, A),
         P = h;
       n.modifiersData[o] = ((t = {})[P] = R, t.centerOffset = R - C, t)

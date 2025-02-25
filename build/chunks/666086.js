@@ -13,11 +13,11 @@ var r = n(392711),
   u = n(650774),
   d = n(271383),
   f = n(430824),
-  p = n(375954),
-  _ = n(944486),
+  _ = n(375954),
+  p = n(944486),
   h = n(626135),
-  m = n(522558),
-  g = n(581025),
+  g = n(522558),
+  m = n(581025),
   E = n(795448),
   v = n(441623),
   b = n(474936),
@@ -62,8 +62,8 @@ class N extends a.Z {
   }
   maybeSendGiftingPromptSystemMessageDebounced(e, t, n, i) {
     (0, r.debounce)(() => {
-      let r = _.Z.getChannelId();
-      !v.Z.isGiftIntentMessageInCooldown(n) && e === r && p.Z.isReady(e) && (o.Z.sendGiftingPromptSystemMessage(e, {
+      let r = p.Z.getChannelId();
+      !v.Z.isGiftIntentMessageInCooldown(n) && e === r && _.Z.isReady(e) && (o.Z.sendGiftingPromptSystemMessage(e, {
         giftIntentType: t,
         recipientUserId: n,
         giftIntentSecondaryAction: i
@@ -73,13 +73,13 @@ class N extends a.Z {
   handleChannelSelect(e, t) {
     let {
       enabled: n
-    } = g.G.getCurrentConfig({
+    } = m.G.getCurrentConfig({
       location: "PremiumGiftingIntentManager handleChannelSelect"
     }, {
       autoTrackExposure: !1
     }), {
       enabled: r
-    } = m.w.getCurrentConfig({
+    } = g.w.getCurrentConfig({
       location: "PremiumGiftingIntentManager handleChannelSelect"
     }, {
       autoTrackExposure: !1
@@ -104,7 +104,7 @@ class N extends a.Z {
     this.handleChannelSelect(t, n)
   }
   onPostConnectionOpen() {
-    let e = _.Z.getChannelId();
+    let e = p.Z.getChannelId();
     if (null != e) {
       let t = c.Z.getChannel(e);
       this.handleChannelSelect(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id)

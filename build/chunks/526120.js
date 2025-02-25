@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   C3: () => E,
-  Fg: () => g,
+  Fg: () => m,
   Oh: () => b,
-  cP: () => m,
+  cP: () => g,
   gp: () => v
 }), n(47120);
 var r = n(544891),
@@ -17,10 +17,10 @@ var r = n(544891),
   u = n(626135),
   d = n(709054),
   f = n(563534),
-  p = n(734893),
-  _ = n(846121),
+  _ = n(734893),
+  p = n(846121),
   h = n(981631);
-let m = async e => {
+let g = async e => {
   i.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_FETCH_START",
     guildId: e
@@ -31,7 +31,7 @@ let m = async e => {
         oldFormErrors: !0,
         rejectWithError: !0
       }),
-      n = (0, p.tB)(t.body);
+      n = (0, _.tB)(t.body);
     return i.Z.dispatch({
       type: "GUILD_HOME_SETTINGS_FETCH_SUCCESS",
       guildId: e,
@@ -43,7 +43,7 @@ let m = async e => {
       guildId: e
     })
   }
-}, g = async e => {
+}, m = async e => {
   if (!s.Z.isFullServerPreview(e)) {
     i.Z.dispatch({
       type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_START",
@@ -55,7 +55,7 @@ let m = async e => {
           oldFormErrors: !0,
           rejectWithError: !0
         }),
-        n = (0, p.rk)(t.body);
+        n = (0, _.rk)(t.body);
       return i.Z.dispatch({
         type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_SUCCESS",
         guildId: e,
@@ -76,8 +76,8 @@ let m = async e => {
       channelId: t
     }), null == t) return;
   let r = c.Z.getChannel(t),
-    p = f.Z.getResourceForChannel(e, t);
-  null == e || s.Z.isFullServerPreview(e) || null == r || null == p || u.default.track(h.rMx.SERVER_GUIDE_CHANNEL_SELECTED, {
+    _ = f.Z.getResourceForChannel(e, t);
+  null == e || s.Z.isFullServerPreview(e) || null == r || null == _ || u.default.track(h.rMx.SERVER_GUIDE_CHANNEL_SELECTED, {
     guild_id: e,
     channel_id: r.id,
     server_guide_channel_type: "resource",
@@ -114,7 +114,7 @@ let m = async e => {
     o = f.Z.getActionForChannel(e, t);
   if (null != n && null != o) {
     var a, l;
-    let t = d.default.keys(null !== (a = _.Z.getCompletedActions(e)) && void 0 !== a ? a : {}),
+    let t = d.default.keys(null !== (a = p.Z.getCompletedActions(e)) && void 0 !== a ? a : {}),
       r = null !== (l = f.Z.getNewMemberActions(e)) && void 0 !== l ? l : [];
     u.default.track(h.rMx.SERVER_GUIDE_ACTION_COMPLETED, {
       guild_id: n.guild_id,

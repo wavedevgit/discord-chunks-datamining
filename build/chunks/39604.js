@@ -29,11 +29,11 @@ var r = n(46973),
   u = n(441167),
   d = n(460181),
   f = n(695346),
-  p = n(361291),
-  _ = n(199902),
+  _ = n(361291),
+  p = n(199902),
   h = n(314897),
-  m = n(131951),
-  g = n(959457),
+  g = n(131951),
+  m = n(959457),
   E = n(33039),
   v = n(626135),
   b = n(358085),
@@ -191,13 +191,13 @@ function F(e) {
   var t;
   let n, r, i;
   if (null != e) {
-    n = null != e ? g.Z.getRTCConnection(e) : null;
+    n = null != e ? m.Z.getRTCConnection(e) : null;
     let t = (0, c.my)(e);
     r = t.guildId, i = t.channelId
   } else {
     let e = h.default.getId(),
-      t = _.Z.getActiveStreamForUser(e, null);
-    n = null != t ? g.Z.getRTCConnection((0, c.V9)(t)) : null, r = null == t ? void 0 : t.guildId, i = null == t ? void 0 : t.channelId
+      t = p.Z.getActiveStreamForUser(e, null);
+    n = null != t ? m.Z.getRTCConnection((0, c.V9)(t)) : null, r = null == t ? void 0 : t.guildId, i = null == t ? void 0 : t.channelId
   }
   let o = null == n ? void 0 : null === (t = n.analyticsContext) || void 0 === t ? void 0 : t.streamApplication;
   return {
@@ -213,23 +213,23 @@ function F(e) {
 
 function V(e, t) {
   var n, r, i, o, a, l, c, u, d, f;
-  let _ = new Map;
+  let p = new Map;
   for (let e in t.framesEncodedByEncoder) {
     let r = t.framesEncodedByEncoder[e],
       i = (0, s.lG)(e),
-      o = null !== (n = _.get(i)) && void 0 !== n ? n : 0;
-    _.set(i, o + r)
+      o = null !== (n = p.get(i)) && void 0 !== n ? n : 0;
+    p.set(i, o + r)
   }
   return w(P({}, e), {
-    frames_encoded_nvidia_cuda: null !== (r = _.get(s.Su.NVIDIA_CUDA)) && void 0 !== r ? r : 0,
-    frames_encoded_nvidia_direct3d: null !== (i = _.get(s.Su.NVIDIA_DIRECT_3D)) && void 0 !== i ? i : 0,
-    frames_encoded_openh264: null !== (o = _.get(s.Su.OPENH264)) && void 0 !== o ? o : 0,
-    frames_encoded_videotoolbox: null !== (a = _.get(s.Su.VIDEOTOOLBOX)) && void 0 !== a ? a : 0,
-    frames_encoded_amd_direct3d: null !== (l = _.get(s.Su.AMD_DIRECT_3D)) && void 0 !== l ? l : 0,
-    frames_encoded_intel: null !== (c = _.get(s.Su.INTEL)) && void 0 !== c ? c : 0,
-    frames_encoded_intel_direct3d: null !== (u = _.get(s.Su.INTEL_DIRECT_3D)) && void 0 !== u ? u : 0,
-    frames_encoded_uncategorized: null !== (d = _.get(s.Su.UNCATEGORIZED)) && void 0 !== d ? d : 0,
-    frames_encoded_unknown: null !== (f = _.get(s.Su.UNKNOWN)) && void 0 !== f ? f : 0,
+    frames_encoded_nvidia_cuda: null !== (r = p.get(s.Su.NVIDIA_CUDA)) && void 0 !== r ? r : 0,
+    frames_encoded_nvidia_direct3d: null !== (i = p.get(s.Su.NVIDIA_DIRECT_3D)) && void 0 !== i ? i : 0,
+    frames_encoded_openh264: null !== (o = p.get(s.Su.OPENH264)) && void 0 !== o ? o : 0,
+    frames_encoded_videotoolbox: null !== (a = p.get(s.Su.VIDEOTOOLBOX)) && void 0 !== a ? a : 0,
+    frames_encoded_amd_direct3d: null !== (l = p.get(s.Su.AMD_DIRECT_3D)) && void 0 !== l ? l : 0,
+    frames_encoded_intel: null !== (c = p.get(s.Su.INTEL)) && void 0 !== c ? c : 0,
+    frames_encoded_intel_direct3d: null !== (u = p.get(s.Su.INTEL_DIRECT_3D)) && void 0 !== u ? u : 0,
+    frames_encoded_uncategorized: null !== (d = p.get(s.Su.UNCATEGORIZED)) && void 0 !== d ? d : 0,
+    frames_encoded_unknown: null !== (f = p.get(s.Su.UNKNOWN)) && void 0 !== f ? f : 0,
     frames_submitted: t.framesSubmitted,
     frames_submitted_during_clip: t.framesSubmittedDuringClip,
     frames_encoded: t.framesEncoded,
@@ -243,7 +243,7 @@ function V(e, t) {
     min_fps: t.minFps,
     max_fps: t.maxFps,
     submitted_fps: t.submittedFps,
-    target_fps: p.Z.getState().fps,
+    target_fps: _.Z.getState().fps,
     audio_track_count: t.audioTrackCount,
     saved_at: t.savedAt
   })
@@ -253,7 +253,7 @@ async function Z(e) {
     n = (0, S.Z)(e),
     r = "".concat((0, O.Z)(n.applicationName.substring(0, 20)), "_").concat(n.id, ".mp4"),
     i = a.Z.fileManager.join(t, r),
-    s = m.Z.getMediaEngine(),
+    s = g.Z.getMediaEngine(),
     l = JSON.stringify(n),
     u = null != e ? (0, c.my)(e).ownerId : void 0,
     d = F(e);
@@ -295,12 +295,12 @@ async function H(e) {
       autoTrackExposure: !1
     });
   if (y.Z.getIsAtMaxSaveClipOperations()) return;
-  let s = y.Z.getSettings().clipsEnabled && null != _.Z.getCurrentUserActiveStream(),
-    f = n && y.Z.getSettings().decoupledClipsEnabled && (null === (t = l.ZP.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null && m.Z.hasClipsSource(),
-    p = null != e && null != _.Z.getActiveStreamForStreamKey(e) && a;
-  if (!s && !f && !p) return;
-  let g = _.Z.getCurrentUserActiveStream(),
-    v = null != g ? (0, c.V9)(g) : void 0,
+  let s = y.Z.getSettings().clipsEnabled && null != p.Z.getCurrentUserActiveStream(),
+    f = n && y.Z.getSettings().decoupledClipsEnabled && (null === (t = l.ZP.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null && g.Z.hasClipsSource(),
+    _ = null != e && null != p.Z.getActiveStreamForStreamKey(e) && a;
+  if (!s && !f && !_) return;
+  let m = p.Z.getCurrentUserActiveStream(),
+    v = null != m ? (0, c.V9)(m) : void 0,
     b = null != e ? e : v,
     O = (() => {
       let e = null != b ? (0, c.my)(b).ownerId : void 0;
@@ -353,7 +353,7 @@ async function Y(e, t) {
   let n = y.Z.getClips().find(t => t.id === e);
   if (null == n) return;
   let r = P({}, n, t);
-  null != await (0, I.w)(r) && (await m.Z.getMediaEngine().updateClipMetadata(r.filepath, JSON.stringify(r)), v.default.track(C.rMx.CLIP_EDITED, {
+  null != await (0, I.w)(r) && (await g.Z.getMediaEngine().updateClipMetadata(r.filepath, JSON.stringify(r)), v.default.track(C.rMx.CLIP_EDITED, {
     clip_id: r.id
   }), o.Z.dispatch({
     type: "CLIPS_UPDATE_METADATA",
@@ -396,7 +396,7 @@ async function Q(e) {
   }))
 }
 async function X(e, t) {
-  let n = m.Z.getMediaEngine(),
+  let n = g.Z.getMediaEngine(),
     r = await n.exportClip(e.filepath, t);
   return (0, T.Z)(r)
 }

@@ -43,7 +43,7 @@ function f(e, t, n) {
   return e < 12 ? n ? "am" : "AM" : n ? "pm" : "PM"
 }
 
-function p() {
+function _() {
   let {
     months: e,
     monthsShort: t,
@@ -72,7 +72,7 @@ function p() {
   }
 }
 
-function _(e, t) {
+function p(e, t) {
   return e.replace(/L[L|T|S]{0,3}/g, (n, r) => {
     if (/^LLLL/.test(n)) return t.longDateFormat.LLLL;
     if (/^LLL/.test(n)) return t.longDateFormat.LLL + n.slice(3);
@@ -86,10 +86,10 @@ function _(e, t) {
 
 function h(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = null != t ? t : p();
+    r = null != t ? t : _();
   (void 0 !== t || n || !a.Z.getCurrentConfig({
     location: "makeDateFormatter"
-  }).enableSystemFormatter) && (e = _(e, r));
+  }).enableSystemFormatter) && (e = p(e, r));
   let i = [],
     o = {
       month: !1,
@@ -330,6 +330,6 @@ function h(e, t) {
   }
   let h = "";
   o.date && (h += "var _date = d.get" + (n ? "UTC" : "") + "Date();\n"), o.month && (h += "var _month = d.get" + (n ? "UTC" : "") + "Month();\n"), o.dayOfYear && (h += "var _startOfYear = new Date(d.valueOf());\n_startOfYear.set" + (n ? "UTC" : "") + "Month(0);\n_startOfYear.set" + (n ? "UTC" : "") + "Date(1);\nvar _doy = Math.round((d - _startOfYear) / 864e5) + 1;\n"), o.day && (h += "var _day = d.get" + (n ? "UTC" : "") + "Day();\n"), o.year && (h += "var _year = d.get" + (n ? "UTC" : "") + "FullYear();\n"), o.hour && (h += "var _hour = d.get" + (n ? "UTC" : "") + "Hours();\n"), o.minutes && (h += "var _mins = d.get" + (n ? "UTC" : "") + "Minutes();\n"), o.seconds && (h += "var _secs = d.get" + (n ? "UTC" : "") + "Seconds();\n"), o.millis && (h += "var _ms = d.get" + (n ? "UTC" : "") + "Milliseconds();\n"), o.offset && (n ? h += "var _offs = 0, _absOffs = 0, _offH = 0, _offM = 0;" : h += "var _offs = -d.getTimezoneOffset();\nvar _absOffs = _offs < 0 ? -_offs : _offs;\nvar _offH = Math.floor(_absOffs / 60);\nvar _offM = _absOffs % 60;\n"), o.week && (h += "var _wend = " + (r.week.doy - r.week.dow) + ";\nvar _ddw = " + +r.week.doy + " - d.get" + (n ? "UTC" : "") + "Day();\nif(_ddw > _wend) _ddw -= 7;\nif(_ddw < _wend - 7) _ddw += 7;\nvar _d2 = new Date(d.valueOf());\n_d2.set" + (n ? "UTC" : "") + "Date(d.get" + (n ? "UTC" : "") + "Date() + _ddw);\nvar _soy2 = new Date(_d2.valueOf());\n_soy2.set" + (n ? "UTC" : "") + "Month(0);\n_soy2.set" + (n ? "UTC" : "") + "Date(1);\nvar _doy2 = Math.round((_d2 - _soy2) / 864e5) + 1;\nvar _week = Math.ceil(_doy2 / 7);\nvar _weekYear = _d2.get" + (n ? "UTC" : "") + "FullYear();\n"), o.isoweek && (h += "var _i_wend = 3;\nvar _i_ddw = 4 - d.get" + (n ? "UTC" : "") + "Day();\nif(_i_ddw > _i_wend) _i_ddw -= 7;\nif(_i_ddw < _i_wend - 7) _i_ddw += 7;\nvar _i_d2 = new Date(d.valueOf());\n_i_d2.set" + (n ? "UTC" : "") + "Date(d.get" + (n ? "UTC" : "") + "Date() + _i_ddw);\nvar _i_soy2 = new Date(_i_d2.valueOf());\n_i_soy2.set" + (n ? "UTC" : "") + "Month(0);\n_i_soy2.set" + (n ? "UTC" : "") + "Date(1);\nvar _i_doy2 = Math.round((_i_d2 - _i_soy2) / 864e5) + 1;\nvar _i_week = Math.ceil(_i_doy2 / 7);\nvar _i_weekYear = _i_d2.get" + (n ? "UTC" : "") + "FullYear();\n");
-  let m = Function("d", "localeData", h += 'return (\n"" +\n'.concat(i.join(" +\n"), "\n);"));
-  return e => m(e, r)
+  let g = Function("d", "localeData", h += 'return (\n"" +\n'.concat(i.join(" +\n"), "\n);"));
+  return e => g(e, r)
 }

@@ -107,14 +107,14 @@ function S(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: !1
-  }), x = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(E.Plq.CREATE_INSTANT_INVITE, a)), S = (0, m.P1)(a), P = !1, T = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), A = null !== (n = null === (t = v.default.getUser(_.default.getId())) || void 0 === t ? void 0 : t.hasFlag(E.xW$.SPAMMER)) && void 0 !== n && n, w = [];
+  }), x = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(E.Plq.CREATE_INSTANT_INVITE, a)), S = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), A = null !== (n = null === (t = v.default.getUser(_.default.getId())) || void 0 === t ? void 0 : t.hasFlag(E.xW$.SPAMMER)) && void 0 !== n && n, w = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
       n = i.messages.slice(0, O.hC);
     n.forEach(n => {
       if (!(0, u.Z)(n, C)) {
-        if (!T && (null == e || !e.isSame(n.timestamp, "day"))) {
+        if (!P && (null == e || !e.isSame(n.timestamp, "day"))) {
           let t = (0, y.vc)(n.timestamp, "LL");
           w.push((0, r.jsx)(f.Z, {
             className: N.divider,
@@ -122,7 +122,7 @@ function S(e) {
           }, t)), e = o()(n.timestamp)
         }
         let i = null == t || (0, p.Z)(a, t, n);
-        t = n, P = P || (0, m.DQ)(n), w.push((0, r.jsx)(I, {
+        t = n, T = T || (0, m.DQ)(n), w.push((0, r.jsx)(I, {
           channel: a,
           message: n,
           compact: x,
@@ -138,7 +138,7 @@ function S(e) {
       children: [j.NW.string(j.t["9OB9ho"]), " ›"]
     }, "view-all")), 0 === w.length && (w = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }
-  return P && S && d.Z.trackExposure({
+  return T && S && d.Z.trackExposure({
     location: "20e3b0_2"
   }), (0, r.jsx)("div", {
     className: N.messages,

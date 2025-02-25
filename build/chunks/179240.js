@@ -21,7 +21,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,14 +46,14 @@ function _(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,7 +61,7 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -160,11 +160,11 @@ class b extends(i = a.PureComponent) {
         className: n,
         onResize: r
       } = e,
-      i = m(e, ["style", "className", "onResize"]);
+      i = g(e, ["style", "className", "onResize"]);
     delete i.fontWidthEstimate;
-    let a = p({}, this.state, t);
+    let a = _({}, this.state, t);
     return (0, o.jsx)(u.t, {
-      children: (0, o.jsx)("textarea", h(p({}, i), {
+      children: (0, o.jsx)("textarea", h(_({}, i), {
         className: l()(n, d.scrollbarGhostHairline),
         ref: this.handleSetRef,
         style: a,

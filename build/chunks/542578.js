@@ -20,18 +20,18 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = {};
-class p {
+class _ {
   static ensure(e, t, n) {
     var r, i;
     let o = "".concat(e, ":").concat(t.name, ":").concat(null !== (r = t.id) && void 0 !== r ? r : "", ":").concat(n);
-    return f[o] = null !== (i = f[o]) && void 0 !== i ? i : new p
+    return f[o] = null !== (i = f[o]) && void 0 !== i ? i : new _
   }
   constructor() {
     d(this, "users", void 0), d(this, "fetched", void 0), this.fetched = !1, this.users = {}
   }
 }
 
-function _() {
+function p() {
   f = {}
 }
 
@@ -42,25 +42,25 @@ function h(e) {
     userId: r,
     emoji: i,
     reactionType: o
-  } = e, a = p.ensure(n, i, o);
+  } = e, a = _.ensure(n, i, o);
   if ("MESSAGE_REACTION_ADD" === t) {
     let e = u.default.getUser(r);
     null != e && (a.users[r] = e)
   } else delete a.users[r]
 }
 
-function m(e) {
+function g(e) {
   let {
     messageId: t,
     users: n,
     emoji: r,
     reactionType: i
-  } = e, o = p.ensure(t, r, i);
+  } = e, o = _.ensure(t, r, i);
   n.forEach(e => o.users[e.id] = new l.Z(e))
 }
-class g extends(r = i.ZP.Store) {
+class m extends(r = i.ZP.Store) {
   getReactions(e, t, n, r, i) {
-    let o = p.ensure(t, n, i);
+    let o = _.ensure(t, n, i);
     if (!o.fetched) {
       let l = c.Z.getChannel(e),
         u = null != l ? l.getGuildId() : null;
@@ -76,10 +76,10 @@ class g extends(r = i.ZP.Store) {
     return o.users
   }
 }
-d(g, "displayName", "MessageReactionsStore");
-let E = new g(o.Z, {
-  CONNECTION_OPEN: _,
+d(m, "displayName", "MessageReactionsStore");
+let E = new m(o.Z, {
+  CONNECTION_OPEN: p,
   MESSAGE_REACTION_ADD: h,
   MESSAGE_REACTION_REMOVE: h,
-  MESSAGE_REACTION_ADD_USERS: m
+  MESSAGE_REACTION_ADD_USERS: g
 })

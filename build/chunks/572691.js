@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(653041);
 var r = n(97613),
   i = n.n(r),
@@ -33,7 +33,7 @@ function f(e) {
   }
   return e
 }
-let p = {
+let _ = {
   push(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : i()("modal"),
       r = arguments.length > 3 ? arguments[3] : void 0,

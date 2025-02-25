@@ -18,21 +18,21 @@ function f(e) {
   let {
     selectedGuildId: n,
     selectedChannelId: f,
-    onChannelChange: p,
-    error: _
-  } = e, [h, m] = i.useState(null), g = i.useRef(!1);
+    onChannelChange: _,
+    error: p
+  } = e, [h, g] = i.useState(null), m = i.useRef(!1);
   if (i.useEffect(() => {
       async function e(e) {
         let t = await (0, l.UR)(e);
-        n === e && (t.sort((e, t) => e.name.localeCompare(t.name)), m({
+        n === e && (t.sort((e, t) => e.name.localeCompare(t.name)), g({
           guildId: e,
           channels: t
-        }), g.current = !0)
+        }), m.current = !0)
       }
-      m(null), null == n ? p(null) : e(n)
-    }, [p, n]), i.useEffect(() => {
-      g.current && (null == h ? null != f && p(null) : h.channels.some(e => e.id === f) || p(null))
-    }, [h, p, f, n]), null == n) return null;
+      g(null), null == n ? _(null) : e(n)
+    }, [_, n]), i.useEffect(() => {
+      m.current && (null == h ? null != f && _(null) : h.channels.some(e => e.id === f) || _(null))
+    }, [h, _, f, n]), null == n) return null;
   let E = null == h || h.guildId !== n ? [] : (null !== (t = null == h ? void 0 : h.channels) && void 0 !== t ? t : []).map(e => ({
     value: e.id,
     label: e.name
@@ -43,14 +43,14 @@ function f(e) {
       variant: "heading-deprecated-12/semibold",
       className: u.sectionLabel,
       children: c.NW.string(c.t["8qKd+P"])
-    }), null != _ && "" !== _ ? (0, r.jsx)(a.x, {
+    }), null != p && "" !== p ? (0, r.jsx)(a.x, {
       variant: "text-xs/normal",
       color: "text-danger",
-      children: _
+      children: p
     }) : null, (0, r.jsx)(s.VcW, {
       wrapperClassName: u.select,
       maxVisibleItems: d,
-      onChange: p,
+      onChange: _,
       placeholder: c.NW.string(c.t["Re/64e"]),
       options: E,
       value: f,

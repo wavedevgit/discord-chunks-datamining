@@ -23,7 +23,7 @@ function d() {
     t = (0, i.e7)([l.Z], () => l.Z.isOpen()),
     n = (0, i.e7)([s.Z], () => s.Z.hasLayers()),
     [d, f] = r.useState(!1),
-    p = (0, a.Aq)();
+    _ = (0, a.Aq)();
   return r.useEffect(() => {
     function e() {
       f(!0)
@@ -32,8 +32,8 @@ function d() {
     function t() {
       f(!1)
     }
-    return p.subscribe(c.CkL.POPOUT_SHOW, e), p.subscribe(c.CkL.POPOUT_HIDE, t), () => {
-      p.unsubscribe(c.CkL.POPOUT_SHOW, e), p.unsubscribe(c.CkL.POPOUT_HIDE, t)
+    return _.subscribe(c.CkL.POPOUT_SHOW, e), _.subscribe(c.CkL.POPOUT_HIDE, t), () => {
+      _.unsubscribe(c.CkL.POPOUT_SHOW, e), _.unsubscribe(c.CkL.POPOUT_HIDE, t)
     }
-  }, [p]), e || t || d || n
+  }, [_]), e || t || d || n
 }

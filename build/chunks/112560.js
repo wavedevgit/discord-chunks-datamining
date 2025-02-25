@@ -25,8 +25,8 @@ function u(e) {
     size: u,
     className: d,
     artURL: f,
-    noArt: p = !1,
-    selected: _ = !1
+    noArt: _ = !1,
+    selected: p = !1
   } = e;
   return (0, r.jsxs)(s.Z, {
     className: d,
@@ -36,7 +36,7 @@ function u(e) {
     style: {
       padding: 4
     },
-    children: [!p && null != f && (0, r.jsx)("div", {
+    children: [!_ && null != f && (0, r.jsx)("div", {
       className: o()(l.art, l[u]),
       style: {
         backgroundImage: "url(".concat(f, ")")
@@ -51,7 +51,7 @@ function u(e) {
       className: l.description,
       variant: "text-sm/medium",
       children: c
-    }) : null, _ || null == n ? null : (0, r.jsx)(a.zxk, {
+    }) : null, p || null == n ? null : (0, r.jsx)(a.zxk, {
       className: l.outerButton,
       size: a.zxk.Sizes.NONE,
       color: a.zxk.Colors.WHITE,

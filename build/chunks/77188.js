@@ -13,11 +13,11 @@ var r = n(192379),
   u = n(752305),
   d = n(86724),
   f = n(886027),
-  p = n(515270),
-  _ = n(265446),
+  _ = n(515270),
+  p = n(265446),
   h = n(196483),
-  m = n(417662),
-  g = n(847302),
+  g = n(417662),
+  m = n(847302),
   E = n(374157);
 n(209073);
 var v = n(814011),
@@ -109,7 +109,7 @@ function P(e) {
   } = R;
   R.chatInputType = a, R.windowContext = u, R.previewMarkdown = I, R.composition = null, R.events = new i.EventEmitter, R.isMac = "MacIntel" === navigator.platform, R.onChange = () => {
     R.events.emit("onChange"), P()
-  }, R = (0, b.B)(R, !0 === T), R = (0, v.Z)(R), R = (0, E.Z)(R), (null === (t = a.commands) || void 0 === t ? void 0 : t.enabled) && (R = (0, d.Z)(R, s, !0 === l, !0 === c)), R = (0, g.ZP)(R, s.guild_id, s.id), (null === (n = a.markdown) || void 0 === n ? void 0 : n.disableBlockQuotes) || (R = (0, f.Z)(R)), (null === (r = a.markdown) || void 0 === r ? void 0 : r.disableCodeBlocks) || (R = (0, p.ZP)(R)), T && (R = (0, O.Z)(R)), R = (0, m.Z)(R), R = (0, _.Z)(R), R = (0, y.Z)(R), R = (0, S.Z)(R, N, A), R = (0, h.Z)(R, e => {
+  }, R = (0, b.B)(R, !0 === T), R = (0, v.Z)(R), R = (0, E.Z)(R), (null === (t = a.commands) || void 0 === t ? void 0 : t.enabled) && (R = (0, d.Z)(R, s, !0 === l, !0 === c)), R = (0, m.ZP)(R, s.guild_id, s.id), (null === (n = a.markdown) || void 0 === n ? void 0 : n.disableBlockQuotes) || (R = (0, f.Z)(R)), (null === (r = a.markdown) || void 0 === r ? void 0 : r.disableCodeBlocks) || (R = (0, _.ZP)(R)), T && (R = (0, O.Z)(R)), R = (0, g.Z)(R), R = (0, p.Z)(R), R = (0, y.Z)(R), R = (0, S.Z)(R, N, A), R = (0, h.Z)(R, e => {
     let {
       newValue: t,
       newSelection: n

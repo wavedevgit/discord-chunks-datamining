@@ -46,14 +46,14 @@ function f(e) {
   c = {}, u = {}, t.forEach(e => d(e.id, e.stage_instances))
 }
 
-function p(e) {
+function _(e) {
   let {
     guild: t
   } = e;
   d(t.id, t.stage_instances)
 }
 
-function _(e) {
+function p(e) {
   var t;
   let {
     guild: n
@@ -70,25 +70,25 @@ function h(e) {
   d(t.guild_id, [t])
 }
 
-function m(e, t) {
+function g(e, t) {
   var n;
   if (delete u[t], null == e) return;
   let r = l({}, null !== (n = c[e]) && void 0 !== n ? n : {});
   delete r[t], c[e] = r
 }
 
-function g(e) {
+function m(e) {
   let {
     instance: t
   } = e;
-  m(t.guild_id, t.channel_id)
+  g(t.guild_id, t.channel_id)
 }
 
 function E(e) {
   let {
     channel: t
   } = e;
-  m(t.guild_id, t.id)
+  g(t.guild_id, t.id)
 }
 
 function v() {
@@ -116,11 +116,11 @@ class b extends(r = i.ZP.Store) {
 s(b, "displayName", "StageInstanceStore");
 let y = new b(o.Z, {
   CONNECTION_OPEN: f,
-  GUILD_CREATE: p,
-  GUILD_DELETE: _,
+  GUILD_CREATE: _,
+  GUILD_DELETE: p,
   STAGE_INSTANCE_CREATE: h,
   STAGE_INSTANCE_UPDATE: h,
-  STAGE_INSTANCE_DELETE: g,
+  STAGE_INSTANCE_DELETE: m,
   CHANNEL_DELETE: E,
   LOGOUT: v
 })

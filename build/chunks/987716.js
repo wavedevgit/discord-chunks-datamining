@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(669079),
   d = n(479446),
   f = n(646476),
-  p = n(599659),
-  _ = n(981632),
+  _ = n(599659),
+  p = n(981632),
   h = n(96848),
-  m = n(703926),
-  g = n(474936),
+  g = n(703926),
+  m = n(474936),
   E = n(388032),
   v = n(572408);
 
@@ -82,17 +82,17 @@ let I = e => {
     autoTrackExposure: j
   }), {
     enabled: U
-  } = p.O.useExperiment({
+  } = _.O.useExperiment({
     location: "gift card"
   }), G = null;
-  M && (G = j && k ? g.kJ : g.QI), U && (G = g.RQ);
+  M && (G = j && k ? m.kJ : m.QI), U && (G = m.RQ);
   let B = e => {
     null != C && C(null == e ? void 0 : e)
   };
   return (0, r.jsxs)("div", {
     children: [M && (0, r.jsxs)("div", {
       className: a()(v.giftMainAnimation, n),
-      children: [null != O ? (0, r.jsx)(_.Z, {
+      children: [null != O ? (0, r.jsx)(p.Z, {
         giftStyle: O,
         defaultAnimationState: d.SR.ACTION,
         idleAnimationState: d.SR.LOOP,
@@ -125,7 +125,7 @@ let I = e => {
       className: a()(v.giftBoxOptionContainer, o),
       "aria-label": E.NW.string(E.t.v54NrK)
     }, w), {
-      children: null != G && G.map((e, t) => (0, r.jsx)(m.m, {
+      children: null != G && G.map((e, t) => (0, r.jsx)(g.m, {
         isSelected: O === e,
         giftStyle: e,
         setSelectedGiftStyle: I,

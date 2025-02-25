@@ -14,11 +14,11 @@ var r = n(477660),
   u = n(702321),
   d = n(900460),
   f = n(627714),
-  p = n(364640),
-  _ = n(772096),
+  _ = n(364640),
+  p = n(772096),
   h = n(982806),
-  m = n(540709),
-  g = n(881706),
+  g = n(540709),
+  m = n(881706),
   E = n(592125),
   v = n(430824),
   b = n(20303),
@@ -95,7 +95,7 @@ function R(e, t) {
       target: M
     })
   }
-  if (p.Z.trackLinkClicked(M), null != C) {
+  if (_.Z.trackLinkClicked(M), null != C) {
     if (C(t)) return
   } else {
     let {
@@ -107,7 +107,7 @@ function R(e, t) {
     if (null != i && i(t)) return
   }
   let H = () => {
-      if (k && p.Z.trackAnnouncementMessageLinkClicked({
+      if (k && _.Z.trackAnnouncementMessageLinkClicked({
           messageId: U,
           channelId: L,
           guildId: j,
@@ -123,8 +123,8 @@ function R(e, t) {
     null == t || t.preventDefault(), l.Z.show(M);
     return
   }
-  if (null != (0, g.v)(M)) {
-    null == t || t.preventDefault(), m.Z.show(M);
+  if (null != (0, m.v)(M)) {
+    null == t || t.preventDefault(), g.Z.show(M);
     return
   }
   if ((0, f.I)(M)) {
@@ -135,7 +135,7 @@ function R(e, t) {
     K = (0, y.E)(M),
     z = "http:" !== K && "https:" !== K;
   if (!z && (Y || b.Z.isTrustedDomain(M)) || z && b.Z.isTrustedProtocol(M)) {
-    null == t || null != D && D ? H() : k && p.Z.trackAnnouncementMessageLinkClicked({
+    null == t || null != D && D ? H() : k && _.Z.trackAnnouncementMessageLinkClicked({
       messageId: U,
       channelId: L,
       guildId: j,
@@ -153,7 +153,7 @@ function R(e, t) {
     contextKey: S
   });
   else {
-    let e = (0, _.yw)(M),
+    let e = (0, p.yw)(M),
       t = null != e ? e.displayTarget : M;
     h.Z.show({
       url: t,

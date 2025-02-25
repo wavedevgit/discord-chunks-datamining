@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Cf: () => _,
+  Cf: () => p,
   Fq: () => l,
   HP: () => s,
   I5: () => u,
@@ -11,12 +11,12 @@ n.d(t, {
   W3: () => b,
   b9: () => y,
   cV: () => d,
-  g_: () => p,
+  g_: () => _,
   iq: () => a,
   pG: () => v,
-  sr: () => m,
+  sr: () => g,
   xn: () => f,
-  z5: () => g
+  z5: () => m
 }), n(411104);
 var r = n(544891),
   i = n(570140);
@@ -107,14 +107,14 @@ function f(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER",
     banner: e
   })
 }
 
-function _(e) {
+function p(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO",
     bio: e
@@ -128,14 +128,14 @@ function h(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME",
     nickname: e
   })
 }
 
-function g(e) {
+function m(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS",
     themeColors: e

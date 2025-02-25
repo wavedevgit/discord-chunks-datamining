@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -14,35 +14,35 @@ var i = n(442837),
   u = n(246946),
   d = n(654904),
   f = n(228168),
-  p = n(913340);
+  _ = n(913340);
 
-function _(e) {
+function p(e) {
   var t;
   let {
     user: n,
-    displayProfile: _,
+    displayProfile: p,
     guild: h,
-    pendingAvatar: m,
-    pendingNickname: g,
+    pendingAvatar: g,
+    pendingNickname: m,
     pendingGlobalName: E,
     pendingBio: v,
     pendingPronouns: b,
     isTryItOutFlow: y,
     hideBioSection: O
-  } = e, S = (0, i.e7)([c.ZP], () => null == h ? null : c.ZP.getMember(h.id, n.id)), I = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), T = null == _ ? void 0 : null === (t = _.getPreviewBio(v)) || void 0 === t ? void 0 : t.value, N = null != b ? b : null == _ ? void 0 : _.pronouns, A = (0, d.Ly)({
-    pendingNickname: g,
+  } = e, S = (0, i.e7)([c.ZP], () => null == h ? null : c.ZP.getMember(h.id, n.id)), I = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), T = null == p ? void 0 : null === (t = p.getPreviewBio(v)) || void 0 === t ? void 0 : t.value, N = null != b ? b : null == p ? void 0 : p.pronouns, A = (0, d.Ly)({
+    pendingNickname: m,
     pendingGlobalName: E,
     user: n,
     guildMember: S
   }), C = () => {
-    if (null != S && null !== m && (null != S.avatar || null != m)) return (0, r.jsx)(l.Z, {
+    if (null != S && null !== g && (null != S.avatar || null != g)) return (0, r.jsx)(l.Z, {
       user: n,
       nickname: A
     })
   };
   return (0, r.jsxs)("div", {
     inert: "",
-    className: p.body,
+    className: _.body,
     children: [(0, r.jsx)(a.Z, {
       user: n,
       profileType: f.y0.BITE_SIZE,
@@ -51,7 +51,7 @@ function _(e) {
       pronouns: N,
       isTryItOut: y,
       tags: (0, r.jsx)(o.Z, {
-        displayProfile: _,
+        displayProfile: p,
         profileType: f.y0.BITE_SIZE
       })
     }), !O && null != T && "" !== T && (0, r.jsx)(s.Z, {

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -50,7 +50,7 @@ function f(e, t) {
   }), e
 }
 
-function p(e) {
+function _(e) {
   let {
     text: t = s.NW.string(s.t["5AFxuL"]),
     className: n

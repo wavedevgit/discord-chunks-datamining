@@ -19,8 +19,8 @@ var r = n(192379),
   u = n(630388),
   d = n(823379),
   f = n(709054),
-  p = n(591759),
-  _ = n(981631);
+  _ = n(591759),
+  p = n(981631);
 
 function h(e) {
   if (null == e) return !1;
@@ -32,12 +32,12 @@ function h(e) {
   return (0, i.CO)(t) && null != n && n > 0 && null != r && r > 0
 }
 
-function m(e) {
+function g(e) {
   return null != e && null != e && (0, i.NU)(e.filename) && null != e.proxy_url
 }
 
-function g(e) {
-  return h(e) || m(e)
+function m(e) {
+  return h(e) || g(e)
 }
 var E = function(e) {
   return e.EMBED = "embed", e.ATTACHMENT = "attachment", e
@@ -47,7 +47,7 @@ function v(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a.x4.getSetting();
   if (!t) return [];
   let n = null == e ? void 0 : e.attachments;
-  return null == e || null == n ? [] : n.filter(g).map((e, t) => {
+  return null == e || null == n ? [] : n.filter(m).map((e, t) => {
     var n;
     let {
       proxy_url: r,
@@ -61,11 +61,11 @@ function v(e) {
       content_scan_version: h
     } = e;
     if (null == c || null == d) return null;
-    let m = (0, i.NU)(f),
-      g = null != e.flags && (0, u.yE)(e.flags, _.J0y.IS_THUMBNAIL),
+    let g = (0, i.NU)(f),
+      m = null != e.flags && (0, u.yE)(e.flags, p.J0y.IS_THUMBNAIL),
       E = null != r ? r : o;
-    if (m) {
-      let e = p.Z.toURLSafe(r);
+    if (g) {
+      let e = _.Z.toURLSafe(r);
       if (null == e) return null;
       e.searchParams.append("format", "webp"), E = e.toString()
     }
@@ -77,12 +77,12 @@ function v(e) {
       flags: l,
       contentScanVersion: h,
       alt: a,
-      isVideo: m,
-      isThumbnail: g,
+      isVideo: g,
+      isThumbnail: m,
       type: "attachment",
       attachmentId: e.id,
       mediaIndex: t,
-      srcIsAnimated: (0, u.yE)(null !== (n = e.flags) && void 0 !== n ? n : 0, _.J0y.IS_ANIMATED)
+      srcIsAnimated: (0, u.yE)(null !== (n = e.flags) && void 0 !== n ? n : 0, p.J0y.IS_ANIMATED)
     }
   }).filter(d.lm)
 }
@@ -117,7 +117,7 @@ function y(e, t) {
         isVideo: d,
         type: "embed",
         mediaIndex: n,
-        srcIsAnimated: (0, u.yE)(null != c ? c : 0, _.FoC.IS_ANIMATED)
+        srcIsAnimated: (0, u.yE)(null != c ? c : 0, p.FoC.IS_ANIMATED)
       }
     }
   }).filter(d.lm) : []
@@ -158,7 +158,7 @@ function N(e, t) {
   let r = s.Z.getChannel(t);
   if (null == r) return !1;
   let i = l.Z.getMessage(r.id, f.default.castChannelIdAsMessageId(r.id));
-  return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && r.isForumPost() && r.ownerId === (null === (n = c.default.getCurrentUser()) || void 0 === n ? void 0 : n.id) && 0 === o.Z.getCount(r.id) && (0 === i.attachments.length || null == i.attachments.find(e => h(e) || m(e)))
+  return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && r.isForumPost() && r.ownerId === (null === (n = c.default.getCurrentUser()) || void 0 === n ? void 0 : n.id) && 0 === o.Z.getCount(r.id) && (0 === i.attachments.length || null == i.attachments.find(e => h(e) || g(e)))
 }
 
 function A(e) {

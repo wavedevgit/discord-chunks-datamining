@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(607070),
   d = n(339085),
   f = n(906411),
-  p = n(633302),
-  _ = n(691251),
+  _ = n(633302),
+  p = n(691251),
   h = n(536442),
-  m = n(912893),
-  g = n(430824),
+  g = n(912893),
+  m = n(430824),
   E = n(358085),
   v = n(288406),
   b = n(388032),
@@ -88,16 +88,16 @@ let C = (e, t) => "".concat(e, ":").concat(t),
       isMediumSize: c,
       isInspected: u,
       isDisabled: d,
-      showPulse: p,
+      showPulse: _,
       columnIndex: h,
-      rowIndex: m,
+      rowIndex: g,
       size: E,
       surrogateCodePoint: O,
       allowAnimatedEmoji: I,
       selectedItemClassName: A,
       inNitroLockedSection: C
     } = e, R = N(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
-    let P = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : void 0, [n]),
+    let P = (0, s.e7)([m.Z], () => n.type === f.B.GUILD ? m.Z.getGuild(n.guildId) : void 0, [n]),
       D = () => {
         let e = n.allNamesString;
         return ((null == P ? void 0 : P.name) != null && (e = b.NW.formatToPlainString(b.t["nXv4/P"], {
@@ -115,9 +115,9 @@ let C = (e, t) => "".concat(e, ":").concat(t),
           [y.emojiItemMedium]: c,
           [y.emojiItemSelected]: u,
           [null != A ? A : ""]: u,
-          [y.showPulse]: p
+          [y.showPulse]: _
         }),
-        "data-type": _.S.EMOJI,
+        "data-type": p.S.EMOJI,
         "data-id": n.id,
         "data-name": n.name,
         "data-surrogates": "surrogates" in n ? n.surrogates : null,
@@ -126,7 +126,7 @@ let C = (e, t) => "".concat(e, ":").concat(t),
         children: (0, r.jsx)(v.Z, {
           "aria-label": D(),
           columnIndex: h,
-          rowIndex: m,
+          rowIndex: g,
           emoji: n,
           size: E,
           surrogateCodePoint: O,
@@ -143,8 +143,8 @@ function P(e) {
     emojiItemKey: o,
     isInspected: a,
     rowIndex: f,
-    channelGuildId: _,
-    onInspect: g,
+    channelGuildId: p,
+    onInspect: m,
     onSelect: v,
     isScrolling: y,
     isUsingKeyboardNavigation: O,
@@ -161,7 +161,7 @@ function P(e) {
     isBurstReaction: U,
     rowPosition: G,
     inNitroLockedSection: B
-  } = e, [F, V] = i.useState(""), Z = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(_), [_]), W = i.useRef(null), {
+  } = e, [F, V] = i.useState(""), Z = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(p), [p]), W = i.useRef(null), {
     emoji: Y,
     size: K,
     isDisabled: z,
@@ -174,7 +174,7 @@ function P(e) {
       toggleFavorite: n
     })
   }, X = () => {
-    y.current || O.current || g(t)
+    y.current || O.current || m(t)
   }, J = e => {
     (0, c.jW)(e, async () => {
       let {
@@ -211,9 +211,9 @@ function P(e) {
       onMouseLeave: n,
       onClick: e => {
         if (null != W.current && null != G && null != k && !e.shiftKey && null != Y.name && U && !Z && M) {
-          let e = null == Y.id ? p.ZP.convertNameToSurrogate(Y.name) : Y.name,
+          let e = null == Y.id ? _.ZP.convertNameToSurrogate(Y.name) : Y.name,
             t = W.current.getBoundingClientRect();
-          t.x = G.x + (q + 1) * K, V(C(q, f)), (0, m.U)(k, e, Y.id, t)
+          t.x = G.x + (q + 1) * K, V(C(q, f)), (0, g.U)(k, e, Y.id, t)
         }
         Q(e)
       },

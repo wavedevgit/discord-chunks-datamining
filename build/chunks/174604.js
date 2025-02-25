@@ -16,7 +16,7 @@ var r = n(200651),
 function f(e) {
   let {
     guild: t
-  } = e, n = (0, l.Ek)(t, "GuildBoostingMarketing"), [f, p] = (0, s.q_F)(() => ({
+  } = e, n = (0, l.Ek)(t, "GuildBoostingMarketing"), [f, _] = (0, s.q_F)(() => ({
     scale: .8,
     config: {
       tension: 500,
@@ -24,10 +24,10 @@ function f(e) {
     }
   }));
   return (i.useEffect(() => {
-    p({
+    _({
       scale: 1
     })
-  }, [p]), n) ? (0, r.jsxs)(o.animated.div, {
+  }, [_]), n) ? (0, r.jsxs)(o.animated.div, {
     className: d.container,
     style: f,
     children: [(0, r.jsx)(a.xv, {

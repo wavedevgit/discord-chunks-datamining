@@ -14,11 +14,11 @@ var i = n(120356),
   u = n(158776),
   d = n(998502),
   f = n(445924),
-  p = n(654904),
-  _ = n(486324),
+  _ = n(654904),
+  p = n(486324),
   h = n(552370);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -64,7 +64,7 @@ function y(e) {
     guild: n,
     displayProfile: i,
     canUsePremiumCustomization: d,
-    previewAvatar: m,
+    previewAvatar: g,
     previewAvatarDecoration: E,
     previewTheme: y,
     previewPrimaryColor: O,
@@ -75,7 +75,7 @@ function y(e) {
   } = e, {
     analyticsLocations: A
   } = (0, l.ZP)(), C = (0, a.e7)([u.Z], () => u.Z.getStatus(t.id)), R = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, P = (0, r.jsx)(b, {
-    src: m,
+    src: g,
     avatarDecoration: E,
     imageClassName: o()(S, {
       [h.overlay]: !I
@@ -97,7 +97,7 @@ function y(e) {
       return (0, r.jsx)(f.Z, {
         className: h.menu,
         onClose: t,
-        onChangeAvatar: () => (0, p.$r)(_.pC.AVATAR, null == n ? void 0 : n.id, T),
+        onChangeAvatar: () => (0, _.$r)(p.pC.AVATAR, null == n ? void 0 : n.id, T),
         onChangeAvatarDecoration: () => {
           (0, c.ps)({
             guild: null == n ? void 0 : n,
@@ -107,7 +107,7 @@ function y(e) {
         }
       })
     },
-    children: e => (0, r.jsxs)(s.P3F, v(g({}, e), {
+    children: e => (0, r.jsxs)(s.P3F, v(m({}, e), {
       className: o()(h.avatar, h.clickable),
       children: [P, (0, r.jsx)(s.vdY, {
         size: "custom",

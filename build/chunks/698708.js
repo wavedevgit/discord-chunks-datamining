@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -14,20 +14,20 @@ var r = n(200651),
   d = n(981631),
   f = n(388032);
 
-function p(e) {
+function _(e) {
   let {
     planError: t,
     purchaseErrorBlockRef: n,
-    className: p
+    className: _
   } = e, {
-    currencies: _,
+    currencies: p,
     paymentError: h,
-    purchaseError: m,
-    purchasePreviewError: g,
+    purchaseError: g,
+    purchasePreviewError: m,
     setSelectedPlanNotification: E
   } = (0, c.JL)(), v = null;
-  null != g ? v = g : null != h && null == (0, u.ly)(h) ? v = h : null != m ? v = m : null != t && (v = t);
-  let b = _.length > 1,
+  null != m ? v = m : null != h && null == (0, u.ly)(h) ? v = h : null != g ? v = g : null != t && (v = t);
+  let b = p.length > 1,
     y = null != v ? v.message : "";
   if (null != v && v instanceof a.HF && (v.code === s.SM.CARD_DECLINED && b && (y += " ".concat(f.NW.string(f.t.iWvwQU))), v.code === s.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (y = f.NW.string(f.t.ypuSd3)), v.code === d.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (y = f.NW.string(f.t.mXMmWF)), v.code === s.SM.INVALID_CURRENCY_FOR_PAYMENT_SOURCE && (y = f.NW.string(f.t.mC1Fj4)), v.code === s.SM.INVALID_BILLING_ADDRESS)) {
     let e = f.NW.format(f.t.BPDKoK, {
@@ -40,7 +40,7 @@ function p(e) {
   return (i.useEffect(() => {
     null != v && E(null)
   }, [v, E]), null == v) ? null : (0, r.jsx)("div", {
-    className: p,
+    className: _,
     children: (0, r.jsx)(o.kzN, {
       ref: n,
       children: y

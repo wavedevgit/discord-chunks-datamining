@@ -13,12 +13,12 @@ var r = n(200651),
   u = n(481060),
   d = n(850840),
   f = n(63063),
-  p = n(74538),
-  _ = n(981631),
+  _ = n(74538),
+  p = n(981631),
   h = n(388032),
-  m = n(508893);
+  g = n(508893);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -60,7 +60,7 @@ class v extends i.Component {
       disabled: s,
       className: c,
       checkboxClassname: d,
-      checkboxLabelClassname: g,
+      checkboxLabelClassname: m,
       finePrint: v,
       showPricingLink: b,
       showWithdrawalWaiver: y,
@@ -76,16 +76,16 @@ class v extends i.Component {
     return (l()(!O || null != T, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), o || null != e && !i || y) ? (0, r.jsxs)("div", {
       className: c,
       children: [y && (0, r.jsx)(u.vwX, {
-        className: m.formTitle,
+        className: g.formTitle,
         children: h.NW.string(h.t.Ogvn5u)
       }), null != e && (o || !i) ? (0, r.jsx)(u.XZJ, {
         type: u.XZJ.Types.INVERTED,
         value: A,
         onChange: this.handleToggleEULAAcceptance,
         disabled: s,
-        className: m.checkbox,
+        className: g.checkbox,
         children: (0, r.jsx)("div", {
-          className: m.checkboxLabel,
+          className: g.checkboxLabel,
           children: h.NW.format(h.t.IodJKS, {
             applicationName: t,
             onClick: t => {
@@ -101,7 +101,7 @@ class v extends i.Component {
           })
         })
       }) : null, null == v ? null : (0, r.jsx)("div", {
-        className: a()(m.finePrint, N),
+        className: a()(g.finePrint, N),
         children: v
       }), y ? (0, r.jsxs)("div", {
         className: c,
@@ -110,59 +110,59 @@ class v extends i.Component {
           value: C,
           onChange: this.handleToggleEUWithdralWaiverAcceptance,
           disabled: s,
-          className: a()(m.checkbox, d),
+          className: a()(g.checkbox, d),
           children: (0, r.jsx)("div", {
-            className: a()(m.checkboxLabel, g),
+            className: a()(g.checkboxLabel, m),
             children: h.NW.string(h.t.DFCVNz)
           })
         }), (0, r.jsx)("div", {
-          className: m.finePrint,
+          className: g.finePrint,
           children: h.NW.string(h.t.jhu6zs)
         })]
       }) : null, b && (0, r.jsxs)("div", {
-        className: m.finePrint,
+        className: g.finePrint,
         children: ["*", h.NW.format(h.t["5zmY3N"], {
-          documentationLink: f.Z.getArticleURL(_.BhN.LOCALIZED_PRICING)
+          documentationLink: f.Z.getArticleURL(p.BhN.LOCALIZED_PRICING)
         })]
       }), O && null != T && (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: h.NW.format(h.t["Hvo/Z2"], {
-          buttonText: (0, p.W_)(null, T),
-          interval: p.ZP.formatInterval(null == T ? void 0 : T.interval),
-          cancelSubscriptionArticle: f.Z.getArticleURL(_.BhN.PREMIUM_DETAILS_CANCEL_SUB),
-          paidServiceTermsArticle: f.Z.getArticleURL(_.BhN.PAID_TERMS)
+          buttonText: (0, _.W_)(null, T),
+          interval: _.ZP.formatInterval(null == T ? void 0 : T.interval),
+          cancelSubscriptionArticle: f.Z.getArticleURL(p.BhN.PREMIUM_DETAILS_CANCEL_SUB),
+          paidServiceTermsArticle: f.Z.getArticleURL(p.BhN.PAID_TERMS)
         })
       }), S && null != T && (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: h.NW.format(h.t.Oo2FeX, {
-          buttonText: (0, p.W_)(null, T),
-          interval: p.ZP.formatInterval(null == T ? void 0 : T.interval),
-          cancelSubscriptionArticle: f.Z.getArticleURL(_.BhN.PREMIUM_DETAILS_CANCEL_SUB),
-          paidServiceTermsArticle: f.Z.getArticleURL(_.BhN.PAID_TERMS)
+          buttonText: (0, _.W_)(null, T),
+          interval: _.ZP.formatInterval(null == T ? void 0 : T.interval),
+          cancelSubscriptionArticle: f.Z.getArticleURL(p.BhN.PREMIUM_DETAILS_CANCEL_SUB),
+          paidServiceTermsArticle: f.Z.getArticleURL(p.BhN.PAID_TERMS)
         })
       }), I && null != T && (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: h.NW.format(h.t["Z2c+aW"], {
-          buttonText: (0, p.W_)(null, T),
-          interval: p.ZP.formatInterval(null == T ? void 0 : T.interval),
-          cancelSubscriptionArticle: f.Z.getArticleURL(_.BhN.PREMIUM_DETAILS_CANCEL_SUB),
-          paidServiceTermsArticle: f.Z.getArticleURL(_.BhN.PAID_TERMS)
+          buttonText: (0, _.W_)(null, T),
+          interval: _.ZP.formatInterval(null == T ? void 0 : T.interval),
+          cancelSubscriptionArticle: f.Z.getArticleURL(p.BhN.PREMIUM_DETAILS_CANCEL_SUB),
+          paidServiceTermsArticle: f.Z.getArticleURL(p.BhN.PAID_TERMS)
         })
       })]
     }) : null
   }
   constructor(...e) {
-    super(...e), g(this, "state", {
+    super(...e), m(this, "state", {
       hasAcceptedEULA: !this.props.forceShow && this.props.hasPreviouslyAcceptedEULA,
       hasAcceptedWithdrawalWaiver: !1
-    }), g(this, "handleToggleEUWithdralWaiverAcceptance", (e, t) => {
+    }), m(this, "handleToggleEUWithdralWaiverAcceptance", (e, t) => {
       this.setState({
         hasAcceptedWithdrawalWaiver: t
       })
-    }), g(this, "handleToggleEULAAcceptance", (e, t) => {
+    }), m(this, "handleToggleEULAAcceptance", (e, t) => {
       this.setState({
         hasAcceptedEULA: t
       })

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  _: () => p
+  _: () => _
 });
 var r = n(200651);
 n(192379);
@@ -65,40 +65,40 @@ function f(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let p = e => {
+let _ = e => {
   var t, n, {
       size: s = "md",
       width: c,
       height: f,
-      color: p = i.Z.colors.INTERACTIVE_NORMAL,
-      colorClass: _ = ""
+      color: _ = i.Z.colors.INTERACTIVE_NORMAL,
+      colorClass: p = ""
     } = e,
     h = d(e, ["size", "width", "height", "color", "colorClass"]);
-  let m = (0, a.m)(s),
-    g = null !== (t = null == m ? void 0 : m.width) && void 0 !== t ? t : c,
-    E = null !== (n = null == m ? void 0 : m.height) && void 0 !== n ? n : f;
+  let g = (0, a.m)(s),
+    m = null !== (t = null == g ? void 0 : g.width) && void 0 !== t ? t : c,
+    E = null !== (n = null == g ? void 0 : g.height) && void 0 !== n ? n : f;
   return (0, r.jsxs)("svg", u(l({}, (0, o.Z)(h)), {
     xmlns: "http://www.w3.org/2000/svg",
-    width: g,
+    width: m,
     height: E,
     fill: "none",
     viewBox: "0 0 24 24",
     children: [(0, r.jsx)("path", {
-      fill: "string" == typeof p ? p : p.css,
+      fill: "string" == typeof _ ? _ : _.css,
       fillRule: "evenodd",
       d: "M4 3a3 3 0 0 0-3 3v2a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V6a3 3 0 0 0-3-3H4Zm1 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm2 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm4-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z",
       clipRule: "evenodd",
-      className: _
+      className: p
     }), (0, r.jsx)("path", {
-      fill: "string" == typeof p ? p : p.css,
+      fill: "string" == typeof _ ? _ : _.css,
       d: "M9 15h2v2H9v-2ZM13 15v2h2v-2h-2Z",
-      className: _
+      className: p
     }), (0, r.jsx)("path", {
-      fill: "string" == typeof p ? p : p.css,
+      fill: "string" == typeof _ ? _ : _.css,
       fillRule: "evenodd",
       d: "M2 11a1 1 0 0 0-1 1v6a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1H2Zm5 4v-2H5v2h2Zm2 0H7v2H5v2h2v-2h2v2h2v-2h2v2h2v-2h2v2h2v-2h-2v-2h2v-2h-2v2h-2v-2h-2v2h-2v-2H9v2Z",
       clipRule: "evenodd",
-      className: _
+      className: p
     })]
   }))
 }

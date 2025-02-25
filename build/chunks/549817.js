@@ -13,11 +13,11 @@ var r = n(392711),
   u = n(962086),
   d = n(160404),
   f = n(152376),
-  p = n(592125),
-  _ = n(271383),
+  _ = n(592125),
+  p = n(271383),
   h = n(594174),
-  m = n(626135),
-  g = n(630388),
+  g = n(626135),
+  m = n(630388),
   E = n(823379),
   v = n(960048),
   b = n(709054),
@@ -118,7 +118,7 @@ function D(e) {
 
 function w(e, t, n) {
   var r, o;
-  let s = null !== (o = null === (r = _.ZP.getSelfMember(e)) || void 0 === r ? void 0 : r.roles) && void 0 !== o ? o : [];
+  let s = null !== (o = null === (r = p.ZP.getSelfMember(e)) || void 0 === r ? void 0 : r.roles) && void 0 !== o ? o : [];
   if (d.Z.isViewingRoles(e)) {
     (0, u.og)(e, i().difference(i().union(s, t), n));
     return
@@ -154,10 +154,10 @@ let L = {
       a = y.Z.getEnabled(e) ? y.Z.getDefaultChannelIds(e) : [],
       [c, f] = (0, O.Ee)(e, t, a),
       v = [...o, ...a],
-      A = v.map(e => p.Z.getChannel(e)).filter(E.lm),
+      A = v.map(e => _.Z.getChannel(e)).filter(E.lm),
       R = (0, S.v)(e, new Set(v), A, !0).length,
       w = null == n ? [] : n.options.map(e => e.id);
-    if (m.default.track(I.rMx.GUILD_ONBOARDING_STEP_COMPLETED, P(C({}, (0, l.hH)(e)), {
+    if (g.default.track(I.rMx.GUILD_ONBOARDING_STEP_COMPLETED, P(C({}, (0, l.hH)(e)), {
         step: t.length - 1,
         options_selected: null == n ? 0 : r.filter(e => w.includes(e.id)).length,
         skipped: w.length > 0,
@@ -175,10 +175,10 @@ let L = {
       let t = h.default.getCurrentUser();
       if (null != t) {
         var L, x;
-        let n = null !== (x = null === (L = _.ZP.getMember(e, t.id)) || void 0 === L ? void 0 : L.flags) && void 0 !== x ? x : 0;
+        let n = null !== (x = null === (L = p.ZP.getMember(e, t.id)) || void 0 === L ? void 0 : L.flags) && void 0 !== x ? x : 0;
         (0, u.aq)(e, {
           memberOptions: {
-            flags: (0, g.mB)(n, T.q.COMPLETED_ONBOARDING, !0)
+            flags: (0, m.mB)(n, T.q.COMPLETED_ONBOARDING, !0)
           }
         })
       }
@@ -207,9 +207,9 @@ let L = {
     let t = h.default.getCurrentUser();
     if (null != t) {
       var n, r;
-      let i = null !== (r = null === (n = _.ZP.getMember(e, t.id)) || void 0 === n ? void 0 : n.flags) && void 0 !== r ? r : 0;
+      let i = null !== (r = null === (n = p.ZP.getMember(e, t.id)) || void 0 === n ? void 0 : n.flags) && void 0 !== r ? r : 0;
       await (0, c.e)(e, {
-        flags: (0, g.mB)(i, T.q.COMPLETED_ONBOARDING, !1)
+        flags: (0, m.mB)(i, T.q.COMPLETED_ONBOARDING, !1)
       })
     }
   }

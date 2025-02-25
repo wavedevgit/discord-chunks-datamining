@@ -34,20 +34,20 @@ let g = i.memo(function(e) {
         emojiSize: I
       } = e,
       S = C === p.O.BURST,
-      P = (0, m.y4)(b, v, C),
-      T = (0, u.v)(S && null != x ? x : []),
+      T = (0, m.y4)(b, v, C),
+      P = (0, u.v)(S && null != x ? x : []),
       A = i ? h : f,
       w = S ? y : _,
       Z = (0, d.y)(w, m.aO),
       k = {};
-    if (S && null != T) {
+    if (S && null != P) {
       var R;
       let {
         accentColor: e,
         backgroundColor: r,
         opacity: i
-      } = T, a = null !== (R = (0, l.wK)(null != r ? r : "", i)) && void 0 !== R ? R : "";
-      P && (k.borderColor = r), k.background = a, t = e, n = e
+      } = P, a = null !== (R = (0, l.wK)(null != r ? r : "", i)) && void 0 !== R ? R : "";
+      T && (k.borderColor = r), k.background = a, t = e, n = e
     }
     let L = {
       minWidth: Z,
@@ -56,7 +56,7 @@ let g = i.memo(function(e) {
     };
     return (0, r.jsxs)("div", {
       className: o()(A.reaction, A.reactionInner, g, {
-        [A.reactionMe]: P,
+        [A.reactionMe]: T,
         [A.reactionReadOnly]: O && !E && !N && !j
       }),
       style: k,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,17 +13,17 @@ var r = n(200651),
   u = n(219929),
   d = n(388032),
   f = n(689516),
-  p = n(630824);
-let _ = function(e) {
+  _ = n(630824);
+let p = function(e) {
   let t = i.useRef(null),
     {
       stripeType: n,
       flipped: a,
-      updateCompleted: _,
+      updateCompleted: p,
       onFocus: h,
-      onBlur: m
+      onBlur: g
     } = e,
-    [g, E] = i.useState(u.Qy.UNKNOWN),
+    [m, E] = i.useState(u.Qy.UNKNOWN),
     [v, b] = i.useState(!1),
     [y, O] = i.useState(!1),
     [S, I] = i.useState(null),
@@ -51,21 +51,21 @@ let _ = function(e) {
       }
     }, [A, n]),
     R = i.useCallback(e => {
-      y || e.empty || O(!0), null != _ && _(e.complete), null != e.error && b(!1)
-    }, [y, _]),
+      y || e.empty || O(!0), null != p && p(e.complete), null != e.error && b(!1)
+    }, [y, p]),
     P = i.useCallback(() => {
       b(!0), null == h || h()
     }, [h]),
     D = i.useCallback(() => {
-      b(!1), null == m || m()
-    }, [m]),
+      b(!1), null == g || g()
+    }, [g]),
     w = i.useCallback(() => {
       if (null != A) switch (n) {
         case "cardNumber": {
           let e = A.getElement(o.CardNumberElement);
           if (null == e) return;
           e.on("change", e => {
-            g !== e.brand && E(e.brand), e.empty && y ? I(d.NW.string(d.t.eOIfu7)) : null != e.error ? I(d.NW.string(d.t.x4pWtL)) : I(null), R(e)
+            m !== e.brand && E(e.brand), e.empty && y ? I(d.NW.string(d.t.eOIfu7)) : null != e.error ? I(d.NW.string(d.t.x4pWtL)) : I(null), R(e)
           }), e.on("focus", P), e.on("blur", D);
           break
         }
@@ -85,7 +85,7 @@ let _ = function(e) {
           }), e.on("focus", P), e.on("blur", D)
         }
       }
-    }, [D, R, P, g, A, y, n]);
+    }, [D, R, P, m, A, y, n]);
   i.useEffect(() => (w(), () => {
     C()
   }), [w, C]);
@@ -106,7 +106,7 @@ let _ = function(e) {
         return (0, r.jsxs)("div", {
           children: [(0, r.jsx)(u.ZP, {
             className: f.cardIcon,
-            type: g,
+            type: m,
             flipped: a
           }), (0, r.jsx)(o.CardNumberElement, {
             options: {
@@ -158,7 +158,7 @@ let _ = function(e) {
     "data-stripe-type": n,
     children: [(0, r.jsx)("div", {
       ref: t,
-      className: s()(f.hiddenDiv, p.input)
+      className: s()(f.hiddenDiv, _.input)
     }), j(), (0, r.jsx)(c.pdY, {
       error: S
     })]

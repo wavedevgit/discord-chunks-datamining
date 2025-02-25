@@ -5,7 +5,7 @@ n.d(t, {
   Eg: () => A,
   IZ: () => b,
   PP: () => E,
-  Ub: () => g,
+  Ub: () => m,
   c6: () => T,
   m9: () => S,
   mT: () => N,
@@ -24,7 +24,7 @@ var r = n(664751),
   d = n(626135),
   f = n(981631);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,14 +33,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -57,12 +57,12 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function g(e, t) {
+async function m(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
     {
       channelId: r,
@@ -70,22 +70,22 @@ async function g(e, t) {
       joinSource: c,
       loadId: d,
       setsHistorySnapshot: f = !0,
-      shouldNavigate: p = !0
+      shouldNavigate: _ = !0
     } = n,
     h = (0, s.s1)();
-  f && a.Z.setHistorySnapshot(_({}, h));
-  let g = u.Z.getGuild(e),
+  f && a.Z.setHistorySnapshot(p({}, h));
+  let m = u.Z.getGuild(e),
     E = {
       state: {
         analyticsSource: t
       }
     };
-  null != g && null != g.joinedAt ? p && (0, l.X)(e, E) : (await o.Z.joinGuild(e, {
+  null != m && null != m.joinedAt ? _ && (0, l.X)(e, E) : (await o.Z.joinGuild(e, {
     lurker: !0,
     source: c,
     loadId: d,
     lurkLocation: null == t ? void 0 : t.page
-  }), p && await o.Z.transitionToGuildSync(e, m(_({}, E), {
+  }), _ && await o.Z.transitionToGuildSync(e, g(p({}, E), {
     welcomeModalChannelId: r,
     search: h.location.search
   }), r)), null == i || i()

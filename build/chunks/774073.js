@@ -14,10 +14,10 @@ var r = n(192379),
   u = n(835473),
   d = n(669764),
   f = n(626135),
-  p = n(630388),
-  _ = n(539746),
+  _ = n(630388),
+  p = n(539746),
   h = n(981631);
-let m = function(e, t) {
+let g = function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [],
       r = arguments.length > 3 ? arguments[3] : void 0;
     f.default.track(h.rMx.GAME_PROFILE_ENTRY_POINT_AVAILABLE, {
@@ -27,11 +27,11 @@ let m = function(e, t) {
       source: r
     })
   },
-  g = (e, t) => {
+  m = (e, t) => {
     let n = [];
-    return null == e || null == t ? ["no match"] : ((0, p.yE)(t.flags, h.udG.GAME_PROFILE_DISABLED) && n.push("profile disabled"), e.themes.includes(a.i.EROTIC) && n.push("nsfw"), (null == e.summary || 0 === e.summary.length) && n.push("no summary"), (null == e.summary || 0 === e.summary.length) && n.push("no summary"), n)
+    return null == e || null == t ? ["no match"] : ((0, _.yE)(t.flags, h.udG.GAME_PROFILE_DISABLED) && n.push("profile disabled"), e.themes.includes(a.i.EROTIC) && n.push("nsfw"), (null == e.summary || 0 === e.summary.length) && n.push("no summary"), (null == e.summary || 0 === e.summary.length) && n.push("no summary"), n)
   },
-  E = (e, t) => 0 === g(e, t).length,
+  E = (e, t) => 0 === m(e, t).length,
   v = e => E(d.Z.getGame(e), c.Z.getApplication(e)),
   b = e => {
     let {
@@ -40,17 +40,17 @@ let m = function(e, t) {
       autoTrackExposure: i = !0,
       source: a,
       trackEntryPointImpression: c = !0
-    } = e, f = r.useRef(!1), p = (0, _.xG)(t, i);
+    } = e, f = r.useRef(!1), _ = (0, p.xG)(t, i);
     r.useEffect(() => {
-      p && null != n && "" !== n && l.Z.getDetectableGamesSupplemental([n])
-    }, [n, p]);
+      _ && null != n && "" !== n && l.Z.getDetectableGamesSupplemental([n])
+    }, [n, _]);
     let h = (0, s.e7)([d.Z], () => d.Z.getGame(n)),
       v = (0, u.q)(n),
       b = r.useMemo(() => null != h && null != v ? E(h, v) : null, [v, h]);
     return r.useEffect(() => {
-      !f.current && p && c && !1 === d.Z.isFetching(n) && null != h && null != b && (o()(null != a, "Cannot track a Game Profile Entry Point Impressions without a source."), m(b, n, g(h), a), f.current = !0)
-    }, [b, n, p, h, a, c]), {
-      shouldOpenGameProfile: p && !0 === b,
+      !f.current && _ && c && !1 === d.Z.isFetching(n) && null != h && null != b && (o()(null != a, "Cannot track a Game Profile Entry Point Impressions without a source."), g(b, n, m(h), a), f.current = !0)
+    }, [b, n, _, h, a, c]), {
+      shouldOpenGameProfile: _ && !0 === b,
       applicationId: n
     }
   }

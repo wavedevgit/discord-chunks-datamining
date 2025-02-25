@@ -13,8 +13,8 @@ var r = n(200651),
   u = n(687158),
   d = n(484459),
   f = n(695346),
-  p = n(981631),
-  _ = n(249648);
+  _ = n(981631),
+  p = n(249648);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -77,33 +77,33 @@ let y = function(e) {
     style: t,
     src: n,
     backgroundSrc: h,
-    userId: g,
+    userId: m,
     pulseSpeakingIndicator: b = !1,
     speaking: y = !1
   } = e, O = v(e, ["style", "src", "backgroundSrc", "userId", "pulseSpeakingIndicator", "speaking"]);
   let S = null != h ? h : n,
     I = (0, s.ZP)(S, o.Z.unsafe_rawColors.PRIMARY_800.css),
     T = (0, l.c)(!0, "VideoBackground-web").enabled,
-    N = (0, u.ZP)(null != g ? g : p.lds),
+    N = (0, u.ZP)(null != m ? m : _.lds),
     A = null == N ? void 0 : N.getBannerURL({
       size: 1024,
       canAnimate: f.QK.getSetting()
     });
   if (i.useEffect(() => {
-      null != g && T && (0, d.Z)(g, void 0, {
+      null != m && T && (0, d.Z)(m, void 0, {
         dispatchWait: !0
       })
-    }, [T, g]), null == n) return null;
-  let C = (0, r.jsx)(a.qEK, m({
-      className: _.avatarWrapper,
+    }, [T, m]), null == n) return null;
+  let C = (0, r.jsx)(a.qEK, g({
+      className: p.avatarWrapper,
       src: n
     }, O)),
-    R = E(m({}, t), {
+    R = E(g({}, t), {
       backgroundColor: I
     });
   return null != A && y && T && (R.backgroundImage = "url(".concat(A, ")"), R.backgroundSize = "cover"), (0, r.jsx)("div", {
     style: R,
-    className: _.background,
+    className: p.background,
     children: b ? (0, r.jsx)(c.Z, {
       shouldAnimate: y,
       children: C

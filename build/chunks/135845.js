@@ -35,10 +35,10 @@ function _(e) {
   a()(null != _, "Invite cannot be null");
   let {
     target_type: S,
-    target_user: P
+    target_user: T
   } = _;
-  a()(S === f.Iq.STREAM && null != P, "invalid streaming invite");
-  let T = b === P.id,
+  a()(S === f.Iq.STREAM && null != T, "invalid streaming invite");
+  let P = b === T.id,
     A = _.state === m.r2o.ACCEPTING,
     w = null != v;
   if (null == v) {
@@ -47,10 +47,10 @@ function _(e) {
   }
   let Z = null != _.channel ? (0, s.jD)(_.channel) : null,
     k = C ? y : x;
-  w && !I ? i = T ? h.NW.string(h.t.oBLoZG) : h.NW.formatToPlainString(h.t["0QJmAw"], {
-    name: P.username
-  }) : (t = h.NW.string(h.t["I6JG4+"]), n = l.Z.Button.Colors.GREEN, C && (t = h.NW.string(h.t["Q1W99/"]), n = l.Z.Button.Colors.PRIMARY), i = T ? h.NW.string(h.t["4hyaHh"]) : h.NW.formatToPlainString(h.t.QmlLEh, {
-    name: P.username
+  w && !I ? i = P ? h.NW.string(h.t.oBLoZG) : h.NW.formatToPlainString(h.t["0QJmAw"], {
+    name: T.username
+  }) : (t = h.NW.string(h.t["I6JG4+"]), n = l.Z.Button.Colors.GREEN, C && (t = h.NW.string(h.t["Q1W99/"]), n = l.Z.Button.Colors.PRIMARY), i = P ? h.NW.string(h.t["4hyaHh"]) : h.NW.formatToPlainString(h.t.QmlLEh, {
+    name: T.username
   }));
   let R = E === v.id && null != Z ? (0, r.jsx)(l.Z.Channel, {
     channel: Z

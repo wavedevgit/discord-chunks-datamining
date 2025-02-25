@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(981631),
   d = n(73117),
   f = n(988868),
-  p = n(554355),
-  _ = n(991989),
+  _ = n(554355),
+  p = n(991989),
   h = n(787462),
-  m = n(635507),
-  g = n(470794),
+  g = n(635507),
+  m = n(470794),
   E = n(886777);
 
 function v(e) {
@@ -25,10 +25,10 @@ function v(e) {
     movDark: t = d,
     movLight: n = h,
     mp4Dark: i = f,
-    mp4Light: o = m,
-    pngDark: a = p,
-    pngLight: s = g,
-    webmDark: c = _,
+    mp4Light: o = g,
+    pngDark: a = _,
+    pngLight: s = m,
+    webmDark: c = p,
     webmLight: v = E
   } = e, b = (0, l.vu)(), y = [(0, r.jsx)("source", {
     src: i,
@@ -72,20 +72,20 @@ let b = s.Z.getAppSpinnerSources(),
       className: d,
       onReady: f
     } = e, {
-      theme: p
+      theme: _
     } = (0, a.TCT)(), {
-      reducedMotion: _
+      reducedMotion: p
     } = i.useContext(a.Sfi), h = O;
     null != y && (h = y);
-    let m = null !== (t = h[(0, o.wj)(p) ? u.BRd.DARK : u.BRd.LIGHT]) && void 0 !== t ? t : h[u.BRd.DARK];
+    let g = null !== (t = h[(0, o.wj)(_) ? u.BRd.DARK : u.BRd.LIGHT]) && void 0 !== t ? t : h[u.BRd.DARK];
     return (0, r.jsx)(c.Z, {
       ref: l,
       onLoadedData: f,
       className: d,
-      loop: !_.enabled && n,
-      autoPlay: !_.enabled && s,
+      loop: !p.enabled && n,
+      autoPlay: !p.enabled && s,
       playsInline: !0,
       "data-testid": "app-spinner",
-      children: m
-    }, p)
+      children: g
+    }, _)
   }

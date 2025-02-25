@@ -15,7 +15,7 @@ var i = n(772848),
   d = n(608579),
   f = n(981631);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -48,13 +48,13 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -80,7 +80,7 @@ function O(e) {
   let {
     skuId: n,
     isGift: u = !1,
-    giftMessage: p,
+    giftMessage: _,
     giftingOrigin: h,
     onClose: E,
     onComplete: O,
@@ -95,12 +95,12 @@ function O(e) {
     var {
       onClose: t,
       returnRef: i
-    } = e, o = g(e, ["onClose", "returnRef"]);
-    return (0, r.jsx)(d.Z, m(_({}, o), {
+    } = e, o = m(e, ["onClose", "returnRef"]);
+    return (0, r.jsx)(d.Z, g(p({}, o), {
       loadId: C,
       skuId: n,
       isGift: u,
-      giftMessage: p,
+      giftMessage: _,
       giftingOrigin: h,
       analyticsLocations: S,
       giftRecipient: T,

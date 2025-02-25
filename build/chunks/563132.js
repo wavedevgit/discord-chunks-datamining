@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(566620),
   d = n(317381),
   f = n(728345),
-  p = n(211242),
-  _ = n(695346),
+  _ = n(211242),
+  p = n(695346),
   h = n(882712),
-  m = n(855775),
-  g = n(551428),
+  g = n(855775),
+  m = n(551428),
   E = n(975104),
   v = n(630388),
   b = n(74538),
@@ -93,7 +93,7 @@ function Z(e) {
     applicationId: z,
     referralCode: q,
     repeatPurchase: Q = !1
-  } = e, X = (0, w.Z)(), J = (0, p.Q)(), $ = (0, I.Z)(), {
+  } = e, X = (0, w.Z)(), J = (0, _.Q)(), $ = (0, I.Z)(), {
     paymentSources: ee,
     hasPaymentSources: et,
     paymentSourceId: en,
@@ -113,16 +113,16 @@ function Z(e) {
     skuIDs: Z,
     paymentSourceId: en,
     isGift: H
-  }), ed = (0, R.Z)(), [ef, ep] = i.useState(!1), {
-    step: e_,
+  }), ed = (0, R.Z)(), [ef, e_] = i.useState(!1), {
+    step: ep,
     setStep: eh,
-    steps: em,
-    breadcrumbsData: eg,
+    steps: eg,
+    breadcrumbsData: em,
     previousStepRef: eE
   } = (0, D.Z)({
     stepConfigs: F,
     breadcrumbs: V
-  }), [ev, eb] = (0, C.Z)(e_), {
+  }), [ev, eb] = (0, C.Z)(ep), {
     paymentError: ey,
     paymentAuthenticationState: eO
   } = (0, N.Z)(), {
@@ -161,10 +161,10 @@ function Z(e) {
   }), e6 = null != eA ? e4[eA] : null, [e5, e7] = i.useState(e6), e8 = i.useMemo(() => {
     if (null == eA) return null;
     let e = e3[eA];
-    return null == e ? null : e[null != en ? en : m.c]
+    return null == e ? null : e[null != en ? en : g.c]
   }, [eA, e3, en]), {
     data: e9
-  } = (0, f.IX)(z), te = _.Sb.useSetting(), tt = (0, s.e7)([c.Z], () => c.Z.getFetchState());
+  } = (0, f.IX)(z), te = p.Sb.useSetting(), tt = (0, s.e7)([c.Z], () => c.Z.getFetchState());
   i.useEffect(() => {
     null != e9 && (0, v.yE)(e9.flags, x.udG.EMBEDDED) && te && null == tt && (0, u.$h)()
   }, [e9, te, tt]);
@@ -176,7 +176,7 @@ function Z(e) {
       return t === z
     })),
     ti = null == tr ? void 0 : tr.compositeInstanceId,
-    to = (0, s.e7)([g.Z], () => null != eA ? g.Z.getForSKU(eA) : null, [eA]),
+    to = (0, s.e7)([m.Z], () => null != eA ? m.Z.getForSKU(eA) : null, [eA]),
     ta = e1[null != eA ? eA : ""],
     [ts, tl] = i.useState(null),
     tc = null !== (E = null == U ? void 0 : U.inReverseTrial) && void 0 !== E && E && !H;
@@ -203,12 +203,12 @@ function Z(e) {
       currencies: eu
     }, ed), {
       hasAcceptedTerms: ef,
-      setHasAcceptedTerms: ep,
-      step: e_,
+      setHasAcceptedTerms: e_,
+      step: ep,
       setStep: eh,
-      steps: em,
+      steps: eg,
       stepConfigs: F,
-      breadcrumbs: eg,
+      breadcrumbs: em,
       previousStepRef: eE,
       purchaseState: ev,
       setPurchaseState: eb,

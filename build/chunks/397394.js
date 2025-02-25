@@ -19,11 +19,11 @@ var r = n(200651),
   u = n(922770),
   d = n(993365),
   f = n(481060),
-  p = n(132871),
-  _ = n(252618),
+  _ = n(132871),
+  p = n(252618),
   h = n(703656),
-  m = n(769654),
-  g = n(592125),
+  g = n(769654),
+  m = n(592125),
   E = n(496675),
   v = n(944486),
   b = n(626135),
@@ -99,7 +99,7 @@ function L(e) {
     showsCloseWindowText: o,
     spinner: s
   } = e;
-  return (0, _.Tt)({
+  return (0, p.Tt)({
     location: T.NW.string(T.t["3S249/"])
   }), (0, r.jsxs)("div", {
     className: N.wrapper,
@@ -163,11 +163,11 @@ function j(e) {
   let {
     onClose: o
   } = D(e, ["guild", "application"]), a = i.useCallback(() => {
-    (null == t ? void 0 : t.id) != null && ((0, m.X)(null == t ? void 0 : t.id), null == o || o(), b.default.track(I.rMx.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED, {
+    (null == t ? void 0 : t.id) != null && ((0, g.X)(null == t ? void 0 : t.id), null == o || o(), b.default.track(I.rMx.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED, {
       application_id: null == n ? void 0 : n.id,
       guild_id: null == t ? void 0 : t.id
     }))
-  }, [o, null == n ? void 0 : n.id, null == t ? void 0 : t.id]), s = (0, p.g8)(e => e.entrypoint), l = i.useCallback(() => {
+  }, [o, null == n ? void 0 : n.id, null == t ? void 0 : t.id]), s = (0, _.g8)(e => e.entrypoint), l = i.useCallback(() => {
     null == o || o(), b.default.track(I.rMx.OAUTH2_AUTHORIZE_SUCCESS_CLOSE_CLICKED, {
       application_id: null == n ? void 0 : n.id
     })
@@ -180,7 +180,7 @@ function j(e) {
         application_id: n.id
       })
     }))
-  }, [null == n ? void 0 : n.id, o, s]), _ = (0, c.e7)([v.Z, g.Z], () => g.Z.getChannel(v.Z.getChannelId())), O = (0, c.e7)([E.Z], () => E.Z.can(I.Plq.SEND_MESSAGES, _)), S = null != t, A = null == t && O && (!u || null != s);
+  }, [null == n ? void 0 : n.id, o, s]), p = (0, c.e7)([v.Z, m.Z], () => m.Z.getChannel(v.Z.getChannelId())), O = (0, c.e7)([E.Z], () => E.Z.can(I.Plq.SEND_MESSAGES, p)), S = null != t, A = null == t && O && (!u || null != s);
   return null != t || null != o ? (0, r.jsxs)("div", {
     className: N.buttonsContainer,
     children: [null != o ? S || A ? (0, r.jsx)(f.zxk, {

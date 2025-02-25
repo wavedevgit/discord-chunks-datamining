@@ -47,9 +47,9 @@ function u(e, t) {
 }
 let d = {},
   f = {},
-  p = {};
+  _ = {};
 
-function _(e) {
+function p(e) {
   let {
     channel: t,
     message: n,
@@ -62,7 +62,7 @@ function _(e) {
     message: n,
     shouldMention: r,
     showMentionToggle: i
-  }, p[t.id] = o
+  }, _[t.id] = o
 }
 
 function h(e) {
@@ -80,7 +80,7 @@ function h(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   let {
     channelId: t,
     shouldMention: n
@@ -92,7 +92,7 @@ function m(e) {
   }))
 }
 
-function g(e) {
+function m(e) {
   let {
     channelId: t
   } = e;
@@ -105,10 +105,10 @@ function E(e) {
     id: i,
     channelId: o
   } = e;
-  if ((null === (n = d[o]) || void 0 === n ? void 0 : null === (t = n.message) || void 0 === t ? void 0 : t.id) === i) delete d[o], delete p[o];
+  if ((null === (n = d[o]) || void 0 === n ? void 0 : null === (t = n.message) || void 0 === t ? void 0 : t.id) === i) delete d[o], delete _[o];
   else {
     if ((null === (r = f[o]) || void 0 === r ? void 0 : r.messageId) !== i) return !1;
-    delete f[o], delete p[o]
+    delete f[o], delete _[o]
   }
 }
 
@@ -141,7 +141,7 @@ function y(e) {
 }
 
 function O() {
-  d = {}, f = {}, p = {}
+  d = {}, f = {}, _ = {}
 }
 class S extends(r = i.ZP.Store) {
   initialize() {
@@ -151,15 +151,15 @@ class S extends(r = i.ZP.Store) {
     return d[e]
   }
   getPendingReplyActionSource(e) {
-    return p[e]
+    return _[e]
   }
 }
 s(S, "displayName", "PendingReplyStore");
 let I = new S(o.Z, {
-  CREATE_PENDING_REPLY: _,
+  CREATE_PENDING_REPLY: p,
   CREATE_SHALLOW_PENDING_REPLY: h,
-  SET_PENDING_REPLY_SHOULD_MENTION: m,
-  DELETE_PENDING_REPLY: g,
+  SET_PENDING_REPLY_SHOULD_MENTION: g,
+  DELETE_PENDING_REPLY: m,
   CONNECTION_OPEN: O,
   LOGOUT: O,
   MESSAGE_DELETE: E,

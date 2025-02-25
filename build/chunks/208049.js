@@ -24,11 +24,11 @@ var r = n(392711),
   u = n(900849),
   d = n(763296),
   f = n(697426),
-  p = n(174470),
-  _ = n(710111),
+  _ = n(174470),
+  p = n(710111),
   h = n(981631),
-  m = n(526761),
-  g = n(388032);
+  g = n(526761),
+  m = n(388032);
 let E = async e => {
   try {
     let t = (await o.tn.get({
@@ -37,7 +37,7 @@ let E = async e => {
         guild_ids: e
       },
       rejectWithError: !1
-    })).body.map(e => (0, f.o3)(e, _.X8));
+    })).body.map(e => (0, f.o3)(e, p.X8));
     a.Z.dispatch({
       type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS",
       soundboardSounds: t
@@ -60,7 +60,7 @@ let E = async e => {
   let t = v("SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS");
   return E(e), t
 }, y = () => {
-  let e = (0, p.D)();
+  let e = (0, _.D)();
   if (0 === e.length) return Promise.resolve();
   let t = v("SOUNDBOARD_SOUNDS_RECEIVED");
   return a.Z.dispatch({
@@ -122,18 +122,18 @@ async function T(e, t) {
 }
 
 function N(e) {
-  c.DZ.updateAsync("favoriteSoundboardSounds", t => i().size(t.soundIds) >= m.oX ? (s.Z.show({
-    title: g.NW.string(g.t["+XYXtb"]),
-    body: g.NW.formatToPlainString(g.t.JaIyFh, {
-      count: m.oX
+  c.DZ.updateAsync("favoriteSoundboardSounds", t => i().size(t.soundIds) >= g.oX ? (s.Z.show({
+    title: m.NW.string(m.t["+XYXtb"]),
+    body: m.NW.formatToPlainString(m.t.JaIyFh, {
+      count: g.oX
     })
-  }), !1) : !t.soundIds.includes(e) && void t.soundIds.push(e), m.fy.INFREQUENT_USER_ACTION)
+  }), !1) : !t.soundIds.includes(e) && void t.soundIds.push(e), g.fy.INFREQUENT_USER_ACTION)
 }
 
 function A(e) {
   c.DZ.updateAsync("favoriteSoundboardSounds", t => {
     t.soundIds = t.soundIds.filter(t => t !== e)
-  }, m.fy.INFREQUENT_USER_ACTION)
+  }, g.fy.INFREQUENT_USER_ACTION)
 }
 async function C(e, t) {
   try {

@@ -16,11 +16,11 @@ var r = n(200651),
   u = n(731965),
   d = n(477690),
   f = n(481060),
-  p = n(714338),
-  _ = n(624138),
+  _ = n(714338),
+  p = n(624138),
   h = n(314910),
-  m = n(308569),
-  g = n(852915);
+  g = n(308569),
+  m = n(852915);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,7 +60,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = (0, _.Mg)(d.Z.FULL_SCREEN_LAYER_ANIMATION_DURATION),
+let O = (0, p.Mg)(d.Z.FULL_SCREEN_LAYER_ANIMATION_DURATION),
   S = (0, c.U)(e => ({
     fullScreenLayers: [],
     addLayer: t => (0, u.j)(() => {
@@ -79,14 +79,14 @@ function I(e) {
   let {
     item: t
   } = e, n = i.useRef(null);
-  return (0, f.Tbt)(n), i.useEffect(() => (p.Z.disable(), t.key !== m.CV && p.Z.enableTemp(P(t.key)), () => {
-    p.Z.disableTemp()
+  return (0, f.Tbt)(n), i.useEffect(() => (_.Z.disable(), t.key !== g.CV && _.Z.enableTemp(P(t.key)), () => {
+    _.Z.disableTemp()
   }), [t.key]), (0, r.jsx)(t.LayerComponent, {
     children: (0, r.jsxs)("div", {
-      className: g.root,
+      className: m.root,
       ref: n,
       children: [(0, r.jsx)("div", {
-        className: g.drag
+        className: m.drag
       }), t.render({
         transitionState: null != t ? t.transitionState : 3,
         closeLayer: () => R(t.key)
@@ -95,20 +95,20 @@ function I(e) {
   })
 }
 let T = {
-    enter: g.enter,
-    enterActive: g.enterActive,
-    enterDone: g.enterDone,
-    exit: g.exit,
-    exitActive: g.exitActive,
-    exitDone: g.exitDone
+    enter: m.enter,
+    enterActive: m.enterActive,
+    enterDone: m.enterDone,
+    exit: m.exit,
+    exitActive: m.exitActive,
+    exitDone: m.exitDone
   },
   N = {
-    enter: g.enterReducedMotion,
-    enterActive: g.enterActiveReducedMotion,
-    enterDone: g.enterDoneReducedMotion,
-    exit: g.exitReducedMotion,
-    exitActive: g.exitActiveReducedMotion,
-    exitDone: g.exitDoneReducedMotion
+    enter: m.enterReducedMotion,
+    enterActive: m.enterActiveReducedMotion,
+    enterDone: m.enterDoneReducedMotion,
+    exit: m.exitReducedMotion,
+    exitActive: m.exitActiveReducedMotion,
+    exitDone: m.exitDoneReducedMotion
   };
 
 function A() {

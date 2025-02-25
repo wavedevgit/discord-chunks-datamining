@@ -34,11 +34,11 @@ function f(e) {
   }
 }
 
-function p(e, t) {
+function _(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
-function _(e, t) {
+function p(e, t) {
   if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return t && ("object" == typeof t || "function" == typeof t) ? t : e
 }
@@ -54,10 +54,10 @@ function h(e, t) {
     }
   }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
 }
-var m = function(e) {
+var g = function(e) {
   function t() {
-    p(this, t);
-    var e = _(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
+    _(this, t);
+    var e = p(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
     return e.state = {
       initiated: !1
     }, e.onResize = e.onResize.bind(e), e
@@ -108,6 +108,6 @@ var m = function(e) {
     }
   }]), t
 }(a.Component);
-m.propTypes = {
+g.propTypes = {
   children: l.default.oneOfType([l.default.element, l.default.func]).isRequired
-}, t.default = m
+}, t.default = g

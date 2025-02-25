@@ -12,9 +12,9 @@ var r, i = n(392711),
   u = n(317381),
   d = n(581883),
   f = n(674563),
-  p = n(526761);
+  _ = n(526761);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,13 +30,13 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,8 +47,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -71,7 +71,7 @@ function y(e) {
     },
     wasSaved: n
   } = e;
-  if (t !== p.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
+  if (t !== _.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
   v.pendingUsages = []
 }
 
@@ -101,7 +101,7 @@ function I(e) {
 function T() {
   var e, t;
   let n = null !== (t = null === (e = d.Z.frecencyWithoutFetchingLatest.applicationFrecency) || void 0 === e ? void 0 : e.applications) && void 0 !== t ? t : {};
-  b.overwriteHistory(o().mapValues(n, e => g(h({}, e), {
+  b.overwriteHistory(o().mapValues(n, e => m(h({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), v.pendingUsages)
 }
@@ -126,7 +126,7 @@ class N extends(r = a.ZP.PersistedStore) {
     return b.frequently
   }
 }
-_(N, "displayName", "ApplicationFrecencyStore"), _(N, "persistKey", "ApplicationFrecency");
+p(N, "displayName", "ApplicationFrecencyStore"), p(N, "persistKey", "ApplicationFrecency");
 let A = new N(s.Z, {
   APPLICATION_COMMAND_USED: O,
   EMBEDDED_ACTIVITY_OPEN: S,

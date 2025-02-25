@@ -17,10 +17,10 @@ var i = r(n(532825)),
   d = r(n(21217)),
   f = /^--/;
 
-function p(e, t) {
-  return null == t || "boolean" == typeof t || "" === t ? "" : "number" != typeof t || 0 === t || f.test(e) || m.hasOwnProperty(e) && m[e] ? ("" + t).trim() : t + "px"
+function _(e, t) {
+  return null == t || "boolean" == typeof t || "" === t ? "" : "number" != typeof t || 0 === t || f.test(e) || g.hasOwnProperty(e) && g[e] ? ("" + t).trim() : t + "px"
 }
-var _ = {};
+var p = {};
 
 function h(e, t) {
   if (!e.nodeType || !e.setAttribute) return !1;
@@ -33,21 +33,21 @@ function h(e, t) {
     c = i(r, ["style", "children", "scrollTop", "scrollLeft"]),
     d = Object.values(c),
     h = Object.keys(c).map(function(t) {
-      return n || e.hasAttribute(t) ? t : _[t] || (_[t] = t.replace(/([A-Z])/g, function(e) {
+      return n || e.hasAttribute(t) ? t : p[t] || (p[t] = t.replace(/([A-Z])/g, function(e) {
         return "-" + e.toLowerCase()
       }))
     });
   u.Globals.frameLoop.onWrite(function() {
     for (var t in void 0 !== a && (e.textContent = a), o)
       if (o.hasOwnProperty(t)) {
-        var n = p(t, o[t]);
+        var n = _(t, o[t]);
         "float" === t ? t = "cssFloat" : f.test(t) ? e.style.setProperty(t, n) : e.style[t] = n
       } h.forEach(function(t, n) {
       e.setAttribute(t, d[n])
     }), void 0 !== s && (e.scrollTop = s), void 0 !== l && (e.scrollLeft = l)
   })
 }
-var m = {
+var g = {
     animationIterationCount: !0,
     borderImageOutset: !0,
     borderImageSlice: !0,
@@ -90,15 +90,15 @@ var m = {
     strokeOpacity: !0,
     strokeWidth: !0
   },
-  g = function(e, t) {
+  m = function(e, t) {
     return e + t.charAt(0).toUpperCase() + t.substring(1)
   },
   E = ["Webkit", "Ms", "Moz", "O"];
-m = Object.keys(m).reduce(function(e, t) {
+g = Object.keys(g).reduce(function(e, t) {
   return E.forEach(function(n) {
-    return e[g(n, t)] = e[t]
+    return e[m(n, t)] = e[t]
   }), e
-}, m);
+}, g);
 var v = /^(matrix|translate|scale|rotate|skew)/,
   b = /^(translate)/,
   y = /^(rotate|skew)/,

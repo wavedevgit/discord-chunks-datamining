@@ -49,14 +49,14 @@ function t(e) {
       begin: /"""/,
       end: /"""/
     },
-    p = {
+    _ = {
       className: "property",
       begin: t.concat(/\./, t.lookahead(n)),
       end: n,
       excludeBegin: !0,
       relevance: 0
     },
-    _ = {
+    p = {
       relevance: 0,
       match: t.concat(/\b_/, n),
       scope: "variable"
@@ -69,8 +69,8 @@ function t(e) {
         _: a
       }
     },
-    m = e.C_NUMBER_MODE,
-    g = {
+    g = e.C_NUMBER_MODE,
+    m = {
       match: [n, /\s*/, /=/, /\s*/, /\(/, n, /\)\s*\{/],
       scope: {
         1: "title.function",
@@ -88,7 +88,7 @@ function t(e) {
       scope: "subst",
       begin: /%\(/,
       end: /\)/,
-      contains: [m, h, l, _, d]
+      contains: [g, h, l, p, d]
     },
     b = {
       scope: "string",
@@ -137,7 +137,7 @@ function t(e) {
       "variable.language": o,
       literal: i
     },
-    contains: [S, m, b, f, E, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, h, u, g, c, l, d, _, p, O]
+    contains: [S, g, b, f, E, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, h, u, m, c, l, d, p, _, O]
   }
 }
 e.exports = t

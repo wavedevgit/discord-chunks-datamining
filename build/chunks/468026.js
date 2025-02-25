@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  default: () => m
+  default: () => g
 });
 var r = n(200651);
 n(192379);
@@ -14,16 +14,16 @@ var i = n(120356),
   u = n(993365),
   d = n(481060),
   f = n(600164),
-  p = n(540059),
-  _ = n(388032),
+  _ = n(540059),
+  p = n(388032),
   h = n(62138);
-let m = e => {
+let g = e => {
   let t, n, i, {
-      body: m,
-      cancelText: g,
+      body: g,
+      cancelText: m,
       className: E,
       confirmColor: v,
-      confirmText: b = _.NW.string(_.t.BddRzc),
+      confirmText: b = p.NW.string(p.t.BddRzc),
       secondaryConfirmText: y,
       onCancel: O,
       onClose: S,
@@ -33,7 +33,7 @@ let m = e => {
       transitionState: A,
       titleClassName: C
     } = e,
-    R = (0, p.Q3)("ConfirmModal"),
+    R = (0, _.Q3)("ConfirmModal"),
     P = R ? a.zx.Sizes.MEDIUM : a.zx.Sizes.LARGE,
     D = () => {
       null == S || S(), null == O || O()
@@ -44,13 +44,13 @@ let m = e => {
     L = () => {
       null == S || S(), null == T || T()
     };
-  return null != g && "" !== g && (t = (0, r.jsx)(a.zx, {
+  return null != m && "" !== m && (t = (0, r.jsx)(a.zx, {
     type: "button",
     size: P,
     color: a.zx.Colors.PRIMARY,
     onClick: D,
     className: h.secondaryButton,
-    children: g
+    children: m
   })), null != b && "" !== b && (n = (0, r.jsx)(a.zx, {
     type: "submit",
     color: v,
@@ -90,11 +90,11 @@ let m = e => {
           direction: f.Z.Direction.VERTICAL,
           justify: R ? f.Z.Justify.START : f.Z.Justify.CENTER,
           className: h.content,
-          children: null != m && (0, r.jsx)(u.x, {
+          children: null != g && (0, r.jsx)(u.x, {
             variant: "text-md/normal",
             className: h.body,
             color: R ? "header-secondary" : "text-normal",
-            children: m
+            children: g
           })
         })
       }), (0, r.jsxs)(c.mz, {

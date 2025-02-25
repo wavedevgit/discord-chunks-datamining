@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  GN: () => p,
+  GN: () => _,
   tu: () => f,
   uk: () => d
 });
@@ -34,7 +34,7 @@ function f(e, t) {
   return new r(e, t, n, i)
 }
 
-function p(e) {
+function _(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
     r = arguments.length > 2 ? arguments[2] : void 0,
@@ -43,8 +43,8 @@ function p(e) {
   if (l.Z.disableSounds) return;
   let d = (0, s.Z)(null != i ? i : a.Z.getSoundpack());
   null == d && u.log("Unable to find sound for pack name: ".concat(i));
-  let p = f(null !== (t = d[e]) && void 0 !== t ? t : e, e, n, o);
-  return null != r ? p.playWithListener().then(e => {
+  let _ = f(null !== (t = d[e]) && void 0 !== t ? t : e, e, n, o);
+  return null != r ? _.playWithListener().then(e => {
     e && r()
-  }) : p.play(), p
+  }) : _.play(), _
 }

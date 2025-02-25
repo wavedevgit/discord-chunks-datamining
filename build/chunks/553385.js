@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   N7: () => f,
-  XP: () => _,
-  j8: () => p,
+  XP: () => p,
+  j8: () => _,
   z$: () => h
 });
 var r = n(544891),
@@ -26,7 +26,7 @@ function f(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.uaV.GUILD_DEADCHAT_REVIVE_PROMPT;
   r.tn.post({
     url: d.ANM.FORCE_SEND_PROMPT(e),
@@ -36,7 +36,7 @@ function p(e) {
     rejectWithError: !0
   })
 }
-async function _(e, t, n) {
+async function p(e, t, n) {
   await r.tn.post({
     url: d.ANM.SEND_GAMING_STATS(t),
     body: {
@@ -47,7 +47,7 @@ async function _(e, t, n) {
       }
     },
     rejectWithError: !1
-  }), m(t)
+  }), g(t)
 }
 async function h(e) {
   let t = await r.tn.patch({
@@ -61,10 +61,10 @@ async function h(e) {
       message: e,
       shouldMention: !1,
       showMentionToggle: !1
-    }), m(n.id)), i.Z.saveDraft(e.channel_id, t.text, l.d.ChannelMessage)
+    }), g(n.id)), i.Z.saveDraft(e.channel_id, t.text, l.d.ChannelMessage)
   }
 }
 
-function m(e) {
+function g(e) {
   c.Z.getMessages(e).hasMoreAfter ? o.Z.jumpToPresent(e, d.AQB) : u.S.dispatch(d.CkL.SCROLLTO_PRESENT)
 }

@@ -28,8 +28,8 @@ var r = n(200651),
   C = n(944486),
   I = n(914010),
   S = n(246946),
-  P = n(594174),
-  T = n(585483),
+  T = n(594174),
+  P = n(585483),
   A = n(63063),
   w = n(405656),
   Z = n(51144),
@@ -102,7 +102,7 @@ let B = p()("2015-05-15").local(),
     if (null == l) return (0, r.jsx)("strong", {
       children: s
     });
-    let c = P.default.getUser(l.id),
+    let c = T.default.getUser(l.id),
       d = O.Z.getChannel(e),
       u = (null == d ? void 0 : d.isPrivate()) ? j.Z.getNickname(l.id) : null,
       p = null !== (a = null !== (i = E.ZP.getNick(e, l.id)) && void 0 !== i ? i : u) && void 0 !== a ? a : Z.ZP.getName(l),
@@ -136,10 +136,10 @@ let B = p()("2015-05-15").local(),
       children: [null != l ? (0, r.jsx)(l, {
         className: D.searchResultChannelIcon
       }) : null, (0, r.jsx)("strong", {
-        children: (0, y.F6)(i, P.default, j.Z)
+        children: (0, y.F6)(i, T.default, j.Z)
       }), null != o ? (0, r.jsx)("span", {
         className: D.searchResultChannelCategory,
-        children: (0, y.F6)(o, P.default, j.Z)
+        children: (0, y.F6)(o, T.default, j.Z)
       }) : null]
     })
   },
@@ -450,7 +450,7 @@ class X extends i.PureComponent {
         a = 0;
       null != r.token ? a = r.token.start : (null == i ? void 0 : i.currentToken) != null && (a = i.currentToken.end);
       let o = null != r.token ? r.token.end : a;
-      T.S.dispatch(R.CkL.SET_SEARCH_QUERY, {
+      P.S.dispatch(R.CkL.SET_SEARCH_QUERY, {
         query: e,
         anchor: a,
         focus: o,
@@ -482,7 +482,7 @@ class X extends i.PureComponent {
     })), M(this, "handleHintClick", () => {
       this.setSearchQuery(this.state.dateHint, !0)
     }), M(this, "performSearch", e => {
-      T.S.dispatch(R.CkL.PERFORM_SEARCH, null != e ? e : {})
+      P.S.dispatch(R.CkL.PERFORM_SEARCH, null != e ? e : {})
     }), M(this, "renderAutocompletes", () => {
       let {
         selectedIndex: e

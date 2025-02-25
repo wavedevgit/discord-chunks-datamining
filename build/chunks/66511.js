@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,8 +46,8 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -56,16 +56,16 @@ let h = () => {
       type: c.N4
     })
   },
-  m = e => {
+  g = e => {
     o.default.track(u.rMx.OPEN_MODAL, {
       type: c.N4,
       guild_id: e
     })
   },
-  g = {
+  m = {
     openMemberVerificationModal(e, t) {
       if (__OVERLAY__) return;
-      m(e);
+      g(e);
       let o = async t => {
         await a.ZP.submitVerificationForm(e, t)
       }, u = (0, s.K2)(e, "MemberVerificationModalActionCreators");
@@ -73,7 +73,7 @@ let h = () => {
         let {
           default: t
         } = u ? await Promise.all([n.e("84335"), n.e("54408"), n.e("99916"), n.e("10409"), n.e("23303")]).then(n.bind(n, 309135)) : await Promise.all([n.e("99916"), n.e("81038"), n.e("95676")]).then(n.bind(n, 645264));
-        return n => (0, r.jsx)(t, _(f({}, n), {
+        return n => (0, r.jsx)(t, p(f({}, n), {
           guildId: e,
           onComplete: o,
           onClose: function() {
@@ -106,7 +106,7 @@ let h = () => {
         let {
           default: i
         } = t ? await Promise.all([n.e("84335"), n.e("54408"), n.e("99916"), n.e("10409"), n.e("23303")]).then(n.bind(n, 309135)) : await Promise.all([n.e("99916"), n.e("81038"), n.e("95676")]).then(n.bind(n, 645264));
-        return t => (0, r.jsx)(i, _(f({}, t), {
+        return t => (0, r.jsx)(i, p(f({}, t), {
           guildId: e,
           isPreview: !0
         }))

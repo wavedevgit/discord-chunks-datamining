@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A: () => m,
-  openUploadError: () => g
+  A: () => g,
+  openUploadError: () => m
 });
 var r = n(200651);
 n(192379);
@@ -16,7 +16,7 @@ var i = n(120356),
   d = n(731994),
   f = n(371100);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,14 +25,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -44,26 +44,26 @@ function h(e) {
     help: n,
     showPremiumUpsell: i,
     transitionState: a,
-    icons: p,
-    fileSize: _,
+    icons: _,
+    fileSize: p,
     onClose: h
-  } = e, m = (0, l.Dt)(), g = null != p ? p : d.J6;
+  } = e, g = (0, l.Dt)(), m = null != _ ? _ : d.J6;
   return i ? (0, r.jsx)(c.Z, {
     transitionState: a,
     onClose: h,
-    fileSize: _
+    fileSize: p
   }) : (0, r.jsx)(s.Y0, {
     size: s.Cg.DYNAMIC,
-    "aria-labelledby": m,
+    "aria-labelledby": g,
     transitionState: a,
     children: (0, r.jsx)("div", {
       className: o()(f.uploadDropModal, f.error),
       children: (0, r.jsxs)("div", {
         className: f.inner,
         children: [(0, r.jsx)(u.Z, {
-          icons: g
+          icons: m
         }), (0, r.jsx)("div", {
-          id: m,
+          id: g,
           className: f.title,
           children: t
         }), (0, r.jsx)("div", {
@@ -74,10 +74,10 @@ function h(e) {
     })
   })
 }
-let m = "UPLOAD_ERROR_MODAL_KEY";
+let g = "UPLOAD_ERROR_MODAL_KEY";
 
-function g(e) {
-  (0, a.h7)(t => (0, r.jsx)(h, _({}, t, e)), {
-    modalKey: m
+function m(e) {
+  (0, a.h7)(t => (0, r.jsx)(h, p({}, t, e)), {
+    modalKey: g
   })
 }

@@ -61,7 +61,7 @@ function t(e) {
     f = u(i, {
       relevance: 2
     }),
-    p = u([d], {
+    _ = u([d], {
       relevance: 1
     });
   return {
@@ -69,7 +69,7 @@ function t(e) {
     aliases: ["craftcms"],
     case_insensitive: !0,
     subLanguage: "xml",
-    contains: [e.COMMENT(/\{#/, /#\}/), f, p, {
+    contains: [e.COMMENT(/\{#/, /#\}/), f, _, {
       className: "template-variable",
       begin: /\{\{/,
       end: /\}\}/,

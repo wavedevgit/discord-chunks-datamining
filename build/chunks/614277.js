@@ -3,7 +3,7 @@
 n.d(t, {
   C3: () => E,
   O3: () => v,
-  ZP: () => g
+  ZP: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -15,9 +15,9 @@ var r = n(200651),
   u = n(481060),
   d = n(563132),
   f = n(409813),
-  p = n(996773);
+  _ = n(996773);
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -35,7 +35,7 @@ function h(e, t) {
   return i
 }
 
-function m(e) {
+function g(e) {
   let {
     header: t,
     isLargeModal: n
@@ -43,17 +43,17 @@ function m(e) {
   return {
     header: t,
     isLargeModal: n,
-    stepProps: _(e, ["header", "isLargeModal"])
+    stepProps: p(e, ["header", "isLargeModal"])
   }
 }
 
-function g(e) {
-  var t, n, o, s, c, _;
+function m(e) {
+  var t, n, o, s, c, p;
   let {
     header: h,
-    isLargeModal: g,
+    isLargeModal: m,
     stepProps: E
-  } = m(e), {
+  } = g(e), {
     step: v,
     stepConfigs: b,
     setBodyNode: y,
@@ -67,11 +67,11 @@ function g(e) {
   let N = null !== (c = null == T ? void 0 : null === (t = T.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== c && c,
     A = null == T ? void 0 : null === (n = T.options) || void 0 === n ? void 0 : n.bodyClassName,
     C = null == T ? void 0 : null === (o = T.options) || void 0 === o ? void 0 : o.sliderBodyClassName;
-  return void 0 !== g && g && (C = p.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
-    children: [null === (_ = null == T ? void 0 : null === (s = T.options) || void 0 === s ? void 0 : s.renderHeader) || void 0 === _ || _ ? h : null, T.renderStep(E), null == v || N ? null : (0, r.jsxs)(r.Fragment, {
+  return void 0 !== m && m && (C = _.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
+    children: [null === (p = null == T ? void 0 : null === (s = T.options) || void 0 === s ? void 0 : s.renderHeader) || void 0 === p || p ? h : null, T.renderStep(E), null == v || N ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
-        className: a()(A, p.body, {
-          [p.reviewStep]: v === f.h8.REVIEW
+        className: a()(A, _.body, {
+          [_.reviewStep]: v === f.h8.REVIEW
         }),
         children: (0, r.jsx)(u.MyZ, {
           activeSlide: v,
@@ -81,7 +81,7 @@ function g(e) {
           children: b.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {
             id: e.key,
             children: (0, r.jsx)("form", {
-              className: a()(p.sliderBody, C),
+              className: a()(_.sliderBody, C),
               ref: e => y(e),
               onSubmit: e => e.preventDefault()
             })

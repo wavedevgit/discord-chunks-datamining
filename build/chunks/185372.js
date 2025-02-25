@@ -16,7 +16,7 @@ var r = n(200651),
   d = n(963466),
   f = n(455812);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,14 +25,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -49,13 +49,13 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let {
-  Provider: g,
+  Provider: m,
   Consumer: E
 } = i.createContext(u.BRd.DARK);
 class v extends i.PureComponent {
@@ -70,15 +70,15 @@ class v extends i.PureComponent {
       style: u
     } = this.props;
     return (0, r.jsx)(E, {
-      children: p => (0, r.jsx)(c.Z.Child, {
+      children: _ => (0, r.jsx)(c.Z.Child, {
         grow: 0,
         className: a()(d.image, f.marginBottom40),
-        style: m(_({}, u), {
+        style: g(p({}, u), {
           width: n,
           height: i,
           marginLeft: o,
           marginTop: l,
-          backgroundImage: "url(".concat((0, s.wj)(p) ? t : e, ")")
+          backgroundImage: "url(".concat((0, s.wj)(_) ? t : e, ")")
         })
       })
     })
@@ -113,7 +113,7 @@ function y(e) {
     className: i,
     style: o
   } = e;
-  return (0, r.jsx)(g, {
+  return (0, r.jsx)(m, {
     value: n,
     children: (0, r.jsx)(c.Z, {
       direction: c.Z.Direction.VERTICAL,

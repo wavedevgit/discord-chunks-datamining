@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B: () => m,
+  B: () => g,
   QuestsRewardModalUnverified: () => h
 }), n(47120);
 var r = n(200651),
@@ -15,7 +15,7 @@ var r = n(200651),
   d = n(597401),
   f = n(800010);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -41,10 +41,10 @@ function h(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, p = (0, o.e7)([l.default], () => {
+  } = e, _ = (0, o.e7)([l.default], () => {
     var e;
     return null === (e = l.default.getCurrentUser()) || void 0 === e ? void 0 : e.email
-  }), [_, h] = i.useState({
+  }), [p, h] = i.useState({
     status: "unknown"
   });
   i.useEffect(() => {
@@ -62,7 +62,7 @@ function h(e) {
       })
     })
   }, []);
-  let m = () => (0, r.jsx)(a.mzw, {
+  let g = () => (0, r.jsx)(a.mzw, {
     className: d.modalFooter,
     children: (0, r.jsx)(a.zxk, {
       color: a.zxk.Colors.BRAND,
@@ -89,25 +89,25 @@ function h(e) {
         onClick: n,
         className: d.modalCloseButton
       })]
-    }), "loading" === _.status && (0, r.jsx)(a.hzk, {
+    }), "loading" === p.status && (0, r.jsx)(a.hzk, {
       className: d.content,
       children: (0, r.jsx)(a.$jN, {})
-    }), "error" === _.status && (0, r.jsxs)(r.Fragment, {
+    }), "error" === p.status && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.hzk, {
         className: d.content,
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           children: u.NW.string(u.t.vjyinp)
         })
-      }), m()]
-    }), "success" === _.status && (0, r.jsxs)(r.Fragment, {
+      }), g()]
+    }), "success" === p.status && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.hzk, {
         className: d.content,
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           children: u.NW.format(u.t.qP5xYW, {
-            emailAddress: p,
-            emailAddressLink: "mailto:".concat(p)
+            emailAddress: _,
+            emailAddressLink: "mailto:".concat(_)
           })
         })
       }), (0, r.jsx)(a.hzk, {
@@ -124,16 +124,16 @@ function h(e) {
             children: u.NW.string(u.t.yb7itb)
           })]
         })
-      }), m()]
+      }), g()]
     })]
   })
 }
 
-function m() {
+function g() {
   (0, a.ZDy)(async () => {
     let {
       QuestsRewardModalUnverified: e
     } = await Promise.resolve().then(n.bind(n, 669041));
-    return t => (0, r.jsx)(e, _({}, t))
+    return t => (0, r.jsx)(e, p({}, t))
   })
 }

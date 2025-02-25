@@ -30,8 +30,8 @@ function u(e) {
     integrationTypesConfig: u,
     guildId: d,
     channelId: f,
-    disableGuildSelect: p,
-    source: _,
+    disableGuildSelect: _,
+    source: p,
     oauth2Callback: h
   } = e;
   if (null != n) {
@@ -39,7 +39,7 @@ function u(e) {
       application_id: t,
       guild_id: d,
       auth_type: "custom_url",
-      source: _,
+      source: p,
       device_platform: r.tq ? "mobile_web" : "desktop_web"
     }), (0, s.q)({
       href: n
@@ -51,13 +51,13 @@ function u(e) {
       application_id: t,
       guild_id: d,
       auth_type: "in_app",
-      source: _,
+      source: p,
       device_platform: r.tq ? "mobile_web" : "desktop_web"
     }), (0, o.openOAuth2Modal)({
       clientId: t,
       guildId: d,
       channelId: f,
-      disableGuildSelect: p,
+      disableGuildSelect: _,
       callback: h
     });
     return
@@ -66,13 +66,13 @@ function u(e) {
     application_id: t,
     guild_id: d,
     auth_type: "in_app",
-    source: _,
+    source: p,
     device_platform: r.tq ? "mobile_web" : "desktop_web"
   }), (0, o.openOAuth2Modal)({
     clientId: t,
     guildId: d,
     channelId: f,
-    disableGuildSelect: p,
+    disableGuildSelect: _,
     scopes: c.scopes,
     permissions: null != c.permissions ? i.vB(c.permissions) : void 0,
     callback: h

@@ -9,30 +9,30 @@ var r = n(135839),
   u = "[object Map]",
   d = "[object Object]",
   f = "[object Promise]",
-  p = "[object Set]",
-  _ = "[object WeakMap]",
+  _ = "[object Set]",
+  p = "[object WeakMap]",
   h = "[object DataView]",
-  m = c(r),
-  g = c(i),
+  g = c(r),
+  m = c(i),
   E = c(o),
   v = c(a),
   b = c(s),
   y = l;
-(r && y(new r(new ArrayBuffer(1))) != h || i && y(new i) != u || o && y(o.resolve()) != f || a && y(new a) != p || s && y(new s) != _) && (y = function(e) {
+(r && y(new r(new ArrayBuffer(1))) != h || i && y(new i) != u || o && y(o.resolve()) != f || a && y(new a) != _ || s && y(new s) != p) && (y = function(e) {
   var t = l(e),
     n = t == d ? e.constructor : void 0,
     r = n ? c(n) : "";
   if (r) switch (r) {
-    case m:
-      return h;
     case g:
+      return h;
+    case m:
       return u;
     case E:
       return f;
     case v:
-      return p;
+      return _;
     case b:
-      return _
+      return p
   }
   return t
 }), e.exports = y

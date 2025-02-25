@@ -16,12 +16,12 @@ var r = Object.assign || function(e) {
   u = n(728613),
   d = n(322659),
   f = n(919924),
-  p = n(691181);
+  _ = n(691181);
 n(328794);
-var _ = n(549639),
+var p = n(549639),
   h = n(466657),
-  m = n(173821),
-  g = function(e, t, n) {
+  g = n(173821),
+  m = function(e, t, n) {
     if (e instanceof s) {
       var i = r({}, t),
         o = r({}, t);
@@ -38,11 +38,11 @@ var _ = n(549639),
     return null
   },
   E = function e(t, n) {
-    return g(t, n, e) || {
+    return m(t, n, e) || {
       start: function(e) {
         var r = t,
           i = n;
-        r.stopTracking(), n.toValue instanceof o ? r.track(new f(r, n.toValue, m, i, e)) : r.animate(new m(i), e)
+        r.stopTracking(), n.toValue instanceof o ? r.track(new f(r, n.toValue, g, i, e)) : r.animate(new g(i), e)
       },
       stop: function() {
         t.stopAnimation()
@@ -50,11 +50,11 @@ var _ = n(549639),
     }
   },
   v = function e(t, n) {
-    return g(t, n, e) || {
+    return m(t, n, e) || {
       start: function(e) {
         var r = t,
           i = n;
-        r.stopTracking(), n.toValue instanceof o ? r.track(new f(r, n.toValue, _, i, e)) : r.animate(new _(i), e)
+        r.stopTracking(), n.toValue instanceof o ? r.track(new f(r, n.toValue, p, i, e)) : r.animate(new p(i), e)
       },
       stop: function() {
         t.stopAnimation()
@@ -62,7 +62,7 @@ var _ = n(549639),
     }
   },
   b = function e(t, n) {
-    return g(t, n, e) || {
+    return m(t, n, e) || {
       start: function(e) {
         var r = t,
           i = n;
@@ -176,7 +176,7 @@ e.exports = {
   parallel: O,
   stagger: I,
   event: T,
-  isAnimated: p,
+  isAnimated: _,
   createAnimatedComponent: n(350323),
   inject: {
     ApplyAnimatedValues: n(457958).inject,

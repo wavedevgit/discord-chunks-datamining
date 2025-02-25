@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Iq: () => p,
+  Iq: () => _,
   UR: () => h,
-  Ww: () => _,
-  c$: () => m,
+  Ww: () => p,
+  c$: () => g,
   g: () => f,
   i2: () => v,
   tR: () => E,
-  tV: () => g
+  tV: () => m
 }), n(301563);
 var r = n(860911),
   i = n(544891),
@@ -40,7 +40,7 @@ function f(e) {
     rejectWithError: !1
   })
 }
-async function p(e) {
+async function _(e) {
   let {
     authorize: t,
     clientId: n,
@@ -51,10 +51,10 @@ async function p(e) {
     codeChallengeMethod: c,
     state: u,
     permissions: f,
-    guildId: p,
-    channelId: _,
+    guildId: _,
+    channelId: p,
     integrationType: h,
-    nonce: m
+    nonce: g
   } = e;
   return (await i.tn.post({
     url: l.ANM.OAUTH2_AUTHORIZE,
@@ -66,12 +66,12 @@ async function p(e) {
       code_challenge_method: c,
       scope: r.join(" "),
       state: u,
-      nonce: m
+      nonce: g
     },
     body: {
-      guild_id: p,
-      webhook_channel_id: null != p && null != _ ? _ : void 0,
-      channel_id: null == p && null != _ ? _ : void 0,
+      guild_id: _,
+      webhook_channel_id: null != _ && null != p ? p : void 0,
+      channel_id: null == _ && null != p ? p : void 0,
       permissions: f,
       authorize: t,
       integration_type: h,
@@ -81,7 +81,7 @@ async function p(e) {
     rejectWithError: !1
   })).body
 }
-async function _(e) {
+async function p(e) {
   let {
     clientId: t,
     scopes: n,
@@ -127,10 +127,10 @@ async function h(e) {
   return t
 }
 
-function m(e) {
+function g(e) {
   o.Z.logout((0, r.Ui)(e.pathname + e.search, !1))
 }
-async function g(e) {
+async function m(e) {
   return await i.tn.post({
     url: l.ANM.OAUTH2_DEVICE_VERIFY,
     body: {

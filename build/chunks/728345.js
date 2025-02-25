@@ -3,7 +3,7 @@
 n.d(t, {
   IX: () => v,
   Rt: () => b,
-  UM: () => g,
+  UM: () => m,
   ZP: () => E
 }), n(789020), n(610138), n(216116), n(78328), n(815648), n(47120);
 var r = n(442837),
@@ -37,7 +37,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,15 +48,15 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -64,14 +64,14 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-async function g(e) {
+async function m(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = arguments.length > 2 ? arguments[2] : void 0;
   o.Z.dispatch({
@@ -128,7 +128,7 @@ let E = {
       } = t, r = h(t, ["includeTeam"]);
       let a = (await i.tn.get({
         url: u.ANM.GUILD_APPLICATIONS(e),
-        query: _(f({}, r), {
+        query: p(f({}, r), {
           include_team: n
         }),
         rejectWithError: !1
@@ -191,12 +191,12 @@ let E = {
         })
       }
     },
-    fetchApplication: g
+    fetchApplication: m
   },
   v = (0, r.Kb)(c.Z, {
     queryId: e => null != e ? ["applications", e] : null,
     get: e => null != e ? c.Z.getApplication(e) : null,
-    load: (e, t) => null != t ? g(t, !1, e).then(u.dG4) : Promise.resolve(),
+    load: (e, t) => null != t ? m(t, !1, e).then(u.dG4) : Promise.resolve(),
     useStateHook: r.e7
   });
 

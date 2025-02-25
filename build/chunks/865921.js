@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  v: () => _
+  v: () => p
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,17 +13,17 @@ var r = n(200651),
   u = n(409813),
   d = n(48931),
   f = n(456251),
-  p = n(981631);
+  _ = n(981631);
 
-function _(e) {
+function p(e) {
   let {
     handleStepChange: t,
     handleClose: n
   } = e, {
-    blockedPayments: _,
+    blockedPayments: p,
     hasFetchedSkus: h,
-    paymentSources: m,
-    hasFetchedPaymentSources: g,
+    paymentSources: g,
+    hasFetchedPaymentSources: m,
     application: E,
     skusById: v,
     selectedSkuId: b
@@ -32,20 +32,20 @@ function _(e) {
   } = (0, l.wD)(), [O, S] = i.useState(!0), [I, T] = (0, o.Wu)([s.Z], () => [s.Z.isFetchingCategories, s.Z.error]);
   return (i.useEffect(() => {
     let e = null != E;
-    h && g && e && S(I)
-  }, [h, g, E, I]), i.useEffect(() => {
-    if (O || _ || null == b) return;
+    h && m && e && S(I)
+  }, [h, m, E, I]), i.useEffect(() => {
+    if (O || p || null == b) return;
     let e = v[b];
-    if (y && (null == e ? void 0 : e.productLine) === p.POd.COLLECTIBLES) {
+    if (y && (null == e ? void 0 : e.productLine) === _.POd.COLLECTIBLES) {
       t(u.h8.GIFT_CUSTOMIZATION);
       return
     }
-    if (0 === Object.keys(m).length) {
+    if (0 === Object.keys(g).length) {
       t(u.h8.ADD_PAYMENT_STEPS);
       return
     }
     t(u.h8.REVIEW)
-  }, [O, _, t, m, y, v, b]), O) ? (0, r.jsx)(f.Z, {}) : _ ? (0, r.jsx)(a.Vq, {
+  }, [O, p, t, g, y, v, b]), O) ? (0, r.jsx)(f.Z, {}) : p ? (0, r.jsx)(a.Vq, {
     onClose: n
   }) : null != T ? (0, r.jsx)(d.Z, {
     onClose: n

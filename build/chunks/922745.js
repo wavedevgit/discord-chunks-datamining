@@ -15,11 +15,11 @@ var i = n(120356),
   u = n(600164),
   d = n(528144),
   f = n(312956),
-  p = n(501967),
-  _ = n(19780),
+  _ = n(501967),
+  p = n(19780),
   h = n(540028),
-  m = n(507675),
-  g = n(273716),
+  g = n(507675),
+  m = n(273716),
   E = n(388032),
   v = n(717268);
 
@@ -70,11 +70,11 @@ function I(e) {
     onHide: i,
     idle: o,
     preventIdleComponent: l
-  } = e, u = (0, a.e7)([_.Z], () => _.Z.getChannelId()), p = null != u ? (0, r.jsx)(h.Z, {
+  } = e, u = (0, a.e7)([p.Z], () => p.Z.getChannelId()), _ = null != u ? (0, r.jsx)(h.Z, {
     voiceChannelId: u,
     idle: o
   }) : null, {
-    enabled: m
+    enabled: g
   } = f.Z.useExperiment({
     location: "PictureInPicturePlayer"
   });
@@ -96,10 +96,10 @@ function I(e) {
         color: s.Z.unsafe_rawColors.WHITE_500.css,
         children: t
       })]
-    }), m && null != i ? (0, r.jsx)(g.Z, {
+    }), g && null != i ? (0, r.jsx)(m.Z, {
       onClick: i,
       label: E.NW.string(E.t.BEuDEh)
-    }) : null, p]
+    }) : null, _]
   })
 }
 
@@ -113,9 +113,9 @@ function T(e) {
     onActive: c,
     onForceIdle: d,
     renderBottomLeftControls: f,
-    renderBottomRightControls: _,
+    renderBottomRightControls: p,
     screenMessage: h,
-    hideControls: g = !1,
+    hideControls: m = !1,
     className: E,
     innerClassName: b
   } = e, S = O(e, ["children", "idle", "onJumpToChannel", "onHide", "backgroundKey", "onActive", "onForceIdle", "renderBottomLeftControls", "renderBottomRightControls", "screenMessage", "hideControls", "className", "innerClassName"]);
@@ -128,13 +128,13 @@ function T(e) {
     }, E),
     onDoubleClick: i,
     children: [(0, r.jsx)(l.W, {
-      children: (0, r.jsx)(p.B, {
+      children: (0, r.jsx)(_.B, {
         className: b,
         children: t
       }, s)
-    }), null != h ? (0, r.jsx)(m.Z, y({
+    }), null != h ? (0, r.jsx)(g.Z, y({
       size: "small"
-    }, h)) : null, !g && (0, r.jsxs)("div", {
+    }, h)) : null, !m && (0, r.jsxs)("div", {
       className: o()(v.videoControls, "theme-dark"),
       children: [(0, r.jsx)("div", {
         className: v.topControls,
@@ -158,7 +158,7 @@ function T(e) {
           justify: u.Z.Justify.END,
           basis: "50%",
           align: u.Z.Align.CENTER,
-          children: null == _ ? void 0 : _()
+          children: null == p ? void 0 : p()
         })]
       })]
     })]

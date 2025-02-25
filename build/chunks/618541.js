@@ -19,8 +19,8 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = null,
-  p = null,
-  _ = null;
+  _ = null,
+  p = null;
 
 function h(e) {
   let {
@@ -29,18 +29,18 @@ function h(e) {
   f = t
 }
 
-function m(e) {
+function g(e) {
   let {
     paypalClient: t
   } = e;
-  p = t
+  _ = t
 }
 
-function g(e) {
+function m(e) {
   let {
     venmoClient: t
   } = e;
-  _ = t
+  p = t
 }
 
 function E(e) {
@@ -67,11 +67,11 @@ function v(e) {
 }
 
 function b() {
-  p = null
+  _ = null
 }
 
 function y() {
-  _ = null
+  p = null
 }(0, c.isDesktop)() && (window.popupBridge = {
   getReturnUrlPrefix: () => {
     if (null == r) throw Error("popupBridgeState is unset");
@@ -86,10 +86,10 @@ class O extends(o = a.ZP.Store) {
     return f
   }
   getPayPalClient() {
-    return p
+    return _
   }
   getVenmoClient() {
-    return _
+    return p
   }
   getLastURL() {
     return i
@@ -98,11 +98,11 @@ class O extends(o = a.ZP.Store) {
 d(O, "displayName", "BraintreeStore");
 let S = new O(l.Z, {
     BRAINTREE_CREATE_CLIENT_SUCCESS: h,
-    BRAINTREE_CREATE_PAYPAL_CLIENT_SUCCESS: m,
+    BRAINTREE_CREATE_PAYPAL_CLIENT_SUCCESS: g,
     BILLING_POPUP_BRIDGE_CALLBACK: E,
     BILLING_POPUP_BRIDGE_STATE_UPDATE: v,
     BRAINTREE_TEARDOWN_PAYPAL_CLIENT: b,
-    BRAINTREE_CREATE_VENMO_CLIENT_SUCCESS: g,
+    BRAINTREE_CREATE_VENMO_CLIENT_SUCCESS: m,
     BRAINTREE_TEARDOWN_VENMO_CLIENT: y
   }),
   I = S

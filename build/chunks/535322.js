@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   A: () => h,
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -36,7 +36,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,14 +47,14 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function h(e) {
-  return (0, r.jsx)("svg", _(f({}, (0, s.Z)(f({}, e))), {
+  return (0, r.jsx)("svg", p(f({}, (0, s.Z)(f({}, e))), {
     width: "25",
     height: "48",
     viewBox: "0 0 25 48",
@@ -67,7 +67,7 @@ function h(e) {
   }))
 }
 
-function m(e) {
+function g(e) {
   let {
     className: t,
     forceUseColorForSparkles: n = !1,

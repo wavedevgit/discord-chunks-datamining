@@ -128,17 +128,17 @@ function f(e, t, n) {
     y: 0
   }, {
     width: f,
-    height: p
+    height: _
   } = t;
   return [a(c(u(l({
     top: r + d,
     left: i + o,
     bottom: void 0,
     right: void 0
-  }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof p ? p : 0))), n), s(t, n)]
+  }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof _ ? _ : 0))), n), s(t, n)]
 }
 
-function p(e, t, n) {
+function _(e, t, n) {
   let {
     top: r,
     right: i
@@ -150,17 +150,17 @@ function p(e, t, n) {
     y: 0
   }, {
     width: f,
-    height: p
+    height: _
   } = t;
   return [a(c(u(l({
     top: r + d,
     left: void 0,
     bottom: void 0,
     right: i - o
-  }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof p ? p : 0))), n), s(t, n)]
+  }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof _ ? _ : 0))), n), s(t, n)]
 }
 
-function _(e, t) {
+function p(e, t) {
   let n = {
     top: void 0,
     bottom: void 0,
@@ -170,7 +170,7 @@ function _(e, t) {
   return null != t.top && (n.top = e.top), null != t.bottom && (n.bottom = e.bottom), null != t.left && (n.left = e.left), null != t.right && (n.right = e.right), n
 }
 n.d(t, {
-  BL: () => _,
+  BL: () => p,
   KR: () => i,
   Ox: () => s,
   PY: () => l,
@@ -178,7 +178,7 @@ n.d(t, {
   jL: () => a,
   o4: () => f,
   ou: () => u,
-  uq: () => p,
+  uq: () => _,
   vS: () => d,
   w_: () => o
 }), n(411104)

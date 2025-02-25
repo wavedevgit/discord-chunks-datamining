@@ -9,8 +9,8 @@ var r = n(581031),
   c = /\$([$&'`]|\d{1,2}|<[^>]*>)/g,
   u = /\$([$&'`]|\d{1,2})/g;
 e.exports = function(e, t, n, r, d, f) {
-  var p = n + e.length,
-    _ = r.length,
+  var _ = n + e.length,
+    p = r.length,
     h = u;
   return void 0 !== d && (d = i(d), h = c), s(f, h, function(i, s) {
     var c;
@@ -22,17 +22,17 @@ e.exports = function(e, t, n, r, d, f) {
       case "`":
         return l(t, 0, n);
       case "'":
-        return l(t, p);
+        return l(t, _);
       case "<":
         c = d[l(s, 1, -1)];
         break;
       default:
         var u = +s;
         if (0 === u) return i;
-        if (u > _) {
+        if (u > p) {
           var f = o(u / 10);
           if (0 === f) return i;
-          if (f <= _) return void 0 === r[f - 1] ? a(s, 1) : r[f - 1] + a(s, 1);
+          if (f <= p) return void 0 === r[f - 1] ? a(s, 1) : r[f - 1] + a(s, 1);
           return i
         }
         c = r[u - 1]
