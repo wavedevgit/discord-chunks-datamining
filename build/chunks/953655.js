@@ -26,7 +26,7 @@ let m = e => {
       className: o()(C.section, C.col2, C.featuredBlocksContainer),
       children: null == r ? void 0 : r.subblocks.map((e, r) => {
         if (e.type === s.O.CATEGORY) {
-          let i = null != e.unpublishedAt ? b.NW.string(b.t["h/uBCQ"]) : e.categoryStoreListingId === (null == d ? void 0 : d.storeListingId) ? b.NW.string(b.t["o/oRJC"]) : void 0,
+          let i = null != e.unpublishedAt ? b.NW.string(b.t["h/uBCQ"]) : "1341506445245415424" === e.categoryStoreListingId ? b.NW.string(b.t.PsL3bW) : e.categoryStoreListingId === (null == d ? void 0 : d.storeListingId) ? b.NW.string(b.t["o/oRJC"]) : void 0,
             o = c && e.categoryStoreListingId === (null == l ? void 0 : l.storeListingId) ? m : i;
           return (0, n.jsx)(f.q, {
             subblock: e,

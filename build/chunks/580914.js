@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => E
+  Z: () => w
 }), r(47120);
 var n = r(200651),
   i = r(192379),
@@ -21,8 +21,8 @@ var n = r(200651),
   g = r(937510),
   v = r(823941),
   x = r(38900),
-  _ = r(709999),
-  j = r(957058),
+  j = r(709999),
+  _ = r(957058),
   y = r(215023),
   O = r(388032),
   k = r(974492);
@@ -58,15 +58,15 @@ let P = {
       categoryStoreListingId: e.storeListingId
     }
   },
-  E = e => {
+  w = e => {
     var t, r, l, a, m;
     let {
       isLoading: v,
-      handleTransition: E,
-      category: w,
+      handleTransition: w,
+      category: E,
       heroBlock: L,
       tab: I
-    } = e, T = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), N = (0, s.e7)([h.Z], () => h.Z.isFocused()), B = (0, s.e7)([f.default], () => f.default.getCurrentUser()), Z = (0, j.u)(), F = i.useMemo(() => null != L ? L : S(w), [L, w]), A = i.useMemo(() => Z(F.rankedSkuIds), [v, Z, F.rankedSkuIds]), R = (0, g.l)(A).slice(0, 4), W = I === y.AW.ORBS ? O.NW.string(O.t.qQq91t) : O.NW.formatToPlainString(O.t.wvKYCg, {
+    } = e, N = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), T = (0, s.e7)([h.Z], () => h.Z.isFocused()), B = (0, s.e7)([f.default], () => f.default.getCurrentUser()), Z = (0, _.u)(), F = i.useMemo(() => null != L ? L : S(E), [L, E]), A = i.useMemo(() => Z(F.rankedSkuIds), [v, Z, F.rankedSkuIds]), R = (0, g.l)(A).slice(0, 4), W = I === y.AW.ORBS ? O.NW.string(O.t.qQq91t) : O.NW.formatToPlainString(O.t.wvKYCg, {
       category_name: F.name
     });
     if (null == B || !v && F === P) return null;
@@ -78,7 +78,7 @@ let P = {
       className: k.heroBlock,
       children: [(0, n.jsxs)("div", {
         className: k.banner,
-        children: [null != M && !T && N ? (0, n.jsx)(p.Z, {
+        children: [null != M && !N && T ? (0, n.jsx)(p.Z, {
           className: k.bannerVideoBackground,
           src: M,
           autoPlay: !0,
@@ -138,7 +138,7 @@ let P = {
               className: k.heroHeaderButton,
               color: c.Ttl.WHITE,
               onClick: () => {
-                I === y.AW.ORBS ? (0, d.Z)("https://support.discord.com/") : E("shop latest category hero", F.categorySkuId)
+                I === y.AW.ORBS ? (0, d.Z)("https://support.discord.com/") : w("shop latest category hero", F.categorySkuId)
               },
               children: W
             })
@@ -156,7 +156,7 @@ let P = {
                   pageSection: "top 4",
                   categoryPosition: 0
                 },
-                children: (0, n.jsx)(_.Z, {
+                children: (0, n.jsx)(j.Z, {
                   product: e,
                   category: r,
                   user: B,

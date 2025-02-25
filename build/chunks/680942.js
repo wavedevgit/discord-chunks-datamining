@@ -70,11 +70,11 @@ let m = {
       returnRef: g,
       onSuccess: v,
       tooltipDelay: x,
-      isGiftEasterEggEnabled: _,
-      disableCustomColor: j = !1
+      isGiftEasterEggEnabled: j,
+      disableCustomColor: _ = !1
     } = e, {
       analyticsLocations: y
-    } = (0, a.ZP)(), O = i.useRef(null), k = (0, o.Z)(O), P = j ? h.BR.DARK : h.BR.LIGHT, S = (0, u.hv)("CollectiblesShopGiftButton");
+    } = (0, a.ZP)(), O = i.useRef(null), k = (0, o.Z)(O), P = _ ? h.BR.DARK : h.BR.LIGHT, S = (0, u.hv)("CollectiblesShopGiftButton");
     return (0, d.x6)(t) ? null : (0, n.jsx)(l.ua7, {
       text: b.NW.string(b.t["JCFN//"]),
       delay: x,
@@ -100,7 +100,7 @@ let m = {
         }({}, e), o = o = {
           buttonRef: O,
           className: C.giftButton,
-          color: j ? l.Ttl.BRAND : l.Ttl.CUSTOM,
+          color: _ ? l.Ttl.BRAND : l.Ttl.CUSTOM,
           look: l.zxk.Looks.FILLED,
           size: l.PhG.ICON,
           innerClassName: C.giftButtonInner,
@@ -121,7 +121,7 @@ let m = {
               } : void 0
             })
           },
-          children: _ ? (0, n.jsx)(c.Z, {
+          children: j ? (0, n.jsx)(c.Z, {
             hovered: k,
             isContentDismissed: !0,
             themeOverride: P,

@@ -74,13 +74,13 @@ function C(e) {
   });
   let v = (0, a.ql)(t, d.tuJ.PREMIUM_TIER_2),
     x = !r && !(0, a.x6)(t),
-    _ = (0, a.x6)(t) && r ? b(h({}, g), {
+    j = (0, a.x6)(t) && r ? b(h({}, g), {
       amount: i.original
     }) : g;
   return (0, n.jsxs)("div", {
     className: l()(p.priceTagsContainer, C),
     children: [(0, n.jsx)(s.F, {
-      price: _,
+      price: j,
       discount: r ? a.f_ : i,
       className: l()(p.price, {
         [p.striked]: r,

@@ -21,19 +21,19 @@ var n = r(200651),
   g = r(977395),
   v = r(214852),
   x = r(479446),
-  _ = r(981632),
-  j = r(290026),
+  j = r(981632),
+  _ = r(290026),
   y = r(511050),
   O = r(819640),
   k = r(594174),
   P = r(626135),
   S = r(74538),
-  E = r(335131),
-  w = r(381585),
+  w = r(335131),
+  E = r(381585),
   L = r(597688),
   I = r(328347),
-  T = r(223143),
-  N = r(298228),
+  N = r(223143),
+  T = r(298228),
   B = r(937510),
   Z = r(309956),
   F = r(853748),
@@ -75,7 +75,7 @@ function et(e) {
       size: 24
     }), (0, n.jsx)("div", {
       className: ee.cardsContainer,
-      children: t.map((e, t) => (0, n.jsx)(w.k0, {
+      children: t.map((e, t) => (0, n.jsx)(E.k0, {
         newValue: {
           tilePosition: t
         },
@@ -165,7 +165,7 @@ function en(e) {
       style: {
         left: "".concat(p.current, "%")
       },
-      children: (0, n.jsx)(_.Z, {
+      children: (0, n.jsx)(j.Z, {
         idleAnimationState: x.SR.IDLE,
         giftStyle: Q.Cj.BOX
       })
@@ -196,7 +196,7 @@ let ei = function(e) {
     analyticsSource: f,
     analyticsLocations: x
   } = (0, s.cj)([I.Z], () => I.Z.getAnalytics()), {
-    analyticsLocations: _
+    analyticsLocations: j
   } = (0, b.ZP)([...x, h.Z.COLLECTIBLES_SHOP]), {
     sessionId: B,
     scrollerRef: F,
@@ -225,17 +225,17 @@ let ei = function(e) {
       categories: eg,
       isFetchingCategories: ev,
       fetchCategoriesError: ex,
-      fetchPurchasesError: e_,
-      claimError: ej,
+      fetchPurchasesError: ej,
+      claimError: e_,
       refreshCategories: ey
-    } = (0, T.ZP)({
+    } = (0, N.ZP)({
       location: "CollectiblesShop.web"
     }),
-    eO = null !== (t = null != ex ? ex : e_) && void 0 !== t ? t : ej;
-  (0, j.P)();
-  let ek = (0, N.O)(eg),
+    eO = null !== (t = null != ex ? ex : ej) && void 0 !== t ? t : e_;
+  (0, _.P)();
+  let ek = (0, T.O)(eg),
     eP = i.useRef(null),
-    [eS, eE] = i.useState(!1);
+    [eS, ew] = i.useState(!1);
   (0, A.Kp)({
     isFetchingCategories: ev,
     isLayer: ef,
@@ -245,7 +245,7 @@ let ei = function(e) {
       var e;
       let t;
       t = V === $.AW.CATALOG ? ec : f, P.default.track(J.rMx.COLLECTIBLES_SHOP_VIEWED, {
-        location_stack: _,
+        location_stack: j,
         source: t,
         page_session_id: B,
         page_type: V === $.AW.HOME ? "home" : "full",
@@ -254,21 +254,21 @@ let ei = function(e) {
     }
     em || P.default.track(J.rMx.PREMIUM_UPSELL_VIEWED, {
       type: Q.cd.COLLECTIBLES_SHOP,
-      location_stack: _
+      location_stack: j
     })
-  }, [em, _, f, B, ea, es, ec, K, V]);
+  }, [em, j, f, B, ea, es, ec, K, V]);
   let {
-    dismissCollectiblesShopTabNewBadge: ew
+    dismissCollectiblesShopTabNewBadge: eE
   } = (0, G.Z)();
   i.useEffect(() => {
-    ew(), !(0, m.un)(c.z.COLLECTIBLES_GIFTING_COACHMARK) && (0, m.EW)(c.z.COLLECTIBLES_GIFTING_COACHMARK, {
+    eE(), !(0, m.un)(c.z.COLLECTIBLES_GIFTING_COACHMARK) && (0, m.EW)(c.z.COLLECTIBLES_GIFTING_COACHMARK, {
       dismissAction: X.L.AUTO_DISMISS,
       forceTrack: !0
     })
-  }, [ew]), i.useEffect(() => {
+  }, [eE]), i.useEffect(() => {
     r || (0, p.Y)(J.Z5c.COLLECTIBLES_SHOP)
   }, [r]), i.useEffect(() => () => {
-    (0, E.K$)({
+    (0, w.K$)({
       categories: [...eg.values()],
       itemTypes: [a.Z.AVATAR_DECORATION, a.Z.PROFILE_EFFECT]
     })
@@ -284,10 +284,10 @@ let ei = function(e) {
     }, [ey]),
     {
       setCategoryRef: eI,
-      handleScrollToCategory: eT
+      handleScrollToCategory: eN
     } = (0, A.xV)(F.current),
     {
-      reducedMotion: eN
+      reducedMotion: eT
     } = i.useContext(u.Sfi),
     eB = i.useRef(null),
     eZ = i.useRef(null);
@@ -298,16 +298,16 @@ let ei = function(e) {
     }
   }, [r]);
   let eF = i.useCallback(async (e, t, n) => {
-      let i = n && !r && !eN.enabled;
-      ed(e), es(t), await et($.AW.CATALOG, i), t && eT(t)
-    }, [eT, r, eN.enabled, et]),
+      let i = n && !r && !eT.enabled;
+      ed(e), es(t), await et($.AW.CATALOG, i), t && eN(t)
+    }, [eN, r, eT.enabled, et]),
     eA = (0, s.e7)([L.Z], () => {
       var e;
       return null === (e = L.Z.getCategory(ea)) || void 0 === e ? void 0 : e.name
     });
   return (0, n.jsx)(b.Gt, {
-    value: _,
-    children: (0, n.jsxs)(w.k0, {
+    value: j,
+    children: (0, n.jsxs)(E.k0, {
       newValue: {
         sessionId: B,
         pageCategory: eA
@@ -366,7 +366,7 @@ let ei = function(e) {
                           return t.length > 0
                         }).map((e, t) => (0, n.jsx)("div", {
                           ref: t => eI(e.skuId, t),
-                          children: (0, n.jsx)(w.k0, {
+                          children: (0, n.jsx)(E.k0, {
                             newValue: {
                               categoryPosition: t
                             },
@@ -374,7 +374,7 @@ let ei = function(e) {
                               isPremiumUser: em,
                               category: e,
                               initialItemCardRef: eP,
-                              setIsGiftEasterEggEnabled: eE,
+                              setIsGiftEasterEggEnabled: ew,
                               isGiftEasterEggEnabled: eS,
                               isFullScreen: r
                             })

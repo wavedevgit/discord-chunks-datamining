@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  I: () => j
+  I: () => _
 }), r(653041);
 var n = r(200651),
   i = r(192379),
@@ -22,7 +22,7 @@ var n = r(200651),
   v = r(388032),
   x = r(470602);
 
-function _(e) {
+function j(e) {
   let {
     tab: t,
     displayText: r,
@@ -39,25 +39,25 @@ function _(e) {
   })
 }
 
-function j(e) {
+function _(e) {
   let {
     isFullScreen: t,
     isLayer: r,
     onClose: l,
-    selectedTab: j,
+    selectedTab: _,
     handleTransition: y
   } = e, O = (0, d.ZP)(), k = (0, a.e7)([b.default], () => b.default.getCurrentUser()), P = (null == k ? void 0 : k.isStaff()) || (null == k ? void 0 : k.isStaffPersonal()) || !1, {
     enabled: S
   } = (0, f.W)({
     location: "collectibles_shop_header_bar"
-  }), E = [{
+  }), w = [{
     tab: g.AW.HOME,
     displayText: v.NW.string(v.t.ijDDw8)
   }, {
     tab: g.AW.CATALOG,
     displayText: v.NW.string(v.t.xFcotb)
   }];
-  return S && E.push({
+  return S && w.push({
     tab: g.AW.ORBS,
     displayText: v.NW.string(v.t.q6uIys)
   }), (0, n.jsx)(s.f6W, {
@@ -74,15 +74,15 @@ function j(e) {
         children: v.NW.string(v.t.pWG4zc)
       }), (0, n.jsx)("div", {
         className: x.tabs,
-        children: E.map(e => {
+        children: w.map(e => {
           let {
             tab: t,
             displayText: r
           } = e;
-          return (0, n.jsx)(_, {
+          return (0, n.jsx)(j, {
             tab: t,
             displayText: r,
-            selected: j === t,
+            selected: _ === t,
             handleTransition: y
           }, t)
         })

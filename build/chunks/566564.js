@@ -21,8 +21,8 @@ var n = r(200651),
   g = r(548685),
   v = r(580914),
   x = r(384067),
-  _ = r(215023),
-  j = r(388032),
+  j = r(215023),
+  _ = r(388032),
   y = r(974492);
 let O = e => {
     let {
@@ -42,11 +42,11 @@ let O = e => {
       noCache: s,
       includeUnpublished: c,
       includeBundles: !0
-    }), _ = i.useCallback(() => {
+    }), j = i.useCallback(() => {
       f()
     }, [f]);
     return null != u ? (0, n.jsx)(b.Z, {
-      onRetry: _,
+      onRetry: j,
       errorOrigin: b.i.SHOP_PAGE,
       errorMessage: u.message
     }) : d || 0 === p.length ? (0, n.jsxs)(n.Fragment, {
@@ -117,8 +117,8 @@ let O = e => {
       refreshCategories: k
     } = (0, f.ZP)({
       location: "CollectiblesFeedShop"
-    }), P = null !== (t = null != g ? g : v) && void 0 !== t ? t : x, S = (0, s.e7)([d.default], () => d.default.getCurrentUser()), E = (0, p.b)("Collectibles Shop Button"), {
-      noCache: w,
+    }), P = null !== (t = null != g ? g : v) && void 0 !== t ? t : x, S = (0, s.e7)([d.default], () => d.default.getCurrentUser()), w = (0, p.b)("Collectibles Shop Button"), {
+      noCache: E,
       includeUnpublished: L
     } = (0, C.Z)(), I = i.useCallback(() => {
       k()
@@ -129,8 +129,8 @@ let O = e => {
       null != g ? e.push("shop load fetch categories error: ".concat(P.message)) : null != v ? e.push("shop load fetch purchase error: ".concat(P.message)) : e.push("shop load claim error: ".concat(P.message)), u.Z.captureMessage(e.join("\n"), {
         tags: {
           isStaff: S.isStaff().toString(),
-          preloadEnabled: E.toString(),
-          disableCache: w.toString(),
+          preloadEnabled: w.toString(),
+          disableCache: E.toString(),
           includeUnpublished: L.toString()
         }
       })
@@ -150,11 +150,11 @@ let O = e => {
           numVisibleItems: a,
           isFetchingCategories: m,
           tab: h
-        }), h === _.AW.HOME && a >= _.iA && (0, n.jsxs)("div", {
+        }), h === j.AW.HOME && a >= j.iA && (0, n.jsxs)("div", {
           className: y.endOfFeed,
           children: [(0, n.jsx)(c.X6q, {
             variant: "heading-md/semibold",
-            children: j.NW.string(j.t.Yr70c3)
+            children: _.NW.string(_.t.Yr70c3)
           }), (0, n.jsx)(c.zxk, {
             className: y.endOfFeedButton,
             onClick: () => {
@@ -163,7 +163,7 @@ let O = e => {
             children: (0, n.jsx)(c.Text, {
               variant: "text-md/medium",
               color: "always-white",
-              children: j.NW.string(j.t.AfrvRE)
+              children: _.NW.string(_.t.AfrvRE)
             })
           })]
         })]
