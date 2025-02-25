@@ -56,6 +56,7 @@ let h = new a.Yd("VoiceFilterStore"),
     voiceFilters: {},
     modelState: {},
     sortedVoiceFilters: [],
+    catalogLastFetchTime: void 0,
     catalogUpdateTime: void 0,
     limitedTimeVoices: void 0,
     catalogFailed: !1
@@ -120,7 +121,7 @@ function y(e) {
     available: o,
     temporarilyAvailable: r.currentSet.includes(e)
   }));
-  return m.voiceFilters = n, m.sortedVoiceFilters = b(m.voiceFilters), !0
+  return m.voiceFilters = n, m.sortedVoiceFilters = b(m.voiceFilters), m.catalogLastFetchTime = new Date, !0
 }
 
 function O() {
@@ -146,11 +147,17 @@ class S extends(r = s.ZP.Store) {
   getSortedVoiceFilters() {
     return m.sortedVoiceFilters.map(e => m.voiceFilters[e])
   }
+  getCatalogLastFetchTime() {
+    return m.catalogLastFetchTime
+  }
   getCatalogUpdateTime() {
     return m.catalogUpdateTime
   }
   getLimitedTimeVoices() {
     return m.limitedTimeVoices
+  }
+  isNativeModuleLoaded() {
+    return m.nativeVoiceFilterModuleState === c.O.LOADED
   }
   isNativeModuleLoading() {
     return m.nativeVoiceFilterModuleState === c.O.LOADING

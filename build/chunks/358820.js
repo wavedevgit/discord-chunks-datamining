@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  fz: () => S,
-  ge: () => N,
-  r5: () => A,
-  rk: () => I,
-  wV: () => T
+  fz: () => O,
+  ge: () => T,
+  r5: () => N,
+  rk: () => S,
+  wV: () => I
 }), n(411104);
 var r = n(512722),
   i = n.n(r),
@@ -60,10 +60,9 @@ function v(e, t) {
   }), e
 }
 let b = new o.Yd("VoiceFilterActionCreators"),
-  y = !1,
-  O = !1;
+  y = !1;
 
-function S(e) {
+function O(e) {
   let {
     url: t,
     modelId: n,
@@ -97,7 +96,11 @@ function S(e) {
   }))
 }
 
-function I(e) {
+function S(e) {
+  if (!_.Z.isNativeModuleLoaded()) {
+    b.warn("Voice Filter apply ignored, module not loaded.");
+    return
+  }
   f.ZP.getVoiceFilters().setVoiceFilter({
     name: e
   }).then(() => {
@@ -113,8 +116,8 @@ function I(e) {
     })
   })
 }
-async function T() {
-  if (!O) {
+async function I() {
+  if (!_.Z.isNativeModuleLoaded()) {
     b.info("Voice Filter catalog refresh ignored, module not loaded.");
     return
   }
@@ -141,14 +144,14 @@ async function T() {
   }
 }
 
-function N() {
+function T() {
   a.Z.dispatch({
     type: "VOICE_FILTER_DOWNLOAD_CANCELED"
   })
 }
-async function A() {
-  if (!(O || __OVERLAY__)) {
-    if (O = !0, !(0, u.isWindows)() && !(0, u.isMac)()) {
+async function N() {
+  if (!(_.Z.isNativeModuleLoaded() || _.Z.isNativeModuleLoading() || __OVERLAY__)) {
+    if (!(0, u.isWindows)() && !(0, u.isMac)()) {
       a.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
         state: h.O.UNSUPPORTED
@@ -161,10 +164,10 @@ async function A() {
         state: h.O.LOADING
       }), await f.ZP.ensureModule("discord_voice_filters");
       let t = f.ZP.getVoiceFilters();
-      await t.setupResources(), await T(), a.Z.dispatch({
+      await t.setupResources(), a.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
         state: h.O.LOADED
-      });
+      }), await I();
       let n = l.Z.getMostRecentlyRequestedVoiceFilter();
       if (null != n) {
         var e;
@@ -174,7 +177,7 @@ async function A() {
       b.warn("Failed to load Voice Filters module: ".concat(e.message)), d.Z.captureException(e), a.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
         state: h.O.FAILED
-      }), O = !1
+      })
     }
   }
 }

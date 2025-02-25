@@ -51,7 +51,7 @@ class N extends i.Z {
     T() && (0, m.m3)({
       location: "VoiceFilterFeedbackManager",
       guildId: t
-    }) ? (0, h.v6)(null) : this.maybeQueueFeedbackMessage()
+    }) && g.Z.isNativeModuleLoaded() ? (0, h.v6)(null) : this.maybeQueueFeedbackMessage()
   }
   maybeQueueFeedbackMessage() {
     if (!T()) return;
