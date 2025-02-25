@@ -51,7 +51,7 @@ function A(e) {
   return e
 }
 var C = function(e) {
-  return e.HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED = "HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED", e.OVERLAY_UNLOCKED = "OVERLAY_UNLOCKED", e.OVERLAY_VIDEO_STREAM_RENDERING = "OVERLAY_VIDEO_STREAM_RENDERING", e.DEV_FORCED_GPU_BOOST = "DEV_FORCED_GPU_BOOST", e
+  return e.HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED = "HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED", e.OVERLAY_UNLOCKED = "OVERLAY_UNLOCKED", e.OVERLAY_VIDEO_STREAM_RENDERING = "OVERLAY_VIDEO_STREAM_RENDERING", e.OVERLAY_RENDERING = "OVERLAY_RENDERING", e.DEV_FORCED_GPU_BOOST = "DEV_FORCED_GPU_BOOST", e
 }({});
 let R = "repaint-complete",
   P = "request-repaint";
@@ -280,7 +280,7 @@ async function el(e) {
       renderer_started: !0,
       fullscreen_type: await (0, y.hj)(e, 0),
       graphics_info_after: new Date().getTime() - r
-    }), l.Z.window.setBackgroundThrottling(!1), m.ZP.IsHardwareAcceleratedGPUSchedulingEnabled() && j.toggleGPUBoost("HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED", !0), es(e), B = e, (0, g.tB)(e), w.info("Getting Native Handle for pid", e);
+    }), l.Z.window.setBackgroundThrottling(!1), m.ZP.IsHardwareAcceleratedGPUSchedulingEnabled() && j.toggleGPUBoost("HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED", !0), j.toggleGPUBoost("OVERLAY_RENDERING", !0), es(e), B = e, (0, g.tB)(e), w.info("Getting Native Handle for pid", e);
     let i = null !== (n = await (null === l.Z || void 0 === l.Z ? void 0 : null === (t = l.Z.window) || void 0 === t ? void 0 : t.getNativeHandle(I.$J))) && void 0 !== n ? n : "";
     return w.info("Native Handle for pid ".concat(e, ":"), i), a.Z.updateOverlayState(e, s.mM.OVERLAY_RENDERING), X(e, {
       renderer_started_after: new Date().getTime() - r
