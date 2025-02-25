@@ -81,7 +81,7 @@ function M() {
   })
 }
 
-function U(e) {
+function G(e) {
   let {
     children: t
   } = e;
@@ -93,7 +93,7 @@ function U(e) {
   })
 }
 
-function G(e) {
+function U(e) {
   let {
     currentTier: t,
     availableSounds: n,
@@ -248,7 +248,7 @@ function z(e) {
         className: A.tableTitle,
         variant: "heading-md/bold",
         color: "header-primary",
-        children: (0, r.jsx)(G, {
+        children: (0, r.jsx)(U, {
           guildId: t.id,
           currentTier: m,
           availableSounds: p
@@ -261,11 +261,11 @@ function z(e) {
         className: A.soundTable,
         children: [(0, r.jsxs)("div", {
           className: A.tableHeaders,
-          children: [(0, r.jsx)(U, {
+          children: [(0, r.jsx)(G, {
             children: Z.NW.string(Z.t.sMOuub)
-          }), (0, r.jsx)(U, {
+          }), (0, r.jsx)(G, {
             children: Z.NW.string(Z.t.lLFvlZ)
-          }), (0, r.jsx)(U, {
+          }), (0, r.jsx)(G, {
             children: Z.NW.string(Z.t["85qMS0"])
           })]
         }), s.map(e => (0, r.jsx)(H, {
@@ -320,7 +320,7 @@ function H(e) {
         }
       })
     }, [O, o.id]),
-    U = T.ZP.useUserTag(O);
+    G = T.ZP.useUserTag(O);
   return (0, r.jsxs)("div", {
     className: a()(A.row, {
       [A.active]: s
@@ -352,14 +352,14 @@ function H(e) {
       className: A.uploader,
       onClick: M,
       children: [(0, r.jsx)(u.qEK, {
-        "aria-label": U,
+        "aria-label": G,
         size: u.EFr.SIZE_24,
         className: A.uploaderAvatar,
         src: (0, I.ov)(O, !1, 24)
       }), (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
         lineClamp: 1,
-        children: U
+        children: G
       })]
     }), E ? (0, r.jsxs)("div", {
       className: A.soundEditContainer,

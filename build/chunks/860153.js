@@ -16,9 +16,9 @@ var a = n(200651),
   _ = n(73249),
   g = n(369171),
   y = n(545093),
-  O = n(388032),
-  f = n(656868);
-let b = r.memo(function(e) {
+  f = n(388032),
+  b = n(656868);
+let O = r.memo(function(e) {
   let {
     message: t
   } = e, n = (0, c.e7)([m.Z], () => m.Z.getChannel(t.channel_id));
@@ -28,21 +28,21 @@ let b = r.memo(function(e) {
       children: [(0, a.jsx)(l.Z, {
         user: t.author,
         size: s.EFr.SIZE_40,
-        className: i()(f.authorAvatar, e)
+        className: i()(b.authorAvatar, e)
       }), (0, a.jsxs)("div", {
-        className: i()(f.author, e),
+        className: i()(b.author, e),
         children: [(0, a.jsx)(s.Rny, {
           children: (0, a.jsx)("div", {
-            className: f.authorNameWrapper,
+            className: b.authorNameWrapper,
             children: (0, a.jsx)(p.Z, {
-              className: f.authorName,
+              className: b.authorName,
               message: t,
               channel: n
             })
           })
         }), (0, a.jsx)(d.Z, {
           timestamp: t.timestamp,
-          className: f.timestamp,
+          className: b.timestamp,
           tooltipPosition: "bottom"
         })]
       })]
@@ -58,8 +58,8 @@ function h(e) {
     onClose: o
   } = e, c = null === (t = n.sourceMetadata) || void 0 === t ? void 0 : t.message;
   return (0, a.jsxs)("div", {
-    className: f.topBar,
-    children: [null != c && (0, a.jsx)(b, {
+    className: b.topBar,
+    children: [null != c && (0, a.jsx)(O, {
       message: c
     }), (0, a.jsx)(_.Z, {
       item: n,
@@ -69,8 +69,8 @@ function h(e) {
       children: e => (0, a.jsx)(y.Z, {
         onClick: o,
         icon: s.Dio,
-        tooltip: O.NW.string(O.t.cpT0Cg),
-        className: i()(f.closeButton, e)
+        tooltip: f.NW.string(f.t.cpT0Cg),
+        className: i()(b.closeButton, e)
       })
     })]
   })

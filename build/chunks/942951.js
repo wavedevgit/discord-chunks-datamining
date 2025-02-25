@@ -1,4 +1,4 @@
-/** Chunk was on 80237 **/
+/** Chunk was on 94698 **/
 "use strict";
 n.d(t, {
   l: () => b
@@ -7,11 +7,11 @@ var r = n(200651),
   o = n(192379),
   c = n(481060),
   i = n(100527),
-  l = n(906732),
-  a = n(184301),
+  a = n(906732),
+  l = n(184301),
   d = n(347475),
-  u = n(592125),
-  s = n(91047);
+  s = n(592125),
+  u = n(91047);
 
 function _(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -54,27 +54,27 @@ function b(e) {
     stopPropagation: g = !1,
     ariaLabel: h
   } = e, {
-    analyticsLocations: v
-  } = (0, l.ZP)(i.Z.USERNAME), m = o.useCallback(e => {
-    let r = u.Z.getChannel(n);
-    null != r && null != t && (0, s.Pv)(e, t, r)
+    analyticsLocations: m
+  } = (0, a.ZP)(i.Z.USERNAME), v = o.useCallback(e => {
+    let r = s.Z.getChannel(n);
+    null != r && null != t && (0, u.Pv)(e, t, r)
   }, [t, n]);
   return o.useCallback(e => (o, i) => {
-    let u = t => (0, r.jsx)(c.rz2, f(_({}, null != t ? t : {}), {
-        onContextMenu: m,
+    let s = t => (0, r.jsx)(c.rz2, f(_({}, null != t ? t : {}), {
+        onContextMenu: v,
         name: o,
         color: null == e ? void 0 : e.colorString,
         roleName: null == e ? void 0 : e.colorRoleName,
         "aria-label": h
       })),
-      s = e => t => {
+      u = e => t => {
         g && t.stopPropagation(), e(t)
       };
-    return (0, r.jsx)(l.Gt, {
-      value: v,
+    return (0, r.jsx)(a.Gt, {
+      value: m,
       children: null != t ? (0, r.jsx)(c.yRy, {
         position: "right",
-        preload: () => (0, a.Z)(t.id, t.getAvatarURL(b, 80), {
+        preload: () => (0, l.Z)(t.id, t.getAvatarURL(b, 80), {
           guildId: b,
           channelId: n
         }),
@@ -103,11 +103,11 @@ function b(e) {
             }
             return o
           }(e, ["onClick"]);
-          return u(_({
-            onClick: s(t)
+          return s(_({
+            onClick: u(t)
           }, n))
         }
-      }) : u(void 0)
+      }) : s(void 0)
     }, i)
-  }, [v, t, n, b, p, m, g, h])
+  }, [m, t, n, b, p, v, g, h])
 }

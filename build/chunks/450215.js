@@ -36,7 +36,7 @@ function y(e) {
     groupListingId: E,
     onBeforeDispatchNewListing: S,
     onAfterDispatchNewListing: T
-  } = e, [P, w] = i.useState(l), R = (0, c.e7)([h.Z], () => h.Z.getSubscriptionListing(P)), D = null == R, [Z, A] = i.useState(D), k = null == R ? void 0 : R.subscription_plans[0], W = null !== (t = null == R ? void 0 : R.published) && void 0 !== t && t, L = null !== (n = null == R ? void 0 : R.archived) && void 0 !== n && n, M = !L && !W && void 0 !== R, U = void 0 === R, G = (0, f.mY)(), [B] = x._T(P), [F] = x.mR(P), [z] = x.PK(P), [H] = x.d9(P, 1024), V = "" !== B ? B : _.NW.string(_.t.QWhe9P), Y = "" !== B && null != H && "" !== z && null != F && !G, K = x.rU(P), {
+  } = e, [P, w] = i.useState(l), R = (0, c.e7)([h.Z], () => h.Z.getSubscriptionListing(P)), D = null == R, [Z, A] = i.useState(D), k = null == R ? void 0 : R.subscription_plans[0], W = null !== (t = null == R ? void 0 : R.published) && void 0 !== t && t, L = null !== (n = null == R ? void 0 : R.archived) && void 0 !== n && n, M = !L && !W && void 0 !== R, G = void 0 === R, U = (0, f.mY)(), [B] = x._T(P), [F] = x.mR(P), [z] = x.PK(P), [H] = x.d9(P, 1024), V = "" !== B ? B : _.NW.string(_.t.QWhe9P), Y = "" !== B && null != H && "" !== z && null != F && !U, K = x.rU(P), {
     loading: q,
     error: X,
     handleCreateOrUpdateFromEditState: Q
@@ -79,7 +79,7 @@ function y(e) {
             color: (0, u.Lq)(v.Ilk.PRIMARY_500),
             text: _.NW.string(_.t.nhbtEh),
             className: O.archivedBadge
-          }), U && (0, r.jsx)(d.IGR, {
+          }), G && (0, r.jsx)(d.IGR, {
             color: (0, u.Lq)(v.Ilk.PRIMARY_500),
             text: _.NW.string(_.t.aiwXen),
             className: O.unsavedBadge

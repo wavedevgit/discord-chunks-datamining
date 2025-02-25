@@ -1,15 +1,15 @@
 /** Chunk was on 79477 **/
-t.d(n, {
-  Z: () => i
-}), t(47120);
-var l = t(131951);
+n.d(t, {
+  Z: () => r
+}), n(47120);
+var l = n(131951);
 
-function i() {
+function r() {
   return Object.entries(l.Z.getVideoDevices()).map(e => {
-    let [n, t] = e;
+    let [t, n] = e;
     return {
-      id: "camera:" + t.id,
-      name: t.name,
+      id: "camera:" + n.id,
+      name: n.name,
       url: ""
     }
   })

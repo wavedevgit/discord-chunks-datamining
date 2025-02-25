@@ -1,6 +1,6 @@
 /** Chunk was on 32098 **/
 n.d(t, {
-  Z: () => x
+  Z: () => C
 });
 var r = n(200651),
   i = n(192379),
@@ -34,7 +34,7 @@ let j = {
   }
 };
 
-function C(e) {
+function x(e) {
   (0, a.jW)(e, async () => {
     let {
       default: e
@@ -60,11 +60,11 @@ function C(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, a = (0, l.e7)([f.Z], () => f.Z.getGuilds()), x = i.useMemo(() => Object.values(a), [a]), P = (0, l.e7)([g.default], () => g.default.getCurrentUser()), S = i.useMemo(() => x.some(e => e.isOwner(P)), [x, P]), N = (0, o.s9z)(e => (0, o.DEQ)(e, y.PU)), {
+  } = e, a = (0, l.e7)([f.Z], () => f.Z.getGuilds()), C = i.useMemo(() => Object.values(a), [a]), P = (0, l.e7)([g.default], () => g.default.getCurrentUser()), S = i.useMemo(() => C.some(e => e.isOwner(P)), [C, P]), N = (0, o.s9z)(e => (0, o.DEQ)(e, y.PU)), {
     analyticsLocations: I
   } = (0, s.ZP)(), Z = (0, u.Q3)("CreateJoinGuildButton"), w = (0, r.jsx)(b.Z, {
     showPill: !1,
@@ -84,7 +84,7 @@ function x(e) {
       })
     },
     selected: N,
-    onContextMenu: C,
+    onContextMenu: x,
     tooltip: _.NW.string(_.t.l5WIbW),
     icon: Z ? o.oFk : o.BRu
   });

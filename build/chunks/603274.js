@@ -23,15 +23,15 @@ var i = n(120356),
   _ = n(709054),
   O = n(853856),
   j = n(981631),
-  C = n(388032),
-  x = n(430666),
+  x = n(388032),
+  C = n(430666),
   P = n(399491);
 
 function S(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: x.row,
+    className: C.row,
     children: [(0, r.jsx)(e, {
-      className: x.activityIcon,
+      className: C.activityIcon,
       color: "currentColor"
     }), (0, r.jsx)(d.Z, {
       guildId: void 0,
@@ -63,7 +63,7 @@ function N() {
       for (let t of i) e += h.Z.getParticipantCount(t, f.pV.AUDIENCE);
       return e
     }),
-    C = (0, s.Wu)([g.Z], () => g.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
+    x = (0, s.Wu)([g.Z], () => g.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
     P = (0, s.Wu)([u.ZP], () => {
       let e = u.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
@@ -74,25 +74,25 @@ function N() {
       return n
     }, [t]),
     N = (0, s.Wu)([b.default], () => P.map(e => b.default.getUser(e)), [P]),
-    I = (0, s.Wu)([b.default], () => C.map(e => b.default.getUser(e)), [C]),
-    Z = S(c.gj8, l.filter(e => !C.includes(e.id) && !P.includes(e.id))),
+    I = (0, s.Wu)([b.default], () => x.map(e => b.default.getUser(e)), [x]),
+    Z = S(c.gj8, l.filter(e => !x.includes(e.id) && !P.includes(e.id))),
     w = 0 === o.length ? null : (0, r.jsxs)("div", {
-      className: x.row,
+      className: C.row,
       children: [(0, r.jsx)(c.ewx, {
         size: "lg",
         color: "currentColor",
-        className: x.activityIcon
+        className: C.activityIcon
       }), (0, r.jsx)(d.Z, {
         guildId: void 0,
         users: o,
         max: 3
       }), (0, r.jsxs)("div", {
-        className: x.stageListenerPill,
+        className: C.stageListenerPill,
         children: [(0, r.jsx)(c.VWR, {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)(c.Text, {
-          className: x.stageListenerCount,
+          className: C.stageListenerCount,
           color: "text-normal",
           variant: "text-xs/medium",
           children: p
@@ -109,10 +109,10 @@ function N() {
 function I() {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: l()(x.row, x.rowGuildName),
+      className: l()(C.row, C.rowGuildName),
       children: (0, r.jsx)("span", {
-        className: l()(x.guildNameText, x.guildNameTextLimitedSize),
-        children: C.NW.string(C.t.wMWycn)
+        className: l()(C.guildNameText, C.guildNameTextLimitedSize),
+        children: x.NW.string(x.t.wMWycn)
       })
     }), (0, r.jsx)(N, {})]
   })

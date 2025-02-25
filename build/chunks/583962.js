@@ -24,8 +24,8 @@ var r = n(200651),
   _ = n(267642),
   O = n(624138),
   j = n(667815),
-  C = n(531572),
-  x = n(26323),
+  x = n(531572),
+  C = n(26323),
   P = n(30513),
   S = n(981631),
   N = n(388032),
@@ -101,9 +101,9 @@ let E = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     } = (0, g.ZP)(h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), {
       premiumSubscriberCount: b,
       id: O
-    } = t, E = (0, _.rF)(b, O), A = (0, _.FZ)(E, t.id), D = null == A, L = null != A ? A : E, k = (0, c.e7)([C.Z], () => {
+    } = t, E = (0, _.rF)(b, O), A = (0, _.FZ)(E, t.id), D = null == A, L = null != A ? A : E, k = (0, c.e7)([x.Z], () => {
       var e;
-      return null !== (e = C.Z.getCountForGuild(O)) && void 0 !== e ? e : 0
+      return null !== (e = x.Z.getCountForGuild(O)) && void 0 !== e ? e : 0
     }), M = (0, c.e7)([v.Z], () => v.Z.can(S.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
       k !== b && (0, j.v)(O, b)
@@ -129,7 +129,7 @@ let E = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
           },
           guild_id: O,
           location_stack: u
-        }), (0, x.Z)({
+        }), (0, C.Z)({
           analyticsLocations: u,
           analyticsSourceLocation: {
             page: S.ZY5.GUILD_CHANNEL,

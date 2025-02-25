@@ -236,7 +236,7 @@ function L(e) {
         className: C,
         closeOnSelect: M,
         maxVisibleItems: l,
-        width: null != f ? f : Y,
+        width: "auto" === f ? void 0 : null != f ? f : Y,
         isSelected: k,
         closePopout: n,
         buttonHeight: null != K ? K : 0,

@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => U
+  Z: () => G
 }), n(47120), n(266796), n(566702), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -85,8 +85,8 @@ let L = "WELCOME_CHANNEL",
       P = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
       w = null != S && T.Uu(R.Plq.VIEW_CHANNEL, S),
       M = null !== (t = (0, x.KS)(S)) && void 0 !== t ? t : m.VL1,
-      U = (0, b.ZP)(S, !1),
-      [, G] = (0, c.c)({
+      G = (0, b.ZP)(S, !1),
+      [, U] = (0, c.c)({
         type: L,
         item: {
           channel: o,
@@ -105,9 +105,9 @@ let L = "WELCOME_CHANNEL",
           f(e.channel, v, !0)
         }
       });
-    return i.useLayoutEffect(() => (G(B(y)), () => {
-      G(null), B(null)
-    }), [G, B]), s = w ? null != P || null != o.emoji_name ? (0, r.jsx)(g.Z, {
+    return i.useLayoutEffect(() => (U(B(y)), () => {
+      U(null), B(null)
+    }), [U, B]), s = w ? null != P || null != o.emoji_name ? (0, r.jsx)(g.Z, {
       emojiId: null == P ? void 0 : P.id,
       emojiName: null != P ? P.name : o.emoji_name,
       animated: !!(null == P ? void 0 : P.animated)
@@ -155,7 +155,7 @@ let L = "WELCOME_CHANNEL",
             size: "xxs",
             color: "currentColor"
           }), (0, r.jsx)("span", {
-            children: w ? U : Z.NW.string(Z.t.zFuCsL)
+            children: w ? G : Z.NW.string(Z.t.zFuCsL)
           })]
         })]
       }), (0, r.jsx)(m.zxk, {
@@ -182,7 +182,7 @@ let L = "WELCOME_CHANNEL",
       })]
     })
   },
-  U = e => {
+  G = e => {
     let {
       guild: t,
       showCreateModal: s
@@ -197,11 +197,11 @@ let L = "WELCOME_CHANNEL",
       null != t && C !== l.description && ((0, O.Es)(t.id, {
         description: null == C ? void 0 : C.trim()
       }), b(!0))
-    }, U = e => {
+    }, G = e => {
       null != t && (o()(e, l.channels) || ((0, O.Es)(t.id, {
         channels: e
       }), b(!0)))
-    }, G = e => {
+    }, U = e => {
       null != t && e !== l.enabled && ((0, O.Es)(t.id, {
         enabled: e
       }), j(!c), b(!0))
@@ -210,21 +210,21 @@ let L = "WELCOME_CHANNEL",
       let t = [...null != I ? I : [], e];
       (0, O.VP)({
         channels: t
-      }), U(t)
+      }), G(t)
     }, F = e => t => {
       let n = [...null != I ? I : []];
       null == t ? n.splice(e, 1) : n[e] = t, (0, O.VP)({
         channels: n
-      }), U(n), 0 === n.length && T && ((0, O.VP)({
+      }), G(n), 0 === n.length && T && ((0, O.VP)({
         enabled: !1
-      }), G(!1))
+      }), U(!1))
     }, z = (e, t, n) => {
       if (null == I) return;
       let r = I.indexOf(e),
         i = [...I];
       null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, O.VP)({
         channels: i
-      })), n ? (U(i), p(null)) : p(t)
+      })), n ? (G(i), p(null)) : p(t)
     }, H = i.useRef(!1);
     (0, h.ZP)(() => (null != t && s && (0, m.ZDy)(async () => {
       let {
@@ -294,7 +294,7 @@ let L = "WELCOME_CHANNEL",
           })
         },
         onToggle: T || (null == I ? void 0 : I.length) !== 0 ? () => {
-          G(!T)
+          U(!T)
         } : void 0,
         animateStatus: x,
         firstLine: T ? Z.NW.string(Z.t.JbB7Qk) : Z.NW.string(Z.t["/bd0Qk"]),

@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => U
+  Z: () => G
 }), n(47120), n(566702), n(266796), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -299,7 +299,7 @@ function M(e) {
   }, "bans-header")
 }
 
-function U() {
+function G() {
   var e, t;
   let {
     guild: s,
@@ -318,33 +318,33 @@ function U() {
       null != e && I(t)(e) && r.push(e)
     }
     return r
-  }, [I]), T = i.useMemo(() => S(x, u, j), [x, S, u, j]), D = null != x, k = T.length % 1e3 == 0 && T.length > 0 && D, W = 0 === T.length, [U, G] = i.useState({
+  }, [I]), T = i.useMemo(() => S(x, u, j), [x, S, u, j]), D = null != x, k = T.length % 1e3 == 0 && T.length > 0 && D, W = 0 === T.length, [G, U] = i.useState({
     currentPage: 1,
     pageSize: 100
   });
   i.useEffect(() => {
-    b && 1 !== U.currentPage && G(e => A(Z({}, e), {
+    b && 1 !== G.currentPage && U(e => A(Z({}, e), {
       currentPage: 1
     }))
-  }, [b, U.currentPage]);
+  }, [b, G.currentPage]);
   let B = i.useCallback(e => {
       m.Z.fetchGuildBansBatch(O, 1e3, e)
     }, [O]),
-    F = i.useMemo(() => o().chunk(T, U.pageSize), [U.pageSize, T]),
+    F = i.useMemo(() => o().chunk(T, G.pageSize), [G.pageSize, T]),
     z = i.useCallback(e => {
       var t, n, r;
-      null === (t = C.current) || void 0 === t || t.scrollToSectionTop(0), (e + 1) * U.pageSize > T.length && k && !p && (H.current = null !== (r = null === (n = T[T.length - 1]) || void 0 === n ? void 0 : n.id) && void 0 !== r ? r : null, B(H.current)), (null != F[e - 1] || k) && G(t => A(Z({}, t), {
+      null === (t = C.current) || void 0 === t || t.scrollToSectionTop(0), (e + 1) * G.pageSize > T.length && k && !p && (H.current = null !== (r = null === (n = T[T.length - 1]) || void 0 === n ? void 0 : n.id) && void 0 !== r ? r : null, B(H.current)), (null != F[e - 1] || k) && U(t => A(Z({}, t), {
         currentPage: e
       }))
-    }, [U.pageSize, T, k, F, B, p]),
+    }, [G.pageSize, T, k, F, B, p]),
     H = i.useRef(null);
   i.useEffect(() => {
     B(H.current)
   }, [B]);
   let V = i.useMemo(() => {
     var e;
-    return null !== (e = F[U.currentPage - 1]) && void 0 !== e ? e : []
-  }, [F, U.currentPage]);
+    return null !== (e = F[G.currentPage - 1]) && void 0 !== e ? e : []
+  }, [F, G.currentPage]);
   return null == s ? null : (0, r.jsxs)("div", {
     className: a()(R.container),
     children: [(0, r.jsx)(M, {
@@ -377,9 +377,9 @@ function U() {
       className: a()(R.__invalid_paginationContainer),
       children: (0, r.jsx)(d.DsT, {
         className: a()(R.paginationInput),
-        totalCount: T.length + (k ? U.pageSize : 0),
-        pageSize: U.pageSize,
-        currentPage: U.currentPage,
+        totalCount: T.length + (k ? G.pageSize : 0),
+        pageSize: G.pageSize,
+        currentPage: G.currentPage,
         onPageChange: z,
         maxVisiblePages: 9
       })

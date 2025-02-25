@@ -38,7 +38,7 @@ function v() {
     }), (0, a.ZD)(async () => {
       let {
         AnnouncementModal: e
-      } = await n.e("3073").then(n.bind(n, 520156));
+      } = await n.e("54663").then(n.bind(n, 520156));
       return function(t) {
         let {
           onClose: n,

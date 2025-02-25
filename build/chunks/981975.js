@@ -116,7 +116,7 @@ function w(e) {
     }), (0, f.d_)(n.id, T(r, k))
   }
 
-  function U() {
+  function G() {
     u.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
       onComplete: e => M(e),
@@ -125,9 +125,9 @@ function w(e) {
       onCompleteApplication: e => M(O.Kt, e)
     })
   }
-  let G = null;
-  if (0 === W.length) G = (0, r.jsx)(P, {
-    handleAddVerificationClicked: U,
+  let U = null;
+  if (0 === W.length) U = (0, r.jsx)(P, {
+    handleAddVerificationClicked: G,
     locked: s
   });
   else if (W.length > 0) {
@@ -138,7 +138,7 @@ function w(e) {
       size: d.zxk.Sizes.LARGE,
       look: d.zxk.Looks.BLANK,
       color: d.zxk.Colors.LINK,
-      onClick: U,
+      onClick: G,
       disabled: s,
       children: (0, r.jsxs)("div", {
         className: C.addVerificationButtonAppendTextContainer,
@@ -147,7 +147,7 @@ function w(e) {
           color: "currentColor"
         }), y.NW.string(y.t["OSvW5+"])]
       })
-    })), G = (0, r.jsxs)(r.Fragment, {
+    })), U = (0, r.jsxs)(r.Fragment, {
       children: [(B = () => (0, f.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: C.headerTitleContainer,
@@ -287,7 +287,7 @@ function w(e) {
           color: "text-normal",
           children: y.NW.string(y.t["2aFeeX"])
         })]
-      }) : null, G]
+      }) : null, U]
     })
   })
 }

@@ -38,7 +38,7 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
     } = e, c = (0, O.YB)(s.id), {
       loading: u,
       updateSubscriptionsSettings: N
-    } = (0, O.QV)(), [_, P] = i.useState(s.hasFeature(y.oNc.CREATOR_STORE_PAGE)), [w, R] = i.useState(null !== (t = null == c ? void 0 : c.store_page_primary_color) && void 0 !== t ? t : T), [D, Z] = i.useState(null == c ? void 0 : c.store_page_trailer_url), A = null == D || null != D.match(S), [k, W] = i.useState(null !== (n = null == c ? void 0 : c.store_page_show_subscriber_count) && void 0 !== n && n), L = i.useRef(null == c ? void 0 : c.store_page_slug).current, M = _ !== s.hasFeature(y.oNc.CREATOR_STORE_PAGE) || (null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color) || D !== (null == c ? void 0 : c.store_page_trailer_url) || null != k && k !== (null == c ? void 0 : c.store_page_show_subscriber_count), U = async () => {
+    } = (0, O.QV)(), [_, P] = i.useState(s.hasFeature(y.oNc.CREATOR_STORE_PAGE)), [w, R] = i.useState(null !== (t = null == c ? void 0 : c.store_page_primary_color) && void 0 !== t ? t : T), [D, Z] = i.useState(null == c ? void 0 : c.store_page_trailer_url), A = null == D || null != D.match(S), [k, W] = i.useState(null !== (n = null == c ? void 0 : c.store_page_show_subscriber_count) && void 0 !== n && n), L = i.useRef(null == c ? void 0 : c.store_page_slug).current, M = _ !== s.hasFeature(y.oNc.CREATOR_STORE_PAGE) || (null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color) || D !== (null == c ? void 0 : c.store_page_trailer_url) || null != k && k !== (null == c ? void 0 : c.store_page_show_subscriber_count), G = async () => {
       o()(null != c, "Settings must be defined");
       let e = {};
       _ !== s.hasFeature(y.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = _), ((null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color)) && (e.store_page_primary_color = w), D !== (null == c ? void 0 : c.store_page_trailer_url) && (e.store_page_trailer_url = D), k !== (null == c ? void 0 : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = k), !d().isEmpty(e) && (await N(s.id, e), "store_page_enabled" in e && v.default.track(y.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
@@ -61,7 +61,7 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
       }({
         enabled: _
       }, (0, x.hH)(s.id))))
-    }, G = y.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(L), B = null != D && D === (null == c ? void 0 : c.store_page_trailer_url), {
+    }, U = y.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(L), B = null != D && D === (null == c ? void 0 : c.store_page_trailer_url), {
       shouldRestrictUpdatingCreatorMonetizationSettings: F
     } = (0, j.gX)(s.id), z = F || !A;
     return (0, r.jsxs)("div", {
@@ -87,12 +87,12 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         title: C.NW.string(C.t.N46WOj),
         disabled: F,
         children: [(0, r.jsx)(h.Z, {
-          value: G,
+          value: U,
           className: a()({
             [I.disabled]: F
           })
         }), (0, r.jsx)(g.zxk, {
-          onClick: () => (0, b.Z)(G),
+          onClick: () => (0, b.Z)(U),
           className: I.openPageButton,
           disabled: F,
           children: C.NW.string(C.t.CaOYqa)
@@ -202,7 +202,7 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
               var e, t;
               P(s.hasFeature(y.oNc.CREATOR_STORE_PAGE)), R(null !== (e = null == c ? void 0 : c.store_page_primary_color) && void 0 !== e ? e : T), Z(null == c ? void 0 : c.store_page_trailer_url), W(null !== (t = null == c ? void 0 : c.store_page_show_subscriber_count) && void 0 !== t && t)
             },
-            onSave: U,
+            onSave: G,
             disabled: z
           })
         })

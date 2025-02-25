@@ -615,7 +615,7 @@ let ev = i.memo(e => {
           tooltipText: E ? es.NW.string(es.t.YqAjX1) : es.NW.string(es.t["w4m94+"]),
           icon: E ? c.OyP : c.gj8,
           hidden: k
-        }), !_ && (0, n.jsx)(ef, {
+        }), (0, n.jsx)(ef, {
           onClick: e => {
             e.stopPropagation(), A(!0), h(e, !0, et.A5.THREE_DOT)
           },

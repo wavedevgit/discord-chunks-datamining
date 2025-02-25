@@ -1,8 +1,8 @@
 /** Chunk was on 93382 **/
 l.d(t, {
-  Z: () => s
+  Z: () => r
 });
-let s = (0, l(818083).B)({
+let r = (0, l(818083).B)({
   kind: "user",
   id: "2023-06_golive_capture_card",
   label: "GoLive Capture Card Support",

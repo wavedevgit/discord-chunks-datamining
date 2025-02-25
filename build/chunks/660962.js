@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  ZP: () => U
+  ZP: () => G
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -193,7 +193,7 @@ function M(e) {
   })
 }
 
-function U(e) {
+function G(e) {
   let {
     guild: t,
     role: n,

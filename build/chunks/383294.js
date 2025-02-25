@@ -144,7 +144,7 @@ function p(e) {
       }
       return "loading"
     }(i.id, m.location),
-    f = a.useCallback(() => {
+    g = a.useCallback(() => {
       R(), (0, l.mK)({
         openInLayer: !1,
         tab: _.AW.ORBS,
@@ -173,7 +173,7 @@ function p(e) {
     rewardAmount: O,
     balance: p,
     onClose: R,
-    onSubmit: f,
+    onSubmit: g,
     state: b
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

@@ -136,9 +136,9 @@ let I = [{
       for (let e = 0; e < N.ym.length; e++)
         if (N.ym[e].primary === s.brandPrimaryColor && N.ym[e].secondary === s.brandSecondaryColor) return 2 + e;
       return 0
-    }, [T, P, w, R, s.brandPrimaryColor, s.brandSecondaryColor]), [W, L] = i.useState(!1), M = 0 === k, U = 1 === k, G = i.useMemo(() => {
+    }, [T, P, w, R, s.brandPrimaryColor, s.brandSecondaryColor]), [W, L] = i.useState(!1), M = 0 === k, G = 1 === k, U = i.useMemo(() => {
       if (M) return A;
-      if (U) return {
+      if (G) return {
         primary: null != w ? w : j.Nh,
         secondary: null != R ? R : j.vY
       };
@@ -149,7 +149,7 @@ let I = [{
           secondary: e.secondary
         }
       }
-    }, [A, U, M, w, R, k]), B = i.useCallback(() => {
+    }, [A, G, M, w, R, k]), B = i.useCallback(() => {
       let e = I[Math.floor(Math.random() * I.length)].bannerKind;
       n({
         banner: e,
@@ -160,10 +160,10 @@ let I = [{
     i.useEffect(() => {
       n({
         banner: S,
-        brandPrimaryColor: G.primary,
-        brandSecondaryColor: G.secondary
+        brandPrimaryColor: U.primary,
+        brandSecondaryColor: U.secondary
       })
-    }, [n, S, G.primary, G.secondary]);
+    }, [n, S, U.primary, U.secondary]);
     let F = i.useMemo(() => {
       var e, t, n;
       return C(y({}, s), {
@@ -180,15 +180,15 @@ let I = [{
           secondaryColor: null != R ? R : N.K_
         },
         branding: {
-          primaryColor: null !== (t = G.primary) && void 0 !== t ? t : N.OH,
-          secondaryColor: null !== (n = G.secondary) && void 0 !== n ? n : N.K_
+          primaryColor: null !== (t = U.primary) && void 0 !== t ? t : N.OH,
+          secondaryColor: null !== (n = U.secondary) && void 0 !== n ? n : N.K_
         },
         gameActivity: Array.from(s.gameApplicationIds).reduce((e, t) => (e[t] = {
           level: c.m.HIGH,
           score: 0
         }, e), {})
       })
-    }, [s, l, D, Z, S, w, R, G]);
+    }, [s, l, D, Z, S, w, R, U]);
     return (0, r.jsxs)("div", {
       className: O.slideContent,
       children: [(0, r.jsx)(m.X6q, {
@@ -311,8 +311,8 @@ let I = [{
           children: (0, r.jsx)(h.x, {
             bannerComponent: (0, r.jsx)(f.Z, {
               banner: S,
-              primaryTintColor: G.primary,
-              secondaryTintColor: G.secondary,
+              primaryTintColor: U.primary,
+              secondaryTintColor: U.secondary,
               className: _.clanBannerPreview
             }),
             clan: F

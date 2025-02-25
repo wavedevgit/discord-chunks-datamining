@@ -46,12 +46,12 @@ let y = e => {
     notClaimed: _,
     notEmailVerified: O,
     notPhoneVerified: j,
-    newAccount: C,
-    newMember: x
+    newAccount: x,
+    newMember: C
   } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), P = 0 === t ? g.NW.string(g.t["6zY8BA"]) : null, S = null, N = null;
-  return (0 === t && (_ ? (S = g.NW.string(g.t.IRxUlJ), N = g.NW.string(g.t.fiNVio)) : j ? (S = g.NW.string(g.t.vW8iUF), N = g.NW.string(g.t["50gfOj"])) : O ? (S = g.NW.string(g.t.vdSOp6), N = g.NW.string(g.t.lm1UKi)) : x ? (S = g.NW.formatToPlainString(g.t.v1ktYW, {
+  return (0 === t && (_ ? (S = g.NW.string(g.t.IRxUlJ), N = g.NW.string(g.t.fiNVio)) : j ? (S = g.NW.string(g.t.vW8iUF), N = g.NW.string(g.t["50gfOj"])) : O ? (S = g.NW.string(g.t.vdSOp6), N = g.NW.string(g.t.lm1UKi)) : C ? (S = g.NW.formatToPlainString(g.t.v1ktYW, {
     min: h.YeM.MEMBER_AGE
-  }), N = g.NW.string(g.t.BddRzc)) : C && (S = g.NW.formatToPlainString(g.t["sncw4+"], {
+  }), N = g.NW.string(g.t.BddRzc)) : x && (S = g.NW.formatToPlainString(g.t["sncw4+"], {
     min: h.YeM.ACCOUNT_AGE
   }), N = g.NW.string(g.t.BddRzc))), null == P || null == S) ? null : (0, i.jsxs)(o.VqE, {
     className: m.container,

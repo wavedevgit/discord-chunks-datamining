@@ -107,10 +107,10 @@ function E(e) {
     }, {
       modalKey: C
     }) : S()
-  }, [t, T, S, s, k, A]), L = x.Lo(D), M = i.useCallback(() => D.forEach(x.GM), [D]), U = (0, b.mY)(), G = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
-  return i.useEffect(() => (G === N.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && W(), () => {
+  }, [t, T, S, s, k, A]), L = x.Lo(D), M = i.useCallback(() => D.forEach(x.GM), [D]), G = (0, b.mY)(), U = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
+  return i.useEffect(() => (U === N.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && W(), () => {
     (0, d.Mr3)(C)
-  }), [G, W]), (0, r.jsxs)(r.Fragment, {
+  }), [U, W]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: _.groupListings,
       children: [D.map(e => (0, r.jsx)(j.Z, {
@@ -123,11 +123,11 @@ function E(e) {
         onBeforeDispatchNewListing: t => Z(t.id, e),
         onAfterDispatchNewListing: () => P(e)
       }, e)), (0, r.jsxs)(d.P3F, {
-        onClick: U ? void 0 : W,
+        onClick: G ? void 0 : W,
         className: a()(_.createTierButton, {
-          [_.disabled]: U
+          [_.disabled]: G
         }),
-        "aria-disabled": U,
+        "aria-disabled": G,
         children: [(0, r.jsx)(d.oFk, {
           size: "xs",
           color: "currentColor",

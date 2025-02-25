@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(774343),
   O = n(417363),
   j = n(941128),
-  C = n(780570),
-  x = n(278464),
+  x = n(780570),
+  C = n(278464),
   P = n(276952),
   S = n(682662),
   N = n(662146),
@@ -54,12 +54,12 @@ function R(e) {
     badge: b,
     link: v,
     showProgressBadge: y
-  } = e, _ = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [O, j] = i.useState(!1), [C, x] = i.useState(!1), [w, R] = i.useState(null), [L, k] = i.useState(0), M = (0, l.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), B = () => {
+  } = e, _ = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [O, j] = i.useState(!1), [x, C] = i.useState(!1), [w, R] = i.useState(null), [L, k] = i.useState(0), M = (0, l.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), B = () => {
     R(null), k(0), clearTimeout(w)
   };
   if (null == f) return null;
   let U = T.NW.string(T.t.YUU0RE);
-  C && (U = a.K.get(Z.wli) ? T.NW.string(T.t.nkq1l5) : T.NW.string(T.t.Be8Q5O));
+  x && (U = a.K.get(Z.wli) ? T.NW.string(T.t.nkq1l5) : T.NW.string(T.t.Be8Q5O));
   let W = null;
   !h && y && (W = (0, r.jsx)(c.Z, {
     className: A.downloadProgress,
@@ -97,8 +97,8 @@ function R(e) {
           if (!__OVERLAY__ && (null != w && clearTimeout(w), R(setTimeout(B, 500)), k(L + 1), 15 === L)) {
             B();
             let e = !a.K.get(Z.wli);
-            a.K.set(Z.wli, e), e && a.K.set(E.O5, !0), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), x(!0), setTimeout(() => {
-              x(!1)
+            a.K.set(Z.wli, e), e && a.K.set(E.O5, !0), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), C(!0), setTimeout(() => {
+              C(!1)
             }, 1e3)
           }
         },
@@ -151,14 +151,14 @@ function R(e) {
 }
 
 function L() {
-  let e = (0, x.n)(),
+  let e = (0, C.n)(),
     t = (0, o.e7)([j.Z, O.Z], () => {
       let e = (0, c.E)(j.Z.activeItems, O.Z),
         {
           total: t,
           progress: n
-        } = C.lK(e),
-        r = C.xI(n, t);
+        } = x.lK(e),
+        r = x.xI(n, t);
       return r > 0 && r < 100
     }),
     n = (0, f.If)(),

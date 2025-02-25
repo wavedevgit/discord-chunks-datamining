@@ -1,6 +1,6 @@
 /**
   Module ID: 71567
-  Original File Name: dfe541fe935f87e6
+  Original File Name: 03ca64536f21b508
 **/
 .popoutContainer_a6cedd {
     display: flex;
@@ -11171,6 +11171,15 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     height: 16px
 }
 
+.upsellButton__2717a {
+    display: flex;
+    align-items: center
+}
+
+.premiumUpsellBadge__2717a {
+    margin-right: 4px
+}
+
 .header__6e6ad {
     display: flex;
     flex-direction: column;
@@ -11213,13 +11222,20 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     color: var(--white-500)
 }
 
-.upsellButton__2717a {
-    display: flex;
-    align-items: center
+.upsell__0969c {
+    cursor: pointer
 }
 
-.premiumUpsellBadge__2717a {
-    margin-right: 4px
+.guildFeatureAvailabilityIndicator__956b8 {
+    background-color: var(--background-secondary-alt);
+    padding: 1px 2px;
+    border-radius: var(--radius-lg);
+    margin-left: 4px;
+    height: 18px
+}
+
+.upsell__0e5b1 {
+    cursor: pointer
 }
 
 .flexRow__0982b {
@@ -12748,6 +12764,33 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     margin-bottom: 20px
 }
 
+.container__68f37 {
+    display: flex;
+    flex-direction: row;
+    gap: 32px
+}
+
+.column__68f37 {
+    flex-basis: 50%
+}
+
+.title__68f37 {
+    display: flex;
+    align-items: center
+}
+
+.text__68f37 {
+    margin-bottom: 8px
+}
+
+.button__68f37 {
+    margin-top: 16px
+}
+
+.upsell__68f37 {
+    cursor: pointer
+}
+
 .container__11c5f {
     display: flex;
     flex-direction: row;
@@ -13605,4 +13648,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=dfe541fe935f87e6.css.map*/
+/*# sourceMappingURL=03ca64536f21b508.css.map*/

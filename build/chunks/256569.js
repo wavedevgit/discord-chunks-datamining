@@ -110,11 +110,11 @@ function f(e) {
   }, [s, k, D, W]), i.useEffect(() => {
     !W && c(R)
   }, [c, R, W]);
-  let U = i.useCallback(function() {
+  let G = i.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
       e && M(), L(!1)
     }, [M]),
-    G = i.useCallback(e => t => {
+    U = i.useCallback(e => t => {
       if (t) {
         var n;
         let t = Z.includes(D[e]);
@@ -138,8 +138,8 @@ function f(e) {
       children: [D.map((e, t) => (0, r.jsx)(d.Z, {
         value: e,
         onChange: E(t),
-        onBlur: U,
-        onFocus: G(t),
+        onBlur: G,
+        onFocus: U(t),
         onRemove: () => I(t),
         isSelected: Z.includes(e),
         isSelecting: A,

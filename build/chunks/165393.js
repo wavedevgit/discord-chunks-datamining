@@ -25,22 +25,27 @@ function h(e) {
   var t;
   let {
     title: n,
-    className: l
-  } = e, [a, d] = i.useState(p(n));
+    className: l,
+    icon: a
+  } = e, [d, h] = i.useState(p(n));
   return i.useEffect(() => {
-    d(p(n))
+    h(p(n))
   }, [n]), (0, r.jsxs)("div", {
     className: o()(u.wrapper, l),
     children: [(0, r.jsx)(c.ZP, {
       mask: c.ZP.Masks.STATUS_SCREENSHARE,
       width: 32,
       height: 32,
-      children: (0, r.jsx)("div", {
+      children: null == a || 0 === a.length ? (0, r.jsx)("div", {
         className: u.icon,
         style: {
-          backgroundColor: a
+          backgroundColor: d
         },
         children: null !== (t = n[0]) && void 0 !== t ? t : "?"
+      }) : (0, r.jsx)("img", {
+        alt: "",
+        src: a,
+        className: u.icon
       })
     }), (0, r.jsx)(s.Odl, {
       size: "md",

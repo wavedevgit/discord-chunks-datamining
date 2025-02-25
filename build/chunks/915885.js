@@ -31,12 +31,12 @@ function y(e) {
       limit: h.p
     })
   }, [_, t, y]);
-  let C = i.useCallback(() => {
+  let x = i.useCallback(() => {
       (0, m._X)(t.id)
     }, [t.id]),
-    x = (0, s.XL)(t.id, o.z.MEMBERS_LAUNCH_UPSELL);
+    C = (0, s.XL)(t.id, o.z.MEMBERS_LAUNCH_UPSELL);
   return (0, r.jsx)("div", {
-    ref: x,
+    ref: C,
     children: (0, r.jsx)(f.m, {
       id: "members-".concat(t.id),
       renderIcon: e => (0, r.jsx)(a.BFJ, {
@@ -46,7 +46,7 @@ function y(e) {
       }),
       text: v.NW.string(v.t.oclz3d),
       selected: n,
-      onClick: C,
+      onClick: x,
       trailing: j > 0 ? (0, r.jsx)(a.mAB, {
         count: j
       }) : null

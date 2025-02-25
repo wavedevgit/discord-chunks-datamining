@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(317381),
   O = n(736409),
   j = n(835473),
-  C = n(413523),
-  x = n(933557),
+  x = n(413523),
+  C = n(933557),
   P = n(194082),
   S = n(550532),
   N = n(436774),
@@ -137,7 +137,8 @@ class es extends i.PureComponent {
     return (0, r.jsxs)("div", {
       className: ei.gameWrapper,
       children: [e ? (0, r.jsx)(A.Z, {
-        title: l
+        title: l,
+        icon: null == t ? void 0 : t.sourceIcon
       }) : (0, r.jsx)(P.ZP, {
         look: P.ZP.Looks.GRAY,
         size: P.ZP.Sizes.SMALL,
@@ -250,7 +251,7 @@ class es extends i.PureComponent {
         channel: t,
         embeddedActivity: n
       } = this.props;
-      s()(null != t, "Channel is null during navigation click"), s()(null != n, "Activity null during navigation click"), h.Z.channelListScrollTo(null !== (e = t.guild_id) && void 0 !== e ? e : en.ME, t.id), !(0, b.R)() && ((0, M.vd)(t.type) && p.Z.selectParticipant(t.id, (0, C.gN)({
+      s()(null != t, "Channel is null during navigation click"), s()(null != n, "Activity null during navigation click"), h.Z.channelListScrollTo(null !== (e = t.guild_id) && void 0 !== e ? e : en.ME, t.id), !(0, b.R)() && ((0, M.vd)(t.type) && p.Z.selectParticipant(t.id, (0, x.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
       })), (0, M.Qm)(t.type) && (0, y.tg)(er.Ez.PANEL))
@@ -284,23 +285,23 @@ let ec = (0, g.Z)(function(e) {
     f = (0, c.e7)([V.Z], () => V.Z.getGuild(null == h ? void 0 : h.guild_id)),
     [g, y] = (0, c.Wu)([G.Z], () => [G.Z.getCurrentUserActiveStream(), G.Z.getStreamerActiveStreamMetadata()]),
     O = (0, c.e7)([m.Z], () => m.Z.useReducedMotion),
-    C = (0, c.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()),
+    x = (0, c.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()),
     P = (0, c.e7)([V.Z, H.Z, W.ZP], () => null != d ? w.JL(d, V.Z, H.Z, !1) : null != o && w.h_(W.ZP.getChannels(o), V.Z, H.Z).length > 0),
-    [N] = (0, j.Z)([null !== (l = null != y && null != y.id ? y.id : null != u && null != u.id ? u.id : null != C ? C.applicationId : void 0) && void 0 !== l ? l : ""]),
+    [N] = (0, j.Z)([null !== (l = null != y && null != y.id ? y.id : null != u && null != u.id ? u.id : null != x ? x.applicationId : void 0) && void 0 !== l ? l : ""]),
     Z = (0, c.e7)([S.Z], () => S.Z.getFakeGameData()),
     T = (0, c.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()),
     A = (0, v.Z0)() && null != T && (0, b.R)(),
     R = (0, c.e7)([F.Z], () => (0, E.Z)(F.Z) && (0, J.isWindows)()),
     k = (0, c.e7)([z.Z], () => null != s ? z.Z.findActivity(s, e => e.type === en.IIU.PLAYING) : null),
     M = null != g && g.ownerId === s && g.state !== en.jm8.ENDED,
-    X = (0, c.e7)([Q.default, q.Z], () => null != h ? (0, x.F6)(h, Q.default, q.Z) : void 0),
+    X = (0, c.e7)([Q.default, q.Z], () => null != h ? (0, C.F6)(h, Q.default, q.Z) : void 0),
     $ = (0, L.Z)(),
     [ee, et] = i.useState(!1);
   return (0, r.jsx)(es, (t = eo({}, a), n = n = {
     guildId: o,
     canGoLive: R || A || void 0 !== Z,
     activity: k,
-    embeddedActivity: C,
+    embeddedActivity: x,
     userId: s,
     runningGame: null != Z ? Z : u,
     application: N,

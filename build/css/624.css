@@ -1,6 +1,6 @@
 /**
   Module ID: 624
-  Original File Name: 105476a4cfeaa87f
+  Original File Name: 6f60c4e23809853f
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -3715,7 +3715,8 @@ h1.title_feb59c,h2.title_feb59c {
 .container__77b6b {
     position: relative;
     width: 408px;
-    height: 96px
+    height: 96px;
+    background: hsla(0,0%,100%,.1)
 }
 
 .image__77b6b {
@@ -16982,4 +16983,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=105476a4cfeaa87f.css.map*/
+/*# sourceMappingURL=6f60c4e23809853f.css.map*/

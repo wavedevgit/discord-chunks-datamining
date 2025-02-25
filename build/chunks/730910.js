@@ -81,12 +81,12 @@ function L(e) {
   } = e, s = t.id, x = (0, o.e7)([C.Z], () => C.Z.getCurrentPage()), W = (0, E.Z)(s), {
     hasChanges: L,
     hasConfiguredAnythingForCurrentStep: M,
-    hasErrors: U
+    hasErrors: G
   } = (0, o.cj)([C.Z], () => ({
     hasChanges: C.Z.hasChanges(),
     hasConfiguredAnythingForCurrentStep: C.Z.hasConfiguredAnythingForCurrentStep(),
     hasErrors: C.Z.hasErrors()
-  })), G = (0, o.e7)([C.Z], () => {
+  })), U = (0, o.e7)([C.Z], () => {
     let e = (0, I.lg)(x);
     return null != e && !C.Z.isEducationUpsellDismissed(e)
   }), B = (0, p.ZP)(), F = i.useRef(null), [{
@@ -156,16 +156,16 @@ function L(e) {
         skip: !1
       })), await J() && (0, N.Wy)(s, x)
     }, et = null;
-  G && (x === I.PG.SAFETY_CHECK ? et = (0, r.jsx)(S.j7, {}) : x === I.PG.DEFAULT_CHANNELS ? et = (0, r.jsx)(S.Io, {}) : x === I.PG.CUSTOMIZATION_QUESTIONS ? et = (0, r.jsx)(S.cZ, {}) : x === I.PG.HOME_SETTINGS && (et = (0, r.jsx)(S.g6, {})));
+  U && (x === I.PG.SAFETY_CHECK ? et = (0, r.jsx)(S.j7, {}) : x === I.PG.DEFAULT_CHANNELS ? et = (0, r.jsx)(S.Io, {}) : x === I.PG.CUSTOMIZATION_QUESTIONS ? et = (0, r.jsx)(S.cZ, {}) : x === I.PG.HOME_SETTINGS && (et = (0, r.jsx)(S.g6, {})));
   let en = (0, r.jsx)(m.zxk, {
       className: a()(Z.button, {
-        [Z.hidden]: G
+        [Z.hidden]: U
       }),
       color: m.zxk.Colors.PRIMARY,
       look: m.zxk.Looks.OUTLINED,
       size: m.zxk.Sizes.SMALL,
       onClick: ee,
-      disabled: G || U,
+      disabled: U || G,
       children: (0, r.jsxs)("span", {
         className: Z.button,
         children: [(0, r.jsx)(h.Z, {
@@ -180,7 +180,7 @@ function L(e) {
       look: m.zxk.Looks.FILLED,
       size: m.zxk.Sizes.SMALL,
       onClick: $,
-      disabled: G || U,
+      disabled: U || G,
       children: (0, r.jsxs)(l.animated.span, {
         className: Z.button,
         style: {
@@ -204,7 +204,7 @@ function L(e) {
         children: (0, r.jsxs)("div", {
           className: Z.flexContainer,
           ref: F,
-          children: [G ? (0, r.jsxs)("div", {
+          children: [U ? (0, r.jsxs)("div", {
             className: Z.educationUpsellRoot,
             children: [(0, r.jsx)("img", {
               className: a()(Z.wumpus),
@@ -222,7 +222,7 @@ function L(e) {
               className: Z.actions,
               children: [en, (0, r.jsxs)("div", {
                 className: Z.next,
-                children: [U ? (0, r.jsx)(m.Text, {
+                children: [G ? (0, r.jsx)(m.Text, {
                   variant: "text-sm/normal",
                   color: "status-warning",
                   children: D.NW.string(D.t.DhYsPD)

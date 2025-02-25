@@ -152,7 +152,7 @@ function C(e) {
         }
       })
     }
-  }, [s, A, C, h, k, L, W, b, I]), U = i.useCallback(() => {
+  }, [s, A, C, h, k, L, W, b, I]), G = i.useCallback(() => {
     let e = e => {
         if (s.joinType === x.A.DISCOVERABLE && s.settingsView === j.U.ELIGIBLE_DISABLED) {
           (0, a.ZDy)(async () => {
@@ -204,15 +204,15 @@ function C(e) {
       }
       e()
     })(() => t(() => e(M)))
-  }, [R, M, s, E, D]), G = s.joinType === x.A.DISCOVERABLE && s.settingsView === j.U.ELIGIBLE_DISABLED, B = null != C.description && I.primaryCategoryId !== v.o3 && I.keywords.length > 0;
+  }, [R, M, s, E, D]), U = s.joinType === x.A.DISCOVERABLE && s.settingsView === j.U.ELIGIBLE_DISABLED, B = null != C.description && I.primaryCategoryId !== v.o3 && I.keywords.length > 0;
   return (0, r.jsx)(l.Z, {
-    message: G ? _.NW.string(_.t.V2G2Ym) : void 0,
-    onSaveText: G ? _.NW.string(_.t["qjtt/v"]) : void 0,
+    message: U ? _.NW.string(_.t.V2G2Ym) : void 0,
+    onSaveText: U ? _.NW.string(_.t["qjtt/v"]) : void 0,
     submitting: S,
     errorMessage: P,
     onReset: Z,
-    onSave: U,
-    disabled: G && !B
+    onSave: G,
+    disabled: U && !B
   })
 }
 

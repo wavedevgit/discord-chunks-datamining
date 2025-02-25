@@ -1,16 +1,16 @@
 /** Chunk was on 79477 **/
-t.d(n, {
+n.d(t, {
   Z: () => d
 });
-var l = t(209739),
-  i = t.n(l),
-  r = t(579806),
-  s = t(131951),
-  a = t(358085),
-  o = t(70722),
-  c = t(65154),
-  u = t(388032);
+var l = n(209739),
+  r = n.n(l),
+  s = n(579806),
+  i = n(131951),
+  a = n(358085),
+  o = n(70722),
+  c = n(65154),
+  u = n(388032);
 
 function d() {
-  return s.Z.supports(c.AN.SOUNDSHARE) ? (0, a.isWindows)() && !i().satisfies(null === r.Z || void 0 === r.Z ? void 0 : r.Z.os.release, o.I9) ? u.NW.string(u.t.voRPTE) : (0, a.isMac)() && !i().satisfies(null === r.Z || void 0 === r.Z ? void 0 : r.Z.os.release, o.Ec) ? u.NW.string(u.t.v2y9PT) : null : u.NW.string(u.t["1b0Gm5"])
+  return i.Z.supports(c.AN.SOUNDSHARE) ? (0, a.isWindows)() && !r().satisfies(null === s.Z || void 0 === s.Z ? void 0 : s.Z.os.release, o.I9) ? u.NW.string(u.t.voRPTE) : (0, a.isMac)() && !r().satisfies(null === s.Z || void 0 === s.Z ? void 0 : s.Z.os.release, o.Ec) ? u.NW.string(u.t.v2y9PT) : null : u.NW.string(u.t["1b0Gm5"])
 }

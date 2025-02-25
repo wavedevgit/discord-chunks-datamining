@@ -184,7 +184,7 @@ class M extends i.PureComponent {
   }
 }
 
-function U(e) {
+function G(e) {
   let {
     logs: t,
     guildId: n,
@@ -231,7 +231,7 @@ function U(e) {
     })
   })
 }
-class G extends i.PureComponent {
+class U extends i.PureComponent {
   componentDidMount() {
     (0, m.bY)(this.props.guildId), document.addEventListener("click", this.handleOutsideClick)
   }
@@ -335,7 +335,7 @@ class G extends i.PureComponent {
         })]
       })
     }
-    return (0, r.jsx)(U, {
+    return (0, r.jsx)(G, {
       logs: i,
       guildId: d,
       guild: m,
@@ -577,4 +577,4 @@ let B = d.ZP.connectStores([C.Z, I.Z, N.Z, f.Z, v.Z, _.default], () => {
     theme: f.Z.theme,
     hide: v.Z.enabled
   }
-})(G)
+})(U)

@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(100527),
   O = n(906732),
   j = n(358221),
-  C = n(540059),
-  x = n(706590),
+  x = n(540059),
+  C = n(706590),
   P = n(940777),
   S = n(41776),
   N = n(905423),
@@ -161,7 +161,7 @@ function es(e) {
     isOverlay: n = !1,
     className: l,
     themeOverride: a
-  } = e, s = (0, C.Q3)("GuildsBar"), {
+  } = e, s = (0, x.Q3)("GuildsBar"), {
     density: d
   } = (0, m.TCT)(), [h] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
@@ -182,7 +182,7 @@ function es(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(ey, ["ref"]), ej = (0, m.mFp)(), [eC, ex] = i.useState(!1), [eP, eS] = i.useState(!1), eN = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eI = i.useMemo(() => new ea(h, ex, eS, () => {
+  }(ey, ["ref"]), ej = (0, m.mFp)(), [ex, eC] = i.useState(!1), [eP, eS] = i.useState(!1), eN = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eI = i.useMemo(() => new ea(h, eC, eS, () => {
     var e, t;
     null === (e = eb.current) || void 0 === e || e.calculateState(), null === (t = ev.current) || void 0 === t || t.calculateState()
   }, function(e, t, n) {
@@ -262,7 +262,7 @@ function es(e) {
       }
     }, [eh, ef, ed, eI.setNodeRef]),
     eR = h.getRoots(),
-    eL = (0, x.Z)(),
+    eL = (0, C.Z)(),
     ek = (0, I.U)(),
     {
       enabled: eM
@@ -318,7 +318,7 @@ function es(e) {
               children: [(0, r.jsxs)(m.xVE, {
                 className: o()({
                   [er.scroller]: !0,
-                  [er.scrolling]: eC
+                  [er.scrolling]: ex
                 }),
                 experimental_useStack: s,
                 gap: "xs",

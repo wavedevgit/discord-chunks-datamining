@@ -27,8 +27,8 @@ function _(e, t, n) {
 let O = i.memo(function(e) {
   let t, l, u, O, {
       stream: j,
-      canGoLive: C,
-      guildId: x,
+      canGoLive: x,
+      guildId: C,
       isStreaming: P,
       channel: S,
       canStream: N,
@@ -58,11 +58,11 @@ let O = i.memo(function(e) {
     }, [j]),
     k = i.useCallback(() => {
       let e = null != S && (0, f.vd)(S.type) ? S : null,
-        t = null != e ? e.getGuildId() : x;
+        t = null != e ? e.getGuildId() : C;
       (0, a.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("93382"), n.e("79477"), n.e("60138")]).then(n.bind(n, 60594));
+        } = await Promise.all([n.e("93382"), n.e("79477"), n.e("5759")]).then(n.bind(n, 60594));
         return n => {
           var i, l;
           return (0, r.jsx)(e, (i = function(e) {
@@ -98,10 +98,10 @@ let O = i.memo(function(e) {
           }), i))
         }
       })
-    }, [S, x]),
-    M = (null != I || null == Z || (0, c.R)()) && (P || C) ? (P ? (t = !1, l = L, u = a.g5r, O = v.NW.string(v.t.S5anIS)) : N ? (t = !1, l = k, u = a.hGI, O = null != I ? v.NW.formatToPlainString(v.t.AB5gT0, {
+    }, [S, C]),
+    M = (null != I || null == Z || (0, c.R)()) && (P || x) ? (P ? (t = !1, l = L, u = a.g5r, O = v.NW.string(v.t.S5anIS)) : N ? (t = !1, l = k, u = a.hGI, O = null != I ? v.NW.formatToPlainString(v.t.AB5gT0, {
       game: I.name
-    }) : v.NW.string(v.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, O = null != S && (0, f.vd)(S.type) ? v.NW.string(v.t.uQn9Bw) : null != x ? v.NW.string(v.t.fBXEoK) : v.NW.string(v.t.n3feND)), (0, r.jsx)("div", {
+    }) : v.NW.string(v.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, O = null != S && (0, f.vd)(S.type) ? v.NW.string(v.t.uQn9Bw) : null != C ? v.NW.string(v.t.fBXEoK) : v.NW.string(v.t.n3feND)), (0, r.jsx)("div", {
       className: y.panelButtonContainer,
       children: (0, r.jsx)(m.Z, {
         tooltipText: O,

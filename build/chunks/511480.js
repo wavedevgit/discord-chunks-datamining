@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => B,
-  s: () => U
+  s: () => G
 }), n(266796), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -70,7 +70,7 @@ function M(e) {
   }
   return e
 }
-let U = s.ZP.connectStores([v.Z], () => {
+let G = s.ZP.connectStores([v.Z], () => {
   let {
     guild: e,
     originalGuild: t,
@@ -106,7 +106,7 @@ let U = s.ZP.connectStores([v.Z], () => {
     }
   }
 })(l.Z);
-class G extends i.PureComponent {
+class U extends i.PureComponent {
   async componentDidMount() {
     let {
       guild: e
@@ -478,4 +478,4 @@ let B = s.ZP.connectStores([v.Z, h.Z, C.ZP, g.ZP, b.default, f.Z], () => {
     guildMetadata: r,
     localeOptions: (0, D.jb)()
   }
-})(G)
+})(U)

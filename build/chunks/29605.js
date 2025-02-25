@@ -60,8 +60,8 @@ function M(e) {
   }
   return e
 }
-let U = d().throttle(h.OQ, 1e3),
-  G = e => {
+let G = d().throttle(h.OQ, 1e3),
+  U = e => {
     let {
       currentTarget: t,
       which: n
@@ -114,7 +114,7 @@ let U = d().throttle(h.OQ, 1e3),
           }),
           inputClassName: W.emojiInput,
           placeholder: k.NW.string(k.t.qUpzYG),
-          onKeyPress: G,
+          onKeyPress: U,
           onChange: c,
           onBlur: () => {
             o !== n.name && (0, h.dv)({
@@ -314,15 +314,15 @@ let U = d().throttle(h.OQ, 1e3),
     i.useEffect(() => {
       f && Y()
     }, [f]), i.useEffect(() => {
-      U(e.id)
+      G(e.id)
     }, [e.id]), i.useEffect(() => {
-      null != h && h < c && U(e.id)
+      null != h && h < c && G(e.id)
     }, [c, h, e.id]);
     let [P, L] = i.useMemo(() => {
       let t = null == g ? void 0 : g.filter(t => !(0, _.Kt)(t, e.id)),
         [n, r] = d().partition(t, e => !e.animated);
       return [n, r]
-    }, [g, e.id]), G = e.getMaxEmojiSlots(), B = Math.max(G - P.length, G - L.length), z = (n, r, i) => (0, N.G)({
+    }, [g, e.id]), U = e.getMaxEmojiSlots(), B = Math.max(U - P.length, U - L.length), z = (n, r, i) => (0, N.G)({
       data: n,
       file: r,
       image: i,
@@ -363,7 +363,7 @@ let U = d().throttle(h.OQ, 1e3),
           children: [(0, r.jsx)(p.R94, {
             type: p.geA.DESCRIPTION,
             children: k.NW.format(k.t.TA1BR0, {
-              count: G
+              count: U
             })
           }), q && (0, r.jsx)(p.R94, {
             type: p.geA.DESCRIPTION,

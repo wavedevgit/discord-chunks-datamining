@@ -145,19 +145,21 @@ function F(e) {
     pid: s,
     sourceName: l,
     sourceId: c,
-    previewDisabled: u
-  } = e, p = (0, f.V9)({
+    sourceIcon: u,
+    previewDisabled: p
+  } = e, _ = (0, f.V9)({
     streamType: n,
     guildId: i,
     channelId: o,
     ownerId: m.default.getId()
-  }), _ = null !== (t = null != s ? d.ZP.getGameForPID(s) : null != c ? d.ZP.getRunningGames().find(e => (0, h.Z)(c, e.windowHandle)) : null) && void 0 !== t ? t : null;
-  a[p] = {
-    id: null == _ ? void 0 : _.id,
+  }), g = null !== (t = null != s ? d.ZP.getGameForPID(s) : null != c ? d.ZP.getRunningGames().find(e => (0, h.Z)(c, e.windowHandle)) : null) && void 0 !== t ? t : null;
+  a[_] = {
+    id: null == g ? void 0 : g.id,
     pid: s,
     sourceName: l,
-    previewDisabled: u
-  }, r.delete(p), r.set(p, {
+    previewDisabled: p,
+    sourceIcon: u
+  }, r.delete(_), r.set(_, {
     streamType: n,
     guildId: i,
     channelId: o,

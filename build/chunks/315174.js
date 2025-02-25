@@ -146,8 +146,8 @@ let j = i.memo(function(e) {
     className: l,
     onClick: a,
     onContextMenu: j,
-    onMouseDown: C,
-    disableBannerAnimation: x,
+    onMouseDown: x,
+    disableBannerAnimation: C,
     "aria-expanded": P,
     "aria-controls": S,
     guild: N,
@@ -157,7 +157,7 @@ let j = i.memo(function(e) {
     headerClassName: E,
     communityInfoVisible: T,
     hasSubheader: A
-  } = e, D = N.hasFeature(g.oNc.ANIMATED_BANNER), R = (0, d.Z)(N), L = !R && N.hasCommunityInfoSubheader(), k = !R && T, M = (0, h.xR)(I) && D && !x, [G, B] = i.useState(!1), U = i.useRef(), W = i.useRef(null), V = i.useRef(), F = p.QK.getSetting();
+  } = e, D = N.hasFeature(g.oNc.ANIMATED_BANNER), R = (0, d.Z)(N), L = !R && N.hasCommunityInfoSubheader(), k = !R && T, M = (0, h.xR)(I) && D && !C, [G, B] = i.useState(!1), U = i.useRef(), W = i.useRef(null), V = i.useRef(), F = p.QK.getSetting();
   i.useEffect(() => {
     if (M && t && !U.current && F) return B(!0), V.current = setTimeout(() => {
       B(!1)
@@ -191,7 +191,7 @@ let j = i.memo(function(e) {
             [e]: !z && t,
             [v.communityInfoVisible]: k || A && L
           }),
-          onMouseDown: C,
+          onMouseDown: x,
           onContextMenu: j,
           onClick: a,
           children: [(0, r.jsxs)("header", {

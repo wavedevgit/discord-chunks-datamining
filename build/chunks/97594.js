@@ -16,9 +16,9 @@ var a = n(200651),
   _ = n(212459),
   g = n(730606),
   y = n(860153),
-  O = n(981631),
-  f = n(388032),
-  b = n(130430);
+  f = n(981631),
+  b = n(388032),
+  O = n(130430);
 
 function h(e) {
   var {
@@ -44,15 +44,26 @@ function h(e) {
     }
     return r
   }(e, ["onClose", "items", "startingIndex", "shouldRedactExplicitContent", "shouldHideMediaOptions", "className", "transitionState"]);
-  let [T, j] = r.useState(null != o ? o : 0), [P, x] = r.useState(!1), M = (0, d.Q3)("MediaViewerModal");
+  let [T, j] = r.useState(null != o ? o : 0), [P, x] = r.useState(!1), M = r.useRef(null), I = (0, d.Q3)("MediaViewerModal");
   r.useEffect(() => {
-    if (null != t) return p.S.subscribe(O.CkL.MEDIA_MODAL_CLOSE, t), () => {
-      p.S.unsubscribe(O.CkL.MEDIA_MODAL_CLOSE, t)
+    if (null != t) return p.S.subscribe(f.CkL.MEDIA_MODAL_CLOSE, t), () => {
+      p.S.unsubscribe(f.CkL.MEDIA_MODAL_CLOSE, t)
     }
-  }, [t]), r.useEffect(() => (C === s.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(l.P)), C === s.Dvm.HIDDEN && (u.Z.disable(), u.Z.enableTemp(l.v)), () => {
-    u.Z.disableTemp()
-  }), [C]);
-  let I = r.useCallback(e => {
+  }, [t]), r.useEffect(() => {
+    var e, t;
+    C === s.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(l.P)), C === s.Dvm.HIDDEN && (u.Z.disable(), u.Z.enableTemp(l.v));
+    let n = () => {
+        u.Z.disable(), u.Z.enableTemp(l.P)
+      },
+      a = () => {
+        u.Z.disableTemp()
+      },
+      r = null === (t = M.current) || void 0 === t ? void 0 : null === (e = t.ownerDocument) || void 0 === e ? void 0 : e.defaultView;
+    return null == r || r.addEventListener("focus", n), null == r || r.addEventListener("blur", a), () => {
+      null == r || r.removeEventListener("focus", n), null == r || r.removeEventListener("blur", a), u.Z.disableTemp()
+    }
+  }, [C]);
+  let D = r.useCallback(e => {
       j(e), (0, m.yg)(m.uG.SELECTED_ITEM_CHANGE)
     }, []),
     N = r.useMemo(() => ({
@@ -60,9 +71,9 @@ function h(e) {
       setZoomed: x,
       entering: C === s.Dvm.ENTERING || null == C
     }), [P, C]),
-    D = n[T];
+    A = n[T];
   return (0, a.jsx)(s.f6W, {
-    theme: M ? O.BRd.MIDNIGHT : O.BRd.DARK,
+    theme: I ? f.BRd.MIDNIGHT : f.BRd.DARK,
     children: e => {
       var r, o;
       return (0, a.jsx)(s.Y0X, (r = function(e) {
@@ -84,24 +95,29 @@ function h(e) {
         return e
       }({
         hideShadow: !0,
-        className: i()(b.carouselModal, e),
+        className: i()(O.carouselModal, e),
         transitionState: C
       }, E), o = o = {
         size: s.CgR.DYNAMIC,
         animation: c.fM.SUBTLE,
         fullscreenOnMobile: !1,
         onClick: t,
-        "aria-label": f.NW.string(f.t.AMTX3t),
+        "aria-label": b.NW.string(b.t.AMTX3t),
         children: (0, a.jsxs)(_.z.Provider, {
           value: N,
           children: [(0, a.jsx)(y.Z, {
-            item: D,
+            item: A,
             hideMediaOptions: S,
             onClose: t
+          }), (0, a.jsx)("div", {
+            style: {
+              display: "none"
+            },
+            ref: M
           }), (0, a.jsx)(g.ZP, {
             items: n,
             startIndex: T,
-            onIndexChange: I,
+            onIndexChange: D,
             shouldRedactExplicitContent: h,
             shouldHideMediaOptions: S
           })]

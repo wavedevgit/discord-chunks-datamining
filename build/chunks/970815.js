@@ -26,14 +26,14 @@ let h = () => (0, n.jsx)("img", {
       onMouseEnter: _,
       onMouseLeave: L,
       onMouseDown: m,
-      className: C
-    } = e, p = u.default;
+      className: p
+    } = e, C = u.default;
     switch (o) {
       case a.b.HIGHLIGHTED:
-        p = u.highlighted;
+        C = u.highlighted;
         break;
       case a.b.SELECTED:
-        p = u.selected
+        C = u.selected
     }
     let [f, O] = (0, r.useState)(!1), N = null === i;
     (0, r.useEffect)(() => {
@@ -42,7 +42,7 @@ let h = () => (0, n.jsx)("img", {
       }, 500))
     }, [N, O, f]);
     let b = N || f,
-      T = f ? null : i;
+      v = f ? null : i;
     return (0, n.jsx)(l.P3F, {
       onClick: b ? void 0 : g,
       className: u.clickable,
@@ -52,13 +52,13 @@ let h = () => (0, n.jsx)("img", {
         onMouseDown: m,
         id: "balance-widget-pill",
         ref: t,
-        className: s()(u.container, p, C, {
+        className: s()(u.container, C, p, {
           [u.containerLoading]: b
         }),
         children: [(0, n.jsx)(d.M, {
           loading: b
         }), (0, n.jsx)(c.Z, {
-          value: T,
+          value: v,
           className: b ? u.counterLoading : void 0
         }), E && (0, n.jsx)(h, {})]
       })

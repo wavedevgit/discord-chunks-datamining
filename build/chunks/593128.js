@@ -201,7 +201,7 @@ let D = e => [{
       settings: W,
       errors: L,
       submitting: M,
-      dirty: U
+      dirty: G
     } = (0, a.cj)([f.Z], () => {
       var e;
       let t = f.Z.getState();
@@ -212,9 +212,9 @@ let D = e => [{
         submitting: t.submitting,
         dirty: t.dirty
       }
-    }), G = i.useCallback(e => {
-      U ? p.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : Z(e)
-    }, [U]), B = (0, b.f)(), F = i.useCallback(e => {
+    }), U = i.useCallback(e => {
+      G ? p.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : Z(e)
+    }, [G]), B = (0, b.f)(), F = i.useCallback(e => {
       "Escape" === e.key && (e.stopPropagation(), n())
     }, [n]);
     i.useEffect(() => {
@@ -237,8 +237,8 @@ let D = e => [{
       }), [t]),
       Y = i.useCallback(e => (0, g.mf)(t, e), [t]),
       K = i.useCallback(() => {
-        U ? p.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : n()
-      }, [U, n]),
+        G ? p.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : n()
+      }, [G, n]),
       q = async () => {
         await (0, g.Ii)(t, W), (0, h.Af)(t)
       }, X = i.useMemo(() => null != L && Object.values(L).some(e => null != e), [L]);
@@ -269,7 +269,7 @@ let D = e => [{
           children: (0, r.jsx)(o.njP, {
             className: P.sidebar,
             selectedItem: S,
-            onItemSelect: G,
+            onItemSelect: U,
             orientation: "vertical",
             children: Q.map((e, i) => {
               switch (e.section) {
@@ -282,7 +282,7 @@ let D = e => [{
                 case m.ID.CUSTOM:
                   let s = e.element;
                   return (0, r.jsx)(s, {
-                    dirty: U,
+                    dirty: G,
                     guildId: t,
                     onClose: n
                   }, e.label);
@@ -383,7 +383,7 @@ let D = e => [{
             })()
           }), (0, r.jsx)(l.W, {
             component: "div",
-            children: U && (0, r.jsx)(o.oXn, {
+            children: G && (0, r.jsx)(o.oXn, {
               className: P.noticeRegion,
               children: (0, r.jsx)(u.Z, {
                 onSave: q,

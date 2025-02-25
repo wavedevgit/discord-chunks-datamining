@@ -56,7 +56,7 @@ function O(e) {
   }), L = (0, l.cj)([b.Z], () => {
     var e;
     return null !== (e = b.Z.errors[x]) && void 0 !== e ? e : _
-  }), [M, U] = i.useState(!1), [G, B] = i.useState(!1), F = null !== (t = L.options) && void 0 !== t ? t : L.optionErrors.filter(g.lm)[0], z = L.config, H = w && s.options.length >= j.fY, V = (0, u.kl)(n.id, Array.from(R), [s]).length - R.size, Y = i.useRef(null), K = i.useRef(x);
+  }), [M, G] = i.useState(!1), [U, B] = i.useState(!1), F = null !== (t = L.options) && void 0 !== t ? t : L.optionErrors.filter(g.lm)[0], z = L.config, H = w && s.options.length >= j.fY, V = (0, u.kl)(n.id, Array.from(R), [s]).length - R.size, Y = i.useRef(null), K = i.useRef(x);
   return (i.useEffect(() => {
     K.current = x
   }), i.useLayoutEffect(() => {
@@ -75,7 +75,7 @@ function O(e) {
       className: a()(v.container, {
         [v.dropIndicatorBefore]: null != A && x < A,
         [v.dropIndicatorAfter]: null != A && x > A,
-        [v.containerFocused]: G
+        [v.containerFocused]: U
       }),
       ref: e => Z(k(e)),
       children: [(0, r.jsx)("div", {
@@ -100,7 +100,7 @@ function O(e) {
         children: s.title
       }), (0, r.jsx)(o.P3F, {
         className: v.collapseButton,
-        onClick: () => U(!1),
+        onClick: () => G(!1),
         children: (0, r.jsx)(p.Z, {
           direction: p.Z.Directions.DOWN,
           height: 16,
@@ -127,7 +127,7 @@ function O(e) {
       className: a()(v.container, {
         [v.dropIndicatorBefore]: null != A && x < A,
         [v.dropIndicatorAfter]: null != A && x > A,
-        [v.containerFocused]: G
+        [v.containerFocused]: U
       }),
       ref: e => Z(k(e)),
       children: [(0, r.jsx)("div", {
@@ -213,7 +213,7 @@ function O(e) {
           }) : null]
         }), (0, r.jsx)(o.P3F, {
           className: v.collapseButton,
-          onClick: () => U(!0),
+          onClick: () => G(!0),
           children: (0, r.jsx)(p.Z, {
             direction: p.Z.Directions.UP,
             height: 16,

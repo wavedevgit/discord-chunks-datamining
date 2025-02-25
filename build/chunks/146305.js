@@ -40,8 +40,8 @@ var r = n(200651),
   W = n(853714),
   L = n(359191),
   M = n(84658),
-  U = n(142961),
-  G = n(730910),
+  G = n(142961),
+  U = n(730910),
   B = n(475013),
   F = n(213956),
   z = n(702478),
@@ -290,10 +290,10 @@ let eT = {
         return {
           section: e_.pNK.ONBOARDING, label: eC.NW.string(eC.t.LdxCKy), element: ee.Z, ariaLabel: eC.NW.string(eC.t.LdxCKy), newIndicatorDismissibleContentTypes: t.onboardingEnabled ? null : [s.z.COMMUNITY_ONBOARDING_NEW_BADGE], notice: {
             stores: [L.Z],
-            element: G.Z
+            element: U.Z
           }, predicate: () => (0, x.wC)(t.guild.id), decoration: function(e, t) {
             if (b.Z.getEnabled(e)) return eC.NW.string(eC.t.pPSmxs).toUpperCase();
-            if ((0, U.C)(e)) return eC.NW.string(eC.t.HDF4o6).toUpperCase();
+            if ((0, G.C)(e)) return eC.NW.string(eC.t.HDF4o6).toUpperCase();
             let n = M.ug,
               r = n.findIndex(e => e === t);
             if (-1 !== r) return eC.NW.formatToPlainString(eC.t["5r28iY"], {

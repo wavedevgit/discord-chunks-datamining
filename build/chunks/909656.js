@@ -136,8 +136,8 @@ function k(e) {
   } = (0, C.Z)(n.id), l = (0, _.YB)(n.id), c = i.useCallback(() => {
     var e;
     return (null == l ? void 0 : null === (e = l.cover_image_asset) || void 0 === e ? void 0 : e.application_id) == null ? null : (0, N._W)(l.cover_image_asset.application_id, l.cover_image_asset, D)
-  }, [l]), [m, h] = i.useState(a), [f, v] = i.useState(null !== (t = null == l ? void 0 : l.description) && void 0 !== t ? t : ""), [Z, k] = i.useState(c), [W, L] = i.useState(null == l ? void 0 : l.store_page_guild_products_default_sort), [M, U] = i.useState(null == l ? void 0 : l.server_shop_tab_order), {
-    loading: G,
+  }, [l]), [m, h] = i.useState(a), [f, v] = i.useState(null !== (t = null == l ? void 0 : l.description) && void 0 !== t ? t : ""), [Z, k] = i.useState(c), [W, L] = i.useState(null == l ? void 0 : l.store_page_guild_products_default_sort), [M, G] = i.useState(null == l ? void 0 : l.server_shop_tab_order), {
+    loading: U,
     error: B,
     updateSubscriptionsSettings: F
   } = (0, _.QV)(), {
@@ -289,7 +289,7 @@ function k(e) {
           value: M,
           placeholder: T.NW.string(T.t.XqMe3N),
           options: et,
-          onChange: e => U(e)
+          onChange: e => G(e)
         })]
       })]
     }), (0, r.jsx)(u.W, {
@@ -297,11 +297,11 @@ function k(e) {
       className: P.contentRegion,
       children: Q && (0, r.jsx)(p.oXn, {
         children: (0, r.jsx)(g.Z, {
-          submitting: G,
+          submitting: U,
           disabled: !J,
           onReset: () => {
             var e;
-            h(a), v(null !== (e = null == l ? void 0 : l.description) && void 0 !== e ? e : ""), k(c), L(null == l ? void 0 : l.store_page_guild_products_default_sort), U(null == l ? void 0 : l.server_shop_tab_order)
+            h(a), v(null !== (e = null == l ? void 0 : l.description) && void 0 !== e ? e : ""), k(c), L(null == l ? void 0 : l.store_page_guild_products_default_sort), G(null == l ? void 0 : l.server_shop_tab_order)
           },
           onSave: () => {
             o()(null != l, "Settings must be defined");

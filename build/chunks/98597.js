@@ -25,8 +25,8 @@ var r, i = n(200651),
   _ = n(914010),
   O = n(281029),
   j = n(981631),
-  C = n(388032),
-  x = n(436804);
+  x = n(388032),
+  C = n(436804);
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,7 +68,7 @@ function I(e, t, n) {
 }
 
 function Z(e, t) {
-  return null == t ? x.containerDefault : e > t ? x.containerDragAfter : x.containerDragBefore
+  return null == t ? C.containerDefault : e > t ? C.containerDragAfter : C.containerDragBefore
 }
 
 function w(e) {
@@ -85,7 +85,7 @@ function w(e) {
     u.ZP.open(t.id)
   }
   return (0, i.jsx)(c.ua7, {
-    text: C.NW.string(C.t["3gUsJS"]),
+    text: x.NW.string(x.t["3gUsJS"]),
     children: e => {
       let {
         onMouseEnter: t,
@@ -94,10 +94,10 @@ function w(e) {
         onBlur: u
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: a()(x.iconItem, l ? x.alwaysShown : void 0, o ? x.iconWithChannelInfo : x.iconNoChannelInfo),
+        className: a()(C.iconItem, l ? C.alwaysShown : void 0, o ? C.iconWithChannelInfo : C.iconNoChannelInfo),
         onClick: d,
         tabIndex: r,
-        "aria-label": C.NW.string(C.t["3gUsJS"]),
+        "aria-label": x.NW.string(x.t["3gUsJS"]),
         onMouseEnter: t,
         onMouseLeave: n,
         onFocus: s,
@@ -105,7 +105,7 @@ function w(e) {
         children: (0, i.jsx)(c.ewm, {
           size: "xs",
           color: "currentColor",
-          className: x.actionIcon
+          className: C.actionIcon
         })
       })
     }
@@ -120,7 +120,7 @@ function E(e) {
     tabIndex: o,
     forceShowButtons: u,
     hasChannelInfo: h = !1
-  } = e, m = (0, s.e7)([v.Z], () => v.Z.getGuild(t.getGuildId())), _ = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), O = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), P = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, m, t, _)), I = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? C.NW.string(C.t.zJrgTE) : C.NW.string(C.t.Sd8Ix8));
+  } = e, m = (0, s.e7)([v.Z], () => v.Z.getGuild(t.getGuildId())), _ = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), O = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), P = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, m, t, _)), I = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? x.NW.string(x.t.zJrgTE) : x.NW.string(x.t.Sd8Ix8));
   if (l || !P) return null;
 
   function Z() {
@@ -142,7 +142,7 @@ function E(e) {
   }
   let w = (0, i.jsx)(c.ejJ, {
     size: "xs",
-    className: x.actionIcon,
+    className: C.actionIcon,
     "aria-hidden": !0,
     color: "currentColor"
   });
@@ -155,7 +155,7 @@ function E(e) {
   })), (0, i.jsx)(c.ua7, {
     text: I,
     children: e => (0, i.jsx)(c.P3F, N(S({
-      className: a()(x.iconItem, u ? x.alwaysShown : void 0, h ? x.iconWithChannelInfo : x.iconNoChannelInfo)
+      className: a()(C.iconItem, u ? C.alwaysShown : void 0, h ? C.iconWithChannelInfo : C.iconNoChannelInfo)
     }, e), {
       onClick: Z,
       tabIndex: o,
@@ -172,16 +172,16 @@ function T(e) {
     (0, h._U)(t.guild_id, t.id)
   };
   return (0, i.jsx)(c.ua7, {
-    text: C.NW.string(C.t.ROh4T0),
+    text: x.NW.string(x.t.ROh4T0),
     children: e => (0, i.jsx)(c.P3F, N(S({
-      className: x.iconItem
+      className: C.iconItem
     }, e), {
       onClick: n,
-      "aria-label": C.NW.string(C.t.ROh4T0),
+      "aria-label": x.NW.string(x.t.ROh4T0),
       children: (0, i.jsx)(c.Dio, {
         size: "xs",
         color: "currentColor",
-        className: x.actionIcon
+        className: C.actionIcon
       })
     }))
   })
@@ -196,16 +196,16 @@ function A(e) {
     })
   };
   return (0, i.jsx)(c.ua7, {
-    text: C.NW.string(C.t["N2c/Ul"]),
+    text: x.NW.string(x.t["N2c/Ul"]),
     children: e => (0, i.jsx)(c.P3F, N(S({
-      className: x.iconItem
+      className: C.iconItem
     }, e), {
       onClick: n,
-      "aria-label": C.NW.string(C.t["N2c/Ul"]),
+      "aria-label": x.NW.string(x.t["N2c/Ul"]),
       children: (0, i.jsx)(c.dz2, {
         size: "xs",
         color: "currentColor",
-        className: x.actionIcon
+        className: C.actionIcon
       })
     }))
   })

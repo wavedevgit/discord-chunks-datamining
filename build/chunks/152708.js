@@ -2,7 +2,7 @@
 l.d(t, {
   Z: () => x
 });
-var s, r, i = l(200651),
+var r, i, s = l(200651),
   n = l(192379),
   a = l(120356),
   c = l.n(a),
@@ -17,23 +17,23 @@ function f(e, t, l) {
     writable: !0
   }) : e[t] = l, e
 }
-var u = ((s = u || {}).WRAP = "wrap", s.STACK = "stack", s);
-class h extends(r = n.PureComponent) {
+var u = ((r = u || {}).WRAP = "wrap", r.STACK = "stack", r);
+class h extends(i = n.PureComponent) {
   renderChildren() {
     let e;
     let {
       children: t,
       layout: l,
-      columns: s
+      columns: r
     } = this.props;
     switch (l) {
       case "stack":
         e = "100%";
         break;
       case "wrap":
-        e = "".concat(1 / s * 100, "%")
+        e = "".concat(1 / r * 100, "%")
     }
-    return t.map((t, l) => (0, i.jsx)(o.Z.Child, {
+    return t.map((t, l) => (0, s.jsx)(o.Z.Child, {
       className: d.tile,
       basis: e,
       grow: 0,
@@ -44,7 +44,7 @@ class h extends(r = n.PureComponent) {
     let {
       className: e
     } = this.props;
-    return (0, i.jsx)(o.Z, {
+    return (0, s.jsx)(o.Z, {
       className: c()(e, d.grid),
       wrap: o.Z.Wrap.WRAP,
       children: this.renderChildren()

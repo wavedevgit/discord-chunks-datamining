@@ -157,7 +157,7 @@ function W(e) {
     disableDrag: I,
     setEditRoleId: S,
     setSelectedSection: A
-  } = e, k = (0, C.T)(p, h, d), W = null != k, [M, U] = i.useState(!1), G = i.useMemo(() => ({
+  } = e, k = (0, C.T)(p, h, d), W = null != k, [M, G] = i.useState(!1), U = i.useMemo(() => ({
     type: Z,
     item: () => (v(d.id), {
       id: d.id,
@@ -177,7 +177,7 @@ function W(e) {
     }
   }), [d, v, _, O, W, M, x]), [{
     isDragging: B
-  }, F] = (0, l.c)(G), z = i.useMemo(() => ({
+  }, F] = (0, l.c)(U), z = i.useMemo(() => ({
     accept: Z,
     canDrop: () => !W,
     collect: e => {
@@ -234,8 +234,8 @@ function W(e) {
       className: a()(P.dragIcon, w.dragSpacing, {
         [P.dragIconHidden]: W || I
       }),
-      onMouseEnter: () => U(!0),
-      onMouseLeave: () => U(!1),
+      onMouseEnter: () => G(!0),
+      onMouseLeave: () => G(!1),
       children: (0, r.jsx)(u.Vni, {
         size: "xs",
         color: "currentColor"

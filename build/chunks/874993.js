@@ -73,8 +73,8 @@ function y(e) {
   i.useEffect(() => {
     C(w, (0, j.af)(M))
   }, [C, w, M]);
-  let U = (0, g.Z6)(P),
-    G = e => (0, r.jsx)(r.Fragment, {
+  let G = (0, g.Z6)(P),
+    U = e => (0, r.jsx)(r.Fragment, {
       children: e.map(e => {
         var t;
         return (0, r.jsx)(x.Z, {
@@ -128,7 +128,7 @@ function y(e) {
           className: O.textBadge
         })]
       })]
-    }), R ? (0, r.jsx)(h.Z, {}) : Object.entries(U).map(e => {
+    }), R ? (0, r.jsx)(h.Z, {}) : Object.entries(G).map(e => {
       let [t, n] = e;
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
       let s = null != Z[t] ? (0, r.jsx)(l.hjN, {
@@ -142,7 +142,7 @@ function y(e) {
       }) : null;
       return (0, r.jsxs)("div", {
         className: O.categoryContainer,
-        children: [s, G(n)]
+        children: [s, U(n)]
       }, t)
     }), null != S && (0, r.jsx)(c.k0, {
       guild: S,

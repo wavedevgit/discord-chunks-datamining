@@ -16,9 +16,9 @@ var a = n(200651),
   _ = n(378409),
   g = n(850908),
   y = n(695346),
-  O = n(572004),
-  f = n(424218),
-  b = n(49012),
+  f = n(572004),
+  b = n(424218),
+  O = n(49012),
   h = n(358085),
   S = n(998502),
   v = n(254109),
@@ -70,11 +70,11 @@ function I(e, t) {
   }), e
 }
 
-function N() {
+function D() {
   (0, s.Mr3)(T.U)
 }
 
-function D(e) {
+function N(e) {
   var {
     onClick: t,
     tooltipText: n,
@@ -129,7 +129,7 @@ function A() {
     zoomed: e,
     setZoomed: t
   } = (0, C.Y)();
-  return (0, a.jsx)(D, {
+  return (0, a.jsx)(N, {
     onClick: () => {
       (0, v.yg)(e ? v.uG.ZOOM_OUT_BUTTON_PRESSED : v.uG.ZOOM_IN_BUTTON_PRESSED), t(!e)
     },
@@ -151,7 +151,7 @@ function w(e) {
           forwardOptions: {
             onlyEmbedIndices: [c.embedIndex]
           },
-          onRequestSent: N
+          onRequestSent: D
         });
         return
       }(0, m.l8)({
@@ -160,7 +160,7 @@ function w(e) {
         forwardOptions: {
           onlyAttachmentIds: [c.attachmentId]
         },
-        onRequestSent: N
+        onRequestSent: D
       })
     }
   }, [i, c]), {
@@ -170,7 +170,7 @@ function w(e) {
   }, {
     autoTrackExposure: !1
   });
-  return null != i && u && (0, p.h)(i) ? (0, a.jsx)(D, {
+  return null != i && u && (0, p.h)(i) ? (0, a.jsx)(N, {
     onClick: l,
     tooltipText: j.NW.string(j.t.I3ltXF),
     icon: s.WZu
@@ -184,7 +184,7 @@ function L(e) {
   if (!("VIDEO" === t.type || h.isPlatformEmbedded && null == t.children && "IMAGE" === t.type && (0, _.gS)(t.url))) return null;
   let i = (0, _.s$)(t.url);
   async function c() {
-    if ((0, v.yg)(v.uG.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, b.q)({
+    if ((0, v.yg)(v.uG.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, O.q)({
         href: i
       }), "IMAGE" === t.type) {
       o(!0);
@@ -197,7 +197,7 @@ function L(e) {
       }
     }
   }
-  return (0, a.jsx)(D, {
+  return (0, a.jsx)(N, {
     onClick: c,
     tooltipText: j.NW.string("VIDEO" === t.type ? j.t.JVuuz8 : j.t["S/xNKS"]),
     submitting: n,
@@ -212,9 +212,9 @@ function R(e) {
   } = e;
   if (!(0, _.Jj)(n.url)) return null;
   let r = (0, _.s$)(null !== (t = n.original) && void 0 !== t ? t : n.url);
-  return (0, a.jsx)(D, {
+  return (0, a.jsx)(N, {
     onClick: () => {
-      (0, v.yg)(v.uG.OPEN_LINK_PRESSED), (0, b.q)({
+      (0, v.yg)(v.uG.OPEN_LINK_PRESSED), (0, O.q)({
         href: r
       })
     },
@@ -248,7 +248,7 @@ function k(e) {
     });
     if ((null == r ? void 0 : null === (t = r.identifier) || void 0 === t ? void 0 : t.type) !== "attachment") return null;
     let d = (0, g.Z)(r.identifier),
-      p = (0, f.BU)(r.identifier.size / 1e3);
+      p = (0, b.BU)(r.identifier.size / 1e3);
     return (0, a.jsxs)(s.sNh, {
       id: "media-viewer-details",
       label: j.NW.string(j.t.GoCQxc),
@@ -296,7 +296,7 @@ function k(e) {
 
 function Z(e, t, n) {
   let o = r.useCallback(e => {
-    (0, O.JG)(e), (0, s.showToast)({
+    (0, f.JG)(e), (0, s.showToast)({
       message: j.NW.string(j.t.mGZ66O),
       type: s.ToastType.SUCCESS,
       id: "media-viewer-detail-copied"
@@ -332,7 +332,7 @@ function B(e) {
       let {
         onClick: t
       } = e;
-      return (0, a.jsx)(D, {
+      return (0, a.jsx)(N, {
         tooltipText: j.NW.string(j.t.UKOtz8),
         onClick: () => {
           (0, v.yg)(v.uG.MORE_BUTTON_PRESSED), c(!i)

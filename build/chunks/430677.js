@@ -72,8 +72,8 @@ let v = function(e) {
   null != R && (0, m.kb)(R) ? k || (L = b.NW.string(b.t.wAkIZW)) : L = b.NW.string(b.t.CbTEKC);
   let {
     drag: M,
-    dragSourcePosition: U,
-    drop: G,
+    dragSourcePosition: G,
+    drop: U,
     setIsDraggable: B
   } = (0, d.Z)({
     type: "NEW_MEMBER_ACTION",
@@ -101,11 +101,11 @@ let v = function(e) {
     className: a()(x.actionItemContainer),
     children: [(0, r.jsxs)("div", {
       className: a()(x.actionItem, {
-        [x.dropIndicatorBefore]: null != U && I < U,
-        [x.dropIndicatorAfter]: null != U && I > U,
+        [x.dropIndicatorBefore]: null != G && I < G,
+        [x.dropIndicatorAfter]: null != G && I > G,
         [x.actionItemError]: null != L
       }),
-      ref: e => M(G(e)),
+      ref: e => M(U(e)),
       children: [(0, r.jsx)("div", {
         className: x.dragContainer,
         onMouseEnter: () => B(!0),

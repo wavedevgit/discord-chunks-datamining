@@ -23,7 +23,7 @@ var r, i = n(200651),
   O = n(388032),
   j = n(707057);
 
-function C(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,14 +32,14 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -118,7 +118,7 @@ class S extends l.PureComponent {
     return null != e ? e : O.NW.string(O.t.cw57am)
   }
   constructor(...e) {
-    super(...e), C(this, "renderProgressBody", (e, t) => {
+    super(...e), x(this, "renderProgressBody", (e, t) => {
       let {
         state: n,
         application: r
@@ -193,7 +193,7 @@ class N extends(r = l.PureComponent) {
         "aria-label": !1,
         children: n => {
           var r, l;
-          return (0, i.jsx)("div", (r = x({}, n), l = l = {
+          return (0, i.jsx)("div", (r = C({}, n), l = l = {
             children: (0, i.jsx)(p._3P, {
               percent: e,
               colorOverride: t ? u.Z.unsafe_rawColors.PRIMARY_500.css : null,
@@ -218,9 +218,9 @@ class N extends(r = l.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), C(this, "state", {
+    super(...e), x(this, "state", {
       animationScale: new s.Z.Value(0)
-    }), C(this, "handleOnClick", e => {
+    }), x(this, "handleOnClick", e => {
       let {
         onClick: t
       } = this.props;
@@ -238,7 +238,7 @@ function I(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-C(N, "defaultProps", {
+x(N, "defaultProps", {
   strokeSize: p._3P.StrokeSizes.MEDIUM
 });
 let Z = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
@@ -274,6 +274,6 @@ let Z = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(N, x({}, n)) : null
-  }) : (0, i.jsx)(N, x({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(N, C({}, n)) : null
+  }) : (0, i.jsx)(N, C({}, n))
 })

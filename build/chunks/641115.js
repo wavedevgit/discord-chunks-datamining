@@ -1,102 +1,102 @@
 /** Chunk was on 79477 **/
-t.d(n, {
+n.d(t, {
   Z: () => A
-}), t(47120);
-var l = t(200651),
-  i = t(192379),
-  r = t(120356),
-  s = t.n(r),
-  a = t(512722),
-  o = t.n(a),
-  c = t(442837),
-  u = t(481060),
-  d = t(410575),
-  m = t(2052),
-  g = t(924557),
-  h = t(600164),
-  x = t(436774),
-  v = t(140465),
-  f = t(774026),
-  j = t(592125),
-  Z = t(944486),
-  N = t(594174),
-  S = t(74538),
-  p = t(451467),
-  C = t(122186),
-  b = t(37113),
-  P = t(981631),
-  T = t(388032),
-  E = t(382840),
-  I = t(958472),
-  O = t(455812);
+}), n(47120);
+var l = n(200651),
+  r = n(192379),
+  s = n(120356),
+  i = n.n(s),
+  a = n(512722),
+  o = n.n(a),
+  c = n(442837),
+  u = n(481060),
+  d = n(410575),
+  m = n(2052),
+  g = n(924557),
+  h = n(600164),
+  x = n(436774),
+  p = n(140465),
+  v = n(774026),
+  f = n(592125),
+  j = n(944486),
+  S = n(594174),
+  N = n(74538),
+  Z = n(451467),
+  b = n(122186),
+  O = n(37113),
+  C = n(981631),
+  E = n(388032),
+  P = n(382840),
+  y = n(958472),
+  T = n(455812);
 
-function y(e) {
-  for (var n = 1; n < arguments.length; n++) {
-    var t = null != arguments[n] ? arguments[n] : {},
-      l = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), l.forEach(function(n) {
+function I(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), l.forEach(function(t) {
       var l;
-      l = t[n], n in e ? Object.defineProperty(e, n, {
+      l = n[t], t in e ? Object.defineProperty(e, t, {
         value: l,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[n] = l
+      }) : e[t] = l
     })
   }
   return e
 }
 
-function R(e, n) {
-  return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
-    var t = Object.keys(e);
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      t.push.apply(t, l)
+      n.push.apply(n, l)
     }
-    return t
-  })(Object(n)).forEach(function(t) {
-    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function W(e) {
+function R(e) {
   let {
-    analyticsLocation: n,
-    onClose: i
+    analyticsLocation: t,
+    onClose: r
   } = e;
   (0, u.ZDy)(async () => {
     let {
       default: e
-    } = await t.e("28479").then(t.bind(t, 78865));
-    return t => (0, l.jsx)(e, R(y({}, t), {
-      onCloseParent: i,
-      analyticsSource: n
+    } = await n.e("28479").then(n.bind(n, 78865));
+    return n => (0, l.jsx)(e, _(I({}, n), {
+      onCloseParent: r,
+      analyticsSource: t
     }))
   })
 }
 
-function k() {
+function w() {
   return (0, l.jsxs)("div", {
-    className: I.toolTipTextContainer,
+    className: y.toolTipTextContainer,
     children: [(0, l.jsx)(u.SrA, {
       size: "md",
       color: x.JX.PREMIUM_TIER_2,
-      className: s()(I.premiumIcon)
+      className: i()(y.premiumIcon)
     }), (0, l.jsx)(u.Text, {
-      className: I.upsellText,
+      className: y.upsellText,
       variant: "text-sm/medium",
-      children: T.NW.string(T.t.sEAnVF)
+      children: E.NW.string(E.t.sEAnVF)
     })]
   })
 }
 
-function w(e) {
-  let n, t, {
-      type: i,
-      selected: r,
+function W(e) {
+  let t, n, {
+      type: r,
+      selected: s,
       needsPremium: a,
       needsDemo: o,
       analyticsLocation: c,
@@ -107,155 +107,155 @@ function w(e) {
     {
       value: h,
       label: x
-    } = i;
-  return a ? (n = (0, l.jsx)(u.DY3, {
-    tooltipClassName: I.tooltip,
+    } = r;
+  return a ? (t = (0, l.jsx)(u.DY3, {
+    tooltipClassName: y.tooltip,
     spacing: 6,
-    "aria-label": T.NW.string(T.t.sEAnVF),
-    text: (0, l.jsx)(k, {}),
+    "aria-label": E.NW.string(E.t.sEAnVF),
+    text: (0, l.jsx)(w, {}),
     children: (0, l.jsx)("div", {
-      className: I.textContainer,
+      className: y.textContainer,
       onMouseEnter: () => g(!0),
       onMouseLeave: () => g(!1),
       children: (0, l.jsx)(u.Text, {
         variant: "text-xs/bold",
-        className: s()(I.selectorNitroText, I.enhancedSelectorNitroText),
+        className: i()(y.selectorNitroText, y.enhancedSelectorNitroText),
         children: x
       })
     })
-  }), t = () => W({
+  }), n = () => R({
     analyticsLocation: c,
     onClose: m
-  })) : (n = (0, l.jsx)("div", {
-    className: I.textContainer,
+  })) : (t = (0, l.jsx)("div", {
+    className: y.textContainer,
     children: (0, l.jsx)(u.Text, {
       variant: "text-xs/normal",
-      className: s()(I.selectorText, {
-        [I.enhancedSelectorNitroText]: o
+      className: i()(y.selectorText, {
+        [y.enhancedSelectorNitroText]: o
       }),
       children: x
     })
-  }), t = () => d(h)), {
-    content: n,
-    className: s()(I.selectorButton, {
-      [I.selectorButtonSelected]: r,
-      [I.perksDemo]: o,
-      [I.premiumUpsell]: a
+  }), n = () => d(h)), {
+    content: t,
+    className: i()(y.selectorButton, {
+      [y.selectorButtonSelected]: s,
+      [y.perksDemo]: o,
+      [y.premiumUpsell]: a
     }),
-    onClick: t
+    onClick: n
   }
 }
 
 function A(e) {
   let {
-    onClose: n,
-    selectedPreset: t,
-    selectedResolution: r,
-    selectedFPS: s,
+    onClose: t,
+    selectedPreset: n,
+    selectedResolution: s,
+    selectedFPS: i,
     onResolutionChange: a,
     onFPSChange: x,
-    onPresetChange: k,
+    onPresetChange: w,
     targetGuildPremiumTier: A,
-    captureDeviceSelected: D
-  } = e, M = (0, c.e7)([N.default], () => {
-    let e = N.default.getCurrentUser();
+    captureDeviceSelected: k
+  } = e, L = (0, c.e7)([S.default], () => {
+    let e = S.default.getCurrentUser();
     return o()(null != e, "StreamSettings: user cannot be undefined"), e
-  }), _ = (0, c.e7)([Z.Z, j.Z], () => j.Z.getChannel(Z.Z.getVoiceChannelId())), L = S.ZP.canStreamQuality(S.U2.MID, M), {
+  }), D = (0, c.e7)([j.Z, f.Z], () => f.Z.getChannel(j.Z.getVoiceChannelId())), M = N.ZP.canStreamQuality(N.U2.MID, L), {
     location: z
   } = (0, m.O)(), U = (0, g.Zq)({
     autoTrackExposure: !1
-  }), G = (0, v.B4)({
+  }), G = (0, p.B4)({
     location: "StreamSettings"
-  }), V = N.default.getUser(null == _ ? void 0 : _.hdStreamingBuyerId), J = null != _ && null != _.hdStreamingUntil && new Date(_.hdStreamingUntil) > new Date && null != V, B = !L && !U, [F, X] = i.useState(!1), Y = D ? b.z8 : b.WC, H = R(y({}, z), {
-    section: P.jXE.STREAM_SETTINGS
+  }), F = S.default.getUser(null == D ? void 0 : D.hdStreamingBuyerId), Y = null != D && null != D.hdStreamingUntil && new Date(D.hdStreamingUntil) > new Date && null != F, V = !M && !U, [B, X] = r.useState(!1), J = k ? O.z8 : O.WC, H = _(I({}, z), {
+    section: C.jXE.STREAM_SETTINGS
   }), K = (0, l.jsx)(u.hE2, {
-    buttons: Y.map(e => w({
+    buttons: J.map(e => W({
       type: e,
-      selected: e.value === r,
-      needsPremium: !(0, p.Z)(t, e.value, s, M, A, _),
-      needsDemo: G && e.value !== b.LY.RESOLUTION_720,
+      selected: e.value === s,
+      needsPremium: !(0, Z.Z)(n, e.value, i, L, A, D),
+      needsDemo: G && e.value !== O.LY.RESOLUTION_720,
       analyticsLocation: H,
       onClick: () => a(e.value),
-      onClose: n,
+      onClose: t,
       setIsHovering: X
     }))
   }), q = (0, l.jsx)(u.hE2, {
-    buttons: b.k0.map(e => w({
+    buttons: O.k0.map(e => W({
       type: e,
-      selected: e.value === s,
-      needsPremium: !(0, p.Z)(t, r, e.value, M, A, _),
-      needsDemo: G && e.value === b.ws.FPS_60,
+      selected: e.value === i,
+      needsPremium: !(0, Z.Z)(n, s, e.value, L, A, D),
+      needsDemo: G && e.value === O.ws.FPS_60,
       analyticsLocation: H,
       onClick: () => x(e.value),
-      onClose: n,
+      onClose: t,
       setIsHovering: X
     }))
   }), Q = [{
-    value: b.tI.PRESET_VIDEO,
-    label: T.NW.string(T.t.HcwHc3)
-  }, ...D ? [] : [{
-    value: b.tI.PRESET_DOCUMENTS,
-    label: T.NW.string(T.t["/RfohI"])
+    value: O.tI.PRESET_VIDEO,
+    label: E.NW.string(E.t.HcwHc3)
+  }, ...k ? [] : [{
+    value: O.tI.PRESET_DOCUMENTS,
+    label: E.NW.string(E.t["/RfohI"])
   }], {
-    value: b.tI.PRESET_CUSTOM,
-    label: T.NW.string(T.t["+eOtrK"])
-  }], $ = t === b.tI.PRESET_DOCUMENTS ? (0, l.jsxs)(l.Fragment, {
+    value: O.tI.PRESET_CUSTOM,
+    label: E.NW.string(E.t["+eOtrK"])
+  }], $ = n === O.tI.PRESET_DOCUMENTS ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(h.Z, {
       children: (0, l.jsx)(u.xJW, {
-        title: T.NW.string(T.t.rHyPXl),
-        titleClassName: E.formItemTitleSlim,
-        className: I.documentModeGroup,
+        title: E.NW.string(E.t.rHyPXl),
+        titleClassName: P.formItemTitleSlim,
+        className: y.documentModeGroup,
         children: (0, l.jsx)(u.Text, {
           variant: "text-xs/normal",
-          children: T.NW.format(T.t["U+hmam"], {
-            fps: s
+          children: E.NW.format(E.t["U+hmam"], {
+            fps: i
           })
         })
       })
-    }), B ? (0, l.jsx)(C.Z, {
-      message: T.NW.string(T.t.deDogI),
-      onClose: n,
-      openStreamUpsellModal: W
-    }) : null, G && (0, l.jsx)(C.c, {}), J && null != _.hdStreamingUntil && (0, l.jsx)(f.Z, {
-      streamingUntil: _.hdStreamingUntil,
-      user: V,
-      channel: _
+    }), V ? (0, l.jsx)(b.Z, {
+      message: E.NW.string(E.t.deDogI),
+      onClose: t,
+      openStreamUpsellModal: R
+    }) : null, G && (0, l.jsx)(b.c, {}), Y && null != D.hdStreamingUntil && (0, l.jsx)(v.Z, {
+      streamingUntil: D.hdStreamingUntil,
+      user: F,
+      channel: D
     })]
   }) : (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)(h.Z, {
       children: [(0, l.jsx)(u.xJW, {
-        title: T.NW.string(T.t.rHyPXl),
-        className: I.settingsGroup,
-        titleClassName: E.formItemTitleSlim,
+        title: E.NW.string(E.t.rHyPXl),
+        className: y.settingsGroup,
+        titleClassName: P.formItemTitleSlim,
         children: K
       }), (0, l.jsx)(u.xJW, {
-        title: T.NW.string(T.t.SkkeIi),
-        className: I.settingsGroup,
-        titleClassName: E.formItemTitleSlim,
+        title: E.NW.string(E.t.SkkeIi),
+        className: y.settingsGroup,
+        titleClassName: P.formItemTitleSlim,
         children: q
       })]
-    }), B ? (0, l.jsx)(C.Z, {
-      onClose: n,
-      openStreamUpsellModal: W,
-      glow: F
-    }) : null, G && (0, l.jsx)(C.c, {}), J && null != _.hdStreamingUntil && (0, l.jsx)(f.Z, {
-      streamingUntil: null == _ ? void 0 : _.hdStreamingUntil,
-      user: V,
-      channel: _
+    }), V ? (0, l.jsx)(b.Z, {
+      onClose: t,
+      openStreamUpsellModal: R,
+      glow: B
+    }) : null, G && (0, l.jsx)(b.c, {}), Y && null != D.hdStreamingUntil && (0, l.jsx)(v.Z, {
+      streamingUntil: null == D ? void 0 : D.hdStreamingUntil,
+      user: F,
+      channel: D
     })]
   });
-  return (0, l.jsx)(d.Z, R(y({}, H), {
+  return (0, l.jsx)(d.Z, _(I({}, H), {
     children: (0, l.jsx)(u.xJW, {
-      title: T.NW.string(T.t.ax4FnZ),
-      titleClassName: E.formItemTitle,
-      className: E.modalContent,
+      title: E.NW.string(E.t.ax4FnZ),
+      titleClassName: P.formItemTitle,
+      className: P.modalContent,
       children: (0, l.jsxs)("div", {
-        className: I.qualitySettingsContainer,
+        className: y.qualitySettingsContainer,
         children: [(0, l.jsx)(u.q4e, {
-          value: t,
-          className: O.marginTop8,
+          value: n,
+          className: T.marginTop8,
           options: Q,
-          onChange: e => k(e)
+          onChange: e => w(e)
         }), $]
       })
     })

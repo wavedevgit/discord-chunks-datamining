@@ -50,36 +50,36 @@ function _(e) {
     size: _ = o.EFr.SIZE_40
   } = e, L = (0, s.ZP)(), m = (0, c.oX)(i);
   if (null == m) return null;
-  let C = (0, o.UCu)(_),
+  let p = (0, o.UCu)(_),
     {
-      name: p,
+      name: C,
       rarity: f
     } = m,
     {
       color: O
     } = (0, c.F7)(f),
     N = (0, r.wj)(L) ? E : g,
-    b = (C.size - C.offset - 2 * C.stroke) * .8,
-    T = C.size - C.stroke,
-    v = {
+    b = (p.size - p.offset - 2 * p.stroke) * .8,
+    v = p.size - p.stroke,
+    k = {
       width: .4 * b,
       height: .4 * b
     },
-    k = {
-      width: v.width + 1,
-      height: v.height + 1,
-      right: C.stroke + 1,
-      bottom: C.stroke + 1,
+    T = {
+      width: k.width + 1,
+      height: k.height + 1,
+      right: p.stroke + 1,
+      bottom: p.stroke + 1,
       padding: 0
     };
   return (0, n.jsxs)("div", {
     className: u.container,
     style: {
-      width: T,
-      height: T,
-      padding: C.stroke
+      width: v,
+      height: v,
+      padding: p.stroke
     },
-    "aria-label": "".concat(null !== (t = p()) && void 0 !== t ? t : ""),
+    "aria-label": "".concat(null !== (t = C()) && void 0 !== t ? t : ""),
     children: [(0, n.jsx)("div", {
       className: u.trophyIconContainer,
       children: (0, n.jsx)(o.rm8, {
@@ -90,17 +90,17 @@ function _(e) {
       })
     }), !d && (0, n.jsx)("div", {
       className: u.lockContainer,
-      style: k,
+      style: T,
       children: (0, n.jsx)(o.mBM, h({
         size: "custom",
         color: (0, l.Lq)(N.locked)
-      }, v))
+      }, k))
     }), d && f === c.EP.LEGENDARY && (0, n.jsx)("div", {
       className: u.lockContainer,
-      style: k,
+      style: T,
       children: (0, n.jsx)(a.Z, h({
         className: u.confettiIcon
-      }, v))
+      }, k))
     })]
   })
 }

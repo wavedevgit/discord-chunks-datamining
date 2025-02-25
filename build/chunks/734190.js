@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(714794),
   O = n(876548),
   j = n(25601),
-  C = n(207055),
-  x = n(981631),
+  x = n(207055),
+  C = n(981631),
   P = n(124368),
   S = n(388032),
   N = n(436804),
@@ -240,12 +240,12 @@ let D = i.memo(function(e) {
           })
         }))]
       })
-    }), (0, r.jsx)(C.Z, {
+    }), (0, r.jsx)(x.Z, {
       channel: t,
       collapsed: !Z,
       collapsedMax: 6,
       voiceStates: L,
-      location: x.Sbl.GUILD_CHANNEL_LIST
+      location: C.Sbl.GUILD_CHANNEL_LIST
     })]
   })
 })

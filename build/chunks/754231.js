@@ -109,7 +109,7 @@ function j(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     activity: t,
     user: n,
@@ -128,7 +128,7 @@ function C(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     activity: t
   } = e, n = null == t ? void 0 : t.state;
@@ -196,11 +196,11 @@ function S(e) {
           activity: t,
           embeddedApp: n,
           onOpenSpotifyTrack: p
-        }), (0, r.jsx)(C, {
+        }), (0, r.jsx)(x, {
           activity: t,
           user: l,
           onOpenSpotifyArtist: h
-        }), (0, r.jsx)(x, {
+        }), (0, r.jsx)(C, {
           activity: t
         }), m.length > 0 && (0, r.jsx)(d.Z, {
           className: y.usersSummary,

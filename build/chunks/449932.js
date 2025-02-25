@@ -1,6 +1,6 @@
 /** Chunk was on 32098 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 });
 var r = n(200651);
 n(192379);
@@ -81,31 +81,31 @@ function j(e) {
     }, n)
   })
 }
-let C = e => {
+let x = e => {
   let {
     channel: t,
     presenceActivity: n,
     members: i,
     embeddedApp: l,
     onAction: h
-  } = e, b = (0, d.Q3)("ChannelActivityRow"), v = null != l, O = v ? Array.from(l.embeddedActivity.userIds) : [], C = (0, o.e7)([m.default, g.default], () => {
+  } = e, b = (0, d.Q3)("ChannelActivityRow"), v = null != l, O = v ? Array.from(l.embeddedActivity.userIds) : [], x = (0, o.e7)([m.default, g.default], () => {
     if (v) return m.default.getUser(O[0]);
     if (null != i) {
       var e, t;
       return i.length <= 0 ? null : null !== (t = null === (e = i.find(e => e.user.id !== g.default.getId())) || void 0 === e ? void 0 : e.user) && void 0 !== t ? t : i[0].user
     }
   });
-  if (null == C) return null;
-  let x = v || (0, c.Z)(n),
+  if (null == x) return null;
+  let C = v || (0, c.Z)(n),
     P = (0, f.vd)(t.type);
   return (0, r.jsxs)("div", {
     className: _.activity,
     children: [(0, r.jsx)("div", {
       className: _.channelActivityContainer,
-      children: x ? (0, r.jsx)(y.Z, {
+      children: C ? (0, r.jsx)(y.Z, {
         activity: n,
         embeddedApp: l,
-        user: C,
+        user: x,
         channel: t,
         sortedVoiceStates: i,
         onOpenSpotifyTrack: P ? p.aG : void 0,
@@ -114,7 +114,7 @@ let C = e => {
       }) : (0, r.jsx)(s.Z, {
         type: s.P.VOICE_CHANNEL,
         activity: n,
-        user: C,
+        user: x,
         guildId: t.getGuildId(),
         channelId: t.id,
         renderHeaderAccessory: null != i ? () => (0, r.jsx)(j, {
@@ -128,7 +128,7 @@ let C = e => {
         type: s.P.VOICE_CHANNEL,
         activity: n,
         embeddedActivity: null == l ? void 0 : l.embeddedActivity,
-        user: C,
+        user: x,
         guildId: t.getGuildId(),
         channelId: t.id,
         color: b ? a.zxk.Colors.PRIMARY : _.button,

@@ -1,10 +1,10 @@
 /** Chunk was on 79477 **/
-t.d(n, {
-  a: () => s
+n.d(t, {
+  a: () => i
 });
-var l = t(818083),
-  i = t(984134);
-let r = (0, l.B)({
+var l = n(818083),
+  r = n(984134);
+let s = (0, l.B)({
   kind: "user",
   id: "2025-01_go_live_modal_refresh",
   label: "Go Live Modal Refresh",
@@ -20,21 +20,21 @@ let r = (0, l.B)({
   }]
 });
 
-function s(e) {
+function i(e) {
   let {
-    location: n,
-    autoTrackExposure: t = !0
+    location: t,
+    autoTrackExposure: n = !0
   } = e, {
     isInHoldout: l
-  } = i.h.useExperiment({
-    location: n
+  } = r.h.useExperiment({
+    location: t
   }, {
-    autoTrackExposure: t
+    autoTrackExposure: n
   });
-  return r.useExperiment({
-    location: n
+  return s.useExperiment({
+    location: t
   }, {
     disable: l,
-    autoTrackExposure: t
+    autoTrackExposure: n
   })
 }

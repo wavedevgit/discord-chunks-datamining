@@ -25,8 +25,8 @@ let f = i.forwardRef(function(e, t) {
     upperBadge: _,
     lowerBadge: O,
     lowerBadgeSize: j,
-    showPill: C = !0,
-    className: x,
+    showPill: x = !0,
+    className: C,
     "aria-label": P,
     children: S,
     onMouseEnter: N,
@@ -34,7 +34,7 @@ let f = i.forwardRef(function(e, t) {
     onMouseDown: Z
   } = e, w = (0, c.Q3)("ButtonListItem"), E = (0, a.Ie)(f), [T, A] = i.useState(!1);
   return (0, r.jsxs)(d.H, {
-    children: [C ? (0, r.jsx)("div", {
+    children: [x ? (0, r.jsx)("div", {
       className: h.pill,
       children: (0, r.jsx)(u.Z, {
         hovered: T,
@@ -74,7 +74,7 @@ let f = i.forwardRef(function(e, t) {
             null == I || I(), A(!1)
           },
           onMouseDown: Z,
-          className: o()(h.circleIconButton, x, {
+          className: o()(h.circleIconButton, C, {
             [h.selected]: v || T
           }),
           onClick: g,

@@ -1,17 +1,17 @@
 /** Chunk was on 79477 **/
-t.d(n, {
-  Z: () => r
+n.d(t, {
+  Z: () => s
 });
-var l = t(200651);
-t(192379);
-var i = t(52212);
+var l = n(200651);
+n(192379);
+var r = n(52212);
 
-function r(e) {
+function s(e) {
   let {
-    children: n
+    children: t
   } = e;
   return (0, l.jsx)("div", {
-    className: i.card,
-    children: n
+    className: r.card,
+    children: t
   })
 }

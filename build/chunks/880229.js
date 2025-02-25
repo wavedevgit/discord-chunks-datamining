@@ -220,7 +220,7 @@ function M(e) {
   })
 }
 
-function U(e) {
+function G(e) {
   var t;
   let {
     guildId: n,
@@ -284,7 +284,7 @@ function U(e) {
   })
 }
 
-function G(e) {
+function U(e) {
   let {
     guild: t,
     onSelect: n
@@ -309,7 +309,7 @@ function G(e) {
   }), [t, s, o]);
   return d.length > 0 ? (0, r.jsx)("div", {
     className: R.list,
-    children: d.map(e => (0, r.jsx)(U, {
+    children: d.map(e => (0, r.jsx)(G, {
       guildId: t.id,
       role: e.role,
       channelCount: e.channelCount,
@@ -339,7 +339,7 @@ function B(e) {
       })]
     }), (0, r.jsx)(m.hzk, {
       className: R.modalContent,
-      children: (0, r.jsx)(G, {
+      children: (0, r.jsx)(U, {
         guild: s,
         onSelect: i
       })

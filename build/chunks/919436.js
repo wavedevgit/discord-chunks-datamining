@@ -21,8 +21,8 @@ var r, i = n(200651),
   _ = n(944486),
   O = n(594174),
   j = n(451478),
-  C = n(276952),
-  x = n(682662),
+  x = n(276952),
+  C = n(682662),
   P = n(662146),
   S = n(674552),
   N = n(981631),
@@ -165,8 +165,8 @@ class D extends(r = l.PureComponent) {
     } = this.state, v = e.isMultiUserDM() && null == e.icon && h;
     return (0, i.jsx)(o.animated.div, {
       style: this.getAnimatedStyle(),
-      children: (0, i.jsxs)(x.H, {
-        children: [(0, i.jsx)(C.Z, {
+      children: (0, i.jsxs)(C.H, {
+        children: [(0, i.jsx)(x.Z, {
           hovered: !b && g,
           selected: !b && n,
           unread: !b && p,
@@ -273,9 +273,9 @@ let R = l.forwardRef(function(e, t) {
     }),
     O = l === n,
     j = !1,
-    C = !1;
-  O && (j = o === N.WtW.VOICE, C = o === N.WtW.VIDEO);
-  let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
+    x = !1;
+  O && (j = o === N.WtW.VOICE, x = o === N.WtW.VIDEO);
+  let C = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
     P = (0, f.Q3)("DirectMessage");
   return (0, i.jsx)(D, E(w({}, e), {
     ref: t,
@@ -284,11 +284,11 @@ let R = l.forwardRef(function(e, t) {
     selected: u === n,
     badge: p,
     audio: j,
-    video: C,
+    video: x,
     stream: a,
     isCurrentUserInThisDMCall: O,
     isGDMFacepileEnabled: m,
-    size: P ? x : 56,
+    size: P ? C : 56,
     isVisualRefreshEnabled: P
   }))
 })

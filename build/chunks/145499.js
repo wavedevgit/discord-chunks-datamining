@@ -199,9 +199,9 @@ let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.T
           W = h && !A && k === c.tier && I !== D.length,
           L = W || D.length > 0,
           M = I - j,
-          U = n(872732),
-          G = R - D.length,
-          B = W ? Math.min(5 - (D.length + 0) % 5, G) : 0,
+          G = n(872732),
+          U = R - D.length,
+          B = W ? Math.min(5 - (D.length + 0) % 5, U) : 0,
           F = [];
         for (let e = 0; e < B; e++) F.push((0, r.jsx)(S, {}, "placeholder-".concat(e)));
         let z = k === p + 1 && k > E,
@@ -249,7 +249,7 @@ let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.T
             children: [(0, r.jsx)("img", {
               alt: O.NW.string(O.t.BAhsws),
               className: y.emptyTierImage,
-              src: U
+              src: G
             }), (0, r.jsx)(o.Text, {
               className: y.unlockTierCtaHeading,
               variant: "text-md/normal",
