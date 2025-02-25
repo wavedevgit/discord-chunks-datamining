@@ -1,6 +1,6 @@
 /**
   Module ID: 64615
-  Original File Name: 3db62f7a2f861628
+  Original File Name: cf7752d1662ad7b0
 **/
 button.button__67645,span.button__67645 {
     line-height: 0;
@@ -3496,7 +3496,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding: var(--spacing-4)
 }
 
-.clickableGameWrapper__5dec7:hover {
+.clickableGameWrapper__5dec7.clickableGameWrapperForceHover__5dec7,.clickableGameWrapper__5dec7:hover {
     background-color: var(--button-secondary-background-hover);
     border-radius: var(--spacing-8)
 }
@@ -4357,4 +4357,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=3db62f7a2f861628.css.map*/
+/*# sourceMappingURL=cf7752d1662ad7b0.css.map*/

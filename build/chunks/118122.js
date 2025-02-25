@@ -1,6 +1,6 @@
 /** Chunk was on 64615 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -34,7 +34,7 @@ let _ = {
   }
 };
 
-function x(e) {
+function C(e) {
   (0, a.jW)(e, async () => {
     let {
       default: e
@@ -60,13 +60,13 @@ function x(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, a = (0, l.e7)([f.Z], () => f.Z.getGuilds()), C = i.useMemo(() => Object.values(a), [a]), P = (0, l.e7)([g.default], () => g.default.getCurrentUser()), S = i.useMemo(() => C.some(e => e.isOwner(P)), [C, P]), N = (0, o.s9z)(e => (0, o.DEQ)(e, y.PU)), {
-    analyticsLocations: Z
-  } = (0, s.ZP)(), I = (0, u.Q3)("CreateJoinGuildButton"), w = (0, r.jsx)(b.Z, {
+  } = e, a = (0, l.e7)([f.Z], () => f.Z.getGuilds()), x = i.useMemo(() => Object.values(a), [a]), P = (0, l.e7)([g.default], () => g.default.getCurrentUser()), N = i.useMemo(() => x.some(e => e.isOwner(P)), [x, P]), S = (0, o.s9z)(e => (0, o.DEQ)(e, y.PU)), {
+    analyticsLocations: I
+  } = (0, s.ZP)(), Z = (0, u.Q3)("CreateJoinGuildButton"), w = (0, r.jsx)(b.Z, {
     showPill: !1,
     id: "create-join-button",
     onClick: () => {
@@ -78,20 +78,20 @@ function C(e) {
           page: v.Sbl.CREATE_JOIN_GUILD_MODAL,
           section: v.jXE.GUILD_CAP_UPSELL_MODAL
         },
-        analyticsLocations: Z
+        analyticsLocations: I
       }) : c.Z.openCreateGuildModal({
         location: "Guild List"
       })
     },
-    selected: N,
-    onContextMenu: x,
+    selected: S,
+    onContextMenu: C,
     tooltip: O.NW.string(O.t.l5WIbW),
-    icon: I ? o.oFk : o.BRu
+    icon: Z ? o.oFk : o.BRu
   });
   return t ? w : (0, r.jsx)("div", {
     className: j.tutorialContainer,
     children: (0, r.jsxs)(h.Z, {
-      tutorialId: S ? "create-more-servers" : "create-first-server",
+      tutorialId: N ? "create-more-servers" : "create-first-server",
       inlineSpecs: _,
       position: "right",
       children: [w, null != n && (0, r.jsx)(m.ZP, {

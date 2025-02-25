@@ -45,7 +45,7 @@ function b(e) {
       botUserId: C.id
     })
   }, [null == C ? void 0 : C.id]);
-  let E = (0, s.v1)({
+  let N = (0, s.v1)({
       channel: _,
       type: "channel"
     }, {
@@ -55,10 +55,10 @@ function b(e) {
       allowFetch: (null == C ? void 0 : C.id) != null,
       allowApplicationState: !0
     }),
-    N = E.commands.filter(e => e.type === o.yU.PRIMARY_ENTRY_POINT && e.applicationId === O)[0],
-    I = E.commands.filter(e => "0" !== e.id && !e.id.startsWith("-")),
-    P = E.loading,
-    S = null === (t = E.descriptors.find(e => {
+    E = N.commands.filter(e => e.type === o.yU.PRIMARY_ENTRY_POINT && e.applicationId === O)[0],
+    I = N.commands.filter(e => "0" !== e.id && !e.id.startsWith("-")),
+    P = N.loading,
+    S = null === (t = N.descriptors.find(e => {
       var t;
       return (null === (t = e.application) || void 0 === t ? void 0 : t.id) === O
     })) || void 0 === t ? void 0 : t.application,
@@ -69,7 +69,7 @@ function b(e) {
   return {
     application: A,
     isInitialLoading: w,
-    primaryEntryPointCommand: N,
+    primaryEntryPointCommand: E,
     isProfileFetching: v,
     wasProfileFetching: y,
     applicationId: O,

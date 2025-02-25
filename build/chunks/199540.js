@@ -1,6 +1,6 @@
 /** Chunk was on 64615 **/
 n.d(t, {
-  Z: () => S
+  Z: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -22,9 +22,9 @@ var r = n(200651),
   O = n(602079);
 let j = (0, m.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
   _ = (0, m.Mg)(u.Z.FOLDER_ITEM_GUILD_ICON_SIZE),
-  x = ["13px 4px 4px 4px", "4px 13px 4px 4px", "4px 4px 4px 13px", "4px 4px 13px 4px"];
+  C = ["13px 4px 4px 4px", "4px 13px 4px 4px", "4px 4px 4px 13px", "4px 4px 13px 4px"];
 
-function C(e) {
+function x(e) {
   let {
     guildId: t,
     animate: n,
@@ -42,7 +42,7 @@ function C(e) {
     className: O.guildIcon,
     tabIndex: -1,
     style: o ? {
-      borderRadius: x[i]
+      borderRadius: C[i]
     } : void 0
   })
 }
@@ -61,24 +61,24 @@ function P(e) {
     g = null != p ? p : v.Wyy,
     m = g === v.Wyy,
     b = f.map(e => e.id),
-    [y, x] = i.useState(!1),
-    [P, S] = i.useState(c),
-    N = u ? c ? 22 : -11 : c ? 0 : -_,
-    Z = (0, d.q_F)({
-      transform: "translate3d(0, ".concat(N, "px, 0)"),
+    [y, C] = i.useState(!1),
+    [P, N] = i.useState(c),
+    S = u ? c ? 22 : -11 : c ? 0 : -_,
+    I = (0, d.q_F)({
+      transform: "translate3d(0, ".concat(S, "px, 0)"),
       config: {
         duration: j
       },
       onStart() {
-        x(!0), S(c)
+        C(!0), N(c)
       },
       onRest() {
-        x(!1), S(c)
+        C(!1), N(c)
       }
     }, "animate-always"),
-    I = y ? Z : void 0;
+    Z = y ? I : void 0;
   (y || P) && (t = (0, r.jsx)(a.animated.div, {
-    style: I,
+    style: Z,
     className: O.expandedFolderIconWrapper,
     children: (0, r.jsx)(d.ROc, {
       size: u ? "sm" : "md",
@@ -88,9 +88,9 @@ function P(e) {
       }
     })
   })), (y || !P) && (n = (0, r.jsx)(a.animated.div, {
-    style: I,
+    style: Z,
     className: O.closedFolderIconWrapper,
-    children: b.slice(0, 4).map((e, t) => (0, r.jsx)(C, {
+    children: b.slice(0, 4).map((e, t) => (0, r.jsx)(x, {
       index: t,
       guildId: e,
       animate: o
@@ -107,7 +107,7 @@ function P(e) {
   })
 }
 
-function S(e) {
+function N(e) {
   var t, n;
   let {
     folderNode: l,
@@ -121,14 +121,14 @@ function S(e) {
     folderGroupId: v,
     folderIconContentClassName: j,
     folderIconContent: _,
-    onClick: x,
-    onContextMenu: C,
-    onHoverChange: S,
-    onKeyDown: N,
+    onClick: C,
+    onContextMenu: x,
+    onHoverChange: N,
+    onKeyDown: S,
     treeItemProps: {
-      onFocus: Z
+      onFocus: I
     }
-  } = e, I = function(e, t) {
+  } = e, Z = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -143,15 +143,15 @@ function S(e) {
     }
     return i
   }(e.treeItemProps, ["onFocus"]), [w, E] = i.useState(!1), T = i.useCallback(() => {
-    c || E(!0), null == S || S(!0)
-  }, [c, S]), D = i.useCallback(() => {
-    c || E(!1), null == S || S(!1)
-  }, [c, S]), A = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), L = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, M = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
+    c || E(!0), null == N || N(!0)
+  }, [c, N]), D = i.useCallback(() => {
+    c || E(!1), null == N || N(!1)
+  }, [c, N]), A = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), L = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, k = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
   return (0, r.jsx)(d.aRk, {
     isFolder: !0,
     style: A ? {
-      width: M,
-      height: M
+      width: k,
+      height: k
     } : void 0,
     selected: !!A || !a,
     upperBadge: R,
@@ -180,12 +180,12 @@ function S(e) {
       className: o()(O.folder, {
         [O.hover]: w
       }),
-      onClick: x,
-      onContextMenu: C,
+      onClick: C,
+      onContextMenu: x,
       onMouseEnter: T,
       onMouseLeave: D,
-      onKeyDown: N,
-      onFocus: Z,
+      onKeyDown: S,
+      onFocus: I,
       "aria-label": y.NW.formatToPlainString(y.t["90/DwM"], {
         folderName: m,
         mentions: f
@@ -195,7 +195,7 @@ function S(e) {
       focusProps: {
         enabled: !1
       }
-    }, I), n = n = {
+    }, Z), n = n = {
       role: "treeitem",
       children: null != _ ? (0, r.jsx)("div", {
         className: o()(O.expandedFolderIconWrapper, j),

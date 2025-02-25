@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(131951),
   j = n(699516),
   O = n(594174),
-  E = n(979651),
-  N = n(585483),
+  N = n(979651),
+  E = n(585483),
   I = n(63063),
   P = n(665149),
   S = n(981631),
@@ -44,10 +44,10 @@ function R(e, t, n) {
 }
 class M extends i.PureComponent {
   componentDidMount() {
-    N.S.subscribe(S.CkL.CALL_START, this.handleVoiceClick)
+    E.S.subscribe(S.CkL.CALL_START, this.handleVoiceClick)
   }
   componentWillUnmount() {
-    N.S.unsubscribe(S.CkL.CALL_START, this.handleVoiceClick)
+    E.S.unsubscribe(S.CkL.CALL_START, this.handleVoiceClick)
   }
   renderVideoCallButton() {
     let e, t;
@@ -183,7 +183,7 @@ function k(e) {
   var t;
   let {
     channel: n
-  } = e, a = (0, g.Z)(), s = (0, l.e7)([h.Z], () => h.Z.getMode(n.id)), c = (0, l.e7)([E.Z], () => E.Z.isInChannel(n.id)), f = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), {
+  } = e, a = (0, g.Z)(), s = (0, l.e7)([h.Z], () => h.Z.getMode(n.id)), c = (0, l.e7)([N.Z], () => N.Z.isInChannel(n.id)), f = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), {
     callActive: m,
     callUnavailable: b
   } = (0, l.cj)([v.Z], () => ({
@@ -195,7 +195,7 @@ function k(e) {
   } = (0, l.cj)([j.Z], () => ({
     notFriend: n.type === S.d4z.DM && null != _ && !j.Z.isFriend(_),
     isBlocked: n.type === S.d4z.DM && null != _ && j.Z.isBlocked(_)
-  })), N = (0, l.e7)([O.default], () => O.default.getUser(_)), I = (0, u.bp)(), P = [], Z = (0, p.Z)(n.id), T = (0, l.e7)([y.Z], () => y.Z.hasLayers());
+  })), E = (0, l.e7)([O.default], () => O.default.getUser(_)), I = (0, u.bp)(), P = [], Z = (0, p.Z)(n.id), T = (0, l.e7)([y.Z], () => y.Z.hasLayers());
   Z && !T && P.push(o.z.ACTIVITY_GDM_CALL_TOOLTIP);
   let [A, w] = i.useState(!1);
   return (i.useEffect(() => {
@@ -203,12 +203,12 @@ function k(e) {
       w(!0)
     }, 250);
     return () => clearTimeout(e)
-  }, []), a || (null == N ? void 0 : N.bot)) ? null : (0, r.jsx)(M, {
+  }, []), a || (null == E ? void 0 : E.bot)) ? null : (0, r.jsx)(M, {
     channel: n,
     mode: s,
     inCall: c,
     callActive: m,
-    isProvisional: null !== (t = null == N ? void 0 : N.isProvisional) && void 0 !== t && t,
+    isProvisional: null !== (t = null == E ? void 0 : E.isProvisional) && void 0 !== t && t,
     callUnavailable: b,
     notFriend: C,
     isBlocked: x,

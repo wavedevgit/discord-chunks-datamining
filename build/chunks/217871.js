@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => E
+  Z: () => N
 }), n(47120), n(177593);
 var r = n(200651),
   i = n(192379),
@@ -119,19 +119,19 @@ let j = i.memo(function(e) {
       })]
     })
   }),
-  E = i.memo(function(e) {
+  N = i.memo(function(e) {
     let {
       channelId: t
     } = e, n = (0, s.e7)([h.default], () => h.default.getId()), l = (0, s.e7)([f.Z], () => f.Z.isTyping(t, n), [t, n]), o = (0, s.e7)([b.Z], () => b.Z.isEnabled()), d = (0, s.e7)([_.ZP], () => _.ZP.isComboing(n, t), [t, n]), {
       ref: p,
       width: m = 0
-    } = (0, u.Z)(), [g, C] = i.useState(!1), y = (0, v.Z)(t), E = o && d && l;
+    } = (0, u.Z)(), [g, C] = i.useState(!1), y = (0, v.Z)(t), N = o && d && l;
     i.useEffect(() => {
-      E && C(!0);
-      let e = setTimeout(() => C(E), 1e3);
+      N && C(!0);
+      let e = setTimeout(() => C(N), 1e3);
       return () => clearTimeout(e)
-    }, [E]);
-    let N = (0, c.q_F)({
+    }, [N]);
+    let E = (0, c.q_F)({
         opacity: +!!g,
         transform: g ? "translateY(0)" : "translateY(100%)",
         pointerEvents: "none",
@@ -149,9 +149,9 @@ let j = i.memo(function(e) {
       multiplier: S,
       value: Z
     } = i.useMemo(() => ({
-      value: E ? I.value : P.current.value,
-      multiplier: E ? I.multiplier : P.current.multiplier
-    }), [E, I, P]);
+      value: N ? I.value : P.current.value,
+      multiplier: N ? I.multiplier : P.current.multiplier
+    }), [N, I, P]);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(j, {
         channelId: t,
@@ -159,7 +159,7 @@ let j = i.memo(function(e) {
       }), (0, r.jsx)(a.animated.div, {
         ref: p,
         className: x.combo,
-        style: N,
+        style: E,
         children: (0, r.jsx)(O, {
           value: Z,
           multiplier: S

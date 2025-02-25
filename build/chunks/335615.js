@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(367907),
   j = n(906732),
   O = n(493324),
-  E = n(611064),
-  N = n(677432),
+  N = n(611064),
+  E = n(677432),
   I = n(178762),
   P = n(868671),
   S = n(82295),
@@ -382,7 +382,7 @@ class ea extends i.Component {
         groups: n,
         channel: l
       } = this.props, o = n[t];
-      return (0, E.R)(o) ? (0, i.createElement)(E.Z, J(Q({}, o), {
+      return (0, N.R)(o) ? (0, i.createElement)(N.Z, J(Q({}, o), {
         key: "section-".concat(t)
       })) : 0 === t ? (0, r.jsx)(k.Z, {
         tutorialId: "whos-online",
@@ -454,7 +454,7 @@ class ea extends i.Component {
             children: t
           }, e) : t
         }
-        if (o.type === W.so.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(N.Z, {}, "content-inventory-hidden-entry")
+        if (o.type === W.so.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(E.Z, {}, "content-inventory-hidden-entry")
       }
       return (0, r.jsx)(eo, {
         index: i
@@ -471,7 +471,7 @@ class ea extends i.Component {
       this.props.updateMaxContentFeedRowSeen(n + t - 40)
     }, 50)), X(this, "getContentFeedGroup", () => {
       let e = this.props.groups[P.T];
-      if ((0, E.R)(e)) return e
+      if ((0, N.R)(e)) return e
     }), X(this, "hasContentFeed", () => null != this.getContentFeedGroup()), X(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
         {
@@ -568,13 +568,13 @@ function es(e) {
         })
       }
     })
-  }, [x]), E = i.useCallback(() => new Promise(e => {
+  }, [x]), N = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), []), N = i.useCallback(() => new Promise(e => {
+  }), []), E = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToBottom({
@@ -586,8 +586,8 @@ function es(e) {
     id: "members-".concat(t.id),
     setFocus: O,
     isEnabled: a,
-    scrollToStart: E,
-    scrollToEnd: N
+    scrollToStart: N,
+    scrollToEnd: E
   });
   return (0, r.jsx)(j.Gt, {
     value: l,

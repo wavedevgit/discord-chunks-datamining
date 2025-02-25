@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => E
+  Z: () => N
 });
 var r = n(200651);
 n(192379);
@@ -76,11 +76,11 @@ function j(e) {
       }))
     })
   }
-  let E = null !== (i = null !== (t = null == j ? void 0 : j.nick) && void 0 !== t ? t : g.ZP.getName(C)) && void 0 !== i ? i : "???",
-    N = null == j ? void 0 : j.colorString;
+  let N = null !== (i = null !== (t = null == j ? void 0 : j.nick) && void 0 !== t ? t : g.ZP.getName(C)) && void 0 !== i ? i : "???",
+    E = null == j ? void 0 : j.colorString;
   return null == C ? (0, r.jsx)("span", {
     className: l()(v.threadCreatorName, v.unknownCreatorName),
-    children: E
+    children: N
   }) : (0, r.jsx)(u.Gt, {
     value: _,
     children: (0, r.jsx)(a.yRy, {
@@ -100,8 +100,8 @@ function j(e) {
         className: v.threadCreatorName,
         onContextMenu: O,
         children: (0, r.jsx)(a.PUh, {
-          name: E,
-          color: null != N ? N : void 0
+          name: N,
+          color: null != E ? E : void 0
         })
       }))
     })
@@ -139,7 +139,7 @@ function O(e) {
   })
 }
 
-function E(e) {
+function N(e) {
   var t;
   let {
     channel: n

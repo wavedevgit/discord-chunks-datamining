@@ -1,12 +1,12 @@
 /** Chunk was on 81038 **/
 i.d(t, {
-  ZP: () => d
+  ZP: () => c
 });
 var n, l, r, s = i(442837),
   a = i(570140);
 let o = {},
   u = !1;
-class c extends(r = s.ZP.Store) {
+class d extends(r = s.ZP.Store) {
   isLoading() {
     return u
   }
@@ -22,13 +22,13 @@ class c extends(r = s.ZP.Store) {
     return o[e]
   }
 }
-l = "DiscoverGuildChecklistStore", (n = "displayName") in c ? Object.defineProperty(c, n, {
+l = "DiscoverGuildChecklistStore", (n = "displayName") in d ? Object.defineProperty(d, n, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : c[n] = l;
-let d = new c(a.Z, {
+}) : d[n] = l;
+let c = new d(a.Z, {
   DISCOVER_CHECKLIST_FETCH_START: function(e) {
     u = !0
   },

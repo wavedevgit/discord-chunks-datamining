@@ -1,7 +1,7 @@
 /** Chunk was on 64615 **/
 n.d(t, {
-  J: () => C,
-  y: () => x
+  J: () => x,
+  y: () => C
 });
 var r = n(200651),
   i = n(192379),
@@ -24,16 +24,16 @@ var r = n(200651),
   j = n(388032),
   _ = n(12990);
 
-function x(e, t, n) {
+function C(e, t, n) {
   return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === O.IIU.PLAYING && (0, u.Z)(t, O.xjy.JOIN))
 }
-let C = i.memo(function(e) {
-  let t, l, u, C, {
+let x = i.memo(function(e) {
+  let t, l, u, x, {
       stream: P,
-      canGoLive: S,
-      guildId: N,
-      isStreaming: Z,
-      channel: I,
+      canGoLive: N,
+      guildId: S,
+      isStreaming: I,
+      channel: Z,
       canStream: w,
       runningGame: E,
       embeddedActivity: T,
@@ -47,8 +47,8 @@ let C = i.memo(function(e) {
       location: "Activity Panel",
       autoTrackExposure: !1
     }),
-    M = (0, g.B)(O.IlC.APP),
-    k = x(A, D, T),
+    k = (0, g.B)(O.IlC.APP),
+    M = C(A, D, T),
     G = i.useCallback(() => {
       o()(null != D, "Received null activity"), v.default.track(O.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
@@ -67,10 +67,10 @@ let C = i.memo(function(e) {
       (0, f.Z)(P)
     }, [P]),
     W = i.useCallback(() => {
-      let e = null != I && (0, m.vd)(I.type) ? I : null,
-        t = null != e ? e.getGuildId() : N;
+      let e = null != Z && (0, m.vd)(Z.type) ? Z : null,
+        t = null != e ? e.getGuildId() : S;
       if (L && null != b.Z.getVoiceChannelId()) {
-        M();
+        k();
         return
       }(0, a.ZDy)(async () => {
         let {
@@ -112,19 +112,19 @@ let C = i.memo(function(e) {
           }), i))
         }
       })
-    }, [I, N, E, M, L]),
-    V = (null != E || null == T || (0, c.R)()) && (Z || S) ? (Z ? (t = !1, l = U, u = a.g5r, C = j.NW.string(j.t.S5anIS)) : w ? (t = !1, l = W, u = a.hGI, C = null != E ? j.NW.formatToPlainString(j.t.AB5gT0, {
+    }, [Z, S, E, k, L]),
+    V = (null != E || null == T || (0, c.R)()) && (I || N) ? (I ? (t = !1, l = U, u = a.g5r, x = j.NW.string(j.t.S5anIS)) : w ? (t = !1, l = W, u = a.hGI, x = null != E ? j.NW.formatToPlainString(j.t.AB5gT0, {
       game: E.name
-    }) : j.NW.string(j.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, C = null != I && (0, m.vd)(I.type) ? j.NW.string(j.t.uQn9Bw) : null != N ? j.NW.string(j.t.fBXEoK) : j.NW.string(j.t.n3feND)), (0, r.jsx)("div", {
+    }) : j.NW.string(j.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, x = null != Z && (0, m.vd)(Z.type) ? j.NW.string(j.t.uQn9Bw) : null != S ? j.NW.string(j.t.fBXEoK) : j.NW.string(j.t.n3feND)), (0, r.jsx)("div", {
       className: _.panelButtonContainer,
       children: (0, r.jsx)(y.Z, {
-        tooltipText: C,
+        tooltipText: x,
         disabled: t,
         onClick: l,
         icon: u
       })
     })) : null,
-    F = k && null == T ? (0, r.jsx)(y.Z, {
+    F = M && null == T ? (0, r.jsx)(y.Z, {
       tooltipText: j.NW.string(j.t["hC/Ze3"]),
       onClick: G,
       icon: a.ejJ

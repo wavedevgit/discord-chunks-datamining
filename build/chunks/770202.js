@@ -1,6 +1,6 @@
 /** Chunk was on 64615 **/
 n.d(t, {
-  Z: () => S
+  Z: () => N
 }), n(411104), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -43,12 +43,12 @@ function _(e) {
   return e
 }
 
-function x(e, t) {
+function C(e, t) {
   let n = t.getGuildId();
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
   s.Z.preload(n, t.id)
 }
-class C extends m.ZP {
+class x extends m.ZP {
   render() {
     let {
       channel: e,
@@ -67,7 +67,7 @@ class C extends m.ZP {
         channel: e,
         selected: t,
         onClick: this.handleClick,
-        onMouseDown: x,
+        onMouseDown: C,
         onContextMenu: this.handleContextMenu,
         connectDragPreview: a ? l : null,
         "aria-label": (0, d.ZP)({
@@ -122,8 +122,8 @@ class C extends m.ZP {
     })
   }
 }
-let P = (0, u.B)(C),
-  S = i.memo(function(e) {
+let P = (0, u.B)(x),
+  N = i.memo(function(e) {
     let {
       channel: t,
       guild: n,

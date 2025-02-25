@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(36311),
   j = n(112724),
   O = n(902840),
-  E = n(110924),
-  N = n(317381),
+  N = n(110924),
+  E = n(317381),
   I = n(82888),
   P = n(917107),
   S = n(296797),
@@ -78,8 +78,8 @@ var r = n(200651),
   ex = n(922482),
   ej = n(504185),
   eO = n(657218),
-  eE = n(66556),
-  eN = n(739830),
+  eN = n(66556),
+  eE = n(739830),
   eI = n(377929),
   eP = n(900157),
   eS = n(108427),
@@ -613,11 +613,11 @@ class ti extends i.PureComponent {
         case e2.d4z.ANNOUNCEMENT_THREAD:
         case e2.d4z.PRIVATE_THREAD:
         case e2.d4z.PUBLIC_THREAD:
-          null == t || t.isForumLikeChannel() || o.push((0, r.jsx)(eE.Z, {
+          null == t || t.isForumLikeChannel() || o.push((0, r.jsx)(eN.Z, {
             channel: t
           }, "browser")), e.isVocalThread() && o.push((0, r.jsx)(ec.Z, {
             channel: e
-          }, "thread-call")), o.push((0, r.jsx)(eN.Z, {
+          }, "thread-call")), o.push((0, r.jsx)(eE.Z, {
             channel: e
           }, "notifications")), o.push((0, r.jsx)(ee.Z, {
             channel: e
@@ -633,7 +633,7 @@ class ti extends i.PureComponent {
         case e2.d4z.GUILD_TEXT:
           o.push((0, r.jsx)(U.Z, {
             channel: e
-          }, "favorites")), o.push((0, r.jsx)(eE.Z, {
+          }, "favorites")), o.push((0, r.jsx)(eN.Z, {
             channel: e
           }, "browser")), n || o.push((0, r.jsx)($.Z, {
             channel: e
@@ -787,18 +787,18 @@ let tl = (0, j.Z)(ti),
     }, [a]), x = (0, F.Z)(), j = (0, p.e7)([eG.Z], () => {
       var e;
       return (null !== (e = null == x ? void 0 : x.channelId) && void 0 !== e ? e : eG.Z.getVoiceChannelId()) === (null == c ? void 0 : c.id)
-    }), I = (0, p.e7)([N.ZP], () => null != c ? N.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), A = (0, p.e7)([eF.Z], () => eF.Z.isConnected()), w = (0, E.Z)(A), R = A && !1 === w;
+    }), I = (0, p.e7)([E.ZP], () => null != c ? E.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), A = (0, p.e7)([eF.Z], () => eF.Z.isConnected()), w = (0, N.Z)(A), R = A && !1 === w;
     i.useEffect(() => {
       j && R && null != I && null != c && g.Z.selectParticipant(c.id, (0, Z.gN)({
         applicationId: I.applicationId,
         instanceId: I.compositeInstanceId
       }))
     }, [R, c, j, I]);
-    let M = (0, p.e7)([N.ZP], () => {
+    let M = (0, p.e7)([E.ZP], () => {
         var e;
-        return N.ZP.getSelfEmbeddedActivityForChannel(null !== (e = null == c ? void 0 : c.id) && void 0 !== e ? e : e2.lds)
+        return E.ZP.getSelfEmbeddedActivityForChannel(null !== (e = null == c ? void 0 : c.id) && void 0 !== e ? e : e2.lds)
       }),
-      k = (0, p.e7)([N.ZP], () => N.ZP.getActivityPanelMode()),
+      k = (0, p.e7)([E.ZP], () => E.ZP.getActivityPanelMode()),
       D = null != M && !(0, P.Z)(null == c ? void 0 : c.id) && k === e3.Ez.PANEL,
       U = (0, p.e7)([eq.Z], () => null != c && c.isVocalThread() && !u().isEmpty(eq.Z.getVoiceStatesForChannel(c.id)), [c]),
       B = null != c && c.isPrivate() && !D && y,
@@ -808,7 +808,7 @@ let tl = (0, j.Z)(ti),
       } = (0, d.TH)(),
       V = (0, p.e7)([ep.Z], () => null != c && ep.Z.isLurking(c.guild_id), [c]),
       z = (0, p.e7)([ew.Z], () => ew.Z.hasSeen(null == c ? void 0 : c.guild_id, V), [c, V]),
-      q = (0, p.e7)([T.Z, N.ZP], () => null != N.ZP.getConnectedActivityChannelId() && N.ZP.getActivityPanelMode() === e3.Ez.PANEL ? N.ZP.getFocusedLayout() === e3.MI.NO_CHAT ? e2.AEg.NO_CHAT : e2.AEg.NORMAL : null != a ? T.Z.getLayout(a) : e2.AEg.NORMAL, [a]),
+      q = (0, p.e7)([T.Z, E.ZP], () => null != E.ZP.getConnectedActivityChannelId() && E.ZP.getActivityPanelMode() === e3.Ez.PANEL ? E.ZP.getFocusedLayout() === e3.MI.NO_CHAT ? e2.AEg.NO_CHAT : e2.AEg.NORMAL : null != a ? T.Z.getLayout(a) : e2.AEg.NORMAL, [a]),
       K = (0, p.e7)([T.Z], () => null != c ? T.Z.getSelectedParticipant(c.id) : null),
       X = (0, p.e7)([ez.default], () => ez.default.getCurrentUser()),
       Q = (0, eu.Z)(null == C ? void 0 : C.id),
@@ -857,8 +857,8 @@ let tl = (0, j.Z)(ti),
     }, [l, ec]);
     let e_ = (0, O.ts)(c),
       eC = null != c && c.isPrivate(),
-      ev = (0, E.Z)(eC),
-      ey = (0, E.Z)(null == c ? void 0 : c.id);
+      ev = (0, N.Z)(eC),
+      ey = (0, N.Z)(null == c ? void 0 : c.id);
     i.useEffect(() => {
       let e = ev && !eC,
         t = ev && eC && (null == c ? void 0 : c.id) !== ey;

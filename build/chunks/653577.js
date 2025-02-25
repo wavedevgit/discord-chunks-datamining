@@ -25,14 +25,14 @@ function v(e) {
     hovered: l,
     subtitle: v,
     onClick: y
-  } = e, O = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), j = null != O && O.length > 0, _ = (0, c.ZP)(t, !0), x = null != v && v.length > 0;
+  } = e, O = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), j = null != O && O.length > 0, _ = (0, c.ZP)(t, !0), C = null != v && v.length > 0;
   i.useEffect(() => {
     j && h.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
       guild_id: t.guild_id,
       channel_id: t.id
     })
   }, [t.id, j, t.guild_id]);
-  let C = (0, s.bWb)().enabled ? 12 : 14;
+  let x = (0, s.bWb)().enabled ? 12 : 14;
   if (null == t.guild_id) return null;
   let P = o()(m.statusDiv, n && _ ? m.hoverable : null);
   return j ? (0, r.jsx)(s.P3F, {
@@ -47,7 +47,7 @@ function v(e) {
         })
       })
     })
-  }) : n && _ && (!x || l) ? (0, r.jsxs)(s.P3F, {
+  }) : n && _ && (!C || l) ? (0, r.jsxs)(s.P3F, {
     className: P,
     onClick: y,
     children: [(0, r.jsx)(s.Text, {
@@ -58,10 +58,10 @@ function v(e) {
       size: "custom",
       color: "currentColor",
       className: m.pencilIcon,
-      width: C,
-      height: C
+      width: x,
+      height: x
     })]
-  }) : x ? (0, r.jsx)(d.Z, {
+  }) : C ? (0, r.jsx)(d.Z, {
     children: v
   }) : null
 }

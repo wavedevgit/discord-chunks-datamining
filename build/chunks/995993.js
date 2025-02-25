@@ -1,6 +1,6 @@
 /** Chunk was on 64615 **/
 n.d(t, {
-  m: () => C
+  m: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -22,13 +22,13 @@ var r = n(200651),
   O = n(176505),
   j = n(490897),
   _ = n(388032),
-  x = n(160031);
+  C = n(160031);
 
-function C(e) {
+function x(e) {
   let {
     guild: t,
-    selected: C
-  } = e, P = (0, p.Z)(t), S = (0, u.wE)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), N = (0, l.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), Z = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, j.W.GUILD_ONBOARDING_QUESTION)), I = N.length > b.Cb, w = (0, l.e7)([d.Z, g.ZP], () => {
+    selected: x
+  } = e, P = (0, p.Z)(t), N = (0, u.wE)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), S = (0, l.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), I = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, j.W.GUILD_ONBOARDING_QUESTION)), Z = S.length > b.Cb, w = (0, l.e7)([d.Z, g.ZP], () => {
     let e = d.Z.lastFetchedAt(t.id),
       n = g.ZP.lastMessageId(t.id, j.W.GUILD_ONBOARDING_QUESTION);
     if (null == n) return !1;
@@ -75,10 +75,10 @@ function C(e) {
       }
     })
   }, [t]), D = null;
-  return S && !Z && !I || C || w || (D = (0, r.jsx)(s.IGR, {
+  return N && !I && !Z || x || w || (D = (0, r.jsx)(s.IGR, {
     color: a.Z.colors.BADGE_BRAND_BG.css,
     text: _.NW.string(_.t.y2b7CA),
-    className: x.newChannel
+    className: C.newChannel
   })), (0, r.jsx)(v.m, {
     id: "channels-".concat(t.id),
     renderIcon: e => (0, r.jsx)(s.H$4, {
@@ -87,7 +87,7 @@ function C(e) {
       className: e
     }),
     text: P ? _.NW.string(_.t.h9mGOD) : _.NW.string(_.t.et6wam),
-    selected: C,
+    selected: x,
     onClick: E,
     onContextMenu: T,
     trailing: D

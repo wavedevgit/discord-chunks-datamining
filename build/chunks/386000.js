@@ -47,8 +47,8 @@ function _(e) {
   } = (0, h.ZP)({
     location: "MicButton"
   }), {
-    squareButtons: E,
-    coloredIcons: N
+    squareButtons: N,
+    coloredIcons: E
   } = (0, f.Z)({
     location: "MuteButton"
   }), I = t || n || _, P = C ? g.d : g.Z, S = (0, p.Z)(t, n, _, v, O === h.BK.GroupedButtonsRedMic), Z = (0, c.O)(I ? "unmute" : "mute"), T = (0, u.P)(I ? "unmute" : "mute"), {
@@ -60,8 +60,8 @@ function _(e) {
   i.useEffect(() => () => k(), [k, I]);
   let L = R.Component;
   (0, d.bp)() === b.IlC.POPOUT && (L = w ? I ? o.T : l.x : I ? s.n : a.S);
-  let D = (E || O === h.BK.GroupedButtonsRedMic) && I ? "red" : void 0,
-    W = O !== h.BK.GroupedButtonsRedMic && !E;
+  let D = (N || O === h.BK.GroupedButtonsRedMic) && I ? "red" : void 0,
+    W = O !== h.BK.GroupedButtonsRedMic && !N;
   return (0, r.jsx)(P, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -82,7 +82,7 @@ function _(e) {
   }({
     isActive: !!W && !I,
     iconComponent: L,
-    caretColor: N && I ? "red" : "primaryDark",
+    caretColor: E && I ? "red" : "primaryDark",
     color: D,
     label: S,
     onMouseEnter: e => {

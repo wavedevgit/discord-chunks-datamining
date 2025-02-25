@@ -21,13 +21,13 @@ var r, i = n(200651),
   O = n(540059),
   j = n(860144),
   _ = n(214852),
-  x = n(518311),
-  C = n(355298),
+  C = n(518311),
+  x = n(355298),
   P = n(869404),
-  S = n(333984),
-  N = n(210887),
-  Z = n(592125),
-  I = n(158776),
+  N = n(333984),
+  S = n(210887),
+  I = n(592125),
+  Z = n(158776),
   w = n(55589),
   E = n(515753),
   T = n(981631),
@@ -56,7 +56,7 @@ function L(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,7 +68,7 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = l.memo(function() {
+let M = l.memo(function() {
   return (0, i.jsxs)("svg", {
     width: "184",
     height: "428",
@@ -322,9 +322,9 @@ class G extends(r = l.Component) {
         c = n.some(e => (0, b.Z)(e)),
         u = {
           num_users_visible: a.length,
-          num_users_visible_with_mobile_indicator: s.filter(e => null != e && I.Z.isMobileOnline(e)).length
+          num_users_visible_with_mobile_indicator: s.filter(e => null != e && Z.Z.isMobileOnline(e)).length
         };
-      this.hasReportedAnalytics = !0, g.ZP.trackWithMetadata(T.rMx.DM_LIST_VIEWED, M(L({}, u, (0, m.X)()), {
+      this.hasReportedAnalytics = !0, g.ZP.trackWithMetadata(T.rMx.DM_LIST_VIEWED, k(L({}, u, (0, m.X)()), {
         visible_user_ids: s.filter(e => null != e),
         changelog_dm_visible: c
       }))
@@ -371,7 +371,7 @@ class G extends(r = l.Component) {
       } = e, {
         privateChannelIds: r
       } = this.props;
-      return 0 === t ? this.renderChild(n) : 0 === n && 0 === r.length ? (0, i.jsx)(k, {}, "no-private-channels") : this.renderDM(t, n)
+      return 0 === t ? this.renderChild(n) : 0 === n && 0 === r.length ? (0, i.jsx)(M, {}, "no-private-channels") : this.renderDM(t, n)
     }), R(this, "renderSection", e => {
       let {
         section: t
@@ -383,7 +383,7 @@ class G extends(r = l.Component) {
         children: [(0, i.jsx)("span", {
           className: A.headerText,
           children: D.NW.string(D.t.YUU0RE)
-        }), (0, i.jsx)(x.Z, {
+        }), (0, i.jsx)(C.Z, {
           tooltip: D.NW.string(D.t["6Urw1t"]),
           tooltipPosition: "top",
           popoutAlign: "left",
@@ -432,20 +432,20 @@ let B = e => {
       showDMHeader: h
     } = e,
     g = l.Children.count(d),
-    m = Z.Z.getMutablePrivateChannels(),
+    m = I.Z.getMutablePrivateChannels(),
     b = (0, P.k1)(m),
-    v = (0, u.Wu)([w.Z, C.Z, S.Z], () => {
+    v = (0, u.Wu)([w.Z, x.Z, N.Z], () => {
       let e = w.Z.getPrivateChannelIds();
-      return (0, P.tU)(e, [C.Z, S.Z])
+      return (0, P.tU)(e, [x.Z, N.Z])
     }, []);
   (0, _.z)(j.R);
-  let x = (0, u.cj)([f.Z, N.Z, Z.Z], () => ({
-      theme: N.Z.darkSidebar ? T.BRd.DARK : a,
+  let C = (0, u.cj)([f.Z, S.Z, I.Z], () => ({
+      theme: S.Z.darkSidebar ? T.BRd.DARK : a,
       keyboardModeEnabled: f.Z.keyboardModeEnabled,
-      version: null != o ? "".concat(o, ":").concat(Z.Z.getPrivateChannelsVersion()) : Z.Z.getPrivateChannelsVersion()
+      version: null != o ? "".concat(o, ":").concat(I.Z.getPrivateChannelsVersion()) : I.Z.getPrivateChannelsVersion()
     })),
-    I = l.useRef(null),
-    E = null !== (t = e.listScrollerRef) && void 0 !== t ? t : I,
+    Z = l.useRef(null),
+    E = null !== (t = e.listScrollerRef) && void 0 !== t ? t : Z,
     D = l.useCallback(e => {
       let t = E.current,
         n = document.querySelector(e);
@@ -477,10 +477,10 @@ let B = e => {
         }
       })
     }), [E]),
-    k = (0, y.Dt)(),
+    M = (0, y.Dt)(),
     B = (0, c.ZP)({
-      id: "private-channels-".concat(k),
-      isEnabled: x.keyboardModeEnabled,
+      id: "private-channels-".concat(M),
+      isEnabled: C.keyboardModeEnabled,
       scrollToStart: A,
       scrollToEnd: R,
       defaultFocused: (g + +!!h).toString(),
@@ -488,7 +488,7 @@ let B = e => {
     });
   return (0, i.jsx)(s.bG, {
     navigator: B,
-    children: (0, i.jsx)(G, L(M(L({
+    children: (0, i.jsx)(G, L(k(L({
       density: r,
       isVisualRefreshEnabled: n,
       channels: b,
@@ -498,6 +498,6 @@ let B = e => {
       version: o
     }, e), {
       children: d
-    }), x))
+    }), C))
   })
 }

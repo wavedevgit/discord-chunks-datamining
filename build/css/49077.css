@@ -1,0 +1,32 @@
+/**
+  Module ID: 49077
+  Original File Name: 71b69f09bdb0a31d
+**/
+.bulletPointsContainer__4f18f {
+    margin-top: var(--spacing-16);
+    flex-direction: column
+}
+
+.bulletPointRow__4f18f,.bulletPointsContainer__4f18f {
+    display: flex;
+    gap: var(--spacing-16)
+}
+
+.bulletPointIconContainer__4f18f {
+    --custom-icon-size: 40px;
+    justify-content: center;
+    height: 40px;
+    height: var(--custom-icon-size);
+    width: 40px;
+    width: var(--custom-icon-size);
+    border-radius: 40px;
+    border-radius: var(--custom-icon-size);
+    background-color: var(--background-modifier-accent)
+}
+
+.bulletPointIconContainer__4f18f,.bulletPointText__4f18f {
+    display: flex;
+    align-items: center
+}
+
+/*# sourceMappingURL=71b69f09bdb0a31d.css.map*/

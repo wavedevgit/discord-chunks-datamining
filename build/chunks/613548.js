@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(2818),
   j = n(954551),
   O = n(44136),
-  E = n(651183),
-  N = n(618158),
+  N = n(651183),
+  E = n(618158),
   I = n(390322),
   P = n(616286),
   S = n(961048),
@@ -141,7 +141,7 @@ function X(e) {
   }), es = (0, m.Q3)("ChannelCallHeaderToolbar"), {
     preventIdle: ec,
     allowIdle: eu
-  } = (0, N.Y)("popup"), ed = [];
+  } = (0, E.Y)("popup"), ed = [];
   if (ee && !ei && !R) {
     let e = (null == X ? void 0 : X.type) === H.fO.STREAM ? (0, g.my)(X.id) : void 0,
       t = (null == X ? void 0 : X.type) === H.fO.ACTIVITY ? X.applicationId : void 0;
@@ -160,7 +160,7 @@ function X(e) {
   }, "current-speaker")), ed.push((0, r.jsx)(f.Z, {
     className: z.button,
     channelId: M
-  }, "clips-enabled-indicator")), (null == X ? void 0 : X.type) === H.fO.STREAM && (ed.push((0, r.jsx)(E.Z, {
+  }, "clips-enabled-indicator")), (null == X ? void 0 : X.type) === H.fO.STREAM && (ed.push((0, r.jsx)(N.Z, {
     className: z.button,
     participant: X
   }, "warning")), ed.push((0, r.jsx)(b.Z, {

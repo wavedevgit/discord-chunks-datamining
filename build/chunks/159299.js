@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => N
+  Z: () => E
 }), n(47120), n(230036), n(653041);
 var r, i = n(392711),
   l = n.n(i),
@@ -150,7 +150,7 @@ function O(e) {
   for (let e in v) v[e].guildId === t && (v[e].rebuild(), n = !0);
   return n
 }
-class E extends(r = o.ZP.Store) {
+class N extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(s.Z, c.ZP, u.Z, d.Z, p.Z, h.default), this.syncWith([u.Z], () => {
       let e = u.Z.getSubscribedThreadIds(),
@@ -178,8 +178,8 @@ class E extends(r = o.ZP.Store) {
     return null !== (i = null == o ? void 0 : o.canViewChannel) && void 0 !== i && i
   }
 }
-C(E, "displayName", "ThreadMemberListStore");
-let N = new E(a.Z, {
+C(N, "displayName", "ThreadMemberListStore");
+let E = new N(a.Z, {
   CONNECTION_OPEN: function() {
     v = {}
   },

@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => N
+  Z: () => E
 }), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -24,13 +24,13 @@ var r = n(200651),
   x = n(251564),
   j = n(695492),
   O = n(981631),
-  E = n(910860);
+  N = n(910860);
 
-function N(e) {
+function E(e) {
   let {
     participants: t,
     onClick: n,
-    onDoubleClick: N,
+    onDoubleClick: E,
     onContextMenu: I,
     channel: P,
     className: S,
@@ -63,10 +63,10 @@ function N(e) {
     z = L.map(e => t => (0, r.jsx)(y.ZP, {
       participant: e,
       channel: P,
-      className: E.tile,
+      className: N.tile,
       paused: A,
       onClick: n,
-      onDoubleClick: N,
+      onDoubleClick: E,
       onContextMenu: I,
       inCall: Z,
       width: t,

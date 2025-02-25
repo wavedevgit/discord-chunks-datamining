@@ -62,16 +62,16 @@ function C(e) {
         isTyping: t
       }
     }(t),
-    E = i.useCallback(() => {
+    N = i.useCallback(() => {
       var e;
       null === (e = v.current) || void 0 === e || e.focus()
     }, []);
   (0, p.yp)({
     event: g.CkL.FOCUS_CHAT_BUTTON,
-    handler: E
+    handler: N
   });
-  let N = y ? b.NW.string(b.t["5MstTk"]) : b.NW.string(b.t.kkKapK),
-    I = [N];
+  let E = y ? b.NW.string(b.t["5MstTk"]) : b.NW.string(b.t.kkKapK),
+    I = [E];
   O > 0 && I.push(b.NW.formatToPlainString(b.t["3l1GOz"], {
     mentionCount: O
   })), j > 0 && I.push(b.NW.string(b.t.x5zAGR));
@@ -100,7 +100,7 @@ function C(e) {
     }({
       buttonRef: v,
       onClick: x,
-      label: N,
+      label: E,
       "aria-label": I.join(", "),
       tooltipPosition: "top",
       iconComponent: P === m.MI.NO_CHAT ? a.sXD : a.hic,

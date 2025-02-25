@@ -56,9 +56,9 @@ function u(e) {
   } = (0, i.s)(), {
     Component: j,
     events: O,
-    play: E
+    play: N
   } = (0, l.w)();
-  return C ? (n = j, u = O, d = E) : (n = v, u = y, d = x), (0, r.jsx)(c.d, function(e) {
+  return C ? (n = j, u = O, d = N) : (n = v, u = y, d = x), (0, r.jsx)(c.d, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

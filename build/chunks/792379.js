@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(900927),
   j = n(678738),
   O = n(502762),
-  E = n(530),
-  N = n(679332),
+  N = n(530),
+  E = n(679332),
   I = n(544989),
   P = n(171368),
   S = n(228168),
@@ -80,7 +80,7 @@ function R(e) {
         children: [(0, r.jsxs)(l.u2, {
           children: [(0, r.jsx)(I.Z, {
             profileType: S.y0.PANEL,
-            children: (0, r.jsx)(N.Z, {
+            children: (0, r.jsx)(E.Z, {
               user: t
             })
           }), (0, r.jsxs)("header", {
@@ -101,7 +101,7 @@ function R(e) {
             })]
           }), (0, r.jsxs)("div", {
             className: A.body,
-            children: [(0, r.jsx)(E.Z, {
+            children: [(0, r.jsx)(N.Z, {
               user: t,
               profileType: S.y0.PANEL,
               nickname: f.ZP.getName(null, n.id, t),

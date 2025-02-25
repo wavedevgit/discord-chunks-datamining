@@ -25,8 +25,8 @@ var i = n(442837),
   x = n(678738),
   j = n(502762),
   O = n(530),
-  E = n(827313),
-  N = n(228168),
+  N = n(827313),
+  E = n(228168),
   I = n(981631),
   P = n(388032),
   S = n(352325);
@@ -58,18 +58,18 @@ function Z(e) {
     className: S.body,
     children: [(0, r.jsx)(O.Z, {
       user: t,
-      profileType: N.y0.PANEL,
+      profileType: E.y0.PANEL,
       nickname: d.ZP.getName(null, T.id, t),
       pronouns: null == Z ? void 0 : Z.pronouns,
       onOpenProfile: w,
       tags: (0, r.jsx)(f.Z, {
         displayProfile: Z,
-        profileType: N.y0.PANEL
+        profileType: E.y0.PANEL
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(b.Z, {
           userId: t.id
-        }), !W && (0, r.jsx)(E.Z, {
+        }), !W && (0, r.jsx)(N.Z, {
           userId: t.id,
           isHovering: A,
           onOpenProfile: w

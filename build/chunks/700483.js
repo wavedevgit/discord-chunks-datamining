@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(357156),
   j = n(221241),
   O = n(923973),
-  E = n(829750),
-  N = n(82965),
+  N = n(829750),
+  E = n(82965),
   I = n(189771),
   P = n(294629),
   S = n(793319),
@@ -76,7 +76,7 @@ function ea(e) {
 function es(e) {
   let {
     channel: t
-  } = e, n = (0, ee.Z)(t.id), [i, l] = (0, en.Z)(t), o = (0, a.e7)([W.Z], () => W.Z.can(er.Plq.REQUEST_TO_SPEAK, t)), c = (0, N.Z)({
+  } = e, n = (0, ee.Z)(t.id), [i, l] = (0, en.Z)(t), o = (0, a.e7)([W.Z], () => W.Z.can(er.Plq.REQUEST_TO_SPEAK, t)), c = (0, E.Z)({
     location: "AudienceRaiseHandButton"
   }), {
     coloredIcons: u
@@ -96,7 +96,7 @@ function es(e) {
 let ec = i.memo(function(e) {
   let {
     channel: t
-  } = e, n = (0, a.e7)([U.Z], () => U.Z.getVoiceChannelId() === t.id, [t.id]), i = (0, N.Z)({
+  } = e, n = (0, a.e7)([U.Z], () => U.Z.getVoiceChannelId() === t.id, [t.id]), i = (0, E.Z)({
     location: "AudienceControlTray"
   }), {
     enabled: l
@@ -139,7 +139,7 @@ function eu(e) {
   let {
     onClick: t
   } = e;
-  return (0, N.Z)({
+  return (0, E.Z)({
     location: "MakeMeASpeakerButton"
   }) ? (0, r.jsx)(w.d, {
     onClick: t,
@@ -173,7 +173,7 @@ function ed(e) {
     canManageGuildEvent: l
   } = (0, x.XJ)(t), c = (0, a.e7)([Y.Z], () => Y.Z.getStageInstanceByChannel(t.id), [t.id]), d = (0, a.e7)([C.ZP], () => C.ZP.getGuildScheduledEvent(null == c ? void 0 : c.guild_scheduled_event_id)), p = (0, a.e7)([U.Z], () => U.Z.getVoiceChannelId() === t.id, [t.id]), {
     suppress: h
-  } = (0, P.Z)(t), f = L.default.getId(), [m] = (0, en.Z)(t), b = q.ZP.isModerator(f, t.id), _ = (0, V.B)(t.id), v = l(d), y = (0, N.Z)({
+  } = (0, P.Z)(t), f = L.default.getId(), [m] = (0, en.Z)(t), b = q.ZP.isModerator(f, t.id), _ = (0, V.B)(t.id), v = l(d), y = (0, E.Z)({
     location: "ExitStageButton"
   });
   return p ? (b || v) && null != c ? (0, r.jsx)(s.yRy, {
@@ -281,7 +281,7 @@ function ep(e) {
   let {
     onClick: t
   } = e;
-  return (0, N.Z)({
+  return (0, E.Z)({
     location: "MoveToAudienceButton"
   }) ? (0, r.jsx)(w.d, {
     iconComponent: s.zRq,
@@ -342,7 +342,7 @@ let ef = i.memo(function(e) {
   } = (0, O.Z)(), y = (0, I.Z)(t), {
     limit: x,
     reachedLimit: w
-  } = (0, E.Z)(t), R = (0, a.e7)([B.default], () => B.default.getCurrentUser()), L = (0, a.e7)([D.Z], () => (0, _.Z)(D.Z)), W = (0, a.e7)([U.Z], () => U.Z.getVoiceChannelId() === t.id, [t.id]), F = (0, a.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), G = (0, K.PK)(t.id), z = x > 0, q = w && !G || null != F && F.user.id !== (null == R ? void 0 : R.id), Y = (0, N.Z)({
+  } = (0, N.Z)(t), R = (0, a.e7)([B.default], () => B.default.getCurrentUser()), L = (0, a.e7)([D.Z], () => (0, _.Z)(D.Z)), W = (0, a.e7)([U.Z], () => U.Z.getVoiceChannelId() === t.id, [t.id]), F = (0, a.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), G = (0, K.PK)(t.id), z = x > 0, q = w && !G || null != F && F.user.id !== (null == R ? void 0 : R.id), Y = (0, E.Z)({
     location: "SpeakerControlTray"
   }), {
     enabled: X
@@ -545,7 +545,7 @@ let ef = i.memo(function(e) {
 function em(e) {
   let {
     channel: t
-  } = e, n = (0, N.Z)({
+  } = e, n = (0, E.Z)({
     location: "StartStageControlTray"
   }), {
     coloredIcons: i

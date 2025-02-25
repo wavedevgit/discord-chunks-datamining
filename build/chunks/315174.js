@@ -146,25 +146,25 @@ let _ = i.memo(function(e) {
     className: l,
     onClick: a,
     onContextMenu: _,
-    onMouseDown: x,
-    disableBannerAnimation: C,
+    onMouseDown: C,
+    disableBannerAnimation: x,
     "aria-expanded": P,
-    "aria-controls": S,
-    guild: N,
-    guildBanner: Z,
-    animationOverlayHeight: I,
+    "aria-controls": N,
+    guild: S,
+    guildBanner: I,
+    animationOverlayHeight: Z,
     children: w,
     headerClassName: E,
     communityInfoVisible: T,
     hasSubheader: D
-  } = e, A = N.hasFeature(g.oNc.ANIMATED_BANNER), R = (0, d.Z)(N), L = !R && N.hasCommunityInfoSubheader(), M = !R && T, k = (0, h.xR)(Z) && A && !C, [G, B] = i.useState(!1), U = i.useRef(), W = i.useRef(null), V = i.useRef(), F = p.QK.getSetting();
+  } = e, A = S.hasFeature(g.oNc.ANIMATED_BANNER), R = (0, d.Z)(S), L = !R && S.hasCommunityInfoSubheader(), k = !R && T, M = (0, h.xR)(I) && A && !x, [G, B] = i.useState(!1), U = i.useRef(), W = i.useRef(null), V = i.useRef(), F = p.QK.getSetting();
   i.useEffect(() => {
-    if (k && t && !U.current && F) return B(!0), V.current = setTimeout(() => {
+    if (M && t && !U.current && F) return B(!0), V.current = setTimeout(() => {
       B(!1)
     }, 5e3), () => {
       clearTimeout(V.current)
     }
-  }, [k, t, F]), i.useEffect(() => {
+  }, [M, t, F]), i.useEffect(() => {
     U.current = t
   }, [t]);
   let H = () => {
@@ -189,9 +189,9 @@ let _ = i.memo(function(e) {
             [v.hasBanner]: H(),
             [v.bannerVisible]: t,
             [e]: !z && t,
-            [v.communityInfoVisible]: M || D && L
+            [v.communityInfoVisible]: k || D && L
           }),
-          onMouseDown: x,
+          onMouseDown: C,
           onContextMenu: _,
           onClick: a,
           children: [(0, r.jsxs)("header", {
@@ -201,16 +201,16 @@ let _ = i.memo(function(e) {
             children: [(0, r.jsxs)("div", {
               className: o()(v.headerContent, v.primaryInfo),
               children: [(0, r.jsx)(f.Z, {
-                guild: N,
+                guild: S,
                 isBannerVisible: t
-              }), N.id === m._ && (0, r.jsx)(j, {}), (0, r.jsx)(c.X6q, {
+              }), S.id === m._ && (0, r.jsx)(j, {}), (0, r.jsx)(c.X6q, {
                 variant: "text-md/semibold",
                 lineClamp: 1,
                 className: v.name,
-                children: N.toString()
+                children: S.toString()
               }), null != a && (0, r.jsx)(c.P3F, {
                 className: v.headerButton,
-                "aria-controls": S,
+                "aria-controls": N,
                 "aria-expanded": P,
                 focusProps: {
                   ringTarget: W,
@@ -219,32 +219,32 @@ let _ = i.memo(function(e) {
                 onClick: a,
                 onContextMenu: _,
                 "aria-label": b.NW.formatToPlainString(b.t.xMXpl5, {
-                  guildName: null !== (i = null == N ? void 0 : N.toString()) && void 0 !== i ? i : ""
+                  guildName: null !== (i = null == S ? void 0 : S.toString()) && void 0 !== i ? i : ""
                 })
               }), (0, r.jsx)("div", {
                 className: v.headerChildren,
                 children: w
               })]
             }), L && (0, r.jsx)(O, {
-              guild: N,
+              guild: S,
               controller: n,
-              hasBanner: null != Z,
+              hasBanner: null != I,
               hasSubheader: null != D && D
             })]
-          }), null != Z ? (0, r.jsx)(y, {
-            guild: N,
+          }), null != I ? (0, r.jsx)(y, {
+            guild: S,
             controller: n,
-            guildBanner: Z,
+            guildBanner: I,
             animate: G
           }) : null]
-        }), k && H() ? (0, r.jsx)("div", {
+        }), M && H() ? (0, r.jsx)("div", {
           className: v.animatedBannerHoverLayer,
           onMouseEnter: () => {
             B(!0), clearTimeout(V.current)
           },
           onMouseLeave: () => B(!1),
           style: {
-            height: I
+            height: Z
           }
         }) : null]
       })

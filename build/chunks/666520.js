@@ -19,25 +19,25 @@ function p(e) {
     className: t,
     userId: p,
     onUpdate: m
-  } = e, I = (0, i.e7)([a.Z], () => a.Z.hidePersonalInformation), {
-    loading: b,
-    note: g
+  } = e, b = (0, i.e7)([a.Z], () => a.Z.hidePersonalInformation), {
+    loading: g,
+    note: v
   } = (0, c.Z)(p), y = o.useRef(null);
   return (o.useEffect(() => {
-    if (!n || I) return;
+    if (!n || b) return;
     let e = y.current;
     (null == e ? void 0 : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
-  }, [n, I]), I) ? null : (0, r.jsx)("div", {
+  }, [n, b]), b) ? null : (0, r.jsx)("div", {
     className: t,
     children: (0, r.jsx)(l.lcI, {
       ref: y,
       className: f.textarea,
-      disabled: b,
-      placeholder: b ? u.NW.string(u.t["WLKx//"]) : u.NW.string(u.t.VBhOe3),
+      disabled: g,
+      placeholder: g ? u.NW.string(u.t["WLKx//"]) : u.NW.string(u.t.VBhOe3),
       "aria-label": u.NW.string(u.t.PbMNh4),
       onBlur: e => {
         let n = e.currentTarget.value;
-        (null != g ? g : "") !== n && (null == m || m(), s.Z.updateNote(p, n))
+        (null != v ? v : "") !== n && (null == m || m(), s.Z.updateNote(p, n))
       },
       onKeyPress: e => {
         if (13 === e.which) {
@@ -47,7 +47,7 @@ function p(e) {
           } else e.preventDefault(), e.currentTarget.blur()
         } else e.which === d.yXg.SPACE && e.stopPropagation()
       },
-      defaultValue: null != g ? g : void 0,
+      defaultValue: null != v ? v : void 0,
       maxLength: d.vuo
     })
   })

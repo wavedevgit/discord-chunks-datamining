@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  M: () => N
+  M: () => E
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -25,7 +25,7 @@ var r = n(200651),
   j = n(981631),
   O = n(388032);
 
-function E(e) {
+function N(e) {
   let {
     senderId: t,
     channelId: n,
@@ -86,7 +86,7 @@ function E(e) {
   })
 }
 
-function N(e) {
+function E(e) {
   let {
     channelId: t,
     warningId: s,
@@ -97,7 +97,7 @@ function N(e) {
     isBlocked: m.Z.isBlocked(d)
   }), [d]), g = i.useCallback(() => {
     (0, _.T)(t, [s])
-  }, [t, s]), b = (0, x.C2)(), N = i.useCallback(e => () => {
+  }, [t, s]), b = (0, x.C2)(), E = i.useCallback(e => () => {
     c.Z.addRelationship({
       userId: d,
       context: {
@@ -145,7 +145,7 @@ function N(e) {
               title: e
             }, t)),
             actionRows: (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(E, {
+              children: [(0, r.jsx)(N, {
                 senderId: d,
                 channelId: t,
                 warningId: s
@@ -189,7 +189,7 @@ function N(e) {
             return e
           }({}, n), c = c = {
             userId: d,
-            confirmBlock: N(e),
+            confirmBlock: E(e),
             onCancel: () => {
               null == l || l(), (0, v.qc)({
                 channelId: t,

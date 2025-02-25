@@ -10,8 +10,8 @@ var n = i(200651),
   a = i(442837),
   o = i(481060),
   u = i(893776),
-  c = i(809206),
-  d = i(607070),
+  d = i(809206),
+  c = i(607070),
   m = i(600164),
   f = i(339085),
   E = i(565138),
@@ -20,19 +20,19 @@ var n = i(200651),
   v = i(594174),
   N = i(626135),
   I = i(768581),
-  _ = i(944163),
-  p = i(246364),
+  p = i(944163),
+  _ = i(246364),
   j = i(983736),
-  S = i(187565),
-  x = i(990488),
-  y = i(592286),
+  y = i(187565),
+  S = i(990488),
+  x = i(592286),
   b = i(981631),
   O = i(388032),
   T = i(92850),
   A = i(419851),
   C = i(296507),
-  D = i(866402),
-  P = i(246403);
+  P = i(866402),
+  D = i(246403);
 
 function L(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -125,7 +125,7 @@ let F = e => {
       className: T.content,
       children: [(0, n.jsx)("img", {
         alt: O.NW.string(O.t.wNAbl5),
-        src: P,
+        src: D,
         className: T.applicationIcon
       }), (0, n.jsx)(o.X6q, {
         id: t,
@@ -155,13 +155,13 @@ let F = e => {
       updateFormState: r,
       isPreview: s = !1,
       disableVerification: o = !1
-    } = e, u = (0, a.e7)([_.Z], () => _.Z.get(i));
+    } = e, u = (0, a.e7)([p.Z], () => p.Z.get(i));
     if (null == u) return null;
-    let c = null !== (t = null != l ? l : null == u ? void 0 : u.formFields) && void 0 !== t ? t : [],
-      d = s ? x.W : x.r;
-    return (0, n.jsx)(d, {
+    let d = null !== (t = null != l ? l : null == u ? void 0 : u.formFields) && void 0 !== t ? t : [],
+      c = s ? S.W : S.r;
+    return (0, n.jsx)(c, {
       guildId: i,
-      formFields: c,
+      formFields: d,
       updateFormFields: r,
       disableVerification: o
     })
@@ -180,7 +180,7 @@ let F = e => {
       updateFormState: r,
       useReducedMotion: a,
       disableVerification: u,
-      isPreview: c = !1
+      isPreview: d = !1
     } = e;
     return (0, n.jsxs)("div", {
       className: T.content,
@@ -188,7 +188,7 @@ let F = e => {
         className: T.animationAndSparklesContainer,
         children: [(0, n.jsx)("img", {
           alt: O.NW.string(O.t.VoB8OT),
-          src: D,
+          src: P,
           className: s()(T.sparkleIcon, T.sparkleBottom)
         }), (0, n.jsx)(o.Fmz, {
           importData: M,
@@ -215,7 +215,7 @@ let F = e => {
         guildId: i,
         formState: l,
         updateFormState: r,
-        isPreview: c,
+        isPreview: d,
         disableVerification: u
       })]
     })
@@ -225,23 +225,23 @@ let F = e => {
     let {
       verificationForm: r,
       headerId: u,
-      guildId: x,
+      guildId: S,
       onClose: A,
       onComplete: C,
-      isPreview: D = !1
-    } = e, P = null == r ? void 0 : r.guild, V = (0, S.N0)(x, P, D), M = null == r ? void 0 : r.formFields.some(e => e.field_type !== p.QJ.TERMS), Z = (0, a.e7)([v.default], () => v.default.getCurrentUser()), k = null == Z ? void 0 : Z.verified, B = null == Z ? void 0 : Z.isPhoneVerified(), W = (0, a.e7)([f.ZP], () => f.ZP.getGuildEmoji(x)), {
+      isPreview: P = !1
+    } = e, D = null == r ? void 0 : r.guild, V = (0, y.N0)(S, D, P), M = null == r ? void 0 : r.formFields.some(e => e.field_type !== _.QJ.TERMS), Z = (0, a.e7)([v.default], () => v.default.getCurrentUser()), k = null == Z ? void 0 : Z.verified, B = null == Z ? void 0 : Z.isPhoneVerified(), W = (0, a.e7)([f.ZP], () => f.ZP.getGuildEmoji(S)), {
       storeMemberCount: U,
       storeOnlineCount: z
     } = (0, a.cj)([g.Z], () => ({
-      storeMemberCount: g.Z.getMemberCount(x),
-      storeOnlineCount: g.Z.getOnlineCount(x)
+      storeMemberCount: g.Z.getMemberCount(S),
+      storeOnlineCount: g.Z.getOnlineCount(S)
     })), [H, q] = l.useState(null !== (t = null == r ? void 0 : r.formFields) && void 0 !== t ? t : []), [J, Y] = l.useState(!1), [X, K] = l.useState(null), [Q, $] = l.useState(""), [ee, et] = l.useState(""), [ei, en] = l.useState(null), [el, er] = l.useState(null), es = null !== (i = null == V ? void 0 : V.hasFeature(b.oNc.CLAN)) && void 0 !== i && i, {
       emojisToRender: ea,
       remainingEmojis: eo,
       numGuildEmoji: eu
     } = l.useMemo(() => {
       var e;
-      let t = [...null !== (e = 0 === W.length ? null == P ? void 0 : P.emojis : W) && void 0 !== e ? e : []].reverse(),
+      let t = [...null !== (e = 0 === W.length ? null == D ? void 0 : D.emojis : W) && void 0 !== e ? e : []].reverse(),
         i = 0,
         n = t.length;
       return n > 12 && null != t && (i = Math.min(n - (t = t.slice(0, 11)).length, 99)), {
@@ -249,18 +249,18 @@ let F = e => {
         remainingEmojis: i,
         numGuildEmoji: n
       }
-    }, [P, W]), ec = null != U ? U : null == P ? void 0 : P.approximate_member_count, ed = null != z ? z : null == P ? void 0 : P.approximate_presence_count, em = null != M && M, {
+    }, [D, W]), ed = null != U ? U : null == D ? void 0 : D.approximate_member_count, ec = null != z ? z : null == D ? void 0 : D.approximate_presence_count, em = null != M && M, {
       currentStep: ef,
       setCurrentStep: eE
-    } = (0, S.k3)(Z, em);
-    (0, S.lk)(H), l.useEffect(() => {
+    } = (0, y.k3)(Z, em);
+    (0, y.lk)(H), l.useEffect(() => {
       null != r && q(r.formFields)
     }, [r]), l.useEffect(() => {
-      null != x && N.default.track(b.rMx.OPEN_MODAL, {
-        type: y.N4,
-        guild_id: x
+      null != S && N.default.track(b.rMx.OPEN_MODAL, {
+        type: x.N4,
+        guild_id: S
       })
-    }, [x]);
+    }, [S]);
     let eg = l.useMemo(() => {
         if (H.some(e => !(0, j.OA)(e))) return !0;
         if (em || (null == Z ? void 0 : Z.isStaff())) return !1;
@@ -276,12 +276,12 @@ let F = e => {
             return !1
         }
       }, [H, V, em, Z, B, k]),
-      eh = (0, a.e7)([d.Z], () => d.Z.useReducedMotion);
+      eh = (0, a.e7)([c.Z], () => c.Z.useReducedMotion);
     if (null == V) return null;
     let ev = async () => {
       Y(!0), en(null), er(null);
       try {
-        await (0, c.S2)({
+        await (0, d.S2)({
           email: Q,
           password: ee
         }), Y(!1), eE(1)
@@ -293,13 +293,13 @@ let F = e => {
       }
     }, eN = async () => {
       Y(!0), K(null);
-      let e = null != Z ? h.ZP.getMember(x, Z.id) : null;
+      let e = null != Z ? h.ZP.getMember(S, Z.id) : null;
       if (null != e && !e.isPending) {
         null == A || A(!0);
         return
       }
       try {
-        await (null == C ? void 0 : C(R(L({}, null != r ? r : _.t), {
+        await (null == C ? void 0 : C(R(L({}, null != r ? r : p.t), {
           formFields: H
         }))), null == A || A(!0)
       } catch (n) {
@@ -366,7 +366,7 @@ let F = e => {
             })]
           }) : null]
         }), (0, n.jsxs)("div", {
-          children: [null != ed && (0, n.jsxs)(m.Z, {
+          children: [null != ec && (0, n.jsxs)(m.Z, {
             align: m.Z.Align.CENTER,
             className: T.onlineCount,
             children: [(0, n.jsx)("div", {
@@ -374,17 +374,17 @@ let F = e => {
             }), (0, n.jsx)(o.Text, {
               variant: "text-sm/normal",
               children: O.NW.format(O.t["Oj3M6+"], {
-                membersOnline: ed
+                membersOnline: ec
               })
             })]
-          }), null != ec && (0, n.jsxs)(m.Z, {
+          }), null != ed && (0, n.jsxs)(m.Z, {
             align: m.Z.Align.CENTER,
             children: [(0, n.jsx)("div", {
               className: T.dotMembers
             }), (0, n.jsx)(o.Text, {
               variant: "text-sm/normal",
               children: O.NW.format(O.t.LM4ufX, {
-                members: ec
+                members: ed
               })
             })]
           })]
@@ -419,10 +419,10 @@ let F = e => {
                 case 2:
                   return (0, n.jsx)(G, {
                     headerId: u,
-                    guildId: x,
+                    guildId: S,
                     formState: H,
                     updateFormState: q,
-                    isPreview: D,
+                    isPreview: P,
                     useReducedMotion: eh,
                     disableVerification: em
                   })

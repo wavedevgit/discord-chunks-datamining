@@ -30,8 +30,8 @@ let v = e => {
     setIsHovered: x,
     onMouseEnter: j,
     onMouseLeave: O,
-    cancelTimers: E
-  } = (0, u.Z)(200, 300), [N, I] = i.useState(!1), P = (0, a.e7)([p.Z], () => p.Z.effectCooldownEndTime), S = i.useMemo(() => null != P ? (P.getTime() - Date.now()) / 1e3 : 0, [P]), {
+    cancelTimers: N
+  } = (0, u.Z)(200, 300), [E, I] = i.useState(!1), P = (0, a.e7)([p.Z], () => p.Z.effectCooldownEndTime), S = i.useMemo(() => null != P ? (P.getTime() - Date.now()) / 1e3 : 0, [P]), {
     seconds: Z
   } = (0, c.Z)(null != P ? P : new Date), T = Z > 0, {
     mode: A
@@ -47,15 +47,15 @@ let v = e => {
   }), k = A === h.BK.GroupedButtonsRedMic || M ? "green" : void 0;
   R && (k = "primaryDark");
   let L = i.useCallback(e => {
-      "focus" !== e.type && (N || T || j())
-    }, [N, T, j]),
+      "focus" !== e.type && (E || T || j())
+    }, [E, T, j]),
     D = i.useCallback(() => {
-      N || O()
-    }, [O, N]),
+      E || O()
+    }, [O, E]),
     W = i.useCallback((e, t) => {
-      E(), I(!N), l === b.D.EMOJI ? null == v || v(void 0) : null == v || v(b.D.EMOJI), (!y || N) && (null == t || t(e))
-    }, [E, N, y, v, l]),
-    U = (y || N) && (l === b.D.EMOJI || null == l);
+      N(), I(!E), l === b.D.EMOJI ? null == v || v(void 0) : null == v || v(b.D.EMOJI), (!y || E) && (null == t || t(e))
+    }, [N, E, y, v, l]),
+    U = (y || E) && (l === b.D.EMOJI || null == l);
   return (0, r.jsx)(s.yRy, {
     shouldShow: U,
     animation: w ? s.yRy.Animation.FADE : s.yRy.Animation.TRANSLATE,
@@ -86,7 +86,7 @@ let v = e => {
       } = e;
       return (0, r.jsx)(d.Z, {
         isCenterButton: !0,
-        color: N ? k : void 0,
+        color: E ? k : void 0,
         totalCooldownSeconds: S,
         remainingCooldownSeconds: Z,
         className: o()(!w && C.controlButton, n),
@@ -98,7 +98,7 @@ let v = e => {
         },
         onMouseEnter: L,
         onMouseLeave: D,
-        isActive: N
+        isActive: E
       })
     }
   })

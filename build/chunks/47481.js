@@ -49,8 +49,8 @@ function d(e) {
       content: O,
       contentKey: O
     }), t = O);
-    let E = _[_.length - 1],
-      N = null,
+    let N = _[_.length - 1],
+      E = null,
       I = (0, s.DQ)(e);
     C = C || I;
     let P = function(e, t, n) {
@@ -62,13 +62,13 @@ function d(e) {
     }(p, e, I && m);
     if (null !== P) {
       let t, n;
-      [N, E] = (n = x = E, null == x || x.type !== P ? (t = {
+      [E, N] = (n = x = N, null == x || x.type !== P ? (t = {
         type: P,
         content: [],
         key: e.id
       }, _.push(t)) : n = (t = x).content[t.content.length - 1], [t, n])
     }
-    f === e.id && null != v ? (null != E && E.type === u.ys_.DIVIDER ? E.unreadId = e.id : null !== N ? (j = N, e.isFirstMessageInForumPost(p) || j.content.push({
+    f === e.id && null != v ? (null != N && N.type === u.ys_.DIVIDER ? N.unreadId = e.id : null !== E ? (j = E, e.isFirstMessageInForumPost(p) || j.content.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), j.hasUnread = !0) : e.isFirstMessageInForumPost(p) || _.push({
@@ -84,7 +84,7 @@ function d(e) {
       content: S,
       groupId: S.id
     });
-    let Z = (null == E ? void 0 : E.type) === u.ys_.MESSAGE ? d : E;
+    let Z = (null == N ? void 0 : N.type) === u.ys_.MESSAGE ? d : N;
     (0, a.J)(p, Z, e) && (n = e.id);
     let T = {
       type: e.type === u.uaV.THREAD_STARTER_MESSAGE ? u.ys_.THREAD_STARTER_MESSAGE : u.ys_.MESSAGE,
@@ -102,7 +102,7 @@ function d(e) {
       content: b.topic,
       contentKey: b.startId,
       isSummaryDivider: !0
-    }), null !== N ? (N.content.push(T), T.jumpTarget && (N.hasJumpTarget = !0)) : _.push(T), e.isFirstMessageInForumPost(p) && _.push({
+    }), null !== E ? (E.content.push(T), T.jumpTarget && (E.hasJumpTarget = !0)) : _.push(T), e.isFirstMessageInForumPost(p) && _.push({
       type: u.ys_.FORUM_POST_ACTION_BAR
     }), null != b && e.id === b.endId && b.count > 1 && _.push({
       type: u.ys_.DIVIDER,

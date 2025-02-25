@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(410575),
   j = n(393238),
   O = n(110924),
-  E = n(40851),
-  N = n(636449),
+  N = n(40851),
+  E = n(636449),
   I = n(115130),
   P = n(317381),
   S = n(596040),
@@ -78,8 +78,8 @@ var r = n(200651),
   ex = n(358085),
   ej = n(998502),
   eO = n(228488),
-  eE = n(358221),
-  eN = n(682901),
+  eN = n(358221),
+  eE = n(682901),
   eI = n(414910),
   eP = n(887012),
   eS = n(909820),
@@ -523,7 +523,7 @@ class eY extends i.PureComponent {
         let t = e.getGuildId();
         null != t && (0, z.uL)((0, ev.LY)(t)), H.hP(e)
       };
-      !t || (0, N.R)() ? n() : (0, Z.Z)(n)
+      !t || (0, E.R)() ? n() : (0, Z.Z)(n)
     }), eH(this, "handleStayOnTop", e => {
       H.hY(eU.KJ3.CHANNEL_CALL_POPOUT, e)
     }), eH(this, "handleClosePopout", () => {
@@ -738,34 +738,34 @@ let eK = function(e) {
     ref: h
   } = (0, j.Z)(), {
     ref: m
-  } = (0, j.Z)(), g = (0, E.bp)(), b = (0, W.Z)(), _ = (0, u.e7)([eg.Z], () => {
+  } = (0, j.Z)(), g = (0, N.bp)(), b = (0, W.Z)(), _ = (0, u.e7)([eg.Z], () => {
     var e;
     return (null !== (e = null == b ? void 0 : b.channelId) && void 0 !== e ? e : eg.Z.getVoiceChannelId()) === n.id
   }), {
     participants: C,
     filteredParticipants: y,
-    participantsVersion: N,
+    participantsVersion: E,
     mode: Z,
     layout: A,
     participantsOpen: R,
     participantsListOpen: M,
     chatOpen: k,
     selectedParticipant: B
-  } = (0, u.cj)([eE.Z], () => {
+  } = (0, u.cj)([eN.Z], () => {
     let e = g === eU.IlC.POPOUT,
-      t = eE.Z.getMode(n.id);
+      t = eN.Z.getMode(n.id);
     e && (t = eU.WtW.VIDEO);
-    let r = t === eU.WtW.VIDEO ? eE.Z.getLayout(n.id, g) : eU.AEg.MINIMUM;
+    let r = t === eU.WtW.VIDEO ? eN.Z.getLayout(n.id, g) : eU.AEg.MINIMUM;
     return e && r !== eU.AEg.FULL_SCREEN && (r = eU.AEg.NO_CHAT), {
       mode: t,
       layout: r,
-      selectedParticipant: t !== eU.WtW.VOICE ? eE.Z.getSelectedParticipant(n.id) : null,
-      participants: eE.Z.getParticipants(n.id),
-      filteredParticipants: eE.Z.getFilteredParticipants(n.id),
-      participantsOpen: eE.Z.getParticipantsOpen(n.id),
-      chatOpen: eE.Z.getChatOpen(n.id),
-      participantsListOpen: eE.Z.getParticipantsListOpen(n.id),
-      participantsVersion: eE.Z.getParticipantsVersion(n.id)
+      selectedParticipant: t !== eU.WtW.VOICE ? eN.Z.getSelectedParticipant(n.id) : null,
+      participants: eN.Z.getParticipants(n.id),
+      filteredParticipants: eN.Z.getFilteredParticipants(n.id),
+      participantsOpen: eN.Z.getParticipantsOpen(n.id),
+      chatOpen: eN.Z.getChatOpen(n.id),
+      participantsListOpen: eN.Z.getParticipantsListOpen(n.id),
+      participantsVersion: eN.Z.getParticipantsVersion(n.id)
     }
   }, [g, n.id]), F = (0, u.Wu)([ec.Z], () => ec.Z.getAllActiveStreams()), {
     selectedStream: H
@@ -804,7 +804,7 @@ let eK = function(e) {
     }),
     {
       enabled: eC
-    } = (0, eN.Z)({
+    } = (0, eE.Z)({
       location: "ChannelCall"
     }),
     ev = (0, L.bn)(d.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK),
@@ -839,7 +839,7 @@ let eK = function(e) {
             inCall: _,
             participants: C,
             filteredParticipants: y,
-            participantsVersion: N,
+            participantsVersion: E,
             layout: A,
             chatOpen: k,
             maxSidebarWidth: a - 550,

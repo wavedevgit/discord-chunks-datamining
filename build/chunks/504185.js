@@ -25,8 +25,8 @@ var r = n(200651),
   x = n(185935),
   j = n(540059),
   O = n(788983),
-  E = n(928518),
-  N = n(703656),
+  N = n(928518),
+  E = n(703656),
   I = n(493754),
   P = n(880831),
   S = n(73563),
@@ -61,7 +61,7 @@ var r = n(200651),
 let ei = "HasBeenInStageChannel",
   el = (e, t) => () => {
     let n = e.getGuildId();
-    null != n && null != t && (0, N.XU)(n, t), O.hP(e)
+    null != n && null != t && (0, E.XU)(n, t), O.hP(e)
   },
   eo = () => {
     d.Z.wait(() => O.xv(ee.KJ3.CHANNEL_CALL_POPOUT))
@@ -138,8 +138,8 @@ function eu(e) {
     y = (0, s.e7)([k.Z], () => k.Z.can(ee.Plq.CONNECT, c)),
     x = (0, F.w8)(c.id, H.pV.SPEAKER),
     O = (0, s.e7)([b.Z], () => b.Z.getSelectedParticipant(c.id)),
-    E = m && _ !== ee.IlC.POPOUT,
-    N = (0, j.Q3)("StageChannelCallContent"),
+    N = m && _ !== ee.IlC.POPOUT,
+    E = (0, j.Q3)("StageChannelCallContent"),
     I = null !== (n = null === (t = D.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== n && n,
     [Z, T] = i.useState(0),
     {
@@ -172,8 +172,8 @@ function eu(e) {
       height: "calc(100% - ".concat(M, ")"),
       paddingTop: M
     },
-    disableGradients: !!N && !v || 0 === Z && S.e.TOP,
-    renderBottomLeft: () => N && I ? null : (0, r.jsx)(ec, {
+    disableGradients: !!E && !v || 0 === Z && S.e.TOP,
+    renderBottomLeft: () => E && I ? null : (0, r.jsx)(ec, {
       channel: c
     }),
     renderBottomCenter: () => v ? (0, r.jsx)(X.Z, {
@@ -194,7 +194,7 @@ function eu(e) {
       showRequestToSpeakSidebar: d,
       channel: c
     }),
-    renderChatToasts: () => !w || g || E ? null : (0, r.jsx)(C.ZP, {
+    renderChatToasts: () => !w || g || N ? null : (0, r.jsx)(C.ZP, {
       children: (0, r.jsx)(P.Z, {
         className: o()(er.chatToasts, {
           [er.rtsSidebarOpen]: d
@@ -206,11 +206,11 @@ function eu(e) {
     onPreventIdle: () => {},
     onAllowIdle: () => {},
     onForceIdle: () => {},
-    screenMessage: E ? {
+    screenMessage: N ? {
       mainText: en.NW.string(en.t.J5bXZW)
     } : null,
     idle: !1,
-    children: !E && l
+    children: !N && l
   })
 }
 
@@ -222,11 +222,11 @@ function ed(e) {
   }, [l, a]), {
     popoutWindow: _,
     popoutWindowAlwaysOnTop: j
-  } = (0, s.cj)([E.Z], () => ({
-    popoutWindow: E.Z.getWindow(ee.KJ3.CHANNEL_CALL_POPOUT),
-    popoutWindowAlwaysOnTop: E.Z.getIsAlwaysOnTop(ee.KJ3.CHANNEL_CALL_POPOUT)
+  } = (0, s.cj)([N.Z], () => ({
+    popoutWindow: N.Z.getWindow(ee.KJ3.CHANNEL_CALL_POPOUT),
+    popoutWindowAlwaysOnTop: N.Z.getIsAlwaysOnTop(ee.KJ3.CHANNEL_CALL_POPOUT)
   })), O = null != _ && !_.closed, {
-    analyticsLocations: N
+    analyticsLocations: E
   } = (0, g.ZP)(m.Z.STAGE_CHANNEL_CALL), I = (0, f.bp)(), {
     chatOpen: P,
     participantsListOpen: S
@@ -268,7 +268,7 @@ function ed(e) {
     ref: w
   } = (0, p.Z)(), R = A - 550, k = !O || O && I === ee.IlC.POPOUT;
   return (0, r.jsx)(g.Gt, {
-    value: N,
+    value: E,
     children: (0, r.jsxs)(C.B2, {
       children: [(0, r.jsxs)("div", {
         className: er.container,

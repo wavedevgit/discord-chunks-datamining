@@ -22,21 +22,21 @@ function f(e) {
     setPopoutRef: a
   } = e, {
     guildProfile: f,
-    fetchGuildProfile: x,
-    fetchStatus: g
-  } = (0, d.u)(t), p = (0, i.e7)([o.Z], () => o.Z.getErrorCode(t)), b = l.useRef(null), v = l.useCallback(() => {
-    x(!0)
-  }, [x]);
+    fetchGuildProfile: p,
+    fetchStatus: b
+  } = (0, d.u)(t), g = (0, i.e7)([o.Z], () => o.Z.getErrorCode(t)), x = l.useRef(null), O = l.useCallback(() => {
+    p(!0)
+  }, [p]);
   l.useEffect(() => {
-    x()
-  }, [x]), l.useEffect(() => {
-    null == a || a(null == b ? void 0 : b.current)
-  }, [b, a]);
-  let O = null;
-  return O = g === o.a.NOT_FETCHED || g === o.a.FETCHING ? (0, r.jsx)("div", {
+    p()
+  }, [p]), l.useEffect(() => {
+    null == a || a(null == x ? void 0 : x.current)
+  }, [x, a]);
+  let v = null;
+  return v = b === o.a.NOT_FETCHED || b === o.a.FETCHING ? (0, r.jsx)("div", {
     className: s()(j.container, j.spinnerContainer),
     children: (0, r.jsx)(c.$jN, {})
-  }) : null == f && 50001 === p ? (0, r.jsx)("div", {
+  }) : null == f && 50001 === g ? (0, r.jsx)("div", {
     className: j.container,
     children: (0, r.jsx)(h.Z, {
       guildId: t,
@@ -46,7 +46,7 @@ function f(e) {
     className: j.container,
     children: (0, r.jsx)(u.Z, {
       name: n,
-      onRetry: v
+      onRetry: O
     })
   }) : (0, r.jsx)("div", {
     className: j.container,
@@ -54,8 +54,8 @@ function f(e) {
       profile: f
     })
   }), (0, r.jsx)(c.VqE, {
-    ref: b,
+    ref: x,
     "aria-label": null == f ? void 0 : f.name,
-    children: O
+    children: v
   })
 }

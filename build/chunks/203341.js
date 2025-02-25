@@ -1,7 +1,7 @@
 /** Chunk was on 71611 **/
 n.d(t, {
   S: () => O,
-  Z: () => E
+  Z: () => N
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -44,7 +44,7 @@ function O() {
   return null != e || t.length > 0
 }
 
-function E(e) {
+function N(e) {
   var {
     channel: t
   } = e, n = function(e, t) {
@@ -67,12 +67,12 @@ function E(e) {
       var e, t;
       return null === (e = h.Z.getSessionById(null !== (t = null == _ ? void 0 : _.sessionId) && void 0 !== t ? t : "")) || void 0 === e ? void 0 : e.clientInfo.os
     }),
-    E = (0, l.e7)([p.Z], () => p.Z.hasLayers()),
-    [N, I] = (0, l.Wu)([s.Z], () => [s.Z.getMode(t.id), s.Z.getLayout(t.id)]),
+    N = (0, l.e7)([p.Z], () => p.Z.hasLayers()),
+    [E, I] = (0, l.Wu)([s.Z], () => [s.Z.getMode(t.id), s.Z.getLayout(t.id)]),
     P = (0, a.s9z)(a.JQI),
     S = (0, m.Z)().filter(e => e.twoWayLink),
     [Z, T] = i.useState(!1),
-    A = v.WtW.VOICE !== N && [v.AEg.NO_CHAT, v.AEg.FULL_SCREEN].includes(I) ? "top" : "bottom",
+    A = v.WtW.VOICE !== E && [v.AEg.NO_CHAT, v.AEg.FULL_SCREEN].includes(I) ? "top" : "bottom",
     w = [];
   return S.length > 0 && w.push(o.z.DONUT_DESKTOP_NUX), (0, r.jsx)(c.ZP, {
     contentTypes: w,
@@ -84,9 +84,9 @@ function E(e) {
       return (0, r.jsx)(a.yRy, {
         position: A,
         spacing: s ? 16 : void 0,
-        positionKey: "".concat(N, ":").concat(I),
+        positionKey: "".concat(E, ":").concat(I),
         onRequestClose: () => T(!1),
-        shouldShow: (s || Z) && !E && !P,
+        shouldShow: (s || Z) && !N && !P,
         renderPopout: e => {
           let {
             closePopout: n

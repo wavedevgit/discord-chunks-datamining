@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(141321),
   j = n(618158),
   O = n(390322),
-  E = n(616286),
-  N = n(961048),
+  N = n(616286),
+  E = n(961048),
   I = n(975146),
   P = n(430824),
   S = n(496675),
@@ -117,7 +117,7 @@ function V(e) {
         let {
           isShown: n
         } = t;
-        return (0, i.createElement)(N.Z, G(H({}, e), {
+        return (0, i.createElement)(E.Z, G(H({}, e), {
           key: "more-options",
           isActive: n,
           className: F.button,
@@ -150,7 +150,7 @@ function V(e) {
       className: o()(F.button, {
         [F.sidebarOpen]: M || s
       }),
-      children: (0, r.jsx)(E.T, {
+      children: (0, r.jsx)(N.T, {
         channelId: n.id,
         showRequestToSpeakSidebar: s,
         toggleRequestToSpeakSidebar: l,
@@ -167,15 +167,15 @@ function z(e) {
     channel: l,
     toggleRequestToSpeakSidebar: d,
     showRequestToSpeakSidebar: p
-  } = e, h = (0, m.ZP)(l), f = (0, a.e7)([M.Z], () => M.Z.getStageInstanceByChannel(l.id)), g = (0, T.Io)(l.id), b = (0, T.Rk)(l.id, A.pV.AUDIENCE), x = (0, a.e7)([P.Z], () => P.Z.getGuild(l.guild_id), [l.guild_id]), j = null !== (t = null == x ? void 0 : x.maxStageVideoChannelUsers) && void 0 !== t ? t : 0, O = (null == x ? void 0 : x.isCommunity()) ? j < W.TU7 : (null == x ? void 0 : x.premiumTier) !== W.Eu4.TIER_3 && j <= W.eez, E = (0, D.Z)(l), N = (0, a.e7)([S.Z], () => S.Z.can(R.yP, l)), I = (0, _.Q3)("StageChannelCallHeader"), w = () => {
+  } = e, h = (0, m.ZP)(l), f = (0, a.e7)([M.Z], () => M.Z.getStageInstanceByChannel(l.id)), g = (0, T.Io)(l.id), b = (0, T.Rk)(l.id, A.pV.AUDIENCE), x = (0, a.e7)([P.Z], () => P.Z.getGuild(l.guild_id), [l.guild_id]), j = null !== (t = null == x ? void 0 : x.maxStageVideoChannelUsers) && void 0 !== t ? t : 0, O = (null == x ? void 0 : x.isCommunity()) ? j < W.TU7 : (null == x ? void 0 : x.premiumTier) !== W.Eu4.TIER_3 && j <= W.eez, N = (0, D.Z)(l), E = (0, a.e7)([S.Z], () => S.Z.can(R.yP, l)), I = (0, _.Q3)("StageChannelCallHeader"), w = () => {
     u.Z.updateStageVideoLimitBoostUpsellDismissed(l.id, !0), Z.default.track(W.rMx.BOOSTING_UPSELL_CLICKED, {
       guild_id: l.guild_id,
       type: U.cd.VIDEO_STAGE_LIMIT,
-      is_moderator: N,
+      is_moderator: E,
       action: U.T7.DISMISS
     })
   }, k = {
-    canModerate: N,
+    canModerate: E,
     audienceCount: b,
     channel: l,
     speakerCount: g
@@ -189,13 +189,13 @@ function z(e) {
       channel: n,
       speakerCount: r
     } = L.current;
-    E && Z.default.track(W.rMx.BOOSTING_UPSELL_VIEWED, {
+    N && Z.default.track(W.rMx.BOOSTING_UPSELL_VIEWED, {
       guild_id: n.guild_id,
       type: U.cd.VIDEO_STAGE_LIMIT,
       is_moderator: e,
       listener_count: r + t
     })
-  }, [E]);
+  }, [N]);
   let H = (0, r.jsx)(c.f6W, {
     theme: W.BRd.DARK,
     children: e => {
@@ -249,7 +249,7 @@ function z(e) {
       })
     }
   });
-  return E ? (0, r.jsxs)("div", {
+  return N ? (0, r.jsxs)("div", {
     children: [H, (0, r.jsxs)("div", {
       className: F.boostUpsell,
       children: [(0, r.jsx)(q, {}), (0, r.jsxs)("div", {
@@ -283,7 +283,7 @@ function z(e) {
               }), Z.default.track(W.rMx.BOOSTING_UPSELL_CLICKED, {
                 guild_id: l.guild_id,
                 type: U.cd.VIDEO_STAGE_LIMIT,
-                is_moderator: N,
+                is_moderator: E,
                 action: U.T7.BOOST
               })
             },

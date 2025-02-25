@@ -597,7 +597,8 @@ class e3 extends(p = E.ZP.Store) {
       hasChanges: this.hasChanges(),
       guildMetadata: eo,
       analyticsLocation: et,
-      isGuildMetadataLoaded: er
+      isGuildMetadataLoaded: er,
+      profile: c
     }
   }
 }

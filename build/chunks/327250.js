@@ -25,8 +25,8 @@ var i = n(120356),
   x = n(594174),
   j = n(572004),
   O = n(5192),
-  E = n(51144),
-  N = n(308083),
+  N = n(51144),
+  E = n(308083),
   I = n(388032),
   P = n(685393);
 
@@ -94,7 +94,7 @@ function T(e) {
             primaryGuild: null == t ? void 0 : t.primaryGuild,
             userId: null == t ? void 0 : t.id,
             contextGuildId: n,
-            badgeSize: N.NC.SIZE_16,
+            badgeSize: E.NC.SIZE_16,
             textVariant: "heading-md/semibold",
             className: P.memberClanTag,
             containerClassName: P.memberClanTagContainer
@@ -102,7 +102,7 @@ function T(e) {
         }), (0, r.jsx)(a.Text, {
           variant: "text-md/medium",
           color: "text-normal",
-          children: E.ZP.getUserTag(t)
+          children: N.ZP.getUserTag(t)
         })]
       })]
     }), (0, r.jsx)(a.Text, {
@@ -173,12 +173,12 @@ function w(e) {
     canBanUser: (0, f.mm)(t, u),
     canModerateMembers: null != u && (0, h.F)(u.id, t.id, [x.default, _.Z, C.Z])
   }), [t, u]), O = (0, d.b)(i), {
-    analyticsLocations: E,
-    newestAnalyticsLocation: N
+    analyticsLocations: N,
+    newestAnalyticsLocation: E
   } = (0, c.ZP)(), T = (0, m.sE)(l, {
     targetUserId: t.id,
-    location: N,
-    locations: E
+    location: E,
+    locations: N
   }), w = (0, o.e7)([g.default], () => g.default.getId() === (null == t ? void 0 : t.id));
   return (0, r.jsxs)("div", {
     className: P.bottomRow,
@@ -203,7 +203,7 @@ function w(e) {
             default: e
           } = await n.e("5454").then(n.bind(n, 854360));
           return n => (0, r.jsx)(e, Z(S({}, n), {
-            location: N,
+            location: E,
             guildId: l,
             user: t
           }))
@@ -224,7 +224,7 @@ function w(e) {
             default: e
           } = await n.e("43350").then(n.bind(n, 98746));
           return n => (0, r.jsx)(e, Z(S({}, n), {
-            location: N,
+            location: E,
             guildId: l,
             user: t
           }))
@@ -243,11 +243,11 @@ function w(e) {
         O ? (0, p.q)({
           guildId: i.guildId,
           userId: i.userId,
-          anaylticsLocations: E
+          anaylticsLocations: N
         }) : (0, p.z)({
           guildId: i.guildId,
           userId: i.userId,
-          anaylticsLocations: E
+          anaylticsLocations: N
         })
       },
       children: (0, r.jsx)(a.YlB, {

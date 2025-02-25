@@ -25,8 +25,8 @@ var r = n(200651),
   x = n(475413),
   j = n(228168),
   O = n(388032),
-  E = n(497345),
-  N = n(321975);
+  N = n(497345),
+  E = n(321975);
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -71,20 +71,20 @@ function P(e) {
         themeOverride: s,
         children: (0, r.jsx)(a.u2, {
           children: (0, r.jsxs)("div", {
-            className: E.container,
+            className: N.container,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: N,
-              className: E.previewForCollected,
+              src: E,
+              className: N.previewForCollected,
               "aria-hidden": !0
             }), (0, r.jsxs)("div", {
-              className: E.body,
+              className: N.body,
               children: [(0, r.jsx)(_.Z, {
                 user: t,
                 guildId: null
               }), (0, r.jsx)(c.X6q, {
                 variant: "heading-lg/bold",
-                className: E.header,
+                className: N.header,
                 children: O.NW.string(O.t.VNJ7UF)
               }), (0, r.jsx)(c.Text, {
                 variant: "text-sm/medium",
@@ -95,7 +95,7 @@ function P(e) {
                 variant: "text-sm/medium",
                 children: O.NW.string(O.t["20WzZ2"])
               }), (0, r.jsx)(x.tG, {
-                className: E.centeredButton,
+                className: N.centeredButton,
                 action: "VIEW_BLOCKED_PROFILE",
                 text: O.NW.string(O.t.iXAna2),
                 autoFocus: !0,
@@ -139,16 +139,16 @@ function S(e) {
         themeOverride: P,
         children: (0, r.jsx)(a.u2, {
           children: (0, r.jsxs)("div", {
-            className: E.container,
+            className: N.container,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: N,
-              className: E.previewForCollected,
+              src: E,
+              className: N.previewForCollected,
               "aria-hidden": !0
             }), (0, r.jsxs)("div", {
-              className: o()(E.body, E.bodySpacing),
+              className: o()(N.body, N.bodySpacing),
               children: [(0, r.jsxs)("div", {
-                className: E.headerContainer,
+                className: N.headerContainer,
                 children: [(0, r.jsx)(_.i, {
                   user: t
                 }), (0, r.jsx)(c.X6q, {

@@ -106,10 +106,10 @@ function v(e) {
       }
       return i
     }(e, ["stream", "applicationId", "channel", "exitFullScreen", "appContext", "analyticsLocation", "className"]);
-  let E = null == o ? void 0 : o.getGuildId(),
-    N = null == o ? void 0 : o.id,
-    I = (0, s.e7)([p.Z], () => null != E ? p.Z.getGuild(E) : null, [E]),
-    P = (0, s.e7)([u.ZP], () => u.ZP.getActiveEventByChannel(N), [N]);
+  let N = null == o ? void 0 : o.getGuildId(),
+    E = null == o ? void 0 : o.id,
+    I = (0, s.e7)([p.Z], () => null != N ? p.Z.getGuild(N) : null, [N]),
+    P = (0, s.e7)([u.ZP], () => u.ZP.getActiveEventByChannel(E), [E]);
   if (!(null != I && null != o && h.Z.can(f.Plq.CREATE_INSTANT_INVITE, o))) return null;
   let S = m.NW.string(m.t.VINpSE);
   return null != n ? S = m.NW.string(m.t["6VQaqa"]) : null != i && (S = m.NW.string(m.t["OzOM/v"])), (0, r.jsxs)(r.Fragment, {

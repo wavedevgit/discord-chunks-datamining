@@ -22,13 +22,13 @@ var r = n(200651),
   O = n(199902),
   j = n(592125),
   _ = n(944486),
-  x = n(979651),
-  C = n(709054),
+  C = n(979651),
+  x = n(709054),
   P = n(853856),
-  S = n(593214),
-  N = n(919755),
-  Z = n(110977),
-  I = n(603274),
+  N = n(593214),
+  S = n(919755),
+  I = n(110977),
+  Z = n(603274),
   w = n(981631),
   E = n(388032),
   T = n(588827);
@@ -65,8 +65,8 @@ function R() {
     {
       favoriteAdded: R,
       clearFavoriteAdded: L
-    } = (0, S.up)(),
-    [M, k] = i.useState(!1),
+    } = (0, N.up)(),
+    [k, M] = i.useState(!1),
     {
       favoriteServerMuted: G,
       favoriteChannels: B
@@ -80,7 +80,7 @@ function R() {
     {
       badge: F,
       unread: H
-    } = (0, N.Z)(B),
+    } = (0, S.Z)(B),
     z = function(e) {
       let t = (0, s.e7)([_.Z], () => _.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
@@ -90,8 +90,8 @@ function R() {
           return null != t && null != e[t.channelId]
         }),
         i = (0, s.e7)([O.Z], () => O.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
-        l = (0, s.e7)([x.Z], () => n && null != t && x.Z.hasVideo(t), [n, t]),
-        o = (0, s.Wu)([p.ZP], () => C.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
+        l = (0, s.e7)([C.Z], () => n && null != t && C.Z.hasVideo(t), [n, t]),
+        o = (0, s.Wu)([p.ZP], () => x.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
         a = (0, s.e7)([p.ZP], () => Array.from(p.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n
@@ -120,14 +120,14 @@ function R() {
   return (0, r.jsxs)(m.H, {
     children: [(0, r.jsx)(g.Z, {
       selected: V,
-      hovered: M,
+      hovered: k,
       unread: H && !G,
       className: T.pill
-    }), (0, r.jsx)(I.Z, {
+    }), (0, r.jsx)(Z.Z, {
       onShow: Q,
-      children: (0, r.jsx)(Z.S, {
+      children: (0, r.jsx)(I.S, {
         children: (0, r.jsx)(c.aRk, {
-          selected: Y || V || M,
+          selected: Y || V || k,
           upperBadge: z,
           lowerBadge: q,
           children: (0, r.jsx)(c.LYs, (e = D({}, l), t = t = {
@@ -139,9 +139,9 @@ function R() {
               pathname: w.Z5c.CHANNEL(w.I_8, U),
               state: A
             },
-            selected: V || M,
-            onMouseEnter: () => k(!0),
-            onMouseLeave: () => k(!1),
+            selected: V || k,
+            onMouseEnter: () => M(!0),
+            onMouseLeave: () => M(!1),
             onMouseDown: function() {
               null != W && u.Z.preload(W.guild_id, W.id)
             },

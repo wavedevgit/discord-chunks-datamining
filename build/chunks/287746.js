@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(607070),
   j = n(367907),
   O = n(450936),
-  E = n(993766),
-  N = n(499254),
+  N = n(993766),
+  E = n(499254),
   I = n(541099),
   P = n(827498),
   S = n(46332),
@@ -78,8 +78,8 @@ var r = n(200651),
   ex = n(323873),
   ej = n(271383),
   eO = n(375954),
-  eE = n(496675),
-  eN = n(944486),
+  eN = n(496675),
+  eE = n(944486),
   eI = n(117530),
   eP = n(594174),
   eS = n(626135),
@@ -553,7 +553,7 @@ class e2 extends i.PureComponent {
       currentChannelId: r
     } = t;
     return n.id !== r ? {
-      textAreaFocused: null != n && !c.tq && eE.Z.can(eV.Plq.SEND_MESSAGES, n),
+      textAreaFocused: null != n && !c.tq && eN.Z.can(eV.Plq.SEND_MESSAGES, n),
       currentChannelId: n.id
     } : null
   }
@@ -587,8 +587,8 @@ class e2 extends i.PureComponent {
       showAutomodUserProfileChatBlocker: x,
       showAppLauncherButton: j,
       showAppDMsUI: O,
-      isInitialLoading: E,
-      isRefreshChatInputEnabled: N,
+      isInitialLoading: N,
+      isRefreshChatInputEnabled: E,
       isRefreshEnabled: I,
       pendingScheduledMessage: P
     } = this.props, {
@@ -627,10 +627,10 @@ class e2 extends i.PureComponent {
             renderAppCommandButton: this.renderAppCommandButton,
             pendingScheduledMessage: P
           })
-        }), I ? null : this.renderAppLauncherButton(), N ? null : this.renderAppCommandButton()]
+        }), I ? null : this.renderAppLauncherButton(), E ? null : this.renderAppCommandButton()]
       }),
-      R = O && E,
-      M = R && E ? A : w,
+      R = O && N,
+      M = R && N ? A : w,
       k = o()({
         [eY.barWithAppLauncherButton]: j,
         [eY.barWithAppsDMsUI]: O
@@ -700,7 +700,7 @@ class e2 extends i.PureComponent {
                   }) : (0, r.jsx)(eG.Z, {
                     channel: n,
                     children: M
-                  }), N ? null : (0, r.jsx)(_.Z, {
+                  }), E ? null : (0, r.jsx)(_.Z, {
                     channel: n,
                     poggermodeEnabled: v
                   }), !T && (0, r.jsx)(V.Z, {})]
@@ -750,7 +750,7 @@ class e2 extends i.PureComponent {
       if (t) switch (e.which) {
         case eV.yXg.ARROW_LEFT:
           n === W.Ie.SIDEBAR && eA.S.dispatch(eV.CkL.FOCUS_CHANNEL_TEXT_AREA, {
-            channelId: eN.Z.getChannelId()
+            channelId: eE.Z.getChannelId()
           });
           return;
         case eV.yXg.ARROW_RIGHT:
@@ -767,7 +767,7 @@ class e2 extends i.PureComponent {
       let {
         applicationId: t
       } = e;
-      return N.__(P._b.TEXT, this.props.chatInputType, {
+      return E.__(P._b.TEXT, this.props.chatInputType, {
         applicationId: t
       })
     }), eK(this, "handleChatInteract", () => {
@@ -784,7 +784,7 @@ class e2 extends i.PureComponent {
         communicationDisabledUntil: l,
         showAutomodUserProfileChatBlocker: o
       } = e;
-      return t.type === eV.d4z.DM && n ? (0, r.jsx)(ed.Z, {}) : null != l && (0, X.J)(l) && null != i && !eE.Z.can(eV.Plq.ADMINISTRATOR, i) ? (0, r.jsx)(J.T, {
+      return t.type === eV.d4z.DM && n ? (0, r.jsx)(ed.Z, {}) : null != l && (0, X.J)(l) && null != i && !eN.Z.can(eV.Plq.ADMINISTRATOR, i) ? (0, r.jsx)(J.T, {
         guild: i,
         disabledUntil: l
       }) : o ? (0, r.jsx)(K.h, {
@@ -844,7 +844,7 @@ let e3 = i.memo(function(e) {
     location: "ChannelChatMemo"
   }), v = (0, D.h9)(t.id), y = (0, em.k)(t.id), {
     isInitialLoading: j,
-    primaryEntryPointCommand: N,
+    primaryEntryPointCommand: E,
     isProfileFetching: P,
     wasProfileFetching: S,
     applicationId: T,
@@ -856,7 +856,7 @@ let e3 = i.memo(function(e) {
       type: "channel"
     }
   });
-  (0, E.Z)({
+  (0, N.Z)({
     isProfileFetching: P,
     wasProfileFetching: S,
     applicationId: T,
@@ -887,7 +887,7 @@ let e3 = i.memo(function(e) {
     showAppLauncherButton: C,
     showAppDMsUI: v,
     isInitialLoading: j,
-    showEntryPointAppCommandButton: null != N,
+    showEntryPointAppCommandButton: null != E,
     entryPointCommandButtonRef: R,
     isFailedAppDMLoad: M,
     isRefreshChatInputEnabled: k,

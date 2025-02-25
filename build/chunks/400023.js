@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(314897),
   j = n(323873),
   O = n(607744),
-  E = n(375954),
-  N = n(496675),
+  N = n(375954),
+  E = n(496675),
   I = n(306680),
   P = n(62817),
   S = n(594174),
@@ -104,7 +104,7 @@ let G = i.memo(function(e) {
       hasUnreads: x,
       editingMessageId: j,
       fontSize: O,
-      keyboardModeEnabled: E,
+      keyboardModeEnabled: N,
       filterAfterTimestamp: I,
       showingQuarantineBanner: P,
       hideSummaries: S = !1,
@@ -136,9 +136,9 @@ let G = i.memo(function(e) {
     }), z = (0, M.Z)({
       scrollerRef: V.ref,
       isEditing: null != j,
-      keyboardModeEnabled: E,
+      keyboardModeEnabled: N,
       hasMoreAfter: m.hasMoreAfter
-    }), q = (0, s.e7)([C.Z], () => N.Z.can(D.Plq.READ_MESSAGE_HISTORY, f) ? null : C.Z.getViewingRolesTimestamp(f.getGuildId())), {
+    }), q = (0, s.e7)([C.Z], () => E.Z.can(D.Plq.READ_MESSAGE_HISTORY, f) ? null : C.Z.getViewingRolesTimestamp(f.getGuildId())), {
       channelStreamMarkup: Y,
       newMessagesBar: K,
       jumpToPresentBar: X,
@@ -264,9 +264,9 @@ let G = i.memo(function(e) {
         {
           canManageMessages: r,
           permissionVersion: i
-        } = (0, s.cj)([N.Z], () => ({
-          canManageMessages: N.Z.can(D.Plq.MANAGE_MESSAGES, e),
-          permissionVersion: null != t ? N.Z.getGuildVersion(t) : null
+        } = (0, s.cj)([E.Z], () => ({
+          canManageMessages: E.Z.can(D.Plq.MANAGE_MESSAGES, e),
+          permissionVersion: null != t ? E.Z.getGuildVersion(t) : null
         }), [e, t]);
       return {
         canChat: n,
@@ -312,7 +312,7 @@ let G = i.memo(function(e) {
       editingMessageId: z
     } = function(e) {
       var t, n;
-      let r = (0, s.e7)([E.Z], () => E.Z.getMessages(e.id), [e.id]),
+      let r = (0, s.e7)([N.Z], () => N.Z.getMessages(e.id), [e.id]),
         l = (0, s.e7)([I.ZP], () => {
           var t;
           return null !== (t = I.ZP.getOldestUnreadMessageId(e.id)) && void 0 !== t ? t : null

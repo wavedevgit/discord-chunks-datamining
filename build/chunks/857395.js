@@ -50,7 +50,7 @@ function j(e) {
     channelId: n,
     messageId: j,
     name: f
-  } = e, x = function(e, t) {
+  } = e, p = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -65,36 +65,36 @@ function j(e) {
     }
     return l
   }(e, ["guildId", "channelId", "messageId", "name"]);
-  let g = (0, o.h)(),
+  let b = (0, o.h)(),
     {
-      unavailable: p,
-      guild: b
+      unavailable: g,
+      guild: x
     } = (0, a.cj)([c.Z], () => ({
       guild: c.Z.getGuild(t),
       unavailable: c.Z.hasFetchFailed(t)
     }), [t]),
-    v = null != b,
-    O = l.useCallback(async () => {
-      if (!g) try {
-        v || await (0, i.P)(t)
+    O = null != x,
+    v = l.useCallback(async () => {
+      if (!b) try {
+        O || await (0, i.P)(t)
       } catch (e) {}
-    }, [g, v, t]);
-  return p ? (0, r.jsx)(s.yRy, h(m({
+    }, [b, O, t]);
+  return g ? (0, r.jsx)(s.yRy, h(m({
     position: "right",
     renderPopout: e => (0, r.jsx)(d.SK, {})
-  }, x), {
+  }, p), {
     clickTrap: !0
   })) : (0, r.jsx)(s.yRy, m({
     position: "right",
-    preload: O,
+    preload: v,
     clickTrap: !0,
-    renderPopout: e => g ? (0, r.jsx)(u.Z, h(m({}, e), {
+    renderPopout: e => b ? (0, r.jsx)(u.Z, h(m({}, e), {
       guildId: t,
       name: f
-    })) : null == b ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(d.sK, h(m({}, e), {
-      guild: b,
+    })) : null == x ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(d.sK, h(m({}, e), {
+      guild: x,
       channelId: n,
       messageId: j
     }))
-  }, x))
+  }, p))
 }

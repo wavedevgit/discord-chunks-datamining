@@ -1,4 +1,4 @@
-/** Chunk was on 89444 **/
+/** Chunk was on 67830 **/
 n.d(t, {
   Z: () => p
 });
@@ -22,12 +22,12 @@ let p = r.memo(function(e) {
     isGroupStart: v,
     hideSimpleEmbedContent: C = !0,
     disableInteraction: E
-  } = e, O = (0, s.A)((null !== (t = l.editedTimestamp) && void 0 !== t ? t : l.timestamp).valueOf()), {
-    content: m
+  } = e, m = (0, s.A)((null !== (t = l.editedTimestamp) && void 0 !== t ? t : l.timestamp).valueOf()), {
+    content: O
   } = (0, u.Z)(l, {
     hideSimpleEmbedContent: C,
-    allowList: O,
-    allowHeading: O,
+    allowList: m,
+    allowHeading: m,
     allowLinks: !0,
     previewLinkTarget: !0
   });
@@ -68,7 +68,7 @@ let p = r.memo(function(e) {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
     }), n)),
-    childrenMessageContent: (0, d.Z)(e, m),
+    childrenMessageContent: (0, d.Z)(e, O),
     disableInteraction: E
   })
 })

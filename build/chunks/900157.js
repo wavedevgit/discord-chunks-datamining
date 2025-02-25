@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(430824),
   j = n(979651),
   O = n(664342),
-  E = n(124368),
-  N = n(981631),
+  N = n(124368),
+  E = n(981631),
   I = n(388032),
   P = n(35821);
 
@@ -74,7 +74,7 @@ function T(e) {
         type: "SIDEBAR_CLOSE",
         baseChannelId: e.parent_id
       }), (0, C.ad)(e, {
-        source: E.on.VOICE_AUTO_OPEN
+        source: N.on.VOICE_AUTO_OPEN
       }))
     }, [t, e])
   }(A);
@@ -83,9 +83,9 @@ function T(e) {
       if (null == A || M.current) return;
       M.current = !0;
       let e = (0, p.K)(v.Z.getChannel(A.id), !0);
-      (0, d.yw)(N.rMx.CHANNEL_OPENED, Z(S({}, e, (0, d.$H)(A.id)), {
+      (0, d.yw)(E.rMx.CHANNEL_OPENED, Z(S({}, e, (0, d.$H)(A.id)), {
         channel_view: T
-      })), (0, h.a)(N.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      })), (0, h.a)(E.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: A.id
       })
     }, [A, T]), null == A || null == w) return null;

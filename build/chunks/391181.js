@@ -1,6 +1,6 @@
-/** Chunk was on 89444 **/
+/** Chunk was on 67830 **/
 n.d(t, {
-  Z: () => O,
+  Z: () => m,
   m: () => E
 });
 var i = n(200651);
@@ -125,8 +125,8 @@ function E(e) {
     onEditProduct: c,
     onUnpublishProduct: h,
     onDeleteProduct: E,
-    onCopyProductLink: O,
-    onTestDownload: m,
+    onCopyProductLink: m,
+    onTestDownload: O,
     onReportProduct: S
   } = e;
   return (0, i.jsx)("div", {
@@ -150,8 +150,8 @@ function E(e) {
         onEditProduct: c,
         onUnpublishProduct: h,
         onDeleteProduct: E,
-        onCopyLink: O,
-        onTestDownload: m,
+        onCopyLink: m,
+        onTestDownload: O,
         onReportProduct: S
       })),
       children: (e, n) => {
@@ -177,13 +177,13 @@ function E(e) {
   })
 }
 
-function O(e) {
+function m(e) {
   let {
     product: t,
     guildId: n,
     onEditProduct: r,
-    onUnpublishProduct: O,
-    onDeleteProduct: m,
+    onUnpublishProduct: m,
+    onDeleteProduct: O,
     onCopyProductLink: S,
     onTestDownload: _,
     disabled: b = !1
@@ -206,8 +206,8 @@ function O(e) {
         showDeleteProduct: !0,
         showReportProduct: !1,
         onEditProduct: r,
-        onUnpublishProduct: O,
-        onDeleteProduct: m,
+        onUnpublishProduct: m,
+        onDeleteProduct: O,
         onCopyLink: S,
         onTestDownload: _,
         onReportProduct: () => {}
@@ -259,8 +259,8 @@ function O(e) {
         showDeleteProduct: !0,
         showReportProduct: !1,
         onEditProduct: r,
-        onUnpublishProduct: O,
-        onDeleteProduct: m,
+        onUnpublishProduct: m,
+        onDeleteProduct: O,
         onCopyProductLink: S,
         onTestDownload: _,
         onReportProduct: () => {}

@@ -30,8 +30,8 @@ function b(e) {
     id: x = "fancybutton-toggle",
     collapseWhenChecked: j = !0,
     onClick: O,
-    disabled: E
-  } = e, N = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), [I, P] = i.useState(!1), S = (0, d.ZP)(), Z = (0, s.wj)(S) || t ? g : m, {
+    disabled: N
+  } = e, E = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), [I, P] = i.useState(!1), S = (0, d.ZP)(), Z = (0, s.wj)(S) || t ? g : m, {
     width: T = 0,
     ref: A
   } = (0, u.Z)(), {
@@ -44,7 +44,7 @@ function b(e) {
       tooltipText: l
     }),
     position: "top",
-    color: null != v ? v : E ? c.ua7.Colors.BLACK : c.ua7.Colors.BRAND,
+    color: null != v ? v : N ? c.ua7.Colors.BLACK : c.ua7.Colors.BRAND,
     "aria-label": l,
     tooltipClassName: f.tooltip,
     className: f.tooltipContainer,
@@ -60,7 +60,7 @@ function b(e) {
       },
       id: x,
       type: "checkbox",
-      disabled: E
+      disabled: N
     }), (0, r.jsxs)("label", {
       htmlFor: x,
       className: o()(f.label, y, {
@@ -73,7 +73,7 @@ function b(e) {
       } : void 0,
       children: [t ? (0, r.jsx)(c.ZX5, {
         className: f.shine,
-        shinePaused: N
+        shinePaused: E
       }) : null, (0, r.jsx)("img", {
         ref: A,
         src: Z,

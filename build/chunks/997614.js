@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(795318),
   j = n(304388),
   O = n(981631),
-  E = n(127379),
-  N = n(388032);
+  N = n(127379),
+  E = n(388032);
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -90,7 +90,7 @@ function S(e) {
   }), q = H === f.BK.GroupedButtonsRedMic || z ? "green" : void 0;
 
   function Y() {
-    return k ? N.NW.string(N.t["Ox4/zc"]) : L ? N.NW.string(N.t["+YBKYG"]) : D ? N.NW.string(N.t.X1lQlp) : void 0
+    return k ? E.NW.string(E.t["Ox4/zc"]) : L ? E.NW.string(E.t["+YBKYG"]) : D ? E.NW.string(E.t.X1lQlp) : void 0
   }
 
   function K(e) {
@@ -116,9 +116,9 @@ function S(e) {
     handler: Q
   }), (0, r.jsx)(j.Z, {
     ref: X,
-    isPopoutBlocked: null != Z && Z !== E.D.SOUNDBOARD,
+    isPopoutBlocked: null != Z && Z !== N.D.SOUNDBOARD,
     onPopoutClose: () => null == T ? void 0 : T(void 0),
-    onPopoutOpen: () => null == T ? void 0 : T(E.D.SOUNDBOARD),
+    onPopoutOpen: () => null == T ? void 0 : T(N.D.SOUNDBOARD),
     align: G ? "center" : "left",
     renderPopout: e => {
       let {

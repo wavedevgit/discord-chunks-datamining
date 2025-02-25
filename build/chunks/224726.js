@@ -94,17 +94,19 @@ let E = function() {
           className: I.divider
         }), (0, r.jsx)(x.Z, {
           profile: T
+        }), (0, r.jsx)("div", {
+          className: I.divider
+        }), (0, r.jsx)(O.Z, {
+          profile: T
         })]
-      }), (0, r.jsxs)("div", {
+      }), (0, r.jsx)("div", {
         className: I.rightColumn,
-        children: [(0, r.jsx)(m.Z, {
+        children: (0, r.jsx)(m.Z, {
           className: I.profilePreview,
           profile: T,
           disableCTA: !0,
           onIconChange: P ? w : void 0
-        }), (0, r.jsx)(O.Z, {
-          profile: T
-        })]
+        })
       })]
     })
   })

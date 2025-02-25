@@ -96,10 +96,10 @@ function _(e) {
         modalKey: f.X_
       }), j(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
     }, [t, C, _, j]),
-    E = i.useCallback(() => {
+    N = i.useCallback(() => {
       v(), j(p.NM.USER_BANNER_BLOCK_CONFIRM)
     }, [v, j]),
-    N = i.useCallback(() => {
+    E = i.useCallback(() => {
       v(), j(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
     }, [v, j]),
     I = i.useCallback(() => {
@@ -114,8 +114,8 @@ function _(e) {
           } = n;
           return (0, r.jsx)(e, {
             transitionState: i,
-            onBlock: E,
-            onBlockAndReport: N,
+            onBlock: N,
+            onBlockAndReport: E,
             onCancel: () => {
               null == l || l(), j(p.NM.USER_BANNER_BLOCK_CANCEL)
             },
@@ -125,7 +125,7 @@ function _(e) {
           })
         }
       })
-    }, [E, N, C, t, j]);
+    }, [N, E, C, t, j]);
   return (0, r.jsx)(h.Q, {
     channelId: t,
     warningId: _,

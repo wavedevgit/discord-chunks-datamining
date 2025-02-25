@@ -39,21 +39,21 @@ let j = (0, o.Z)(e => {
     width: j,
     onScroll: O
   } = e, {
-    selectedParticipantId: E,
-    largeStream: N,
+    selectedParticipantId: N,
+    largeStream: E,
     chatOpen: I
   } = (0, l.cj)([a.Z], () => ({
     selectedParticipantId: a.Z.getSelectedParticipantId(o.id),
     largeStream: a.Z.getStageStreamSize(o.id),
     chatOpen: a.Z.getChatOpen(o.id)
-  }), [o.id]), P = (0, c.Io)(o.id), S = (0, c.Rk)(o.id, u.pV.AUDIENCE), Z = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(o.id, E) : null), T = (0, c.w8)(o.id, u.pV.SPEAKER), A = T.filter(x), w = null != T.find(e => e.type === u.Ui.STREAM), R = y(j), M = v(j, I), k = {
+  }), [o.id]), P = (0, c.Io)(o.id), S = (0, c.Rk)(o.id, u.pV.AUDIENCE), Z = (0, l.e7)([s.Z], () => null != N ? s.Z.getParticipant(o.id, N) : null), T = (0, c.w8)(o.id, u.pV.SPEAKER), A = T.filter(x), w = null != T.find(e => e.type === u.Ui.STREAM), R = y(j), M = v(j, I), k = {
     [u.pV.SPEAKER]: M,
     [u.pV.AUDIENCE]: R,
     [u.pV.SELECTED]: 1
   }, L = (0, d.Dx)(o.id), [D, W] = (0, d.aP)(o.id, k, L), U = [Math.max(null !== (t = D[0]) && void 0 !== t ? t : 1, 1), Math.max(null !== (n = D[1]) && void 0 !== n ? n : 1, 1), D[2]], {
     speakerTileWidth: B,
     speakerTileHeight: F
-  } = C(j, M), H = N ? j - 32 : Math.min(j - 64, 3 * B + 8), G = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [q, Y] = i.useState(!1);
+  } = C(j, M), H = E ? j - 32 : Math.min(j - 64, 3 * B + 8), G = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [q, Y] = i.useState(!1);
   return (0, r.jsx)(h.Z, {
     sections: U,
     renderSection: e => {

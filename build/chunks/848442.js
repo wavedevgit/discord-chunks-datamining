@@ -23,13 +23,13 @@ var i = n(120356),
   O = n(430824),
   j = n(626135),
   _ = n(434479),
-  x = n(981631),
-  C = n(176505),
+  C = n(981631),
+  x = n(176505),
   P = n(629481),
-  S = n(388032),
-  N = n(40125);
+  N = n(388032),
+  S = n(40125);
 
-function Z(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function Z(e) {
   return e
 }
 
-function I(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,43 +66,43 @@ function w(e) {
     guildId: t,
     selected: n,
     handleClick: i
-  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([O.Z], () => O.Z.getGuild(t)), C = (null == g ? void 0 : g.hasFeature(x.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, w = "false" === s.K.get(P.tM, "false"), E = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
+  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([O.Z], () => O.Z.getGuild(t)), x = (null == g ? void 0 : g.hasFeature(C.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, w = "false" === s.K.get(P.tM, "false"), E = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsx)(_.m, {
     id: "shop-".concat(t),
-    className: l()(N.previewChannelRow, {
-      [N.selected]: n,
-      [N.phantomPreview]: w
+    className: l()(S.previewChannelRow, {
+      [S.selected]: n,
+      [S.phantomPreview]: w
     }),
-    innerClassName: N.previewChannelRowContent,
+    innerClassName: S.previewChannelRowContent,
     renderIcon: e => (0, r.jsx)(m.Z, {
       width: 20,
       height: 20,
-      className: l()([e, N.shopIcon])
+      className: l()([e, S.shopIcon])
     }),
-    text: S.NW.string(S.t.al5EXF),
+    text: N.NW.string(N.t.al5EXF),
     selected: n,
     onClick: i,
     trailing: (0, r.jsxs)("div", {
-      className: N.gifSection,
+      className: S.gifSection,
       children: [E ? (0, r.jsx)(c.IGR, {
         color: c.TVs.unsafe_rawColors.BRAND_260.css,
-        text: S.NW.string(S.t.y2b7CA),
-        className: N.newBadge
+        text: N.NW.string(N.t.y2b7CA),
+        className: S.newBadge
       }) : (0, r.jsx)("img", {
         src: (0, h.b)("server_products/storefront/money.gif"),
-        className: N.money,
+        className: S.money,
         alt: ""
       }), n && (0, r.jsx)(c.P3F, {
-        className: N.closeButton,
+        className: S.closeButton,
         onClick: e => {
-          if (e.stopPropagation(), (0, b.EW)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), j.default.track(x.rMx.GUILD_SHOP_PREVIEW_CLICK, I(Z({}, (0, p.hH)(t)), {
+          if (e.stopPropagation(), (0, b.EW)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), j.default.track(C.rMx.GUILD_SHOP_PREVIEW_CLICK, Z(I({}, (0, p.hH)(t)), {
               action_taken: P.mz.DISMISS_CHANNEL_ROW
-            })), !u || !C) {
+            })), !u || !x) {
             var n;
-            (0, v.dL)(x.Z5c.CHANNEL(t, null === (n = y.ZP.getDefaultChannel(t)) || void 0 === n ? void 0 : n.id))
+            (0, v.dL)(C.Z5c.CHANNEL(t, null === (n = y.ZP.getDefaultChannel(t)) || void 0 === n ? void 0 : n.id))
           }
         },
-        "aria-label": S.NW.string(S.t.cpT0Cg),
+        "aria-label": N.NW.string(N.t.cpT0Cg),
         children: (0, r.jsx)(c.k$p, {
           size: "xs",
           color: "currentColor"
@@ -117,7 +117,7 @@ function E(e) {
     guild: t,
     selected: i
   } = e, l = (0, g.g)(t, "guild_shop_channel_row"), o = () => {
-    s.K.set(P.tM, "true"), (0, v.uL)(x.Z5c.CHANNEL(t.id, C.oC.GUILD_SHOP))
+    s.K.set(P.tM, "true"), (0, v.uL)(C.Z5c.CHANNEL(t.id, x.oC.GUILD_SHOP))
   };
   return l ? (0, r.jsx)(w, {
     guildId: t.id,
@@ -130,7 +130,7 @@ function E(e) {
       height: 20,
       className: e
     }),
-    text: S.NW.string(S.t.al5EXF),
+    text: N.NW.string(N.t.al5EXF),
     selected: i,
     onClick: o,
     onContextMenu: e => {
@@ -138,7 +138,7 @@ function E(e) {
         let {
           default: e
         } = await n.e("66050").then(n.bind(n, 376573));
-        return n => (0, r.jsx)(e, I(Z({}, n), {
+        return n => (0, r.jsx)(e, Z(I({}, n), {
           guild: t
         }))
       })

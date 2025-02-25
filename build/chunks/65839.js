@@ -134,13 +134,13 @@ let j = e => {
     handleSelectCategory: v,
     categoryCounts: j,
     allEntriesCount: O,
-    isLoading: E
-  } = e, N = (0, a.e7)([u.Z], () => u.Z.getGuild(t.getGuildId()));
-  return null != N && N.hasFeature(m.oNc.SHARD) ? (0, r.jsx)(x, {
-    guild: N,
+    isLoading: N
+  } = e, E = (0, a.e7)([u.Z], () => u.Z.getGuild(t.getGuildId()));
+  return null != E && E.hasFeature(m.oNc.SHARD) ? (0, r.jsx)(x, {
+    guild: E,
     directoryEntries: n,
     handleCreateOrAddGuild: l,
-    isLoading: E
+    isLoading: N
   }) : (0, r.jsx)("div", {
     className: b.pageContainer,
     children: (0, r.jsxs)(s.yWw, {
@@ -176,7 +176,7 @@ let j = e => {
             }, t)
           })]
         })
-      }), E && null == n ? (0, r.jsx)(s.$jN, {
+      }), N && null == n ? (0, r.jsx)(s.$jN, {
         className: b.spinner
       }) : null == n ? void 0 : n.map((e, t) => (0, r.jsxs)(i.Fragment, {
         children: [void 0 !== e.header ? (0, r.jsx)(s.Text, {

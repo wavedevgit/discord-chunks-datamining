@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(79390),
   j = n(216789),
   O = n(665906),
-  E = n(706454),
-  N = n(695346),
+  N = n(706454),
+  E = n(695346),
   I = n(433355),
   P = n(819640),
   S = n(375954),
@@ -115,7 +115,7 @@ let q = i.memo(function(e) {
     em = (0, g.Go)() && (er || ep),
     eg = K.isPrivate(),
     eb = (0, a.e7)([Z.Z], () => eg || Z.Z.can(U.Plq.ATTACH_FILES, K) && Z.Z.can(U.Plq.SEND_MESSAGES, K)),
-    e_ = ["en-US", "en-GB"].includes((0, a.e7)([E.default], () => E.default.locale)) ? H.NW.string(H.t.d56gCQ) : H.NW.string(H.t.PdRCRk),
+    e_ = ["en-US", "en-GB"].includes((0, a.e7)([N.default], () => N.default.locale)) ? H.NW.string(H.t.d56gCQ) : H.NW.string(H.t.PdRCRk),
     eC = (0, d.Z)(ei);
   (null == eC ? void 0 : eC.newClipIds.length) !== (null == ei ? void 0 : ei.newClipIds.length) && (null !== (t = null == ei ? void 0 : ei.newClipIds.length) && void 0 !== t ? t : 0) > 0 && null == eh && ec && eo && !eu && !ea && !ed && ef("recentClips");
   let ev = (e, t, n) => {
@@ -149,8 +149,8 @@ let q = i.memo(function(e) {
   });
   let ej = (0, O.NE)(K),
     eO = (0, O.Xu)(K),
-    eE = !N.dN.useSetting() && !(0, M.isAndroidWeb)() && null != window.ResizeObserver,
-    eN = (0, x.UI)(null != K ? K : void 0),
+    eN = !E.dN.useSetting() && !(0, M.isAndroidWeb)() && null != window.ResizeObserver,
+    eE = (0, x.UI)(null != K ? K : void 0),
     eI = (0, c.bWb)().enabled,
     eP = (0, h.qB)(K.id, "ChannelAttachButton"),
     eS = (0, j.Us)({
@@ -160,13 +160,13 @@ let q = i.memo(function(e) {
     eT = (0, W.Z)({
       canAttachFiles: eb,
       canStartThreads: ej || eO,
-      useSlate: eE,
+      useSlate: eN,
       hasClips: em,
       canUseApplicationCommands: !$ && !es,
       channel: K,
       activities: en,
       newClipsCount: eZ,
-      canPostPolls: eN,
+      canPostPolls: eE,
       canLaunchActivities: eP,
       appContext: ee,
       canSendScheduledMessages: eS

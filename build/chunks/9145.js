@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(585483),
   j = n(51144),
   O = n(566620),
-  E = n(317381),
-  N = n(619915),
+  N = n(317381),
+  E = n(619915),
   I = n(988980),
   P = n(16609),
   S = n(952561),
@@ -51,9 +51,9 @@ function U(e) {
     renderExternalHeader: B
   } = e, F = (0, m.Z)({
     location: "ActivityPanelFocusedView"
-  }), H = (0, S.Z)(), G = (0, a.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(U), [U]), V = (0, P.pY)(U), z = (0, a.e7)([_.Z], () => _.Z.getChannel(V)), q = (0, N.gb)(G), Y = (0, N.uF)(q), K = i.useCallback(() => {
+  }), H = (0, S.Z)(), G = (0, a.Wu)([N.ZP], () => N.ZP.getEmbeddedActivitiesForLocation(U), [U]), V = (0, P.pY)(U), z = (0, a.e7)([_.Z], () => _.Z.getChannel(V)), q = (0, E.gb)(G), Y = (0, E.uF)(q), K = i.useCallback(() => {
     (0, O.tg)(R.Ez.PIP)
-  }, []), X = i.useRef(null), Q = (0, a.e7)([E.ZP], () => E.ZP.getFocusedLayout()), J = Q !== R.MI.NO_CHAT, [$, ee] = i.useState(null !== (t = f.ZP.activityPanelHeight) && void 0 !== t ? t : l), et = i.useCallback(e => {
+  }, []), X = i.useRef(null), Q = (0, a.e7)([N.ZP], () => N.ZP.getFocusedLayout()), J = Q !== R.MI.NO_CHAT, [$, ee] = i.useState(null !== (t = f.ZP.activityPanelHeight) && void 0 !== t ? t : l), et = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
       activityPanelHeight: e
     })

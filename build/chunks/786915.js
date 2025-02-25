@@ -48,7 +48,7 @@ function _(e) {
     guildScheduledEvent: x,
     shouldPrioritizeGroupPlusIcon: j = !1,
     embeddedActivity: O
-  } = e, E = function(e, t) {
+  } = e, N = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -63,13 +63,13 @@ function _(e) {
     }
     return i
   }(e, ["applicationId", "stream", "channel", "exitFullScreen", "appContext", "analyticsLocation", "guildScheduledEvent", "shouldPrioritizeGroupPlusIcon", "embeddedActivity"]);
-  let N = (0, u.bp)(),
+  let E = (0, u.bp)(),
     I = null == _ ? void 0 : _.getGuildId(),
     P = (0, a.e7)([d.Z], () => null != I ? d.Z.getGuild(I) : null, [I]),
     S = (0, a.e7)([p.Z], () => null != t ? p.Z.getApplicationActivity(t) : void 0);
   return null != S && (null == O ? void 0 : O.location.kind) === o.X.CONTEXTLESS ? (0, r.jsx)(f.Z, {
     onClick: () => {
-      c.h7(S, !1, N)
+      c.h7(S, !1, E)
     },
     iconComponent: null == t || j ? s.ejJ : s.gQj,
     label: null != t ? g.NW.string(g.t["OzOM/v"]) : g.NW.string(g.t["6F9ivr"])
@@ -121,7 +121,7 @@ function _(e) {
           channel: _,
           streamUserId: null == i ? void 0 : i.ownerId,
           applicationId: t,
-          appContext: null != v ? v : N,
+          appContext: null != v ? v : E,
           exitFullScreen: C,
           analyticsLocation: y,
           guildScheduledEvent: x
@@ -129,5 +129,5 @@ function _(e) {
     },
     iconComponent: null == t || j ? s.ejJ : s.gQj,
     label: null != t ? g.NW.string(g.t["OzOM/v"]) : g.NW.string(g.t["6F9ivr"])
-  }, E)) : null
+  }, N)) : null
 }

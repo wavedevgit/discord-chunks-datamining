@@ -1,7 +1,7 @@
 /** Chunk was on 64615 **/
 n.d(t, {
-  E: () => Z,
-  Z: () => I
+  E: () => I,
+  Z: () => Z
 }), n(47120), n(653041);
 var r, i = n(200651),
   l = n(192379),
@@ -23,7 +23,7 @@ var r, i = n(200651),
   j = n(388032),
   _ = n(707057);
 
-function x(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,14 +32,14 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -97,7 +97,7 @@ let P = {
     })
   }
 };
-class S extends l.PureComponent {
+class N extends l.PureComponent {
   renderText() {
     let {
       state: e,
@@ -118,7 +118,7 @@ class S extends l.PureComponent {
     return null != e ? e : j.NW.string(j.t.cw57am)
   }
   constructor(...e) {
-    super(...e), x(this, "renderProgressBody", (e, t) => {
+    super(...e), C(this, "renderProgressBody", (e, t) => {
       let {
         state: n,
         application: r
@@ -145,7 +145,7 @@ class S extends l.PureComponent {
     })
   }
 }
-class N extends(r = l.PureComponent) {
+class S extends(r = l.PureComponent) {
   componentWillAppear(e) {
     this.state.animationScale.setValue(1), e()
   }
@@ -167,7 +167,7 @@ class N extends(r = l.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? j.NW.string(j.t.cw57am) : (0, i.jsx)(S, {
+    return null == e || null == t ? j.NW.string(j.t.cw57am) : (0, i.jsx)(N, {
       application: e,
       state: t,
       isPaused: n
@@ -193,7 +193,7 @@ class N extends(r = l.PureComponent) {
         "aria-label": !1,
         children: n => {
           var r, l;
-          return (0, i.jsx)("div", (r = C({}, n), l = l = {
+          return (0, i.jsx)("div", (r = x({}, n), l = l = {
             children: (0, i.jsx)(p._3P, {
               percent: e,
               colorOverride: t ? u.Z.unsafe_rawColors.PRIMARY_500.css : null,
@@ -218,9 +218,9 @@ class N extends(r = l.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "state", {
+    super(...e), C(this, "state", {
       animationScale: new s.Z.Value(0)
-    }), x(this, "handleOnClick", e => {
+    }), C(this, "handleOnClick", e => {
       let {
         onClick: t
       } = this.props;
@@ -229,7 +229,7 @@ class N extends(r = l.PureComponent) {
   }
 }
 
-function Z(e, t) {
+function I(e, t) {
   return e.reduce((e, n) => {
     let {
       applicationId: r,
@@ -238,12 +238,12 @@ function Z(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-x(N, "defaultProps", {
+C(S, "defaultProps", {
   strokeSize: p._3P.StrokeSizes.MEDIUM
 });
-let I = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
+let Z = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
   let e = b.Z.activeItems,
-    t = Z(e, m.Z),
+    t = I(e, m.Z),
     {
       total: n,
       progress: r
@@ -274,6 +274,6 @@ let I = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(N, C({}, n)) : null
-  }) : (0, i.jsx)(N, C({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(S, x({}, n)) : null
+  }) : (0, i.jsx)(S, x({}, n))
 })

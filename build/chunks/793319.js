@@ -26,8 +26,8 @@ var r = n(200651),
   x = n(358221),
   j = n(682901),
   O = n(887012),
-  E = n(659580),
-  N = n(793865),
+  N = n(659580),
+  E = n(793865),
   I = n(575175),
   P = n(795318),
   S = n(997614),
@@ -81,8 +81,8 @@ var r = n(200651),
   ej = n(921944),
   eO = n(657452);
 
-function eE() {
-  return (eE = Object.assign || function(e) {
+function eN() {
+  return (eN = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -91,7 +91,7 @@ function eE() {
   }).apply(this, arguments)
 }
 
-function eN(e) {
+function eE(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -144,16 +144,16 @@ function eS(e) {
     (0, eC.Z)(_, t.id, ey.ZY5.GUILD_CHANNEL)
   }, [_, t.id, o, l]), v = (0, U.B4)({
     location: "GoLiveButton"
-  }), [y, x] = i.useState(!1), j = (0, W.bK)(), [O, E] = i.useState(!1);
+  }), [y, x] = i.useState(!1), j = (0, W.bK)(), [O, N] = i.useState(!1);
   i.useEffect(() => {
-    if (E(t.isHDStreamSplashed && null == m && !j), t.isHDStreamSplashed) {
+    if (N(t.isHDStreamSplashed && null == m && !j), t.isHDStreamSplashed) {
       let e = setTimeout(() => {
-        E(!1)
+        N(!1)
       }, 3e5);
       return () => clearTimeout(e)
     }
   }, [t.isHDStreamSplashed, m, j]);
-  let N = () => {
+  let E = () => {
       if (o) {
         C();
         return
@@ -185,7 +185,7 @@ function eS(e) {
           return i
         }(n, ["onClick"]),
         o = null != m;
-      return (0, r.jsx)(X.O, eI(eN({}, l), {
+      return (0, r.jsx)(X.O, eI(eE({}, l), {
         centerButton: !0,
         disabled: s || !a,
         className: c ? void 0 : eO.controlButton,
@@ -200,7 +200,7 @@ function eS(e) {
         premiumGlow: O,
         renderNUXHighlight: y,
         buttonRef: g,
-        onClick: null != m ? I : N
+        onClick: null != m ? I : E
       }))
     };
   return (0, r.jsxs)(r.Fragment, {
@@ -245,7 +245,7 @@ function eS(e) {
         spacing: 16,
         animation: p.yRy.Animation.FADE,
         children: (e, t) => {
-          var n = eE({}, function(e) {
+          var n = eN({}, function(e) {
               if (null == e) throw TypeError("Cannot destructure " + e);
               return e
             }(e)),
@@ -291,9 +291,9 @@ let eT = i.memo(function(e) {
       ownerId: n
     } = e;
     return n !== (null == t ? void 0 : t.id)
-  })), v = (0, k.qY)(l.id), y = i.useCallback(() => (null == a ? void 0 : a.type) === ex.fO.ACTIVITY && a.applicationId === (null == o ? void 0 : o.applicationId) ? "ACTIVITY" : _ ? "STREAM" : null != v ? "EVENT" : "CALL", [a, null == o ? void 0 : o.applicationId, _, v]), [j, O] = i.useState(y()), E = (0, eu.Z)({
+  })), v = (0, k.qY)(l.id), y = i.useCallback(() => (null == a ? void 0 : a.type) === ex.fO.ACTIVITY && a.applicationId === (null == o ? void 0 : o.applicationId) ? "ACTIVITY" : _ ? "STREAM" : null != v ? "EVENT" : "CALL", [a, null == o ? void 0 : o.applicationId, _, v]), [j, O] = i.useState(y()), N = (0, eu.Z)({
     location: "DisconnectButton"
-  }), N = (0, p.q_F)({
+  }), E = (0, p.q_F)({
     opacity: d ? .2 : 1,
     transform: d && !s.enabled ? "scale(0.7)" : "scale(1)",
     config: {
@@ -316,7 +316,7 @@ let eT = i.memo(function(e) {
         for (let e of C)(0, m.g)((0, w.V9)(e))
     }, [C, b]),
     P = (e, i) => {
-      let s = E ? {
+      let s = N ? {
         fullRegionButton: !0,
         centerButton: !0,
         popoutOpen: e
@@ -328,14 +328,14 @@ let eT = i.memo(function(e) {
       switch (j) {
         case "ACTIVITY":
           if (null == a || null == t || a.type !== ex.fO.ACTIVITY || null == o) return;
-          return (0, r.jsx)(q.Z, eI(eN({}, s), {
+          return (0, r.jsx)(q.Z, eI(eE({}, s), {
             applicationId: a.applicationId,
             color: "disconnect",
             location: o.location,
             onPopoutClick: C.length > 0 ? i : null
           }));
         case "STREAM":
-          return (0, r.jsx)(X.O, eI(eN({}, s), {
+          return (0, r.jsx)(X.O, eI(eE({}, s), {
             hasPermission: !0,
             streamActive: !0,
             color: "disconnect",
@@ -344,7 +344,7 @@ let eT = i.memo(function(e) {
             isSelfStream: !1
           }));
         case "CALL":
-          return (0, r.jsx)(Y.Z, eI(eN({}, s), {
+          return (0, r.jsx)(Y.Z, eI(eE({}, s), {
             color: "disconnect",
             onClick: () => null == n ? void 0 : n(),
             onPopoutClick: C.length > 0 ? i : null
@@ -383,7 +383,7 @@ let eT = i.memo(function(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(c.animated.div, {
-        style: N,
+        style: E,
         children: P(i, n)
       })
     }
@@ -527,7 +527,7 @@ let eR = function(e) {
                   wide: !0,
                   showOutputDevices: !0,
                   onSettingsButtonClick: t
-                }) : C ? (0, r.jsx)(E.default, {
+                }) : C ? (0, r.jsx)(N.default, {
                   onClose: t,
                   renderInputDevices: !0,
                   renderOutputDevices: !0,
@@ -537,7 +537,7 @@ let eR = function(e) {
                   renderDeafen: !0,
                   simplified: !0,
                   onInteraction: ew("AudioDeviceMenu")
-                }) : (0, r.jsx)(E.default, {
+                }) : (0, r.jsx)(N.default, {
                   onClose: t,
                   renderInputDevices: !0,
                   renderOutputDevices: !0,
@@ -577,7 +577,7 @@ let eR = function(e) {
                 closePopout: t
               } = e;
               return (0, r.jsx)(G.Z, {
-                children: (0, r.jsx)(N.Z, {
+                children: (0, r.jsx)(E.Z, {
                   onClose: t,
                   simplified: C,
                   onInteraction: ew("VideoDeviceMenu")
@@ -667,7 +667,7 @@ let eR = function(e) {
                 wide: !0,
                 showOutputDevices: !0,
                 onSettingsButtonClick: t
-              }) : (0, r.jsx)(E.default, {
+              }) : (0, r.jsx)(N.default, {
                 onClose: t,
                 renderInputDevices: !0,
                 renderOutputDevices: !0,
@@ -703,7 +703,7 @@ let eR = function(e) {
               closePopout: t
             } = e;
             return (0, r.jsx)(G.Z, {
-              children: (0, r.jsx)(N.Z, {
+              children: (0, r.jsx)(E.Z, {
                 onClose: t,
                 onInteraction: ew("VideoDeviceMenu")
               })
@@ -751,7 +751,7 @@ let eR = function(e) {
                 wide: !0,
                 showOutputDevices: !0,
                 onSettingsButtonClick: t
-              }) : (0, r.jsx)(E.default, {
+              }) : (0, r.jsx)(N.default, {
                 onClose: t,
                 renderInputDevices: !0,
                 renderOutputDevices: !0,

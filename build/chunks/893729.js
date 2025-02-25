@@ -1,4 +1,4 @@
-/** Chunk was on 89444 **/
+/** Chunk was on 67830 **/
 n.d(t, {
   Z: () => E
 });
@@ -24,8 +24,8 @@ function E(e) {
     guildId: n,
     role: l,
     theme: E,
-    content: O = v.NW.string(v.t["6OSasb"]),
-    className: m
+    content: m = v.NW.string(v.t["6OSasb"]),
+    className: O
   } = e, S = (0, s.e7)([p.default], () => p.default.getCurrentUser()), _ = f.ZP.useName(n, null, S), b = (0, u.Kz)(l), I = r.useMemo(() => {
     var e, t;
     return (0, d.e5)((e = function(e) {
@@ -47,7 +47,7 @@ function E(e) {
       return e
     }({}, (0, c.ZP)({
       channelId: "0",
-      content: O,
+      content: m,
       tts: void 0,
       type: void 0,
       messageReference: void 0,
@@ -66,14 +66,14 @@ function E(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [S, O]), y = {
+  }, [S, m]), y = {
     nick: _,
     colorString: null !== (t = l.colorString) && void 0 !== t ? t : void 0
   };
   return (0, i.jsx)(a.f6W, {
     theme: E,
     children: e => (0, i.jsx)("div", {
-      className: o()(e, C.container, m),
+      className: o()(e, C.container, O),
       children: (0, i.jsx)(h.Z, {
         hideTimestamp: !0,
         author: y,

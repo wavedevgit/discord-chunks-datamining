@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(248789),
   j = n(88101),
   O = n(576954),
-  E = n(765104),
-  N = n(122707),
+  N = n(765104),
+  E = n(122707),
   I = n(779836),
   P = n(23750),
   S = n(496675),
@@ -131,12 +131,12 @@ function er(e) {
     e_ = (0, U.$)(er),
     eC = ei.length > 0 && (null === (t = ei.first()) || void 0 === t ? void 0 : t.isFirstMessageInForumPost(er)),
     ev = (0, c.ts)(er),
-    ey = (0, l.e7)([E.Z], () => E.Z.shouldShowTopicsBar() && !ef),
+    ey = (0, l.e7)([N.Z], () => N.Z.shouldShowTopicsBar() && !ef),
     ex = (0, j.P)(er.id),
     ej = (0, y.z)(er.id, J.zr),
     eO = (0, p.k)(er.id),
-    eE = (0, W.Z)(),
-    eN = (i = er, s = null !== (n = null != ex ? ex : ej) && void 0 !== n ? n : eO, i.isDM() && null != s ? s.type === v.pj.STRANGER_DANGER ? (0, r.jsx)(O.M, {
+    eN = (0, W.Z)(),
+    eE = (i = er, s = null !== (n = null != ex ? ex : ej) && void 0 !== n ? n : eO, i.isDM() && null != s ? s.type === v.pj.STRANGER_DANGER ? (0, r.jsx)(O.M, {
       channelId: i.id,
       warningId: s.id,
       senderId: i.getRecipientId()
@@ -245,9 +245,9 @@ function er(e) {
     let n = Z.ZP.getOldestUnreadTimestamp(er.id),
       i = 0 !== n ? n : M.default.extractTimestamp(er.id),
       l = (0, w.KC)(new Date, new Date(i));
-    if (Z.ZP.isEstimated(er.id) ? (e = l ? $.t.wvtbbG : $.t.tHqbtr, t = $.t.vaPWFR) : (e = l ? $.t.BctFHx : $.t["3wXb9P"], t = $.t["4H8ldH"]), ev && (0, c.tW)(er) && eE.includes(K.E.SUMMARIES)) {
+    if (Z.ZP.isEstimated(er.id) ? (e = l ? $.t.wvtbbG : $.t.tHqbtr, t = $.t.vaPWFR) : (e = l ? $.t.BctFHx : $.t["3wXb9P"], t = $.t["4H8ldH"]), ev && (0, c.tW)(er) && eN.includes(K.E.SUMMARIES)) {
       let n = Z.ZP.ackMessageId(er.id),
-        l = (0, N.q)(er.id, Z.ZP.getOldestUnreadMessageId(er.id));
+        l = (0, E.q)(er.id, Z.ZP.getOldestUnreadMessageId(er.id));
       if ((0, d.yw)(Q.rMx.SUMMARIES_UNREAD_BAR_VIEWED, {
           num_unread_summaries: l,
           num_unread_messages: el,
@@ -333,7 +333,7 @@ function er(e) {
           })
         }
       }
-    } else eE.includes(K.E.NEW_MESSAGES) && (f = (0, r.jsx)(V.LE, {
+    } else eN.includes(K.E.NEW_MESSAGES) && (f = (0, r.jsx)(V.LE, {
       content: $.NW.format(e, {
         count: el,
         timestamp: i
@@ -341,7 +341,7 @@ function er(e) {
       channelId: er.id
     }))
   }
-  if (null == f && (0, c.Lp)(er) && ey && eE.includes(K.E.SUMMARIES) && (f = (0, r.jsx)(V.BO, {
+  if (null == f && (0, c.Lp)(er) && ey && eN.includes(K.E.SUMMARIES) && (f = (0, r.jsx)(V.BO, {
       channel: er,
       scrollManager: eu
     })), ei.error) B = (0, r.jsx)(V.Rp, {
@@ -386,6 +386,6 @@ function er(e) {
     newMessagesBar: f,
     jumpToPresentBar: B,
     forumPostActionBar: eI,
-    safetyWarningBanner: eN
+    safetyWarningBanner: eE
   }
 }

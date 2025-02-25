@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(518738),
   j = n(965376),
   O = n(159299),
-  E = n(184301),
-  N = n(347475),
+  N = n(184301),
+  E = n(347475),
   I = n(199902),
   P = n(271383),
   S = n(430824),
@@ -120,11 +120,11 @@ let q = W.ZP.getEnableHardwareAcceleration(),
     if (null == b) return null;
     let K = null == u ? void 0 : u.premiumSince;
     return (0, r.jsx)(h.yRy, {
-      preload: () => (0, E.Z)(b, {
+      preload: () => (0, N.Z)(b, {
         guildId: t.guild_id,
         channelId: t.id
       }),
-      renderPopout: e => (0, r.jsx)(N.Z, z(V({}, e), {
+      renderPopout: e => (0, r.jsx)(E.Z, z(V({}, e), {
         userId: b.id,
         guildId: t.guild_id,
         channelId: t.id

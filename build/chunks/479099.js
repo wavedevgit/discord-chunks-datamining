@@ -1,4 +1,4 @@
-/** Chunk was on 89444 **/
+/** Chunk was on 67830 **/
 n.d(t, {
   Z: () => _,
   f: () => b
@@ -19,7 +19,7 @@ var i, r = n(200651),
   C = n(388032),
   E = n(250486);
 
-function O(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -38,7 +38,7 @@ function O(e) {
   return e
 }
 
-function m(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -72,7 +72,7 @@ function _(e) {
       let {
         default: e
       } = await n.e("29646").then(n.bind(n, 955116));
-      return n => (0, r.jsx)(e, m(O({}, n), {
+      return n => (0, r.jsx)(e, O(m({}, n), {
         tag: t
       }))
     })
@@ -113,7 +113,7 @@ function _(e) {
     onMouseEnter: () => w && j(!0),
     onMouseLeave: () => w && j(!1)
   }, H = (0, a.JA)("forum-tag-".concat(t.id));
-  return D ? (0, r.jsx)(d.P3F, m(O(m(O({}, H), {
+  return D ? (0, r.jsx)(d.P3F, O(m(O(m({}, H), {
     innerRef: M,
     focusProps: {
       ringTarget: M
@@ -125,7 +125,7 @@ function _(e) {
     "aria-pressed": I
   }), F), {
     children: G
-  })) : (0, r.jsx)("div", m(O({}, F), {
+  })) : (0, r.jsx)("div", O(m({}, F), {
     children: G
   }))
 }
@@ -145,7 +145,7 @@ function b(e) {
         size: _.Sizes.SMALL
       }, e.id))
     }),
-    children: e => (0, r.jsx)("div", m(O({}, e), {
+    children: e => (0, r.jsx)("div", O(m({}, e), {
       className: s()(E.pill, {
         [E.small]: l
       }),

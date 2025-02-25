@@ -27,9 +27,9 @@ function x(e) {
     channelId: t,
     warningId: x,
     senderId: j
-  } = e, O = (0, _.E4)(), E = i.useCallback(() => {
+  } = e, O = (0, _.E4)(), N = i.useCallback(() => {
     (0, p.T)(t, [x])
-  }, [t, x]), N = (0, b.t)({
+  }, [t, x]), E = (0, b.t)({
     location: v.zr
   }), I = e => {
     a.Z.updateChannelOverrideSettings(null, t, {
@@ -40,7 +40,7 @@ function x(e) {
       senderId: j,
       warningType: h.pj.LIKELY_ATO,
       cta: e
-    }), E()
+    }), N()
   }, P = () => {
     (0, o.ZDy)(async () => {
       let {
@@ -93,7 +93,7 @@ function x(e) {
     })
   };
   return (i.useEffect(() => {
-    N && ((0, f.MC)(C.rMx.SAFETY_WARNING_VIEWED, {
+    E && ((0, f.MC)(C.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
       warningId: x,
       senderId: j,
@@ -101,14 +101,14 @@ function x(e) {
     }), s.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     }))
-  }, [t, x, j, N]), N) ? (0, r.jsx)(m.Q, {
+  }, [t, x, j, E]), E) ? (0, r.jsx)(m.Q, {
     channelId: t,
     warningId: x,
     senderId: j,
     warningType: h.pj.LIKELY_ATO,
     header: y.NW.string(y.t.R8UsiI),
     description: y.NW.string(y.t.lI8nQk),
-    onDismiss: E,
+    onDismiss: N,
     buttons: [{
       text: y.NW.string(y.t.tC1pvL),
       color: o.zxk.Colors.BRAND,

@@ -1,6 +1,6 @@
 /** Chunk was on 64615 **/
 n.d(t, {
-  Z: () => S
+  Z: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -109,7 +109,7 @@ function _(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     activity: t,
     user: n,
@@ -128,7 +128,7 @@ function x(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     activity: t
   } = e, n = null == t ? void 0 : t.state;
@@ -160,7 +160,7 @@ function P(e) {
   })
 }
 
-function S(e) {
+function N(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -172,16 +172,16 @@ function S(e) {
     onOpenSpotifyAlbum: g
   } = e, m = [];
   null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (m = u.map(e => e.user.id));
-  let S = (0, a.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
-    N = null != n || (0, c.Z)(t),
-    Z = i.useMemo(() => {
+  let N = (0, a.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
+    S = null != n || (0, c.Z)(t),
+    I = i.useMemo(() => {
       let e = new Map;
-      return N && null != u && u.forEach(t => {
+      return S && null != u && u.forEach(t => {
         let n = t.member;
         null != n && e.set(t.user.id, n)
       }), e
-    }, [u, N]);
-  return N ? (0, r.jsxs)("div", {
+    }, [u, S]);
+  return S ? (0, r.jsxs)("div", {
     className: y.flexColumn,
     children: [(0, r.jsxs)("div", {
       className: y.flexRow,
@@ -196,22 +196,22 @@ function S(e) {
           activity: t,
           embeddedApp: n,
           onOpenSpotifyTrack: p
-        }), (0, r.jsx)(x, {
+        }), (0, r.jsx)(C, {
           activity: t,
           user: l,
           onOpenSpotifyArtist: h
-        }), (0, r.jsx)(C, {
+        }), (0, r.jsx)(x, {
           activity: t
         }), m.length > 0 && (0, r.jsx)(d.Z, {
           className: y.usersSummary,
           guildId: o.guild_id,
-          users: S,
+          users: N,
           size: O,
           max: 7,
           renderUser: e => {
             var t;
             if (null == e) return null;
-            let n = Z.get(e.id),
+            let n = I.get(e.id),
               i = null !== (t = null == n ? void 0 : n.nick) && void 0 !== t ? t : v.ZP.getName(e);
             return (0, r.jsx)(s.DY3, {
               text: i,

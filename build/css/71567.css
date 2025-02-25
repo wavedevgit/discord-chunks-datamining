@@ -1,6 +1,6 @@
 /**
   Module ID: 71567
-  Original File Name: 03ca64536f21b508
+  Original File Name: c1aa25ad4b5a86c8
 **/
 .popoutContainer_a6cedd {
     display: flex;
@@ -12998,6 +12998,46 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     margin: 24px 0
 }
 
+.twoColumnContainer__864b0 {
+    display: flex;
+    flex-direction: row;
+    gap: 32px
+}
+
+.column__864b0 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.divider__864b0 {
+    height: 1px;
+    width: 100%;
+    background-color: var(--divider-strong);
+    margin: 32px 0
+}
+
+.previewWrapper__864b0 {
+    height: 100px;
+    overflow: hidden;
+    position: relative
+}
+
+.gradient__864b0,.preview__864b0 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.gradient__864b0 {
+    z-index: 2;
+    display: block;
+    top: 0;
+    background: linear-gradient(180deg,var(--background-primary),transparent 70%)
+}
+
 .dragging_f7c056 {
     opacity: .6
 }
@@ -13568,6 +13608,19 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     gap: 16px
 }
 
+.twoColumnContainer_ee84e7 {
+    display: flex;
+    flex-direction: row;
+    gap: 32px
+}
+
+.column_ee84e7 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
 @value rightColumnWidth: 300px;
 
 @value columnGap: 40px;
@@ -13648,4 +13701,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=03ca64536f21b508.css.map*/
+/*# sourceMappingURL=c1aa25ad4b5a86c8.css.map*/

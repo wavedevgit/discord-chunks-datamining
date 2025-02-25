@@ -32,7 +32,7 @@ function b(e) {
   } = (0, l.cj)([a.Z], () => ({
     viewerClippingAllowed: null != _ && (a.Z.isViewerClippingAllowedForUser(_.ownerId) || C),
     isAtMaxSavingClipOperations: a.Z.getIsAtMaxSaveClipOperations()
-  })), x = a.Z.getSettings().clipsEnabled, j = (null == _ ? void 0 : _.ownerId) === p.default.getId(), O = !x || !(j || v) || y || null == n, E = i.useCallback(e => {
+  })), x = a.Z.getSettings().clipsEnabled, j = (null == _ ? void 0 : _.ownerId) === p.default.getId(), O = !x || !(j || v) || y || null == n, N = i.useCallback(e => {
     var t, n;
     return (0, r.jsx)(o.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -70,7 +70,7 @@ function b(e) {
       O || (j ? (0, s.C1)() : (0, s.C1)(n.id))
     },
     disabled: O,
-    iconComponent: E,
+    iconComponent: N,
     label: null == _ ? m.NW.string(m.t.eg5qtb) : j || v ? x ? y ? void 0 : m.NW.string(m.t.U4URzM) : m.NW.string(m.t.wSS1yM) : m.NW.string(m.t.aRifJS),
     grow: !1
   })

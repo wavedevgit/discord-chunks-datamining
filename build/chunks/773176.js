@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(245216),
   j = n(223606),
   O = n(188597),
-  E = n(41776),
-  N = n(980463),
+  N = n(41776),
+  E = n(980463),
   I = n(328908),
   P = n(992970),
   S = n(135793),
@@ -213,7 +213,7 @@ function em(e) {
     } = (0, c.cj)([V.Z], () => ({
       canAddNewReactions: _ && V.Z.can(el.Plq.ADD_REACTIONS, t),
       canManageMessages: V.Z.can(el.Plq.MANAGE_MESSAGES, t)
-    }), [t, _]), j = (0, M.U)(t, n), O = (0, D.NE)(t, n), N = (0, D.Ek)(n), I = (0, c.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), P = (0, c.e7)([F.ZP], () => null != t.guild_id && F.ZP.isCurrentUserGuest(t.guild_id), [t]), S = s.id === d, Z = (C || n.canDeleteOwnMessage(d)) && p && !el.V$x.UNDELETABLE.has(n.type);
+    }), [t, _]), j = (0, M.U)(t, n), O = (0, D.NE)(t, n), E = (0, D.Ek)(n), I = (0, c.e7)([N.Z], () => null != t.guild_id && N.Z.isLurking(t.guild_id), [t]), P = (0, c.e7)([F.ZP], () => null != t.guild_id && F.ZP.isCurrentUserGuest(t.guild_id), [t]), S = s.id === d, Z = (C || n.canDeleteOwnMessage(d)) && p && !el.V$x.UNDELETABLE.has(n.type);
     n.type === el.uaV.AUTO_MODERATION_ACTION && (Z = Z && C);
     let T = (0, X.a4)(n),
       A = (0, J.Z)(n, t, C),
@@ -259,7 +259,7 @@ function em(e) {
       canReport: T,
       canReply: j,
       canStartThread: O,
-      canViewThread: N,
+      canViewThread: E,
       canForward: K && ee,
       canCopy: q.wS,
       hasDeveloperMode: b,
@@ -287,9 +287,9 @@ function em(e) {
     ea({
       emojiPicker: !Y
     })
-  }, [Y, ea]), eb = (0, D.$R)(t), eC = n.hasFlag(el.iLy.CROSSPOSTED), [ev, ey] = (0, m.cv)(w ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = ev === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eO] = i.useState(!1), eE = i.useCallback(() => {
+  }, [Y, ea]), eb = (0, D.$R)(t), eC = n.hasFlag(el.iLy.CROSSPOSTED), [ev, ey] = (0, m.cv)(w ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = ev === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eO] = i.useState(!1), eN = i.useCallback(() => {
     eO(!0)
-  }, []), eN = i.useCallback(() => {
+  }, []), eE = i.useCallback(() => {
     eO(!1)
   }, []), eI = i.useCallback((e, t) => {
     ey(eo.L.TAKE_ACTION), (0, et.ts)(e, t)
@@ -310,7 +310,7 @@ function em(e) {
     eT = eS && eZ && !n.hasPotions(),
     eA = i.useCallback(e => {
       try {
-        (0, N.qc)(t.id, n.id, e)
+        (0, E.qc)(t.id, n.id, e)
       } catch (e) {
         (0, d.showToast)((0, d.createToast)(es.NW.string(es.t.xsfC2d), d.ToastType.FAILURE))
       }
@@ -390,8 +390,8 @@ function em(e) {
       label: es.NW.string(es.t.I3ltXF),
       icon: x.Z,
       onClick: () => eI(t, n),
-      onTooltipShow: eE,
-      onTooltipHide: eN,
+      onTooltipShow: eN,
+      onTooltipHide: eE,
       showNewBadge: !ej && ex
     }, "forward") : null, O && !w ? (0, r.jsx)(ee.sF, {
       label: es.NW.string(es.t.rBIGBA),

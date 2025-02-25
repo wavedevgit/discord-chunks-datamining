@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(351127),
   j = n(981631),
   O = n(388032),
-  E = n(211971),
-  N = n(163253);
+  N = n(211971),
+  E = n(163253);
 
 function I(e) {
   var t, n, l, a;
@@ -35,24 +35,24 @@ function I(e) {
     guild: C,
     specMap: v,
     categoryTitle: y,
-    userId: E
+    userId: N
   } = e, I = (0, c.e7)([b.Z], () => b.Z.getRoles(C.id)), P = j.Plq[s], S = null !== (l = null === (t = v[P.toString()]) || void 0 === t ? void 0 : t.title) && void 0 !== l ? l : (0, m.wt)(P), Z = null !== (a = null === (n = v[P.toString()]) || void 0 === n ? void 0 : n.description) && void 0 !== a ? a : "", T = x._o.has(P), A = x.Qn.includes(s), w = g.length, R = (0, c.e7)([_.Z], () => _.Z.can(j.Plq.MANAGE_ROLES, C), [C]), M = i.useCallback(async e => {
     R && (await f.Z.open(C.id, j.pNK.ROLES), await f.Z.selectRole(e))
   }, [R, C.id]);
   return (0, r.jsxs)("div", {
-    className: o()(N.permissionItemContainer, {
-      [N.elevatedPermission]: T
+    className: o()(E.permissionItemContainer, {
+      [E.elevatedPermission]: T
     }),
     children: [(0, r.jsxs)("div", {
-      className: N.permissionItemHeader,
+      className: E.permissionItemHeader,
       children: [(0, r.jsxs)("div", {
-        className: N.permissionTitle,
+        className: E.permissionTitle,
         children: [(0, r.jsx)(u.Text, {
           variant: "text-md/medium",
           color: "header-primary",
           children: S
         }), null != y && (0, r.jsxs)("div", {
-          className: N.permissionItemSubheader,
+          className: E.permissionItemSubheader,
           children: [(0, r.jsx)(u.Text, {
             variant: "text-xs/normal",
             color: "header-muted",
@@ -85,7 +85,7 @@ function I(e) {
                   }
                   return e
                 }({
-                  className: N.elevatedPermissionContainer
+                  className: E.elevatedPermissionContainer
                 }, e), n = n = {
                   children: [(0, r.jsx)(u.tQf, {
                     size: "custom",
@@ -116,7 +116,7 @@ function I(e) {
               "aria-hidden": "true",
               color: u.TVs.colors.INTERACTIVE_MUTED.css
             }), (0, r.jsx)("div", {
-              className: N.elevatedPermissionContainer,
+              className: E.elevatedPermissionContainer,
               children: (0, r.jsx)(u.Text, {
                 variant: "text-xs/normal",
                 color: "header-muted",
@@ -133,18 +133,18 @@ function I(e) {
         })
       })]
     }), null != Z && (0, r.jsx)("div", {
-      className: N.permissionItemDescription,
+      className: E.permissionItemDescription,
       children: (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: Z
       })
     }), (0, r.jsx)("div", {
-      className: N.permissionItemRoleContainer,
-      children: g.map(e => (0, x.Ov)(e, E) ? (0, r.jsx)("div", {
-        className: N.roleTooltipItem,
+      className: E.permissionItemRoleContainer,
+      children: g.map(e => (0, x.Ov)(e, N) ? (0, r.jsx)("div", {
+        className: E.roleTooltipItem,
         children: (0, r.jsx)("div", {
-          className: N.roleChiplet,
+          className: E.roleChiplet,
           children: (0, r.jsx)(u.Text, {
             variant: "text-xs/medium",
             color: "text-normal",
@@ -152,14 +152,14 @@ function I(e) {
           })
         })
       }, e) : (0, r.jsx)(u.P3F, {
-        className: o()(N.roleTooltipItem, {
-          [N.editable]: R && !(0, d.pM)(C.id, e)
+        className: o()(E.roleTooltipItem, {
+          [E.editable]: R && !(0, d.pM)(C.id, e)
         }),
         onClick: () => M(e),
         children: (0, r.jsx)(h.Z, {
           role: I[e],
           guildId: C.id,
-          className: N.roleChiplet
+          className: E.roleChiplet
         })
       }, e))
     })]
@@ -222,19 +222,19 @@ function S(e) {
     }), e
   }, [h, Z, f, S, T, _, R, t]);
   return null == p || null == f ? null : (0, r.jsxs)("div", {
-    className: o()(E.container, a),
+    className: o()(N.container, a),
     children: [(0, r.jsx)(y.Z, {
       guildId: n,
       userId: t,
       onNavigate: d
     }), (0, r.jsx)(u.Ttm, {
-      className: N.permissionsGroupContainer,
+      className: E.permissionsGroupContainer,
       children: (0, r.jsx)(u.xJW, {
         title: O.NW.string(O.t.BBWnpq),
         children: (0, r.jsxs)("div", {
-          className: N.permissionsItemContainer,
+          className: E.permissionsItemContainer,
           children: [(0, r.jsx)(u.E1j, {
-            className: N.searchBar,
+            className: E.searchBar,
             query: A,
             placeholder: O.NW.string(O.t["yD9+dH"]),
             onChange: L,

@@ -26,8 +26,8 @@ var r = n(200651),
   x = n(695346),
   j = n(592125),
   O = n(906467),
-  E = n(323873),
-  N = n(709054),
+  N = n(323873),
+  E = n(709054),
   I = n(786761),
   P = n(534091),
   S = n(901461),
@@ -183,13 +183,13 @@ function er(e) {
     className: _,
     groupId: C,
     viewingChannelId: j
-  } = e, O = a.type === Y.uaV.REPLY ? a.messageReference : void 0, E = (0, c.JA)(null !== (t = e.id) && void 0 !== t ? t : ""), {
-    onFocus: N
-  } = E, P = ee(E, ["onFocus"]), {
+  } = e, O = a.type === Y.uaV.REPLY ? a.messageReference : void 0, N = (0, c.JA)(null !== (t = e.id) && void 0 !== t ? t : ""), {
+    onFocus: E
+  } = N, P = ee(N, ["onFocus"]), {
     isFocused: T,
     handleFocus: D,
     handleBlur: U
-  } = (0, R.bb)(N), {
+  } = (0, R.bb)(E), {
     popouts: B,
     selected: G,
     setPopout: Q
@@ -327,21 +327,21 @@ let ei = i.memo(function(e) {
     }),
     {
       isFocused: eO,
-      hasFocused: eE,
-      handleFocus: eN,
+      hasFocused: eN,
+      handleFocus: eE,
       handleBlur: eI
     } = (0, R.bb)(ec),
     eP = i.useCallback(e => {
-      eN(e), ev(e)
-    }, [eN, ev]),
+      eE(e), ev(e)
+    }, [eE, ev]),
     eS = i.useCallback(e => {
       eI(e), ey()
     }, [eI, ey]),
-    eZ = (0, u.e7)([E.Z], () => E.Z.isEditing(et, P), [et, P]),
+    eZ = (0, u.e7)([N.Z], () => N.Z.isEditing(et, P), [et, P]),
     eT = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled),
     eA = eg || eZ || eT && eO,
     ew = eA || ej,
-    eR = (0, u.e7)([j.Z], () => y.hasFlag(Y.iLy.HAS_THREAD) && j.Z.getChannel(N.default.castMessageIdAsChannelId(y.id))),
+    eR = (0, u.e7)([j.Z], () => y.hasFlag(Y.iLy.HAS_THREAD) && j.Z.getChannel(E.default.castMessageIdAsChannelId(y.id))),
     eM = y.isFirstMessageInForumPost(Q),
     ek = (0, m.A)((null !== (n = y.editedTimestamp) && void 0 !== n ? n : y.timestamp).valueOf()),
     eL = (0, u.e7)([O.Z], () => O.Z.isDeveloper),
@@ -449,7 +449,7 @@ let ei = i.memo(function(e) {
             isInteracting: ew,
             isAutomodBlockedMessage: eK
           }),
-          childrenButtons: ex || eE ? (0, B.Z)({
+          childrenButtons: ex || eN ? (0, B.Z)({
             buttonProps: e,
             setPopout: eb,
             messagePopouts: em,

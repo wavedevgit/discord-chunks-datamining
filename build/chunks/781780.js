@@ -11,21 +11,21 @@ var o = n(200651),
 function c(e) {
   var t, n, c;
   let {
-    channelId: s,
-    guildId: _,
-    embeddedActivity: u,
-    application: d
+    channelId: u,
+    guildId: s,
+    embeddedActivity: d,
+    application: _
   } = e, p = {
-    instance_id: null !== (c = null !== (n = u.compositeInstanceId) && void 0 !== n ? n : u.launchId) && void 0 !== c ? c : "",
-    location_id: null === (t = u.location) || void 0 === t ? void 0 : t.id,
-    launch_id: u.launchId,
-    referrer_id: u.referrerId,
-    custom_id: u.customId
+    instance_id: null !== (c = null !== (n = d.compositeInstanceId) && void 0 !== n ? n : d.launchId) && void 0 !== c ? c : "",
+    location_id: null === (t = d.location) || void 0 === t ? void 0 : t.id,
+    launch_id: d.launchId,
+    referrer_id: d.referrerId,
+    custom_id: d.customId
   };
-  return null != _ && "" !== _ && (p.guild_id = _), null != s && "" !== s && (p.channel_id = s), (0, o.jsx)(a.J, {
-    allowPopups: (0, r.h)(d),
-    referrerPolicy: i.um.has(u.applicationId) ? "no-referrer" : "origin",
-    url: u.url,
+  return null != s && "" !== s && (p.guild_id = s), null != u && "" !== u && (p.channel_id = u), (0, o.jsx)(a.J, {
+    allowPopups: (0, r.h)(_),
+    referrerPolicy: i.um.has(d.applicationId) ? "no-referrer" : "origin",
+    url: d.url,
     queryParams: p,
     className: l.iframe,
     shouldRefocus: !1

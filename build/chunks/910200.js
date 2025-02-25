@@ -101,9 +101,12 @@ function I(e) {
     profile: t,
     onIconChange: n,
     className: l,
-    disableCTA: a
-  } = e;
-  return (0, r.jsxs)("div", {
+    disableCTA: a,
+    CTAOverride: o
+  } = e, s = null;
+  return null != o ? s = o : a || (s = (0, r.jsx)(h.Z, {
+    profile: t
+  })), (0, r.jsxs)("div", {
     className: i()(b.container, l),
     children: [(0, r.jsx)(y, {
       profile: t
@@ -123,11 +126,9 @@ function I(e) {
       }), (0, r.jsx)(g.F, {
         profile: t
       })]
-    }), a ? null : (0, r.jsx)("div", {
+    }), null != s && (0, r.jsx)("div", {
       className: b.buttonContainer,
-      children: (0, r.jsx)(h.Z, {
-        profile: t
-      })
+      children: s
     })]
   })
 }

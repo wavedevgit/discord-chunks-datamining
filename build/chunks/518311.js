@@ -23,8 +23,8 @@ var r, i = n(200651),
   x = n(425493),
   j = n(461745),
   O = n(40851),
-  E = n(367907),
-  N = n(43267),
+  N = n(367907),
+  E = n(43267),
   I = n(933557),
   P = n(600164),
   S = n(313201),
@@ -139,7 +139,7 @@ let ec = e => {
       children: (0, i.jsxs)("div", {
         className: ee.confirmChannelItemContainer,
         children: [(0, i.jsx)(f.qEK, {
-          src: (0, N.x)(n),
+          src: (0, E.x)(n),
           size: f.EFr.SIZE_24,
           "aria-label": l
         }), (0, i.jsx)("span", {
@@ -200,7 +200,7 @@ class ed extends(r = l.PureComponent) {
       channel: e
     } = this.props;
     m.Z.wait(() => v.Z.open(null == e ? void 0 : e.id));
-    let t = (0, E.v_)(e);
+    let t = (0, N.v_)(e);
     H.default.track(J.rMx.OPEN_POPOUT, ei(er({}, t), {
       type: this._getAnalyticsEntryPoint().entryPointType,
       source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -595,7 +595,7 @@ class ed extends(r = l.PureComponent) {
     }), en(this, "handleQueryChange", e => {
       let {
         channel: t
-      } = this.props, n = (0, E.v_)(t);
+      } = this.props, n = (0, N.v_)(t);
       v.Z.search(e, null == t ? void 0 : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
         H.default.track(J.rMx.SEARCH_USER_LIST_STARTED, ei(er({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
@@ -625,7 +625,7 @@ class ed extends(r = l.PureComponent) {
         {
           channel: n
         } = this.props,
-        r = (0, E.v_)(n),
+        r = (0, N.v_)(n),
         i = !0;
       1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), H.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
         is_new_dm: i,
@@ -637,7 +637,7 @@ class ed extends(r = l.PureComponent) {
       })), b.Z.openPrivateChannel(e, !1, !1, "New Group DM")
     }), en(this, "pushToExistingDM", (e, t) => {
       let n = this._searchCounter,
-        r = (0, E.v_)(e),
+        r = (0, N.v_)(e),
         i = D.Z.getChannelId() === e.id;
       b.Z.addRecipients(e.id, t, J.Sbl.ADD_FRIENDS_TO_DM).then(n => {
         if (i) {

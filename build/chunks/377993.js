@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(585483),
   j = n(233870),
   O = n(51144),
-  E = n(998502),
-  N = n(276264),
+  N = n(998502),
+  E = n(276264),
   I = n(981631),
   P = n(388032),
   S = n(920915);
@@ -62,7 +62,7 @@ function T(e, t) {
   }), e
 }
 let A = [],
-  w = E.ZP.getEnableHardwareAcceleration();
+  w = N.ZP.getEnableHardwareAcceleration();
 
 function R(e) {
   let {
@@ -70,7 +70,7 @@ function R(e) {
     channel: i,
     status: u,
     activities: d
-  } = e, p = (0, o.e7)([C.Z], () => null != C.Z.getTypingUsers(i.id)[t.id]), f = (0, o.e7)([v.default], () => v.default.getCurrentUser()), y = (0, o.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), j = (0, o.e7)([_.Z], () => _.Z.getNickname(t.id)), E = (0, h.Z)(t.id, "private-channel-recipient"), S = e => {
+  } = e, p = (0, o.e7)([C.Z], () => null != C.Z.getTypingUsers(i.id)[t.id]), f = (0, o.e7)([v.default], () => v.default.getCurrentUser()), y = (0, o.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), j = (0, o.e7)([_.Z], () => _.Z.getNickname(t.id)), N = (0, h.Z)(t.id, "private-channel-recipient"), S = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
@@ -101,7 +101,7 @@ function R(e) {
         rawText: n
       }), c.Z.startTyping(i.id)
     },
-    children: e => (0, r.jsx)(N.Z, Z({
+    children: e => (0, r.jsx)(E.Z, Z({
       user: t,
       currentUser: f,
       isOwner: t.id === i.ownerId,
@@ -110,7 +110,7 @@ function R(e) {
       isTyping: p,
       status: u,
       activities: d,
-      applicationStream: E,
+      applicationStream: N,
       channel: i,
       onContextMenu: S,
       isMobile: y,

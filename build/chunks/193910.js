@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(127654),
   j = n(752305),
   O = n(951211),
-  E = n(981631),
-  N = n(921944),
+  N = n(981631),
+  E = n(921944),
   I = n(489887),
   P = n(388032),
   S = n(998685);
@@ -38,7 +38,7 @@ function T() {
   let [n] = (0, f.cv)(t);
   return i.useEffect(() => () => {
     n === a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE && (0, h.EW)(a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-      dismissAction: N.L.TAKE_ACTION
+      dismissAction: E.L.TAKE_ACTION
     })
   }, [n]), (0, r.jsx)(m.ZP, {
     contentTypes: t,
@@ -76,7 +76,7 @@ function A(e) {
   }
 
   function W() {
-    C.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, j.JM)("/"))
+    C.default.track(N.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, j.JM)("/"))
   }
 
   function U() {
@@ -85,7 +85,7 @@ function A(e) {
 
   function B() {
     (0, h.EW)(a.z.POLLS_CHAT_INPUT_COACHMARK, {
-      dismissAction: N.L.TAKE_ACTION
+      dismissAction: E.L.TAKE_ACTION
     }), (0, s.ZDy)(async () => {
       let {
         default: e
@@ -128,7 +128,7 @@ function A(e) {
   }
 
   function F() {
-    C.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
+    C.default.track(N.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
       guild_id: t.guild_id
@@ -136,10 +136,10 @@ function A(e) {
       channel: t,
       guildId: t.guild_id,
       locationObject: {
-        page: t.isPrivate() ? E.ZY5.DM_CHANNEL : E.ZY5.GUILD_CHANNEL,
-        section: E.jXE.CHANNEL_TEXT_AREA,
-        object: E.qAy.CONTEXT_MENU_ITEM,
-        objectType: E.Qqv.ACTIVITY
+        page: t.isPrivate() ? N.ZY5.DM_CHANNEL : N.ZY5.GUILD_CHANNEL,
+        section: N.jXE.CHANNEL_TEXT_AREA,
+        object: N.qAy.CONTEXT_MENU_ITEM,
+        objectType: N.Qqv.ACTIVITY
       },
       openInPopout: !1,
       enableSelectedTextChannelInvite: !0,
@@ -156,12 +156,12 @@ function A(e) {
       i = w.match(Z);
     null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, x.d)([(0, y.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n))], t, A), v.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && v.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
+    }), "message.".concat(n))], t, A), v.S.dispatchToLastSubscribed(N.CkL.CLEAR_TEXT), "" !== r && v.S.dispatchToLastSubscribed(N.CkL.INSERT_TEXT, {
       plainText: r
     })
   }
   return i.useEffect(() => {
-    C.default.track(E.rMx.OPEN_POPOUT, {
+    C.default.track(N.rMx.OPEN_POPOUT, {
       type: "Send Attachment",
       channel_id: t.id,
       guild_id: t.guild_id
@@ -222,7 +222,7 @@ function A(e) {
               var n;
               return n = e.activity, void c.Z.sendActivityInvite({
                 channelId: t.id,
-                type: E.mFx.JOIN,
+                type: N.mFx.JOIN,
                 activity: n,
                 location: k[k.length - 1]
               })
@@ -236,7 +236,7 @@ function A(e) {
               var n;
               return n = e.activity, void c.Z.sendActivityInvite({
                 channelId: t.id,
-                type: E.mFx.LISTEN,
+                type: N.mFx.LISTEN,
                 activity: n,
                 location: k[k.length - 1]
               })
@@ -250,7 +250,7 @@ function A(e) {
               var n;
               return n = e.activity, void c.Z.sendActivityInvite({
                 channelId: t.id,
-                type: E.mFx.WATCH,
+                type: N.mFx.WATCH,
                 activity: n,
                 location: k[k.length - 1]
               })

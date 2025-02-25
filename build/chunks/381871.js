@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(696900),
   j = n(456631),
   O = n(963838),
-  E = n(535879),
-  N = n(310892),
+  N = n(535879),
+  E = n(310892),
   I = n(12168),
   P = n(353368),
   S = n(981631),
@@ -69,7 +69,7 @@ function W(e) {
       })
     },
     Y = () => {
-      (0, N.h)({
+      (0, E.h)({
         analytics: {
           type: A.cd.EMOJI_PICKER_EMOJI_CLICKED,
           object: S.qAy.BUTTON_CTA,
@@ -133,7 +133,7 @@ function W(e) {
           onExpandedToggle: K,
           analyticsOverride: L,
           emojiSearchProps: {
-            accessory: (0, r.jsx)(E.Z, {
+            accessory: (0, r.jsx)(N.Z, {
               labelText: R.NW.string(R.t["ktEv/v"]),
               value: $,
               onChange: () => {
@@ -145,7 +145,7 @@ function W(e) {
                   type: "VOICE_CHANNEL_EFFECT_TOGGLE_ANIMATION_TYPE"
                 })
               },
-              onShowUpsell: () => (0, N.h)({
+              onShowUpsell: () => (0, E.h)({
                 analytics: {
                   type: F.current ? A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED : A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED,
                   object: S.qAy.VOICE_CHANNEL_EFFECTS_TOGGLE,

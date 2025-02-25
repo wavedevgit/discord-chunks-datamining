@@ -1,6 +1,6 @@
 /** Chunk was on 71611 **/
 n.d(t, {
-  Z: () => E
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -70,7 +70,7 @@ let O = i.memo(function(e) {
       })]
     })
   }),
-  E = i.memo(function(e) {
+  N = i.memo(function(e) {
     var t, n;
     let {
       className: l,
@@ -79,12 +79,12 @@ let O = i.memo(function(e) {
       children: f,
       content: m,
       onUpdate: C
-    } = e, E = null === (t = u.editedTimestamp) || void 0 === t ? void 0 : t.toString(), N = i.useRef(!1), I = (0, c.e7)([h.Z], () => h.Z.getMessage(u.id), [u.id]), P = i.useCallback(() => {
+    } = e, N = null === (t = u.editedTimestamp) || void 0 === t ? void 0 : t.toString(), E = i.useRef(!1), I = (0, c.e7)([h.Z], () => h.Z.getMessage(u.id), [u.id]), P = i.useCallback(() => {
       (null == I ? void 0 : I.isBlockedEdit) ? (0, p.I)(u.id) : d.Z.deleteMessage(u.channel_id, u.id, !0)
     }, [u, I]);
     return i.useLayoutEffect(() => {
-      N.current ? null != C && C() : N.current = !0
-    }, [C, u.content, m, E, f]), (0, r.jsxs)("div", {
+      E.current ? null != C && C() : E.current = !0
+    }, [C, u.content, m, N, f]), (0, r.jsxs)("div", {
       id: (0, g.ut)(u),
       className: o()(l, j.markup, {
         [x.messageContent]: !0,

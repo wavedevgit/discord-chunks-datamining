@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(301076),
   j = n(221241),
   O = n(82965),
-  E = n(127379),
-  N = n(981631),
+  N = n(127379),
+  E = n(981631),
   I = n(921944),
   P = n(388032),
   S = n(657452);
@@ -51,7 +51,7 @@ function Z(e) {
     channelId: t.id
   }), V = B && H || !B && (G || !U && k), z = !M, q = i.useCallback(e => {
     "focus" !== e.type && D()
-  }, [D]), Y = (0, s.O)(), K = (0, c.bp)() === N.IlC.POPOUT, {
+  }, [D]), Y = (0, s.O)(), K = (0, c.bp)() === E.IlC.POPOUT, {
     analyticsLocations: X
   } = (0, _.ZP)(), Q = X.length > 0 ? X[X.length - 1] : "open-activity-shelf";
   C.m1.useExperiment({
@@ -87,7 +87,7 @@ function Z(e) {
       } = e, s = i === o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !k;
       return !0 === et.current && !1 === s && l(I.L.AUTO_DISMISS), et.current !== s && (et.current = s), (0, r.jsx)(a.yRy, {
         fixed: !0,
-        shouldShow: k && (Z === E.D.ACTIVITY || null == Z),
+        shouldShow: k && (Z === N.D.ACTIVITY || null == Z),
         animation: U ? a.yRy.Animation.FADE : a.yRy.Animation.TRANSLATE,
         animationPosition: U ? "top" : "bottom",
         position: "bottom",

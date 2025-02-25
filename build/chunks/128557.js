@@ -25,8 +25,8 @@ var r = n(200651),
   x = n(259580),
   j = n(585483),
   O = n(63063),
-  E = n(358085),
-  N = n(709054),
+  N = n(358085),
+  E = n(709054),
   I = n(967128),
   P = n(981631),
   S = n(231873),
@@ -111,7 +111,7 @@ function W(e) {
 function U(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([v.Z], () => null != t ? v.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && N.default.extractTimestamp(l.id) < Date.now() - P._8R, x = (0, s.e7)([C.default], () => (null == l ? void 0 : l.ownerId) === C.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([v.Z], () => null != t ? v.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && E.default.extractTimestamp(l.id) < Date.now() - P._8R, x = (0, s.e7)([C.default], () => (null == l ? void 0 : l.ownerId) === C.default.getId(), [l]), {
     canInvite: U,
     canManageGuild: B,
     canMessage: F
@@ -282,7 +282,7 @@ function U(e) {
       completed: V,
       onClick: Y
     })
-  }, "message")), (0, E.isWeb)() && el.push((0, r.jsx)(a.Z.div, {
+  }, "message")), (0, N.isWeb)() && el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
     style: J ? {
       opacity: ee[el.length]

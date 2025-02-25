@@ -1,7 +1,7 @@
 /** Chunk was on 71611 **/
 n.d(t, {
   ZP: () => I,
-  xL: () => N
+  xL: () => E
 });
 var r = n(200651),
   i = n(192379),
@@ -27,14 +27,14 @@ var r = n(200651),
 let O = (0, a.U)(() => ({
     visible: !1
   })),
-  E = e => {
+  N = e => {
     (0, s.j)(() => {
       O.setState({
         visible: e
       })
     })
   },
-  N = O;
+  E = O;
 
 function I(e) {
   let {
@@ -60,8 +60,8 @@ function I(e) {
       source: g._b.TEXT
     }))
   }, [c, f]), j = null != C && C.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, O = !o && null != a && !0 === j;
-  return (i.useEffect(() => (E(O), () => {
-    E(!1)
+  return (i.useEffect(() => (N(O), () => {
+    N(!1)
   }), [O]), O) ? (0, r.jsx)(P, {
     context: t,
     application: a,
@@ -106,11 +106,11 @@ function P(e) {
     channelRecipientUserId: b,
     setIsExecutingLaunchInteraction: _,
     analyticsLocations: y
-  }), E = h ? c.zxk.Colors.RED : c.zxk.Colors.BRAND, N = (0, C.Q3)("LoadedEntryPointCommandButton");
+  }), N = h ? c.zxk.Colors.RED : c.zxk.Colors.BRAND, E = (0, C.Q3)("LoadedEntryPointCommandButton");
   return (0, r.jsx)(c.zxk, {
     className: o()(j.entryPointAppCommandButton, x.Id),
-    size: N ? c.zxk.Sizes.SMALL : c.zxk.Sizes.LARGE,
-    color: E,
+    size: E ? c.zxk.Sizes.SMALL : c.zxk.Sizes.LARGE,
+    color: N,
     submitting: d,
     onClick: O,
     buttonRef: a,

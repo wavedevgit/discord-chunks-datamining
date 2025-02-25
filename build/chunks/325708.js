@@ -68,15 +68,15 @@ function _(e) {
   }, [_]), x = 5 === t ? f.at : f.Co, j = (0, f.WL)({
     maxWidth: n,
     minWidth: x
-  }), O = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(C, x, n), N = j ? E : E + O;
+  }), O = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), N = (0, s.clamp)(C, x, n), E = j ? N : N + O;
   l.useEffect(() => {
-    null == r || r(E, j)
-  }, [E, r, j]);
+    null == r || r(N, j)
+  }, [N, r, j]);
   let I = null != p ? p : l.Fragment;
   return (0, i.jsxs)(i.Fragment, {
     children: [!j && (0, i.jsx)("div", {
       style: {
-        minWidth: N
+        minWidth: E
       }
     }), (0, i.jsx)(I, {
       children: (0, i.jsxs)("div", {
@@ -87,7 +87,7 @@ function _(e) {
             [m.notFloating]: !j
           }),
           style: {
-            width: N
+            width: E
           }
         }), !j && (0, i.jsx)(b, {
           minWidth: x,
@@ -101,7 +101,7 @@ function _(e) {
             [m.floating]: j
           }),
           style: {
-            width: E
+            width: N
           },
           children: o
         })]

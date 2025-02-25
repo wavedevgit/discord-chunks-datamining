@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-"use strict";
-n.d(t, {
-  Ac: () => i
+/** Chunk was on 73049 **/
+t.d(n, {
+  Ac: () => o
 });
-let r = (0, n(818083).B)({
+let r = (0, t(818083).B)({
   kind: "user",
   id: "2024-08_user_profile_blockee_hide_mutuals",
   label: "User Profile Blockee Hide Mutuals",
@@ -19,16 +18,16 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function i(e) {
+function o(e) {
   let {
-    location: t,
-    autoTrackExposure: n = !0
+    location: n,
+    autoTrackExposure: t = !0
   } = e, {
-    enabled: i
+    enabled: o
   } = r.useExperiment({
-    location: t
+    location: n
   }, {
-    autoTrackExposure: n
+    autoTrackExposure: t
   });
-  return i
+  return o
 }

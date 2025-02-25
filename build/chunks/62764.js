@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(287151),
   j = n(569471),
   O = n(346479),
-  E = n(592125),
-  N = n(934415),
+  N = n(592125),
+  E = n(934415),
   I = n(456269),
   P = n(109590),
   S = n(228392),
@@ -75,7 +75,7 @@ function k(e) {
   } = e, {
     ref: L,
     width: D
-  } = (0, h.Z)(), [W, U] = i.useState(3), [B, F] = i.useState(!n), [H, G] = (0, f.Z)(!1, 2e3), V = (0, s.e7)([E.Z], () => E.Z.getChannel(t), [t]), {
+  } = (0, h.Z)(), [W, U] = i.useState(3), [B, F] = i.useState(!n), [H, G] = (0, f.Z)(!1, 2e3), V = (0, s.e7)([N.Z], () => N.Z.getChannel(t), [t]), {
     firstMessage: z
   } = (0, P.cl)(V), q = (0, s.e7)([j.Z], () => j.Z.hasJoined(t)), {
     disableReactionUpdates: Y,
@@ -83,7 +83,7 @@ function k(e) {
     isLurking: X,
     isGuest: Q,
     isPendingMember: J
-  } = (0, _.Z)(V), $ = (0, s.e7)([E.Z], () => E.Z.getChannel(k)), ee = (0, I.Bs)($), et = (0, s.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && !0 === n, [t, n]), en = i.useCallback(e => {
+  } = (0, _.Z)(V), $ = (0, s.e7)([N.Z], () => N.Z.getChannel(k)), ee = (0, I.Bs)($), et = (0, s.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && !0 === n, [t, n]), en = i.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -115,7 +115,7 @@ function k(e) {
         location: {
           section: Z.jXE.CHANNEL_HEADER
         }
-      }), (0, a.J)((0, N.EO)(V, $)), G(!0)
+      }), (0, a.J)((0, E.EO)(V, $)), G(!0)
     },
     es = () => {
       d.Z.jumpToMessage({

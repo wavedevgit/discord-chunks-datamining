@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(607187),
   j = n(981631),
   O = n(388032),
-  E = n(29983),
-  N = n(359165),
+  N = n(29983),
+  E = n(359165),
   I = n(334732);
 
 function P(e) {
@@ -111,7 +111,7 @@ function T(e) {
   return (0, r.jsx)(g.Gt, {
     value: l,
     children: (0, r.jsxs)(x.Z, {
-      className: E.root,
+      className: N.root,
       children: [(0, r.jsx)(c.ua7, {
         text: O.NW.string(O.t.qJvTKS),
         children: e => {
@@ -133,12 +133,12 @@ function T(e) {
             return i
           }(e, ["onClick"]);
           return (0, r.jsx)(c.P3F, S(P({}, n), {
-            className: E.clickableTile,
+            className: N.clickableTile,
             onClick: () => {
               null == t || t(), d()
             },
             children: (0, r.jsx)("div", {
-              className: E.iconContainer,
+              className: N.iconContainer,
               children: (0, r.jsx)(c.gQj, {
                 size: "custom",
                 color: "currentColor",
@@ -152,11 +152,11 @@ function T(e) {
         theme: j.BRd.DARK,
         children: e => (0, r.jsx)(c.P3F, {
           onClick: i,
-          className: o()(e, E.shelfButtonCloseButton),
+          className: o()(e, N.shelfButtonCloseButton),
           children: (0, r.jsx)(c.k$p, {
             size: "md",
             color: "currentColor",
-            className: E.closeButtonIcon,
+            className: N.closeButtonIcon,
             secondaryColor: s.Z.colors.INTERACTIVE_NORMAL.css
           })
         })
@@ -215,29 +215,29 @@ function A(e) {
       disableAdaptiveTheme: !0,
       theme: j.BRd.MIDNIGHT,
       children: e => (0, r.jsxs)(x.Z, {
-        className: o()(E.root, E.singleUserRoot, e),
+        className: o()(N.root, N.singleUserRoot, e),
         children: [s > 400 && !h ? (0, r.jsx)("img", {
           src: I,
-          className: E.art,
+          className: N.art,
           alt: O.NW.string(O.t["3Y9xdH"])
         }) : (0, r.jsx)("img", {
-          src: N,
-          className: E.art,
+          src: E,
+          className: N.art,
           alt: ""
         }), h ? null : (0, r.jsx)(c.Text, {
-          className: E.heading,
+          className: N.heading,
           variant: "text-md/semibold",
           color: "always-white",
           children: O.NW.string(O.t["6pKGKS"])
         }), (0, r.jsxs)("div", {
-          className: E.buttonContainer,
+          className: N.buttonContainer,
           children: [(0, r.jsxs)(c.zxk, {
             size: c.zxk.Sizes.LARGE,
             color: c.zxk.Colors.PRIMARY,
             className: o()({
-              [E.button]: !h
+              [N.button]: !h
             }),
-            innerClassName: E.buttonContents,
+            innerClassName: N.buttonContents,
             onClick: b,
             children: [(0, r.jsx)(c.iFz, {
               size: "xs",
@@ -247,9 +247,9 @@ function A(e) {
             size: c.zxk.Sizes.LARGE,
             color: c.zxk.Colors.PRIMARY,
             className: o()({
-              [E.button]: !h
+              [N.button]: !h
             }),
-            innerClassName: E.buttonContents,
+            innerClassName: N.buttonContents,
             onClick: C,
             children: [(0, r.jsx)(c.nG3, {
               size: "xs",
@@ -276,7 +276,7 @@ function w(e) {
       n_participants: u
     })
   });
-  let N = (0, p.Z)({
+  let E = (0, p.Z)({
       guildId: n.id
     }).slice(0, 3),
     {
@@ -289,28 +289,28 @@ function w(e) {
   return (0, r.jsx)(g.Gt, {
     value: P,
     children: (0, r.jsxs)(x.Z, {
-      className: E.root,
+      className: N.root,
       children: [s > 480 && !f ? (0, r.jsx)("img", {
-        className: E.art,
+        className: N.art,
         src: I,
         alt: O.NW.string(O.t["3Y9xdH"])
       }) : null, s > 300 ? (0, r.jsx)(c.Text, {
-        className: E.heading,
+        className: N.heading,
         variant: s > 550 ? "text-md/semibold" : "text-sm/semibold",
         children: O.NW.string(O.t["7BKMcH"])
       }) : null, (0, r.jsx)("div", {
-        className: o()(E.activitiesContainer, {
-          [E.activitiesContainerSmol]: s <= 300
+        className: o()(N.activitiesContainer, {
+          [N.activitiesContainerSmol]: s <= 300
         }),
-        children: N.map(e => (0, r.jsx)(h.Y, {
+        children: E.map(e => (0, r.jsx)(h.Y, {
           context: S,
           activityItem: e,
           aspectRatio: h.Y.AspectRatio.SIXTEEN_BY_NINE,
-          animatedDivClass: E.activitySuggestion,
+          animatedDivClass: N.activitySuggestion,
           commandOrigin: b.bB.VOICE_TILE_ACTIVITY_SUGGESTIONS
         }, e.application.id))
       }), (0, r.jsxs)(c.P3F, {
-        className: E.checkboxContainer,
+        className: N.checkboxContainer,
         onClick: function() {
           y.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
@@ -323,7 +323,7 @@ function w(e) {
           children: O.NW.string(O.t["5E9SBw"])
         })]
       }), (0, r.jsx)(c.P3F, {
-        className: E.closeButtonContainer,
+        className: N.closeButtonContainer,
         onClick: function() {
           y.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
@@ -334,7 +334,7 @@ function w(e) {
         children: (0, r.jsx)(c.Dio, {
           size: "md",
           color: "currentColor",
-          className: E.closeButton
+          className: N.closeButton
         })
       })]
     })

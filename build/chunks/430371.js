@@ -43,7 +43,7 @@ function O(e) {
   return e
 }
 
-function E(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,7 +55,7 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = 16 / 9,
+let E = 16 / 9,
   I = 8 + C.cF;
 
 function P(e) {
@@ -96,7 +96,7 @@ function P(e) {
     ea = (null !== (t = (0, c.Z)(M.id)) && void 0 !== t ? t : M.id) !== M.id,
     es = 0;
   (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * I + 8);
-  let ec = i.useMemo(() => J && $ ? W / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : N, [ee, z, J, W, U, es, $]),
+  let ec = i.useMemo(() => J && $ ? W / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : E, [ee, z, J, W, U, es, $]),
     eu = U - 2 * es,
     ed = J && $ ? W : eu * ec,
     ep = Math.floor(Math.min(W, ed) / ec),
@@ -112,7 +112,7 @@ function P(e) {
   let ef = (0, s.q_F)({
       value: +!!en,
       delay: eh || !en ? 0 : 100,
-      config: E(O({}, a.config.stiff), {
+      config: N(O({}, a.config.stiff), {
         clamp: !0
       }),
       onStart: () => Q(!0),
@@ -123,25 +123,25 @@ function P(e) {
     }, "animate-always"),
     em = (0, s.q_F)({
       value: +!!en,
-      config: E(O({}, a.config.stiff), {
+      config: N(O({}, a.config.stiff), {
         clamp: !0
       })
     }, "animate-always"),
     eg = (0, s.q_F)({
       value: ed,
-      config: E(O({}, a.config.stiff), {
+      config: N(O({}, a.config.stiff), {
         clamp: !0
       })
     }, er === en && em.value.idle && !eo || ea ? "animate-never" : "animate-always"),
     eb = (0, s.q_F)({
       value: n,
-      config: E(O({}, a.config.stiff), {
+      config: N(O({}, a.config.stiff), {
         clamp: !0
       })
     }, "animate-always"),
     e_ = (0, s.Yzy)(M, {
       keys: e => null == e ? void 0 : e.id,
-      config: E(O({}, a.config.stiff), {
+      config: N(O({}, a.config.stiff), {
         clamp: !0
       }),
       initial: null,

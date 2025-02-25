@@ -1,23 +1,18 @@
-/** Chunk was on web.js **/
-"use strict";
-n.d(t, {
-  Z: () => a
+/** Chunk was on 73049 **/
+t.d(n, {
+  Z: () => s
 });
-var r = n(184242),
-  i = n(349902),
-  o = n(806729);
+var r = t(442837),
+  o = t(594174),
+  i = t(184242),
+  l = t(349902);
 
-function a(e) {
-  var t, n;
+function s(e) {
   let {
-    user: a,
-    currentUser: s,
-    location: l
-  } = e, {
-    mutualFriends: c,
-    mutualGuilds: u
-  } = (0, o.Z)(a, a.id !== (null == s ? void 0 : s.id)), d = null !== (t = null == c ? void 0 : c.length) && void 0 !== t ? t : 0, f = null !== (n = null == u ? void 0 : u.length) && void 0 !== n ? n : 0, p = (0, i.Z)(a);
-  return !((0, r.Ac)({
-    location: l
-  }) && p && 0 === d && 0 === f)
+    user: n,
+    location: t
+  } = e, s = (0, r.e7)([o.default], () => o.default.getCurrentUser()), c = (0, l.Z)(n);
+  return !(0, i.Ac)({
+    location: t
+  }) || (null == s ? void 0 : s.id) !== n.id && !c
 }

@@ -15,9 +15,9 @@ var o = t(481060),
   f = t(562831),
   p = t(981631),
   m = t(388032),
-  I = t(442806);
+  b = t(442806);
 
-function b(e) {
+function g(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function g(e, n) {
+function v(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -72,17 +72,17 @@ function y(e) {
     user: n,
     analyticsLocation: t
   });
-  return 0 === i.length ? (0, r.jsx)(c.ef, g(b({}, o), {
+  return 0 === i.length ? (0, r.jsx)(c.ef, v(g({}, o), {
     disabled: !0
   })) : (0, r.jsx)(d.Z, {
     menuItems: i,
-    children: e => (0, r.jsx)("div", g(b({}, e), {
-      children: (0, r.jsx)(c.ef, b({}, o))
+    children: e => (0, r.jsx)("div", v(g({}, e), {
+      children: (0, r.jsx)(c.ef, g({}, o))
     }))
   })
 }
 
-function j(e) {
+function I(e) {
   let {
     gameFriends: n,
     hasIncomingPendingGameFriends: t,
@@ -114,63 +114,63 @@ function h(e) {
     user: t,
     relationshipType: d,
     friendToken: u,
-    onClose: b
+    onClose: g
   } = e, {
-    newestAnalyticsLocation: g
+    newestAnalyticsLocation: v
   } = (0, l.ZP)(), h = (0, s.wn)({
     location: "UserProfileModalHeaderActionButtons"
   }), {
-    gameFriends: v,
+    gameFriends: j,
     hasOutgoingPendingGameFriends: x,
-    hasIncomingPendingGameFriends: O
+    hasIncomingPendingGameFriends: _
   } = (0, f.H)({
     userId: t.id
-  }), _ = v.length > 0 || x || O;
+  }), O = j.length > 0 || x || _;
   return n || d === p.OGo.BLOCKED ? null : d === p.OGo.FRIEND || t.bot ? (0, r.jsx)("div", {
-    className: I.multipleButtons,
+    className: b.multipleButtons,
     children: (0, r.jsx)(a.c, {
       userId: t.id,
-      onClose: b
+      onClose: g
     })
-  }) : d === p.OGo.NONE && h && _ ? (0, r.jsxs)("div", {
-    className: I.multipleButtons,
-    children: [(0, r.jsx)(j, {
+  }) : d === p.OGo.NONE && h && O ? (0, r.jsxs)("div", {
+    className: b.multipleButtons,
+    children: [(0, r.jsx)(I, {
       user: t,
-      analyticsLocation: g,
-      gameFriends: v,
-      hasIncomingPendingGameFriends: O,
+      analyticsLocation: v,
+      gameFriends: j,
+      hasIncomingPendingGameFriends: _,
       hasOutgoingPendingGameFriends: x
     }), (0, r.jsx)(a.c, {
       userId: t.id,
-      onClose: b
+      onClose: g
     })]
   }) : d === p.OGo.PENDING_OUTGOING ? (0, r.jsxs)("div", {
-    className: I.multipleButtons,
+    className: b.multipleButtons,
     children: [(0, r.jsx)(y, {
       icon: o.iHX,
       tooltipText: m.NW.string(m.t.zz2i8v),
       user: t,
-      analyticsLocation: g
+      analyticsLocation: v
     }), (0, r.jsx)(a.c, {
       userId: t.id,
-      onClose: b
+      onClose: g
     })]
   }) : d === p.OGo.PENDING_INCOMING ? (0, r.jsxs)("div", {
-    className: I.multipleButtons,
+    className: b.multipleButtons,
     children: [(0, r.jsx)(y, {
       icon: o.iHX,
       tooltipText: m.NW.string(m.t.ZOFd1N),
       user: t,
-      analyticsLocation: g
+      analyticsLocation: v
     }), (0, r.jsx)(a.c, {
       userId: t.id,
-      onClose: b
+      onClose: g
     })]
   }) : (0, r.jsxs)("div", {
-    className: I.multipleButtons,
+    className: b.multipleButtons,
     children: [(0, r.jsx)(a.v, {
       userId: t.id,
-      onClose: b
+      onClose: g
     }), (0, r.jsx)(c.tG, {
       action: "SEND_FRIEND_REQUEST",
       icon: o.oLu,
@@ -180,7 +180,7 @@ function h(e) {
         i.Z.addRelationship({
           userId: t.id,
           context: {
-            location: g
+            location: v
           },
           friendToken: u
         })

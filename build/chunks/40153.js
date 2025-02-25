@@ -1,6 +1,6 @@
 /** Chunk was on 64615 **/
 n.d(t, {
-  OG: () => x,
+  OG: () => C,
   ZP: () => j,
   Zu: () => _
 }), n(47120);
@@ -161,7 +161,7 @@ function _(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     children: t
   } = e, [, n] = (0, c.L)({

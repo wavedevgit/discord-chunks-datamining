@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: 2afae75e14f08347
+  Original File Name: 794c8ae94cdb9769
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -1259,4 +1259,10 @@
     min-height: 2px
 }
 
-/*# sourceMappingURL=2afae75e14f08347.css.map*/
+.nuxBackground__0b406 {
+    background-color: var(--black);
+    width: 100%;
+    height: 100%
+}
+
+/*# sourceMappingURL=794c8ae94cdb9769.css.map*/

@@ -1,7 +1,7 @@
-/** Chunk was on 89444 **/
+/** Chunk was on 67830 **/
 n.d(t, {
   I3: () => d,
-  Ic: () => O,
+  Ic: () => m,
   Lg: () => E,
   OU: () => v,
   RH: () => a,
@@ -9,7 +9,7 @@ n.d(t, {
   VW: () => c,
   Vg: () => C,
   Vk: () => p,
-  _6: () => m,
+  _6: () => O,
   aj: () => g,
   dc: () => S,
   fX: () => o.f,
@@ -35,6 +35,6 @@ let a = 1e3,
   v = 100,
   C = 1,
   E = 50,
-  O = 20,
-  m = 150,
+  m = 20,
+  O = 150,
   S = "automod-profile-quarantine-alert"
