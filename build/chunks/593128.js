@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => A
 }), n(266796), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -165,7 +165,7 @@ let D = e => [{
       })]
     })
   },
-  A = e => {
+  k = e => {
     let {
       isErrorVisible: t
     } = e, n = (0, o.dQu)(o.TVs.colors.HEADER_PRIMARY, S.BR.DARK), i = (0, o.dQu)(o.TVs.colors.TEXT_MUTED, S.BR.DARK);
@@ -192,12 +192,12 @@ let D = e => [{
       })]
     }) : null
   },
-  k = e => {
+  A = e => {
     let {
       guildId: t,
       onClose: n
     } = e, [S, Z] = i.useState(I.Wy.GAMES), {
-      initialSettings: k,
+      initialSettings: A,
       settings: W,
       errors: L,
       submitting: M,
@@ -250,7 +250,7 @@ let D = e => [{
       children: [(0, r.jsx)(o.ua7, {
         color: o.ua7.Colors.GREY,
         tooltipClassName: P.tooltip,
-        text: (0, r.jsx)(A, {
+        text: (0, r.jsx)(k, {
           isErrorVisible: X
         }),
         position: "left",
@@ -389,7 +389,7 @@ let D = e => [{
                 onSave: q,
                 submitting: M,
                 onReset: () => {
-                  (0, g.mf)(t, k)
+                  (0, g.mf)(t, A)
                 },
                 errorMessage: Object.values(L).find(e => null != e)
               })

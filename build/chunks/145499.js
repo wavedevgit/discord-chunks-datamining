@@ -194,9 +194,9 @@ let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.T
           R = (0, f.ig)(c.tier),
           D = d.slice(j, I),
           Z = D.length > 0,
-          A = E < c.tier,
-          k = C(d.length, t),
-          W = h && !A && k === c.tier && I !== D.length,
+          k = E < c.tier,
+          A = C(d.length, t),
+          W = h && !k && A === c.tier && I !== D.length,
           L = W || D.length > 0,
           M = I - j,
           G = n(872732),
@@ -204,7 +204,7 @@ let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.T
           B = W ? Math.min(5 - (D.length + 0) % 5, U) : 0,
           F = [];
         for (let e = 0; e < B; e++) F.push((0, r.jsx)(S, {}, "placeholder-".concat(e)));
-        let z = k === p + 1 && k > E,
+        let z = A === p + 1 && A > E,
           H = W || z || p > E;
         return z ? i = (0, r.jsx)(m.Z, {
           guild: t,
@@ -233,18 +233,18 @@ let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.T
           children: [L && (0, r.jsxs)("div", {
             className: y.grid,
             children: [D.map(e => (0, r.jsx)(v.Z, {
-              isDisabled: A,
+              isDisabled: k,
               sticker: e,
               canManageSticker: b(e)
             }, e.id)), F]
-          }), !A && !W && 0 === D.length && (0, r.jsx)("div", {
+          }), !k && !W && 0 === D.length && (0, r.jsx)("div", {
             className: a()(y.emptyTierWrapper, y.unusedTierWrapper),
             children: (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "header-secondary",
               children: O.NW.string(O.t.lqwv0N)
             })
-          }), A && !Z && (0, r.jsxs)("div", {
+          }), k && !Z && (0, r.jsxs)("div", {
             className: y.emptyTierWrapper,
             children: [(0, r.jsx)("img", {
               alt: O.NW.string(O.t.BAhsws),

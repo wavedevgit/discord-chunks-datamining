@@ -90,11 +90,11 @@ function E(e) {
     R(n => y(O({}, n), {
       [e]: t
     }))
-  }, A = (0, g.ss)(t), k = (0, g.Gp)(), W = i.useCallback(() => {
-    k && p.jJ.trackExposure({
+  }, k = (0, g.ss)(t), A = (0, g.Gp)(), W = i.useCallback(() => {
+    A && p.jJ.trackExposure({
       guildId: t,
       location: "b2d9de_1"
-    }), k && A ? (0, d.ZDy)(async () => {
+    }), A && k ? (0, d.ZDy)(async () => {
       let {
         default: e
       } = await n.e("9558").then(n.bind(n, 34460));
@@ -107,7 +107,7 @@ function E(e) {
     }, {
       modalKey: C
     }) : S()
-  }, [t, T, S, s, k, A]), L = x.Lo(D), M = i.useCallback(() => D.forEach(x.GM), [D]), G = (0, b.mY)(), U = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
+  }, [t, T, S, s, A, k]), L = x.Lo(D), M = i.useCallback(() => D.forEach(x.GM), [D]), G = (0, b.mY)(), U = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
   return i.useEffect(() => (U === N.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && W(), () => {
     (0, d.Mr3)(C)
   }), [U, W]), (0, r.jsxs)(r.Fragment, {

@@ -66,9 +66,9 @@ function I(e) {
     settingsGuild: I,
     settingsMetadata: E,
     settingsProfile: S
-  } = e, T = I.id, [P, w] = i.useState(!1), [R, D] = i.useState(null), Z = I.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null !== (t = (0, p.A)({
+  } = e, T = I.id, [P, w] = i.useState(!1), [R, D] = i.useState(null), Z = I.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), k = null !== (t = (0, p.A)({
     guildId: I.id
-  })) && void 0 !== t ? t : 0, k = i.useCallback(() => {
+  })) && void 0 !== t ? t : 0, A = i.useCallback(() => {
     D(null), h.Z.init(T, v.pNK.ACCESS)
   }, [T]), W = i.useCallback(async e => {
     try {
@@ -173,14 +173,14 @@ function I(e) {
         e()
       },
       t = e => {
-        if (Z && A > 0 && s.joinType !== j.A.APPLY) {
+        if (Z && k > 0 && s.joinType !== j.A.APPLY) {
           (0, a.ZDy)(async () => {
             let {
               default: t
             } = await n.e("55009").then(n.bind(n, 826390));
             return n => (0, r.jsx)(t, C(y({}, n), {
               guildId: T,
-              submittedGuildJoinRequestsCount: A,
+              submittedGuildJoinRequestsCount: k,
               onConfirm: e
             }))
           });
@@ -208,13 +208,13 @@ function I(e) {
       }
       e()
     })(() => t(() => e(U)))
-  }, [Z, U, s, T, A]), F = s.joinType === j.A.DISCOVERABLE && s.settingsView === N.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== _.o3 && E.keywords.length > 0;
+  }, [Z, U, s, T, k]), F = s.joinType === j.A.DISCOVERABLE && s.settingsView === N.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== _.o3 && E.keywords.length > 0;
   return (0, r.jsx)(l.Z, {
     message: F ? O.NW.string(O.t.V2G2Ym) : void 0,
     onSaveText: F ? O.NW.string(O.t["qjtt/v"]) : void 0,
     submitting: P,
     errorMessage: R,
-    onReset: k,
+    onReset: A,
     onSave: B,
     disabled: F && !z
   })

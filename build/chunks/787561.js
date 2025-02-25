@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   X: () => D,
-  Z: () => k
+  Z: () => A
 }), n(266796), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -188,7 +188,7 @@ let R = "dismissedCommunityFeaturesUpsell",
       })]
     })
   },
-  A = () => {
+  k = () => {
     let e = (0, l.e7)([O.Z], () => O.Z.getGuild()),
       {
         canManageGuild: t,
@@ -431,9 +431,9 @@ let R = "dismissedCommunityFeaturesUpsell",
       })]
     })
   },
-  k = () => {
+  A = () => {
     let e = (0, l.e7)([O.Z], () => O.Z.getGuild());
-    return null == e ? null : e.features.has(I.oNc.COMMUNITY) ? (0, r.jsx)(A, {}) : (0, r.jsx)(y.Z, {
+    return null == e ? null : e.features.has(I.oNc.COMMUNITY) ? (0, r.jsx)(k, {}) : (0, r.jsx)(y.Z, {
       guild: e
     })
   }

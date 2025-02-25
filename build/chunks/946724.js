@@ -87,7 +87,7 @@ let Z = o().debounce(() => {
   let e = !1;
   !y || (y = w().length > 0) || (e = !0), [...v].forEach(t => {
     var n;
-    o().isEqual(k(t), (n = t, I.find(e => {
+    o().isEqual(A(t), (n = t, I.find(e => {
       let {
         id: t
       } = e;
@@ -96,7 +96,7 @@ let Z = o().debounce(() => {
   }), 0 === v.size && (O = !1), E && o().isEqual(T, P) && (e = !0, E = !1), e && M.emitChange()
 }, 500);
 
-function A(e, t) {
+function k(e, t) {
   let n = C.indexOf(e);
   if (n < 0) return !1;
   let r = function(e) {
@@ -114,7 +114,7 @@ function A(e, t) {
   C[n] = r, C = [...C], O = !0, v.add(r.id), Z()
 }
 
-function k(e) {
+function A(e) {
   return C.find(t => {
     let {
       id: n
@@ -136,7 +136,7 @@ function W(e) {
     } = e;
     return t
   }).reverse().value()), v.forEach(e => {
-    let t = k(e),
+    let t = A(e),
       r = -1;
     null == n.find((t, n) => {
       let {
@@ -184,7 +184,7 @@ class L extends(a = u.ZP.Store) {
     return this.hasChanges()
   }
   getRole(e) {
-    return k(e)
+    return A(e)
   }
   getPermissionSearchQuery() {
     return i
@@ -203,19 +203,19 @@ let M = new L(m.Z, __OVERLAY__ ? {} : {
         roles: t
       } = e;
       if (null != C && t.length !== C.length) return !1;
-      C = t.map(e => k(e)).filter(f.lm), y = !0, Z()
+      C = t.map(e => A(e)).filter(f.lm), y = !0, Z()
     },
     GUILD_SETTINGS_ROLES_UPDATE_PERMISSIONS: function(e) {
       let {
         id: t,
         flag: n,
         allow: r
-      } = e, i = k(t);
+      } = e, i = A(t);
       if (null == i) return !1;
       let {
         permissions: s
       } = i;
-      return A(i, {
+      return k(i, {
         permissions: s = r ? c.IH(s, n) : c.Od(s, n)
       })
     },
@@ -223,16 +223,16 @@ let M = new L(m.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         permissions: n
-      } = e, r = k(t);
-      return null != r && A(r, {
+      } = e, r = A(t);
+      return null != r && k(r, {
         permissions: n
       })
     },
     GUILD_SETTINGS_ROLES_CLEAR_PERMISSIONS: function(e) {
       let {
         id: t
-      } = e, n = k(t);
-      return null != n && A(n, {
+      } = e, n = A(t);
+      return null != n && k(n, {
         permissions: b.Hn
       })
     },
@@ -240,8 +240,8 @@ let M = new L(m.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         name: n
-      } = e, r = k(t);
-      return null != r && A(r, {
+      } = e, r = A(t);
+      return null != r && k(r, {
         name: n
       })
     },
@@ -249,8 +249,8 @@ let M = new L(m.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         description: n
-      } = e, r = k(t);
-      return null != r && A(r, {
+      } = e, r = A(t);
+      return null != r && k(r, {
         description: n
       })
     },
@@ -258,8 +258,8 @@ let M = new L(m.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         color: n
-      } = e, r = 0 === n ? null : (0, d.Rf)(n), i = k(t);
-      return null != i && A(i, {
+      } = e, r = 0 === n ? null : (0, d.Rf)(n), i = A(t);
+      return null != i && k(i, {
         color: n,
         colorString: r
       })
@@ -269,8 +269,8 @@ let M = new L(m.Z, __OVERLAY__ ? {} : {
         id: t,
         hoist: n,
         mentionable: r
-      } = e, i = k(t);
-      return null != i && A(i, {
+      } = e, i = A(t);
+      return null != i && k(i, {
         hoist: n,
         mentionable: r
       })
@@ -280,8 +280,8 @@ let M = new L(m.Z, __OVERLAY__ ? {} : {
         id: t,
         icon: n,
         unicodeEmoji: r
-      } = e, i = k(t);
-      return null != i && A(i, {
+      } = e, i = A(t);
+      return null != i && k(i, {
         icon: n,
         unicodeEmoji: r
       })
@@ -292,8 +292,8 @@ let M = new L(m.Z, __OVERLAY__ ? {} : {
         searchQuery: n
       } = e;
       if (i = n, null != t) {
-        if (null != k(t.id)) {
-          A(t, t);
+        if (null != A(t.id)) {
+          k(t, t);
           return
         }
         C = [...C, t], Z()
@@ -303,7 +303,7 @@ let M = new L(m.Z, __OVERLAY__ ? {} : {
       let {
         roleId: t,
         roleConnectionConfigurations: n
-      } = e, r = k(t);
+      } = e, r = A(t);
       if (null == r) return !1;
       let i = T.get(r.id);
       if (o().isEqual(i, n)) return !1;
@@ -313,7 +313,7 @@ let M = new L(m.Z, __OVERLAY__ ? {} : {
       let {
         roleId: t,
         roleConnectionConfigurations: n
-      } = e, r = k(t);
+      } = e, r = A(t);
       if (null == r) return !1;
       E = !0, S.add(r.id), P.set(r.id, n), Z()
     },

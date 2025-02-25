@@ -56,7 +56,7 @@ function Z(e) {
   return e
 }
 
-function A(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,7 +69,7 @@ function A(e, t) {
   }), e
 }
 
-function k(e) {
+function A(e) {
   var t;
   let {
     transitionState: n,
@@ -85,7 +85,7 @@ function k(e) {
     if (null != s) {
       j(null), g(!0);
       try {
-        await m.Z.unbanUser(s.id, a.id), c(), O.default.track(P.rMx.GUILD_BAN_REMOVED, A(Z({}, (0, f.hH)(s.id)), {
+        await m.Z.unbanUser(s.id, a.id), c(), O.default.track(P.rMx.GUILD_BAN_REMOVED, k(Z({}, (0, f.hH)(s.id)), {
           target_user_id: a.id,
           reason: l.reason,
           location: v
@@ -183,7 +183,7 @@ class W extends i.PureComponent {
         hideDiscriminator: n,
         ban: i
       } = this.props;
-      (0, d.h7j)(s => (0, r.jsx)(k, A(Z({}, s), {
+      (0, d.h7j)(s => (0, r.jsx)(A, k(Z({}, s), {
         guild: e,
         user: t,
         ban: i,
@@ -194,7 +194,7 @@ class W extends i.PureComponent {
         let {
           default: e
         } = await n.e("23835").then(n.bind(n, 768079));
-        return t => (0, r.jsx)(e, A(Z({}, t), {
+        return t => (0, r.jsx)(e, k(Z({}, t), {
           user: this.props.user
         }))
       })
@@ -318,12 +318,12 @@ function G() {
       null != e && I(t)(e) && r.push(e)
     }
     return r
-  }, [I]), T = i.useMemo(() => S(x, u, j), [x, S, u, j]), D = null != x, k = T.length % 1e3 == 0 && T.length > 0 && D, W = 0 === T.length, [G, U] = i.useState({
+  }, [I]), T = i.useMemo(() => S(x, u, j), [x, S, u, j]), D = null != x, A = T.length % 1e3 == 0 && T.length > 0 && D, W = 0 === T.length, [G, U] = i.useState({
     currentPage: 1,
     pageSize: 100
   });
   i.useEffect(() => {
-    b && 1 !== G.currentPage && U(e => A(Z({}, e), {
+    b && 1 !== G.currentPage && U(e => k(Z({}, e), {
       currentPage: 1
     }))
   }, [b, G.currentPage]);
@@ -333,10 +333,10 @@ function G() {
     F = i.useMemo(() => o().chunk(T, G.pageSize), [G.pageSize, T]),
     z = i.useCallback(e => {
       var t, n, r;
-      null === (t = C.current) || void 0 === t || t.scrollToSectionTop(0), (e + 1) * G.pageSize > T.length && k && !p && (H.current = null !== (r = null === (n = T[T.length - 1]) || void 0 === n ? void 0 : n.id) && void 0 !== r ? r : null, B(H.current)), (null != F[e - 1] || k) && U(t => A(Z({}, t), {
+      null === (t = C.current) || void 0 === t || t.scrollToSectionTop(0), (e + 1) * G.pageSize > T.length && A && !p && (H.current = null !== (r = null === (n = T[T.length - 1]) || void 0 === n ? void 0 : n.id) && void 0 !== r ? r : null, B(H.current)), (null != F[e - 1] || A) && U(t => k(Z({}, t), {
         currentPage: e
       }))
-    }, [G.pageSize, T, k, F, B, p]),
+    }, [G.pageSize, T, A, F, B, p]),
     H = i.useRef(null);
   i.useEffect(() => {
     B(H.current)
@@ -357,7 +357,7 @@ function G() {
         bans: x,
         sortedBans: V,
         ref: C
-      }), !k && W && (0, r.jsxs)(d.ubH, {
+      }), !A && W && (0, r.jsxs)(d.ubH, {
         theme: v,
         className: R.emptyState,
         children: [(0, r.jsx)(d.oxh, {
@@ -377,7 +377,7 @@ function G() {
       className: a()(R.__invalid_paginationContainer),
       children: (0, r.jsx)(d.DsT, {
         className: a()(R.paginationInput),
-        totalCount: T.length + (k ? G.pageSize : 0),
+        totalCount: T.length + (A ? G.pageSize : 0),
         pageSize: G.pageSize,
         currentPage: G.currentPage,
         onPageChange: z,

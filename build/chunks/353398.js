@@ -276,7 +276,7 @@ function Z(e) {
     guild: t,
     guildTemplate: n
   } = e;
-  return null == n ? (0, i.jsx)(A, {
+  return null == n ? (0, i.jsx)(k, {
     guild: t
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(m.xJW, {
@@ -293,7 +293,7 @@ function Z(e) {
       children: _.NW.string(_.t.aWsjtL)
     }), (0, i.jsxs)("div", {
       className: l()(y.marginTop20, O.buttonContainer),
-      children: [n.isDirty && (0, i.jsx)(k, {
+      children: [n.isDirty && (0, i.jsx)(A, {
         guild: t,
         guildTemplate: n
       }), (0, i.jsxs)("div", {
@@ -314,7 +314,7 @@ function Z(e) {
   })
 }
 
-function A(e) {
+function k(e) {
   let {
     guild: t
   } = e, n = (0, d.e7)([E], () => E.name), [r, a] = s.useState(!1), l = async () => {
@@ -335,7 +335,7 @@ function A(e) {
   })
 }
 
-function k(e) {
+function A(e) {
   let {
     guild: t,
     guildTemplate: n

@@ -77,7 +77,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       canManageGuild: w
     } = (0, s.cj)([b.Z], () => ({
       canManageGuild: b.Z.can(I.Plq.MANAGE_GUILD, n)
-    })), R = (0, s.e7)([v.Z], () => v.Z.isGuildMetadataLoaded()), D = (0, s.e7)([v.Z], () => null != n ? v.Z.getMetadata() : null), Z = (0, s.e7)([v.Z], () => null != n && (null == D ? void 0 : D.isPublished) ? v.Z.getSlug() : null), [A, k] = i.useState([!0]), [W, L] = i.useState(!0), [M, G] = i.useState([!1]), [U, B] = i.useState([""]), F = e => {
+    })), R = (0, s.e7)([v.Z], () => v.Z.isGuildMetadataLoaded()), D = (0, s.e7)([v.Z], () => null != n ? v.Z.getMetadata() : null), Z = (0, s.e7)([v.Z], () => null != n && (null == D ? void 0 : D.isPublished) ? v.Z.getSlug() : null), [k, A] = i.useState([!0]), [W, L] = i.useState(!0), [M, G] = i.useState([!1]), [U, B] = i.useState([""]), F = e => {
       let t = Object.entries(C.z).filter(e => !U.includes(e[1].presentation)).map(e => ({
         label: e[1].presentation,
         value: e[0]
@@ -107,7 +107,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             let i = z(n);
             null !== i ? (t[r] = i, e[r] = !0) : e[r] = !1
           } else e[r] = !0
-        }), B(t), k(e), L(e.every(e => !0 === e))
+        }), B(t), A(e), L(e.every(e => !0 === e))
       }
     }, [D]);
     let H = (0, s.e7)([v.Z], () => null != n ? v.Z.getErrors() : null);
@@ -148,8 +148,8 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       K = (e, t) => {
         let r = [...D.socialLinks],
           i = [...U],
-          s = [...A];
-        i[t] = e, r[t] = C.z[e].baseUrl, s[t] = !0, k(s), B(i), L(s.every(e => !0 === e)), (0, p.t$)(n.id, r)
+          s = [...k];
+        i[t] = e, r[t] = C.z[e].baseUrl, s[t] = !0, A(s), B(i), L(s.every(e => !0 === e)), (0, p.t$)(n.id, r)
       },
       q = (e, t) => {
         let r = [...D.socialLinks],
@@ -160,8 +160,8 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       X = e => {
         let t = [...M];
         t.splice(e, 1), G(t);
-        let r = [...A];
-        r.splice(e, 1), k(r);
+        let r = [...k];
+        r.splice(e, 1), A(r);
         let i = [...U];
         i.splice(e, 1), B(i);
         let s = [...D.socialLinks];
@@ -434,7 +434,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         placeholder: E.NW.string(E.t.Q6o4pK),
                         maxLength: 150,
                         disabled: !w
-                      }, "link-" + t), A[t] ? (0, r.jsx)(l.owK, {
+                      }, "link-" + t), k[t] ? (0, r.jsx)(l.owK, {
                         size: "custom",
                         className: D.isPublished ? S.validationButtonMax : S.validationButtonMin,
                         color: a.Z.unsafe_rawColors.GREEN_230.css,

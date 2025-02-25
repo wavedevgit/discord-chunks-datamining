@@ -98,8 +98,8 @@ function R(e) {
       }
     }),
     [{
-      dragSourcePosition: A
-    }, k] = (0, o.L)({
+      dragSourcePosition: k
+    }, A] = (0, o.L)({
       accept: w,
       canDrop: () => R,
       collect: e => {
@@ -127,8 +127,8 @@ function R(e) {
     color: W
   }), (0, r.jsxs)(u.njP.Item, {
     className: a()(S.row, {
-      [S.dragBefore]: null !== A && j < A,
-      [S.dragAfter]: null !== A && j > A
+      [S.dragBefore]: null !== k && j < k,
+      [S.dragAfter]: null !== k && j > k
     }),
     id: p.id,
     selectedItem: h,
@@ -148,7 +148,7 @@ function R(e) {
     "aria-label": p.name,
     clickableRef: e => {
       var t;
-      return Z(k(null !== (t = null == e ? void 0 : e.ref) && void 0 !== t ? t : null))
+      return Z(A(null !== (t = null == e ? void 0 : e.ref) && void 0 !== t ? t : null))
     },
     children: [s, null != C ? (0, r.jsx)(_.Z, {
       className: S.lock,
@@ -175,18 +175,18 @@ function D(e) {
     handleDragStart: w,
     handleDragReset: D,
     handleDragComplete: Z
-  } = (0, O.Z)(o), A = i.useRef(null), k = i.useCallback(e => {
+  } = (0, O.Z)(o), k = i.useRef(null), A = i.useCallback(e => {
     var t, n;
     let r = o.findIndex(t => t.id === e);
-    null === (n = A.current) || void 0 === n || null === (t = n.getScrollerNode()) || void 0 === t || t.scrollTo({
+    null === (n = k.current) || void 0 === n || null === (t = n.getScrollerNode()) || void 0 === t || t.scrollTo({
       top: Math.max((r - 2) * 34, 0)
     })
   }, [o]);
   (0, g.ZP)(() => {
-    k(n)
+    A(n)
   }), i.useEffect(() => {
-    o.length > f && k(n), o.length !== f && b(o.length)
-  }, [o.length, f, b, k, n]);
+    o.length > f && A(n), o.length !== f && b(o.length)
+  }, [o.length, f, b, A, n]);
   let W = () => {
     p.Z.createRole(t.id), l(C.ZI.DISPLAY)
   };
@@ -231,7 +231,7 @@ function D(e) {
         })]
       }), (0, r.jsx)(u.Den, {
         className: S.list,
-        ref: A,
+        ref: k,
         onScroll: I,
         children: (0, r.jsx)(u.njP, {
           selectedItem: n,

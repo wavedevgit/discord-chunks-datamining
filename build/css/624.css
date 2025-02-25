@@ -1,6 +1,6 @@
 /**
   Module ID: 624
-  Original File Name: 6f60c4e23809853f
+  Original File Name: 8c49fac0a878ff28
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -2378,7 +2378,6 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .micButtonParent__37e49 {
-    display: flex;
     flex: direct
 }
 
@@ -2408,10 +2407,6 @@ h1.title_feb59c,h2.title_feb59c {
     background-color: var(--background-modifier-selected)
 }
 
-.buttonSpace__37e49 {
-    margin-right: 4px
-}
-
 .voiceFilterWarning__37e49 {
     display: flex;
     flex-direction: column;
@@ -2437,6 +2432,10 @@ h1.title_feb59c,h2.title_feb59c {
     background: var(--bg-overlay-3,var(--background-secondary-alt))
 }
 
+.buttons__37e49 {
+    display: flex
+}
+
 @container (max-width: 260px) {
     .visual-refresh .avatarWrapper__37e49 {
         min-width: 0
@@ -2444,7 +2443,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 @container (max-width: 100px) {
-    .visual-refresh .buttons__37e49,.visual-refresh .nameTag__37e49 {
+    .visual-refresh .nameTag__37e49 {
         display: none
     }
 }
@@ -16983,4 +16982,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=6f60c4e23809853f.css.map*/
+/*# sourceMappingURL=8c49fac0a878ff28.css.map*/

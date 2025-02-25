@@ -38,19 +38,29 @@ function N(e) {
     pendingFields: t
   } = e, {
     guild: n,
-    profile: N
-  } = (0, l.e7)([p.Z], () => p.Z.getProps()), v = null == n ? void 0 : n.id, _ = (0, l.e7)([c.Z], () => c.Z.get(v)), {
+    guildProfile: N
+  } = (0, l.cj)([p.Z], () => ({
+    guild: p.Z.getGuild(),
+    guildProfile: p.Z.getGuildProfile()
+  })), v = null == n ? void 0 : n.id, _ = (0, l.e7)([c.Z], () => c.Z.get(v)), {
     fetchGuildProfile: O
-  } = (0, d.u)(v), y = (null == N ? void 0 : N.visibility) === s.k.RESTRICTED, C = (null == N ? void 0 : N.visibility) === s.k.PUBLIC_WITH_RECRUITMENT;
+  } = (0, d.u)(v), y = (null == N ? void 0 : N.visibility) == null || !s.Y.VISIBLE.has(null == N ? void 0 : N.visibility), C = (null == N ? void 0 : N.visibility) === s.k.PUBLIC_WITH_RECRUITMENT;
   i.useEffect(() => {
     null != v && O()
   }, [v, O]);
-  let I = i.useMemo(() => null == n || null == N ? j : N, [n, N]);
-  if (null == n) return null;
-  let E = () => {
+  let I = i.useMemo(() => null == n || null == N ? j : N, [n, N]),
+    E = i.useCallback(() => {
+      (null == n ? void 0 : n.id) != null && (C ? m.Z.updateGuildProfile(n.id, {
+        visibility: s.k.PUBLIC
+      }) : m.Z.updateGuildProfile(n.id, {
+        visibility: s.k.PUBLIC_WITH_RECRUITMENT
+      }))
+    }, [null == n ? void 0 : n.id, C]),
+    S = i.useCallback(() => {
       m.Z.setSection(f.pNK.PROFILE)
-    },
-    S = null != t ? t : null == _ ? void 0 : _.formFields;
+    }, []);
+  if (null == n) return null;
+  let T = null != t ? t : null == _ ? void 0 : _.formFields;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.X6, {
       variant: "heading-md/semibold",
@@ -66,9 +76,9 @@ function N(e) {
       guildId: n.id
     }), (0, r.jsx)("div", {
       className: x.form,
-      children: null != S ? (0, r.jsx)(g.y, {
+      children: null != T ? (0, r.jsx)(g.y, {
         guild: n,
-        formFields: S
+        formFields: T
       }) : (0, r.jsx)(o.$jN, {})
     }), (0, r.jsx)("div", {
       className: x.divider
@@ -77,13 +87,7 @@ function N(e) {
       children: [(0, r.jsxs)("div", {
         className: x.column,
         children: [(0, r.jsx)(o.j7V, {
-          onChange: () => {
-            C ? m.Z.updateGuildProfile(n.id, {
-              visibility: s.k.PUBLIC
-            }) : m.Z.updateGuildProfile(n.id, {
-              visibility: s.k.PUBLIC_WITH_RECRUITMENT
-            })
-          },
+          onChange: E,
           value: C,
           hideBorder: !0,
           disabled: y,
@@ -97,7 +101,7 @@ function N(e) {
           color: "text-muted",
           children: b.NW.format(b.t.Bk0VOj, {
             profileLink: (e, t) => (0, r.jsx)(o.eee, {
-              onClick: E,
+              onClick: S,
               children: e
             }, t)
           })

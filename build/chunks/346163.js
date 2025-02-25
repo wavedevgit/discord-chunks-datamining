@@ -60,8 +60,8 @@ function h(e) {
   }));
   let D = n && b && !1 === f,
     Z = n && !1 === h,
-    A = (0, m.f)(),
-    k = I && w && b ? g.NW.format(g.t.wbVIUF, {}) : void 0;
+    k = (0, m.f)(),
+    A = I && w && b ? g.NW.format(g.t.wbVIUF, {}) : void 0;
   return r.useEffect(() => {
     D && y()
   }, [y, D]), {
@@ -78,10 +78,10 @@ function h(e) {
     isApplicationPending: P,
     hasPreviousApplicationRejection: I,
     requestRejectedNoticeText: t,
-    reapplyNoticeText: k,
+    reapplyNoticeText: A,
     showAcceptTermsFlow: Z,
     wasRejectedInV1: Z && (S || I),
     requirementsFinePrintText: R,
-    acceptTermsCheckboxText: A
+    acceptTermsCheckboxText: k
   }
 }

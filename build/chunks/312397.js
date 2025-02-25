@@ -36,8 +36,8 @@ var r = n(200651),
   R = n(375263),
   D = n(586382),
   Z = n(594980),
-  A = n(515025),
-  k = n(760632),
+  k = n(515025),
+  A = n(760632),
   W = n(578053),
   L = n(640175),
   M = n(715224),
@@ -240,7 +240,7 @@ class X extends i.PureComponent {
           basis: "50%",
           children: (0, r.jsx)(m.xJW, {
             title: F.NW.string(F.t.brhYaW),
-            children: (0, r.jsx)(k.M, {
+            children: (0, r.jsx)(A.M, {
               canManageGuild: t,
               afkTimeout: e.afkTimeout,
               afkChannelId: e.afkChannelId
@@ -397,7 +397,7 @@ class X extends i.PureComponent {
           }), (0, r.jsx)(j.Z.Child, {
             wrap: !0,
             basis: "50%",
-            children: (0, r.jsx)(A.h, {
+            children: (0, r.jsx)(k.h, {
               guild: e,
               canManageGuild: t
             })

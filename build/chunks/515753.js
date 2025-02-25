@@ -348,7 +348,7 @@ function eo(e) {
       disableGuildProfile: !0,
       className: q.clanTag
     })]
-  }) : ep, ew = null !== (t = ef || ej || eU) && void 0 !== t && t;
+  }) : ep, ew = null !== (t = ef || ej || eU) && void 0 !== t && t, eM = r.useRef(null);
   return (0, l.jsx)(u.mh, {
     id: i.id,
     children: e => {
@@ -382,7 +382,8 @@ function eo(e) {
           children: [(0, l.jsx)(U.Z, {
             nameplate: W,
             selected: d,
-            hovered: ea
+            hovered: ea,
+            content: eM.current
           }), (0, l.jsx)(c.rU, J(X({
             innerRef: es,
             to: z.Z5c.CHANNEL(z.ME, i.id),
@@ -395,6 +396,7 @@ function eo(e) {
             })
           }, n), {
             children: (0, l.jsx)(N.Z, {
+              ref: eM,
               avatar: ey(),
               selected: d,
               highlighted: eh,
