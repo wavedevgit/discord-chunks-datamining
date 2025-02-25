@@ -18,11 +18,11 @@ function l(e) {
     currentUser: u,
     isEmbedded: d,
     ChannelStore: f,
-    GuildStore: _,
-    GuildMemberCountStore: p,
+    GuildStore: p,
+    GuildMemberCountStore: _,
     RelationshipStore: h,
-    SelectedChannelStore: g,
-    VoiceStateStore: m,
+    SelectedChannelStore: m,
+    VoiceStateStore: g,
     PermissionStore: E
   } = e, v = f.getChannel(c), b = (0, i.a)(v);
   if (null == t) return !1;
@@ -34,23 +34,23 @@ function l(e) {
     application: l,
     isActivitiesEnabledForCurrentPlatform: b,
     ChannelStore: f,
-    VoiceStateStore: m,
+    VoiceStateStore: g,
     PermissionStore: E,
-    GuildStore: _
+    GuildStore: p
   }) === o.Fw.CAN_JOIN;
   if (!(0, r.isDesktop)() && !d) return !1;
   if ((0, a.Z)(n, s.xjy.PARTY_PRIVACY_FRIENDS) && h.isFriend(t.id)) return !0;
   if ((0, a.Z)(n, s.xjy.PARTY_PRIVACY_VOICE_CHANNEL)) {
-    let e = f.getChannel(g.getVoiceChannelId());
-    if (null == e || !m.isInChannel(e.id, t.id)) return !1;
+    let e = f.getChannel(m.getVoiceChannelId());
+    if (null == e || !g.isInChannel(e.id, t.id)) return !1;
     switch (e.type) {
       case s.d4z.DM:
       case s.d4z.GROUP_DM:
         return !0
     }
-    let n = _.getGuild(e.getGuildId());
+    let n = p.getGuild(e.getGuildId());
     if (null == n || n.hasFeature(s.oNc.COMMUNITY)) return !1;
-    let r = p.getMemberCount(n.id);
+    let r = _.getMemberCount(n.id);
     return null != r && r < 100
   }
   return !1

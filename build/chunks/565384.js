@@ -3,10 +3,10 @@
 n.d(t, {
   Ez: () => h,
   Ps: () => u,
-  Xo: () => _,
+  Xo: () => p,
   dT: () => f,
   dw: () => d,
-  k$: () => p
+  k$: () => _
 }), n(47120);
 var r = n(65400),
   i = n(990547),
@@ -61,9 +61,9 @@ let l = Object.freeze({
       }))
     })
   },
-  _ = c;
+  p = c;
 
-function p() {
+function _() {
   let e = {};
   return c.getState().impressions.forEach(t => {
     t.type === i.ImpressionTypes.PAGE ? e.page = t.name : e.section = t.name

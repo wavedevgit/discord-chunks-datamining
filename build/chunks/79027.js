@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  o: () => g
+  o: () => m
 }), n(47120);
 var r, i = n(200651),
   o = n(192379),
@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,8 +44,8 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -53,7 +53,7 @@ let h = {
   friction: 7,
   tension: 60
 };
-class g extends(r = o.Component) {
+class m extends(r = o.Component) {
   componentWillAppear(e) {
     this.animateTo(1).start(e)
   }
@@ -67,7 +67,7 @@ class g extends(r = o.Component) {
     t.enabled ? this.animateTo(0).start(e) : l.Z.stagger(250, [this.animateTo(1.3), this.animateTo(0)]).start(e)
   }
   animateTo(e) {
-    return l.Z.spring(this.animation, p(f({}, h), {
+    return l.Z.spring(this.animation, _(f({}, h), {
       toValue: e
     }))
   }
@@ -100,4 +100,4 @@ class g extends(r = o.Component) {
     super(...e), d(this, "animation", new l.Z.Value(0))
   }
 }
-d(g, "contextType", c.Sfi)
+d(m, "contextType", c.Sfi)

@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(374470),
   d = n(442837),
   f = n(704215),
-  _ = n(952265),
-  p = n(481060),
+  p = n(952265),
+  _ = n(481060),
   h = n(153867),
-  g = n(410575),
-  m = n(347469),
+  m = n(410575),
+  g = n(347469),
   E = n(40851),
   v = n(367907),
   b = n(243778),
@@ -107,7 +107,7 @@ let K = L.Om + j.Su.MEDIUM,
       autoFocus: o = !1,
       "aria-controls": s
     } = e, l = W(e, ["isActive", "className", "viewType", "autoFocus", "aria-controls"]);
-    return (0, r.jsx)(p.zxk, H(V({
+    return (0, r.jsx)(_.zxk, H(V({
       role: "tab",
       autoFocus: o,
       "aria-controls": t ? s : void 0
@@ -122,8 +122,8 @@ let K = L.Om + j.Su.MEDIUM,
       className: a()(n, B.navButton, B.navItem, {
         [B.navButtonActive]: t
       }),
-      look: p.zxk.Looks.BLANK,
-      size: p.zxk.Sizes.NONE
+      look: _.zxk.Looks.BLANK,
+      size: _.zxk.Sizes.NONE
     }))
   }),
   q = e => {
@@ -140,17 +140,17 @@ let K = L.Om + j.Su.MEDIUM,
         default:
           return c
       }
-    }, [c]), _ = i.useCallback(e => {
+    }, [c]), p = i.useCallback(e => {
       let t = e >= a ? L._j.MAX : e <= L.Om ? L._j.MIN : e;
       null == t && null != n.current && (n.current.style.width = ""), h.ZP.updatedUnsyncedSettings({
         expressionPickerWidth: t
       }), u(t)
-    }, [n, a]), p = (0, m.Z)({
+    }, [n, a]), _ = (0, g.Z)({
       initialElementDimension: f,
       maxDimension: a,
       minDimension: L.Om,
       resizableDomNodeRef: n,
-      onElementResize: _,
+      onElementResize: p,
       orientation: r
     });
     return i.useEffect(() => {
@@ -165,8 +165,8 @@ let K = L.Om + j.Su.MEDIUM,
     }, [t]), {
       drawerWidth: f,
       handleDrawerResizeHandleMouseDown: i.useCallback(e => {
-        e.stopPropagation(), null != t.current && s(t.current.offsetWidth), p(e)
-      }, [t, p])
+        e.stopPropagation(), null != t.current && s(t.current.offsetWidth), _(e)
+      }, [t, _])
     }
   };
 
@@ -193,15 +193,15 @@ function Q(e) {
   } = q({
     positionContainerRef: et,
     drawerRef: ei,
-    orientation: "left" === X ? m.y.HORIZONTAL_RIGHT : m.y.HORIZONTAL_LEFT
+    orientation: "left" === X ? g.y.HORIZONTAL_RIGHT : g.y.HORIZONTAL_LEFT
   }), es = (0, w.Iu)(e => e.activeView), el = (0, N.fQ)(W), {
     renderWindow: ec,
     windowDispatch: eu
   } = i.useContext(E.ZP), ed = (0, d.e7)([A.Z], () => !A.Z.hasLoadedStickerPacks), ef = (0, I.V2)({
     location: "expression_picker"
-  }), e_ = null != ee, ep = (0, _.Jw)(null != ee ? ee : ""), eh = i.useCallback(e => {
+  }), ep = null != ee, e_ = (0, p.Jw)(null != ee ? ee : ""), eh = i.useCallback(e => {
     var t;
-    if (!e_ && (0, _.$s)() || e_ && !(ep && $)) return;
+    if (!ep && (0, p.$s)() || ep && !(e_ && $)) return;
     let {
       target: n
     } = e;
@@ -213,18 +213,18 @@ function Q(e) {
     }(0, w._Q)();
     let r = null === (t = (0, D.uB)(e)) || void 0 === t ? void 0 : t.activeElement;
     (null == r || "BODY" === r.tagName) && P.S.dispatchToLastSubscribed(x.CkL.TEXTAREA_FOCUS)
-  }, [$, ep, e_]), eg = i.useCallback(() => {
+  }, [$, e_, ep]), em = i.useCallback(() => {
     (0, w._Q)()
   }, []);
   i.useLayoutEffect(() => {
     let e = () => {
       es === L.X1.GIF && (0, w._Q)()
     };
-    return ec.addEventListener("mousedown", eh), ec.addEventListener("contextmenu", eh), eu.subscribe(x.CkL.POPOUT_CLOSE, eg), P.S.subscribe(x.CkL.CLOSE_GIF_PICKER, e), () => {
-      ec.removeEventListener("mousedown", eh), ec.removeEventListener("contextmenu", eh), eu.unsubscribe(x.CkL.POPOUT_CLOSE, eg), P.S.unsubscribe(x.CkL.CLOSE_GIF_PICKER, e)
+    return ec.addEventListener("mousedown", eh), ec.addEventListener("contextmenu", eh), eu.subscribe(x.CkL.POPOUT_CLOSE, em), P.S.subscribe(x.CkL.CLOSE_GIF_PICKER, e), () => {
+      ec.removeEventListener("mousedown", eh), ec.removeEventListener("contextmenu", eh), eu.unsubscribe(x.CkL.POPOUT_CLOSE, em), P.S.unsubscribe(x.CkL.CLOSE_GIF_PICKER, e)
     }
-  }, [es, eg, eh, ec, eu]), (0, p.Tbt)(et);
-  let [em, eE] = (0, b.US)(ef ? [f.z.SOUNDMOJI_BADGE] : [], void 0, !1), [ev, eb] = i.useState(!1);
+  }, [es, em, eh, ec, eu]), (0, _.Tbt)(et);
+  let [eg, eE] = (0, b.US)(ef ? [f.z.SOUNDMOJI_BADGE] : [], void 0, !1), [ev, eb] = i.useState(!1);
   i.useEffect(() => {
     es === L.X1.SOUNDBOARD && eb(!0)
   }, [es]), i.useEffect(() => () => {
@@ -232,8 +232,8 @@ function Q(e) {
   }, [ev, eE]), i.useEffect(() => {
     (0, w.ql)("")
   }, []), i.useEffect(() => {
-    (!e_ && (0, _.$s)() || e_ && !ep) && (0, w._Q)()
-  }, [ep, e_]), i.useEffect(() => {
+    (!ep && (0, p.$s)() || ep && !e_) && (0, w._Q)()
+  }, [e_, ep]), i.useEffect(() => {
     if (null != ei.current && !en.current) {
       var e, t, n, r;
       es === L.X1.EMOJI ? (null == er ? void 0 : null === (e = er.current) || void 0 === e ? void 0 : e.onPickerOpen) != null && (null == er || null === (t = er.current) || void 0 === t || t.onPickerOpen(), en.current = !0) : es === L.X1.STICKER ? (null == er ? void 0 : null === (n = er.current) || void 0 === n ? void 0 : n.onPickerOpen) == null || ed || (null == er || null === (r = er.current) || void 0 === r || r.onPickerOpen(), en.current = !0) : (v.ZP.trackWithMetadata(x.rMx.EXPRESSION_PICKER_OPENED, {
@@ -251,7 +251,7 @@ function Q(e) {
     eN = !(null === (s = Y.expressionPicker) || void 0 === s ? void 0 : s.onlyEmojis) && (ey || eO),
     eA = "left" === X ? "right" : "left",
     eC = null != J ? J : "left" === X ? B.positionLayerDefaultAlignLeft : B.positionLayerDefaultAlignRight;
-  return (0, r.jsx)(g.Z, {
+  return (0, r.jsx)(m.Z, {
     section: x.jXE.EXPRESSION_PICKER,
     children: (0, r.jsx)(S.W5, {
       className: a()(B.positionLayer, eC),
@@ -327,7 +327,7 @@ function Q(e) {
                     viewType: L.X1.SOUNDBOARD,
                     children: (0, r.jsxs)("div", {
                       className: B.soundmojiLabelContainer,
-                      children: [G.NW.string(G.t.EHlAMT), null != em && (0, r.jsx)(p.IGR, {
+                      children: [G.NW.string(G.t.EHlAMT), null != eg && (0, r.jsx)(_.IGR, {
                         text: G.NW.string(G.t.y2b7CA)
                       })]
                     })
@@ -338,7 +338,7 @@ function Q(e) {
                 channel: W,
                 containerWidth: eo,
                 onSelectSticker: Z,
-                closePopout: eg,
+                closePopout: em,
                 ref: e => {
                   er.current = e
                 }
@@ -355,7 +355,7 @@ function Q(e) {
                 includeCreateEmojiButton: R,
                 emojiSize: null != eo && eo < K ? j.Su.MEDIUM : j.Su.LARGE,
                 pickerIntention: k.Hz.CHAT,
-                closePopout: eg,
+                closePopout: em,
                 onSelectEmoji: V,
                 onSelectSoundmoji: eS,
                 ref: e => {
@@ -368,7 +368,7 @@ function Q(e) {
                   guildId: W.guild_id,
                   channel: W,
                   containerWidth: eo,
-                  onClose: eg,
+                  onClose: em,
                   onSelect: eI,
                   analyticsSource: "expression-picker",
                   renderHeader: e => (0, r.jsx)("div", {

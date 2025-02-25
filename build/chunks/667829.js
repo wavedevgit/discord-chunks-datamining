@@ -13,11 +13,11 @@ var r = n(200651),
   u = n.n(c),
   d = n(729594),
   f = n(873546),
-  _ = n(430742),
-  p = n(166459),
+  p = n(430742),
+  _ = n(166459),
   h = n(911969),
-  g = n(476326),
-  m = n(998698),
+  m = n(476326),
+  g = n(998698),
   E = n(710845),
   v = n(117530),
   b = n(459273),
@@ -139,7 +139,7 @@ class k extends i.Component {
     this.setState({
       focused: !0,
       submitting: !1
-    }), _.Z.saveDraft(e.id, "", t.drafts.type)
+    }), p.Z.saveDraft(e.id, "", t.drafts.type)
   }
   getCurrentWord() {
     var e;
@@ -201,11 +201,11 @@ class k extends i.Component {
       richValue: c,
       disabled: u,
       onChange: d,
-      onKeyDown: _,
-      onResize: p,
+      onKeyDown: p,
+      onResize: _,
       onSubmit: h,
-      channel: g,
-      type: m,
+      channel: m,
+      type: g,
       fontSize: E,
       useSlate: v,
       spellcheckEnabled: y,
@@ -223,7 +223,7 @@ class k extends i.Component {
       submitting: F,
       popup: V
     } = this.state, Z = {
-      channel: g,
+      channel: m,
       className: a()(R, P.textArea, {
         [P.textAreaSlate]: v,
         [P.textAreaDisabled]: u || F
@@ -234,7 +234,7 @@ class k extends i.Component {
       accessibilityLabel: B,
       disabled: u || !1,
       submitting: F,
-      isEdit: m === O.Ie.EDIT,
+      isEdit: g === O.Ie.EDIT,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
       onPaste: this.handlePaste,
@@ -245,20 +245,20 @@ class k extends i.Component {
       hideAutocomplete: this.hideAutocomplete,
       allowNewLines: k,
       onChange: d,
-      onResize: p,
-      onKeyDown: _,
+      onResize: _,
+      onKeyDown: p,
       onSubmit: h,
       textAreaPaddingClassName: a()(j[E], {
-        [P.textAreaWithoutAttachmentButton]: m !== O.Ie.NORMAL && m !== O.Ie.OVERLAY && m !== O.Ie.THREAD_CREATION && m !== O.Ie.SIDEBAR,
-        [P.textAreaForPostCreation]: m === O.Ie.CREATE_FORUM_POST,
-        [P.textAreaCustomGift]: m === O.Ie.CUSTOM_GIFT,
-        [P.textAreaForUserProfile]: m === O.Ie.USER_PROFILE,
-        [P.textAreaForOverlayInlineReply]: m === O.Ie.OVERLAY_INLINE_REPLY
+        [P.textAreaWithoutAttachmentButton]: g !== O.Ie.NORMAL && g !== O.Ie.OVERLAY && g !== O.Ie.THREAD_CREATION && g !== O.Ie.SIDEBAR,
+        [P.textAreaForPostCreation]: g === O.Ie.CREATE_FORUM_POST,
+        [P.textAreaCustomGift]: g === O.Ie.CUSTOM_GIFT,
+        [P.textAreaForUserProfile]: g === O.Ie.USER_PROFILE,
+        [P.textAreaForOverlayInlineReply]: g === O.Ie.OVERLAY_INLINE_REPLY
       }),
       spellcheckEnabled: y,
       useNewSlashCommands: I,
-      disableAutoFocus: f.tq || null !== (n = m.disableAutoFocus) && void 0 !== n && n,
-      disableEnterToSubmit: null !== (i = null === (e = m.submit) || void 0 === e ? void 0 : e.disableEnterToSubmit) && void 0 !== i && i,
+      disableAutoFocus: f.tq || null !== (n = g.disableAutoFocus) && void 0 !== n && n,
+      disableEnterToSubmit: null !== (i = null === (e = g.submit) || void 0 === e ? void 0 : e.disableEnterToSubmit) && void 0 !== i && i,
       "aria-controls": null !== (o = V.id) && void 0 !== o ? o : void 0,
       "aria-haspopup": "listbox",
       "aria-expanded": null !== V.id || void 0,
@@ -270,9 +270,9 @@ class k extends i.Component {
     }, H = v ? (0, r.jsx)(N.Z, x(w({
       ref: this.ref
     }, Z), {
-      type: m,
+      type: g,
       value: u ? (0, S.JM)("") : c,
-      canUseCommands: null === (t = m.commands) || void 0 === t ? void 0 : t.enabled,
+      canUseCommands: null === (t = g.commands) || void 0 === t ? void 0 : t.enabled,
       canOnlyUseTextCommands: A
     })) : (0, r.jsx)(T.Z, x(w({
       ref: this.ref
@@ -329,7 +329,7 @@ class k extends i.Component {
       var e, t;
       return null === (e = (t = this.props).onHideAutocomplete) || void 0 === e ? void 0 : e.call(t)
     }), D(this, "handleSaveCurrentText", e => {
-      _.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
+      p.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
     }), D(this, "handleClearText", () => {
       var e, t;
       null === (e = (t = this.props).onChange) || void 0 === e || e.call(t, null, "", (0, S.JM)(""))
@@ -370,23 +370,23 @@ class k extends i.Component {
       if (null == i || !t.isPrivate() && !n || t.isPrivate() && t.isManaged()) return !1;
       let s = (e, n) => {
           var r, o;
-          let s = m.Z.getActiveCommand(t.id);
+          let s = g.Z.getActiveCommand(t.id);
           if (null == s) return i(e, t, a.drafts.type, {
             requireConfirm: !0,
             showLargeMessageDialog: n
           });
           let l = null !== (r = a.drafts.commandType) && void 0 !== r ? r : a.drafts.type,
             c = null,
-            u = m.Z.getActiveOption(t.id);
+            u = g.Z.getActiveOption(t.id);
           null != (c = (null == u ? void 0 : u.type) === h.jw.ATTACHMENT ? u : null === (o = s.options) || void 0 === o ? void 0 : o.find(e => {
             if (e.type === h.jw.ATTACHMENT) return null == v.Z.getUpload(t.id, e.name, l)
-          })) && p.Z.setFile({
+          })) && _.Z.setFile({
             channelId: t.id,
             id: c.name,
             draftType: l,
             file: {
               id: c.name,
-              platform: g.ow.WEB,
+              platform: m.ow.WEB,
               file: e[0]
             }
           })
@@ -458,7 +458,7 @@ function U(e, t) {
         type: "text/plain"
       });
       return {
-        files: [(0, y.dp)(e, "message.txt", "text/plain")],
+        files: [(0, y.dp)(e, "message.txt")],
         convertedStringToFile: !0
       }
     }

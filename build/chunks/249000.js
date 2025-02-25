@@ -57,11 +57,11 @@ function f(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   return [null == e.bottom ? "TOP" : "BOTTOM", null == e.right ? "LEFT" : "RIGHT"]
 }
 
-function p(e) {
+function _(e) {
   let {
     top: t,
     left: n,
@@ -91,7 +91,7 @@ function h(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   let {
     top: t,
     left: n,
@@ -106,7 +106,7 @@ function g(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   return null != e ? "".concat(e, "px") : "auto"
 }
 class E extends(r = o.PureComponent) {
@@ -148,7 +148,7 @@ class E extends(r = o.PureComponent) {
       left: n,
       bottom: r,
       right: i
-    }, null != o && (o.style.top = m(t), o.style.bottom = m(r), o.style.left = m(n), o.style.right = m(i))
+    }, null != o && (o.style.top = g(t), o.style.bottom = g(r), o.style.left = g(n), o.style.right = g(i))
   }
   render() {
     let {
@@ -203,9 +203,9 @@ class E extends(r = o.PureComponent) {
       } = this.props, {
         target: u
       } = e, {
-        current: _
+        current: p
       } = this.draggableRef;
-      if (null != _ && e.button === a.AeJ.PRIMARY && (o || null != u && null != s && "" !== s && null != u.closest(s))) {
+      if (null != p && e.button === a.AeJ.PRIMARY && (o || null != u && null != s && "" !== s && null != u.closest(s))) {
         let {
           x: o,
           y: a
@@ -214,7 +214,7 @@ class E extends(r = o.PureComponent) {
           left: n,
           bottom: r,
           right: i
-        }, l, c, _.clientWidth, _.clientHeight));
+        }, l, c, p.clientWidth, p.clientHeight));
         this._dragStart = {
           x: e.clientX,
           y: e.clientY
@@ -235,7 +235,7 @@ class E extends(r = o.PureComponent) {
         onDragStart: u,
         onDrag: f,
         onFlip: h,
-        snapOrientation: m
+        snapOrientation: g
       } = this.props, {
         dragging: E,
         dragging: v,
@@ -250,12 +250,12 @@ class E extends(r = o.PureComponent) {
       let {
         clientWidth: S,
         clientHeight: I
-      } = r, T = g(d({
+      } = r, T = m(d({
         top: n - this._offsetY,
         left: t - this._offsetX
       }, i, o, S, I));
-      if (m) {
-        let e = _(T = p(T));
+      if (g) {
+        let e = p(T = _(T));
         b = e[0], y = e[1]
       } else T = {
         top: T.top,
@@ -303,8 +303,8 @@ class E extends(r = o.PureComponent) {
         clientHeight: u,
         clientWidth: f
       } = r, h = d(t, i, o, f, u);
-      if (h = g(h), s) {
-        let t = _(e = p(h));
+      if (h = m(h), s) {
+        let t = p(e = _(h));
         l = t[0], c = t[1]
       } else e = {
         top: h.top,
@@ -314,14 +314,14 @@ class E extends(r = o.PureComponent) {
       };
       if (t.left === e.left && t.right === e.right && t.top === e.top && t.bottom === e.bottom) return;
       null == a || a(e, r), this.setDOMPositions(e);
-      let m = 0 === e.top;
-      (l !== n.verticalOrientation || c !== n.horizontalOrientation || m !== n.atTopEdge) && this.setState({
+      let g = 0 === e.top;
+      (l !== n.verticalOrientation || c !== n.horizontalOrientation || g !== n.atTopEdge) && this.setState({
         verticalOrientation: l,
         horizontalOrientation: c,
-        atTopEdge: m
+        atTopEdge: g
       })
     });
-    let [t, n] = _(e.initialPosition);
+    let [t, n] = p(e.initialPosition);
     this.position = h(e.initialPosition), this.state = {
       dragging: !1,
       verticalOrientation: t,

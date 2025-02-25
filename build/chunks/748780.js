@@ -44,13 +44,13 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -68,19 +68,19 @@ function h(e, t) {
   return i
 }
 
-function g(e) {
+function m(e) {
   let t = Object.keys(e)[0];
   return "".concat(t, "(").concat(e[t], ")")
 }
-let m = /rgba\(([\d.]+), ([\d.]+), ([\d.]+), ([\d.]+)\)/;
+let g = /rgba\(([\d.]+), ([\d.]+), ([\d.]+), ([\d.]+)\)/;
 
 function E(e) {
-  let t = e.match(m);
+  let t = e.match(g);
   return null != t && (e = "rgba(".concat(0 | t[1], ", ").concat(0 | t[2], ", ").concat(0 | t[3], ", ").concat(t[4], ")")), e
 }
 
 function v(e) {
-  return e && (e.transform && (e.transform = e.WebkitTransform = e.MozTransform = e.transform.map(g).join(" ")), e.color && (e.color = E(e.color)), e.backgroundColor && (e.backgroundColor = E(e.backgroundColor))), e
+  return e && (e.transform && (e.transform = e.WebkitTransform = e.MozTransform = e.transform.map(m).join(" ")), e.color && (e.color = E(e.color)), e.backgroundColor && (e.backgroundColor = E(e.backgroundColor))), e
 }
 
 function b(e, t, n) {
@@ -113,18 +113,18 @@ function S(e, t) {
     invert: u,
     callback: f,
     type: h = "spring",
-    shouldLoop: g,
-    durationMin: m,
+    shouldLoop: m,
+    durationMin: g,
     durationMax: E
-  } = t, v = p(t, ["toValueMin", "toValueMax", "tension", "friction", "loop", "reverse", "invert", "callback", "type", "shouldLoop", "durationMin", "durationMax"]), b = e._value, y = O(t.duration, m, E), I = O(t.toValue, i, o), T = r[h](e, _(d({}, v), {
+  } = t, v = _(t, ["toValueMin", "toValueMax", "tension", "friction", "loop", "reverse", "invert", "callback", "type", "shouldLoop", "durationMin", "durationMax"]), b = e._value, y = O(t.duration, g, E), I = O(t.toValue, i, o), T = r[h](e, p(d({}, v), {
     toValue: I,
     tension: a,
     friction: s,
     duration: y
   })), N = T;
   if (c || u) {
-    let i = O(t.duration, m, E);
-    n = r[h](e, _(d({}, v), {
+    let i = O(t.duration, g, E);
+    n = r[h](e, p(d({}, v), {
       toValue: c ? b : -I,
       tension: a,
       friction: s,
@@ -132,7 +132,7 @@ function S(e, t) {
     })), N = r.sequence([T, n])
   }
   l ? N.start(() => {
-    (!g || g && g()) && (f ? f(S.bind(null, e, t)) : S(e, t))
+    (!m || m && m()) && (f ? f(S.bind(null, e, t)) : S(e, t))
   }) : N.start(f)
 }
 
@@ -147,7 +147,7 @@ r.inject.ApplyAnimatedValues(b, e => e);
 let T = {
     CLAMP: "clamp"
   },
-  N = _(d({}, r), {
+  N = p(d({}, r), {
     Easing: o(),
     accelerate: y,
     animate: S,

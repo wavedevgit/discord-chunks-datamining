@@ -4,13 +4,13 @@ n.d(t, {
   D4: () => u,
   Eo: () => d,
   R4: () => f,
-  Y1: () => g,
-  _j: () => p,
+  Y1: () => m,
+  _j: () => _,
   c8: () => s,
   d$: () => l,
   fP: () => o,
-  hs: () => m,
-  j1: () => _,
+  hs: () => g,
+  j1: () => p,
   kQ: () => c,
   pq: () => a,
   xi: () => h
@@ -38,13 +38,13 @@ let o = [0, 4, 8, 16, 24],
   u = 16,
   d = 32,
   f = 64,
-  _ = "---new-messages-bar",
-  p = "SPOILER_";
+  p = "---new-messages-bar",
+  _ = "SPOILER_";
 var h = function(e) {
   return e.ERROR_SOURCE_UNKNOWN = "ERROR_SOURCE_UNKNOWN", e.PRECOMPRESSION_SUM_TOO_LARGE = "PRECOMPRESSION_SUM_TOO_LARGE", e.PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", e.POSTCOMPRESSION_SUM_TOO_LARGE = "POSTCOMPRESSION_SUM_TOO_LARGE", e.POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", e.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR = "UPLOAD_MESSAGE_ATTACHMENT_MAX_SIZE_ERROR", e.EXPLICIT_CONTENT = "EXPLICIT_CONTENT", e
 }({});
-let g = 0xc800000,
-  m = {
+let m = 0xc800000,
+  g = {
     timeout: 60 * i.Z.Millis.SECOND,
     retries: 3,
     backoff: new r.Z

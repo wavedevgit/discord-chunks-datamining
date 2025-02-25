@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   EM: () => v,
-  PR: () => m,
+  PR: () => g,
   Tt: () => O,
   ZD: () => N,
   yY: () => S
@@ -54,12 +54,12 @@ let d = {
     base: n(358085).isPlatformEmbedded ? void 0 : "Discord"
   },
   f = 0,
-  _ = {
+  p = {
     count: 3,
     onlyWhenBlurred: !1,
     interval: 1e3
   },
-  p = (0, o.F)(() => ({
+  _ = (0, o.F)(() => ({
     titles: [d],
     notificationCount: void 0,
     flashQueue: []
@@ -74,46 +74,46 @@ function h(e) {
   return [t, r, n]
 }
 
-function g(e) {
+function m(e) {
   let {
     notificationCount: t
   } = e;
   return null == t || 0 === t ? "" : t < 0 ? "• " : "(".concat(t, ") ")
 }
 
-function m(e) {
-  (0, a.j)(() => p.setState({
+function g(e) {
+  (0, a.j)(() => _.setState({
     notificationCount: e
   }))
 }
 
 function E(e) {
-  return (0, a.j)(() => p.setState(t => ({
+  return (0, a.j)(() => _.setState(t => ({
     titles: [e, ...t.titles]
   }))), () => {
-    (0, a.j)(() => p.setState(t => ({
+    (0, a.j)(() => _.setState(t => ({
       titles: t.titles.filter(t => t !== e)
     })))
   }
 }
 
 function v(e) {
-  let t = u(l({}, _, e), {
+  let t = u(l({}, p, e), {
     id: f++
   });
-  return t.count = Math.max(t.count, t.messages.length), p.setState(e => ({
+  return t.count = Math.max(t.count, t.messages.length), _.setState(e => ({
     flashQueue: [...e.flashQueue, t]
   })), () => b(t.id)
 }
 
 function b(e) {
-  p.setState(t => ({
+  _.setState(t => ({
     flashQueue: t.flashQueue.filter(t => t.id !== e)
   }))
 }
 
 function y() {
-  p.setState({
+  _.setState({
     flashQueue: []
   })
 }
@@ -127,10 +127,10 @@ function S(e) {
 }
 
 function I() {
-  let [e, t] = p(e => {
+  let [e, t] = _(e => {
     let {
       flashQueue: t
-    } = e, n = h(e).filter(e => null != e).join(" | "), r = g(e);
+    } = e, n = h(e).filter(e => null != e).join(" | "), r = m(e);
     return ["".concat(r).concat(n), t[0]]
   }, i.X), [n, o] = r.useState(!1), a = r.useRef(0), s = null == t ? void 0 : t.messages[a.current % t.messages.length];
   return r.useEffect(() => {

@@ -14,7 +14,7 @@ var r = n(664751),
   d = n(128449),
   f = n(981631);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,17 +22,17 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class p extends s.Z {
+class _ extends s.Z {
   constructor(...e) {
-    super(...e), _(this, "actions", {
+    super(...e), p(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handleConnectionOpen()
-    }), _(this, "queue", new Set), _(this, "isFetchEnabled", !1), _(this, "handleConnectionOpen", () => {
+    }), p(this, "queue", new Set), p(this, "isFetchEnabled", !1), p(this, "handleConnectionOpen", () => {
       this.isFetchEnabled = !0, this.queue.forEach(e => {
         e === d.Hk ? this.fetchFeaturedGuilds() : this.fetchCategoryFeaturedGuilds({
           categoryId: e
         })
       })
-    }), _(this, "fetchFeaturedGuilds", async e => {
+    }), p(this, "fetchFeaturedGuilds", async e => {
       var t;
       if (!this.isFetchEnabled) {
         this.queue.add(d.Hk);
@@ -76,7 +76,7 @@ class p extends s.Z {
           })
         }
       }
-    }), _(this, "fetchCategoryFeaturedGuilds", async e => {
+    }), p(this, "fetchCategoryFeaturedGuilds", async e => {
       let {
         categoryId: t,
         forceRefresh: n = !1
@@ -124,4 +124,4 @@ class p extends s.Z {
     })
   }
 }
-let h = new p
+let h = new _

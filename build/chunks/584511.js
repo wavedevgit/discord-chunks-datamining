@@ -32,10 +32,10 @@ function f(e) {
   }
   return e
 }
-var _ = function(e) {
+var p = function(e) {
   return e[e.OUTGOING = 0] = "OUTGOING", e[e.INCOMING = 1] = "INCOMING", e
-}(_ || {});
-class p extends(r = o.PureComponent) {
+}(p || {});
+class _ extends(r = o.PureComponent) {
   renderStatus() {
     let {
       muted: e,
@@ -80,8 +80,8 @@ class p extends(r = o.PureComponent) {
       muted: a,
       deafen: d,
       size: f,
-      renderIcon: _
-    } = this.props, p = (0, l.pxk)(f), h = (0, i.jsx)("img", {
+      renderIcon: p
+    } = this.props, _ = (0, l.pxk)(f), h = (0, i.jsx)("img", {
       src: e,
       alt: " ",
       className: s()(u.voiceAvatar, o, {
@@ -89,15 +89,15 @@ class p extends(r = o.PureComponent) {
       })
     });
     if (t) return h;
-    let g = c.QS.AVATAR_DEFAULT;
-    return null != _ ? g = f === l.EFr.SIZE_32 ? c.QS.AVATAR_CALL_ICON_32 : c.QS.AVATAR_CALL_ICON : (a || d) && (g = c.QS.AVATAR_VOICE_CALL_80), (0, i.jsxs)("div", {
+    let m = c.QS.AVATAR_DEFAULT;
+    return null != p ? m = f === l.EFr.SIZE_32 ? c.QS.AVATAR_CALL_ICON_32 : c.QS.AVATAR_CALL_ICON : (a || d) && (m = c.QS.AVATAR_VOICE_CALL_80), (0, i.jsxs)("div", {
       className: u.callAvatarMaskContainer,
       children: [(0, i.jsxs)(c.ZP, {
         className: u.callAvatarMask,
-        width: p,
-        height: p,
-        mask: g,
-        children: [null == _ ? void 0 : _(), h]
+        width: _,
+        height: _,
+        mask: m,
+        children: [null == p ? void 0 : p(), h]
       }), this.renderMask()]
     })
   }
@@ -114,19 +114,19 @@ class p extends(r = o.PureComponent) {
       [u.clickable]: null != t,
       [u.ringingOutgoing]: c && 0 === a,
       [u.ringingIncoming]: c && 1 === a
-    }, o), _ = (0, l.pxk)(e), p = f({
-      height: _,
-      width: _
+    }, o), p = (0, l.pxk)(e), _ = f({
+      height: p,
+      width: p
     }, n);
     return (0, i.jsx)("div", {
-      style: p,
+      style: _,
       onContextMenu: r,
       className: d,
       children: this.renderVoiceCallAvatar()
     })
   }
 }
-d(p, "defaultProps", {
+d(_, "defaultProps", {
   size: l.EFr.SIZE_80,
   ringingType: 0,
   speaking: !1,
@@ -138,5 +138,5 @@ d(p, "defaultProps", {
   mirror: !1,
   disabled: !1,
   paused: !1
-}), d(p, "RingingType", _);
-let h = p
+}), d(_, "RingingType", p);
+let h = _

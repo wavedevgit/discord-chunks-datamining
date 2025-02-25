@@ -34,8 +34,8 @@ function E(e) {
       continueSessionToInitialStep: v
     } = e,
     {
-      activeSubscription: P,
-      paymentSources: b,
+      activeSubscription: b,
+      paymentSources: P,
       paymentSourceId: T,
       selectedPlan: M,
       selectedSkuId: Z,
@@ -83,15 +83,15 @@ function E(e) {
     planId: M.id,
     postSuccessGuild: I,
     onClose: J,
-    paymentSourceType: null === (t = b[null != T ? T : ""]) || void 0 === t ? void 0 : t.type,
+    paymentSourceType: null === (t = P[null != T ? T : ""]) || void 0 === t ? void 0 : t.type,
     hideClose: K
   }) : (0, l.jsx)(u.ZP, {
     followupSKUInfo: O,
     startingPremiumSubscriptionPlanId: U.current,
     planId: M.id,
     onClose: J,
-    isDowngrade: null != P && (0, x.GY)(P, M.id, S),
-    paymentSourceType: null === (n = b[null != T ? T : ""]) || void 0 === n ? void 0 : n.type,
+    isDowngrade: null != b && (0, x.GY)(b, M.id, S),
+    paymentSourceType: null === (n = P[null != T ? T : ""]) || void 0 === n ? void 0 : n.type,
     hideClose: K
   }), (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)(j.C3, {

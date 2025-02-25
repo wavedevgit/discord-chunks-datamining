@@ -3,9 +3,9 @@
 n.d(t, {
   Gb: () => s,
   RD: () => h,
-  Rs: () => _,
+  Rs: () => p,
   WA: () => f,
-  _2: () => p,
+  _2: () => _,
   f5: () => d,
   fG: () => u,
   gL: () => c
@@ -41,11 +41,11 @@ async function f(e) {
     r = await l;
   return null == r ? [] : r.getCorrectionsForMisspelling(e, t).slice(0, n)
 }
-async function _(e) {
+async function p(e) {
   let t = await l;
   null != t && t.replaceMisspelling(e)
 }
-async function p(e) {
+async function _(e) {
   let t = await l;
   null != t && t.setAppLocale(e)
 }

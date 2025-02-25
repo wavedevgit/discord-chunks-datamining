@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(914010),
   d = n(594174),
   f = n(626135),
-  _ = n(424218),
-  p = n(403182),
+  p = n(424218),
+  _ = n(403182),
   h = n(63063),
-  g = n(74538),
-  m = n(790527),
+  m = n(74538),
+  g = n(790527),
   E = n(474936),
   v = n(981631),
   b = n(388032),
@@ -77,12 +77,12 @@ function N(e) {
       src: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_".concat(A, "_v2.png")
     }),
     R = i.useMemo(() => {
-      let e = g.ZP.getUserMaxFileSize(O);
-      return (0, _.BU)(e / 1024, {
+      let e = m.ZP.getUserMaxFileSize(O);
+      return (0, p.BU)(e / 1024, {
         useKibibytes: !0
       })
     }, [O]),
-    P = (0, p.iL)({
+    P = (0, _.iL)({
       guildId: N,
       onClick: () => {
         window.open(h.Z.getArticleURL(v.BhN.NITRO_FAQ), "_blank")
@@ -102,7 +102,7 @@ function N(e) {
       location_object: v.qAy.NAVIGATION_LINK
     }), (0, l.uL)(v.Z5c.APPLICATION_STORE)
   }
-  return (0, r.jsx)(m.Z, S({
+  return (0, r.jsx)(g.Z, S({
     artElement: C,
     artContainerClassName: y.artContainer,
     enableArtBoxShadow: !1,

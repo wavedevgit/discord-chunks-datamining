@@ -35,9 +35,9 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -45,7 +45,7 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -58,12 +58,12 @@ function h(e) {
     label: t,
     onAction: n,
     icon: d
-  } = e, p = _(e, ["label", "onAction", "icon"]);
+  } = e, _ = p(e, ["label", "onAction", "icon"]);
   let {
     analyticsLocations: h
   } = (0, a.ZP)(), {
-    context: g
-  } = (0, s.KZ)(), m = (0, o.Aq)(), E = (0, o.bp)();
+    context: m
+  } = (0, s.KZ)(), g = (0, o.Aq)(), E = (0, o.bp)();
   return (0, r.jsx)(i.sNh, {
     id: "user-profile",
     label: null != t ? t : u.NW.string(u.t.LYju5O),
@@ -71,7 +71,7 @@ function h(e) {
       null == n || n(), (0, l.openUserProfileModal)(f({
         sourceAnalyticsLocations: h,
         appContext: E
-      }, g, p)), m.dispatch(c.CkL.POPOUT_CLOSE)
+      }, m, _)), g.dispatch(c.CkL.POPOUT_CLOSE)
     },
     icon: d
   })

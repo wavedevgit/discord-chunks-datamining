@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(442837),
   d = n(316792),
   f = n(481060),
-  _ = n(168551),
-  p = n(540059),
+  p = n(168551),
+  _ = n(540059),
   h = n(19759),
-  g = n(823961),
-  m = n(706454),
+  m = n(823961),
+  g = n(706454),
   E = n(451478),
   v = n(597952),
   b = n(252618),
@@ -29,7 +29,7 @@ n(589330);
 let T = new Set([I.Z5c.LOGIN, I.Z5c.REGISTER]);
 
 function N(e) {
-  let t = (0, u.e7)([m.default], () => m.default.locale),
+  let t = (0, u.e7)([g.default], () => g.default.locale),
     n = (0, u.e7)([E.Z], () => E.Z.isFocused(), []),
     {
       theme: o,
@@ -39,7 +39,7 @@ function N(e) {
       reducedMotion: d
     } = i.useContext(f.Sfi),
     {
-      accessibilitySettings: _,
+      accessibilitySettings: p,
       appWrapperClassName: b
     } = (0, y.I)(),
     {
@@ -49,16 +49,16 @@ function N(e) {
       desaturateUserColors: C,
       useForcedColors: R,
       systemForcedColors: P
-    } = _,
-    D = (0, u.e7)([g.Z], () => g.Z.confettiMode),
+    } = p,
+    D = (0, u.e7)([m.Z], () => m.Z.confettiMode),
     w = (0, l.TH)(),
     L = i.useMemo(() => T.has(w.pathname), [w.pathname]);
   (0, O.Z)(window, L);
   let x = (0, S.Z)(window, __OVERLAY__ || n),
     M = (0, u.e7)([h.Z], () => h.Z.sidebarWidth),
     j = (0, f.bWb)().enabled,
-    k = (0, p.Q3)("AppHelmet"),
-    U = (0, p.R6)("AppHelmet");
+    k = (0, _.Q3)("AppHelmet"),
+    U = (0, _.R6)("AppHelmet");
   return (0, r.jsx)("html", {
     lang: t,
     style: "font-size: ".concat(I, "%; --saturation-factor: ").concat(A, "; --devtools-sidebar-width: ").concat(M, "px;"),
@@ -111,8 +111,8 @@ function C(e) {
   let {
     clientThemesClassName: o,
     clientThemesCSS: a
-  } = (0, _.ZP)(), l = i.createElement("style", {
-    [_.PQ]: !0
+  } = (0, p.ZP)(), l = i.createElement("style", {
+    [p.PQ]: !0
   }, a);
   return (0, r.jsxs)(s.ql, {
     children: [N(o), A(), l, t]

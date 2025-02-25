@@ -118,7 +118,7 @@ function t(e) {
       }],
       relevance: 0
     },
-    _ = [l, u, d, {
+    p = [l, u, d, {
       className: "regexp",
       contains: [e.BACKSLASH_ESCAPE, a],
       variants: [{
@@ -218,11 +218,11 @@ function t(e) {
       }],
       relevance: 0
     }];
-  return a.contains = _, l.contains = _.slice(1), {
+  return a.contains = p, l.contains = p.slice(1), {
     name: "Crystal",
     aliases: ["cr"],
     keywords: o,
-    contains: _
+    contains: p
   }
 }
 e.exports = t

@@ -13,11 +13,11 @@ var r = n(512722),
   u = n.n(c),
   d = n(839548),
   f = n(46973),
-  _ = n(734298),
-  p = n(970838),
+  p = n(734298),
+  _ = n(970838),
   h = n(68721),
-  g = n(997653),
-  m = n(384136),
+  m = n(997653),
+  g = n(384136),
   E = n(740197),
   v = n(548820),
   b = n(579237),
@@ -104,7 +104,7 @@ class A extends l.Z {
       modes: a,
       streamUserId: s,
       streamParameters: l
-    } = n, c = (0, g.Q)(e, t, this.getAudioContext(), l);
+    } = n, c = (0, m.Q)(e, t, this.getAudioContext(), l);
     return c.streamUserId = s, c.setOutputVolume(this.outputVolume), c.setSinkId(this.sinkId), c.once(d.S.Destroy, e => this.connections.delete(e)), c.on(d.S.Silence, e => this.emit(f.aB.Silence, e)), c.on(d.S.DesktopSourceEnd, this.handleDesktopSourceEnd), c.on(d.S.AudioPermission, this.handleAudioPermission), c.on(d.S.VideoPermission, this.handleVideoPermission), this.interacted && c.interact(), e === S.Yn.DEFAULT && (c.setAudioSource(this.sourceId), this.enabled && c.input.enableAudioInput()), this.connections.add(c), this.emit(f.aB.Connection, c), c
   }
   findConnection(e) {
@@ -164,7 +164,7 @@ class A extends l.Z {
   }
   async getDesktopSource(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-      n = await m.Z.get(e, t);
+      n = await g.Z.get(e, t);
     return this.pendingDesktopInputs[n.id] = n, n.id
   }
   getScreenPreviews(e, t) {
@@ -297,6 +297,6 @@ class A extends l.Z {
       this.emit(f.aB.AudioPermission, e)
     }), T(this, "handleVideoPermission", e => {
       this.emit(f.aB.VideoPermission, e)
-    }), this.on("newListener", this.handleNewListener), this.on("removeListener", this.handleRemoveListener), (0, p.px)(this.handleActiveSinksChange), (0, _.Z)(this)
+    }), this.on("newListener", this.handleNewListener), this.on("removeListener", this.handleRemoveListener), (0, _.px)(this.handleActiveSinksChange), (0, p.Z)(this)
   }
 }

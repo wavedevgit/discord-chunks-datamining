@@ -39,14 +39,14 @@ function f(e) {
   null != t && (u = s({}, u, t), c = !0)
 }
 
-function _(e) {
+function p(e) {
   let {
     consents: t
   } = e;
   u = s({}, t), l = !0
 }
 
-function p(e) {
+function _(e) {
   let {
     consents: t
   } = e;
@@ -57,10 +57,10 @@ function h(e) {
   d = e.consentRequired
 }
 
-function g() {
+function m() {
   d = null
 }
-class m extends(r = i.ZP.Store) {
+class g extends(r = i.ZP.Store) {
   hasConsented(e) {
     return null != u[e] && u[e].consented
   }
@@ -77,11 +77,11 @@ class m extends(r = i.ZP.Store) {
     return d
   }
 }
-a(m, "displayName", "ConsentStore");
-let E = new m(o.Z, {
+a(g, "displayName", "ConsentStore");
+let E = new g(o.Z, {
   CONNECTION_OPEN: f,
-  OVERLAY_INITIALIZE: _,
-  UPDATE_CONSENTS: p,
+  OVERLAY_INITIALIZE: p,
+  UPDATE_CONSENTS: _,
   SET_CONSENT_REQUIRED: h,
-  LOGOUT: g
+  LOGOUT: m
 })

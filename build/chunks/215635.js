@@ -65,8 +65,8 @@ function d(e, t) {
   return i
 }
 let f = ["#ffb84b", "#ffe361", "#f0f0f0"],
-  _ = ["#ba3500", "#fd6214", "#f0f0f0"],
-  p = [.07, .45, 1],
+  p = ["#ba3500", "#fd6214", "#f0f0f0"],
+  _ = [.07, .45, 1],
   h = [{
     base: 4,
     tint: 1
@@ -80,8 +80,8 @@ let f = ["#ffb84b", "#ffe361", "#f0f0f0"],
     base: 8,
     tint: 1
   }],
-  g = [.1, .4, 1],
-  m = [{
+  m = [.1, .4, 1],
+  g = [{
     base: 2,
     tint: 1
   }, {
@@ -104,12 +104,12 @@ let f = ["#ffb84b", "#ffe361", "#f0f0f0"],
     } = (0, o.s)({
       primaryBaseColors: f,
       primaryTintColor: a,
-      primaryTintLuminances: p,
+      primaryTintLuminances: _,
       primaryLuminanceWeights: h,
-      secondaryBaseColors: _,
+      secondaryBaseColors: p,
       secondaryTintColor: l,
-      secondaryTintLuminances: g,
-      secondaryLuminanceWeights: m
+      secondaryTintLuminances: m,
+      secondaryLuminanceWeights: g
     });
     return (0, r.jsxs)("svg", c(s({}, (0, i.Z)(d)), {
       width: t,

@@ -17,13 +17,13 @@ let l = e => {
     gridNavigatorId: u,
     setInspectedStickerPosition: d,
     onGridItemSelect: f
-  } = e, _ = (0, o.O)(), p = r.useCallback(e => {
-    f(e, _)
-  }, [f, _]), h = r.useCallback((e, t) => {
+  } = e, p = (0, o.O)(), _ = r.useCallback(e => {
+    f(e, p)
+  }, [f, p]), h = r.useCallback((e, t) => {
     d(e, t, a.u.GRID_NAVIGATOR_EVENT)
   }, [d]), {
-    gridDispatch: g,
-    getItemProps: m,
+    gridDispatch: m,
+    getItemProps: g,
     getRowProps: E,
     gridContainerProps: v,
     handleGridContainerKeyDown: b,
@@ -33,7 +33,7 @@ let l = e => {
     gridNavigatorId: u,
     itemGrid: n,
     itemList: l,
-    onGridNavigatorItemSelect: p,
+    onGridNavigatorItemSelect: _,
     onGridNavigatorPositionChange: h
   });
   return r.useEffect(() => c.subscribe(e => e.inspectedExpressionPosition, e => {
@@ -43,13 +43,13 @@ let l = e => {
       rowIndex: n,
       source: r
     } = e;
-    r !== a.u.GRID_NAVIGATOR_EVENT && g({
+    r !== a.u.GRID_NAVIGATOR_EVENT && m({
       type: i.s.SET_FOCUSED_POSITION,
       x: t,
       y: n
     })
-  }), [g, c]), {
-    getItemProps: m,
+  }), [m, c]), {
+    getItemProps: g,
     getRowProps: E,
     gridContainerProps: v,
     handleGridContainerKeyDown: b,

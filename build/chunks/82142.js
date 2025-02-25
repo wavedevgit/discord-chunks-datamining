@@ -75,14 +75,14 @@ function S(e) {
   E.add(t), n.forEach(e => N(e, !0))
 }
 
-function T(e) {
+function P(e) {
   let {
     firstMessages: t
   } = e;
   if (null == t) return !1;
   null == t || t.forEach(e => N(e))
 }
-class P extends(r = s.ZP.Store) {
+class T extends(r = s.ZP.Store) {
   get(e) {
     let t = g.get(e);
     return null == t || t.isExpired() ? null : t
@@ -118,13 +118,13 @@ class P extends(r = s.ZP.Store) {
     return b
   }
 }
-a = "GiftCodeStore", (i = "displayName") in P ? Object.defineProperty(P, i, {
+a = "GiftCodeStore", (i = "displayName") in T ? Object.defineProperty(T, i, {
   value: a,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : P[i] = a;
-let A = new P(d.Z, {
+}) : T[i] = a;
+let A = new T(d.Z, {
     CONNECTION_OPEN: function() {
       return E.clear(), !1
     },
@@ -246,8 +246,8 @@ let A = new P(d.Z, {
       } = e, r = g.get(n);
       null != r && g.set(n, r.set("uses", Math.max(r.uses, t)))
     },
-    LOAD_THREADS_SUCCESS: T,
-    LOAD_ARCHIVED_THREADS_SUCCESS: T,
+    LOAD_THREADS_SUCCESS: P,
+    LOAD_ARCHIVED_THREADS_SUCCESS: P,
     LOAD_FORUM_POSTS: function(e) {
       let {
         threads: t

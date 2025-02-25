@@ -14,7 +14,7 @@ function i(e) {
     u = null == e ? void 0 : e.get("response_type"),
     d = null !== (n = null == e ? void 0 : e.get("nonce")) && void 0 !== n ? n : void 0,
     f = null !== (i = null == e ? void 0 : e.get("code_challenge")) && void 0 !== i ? i : void 0,
-    _ = null !== (o = null == e ? void 0 : e.get("code_challenge_method")) && void 0 !== o ? o : void 0;
+    p = null !== (o = null == e ? void 0 : e.get("code_challenge_method")) && void 0 !== o ? o : void 0;
   return null == a || null == s || null == c || null == u || ((0, r.openOAuth2Modal)({
     clientId: a,
     scopes: s,
@@ -23,6 +23,6 @@ function i(e) {
     responseType: u,
     nonce: d,
     codeChallenge: f,
-    codeChallengeMethod: _
+    codeChallengeMethod: p
   }), !0)
 }

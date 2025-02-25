@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  W: () => _
+  W: () => p
 }), n(653041), n(47120);
 var r, i = n(192379),
   o = n(830483);
@@ -65,7 +65,7 @@ function d(e) {
 function f(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-class _ extends(r = i.Component) {
+class p extends(r = i.Component) {
   static getDerivedStateFromProps(e, t) {
     let {
       children: n,
@@ -164,7 +164,7 @@ class _ extends(r = i.Component) {
       }))
     }
     let o = s({}, this.props);
-    return Object.keys(_.defaultProps).forEach(e => delete o[e]), i.createElement(t, o, r)
+    return Object.keys(p.defaultProps).forEach(e => delete o[e]), i.createElement(t, o, r)
   }
   constructor(e) {
     super(e), a(this, "_currentlyTransitioningKeys", void 0), a(this, "_keysToEnter", void 0), a(this, "_keysToLeave", void 0), a(this, "_isMounted", void 0), a(this, "_keyChildMapping", {}), a(this, "addChildRef", (e, t) => {
@@ -175,7 +175,7 @@ class _ extends(r = i.Component) {
     }, this._currentlyTransitioningKeys = new Set, this._keysToEnter = [], this._keysToLeave = [], this._isMounted = !1
   }
 }
-a(_, "defaultProps", {
+a(p, "defaultProps", {
   component: "span",
   transitionAppear: !0,
   transitionLeave: !0,

@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  CZ: () => g,
+  CZ: () => m,
   FT: () => v,
   In: () => d,
   Ju: () => E,
-  U6: () => _,
+  U6: () => p,
   iV: () => h,
-  jT: () => m,
-  y5: () => p
+  jT: () => g,
+  y5: () => _
 }), n(47120), n(653041);
 var r = n(570140),
   i = n(601070),
@@ -60,11 +60,11 @@ function f(e) {
     }), u)) d(e, t, n)
 }
 
-function _(e) {
+function p(e) {
   e.isCategory() ? f(e.id, !0, !0) : e.isForumLikeChannel() ? d(e.id, !0, !0, c.default.fromTimestamp(Date.now())) : d(e.id, !0, !0)
 }
 
-function p(e, t) {
+function _(e, t) {
   r.Z.dispatch({
     type: "BULK_ACK",
     channels: e,
@@ -80,7 +80,7 @@ function h(e) {
   })
 }
 
-function g(e, t) {
+function m(e, t) {
   r.Z.dispatch({
     type: "ENABLE_AUTOMATIC_ACK",
     channelId: e,
@@ -88,7 +88,7 @@ function g(e, t) {
   })
 }
 
-function m(e, t) {
+function g(e, t) {
   r.Z.dispatch({
     type: "DISABLE_AUTOMATIC_ACK",
     channelId: e,

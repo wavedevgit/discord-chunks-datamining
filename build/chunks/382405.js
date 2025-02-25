@@ -14,11 +14,11 @@ var i = n(120356),
   u = n(40851),
   d = n(906732),
   f = n(499254),
-  _ = n(827498),
-  p = n(397698),
+  p = n(827498),
+  _ = n(397698),
   h = n(541716),
-  g = n(379357),
-  m = n(26033),
+  m = n(379357),
+  g = n(26033),
   E = n(358696),
   v = n(740605),
   b = n(370370),
@@ -95,12 +95,12 @@ function W(e) {
   } = (0, x.z)(), f = {
     [B.fullSize]: u === k.y0.FULL_SIZE
   }, {
-    largeImage: _
-  } = (0, g.rv)({
+    largeImage: p
+  } = (0, m.rv)({
     entry: n,
     showCoverImage: !1
   }), {
-    appName: p
+    appName: _
   } = (0, N.n)(n), h = (0, C.Z)({
     location: "UserProfileRecentActivityCard",
     applicationId: n.extra.application_id,
@@ -108,12 +108,12 @@ function W(e) {
     sourceUserId: t.id,
     trackEntryPointImpression: !0
   }), {
-    analyticsLocations: m
+    analyticsLocations: g
   } = (0, d.ZP)(), v = (0, D.Z)({
     display: "recent",
     user: t,
     entry: n,
-    analyticsLocations: m
+    analyticsLocations: g
   }), b = (0, w.Z)({
     userId: t.id,
     onAction: v
@@ -130,14 +130,14 @@ function W(e) {
       children: (0, r.jsxs)("div", {
         className: o()(B.content, f),
         children: [(0, r.jsx)(E.E, {
-          image: _,
+          image: p,
           size: E.J.SIZE_60
         }), (0, r.jsxs)("div", {
           className: B.details,
           children: [(0, r.jsx)("div", {
             children: (0, r.jsx)(j.Z, {
               variant: "heading-sm/semibold",
-              text: p
+              text: _
             })
           }), (0, r.jsx)(T.Gk, {
             location: T.Gt.USER_PROFILE,
@@ -158,7 +158,7 @@ function W(e) {
       children: (0, r.jsxs)("div", {
         className: o()(B.content, f),
         children: [(0, r.jsx)(E.E, {
-          image: _,
+          image: p,
           size: E.J.SIZE_60,
           className: B.clickableImage,
           onClick: e => {
@@ -177,7 +177,7 @@ function W(e) {
             },
             children: (0, r.jsx)(j.Z, {
               variant: "heading-sm/semibold",
-              text: p
+              text: _
             })
           }), (0, r.jsx)(T.Gk, {
             location: T.Gt.USER_PROFILE,
@@ -203,21 +203,21 @@ function Y(e) {
     [B.fullSize]: l === k.y0.FULL_SIZE
   }, {
     largeImage: f
-  } = (0, g.rv)({
+  } = (0, m.rv)({
     entry: n
   }), {
-    url: _
+    url: p
   } = n.extra, {
-    analyticsLocations: p
+    analyticsLocations: _
   } = (0, d.ZP)(), h = (0, D.Z)({
     display: "recent",
     user: t,
     entry: n,
-    analyticsLocations: p
-  }), m = (0, w.Z)({
+    analyticsLocations: _
+  }), g = (0, w.Z)({
     userId: t.id,
     onAction: h
-  }), b = () => null == _ || "" === _ ? (0, r.jsx)(E.E, {
+  }), b = () => null == p || "" === p ? (0, r.jsx)(E.E, {
     aspectRatio: "crunchyroll",
     image: f,
     size: E.J.SIZE_60
@@ -229,9 +229,9 @@ function Y(e) {
     onClick: e => {
       e.stopPropagation(), h({
         action: "PRESS_IMAGE"
-      }), (0, v.Y)(_)
+      }), (0, v.Y)(p)
     }
-  }), y = () => null == _ || "" === _ ? (0, r.jsxs)("div", {
+  }), y = () => null == p || "" === p ? (0, r.jsxs)("div", {
     children: [(0, r.jsx)(j.Z, {
       variant: "heading-sm/semibold",
       text: n.extra.media_title
@@ -244,7 +244,7 @@ function Y(e) {
     onClick: e => {
       e.stopPropagation(), h({
         action: "PRESS_TEXT"
-      }), (0, v.Y)(_)
+      }), (0, v.Y)(p)
     },
     children: [(0, r.jsx)(j.Z, {
       variant: "heading-sm/semibold",
@@ -255,7 +255,7 @@ function Y(e) {
     })]
   });
   return (0, r.jsxs)(M.Z, {
-    ref: m,
+    ref: g,
     className: a,
     subsection: k.Tb.RECENT_ACTIVITY,
     onAction: h,
@@ -292,22 +292,22 @@ function K(e) {
   } = (0, x.z)(), f = {
     [B.fullSize]: u === k.y0.FULL_SIZE
   }, {
-    largeImage: _
-  } = (0, g.rv)({
+    largeImage: p
+  } = (0, m.rv)({
     entry: a
   }), {
-    analyticsLocations: p
+    analyticsLocations: _
   } = (0, d.ZP)(), h = (0, D.Z)({
     display: "recent",
     user: i,
     entry: a,
-    analyticsLocations: p
-  }), m = (0, w.Z)({
+    analyticsLocations: _
+  }), g = (0, w.Z)({
     userId: i.id,
     onAction: h
   }), b = null === (t = a.extra.entries[0]) || void 0 === t ? void 0 : t.media;
   return null == b ? null : (0, r.jsxs)(M.Z, {
-    ref: m,
+    ref: g,
     className: l,
     subsection: k.Tb.RECENT_ACTIVITY,
     onAction: h,
@@ -317,7 +317,7 @@ function K(e) {
       children: (0, r.jsxs)("div", {
         className: o()(B.content, f),
         children: [(0, r.jsx)(E.E, {
-          image: _,
+          image: p,
           size: E.J.SIZE_60,
           className: B.clickableImage,
           onClick: e => {
@@ -368,11 +368,11 @@ function z(e) {
     onClose: s
   } = e, {
     profileType: c
-  } = (0, x.z)(), m = {
+  } = (0, x.z)(), g = {
     [B.fullSize]: c === k.y0.FULL_SIZE
   }, {
     largeImage: v
-  } = (0, g.rv)({
+  } = (0, m.rv)({
     entry: n,
     showCoverImage: !1
   }), {
@@ -387,14 +387,14 @@ function z(e) {
     userId: t.id,
     onAction: S
   }), N = (0, u.bp)() === U.IlC.POPOUT, A = (0, l.e7)([R.Z, P.Z], () => R.Z.getChannel(P.Z.getChannelId())), C = () => {
-    null == s || s(), (null == A ? void 0 : A.isVocal()) ? (0, p.Z)({
+    null == s || s(), (null == A ? void 0 : A.isVocal()) ? (0, _.Z)({
       context: {
         type: "channel",
         channel: A
       },
       analyticsLocation: O,
       openInPopout: N
-    }) : (0, f.__)(_._b.TEXT, h.Ie.NORMAL, {
+    }) : (0, f.__)(p._b.TEXT, h.Ie.NORMAL, {
       applicationId: n.extra.application_id
     })
   };
@@ -407,7 +407,7 @@ function z(e) {
     children: [i, (0, r.jsx)("div", {
       className: B.body,
       children: (0, r.jsxs)("div", {
-        className: o()(B.content, m),
+        className: o()(B.content, g),
         children: [(0, r.jsx)(E.E, {
           image: v,
           size: E.J.SIZE_60,
@@ -446,13 +446,13 @@ function q(e) {
   var {
     entry: t
   } = e, n = Z(e, ["entry"]);
-  return (0, a.EQ)(t).when(m.dX, e => (0, r.jsx)(W, V({
+  return (0, a.EQ)(t).when(g.dX, e => (0, r.jsx)(W, V({
     entry: e
-  }, n))).when(m.y0, e => (0, r.jsx)(Y, V({
+  }, n))).when(g.y0, e => (0, r.jsx)(Y, V({
     entry: e
-  }, n))).when(m.dU, e => (0, r.jsx)(K, V({
+  }, n))).when(g.dU, e => (0, r.jsx)(K, V({
     entry: e
-  }, n))).when(m.Mq, e => (0, r.jsx)(z, V({
+  }, n))).when(g.Mq, e => (0, r.jsx)(z, V({
     entry: e
   }, n))).exhaustive()
 }

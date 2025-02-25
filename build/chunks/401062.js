@@ -16,11 +16,11 @@ var r = n(392711),
   u = n(100986),
   d = n(944486),
   f = n(70956),
-  _ = n(176354),
-  p = n(696900),
+  p = n(176354),
+  _ = n(696900),
   h = n(456631),
-  g = n(963838),
-  m = n(353368),
+  m = n(963838),
+  g = n(353368),
   E = n(981631),
   v = n(710111),
   b = function(e) {
@@ -43,9 +43,9 @@ function O(e, t, n) {
   let {
     abortController: o,
     onRequestProgress: s
-  } = y(e), l = null !== (r = p.Z.getState().animationType) && void 0 !== r ? r : m.q.BASIC, d = {
+  } = y(e), l = null !== (r = _.Z.getState().animationType) && void 0 !== r ? r : g.q.BASIC, d = {
     animation_type: l,
-    animation_id: (0, g.Iu)(l, g.v)
+    animation_id: (0, m.Iu)(l, m.v)
   };
   i.tn.post({
     url: E.ANM.CUSTOM_CALL_SOUNDS(e),
@@ -65,14 +65,14 @@ function S(e, t, n, r) {
       abortController: d,
       onRequestProgress: f
     } = y(e),
-    _ = {
+    p = {
       sound_id: t.soundId,
       emoji_id: t.emojiId,
       emoji_name: null !== (a = t.emojiName) && void 0 !== a ? a : null == s ? void 0 : s.name
     };
-  t.guildId !== v.X8 && (_.source_guild_id = t.guildId), i.tn.post({
+  t.guildId !== v.X8 && (p.source_guild_id = t.guildId), i.tn.post({
     url: E.ANM.SEND_SOUNDBOARD_SOUND(e),
-    body: _,
+    body: p,
     signal: d.signal,
     onRequestProgress: f,
     rejectWithError: !0
@@ -90,7 +90,7 @@ let I = async e => {
     isPremium: l
   } = e;
   if (null == n || h.Z.isOnCooldown) return;
-  let c = l && null != a ? a : m.q.BASIC;
+  let c = l && null != a ? a : g.q.BASIC;
   try {
     let e = null != n.id ? {
       emoji_id: n.id,
@@ -120,8 +120,8 @@ let I = async e => {
     }
   }
 }, T = {
-  [m.q.BASIC]: "Basic",
-  [m.q.PREMIUM]: "Premium"
+  [g.q.BASIC]: "Basic",
+  [g.q.PREMIUM]: "Premium"
 }, N = (e, t, n, r) => {
   let {
     unicode: i,
@@ -130,7 +130,7 @@ let I = async e => {
     managed: l,
     managedExternal: c,
     animated: u
-  } = (0, _.sp)([t], e.getGuildId()), d = T[r];
+  } = (0, p.sp)([t], e.getGuildId()), d = T[r];
   s.ZP.trackWithMetadata(E.rMx.VOICE_CHANNEL_EFFECT_SENT, {
     channel_id: e.id,
     guild_id: e.getGuildId(),

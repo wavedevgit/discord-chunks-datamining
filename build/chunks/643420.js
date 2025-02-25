@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,14 +45,14 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let h = 1e3 / 60,
-  g = 24,
-  m = {
+  m = 24,
+  g = {
     velocity: {
       type: "static-random",
       minValue: {
@@ -109,25 +109,25 @@ let h = 1e3 / 60,
 function b(e) {
   let {
     children: t
-  } = e, [n, l] = i.useState(!1), d = (0, a.bp)(), [_, b] = i.useState(null), {
+  } = e, [n, l] = i.useState(!1), d = (0, a.bp)(), [p, b] = i.useState(null), {
     confettiCanvas: y
-  } = i.useContext(s.h), O = (0, o.uR)(y, _), S = i.useMemo(() => ({
+  } = i.useContext(s.h), O = (0, o.uR)(y, p), S = i.useMemo(() => ({
     triggerAnimation: () => l(!0),
     untriggerAnimation: () => l(!1)
   }), []), I = i.useCallback(() => {
     let e = null == y ? void 0 : y.getCanvas();
     if (null == e) return;
     let t = e.getBoundingClientRect();
-    O.createConfetti(p(f({}, m), {
+    O.createConfetti(_(f({}, g), {
       position: {
         type: "static-random",
         minValue: {
           x: -t.width / 2,
-          y: -g
+          y: -m
         },
         maxValue: {
           x: t.width,
-          y: -g
+          y: -m
         }
       }
     }))
@@ -143,8 +143,8 @@ function b(e) {
       ref: b,
       colors: E,
       sprites: v,
-      spriteWidth: g,
-      spriteHeight: g
+      spriteWidth: m,
+      spriteHeight: m
     })]
   })
 }

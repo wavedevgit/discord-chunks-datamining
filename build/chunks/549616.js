@@ -72,11 +72,11 @@ class f extends o.Z {
       pdp_bg: a,
       mobile_bg: l,
       success_modal_bg: d,
-      mobile_banner: _,
-      hero_banner: p,
+      mobile_banner: p,
+      hero_banner: _,
       hero_banner_asset: h,
-      featured_block: g,
-      hero_logo: m
+      featured_block: m,
+      hero_logo: g
     } = e, E = u(e, ["products", "logo", "hero_ranking", "pdp_bg", "mobile_bg", "success_modal_bg", "mobile_banner", "hero_banner", "hero_banner_asset", "featured_block", "hero_logo"]);
     return new f(c(s({}, super.fromServer(E)), {
       products: t.reduce((e, t) => {
@@ -88,11 +88,11 @@ class f extends o.Z {
       pdpBg: a,
       mobileBg: l,
       successModalBg: d,
-      mobileBanner: _,
-      heroBanner: p,
+      mobileBanner: p,
+      heroBanner: _,
       heroBannerAsset: h,
-      featuredBlock: g,
-      heroLogo: m
+      featuredBlock: m,
+      heroLogo: g
     }))
   }
   constructor(e) {

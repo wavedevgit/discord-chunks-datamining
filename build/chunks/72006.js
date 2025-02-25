@@ -11,8 +11,8 @@ n.d(t, {
   eE: () => R,
   iE: () => W,
   iK: () => Z,
-  lv: () => T,
-  nR: () => P,
+  lv: () => P,
+  nR: () => T,
   q0: () => a.a,
   x0: () => N,
   xb: () => F,
@@ -106,7 +106,7 @@ function S(e) {
   return e.getCurrentContent().getFirstBlock().getText()
 }
 
-function T(e, t) {
+function P(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
     r = t.getCurrentContent(),
     i = r.getFirstBlock(),
@@ -141,7 +141,7 @@ function T(e, t) {
   }), t
 }
 
-function P(e) {
+function T(e) {
   return r.EditorState.createEmpty(new r.CompositeDecorator(e))
 }
 

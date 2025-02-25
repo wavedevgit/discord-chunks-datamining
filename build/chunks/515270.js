@@ -15,10 +15,10 @@ var r = n(147519),
   u = n(436660),
   d = n(887490),
   f = n(42530);
-let _ = new Set(["line"]),
-  p = r.Z.listLanguages(),
+let p = new Set(["line"]),
+  _ = r.Z.listLanguages(),
   h = new Map;
-for (let e of p) {
+for (let e of _) {
   e = e.toLowerCase();
   let t = r.Z.getLanguage(e);
   if (null == t) continue;
@@ -26,10 +26,10 @@ for (let e of p) {
   if (h.set(e, e), null != n)
     for (let t of n) h.set(t.toLowerCase(), e)
 }
-let g = /^[a-z0-9_+\-.#]+$/,
-  m = /^[a-z0-9_+\-.#]+$/i;
+let m = /^[a-z0-9_+\-.#]+$/,
+  g = /^[a-z0-9_+\-.#]+$/i;
 for (let [e, t] of h)
-  if (null == e.match(g)) throw Error("Language name does not match regex: ".concat(e));
+  if (null == e.match(m)) throw Error("Language name does not match regex: ".concat(e));
 
 function E(e) {
   let {
@@ -70,20 +70,20 @@ function O(e, t, n, r, i) {
   }
   let u = n && null != s,
     f = n && 0 === a.length,
-    _ = r && 0 === a.length,
-    p = (u ? a.slice(1) : a).length % 2 == 1,
-    g = p && (null == c || "" === c || null != c.match(m)),
-    E = g && null != c && null !== (o = h.get(c.toLowerCase())) && void 0 !== o ? o : null;
+    p = r && 0 === a.length,
+    _ = (u ? a.slice(1) : a).length % 2 == 1,
+    m = _ && (null == c || "" === c || null != c.match(g)),
+    E = m && null != c && null !== (o = h.get(c.toLowerCase())) && void 0 !== o ? o : null;
   return {
     blockEntry: t,
     wasInCodeBlock: n,
     isInCodeBlock: f,
-    isStyledCodeBlockLine: _,
-    lang: p || u ? E : i,
+    isStyledCodeBlockLine: p,
+    lang: _ || u ? E : i,
     hljsTypes: null,
     closesCodeBlock: u,
-    opensCodeBlock: p,
-    opensCodeBlockOnOwnLine: g
+    opensCodeBlock: _,
+    opensCodeBlockOnOwnLine: m
   }
 }
 
@@ -173,7 +173,7 @@ function C(e, t) {
 function R(e) {
   let t;
   let [n, r] = e;
-  if (!_.has(n.type)) return [];
+  if (!p.has(n.type)) return [];
   let i = [],
     o = /\\|```/g;
   for (let e = 0; e < n.children.length; e++) {

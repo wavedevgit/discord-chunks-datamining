@@ -14,11 +14,11 @@ var i = n(481060),
   u = n(124072),
   d = n(692629),
   f = n(131704),
-  _ = n(592125),
-  p = n(430824),
+  p = n(592125),
+  _ = n(430824),
   h = n(900849),
-  g = n(746878),
-  m = n(981631);
+  m = n(746878),
+  g = n(981631);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,7 +65,7 @@ async function O(e, t, n) {
       channelId: t,
       messageId: n
     }), null != e) {
-    let n = p.Z.getGuild(e);
+    let n = _.Z.getGuild(e);
     if ((null == n ? void 0 : n.joinedAt) == null) try {
       await h.Ub(e, {}, {
         channelId: t
@@ -73,21 +73,21 @@ async function O(e, t, n) {
       return
     } catch (e) {}
   }
-  let r = _.Z.getChannel(t);
+  let r = p.Z.getChannel(t);
   if (null != r && null == n && (0, f.bw)(r.type) && (0, l.YO)(r)) {
     a.default.selectVoiceChannel(r.id);
     return
-  }(0, c.Z)(m.Z5c.CHANNEL(e, t, n))
+  }(0, c.Z)(g.Z5c.CHANNEL(e, t, n))
 }
 
 function S(e) {
   return {
     react(t, a, s) {
-      let l = _.Z.getChannel(t.channelId),
+      let l = p.Z.getChannel(t.channelId),
         c = s.noStyleAndInteraction ? void 0 : n => {
           e.shouldStopPropagation && (null == n || n.stopPropagation()), O(t.guildId, t.channelId, t.messageId), e.shouldCloseDefaultModals && (0, i.pTH)()
         },
-        f = s.noStyleAndInteraction || null == t.channelId || null == l && null == t.originalLink ? m.dG4 : e => {
+        f = s.noStyleAndInteraction || null == t.channelId || null == l && null == t.originalLink ? g.dG4 : e => {
           (0, o.jW)(e, async () => {
             let {
               default: e
@@ -108,7 +108,7 @@ function S(e) {
         onClick: c,
         onContextMenu: f,
         className: "channelMention",
-        children: [null != t.inContent ? a(t.inContent, s) : null, null != t.inContent ? (0, r.jsx)(d.Z, {}) : null, (0, g.S)(t, a, s)]
+        children: [null != t.inContent ? a(t.inContent, s) : null, null != t.inContent ? (0, r.jsx)(d.Z, {}) : null, (0, m.S)(t, a, s)]
       }, s.key)
     }
   }

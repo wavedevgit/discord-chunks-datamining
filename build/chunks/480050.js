@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,13 +34,13 @@ function _(e) {
   }
   return e
 }
-let p = 400,
+let _ = 400,
   h = Object.freeze({
     friction: 30,
     tension: 300
   });
 
-function g(e) {
+function m(e) {
   let {
     width: t,
     height: n,
@@ -56,7 +56,7 @@ function g(e) {
   }
 }
 
-function m(e, t, n, r, i) {
+function g(e, t, n, r, i) {
   if (null == e || null == t) return {
     width: void 0,
     height: void 0
@@ -87,7 +87,7 @@ function E(e) {
   } = e, O = i.useRef(null), S = (0, u.vV)(E, v, b, y), {
     width: I,
     height: T
-  } = m(E, v, b, y, n), [N, A] = (0, l.q_F)(() => ({
+  } = g(E, v, b, y, n), [N, A] = (0, l.q_F)(() => ({
     scale: 1,
     config: h
   })), [C, R] = (0, l.q_F)(() => ({
@@ -115,7 +115,7 @@ function E(e) {
   let M = (e, t) => {
       var n;
       let r = null == I ? null === (n = O.current) || void 0 === n ? void 0 : n.getBoundingClientRect() : null,
-        i = g({
+        i = m({
           width: null != I ? I : r.width,
           height: null != T ? T : r.height,
           offset: {
@@ -139,7 +139,7 @@ function E(e) {
       if (!n) {
         0 === e.button && (null == o || o(e));
         return
-      }(e.clientX - w.x) ** 2 + (e.clientY - w.y) ** 2 < p && (null == o || o(e)), D(!1)
+      }(e.clientX - w.x) ** 2 + (e.clientY - w.y) ** 2 < _ && (null == o || o(e)), D(!1)
     };
   return (0, r.jsx)(s.animated.div, {
     ref: O,
@@ -153,7 +153,7 @@ function E(e) {
       [d.panning]: n && P,
       [d.pannable]: n && x
     }),
-    style: _({}, N, C),
+    style: p({}, N, C),
     children: t
   })
 }

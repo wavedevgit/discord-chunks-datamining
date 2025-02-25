@@ -3,7 +3,7 @@
 n.d(t, {
   $j: () => c,
   Ty: () => d,
-  lW: () => _,
+  lW: () => p,
   sr: () => f,
   zP: () => u
 });
@@ -59,6 +59,6 @@ function f(e, t) {
   })
 }
 
-function _(e) {
+function p(e) {
   __OVERLAY__ ? r.default.request(s.Etm.OVERLAY, (0, a.G)(e)) : o.Z.dispatchToSubscriptions(s.zMe.OVERLAY, {}, (0, a.G)(e))
 }

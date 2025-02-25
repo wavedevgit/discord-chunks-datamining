@@ -23,35 +23,35 @@ function d() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1e3;
   return e
 }
-let f = _();
+let f = p();
 
-function _() {
+function p() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
   return e
 }(function e() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
   return e
-})() && (r = setInterval(m, a));
-let p = new Map;
+})() && (r = setInterval(g, a));
+let _ = new Map;
 
 function h(e) {
   return "anonymous" !== e.name && ("" === f || e.name === f) && (e.execCount > u || e.execTime > l)
 }
 
-function g() {
-  for (let [e, t] of p)
+function m() {
+  for (let [e, t] of _)
     if (h(t)) return !0;
   return !1
 }
 
-function m() {
-  for (let [e, t] of(g() || "" !== f ? E() : o.log("No violators found"), p)) t.warned = !1, t.execTime = 0, t.execCount = 0
+function g() {
+  for (let [e, t] of(m() || "" !== f ? E() : o.log("No violators found"), _)) t.warned = !1, t.execTime = 0, t.execCount = 0
 }
 let E = function() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 34,
     t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 20,
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 20,
     r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : e + t + n + 6;
-  for (let [i, a] of(o.log("|".padEnd(r, "-") + "|"), o.log("| Consumers of `useStateFromStores` exceeding warning thresholds:".padEnd(r, " ") + "|"), o.log("|".padEnd(r, "-") + "|"), o.log("| ".concat("Function/Component Name".padEnd(e, " ")) + "| ".concat("Total Exec Time".padEnd(t, " ")) + "| ".concat("Total Exec Count".padEnd(n, " "), "|")), o.log("|".padEnd(r, "-") + "|"), p))("" !== f && i === f || h(a)) && o.log("| ".concat(i.padEnd(e, " ")) + "| ".concat((a.execTime.toFixed(2) + "ms").padEnd(t, " ")) + "| ".concat(a.execCount.toString().padEnd(n, " "), "|"));
+  for (let [i, a] of(o.log("|".padEnd(r, "-") + "|"), o.log("| Consumers of `useStateFromStores` exceeding warning thresholds:".padEnd(r, " ") + "|"), o.log("|".padEnd(r, "-") + "|"), o.log("| ".concat("Function/Component Name".padEnd(e, " ")) + "| ".concat("Total Exec Time".padEnd(t, " ")) + "| ".concat("Total Exec Count".padEnd(n, " "), "|")), o.log("|".padEnd(r, "-") + "|"), _))("" !== f && i === f || h(a)) && o.log("| ".concat(i.padEnd(e, " ")) + "| ".concat((a.execTime.toFixed(2) + "ms").padEnd(t, " ")) + "| ".concat(a.execCount.toString().padEnd(n, " "), "|"));
   o.log("|".padEnd(r, "-") + "|")
 }

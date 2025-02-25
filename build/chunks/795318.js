@@ -39,8 +39,8 @@ function c(e) {
     location: u,
     entrypoint: d,
     targetUserId: f,
-    tileType: _
-  } = e, p = o.Z.getChannelId(), h = o.Z.getGuildId(), g = null === (t = i.Z.getChannel(p)) || void 0 === t ? void 0 : t.type;
+    tileType: p
+  } = e, _ = o.Z.getChannelId(), h = o.Z.getGuildId(), m = null === (t = i.Z.getChannel(_)) || void 0 === t ? void 0 : t.type;
   (0, r.yw)(s.rMx.CALL_SETTINGS_MENU_ITEM_INTERACTED, {
     location: u,
     menu_name: c,
@@ -50,8 +50,8 @@ function c(e) {
     entrypoint: d,
     target_user_id: f,
     voice_channel_guild_id: h,
-    voice_channel_id: p,
-    voice_channel_type: g,
-    tile_type: _
+    voice_channel_id: _,
+    voice_channel_type: m,
+    tile_type: p
   })
 }

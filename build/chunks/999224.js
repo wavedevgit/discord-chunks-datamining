@@ -13,11 +13,11 @@ var r = n(771356),
   u = n(166660),
   d = n(415345),
   f = n(962770),
-  _ = n(909139),
-  p = n(815291),
+  p = n(909139),
+  _ = n(815291),
   h = n(760427),
-  g = n(761491),
-  m = n(480586),
+  m = n(761491),
+  g = n(480586),
   E = n(957450),
   v = n(830443),
   b = n(936643),
@@ -46,7 +46,7 @@ let G = {
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(242, 96, 195, 0.50) 0%, rgba(242, 96, 195, 0.00) 100%), linear-gradient(90deg, rgba(53, 236, 125, 0.25) 0%, rgba(53, 236, 125, 0.00) 15%)",
     baseColor: "#380527",
     styleKey: "skye",
-    previewSoundURLs: [p.Z]
+    previewSoundURLs: [_.Z]
   },
   quinn: {
     name: S.Z.biQVNz,
@@ -70,7 +70,7 @@ let G = {
     splashGradient: "radial-gradient(9% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(100% 555.56% at 0% 100%, rgba(92, 119, 31, 0.50) 0%, rgba(92, 119, 31, 0.00) 100%), linear-gradient(90deg, rgba(104, 188, 254, 0.25) 0%, rgba(104, 188, 254, 0.00) 15%)",
     baseColor: "#25300D",
     styleKey: "sebastien",
-    previewSoundURLs: [_.Z]
+    previewSoundURLs: [p.Z]
   },
   megaphone: {
     name: S.Z.fPU01d,
@@ -110,7 +110,7 @@ let G = {
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(100% 555.56% at 0% 100%, rgba(110, 60, 223, 0.40) 0%, rgba(110, 60, 223, 0.00) 100%), linear-gradient(90deg, rgba(118, 233, 136, 0.25) 0%, rgba(118, 233, 136, 0.00) 15%)",
     baseColor: "#160935",
     styleKey: "spacebunny",
-    previewSoundURLs: [g.Z, m.Z, E.Z]
+    previewSoundURLs: [m.Z, g.Z, E.Z]
   },
   justus: {
     name: S.Z.ZVrsKC,

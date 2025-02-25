@@ -23,7 +23,7 @@ let d = {
       exePath: c = null,
       voiceChannelId: d = null,
       sessionId: f = null,
-      mediaSessionId: _ = null
+      mediaSessionId: p = null
     } = e;
     i.Z.wait(() => i.Z.dispatch({
       type: "ACTIVITY_UPDATE_START",
@@ -42,7 +42,7 @@ let d = {
         exePath: c,
         voice_channel_id: d,
         session_id: f,
-        media_session_id: _
+        media_session_id: p
       },
       retries: 1,
       oldFormErrors: !0,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(991656),
   i = n(70597),
@@ -14,33 +14,33 @@ var r = n(991656),
   d = n(528734),
   f = n(951516);
 
-function _(e) {
+function p(e) {
   (0, f.Z)(1, arguments);
   var t = (0, d.default)(e.start),
     n = (0, d.default)(e.end);
   if (isNaN(t.getTime())) throw RangeError("Start Date is invalid");
   if (isNaN(n.getTime())) throw RangeError("End Date is invalid");
-  var _ = {};
-  _.years = Math.abs((0, u.Z)(n, t));
-  var p = (0, r.Z)(n, t),
+  var p = {};
+  p.years = Math.abs((0, u.Z)(n, t));
+  var _ = (0, r.Z)(n, t),
     h = (0, i.Z)(t, {
-      years: p * _.years
+      years: _ * p.years
     });
-  _.months = Math.abs((0, l.Z)(n, h));
-  var g = (0, i.Z)(h, {
-    months: p * _.months
+  p.months = Math.abs((0, l.Z)(n, h));
+  var m = (0, i.Z)(h, {
+    months: _ * p.months
   });
-  _.days = Math.abs((0, o.Z)(n, g));
-  var m = (0, i.Z)(g, {
-    days: p * _.days
+  p.days = Math.abs((0, o.Z)(n, m));
+  var g = (0, i.Z)(m, {
+    days: _ * p.days
   });
-  _.hours = Math.abs((0, a.Z)(n, m));
-  var E = (0, i.Z)(m, {
-    hours: p * _.hours
+  p.hours = Math.abs((0, a.Z)(n, g));
+  var E = (0, i.Z)(g, {
+    hours: _ * p.hours
   });
-  _.minutes = Math.abs((0, s.Z)(n, E));
+  p.minutes = Math.abs((0, s.Z)(n, E));
   var v = (0, i.Z)(E, {
-    minutes: p * _.minutes
+    minutes: _ * p.minutes
   });
-  return _.seconds = Math.abs((0, c.Z)(n, v)), _
+  return p.seconds = Math.abs((0, c.Z)(n, v)), p
 }

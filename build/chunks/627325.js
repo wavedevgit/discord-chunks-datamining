@@ -49,7 +49,7 @@ function S(e) {
     handleScroll: a,
     voiceListRef: l,
     showSectionHeaders: S = !1,
-    query: P
+    query: T
   } = e, A = (0, y.S)(), w = (0, u.e7)([g.default], () => (0, b.I5)(g.default.getCurrentUser())), {
     voicesById: Z,
     isNativeModuleLoading: k,
@@ -61,26 +61,26 @@ function S(e) {
     showFailure: v.Z.showFailure(),
     catalogLastFetchTime: v.Z.getCatalogLastFetchTime()
   })), D = (0, u.cj)([v.Z], () => v.Z.getSortedVoiceFilters()), M = w ? Object.values(Z) : D, W = i.useMemo(() => {
-    let e = (0, d._I)(P.toLowerCase());
+    let e = (0, d._I)(T.toLowerCase());
     return ["" === e ? M : M.filter(t => {
       let {
         id: n
       } = t;
       return s()(e, (0, d._I)(E.NW.string(A[n].name).toLowerCase()))
     })]
-  }, [M, P, A]), F = e => Math.ceil(e / n), U = i.useCallback(e => {
+  }, [M, T, A]), F = e => Math.ceil(e / n), U = i.useCallback(e => {
     let {
       sectionIndex: t,
       sectionRowIndex: i
     } = e;
-    return (0, r.jsx)(T, {
+    return (0, r.jsx)(P, {
       children: (0, c.range)(0, n).map(e => W[t][i * n + e]).filter(_.lm).map(e => (0, r.jsx)(O.J, {
         voiceFilter: e,
         hasNitro: w
       }, null == e ? void 0 : e.id))
     }, i)
   }, [n, W, w]);
-  return P && (null == W ? void 0 : null === (t = W[0]) || void 0 === t ? void 0 : t.length) === 0 ? (0, r.jsxs)("div", {
+  return T && (null == W ? void 0 : null === (t = W[0]) || void 0 === t ? void 0 : t.length) === 0 ? (0, r.jsxs)("div", {
     className: o()(j.iconMessage),
     children: [(0, r.jsx)(m._, {
       width: 40,
@@ -133,7 +133,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   let {
     children: t
   } = e, n = i.useRef(null);

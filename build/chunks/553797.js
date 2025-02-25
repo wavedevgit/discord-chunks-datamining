@@ -20,19 +20,19 @@ function u(e) {
     className: u,
     intervalCount: d = 1,
     isPrepaidPaymentSource: f = !1
-  } = e, _ = (0, a.T4)(t, n), p = null;
-  return i === s.rV.YEAR ? p = l.NW.format(l.t["3U719v"], {
-    price: _
-  }) : i === s.rV.MONTH && 1 === d ? p = l.NW.format(l.t.NkR7BQ, {
-    price: _
-  }) : i === s.rV.MONTH && d > 1 && (p = l.NW.format(l.t.CNAGg4, {
-    price: _,
+  } = e, p = (0, a.T4)(t, n), _ = null;
+  return i === s.rV.YEAR ? _ = l.NW.format(l.t["3U719v"], {
+    price: p
+  }) : i === s.rV.MONTH && 1 === d ? _ = l.NW.format(l.t.NkR7BQ, {
+    price: p
+  }) : i === s.rV.MONTH && d > 1 && (_ = l.NW.format(l.t.CNAGg4, {
+    price: p,
     intervalCount: d
   })), (0, r.jsx)("div", {
     className: o()(c.pricePerInterval, u),
     "data-testid": "PricePerInterval-".concat(n),
     children: null == i || f ? (0, r.jsx)("strong", {
-      children: _
-    }) : p
+      children: p
+    }) : _
   })
 }

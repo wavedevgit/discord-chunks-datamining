@@ -1,6 +1,6 @@
 /**
   Module ID: 624
-  Original File Name: 8ebc36e0a2e656ff
+  Original File Name: 105476a4cfeaa87f
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -3712,6 +3712,24 @@ h1.title_feb59c,h2.title_feb59c {
     height: 50px
 }
 
+.container__77b6b {
+    position: relative;
+    width: 408px;
+    height: 96px
+}
+
+.image__77b6b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.text__77b6b {
+    margin-left: 150px
+}
+
 .banner_bb7e05 {
     box-sizing: border-box;
     border-radius: 16px;
@@ -5712,6 +5730,10 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .badgeOpalGlow__1f2ac {
     --custom-tenure-badge-glow-color: rgba(7,130,146,0.5019607843137255)
+}
+
+.image__0c271 {
+    width: 100%
 }
 
 .flipCardContainer_f8e6bf,.noFlipCardContainer_f8e6bf,.noFlipCardContainerCarousel_f8e6bf {
@@ -16960,4 +16982,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=8ebc36e0a2e656ff.css.map*/
+/*# sourceMappingURL=105476a4cfeaa87f.css.map*/

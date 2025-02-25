@@ -13,15 +13,15 @@ var r = n(200651),
   u = n(481060),
   d = n(889963),
   f = n(388032),
-  _ = n(231683);
+  p = n(231683);
 
-function p(e) {
+function _(e) {
   let {
     page: t,
     totalPageCount: n,
     disabled: o,
     onPageChange: s
-  } = e, [d, f] = i.useState(!1), [p, h] = i.useState(null), g = null != p && p >= 1 && p <= n, m = e => {
+  } = e, [d, f] = i.useState(!1), [_, h] = i.useState(null), m = null != _ && _ >= 1 && _ <= n, g = e => {
     let t = parseInt(e);
     if ("" === e || isNaN(t)) {
       h(null);
@@ -29,19 +29,19 @@ function p(e) {
     }
     h(t)
   }, E = e => {
-    "Enter" === e.key && null != p && g && (s(p), f(!1), h(null))
+    "Enter" === e.key && null != _ && m && (s(_), f(!1), h(null))
   };
   return o ? (0, r.jsx)(u.X6q, {
-    className: _.gap,
+    className: p.gap,
     "aria-hidden": !0,
     variant: "heading-sm/semibold",
     children: "…"
   }, t.key) : d ? (0, r.jsx)(c.o, {
     autoFocus: !0,
-    className: _.jumpToPageInlineInput,
+    className: p.jumpToPageInlineInput,
     size: c.o.Sizes.MINI,
-    value: null == p ? "" : "".concat(p),
-    onChange: m,
+    value: null == _ ? "" : "".concat(_),
+    onChange: g,
     onBlur: () => {
       f(!1), h(null)
     },
@@ -50,7 +50,7 @@ function p(e) {
   }, t.key) : (0, r.jsx)(l.P, {
     onClick: () => f(!0),
     children: (0, r.jsx)(u.X6q, {
-      className: a()(_.roundButton, _.gap),
+      className: a()(p.roundButton, p.gap),
       "aria-hidden": !0,
       variant: "heading-sm/semibold",
       children: "…"
@@ -66,8 +66,8 @@ function h(e) {
     maxVisiblePages: o,
     disablePaginationGap: c,
     onPageChange: h,
-    hideMaxPage: g = !1,
-    className: m
+    hideMaxPage: m = !1,
+    className: g
   } = e, E = Math.ceil(n / i);
 
   function v(e) {
@@ -81,8 +81,8 @@ function h(e) {
       navigateToPage: i
     } = e;
     return (0, r.jsxs)(s.zx, {
-      className: _.endButton,
-      innerClassName: _.endButtonInner,
+      className: p.endButton,
+      innerClassName: p.endButtonInner,
       look: s.zx.Looks.BLANK,
       color: s.zx.Colors.TRANSPARENT,
       onClick: i,
@@ -91,7 +91,7 @@ function h(e) {
       children: [(0, r.jsx)(u.V7D, {
         size: "md",
         color: "currentColor",
-        className: _.iconCaret,
+        className: p.iconCaret,
         "aria-hidden": !0
       }), (0, r.jsx)("span", {
         children: f.NW.string(f.t["13/7kZ"])
@@ -106,8 +106,8 @@ function h(e) {
       navigateToPage: i
     } = e;
     return (0, r.jsxs)(s.zx, {
-      className: _.endButton,
-      innerClassName: _.endButtonInner,
+      className: p.endButton,
+      innerClassName: p.endButtonInner,
       look: s.zx.Looks.BLANK,
       color: s.zx.Colors.TRANSPARENT,
       onClick: i,
@@ -118,7 +118,7 @@ function h(e) {
       }), (0, r.jsx)(u.Fbu, {
         size: "md",
         color: "currentColor",
-        className: _.iconCaret,
+        className: p.iconCaret,
         "aria-hidden": !0
       })]
     }, t)
@@ -126,8 +126,8 @@ function h(e) {
 
   function O(e) {
     return (0, r.jsx)(l.P, {
-      className: a()(_.roundButton, {
-        [_.activeButton]: e.selected
+      className: a()(p.roundButton, {
+        [p.activeButton]: e.selected
       }),
       onClick: e.selected ? void 0 : e.navigateToPage,
       "aria-label": f.NW.formatToPlainString(f.t.IGMs8f, {
@@ -141,7 +141,7 @@ function h(e) {
   }
 
   function S(e) {
-    return (0, r.jsx)(p, {
+    return (0, r.jsx)(_, {
       page: e,
       totalPageCount: E,
       disabled: !!c,
@@ -155,9 +155,9 @@ function h(e) {
       hasMultiplePages: n
     } = e;
     return n ? (0, r.jsx)("div", {
-      className: a()(_.pageControlContainer, m),
+      className: a()(p.pageControlContainer, g),
       children: (0, r.jsx)("nav", {
-        className: _.pageControl,
+        className: p.pageControl,
         children: t.map(e => {
           switch (e.type) {
             case d.s.BACK:
@@ -179,7 +179,7 @@ function h(e) {
     totalPageCount: E,
     selectedPage: t,
     maxVisiblePages: o,
-    hideMaxPage: g,
+    hideMaxPage: m,
     onPageChange: v,
     children: I
   })

@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  hB: () => m,
+  hB: () => g,
   lv: () => f,
-  n2: () => p,
-  nX: () => g,
+  n2: () => _,
+  nX: () => m,
   rX: () => E,
   xC: () => h
 }), n(47120);
@@ -34,30 +34,30 @@ let d = function(e) {
       checkElevated: !1
     }), c.N)
   },
-  _ = function(e) {
+  p = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [o.Z, s.default],
       n = d(e, t);
     return null != n && a.Z.can(u.Plq.MANAGE_GUILD, n.guild) && a.Z.can(u.Plq.BAN_MEMBERS, n.guild)
   };
 
-function p(e) {
+function _(e) {
   return (0, i.e7)([o.Z, s.default], () => f(e, [o.Z, s.default]), [e])
 }
 
 function h(e) {
-  let t = p(e),
-    n = (0, i.e7)([o.Z, s.default], () => _(e, [o.Z, s.default]), [e]);
+  let t = _(e),
+    n = (0, i.e7)([o.Z, s.default], () => p(e, [o.Z, s.default]), [e]);
   return t && n
 }
 
-function g(e) {
+function m(e) {
   return (0, i.e7)([o.Z, a.Z], () => {
     let t = o.Z.getGuild(e);
     return null != t && a.Z.can(u.Plq.MANAGE_GUILD, t)
   }, [e])
 }
 
-function m(e, t, n) {
+function g(e, t, n) {
   return (0, i.e7)([a.Z, o.Z], () => {
     let r = o.Z.getGuild(e);
     return null != r && t && a.Z.canManageUser(u.Plq.BAN_MEMBERS, n, r)

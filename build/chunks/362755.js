@@ -27,11 +27,11 @@ function f(e) {
   l = 1, c = e.loadId
 }
 
-function _(e) {
+function p(e) {
   var t, n;
   c === e.loadId && (u = null !== (t = e.skuId) && void 0 !== t ? t : null, d = null !== (n = e.skuSubscriptionPlanId) && void 0 !== n ? n : null, l = 2)
 }
-class p extends(r = i.ZP.Store) {
+class _ extends(r = i.ZP.Store) {
   get browserCheckoutState() {
     return l
   }
@@ -45,8 +45,8 @@ class p extends(r = i.ZP.Store) {
     return d
   }
 }
-a(p, "displayName", "BrowserCheckoutStateStore");
-let h = new p(o.Z, {
+a(_, "displayName", "BrowserCheckoutStateStore");
+let h = new _(o.Z, {
   USER_PAYMENT_BROWSER_CHECKOUT_STARTED: f,
-  USER_PAYMENT_BROWSER_CHECKOUT_DONE: _
+  USER_PAYMENT_BROWSER_CHECKOUT_DONE: p
 })

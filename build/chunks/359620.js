@@ -18,11 +18,11 @@ function c(e) {
     },
     d = t,
     f = "<>",
-    _ = "</>",
-    p = /<[A-Za-z0-9\\._:-]+\s*\/>/,
+    p = "</>",
+    _ = /<[A-Za-z0-9\\._:-]+\s*\/>/,
     h = /<[A-Za-z0-9\\._:-]+/,
-    g = /\/[A-Za-z0-9\\._:-]+>|\/>/,
-    m = (e, t) => {
+    m = /\/[A-Za-z0-9\\._:-]+>|\/>/,
+    g = (e, t) => {
       let n;
       let r = e[0].length + e.index,
         i = e.input[r];
@@ -307,18 +307,18 @@ function c(e) {
       }, {
         variants: [{
           begin: f,
-          end: _
+          end: p
         }, {
-          match: p
+          match: _
         }, {
           begin: h,
-          "on:begin": m,
-          end: g
+          "on:begin": g,
+          end: m
         }],
         subLanguage: "xml",
         contains: [{
           begin: h,
-          end: g,
+          end: m,
           skip: !0,
           contains: ["self"]
         }]

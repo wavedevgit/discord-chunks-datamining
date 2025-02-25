@@ -15,11 +15,11 @@ var r = n(200651),
   u = n(481060),
   d = n(95398),
   f = n(247206),
-  _ = n(134432),
-  p = n(982330),
+  p = n(134432),
+  _ = n(982330),
   h = n(124347),
-  g = n(169525),
-  m = n(52824),
+  m = n(169525),
+  g = n(52824),
   E = n(585483),
   v = n(956664),
   b = n(254109),
@@ -44,7 +44,7 @@ function D(e) {
   } = e, {
     width: a,
     height: s
-  } = (0, p.Kc)("preloadMediaViewerLazyImage") ? (0, O.p)(i, {
+  } = (0, _.Kc)("preloadMediaViewerLazyImage") ? (0, O.p)(i, {
     width: n,
     height: r
   }) : (0, v.zp)(n, r);
@@ -76,7 +76,7 @@ function L(e) {
     value: s,
     children: (0, r.jsx)(d.Z, {
       type: d.Z.Types.ATTACHMENT,
-      reason: g.wk.EXPLICIT_CONTENT,
+      reason: m.wk.EXPLICIT_CONTENT,
       obscured: !0,
       isSingleMosaicItem: !0,
       onToggleObscurity: c,
@@ -95,11 +95,11 @@ function L(e) {
 function x(e, t) {
   if ("IMAGE" === e.type) {
     if (!(0, v._H)(e)) {
-      (0, _.po)(e.url);
+      (0, p.po)(e.url);
       return
     }
     D({
-      src: (0, m.q)({
+      src: (0, g.q)({
         proxyURL: e.proxyUrl,
         url: e.url
       }),
@@ -118,12 +118,12 @@ function M(e) {
     startIndex: o = 0,
     shouldRedactExplicitContent: s = !1,
     shouldHideMediaOptions: d = !1
-  } = e, [_, p] = i.useState(o), h = i.useRef(o), {
-    zoomed: g,
-    setZoomed: m
+  } = e, [p, _] = i.useState(o), h = i.useRef(o), {
+    zoomed: m,
+    setZoomed: g
   } = (0, y.Y)(), v = i.useCallback(e => {
-    p(e = w(e, t.length)), h.current = e, null == n || n(e), m(!1)
-  }, [n, t, m]);
+    _(e = w(e, t.length)), h.current = e, null == n || n(e), g(!1)
+  }, [n, t, g]);
   i.useEffect(() => {
     let e = l()(() => {
         v(h.current + 1)
@@ -134,8 +134,8 @@ function M(e) {
     return E.S.subscribe(A.CkL.MODAL_CAROUSEL_NEXT, e), E.S.subscribe(A.CkL.MODAL_CAROUSEL_PREV, t), () => {
       E.S.unsubscribe(A.CkL.MODAL_CAROUSEL_NEXT, e), E.S.unsubscribe(A.CkL.MODAL_CAROUSEL_PREV, t)
     }
-  }, [v, m]);
-  let D = t[_],
+  }, [v, g]);
+  let D = t[p],
     x = (0, f.KP)({
       type: f.lJ.GenericMedia,
       media: D
@@ -165,9 +165,9 @@ function M(e) {
       }) : void 0
     }), (0, r.jsx)(O.Z, {
       items: t,
-      currentIndex: _,
+      currentIndex: p,
       children: (e, t) => (0, r.jsx)(L, {
-        isObscured: !g && x,
+        isObscured: !m && x,
         src: D.url,
         children: n => (0, r.jsx)(N.Z, {
           media: D,
@@ -180,7 +180,7 @@ function M(e) {
     }), j && (0, r.jsx)(S.ZP, {
       children: e => (0, r.jsx)(I.Z, {
         items: t,
-        currentIndex: _,
+        currentIndex: p,
         onGalleryItemClick: v,
         className: e
       })

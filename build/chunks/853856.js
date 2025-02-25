@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r, i = n(442837),
   o = n(524437),
@@ -21,7 +21,7 @@ function u(e, t, n) {
 let d = {},
   f = !1;
 
-function _(e) {
+function p(e) {
   var t;
   return (0, l.kt)({
     id: e.id,
@@ -32,7 +32,7 @@ function _(e) {
   })
 }
 
-function p() {
+function _() {
   var e, t, n;
   f = null !== (n = null === (e = s.Z.settings.favorites) || void 0 === e ? void 0 : e.muted) && void 0 !== n && n, d = {};
   let r = null === (t = s.Z.settings.favorites) || void 0 === t ? void 0 : t.favoriteChannels;
@@ -50,7 +50,7 @@ function p() {
 }
 class h extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(s.Z), p(), this.syncWith([s.Z], p)
+    this.waitFor(s.Z), _(), this.syncWith([s.Z], _)
   }
   getFavoriteChannels() {
     return d
@@ -65,7 +65,7 @@ class h extends(r = i.ZP.Store) {
     if (null != e) return d[e]
   }
   getCategoryRecord(e) {
-    return e in d && d[e].type === o.Dd.CATEGORY ? _(d[e]) : null
+    return e in d && d[e].type === o.Dd.CATEGORY ? p(d[e]) : null
   }
   getNickname(e) {
     var t;
@@ -74,4 +74,4 @@ class h extends(r = i.ZP.Store) {
   }
 }
 u(h, "displayName", "FavoriteStore");
-let g = new h(a.Z, {})
+let m = new h(a.Z, {})

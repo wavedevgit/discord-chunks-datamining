@@ -3,7 +3,7 @@
 n.d(t, {
   E2: () => u,
   cn: () => d,
-  g9: () => _,
+  g9: () => p,
   q2: () => f
 });
 var r = n(751767),
@@ -74,7 +74,7 @@ function f(e, t) {
   }))
 }
 
-function _(e, t) {
+function p(e, t) {
   i.Z.captureMessage(e, c(s({}, t), {
     tags: c(s({}, null == t ? void 0 : t.tags), {
       app_context: "billing"

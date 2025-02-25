@@ -2,13 +2,13 @@
 "use strict";
 n.d(t, {
   O_: () => d,
-  Q3: () => m,
-  R6: () => p,
+  Q3: () => g,
+  R6: () => _,
   TH: () => E,
-  i9: () => _,
+  i9: () => p,
   k9: () => c,
   nm: () => v,
-  o9: () => g,
+  o9: () => m,
   yl: () => h
 });
 var r = n(442837),
@@ -21,7 +21,7 @@ let c = "desktop_refresh_enabled",
   u = "true" === i.K.get(c);
 
 function d(e) {
-  return a.Z.hasLoadedExperiments ? _(e) : u
+  return a.Z.hasLoadedExperiments ? p(e) : u
 }
 let f = (0, o.B)({
   id: "2024-05_desktop_visual_refresh",
@@ -97,7 +97,7 @@ let f = (0, o.B)({
   }]
 });
 
-function _(e) {
+function p(e) {
   let {
     enabled: t,
     disabledByDefault: n
@@ -107,8 +107,8 @@ function _(e) {
   return !!t && !r
 }
 
-function p(e) {
-  let t = m(e),
+function _(e) {
+  let t = g(e),
     {
       newChatInput: n
     } = f.useExperiment({
@@ -125,7 +125,7 @@ function h(e, t) {
   }, t)
 }
 
-function g(e) {
+function m(e) {
   return f.useExperiment({
     location: e
   }, {
@@ -133,7 +133,7 @@ function g(e) {
   }).enabled
 }
 
-function m(e) {
+function g(e) {
   let {
     enabled: t,
     disabledByDefault: n
@@ -146,7 +146,7 @@ function m(e) {
 }
 
 function E(e) {
-  let t = m(e),
+  let t = g(e),
     n = f.useExperiment({
       location: e
     }, {

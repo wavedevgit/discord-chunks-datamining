@@ -20,15 +20,15 @@ function u(e, t, n) {
 }
 let d = [],
   f = {},
-  _ = null,
-  p = null;
+  p = null,
+  _ = null;
 
 function h(e) {
   let t = new Set([...null != e ? e : []]);
-  return [...d].reduce((e, n) => t.has(n) ? e : g(n) || e, !1)
+  return [...d].reduce((e, n) => t.has(n) ? e : m(n) || e, !1)
 }
 
-function g(e) {
+function m(e) {
   let t = d.indexOf(e);
   if (t > -1) {
     let n = [...d];
@@ -37,7 +37,7 @@ function g(e) {
   return !1
 }
 
-function m(e) {
+function g(e) {
   return !(e === c.ME || d.includes(e)) && (d = [...d, e], !0)
 }
 
@@ -54,20 +54,20 @@ function v(e) {
     loadId: o
   } = e;
   if (n) {
-    switch (m(t), E(t, o), r) {
+    switch (g(t), E(t, o), r) {
       case c.vtS.MOBILE_GUILD_DISCOVERY:
-        p = {
+        _ = {
           type: c.vtS.MOBILE_GUILD_DISCOVERY
         };
         break;
       case c.vtS.DIRECTORY_ENTRY:
-        p = {
+        _ = {
           type: c.vtS.DIRECTORY_ENTRY,
           directoryChannelId: i
         };
         break;
       default:
-        p = null
+        _ = null
     }
     return !0
   }
@@ -78,7 +78,7 @@ function b(e) {
   let {
     guild: t
   } = e;
-  return !!(null != t.joined_at && d.includes(t.id)) && (g(t.id), _ = null, p = null, !0)
+  return !!(null != t.joined_at && d.includes(t.id)) && (m(t.id), p = null, _ = null, !0)
 }
 
 function y(e) {
@@ -88,21 +88,21 @@ function y(e) {
     joinedAt: r,
     user: i
   } = e, o = i.id === (null === (t = l.default.getCurrentUser()) || void 0 === t ? void 0 : t.id), a = null == r;
-  return !!(o && !a && d.includes(n)) && (g(n), _ = null, p = null, !0)
+  return !!(o && !a && d.includes(n)) && (m(n), p = null, _ = null, !0)
 }
 
 function O(e) {
   let {
     guild: t
   } = e;
-  return !!d.includes(t.id) && (g(t.id), _ = null, p = null, !0)
+  return !!d.includes(t.id) && (m(t.id), p = null, _ = null, !0)
 }
 
 function S(e) {
   let {
     ignoredGuildIds: t
   } = e, n = h(t);
-  return n && (_ = null, p = null), n
+  return n && (p = null, _ = null), n
 }
 
 function I(e) {
@@ -110,7 +110,7 @@ function I(e) {
     lurkingGuildId: t,
     lurkingSource: n
   } = e;
-  return m(t), p = n, !0
+  return g(t), _ = n, !0
 }
 
 function T() {
@@ -121,10 +121,10 @@ class N extends(r = i.ZP.Store) {
     this.waitFor(s.Z, l.default)
   }
   setHistorySnapshot(e) {
-    _ = e
+    p = e
   }
   getHistorySnapshot() {
-    return _
+    return p
   }
   lurkingGuildIds() {
     return d
@@ -139,7 +139,7 @@ class N extends(r = i.ZP.Store) {
     return !!(!n && r)
   }
   getLurkingSource() {
-    return p
+    return _
   }
   getLoadId(e) {
     return null != e ? f[e] : null

@@ -16,12 +16,12 @@ var r = n(738774),
   u = n(563114),
   d = n(956664),
   f = n(74538),
-  _ = n(981631),
-  p = n(185923);
+  p = n(981631),
+  _ = n(185923);
 let h = 2097152,
-  g = new Set([p.Z5.PREMIUM_LOCKED, p.Z5.ROLE_SUBSCRIPTION_LOCKED]),
-  m = new Set([...g, p.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, p.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE]),
-  E = new Set([p.Z5.DISALLOW_CUSTOM, p.Z5.DISALLOW_EXTERNAL, p.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, p.Z5.ONLY_GUILD_EMOJIS_ALLOWED]);
+  m = new Set([_.Z5.PREMIUM_LOCKED, _.Z5.ROLE_SUBSCRIPTION_LOCKED]),
+  g = new Set([...m, _.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, _.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE]),
+  E = new Set([_.Z5.DISALLOW_CUSTOM, _.Z5.DISALLOW_EXTERNAL, _.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, _.Z5.ONLY_GUILD_EMOJIS_ALLOWED]);
 
 function v(e) {
   return e.type === i.B.GUILD || null != e.guildId
@@ -40,16 +40,16 @@ function y(e) {
     forceIncludeExternalGuilds: u
   } = e;
   if (!v(t)) return null;
-  if (c === p.Hz.GUILD_PROFILE) return p.Z5.DISALLOW_CUSTOM;
+  if (c === _.Hz.GUILD_PROFILE) return _.Z5.DISALLOW_CUSTOM;
   let d = null != n && (0, a.zi)(n.type),
     h = null != n && (0, a.bw)(n.type),
-    g = b(t, i),
-    m = s.Z.can(_.Plq.USE_EXTERNAL_EMOJIS, n);
-  if (c === p.Hz.COMMUNITY_CONTENT) return g && null != t.guildId && t.available ? null : p.Z5.DISALLOW_EXTERNAL;
-  if (!(0, p.Gt)(c) && !b(t, i) && !u || (d || h) && !g && !m) return p.Z5.DISALLOW_EXTERNAL;
-  if (null != t.id && !t.available) return p.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE;
+    m = b(t, i),
+    g = s.Z.can(p.Plq.USE_EXTERNAL_EMOJIS, n);
+  if (c === _.Hz.COMMUNITY_CONTENT) return m && null != t.guildId && t.available ? null : _.Z5.DISALLOW_EXTERNAL;
+  if (!(0, _.Gt)(c) && !b(t, i) && !u || (d || h) && !m && !g) return _.Z5.DISALLOW_EXTERNAL;
+  if (null != t.id && !t.available) return _.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE;
   let E = l.default.getCurrentUser();
-  return f.ZP.canUseEmojisEverywhere(E) || g || c !== p.Hz.STATUS && t.managed ? (0, o.Fv)(t, null != i ? i : void 0) ? (0, r.Ol)(t.guildId) ? p.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE : p.Z5.ROLE_SUBSCRIPTION_LOCKED : !t.animated || f.ZP.canUseAnimatedEmojis(E) || (0, o.yH)(t) ? null : p.Z5.PREMIUM_LOCKED : p.Z5.PREMIUM_LOCKED
+  return f.ZP.canUseEmojisEverywhere(E) || m || c !== _.Hz.STATUS && t.managed ? (0, o.Fv)(t, null != i ? i : void 0) ? (0, r.Ol)(t.guildId) ? _.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE : _.Z5.ROLE_SUBSCRIPTION_LOCKED : !t.animated || f.ZP.canUseAnimatedEmojis(E) || (0, o.yH)(t) ? null : _.Z5.PREMIUM_LOCKED : _.Z5.PREMIUM_LOCKED
 }
 
 function O(e, t) {
@@ -72,7 +72,7 @@ function O(e, t) {
 }
 let S = {
   sanitizeEmojiName(e) {
-    for (e = e.replace(p.sW, "").slice(0, p.Yc); e.length < 2;) e += "_";
+    for (e = e.replace(_.sW, "").slice(0, _.Yc); e.length < 2;) e += "_";
     return e
   },
   filterUnsupportedEmojis: u.Z.filterUnsupportedEmojis,
@@ -98,7 +98,7 @@ let S = {
         a.push(e);
         continue
       }
-      E.has(t) || a.push(e), m.has(t) && (null != e.id && o.add(e.id), g.has(t) && (l || t !== p.Z5.PREMIUM_LOCKED || (l = !0), s++))
+      E.has(t) || a.push(e), g.has(t) && (null != e.id && o.add(e.id), m.has(t) && (l || t !== _.Z5.PREMIUM_LOCKED || (l = !0), s++))
     }
     return {
       emojisDisabled: o,
@@ -113,7 +113,7 @@ let S = {
   },
   isEmojiPremiumLocked(e) {
     let t = y(e);
-    return g.has(t)
+    return m.has(t)
   },
   isEmojiCategoryNitroLocked(e) {
     let {
@@ -129,7 +129,7 @@ let S = {
         intention: i,
         guildId: r
       });
-      t === p.Z5.PREMIUM_LOCKED ? (o = !0, a++) : t === p.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE && a++
+      t === _.Z5.PREMIUM_LOCKED ? (o = !0, a++) : t === _.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE && a++
     }
     return o && a === t.length
   },
@@ -138,10 +138,10 @@ let S = {
   },
   isEmojiDisabled(e) {
     let t = y(e);
-    return m.has(t)
+    return g.has(t)
   },
   isFileTooBig: e => e.size > h,
-  isDataTooBig: e => (0, d.QB)(e) > p.h_
+  isDataTooBig: e => (0, d.QB)(e) > _.h_
 };
 async function I(e) {
   return await u.Z.getEmojiColors(e)

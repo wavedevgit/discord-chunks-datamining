@@ -3,7 +3,7 @@
 n.d(t, {
   Qy: () => u,
   Uy: () => d,
-  ZP: () => _
+  ZP: () => p
 }), n(757143), n(301563);
 var r, i = n(200651),
   o = n(192379),
@@ -51,4 +51,4 @@ c(f, "Types", u), c(f, "Sizes", d), c(f, "defaultProps", {
   size: d.SMALL,
   flipped: !1
 });
-let _ = f
+let p = f

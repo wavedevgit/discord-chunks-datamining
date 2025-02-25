@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r, i = n(200651),
   o = n(192379),
@@ -30,7 +30,7 @@ let d = {
     [d.DOWN]: c.down,
     [d.LEFT]: c.left
   };
-class _ extends(r = o.PureComponent) {
+class p extends(r = o.PureComponent) {
   render() {
     let {
       direction: e,
@@ -45,5 +45,5 @@ class _ extends(r = o.PureComponent) {
     })
   }
 }
-u(_, "Directions", d);
-let p = _
+u(p, "Directions", d);
+let _ = p

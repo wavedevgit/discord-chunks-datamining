@@ -14,11 +14,11 @@ var i = n(442837),
   u = n(628952),
   d = n(225657),
   f = n(600164),
-  _ = n(109213),
-  p = n(927699),
+  p = n(109213),
+  _ = n(927699),
   h = n(987716),
-  g = n(311821),
-  m = n(251660),
+  m = n(311821),
+  g = n(251660),
   E = n(594174),
   v = n(855775),
   b = n(626135),
@@ -79,7 +79,7 @@ function x(e) {
       disabled: a,
       submitting: s,
       children: C.NW.string(C.t.XiOHRU)
-    }), i ? (0, r.jsx)(g.Z, {
+    }), i ? (0, r.jsx)(m.Z, {
       onClick: n
     }) : null]
   })
@@ -92,7 +92,7 @@ function M(e) {
   } = e, {
     customGiftMessage: s = "",
     setCustomGiftMessage: l,
-    giftRecipientError: g,
+    giftRecipientError: m,
     setGiftRecipientError: I,
     validatingGiftRecipient: D,
     giftRecipient: w,
@@ -108,12 +108,12 @@ function M(e) {
   } = (0, S.JL)(), Z = (0, i.e7)([E.default], () => E.default.getCurrentUser()), {
     enabled: H,
     giftRecommendationAlgorithm: W
-  } = _.G.useExperiment({
+  } = p.G.useExperiment({
     location: "CollectiblesPaymentModalGiftCustomizationStep"
   }, {
     autoTrackExposure: !1
-  }), Y = H && M === A.Wt.DM_CHANNEL, K = W === _.u.POPULAR ? C.NW.string(C.t.Kwgrrq) : C.NW.string(C.t.r1huYW), z = async (e, t) => {
-    k(!0), null != g && I(), await (0, c.B1)(e.id, t) || I(C.NW.string(C.t["4kgVqa"])), k(!1)
+  }), Y = H && M === A.Wt.DM_CHANNEL, K = W === p.u.POPULAR ? C.NW.string(C.t.Kwgrrq) : C.NW.string(C.t.r1huYW), z = async (e, t) => {
+    k(!0), null != m && I(), await (0, c.B1)(e.id, t) || I(C.NW.string(C.t["4kgVqa"])), k(!1)
   };
   (0, a.ZP)(() => {
     null != U && null != w && (b.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
@@ -142,7 +142,7 @@ function M(e) {
         className: R.recommendedGiftPreview
       }, e)
     },
-    X = () => (0, r.jsx)(p.Z, {
+    X = () => (0, r.jsx)(_.Z, {
       sectionTitle: C.NW.string(C.t.B3miEx),
       onTextChange: e => null == l ? void 0 : l(e),
       pendingText: s,
@@ -170,7 +170,7 @@ function M(e) {
     $ = () => {
       if (Y) return (0, r.jsxs)("div", {
         className: R.bodyColumnRight,
-        children: [(0, r.jsx)(m.s, {
+        children: [(0, r.jsx)(g.s, {
           giftRecipient: w
         }), (0, r.jsx)(h.q, {
           isShopGift: !0,
@@ -207,7 +207,7 @@ function M(e) {
         children: (0, r.jsx)(x, {
           onStepChange: t,
           onBackClick: n,
-          disabled: null != g || null == w || w.id === (null == Z ? void 0 : Z.id) || s.length > A.$n,
+          disabled: null != m || null == w || w.id === (null == Z ? void 0 : Z.id) || s.length > A.$n,
           loading: D
         })
       })

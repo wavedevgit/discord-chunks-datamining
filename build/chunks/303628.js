@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(570140),
   d = n(166459),
   f = n(911969),
-  _ = n(607070),
-  p = n(209613),
+  p = n(607070),
+  _ = n(209613),
   h = n(998698),
-  g = n(540059),
-  m = n(661824),
+  m = n(540059),
+  g = n(661824),
   E = n(703558),
   v = n(117530),
   b = n(459273),
@@ -89,7 +89,7 @@ function L(e) {
   let {
     channelId: t,
     type: n
-  } = e, o = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), N = (0, p.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([v.Z], () => v.Z.getUploads(t, n.drafts.type)), {
+  } = e, o = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), N = (0, _.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([v.Z], () => v.Z.getUploads(t, n.drafts.type)), {
     isApplicationCommand: D,
     commandOptions: L,
     commandOptionStates: x
@@ -149,7 +149,7 @@ function L(e) {
       }), k(i)
     }
   }, [t, M.length, n]);
-  let F = (0, g.Q3)("ChannelAttachmentArea");
+  let F = (0, m.Q3)("ChannelAttachmentArea");
   return !D && 0 === C.length || D && 0 === M.length ? null : (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(s.bG, {
       navigator: N,
@@ -176,7 +176,7 @@ function L(e) {
           }))
         }
       })
-    }), n.drafts.type === E.d.FirstThreadMessage || F ? null : (0, r.jsx)(m.Z, {})]
+    }), n.drafts.type === E.d.FirstThreadMessage || F ? null : (0, r.jsx)(g.Z, {})]
   })
 }
 

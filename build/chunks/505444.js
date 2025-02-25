@@ -142,7 +142,7 @@ if (a.canUseDOM) {
     d = !0
   }
 }
-var _ = {
+var p = {
   createDangerousStringForStyles: function(e) {},
   setValueForStyles: function(e, t, n) {
     var r = e.style;
@@ -161,4 +161,4 @@ var _ = {
       }
   }
 };
-e.exports = _
+e.exports = p

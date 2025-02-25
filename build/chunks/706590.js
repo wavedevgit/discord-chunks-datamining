@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _,
+  Z: () => p,
   z: () => f
 }), n(47120);
 var r = n(392711),
@@ -34,7 +34,7 @@ function f(e, t, n) {
   return !i().isEmpty(s)
 }
 
-function _() {
+function p() {
   let {
     canShow: e,
     isFavoritesPerk: t

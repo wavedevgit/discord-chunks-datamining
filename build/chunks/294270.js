@@ -14,7 +14,7 @@ var r = n(392711),
   d = n(37091),
   f = n(721264);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,11 +22,11 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let p = 15 * c.Z.Millis.SECOND,
+let _ = 15 * c.Z.Millis.SECOND,
   h = 15 * c.Z.Millis.SECOND,
-  g = 550,
-  m = ["\uD83C\uDDE9", "\uD83C\uDDF4", "\uD83C\uDDF9", "\uD83C\uDDE6"],
-  E = m.length,
+  m = 550,
+  g = ["\uD83C\uDDE9", "\uD83C\uDDF4", "\uD83C\uDDF9", "\uD83C\uDDE6"],
+  E = g.length,
   v = function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
     return "".concat(e, ":").concat(t, ":").concat(n)
@@ -45,7 +45,7 @@ function T(e) {
   } = e, o = l.default.getId(), a = d.Z.getEnabled();
   if (null != t) {
     if (a && (0, f.Z)(t.name)) return A(t.name, r, n);
-    r === o && (y = [...y, t.name].slice(-1 * E), i().isEqual(y, m) ? (S.play(), b.stop(), y = [], (0, u.ME)(!a)) : b.start(p, () => y = []))
+    r === o && (y = [...y, t.name].slice(-1 * E), i().isEqual(y, g) ? (S.play(), b.stop(), y = [], (0, u.ME)(!a)) : b.start(_, () => y = []))
   }
 }
 
@@ -55,7 +55,7 @@ function N(e) {
     waitingUserId: n,
     channelId: r
   } = e, i = v("".concat(t).concat(n), r, !0);
-  O[i] = new o.sW(g, () => {
+  O[i] = new o.sW(m, () => {
     delete O[i], (0, u.hu)(t, n, r)
   }), O[i].delay()
 }
@@ -82,7 +82,7 @@ class C extends a.Z {
     Object.values(O).forEach(e => e.cancel()), O = {}
   }
   constructor(...e) {
-    super(...e), _(this, "actions", {
+    super(...e), p(this, "actions", {
       VOICE_CHANNEL_EFFECT_SEND: T,
       HIGH_FIVE_COMPLETE: N
     })

@@ -18,20 +18,20 @@ function l(e) {
     showTryItOut: u = !1,
     animateOnHover: d = !1,
     avatarDecorationOverride: f,
-    avatarOverride: _
+    avatarOverride: p
   } = e, {
-    avatarSrc: p,
+    avatarSrc: _,
     isAvatarAnimating: h,
-    eventHandlers: g
+    eventHandlers: m
   } = (0, s.Z)({
     user: t,
     guildId: n,
     size: (0, i.pxk)(l),
     showPending: c,
     animateOnHover: d,
-    avatarOverride: _
+    avatarOverride: p
   }), {
-    avatarPlaceholderSrc: m,
+    avatarPlaceholderSrc: g,
     avatarDecorationSrc: E,
     eventHandlers: v
   } = (0, a.Z)({
@@ -44,17 +44,17 @@ function l(e) {
     showTryItOut: u
   });
   return {
-    avatarPlaceholderSrc: m,
+    avatarPlaceholderSrc: g,
     avatarDecorationSrc: E,
-    avatarSrc: p,
+    avatarSrc: _,
     isAnimating: h,
     eventHandlers: {
       onMouseEnter: r.useCallback(() => {
-        g.onMouseEnter(), v.onMouseEnter()
-      }, [g, v]),
+        m.onMouseEnter(), v.onMouseEnter()
+      }, [m, v]),
       onMouseLeave: r.useCallback(() => {
-        g.onMouseLeave(), v.onMouseLeave()
-      }, [g, v])
+        m.onMouseLeave(), v.onMouseLeave()
+      }, [m, v])
     }
   }
 }

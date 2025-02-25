@@ -59,20 +59,20 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     feedbackType: t
   } = e;
   delete d[t]
 }
-class p extends(r = i.ZP.Store) {
+class _ extends(r = i.ZP.Store) {
   initialize() {}
   getFeedbackConfig(e) {
     return d[e]
   }
 }
-s(p, "displayName", "FeedbackOverrideStore"), s(p, "persistKey", "feedbackOverrides");
-let h = new p(o.Z, {
+s(_, "displayName", "FeedbackOverrideStore"), s(_, "persistKey", "feedbackOverrides");
+let h = new _(o.Z, {
   FEEDBACK_OVERRIDE_SET: f,
-  FEEDBACK_OVERRIDE_CLEAR: _
+  FEEDBACK_OVERRIDE_CLEAR: p
 })

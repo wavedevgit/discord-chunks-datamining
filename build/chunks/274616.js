@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _,
+  Z: () => p,
   o: () => f
 }), n(47120);
 var r = n(392711),
@@ -39,7 +39,7 @@ async function f() {
     }), []
   }
 }
-async function _(e) {
+async function p(e) {
   try {
     let t = await o.tn.get({
         url: u.ANM.OWNED_APPLICATION_BRANCHES(e),

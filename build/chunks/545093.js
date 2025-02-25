@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -51,7 +51,7 @@ function d(e, t) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,7 +59,7 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -67,7 +67,7 @@ function _(e, t) {
   return i
 }
 
-function p(e) {
+function _(e) {
   let {
     onClick: t,
     icon: n,
@@ -85,8 +85,8 @@ function p(e) {
     children: e => {
       var {
         onClick: n
-      } = e, _ = f(e, ["onClick"]);
-      return (0, r.jsx)(a.P3F, d(c({}, _), {
+      } = e, p = f(e, ["onClick"]);
+      return (0, r.jsx)(a.P3F, d(c({}, p), {
         "aria-label": i,
         onClick: e => {
           null == n || n(), t(e)

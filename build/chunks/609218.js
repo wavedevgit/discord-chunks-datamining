@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(37234),
   d = n(174609),
   f = n(703656),
-  _ = n(626135),
-  p = n(74538),
+  p = n(626135),
+  _ = n(74538),
   h = n(357355),
-  g = n(639119),
-  m = n(197115),
+  m = n(639119),
+  g = n(197115),
   E = n(302945),
   v = n(474936),
   b = n(981631),
@@ -44,20 +44,20 @@ function I(e) {
   i.useEffect(() => {
     !D && I && c.MH()
   }, [D, I]), i.useEffect(() => {
-    _.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, N), null == C || C()
+    p.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, N), null == C || C()
   }, [C, N]);
   let w = P.length > 1 && I,
     L = () => 2 === t ? O.hasTabParentContainer : 1 === t ? O.hasParentContainer : O.noParentContainer,
     x = () => {
-      _.default.track(b.rMx.PREMIUM_PROMOTION_OPENED, {
+      p.default.track(b.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: T,
         location_object: b.qAy.NAVIGATION_LINK
       }), null == R || R(), (0, d.Z)(), A(), (0, u.xf)(), (0, f.uL)(b.Z5c.APPLICATION_STORE)
     },
-    M = (0, g.N)(),
+    M = (0, m.N)(),
     j = i.useCallback(() => {
       var e;
-      return null !== (e = (0, p.fr)(M)) && void 0 !== e ? e : y.NW.string(y.t.pj0XBA)
+      return null !== (e = (0, _.fr)(M)) && void 0 !== e ? e : y.NW.string(y.t.pj0XBA)
     }, [M]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.YMn, {
@@ -100,7 +100,7 @@ function I(e) {
           look: l.zxk.Looks.LINK,
           onClick: x,
           children: y.NW.string(y.t.ZnqyZ2)
-        }), (0, r.jsx)(m.Z, {
+        }), (0, r.jsx)(g.Z, {
           showGradient: !0,
           premiumModalAnalyticsLocation: {
             section: T,

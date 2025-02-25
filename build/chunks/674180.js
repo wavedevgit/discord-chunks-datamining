@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  eC: () => p,
-  gX: () => _,
+  eC: () => _,
+  gX: () => p,
   uP: () => f
 });
 var r = n(192379),
@@ -41,7 +41,7 @@ let d = e => {
       restrictionsLoading: o
     }
   },
-  _ = e => {
+  p = e => {
     var t;
     let n = (0, i.e7)([l.Z], () => l.Z.getGuild(e), [e]),
       {
@@ -56,7 +56,7 @@ let d = e => {
       restrictionsLoading: o
     }
   },
-  p = e => {
+  _ = e => {
     let {
       restrictions: t,
       restrictionsLoading: n

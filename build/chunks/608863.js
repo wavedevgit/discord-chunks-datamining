@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  r: () => _
+  r: () => p
 });
 var r = n(200651);
 n(192379);
@@ -65,7 +65,7 @@ function f(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => {
+let p = e => {
   var {
     open: t = !1,
     className: n

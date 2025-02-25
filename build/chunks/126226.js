@@ -15,11 +15,11 @@ var i = n(693789),
   u = n(10718),
   d = n(367790),
   f = n(998698),
-  _ = n(895924),
-  p = n(581364),
+  p = n(895924),
+  _ = n(581364),
   h = n(826298),
-  g = n(588468),
-  m = n(496675),
+  m = n(588468),
+  g = n(496675),
   E = n(226951),
   v = n(877565),
   b = n(590921),
@@ -69,14 +69,14 @@ function R(e) {
 }
 let P = {
   sentinel: y.GI,
-  stores: [f.Z, c.ZP, m.Z],
+  stores: [f.Z, c.ZP, g.Z],
   matches: (e, t, n, r, i) => i.commands !== b.L8.DISABLED && null == f.Z.getActiveCommand(e.id) && (r || i.commands !== b.L8.OLD_BUILT_INS),
   queryResults(e, t, n, r, i) {
     if (0 === n.length && r.commands !== b.L8.OLD_BUILT_INS) return A;
     if (r.commands === b.L8.OLD_BUILT_INS) {
       let r = (0, l.Kh)([a.yU.CHAT], !1, !1),
         i = RegExp("^".concat(E.Z.escape(n)), "i"),
-        o = (0, p.Dd)(r, i, {
+        o = (0, _.Dd)(r, i, {
           channel: e,
           guild: t
         }, b.AQ),
@@ -143,7 +143,7 @@ let P = {
       titleWithQuery: S.t.HFRoZW,
       titleWithoutQuery: S.NW.string(S.t["0hKkS0"]),
       getQuery: e => "".concat(y.GI).concat(e),
-      Component: d ? g.ZP.Command : g.ZP.NewCommand,
+      Component: d ? m.ZP.Command : m.ZP.NewCommand,
       getProps: e => {
         let {
           command: t,
@@ -185,11 +185,11 @@ let P = {
       command: c,
       section: u
     } = t[n];
-    if (c.inputType === _.iw.PLACEHOLDER) return null;
+    if (c.inputType === p.iw.PLACEHOLDER) return null;
     if (i.commands === b.L8.OLD_BUILT_INS) i.insertText(R(c));
     else {
       let e = a;
-      null == e && (e = l ? _.Vh.QUERY : _.Vh.DISCOVERY), s.Po({
+      null == e && (e = l ? p.Vh.QUERY : p.Vh.DISCOVERY), s.Po({
         channelId: o.id,
         command: c,
         section: null != u ? u : null,

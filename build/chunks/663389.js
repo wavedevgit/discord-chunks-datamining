@@ -32,11 +32,11 @@ function d(e) {
   return e
 }
 let f = c.QZA.CLOSED,
-  _ = null,
   p = null,
+  _ = null,
   h = {},
-  g = {},
   m = {},
+  g = {},
   E = null,
   v = null,
   b = !1,
@@ -55,7 +55,7 @@ function C(e) {
   var t, n, r, i, o, a;
   let s = l.default.getCurrentUser();
   if (null == s) return R();
-  p = null !== (t = e.section) && void 0 !== t ? t : p, T = null !== (n = e.section) && void 0 !== n ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (g[p] = e.scrollPosition), y = !!e.openWithoutBackstack, f = c.QZA.OPEN, m = {}, v = d({}, E = {
+  _ = null !== (t = e.section) && void 0 !== t ? t : _, T = null !== (n = e.section) && void 0 !== n ? n : _, null != e.subsection && null != _ && (h[_] = e.subsection), null != e.scrollPosition && null != _ && (m[_] = e.scrollPosition), y = !!e.openWithoutBackstack, f = c.QZA.OPEN, g = {}, v = d({}, E = {
     [c.oAB.ACCOUNT]: {
       userId: s.id,
       username: s.username,
@@ -70,26 +70,26 @@ function C(e) {
 }
 
 function R() {
-  f = c.QZA.CLOSED, b = !1, E = null, T = null, v = null, _ = null, p = null, h = {}, g = {}, O = null, S = null, I = [], N = null
+  f = c.QZA.CLOSED, b = !1, E = null, T = null, v = null, p = null, _ = null, h = {}, m = {}, O = null, S = null, I = [], N = null
 }
 
 function P(e) {
   var t;
-  _ = p, p = e.section, S = null, I = null !== (t = e.analyticsLocations) && void 0 !== t ? t : [], null != e.subsection && (h[p] = e.subsection)
+  p = _, _ = e.section, S = null, I = null !== (t = e.analyticsLocations) && void 0 !== t ? t : [], null != e.subsection && (h[_] = e.subsection)
 }
 
 function D(e) {
   let {
     forSection: t
   } = e;
-  null != t ? delete h[t] : null != p && delete h[p]
+  null != t ? delete h[t] : null != _ && delete h[_]
 }
 
 function w(e) {
   let {
     forSection: t
   } = e;
-  null != t ? delete g[t] : null != p && delete g[p]
+  null != t ? delete m[t] : null != _ && delete m[_]
 }
 
 function L(e) {
@@ -122,13 +122,13 @@ function M() {
 }
 
 function j() {
-  f = c.QZA.OPEN, m = {}
+  f = c.QZA.OPEN, g = {}
 }
 
 function k(e) {
   var t;
   if (f !== c.QZA.SUBMITTING) return !1;
-  f = c.QZA.OPEN, p = c.oAB.ACCOUNT, m = null !== (t = e.errors) && void 0 !== t ? t : {}
+  f = c.QZA.OPEN, _ = c.oAB.ACCOUNT, g = null !== (t = e.errors) && void 0 !== t ? t : {}
 }
 class U extends(r = a.ZP.Store) {
   initialize() {
@@ -141,16 +141,16 @@ class U extends(r = a.ZP.Store) {
     return b
   }
   getPreviousSection() {
-    return _
-  }
-  getSection() {
     return p
   }
+  getSection() {
+    return _
+  }
   getSubsection() {
-    return null != p ? h[p] : null
+    return null != _ ? h[_] : null
   }
   getScrollPosition() {
-    return null != p ? g[p] : null
+    return null != _ ? m[_] : null
   }
   shouldOpenWithoutBackstack() {
     return y
@@ -158,11 +158,11 @@ class U extends(r = a.ZP.Store) {
   getProps() {
     return {
       submitting: f === c.QZA.SUBMITTING,
-      section: p,
-      subsection: null != p ? h[p] : null,
-      scrollPosition: null != p ? g[p] : null,
+      section: _,
+      subsection: null != _ ? h[_] : null,
+      scrollPosition: null != _ ? m[_] : null,
       settings: v,
-      errors: m,
+      errors: g,
       hasChanges: this.hasChanges(),
       openWithoutBackstack: y,
       analyticsLocation: S,

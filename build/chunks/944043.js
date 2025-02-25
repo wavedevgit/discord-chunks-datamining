@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g,
+  Z: () => m,
   t: () => h
 });
 var r = n(200651);
@@ -15,38 +15,38 @@ var i = n(120356),
   u = n(699516),
   d = n(502762),
   f = n(981631),
-  _ = n(388032),
-  p = n(526135),
+  p = n(388032),
+  _ = n(526135),
   h = function(e) {
     return e[e.PANEL = 0] = "PANEL", e[e.MODAL = 1] = "MODAL", e[e.POPOUT = 2] = "POPOUT", e
   }({});
 
-function g(e) {
+function m(e) {
   let {
     user: t,
     source: n
   } = e, {
     isPendingIncoming: i,
     isBlocked: h,
-    isIgnored: g
+    isIgnored: m
   } = (0, s.cj)([u.Z], () => ({
     isPendingIncoming: u.Z.getRelationshipType(t.id) === f.OGo.PENDING_INCOMING,
     isBlocked: u.Z.isBlocked(t.id),
     isIgnored: u.Z.isIgnored(t.id)
   }));
-  return h || g && !i ? (0, r.jsxs)(d.Z.Overlay, {
-    className: o()(p.container, {
-      [p.panel]: 0 === n
+  return h || m && !i ? (0, r.jsxs)(d.Z.Overlay, {
+    className: o()(_.container, {
+      [_.panel]: 0 === n
     }),
     children: [h && (0, r.jsx)(a.xv, {
       variant: "text-sm/semibold",
       color: "header-secondary",
-      children: _.NW.string(_.t["oC/fU1"])
-    }), g && (0, r.jsxs)(r.Fragment, {
+      children: p.NW.string(p.t["oC/fU1"])
+    }), m && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.xv, {
         variant: "text-sm/semibold",
         color: "header-secondary",
-        children: _.NW.string(_.t.HXz5Ag)
+        children: p.NW.string(p.t.HXz5Ag)
       }), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.xv, {
           variant: "text-sm/semibold",
@@ -55,7 +55,7 @@ function g(e) {
         }), (0, r.jsx)(a.xv, {
           variant: "text-sm/semibold",
           color: "header-secondary",
-          children: _.NW.format(_.t.PrtAq6, {
+          children: p.NW.format(p.t.PrtAq6, {
             unignoreHook: (e, n) => (0, r.jsx)(l.eee, {
               onClick: () => c.Z.unignoreUser(t.id, "UserProfileRemediatedNotice"),
               children: e

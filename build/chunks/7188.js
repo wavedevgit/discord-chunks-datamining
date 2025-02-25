@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(76021),
   d = n(592125),
   f = n(594174),
-  _ = n(834348),
-  p = n(74538),
+  p = n(834348),
+  _ = n(74538),
   h = n(618158),
-  g = n(871499),
-  m = n(981631),
+  m = n(871499),
+  g = n(981631),
   E = n(354459),
   v = n(474936),
   b = n(388032),
@@ -100,7 +100,7 @@ function R(e) {
       className: t,
       mask: l.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
       children: (0, r.jsx)(C, {})
-    }), (0, r.jsx)(_.Z, {
+    }), (0, r.jsx)(p.Z, {
       className: y.badgeUpgrade
     })]
   })
@@ -111,15 +111,15 @@ function P(e) {
     hideBadges: t = !1,
     stream: n
   } = e, l = N(e, ["hideBadges", "stream"]);
-  let _ = (0, o.e7)([f.default], () => p.ZP.isPremium(f.default.getCurrentUser(), v.p9.TIER_1)),
+  let p = (0, o.e7)([f.default], () => _.ZP.isPremium(f.default.getCurrentUser(), v.p9.TIER_1)),
     y = (0, o.e7)([d.Z], () => d.Z.getChannel(null == n ? void 0 : n.channelId)),
     O = i.useMemo(() => null != n ? [n] : [], [n]),
     I = i.useCallback(() => {
-      null != y && (0, u.Z)(y.getGuildId(), y.id, m.jXE.STREAM_SETTINGS)
+      null != y && (0, u.Z)(y.getGuildId(), y.id, g.jXE.STREAM_SETTINGS)
     }, [y]);
   if (null == n || null == y) return null;
   let A = C;
-  return t || _ || (A = R), (0, r.jsx)(a.yRy, {
+  return t || p || (A = R), (0, r.jsx)(a.yRy, {
     position: "top",
     renderPopout: e => {
       let {
@@ -140,7 +140,7 @@ function P(e) {
       })
     },
     animation: a.yRy.Animation.FADE,
-    children: e => (0, r.jsx)(g.Z, S(T(S({}, e), {
+    children: e => (0, r.jsx)(m.Z, S(T(S({}, e), {
       label: b.NW.string(b.t.tmiYpK),
       iconComponent: A
     }), l))

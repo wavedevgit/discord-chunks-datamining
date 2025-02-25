@@ -54,28 +54,28 @@ var d = function(e) {
   f = function(e) {
     return e[e.UPVOTE = 0] = "UPVOTE", e[e.DOWNVOTE = 1] = "DOWNVOTE", e
   }({});
-let _ = [],
-  p = {},
+let p = [],
+  _ = {},
   h = new Set;
 
-function g(e) {
+function m(e) {
   return 2 === e.type || 3 === e.type
 }
 
-function m(e) {
+function g(e) {
   let {
     safetyWarnings: t
   } = e;
-  null != t && (p[e.id] = t, t.some(e => g(e) && null != e.dismiss_timestamp && !N(e.dismiss_timestamp)) ? h.add(e.id) : h.delete(e.id)), null == t && (null != p[e.id] && delete p[e.id], h.delete(e.id))
+  null != t && (_[e.id] = t, t.some(e => m(e) && null != e.dismiss_timestamp && !N(e.dismiss_timestamp)) ? h.add(e.id) : h.delete(e.id)), null == t && (null != _[e.id] && delete _[e.id], h.delete(e.id))
 }
 
 function E(e) {
-  m(e.channel)
+  g(e.channel)
 }
 
 function v(e) {
   e.channels.forEach(e => {
-    m(e)
+    g(e)
   })
 }
 
@@ -83,7 +83,7 @@ function b(e) {
   let {
     channel: t
   } = e;
-  null != p[t.id] && delete p[t.id], h.delete(t.id)
+  null != _[t.id] && delete _[t.id], h.delete(t.id)
 }
 
 function y(e) {
@@ -91,8 +91,8 @@ function y(e) {
     channelId: t,
     warningId: n,
     feedbackType: r
-  } = e, i = p[t];
-  null != i && (p[t] = i.map(e => e.id === n ? c(s({}, e), {
+  } = e, i = _[t];
+  null != i && (_[t] = i.map(e => e.id === n ? c(s({}, e), {
     feedback_type: r
   }) : e))
 }
@@ -100,8 +100,8 @@ function y(e) {
 function O(e) {
   let {
     channelId: t
-  } = e, n = p[t];
-  h.delete(t), null != n && (p[t] = n.map(e => c(s({}, e), {
+  } = e, n = _[t];
+  h.delete(t), null != n && (_[t] = n.map(e => c(s({}, e), {
     dismiss_timestamp: void 0
   })))
 }
@@ -110,10 +110,10 @@ function S(e) {
   let {
     channelId: t,
     warningIds: n
-  } = e, r = p[t];
+  } = e, r = _[t];
   if (null == r) return;
   let i = new Date().toISOString();
-  p[t] = r.map(e => n.includes(e.id) ? c(s({}, e), {
+  _[t] = r.map(e => n.includes(e.id) ? c(s({}, e), {
     dismiss_timestamp: i
   }) : e)
 }
@@ -126,8 +126,8 @@ function I(e) {
 }
 
 function T() {
-  p = {}, Object.values(o.Z.getMutablePrivateChannels()).forEach(e => {
-    m(e)
+  _ = {}, Object.values(o.Z.getMutablePrivateChannels()).forEach(e => {
+    g(e)
   })
 }
 
@@ -140,11 +140,11 @@ class A extends r.ZP.Store {
   }
   getChannelSafetyWarning(e, t) {
     var n;
-    return null === (n = p[e]) || void 0 === n ? void 0 : n.find(e => e.id === t)
+    return null === (n = _[e]) || void 0 === n ? void 0 : n.find(e => e.id === t)
   }
   getChannelSafetyWarnings(e) {
     var t;
-    return null !== (t = p[e]) && void 0 !== t ? t : _
+    return null !== (t = _[e]) && void 0 !== t ? t : p
   }
   hasShownInitialTooltipForChannel(e) {
     return h.has(e)

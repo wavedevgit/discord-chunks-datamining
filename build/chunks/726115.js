@@ -3,12 +3,12 @@
 n.d(t, {
   Ew: () => b,
   Iv: () => O,
-  Mf: () => g,
+  Mf: () => m,
   PM: () => T,
   QW: () => E,
   Uv: () => y,
   Xp: () => S,
-  a$: () => m,
+  a$: () => g,
   lg: () => v,
   vL: () => I,
   vb: () => h
@@ -45,7 +45,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,8 +56,8 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -81,7 +81,7 @@ function h(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   switch (e) {
     case l.vf.FEATURED:
       return u.NW.string(u.t.OlDfzM);
@@ -102,7 +102,7 @@ function g(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   switch (e) {
     case l.vf.FEATURED:
       return u.NW.string(u.t.SdMhrq);
@@ -217,7 +217,7 @@ async function I(e) {
     categoryId: i,
     analyticsLocation: a,
     options: l
-  } = e, u = p(f({}, l), {
+  } = e, u = _(f({}, l), {
     loadId: t
   });
   await s.Ub(n, a, u), o.default.track(c.rMx.GUILD_DISCOVERY_GUILD_SELECTED, {

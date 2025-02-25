@@ -18,9 +18,9 @@ e.exports = function(e, t) {
     var s = c(arguments.length, 1) > n,
       d = o(r) ? r : u(r),
       f = s ? l(arguments, n) : [],
-      _ = s ? function() {
+      p = s ? function() {
         i(d, this, f)
       } : d;
-    return t ? e(_, a) : e(_)
+    return t ? e(p, a) : e(p)
   } : e
 }

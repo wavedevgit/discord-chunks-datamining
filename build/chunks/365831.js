@@ -81,7 +81,7 @@ function I(e) {
     activeVoice: n
   } = (0, _.o)(), a = (0, u.Z)(n), I = (0, g.z)(n), {
     toggleLoopback: S,
-    isLoopbackEnabled: T
+    isLoopbackEnabled: P
   } = function() {
     let {
       activeVoice: e
@@ -94,7 +94,7 @@ function I(e) {
       isLoopbackEnabled: t,
       toggleLoopback: n
     }
-  }(), P = T ? c.Iy5 : c.X_q, A = i.useCallback(() => (0, h.v6)(null), []), w = (0, c.dQu)(c.TVs.colors.BACKGROUND_SECONDARY).hex(), Z = (0, c.dQu)(c.TVs.colors.WHITE).hex(), k = (0, s.e7)([f.Z], () => f.Z.isConnected()), R = i.useRef(0), L = n !== a ? R.current + 1 : R.current;
+  }(), T = P ? c.Iy5 : c.X_q, A = i.useCallback(() => (0, h.v6)(null), []), w = (0, c.dQu)(c.TVs.colors.BACKGROUND_SECONDARY).hex(), Z = (0, c.dQu)(c.TVs.colors.WHITE).hex(), k = (0, s.e7)([f.Z], () => f.Z.isConnected()), R = i.useRef(0), L = n !== a ? R.current + 1 : R.current;
   i.useEffect(() => {
     R.current = L
   }, [L]);
@@ -197,7 +197,7 @@ function I(e) {
       },
       config: N
     }, "respect-motion-settings"),
-    z = v.NW.string(T ? v.t.esVyo6 : v.t.UQqFCA);
+    z = v.NW.string(P ? v.t.esVyo6 : v.t.UQqFCA);
   return (0, r.jsxs)(l.animated.div, {
     className: y.voiceFilterHero,
     "aria-hidden": M,
@@ -248,8 +248,8 @@ function I(e) {
             }), (0, r.jsx)(c.Text, {
               variant: "text-xs/normal",
               color: "header-muted",
-              children: v.NW.string(T ? v.t["0NnojY"] : v.t.raWNzM)
-            }), T && !k && (0, r.jsx)(c.Text, {
+              children: v.NW.string(P ? v.t["0NnojY"] : v.t.raWNzM)
+            }), P && !k && (0, r.jsx)(c.Text, {
               variant: "text-xs/normal",
               color: "header-muted",
               children: v.NW.string(v.t.ZK9aMD)
@@ -269,7 +269,7 @@ function I(e) {
               onClick: () => {
                 null == t || t(), S()
               },
-              children: (0, r.jsx)(P, {
+              children: (0, r.jsx)(T, {
                 size: "custom",
                 width: 20,
                 height: 20,

@@ -15,21 +15,21 @@ var r = n(512722),
   u = n(634041),
   d = n(647177),
   f = n(63985),
-  _ = n(638457),
-  p = n(678916),
+  p = n(638457),
+  _ = n(678916),
   h = n(981631);
 
-function g(e) {
+function m(e) {
   return new Promise((t, n) => {
     let r = new Image;
     r.crossOrigin = "anonymous", r.onload = () => {
       let e = document.createElement("canvas");
-      e.width = p.HE.width, e.height = p.HE.height;
+      e.width = _.HE.width, e.height = _.HE.height;
       let n = e.getContext("2d");
       i()(null != n, "Canvas context is missing");
       let o = r.height / r.width,
-        a = p.HE.height,
-        s = p.HE.height / o,
+        a = _.HE.height,
+        s = _.HE.height / o,
         l = (e.width - s) / 2,
         c = (e.height - a) / 2;
       n.drawImage(r, l, c, s, a);
@@ -43,7 +43,7 @@ function g(e) {
     }, r.onerror = e => n(e), r.src = e
   })
 }
-async function m(e) {
+async function g(e) {
   let t = await fetch(e),
     n = await t.blob();
   return new Uint8ClampedArray(await n.arrayBuffer())
@@ -62,7 +62,7 @@ function E(e, t, n, r, i) {
 async function v(e, t, n) {
   let r, i = !1;
   if (null == n) return E(e, t, o.zZ.NONE);
-  if (n === p.f7) return E(e, t, o.zZ.BACKGROUND_BLUR);
+  if (n === _.f7) return E(e, t, o.zZ.BACKGROUND_BLUR);
   if ("string" == typeof n || "number" == typeof n) {
     var a;
     let e = (0, f.Z)()[n];
@@ -73,12 +73,12 @@ async function v(e, t, n) {
       userId: n.user_id,
       assetId: n.id,
       assetHash: e,
-      size: p.HE.width
+      size: _.HE.width
     })
   }
   if (null != r) try {
-    let n = i ? void 0 : await g(r),
-      a = i ? await m(r) : void 0;
+    let n = i ? void 0 : await m(r),
+      a = i ? await g(r) : void 0;
     E(e, t, o.zZ.BACKGROUND_REPLACEMENT, n, a)
   } catch (e) {
     (0, c.Nm)()
@@ -108,7 +108,7 @@ function O() {
   let e = a.default.getCurrentUser();
   if (null == e) return;
   let t = (0, l.P)(e);
-  (0, _.Z)() && !u.Z.hasBeenApplied && null != t && b(t, {
+  (0, p.Z)() && !u.Z.hasBeenApplied && null != t && b(t, {
     track: !1
   }).catch(h.dG4)
 }

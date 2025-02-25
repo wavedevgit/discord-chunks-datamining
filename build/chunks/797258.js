@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r, i = n(392711),
   o = n.n(i),
@@ -25,7 +25,7 @@ function f(e) {
     d[e.sessionId] = e
   })
 }
-class _ extends(r = a.ZP.Store) {
+class p extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(l.default)
   }
@@ -53,8 +53,8 @@ class _ extends(r = a.ZP.Store) {
     })
   }
 }
-c(_, "displayName", "SessionsStore");
-let p = new _(s.Z, {
+c(p, "displayName", "SessionsStore");
+let _ = new p(s.Z, {
   CONNECTION_OPEN: f,
   SESSIONS_REPLACE: f
 })

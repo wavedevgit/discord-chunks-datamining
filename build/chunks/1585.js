@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ps: () => _,
+  ps: () => p,
   y9: () => f
 });
 var r = n(200651);
@@ -54,14 +54,14 @@ function d(e, t) {
 function f(e) {
   return "number" != typeof e ? (0, i.pxk)(e) * a.hs : e * a.hs
 }
-let _ = e => {
+let p = e => {
   let {
     analyticsLocations: t,
     initialSelectedDecoration: a,
     initialSelectedDecorationId: l,
     isTryItOutFlow: u,
     guild: f,
-    onClose: _
+    onClose: p
   } = e;
   (0, i.ZDy)(async () => {
     (0, o.s1)().location.pathname === s.Z5c.COLLECTIBLES_SHOP_FULLSCREEN && (0, o.uL)(s.Z5c.APP);
@@ -70,7 +70,7 @@ let _ = e => {
     } = await Promise.resolve().then(n.bind(n, 235400));
     return n => (0, r.jsx)(e, d(c({}, n), {
       onCloseModal: n.onClose,
-      onClose: _,
+      onClose: p,
       analyticsLocations: t,
       initialSelectedDecoration: a,
       initialSelectedDecorationId: l,

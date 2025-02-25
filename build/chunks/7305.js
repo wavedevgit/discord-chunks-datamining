@@ -29,8 +29,8 @@ var l = n(200651),
   I = n(183813),
   O = n(614223),
   v = n(174827),
-  P = n(846464),
-  b = n(184160),
+  b = n(846464),
+  P = n(184160),
   T = n(48175),
   M = n(981631),
   Z = n(474936),
@@ -76,8 +76,8 @@ function R(e) {
     postSuccessGuild: I,
     followupSKUInfo: O,
     renderHeader: v,
-    applicationId: P,
-    guildId: b,
+    applicationId: b,
+    guildId: P,
     referralTrialOfferId: T,
     skuId: w,
     returnRef: k,
@@ -119,8 +119,8 @@ function R(e) {
     postSuccessGuild: I,
     followupSKUInfo: O,
     renderHeader: v,
-    applicationId: P,
-    guildId: b,
+    applicationId: b,
+    guildId: P,
     referralTrialOfferId: T,
     skuId: w,
     shakeWhilePurchasing: !0,
@@ -189,7 +189,7 @@ let B = [{
   renderStep: e => (0, l.jsx)(j.I, U({}, e))
 }, {
   key: h.h8.SKU_SELECT,
-  renderStep: e => (0, l.jsx)(P.q, U({}, e)),
+  renderStep: e => (0, l.jsx)(b.q, U({}, e)),
   options: {
     renderHeader: !1,
     hideSlider: !0,
@@ -197,7 +197,7 @@ let B = [{
   }
 }, {
   key: h.h8.WHAT_YOU_LOSE,
-  renderStep: e => (0, l.jsx)(b.x, U({}, e)),
+  renderStep: e => (0, l.jsx)(P.x, U({}, e)),
   options: {
     renderHeader: !1,
     hideSlider: !0
@@ -256,11 +256,12 @@ function F(e) {
       giftStyle: h,
       isGift: j,
       loadId: m,
-      referralCode: L,
-      repeatPurchase: g,
-      subscriptionTier: E
+      planSelectBanner: L,
+      referralCode: g,
+      repeatPurchase: E,
+      subscriptionTier: y
     } = e;
-  if (null != E && !Object.values(Z.Si).includes(E)) throw Error("subscriptionTier must be a premium subscription");
+  if (null != y && !Object.values(Z.Si).includes(y)) throw Error("subscriptionTier must be a premium subscription");
   return (0, l.jsx)(C.Gt, {
     value: n,
     children: (0, l.jsx)(f.PaymentContextProvider, {
@@ -270,10 +271,11 @@ function F(e) {
       skuIDs: [...Z.YQ],
       isGift: j,
       defaultPlanId: a,
-      referralCode: L,
-      repeatPurchase: g,
+      referralCode: g,
+      repeatPurchase: E,
       children: (0, l.jsx)(_.c1, {
         confirmationFooter: r,
+        planSelectBanner: L,
         children: (0, l.jsxs)(x.KB, {
           isGift: j,
           giftRecipient: null == p ? void 0 : p,

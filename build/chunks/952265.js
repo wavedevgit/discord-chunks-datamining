@@ -59,13 +59,13 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -82,8 +82,8 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let g = n(338305).Z,
-  m = [l.z1, l.u1];
+let m = n(338305).Z,
+  g = [l.z1, l.u1];
 
 function E() {
   let e = (0, s.GB)();
@@ -108,16 +108,16 @@ async function y(e) {
     {
       contextKey: n = E()
     } = t,
-    r = p(t, ["contextKey"]),
+    r = _(t, ["contextKey"]),
     o = null != t.modalKey ? t.modalKey : i()(),
     a = !1,
     s = setTimeout(() => {
-      a = !0, O(g, _(d({}, r), {
+      a = !0, O(m, p(d({}, r), {
         modalKey: o
       }), n)
     }, 300),
     l = await e();
-  return clearTimeout(s), a ? L(o, n) && T(o, l, r.onCloseRequest, r.onCloseCallback, n) : O(l, _(d({}, r), {
+  return clearTimeout(s), a ? L(o, n) && T(o, l, r.onCloseRequest, r.onCloseCallback, n) : O(l, p(d({}, r), {
     modalKey: o
   }), n), o
 }
@@ -142,7 +142,7 @@ function O(e) {
           key: t
         } = e;
         return t === f
-      }) ? t : _(d({}, t), {
+      }) ? t : p(d({}, t), {
         [n]: [...r, {
           key: f,
           Layer: s,
@@ -167,7 +167,7 @@ function S(e) {
       return n === e
     }) : null;
   (0, a.j)(() => {
-    b.setState(n => void 0 === n[t] ? n : _(d({}, n), {
+    b.setState(n => void 0 === n[t] ? n : p(d({}, n), {
       [t]: n[t].filter(t => {
         let {
           key: n
@@ -180,7 +180,7 @@ function S(e) {
 
 function I(e) {
   let t = b.getState(),
-    n = m.map(e => {
+    n = g.map(e => {
       var n;
       return null !== (n = t[e]) && void 0 !== n ? n : []
     }).map(t => {
@@ -195,7 +195,7 @@ function I(e) {
   n.some(e => null != e) && ((0, a.j)(() => {
     b.setState(t => {
       let n = d({}, t);
-      return m.forEach(t => {
+      return g.forEach(t => {
         var r;
         n[t] = null === (r = n[t]) || void 0 === r ? void 0 : r.filter(t => {
           let {
@@ -214,8 +214,8 @@ function I(e) {
 function T(e, t, n, r) {
   let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : E();
   (0, a.j)(() => {
-    b.setState(o => void 0 === o[i] ? o : _(d({}, o), {
-      [i]: o[i].map(o => o.key === e ? _(d({}, o), {
+    b.setState(o => void 0 === o[i] ? o : p(d({}, o), {
+      [i]: o[i].map(o => o.key === e ? p(d({}, o), {
         render: t,
         onCloseRequest: null == n ? () => S(e, i) : n,
         onCloseCallback: r
@@ -225,7 +225,7 @@ function T(e, t, n, r) {
 }
 
 function N(e) {
-  for (let t of m) {
+  for (let t of g) {
     let n = e[t];
     if (null != n && n.length > 0) return !0
   }

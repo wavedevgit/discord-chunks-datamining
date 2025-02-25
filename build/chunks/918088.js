@@ -1,7 +1,7 @@
 /** Chunk was on 11814 **/
 n.d(t, {
-  Tk: () => T,
-  ZP: () => P,
+  Tk: () => P,
+  ZP: () => T,
   ef: () => C,
   r8: () => S
 }), n(47120), n(627341);
@@ -69,7 +69,7 @@ function S(e) {
   return null == e.poll || p.Z.getMessage(e.channel_id, e.id) === e
 }
 
-function T(e, t) {
+function P(e, t) {
   var n, r, i, a;
   let {
     formattedExpirationLabel: o
@@ -94,23 +94,23 @@ function T(e, t) {
   }
   let C = g.size > 0,
     I = x.some(e => !0 === e.me_vote),
-    T = !v && I,
-    P = T || h || y,
-    A = m && j && (!I || v || P),
+    P = !v && I,
+    T = P || h || y,
+    A = m && j && (!I || v || T),
     w = null === (r = d.Z.getChannel(e.getChannelId())) || void 0 === r ? void 0 : null === (n = r.getGuildId) || void 0 === n ? void 0 : n.call(r),
     Z = null != w ? u.ZP.getSelfMember(w) : null,
     k = (0, s.EY)(Z),
     R = (0, c.b)(Z),
-    L = !b && C && !T && m && !k && !R;
+    L = !b && C && !P && m && !k && !R;
   return {
     poll: l,
     canTapAnswers: A,
-    canRemoveVote: T && m && !h,
-    canShowVoteCounts: P,
+    canRemoveVote: P && m && !h,
+    canShowVoteCounts: T,
     canSubmitVote: L,
     expirationLabel: f,
     hasSelectedAnswer: C,
-    hasVoted: T,
+    hasVoted: P,
     hasVoteRecorded: I,
     isEditingVote: v,
     isExpired: h,
@@ -119,12 +119,12 @@ function T(e, t) {
     reactions: x,
     selectedAnswerIds: g,
     submitting: b,
-    tapShouldOpenVotersModal: P,
+    tapShouldOpenVotersModal: T,
     showResults: y
   }
 }
 
-function P(e, t) {
+function T(e, t) {
   var n, s;
   let {
     animateEmoji: c = !1,
@@ -139,9 +139,9 @@ function P(e, t) {
   let E = a.Z.useReducedMotion,
     N = null === (s = d.Z.getChannel(e.getChannelId())) || void 0 === s ? void 0 : null === (n = s.getGuildId) || void 0 === n ? void 0 : n.call(s),
     S = (0, y.E)(O, N),
-    P = _.answers,
+    T = _.answers,
     A = _.layout_type,
-    w = T(e, t, {
+    w = P(e, t, {
       formattedExpirationLabel: p
     });
   if (null == w) return;
@@ -163,11 +163,11 @@ function P(e, t) {
     showResults: K
   } = w, Y = (0, b.cZ)(G), X = j.NW.formatToPlainString(j.t.XRkuoa, {
     count: Y.toLocaleString()
-  }), q = Math.max(...P.map(e => {
+  }), q = Math.max(...T.map(e => {
     var t, n;
     let r = C(G, "".concat(e.answer_id));
     return null !== (n = null == r ? void 0 : null === (t = r.count_details) || void 0 === t ? void 0 : t.vote) && void 0 !== n ? n : 0
-  })), Q = P.map(e => {
+  })), Q = T.map(e => {
     var t, n, a;
     let s = "".concat(e.answer_id),
       d = C(G, s),

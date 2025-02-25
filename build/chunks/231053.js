@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Fi: () => p,
+  Fi: () => _,
   JO: () => h,
-  w6: () => _
+  w6: () => p
 }), n(266796), n(47120);
 var r = n(544891),
   i = n(81825),
@@ -50,10 +50,10 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var _ = function(e) {
+var p = function(e) {
   return e.GUILD = "GUILD", e.APPLICATION = "APPLICATION", e
 }({});
-let p = async e => {
+let _ = async e => {
   let t = null;
   try {
     let n = (await r.tn.get({
@@ -66,7 +66,7 @@ let p = async e => {
       guild: h.createFromServer(n.guild),
       type: n.type
     }: (null == n ? void 0 : n.type) === "APPLICATION" && (t = {
-      application: g.createFromServer(n.application),
+      application: m.createFromServer(n.application),
       type: n.type
     })
   } catch (e) {}
@@ -101,7 +101,7 @@ class h extends i.Z {
     return (0, s.Zg)(this.name)
   }
   static async getGuildFromEmojiId(e) {
-    let t = await p(e);
+    let t = await _(e);
     return null != t && (null == t ? void 0 : t.type) === "GUILD" ? t.guild : null
   }
   static _mapCommon(e) {
@@ -148,9 +148,9 @@ class h extends i.Z {
     super(), c(this, "id", void 0), c(this, "name", void 0), c(this, "icon", void 0), c(this, "description", void 0), c(this, "features", void 0), c(this, "premiumTier", void 0), c(this, "premiumSubscriberCount", void 0), c(this, "presenceCount", void 0), c(this, "memberCount", void 0), c(this, "emojis", void 0), this.id = e.id, this.name = e.name, this.icon = e.icon, this.description = e.description, this.features = e.features, this.premiumTier = e.premiumTier, this.premiumSubscriberCount = e.premiumSubscriberCount, this.presenceCount = e.presenceCount, this.memberCount = e.memberCount, this.emojis = e.emojis
   }
 }
-class g extends i.Z {
+class m extends i.Z {
   static createFromServer(e) {
-    return new g({
+    return new m({
       id: e.id,
       name: e.name
     })

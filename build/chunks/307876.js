@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(232567),
   i = n(147913),
@@ -27,24 +27,24 @@ function f(e) {
   if (null == t) return;
   let n = a.Z.getChannelId(),
     r = o.Z.getDMFromUserId(l.I);
-  if (!t.hasUrgentMessages() || r === n) return _({
+  if (!t.hasUrgentMessages() || r === n) return p({
     channelId: n
   });
   d || (d = !0, e())
 }
 
-function _(e) {
+function p(e) {
   let {
     channelId: t
   } = e, n = s.default.getCurrentUser(), i = t === o.Z.getDMFromUserId(l.I);
   null != n && n.hasUrgentMessages() && i && (d = !1, r.mB(c.xW$.HAS_UNREAD_URGENT_MESSAGES, !1))
 }
-class p extends i.Z {
+class _ extends i.Z {
   constructor(e) {
     super(), u(this, "handleShowUrgentMessageAlert", void 0), u(this, "actions", void 0), this.handleShowUrgentMessageAlert = e, this.actions = {
       POST_CONNECTION_OPEN: () => f(this.handleShowUrgentMessageAlert),
       MESSAGE_CREATE: () => f(this.handleShowUrgentMessageAlert),
-      CHANNEL_SELECT: _
+      CHANNEL_SELECT: p
     }
   }
 }

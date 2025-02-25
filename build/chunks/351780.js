@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r, i = n(392711),
   o = n(442837),
@@ -56,14 +56,14 @@ let u = !1,
   },
   f = (0, i.cloneDeep)(d);
 
-function _(e) {
+function p(e) {
   let {
     settings: t
   } = e;
   f = c({}, f, t)
 }
 
-function p() {
+function _() {
   u = !0
 }
 class h extends(r = o.ZP.DeviceSettingsStore) {
@@ -103,7 +103,7 @@ class h extends(r = o.ZP.DeviceSettingsStore) {
   }
 }
 l(h, "displayName", "PoggermodeSettingsStore"), l(h, "persistKey", "PoggermodeSettingsStore");
-let g = new h(a.Z, {
-  POGGERMODE_SETTINGS_UPDATE: _,
-  POGGERMODE_TEMPORARILY_DISABLED: p
+let m = new h(a.Z, {
+  POGGERMODE_SETTINGS_UPDATE: p,
+  POGGERMODE_TEMPORARILY_DISABLED: _
 })

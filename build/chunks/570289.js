@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(682404),
   i = n(657006),
@@ -30,16 +30,16 @@ function d(e, t) {
 }
 
 function f(e, t) {
-  return e % 60 == 0 ? (e > 0 ? "-" : "+") + (0, l.Z)(Math.abs(e) / 60, 2) : _(e, t)
+  return e % 60 == 0 ? (e > 0 ? "-" : "+") + (0, l.Z)(Math.abs(e) / 60, 2) : p(e, t)
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = t || "",
     r = e > 0 ? "-" : "+",
     i = Math.abs(e);
   return r + (0, l.Z)(Math.floor(i / 60), 2) + n + (0, l.Z)(i % 60, 2)
 }
-let p = {
+let _ = {
   G: function(e, t, n) {
     var r = +(e.getUTCFullYear() > 0);
     switch (t) {
@@ -472,9 +472,9 @@ let p = {
         return f(i);
       case "XXXX":
       case "XX":
-        return _(i);
+        return p(i);
       default:
-        return _(i, ":")
+        return p(i, ":")
     }
   },
   x: function(e, t, n, r) {
@@ -484,9 +484,9 @@ let p = {
         return f(i);
       case "xxxx":
       case "xx":
-        return _(i);
+        return p(i);
       default:
-        return _(i, ":")
+        return p(i, ":")
     }
   },
   O: function(e, t, n, r) {
@@ -497,7 +497,7 @@ let p = {
       case "OOO":
         return "GMT" + d(i, ":");
       default:
-        return "GMT" + _(i, ":")
+        return "GMT" + p(i, ":")
     }
   },
   z: function(e, t, n, r) {
@@ -508,7 +508,7 @@ let p = {
       case "zzz":
         return "GMT" + d(i, ":");
       default:
-        return "GMT" + _(i, ":")
+        return "GMT" + p(i, ":")
     }
   },
   t: function(e, t, n, r) {

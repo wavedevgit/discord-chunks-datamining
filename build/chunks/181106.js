@@ -33,7 +33,7 @@ let u = {},
   d = {},
   f = 12e4;
 
-function _(e) {
+function p(e) {
   let {
     applicationId: t,
     activityType: n
@@ -42,7 +42,7 @@ function _(e) {
   delete r[n]
 }
 
-function p(e, t, n) {
+function _(e, t, n) {
   var r;
   let {
     applicationId: i
@@ -65,10 +65,10 @@ function h(e) {
   u = c({}, t)
 }
 
-function g(e) {
-  return p(s.OcF.COMPLETE, s.mFx.JOIN, e)
+function m(e) {
+  return _(s.OcF.COMPLETE, s.mFx.JOIN, e)
 }
-class m extends(r = i.ZP.Store) {
+class g extends(r = i.ZP.Store) {
   getState(e, t) {
     let n = u[e];
     return null == n ? void 0 : n[t]
@@ -77,12 +77,12 @@ class m extends(r = i.ZP.Store) {
     return u
   }
 }
-l(m, "displayName", "ActivityLauncherStore");
-let E = new m(a.Z, {
+l(g, "displayName", "ActivityLauncherStore");
+let E = new g(a.Z, {
   OVERLAY_INITIALIZE: h,
-  ACTIVITY_JOIN_LOADING: e => p(s.OcF.LOADING, s.mFx.JOIN, e),
-  ACTIVITY_JOIN_FAILED: e => p(s.OcF.FAILED, s.mFx.JOIN, e),
-  ACTIVITY_JOIN: g,
-  EMBEDDED_ACTIVITY_CLOSE: g,
-  ACTIVITY_LAUNCH_FAIL: _
+  ACTIVITY_JOIN_LOADING: e => _(s.OcF.LOADING, s.mFx.JOIN, e),
+  ACTIVITY_JOIN_FAILED: e => _(s.OcF.FAILED, s.mFx.JOIN, e),
+  ACTIVITY_JOIN: m,
+  EMBEDDED_ACTIVITY_CLOSE: m,
+  ACTIVITY_LAUNCH_FAIL: p
 })

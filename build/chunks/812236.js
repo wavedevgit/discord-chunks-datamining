@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Fs: () => p,
-  Xu: () => _,
+  Fs: () => _,
+  Xu: () => p,
   ZP: () => f,
-  ms: () => g,
+  ms: () => m,
   sV: () => u
 }), n(411104);
 var r = n(192379),
@@ -19,20 +19,20 @@ let u = "no primary app command for application",
 async function f(e, t) {
   let n;
   let r = a.Z.getChannel(e);
-  if (null != r && null == (n = _({
+  if (null != r && null == (n = p({
       channel: r,
       type: "channel"
     }, t)) && (await (0, l.FN)({
       type: "application",
       applicationId: t
-    }), n = _({
+    }), n = p({
       channel: r,
       type: "channel"
     }, t)), null != n) return n;
   throw Error(u)
 }
 
-function _(e, t) {
+function p(e, t) {
   return l.ZP.query(e, {
     commandTypes: [o.yU.PRIMARY_ENTRY_POINT]
   }, {
@@ -44,7 +44,7 @@ function _(e, t) {
   }).commands[0]
 }
 
-function p(e, t) {
+function _(e, t) {
   let {
     commands: n,
     loading: i
@@ -69,12 +69,12 @@ function h(e, t) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     context: t,
     applicationId: n,
     botUserId: r
-  } = e, a = p(t, n);
+  } = e, a = _(t, n);
   if (null == a) return !1;
   let s = null != a.integration_types && a.integration_types.includes(i.Y.USER_INSTALL),
     l = null != a.contexts && a.contexts.includes(o.D.BOT_DM);

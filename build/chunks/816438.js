@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  kZ: () => _
+  kZ: () => p
 });
 var r = n(4313),
   i = n(493623),
@@ -24,16 +24,16 @@ function f() {
   })
 }
 
-function _(e) {
+function p(e) {
   void 0 === e && (e = {});
   var t = e,
     n = t.defaultModifiers,
-    _ = void 0 === n ? [] : n,
-    p = t.defaultOptions,
-    h = void 0 === p ? d : p;
+    p = void 0 === n ? [] : n,
+    _ = t.defaultOptions,
+    h = void 0 === _ ? d : _;
   return function(e, t, n) {
     void 0 === n && (n = h);
-    var p = {
+    var _ = {
         placement: "bottom",
         orderedModifiers: [],
         options: Object.assign({}, d, h),
@@ -45,90 +45,90 @@ function _(e) {
         attributes: {},
         styles: {}
       },
-      g = [],
-      m = !1,
+      m = [],
+      g = !1,
       E = {
-        state: p,
+        state: _,
         setOptions: function(n) {
-          var r = "function" == typeof n ? n(p.options) : n;
-          b(), p.options = Object.assign({}, h, p.options, r), p.scrollParents = {
+          var r = "function" == typeof n ? n(_.options) : n;
+          b(), _.options = Object.assign({}, h, _.options, r), _.scrollParents = {
             reference: (0, u.kK)(e) ? (0, o.Z)(e) : e.contextElement ? (0, o.Z)(e.contextElement) : [],
             popper: (0, o.Z)(t)
           };
-          var i = (0, s.Z)((0, c.Z)([].concat(_, p.options.modifiers)));
-          return p.orderedModifiers = i.filter(function(e) {
+          var i = (0, s.Z)((0, c.Z)([].concat(p, _.options.modifiers)));
+          return _.orderedModifiers = i.filter(function(e) {
             return e.enabled
           }), v(), E.update()
         },
         forceUpdate: function() {
-          if (!m) {
-            var e = p.elements,
+          if (!g) {
+            var e = _.elements,
               t = e.reference,
               n = e.popper;
             if (f(t, n)) {
-              p.rects = {
-                reference: (0, r.Z)(t, (0, a.Z)(n), "fixed" === p.options.strategy),
+              _.rects = {
+                reference: (0, r.Z)(t, (0, a.Z)(n), "fixed" === _.options.strategy),
                 popper: (0, i.Z)(n)
-              }, p.reset = !1, p.placement = p.options.placement, p.orderedModifiers.forEach(function(e) {
-                return p.modifiersData[e.name] = Object.assign({}, e.data)
+              }, _.reset = !1, _.placement = _.options.placement, _.orderedModifiers.forEach(function(e) {
+                return _.modifiersData[e.name] = Object.assign({}, e.data)
               });
-              for (var o = 0; o < p.orderedModifiers.length; o++) {
-                if (!0 === p.reset) {
-                  p.reset = !1, o = -1;
+              for (var o = 0; o < _.orderedModifiers.length; o++) {
+                if (!0 === _.reset) {
+                  _.reset = !1, o = -1;
                   continue
                 }
-                var s = p.orderedModifiers[o],
+                var s = _.orderedModifiers[o],
                   l = s.fn,
                   c = s.options,
                   u = void 0 === c ? {} : c,
                   d = s.name;
-                "function" == typeof l && (p = l({
-                  state: p,
+                "function" == typeof l && (_ = l({
+                  state: _,
                   options: u,
                   name: d,
                   instance: E
-                }) || p)
+                }) || _)
               }
             }
           }
         },
         update: (0, l.Z)(function() {
           return new Promise(function(e) {
-            E.forceUpdate(), e(p)
+            E.forceUpdate(), e(_)
           })
         }),
         destroy: function() {
-          b(), m = !0
+          b(), g = !0
         }
       };
     if (!f(e, t)) return E;
 
     function v() {
-      p.orderedModifiers.forEach(function(e) {
+      _.orderedModifiers.forEach(function(e) {
         var t = e.name,
           n = e.options,
           r = void 0 === n ? {} : n,
           i = e.effect;
         if ("function" == typeof i) {
           var o = i({
-              state: p,
+              state: _,
               name: t,
               instance: E,
               options: r
             }),
             a = function() {};
-          g.push(o || a)
+          m.push(o || a)
         }
       })
     }
 
     function b() {
-      g.forEach(function(e) {
+      m.forEach(function(e) {
         return e()
-      }), g = []
+      }), m = []
     }
     return E.setOptions(n).then(function(e) {
-      !m && n.onFirstUpdate && n.onFirstUpdate(e)
+      !g && n.onFirstUpdate && n.onFirstUpdate(e)
     }), E
   }
 }

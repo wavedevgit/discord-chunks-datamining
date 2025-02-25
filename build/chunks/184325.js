@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(906732),
   d = n(943180),
   f = n(490248),
-  _ = n(768865),
-  p = n(617136),
+  p = n(768865),
+  _ = n(617136),
   h = n(497505),
-  g = n(703656),
-  m = n(594174),
+  m = n(703656),
+  g = n(594174),
   E = n(626135),
   v = n(111361),
   b = n(291175),
@@ -88,7 +88,7 @@ function x(e) {
   } = (0, u.ZP)(c.Z.BADGE), {
     context: j,
     trackUserProfileAction: k
-  } = (0, y.KZ)(), [U, G] = i.useState(!1), B = m.default.getCurrentUser(), F = (0, v.yd)(null == B ? void 0 : B.premiumType, A.p9.TIER_2), {
+  } = (0, y.KZ)(), [U, G] = i.useState(!1), B = g.default.getCurrentUser(), F = (0, v.yd)(null == B ? void 0 : B.premiumType, A.p9.TIER_2), {
     isBadgeVersion2: V
   } = (0, d.D)();
   return (0, r.jsx)("div", {
@@ -110,7 +110,7 @@ function x(e) {
                 premium_type: F,
                 viewed_user_id: null == D ? void 0 : D.userId
               }), F) {
-              (null == D ? void 0 : D.userId) === (null == B ? void 0 : B.id) ? (0, g.uL)(N.Z5c.NITRO_HOME) : (0, _.k)({
+              (null == D ? void 0 : D.userId) === (null == B ? void 0 : B.id) ? (0, m.uL)(N.Z5c.NITRO_HOME) : (0, p.k)({
                 analyticsLocations: M,
                 displayProfile: D
               }), null == x || x();
@@ -123,7 +123,7 @@ function x(e) {
               if (null == n) return;
               return null == x || x(), n(t)
             }
-            return (0, _.k)({
+            return (0, p.k)({
               analyticsLocations: M,
               displayProfile: D
             }), void(null == x || x())
@@ -134,7 +134,7 @@ function x(e) {
           if (null != r) return null == x || x(), r(t)
         },
         c = () => {
-          e.id === S.i && E.default.track(N.rMx.QUEST_CONTENT_VIEWED, w({}, (0, p.mH)(h.jn.QUEST_BADGE))), k({
+          e.id === S.i && E.default.track(N.rMx.QUEST_CONTENT_VIEWED, w({}, (0, _.mH)(h.jn.QUEST_BADGE))), k({
             action: "HOVER_BADGE"
           }), (0, O.Qf)(w({
             badge: e.id,
@@ -143,12 +143,12 @@ function x(e) {
         },
         u = L(null == t ? void 0 : t.id),
         d = null != t && U,
-        m = n && e.id !== C.a ? (0, r.jsx)(f.Z, {
+        g = n && e.id !== C.a ? (0, r.jsx)(f.Z, {
           profileBadge: e,
           tenureBadge: t
         }) : e.description;
       return (0, r.jsx)(s.DY3, {
-        text: m,
+        text: g,
         "aria-label": e.description,
         delay: T.vB,
         tooltipClassName: u,

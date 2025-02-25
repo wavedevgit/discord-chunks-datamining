@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ao: () => m,
-  Jv: () => p,
+  Ao: () => g,
+  Jv: () => _,
   M0: () => h,
-  Qj: () => g,
+  Qj: () => m,
   VO: () => v,
   YO: () => E
 }), n(474991), n(398202), n(301563);
@@ -18,11 +18,11 @@ let l = Array.from(n(176505).Vg).map(e => a.Z.escape(e)).join("|"),
   u = new RegExp("^/channels/(\\d+|".concat(s.ME, ")(?:/)(\\d+|").concat(l, ")(?:/)(\\d+)")),
   d = RegExp("^/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)"),
   f = RegExp("^/guild-stages/(\\d+)(?:/)?(\\d+)?"),
-  _ = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
-  p = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+|".concat(s.ME, ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?")),
+  p = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
+  _ = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+|".concat(s.ME, ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?")),
   h = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
 
-function g(e) {
+function m(e) {
   if (null == e) return null;
   let t = e.match(u);
   if (null != t && t.length > 3) return {
@@ -51,9 +51,9 @@ function g(e) {
   } : null
 }
 
-function m(e) {
+function g(e) {
   if (null == e) return null;
-  let t = e.match(_);
+  let t = e.match(p);
   return null != t && t.length > 1 ? {
     guildId: t[1],
     guildEventId: t[2],

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  E: () => p,
-  T: () => _
+  E: () => _,
+  T: () => p
 });
 var r, i = n(192379),
   o = n(610521),
@@ -49,7 +49,7 @@ function d(e, t) {
 }
 let f = null !== (r = document.getElementById("app-mount")) && void 0 !== r ? r : document;
 
-function _(e) {
+function p(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
     r = (0, a.e7)([s.Z], () => s.Z.keyboardModeEnabled),
@@ -61,6 +61,6 @@ function _(e) {
   }))
 }
 
-function p(e) {
-  return _(e.containerRef), e.children
+function _(e) {
+  return p(e.containerRef), e.children
 }

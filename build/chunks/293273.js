@@ -12,11 +12,11 @@ var r, i = n(348327),
   u = n(317381),
   d = n(676035),
   f = n(594190),
-  _ = n(406066),
-  p = n(768419),
+  p = n(406066),
+  _ = n(768419),
   h = n(695346),
-  g = n(581883),
-  m = n(199902),
+  m = n(581883),
+  g = n(199902),
   E = n(272053),
   v = n(77498),
   b = n(981631);
@@ -49,7 +49,7 @@ function T() {
   let e = [],
     t = h.Ok.getSetting();
   null != t && ("0" === t.expiresAtMs || new Date(Number(t.expiresAtMs)).getTime() - new Date().getTime() > 0) && e.push((0, d.I)(t));
-  let n = _.Z.getActivities();
+  let n = p.Z.getActivities();
   e.push(...n);
   let r = E.Z.getStream();
   null != r && e.push(O({
@@ -63,9 +63,9 @@ function T() {
   let a = f.ZP.getVisibleGame(),
     l = null != a && null != a.name && i.has(a.name),
     c = null != a && a.isLauncher,
-    u = null != m.Z.getCurrentUserActiveStream(),
-    g = l || c && !u;
-  if (null != a && null != a.name && !g) {
+    u = null != g.Z.getCurrentUserActiveStream(),
+    m = l || c && !u;
+  if (null != a && null != a.name && !m) {
     var y, T;
     e.push({
       type: b.IIU.PLAYING,
@@ -76,7 +76,7 @@ function T() {
       }
     })
   }
-  let N = p.Z.getActivity();
+  let N = _.Z.getActivity();
   null != N && e.push(O({
     type: b.IIU.LISTENING
   }, N)), o()(S, e) || (S = e)
@@ -111,7 +111,7 @@ function R(e) {
 }
 class P extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(f.ZP, u.ZP, E.Z, m.Z, p.Z, g.Z, v.Z), this.syncWith([_.Z], () => T())
+    this.waitFor(f.ZP, u.ZP, E.Z, g.Z, _.Z, m.Z, v.Z), this.syncWith([p.Z], () => T())
   }
   getActivities() {
     return S

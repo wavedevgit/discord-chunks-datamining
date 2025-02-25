@@ -14,11 +14,11 @@ var r, i = n(873546),
   u = n(592125),
   d = n(496675),
   f = n(768119),
-  _ = n(944486),
-  p = n(914010),
+  p = n(944486),
+  _ = n(914010),
   h = n(594174),
-  g = n(981631),
-  m = n(176505),
+  m = n(981631),
+  g = n(176505),
   E = n(231338);
 
 function v(e, t, n) {
@@ -39,9 +39,9 @@ let b = "message_requests",
 
 function A(e) {
   if (null == e) return null;
-  if ((0, m.AB)(e)) {
-    let t = p.Z.getGuildId();
-    return null == t ? null : (0, m.Qk)(e, t)
+  if ((0, g.AB)(e)) {
+    let t = _.Z.getGuildId();
+    return null == t ? null : (0, g.Qk)(e, t)
   }
   return e
 }
@@ -53,7 +53,7 @@ function C(e) {
 function R(e) {
   let t = !1;
   I && (I = !1, t = !0);
-  let n = A(_.Z.getChannelId());
+  let n = A(p.Z.getChannelId());
   return null != n && n in T && (delete T[n], t = !0), t && e ? e : !e
 }
 
@@ -66,7 +66,7 @@ function D() {
 }
 
 function w() {
-  S || l.S.dispatch(g.CkL.SEARCH_RESULTS_CLOSE), S = R(S)
+  S || l.S.dispatch(m.CkL.SEARCH_RESULTS_CLOSE), S = R(S)
 }
 
 function L(e) {
@@ -204,9 +204,9 @@ class H extends(r = o.ZP.PersistedStore) {
     }
   }
   getSection(e, t) {
-    if (I) return g.ULH.SEARCH;
+    if (I) return m.ULH.SEARCH;
     let n = A(e);
-    return null != n && null != T[n] ? g.ULH.SIDEBAR_CHAT : t && S ? g.ULH.PROFILE : O ? g.ULH.SUMMARIES : y ? g.ULH.MEMBERS : g.ULH.NONE
+    return null != n && null != T[n] ? m.ULH.SIDEBAR_CHAT : t && S ? m.ULH.PROFILE : O ? m.ULH.SUMMARIES : y ? m.ULH.MEMBERS : m.ULH.NONE
   }
   getSidebarState(e) {
     let t = A(e);

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  U: () => p,
+  U: () => _,
   Z: () => h
 }), n(47120), n(13667), n(390547), n(411104);
 var r = n(200651);
@@ -46,12 +46,12 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = {
+let _ = {
   strong: s.bold,
   em: s.italics,
   u: s.underline,
@@ -78,8 +78,8 @@ function h(e, t) {
     children: c,
     leaf: u,
     text: f
-  } = t, h = !1, [g] = a.bN.node(e, a.C0.parent(a.bN.findPath(e, f)));
-  switch (a.bN.isEditor(g) ? "editor" : g.type) {
+  } = t, h = !1, [m] = a.bN.node(e, a.C0.parent(a.bN.findPath(e, f)));
+  switch (a.bN.isEditor(m) ? "editor" : m.type) {
     case "line":
     case "blockQuote": {
       h = void 0;
@@ -91,7 +91,7 @@ function h(e, t) {
         if ("hljsTypes" === t) return n;
         if (!0 === n) {
           if (("codeBlockLang" === t || "codeBlockSyntax" === t) && (h = !1), t.startsWith("before_") || t.startsWith("after_")) return [s[t]];
-          if (t in p) return [p[t]];
+          if (t in _) return [_[t]];
           throw Error("Slate: Unknown decoration attribute: ".concat(t))
         }
       }).filter(e => null != e).join(" ");
@@ -102,7 +102,7 @@ function h(e, t) {
   }
   return n = o()(n, {
     [l.emptyText]: "" === f.text
-  }), (0, r.jsx)("span", _(d({}, i), {
+  }), (0, r.jsx)("span", p(d({}, i), {
     className: n,
     spellCheck: h,
     children: c

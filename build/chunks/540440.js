@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B: () => p,
-  y: () => _
+  B: () => _,
+  y: () => p
 });
 var r = n(200651);
 n(192379);
@@ -36,22 +36,22 @@ function f(e) {
   return e
 }
 
-function _(e) {
+function p(e) {
   return (0, i.EQ)(e).when(s.dX, () => u.NW.string(u.t["4f8iur"])).when(s.y0, () => u.NW.string(u.t.yX2hNz)).when(s.kq, () => u.NW.string(u.t.oSs8en)).when(s.m9, () => u.NW.string(u.t.bK9GT0)).exhaustive()
 }
 
-function p(e) {
+function _(e) {
   let {
     user: t,
     entry: i,
     display: u,
     onAction: d,
-    onClose: p
+    onClose: _
   } = e, h = (0, c.Z)({
-    onClose: p
-  }), g = (0, o.e7)([l.default], () => l.default.getCurrentUser());
-  if (t.id !== (null == g ? void 0 : g.id) || "recent" !== u || !(0, s.Rh)(i)) return null;
-  let m = () => {
+    onClose: _
+  }), m = (0, o.e7)([l.default], () => l.default.getCurrentUser());
+  if (t.id !== (null == m ? void 0 : m.id) || "recent" !== u || !(0, s.Rh)(i)) return null;
+  let g = () => {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -66,11 +66,11 @@ function p(e) {
   };
   return (0, r.jsx)(a.sNh, {
     id: "delete-entry-history",
-    label: _(i),
+    label: p(i),
     action: () => {
       null == d || d({
         action: "PRESS_DELETE_HISTORY_MENU_ITEM"
-      }), m()
+      }), g()
     },
     color: "danger"
   })

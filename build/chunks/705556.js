@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -14,9 +14,9 @@ var i = n(442837),
   u = n(785717),
   d = n(475413),
   f = n(388032),
-  _ = n(144795);
+  p = n(144795);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,19 +32,19 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e) {
+function m(e) {
   let {
     user: t,
     guildId: n,
-    fullWidth: p,
-    appContext: g,
-    onClose: m
+    fullWidth: _,
+    appContext: m,
+    onClose: g
   } = e, E = (0, i.e7)([l.default], () => l.default.getId() === t.id), v = (0, i.e7)([c.Z], () => null != n ? c.Z.getGuild(n) : null), b = (0, s.Z)({
     guild: v
   }), y = (0, s.Z)({}), {
@@ -55,9 +55,9 @@ function g(e) {
     text: f.NW.string(f.t.s5vZlZ),
     icon: o.vdY,
     autoFocus: !0,
-    fullWidth: p,
+    fullWidth: _,
     onClick: () => {
-      null == m || m(), y(), (0, a.i)(g)
+      null == g || g(), y(), (0, a.i)(m)
     }
   }) : (0, r.jsx)(o.yRy, {
     renderPopout: e => {
@@ -65,11 +65,11 @@ function g(e) {
         closePopout: t
       } = e;
       return (0, r.jsxs)(o.v2r, {
-        className: _.popoutMenu,
+        className: p.popoutMenu,
         onSelect: void 0,
         navId: "edit-profile-popout",
         onClose: () => {
-          t(), null == m || m()
+          t(), null == g || g()
         },
         "aria-label": f.NW.string(f.t.AXIHpa),
         children: [(0, r.jsx)(o.sNh, {
@@ -79,7 +79,7 @@ function g(e) {
           action: () => {
             O({
               action: "EDIT_GUILD_PROFILE"
-            }), b(), (0, a.i)(g)
+            }), b(), (0, a.i)(m)
           }
         }), (0, r.jsx)(o.sNh, {
           id: "edit-main-profile",
@@ -88,7 +88,7 @@ function g(e) {
           action: () => {
             O({
               action: "EDIT_PROFILE"
-            }), y(), (0, a.i)(g)
+            }), y(), (0, a.i)(m)
           }
         })]
       })
@@ -97,7 +97,7 @@ function g(e) {
       text: f.NW.string(f.t.s5vZlZ),
       icon: o.vdY,
       autoFocus: !0,
-      fullWidth: p
+      fullWidth: _
     }, e))
   }) : null
 }

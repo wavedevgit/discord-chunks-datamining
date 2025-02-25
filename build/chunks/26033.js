@@ -3,9 +3,9 @@
 n.d(t, {
   Cb: () => o,
   KF: () => u,
-  Mq: () => g,
+  Mq: () => m,
   Q0: () => a,
-  Rh: () => m,
+  Rh: () => g,
   aA: () => h,
   dU: () => c,
   dX: () => s,
@@ -48,22 +48,22 @@ function f(e) {
   return (null == e ? void 0 : e.content_type) === r.s.WATCHED_MEDIA
 }
 
-function _(e) {
+function p(e) {
   return !!s(e) && e.extra.platform === i.z.XBOX
 }
 
-function p(e) {
+function _(e) {
   return !!s(e) && e.extra.platform === i.z.PLAYSTATION
 }
 
 function h(e) {
-  return _(e) || p(e)
-}
-
-function g(e) {
-  return (null == e ? void 0 : e.content_type) === r.s.LAUNCHED_ACTIVITY
+  return p(e) || _(e)
 }
 
 function m(e) {
+  return (null == e ? void 0 : e.content_type) === r.s.LAUNCHED_ACTIVITY
+}
+
+function g(e) {
   return s(e) || c(e) || f(e) || l(e)
 }

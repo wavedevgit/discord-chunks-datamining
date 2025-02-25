@@ -14,11 +14,11 @@ var i = n(481060),
   u = n(928518),
   d = n(314897),
   f = n(592125),
-  _ = n(158776),
-  p = n(19780),
+  p = n(158776),
+  _ = n(19780),
   h = n(959457),
-  g = n(178635),
-  m = n(531578),
+  m = n(178635),
+  g = n(531578),
   E = n(981631);
 
 function v(e, t, n) {
@@ -59,7 +59,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class S extends g.Z {
+class S extends m.Z {
   _initialize() {
     c.Z.init()
   }
@@ -76,7 +76,7 @@ class S extends g.Z {
       let {
         analyticsData: t
       } = e;
-      this.possiblyShowFeedbackModal(m.nw.VOICE, () => {
+      this.possiblyShowFeedbackModal(g.nw.VOICE, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
@@ -91,13 +91,13 @@ class S extends g.Z {
       let {
         streamKey: o,
         canShowFeedback: a
-      } = e, c = (0, s.my)(o), u = (0, l.L2)(c, _.Z), f = null !== (t = h.Z.getVideoStats(o)) && void 0 !== t ? t : {}, p = b({
+      } = e, c = (0, s.my)(o), u = (0, l.L2)(c, p.Z), f = null !== (t = h.Z.getVideoStats(o)) && void 0 !== t ? t : {}, _ = b({
         media_session_id: h.Z.getMediaSessionId(o),
         rtc_connection_id: h.Z.getRtcConnectionId(o),
         stream_region: h.Z.getRegion(o),
         max_viewers: h.Z.getMaxViewers(o)
       }, f);
-      a && this.possiblyShowFeedbackModal(m.nw.STREAM, () => {
+      a && this.possiblyShowFeedbackModal(g.nw.STREAM, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
@@ -107,7 +107,7 @@ class S extends g.Z {
             streamApplication: u,
             isStreamer: c.ownerId === d.default.getId()
           }, t), {
-            analyticsData: p
+            analyticsData: _
           }))
         })
       })
@@ -115,7 +115,7 @@ class S extends g.Z {
       let {
         analyticsData: t
       } = e;
-      this.possiblyShowFeedbackModal(m.nw.VIDEO_BACKGROUND, () => {
+      this.possiblyShowFeedbackModal(g.nw.VIDEO_BACKGROUND, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
@@ -130,22 +130,22 @@ class S extends g.Z {
         applicationId: t,
         location: s,
         showFeedback: l
-      } = e, c = a.Z.getApplication(t), d = (0, o.pY)(s), _ = f.Z.getChannel(d), h = {
-        rtc_connection_id: p.Z.getRTCConnectionId(),
-        media_session_id: p.Z.getMediaSessionId()
-      }, g = u.Z.getWindowOpen(E.KJ3.CHANNEL_CALL_POPOUT) ? i.u1M : i.z1l;
-      null != c && null != _ && l && this.possiblyShowFeedbackModal(m.nw.ACTIVITY, () => {
+      } = e, c = a.Z.getApplication(t), d = (0, o.pY)(s), p = f.Z.getChannel(d), h = {
+        rtc_connection_id: _.Z.getRTCConnectionId(),
+        media_session_id: _.Z.getMediaSessionId()
+      }, m = u.Z.getWindowOpen(E.KJ3.CHANNEL_CALL_POPOUT) ? i.u1M : i.z1l;
+      null != c && null != p && l && this.possiblyShowFeedbackModal(g.nw.ACTIVITY, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
           } = await n.e("4413").then(n.bind(n, 450634));
           return t => (0, r.jsx)(e, O(b({}, t), {
             activityApplication: c,
-            channel: _,
+            channel: p,
             analyticsData: h
           }))
         }, {
-          contextKey: g
+          contextKey: m
         })
       })
     }), v(this, "handleInAppReportsFeedback", e => {
@@ -153,7 +153,7 @@ class S extends g.Z {
         reportId: t,
         reportType: o
       } = e;
-      this.possiblyShowFeedbackModal(m.nw.IN_APP_REPORTS, () => {
+      this.possiblyShowFeedbackModal(g.nw.IN_APP_REPORTS, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
@@ -168,7 +168,7 @@ class S extends g.Z {
       let {
         channel: t
       } = e;
-      this.possiblyShowFeedbackModal(m.nw.USER_DM_MUTE, () => {
+      this.possiblyShowFeedbackModal(g.nw.USER_DM_MUTE, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
@@ -179,7 +179,7 @@ class S extends g.Z {
         })
       })
     }), v(this, "handleBlockUserFeedback", () => {
-      this.possiblyShowFeedbackModal(m.nw.BLOCK_USER, () => {
+      this.possiblyShowFeedbackModal(g.nw.BLOCK_USER, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e

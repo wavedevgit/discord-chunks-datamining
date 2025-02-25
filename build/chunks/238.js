@@ -23,12 +23,12 @@ let u = new Map,
 var f = function(e) {
   return e[e.NONE = 0] = "NONE", e[e.FETCHING = 1] = "FETCHING", e[e.FETCHED = 2] = "FETCHED", e[e.FAILED = 3] = "FAILED", e
 }({});
-let _ = new a.Z({
+let p = new a.Z({
   subscriptions: [],
   otps: []
 });
 
-function p(e) {
+function _(e) {
   let {
     applicationId: t,
     layout: n
@@ -43,13 +43,13 @@ function h(e) {
   d.set(t, 3)
 }
 
-function g(e) {
+function m(e) {
   let {
     applicationId: t
   } = e;
   d.set(t, 1)
 }
-class m extends(r = i.ZP.Store) {
+class g extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(s.Z, l.Z)
   }
@@ -58,16 +58,16 @@ class m extends(r = i.ZP.Store) {
   }
   getStoreLayout(e) {
     var t;
-    return null !== (t = u.get(e)) && void 0 !== t ? t : _
+    return null !== (t = u.get(e)) && void 0 !== t ? t : p
   }
   getFetchStatus(e) {
     var t;
     return u.has(e) ? 2 : null !== (t = d.get(e)) && void 0 !== t ? t : 0
   }
 }
-c(m, "displayName", "ApplicationStoreDirectoryStore");
-let E = new m(o.Z, {
-  APPLICATION_STORE_DIRECTORY_LAYOUT_FETCH_SUCCESS: p,
+c(g, "displayName", "ApplicationStoreDirectoryStore");
+let E = new g(o.Z, {
+  APPLICATION_STORE_DIRECTORY_LAYOUT_FETCH_SUCCESS: _,
   APPLICATION_STORE_DIRECTORY_LAYOUT_FETCH_FAILED: h,
-  APPLICATION_STORE_DIRECTORY_LAYOUT_FETCHING: g
+  APPLICATION_STORE_DIRECTORY_LAYOUT_FETCHING: m
 })

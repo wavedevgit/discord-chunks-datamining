@@ -40,12 +40,12 @@ let u = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
       status: l,
       avatarSize: d = i.EFr.SIZE_120,
       "aria-hidden": f = !1,
-      className: _,
-      animateOnHover: p = !1,
+      className: p,
+      animateOnHover: _ = !1,
       questPreviewRewardAssetUrl: h = null
     } = e, {
-      avatarDecorationSrc: g,
-      avatarSrc: m,
+      avatarDecorationSrc: m,
+      avatarSrc: g,
       eventHandlers: E
     } = (0, o.Z)({
       user: t,
@@ -53,15 +53,15 @@ let u = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
       size: d,
       showPending: !0,
       avatarDecorationOverride: a,
-      animateOnHover: p
+      animateOnHover: _
     });
     return (0, r.jsx)(u, c({
-      avatarDecoration: null != g ? g : h,
-      src: m,
+      avatarDecoration: null != m ? m : h,
+      src: g,
       size: d,
       status: l,
       "aria-label": f ? void 0 : s.NW.string(s.t.lqaIxM),
       "aria-hidden": f,
-      className: _
+      className: p
     }, E))
   }

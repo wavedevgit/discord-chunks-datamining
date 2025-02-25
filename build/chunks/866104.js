@@ -95,12 +95,12 @@ function S(e) {
   }, [m]), {
     isTruncated: v,
     ExpandableTextContainer: S
-  } = (0, y.s)(), T = (null !== (n = null == u ? void 0 : null === (t = u.description) || void 0 === t ? void 0 : t.trim().length) && void 0 !== n ? n : 0) > 0, [P, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
+  } = (0, y.s)(), P = (null !== (n = null == u ? void 0 : null === (t = u.description) || void 0 === t ? void 0 : t.trim().length) && void 0 !== n ? n : 0) > 0, [T, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: Z,
     isPhantomPreview: k
-  } = (0, x.m)(), R = Z === O.y.GUILD_PRODUCTS_PREVIEW ? j.NW.string(j.t["LvXy/P"]) : j.NW.string(j.t.XyqKh4), L = T ? (0, r.jsxs)(r.Fragment, {
+  } = (0, x.m)(), R = Z === O.y.GUILD_PRODUCTS_PREVIEW ? j.NW.string(j.t["LvXy/P"]) : j.NW.string(j.t.XyqKh4), L = P ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(S, {
-      lineClamp: w || 2 === P ? 2 : 3,
+      lineClamp: w || 2 === T ? 2 : 3,
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-normal",

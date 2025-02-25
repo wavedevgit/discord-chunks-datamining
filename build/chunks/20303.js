@@ -19,11 +19,11 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = "MaskedLinkStore",
-  _ = new Set,
   p = new Set,
+  _ = new Set,
   h = null === (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) || void 0 === r ? void 0 : r.replace("//", "");
 
-function g(e) {
+function m(e) {
   let t = (0, c.F)(e);
   switch (t) {
     case window.GLOBAL_ENV.CDN_HOST:
@@ -34,23 +34,23 @@ function g(e) {
     case location.hostname:
       return !0;
     default:
-      return u.SD.includes(t) || l.Z.isDiscordHostname(t) || _.has(t)
+      return u.SD.includes(t) || l.Z.isDiscordHostname(t) || p.has(t)
   }
 }
 
-function m(e) {
+function g(e) {
   let t = (0, c.E)(e);
-  return p.has(t)
+  return _.has(t)
 }
 
 function E(e) {
   let {
     url: t
   } = e;
-  if (g(t)) return !1;
-  _.add((0, c.F)(t)), a.K.set(f, {
-    trustedDomains: _,
-    trustedProtocols: p
+  if (m(t)) return !1;
+  p.add((0, c.F)(t)), a.K.set(f, {
+    trustedDomains: p,
+    trustedProtocols: _
   })
 }
 
@@ -58,30 +58,30 @@ function v(e) {
   let {
     url: t
   } = e;
-  if (m(t)) return !1;
-  p.add((0, c.E)(t)), a.K.set(f, {
-    trustedDomains: _,
-    trustedProtocols: p
+  if (g(t)) return !1;
+  _.add((0, c.E)(t)), a.K.set(f, {
+    trustedDomains: p,
+    trustedProtocols: _
   })
 }
 class b extends(i = o.ZP.Store) {
   initialize() {
     var e;
     let t = null !== (e = a.K.get(f)) && void 0 !== e ? e : {};
-    if (Array.isArray(t)) _ = new Set(null != t ? Array.from(t) : null), p = new Set;
+    if (Array.isArray(t)) p = new Set(null != t ? Array.from(t) : null), _ = new Set;
     else {
       let {
         trustedDomains: e,
         trustedProtocols: n
       } = t;
-      _ = new Set(null != e ? Array.from(e) : null), p = new Set(null != n ? Array.from(n) : null)
+      p = new Set(null != e ? Array.from(e) : null), _ = new Set(null != n ? Array.from(n) : null)
     }
   }
   isTrustedDomain(e) {
-    return g(e)
+    return m(e)
   }
   isTrustedProtocol(e) {
-    return m(e)
+    return g(e)
   }
 }
 d(b, "displayName", "MaskedLinkStore");

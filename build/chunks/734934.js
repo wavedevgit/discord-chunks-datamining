@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  oW: () => p,
-  p: () => _
+  oW: () => _,
+  p: () => p
 });
 var r = n(381499),
   i = n(668781),
@@ -15,13 +15,13 @@ var r = n(381499),
   d = n(981631),
   f = n(388032);
 
-function _() {
+function p() {
   let e = a.QZ.useSetting(),
     t = a.fv.useSetting();
   return e && ("0" === t || new Date(Number(t)).getTime() - new Date().getTime() > 0)
 }
 
-function p(e, t) {
+function _(e, t) {
   let n = a.QZ.getSetting();
   s.hW.updateAsync("notifications", n => {
     n.quietMode = r.D5.create({

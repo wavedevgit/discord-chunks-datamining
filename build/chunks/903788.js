@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  o: () => _
+  o: () => p
 });
 var r = n(200651);
 n(192379);
@@ -65,21 +65,21 @@ function f(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => {
+let p = e => {
   var t, n, {
       size: s = "md",
       width: c,
       height: f,
-      secondaryColor: _ = "transparent",
-      secondaryColorClass: p = "",
+      secondaryColor: p = "transparent",
+      secondaryColorClass: _ = "",
       color: h = i.Z.colors.INTERACTIVE_NORMAL,
-      colorClass: g = ""
+      colorClass: m = ""
     } = e,
-    m = d(e, ["size", "width", "height", "secondaryColor", "secondaryColorClass", "color", "colorClass"]);
+    g = d(e, ["size", "width", "height", "secondaryColor", "secondaryColorClass", "color", "colorClass"]);
   let E = (0, a.m)(s),
     v = null !== (t = null == E ? void 0 : E.width) && void 0 !== t ? t : c,
     b = null !== (n = null == E ? void 0 : E.height) && void 0 !== n ? n : f;
-  return (0, r.jsxs)("svg", u(l({}, (0, o.Z)(m)), {
+  return (0, r.jsxs)("svg", u(l({}, (0, o.Z)(g)), {
     xmlns: "http://www.w3.org/2000/svg",
     width: v,
     height: b,
@@ -89,14 +89,14 @@ let _ = e => {
       cx: "12",
       cy: "12",
       r: "10",
-      fill: "string" == typeof _ ? _ : _.css,
-      className: p
+      fill: "string" == typeof p ? p : p.css,
+      className: _
     }), (0, r.jsx)("path", {
       fill: "string" == typeof h ? h : h.css,
       fillRule: "evenodd",
       d: "M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm5.7-13.3a1 1 0 0 0-1.4-1.4L10 14.58l-2.3-2.3a1 1 0 0 0-1.4 1.42l3 3a1 1 0 0 0 1.4 0l7-7Z",
       clipRule: "evenodd",
-      className: g
+      className: m
     })]
   }))
 }

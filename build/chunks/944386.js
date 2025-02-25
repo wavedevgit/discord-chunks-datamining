@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  u: () => p
+  u: () => _
 });
 var r = n(192379),
   i = n(493773),
@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,24 +34,24 @@ function _(e) {
   }
   return e
 }
-let p = e => {
+let _ = e => {
   let {
     emojiId: t,
     currentGuildId: n,
     popoutData: f,
-    nonce: p,
+    nonce: _,
     demoMode: h
   } = e, {
-    current: g
-  } = r.useRef(_({
+    current: m
+  } = r.useRef(p({
     guild_id: n,
     emoji_id: t
   }, (0, o.v_)(a.Z.getChannel(s.Z.getChannelId(n)))));
   return (0, i.ZP)(() => {
     var e;
-    (0, c.x)(u.qR.TrackOpenPopoutUsed), h || l.default.track(d.rMx.OPEN_POPOUT, _({
+    (0, c.x)(u.qR.TrackOpenPopoutUsed), h || l.default.track(d.rMx.OPEN_POPOUT, p({
       type: null !== (e = null == f ? void 0 : f.analyticsType) && void 0 !== e ? e : "Standard Emoji Popout",
-      nonce: p
-    }, g))
-  }), g
+      nonce: _
+    }, m))
+  }), m
 }

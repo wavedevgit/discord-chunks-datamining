@@ -58,18 +58,18 @@ function d(e) {
       [t.byweekday.weekday, t.byweekday.n]
     ], t.byweekday = null);
     else {
-      for (var f = [], _ = [], n = 0; n < t.byweekday.length; n++) {
-        var p = t.byweekday[n];
-        if ((0, o.hj)(p)) {
-          f.push(p);
+      for (var f = [], p = [], n = 0; n < t.byweekday.length; n++) {
+        var _ = t.byweekday[n];
+        if ((0, o.hj)(_)) {
+          f.push(_);
           continue
         }
-        if ((0, o.xs)(p)) {
-          f.push(l.O.fromStr(p).weekday);
+        if ((0, o.xs)(_)) {
+          f.push(l.O.fromStr(_).weekday);
           continue
-        }!p.n || t.freq > a.Ci.MONTHLY ? f.push(p.weekday) : _.push([p.weekday, p.n])
+        }!_.n || t.freq > a.Ci.MONTHLY ? f.push(_.weekday) : p.push([_.weekday, _.n])
       }
-      t.byweekday = (0, o.Dw)(f) ? f : null, t.bynweekday = (0, o.Dw)(_) ? _ : null
+      t.byweekday = (0, o.Dw)(f) ? f : null, t.bynweekday = (0, o.Dw)(p) ? p : null
     }
   } else t.bynweekday = null;
   return (0, o.EN)(t.byhour) ? (0, o.hj)(t.byhour) && (t.byhour = [t.byhour]) : t.byhour = t.freq < a.Ci.HOURLY ? [t.dtstart.getUTCHours()] : null, (0, o.EN)(t.byminute) ? (0, o.hj)(t.byminute) && (t.byminute = [t.byminute]) : t.byminute = t.freq < a.Ci.MINUTELY ? [t.dtstart.getUTCMinutes()] : null, (0, o.EN)(t.bysecond) ? (0, o.hj)(t.bysecond) && (t.bysecond = [t.bysecond]) : t.bysecond = t.freq < a.Ci.SECONDLY ? [t.dtstart.getUTCSeconds()] : null, {

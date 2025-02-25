@@ -27,11 +27,11 @@ let f = new l.Z(u.ZP.isMember, (e, t) => {
   })
 });
 
-function _() {
+function p() {
   f.reset()
 }
 
-function p(e) {
+function _(e) {
   let {
     chunks: t
   } = e;
@@ -45,17 +45,17 @@ function h() {
   return f.requestUnacknowledged(), !1
 }
 
-function g(e, t) {
+function m(e, t) {
   return f.request(e, t), !1
 }
 
-function m(e, t) {
+function g(e, t) {
   return t.forEach(t => {
     let {
       author: n,
       mentions: r
     } = t;
-    null != n && g(e, n.id), null == r || r.forEach(t => g(e, t.id))
+    null != n && m(e, n.id), null == r || r.forEach(t => m(e, t.id))
   }), !1
 }
 
@@ -64,7 +64,7 @@ function E(e) {
     channelId: t,
     messages: n
   } = e, r = c.Z.getChannel(t);
-  return null != r && null != r.guild_id && m(r.guild_id, n)
+  return null != r && null != r.guild_id && g(r.guild_id, n)
 }
 
 function v(e) {
@@ -72,22 +72,22 @@ function v(e) {
     guildId: t,
     messages: n
   } = e;
-  return null != t && m(t, o().flatten(n))
+  return null != t && g(t, o().flatten(n))
 }
 class b extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(c.Z, u.ZP)
   }
   requestMember(e, t) {
-    g(e, t)
+    m(e, t)
   }
 }
 d(b, "displayName", "GuildMemberRequesterStore");
 let y = new b(s.Z, {
-  CONNECTION_CLOSED: _,
-  CONNECTION_OPEN: _,
+  CONNECTION_CLOSED: p,
+  CONNECTION_OPEN: p,
   CONNECTION_RESUMED: h,
-  GUILD_MEMBERS_CHUNK_BATCH: p,
+  GUILD_MEMBERS_CHUNK_BATCH: _,
   SEARCH_FINISH: v,
   MOD_VIEW_SEARCH_FINISH: v,
   LOCAL_MESSAGES_LOADED: E,

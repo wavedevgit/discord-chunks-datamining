@@ -50,13 +50,13 @@ function d(e, t) {
 }
 let f = {
   key: a.h8.ADD_PAYMENT_STEPS,
-  renderStep: e => (0, r.jsx)(_, c({}, e)),
+  renderStep: e => (0, r.jsx)(p, c({}, e)),
   options: {
     renderHeader: !0
   }
 };
 
-function _(e) {
+function p(e) {
   let {
     isGift: t
   } = (0, o.wD)();

@@ -9,11 +9,11 @@ var r = n(687249),
   u = n(773151),
   d = n(893741),
   f = n(821164),
-  _ = n(993106),
-  p = n(53919),
+  p = n(993106),
+  _ = n(53919),
   h = n(247323),
-  g = n(609511),
-  m = n(292548),
+  m = n(609511),
+  g = n(292548),
   E = n(290677),
   v = n(551023),
   b = n(118788),
@@ -61,14 +61,14 @@ function ee(e, t, n, C, R, P) {
   if (U) {
     if (D = h(e), !x) return c(e, D)
   } else {
-    var G = p(e),
+    var G = _(e),
       B = G == w || G == L;
     if (v(e)) return l(e, x);
     if (G == j || G == A || B && !R) {
-      if (D = M || B ? {} : m(e), !x) return M ? d(e, s(D, e)) : u(e, a(D, e))
+      if (D = M || B ? {} : g(e), !x) return M ? d(e, s(D, e)) : u(e, a(D, e))
     } else {
       if (!$[G]) return R ? e : {};
-      D = g(e, G, x)
+      D = m(e, G, x)
     }
   }
   P || (P = new r);
@@ -79,7 +79,7 @@ function ee(e, t, n, C, R, P) {
   }) : b(e) && e.forEach(function(r, i) {
     D.set(i, ee(r, t, n, i, e, P))
   });
-  var V = k ? M ? _ : f : M ? keysIn : S,
+  var V = k ? M ? p : f : M ? keysIn : S,
     Z = U ? void 0 : V(e);
   return i(Z || e, function(r, i) {
     Z && (r = e[i = r]), o(D, i, ee(r, t, n, i, e, P))

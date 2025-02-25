@@ -11,11 +11,11 @@ var r = n(147018),
   u = n(4340),
   d = n(90338),
   f = n(865312),
-  _ = n(673743),
-  p = n(644659),
+  p = n(673743),
+  _ = n(644659),
   h = n(603528),
-  g = n(354848),
-  m = n(740362),
+  m = n(354848),
+  g = n(740362),
   E = n(566885),
   v = n(974971),
   b = n(24033),
@@ -31,9 +31,9 @@ var r = n(147018),
   P = C("iterator"),
   D = "URLSearchParams",
   w = D + "Iterator",
-  L = p.set,
-  x = p.getterFor(D),
-  M = p.getterFor(w),
+  L = _.set,
+  x = _.getterFor(D),
+  M = _.getterFor(w),
   j = Object.getOwnPropertyDescriptor,
   k = function(e) {
     if (!s) return i[e];
@@ -94,7 +94,7 @@ var r = n(147018),
   ec = function(e) {
     return Q(Y(e), ea, el)
   },
-  eu = _(function(e, t) {
+  eu = p(function(e, t) {
     L(this, {
       type: w,
       iterator: T(x(e).entries),
@@ -125,7 +125,7 @@ ed.prototype = {
           value: O(l.value)
         })
       } else
-        for (var u in e) m(e, u) && q(this.entries, {
+        for (var u in e) g(e, u) && q(this.entries, {
           key: u,
           value: O(e[u])
         })
@@ -149,13 +149,13 @@ ed.prototype = {
   }
 };
 var ef = function() {
-    h(this, e_);
+    h(this, ep);
     var e = arguments.length > 0 ? arguments[0] : void 0,
       t = L(this, new ed(e));
     s || (this.size = t.entries.length)
   },
-  e_ = ef.prototype;
-if (d(e_, {
+  ep = ef.prototype;
+if (d(ep, {
     append: function(e, t) {
       var n = x(this);
       A(arguments.length, 2), q(n.entries, {
@@ -221,13 +221,13 @@ if (d(e_, {
     }
   }, {
     enumerable: !0
-  }), c(e_, P, e_.entries, {
+  }), c(ep, P, ep.entries, {
     name: "entries"
-  }), c(e_, "toString", function() {
+  }), c(ep, "toString", function() {
     return x(this).serialize()
   }, {
     enumerable: !0
-  }), s && u(e_, "size", {
+  }), s && u(ep, "size", {
     get: function() {
       return x(this).entries.length
     },
@@ -239,39 +239,39 @@ if (d(e_, {
     forced: !l
   }, {
     URLSearchParams: ef
-  }), !l && g(B)) {
-  var ep = a(V.has),
+  }), !l && m(B)) {
+  var e_ = a(V.has),
     eh = a(V.set),
-    eg = function(e) {
+    em = function(e) {
       if (y(e)) {
         var t, n = e.body;
-        if (v(n) === D) return ep(t = e.headers ? new B(e.headers) : new B, "content-type") || eh(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), S(e, {
+        if (v(n) === D) return e_(t = e.headers ? new B(e.headers) : new B, "content-type") || eh(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), S(e, {
           body: I(0, O(n)),
           headers: I(0, t)
         })
       }
       return e
     };
-  if (g(U) && r({
+  if (m(U) && r({
       global: !0,
       enumerable: !0,
       dontCallGetSet: !0,
       forced: !0
     }, {
       fetch: function(e) {
-        return U(e, arguments.length > 1 ? eg(arguments[1]) : {})
+        return U(e, arguments.length > 1 ? em(arguments[1]) : {})
       }
-    }), g(G)) {
-    var em = function(e) {
-      return h(this, F), new G(e, arguments.length > 1 ? eg(arguments[1]) : {})
+    }), m(G)) {
+    var eg = function(e) {
+      return h(this, F), new G(e, arguments.length > 1 ? em(arguments[1]) : {})
     };
-    F.constructor = em, em.prototype = F, r({
+    F.constructor = eg, eg.prototype = F, r({
       global: !0,
       constructor: !0,
       dontCallGetSet: !0,
       forced: !0
     }, {
-      Request: em
+      Request: eg
     })
   }
 }

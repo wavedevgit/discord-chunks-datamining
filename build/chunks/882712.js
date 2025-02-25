@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   I: () => c,
-  Z: () => m
+  Z: () => g
 });
 var r, i = n(442837),
   o = n(570140),
@@ -24,21 +24,21 @@ let u = 0,
   d = null,
   f = null;
 
-function _(e) {
+function p(e) {
   let {
     error: t
   } = e, n = t instanceof a.ZP ? t : new a.ZP(t);
   s.Z.isConnected() && n.code === a.ZP.ErrorCodes.PURCHASE_TOKEN_AUTHORIZATION_REQUIRED && (u = 1)
 }
 
-function p(e) {
+function _(e) {
   u = 2, d = e.purchaseTokenHash, f = e.expiresAt
 }
 
 function h() {
   u = 0, d = null, f = null
 }
-class g extends(r = i.ZP.Store) {
+class m extends(r = i.ZP.Store) {
   get purchaseTokenAuthState() {
     return u
   }
@@ -49,11 +49,11 @@ class g extends(r = i.ZP.Store) {
     return f
   }
 }
-l(g, "displayName", "PurchaseTokenAuthStore");
-let m = new g(o.Z, {
-  SKU_PURCHASE_FAIL: _,
-  PREMIUM_PAYMENT_SUBSCRIBE_FAIL: _,
-  USER_PAYMENT_CLIENT_ADD: p,
+l(m, "displayName", "PurchaseTokenAuthStore");
+let g = new m(o.Z, {
+  SKU_PURCHASE_FAIL: p,
+  PREMIUM_PAYMENT_SUBSCRIBE_FAIL: p,
+  USER_PAYMENT_CLIENT_ADD: _,
   BILLING_PURCHASE_TOKEN_AUTH_CLEAR_STATE: h,
   BILLING_SUBSCRIPTION_UPDATE_START: h,
   PAYMENT_AUTHENTICATION_CLEAR_ERROR: h,

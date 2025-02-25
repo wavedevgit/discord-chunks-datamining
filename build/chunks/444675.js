@@ -52,10 +52,10 @@ var c = [],
   d = -1;
 
 function f() {
-  u && r && (u = !1, r.length ? c = r.concat(c) : d = -1, c.length && _())
+  u && r && (u = !1, r.length ? c = r.concat(c) : d = -1, c.length && p())
 }
 
-function _() {
+function p() {
   if (!u) {
     var e = s(f);
     u = !0;
@@ -67,7 +67,7 @@ function _() {
   }
 }
 
-function p(e, t) {
+function _(e, t) {
   this.fun = e, this.array = t
 }
 
@@ -76,8 +76,8 @@ i.nextTick = function(e) {
   var t = Array(arguments.length - 1);
   if (arguments.length > 1)
     for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-  c.push(new p(e, t)), 1 !== c.length || u || s(_)
-}, p.prototype.run = function() {
+  c.push(new _(e, t)), 1 !== c.length || u || s(p)
+}, _.prototype.run = function() {
   this.fun.apply(null, this.array)
 }, i.title = "browser", i.browser = !0, i.env = {}, i.argv = [], i.version = "", i.versions = {}, i.on = h, i.addListener = h, i.once = h, i.off = h, i.removeListener = h, i.removeAllListeners = h, i.emit = h, i.prependListener = h, i.prependOnceListener = h, i.listeners = function(e) {
   return []

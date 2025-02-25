@@ -16,11 +16,11 @@ var r = n(200651),
   u = n(1561),
   d = n(507274),
   f = n(84735),
-  _ = n(463208),
-  p = n(481060),
+  p = n(463208),
+  _ = n(481060),
   h = n(408886),
-  g = n(44315),
-  m = n(665149),
+  m = n(44315),
+  g = n(665149),
   E = n(981631),
   v = n(388032),
   b = n(324945);
@@ -98,17 +98,17 @@ function D(e) {
     disabled: l = !1,
     style: u = {},
     onClick: d,
-    "aria-label": _
-  } = e, h = (0, s.JA)("color-".concat(t)), m = null != t ? (0, c.Rf)(t) : u.backgroundColor, v = !1;
+    "aria-label": p
+  } = e, h = (0, s.JA)("color-".concat(t)), g = null != t ? (0, c.Rf)(t) : u.backgroundColor, v = !1;
 
   function y() {
     let e = 16,
       t = 16;
-    if ((i || n) && (e = 32, t = 24), o) return (0, r.jsx)(p.dz2, {
+    if ((i || n) && (e = 32, t = 24), o) return (0, r.jsx)(_.dz2, {
       size: "custom",
       width: e,
       height: t,
-      color: (0, g.Lq)(v ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
+      color: (0, m.Lq)(v ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
     })
   }
   return i && !o ? v = !0 : (i || o) && (v = (0, c.Bd)(t) > .1), (0, r.jsx)(f.t, {
@@ -124,17 +124,17 @@ function D(e) {
       disabled: l,
       onClick: () => null == d ? void 0 : d(t),
       style: I(O({}, u), {
-        backgroundColor: m
+        backgroundColor: g
       }),
-      "aria-label": null != _ ? _ : m
+      "aria-label": null != p ? p : g
     }, h), {
-      children: [i ? (0, r.jsx)(p.vdY, {
+      children: [i ? (0, r.jsx)(_.vdY, {
         size: "custom",
         className: b.colorPickerDropper,
         colorClass: b.colorPickerDropperFg,
         width: 14,
         height: 14,
-        color: (0, g.Lq)(v ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
+        color: (0, m.Lq)(v ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
       }) : null, y()]
     }))
   })
@@ -182,7 +182,7 @@ function x(e) {
     onClose: s,
     suggestedColors: l,
     middle: f,
-    footer: g,
+    footer: m,
     showEyeDropper: E,
     wrapperComponentType: y,
     className: S
@@ -255,13 +255,13 @@ function x(e) {
         })
       }), f, (0, r.jsxs)("div", {
         className: b.customColorPickerInputContainer,
-        children: [E && null != T && (0, r.jsx)(m.JO, {
+        children: [E && null != T && (0, r.jsx)(g.JO, {
           onClick: j,
           tooltip: v.NW.string(v.t["0dU9Nz"]),
           tooltipPosition: "top",
           className: b.customColorPickerEyeDropper,
-          icon: p.ilE
-        }), (0, r.jsx)(_.o, {
+          icon: _.ilE
+        }), (0, r.jsx)(p.o, {
           className: b.customColorPickerInput,
           value: L.input,
           onChange: M,
@@ -277,7 +277,7 @@ function x(e) {
           className: b.suggestedColor,
           onClick: () => M(e)
         }, "".concat(e, "-").concat(t)))
-      }), g]
+      }), m]
     }), B = null != y ? y : d.V;
   return (0, r.jsx)(B, {
     "aria-label": v.NW.string(v.t.WTqQ5e),
@@ -297,8 +297,8 @@ function j(e) {
     disabled: u,
     onChange: d,
     renderDefaultButton: f,
-    renderCustomButton: _,
-    colorContainerClassName: p
+    renderCustomButton: p,
+    colorContainerClassName: _
   } = e, h = e => (0, r.jsx)("div", {
     className: b.colorPickerRow,
     children: e.map(e => (0, r.jsx)(D, {
@@ -307,7 +307,7 @@ function j(e) {
       onClick: d,
       disabled: u
     }, e))
-  }), g = o.slice(0, o.length / 2), m = o.slice(o.length / 2, o.length), E = (0, l.ZP)({
+  }), m = o.slice(0, o.length / 2), g = o.slice(o.length / 2, o.length), E = (0, l.ZP)({
     id: "color-picker",
     isEnabled: !0,
     scrollToStart: R,
@@ -325,7 +325,7 @@ function j(e) {
           ref: o
         }, s), {
           children: [(0, r.jsx)("div", {
-            className: a()(b.defaultContainer, p),
+            className: a()(b.defaultContainer, _),
             children: f({
               value: c,
               color: n,
@@ -333,14 +333,14 @@ function j(e) {
               disabled: u
             })
           }), (0, r.jsx)("div", {
-            className: a()(b.customContainer, p),
-            children: _({
+            className: a()(b.customContainer, _),
+            children: p({
               value: c,
               customColor: i,
               disabled: u
             })
           }), (0, r.jsxs)("div", {
-            children: [h(g), h(m)]
+            children: [h(m), h(g)]
           })]
         }))
       }

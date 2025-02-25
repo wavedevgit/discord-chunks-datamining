@@ -156,7 +156,7 @@ function A(e) {
       i = w.match(Z);
     null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, x.d)([(0, y.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, A), v.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && v.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
+    }), "message.".concat(n))], t, A), v.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && v.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: r
     })
   }

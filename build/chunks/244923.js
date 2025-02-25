@@ -18,13 +18,13 @@ let c = function(e) {
     paymentSourceId: u,
     buttonLabel: d,
     analyticsLocations: f
-  } = e, _ = async () => {
+  } = e, p = async () => {
     let e = a.Z.getPaymentSource(u);
     null != e && (await (0, s.i1)(u, (0, l.yb)(t)), await o.tq(t, e, t.currency, f), n())
   };
   return (0, r.jsx)(i.zxk, {
     "data-testid": "purchase",
-    onClick: _,
+    onClick: p,
     color: i.zxk.Colors.GREEN,
     submitting: c,
     children: d

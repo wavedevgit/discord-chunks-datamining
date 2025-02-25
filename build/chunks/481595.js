@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(16084),
   d = n(224550),
   f = n(609194),
-  _ = n(275850),
-  p = n(672971),
+  p = n(275850),
+  _ = n(672971),
   h = n(115130),
-  g = n(228624),
-  m = n(925329),
+  m = n(228624),
+  g = n(925329),
   E = n(215148),
   v = n(653798),
   b = n(314182),
@@ -46,7 +46,7 @@ function U(e) {
   } = e;
   a()(null != n.amount, "SKU must have a price set.");
   let i = n.amount - n.tax,
-    o = (0, g.ed)("SKUInvoice"),
+    o = (0, m.ed)("SKUInvoice"),
     s = t.productLine === M.POd.COLLECTIBLES && o;
   return !n.tax_inclusive && n.tax > 0 ? (0, r.jsxs)(v.PO, {
     className: k.invoice,
@@ -89,7 +89,7 @@ function G(e) {
   } = e;
   return !0 !== i ? null : (0, r.jsxs)("div", {
     className: k.skuHeading,
-    children: [(0, r.jsx)(m.Z, {
+    children: [(0, r.jsx)(g.Z, {
       game: t
     }), (0, r.jsx)(c.X6q, {
       variant: "heading-lg/bold",
@@ -104,7 +104,7 @@ function B(e) {
     hasLegalTermsFlash: t,
     legalTermsNodeRef: n,
     onPaymentSourceChange: o,
-    handlePaymentSourceAdd: m
+    handlePaymentSourceAdd: g
   } = e, {
     application: P,
     purchaseState: B,
@@ -140,8 +140,8 @@ function B(e) {
     ec = s.M.EEA_COUNTRIES.has(S.Z.ipCountryCodeWithFallback),
     eu = B === L.A.PURCHASING || B === L.A.COMPLETED,
     ed = null != V ? F[V].type : null,
-    ef = (0, g.ed)("SKUInvoice"),
-    e_ = er.productLine === M.POd.COLLECTIBLES && ef;
+    ef = (0, m.ed)("SKUInvoice"),
+    ep = er.productLine === M.POd.COLLECTIBLES && ef;
   return i.useEffect(() => {
     en && V === et && et !== T.c && null == ea && (0, u.x2)(er.applicationId, er.id, et, {
       isGift: J
@@ -183,7 +183,7 @@ function B(e) {
       className: k.invoiceSpinner
     }) : (0, r.jsx)(v.PO, {
       className: k.invoice,
-      children: e_ ? (0, r.jsx)(E.C, {
+      children: ep ? (0, r.jsx)(E.C, {
         sku: er,
         value: null,
         className: k.subscriptionCostRow
@@ -197,17 +197,17 @@ function B(e) {
       children: [(0, r.jsx)(c.vwX, {
         tag: c.RB0.H5,
         children: j.NW.string(j.t.mmDvV1)
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         paymentSources: Object.values(F),
         selectedPaymentSourceId: V,
         onChange: o,
-        onPaymentSourceAdd: m,
+        onPaymentSourceAdd: g,
         hidePersonalInformation: el
       })]
     }), (0, r.jsx)(b.Z, {
       isActive: t,
       ref: n,
-      children: (0, r.jsx)(p.Z, {
+      children: (0, r.jsx)(_.Z, {
         onChange: Z,
         forceShow: !0,
         showWithdrawalWaiver: ec,

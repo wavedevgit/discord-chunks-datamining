@@ -1,6 +1,6 @@
 /** Chunk was on 89444 **/
 n.d(t, {
-  Z: () => f
+  Z: () => p
 });
 var i = n(200651),
   r = n(192379),
@@ -12,12 +12,12 @@ var i = n(200651),
   d = n(963550),
   c = n(845080),
   h = n(656017);
-let f = r.memo(function(e) {
+let p = r.memo(function(e) {
   var t, n, r;
   let {
     message: l,
-    channel: f,
-    compact: p,
+    channel: p,
+    compact: f,
     className: g,
     isGroupStart: v,
     hideSimpleEmbedContent: C = !0,
@@ -32,10 +32,10 @@ let f = r.memo(function(e) {
     previewLinkTarget: !0
   });
   return (0, i.jsx)(a.Z, {
-    compact: p,
+    compact: f,
     className: o()(g, {
       [h.message]: !0,
-      [h.cozyMessage]: !p,
+      [h.cozyMessage]: !f,
       [h.groupStart]: v
     }),
     childrenHeader: (0, c.Z)((n = function(e) {
@@ -56,7 +56,7 @@ let f = r.memo(function(e) {
       }
       return e
     }({}, e), r = r = {
-      channel: f,
+      channel: p,
       guildId: void 0
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);

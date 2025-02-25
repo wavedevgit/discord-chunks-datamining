@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -46,7 +46,7 @@ class f extends i.PureComponent {
         breadcrumbs: o,
         renderCustomBreadcrumb: l,
         separatorClassName: d
-      } = this.props, f = e.id === n, _ = () => this.handleClick(e), p = t === o.length - 1, h = null != l ? l(e, f) : (0, r.jsx)("span", {
+      } = this.props, f = e.id === n, p = () => this.handleClick(e), _ = t === o.length - 1, h = null != l ? l(e, f) : (0, r.jsx)("span", {
         className: a()(u.breadcrumb, {
           [u.activeBreadcrumb]: f,
           [u.interactiveBreadcrumb]: null != i
@@ -55,14 +55,14 @@ class f extends i.PureComponent {
       });
       return (0, r.jsxs)("div", {
         className: a()(u.breadcrumbWrapper, {
-          [u.breadcrumbFinalWrapper]: p
+          [u.breadcrumbFinalWrapper]: _
         }),
         children: [null != i ? (0, r.jsx)(s.P3F, {
           tag: "span",
-          onClick: _,
+          onClick: p,
           className: u.breadcrumbClickWrapper,
           children: h
-        }) : h, p ? null : (0, r.jsx)(c.Z, {
+        }) : h, _ ? null : (0, r.jsx)(c.Z, {
           className: a()(u.breadcrumbArrow, d),
           direction: c.Z.Directions.RIGHT
         })]
@@ -70,4 +70,4 @@ class f extends i.PureComponent {
     })
   }
 }
-let _ = f
+let p = f

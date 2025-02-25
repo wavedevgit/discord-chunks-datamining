@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(411104);
 var r = n(200651),
   i = n(192379),
@@ -19,28 +19,28 @@ async function f(e) {
   if (200 !== (await (0, a.aD)(e)).status) throw Error("Build override couldn't apply");
   window.location.reload(!0)
 }
-async function _() {
+async function p() {
   await (0, a.bF)(), window.location.reload(!0)
 }
-let p = i.memo(function(e) {
+let _ = i.memo(function(e) {
   let {
     url: t
   } = e, n = (0, o.cj)([s.C], () => s.C.getCurrentBuildOverride()), a = (0, o.e7)([s.C], () => s.C.getBuildOverride(t)), {
-    payload: p,
+    payload: _,
     validatedURL: h
-  } = a, g = n.state === s.Z.Resolving || a.state === s.Z.Resolving, m = i.useCallback(() => {
+  } = a, m = n.state === s.Z.Resolving || a.state === s.Z.Resolving, g = i.useCallback(() => {
     if ((0, l.mG)(a.url) && null != a.override) {
       var e;
       return f(null === (e = a.override) || void 0 === e ? void 0 : e.targetBuildOverride)
     }
-    return null == p ? Promise.reject(Error("Invalid override payload")) : ((0, u.Z)(a.override, p), d(p))
-  }, [p, a]);
+    return null == _ ? Promise.reject(Error("Invalid override payload")) : ((0, u.Z)(a.override, _), d(_))
+  }, [_, a]);
   return null != h ? (0, r.jsx)(c.Z, {
-    loading: g,
+    loading: m,
     linkMeta: a.override,
     currentOverrides: n.overrides,
-    applyBuildOverride: m,
-    clearBuildOverride: _,
+    applyBuildOverride: g,
+    clearBuildOverride: p,
     url: h
   }) : null
 })

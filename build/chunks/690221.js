@@ -45,8 +45,8 @@ let d = r.forwardRef(function(e, t) {
     children: d,
     onClick: c,
     onKeyPress: h,
-    focusProps: f
-  } = e, p = function(e, t) {
+    focusProps: p
+  } = e, f = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -72,10 +72,10 @@ let d = r.forwardRef(function(e, t) {
       href: n,
       onClick: v,
       onKeyPress: g
-    }, p), {
+    }, f), {
       children: d
     }));
-  return (0, i.jsx)(l.tEY, u(a({}, f), {
+  return (0, i.jsx)(l.tEY, u(a({}, p), {
     children: C
   }))
 })

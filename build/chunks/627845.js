@@ -24,7 +24,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,10 +36,10 @@ function _(e) {
   }
   return e
 }
-let p = window.matchMedia("(prefers-reduced-motion: reduce)"),
+let _ = window.matchMedia("(prefers-reduced-motion: reduce)"),
   h = window.matchMedia("(prefers-contrast: more)"),
-  g = window.matchMedia("(prefers-contrast: less)"),
-  m = window.matchMedia("(prefers-color-scheme: dark)"),
+  m = window.matchMedia("(prefers-contrast: less)"),
+  g = window.matchMedia("(prefers-color-scheme: dark)"),
   E = window.matchMedia("(prefers-color-scheme: light)"),
   v = window.matchMedia("(forced-colors: active)"),
   b = 5;
@@ -54,7 +54,7 @@ function O() {
 }
 let S = {
   initBasic() {
-    p.addListener(this.handleSystemPrefersReducedMotionChanged), this.handleSystemPrefersReducedMotionChanged(p), m.addListener(this.handleSystemColorPreferencesChanged), E.addListener(this.handleSystemColorPreferencesChanged), v.addListener(this.handleSystemColorPreferencesChanged), this.handleSystemColorPreferencesChanged(), h.addListener(this.handleSystemPrefersContrastChanged), g.addListener(this.handleSystemPrefersContrastChanged), this.handleSystemPrefersContrastChanged()
+    _.addListener(this.handleSystemPrefersReducedMotionChanged), this.handleSystemPrefersReducedMotionChanged(_), g.addListener(this.handleSystemColorPreferencesChanged), E.addListener(this.handleSystemColorPreferencesChanged), v.addListener(this.handleSystemColorPreferencesChanged), this.handleSystemColorPreferencesChanged(), h.addListener(this.handleSystemPrefersContrastChanged), m.addListener(this.handleSystemPrefersContrastChanged), this.handleSystemPrefersContrastChanged()
   },
   init() {
     this.initBasic(), o.Z.subscribe("ACCESSIBILITY_COLORBLIND_TOGGLE", () => {
@@ -72,7 +72,7 @@ let S = {
       let {
         default: e
       } = await Promise.all([n.e("6380"), n.e("84468")]).then(n.bind(n, 461964));
-      return t => (0, r.jsx)(e, _({}, t))
+      return t => (0, r.jsx)(e, p({}, t))
     })
   },
   handleSystemPrefersReducedMotionChanged(e) {
@@ -82,7 +82,7 @@ let S = {
   },
   handleSystemColorPreferencesChanged() {
     let e;
-    m.matches ? e = d.BRd.DARK : E.matches && (e = d.BRd.LIGHT);
+    g.matches ? e = d.BRd.DARK : E.matches && (e = d.BRd.LIGHT);
     let t = (!l.isPlatformEmbedded || O()) && v.matches ? "active" : "none";
     o.Z.wait(() => {
       c.Ej(e, t)
@@ -90,7 +90,7 @@ let S = {
   },
   handleSystemPrefersContrastChanged() {
     let e = "no-preference";
-    h.matches ? e = "more" : g.matches && (e = "less"), o.Z.wait(() => {
+    h.matches ? e = "more" : m.matches && (e = "less"), o.Z.wait(() => {
       c.TX(e)
     })
   }

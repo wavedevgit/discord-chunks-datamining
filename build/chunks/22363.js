@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -14,16 +14,16 @@ var i = n(120356),
   u = n(149203),
   d = n(185923),
   f = n(82845);
-let _ = e => {
+let p = e => {
   let {
     accessory: t,
     pickerIntention: n,
     headerClassName: i,
-    emojiListRef: _,
-    onKeyDown: p,
+    emojiListRef: p,
+    onKeyDown: _,
     onFocus: h,
-    autoFocus: g,
-    searchBarRef: m,
+    autoFocus: m,
+    searchBarRef: g,
     hasTabWrapper: E,
     diversitySurrogate: v,
     isBurstReaction: b,
@@ -31,14 +31,14 @@ let _ = e => {
     renderHeader: O
   } = e, S = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
-      emojiListRef: _,
+      emojiListRef: p,
       gridNavigatorId: u.Vr,
-      onKeyDown: p,
+      onKeyDown: _,
       className: f.searchBar,
-      ref: m,
+      ref: g,
       isFullRow: !1,
       onFocus: h,
-      autoFocus: g,
+      autoFocus: m,
       defaultSearchPlaceholder: (0, s.nV)(n, b)
     }), n === d.Hz.REACTION ? (0, r.jsx)("div", {
       className: f.burstToggle,
@@ -47,7 +47,7 @@ let _ = e => {
         onClick: y
       })
     }) : null, null != t ? t : (0, r.jsx)(l.Z, {
-      searchBarRef: m,
+      searchBarRef: g,
       className: f.diversitySelector,
       hasTabWrapper: E,
       selectedSurrogate: v

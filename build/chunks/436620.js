@@ -5,7 +5,7 @@ n.d(t, {
   KO: () => l,
   U8: () => u,
   WS: () => d,
-  X6: () => _,
+  X6: () => p,
   fi: () => c
 });
 var r, i = n(264344),
@@ -26,4 +26,4 @@ let a = parseInt(null !== (r = o().version) && void 0 !== r ? r : "0", 10),
   u = "Chrome" === o().name || "Safari" === o().name || "Firefox" === o().name && a >= 80 || "Opera" === o().name || "Microsoft Edge" === o().name,
   d = s || "Firefox" === o().name && a >= 73 || "Safari" === o().name && a >= 13 || "Chrome" === o().name && a >= 80 || "Microsoft Edge" === o().name && a >= 80,
   f = "Chrome" === o().name && a >= 58 || "Safari" === o().name && a >= 15 || "Firefox" === o().name && a >= 108,
-  _ = "Chrome" === o().name && a >= 72 || "Safari" === o().name && a >= 11 || "Opera" === o().name && a >= 60 || "Microsoft Edge" === o().name && a >= 79
+  p = "Chrome" === o().name && a >= 72 || "Safari" === o().name && a >= 11 || "Opera" === o().name && a >= 60 || "Microsoft Edge" === o().name && a >= 79

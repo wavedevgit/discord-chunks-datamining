@@ -25,14 +25,14 @@ var r = n(544891),
   u = n(626135),
   d = n(129542),
   f = n(877481),
-  _ = n(830168),
-  p = n(57513),
+  p = n(830168),
+  _ = n(57513),
   h = n(981631),
-  g = n(388032);
-let m = 64;
+  m = n(388032);
+let g = 64;
 
 function E(e, t) {
-  _.Z.init({
+  p.Z.init({
     userToken: e,
     userId: t,
     installPaths: c.Z.installationPaths,
@@ -53,7 +53,7 @@ function E(e, t) {
 }
 
 function v() {
-  _.Z.destroy()
+  p.Z.destroy()
 }
 
 function b(e) {
@@ -65,7 +65,7 @@ function b(e) {
     installationPath: a,
     analyticsLocation: s
   } = e;
-  _.Z.setTargetManifest({
+  p.Z.setTargetManifest({
     applicationId: t.id,
     applicationName: t.name,
     applicationIcon: t.icon,
@@ -87,7 +87,7 @@ function b(e) {
 }
 
 function y(e, t, n) {
-  (0, p.l)(e.id, t).then(() => {
+  (0, _.l)(e.id, t).then(() => {
     i.Z.dispatch({
       type: "DISPATCH_APPLICATION_REPAIR",
       applicationId: e.id,
@@ -105,7 +105,7 @@ function O(e, t, n, r) {
   if (a.ZP.getRunningDiscordApplicationIds().includes(e.id)) return;
   let i = c.Z.getInstallationPath(e.id, t);
   if (null == i) throw Error("Missing installation path for application: ".concat(e.id, " ").concat(t));
-  _.Z.setTargetManifest({
+  p.Z.setTargetManifest({
     applicationId: e.id,
     applicationName: e.name,
     applicationIcon: e.icon,
@@ -133,7 +133,7 @@ function I(e, t, n) {
     application_name: r.name,
     sku_id: r.primarySkuId,
     location: n
-  })), _.Z.uninstall(e, t), i.Z.dispatch({
+  })), p.Z.uninstall(e, t), i.Z.dispatch({
     type: "DISPATCH_APPLICATION_UNINSTALL",
     applicationId: e,
     branchId: t
@@ -141,11 +141,11 @@ function I(e, t, n) {
 }
 
 function T() {
-  _.Z.resume()
+  p.Z.resume()
 }
 
 function N() {
-  _.Z.pause()
+  p.Z.pause()
 }
 
 function A(e, t) {
@@ -157,7 +157,7 @@ function A(e, t) {
 }
 
 function C(e, t) {
-  _.Z.cancel(e, t), i.Z.dispatch({
+  p.Z.cancel(e, t), i.Z.dispatch({
     type: "DISPATCH_APPLICATION_CANCEL",
     applicationId: e,
     branchId: t
@@ -187,7 +187,7 @@ function D(e, t) {
     let {
       default: t
     } = e;
-    t.showNotification(i.getIconURL(m), g.NW.string(g.t["1wR7yM"]), g.NW.formatToPlainString(g.t["89VAgY"], {
+    t.showNotification(i.getIconURL(g), m.NW.string(m.t["1wR7yM"]), m.NW.formatToPlainString(m.t["89VAgY"], {
       name: i.name
     }), {
       notif_type: "Game Library Game Installed"

@@ -48,15 +48,15 @@ function f(e, t) {
   })(e, t)
 }
 
-function _(e) {
-  var t = g();
+function p(e) {
+  var t = m();
   return function() {
-    var n, r = m(e);
-    return n = t ? Reflect.construct(r, arguments, m(this).constructor) : r.apply(this, arguments), p(this, n)
+    var n, r = g(e);
+    return n = t ? Reflect.construct(r, arguments, g(this).constructor) : r.apply(this, arguments), _(this, n)
   }
 }
 
-function p(e, t) {
+function _(e, t) {
   return t && ("object" === s(t) || "function" == typeof t) ? t : h(e)
 }
 
@@ -65,7 +65,7 @@ function h(e) {
   return e
 }
 
-function g() {
+function m() {
   if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) return !1;
   if ("function" == typeof Proxy) return !0;
   try {
@@ -75,8 +75,8 @@ function g() {
   }
 }
 
-function m(e) {
-  return (m = Object.setPrototypeOf ? Object.getPrototypeOf : function(e) {
+function g(e) {
+  return (g = Object.setPrototypeOf ? Object.getPrototypeOf : function(e) {
     return e.__proto__ || Object.getPrototypeOf(e)
   })(e)
 }
@@ -91,7 +91,7 @@ function E(e, t, n) {
 }
 var v = function(e) {
   d(n, e);
-  var t = _(n);
+  var t = p(n);
 
   function n() {
     var e;

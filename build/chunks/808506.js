@@ -13,11 +13,11 @@ var i, o = n(807864),
   u = n(224706),
   d = n(765250),
   f = n(13245),
-  _ = n(287734),
-  p = n(615287),
+  p = n(287734),
+  _ = n(615287),
   h = n(579806),
-  g = n(887278),
-  m = n(490029),
+  m = n(887278),
+  g = n(490029),
   E = n(710845),
   v = n(353926),
   b = n(594190),
@@ -103,7 +103,7 @@ class ee {
         this.actionsToFlush.clear();
         return
       }
-      this.actionsToFlush.size > 0 && (m.lW({
+      this.actionsToFlush.size > 0 && (g.lW({
         type: k.BmY.DISPATCH,
         pid: null,
         token: null,
@@ -147,7 +147,7 @@ function ec(e) {
   if (null != ea[e]) return;
   let r = b.ZP.getGameForPID(e);
   ea[e] = {
-    overlay_method: p.gl[p.gl.Hook],
+    overlay_method: _.gl[_.gl.Hook],
     success: !1,
     game_name: null !== (t = null == r ? void 0 : r.name) && void 0 !== t ? t : null,
     game_id: null !== (n = null == r ? void 0 : r.id) && void 0 !== n ? n : null,
@@ -186,7 +186,7 @@ function ef(e, t) {
   }
 }
 
-function e_() {
+function ep() {
   try {
     var e;
     let t = null === h.Z || void 0 === h.Z ? void 0 : null === (e = h.Z.fileManager) || void 0 === e ? void 0 : e.uploadDiscordHookCrashes;
@@ -214,10 +214,10 @@ function e_() {
   }
 }
 
-function ep(e, t) {
+function e_(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
     r = W.get(e);
-  (null === n || r === n) && r !== t && (null == t ? W.delete(e) : W.set(e, t), (null == t || "CRASHED" === t) && (Q = null, e_()), $.delete(e), eo.info("pid=".concat(e, " status transition ").concat(null != r ? r : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), W))
+  (null === n || r === n) && r !== t && (null == t ? W.delete(e) : W.set(e, t), (null == t || "CRASHED" === t) && (Q = null, ep()), $.delete(e), eo.info("pid=".concat(e, " status transition ").concat(null != r ? r : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), W))
 }
 async function eh(e) {
   try {
@@ -240,7 +240,7 @@ async function eh(e) {
     }
   }
 }
-async function eg(e) {
+async function em(e) {
   var t;
   ed.isMutexHeld() || eo.error("_attachPIDMustBeLocked: overlayMutex is not held.", e);
   let n = null !== (t = es(e).mounting_started_at) && void 0 !== t ? t : new Date().getTime();
@@ -252,22 +252,22 @@ async function eg(e) {
     eo.warn("Trying to attach to pid=".concat(e, ", that is already in status: ").concat(r));
     return
   }
-  await f.Z.updateOverlayState(e, p.mM.WAITING_FOR_OVERLAY_OPEN), eu = "attach.getOverlayModule";
+  await f.Z.updateOverlayState(e, _.mM.WAITING_FOR_OVERLAY_OPEN), eu = "attach.getOverlayModule";
   let i = await (0, j.K)();
   if (null == i) {
     eo.error("Trying to attach to pid=".concat(e, ", but overlay module failed loaded"));
     return
   }
-  eu = "attach.transitionOverlayPIDStatus", ep(e, "ATTACHING"), eu = "attach.attachToProcess";
-  let o = await g.YT(e);
-  null == o ? (eu = "attach.transitionOverlayPIDStatus (CONNECTING)", ep(e, "CONNECTING", "ATTACHING"), eu = "attach.reconcileHostProcess", await eh(i), i.connectProcess(e)) : (eu = "attach.transitionOverlayPIDStatus (HOOK_FAILED)", ep(e, "HOOK_FAILED", "ATTACHING"), eo.warn("Could not hook to pid=".concat(e, ", error=").concat(o)))
+  eu = "attach.transitionOverlayPIDStatus", e_(e, "ATTACHING"), eu = "attach.attachToProcess";
+  let o = await m.YT(e);
+  null == o ? (eu = "attach.transitionOverlayPIDStatus (CONNECTING)", e_(e, "CONNECTING", "ATTACHING"), eu = "attach.reconcileHostProcess", await eh(i), i.connectProcess(e)) : (eu = "attach.transitionOverlayPIDStatus (HOOK_FAILED)", e_(e, "HOOK_FAILED", "ATTACHING"), eo.warn("Could not hook to pid=".concat(e, ", error=").concat(o)))
 }
-async function em(e) {
+async function eg(e) {
   if (ed.isMutexHeld() || eo.error("_detachPIDMustBeLocked: overlayMutex is not held.", e), !W.has(e)) {
     eo.warn("Trying to detach from pid ".concat(e, ", which is in an unknown state"));
     return
   }
-  ep(e, "DISCONNECTING");
+  e_(e, "DISCONNECTING");
   try {
     eu = "detach.getOverlayModule";
     let t = await (0, j.K)();
@@ -275,9 +275,9 @@ async function em(e) {
       eo.error("Trying to detach from pid=".concat(e, ", but overlay module failed loaded"));
       return
     }
-    e !== M.Js && (eu = "detach.cancelAttachToProcess", await g.pn(e), await (0, s._v)(16), eu = "detach.disconnectProcess", await t.disconnectProcess(e)), eu = "detach.transitionOverlayPIDStatus", ep(e, null), eu = "detach.reconcileHostProcess", await eh(t)
+    e !== M.Js && (eu = "detach.cancelAttachToProcess", await m.pn(e), await (0, s._v)(16), eu = "detach.disconnectProcess", await t.disconnectProcess(e)), eu = "detach.transitionOverlayPIDStatus", e_(e, null), eu = "detach.reconcileHostProcess", await eh(t)
   } catch (t) {
-    eo.error("Error during overlay detachment for pid ".concat(e, ":"), t), ep(e, null)
+    eo.error("Error during overlay detachment for pid ".concat(e, ":"), t), e_(e, null)
   }
 }
 async function eE(e) {
@@ -318,23 +318,23 @@ async function eE(e) {
       continue
     }
     if (eo.verbose("updateIntendedOverlayPIDs: newGame", n), n.legacyEnabled) switch (n.pid in Z ? eo.error("Unexpected. ".concat(n.pid, " is being added twice?"), Z, e) : ec(n.pid), n.overlayMethod) {
-      case p.gl.Hook:
+      case _.gl.Hook:
         let r = new Date().getTime();
         el(n.pid, {
           mounting_started_at: r,
           fullscreen_type: await (0, I.hj)(n.pid, 0)
-        }), W.has(n.pid) || await eg(n.pid), Z[n.pid] = {
+        }), W.has(n.pid) || await em(n.pid), Z[n.pid] = {
           method: n.overlayMethod,
           deconstructor: async () => {
-            await em(n.pid)
+            await eg(n.pid)
           }
         }, i = !0;
         break;
-      case p.gl.OutOfProcess:
-      case p.gl.OutOfProcessLimitedInteraction:
+      case _.gl.OutOfProcess:
+      case _.gl.OutOfProcessLimitedInteraction:
         eo.error("updateIntendedOverlayPIDs: out of process called for hook overlay", n);
         break;
-      case p.gl.Disabled:
+      case _.gl.Disabled:
         eo.verbose("updateIntendedOverlayPIDs: disabled", n);
         break;
       default:
@@ -386,20 +386,20 @@ function eI(e, t, n) {
       game_name: i,
       game_id: null == o ? null : o.id,
       success: t,
-      overlay_method: p.gl[p.gl.Hook]
+      overlay_method: _.gl[_.gl.Hook]
     }, n);
   el(e, B({}, a)), (0, d.te)(M.qU, R.Z.getDefaultLayout(M.qU), 0, {
     width: n.graphics_width,
     height: n.graphics_height
-  }), f.Z.updateOverlayState(e, p.mM.OVERLAY_RENDERING);
+  }), f.Z.updateOverlayState(e, _.mM.OVERLAY_RENDERING);
   let s = es(e);
-  D.default.track(k.rMx.OVERLAY_HOOK_RESULT, s), eo.info("Overlay connection to ".concat(e, " ").concat(t ? "succeeded" : "failed"), s), t ? ep(e, "CONNECTED", "CONNECTING") : ep(e, "CONNECT_FAILED", "CONNECTING")
+  D.default.track(k.rMx.OVERLAY_HOOK_RESULT, s), eo.info("Overlay connection to ".concat(e, " ").concat(t ? "succeeded" : "failed"), s), t ? e_(e, "CONNECTED", "CONNECTING") : e_(e, "CONNECT_FAILED", "CONNECTING")
 }
 
 function eT() {
   let e = A.default.getToken(),
     t = A.default.getId();
-  null != e && m.lW({
+  null != e && g.lW({
     type: k.BmY.DISPATCH,
     pid: null,
     token: null,
@@ -425,17 +425,17 @@ function eA(e) {
           pid: i,
           token: o
         } = e;
-        m.lW({
+        g.lW({
           type: k.BmY.STORAGE_SYNC,
           pid: i,
           token: o,
           states: r
-        }), m.lW({
+        }), g.lW({
           type: k.BmY.DISPATCH,
           pid: i,
           token: o,
           payloads: [n]
-        }), ep(i, "READY"), (0, M.tB)(i), f.Z.overlayReady(i);
+        }), e_(i, "READY"), (0, M.tB)(i), f.Z.overlayReady(i);
         let a = es(i);
         el(i, V(B({}, a), {
           total_mount_time_ms: null != a.mounting_started_at ? new Date().getTime() - a.mounting_started_at : void 0
@@ -502,7 +502,7 @@ function ex(e) {
   } = e;
   J = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "d8e7d59bb8191429760caf6185417cae95e09ed3"), n.append("rpc", String(t)), n.append("rpc_auth_token", J), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "9d79cd56edd2a86d666c461a9eaf09088581d42e"), n.append("rpc", String(t)), n.append("rpc_auth_token", J), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eM(e) {
@@ -511,7 +511,7 @@ function eM(e) {
     ring: n
   } = e;
   setImmediate(() => {
-    _.default.selectPrivateChannel(t), c.Z.call(t, !1, !!n)
+    p.default.selectPrivateChannel(t), c.Z.call(t, !1, !!n)
   })
 }
 
@@ -528,7 +528,7 @@ function ek(e) {
     pid: n,
     error: r
   } = e;
-  ep(n, "CRASHED"), el(n, {
+  e_(n, "CRASHED"), el(n, {
     renderer_crash_count: (null !== (t = es(n).renderer_crash_count) && void 0 !== t ? t : 0) + 1,
     error: r instanceof Error ? r.message : r,
     error_description: r instanceof Error ? r.stack : void 0
@@ -607,7 +607,7 @@ function eY(e) {
     pid: e.pid,
     overlayMethod: e.overlayMethod,
     overlayLabel: (0, I.P_)(e.overlayMethod)
-  }), e.overlayMethod === p.gl.Hook ? ev({
+  }), e.overlayMethod === _.gl.Hook ? ev({
     added: [e.pid],
     removed: []
   }) : ev({
@@ -629,7 +629,7 @@ function eq() {
 }
 class eQ extends(i = a.ZP.Store) {
   initialize() {
-    !(!U.iP || __OVERLAY__) && (this.waitFor(b.ZP, v.Z, A.default, T.ZP, S.default), this.syncWith([v.Z], eK), m.sr(eA, eN), A.default.addChangeListener(eT), l.Z.addInterceptor(et.queueDispatch))
+    !(!U.iP || __OVERLAY__) && (this.waitFor(b.ZP, v.Z, A.default, T.ZP, S.default), this.syncWith([v.Z], eK), g.sr(eA, eN), A.default.addChangeListener(eT), l.Z.addInterceptor(et.queueDispatch))
   }
   isFocusedPidInputLocked() {
     let e = this.getFocusedPID();

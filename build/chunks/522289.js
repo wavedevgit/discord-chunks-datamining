@@ -21,14 +21,14 @@ function d(e) {
     onFocus: a,
     onClick: d,
     size: f = c.Z.Sizes.SMALLER,
-    hideOverflowCount: _ = !1,
-    disableGuildNameTooltip: p = !1
+    hideOverflowCount: p = !1,
+    disableGuildNameTooltip: _ = !1
   } = e;
 
   function h() {
     let e = s()(i).take(n).map(e => {
         let t = e.name;
-        return p ? (0, r.jsx)("div", {
+        return _ ? (0, r.jsx)("div", {
           className: u.avatar,
           children: (0, r.jsx)(c.Z, {
             guild: e,
@@ -47,7 +47,7 @@ function d(e) {
         }, e.id)
       }).value(),
       t = i.length - n;
-    return t > 0 && !_ && (e[e.length - 1] = (0, r.jsxs)(l.zxk, {
+    return t > 0 && !p && (e[e.length - 1] = (0, r.jsxs)(l.zxk, {
       className: o()(u.avatar, u.overflow),
       onFocus: a,
       onClick: e => null == d ? void 0 : d(e),

@@ -12,11 +12,11 @@ var r, i = n(392711),
   u = n(704907),
   d = n(581883),
   f = n(594174),
-  _ = n(164878),
-  p = n(763296),
+  p = n(164878),
+  _ = n(763296),
   h = n(697426),
-  g = n(710111),
-  m = n(526761);
+  m = n(710111),
+  g = n(526761);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,7 +58,7 @@ function y(e, t) {
 }
 let O = [],
   S = new(s())({
-    max: g.zb
+    max: m.zb
   }),
   I = new u.ZP({
     computeBonus: () => 100,
@@ -66,9 +66,9 @@ let O = [],
       let t = 1;
       return e <= 3 ? t = 100 : e <= 15 ? t = 70 : e <= 30 ? t = 50 : e <= 45 ? t = 30 : e <= 80 && (t = 10), t
     },
-    lookupKey: e => p.Z.getSoundById(e),
+    lookupKey: e => _.Z.getSoundById(e),
     afterCompute: () => {},
-    numFrequentlyItems: g.O6
+    numFrequentlyItems: m.O6
   });
 
 function T(e) {
@@ -104,7 +104,7 @@ function C(e) {
 }
 
 function R(e) {
-  for (let t of p.Z.getSounds().values())
+  for (let t of _.Z.getSounds().values())
     if (null != t.find(t => t.soundId.toString() === e)) return !0;
   return !1
 }
@@ -129,25 +129,25 @@ function w(e) {
     },
     wasSaved: n
   } = e;
-  x() && t === m.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (O = [])
+  x() && t === g.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (O = [])
 }
 
 function L() {
-  return (0, _.v)({
+  return (0, p.v)({
     location: "soundboard_event_store",
     autoTrackExposure: !1
   }).canSeeRecentlyHeard
 }
 
 function x() {
-  return (0, _.v)({
+  return (0, p.v)({
     location: "soundboard_event_store",
     autoTrackExposure: !1
   }).canSeeFrequentlyPlayed
 }
 class M extends(r = l.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(f.default, p.Z), (null == e ? void 0 : e.recentlyHeardCache) != null && S.load(e.recentlyHeardCache), (null == e ? void 0 : e.playedEventsPendingFlush) != null && (O = e.playedEventsPendingFlush), this.syncWith([d.Z], D)
+    this.waitFor(f.default, _.Z), (null == e ? void 0 : e.recentlyHeardCache) != null && S.load(e.recentlyHeardCache), (null == e ? void 0 : e.playedEventsPendingFlush) != null && (O = e.playedEventsPendingFlush), this.syncWith([d.Z], D)
   }
   getState() {
     return {

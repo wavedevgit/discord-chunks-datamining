@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  p: () => p
+  p: () => _
 });
 var r = n(200651);
 n(192379);
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,16 +36,16 @@ function _(e) {
   return e
 }
 
-function p(e) {
+function _(e) {
   let {
     showUpsell: t,
     text: n,
     textVariant: i,
     button: f,
-    buttonAnalyticsObject: p,
+    buttonAnalyticsObject: _,
     className: h,
-    buttonStyles: g,
-    onSubscribeModalClose: m,
+    buttonStyles: m,
+    onSubscribeModalClose: g,
     showShadow: E = !0,
     position: v = "floating",
     buttonSize: b = "md",
@@ -59,7 +59,7 @@ function p(e) {
     }
   });
   return (0, r.jsxs)(a.animated.div, {
-    style: _({}, O),
+    style: p({}, O),
     className: o()(d.upsellContainer, {
       [d.upsellContainerShadow]: E,
       [d.upsellContainerFloating]: "floating" === v,
@@ -82,12 +82,12 @@ function p(e) {
     }), "string" == typeof f ? (0, r.jsx)(c.Z, {
       size: b,
       className: d.upsellButton,
-      shinyButtonClassName: null != g ? g : d.upsellButton,
+      shinyButtonClassName: null != m ? m : d.upsellButton,
       subscriptionTier: u.Si.TIER_2,
       buttonText: f,
-      premiumModalAnalyticsLocation: p,
+      premiumModalAnalyticsLocation: _,
       tabIndex: t ? 0 : -1,
-      onSubscribeModalClose: m
+      onSubscribeModalClose: g
     }) : f]
   })
 }

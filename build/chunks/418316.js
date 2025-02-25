@@ -43,8 +43,8 @@ function h(e) {
   let {
     item: I,
     renderApplication: S,
-    disambiguateGameRelationships: T
-  } = e, P = null !== (r = null === (t = I.other_user) || void 0 === t ? void 0 : t.id) && void 0 !== r ? r : p.lds, A = d.ZP.getName(s.default.getUser(null === (n = I.other_user) || void 0 === n ? void 0 : n.id)), w = I.applicationId;
+    disambiguateGameRelationships: P
+  } = e, T = null !== (r = null === (t = I.other_user) || void 0 === t ? void 0 : t.id) && void 0 !== r ? r : p.lds, A = d.ZP.getName(s.default.getUser(null === (n = I.other_user) || void 0 === n ? void 0 : n.id)), w = I.applicationId;
   switch (I.type) {
     case u.O7.FRIEND_REQUESTS_GROUPED:
       let Z = d.ZP.getName(s.default.getUser(null === (g = I.other_users) || void 0 === g ? void 0 : null === (h = g[0]) || void 0 === h ? void 0 : h.id)),
@@ -59,7 +59,7 @@ function h(e) {
       let L = null !== (O = null === (x = I.local_id) || void 0 === x ? void 0 : x.split("_").pop()) && void 0 !== O ? O : "unknown";
       return "Update to build ".concat(L, " available!");
     case u.DY.FRIEND_SUGGESTION_CREATED:
-      return l.Z.getRelationshipType(P), p.OGo.PENDING_OUTGOING, null !== (E = I.body) && void 0 !== E ? E : "";
+      return l.Z.getRelationshipType(T), p.OGo.PENDING_OUTGOING, null !== (E = I.body) && void 0 !== E ? E : "";
     case u.DY.GUILD_SCHEDULED_EVENT_STARTED:
       let D = I.guild_scheduled_event_id,
         M = null != D ? a.ZP.getGuildScheduledEvent(D) : null,
@@ -75,7 +75,7 @@ function h(e) {
         username: A,
         applicationId: w,
         renderApplication: S,
-        disambiguateGameRelationships: T,
+        disambiguateGameRelationships: P,
         withApplicationAndDisambiguation: m.t.Yzf3Oz,
         withApplication: m.t["9Dgf1N"],
         withDisambiguation: m.t.I6UV2N,
@@ -86,7 +86,7 @@ function h(e) {
         username: A,
         applicationId: w,
         renderApplication: S,
-        disambiguateGameRelationships: T,
+        disambiguateGameRelationships: P,
         withApplicationAndDisambiguation: m.t.pXd0yc,
         withApplication: m.t.nnC1q6,
         withDisambiguation: m.t["Iv4E6+"],
@@ -97,7 +97,7 @@ function h(e) {
         username: A,
         applicationId: w,
         renderApplication: S,
-        disambiguateGameRelationships: T,
+        disambiguateGameRelationships: P,
         withApplicationAndDisambiguation: m.t["nc+g/P"],
         withApplication: m.t.jXlYiI,
         withDisambiguation: m.t.T5gdaG,

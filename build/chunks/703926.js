@@ -13,14 +13,14 @@ var r = n(200651),
   u = n(74838),
   d = n(720834),
   f = n(385925),
-  _ = n(588921),
-  p = n(718720),
+  p = n(588921),
+  _ = n(718720),
   h = n(721513),
-  g = n(959191);
-let m = {
+  m = n(959191);
+let g = {
     [a.Cj.STANDARD_BOX]: f,
-    [a.Cj.CAKE]: _,
-    [a.Cj.CHEST]: p,
+    [a.Cj.CAKE]: p,
+    [a.Cj.CHEST]: _,
     [a.Cj.COFFEE]: h,
     [a.Cj.SNOWGLOBE]: "",
     [a.Cj.BOX]: "",
@@ -29,7 +29,7 @@ let m = {
     [a.Cj.SEASONAL_CHEST]: u,
     [a.Cj.SEASONAL_COFFEE]: d,
     [a.Cj.SEASONAL_STANDARD_BOX]: l,
-    [a.Cj.NITROWEEN_STANDARD]: g.Z
+    [a.Cj.NITROWEEN_STANDARD]: m.Z
   },
   E = i.forwardRef(function(e, t) {
     let {
@@ -51,7 +51,7 @@ let m = {
           height: "100%"
         },
         alt: "",
-        src: m[i],
+        src: g[i],
         className: n ? s.customGiftBoxHighlighted : s.customGiftBox
       })
     })

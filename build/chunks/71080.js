@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   EQ: () => d,
-  IG: () => _,
+  IG: () => p,
   aC: () => c,
   kf: () => f,
   m$: () => u
@@ -22,7 +22,7 @@ var r = n(230711),
 let d = 20,
   f = "channelPermissionSettingsAdvancedModeOn";
 
-function _(e, t, n, c) {
+function p(e, t, n, c) {
   let u = e.type;
   return {
     [s.Plq.VIEW_CHANNEL.toString()]: {

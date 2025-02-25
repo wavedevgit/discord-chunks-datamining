@@ -36,18 +36,18 @@ let l = {
   d = new Set,
   f = {};
 
-function _(e) {
+function p(e) {
   var t;
   let n = null === (t = u[e]) || void 0 === t ? void 0 : t.newMemberActions;
   return null == n ? null : (f[e] = n, f[e])
 }
 
-function p(e) {
+function _(e) {
   let {
     homeSettings: t,
     guildId: n
   } = e;
-  null != n && (null == t && (u[n] = l), u[n] = t, _(n), d.delete(n))
+  null != n && (null == t && (u[n] = l), u[n] = t, p(n), d.delete(n))
 }
 
 function h(e) {
@@ -57,14 +57,14 @@ function h(e) {
   d.add(t)
 }
 
-function g(e) {
+function m(e) {
   let {
     guildId: t
   } = e;
   d.delete(t)
 }
 
-function m(e) {
+function g(e) {
   let {
     guildId: t,
     enabled: n
@@ -111,7 +111,7 @@ class y extends(r = i.ZP.Store) {
   }
   getNewMemberActions(e) {
     var t;
-    return null == e || (null === (t = this.getSettings(e)) || void 0 === t ? void 0 : t.newMemberActions) == null ? null : null == f[e] ? _(e) : f[e]
+    return null == e || (null === (t = this.getSettings(e)) || void 0 === t ? void 0 : t.newMemberActions) == null ? null : null == f[e] ? p(e) : f[e]
   }
   getActionForChannel(e, t) {
     var n;
@@ -152,10 +152,10 @@ class y extends(r = i.ZP.Store) {
 a(y, "displayName", "GuildOnboardingHomeSettingsStore");
 let O = new y(o.Z, {
   GUILD_HOME_SETTINGS_FETCH_START: h,
-  GUILD_HOME_SETTINGS_FETCH_SUCCESS: p,
-  GUILD_HOME_SETTINGS_FETCH_FAIL: g,
-  GUILD_HOME_SETTINGS_UPDATE_SUCCESS: p,
-  GUILD_HOME_SETTINGS_TOGGLE_ENABLED: m,
+  GUILD_HOME_SETTINGS_FETCH_SUCCESS: _,
+  GUILD_HOME_SETTINGS_FETCH_FAIL: m,
+  GUILD_HOME_SETTINGS_UPDATE_SUCCESS: _,
+  GUILD_HOME_SETTINGS_TOGGLE_ENABLED: g,
   GUILD_RESOURCE_CHANNEL_UPDATE_SUCCESS: v,
   GUILD_NEW_MEMBER_ACTION_UPDATE_SUCCESS: b,
   GUILD_DELETE: E

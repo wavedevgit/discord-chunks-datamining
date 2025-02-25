@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L$: () => _,
-  Sr: () => p,
+  L$: () => p,
+  Sr: () => _,
   WQ: () => f,
   cT: () => d,
   d$: () => c,
@@ -70,7 +70,7 @@ async function f(e, t) {
     credential: n.body
   })
 }
-async function _() {
+async function p() {
   let {
     body: {
       ticket: e,
@@ -86,7 +86,7 @@ async function _() {
     challenge: t
   }
 }
-async function p(e, t, n) {
+async function _(e, t, n) {
   let i = await a.Z.post({
     url: s.ANM.MFA_WEBAUTHN_CREDENTIALS,
     body: {

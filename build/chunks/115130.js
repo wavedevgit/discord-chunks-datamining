@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  O: () => _,
+  O: () => p,
   Z: () => I
 }), n(789020);
 var r, i = n(442837),
@@ -41,17 +41,17 @@ function d() {
   }
 }
 let f = d();
-var _ = function(e) {
+var p = function(e) {
   return e.INITIALIZED = "INITIALIZED", e.LOADING = "LOADING", e.LOADED = "LOADED", e.ERROR = "ERROR", e
 }({});
-let p = "INITIALIZED",
+let _ = "INITIALIZED",
   h = [];
 
-function g() {
-  f = d(), p = "INITIALIZED", h = []
+function m() {
+  f = d(), _ = "INITIALIZED", h = []
 }
 
-function m() {
+function g() {
   f.useActivityUrlOverride = !f.useActivityUrlOverride
 }
 
@@ -75,14 +75,14 @@ function b(e) {
   let {
     applications: t
   } = e;
-  p = "LOADED", h = t.filter(e => null != e.flags && (0, s.yE)(e.flags, l.udG.EMBEDDED))
+  _ = "LOADED", h = t.filter(e => null != e.flags && (0, s.yE)(e.flags, l.udG.EMBEDDED))
 }
 
 function y(e) {
   let {
     type: t
   } = e;
-  p = "ERROR"
+  _ = "ERROR"
 }
 
 function O(e) {
@@ -111,7 +111,7 @@ class S extends(r = i.ZP.PersistedStore) {
     return this.getIsEnabled() ? f.activityUrlOverride : null
   }
   getFetchState() {
-    return p
+    return _
   }
   getFilter() {
     return this.getIsEnabled() ? f.filter : ""
@@ -125,12 +125,12 @@ class S extends(r = i.ZP.PersistedStore) {
 }
 c(S, "displayName", "DeveloperActivityShelfStore"), c(S, "persistKey", "DeveloperActivityShelfStore"), c(S, "migrations", [e => (delete e.isEnabled, u({}, e))]);
 let I = new S(o.Z, {
-  LOGOUT: g,
-  DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: m,
+  LOGOUT: m,
+  DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: g,
   DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE: E,
   DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: v,
   DEVELOPER_ACTIVITY_SHELF_FETCH_START() {
-    p = "LOADING"
+    _ = "LOADING"
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: b,
   DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: y,

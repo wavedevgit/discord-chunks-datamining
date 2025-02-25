@@ -13,11 +13,11 @@ var r = n(392711),
   u = n(496675),
   d = n(9156),
   f = n(70956),
-  _ = n(630388),
-  p = n(823379),
+  p = n(630388),
+  _ = n(823379),
   h = n(789662),
-  g = n(981631),
-  m = n(526761);
+  m = n(981631),
+  g = n(526761);
 
 function E(e, t, n, r, i) {
   if (t !== h.AR.UseGreyDot) return [{
@@ -27,8 +27,8 @@ function E(e, t, n, r, i) {
     }
   }];
   let o = [],
-    a = Object.values(s.Z.getMutableGuildChannelsForGuild(e.id)).filter(e => u.Z.can(g.Plq.VIEW_CHANNEL, e));
-  return o.push(...v(e, a)), o.push(b(e)), o.push(y()), o.push(...S(a)), o.push(...I(a)), o.push(...A(a)), l.Z.hasConsented(g.pjP.PERSONALIZATION) ? o.push(...T(e, a, n, r, i)) : o.push(...N(e, a)), o.filter(p.lm)
+    a = Object.values(s.Z.getMutableGuildChannelsForGuild(e.id)).filter(e => u.Z.can(m.Plq.VIEW_CHANNEL, e));
+  return o.push(...v(e, a)), o.push(b(e)), o.push(y()), o.push(...S(a)), o.push(...I(a)), o.push(...A(a)), l.Z.hasConsented(m.pjP.PERSONALIZATION) ? o.push(...T(e, a, n, r, i)) : o.push(...N(e, a)), o.filter(_.lm)
 }
 
 function v(e, t) {
@@ -40,23 +40,23 @@ function v(e, t) {
       },
       needsMarkedAsRead: !0
     }],
-    r = t.filter(t => d.ZP.getChannelMessageNotifications(e.id, t.id) === g.bL.ALL_MESSAGES);
+    r = t.filter(t => d.ZP.getChannelMessageNotifications(e.id, t.id) === m.bL.ALL_MESSAGES);
   return r.length > 0 && n.push({
     label: "Setting ".concat(r.length, " to mentions-only since they were all-messages and we are unmuting the guild"),
     debug: r.map(e => "\n    - #".concat(e.name)).join(""),
     apply: (e, t) => {
       for (let n of r) C(e, t, n.id, e => {
-        e.message_notifications = g.bL.ONLY_MENTIONS
+        e.message_notifications = m.bL.ONLY_MENTIONS
       })
     }
   }), n
 }
 
 function b(e) {
-  if (d.ZP.getMessageNotifications(e.id) === g.bL.ALL_MESSAGES) return {
+  if (d.ZP.getMessageNotifications(e.id) === m.bL.ALL_MESSAGES) return {
     label: "Setting the guild to only mentions since it is in care-a-little but was previously all-messages",
     apply: e => {
-      e.message_notifications = g.bL.ONLY_MENTIONS
+      e.message_notifications = m.bL.ONLY_MENTIONS
     }
   }
 }
@@ -72,12 +72,12 @@ function y() {
 
 function O(e, t, n) {
   var r, i;
-  e.flags = (0, _.mB)(null !== (i = null !== (r = e.flags) && void 0 !== r ? r : t.flags) && void 0 !== i ? i : 0, m.vc.UNREADS_ALL_MESSAGES, n), e.flags = (0, _.mB)(e.flags, m.vc.UNREADS_ONLY_MENTIONS, !n)
+  e.flags = (0, p.mB)(null !== (i = null !== (r = e.flags) && void 0 !== r ? r : t.flags) && void 0 !== i ? i : 0, g.vc.UNREADS_ALL_MESSAGES, n), e.flags = (0, p.mB)(e.flags, g.vc.UNREADS_ONLY_MENTIONS, !n)
 }
 
 function S(e) {
   let t = [],
-    [n, r] = i()(e).filter(e => e.type === g.d4z.GUILD_ANNOUNCEMENT).partition(e => d.ZP.isChannelMuted(e.guild_id, e.id) || null != e.parent_id && d.ZP.isChannelMuted(e.guild_id, e.parent_id)).value();
+    [n, r] = i()(e).filter(e => e.type === m.d4z.GUILD_ANNOUNCEMENT).partition(e => d.ZP.isChannelMuted(e.guild_id, e.id) || null != e.parent_id && d.ZP.isChannelMuted(e.guild_id, e.parent_id)).value();
   return n.length > 0 && t.push({
     label: "Not touching ".concat(n.length, " announcement channels since they are muted"),
     debug: n.map(e => "\n    - #".concat(e.name)).join("")
@@ -119,23 +119,23 @@ function T(e, t, n, r, o) {
       return e + Number(null !== (n = t.num_three_month_opens) && void 0 !== n ? n : 0)
     }, 0) * o.frecency.totalOpensPercent),
     f = [],
-    _ = [];
+    p = [];
   t.forEach(e => {
     var t, n, r, i;
     let o = null !== (t = l[e.id]) && void 0 !== t ? t : {};
-    Number(null !== (n = o.num_year_opens) && void 0 !== n ? n : 0) > c || Number(null !== (r = o.num_month_opens) && void 0 !== r ? r : 0) > u ? f.push(e) : Number(null !== (i = o.num_three_month_opens) && void 0 !== i ? i : 0) > 2 && _.push(e)
+    Number(null !== (n = o.num_year_opens) && void 0 !== n ? n : 0) > c || Number(null !== (r = o.num_month_opens) && void 0 !== r ? r : 0) > u ? f.push(e) : Number(null !== (i = o.num_three_month_opens) && void 0 !== i ? i : 0) > 2 && p.push(e)
   });
-  let p = [];
-  return f.length > 0 && p.push({
+  let _ = [];
+  return f.length > 0 && _.push({
     label: "Setting ".concat(f.length, " channels to white-dot since they are recent and frequently viewed"),
     debug: f.map(e => "\n    - #".concat(e.name, " (").concat(JSON.stringify(l[e.id]), ")")).join(""),
     apply: (e, t) => {
       for (let n of f) R(e, t, n.id, !0)
     }
-  }), _.length > 0 && p.push({
-    label: "NOT setting ".concat(_.length, " channels to white-dot because they were only viewed a little."),
-    debug: _.map(e => "\n    - #".concat(e.name, " (").concat(JSON.stringify(l[e.id]), ")")).join("")
-  }), p
+  }), p.length > 0 && _.push({
+    label: "NOT setting ".concat(p.length, " channels to white-dot because they were only viewed a little."),
+    debug: p.map(e => "\n    - #".concat(e.name, " (").concat(JSON.stringify(l[e.id]), ")")).join("")
+  }), _
 }
 
 function N(e, t) {
@@ -164,7 +164,7 @@ function A(e) {
   return e.forEach(e => {
     if (d.ZP.isChannelMuted(e.guild_id, e.id)) return;
     let t = d.ZP.getChannelMessageNotifications(e.guild_id, e.id);
-    t === g.bL.ALL_MESSAGES ? n.push(e) : t === g.bL.ONLY_MENTIONS && r.push(e)
+    t === m.bL.ALL_MESSAGES ? n.push(e) : t === m.bL.ONLY_MENTIONS && r.push(e)
   }), n.length > 0 && t.push({
     label: "Setting ".concat(n.length, " channels to white-dot since they were explicitly All Messages"),
     debug: n.map(e => "\n    - #".concat(e.name)).join(""),
@@ -189,6 +189,6 @@ function C(e, t, n, r) {
 function R(e, t, n, r) {
   C(e, t, n, (e, t) => {
     var n, i;
-    e.flags = (0, _.mB)(null !== (i = null !== (n = e.flags) && void 0 !== n ? n : t.flags) && void 0 !== i ? i : 0, m.ic.UNREADS_ALL_MESSAGES, r), e.flags = (0, _.mB)(e.flags, m.ic.UNREADS_ONLY_MENTIONS, !r)
+    e.flags = (0, p.mB)(null !== (i = null !== (n = e.flags) && void 0 !== n ? n : t.flags) && void 0 !== i ? i : 0, g.ic.UNREADS_ALL_MESSAGES, r), e.flags = (0, p.mB)(e.flags, g.ic.UNREADS_ONLY_MENTIONS, !r)
   })
 }

@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,14 +47,14 @@ function p(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function g(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -109,27 +109,27 @@ function b(e) {
     style: {
       height: d
     }
-  }, "---list-spacer-top")], _ = [], p = 0;
+  }, "---list-spacer-top")], p = [], _ = 0;
   if (!0 === s && null != a && f.push((0, r.jsx)(i.Fragment, {
       children: a()
     }, "---sticky-header")), u.forEach(e => {
       var r;
-      switch (e.section !== p && _.length > 0 && (f.push(null != c ? c(p, _) : _), _ = []), p = null !== (r = e.section) && void 0 !== r ? r : 0, e.type) {
+      switch (e.section !== _ && p.length > 0 && (f.push(null != c ? c(_, p) : p), p = []), _ = null !== (r = e.section) && void 0 !== r ? r : 0, e.type) {
         case "section":
-          null != t && _.push(t(e));
+          null != t && p.push(t(e));
           break;
         case "row":
-          _.push(n(e));
+          p.push(n(e));
           break;
         case "footer":
-          null != o && _.push(o(e));
+          null != o && p.push(o(e));
           break;
         case "header":
-          null != a && !0 !== s && _.push(a())
+          null != a && !0 !== s && p.push(a())
       }
-    }), _.length > 0) {
+    }), p.length > 0) {
     var h;
-    f.push(null !== (h = null == c ? void 0 : c(p, _)) && void 0 !== h ? h : _)
+    f.push(null !== (h = null == c ? void 0 : c(_, p)) && void 0 !== h ? h : p)
   }
   return l()(f)
 }
@@ -156,9 +156,9 @@ function O(e, t, n, o) {
         null === (t = l.get(n)) || void 0 === t || t(e)
       })
     });
-  return i.forwardRef(function(o, p) {
+  return i.forwardRef(function(o, _) {
     var {
-      className: m,
+      className: g,
       onScroll: O,
       onResize: S = null,
       onContentResize: I = null,
@@ -190,7 +190,7 @@ function O(e, t, n, o) {
       innerAriaOrientation: Q,
       innerClassName: X,
       innerTag: J = "div"
-    } = o, $ = g(o, ["className", "onScroll", "onResize", "onContentResize", "dir", "sections", "sectionHeight", "rowHeight", "footerHeight", "sidebarHeight", "listHeaderHeight", "renderSection", "renderRow", "renderFooter", "renderSidebar", "renderListHeader", "stickyListHeader", "wrapSection", "getAnchorId", "paddingTop", "paddingBottom", "fade", "customTheme", "chunkSize", "style", "innerId", "innerRole", "innerAriaLabel", "innerAriaMultiselectable", "innerAriaOrientation", "innerClassName", "innerTag"]);
+    } = o, $ = m(o, ["className", "onScroll", "onResize", "onContentResize", "dir", "sections", "sectionHeight", "rowHeight", "footerHeight", "sidebarHeight", "listHeaderHeight", "renderSection", "renderRow", "renderFooter", "renderSidebar", "renderListHeader", "stickyListHeader", "wrapSection", "getAnchorId", "paddingTop", "paddingBottom", "fade", "customTheme", "chunkSize", "style", "innerId", "innerRole", "innerAriaLabel", "innerAriaMultiselectable", "innerAriaOrientation", "innerClassName", "innerTag"]);
     let ee = i.useRef(null),
       et = i.useRef(null),
       [en, er] = i.useState(!1),
@@ -201,7 +201,7 @@ function O(e, t, n, o) {
       } = (0, u.T4)();
     (0, u.tT)({
       scrollerRef: ei,
-      className: m,
+      className: g,
       specs: s,
       orientation: "vertical",
       dir: T
@@ -213,7 +213,7 @@ function O(e, t, n, o) {
       isSidebarVisible: eu,
       listComputer: ed,
       forceUpdateOnChunkChange: ef,
-      anchor: e_
+      anchor: ep
     } = (0, u.aU)({
       sections: N,
       sectionHeight: A,
@@ -226,11 +226,11 @@ function O(e, t, n, o) {
       chunkSize: H,
       getScrollerState: ea,
       getAnchorId: G
-    }), ep = (0, u.t2)(ei), eh = i.useRef(S), eg = i.useRef(I);
+    }), e_ = (0, u.t2)(ei), eh = i.useRef(S), em = i.useRef(I);
     i.useLayoutEffect(() => {
-      eh.current = S, eg.current = I
+      eh.current = S, em.current = I
     });
-    let em = i.useCallback(function() {
+    let eg = i.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 2;
         if (e > eo.current.dirty && (eo.current.dirty = e), 2 === e) {
           var t;
@@ -238,7 +238,7 @@ function O(e, t, n, o) {
         }
         ef(e)
       }, [ef, eo]),
-      eE = i.useCallback(() => em(), [em]);
+      eE = i.useCallback(() => eg(), [eg]);
     (0, u.zn)({
       ref: ei,
       onUpdate: eE,
@@ -249,7 +249,7 @@ function O(e, t, n, o) {
       ref: et,
       onUpdate: () => {
         var e;
-        return null === (e = eg.current) || void 0 === e ? void 0 : e.call(eg)
+        return null === (e = em.current) || void 0 === e ? void 0 : e.call(em)
       },
       key: "content",
       resizeObserver: f,
@@ -257,30 +257,30 @@ function O(e, t, n, o) {
     });
     let ev = E(ec),
       eb = v(N);
-    i.useImperativeHandle(p, () => _({
+    i.useImperativeHandle(_, () => p({
       getScrollerNode: () => ei.current,
       getScrollerState: ea,
       getItems: ev,
       getSectionRowFromIndex: eb
-    }, (0, u.rH)(ei, ea, ed, ep)), [ei, ea, eb, ev, ed, ep]);
+    }, (0, u.rH)(ei, ea, ed, e_)), [ei, ea, eb, ev, ed, e_]);
     let ey = i.useCallback(e => {
-      em(1), null == ee.current ? er(!0) : clearTimeout(ee.current), ee.current = setTimeout(() => {
+      eg(1), null == ee.current ? er(!0) : clearTimeout(ee.current), ee.current = setTimeout(() => {
         ee.current = null, er(!1)
       }, 200), null != O && O(e)
-    }, [O, em]);
+    }, [O, eg]);
     return i.useLayoutEffect(() => {
       2 !== eo.current.dirty && (eo.current.dirty = 2)
     }, [ec, w, L, x, U, el, es, eo]), (0, u.rS)({
       scrollerRef: ei,
-      anchor: e_,
+      anchor: ep,
       getScrollerState: ea,
       listComputer: ed,
       getAnchorId: G,
       totalHeight: el
-    }), (0, r.jsxs)("div", h(_({
+    }), (0, r.jsxs)("div", h(p({
       ref: ei,
       onScroll: ey,
-      className: a()(m, {
+      className: a()(g, {
         [e]: !0,
         [t]: V,
         [n]: Z,

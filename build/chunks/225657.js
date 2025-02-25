@@ -18,13 +18,13 @@ let f = e => {
     selectedSkuId: t,
     validateSelectedGift: n,
     className: f
-  } = e, _ = (0, i.Wu)([l.Z], () => l.Z.getFriendIDs()), p = (0, i.Wu)([c.default], () => c.default.filter(e => _.includes(e.id) && !e.bot), [_]), {
+  } = e, p = (0, i.Wu)([l.Z], () => l.Z.getFriendIDs()), _ = (0, i.Wu)([c.default], () => c.default.filter(e => p.includes(e.id) && !e.bot), [p]), {
     giftRecipient: h,
-    setGiftRecipient: g
+    setGiftRecipient: m
   } = (0, s.wD)();
   if (null == t) return null;
-  let m = e => {
-    n(e, t), g(e)
+  let g = e => {
+    n(e, t), m(e)
   };
   return (0, r.jsxs)("div", {
     className: f,
@@ -37,8 +37,8 @@ let f = e => {
         size: o.EFr.SIZE_20
       }),
       value: h,
-      onChange: m,
-      options: p.map(e => ({
+      onChange: g,
+      options: _.map(e => ({
         value: e,
         label: "".concat(u.ZP.getUserTag(e))
       }))

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r, i = n(442837),
   o = n(570140);
@@ -37,14 +37,14 @@ function f(e) {
   c = t.id
 }
 
-function _(e) {
+function p(e) {
   let {
     userId: t
   } = e;
   u(t, null)
 }
 
-function p(e) {
+function _(e) {
   let {
     isSwitchingAccount: t
   } = e;
@@ -57,7 +57,7 @@ function h(e) {
   } = e;
   u(t, null)
 }
-class g extends(r = i.ZP.PersistedStore) {
+class m extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     null != e && (s = e)
   }
@@ -76,12 +76,12 @@ class g extends(r = i.ZP.PersistedStore) {
     return s
   }
 }
-a(g, "displayName", "LoginRequiredActionStore"), a(g, "persistKey", "LoginRequiredActionStore");
-let m = new g(o.Z, {
+a(m, "displayName", "LoginRequiredActionStore"), a(m, "persistKey", "LoginRequiredActionStore");
+let g = new m(o.Z, {
   LOGIN_ATTEMPTED: d,
   CONNECTION_OPEN: f,
   CURRENT_USER_UPDATE: f,
-  LOGOUT: p,
-  PASSWORD_UPDATED: _,
+  LOGOUT: _,
+  PASSWORD_UPDATED: p,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: h
 })

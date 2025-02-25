@@ -4,13 +4,13 @@ n.d(t, {
   DH: () => N,
   HD: () => d,
   PD: () => A,
-  P_: () => m,
+  P_: () => g,
   X8: () => f,
   hj: () => S,
   qT: () => C,
   qc: () => I,
-  sS: () => g,
-  tY: () => _
+  sS: () => m,
+  tY: () => p
 }), n(47120);
 var r = n(615287),
   i = n(593472),
@@ -22,9 +22,9 @@ var r = n(615287),
 let u = new o.Z("OverlayRenderUtils"),
   d = 5e3,
   f = 8e3,
-  _ = 12e3;
+  p = 12e3;
 
-function p(e) {
+function _(e) {
   let [t] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [a.ZP], n = t.getGameForPID(e);
   try {
     return null == n ? c.ZP.GetWindowFullscreenTypeByPid(e) : c.ZP.GetWindowFullscreenTypeByPid(n.pid, n.name, n.fullscreenType)
@@ -39,12 +39,12 @@ function h(e) {
     [n] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [a.ZP];
   return new Promise(r => {
     setTimeout(() => {
-      r(p(e, [n]))
+      r(_(e, [n]))
     }, t)
   })
 }
 
-function g(e) {
+function m(e) {
   switch (e) {
     case i.Jx.BORDERLESS_FULLSCREEN:
       return "Borderless Fullscreen";
@@ -61,7 +61,7 @@ function g(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   switch (e) {
     case r.gl.OutOfProcess:
       return "Out of Process";

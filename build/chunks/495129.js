@@ -25,21 +25,21 @@ var i = n(120356),
   O = n(66811);
 
 function E(e) {
-  var t, n, i, E, j, N, C, I, S, T;
+  var t, n, i, E, j, N, C, I, S, P;
   let {
-    message: P,
+    message: T,
     channel: A
-  } = e, w = null === (i = P.embeds[0]) || void 0 === i ? void 0 : null === (n = i.fields) || void 0 === n ? void 0 : null === (t = n.find(e => {
+  } = e, w = null === (i = T.embeds[0]) || void 0 === i ? void 0 : null === (n = i.fields) || void 0 === n ? void 0 : null === (t = n.find(e => {
     let {
       rawName: t
     } = e;
     return "guild_id" === t
-  })) || void 0 === t ? void 0 : t.rawValue, Z = null === (N = P.embeds[0]) || void 0 === N ? void 0 : null === (j = N.fields) || void 0 === j ? void 0 : null === (E = j.find(e => {
+  })) || void 0 === t ? void 0 : t.rawValue, Z = null === (N = T.embeds[0]) || void 0 === N ? void 0 : null === (j = N.fields) || void 0 === j ? void 0 : null === (E = j.find(e => {
     let {
       rawName: t
     } = e;
     return "channel_id" === t
-  })) || void 0 === E ? void 0 : E.rawValue, k = (0, o.e7)([g.Z], () => g.Z.getGuild(w)), R = (0, o.e7)([h.Z], () => h.Z.getChannel(Z)), L = (0, o.e7)([_.default], () => _.default.getCurrentUser()), D = (0, o.e7)([], () => P.author.id === (null == L ? void 0 : L.id)), M = null === (C = A.recipients) || void 0 === C ? void 0 : C.find(e => e !== P.author.id), W = (0, o.e7)([_.default], () => null != M ? _.default.getUser(M) : null), F = (0, u.ZP)(P), U = (0, v._T)(A.getGuildId(), A.id, W), B = (0, o.Wu)([b.ZP], () => null != R ? b.ZP.getVoiceStatesForChannel(R) : [], [R]), G = B.some(e => e.user.id === (null == L ? void 0 : L.id)), H = null === (T = P.embeds[0]) || void 0 === T ? void 0 : null === (S = T.fields) || void 0 === S ? void 0 : null === (I = S.find(e => {
+  })) || void 0 === E ? void 0 : E.rawValue, k = (0, o.e7)([g.Z], () => g.Z.getGuild(w)), R = (0, o.e7)([h.Z], () => h.Z.getChannel(Z)), L = (0, o.e7)([_.default], () => _.default.getCurrentUser()), D = (0, o.e7)([], () => T.author.id === (null == L ? void 0 : L.id)), M = null === (C = A.recipients) || void 0 === C ? void 0 : C.find(e => e !== T.author.id), W = (0, o.e7)([_.default], () => null != M ? _.default.getUser(M) : null), F = (0, u.ZP)(T), U = (0, v._T)(A.getGuildId(), A.id, W), B = (0, o.Wu)([b.ZP], () => null != R ? b.ZP.getVoiceStatesForChannel(R) : [], [R]), G = B.some(e => e.user.id === (null == L ? void 0 : L.id)), H = null === (P = T.embeds[0]) || void 0 === P ? void 0 : null === (S = P.fields) || void 0 === S ? void 0 : null === (I = S.find(e => {
     let {
       rawName: t
     } = e;

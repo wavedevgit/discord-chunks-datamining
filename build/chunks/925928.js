@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => p,
+  ZP: () => _,
   Zk: () => f,
   d0: () => d
 });
@@ -28,7 +28,7 @@ let a = 60,
     years: o.t["12B3RU"]
   });
 
-function _(e) {
+function p(e) {
   let {
     seconds: t,
     getFormatter: n
@@ -48,12 +48,12 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     since: t,
     getFormatter: n
   } = e;
-  return _({
+  return p({
     seconds: i()().diff(i()(t), "s"),
     getFormatter: n
   })

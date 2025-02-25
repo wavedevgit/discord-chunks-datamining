@@ -78,8 +78,8 @@ let I = {
   }
 };
 var S = ((r = {}).TOP_LEFT = "TOP_LEFT", r.TOP_RIGHT = "TOP_RIGHT", r.BOTTOM_LEFT = "BOTTOM_LEFT", r.BOTTOM_RIGHT = "BOTTOM_RIGHT", r);
-let T = ["TOP_LEFT", "TOP_RIGHT"],
-  P = (0, d.Mg)(u.Z.USER_PREMIUM_GUILD_SUBSCRIPTION_EASTER_EGG_SIZE),
+let P = ["TOP_LEFT", "TOP_RIGHT"],
+  T = (0, d.Mg)(u.Z.USER_PREMIUM_GUILD_SUBSCRIPTION_EASTER_EGG_SIZE),
   A = {
     leafPosition: {
       x: 85,
@@ -180,7 +180,7 @@ function W(e) {
       case "enter":
         return "confetti";
       case "confetti":
-        if (T.includes(t)) return "leaf_peel";
+        if (P.includes(t)) return "leaf_peel";
         return "exit";
       case "leaf_peel":
         return "leaf_fall";
@@ -189,7 +189,7 @@ function W(e) {
       case "exit":
         return "enter"
     }
-  }(u, h), O = T.includes(h), E = O && "exit" === u, N = a.useCallback(e => {
+  }(u, h), O = P.includes(h), E = O && "exit" === u, N = a.useCallback(e => {
     m(e)
   }, []), C = a.useCallback(() => {
     "exit" === u && (null == t || t())
@@ -201,7 +201,7 @@ function W(e) {
       let {
         confettiVelocityDirection: e
       } = w[h], t = function(e, t) {
-        let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : P,
+        let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : T,
           r = null == e ? void 0 : e.getBoundingClientRect();
         if (null == r) return {
           x: 0,
@@ -336,11 +336,11 @@ function F(e) {
     [C, I] = a.useState(!1),
     S = a.useRef(null),
     {
-      reducedMotion: T
+      reducedMotion: P
     } = a.useContext(p.Sfi),
-    P = (0, y.ZH)(n),
-    A = P.nick,
-    w = l(P);
+    T = (0, y.ZH)(n),
+    A = T.nick,
+    w = l(T);
   t = null == c || null == o ? d > 1 ? E.NW.format(E.t.yfC9dn, {
     username: A,
     usernameHook: w,
@@ -361,14 +361,14 @@ function F(e) {
     newTierName: (0, v.nW)(c)
   });
   let k = a.useCallback(() => {
-      if (!T.enabled) {
+      if (!P.enabled) {
         if (C || 0 !== Math.floor(50 * Math.random())) {
           var e;
           let t = null === (e = S.current) || void 0 === e ? void 0 : e.getBoundingClientRect();
           if (null != t) u(t.left + t.width / 2, t.top + t.height / 2)
         } else I(!0)
       }
-    }, [u, T, C]),
+    }, [u, P, C]),
     R = a.useCallback(() => {
       I(!1)
     }, []),

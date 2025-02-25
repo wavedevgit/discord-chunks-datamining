@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,14 +47,14 @@ function p(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = () => {
+let m = () => {
     s.Z.clearSuppressWarning()
   },
-  m = () => {
+  g = () => {
     s.Z.clearSuppressWarning(!0)
   },
   E = () => {
@@ -63,29 +63,29 @@ let g = () => {
     function t() {
       null !== e.current && ((0, a.Mr3)(e.current), e.current = null)
     }
-    let [s, f] = (0, o.Wu)([u.Z], () => [u.Z.shouldShowWarning(), u.Z.isAFKChannel()], []), p = i.useCallback(() => {
+    let [s, f] = (0, o.Wu)([u.Z], () => [u.Z.shouldShowWarning(), u.Z.isAFKChannel()], []), _ = i.useCallback(() => {
       let t, n;
-      f ? (t = d.NW.string(d.t.Y40JkZ), n = d.NW.string(d.t["5J4yGR"])) : (t = d.NW.string(d.t.FJSZVF), n = d.NW.string(d.t.etJjgY)), e.current = (0, a.h7j)(e => (0, r.jsx)(l.default, _({
+      f ? (t = d.NW.string(d.t.Y40JkZ), n = d.NW.string(d.t["5J4yGR"])) : (t = d.NW.string(d.t.FJSZVF), n = d.NW.string(d.t.etJjgY)), e.current = (0, a.h7j)(e => (0, r.jsx)(l.default, p({
         title: t,
         body: n,
-        onConfirm: g,
+        onConfirm: m,
         confirmText: d.NW.string(d.t.BddRzc),
         secondaryConfirmText: d.NW.string(d.t["5E9SBw"]),
-        onConfirmSecondary: m
+        onConfirmSecondary: g
       }, e)))
     }, [f]), E = i.useCallback(() => {
       (0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("41281").then(n.bind(n, 669732));
-        return t => (0, r.jsx)(e, h(_({}, t), {
+        return t => (0, r.jsx)(e, h(p({}, t), {
           showHideSuppressWarning: !0
         }))
       }).then(t => {
         null != t && (e.current = t)
       })
     }, []);
-    return i.useEffect(() => (s && (0, c.p)() ? E() : s ? p() : t(), () => {
+    return i.useEffect(() => (s && (0, c.p)() ? E() : s ? _() : t(), () => {
       t()
-    }), [s, p, E]), null
+    }), [s, _, E]), null
   }

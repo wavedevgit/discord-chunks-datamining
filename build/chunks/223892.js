@@ -6,8 +6,8 @@ n.d(t, {
   Ob: () => d,
   Rw: () => f,
   Sd: () => o,
-  gS: () => _,
-  mG: () => p
+  gS: () => p,
+  mG: () => _
 });
 var r = n(586072),
   i = n(981631);
@@ -96,7 +96,7 @@ function f(e) {
   return l(null == e ? void 0 : e.id) || u(e)
 }
 
-function _(e) {
+function p(e) {
   let {
     enableWaitlist: t
   } = r.IW.useExperiment({
@@ -108,7 +108,7 @@ function _(e) {
   return t
 }
 
-function p(e) {
+function _(e) {
   let {
     enableWaitlist: t
   } = r.IW.getCurrentConfig({

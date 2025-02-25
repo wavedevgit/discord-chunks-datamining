@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,11 +47,11 @@ function p(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = e => {
+let m = e => {
     let {
       appRecord: t,
       closePopout: n,
@@ -81,7 +81,7 @@ let g = e => {
       }) : null, d, f]
     })
   },
-  m = e => {
+  g = e => {
     let {
       appRecord: t,
       botUser: n,
@@ -90,7 +90,7 @@ let g = e => {
       selectedGuildId: a,
       selectedChannelId: s
     } = e;
-    return (0, r.jsx)(g, {
+    return (0, r.jsx)(m, {
       appRecord: t,
       closePopout: i,
       showAppReportingOption: o,
@@ -115,13 +115,13 @@ let g = e => {
         let {
           closePopout: o
         } = e;
-        return null == t.bot ? (0, r.jsx)(g, {
+        return null == t.bot ? (0, r.jsx)(m, {
           appRecord: t,
           closePopout: o,
           showAppReportingOption: n,
           selectedGuildId: i,
           selectedChannelId: s
-        }) : (0, r.jsx)(m, {
+        }) : (0, r.jsx)(g, {
           appRecord: t,
           botUser: t.bot,
           closePopout: o,
@@ -132,7 +132,7 @@ let g = e => {
       },
       align: "right",
       position: "bottom",
-      children: e => (0, r.jsx)(a.P3F, h(_({
+      children: e => (0, r.jsx)(a.P3F, h(p({
         className: o()(d.actionMenuButton),
         "aria-label": u.NW.string(u.t.UKOtz8)
       }, e), {

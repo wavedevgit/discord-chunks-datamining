@@ -49,9 +49,9 @@ let u = {
   },
   d = {},
   f = {},
-  _ = !1;
+  p = !1;
 
-function p(e) {
+function _(e) {
   let {
     userId: t,
     channelId: n,
@@ -71,14 +71,14 @@ function h(e) {
   delete r[t]
 }
 
-function g(e) {
+function m(e) {
   let {
     enabled: t
   } = e;
-  _ = t
+  p = t
 }
 
-function m(e) {
+function g(e) {
   var t;
   let {
     completingEmoji: n,
@@ -105,7 +105,7 @@ function E(e) {
 class v extends(r = i.ZP.DeviceSettingsStore) {
   initialize() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : u;
-    _ = e.enabled
+    p = e.enabled
   }
   getWaitingHighFive(e, t) {
     var n;
@@ -116,19 +116,19 @@ class v extends(r = i.ZP.DeviceSettingsStore) {
     return null === (n = f[e]) || void 0 === n ? void 0 : n[t]
   }
   getEnabled() {
-    return _
+    return p
   }
   getUserAgnosticState() {
     return {
-      enabled: _
+      enabled: p
     }
   }
 }
 a(v, "persistKey", "HighFiveStore");
 let b = new v(o.Z, {
-  HIGH_FIVE_QUEUE: p,
+  HIGH_FIVE_QUEUE: _,
   HIGH_FIVE_REMOVE: h,
-  HIGH_FIVE_SET_ENABLED: g,
-  HIGH_FIVE_COMPLETE: m,
+  HIGH_FIVE_SET_ENABLED: m,
+  HIGH_FIVE_COMPLETE: g,
   HIGH_FIVE_COMPLETE_CLEAR: E
 })

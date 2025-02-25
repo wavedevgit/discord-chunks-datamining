@@ -1,6 +1,6 @@
 /** Chunk was on 89444 **/
 n.d(t, {
-  Z: () => f
+  Z: () => p
 }), n(47120);
 var i, r = n(442837),
   l = n(570140),
@@ -38,7 +38,7 @@ class h extends(i = r.ZP.PersistedStore) {
   }
 }
 a(h, "displayName", "CollapsedVoiceChannelStore"), a(h, "persistKey", "collapsedChannels");
-let f = new h(l.Z, {
+let p = new h(l.Z, {
   CONNECTION_OPEN: c,
   OVERLAY_INITIALIZE: c,
   CHANNEL_COLLAPSE: function(e) {

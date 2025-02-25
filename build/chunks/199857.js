@@ -13,7 +13,7 @@ var r, i = n(264344),
   d = n(65154),
   f = n(436620);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,11 +21,11 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let p = 10,
+let _ = 10,
   h = 10,
-  g = null === (r = o().name) || void 0 === r ? void 0 : r.toLowerCase().includes("firefox");
+  m = null === (r = o().name) || void 0 === r ? void 0 : r.toLowerCase().includes("firefox");
 
-function m(e, t) {
+function g(e, t) {
   e.sender.replaceTrack(t), e.direction = null != t ? "sendrecv" : "recvonly"
 }
 class E extends l.Z {
@@ -39,7 +39,7 @@ class E extends l.Z {
   }
   setStream(e) {
     let t = "closed" === this.iceConnectionState;
-    null != e && !t && (m(this.audioTransceiver, e.getAudioTracks()[0]), this.videoSupported && m(this.videoTransceiver, e.getVideoTracks()[0])), this.logger.info("Renegotiating: Streams changed"), this.handleNegotiationNeeded()
+    null != e && !t && (g(this.audioTransceiver, e.getAudioTracks()[0]), this.videoSupported && g(this.videoTransceiver, e.getVideoTracks()[0])), this.logger.info("Renegotiating: Streams changed"), this.handleNegotiationNeeded()
   }
   createUser(e, t, n) {
     var r;
@@ -56,10 +56,10 @@ class E extends l.Z {
         ssrc: t
       });
       let n = this.inactiveTransceivers.audio.length,
-        r = p + this.unassignedStreams.audio.length - n;
+        r = _ + this.unassignedStreams.audio.length - n;
       this.addTransceivers("audio", "recvonly", r)
     }
-    if (this.videoSupported && void 0 !== n && (!g || void 0 === o.videoSSRC)) {
+    if (this.videoSupported && void 0 !== n && (!m || void 0 === o.videoSSRC)) {
       let t = null != n && n.length > 0 ? n[0] : 0;
       if (t > 0) {
         if (o.videoSSRC !== t) {
@@ -306,13 +306,13 @@ class E extends l.Z {
     null == this.sdp ? this.emit(s.Sh.Connected, "webrtc", (0, u.sc)(r)) : this.setRemoteAnswer()
   }
   constructor(e, t, n, r) {
-    super(e, t, n, r), _(this, "pc", void 0), _(this, "sdp", null), _(this, "negotiating", !1), _(this, "negotiationNeeded", !1), _(this, "audioTransceiver", void 0), _(this, "videoTransceiver", void 0), _(this, "users", new Map), _(this, "userIdsBySsrc", new Map), _(this, "assignedStreams", new Map), _(this, "unassignedStreams", {
+    super(e, t, n, r), p(this, "pc", void 0), p(this, "sdp", null), p(this, "negotiating", !1), p(this, "negotiationNeeded", !1), p(this, "audioTransceiver", void 0), p(this, "videoTransceiver", void 0), p(this, "users", new Map), p(this, "userIdsBySsrc", new Map), p(this, "assignedStreams", new Map), p(this, "unassignedStreams", {
       audio: [],
       video: []
-    }), _(this, "inactiveTransceivers", {
+    }), p(this, "inactiveTransceivers", {
       audio: [],
       video: []
-    }), _(this, "outboundStreams", []), _(this, "trackUserIds", {}), _(this, "audioCodec", null), _(this, "audioPayloadType", null), _(this, "videoCodec", null), _(this, "videoPayloadType", null), _(this, "rtxPayloadType", null), _(this, "extensions", []), _(this, "codecs", []), _(this, "logger", void 0), _(this, "getUserIdBySsrc", e => this.userIdsBySsrc.get(e)), _(this, "handlePeerConnectionStateChange", () => {
+    }), p(this, "outboundStreams", []), p(this, "trackUserIds", {}), p(this, "audioCodec", null), p(this, "audioPayloadType", null), p(this, "videoCodec", null), p(this, "videoPayloadType", null), p(this, "rtxPayloadType", null), p(this, "extensions", []), p(this, "codecs", []), p(this, "logger", void 0), p(this, "getUserIdBySsrc", e => this.userIdsBySsrc.get(e)), p(this, "handlePeerConnectionStateChange", () => {
       let e = this.peerConnectionState;
       switch (this.logger.info("peerConnectionState =>", e), e) {
         case "connected":
@@ -328,7 +328,7 @@ class E extends l.Z {
         case "closed":
           this.setConnectionState(d.$j.DISCONNECTED)
       }
-    }), _(this, "handleIceConnectionStateChange", () => {
+    }), p(this, "handleIceConnectionStateChange", () => {
       let e = this.iceConnectionState;
       switch (this.logger.info("iceConnectionState =>", e), e) {
         case "connected":
@@ -344,12 +344,12 @@ class E extends l.Z {
         case "closed":
           this.setConnectionState(d.$j.DISCONNECTED)
       }
-    }), _(this, "handleSignalingStateChange", () => {
+    }), p(this, "handleSignalingStateChange", () => {
       let e = this.signalingState;
       this.logger.info("signalingState => ".concat(e))
-    }), _(this, "handleIceGatheringStateChange", () => {
+    }), p(this, "handleIceGatheringStateChange", () => {
       this.logger.info("iceGatheringState =>", this.iceGatheringState)
-    }), _(this, "handleTrack", e => {
+    }), p(this, "handleTrack", e => {
       let t = e.streams[0].id,
         n = e.track;
       if (!/^default/.test(n.id)) {
@@ -376,6 +376,6 @@ class E extends l.Z {
       sendEncodings: [{
         maxBitrate: this.voiceBitrate
       }]
-    }), this.audioTransceiver = i.getTransceivers()[0], this.videoSupported && (this.addTransceivers("video", "recvonly", 1, this.input.getVideoStream()), this.videoTransceiver = i.getTransceivers()[1]), this.addTransceivers("audio", "recvonly", p), this.videoSupported && this.addTransceivers("video", "recvonly", h), this.setStream(this.input.stream), this.logger.info("Renegotiating: Initial negotiation, user id: ".concat(t)), this.handleNegotiationNeeded(!0)
+    }), this.audioTransceiver = i.getTransceivers()[0], this.videoSupported && (this.addTransceivers("video", "recvonly", 1, this.input.getVideoStream()), this.videoTransceiver = i.getTransceivers()[1]), this.addTransceivers("audio", "recvonly", _), this.videoSupported && this.addTransceivers("video", "recvonly", h), this.setStream(this.input.stream), this.logger.info("Renegotiating: Initial negotiation, user id: ".concat(t)), this.handleNegotiationNeeded(!0)
   }
 }

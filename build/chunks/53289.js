@@ -22,7 +22,7 @@ function f(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : window,
     i = (0, o.e7)([l.Z], () => l.Z.keyboardModeEnabled),
     f = (0, a.Z)(),
-    [_, p] = r.useState(!1),
+    [p, _] = r.useState(!1),
     h = (0, s.Aq)();
   return r.useEffect(() => {
     if (t) return n.addEventListener("blur", e), () => n.removeEventListener("blur", e);
@@ -32,7 +32,7 @@ function f(e, t) {
     }
   }, [n, f, t, h]), r.useEffect(() => {
     var r;
-    if (i || !_ || !t) return;
+    if (i || !p || !t) return;
     let {
       current: o
     } = e, a = f;
@@ -46,5 +46,5 @@ function f(e, t) {
     return null == o || o.addEventListener("focusout", s), (null === (r = n.document.activeElement) || void 0 === r ? void 0 : r.tagName) === "IFRAME" || a || null == o || o.focus(), () => {
       null == o || o.removeEventListener("focusout", s), a = !0
     }
-  }, [t, _, i, e, n, f]), p
+  }, [t, p, i, e, n, f]), _
 }

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ku: () => _,
-  MV: () => p,
+  Ku: () => p,
+  MV: () => _,
   ZP: () => f
 });
 var r = n(192379),
@@ -18,18 +18,18 @@ let d = (0, i.U)(e => ({
   })),
   f = d;
 
-function _(e) {
+function p(e) {
   (0, o.j)(() => d.setState({
     isOnStartStageScreen: e
   }))
 }
 
-function p(e) {
+function _(e) {
   let t = (0, a.e7)([l.Z], () => l.Z.getVoiceChannelId() === e.id),
     n = (0, a.e7)([s.Z], () => s.Z.can(c.yP, e), [e]),
     i = (0, u.Z)(e.id),
     o = n && !i;
   r.useEffect(() => {
-    t ? o || _(!1) : _(o)
+    t ? o || p(!1) : p(o)
   }, [t, o])
 }

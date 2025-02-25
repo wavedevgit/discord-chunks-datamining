@@ -13,7 +13,7 @@ var r, i = n(442837),
   d = n(430824),
   f = n(981631);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,17 +21,17 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let p = null,
+let _ = null,
   h = {},
-  g = null;
+  m = null;
 
-function m() {
+function g() {
   return {
     _categories: [],
     null: []
   }
 }
-let E = m();
+let E = g();
 
 function v(e, t) {
   e.index = t
@@ -39,7 +39,7 @@ function v(e, t) {
 
 function b(e) {
   let t = u.ZP.getChannels(e),
-    n = m(),
+    n = g(),
     r = e => {
       var t;
       let {
@@ -62,7 +62,7 @@ function b(e) {
 }
 
 function y() {
-  h = {}, null != p && b(p)
+  h = {}, null != _ && b(_)
 }
 
 function O(e) {
@@ -71,7 +71,7 @@ function O(e) {
       id: t
     }
   } = e;
-  h[t] = void 0, p === t && b(t)
+  h[t] = void 0, _ === t && b(t)
 }
 
 function S(e) {
@@ -90,7 +90,7 @@ function I(e) {
     }
   } = e;
   if (null == t) return !1;
-  h[t] = void 0, p === t && b(t)
+  h[t] = void 0, _ === t && b(t)
 }
 
 function T(e) {
@@ -100,7 +100,7 @@ function T(e) {
   for (let {
       guild_id: e
     }
-    of t) null != e && (h[e] = void 0, n = !0, p === e && b(e));
+    of t) null != e && (h[e] = void 0, n = !0, _ === e && b(e));
   return n
 }
 
@@ -110,32 +110,32 @@ function N(e) {
     user: n
   } = e;
   if (l.default.getId() !== n.id) return !1;
-  h[t] = void 0, t === p && b(t)
+  h[t] = void 0, t === _ && b(t)
 }
 
 function A() {
-  if (null == p) return !1;
-  b(p)
+  if (null == _) return !1;
+  b(_)
 }
 
 function C(e) {
   let {
     guildId: t
   } = e;
-  h[t] = void 0, t === p && b(t)
+  h[t] = void 0, t === _ && b(t)
 }
 
 function R(e, t) {
-  if (g = t, null == e || null == e.getGuildId()) return !1;
+  if (m = t, null == e || null == e.getGuildId()) return !1;
   let n = e.getGuildId();
-  return null != n && (h[n] = void 0, n === p && b(n), !0)
+  return null != n && (h[n] = void 0, n === _ && b(n), !0)
 }
 
 function P(e) {
   let {
     channelId: t
   } = e;
-  return null == t && null != g ? R(c.Z.getChannel(g), null) : R(c.Z.getChannel(t), t)
+  return null == t && null != m ? R(c.Z.getChannel(m), null) : R(c.Z.getChannel(t), t)
 }
 
 function D(e) {
@@ -155,7 +155,7 @@ function w(e) {
   let {
     guildId: t
   } = e;
-  if (p = null != t ? t : null, null == t || null != h[t]) return !1;
+  if (_ = null != t ? t : null, null == t || null != h[t]) return !1;
   b(t)
 }
 
@@ -175,7 +175,7 @@ class M extends(r = i.ZP.Store) {
     return null != e ? x(e) : E
   }
 }
-_(M, "displayName", "GuildCategoryStore");
+p(M, "displayName", "GuildCategoryStore");
 let j = new M(o.Z, {
   CHANNEL_SELECT: w,
   CONNECTION_OPEN: y,

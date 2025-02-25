@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A4: () => _,
+  A4: () => p,
   E9: () => d,
   Os: () => c,
-  jx: () => p,
+  jx: () => _,
   nv: () => l,
   sz: () => f,
   te: () => s,
@@ -75,11 +75,11 @@ function f(e) {
   })
 }
 
-function _(e) {
-  p([e])
+function p(e) {
+  _([e])
 }
 
-function p(e) {
+function _(e) {
   r.Z.dispatch({
     type: "LAYOUT_CREATE_WIDGETS",
     widgetConfigs: e

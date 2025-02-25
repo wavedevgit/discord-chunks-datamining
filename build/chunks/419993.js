@@ -12,11 +12,11 @@ var r, i = n(200651),
   u = n(15127),
   d = n(766646),
   f = n(993365),
-  _ = n(179240),
-  p = n(388032),
+  p = n(179240),
+  _ = n(388032),
   h = n(549906),
-  g = n(630824),
-  m = n(28149);
+  m = n(630824),
+  g = n(28149);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -95,9 +95,9 @@ class I extends(r = o.Component) {
       error: e,
       maxLength: t,
       minLength: n
-    } = this.props, r = this.getIsOverflowing() ? p.NW.formatToPlainString(p.t.ICT5S0, {
+    } = this.props, r = this.getIsOverflowing() ? _.NW.formatToPlainString(_.t.ICT5S0, {
       maxLength: t
-    }) : null, i = this.getIsUnderflowing() ? p.NW.formatToPlainString(p.t["62rk1N"], {
+    }) : null, i = this.getIsUnderflowing() ? _.NW.formatToPlainString(_.t["62rk1N"], {
       minLength: n
     }) : null;
     return null != e && "" === e || null === e ? null : void 0 !== e ? e : !1 === this.state.dirty ? null : null != r ? r : i
@@ -132,9 +132,9 @@ class I extends(r = o.Component) {
       required: A,
       onInvalid: C,
       inputRef: R
-    } = this.props, P = N ? _.l : "textarea", D = this.hasError(), w = null !== (t = this.props["aria-labelledby"]) && void 0 !== t ? t : null === (e = this.context) || void 0 === e ? void 0 : e.titleId, L = this.getAriaDescribedBy();
+    } = this.props, P = N ? p.l : "textarea", D = this.hasError(), w = null !== (t = this.props["aria-labelledby"]) && void 0 !== t ? t : null === (e = this.context) || void 0 === e ? void 0 : e.titleId, L = this.getAriaDescribedBy();
     return (0, i.jsxs)("div", {
-      className: s()(g.inputWrapper, {
+      className: s()(m.inputWrapper, {
         [h.flex]: T
       }),
       children: [(0, i.jsxs)("div", {
@@ -144,9 +144,9 @@ class I extends(r = o.Component) {
         children: [(0, i.jsx)(c.t, {
           children: (0, i.jsx)(P, {
             type: "text",
-            className: s()(g.inputDefault, h.textArea, m.scrollbarDefault, O, {
-              [g.error]: D,
-              [g.disabled]: n,
+            className: s()(m.inputDefault, h.textArea, g.scrollbarDefault, O, {
+              [m.error]: D,
+              [m.disabled]: n,
               [h.resizeable]: v
             }),
             "aria-labelledby": w,
@@ -174,12 +174,12 @@ class I extends(r = o.Component) {
           })
         }), null != l && (0, i.jsx)(d.n, {
           id: b,
-          children: p.NW.format(p.t["bmQU//"], {
+          children: _.NW.format(_.t["bmQU//"], {
             minLength: l
           })
         }), null != u && (0, i.jsx)(d.n, {
           id: y,
-          children: p.NW.format(p.t["+DFxLS"], {
+          children: _.NW.format(_.t["+DFxLS"], {
             maxLength: u
           })
         }), this.renderCharacterCount(), this.renderMaxLength()]

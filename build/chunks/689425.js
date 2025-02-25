@@ -41,8 +41,8 @@ let f = (e, t) => {
     } = t;
     return Math.pow(n - i, 2) + Math.pow(r - o, 2)
   },
-  _ = 9;
-class p extends(r = o.PureComponent) {
+  p = 9;
+class _ extends(r = o.PureComponent) {
   componentDidMount() {
     let {
       initialX: e,
@@ -159,7 +159,7 @@ class p extends(r = o.PureComponent) {
       !i && f(this._dragStart, {
         x: e.clientX,
         y: e.clientY
-      }) > _ && (i = !0), i && (this.animateToPosition(e.clientX - this._offsetX, e.clientY - this._offsetY, {
+      }) > p && (i = !0), i && (this.animateToPosition(e.clientX - this._offsetX, e.clientY - this._offsetY, {
         tension: 80,
         friction: 8
       }, null, !1), this.setState({
@@ -188,7 +188,7 @@ class p extends(r = o.PureComponent) {
     }
   }
 }
-u(p, "defaultProps", {
+u(_, "defaultProps", {
   maxX: 0,
   maxY: 0,
   initialX: 0,
@@ -196,4 +196,4 @@ u(p, "defaultProps", {
   disabled: !1,
   dragAnywhere: !1
 });
-let h = p
+let h = _

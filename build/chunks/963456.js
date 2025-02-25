@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   a: () => d,
-  j: () => _
+  j: () => p
 });
 var r = n(544891),
   i = n(570140),
@@ -29,18 +29,18 @@ async function d(e, t) {
     case "application":
       n = l.ANM.APPLICATION_COMMAND_INDEX_APPLICATION(e.applicationId)
   }
-  let _ = async t => d >= u ? (h({
+  let p = async t => d >= u ? (h({
     error: !0
   }), i.Z.dispatch({
     type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
     target: e
-  })) : (await new Promise(e => setTimeout(e, t)), p()), p = () => r.tn.get({
+  })) : (await new Promise(e => setTimeout(e, t)), _()), _ = () => r.tn.get({
     url: n,
     retries: u - d - 1,
     signal: t.signal,
     onRequestCreated: () => d++,
     rejectWithError: !1
-  }).then(t => 202 === t.status ? _(c) : (h({
+  }).then(t => 202 === t.status ? p(c) : (h({
     error: !1
   }), i.Z.dispatch({
     type: "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS",
@@ -53,7 +53,7 @@ async function d(e, t) {
       });
       return
     }
-    return 429 === n.status ? _(n.body.retry_after * a.Z.Millis.SECOND) : (h({
+    return 429 === n.status ? p(n.body.retry_after * a.Z.Millis.SECOND) : (h({
       error: !0
     }), i.Z.dispatch({
       type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
@@ -76,7 +76,7 @@ async function d(e, t) {
       target_id: f(e)
     })
   };
-  await p()
+  await _()
 }
 
 function f(e) {
@@ -94,7 +94,7 @@ function f(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   i.Z.dispatch({
     type: "APPLICATION_COMMAND_INDEX_FETCH_REQUEST",
     target: e

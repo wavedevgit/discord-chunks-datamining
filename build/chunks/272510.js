@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -14,8 +14,8 @@ var i = n(481060),
   u = n(710631),
   d = n(622724),
   f = n(785717),
-  _ = n(475413),
-  p = n(388032);
+  p = n(475413),
+  _ = n(388032);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,7 +26,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,12 +39,12 @@ function g(e) {
   return e
 }
 
-function m(e) {
+function g(e) {
   let {
     user: t,
     guildId: n,
     viewProfileItem: h,
-    appContext: m
+    appContext: g
   } = e, {
     trackUserProfileAction: E
   } = (0, f.KZ)(), {
@@ -62,7 +62,7 @@ function m(e) {
     guildId: n,
     location: b,
     color: "danger",
-    appContext: m,
+    appContext: g,
     onBlock: () => E({
       action: "BLOCK",
       analyticsLocations: v
@@ -79,7 +79,7 @@ function m(e) {
     user: t,
     guildId: n,
     location: b,
-    appContext: m,
+    appContext: g,
     onBlock: () => E({
       action: "BLOCK",
       analyticsLocations: v
@@ -96,7 +96,7 @@ function m(e) {
     user: t,
     guildId: n,
     location: b,
-    appContext: m,
+    appContext: g,
     color: "danger",
     onAction: () => E({
       action: "REPORT",
@@ -108,7 +108,7 @@ function m(e) {
       user: t,
       guildId: n,
       location: b,
-      appContext: m,
+      appContext: g,
       color: "danger",
       onAction: () => E({
         action: "REPORT",
@@ -117,7 +117,7 @@ function m(e) {
     })],
     [(0, s.Z)({
       id: t.id,
-      label: p.NW.string(p.t["/AXYnJ"]),
+      label: _.NW.string(_.t["/AXYnJ"]),
       onSuccess: () => E({
         action: "COPY_USER_ID",
         analyticsLocations: v
@@ -135,16 +135,16 @@ function m(e) {
           navId: "user-profile-overflow-menu",
           onSelect: void 0,
           onClose: t,
-          "aria-label": p.NW.string(p.t.AXIHpa),
+          "aria-label": _.NW.string(_.t.AXIHpa),
           children: T.map((e, t) => (0, r.jsx)(i.kSQ, {
             children: e.map(e => e)
           }, t))
         })
       },
-      children: e => (0, r.jsx)(_.oY, g({
+      children: e => (0, r.jsx)(p.oY, m({
         action: "PRESS_OPTIONS",
         icon: i.xhG,
-        tooltipText: p.NW.string(p.t.UKOtz8)
+        tooltipText: _.NW.string(_.t.UKOtz8)
       }, e))
     })
   })

@@ -69,7 +69,7 @@ function t(e) {
         contains: [u(t.end)]
       }))
     },
-    _ = {
+    p = {
       className: "regex",
       variants: [{
         begin: "~r(?=" + l + ")",
@@ -85,7 +85,7 @@ function t(e) {
         }))
       }]
     },
-    p = {
+    _ = {
       className: "string",
       contains: [e.BACKSLASH_ESCAPE, o],
       variants: [{
@@ -127,17 +127,17 @@ function t(e) {
         endsParent: !0
       })]
     },
-    g = e.inherit(h, {
+    m = e.inherit(h, {
       className: "class",
       beginKeywords: "defimpl defmodule defprotocol defrecord",
       end: /\bdo\b|$|;/
     }),
-    m = [p, _, f, d, e.HASH_COMMENT_MODE, g, h, {
+    g = [_, p, f, d, e.HASH_COMMENT_MODE, m, h, {
       begin: "::"
     }, {
       className: "symbol",
       begin: ":(?![\\s:])",
-      contains: [p, {
+      contains: [_, {
         begin: r
       }],
       relevance: 0
@@ -153,11 +153,11 @@ function t(e) {
       className: "variable",
       begin: "(\\$\\W)|((\\$|@@?)(\\w+))"
     }];
-  return o.contains = m, {
+  return o.contains = g, {
     name: "Elixir",
     aliases: ["ex", "exs"],
     keywords: i,
-    contains: m
+    contains: g
   }
 }
 e.exports = t

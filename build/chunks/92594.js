@@ -34,7 +34,7 @@ function g() {
     setSelectedPlanNotification: y
   } = (0, h.JL)(), {
     isGift: I
-  } = (0, f.wD)(), [O, v] = i.useState(!1), [P, b] = i.useState(!1), [T, M] = i.useState(!1);
+  } = (0, f.wD)(), [O, v] = i.useState(!1), [b, P] = i.useState(!1), [T, M] = i.useState(!1);
   return i.useEffect(() => {
     let l = setTimeout(() => {
       g === j.Si.TIER_2 && (null == e || !e.isPremium) && !I && ((null == t ? void 0 : t.code) === d.SM.BILLING_INSUFFICIENT_FUNDS || (null == n ? void 0 : n.code) === d.SM.BILLING_INSUFFICIENT_FUNDS) && M(!0)
@@ -42,7 +42,7 @@ function g() {
     return () => clearTimeout(l)
   }, [e, I, n, t, g, M]), (0, l.jsxs)("div", {
     className: r()(L.upsellContainer, T ? L.interactable : null),
-    hidden: P,
+    hidden: b,
     children: [(0, l.jsx)(u.H, {}), (0, l.jsx)(u.Z, {
       show: T,
       children: (0, l.jsx)(c.L, {
@@ -58,9 +58,9 @@ function g() {
         handleClick: () => {
           s(null), a.Z.wait(C.pB), a.Z.wait(o.fw), y(m.NW.string(m.t["/5p4ws"])), S(j.Si.TIER_0);
           let e = j.Xh.PREMIUM_MONTH_TIER_0;
-          (null == E ? void 0 : E.id) === j.Xh.PREMIUM_YEAR_TIER_2 && (e = j.Xh.PREMIUM_YEAR_TIER_0), N(e), b(!0)
+          (null == E ? void 0 : E.id) === j.Xh.PREMIUM_YEAR_TIER_2 && (e = j.Xh.PREMIUM_YEAR_TIER_0), N(e), P(!0)
         },
-        handleClose: () => b(!0),
+        handleClose: () => P(!0),
         handleImageClick: () => {},
         buttonText: m.NW.string(m.t["7aa9vr"]),
         useInitialGlow: !0,

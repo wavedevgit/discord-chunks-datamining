@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Dv: () => p,
+  Dv: () => _,
   G2: () => y,
   IG: () => v,
-  NG: () => m,
-  OV: () => g,
+  NG: () => g,
+  OV: () => m,
   fW: () => O,
   lB: () => b,
   mA: () => E
@@ -58,7 +58,7 @@ function d(e, t) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -66,14 +66,14 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let p = {
+let _ = {
   ROUND: s.baseShapeRound,
   ROUND_LEFT: s.baseShapeRoundLeft,
   ROUND_RIGHT: s.baseShapeRoundRight,
@@ -91,11 +91,11 @@ function h(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   return e < 10 ? 16 : e < 100 ? 22 : 30
 }
 
-function m(e) {
+function g(e) {
   return e < 1e3 ? "".concat(e) : "".concat(Math.min(Math.floor(e / 1e3), 9), "k+")
 }
 let E = e => {
@@ -103,19 +103,19 @@ let E = e => {
       count: t,
       color: n = a.Z.STATUS_DANGER,
       disableColor: i = !1,
-      shape: l = p.ROUND,
+      shape: l = _.ROUND,
       className: u,
-      style: _
+      style: p
     } = e, E = f(e, ["count", "color", "disableColor", "shape", "className", "style"]);
     return (0, r.jsx)("div", d(c({
       className: o()(u, s.numberBadge, l),
       style: c({
         backgroundColor: i ? void 0 : n,
-        width: g(t),
+        width: m(t),
         paddingRight: h(t)
-      }, _)
+      }, p)
     }, E), {
-      children: m(t)
+      children: g(t)
     }))
   },
   v = e => {
@@ -123,15 +123,15 @@ let E = e => {
       text: t,
       className: n,
       color: i = a.Z.STATUS_DANGER,
-      shape: l = p.ROUND,
+      shape: l = _.ROUND,
       disableColor: u = !1,
-      style: _
+      style: p
     } = e, h = f(e, ["text", "className", "color", "shape", "disableColor", "style"]);
     return (0, r.jsx)("div", d(c({
       className: o()(n, s.textBadge, l),
       style: c({
         backgroundColor: u ? void 0 : i
-      }, _)
+      }, p)
     }, h), {
       children: t
     }))
@@ -151,7 +151,7 @@ let E = e => {
       icon: t,
       className: n,
       color: i = a.Z.STATUS_DANGER,
-      shape: l = p.ROUND,
+      shape: l = _.ROUND,
       disableColor: u = !1,
       style: d
     } = e;
@@ -170,7 +170,7 @@ let E = e => {
     var {
       className: t,
       color: n = a.Z.INTERACTIVE_ACTIVE,
-      shape: i = p.ROUND,
+      shape: i = _.ROUND,
       disableColor: l = !1,
       style: u
     } = e, d = f(e, ["className", "color", "shape", "disableColor", "style"]);

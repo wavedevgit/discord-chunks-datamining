@@ -18,7 +18,7 @@ var r = n(392711),
   d = n(921948),
   f = n(981631);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,7 +27,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -38,8 +38,8 @@ function p(e, t) {
   return n
 }
 let h = 5,
-  g = /\.webp($|\?|#)/i,
-  m = /\.avif($|\?|#)/i,
+  m = /\.webp($|\?|#)/i,
+  g = /\.avif($|\?|#)/i,
   E = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096],
   v = 4096,
   b = new(a())({
@@ -143,15 +143,15 @@ function C(e) {
     srcIsAnimated: f = !1
   } = e;
   if (t.startsWith("data:image")) return t;
-  let [_, p] = A(t);
-  null != l && (p.format = l), null != u && (p.quality = u), d && f && (g.test(t) || m.test(t)) && (p.animated = !0), m.test(t) && (p.format = "webp");
+  let [p, _] = A(t);
+  null != l && (_.format = l), null != u && (_.quality = u), d && f && (m.test(t) || g.test(t)) && (_.animated = !0), g.test(t) && (_.format = "webp");
   let h = (0, c.Tj)({
     width: o,
     height: a,
     maxWidth: v,
     maxHeight: v
   });
-  return o = h.width, a = h.height, (o !== n || a !== r) && (p.width = 0 | o, p.height = 0 | a), i().isEmpty(p) || (_ += "?" + s.stringify(p)), _
+  return o = h.width, a = h.height, (o !== n || a !== r) && (_.width = 0 | o, _.height = 0 | a), i().isEmpty(_) || (p += "?" + s.stringify(_)), p
 }
 
 function R(e) {
@@ -166,15 +166,15 @@ function R(e) {
     quality: l = null,
     animated: c = !1,
     srcIsAnimated: u = !1
-  } = e, f = n, _ = r;
-  a < 1 && (f = Math.round(n * a), _ = Math.round(r * a)), null != i && (f = Math.min(f, i)), null != o && (_ = Math.min(_, o));
-  let p = (0, d.Z)();
+  } = e, f = n, p = r;
+  a < 1 && (f = Math.round(n * a), p = Math.round(r * a)), null != i && (f = Math.min(f, i)), null != o && (p = Math.min(p, o));
+  let _ = (0, d.Z)();
   return C({
     src: t,
     sourceWidth: n,
     sourceHeight: r,
-    targetWidth: f *= p,
-    targetHeight: _ *= p,
+    targetWidth: f *= _,
+    targetHeight: p *= _,
     format: s,
     quality: l,
     animated: c,

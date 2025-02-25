@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(47120);
 var r, i = n(200651),
   o = n(192379),
@@ -29,12 +29,12 @@ class f extends(r = o.PureComponent) {
       error: a,
       isLoading: d,
       maxLength: f,
-      transitionState: _,
-      helpMessage: p,
+      transitionState: p,
+      helpMessage: _,
       retryPrompt: h,
-      retrySuccessMessage: g
+      retrySuccessMessage: m
     } = this.props, {
-      code: m,
+      code: g,
       errorMessage: E,
       retrySuccess: v
     } = this.state, b = o.Children.count(r) > 0 ? (0, i.jsx)(l.Zbd, {
@@ -59,11 +59,11 @@ class f extends(r = o.PureComponent) {
       className: u.card,
       children: (0, i.jsx)(l.Text, {
         variant: "text-md/normal",
-        children: g
+        children: m
       })
     }) : null;
     return (0, i.jsx)(l.Y0X, {
-      transitionState: _,
+      transitionState: p,
       children: (0, i.jsxs)("form", {
         onSubmit: this.handleSubmit,
         children: [(0, i.jsx)(l.xBx, {
@@ -73,11 +73,11 @@ class f extends(r = o.PureComponent) {
             children: t
           })
         }), (0, i.jsxs)(l.hzk, {
-          children: [null != p ? (0, i.jsx)(l.Text, {
+          children: [null != _ ? (0, i.jsx)(l.Text, {
             color: "text-normal",
             variant: "text-md/normal",
             className: u.spacing,
-            children: p
+            children: _
           }) : null, b, O, (0, i.jsxs)(l.xJW, {
             title: this.getLabelText(),
             className: u.spacing,
@@ -86,7 +86,7 @@ class f extends(r = o.PureComponent) {
               onChange: this.handleCodeChange,
               placeholder: null !== (e = this.getPlaceholder()) && void 0 !== e ? e : void 0,
               maxLength: null != f ? f : 10,
-              value: m,
+              value: g,
               autoComplete: "one-time-code",
               autoFocus: !0
             }), this.errorPresent() ? (0, i.jsx)(l.Text, {
@@ -99,7 +99,7 @@ class f extends(r = o.PureComponent) {
         }), (0, i.jsxs)(l.mzw, {
           children: [(0, i.jsx)(l.zxk, {
             type: "submit",
-            disabled: d || 0 === m.length,
+            disabled: d || 0 === g.length,
             children: null != n ? n : c.NW.string(c.t["cY+Ooa"])
           }), (0, i.jsx)(l.zxk, {
             onClick: this.handleCancel,
@@ -163,4 +163,4 @@ d(f, "defaultProps", {
   error: null,
   forceNoPlaceholder: !1
 });
-let _ = f
+let p = f

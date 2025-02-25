@@ -12,7 +12,7 @@ var t = "\ud800-\udfff",
   d = c + l + u,
   f = RegExp(i + "(?=" + i + ")|" + ("(?:" + [o + r + "?", r, a, s, n].join("|")) + ")" + d, "g");
 
-function _(e) {
+function p(e) {
   return e.match(f) || []
 }
-e.exports = _
+e.exports = p

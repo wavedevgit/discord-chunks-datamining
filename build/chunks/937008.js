@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -50,7 +50,7 @@ function f(e, t) {
   }), e
 }
 
-function _(e) {
+function p(e) {
   let {
     icon: t,
     tooltip: n,

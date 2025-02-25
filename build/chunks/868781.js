@@ -19,16 +19,16 @@ function d(e) {
     textVariant: n,
     textClassName: d,
     hideIcon: f = !1,
-    hideText: _ = !1,
-    hideTooltip: p = !1
+    hideText: p = !1,
+    hideTooltip: _ = !1
   } = e;
-  if (f && _) return null;
+  if (f && p) return null;
   let {
     text: h,
-    tooltip: g
+    tooltip: m
   } = (0, s.Z)({
     activity: t
-  }), m = (0, i.EQ)(t).when(a.Z, () => o.jje).with({
+  }), g = (0, i.EQ)(t).when(a.Z, () => o.jje).with({
     type: u.IIU.PLAYING
   }, () => o.iWm).with({
     type: u.IIU.LISTENING
@@ -40,10 +40,10 @@ function d(e) {
     type: u.IIU.COMPETING
   }, () => o.iWm).otherwise(() => null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [!f && null != m && (0, r.jsx)(c.Z, {
-      icon: m,
-      tooltip: _ && !p ? g : void 0
-    }), !_ && (0, r.jsx)(l.Z, {
+    children: [!f && null != g && (0, r.jsx)(c.Z, {
+      icon: g,
+      tooltip: p && !_ ? m : void 0
+    }), !p && (0, r.jsx)(l.Z, {
       variant: n,
       className: d,
       children: h

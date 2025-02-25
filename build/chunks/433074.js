@@ -31,9 +31,9 @@ function C(e) {
   let {
     code: I,
     message: S,
-    embedUrl: T
+    embedUrl: P
   } = e, {
-    enabled: P
+    enabled: T
   } = d.G.useExperiment({
     location: "ApplicationDirectoryProfileEmbed"
   }), [A, w, Z] = (0, l.Wu)([y.Z], () => [y.Z.getApplication(I), y.Z.isInvalidApplication(I), y.Z.getApplicationFetchState(I)], [I]), k = (0, l.e7)([m.default], () => m.default.locale), R = (0, l.e7)([h.Z], () => {
@@ -76,9 +76,10 @@ function C(e) {
       }
     })
   };
-  if (P && null != A) return (0, r.jsx)(u.O, {
+  if (T && null != A) return (0, r.jsx)(u.O, {
     app: f.ZP.createFromServer(A),
-    embedUrl: T
+    embedUrl: P,
+    linkType: u.U.APP_DISCOVERY
   });
   if (w) return (0, r.jsxs)(p.Z, {
     containerRef: F,

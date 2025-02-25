@@ -30,7 +30,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -41,14 +41,14 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let h = {};
 
-function g(e) {
+function m(e) {
   var t;
   let n = s.Z.getChannel(null == e ? void 0 : e.channel_id);
   if (null == n || !n.isForumPost()) return !1;
@@ -56,7 +56,7 @@ function g(e) {
   return u.default.compare(null == e ? void 0 : e.id, null == r ? void 0 : null === (t = r.message) || void 0 === t ? void 0 : t.id) > -1
 }
 
-function m(e, t) {
+function g(e, t) {
   let n = null == t ? null : (0, a.e5)(t);
   return h[e] = {
     loaded: !0,
@@ -67,7 +67,7 @@ function m(e, t) {
 function E(e, t) {
   let n = b(e),
     r = y(e);
-  return null != n && null != r && (h[e] = p(f({}, n), {
+  return null != n && null != r && (h[e] = _(f({}, n), {
     message: (0, a.wi)(r, t)
   }), !0)
 }
@@ -94,16 +94,16 @@ function S(e) {
   let {
     threads: t
   } = e;
-  for (let e in t) m(e, t[e].most_recent_message)
+  for (let e in t) g(e, t[e].most_recent_message)
 }
 
 function I(e) {
-  if (e.isPushNotification || !g(e.message)) return !1;
-  e.message.channel_id === u.default.castMessageIdAsChannelId(e.message.id) ? m(e.message.channel_id, null) : m(e.message.channel_id, e.message)
+  if (e.isPushNotification || !m(e.message)) return !1;
+  e.message.channel_id === u.default.castMessageIdAsChannelId(e.message.id) ? g(e.message.channel_id, null) : g(e.message.channel_id, e.message)
 }
 
 function T(e) {
-  if (!g(e.message) || e.message.channel_id === e.message.id) return !1;
+  if (!m(e.message) || e.message.channel_id === e.message.id) return !1;
   E(e.message.channel_id, e.message)
 }
 
@@ -116,8 +116,8 @@ function A(e) {
     threads: t,
     mostRecentMessages: n
   } = e;
-  t.forEach(e => m(e.id, null)), null == n || n.filter(c.lm).forEach(e => {
-    m(e.channel_id, e)
+  t.forEach(e => g(e.id, null)), null == n || n.filter(c.lm).forEach(e => {
+    g(e.channel_id, e)
   })
 }
 class C extends(r = i.ZP.Store) {

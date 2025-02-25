@@ -20,11 +20,11 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = {},
-  _ = {},
-  p = null,
+  p = {},
+  _ = null,
   h = null,
-  g = null,
-  m = "lastChangeLogDate",
+  m = null,
+  g = "lastChangeLogDate",
   E = null,
   v = null,
   b = new Set;
@@ -50,7 +50,7 @@ function S(e) {
     config: t,
     latestChangelogId: n
   } = e;
-  p = n, g = t
+  _ = n, m = t
 }
 
 function I(e) {
@@ -65,7 +65,7 @@ function I(e) {
     revision: 1,
     locale: n.locale,
     [n.asset_type === u.h3.YOUTUBE_VIDEO_ID ? "youtube_video_id" : "image"]: n.asset
-  }, null == _[t] && (_[t] = {}), _[t][n.locale] = u.LU.LOADED_SUCCESS
+  }, null == p[t] && (p[t] = {}), p[t][n.locale] = u.LU.LOADED_SUCCESS
 }
 
 function T(e) {
@@ -74,7 +74,7 @@ function T(e) {
     locale: n
   } = e;
   if (null != f[t] && null != f[t][n]) return !1;
-  null == _[t] && (_[t] = {}), _[t][n] = u.LU.LOADED_FAILURE
+  null == p[t] && (p[t] = {}), p[t][n] = u.LU.LOADED_FAILURE
 }
 
 function N(e) {
@@ -88,7 +88,7 @@ function A(e) {
   let {
     changelogDate: t
   } = e;
-  v = new Date(t), o.K.set(m, t)
+  v = new Date(t), o.K.set(g, t)
 }
 
 function C() {
@@ -97,11 +97,11 @@ function C() {
 class R extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(s.default, c.Z), this.syncWith([s.default], () => !0), this.syncWith([c.Z], C);
-    let e = o.K.get(m);
+    let e = o.K.get(g);
     if (null != e) try {
       v = new Date(e)
     } catch (e) {
-      o.K.remove(m)
+      o.K.remove(g)
     }
   }
   getChangelog(e, t) {
@@ -109,17 +109,17 @@ class R extends(r = i.ZP.Store) {
     return null !== (r = null === (n = f[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== r ? r : null
   }
   latestChangelogId() {
-    return p
+    return _
   }
   getChangelogLoadStatus(e, t) {
     var n, r;
-    return null !== (r = null === (n = _[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== r ? r : u.LU.NOT_LOADED
+    return null !== (r = null === (n = p[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== r ? r : u.LU.NOT_LOADED
   }
   hasLoadedConfig() {
-    return null != g
+    return null != m
   }
   getConfig() {
-    return g
+    return m
   }
   overrideId() {
     return h
@@ -132,8 +132,8 @@ class R extends(r = i.ZP.Store) {
   }
   getStateForDebugging() {
     return {
-      changelogConfig: g,
-      loadedChangelogs: _,
+      changelogConfig: m,
+      loadedChangelogs: p,
       lastSeenChangelogId: E,
       lastSeenChangelogDate: v
     }

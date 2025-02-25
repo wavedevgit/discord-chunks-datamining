@@ -28,7 +28,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,14 +53,14 @@ function p(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -68,7 +68,7 @@ function g(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -96,9 +96,9 @@ function v(e) {
     children: t,
     className: n,
     minor: i = !1
-  } = e, a = g(e, ["children", "className", "minor"]);
+  } = e, a = m(e, ["children", "className", "minor"]);
   return (0, r.jsx)(s.tEY, {
-    children: (0, r.jsx)("button", h(_({
+    children: (0, r.jsx)("button", h(p({
       className: o()(d.button, n, {
         [d.buttonMinor]: i
       })
@@ -109,7 +109,7 @@ function v(e) {
 }
 
 function b(e, t) {
-  null != e && l.default.track(c.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, _({
+  null != e && l.default.track(c.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, p({
     notice_type: e
   }, t))
 }
@@ -125,8 +125,8 @@ function O(e) {
     children: t,
     noticeType: n,
     additionalTrackingProps: i
-  } = e, o = g(e, ["children", "noticeType", "additionalTrackingProps"]);
-  return (0, r.jsx)(v, h(_({}, o), {
+  } = e, o = m(e, ["children", "noticeType", "additionalTrackingProps"]);
+  return (0, r.jsx)(v, h(p({}, o), {
     onClick: e => {
       null != o.onClick && o.onClick(e), b(n, i)
     },
@@ -138,8 +138,8 @@ function S(e) {
   var {
     children: t,
     href: n
-  } = e, i = g(e, ["children", "href"]);
-  return (0, r.jsx)(s.eee, h(_({}, i), {
+  } = e, i = m(e, ["children", "href"]);
+  return (0, r.jsx)(s.eee, h(p({}, i), {
     className: d.button,
     href: n,
     children: t

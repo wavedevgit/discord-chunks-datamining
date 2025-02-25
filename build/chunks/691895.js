@@ -17,10 +17,10 @@ function s(e) {
       index: c,
       timestamp: d,
       logs: f,
-      nativeLogs: _,
-      serverTrace: p
-    } = r, h = 0 === c ? null !== (s = null === (o = i().find(f, e => e.log.indexOf("Logger loaded") >= 0)) || void 0 === o ? void 0 : o.timestamp) && void 0 !== s ? s : e : d, g = l(u(f, _, t, n), h), m = "Trace #".concat(c + 1, " started ").concat((0, a.Ye)(d), "\n").concat(g);
-    return null != p && (m += "\n Server trace for trace #".concat(c + 1).concat(p)), m
+      nativeLogs: p,
+      serverTrace: _
+    } = r, h = 0 === c ? null !== (s = null === (o = i().find(f, e => e.log.indexOf("Logger loaded") >= 0)) || void 0 === o ? void 0 : o.timestamp) && void 0 !== s ? s : e : d, m = l(u(f, p, t, n), h), g = "Trace #".concat(c + 1, " started ").concat((0, a.Ye)(d), "\n").concat(m);
+    return null != _ && (g += "\n Server trace for trace #".concat(c + 1).concat(_)), g
   }).join("\n\n")
 }
 
@@ -76,7 +76,7 @@ function u(e, t, n, r) {
       log: r,
       shouldKeep: l
     };
-    _(e, u), c && (o += "| ", a.push(u))
+    p(e, u), c && (o += "| ", a.push(u))
   });
   let s = !1;
   return e.filter(e => !(s && e.log.includes("↪")) && !(s = !r && "\uD83C\uDFA8" === e.emoji || !1 === e.shouldKeep))
@@ -91,7 +91,7 @@ function f(e) {
   return t.includes("_START") && (t = "Start " + t.replace("_START", "")), t.includes("_END") && (t = "Finish " + t.replace("_END", "")), t
 }
 
-function _(e, t) {
+function p(e, t) {
   let n = 0;
   for (; n < e.length; n++) {
     let {

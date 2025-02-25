@@ -35,8 +35,8 @@ let u = new Date(2023, 8, 25),
       }
     }
   }),
-  _ = f(),
-  p = e => {
+  p = f(),
+  _ = e => {
     let {
       categories: t,
       itemTypes: n
@@ -46,27 +46,27 @@ let u = new Date(2023, 8, 25),
         skuId: i
       } = t, o = n.reduce((e, t) => {
         var n;
-        return (null === (n = _.categoryItemViews[i]) || void 0 === n ? void 0 : n[t]) != null ? e : (null == _.categoryItemViews[i] && (_.categoryItemViews[i] = {}), _.categoryItemViews[i][t] = r, !0)
+        return (null === (n = p.categoryItemViews[i]) || void 0 === n ? void 0 : n[t]) != null ? e : (null == p.categoryItemViews[i] && (p.categoryItemViews[i] = {}), p.categoryItemViews[i][t] = r, !0)
       }, !1);
       return e || o
     }, !1)
   };
 class h extends(r = a.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (_ = e)
+    null != e && (p = e)
   }
   getState() {
-    return _
+    return p
   }
   isItemViewed(e) {
     var t, n;
     let r = null === (t = l.Z.getProduct(e.skuId)) || void 0 === t ? void 0 : t.categorySkuId;
-    return null != r && (null === (n = _.categoryItemViews[r]) || void 0 === n ? void 0 : n[e.type]) != null
+    return null != r && (null === (n = p.categoryItemViews[r]) || void 0 === n ? void 0 : n[e.type]) != null
   }
   reset() {
-    _ = f()
+    p = f()
   }
 }
 c(h, "displayName", "CollectiblesPersistedStore"), c(h, "persistKey", "CollectiblesPersistedStoreV2"), new h(s.Z, {
-  COLLECTIBLES_CATEGORY_ITEMS_VIEWED: p
+  COLLECTIBLES_CATEGORY_ITEMS_VIEWED: _
 })

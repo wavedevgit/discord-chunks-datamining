@@ -19,14 +19,14 @@ function f(e) {
     user: t,
     displayProfile: n,
     guildId: f,
-    canUsePremiumCustomization: _,
-    pendingBanner: p,
+    canUsePremiumCustomization: p,
+    pendingBanner: _,
     isTryItOutFlow: h,
-    disabledInputs: g,
-    onUpsellClick: m
-  } = e, E = _ || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, v = E ? i.vdY : i.SrA, b = (0, o.M)(E), y = () => {
+    disabledInputs: m,
+    onUpsellClick: g
+  } = e, E = p || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, v = E ? i.vdY : i.SrA, b = (0, o.M)(E), y = () => {
     if (!E && !b) {
-      null == m || m();
+      null == g || g();
       return
     }(0, s.$r)(l.pC.BANNER, f, h)
   };
@@ -35,9 +35,9 @@ function f(e) {
     displayProfile: n,
     guildId: f,
     profileType: c.y0.BITE_SIZE,
-    pendingBanner: p,
-    canUsePremiumProfileCustomization: _,
-    children: !g && (0, r.jsxs)(i.P3F, {
+    pendingBanner: _,
+    canUsePremiumProfileCustomization: p,
+    children: !m && (0, r.jsxs)(i.P3F, {
       onClick: y,
       className: d.clickable,
       children: [(0, r.jsx)(v, {

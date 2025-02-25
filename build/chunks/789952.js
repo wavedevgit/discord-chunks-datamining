@@ -20,13 +20,13 @@ let i = !1;
         exactMatch: c,
         suppressThrow: d
       }),
-      _ = l ? f : r.F3.toSlatePoint(e, [a, s], {
+      p = l ? f : r.F3.toSlatePoint(e, [a, s], {
         exactMatch: c,
         suppressThrow: d
       });
-    return null != f && null != _ ? {
+    return null != f && null != p ? {
       anchor: f,
-      focus: _
+      focus: p
     } : null
   };
   let e = r.F3.toSlatePoint;

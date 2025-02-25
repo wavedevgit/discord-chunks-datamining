@@ -49,7 +49,7 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = Object.freeze({
+let p = Object.freeze({
     SIZE_10: l.size10,
     SIZE_12: l.size12,
     SIZE_14: l.size14,
@@ -58,25 +58,25 @@ let _ = Object.freeze({
     SIZE_24: l.size24,
     SIZE_32: l.size32
   }),
-  p = e => {
+  _ = e => {
     let {
       id: t,
       muted: n = !1,
       className: i = s.wrapper,
-      size: l = _.SIZE_14,
+      size: l = p.SIZE_14,
       selectable: c = !1,
       children: d,
-      color: p,
+      color: _,
       onClick: h,
-      onContextMenu: g,
-      style: m,
+      onContextMenu: m,
+      style: g,
       title: E,
       uppercase: v
     } = e;
     return (0, r.jsx)(a.H, {
       role: null != h ? "button" : void 0,
       onClick: h,
-      onContextMenu: g,
+      onContextMenu: m,
       id: t,
       className: o()(i, {
         [s.base]: !0,
@@ -86,11 +86,11 @@ let _ = Object.freeze({
         [s.uppercase]: v
       }),
       title: E,
-      style: null != p ? f(u({}, m), {
-        color: p
-      }) : m,
+      style: null != _ ? f(u({}, g), {
+        color: _
+      }) : g,
       children: d
     })
   };
-p.Sizes = _;
-let h = p
+_.Sizes = p;
+let h = _

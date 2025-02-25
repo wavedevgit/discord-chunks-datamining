@@ -12,11 +12,11 @@ var r, i = n(200651),
   u = n(692547),
   d = n(481060),
   f = n(891819),
-  _ = n(372769),
-  p = n(451478),
+  p = n(372769),
+  _ = n(451478),
   h = n(956664),
-  g = n(153066),
-  m = n(521686);
+  m = n(153066),
+  g = n(521686);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -111,7 +111,7 @@ class A extends o.PureComponent {
       iconSrc: t
     } = this.props;
     return null != e.icon || null != t ? null : (0, i.jsx)("div", {
-      className: m.acronym,
+      className: g.acronym,
       children: e.acronym
     })
   }
@@ -123,8 +123,8 @@ class A extends o.PureComponent {
       badgeTooltipColor: r,
       badgeTooltipDelay: o
     } = this.props;
-    return e && null != t.hasFeature ? (0, i.jsx)(_.Z, {
-      className: m.guildIconBadge,
+    return e && null != t.hasFeature ? (0, i.jsx)(p.Z, {
+      className: g.guildIconBadge,
       guild: t,
       badgeStrokeColor: n,
       tooltipColor: r,
@@ -142,8 +142,8 @@ class A extends o.PureComponent {
         size: c,
         style: u = {},
         textScale: f,
-        showTooltip: _,
-        tooltipPosition: p,
+        showTooltip: p,
+        tooltipPosition: _,
         onClick: h,
         to: E,
         badgeStrokeColor: b,
@@ -156,10 +156,10 @@ class A extends o.PureComponent {
       R = N[c],
       P = null != h ? d.P3F : "div";
     return (0, i.jsxs)(P, y(v({
-      className: s()(m.icon, o, (0, g.l)(m, "iconSize", c), {
-        [null !== (e = (0, g.l)(m, "iconActive", c)) && void 0 !== e ? e : ""]: l,
-        [m.iconInactive]: !l,
-        [m.noIcon]: null == r.icon
+      className: s()(g.icon, o, (0, m.l)(g, "iconSize", c), {
+        [null !== (e = (0, m.l)(g, "iconActive", c)) && void 0 !== e ? e : ""]: l,
+        [g.iconInactive]: !l,
+        [g.noIcon]: null == r.icon
       }),
       "aria-hidden": A,
       style: null == r.icon ? v({
@@ -206,7 +206,7 @@ class A extends o.PureComponent {
     }) : this.renderTooltip()
   }
 }
-let C = c.ZP.connectStores([p.Z], e => {
+let C = c.ZP.connectStores([_.Z], e => {
   let {
     guild: t,
     animate: n,
@@ -218,7 +218,7 @@ let C = c.ZP.connectStores([p.Z], e => {
   } = e;
   return {
     style: y(v({}, i), {
-      backgroundImage: (0, h.rv)(null != r ? r : t.getIconURL(null != a ? a : T[o], n && p.Z.isFocused(), s))
+      backgroundImage: (0, h.rv)(null != r ? r : t.getIconURL(null != a ? a : T[o], n && _.Z.isFocused(), s))
     })
   }
 })((0, f.N)(e => (0, i.jsx)(A, v({}, e))));

@@ -28,8 +28,8 @@ var r = n(200651),
   C = n(378233),
   I = n(419922),
   S = n(688179),
-  T = n(981631),
-  P = n(474936),
+  P = n(981631),
+  T = n(474936),
   A = n(388032),
   w = n(133478),
   Z = n(859289);
@@ -79,9 +79,9 @@ let L = (e, t) => t ? A.NW.format(A.t.auckX1, {
   };
 
 function M(e) {
-  O.default.track(T.rMx.PREMIUM_PROMOTION_OPENED, {
-    location_page: null != e.guild_id ? T.ZY5.GUILD_CHANNEL : T.ZY5.DM_CHANNEL,
-    location_section: T.jXE.STICKER_POPOUT
+  O.default.track(P.rMx.PREMIUM_PROMOTION_OPENED, {
+    location_page: null != e.guild_id ? P.ZY5.GUILD_CHANNEL : P.ZY5.DM_CHANNEL,
+    location_section: P.jXE.STICKER_POPOUT
   }), (0, b.z)()
 }
 
@@ -140,8 +140,8 @@ let F = e => {
       let {
         channel: e
       } = g.current;
-      O.default.track(T.rMx.OPEN_POPOUT, k({
-        type: T.jXE.STICKER_POPOUT,
+      O.default.track(P.rMx.OPEN_POPOUT, k({
+        type: P.jXE.STICKER_POPOUT,
         guild_id: e.getGuildId(),
         sticker_pack_id: n.pack_id
       }, (0, u.v_)(e)))
@@ -194,8 +194,8 @@ let F = e => {
       [B, G] = i.useState(!1),
       [H, V] = i.useState(null),
       z = i.useMemo(() => ({
-        page: null != a.guild_id ? T.ZY5.GUILD_CHANNEL : T.ZY5.DM_CHANNEL,
-        section: T.jXE.STICKER_POPOUT
+        page: null != a.guild_id ? P.ZY5.GUILD_CHANNEL : P.ZY5.DM_CHANNEL,
+        section: P.jXE.STICKER_POPOUT
       }), [a.guild_id]),
       {
         current: K
@@ -214,7 +214,7 @@ let F = e => {
         stickerSourceGuild: e
       } = X.current;
       (async () => {
-        (null == e || e.hasFeature(T.oNc.DISCOVERABLE)) && N(await (0, h.Z)(n.id)), S(!0)
+        (null == e || e.hasFeature(P.oNc.DISCOVERABLE)) && N(await (0, h.Z)(n.id)), S(!0)
       })()
     }, [n.id, U]);
     let q = n.guild_id === a.getGuildId(),
@@ -233,7 +233,7 @@ let F = e => {
       } = X.current;
       e()
     }, [C, j]), (0, d.ZP)(() => {
-      O.default.track(T.rMx.OPEN_POPOUT, k({
+      O.default.track(P.rMx.OPEN_POPOUT, k({
         type: $
       }, K))
     }), C) ? (0, r.jsxs)(_.W_, {
@@ -254,7 +254,7 @@ let F = e => {
             sticker: n
           }), J && (0, r.jsx)(v.Z, {
             className: Z.ctaButton,
-            subscriptionTier: P.Si.TIER_2,
+            subscriptionTier: T.Si.TIER_2,
             size: s.zxk.Sizes.SMALL,
             fullWidth: !0,
             buttonText: A.NW.string(A.t["gl/XHB"]),

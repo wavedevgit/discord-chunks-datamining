@@ -14,11 +14,11 @@ var i = n(97613),
   u = n(366939),
   d = n(667),
   f = n(138464),
-  _ = n(619067),
-  p = n(594174),
+  p = n(619067),
+  _ = n(594174),
   h = n(626135),
-  g = n(585483),
-  m = n(74538),
+  m = n(585483),
+  g = n(74538),
   E = n(981631),
   v = n(474936);
 
@@ -91,22 +91,23 @@ function N(e) {
     analyticsLocation: C,
     analyticsSourceLocation: R,
     confirmationFooter: P,
-    isGift: D = !1,
-    giftMessage: w,
-    giftStyle: L,
-    giftingOrigin: x,
-    subscriptionTier: M,
-    trialId: j,
-    postSuccessGuild: k,
-    openInvoiceId: U,
-    applicationId: G,
-    referralTrialOfferId: B,
-    giftRecipient: F,
-    returnRef: V,
-    subscription: Z,
-    skipConfirm: H,
-    repeatPurchase: W
-  } = null != e ? e : {}, Y = !1, K = (0, a.Z)(), z = p.default.getCurrentUser(), q = (0, m.M5)(z, v.p9.TIER_2), Q = o()("payment-modal"), X = (0, m.Wz)(M);
+    planSelectBanner: D,
+    isGift: w = !1,
+    giftMessage: L,
+    giftStyle: x,
+    giftingOrigin: M,
+    subscriptionTier: j,
+    trialId: k,
+    postSuccessGuild: U,
+    openInvoiceId: G,
+    applicationId: B,
+    referralTrialOfferId: F,
+    giftRecipient: V,
+    returnRef: Z,
+    subscription: H,
+    skipConfirm: W,
+    repeatPurchase: Y
+  } = null != e ? e : {}, K = !1, z = (0, a.Z)(), q = _.default.getCurrentUser(), Q = (0, g.M5)(q, v.p9.TIER_2), X = o()("payment-modal"), J = (0, g.Wz)(j);
   return (0, s.ZDy)(async () => {
     let {
       default: e
@@ -116,24 +117,24 @@ function N(e) {
         onClose: o
       } = n, a = I(n, ["onClose"]);
       return (0, r.jsx)(e, S(y({}, a), {
-        loadId: K,
-        subscriptionTier: M,
-        skuId: X,
-        isGift: D,
-        giftMessage: w,
-        giftStyle: L,
-        giftingOrigin: x,
-        giftRecipient: F,
+        loadId: z,
+        subscriptionTier: j,
+        skuId: J,
+        isGift: w,
+        giftMessage: L,
+        giftStyle: x,
+        giftingOrigin: M,
+        giftRecipient: V,
         initialPlanId: t,
         followupSKUInfo: i,
         onClose: (e, t) => {
-          o(), null == b || b(e), e && (null == T || T(), (0, _.I)(D, q, t) && g.S.dispatch(E.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
+          o(), null == b || b(e), e && (null == T || T(), (0, p.I)(w, Q, t) && m.S.dispatch(E.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
             type: "PREMIUM_PAYMENT_MODAL_CLOSE",
             didSucceed: e
           })
         },
         onComplete: e => {
-          Y = !0, null == O || O(), (0, _.I)(D, q, (0, m.k5)(null == e ? void 0 : e.subscription)) && (0, f.H)(!0)
+          K = !0, null == O || O(), (0, p.I)(w, Q, (0, g.k5)(null == e ? void 0 : e.subscription)) && (0, f.H)(!0)
         },
         onSubscriptionConfirmation: T,
         analyticsLocations: N,
@@ -141,33 +142,34 @@ function N(e) {
         analyticsLocation: C,
         analyticsSourceLocation: R,
         confirmationFooter: P,
-        trialId: j,
-        postSuccessGuild: k,
+        planSelectBanner: D,
+        trialId: k,
+        postSuccessGuild: U,
         planGroup: v.Y1,
-        openInvoiceId: U,
-        applicationId: G,
-        referralTrialOfferId: B,
-        returnRef: V,
-        subscription: Z,
-        skipConfirm: !!H,
-        repeatPurchase: W
+        openInvoiceId: G,
+        applicationId: B,
+        referralTrialOfferId: F,
+        returnRef: Z,
+        subscription: H,
+        skipConfirm: !!W,
+        repeatPurchase: Y
       }))
     }
   }, {
-    modalKey: Q,
+    modalKey: X,
     onCloseCallback: () => {
-      Y || h.default.track(E.rMx.PAYMENT_FLOW_CANCELED, {
-        load_id: K,
+      K || h.default.track(E.rMx.PAYMENT_FLOW_CANCELED, {
+        load_id: z,
         payment_type: E.Zuq[E.GZQ.SUBSCRIPTION],
         location: null != C ? C : A,
         source: R,
         subscription_type: E.NYc.PREMIUM,
-        is_gift: D,
-        sku_id: X,
-        eligible_for_trial: null != j,
-        application_id: G,
+        is_gift: w,
+        sku_id: J,
+        eligible_for_trial: null != k,
+        application_id: B,
         location_stack: N
-      }), (0, u.fw)(), (0, c.fw)(), (0, d.p)(), null == b || b(Y), Y && (null == T || T())
+      }), (0, u.fw)(), (0, c.fw)(), (0, d.p)(), null == b || b(K), K && (null == T || T())
     }
   })
 }

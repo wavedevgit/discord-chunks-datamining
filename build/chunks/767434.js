@@ -18,21 +18,21 @@ var r = n(192379),
 
 function f(e, t, n, d) {
   let f = e.guildId === c.X8,
-    _ = (0, o.e7)([a.default], () => s.ZP.canUseSoundboardEverywhere(a.default.getCurrentUser())),
-    p = (0, l.V2)({
+    p = (0, o.e7)([a.default], () => s.ZP.canUseSoundboardEverywhere(a.default.getCurrentUser())),
+    _ = (0, l.V2)({
       location: "useSoundmojiGuildInfoData"
     }),
     h = e.guildId !== (null == t ? void 0 : t.guild_id);
   return {
-    buttonType: r.useMemo(() => f || !p ? 2 : p && !_ ? 1 : n || null == d ? 2 : 0, [f, _, p, n, d]),
+    buttonType: r.useMemo(() => f || !_ ? 2 : _ && !p ? 1 : n || null == d ? 2 : 0, [f, p, _, n, d]),
     description: r.useMemo(() => {
       let e = null != d;
       return (0, i.EQ)({
-        hasSoundmojiPermissions: _,
+        hasSoundmojiPermissions: p,
         isInGuild: n,
         isGuildDiscoverable: e,
         isSoundFromDifferentGuild: h,
-        canSendSoundmojis: p,
+        canSendSoundmojis: _,
         isDefaultSound: f
       }).with({
         canSendSoundmojis: !1
@@ -67,6 +67,6 @@ function f(e, t, n, d) {
         isInGuild: !1,
         isGuildDiscoverable: !0
       }, () => u.NW.string(u.t.qRkWhY)).exhaustive()
-    }, [f, d, _, n, h, p])
+    }, [f, d, p, n, h, _])
   }
 }

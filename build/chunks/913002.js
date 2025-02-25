@@ -14,8 +14,8 @@ var i = n(120356),
   u = n(951394),
   d = n(695346),
   f = n(785717),
-  _ = n(388032),
-  p = n(515054);
+  p = n(388032),
+  _ = n(515054);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,7 +26,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -60,7 +60,7 @@ let v = 300,
     let {
       default: t
     } = await n.e("31649").then(n.bind(n, 475613));
-    return n => (0, r.jsx)(t, E(g({}, n), {
+    return n => (0, r.jsx)(t, E(m({}, n), {
       sourceAnalyticsLocations: e,
       location: "UserProfileCustomStatusBubbleEditBar"
     }))
@@ -74,46 +74,46 @@ function y(e) {
   } = e, {
     analyticsLocations: h
   } = (0, c.ZP)(), {
-    trackUserProfileAction: g
-  } = (0, f.KZ)(), [m, E] = (0, a.Wu)([l.Z], () => [l.Z.useReducedMotion, l.Z.keyboardModeEnabled]), y = !n || m || E ? 0 : v, O = () => {
-    g({
+    trackUserProfileAction: m
+  } = (0, f.KZ)(), [g, E] = (0, a.Wu)([l.Z], () => [l.Z.useReducedMotion, l.Z.keyboardModeEnabled]), y = !n || g || E ? 0 : v, O = () => {
+    m({
       action: "PRESS_EDIT_CUSTOM_STATUS"
     }), b(h), null == i || i()
   }, S = () => {
-    g({
+    m({
       action: "PRESS_CLEAR_CUSTOM_STATUS"
     }), d.Ok.updateSetting(void 0)
   };
   return (0, r.jsxs)(u.ZP, {
-    className: o()(p.popover, {
-      [p.visible]: t,
-      [p.expandable]: n
+    className: o()(_.popover, {
+      [_.visible]: t,
+      [_.expandable]: n
     }),
     children: [(0, r.jsx)(s.DY3, {
-      text: _.NW.string(_.t.bt75u7),
+      text: p.NW.string(p.t.bt75u7),
       delay: y,
       "aria-label": !1,
       children: (0, r.jsx)(u.zx, {
-        className: o()(p.button, p.left),
-        "aria-label": _.NW.string(_.t.QdHxoq),
+        className: o()(_.button, _.left),
+        "aria-label": p.NW.string(p.t.QdHxoq),
         "aria-haspopup": "dialog",
         onClick: O,
         children: (0, r.jsx)(s.vdY, {
           size: "xs",
-          colorClass: p.icon
+          colorClass: _.icon
         })
       })
     }), (0, r.jsx)(s.DY3, {
-      text: _.NW.string(_.t.VkKicX),
+      text: p.NW.string(p.t.VkKicX),
       delay: y,
       "aria-label": !1,
       children: (0, r.jsx)(u.zx, {
-        className: o()(p.button, p.right),
-        "aria-label": _.NW.string(_.t.wfYTHR),
+        className: o()(_.button, _.right),
+        "aria-label": p.NW.string(p.t.wfYTHR),
         onClick: S,
         children: (0, r.jsx)(s.XHJ, {
           size: "xs",
-          colorClass: p.icon
+          colorClass: _.icon
         })
       })
     })]

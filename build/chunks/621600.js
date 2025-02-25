@@ -6,7 +6,7 @@ n.d(t, {
   I: () => N,
   UE: () => E,
   Wq: () => b,
-  ZB: () => m,
+  ZB: () => g,
   jz: () => S,
   rU: () => T,
   sK: () => O,
@@ -24,7 +24,7 @@ var l = n(630388),
   d = n(490897),
   f = n(526761);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,14 +33,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -57,12 +57,12 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var m = function(e) {
+var g = function(e) {
   return e.ForumThreadsCreatedOn = "enabled forum thread created notifs", e.ForumThreadsCreatedOff = "disabled forum thread created notifs", e.SuppressEveryoneOn = "enabled suppress everyone", e.SuppressEveryoneOff = "disabled suppress everyone", e.SuppressRolesOn = "enabled suppress roles", e.SuppressRolesOff = "disabled suppress roles", e.HighlightsOn = "enabled highlights", e.HighlightsOff = "disabled highlights", e.MobilePushOn = "enabled mobile push notifications", e.MobilePushOff = "disabled mobile push notifications", e.UnreadsAll = "unreads set to all messages", e.UnreadsMentions = "unreads set to mentions", e.UnreadsDefault = "unreads set to the default", e.NotificationsAll = "notifications set to all messages", e.NotificationsMentions = "notifications set to mentions", e.NotificationsNothing = "notifications set to nothing", e.NotificationsDefault = "notifications set to the default", e.PresetAll = "notification preset set to all messages", e.PresetMentions = "notification preset set to mentions", e.PresetNothing = "notification preset set to nothing", e.PresetDefault = "notification preset set to the default", e.OptedIn = "opted in to entity", e.OptedOut = "opted out from entity", e.Favorited = "favorited", e.UnFavorited = "unfavorited", e.Muted = "muted", e.Unmuted = "unmuted", e.MutedScheduledEvents = "muted scheduled events", e.UnmutedScheduledEvents = "unmuted scheduled events", e.OverrideCreated = "channel override created", e.OverrideDeleted = "channel override deleted", e.AnnouncementAutoEnable = "announcement channels auto set to all messages", e
 }({});
 let E = {
@@ -87,7 +87,7 @@ let E = {
 
 function b(e, t, n, o, a) {
   var s, d;
-  let _ = function(e) {
+  let p = function(e) {
       var t, n, r, i, o, a, s;
       let l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
         c = null != l.mute_config && null != l.mute_config.end_time ? new Date(l.mute_config.end_time).getTime() : e.guild_muted_until,
@@ -104,13 +104,13 @@ function b(e, t, n, o, a) {
         guild_scheduled_events_muted: null !== (s = l.mute_scheduled_events) && void 0 !== s ? s : e.guild_scheduled_events_muted
       }
     },
-    h = _(n),
-    m = _(I(e), t),
-    E = y(h, m, "RETURN_PREVIOUS_WHEN_CHANGED"),
+    h = p(n),
+    g = p(I(e), t),
+    E = y(h, g, "RETURN_PREVIOUS_WHEN_CHANGED"),
     b = null !== (s = E("guild_flags")) && void 0 !== s ? s : 0,
-    O = (null !== (d = m.guild_flags) && void 0 !== d ? d : 0) ^ b,
+    O = (null !== (d = g.guild_flags) && void 0 !== d ? d : 0) ^ b,
     S = 0 === (0, l.M1)(O, f.vc.OPT_IN_CHANNELS_OFF, f.vc.OPT_IN_CHANNELS_ON);
-  r.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, g(p({}, m, i.Z.getStats(e)), {
+  r.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(_({}, g, i.Z.getStats(e)), {
     location: a,
     guild_id: e,
     update_type: u.I.GUILD,
@@ -137,8 +137,8 @@ function O(e) {
   return null != e && null != e.end_time ? new Date(e.end_time).getTime() : null
 }
 
-function S(e, t, n, s, d, _) {
-  var h, m, E, b;
+function S(e, t, n, s, d, p) {
+  var h, g, E, b;
   let S = function(t) {
       var n, r;
       let i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
@@ -157,12 +157,12 @@ function S(e, t, n, s, d, _) {
     T = S(N(e, t), n),
     A = y(I, T, "RETURN_PREVIOUS_WHEN_CHANGED"),
     C = o.Z.getChannel(t),
-    R = null !== (m = A("channel_flags")) && void 0 !== m ? m : 0,
+    R = null !== (g = A("channel_flags")) && void 0 !== g ? g : 0,
     P = (null !== (E = T.channel_flags) && void 0 !== E ? E : 0) ^ R,
     D = 0 === (0, l.M1)(P, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED),
     w = null !== (b = null === (h = a.Z.getLastMessage(t)) || void 0 === h ? void 0 : h.type) && void 0 !== b ? b : null;
-  r.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, g(p({}, T, i.Z.getStats(e)), {
-    location: _,
+  r.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(_({}, T, i.Z.getStats(e)), {
+    location: p,
     guild_id: e,
     channel_id: t,
     update_type: u.I.CHANNEL,

@@ -39,7 +39,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,15 +50,15 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let h = (0, c.isLinux)() ? u.HsE : (0, c.isMac)() ? u.REU : (0, c.isWindows)() ? u.iC$ : void 0,
-  g = a().invert(u.HsE);
-g["223"] = "`", Object.freeze(g);
-let m = Object.freeze(a().invert(u.REU)),
+  m = a().invert(u.HsE);
+m["223"] = "`", Object.freeze(m);
+let g = Object.freeze(a().invert(u.REU)),
   E = a().invert(u.iC$);
 E["223"] = "`", Object.freeze(E);
 let v = a().invert(null != h ? h : {});
@@ -71,9 +71,9 @@ function y(e) {
   let [, t, n] = e;
   switch (n) {
     case u.CgE.LINUX:
-      return g["" + t];
-    case u.CgE.MACOS:
       return m["" + t];
+    case u.CgE.MACOS:
+      return g["" + t];
     case u.CgE.WINDOWS:
       return E["" + t];
     case u.CgE.BROWSER:
@@ -156,7 +156,7 @@ function A(e) {
   return null == e ? [] : e.reduce((e, n) => {
     let r = y(n),
       i = f({}, t);
-    if (null == r) return e.push(p(f({}, i), {
+    if (null == r) return e.push(_(f({}, i), {
       combo: n
     })), e;
     if (N.test(r)) return t[r + "Key"] = !0, e.map(e => (e[r + "Key"] = !0, e));

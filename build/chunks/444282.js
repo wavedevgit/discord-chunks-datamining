@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(476326),
   d = n(703558),
   f = n(117530),
-  _ = n(859235),
-  p = n(898463),
+  p = n(859235),
+  _ = n(898463),
   h = n(981631),
-  g = n(293788),
-  m = n(451328);
+  m = n(293788),
+  g = n(451328);
 
 function E(e) {
   let {
@@ -70,7 +70,7 @@ function E(e) {
       }), e.currentTarget.value = ""
     }
   };
-  return null != y ? (0, r.jsx)(p.Z, {
+  return null != y ? (0, r.jsx)(_.Z, {
     channelId: t,
     upload: y,
     keyboardModeEnabled: o,
@@ -88,35 +88,35 @@ function E(e) {
       })]
     }),
     canEdit: !1
-  }) : (0, r.jsxs)(_.Z, {
+  }) : (0, r.jsxs)(p.Z, {
     id: n.name,
     channelId: t,
     keyboardModeEnabled: o,
     onKeyDown: S,
-    className: a()(g.emptyOption, {
-      [g.emptyOptionActive]: v
+    className: a()(m.emptyOption, {
+      [m.emptyOptionActive]: v
     }),
     draftType: d.d.SlashCommand,
     ref: O,
     children: [(0, r.jsx)("span", {
-      className: a()(g.optionName, {
-        [g.optionNameActive]: v
+      className: a()(m.optionName, {
+        [m.optionNameActive]: v
       }),
       children: n.name
     }), (0, r.jsx)(s.P3F, {
-      className: g.clickContainer,
+      className: m.clickContainer,
       onClick: () => {
         var e;
         return null === (e = E.current) || void 0 === e ? void 0 : e.activateUploadDialogue()
       },
       children: (0, r.jsxs)("div", {
-        className: g.commandOptionContainer,
+        className: m.commandOptionContainer,
         children: [(0, r.jsx)("img", {
-          src: m,
-          className: g.optionIcon,
+          src: g,
+          className: m.optionIcon,
           alt: ""
         }), (0, r.jsx)(s.Text, {
-          className: g.optionHelp,
+          className: m.optionHelp,
           variant: "text-sm/normal",
           children: "Drag and drop or click to upload file"
         }), (0, r.jsx)(c.Z, {
@@ -125,7 +125,7 @@ function E(e) {
           multiple: !1,
           tabIndex: -1,
           "aria-hidden": !0,
-          className: g.fileInput
+          className: m.fileInput
         })]
       })
     })]

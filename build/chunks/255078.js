@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Q: () => p,
+  Q: () => _,
   Z: () => h
 });
 var r = n(512722),
@@ -35,16 +35,16 @@ function f(e) {
   return e
 }
 
-function _(e) {
+function p(e) {
   return {
     id: e.id,
     planId: e.plan_id,
     quantity: e.quantity
   }
 }
-class p extends o.Z {
+class _ extends o.Z {
   static createFromServer(e) {
-    return new p(f({
+    return new _(f({
       id: e.id,
       type: e.type,
       createdAt: new Date(e.created_at),
@@ -58,9 +58,9 @@ class p extends o.Z {
       paymentGatewaySubscriptionId: e.payment_gateway_subscription_id,
       trialId: e.trial_id,
       trialEndsAt: e.trial_ends_at,
-      items: e.items.map(_),
+      items: e.items.map(p),
       renewalMutations: null != e.renewal_mutations ? {
-        items: e.renewal_mutations.items.map(_),
+        items: e.renewal_mutations.items.map(p),
         paymentGatewayPlanId: e.renewal_mutations.payment_gateway_plan_id
       } : null,
       streakStartedAt: null != e.streak_started_at ? new Date(e.streak_started_at) : null,
@@ -142,4 +142,4 @@ class p extends o.Z {
     this.planId = n, this.additionalPlans = e.items.filter(e => e.planId !== n), null != t && null != r && (t.planId = r, t.additionalPlans = t.items.filter(e => e.planId !== r))
   }
 }
-let h = p
+let h = _

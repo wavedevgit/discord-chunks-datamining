@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,24 +36,24 @@ function _(e) {
   return e
 }
 
-function p(e) {
+function _(e) {
   var t;
   let {
     platformType: f,
-    location: p,
+    location: _,
     overrideUrl: h,
-    successRedirect: g
+    successRedirect: m
   } = e;
   if (f === d.ABu.LEAGUE_OF_LEGENDS && (f = d.ABu.RIOT_GAMES), f === d.ABu.CRUNCHYROLL) {
-    a.K([null != p ? p : "unknown"]);
+    a.K([null != _ ? _ : "unknown"]);
     return
   }
   if (f === d.ABu.XBOX) {
-    l.K([null != p ? p : "unknown"]);
+    l.K([null != _ ? _ : "unknown"]);
     return
   }
   if (f === d.ABu.PLAYSTATION || f === d.ABu.PLAYSTATION_STAGING) {
-    s.K([null != p ? p : "unknown"], f);
+    s.K([null != _ ? _ : "unknown"], f);
     return
   }
   if (f === d.ABu.DOMAIN) {
@@ -61,8 +61,8 @@ function p(e) {
       let {
         default: e
       } = await n.e("64941").then(n.bind(n, 907053));
-      return t => (0, r.jsx)(e, _({
-        analyticsLocation: [null != p ? p : "unknown"]
+      return t => (0, r.jsx)(e, p({
+        analyticsLocation: [null != _ ? _ : "unknown"]
       }, t))
     });
     return
@@ -72,10 +72,10 @@ function p(e) {
       let {
         default: e
       } = await n.e("54934").then(n.bind(n, 701460));
-      return t => (0, r.jsx)(e, _({
+      return t => (0, r.jsx)(e, p({
         platformType: f,
-        location: p,
-        successRedirect: g
+        location: _,
+        successRedirect: m
       }, t))
     });
     return
@@ -86,14 +86,14 @@ function p(e) {
       href: h,
       onConfirm: () => {
         (0, u.H)(f, {
-          location: p,
-          successRedirect: g
+          location: _,
+          successRedirect: m
         }, h)
       }
     });
     return
   }(0, u.H)(f, {
-    location: p,
-    successRedirect: g
+    location: _,
+    successRedirect: m
   })
 }

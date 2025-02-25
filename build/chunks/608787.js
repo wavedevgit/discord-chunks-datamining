@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  GI: () => g,
+  GI: () => m,
   Jt: () => f,
   Un: () => h,
-  wE: () => p
+  wE: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379);
@@ -49,8 +49,8 @@ let s = function() {
 function f(e) {
   d = e
 }
-let _ = e => new Promise(t => setTimeout(t, e));
-async function p(e) {
+let p = e => new Promise(t => setTimeout(t, e));
+async function _(e) {
   let {
     createPromise: t,
     webpackId: r
@@ -60,7 +60,7 @@ async function p(e) {
   } catch (e) {
     if (console.log(e), r in n.c) throw console.log("Module was found in webpack cache so it has loaded from the network and webpack will not retry"), e;
     if (o >= l) throw e;
-    await _(i), await d(), i = Math.min(u, 2 * i), o++
+    await p(i), await d(), i = Math.min(u, 2 * i), o++
   }
 }
 
@@ -71,7 +71,7 @@ function h(e) {
     renderLoader: o,
     name: l,
     memo: c = !1
-  } = e, u = i.lazy(() => p({
+  } = e, u = i.lazy(() => _({
     createPromise: t,
     webpackId: n
   })), d = e => (0, r.jsx)(i.Suspense, {
@@ -81,7 +81,7 @@ function h(e) {
   return c && (d = i.memo(d)), d.displayName = "Suspense(".concat(l || "Unknown", ")"), d
 }
 
-function g(e) {
+function m(e) {
   let {
     createPromise: t,
     webpackId: n,
@@ -89,7 +89,7 @@ function g(e) {
     renderFallback: a
   } = e, [s, l] = i.useState(null);
   return i.useEffect(() => {
-    p({
+    _({
       createPromise: t,
       webpackId: n
     }).then(e => {

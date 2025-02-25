@@ -9,11 +9,11 @@ var r = "function" == typeof Map && Map.prototype,
   u = s && Set.prototype.forEach,
   d = "function" == typeof WeakMap && WeakMap.prototype ? WeakMap.prototype.has : null,
   f = "function" == typeof WeakSet && WeakSet.prototype ? WeakSet.prototype.has : null,
-  _ = "function" == typeof WeakRef && WeakRef.prototype ? WeakRef.prototype.deref : null,
-  p = Boolean.prototype.valueOf,
+  p = "function" == typeof WeakRef && WeakRef.prototype ? WeakRef.prototype.deref : null,
+  _ = Boolean.prototype.valueOf,
   h = Object.prototype.toString,
-  g = Function.prototype.toString,
-  m = String.prototype.match,
+  m = Function.prototype.toString,
+  g = String.prototype.match,
   E = String.prototype.slice,
   v = String.prototype.replace,
   b = String.prototype.toUpperCase,
@@ -119,16 +119,16 @@ e.exports = function e(t, r, i, s) {
   if ("string" == typeof t) return ea(t, l);
   if ("number" == typeof t) {
     if (0 === t) return 1 / 0 / t > 0 ? "0" : "-0";
-    var _ = String(t);
-    return f ? x(t, _) : _
+    var p = String(t);
+    return f ? x(t, p) : p
   }
   if ("bigint" == typeof t) {
     var h = String(t) + "n";
     return f ? x(t, h) : h
   }
-  var g = void 0 === l.depth ? 5 : l.depth;
-  if (void 0 === i && (i = 0), i >= g && g > 0 && "object" == typeof t) return B(t) ? "[Array]" : "[Object]";
-  var m = ef(l, i);
+  var m = void 0 === l.depth ? 5 : l.depth;
+  if (void 0 === i && (i = 0), i >= m && m > 0 && "object" == typeof t) return B(t) ? "[Array]" : "[Object]";
+  var g = ef(l, i);
   if (void 0 === s) s = [];
   else if ($(s, t) >= 0) return "[Circular]";
 
@@ -143,7 +143,7 @@ e.exports = function e(t, r, i, s) {
   }
   if ("function" == typeof t && !V(t)) {
     var O = J(t),
-      N = ep(t, b);
+      N = e_(t, b);
     return "[Function" + (O ? ": " + O : " (anonymous)") + "]" + (N.length > 0 ? " { " + I.call(N, ", ") + " }" : "")
   }
   if (K(t)) {
@@ -156,47 +156,47 @@ e.exports = function e(t, r, i, s) {
   }
   if (B(t)) {
     if (0 === t.length) return "[]";
-    var eh = ep(t, b);
-    return m && !ed(eh) ? "[" + e_(eh, m) + "]" : "[ " + I.call(eh, ", ") + " ]"
+    var eh = e_(t, b);
+    return g && !ed(eh) ? "[" + ep(eh, g) + "]" : "[ " + I.call(eh, ", ") + " ]"
   }
   if (Z(t)) {
-    var eg = ep(t, b);
-    return "cause" in Error.prototype || !("cause" in t) || w.call(t, "cause") ? 0 === eg.length ? "[" + String(t) + "]" : "{ [" + String(t) + "] " + I.call(eg, ", ") + " }" : "{ [" + String(t) + "] " + I.call(S.call("[cause]: " + b(t.cause), eg), ", ") + " }"
+    var em = e_(t, b);
+    return "cause" in Error.prototype || !("cause" in t) || w.call(t, "cause") ? 0 === em.length ? "[" + String(t) + "]" : "{ [" + String(t) + "] " + I.call(em, ", ") + " }" : "{ [" + String(t) + "] " + I.call(S.call("[cause]: " + b(t.cause), em), ", ") + " }"
   }
   if ("object" == typeof t && d) {
     if (k && "function" == typeof t[k] && M) return M(t, {
-      depth: g - i
+      depth: m - i
     });
     if ("symbol" !== d && "function" == typeof t.inspect) return t.inspect()
   }
   if (ee(t)) {
-    var em = [];
+    var eg = [];
     return a && a.call(t, function(e, n) {
-      em.push(b(n, t, !0) + " => " + b(e, t))
-    }), eu("Map", o.call(t), em, m)
+      eg.push(b(n, t, !0) + " => " + b(e, t))
+    }), eu("Map", o.call(t), eg, g)
   }
   if (er(t)) {
     var eE = [];
     return u && u.call(t, function(e) {
       eE.push(b(e, t))
-    }), eu("Set", c.call(t), eE, m)
+    }), eu("Set", c.call(t), eE, g)
   }
   if (et(t)) return ec("WeakMap");
   if (ei(t)) return ec("WeakSet");
   if (en(t)) return ec("WeakRef");
   if (W(t)) return el(b(Number(t)));
   if (z(t)) return el(b(A.call(t)));
-  if (Y(t)) return el(p.call(t));
+  if (Y(t)) return el(_.call(t));
   if (H(t)) return el(b(String(t)));
   if ("undefined" != typeof window && t === window) return "{ [object Window] }";
   if (t === n.g) return "{ [object globalThis] }";
   if (!F(t) && !V(t)) {
-    var ev = ep(t, b),
+    var ev = e_(t, b),
       eb = L ? L(t) === Object.prototype : t instanceof Object || t.constructor === Object,
       ey = t instanceof Object ? "" : "null prototype",
       eO = !eb && D && Object(t) === t && D in t ? E.call(X(t), 8, -1) : ey ? "Object" : "",
       eS = (eb || "function" != typeof t.constructor ? "" : t.constructor.name ? t.constructor.name + " " : "") + (eO || ey ? "[" + I.call(S.call([], eO || [], ey || []), ": ") + "] " : "");
-    return 0 === ev.length ? eS + "{}" : m ? eS + "{" + e_(ev, m) + "}" : eS + "{ " + I.call(ev, ", ") + " }"
+    return 0 === ev.length ? eS + "{}" : g ? eS + "{" + ep(ev, g) + "}" : eS + "{ " + I.call(ev, ", ") + " }"
   }
   return String(t)
 };
@@ -214,7 +214,7 @@ function X(e) {
 
 function J(e) {
   if (e.name) return e.name;
-  var t = m.call(g.call(e), /^function\s*([\w$]+)/);
+  var t = g.call(m.call(e), /^function\s*([\w$]+)/);
   return t ? t[1] : null
 }
 
@@ -254,9 +254,9 @@ function et(e) {
 }
 
 function en(e) {
-  if (!_ || !e || "object" != typeof e) return !1;
+  if (!p || !e || "object" != typeof e) return !1;
   try {
-    return _.call(e), !0
+    return p.call(e), !0
   } catch (e) {}
   return !1
 }
@@ -323,7 +323,7 @@ function ec(e) {
 }
 
 function eu(e, t, n, r) {
-  return e + " (" + t + ") {" + (r ? e_(n, r) : I.call(n, ", ")) + "}"
+  return e + " (" + t + ") {" + (r ? ep(n, r) : I.call(n, ", ")) + "}"
 }
 
 function ed(e) {
@@ -345,13 +345,13 @@ function ef(e, t) {
   }
 }
 
-function e_(e, t) {
+function ep(e, t) {
   if (0 === e.length) return "";
   var n = "\n" + t.prev + t.base;
   return n + I.call(e, "," + n) + "\n" + t.prev
 }
 
-function ep(e, t) {
+function e_(e, t) {
   var n, r = B(e),
     i = [];
   if (r) {

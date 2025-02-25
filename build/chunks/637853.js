@@ -5,7 +5,7 @@ n.d(t, {
   L6: () => w,
   V7: () => S,
   VF: () => D,
-  b$: () => m,
+  b$: () => g,
   d9: () => R,
   dF: () => O,
   dX: () => L,
@@ -25,32 +25,32 @@ var r = n(442837),
   u = n(630388),
   d = n(823379),
   f = n(700785),
-  _ = n(977258),
-  p = n(981631),
+  p = n(977258),
+  _ = n(981631),
   h = n(372897);
-let g = new Date(16824888e5);
+let m = new Date(16824888e5);
 
-function m(e) {
+function g(e) {
   return (0, r.e7)([l.Z, c.Z], () => {
     let t = l.Z.getGuild(e),
-      n = !!(null == t ? void 0 : t.hasFeature(p.oNc.COMMUNITY)),
-      r = c.Z.can(p.Plq.MANAGE_GUILD, t),
-      i = c.Z.can(p.Plq.MANAGE_ROLES, t);
+      n = !!(null == t ? void 0 : t.hasFeature(_.oNc.COMMUNITY)),
+      r = c.Z.can(_.Plq.MANAGE_GUILD, t),
+      i = c.Z.can(_.Plq.MANAGE_ROLES, t);
     return n && r && i
   })
 }
 
 function E(e) {
   let t = l.Z.getGuild(e),
-    n = !!(null == t ? void 0 : t.hasFeature(p.oNc.COMMUNITY)),
-    r = c.Z.can(p.Plq.MANAGE_GUILD, t),
-    i = c.Z.can(p.Plq.MANAGE_ROLES, t);
+    n = !!(null == t ? void 0 : t.hasFeature(_.oNc.COMMUNITY)),
+    r = c.Z.can(_.Plq.MANAGE_GUILD, t),
+    i = c.Z.can(_.Plq.MANAGE_ROLES, t);
   return n && r && i
 }
 
 function v(e, t) {
   var n;
-  if (null == e || !e.hasFeature(p.oNc.GUILD_ONBOARDING) || null == t || null == t.joinedAt || new Date(t.joinedAt) < g) return !1;
+  if (null == e || !e.hasFeature(_.oNc.GUILD_ONBOARDING) || null == t || null == t.joinedAt || new Date(t.joinedAt) < m) return !1;
   let r = null !== (n = t.flags) && void 0 !== n ? n : 0;
   return u.yE(r, h.q.STARTED_ONBOARDING) && !u.yE(r, h.q.COMPLETED_ONBOARDING)
 }
@@ -92,7 +92,7 @@ function S(e) {
 }
 
 function I(e) {
-  return !!(null != e && (0, _.s)(e.guild_id, e.id)) && (e.isForumChannel() ? f.Uu(p.Plq.SEND_MESSAGES_IN_THREADS, e) : f.Uu(p.Plq.SEND_MESSAGES, e))
+  return !!(null != e && (0, p.s)(e.guild_id, e.id)) && (e.isForumChannel() ? f.Uu(_.Plq.SEND_MESSAGES_IN_THREADS, e) : f.Uu(_.Plq.SEND_MESSAGES, e))
 }
 
 function T(e) {
@@ -134,7 +134,7 @@ function C(e, t) {
       channel: e
     }
     of i)
-    if ((0, _.s)(e.guild_id, e.id) && (t.includes(e.id) && !e.isCategory() || !e.isThread() && null != e.parent_id && t.includes(e.parent_id))) {
+    if ((0, p.s)(e.guild_id, e.id) && (t.includes(e.id) && !e.isCategory() || !e.isThread() && null != e.parent_id && t.includes(e.parent_id))) {
       let t = n(e);
       r(t) && o.push(t)
     } return o
@@ -163,7 +163,7 @@ function D(e, t) {
       r = [],
       i = [],
       o = {};
-    for (let e of n[s.sH])(0, _.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (o[e.channel.id] = e, r.push(e.channel), I(e.channel) && i.push(e.channel.id));
+    for (let e of n[s.sH])(0, p.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (o[e.channel.id] = e, r.push(e.channel), I(e.channel) && i.push(e.channel.id));
     return [i, r]
   }, [e, t], P)
 }

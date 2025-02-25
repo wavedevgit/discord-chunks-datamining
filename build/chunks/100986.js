@@ -17,12 +17,12 @@ function d(e, t) {
 }
 
 function f(e, t, n, f) {
-  var _;
-  let p = i.Z.getChannel(a.Z.getVoiceChannelId()),
-    h = null == p ? void 0 : p.getGuildId(),
-    g = o.Z.getMediaSessionId(),
-    m = o.Z.getRTCConnectionId(),
-    E = null === (_ = r.ZP.getCurrentGameForAnalytics()) || void 0 === _ ? void 0 : _.name,
+  var p;
+  let _ = i.Z.getChannel(a.Z.getVoiceChannelId()),
+    h = null == _ ? void 0 : _.getGuildId(),
+    m = o.Z.getMediaSessionId(),
+    g = o.Z.getRTCConnectionId(),
+    E = null === (p = r.ZP.getCurrentGameForAnalytics()) || void 0 === p ? void 0 : p.name,
     v = h !== n.guildId && n.guildId !== l.X8,
     b = d(n, v);
   s.default.track(c.rMx.PREMIUM_FEATURE_USAGE, {
@@ -30,8 +30,8 @@ function f(e, t, n, f) {
     feature_tier: v ? u.h1.PREMIUM_STANDARD : u.h1.FREE,
     guild_id: h,
     location_stack: e,
-    rtc_connection_id: m,
-    media_session_id: g,
+    rtc_connection_id: g,
+    media_session_id: m,
     in_overlay: t,
     application_name: E,
     emoji_count: +(null != n.emojiId || null != n.emojiName),

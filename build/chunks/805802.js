@@ -26,9 +26,9 @@ function u(e, t) {
     a = (0, l.o)(e),
     s = a.dtstart,
     c = a.tzid;
-  return m(e, t.unfold).forEach(function(e) {
+  return g(e, t.unfold).forEach(function(e) {
     if (e) {
-      var t, a = g(e),
+      var t, a = m(e),
         s = a.name,
         u = a.parms,
         d = a.value;
@@ -39,8 +39,8 @@ function u(e, t) {
           break;
         case "RDATE":
           var f = null !== (t = /RDATE(?:;TZID=([^:=]+))?/i.exec(e)) && void 0 !== t ? t : [],
-            _ = f[1];
-          _ && !c && (c = _), r = r.concat(v(d, u));
+            p = f[1];
+          p && !c && (c = p), r = r.concat(v(d, u));
           break;
         case "EXRULE":
           if (u.length) throw Error("unsupported EXRULE parm: ".concat(u.join(",")));
@@ -75,33 +75,33 @@ function d(e, t) {
     d = n.tzid,
     f = !1 === t.cache;
   if (t.compatible && (t.forceset = !0, t.unfold = !0), t.forceset || r.length > 1 || a.length || s.length || l.length) {
-    var p = new o.p(f);
-    return p.dtstart(c), p.tzid(d || void 0), r.forEach(function(e) {
-      p.rrule(new i.Ci(_(e, c, d), f))
+    var _ = new o.p(f);
+    return _.dtstart(c), _.tzid(d || void 0), r.forEach(function(e) {
+      _.rrule(new i.Ci(p(e, c, d), f))
     }), a.forEach(function(e) {
-      p.rdate(e)
+      _.rdate(e)
     }), s.forEach(function(e) {
-      p.exrule(new i.Ci(_(e, c, d), f))
+      _.exrule(new i.Ci(p(e, c, d), f))
     }), l.forEach(function(e) {
-      p.exdate(e)
-    }), t.compatible && t.dtstart && p.rdate(c), p
+      _.exdate(e)
+    }), t.compatible && t.dtstart && _.rdate(c), _
   }
   var h = r[0] || {};
-  return new i.Ci(_(h, h.dtstart || t.dtstart || c, h.tzid || t.tzid || d), f)
+  return new i.Ci(p(h, h.dtstart || t.dtstart || c, h.tzid || t.tzid || d), f)
 }
 
 function f(e, t) {
-  return void 0 === t && (t = {}), d(e, p(t))
+  return void 0 === t && (t = {}), d(e, _(t))
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   return (0, r.pi)((0, r.pi)({}, e), {
     dtstart: t,
     tzid: n
   })
 }
 
-function p(e) {
+function _(e) {
   var t = [],
     n = Object.keys(e),
     i = Object.keys(c);
@@ -123,7 +123,7 @@ function h(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   var t = h(e),
     n = t.name,
     r = t.value,
@@ -136,7 +136,7 @@ function g(e) {
   }
 }
 
-function m(e, t) {
+function g(e, t) {
   if (void 0 === t && (t = !1), !(e = e && e.trim())) throw Error("Invalid empty string");
   if (!t) return e.split(/\s/);
   for (var n = e.split("\n"), r = 0; r < n.length;) {

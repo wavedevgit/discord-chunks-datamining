@@ -28,9 +28,9 @@ var r = n(200651),
   C = n(145807),
   I = n(56744),
   S = n(981631),
-  T = n(656017);
+  P = n(656017);
 
-function P(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -110,23 +110,23 @@ let w = i.memo(function(e) {
   if ((0, g.Z)(i, ee)) return null;
   let en = (0, v.iG)(i),
     er = (0, v.Gx)(i);
-  return (0, r.jsx)(b.Z, P({
+  return (0, r.jsx)(b.Z, T({
     compact: a,
     className: o()(w, {
-      [T.ephemeral]: (0, h.Pv)(i),
-      [T.disableInteraction]: G
+      [P.ephemeral]: (0, h.Pv)(i),
+      [P.disableInteraction]: G
     }),
     disableInteraction: G,
     childrenRepliedMessage: (0, I.Z)(i, L, Y, X, a),
     childrenExecutedCommand: (0, C.Z)(i, L, a),
-    childrenHeader: (0, j.Z)(A(P({}, e), {
+    childrenHeader: (0, j.Z)(A(T({}, e), {
       guildId: L.guild_id,
       author: Q,
       roleIcon: $
     })),
     childrenAccessories: e.hideAccessories ? void 0 : (0, O.Q)(e, K),
     childrenMessageContent: (0, E.Z)(e, z),
-    childrenSystemMessage: (0, N.Z)(A(P({}, e), {
+    childrenSystemMessage: (0, N.Z)(A(T({}, e), {
       disableInteraction: G
     })),
     onContextMenu: Z,

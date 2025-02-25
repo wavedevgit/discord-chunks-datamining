@@ -30,13 +30,13 @@ function f(e) {
   return u.lastViewedPath = t, !0
 }
 
-function _(e) {
+function p(e) {
   let {
     path: t
   } = e;
   return u.lastViewedNonVoicePath = t, !0
 }
-class p extends(r = i.ZP.PersistedStore) {
+class _ extends(r = i.ZP.PersistedStore) {
   initialize() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : c;
     u = null != e ? e : c
@@ -55,13 +55,13 @@ class p extends(r = i.ZP.PersistedStore) {
     return u
   }
 }
-l(p, "displayName", "DefaultRouteStore"), l(p, "persistKey", "DefaultRouteStore"), l(p, "migrations", [() => {
+l(_, "displayName", "DefaultRouteStore"), l(_, "persistKey", "DefaultRouteStore"), l(_, "migrations", [() => {
   let e = o.K.get(d, null);
   return o.K.remove(d), {
     lastViewedPath: e
   }
 }]);
-let h = new p(a.Z, {
+let h = new _(a.Z, {
   SAVE_LAST_ROUTE: f,
-  SAVE_LAST_NON_VOICE_ROUTE: _
+  SAVE_LAST_NON_VOICE_ROUTE: p
 })

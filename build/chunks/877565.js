@@ -76,20 +76,20 @@ function f(e) {
     onClick: s,
     titleWithQuery: c,
     titleWithoutQuery: f,
-    Component: _,
-    getProps: p,
+    Component: p,
+    getProps: _,
     getQuery: h,
-    key: g,
-    indexOffset: m = 0,
+    key: m,
+    indexOffset: g = 0,
     headerClassName: E,
     headerTrailingContent: v,
     footer: b
   } = e;
   if (null == b && (null == o || 0 === o.length)) return null;
   let y = null == o ? void 0 : o.map((e, t) => {
-    let r = t + m,
-      o = p(e, r);
-    return (0, i.createElement)(_, u(l({
+    let r = t + g,
+      o = _(e, r);
+    return (0, i.createElement)(p, u(l({
       onClick: s,
       onHover: a,
       selected: n === r,
@@ -107,5 +107,5 @@ function f(e) {
       headerClassName: E,
       headerTrailingContent: v
     }) : null, y, b]
-  }, g)
+  }, m)
 }

@@ -34,8 +34,8 @@ if (r({
       } : e)
     }
   }), !i && l(o)) {
-  var _ = s("Promise").prototype.finally;
-  f.finally !== _ && d(f, "finally", _, {
+  var p = s("Promise").prototype.finally;
+  f.finally !== p && d(f, "finally", p, {
     unsafe: !0
   })
 }

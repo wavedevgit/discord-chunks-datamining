@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(906732),
   d = n(644916),
   f = n(243778),
-  _ = n(963249),
-  p = n(286961),
+  p = n(963249),
+  _ = n(286961),
   h = n(802408),
-  g = n(819640),
-  m = n(594174),
+  m = n(819640),
+  g = n(594174),
   E = n(70956),
   v = n(709054),
   b = n(51144),
@@ -127,13 +127,13 @@ function x(e) {
     channel: E
   } = e, {
     analyticsLocations: y
-  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [I, N] = i.useState(!1), A = (0, o.e7)([g.Z], () => !(null === g.Z || void 0 === g.Z ? void 0 : g.Z.hasLayers())), C = (0, o.e7)([m.default], () => m.default.getCurrentUser()), R = null != C ? v.default.age(C.id) : 0, {
+  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [I, N] = i.useState(!1), A = (0, o.e7)([m.Z], () => !(null === m.Z || void 0 === m.Z ? void 0 : m.Z.hasLayers())), C = (0, o.e7)([g.default], () => g.default.getCurrentUser()), R = null != C ? v.default.age(C.id) : 0, {
     giftBoxAnimation: P,
     trinketsAnimation: x
-  } = null !== (t = null == n ? void 0 : n.chatGiftIcon) && void 0 !== t ? t : {}, M = (0, p.u)(), j = void 0 !== M && !s && A && R >= L, [k, U] = (0, f.XR)(j ? a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), G = null != k, B = I || G, F = (0, b.Ft)(E);
+  } = null !== (t = null == n ? void 0 : n.chatGiftIcon) && void 0 !== t ? t : {}, M = (0, _.u)(), j = void 0 !== M && !s && A && R >= L, [k, U] = (0, f.XR)(j ? a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), G = null != k, B = I || G, F = (0, b.Ft)(E);
   if (s) return null;
   let V = () => {
-      (0, _.Z)({
+      (0, p.Z)({
         isGift: !0,
         giftRecipient: null == F ? void 0 : F,
         initialPlanId: null,

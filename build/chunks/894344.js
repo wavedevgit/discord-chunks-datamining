@@ -36,12 +36,12 @@ async function d(e, t, c) {
   let {
     hasSpotifyAccount: d,
     activity: f,
-    user: _
+    user: p
   } = e;
   (0, l.Z)(d) && null != f && null != f.sync_id && (await (0, a.KV)(), await (0, a.yp)().catch(e => ((0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("46317").then(n.bind(n, 841178));
     return t => (0, r.jsx)(e, u({}, t))
-  }), Promise.reject(e))), o.Z_(f, _.id), (0, s.Z)(t, _, f, c))
+  }), Promise.reject(e))), o.Z_(f, p.id), (0, s.Z)(t, p, f, c))
 }

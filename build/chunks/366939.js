@@ -4,8 +4,8 @@ n.d(t, {
   Ld: () => c,
   O5: () => u,
   fG: () => f,
-  fw: () => p,
-  tq: () => _,
+  fw: () => _,
+  tq: () => p,
   v4: () => d
 });
 var r = n(512722),
@@ -94,7 +94,7 @@ async function f(e, t, n, r) {
     }), e
   }
 }
-async function _(e, t, n, r, i) {
+async function p(e, t, n, r, i) {
   try {
     await s.tq(e, t, n, r, i), o.Z.dispatch({
       type: "PREMIUM_PAYMENT_UPDATE_SUCCESS"
@@ -107,7 +107,7 @@ async function _(e, t, n, r, i) {
   }
 }
 
-function p() {
+function _() {
   o.Z.dispatch({
     type: "PREMIUM_PAYMENT_ERROR_CLEAR"
   })

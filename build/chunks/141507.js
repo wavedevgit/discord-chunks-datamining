@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(906411),
   d = n(438332),
   f = n(664437),
-  _ = n(806966),
-  p = n(65029),
+  p = n(806966),
+  _ = n(65029),
   h = n(210887),
-  g = n(695346),
-  m = n(430824),
+  m = n(695346),
+  g = n(430824),
   E = n(451478),
   v = n(768581),
   b = n(392552),
@@ -57,7 +57,7 @@ let P = e => {
       }, {
         autoTrackExposure: !1
       }),
-      G = _.kJ.useStore(e => e.inspectedExpressionPosition),
+      G = p.kJ.useStore(e => e.inspectedExpressionPosition),
       B = i.useMemo(() => {
         var e;
         let {
@@ -88,10 +88,10 @@ let P = e => {
           allNamesString: null == B ? void 0 : B.name
         }
     }
-    let F = (0, o.e7)([m.Z], () => null !== t && t.type === u.B.GUILD ? m.Z.getGuild(t.guildId) : null, [t]),
+    let F = (0, o.e7)([g.Z], () => null !== t && t.type === u.B.GUILD ? g.Z.getGuild(t.guildId) : null, [t]),
       V = (0, o.e7)([E.Z], () => E.Z.isFocused()),
       Z = (0, o.e7)([l.Z], () => l.Z.useReducedMotion, []),
-      H = g.Yk.useSetting(),
+      H = m.Yk.useSetting(),
       W = (0, y.C1)(M, R(t) ? t : null),
       Y = (0, o.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
       {
@@ -160,7 +160,7 @@ let P = e => {
       intention: j,
       guild: F
     });
-    return (0, r.jsx)(p.Z, {
+    return (0, r.jsx)(_.Z, {
       className: L,
       graphicPrimary: D,
       graphicSecondary: X,

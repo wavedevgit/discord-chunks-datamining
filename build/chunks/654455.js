@@ -15,7 +15,7 @@ n(689079);
 var d = n(674563),
   f = n(526761);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -48,12 +48,12 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = [l.yU.CHAT, l.yU.PRIMARY_ENTRY_POINT],
+let g = [l.yU.CHAT, l.yU.PRIMARY_ENTRY_POINT],
   E = {
     pendingUsages: []
   },
@@ -89,7 +89,7 @@ function S(e) {
     command: t,
     context: n
   } = e;
-  if (!m.includes(t.type)) return !1;
+  if (!g.includes(t.type)) return !1;
   let r = y(n, t);
   E.pendingUsages.push({
     key: r,
@@ -100,7 +100,7 @@ function S(e) {
 function I() {
   var e, t;
   let n = null !== (t = null === (e = u.Z.frecencyWithoutFetchingLatest.applicationCommandFrecency) || void 0 === e ? void 0 : e.applicationCommands) && void 0 !== t ? t : {};
-  v.overwriteHistory(o().mapValues(n, e => g(p({}, e), {
+  v.overwriteHistory(o().mapValues(n, e => m(_({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), E.pendingUsages)
 }
@@ -125,7 +125,7 @@ class T extends(r = a.ZP.PersistedStore) {
     return v.frequently
   }
 }
-_(T, "displayName", "ApplicationCommandFrecencyStore"), _(T, "persistKey", "ApplicationCommandFrecencyV2");
+p(T, "displayName", "ApplicationCommandFrecencyStore"), p(T, "persistKey", "ApplicationCommandFrecencyV2");
 let N = new T(s.Z, {
   APPLICATION_COMMAND_USED: S,
   USER_SETTINGS_PROTO_UPDATE: O

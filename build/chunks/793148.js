@@ -20,8 +20,8 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = 150;
-class p extends(r = o.PureComponent) {
+let p = 150;
+class _ extends(r = o.PureComponent) {
   componentDidMount() {
     this.updateMediaBar()
   }
@@ -45,29 +45,29 @@ class p extends(r = o.PureComponent) {
       sliderClassName: o,
       currentWindow: a,
       muted: f,
-      minValue: p,
+      minValue: _,
       maxValue: h,
-      value: g,
-      onVolumeShow: m,
+      value: m,
+      onVolumeShow: g,
       onVolumeHide: E
     } = this.props, {
       hovered: v,
       focused: b,
       dragging: y
     } = this.state, O = l.gj8;
-    return f || g === p ? O = l.OyP : g < h / 2 && (O = l.X2j), (0, i.jsxs)("div", {
+    return f || m === _ ? O = l.OyP : m < h / 2 && (O = l.X2j), (0, i.jsxs)("div", {
       className: s()(n, d.container),
       onMouseEnter: () => {
         clearTimeout(this._hoverTimeout), this.setState({
           hovered: !0
-        }), null == m || m()
+        }), null == g || g()
       },
       onMouseLeave: () => {
         clearTimeout(this._hoverTimeout), this._hoverTimeout = setTimeout(() => {
           this.setState({
             hovered: !1
           }), null == E || E()
-        }, _)
+        }, p)
       },
       onFocus: () => this.setState({
         focused: !0
@@ -88,12 +88,12 @@ class p extends(r = o.PureComponent) {
         onMouseLeave: () => {
           clearTimeout(this._hoverTimeout), this._hoverTimeout = setTimeout(() => this.setState({
             hovered: !1
-          }), _)
+          }), p)
         },
         children: (0, i.jsx)(c.Z, {
           sliderClassName: o,
           type: c.Z.Types.VOLUME,
-          value: g / h,
+          value: m / h,
           onDrag: this.handleValueChange,
           onDragStart: this.handleDragStart,
           onDragEnd: this.handleDragEnd,
@@ -158,9 +158,9 @@ class p extends(r = o.PureComponent) {
     })
   }
 }
-f(p, "defaultProps", {
+f(_, "defaultProps", {
   minValue: 0,
   maxValue: 100,
   handleSize: 16
 });
-let h = p
+let h = _

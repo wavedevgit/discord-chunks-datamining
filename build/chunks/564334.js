@@ -51,19 +51,19 @@ function a(e) {
     lightness: d,
     alpha: i
   };
-  let _ = 0;
+  let p = 0;
   switch (l) {
     case o:
-      _ = (a - s) / u % 6;
+      p = (a - s) / u % 6;
       break;
     case a:
-      _ = (s - o) / u + 2;
+      p = (s - o) / u + 2;
       break;
     case s:
-      _ = (a - s) / u + 4
+      p = (a - s) / u + 4
   }
   return {
-    hue: 60 * _,
+    hue: 60 * p,
     saturation: f,
     lightness: d,
     alpha: i

@@ -10,18 +10,18 @@ var r = n(147018),
   u = n(323979),
   d = n(50754),
   f = n(109833),
-  _ = n(400957),
-  p = String,
+  p = n(400957),
+  _ = String,
   h = i("JSON", "stringify"),
-  g = s(/./.exec),
-  m = s("".charAt),
+  m = s(/./.exec),
+  g = s("".charAt),
   E = s("".charCodeAt),
   v = s("".replace),
   b = s(1..toString),
   y = /[\uD800-\uDFFF]/g,
   O = /^[\uD800-\uDBFF]$/,
   S = /^[\uDC00-\uDFFF]$/,
-  I = !_ || l(function() {
+  I = !p || l(function() {
     var e = i("Symbol")("stringify detection");
     return "[null]" !== h([e]) || "{}" !== h({
       a: e
@@ -34,13 +34,13 @@ var r = n(147018),
     var n = d(arguments),
       r = f(t);
     if (!(!c(r) && (void 0 === e || u(e)))) return n[1] = function(e, t) {
-      if (c(r) && (t = a(r, this, p(e), t)), !u(t)) return t
+      if (c(r) && (t = a(r, this, _(e), t)), !u(t)) return t
     }, o(h, null, n)
   },
   A = function(e, t, n) {
-    var r = m(n, t - 1),
-      i = m(n, t + 1);
-    return g(O, e) && !g(S, i) || g(S, e) && !g(O, r) ? "\\u" + b(E(e, 0), 16) : e
+    var r = g(n, t - 1),
+      i = g(n, t + 1);
+    return m(O, e) && !m(S, i) || m(S, e) && !m(O, r) ? "\\u" + b(E(e, 0), 16) : e
   };
 h && r({
   target: "JSON",

@@ -12,8 +12,8 @@ var i = n(200651),
   d = n(786761),
   c = n(3148),
   h = n(753206),
-  f = n(594174),
-  p = n(5192),
+  p = n(594174),
+  f = n(5192),
   g = n(981631),
   v = n(388032),
   C = n(739292);
@@ -26,7 +26,7 @@ function E(e) {
     theme: E,
     content: O = v.NW.string(v.t["6OSasb"]),
     className: m
-  } = e, S = (0, s.e7)([f.default], () => f.default.getCurrentUser()), _ = p.ZP.useName(n, null, S), b = (0, u.Kz)(l), I = r.useMemo(() => {
+  } = e, S = (0, s.e7)([p.default], () => p.default.getCurrentUser()), _ = f.ZP.useName(n, null, S), b = (0, u.Kz)(l), I = r.useMemo(() => {
     var e, t;
     return (0, d.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {

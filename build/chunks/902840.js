@@ -3,7 +3,7 @@
 n.d(t, {
   Jc: () => d,
   Lp: () => u,
-  l9: () => _,
+  l9: () => p,
   tW: () => c,
   ts: () => f
 });
@@ -45,7 +45,7 @@ function f(e) {
   return u(e, t)
 }
 
-function _(e) {
+function p(e) {
   return arguments.length > 1 && void 0 !== arguments[1] && arguments[1], (0, r.e7)([i.Z], () => {
     var t;
     return d(i.Z.getGuild(null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : o.lds), !1)

@@ -48,16 +48,16 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = {},
-  p = 0,
+let p = {},
+  _ = 0,
   h = 15 * s.Z.Millis.SECOND;
 
-function g() {
-  _ = u({}, o.Z.getCollapsedCategories())
+function m() {
+  p = u({}, o.Z.getCollapsedCategories())
 }
 
-function m() {
-  __OVERLAY__ || (clearTimeout(p), p = setTimeout(() => v({}), h))
+function g() {
+  __OVERLAY__ || (clearTimeout(_), _ = setTimeout(() => v({}), h))
 }
 async function E(e, t) {
   null == e || e === l.ME ? await r.tn.patch({
@@ -69,7 +69,7 @@ async function E(e, t) {
   } : {})
 }
 async function v(e) {
-  clearTimeout(p);
+  clearTimeout(_);
   let t = 0 !== Object.keys(e).length,
     n = o.Z.getCollapsedCategories(),
     i = b();
@@ -79,7 +79,7 @@ async function v(e) {
       collapsed: i.id in n
     }), t = !0)
   }
-  return t ? (_ = u({}, n), delete e[l.I_8], (await r.tn.patch({
+  return t ? (p = u({}, n), delete e[l.I_8], (await r.tn.patch({
     url: l.ANM.USER_GUILD_SETTINGS_BULK,
     body: {
       guilds: e
@@ -91,22 +91,22 @@ async function v(e) {
 function b() {
   let e = {},
     t = o.Z.getCollapsedCategories();
-  for (let n in t) t[n] !== _[n] && (e[n] = !0);
-  for (let n in _) t[n] !== _[n] && (e[n] = !0);
+  for (let n in t) t[n] !== p[n] && (e[n] = !0);
+  for (let n in p) t[n] !== p[n] && (e[n] = !0);
   return e
 }
 
 function y() {
-  _ = u({}, o.Z.getCollapsedCategories())
+  p = u({}, o.Z.getCollapsedCategories())
 }
 class O extends i.Z {
   constructor(...e) {
     super(...e), c(this, "actions", {
-      CATEGORY_COLLAPSE: m,
-      CATEGORY_EXPAND: m,
-      CATEGORY_COLLAPSE_ALL: m,
-      CATEGORY_EXPAND_ALL: m,
-      POST_CONNECTION_OPEN: g,
+      CATEGORY_COLLAPSE: g,
+      CATEGORY_EXPAND: g,
+      CATEGORY_COLLAPSE_ALL: g,
+      CATEGORY_EXPAND_ALL: g,
+      POST_CONNECTION_OPEN: m,
       USER_GUILD_SETTINGS_FULL_UPDATE: y
     }), c(this, "saveUserGuildSettings", E), c(this, "saveUserGuildSettingsBulk", v)
   }

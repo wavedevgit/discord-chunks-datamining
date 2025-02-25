@@ -21,45 +21,45 @@ let l = 100,
   u = 500,
   d = (0, a.tu)("vibing_wumpus", "vibing_wumpus", 0),
   f = 0,
-  _ = 0,
-  p = null;
+  p = 0,
+  _ = null;
 
 function h(e, t) {
   let n = Math.round(100 * e),
-    r = Math.round(100 * _),
+    r = Math.round(100 * p),
     o = Math.round(100 * f);
-  n > 0 && o >= r || n < 0 && o <= r ? (clearInterval(p), 0 === r && null != t && t()) : (o += n, f = o / 100, d.volume = i()(f, 0, c))
+  n > 0 && o >= r || n < 0 && o <= r ? (clearInterval(_), 0 === r && null != t && t()) : (o += n, f = o / 100, d.volume = i()(f, 0, c))
 }
 
-function g(e) {
-  null != p && clearInterval(p), _ = 0;
+function m(e) {
+  null != _ && clearInterval(_), p = 0;
   let t = b();
-  p = setInterval(() => {
+  _ = setInterval(() => {
     h(t, e)
   }, l)
 }
 
-function m() {
-  null != p && clearInterval(p), d.loop(), _ = c;
+function g() {
+  null != _ && clearInterval(_), d.loop(), p = c;
   let e = b();
-  p = setInterval(() => h(e), l)
+  _ = setInterval(() => h(e), l)
 }
 
 function E() {
-  g(d.pause.bind(d))
+  m(d.pause.bind(d))
 }
 
 function v() {
-  g(d.stop.bind(d))
+  m(d.stop.bind(d))
 }
 
 function b() {
-  return l / u * (_ - f)
+  return l / u * (p - f)
 }
 class y extends o.Z {
   constructor(...e) {
     super(...e), s(this, "actions", {
-      VIBING_WUMPUS_PLAY_MUSIC: m,
+      VIBING_WUMPUS_PLAY_MUSIC: g,
       VIBING_WUMPUS_STOP_MUSIC: v,
       VIBING_WUMPUS_PAUSE_MUSIC: E
     })

@@ -16,7 +16,7 @@ var i = n(544891),
   d = n(115345),
   f = n(981631);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,14 +25,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -49,12 +49,12 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class m extends s.Z {
+class g extends s.Z {
   handlePostConnectionOpen() {
     if (!o.K.get("turnedOffNewNotifications") && l.Z.hasConsented(f.pjP.PERSONALIZATION)) {
       if (u.xT.getCurrentConfig({
@@ -87,7 +87,7 @@ class m extends s.Z {
     } = await n.e("53512").then(n.bind(n, 753521));
     if (!(0, a.$sL)()) u.fs.trackExposure({
       location: "NotificationMigrationManager"
-    }), t && ((0, d.cG)(o, l) ? (0, a.h7j)(e => (0, r.jsx)(c, g(p({}, e), {
+    }), t && ((0, d.cG)(o, l) ? (0, a.h7j)(e => (0, r.jsx)(c, m(_({}, e), {
       dismissable: !1,
       guildPain: o,
       myUsage: l
@@ -109,7 +109,7 @@ class m extends s.Z {
     }), t && (0, d.ly)())
   }
   constructor(...e) {
-    super(...e), _(this, "actions", {
+    super(...e), p(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
     })
   }
@@ -128,11 +128,11 @@ async function E(e) {
     let {
       default: i
     } = await n.e("53512").then(n.bind(n, 753521));
-    return n => (0, r.jsx)(i, g(p({}, n), {
+    return n => (0, r.jsx)(i, m(_({}, n), {
       dismissable: e,
       guildPain: t,
       myUsage: s
     }))
   })
 }
-let v = new m
+let v = new g

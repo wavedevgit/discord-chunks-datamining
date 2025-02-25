@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  FD: () => m,
+  FD: () => g,
   I5: () => S,
   Mn: () => y,
   P6: () => D,
@@ -27,8 +27,8 @@ var r = n(544891),
   u = n(546796),
   d = n(893776),
   f = n(981631),
-  _ = n(792101),
-  p = n(388032);
+  p = n(792101),
+  _ = n(388032);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,7 +39,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function g(e) {
   return e
 }
 
-function m() {
+function g() {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_INIT"
   })
@@ -65,11 +65,11 @@ function E() {
 }
 
 function v(e, t) {
-  let n = t ? p.NW.string(p.t["8lQ2ra"]) : p.NW.string(p.t.jf5GGR),
+  let n = t ? _.NW.string(_.t["8lQ2ra"]) : _.NW.string(_.t.jf5GGR),
     i = t ? f.ANM.DELETE_ACCOUNT : f.ANM.DISABLE_ACCOUNT,
     o = t => r.tn.post({
       url: i,
-      body: g({
+      body: m({
         password: e
       }, t),
       oldFormErrors: !0,
@@ -118,7 +118,7 @@ function y(e) {
     password: s,
     avatar: d,
     avatarDescription: h,
-    avatarId: m,
+    avatarId: g,
     avatarDecoration: E,
     newPassword: v,
     globalName: y
@@ -126,28 +126,28 @@ function y(e) {
   return a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT"
   }), (0, u.Z)(e => {
-    let a = g({
+    let a = m({
       username: t,
       email: r,
       email_token: o,
       password: s,
       avatar: d,
       avatar_description: h,
-      avatar_id: m,
+      avatar_id: g,
       discriminator: n,
       global_name: y,
       new_password: v
     }, e);
     null === E && (a.avatar_decoration_id = null), null != E && (a.avatar_decoration_id = E.id, a.avatar_decoration_sku_id = E.skuId);
     let l = i.K.get(f.JkL),
-      c = (0, _.xJ)();
+      c = (0, p.xJ)();
     null != c && null != l && (a.push_provider = c, a.push_token = l);
     let u = i.K.get(f.scU);
-    return null != _.mv && null != u && (a.push_voip_provider = _.mv, a.push_voip_token = u), b(a)
+    return null != p.mv && null != u && (a.push_voip_provider = p.mv, a.push_voip_token = u), b(a)
   }, {
     checkEnabled: !1,
     modalProps: {
-      title: p.NW.string(p.t.clQc1d)
+      title: _.NW.string(_.t.clQc1d)
     },
     hooks: {
       onEarlyClose: () => a.Z.dispatch({
@@ -183,14 +183,14 @@ function S(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR",
     avatar: e
-  }), null == e ? o.uv.announce(p.NW.string(p.t["f1+oNj"])) : o.uv.announce(p.NW.string(p.t.NstziY))
+  }), null == e ? o.uv.announce(_.NW.string(_.t["f1+oNj"])) : o.uv.announce(_.NW.string(_.t.NstziY))
 }
 
 function I(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_V2",
     avatar: e
-  }), null == e ? o.uv.announce(p.NW.string(p.t["f1+oNj"])) : o.uv.announce(p.NW.string(p.t.NstziY))
+  }), null == e ? o.uv.announce(_.NW.string(_.t["f1+oNj"])) : o.uv.announce(_.NW.string(_.t.NstziY))
 }
 
 function T(e) {

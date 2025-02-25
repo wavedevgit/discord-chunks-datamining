@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  D: () => _
+  D: () => p
 });
 var r = n(200651);
 n(192379);
@@ -65,28 +65,28 @@ function f(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => {
+let p = e => {
   var t, n, {
       size: s = "md",
       width: c,
       height: f,
-      color: _ = i.Z.colors.INTERACTIVE_NORMAL,
-      colorClass: p = ""
+      color: p = i.Z.colors.INTERACTIVE_NORMAL,
+      colorClass: _ = ""
     } = e,
     h = d(e, ["size", "width", "height", "color", "colorClass"]);
-  let g = (0, a.m)(s),
-    m = null !== (t = null == g ? void 0 : g.width) && void 0 !== t ? t : c,
-    E = null !== (n = null == g ? void 0 : g.height) && void 0 !== n ? n : f;
+  let m = (0, a.m)(s),
+    g = null !== (t = null == m ? void 0 : m.width) && void 0 !== t ? t : c,
+    E = null !== (n = null == m ? void 0 : m.height) && void 0 !== n ? n : f;
   return (0, r.jsx)("svg", u(l({}, (0, o.Z)(h)), {
     xmlns: "http://www.w3.org/2000/svg",
-    width: m,
+    width: g,
     height: E,
     fill: "none",
     viewBox: "0 0 24 24",
     children: (0, r.jsx)("path", {
-      fill: "string" == typeof _ ? _ : _.css,
+      fill: "string" == typeof p ? p : p.css,
       d: "M21 2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-6a1 1 0 1 1 0-2h3.93A8 8 0 0 0 6.97 5.78a1 1 0 0 1-1.26-1.56A9.98 9.98 0 0 1 20 6V3a1 1 0 0 1 1-1ZM3 22a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H5.07a8 8 0 0 0 11.96 2.22 1 1 0 1 1 1.26 1.56A9.99 9.99 0 0 1 4 18v3a1 1 0 0 1-1 1Z",
-      className: p
+      className: _
     })
   }))
 }

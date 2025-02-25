@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(100527),
   d = n(906732),
   f = n(140701),
-  _ = n(158776),
-  p = n(74538),
+  p = n(158776),
+  _ = n(74538),
   h = n(998502),
-  g = n(785717),
-  m = n(369566),
+  m = n(785717),
+  g = n(369566),
   E = n(518950),
   v = n(652853),
   b = n(228168),
@@ -82,14 +82,14 @@ function R(e) {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: x
-  } = (0, g.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, O.p9.TIER_2), j = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
+  } = (0, m.KZ)(), M = _.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, O.p9.TIER_2), j = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
     live: k
-  } = (0, m.Z)(t.id), [U] = k, {
+  } = (0, g.Z)(t.id), [U] = k, {
     status: G,
     isMobileOnline: B
-  } = (0, s.cj)([_.Z], () => ({
-    status: (0, c.Z)(U) ? y.Skl.STREAMING : _.Z.getStatus(t.id),
-    isMobileOnline: _.Z.isMobileOnline(t.id)
+  } = (0, s.cj)([p.Z], () => ({
+    status: (0, c.Z)(U) ? y.Skl.STREAMING : p.Z.getStatus(t.id),
+    isMobileOnline: p.Z.isMobileOnline(t.id)
   })), F = void 0 !== D ? D : G, V = I === b.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(S.avatar, {
     [S.biteSize]: I === b.y0.BITE_SIZE,
     [S.fullSize]: I === b.y0.FULL_SIZE,

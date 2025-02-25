@@ -11,24 +11,24 @@ function u(e, t, n) {
   var u = -1,
     d = i,
     f = e.length,
-    _ = !0,
-    p = [],
-    h = p;
-  if (n) _ = !1, d = o;
+    p = !0,
+    _ = [],
+    h = _;
+  if (n) p = !1, d = o;
   else if (f >= c) {
-    var g = t ? null : s(e);
-    if (g) return l(g);
-    _ = !1, d = a, h = new r
-  } else h = t ? [] : p;
+    var m = t ? null : s(e);
+    if (m) return l(m);
+    p = !1, d = a, h = new r
+  } else h = t ? [] : _;
   t: for (; ++u < f;) {
-    var m = e[u],
-      E = t ? t(m) : m;
-    if (m = n || 0 !== m ? m : 0, _ && E == E) {
+    var g = e[u],
+      E = t ? t(g) : g;
+    if (g = n || 0 !== g ? g : 0, p && E == E) {
       for (var v = h.length; v--;)
         if (h[v] === E) continue t;
-      t && h.push(E), p.push(m)
-    } else d(h, E, n) || (h !== p && h.push(E), p.push(m))
+      t && h.push(E), _.push(g)
+    } else d(h, E, n) || (h !== _ && h.push(E), _.push(g))
   }
-  return p
+  return _
 }
 e.exports = u

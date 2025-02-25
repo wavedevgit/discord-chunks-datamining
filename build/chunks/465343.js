@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   K: () => E,
-  i: () => m
+  i: () => g
 }), n(47120), n(301563);
 var r = n(933557),
   i = n(927723),
@@ -14,12 +14,12 @@ var r = n(933557),
   u = n(271383),
   d = n(430824),
   f = n(594174),
-  _ = n(483360),
-  p = n(709054),
+  p = n(483360),
+  _ = n(709054),
   h = n(752305),
-  g = n(377668);
+  m = n(377668);
 
-function m(e, t, n, r) {
+function g(e, t, n, r) {
   let {
     allowUsers: i = !0,
     allowRoles: o = !0
@@ -36,7 +36,7 @@ function m(e, t, n, r) {
 }
 
 function E(e, t, n, r) {
-  let i = m(e, t, n, r);
+  let i = g(e, t, n, r);
   return null == i ? null : (0, h.VI)(i)
 }
 
@@ -76,9 +76,9 @@ function v(e, t, n, r, o) {
               text: ""
             }]
           };
-        if (f && b(a, s, g.fL)) return {
+        if (f && b(a, s, m.fL)) return {
           type: "userMention",
-          userId: g.fL,
+          userId: m.fL,
           children: [{
             text: ""
           }]
@@ -91,7 +91,7 @@ function v(e, t, n, r, o) {
 
 function b(e, t, n) {
   let r = f.default.getUser(n);
-  return null != r && (n === g.fL && "clyde" === e.toLowerCase() || r.username === e && r.discriminator === (null != t ? t : "0"))
+  return null != r && (n === m.fL && "clyde" === e.toLowerCase() || r.username === e && r.discriminator === (null != t ? t : "0"))
 }
 
 function y(e, t) {
@@ -99,7 +99,7 @@ function y(e, t) {
   if (null == t) return null;
   n = e.length > 3 && '"' === e[1] && '"' === e[e.length - 1] ? (0, r.mA)(e.slice(2, e.length - 1)) : e.slice(1);
   let i = c.ZP.getTextChannelNameDisambiguations(t);
-  for (let e of p.default.keys(i))
+  for (let e of _.default.keys(i))
     if (i[e].name === n) return {
       type: "channelMention",
       channelId: e,
@@ -107,7 +107,7 @@ function y(e, t) {
         text: ""
       }]
     };
-  for (let e of _.k1)
+  for (let e of p.k1)
     if (e !== c.sH) {
       for (let {
           channel: r
@@ -121,8 +121,8 @@ function y(e, t) {
           }]
         }
     } let o = s.Z.getActiveJoinedThreadsForGuild(t);
-  for (let e of p.default.keys(o))
-    for (let t of p.default.keys(o[e])) {
+  for (let e of _.default.keys(o))
+    for (let t of _.default.keys(o[e])) {
       let {
         channel: r
       } = o[e][t];

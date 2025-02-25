@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  R_: () => m,
+  R_: () => g,
   cm: () => O
 }), n(653041), n(230036), n(47120);
 var r = n(498607),
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,12 +48,12 @@ function p(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = Date.now();
-var m = function(e) {
+let m = Date.now();
+var g = function(e) {
   return e.NEW_GUILD_MEMBER = "NEW_GUILD_MEMBER", e.CURRENT_GUILD_MEMBER = "CURRENT_GUILD_MEMBER", e.INCLUDED_IN_SEARCH_RESULTS = "INCLUDED_IN_SEARCH_RESULTS", e
 }({});
 
@@ -71,7 +71,7 @@ function b() {
 }
 
 function y(e) {
-  return null != e && new Date(e).getTime() >= g - c.rL
+  return null != e && new Date(e).getTime() >= m - c.rL
 }
 class O {
   reset() {
@@ -89,21 +89,21 @@ class O {
         hasUnusualAccountActivity: a,
         sourceInviteCode: u,
         joinSourceType: f,
-        inviterId: p,
-        integrationType: g
+        inviterId: _,
+        integrationType: m
       } = this._computeMemberSupplementals(e.userId, e.unusualDMActivityUntil),
-      m = s.default.getUser(e.userId);
-    return _(h(_({
+      g = s.default.getUser(e.userId);
+    return p(h(p({
       hasUnusualDmActivity: o,
       hasUnusualAccountActivity: a,
       sourceInviteCode: u,
       joinSourceType: f,
-      inviterId: p,
-      integrationType: g
+      inviterId: _,
+      integrationType: m
     }, e), {
       isCurrentGuildMemberByTimestamp: i <= this.newMemberTimestamp,
       isIncludedInSearchResults: !1,
-      user: m,
+      user: g,
       sort: (0, d.b)(e, null !== (n = t.selectedSort) && void 0 !== n ? n : c.d$.ORDER_BY_UNSPECIFIED),
       joinedAtTimestamp: i
     }), r)
@@ -131,8 +131,8 @@ class O {
   updateMember(e, t) {
     var n;
     if (null == t) return this._membersMap.set(e.userId, e);
-    let r = _({}, e),
-      o = _({}, t),
+    let r = p({}, e),
+      o = p({}, t),
       a = !1,
       {
         sourceInviteCode: s,

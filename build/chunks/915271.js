@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(975060),
   d = n(388032),
   f = n(683138);
-class _ extends i.PureComponent {
+class p extends i.PureComponent {
   componentDidMount() {
     null != this.props.venmoClient && s.by()
   }
@@ -52,7 +52,7 @@ class _ extends i.PureComponent {
     })
   }
 }
-let p = o.ZP.connectStores([c.Z, u.Z], () => ({
+let _ = o.ZP.connectStores([c.Z, u.Z], () => ({
   venmoUsername: u.Z.venmoUsername,
   venmoClient: c.Z.getVenmoClient()
-}))(_)
+}))(p)

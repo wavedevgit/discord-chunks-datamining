@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Q: () => g,
+  Q: () => m,
   t: () => h
 });
 var r = n(615287),
@@ -15,7 +15,7 @@ var r = n(615287),
   d = n(367907),
   f = n(981631);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -55,16 +55,16 @@ function h() {
   }
 }
 
-function g(e, t) {
+function m(e, t) {
   var n;
   let s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    _ = __OVERLAY__ ? c.Z.getGame() : (0, a.pL)(),
-    h = i.ZP.getRunningGames().find(e => e.name === (null == _ ? void 0 : _.name)),
-    g = null !== (n = o.default.getRenderMethod(null == h ? void 0 : h.pid)) && void 0 !== n ? n : r.gl.Disabled;
-  switch (t = p({}, {
-      overlay_game_name: null != _ ? _.name : "Unknown Game",
-      overlay_app_id: null != _ ? _.id : null,
-      overlay_render_method: r.gl[g],
+    p = __OVERLAY__ ? c.Z.getGame() : (0, a.pL)(),
+    h = i.ZP.getRunningGames().find(e => e.name === (null == p ? void 0 : p.name)),
+    m = null !== (n = o.default.getRenderMethod(null == h ? void 0 : h.pid)) && void 0 !== n ? n : r.gl.Disabled;
+  switch (t = _({}, {
+      overlay_game_name: null != p ? p.name : "Unknown Game",
+      overlay_app_id: null != p ? p.id : null,
+      overlay_render_method: r.gl[m],
       media_session_id: l.Z.getMediaSessionId()
     }, t), e) {
     case f.rMx.VOICE_CHANNEL_SELECTED:

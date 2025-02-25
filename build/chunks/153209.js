@@ -52,14 +52,14 @@ function N(e) {
     loadMore: N
   } = (0, m.y6)(), C = (0, l.e7)([d.Z], () => d.Z.localItems), I = (0, h.Us)({
     location: "ForYou"
-  }), S = i.useMemo(() => [...[...x, ...C].sort((e, t) => -1 * b.default.compare(e.id, t.id))], [x, C]), T = x.length > 0 ? x[0] : null, P = g.d$.useSetting(), A = i.useMemo(() => {
-    if (null != T && 0 >= b.default.compare(T.id, P)) return !1;
+  }), S = i.useMemo(() => [...[...x, ...C].sort((e, t) => -1 * b.default.compare(e.id, t.id))], [x, C]), P = x.length > 0 ? x[0] : null, T = g.d$.useSetting(), A = i.useMemo(() => {
+    if (null != P && 0 >= b.default.compare(P.id, T)) return !1;
     for (let e of S) {
-      if (0 >= b.default.compare(e.id, P)) break;
-      if (!(0, p.r)(e, P)) return !0
+      if (0 >= b.default.compare(e.id, T)) break;
+      if (!(0, p.r)(e, T)) return !0
     }
     return !1
-  }, [T, P, S]);
+  }, [P, T, S]);
   return (0, r.jsxs)("div", {
     className: o()(O.container, {
       [O.widerInbox]: I
@@ -71,7 +71,7 @@ function N(e) {
       closePopout: a,
       children: A ? (0, r.jsx)(j, {
         onClick: () => {
-          null != T && (g.d$.updateSetting(T.id), _.default.track(y.rMx.NOTIFICATION_CENTER_ACTION, {
+          null != P && (g.d$.updateSetting(P.id), _.default.track(y.rMx.NOTIFICATION_CENTER_ACTION, {
             action_type: u.ud.MARK_ALL_READ
           }))
         }

@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(468363),
   d = n(297369),
   f = n(956221),
-  _ = n(771173),
-  p = n(372276),
+  p = n(771173),
+  _ = n(372276),
   h = n(385499),
-  g = n(693728),
-  m = n(979264),
+  m = n(693728),
+  g = n(979264),
   E = n(554300),
   v = n(558602),
   b = n(614185),
@@ -113,9 +113,9 @@ let G = (0, C.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       "aria-posinset": eu,
       "aria-setsize": ed,
       id: ef,
-      tabIndex: e_,
-      itemProps: ep
-    } = e, eh = null == V ? void 0 : V.id, eg = R.ZP.useName(V), em = (null === (t = N.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === eh, eE = i.useRef(null), [ev, eb] = i.useState(!1), [ey, eO] = i.useState(null), {
+      tabIndex: ep,
+      itemProps: e_
+    } = e, eh = null == V ? void 0 : V.id, em = R.ZP.useName(V), eg = (null === (t = N.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === eh, eE = i.useRef(null), [ev, eb] = i.useState(!1), [ey, eO] = i.useState(null), {
       voiceChannel: eS
     } = (0, f.Z)({
       userId: eh,
@@ -139,7 +139,7 @@ let G = (0, C.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       n && ew(!1)
     }, [n]);
     let eL = (0, O.Fr)(H),
-      ex = null != eL && !em && n && !eD,
+      ex = null != eL && !eg && n && !eD,
       eM = () => {
         eb(!0)
       },
@@ -167,7 +167,7 @@ let G = (0, C.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
             user: V,
             channel: Q
           });
-          return (0, r.jsx)(_.Z, {
+          return (0, r.jsx)(p.Z, {
             location: "MemberListItem",
             user: V,
             activities: H,
@@ -179,7 +179,7 @@ let G = (0, C.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
             textClassName: x.activityText
           })
         }
-        return null != eN ? (0, r.jsx)(p.Z, {
+        return null != eN ? (0, r.jsx)(_.Z, {
           textClassName: x.activityText,
           entry: eN
         }) : null
@@ -244,9 +244,9 @@ let G = (0, C.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         children: [(0, r.jsx)(l.PUh, {
           roleName: s,
           color: null != o ? o : void 0,
-          name: null != F ? F : eg,
+          name: null != F ? F : em,
           className: x.name
-        }), !ee && (0, r.jsx)(m.ZP, {
+        }), !ee && (0, r.jsx)(g.ZP, {
           primaryGuild: null == V ? void 0 : V.primaryGuild,
           userId: null == V ? void 0 : V.id,
           contextGuildId: X,
@@ -263,7 +263,7 @@ let G = (0, C.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         closePopout: () => ew(!0)
       })),
       eK = Y === P.Skl.OFFLINE;
-    return null == V ? (0, r.jsx)(g.Z, {
+    return null == V ? (0, r.jsx)(m.Z, {
       avatarSize: l.EFr.SIZE_32,
       className: x.placeholder
     }) : (0, r.jsx)(l.yRy, {
@@ -307,7 +307,7 @@ let G = (0, C.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         "aria-setsize": ed,
         "aria-posinset": eu,
         id: ef,
-        tabIndex: e_,
+        tabIndex: ep,
         onFocus: es,
         focusProps: {
           offset: {
@@ -317,6 +317,6 @@ let G = (0, C.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
             right: 4
           }
         }
-      }, ep))
+      }, e_))
     })
   }

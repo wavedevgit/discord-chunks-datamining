@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C$: () => _,
-  Se: () => p
+  C$: () => p,
+  Se: () => _
 });
 var r = n(100527),
   i = n(717401),
@@ -17,11 +17,11 @@ let f = [{
     skuId: "1326347611069874277",
     assetId: "a_89b499793e86bf459a8dd4f02ad416f4"
   }],
-  _ = 2,
-  p = {
+  p = 2,
+  _ = {
     rewards: f,
     rewardAssetIdMap: (0, i.YV)(f),
-    dismissibleContentVersion: _,
+    dismissibleContentVersion: p,
     eligiblePlanIds: [o.Xh.PREMIUM_YEAR_TIER_2, o.Xh.PREMIUM_MONTH_TIER_2],
     planSelection: {
       heading: () => s.NW.string(s.t["o2XB4+"]),

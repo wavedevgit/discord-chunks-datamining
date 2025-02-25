@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -14,14 +14,14 @@ var i = n(481060),
   u = n(74538),
   d = n(981631),
   f = n(388032);
-let _ = "guild-boost-purchase-modal";
-async function p(e) {
+let p = "guild-boost-purchase-modal";
+async function _(e) {
   let {
     analyticsLocations: t,
-    analyticsLocation: p,
+    analyticsLocation: _,
     analyticsSourceLocation: h,
-    guildId: g,
-    closeLayer: m,
+    guildId: m,
+    closeLayer: g,
     onCloseModal: E,
     totalNumberOfSlotsToAssign: v = 1,
     disablePremiumUpsell: b,
@@ -30,7 +30,7 @@ async function p(e) {
     applicationId: S
   } = e, I = O ? i.u1M : i.z1l, T = l.ZP.getPremiumTypeSubscription();
   if (null != T && T.isPurchasedExternally && null != T.paymentGateway) {
-    null != m && m(), o.Z.show({
+    null != g && g(), o.Z.show({
       title: f.NW.formatToPlainString(f.t.rTk9v7, {
         paymentGatewayName: d.Vzj[T.paymentGateway]
       }),
@@ -45,7 +45,7 @@ async function p(e) {
   let N = () => {
     c.default.track(d.rMx.MODAL_DISMISSED, {
       type: d.jXE.PREMIUM_GUILD_PURCHASE_MODAL,
-      location: p
+      location: _
     })
   };
   await (0, i.ZDy)(async () => {
@@ -63,21 +63,21 @@ async function p(e) {
           o(), null == E || E(e)
         },
         analyticsLocations: t,
-        analyticsLocation: p,
-        analyticsSourceLocation: null != h ? h : p,
-        guildId: g,
+        analyticsLocation: _,
+        analyticsSourceLocation: null != h ? h : _,
+        guildId: m,
         totalNumberOfSlotsToAssign: v,
-        closeGuildPerksModal: m,
+        closeGuildPerksModal: g,
         disablePremiumUpsell: b,
         onSubscriptionConfirmation: y,
         applicationId: S
       })
     }
   }, {
-    modalKey: _,
+    modalKey: p,
     onCloseCallback: N,
     onCloseRequest: () => {
-      (0, i.Mr3)(_), null == E || E(!1)
+      (0, i.Mr3)(p), null == E || E(!1)
     },
     contextKey: I
   })

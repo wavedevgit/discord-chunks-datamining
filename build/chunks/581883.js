@@ -12,11 +12,11 @@ var r, i = n(512722),
   u = n(524437),
   d = n(835913),
   f = n(570140),
-  _ = n(262847),
-  p = n(48481),
+  p = n(262847),
+  _ = n(48481),
   h = n(526761);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,14 +25,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -64,7 +64,7 @@ function O(e) {
     proto: n,
     isDirty: r,
     cleanupFuncs: i
-  } = (0, p.xt)(E.proto, _.Z[h.yP.PRELOADED_USER_SETTINGS]);
+  } = (0, _.xt)(E.proto, p.Z[h.yP.PRELOADED_USER_SETTINGS]);
   r && N(E), E.proto = n, o()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = !0, Object.values(b).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = !1, e.editInfo.loading = !1)
   }), T()
@@ -97,7 +97,7 @@ function A(e) {
   let {
     userSettingsProto: t
   } = e;
-  E.proto = (0, p.ac)(t), o()("string" != typeof E.proto, "UserSettingsProto cannot be a string")
+  E.proto = (0, _.ac)(t), o()("string" != typeof E.proto, "UserSettingsProto cannot be a string")
 }
 
 function C(e) {
@@ -112,7 +112,7 @@ function C(e) {
   } = e;
   y = !a;
   let s = b[n];
-  i && N(s), r ? (s.proto = (0, p.re)(s.ProtoClass, s.proto, t), o()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, o()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = !0, s.editInfo.loading = !1)
+  i && N(s), r ? (s.proto = (0, _.re)(s.ProtoClass, s.proto, t), o()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, o()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = !0, s.editInfo.loading = !1)
 }
 
 function R(e) {
@@ -124,7 +124,7 @@ function R(e) {
   } = e;
   o()(!__OVERLAY__, "this cannot run in the overlay");
   let r = b[t];
-  return r.editInfo = m({}, r.editInfo, n), !1
+  return r.editInfo = g({}, r.editInfo, n), !1
 }
 
 function P(e) {
@@ -140,12 +140,12 @@ function D(e) {
     let a = e[Number(n)];
     if (null == a) return;
     let s = null !== (r = null == a ? void 0 : a.proto) && void 0 !== r ? r : "",
-      l = (0, p.d5)(t.ProtoClass, s);
+      l = (0, _.d5)(t.ProtoClass, s);
     if (null == l) return;
     t.proto = l, o()("string" != typeof t.proto, "UserSettingsProto cannot be a string");
     let c = null !== (i = null == a ? void 0 : a.protoToSave) && void 0 !== i ? i : null;
     if (null == c || null == a.offlineEditDataVersion) return;
-    let u = (0, p.d5)(t.ProtoClass, c);
+    let u = (0, _.d5)(t.ProtoClass, c);
     null != u && (t.editInfo.protoToSave = u, t.editInfo.offlineEditDataVersion = a.offlineEditDataVersion)
   })
 }
@@ -159,9 +159,9 @@ class w extends(r = l.ZP.PersistedStore) {
   computeState() {
     return s().mapValues(b, e => {
       let t = {
-        proto: (0, p.xU)(e.ProtoClass, e.proto)
+        proto: (0, _.xU)(e.ProtoClass, e.proto)
       };
-      return null != e.editInfo.offlineEditDataVersion && null != e.editInfo.protoToSave && (t.protoToSave = (0, p.xU)(e.ProtoClass, e.editInfo.protoToSave), t.offlineEditDataVersion = e.editInfo.offlineEditDataVersion), t
+      return null != e.editInfo.offlineEditDataVersion && null != e.editInfo.protoToSave && (t.protoToSave = (0, _.xU)(e.ProtoClass, e.editInfo.protoToSave), t.offlineEditDataVersion = e.editInfo.offlineEditDataVersion), t
     })
   }
   hasLoaded(e) {
@@ -209,7 +209,7 @@ class w extends(r = l.ZP.PersistedStore) {
     return null !== (t = null === (e = this.settings.guilds) || void 0 === e ? void 0 : e.guilds) && void 0 !== t ? t : null
   }
 }
-g(w, "displayName", "UserSettingsProtoStore"), g(w, "persistKey", "UserSettingsProtoStore-Cache");
+m(w, "displayName", "UserSettingsProtoStore"), m(w, "persistKey", "UserSettingsProtoStore-Cache");
 let L = new w(f.Z, {
   CACHE_LOADED: P,
   USER_SETTINGS_PROTO_UPDATE: C,

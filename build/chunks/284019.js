@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -44,13 +44,13 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -68,15 +68,15 @@ function h(e, t) {
   return i
 }
 
-function g(e) {
+function m(e) {
   var {
     themeColor: t,
     color: n,
     className: o
-  } = e, u = p(e, ["themeColor", "color", "className"]);
+  } = e, u = _(e, ["themeColor", "color", "className"]);
   let f = (0, s.dQu)(s.TVs.colors.BG_SURFACE_OVERLAY).hex(),
     h = i.useMemo(() => (0, l.j1)(t, f), [t, f]);
-  return (0, r.jsx)(s.zxk, _(d({}, u), {
+  return (0, r.jsx)(s.zxk, p(d({}, u), {
     style: h,
     className: a()(o, {
       [c.customButton]: null != h

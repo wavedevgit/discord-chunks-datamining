@@ -29,24 +29,24 @@ function d(e) {
     className: f
   } = e;
   t = !d && t, n = !d && n, i = !d && i;
-  let _ = {
+  let p = {
       opacity: 1,
       height: t ? 40 : n ? 20 : 8,
       x: 0
     },
-    p = (0, s.Yzy)(t || n || i, {
+    _ = (0, s.Yzy)(t || n || i, {
       config: c,
       keys: e => e ? "pill" : "empty",
-      initial: t || n || i ? _ : null,
+      initial: t || n || i ? p : null,
       from: u,
       leave: u,
-      enter: _,
-      update: _
+      enter: p,
+      update: p
     }, n || document.hasFocus() ? "animate-always" : "animate-never");
   return (0, r.jsx)("div", {
     className: o()(f, l.wrapper),
     "aria-hidden": !0,
-    children: p((e, t) => t && (0, r.jsx)(a.animated.span, {
+    children: _((e, t) => t && (0, r.jsx)(a.animated.span, {
       className: l.item,
       style: e
     }))

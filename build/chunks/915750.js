@@ -17,8 +17,8 @@ var r = n(200651),
   u = n(113434),
   d = n(918701),
   f = n(882198),
-  _ = n(5881),
-  p = n(981631);
+  p = n(5881),
+  _ = n(981631);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,7 +29,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function g(e) {
   }
   return e
 }
-let m = 60,
+let g = 60,
   E = 1,
   v = .5;
 class b {
@@ -61,12 +61,12 @@ class b {
     var y = this;
     h(this, "id", void 0), h(this, "quests", void 0), h(this, "questContent", void 0), h(this, "triggeredByStatusChange", void 0), h(this, "trackGuildAndChannelMetadata", void 0), h(this, "questContentPosition", void 0), h(this, "questContentRowIndex", void 0), h(this, "questDecisionId", void 0), h(this, "heartbeatTimeoutId", void 0), h(this, "lastBeatTime", void 0), h(this, "minViewTimeReachedTimeoutId", void 0), h(this, "minViewTimeSeconds", void 0), h(this, "minViewportPercentage", void 0), h(this, "isRunning", !1), h(this, "onMinViewTimeReached", () => {
       this.quests.forEach(e => {
-        (0, _.T)().info("".concat(e.config.messages.questName, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, c._b)(this.questContent)), {
+        (0, p.T)().info("".concat(e.config.messages.questName, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, c._b)(this.questContent)), {
           impressionId: this.id
         }), (0, c.dA)({
           questId: e.id,
-          event: p.rMx.QUEST_CONTENT_VIEWED,
-          properties: g({
+          event: _.rMx.QUEST_CONTENT_VIEWED,
+          properties: m({
             min_view_time_seconds: this.minViewTimeSeconds,
             min_viewport_percentage: this.minViewportPercentage,
             triggered_by_status_change: this.triggeredByStatusChange
@@ -79,12 +79,12 @@ class b {
       y.quests.forEach(t => {
         if (null != y.lastBeatTime) {
           let n = Math.round(Date.now() - y.lastBeatTime);
-          (0, _.T)().info("".concat(t.config.messages.questName, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
+          (0, p.T)().info("".concat(t.config.messages.questName, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
             impressionId: y.id
           }), (0, c.dA)({
             questId: t.id,
-            event: p.rMx.QUEST_CONTENT_VIEW_TIME,
-            properties: g({
+            event: _.rMx.QUEST_CONTENT_VIEW_TIME,
+            properties: m({
               is_termination_beat: e,
               viewed_time_ms: n,
               triggered_by_status_change: y.triggeredByStatusChange
@@ -93,7 +93,7 @@ class b {
           })
         }
       }), y.lastBeatTime = Date.now()
-    }), h(this, "commonProperties", e => g({
+    }), h(this, "commonProperties", e => m({
       impression_id: this.id,
       decision_id: this.questDecisionId,
       quest_status: (0, c.uk)(e)
@@ -111,13 +111,13 @@ class b {
         triggeredByStatusChange: t
       })
     }), h(this, "start", () => {
-      this.stop(!1), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * m), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds), this.quests.forEach(e => {
-        (0, _.T)().info("".concat(e.config.messages.questName, " Quest became visible at ").concat((0, c._b)(this.questContent)), {
+      this.stop(!1), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * g), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds), this.quests.forEach(e => {
+        (0, p.T)().info("".concat(e.config.messages.questName, " Quest became visible at ").concat((0, c._b)(this.questContent)), {
           impressionId: this.id
         }), (0, c.dA)({
           questId: e.id,
-          event: p.rMx.QUEST_CONTENT_LOADED,
-          properties: g({
+          event: _.rMx.QUEST_CONTENT_LOADED,
+          properties: m({
             triggered_by_status_change: this.triggeredByStatusChange
           }, this.commonProperties(e)),
           trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata

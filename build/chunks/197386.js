@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(475179),
   i = n(812206),
@@ -14,16 +14,16 @@ var r = n(475179),
   d = n(917107),
   f = n(981631);
 
-function _(e, t) {
+function p(e, t) {
   let n = l.ZP.getSelfEmbeddedActivityForLocation(t),
-    _ = i.Z.getApplication(null == n ? void 0 : n.applicationId),
-    p = (0, u.pY)(null == n ? void 0 : n.location),
+    p = i.Z.getApplication(null == n ? void 0 : n.applicationId),
+    _ = (0, u.pY)(null == n ? void 0 : n.location),
     h = (0, c.ZP)({
-      application: _,
-      channelId: p
+      application: p,
+      channelId: _
     });
-  null == h && null != p ? (0, s.uL)(f.Z5c.CHANNEL(e, p)) : null != h && (0, a.Z)(h), null != p && null != n && (0, d.Z)(p) && (r.Z.selectParticipant(p, (0, o.gN)({
+  null == h && null != _ ? (0, s.uL)(f.Z5c.CHANNEL(e, _)) : null != h && (0, a.Z)(h), null != _ && null != n && (0, d.Z)(_) && (r.Z.selectParticipant(_, (0, o.gN)({
     applicationId: n.applicationId,
     instanceId: null == n ? void 0 : n.compositeInstanceId
-  })), r.Z.updateLayout(p, f.AEg.NO_CHAT))
+  })), r.Z.updateLayout(_, f.AEg.NO_CHAT))
 }

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   CN: () => s,
-  N7: () => _,
+  N7: () => p,
   OR: () => o,
   ZW: () => f,
   fj: () => l,
@@ -63,15 +63,15 @@ function f(e) {
     attachmentIds: [],
     embedIds: []
   };
-  let _ = null !== (s = null == e ? void 0 : null === (r = e.attachments) || void 0 === r ? void 0 : r.filter(u)) && void 0 !== s ? s : [],
-    p = null !== (l = null == e ? void 0 : null === (i = e.embeds) || void 0 === i ? void 0 : i.filter(d)) && void 0 !== l ? l : [];
+  let p = null !== (s = null == e ? void 0 : null === (r = e.attachments) || void 0 === r ? void 0 : r.filter(u)) && void 0 !== s ? s : [],
+    _ = null !== (l = null == e ? void 0 : null === (i = e.embeds) || void 0 === i ? void 0 : i.filter(d)) && void 0 !== l ? l : [];
   return {
-    attachmentIds: _.map(e => e.id).filter(Boolean),
-    embedIds: p.map((e, t) => "embed_".concat(t)).filter(Boolean)
+    attachmentIds: p.map(e => e.id).filter(Boolean),
+    embedIds: _.map((e, t) => "embed_".concat(t)).filter(Boolean)
   }
 }
 
-function _(e) {
+function p(e) {
   let {
     attachmentIds: t,
     embedIds: n

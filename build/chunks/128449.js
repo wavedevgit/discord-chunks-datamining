@@ -8,14 +8,14 @@ n.d(t, {
   Hk: () => d,
   KL: () => b,
   L3: () => S,
-  MU: () => g,
+  MU: () => m,
   Qq: () => h,
   dc: () => u,
   gU: () => f,
   o3: () => c,
-  q5: () => m,
+  q5: () => g,
   t0: () => v,
-  vf: () => p
+  vf: () => _
 }), n(47120);
 var r = n(70956),
   i = n(388032);
@@ -62,21 +62,21 @@ let c = 0,
   u = 13,
   d = -1,
   f = -2,
-  _ = -3;
-var p = function(e) {
+  p = -3;
+var _ = function(e) {
     return e.FEATURED = "featured", e.GAMING = "gaming", e.MUSIC = "music", e.ENTERTAINMENT = "entertainment", e.TECH = "tech", e.EDUCATION = "education", e.HUBS = "hubs", e
   }({}),
   h = function(e) {
     return e.UNKNOWN = "unknown", e.GUILDS_BAR = "guilds_bar", e.RTC_PANEL = "rtc_panel", e.PROFILE = "profile", e.GAME_LINK = "game_link", e.EMBED = "embed", e
   }({});
-let g = new Set(["hubs"]),
-  m = [],
+let m = new Set(["hubs"]),
+  g = [],
   E = "q",
   v = "c",
   b = "l",
   y = 10 * r.Z.Millis.MINUTE;
 var O = function(e) {
-  return e[e.Clans = _] = "Clans", e[e.Hub = f] = "Hub", e[e.Communities = d] = "Communities", e[e.Activity = 1] = "Activity", e[e.Music = 2] = "Music", e[e.Television = 3] = "Television", e[e.Science = 5] = "Science", e[e.Education = 6] = "Education", e
+  return e[e.Clans = p] = "Clans", e[e.Hub = f] = "Hub", e[e.Communities = d] = "Communities", e[e.Activity = 1] = "Activity", e[e.Music = 2] = "Music", e[e.Television = 3] = "Television", e[e.Science = 5] = "Science", e[e.Education = 6] = "Education", e
 }({});
 let S = [1, 2, 3, 5, 6],
   I = ["en-GB"];

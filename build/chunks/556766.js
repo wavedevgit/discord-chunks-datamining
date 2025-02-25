@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(317381),
   d = n(966302),
   f = n(460181),
-  _ = n(474873),
-  p = n(292959),
+  p = n(474873),
+  _ = n(292959),
   h = n(944486),
-  g = n(246946),
-  m = n(340895),
+  m = n(246946),
+  g = n(340895),
   E = n(918559),
   v = n(871465);
 
@@ -73,16 +73,16 @@ function N() {
 }
 
 function A() {
-  let e = (0, l.Wu)([m.Z, h.Z, u.ZP], () => m.Z.getIncomingCalls().filter(e => {
+  let e = (0, l.Wu)([g.Z, h.Z, u.ZP], () => g.Z.getIncomingCalls().filter(e => {
       let {
         channel: t
       } = e, n = h.Z.getChannelId() === t.id, r = null == t.guild_id && n, i = u.ZP.getConnectedActivityChannelId() === t.id && h.Z.getVoiceChannelId() !== t.id && u.ZP.getActivityPanelMode() === E.Ez.PANEL;
       return !r || i
     })),
-    t = (0, l.e7)([m.Z], () => m.Z.hasIncomingCalls()),
-    n = (0, l.e7)([p.Z], () => p.Z.isSoundDisabled("call_ringing")),
-    o = (0, l.e7)([g.Z], () => g.Z.disableSounds),
-    a = (0, l.e7)([_.Z], () => _.Z.getSoundpack()),
+    t = (0, l.e7)([g.Z], () => g.Z.hasIncomingCalls()),
+    n = (0, l.e7)([_.Z], () => _.Z.isSoundDisabled("call_ringing")),
+    o = (0, l.e7)([m.Z], () => m.Z.disableSounds),
+    a = (0, l.e7)([p.Z], () => p.Z.getSoundpack()),
     b = i.useRef(!1),
     O = (0, s.Z)(() => {
       let e = "call_ringing";

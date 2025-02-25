@@ -13,11 +13,11 @@ var r = n(873546),
   u = n(367907),
   d = n(421474),
   f = n(812206),
-  _ = n(960904),
-  p = n(830121),
+  p = n(960904),
+  _ = n(830121),
   h = n(15274),
-  g = n(924301),
-  m = n(543842),
+  m = n(924301),
+  g = n(543842),
   E = n(754688),
   v = n(336197),
   b = n(977156),
@@ -69,9 +69,9 @@ function j(e) {
   let {
     skipExtensionCheck: o,
     analyticsLocations: s
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : M, I = (0, p.zO)(e);
-  if (null != I && (I.type === _.g.INVITE || I.type === _.g.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), x(I), !0);
-  if (null != I && (I.type === _.g.APP_DIRECTORY_PROFILE || I.type === _.g.APP_DIRECTORY_STOREFRONT || I.type === _.g.APP_DIRECTORY_STOREFRONT_SKU)) return t => {
+  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : M, I = (0, _.zO)(e);
+  if (null != I && (I.type === p.g.INVITE || I.type === p.g.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), x(I), !0);
+  if (null != I && (I.type === p.g.APP_DIRECTORY_PROFILE || I.type === p.g.APP_DIRECTORY_STOREFRONT || I.type === p.g.APP_DIRECTORY_STOREFRONT_SKU)) return t => {
     var i, o;
     null == t || t.preventDefault();
     let {
@@ -79,7 +79,7 @@ function j(e) {
     } = I, {
       applicationId: s,
       skuId: l
-    } = I.type === _.g.APP_DIRECTORY_PROFILE || I.type === _.g.APP_DIRECTORY_STOREFRONT ? {
+    } = I.type === p.g.APP_DIRECTORY_PROFILE || I.type === p.g.APP_DIRECTORY_STOREFRONT ? {
       applicationId: a,
       skuId: void 0
     } : null !== (i = (0, d.Q)(a)) && void 0 !== i ? i : {
@@ -102,12 +102,12 @@ function j(e) {
       t({
         tab: r.APPS,
         applicationId: s,
-        section: (0, m.Z)(i, I.type === _.g.APP_DIRECTORY_PROFILE ? i.ABOUT : i.STORE),
+        section: (0, g.Z)(i, I.type === p.g.APP_DIRECTORY_PROFILE ? i.ABOUT : i.STORE),
         skuId: l
       })
     })), !0
   };
-  if (null != I && I.type === _.g.ACTIVITY_BOOKMARK) return e => {
+  if (null != I && I.type === p.g.ACTIVITY_BOOKMARK) return e => {
     var t, n, r;
     null == e || e.preventDefault();
     let {
@@ -116,17 +116,17 @@ function j(e) {
     } = I, l = f.Z.getApplication(i), u = null == l ? void 0 : null === (t = l.bot) || void 0 === t ? void 0 : t.id;
     if (null == u) return !1;
     let d = new URL(o),
-      _ = null !== (n = d.searchParams.get("custom_id")) && void 0 !== n ? n : void 0,
-      p = null !== (r = d.searchParams.get("referrer_id")) && void 0 !== r ? r : void 0;
+      p = null !== (n = d.searchParams.get("custom_id")) && void 0 !== n ? n : void 0,
+      _ = null !== (r = d.searchParams.get("referrer_id")) && void 0 !== r ? r : void 0;
     return a.Z.openPrivateChannel(u).then(e => (0, c.Z)({
       targetApplicationId: i,
       channelId: e,
       analyticsLocations: s,
-      customId: _,
-      referrerId: p
+      customId: p,
+      referrerId: _
     })).catch(() => {}), !0
   };
-  if (null != I && I.type === _.g.GUILD_PRODUCT) return e => {
+  if (null != I && I.type === p.g.GUILD_PRODUCT) return e => {
     null == e || e.preventDefault();
     let [t, r] = I.code.split("-");
     return n.e("84239").then(n.bind(n, 838433)).then(e => {
@@ -136,7 +136,7 @@ function j(e) {
       n(t, r)
     }), !0
   };
-  if (null != I && I.type === _.g.QUESTS_EMBED && (0, b.cB)({
+  if (null != I && I.type === p.g.QUESTS_EMBED && (0, b.cB)({
       location: w.dr.EMBED_MOBILE
     })) return e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 341907)).then(e => {
     let {
@@ -194,7 +194,7 @@ function j(e) {
       getOAuth2AuthorizeProps: t,
       openOAuth2ModalWithCreateGuildModal: r
     } = n(69580), i = t(e);
-    if (null != i) return e => (null == e || e.preventDefault(), null != I && I.type === _.g.APP_OAUTH2_LINK && u.ZP.trackWithMetadata(D.rMx.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
+    if (null != i) return e => (null == e || e.preventDefault(), null != I && I.type === p.g.APP_OAUTH2_LINK && u.ZP.trackWithMetadata(D.rMx.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
       application_id: i.clientId
     }), r(i), !0)
   }
@@ -203,7 +203,7 @@ function j(e) {
     null == e || e.preventDefault();
     let t = N.Z.getGuildId();
     null != B.guildId && "" !== B.guildId && B.guildId !== t && (0, v.Z)(D.Z5c.CHANNEL(B.guildId));
-    let n = g.ZP.getGuildScheduledEvent(B.guildEventId);
+    let n = m.ZP.getGuildScheduledEvent(B.guildEventId);
     return null != n && (0, h.bO)({
       eventId: n.id
     }), !0

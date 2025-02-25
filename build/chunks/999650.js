@@ -17,11 +17,11 @@ var r = n(658722),
   u = n(984933),
   d = n(699516),
   f = n(768119),
-  _ = n(944486),
-  p = n(914010),
+  p = n(944486),
+  _ = n(914010),
   h = n(246946),
-  g = n(594174),
-  m = n(483360),
+  m = n(594174),
+  g = n(483360),
   E = n(226951),
   v = n(51144),
   b = n(981631),
@@ -120,7 +120,7 @@ function F(e) {
   let t;
   let n = e.getMatch(1),
     r = e => null != e ? null == e ? void 0 : e.id : null;
-  return null != (t = b.Xyh.test(n) ? n : r(n === b.ME ? g.default.getCurrentUser() : null != e.getMatch(4) ? g.default.findByTag(e.getMatch(4)) : g.default.findByTag(e.getMatch(2), e.getMatch(3)))) && (e.setData("userId", t), !0)
+  return null != (t = b.Xyh.test(n) ? n : r(n === b.ME ? m.default.getCurrentUser() : null != e.getMatch(4) ? m.default.findByTag(e.getMatch(4)) : m.default.findByTag(e.getMatch(2), e.getMatch(3)))) && (e.setData("userId", t), !0)
 }
 
 function V(e, t) {
@@ -132,7 +132,7 @@ function V(e, t) {
 
 function Z(e) {
   let t = e.getMatch(1),
-    n = p.Z.getGuildId(),
+    n = _.Z.getGuildId(),
     r = u.ZP.getChannels(n)[u.sH].concat(u.ZP.getChannels(n)[u.Zb]),
     i = u.ZP.getTextChannelNameDisambiguations(n),
     o = a().chain(r).map(e => {
@@ -195,22 +195,22 @@ function q(e, t) {
     };
   switch (o) {
     case b.aib.GUILD:
-      n = m.ZP.queryGuildUsers(T(S({}, a), {
+      n = g.ZP.queryGuildUsers(T(S({}, a), {
         guildId: t
       }));
       break;
     case b.aib.CHANNEL:
-      n = m.ZP.queryChannelUsers(T(S({}, a), {
+      n = g.ZP.queryChannelUsers(T(S({}, a), {
         channelId: t
       }));
       break;
     case b.aib.DMS:
-      n = m.ZP.queryUsers(e, r, !0, i, () => !0);
+      n = g.ZP.queryUsers(e, r, !0, i, () => !0);
       break;
     default:
       return []
   }
-  let s = g.default.getCurrentUser(),
+  let s = m.default.getCurrentUser(),
     l = e.toLowerCase().replace(/^@/, ""),
     c = null != s && e.length > 0 && (y.NW.string(y.t.Qf3ptr).startsWith(l) || b.ME.substr(1).startsWith(l)),
     u = n.filter(e => {
@@ -376,12 +376,12 @@ function ee() {
       validator: Q,
       getAutocompletions(e, t, n) {
         "#" === e[0] && (e = e.substring(1));
-        let r = m.ZP.queryChannels({
+        let r = g.ZP.queryChannels({
           query: e,
           type: u.sH,
           guildId: t,
           limit: 1 / 0
-        }).concat(m.ZP.queryChannels({
+        }).concat(g.ZP.queryChannels({
           query: e,
           type: u.Zb,
           guildId: t,
@@ -393,7 +393,7 @@ function ee() {
           return t
         }).filter(e => !e.isThread());
         if ("" === e.trim()) {
-          let e = _.Z.getChannelId(t),
+          let e = p.Z.getChannelId(t),
             n = r.find(t => t.id === e);
           null != n && (r.splice(r.indexOf(n), 1), r.unshift(n))
         }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r = n(147913),
   i = n(282397),
@@ -36,14 +36,14 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     application: t
   } = e, n = i.ZP.getIFrameModalApplicationId(), r = i.ZP.getIFrameModalKey();
   t.id === n && null != n && (0, a.Z)(n, r)
 }
 
-function p(e, t) {
+function _(e, t) {
   let n = null != t ? Date.now() - t : void 0;
   o.default.track(l.rMx.MODAL_DISMISSED, {
     type: u,
@@ -61,12 +61,12 @@ class h extends r.Z {
         this.iframeModalOpenTimeMs = Date.now(), f(e)
       },
       INTERACTION_IFRAME_MODAL_CLOSE: e => {
-        p(e, this.iframeModalOpenTimeMs), this.iframeModalOpenTimeMs = void 0
+        _(e, this.iframeModalOpenTimeMs), this.iframeModalOpenTimeMs = void 0
       },
       RPC_APP_DISCONNECTED: e => {
-        _(e)
+        p(e)
       }
     })
   }
 }
-let g = new h
+let m = new h

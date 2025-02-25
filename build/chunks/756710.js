@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,8 +45,8 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -57,10 +57,10 @@ function h(e) {
     color: n = "default",
     isFocused: o = !1,
     disabled: d = !1,
-    keepItemStyles: _ = !1,
+    keepItemStyles: p = !1,
     menuItemProps: h,
-    action: g,
-    dontCloseOnActionIfHoldingShiftKey: m,
+    action: m,
+    dontCloseOnActionIfHoldingShiftKey: g,
     dontCloseOnAction: E,
     onClose: v
   } = e, b = i.useRef(null);
@@ -68,13 +68,13 @@ function h(e) {
     o && (0, l.F)(b)
   }, [o]);
   let y = i.useCallback(e => {
-      if (null == g) return !1;
-      e.shiftKey && m || E || v(), e.persist(), requestAnimationFrame(() => g(e))
-    }, [g, v, m, E]),
-    O = _ ? a()(u.item, c._[n], {
+      if (null == m) return !1;
+      e.shiftKey && g || E || v(), e.persist(), requestAnimationFrame(() => m(e))
+    }, [m, v, g, E]),
+    O = p ? a()(u.item, c._[n], {
       [u.focused]: o
     }) : u.customItem;
-  return (0, r.jsx)(s.P, p(f({
+  return (0, r.jsx)(s.P, _(f({
     innerRef: b,
     className: O,
     onClick: d ? void 0 : y,

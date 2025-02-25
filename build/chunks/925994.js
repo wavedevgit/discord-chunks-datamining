@@ -14,8 +14,8 @@ var r = n(512722),
   u = n(699516),
   d = n(914010),
   f = n(594174),
-  _ = n(51144),
-  p = n(887490);
+  p = n(51144),
+  _ = n(887490);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,7 +26,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,7 +61,7 @@ function v(e, t) {
     mode: n,
     ignoreTrailingEmptyNodes: r,
     preventEmojiSurrogates: i
-  } = null != t ? t : {}, [o, a] = (null == t ? void 0 : t.range) != null ? p.M8.edges(t.range) : [void 0, void 0];
+  } = null != t ? t : {}, [o, a] = (null == t ? void 0 : t.range) != null ? _.M8.edges(t.range) : [void 0, void 0];
   return b(e, {
     mode: n,
     start: o,
@@ -81,31 +81,31 @@ function b(e, t) {
     ignoreEmptyNodes: l,
     ignoreTrailingEmptyNodes: c,
     preventEmojiSurrogates: u
-  } = null != t ? t : {}, d = e.length > 0 && !p.LC.isText(e[0]);
+  } = null != t ? t : {}, d = e.length > 0 && !_.LC.isText(e[0]);
   null == s && (s = d ? "\n" : "");
   let f = null !== (n = null == o ? void 0 : o.path[0]) && void 0 !== n ? n : 0,
-    _ = null !== (r = null == a ? void 0 : a.path[0]) && void 0 !== r ? r : e.length - 1;
+    p = null !== (r = null == a ? void 0 : a.path[0]) && void 0 !== r ? r : e.length - 1;
   if (c)
-    for (let t = _; t >= f; t--) {
+    for (let t = p; t >= f; t--) {
       let n = e[t];
-      if (p.LC.isText(n)) {
+      if (_.LC.isText(n)) {
         if (n.text.length > 0) {
-          _ = t;
+          p = t;
           break
         }
-      } else if (!p.q.isEmpty(n)) {
-        _ = t;
+      } else if (!_.q.isEmpty(n)) {
+        p = t;
         break
       }
       if (t === f) return ""
     }
-  let h = f > 0 && p.aj.isType(e[f - 1], "blockQuote"),
-    g = p.aj.isType(e[f], "blockQuote"),
-    m = p.aj.isType(e[_], "blockQuote"),
+  let h = f > 0 && _.aj.isType(e[f - 1], "blockQuote"),
+    m = _.aj.isType(e[f], "blockQuote"),
+    g = _.aj.isType(e[p], "blockQuote"),
     E = [];
-  for (let t = f; t <= _; t++) {
+  for (let t = f; t <= p; t++) {
     let n = e[t];
-    if (l && p.LC.isText(n) && 0 === n.text.length) continue;
+    if (l && _.LC.isText(n) && 0 === n.text.length) continue;
     let r = null != o && t === f ? {
         path: o.path.slice(1),
         offset: o.offset
@@ -113,11 +113,11 @@ function b(e, t) {
       s = y(n, {
         mode: i,
         start: r,
-        end: null != a && t === _ ? {
+        end: null != a && t === p ? {
           path: a.path.slice(1),
           offset: a.offset
         } : void 0,
-        allowBlockQuotePrefix: null == o || null == a || !h && (!g || m),
+        allowBlockQuotePrefix: null == o || null == a || !h && (!m || g),
         preventEmojiSurrogates: u
       });
     (!l || s.length > 0) && E.push(s)
@@ -132,7 +132,7 @@ function y(e, t) {
     allowBlockQuotePrefix: i = !1,
     preventEmojiSurrogates: h = !1
   } = null != t ? t : {};
-  if (p.LC.isText(e)) return O(e.text, t);
+  if (_.LC.isText(e)) return O(e.text, t);
   switch (e.type) {
     case "line":
     case "testInline":
@@ -190,7 +190,7 @@ function y(e, t) {
       if ("raw" === n) return t;
       let r = f.default.getUser(e.userId);
       if (null == r) return t;
-      return "@".concat(_.ZP.getUserTag(r, {
+      return "@".concat(p.ZP.getUserTag(r, {
         decoration: "never"
       }))
     }
@@ -199,7 +199,7 @@ function y(e, t) {
     case "timestamp":
       return (0, a.He)(e.parsed.timestamp, e.parsed.format);
     case "applicationCommand":
-      return b(e.children, E(g({}, t), {
+      return b(e.children, E(m({}, t), {
         separator: " ",
         ignoreEmptyNodes: !0
       }));

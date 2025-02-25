@@ -3,10 +3,10 @@
 n.d(t, {
   HZ: () => h,
   IB: () => E,
-  cr: () => p,
-  cu: () => g,
+  cr: () => _,
+  cu: () => m,
   lk: () => v,
-  tM: () => m,
+  tM: () => g,
   xi: () => b,
   zb: () => y
 }), n(474991), n(398202), n(301563), n(653041), n(47120), n(977457), n(566702);
@@ -20,9 +20,9 @@ var r = n(911969),
   u = n(925994),
   d = n(887490),
   f = n(42530);
-let _ = RegExp("([\\p{L}\\p{N}\\p{sc=Deva}\\p{sc=Thai}_-]+):", "gu");
+let p = RegExp("([\\p{L}\\p{N}\\p{sc=Deva}\\p{sc=Thai}_-]+):", "gu");
 
-function p(e) {
+function _(e) {
   let t = d.bN.richValue(e)[0];
   return null == t || "applicationCommand" !== t.type ? null : [t, f.YD]
 }
@@ -40,8 +40,8 @@ function h(e) {
   })) && void 0 !== n ? n : null
 }
 
-function g(e) {
-  let t = p(e),
+function m(e) {
+  let t = _(e),
     n = [],
     r = null == t ? void 0 : t[0].children;
   if (null != r)
@@ -49,10 +49,10 @@ function g(e) {
   return n
 }
 
-function m(e, t, n) {
+function g(e, t, n) {
   let r = {};
   if (null == t.options) return {};
-  let i = p(e),
+  let i = _(e),
     o = Object.fromEntries(t.options.map(e => [e.name, e])),
     a = null == i ? void 0 : i[0].children;
   if (null != a) {
@@ -119,7 +119,7 @@ function b(e, t, n, r, s) {
   let [c] = r, u = o.Z.getActiveCommand(n), d = null == u ? void 0 : null === (l = u.options) || void 0 === l ? void 0 : l.find(e => e.name === c.optionName);
   if (null == d) return;
   let f = E(e, d, c, n),
-    _ = a.f({
+    p = a.f({
       option: d,
       content: f,
       guildId: t,
@@ -128,16 +128,16 @@ function b(e, t, n, r, s) {
     });
   return i.g7(n, {
     [c.optionName]: {
-      lastValidationResult: _
+      lastValidationResult: p
     }
-  }), _
+  }), p
 }
 
 function y(e, t) {
   if (null == t.options || 0 === t.options.length) return [];
   let n = d.bN.richValue(e),
     r = [],
-    i = new Set(g(e)),
+    i = new Set(m(e)),
     o = {},
     a = new Set;
   for (let e of t.options) o[e.displayName] = e, i.has(e.name) || a.add(e.displayName);
@@ -147,9 +147,9 @@ function y(e, t) {
     if ("line" === i.type || "applicationCommand" === i.type)
       for (let c = 0; c < i.children.length; c++) {
         let f;
-        let p = i.children[c],
+        let _ = i.children[c],
           h = [t, c];
-        if (d.aj.isType(p, "applicationCommandOption")) {
+        if (d.aj.isType(_, "applicationCommandOption")) {
           if (null != s) {
             var l;
             s.valueRange.focus = null !== (l = d.bN.before(e, h)) && void 0 !== l ? l : d.bN.start(e, []), s.text = (0, u.sk)(n, {
@@ -159,9 +159,9 @@ function y(e, t) {
           }
           continue
         }
-        if (d.LC.isText(p))
-          for (_.lastIndex = 0; null != (f = _.exec(p.text));) {
-            if (0 !== f.index && null == p.text.charAt(f.index - 1).match(/(\t|\s)/)) continue;
+        if (d.LC.isText(_))
+          for (p.lastIndex = 0; null != (f = p.exec(_.text));) {
+            if (0 !== f.index && null == _.text.charAt(f.index - 1).match(/(\t|\s)/)) continue;
             let e = f[1];
             if (!a.has(e)) continue;
             a.delete(e);

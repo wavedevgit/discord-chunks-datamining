@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $: () => p
+  $: () => _
 }), n(653041), n(47120);
 var r = n(192379),
   i = n(392711),
@@ -36,11 +36,11 @@ class f {
     u(this, "_fetched", new Set), u(this, "_pending", new Set), u(this, "_flushHandler", new s.sW(0, () => this._flush()))
   }
 }
-let _ = new f;
+let p = new f;
 
-function p(e, t) {
+function _(e, t) {
   r.useEffect(() => {
-    null != e && _.request(e)
+    null != e && p.request(e)
   }, [e]);
   let n = r.useMemo(() => null != t ? {
     width: t.coverImageWidth,

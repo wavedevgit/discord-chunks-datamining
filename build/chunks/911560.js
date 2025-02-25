@@ -13,22 +13,22 @@ var r = n(512969),
   u = n(592125),
   d = n(944486),
   f = n(981631),
-  _ = n(176505);
-let p = {},
+  p = n(176505);
+let _ = {},
   h = !1;
 
-function g() {
+function m() {
   h || (h = !0, o.Z.subscribe("CONNECTION_OPEN", () => {
-    p = {};
+    _ = {};
     let e = d.Z.getChannelId(),
       t = u.Z.getChannel(e);
-    null != e && null == t && m(e)
+    null != e && null == t && g(e)
   }))
 }
 
-function m(e) {
-  if (null == e || e === a.V || (0, _.AB)(e) || null != u.Z.getChannel(e) || (g(), !s.Z.isConnected())) return Promise.resolve();
-  let t = p[e];
+function g(e) {
+  if (null == e || e === a.V || (0, p.AB)(e) || null != u.Z.getChannel(e) || (m(), !s.Z.isConnected())) return Promise.resolve();
+  let t = _[e];
   if (null != t) return "LOADING" === t.type ? t.promise : Promise.resolve();
   let n = (0, r.LX)(location.pathname, {
       path: f.Z5c.CHANNEL(l.Hw.guildId(), l.Hw.channelId(), ":messageId"),
@@ -41,7 +41,7 @@ function m(e) {
       let {
         body: r
       } = t;
-      if (p[e] = {
+      if (_[e] = {
           type: "LOADED"
         }, c.Ec.has(r.type)) {
         var i;
@@ -53,7 +53,7 @@ function m(e) {
       }
     }).catch(() => {
       var t;
-      p[e] = {
+      _[e] = {
         type: "NOT_FOUND"
       }, o.Z.dispatch({
         type: "CHANNEL_DELETE",
@@ -64,11 +64,11 @@ function m(e) {
         }
       })
     });
-  return p[e] = {
+  return _[e] = {
     type: "LOADING",
     promise: d
   }, d
 }
 let E = {
-  loadThread: m
+  loadThread: g
 }

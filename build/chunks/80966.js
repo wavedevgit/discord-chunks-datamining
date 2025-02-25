@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -44,13 +44,13 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -67,7 +67,7 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class g extends i.Component {
+class m extends i.Component {
   render() {
     let e = this.props,
       {
@@ -77,8 +77,8 @@ class g extends i.Component {
         mediaPlayerClassName: u,
         poster: f,
         fileName: h,
-        naturalWidth: g,
-        naturalHeight: m,
+        naturalWidth: m,
+        naturalHeight: g,
         playable: E,
         downloadable: v = !0,
         volume: b,
@@ -99,8 +99,8 @@ class g extends i.Component {
         onMute: M,
         alt: j = c.NW.string(c.t.FlNoSU)
       } = e,
-      k = p(e, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "alt"]);
-    return (0, r.jsx)(a.ZP, _(d({
+      k = _(e, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "alt"]);
+    return (0, r.jsx)(a.ZP, p(d({
       alt: j,
       className: i,
       src: f
@@ -118,7 +118,7 @@ class g extends i.Component {
             width: a,
             height: c
           }
-        } = e, d = !(g <= l.N_j && m <= l.XKF || g <= l.XKF && m <= l.N_j);
+        } = e, d = !(m <= l.N_j && g <= l.XKF || m <= l.XKF && g <= l.N_j);
         return (0, r.jsx)(s.ZP, {
           className: u,
           forceExternal: d,

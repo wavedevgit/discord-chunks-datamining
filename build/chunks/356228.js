@@ -78,7 +78,7 @@ function f(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   var t;
   if ("E" === e[0] && "E" === e[1] ? (t = {
       notation: "engineering"
@@ -92,7 +92,7 @@ function _(e) {
   return t
 }
 
-function p(e) {
+function _(e) {
   var t = {},
     n = f(e);
   return n || t
@@ -136,14 +136,14 @@ function h(e) {
         t = (0, r.pi)((0, r.pi)((0, r.pi)({}, t), {
           notation: "scientific"
         }), o.options.reduce(function(e, t) {
-          return (0, r.pi)((0, r.pi)({}, e), p(t))
+          return (0, r.pi)((0, r.pi)({}, e), _(t))
         }, {}));
         continue;
       case "engineering":
         t = (0, r.pi)((0, r.pi)((0, r.pi)({}, t), {
           notation: "engineering"
         }), o.options.reduce(function(e, t) {
-          return (0, r.pi)((0, r.pi)({}, e), p(t))
+          return (0, r.pi)((0, r.pi)({}, e), _(t))
         }, {}));
         continue;
       case "notation-simple":
@@ -214,10 +214,10 @@ function h(e) {
       t = (0, r.pi)((0, r.pi)({}, t), d(o.stem));
       continue
     }
-    var g = f(o.stem);
-    g && (t = (0, r.pi)((0, r.pi)({}, t), g));
-    var m = _(o.stem);
-    m && (t = (0, r.pi)((0, r.pi)({}, t), m))
+    var m = f(o.stem);
+    m && (t = (0, r.pi)((0, r.pi)({}, t), m));
+    var g = p(o.stem);
+    g && (t = (0, r.pi)((0, r.pi)({}, t), g))
   }
   return t
 }

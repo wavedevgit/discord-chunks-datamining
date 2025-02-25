@@ -57,14 +57,14 @@ function f(e, t, n) {
   return i.listener = n, r.wrapFn = i, i
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   var r = e._events;
   if (void 0 === r) return [];
   var i = r[t];
-  return void 0 === i ? [] : "function" == typeof i ? n ? [i.listener || i] : [i] : n ? m(i) : h(i, i.length)
+  return void 0 === i ? [] : "function" == typeof i ? n ? [i.listener || i] : [i] : n ? g(i) : h(i, i.length)
 }
 
-function p(e) {
+function _(e) {
   var t = this._events;
   if (void 0 !== t) {
     var n = t[e];
@@ -79,12 +79,12 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   for (; t + 1 < e.length; t++) e[t] = e[t + 1];
   e.pop()
 }
 
-function m(e) {
+function g(e) {
   for (var t = Array(e.length), n = 0; n < t.length; ++n) t[n] = e[n].listener || e[n];
   return t
 }
@@ -168,7 +168,7 @@ Object.defineProperty(a, "defaultMaxListeners", {
         a = n[o].listener, i = o;
         break
       } if (i < 0) return this;
-    0 === i ? n.shift() : g(n, i), 1 === n.length && (r[e] = n[0]), void 0 !== r.removeListener && this.emit("removeListener", e, a || t)
+    0 === i ? n.shift() : m(n, i), 1 === n.length && (r[e] = n[0]), void 0 !== r.removeListener && this.emit("removeListener", e, a || t)
   }
   return this
 }, a.prototype.off = a.prototype.removeListener, a.prototype.removeAllListeners = function(e) {
@@ -185,11 +185,11 @@ Object.defineProperty(a, "defaultMaxListeners", {
     for (r = t.length - 1; r >= 0; r--) this.removeListener(e, t[r]);
   return this
 }, a.prototype.listeners = function(e) {
-  return _(this, e, !0)
+  return p(this, e, !0)
 }, a.prototype.rawListeners = function(e) {
-  return _(this, e, !1)
+  return p(this, e, !1)
 }, a.listenerCount = function(e, t) {
-  return "function" == typeof e.listenerCount ? e.listenerCount(t) : p.call(e, t)
-}, a.prototype.listenerCount = p, a.prototype.eventNames = function() {
+  return "function" == typeof e.listenerCount ? e.listenerCount(t) : _.call(e, t)
+}, a.prototype.listenerCount = _, a.prototype.eventNames = function() {
   return this._eventsCount > 0 ? t(this._events) : []
 }

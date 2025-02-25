@@ -16,11 +16,11 @@ var r = n(512722),
   u = n(873741),
   d = n(314897),
   f = n(866960),
-  _ = n(70956),
-  p = n(403182),
+  p = n(70956),
+  _ = n(403182),
   h = n(651655),
-  g = n(861990),
-  m = n(141795),
+  m = n(861990),
+  g = n(141795),
   E = n(981631),
   v = n(959517);
 
@@ -88,7 +88,7 @@ var A = function(e) {
 let C = e => 0 === e.type,
   R = e => 1 === e.type,
   P = e => C(e) ? e.message.nonce : R(e) ? e.message.messageId : e.message.data.id,
-  D = [+_.Z.Millis.MINUTE, 5 * _.Z.Millis.MINUTE];
+  D = [+p.Z.Millis.MINUTE, 5 * p.Z.Millis.MINUTE];
 class w extends h.Z {
   isFull() {
     return this.queue.length >= this.maxSize
@@ -140,7 +140,7 @@ class w extends h.Z {
       else if (429 === n.status) {
         let e = parseInt(n.headers["retry-after"]);
         isNaN(e) ? t(null, n) : t({
-          retryAfter: e * _.Z.Millis.SECOND
+          retryAfter: e * p.Z.Millis.SECOND
         })
       } else t(null, n)
     }
@@ -213,7 +213,7 @@ class w extends h.Z {
         data: c,
         nonce: u,
         attachments: f,
-        maxSizeCallback: _,
+        maxSizeCallback: p,
         analytics_location: h,
         sectionName: v,
         source: b
@@ -233,7 +233,7 @@ class w extends h.Z {
     if (null != f) {
       y.data.attachments = [], n = [];
       let e = f;
-      y.data.attachments = e.map((e, t) => (i()(e.status === m.m.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.B)(e, t)))
+      y.data.attachments = e.map((e, t) => (i()(e.status === g.m.COMPLETED, "Uploads must be staged before trying to send a message"), (0, m.B)(e, t)))
     }
     let O = new AbortController;
     o.tn.post({
@@ -249,8 +249,8 @@ class w extends h.Z {
         this.requests.set(u, O), e.on("progress", e => {
           let {
             total: t
-          } = e, n = (0, p.dg)(s);
-          null != t && t > n && (this.cancelRequest(u), null == _ || _(n))
+          } = e, n = (0, _.dg)(s);
+          null != t && t > n && (this.cancelRequest(u), null == p || p(n))
         })
       }
     }, this.createResponseHandler(u, t))

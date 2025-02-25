@@ -33,7 +33,7 @@ function d(e) {
 }
 let f = 1e13;
 
-function _(e) {
+function p(e) {
   if (null == e) return f;
   try {
     return new Date(e).getTime()
@@ -42,8 +42,8 @@ function _(e) {
   }
 }
 
-function p(e) {
-  return _(e.dueAt) - _(e.savedAt)
+function _(e) {
+  return p(e.dueAt) - p(e.savedAt)
 }
 let h = new o.h(e => {
     let {
@@ -54,10 +54,10 @@ let h = new o.h(e => {
     let {
       saveData: t
     } = e;
-    return p(t)
+    return _(t)
   }),
-  g = !0,
-  m = 0,
+  m = !0,
+  g = 0,
   E = new Set,
   v = new Set,
   b = new Map;
@@ -78,7 +78,7 @@ function O(e) {
 function S(e) {
   var t;
   let n = O(e.saveData);
-  null == h.get(n) && (m = Date.now()), h.set(n, e);
+  null == h.get(n) && (g = Date.now()), h.set(n, e);
   let r = e.saveData.messageId,
     i = e.saveData.channelId,
     o = null !== (t = b.get(i)) && void 0 !== t ? t : new Set;
@@ -92,22 +92,22 @@ function I(e) {
   if (null == r) return !1;
   h.delete(n);
   let i = e.messageId;
-  null === (t = b.get(r.saveData.channelId)) || void 0 === t || t.delete(i), v.delete(i), E.delete(i), m = Date.now()
+  null === (t = b.get(r.saveData.channelId)) || void 0 === t || t.delete(i), v.delete(i), E.delete(i), g = Date.now()
 }
 
 function T() {
-  g = !0
+  m = !0
 }
 
 function N() {
-  g = !0, h.clear(), b.clear(), v.clear()
+  m = !0, h.clear(), b.clear(), v.clear()
 }
 
 function A(e) {
   let {
     savedMessages: t
   } = e;
-  for (let e of (g = !1, h.clear(), b.clear(), v.clear(), t)) S(e)
+  for (let e of (m = !1, h.clear(), b.clear(), v.clear(), t)) S(e)
 }
 
 function C(e) {
@@ -175,25 +175,25 @@ function L(e) {
 }
 
 function x() {
-  if (0 === v.size || g) return !1;
-  g = !0
+  if (0 === v.size || m) return !1;
+  m = !0
 }
 
 function M(e) {
   let {
     channel: t
   } = e;
-  if (0 === v.size || g || !y(t.id)) return !1;
-  g = !0
+  if (0 === v.size || m || !y(t.id)) return !1;
+  m = !0
 }
 
 function j(e) {
   let {
     channels: t
   } = e;
-  if (0 === v.size || g) return !1;
+  if (0 === v.size || m) return !1;
   let n = !1;
-  for (let e of t) y(e.id) && (g = !0, n = !0);
+  for (let e of t) y(e.id) && (m = !0, n = !0);
   return n
 }
 
@@ -201,8 +201,8 @@ function k(e) {
   let {
     channel: t
   } = e;
-  if (0 === v.size || g || !y(t.id)) return !1;
-  g = !0
+  if (0 === v.size || m || !y(t.id)) return !1;
+  m = !0
 }
 
 function U(e) {
@@ -210,8 +210,8 @@ function U(e) {
   let {
     user: n
   } = e;
-  if (0 === v.size || g || n.id !== (null === (t = l.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) return !1;
-  g = !0
+  if (0 === v.size || m || n.id !== (null === (t = l.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) return !1;
+  m = !0
 }
 
 function G(e) {
@@ -247,10 +247,10 @@ class B extends(r = i.ZP.Store) {
     return h.size()
   }
   getIsStale() {
-    return g
+    return m
   }
   getLastChanged() {
-    return m
+    return g
   }
   isMessageBookmarked(e, t) {
     let n = h.get(O({

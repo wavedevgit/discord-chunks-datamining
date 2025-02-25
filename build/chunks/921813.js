@@ -14,11 +14,11 @@ var i = n(120356),
   u = n(518950),
   d = n(502762),
   f = n(4517),
-  _ = n(150039),
-  p = n(450734),
+  p = n(150039),
+  _ = n(450734),
   h = n(225089),
-  g = n(853726),
-  m = n(165747),
+  m = n(853726),
+  g = n(165747),
   E = n(981631),
   v = n(228168),
   b = n(808536);
@@ -56,7 +56,7 @@ function y(e) {
     avatarOverride: T,
     size: a.EFr.SIZE_80,
     showPending: !0
-  }), V = (0, _.ZT)({
+  }), V = (0, p.ZT)({
     pendingProfileEffectId: P,
     displayProfile: G
   }), {
@@ -88,7 +88,7 @@ function y(e) {
         onUpsellClick: () => null == y ? void 0 : y({
           object: E.qAy.EDIT_PROFILE_BANNER
         })
-      }), (0, r.jsx)(p.Z, {
+      }), (0, r.jsx)(_.Z, {
         user: t,
         guild: n,
         displayProfile: G,
@@ -108,7 +108,7 @@ function y(e) {
         user: t,
         profileType: v.y0.BITE_SIZE
       })]
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(m.Z, {
       user: t,
       displayProfile: G,
       guild: n,
@@ -119,7 +119,7 @@ function y(e) {
       pendingPronouns: I,
       isTryItOutFlow: L,
       hideBioSection: j
-    }), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(g.Z, {
       user: t,
       hideMessageInput: k,
       hideExampleButton: U

@@ -44,7 +44,7 @@ function S() {
   })
 }
 
-function T(e) {
+function P(e) {
   let {
     message: t,
     snapshot: n,
@@ -71,7 +71,7 @@ function T(e) {
   })
 }
 
-function P(e) {
+function T(e) {
   var t;
   let {
     message: n,
@@ -109,7 +109,7 @@ function P(e) {
         isInteracting: !1,
         isMessageSnapshot: !0,
         renderThreadAccessory: !1
-      }), (0, r.jsx)(T, {
+      }), (0, r.jsx)(P, {
         message: n,
         snapshot: a,
         index: l
@@ -123,7 +123,7 @@ function A(e) {
     message: t
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: t.messageSnapshots.map((e, n) => (0, r.jsx)(P, {
+    children: t.messageSnapshots.map((e, n) => (0, r.jsx)(T, {
       message: t,
       snapshot: e,
       index: n

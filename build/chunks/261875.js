@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(442837),
   i = n(348326),
@@ -25,7 +25,7 @@ class f extends r.ZP.Store {
     this.waitFor(s.default), this.carefullySpeculativelyOpen(l.n()), this.handleAuthenticationStoreChanged(), s.default.addChangeListener(() => this.handleAuthenticationStoreChanged())
   }
   databaseName(e) {
-    return p(e)
+    return _(e)
   }
   database(e) {
     if (null != e) {
@@ -76,7 +76,7 @@ class f extends r.ZP.Store {
       return
     }
     if (null != e) {
-      let t = await g(e);
+      let t = await m(e);
       null == t || this.databases.has(e) ? (u.verbose("discarding speculative database (".concat(e, " → ").concat(t, ")")), null == t || t.close()) : (u.verbose("added speculative database (".concat(e, " → ").concat(t, ")")), this.databases.set(e, t), this.emitChange())
     }
   }
@@ -90,7 +90,7 @@ class f extends r.ZP.Store {
   }
 }
 
-function _(e, t) {
+function p(e, t) {
   for (let n = 0; n < e; n++) try {
     return t()
   } catch (e) {
@@ -99,23 +99,23 @@ function _(e, t) {
   return null
 }
 
-function p(e) {
+function _(e) {
   return "@account.".concat(e)
 }
 
 function h(e) {
   if (d) {
     let t = 50,
-      n = p(e);
-    return u.verbose("synchronously opening ".concat(n)), _(t, () => i.vo.openSyncUnsafe(n, {
+      n = _(e);
+    return u.verbose("synchronously opening ".concat(n)), p(t, () => i.vo.openSyncUnsafe(n, {
       invalidateDisabledHandles: !0
     }))
   }
   return null
 }
-async function g(e) {
+async function m(e) {
   if (d) {
-    let t = p(e);
+    let t = _(e);
     u.verbose("speculatively opening ".concat(t));
     try {
       return await i.vo.open(t)
@@ -125,4 +125,4 @@ async function g(e) {
   }
   return null
 }
-let m = new f
+let g = new f

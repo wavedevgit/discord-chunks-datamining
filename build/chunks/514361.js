@@ -11,11 +11,11 @@ var o, a = n(442837),
   u = n(238514),
   d = n(781391),
   f = n(210887),
-  _ = n(740492),
-  p = n(695346),
+  p = n(740492),
+  _ = n(695346),
   h = n(581883),
-  g = n(131704),
-  m = n(592125),
+  m = n(131704),
+  g = n(592125),
   E = n(594174),
   v = n(74538),
   b = n(51144),
@@ -69,8 +69,8 @@ let T = !1,
       guildId: n
     } = e, r = E.default.getCurrentUser();
     if (null == t || null == n || (0, c.un)(s.z.CLIENT_THEMES_COACHMARK) || !(0, b.Fc)(r)) return;
-    let i = m.Z.getChannel(t);
-    null != i && (0, g.zi)(i.type) && (A = !0)
+    let i = g.Z.getChannel(t);
+    null != i && (0, m.zi)(i.type) && (A = !0)
   };
 
 function x() {
@@ -91,7 +91,7 @@ let k = () => {
   },
   U = () => {
     if (!u.Z.shouldSync("appearance")) return !1;
-    let e = p.L1.getSetting().backgroundGradientPresetId;
+    let e = _.L1.getSetting().backgroundGradientPresetId;
     if (null == e) {
       if (null == r) return !1;
       r = void 0
@@ -103,8 +103,8 @@ let k = () => {
   },
   G = () => {
     if (!u.Z.shouldSync("appearance")) return !1;
-    let e = p.L1.getSetting().backgroundGradientPresetId;
-    if (_.ZP.useSystemTheme === S.K.ON && null != e && (0, d.hi)(S.K.OFF), null == e) {
+    let e = _.L1.getSetting().backgroundGradientPresetId;
+    if (p.ZP.useSystemTheme === S.K.ON && null != e && (0, d.hi)(S.K.OFF), null == e) {
       null != r && (r = void 0);
       return
     }
@@ -114,7 +114,7 @@ let k = () => {
   };
 class B extends(o = a.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (r = (null == e ? void 0 : e.gradientPresetId) != null ? O.qt[e.gradientPresetId] : void 0), this.waitFor(E.default, f.Z, m.Z, u.Z, h.Z), this.syncWith([E.default], k), this.syncWith([u.Z], U), this.syncWith([h.Z], G)
+    null != e && (r = (null == e ? void 0 : e.gradientPresetId) != null ? O.qt[e.gradientPresetId] : void 0), this.waitFor(E.default, f.Z, g.Z, u.Z, h.Z), this.syncWith([E.default], k), this.syncWith([u.Z], U), this.syncWith([h.Z], G)
   }
   getState() {
     return N ? {} : {

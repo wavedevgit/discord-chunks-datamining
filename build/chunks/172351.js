@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -13,9 +13,9 @@ var r = n(200651),
   u = n(678738),
   d = n(981631),
   f = n(388032),
-  _ = n(539469);
+  p = n(539469);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,25 +31,25 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e) {
+function m(e) {
   let {
     applicationId: t,
     commandIds: n,
-    guildId: p,
-    channel: g,
-    onClick: m
+    guildId: _,
+    channel: m,
+    onClick: g
   } = e, {
     trackUserProfileAction: E
   } = (0, c.KZ)(), v = i.useMemo(() => ({
-    channel: g,
+    channel: m,
     type: "channel"
-  }), [g]), {
+  }), [m]), {
     commands: b
   } = a.Qm(v, t, n), y = i.useMemo(() => null == b ? void 0 : b.filter(e => {
     let {
@@ -59,26 +59,26 @@ function g(e) {
   }), [b]);
   if (null == y || 0 === y.length) return null;
   let O = e => {
-    null == m || m(), E({
+    null == g || g(), E({
       action: "PRESS_APP_COMMAND"
     }), l.default.track(d.rMx.POPULAR_APPLICATION_COMMAND_CLICKED, h({
       application_id: t,
       command_id: e,
-      guild_id: p
-    }, (0, o.JS)(g.id)))
+      guild_id: _
+    }, (0, o.JS)(m.id)))
   };
   return (0, r.jsx)(u.Z, {
     heading: f.NW.string(f.t["0hKkS0"]),
     children: (0, r.jsx)("ul", {
-      className: _.list,
+      className: p.list,
       children: y.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(s.wz, {
           commandId: e.id,
           commandName: e.displayName,
           commandDescription: e.displayDescription,
           onClick: O,
-          guildId: p,
-          channelId: g.id,
+          guildId: _,
+          channelId: m.id,
           applicationId: e.applicationId
         })
       }, e.id))

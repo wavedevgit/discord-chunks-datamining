@@ -3,11 +3,11 @@
 n.d(t, {
   C$: () => v,
   Eo: () => O,
-  Fe: () => _,
-  Fz: () => p,
+  Fe: () => p,
+  Fz: () => _,
   IB: () => S,
   Ve: () => b,
-  bq: () => m,
+  bq: () => g,
   iF: () => E,
   jy: () => y
 }), n(47120), n(26686), n(653041);
@@ -29,10 +29,10 @@ function u(e, t, n) {
 }
 let d = 10,
   f = 6e5;
-var _ = function(e) {
+var p = function(e) {
     return e[e.REDEEMED = 1] = "REDEEMED", e[e.PENDING = 2] = "PENDING", e[e.CONVERTED = 3] = "CONVERTED", e
   }({}),
-  p = function(e) {
+  _ = function(e) {
     return e[e.SUCCESS = 1] = "SUCCESS", e[e.FAIL = 2] = "FAIL", e
   }({});
 class h {
@@ -52,8 +52,8 @@ class h {
     u(this, "cache", void 0), u(this, "expiration", void 0), this.cache = new Map, this.expiration = Date.now() + f
   }
 }
-let g = new h,
-  m = () => (i.Z.dispatch({
+let m = new h,
+  g = () => (i.Z.dispatch({
     type: "BILLING_GET_REFERRAL_INCENTIVE_STATUS_START"
   }), r.tn.get({
     url: c.ANM.GET_REFERRAL_INCENTIVE_ELIGIBILITY,
@@ -74,7 +74,7 @@ async function E(e, t, n) {
     index: e,
     searchQuery: t
   });
-  if (g.has(i)) return g.get(i);
+  if (m.has(i)) return m.get(i);
   let {
     users: o,
     next_index: s
@@ -91,7 +91,7 @@ async function E(e, t, n) {
     users: o.map(e => new a.Z(e)),
     nextIndex: s
   };
-  return g.set(i, l), l
+  return m.set(i, l), l
 }
 let v = () => (i.Z.dispatch({
     type: "BILLING_REFERRALS_REMAINING_FETCH_START"

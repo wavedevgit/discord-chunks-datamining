@@ -13,8 +13,8 @@ var r = n(200651),
   u = n(688465),
   d = n(388032),
   f = n(582880),
-  _ = n(368365),
-  p = n(413097);
+  p = n(368365),
+  _ = n(413097);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function g(e) {
   }
   return e
 }
-let m = 84;
+let g = 84;
 
 function E(e) {
   let {
@@ -45,10 +45,10 @@ function E(e) {
     onSelect: n,
     onClose: c
   } = e, {
-    iconURL: _
+    iconURL: p
   } = i.useMemo(() => (0, s.sl)(t, {
-    fakeAppIconURL: p,
-    size: m
+    fakeAppIconURL: _,
+    size: g
   }), [t]), h = i.useMemo(() => [{
     type: o.Y.USER_INSTALL,
     icon: a.oLu,
@@ -78,7 +78,7 @@ function E(e) {
           color: "currentColor"
         })
       }) : null, (0, r.jsx)(l.Z, {
-        src: _,
+        src: p,
         className: f.appIcon,
         rendersPlaceholder: !0
       }), (0, r.jsx)(b, {
@@ -170,27 +170,27 @@ function O(e) {
     }, [t]),
     {
       ref: u,
-      lineHeight: p,
+      lineHeight: _,
       lineCount: h
     } = S(),
-    m = i.useMemo(() => {
-      if (null == p || null == h) return {
+    g = i.useMemo(() => {
+      if (null == _ || null == h) return {
         key: 0
       };
-      let e = p * h;
+      let e = _ * h;
       return {
         key: 1,
-        minHeightOverride: Math.min(e, y * p),
+        minHeightOverride: Math.min(e, y * _),
         maxHeightOverride: e
       }
-    }, [h, p]),
+    }, [h, _]),
     {
       ref: E,
       isTransitioning: v,
       onTransitionEnd: b
-    } = (0, c.Z)(g({
+    } = (0, c.Z)(m({
       isExpanded: o
-    }, m)),
+    }, g)),
     O = o || v;
   return (0, r.jsxs)("div", {
     className: f.descriptionContainer,
@@ -200,11 +200,11 @@ function O(e) {
       onTransitionEnd: b,
       children: (0, r.jsx)(a.Text, {
         ref: u,
-        className: _.markup,
+        className: p.markup,
         variant: "text-sm/medium",
         lineClamp: O ? void 0 : y,
         style: {
-          maxHeight: O ? void 0 : m.minHeightOverride
+          maxHeight: O ? void 0 : g.minHeightOverride
         },
         children: l
       })

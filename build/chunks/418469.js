@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,13 +36,13 @@ function _(e) {
   return e
 }
 
-function p(e, t, f) {
-  var p;
+function _(e, t, f) {
+  var _;
   let {
     enabled: h
   } = (0, u.Z)({
     location: "ReportProblemItem"
-  }), g = (0, s.Cf)(e), m = (0, i.e7)([l.default], () => l.default.getId()), E = null != e ? (0, a.V9)(e) : c.Z.getActiveStreamKey(), v = null !== (p = c.Z.getVideoStats(E)) && void 0 !== p ? p : {}, b = _({
+  }), m = (0, s.Cf)(e), g = (0, i.e7)([l.default], () => l.default.getId()), E = null != e ? (0, a.V9)(e) : c.Z.getActiveStreamKey(), v = null !== (_ = c.Z.getVideoStats(E)) && void 0 !== _ ? _ : {}, b = p({
     media_session_id: c.Z.getMediaSessionId(E),
     rtc_connection_id: c.Z.getRtcConnectionId(E),
     stream_region: c.Z.getRegion(E),
@@ -52,10 +52,10 @@ function p(e, t, f) {
       let {
         default: t
       } = await n.e("18912").then(n.bind(n, 340140));
-      return n => (0, r.jsx)(t, _({
+      return n => (0, r.jsx)(t, p({
         stream: e,
-        streamApplication: g,
-        isStreamer: m === (null == e ? void 0 : e.ownerId),
+        streamApplication: m,
+        isStreamer: g === (null == e ? void 0 : e.ownerId),
         analyticsData: b
       }, n))
     })

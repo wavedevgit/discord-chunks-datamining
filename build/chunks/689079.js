@@ -3,14 +3,14 @@
 n.d(t, {
   Fu: () => h,
   Lu: () => a,
-  Vd: () => _,
+  Vd: () => p,
   WO: () => o,
   _n: () => f,
   ak: () => s,
-  al: () => g,
+  al: () => m,
   bi: () => l,
   hz: () => u,
-  lr: () => p,
+  lr: () => _,
   oQ: () => d,
   tn: () => c
 });
@@ -34,11 +34,11 @@ let c = 10,
   u = 5,
   d = "\0",
   f = 100,
-  _ = 3,
-  p = 10,
+  p = 3,
+  _ = 10,
   h = 500;
 
-function g(e) {
+function m(e) {
   if (null != e.choices) return i.NW.string(i.t.xi5aam);
   switch (e.type) {
     case r.jw.BOOLEAN:

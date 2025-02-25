@@ -29,16 +29,16 @@ function c(e) {
 function u(e, t, n) {
   if ("number" == typeof e) {
     if ("string" == typeof t) throw TypeError('The "string" argument must be of type string. Received type number');
-    return p(e)
+    return _(e)
   }
   return d(e, t, n)
 }
 
 function d(e, t, n) {
   if ("string" == typeof e) return h(e, t);
-  if (ArrayBuffer.isView(e)) return g(e);
+  if (ArrayBuffer.isView(e)) return m(e);
   if (null == e) throw TypeError("The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type " + typeof e);
-  if (J(e, ArrayBuffer) || e && J(e.buffer, ArrayBuffer) || "undefined" != typeof SharedArrayBuffer && (J(e, SharedArrayBuffer) || e && J(e.buffer, SharedArrayBuffer))) return m(e, t, n);
+  if (J(e, ArrayBuffer) || e && J(e.buffer, ArrayBuffer) || "undefined" != typeof SharedArrayBuffer && (J(e, SharedArrayBuffer) || e && J(e.buffer, SharedArrayBuffer))) return g(e, t, n);
   if ("number" == typeof e) throw TypeError('The "value" argument must not be of type number. Received type number');
   var r = e.valueOf && e.valueOf();
   if (null != r && r !== e) return u.from(r, t, n);
@@ -53,11 +53,11 @@ function f(e) {
   if (e < 0) throw RangeError('The value "' + e + '" is invalid for option "size"')
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   return (f(e), e <= 0) ? c(e) : void 0 !== t ? "string" == typeof n ? c(e).fill(t, n) : c(e).fill(t) : c(e)
 }
 
-function p(e) {
+function _(e) {
   return f(e), c(e < 0 ? 0 : 0 | v(e))
 }
 
@@ -69,12 +69,12 @@ function h(e, t) {
   return i !== n && (r = r.slice(0, i)), r
 }
 
-function g(e) {
+function m(e) {
   for (var t = e.length < 0 ? 0 : 0 | v(e.length), n = c(t), r = 0; r < t; r += 1) n[r] = 255 & e[r];
   return n
 }
 
-function m(e, t, n) {
+function g(e, t, n) {
   var r;
   if (t < 0 || e.byteLength < t) throw RangeError('"offset" is outside of buffer bounds');
   if (e.byteLength < t + (n || 0)) throw RangeError('"length" is outside of buffer bounds');
@@ -87,7 +87,7 @@ function E(e) {
       n = c(t);
     return 0 === n.length || e.copy(n, 0, 0, t), n
   }
-  return void 0 !== e.length ? "number" != typeof e.length || $(e.length) ? c(0) : g(e) : "Buffer" === e.type && Array.isArray(e.data) ? g(e.data) : void 0
+  return void 0 !== e.length ? "number" != typeof e.length || $(e.length) ? c(0) : m(e) : "Buffer" === e.type && Array.isArray(e.data) ? m(e.data) : void 0
 }
 
 function v(e) {
@@ -278,11 +278,11 @@ r = 0x7fffffff, u.TYPED_ARRAY_SUPPORT = l(), u.TYPED_ARRAY_SUPPORT || "undefined
 }), u.poolSize = 8192, u.from = function(e, t, n) {
   return d(e, t, n)
 }, Object.setPrototypeOf(u.prototype, Uint8Array.prototype), Object.setPrototypeOf(u, Uint8Array), u.alloc = function(e, t, n) {
-  return _(e, t, n)
+  return p(e, t, n)
 }, u.allocUnsafe = function(e) {
-  return p(e)
+  return _(e)
 }, u.allocUnsafeSlow = function(e) {
-  return p(e)
+  return _(e)
 }, u.isBuffer = function(e) {
   return null != e && !0 === e._isBuffer && e !== u.prototype
 }, u.compare = function(e, t) {

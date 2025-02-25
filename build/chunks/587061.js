@@ -13,27 +13,27 @@ var r = n(192379),
   u = n(627845),
   d = n(556296),
   f = n(5967),
-  _ = n(13140),
-  p = n(981631),
+  p = n(13140),
+  _ = n(981631),
   h = n(420212);
 
-function g(e) {
+function m(e) {
   let t = e.ctrlKey || e.altKey || e.metaKey;
   e.key !== h.mR.Tab || t || __OVERLAY__ || (0, o.$s)() || u.Z.maybeShowKeyboardNavigationExplainerModal()
 }
 
-function m(e) {
-  let t = _.C$("shift"),
-    n = _.C$("tab");
+function g(e) {
+  let t = p.C$("shift"),
+    n = p.C$("tab");
   if (e.key === h.mR.Tab && e.shiftKey && null != t && null != n) return [
-    [p.MoX.KEYBOARD_KEY, t],
-    [p.MoX.KEYBOARD_KEY, n]
+    [_.MoX.KEYBOARD_KEY, t],
+    [_.MoX.KEYBOARD_KEY, n]
   ];
   let r = h.el.get(e.key);
   if (null != r) {
-    let e = _.C$(r);
+    let e = p.C$(r);
     if (null != e) return [
-      [p.MoX.KEYBOARD_KEY, e]
+      [_.MoX.KEYBOARD_KEY, e]
     ]
   }
   return null
@@ -43,8 +43,8 @@ function E(e, t) {
   var n, r;
   let i = (0, f.VG)(null === (n = (0, f.uB)(e)) || void 0 === n ? void 0 : n.activeElement);
   if (i && e.key !== h.mR.Tab || e.ctrlKey || e.altKey || e.metaKey || e.key !== h.mR.Tab && e.shiftKey) return;
-  let o = m(e);
-  null == o || d.ZP.hasExactKeybind(o) || s.Z.hasBind(null !== (r = _.H9(o[0])) && void 0 !== r ? r : "") || ((0, l.Qj)(), i && !t && e.preventDefault())
+  let o = g(e);
+  null == o || d.ZP.hasExactKeybind(o) || s.Z.hasBind(null !== (r = p.H9(o[0])) && void 0 !== r ? r : "") || ((0, l.Qj)(), i && !t && e.preventDefault())
 }
 
 function v() {
@@ -56,7 +56,7 @@ let b = function(e, t) {
   let o = (0, r.useCallback)(e => {
     E(e, t)
   }, [t]);
-  return (0, r.useLayoutEffect)(() => (n ? (e.addEventListener("mousedown", v), e.addEventListener("keydown", g)) : e.addEventListener("keydown", o), () => {
-    n ? (e.removeEventListener("mousedown", v), e.removeEventListener("keydown", g)) : e.removeEventListener("keydown", o)
+  return (0, r.useLayoutEffect)(() => (n ? (e.addEventListener("mousedown", v), e.addEventListener("keydown", m)) : e.addEventListener("keydown", o), () => {
+    n ? (e.removeEventListener("mousedown", v), e.removeEventListener("keydown", m)) : e.removeEventListener("keydown", o)
   }), [e, o, n]), n
 }

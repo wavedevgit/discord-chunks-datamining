@@ -25,12 +25,12 @@ let o = function(e, t) {
     n = "." === u || ".." === u || "" === u
   } else n = !1;
   for (var d = 0, f = a.length; f >= 0; f--) {
-    var _ = a[f];
-    "." === _ ? i(a, f) : ".." === _ ? (i(a, f), d++) : d && (i(a, f), d--)
+    var p = a[f];
+    "." === p ? i(a, f) : ".." === p ? (i(a, f), d++) : d && (i(a, f), d--)
   }
   if (!c)
     for (; d--; d) a.unshift("..");
   !c || "" === a[0] || a[0] && r(a[0]) || a.unshift("");
-  var p = a.join("/");
-  return n && "/" !== p.substr(-1) && (p += "/"), p
+  var _ = a.join("/");
+  return n && "/" !== _.substr(-1) && (_ += "/"), _
 }

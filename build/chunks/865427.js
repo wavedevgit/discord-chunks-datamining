@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ce: () => _,
+  Ce: () => p,
   Ji: () => d,
   _G: () => E,
-  _I: () => p,
-  _S: () => g,
+  _I: () => _,
+  _S: () => m,
   fD: () => h,
   mG: () => b,
   pU: () => f,
@@ -26,7 +26,7 @@ function f(e) {
   return "".concat(location.protocol, "//").concat(location.host).concat(e)
 }
 
-function _() {
+function p() {
   let e = s.Z.safeParseWithQuery(f(u));
   return null == e ? Promise.resolve(null) : (e.search = null, d && (e.query.version = d), o.tn.get({
     url: i.format(e),
@@ -35,7 +35,7 @@ function _() {
   }).then(e => e.body || null, () => null))
 }
 
-function p(e) {
+function _(e) {
   if (b(e)) return Promise.resolve(y(e));
   let t = s.Z.safeParseWithQuery(e);
   return null == t ? Promise.resolve(null) : (t.search = null, t.query.meta = "true", d && (t.query.version = d), t.host = window.location.host, o.tn.get({
@@ -49,7 +49,7 @@ function h() {
   return -1 !== window.document.cookie.indexOf("".concat(l.ZF, "="))
 }
 
-function g() {
+function m() {
   try {
     var e;
     let t = r.parse(window.document.cookie)[l.ZF];
@@ -60,10 +60,10 @@ function g() {
     return {}
   }
 }
-let m = RegExp("^https://(?:ptb\\.|canary\\.)?(discordapp|discord)\\.com/__development/link?[\\S]+$", "i");
+let g = RegExp("^https://(?:ptb\\.|canary\\.)?(discordapp|discord)\\.com/__development/link?[\\S]+$", "i");
 
 function E(e) {
-  return null != e && m.test(e)
+  return null != e && g.test(e)
 }
 let v = RegExp("^dev://branch/([\\w-./]+)$", "i");
 

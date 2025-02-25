@@ -42,19 +42,19 @@
       var d = function(t, r) {
           var i = [];
           for (n = r = r || n; t;) {
-            for (var l = null, c = null, u = null, f = -1e5, _ = 1e5, p = [a.get(t.charCodeAt(0)), s], h = 0; h < p.length; h++) {
-              var g = p[h];
-              if (null != g)
-                for (var m = 0; m < g.length; m++) {
-                  var E = g[m],
+            for (var l = null, c = null, u = null, f = -1e5, p = 1e5, _ = [a.get(t.charCodeAt(0)), s], h = 0; h < _.length; h++) {
+              var m = _[h];
+              if (null != m)
+                for (var g = 0; g < m.length; g++) {
+                  var E = m[g],
                     v = e[E],
                     b = v.order;
-                  if (b > _) break;
+                  if (b > p) break;
                   var y = null == r.prevCapture ? "" : r.prevCapture[0],
                     O = v.match(t, r, y);
                   if (O) {
                     var S = v.quality ? v.quality(O, r, y) : 0;
-                    (b < _ || S > f) && (l = E, c = v, u = O, f = S, _ = b)
+                    (b < p || S > f) && (l = E, c = v, u = O, f = S, p = b)
                   }
                 }
             }
@@ -104,13 +104,13 @@
       var i = "";
       for (var o in n = n || {}) {
         var a = n[o];
-        Object.prototype.hasOwnProperty.call(n, o) && a && (i += " " + g(o) + '="' + g(a) + '"')
+        Object.prototype.hasOwnProperty.call(n, o) && a && (i += " " + m(o) + '="' + m(a) + '"')
       }
       var s = "<" + e + i + ">";
       return r ? s + t + "</" + e + ">" : s
     },
     f = {},
-    _ = function(e) {
+    p = function(e) {
       if (null == e) return null;
       try {
         var t = new URL(e, "https://localhost").protocol;
@@ -120,7 +120,7 @@
       }
       return e
     },
-    p = /[<>&"']/g,
+    _ = /[<>&"']/g,
     h = {
       "<": "&lt;",
       ">": "&gt;",
@@ -130,14 +130,14 @@
       "/": "&#x2F;",
       "`": "&#96;"
     },
-    g = function(e) {
-      return String(e).replace(p, function(e) {
+    m = function(e) {
+      return String(e).replace(_, function(e) {
         return h[e]
       })
     },
-    m = /\\([^0-9A-Za-z\s])/g,
+    g = /\\([^0-9A-Za-z\s])/g,
     E = function(e) {
-      return e.replace(m, "$1")
+      return e.replace(g, "$1")
     },
     v = function(e, t, n) {
       var r = n.inline || !1;
@@ -332,7 +332,7 @@
         },
         html: function(e, t, n) {
           var r = e.lang ? "markdown-code-" + e.lang : void 0,
-            i = d("code", g(e.content), {
+            i = d("code", m(e.content), {
               class: r
             });
           return d("pre", i)
@@ -393,10 +393,10 @@
                 d = -1 !== c.indexOf("\n\n") || u && s;
               s = d;
               var f = n.inline,
-                _ = n._list;
+                p = n._list;
               n._list = !0, d ? (n.inline = !1, i = c.replace(P, "\n\n")) : (n.inline = !0, i = c.replace(P, ""));
-              var p = t(i, n);
-              return n.inline = f, n._list = _, p
+              var _ = t(i, n);
+              return n.inline = f, n._list = p, _
             })
           }
         },
@@ -629,14 +629,14 @@
         },
         react: function(e, t, n) {
           return u("a", n.key, {
-            href: _(e.target),
+            href: p(e.target),
             title: e.title,
             children: t(e.content, n)
           })
         },
         html: function(e, t, n) {
           var r = {
-            href: _(e.target),
+            href: p(e.target),
             title: e.title
           };
           return d("a", t(e.content, n), r)
@@ -654,14 +654,14 @@
         },
         react: function(e, t, n) {
           return u("img", n.key, {
-            src: _(e.target),
+            src: p(e.target),
             alt: e.alt,
             title: e.title
           })
         },
         html: function(e, t, n) {
           return d("img", "", {
-            src: _(e.target),
+            src: p(e.target),
             alt: e.alt,
             title: e.title
           }, !1)
@@ -774,7 +774,7 @@
           })
         },
         html: function(e, t, n) {
-          return d("code", g(e.content))
+          return d("code", m(e.content))
         }
       },
       br: {
@@ -801,7 +801,7 @@
           return e.content
         },
         html: function(e, t, n) {
-          return g(e.content)
+          return m(e.content)
         }
       }
     },
@@ -884,8 +884,8 @@
     defaultReactOutput: q,
     defaultHtmlOutput: Q,
     preprocess: r,
-    sanitizeText: g,
-    sanitizeUrl: _,
+    sanitizeText: m,
+    sanitizeUrl: p,
     unescapeUrl: E,
     htmlTag: d,
     reactElement: u,

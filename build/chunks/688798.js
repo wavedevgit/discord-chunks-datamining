@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(47120);
 var r = n(570140),
   i = n(661111),
@@ -29,7 +29,7 @@ function f(e, t) {
     }] of Object.entries(e)) o <= t && o > n && (n = o, r = i);
   return r
 }
-class _ extends o.Z {
+class p extends o.Z {
   constructor(...e) {
     super(...e), d(this, "actions", {
       POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e)
@@ -43,16 +43,16 @@ class _ extends o.Z {
           latestChangelogId: o
         }), null == o || !0 !== n[o].show_on_startup) return;
       let d = l.Z.lastSeenChangelogId(),
-        _ = l.Z.lastSeenChangelogDate();
+        p = l.Z.lastSeenChangelogDate();
       if (null != d && 0 >= s.default.compare(o, d)) return;
-      let p = await i.Z.fetchChangelog(o, a.default.locale);
-      if (null != p) {
-        if (null == _ || null == l.Z.lastSeenChangelogDate()) {
-          i.Z.markChangelogAsSeen(o, p.date);
+      let _ = await i.Z.fetchChangelog(o, a.default.locale);
+      if (null != _) {
+        if (null == p || null == l.Z.lastSeenChangelogDate()) {
+          i.Z.markChangelogAsSeen(o, _.date);
           return
-        }!l.Z.isLocked() && new Date(p.date) > new Date(_) && (0, u.Z)()
+        }!l.Z.isLocked() && new Date(_.date) > new Date(p) && (0, u.Z)()
       }
     })
   }
 }
-let p = new _
+let _ = new p

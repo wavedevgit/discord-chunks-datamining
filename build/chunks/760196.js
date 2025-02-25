@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m,
-  c: () => g
+  Z: () => g,
+  c: () => m
 }), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -14,16 +14,16 @@ var r = n(200651),
   u = n(328908),
   d = n(832820),
   f = n(841284),
-  _ = n(541716),
-  p = n(407661),
+  p = n(541716),
+  _ = n(407661),
   h = n(342203);
 
-function g(e) {
+function m(e) {
   let {
     channel: t,
     type: n,
-    activeCommand: g,
-    pendingReply: m,
+    activeCommand: m,
+    pendingReply: g,
     pendingScheduledMessage: E
   } = e, {
     activeCommandOption: v,
@@ -35,17 +35,17 @@ function g(e) {
   return i.useMemo(() => {
     let e = [],
       i = [];
-    return null != t.guild_id && n === _.Ie.NORMAL && i.push((0, r.jsx)(c.Z, {
+    return null != t.guild_id && n === p.Ie.NORMAL && i.push((0, r.jsx)(c.Z, {
       guildId: t.guild_id,
       channel: t,
       className: h.newMemberActionBar
-    })), null != g && e.push((0, r.jsx)(s.Z, {
-      activeCommand: g,
+    })), null != m && e.push((0, r.jsx)(s.Z, {
+      activeCommand: m,
       activeOption: null != v ? v : null,
       optionStates: b,
       channelId: t.id
-    })), null != m && e.push((0, r.jsx)(p.Z, {
-      reply: m,
+    })), null != g && e.push((0, r.jsx)(_.Z, {
+      reply: g,
       chatInputType: n
     })), y && e.push((0, r.jsx)(l.V, {})), O && e.push((0, r.jsx)(d.Z, {
       channel: t
@@ -55,10 +55,10 @@ function g(e) {
       stacked: e,
       floating: i
     }
-  }, [g, v, b, t, m, y, n, O, E])
+  }, [m, v, b, t, g, y, n, O, E])
 }
 
-function m(e) {
+function g(e) {
   let {
     bars: t
   } = e, n = t.stacked.map((e, t) => (0, r.jsx)("div", {

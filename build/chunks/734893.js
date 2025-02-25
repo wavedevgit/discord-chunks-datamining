@@ -8,20 +8,20 @@ n.d(t, {
   Wz: () => c,
   Z3: () => u,
   ZR: () => s,
-  am: () => p,
+  am: () => _,
   av: () => I,
   cq: () => E,
   j: () => C,
   k3: () => N,
   kb: () => A,
-  n: () => _,
-  oi: () => m,
+  n: () => p,
+  oi: () => g,
   pw: () => S,
   rk: () => O,
   tB: () => b,
   uo: () => T,
   vD: () => v,
-  x3: () => g
+  x3: () => m
 }), n(266796);
 var r = n(592125),
   i = n(823379),
@@ -33,11 +33,11 @@ let s = 7,
   u = 60,
   d = 3,
   f = 5,
-  _ = 1,
-  p = 30,
+  p = 1,
+  _ = 30,
   h = 200,
-  g = 7;
-var m = function(e) {
+  m = 7;
+var g = function(e) {
   return e[e.VIEW = 0] = "VIEW", e[e.CHAT = 1] = "CHAT", e
 }({});
 

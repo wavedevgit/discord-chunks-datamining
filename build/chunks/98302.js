@@ -13,8 +13,8 @@ var r = n(846519),
   u = n(606304),
   d = n(938475),
   f = n(70956),
-  _ = n(367907),
-  p = n(981631);
+  p = n(367907),
+  _ = n(981631);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function g(e) {
   }
   return e
 }
-let m = +f.Z.Millis.MINUTE;
+let g = +f.Z.Millis.MINUTE;
 class E extends i.Z {
   _initialize() {
     __OVERLAY__ ? this.stores = new Map : (this.stores = new Map().set(u.Z, () => this._handleSpeakingStoreChanged()).set(l.Z, () => this._handleRTCConnectionStoreChanged()), this._reset())
@@ -49,7 +49,7 @@ class E extends i.Z {
     if (this._currentUserSpeaking) {
       let e = l.Z.getChannelId(),
         t = l.Z.getGuildId();
-      (0, _.yw)(p.rMx.START_SPEAKING, g({
+      (0, p.yw)(_.rMx.START_SPEAKING, m({
         mode: s.Z.getMode(),
         priority: u.Z.isCurrentUserPrioritySpeaking(),
         channel: e,
@@ -66,7 +66,7 @@ class E extends i.Z {
     if (s.Z.isDeaf() || !this._anyoneElseSpeaking) return;
     let e = l.Z.getChannelId(),
       t = l.Z.getGuildId();
-    (0, _.yw)(p.rMx.START_LISTENING, g({
+    (0, p.yw)(_.rMx.START_LISTENING, m({
       mute: s.Z.isMute(),
       anyone_priority: u.Z.isAnyonePrioritySpeaking(),
       channel: e,
@@ -82,7 +82,7 @@ class E extends i.Z {
     this._reset(), u.Z.removeChangeListener(this._handleSpeakingStoreChanged), l.Z.removeChangeListener(this._handleRTCConnectionStoreChanged)
   }
   getGameMetadata() {
-    let e = c.Z.findActivity(e => e.type === p.IIU.PLAYING),
+    let e = c.Z.findActivity(e => e.type === _.IIU.PLAYING),
       t = a.ZP.getCurrentGameForAnalytics();
     return {
       game_platform: (0, o.Z)(e),
@@ -99,7 +99,7 @@ class E extends i.Z {
           this._reset();
           return
         }
-        null == this._reportInterval && (this._reportInterval = new r.Xp, this._reportInterval.start(m, () => {
+        null == this._reportInterval && (this._reportInterval = new r.Xp, this._reportInterval.start(g, () => {
           this._trackStartSpeaking(), this._trackStartListening()
         }))
       }

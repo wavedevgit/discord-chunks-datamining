@@ -206,7 +206,7 @@ function S(e) {
   })
 }
 
-function T() {
+function P() {
   let e = h.Z.getCurrentSearchId();
   if (null == e || null == y[e]) return;
   let {
@@ -224,7 +224,7 @@ function T() {
     autocompletes: C(e, n)
   })
 }
-class P extends(r = o.ZP.Store) {
+class T extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(f.ZP, g.Z)
   }
@@ -235,13 +235,13 @@ class P extends(r = o.ZP.Store) {
     })
   }
 }
-a = "SearchAutocompleteStore", (i = "displayName") in P ? Object.defineProperty(P, i, {
+a = "SearchAutocompleteStore", (i = "displayName") in T ? Object.defineProperty(T, i, {
   value: a,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : P[i] = a;
-let A = new P(l.Z, {
+}) : T[i] = a;
+let A = new T(l.Z, {
     SEARCH_AUTOCOMPLETE_QUERY_UPDATE: function(e) {
       var t;
       let n, {
@@ -281,8 +281,8 @@ let A = new P(l.Z, {
     },
     CHANNEL_CREATE: I,
     CHANNEL_DELETE: I,
-    STREAMER_MODE_UPDATE: T,
-    SEARCH_SCREEN_OPEN: T,
+    STREAMER_MODE_UPDATE: P,
+    SEARCH_SCREEN_OPEN: P,
     SEARCH_CLEAR_HISTORY: function(e) {
       let {
         searchId: t

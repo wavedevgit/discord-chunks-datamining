@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(388032),
   f = n(942101);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -47,15 +47,15 @@ function h() {
       size: l.EFr.SIZE_24,
       animateOnHover: !0
     }),
-    _ = e => null != e.globalName ? e.globalName : e.username,
+    p = e => null != e.globalName ? e.globalName : e.username,
     h = i.useMemo(() => e.length >= 2 ? d.NW.formatToPlainString(d.t.c7ETJC, {
-      username: _(e[0])
+      username: p(e[0])
     }) : 1 === e.length ? d.NW.formatToPlainString(d.t.dpjXPD, {
-      username: _(e[0])
+      username: p(e[0])
     }) : "", [e]);
   return 0 === e.length ? null : (0, r.jsxs)("div", {
     className: f.container,
-    children: [(0, r.jsx)(l.qEK, p({
+    children: [(0, r.jsx)(l.qEK, _({
       className: f.__invalid_icon,
       src: n,
       "aria-label": t.username,

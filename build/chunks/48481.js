@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Uc: () => p,
+  Uc: () => _,
   ac: () => E,
   cv: () => v,
-  d5: () => m,
+  d5: () => g,
   i7: () => I,
-  kI: () => g,
+  kI: () => m,
   re: () => y,
   tU: () => A,
   u0: () => S,
@@ -33,7 +33,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function _(e) {
   }
   return e
 }
-let p = {
+let _ = {
     readerFactory: e => new r.o(e, new TextDecoder("utf-8"))
   },
   h = {
@@ -53,22 +53,22 @@ let p = {
     [u.yP.FRECENCY_AND_FAVORITES_SETTINGS]: s.ji
   };
 
-function g(e, t) {
-  return null != t && e in h ? m(h[e], t) : null
+function m(e, t) {
+  return null != t && e in h ? g(h[e], t) : null
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == t) return null;
   let n = (0, i.c)(t);
   try {
-    return e.fromBinary(n, p)
+    return e.fromBinary(n, _)
   } catch (e) {
     throw Error("Settings proto failed to deserialize (potentially corrupt): ".concat(e))
   }
 }
 
 function E(e) {
-  return m(l.o8, e)
+  return g(l.o8, e)
 }
 
 function v(e, t) {
@@ -80,7 +80,7 @@ function b(e, t) {
 }
 
 function y(e, t, n) {
-  for (let e in t = _({}, t), n) delete t[e];
+  for (let e in t = p({}, t), n) delete t[e];
   return e.mergePartial(t, n), t
 }
 

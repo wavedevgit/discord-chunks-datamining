@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(570140),
   i = n(147913),
@@ -48,8 +48,8 @@ function d(e, t) {
   }), e
 }
 let f = 1e4,
-  _ = null,
-  p = () => {
+  p = null,
+  _ = () => {
     let e = o.ZP.getCommunicationDisabledUserMap();
     Object.keys(e).forEach(t => {
       let n = t,
@@ -60,36 +60,36 @@ let f = 1e4,
     })
   },
   h = (e, t) => {
-    var n, i, l, u, f, _;
-    let p = o.ZP.getMember(e, t),
+    var n, i, l, u, f, p;
+    let _ = o.ZP.getMember(e, t),
       h = a.default.getUser(t);
-    if (null == p || null == h || (0, s.b)(p)) return;
-    let g = d(c({}, p), {
+    if (null == _ || null == h || (0, s.b)(_)) return;
+    let m = d(c({}, _), {
       guildId: e,
-      nick: null !== (n = p.nick) && void 0 !== n ? n : h.username,
-      avatar: null !== (i = p.avatar) && void 0 !== i ? i : void 0,
-      avatarDecoration: null != p.avatarDecoration ? c({}, p.avatarDecoration) : void 0,
-      premiumSince: null !== (l = p.premiumSince) && void 0 !== l ? l : void 0,
-      isPending: null !== (u = p.isPending) && void 0 !== u && u,
+      nick: null !== (n = _.nick) && void 0 !== n ? n : h.username,
+      avatar: null !== (i = _.avatar) && void 0 !== i ? i : void 0,
+      avatarDecoration: null != _.avatarDecoration ? c({}, _.avatarDecoration) : void 0,
+      premiumSince: null !== (l = _.premiumSince) && void 0 !== l ? l : void 0,
+      isPending: null !== (u = _.isPending) && void 0 !== u && u,
       user: d(c({}, h), {
         email: null !== (f = h.email) && void 0 !== f ? f : void 0,
-        phone: null !== (_ = h.phone) && void 0 !== _ ? _ : void 0
+        phone: null !== (p = h.phone) && void 0 !== p ? p : void 0
       }),
       communicationDisabledUntil: null
     });
     r.Z.dispatch(c({
       type: "GUILD_MEMBER_UPDATE"
-    }, g))
+    }, m))
   };
-class g extends i.Z {
+class m extends i.Z {
   _initialize() {
-    _ = setInterval(() => p(), f)
+    p = setInterval(() => _(), f)
   }
   _terminate() {
-    clearInterval(_)
+    clearInterval(p)
   }
   constructor(...e) {
     super(...e), l(this, "clearGuildMemberTimeout", h)
   }
 }
-let m = new g
+let g = new m

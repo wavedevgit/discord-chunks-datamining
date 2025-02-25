@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -17,7 +17,7 @@ function f(e, t) {
   let {
     disabled: n,
     type: o
-  } = e, [f, _, p] = (0, c.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), h = i.useCallback(() => {
+  } = e, [f, p, _] = (0, c.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), h = i.useCallback(() => {
     (0, c.RO)(u.X1.EMOJI, o)
   }, [o]);
   return n ? null : (0, r.jsx)("div", {
@@ -26,8 +26,8 @@ function f(e, t) {
     children: (0, r.jsx)(l.Z, {
       className: d.emojiButton,
       onClick: h,
-      active: f === u.X1.EMOJI && _ === o,
-      "aria-controls": p,
+      active: f === u.X1.EMOJI && p === o,
+      "aria-controls": _,
       tabIndex: 0,
       focusProps: {
         offset: {
@@ -41,4 +41,4 @@ function f(e, t) {
     })
   })
 }
-let _ = i.memo(i.forwardRef(f))
+let p = i.memo(i.forwardRef(f))

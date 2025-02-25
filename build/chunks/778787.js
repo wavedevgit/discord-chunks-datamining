@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,14 +48,14 @@ function p(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -63,7 +63,7 @@ function g(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -90,8 +90,8 @@ class b extends l.Z {
       prices: i,
       bundled_products: o,
       variants: l
-    } = e, c = g(e, ["type", "premium_type", "category_sku_id", "prices", "bundled_products", "variants"]);
-    return new b(h(_({}, super.fromServer(c)), {
+    } = e, c = m(e, ["type", "premium_type", "category_sku_id", "prices", "bundled_products", "variants"]);
+    return new b(h(p({}, super.fromServer(c)), {
       type: t,
       premiumType: n === d.WND ? null : n,
       categorySkuId: r,
@@ -113,8 +113,8 @@ class y extends b {
       base_variant_sku_id: n,
       variant_label: r,
       variant_value: i
-    } = e, o = g(e, ["base_variant_name", "base_variant_sku_id", "variant_label", "variant_value"]);
-    return new y(h(_({}, super.fromServer(o)), {
+    } = e, o = m(e, ["base_variant_name", "base_variant_sku_id", "variant_label", "variant_value"]);
+    return new y(h(p({}, super.fromServer(o)), {
       baseVariantName: t,
       baseVariantSkuId: n,
       variantLabel: r,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  P: () => g
+  P: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -14,9 +14,9 @@ var l = n(706454),
   u = n(603421),
   d = n(981631),
   f = n(388032),
-  _ = n(793207);
+  p = n(793207);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,21 +32,21 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
-let g = e => {
+let m = e => {
   let t, {
       billingAddressInfo: n,
-      billingError: p,
-      onBillingAddressChange: g,
-      paymentSourceType: m
+      billingError: _,
+      onBillingAddressChange: m,
+      paymentSourceType: g
     } = e,
-    E = null != p && (null == p.code || (0, u.ly)(p) === u.Rg.ADDRESS),
+    E = null != _ && (null == _.code || (0, u.ly)(_) === u.Rg.ADDRESS),
     v = (0, o.e7)([l.default], () => l.default.locale);
-  switch (m) {
+  switch (g) {
     case d.HeQ.GIROPAY:
     case d.HeQ.PAYSAFE_CARD:
     case d.HeQ.GCASH:
@@ -67,12 +67,12 @@ let g = e => {
   let b = (0, o.e7)([c.Z], () => c.Z.ipCountryCode);
   return 0 === n.country.length && (n.country = null != b ? b : ""), (0, r.jsxs)(i.Fragment, {
     children: [E ? (0, r.jsx)(a.kzN, {
-      className: _.errorBlock,
+      className: p.errorBlock,
       children: f.NW.string(f.t.vZ8y7u)
     }) : null, (0, r.jsx)(s.ZP, h({
-      className: _.__invalid_formItem,
-      onBillingAddressChange: g,
-      error: p,
+      className: p.__invalid_formItem,
+      onBillingAddressChange: m,
+      error: _,
       layout: t
     }, n))]
   })

@@ -16,8 +16,8 @@ function a(e) {
   } = e, {
     mutualFriends: c,
     mutualGuilds: u
-  } = (0, o.Z)(a, a.id !== (null == s ? void 0 : s.id)), d = null !== (t = null == c ? void 0 : c.length) && void 0 !== t ? t : 0, f = null !== (n = null == u ? void 0 : u.length) && void 0 !== n ? n : 0, _ = (0, i.Z)(a);
+  } = (0, o.Z)(a, a.id !== (null == s ? void 0 : s.id)), d = null !== (t = null == c ? void 0 : c.length) && void 0 !== t ? t : 0, f = null !== (n = null == u ? void 0 : u.length) && void 0 !== n ? n : 0, p = (0, i.Z)(a);
   return !((0, r.Ac)({
     location: l
-  }) && _ && 0 === d && 0 === f)
+  }) && p && 0 === d && 0 === f)
 }

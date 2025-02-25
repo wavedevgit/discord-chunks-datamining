@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(351773),
   d = n(607070),
   f = n(100527),
-  _ = n(906732),
-  p = n(639119),
+  p = n(906732),
+  _ = n(639119),
   h = n(197115),
-  g = n(587446),
-  m = n(594174),
+  m = n(587446),
+  g = n(594174),
   E = n(626135),
   v = n(74538),
   b = n(94795),
@@ -30,8 +30,8 @@ var r = n(200651),
   A = n(643931);
 let C = () => {
     var e, t, n;
-    let i = (0, s.e7)([m.default], () => v.ZP.isPremium(m.default.getCurrentUser())),
-      o = (0, p.N)(),
+    let i = (0, s.e7)([g.default], () => v.ZP.isPremium(g.default.getCurrentUser())),
+      o = (0, _.N)(),
       a = (null == o ? void 0 : null === (e = o.subscription_trial) || void 0 === e ? void 0 : e.sku_id) === T.Si.TIER_2;
     return (0, r.jsx)(h.Z, {
       size: l.zxk.Sizes.MEDIUM,
@@ -63,7 +63,7 @@ let C = () => {
         children: [(0, r.jsx)(l.X6q, {
           variant: "heading-lg/extrabold",
           children: N.NW.string(N.t["hb/wEx"])
-        }), (0, r.jsx)(g.Z, {
+        }), (0, r.jsx)(m.Z, {
           className: A.premiumIcon
         })]
       })]
@@ -94,29 +94,29 @@ function D(e) {
     markAsDismissed: n
   } = e, {
     analyticsLocations: o
-  } = (0, _.ZP)(f.Z.APP_ICON_EDITOR), c = (0, s.e7)([m.default], () => m.default.getCurrentUser()), {
-    isUpsellPreview: p,
+  } = (0, p.ZP)(f.Z.APP_ICON_EDITOR), c = (0, s.e7)([g.default], () => g.default.getCurrentUser()), {
+    isUpsellPreview: _,
     isEditorOpen: h,
-    shouldEditorAnimate: g
+    shouldEditorAnimate: m
   } = (0, s.cj)([y.Z, d.Z], () => ({
     isUpsellPreview: y.Z.isUpsellPreview,
     isEditorOpen: y.Z.isEditorOpen,
     shouldEditorAnimate: t && !d.Z.useReducedMotion
   }));
   i.useEffect(() => {
-    p && E.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
+    _ && E.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
       type: T.cd.APP_ICON_UPSELL,
       location_stack: o
     })
-  }, [p, o]);
-  let v = (0, u.Z)(null, p ? b.O7 : S.dG4);
+  }, [_, o]);
+  let v = (0, u.Z)(null, _ ? b.O7 : S.dG4);
   return (i.useEffect(() => {
-    if (p && !h) return b.O7
-  }, [p, h]), null == c) ? null : (0, r.jsx)(_.Gt, {
+    if (_ && !h) return b.O7
+  }, [_, h]), null == c) ? null : (0, r.jsx)(p.Gt, {
     value: o,
     children: (0, r.jsx)("div", {
       ref: v,
-      className: a()(A.editor, g ? A.editorAnimate : null),
+      className: a()(A.editor, m ? A.editorAnimate : null),
       "data-app-right-panel": !0,
       children: (0, r.jsxs)(l.y5t, {
         children: [(0, r.jsx)(R, {

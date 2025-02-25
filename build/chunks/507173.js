@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  y: () => _
+  y: () => p
 }), n(47120), n(978209);
 var r = n(200651);
 n(192379);
@@ -37,7 +37,7 @@ var f = function(e) {
   return e.XSMALL = "xsmall", e.SMALL = "small", e.LARGE = "large", e
 }(f || {});
 
-function _(e) {
+function p(e) {
   let {
     className: t,
     percents: n,
@@ -45,7 +45,7 @@ function _(e) {
     foregroundColors: a = [l.Z.unsafe_rawColors.BRAND_500.css],
     backgroundColor: u = "var(--background-modifier-active)",
     animate: f = !0
-  } = e, _ = s().zip(n, a).map((e, t) => {
+  } = e, p = s().zip(n, a).map((e, t) => {
     let n, [a, s] = e;
     return n = Array.isArray(s) ? {
       background: "linear-gradient(to right, ".concat(s[0], ", ").concat(s[1], ")")
@@ -65,7 +65,7 @@ function _(e) {
     style: {
       backgroundColor: u
     },
-    children: _
+    children: p
   })
 }
-_.Sizes = f
+p.Sizes = f

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -51,13 +51,13 @@ function f(e, t) {
   return i
 }
 
-function _(e) {
+function p(e) {
   var {
     channel: t
   } = e, n = d(e, ["channel"]);
   let c = (0, i.e7)([s.Z], () => t.isPrivate() || s.Z.can(l.Pl.CONNECT, t));
   if (t.isDM() || t.isGroupDM()) return (0, r.jsx)(o.Csw, u({}, n));
   let f = t.isGuildStageVoice(),
-    _ = !c || (0, a.Z)(t);
-  return f && _ ? (0, r.jsx)(o.pki, u({}, n)) : f ? (0, r.jsx)(o.ewx, u({}, n)) : t.isNSFW() ? (0, r.jsx)(o.BVY, u({}, n)) : _ ? (0, r.jsx)(o.gjC, u({}, n)) : (0, r.jsx)(o.gj8, u({}, n))
+    p = !c || (0, a.Z)(t);
+  return f && p ? (0, r.jsx)(o.pki, u({}, n)) : f ? (0, r.jsx)(o.ewx, u({}, n)) : t.isNSFW() ? (0, r.jsx)(o.BVY, u({}, n)) : p ? (0, r.jsx)(o.gjC, u({}, n)) : (0, r.jsx)(o.gj8, u({}, n))
 }

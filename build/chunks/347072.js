@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,15 +46,15 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function h(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -70,29 +70,29 @@ function g(e, t) {
   return i
 }
 
-function m(e) {
+function g(e) {
   var {
     guild: t,
     focused: n,
     onSelectItem: i,
     refreshEnabled: d
-  } = e, _ = h(e, ["guild", "focused", "onSelectItem", "refreshEnabled"]);
+  } = e, p = h(e, ["guild", "focused", "onSelectItem", "refreshEnabled"]);
   let {
-    canCreateExpressions: g
+    canCreateExpressions: m
   } = (0, s.XJ)(t);
   return (0, r.jsx)(a.ua7, {
     text: c.NW.string(c.t["fHo+z8"]),
-    shouldShow: !g,
-    children: e => (0, r.jsx)("li", p(f({
+    shouldShow: !m,
+    children: e => (0, r.jsx)("li", _(f({
       className: u.soundButtonWrapper
     }, e), {
-      children: (0, r.jsx)(a.kL8, p(f({}, _), {
+      children: (0, r.jsx)(a.kL8, _(f({}, p), {
         "aria-label": c.NW.formatToPlainString(c.t.c1qVYm, {
           guildName: t.name
         }),
         className: o()(d ? u.soundAddButtonRefresh : u.soundAddButton, {
           [u.focused]: n,
-          [u.disabled]: !g
+          [u.disabled]: !m
         }),
         onClick: () => null != i ? i() : (0, l.Z)(t.id),
         children: d ? (0, r.jsxs)("div", {
@@ -103,7 +103,7 @@ function m(e) {
             className: u.soundAddIconRefresh
           }), (0, r.jsx)(a.Text, {
             variant: "text-xs/medium",
-            color: g ? void 0 : "text-muted",
+            color: m ? void 0 : "text-muted",
             className: u.soundAddTextRefresh,
             children: c.NW.string(c.t["8Fu/S0"])
           })]
@@ -114,7 +114,7 @@ function m(e) {
             className: u.soundAddIcon
           }), (0, r.jsx)(a.Text, {
             variant: "text-xs/normal",
-            color: g ? "header-primary" : "text-muted",
+            color: m ? "header-primary" : "text-muted",
             children: c.NW.string(c.t["8Fu/S0"])
           })]
         })

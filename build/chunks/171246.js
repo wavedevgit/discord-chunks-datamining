@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ej: () => p,
+  Ej: () => _,
   Jf: () => f,
   KK: () => c,
   KW: () => u,
@@ -39,7 +39,7 @@ function f(e, t) {
   return e.status === s.O0b.CANCELED || r || i
 }
 
-function _(e, t) {
+function p(e, t) {
   var n, r;
   if (e.type === s.epS.SUBSCRIPTION) {
     let n = t.getForSKU(e.id);
@@ -51,11 +51,11 @@ function _(e, t) {
   return null !== (r = null === (n = e.price) || void 0 === n ? void 0 : n.amount) && void 0 !== r ? r : 0
 }
 
-function p(e, t, n) {
+function _(e, t, n) {
   return e.slice().sort((e, r) => {
     let i = t.get(e.skuId),
-      o = null != i ? _(i, n) : 0,
+      o = null != i ? p(i, n) : 0,
       a = t.get(r.skuId);
-    return o - (null != a ? _(a, n) : 0)
+    return o - (null != a ? p(a, n) : 0)
   })
 }

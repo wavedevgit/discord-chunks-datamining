@@ -26,14 +26,14 @@ function d(e, t, n) {
 }
 
 function f(e, t) {
-  return m(e) || g(e, t) || p(e, t) || _()
+  return g(e) || m(e, t) || _(e, t) || p()
 }
 
-function _() {
+function p() {
   throw TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
 }
 
-function p(e, t) {
+function _(e, t) {
   if (e) {
     if ("string" == typeof e) return h(e, t);
     var n = Object.prototype.toString.call(e).slice(8, -1);
@@ -48,7 +48,7 @@ function h(e, t) {
   return r
 }
 
-function g(e, t) {
+function m(e, t) {
   if ("undefined" != typeof Symbol && Symbol.iterator in Object(e)) {
     var n = [],
       r = !0,
@@ -69,7 +69,7 @@ function g(e, t) {
   }
 }
 
-function m(e) {
+function g(e) {
   if (Array.isArray(e)) return e
 }
 

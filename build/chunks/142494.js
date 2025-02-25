@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  FC: () => g,
+  FC: () => m,
   _H: () => f,
   yR: () => h
 }), n(47120), n(301563), n(757143);
@@ -49,7 +49,7 @@ class f {
   }
 }
 
-function _(e, t) {
+function p(e, t) {
   let n = l().parserFor(t(e)),
     r = l().reactFor(l().ruleOutput(e, "react"));
   return (e, t, i) => {
@@ -62,7 +62,7 @@ function _(e, t) {
   }
 }
 
-function p(e) {
+function _(e) {
   let t = l().parserFor(e);
   return (e, n, r) => t(e + "\n\n", {
     inline: !1,
@@ -72,10 +72,10 @@ function p(e) {
 }
 
 function h(e) {
-  r = _(c.j, e), i = p(c.j)
+  r = p(c.j, e), i = _(c.j)
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return "";
   null == r && h(n(281071).Z), e = e.replace(/^\n+|\n+$/g, "");
   let i = u.aT.test(e),

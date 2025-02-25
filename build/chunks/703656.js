@@ -42,25 +42,25 @@ function f(e) {
   }
   return e
 }
-let _ = new s.Z("Routing/Utils"),
-  p = [u.E07.DEVELOPER_PORTAL];
+let p = new s.Z("Routing/Utils"),
+  _ = [u.E07.DEVELOPER_PORTAL];
 r = __OVERLAY__ ? (0, a.PP)() : (0, a.lX)();
 let h = !1,
-  g = r.listen((e, t) => {
-    "REPLACE" !== t && (h = !0, g())
+  m = r.listen((e, t) => {
+    "REPLACE" !== t && (h = !0, m())
   });
 
-function m() {
+function g() {
   return !l.S.hasSubscribers(u.CkL.MODAL_CLOSE) && (n(574254).Z.close(), !0)
 }
 
 function E(e, t) {
-  return !!("string" == typeof e && p.some(t => e.startsWith(t))) && (_.log("".concat(t, " - route to external path ").concat(e)), window.dispatchEvent(new Event("beforeunload")), window.location[t](e), !0)
+  return !!("string" == typeof e && _.some(t => e.startsWith(t))) && (p.log("".concat(t, " - route to external path ").concat(e)), window.dispatchEvent(new Event("beforeunload")), window.location[t](e), !0)
 }
 
 function v(e, t) {
   if (E(e, "assign")) return;
-  _.log("transitionTo - Transitioning to ".concat(e));
+  p.log("transitionTo - Transitioning to ".concat(e));
   let n = null == t ? void 0 : t.source;
   null == t || delete t.source;
   let a = null == t ? void 0 : t.sourceLocationStack;
@@ -70,7 +70,7 @@ function v(e, t) {
 }
 
 function b(e, t, n, r) {
-  _.log("transitionToGuild - Transitioning to ".concat(JSON.stringify({
+  p.log("transitionToGuild - Transitioning to ".concat(JSON.stringify({
     guildId: e,
     channelId: t,
     messageId: n
@@ -82,7 +82,7 @@ function y() {
 }
 
 function O(e, t, n) {
-  E(e, "replace") || (_.log("Replacing route with ".concat(e)), "string" == typeof e ? r.replace(e, t) : r.replace(e), i = n)
+  E(e, "replace") || (p.log("Replacing route with ".concat(e)), "string" == typeof e ? r.replace(e, t) : r.replace(e), i = n)
 }
 
 function S() {
@@ -132,9 +132,9 @@ function C() {
 }
 
 function R() {
-  m() && (i = null, r.goBack())
+  g() && (i = null, r.goBack())
 }
 
 function P() {
-  m() && (i = null, r.goForward())
+  g() && (i = null, r.goForward())
 }

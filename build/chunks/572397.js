@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   J: () => h,
-  q: () => g
+  q: () => m
 }), n(47120);
 var r = n(192379),
   i = n(442837),
@@ -14,23 +14,23 @@ var r = n(192379),
   u = n(238302),
   d = n(514361),
   f = n(981631),
-  _ = n(474936),
-  p = n(874893);
+  p = n(474936),
+  _ = n(874893);
 let h = () => {
     let e = (0, i.e7)([d.Z], () => d.Z.gradientPreset),
-      t = (0, i.e7)([s.ZP], () => s.ZP.useSystemTheme === p.K.ON),
+      t = (0, i.e7)([s.ZP], () => s.ZP.useSystemTheme === _.K.ON),
       [n, o] = (0, r.useState)(t);
     return (0, r.useEffect)(() => {
       null == e && o(t)
     }, [e, t]), (0, r.useCallback)(() => {
-      if (null != e)(0, u.kj)(), n && (0, a.hi)(p.K.ON)
+      if (null != e)(0, u.kj)(), n && (0, a.hi)(_.K.ON)
     }, [e, n])
   },
-  g = () => {
+  m = () => {
     let {
       previewPaneVariant: e
     } = (0, i.cj)([d.Z], () => ({
-      previewPaneVariant: d.Z.isPreview ? _.h1.FREE : _.h1.PREMIUM_STANDARD
+      previewPaneVariant: d.Z.isPreview ? p.h1.FREE : p.h1.PREMIUM_STANDARD
     })), t = (0, i.e7)([l.Z], () => {
       var e;
       let t = null === (e = l.Z.settings.appearance) || void 0 === e ? void 0 : e.theme;

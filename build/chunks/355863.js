@@ -11,11 +11,11 @@ var o, a = n(392711),
   u = n(433517),
   d = n(570140),
   f = n(131792),
-  _ = n(252982),
-  p = n(434529),
+  p = n(252982),
+  _ = n(434529),
   h = n(981631);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -355,13 +355,13 @@ function I(e) {
   let s = [];
   n.forEach((e, t) => {
     let n = T(e.type),
-      r = v(m({}, e), {
+      r = v(g({}, e), {
         zIndex: t
       });
-    "" === r.id && (r.id = (0, l.Z)()), null != n && (r.pinned = n.pinned, -1 !== n.anchor.left && (r.anchor = (0, p.jL)(n.anchor, a)), -1 !== n.size.width && (r.size = (0, p.Ox)(n.size, a))), i = v(m({}, i), {
-      [r.id]: new _.Z(r)
+    "" === r.id && (r.id = (0, l.Z)()), null != n && (r.pinned = n.pinned, -1 !== n.anchor.left && (r.anchor = (0, _.jL)(n.anchor, a)), -1 !== n.size.width && (r.size = (0, _.Ox)(n.size, a))), i = v(g({}, i), {
+      [r.id]: new p.Z(r)
     }), s.push(r.id)
-  }), r = v(m({}, r), {
+  }), r = v(g({}, r), {
     [t]: new f.Z({
       id: t,
       widgets: s,
@@ -426,9 +426,9 @@ function P(e) {
 
 function D(e, t) {
   var n;
-  i = v(m({}, i), {
+  i = v(g({}, i), {
     [e.id]: e.merge({
-      meta: m({}, null !== (n = e.meta) && void 0 !== n ? n : {}, t)
+      meta: g({}, null !== (n = e.meta) && void 0 !== n ? n : {}, t)
     })
   })
 }
@@ -443,7 +443,7 @@ function w(e) {
 }
 
 function L(e, t, n, r) {
-  i = v(m({}, i), {
+  i = v(g({}, i), {
     [e.id]: e.merge({
       anchor: null != t ? t : e.anchor,
       size: null != n ? n : e.size,
@@ -456,12 +456,12 @@ function x(e) {
   let {
     widgetId: t
   } = e;
-  i = m({}, i), delete i[t], s().forEach(r, (e, n) => {
+  i = g({}, i), delete i[t], s().forEach(r, (e, n) => {
     if (n === b) return;
     let i = e.widgets.indexOf(t);
     if (i >= 0) {
       let t = [...e.widgets];
-      t.splice(i, 1), r = v(m({}, r), {
+      t.splice(i, 1), r = v(g({}, r), {
         [n]: e.set("widgets", t)
       })
     }
@@ -474,8 +474,8 @@ function M(e) {
   } = e, n = r[t];
   if (null == n) return !1;
   n.widgets.forEach(e => {
-    i = m({}, i), delete i[e]
-  }), r = v(m({}, r), {
+    i = g({}, i), delete i[e]
+  }), r = v(g({}, r), {
     [n.id]: n.set("widgets", [])
   })
 }
@@ -485,27 +485,27 @@ function j(e) {
     widgetConfigs: t
   } = e;
   t.forEach(e => {
-    let t = new _.Z(e),
+    let t = new p.Z(e),
       n = r[t.layoutId];
     if (null == n) throw Error("LayoutStore - handleAddWidget: Invalid layoutId");
-    t = t.set("zIndex", n.widgets.length), i = v(m({}, i), {
+    t = t.set("zIndex", n.widgets.length), i = v(g({}, i), {
       [t.id]: t
     });
     let o = [...n.widgets, t.id];
-    r = v(m({}, r), {
+    r = v(g({}, r), {
       [n.id]: n.set("widgets", o)
     })
   })
 }
 
 function k(e, t) {
-  i = v(m({}, i), {
+  i = v(g({}, i), {
     [e.id]: e.set("zIndex", t)
   })
 }
 
 function U(e) {
-  i = v(m({}, i), {
+  i = v(g({}, i), {
     [e.id]: e.set("pinned", !e.pinned)
   })
 }
@@ -528,7 +528,7 @@ function B(e) {
 function F(e) {
   let t = {};
   return s().forEach(e, (e, n) => {
-    t[n] = new _.Z(e)
+    t[n] = new p.Z(e)
   }), t
 }
 
@@ -551,12 +551,12 @@ class Z extends(o = c.ZP.PersistedStore) {
         if (null != n || S[r].version !== e.version) continue;
         s = t = !0;
         let c = (0, l.Z)();
-        n = new _.Z(v(m({}, this.getWidgetDefaultSettings(r)), {
+        n = new p.Z(v(g({}, this.getWidgetDefaultSettings(r)), {
           type: r,
           id: c,
           layoutId: o,
           zIndex: a.length
-        })), a.push(n), i = v(m({}, i), {
+        })), a.push(n), i = v(g({}, i), {
           [c]: n
         })
       }
@@ -565,12 +565,12 @@ class Z extends(o = c.ZP.PersistedStore) {
           id: t
         } = e;
         return t
-      })), r = v(m({}, r), {
+      })), r = v(g({}, r), {
         [o]: e
       }))
     }), s().forEach(i, (e, n) => {
       let o = r[e.layoutId];
-      (null == o || 0 > o.widgets.indexOf(n)) && (i = m({}, i), delete i[n], t = !0)
+      (null == o || 0 > o.widgets.indexOf(n)) && (i = g({}, i), delete i[n], t = !0)
     }), t && (this.persist(), this.emitChange())
   }
   getState() {
@@ -631,7 +631,7 @@ class Z extends(o = c.ZP.PersistedStore) {
         case "REQUIRED":
         case "OPTIONAL_DEFAULT":
           var o;
-          (null !== (o = r.version) && void 0 !== o ? o : 0) === t && n.push(v(m({}, r.defaultSettings), {
+          (null !== (o = r.version) && void 0 !== o ? o : 0) === t && n.push(v(g({}, r.defaultSettings), {
             type: i,
             id: (0, l.Z)(),
             layoutId: e
@@ -640,13 +640,13 @@ class Z extends(o = c.ZP.PersistedStore) {
     }), n
   }
 }
-g(Z, "displayName", "LayoutStore"), g(Z, "persistKey", "LayoutStore"), g(Z, "migrations", [() => {
+m(Z, "displayName", "LayoutStore"), m(Z, "persistKey", "LayoutStore"), m(Z, "migrations", [() => {
   let {
     pinnedWidgets: e,
     positions: t,
     sizes: n,
     v: r
-  } = m({}, u.K.get("OverlayStore"));
+  } = g({}, u.K.get("OverlayStore"));
   if (5 === r && e) {
     let r = b,
       i = [],
@@ -708,7 +708,7 @@ g(Z, "displayName", "LayoutStore"), g(Z, "persistKey", "LayoutStore"), g(Z, "mig
         return null != n && (null == o && n[1].type === h.Odu.VOICE && (o = n[0]), null == r && n[1].type === h.Odu.TEXT && (r = n[1].pinned), null != r && null != o || void 0)
       }), r || null == o) return;
     let a = (0, l.Z)();
-    n.widgets = [o, a], i.push([a, v(m({}, V(h.Odu.GUILDS_TEXT)), {
+    n.widgets = [o, a], i.push([a, v(g({}, V(h.Odu.GUILDS_TEXT)), {
       type: h.Odu.GUILDS_TEXT,
       id: a,
       layoutId: t,
@@ -740,7 +740,7 @@ g(Z, "displayName", "LayoutStore"), g(Z, "persistKey", "LayoutStore"), g(Z, "mig
   } = e, r = {};
   for (let e in t) {
     let n = t[e];
-    r[e] = v(m({}, n), {
+    r[e] = v(g({}, n), {
       version: 0
     })
   }

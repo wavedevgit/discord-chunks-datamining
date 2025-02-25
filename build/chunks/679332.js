@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -35,26 +35,26 @@ function f(e) {
   return e
 }
 
-function _(e) {
+function p(e) {
   let {
     user: t,
     viewProfileItem: n
   } = e, {
     trackUserProfileAction: d
   } = (0, l.KZ)(), {
-    analyticsLocations: _
-  } = (0, a.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU), p = [
+    analyticsLocations: p
+  } = (0, a.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU), _ = [
     [n],
     [(0, s.Z)({
       id: t.id,
       label: u.NW.string(u.t["/AXYnJ"]),
       onSuccess: () => d({
         action: "COPY_USER_ID",
-        analyticsLocations: _
+        analyticsLocations: p
       })
     })]
   ];
-  return p.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(i.yRy, {
+  return _.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(i.yRy, {
     renderPopout: e => {
       let {
         closePopout: t
@@ -64,7 +64,7 @@ function _(e) {
         onSelect: void 0,
         onClose: t,
         "aria-label": u.NW.string(u.t.AXIHpa),
-        children: p.map((e, t) => (0, r.jsx)(i.kSQ, {
+        children: _.map((e, t) => (0, r.jsx)(i.kSQ, {
           children: e.map(e => e)
         }, t))
       })

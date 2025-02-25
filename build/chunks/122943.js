@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,21 +48,21 @@ function p(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e) {
+function m(e) {
   let {
     channel: t,
     textVariant: n,
     textClassName: f,
-    hideText: p = !1,
-    hideTooltip: g = !1
-  } = e, m = (0, o.vjg)(o.Skl.ONLINE), E = (0, s.ZP)(t), v = t.isDM() || t.isGroupDM(), b = () => g || v ? (0, r.jsx)(l.Z, {
+    hideText: _ = !1,
+    hideTooltip: m = !1
+  } = e, g = (0, o.vjg)(o.Skl.ONLINE), E = (0, s.ZP)(t), v = t.isDM() || t.isGroupDM(), b = () => m || v ? (0, r.jsx)(l.Z, {
     size: "custom",
-    color: m,
+    color: g,
     channel: t,
     className: d.icon
   }) : (0, r.jsx)(o.ua7, {
@@ -70,7 +70,7 @@ function g(e) {
     "aria-label": (0, a.ZP)({
       channel: t
     }),
-    children: e => (0, r.jsx)(l.Z, h(_({}, e), {
+    children: e => (0, r.jsx)(l.Z, h(p({}, e), {
       size: "custom",
       color: i.Z.colors.STATUS_POSITIVE,
       channel: t,
@@ -90,6 +90,6 @@ function g(e) {
     children: u.NW.string(u.t.msxteH)
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [b(), !p && y()]
+    children: [b(), !_ && y()]
   })
 }

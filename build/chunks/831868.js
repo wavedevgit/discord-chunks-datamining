@@ -10,11 +10,11 @@ function d(e) {
   for (var t = e.length; --t >= 0;) e[t] = 0
 }
 var f = 0,
-  _ = 1,
-  p = 2,
+  p = 1,
+  _ = 2,
   h = 3,
-  g = 258,
-  m = 29,
+  m = 258,
+  g = 29,
   E = 256,
   v = 286,
   b = 30,
@@ -38,9 +38,9 @@ var j = Array(2 * b);
 d(j);
 var k = Array(x);
 d(k);
-var U = Array(g - h + 1);
+var U = Array(m - h + 1);
 d(U);
-var G = Array(m);
+var G = Array(g);
 d(G);
 var B = Array(b);
 
@@ -84,17 +84,17 @@ function q(e, t) {
     u = t.stat_desc.static_tree,
     d = t.stat_desc.has_stree,
     f = t.stat_desc.extra_bits,
-    _ = t.stat_desc.extra_base,
-    p = t.stat_desc.max_length,
+    p = t.stat_desc.extra_base,
+    _ = t.stat_desc.max_length,
     h = 0;
   for (o = 0; o <= S; o++) e.bl_count[o] = 0;
-  for (l[2 * e.heap[e.heap_max] + 1] = 0, n = e.heap_max + 1; n < O; n++)(o = l[2 * l[2 * (r = e.heap[n]) + 1] + 1] + 1) > p && (o = p, h++), l[2 * r + 1] = o, !(r > c) && (e.bl_count[o]++, a = 0, r >= _ && (a = f[r - _]), s = l[2 * r], e.opt_len += s * (o + a), d && (e.static_len += s * (u[2 * r + 1] + a)));
+  for (l[2 * e.heap[e.heap_max] + 1] = 0, n = e.heap_max + 1; n < O; n++)(o = l[2 * l[2 * (r = e.heap[n]) + 1] + 1] + 1) > _ && (o = _, h++), l[2 * r + 1] = o, !(r > c) && (e.bl_count[o]++, a = 0, r >= p && (a = f[r - p]), s = l[2 * r], e.opt_len += s * (o + a), d && (e.static_len += s * (u[2 * r + 1] + a)));
   if (0 !== h) {
     do {
-      for (o = p - 1; 0 === e.bl_count[o];) o--;
-      e.bl_count[o]--, e.bl_count[o + 1] += 2, e.bl_count[p]--, h -= 2
+      for (o = _ - 1; 0 === e.bl_count[o];) o--;
+      e.bl_count[o]--, e.bl_count[o + 1] += 2, e.bl_count[_]--, h -= 2
     } while (h > 0);
-    for (o = p; 0 !== o; o--)
+    for (o = _; 0 !== o; o--)
       for (r = e.bl_count[o]; 0 !== r;) !((i = e.heap[--n]) > c) && (l[2 * i + 1] !== o && (e.opt_len += (o - l[2 * i + 1]) * l[2 * i], l[2 * i + 1] = o), r--)
   }
 }
@@ -111,7 +111,7 @@ function Q(e, t, n) {
 
 function X() {
   var e, t, n, a, s, l = Array(S + 1);
-  for (a = 0, n = 0; a < m - 1; a++)
+  for (a = 0, n = 0; a < g - 1; a++)
     for (e = 0, G[a] = n; e < 1 << P[a]; e++) U[n++] = a;
   for (U[n - 1] = a, s = 0, a = 0; a < 16; a++)
     for (e = 0, B[a] = s; e < 1 << D[a]; e++) k[s++] = a;
@@ -230,16 +230,16 @@ function ef(e, t, n, r) {
   W(e, (f << 1) + +!!r, 3), ee(e, t, n, !0)
 }
 
-function e_(e) {
-  W(e, _ << 1, 3), Y(e, N, M), z(e)
+function ep(e) {
+  W(e, p << 1, 3), Y(e, N, M), z(e)
 }
 
-function ep(e, t, n, r) {
+function e_(e, t, n, r) {
   var i, o, a = 0;
-  e.level > 0 ? (e.strm.data_type === u && (e.strm.data_type = ec(e)), ei(e, e.l_desc), ei(e, e.d_desc), a = es(e), i = e.opt_len + 3 + 7 >>> 3, (o = e.static_len + 3 + 7 >>> 3) <= i && (i = o)) : i = o = n + 5, n + 4 <= i && -1 !== t ? ef(e, t, n, r) : e.strategy === s || o === i ? (W(e, (_ << 1) + +!!r, 3), er(e, M, j)) : (W(e, (p << 1) + +!!r, 3), el(e, e.l_desc.max_code + 1, e.d_desc.max_code + 1, a + 1), er(e, e.dyn_ltree, e.dyn_dtree)), J(e), r && $(e)
+  e.level > 0 ? (e.strm.data_type === u && (e.strm.data_type = ec(e)), ei(e, e.l_desc), ei(e, e.d_desc), a = es(e), i = e.opt_len + 3 + 7 >>> 3, (o = e.static_len + 3 + 7 >>> 3) <= i && (i = o)) : i = o = n + 5, n + 4 <= i && -1 !== t ? ef(e, t, n, r) : e.strategy === s || o === i ? (W(e, (p << 1) + +!!r, 3), er(e, M, j)) : (W(e, (_ << 1) + +!!r, 3), el(e, e.l_desc.max_code + 1, e.d_desc.max_code + 1, a + 1), er(e, e.dyn_ltree, e.dyn_dtree)), J(e), r && $(e)
 }
 
 function eh(e, t, n) {
   return e.pending_buf[e.d_buf + 2 * e.last_lit] = t >>> 8 & 255, e.pending_buf[e.d_buf + 2 * e.last_lit + 1] = 255 & t, e.pending_buf[e.l_buf + e.last_lit] = 255 & n, e.last_lit++, 0 === t ? e.dyn_ltree[2 * n]++ : (e.matches++, t--, e.dyn_ltree[(U[n] + E + 1) * 2]++, e.dyn_dtree[2 * Z(t)]++), e.last_lit === e.lit_bufsize - 1
 }
-t._tr_init = ed, t._tr_stored_block = ef, t._tr_flush_block = ep, t._tr_tally = eh, t._tr_align = e_
+t._tr_init = ed, t._tr_stored_block = ef, t._tr_flush_block = e_, t._tr_tally = eh, t._tr_align = ep

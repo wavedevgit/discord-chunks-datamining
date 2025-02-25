@@ -13,8 +13,8 @@ var r, i = n(442837),
   u = n(585483),
   d = n(351780),
   f = n(641033),
-  _ = n(524484),
-  p = n(981631);
+  p = n(524484),
+  _ = n(981631);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -123,7 +123,7 @@ function C(e) {
   var t, n, r, i, o, s;
   let l = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     c = I.get(A(e)),
-    u = E(g({}, c, e), {
+    u = E(m({}, c, e), {
       value: null !== (n = null !== (t = e.value) && void 0 !== t ? t : null == c ? void 0 : c.value) && void 0 !== n ? n : 0,
       multiplier: Math.min(null !== (i = null !== (r = e.multiplier) && void 0 !== r ? r : null == c ? void 0 : c.multiplier) && void 0 !== i ? i : 1, y),
       decayInterval: null !== (o = null == c ? void 0 : c.decayInterval) && void 0 !== o ? o : new a.Xp
@@ -134,11 +134,11 @@ function C(e) {
       let n = u.multiplier !== e.multiplier && u.value !== e.value;
       if (e.value <= 0 || n) {
         var t;
-        null === (t = e.decayInterval) || void 0 === t || t.stop(), e.value <= 0 && (C(E(g({}, e), {
+        null === (t = e.decayInterval) || void 0 === t || t.stop(), e.value <= 0 && (C(E(m({}, e), {
           value: 0,
           multiplier: 1
         })), M.emitChange())
-      } else C(E(g({}, e), {
+      } else C(E(m({}, e), {
         value: e.value - 1
       })), M.emitChange()
     }
@@ -186,9 +186,9 @@ function L(e) {
     userId: null !== (t = null == o ? void 0 : o.id) && void 0 !== t ? t : "???",
     channelId: r
   }));
-  if (d.Z.screenshakeEnabled && d.Z.screenshakeEnabledLocations[_.oZ.MENTION] && null != i && null != i.find(e => e.id === s)) {
-    let e = null != c ? null !== (n = (0, f.KH)(c, _.qi.LEVEL_4)) && void 0 !== n ? n : .001 : 4 * Math.random();
-    return u.S.dispatch(p.CkL.SHAKE_APP, {
+  if (d.Z.screenshakeEnabled && d.Z.screenshakeEnabledLocations[p.oZ.MENTION] && null != i && null != i.find(e => e.id === s)) {
+    let e = null != c ? null !== (n = (0, f.KH)(c, p.qi.LEVEL_4)) && void 0 !== n ? n : .001 : 4 * Math.random();
+    return u.S.dispatch(_.CkL.SHAKE_APP, {
       duration: 1e3,
       intensity: e
     }), !0

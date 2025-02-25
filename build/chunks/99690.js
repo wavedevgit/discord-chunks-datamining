@@ -58,9 +58,9 @@ let f = i.memo(function(e) {
     animate: s = !1,
     "aria-hidden": u = !1
   } = e, f = c(e, ["user", "size", "animate", "aria-hidden"]);
-  let _ = i.useContext(a.Z);
+  let p = i.useContext(a.Z);
   return (0, r.jsx)(o.qEK, l({
-    src: d(t, (0, o.pxk)(n), s, _),
+    src: d(t, (0, o.pxk)(n), s, p),
     size: n,
     "aria-label": u ? void 0 : t.username,
     "aria-hidden": u

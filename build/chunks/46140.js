@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Dp: () => g,
-  NH: () => p,
+  Dp: () => m,
+  NH: () => _,
   Ot: () => l,
   R4: () => u,
   S7: () => a.S,
   Ts: () => h,
-  Uo: () => _,
+  Uo: () => p,
   XZ: () => c,
   a_: () => o.a,
   cd: () => d,
@@ -36,9 +36,9 @@ var d = function(e) {
   return e.CONSOLE = "CONSOLE", e.DESKTOP = "DESKTOP", e
 }({});
 let f = "https://cdn.discordapp.com/quests/",
-  _ = "https://cdn.discordapp.com/assets/quests/";
-var p = function(e) {
+  p = "https://cdn.discordapp.com/assets/quests/";
+var _ = function(e) {
   return e.COLLAPSED = "collapsed", e.EXPANDED = "expanded", e.CLOSED = "closed", e.SOFT_DISMISSED = "soft-dismissed", e.RESET_TO_PREVIOUS = "reset-to-previous", e
 }({});
 let h = "545364944258990091",
-  g = "{reward_code}"
+  m = "{reward_code}"

@@ -13,7 +13,7 @@ var r, i = n(392711),
   d = n(926491),
   f = n(526761);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -46,12 +46,12 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = {
+let g = {
   pendingUsages: []
 };
 u.Z.Millis.DAY;
@@ -74,7 +74,7 @@ let E = 20,
       stickerIds: t
     } = e;
     null == t || t.forEach(e => {
-      v.track(e), m.pendingUsages.push({
+      v.track(e), g.pendingUsages.push({
         key: e,
         timestamp: Date.now()
       })
@@ -88,9 +88,9 @@ function S() {
   var e;
   let t = null === (e = c.Z.frecencyWithoutFetchingLatest.stickerFrecency) || void 0 === e ? void 0 : e.stickers;
   if (null == t) return !1;
-  v.overwriteHistory(o().mapValues(t, e => g(p({}, e), {
+  v.overwriteHistory(o().mapValues(t, e => m(_({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-  })), m.pendingUsages)
+  })), g.pendingUsages)
 }
 
 function I(e) {
@@ -101,23 +101,23 @@ function I(e) {
     wasSaved: n
   } = e;
   if (t !== f.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
-  m.pendingUsages = []
+  g.pendingUsages = []
 }
 class T extends(r = a.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(d.Z), null != e && (m = e), this.syncWith([d.Z], O), this.syncWith([c.Z], S)
+    this.waitFor(d.Z), null != e && (g = e), this.syncWith([d.Z], O), this.syncWith([c.Z], S)
   }
   getState() {
-    return m
+    return g
   }
   hasPendingUsage() {
-    return m.pendingUsages.length > 0
+    return g.pendingUsages.length > 0
   }
   get stickerFrecencyWithoutFetchingLatest() {
     return v
   }
 }
-_(T, "displayName", "StickersPersistedStore"), _(T, "persistKey", "StickersPersistedStoreV2");
+p(T, "displayName", "StickersPersistedStore"), p(T, "persistKey", "StickersPersistedStoreV2");
 let N = new T(s.Z, {
   STICKER_TRACK_USAGE: y,
   USER_SETTINGS_PROTO_UPDATE: I

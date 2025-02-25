@@ -21,16 +21,16 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = new i.Z("GatewaySocket"),
-  _ = new Set(["INITIAL_GUILD", "READY"]),
-  p = new Set(["READY", "INITIAL_GUILD"]),
+  p = new Set(["INITIAL_GUILD", "READY"]),
+  _ = new Set(["READY", "INITIAL_GUILD"]),
   h = new Set(["READY", "READY_SUPPLEMENTAL", "RESUMED"]),
-  g = new Set(["READY", "INITIAL_GUILD", "READY_SUPPLEMENTAL", "RESUMED", "VOICE_CHANNEL_SELECT", "VOICE_STATE_UPDATE", "VOICE_SERVER_UPDATE", "RTC_CONNECTION_STATE", "RTC_CONNECTION_VIDEO", "RTC_CONNECTION_CLIENT_CONNECT", "RTC_CONNECTION_PING", "MEDIA_SESSION_JOINED", "MEDIA_ENGINE_PERMISSION", "SESSIONS_REPLACE"]),
-  m = {};
+  m = new Set(["READY", "INITIAL_GUILD", "READY_SUPPLEMENTAL", "RESUMED", "VOICE_CHANNEL_SELECT", "VOICE_STATE_UPDATE", "VOICE_SERVER_UPDATE", "RTC_CONNECTION_STATE", "RTC_CONNECTION_VIDEO", "RTC_CONNECTION_CLIENT_CONNECT", "RTC_CONNECTION_PING", "MEDIA_SESSION_JOINED", "MEDIA_ENGINE_PERMISSION", "SESSIONS_REPLACE"]),
+  g = {};
 
 function E(e, t) {
   var n;
-  let [r, i] = null !== (n = m[e]) && void 0 !== n ? n : [0, 0];
-  m[e] = [(r * i + t) / (i + 1), i + 1]
+  let [r, i] = null !== (n = g[e]) && void 0 !== n ? n : [0, 0];
+  g[e] = [(r * i + t) / (i + 1), i + 1]
 }
 
 function v(e, t, n) {
@@ -71,7 +71,7 @@ class b {
     this.queue.push(r), this.maybePreload(r) || this.scheduleFlush(t)
   }
   maybePreload(e) {
-    if (this.paused && !_.has(e.type)) return !1;
+    if (this.paused && !p.has(e.type)) return !1;
     if (0 === e.status) {
       var t;
       let n = null === (t = this.getDispatchHandler(e.type)) || void 0 === t ? void 0 : t.preload(e.data);
@@ -85,10 +85,10 @@ class b {
     return !1
   }
   scheduleFlush(e) {
-    !this.paused && (p.has(e) ? (this.scheduler.clearWorkTimeout(), this.flush()) : this.scheduler.hasWorkScheduled || this.scheduler.requestWorkTimeout(this.flush), g.has(e) && this.scheduler.markCriticalWorkScheduled())
+    !this.paused && (_.has(e) ? (this.scheduler.clearWorkTimeout(), this.flush()) : this.scheduler.hasWorkScheduled || this.scheduler.requestWorkTimeout(this.flush), m.has(e) && this.scheduler.markCriticalWorkScheduled())
   }
   getDispatchTimings() {
-    return m
+    return g
   }
   getSchedulerTelemetry() {
     return this.scheduler.telemetry

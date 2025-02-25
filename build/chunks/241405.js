@@ -29,23 +29,23 @@ function f(e, t) {
   return n.result
 }
 
-function _(e, t) {
+function p(e, t) {
   return (t = t || {}).raw = !0, f(e, t)
 }
 d.prototype.push = function(e, t) {
-  var n, s, l, c, d, f, _ = this.strm,
-    p = this.options.chunkSize,
+  var n, s, l, c, d, f, p = this.strm,
+    _ = this.options.chunkSize,
     h = this.options.dictionary,
-    g = !1;
+    m = !1;
   if (this.ended) return !1;
-  s = t === ~~t ? t : !0 === t ? a.Z_FINISH : a.Z_NO_FLUSH, "string" == typeof e ? _.input = o.binstring2buf(e) : "[object ArrayBuffer]" === u.call(e) ? _.input = new Uint8Array(e) : _.input = e, _.next_in = 0, _.avail_in = _.input.length;
+  s = t === ~~t ? t : !0 === t ? a.Z_FINISH : a.Z_NO_FLUSH, "string" == typeof e ? p.input = o.binstring2buf(e) : "[object ArrayBuffer]" === u.call(e) ? p.input = new Uint8Array(e) : p.input = e, p.next_in = 0, p.avail_in = p.input.length;
   do {
-    if (0 === _.avail_out && (_.output = new i.Buf8(p), _.next_out = 0, _.avail_out = p), (n = r.inflate(_, a.Z_NO_FLUSH)) === a.Z_NEED_DICT && h && (f = "string" == typeof h ? o.string2buf(h) : "[object ArrayBuffer]" === u.call(h) ? new Uint8Array(h) : h, n = r.inflateSetDictionary(this.strm, f)), n === a.Z_BUF_ERROR && !0 === g && (n = a.Z_OK, g = !1), n !== a.Z_STREAM_END && n !== a.Z_OK) return this.onEnd(n), this.ended = !0, !1;
-    _.next_out && (0 === _.avail_out || n === a.Z_STREAM_END || 0 === _.avail_in && (s === a.Z_FINISH || s === a.Z_SYNC_FLUSH)) && ("string" === this.options.to ? (l = o.utf8border(_.output, _.next_out), c = _.next_out - l, d = o.buf2string(_.output, l), _.next_out = c, _.avail_out = p - c, c && i.arraySet(_.output, _.output, l, c, 0), this.onData(d)) : this.onData(i.shrinkBuf(_.output, _.next_out))), 0 === _.avail_in && 0 === _.avail_out && (g = !0)
-  } while ((_.avail_in > 0 || 0 === _.avail_out) && n !== a.Z_STREAM_END);
-  return (n === a.Z_STREAM_END && (s = a.Z_FINISH), s === a.Z_FINISH) ? (n = r.inflateEnd(this.strm), this.onEnd(n), this.ended = !0, n === a.Z_OK) : (s === a.Z_SYNC_FLUSH && (this.onEnd(a.Z_OK), _.avail_out = 0), !0)
+    if (0 === p.avail_out && (p.output = new i.Buf8(_), p.next_out = 0, p.avail_out = _), (n = r.inflate(p, a.Z_NO_FLUSH)) === a.Z_NEED_DICT && h && (f = "string" == typeof h ? o.string2buf(h) : "[object ArrayBuffer]" === u.call(h) ? new Uint8Array(h) : h, n = r.inflateSetDictionary(this.strm, f)), n === a.Z_BUF_ERROR && !0 === m && (n = a.Z_OK, m = !1), n !== a.Z_STREAM_END && n !== a.Z_OK) return this.onEnd(n), this.ended = !0, !1;
+    p.next_out && (0 === p.avail_out || n === a.Z_STREAM_END || 0 === p.avail_in && (s === a.Z_FINISH || s === a.Z_SYNC_FLUSH)) && ("string" === this.options.to ? (l = o.utf8border(p.output, p.next_out), c = p.next_out - l, d = o.buf2string(p.output, l), p.next_out = c, p.avail_out = _ - c, c && i.arraySet(p.output, p.output, l, c, 0), this.onData(d)) : this.onData(i.shrinkBuf(p.output, p.next_out))), 0 === p.avail_in && 0 === p.avail_out && (m = !0)
+  } while ((p.avail_in > 0 || 0 === p.avail_out) && n !== a.Z_STREAM_END);
+  return (n === a.Z_STREAM_END && (s = a.Z_FINISH), s === a.Z_FINISH) ? (n = r.inflateEnd(this.strm), this.onEnd(n), this.ended = !0, n === a.Z_OK) : (s === a.Z_SYNC_FLUSH && (this.onEnd(a.Z_OK), p.avail_out = 0), !0)
 }, d.prototype.onData = function(e) {
   this.chunks.push(e)
 }, d.prototype.onEnd = function(e) {
   e === a.Z_OK && ("string" === this.options.to ? this.result = this.chunks.join("") : this.result = i.flattenChunks(this.chunks)), this.chunks = [], this.err = e, this.msg = this.strm.msg
-}, t.Inflate = d, t.inflate = f, t.inflateRaw = _, t.ungzip = f
+}, t.Inflate = d, t.inflate = f, t.inflateRaw = p, t.ungzip = f

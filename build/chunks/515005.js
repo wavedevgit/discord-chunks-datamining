@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(239091),
   d = n(2052),
   f = n(330726),
-  _ = n(691251),
-  p = n(626135),
+  p = n(691251),
+  _ = n(626135),
   h = n(285651),
-  g = n(373228),
-  m = n(378233),
+  m = n(373228),
+  g = n(378233),
   E = n(419922),
   v = n(490095),
   b = n(981631),
@@ -124,17 +124,17 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
       children: U.map(e => {
         var d;
         let f = e.visibleRowIndex === (null == C ? void 0 : C.rowIndex) && e.columnIndex === (null == C ? void 0 : C.columnIndex),
-          S = e.type === g.al.STICKER && V && f,
+          S = e.type === m.al.STICKER && V && f,
           T = t => {
             if ((null == w ? void 0 : w.current) === !0 || (null == L ? void 0 : L.current) === !0) return;
             let n = t.altKey;
-            n && e.type === g.al.STICKER && !(0, m.gM)(e.sticker.id) && X(e.sticker.id), null == M || M(e, n)
+            n && e.type === m.al.STICKER && !(0, g.gM)(e.sticker.id) && X(e.sticker.id), null == M || M(e, n)
           },
           R = (0, s.throttle)(() => {
             (null == w ? void 0 : w.current) === !0 || (null == L ? void 0 : L.current) === !0 || f || null == x || x(e)
           }, D),
           P = () => {
-            e.type === g.al.CREATE_STICKER && (p.default.track(b.rMx.OPEN_MODAL, {
+            e.type === m.al.CREATE_STICKER && (_.default.track(b.rMx.OPEN_MODAL, {
               type: b.jXE.CREATE_STICKER_MODAL,
               location: Y
             }), (0, c.ZDy)(async () => {
@@ -154,7 +154,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
           } = U,
           J = A(U, ["ref", "tabIndex", "onFocus"]);
         switch (e.type) {
-          case g.al.CREATE_STICKER:
+          case m.al.CREATE_STICKER:
             return (0, r.jsx)("div", N(I({}, J), {
               children: (0, r.jsxs)(c.P3F, {
                 "aria-label": e.name,
@@ -183,8 +183,8 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
                 })]
               })
             }), e.guild_id);
-          case g.al.STICKER: {
-            let s = t && null != F && (0, m.jl)(e.sticker) && !F.has(e.sticker.pack_id),
+          case m.al.STICKER: {
+            let s = t && null != F && (0, g.jl)(e.sticker) && !F.has(e.sticker.pack_id),
               l = e => {
                 (0, u.jW)(e, async () => {
                   let {
@@ -207,7 +207,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
               onClick: T,
               onContextMenu: l,
               style: q,
-              "data-type": _.S.STICKER,
+              "data-type": p.S.STICKER,
               "data-id": e.sticker.id,
               children: [(0, r.jsx)(c.nn4, {
                 children: (0, E.Co)(e.sticker)

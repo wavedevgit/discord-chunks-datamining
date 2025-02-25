@@ -34,11 +34,11 @@ var a = n(161796),
     return i(e, null, [{
       key: "create",
       value: function(e) {
-        if (e.outputRange && "string" == typeof e.outputRange[0]) return _(e);
+        if (e.outputRange && "string" == typeof e.outputRange[0]) return p(e);
         var t = e.outputRange;
-        m("outputRange", t);
+        g("outputRange", t);
         var n = e.inputRange;
-        m("inputRange", n), g(n), s(n.length === t.length, "inputRange (" + n.length + ") and outputRange (" + t.length + ") must have the same length");
+        g("inputRange", n), m(n), s(n.length === t.length, "inputRange (" + n.length + ") and outputRange (" + t.length + ") must have the same length");
         var r = e.easing || l,
           i = "extend";
         void 0 !== e.extrapolateLeft ? i = e.extrapolateLeft : void 0 !== e.extrapolate && (i = e.extrapolate);
@@ -72,9 +72,9 @@ function d(e) {
 }
 var f = /[0-9\.-]+/g;
 
-function _(e) {
+function p(e) {
   var t = e.outputRange;
-  s(t.length >= 2, "Bad output range"), p(t = t.map(d));
+  s(t.length >= 2, "Bad output range"), _(t = t.map(d));
   var n = t[0].match(f).map(function() {
     return []
   });
@@ -98,7 +98,7 @@ function _(e) {
   }
 }
 
-function p(e) {
+function _(e) {
   for (var t = e[0].replace(f, ""), n = 1; n < e.length; ++n) s(t === e[n].replace(f, ""), "invalid pattern " + e[0] + " and " + e[n])
 }
 
@@ -107,12 +107,12 @@ function h(e, t) {
   return n - 1
 }
 
-function g(e) {
+function m(e) {
   s(e.length >= 2, "inputRange must have at least 2 elements");
   for (var t = 1; t < e.length; ++t) s(e[t] >= e[t - 1], "inputRange must be monotonically increasing " + e)
 }
 
-function m(e, t) {
+function g(e, t) {
   s(t.length >= 2, e + " must have at least 2 elements"), s(2 !== t.length || t[0] !== -1 / 0 || t[1] !== 1 / 0, e + "cannot be ]-infinity;+infinity[ " + t)
 }
 e.exports = c

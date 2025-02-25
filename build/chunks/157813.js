@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -32,7 +32,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     className: t,
     isVertical: n
@@ -51,23 +51,23 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     channelId: t,
     className: n,
     isParticipantsOpen: o,
     isVertical: s = !1,
-    hideTooltip: p = !1
+    hideTooltip: _ = !1
   } = e;
 
   function h() {
     l.Z.toggleParticipants(t, !o)
   }
-  let g = i.useCallback(e => {
+  let m = i.useCallback(e => {
     let {
       className: t
     } = e;
-    return o ? (0, r.jsx)(_, {
+    return o ? (0, r.jsx)(p, {
       className: t,
       isVertical: s
     }) : (0, r.jsx)(f, {
@@ -79,7 +79,7 @@ function p(e) {
     label: o ? u.NW.string(u.t.QJMRUF) : u.NW.string(u.t.vZiwmJ),
     className: a()(d.participantsButton, n),
     onClick: h,
-    iconComponent: g,
-    shouldShowTooltip: !p
+    iconComponent: m,
+    shouldShowTooltip: !_
   })
 }

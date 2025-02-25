@@ -32,19 +32,19 @@ function f() {
   u = !0
 }
 
-function _() {
+function p() {
   c.bogoPromotion = null, u = !1
 }
 
-function p(e) {
+function _(e) {
   let {
     activePromotion: t
   } = e;
   c.bogoPromotion = t, d = Date.now(), u = !1
 }
 let h = !1,
-  g = null,
-  m = [],
+  m = null,
+  g = [],
   E = null;
 
 function v(e) {
@@ -52,7 +52,7 @@ function v(e) {
     activeOutboundPromotions: t,
     consumedInboundPromotionId: n
   } = e;
-  m = t, g = Date.now(), h = !1, c.hasFetchedConsumedInboundPromotionId || (c.hasFetchedConsumedInboundPromotionId = !0, c.consumedInboundPromotionId = n)
+  g = t, m = Date.now(), h = !1, c.hasFetchedConsumedInboundPromotionId || (c.hasFetchedConsumedInboundPromotionId = !0, c.consumedInboundPromotionId = n)
 }
 
 function b() {
@@ -60,29 +60,29 @@ function b() {
 }
 
 function y() {
-  m = [], h = !1
+  g = [], h = !1
 }
 
 function O() {
   let e = null;
-  for (let t of m)(null == e || new Date(t.startDate) > new Date(e)) && (e = t.startDate);
+  for (let t of g)(null == e || new Date(t.startDate) > new Date(e)) && (e = t.startDate);
   return e
 }
 
 function S() {
-  if (0 === m.length) return !1;
+  if (0 === g.length) return !1;
   let e = O();
   null != e && (E = e)
 }
 
 function I() {
-  if (0 === m.length) return !1;
+  if (0 === g.length) return !1;
   let e = O();
   null != e && (E = e, c.lastSeenOutboundPromotionStartDate = e)
 }
 
 function T() {
-  c = l(), h = !1, g = null, u = !1, d = null, m = []
+  c = l(), h = !1, m = null, u = !1, d = null, g = []
 }
 
 function N() {
@@ -94,7 +94,7 @@ class A extends(r = i.ZP.PersistedStore) {
     null != e && (c = e), this.waitFor(a.Z), this.syncWith([a.Z], N)
   }
   get outboundPromotions() {
-    return m
+    return g
   }
   get lastSeenOutboundPromotionStartDate() {
     return c.lastSeenOutboundPromotionStartDate
@@ -103,7 +103,7 @@ class A extends(r = i.ZP.PersistedStore) {
     return E
   }
   get lastFetchedActivePromotions() {
-    return g
+    return m
   }
   get isFetchingActiveOutboundPromotions() {
     return h
@@ -132,9 +132,9 @@ let C = new A(o.Z, {
   ACTIVE_OUTBOUND_PROMOTIONS_FETCH_SUCCESS: v,
   ACTIVE_OUTBOUND_PROMOTIONS_FETCH: b,
   ACTIVE_OUTBOUND_PROMOTIONS_FETCH_FAIL: y,
-  ACTIVE_BOGO_PROMOTION_FETCH_SUCCESS: p,
+  ACTIVE_BOGO_PROMOTION_FETCH_SUCCESS: _,
   ACTIVE_BOGO_PROMOTION_FETCH: f,
-  ACTIVE_BOGO_PROMOTION_FETCH_FAIL: _,
+  ACTIVE_BOGO_PROMOTION_FETCH_FAIL: p,
   OUTBOUND_PROMOTION_NOTICE_DISMISS: S,
   OUTBOUND_PROMOTIONS_SEEN: I,
   LOGOUT: T

@@ -14,9 +14,9 @@ var i = n(278074),
   u = n(699516),
   d = n(594174),
   f = n(981631),
-  _ = n(388032);
+  p = n(388032);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,13 +32,13 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -58,8 +58,8 @@ function m(e, t) {
 function E(e) {
   let {
     user: t,
-    color: p,
-    guildId: g,
+    color: _,
+    guildId: m,
     channelId: E,
     onBlock: v,
     onIgnore: b,
@@ -82,11 +82,11 @@ function E(e) {
   }, () => "default").with({
     isStealthRemediationEnabled: !0,
     isBlocked: !1
-  }, () => "danger").otherwise(() => p);
+  }, () => "danger").otherwise(() => _);
   return T ? null : (0, r.jsx)(a.sNh, {
     id: "block",
     color: null != C ? C : "default",
-    label: N ? _.NW.string(_.t.XyHpKC) : _.NW.string(_.t.l4EmaW),
+    label: N ? p.NW.string(p.t.XyHpKC) : p.NW.string(p.t.l4EmaW),
     action: N ? () => {
       null == y || y(), s.Z.unblockUser(I, {
         location: O
@@ -96,9 +96,9 @@ function E(e) {
         let {
           default: e
         } = await Promise.all([n.e("97652"), n.e("25726")]).then(n.bind(n, 478923));
-        return n => (0, r.jsx)(e, m(h({}, n), {
+        return n => (0, r.jsx)(e, g(h({}, n), {
           user: t,
-          guildId: g,
+          guildId: m,
           channelId: E,
           onBlock: v,
           onIgnore: b,

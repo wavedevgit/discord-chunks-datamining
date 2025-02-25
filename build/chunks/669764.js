@@ -51,15 +51,15 @@ function f(e) {
       screenshot_urls: u,
       cover_image_url: d,
       first_release_date: f,
-      summary_localized: _,
-      publisher_names: p,
+      summary_localized: p,
+      publisher_names: _,
       developer_names: h
     } = e;
     s.set(t, {
       applicationId: t,
       name: n,
       summary: r,
-      summaryLocalized: _,
+      summaryLocalized: p,
       websites: i,
       themes: o,
       genres: a,
@@ -68,13 +68,13 @@ function f(e) {
       screenshots: u,
       coverImageUrl: d,
       firstReleaseDate: f,
-      publishers: null != p ? p : [],
+      publishers: null != _ ? _ : [],
       developers: null != h ? h : []
     })
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     applicationIds: t
   } = e;
@@ -82,7 +82,7 @@ function _(e) {
     l.delete(e), c.add(e)
   })
 }
-class p extends(r = i.ZP.Store) {
+class _ extends(r = i.ZP.Store) {
   canFetch(e) {
     return !l.has(e) && !c.has(e) && !s.has(e)
   }
@@ -109,10 +109,10 @@ class p extends(r = i.ZP.Store) {
     return null == r ? null : null == t ? r : "".concat(r, "?width=").concat(t.width, "&height=").concat(t.height)
   }
 }
-a(p, "displayName", "DetectableGameSupplementalStore");
-let h = new p(o.Z, {
+a(_, "displayName", "DetectableGameSupplementalStore");
+let h = new _(o.Z, {
   LOGOUT: u,
   DETECTABLE_GAME_SUPPLEMENTAL_FETCH: d,
   DETECTABLE_GAME_SUPPLEMENTAL_FETCH_SUCCESS: f,
-  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_FAILURE: _
+  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_FAILURE: p
 })

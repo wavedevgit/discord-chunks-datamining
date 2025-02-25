@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -66,7 +66,7 @@ function f(e, t) {
   return i
 }
 
-function _(e) {
+function p(e) {
   var {
     className: t,
     color: n = i.Z.unsafe_rawColors.BRAND_500.css

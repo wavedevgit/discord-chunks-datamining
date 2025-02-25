@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   P: () => s,
-  Z: () => _
+  Z: () => p
 });
 var r, i = n(442837),
   o = n(570140);
@@ -37,7 +37,7 @@ class f extends(r = i.ZP.Store) {
   }
 }
 a(f, "displayName", "DomainMigrationStore");
-let _ = new f(o.Z, {
+let p = new f(o.Z, {
   DOMAIN_MIGRATION_START: c,
   DOMAIN_MIGRATION_FAILURE: u,
   DOMAIN_MIGRATION_SKIP: d

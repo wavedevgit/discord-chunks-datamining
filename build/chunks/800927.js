@@ -48,12 +48,12 @@ function u(e, t) {
 }
 let d = /\n{2,}$/,
   f = /(?:^|\n)( *)$/,
-  _ = "(?:[*-]|\\d+\\.)",
-  p = "(%INDENT_CAPTURE_PATTERN%)(" + _ + ") +",
-  h = RegExp("^" + p.replace("%INDENT_CAPTURE_PATTERN%", " *")),
-  g = p + "[^\\n]*(?:\\n(?!%INDENT_CAPTURE_PATTERN%" + _ + " )[^\\n]*)*(\n|$)",
-  m = / *\n$/,
-  E = RegExp("^( *)(" + _ + ") [\\s\\S]+?(?:\\n(?! )(?!\\1" + _ + " )|$)"),
+  p = "(?:[*-]|\\d+\\.)",
+  _ = "(%INDENT_CAPTURE_PATTERN%)(" + p + ") +",
+  h = RegExp("^" + _.replace("%INDENT_CAPTURE_PATTERN%", " *")),
+  m = _ + "[^\\n]*(?:\\n(?!%INDENT_CAPTURE_PATTERN%" + p + " )[^\\n]*)*(\n|$)",
+  g = / *\n$/,
+  E = RegExp("^( *)(" + p + ") [\\s\\S]+?(?:\\n(?! )(?!\\1" + p + " )|$)"),
   v = /^[ \t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]+$/,
   b = 10,
   y = 1,
@@ -74,9 +74,9 @@ let d = /\n{2,}$/,
         s = e[0].replace(d, "\n"),
         c = h.exec(s),
         f = null != c ? c[0].length : 0,
-        _ = null != c ? c[1].length : 0,
-        p = " {".concat(_, ",").concat(_ + 1, "}"),
-        E = RegExp(g.replaceAll("%INDENT_CAPTURE_PATTERN%", p), "gm"),
+        p = null != c ? c[1].length : 0,
+        _ = " {".concat(p, ",").concat(p + 1, "}"),
+        E = RegExp(m.replaceAll("%INDENT_CAPTURE_PATTERN%", _), "gm"),
         v = RegExp("^ {1," + f + "}", "gm"),
         b = s.match(E);
       i()(null != b, "markup list items can not be parsed.");
@@ -93,11 +93,11 @@ let d = /\n{2,}$/,
           let c = n.inline,
             d = n._list,
             f = n._listLevel;
-          n._list = !0, n._listLevel = (null != f ? f : 0) + 1, s ? (n.inline = !1, i = o.replace(m, "\n\n")) : (n.inline = !0, i = o.replace(m, ""));
-          let _ = S(t(i, u(l({}, n), {
+          n._list = !0, n._listLevel = (null != f ? f : 0) + 1, s ? (n.inline = !1, i = o.replace(g, "\n\n")) : (n.inline = !0, i = o.replace(g, ""));
+          let p = S(t(i, u(l({}, n), {
             allowHeading: !1
           })));
-          return n.inline = c, n._list = d, n._listLevel = f, _
+          return n.inline = c, n._list = d, n._listLevel = f, p
         })
       }
     }

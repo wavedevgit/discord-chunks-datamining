@@ -12,10 +12,10 @@ function u(e, t) {
     u = !n && i(e),
     d = !n && !u && a(e),
     f = !n && !u && !d && l(e),
-    _ = n || u || d || f,
-    p = _ ? r(e.length, String) : [],
-    h = p.length;
-  for (var g in e)(t || c.call(e, g)) && !(_ && ("length" == g || d && ("offset" == g || "parent" == g) || f && ("buffer" == g || "byteLength" == g || "byteOffset" == g) || s(g, h))) && p.push(g);
-  return p
+    p = n || u || d || f,
+    _ = p ? r(e.length, String) : [],
+    h = _.length;
+  for (var m in e)(t || c.call(e, m)) && !(p && ("length" == m || d && ("offset" == m || "parent" == m) || f && ("buffer" == m || "byteLength" == m || "byteOffset" == m) || s(m, h))) && _.push(m);
+  return _
 }
 e.exports = u

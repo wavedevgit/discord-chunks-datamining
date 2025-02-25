@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,18 +47,18 @@ function p(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e) {
+function m(e) {
   let {
     user: t,
     location: f = "ContextMenu",
-    onFriendRequestSent: p,
-    onFriendRemove: g,
-    appContext: m
+    onFriendRequestSent: _,
+    onFriendRemove: m,
+    appContext: g
   } = e, {
     id: E,
     username: v,
@@ -74,7 +74,7 @@ function g(e) {
       let {
         ConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 878678));
-      return t => (0, r.jsx)(e, h(_({
+      return t => (0, r.jsx)(e, h(p({
         header: d.NW.formatToPlainString(d.t.fPLvZW, {
           name: v
         }),
@@ -83,7 +83,7 @@ function g(e) {
         onConfirm: () => {
           s.Z.removeFriend(E, {
             location: f
-          }), N(!1), null == g || g()
+          }), N(!1), null == m || m()
         }
       }, t), {
         children: (0, r.jsx)(a.Text, {
@@ -94,7 +94,7 @@ function g(e) {
         })
       }))
     }, {
-      contextKey: null != m ? (0, a.VnL)(m) : void 0
+      contextKey: null != g ? (0, a.VnL)(g) : void 0
     })
   }
   if (S) return (0, r.jsx)(a.sNh, {
@@ -113,7 +113,7 @@ function g(e) {
           context: {
             location: f
           }
-        }), N(!0), null == p || p())
+        }), N(!0), null == _ || _())
       },
       disabled: I || T && !S
     })

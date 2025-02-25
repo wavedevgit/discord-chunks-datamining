@@ -21,11 +21,11 @@ function u(e, t, n) {
 let d = new l.Z("GuildAvailabilityStore"),
   f = new Set;
 
-function _(e) {
+function p(e) {
   f = new Set(e.unavailableGuilds), e.unavailableGuilds.length > 0 && d.warn("".concat(e.unavailableGuilds.length, " guilds are unavailable on connection open: ").concat(e.unavailableGuilds))
 }
 
-function p(e) {
+function _(e) {
   if (!f.has(e.guildId)) return !1;
   f.delete(e.guildId)
 }
@@ -37,12 +37,12 @@ function h(e) {
   null != t && null != t.name && (n = t.name), d.warn("Guild has gone unavailable: ".concat(e.guildId, " (").concat(n, ")")), f.add(e.guildId)
 }
 
-function g(e) {
+function m(e) {
   if (!f.has(e.guild.id)) return !1;
   f.delete(e.guild.id), d.info("Guild has become available: ".concat(e.guild.id))
 }
 
-function m(e) {
+function g(e) {
   !0 !== e.guild.unavailable && f.delete(e.guild.id)
 }
 class E extends(r = a.ZP.Store) {
@@ -64,11 +64,11 @@ class E extends(r = a.ZP.Store) {
 }
 u(E, "displayName", "GuildAvailabilityStore");
 let v = new E(s.Z, {
-  CONNECTION_OPEN: _,
-  OVERLAY_INITIALIZE: _,
+  CONNECTION_OPEN: p,
+  OVERLAY_INITIALIZE: p,
   GUILD_UNAVAILABLE: h,
-  GUILD_DELETE: m,
-  GUILD_CREATE: g,
-  GUILD_UPDATE: g,
-  GUILD_GEO_RESTRICTED: p
+  GUILD_DELETE: g,
+  GUILD_CREATE: m,
+  GUILD_UPDATE: m,
+  GUILD_GEO_RESTRICTED: _
 })

@@ -13,9 +13,9 @@ var r = n(594190),
   u = n(709054),
   d = n(356659),
   f = n(981631),
-  _ = n(388032);
+  p = n(388032);
 
-function p(e) {
+function _(e) {
   var t, n;
   if (null != e) {
     let {
@@ -42,11 +42,11 @@ function h(e) {
   let {
     sourceName: t,
     sourceApplicationId: n
-  } = p(e), r = l.Z.getChannelId(), i = [a.default.getId()];
+  } = _(e), r = l.Z.getChannelId(), i = [a.default.getId()];
   return null != r && (i = Object.keys(c.Z.getVoiceStatesForChannel(r))), {
     id: u.default.fromTimestamp(Date.now()),
     version: d.Bg,
-    applicationName: null != t ? t : _.NW.string(_.t.qtSJxc),
+    applicationName: null != t ? t : p.NW.string(p.t.qtSJxc),
     applicationId: n,
     users: i,
     clipMethod: "manual",

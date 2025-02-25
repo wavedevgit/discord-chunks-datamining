@@ -65,19 +65,19 @@ let c = function(e, t) {
     }
     let [d, f] = o.M8.isRange(n) ? o.M8.edges(n) : o.bN.edges(e, n);
     if (null != i || null != a) {
-      var _, p, h;
+      var p, _, h;
       if (s) {
-        let t = null !== (_ = o.bN.before(e, d, {
+        let t = null !== (p = o.bN.before(e, d, {
           distance: i,
           unit: a
-        })) && void 0 !== _ ? _ : o.bN.start(e, []);
+        })) && void 0 !== p ? p : o.bN.start(e, []);
         if ("character" === a && (null != i ? i : 1) === 1 && o.C0.equals(d.path, f.path)) {
           let n = o.bN.leaf(e, d.path),
             r = null != n ? n[0].text : "";
-          r.length > 0 && null != r[r.length - 1].match(/[\u0E00-\u0E7F]/) && (t = null !== (p = o.bN.before(e, d, {
+          r.length > 0 && null != r[r.length - 1].match(/[\u0E00-\u0E7F]/) && (t = null !== (_ = o.bN.before(e, d, {
             distance: i,
             unit: "offset"
-          })) && void 0 !== p ? p : o.bN.start(e, []))
+          })) && void 0 !== _ ? _ : o.bN.start(e, []))
         }
         d = t
       } else f = null !== (h = o.bN.after(e, f, {

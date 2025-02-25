@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(91159),
   d = n(496675),
   f = n(306680),
-  _ = n(446183),
-  p = n(677281),
+  p = n(446183),
+  _ = n(677281),
   h = n(709054),
-  g = n(765104),
-  m = n(477291),
+  m = n(765104),
+  g = n(477291),
   E = n(478758),
   v = n(789707),
   b = n(981631),
@@ -71,8 +71,8 @@ function A(e) {
     guildId: S,
     unread: T,
     onClick: A
-  } = e, [C, R] = i.useState(!1), P = (0, u.Ye)(h.default.extractTimestamp(t.startId)), D = (0, o.e7)([g.Z], () => g.Z.summaryFeedback(t)), w = (e, n) => {
-    e.stopPropagation(), (0, m.Z)({
+  } = e, [C, R] = i.useState(!1), P = (0, u.Ye)(h.default.extractTimestamp(t.startId)), D = (0, o.e7)([m.Z], () => m.Z.summaryFeedback(t)), w = (e, n) => {
+    e.stopPropagation(), (0, g.Z)({
       summary: t,
       channel: f,
       rating: n
@@ -141,14 +141,14 @@ function A(e) {
       className: O.feedbackContainer,
       children: [(0, r.jsx)(a.P3F, {
         onClick: e => w(e, y.aZ.GOOD),
-        children: (0, r.jsx)(p.Z, {
+        children: (0, r.jsx)(_.Z, {
           className: O.thumbIcon,
           width: 12,
           height: 12
         })
       }), (0, r.jsx)(a.P3F, {
         onClick: e => w(e, y.aZ.BAD),
-        children: (0, r.jsx)(_.Z, {
+        children: (0, r.jsx)(p.Z, {
           className: O.thumbIcon,
           width: 12,
           height: 12

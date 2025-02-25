@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  m: () => _,
+  m: () => p,
   q: () => c
 }), n(47120), n(230036), n(301563), n(411104);
 var r = n(836560),
@@ -69,7 +69,7 @@ class f extends u {
     }), this._parsedMessages = this._createProxy(this._context)
   }
 }
-class _ extends r.EventEmitter {
+class p extends r.EventEmitter {
   updateMessagesForExperiment(e, t) {
     let n = this._fetchMessages(e);
     if (n instanceof Promise) {

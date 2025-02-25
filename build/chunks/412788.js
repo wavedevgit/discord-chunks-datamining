@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(653041);
 var r, i = n(512722),
   o = n.n(i),
@@ -47,9 +47,9 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class _ extends(r = a.ZP.Store) {
+class p extends(r = a.ZP.Store) {
   static clearAll() {
-    _.allStores.forEach(e => e.clear())
+    p.allStores.forEach(e => e.clear())
   }
   get persistKey() {
     return "".concat(this.getClass().displayName, "-snapshot")
@@ -71,7 +71,7 @@ class _ extends(r = a.ZP.Store) {
     super(l.Z, f(u({}, e), {
       CLEAR_CACHES: () => (this.clear(), !1),
       WRITE_CACHES: () => (this.save(), !1)
-    }), t), o()(null != this.getClass().displayName, "Snapshot stores need a display name"), o()(!("CLEAR_CACHES" in e), "SnapshotStores cannot use the 'CLEAR_CACHES' action"), o()(!("WRITE_CACHES" in e), "SnapshotStores cannot use the 'WRITE_CACHES' action"), _.allStores.push(this)
+    }), t), o()(null != this.getClass().displayName, "Snapshot stores need a display name"), o()(!("CLEAR_CACHES" in e), "SnapshotStores cannot use the 'CLEAR_CACHES' action"), o()(!("WRITE_CACHES" in e), "SnapshotStores cannot use the 'WRITE_CACHES' action"), p.allStores.push(this)
   }
 }
-c(_, "allStores", [])
+c(p, "allStores", [])

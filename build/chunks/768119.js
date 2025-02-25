@@ -12,9 +12,9 @@ var r, i = n(392711),
   u = n(952537),
   d = n(592125),
   f = n(430824),
-  _ = n(981631);
+  p = n(981631);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,10 +23,10 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = .05,
-  g = {};
+  m = {};
 
-function m(e) {
-  return null == g[e] && (g[e] = {
+function g(e) {
+  return null == m[e] && (m[e] = {
     searchId: e,
     searchType: E(e),
     isIndexing: !1,
@@ -44,17 +44,17 @@ function m(e) {
     resultsBlocked: 0,
     showBlockedResults: !1,
     showNoResultsAlt: !1
-  }), g[e]
+  }), m[e]
 }
 
 function E(e) {
-  return e === _.aib.DMS ? _.aib.DMS : e === _.I_8 ? _.aib.FAVORITES : null != f.Z.getGuild(e) ? _.aib.GUILD : null != d.Z.getChannel(e) ? _.aib.CHANNEL : null
+  return e === p.aib.DMS ? p.aib.DMS : e === p.I_8 ? p.aib.FAVORITES : null != f.Z.getGuild(e) ? p.aib.GUILD : null != d.Z.getChannel(e) ? p.aib.CHANNEL : null
 }
 
 function v(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
   if (null == e) return n;
-  let r = g[e];
+  let r = m[e];
   return null == r ? n : t(r)
 }
 let b = "SearchStore",
@@ -68,14 +68,14 @@ function T(e) {
     searchId: t,
     editorState: n
   } = e;
-  m(t).editorState = n
+  g(t).editorState = n
 }
 
 function N(e) {
   let {
     searchId: t
   } = e;
-  null != t && m(t)
+  null != t && g(t)
 }
 
 function A(e) {
@@ -84,23 +84,23 @@ function A(e) {
     queryString: r,
     searchId: i,
     query: a
-  } = e, s = m(i);
+  } = e, s = g(i);
   null != s.searchFetcher && (s.searchFetcher.cancel(), s.searchFetcher = null);
   let f = i,
-    p = s.searchType,
-    h = new c.ZP(f, p, a);
+    _ = s.searchType,
+    h = new c.ZP(f, _, a);
   s.searchFetcher = h, s.isSearching = !0, s.rawResults = null, s.analyticsId = null, s.query = o().omit(a, "type"), s.offset = null !== (n = a.offset) && void 0 !== n ? n : 0, s.showBlockedResults = !1, C({
     type: "SEARCH_ADD_HISTORY",
     searchId: i,
     query: r
   });
-  let g = i === _.I_8 ? null === (t = d.Z.getChannel(f)) || void 0 === t ? void 0 : t.guild_id : p === _.aib.GUILD ? i : null;
+  let m = i === p.I_8 ? null === (t = d.Z.getChannel(f)) || void 0 === t ? void 0 : t.guild_id : _ === p.aib.GUILD ? i : null;
   h.fetch(e => {
     var t, n;
     l.Z.dispatch({
       type: "SEARCH_FINISH",
       searchId: i,
-      guildId: g,
+      guildId: m,
       analyticsId: e.body.analytics_id,
       totalResults: e.body.total_results,
       messages: e.body.messages,
@@ -119,7 +119,7 @@ function A(e) {
     l.Z.dispatch({
       type: "SEARCH_FINISH",
       searchId: i,
-      guildId: g,
+      guildId: m,
       messages: [],
       threads: [],
       members: [],
@@ -148,28 +148,28 @@ function C(e) {
 function R(e) {
   let {
     searchId: t
-  } = e, n = m(t);
+  } = e, n = g(t);
   n.isIndexing = !0, n.isHistoricalIndexing = !0, n.isSearching = !1
 }
 
 function P(e) {
   let {
     searchId: t
-  } = e, n = m(t);
+  } = e, n = g(t);
   n.isSearching = !1, n.isIndexing = !1, n.isHistoricalIndexing = e.doingHistoricalIndex || !1, n.searchFetcher = null, n.totalResults = e.totalResults, n.hasError = e.hasError, n.analyticsId = e.analyticsId, n.documentsIndexed = null != e.documentsIndexed ? e.documentsIndexed : 0, n.showNoResultsAlt = Math.random() < h, n.rawResults = e.messages, null == n.query && (n.hasError = !0)
 }
 
 function D(e) {
   let {
     searchId: t
-  } = e, n = g[t];
+  } = e, n = m[t];
   if (null == n) return !1;
-  null != n.searchFetcher && n.searchFetcher.cancel(), delete g[t]
+  null != n.searchFetcher && n.searchFetcher.cancel(), delete m[t]
 }
 
 function w(e) {
   if (e === I) return !1;
-  null != e && null == g[e] && m(e), I = e
+  null != e && null == m[e] && g(e), I = e
 }
 
 function L(e) {
@@ -217,12 +217,12 @@ function U(e) {
     searchId: t,
     showBlocked: n
   } = e;
-  m(t).showBlockedResults = n
+  g(t).showBlockedResults = n
 }
 
 function G() {
-  Object.keys(g).forEach(e => {
-    null != g[e] && (g[e].searchType = E(e))
+  Object.keys(m).forEach(e => {
+    null != m[e] && (m[e].searchType = E(e))
   })
 }
 
@@ -324,7 +324,7 @@ class V extends(r = a.ZP.Store) {
     }
   }
 }
-p(V, "displayName", "SearchStore");
+_(V, "displayName", "SearchStore");
 let Z = new V(l.Z, {
   SEARCH_START: A,
   SEARCH_INDEXING: R,

@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, o, a, s, l, c, u, d, f, _, p, h, g, m, E, v;
+let r, i, o, a, s, l, c, u, d, f, p, _, h, m, g, E, v;
 n.d(t, {
   Z: () => eS
 }), n(47120);
@@ -56,13 +56,13 @@ function x(e, t) {
 let M = new Map;
 
 function j() {
-  r = !1, i = !1, o = new Map, a = new Map, s = new Map, l = 0, c = new Set, u = new Set, d = new Set, f = new Set, M = new Map, p = new Map, h = new Map, g = new Map, m = null, E = new Map, _ = new Set, v = new Map
+  r = !1, i = !1, o = new Map, a = new Map, s = new Map, l = 0, c = new Set, u = new Set, d = new Set, f = new Set, M = new Map, _ = new Map, h = new Map, m = new Map, g = null, E = new Map, p = new Set, v = new Map
 }
 
 function k(e, t) {
   var n, r, i, o;
   if (null != t.userStatus)
-    for (let a of Object.values(null !== (r = null === (n = t.userStatus) || void 0 === n ? void 0 : n.progress) && void 0 !== r ? r : {})) !(0, y.isNil)(a) && O.T.DESKTOP.has(a.eventName) && ((null === (i = a.heartbeat) || void 0 === i ? void 0 : i.lastBeatAt) != null ? _.add(e) : (null === (o = a.heartbeat) || void 0 === o ? void 0 : o.lastBeatAt) == null && _.delete(e))
+    for (let a of Object.values(null !== (r = null === (n = t.userStatus) || void 0 === n ? void 0 : n.progress) && void 0 !== r ? r : {})) !(0, y.isNil)(a) && O.T.DESKTOP.has(a.eventName) && ((null === (i = a.heartbeat) || void 0 === i ? void 0 : i.lastBeatAt) != null ? p.add(e) : (null === (o = a.heartbeat) || void 0 === o ? void 0 : o.lastBeatAt) == null && p.delete(e))
 }
 
 function U(e, t) {
@@ -74,8 +74,8 @@ function U(e, t) {
 }
 
 function G(e, t) {
-  let n = new Map(p);
-  n.set(e, t), p = n
+  let n = new Map(_);
+  n.set(e, t), _ = n
 }
 
 function B(e, t) {
@@ -117,7 +117,7 @@ function V(e, t) {
 }
 
 function Z(e) {
-  null != g.get(e) && (g = new Map(g)).delete(e)
+  null != m.get(e) && (m = new Map(m)).delete(e)
 }
 
 function H() {
@@ -164,7 +164,7 @@ function X(e) {
     streamKey: n,
     userStatus: r
   } = e;
-  _.add(t), U(t, {
+  p.add(t), U(t, {
     userStatus: r
   }), Z(n)
 }
@@ -174,7 +174,7 @@ function J(e) {
     questId: t,
     streamKey: n
   } = e;
-  null == g.get(n) && (g = new Map(g)).set(n, {
+  null == m.get(n) && (m = new Map(m)).set(n, {
     questId: t,
     streamKey: n,
     firstFailedAt: Date.now()
@@ -281,14 +281,14 @@ function ef(e) {
   }), eu(t.questId)
 }
 
-function e_(e) {
+function ep(e) {
   let {
     questId: t
   } = e;
   eu(t)
 }
 
-function ep(e) {
+function e_(e) {
   let {
     streamKey: t
   } = e;
@@ -308,20 +308,20 @@ function eh(e) {
   }), 0 === Object.keys(r.progress).length && M.has(r.questId) && (n.log("Removing optimistic progress for ".concat(r.questId)), M.delete(r.questId))
 }
 
-function eg(e) {
+function em(e) {
   let {
     previewQuestUserStatus: t
   } = e;
   U(t.questId, {
     userStatus: t
-  }), null == t.claimedAt && (p = new Map(p)).delete(t.questId), null == t.enrolledAt && ((E = new Map(E)).delete(t.questId), C.ZP.getState().resetQuest(t.questId))
+  }), null == t.claimedAt && (_ = new Map(_)).delete(t.questId), null == t.enrolledAt && ((E = new Map(E)).delete(t.questId), C.ZP.getState().resetQuest(t.questId))
 }
 
-function em(e) {
+function eg(e) {
   let {
     questId: t
   } = e;
-  m = m === t ? null : t
+  g = g === t ? null : t
 }
 
 function eE(e) {
@@ -381,7 +381,7 @@ class eO extends(b = I.ZP.Store) {
     return l
   }
   get questDeliveryOverride() {
-    return o.get(null != m ? m : "")
+    return o.get(null != g ? g : "")
   }
   get questToDeliverForPlacement() {
     return v
@@ -399,19 +399,19 @@ class eO extends(b = I.ZP.Store) {
     return f.has(e)
   }
   getRewardCode(e) {
-    return p.get(e)
+    return _.get(e)
   }
   getRewards(e) {
     return h.get(e)
   }
   getStreamHeartbeatFailure(e) {
-    return g.get(e)
+    return m.get(e)
   }
   getQuest(e) {
     return o.get(e)
   }
   isProgressingOnDesktop(e) {
-    return _.has(e)
+    return p.has(e)
   }
   selectedTaskPlatform(e) {
     var t;
@@ -446,12 +446,12 @@ let eS = new eO(T.Z, {
   QUESTS_CLAIM_REWARD_FAILURE: ec,
   QUESTS_DISMISS_CONTENT_BEGIN: ed,
   QUESTS_DISMISS_CONTENT_SUCCESS: ef,
-  QUESTS_DISMISS_CONTENT_FAILURE: e_,
+  QUESTS_DISMISS_CONTENT_FAILURE: ep,
   QUESTS_USER_STATUS_UPDATE: eh,
   STREAM_CLOSE: $,
-  QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: ep,
-  QUESTS_PREVIEW_UPDATE_SUCCESS: eg,
-  QUESTS_DELIVERY_OVERRIDE: em,
+  QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: e_,
+  QUESTS_PREVIEW_UPDATE_SUCCESS: em,
+  QUESTS_DELIVERY_OVERRIDE: eg,
   QUESTS_SELECT_TASK_PLATFORM: eE,
   QUESTS_UPDATE_OPTIMISTIC_PROGRESS: ev
 })

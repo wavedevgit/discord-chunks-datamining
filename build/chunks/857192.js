@@ -12,9 +12,9 @@ var r, i = n(261470),
   u = n(179658),
   d = n(70956),
   f = n(960048),
-  _ = n(981631);
+  p = n(981631);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,12 +30,12 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
-let g = (() => {
+let m = (() => {
     let e = "".concat(location.protocol, "//").concat(location.host, "/__development/source_maps"),
       t = null,
       n = new i.Z(5 * d.Z.Millis.SECOND, +d.Z.Millis.MINUTE, !0),
@@ -68,7 +68,7 @@ let g = (() => {
       }
     }
   })(),
-  m = "DeveloperOptionsStore",
+  g = "DeveloperOptionsStore",
   E = {
     trace: !1,
     canary: !1,
@@ -90,7 +90,7 @@ let g = (() => {
   v = h({}, E);
 
 function b(e) {
-  v = h({}, E, v, e), g.set(v.sourceMapsEnabled), l.K.set(m, v)
+  v = h({}, E, v, e), m.set(v.sourceMapsEnabled), l.K.set(g, v)
 }
 
 function y(e) {
@@ -106,15 +106,15 @@ function O(e) {
 
 function S(e) {
   var t;
-  let n = ((null !== (t = e.user.flags) && void 0 !== t ? t : 0) & _.xW$.STAFF) === _.xW$.STAFF,
+  let n = ((null !== (t = e.user.flags) && void 0 !== t ? t : 0) & p.xW$.STAFF) === p.xW$.STAFF,
     r = n || null != e.user.personal_connection_id;
-  n && g.set(v.sourceMapsEnabled), f.Z.setTags({
+  n && m.set(v.sourceMapsEnabled), f.Z.setTags({
     isStaff: r.toString()
   })
 }
 class I extends(r = a.ZP.Store) {
   initialize() {
-    let e = l.K.get(m);
+    let e = l.K.get(g);
     null != e && (v = h({}, E, e))
   }
   get isTracingRequests() {
@@ -169,7 +169,7 @@ class I extends(r = a.ZP.Store) {
     return Object.keys(v).map(e => v[e]), Object.keys(v).filter(e => v[e]).join(",")
   }
 }
-p(I, "displayName", "DeveloperOptionsStore");
+_(I, "displayName", "DeveloperOptionsStore");
 let T = new I(c.Z, {
   LOGOUT: O,
   CONNECTION_OPEN: S,

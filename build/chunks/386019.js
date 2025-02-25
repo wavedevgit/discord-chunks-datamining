@@ -18,14 +18,14 @@ function d(e) {
     user: n,
     activity: d,
     entry: f,
-    display: _,
-    onSelect: p,
+    display: p,
+    onSelect: _,
     onClose: h,
-    appContext: g
-  } = e, [m, E] = i.useState(!1), {
+    appContext: m
+  } = e, [g, E] = i.useState(!1), {
     analyticsLocations: v
   } = (0, s.ZP)(a.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), b = (0, l.Z)({
-    display: _,
+    display: p,
     user: n,
     activity: d,
     entry: f,
@@ -34,11 +34,11 @@ function d(e) {
     entry: f,
     activity: d,
     user: n,
-    display: _,
+    display: p,
     onClose: h,
     onAction: b,
-    isMenuOpen: m,
-    appContext: g
+    isMenuOpen: g,
+    appContext: m
   });
   return 0 === y.length || n.bot ? null : (0, r.jsx)(o.yRy, {
     align: "top",
@@ -61,7 +61,7 @@ function d(e) {
             t(), E(!1)
           },
           "aria-label": u.NW.string(u.t.PlAQz8),
-          onSelect: p,
+          onSelect: _,
           children: (0, r.jsx)(o.kSQ, {
             children: y
           })

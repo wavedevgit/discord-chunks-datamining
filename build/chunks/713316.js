@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  w: () => _
+  w: () => p
 });
 var r = n(200651);
 n(192379);
@@ -15,20 +15,20 @@ var i = n(512722),
   d = n(388032),
   f = n(704976);
 
-function _(e) {
+function p(e) {
   let {
     handleClose: t
   } = e, {
     skusById: n,
     selectedSkuId: i,
-    application: _
+    application: p
   } = (0, s.JL)();
-  o()(null != i, "Expected selectedSkuId"), o()(null != _, "Expected application");
-  let p = n[i];
-  o()(null != p, "Expected sku");
+  o()(null != i, "Expected selectedSkuId"), o()(null != p, "Expected application");
+  let _ = n[i];
+  o()(null != _, "Expected sku");
   let h = d.NW.formatToPlainString(d.t.wK0IbG, {
-    applicationName: _.name,
-    itemName: p.name
+    applicationName: p.name,
+    itemName: _.name
   });
   return (0, r.jsxs)(u.C3, {
     children: [(0, r.jsx)(c.Z, {}), (0, r.jsx)(l.Z, {}), (0, r.jsxs)("div", {

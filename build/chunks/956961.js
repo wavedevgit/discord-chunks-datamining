@@ -60,7 +60,7 @@ function I(e) {
           })
         })
       })]
-    }), 0 === p.length ? (0, r.jsx)(T, {}) : (0, r.jsx)(u.h21, {
+    }), 0 === p.length ? (0, r.jsx)(P, {}) : (0, r.jsx)(u.h21, {
       children: p.map(e => (0, r.jsx)(S, {
         messageReminder: e
       }, e.saveData.messageId))
@@ -183,6 +183,6 @@ function S(e) {
   })
 }
 
-function T() {
+function P() {
   return null
 }

@@ -3,7 +3,7 @@
 n.d(t, {
   ZP: () => b,
   iF: () => E,
-  iw: () => m,
+  iw: () => g,
   km: () => v
 });
 var r = n(877124),
@@ -68,7 +68,7 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if ("object" !== h(e) || null === e) return e;
   var n = e[Symbol.toPrimitive];
   if (void 0 !== n) {
@@ -79,23 +79,23 @@ function _(e, t) {
   return ("string" === t ? String : Number)(e)
 }
 
-function p(e) {
-  var t = _(e, "string");
+function _(e) {
+  var t = p(e, "string");
   return "symbol" === h(t) ? t : String(t)
 }
 
 function h(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let g = .3;
-var m = function(e) {
+let m = .3;
+var g = function(e) {
     return e.UNKNOWN = "UNKNOWN", e.NOT_STARTED = "NOT_STARTED", e.IN_PROGRESS = "IN_PROGRESS", e.COMPLETED = "COMPLETED", e
   }({}),
   E = function(e) {
     return e.NONE = "NONE", e.FETCHING = "FETCHING", e.SUCCESS = "SUCCESS", e.FAILURE = "FAILURE", e
   }({});
 let v = (0, i.F)()((0, r.tJ)((e, t) => ({
-    volume: g,
+    volume: m,
     muted: !1,
     transcriptEnabled: !1,
     captionEnabled: !1,
@@ -152,7 +152,7 @@ let v = (0, i.F)()((0, r.tJ)((e, t) => ({
             [n]: i
           } = r;
         e({
-          videoProgress: d(r, [n].map(p))
+          videoProgress: d(r, [n].map(_))
         })
       })
     },

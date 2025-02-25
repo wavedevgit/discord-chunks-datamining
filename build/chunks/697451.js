@@ -28,8 +28,8 @@ var r = n(200651),
   C = n(739566),
   I = n(421399),
   S = n(310423),
-  T = n(223021),
-  P = n(981631),
+  P = n(223021),
+  T = n(981631),
   A = n(388032),
   w = n(456536);
 
@@ -203,7 +203,7 @@ function W(e) {
     channel: l,
     messageId: a.id,
     interactionData: a.interactionData
-  }))), [l, a.id, a.interactionData]), R = (0, v.t0)(a), W = (null == R ? void 0 : R.type) === p.B8.APPLICATION_COMMAND && null != R.target_user ? new O.Z(R.target_user) : null, F = (null == R ? void 0 : R.type) === p.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage, U = (0, C.Sw)(null === (t = a.interaction) || void 0 === t ? void 0 : t.user, l), B = (0, C.Sw)(W, l), G = i.useMemo(() => e.compact ? (0, T.Z)((0, N.vc)(d()(), "LT")) : null, [e.compact]), H = (0, m.NX)(l.id), V = a.interaction;
+  }))), [l, a.id, a.interactionData]), R = (0, v.t0)(a), W = (null == R ? void 0 : R.type) === p.B8.APPLICATION_COMMAND && null != R.target_user ? new O.Z(R.target_user) : null, F = (null == R ? void 0 : R.type) === p.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage, U = (0, C.Sw)(null === (t = a.interaction) || void 0 === t ? void 0 : t.user, l), B = (0, C.Sw)(W, l), G = i.useMemo(() => e.compact ? (0, P.Z)((0, N.vc)(d()(), "LT")) : null, [e.compact]), H = (0, m.NX)(l.id), V = a.interaction;
   if (null == V || null == U) return null;
   let z = () => {
     let t = L(e, V.user, 0, U, e => E(e, V.user, [g.Z.AVATAR])),
@@ -248,7 +248,7 @@ function W(e) {
               }
               return i
             }(e, ["onClick"]);
-            if (i.type === P.uaV.CHAT_INPUT_COMMAND || i.type === P.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(u.P3F, k(Z({}, n), {
+            if (i.type === T.uaV.CHAT_INPUT_COMMAND || i.type === T.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(u.P3F, k(Z({}, n), {
               tag: "span",
               onClick: a,
               children: (0, r.jsxs)("div", {
@@ -271,7 +271,7 @@ function W(e) {
               return (0, r.jsx)(u.P3F, k(Z({}, n), {
                 tag: "span",
                 onClick: () => {
-                  j.S.dispatchToLastSubscribed(P.CkL.OPEN_APP_LAUNCHER, {
+                  j.S.dispatchToLastSubscribed(T.CkL.OPEN_APP_LAUNCHER, {
                     applicationId: i.applicationId
                   })
                 },
@@ -312,10 +312,10 @@ function W(e) {
         channel: l,
         guildId: l.guild_id,
         locationObject: {
-          page: l.isPrivate() ? P.ZY5.DM_CHANNEL : P.ZY5.GUILD_CHANNEL,
-          section: P.jXE.CHANNEL_TEXT_AREA,
-          object: P.qAy.APP_COMMAND,
-          objectType: P.Qqv.ACTIVITY
+          page: l.isPrivate() ? T.ZY5.DM_CHANNEL : T.ZY5.GUILD_CHANNEL,
+          section: T.jXE.CHANNEL_TEXT_AREA,
+          object: T.qAy.APP_COMMAND,
+          objectType: T.Qqv.ACTIVITY
         },
         openInPopout: !1,
         enableSelectedTextChannelInvite: !0,

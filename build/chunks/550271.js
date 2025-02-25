@@ -14,11 +14,11 @@ var i = n(496532),
   u = n(775259),
   d = n(283107),
   f = n(907120),
-  _ = n(533122),
-  p = n(874706),
+  p = n(533122),
+  _ = n(874706),
   h = n(137411),
-  g = n(775101),
-  m = n(933632),
+  m = n(775101),
+  g = n(933632),
   E = n(158188),
   v = n(66334),
   b = n(215635),
@@ -84,7 +84,7 @@ let P = e => {
         primaryTintColor: n
       }, R));
     case T.ZD.SKULL:
-      return (0, r.jsx)(g.F, A({
+      return (0, r.jsx)(m.F, A({
         primaryTintColor: n
       }, R));
     case T.ZD.TOADSTOOL:
@@ -93,11 +93,11 @@ let P = e => {
         secondaryTintColor: N
       }, R));
     case T.ZD.MOON:
-      return (0, r.jsx)(p.V, A({
+      return (0, r.jsx)(_.V, A({
         primaryTintColor: n
       }, R));
     case T.ZD.LIGHTNING:
-      return (0, r.jsx)(_.$, A({
+      return (0, r.jsx)(p.$, A({
         primaryTintColor: n
       }, R));
     case T.ZD.LEAF:
@@ -148,7 +148,7 @@ let P = e => {
         secondaryTintColor: N
       }, R));
     case T.ZD.SMOKE:
-      return (0, r.jsx)(m.l, A({
+      return (0, r.jsx)(g.l, A({
         primaryTintColor: n,
         secondaryTintColor: N
       }, R));

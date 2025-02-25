@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Q: () => g,
-  Z: () => m
+  Q: () => m,
+  Z: () => g
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -15,11 +15,11 @@ var i = n(399606),
   u = n(783684),
   d = n(785157),
   f = n(567949),
-  _ = n(552781),
-  p = n(952567),
+  p = n(552781),
+  _ = n(952567),
   h = n(807159);
 
-function g(e) {
+function m(e) {
   let {
     description: t,
     heading: n,
@@ -53,7 +53,7 @@ function g(e) {
     })]
   })
 }
-let m = function(e) {
+let g = function(e) {
   let {
     guild: t
   } = e, n = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), s = (0, l.Ek)(t, "GuildBoostingMarketingTopPerksCards");
@@ -65,17 +65,17 @@ let m = function(e) {
       children: c.NW.string(c.t.aGdB3N)
     }), (0, r.jsxs)("div", {
       className: d.topPerksCards,
-      children: [(0, r.jsx)(g, {
+      children: [(0, r.jsx)(m, {
         description: c.NW.string(c.t.HTvLGh),
         heading: c.NW.string(c.t.IpRQw8),
-        imgSrc: p,
+        imgSrc: _,
         label: s ? c.NW.string(u.Z.na6fmJ) : void 0
-      }), (0, r.jsx)(g, {
+      }), (0, r.jsx)(m, {
         description: c.NW.string(c.t.wOYbTk),
         heading: c.NW.string(c.t.G6jZo6),
-        imgSrc: n ? _ : f,
+        imgSrc: n ? p : f,
         label: s ? c.NW.string(u.Z.dyNT9v) : void 0
-      }), (0, r.jsx)(g, {
+      }), (0, r.jsx)(m, {
         description: c.NW.string(c.t.yCjoUF),
         heading: c.NW.string(c.t["/bX4Ji"]),
         imgSrc: h,

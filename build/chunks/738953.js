@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(100527),
   d = n(906732),
   f = n(680295),
-  _ = n(271383),
-  p = n(430824),
+  p = n(271383),
+  _ = n(430824),
   h = n(785717),
-  g = n(221292),
-  m = n(687158),
+  m = n(221292),
+  g = n(687158),
   E = n(326094),
   v = n(510659),
   b = n(113557),
@@ -102,12 +102,12 @@ function B(e) {
     channelId: U,
     messageId: B,
     roleId: F
-  }), Q = (0, a.e7)([p.Z], () => null != j ? p.Z.getGuild(j) : null), X = (0, a.e7)([_.ZP], () => null != j ? _.ZP.getMember(j, t.id) : null), J = i.useMemo(() => null != j ? {
+  }), Q = (0, a.e7)([_.Z], () => null != j ? _.Z.getGuild(j) : null), X = (0, a.e7)([p.ZP], () => null != j ? p.ZP.getMember(j, t.id) : null), J = i.useMemo(() => null != j ? {
     [j]: [t.id]
   } : {}, [j, t.id]);
   (0, c.$)(J);
   let $ = i.useRef(null),
-    ee = (0, m.ZP)(t.id, j),
+    ee = (0, g.ZP)(t.id, j),
     et = (0, l.Z)($),
     en = (0, v.$m)(),
     er = (0, s.q_F)({
@@ -130,7 +130,7 @@ function B(e) {
       id: "view-profile",
       label: x.NW.string(x.t["+Xp3ho"]),
       action: () => {
-        ei(), (0, g.pQ)(k({
+        ei(), (0, m.pQ)(k({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: K
         }, q))

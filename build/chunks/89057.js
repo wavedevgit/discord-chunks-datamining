@@ -16,31 +16,31 @@ var i = n(120356),
   u = n(600164),
   d = n(63063),
   f = n(211242),
-  _ = n(981631),
-  p = n(388032),
+  p = n(981631),
+  _ = n(388032),
   h = n(22313),
-  g = n(51125),
-  m = n(47268);
+  m = n(51125),
+  g = n(47268);
 
 function E(e) {
   let {
     className: t
-  } = e, n = (0, c.ZP)(), i = (0, s.wj)(n) ? g : m;
+  } = e, n = (0, c.ZP)(), i = (0, s.wj)(n) ? m : g;
   return (0, r.jsxs)("div", {
     className: o()(h.container, t),
     children: [(0, r.jsx)(l.X6q, {
       className: h.header,
       variant: "heading-xl/semibold",
-      children: p.NW.string(p.t.vwMEHR)
+      children: _.NW.string(_.t.vwMEHR)
     }), (0, r.jsxs)(l.Text, {
       className: h.description,
       variant: "text-md/normal",
       color: "header-secondary",
       children: [(0, r.jsx)("p", {
-        children: p.NW.string(p.t.fev8MT)
+        children: _.NW.string(_.t.fev8MT)
       }), (0, r.jsx)("p", {
-        children: p.NW.format(p.t.IHxEJS, {
-          helpdeskArticle: d.Z.getArticleURL(_.BhN.BLOCKED_PAYMENTS)
+        children: _.NW.format(_.t.IHxEJS, {
+          helpdeskArticle: d.Z.getArticleURL(p.BhN.BLOCKED_PAYMENTS)
         })
       })]
     }), (0, r.jsx)("img", {
@@ -92,8 +92,8 @@ function y(e) {
       color: a.Z.unsafe_rawColors.YELLOW_300.css
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: p.NW.format(p.t.NYkcCg, {
-        helpdeskArticle: d.Z.getArticleURL(_.BhN.BLOCKED_PAYMENTS)
+      children: _.NW.format(_.t.NYkcCg, {
+        helpdeskArticle: d.Z.getArticleURL(p.BhN.BLOCKED_PAYMENTS)
       })
     })]
   }) : null

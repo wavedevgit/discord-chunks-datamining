@@ -10,8 +10,8 @@ var r = n(606862),
   u = "undefined" == typeof globalThis ? n.g : globalThis,
   d = i(),
   f = a("String.prototype.slice"),
-  _ = Object.getPrototypeOf,
-  p = a("Array.prototype.indexOf", !0) || function(e, t) {
+  p = Object.getPrototypeOf,
+  _ = a("Array.prototype.indexOf", !0) || function(e, t) {
     for (var n = 0; n < e.length; n += 1)
       if (e[n] === t) return n;
     return -1
@@ -19,19 +19,19 @@ var r = n(606862),
   h = {
     __proto__: null
   };
-c && s && _ ? r(d, function(e) {
+c && s && p ? r(d, function(e) {
   var t = new u[e];
   if (Symbol.toStringTag in t) {
-    var n = _(t),
+    var n = p(t),
       r = s(n, Symbol.toStringTag);
-    r || (r = s(_(n), Symbol.toStringTag)), h["$" + e] = o(r.get)
+    r || (r = s(p(n), Symbol.toStringTag)), h["$" + e] = o(r.get)
   }
 }) : r(d, function(e) {
   var t = new u[e],
     n = t.slice || t.set;
   n && (h["$" + e] = o(n))
 });
-var g = function(e) {
+var m = function(e) {
     var t = !1;
     return r(h, function(n, r) {
       if (!t) try {
@@ -39,7 +39,7 @@ var g = function(e) {
       } catch (e) {}
     }), t
   },
-  m = function(e) {
+  g = function(e) {
     var t = !1;
     return r(h, function(n, r) {
       if (!t) try {
@@ -51,7 +51,7 @@ e.exports = function(e) {
   if (!e || "object" != typeof e) return !1;
   if (!c) {
     var t = f(l(e), 8, -1);
-    return p(d, t) > -1 ? t : "Object" === t && m(e)
+    return _(d, t) > -1 ? t : "Object" === t && g(e)
   }
-  return s ? g(e) : null
+  return s ? m(e) : null
 }

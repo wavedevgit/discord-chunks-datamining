@@ -136,7 +136,7 @@
       get: function() {
         return o.shimGetDisplayMedia
       }
-    }), n.shimMediaStream = c, n.shimOnTrack = u, n.shimGetSendersWithDtmf = d, n.shimGetStats = f, n.shimSenderReceiverGetStats = _, n.shimAddTrackRemoveTrackWithNative = p, n.shimAddTrackRemoveTrack = h, n.shimPeerConnection = g, n.fixNegotiationNeeded = m;
+    }), n.shimMediaStream = c, n.shimOnTrack = u, n.shimGetSendersWithDtmf = d, n.shimGetStats = f, n.shimSenderReceiverGetStats = p, n.shimAddTrackRemoveTrackWithNative = _, n.shimAddTrackRemoveTrack = h, n.shimPeerConnection = m, n.fixNegotiationNeeded = g;
     var a = s(e("../utils.js"));
 
     function s(e) {
@@ -317,7 +317,7 @@
       }
     }
 
-    function _(e) {
+    function p(e) {
       if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && e.RTCRtpSender && e.RTCRtpReceiver) {
         if (!("getStats" in e.RTCRtpSender.prototype)) {
           var t = e.RTCPeerConnection.prototype.getSenders;
@@ -376,7 +376,7 @@
       }
     }
 
-    function p(e) {
+    function _(e) {
       e.RTCPeerConnection.prototype.getLocalStreams = function() {
         var e = this;
         return this._shimmedLocalStreams = this._shimmedLocalStreams || {}, Object.keys(this._shimmedLocalStreams).map(function(t) {
@@ -421,7 +421,7 @@
     function h(e) {
       if (e.RTCPeerConnection) {
         var t = a.detectBrowser(e);
-        if (e.RTCPeerConnection.prototype.addTrack && t.version >= 65) return p(e);
+        if (e.RTCPeerConnection.prototype.addTrack && t.version >= 65) return _(e);
         var n = e.RTCPeerConnection.prototype.getLocalStreams;
         e.RTCPeerConnection.prototype.getLocalStreams = function() {
           var e = this,
@@ -535,7 +535,7 @@
       }
     }
 
-    function g(e) {
+    function m(e) {
       var t = a.detectBrowser(e);
       if (!e.RTCPeerConnection && e.webkitRTCPeerConnection && (e.RTCPeerConnection = e.webkitRTCPeerConnection), e.RTCPeerConnection) {
         var n = 0 === e.RTCPeerConnection.prototype.addIceCandidate.length;
@@ -553,7 +553,7 @@
       }
     }
 
-    function m(e) {
+    function g(e) {
       a.wrapPeerConnectionEvent(e, "negotiationneeded", function(e) {
         if ("stable" === e.target.signalingState) return e
       })
@@ -937,7 +937,7 @@
       get: function() {
         return o.shimGetDisplayMedia
       }
-    }), n.shimOnTrack = c, n.shimPeerConnection = u, n.shimSenderGetStats = d, n.shimReceiverGetStats = f, n.shimRemoveStream = _, n.shimRTCDataChannel = p, n.shimAddTransceiver = h, n.shimCreateOffer = g, n.shimCreateAnswer = m;
+    }), n.shimOnTrack = c, n.shimPeerConnection = u, n.shimSenderGetStats = d, n.shimReceiverGetStats = f, n.shimRemoveStream = p, n.shimRTCDataChannel = _, n.shimAddTransceiver = h, n.shimCreateOffer = m, n.shimCreateAnswer = g;
     var a = s(e("../utils"));
 
     function s(e) {
@@ -1051,7 +1051,7 @@
       }
     }
 
-    function _(e) {
+    function p(e) {
       e.RTCPeerConnection && !("removeStream" in e.RTCPeerConnection.prototype) && (e.RTCPeerConnection.prototype.removeStream = function(e) {
         var t = this;
         a.deprecated("removeStream", "removeTrack"), this.getSenders().forEach(function(n) {
@@ -1060,7 +1060,7 @@
       })
     }
 
-    function p(e) {
+    function _(e) {
       e.DataChannel && !e.RTCDataChannel && (e.RTCDataChannel = e.DataChannel)
     }
 
@@ -1087,7 +1087,7 @@
       }
     }
 
-    function g(e) {
+    function m(e) {
       if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
         var t = e.RTCPeerConnection.prototype.createOffer;
         e.RTCPeerConnection.prototype.createOffer = function() {
@@ -1102,7 +1102,7 @@
       }
     }
 
-    function m(e) {
+    function g(e) {
       if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
         var t = e.RTCPeerConnection.prototype.createAnswer;
         e.RTCPeerConnection.prototype.createAnswer = function() {
@@ -1201,7 +1201,7 @@
     } : function(e) {
       return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
     };
-    n.shimLocalStreamsAPI = a, n.shimRemoteStreamsAPI = s, n.shimCallbacksAPI = l, n.shimGetUserMedia = c, n.shimConstraints = u, n.shimRTCIceServerUrls = d, n.shimTrackEventTransceiver = f, n.shimCreateOfferLegacy = _;
+    n.shimLocalStreamsAPI = a, n.shimRemoteStreamsAPI = s, n.shimCallbacksAPI = l, n.shimGetUserMedia = c, n.shimConstraints = u, n.shimRTCIceServerUrls = d, n.shimTrackEventTransceiver = f, n.shimCreateOfferLegacy = p;
     var i = o(e("../utils"));
 
     function o(e) {
@@ -1362,7 +1362,7 @@
       })
     }
 
-    function _(e) {
+    function p(e) {
       var t = e.RTCPeerConnection.prototype.createOffer;
       e.RTCPeerConnection.prototype.createOffer = function(e) {
         if (e) {
@@ -1401,7 +1401,7 @@
         writable: !0
       }) : e[t] = n, e
     }
-    n.extractVersion = s, n.wrapPeerConnectionEvent = l, n.disableLog = c, n.disableWarnings = u, n.log = d, n.deprecated = f, n.detectBrowser = _, n.compactObject = h, n.walkStats = g, n.filterStats = m;
+    n.extractVersion = s, n.wrapPeerConnectionEvent = l, n.disableLog = c, n.disableWarnings = u, n.log = d, n.deprecated = f, n.detectBrowser = p, n.compactObject = h, n.walkStats = m, n.filterStats = g;
     var o = !0,
       a = !0;
 
@@ -1456,7 +1456,7 @@
       a && console.warn(e + " is deprecated, please use " + t + " instead.")
     }
 
-    function _(e) {
+    function p(e) {
       var t = e.navigator,
         n = {
           browser: null,
@@ -1465,28 +1465,28 @@
       return void 0 !== e && e.navigator ? t.mozGetUserMedia ? (n.browser = "firefox", n.version = s(t.userAgent, /Firefox\/(\d+)\./, 1)) : t.webkitGetUserMedia || !1 === e.isSecureContext && e.webkitRTCPeerConnection && !e.RTCIceGatherer ? (n.browser = "chrome", n.version = s(t.userAgent, /Chrom(e|ium)\/(\d+)\./, 2)) : t.mediaDevices && t.userAgent.match(/Edge\/(\d+).(\d+)$/) ? (n.browser = "edge", n.version = s(t.userAgent, /Edge\/(\d+).(\d+)$/, 2)) : e.RTCPeerConnection && t.userAgent.match(/AppleWebKit\/(\d+)\./) ? (n.browser = "safari", n.version = s(t.userAgent, /AppleWebKit\/(\d+)\./, 1), n.supportsUnifiedPlan = e.RTCRtpTransceiver && "currentDirection" in e.RTCRtpTransceiver.prototype) : n.browser = "Not a supported browser." : n.browser = "Not a browser.", n
     }
 
-    function p(e) {
+    function _(e) {
       return "[object Object]" === Object.prototype.toString.call(e)
     }
 
     function h(e) {
-      return p(e) ? Object.keys(e).reduce(function(t, n) {
-        var r = p(e[n]),
+      return _(e) ? Object.keys(e).reduce(function(t, n) {
+        var r = _(e[n]),
           o = r ? h(e[n]) : e[n],
           a = r && !Object.keys(o).length;
         return void 0 === o || a ? t : Object.assign(t, i({}, n, o))
       }, {}) : e
     }
 
-    function g(e, t, n) {
+    function m(e, t, n) {
       !(!t || n.has(t.id)) && (n.set(t.id, t), Object.keys(t).forEach(function(r) {
-        r.endsWith("Id") ? g(e, e.get(t[r]), n) : r.endsWith("Ids") && t[r].forEach(function(t) {
-          g(e, e.get(t), n)
+        r.endsWith("Id") ? m(e, e.get(t[r]), n) : r.endsWith("Ids") && t[r].forEach(function(t) {
+          m(e, e.get(t), n)
         })
       }))
     }
 
-    function m(e, t, n) {
+    function g(e, t, n) {
       var r = n ? "outbound-rtp" : "inbound-rtp",
         i = new Map;
       if (null === t) return i;
@@ -1495,7 +1495,7 @@
         "track" === e.type && e.trackIdentifier === t.id && o.push(e)
       }), o.forEach(function(t) {
         e.forEach(function(n) {
-          n.type === r && n.trackId === t.id && g(e, n, i)
+          n.type === r && n.trackId === t.id && m(e, n, i)
         })
       }), i
     }

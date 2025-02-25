@@ -9,8 +9,8 @@ var i, r, l, o, s = n(442837),
   d = n(70956),
   c = n(709054),
   h = ((r = {})[r.NOT_FETCHED = 0] = "NOT_FETCHED", r[r.FETCHING = 1] = "FETCHING", r[r.FETCHED = 2] = "FETCHED", r);
-let f = {},
-  p = {},
+let p = {},
+  f = {},
   g = {},
   v = 10 * d.Z.Millis.MINUTE;
 
@@ -32,7 +32,7 @@ let O = new a.h(e => {
 class S extends(i = s.ZP.Store) {
   getGuildProductsForGuildFetchState(e) {
     var t;
-    return null !== (t = f[e]) && void 0 !== t ? t : 0
+    return null !== (t = p[e]) && void 0 !== t ? t : 0
   }
   getGuildProduct(e) {
     return O.get(e)
@@ -45,7 +45,7 @@ class S extends(i = s.ZP.Store) {
   }
   getGuildProductFetchState(e) {
     var t;
-    return null !== (t = p[e]) && void 0 !== t ? t : 0
+    return null !== (t = f[e]) && void 0 !== t ? t : 0
   }
   isGuildProductsCacheExpired(e) {
     var t;
@@ -60,13 +60,13 @@ o = "GuildProductsStore", (l = "displayName") in S ? Object.defineProperty(S, l,
 }) : S[l] = o;
 let _ = new S(u.Z, {
   CONNECTION_OPEN: function() {
-    O.clear(), f = {}, p = {}, g = {}
+    O.clear(), p = {}, f = {}, g = {}
   },
   GUILD_PRODUCTS_FETCH: function(e) {
     let {
       guildId: t
     } = e;
-    f[t] = 1, [...O.values(C(t))].forEach(e => {
+    p[t] = 1, [...O.values(C(t))].forEach(e => {
       O.delete(e.id)
     })
   },
@@ -75,15 +75,15 @@ let _ = new S(u.Z, {
       guildId: t,
       products: n
     } = e;
-    f[t] = 2, g[t] = Date.now(), n.forEach(e => {
-      O.set(e.id, e), p[e.id] = 2
+    p[t] = 2, g[t] = Date.now(), n.forEach(e => {
+      O.set(e.id, e), f[e.id] = 2
     })
   },
   GUILD_PRODUCTS_FETCH_FAILURE: function(e) {
     let {
       guildId: t
     } = e;
-    f[t] = 2
+    p[t] = 2
   },
   GUILD_PRODUCT_CREATE: function(e) {
     let {
@@ -107,19 +107,19 @@ let _ = new S(u.Z, {
     let {
       productId: t
     } = e;
-    p[t] = 1
+    f[t] = 1
   },
   GUILD_PRODUCT_FETCH_SUCCESS: function(e) {
     let {
       product: t
     } = e;
-    p[t.id] = 2, O.set(t.id, t)
+    f[t.id] = 2, O.set(t.id, t)
   },
   GUILD_PRODUCT_FETCH_FAILURE: function(e) {
     let {
       productId: t,
       error: n
     } = e;
-    p[t] = 2, 404 === n.status && O.delete(t)
+    f[t] = 2, 404 === n.status && O.delete(t)
   }
 })

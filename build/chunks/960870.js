@@ -39,19 +39,19 @@ function d(e) {
     activity: c,
     entry: d,
     stream: f,
-    voiceChannelId: _,
-    analyticsLocations: p
+    voiceChannelId: p,
+    analyticsLocations: _
   } = e, {
     context: h,
-    trackUserProfileAction: g
+    trackUserProfileAction: m
   } = (0, s.KZ)(), {
-    analyticsLocations: m
-  } = (0, o.ZP)(), E = null != p ? p : m, v = (0, i.e7)([a.Z], () => a.Z.getUserOutbox(t.id));
+    analyticsLocations: g
+  } = (0, o.ZP)(), E = null != _ ? _ : g, v = (0, i.e7)([a.Z], () => a.Z.getUserOutbox(t.id));
   return (0, r.useCallback)(e => {
     let {
       action: t
     } = e;
-    g({
+    m({
       action: t,
       analyticsLocations: E
     }), (0, l.z7)(u({
@@ -61,8 +61,8 @@ function d(e) {
       entry: d,
       stream: f,
       outbox: v,
-      voiceChannelId: _,
+      voiceChannelId: p,
       analyticsLocations: E
     }, h))
-  }, [g, h, n, c, f, d, v, _, E])
+  }, [m, h, n, c, f, d, v, p, E])
 }

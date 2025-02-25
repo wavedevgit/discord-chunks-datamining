@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(47120), n(789020);
 var r = n(544891),
   i = n(780384),
@@ -13,8 +13,8 @@ var r = n(544891),
   u = n(709054),
   d = n(981631),
   f = n(526761),
-  _ = n(388032);
-let p = {
+  p = n(388032);
+let _ = {
   open(e) {
     o.Z.dispatch({
       type: "NOTIFICATION_SETTINGS_MODAL_OPEN",
@@ -71,7 +71,7 @@ let p = {
       guildId: e,
       channelId: t,
       settings: n
-    }), i.uv.announce(_.NW.string(_.t.MlIsJy)), (0, c.jz)(e, t, n, l, r, s)
+    }), i.uv.announce(p.NW.string(p.t.MlIsJy)), (0, c.jz)(e, t, n, l, r, s)
   },
   updateChannelOverrideSettingsBulk(e, t, n, r) {
     let i = u.default.keys(t),

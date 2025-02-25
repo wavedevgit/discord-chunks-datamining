@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -27,7 +27,7 @@ let f = [{
     getQuestion: () => u.NW.string(u.t.kYmXWF),
     getAnswer: () => u.NW.string(u.t["+OURPj"])
   }],
-  _ = function(e) {
+  p = function(e) {
     let {
       className: t
     } = e, [n, o] = i.useState(null);

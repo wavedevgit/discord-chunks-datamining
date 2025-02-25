@@ -6,12 +6,12 @@ n.d(t, {
   ID: () => y,
   US: () => T,
   Xz: () => N,
-  Z: () => g,
+  Z: () => m,
   c_: () => I,
   f4: () => A,
   g_: () => v,
   ho: () => E,
-  pG: () => m,
+  pG: () => g,
   rf: () => C,
   x3: () => R,
   z5: () => S
@@ -27,7 +27,7 @@ var r = n(544891),
   d = n(981631),
   f = n(474936);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -36,14 +36,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -55,12 +55,12 @@ function h(e) {
     feature_tier: f.h1.PREMIUM_STANDARD
   })
 }
-async function g(e, t) {
+async function m(e, t) {
   var n, c, u;
   let f = null === (n = l.default.getCurrentUser()) || void 0 === n ? void 0 : n.id;
   if (null == f) return;
-  let _ = s.dN.getSetting();
-  null != e.bio && _ && (e.bio = a.ZP.parse(void 0, e.bio).content);
+  let p = s.dN.getSetting();
+  null != e.bio && p && (e.bio = a.ZP.parse(void 0, e.bio).content);
   try {
     i.Z.dispatch({
       type: "USER_PROFILE_UPDATE_START",
@@ -74,7 +74,7 @@ async function g(e, t) {
     if (n.ok) {
       let e = null === (c = n.body.profile_effect) || void 0 === c ? void 0 : c.id,
         t = null === (u = n.body.profile_effect) || void 0 === u ? void 0 : u.expires_at;
-      i.Z.dispatch(p({
+      i.Z.dispatch(_({
         type: "USER_PROFILE_UPDATE_SUCCESS",
         userId: f,
         profileEffectId: e,
@@ -99,7 +99,7 @@ async function g(e, t) {
   }
 }
 
-function m() {
+function g() {
   i.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
   })

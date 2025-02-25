@@ -45,7 +45,7 @@ function s(e) {
     u = "and or not only",
     d = /@-?\w[\w]*(-\w+)*/,
     f = "[a-zA-Z-][a-zA-Z0-9_-]*",
-    _ = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE];
+    p = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE];
   return {
     name: "CSS",
     case_insensitive: !0,
@@ -77,14 +77,14 @@ function s(e) {
     }, {
       begin: /:/,
       end: /[;}{]/,
-      contains: [l.BLOCK_COMMENT, l.HEXCOLOR, l.IMPORTANT, l.CSS_NUMBER_MODE, ..._, {
+      contains: [l.BLOCK_COMMENT, l.HEXCOLOR, l.IMPORTANT, l.CSS_NUMBER_MODE, ...p, {
         begin: /(url|data-uri)\(/,
         end: /\)/,
         relevance: 0,
         keywords: {
           built_in: "url data-uri"
         },
-        contains: [..._, {
+        contains: [...p, {
           className: "string",
           begin: /[^)]/,
           endsWithParent: !0,
@@ -112,7 +112,7 @@ function s(e) {
         contains: [{
           begin: /[a-z-]+(?=:)/,
           className: "attribute"
-        }, ..._, l.CSS_NUMBER_MODE]
+        }, ...p, l.CSS_NUMBER_MODE]
       }]
     }, {
       className: "selector-tag",

@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  IF: () => _,
+  IF: () => p,
   LU: () => c,
   Rt: () => h,
   hW: () => u,
-  t3: () => p
+  t3: () => _
 }), n(653041), n(47120);
 var r = n(271383),
   i = n(588215);
@@ -53,7 +53,7 @@ let c = [12, 25, 50, 100],
   d = 5,
   f = 250;
 
-function _() {
+function p() {
   return {
     pageSize: c[0],
     currentPage: 1,
@@ -63,12 +63,12 @@ function _() {
   }
 }
 
-function p(e) {
+function _(e) {
   return Math.max(e.pageSize * d, f)
 }
 class h {
   reset() {
-    this._paginationState = _(), this._sortedMemberIds = [], this._cachedPaginationChunks = {}, this._version += 1
+    this._paginationState = p(), this._sortedMemberIds = [], this._cachedPaginationChunks = {}, this._version += 1
   }
   isMemberOnCurrentPage(e) {
     var t;
@@ -140,7 +140,7 @@ class h {
     o(this, "guildId", void 0), o(this, "_sortedMemberIds", void 0), o(this, "_paginationState", void 0), o(this, "_version", void 0), o(this, "_cachedPaginationChunks", void 0), o(this, "_reduceMemberIdsToPaginationChunks", (e, t, n) => {
       let r = Math.floor(n / this._paginationState.pageSize) + 1;
       return null == e[r] && (e[r] = []), e[r].push(t), e
-    }), this.guildId = e, this._paginationState = _(), this._version = 0;
+    }), this.guildId = e, this._paginationState = p(), this._version = 0;
     let [n, r] = this._initPaginationFromRawMembers(t);
     this._sortedMemberIds = n, this._cachedPaginationChunks = r, this._version += 1
   }

@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(367907),
   d = n(255963),
   f = n(626135),
-  _ = n(183023),
-  p = n(524444),
+  p = n(183023),
+  _ = n(524444),
   h = n(981631),
-  g = n(185923),
-  m = n(474936),
+  m = n(185923),
+  g = n(474936),
   E = n(183835);
 
 function v(e, t, n) {
@@ -63,11 +63,11 @@ let S = e => {
     var t;
     let {
       node: n,
-      tooltipPosition: o = p.b_.position,
+      tooltipPosition: o = _.b_.position,
       enableClick: s = !0,
       channelId: u,
       messageId: d
-    } = e, f = null === (t = n.originalMatch) || void 0 === t ? void 0 : t[0], h = null != f ? f : n.name, [g, m] = i.useState(!1), v = e => (0, r.jsx)(c.Z, O(b({}, e), {
+    } = e, f = null === (t = n.originalMatch) || void 0 === t ? void 0 : t[0], h = null != f ? f : n.name, [m, g] = i.useState(!1), v = e => (0, r.jsx)(c.Z, O(b({}, e), {
       emojiName: n.name,
       size: n.jumboable ? "jumbo" : "default",
       src: n.src,
@@ -76,11 +76,11 @@ let S = e => {
       channelId: u,
       messageId: d
     })), y = e => (0, r.jsx)(l.ua7, O(b({
-      text: (0, p.Y)(n.name, s),
+      text: (0, _.Y)(n.name, s),
       "aria-label": h
-    }, p.b_), {
+    }, _.b_), {
       position: o,
-      shouldShow: !g,
+      shouldShow: !m,
       onTooltipShow: () => {
         s && T({
           emojiNode: n,
@@ -91,7 +91,7 @@ let S = e => {
         tag: "span",
         onClick: t => {
           var n;
-          m(!0), null == e || null === (n = e.onClick) || void 0 === n || n.call(e, t)
+          g(!0), null == e || null === (n = e.onClick) || void 0 === n || n.call(e, t)
         },
         className: a()(E.emojiContainer, {
           [E.emojiContainerClickable]: s,
@@ -101,7 +101,7 @@ let S = e => {
       }))
     }));
     if (!s) return y();
-    let S = e => (0, r.jsx)(_.Az, O(b({}, e), {
+    let S = e => (0, r.jsx)(p.Az, O(b({}, e), {
       node: n
     }));
     return (0, r.jsx)(l.yRy, {
@@ -111,7 +111,7 @@ let S = e => {
       nudgeAlignIntoViewport: !0,
       position: "right",
       onRequestClose: () => {
-        m(!1)
+        g(!1)
       },
       renderPopout: S,
       children: y
@@ -121,9 +121,9 @@ let S = e => {
     let {
       node: t,
       isInteracting: n,
-      tooltipPosition: o = p.b_.position,
+      tooltipPosition: o = _.b_.position,
       enableClick: u = !0,
-      channelId: m,
+      channelId: g,
       messageId: v
     } = e, [y, S] = i.useState(String(Date.now())), [I, N] = i.useState(!1), [A, C] = i.useState(!1), R = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
@@ -133,13 +133,13 @@ let S = e => {
         emojiId: t.emojiId,
         animated: t.animated,
         isInteracting: n,
-        channelId: m,
+        channelId: g,
         messageId: v
       }))
     }, P = (0, s.Z)(), D = e => (0, r.jsx)(l.ua7, O(b({
-      text: (0, p.Y)(t.name, u),
+      text: (0, _.Y)(t.name, u),
       "aria-label": t.name
-    }, p.b_), {
+    }, _.b_), {
       position: o,
       shouldShow: !A,
       onTooltipShow: () => {
@@ -147,7 +147,7 @@ let S = e => {
           emojiNode: t,
           isCustomEmoji: !0,
           nonce: P
-        }), (0, d.x)(g.qR.CustomEmojiTooltipShown))
+        }), (0, d.x)(m.qR.CustomEmojiTooltipShown))
       },
       children: n => (0, r.jsx)(l.P3F, O(b({}, e), {
         onMouseEnter: () => {
@@ -172,7 +172,7 @@ let S = e => {
       }))
     }));
     if (!u) return D();
-    let w = e => (0, r.jsx)(_.vk, O(b({}, e), {
+    let w = e => (0, r.jsx)(p.vk, O(b({}, e), {
       node: t,
       refreshPositionKey: () => S(String(Date.now())),
       nonce: P
@@ -200,7 +200,7 @@ let S = e => {
       nonce: r
     } = e;
     u.ZP.trackWithMetadata(h.rMx.EXPRESSION_TOOLTIP_VIEWED, {
-      type: m.cd.EMOJI_IN_MESSAGE_HOVER,
+      type: g.cd.EMOJI_IN_MESSAGE_HOVER,
       expression_id: t.emojiId,
       expression_name: t.name,
       is_animated: t.animated,

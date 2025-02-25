@@ -49,9 +49,9 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,7 +59,7 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -72,20 +72,20 @@ function h(e, t) {
   return i.forwardRef(function(o, c) {
     var {
       children: d,
-      className: p,
+      className: _,
       dir: h = "ltr",
-      orientation: g = "vertical",
-      paddingFix: m = !0,
+      orientation: m = "vertical",
+      paddingFix: g = !0,
       fade: E = !1,
       onScroll: v,
       style: b
-    } = o, y = _(o, ["children", "className", "dir", "orientation", "paddingFix", "fade", "onScroll", "style"]);
+    } = o, y = p(o, ["children", "className", "dir", "orientation", "paddingFix", "fade", "onScroll", "style"]);
     let O = i.useRef(null),
       S = (0, l.tT)({
-        paddingFix: m,
-        orientation: g,
+        paddingFix: g,
+        orientation: m,
         dir: h,
-        className: p,
+        className: _,
         scrollerRef: O,
         specs: n
       });
@@ -93,11 +93,11 @@ function h(e, t) {
       ref: e => {
         "function" == typeof c ? c(e) : null != c && (c.current = e), O.current = e
       },
-      className: a()(p, {
+      className: a()(_, {
         [e]: !0,
         [t]: E
       }),
-      style: (0, l.uT)(b, g),
+      style: (0, l.uT)(b, m),
       dir: h
     }, y), {
       children: (0, r.jsxs)(s.Jc, {

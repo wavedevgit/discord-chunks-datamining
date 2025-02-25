@@ -71,12 +71,12 @@ let s = n(606419),
   u = n(615252),
   d = n(517024),
   f = d.isObject,
-  _ = d.mixin,
-  p = d.hasOwn,
+  p = d.mixin,
+  _ = d.hasOwn,
   h = n(509337),
-  g = n(675246);
+  m = n(675246);
 
-function m() {}
+function g() {}
 e.exports = function(e, n) {
   return "function" == typeof n ? new t.Request("GET", e).end(n) : 1 == arguments.length ? new t.Request("GET", e) : new t.Request(e, n)
 };
@@ -90,7 +90,7 @@ let v = "".trim ? e => e.trim() : e => e.replace(/(^\s*|\s*$)/g, "");
 function b(e) {
   if (!f(e)) return e;
   let t = [];
-  for (let n in e) p(e, n) && y(t, n, e[n]);
+  for (let n in e) _(e, n) && y(t, n, e[n]);
   return t.join("&")
 }
 
@@ -113,7 +113,7 @@ function y(e, t, n) {
         o.f()
       }
     } else if (f(n))
-      for (let r in n) p(n, r) && y(e, `${t}[${r}]`, n[r]);
+      for (let r in n) _(n, r) && y(e, `${t}[${r}]`, n[r]);
     else e.push(encodeURI(t) + "=" + encodeURIComponent(n))
   }
 }
@@ -176,7 +176,7 @@ E.serializeObject = b, E.parseString = O, E.types = {
 }, E.parse = {
   "application/x-www-form-urlencoded": O,
   "application/json": JSON.parse
-}, _(T.prototype, h.prototype), T.prototype._parseBody = function(e) {
+}, p(T.prototype, h.prototype), T.prototype._parseBody = function(e) {
   let t = E.parse[this.type];
   return this.req._parser ? this.req._parser(this, e) : (!t && I(this.type) && (t = E.parse["application/json"]), t && e && (e.length > 0 || e instanceof Object) ? t(e) : null)
 }, T.prototype.toError = function() {
@@ -185,7 +185,7 @@ E.serializeObject = b, E.parseString = O, E.types = {
     n = e.url,
     r = Error(`cannot ${t} ${n} (${this.status})`);
   return r.status = this.status, r.method = t, r.url = n, r
-}, E.Response = T, s(N.prototype), _(N.prototype, u.prototype), N.prototype.type = function(e) {
+}, E.Response = T, s(N.prototype), p(N.prototype, u.prototype), N.prototype.type = function(e) {
   return this.set("Content-Type", E.types[e] || e), this
 }, N.prototype.accept = function(e) {
   return this.set("Accept", E.types[e] || e), this
@@ -222,7 +222,7 @@ E.serializeObject = b, E.parseString = O, E.types = {
 }, N.prototype.pipe = N.prototype.write, N.prototype._isHost = function(e) {
   return e && "object" == typeof e && !Array.isArray(e) && "[object Object]" !== Object.prototype.toString.call(e)
 }, N.prototype.end = function(e) {
-  this._endCalled && console.warn("Warning: .end() was called twice. This is not supported in superagent"), this._endCalled = !0, this._callback = e || m, this._finalizeQueryString(), this._end()
+  this._endCalled && console.warn("Warning: .end() was called twice. This is not supported in superagent"), this._endCalled = !0, this._callback = e || g, this._finalizeQueryString(), this._end()
 }, N.prototype._setUploadTimeout = function() {
   let e = this;
   this._uploadTimeout && !this._uploadTimeoutTimer && (this._uploadTimeoutTimer = setTimeout(() => {
@@ -267,12 +267,12 @@ E.serializeObject = b, E.parseString = O, E.types = {
       t = this._serializer || E.serialize[e ? e.split(";")[0] : ""];
     !t && I(e) && (t = E.serialize["application/json"]), t && (n = t(n))
   }
-  for (let e in this.header) null !== this.header[e] && p(this.header, e) && t.setRequestHeader(e, this.header[e]);
+  for (let e in this.header) null !== this.header[e] && _(this.header, e) && t.setRequestHeader(e, this.header[e]);
   this._responseType && (t.responseType = this._responseType), this.emit("request", this), t.send(void 0 === n ? null : n)
-}, E.agent = () => new g;
+}, E.agent = () => new m;
 for (var A = 0, C = ["GET", "POST", "OPTIONS", "PATCH", "PUT", "DELETE"]; A < C.length; A++) {
   let e = C[A];
-  g.prototype[e.toLowerCase()] = function(t, n) {
+  m.prototype[e.toLowerCase()] = function(t, n) {
     let r = new E.Request(e, t);
     return this._setDefaults(r), n && r.end(n), r
   }
@@ -282,7 +282,7 @@ function R(e, t, n) {
   let r = E("DELETE", e);
   return "function" == typeof t && (n = t, t = null), t && r.send(t), n && r.end(n), r
 }
-g.prototype.del = g.prototype.delete, E.get = (e, t, n) => {
+m.prototype.del = m.prototype.delete, E.get = (e, t, n) => {
   let r = E("GET", e);
   return "function" == typeof t && (n = t, t = null), t && r.query(t), n && r.end(n), r
 }, E.head = (e, t, n) => {

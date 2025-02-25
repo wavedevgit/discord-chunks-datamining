@@ -47,9 +47,9 @@ function d(e, t) {
   }), e
 }
 let f = {},
-  _ = {};
+  p = {};
 
-function p(e) {
+function _(e) {
   let {
     applicationId: t
   } = e;
@@ -67,28 +67,28 @@ function h(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     applicationId: t,
     assets: n
   } = e;
   if (null != n) {
     var r;
-    _[t] = {
+    p[t] = {
       assets: null !== (r = o().keyBy(n, "name")) && void 0 !== r ? r : {},
       lastUpdated: Date.now()
     }
-  } else delete _[t]
+  } else delete p[t]
 }
 
-function m(e) {
+function g(e) {
   let {
     assets: t
   } = e, n = c({}, f);
   for (let e in t) {
     var r;
     let i = t[e];
-    n[e] = 2, _[e] = {
+    n[e] = 2, p[e] = {
       assets: null !== (r = o().keyBy(i, "name")) && void 0 !== r ? r : {},
       lastUpdated: Date.now()
     }
@@ -110,14 +110,14 @@ class E extends(r = a.ZP.Store) {
     })]
   }
   getApplicationAssets(e) {
-    return _[e]
+    return p[e]
   }
 }
 l(E, "displayName", "ApplicationAssetsStore");
 let v = new E(s.Z, {
-  APPLICATION_ASSETS_FETCH: p,
+  APPLICATION_ASSETS_FETCH: _,
   APPLICATION_ASSETS_FETCH_SUCCESS: h,
-  APPLICATION_ASSETS_UPDATE: g,
-  EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS: m,
-  DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: m
+  APPLICATION_ASSETS_UPDATE: m,
+  EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS: g,
+  DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: g
 })

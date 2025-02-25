@@ -28,8 +28,8 @@ var r = n(200651),
   C = n(25015),
   I = n(689674),
   S = n(963550),
-  T = n(845080),
-  P = n(295790),
+  P = n(845080),
+  T = n(295790),
   A = n(145807),
   w = n(56744),
   Z = n(834129),
@@ -115,7 +115,7 @@ let F = i.memo(function e(t) {
       [D.groupStart]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, w.Z)(s, a, z, K, Z),
-    childrenHeader: (0, T.Z)(W(M({}, t), {
+    childrenHeader: (0, P.Z)(W(M({}, t), {
       author: ei,
       guildId: a.guild_id
     })),
@@ -145,7 +145,7 @@ let F = i.memo(function e(t) {
     }),
     childrenExecutedCommand: (0, A.Z)(s, a, Z),
     childrenMessageContent: (0, S.Z)(t, en),
-    childrenSystemMessage: (0, P.Z)(t),
+    childrenSystemMessage: (0, T.Z)(t),
     onContextMenu: F,
     onClick: B,
     hasThread: !1 !== H && null != ea && s.hasFlag(k.iLy.HAS_THREAD),

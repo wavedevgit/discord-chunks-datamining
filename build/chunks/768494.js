@@ -6,7 +6,7 @@ n.d(t, {
   JD: () => E,
   VY: () => h,
   y_: () => v,
-  ym: () => p
+  ym: () => _
 }), n(789020), n(266796);
 var r = n(911969),
   i = n(406432),
@@ -56,14 +56,14 @@ var f = function(e) {
   return e[e.EXPLICIT = 1] = "EXPLICIT", e
 }({});
 
-function _(e) {
+function p(e) {
   return {
     version: e.version,
     flags: e.flags
   }
 }
 
-function p(e) {
+function _(e) {
   var t;
   return {
     url: e.url,
@@ -74,7 +74,7 @@ function p(e) {
     placeholderVersion: e.placeholder_version,
     contentType: e.content_type,
     loadingState: e.loading_state,
-    contentScanMetadata: null != e.content_scan_metadata ? _(e.content_scan_metadata) : void 0,
+    contentScanMetadata: null != e.content_scan_metadata ? p(e.content_scan_metadata) : void 0,
     srcIsAnimated: (0, o.yE)(null !== (t = e.flags) && void 0 !== t ? t : 0, s.J0y.IS_ANIMATED)
   }
 }
@@ -99,17 +99,17 @@ function h(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   return (0, i.tw)(e.contentType) ? "IMAGE" : (0, i.X2)(e.contentType) && null != e.proxyUrl && null != a.Z.toURLSafe(e.proxyUrl) ? "VIDEO" : "INVALID"
 }
 
-function m(e) {
+function g(e) {
   return (0, i.CO)(e.filename) ? "IMAGE" : (0, i.NU)(e.filename) ? "VIDEO" : "INVALID"
 }
 
 function E(e, t) {
   return d(c({}, h(e)), {
-    type: m(e),
+    type: g(e),
     alt: e.description,
     sourceMetadata: {
       message: t,
@@ -126,7 +126,7 @@ function E(e, t) {
 
 function v(e) {
   return d(c({}, e), {
-    type: g(e)
+    type: m(e)
   })
 }
 

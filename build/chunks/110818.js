@@ -12,8 +12,8 @@ var r, i, o, a, s = n(200651),
   u = n.n(c),
   d = n(642128),
   f = n(748780),
-  _ = n(481060),
-  p = n(256681);
+  p = n(481060),
+  _ = n(256681);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -23,10 +23,10 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-var g = function(e) {
+var m = function(e) {
   return e.NORMAL = "normal", e.SPEED_START = "speed_start", e.SPEED_LOOP = "speed_loop", e.FINISH = "finish", e.IDLE = "idle", e
-}(g || {});
-let m = {
+}(m || {});
+let g = {
   normal: {
     BEG: 0,
     END: 600,
@@ -77,11 +77,11 @@ class E extends(r = l.PureComponent) {
       pause: i,
       pauseWhileUnfocused: o
     } = this.props;
-    return (0, s.jsx)(_.kci, {
-      className: u()(p.sequencedAnimation, e),
+    return (0, s.jsx)(p.kci, {
+      className: u()(_.sequencedAnimation, e),
       importData: this.importDefault,
       nextScene: i ? "idle" : t,
-      sceneSegments: m,
+      sceneSegments: g,
       onScenePlay: n,
       onSceneComplete: r,
       pauseWhileUnfocused: o,
@@ -89,7 +89,7 @@ class E extends(r = l.PureComponent) {
     })
   }
 }
-h(E, "Scenes", g);
+h(E, "Scenes", m);
 var v = function(e) {
   return e.NORMAL = "normal", e.SPEED_START = "speed_start", e.SPEED_LOOP = "speed_loop", e.FINISH = "finish", e.IDLE = "idle", e
 }(v || {});
@@ -144,8 +144,8 @@ class y extends(i = l.PureComponent) {
       pause: i,
       pauseWhileUnfocused: o
     } = this.props;
-    return (0, s.jsx)(_.kci, {
-      className: u()(p.sequencedAnimation, e),
+    return (0, s.jsx)(p.kci, {
+      className: u()(_.sequencedAnimation, e),
       importData: this.importDefault,
       nextScene: i ? "idle" : t,
       sceneSegments: b,
@@ -215,7 +215,7 @@ class I extends l.PureComponent {
       className: e
     } = this.props;
     return (0, s.jsxs)("div", {
-      className: p.panningAnimation,
+      className: _.panningAnimation,
       children: [(0, s.jsx)(f.Z.div, {
         className: e,
         style: this.getStyle(!1)
@@ -315,24 +315,24 @@ class A extends(o = l.PureComponent) {
       onSceneComplete: r
     } = this.props;
     return (0, s.jsxs)("div", {
-      className: u()(p.tier2Animation, e),
+      className: u()(_.tier2Animation, e),
       children: [n ? (0, s.jsxs)("div", {
-        className: p.panningAnimation,
+        className: _.panningAnimation,
         children: [(0, s.jsx)("div", {
-          className: p.tier2Background
+          className: _.tier2Background
         }), (0, s.jsx)("div", {
-          className: p.tier2Foreground
+          className: _.tier2Foreground
         })]
       }) : (0, s.jsxs)(s.Fragment, {
         children: [(0, s.jsx)(I, {
-          className: p.tier2Background,
+          className: _.tier2Background,
           animation: this.backgroundAnimation
         }), (0, s.jsx)(I, {
-          className: p.tier2Foreground,
+          className: _.tier2Foreground,
           animation: this.foregroundAnimation
         })]
-      }), (0, s.jsx)(_.kci, {
-        className: p.sequencedAnimation,
+      }), (0, s.jsx)(p.kci, {
+        className: _.sequencedAnimation,
         importData: this.importData,
         nextScene: n ? "idle_loop" : t,
         sceneSegments: S,
@@ -458,7 +458,7 @@ let R = {
 function L(e) {
   let {
     animate: t
-  } = e, [n, r] = l.useState(0), i = (0, _.bYB)(D.length, D.map((e, i) => {
+  } = e, [n, r] = l.useState(0), i = (0, p.bYB)(D.length, D.map((e, i) => {
     let o = i > 0 ? w.DELAY_STAGGER * i + Math.random() * (w.DELAY_MAX - w.DELAY_MIN) + w.DELAY_MIN : 0,
       a = Math.random() * (w.SIZE_MAX - w.SIZE_MIN) + w.SIZE_MIN;
     return {
@@ -502,7 +502,7 @@ function L(e) {
       let n = D[t];
       return (0, s.jsx)(d.animated.svg, {
         style: e,
-        className: p.guildStar,
+        className: _.guildStar,
         xmlns: "http://www.w3.org/2000/svg",
         viewBox: "0 0 12.14 12.24",
         children: (0, s.jsx)("path", {
@@ -542,9 +542,9 @@ class x extends(a = l.PureComponent) {
       pauseWhileUnfocused: o
     } = this.props;
     return (0, s.jsxs)("div", {
-      className: u()(p.guildWrapper, e),
-      children: [(0, s.jsx)(_.kci, {
-        className: p.guildBackground,
+      className: u()(_.guildWrapper, e),
+      children: [(0, s.jsx)(p.kci, {
+        className: _.guildBackground,
         importData: this.importData,
         nextScene: n ? "idle" : t,
         sceneSegments: R,

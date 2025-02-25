@@ -49,7 +49,7 @@ function s(e) {
       end: /``/
     },
     f = /\B('|\^)/,
-    _ = {
+    p = {
       scope: "symbol",
       variants: [{
         match: i(f, /``.*?``/)
@@ -58,7 +58,7 @@ function s(e) {
       }],
       relevance: 0
     },
-    p = function({
+    _ = function({
       includeEqual: e
     }) {
       let n;
@@ -72,13 +72,13 @@ function s(e) {
         relevance: 0
       }
     },
-    h = p({
+    h = _({
       includeEqual: !0
     }),
-    g = p({
+    m = _({
       includeEqual: !1
     }),
-    m = function(t, n) {
+    g = function(t, n) {
       return {
         begin: i(t, r(i(/\s*/, a(/\w/, /'/, /\^/, /#/, /``/, /\(/, /{\|/)))),
         beginScope: n,
@@ -87,13 +87,13 @@ function s(e) {
         keywords: e.inherit(l, {
           type: s
         }),
-        contains: [c, _, e.inherit(d, {
+        contains: [c, p, e.inherit(d, {
           scope: null
-        }), g]
+        }), m]
       }
     },
-    E = m(/:/, "operator"),
-    v = m(/\bof\b/, "keyword"),
+    E = g(/:/, "operator"),
+    v = g(/\bof\b/, "keyword"),
     b = {
       begin: [/(^|\s+)/, /type/, /\s+/, u],
       beginScope: {
@@ -104,7 +104,7 @@ function s(e) {
       keywords: l,
       contains: [c, e.inherit(d, {
         scope: null
-      }), _, {
+      }), p, {
         scope: "operator",
         match: /<|>/
       }, E]
@@ -186,7 +186,7 @@ function s(e) {
       scope: "string",
       match: i(/'/, a(/[^\\']/, /\\(?:.|\d{3}|x[a-fA-F\d]{2}|u[a-fA-F\d]{4}|U[a-fA-F\d]{8})/), /'/)
     };
-  return A.contains = [R, C, T, I, D, n, c, d, E, y, O, S, _, h], {
+  return A.contains = [R, C, T, I, D, n, c, d, E, y, O, S, p, h], {
     name: "F#",
     aliases: ["fs", "f#"],
     keywords: l,
@@ -202,7 +202,7 @@ function s(e) {
       end: />\]/,
       relevance: 2,
       contains: [d, N, T, I, D, S]
-    }, v, E, y, O, S, _, h]
+    }, v, E, y, O, S, p, h]
   }
 }
 e.exports = s

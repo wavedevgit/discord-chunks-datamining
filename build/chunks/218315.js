@@ -14,11 +14,11 @@ var i = n(481060),
   u = n(914010),
   d = n(630388),
   f = n(526120),
-  _ = n(563534),
-  p = n(734893),
+  p = n(563534),
+  _ = n(734893),
   h = n(846121),
-  g = n(931261),
-  m = n(460347),
+  m = n(931261),
+  g = n(460347),
   E = n(372897);
 
 function v(e, t, n) {
@@ -80,7 +80,7 @@ class S extends o.Z {
       if (o.id === s.default.getId() && !this.onboardingCompleteGuilds.has(a) && (0, d.yE)(null != t ? t : 0, E.q.COMPLETED_HOME_ACTIONS)) {
         var l, c;
         this.onboardingCompleteGuilds.add(a);
-        let e = null !== (c = null === (l = _.Z.getNewMemberActions(a)) || void 0 === l ? void 0 : l.length) && void 0 !== c ? c : 0;
+        let e = null !== (c = null === (l = p.Z.getNewMemberActions(a)) || void 0 === l ? void 0 : l.length) && void 0 !== c ? c : 0;
         if (0 === e) return;
         (0, i.ZDy)(async () => {
           let {
@@ -107,7 +107,7 @@ class S extends o.Z {
         memberActions: r,
         completedActions: i
       } = await this._getOrLoadOnboardingMemberActions(t), o = null == r ? void 0 : r.find(e => e.channelId === n);
-      (null == i ? void 0 : i[n]) !== !0 && null != o && o.actionType === p.oi.VIEW && (0, f.Oh)(t, n)
+      (null == i ? void 0 : i[n]) !== !0 && null != o && o.actionType === _.oi.VIEW && (0, f.Oh)(t, n)
     }), v(this, "handleMessageSend", e => {
       var t;
       let {
@@ -130,22 +130,22 @@ class S extends o.Z {
         memberActions: n,
         completedActions: r
       } = await this._getOrLoadOnboardingMemberActions(e), i = null == n ? void 0 : n.find(e => e.channelId === t);
-      (null == r ? void 0 : r[t]) !== !0 && null != i && i.actionType === p.oi.CHAT && (0, f.Oh)(e, t)
+      (null == r ? void 0 : r[t]) !== !0 && null != i && i.actionType === _.oi.CHAT && (0, f.Oh)(e, t)
     }), v(this, "_getOrLoadOnboardingMemberActions", async e => {
-      let t = (0, g.s)(e),
+      let t = (0, m.s)(e),
         n = a.Z.isFullServerPreview(e);
       if (!t && !n) return {};
       let r = c.ZP.getSelfMember(e);
-      if (null == r || !(0, m.m)(e)) return {};
+      if (null == r || !(0, g.m)(e)) return {};
       let [i, o] = await Promise.all([this._getOrLoadOnboardingHomeSettings(e), this._getOrLoadMemberActions(e, r)]);
       return {
         memberActions: i,
         completedActions: o
       }
     }), v(this, "_getOrLoadOnboardingHomeSettings", async e => {
-      let t = _.Z.getNewMemberActions(e),
-        n = _.Z.getIsLoading(e);
-      if (!(null == t && !n && (0, m.m)(e))) return t;
+      let t = p.Z.getNewMemberActions(e),
+        n = p.Z.getIsLoading(e);
+      if (!(null == t && !n && (0, g.m)(e))) return t;
       {
         let t = await (0, f.cP)(e);
         return null == t ? void 0 : t.newMemberActions

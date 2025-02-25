@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(653041);
 var i = n(392711),
   o = n.n(i),
@@ -13,8 +13,8 @@ var i = n(392711),
   u = n(594174),
   d = n(70956),
   f = n(51144),
-  _ = n(388032);
-let p = new(s())({
+  p = n(388032);
+let _ = new(s())({
   maxAge: +d.Z.Millis.MINUTE
 });
 
@@ -37,17 +37,17 @@ function h(e, t, n) {
   }, 200)
 }
 
-function g(e, t) {
+function m(e, t) {
   let n = "".concat(null != e ? e : "", ":").concat(t),
-    r = p.get(n);
+    r = _.get(n);
   if (null != r) return r;
-  p.set(n, !0)
+  _.set(n, !0)
 }
-let m = {
+let g = {
   getGuildNameSuggestion: function(e) {
     let t = u.default.getCurrentUser(),
       n = f.oY(t);
-    return null == n || 0 === n.length ? "" : _.NW.formatToPlainString(_.t.Y6Qfjo, {
+    return null == n || 0 === n.length ? "" : p.NW.formatToPlainString(p.t.Y6Qfjo, {
       username: (null == e ? void 0 : e.truncateUsername) ? n.slice(0, 20) : n
     })
   },
@@ -57,7 +57,7 @@ let m = {
       i = [],
       o = !1;
     r ? e.forEach(e => {
-      null == g(e, t) && i.push(e)
-    }) : null == g(e, t) && (o = !0), i.length > 0 && r ? h(i, t, n) : o && h(e, t, n)
+      null == m(e, t) && i.push(e)
+    }) : null == m(e, t) && (o = !0), i.length > 0 && r ? h(i, t, n) : o && h(e, t, n)
   }
 }

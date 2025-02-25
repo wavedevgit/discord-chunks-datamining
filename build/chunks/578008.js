@@ -50,11 +50,11 @@ function i(e, r) {
   }
   var f = i(e / 1.7, 0, 20);
   f = o(f, 0, .8);
-  var _ = o(i(r / 1.7, 0, 20), .5, 200),
-    p = s(f, d(_), .01);
+  var p = o(i(r / 1.7, 0, 20), .5, 200),
+    _ = s(f, d(p), .01);
   return {
-    tension: t(_),
-    friction: n(p)
+    tension: t(p),
+    friction: n(_)
   }
 }
 e.exports = {

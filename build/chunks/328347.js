@@ -25,10 +25,10 @@ let l = [],
   f = e => {
     c = l, u = null
   },
-  _ = e => {
+  p = e => {
     e.item.skuId === r && (r = void 0)
   };
-class p extends(i = o.ZP.Store) {
+class _ extends(i = o.ZP.Store) {
   get analyticsLocations() {
     return c
   }
@@ -45,10 +45,10 @@ class p extends(i = o.ZP.Store) {
     }
   }
 }
-s(p, "displayName", "CollectiblesShopStore");
-let h = new p(a.Z, {
+s(_, "displayName", "CollectiblesShopStore");
+let h = new _(a.Z, {
   COLLECTIBLES_SHOP_OPEN: d,
   COLLECTIBLES_SHOP_CLOSE: f,
-  COLLECTIBLES_PRODUCT_DETAILS_OPEN: _,
+  COLLECTIBLES_PRODUCT_DETAILS_OPEN: p,
   LOGOUT: f
 })

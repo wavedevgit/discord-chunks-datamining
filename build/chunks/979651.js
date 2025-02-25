@@ -12,7 +12,7 @@ var o, a = n(392711),
   d = n(981631),
   f = n(354459);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,10 +20,10 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let p = 0,
+let _ = 0,
   h = 0,
-  g = {},
-  m = new Set,
+  m = {},
+  g = new Set,
   E = new Map,
   v = {},
   b = {},
@@ -41,11 +41,11 @@ function I(e, t) {
 
 function T(e) {
   var t;
-  let n = null !== (t = g[d.ME]) && void 0 !== t ? t : {},
+  let n = null !== (t = m[d.ME]) && void 0 !== t ? t : {},
     r = {};
   s().each(n, (t, n) => {
     t.channelId !== e && (r[n] = t)
-  }), g[d.ME] = r
+  }), m[d.ME] = r
 }
 
 function N(e) {
@@ -64,7 +64,7 @@ function C(e, t) {
 }
 
 function R(e, t, n) {
-  let r = I(g, null != e ? e : d.ME),
+  let r = I(m, null != e ? e : d.ME),
     i = r[t],
     o = n(i);
   return i === o ? [!1, o, i] : (null != i && (delete r[t], null != i.channelId && (delete I(v, i.channelId)[t], delete I(b, i.channelId)[t]), null != i.sessionId && delete I(y, t)[i.sessionId], C(null != e ? e : d.ME, t)), null != o && (r[t] = o, null != o.channelId && (I(v, o.channelId)[t] = o, o.selfVideo && (I(b, o.channelId)[t] = o, A(null != e ? e : d.ME, t))), null != o.sessionId && (I(y, t)[o.sessionId] = o)), [!0, o, i])
@@ -76,7 +76,7 @@ function P(e) {
   } = e;
   return t.reduce((e, t) => {
     let [n, r, o] = L(t.guildId, t);
-    return n ? (t.sessionId === i && null != r && null != o && o.channelId !== r.channelId && (p += 1), h++, !0) : e
+    return n ? (t.sessionId === i && null != r && null != o && o.channelId !== r.channelId && (_ += 1), h++, !0) : e
   }, !1)
 }
 
@@ -135,11 +135,11 @@ function M(e) {
     user: t,
     sessionId: n
   } = e, o = null != r && r !== t.id;
-  return o && (g = {}, v = {}, y = {}, b = {}, E.clear()), r = t.id, i = n, o
+  return o && (m = {}, v = {}, y = {}, b = {}, E.clear()), r = t.id, i = n, o
 }
 
 function j() {
-  g = {}, v = {}, y = {}, b = {}, E.clear()
+  m = {}, v = {}, y = {}, b = {}, E.clear()
 }
 
 function k(e) {
@@ -148,7 +148,7 @@ function k(e) {
     user: n,
     sessionId: o
   } = e;
-  for (let [e, n] of(g = {}, v = {}, y = {}, b = {}, Object.entries(t)))
+  for (let [e, n] of(m = {}, v = {}, y = {}, b = {}, Object.entries(t)))
     for (let [t, r] of Object.entries(n)) R(e, t, () => new u.Z(r));
   r = n.id, i = o
 }
@@ -157,9 +157,9 @@ function U(e) {
   let {
     guild: t
   } = e;
-  s().forEach(g[t.id], e => {
+  s().forEach(m[t.id], e => {
     R(t.id, e.userId, () => null)
-  }), delete g[t.id]
+  }), delete m[t.id]
 }
 
 function G(e) {
@@ -177,13 +177,13 @@ function B(e) {
 }
 class F extends(o = l.ZP.Store) {
   getAllVoiceStates() {
-    return g
+    return m
   }
   getVoiceStateVersion() {
     return h
   }
   getVoiceStates(e) {
-    return I(g, null != e ? e : d.ME)
+    return I(m, null != e ? e : d.ME)
   }
   getVoiceStatesForChannel(e) {
     return I(v, e)
@@ -223,7 +223,7 @@ class F extends(o = l.ZP.Store) {
   }
   getUsersWithVideo(e) {
     var t;
-    return null !== (t = E.get(e)) && void 0 !== t ? t : m
+    return null !== (t = E.get(e)) && void 0 !== t ? t : g
   }
   isCurrentClientInVoiceChannel() {
     var e;
@@ -244,10 +244,10 @@ class F extends(o = l.ZP.Store) {
     return t === r && e === a ? f.wR.DESKTOP : O[S(t, e)]
   }
   get userHasBeenMovedVersion() {
-    return p
+    return _
   }
 }
-_(F, "displayName", "VoiceStateStore");
+p(F, "displayName", "VoiceStateStore");
 let V = new F(c.Z, {
   CONNECTION_OPEN: M,
   CONNECTION_OPEN_SUPPLEMENTAL: j,

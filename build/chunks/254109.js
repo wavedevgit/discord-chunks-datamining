@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   VO: () => h,
-  fS: () => p,
+  fS: () => _,
   uG: () => d,
-  yg: () => g
+  yg: () => m
 }), n(977457);
 var r = n(15729),
   i = n(731965),
@@ -61,14 +61,14 @@ let f = {
     source: void 0,
     incrementableActions: Object.fromEntries(Object.values(d).map(e => [e, 0]))
   },
-  _ = (0, r.U)(() => f);
+  p = (0, r.U)(() => f);
 
-function p(e) {
-  (0, i.j)(() => _.setState(l({}, f, e)))
+function _(e) {
+  (0, i.j)(() => p.setState(l({}, f, e)))
 }
 
 function h() {
-  let e = _.getState();
+  let e = p.getState();
   o.default.track(a.rMx.MEDIA_VIEWER_SESSION_COMPLETED, l({
     source: e.source,
     guild_id: e.guildId,
@@ -76,12 +76,12 @@ function h() {
     channel_type: e.channelType,
     number_media_items: e.numMediaItems,
     has_media_options: e.hasMediaOptions
-  }, e.incrementableActions)), (0, i.j)(() => _.setState(l({}, f)))
+  }, e.incrementableActions)), (0, i.j)(() => p.setState(l({}, f)))
 }
 
-function g(e) {
+function m(e) {
   (0, i.j)(() => {
-    _.setState(t => ({
+    p.setState(t => ({
       incrementableActions: u(l({}, t.incrementableActions), {
         [e]: t.incrementableActions[e] + 1
       })

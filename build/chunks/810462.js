@@ -16,35 +16,35 @@ let d = i.forwardRef(function(e, t) {
     store: n,
     hasSendableExpressions: d,
     onKeyDown: f,
-    gridNavigatorId: _,
-    expressionsListRef: p,
+    gridNavigatorId: p,
+    expressionsListRef: _,
     defaultSearchPlaceholder: h,
-    emptySearchPlaceholder: g
-  } = e, m = i.useRef(null), [E, v] = (0, c.Iu)(e => [e.searchQuery, e.isSearchSuggestion], o.X), b = n.useStore(e => e.searchPlaceholder), y = n.useStore(e => e.inspectedExpressionPosition, o.X), O = i.useCallback(e => {
+    emptySearchPlaceholder: m
+  } = e, g = i.useRef(null), [E, v] = (0, c.Iu)(e => [e.searchQuery, e.isSearchSuggestion], o.X), b = n.useStore(e => e.searchPlaceholder), y = n.useStore(e => e.inspectedExpressionPosition, o.X), O = i.useCallback(e => {
     var t;
-    n.setActiveCategoryIndex("" === e ? 0 : l.c), n.setInspectedExpressionPosition(0, 0), n.setSearchPlaceholder(null), (0, c.ql)(e), null === (t = p.current) || void 0 === t || t.scrollTo(0)
-  }, [p, n]), S = i.useCallback(() => {
+    n.setActiveCategoryIndex("" === e ? 0 : l.c), n.setInspectedExpressionPosition(0, 0), n.setSearchPlaceholder(null), (0, c.ql)(e), null === (t = _.current) || void 0 === t || t.scrollTo(0)
+  }, [_, n]), S = i.useCallback(() => {
     (0, c.ql)("")
   }, []);
   i.useImperativeHandle(t, () => ({
     focus: () => {
       var e;
-      return null === (e = m.current) || void 0 === e ? void 0 : e.focus()
+      return null === (e = g.current) || void 0 === e ? void 0 : e.focus()
     }
   })), i.useLayoutEffect(() => {
     if (v) {
       var e;
-      null === (e = m.current) || void 0 === e || e.focus()
+      null === (e = g.current) || void 0 === e || e.focus()
     }
   }, [v]);
-  let I = () => null != b ? b : d || null == g ? h : g;
+  let I = () => null != b ? b : d || null == m ? h : m;
   return (0, r.jsx)("div", {
     className: u.wrapper,
     children: (0, r.jsx)(s.E1j, {
       autoFocus: d,
       disabled: !d,
       query: E,
-      ref: m,
+      ref: g,
       size: s.E1j.Sizes.MEDIUM,
       placeholder: I(),
       onClear: S,
@@ -53,9 +53,9 @@ let d = i.forwardRef(function(e, t) {
       className: u.__invalid_searchBar,
       inputProps: {
         "aria-haspopup": "grid",
-        "aria-controls": _,
+        "aria-controls": p,
         "aria-expanded": !0,
-        "aria-activedescendant": (0, a.NE)(_, y.columnIndex, y.rowIndex)
+        "aria-activedescendant": (0, a.NE)(p, y.columnIndex, y.rowIndex)
       }
     })
   })

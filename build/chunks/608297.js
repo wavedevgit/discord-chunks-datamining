@@ -70,11 +70,11 @@ function f(e, t) {
   }
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t && f(e.prototype, t), n && f(e, n), e
 }
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -84,21 +84,21 @@ function p(e, t, n) {
 }
 n.d(t, {
   GT: () => E,
-  gr: () => m
+  gr: () => g
 });
 var h = 10,
-  g = function() {
+  m = function() {
     function e() {
-      d(this, e), p(this, "subPriority", 0)
+      d(this, e), _(this, "subPriority", 0)
     }
-    return _(e, [{
+    return p(e, [{
       key: "validate",
       value: function(e, t) {
         return !0
       }
     }]), e
   }(),
-  m = function(e) {
+  g = function(e) {
     i(n, e);
     var t = a(n);
 
@@ -106,7 +106,7 @@ var h = 10,
       var s;
       return d(this, n), (s = t.call(this)).value = e, s.validateValue = r, s.setValue = i, s.priority = o, a && (s.subPriority = a), s
     }
-    return _(n, [{
+    return p(n, [{
       key: "validate",
       value: function(e, t) {
         return this.validateValue(e, this.value, t)
@@ -117,7 +117,7 @@ var h = 10,
         return this.setValue(e, t, this.value, n)
       }
     }]), n
-  }(g),
+  }(m),
   E = function(e) {
     i(n, e);
     var t = a(n);
@@ -126,9 +126,9 @@ var h = 10,
       var e;
       d(this, n);
       for (var r = arguments.length, i = Array(r), o = 0; o < r; o++) i[o] = arguments[o];
-      return p(l(e = t.call.apply(t, [this].concat(i))), "priority", h), p(l(e), "subPriority", -1), e
+      return _(l(e = t.call.apply(t, [this].concat(i))), "priority", h), _(l(e), "subPriority", -1), e
     }
-    return _(n, [{
+    return p(n, [{
       key: "set",
       value: function(e, t) {
         if (t.timestampIsSet) return e;
@@ -136,4 +136,4 @@ var h = 10,
         return n.setFullYear(e.getUTCFullYear(), e.getUTCMonth(), e.getUTCDate()), n.setHours(e.getUTCHours(), e.getUTCMinutes(), e.getUTCSeconds(), e.getUTCMilliseconds()), n
       }
     }]), n
-  }(g)
+  }(m)

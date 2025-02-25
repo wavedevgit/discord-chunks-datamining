@@ -16,13 +16,13 @@ let u = 6e3,
       product: t,
       onSuccess: d,
       onError: f
-    } = e, [_, p] = r.useState(!1), {
+    } = e, [p, _] = r.useState(!1), {
       firstAvatarDecoration: h,
-      firstProfileEffect: g
-    } = (0, l.R)(t), m = (0, s.x6)(t) ? c.NW.string(c.t.tf1ZZ2) : t.type === i.Z.AVATAR_DECORATION ? c.NW.string(c.t.zOA4a2) : c.NW.string(c.t.SWm2am);
+      firstProfileEffect: m
+    } = (0, l.R)(t), g = (0, s.x6)(t) ? c.NW.string(c.t.tf1ZZ2) : t.type === i.Z.AVATAR_DECORATION ? c.NW.string(c.t.zOA4a2) : c.NW.string(c.t.SWm2am);
     return {
       handleUseNow: r.useCallback(async () => {
-        p(!0);
+        _(!0);
         try {
           if (null != h) {
             let e = {
@@ -30,9 +30,9 @@ let u = 6e3,
             };
             await (0, o.Mn)(e)
           }
-          if (null != g) {
+          if (null != m) {
             let e = {
-              profile_effect_id: g.id
+              profile_effect_id: m.id
             };
             await (0, a.Z)(e)
           } {
@@ -43,7 +43,7 @@ let u = 6e3,
               popToast: i,
               showToast: o
             } = await Promise.resolve().then(n.bind(n, 481060));
-            i(), o(r(m, t.MESSAGE, {
+            i(), o(r(g, t.MESSAGE, {
               duration: u,
               position: e.TOP
             }))
@@ -52,9 +52,9 @@ let u = 6e3,
         } catch (e) {
           null == f || f(e)
         } finally {
-          p(!1)
+          _(!1)
         }
-      }, [h, g, d, m, f]),
-      isApplying: _
+      }, [h, m, d, g, f]),
+      isApplying: p
     }
   }

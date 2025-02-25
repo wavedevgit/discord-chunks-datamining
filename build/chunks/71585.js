@@ -35,51 +35,51 @@ let c = 2592e6,
     itemImpressions: [],
     hidden: !1
   }),
-  _ = f(),
-  p = new Set,
+  p = f(),
+  _ = new Set,
   h = new Set,
-  g = 0,
-  m = !1,
+  m = 0,
+  g = !1,
   E = !1,
   v = 1e3;
 
 function b() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-  if (!e && Date.now() < g) return;
+  if (!e && Date.now() < m) return;
   let t = 0,
     n = Date.now() - c;
-  for (let e = 0; e < _.itemImpressions.length; e++) {
-    let [r, i] = _.itemImpressions[e];
+  for (let e = 0; e < p.itemImpressions.length; e++) {
+    let [r, i] = p.itemImpressions[e];
     if (i < n) t = e + 1;
     else break
   }
-  t > 0 && (_.itemImpressions = _.itemImpressions.slice(t)), _.itemImpressions.length > d && (_.itemImpressions = _.itemImpressions.slice(-d));
+  t > 0 && (p.itemImpressions = p.itemImpressions.slice(t)), p.itemImpressions.length > d && (p.itemImpressions = p.itemImpressions.slice(-d));
   let r = E ? v : u,
     i = new Set,
     o = new Set,
     a = Date.now() - r,
     s = null;
-  for (let [e, t] of _.itemImpressions) t < a ? i.add(e) : null == s && (s = t + r), o.add(e);
-  p = i, h = o, g = null != s ? s : 1 / 0, m = !0
+  for (let [e, t] of p.itemImpressions) t < a ? i.add(e) : null == s && (s = t + r), o.add(e);
+  _ = i, h = o, m = null != s ? s : 1 / 0, g = !0
 }
 
 function y(e) {
   let {
     itemIds: t
   } = e;
-  m || b();
+  g || b();
   let n = Date.now(),
     r = !1;
-  for (let e of t) h.has(e) || (_.itemImpressions.push([e, n]), r = !0);
+  for (let e of t) h.has(e) || (p.itemImpressions.push([e, n]), r = !0);
   return b(r), r
 }
 
 function O() {
-  _.itemImpressions = [], b(!0)
+  p.itemImpressions = [], b(!0)
 }
 
 function S() {
-  return console.log("Item impressions:", _.itemImpressions), !1
+  return console.log("Item impressions:", p.itemImpressions), !1
 }
 
 function I() {
@@ -87,26 +87,26 @@ function I() {
 }
 
 function T() {
-  _.hidden = !_.hidden
+  p.hidden = !p.hidden
 }
 class N extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    _ = l({}, _, null != e ? e : {})
+    p = l({}, p, null != e ? e : {})
   }
   getState() {
-    return _
+    return p
   }
   getImpressionCappedItemIds() {
-    return b(), p
+    return b(), _
   }
   getDebugFastImpressionCappingEnabled() {
     return E
   }
   get hidden() {
-    return _.hidden
+    return p.hidden
   }
   reset() {
-    _ = f()
+    p = f()
   }
 }
 s(N, "displayName", "ContentInventoryPersistedStore"), s(N, "persistKey", "ContentInventoryPersistedStore");

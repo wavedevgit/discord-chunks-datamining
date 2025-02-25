@@ -13,8 +13,8 @@ var r = n(570140),
   u = n(649591),
   d = n(16609),
   f = n(224189),
-  _ = n(574952),
-  p = n(981631);
+  p = n(574952),
+  _ = n(981631);
 async function h(e, t) {
   try {
     return await (0, f.Z)(e, t)
@@ -28,7 +28,7 @@ async function h(e, t) {
     })
   }
 }
-async function g(e) {
+async function m(e) {
   let {
     currentEmbeddedApplication: t
   } = e;
@@ -40,14 +40,14 @@ async function g(e) {
       e(!0);
       return
     }(0, c.Z)(t, i, () => {
-      (0, _.Z)().leaveActivity({
+      (0, p.Z)().leaveActivity({
         location: n.location,
         applicationId: t.id
       }), e(!0)
     }, () => e(!1))
   }))
 }
-async function m(e) {
+async function g(e) {
   let {
     application: t,
     applicationId: n,
@@ -74,7 +74,7 @@ async function E(e) {
     applicationId: n,
     channel: r
   } = e, i = null != t ? t : await h(n, null == r ? void 0 : r.id);
-  return null != i && (!!((0, a.yE)(i.flags, p.udG.EMBEDDED_RELEASED) || i.isVerified || s.ZP.hasActivityEverBeenLaunched(n)) || new Promise(e => {
+  return null != i && (!!((0, a.yE)(i.flags, _.udG.EMBEDDED_RELEASED) || i.isVerified || s.ZP.hasActivityEverBeenLaunched(n)) || new Promise(e => {
     (0, u.j)({
       application: i,
       onConfirm: () => e(!0),
@@ -83,7 +83,7 @@ async function E(e) {
   }))
 }
 async function v(e) {
-  return !!(await g({
+  return !!(await m({
     currentEmbeddedApplication: e.currentEmbeddedApplication
-  }) && await m(e) && await E(e))
+  }) && await g(e) && await E(e))
 }

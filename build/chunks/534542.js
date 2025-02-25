@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  R: () => g,
-  g: () => p
+  R: () => m,
+  g: () => _
 });
 var r = n(200651);
 n(192379);
@@ -52,7 +52,7 @@ function d(e, t) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,14 +60,14 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let p = {
+let _ = {
     DEFAULT: "default",
     INPUT_PLACEHOLDER: "placeholder",
     DESCRIPTION: "description",
@@ -83,21 +83,21 @@ let p = {
     SELECTABLE: "modeSelectable"
   };
 
-function g(e) {
+function m(e) {
   var {
-    type: t = p.DEFAULT,
+    type: t = _.DEFAULT,
     className: n,
     disabled: i,
     selectable: l,
     children: u,
-    style: _
-  } = e, g = f(e, ["type", "className", "disabled", "selectable", "children", "style"]);
-  let m = h.DEFAULT;
-  return i ? m = h.DISABLED : l && (m = h.SELECTABLE), (0, r.jsx)(a.Z, d(c({
-    className: o()(s[t], n, s[m]),
-    style: _
-  }, g), {
+    style: p
+  } = e, m = f(e, ["type", "className", "disabled", "selectable", "children", "style"]);
+  let g = h.DEFAULT;
+  return i ? g = h.DISABLED : l && (g = h.SELECTABLE), (0, r.jsx)(a.Z, d(c({
+    className: o()(s[t], n, s[g]),
+    style: p
+  }, m), {
     children: u
   }))
 }
-g.Types = p
+m.Types = _

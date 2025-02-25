@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(47120);
 var r, i = n(192379),
   o = n(442837),
@@ -12,35 +12,35 @@ var r, i = n(192379),
   u = n(242291),
   d = n(22382),
   f = n(747071),
-  _ = n(388032);
+  p = n(388032);
 
-function p(e, t) {
+function _(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : (() => {
       var e;
       return null !== (r = null === (e = l.kU.getSetting()) || void 0 === e ? void 0 : e.volume) && void 0 !== r ? r : 100
     })(),
     {
-      audioRef: p
+      audioRef: _
     } = i.useContext(s.Z),
-    [h, g] = i.useState(!1),
-    m = (0, o.e7)([c.Z], () => c.Z.isPlayingSound(e.soundId), [e]),
+    [h, m] = i.useState(!1),
+    g = (0, o.e7)([c.Z], () => c.Z.isPlayingSound(e.soundId), [e]),
     E = i.useCallback(n => {
-      null != p.current && p.current.pause(), null != t && (0, u.GN)(e, t, n)
-    }, [e, p, t]),
+      null != _.current && _.current.pause(), null != t && (0, u.GN)(e, t, n)
+    }, [e, _, t]),
     v = i.useCallback(() => {
       let t = new Audio((0, d.Z)(e.soundId));
-      null != p.current && p.current.pause(), p.current = t, t.currentTime = 0, t.volume = (0, f.Z)(e.volume, n), t.play().catch(() => {
-        "Safari" === platform.name && (0, a.showToast)((0, a.createToast)(_.NW.string(_.t.qAsyjI), a.ToastType.FAILURE))
-      }), g(!0), t.addEventListener("pause", () => g(!1), {
+      null != _.current && _.current.pause(), _.current = t, t.currentTime = 0, t.volume = (0, f.Z)(e.volume, n), t.play().catch(() => {
+        "Safari" === platform.name && (0, a.showToast)((0, a.createToast)(p.NW.string(p.t.qAsyjI), a.ToastType.FAILURE))
+      }), m(!0), t.addEventListener("pause", () => m(!1), {
         once: !0
       })
-    }, [e, n, p]);
+    }, [e, n, _]);
   return i.useCallback(() => () => {
     var e;
-    return null === (e = p.current) || void 0 === e ? void 0 : e.pause()
-  }, [p]), {
+    return null === (e = _.current) || void 0 === e ? void 0 : e.pause()
+  }, [_]), {
     playSoundboardSound: E,
-    isPlayingSound: m,
+    isPlayingSound: g,
     previewSound: v,
     isPreviewingSound: h
   }

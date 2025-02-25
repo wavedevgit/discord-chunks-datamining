@@ -19,8 +19,8 @@ function u(e) {
     size: u,
     botIconFirst: d,
     fallbackAvatar: f,
-    rendersPlaceholder: _ = !1
-  } = e, p = i.useMemo(() => null != t ? s.ZP.getApplicationIconURL({
+    rendersPlaceholder: p = !1
+  } = e, _ = i.useMemo(() => null != t ? s.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: t.bot,
@@ -28,12 +28,12 @@ function u(e) {
     botIconFirst: d,
     fallbackAvatar: f
   }) : n, [t, n, u, d, f]);
-  return null == p ? _ ? (0, r.jsx)("div", {
+  return null == _ ? p ? (0, r.jsx)("div", {
     className: a()(c.icon, c.placeholder, o)
   }) : null : (0, r.jsx)("img", {
     className: a()(c.icon, o),
     alt: l.NW.string(l.t.X4IxWF),
-    src: p,
+    src: _,
     "aria-hidden": !0,
     draggable: !1
   })

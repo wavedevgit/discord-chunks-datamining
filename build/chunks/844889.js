@@ -20,8 +20,8 @@ function d(e) {
 
 function f() {
   return c = c.then(async () => {
-    let e = await _();
-    if (null == e || p(e)) {
+    let e = await p();
+    if (null == e || _(e)) {
       if (!u) return null;
       let t = {
         uuid: (0, r.Z)(),
@@ -33,7 +33,7 @@ function f() {
     return e
   })
 }
-async function _() {
+async function p() {
   let e = await i.K.getAfterRefresh(s),
     t = await i.K.getAfterRefresh(l).then(h),
     n = await i.K.getAfterRefresh(a).then(h);
@@ -44,7 +44,7 @@ async function _() {
   } : null
 }
 
-function p(e) {
+function _(e) {
   return 6e4 * o + e.lastUsed - Date.now() <= 0
 }
 

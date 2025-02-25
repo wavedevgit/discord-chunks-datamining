@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Cc: () => m,
+  Cc: () => g,
   E8: () => E,
   L_: () => v
 });
@@ -50,14 +50,14 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = {},
-  p = 6e4;
+let p = {},
+  _ = 6e4;
 
 function h(e) {
   var t;
-  return Date.now() - (null !== (t = _[e]) && void 0 !== t ? t : 0) > p
+  return Date.now() - (null !== (t = p[e]) && void 0 !== t ? t : 0) > _
 }
-let g = (0, o.F)((e, t) => ({
+let m = (0, o.F)((e, t) => ({
   clans: {},
   isFetchingGuild: e => null != t().fetchPromises[e],
   error: null,
@@ -68,7 +68,7 @@ let g = (0, o.F)((e, t) => ({
       var i;
       return null != r ? await r : Promise.resolve(null !== (i = t().clans[n]) && void 0 !== i ? i : null)
     }
-    _[n] = Date.now();
+    p[n] = Date.now();
     try {
       if (null != r) return await r;
       {
@@ -108,16 +108,16 @@ let g = (0, o.F)((e, t) => ({
   }
 }));
 
-function m(e) {
-  return g(t => null != e ? t.clans[e] : null)
+function g(e) {
+  return m(t => null != e ? t.clans[e] : null)
 }
 
 function E(e) {
-  return g(t => null != e && t.isFetchingGuild(e))
+  return m(t => null != e && t.isFetchingGuild(e))
 }
 
 function v(e) {
-  let t = g(e => e.fetchClanInfo, i.X);
+  let t = m(e => e.fetchClanInfo, i.X);
   return [E(e), r.useCallback(async () => {
     if (null == e) return null;
     try {

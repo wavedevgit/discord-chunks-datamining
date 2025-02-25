@@ -6,11 +6,11 @@ var r, i, o, a, s = n(161581),
   u = n(354848),
   d = n(740362),
   f = n(936940),
-  _ = n(620623),
-  p = n(50754),
+  p = n(620623),
+  _ = n(50754),
   h = n(722063),
-  g = n(202934),
-  m = n(531460),
+  m = n(202934),
+  g = n(531460),
   E = n(391673),
   v = s.setImmediate,
   b = s.clearImmediate,
@@ -43,9 +43,9 @@ var R = function(e) {
     s.postMessage(T(e), r.protocol + "//" + r.host)
   };
 v && b || (v = function(e) {
-  g(arguments.length, 1);
+  m(arguments.length, 1);
   var t = u(e) ? e : S(e),
-    n = p(arguments, 1);
+    n = _(arguments, 1);
   return A[++N] = function() {
     l(t, void 0, n)
   }, i(N), N
@@ -55,9 +55,9 @@ v && b || (v = function(e) {
   y.nextTick(P(e))
 } : O && O.now ? i = function(e) {
   O.now(P(e))
-} : I && !m ? (a = (o = new I).port2, o.port1.onmessage = D, i = c(a.postMessage, a)) : s.addEventListener && u(s.postMessage) && !s.importScripts && r && "file:" !== r.protocol && !f(w) ? (i = w, s.addEventListener("message", D, !1)) : i = C in h("script") ? function(e) {
-  _.appendChild(h("script"))[C] = function() {
-    _.removeChild(this), R(e)
+} : I && !g ? (a = (o = new I).port2, o.port1.onmessage = D, i = c(a.postMessage, a)) : s.addEventListener && u(s.postMessage) && !s.importScripts && r && "file:" !== r.protocol && !f(w) ? (i = w, s.addEventListener("message", D, !1)) : i = C in h("script") ? function(e) {
+  p.appendChild(h("script"))[C] = function() {
+    p.removeChild(this), R(e)
   }
 } : function(e) {
   setTimeout(P(e), 0)

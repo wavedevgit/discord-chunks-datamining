@@ -13,15 +13,15 @@ var r = n(200651),
   u = n(633302),
   d = n(334920),
   f = n(768581),
-  _ = n(185923),
-  p = n(329779);
-let h = l().memoize(e => "".concat(e * _.DC.NonDiversityPerRow, "px ").concat(e * Math.ceil(u.ZP.numNonDiversitySprites / _.DC.NonDiversityPerRow), "px")),
-  g = l().memoize(e => "".concat(e * _.DC.DiversityPerRow, "px ").concat(e * Math.ceil(u.ZP.numDiversitySprites / _.DC.DiversityPerRow), "px")),
-  m = (e, t, r) => {
+  p = n(185923),
+  _ = n(329779);
+let h = l().memoize(e => "".concat(e * p.DC.NonDiversityPerRow, "px ").concat(e * Math.ceil(u.ZP.numNonDiversitySprites / p.DC.NonDiversityPerRow), "px")),
+  m = l().memoize(e => "".concat(e * p.DC.DiversityPerRow, "px ").concat(e * Math.ceil(u.ZP.numDiversitySprites / p.DC.DiversityPerRow), "px")),
+  g = (e, t, r) => {
     let i, o, a;
     if (!e.useSpriteSheet) return;
     let s = null != e.index ? e.index : 0;
-    e.hasDiversity ? (i = n(735800)("./spritesheet-".concat(t, "-").concat(r, ".png")), o = g(r), a = _.DC.DiversityPerRow) : (i = n(604901)("./spritesheet-emoji-".concat(r, ".png")), o = h(r), a = _.DC.NonDiversityPerRow);
+    e.hasDiversity ? (i = n(735800)("./spritesheet-".concat(t, "-").concat(r, ".png")), o = m(r), a = p.DC.DiversityPerRow) : (i = n(604901)("./spritesheet-emoji-".concat(r, ".png")), o = h(r), a = p.DC.NonDiversityPerRow);
     let l = -s % a * r,
       c = -Math.floor(s / a) * r;
     return {
@@ -46,10 +46,10 @@ let h = l().memoize(e => "".concat(e * _.DC.NonDiversityPerRow, "px ").concat(e 
         let i = null == t.id ? t.url : f.ZP.getEmojiURL({
           id: t.id,
           animated: s && t.animated,
-          size: _.$U
+          size: p.$U
         });
         return null != i ? (0, r.jsx)(d.Z, {
-          className: p.lockedEmoji,
+          className: _.lockedEmoji,
           "aria-label": l,
           src: i,
           size: n,
@@ -57,10 +57,10 @@ let h = l().memoize(e => "".concat(e * _.DC.NonDiversityPerRow, "px ").concat(e 
         }) : null
       }
       return (0, r.jsx)("div", {
-        className: a()(p.emojiSpriteImage, {
-          [p.lockedEmoji]: u
+        className: a()(_.emojiSpriteImage, {
+          [_.lockedEmoji]: u
         }),
-        style: m(t, o, n),
+        style: g(t, o, n),
         children: (0, r.jsx)(c.nn4, {
           children: l
         })
@@ -68,11 +68,11 @@ let h = l().memoize(e => "".concat(e * _.DC.NonDiversityPerRow, "px ").concat(e 
     })();
     return (0, r.jsxs)(i.Fragment, {
       children: [h, u ? (0, r.jsx)("div", {
-        className: p.emojiLockIconContainer,
+        className: _.emojiLockIconContainer,
         children: (0, r.jsx)(c.mBM, {
           size: "xs",
           color: "currentColor",
-          className: p.emojiLockIcon
+          className: _.emojiLockIcon
         })
       }) : null]
     })

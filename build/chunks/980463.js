@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Gq: () => _,
+  Gq: () => p,
   SN: () => E,
   Zu: () => h,
-  gA: () => p,
-  qc: () => g,
+  gA: () => _,
+  qc: () => m,
   x8: () => v,
-  zI: () => m
+  zI: () => g
 }), n(411104);
 var r = n(544891),
   i = n(343817),
@@ -22,7 +22,7 @@ let f = {
     [l.D1]: d.ANM.FETCH_MESSAGE_CONFETTI_ENTITLEMENT,
     [l.FX]: d.ANM.FETCH_HD_STREAMING_ENTITLEMENT
   },
-  _ = async e => {
+  p = async e => {
     o.Z.dispatch({
       type: "CONSUMABLES_PRICE_FETCH_STARTED",
       skuId: e
@@ -52,7 +52,7 @@ let f = {
         skuId: e
       }), new i.Hx(t)
     }
-  }, p = async e => {
+  }, _ = async e => {
     if (o.Z.dispatch({
         type: "CONSUMABLES_ENTITLEMENT_FETCH_STARTED",
         skuId: e
@@ -94,14 +94,14 @@ let f = {
     } catch (e) {
       throw new i.Hx(e)
     }
-  }, g = async (e, t, n) => {
+  }, m = async (e, t, n) => {
     try {
       await r.tn.post({
         url: d.ANM.CONSUME_MESSAGE_CONFETTI_POTION,
         body: {
           channel_id: e,
           message_id: t,
-          emoji_name: m(n)
+          emoji_name: g(n)
         },
         rejectWithError: !1
       }), o.Z.dispatch({
@@ -113,7 +113,7 @@ let f = {
     }
     let a = (0, u.NV)(n);
     (0, c.I)(a, void 0, !0, s.LL.MessageSent)
-  }, m = e => null != e.id ? "".concat(e.name, ":").concat(e.id) : e.optionallyDiverseSequence, E = e => {
+  }, g = e => null != e.id ? "".concat(e.name, ":").concat(e.id) : e.optionallyDiverseSequence, E = e => {
     o.Z.dispatch({
       type: "CONSUMABLES_CLEAR_ERROR",
       skuId: e

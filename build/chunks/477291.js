@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -66,7 +66,7 @@ function f(e, t, n) {
   }), (0, i.showToast)((0, i.createToast)(s.NW.string(s.t["d9+vQ0"]), i.ToastType.SUCCESS))
 }
 
-function _(e) {
+function p(e) {
   let {
     summary: t,
     channel: o,

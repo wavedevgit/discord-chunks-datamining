@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  GA: () => g,
-  Hb: () => p,
+  GA: () => m,
+  Hb: () => _,
   Hi: () => E,
-  LN: () => m,
+  LN: () => g,
   OG: () => T,
   Qj: () => I,
   Qy: () => O,
@@ -61,7 +61,7 @@ let d = Object.freeze({
     messageReactionConfetti: void 0
   }),
   f = (0, r.U)(() => d),
-  _ = (e, t) => {
+  p = (e, t) => {
     o.default.track(a.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
       location: t
     }), (0, i.j)(() => {
@@ -81,7 +81,7 @@ let d = Object.freeze({
       })
     })
   },
-  p = e => {
+  _ = e => {
     (0, i.j)(() => {
       f.setState(t => {
         let {
@@ -94,14 +94,14 @@ let d = Object.freeze({
     })
   },
   h = (e, t) => {
-    null != f.getState().messageSendConfetti[e] ? p(e) : _(e, t)
+    null != f.getState().messageSendConfetti[e] ? _(e) : p(e, t)
   },
-  g = e => {
+  m = e => {
     let t = f.getState();
     null != t.messageSendConfetti[e] && 0 === t.messageSendConfetti[e].state && (t.messageSendConfetti[e].hasAutoPopped = !0)
   };
 
-function m(e) {
+function g(e) {
   return f(t => null != t.messageSendConfetti[e])
 }
 

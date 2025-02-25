@@ -14,7 +14,7 @@ var r = n(147913),
   d = n(649739),
   f = n(981631);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,19 +23,19 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   return e.filter(e => e.type === f.IIU.PLAYING && e.application_id).map(e => e.application_id)
 }
 async function h(e) {
   await o.ZP.fetchApplications(e, !1)
 }
-async function g(e) {
+async function m(e) {
   if (null == e) return;
   let t = l.Z.getChannel(e);
   if (null == t || !(0, d.Ku)("running_games_change", !1)) return;
   let n = u.Z.getActivities();
   if (0 === n.length) return;
-  let r = p([...n]);
+  let r = _([...n]);
   await h([...r]);
   let o = a.Z.getApplication(r[0]);
   null != o && i.ZP.trackWithMetadata(f.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_SET, {
@@ -45,21 +45,21 @@ async function g(e) {
     user_id: s.default.getId()
   })
 }
-class m extends r.Z {
+class g extends r.Z {
   handleRunningGamesChange() {
-    g(c.Z.getVoiceChannelId())
+    m(c.Z.getVoiceChannelId())
   }
   handleVoiceChannelSelect(e) {
     let {
       channelId: t
     } = e;
-    g(t)
+    m(t)
   }
   constructor(...e) {
-    super(...e), _(this, "actions", {
+    super(...e), p(this, "actions", {
       RUNNING_GAMES_CHANGE: this.handleRunningGamesChange,
       VOICE_CHANNEL_SELECT: this.handleVoiceChannelSelect
     })
   }
 }
-let E = new m
+let E = new g

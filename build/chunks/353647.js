@@ -47,18 +47,18 @@ function u(e, t) {
 }
 let d = new Map,
   f = new Set,
-  _ = null,
-  p = !1,
+  p = null,
+  _ = !1,
   h = !1;
 
-function g(e) {
+function m(e) {
   let {
     userId: t
   } = e;
   f.add(t)
 }
 
-function m(e) {
+function g(e) {
   let {
     outbox: t,
     userId: n
@@ -76,7 +76,7 @@ function E(e) {
 }
 
 function v() {
-  _ = null, p = !0
+  p = null, _ = !0
 }
 
 function b(e) {
@@ -84,28 +84,28 @@ function b(e) {
     entry: t,
     userId: n
   } = e;
-  _ = null;
+  p = null;
   let r = d.get(n);
   if (null == r) return !1;
   let i = r.entries.filter(e => e.id !== t.id);
   d.set(n, u(l({}, r), {
     entries: i
-  })), p = !1
+  })), _ = !1
 }
 
 function y(e) {
   let {
     error: t
   } = e;
-  _ = t, p = !1
+  p = t, _ = !1
 }
 
 function O() {
-  _ = null, p = !1
+  p = null, _ = !1
 }
 
 function S() {
-  d = new Map, f = new Set, _ = null, p = !1
+  d = new Map, f = new Set, p = null, _ = !1
 }
 
 function I() {
@@ -130,10 +130,10 @@ class N extends(r = i.ZP.Store) {
     return f.has(e)
   }
   get deleteOutboxEntryError() {
-    return _
+    return p
   }
   get isDeletingEntryHistory() {
-    return p
+    return _
   }
   get hasInitialized() {
     return h
@@ -143,8 +143,8 @@ s(N, "displayName", "ContentInventoryOutboxStore");
 let A = new N(o.Z, {
   CONNECTION_OPEN: I,
   LOGOUT: T,
-  CONTENT_INVENTORY_FETCH_OUTBOX_START: g,
-  CONTENT_INVENTORY_FETCH_OUTBOX_SUCCESS: m,
+  CONTENT_INVENTORY_FETCH_OUTBOX_START: m,
+  CONTENT_INVENTORY_FETCH_OUTBOX_SUCCESS: g,
   CONTENT_INVENTORY_FETCH_OUTBOX_FAILURE: E,
   CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_START: v,
   CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_SUCCESS: b,

@@ -2,7 +2,7 @@
 "use strict";
 n.r(t), n.d(t, {
   XXH64: () => h,
-  hash: () => g
+  hash: () => m
 });
 let r = 0x9e3779b185ebca87n,
   i = 0xc2b2ae3d27d4eb4fn,
@@ -21,11 +21,11 @@ function f(e, t) {
   return BigInt(e[t]) | BigInt(e[t + 1]) << 8n | BigInt(e[t + 2]) << 16n | BigInt(e[t + 3]) << 24n | BigInt(e[t + 4]) << 32n | BigInt(e[t + 5]) << 40n | BigInt(e[t + 6]) << 48n | BigInt(e[t + 7]) << 56n
 }
 
-function _(e, t) {
+function p(e, t) {
   return e << t & c | e >> l - t
 }
 
-function p(e) {
+function _(e) {
   return BigInt.asUintN(64, e)
 }
 class h {
@@ -41,7 +41,7 @@ class h {
     this.reset(e)
   }
   reset(e = this.#e) {
-    return this.#e = BigInt.asUintN(32, BigInt(e)), this.#t = p(this.#e + r + i), this.#n = p(this.#e + i), this.#r = this.#e, this.#i = p(this.#e - r), this.#o = null, this.#a = 0, this.#s = 0, this
+    return this.#e = BigInt.asUintN(32, BigInt(e)), this.#t = _(this.#e + r + i), this.#n = _(this.#e + i), this.#r = this.#e, this.#i = _(this.#e - r), this.#o = null, this.#a = 0, this.#s = 0, this
   }
   update(e) {
     "string" == typeof e && (e = u.encode(e));
@@ -54,13 +54,13 @@ class h {
       let n;
       this.#o.set(e.subarray(0, 32 - this.#s), this.#s);
       let o = 0;
-      n = f(this.#o, o), this.#t = p(_(p(this.#t + n * i), 31n) * r), o += 8, n = f(this.memory, o), this.#n = p(_(p(this.#n + n * i), 31n) * r), o += 8, n = f(this.memory, o), this.#r = p(_(p(this.#r + n * i), 31n) * r), o += 8, n = f(this.memory, o), this.#i = p(_(p(this.#i + n * i), 31n) * r), t += 32 - this.#s, this.#s = 0
+      n = f(this.#o, o), this.#t = _(p(_(this.#t + n * i), 31n) * r), o += 8, n = f(this.memory, o), this.#n = _(p(_(this.#n + n * i), 31n) * r), o += 8, n = f(this.memory, o), this.#r = _(p(_(this.#r + n * i), 31n) * r), o += 8, n = f(this.memory, o), this.#i = _(p(_(this.#i + n * i), 31n) * r), t += 32 - this.#s, this.#s = 0
     }
     if (t <= o - 32) {
       let n = o - 32;
       do {
         let n;
-        n = f(e, t), this.#t = p(_(p(this.#t + n * i), 31n) * r), t += 8, n = f(e, t), this.#n = p(_(p(this.#n + n * i), 31n) * r), t += 8, n = f(e, t), this.#r = p(_(p(this.#r + n * i), 31n) * r), t += 8, n = f(e, t), this.#i = p(_(p(this.#i + n * i), 31n) * r), t += 8
+        n = f(e, t), this.#t = _(p(_(this.#t + n * i), 31n) * r), t += 8, n = f(e, t), this.#n = _(p(_(this.#n + n * i), 31n) * r), t += 8, n = f(e, t), this.#r = _(p(_(this.#r + n * i), 31n) * r), t += 8, n = f(e, t), this.#i = _(p(_(this.#i + n * i), 31n) * r), t += 8
       } while (t <= n)
     }
     return t < o && (this.#o.set(e.subarray(t, o), this.#s), this.#s = o - t), this
@@ -72,12 +72,12 @@ class h {
       l = 0n,
       c = 0n,
       u = 0n;
-    for (this.#a >= 32 ? (l = p((l = _(this.#t, 1n) + _(this.#n, 7n) + _(this.#r, 12n) + _(this.#i, 18n)) ^ _(p(this.#t * i), 31n) * r), l = p(l * r + a), l = p(l ^ _(p(this.#n * i), 31n) * r), l = p(l * r + a), l = p(l ^ _(p(this.#r * i), 31n) * r), l = p(l * r + a), l = p(l ^ _(p(this.#i * i), 31n) * r), l = p(l * r + a)) : l = p(this.#e + s), l += BigInt(this.#a); n <= t - 8;) u = p(_(p((u = f(e, n)) * i), 31n) * r), l = p(_(l ^ u, 27n) * r + a), n += 8;
-    for (n + 4 <= t && (l = p(_(l ^ p((u = d(e[n + 1] << 8 | e[n], e[n + 3] << 8 | e[n + 2], 0, 0)) * r), 23n) * i + o), n += 4); n < t;) l = p(_(l ^ p((u = d(e[n++], 0, 0, 0)) * s), 11n) * r);
-    return c = p(l >> 33n), l = p((l ^ c) * i), c = p(l >> 29n), l = p((l ^ c) * o), c = p(l >> 32n), l = p(l ^ c)
+    for (this.#a >= 32 ? (l = _((l = p(this.#t, 1n) + p(this.#n, 7n) + p(this.#r, 12n) + p(this.#i, 18n)) ^ p(_(this.#t * i), 31n) * r), l = _(l * r + a), l = _(l ^ p(_(this.#n * i), 31n) * r), l = _(l * r + a), l = _(l ^ p(_(this.#r * i), 31n) * r), l = _(l * r + a), l = _(l ^ p(_(this.#i * i), 31n) * r), l = _(l * r + a)) : l = _(this.#e + s), l += BigInt(this.#a); n <= t - 8;) u = _(p(_((u = f(e, n)) * i), 31n) * r), l = _(p(l ^ u, 27n) * r + a), n += 8;
+    for (n + 4 <= t && (l = _(p(l ^ _((u = d(e[n + 1] << 8 | e[n], e[n + 3] << 8 | e[n + 2], 0, 0)) * r), 23n) * i + o), n += 4); n < t;) l = _(p(l ^ _((u = d(e[n++], 0, 0, 0)) * s), 11n) * r);
+    return c = _(l >> 33n), l = _((l ^ c) * i), c = _(l >> 29n), l = _((l ^ c) * o), c = _(l >> 32n), l = _(l ^ c)
   }
 }
 
-function g(e, t = 0) {
+function m(e, t = 0) {
   return new h(t).update(e).digest()
 }

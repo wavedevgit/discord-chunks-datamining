@@ -44,12 +44,12 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = 200,
+let _ = 200,
   h = {
     from: {
       opacity: 1
@@ -64,12 +64,12 @@ let p = 200,
       duration: 200
     }
   },
-  g = _(d({}, h), {
+  m = p(d({}, h), {
     config: {
       duration: 50
     }
   }),
-  m = _(d({}, h), {
+  g = p(d({}, h), {
     config: (e, t) => t ? {
       duration: 800
     } : {
@@ -82,9 +82,9 @@ function E(e) {
     readyState: t,
     placeholderImg: n,
     placeholderStyle: s
-  } = e, u = t === l.zo9.LOADING, [f] = i.useState(() => Date.now()), _ = t === l.zo9.READY && Date.now() - f < p, m = (0, a.Yzy)(u && null != n, _ ? g : h);
+  } = e, u = t === l.zo9.LOADING, [f] = i.useState(() => Date.now()), p = t === l.zo9.READY && Date.now() - f < _, g = (0, a.Yzy)(u && null != n, p ? m : h);
   return (0, r.jsx)(r.Fragment, {
-    children: m((e, t) => t && (0, r.jsx)(o.animated.img, {
+    children: g((e, t) => t && (0, r.jsx)(o.animated.img, {
       style: d({}, s, e),
       className: c.imagePlaceholder,
       src: n,
@@ -100,8 +100,8 @@ function v(e) {
     placeholder: u,
     placeholderVersion: d,
     placeholderStyle: f,
-    children: _
-  } = e, p = t === l.zo9.LOADING, [h] = i.useState(p), [g, v] = i.useState(!1), b = (0, s.L)(u, d, h);
+    children: p
+  } = e, _ = t === l.zo9.LOADING, [h] = i.useState(_), [m, v] = i.useState(!1), b = (0, s.L)(u, d, h);
   i.useEffect(() => {
     let e = setTimeout(() => {
       v(!0)
@@ -110,13 +110,13 @@ function v(e) {
       clearTimeout(e)
     }
   }, [h]);
-  let y = (0, a.Yzy)(p && g, m);
+  let y = (0, a.Yzy)(_ && m, g);
   return (0, r.jsxs)("div", {
     className: c.loadingOverlay,
     style: {
       aspectRatio: n
     },
-    children: [_, null != b && (0, r.jsx)(E, {
+    children: [p, null != b && (0, r.jsx)(E, {
       readyState: t,
       placeholderImg: b,
       placeholderStyle: f

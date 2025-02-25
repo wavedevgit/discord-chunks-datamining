@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -14,22 +14,22 @@ var i = n(442837),
   u = n(616030),
   d = n(474936),
   f = n(388032),
-  _ = n(619730);
+  p = n(619730);
 
-function p(e) {
+function _(e) {
   let {
     currentStep: t,
     className: n,
-    purchaseState: p,
+    purchaseState: _,
     premiumType: h,
-    useWinterTheme: g = !1,
-    onClose: m,
+    useWinterTheme: m = !1,
+    onClose: g,
     hideCloseButton: E,
     showTrialBadge: v,
     showDiscountBadge: b,
     isGift: y,
     giftRecipient: O
-  } = e, S = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), I = g ? d.nL.WINTER : d.nL.DEFAULT, T = () => {
+  } = e, S = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), I = m ? d.nL.WINTER : d.nL.DEFAULT, T = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
         return h === d.p9.TIER_0 ? f.NW.string(f.t.rk4Uu7) : f.NW.string(f.t["7YWj6+"]);
@@ -42,15 +42,15 @@ function p(e) {
     }
   };
   return y && (0, l.pO)(O) && t !== s.h8.CONFIRM ? (0, r.jsxs)(o.xBx, {
-    className: _.modalHeaderCustomGift,
+    className: p.modalHeaderCustomGift,
     separator: !1,
     children: [(0, r.jsx)(o.X6q, {
       variant: "heading-lg/semibold",
       children: T()
     }), (0, r.jsx)(o.olH, {
-      onClick: m,
-      className: _.closeButton,
-      innerClassName: _.closeButtonInner
+      onClick: g,
+      className: p.closeButton,
+      innerClassName: p.closeButtonInner
     })]
   }) : (0, r.jsx)("div", {
     className: n,
@@ -60,25 +60,25 @@ function p(e) {
       shouldShowPrice: !0,
       upgradeToPremiumType: h,
       renderAnimation: () => h === d.p9.TIER_0 ? (0, r.jsx)(u.zC, {
-        className: _.headerAnimation,
+        className: p.headerAnimation,
         currentStep: t,
-        purchaseState: p,
+        purchaseState: _,
         pause: S
       }) : h === d.p9.TIER_1 ? (0, r.jsx)(u.tK, {
-        className: _.headerAnimation,
+        className: p.headerAnimation,
         currentStep: t,
-        purchaseState: p,
+        purchaseState: _,
         pause: S
       }) : (0, r.jsx)(u.Bk, {
-        className: _.headerAnimation,
+        className: p.headerAnimation,
         currentStep: t,
-        purchaseState: p,
+        purchaseState: _,
         pause: S
       }),
       plan: null,
       isGift: !1,
-      className: _.header,
-      onClose: m,
+      className: p.header,
+      onClose: g,
       headerTheme: I,
       showTrialBadge: v,
       showDiscountBadge: b

@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,14 +44,14 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let h = {},
-  g = new l.ZP,
-  m = new Set;
+  m = new l.ZP,
+  g = new Set;
 
 function E(e) {
   h = o()(h).reject(t => t.guildId === e).keyBy("threadId").value()
@@ -75,13 +75,13 @@ function b(e) {
 
 function y(e) {
   let t = h[e];
-  g.clearTimer(e), !0 === t.muted ? ((m = new Set(m)).add(e), g.setTimer(e, t.muteConfig, () => {
-    h[e].muted = !1, (m = new Set(m)).delete(e), L.emitChange()
-  }) && (h[e].muted = !1, (m = new Set(m)).delete(e))) : (m = new Set(m)).delete(e)
+  m.clearTimer(e), !0 === t.muted ? ((g = new Set(g)).add(e), m.setTimer(e, t.muteConfig, () => {
+    h[e].muted = !1, (g = new Set(g)).delete(e), L.emitChange()
+  }) && (h[e].muted = !1, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
 }
 
 function O(e) {
-  g.reset(), m = new Set, h = {}, e.guilds.forEach(e => {
+  m.reset(), g = new Set, h = {}, e.guilds.forEach(e => {
     v(e)
   })
 }
@@ -90,7 +90,7 @@ function S(e) {
   let {
     joinedThreads: t
   } = e;
-  h = o()(t).map(e => p(f({}, e), {
+  h = o()(t).map(e => _(f({}, e), {
     joinTimestamp: new Date(e.joinTimestamp)
   })).keyBy("threadId").value()
 }
@@ -207,10 +207,10 @@ class w extends(r = a.ZP.Store) {
     return null === (t = h[e]) || void 0 === t ? void 0 : t.muteConfig
   }
   getMutedThreads() {
-    return m
+    return g
   }
   isMuted(e) {
-    return m.has(e)
+    return g.has(e)
   }
 }
 d(w, "displayName", "JoinedThreadsStore");

@@ -25,19 +25,19 @@ let c = null,
 null != u && (c = u.safeStorage);
 let d = !1,
   f = {},
-  _ = {},
-  p = !1,
+  p = {},
+  _ = !1,
   h = !1;
 
-function g() {
-  if (p) {
+function m() {
+  if (_) {
     o.K.remove(a.B1), o.K.remove(a.XM);
     return
   }
-  null != i ? o.K.set(a.B1, i) : o.K.remove(a.B1), o.K.set(a.XM, _)
+  null != i ? o.K.set(a.B1, i) : o.K.remove(a.B1), o.K.set(a.XM, p)
 }
 
-function m(e) {
+function g(e) {
   return null == e || 0 === e.length ? {
     decryptedToken: null,
     wasEncrypted: !1
@@ -56,16 +56,16 @@ function E(e) {
 
 function v() {
   if (h) return;
-  i = o.K.get(a.B1), _ = o.K.get(a.XM) || {};
+  i = o.K.get(a.B1), p = o.K.get(a.XM) || {};
   let {
     decryptedToken: e,
     wasEncrypted: t
-  } = m(i);
-  d = t, r = e, f = l(Object.entries(_).map(e => {
+  } = g(i);
+  d = t, r = e, f = l(Object.entries(p).map(e => {
     let [t, n] = e, {
       decryptedToken: r,
       wasEncrypted: i
-    } = m(n);
+    } = g(n);
     return d = i || d, [t, r]
   }).filter(e => {
     let [t, n] = e;
@@ -82,25 +82,25 @@ function y(e, t) {
     I(t);
     return
   }
-  r = e, null != t && (f[t] = e), d ? T() : (i = r, _ = f, g())
+  r = e, null != t && (f[t] = e), d ? T() : (i = r, p = f, m())
 }
 
 function O() {
-  !p && (p = !0, g())
+  !_ && (_ = !0, m())
 }
 
 function S() {
-  p && (p = !1, g())
+  _ && (_ = !1, m())
 }
 
 function I(e) {
   let t = r;
-  return null != e && (t = f[e], delete f[e], delete _[e]), t === r && (r = null, i = null), g(), null != t
+  return null != e && (t = f[e], delete f[e], delete p[e]), t === r && (r = null, i = null), m(), null != t
 }
 
 function T() {
-  (null == c ? void 0 : c.isEncryptionAvailable()) ? (null != r && (i = E(r)), _ = l(Object.entries(f).map(e => {
+  (null == c ? void 0 : c.isEncryptionAvailable()) ? (null != r && (i = E(r)), p = l(Object.entries(f).map(e => {
     let [t, n] = e;
     return [t, E(n)]
-  })), d = !0) : (i = r, _ = f), g()
+  })), d = !0) : (i = r, p = f), m()
 }

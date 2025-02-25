@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  FT: () => _,
-  Qd: () => p
+  FT: () => p,
+  Qd: () => _
 });
 var r = n(442837),
   i = n(704215),
@@ -19,11 +19,11 @@ function f(e, t) {
   return null != n && (0, l.jl)(n, e)
 }
 
-function _(e, t) {
+function p(e, t) {
   return (0, r.e7)([a.Z], () => f(e, t))
 }
 
-function p(e, t, n, r) {
+function _(e, t, n, r) {
   (0, o.PS)(t, n => {
     if (f(e, t)) return !1;
     n.dismissedGuildContent = (0, l.GV)(n.dismissedGuildContent, e)

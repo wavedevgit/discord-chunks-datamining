@@ -26,8 +26,8 @@ e.exports = function(e) {
         return Object(t) === t ? t : this
       }
       return c.apply(e, o(u, arguments))
-    }, f = r(0, c.length - u.length), _ = [], p = 0; p < f; p++) _[p] = "$" + p;
-  if (l = Function("binder", "return function (" + s(_, ",") + "){ return binder.apply(this,arguments); }")(d), c.prototype) {
+    }, f = r(0, c.length - u.length), p = [], _ = 0; _ < f; _++) p[_] = "$" + _;
+  if (l = Function("binder", "return function (" + s(p, ",") + "){ return binder.apply(this,arguments); }")(d), c.prototype) {
     var h = function() {};
     h.prototype = c.prototype, l.prototype = new h, h.prototype = null
   }

@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $U: () => p,
+  $U: () => _,
   Jw: () => E,
   Kg: () => h,
   PO: () => y,
   RZ: () => v,
   Wx: () => S,
   ZT: () => I,
-  bd: () => g,
+  bd: () => m,
   f$: () => N,
-  gc: () => _,
+  gc: () => p,
   gd: () => T,
   s6: () => O,
-  xQ: () => m
+  xQ: () => g
 }), n(653041);
 var r = n(192379),
   i = n(442837),
@@ -26,7 +26,7 @@ var r = n(192379),
   d = n(271383),
   f = n(25990);
 
-function _(e) {
+function p(e) {
   return r.useMemo(() => {
     let t = d.ZP.getMutableAllGuildsAndMembers(),
       n = {};
@@ -39,7 +39,7 @@ function _(e) {
   }, [e])
 }
 
-function p(e, t) {
+function _(e, t) {
   let n = (0, i.e7)([d.ZP], () => void 0 === t ? null : d.ZP.getMember(t.id, e.id)),
     r = (0, a.Z)(e.avatarDecoration),
     {
@@ -71,7 +71,7 @@ function h(e, t) {
   }, [e, t])
 }
 
-function g(e) {
+function m(e) {
   return (0, i.cj)([f.Z, l.Z], () => null == e ? {
     pendingProfileEffectId: f.Z.getPendingProfileEffectId(),
     errors: f.Z.getErrors().profileEffect
@@ -81,7 +81,7 @@ function g(e) {
   }, [e])
 }
 
-function m(e, t) {
+function g(e, t) {
   (0, c.Cf)(e === t ? void 0 : e)
 }
 

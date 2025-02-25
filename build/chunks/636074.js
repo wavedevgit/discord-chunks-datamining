@@ -19,11 +19,11 @@ function u(e) {
     u = e.strategy,
     d = void 0 === u ? "absolute" : u,
     f = e.modifiers,
-    _ = void 0 === f ? c : f,
-    p = e.referenceElement,
+    p = void 0 === f ? c : f,
+    _ = e.referenceElement,
     h = e.onFirstUpdate,
-    g = e.innerRef,
-    m = e.children,
+    m = e.innerRef,
+    g = e.children,
     E = r.useContext(i.C8),
     v = r.useState(null),
     b = v[0],
@@ -32,14 +32,14 @@ function u(e) {
     S = O[0],
     I = O[1];
   r.useEffect(function() {
-    (0, o.k$)(g, b)
-  }, [g, b]);
+    (0, o.k$)(m, b)
+  }, [m, b]);
   var T = r.useMemo(function() {
       return {
         placement: n,
         strategy: d,
         onFirstUpdate: h,
-        modifiers: [].concat(_, [{
+        modifiers: [].concat(p, [{
           name: "arrow",
           enabled: null != S,
           options: {
@@ -47,8 +47,8 @@ function u(e) {
           }
         }])
       }
-    }, [n, d, h, _, S]),
-    N = (0, a.D)(p || E, b, T),
+    }, [n, d, h, p, S]),
+    N = (0, a.D)(_ || E, b, T),
     A = N.state,
     C = N.styles,
     R = N.forceUpdate,
@@ -68,5 +68,5 @@ function u(e) {
         update: P || l
       }
     }, [y, I, n, A, C, P, R]);
-  return (0, o.$p)(m)(D)
+  return (0, o.$p)(g)(D)
 }

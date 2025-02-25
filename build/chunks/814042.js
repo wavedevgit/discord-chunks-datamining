@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(104494),
   d = n(639119),
   f = n(165583),
-  _ = n(626135),
-  p = n(74538),
+  p = n(626135),
+  _ = n(74538),
   h = n(45521),
-  g = n(27733),
-  m = n(981631),
+  m = n(27733),
+  g = n(981631),
   E = n(474936),
   v = n(388032),
   b = n(702461),
@@ -31,8 +31,8 @@ let O = () => (0, h.f)(!1),
       analyticsLocations: S
     } = (0, c.ZP)(l.Z.PREMIUM_UPSELL);
     i.useEffect(() => {
-      _.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
-        location_section: m.jXE.STICKER_PICKER_UPSELL,
+      p.default.track(g.rMx.PREMIUM_UPSELL_VIEWED, {
+        location_section: g.jXE.STICKER_PICKER_UPSELL,
         type: E.cd.STICKER_PICKER_UPSELL,
         location_stack: S
       })
@@ -52,7 +52,7 @@ let O = () => (0, h.f)(!1),
         type: E.cd.STICKER_PICKER_UPSELL,
         subscriptionTier: null !== (o = null == I ? void 0 : null === (n = I.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== o ? o : E.Si.TIER_2,
         children: N ? v.NW.format(v.t.MAGag4, {
-          planName: (0, p.aq)(E.Xh.PREMIUM_MONTH_TIER_0),
+          planName: (0, _.aq)(E.Xh.PREMIUM_MONTH_TIER_0),
           onClick: h
         }) : v.NW.format(v.t.jt7JX1, {
           onClick: h
@@ -74,8 +74,8 @@ let O = () => (0, h.f)(!1),
             onClick: h
           })
         })]
-      }), !A && (0, r.jsx)(g.Z, {
-        analyticsSection: m.jXE.EXPRESSION_PICKER,
+      }), !A && (0, r.jsx)(m.Z, {
+        analyticsSection: g.jXE.EXPRESSION_PICKER,
         buttonText: A ? N ? v.NW.string(v.t.hz78hI) : v.NW.string(v.t["Gd/XHB"]) : void 0
       }), (0, r.jsx)(s.P3F, {
         className: b.upsellClose,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A: () => _
+  A: () => p
 });
 var r = n(200651),
   i = n(192379),
@@ -65,7 +65,7 @@ function f(e, t) {
   return i
 }
 
-function _(e) {
+function p(e) {
   var {
     shouldAnimate: t = "respect-motion-settings"
   } = e, n = d(e, ["shouldAnimate"]);

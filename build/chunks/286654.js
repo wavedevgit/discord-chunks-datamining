@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  z: () => p
+  z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -49,7 +49,7 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t, i, a) {
+function p(e, t, i, a) {
   let c = s.default.getCurrentUser();
   (null != t || l.ZP.canUseCustomCallSounds(c)) && (0, o.jW)(e, async () => {
     let {
@@ -63,11 +63,11 @@ function _(e, t, i, a) {
   })
 }
 
-function p(e, t) {
+function _(e, t) {
   return i.useCallback(n => {
     n.stopPropagation();
     let r = a.Z.getGuild(e.guildId),
       i = s.default.getCurrentUser();
-    (null != r || l.ZP.canUseCustomCallSounds(i)) && _(n, r, e, t)
+    (null != r || l.ZP.canUseCustomCallSounds(i)) && p(n, r, e, t)
   }, [e, t])
 }

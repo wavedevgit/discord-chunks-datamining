@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  i: () => _
+  i: () => p
 });
 var r = n(200651),
   i = n(481060),
@@ -62,7 +62,7 @@ function f() {
   })
 }
 
-function _() {
+function p() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s.IlC.APP,
     t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = null != e ? e : (0, a.GB)();

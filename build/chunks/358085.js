@@ -4,16 +4,16 @@ n.r(t), n.d(t, {
   PlatformTypes: () => r,
   getNativePlatform: () => v,
   getOS: () => b,
-  getPlatform: () => m,
+  getPlatform: () => g,
   getPlatformName: () => E,
   isAndroid: () => h,
   isAndroidChrome: () => f,
-  isAndroidWeb: () => _,
+  isAndroidWeb: () => p,
   isDesktop: () => u,
-  isIOS: () => g,
+  isIOS: () => m,
   isLinux: () => c,
   isMac: () => l,
-  isMacWeb: () => p,
+  isMacWeb: () => _,
   isPlatformEmbedded: () => o,
   isWeb: () => d,
   isWindows: () => s
@@ -42,19 +42,19 @@ function u() {
 }
 
 function d() {
-  return "WEB" === m()
+  return "WEB" === g()
 }
 
 function f() {
   return null != navigator.userAgent && null != navigator.userAgent.toLowerCase().match("(android ).+chrome/[.0-9]* mobile")
 }
 
-function _() {
+function p() {
   var e;
   return (null === (e = navigator.userAgent) || void 0 === e ? void 0 : e.match(/android/i)) != null
 }
 
-function p() {
+function _() {
   var e;
   return (null === (e = navigator.userAgent) || void 0 === e ? void 0 : e.match(/Macintosh/i)) != null
 }
@@ -63,11 +63,11 @@ function h() {
   return "android" === a
 }
 
-function g() {
+function m() {
   return "ios" === a
 }
 
-function m() {
+function g() {
   return s() ? "WINDOWS" : l() ? "OSX" : c() ? "LINUX" : "WEB"
 }
 

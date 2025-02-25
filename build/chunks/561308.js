@@ -8,8 +8,8 @@ n.d(t, {
   Jg: () => O,
   Nq: () => I,
   Ol: () => v,
-  PJ: () => m,
-  T_: () => _,
+  PJ: () => g,
+  T_: () => p,
   V5: () => T,
   ap: () => C,
   bT: () => R,
@@ -20,7 +20,7 @@ n.d(t, {
   q_: () => w,
   vU: () => D,
   yA: () => S,
-  yh: () => g,
+  yh: () => m,
   zo: () => L
 }), n(301563);
 var r = n(164369),
@@ -47,7 +47,7 @@ let d = e => {
     start: "id" in e ? c.default.extractTimestamp(e.id) : e.start,
     now: "end" in e && null != e.end ? Math.min(e.end, t) : t
   }),
-  _ = (e, t) => {
+  p = (e, t) => {
     let {
       seconds: n,
       minutes: r,
@@ -63,7 +63,7 @@ let d = e => {
       seconds: o(n)
     })
   },
-  p = {
+  _ = {
     secondsAgo: e => u.NW.formatToPlainString(u.t.EOrEJi, {
       count: e
     }),
@@ -85,7 +85,7 @@ let d = e => {
   },
   h = function(e, t, n) {
     let {
-      formatSet: r = p
+      formatSet: r = _
     } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {}, i = o()(n), a = o()(c.default.extractTimestamp(e.id)), s = i.diff(a, "s"), u = Math.abs(s);
     if (u < l.Z.Seconds.MINUTE) return r.secondsAgo(s);
     if (u < l.Z.Seconds.HOUR) {
@@ -107,24 +107,24 @@ let d = e => {
     let d = Math.round(s / l.Z.Seconds.DAYS_30);
     return r.monthsAgo(d)
   },
-  g = function(e, t) {
+  m = function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : Date.now(),
       r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
-    return E(e) ? _(e, n) : h(e, t, n, r)
+    return E(e) ? p(e, n) : h(e, t, n, r)
   };
 
-function m(e, t) {
+function g(e, t) {
   return e.traits.find(e => e.type === t)
 }
 
 function E(e) {
   var t, n;
-  return null !== (n = null === (t = m(e, a.N.IS_LIVE)) || void 0 === t ? void 0 : t.is_live) && void 0 !== n && n
+  return null !== (n = null === (t = g(e, a.N.IS_LIVE)) || void 0 === t ? void 0 : t.is_live) && void 0 !== n && n
 }
 
 function v(e) {
   var t, n;
-  return null !== (n = null === (t = m(e, a.N.FIRST_TIME)) || void 0 === t ? void 0 : t.first_time) && void 0 !== n && n
+  return null !== (n = null === (t = g(e, a.N.FIRST_TIME)) || void 0 === t ? void 0 : t.first_time) && void 0 !== n && n
 }
 
 function b(e) {
@@ -141,21 +141,21 @@ function O(e) {
 
 function S(e) {
   var t;
-  return null === (t = m(e, a.N.DURATION_SECONDS)) || void 0 === t ? void 0 : t.duration_seconds
+  return null === (t = g(e, a.N.DURATION_SECONDS)) || void 0 === t ? void 0 : t.duration_seconds
 }
 
 function I(e) {
   var t;
-  return null === (t = m(e, a.N.AGGREGATE_RANGE)) || void 0 === t ? void 0 : t.range
+  return null === (t = g(e, a.N.AGGREGATE_RANGE)) || void 0 === t ? void 0 : t.range
 }
 
 function T(e) {
   var t;
-  return null === (t = m(e, a.N.MARATHON)) || void 0 === t ? void 0 : t.marathon
+  return null === (t = g(e, a.N.MARATHON)) || void 0 === t ? void 0 : t.marathon
 }
 
 function N(e) {
-  let t = m(e, a.N.RESURRECTED);
+  let t = g(e, a.N.RESURRECTED);
   return (null == t ? void 0 : t.resurrected_last_played) != null ? new Date(t.resurrected_last_played) : void 0
 }
 
@@ -203,7 +203,7 @@ function P(e) {
 
 function D(e) {
   var t;
-  return null === (t = m(e, a.N.STREAK_DAYS)) || void 0 === t ? void 0 : t.streak_count_days
+  return null === (t = g(e, a.N.STREAK_DAYS)) || void 0 === t ? void 0 : t.streak_count_days
 }
 
 function w(e) {
@@ -235,5 +235,5 @@ function L(e) {
 
 function x(e) {
   var t;
-  return null === (t = m(e, a.N.TRENDING_CONTENT)) || void 0 === t ? void 0 : t.trending
+  return null === (t = g(e, a.N.TRENDING_CONTENT)) || void 0 === t ? void 0 : t.trending
 }

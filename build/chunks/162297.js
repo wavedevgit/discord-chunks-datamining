@@ -28,8 +28,8 @@ var r = n(200651),
   C = n(914010),
   I = n(768581),
   S = n(135431),
-  T = n(728345),
-  P = n(812206),
+  P = n(728345),
+  T = n(812206),
   A = n(321231),
   w = n(230171),
   Z = n(981631),
@@ -42,9 +42,9 @@ function M(e) {
   let {
     applicationId: t,
     embedUrl: n
-  } = e, [a, o, s] = (0, l.Wu)([P.Z], () => [P.Z.getApplication(t), P.Z.isFetchingApplication(t), P.Z.didFetchingApplicationFail(t)], [t]);
+  } = e, [a, o, s] = (0, l.Wu)([T.Z], () => [T.Z.getApplication(t), T.Z.isFetchingApplication(t), T.Z.didFetchingApplicationFail(t)], [t]);
   return (i.useEffect(() => {
-    null != a || o || s || T.ZP.fetchApplication(t)
+    null != a || o || s || P.ZP.fetchApplication(t)
   }, [a, o, s, t]), null != a && (0, S.Eb)({
     customInstallUrl: a.customInstallUrl,
     installParams: a.installParams,
@@ -64,8 +64,8 @@ function W(e) {
     var e;
     return null !== (e = C.Z.getGuildId()) && void 0 !== e ? e : void 0
   }), {
-    iconURL: T,
-    name: P,
+    iconURL: P,
+    name: T,
     description: M
   } = i.useMemo(() => (0, g.sl)(n, {
     fakeAppIconURL: L,
@@ -106,17 +106,18 @@ function W(e) {
     });
   return $ ? (0, r.jsx)(w.O, {
     app: n,
-    embedUrl: d
+    embedUrl: d,
+    linkType: w.U.OAUTH
   }) : (0, r.jsxs)("div", {
     ref: H,
     className: R.embedContainer,
     children: [(0, r.jsx)(F, {
       application: n,
-      iconUrl: T
+      iconUrl: P
     }), (0, r.jsx)("img", {
       className: R.icon,
       alt: n.name,
-      src: null != T ? T : D,
+      src: null != P ? P : D,
       "aria-hidden": !0,
       draggable: !1
     }), (0, r.jsxs)("div", {
@@ -126,7 +127,7 @@ function W(e) {
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-lg/bold",
           color: "interactive-active",
-          children: P
+          children: T
         }), null != W && (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-normal",

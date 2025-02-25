@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r, i = n(442837),
   o = n(570140),
@@ -24,7 +24,7 @@ function f() {
   l = {}, c = null
 }
 
-function _(e) {
+function p(e) {
   let {
     statistics: t
   } = e;
@@ -33,7 +33,7 @@ function _(e) {
   }), c = Date.now()
 }
 
-function p(e) {
+function _(e) {
   let {
     duration: t,
     applicationId: n,
@@ -83,8 +83,8 @@ class h extends(r = i.ZP.Store) {
   }
 }
 s(h, "displayName", "LibraryApplicationStatisticsStore");
-let g = new h(o.Z, {
-  USER_ACTIVITY_STATISTICS_FETCH_SUCCESS: _,
-  ACTIVITY_UPDATE_START: p,
+let m = new h(o.Z, {
+  USER_ACTIVITY_STATISTICS_FETCH_SUCCESS: p,
+  ACTIVITY_UPDATE_START: _,
   LOGOUT: f
 })

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   M: () => h,
-  V: () => g
+  V: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -50,9 +50,9 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,7 +60,7 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -68,25 +68,25 @@ function p(e, t) {
   return i
 }
 let h = i.createContext(void 0),
-  g = i.forwardRef(function(e, t) {
+  m = i.forwardRef(function(e, t) {
     let {
       children: n,
       impressionType: c,
       impression: d,
-      disableTrack: p,
-      returnRef: g
-    } = e, m = _(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), E = i.useRef(null);
+      disableTrack: _,
+      returnRef: m
+    } = e, g = p(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), E = i.useRef(null);
     return (0, o.T)(E, {
-      returnRef: g
+      returnRef: m
     }), i.useContext(l.Z)({
       type: c,
       name: null == d ? void 0 : d.impressionName,
       properties: null == d ? void 0 : d.impressionProperties
     }, {
-      disableTrack: p
+      disableTrack: _
     }), i.useImperativeHandle(t, () => E.current), (0, r.jsx)(h.Provider, {
       value: !0,
-      children: (0, r.jsx)("div", f(u({}, m), {
+      children: (0, r.jsx)("div", f(u({}, g), {
         ref: E,
         role: "dialog",
         tabIndex: -1,

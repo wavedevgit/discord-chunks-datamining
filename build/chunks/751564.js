@@ -13,7 +13,7 @@ var r = n(690244)("%TypeError%"),
 e.exports = function(e, t, n) {
   if ("Object" !== f(e)) throw new r("Assertion failed: Type(O) is not Object");
   if (!c(t)) throw new r("Assertion failed: IsPropertyKey(P) is not true");
-  var _ = i({
+  var p = i({
     Type: f,
     IsDataDescriptor: l,
     IsAccessorDescriptor: s
@@ -22,6 +22,6 @@ e.exports = function(e, t, n) {
       Type: f,
       IsDataDescriptor: l,
       IsAccessorDescriptor: s
-    }, _)) throw new r("Assertion failed: Desc is not a valid Property Descriptor");
-  return o(l, u, a, e, t, _)
+    }, p)) throw new r("Assertion failed: Desc is not a valid Property Descriptor");
+  return o(l, u, a, e, t, p)
 }

@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(752305),
   d = n(893718),
   f = n(131704),
-  _ = n(823379),
-  p = n(5192),
+  p = n(823379),
+  _ = n(5192),
   h = n(51144),
-  g = n(698305),
-  m = n(510659),
+  m = n(698305),
+  g = n(510659),
   E = n(810097),
   v = n(652853),
   b = n(228168),
@@ -54,7 +54,7 @@ let I = (0, f.kt)({
           c = "\n> ".concat(i);
         return null != i ? "".concat(E.jd).concat(l, "*").concat(c, "\n").concat(t) : "".concat(E.jd).concat(l, "*\n").concat(t);
       default:
-        (0, _.vE)(r)
+        (0, p.vE)(r)
     }
   },
   N = e => {
@@ -66,7 +66,7 @@ let I = (0, f.kt)({
       case b.n_.STATUS:
         return O.t.g9BTCA;
       default:
-        (0, _.vE)(e)
+        (0, p.vE)(e)
     }
   };
 
@@ -77,7 +77,7 @@ function A(e) {
     channelId: o,
     profileType: s,
     sourceType: f,
-    sourceDetails: _,
+    sourceDetails: p,
     setPopoutRef: E,
     modalKey: A,
     onAction: C,
@@ -86,7 +86,7 @@ function A(e) {
   } = e, {
     resetInteraction: D,
     setInteractionToast: w
-  } = (0, m.Xo)(), {
+  } = (0, g.Xo)(), {
     primaryColor: L
   } = (0, v.z)(), [x, M] = i.useState(""), [j, k] = i.useState((0, u.JM)(x)), U = i.useRef(!1), G = i.useRef(null), B = i.useCallback(e => {
     e.key === y.vn.ESCAPE && (e.stopPropagation(), D())
@@ -107,11 +107,11 @@ function A(e) {
       input: e,
       username: h.ZP.getName(t),
       sourceType: f,
-      sourceDetails: _
+      sourceDetails: p
     });
     w(null);
     try {
-      await (0, g.Z)({
+      await (0, m.Z)({
         userId: t.id,
         content: n,
         location: "UserProfileReplyPopout",
@@ -145,7 +145,7 @@ function A(e) {
         editorClassName: S.editor,
         type: c.Ie.USER_PROFILE_REPLY,
         placeholder: O.NW.formatToPlainString(N(f), {
-          username: p.ZP.getName(n, o, t)
+          username: _.ZP.getName(n, o, t)
         }),
         channel: I,
         textValue: x,

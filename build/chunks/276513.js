@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(388032),
   f = n(448363);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -47,13 +47,13 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -76,13 +76,13 @@ function v(e) {
     role: t = "button",
     variant: n = "default",
     textVariant: i = "text-sm/medium",
-    lineClamp: _ = 1,
+    lineClamp: p = 1,
     text: h,
     icon: E,
     iconPosition: v = "end",
     external: b,
     focusProps: y
-  } = e, O = m(e, ["role", "variant", "textVariant", "lineClamp", "text", "icon", "iconPosition", "external", "focusProps"]);
+  } = e, O = g(e, ["role", "variant", "textVariant", "lineClamp", "text", "icon", "iconPosition", "external", "focusProps"]);
 
   function S() {
     if (null == E) return;
@@ -92,8 +92,8 @@ function v(e) {
       size: e
     })
   }
-  return b && (E = a.G), (0, r.jsx)(s.t, g(p({}, y), {
-    children: (0, r.jsxs)("button", g(p({
+  return b && (E = a.G), (0, r.jsx)(s.t, m(_({}, y), {
+    children: (0, r.jsxs)("button", m(_({
       role: t,
       className: o()(f.linkButton, f[n])
     }, O), {
@@ -101,7 +101,7 @@ function v(e) {
         tag: "span",
         variant: i,
         color: "none",
-        lineClamp: _,
+        lineClamp: p,
         className: f.text,
         children: h
       }), null != E && "end" === v && (0, r.jsx)(S, {}), b && (0, r.jsx)(l.n, {

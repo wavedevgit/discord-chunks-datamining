@@ -21,10 +21,10 @@ function d(e, t, n) {
 }
 let f = "production" === u.C.DEVELOPMENT || window.GLOBAL_ENV.RELEASE_CHANNEL === u.C.STAGING;
 
-function _() {
+function p() {
   f = (0, a.QI)(l.default.getCurrentUser())
 }
-class p extends(r = i.ZP.Store) {
+class _ extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(l.default, s.Z), Object.defineProperties(this, {
       isDeveloper: {
@@ -32,7 +32,7 @@ class p extends(r = i.ZP.Store) {
         get: () => f,
         set: () => {}
       }
-    }), _(), setTimeout(() => Object.freeze(this))
+    }), p(), setTimeout(() => Object.freeze(this))
   }
   getExperimentDescriptor() {
     return f ? {
@@ -47,9 +47,9 @@ class p extends(r = i.ZP.Store) {
     super(...e), d(this, "isDeveloper", !1)
   }
 }
-d(p, "displayName", "DeveloperExperimentStore");
-let h = new p(o.Z, {
-  CONNECTION_OPEN: _,
-  OVERLAY_INITIALIZE: _,
-  CURRENT_USER_UPDATE: _
+d(_, "displayName", "DeveloperExperimentStore");
+let h = new _(o.Z, {
+  CONNECTION_OPEN: p,
+  OVERLAY_INITIALIZE: p,
+  CURRENT_USER_UPDATE: p
 })

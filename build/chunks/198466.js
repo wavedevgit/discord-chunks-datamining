@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => h,
-  m: () => p
+  m: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -14,16 +14,16 @@ var r = n(200651),
   u = n(386548);
 let d = 200,
   f = 20,
-  _ = 200;
+  p = 200;
 
-function p(e) {
+function _(e) {
   let {
     children: t,
     confettiTriggerRef: n,
     setConfettiCount: c,
     setShouldFireConfetti: f,
-    tooltipProps: p
-  } = e, [h, g] = i.useState(0), m = i.useRef(-1), E = i.useRef(!0), v = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), {
+    tooltipProps: _
+  } = e, [h, m] = i.useState(0), g = i.useRef(-1), E = i.useRef(!0), v = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), {
     scaleFactor: b
   } = (0, s.q_F)({
     from: {
@@ -49,20 +49,20 @@ function p(e) {
     children: (0, r.jsx)(s.P3F, {
       className: u.confettiTrigger,
       onMouseDown: () => {
-        g(1), f(!0), c(e => Math.min(e + 2, _)), window.clearTimeout(m.current), m.current = window.setTimeout(() => {
+        m(1), f(!0), c(e => Math.min(e + 2, p)), window.clearTimeout(g.current), g.current = window.setTimeout(() => {
           E.current && c(0)
         }, d)
       },
       onMouseUp: () => {
-        g(0), f(!1)
+        m(0), f(!1)
       },
       onMouseEnter: () => {
         var e;
-        g(2), null == p || null === (e = p.onMouseEnter) || void 0 === e || e.call(p)
+        m(2), null == _ || null === (e = _.onMouseEnter) || void 0 === e || e.call(_)
       },
       onMouseLeave: () => {
         var e;
-        g(0), null == p || null === (e = p.onMouseLeave) || void 0 === e || e.call(p)
+        m(0), null == _ || null === (e = _.onMouseLeave) || void 0 === e || e.call(_)
       },
       innerRef: n,
       children: t

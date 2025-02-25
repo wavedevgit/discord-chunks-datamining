@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(692547),
   d = n(481060),
   f = n(980568),
-  _ = n(560768),
-  p = n(812206),
+  p = n(560768),
+  _ = n(812206),
   h = n(405701),
-  g = n(540059),
-  m = n(243778),
+  m = n(540059),
+  g = n(243778),
   E = n(843693),
   v = n(246642),
   b = n(921227),
@@ -152,7 +152,7 @@ function V(e) {
     channel: t,
     guild: n
   } = e, i = [];
-  return (0, r.jsx)(m.ZP, {
+  return (0, r.jsx)(g.ZP, {
     contentTypes: i,
     children: e => {
       let {
@@ -174,13 +174,13 @@ function Z(e) {
     className: c,
     channel: u,
     isThreadCreation: f,
-    renderDots: _,
-    poggermodeEnabled: p,
-    isComboing: m
+    renderDots: p,
+    poggermodeEnabled: _,
+    isComboing: g
   } = e, {
     rateLimitPerUser: E
-  } = u, b = N.default.getCurrentUser(), y = O.Z.getGuild(t), I = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == b ? void 0 : b.id)).reject(e => S.Z.isBlockedOrIgnored(e)).map(e => N.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), A = (0, g.R6)("TypingUsers");
-  if (0 === T.length && !I && !m) return i && null != n ? (0, r.jsx)(F, {
+  } = u, b = N.default.getCurrentUser(), y = O.Z.getGuild(t), I = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == b ? void 0 : b.id)).reject(e => S.Z.isBlockedOrIgnored(e)).map(e => N.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), A = (0, m.R6)("TypingUsers");
+  if (0 === T.length && !I && !g) return i && null != n ? (0, r.jsx)(F, {
     activity: n,
     isFocused: o,
     isRefreshChatInputEnabled: A
@@ -201,11 +201,11 @@ function Z(e) {
   }) : T.length > 3 && (M = w.NW.string(w.t.uVDhqa)), (0, r.jsxs)("div", {
     className: a()(L.typing, {
       "stop-animation": !o,
-      [L.isComboing]: p && m
+      [L.isComboing]: _ && g
     }, c),
     children: [(0, r.jsxs)("div", {
       className: L.typingDots,
-      children: [T.length > 0 && !1 !== _ && (0, r.jsx)(d.bbz, {
+      children: [T.length > 0 && !1 !== p && (0, r.jsx)(d.bbz, {
         className: L.ellipsis,
         dotRadius: 3.5,
         themed: !0
@@ -218,7 +218,7 @@ function Z(e) {
     }), A ? null : (0, r.jsx)(h.Z, {
       channel: u,
       isThreadCreation: f
-    }), p && m && (0, r.jsx)(v.Z, {
+    }), _ && g && (0, r.jsx)(v.Z, {
       channelId: u.id
     })]
   })
@@ -231,7 +231,7 @@ function H(e) {
   } = e, i = U(e, ["channel", "isThreadCreation"]);
   let o = (0, c.e7)([I.Z], () => I.Z.findActivity(e => null != e.application_id)),
     a = (0, c.e7)([E.ZP, y.default], () => E.ZP.getUserCombo(y.default.getId(), t.id)),
-    s = (0, c.e7)([b.Z, p.Z], () => (0, _.Z)(t, o, b.Z, p.Z)),
+    s = (0, c.e7)([b.Z, _.Z], () => (0, p.Z)(t, o, b.Z, _.Z)),
     l = k(M({}, i), {
       baseTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
       activeTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),

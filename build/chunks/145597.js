@@ -4,16 +4,16 @@ let r;
 n.d(t, {
   FW: () => s,
   Gr: () => a,
-  Ht: () => p,
+  Ht: () => _,
   Js: () => c,
   QF: () => f,
   R2: () => u,
   Te: () => h,
   Tq: () => o,
-  VS: () => m,
+  VS: () => g,
   qU: () => l,
-  tB: () => _,
-  vR: () => g
+  tB: () => p,
+  vR: () => m
 }), n(610138), n(216116), n(78328), n(815648), n(47120), n(301563), n(490029);
 var i = n(358085);
 n(981631);
@@ -38,11 +38,11 @@ function f() {
   return isNaN(t) && (t = u), r = t
 }
 
-function _(e) {
+function p(e) {
   r = e
 }
 
-function p() {
+function _() {
   return new URLSearchParams(window.location.search).get("rpc_auth_token")
 }
 
@@ -50,10 +50,10 @@ function h(e) {
   return !i.isPlatformEmbedded || e.width >= s.width && e.height >= s.height
 }
 
-function g(e) {
+function m(e) {
   d = e
 }
 
-function m() {
+function g() {
   return d
 }

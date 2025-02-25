@@ -38,12 +38,12 @@ i.prototype.get_child = function(e) {
       f = this._root;
     for (u.right = this._root;;) {
       if (null === f ? (f = new i(e), d.set_child(r, f), t = !0, this.size++) : a(f.left) && a(f.right) && (f.red = !0, f.left.red = !1, f.right.red = !1), a(f) && a(d)) {
-        var _ = u.right === c;
-        f === d.get_child(o) ? u.set_child(_, s(c, !o)) : u.set_child(_, l(c, !o))
+        var p = u.right === c;
+        f === d.get_child(o) ? u.set_child(p, s(c, !o)) : u.set_child(p, l(c, !o))
       }
-      var p = this._comparator(f.data, e);
-      if (0 === p) break;
-      o = r, r = p < 0, null !== c && (u = c), c = d, d = f, f = f.get_child(r)
+      var _ = this._comparator(f.data, e);
+      if (0 === _) break;
+      o = r, r = _ < 0, null !== c && (u = c), c = d, d = f, f = f.get_child(r)
     }
     this._root = n.right
   }
@@ -59,17 +59,17 @@ i.prototype.get_child = function(e) {
     var f = this._comparator(e, n.data);
     if (u = f > 0, 0 === f && (c = n), !a(n) && !a(n.get_child(u))) {
       if (a(n.get_child(!u))) {
-        var _ = s(n, u);
-        r.set_child(d, _), r = _
+        var p = s(n, u);
+        r.set_child(d, p), r = p
       } else if (!a(n.get_child(!u))) {
-        var p = r.get_child(!d);
-        if (null !== p) {
-          if (a(p.get_child(!d)) || a(p.get_child(d))) {
+        var _ = r.get_child(!d);
+        if (null !== _) {
+          if (a(_.get_child(!d)) || a(_.get_child(d))) {
             var h = o.right === r;
-            a(p.get_child(d)) ? o.set_child(h, l(r, d)) : a(p.get_child(!d)) && o.set_child(h, s(r, d));
-            var g = o.get_child(h);
-            g.red = !0, n.red = !0, g.left.red = !1, g.right.red = !1
-          } else r.red = !1, p.red = !0, n.red = !0
+            a(_.get_child(d)) ? o.set_child(h, l(r, d)) : a(_.get_child(!d)) && o.set_child(h, s(r, d));
+            var m = o.get_child(h);
+            m.red = !0, n.red = !0, m.left.red = !1, m.right.red = !1
+          } else r.red = !1, _.red = !0, n.red = !0
         }
       }
     }

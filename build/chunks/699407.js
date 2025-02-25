@@ -32,7 +32,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -43,14 +43,14 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let h = 1500,
-  g = 1e4,
-  m = 1500,
+  m = 1e4,
+  g = 1500,
   E = null !== (a = window.requestIdleCallback) && void 0 !== a ? a : e => setImmediate(() => e()),
   v = new u.R,
   b = {
@@ -69,7 +69,7 @@ let h = 1500,
       dispatcher: n,
       actionHandler: a,
       getFingerprint: u,
-      getSessionId: _ = O,
+      getSessionId: p = O,
       TRACKING_URL: S,
       drainTimeoutOverride: I,
       waitFor: T
@@ -87,7 +87,7 @@ let h = 1500,
 
     function C() {
       null == o && A() && (o = E(R, {
-        timeout: m
+        timeout: g
       }))
     }
 
@@ -110,8 +110,8 @@ let h = 1500,
 
     function P(e) {
       let t = Date.now(),
-        n = e.map(e => p(f({}, e), {
-          properties: p(f({}, e.properties), {
+        n = e.map(e => _(f({}, e), {
+          properties: _(f({}, e.properties), {
             client_send_timestamp: t
           })
         }));
@@ -125,7 +125,7 @@ let h = 1500,
         rejectWithError: !1
       })
     }
-    m = null != I ? I : h, b.handleConnectionOpen = function(e) {
+    g = null != I ? I : h, b.handleConnectionOpen = function(e) {
       let {
         analyticsToken: t,
         user: n
@@ -143,7 +143,7 @@ let h = 1500,
         fingerprint: i,
         resolve: o
       } = e;
-      return _().then(e => {
+      return p().then(e => {
         let {
           sessionId: a
         } = e, s = {
@@ -155,7 +155,7 @@ let h = 1500,
           }, n),
           resolve: o
         }, l = N(s);
-        null != l && (s.properties.client_uuid = v.generate(l)), y.push(s), y.length > g && (y = y.slice(-g)), r ? R() : C()
+        null != l && (s.properties.client_uuid = v.generate(l)), y.push(s), y.length > m && (y = y.slice(-m)), r ? R() : C()
       }), !1
     };
     class D extends(t = l.ZP.Store) {

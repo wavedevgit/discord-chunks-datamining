@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -50,7 +50,7 @@ function f(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => {
+let p = e => {
   switch (e.id) {
     case s.bi.BUILT_IN:
       return a.SsZ;
@@ -61,7 +61,7 @@ let _ = e => {
   }
 };
 
-function p(e) {
+function _(e) {
   var {
     section: t,
     className: n,
@@ -70,8 +70,8 @@ function p(e) {
     padding: s,
     isSelected: c,
     selectable: f = !1
-  } = e, p = d(e, ["section", "className", "width", "height", "padding", "isSelected", "selectable"]);
-  let h = _(t);
+  } = e, _ = d(e, ["section", "className", "width", "height", "padding", "isSelected", "selectable"]);
+  let h = p(t);
   return (0, r.jsx)("div", {
     className: o()(l.wrapper, n, {
       [l.selectable]: f,
@@ -88,6 +88,6 @@ function p(e) {
       size: "custom",
       width: i,
       height: a
-    }, p)) : null
+    }, _)) : null
   })
 }

@@ -21,11 +21,11 @@ function c(e, t, n) {
     validForUserIds: u,
     allowedVersions: d,
     targetBuildOverride: f
-  } = e, _ = Object.keys(f);
-  if (0 === i().intersection(_, t).length) return {
+  } = e, p = Object.keys(f);
+  if (0 === i().intersection(p, t).length) return {
     valid: !1,
     reason: l.NW.formatToPlainString(l.t.wySUzs, {
-      requestedTargets: _.map(e => {
+      requestedTargets: p.map(e => {
         var t;
         return null !== (t = a.o0[e]) && void 0 !== t ? t : "unknown"
       }).join(", ")
@@ -61,8 +61,8 @@ function c(e, t, n) {
       })
     }
   }
-  let p = null != c ? new Date(c).getTime() : null;
-  return null != p && p < Date.now() ? {
+  let _ = null != c ? new Date(c).getTime() : null;
+  return null != _ && _ < Date.now() ? {
     valid: !1,
     reason: l.NW.string(l.t["8eRE6e"])
   } : u.length > 0 && !u.includes(o.default.getId()) ? {

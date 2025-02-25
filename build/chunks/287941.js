@@ -30,7 +30,7 @@ let d = () => {
       {
         shouldPlay: l,
         failureReason: c
-      } = p(n);
+      } = _(n);
     o.default.track(u.rMx.CONFETTI_POTION_TRIGGERED, {
       emoji_type: a ? s.aK.Unicode : s.aK.UserCreated,
       will_play: l,
@@ -42,7 +42,7 @@ let d = () => {
       boundingRect: t
     })
   },
-  _ = (e, t) => {
+  p = (e, t) => {
     let n = l.HZ.getCurrentConfig({
       location: "TriggerConfetti"
     }, {
@@ -65,7 +65,7 @@ let d = () => {
       failureReason: s.U0.NotInConfettiMode
     }
   },
-  p = e => {
+  _ = e => {
     let t = l.HZ.getCurrentConfig({
       location: "TriggerConfetti"
     }, {
@@ -99,15 +99,15 @@ let d = () => {
     let l = (0, c.Eq)(e),
       f = (null == l ? void 0 : null === (t = l.emoji) || void 0 === t ? void 0 : t[0].id) == null,
       {
-        shouldPlay: p,
+        shouldPlay: _,
         failureReason: h
-      } = _(e, i);
+      } = p(e, i);
     o.default.track(u.rMx.CONFETTI_POTION_TRIGGERED, {
       emoji_type: f ? s.aK.Unicode : s.aK.UserCreated,
-      will_play: p,
+      will_play: _,
       failure_reason: h,
       location: a
-    }), p && null != l && l.emoji.forEach(e => {
+    }), _ && null != l && l.emoji.forEach(e => {
       r.Z.dispatch({
         type: "POTIONS_TRIGGER_MESSAGE_CONFETTI",
         emoji: e,

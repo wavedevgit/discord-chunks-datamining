@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(442837),
   i = n(570140),
@@ -44,4 +44,4 @@ class f extends r.ZP.Store {
     }), l(this, "isLowDisk", !1), this.refresh(), this.waitFor(s.Z), setInterval(() => this.refresh(), d)
   }
 }
-let _ = new f
+let p = new f

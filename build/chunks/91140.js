@@ -20,7 +20,7 @@ let u = [s.OV, s.EE, s.Af, s.U9, s.wO, s.f, s.n8, s.v1, s.pQ],
       selected: d,
       hovered: f
     } = e, {
-      largeImage: _
+      largeImage: p
     } = (0, o.rv)({
       entry: n,
       showCoverImage: !1
@@ -42,11 +42,11 @@ let u = [s.OV, s.EE, s.Af, s.U9, s.wO, s.f, s.n8, s.v1, s.pQ],
           }, t))
         })]
       }), (0, r.jsx)(a.f, {
-        alt: null !== (t = null == _ ? void 0 : _.text) && void 0 !== t ? t : null == _ ? void 0 : _.alt,
-        src: null == _ ? void 0 : _.src,
+        alt: null !== (t = null == p ? void 0 : p.text) && void 0 !== t ? t : null == p ? void 0 : p.alt,
+        src: null == p ? void 0 : p.src,
         size: 48,
         className: c.thumbnail,
-        showTooltip: (null == _ ? void 0 : _.text) != null
+        showTooltip: (null == p ? void 0 : p.text) != null
       })]
     })
   },

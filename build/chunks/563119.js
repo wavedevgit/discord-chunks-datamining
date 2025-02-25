@@ -14,11 +14,11 @@ var i = n(704215),
   u = n(626135),
   d = n(542238),
   f = n(927923),
-  _ = n(981631),
-  p = n(388032),
+  p = n(981631),
+  _ = n(388032),
   h = n(909413);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,14 +27,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -60,19 +60,19 @@ let b = "game_console_alert_modal",
   y = "game_console_ptt_alert_modal",
   O = {
     maybeShowPTTAlert(e) {
-      if (c.Z.getMode() !== _.pM4.PUSH_TO_TALK || (0, l.un)(i.z.CONSOLE_PTT_DISABLE_ALERT)) return Promise.resolve();
+      if (c.Z.getMode() !== p.pM4.PUSH_TO_TALK || (0, l.un)(i.z.CONSOLE_PTT_DISABLE_ALERT)) return Promise.resolve();
       let t = {
-        [_.ABu.XBOX]: p.NW.string(p.t.bVZ7v7),
-        [_.ABu.PLAYSTATION]: p.NW.string(p.t["6iqUsb"]),
-        [_.ABu.PLAYSTATION_STAGING]: p.NW.string(p.t["6iqUsb"])
+        [p.ABu.XBOX]: _.NW.string(_.t.bVZ7v7),
+        [p.ABu.PLAYSTATION]: _.NW.string(_.t["6iqUsb"]),
+        [p.ABu.PLAYSTATION_STAGING]: _.NW.string(_.t["6iqUsb"])
       } [e];
       return null == t ? Promise.resolve() : new Promise(e => {
         let n = () => {
             (0, l.EW)(i.z.CONSOLE_PTT_DISABLE_ALERT), e()
           },
-          s = e => (0, r.jsx)(a.default, v(m({}, e), {
+          s = e => (0, r.jsx)(a.default, v(g({}, e), {
             title: t,
-            body: p.NW.string(p.t.bL21zs),
+            body: _.NW.string(_.t.bL21zs),
             onConfirm: n,
             titleClassName: h.title
           }));
@@ -93,19 +93,19 @@ let b = "game_console_alert_modal",
         dismissCallback: () => (0, o.Mr)(b)
       });
 
-      function p() {
+      function _() {
         null != l && ((0, s.Z)({
           platformType: l
-        }), u.default.track(_.rMx.ACCOUNT_LINK_STEP, {
+        }), u.default.track(p.rMx.ACCOUNT_LINK_STEP, {
           previous_step: f.Lw,
           current_step: "desktop oauth",
           platform_type: l
         }))
       }
-      let h = e => (0, r.jsx)(a.default, v(m({}, e), {
+      let h = e => (0, r.jsx)(a.default, v(g({}, e), {
         title: t,
         body: c,
-        onConfirm: p
+        onConfirm: _
       }));
       (0, o.nf)(b) ? (0, o.o)(b, h) : (0, o.h7)(h, {
         modalKey: b

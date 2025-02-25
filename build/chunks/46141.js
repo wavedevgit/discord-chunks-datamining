@@ -7,15 +7,15 @@ n.d(t, {
   Om: () => T,
   Sf: () => h,
   U4: () => A,
-  Vg: () => m,
+  Vg: () => g,
   Xc: () => I,
   ZP: () => f,
-  dm: () => _,
-  fv: () => g,
+  dm: () => p,
+  fv: () => m,
   jc: () => v,
   kX: () => O,
   o_: () => y,
-  qo: () => p,
+  qo: () => _,
   sn: () => b,
   u_: () => C,
   z: () => S
@@ -88,14 +88,14 @@ class f extends r.Z {
       };
     switch (e.type) {
       case s.HeQ.CARD:
-        return new _(d(c({}, r), {
+        return new p(d(c({}, r), {
           brand: e.brand,
           last4: e.last_4,
           expiresMonth: e.expires_month,
           expiresYear: e.expires_year
         }));
       case s.HeQ.PAYPAL:
-        return new p(d(c({}, r), {
+        return new _(d(c({}, r), {
           email: e.email
         }));
       case s.HeQ.VENMO:
@@ -108,9 +108,9 @@ class f extends r.Z {
           email: e.email
         }));
       case s.HeQ.GIROPAY:
-        return new g(c({}, r));
+        return new m(c({}, r));
       case s.HeQ.PRZELEWY24:
-        return new m(d(c({}, r), {
+        return new g(d(c({}, r), {
           email: e.email,
           bank: e.bank
         }));
@@ -148,16 +148,16 @@ class f extends r.Z {
     let t = e.type;
     switch (t) {
       case s.HeQ.CARD:
-        return new _(e);
-      case s.HeQ.PAYPAL:
         return new p(e);
+      case s.HeQ.PAYPAL:
+        return new _(e);
       case s.HeQ.SOFORT:
       case s.HeQ.SEPA_DEBIT:
         return new h(e);
       case s.HeQ.GIROPAY:
-        return new g(e);
-      case s.HeQ.PRZELEWY24:
         return new m(e);
+      case s.HeQ.PRZELEWY24:
+        return new g(e);
       case s.HeQ.PAYSAFE_CARD:
         return new b(e);
       case s.HeQ.GCASH:
@@ -204,14 +204,14 @@ class f extends r.Z {
     this.id = e.id, this.type = e.type, this.paymentGateway = e.paymentGateway, this.invalid = null !== (t = e.invalid) && void 0 !== t && t, this.billingAddress = null !== (n = e.billingAddress) && void 0 !== n ? n : {}, this.isDefault = e.isDefault, this.flags = null !== (r = e.flags) && void 0 !== r ? r : 0, this.country = null !== (i = e.country) && void 0 !== i ? i : ""
   }
 }
-class _ extends f {
+class p extends f {
   constructor(e) {
     var t, n, r, i;
     if (super(e), l(this, "brand", void 0), l(this, "last4", void 0), l(this, "expiresMonth", void 0), l(this, "expiresYear", void 0), e.type !== s.HeQ.CARD) throw Error("Cannot instantiate CreditCardSourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.CARD));
     this.brand = null !== (t = e.brand) && void 0 !== t ? t : "", this.last4 = null !== (n = e.last4) && void 0 !== n ? n : "", this.expiresMonth = null !== (r = e.expiresMonth) && void 0 !== r ? r : 0, this.expiresYear = null !== (i = e.expiresYear) && void 0 !== i ? i : 0
   }
 }
-class p extends f {
+class _ extends f {
   constructor(e) {
     if (super(e), l(this, "email", void 0), e.type !== s.HeQ.PAYPAL) throw Error("Cannot instantiate PaypalSourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.PAYPAL));
     this.email = e.email || ""
@@ -223,12 +223,12 @@ class h extends f {
     this.email = e.email || ""
   }
 }
-class g extends f {
+class m extends f {
   constructor(e) {
     if (super(e), e.type !== s.HeQ.GIROPAY) throw Error("Cannot instantiate GiropaySourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.GIROPAY))
   }
 }
-class m extends f {
+class g extends f {
   constructor(e) {
     if (super(e), e.type !== s.HeQ.PRZELEWY24) throw Error("Cannot instantiate Przelewy24SourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.PRZELEWY24));
     this.email = e.email || "", this.bank = e.bank

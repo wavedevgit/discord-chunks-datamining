@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  I: () => g
+  I: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -44,13 +44,13 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -68,13 +68,13 @@ function h(e, t) {
   return i
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   let o = (0, c.G6)(e);
   return i.forwardRef(function(u, f) {
     var {
       children: h,
-      className: g,
-      dir: m = "ltr",
+      className: m,
+      dir: g = "ltr",
       orientation: E = "vertical",
       fade: v = !1,
       customTheme: b = !1,
@@ -82,7 +82,7 @@ function g(e, t, n) {
       style: O,
       gap: S,
       experimental_useStack: I
-    } = u, T = p(u, ["children", "className", "dir", "orientation", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack"]);
+    } = u, T = _(u, ["children", "className", "dir", "orientation", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack"]);
     let {
       scrollerRef: N,
       getScrollerState: A
@@ -94,35 +94,35 @@ function g(e, t, n) {
     let R = (0, c.tT)({
       paddingFix: y,
       orientation: E,
-      dir: m,
-      className: g,
+      dir: g,
+      className: m,
       scrollerRef: N,
       specs: o
     });
-    return I ? (0, r.jsx)(l.K, _(d({
+    return I ? (0, r.jsx)(l.K, p(d({
       gap: S,
       ref: N,
-      className: a()(g, {
+      className: a()(m, {
         [e]: !0,
         [t]: v,
         [n]: b
       }),
       style: (0, c.uT)(O, E),
-      dir: m
+      dir: g
     }, T), {
       children: (0, r.jsxs)(s.Jc, {
         containerRef: N,
         children: [h, R]
       })
-    })) : (0, r.jsx)("div", _(d({
+    })) : (0, r.jsx)("div", p(d({
       ref: N,
-      className: a()(g, {
+      className: a()(m, {
         [e]: !0,
         [t]: v,
         [n]: b
       }),
       style: (0, c.uT)(O, E),
-      dir: m
+      dir: g
     }, T), {
       children: (0, r.jsxs)(s.Jc, {
         containerRef: N,

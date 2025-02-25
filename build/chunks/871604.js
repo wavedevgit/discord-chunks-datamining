@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(311819),
   d = n(541716),
   f = n(433355),
-  _ = n(592125),
-  p = n(944486),
+  p = n(592125),
+  _ = n(944486),
   h = n(626135),
-  g = n(572004),
-  m = n(591759),
+  m = n(572004),
+  g = n(591759),
   E = n(135431),
   v = n(621853),
   b = n(429974),
@@ -74,11 +74,11 @@ function C(e) {
       var e;
       return null === (e = v.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
     }),
-    C = (0, o.e7)([p.Z], () => p.Z.getChannelId()),
-    R = (0, o.e7)([_.Z], () => _.Z.getChannel(C)),
-    P = (0, o.e7)([_.Z], () => {
+    C = (0, o.e7)([_.Z], () => _.Z.getChannelId()),
+    R = (0, o.e7)([p.Z], () => p.Z.getChannel(C)),
+    P = (0, o.e7)([p.Z], () => {
       var e;
-      return null === (e = _.Z.getChannel(C)) || void 0 === e ? void 0 : e.guild_id
+      return null === (e = p.Z.getChannel(C)) || void 0 === e ? void 0 : e.guild_id
     }),
     D = i.useMemo(() => null != R ? {
       channel: R,
@@ -93,8 +93,8 @@ function C(e) {
     x = i.useCallback(() => {
       if (null != A) {
         if (w) {
-          let e = p.Z.getCurrentlySelectedChannelId(),
-            t = _.Z.getChannel(e),
+          let e = _.Z.getCurrentlySelectedChannelId(),
+            t = p.Z.getChannel(e),
             r = null != f.ZP.getSidebarState(e) || (null == t ? void 0 : t.isGuildVocal()) ? d.Ie.SIDEBAR : d.Ie.NORMAL;
           l.__(c._b.TEXT, r, {
             applicationId: A.id
@@ -110,8 +110,8 @@ function C(e) {
   if (null == A || !(0, E.Eb)(A)) return null;
   let {
     customInstallUrl: j
-  } = A, k = null == j || m.Z.isDiscordUrl(j) ? a.qJs : a.Gr1, U = w ? void 0 : k;
-  return g.wS ? (0, r.jsx)(a.yRy, {
+  } = A, k = null == j || g.Z.isDiscordUrl(j) ? a.qJs : a.Gr1, U = w ? void 0 : k;
+  return m.wS ? (0, r.jsx)(a.yRy, {
     renderPopout: e => {
       let {
         closePopout: t
@@ -125,7 +125,7 @@ function C(e) {
           children: (0, r.jsx)(a.sNh, {
             id: "copy",
             label: S.NW.string(S.t.XWDiho),
-            action: () => (0, g.JG)((0, u.J)(A))
+            action: () => (0, m.JG)((0, u.J)(A))
           })
         })
       })

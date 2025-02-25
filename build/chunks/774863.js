@@ -47,12 +47,12 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = 14 * s.Z.Millis.DAY,
-  p = Object.freeze([]),
+let p = 14 * s.Z.Millis.DAY,
+  _ = Object.freeze([]),
   h = {},
-  g = {};
+  m = {};
 
-function m(e) {
+function g(e) {
   var t;
   let {
     messageId: n,
@@ -63,16 +63,16 @@ function m(e) {
     channelId: r,
     attachments: i,
     reportSubmit: !1
-  }, a = null !== (t = g[r]) && void 0 !== t ? t : p;
-  g[r] = [...a, o], h[n] = o
+  }, a = null !== (t = m[r]) && void 0 !== t ? t : _;
+  m[r] = [...a, o], h[n] = o
 }
 
 function E(e) {
   let {
     messageId: t,
     channelId: n
-  } = e, r = g[n];
-  null != r && (g[n] = r.map(e => e.messageId === t ? f(u({}, e), {
+  } = e, r = m[n];
+  null != r && (m[n] = r.map(e => e.messageId === t ? f(u({}, e), {
     reportSubmit: !0
   }) : e), h[t] = f(u({}, h[t]), {
     reportSubmit: !0
@@ -91,7 +91,7 @@ function b(e) {
 }
 
 function y() {
-  h = {}, g = {}
+  h = {}, m = {}
 }
 class O extends(i = o.ZP.Store) {
   getFpMessageInfo(e) {
@@ -99,11 +99,11 @@ class O extends(i = o.ZP.Store) {
   }
   getChannelFpInfo(e) {
     var t;
-    return null !== (t = g[e]) && void 0 !== t ? t : p
+    return null !== (t = m[e]) && void 0 !== t ? t : _
   }
   canSubmitFpReport(e) {
     let t = h[e];
-    return null != t && !t.reportSubmit && l.default.age(t.messageId) < _
+    return null != t && !t.reportSubmit && l.default.age(t.messageId) < p
   }
   get validContentScanVersion() {
     return r
@@ -113,6 +113,6 @@ c(O, "displayName", "FalsePositiveStore");
 let S = new O(a.Z, {
   LOGOUT: v,
   CONNECTION_OPEN: b,
-  MESSAGE_EXPLICIT_CONTENT_FP_CREATE: m,
+  MESSAGE_EXPLICIT_CONTENT_FP_CREATE: g,
   MESSAGE_EXPLICIT_CONTENT_FP_SUBMIT: E
 })

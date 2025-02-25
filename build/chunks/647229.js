@@ -39,16 +39,16 @@ function c(e, t, n) {
     a = t[2] ^ r[2];
   t = t[n ? 1 : 3] ^ r[3];
   var s, c, u, d, f = r.length / 4 - 2,
-    _ = 4,
-    p = [0, 0, 0, 0];
+    p = 4,
+    _ = [0, 0, 0, 0];
   e = (s = e.s[n])[0];
   var h = s[1],
-    g = s[2],
-    m = s[3],
+    m = s[2],
+    g = s[3],
     E = s[4];
-  for (d = 0; d < f; d++) s = e[i >>> 24] ^ h[o >> 16 & 255] ^ g[a >> 8 & 255] ^ m[255 & t] ^ r[_], c = e[o >>> 24] ^ h[a >> 16 & 255] ^ g[t >> 8 & 255] ^ m[255 & i] ^ r[_ + 1], u = e[a >>> 24] ^ h[t >> 16 & 255] ^ g[i >> 8 & 255] ^ m[255 & o] ^ r[_ + 2], t = e[t >>> 24] ^ h[i >> 16 & 255] ^ g[o >> 8 & 255] ^ m[255 & a] ^ r[_ + 3], _ += 4, i = s, o = c, a = u;
-  for (d = 0; 4 > d; d++) p[n ? 3 & -d : d] = E[i >>> 24] << 24 ^ E[o >> 16 & 255] << 16 ^ E[a >> 8 & 255] << 8 ^ E[255 & t] ^ r[_++], s = i, i = o, o = a, a = t, t = s;
-  return p
+  for (d = 0; d < f; d++) s = e[i >>> 24] ^ h[o >> 16 & 255] ^ m[a >> 8 & 255] ^ g[255 & t] ^ r[p], c = e[o >>> 24] ^ h[a >> 16 & 255] ^ m[t >> 8 & 255] ^ g[255 & i] ^ r[p + 1], u = e[a >>> 24] ^ h[t >> 16 & 255] ^ m[i >> 8 & 255] ^ g[255 & o] ^ r[p + 2], t = e[t >>> 24] ^ h[i >> 16 & 255] ^ m[o >> 8 & 255] ^ g[255 & a] ^ r[p + 3], p += 4, i = s, o = c, a = u;
+  for (d = 0; 4 > d; d++) _[n ? 3 & -d : d] = E[i >>> 24] << 24 ^ E[o >> 16 & 255] << 16 ^ E[a >> 8 & 255] << 8 ^ E[255 & t] ^ r[p++], s = i, i = o, o = a, a = t, t = s;
+  return _
 }
 
 function u(e, t) {
@@ -60,10 +60,10 @@ function u(e, t) {
     u = o[3],
     d = o[4],
     f = o[5],
-    _ = o[6],
-    p = o[7];
-  for (n = 0; 64 > n; n++) 16 > n ? r = t[n] : (r = t[n + 1 & 15], i = t[n + 14 & 15], r = t[15 & n] = (r >>> 7 ^ r >>> 18 ^ r >>> 3 ^ r << 25 ^ r << 14) + (i >>> 17 ^ i >>> 19 ^ i >>> 10 ^ i << 15 ^ i << 13) + t[15 & n] + t[n + 9 & 15] | 0), r = r + p + (d >>> 6 ^ d >>> 11 ^ d >>> 25 ^ d << 26 ^ d << 21 ^ d << 7) + (_ ^ d & (f ^ _)) + a[n], p = _, _ = f, f = d, d = u + r | 0, u = c, c = l, s = r + ((l = s) & c ^ u & (l ^ c)) + (l >>> 2 ^ l >>> 13 ^ l >>> 22 ^ l << 30 ^ l << 19 ^ l << 10) | 0;
-  o[0] = o[0] + s | 0, o[1] = o[1] + l | 0, o[2] = o[2] + c | 0, o[3] = o[3] + u | 0, o[4] = o[4] + d | 0, o[5] = o[5] + f | 0, o[6] = o[6] + _ | 0, o[7] = o[7] + p | 0
+    p = o[6],
+    _ = o[7];
+  for (n = 0; 64 > n; n++) 16 > n ? r = t[n] : (r = t[n + 1 & 15], i = t[n + 14 & 15], r = t[15 & n] = (r >>> 7 ^ r >>> 18 ^ r >>> 3 ^ r << 25 ^ r << 14) + (i >>> 17 ^ i >>> 19 ^ i >>> 10 ^ i << 15 ^ i << 13) + t[15 & n] + t[n + 9 & 15] | 0), r = r + _ + (d >>> 6 ^ d >>> 11 ^ d >>> 25 ^ d << 26 ^ d << 21 ^ d << 7) + (p ^ d & (f ^ p)) + a[n], _ = p, p = f, f = d, d = u + r | 0, u = c, c = l, s = r + ((l = s) & c ^ u & (l ^ c)) + (l >>> 2 ^ l >>> 13 ^ l >>> 22 ^ l << 30 ^ l << 19 ^ l << 10) | 0;
+  o[0] = o[0] + s | 0, o[1] = o[1] + l | 0, o[2] = o[2] + c | 0, o[3] = o[3] + u | 0, o[4] = o[4] + d | 0, o[5] = o[5] + f | 0, o[6] = o[6] + p | 0, o[7] = o[7] + _ | 0
 }
 
 function d(e, t) {
@@ -77,11 +77,11 @@ function f(e, t) {
   "undefined" != typeof window && window.performance && "function" == typeof window.performance.now ? e.addEntropy(window.performance.now(), t, "loadtime") : e.addEntropy((new Date).valueOf(), t, "loadtime")
 }
 
-function _(e) {
-  e.b = p(e).concat(p(e)), e.L = new l.cipher.aes(e.b)
+function p(e) {
+  e.b = _(e).concat(_(e)), e.L = new l.cipher.aes(e.b)
 }
 
-function p(e) {
+function _(e) {
   for (var t = 0; 4 > t && (e.h[t] = e.h[t] + 1 | 0, !e.h[t]); t++);
   return e.L.encrypt(e.h)
 }
@@ -408,9 +408,9 @@ l.cipher.aes = function(e) {
       u = c.i,
       d = [0, 0, 0, 0];
     n = s(e.encrypt(n));
-    var f, _ = [];
-    for (a = 0, r = r || [], i = i || 64; a + 4 < t.length; a += 4) d = u(d, f = t.slice(a, a + 4)), _ = _.concat(u(n, e.encrypt(u(n, f)))), n = s(n);
-    return f = t.slice(a), t = c.bitLength(f), a = e.encrypt(u(n, [0, 0, 0, t])), f = c.clamp(u(f.concat([0, 0, 0]), a), t), d = u(d, u(f.concat([0, 0, 0]), a)), d = e.encrypt(u(d, u(n, s(n)))), r.length && (d = u(d, o ? r : l.mode.ocb2.pmac(e, r))), _.concat(c.concat(f, c.clamp(d, i)))
+    var f, p = [];
+    for (a = 0, r = r || [], i = i || 64; a + 4 < t.length; a += 4) d = u(d, f = t.slice(a, a + 4)), p = p.concat(u(n, e.encrypt(u(n, f)))), n = s(n);
+    return f = t.slice(a), t = c.bitLength(f), a = e.encrypt(u(n, [0, 0, 0, t])), f = c.clamp(u(f.concat([0, 0, 0]), a), t), d = u(d, u(f.concat([0, 0, 0]), a)), d = e.encrypt(u(d, u(n, s(n)))), r.length && (d = u(d, o ? r : l.mode.ocb2.pmac(e, r))), p.concat(c.concat(f, c.clamp(d, i)))
   },
   decrypt: function(e, t, n, r, i, o) {
     if (128 !== l.bitArray.bitLength(n)) throw new l.exception.invalid("ocb iv must be 128 bits");
@@ -419,11 +419,11 @@ l.cipher.aes = function(e) {
       u = l.bitArray,
       d = u.i,
       f = [0, 0, 0, 0],
-      _ = c(e.encrypt(n)),
-      p = l.bitArray.bitLength(t) - i,
+      p = c(e.encrypt(n)),
+      _ = l.bitArray.bitLength(t) - i,
       h = [];
-    for (n = 0, r = r || []; n + 4 < p / 32; n += 4) a = d(_, e.decrypt(d(_, t.slice(n, n + 4)))), f = d(f, a), h = h.concat(a), _ = c(_);
-    if (s = p - 32 * n, a = e.encrypt(d(_, [0, 0, 0, s])), a = d(a, u.clamp(t.slice(n), s).concat([0, 0, 0])), f = d(f, a), f = e.encrypt(d(f, d(_, c(_)))), r.length && (f = d(f, o ? r : l.mode.ocb2.pmac(e, r))), !u.equal(u.clamp(f, i), u.bitSlice(t, p))) throw new l.exception.corrupt("ocb: tag doesn't match");
+    for (n = 0, r = r || []; n + 4 < _ / 32; n += 4) a = d(p, e.decrypt(d(p, t.slice(n, n + 4)))), f = d(f, a), h = h.concat(a), p = c(p);
+    if (s = _ - 32 * n, a = e.encrypt(d(p, [0, 0, 0, s])), a = d(a, u.clamp(t.slice(n), s).concat([0, 0, 0])), f = d(f, a), f = e.encrypt(d(f, d(p, c(p)))), r.length && (f = d(f, o ? r : l.mode.ocb2.pmac(e, r))), !u.equal(u.clamp(f, i), u.bitSlice(t, _))) throw new l.exception.corrupt("ocb: tag doesn't match");
     return h.concat(u.clamp(a, s))
   },
   pmac: function(e, t) {
@@ -466,9 +466,9 @@ l.cipher.aes = function(e) {
     return t
   },
   C: function(e, t, n, r, i, o) {
-    var a, s, c, u, d, f, _, p, h = l.bitArray;
-    for (f = n.length, _ = h.bitLength(n), p = h.bitLength(r), s = h.bitLength(i), a = t.encrypt([0, 0, 0, 0]), 96 === s ? (i = i.slice(0), i = h.concat(i, [1])) : (i = l.mode.gcm.j(a, [0, 0, 0, 0], i), i = l.mode.gcm.j(a, i, [0, 0, Math.floor(s / 0x100000000), 0xffffffff & s])), s = l.mode.gcm.j(a, [0, 0, 0, 0], r), d = i.slice(0), r = s.slice(0), e || (r = l.mode.gcm.j(a, s, n)), u = 0; u < f; u += 4) d[3]++, c = t.encrypt(d), n[u] ^= c[0], n[u + 1] ^= c[1], n[u + 2] ^= c[2], n[u + 3] ^= c[3];
-    return n = h.clamp(n, _), e && (r = l.mode.gcm.j(a, s, n)), e = [Math.floor(p / 0x100000000), 0xffffffff & p, Math.floor(_ / 0x100000000), 0xffffffff & _], r = l.mode.gcm.j(a, r, e), c = t.encrypt(i), r[0] ^= c[0], r[1] ^= c[1], r[2] ^= c[2], r[3] ^= c[3], {
+    var a, s, c, u, d, f, p, _, h = l.bitArray;
+    for (f = n.length, p = h.bitLength(n), _ = h.bitLength(r), s = h.bitLength(i), a = t.encrypt([0, 0, 0, 0]), 96 === s ? (i = i.slice(0), i = h.concat(i, [1])) : (i = l.mode.gcm.j(a, [0, 0, 0, 0], i), i = l.mode.gcm.j(a, i, [0, 0, Math.floor(s / 0x100000000), 0xffffffff & s])), s = l.mode.gcm.j(a, [0, 0, 0, 0], r), d = i.slice(0), r = s.slice(0), e || (r = l.mode.gcm.j(a, s, n)), u = 0; u < f; u += 4) d[3]++, c = t.encrypt(d), n[u] ^= c[0], n[u + 1] ^= c[1], n[u + 2] ^= c[2], n[u + 3] ^= c[3];
+    return n = h.clamp(n, p), e && (r = l.mode.gcm.j(a, s, n)), e = [Math.floor(_ / 0x100000000), 0xffffffff & _, Math.floor(p / 0x100000000), 0xffffffff & p], r = l.mode.gcm.j(a, r, e), c = t.encrypt(i), r[0] ^= c[0], r[1] ^= c[1], r[2] ^= c[2], r[3] ^= c[3], {
       tag: h.bitSlice(r, 0, o),
       data: n
     }
@@ -520,8 +520,8 @@ l.cipher.aes = function(e) {
       for (o = 0; o < this.c.length && (i = i.concat(this.c[o].finalize()), a += this.m[o], this.m[o] = 0, n || !(this.P & 1 << o)); o++);
       for (this.P >= 1 << this.c.length && (this.c.push(new l.hash.sha256), this.m.push(0)), this.f -= a, a > this.o && (this.o = a), this.P++, this.b = l.hash.sha256.hash(this.b.concat(i)), this.L = new l.cipher.aes(this.b), n = 0; 4 > n && (this.h[n] = this.h[n] + 1 | 0, !this.h[n]); n++);
     }
-    for (n = 0; n < e; n += 4) 0 == (n + 1) % this.ca && _(this), r.push((i = p(this))[0], i[1], i[2], i[3]);
-    return _(this), r.slice(0, e)
+    for (n = 0; n < e; n += 4) 0 == (n + 1) % this.ca && p(this), r.push((i = _(this))[0], i[1], i[2], i[3]);
+    return p(this), r.slice(0, e)
   },
   setDefaultParanoia: function(e, t) {
     if (0 === e && "Setting paranoia=0 will ruin your security; use it only for testing" !== t) throw new l.exception.invalid("Setting paranoia=0 will ruin your security; use it only for testing");

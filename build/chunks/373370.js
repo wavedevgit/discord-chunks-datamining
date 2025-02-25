@@ -46,18 +46,18 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = (0, s.T)({});
+let _ = (0, s.T)({});
 
 function h(e, t, n) {
   return n ? c.NW.formatToParts(e, t) : c.NW.formatToPlainString(e, t)
 }
 
-function g(e) {
+function m(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -78,7 +78,7 @@ function g(e) {
   }, r)
 }
 
-function m(e) {
+function g(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -177,13 +177,13 @@ function O(e) {
     {
       targetMinutes: f
     } = n,
-    _ = (0, o.Kr)(t.config);
-  if ((0, o.$J)(t) && (0, o.$H)(t)) return g({
+    p = (0, o.Kr)(t.config);
+  if ((0, o.$J)(t) && (0, o.$H)(t)) return m({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i
   });
-  if ((0, o.$J)(t)) return m({
+  if ((0, o.$J)(t)) return g({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i
@@ -200,19 +200,19 @@ function O(e) {
     taskDetails: n,
     withoutMarkdown: i
   });
-  if ((0, o.q8)(t)) return b(t, _, i);
+  if ((0, o.q8)(t)) return b(t, p, i);
   else if ((0, o.pO)(t)) return y({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i
   });
   if (null != r) return r.description;
-  let p = (0, o.f$)(t.config) ? c.t.KYP2pa : c.t.BLyDvL;
-  return h(null != _ ? p : c.t["hkJ+Gh"], {
+  let _ = (0, o.f$)(t.config) ? c.t.KYP2pa : c.t.BLyDvL;
+  return h(null != p ? _ : c.t["hkJ+Gh"], {
     gameTitle: d,
     streamingDurationRequirement: f,
     questReward: l.r.build(t.config).defaultReward.messages.nameWithArticle,
-    duration: _
+    duration: p
   }, i)
 }
 let S = e => {
@@ -225,7 +225,7 @@ let S = e => {
     }
     return S(e.content)
   } catch (e) {
-    return p.error("Failed to convert ASTNode to string", e), ""
+    return _.error("Failed to convert ASTNode to string", e), ""
   }
 };
 
@@ -243,7 +243,7 @@ function T(e) {
     quest: t,
     questContent: r
   });
-  return I(_(d({}, e), {
+  return I(p(d({}, e), {
     connectedConsoleLinkOnClick: o,
     withoutMarkdown: !1,
     withSimplifiedCopy: (0, a.j)({

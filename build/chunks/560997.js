@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   KM: () => f,
-  R2: () => _,
-  TG: () => p,
+  R2: () => p,
+  TG: () => _,
   Zc: () => d
 });
 var r = n(442837),
@@ -77,7 +77,7 @@ function f(e, t, n) {
   }
 }
 
-function _(e, t, n, r) {
+function p(e, t, n, r) {
   let o = () => {
     var t;
     return null !== (t = n()) && void 0 !== t ? t : e.getSetting()
@@ -96,7 +96,7 @@ function _(e, t, n, r) {
   }
 }
 
-function p(e) {
+function _(e) {
   let {
     baseSetting: t,
     isEligible: n,

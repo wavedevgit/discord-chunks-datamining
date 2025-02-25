@@ -28,20 +28,20 @@ function a(e, t, n, a, s, l) {
     return !!c[t] || (c[t] = !0, u.call(this, e))
   });
   for (var f = 0; f < a.length; f++) {
-    var _ = new r.M(a[f], l).rezonedDate();
-    if (!e.accept(new Date(_.getTime()))) break
+    var p = new r.M(a[f], l).rezonedDate();
+    if (!e.accept(new Date(p.getTime()))) break
   }
   t.forEach(function(t) {
     (0, i.h)(e, t.options)
   });
-  var p = e._result;
-  switch ((0, o.DY)(p), e.method) {
+  var _ = e._result;
+  switch ((0, o.DY)(_), e.method) {
     case "all":
     case "between":
-      return p;
+      return _;
     case "before":
-      return p.length && p[p.length - 1] || null;
+      return _.length && _[_.length - 1] || null;
     default:
-      return p.length && p[0] || null
+      return _.length && _[0] || null
   }
 }

@@ -3,10 +3,10 @@
 n.d(t, {
   C1: () => E,
   Od: () => d,
-  TC: () => m,
+  TC: () => g,
   bg: () => u,
   wM: () => h,
-  ze: () => g
+  ze: () => m
 }), n(789020), n(26686), n(411104);
 var r = n(200651),
   i = n(192379),
@@ -64,7 +64,7 @@ function f(e) {
     key: t
   })
 }
-let _ = {
+let p = {
     theme: "light",
     primaryColor: null,
     secondaryColor: null,
@@ -76,7 +76,7 @@ let _ = {
     density: "compact",
     disableAdaptiveTheme: !1
   },
-  p = i.createContext(_);
+  _ = i.createContext(p);
 
 function h(e) {
   let {
@@ -88,9 +88,9 @@ function h(e) {
     flags: c = 0,
     contrast: u = 1,
     saturation: d = 1,
-    density: _ = "cozy",
+    density: p = "cozy",
     disableAdaptiveTheme: h = !1
-  } = e, g = i.useMemo(() => f({
+  } = e, m = i.useMemo(() => f({
     theme: n,
     primaryColor: a,
     secondaryColor: s,
@@ -98,16 +98,16 @@ function h(e) {
     flags: c,
     contrast: u,
     saturation: d,
-    density: _,
+    density: p,
     disableAdaptiveTheme: h
-  }), [n, a, s, l, c, u, d, _, h]);
-  return (0, r.jsx)(p.Provider, {
-    value: g,
+  }), [n, a, s, l, c, u, d, p, h]);
+  return (0, r.jsx)(_.Provider, {
+    value: m,
     children: t
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     children: t,
     theme: n,
@@ -118,8 +118,8 @@ function g(e) {
     contrast: c,
     saturation: u,
     density: d,
-    disableAdaptiveTheme: _
-  } = e, h = i.useContext(p), g = i.useMemo(() => f({
+    disableAdaptiveTheme: p
+  } = e, h = i.useContext(_), m = i.useMemo(() => f({
     theme: null != n ? n : h.theme,
     primaryColor: null != o ? o : h.primaryColor,
     secondaryColor: null != a ? a : h.secondaryColor,
@@ -128,16 +128,16 @@ function g(e) {
     contrast: null != c ? c : h.contrast,
     saturation: null != u ? u : h.saturation,
     density: null != d ? d : h.density,
-    disableAdaptiveTheme: null != _ ? _ : h.disableAdaptiveTheme
-  }), [n, h.theme, h.primaryColor, h.secondaryColor, h.gradient, h.flags, h.contrast, h.saturation, h.density, h.disableAdaptiveTheme, o, a, s, l, c, u, d, _]);
-  return (0, r.jsx)(p.Provider, {
-    value: g,
+    disableAdaptiveTheme: null != p ? p : h.disableAdaptiveTheme
+  }), [n, h.theme, h.primaryColor, h.secondaryColor, h.gradient, h.flags, h.contrast, h.saturation, h.density, h.disableAdaptiveTheme, o, a, s, l, c, u, d, p]);
+  return (0, r.jsx)(_.Provider, {
+    value: m,
     children: t
   })
 }
 
-function m() {
-  let e = i.useContext(p);
+function g() {
+  let e = i.useContext(_);
   if (null == e) throw Error("useThemeContext must be used within a ThemeContext.Provider");
   return e
 }
@@ -145,7 +145,7 @@ function m() {
 function E(e) {
   let {
     children: t
-  } = e, n = m();
+  } = e, n = g();
   return (0, r.jsx)(r.Fragment, {
     children: t(n)
   })

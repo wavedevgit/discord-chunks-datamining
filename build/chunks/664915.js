@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -44,7 +44,7 @@ function f() {
   if (0 === l.size) return !1;
   l = new Set
 }
-class _ extends(r = i.ZP.PersistedStore) {
+class p extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     null != e && (l = new Set(e.expandedFolders)), this.waitFor(a.Z)
   }
@@ -60,8 +60,8 @@ class _ extends(r = i.ZP.PersistedStore) {
     return l.has(e)
   }
 }
-s(_, "displayName", "ExpandedGuildFolderStore"), s(_, "persistKey", "ExpandedGuildFolderStore");
-let p = new _(o.Z, {
+s(p, "displayName", "ExpandedGuildFolderStore"), s(p, "persistKey", "ExpandedGuildFolderStore");
+let _ = new p(o.Z, {
   TOGGLE_GUILD_FOLDER_EXPAND: u,
   SET_GUILD_FOLDER_EXPANDED: d,
   USER_SETTINGS_PROTO_UPDATE: c,

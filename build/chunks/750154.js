@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  JE: () => g,
-  Lw: () => _,
+  JE: () => m,
+  Lw: () => p,
   dS: () => h,
-  rq: () => p
+  rq: () => _
 }), n(47120), n(301563);
 var r = n(314897),
   i = n(592125),
@@ -17,17 +17,17 @@ let c = "stage:",
   d = 2,
   f = 4;
 
-function _(e, t) {
+function p(e, t) {
   let n = 0,
     i = r.default.getId();
   a.ZP.isSpeaker(i, e.id) && (n |= u);
   let s = o.Z.getGuild(e.getGuildId());
   null != s && (s.hasFeature(l.oNc.PARTNERED) && (n |= d), s.hasFeature(l.oNc.VERIFIED) && (n |= f));
-  let _ = n.toString(16);
-  return "".concat(c).concat(e.guild_id, ":").concat(e.id, ":").concat(_, ":").concat(t.id)
+  let p = n.toString(16);
+  return "".concat(c).concat(e.guild_id, ":").concat(e.id, ":").concat(p, ":").concat(t.id)
 }
 
-function p(e) {
+function _(e) {
   if (null == e || null == e.party) return;
   let {
     id: t,
@@ -54,8 +54,8 @@ function h(e) {
   return (null == e ? void 0 : e.application_id) === s.gD
 }
 
-function g(e) {
-  let t = p(e);
+function m(e) {
+  let t = _(e);
   if (null == t) return !1;
   let {
     channelId: n

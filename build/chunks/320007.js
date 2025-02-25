@@ -40,8 +40,8 @@ function b(e) {
     lastClipsSession: p.Z.getLastClipsSession(),
     remindersEnabled: p.Z.getSettings().remindersEnabled,
     hasAnyClipAnimations: p.Z.hasAnyClipAnimations()
-  })), C = null != E && E.newClipIds.length > 0, I = (0, f.n)(e => e.clipsButtonRef), S = (0, f.n)(e => e.setClipsButtonRef), T = (0, a.e7)([c.Z], () => c.Z.hasLayers()), {
-    preventIdle: P,
+  })), C = null != E && E.newClipIds.length > 0, I = (0, f.n)(e => e.clipsButtonRef), S = (0, f.n)(e => e.setClipsButtonRef), P = (0, a.e7)([c.Z], () => c.Z.hasLayers()), {
+    preventIdle: T,
     allowIdle: A
   } = (0, s.Y)("animation");
 
@@ -72,8 +72,8 @@ function b(e) {
       modalKey: g.Qr
     })
   }
-  return (i.useEffect(() => (N ? P() : A(), () => A()), [N, P, A]), y && v && x) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != I && t && j && C && !(0, o.$sL)() && !T && (0, r.jsx)(h.Z, {
+  return (i.useEffect(() => (N ? T() : A(), () => A()), [N, T, A]), y && v && x) ? (0, r.jsxs)(r.Fragment, {
+    children: [null != I && t && j && C && !(0, o.$sL)() && !P && (0, r.jsx)(h.Z, {
       clipIconRef: I,
       lastClipsSession: E,
       onOpenClipsGallery: w

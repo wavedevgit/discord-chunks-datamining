@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r, i = n(200651),
   o = n(192379),
@@ -24,13 +24,13 @@ var d = function(e) {
   f = function(e) {
     return e.SMALL = "small", e.LARGE = "large", e.NONE = "none", e
   }(f || {});
-let _ = {
+let p = {
     primary: c.colorPrimary,
     secondary: c.colorSecondary,
     warning: c.colorWarning,
     error: c.colorError
   },
-  p = {
+  _ = {
     small: c.small,
     large: c.large,
     none: null
@@ -46,10 +46,10 @@ class h extends(r = o.PureComponent) {
       iconClassName: a
     } = this.props;
     return (0, i.jsxs)(l.Z, {
-      className: s()(c.note, _[t], o),
+      className: s()(c.note, p[t], o),
       align: l.Z.Align.CENTER,
       children: [(0, i.jsx)(e, {
-        className: s()(c.icon, p[r], a),
+        className: s()(c.icon, _[r], a),
         color: "currentColor"
       }), (0, i.jsx)("div", {
         children: n
@@ -58,4 +58,4 @@ class h extends(r = o.PureComponent) {
   }
 }
 u(h, "Colors", d), u(h, "Sizes", f);
-let g = h
+let m = h

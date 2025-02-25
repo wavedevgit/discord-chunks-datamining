@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(146128),
   d = n(134432),
   f = n(959258),
-  _ = n(695346),
-  p = n(237997),
+  p = n(695346),
+  _ = n(237997),
   h = n(768581),
-  g = n(176354),
-  m = n(506071),
+  m = n(176354),
+  g = n(506071),
   E = n(149203);
 
 function v(e, t, n) {
@@ -77,7 +77,7 @@ function I(e, t) {
   return i
 }
 n(848300);
-let T = __OVERLAY__ ? () => (0, s.e7)([p.Z], () => p.Z.isInstanceFocused()) : m.n;
+let T = __OVERLAY__ ? () => (0, s.e7)([_.Z], () => _.Z.isInstanceFocused()) : g.n;
 
 function N(e) {
   var t, n, {
@@ -85,8 +85,8 @@ function N(e) {
       alt: s,
       className: c,
       emojiId: f,
-      emojiName: p,
-      channelId: m,
+      emojiName: _,
+      channelId: g,
       messageId: v,
       animated: y,
       size: I = "default",
@@ -102,7 +102,7 @@ function N(e) {
   let [x, M] = i.useState(!1), [j, k] = i.useState(void 0), U = i.useRef(), {
     triggerAnimation: G,
     untriggerAnimation: B
-  } = i.useContext(u.Rm), F = _.Yk.useSetting(), V = T(), Z = null == D ? F : D, H = E.kV[I], W = i.useRef(null), Y = i.useMemo(() => {
+  } = i.useContext(u.Rm), F = p.Yk.useSetting(), V = T(), Z = null == D ? F : D, H = E.kV[I], W = i.useRef(null), Y = i.useMemo(() => {
     if (null != o) return o;
     if (null != f) {
       let e = !0 === A && Z;
@@ -112,21 +112,21 @@ function N(e) {
         size: H
       })
     }
-    if (null != p) return g.ZP.getURL(p);
+    if (null != _) return m.ZP.getURL(_);
     throw Error("Unknown Src for Emoji")
-  }, [y, Z, f, p, H, V, x, N, A, o]), K = i.useCallback(() => {
+  }, [y, Z, f, _, H, V, x, N, A, o]), K = i.useCallback(() => {
     null != Y && (U.current = (0, d.po)(Y, e => {
       e || k(Date.now())
     }))
   }, [Y]), z = i.useCallback(e => {
-    y && M(!0), null == f && G(p), null == C || C(e)
-  }, [y, p, C, G, f]), q = i.useCallback(e => {
-    y && M(!1), null == f && B(p), null == R || R(e)
-  }, [y, f, p, R, B]), Q = i.useMemo(() => {
+    y && M(!0), null == f && G(_), null == C || C(e)
+  }, [y, _, C, G, f]), q = i.useCallback(e => {
+    y && M(!1), null == f && B(_), null == R || R(e)
+  }, [y, f, _, R, B]), Q = i.useMemo(() => {
     let e = null != f && "" !== f ? {
       "data-id": f
     } : {
-      "data-name": p
+      "data-name": _
     };
     return b(O(b({}, L), {
       className: a()("emoji", c, {
@@ -138,7 +138,7 @@ function N(e) {
       onMouseLeave: q,
       "data-type": "emoji"
     }), e)
-  }, [c, f, p, z, q, K, L, I]);
+  }, [c, f, _, z, q, K, L, I]);
   i.useEffect(() => () => {
     var e;
     return null === (e = U.current) || void 0 === e ? void 0 : e.call(U)
@@ -149,23 +149,23 @@ function N(e) {
     J = (0, l.Z)(W);
   return null == Y || "" === Y ? (0, r.jsx)("span", {
     className: a()("emoji", "emoji-text"),
-    children: p
+    children: _
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.aO, {
-      channelId: m,
+      channelId: g,
       messageId: v,
-      emojiName: p,
+      emojiName: _,
       disable: !1 === Z || !1 === F,
       emojiRef: J
     }), P ? (0, r.jsx)("img", O(b({}, Q), {
       ref: X,
       src: Y,
-      alt: null !== (t = null != s ? s : p) && void 0 !== t ? t : void 0,
+      alt: null !== (t = null != s ? s : _) && void 0 !== t ? t : void 0,
       draggable: !1
     }), j) : (0, r.jsx)("div", O(b({}, Q), {
       ref: X,
       role: "img",
-      "aria-label": null !== (n = null != s ? s : p) && void 0 !== n ? n : void 0,
+      "aria-label": null !== (n = null != s ? s : _) && void 0 !== n ? n : void 0,
       style: {
         backgroundImage: "url(".concat(Y, ")"),
         backgroundSize: "contain",

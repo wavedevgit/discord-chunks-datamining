@@ -83,14 +83,14 @@ function u(e) {
         s(t);
         return
       }
-      let _ = o.M8.isForward(e.selection);
+      let p = o.M8.isForward(e.selection);
       if (null != d) {
         let [, t] = d, [i, a] = o.bN.edges(e, t);
-        _ && o.Jz.equals(c, i) ? c = null !== (n = o.bN.before(e, i)) && void 0 !== n ? n : o.bN.start(e, []) : !_ && o.Jz.equals(c, a) && (c = null !== (r = o.bN.after(e, a)) && void 0 !== r ? r : o.bN.end(e, []))
+        p && o.Jz.equals(c, i) ? c = null !== (n = o.bN.before(e, i)) && void 0 !== n ? n : o.bN.start(e, []) : !p && o.Jz.equals(c, a) && (c = null !== (r = o.bN.after(e, a)) && void 0 !== r ? r : o.bN.end(e, []))
       }
       if (null != f) {
         let [, t] = f, [n, r] = o.bN.edges(e, t);
-        !_ && o.Jz.equals(u, n) ? u = null !== (a = o.bN.before(e, n)) && void 0 !== a ? a : o.bN.start(e, []) : _ && o.Jz.equals(u, r) && (u = null !== (l = o.bN.after(e, r)) && void 0 !== l ? l : o.bN.end(e, []))
+        !p && o.Jz.equals(u, n) ? u = null !== (a = o.bN.before(e, n)) && void 0 !== a ? a : o.bN.start(e, []) : p && o.Jz.equals(u, r) && (u = null !== (l = o.bN.after(e, r)) && void 0 !== l ? l : o.bN.end(e, []))
       }
       i.Q.delete(e, {
         at: {
@@ -103,7 +103,7 @@ function u(e) {
       return
     }
     s(t)
-  }, r.ML.positions = _, e
+  }, r.ML.positions = p, e
 }
 
 function d(e, t, n) {
@@ -165,43 +165,43 @@ function d(e, t, n) {
 }
 let f = r.ML.positions;
 
-function* _(e) {
+function* p(e) {
   var t, n, r, i, a, l, u, d;
-  let _ = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+  let p = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
     {
-      at: p = e.selection,
+      at: _ = e.selection,
       unit: h = "offset",
-      reverse: g = !1,
-      voids: m = !1
-    } = null != _ ? _ : {};
+      reverse: m = !1,
+      voids: g = !1
+    } = null != p ? p : {};
   if ("word" !== h) {
-    for (let t of f(e, c(s({}, _), {
-        voids: m || "block" === h
+    for (let t of f(e, c(s({}, p), {
+        voids: g || "block" === h
       }))) yield t;
     return
   }
-  if (null == p) return;
-  let E = o.bN.range(e, p),
+  if (null == _) return;
+  let E = o.bN.range(e, _),
     [v, b] = o.M8.edges(E),
     y = o.bN.richValue(e),
-    O = g ? -1 : 1,
+    O = m ? -1 : 1,
     S = null !== (r = null === (t = v.path) || void 0 === t ? void 0 : t[0]) && void 0 !== r ? r : 0,
     I = null !== (i = null === (n = b.path) || void 0 === n ? void 0 : n[0]) && void 0 !== i ? i : y.length - 1,
-    T = g ? I : S,
-    N = g ? S : I,
+    T = m ? I : S,
+    N = m ? S : I,
     A = T;
   for (;;) {
     let t = y[A],
       n = null !== (u = A === S ? null === (a = v.path) || void 0 === a ? void 0 : a[1] : null) && void 0 !== u ? u : 0,
       r = null !== (d = A === I ? null === (l = b.path) || void 0 === l ? void 0 : l[1] : null) && void 0 !== d ? d : t.children.length - 1,
-      i = g ? r : n,
-      p = g ? n : r,
+      i = m ? r : n,
+      _ = m ? n : r,
       h = i;
     for (;;) {
       let n, r;
       let i = t.children[h],
         a = [A, h];
-      if (n = o.C0.equals(a, v.path) || o.C0.isAncestor(a, v.path) ? !g && o.bN.isEnd(e, v, a) ? null : v : o.bN.start(e, a), r = o.C0.equals(a, b.path) || o.C0.isAncestor(a, b.path) ? g && o.bN.isStart(e, b, a) ? null : b : o.bN.end(e, a), null != n && null != r) {
+      if (n = o.C0.equals(a, v.path) || o.C0.isAncestor(a, v.path) ? !m && o.bN.isEnd(e, v, a) ? null : v : o.bN.start(e, a), r = o.C0.equals(a, b.path) || o.C0.isAncestor(a, b.path) ? m && o.bN.isStart(e, b, a) ? null : b : o.bN.end(e, a), null != n && null != r) {
         if (o.LC.isText(i) && 0 === i.text.length) {
           let e = {
             path: a,
@@ -219,12 +219,12 @@ function* _(e) {
             anchor: n,
             focus: r
           };
-          for (let n of f(e, c(s({}, _), {
+          for (let n of f(e, c(s({}, p), {
               at: t
             }))) yield n
         }
       }
-      if (h === p) break;
+      if (h === _) break;
       h += O
     }
     if (A === N) break;

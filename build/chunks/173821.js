@@ -42,7 +42,7 @@ var l = n(601102),
 function f(e, t) {
   return null == e ? t : e
 }
-var _ = function(e) {
+var p = function(e) {
   function t(e) {
     i(this, t);
     var n, r = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
@@ -82,17 +82,17 @@ var _ = function(e) {
           f = this._tension * (this._toValue - n) - this._friction * r,
           n = e + d * u / 2,
           r = t + f * u / 2,
-          _ = r,
-          p = this._tension * (this._toValue - n) - this._friction * r;
-        n = e + _ * u / 2;
-        var h = r = t + p * u / 2,
-          g = this._tension * (this._toValue - n) - this._friction * r;
+          p = r,
+          _ = this._tension * (this._toValue - n) - this._friction * r;
+        n = e + p * u / 2;
+        var h = r = t + _ * u / 2,
+          m = this._tension * (this._toValue - n) - this._friction * r;
         n = e + h * u / 2;
-        var m = r = t + g * u / 2,
+        var g = r = t + m * u / 2,
           E = this._tension * (this._toValue - n) - this._friction * r;
-        n = e + h * u / 2, r = t + g * u / 2;
-        var v = (f + 2 * (p + g) + E) / 6;
-        e += (d + 2 * (_ + h) + m) / 6 * u, t += v * u
+        n = e + h * u / 2, r = t + m * u / 2;
+        var v = (f + 2 * (_ + m) + E) / 6;
+        e += (d + 2 * (p + h) + g) / 6 * u, t += v * u
       }
       if (this._lastTime = o, this._lastPosition = e, this._lastVelocity = t, this._onUpdate(e), this.__active) {
         var b = !1;
@@ -117,4 +117,4 @@ var _ = function(e) {
     }
   }]), t
 }(s);
-e.exports = _
+e.exports = p

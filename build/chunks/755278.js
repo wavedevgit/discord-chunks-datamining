@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(789020);
 var r = n(928801),
   i = n(924557),
@@ -13,11 +13,11 @@ var r = n(928801),
   u = n(199902),
   d = n(592125),
   f = n(131951),
-  _ = n(936349),
-  p = n(630388),
+  p = n(936349),
+  _ = n(630388),
   h = n(981631);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,7 +25,7 @@ function g(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class m extends r.Z {
+class g extends r.Z {
   get guildId() {
     return this.getState().guildId
   }
@@ -36,20 +36,20 @@ class m extends r.Z {
     var e, t, n;
     let r = 0,
       d = c.tU.getSetting();
-    r = (0, p.mB)(r, h.BVn.ALLOW_VOICE_RECORDING, d);
-    let _ = (0, a.Z)(f.Z),
-      g = (0, i.ln)() && o.Z.getSettings().clipsEnabled && ((null === (e = u.Z.getCurrentUserActiveStream()) || void 0 === e ? void 0 : e.state) === h.jm8.ACTIVE || (null === (t = u.Z.getCurrentUserActiveStream()) || void 0 === t ? void 0 : t.state) === h.jm8.PAUSED),
-      m = o.Z.isDecoupledGameClippingEnabled(),
-      E = _ && o.Z.getSettings().decoupledClipsEnabled && (null === (n = s.ZP.getVisibleGame()) || void 0 === n ? void 0 : n.windowHandle) != null && m;
-    r = (0, p.mB)(r, h.BVn.CLIPS_ENABLED, g || E);
+    r = (0, _.mB)(r, h.BVn.ALLOW_VOICE_RECORDING, d);
+    let p = (0, a.Z)(f.Z),
+      m = (0, i.ln)() && o.Z.getSettings().clipsEnabled && ((null === (e = u.Z.getCurrentUserActiveStream()) || void 0 === e ? void 0 : e.state) === h.jm8.ACTIVE || (null === (t = u.Z.getCurrentUserActiveStream()) || void 0 === t ? void 0 : t.state) === h.jm8.PAUSED),
+      g = o.Z.isDecoupledGameClippingEnabled(),
+      E = p && o.Z.getSettings().decoupledClipsEnabled && (null === (n = s.ZP.getVisibleGame()) || void 0 === n ? void 0 : n.windowHandle) != null && g;
+    r = (0, _.mB)(r, h.BVn.CLIPS_ENABLED, m || E);
     let {
       enableViewerClipping: v
     } = l.Z.getCurrentConfig({
       location: "computeVoiceFlags"
     }, {
       autoTrackExposure: !1
-    }), b = v && _ && o.Z.getSettings().viewerClipsEnabled;
-    return (0, p.mB)(r, h.BVn.ALLOW_ANY_VIEWER_CLIPS, b)
+    }), b = v && p && o.Z.getSettings().viewerClipsEnabled;
+    return (0, _.mB)(r, h.BVn.ALLOW_ANY_VIEWER_CLIPS, b)
   }
   getInitialState() {
     return {
@@ -75,8 +75,8 @@ class m extends r.Z {
       selfMute: f.Z.isSelfMute(),
       selfDeaf: f.Z.isSelfDeaf(),
       selfVideo: f.Z.isVideoEnabled(),
-      preferredRegion: _.Z.getPreferredRegion(),
-      preferredRegions: _.Z.getPreferredRegions(),
+      preferredRegion: p.Z.getPreferredRegion(),
+      preferredRegions: p.Z.getPreferredRegions(),
       videoStreamParameters: f.Z.getVideoStreamParameters(),
       flags: this.computeVoiceFlags()
     }
@@ -119,6 +119,6 @@ class m extends r.Z {
     })
   }
   constructor(e) {
-    super(), g(this, "socket", void 0), this.socket = e
+    super(), m(this, "socket", void 0), this.socket = e
   }
 }

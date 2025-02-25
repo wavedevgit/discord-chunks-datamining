@@ -29,8 +29,8 @@ var r = n(200651),
   C = n(324701),
   I = n(575016),
   S = n(768943),
-  T = n(686478),
-  P = n(664559),
+  P = n(686478),
+  T = n(664559),
   A = n(767893),
   w = n(206697),
   Z = n(74551),
@@ -97,7 +97,7 @@ function F(e) {
 function U(e) {
   let {
     closePopout: t
-  } = e, n = (0, P.Z)();
+  } = e, n = (0, T.Z)();
   return ((0, b.Z)({
     type: u.ImpressionTypes.POPOUT,
     name: u.ImpressionNames.FOR_LATER_LIST_VIEWED,
@@ -207,7 +207,7 @@ function H(e) {
       channel_id: t.saveData.channelId,
       message_id: t.saveData.messageId,
       message_author_id: null === (r = t.message) || void 0 === r ? void 0 : r.author.id,
-      type: null != t.saveData.dueAt ? T._l.REMINDER : T._l.BOOKMARK,
+      type: null != t.saveData.dueAt ? P._l.REMINDER : P._l.BOOKMARK,
       due_duration: null != t.saveData.dueAt ? d()().diff(t.saveData.dueAt) : void 0
     })
   }, [n, t, l]), c = (0, m.e7)([O.Z], () => !!((null == l ? void 0 : l.type) === k.d4z.UNKNOWN || (null == l ? void 0 : l.isPrivate())) || O.Z.can(k.Plq.VIEW_CHANNEL, l));

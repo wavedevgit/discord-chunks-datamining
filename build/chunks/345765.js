@@ -13,11 +13,11 @@ var r = n(392711),
   u = n(32300),
   d = n(456644),
   f = n(553795),
-  _ = n(517100),
-  p = n(451478),
+  p = n(517100),
+  _ = n(451478),
   h = n(70956),
-  g = n(162461),
-  m = n(564990),
+  m = n(162461),
+  g = n(564990),
   E = n(71585),
   v = n(146282),
   b = n(206583),
@@ -39,7 +39,7 @@ let S = 4,
   C = new Set,
   R = new Map,
   P = null,
-  D = (0, r.debounce)(m.yK, 3e3, {
+  D = (0, r.debounce)(g.yK, 3e3, {
     trailing: !0
   });
 
@@ -59,8 +59,8 @@ function L(e, t) {
 function x(e) {
   if (C.has(e) || e === b.YN.GAME_PROFILE_FEED && (!(0, s._J)("ContentInventoryManager") || void 0 !== v.Z.getFeed(e))) return !1;
   if (e === T) {
-    if (!(0, g.sA)("ContentInventoryManager") || E.Z.hidden && null != v.Z.getFeed(e) || !p.Z.isFocused() || !l.Z.isConnected()) return !1;
-    let t = _.Z.getIdleSince();
+    if (!(0, m.sA)("ContentInventoryManager") || E.Z.hidden && null != v.Z.getFeed(e) || !_.Z.isFocused() || !l.Z.isConnected()) return !1;
+    let t = p.Z.getIdleSince();
     if (null != t && Date.now() - t > N) return !1
   }
   return !0
@@ -101,7 +101,7 @@ async function k(e) {
     C.add(t), L(t, {
       loading: !0
     });
-    let r = await (0, m.mt)({
+    let r = await (0, g.mt)({
       token: null == e ? void 0 : e.refresh_token,
       feedId: t,
       feature: n
@@ -184,7 +184,7 @@ function Z(e) {
 function H() {
   let {
     enabled: e
-  } = g.iC.getCurrentConfig({
+  } = m.iC.getCurrentConfig({
     location: "ContentInventoryManager"
   }, {
     autoTrackExposure: !0

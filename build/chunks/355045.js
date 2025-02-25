@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(906732),
   d = n(565138),
   f = n(963249),
-  _ = n(695349),
-  p = n(199778),
+  p = n(695349),
+  _ = n(199778),
   h = n(594174),
-  g = n(314884),
-  m = n(709586),
+  m = n(314884),
+  g = n(709586),
   E = n(267642),
   v = n(74538),
   b = n(678558),
@@ -30,9 +30,9 @@ let T = function(e) {
     closeLayer: t,
     guild: n,
     onCtaVisibilityChange: o
-  } = e, T = (0, s.e7)([h.default], () => h.default.getCurrentUser()), N = (0, s.e7)([g.Z], () => g.Z.boostSlots), {
+  } = e, T = (0, s.e7)([h.default], () => h.default.getCurrentUser()), N = (0, s.e7)([m.Z], () => m.Z.boostSlots), {
     analyticsLocations: A
-  } = (0, u.ZP)(), C = (0, _.W)(), R = i.useMemo(() => Object.keys(N).filter(e => {
+  } = (0, u.ZP)(), C = (0, p.W)(), R = i.useMemo(() => Object.keys(N).filter(e => {
     let t = N[e];
     return null != t.premiumGuildSubscription && t.premiumGuildSubscription.guildId === n.id
   }), [N, n.id]), P = i.useMemo(() => (0, E.vx)(N).length > 0, [N]);
@@ -82,7 +82,7 @@ let T = function(e) {
       className: I.guildBoostCountWrapper,
       children: [(0, r.jsxs)("div", {
         className: I.guildBoostCount,
-        children: [(0, r.jsx)(m.Z, {
+        children: [(0, r.jsx)(g.Z, {
           className: a()(I.guildBoostBadge, {
             [I.guildBoostBadgeWithBoosts]: n.premiumSubscriberCount > 0
           })
@@ -100,7 +100,7 @@ let T = function(e) {
           numSubscriptions: R.length
         })
       }) : null]
-    }), (0, r.jsx)(p.Z, {
+    }), (0, r.jsx)(_.Z, {
       hide: P,
       containerClassName: I.FPContainer,
       isInReverseTrial: C

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m,
+  Z: () => g,
   m: () => E
 }), n(47120), n(653041), n(566702);
 var r = n(192379),
@@ -14,19 +14,19 @@ var r = n(192379),
   u = n(926491),
   d = n(594174),
   f = n(483360),
-  _ = n(251625),
-  p = n(606301),
+  p = n(251625),
+  _ = n(606301),
   h = n(549058);
-let g = (0, _.ad)(l.$p, h.J7),
-  m = (e, t, n) => {
+let m = (0, p.ad)(l.$p, h.J7),
+  g = (e, t, n) => {
     let i = (0, c.fQ)(n),
       o = (0, a.e7)([d.default], () => d.default.getCurrentUser());
     return r.useMemo(() => {
-      let r = (0, p.wN)(e);
+      let r = (0, _.wN)(e);
       if (t || null == e || "" === e || r.length > h.t7 || !i) return [];
       let a = [],
         l = [],
-        c = (0, p.kT)(e),
+        c = (0, _.kT)(e),
         u = c === r[0] ? r : [c, ...r];
       f.ZP.queryStickers(u, !1).forEach(e => {
         let {
@@ -54,12 +54,12 @@ let g = (0, _.ad)(l.$p, h.J7),
         var r;
         if (null == e || "" === e) f.cancel(), null == t || t(""), null == n || n(!1), null == i || i(!1), null == a || a(null), l.current = null, c.current = !1;
         else if (!c.current && e.trim() !== (null === (r = l.current) || void 0 === r ? void 0 : r.trim())) {
-          if (l.current = e, (0, p.wN)(e).length > h.t7) {
+          if (l.current = e, (0, _.wN)(e).length > h.t7) {
             c.current = !0, f.cancel(), t("");
             return
           }
           if (!0 === d.current) return;
-          u.Z.hasLoadedStickerPacks || (d.current = !0, await g(), d.current = !1), f(l.current)
+          u.Z.hasLoadedStickerPacks || (d.current = !0, await m(), d.current = !1), f(l.current)
         }
       },
       debouncedSetTextInputValue: f

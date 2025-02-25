@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(975060),
   d = n(388032),
   f = n(277558);
-class _ extends i.PureComponent {
+class p extends i.PureComponent {
   componentDidMount() {
     null != this.props.paypalClient && s.f6()
   }
@@ -45,7 +45,7 @@ class _ extends i.PureComponent {
     })
   }
 }
-let p = o.ZP.connectStores([c.Z, u.Z], () => ({
+let _ = o.ZP.connectStores([c.Z, u.Z], () => ({
   braintreeEmail: u.Z.braintreeEmail,
   paypalClient: c.Z.getPayPalClient()
-}))(_)
+}))(p)

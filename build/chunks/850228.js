@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(439041),
   d = n(388032),
   f = n(688422);
-class _ extends i.PureComponent {
+class p extends i.PureComponent {
   componentDidMount() {
     null == this.props.adyenPaymentData && null != this.props.cashAppPayComponent && c.cp()
   }
@@ -49,7 +49,7 @@ class _ extends i.PureComponent {
     })
   }
 }
-let p = o.ZP.connectStores([u.Z, l.Z], () => ({
+let _ = o.ZP.connectStores([u.Z, l.Z], () => ({
   cashAppPayComponent: u.Z.cashAppPayComponent,
   adyenPaymentData: l.Z.adyenPaymentData
-}))(_)
+}))(p)

@@ -63,7 +63,7 @@ function t(e) {
         begin: /([\t ]|^)REM(?=\s)/
       }]
     }),
-    _ = {
+    p = {
       className: "meta",
       begin: /[\t ]*#(const|disable|else|elseif|enable|end|externalsource|if|region)\b/,
       end: /$/,
@@ -86,7 +86,7 @@ function t(e) {
       literal: "true false nothing"
     },
     illegal: "//|\\{|\\}|endif|gosub|variant|wend|^\\$ ",
-    contains: [n, r, l, c, u, d, f, _]
+    contains: [n, r, l, c, u, d, f, p]
   }
 }
 e.exports = t

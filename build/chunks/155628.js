@@ -43,16 +43,16 @@ function t(e) {
         contains: [e.PHRASAL_WORDS_MODE, d]
       }]
     },
-    _ = {
+    p = {
       $pattern: t,
       keyword: r,
       built_in: a,
       class: s,
       literal: l
     },
-    p = {
+    _ = {
       begin: "\\.\\s*" + e.UNDERSCORE_IDENT_RE,
-      keywords: _,
+      keywords: p,
       relevance: 0
     },
     h = {
@@ -61,40 +61,40 @@ function t(e) {
       end: "[ \\t]*=",
       excludeEnd: !0
     },
-    g = {
+    m = {
       className: "variable",
-      keywords: _,
+      keywords: p,
       begin: t,
       relevance: 0,
-      contains: [h, p]
+      contains: [h, _]
     },
-    m = n + "\\(",
+    g = n + "\\(",
     E = {
       className: "title",
       keywords: {
         $pattern: t,
         built_in: i
       },
-      begin: m,
+      begin: g,
       end: "\\(",
       returnBegin: !0,
       excludeEnd: !0
     },
     v = {
       className: "function",
-      begin: m,
+      begin: g,
       end: "\\)$",
       returnBegin: !0,
-      keywords: _,
+      keywords: p,
       illegal: "[\\[\\]\\|\\$\\?%,~#@]",
-      contains: [E, p, g, u, c, f]
+      contains: [E, _, m, u, c, f]
     };
   return {
     name: "ISBL",
     case_insensitive: !0,
-    keywords: _,
+    keywords: p,
     illegal: "\\$|\\?|%|,|;$|~|#|@|</",
-    contains: [v, h, p, g, u, c, f]
+    contains: [v, h, _, m, u, c, f]
   }
 }
 e.exports = t

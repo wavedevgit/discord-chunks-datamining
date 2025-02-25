@@ -39,25 +39,25 @@ function d(e) {
     tts: r = !1,
     type: d = c.uaV.DEFAULT,
     messageReference: f,
-    allowedMentions: _,
-    author: p,
+    allowedMentions: p,
+    author: _,
     flags: h,
-    nonce: g,
-    poll: m,
+    nonce: m,
+    poll: g,
     changelogId: E,
     giftingPrompt: v,
     state: b
   } = e, y = [];
-  if (d === c.uaV.REPLY && (i()(null != f, "Replies must have a message reference"), null == _ || _.replied_user)) {
+  if (d === c.uaV.REPLY && (i()(null != f, "Replies must have a message reference"), null == p || p.replied_user)) {
     let e = o.Z.getMessageByReference(f);
     (null == e ? void 0 : e.state) === o.Y.LOADED && y.push(u(e.message.author))
   }
-  return null == p && (p = s.default.getCurrentUser()), p instanceof a.Z && (p = u(p)), i()(null != p, "createMessage: author cannot be undefined"), {
-    id: null != g ? g : (0, l.r)(),
+  return null == _ && (_ = s.default.getCurrentUser()), _ instanceof a.Z && (_ = u(_)), i()(null != _, "createMessage: author cannot be undefined"), {
+    id: null != m ? m : (0, l.r)(),
     type: d,
     content: n,
     channel_id: t,
-    author: p,
+    author: _,
     attachments: [],
     embeds: [],
     pinned: !1,
@@ -71,8 +71,8 @@ function d(e) {
     message_reference: f,
     message_snapshots: [],
     flags: h,
-    nonce: g,
-    poll: m,
+    nonce: m,
+    poll: g,
     changelog_id: E,
     gifting_prompt: v
   }

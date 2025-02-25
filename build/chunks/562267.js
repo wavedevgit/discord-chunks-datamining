@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -14,16 +14,16 @@ var r = n(200651),
   d = n(388032),
   f = n(229117);
 
-function _(e) {
+function p(e) {
   var t;
   let {
     channelId: n,
-    chatInputType: _
-  } = e, [p, h] = i.useState(null), g = (0, o.e7)([l.Z], () => l.Z.getStickerPreview(n, _.drafts.type));
-  return (null === (t = _.stickers) || void 0 === t ? void 0 : t.allowSending) && null != g && 0 !== g.length ? (0, r.jsxs)(r.Fragment, {
+    chatInputType: p
+  } = e, [_, h] = i.useState(null), m = (0, o.e7)([l.Z], () => l.Z.getStickerPreview(n, p.drafts.type));
+  return (null === (t = p.stickers) || void 0 === t ? void 0 : t.allowSending) && null != m && 0 !== m.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.stickerPreviews,
-      children: g.map(e => (0, r.jsxs)("div", {
+      children: m.map(e => (0, r.jsxs)("div", {
         className: f.stickerPreviewContainer,
         children: [(0, r.jsx)(a.P3F, {
           onFocus: () => h(e.id),
@@ -32,7 +32,7 @@ function _(e) {
           "aria-label": d.NW.formatToPlainString(d.t.BGAQRU, {
             name: e.name
           }),
-          onClick: () => (0, c.qB)(n, _.drafts.type),
+          onClick: () => (0, c.qB)(n, p.drafts.type),
           children: (0, r.jsx)("div", {
             className: f.closeIconContainer,
             children: (0, r.jsx)(a.k$p, {
@@ -42,7 +42,7 @@ function _(e) {
             })
           })
         }), (0, r.jsx)(u.ZP, {
-          isInteracting: p === e.id,
+          isInteracting: _ === e.id,
           className: f.stickerPreview,
           size: 48,
           sticker: e
@@ -53,4 +53,4 @@ function _(e) {
     })]
   }) : null
 }
-let p = i.memo(_)
+let _ = i.memo(p)

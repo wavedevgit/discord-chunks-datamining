@@ -54,16 +54,16 @@ var u = function(e) {
 function d(e) {
   return (0, r.e7)([i.Z], () => {
     var t, n;
-    return _(e, null !== (n = null === (t = i.Z.settings.guilds) || void 0 === t ? void 0 : t.guilds) && void 0 !== n ? n : {})
+    return p(e, null !== (n = null === (t = i.Z.settings.guilds) || void 0 === t ? void 0 : t.guilds) && void 0 !== n ? n : {})
   })
 }
 
 function f(e) {
   var t, n;
-  return _(e, null !== (n = null === (t = i.Z.settings.guilds) || void 0 === t ? void 0 : t.guilds) && void 0 !== n ? n : {})
+  return p(e, null !== (n = null === (t = i.Z.settings.guilds) || void 0 === t ? void 0 : t.guilds) && void 0 !== n ? n : {})
 }
 
-function _(e, t) {
+function p(e, t) {
   var n, r;
   let i = null === (n = t[e]) || void 0 === n ? void 0 : n.joinSound,
     a = null === (r = t[o.hY]) || void 0 === r ? void 0 : r.joinSound,

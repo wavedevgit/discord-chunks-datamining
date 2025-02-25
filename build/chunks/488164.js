@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  E: () => _
+  E: () => p
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -48,7 +48,7 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class _ extends i.PureComponent {
+class p extends i.PureComponent {
   render() {
     let {
       label: e,

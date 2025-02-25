@@ -95,12 +95,12 @@
   function f(e, t) {
     for (var n = t; n;) {
       if (n == e) return !0;
-      n = _(n)
+      n = p(n)
     }
     return !1
   }
 
-  function _(e) {
+  function p(e) {
     var t = e.parentNode;
     return t && 11 == t.nodeType && t.host ? t.host : t
   }
@@ -168,12 +168,12 @@
     }, this), this._queuedEntries.length && this._callback(this.takeRecords(), this)
   }, i.prototype._computeTargetAndRootIntersection = function(n, r) {
     if ("none" != e.getComputedStyle(n).display) {
-      for (var i = u(n), o = i, a = _(n), s = !1; !s;) {
+      for (var i = u(n), o = i, a = p(n), s = !1; !s;) {
         var l = null,
           d = 1 == a.nodeType ? e.getComputedStyle(a) : {};
         if ("none" == d.display) return;
         if (a == this.root || a == t ? (s = !0, l = r) : a != t.body && a != t.documentElement && "visible" != d.overflow && (l = u(a)), l && !(o = c(l, o))) break;
-        a = _(a)
+        a = p(a)
       }
       return o
     }

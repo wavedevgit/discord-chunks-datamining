@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  CK: () => _,
+  CK: () => p,
   SJ: () => f
 });
 var r = n(200651);
@@ -67,7 +67,7 @@ function f(e) {
   })
 }
 
-function _(e, t) {
+function p(e, t) {
   (0, o.ZDy)(async () => {
     let {
       default: i

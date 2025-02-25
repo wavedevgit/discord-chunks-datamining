@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   I3: () => f,
-  d9: () => p,
+  d9: () => _,
   oo: () => d,
-  yp: () => _
+  yp: () => p
 }), n(47120), n(411104);
 var r = n(200651),
   i = n(192379),
@@ -55,7 +55,7 @@ let d = i.createContext(new u),
     })
   });
 
-function _(e) {
+function p(e) {
   let {
     event: t,
     handler: n
@@ -76,6 +76,6 @@ function _(e) {
   }, [r, t, a]), null
 }
 
-function p(e) {
-  return _(e), null
+function _(e) {
+  return p(e), null
 }

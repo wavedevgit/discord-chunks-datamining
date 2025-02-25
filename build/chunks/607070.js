@@ -13,7 +13,7 @@ var r, i = n(442837),
   d = n(981631),
   f = n(959517);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -46,13 +46,13 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -111,37 +111,37 @@ function O(e) {
 function S(e) {
   let t = O(e.fontSize);
   if (t > d.yqN.FONT_SIZE_MAX || t < d.yqN.FONT_SIZE_MIN || b.fontSize === t) return !1;
-  (b = p({}, b)).fontSize = t
+  (b = _({}, b)).fontSize = t
 }
 
 function I(e) {
   if (e.zoom < d.yqN.ZOOM_MIN || e.zoom > d.yqN.ZOOM_MAX || b.zoom === e.zoom) return !1;
-  (b = p({}, b)).zoom = e.zoom, u.Z.setZoomFactor(b.zoom)
+  (b = _({}, b)).zoom = e.zoom, u.Z.setZoomFactor(b.zoom)
 }
 
 function T() {
   let e = b.fontSize !== d.yqN.FONT_SIZE_DEFAULT,
     t = b.zoom !== d.yqN.ZOOM_DEFAULT;
   if (!e && !t) return !1;
-  (b = p({}, b)).fontSize !== d.yqN.FONT_SIZE_DEFAULT && (b.fontSize = d.yqN.FONT_SIZE_DEFAULT), b.zoom !== d.yqN.ZOOM_DEFAULT && (b.zoom = d.yqN.ZOOM_DEFAULT, u.Z.setZoomFactor(b.zoom))
+  (b = _({}, b)).fontSize !== d.yqN.FONT_SIZE_DEFAULT && (b.fontSize = d.yqN.FONT_SIZE_DEFAULT), b.zoom !== d.yqN.ZOOM_DEFAULT && (b.zoom = d.yqN.ZOOM_DEFAULT, u.Z.setZoomFactor(b.zoom))
 }
 
 function N() {
   if (b.keyboardModeEnabled) return !1;
-  (b = p({}, b)).keyboardModeEnabled = !0
+  (b = _({}, b)).keyboardModeEnabled = !0
 }
 
 function A() {
   if (!b.keyboardModeEnabled) return !1;
-  (b = p({}, b)).keyboardModeEnabled = !1
+  (b = _({}, b)).keyboardModeEnabled = !1
 }
 
 function C() {
-  (b = p({}, b)).colorblindMode = !b.colorblindMode
+  (b = _({}, b)).colorblindMode = !b.colorblindMode
 }
 
 function R() {
-  (b = p({}, b)).lowContrastMode = !b.lowContrastMode
+  (b = _({}, b)).lowContrastMode = !b.lowContrastMode
 }
 
 function P(e) {
@@ -149,11 +149,11 @@ function P(e) {
 }
 
 function D(e) {
-  (b = p({}, b)).saturation = e.saturation
+  (b = _({}, b)).saturation = e.saturation
 }
 
 function w() {
-  (b = p({}, b)).desaturateUserColors = !b.desaturateUserColors
+  (b = _({}, b)).desaturateUserColors = !b.desaturateUserColors
 }
 
 function L(e) {
@@ -161,50 +161,50 @@ function L(e) {
 }
 
 function x() {
-  (b = p({}, b)).submitButtonEnabled = !b.submitButtonEnabled
+  (b = _({}, b)).submitButtonEnabled = !b.submitButtonEnabled
 }
 
 function M() {
-  (b = p({}, b)).syncProfileThemeWithUserTheme = !b.syncProfileThemeWithUserTheme
+  (b = _({}, b)).syncProfileThemeWithUserTheme = !b.syncProfileThemeWithUserTheme
 }
 
 function j(e) {
   if (b.systemPrefersReducedMotion === e.systemPrefersReducedMotion) return !1;
-  b = g(p({}, b), {
+  b = m(_({}, b), {
     systemPrefersReducedMotion: e.systemPrefersReducedMotion
   })
 }
 
 function k(e) {
   if (b.systemPrefersCrossfades === e.systemPrefersCrossfades) return !1;
-  b = g(p({}, b), {
+  b = m(_({}, b), {
     systemPrefersCrossfades: e.systemPrefersCrossfades
   })
 }
 
 function U(e) {
   if (b.prefersReducedMotion === e.prefersReducedMotion) return !1;
-  b = g(p({}, b), {
+  b = m(_({}, b), {
     prefersReducedMotion: e.prefersReducedMotion
   })
 }
 
 function G(e) {
   if (b.systemPrefersContrast === e.systemPrefersContrast) return !1;
-  b = g(p({}, b), {
+  b = m(_({}, b), {
     systemPrefersContrast: e.systemPrefersContrast
   })
 }
 
 function B(e) {
-  b = g(p({}, b), {
+  b = m(_({}, b), {
     alwaysShowLinkDecorations: e.alwaysShowLinkDecorations
   })
 }
 
 function F(e) {
   var t;
-  return b = g(p({}, b), {
+  return b = m(_({}, b), {
     systemForcedColors: null !== (t = e.systemForcedColors) && void 0 !== t ? t : "none"
   }), !0
 }
@@ -214,7 +214,7 @@ function V() {
 }
 
 function Z() {
-  b = g(p({}, b), {
+  b = m(_({}, b), {
     keyboardNavigationExplainerModalSeen: !0
   })
 }
@@ -223,7 +223,7 @@ function H(e) {
   let {
     messageGroupSpacing: t
   } = e;
-  b = g(p({}, b), {
+  b = m(_({}, b), {
     messageGroupSpacing: t
   })
 }
@@ -232,7 +232,7 @@ function W(e) {
   let {
     contrast: t
   } = e;
-  b = g(p({}, b), {
+  b = m(_({}, b), {
     contrast: t
   })
 }
@@ -241,13 +241,13 @@ function Y(e) {
   let {
     hideTags: t
   } = e;
-  b = g(p({}, b), {
+  b = m(_({}, b), {
     hideGuildTags: t
   })
 }
 class K extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
-    this.waitFor(c.Z), isNaN((b = p({}, v, null != e ? e : null)).fontSize) && (b.fontSize = d.yqN.FONT_SIZE_DEFAULT), 0 > f.fP.indexOf(null != b.messageGroupSpacing ? b.messageGroupSpacing : -1) && (b.messageGroupSpacing = null)
+    this.waitFor(c.Z), isNaN((b = _({}, v, null != e ? e : null)).fontSize) && (b.fontSize = d.yqN.FONT_SIZE_DEFAULT), 0 > f.fP.indexOf(null != b.messageGroupSpacing ? b.messageGroupSpacing : -1) && (b.messageGroupSpacing = null)
   }
   get fontScale() {
     return b.fontSize / d.yqN.FONT_SIZE_DEFAULT * 100
@@ -360,7 +360,7 @@ class K extends(r = i.ZP.DeviceSettingsStore) {
     return b
   }
 }
-_(K, "displayName", "AccessibilityStore"), _(K, "persistKey", "AccessibilityStore"), _(K, "migrations", [() => {
+p(K, "displayName", "AccessibilityStore"), p(K, "persistKey", "AccessibilityStore"), p(K, "migrations", [() => {
   let e = "a11yFontScale",
     t = "a11yZoom",
     n = "a11yColorblindMode",
@@ -376,7 +376,7 @@ _(K, "displayName", "AccessibilityStore"), _(K, "persistKey", "AccessibilityStor
 }, e => {
   let {
     fontScale: t
-  } = e, n = m(e, ["fontScale"]), r = 16;
+  } = e, n = g(e, ["fontScale"]), r = 16;
   switch (t) {
     case 82:
       r = 12;
@@ -396,19 +396,19 @@ _(K, "displayName", "AccessibilityStore"), _(K, "persistKey", "AccessibilityStor
     case 150:
       r = 24
   }
-  return g(p({}, n), {
+  return m(_({}, n), {
     fontSize: r
   })
-}, e => g(p({}, e), {
+}, e => m(_({}, e), {
   darkSidebar: !1
-}), e => g(p({}, e), {
+}), e => m(_({}, e), {
   messageGroupSpacing: null
-}), e => g(p({}, e), {
+}), e => m(_({}, e), {
   systemPrefersReducedMotion: "no-preference",
   prefersReducedMotion: "auto"
-}), e => g(p({}, e), {
+}), e => m(_({}, e), {
   alwaysShowLinkDecorations: e.saturation <= a.AE
-}), e => g(p({}, e), {
+}), e => m(_({}, e), {
   disableVoiceBackgrounds: !1
 }), e => {
   try {

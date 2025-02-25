@@ -13,11 +13,11 @@ var r, i = n(392711),
   u = n(592125),
   d = n(430824),
   f = n(944486),
-  _ = n(914010),
-  p = n(981631),
+  p = n(914010),
+  _ = n(981631),
   h = n(526761);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -80,10 +80,10 @@ function N(e) {
     guildId: t,
     channelId: n
   } = e, r = !1;
-  return n !== I && (I = null != n ? n : null, null != n && p.Xyh.test(n) && (r = !0, S.track(n), R.pendingUsages.push({
+  return n !== I && (I = null != n ? n : null, null != n && _.Xyh.test(n) && (r = !0, S.track(n), R.pendingUsages.push({
     key: n,
     timestamp: Date.now()
-  }))), t !== T && (T = null != t ? t : null, null != t && p.Xyh.test(t) && (r = !0, S.track(t), R.pendingUsages.push({
+  }))), t !== T && (T = null != t ? t : null, null != t && _.Xyh.test(t) && (r = !0, S.track(t), R.pendingUsages.push({
     key: t,
     timestamp: Date.now()
   }))), r
@@ -103,7 +103,7 @@ function C() {
   var e;
   let t = null === (e = c.Z.frecencyWithoutFetchingLatest.guildAndChannelFrecency) || void 0 === e ? void 0 : e.guildAndChannels;
   if (null == t) return !1;
-  S.overwriteHistory(o().mapValues(t, e => v(m({}, e), {
+  S.overwriteHistory(o().mapValues(t, e => v(g({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), R.pendingUsages)
 }
@@ -112,7 +112,7 @@ let R = {
 };
 class P extends(r = a.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(_.Z, f.Z), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && p.Xyh.test(e.key)), R = e), this.syncWith([c.Z], C)
+    this.waitFor(p.Z, f.Z), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && _.Xyh.test(e.key)), R = e), this.syncWith([c.Z], C)
   }
   getState() {
     return R
@@ -141,7 +141,7 @@ class P extends(r = a.ZP.PersistedStore) {
     return y
   }
 }
-g(P, "displayName", "FrecencyStore"), g(P, "persistKey", "FrecencyStore");
+m(P, "displayName", "FrecencyStore"), m(P, "persistKey", "FrecencyStore");
 let D = new P(s.Z, {
   CHANNEL_SELECT: N,
   VOICE_CHANNEL_SELECT: N,

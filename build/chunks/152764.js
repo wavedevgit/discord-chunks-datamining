@@ -63,13 +63,13 @@ function t(e) {
         relevance: .2
       }]
     },
-    _ = {
+    p = {
       scope: "subst",
       begin: /\$\{/,
       end: /\}/,
       keywords: n
     },
-    p = {
+    _ = {
       scope: "char.escape",
       match: /\\(?!\$)./
     },
@@ -81,32 +81,32 @@ function t(e) {
         contains: [{
           scope: "char.escape",
           match: /''\$/
-        }, _, {
+        }, p, {
           scope: "char.escape",
           match: /'''/
-        }, p]
+        }, _]
       }, {
         begin: '"',
         end: '"',
         contains: [{
           scope: "char.escape",
           match: /\\\$/
-        }, _, p]
+        }, p, _]
       }]
     },
-    g = {
+    m = {
       scope: "params",
       match: RegExp(`${i}\\s*:(?=\\s)`)
     },
-    m = [u, e.HASH_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.COMMENT(/\/\*\*(?!\/)/, /\*\//, {
+    g = [u, e.HASH_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.COMMENT(/\/\*\*(?!\/)/, /\*\//, {
       subLanguage: "markdown",
       relevance: 0
-    }), r, h, o, s, g, f, d, c];
-  return _.contains = m, {
+    }), r, h, o, s, m, f, d, c];
+  return p.contains = g, {
     name: "Nix",
     aliases: ["nixos"],
     keywords: n,
-    contains: m.concat([{
+    contains: g.concat([{
       scope: "meta.prompt",
       match: /^nix-repl>(?=\s)/,
       relevance: 10

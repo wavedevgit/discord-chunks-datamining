@@ -29,8 +29,8 @@ var r = n(512722),
   C = n(553803),
   I = n(316758),
   S = n(467531),
-  T = n(798628),
-  P = n(918088),
+  P = n(798628),
+  T = n(918088),
   A = n(981631),
   w = n(388032);
 
@@ -131,7 +131,7 @@ function M(e) {
     messageId: n,
     isEditing: r
   } = e;
-  (0, T.eu)(t, n, e => {
+  (0, P.eu)(t, n, e => {
     var n;
     return {
       channelId: t,
@@ -207,7 +207,7 @@ async function U(e) {
     });
     return
   }
-  let a = (0, T.fU)(t, n);
+  let a = (0, P.fU)(t, n);
   i()(null != a, "Must not be able to vote without existing state!");
   let o = W({
     channelId: t,
@@ -215,7 +215,7 @@ async function U(e) {
   });
   try {
     let e = [...a.selectedAnswerIds.values()];
-    (0, T.eu)(t, n, e => (i()(null != e, "Must not be able to vote without existing state!"), k(Z({}, e), {
+    (0, P.eu)(t, n, e => (i()(null != e, "Must not be able to vote without existing state!"), k(Z({}, e), {
       submitting: !0,
       editing: !1
     }))), await F({
@@ -226,7 +226,7 @@ async function U(e) {
       channelId: t,
       messageId: n,
       answerIds: e
-    }), (0, T.eu)(t, n, () => void 0), c.uv.announce(0 === e.length ? w.NW.string(w.t["xcvy+/"]) : w.NW.string(w.t.o20GSk))
+    }), (0, P.eu)(t, n, () => void 0), c.uv.announce(0 === e.length ? w.NW.string(w.t["xcvy+/"]) : w.NW.string(w.t.o20GSk))
   } catch (e) {
     var l, s, d;
     u.Z.show({
@@ -236,7 +236,7 @@ async function U(e) {
       channelId: t,
       messageId: n,
       answerIds: o
-    }), (0, T.eu)(t, n, e => {
+    }), (0, P.eu)(t, n, e => {
       if (null != e) return k(Z({}, e), {
         submitting: !1,
         editing: !1
@@ -258,7 +258,7 @@ async function B(e) {
       });
       return
     }
-    return (0, T.eu)(t, n, e => {
+    return (0, P.eu)(t, n, e => {
       var n;
       return {
         channelId: t,
@@ -305,7 +305,7 @@ async function G(e) {
           channelId: t,
           messageId: n
         } = e;
-        (0, T.eu)(t, n, e => {
+        (0, P.eu)(t, n, e => {
           var r, i;
           let a = null == e || !e.showResults,
             o = j.Z.getMessage(t, n),
@@ -383,7 +383,7 @@ let H = {
       return i
     }(e, ["answerId"])), {
       tapShouldOpenVotersModal: s
-    } = null !== (n = (0, P.Tk)(l)) && void 0 !== n ? n : {};
+    } = null !== (n = (0, T.Tk)(l)) && void 0 !== n ? n : {};
     if (!0 === s) {
       D({
         channelId: a,
@@ -393,7 +393,7 @@ let H = {
       return
     }
     let c = null === (t = l.poll) || void 0 === t ? void 0 : t.allow_multiselect;
-    (0, T.eu)(a, o, e => {
+    (0, P.eu)(a, o, e => {
       var t, n;
       if (null == e) {
         let e = new Set([r]),

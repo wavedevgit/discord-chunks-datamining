@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r = n(70780),
   i = n(147913),
@@ -21,9 +21,9 @@ function u(e, t, n) {
 }
 let d = +l.Z.Millis.SECOND,
   f = 30 * l.Z.Millis.SECOND,
-  _ = 360,
-  p = new o.Z("RTCLatencyTestManager");
-p.enableNativeLogger(!0);
+  p = 360,
+  _ = new o.Z("RTCLatencyTestManager");
+_.enableNativeLogger(!0);
 class h extends i.Z {
   _terminate() {
     null != this.refetchTimeout && clearTimeout(this.refetchTimeout)
@@ -34,10 +34,10 @@ class h extends i.Z {
     }), u(this, "_handleTestRegionsResponse", e => {
       let t = e.map(e => e.region);
       s.Z.shouldPerformLatencyTest(t) ? a.Z.getMediaEngine().rankRtcRegions(e).then(e => {
-        p.verbose("RTC region latency test completed, ranked regions are: ", e), (0, r.o)(e, t)
-      }).catch(e => p.warn(e)) : p.verbose("RTC cached ranked preferred regions are ".concat(s.Z.getPreferredRegions()))
+        _.verbose("RTC region latency test completed, ranked regions are: ", e), (0, r.o)(e, t)
+      }).catch(e => _.warn(e)) : _.verbose("RTC cached ranked preferred regions are ".concat(s.Z.getPreferredRegions()))
     }), u(this, "_fetchAndScheduleRefetch", () => {
-      (0, r.J)().then(e => this._handleTestRegionsResponse(e.body)).catch(e => p.warn(e)), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, _ * l.Z.Millis.MINUTE)
+      (0, r.J)().then(e => this._handleTestRegionsResponse(e.body)).catch(e => _.warn(e)), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, p * l.Z.Millis.MINUTE)
     }), u(this, "_handleConnectionOpen", () => {
       if (c.isPlatformEmbedded && !__OVERLAY__) {
         let e = Math.floor(d + Math.random() * f);
@@ -46,4 +46,4 @@ class h extends i.Z {
     })
   }
 }
-let g = new h
+let m = new h

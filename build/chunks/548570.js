@@ -13,11 +13,11 @@ var r = n(512722),
   u = n(544891),
   d = n(570140),
   f = n(406966),
-  _ = n(795513),
-  p = n(266750),
+  p = n(795513),
+  _ = n(266750),
   h = n(250407),
-  g = n(710845),
-  m = n(797614),
+  m = n(710845),
+  g = n(797614),
   E = n(218543),
   v = n(857192),
   b = n(626135),
@@ -74,7 +74,7 @@ function U(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let G = new g.Z("GatewaySocket"),
+let G = new m.Z("GatewaySocket"),
   B = new C.Z;
 
 function F(e) {
@@ -95,12 +95,12 @@ function F(e) {
   if (window._ws = null, null != l) {
     if (t = l.ws, l.state.gateway !== n) G.verbose("[FAST CONNECT] gatewayURL mismatch: ".concat(l.state.gateway, " !== ").concat(n)), t.close(1e3), t = null;
     else {
-      var _;
+      var p;
       let e = j({}, l.state);
       null != e.messages && (e.messages = e.messages.map(e => null != e.data && "string" == typeof e.data ? U(j({}, e), {
         data: e.data.substring(0, 100)
       }) : e)), G.log("[FAST CONNECT] successfully took over websocket, state:", U(j({}, e), {
-        messages: null === (_ = e.messages) || void 0 === _ ? void 0 : _.length
+        messages: null === (p = e.messages) || void 0 === p ? void 0 : p.length
       })), c = l.state.open, u = l.state.identify, d = l.state.messages, f = l.state.clientState
     }
   }
@@ -367,7 +367,7 @@ class $ extends D.Z {
     this.connectionState = T.Z.IDENTIFYING;
     let t = Date.now();
     this.identifyStartTime = t;
-    let [n, r, i] = await Promise.all([(0, h.O)() ? f.Z.getCommittedVersions() : {}, (0, h.O)() ? p.Z.getCommittedVersions() : {}, !!(0, h.O)() && _.Z.canUseGuildVersions()]), a = i ? {
+    let [n, r, i] = await Promise.all([(0, h.O)() ? f.Z.getCommittedVersions() : {}, (0, h.O)() ? _.Z.getCommittedVersions() : {}, !!(0, h.O)() && p.Z.canUseGuildVersions()]), a = i ? {
       guild_versions: n,
       highest_last_message_id: r.highest_last_message_id,
       read_state_version: r.read_state_version,
@@ -446,7 +446,7 @@ class $ extends D.Z {
       error: n,
       metricAction: r
     } = e;
-    G.error("resetSocketOnError during ".concat(t, ": ").concat(n.message), n.stack), m.Z.increment({
+    G.error("resetSocketOnError during ".concat(t, ": ").concat(n.message), n.stack), g.Z.increment({
       name: l.V.SOCKET_CRASHED,
       tags: ["action:".concat(null != r ? r : t)]
     }, !0), !1 !== e.sentry && I.Z.captureException(n, {

@@ -50,8 +50,8 @@ var d = function(e) {
   return e[e.NotResolved = 0] = "NotResolved", e[e.Resolving = 1] = "Resolving", e[e.Resolved = 2] = "Resolved", e[e.Invalid = 3] = "Invalid", e
 }({});
 let f = 0,
-  _ = null,
-  p = {};
+  p = null,
+  _ = {};
 
 function h() {
   0 === f && (f = 1, (0, a.Ce)().then(e => {
@@ -62,18 +62,18 @@ function h() {
   }))
 }
 
-function g(e) {
+function m(e) {
   let {
     overrides: t
   } = e;
-  f = 2, _ = t
+  f = 2, p = t
 }
 
-function m(e) {
-  if (e in p) return;
+function g(e) {
+  if (e in _) return;
   let t = (0, a.r4)(e);
   if (null == t) {
-    p = u(l({}, p), {
+    _ = u(l({}, _), {
       [e]: {
         url: e,
         state: 3
@@ -81,7 +81,7 @@ function m(e) {
     });
     return
   }
-  p = u(l({}, p), {
+  _ = u(l({}, _), {
     [e]: {
       url: e,
       validatedURL: t.url,
@@ -102,8 +102,8 @@ function E(e) {
     url: t,
     override: n
   } = e, r = null == n ? 3 : 2;
-  p = u(l({}, p), {
-    [t]: u(l({}, p[t]), {
+  _ = u(l({}, _), {
+    [t]: u(l({}, _[t]), {
       state: r,
       override: n
     })
@@ -113,18 +113,18 @@ class v extends(r = i.ZP.Store) {
   getCurrentBuildOverride() {
     return h(), {
       state: f,
-      overrides: _
+      overrides: p
     }
   }
   getBuildOverride(e) {
-    return m(e), p[e]
+    return g(e), _[e]
   }
   getBuildOverrides() {
-    return p
+    return _
   }
 }
 s(v, "displayName", "BuildOverrideStore");
 let b = new v(o.Z, {
   BUILD_OVERRIDE_RESOLVED: E,
-  CURRENT_BUILD_OVERRIDE_RESOLVED: g
+  CURRENT_BUILD_OVERRIDE_RESOLVED: m
 })

@@ -3,7 +3,7 @@
 n.d(t, {
   rK: () => E,
   tR: () => b,
-  tj: () => p
+  tj: () => _
 }), n(757143), n(301563), n(566702), n(653041), n(230036), n(47120), n(411104);
 var r = n(913527),
   i = n.n(r),
@@ -23,8 +23,8 @@ let s = /^[0]+/,
   u = /(PM|ΜΜ|शाम)/i,
   d = /\s+/,
   f = e => e.replace(s, "").replace(l, "").replace(c, "").replace(d, ""),
-  _ = e => e.replace(s, "").replace(u, "").replace(d, ""),
-  p = (e, t) => {
+  p = e => e.replace(s, "").replace(u, "").replace(d, ""),
+  _ = (e, t) => {
     let n = t.toUpperCase().trim();
     if (n.length > 0) {
       let t = i()("".concat(null == e ? void 0 : e.format("YYYY-MM-DD"), " ").concat(n), "YYYY-MM-DD LT");
@@ -32,8 +32,8 @@ let s = /^[0]+/,
     }
   },
   h = i()("2021-04-12T00:00:00"),
-  g = 15,
-  m = "LT",
+  m = 15,
+  g = "LT",
   E = (e, t) => e.clone().hours(t.hour()).minutes(t.minutes()).seconds(0),
   v = (e, t) => e.value.unix() - t.value.unix();
 class b {
@@ -73,7 +73,7 @@ class b {
   _guessOptions(e) {
     let t = [];
     if (/[:\\.]/.test(e)) {
-      let n = p(h, e);
+      let n = _(h, e);
       if (null != n) {
         t.push(n.clone());
         let r = n.add({
@@ -81,7 +81,7 @@ class b {
         });
         r.isBefore(h.clone().add({
           hours: 24
-        })) && _(r.format("LT")) === _(e) && t.push(r)
+        })) && p(r.format("LT")) === p(e) && t.push(r)
       }
     }
     return t
@@ -101,8 +101,8 @@ class b {
     return null == t ? this._addNewOption(e) : t
   }
   constructor({
-    intervalInMinutes: e = g,
-    labelFormat: t = m
+    intervalInMinutes: e = m,
+    labelFormat: t = g
   } = {}) {
     if (a(this, "intervalInMinutes", void 0), a(this, "labelFormat", void 0), a(this, "options", []), a(this, "_index", {}), e <= 0) throw Error("intervalInMinutes should be positive number, got ".concat(e));
     this.intervalInMinutes = e, this.labelFormat = t, this._generateTimeOptions()

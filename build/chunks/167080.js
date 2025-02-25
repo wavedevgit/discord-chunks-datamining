@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -44,13 +44,13 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -67,26 +67,26 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let g = e => {
+let m = e => {
   var {
     href: t,
     className: n,
     iconClassName: u,
     rel: f,
     target: h,
-    mimeType: g,
-    fileName: m,
+    mimeType: m,
+    fileName: g,
     focusProps: E,
     onClick: v
-  } = e, b = p(e, ["href", "className", "iconClassName", "rel", "target", "mimeType", "fileName", "focusProps", "onClick"]);
+  } = e, b = _(e, ["href", "className", "iconClassName", "rel", "target", "mimeType", "fileName", "focusProps", "onClick"]);
   let y = i.useMemo(() => o.X.getDefaultLinkInterceptor(t), [t]),
     O = i.useCallback(e => {
       s.default.track(l.rMx.MEDIA_DOWNLOAD_BUTTON_TAPPED, {
-        attachment_type: null == g ? void 0 : g[0],
-        attachment_subtype: null == g ? void 0 : g[1]
+        attachment_type: null == m ? void 0 : m[0],
+        attachment_subtype: null == m ? void 0 : m[1]
       }), null == v || v(), null == y || y(e)
-    }, [y, g, v]);
-  return null != m ? (0, r.jsx)(a.eee, _(d({
+    }, [y, m, v]);
+  return null != g ? (0, r.jsx)(a.eee, p(d({
     href: t,
     onClick: O,
     target: h,
@@ -95,8 +95,8 @@ let g = e => {
     "aria-label": c.NW.string(c.t["1WjMbG"]),
     focusProps: E
   }, b), {
-    children: m
-  })) : (0, r.jsx)(a.eee, _(d({
+    children: g
+  })) : (0, r.jsx)(a.eee, p(d({
     href: t,
     onClick: O,
     target: h,

@@ -22,7 +22,7 @@ var i = n(952265),
   d = n(981631),
   f = n(602091);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,14 +31,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -55,13 +55,13 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e) {
+function g(e) {
   let t = a.default.getId(),
     n = s.ZP.isModerator(t, e.id),
     r = l.Z.isLive(e.id);
@@ -73,7 +73,7 @@ function E(e, t) {
     let {
       default: t
     } = await Promise.all([n.e("84335"), n.e("68241"), n.e("82758"), n.e("3908")]).then(n.bind(n, 581355));
-    return n => (0, r.jsx)(t, g(p({}, n), {
+    return n => (0, r.jsx)(t, m(_({}, n), {
       channel: e
     }))
   }, {
@@ -86,7 +86,7 @@ function v(e) {
     let {
       default: t
     } = await n.e("84686").then(n.bind(n, 665111));
-    return n => (0, r.jsx)(t, g(p({}, n), {
+    return n => (0, r.jsx)(t, m(_({}, n), {
       channel: e
     }))
   })
@@ -97,7 +97,7 @@ function b(e, t) {
     let {
       default: t
     } = await n.e("2634").then(n.bind(n, 548841));
-    return n => (0, r.jsx)(t, g(p({}, n), {
+    return n => (0, r.jsx)(t, m(_({}, n), {
       channel: e
     }))
   }, {
@@ -116,7 +116,7 @@ function S(e, t) {
     let {
       default: i
     } = await n.e("1906").then(n.bind(n, 854510));
-    return n => (0, r.jsx)(i, g(p({}, n), {
+    return n => (0, r.jsx)(i, m(_({}, n), {
       channel: e,
       onAccept: t
     }))
@@ -128,7 +128,7 @@ function I(e, t) {
     let {
       default: t
     } = await n.e("85885").then(n.bind(n, 124779));
-    return n => (0, r.jsx)(t, g(p({}, n), {
+    return n => (0, r.jsx)(t, m(_({}, n), {
       channel: e
     }))
   }, {
@@ -145,7 +145,7 @@ function T(e) {
 
 function N(e, t) {
   let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
-  t !== e.id && (0, c.Ku)(!0), O(e), t !== e.id && n && m(e)
+  t !== e.id && (0, c.Ku)(!0), O(e), t !== e.id && n && g(e)
 }
 
 function A(e, t) {
@@ -153,7 +153,7 @@ function A(e, t) {
     let {
       default: i
     } = await n.e("65045").then(n.bind(n, 143782));
-    return n => (0, r.jsx)(i, p({
+    return n => (0, r.jsx)(i, _({
       channel: e,
       onConfirm: t
     }, n))

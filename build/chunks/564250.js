@@ -37,18 +37,18 @@ var r = n(505388),
       },
       d = t.ignoreQueryPrefix ? e.replace(/^\?/, "") : e,
       f = t.parameterLimit === 1 / 0 ? void 0 : t.parameterLimit,
-      _ = d.split(t.delimiter, f),
-      p = -1,
+      p = d.split(t.delimiter, f),
+      _ = -1,
       h = t.charset;
     if (t.charsetSentinel)
-      for (g = 0; g < _.length; ++g) 0 === _[g].indexOf("utf8=") && (_[g] === u ? h = "utf-8" : _[g] === c && (h = "iso-8859-1"), p = g, g = _.length);
-    for (g = 0; g < _.length; ++g)
-      if (g !== p) {
-        var g, m, E, v = _[g],
+      for (m = 0; m < p.length; ++m) 0 === p[m].indexOf("utf8=") && (p[m] === u ? h = "utf-8" : p[m] === c && (h = "iso-8859-1"), _ = m, m = p.length);
+    for (m = 0; m < p.length; ++m)
+      if (m !== _) {
+        var m, g, E, v = p[m],
           b = v.indexOf("]="),
-          y = -1 === b ? v.indexOf("=") : b + 1; - 1 === y ? (m = t.decoder(v, a.decoder, h, "key"), E = t.strictNullHandling ? null : "") : (m = t.decoder(v.slice(0, y), a.decoder, h, "key"), E = r.maybeMap(l(v.slice(y + 1), t), function(e) {
+          y = -1 === b ? v.indexOf("=") : b + 1; - 1 === y ? (g = t.decoder(v, a.decoder, h, "key"), E = t.strictNullHandling ? null : "") : (g = t.decoder(v.slice(0, y), a.decoder, h, "key"), E = r.maybeMap(l(v.slice(y + 1), t), function(e) {
           return t.decoder(e, a.decoder, h, "value")
-        })), E && t.interpretNumericEntities && "iso-8859-1" === h && (E = s(E)), v.indexOf("[]=") > -1 && (E = o(E) ? [E] : E), i.call(n, m) ? n[m] = r.combine(n[m], E) : n[m] = E
+        })), E && t.interpretNumericEntities && "iso-8859-1" === h && (E = s(E)), v.indexOf("[]=") > -1 && (E = o(E) ? [E] : E), i.call(n, g) ? n[g] = r.combine(n[g], E) : n[g] = E
       } return n
   },
   f = function(e, t, n, r) {
@@ -67,7 +67,7 @@ var r = n(505388),
     }
     return i
   },
-  _ = function(e, t, n, r) {
+  p = function(e, t, n, r) {
     if (e) {
       var o = n.allowDots ? e.replace(/\.([^.[]+)/g, "[$1]") : e,
         a = /(\[[^[\]]*])/,
@@ -86,7 +86,7 @@ var r = n(505388),
       return l && u.push("[" + o.slice(l.index) + "]"), f(u, t, n, r)
     }
   },
-  p = function(e) {
+  _ = function(e) {
     if (!e) return a;
     if (null !== e.decoder && void 0 !== e.decoder && "function" != typeof e.decoder) throw TypeError("Decoder has to be a function.");
     if (void 0 !== e.charset && "utf-8" !== e.charset && "iso-8859-1" !== e.charset) throw TypeError("The charset option must be either utf-8, iso-8859-1, or undefined");
@@ -111,11 +111,11 @@ var r = n(505388),
     }
   };
 e.exports = function(e, t) {
-  var n = p(t);
+  var n = _(t);
   if ("" === e || null == e) return n.plainObjects ? Object.create(null) : {};
   for (var i = "string" == typeof e ? d(e, n) : e, o = n.plainObjects ? Object.create(null) : {}, a = Object.keys(i), s = 0; s < a.length; ++s) {
     var l = a[s],
-      c = _(l, i[l], n, "string" == typeof e);
+      c = p(l, i[l], n, "string" == typeof e);
     o = r.merge(o, c, n)
   }
   return !0 === n.allowSparse ? o : r.compact(o)

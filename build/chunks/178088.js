@@ -33,8 +33,8 @@ function I(e) {
     onClose: n,
     children: I,
     badgeState: S,
-    popoutPosition: T,
-    popoutAlign: P
+    popoutPosition: P,
+    popoutAlign: T
   } = e, {
     analyticsLocations: A
   } = (0, d.ZP)(c.Z.NOTIFICATION_CENTER), [w, Z] = i.useState(!1), [k, R] = [(0, o.e7)([g.Z], () => {
@@ -92,8 +92,8 @@ function I(e) {
     value: A,
     children: (0, r.jsx)(s.yRy, {
       animation: s.yRy.Animation.NONE,
-      position: T,
-      align: P,
+      position: P,
+      align: T,
       autoInvert: !1,
       shouldShow: w,
       onRequestClose: M,

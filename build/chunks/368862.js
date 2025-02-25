@@ -50,12 +50,12 @@ function d(e, t) {
 var f = function(e) {
   return e[e.FETCHING = 0] = "FETCHING", e[e.FETCHED = 1] = "FETCHED", e[e.ERROR = 2] = "ERROR", e
 }({});
-let _ = [],
-  p = {},
+let p = [],
+  _ = {},
   h = {},
-  g = {};
+  m = {};
 
-function m(e) {
+function g(e) {
   let {
     surface: t,
     activeState: n
@@ -69,7 +69,7 @@ function E(e) {
     activeState: n
   } = e;
   h = d(c({}, h), {
-    [m({
+    [g({
       surface: t,
       activeState: n
     })]: 0
@@ -89,17 +89,17 @@ function y(e) {
     collections: t,
     surface: n,
     activeState: r
-  } = e, i = m({
+  } = e, i = g({
     surface: n,
     activeState: r
   }), o = v(t.map(e => (e.application_directory_collection_items = b(e.application_directory_collection_items), e)));
-  p = d(c({}, p), {
+  _ = d(c({}, _), {
     [i]: o
   }), h = d(c({}, h), {
     [i]: 1
   });
   let a = Date.now();
-  g = d(c({}, g), {
+  m = d(c({}, m), {
     [i]: a
   })
 }
@@ -110,7 +110,7 @@ function O(e) {
     activeState: n
   } = e;
   h = d(c({}, h), {
-    [m({
+    [g({
       surface: t,
       activeState: n
     })]: 2
@@ -122,7 +122,7 @@ class S extends(r = a.ZP.Store) {
       surface: t,
       activeState: n
     } = e;
-    return g[m({
+    return m[g({
       surface: t,
       activeState: n
     })]
@@ -132,7 +132,7 @@ class S extends(r = a.ZP.Store) {
       surface: t,
       activeState: n
     } = e;
-    return h[m({
+    return h[g({
       surface: t,
       activeState: n
     })]
@@ -143,10 +143,10 @@ class S extends(r = a.ZP.Store) {
       surface: n,
       activeState: r
     } = e;
-    return null !== (t = p[m({
+    return null !== (t = _[g({
       surface: n,
       activeState: r
-    })]) && void 0 !== t ? t : _
+    })]) && void 0 !== t ? t : p
   }
 }
 l(S, "displayName", void 0);

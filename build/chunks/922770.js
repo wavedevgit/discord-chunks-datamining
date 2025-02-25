@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   $: () => E,
-  R: () => g
+  R: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -45,13 +45,13 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -68,11 +68,11 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var g = function(e) {
+var m = function(e) {
   return e.WANDERING_CUBES = "wanderingCubes", e.CHASING_DOTS = "chasingDots", e.PULSING_ELLIPSIS = "pulsingEllipsis", e.SPINNING_CIRCLE = "spinningCircle", e.SPINNING_CIRCLE_SIMPLE = "spinningCircleSimple", e.LOW_MOTION = "lowMotion", e
 }({});
 
-function m(e) {
+function g(e) {
   switch (e) {
     case "wanderingCubes":
     case "chasingDots":
@@ -89,11 +89,11 @@ function E(e) {
     className: o,
     itemClassName: u,
     "aria-label": f
-  } = e, h = p(e, ["type", "animated", "className", "itemClassName", "aria-label"]);
+  } = e, h = _(e, ["type", "animated", "className", "itemClassName", "aria-label"]);
   let {
-    reducedMotion: g
-  } = i.useContext(s.S), E = g.enabled ? m(t) : t;
-  if (f = null != f ? f : l.NW.string(l.t.ZTNur6), "spinningCircle" === E || "spinningCircleSimple" === E) return (0, r.jsx)("div", _(d({
+    reducedMotion: m
+  } = i.useContext(s.S), E = m.enabled ? g(t) : t;
+  if (f = null != f ? f : l.NW.string(l.t.ZTNur6), "spinningCircle" === E || "spinningCircleSimple" === E) return (0, r.jsx)("div", p(d({
     className: a()(c.spinner, c[E], o, {
       [c.stopAnimation]: !n
     }),
@@ -127,7 +127,7 @@ function E(e) {
     })
   }));
   let v = a()(c.item, u);
-  return (0, r.jsx)("span", _(d({
+  return (0, r.jsx)("span", p(d({
     className: a()(c.spinner, o, {
       [c.stopAnimation]: !n
     }),
@@ -146,4 +146,4 @@ function E(e) {
     })
   }))
 }
-E.Type = g
+E.Type = m

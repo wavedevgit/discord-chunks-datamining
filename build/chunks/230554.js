@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120), n(301563), n(757143);
 var r = n(192379),
   i = n(270445),
@@ -13,8 +13,8 @@ var r = n(192379),
   u = n(887490),
   d = n(515270),
   f = n(847302),
-  _ = n(42530);
-let p = (e, t, n) => ({
+  p = n(42530);
+let _ = (e, t, n) => ({
   getSlateEditor: () => e,
   submit(e) {
     e.preventDefault(), n()
@@ -50,7 +50,7 @@ let p = (e, t, n) => ({
       }
       if (!u.LC.isText(i)) break;
       let t = i.text[a];
-      if (_.i$.test(t)) break;
+      if (p.i$.test(t)) break;
       s = t + s
     }
     return {
@@ -84,7 +84,7 @@ let p = (e, t, n) => ({
     l.T.withSingleEntry(e, () => {
       let o = s.HZ(e),
         a = null != o && h(t, o[0]);
-      if (null != r && a && (c.Q.removeInlineChildren(e, o), i = !1), g(e, n, r, i), null != r && a) {
+      if (null != r && a && (c.Q.removeInlineChildren(e, o), i = !1), m(e, n, r, i), null != r && a) {
         let n = s.cr(e);
         if (o = u.q.updateElement(e, o), null != n) {
           let r = u.q.markdown(n[0], t.guild_id);
@@ -111,7 +111,7 @@ let p = (e, t, n) => ({
           reverse: !0
         })
       }
-      g(e, n, r, i), a && c.Q.selectNextCommandOption(e)
+      m(e, n, r, i), a && c.Q.selectNextCommandOption(e)
     })
   },
   insertEmoji(t) {
@@ -120,7 +120,7 @@ let p = (e, t, n) => ({
       var r, i;
       let o = t.animated ? "a" : "",
         a = null !== (i = null !== (r = t.originalName) && void 0 !== r ? r : t.name) && void 0 !== i ? i : "";
-      g(e, ":".concat(t.name, ":"), null != t.id ? "<".concat(o, ":").concat(a.replace(/:/g, ""), ":").concat(t.id, ">") : null, n)
+      m(e, ":".concat(t.name, ":"), null != t.id ? "<".concat(o, ":").concat(a.replace(/:/g, ""), ":").concat(t.id, ">") : null, n)
     })
   }
 });
@@ -132,13 +132,13 @@ function h(e, t) {
   return null != i && (i.type !== o.jw.STRING || (null == i ? void 0 : i.choices) != null || (null == i ? void 0 : i.autocomplete))
 }
 
-function g(e, t, n, r) {
+function m(e, t, n, r) {
   let i = u.bN.areStylesDisabled(e) || null == n ? t : n;
   l.T.withSingleEntry(e, () => {
     c.Q.insertText(e, r ? i + " " : i)
   })
 }
 
-function m(e, t, n, i) {
-  r.useImperativeHandle(e, () => p(t, n, i), [t, n, i])
+function g(e, t, n, i) {
+  r.useImperativeHandle(e, () => _(t, n, i), [t, n, i])
 }

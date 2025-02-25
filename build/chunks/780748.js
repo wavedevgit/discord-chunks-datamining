@@ -18,24 +18,24 @@ function c(e) {
     onKeyDown: u,
     onKeyUp: d,
     onTab: f,
-    onEnter: _,
-    allowNewLines: p,
+    onEnter: p,
+    allowNewLines: _,
     submit: h,
-    hideAutocomplete: g,
-    moveSelection: m
+    hideAutocomplete: m,
+    moveSelection: g
   } = e;
   return {
     handleKeyDown: r.useCallback(e => {
       var r;
       switch (e.which) {
         case l.yXg.ARROW_UP:
-          if (m(-1)) {
+          if (g(-1)) {
             e.preventDefault();
             return
           }
           break;
         case l.yXg.ARROW_DOWN:
-          if (m(1)) {
+          if (g(1)) {
             e.preventDefault();
             return
           }
@@ -43,7 +43,7 @@ function c(e) {
         case l.yXg.P:
           if ((0, s.E)(e, {
               ctrl: !0
-            }) && m(-1)) {
+            }) && g(-1)) {
             e.preventDefault();
             return
           }
@@ -51,13 +51,13 @@ function c(e) {
         case l.yXg.N:
           if ((0, s.E)(e, {
               ctrl: !0
-            }) && m(1)) {
+            }) && g(1)) {
             e.preventDefault();
             return
           }
           break;
         case l.yXg.ESCAPE:
-          null == g || g();
+          null == m || m();
           break;
         case l.yXg.TAB:
           if ((0, s.E)(e, {}) && (null == f ? void 0 : f())) {
@@ -70,7 +70,7 @@ function c(e) {
           }
           break;
         case l.yXg.ENTER:
-          if ((0, s.E)(e, {}) && (null == _ ? void 0 : _(e))) {
+          if ((0, s.E)(e, {}) && (null == p ? void 0 : p(e))) {
             e.preventDefault(), e.stopPropagation();
             return
           }
@@ -79,8 +79,8 @@ function c(e) {
         e.preventDefault(), e.stopPropagation();
         return
       }
-      e.which !== l.yXg.ENTER || (e.altKey || e.shiftKey || c && !e.ctrlKey || (0, a.L6)(t)) && p || (e.preventDefault(), e.stopPropagation(), h()), null == u || u(e)
-    }, [p, n.id, c, t, g, m, _, u, f, h]),
+      e.which !== l.yXg.ENTER || (e.altKey || e.shiftKey || c && !e.ctrlKey || (0, a.L6)(t)) && _ || (e.preventDefault(), e.stopPropagation(), h()), null == u || u(e)
+    }, [_, n.id, c, t, m, g, p, u, f, h]),
     handleKeyUp: r.useCallback(e => {
       null == d || d(e)
     }, [d])

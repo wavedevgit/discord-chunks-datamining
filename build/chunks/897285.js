@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(47120);
 var r = n(147913),
   i = n(914010),
@@ -27,7 +27,7 @@ let l = {},
       c.delete(e)
     }
   };
-class _ extends r.Z {
+class p extends r.Z {
   async getGuildEventUserCounts(e, t, n) {
     let r = n.filter(n => null == l["".concat(e, "-").concat(t, "-").concat(n)] || Date.now() - l["".concat(e, "-").concat(t, "-").concat(n)] > d);
     if (!(Date.now() - l["".concat(e, "-").concat(t)] < d) || 0 !== r.length) {
@@ -86,4 +86,4 @@ class _ extends r.Z {
     })
   }
 }
-let p = new _
+let _ = new p

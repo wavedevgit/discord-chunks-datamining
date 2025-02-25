@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(47120), n(977457);
 var r = n(192379),
   i = n(392711),
@@ -14,14 +14,14 @@ var r = n(192379),
   d = n(621853),
   f = n(484459);
 
-function _(e) {
+function p(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-    [n, _, p] = (0, o.Wu)([d.Z], () => [d.Z.getMutualFriends(e.id), d.Z.getMutualGuilds(e.id), d.Z.isFetchingProfile(e.id)]),
+    [n, p, _] = (0, o.Wu)([d.Z], () => [d.Z.getMutualFriends(e.id), d.Z.getMutualGuilds(e.id), d.Z.isFetchingProfile(e.id)]),
     h = (0, l.Z)(),
-    [g, m] = (0, r.useState)(null),
-    E = t && null == g && !p,
+    [m, g] = (0, r.useState)(null),
+    E = t && null == m && !_,
     v = !e.bot && null == n,
-    b = null == _,
+    b = null == p,
     y = E && (v || b);
   (0, r.useEffect)(() => {
     y && (async () => {
@@ -32,7 +32,7 @@ function _(e) {
           abortSignal: h
         })
       } catch (e) {
-        m(new a.Hx(e))
+        g(new a.Hx(e))
       }
     })()
   }, [y, e.id, e.bot, h]);
@@ -46,21 +46,21 @@ function _(e) {
       return -((null !== (n = null === (t = O.get(r.id)) || void 0 === t ? void 0 : t.communicationProbability) && void 0 !== n ? n : -1) * 1)
     }), [n, O]),
     T = (0, r.useMemo)(() => {
-      if (null == _ || _.length < 2) return _;
+      if (null == p || p.length < 2) return p;
       let e = Object.fromEntries(S.map((e, t) => [e, t]));
-      return (0, i.sortBy)(_, t => {
+      return (0, i.sortBy)(p, t => {
         var n;
         let {
           guild: r
         } = t;
         return null !== (n = e[r.id]) && void 0 !== n ? n : S.length
       })
-    }, [_, S]),
+    }, [p, S]),
     N = (0, s.Z)(I),
     A = (0, s.Z)(T);
   return {
     mutualFriends: null != I ? I : N,
     mutualGuilds: null != T ? T : A,
-    isFetching: p
+    isFetching: _
   }
 }

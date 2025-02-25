@@ -14,9 +14,9 @@ var i = n(120356),
   u = n(660579),
   d = n(64621),
   f = n(228168),
-  _ = n(715047);
+  p = n(715047);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,13 +32,13 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -78,8 +78,8 @@ function b(e) {
     user: t,
     profileType: n,
     animateOnHover: i,
-    onOpenProfile: p
-  } = e, g = E(e, ["user", "profileType", "animateOnHover", "onOpenProfile"]);
+    onOpenProfile: _
+  } = e, m = E(e, ["user", "profileType", "animateOnHover", "onOpenProfile"]);
   let v = f.n_.AVATAR,
     {
       trackUserProfileAction: b
@@ -87,22 +87,22 @@ function b(e) {
     {
       interactionSource: y
     } = (0, s.Xo)(),
-    O = o()(_.avatar, {
-      [_.hoisted]: y === f.n_.AVATAR || y === f.n_.STATUS,
-      [_.biteSize]: n === f.y0.BITE_SIZE,
-      [_.fullSize]: n === f.y0.FULL_SIZE,
-      [_.panel]: n === f.y0.PANEL
+    O = o()(p.avatar, {
+      [p.hoisted]: y === f.n_.AVATAR || y === f.n_.STATUS,
+      [p.biteSize]: n === f.y0.BITE_SIZE,
+      [p.fullSize]: n === f.y0.FULL_SIZE,
+      [p.panel]: n === f.y0.PANEL
     });
   return (0, r.jsx)(d.Z, {
     sourceType: f.n_.AVATAR,
     user: t,
-    children: (0, r.jsx)(c.Z, m(h({
+    children: (0, r.jsx)(c.Z, g(h({
       user: t,
       className: O,
       profileType: n,
       sourceType: v,
       onAction: b
-    }, g), {
+    }, m), {
       children: () => (0, r.jsx)(u.Z, {
         className: O,
         user: t,
@@ -111,10 +111,10 @@ function b(e) {
         children: (0, r.jsx)(l.Z, h({
           user: t,
           animateOnHover: i,
-          onOpenProfile: p,
+          onOpenProfile: _,
           profileType: n,
-          className: _.withReactReply
-        }, g))
+          className: p.withReactReply
+        }, m))
       })
     }))
   })

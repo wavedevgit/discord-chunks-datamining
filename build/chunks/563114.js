@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(47120), n(757143), n(301563);
 var r = n(336317),
   i = n(768581),
@@ -49,17 +49,17 @@ async function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     channelId: t,
     messageId: n,
     emoji: r
   } = e
 }
-let p = {
+let _ = {
   getURL: s.Z.makeMemoizer(c),
   filterUnsupportedEmojis: u,
   applyPlatformToThemedEmojiColorPalette: d,
   getEmojiColors: f,
-  triggerFullscreenAnimation: _
+  triggerFullscreenAnimation: p
 }

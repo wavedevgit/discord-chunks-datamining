@@ -45,21 +45,21 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p() {
+function _() {
   return new Promise(e => setTimeout(e, 1e3))
 }
 
 function h() {
   return document.hasFocus()
 }
-let g = .25,
-  m = 4,
+let m = .25,
+  g = 4,
   E = 1,
   v = 2.8,
   b = {
@@ -104,21 +104,21 @@ let S = i.memo(function(e) {
       spacing: a = 2.5
     } = e, c = i.useRef(h()), u = i.useRef(!0);
     i.useEffect(() => () => void(u.current = !1), []);
-    let [f] = (0, l.q_F)(() => _(d({}, y), {
+    let [f] = (0, l.q_F)(() => p(d({}, y), {
       to: async e => {
         let t = v;
-        for (; u.current;) c.current = h(), c.current ? (t += E * m, await e({
+        for (; u.current;) c.current = h(), c.current ? (t += E * g, await e({
           dotCycle: t,
           immediate: !1
         })) : t !== v ? (t = v, await e({
           dotCycle: t,
           immediate: !0
-        })) : await p()
+        })) : await _()
       }
     }), "animate-always"), b = (6 * t + t / 4 * 2) / 2;
     return (0, r.jsx)(r.Fragment, {
       children: [0, 1, 2].map(e => {
-        let i = g * e,
+        let i = m * e,
           l = t + t * a * e;
         return (0, r.jsx)(s.animated.circle, {
           cx: n ? n.to([0, 1], [b, l]) : l,
@@ -139,15 +139,15 @@ let S = i.memo(function(e) {
       y: o,
       hide: u = !1,
       themed: f = !1,
-      className: p
+      className: _
     } = e;
-    return (0, l.Yzy)(u, _(d({}, b), {
+    return (0, l.Yzy)(u, p(d({}, b), {
       key: e => e ? "true" : "false"
     }), h() ? "animate-always" : "animate-never")((e, l, u) => {
       let {
         dotPosition: d
       } = e, {
-        key: _
+        key: p
       } = u;
       return l ? null : (0, r.jsx)("svg", {
         ref: t,
@@ -155,7 +155,7 @@ let S = i.memo(function(e) {
         y: o,
         width: 6 * n + n / 2 * 2,
         height: 2 * n,
-        className: a()(p, c.dots, f ? c.themed : null),
+        className: a()(_, c.dots, f ? c.themed : null),
         children: (0, r.jsx)(s.animated.g, {
           style: {
             opacity: d.to(e => Math.min(1, Math.max(e, 0)))
@@ -165,6 +165,6 @@ let S = i.memo(function(e) {
             dotPosition: d
           })
         })
-      }, _)
+      }, p)
     })
   }))

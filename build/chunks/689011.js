@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Oc: () => g,
+  Oc: () => m,
   t: () => h,
-  xe: () => m
+  xe: () => g
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -16,8 +16,8 @@ var i = n(481060),
   u = n(750143),
   d = n(388032),
   f = n(508793),
-  _ = n(365627),
-  p = n(753260);
+  p = n(365627),
+  _ = n(753260);
 let h = e => {
     let {
       step: t,
@@ -29,7 +29,7 @@ let h = e => {
         className: f.headerImageContainer,
         "aria-hidden": "true",
         children: (0, r.jsx)("img", {
-          src: p,
+          src: _,
           alt: "",
           className: f.headerImage
         })
@@ -45,7 +45,7 @@ let h = e => {
       })]
     })
   },
-  g = e => {
+  m = e => {
     let {
       icon: t,
       storeListingBenefits: n,
@@ -75,7 +75,7 @@ let h = e => {
     })
   };
 
-function m(e) {
+function g(e) {
   let {
     tierName: t,
     onConfirm: n,
@@ -84,7 +84,7 @@ function m(e) {
   return (0, r.jsxs)("div", {
     className: f.purchaseConfirmation,
     children: [(0, r.jsx)("img", {
-      src: _,
+      src: p,
       alt: "",
       width: 300,
       height: 126

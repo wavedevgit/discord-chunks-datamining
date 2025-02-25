@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  q: () => p
+  q: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -44,20 +44,20 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e) {
+function _(e) {
   let {
     color: t = "default",
     disabled: n,
     isFocused: o,
     showDefaultFocus: u = !1,
     menuItemProps: f,
-    children: p
+    children: _
   } = e, h = i.useRef(null);
   return i.useLayoutEffect(() => {
     if (!o) return;
@@ -66,7 +66,7 @@ function p(e) {
     (0, s.F)(h);
     let t = e.querySelector('[tabindex="0"]');
     null == t || t.focus()
-  }, [o]), (0, r.jsx)("div", _(d({
+  }, [o]), (0, r.jsx)("div", p(d({
     ref: h,
     className: a()(c.item, l._[t], {
       [c.disabled]: n,
@@ -75,6 +75,6 @@ function p(e) {
     }),
     "aria-disabled": n
   }, f), {
-    children: p
+    children: _
   }))
 }

@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(1870),
   d = n(429368),
   f = n(624377),
-  _ = n(530618),
-  p = n(331042),
+  p = n(530618),
+  _ = n(331042),
   h = n(372654),
-  g = n(987209),
-  m = n(563132),
+  m = n(987209),
+  g = n(563132),
   E = n(179118),
   v = n(614277),
   b = n(698708);
@@ -52,14 +52,14 @@ function S(e) {
     analyticsLocations: o
   } = e, l = (0, s.e7)([u.Z], () => u.Z.purchases), {
     skusById: f,
-    selectedSkuId: _,
+    selectedSkuId: p,
     application: h
-  } = (0, m.JL)(), g = (0, s.e7)([c.Z], () => c.Z.getProduct(_)), E = (0, d.o)(g, l);
-  a()(null != _, "Expected selectedSkuId"), a()(null != h, "Expected application");
-  let y = f[_];
-  return (a()(null != y, "Expected sku"), null == g) ? null : (0, r.jsxs)(v.C3, {
-    children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(p.e, {
-      product: g,
+  } = (0, g.JL)(), m = (0, s.e7)([c.Z], () => c.Z.getProduct(p)), E = (0, d.o)(m, l);
+  a()(null != p, "Expected selectedSkuId"), a()(null != h, "Expected application");
+  let y = f[p];
+  return (a()(null != y, "Expected sku"), null == m) ? null : (0, r.jsxs)(v.C3, {
+    children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(_.e, {
+      product: m,
       onClose: t,
       confettiCanvas: n,
       analyticsLocations: o,
@@ -77,10 +77,10 @@ function I(e) {
     hasSentMessage: a,
     giftRecipient: u,
     giftMessageError: d,
-    isSendingMessage: p
-  } = (0, g.wD)(), v = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), b = i.useRef(null), {
+    isSendingMessage: _
+  } = (0, m.wD)(), v = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), b = i.useRef(null), {
     selectedSkuId: y
-  } = (0, m.JL)(), I = (0, s.e7)([c.Z], () => c.Z.getProduct(y)), {
+  } = (0, g.JL)(), I = (0, s.e7)([c.Z], () => c.Z.getProduct(y)), {
     confettiColors: T
   } = (0, f.Z)(null == I ? void 0 : I.styles);
   return t ? (0, r.jsxs)("div", {
@@ -92,8 +92,8 @@ function I(e) {
       hasSentMessage: a,
       giftRecipient: u,
       giftMessageError: d,
-      isSendingMessage: p
-    }), !e.hideConfetti && !v && (0, r.jsx)(_.Z, {
+      isSendingMessage: _
+    }), !e.hideConfetti && !v && (0, r.jsx)(p.Z, {
       confettiTarget: b.current,
       confettiCanvas: e.confettiCanvas,
       sprites: (0, h.vK)(null == I ? void 0 : I.categorySkuId),

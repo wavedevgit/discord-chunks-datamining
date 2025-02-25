@@ -12,7 +12,7 @@ n.d(t, {
   hX: () => v,
   r0: () => R,
   ug: () => P,
-  vB: () => m
+  vB: () => g
 }), n(309749);
 var r = n(654861),
   i = n.n(r);
@@ -62,15 +62,15 @@ function f(e) {
   for (let e = 0; e < l; e++) n[l - 1 - e] = u(t, e * l, l);
   return n
 }
-class _ {
+class p {
   static fromString(e) {
-    return new _(f(e), e)
+    return new p(f(e), e)
   }
   static fromBit(e) {
     let t = Array(l),
       n = Math.floor(e / s);
     for (let r = 0; r < l; r++) t[l - 1 - r] = r === n ? 1 << e - n * s : 0;
-    return new _(t)
+    return new p(t)
   }
   static asUintN(e, t) {
     let {
@@ -88,22 +88,22 @@ class _ {
     let {
       parts: t
     } = e;
-    return new _(this.parts.map((e, n) => e & t[n]))
+    return new p(this.parts.map((e, n) => e & t[n]))
   }
   or(e) {
     let {
       parts: t
     } = e;
-    return new _(this.parts.map((e, n) => e | t[n]))
+    return new p(this.parts.map((e, n) => e | t[n]))
   }
   xor(e) {
     let {
       parts: t
     } = e;
-    return new _(this.parts.map((e, n) => e ^ t[n]))
+    return new p(this.parts.map((e, n) => e ^ t[n]))
   }
   not() {
-    return new _(this.parts.map(e => ~e))
+    return new p(this.parts.map(e => ~e))
   }
   equals(e) {
     let {
@@ -126,23 +126,23 @@ class _ {
     o(this, "parts", void 0), o(this, "str", void 0), this.parts = e, this.str = t
   }
 }
-let p = c();
-p && null == BigInt.prototype.toJSON && (BigInt.prototype.toJSON = function() {
+let _ = c();
+_ && null == BigInt.prototype.toJSON && (BigInt.prototype.toJSON = function() {
   return this.toString()
 });
-let h = p ? function(e) {
+let h = _ ? function(e) {
     return "bigint" == typeof e
   } : function(e) {
-    return e instanceof _
+    return e instanceof p
   },
-  g = {},
-  m = p ? function(e) {
+  m = {},
+  g = _ ? function(e) {
     return BigInt(e)
   } : function(e) {
-    return e instanceof _ ? e : ("number" == typeof e && (e = e.toString()), null != g[e] || (g[e] = _.fromString(e)), g[e])
+    return e instanceof p ? e : ("number" == typeof e && (e = e.toString()), null != m[e] || (m[e] = p.fromString(e)), m[e])
   },
-  E = m(0),
-  v = p ? function() {
+  E = g(0),
+  v = _ ? function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E,
       t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E;
     return e & t
@@ -151,7 +151,7 @@ let h = p ? function(e) {
       t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E;
     return e.and(t)
   },
-  b = p ? function() {
+  b = _ ? function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E,
       t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E;
     return e | t
@@ -160,7 +160,7 @@ let h = p ? function(e) {
       t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E;
     return e.or(t)
   },
-  y = p ? function() {
+  y = _ ? function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E,
       t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E;
     return e ^ t
@@ -169,14 +169,14 @@ let h = p ? function(e) {
       t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E;
     return e.xor(t)
   },
-  O = p ? function() {
+  O = _ ? function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E;
     return ~e
   } : function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E;
     return e.not()
   },
-  S = p ? function(e, t) {
+  S = _ ? function(e, t) {
     return e === t
   } : function(e, t) {
     return null == e || null == t ? e == t : e.equals(t)
@@ -204,13 +204,13 @@ function A(e, t) {
 function C(e, t) {
   return t === E ? e : y(e, v(e, t))
 }
-let R = p ? function(e) {
+let R = _ ? function(e) {
     return BigInt(1) << BigInt(e)
   } : function(e) {
-    return _.fromBit(e)
+    return p.fromBit(e)
   },
-  P = p ? function(e, t) {
+  P = _ ? function(e, t) {
     return Number(BigInt.asUintN(e, t))
   } : function(e, t) {
-    return _.asUintN(e, t)
+    return p.asUintN(e, t)
   }

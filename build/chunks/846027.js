@@ -13,12 +13,12 @@ var r = n(570140),
   u = n(131951),
   d = n(944486),
   f = n(626135),
-  _ = n(557457),
-  p = n(981631),
+  p = n(557457),
+  _ = n(981631),
   h = n(509571),
-  g = n(65154);
+  m = n(65154);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -57,20 +57,20 @@ function y(e, t, n, r) {
   if (t === n) return;
   let a = d.Z.getVoiceChannelId(),
     s = null != a ? c.Z.getChannel(a) : null,
-    _ = e[t],
+    p = e[t],
     h = e[n],
-    g = u.Z.getMediaEngine().getAudioSubsystem(),
-    m = u.Z.getMediaEngine().getAudioLayer();
-  f.default.track(p.rMx.MEDIA_DEVICE_CHANGED, {
-    device_from_name: l.Z.getCertifiedDeviceName(t, null != _ ? _.name : ""),
+    m = u.Z.getMediaEngine().getAudioSubsystem(),
+    g = u.Z.getMediaEngine().getAudioLayer();
+  f.default.track(_.rMx.MEDIA_DEVICE_CHANGED, {
+    device_from_name: l.Z.getCertifiedDeviceName(t, null != p ? p.name : ""),
     device_to_name: l.Z.getCertifiedDeviceName(n, null != h ? h.name : ""),
     device_type: r,
     device_is_certified: l.Z.isCertified(n),
     location: i,
     location_stack: o,
     voice_channel_type: null == s ? void 0 : s.type,
-    audio_subsystem: g,
-    audio_layer: m
+    audio_subsystem: m,
+    audio_layer: g
   })
 }
 let O = {
@@ -89,7 +89,7 @@ let O = {
     enable: S,
     toggleSelfMute() {
       let {
-        context: e = g.Yn.DEFAULT,
+        context: e = m.Yn.DEFAULT,
         syncRemote: t = !0,
         usedKeybind: n = !1,
         playSoundEffect: i = !0,
@@ -120,7 +120,7 @@ let O = {
     },
     toggleSelfDeaf() {
       let {
-        context: e = g.Yn.DEFAULT,
+        context: e = m.Yn.DEFAULT,
         syncRemote: t = !0,
         usedKeybind: n = !1,
         location: i
@@ -135,7 +135,7 @@ let O = {
       }))
     },
     toggleLocalMute(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : g.Yn.DEFAULT;
+      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : m.Yn.DEFAULT;
       I() || r.Z.dispatch({
         type: "AUDIO_TOGGLE_LOCAL_MUTE",
         context: t,
@@ -143,7 +143,7 @@ let O = {
       })
     },
     toggleLocalSoundboardMute(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : g.Yn.DEFAULT;
+      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : m.Yn.DEFAULT;
       r.Z.dispatch({
         type: "AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE",
         context: t,
@@ -151,7 +151,7 @@ let O = {
       })
     },
     setDisableLocalVideo(e, t) {
-      let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : g.Yn.DEFAULT,
+      let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : m.Yn.DEFAULT,
         i = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3],
         o = arguments.length > 4 && void 0 !== arguments[4] && arguments[4];
       I() || r.Z.dispatch({
@@ -164,7 +164,7 @@ let O = {
       })
     },
     setLocalVolume(e, t) {
-      let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : g.Yn.DEFAULT;
+      let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : m.Yn.DEFAULT;
       r.Z.dispatch({
         type: "AUDIO_SET_LOCAL_VOLUME",
         context: n,
@@ -173,7 +173,7 @@ let O = {
       })
     },
     setLocalPan(e, t, n) {
-      let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : g.Yn.DEFAULT;
+      let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : m.Yn.DEFAULT;
       r.Z.dispatch({
         type: "AUDIO_SET_LOCAL_PAN",
         context: i,
@@ -184,7 +184,7 @@ let O = {
     },
     setMode(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : g.Yn.DEFAULT,
+        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : m.Yn.DEFAULT,
         {
           analyticsLocations: i
         } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
@@ -202,7 +202,7 @@ let O = {
           r = d.Z.getVoiceChannelId(),
           o = null != r ? c.Z.getChannel(r) : null,
           a = b();
-        f.default.track(p.rMx.VOICE_ACTIVATION_MODE_CHANGED, {
+        f.default.track(_.rMx.VOICE_ACTIVATION_MODE_CHANGED, {
           mode: e,
           location_stack: i,
           voice_channel_type: null == o ? void 0 : o.type,
@@ -210,13 +210,13 @@ let O = {
           audio_subsystem: t,
           audio_layer: n
         })
-      } else if (e === p.pM4.VOICE_ACTIVITY && a !== t) {
+      } else if (e === _.pM4.VOICE_ACTIVITY && a !== t) {
         let e = u.Z.getMediaEngine().getAudioSubsystem(),
           n = u.Z.getMediaEngine().getAudioLayer(),
           r = d.Z.getVoiceChannelId(),
           o = null != r ? c.Z.getChannel(r) : null,
           s = b();
-        f.default.track(p.rMx.VOICE_ACTIVITY_THRESHOLD_CHANGED, {
+        f.default.track(_.rMx.VOICE_ACTIVITY_THRESHOLD_CHANGED, {
           location_stack: i,
           voice_channel_type: null == o ? void 0 : o.type,
           input_device_name: s,
@@ -240,7 +240,7 @@ let O = {
       });
       let n = d.Z.getVoiceChannelId(),
         i = null != n ? c.Z.getChannel(n) : null;
-      f.default.track(p.rMx.MEDIA_INPUT_VOLUME_CHANGED, {
+      f.default.track(_.rMx.MEDIA_INPUT_VOLUME_CHANGED, {
         volume: e,
         location_stack: t,
         voice_channel_type: null == i ? void 0 : i.type
@@ -257,7 +257,7 @@ let O = {
       });
       let n = d.Z.getVoiceChannelId(),
         i = null != n ? c.Z.getChannel(n) : null;
-      f.default.track(p.rMx.MEDIA_OUTPUT_VOLUME_CHANGED, {
+      f.default.track(_.rMx.MEDIA_OUTPUT_VOLUME_CHANGED, {
         volume: e,
         location_stack: t,
         voice_channel_type: null == i ? void 0 : i.type
@@ -432,7 +432,7 @@ let O = {
       })
     },
     setGoLiveSource(e) {
-      (null == e ? void 0 : e.qualityOptions) != null && (0, _.Ye)(e.qualityOptions.preset, e.qualityOptions.resolution, e.qualityOptions.frameRate), r.Z.dispatch({
+      (null == e ? void 0 : e.qualityOptions) != null && (0, p.Ye)(e.qualityOptions.preset, e.qualityOptions.resolution, e.qualityOptions.frameRate), r.Z.dispatch({
         type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE",
         settings: e
       })

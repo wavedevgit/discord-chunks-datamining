@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120), n(230036), n(978209);
 var r = n(956067),
   i = n(586444);
@@ -111,7 +111,7 @@ class f {
     o(this, "emoji", void 0), o(this, "name", void 0), o(this, "start_", void 0), o(this, "startNumImports", void 0), o(this, "startImportTime", void 0), o(this, "end_", void 0), o(this, "endNumImports", void 0), o(this, "endImportTime", void 0), this.emoji = e, this.name = t, this.start_ = 0, this.startNumImports = 0, this.startImportTime = 0, this.end_ = 0, this.endNumImports = 0, this.endImportTime = 0
   }
 }
-class _ {
+class p {
   get time() {
     return this.time_
   }
@@ -128,7 +128,7 @@ class _ {
     o(this, "emoji", void 0), o(this, "name", void 0), o(this, "onlyOnce", void 0), o(this, "time_", void 0), o(this, "numImports", void 0), o(this, "importTime", void 0), this.emoji = e, this.name = t, this.onlyOnce = n, this.time_ = 0, this.numImports = null, this.importTime = 0
   }
 }
-class p {
+class _ {
   get time() {
     return this.time_
   }
@@ -141,18 +141,18 @@ class p {
 }
 class h {
   constructor() {
-    o(this, "loadIndex", new f("❗", "Load index.tsx")), o(this, "loadFastConnectNativeModule", new f("\uD83D\uDCBE", "Load fast_connect native module")), o(this, "beginFastConnect", new f("\uD83C\uDF10", "Fast Connect IDENTIFY")), o(this, "loadImports", new f("\uD83C\uDFC3", "Load Imports")), o(this, "init", new f("\uD83C\uDFC3", "Initial Initialization")), o(this, "loadStorage", new f("\uD83D\uDCBE", "Load Storage")), o(this, "parseStorage", new f("\uD83D\uDCBE", "Parse Storage")), o(this, "loadMiniCache", new f("\uD83D\uDCBE", "Load Mini Cache")), o(this, "fetchGuildCache", new f("\uD83D\uDCBE", "Fetch Guild Cache")), o(this, "fetchGuildChannelsCache", new f("\uD83D\uDCBE", "Fetch Initial Guild Channels Cache")), o(this, "loadCachedMessages", new f("\uD83D\uDCBE", "Load Cached Messages")), o(this, "renderApp", new _("\uD83C\uDFA8", "First React Render")), o(this, "renderAppEffect", new _("\uD83C\uDFA8", "First React Render useEffect")), o(this, "renderMessages", new _("\uD83C\uDFA8", "React Render Messages", !0)), o(this, "renderMessagesWithCache", new _("\uD83C\uDFA8", "React Render Cached Messages", !0)), o(this, "firstRowGenerator", new f("\uD83C\uDFA8", "RowGenerator.generate()")), o(this, "renderLatestMessages", new _("\uD83C\uDFA8", "React Render Latest Messages")), o(this, "initialGuild", new f("\uD83C\uDF10", "Initial Guild")), o(this, "loadLazyCache", new f("\uD83D\uDCBE", "Load Lazy Cache")), o(this, "fetchLazyCache", new f("\uD83D\uDCBE", "Fetch Lazy Cache")), o(this, "parseLazyCache", new f("\uD83D\uDCBE", "Parse Lazy Cache")), o(this, "fetchStaleChannels", new f("\uD83D\uDCBE", "Fetch Stale Channels")), o(this, "deserializeCache", new f("\uD83D\uDCBE", "Deserialize Cache")), o(this, "dispatchLazyCache", new f("\uD83D\uDCBE", "Dispatch Lazy Cache")), o(this, "parseReady", new f("\uD83C\uDF10", "Parse READY")), o(this, "ready", new f("\uD83C\uDF10", "READY")), o(this, "hydrateReady", new f("\uD83C\uDF10", "Hydrate READY")), o(this, "dispatchReady", new f("\uD83C\uDF10", "Dispatch READY")), o(this, "parseReadySupplemental", new f("\uD83C\uDF10", "Parse READY Supplemental")), o(this, "readySupplemental", new f("\uD83C\uDF10", "READY Supplemental")), o(this, "hydrateReadySupplemental", new f("\uD83C\uDF10", "Hydrate READY Supplemental")), o(this, "dispatchReadySupplemental", new f("\uD83C\uDF10", "Dispatch READY Supplemental")), o(this, "fetchMessages", new f("\uD83C\uDF10", "Fetch messages")), o(this, "dispatchMessages", new f("\uD83C\uDF10", "Dispatch messages")), o(this, "imports", {
-      polyfillsEnd: new p,
-      sentryEnd: new p,
-      appStateChangeStart: new p,
-      appStateChangeEnd: new p,
-      loadMiniCacheStart: new p,
-      loadStorageStart: new p,
-      loadStorageEnd: new p
+    o(this, "loadIndex", new f("❗", "Load index.tsx")), o(this, "loadFastConnectNativeModule", new f("\uD83D\uDCBE", "Load fast_connect native module")), o(this, "beginFastConnect", new f("\uD83C\uDF10", "Fast Connect IDENTIFY")), o(this, "loadImports", new f("\uD83C\uDFC3", "Load Imports")), o(this, "init", new f("\uD83C\uDFC3", "Initial Initialization")), o(this, "loadStorage", new f("\uD83D\uDCBE", "Load Storage")), o(this, "parseStorage", new f("\uD83D\uDCBE", "Parse Storage")), o(this, "loadMiniCache", new f("\uD83D\uDCBE", "Load Mini Cache")), o(this, "fetchGuildCache", new f("\uD83D\uDCBE", "Fetch Guild Cache")), o(this, "fetchGuildChannelsCache", new f("\uD83D\uDCBE", "Fetch Initial Guild Channels Cache")), o(this, "loadCachedMessages", new f("\uD83D\uDCBE", "Load Cached Messages")), o(this, "renderApp", new p("\uD83C\uDFA8", "First React Render")), o(this, "renderAppEffect", new p("\uD83C\uDFA8", "First React Render useEffect")), o(this, "renderMessages", new p("\uD83C\uDFA8", "React Render Messages", !0)), o(this, "renderMessagesWithCache", new p("\uD83C\uDFA8", "React Render Cached Messages", !0)), o(this, "firstRowGenerator", new f("\uD83C\uDFA8", "RowGenerator.generate()")), o(this, "renderLatestMessages", new p("\uD83C\uDFA8", "React Render Latest Messages")), o(this, "initialGuild", new f("\uD83C\uDF10", "Initial Guild")), o(this, "loadLazyCache", new f("\uD83D\uDCBE", "Load Lazy Cache")), o(this, "fetchLazyCache", new f("\uD83D\uDCBE", "Fetch Lazy Cache")), o(this, "parseLazyCache", new f("\uD83D\uDCBE", "Parse Lazy Cache")), o(this, "fetchStaleChannels", new f("\uD83D\uDCBE", "Fetch Stale Channels")), o(this, "deserializeCache", new f("\uD83D\uDCBE", "Deserialize Cache")), o(this, "dispatchLazyCache", new f("\uD83D\uDCBE", "Dispatch Lazy Cache")), o(this, "parseReady", new f("\uD83C\uDF10", "Parse READY")), o(this, "ready", new f("\uD83C\uDF10", "READY")), o(this, "hydrateReady", new f("\uD83C\uDF10", "Hydrate READY")), o(this, "dispatchReady", new f("\uD83C\uDF10", "Dispatch READY")), o(this, "parseReadySupplemental", new f("\uD83C\uDF10", "Parse READY Supplemental")), o(this, "readySupplemental", new f("\uD83C\uDF10", "READY Supplemental")), o(this, "hydrateReadySupplemental", new f("\uD83C\uDF10", "Hydrate READY Supplemental")), o(this, "dispatchReadySupplemental", new f("\uD83C\uDF10", "Dispatch READY Supplemental")), o(this, "fetchMessages", new f("\uD83C\uDF10", "Fetch messages")), o(this, "dispatchMessages", new f("\uD83C\uDF10", "Dispatch messages")), o(this, "imports", {
+      polyfillsEnd: new _,
+      sentryEnd: new _,
+      appStateChangeStart: new _,
+      appStateChangeEnd: new _,
+      loadMiniCacheStart: new _,
+      loadStorageStart: new _,
+      loadStorageEnd: new _
     })
   }
 }
-class g extends h {
+class m extends h {
   setTTICallback(e) {
     c = () => {
       !0 === e() && (c = () => !1)
@@ -437,4 +437,4 @@ class g extends h {
     super(...e), o(this, "readyProperties", {}), o(this, "didBackgroundApp", !1), o(this, "wasEverActive", !1), o(this, "wasAuthenticated", !1), o(this, "interstitial", null), o(this, "cachedChannelCounts", new Map), o(this, "cachedChannelId", null), o(this, "cachedMessageIds", null), o(this, "messageCacheMissingReason", "never-loaded"), o(this, "messageCacheAgeSeconds", null), o(this, "messageCacheCount", null), o(this, "messageCacheHavingCount", null), o(this, "messageCacheMissingCount", null), o(this, "messageRenderFullCount", null), o(this, "messageRenderCachedCount", null), o(this, "messageRenderHasMoreAfter", null), o(this, "firstAppActiveTime", null), o(this, "cacheInfo", null), o(this, "extraProperties", {})
   }
 }
-let m = new g
+let g = new m

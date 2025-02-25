@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(794295),
   d = n(663993),
   f = n(95398),
-  _ = n(339085),
-  p = n(779699),
+  p = n(339085),
+  _ = n(779699),
   h = n(359875),
-  g = n(124072),
-  m = n(692629),
+  m = n(124072),
+  g = n(692629),
   E = n(695503),
   v = n(628692),
   b = n(590956),
@@ -115,7 +115,7 @@ function V(e) {
         channelId: l,
         messageId: c,
         isInteracting: u
-      } = o, d = _.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
+      } = o, d = p.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
       if (null != d) {
         let t = d.require_colons;
         e = B(U({}, e), {
@@ -292,12 +292,12 @@ let W = {
       let i = () => {
         Z(e.guildId, e.id, e.itemId)
       };
-      return (0, T.k)(e.id) ? (0, r.jsxs)(g.Z, {
+      return (0, T.k)(e.id) ? (0, r.jsxs)(m.Z, {
         role: "link",
         onClick: i,
         className: "channelMention",
         iconType: e.id,
-        children: [t(e.mainContent, n), null != e.itemContent ? (0, r.jsx)(m.Z, {}) : null, null != e.itemContent ? t(e.itemContent, n) : null]
+        children: [t(e.mainContent, n), null != e.itemContent ? (0, r.jsx)(g.Z, {}) : null, null != e.itemContent ? t(e.itemContent, n) : null]
       }, n.key) : null
     }
   },
@@ -348,7 +348,7 @@ let W = {
     }
   },
   channel: {
-    react: (e, t, n) => (0, r.jsx)(p.Z, {
+    react: (e, t, n) => (0, r.jsx)(_.Z, {
       iconType: e.iconType,
       children: (0, T.S)(e, t, n)
     }, n.key)

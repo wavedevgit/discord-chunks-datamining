@@ -50,32 +50,32 @@ var d = function(e) {
   return e[e.FETCHING = 0] = "FETCHING", e[e.FETCHED = 1] = "FETCHED", e[e.ERROR = 2] = "ERROR", e
 }({});
 let f = {},
-  _ = {},
-  p = new Set,
+  p = {},
+  _ = new Set,
   h = {};
 
-function g(e) {
+function m(e) {
   let {
     applicationId: t
   } = e;
-  _ = u(l({}, _), {
+  p = u(l({}, p), {
     [t]: 0
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     application: t
   } = e;
   f = u(l({}, f), {
     [t.id]: t
-  }), _ = u(l({}, _), {
+  }), p = u(l({}, p), {
     [t.id]: 1
   });
   let n = Date.now();
   h = u(l({}, h), {
     [t.id]: n
-  }), p.has(t.id) && (p.delete(t.id), p = new Set(p))
+  }), _.has(t.id) && (_.delete(t.id), _ = new Set(_))
 }
 
 function E(e) {
@@ -83,9 +83,9 @@ function E(e) {
     applicationId: t,
     isInvalidApplication: n
   } = e;
-  _ = u(l({}, _), {
+  p = u(l({}, p), {
     [t]: 2
-  }), n && (p.add(t), p = new Set(p))
+  }), n && (_.add(t), _ = new Set(_))
 }
 class v extends(r = i.ZP.Store) {
   getApplication(e) {
@@ -100,16 +100,16 @@ class v extends(r = i.ZP.Store) {
     return f
   }
   getApplicationFetchState(e) {
-    if (null != e) return _[e]
+    if (null != e) return p[e]
   }
   getApplicationFetchStates() {
-    return _
+    return p
   }
   isInvalidApplication(e) {
-    return null != e && p.has(e)
+    return null != e && _.has(e)
   }
   getInvalidApplicationIds() {
-    return p
+    return _
   }
   isFetching(e) {
     return 0 === this.getApplicationFetchState(e)
@@ -120,7 +120,7 @@ class v extends(r = i.ZP.Store) {
 }
 s(v, "displayName", "ApplicationDirectoryApplicationsStore");
 let b = new v(o.Z, {
-  APPLICATION_DIRECTORY_FETCH_APPLICATION: g,
-  APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS: m,
+  APPLICATION_DIRECTORY_FETCH_APPLICATION: m,
+  APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS: g,
   APPLICATION_DIRECTORY_FETCH_APPLICATION_FAILURE: E
 })

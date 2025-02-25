@@ -130,8 +130,8 @@ function t(e) {
       begin: e.C_NUMBER_RE + "\\b",
       relevance: 0
     }, u, d, o, a],
-    _ = [...f];
-  return _.pop(), _.push(s), c.contains = _, {
+    p = [...f];
+  return p.pop(), p.push(s), c.contains = p, {
     name: "YAML",
     case_insensitive: !0,
     aliases: ["yml"],

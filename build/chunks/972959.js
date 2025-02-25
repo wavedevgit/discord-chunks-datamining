@@ -40,7 +40,7 @@ function l(e) {
     (0, a.j)(() => t.setState(e))
   };
 
-  function _() {
+  function p() {
     f(t.getInitialState())
   }
   return {
@@ -52,6 +52,6 @@ function l(e) {
       return t.subscribe(e, n, r)
     },
     setState: f,
-    resetState: _
+    resetState: p
   }
 }

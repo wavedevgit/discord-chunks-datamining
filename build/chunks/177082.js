@@ -14,7 +14,7 @@ var r = n(355467),
   d = n(74538),
   f = n(474936);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,28 +22,28 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class p extends o.Z {
+class _ extends o.Z {
   constructor(...e) {
-    super(...e), _(this, "actions", {
+    super(...e), p(this, "actions", {
       POST_CONNECTION_OPEN: () => {
         this.maybeFetchSubscriptions(), this.maybeFetchCountryCode(), this.maybeFetchMostRecentSubscription()
       }
-    }), _(this, "maybeFetchSubscriptions", async () => {
+    }), p(this, "maybeFetchSubscriptions", async () => {
       let e = a.default.getCurrentUser();
       if (d.ZP.isPremium(e)) {
         l.ZP.hasFetchedSubscriptions() || await (0, r.jg)();
         let e = l.ZP.getPremiumSubscription();
         (null == e ? void 0 : e.paymentSourceId) != null || c.Z.applicationIdsFetched.has(f.CL) || await (0, i.yD)(f.CL)
       }
-    }), _(this, "maybeFetchMostRecentSubscription", () => {
+    }), p(this, "maybeFetchMostRecentSubscription", () => {
       let e = a.default.getCurrentUser();
       null != e && !d.ZP.isPremium(e) && null != e.purchasedFlags && ((0, u.yE)(e.purchasedFlags, f.in.PREMIUM_TIER_1) || (0, u.yE)(e.purchasedFlags, f.in.PREMIUM_TIER_2)) && (0, r.ou)()
-    }), _(this, "maybeFetchCountryCode", async () => {
+    }), p(this, "maybeFetchCountryCode", async () => {
       let e = a.default.getCurrentUser();
       d.ZP.isPremium(e) && !s.Z.ipCountryCodeLoaded && await this.fetchCountryCode()
-    }), _(this, "fetchCountryCode", async () => {
+    }), p(this, "fetchCountryCode", async () => {
       await (0, r.GE)(), null != s.Z.ipCountryCode && await (0, r.tZ)()
     })
   }
 }
-let h = new p
+let h = new _

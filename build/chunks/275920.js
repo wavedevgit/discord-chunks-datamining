@@ -18,8 +18,8 @@ function o(e) {
     partyId: u,
     messageId: d,
     locationObject: f,
-    analyticsLocations: _,
-    referrerId: p,
+    analyticsLocations: p,
+    referrerId: _,
     inviterUserId: h
   } = e;
   r.default.track(i.rMx.APPLICATION_OPENED, {
@@ -33,8 +33,8 @@ function o(e) {
     other_user_id: o,
     message_id: d,
     location: f,
-    location_stack: _,
-    referrer_id: p,
+    location_stack: p,
+    referrer_id: _,
     invite_inviter_id: h
   })
 }

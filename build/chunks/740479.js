@@ -1,22 +1,24 @@
 /** Chunk was on 624 **/
 n.d(t, {
-  Z: () => s
+  Z: () => a
 });
 var r = n(200651),
-  i = n(481060);
-let s = e => {
+  i = n(481060),
+  s = n(625633);
+let a = e => {
   let {
     image: t,
     cta: n,
-    onClick: s
+    onClick: a
   } = e;
   return (0, r.jsxs)(i.Kqy, {
     align: "stretch",
     children: [(0, r.jsx)("img", {
       src: t,
-      alt: ""
+      alt: "",
+      className: s.image
     }), (0, r.jsx)(i.zxk, {
-      onClick: s,
+      onClick: a,
       children: n
     })]
   })

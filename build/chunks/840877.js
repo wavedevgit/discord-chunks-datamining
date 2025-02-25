@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => f,
-  tJ: () => _
+  tJ: () => p
 }), n(411104);
 var r = n(664751),
   i = n(544891),
@@ -73,7 +73,7 @@ class f extends d {
     })
   }
 }
-class _ extends d {
+class p extends d {
   getEndpoint() {
     switch (this.searchType) {
       case s.aib.DMS:

@@ -47,64 +47,64 @@ function d(e, t) {
   }), e
 }
 let f = "OverridePremiumTypeStore",
-  _ = {
+  p = {
     premiumTypeOverride: s.F_,
     premiumTypeActual: s.F_,
     createdAtOverride: s.Zh
   };
 
-function p(e) {
+function _(e) {
   let {
     premiumType: t
   } = e;
-  _.premiumTypeOverride = t
+  p.premiumTypeOverride = t
 }
 
 function h(e) {
   let {
     createdAt: t
   } = e;
-  _.createdAtOverride = t
+  p.createdAtOverride = t
 }
 
-function g(e) {
+function m(e) {
   let {
     user: t
   } = e;
-  _.premiumTypeActual = (0, a.G)(t.premium_type)
+  p.premiumTypeActual = (0, a.G)(t.premium_type)
 }
-class m extends(r = i.ZP.PersistedStore) {
+class g extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
-      _.premiumTypeActual = null == e ? void 0 : e.premiumTypeActual, _.premiumTypeOverride = null == e ? void 0 : e.premiumTypeOverride, null != e.createdAtOverride ? _.createdAtOverride = new Date(e.createdAtOverride) : _.createdAtOverride = s.Zh;
+      p.premiumTypeActual = null == e ? void 0 : e.premiumTypeActual, p.premiumTypeOverride = null == e ? void 0 : e.premiumTypeOverride, null != e.createdAtOverride ? p.createdAtOverride = new Date(e.createdAtOverride) : p.createdAtOverride = s.Zh;
       return
     }
-    _.premiumTypeOverride = s.F_, _.createdAtOverride = s.Zh
+    p.premiumTypeOverride = s.F_, p.createdAtOverride = s.Zh
   }
   getPremiumTypeOverride() {
-    return _.premiumTypeOverride
+    return p.premiumTypeOverride
   }
   getPremiumTypeActual() {
-    return _.premiumTypeActual
+    return p.premiumTypeActual
   }
   getCreatedAtOverride() {
-    return _.createdAtOverride
+    return p.createdAtOverride
   }
   getState() {
-    return _
+    return p
   }
   get premiumType() {
-    return _.premiumTypeOverride
+    return p.premiumTypeOverride
   }
 }
-l(m, "displayName", f), l(m, "persistKey", f), l(m, "migrations", [e => {
+l(g, "displayName", f), l(g, "persistKey", f), l(g, "migrations", [e => {
   if ((null == e ? void 0 : e.createdAtOverride) == null) return d(c({}, e), {
     createdAtOverride: s.Zh
   })
 }]);
-let E = new m(o.Z, {
-  SET_PREMIUM_TYPE_OVERRIDE: p,
+let E = new g(o.Z, {
+  SET_PREMIUM_TYPE_OVERRIDE: _,
   SET_CREATED_AT_OVERRIDE: h,
-  CURRENT_USER_UPDATE: g,
-  CONNECTION_OPEN: g
+  CURRENT_USER_UPDATE: m,
+  CONNECTION_OPEN: m
 })

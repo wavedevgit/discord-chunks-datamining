@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => h,
-  g: () => _
+  g: () => p
 });
 var r = n(200651);
 n(192379);
@@ -50,31 +50,31 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var _ = function(e) {
+var p = function(e) {
   return e[e.CONTINUE = 0] = "CONTINUE", e[e.UPGRADE = 1] = "UPGRADE", e[e.PURCHASE = 2] = "PURCHASE", e
 }({});
-let p = e => {
+let _ = e => {
   let {
     onBack: t,
     backText: n,
     primaryIcon: c,
     primaryCTA: d,
-    primaryType: _,
-    primaryText: p,
+    primaryType: p,
+    primaryText: _,
     primaryTooltip: h,
-    primaryDisabled: g,
-    primarySubmitting: m,
+    primaryDisabled: m,
+    primarySubmitting: g,
     onPrimary: E,
     secondaryText: v,
     onSecondary: b
   } = e, y = () => {
-    if (null == d || null == p) return null;
+    if (null == d || null == _) return null;
     let e = 2 === d ? i.gtL : i.zxk,
       t = {
         innerClassName: l.button,
-        type: _,
-        disabled: g,
-        submitting: m,
+        type: p,
+        disabled: m,
+        submitting: g,
         color: 0 === d ? i.zxk.Colors.BRAND : i.zxk.Colors.GREEN,
         onClick: E
       };
@@ -84,13 +84,13 @@ let p = e => {
         children: [null == c ? null : (0, r.jsx)(c, {
           color: "currentColor",
           className: l.primaryIcon
-        }), p]
+        }), _]
       }))
     }) : (0, r.jsxs)(e, f(u({}, t), {
       children: [null == c ? null : (0, r.jsx)(c, {
         color: "currentColor",
         className: l.primaryIcon
-      }), p]
+      }), _]
     }))
   }, O = () => null == v ? null : (0, r.jsx)(i.zxk, {
     color: i.zxk.Colors.PRIMARY,
@@ -110,5 +110,5 @@ let p = e => {
     children: [y(), O(), (0, r.jsx)(a.Z, {}), S()]
   })
 };
-p.CTAType = _;
-let h = p
+_.CTAType = p;
+let h = _

@@ -49,7 +49,7 @@ function d(e, t) {
 }
 let f = .1;
 
-function _(e) {
+function p(e) {
   if (Math.random() > f) return;
   let t = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
     n = (0, i.d)();
@@ -62,7 +62,7 @@ function _(e) {
     mobile_signal_strength_level: n
   }))
 }
-class p {
+class _ {
   recordQuestRequestAttempt(e) {
     let t = {
       initialSendTimestamp: Date.now(),
@@ -72,14 +72,14 @@ class p {
     };
     this.pendingRequests.set(e, t), setTimeout(() => {
       let t = this.pendingRequests.get(e);
-      null != t && (_(t), this.pendingRequests.delete(e))
+      null != t && (p(t), this.pendingRequests.delete(e))
     }, 3e4)
   }
   recordQuestRequestApiResponse(e, t) {
     let {
       wasSuccessful: n
     } = t, r = this.pendingRequests.get(e);
-    null != r && (_(d(c({}, r), {
+    null != r && (p(d(c({}, r), {
       apiResponseTimestamp: Date.now(),
       wasSuccessful: n
     })), this.pendingRequests.delete(e))
@@ -88,4 +88,4 @@ class p {
     l(this, "pendingRequests", new Map)
   }
 }
-let h = new p
+let h = new _

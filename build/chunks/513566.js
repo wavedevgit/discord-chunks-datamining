@@ -13,11 +13,11 @@ var r = n(348327),
   u = n(317770),
   d = n(829750),
   f = n(189771),
-  _ = n(67844),
-  p = n(173507),
+  p = n(67844),
+  _ = n(173507),
   h = n(592125),
-  g = n(131951),
-  m = n(944486),
+  m = n(131951),
+  g = n(944486),
   E = n(358085),
   v = n(998502),
   b = n(981631),
@@ -44,7 +44,7 @@ class S extends u.Z {
   constructor(...e) {
     super(...e), O(this, "callbackActions", {
       [v.tS.VIDEO]: () => {
-        g.Z.isVideoEnabled() ? l.Z.setVideoEnabled(!1) : (0, p.Z)(() => l.Z.setVideoEnabled(!0), b.IlC.APP)
+        m.Z.isVideoEnabled() ? l.Z.setVideoEnabled(!1) : (0, _.Z)(() => l.Z.setVideoEnabled(!0), b.IlC.APP)
       },
       [v.tS.MUTE]: () => l.Z.toggleSelfMute({
         location: "Thumbar"
@@ -60,15 +60,15 @@ class S extends u.Z {
       }
       this.callbackActions[e.buttonName]()
     }), O(this, "handleViewUpdate", a().debounce(() => {
-      let e = m.Z.getVoiceChannelId();
+      let e = g.Z.getVoiceChannelId();
       if (null == e) {
         this.setThumbarButtons([]);
         return
       }
-      let t = g.Z.isSelfMute(),
-        n = g.Z.isSelfDeaf(),
-        r = g.Z.isVideoEnabled(),
-        i = g.Z.isVideoAvailable(),
+      let t = m.Z.isSelfMute(),
+        n = m.Z.isSelfDeaf(),
+        r = m.Z.isVideoEnabled(),
+        i = m.Z.isVideoAvailable(),
         o = h.Z.getChannel(e),
         a = null == o || (0, f.y)(o),
         {
@@ -78,7 +78,7 @@ class S extends u.Z {
           reachedLimit: void 0,
           limit: void 0
         },
-        c = (0, _.X)({
+        c = (0, p.X)({
           enabled: r,
           join: !1,
           channel: o,

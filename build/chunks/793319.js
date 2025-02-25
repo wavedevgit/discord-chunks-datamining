@@ -525,7 +525,8 @@ let eR = function(e) {
               return (0, r.jsx)(G.Z, {
                 children: e_ ? (0, r.jsx)($.l, {
                   wide: !0,
-                  showOutputDevices: !0
+                  showOutputDevices: !0,
+                  onSettingsButtonClick: t
                 }) : C ? (0, r.jsx)(E.default, {
                   onClose: t,
                   renderInputDevices: !0,
@@ -545,7 +546,7 @@ let eR = function(e) {
                 })
               })
             },
-            align: "right",
+            align: "center",
             position: "top",
             animation: p.yRy.Animation.FADE,
             spacing: 16,
@@ -664,7 +665,8 @@ let eR = function(e) {
             return (0, r.jsx)(G.Z, {
               children: e_ ? (0, r.jsx)($.l, {
                 wide: !0,
-                showOutputDevices: !0
+                showOutputDevices: !0,
+                onSettingsButtonClick: t
               }) : (0, r.jsx)(E.default, {
                 onClose: t,
                 renderInputDevices: !0,
@@ -747,7 +749,8 @@ let eR = function(e) {
             return (0, r.jsx)(G.Z, {
               children: e_ ? (0, r.jsx)($.l, {
                 wide: !0,
-                showOutputDevices: !0
+                showOutputDevices: !0,
+                onSettingsButtonClick: t
               }) : (0, r.jsx)(E.default, {
                 onClose: t,
                 renderInputDevices: !0,

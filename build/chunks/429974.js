@@ -15,11 +15,11 @@ var i = n(481060),
   u = n(699516),
   d = n(594174),
   f = n(626135),
-  _ = n(621853),
-  p = n(981631),
+  p = n(621853),
+  _ = n(981631),
   h = n(616922);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,14 +28,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -64,7 +64,7 @@ function y(e, t) {
   return "USER_PROFILE_MODAL_KEY:".concat(e, ":").concat(null == t ? "" : t)
 }
 async function O(e) {
-  var t, o, a, g, {
+  var t, o, a, m, {
       userId: v,
       section: O,
       subsection: S,
@@ -78,7 +78,7 @@ async function O(e) {
     P = E(e, ["userId", "section", "subsection", "guildId", "channelId", "friendToken", "analyticsLocation", "showGuildProfile", "appContext"]);
   let D = d.default.getUser(v);
   if (null == D) return;
-  let w = _.Z.getUserProfile(v),
+  let w = p.Z.getUserProfile(v),
     L = c.Z.getPrimaryActivity(v),
     x = c.Z.getStatus(v),
     M = c.Z.isMobileOnline(v),
@@ -88,13 +88,13 @@ async function O(e) {
       application_id: U
     } = null != L ? L : {},
     G = null != U ? l.Z.getApplication(U) : null,
-    B = M ? p.j28.ONLINE_MOBILE : p.j28.ONLINE_DESKTOP,
-    F = x === p.Skl.ONLINE ? B : x;
+    B = M ? _.j28.ONLINE_MOBILE : _.j28.ONLINE_DESKTOP,
+    F = x === _.Skl.ONLINE ? B : x;
   b = await (0, i.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("94989"), n.e("82412"), n.e("73049")]).then(n.bind(n, 533835));
-    return t => (0, r.jsx)(e, m({
+    return t => (0, r.jsx)(e, g({
       user: D,
       guildId: I,
       friendToken: N,
@@ -105,8 +105,8 @@ async function O(e) {
     }, t, P))
   }, {
     modalKey: y(v, C ? I : void 0),
-    contextKey: (0, i.VnL)(null != R ? R : p.IlC.APP)
-  }), f.default.track(p.rMx.OPEN_MODAL, m({
+    contextKey: (0, i.VnL)(null != R ? R : _.IlC.APP)
+  }), f.default.track(_.rMx.OPEN_MODAL, g({
     type: "Profile Modal",
     guild_id: I,
     channel_id: T,
@@ -115,10 +115,10 @@ async function O(e) {
     application_name: null == L ? void 0 : L.name,
     sku_id: null !== (a = null == G ? void 0 : G.primarySkuId) && void 0 !== a ? a : null,
     is_friend: u.Z.isFriend(v),
-    has_images: !!(null !== (g = null == k ? void 0 : k.large_image) && void 0 !== g ? g : null == k ? void 0 : k.small_image),
+    has_images: !!(null !== (m = null == k ? void 0 : k.large_image) && void 0 !== m ? m : null == k ? void 0 : k.small_image),
     party_max: null == j ? void 0 : null === (t = j.size) || void 0 === t ? void 0 : t[1],
     party_id: null == j ? void 0 : j.id,
-    party_platform: (0, h.Ps)(null == j ? void 0 : j.id) ? p.ABu.SPOTIFY : null,
+    party_platform: (0, h.Ps)(null == j ? void 0 : j.id) ? _.ABu.SPOTIFY : null,
     game_platform: (0, s.Z)(L),
     profile_user_status: F,
     profile_has_nitro_customization: (null == w ? void 0 : w.banner) != null,

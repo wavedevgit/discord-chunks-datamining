@@ -21,14 +21,14 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = 6048e5,
-  _ = "lastSawPomelo",
-  p = "lastSawPomeloMigration";
+  p = "lastSawPomelo",
+  _ = "lastSawPomeloMigration";
 
 function h() {
-  r.K.set(_, Date.now())
+  r.K.set(p, Date.now())
 }
 
-function g() {
+function m() {
   if (!a.w8.getCurrentConfig({
       location: "b9eb97_1"
     }, {
@@ -36,16 +36,16 @@ function g() {
     }).enabled) return !1;
   let e = o.default.getCurrentUser();
   if (null == e || e.isPomelo() || !e.hasVerifiedEmailOrPhone()) return !1;
-  let t = (0, l.ov)() ? p : _,
+  let t = (0, l.ov)() ? _ : p,
     n = r.K.get(t);
   return !(null != n && Date.now() - n < f)
 }
-class m extends i.Z {
+class g extends i.Z {
   constructor(...e) {
     super(...e), d(this, "actions", {
       POST_CONNECTION_OPEN: () => this.onPostConnectionOpen()
     }), d(this, "onPostConnectionOpen", () => {
-      if (g()) {
+      if (m()) {
         let e = c.Z.getCurrentConfig({
           location: "uu_one_click"
         }, {
@@ -56,4 +56,4 @@ class m extends i.Z {
     })
   }
 }
-let E = new m
+let E = new g

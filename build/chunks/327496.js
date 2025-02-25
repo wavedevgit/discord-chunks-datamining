@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,15 +45,15 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,18 +61,18 @@ function h(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = [18, 18, 16, 16, 14, 12, 10];
+let g = [18, 18, 16, 16, 14, 12, 10];
 
 function E(e) {
   var t;
-  return null !== (t = m[e.length - 1]) && void 0 !== t ? t : m[m.length - 1]
+  return null !== (t = g[e.length - 1]) && void 0 !== t ? t : g[g.length - 1]
 }
 
 function v(e, t) {
@@ -87,9 +87,9 @@ let b = e => {
   var {
     backgroundStyle: o = "always",
     children: d,
-    icon: _,
-    name: g,
-    ariaLabel: m,
+    icon: p,
+    name: m,
+    ariaLabel: g,
     className: b,
     style: y,
     to: O,
@@ -97,7 +97,7 @@ let b = e => {
     selected: I = !1
   } = e, T = h(e, ["backgroundStyle", "children", "icon", "name", "ariaLabel", "className", "style", "to", "onClick", "selected"]);
   let N = (0, s.k6)();
-  null == _ && null != g && (n = E(t = (0, c.Zg)(g)));
+  null == p && null != m && (n = E(t = (0, c.Zg)(m)));
   let A = i.useCallback(e => {
       if (null == O);
       else if ("string" == typeof O) N.push(O);
@@ -111,13 +111,13 @@ let b = e => {
       null != S && S(e)
     }, [N, O, S]),
     C = (0, l.dQu)(l.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, r.jsxs)(l.P3F, p(f({}, T), {
+  return (0, r.jsxs)(l.P3F, _(f({}, T), {
     onClick: A,
     className: a()(b, u.wrapper, {
       [u.selected]: I
     }),
-    "aria-label": null != m && "" !== m ? m : null != g ? g : "",
-    style: p(f({}, y), {
+    "aria-label": null != g && "" !== g ? g : null != m ? m : "",
+    style: _(f({}, y), {
       fontSize: n
     }),
     focusProps: {
@@ -127,9 +127,9 @@ let b = e => {
       className: a()(v(o, !1), u.acronym),
       "aria-hidden": !0,
       children: t
-    }) : null, null != _ ? (0, r.jsx)("img", {
+    }) : null, null != p ? (0, r.jsx)("img", {
       className: u.icon,
-      src: _,
+      src: p,
       alt: " ",
       width: C,
       height: C,

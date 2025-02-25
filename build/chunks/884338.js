@@ -13,11 +13,11 @@ var r, i = n(200651),
   u = n(481060),
   d = n(686546),
   f = n(184301),
-  _ = n(347475),
-  p = n(598077),
+  p = n(347475),
+  _ = n(598077),
   h = n(594174),
-  g = n(426563),
-  m = n(198854);
+  m = n(426563),
+  g = n(198854);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,13 +65,13 @@ let O = {
 };
 
 function S(e, t) {
-  let n = e instanceof p.Z ? e : null != e ? e.user : null;
+  let n = e instanceof _.Z ? e : null != e ? e.user : null;
   return null != n ? n.id : "user-".concat(t)
 }
 
 function I(e) {
   return (0, i.jsx)("div", {
-    className: m.moreUsers,
+    className: g.moreUsers,
     children: e
   })
 }
@@ -80,15 +80,15 @@ function T() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : O.SIZE_24;
   switch (e) {
     case O.SIZE_16:
-      return m.size16;
+      return g.size16;
     case O.SIZE_24:
-      return m.size24;
+      return g.size24;
     case O.SIZE_32:
-      return m.size32;
+      return g.size32;
     case O.SIZE_56:
-      return m.size56;
+      return g.size56;
     default:
-      return m.size24
+      return g.size24
   }
 }
 class N extends(r = o.PureComponent) {
@@ -105,10 +105,10 @@ class N extends(r = o.PureComponent) {
       let t = null == l && null == o && c === e.length - 1,
         s = n(e[c], t, c);
       a.push(t ? (0, i.jsx)("div", {
-        className: m.avatarContainer,
+        className: g.avatarContainer,
         children: s
       }, S(null !== (u = e[c]) && void 0 !== u ? u : null, c)) : (0, i.jsx)(d.ZP, {
-        className: m.avatarContainerMasked,
+        className: g.avatarContainerMasked,
         height: r,
         width: r,
         mask: d.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
@@ -148,8 +148,8 @@ class N extends(r = o.PureComponent) {
     return this.props.renderIcon ? (0, i.jsx)(u.gj8, {
       size: "md",
       color: "currentColor",
-      colorClass: m.__invalid_foreground,
-      className: m.icon
+      colorClass: g.__invalid_foreground,
+      className: g.icon
     }) : null
   }
   render() {
@@ -162,7 +162,7 @@ class N extends(r = o.PureComponent) {
       useFallbackUserForPopout: a
     } = this.props, {
       popoutUserId: l
-    } = this.state, d = n.find(e => null != e && e.id === l), p = a && null == h.default.getUser(l);
+    } = this.state, d = n.find(e => null != e && e.id === l), _ = a && null == h.default.getUser(l);
     return (0, i.jsx)(u.yRy, {
       position: "right",
       preload: null == d ? void 0 : () => (0, f.Z)(d.id, d.getAvatarURL(r, 80), {
@@ -170,8 +170,8 @@ class N extends(r = o.PureComponent) {
       }),
       shouldShow: !0 === o && null != l,
       fixed: !0,
-      renderPopout: e => (c()(null != l, "UserSummaryItem.render - renderPopout: popoutUserId cannot be null"), (0, i.jsx)(_.Z, y(v(y(v({}, this.props), {
-        user: p && null != d ? d : void 0
+      renderPopout: e => (c()(null != l, "UserSummaryItem.render - renderPopout: popoutUserId cannot be null"), (0, i.jsx)(p.Z, y(v(y(v({}, this.props), {
+        user: _ && null != d ? d : void 0
       }), e), {
         userId: l,
         guildId: this.props.guildId
@@ -180,7 +180,7 @@ class N extends(r = o.PureComponent) {
         popoutUserId: null
       }),
       children: n => (0, i.jsxs)("div", y(v({
-        className: s()(e, m.container, T(t)),
+        className: s()(e, g.container, T(t)),
         ref: this._ref
       }, n), {
         children: [this.renderIcon(), this.renderUsers()]
@@ -198,25 +198,25 @@ class N extends(r = o.PureComponent) {
       } = this.props;
       if (null == e) {
         if (!this.props.showDefaultAvatarsForNullUsers) return (0, i.jsx)("div", {
-          className: m.emptyUser
+          className: g.emptyUser
         });
         {
-          let e = (null != n ? n : 0) % g.Z.DEFAULT_AVATARS.length,
-            t = g.Z.DEFAULT_AVATARS[e];
+          let e = (null != n ? n : 0) % m.Z.DEFAULT_AVATARS.length,
+            t = m.Z.DEFAULT_AVATARS[e];
           return (0, i.jsx)("img", {
             src: t,
             alt: "",
-            className: m.avatar
+            className: g.avatar
           })
         }
       }
       let s = (0, i.jsx)("img", {
         src: e.getAvatarURL(o, a),
         alt: e.username,
-        className: m.avatar
+        className: g.avatar
       }, e.id);
       return r ? (0, i.jsx)(u.P3F, {
-        className: m.clickableAvatar,
+        className: g.clickableAvatar,
         onClick: () => {
           null != this._ref.current && null != e && this.setState({
             popoutUserId: e.id

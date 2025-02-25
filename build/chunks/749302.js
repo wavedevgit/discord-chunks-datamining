@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -13,8 +13,8 @@ var r = n(200651),
   u = n(699516),
   d = n(594174),
   f = n(981631),
-  _ = n(827468);
-let p = [];
+  p = n(827468);
+let _ = [];
 
 function h(e, t) {
   let n = (0, s.Z)(e, t);
@@ -26,12 +26,12 @@ function h(e, t) {
   }, [n])
 }
 
-function g(e) {
+function m(e) {
   let {
     application: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: _.subtext,
+    className: p.subtext,
     children: [(0, r.jsx)(l.Z, {
       game: t,
       size: l.Z.Sizes.XXSMALL
@@ -41,13 +41,13 @@ function g(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     menuItemId: t,
     user: n,
     label: s,
-    gameRelationships: _,
-    onClick: m,
+    gameRelationships: p,
+    onClick: g,
     color: E
   } = e, {
     id: v,
@@ -57,7 +57,7 @@ function m(e) {
     return (null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === v
   }), O = (0, c.wn)({
     location: "useAcceptGameFriendRequest"
-  }), S = y || b || !O, I = S ? p : _, [T, N] = i.useState(!1), A = i.useCallback(() => N(!0), []), C = i.useMemo(() => I.map(e => {
+  }), S = y || b || !O, I = S ? _ : p, [T, N] = i.useState(!1), A = i.useCallback(() => N(!0), []), C = i.useMemo(() => I.map(e => {
     let {
       applicationId: t
     } = e;
@@ -72,11 +72,11 @@ function m(e) {
       color: E,
       id: t,
       label: s,
-      subtext: (0, r.jsx)(g, {
+      subtext: (0, r.jsx)(m, {
         application: n
       }),
       onFocus: A,
-      action: () => m(n)
+      action: () => g(n)
     })
   }
   let D = [];
@@ -91,7 +91,7 @@ function m(e) {
         game: n,
         size: l.Z.Sizes.XXSMALL
       }),
-      action: () => m(n)
+      action: () => g(n)
     }, t))
   }), 0 === D.length) ? null : (0, r.jsx)(a.sNh, {
     color: E,

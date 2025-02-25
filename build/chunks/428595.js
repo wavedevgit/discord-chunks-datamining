@@ -13,11 +13,11 @@ var r = n(392711),
   u = n(592125),
   d = n(430824),
   f = n(594174),
-  _ = n(5192),
-  p = n(51144),
+  p = n(5192),
+  _ = n(51144),
   h = n(298552),
-  g = n(444758),
-  m = n(723454),
+  m = n(444758),
+  g = n(723454),
   E = n(772096),
   v = n(800927),
   b = n(143223),
@@ -250,7 +250,7 @@ let F = e => {
           a = u.Z.getChannel(n.channelId);
         if (null != o && (i = o.id, r = o.toString(), null != a)) {
           var l;
-          r = null !== (l = _.ZP.getNickname(a.getGuildId(), n.channelId, o)) && void 0 !== l ? l : p.ZP.getName(o)
+          r = null !== (l = p.ZP.getNickname(a.getGuildId(), n.channelId, o)) && void 0 !== l ? l : _.ZP.getName(o)
         }
         null == o && "@Clyde" === e[0] && (0, s.gJ)(V(n), a) && (i = R.fL);
         let c = e[1],
@@ -281,9 +281,9 @@ let F = e => {
         }
       }
     },
-    channelMention: g.Z.channelMention,
-    channelOrMessageUrl: g.Z.channelOrMessageUrl,
-    mediaPostLink: g.Z.mediaPostLink,
+    channelMention: m.Z.channelMention,
+    channelOrMessageUrl: m.Z.channelOrMessageUrl,
+    mediaPostLink: m.Z.mediaPostLink,
     attachmentLink: h.Z.attachmentLink,
     shopLink: b.Z.shopLink,
     commandMention: {
@@ -390,7 +390,7 @@ let F = e => {
         }
       }
     },
-    heading: m.Z,
+    heading: g.Z,
     list: v.Z,
     subtext: y.Z
   },

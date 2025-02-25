@@ -32,7 +32,7 @@ function t(e) {
       relevance: 0
     },
     f = e.inherit(e.C_LINE_COMMENT_MODE),
-    _ = {
+    p = {
       className: "meta",
       begin: "#|&",
       end: "$",
@@ -42,7 +42,7 @@ function t(e) {
       },
       contains: [f]
     },
-    p = {
+    _ = {
       className: "symbol",
       begin: "~",
       end: ";|:",
@@ -90,7 +90,7 @@ function t(e) {
       type: a,
       literal: s
     },
-    contains: [_, h, f, p, l, c, u, d]
+    contains: [p, h, f, _, l, c, u, d]
   }
 }
 e.exports = t

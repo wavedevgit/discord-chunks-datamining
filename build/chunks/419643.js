@@ -50,7 +50,7 @@ function d(e, t) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -58,17 +58,17 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let p = ["#be0351", "#ff2c52", "#f0f0f0"],
+let _ = ["#be0351", "#ff2c52", "#f0f0f0"],
   h = ["#ffb84b", "#ffe361", "#f0f0f0"],
-  g = [.3, .4, 1],
-  m = [{
+  m = [.3, .4, 1],
+  g = [{
     base: 8,
     tint: 1
   }, {
@@ -95,22 +95,22 @@ let p = ["#be0351", "#ff2c52", "#f0f0f0"],
       height: n = 24,
       primaryTintColor: l,
       secondaryTintColor: u
-    } = e, _ = f(e, ["width", "height", "primaryTintColor", "secondaryTintColor"]);
+    } = e, p = f(e, ["width", "height", "primaryTintColor", "secondaryTintColor"]);
     let b = i.useMemo(() => "badge-force-gradient-".concat((0, o.Z)()), []),
       {
         primaryColorsTransformed: y,
         secondaryColorsTransformed: O
       } = (0, s.s)({
-        primaryBaseColors: p,
+        primaryBaseColors: _,
         primaryTintColor: l,
-        primaryTintLuminances: g,
-        primaryLuminanceWeights: m,
+        primaryTintLuminances: m,
+        primaryLuminanceWeights: g,
         secondaryBaseColors: h,
         secondaryTintColor: u,
         secondaryTintLuminances: E,
         secondaryLuminanceWeights: v
       });
-    return (0, r.jsxs)("svg", d(c({}, (0, a.Z)(_)), {
+    return (0, r.jsxs)("svg", d(c({}, (0, a.Z)(p)), {
       width: t,
       height: n,
       viewBox: "0 0 16 16",

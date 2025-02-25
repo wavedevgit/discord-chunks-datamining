@@ -13,12 +13,12 @@ var r = n(200651),
   u = n(1585),
   d = n(125988),
   f = n(731896),
-  _ = n(594174),
-  p = n(597688),
+  p = n(594174),
+  _ = n(597688),
   h = n(436600),
-  g = n(223223);
+  m = n(223223);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -43,7 +43,7 @@ let v = e => {
     let {
       avatarDecoration: t,
       fallbackLabel: n
-    } = e, i = (0, l.e7)([_.default], () => _.default.getCurrentUser()), {
+    } = e, i = (0, l.e7)([p.default], () => p.default.getCurrentUser()), {
       avatarDecorationSrc: o,
       eventHandlers: a
     } = (0, d.Z)({
@@ -73,7 +73,7 @@ let v = e => {
     return (0, r.jsxs)("div", {
       className: h.profileEffectContainer,
       children: [(0, r.jsx)("img", {
-        src: g,
+        src: m,
         alt: a,
         className: h.profileEffectBackground
       }), (0, r.jsx)("img", {
@@ -89,7 +89,7 @@ let v = e => {
       product: n,
       sku: i,
       fallbackLabel: c
-    } = e, u = (0, l.e7)([p.Z], () => p.Z.getProduct(null == i ? void 0 : i.id)), d = null != n ? n : u, [f] = null !== (t = null == d ? void 0 : d.items) && void 0 !== t ? t : [];
+    } = e, u = (0, l.e7)([_.Z], () => _.Z.getProduct(null == i ? void 0 : i.id)), d = null != n ? n : u, [f] = null !== (t = null == d ? void 0 : d.items) && void 0 !== t ? t : [];
     return (0, a.EQ)(null == f ? void 0 : f.type).with(s.Z.AVATAR_DECORATION, () => (o()(f.type === s.Z.AVATAR_DECORATION, "ts-match checked the type"), (0, r.jsx)(v, {
       avatarDecoration: f,
       fallbackLabel: c

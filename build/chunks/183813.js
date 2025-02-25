@@ -49,9 +49,9 @@ function E(e) {
         className: g.giftSelectItem
       }, t)
     },
-    P = (0, c.Q3)("PremiumPaymentFreeSKUSelectStep");
+    b = (0, c.Q3)("PremiumPaymentFreeSKUSelectStep");
   r()(null != s, "Expected plan to selected"), r()(null != E, "Expected selectedSkuId"), r()(null != S, "Step should be set");
-  let b = null == I ? void 0 : I.map(e => v(e)),
+  let P = null == I ? void 0 : I.map(e => v(e)),
     T = null != y && null != O ? (0, l.jsx)(C.Z, {
       avatarDecorationOverride: {
         asset: y.assetId
@@ -83,7 +83,7 @@ function E(e) {
       color: "header-primary",
       children: L.NW.string(L.t["Rp0+ZG"])
     });
-  return P ? (0, l.jsxs)("div", {
+  return b ? (0, l.jsxs)("div", {
     className: g.container,
     children: [(0, l.jsx)(o.xBx, {
       children: (0, l.jsxs)(o.Kqy, {
@@ -106,7 +106,7 @@ function E(e) {
           padding: {
             top: 12
           },
-          children: b
+          children: P
         })]
       })
     }), M]
@@ -117,7 +117,7 @@ function E(e) {
       children: [(0, l.jsx)("div", {
         className: g.header,
         children: Z
-      }), b]
+      }), P]
     }), (0, l.jsx)(o.olH, {
       onClick: n,
       className: g.closeButton

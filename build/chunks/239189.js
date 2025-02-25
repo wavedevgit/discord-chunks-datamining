@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  assign: () => p,
+  assign: () => _,
   batchedUpdates: () => f,
   colorNames: () => c,
   createStringInterpolator: () => r,
@@ -10,7 +10,7 @@ n.r(t), n.d(t, {
   requestAnimationFrame: () => d,
   skipAnimation: () => u,
   to: () => i,
-  willAdvance: () => _
+  willAdvance: () => p
 });
 var r, i, o = n(19784),
   a = n(217348),
@@ -26,8 +26,8 @@ var r, i, o = n(19784),
   f = function(e) {
     return e()
   },
-  _ = a.ZT,
-  p = function(e) {
+  p = a.ZT,
+  _ = function(e) {
     var t;
     return i = (t = Object.assign({
       to: i,
@@ -38,8 +38,8 @@ var r, i, o = n(19784),
       createStringInterpolator: r,
       requestAnimationFrame: d,
       batchedUpdates: f,
-      willAdvance: _
-    }, h(e))).to, l = t.now, s = t.frameLoop, c = t.colorNames, u = t.skipAnimation, r = t.createStringInterpolator, d = t.requestAnimationFrame, f = t.batchedUpdates, _ = t.willAdvance, t
+      willAdvance: p
+    }, h(e))).to, l = t.now, s = t.frameLoop, c = t.colorNames, u = t.skipAnimation, r = t.createStringInterpolator, d = t.requestAnimationFrame, f = t.batchedUpdates, p = t.willAdvance, t
   };
 
 function h(e) {

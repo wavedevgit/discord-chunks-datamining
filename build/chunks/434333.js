@@ -23,14 +23,14 @@ let u = {
       className: o,
       onDismiss: d,
       backgroundColor: f = u.RED,
-      icon: _ = l.P4T,
-      iconClassName: p
+      icon: p = l.P4T,
+      iconClassName: _
     } = e;
     return (0, r.jsxs)("div", {
       className: a()(c.error, o, f),
       ref: t,
-      children: [(0, r.jsx)(_, {
-        className: a()(c.icon, p),
+      children: [(0, r.jsx)(p, {
+        className: a()(c.icon, _),
         color: "currentColor"
       }), (0, r.jsx)("div", {
         role: n,

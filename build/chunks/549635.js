@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(480050),
   d = n(524444),
   f = n(52824),
-  _ = n(589530),
-  p = n(591759),
+  p = n(589530),
+  _ = n(591759),
   h = n(254109),
-  g = n(212459),
-  m = n(505363);
+  m = n(212459),
+  g = n(505363);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,7 +78,7 @@ function S(e, t) {
 }
 
 function I(e) {
-  let t = p.Z.toURLSafe(e);
+  let t = _.Z.toURLSafe(e);
   return null == t ? null : (t.searchParams.append("format", "webp"), t.toString())
 }
 
@@ -91,7 +91,7 @@ function T(e) {
       onContextMenu: f
     } = e,
     {
-      width: p,
+      width: _,
       height: E,
       url: b,
       proxyUrl: S,
@@ -104,9 +104,9 @@ function T(e) {
     {
       zoomed: D,
       setZoomed: w
-    } = (0, g.Y)(),
+    } = (0, m.Y)(),
     L = A(D, b, S),
-    x = null != p && 0 !== p && null != E && 0 !== E;
+    x = null != _ && 0 !== _ && null != E && 0 !== E;
   if ("VIDEO" === N && x && null != S) {
     var M;
     let e = I(S);
@@ -114,17 +114,17 @@ function T(e) {
     let t = null !== (M = n.renderLinkComponent) && void 0 !== M ? M : d.iT;
     return (0, r.jsx)(c.Z, y(v({}, P), {
       src: L,
-      width: p,
+      width: _,
       height: E,
       maxWidth: o,
       maxHeight: s,
       poster: e,
-      naturalWidth: p,
+      naturalWidth: _,
       naturalHeight: E,
-      volume: _.FC,
-      autoMute: _.rs,
-      onVolumeChange: _.jA,
-      onMute: _.Zj,
+      volume: p.FC,
+      autoMute: p.rs,
+      onVolumeChange: p.jA,
+      onMute: p.Zj,
       renderLinkComponent: t,
       autoPlay: !i,
       alt: T,
@@ -133,13 +133,13 @@ function T(e) {
   }
   return "IMAGE" === N && (t = x ? (0, r.jsx)(l.ZP, y(v({}, P), {
     src: L,
-    width: p,
+    width: _,
     height: E,
     maxWidth: o,
     maxHeight: s,
     useFullWidth: !0,
     shouldLink: !1,
-    className: m.media,
+    className: g.media,
     animated: !i && n.animated,
     autoPlay: !i,
     alt: T,
@@ -148,19 +148,19 @@ function T(e) {
     src: L,
     alt: T,
     onContextMenu: f,
-    className: m.dimensionlessImage,
+    className: g.dimensionlessImage,
     style: {
       maxWidth: o,
       maxHeight: s
     }
   })), null != t ? (0, r.jsx)(u.Z, {
-    width: p,
+    width: _,
     height: E,
     maxWidth: o,
     maxHeight: s,
     active: D,
-    className: a()(m.wrapper, {
-      [m.zoomed]: D
+    className: a()(g.wrapper, {
+      [g.zoomed]: D
     }),
     onClick: () => {
       w(!D), (0, h.yg)(D ? h.uG.ZOOM_OUT_IMAGE_PRESSED : h.uG.ZOOM_IN_IMAGE_PRESSED)

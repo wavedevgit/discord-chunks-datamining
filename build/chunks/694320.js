@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(906732),
   d = n(436774),
   f = n(592125),
-  _ = n(944486),
-  p = n(626135),
+  p = n(944486),
+  _ = n(626135),
   h = n(981631),
-  g = n(388032),
-  m = n(144292);
+  m = n(388032),
+  g = n(144292);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,14 +56,14 @@ function y(e) {
   let {
     className: t,
     iconOnly: n
-  } = e, o = (0, s.e7)([_.Z, f.Z], () => {
-    let e = f.Z.getChannel(_.Z.getChannelId());
+  } = e, o = (0, s.e7)([p.Z, f.Z], () => {
+    let e = f.Z.getChannel(p.Z.getChannelId());
     return (null == e ? void 0 : e.isPrivate()) ? h.ZY5.DM_CHANNEL : h.ZY5.GUILD_CHANNEL
   }), {
     analyticsLocations: E
   } = (0, u.ZP)(c.Z.PREMIUM_UPSELL);
   i.useEffect(() => {
-    p.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
+    _.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
       type: "longer messages inline",
       location: {
         location_page: o,
@@ -73,29 +73,29 @@ function y(e) {
     })
   }, [o, E]);
   let y = () => (0, r.jsxs)("div", {
-      className: a()(m.root, t),
+      className: a()(g.root, t),
       children: [(0, r.jsx)(l.SrA, {
         size: "md",
-        className: m.premium,
+        className: g.premium,
         color: d.JX.PREMIUM_TIER_2
       }), (0, r.jsx)(l.Text, {
-        className: m.text,
+        className: g.text,
         variant: "text-sm/normal",
-        children: g.NW.format(g.t.BNAIBQ, {
+        children: m.NW.format(m.t.BNAIBQ, {
           onLearnMore: b
         })
       })]
     }),
     O = () => (0, r.jsx)(l.P3F, {
-      className: m.iconOnly,
+      className: g.iconOnly,
       onClick: () => b(),
       children: (0, r.jsx)(l.ua7, {
-        text: g.NW.string(g.t["+eFIjY"]),
+        text: m.NW.string(m.t["+eFIjY"]),
         position: "top",
         children: e => (0, r.jsx)(l.SrA, v({
           size: "md",
           color: "currentColor",
-          className: m.premium
+          className: g.premium
         }, e))
       })
     });

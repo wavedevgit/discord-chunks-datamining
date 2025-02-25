@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(739566),
   d = n(623292),
   f = n(703656),
-  _ = n(665906),
-  p = n(488131),
+  p = n(665906),
+  _ = n(488131),
   h = n(375954),
-  g = n(962293),
-  m = n(981631),
+  m = n(962293),
+  g = n(981631),
   E = n(388032),
   v = n(657441);
 let b = 2,
@@ -30,7 +30,7 @@ function O(e, t) {
     let e = r;
     for (let t = 0; t < y; t++) {
       let r = h.Z.getMessage(n, e);
-      if ((null == r ? void 0 : r.type) !== m.uaV.REPLY || null == r.messageReference) return t;
+      if ((null == r ? void 0 : r.type) !== g.uaV.REPLY || null == r.messageReference) return t;
       e = r.messageReference.message_id
     }
     return y
@@ -45,13 +45,13 @@ function S(e) {
   } = e;
 
   function a() {
-    (0, d.A6)(t.id), (0, p.R6)(t, n, "Reply Chain Nudge")
+    (0, d.A6)(t.id), (0, _.R6)(t, n, "Reply Chain Nudge")
   }
   let s = i.useRef(o);
   return i.useEffect(() => {
     s.current = o
   }), i.useEffect(() => {
-    (0, c.yw)(m.rMx.THREAD_NUDGE_SHOWN, {
+    (0, c.yw)(g.rMx.THREAD_NUDGE_SHOWN, {
       type: "Reply Chain (".concat(b + 1, ")"),
       reply_chain_length: s.current + 1,
       channel_id: t.id,
@@ -92,10 +92,10 @@ function I(e) {
     shouldMention: s,
     showMentionToggle: c
   } = t, {
-    nick: p,
+    nick: _,
     colorString: h,
     colorRoleName: y
-  } = (0, u.ZP)(o), I = O(i, o), T = (0, _.NE)(i, o), N = n.showThreadPromptOnReply && I >= b && T, A = () => (0, f.uL)(m.Z5c.CHANNEL(i.getGuildId(), i.id, o.id));
+  } = (0, u.ZP)(o), I = O(i, o), T = (0, p.NE)(i, o), N = n.showThreadPromptOnReply && I >= b && T, A = () => (0, f.uL)(g.Z5c.CHANNEL(i.getGuildId(), i.id, o.id));
 
   function C(e) {
     e.stopPropagation(), (0, d.qx)(i.id, !s)
@@ -127,7 +127,7 @@ function I(e) {
             children: E.NW.format(E.t["8E4Gxc"], {
               userHook: (e, t) => (0, r.jsx)(l.PUh, {
                 className: v.name,
-                name: p,
+                name: _,
                 color: h,
                 roleName: y
               }, t)
@@ -170,7 +170,7 @@ function I(e) {
               className: v.separator,
               "aria-hidden": !0
             })]
-          }), (0, r.jsx)(g.B, {
+          }), (0, r.jsx)(m.B, {
             onClick: R
           })]
         })]

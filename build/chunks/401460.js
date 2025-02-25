@@ -13,12 +13,12 @@ var r = n(200651),
   u = n(583901),
   d = n(997945),
   f = n(630117),
-  _ = n(441319),
-  p = n(981631),
+  p = n(441319),
+  _ = n(981631),
   h = n(388032),
-  g = n(723902);
+  m = n(723902);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -71,26 +71,26 @@ function S(e) {
     tabIndex: l,
     children: f,
     locked: h = !1
-  } = e, [m, v] = i.useState((0, _.aW)(t).name), y = t === d.Ru.PIRATE, S = (0, c.xUy)({
-    label: m,
+  } = e, [g, v] = i.useState((0, p.aW)(t).name), y = t === d.Ru.PIRATE, S = (0, c.xUy)({
+    label: g,
     isSelected: s
   });
   return (0, r.jsx)(c.ua7, {
-    text: m,
+    text: g,
     onTooltipShow: () => y && v(O()),
     children: e => (0, r.jsxs)("div", {
-      className: g.appIconSelectionContainer,
+      className: m.appIconSelectionContainer,
       children: [(0, r.jsx)(c.P3F, b(E({}, e, S), {
         tabIndex: null != l ? l : S.tabIndex,
-        className: a()(g.appIconSelection, {
-          [g.selected]: s
+        className: a()(m.appIconSelection, {
+          [m.selected]: s
         }, n),
-        onClick: s ? p.dG4 : () => null == o ? void 0 : o(t),
+        onClick: s ? _.dG4 : () => null == o ? void 0 : o(t),
         children: f
       })), s && (0, r.jsx)(u.oK, {}), h && (0, r.jsx)("div", {
-        className: g.lockedBadgeContainer,
+        className: m.lockedBadgeContainer,
         children: (0, r.jsx)(c.mBM, {
-          className: g.lockedBadge,
+          className: m.lockedBadge,
           color: "currentColor"
         })
       })]
@@ -111,12 +111,12 @@ function I(e) {
     onSelect: i ? void 0 : a,
     isSelected: n,
     id: t.id,
-    className: i ? g.disabled : void 0,
+    className: i ? m.disabled : void 0,
     tabIndex: o,
     locked: s,
     children: (0, r.jsx)(f.Z, {
       id: t.id,
-      width: _.M9
+      width: p.M9
     })
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Y: () => p
+  Y: () => _
 });
 var r = n(961742),
   i = n(27273),
@@ -102,15 +102,15 @@ async function f(e, t) {
   let n = (0, r.qo)(e.ownerDocument.styleSheets);
   return d(await u(n, t))
 }
-async function _(e, t) {
+async function p(e, t) {
   let n = await f(e, t);
   return (await Promise.all(n.map(e => {
     let n = e.parentStyleSheet ? e.parentStyleSheet.href : null;
     return (0, o.vg)(e.cssText, n, t)
   }))).join("\n")
 }
-async function p(e, t) {
-  let n = null != t.fontEmbedCSS ? t.fontEmbedCSS : t.skipFonts ? null : await _(e, t);
+async function _(e, t) {
+  let n = null != t.fontEmbedCSS ? t.fontEmbedCSS : t.skipFonts ? null : await p(e, t);
   if (n) {
     let t = document.createElement("style"),
       r = document.createTextNode(n);

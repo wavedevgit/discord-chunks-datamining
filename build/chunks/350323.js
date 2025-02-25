@@ -50,13 +50,13 @@ var u = n(192379),
   d = n(724027),
   f = n(457958);
 
-function _(e) {
+function p(e) {
   var t = "node",
     n = function(n) {
-      function _() {
-        return s(this, _), l(this, (_.__proto__ || Object.getPrototypeOf(_)).apply(this, arguments))
+      function p() {
+        return s(this, p), l(this, (p.__proto__ || Object.getPrototypeOf(p)).apply(this, arguments))
       }
-      return c(_, n), o(_, [{
+      return c(p, n), o(p, [{
         key: "componentWillUnmount",
         value: function() {
           this._propsAnimated && this._propsAnimated.__detach()
@@ -101,7 +101,7 @@ function _(e) {
             }
           }))
         }
-      }]), _
+      }]), p
     }(u.Component);
   return n.propTypes = {
     style: function(t, n, r) {
@@ -109,4 +109,4 @@ function _(e) {
     }
   }, n
 }
-e.exports = _
+e.exports = p

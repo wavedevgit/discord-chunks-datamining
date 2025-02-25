@@ -78,7 +78,7 @@ function i(e) {
       subLanguage: "javascript"
     }];
   u.contains = f;
-  let _ = {
+  let p = {
       className: "params",
       begin: "\\(",
       returnBegin: !0,
@@ -89,7 +89,7 @@ function i(e) {
         contains: ["self"].concat(f)
       }]
     },
-    p = {
+    _ = {
       begin: "(#=>|=>|\\|>>|-?->|!->)"
     },
     h = {
@@ -109,9 +109,9 @@ function i(e) {
     aliases: ["ls"],
     keywords: s,
     illegal: /\/\*/,
-    contains: f.concat([e.COMMENT("\\/\\*", "\\*\\/"), e.HASH_COMMENT_MODE, p, {
+    contains: f.concat([e.COMMENT("\\/\\*", "\\*\\/"), e.HASH_COMMENT_MODE, _, {
       className: "function",
-      contains: [c, _],
+      contains: [c, p],
       returnBegin: !0,
       variants: [{
         begin: "(" + l + "\\s*(?:=|:=)\\s*)?(\\(.*\\)\\s*)?\\B->\\*?",

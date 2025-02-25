@@ -14,11 +14,11 @@ var r = n(990547),
   u = n(895886),
   d = n(35225),
   f = n(703656),
-  _ = n(314897),
-  p = n(664915),
+  p = n(314897),
+  _ = n(664915),
   h = n(984933),
-  g = n(430824),
-  m = n(944486),
+  m = n(430824),
+  g = n(944486),
   E = n(914010),
   v = n(594174),
   b = n(626135),
@@ -109,8 +109,8 @@ let L = e => {
   };
 
 function j(e) {
-  return new Promise(t => g.Z.addConditionalChangeListener(() => {
-    let n = g.Z.getGuild(e);
+  return new Promise(t => m.Z.addConditionalChangeListener(() => {
+    let n = m.Z.getGuild(e);
     return null == n || (t(n), !1)
   }))
 }
@@ -124,7 +124,7 @@ let U = {
     let c = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
       {
         source: d,
-        loadId: p,
+        loadId: _,
         lurkLocation: h
       } = c,
       b = null !== (t = c.lurker) && void 0 !== t && t,
@@ -135,17 +135,17 @@ let U = {
       guildId: e,
       lurker: b,
       source: d,
-      loadId: p
+      loadId: _
     }));
     try {
       let t = E.Z.getGuildId(),
-        r = e === t && null != g.Z.getGuild(e) ? m.Z.getChannelId(e) : null,
+        r = e === t && null != m.Z.getGuild(e) ? g.Z.getChannelId(e) : null,
         i = await o.tn.put({
           url: T.ANM.GUILD_JOIN(e),
           query: {
             lurker: b,
-            session_id: b ? _.default.getSessionId() : null,
-            recommendation_load_id: p,
+            session_id: b ? p.default.getSessionId() : null,
+            recommendation_load_id: _,
             location: b && null != h ? h : null
           },
           context: {
@@ -159,7 +159,7 @@ let U = {
           type: "USER_GUILD_JOIN_REQUEST_UPDATE",
           guildId: e,
           request: i.body.join_request
-        }), null == g.Z.getGuild(e) && i.body.show_verification_form) return (0, f.uL)(T.Z5c.GUILD_MEMBER_VERIFICATION(e)), i;
+        }), null == m.Z.getGuild(e) && i.body.show_verification_form) return (0, f.uL)(T.Z5c.GUILD_MEMBER_VERIFICATION(e)), i;
       if (null != i.body.welcome_screen && a.Z.dispatch({
           type: "WELCOME_SCREEN_UPDATE",
           guildId: i.body.id,
@@ -449,7 +449,7 @@ let U = {
     })
   },
   toggleGuildFolderExpand(e) {
-    let t = p.Z.isFolderExpanded(e);
+    let t = _.Z.isFolderExpanded(e);
     b.default.track(T.rMx.GUILD_FOLDER_CLICKED, {
       source: "sidebar",
       action: t ? "collapsed" : "expanded"

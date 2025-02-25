@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   M: () => l,
-  Z: () => m
+  Z: () => g
 });
 var r, i = n(442837),
   o = n(570140);
@@ -55,11 +55,11 @@ function f(e) {
   u.lastFetchTimeMs = Date.now(), u.fetchState = 2
 }
 
-function _() {
+function p() {
   u.userTenureRewardStatusByRewardId = c.userTenureRewardStatusByRewardId
 }
 
-function p(e) {
+function _(e) {
   let {
     tenureRewardIds: t
   } = e;
@@ -71,7 +71,7 @@ function p(e) {
 function h() {
   u = c
 }
-class g extends(r = i.ZP.PersistedStore) {
+class m extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     u = s({}, u, null != e ? e : {})
   }
@@ -85,11 +85,11 @@ class g extends(r = i.ZP.PersistedStore) {
     return u.userTenureRewardStatusByRewardId[e]
   }
 }
-a(g, "displayName", "TenureRewardStore"), a(g, "persistKey", "TenureRewardStore");
-let m = new g(o.Z, {
+a(m, "displayName", "TenureRewardStore"), a(m, "persistKey", "TenureRewardStore");
+let g = new m(o.Z, {
   USER_TENURE_REWARD_SYNC_START: d,
   USER_TENURE_REWARD_SYNC_SUCCESS: f,
-  USER_TENURE_REWARD_STATUS_RESET: _,
-  USER_TENURE_REWARD_STATUS_DELETE: p,
+  USER_TENURE_REWARD_STATUS_RESET: p,
+  USER_TENURE_REWARD_STATUS_DELETE: _,
   LOGOUT: h
 })

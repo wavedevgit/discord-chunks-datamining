@@ -19,16 +19,16 @@ function l(e) {
     commandOrigin: d = i.bB.CHAT
   } = e, f = null != n ? (0, r.KF)({
     content: n
-  }, "content").trim() : "", _ = t.required, p = "" === f;
-  if (null == n) return _ ? {
+  }, "content").trim() : "", p = t.required, _ = "" === f;
+  if (null == n) return p ? {
     success: !1,
     error: s.NW.string(s.t.JZJQLy)
   } : {
     success: !0
   };
-  if (p) return u ? {
+  if (_) return u ? {
     success: !0
-  } : _ ? {
+  } : p ? {
     success: !1,
     error: s.NW.string(s.t.JZJQLy)
   } : {
@@ -39,6 +39,6 @@ function l(e) {
       type: "text",
       text: f
     } : n[0],
-    g = o.Z[t.type](h, t, c, l, d);
-  return g.success || null != g.error || (g.error = (0, a.al)(t)), g
+    m = o.Z[t.type](h, t, c, l, d);
+  return m.success || null != m.error || (m.error = (0, a.al)(t)), m
 }

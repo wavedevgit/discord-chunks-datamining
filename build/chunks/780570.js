@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   CP: () => l,
-  Je: () => p,
+  Je: () => _,
   KJ: () => f,
   OT: () => c,
   Tu: () => s,
   d0: () => d,
-  lK: () => _,
+  lK: () => p,
   xI: () => u
 }), n(47120), n(301563);
 var r = n(695346),
@@ -45,7 +45,7 @@ function f(e) {
   return null == e ? null : e.type === a.vxO.INSTALLING || e.type === a.vxO.UPDATING || e.type === a.vxO.UNINSTALLING ? e : null
 }
 
-function _(e) {
+function p(e) {
   return e.reduce((e, t) => {
     let n = f(t);
     return null == n || t.type === a.vxO.UP_TO_DATE ? e : {
@@ -58,6 +58,6 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   return !!e.isDiscordApplication() && e.isEntitled(i.default.getCurrentUser(), o.Z)
 }

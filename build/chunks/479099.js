@@ -12,8 +12,8 @@ var i, r = n(200651),
   d = n(481060),
   c = n(239091),
   h = n(596454),
-  f = n(607070),
-  p = n(339085),
+  p = n(607070),
+  f = n(339085),
   g = n(695346),
   v = n(572004),
   C = n(388032),
@@ -66,7 +66,7 @@ function _(e) {
     name: N,
     emojiId: T,
     emojiName: P
-  } = t, w = null != b, [A, j] = l.useState(!1), L = (0, u.e7)([p.ZP], () => null != T ? p.ZP.getUsableCustomEmojiById(T) : null), D = w || null != _, R = (!w || !A) && (null != T || null != P), Z = 0 === i, M = l.useRef(null), U = (0, u.e7)([f.Z], () => f.Z.keyboardModeEnabled), x = e => {
+  } = t, w = null != b, [A, j] = l.useState(!1), L = (0, u.e7)([f.ZP], () => null != T ? f.ZP.getUsableCustomEmojiById(T) : null), D = w || null != _, R = (!w || !A) && (null != T || null != P), Z = 0 === i, M = l.useRef(null), U = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), x = e => {
     let i = g.Sb.getSetting();
     v.wS && i && (0, c.jW)(e, async () => {
       let {

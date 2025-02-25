@@ -13,24 +13,24 @@ function h() {
   d.clear()
 }
 
-function f(e) {
+function p(e) {
   d.delete(e.guild.id)
 }
-class p extends(i = s.ZP.Store) {
+class f extends(i = s.ZP.Store) {
   getChannelStatus(e) {
     var t;
     if (null != e && null != e.guild_id && e.type === o.d.GUILD_VOICE) return d.has(e.guild_id) || (d.add(e.guild_id), u.Z.getSocket().requestChannelStatuses(e.guild_id)), null === (t = c[e.guild_id]) || void 0 === t ? void 0 : t[e.id]
   }
 }
-l = "ChannelStatusStore", (r = "displayName") in p ? Object.defineProperty(p, r, {
+l = "ChannelStatusStore", (r = "displayName") in f ? Object.defineProperty(f, r, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : p[r] = l;
-let g = new p(a.Z, {
-  GUILD_CREATE: f,
-  GUILD_DELETE: f,
+}) : f[r] = l;
+let g = new f(a.Z, {
+  GUILD_CREATE: p,
+  GUILD_DELETE: p,
   CONNECTION_RESUMED: h,
   CONNECTION_OPEN: h,
   VOICE_CHANNEL_STATUS_UPDATE: function(e) {

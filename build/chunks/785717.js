@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  KZ: () => _,
+  KZ: () => p,
   Mt: () => d,
   ZB: () => f
 });
@@ -72,10 +72,10 @@ let u = i.createContext(null),
       roleId: c,
       sourceSessionId: d,
       showGuildProfile: f = !0
-    } = e, _ = null === (t = i.useContext(u)) || void 0 === t ? void 0 : t.sessionId;
+    } = e, p = null === (t = i.useContext(u)) || void 0 === t ? void 0 : t.sessionId;
     return i.useMemo(() => ({
       sessionId: (0, o.Z)(),
-      sourceSessionId: null != d ? d : _,
+      sourceSessionId: null != d ? d : p,
       layout: n,
       userId: r,
       guildId: a,
@@ -83,9 +83,9 @@ let u = i.createContext(null),
       messageId: l,
       roleId: c,
       showGuildProfile: f
-    }), [_, n, r, a, s, l, c, d, f])
+    }), [p, n, r, a, s, l, c, d, f])
   },
-  _ = () => {
+  p = () => {
     let e = i.useContext(u),
       {
         analyticsLocations: t

@@ -32,9 +32,9 @@ let f = {
       analyticsLocations: S,
       upsellType: N,
       themeOverride: y = f.NITRO_BASIC
-    } = e, [I, O] = i.useState(m), [v, P] = i.useState(p);
+    } = e, [I, O] = i.useState(m), [v, b] = i.useState(p);
     return i.useEffect(() => {
-      P(u)
+      b(u)
     }, [y]), i.useEffect(() => {
       setTimeout(() => O(!1), 3e3)
     }, []), i.useEffect(() => {

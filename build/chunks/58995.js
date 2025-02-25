@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(481060),
   d = n(100527),
   f = n(906732),
-  _ = n(605236),
-  p = n(243778),
+  p = n(605236),
+  _ = n(243778),
   h = n(963249),
-  g = n(599659),
-  m = n(282925),
+  m = n(599659),
+  g = n(282925),
   E = n(819640),
   v = n(594174),
   b = n(70956),
@@ -122,11 +122,11 @@ function M(e) {
     analyticsLocations: o
   } = (0, f.ZP)(d.Z.GIFT_BUTTON), [a, u] = i.useState(!1), b = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([v.default], () => v.default.getCurrentUser()), D = null != R ? y.default.age(R.id) : 0, M = !t && b && D >= L, {
     enabled: j
-  } = g.O.useExperiment({
+  } = m.O.useExperiment({
     location: "gift-button"
   }), k = [];
   j && M && k.push(l.z.NITROWEEN_COACHMARKS);
-  let [U, G] = (0, p.US)(k), B = null != U, F = (0, O.Ft)(n), {
+  let [U, G] = (0, _.US)(k), B = null != U, F = (0, O.Ft)(n), {
     Component: V,
     events: Z,
     play: H
@@ -155,7 +155,7 @@ function M(e) {
     onMouseLeave: () => {
       u(!1)
     },
-    children: [B && (0, r.jsx)(m.Z, {
+    children: [B && (0, r.jsx)(g.Z, {
       onComplete: () => u(!1),
       onCheckItOutClick: W,
       markAsDismissed: G
@@ -164,7 +164,7 @@ function M(e) {
       "aria-label": N.NW.string(N.t.Z1RnTk),
       isActive: !1,
       onClick: () => {
-        H(), u(!1), (0, _.EW)(l.z.NITROWEEN_ANIMATED_GIFTING_ICON, {
+        H(), u(!1), (0, p.EW)(l.z.NITROWEEN_ANIMATED_GIFTING_ICON, {
           dismissAction: T.L.TAKE_ACTION
         }), W()
       }

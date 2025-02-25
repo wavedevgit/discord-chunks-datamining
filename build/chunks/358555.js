@@ -13,8 +13,8 @@ var r = n(120356),
   d = n(372769),
   c = n(523751),
   h = n(623624),
-  f = n(290034),
-  p = n(271383),
+  p = n(290034),
+  f = n(271383),
   g = n(594174),
   v = n(267642),
   C = n(981631),
@@ -26,9 +26,9 @@ function m(e) {
     guild: t,
     isBannerVisible: n,
     disableBoostClick: r
-  } = e, l = (0, o.e7)([g.default, p.ZP], () => {
+  } = e, l = (0, o.e7)([g.default, f.ZP], () => {
     let e = g.default.getCurrentUser();
-    return p.ZP.isMember(t.id, null == e ? void 0 : e.id)
+    return f.ZP.isMember(t.id, null == e ? void 0 : e.id)
   }), {
     premiumTier: a,
     premiumSubscriberCount: u
@@ -82,7 +82,7 @@ function m(e) {
         }({}, e), r = r = {
           className: O.__invalid_premiumGuildIcon,
           onClick: d,
-          children: (0, i.jsx)(f.Z, {
+          children: (0, i.jsx)(p.Z, {
             premiumTier: a,
             iconBackgroundClassName: n ? O.boostedGuildTierIconBackgroundWithVisibleBanner : O.guildBadgeIcon,
             iconClassName: n && a !== C.Eu4.TIER_3 ? O.boostedGuildTierMutedIconWithVisibleBanner : null

@@ -53,11 +53,11 @@ let d = i.forwardRef(function(e, t) {
     className: c,
     style: d,
     focusProps: f,
-    onClick: _,
-    onDoubleClick: p,
+    onClick: p,
+    onDoubleClick: _,
     onContextMenu: h,
-    onKeyDown: g,
-    onFocus: m,
+    onKeyDown: m,
+    onFocus: g,
     onBlur: E,
     onMouseOver: v,
     onMouseDown: b,
@@ -69,10 +69,10 @@ let d = i.forwardRef(function(e, t) {
     ref: I,
     className: c,
     style: d,
-    onClick: _,
+    onClick: p,
     onMouseOver: v,
     onMouseLeave: y,
-    onDoubleClick: p,
+    onDoubleClick: _,
     onContextMenu: h,
     children: [(0, r.jsx)(o.P, u(l({}, O), {
       focusProps: l({
@@ -81,10 +81,10 @@ let d = i.forwardRef(function(e, t) {
       className: a.focusTarget,
       "aria-label": S,
       onClick: e => {
-        e.stopPropagation(), null == _ || _(e)
+        e.stopPropagation(), null == p || p(e)
       },
-      onKeyDown: g,
-      onFocus: m,
+      onKeyDown: m,
+      onFocus: g,
       onBlur: E,
       onMouseDown: b
     })), s]

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => g
+  ZP: () => m
 }), n(47120), n(301563);
 var r = n(192379),
   i = n(808629),
@@ -64,11 +64,11 @@ function f(e) {
   }
 }
 
-function _(e, t) {
+function p(e, t) {
   return null != t ? "".concat((0, a.qR)(e, t.join(d))) : e
 }
 
-function p(e, t) {
+function _(e, t) {
   return e.getElementById(t)
 }
 
@@ -76,18 +76,18 @@ function h(e) {
   return e.tabIndex >= 0
 }
 
-function g(e) {
+function m(e) {
   let {
     navId: t,
     items: n,
     initialFocusPath: s,
     onSelect: c,
-    enabled: g = !0,
-    closeMenu: m
-  } = e, E = r.useRef(g);
+    enabled: m = !0,
+    closeMenu: g
+  } = e, E = r.useRef(m);
   r.useLayoutEffect(() => {
-    E.current = g
-  }, [g]);
+    E.current = m
+  }, [m]);
   let [v, b] = r.useReducer(i.Z, {
     items: n,
     focusPath: s,
@@ -119,7 +119,7 @@ function g(e) {
     })
   })), R = r.useCallback(e => {
     if (!E.current) return;
-    e.key === o.R8.ESCAPE && null != m && (e.stopPropagation(), e.preventDefault(), m());
+    e.key === o.R8.ESCAPE && null != g && (e.stopPropagation(), e.preventDefault(), g());
     let n = f(e);
     switch (n) {
       case o.Us.NAVIGATE_UP:
@@ -139,10 +139,10 @@ function g(e) {
           c(O);
           return
         }
-        let i = p(null !== (r = e.target.ownerDocument) && void 0 !== r ? r : document, _(t, O));
+        let i = _(null !== (r = e.target.ownerDocument) && void 0 !== r ? r : document, p(t, O));
         null == i || i.click()
     }
-  }, [y, t, O, c, m]), P = r.useCallback(() => {
+  }, [y, t, O, c, g]), P = r.useCallback(() => {
     S || I(!0)
   }, [S]), D = r.useCallback(e => {
     e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && S && I(!1)

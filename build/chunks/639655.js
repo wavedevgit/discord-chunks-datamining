@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  I: () => p
+  I: () => _
 }), n(653041), n(411104), n(610885), n(126298), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(47120);
 var r = n(710845),
   i = n(358085),
@@ -151,7 +151,7 @@ d.push(class extends f {
     super(e), s(this, "_socketId", void 0), this._socketId = null
   }
 });
-class _ extends f {
+class p extends f {
   static canUse() {
     return !0
   }
@@ -168,10 +168,10 @@ class _ extends f {
   close() {}
 }
 
-function p(e) {
-  if (o.s.isDiscordGatewayPlaintextSet()) return new _(e);
+function _(e) {
+  if (o.s.isDiscordGatewayPlaintextSet()) return new p(e);
   for (var t of d)
     if (t.canUse()) return new t(e);
-  return new _(e)
+  return new p(e)
 }
-d.push(_)
+d.push(p)

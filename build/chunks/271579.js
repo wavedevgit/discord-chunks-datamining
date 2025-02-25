@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  WS: () => p,
-  ZP: () => g,
+  WS: () => _,
+  ZP: () => m,
   zS: () => h
 }), n(474991), n(398202), n(301563), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120);
 var r = n(264344),
@@ -32,7 +32,7 @@ let c = "com.discord",
   d = "com.hammerandchisel.discord",
   f = "https://discordapp.page.link";
 
-function _() {
+function p() {
   var e, t;
   let n = ["WebView", "(iPhone|iPod|iPad)(?!.*Safari/)"],
     r = RegExp("(".concat(n.join("|"), ")"), "ig"),
@@ -41,7 +41,7 @@ function _() {
   return (null === i() || void 0 === i() ? void 0 : null === (t = i().os) || void 0 === t ? void 0 : t.family) !== "iOS" || a
 }
 
-function p() {
+function _() {
   return (0, o.Z)()
 }
 
@@ -64,7 +64,7 @@ function h(e) {
   }
 }
 
-function g(e, t) {
+function m(e, t) {
   let {
     utmSource: n,
     androidFallbackLink: r,
@@ -74,11 +74,11 @@ function g(e, t) {
     let t = o[e];
     null != t && l.searchParams.set(e, t)
   }
-  let p = encodeURIComponent(l.toString()),
+  let _ = encodeURIComponent(l.toString()),
     h = encodeURIComponent((0, a.Z)()),
-    g = +!!_(),
-    m = null != r ? encodeURIComponent(r) : null,
+    m = +!!p(),
+    g = null != r ? encodeURIComponent(r) : null,
     E = null != i ? encodeURIComponent(i) : null,
-    v = "".concat(f, "/?link=").concat(p, "&utm_source=").concat(n, "&apn=").concat(c, "&isi=").concat(u, "&ibi=").concat(d, "&sd=").concat(h, "&efr=").concat(g);
-  return null != m && (v += "&afl=".concat(m)), null != E && (v += "&ifl=".concat(E)), v
+    v = "".concat(f, "/?link=").concat(_, "&utm_source=").concat(n, "&apn=").concat(c, "&isi=").concat(u, "&ibi=").concat(d, "&sd=").concat(h, "&efr=").concat(m);
+  return null != g && (v += "&afl=".concat(g)), null != E && (v += "&ifl=".concat(E)), v
 }

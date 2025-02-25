@@ -104,18 +104,18 @@ class _ {
         useOldIcon: N
       }
     }
-    let T = null === (t = E.messageReference) || void 0 === t ? void 0 : t.guild_id;
-    if (null == T) return {
+    let P = null === (t = E.messageReference) || void 0 === t ? void 0 : t.guild_id;
+    if (null == P) return {
       snapshotIndex: O,
       useOldIcon: N
     };
-    let P = null !== (d = y.getGuild(T)) && void 0 !== d ? d : x.getGuild(T);
-    return null == P ? {
+    let T = null !== (d = y.getGuild(P)) && void 0 !== d ? d : x.getGuild(P);
+    return null == T ? {
       snapshotIndex: O,
       useOldIcon: N
     } : {
       snapshotIndex: O,
-      footerInfo: g(P, I),
+      footerInfo: g(T, I),
       useOldIcon: N
     }
   }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(442837),
   i = n(570140),
@@ -25,14 +25,14 @@ function f() {
   return t
 }
 
-function _(e) {
+function p(e) {
   let {
     relationship: t
   } = e, n = a.Z.getVoiceStateForUser(t.id);
   return null != n && null != n.channelId && h(n.channelId, t.id)
 }
 
-function p(e) {
+function _(e) {
   let {
     voiceStates: t
   } = e, n = !1;
@@ -55,7 +55,7 @@ function h(e, t) {
     d = o.Z.isIgnored(t);
   return d && !u.has(t) ? (u.add(t), r = !0, n = !0) : d || (n = u.delete(t)), 0 === u.size && n ? delete c[e] : n && (c[e] = u), r && s.Z.handleBlockedOrIgnoredUserVoiceChannelJoin(e, t), n
 }
-class g extends r.ZP.Store {
+class m extends r.ZP.Store {
   initialize() {
     this.waitFor(o.Z, a.Z)
   }
@@ -68,12 +68,12 @@ class g extends r.ZP.Store {
     return null !== (t = c[e]) && void 0 !== t ? t : u
   }
 }
-let m = new g(i.Z, {
+let g = new m(i.Z, {
   CONNECTION_OPEN: d,
   LOGOUT: d,
   OVERLAY_INITIALIZE: f,
-  VOICE_STATE_UPDATES: p,
-  RELATIONSHIP_ADD: _,
-  RELATIONSHIP_REMOVE: _,
-  RELATIONSHIP_UPDATE: _
+  VOICE_STATE_UPDATES: _,
+  RELATIONSHIP_ADD: p,
+  RELATIONSHIP_REMOVE: p,
+  RELATIONSHIP_UPDATE: p
 })

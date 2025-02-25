@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  closeUserProfileModal: () => m,
-  openUserProfileModal: () => g
+  closeUserProfileModal: () => g,
+  openUserProfileModal: () => m
 });
 var r = n(259443),
   i = n(481060),
@@ -14,8 +14,8 @@ var r = n(259443),
   u = n(9161),
   d = n(456644),
   f = n(484459);
-let _ = (0, i.pxk)(i.EFr.SIZE_120),
-  p = new r.Yd("UserProfileModalActionCreators"),
+let p = (0, i.pxk)(i.EFr.SIZE_120),
+  _ = new r.Yd("UserProfileModalActionCreators"),
   h = async e => {
     let t = l.default.getId() === e,
       {
@@ -31,10 +31,10 @@ let _ = (0, i.pxk)(i.EFr.SIZE_120),
     if (n || r || t) try {
       await (0, s.Z)(e)
     } catch (t) {
-      p.log("Failed to fetch content inventory outbox for ".concat(e, ":"), t)
+      _.log("Failed to fetch content inventory outbox for ".concat(e, ":"), t)
     }
   };
-async function g(e) {
+async function m(e) {
   let {
     userId: t,
     guildId: n,
@@ -44,26 +44,26 @@ async function g(e) {
     sessionId: l,
     joinRequestId: u,
     section: d,
-    subsection: p,
-    friendToken: g,
-    showGuildProfile: m,
+    subsection: _,
+    friendToken: m,
+    showGuildProfile: g,
     analyticsLocation: E,
     sourceAnalyticsLocations: v,
     appContext: b
   } = e, y = c.default.getUser(t);
   h(t), null == y ? await (0, a.In)(t, {
     type: "modal",
-    guildId: m && null != n ? n : void 0,
+    guildId: g && null != n ? n : void 0,
     withMutualGuilds: !0,
     withMutualFriends: !0,
-    friendToken: g,
+    friendToken: m,
     joinRequestId: u
-  }) : (0, f.Z)(y.id, y.getAvatarURL(void 0, _), {
+  }) : (0, f.Z)(y.id, y.getAvatarURL(void 0, p), {
     type: "modal",
-    guildId: m && null != n ? n : void 0,
+    guildId: g && null != n ? n : void 0,
     withMutualGuilds: !0,
     withMutualFriends: !0,
-    friendToken: g,
+    friendToken: m,
     joinRequestId: u
   }), o.Z.dispatch({
     type: "USER_PROFILE_MODAL_OPEN",
@@ -74,16 +74,16 @@ async function g(e) {
     roleId: null != s ? s : void 0,
     sessionId: null != l ? l : void 0,
     section: d,
-    subsection: p,
-    friendToken: g,
-    showGuildProfile: m,
+    subsection: _,
+    friendToken: m,
+    showGuildProfile: g,
     analyticsLocation: E,
     sourceAnalyticsLocations: v,
     appContext: b
   })
 }
 
-function m() {
+function g() {
   o.Z.dispatch({
     type: "USER_PROFILE_MODAL_CLOSE"
   })

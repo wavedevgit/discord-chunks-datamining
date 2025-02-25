@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  cp: () => m,
-  eI: () => _
+  cp: () => g,
+  eI: () => p
 }), n(411104);
 var r = n(544891),
   i = n(570140),
@@ -20,7 +20,7 @@ async function f() {
     rejectWithError: !1
   })
 }
-async function _() {
+async function p() {
   try {
     let {
       enabledPaymentTypes: e
@@ -45,7 +45,7 @@ async function _() {
     i.Z.dispatch({
       type: "ADYEN_CREATE_CLIENT_SUCCESS",
       client: o
-    }), p(o)
+    }), _(o)
   } catch (e) {
     (0, l.q2)(e), i.Z.dispatch({
       type: "ADYEN_CREATE_CLIENT_FAIL"
@@ -53,9 +53,9 @@ async function _() {
   }
 }
 
-function p(e) {
+function _(e) {
   if (null != c.Z.cashAppPayComponent) {
-    g(), h();
+    m(), h();
     return
   }
   let t = e.create("cashapp", {
@@ -100,12 +100,12 @@ function h() {
   null === (e = c.Z.cashAppPayComponent) || void 0 === e || e.mount("#".concat(s.F))
 }
 
-function g() {
+function m() {
   var e;
   null === (e = c.Z.cashAppPayComponent) || void 0 === e || e.unmount()
 }
 
-function m() {
+function g() {
   let e = c.Z.cashAppPayComponent;
   if (null == e) throw Error("Adyen CashAppPay component must be created before submitting.");
   e.submit()

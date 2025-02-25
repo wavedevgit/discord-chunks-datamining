@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(200651),
   i = n(192379),
@@ -34,11 +34,11 @@ function f(e) {
   return e
 }
 
-function _(e) {
+function p(e) {
   let {
     product: t,
     onSecondaryClick: d
-  } = e, _ = i.useCallback(() => {
+  } = e, p = i.useCallback(() => {
     null != t && (0, a.ZDy)(async () => {
       let {
         default: e
@@ -53,18 +53,18 @@ function _(e) {
         onSecondaryClick: d
       }, n))
     })
-  }, [t, d]), p = i.useMemo(() => {
+  }, [t, d]), _ = i.useMemo(() => {
     switch (null == t ? void 0 : t.type) {
       case o.Z.AVATAR_DECORATION:
         return c.NW.format(c.t["aFR/EB"], {
-          onClick: _
+          onClick: p
         });
       case o.Z.PROFILE_EFFECT:
         return c.NW.format(c.t.eWNOND, {
-          onClick: _
+          onClick: p
         })
     }
-  }, [null == t ? void 0 : t.type, _]);
+  }, [null == t ? void 0 : t.type, p]);
   return (0, r.jsxs)("div", {
     className: u.nitroUpsellContainer,
     children: [(0, r.jsx)(a.SrA, {
@@ -74,7 +74,7 @@ function _(e) {
     }), (0, r.jsx)(a.Text, {
       className: u.nitroText,
       variant: "text-md/medium",
-      children: p
+      children: _
     })]
   })
 }

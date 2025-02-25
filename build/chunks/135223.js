@@ -47,23 +47,23 @@ function c(e, t, n) {
           anchor: (0, r.t)(e, c, d, n.start),
           focus: (0, r.t)(e, c, d, n.start + n.text.length)
         },
-        _ = i.bN.nodes(e, {
+        p = i.bN.nodes(e, {
           at: l,
           mode: "lowest",
           voids: !1
         }),
-        p = {};
+        _ = {};
       for (let e of n.attributes)
-        if (p[e] = !0, "syntaxBefore" === e && null != s)
-          for (let e of s.attributes) p["before_".concat(e)] = !0;
+        if (_[e] = !0, "syntaxBefore" === e && null != s)
+          for (let e of s.attributes) _["before_".concat(e)] = !0;
         else if ("syntaxAfter" === e && null != o)
-        for (let e of o.attributes) p["after_".concat(e)] = !0;
-      for (let [t, n] of _) {
+        for (let e of o.attributes) _["after_".concat(e)] = !0;
+      for (let [t, n] of p) {
         let t = {
           anchor: i.bN.start(e, n),
           focus: i.bN.end(e, n)
         };
-        i.Jz.isBefore(t.anchor, l.anchor) && (t.anchor = l.anchor), i.Jz.isAfter(t.focus, l.focus) && (t.focus = l.focus), f.push(a({}, p, t))
+        i.Jz.isBefore(t.anchor, l.anchor) && (t.anchor = l.anchor), i.Jz.isAfter(t.focus, l.focus) && (t.focus = l.focus), f.push(a({}, _, t))
       }
     }
   }

@@ -16,7 +16,7 @@ var r = n(392711),
 n(682474);
 var f = n(981631);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,9 +24,9 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let p = 10,
+let _ = 10,
   h = 5;
-class g {
+class m {
   get(e) {
     return this._set.hasOwnProperty(e) || (this._set[e] = this._defaultValueFunc()), this._set[e]
   }
@@ -40,10 +40,10 @@ class g {
     return c.default.keys(this._set)[0]
   }
   constructor(e) {
-    _(this, "_set", void 0), _(this, "_defaultValueFunc", void 0), this._set = {}, this._defaultValueFunc = e
+    p(this, "_set", void 0), p(this, "_defaultValueFunc", void 0), this._set = {}, this._defaultValueFunc = e
   }
 }
-class m {
+class g {
   request(e, t) {
     this.requested.get(e).add(t)
   }
@@ -70,10 +70,10 @@ class m {
     0 === this.requested.get(e).size && this.requested.delete(e)
   }
   constructor() {
-    _(this, "requested", void 0), this.requested = new g(() => new Set)
+    p(this, "requested", void 0), this.requested = new m(() => new Set)
   }
 }
-let E = new m,
+let E = new g,
   v = null;
 
 function b(e, t) {
@@ -103,7 +103,7 @@ function O(e, t) {
 }
 
 function S(e) {
-  O(e, (0, u.U)(e.id).slice(0, p))
+  O(e, (0, u.U)(e.id).slice(0, _))
 }
 
 function I(e, t) {
@@ -121,7 +121,7 @@ async function T() {
   }
 }
 async function N(e) {
-  let t = E.getNextBatch(e, p);
+  let t = E.getNextBatch(e, _);
   try {
     var n;
     if (0 === t.length) return;

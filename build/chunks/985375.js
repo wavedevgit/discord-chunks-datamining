@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  HI: () => _,
+  HI: () => p,
   gG: () => f,
-  hb: () => p
+  hb: () => _
 }), n(978209);
 var r = n(192379),
   i = n(392711),
@@ -55,7 +55,7 @@ function f() {
   return null !== (t = null === (e = (0, a.D)().favoriteGifs) || void 0 === e ? void 0 : e.gifs) && void 0 !== t ? t : d
 }
 
-function _(e) {
+function p(e) {
   let t = f();
   return r.useMemo(() => o()(t).map((t, n) => {
     var r;
@@ -66,6 +66,6 @@ function _(e) {
   }).sortBy("order").reverse().value(), [t, e])
 }
 
-function p(e) {
+function _(e) {
   return null != f()[e]
 }

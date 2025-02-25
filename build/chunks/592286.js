@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   N4: () => h,
-  Pn: () => g,
-  RS: () => _,
-  Us: () => p,
+  Pn: () => m,
+  RS: () => p,
+  Us: () => _,
   X2: () => s,
   XN: () => c,
   au: () => d,
@@ -26,7 +26,7 @@ let i = new Set([r.QJ.TERMS]),
   u = 8,
   d = 150,
   f = 150,
-  _ = 1e3,
-  p = 300,
+  p = 1e3,
+  _ = 300,
   h = "Membership Gating",
-  g = "in-app-member-verification"
+  m = "in-app-member-verification"

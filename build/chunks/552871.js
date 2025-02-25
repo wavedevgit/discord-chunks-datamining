@@ -35,7 +35,7 @@ async function f(e, t) {
       extraInfo: t,
       mediaEngineState: a.Z.getState()
     },
-    _ = [...r.map(e => ({
+    p = [...r.map(e => ({
       name: e.name,
       file: e,
       filename: e.name
@@ -44,12 +44,12 @@ async function f(e, t) {
       filename: "media_engine_state.json",
       file: new Blob([JSON.stringify(f, void 0, 2)])
     }],
-    p = new Set;
+    _ = new Set;
   try {
     n = await i.tn.post({
       url: c.ANM.DEBUG_LOGS(c.GU0.RTC),
-      attachments: [..._.map(e => {
-        let t = d(p, e.name);
+      attachments: [...p.map(e => {
+        let t = d(_, e.name);
         return {
           name: t,
           file: e.file,
@@ -62,6 +62,6 @@ async function f(e, t) {
     if (429 === e.status) throw new o.n0(o.cz.PROGRESS);
     throw u.error("Debug log upload error: status: ".concat(e.status, ", message: ").concat(e.message)), new o.n0(o.cz.UPLOAD)
   }
-  if ("success_count" in n.body && n.body.success_count !== _.length) throw u.error("Debug log upload: stored files ".concat(n.body.success_count, " !== ").concat(_.length)), new o.n0(o.cz.GENERAL);
+  if ("success_count" in n.body && n.body.success_count !== p.length) throw u.error("Debug log upload: stored files ".concat(n.body.success_count, " !== ").concat(p.length)), new o.n0(o.cz.GENERAL);
   if ("store_success" in n.body && !n.body.store_success || "id_match" in n.body && !n.body.id_match || "all_success" in n.body && !n.body.all_success) throw u.error("Debug log upload: store_success: ".concat(n.body.store_success, " / ") + "id_match: ".concat(n.body.id_match, " / ") + "all_success: ".concat(n.body.all_success)), new o.n0(o.cz.GENERAL)
 }

@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(826298),
   f = n(592955);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -47,13 +47,13 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -80,7 +80,7 @@ function S(e) {
     className: t,
     channel: n,
     sections: o,
-    activeCategoryIndex: _,
+    activeCategoryIndex: p,
     filteredSectionId: h,
     onSectionClick: E,
     applicationCommandListRef: S
@@ -100,7 +100,7 @@ function S(e) {
       v = (0, r.jsx)(a, {
         channel: n,
         section: i,
-        isSelected: null != h ? i.id === h : _ === t,
+        isSelected: null != h ? i.id === h : p === t,
         padding: l,
         width: c,
         height: c,
@@ -115,8 +115,8 @@ function S(e) {
         children: e => {
           var {
             onClick: t
-          } = e, n = m(e, ["onClick"]);
-          return (0, r.jsx)(s.P3F, g(p({
+          } = e, n = g(e, ["onClick"]);
+          return (0, r.jsx)(s.P3F, m(_({
             "aria-label": i.name,
             onClick: () => {
               E(i), null == t || t()
@@ -129,7 +129,7 @@ function S(e) {
         className: f.builtInSeparator
       }) : null]
     }, i.id)
-  }, [_, n, E, o, h]);
+  }, [p, n, E, o, h]);
   return 0 === o.length ? null : (0, r.jsx)("div", {
     className: a()(t, f.wrapper),
     children: (0, r.jsx)(c.Z, {

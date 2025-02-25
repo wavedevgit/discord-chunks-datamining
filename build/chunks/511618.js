@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -13,10 +13,10 @@ var r = n(200651),
   u = n(981631),
   d = n(185923),
   f = n(474936),
-  _ = n(388032),
-  p = n(568175);
+  p = n(388032),
+  _ = n(568175);
 let h = 3,
-  g = e => {
+  m = e => {
     let {
       emojis: t
     } = e, {
@@ -28,16 +28,16 @@ let h = 3,
         location_stack: n
       })
     }, [n]);
-    let g = (0, r.jsx)("div", {
-      className: p.emojis,
+    let m = (0, r.jsx)("div", {
+      className: _.emojis,
       children: t.slice(0, h).map((e, t) => {
         if (null == e.id) return null;
         let n = 2 === t,
           i = (0, r.jsx)("div", {
-            className: p.emojiBackground,
+            className: _.emojiBackground,
             children: (0, r.jsx)("img", {
               alt: e.name,
-              className: p.emoji,
+              className: _.emoji,
               src: c.ZP.getEmojiURL({
                 id: e.id,
                 animated: e.animated,
@@ -46,22 +46,22 @@ let h = 3,
             })
           }, e.id);
         return n ? i : (0, r.jsx)(s.ZP, {
-          className: p.emojiMask,
+          className: _.emojiMask,
           mask: s.ZP.Masks.AUTOCOMPLETE_EMOJI_UPSELL_EMOJI,
           children: i
         }, e.id)
       })
     });
     return (0, r.jsxs)(a.RX, {
-      className: p.upsell,
+      className: _.upsell,
       children: [(0, r.jsx)(a.z5, {
         children: (0, r.jsx)(a.BR, {
-          children: _.NW.format(_.t["uEky4+"], {
+          children: p.NW.format(p.t["uEky4+"], {
             count: t.length
           })
         })
       }), (0, r.jsx)(a.dY, {
-        children: g
+        children: m
       })]
     })
   }

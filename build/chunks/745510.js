@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  d: () => g,
+  d: () => m,
   h: () => h
 });
 var r = n(200651),
@@ -49,8 +49,8 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = 20,
-  p = {
+let p = 20,
+  _ = {
     confettiCanvas: null,
     cannon: null,
     createConfetti: () => void 0,
@@ -60,21 +60,21 @@ let _ = 20,
     addClickListener: () => l.dG4,
     removeClickListener: l.dG4
   },
-  h = i.createContext(p);
+  h = i.createContext(_);
 
-function g(e) {
+function m(e) {
   let {
     children: t,
     confettiCanvas: n,
     spriteCanvas: l,
     baseConfig: c,
     addClickListener: d,
-    removeClickListener: g
-  } = e, m = (0, o.uR)(n, l), E = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), v = i.useMemo(() => E ? p : {
+    removeClickListener: m
+  } = e, g = (0, o.uR)(n, l), E = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), v = i.useMemo(() => E ? _ : {
     confettiCanvas: n,
-    cannon: m,
-    createConfetti: (e, t) => m.createConfetti(u({}, c, e), t),
-    createConfettiAt: (e, t, n, r) => m.createConfetti(u(f(u({}, c), {
+    cannon: g,
+    createConfetti: (e, t) => g.createConfetti(u({}, c, e), t),
+    createConfettiAt: (e, t, n, r) => g.createConfetti(u(f(u({}, c), {
       position: {
         type: "static",
         value: {
@@ -84,14 +84,14 @@ function g(e) {
       }
     }), n), r),
     createMultipleConfetti: function(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _,
+      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : p,
         n = arguments.length > 2 ? arguments[2] : void 0;
-      return m.createMultipleConfetti(u({}, c, e), t, n)
+      return g.createMultipleConfetti(u({}, c, e), t, n)
     },
     createMultipleConfettiAt: function(e, t, n) {
-      let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : _,
+      let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : p,
         i = arguments.length > 4 ? arguments[4] : void 0;
-      return m.createMultipleConfetti(u(f(u({}, c), {
+      return g.createMultipleConfetti(u(f(u({}, c), {
         position: {
           type: "static",
           value: {
@@ -102,8 +102,8 @@ function g(e) {
       }), n), r, i)
     },
     addClickListener: d,
-    removeClickListener: g
-  }, [d, c, m, n, E, g]);
+    removeClickListener: m
+  }, [d, c, g, n, E, m]);
   return (0, r.jsx)(h.Provider, {
     value: v,
     children: t

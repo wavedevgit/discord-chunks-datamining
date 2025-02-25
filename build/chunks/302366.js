@@ -24,7 +24,7 @@ e.exports = function(e) {
           d = a.offsetWidth,
           f = a.offsetHeight;
 
-        function _() {
+        function p() {
           function n() {
             if ("static" === u.position) {
               a.style.setProperty("position", "relative", e.important ? "important" : "");
@@ -63,7 +63,7 @@ e.exports = function(e) {
         i(a).startSize = {
           width: d,
           height: f
-        }, n ? n.add(_) : _()
+        }, n ? n.add(p) : p()
       }
       s || (s = a, a = e, e = null), (e = e || {}).debug, r.isIE(8) ? s(a) : l(a, s)
     },

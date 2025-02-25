@@ -21,7 +21,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,12 +46,12 @@ function p(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = !1,
-  m = null,
+let m = !1,
+  g = null,
   E = !1,
   v = {};
 
@@ -59,7 +59,7 @@ function b(e) {
   let {
     assets: t
   } = e;
-  v = t.reduce((e, t) => h(_({}, e), {
+  v = t.reduce((e, t) => h(p({}, e), {
     [t.id]: t
   }), {})
 }
@@ -68,7 +68,7 @@ function y(e) {
   let {
     videoFilterAsset: t
   } = e;
-  v = h(_({}, v), {
+  v = h(p({}, v), {
     [t.id]: t
   })
 }
@@ -77,7 +77,7 @@ function O(e) {
   let {
     videoFilterAsset: t
   } = e;
-  v = _({}, v), delete v[t.id]
+  v = p({}, v), delete v[t.id]
 }
 
 function S(e) {
@@ -99,11 +99,11 @@ function T(e) {
   let {
     settings: t
   } = e;
-  o.TO.CAMERA_BACKGROUND_LIVE in t && (g = !0)
+  o.TO.CAMERA_BACKGROUND_LIVE in t && (m = !0)
 }
 
 function N() {
-  m !== c.Z.getVoiceChannelId() && (E = !1), S() && (E = !0), m = c.Z.getVoiceChannelId()
+  g !== c.Z.getVoiceChannelId() && (E = !1), S() && (E = !0), g = c.Z.getVoiceChannelId()
 }
 class A extends(r = i.ZP.Store) {
   initialize() {
@@ -113,7 +113,7 @@ class A extends(r = i.ZP.Store) {
     return v
   }
   get hasBeenApplied() {
-    return g
+    return m
   }
   get hasUsedBackgroundInCall() {
     return E

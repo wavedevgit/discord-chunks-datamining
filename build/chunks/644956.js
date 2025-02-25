@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(442837),
   d = n(481060),
   f = n(239091),
-  _ = n(276264),
-  p = n(493773),
+  p = n(276264),
+  _ = n(493773),
   h = n(607070),
-  g = n(100527),
-  m = n(906732),
+  m = n(100527),
+  g = n(906732),
   E = n(82295),
   v = n(818083),
   b = n(14263),
@@ -114,7 +114,7 @@ function U(e) {
       let {
         isShown: u
       } = o;
-      return (0, r.jsx)(_.Z, x({
+      return (0, r.jsx)(p.Z, x({
         selected: u,
         colorString: t.colorString,
         colorRoleName: a.name,
@@ -149,7 +149,7 @@ function G(e) {
     guildId: o,
     channelId: a
   } = e, s = i.useRef(null);
-  (0, p.ZP)(() => {
+  (0, _.ZP)(() => {
     var e;
     return null === (e = t.setPopoutRef) || void 0 === e || e.call(t, s.current), () => {
       var e;
@@ -161,7 +161,7 @@ function G(e) {
       var e;
       return null === (e = A.Z.getGuild(o)) || void 0 === e ? void 0 : e.getEveryoneRoleId()
     }, [o]),
-    _ = (0, u.Wu)([N.ZP, C.default], () => {
+    p = (0, u.Wu)([N.ZP, C.default], () => {
       let e = N.ZP.getMembers(o),
         t = null == n || n === f ? e : e.filter(e => e.roles.includes(n));
       return l()(t).filter(e => null != C.default.getUser(e.userId)).sortBy(e => {
@@ -173,17 +173,17 @@ function G(e) {
       let e = null != n ? n : f;
       return null == e ? null : A.Z.getRole(o, e)
     }, [o, n, f]),
-    g = null == n ? null : null == c ? void 0 : c[n],
-    m = i.useMemo(() => null != h ? _.map(e => (0, r.jsx)(U, {
+    m = null == n ? null : null == c ? void 0 : c[n],
+    g = i.useMemo(() => null != h ? p.map(e => (0, r.jsx)(U, {
       member: e,
       guildId: o,
       channelId: a,
       role: h
-    }, e.userId)) : [], [a, o, h, _]);
+    }, e.userId)) : [], [a, o, h, p]);
   if (null == h) return null;
-  let v = null == g ? h.name : P.NW.formatToPlainString(P.t.CuAQkJ, {
+  let v = null == m ? h.name : P.NW.formatToPlainString(P.t.CuAQkJ, {
     title: h.name,
-    count: g
+    count: m
   });
   return (0, r.jsx)("div", j(x({
     className: D.rolePopout,
@@ -195,16 +195,16 @@ function G(e) {
         className: D.roleHeader,
         "aria-label": P.NW.formatToPlainString(P.t.UaqbkZ, {
           title: h.name,
-          count: m.length
+          count: g.length
         }),
         children: (0, r.jsx)("span", {
           "aria-hidden": !0,
           children: v
         })
-      }), m, null == g || g <= m.length ? null : (0, r.jsx)(E.Z, {
+      }), g, null == m || m <= g.length ? null : (0, r.jsx)(E.Z, {
         className: D.roleHeader,
         children: P.NW.formatToPlainString(P.t["9oMmZG"], {
-          count: g - m.length
+          count: m - g.length
         })
       })]
     })
@@ -221,10 +221,10 @@ function B(e) {
     children: l,
     inlinePreview: f = !1
   } = e, {
-    analyticsLocations: _
-  } = (0, m.ZP)(g.Z.ROLE_MENTION), p = (0, u.e7)([h.Z], () => h.Z.roleStyle), E = null != t && 0 !== t && !f, v = E && "dot" === p, b = e => (0, r.jsxs)(O.Z, j(x({
+    analyticsLocations: p
+  } = (0, g.ZP)(m.Z.ROLE_MENTION), _ = (0, u.e7)([h.Z], () => h.Z.roleStyle), E = null != t && 0 !== t && !f, v = E && "dot" === _, b = e => (0, r.jsxs)(O.Z, j(x({
     className: a()(D.roleMention),
-    color: "username" === p && E ? t : null
+    color: "username" === _ && E ? t : null
   }, e), {
     children: [v && (0, r.jsx)(d.FhE, {
       color: (0, c.Rf)(t),
@@ -239,11 +239,11 @@ function B(e) {
   }, {
     autoTrackExposure: !1
   });
-  return !S || f || null == i || null == s || null == n && "@everyone" !== o ? (0, r.jsx)(m.Gt, {
-    value: _,
+  return !S || f || null == i || null == s || null == n && "@everyone" !== o ? (0, r.jsx)(g.Gt, {
+    value: p,
     children: b()
-  }) : (0, r.jsx)(m.Gt, {
-    value: _,
+  }) : (0, r.jsx)(g.Gt, {
+    value: p,
     children: (0, r.jsx)(d.yRy, {
       preload: async () => {
         null != n && await (0, y.H)(s, n)

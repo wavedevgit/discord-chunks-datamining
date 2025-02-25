@@ -14,11 +14,11 @@ var i = n(120356),
   u = n(833664),
   d = n(420660),
   f = n(100527),
-  _ = n(906732),
-  p = n(379357),
+  p = n(906732),
+  _ = n(379357),
   h = n(358696),
-  g = n(649700),
-  m = n(810568),
+  m = n(649700),
+  g = n(810568),
   E = n(168524),
   v = n(769654),
   b = n(960870),
@@ -83,19 +83,19 @@ function K(e) {
     onClose: J
   } = e, {
     analyticsLocations: $
-  } = (0, _.ZP)(f.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
+  } = (0, p.ZP)(f.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     profileType: ee
   } = (0, C.z)(), et = {
     [H.fullSize]: ee === B.y0.FULL_SIZE
   }, {
     interactionSource: en,
     interactionSourceId: er
-  } = (0, T.Xo)(), ei = (0, g.Z)({
+  } = (0, T.Xo)(), ei = (0, m.Z)({
     activity: W,
     user: n
   }), eo = (0, E.Z)(Y({
     location: "UserProfileActivityCard",
-    source: m.m1.UserProfile,
+    source: g.m1.UserProfile,
     trackEntryPointImpression: !0
   }, (0, G.nK)({
     user: n,
@@ -113,7 +113,7 @@ function K(e) {
   }), el = (0, O.Z)(W), {
     largeImage: ec,
     smallImage: eu
-  } = (0, p.FO)(W, K), ed = (0, a.EQ)(W).when(u.Z, () => eo).when(l.Z, () => {
+  } = (0, _.FO)(W, K), ed = (0, a.EQ)(W).when(u.Z, () => eo).when(l.Z, () => {
     if (n.id !== i.id) return () => (0, k.s)({
       activity: W,
       user: n,
@@ -138,7 +138,7 @@ function K(e) {
         }), ed(e)
       }
     })
-  }, e_ = () => {
+  }, ep = () => {
     var e;
     return (0, d.Z)(W) && null != q ? (0, r.jsxs)("div", {
       className: H.voiceChannelText,
@@ -157,7 +157,7 @@ function K(e) {
       variant: "heading-sm/semibold",
       text: null !== (e = W.details) && void 0 !== e ? e : W.name
     })
-  }, ep = () => (0, d.Z)(W) && null != z ? (0, r.jsx)(x.Z, {
+  }, e_ = () => (0, d.Z)(W) && null != z ? (0, r.jsx)(x.Z, {
     variant: "text-xs/normal",
     text: Z.NW.formatToPlainString(Z.t["hq/Qzc"], {
       guildName: z.name
@@ -175,11 +175,11 @@ function K(e) {
     variant: "text-xs/normal"
   }), eh = () => {
     var e;
-    return W.type === F.IIU.WATCHING ? null : (0, u.Z)(W) ? eg() : (0, r.jsx)(x.Z, {
+    return W.type === F.IIU.WATCHING ? null : (0, u.Z)(W) ? em() : (0, r.jsx)(x.Z, {
       text: null === (e = W.assets) || void 0 === e ? void 0 : e.large_text,
       variant: "text-xs/normal"
     })
-  }, eg = () => {
+  }, em = () => {
     var e, t, n, i;
     return (null === (e = W.party) || void 0 === e ? void 0 : e.size) == null && W.application_id === V.Zc ? (0, r.jsxs)("div", {
       className: H.gameState,
@@ -211,7 +211,7 @@ function K(e) {
       variant: "text-xs/normal",
       text: W.state
     }) : null
-  }, em = () => {
+  }, eg = () => {
     if (!(0, I.Z)(W)) return null;
     let {
       start: e,
@@ -222,7 +222,7 @@ function K(e) {
       end: t
     })
   }, eE = () => null == ed ? (0, r.jsxs)("div", {
-    children: [e_(), ep(), eh()]
+    children: [ep(), e_(), eh()]
   }) : (0, r.jsxs)(s.P3F, {
     className: H.clickableText,
     onClick: e => {
@@ -230,7 +230,7 @@ function K(e) {
         action: "PRESS_TEXT"
       }), ed(e)
     },
-    children: [e_(), ep(), eh()]
+    children: [ep(), e_(), eh()]
   }), ev = () => null == z || null == q ? null : (0, r.jsx)(M.Z, {
     user: n,
     guild: z,
@@ -249,7 +249,7 @@ function K(e) {
   if (null === ee) return null;
   let ey = null !== (t = W.application_id) && void 0 !== t ? t : W.name,
     eO = en === B.n_.ACTIVITY && er === ey;
-  return (0, r.jsx)(_.Gt, {
+  return (0, r.jsx)(p.Gt, {
     value: $,
     children: (0, r.jsx)(R.Z, {
       sourceType: B.n_.ACTIVITY,
@@ -297,7 +297,7 @@ function K(e) {
                     user: n,
                     activity: W,
                     className: H.badges
-                  }), em()]
+                  }), eg()]
                 }), ee === B.y0.FULL_SIZE && eb()]
               }), ev()]
             }), ee !== B.y0.FULL_SIZE && eb()]

@@ -43,7 +43,7 @@ async function f(e, t, n) {
   }), Promise.resolve()), t
 }
 
-function _(e, t) {
+function p(e, t) {
   let n = t.style;
   if (!n) return;
   let r = window.getComputedStyle(e);
@@ -56,7 +56,7 @@ function _(e, t) {
   })
 }
 
-function p(e, t) {
+function _(e, t) {
   (0, i.oY)(e, HTMLTextAreaElement) && (t.innerHTML = e.value), (0, i.oY)(e, HTMLInputElement) && t.setAttribute("value", e.value)
 }
 
@@ -67,10 +67,10 @@ function h(e, t) {
   }
 }
 
-function g(e, t) {
-  return (0, i.oY)(t, Element) && (_(e, t), (0, r.b)(e, t), p(e, t), h(e, t)), t
+function m(e, t) {
+  return (0, i.oY)(t, Element) && (p(e, t), (0, r.b)(e, t), _(e, t), h(e, t)), t
 }
-async function m(e, t) {
+async function g(e, t) {
   let n = e.querySelectorAll ? e.querySelectorAll("use") : [];
   if (0 === n.length) return e;
   let r = {};
@@ -95,5 +95,5 @@ async function m(e, t) {
   return e
 }
 async function E(e, t, n) {
-  return n || !t.filter || t.filter(e) ? Promise.resolve(e).then(e => u(e, t)).then(n => f(e, n, t)).then(t => g(e, t)).then(e => m(e, t)) : null
+  return n || !t.filter || t.filter(e) ? Promise.resolve(e).then(e => u(e, t)).then(n => f(e, n, t)).then(t => m(e, t)).then(e => g(e, t)) : null
 }

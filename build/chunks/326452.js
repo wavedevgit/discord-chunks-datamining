@@ -12,9 +12,9 @@ var r, i = n(200651),
   u = n(922770),
   d = n(481060),
   f = n(388032),
-  _ = n(868594);
+  p = n(868594);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,13 +30,13 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,8 +47,8 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -71,9 +71,9 @@ function v(e, t) {
   return i
 }
 let b = Object.freeze({
-    SMALL: _.small,
-    MEDIUM: _.medium,
-    LARGE: _.large
+    SMALL: p.small,
+    MEDIUM: p.medium,
+    LARGE: p.large
   }),
   y = e => {
     let {
@@ -84,8 +84,8 @@ let b = Object.freeze({
       size: c = b.SMALL
     } = e;
     return (0, i.jsx)(l.P, {
-      className: s()(r, _.iconLayout, c, {
-        [_.pointer]: t
+      className: s()(r, p.iconLayout, c, {
+        [p.pointer]: t
       }),
       onClick: e => {
         e.stopPropagation(), null != n && n(e)
@@ -96,23 +96,23 @@ let b = Object.freeze({
         e.preventDefault(), e.stopPropagation()
       },
       children: (0, i.jsx)("div", {
-        className: _.iconContainer,
+        className: p.iconContainer,
         children: a ? (0, i.jsx)(u.$, {
           type: u.$.Type.SPINNING_CIRCLE,
-          className: s()(_.icon, _.visible)
+          className: s()(p.icon, p.visible)
         }) : (0, i.jsxs)(o.Fragment, {
           children: [(0, i.jsx)(d._Ve, {
             size: "md",
             color: "currentColor",
-            className: s()(_.icon, {
-              [_.visible]: !t
+            className: s()(p.icon, {
+              [p.visible]: !t
             }),
             "aria-label": f.NW.string(f.t["5h0QOD"])
           }), (0, i.jsx)(d.Dio, {
             size: "md",
             color: "currentColor",
-            className: s()(_.clear, {
-              [_.visible]: t
+            className: s()(p.clear, {
+              [p.visible]: t
             }),
             "aria-label": f.NW.string(f.t.VkKicX)
           })]
@@ -145,8 +145,8 @@ class O extends(r = o.PureComponent) {
         iconClassName: l,
         onKeyDown: u,
         onKeyUp: d,
-        onKeyPress: p,
-        isLoading: g,
+        onKeyPress: _,
+        isLoading: m,
         size: v,
         disabled: b,
         onChange: O,
@@ -161,23 +161,23 @@ class O extends(r = o.PureComponent) {
     return (0, i.jsx)(c.t, {
       focusTarget: this.inputRef,
       ringTarget: this.containerRef,
-      children: (0, i.jsx)("div", m(h({
-        className: s()(o, _.container, v, {
-          [_.disabled]: b
+      children: (0, i.jsx)("div", g(h({
+        className: s()(o, p.container, v, {
+          [p.disabled]: b
         }),
         ref: this.containerRef
       }, R), {
         children: (0, i.jsxs)("div", {
-          className: _.inner,
-          children: [(0, i.jsx)("input", m(h({}, N), {
+          className: p.inner,
+          children: [(0, i.jsx)("input", g(h({}, N), {
             onFocus: I,
             onBlur: S,
-            className: _.input,
+            className: p.input,
             value: t,
             onChange: this.handleOnChange,
             onKeyDown: u,
             onKeyUp: d,
-            onKeyPress: p,
+            onKeyPress: _,
             placeholder: a,
             disabled: b,
             autoFocus: n,
@@ -189,14 +189,14 @@ class O extends(r = o.PureComponent) {
             hasContent: t.length > 0,
             onClear: r,
             className: l,
-            isLoading: g
+            isLoading: m
           })]
         })
       }))
     })
   }
   constructor(...e) {
-    super(...e), p(this, "inputRef", o.createRef()), p(this, "containerRef", o.createRef()), p(this, "handleOnChange", e => {
+    super(...e), _(this, "inputRef", o.createRef()), _(this, "containerRef", o.createRef()), _(this, "handleOnChange", e => {
       let {
         onChange: t
       } = this.props;
@@ -204,7 +204,7 @@ class O extends(r = o.PureComponent) {
     })
   }
 }
-p(O, "Sizes", b), p(O, "defaultProps", {
+_(O, "Sizes", b), _(O, "defaultProps", {
   size: b.SMALL,
   isLoading: !1,
   disabled: !1

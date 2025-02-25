@@ -28,8 +28,8 @@ var r = n(200651),
   C = n(594174),
   I = n(509545),
   S = n(55563),
-  T = n(199480),
-  P = n(626135),
+  P = n(199480),
+  T = n(626135),
   A = n(669079),
   w = n(74538),
   Z = n(296848),
@@ -335,7 +335,7 @@ class V extends i.Component {
         type: i,
         giftInfo: a
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), P.default.track(L.rMx.OPEN_MODAL, {
+      e.preventDefault(), e.stopPropagation(), T.default.track(L.rMx.OPEN_MODAL, {
         type: "gift_accept",
         location: B(U({}, this.analyticsLocation), {
           object: L.qAy.BUTTON_CTA
@@ -380,7 +380,7 @@ class V extends i.Component {
         children: [!t && D.eZ.includes(e.giftStyle) && (0, r.jsx)(x.Z, {
           className: W.snow,
           wind: 5
-        }), i && (0, r.jsx)(T.Z, {
+        }), i && (0, r.jsx)(P.Z, {
           className: W.headerIcon
         }), null != e.giftStyle && (0, r.jsx)(y.Z, {
           defaultAnimationState: e.redeemed ? b.SR.LOOP : b.SR.IDLE,

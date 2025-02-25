@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Iw: () => h,
-  On: () => p,
-  Yk: () => _,
+  On: () => _,
+  Yk: () => p,
   cQ: () => u,
   ev: () => c,
   m1: () => f,
@@ -67,7 +67,7 @@ let c = e => {
       is_suggestion: n
     })
   },
-  _ = (e, t, n) => {
+  p = (e, t, n) => {
     let i;
     let {
       sticker: s
@@ -82,7 +82,7 @@ let c = e => {
       query: t
     })
   },
-  p = e => {
+  _ = e => {
     let t;
     let {
       sticker: n,

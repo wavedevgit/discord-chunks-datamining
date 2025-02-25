@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r, i = n(442837),
   o = n(570140),
@@ -58,7 +58,7 @@ function f(e) {
   } = e;
   delete l[t][n]
 }
-class _ extends(r = i.ZP.Store) {
+class p extends(r = i.ZP.Store) {
   getResults(e, t) {
     if (null == e || null == t) return null;
     let n = l[e];
@@ -68,8 +68,8 @@ class _ extends(r = i.ZP.Store) {
     return c
   }
 }
-s(_, "displayName", "IntegrationQueryStore");
-let p = new _(o.Z, {
+s(p, "displayName", "IntegrationQueryStore");
+let _ = new p(o.Z, {
   INTEGRATION_QUERY: u,
   INTEGRATION_QUERY_SUCCESS: d,
   INTEGRATION_QUERY_FAILURE: f

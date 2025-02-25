@@ -23,15 +23,15 @@ function d(e) {
     onRequestClose: l,
     position: d,
     align: f,
-    positionRef: _,
-    children: p
+    positionRef: p,
+    children: _
   } = e, h = i.useCallback(e => {
     null != e && (n(e), l())
   }, [l, n]);
   return (0, r.jsx)(o.yRy, {
     shouldShow: s,
     position: d,
-    overridePositionRef: _,
+    overridePositionRef: p,
     align: f,
     onRequestClose: l,
     renderPopout: e => {
@@ -47,6 +47,6 @@ function d(e) {
         includeCreateEmojiButton: !1
       })
     },
-    children: p
+    children: _
   })
 }

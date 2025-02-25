@@ -20,17 +20,17 @@ function c(e) {
     size: u = 20,
     enableTooltip: d = !0,
     enableHeight: f = !0,
-    onClick: _
+    onClick: p
   } = e;
   if (null == n && null == i) return null;
-  let p = () => {
+  let _ = () => {
     let e = (0, r.jsx)("img", {
       alt: "",
       "aria-label": s.NW.formatToPlainString(s.t["9+YWrK"], {
         name: c
       }),
       className: o()(l.roleIcon, t, {
-        [l.clickable]: null != _
+        [l.clickable]: null != p
       }),
       height: f ? u : void 0,
       src: n,
@@ -40,18 +40,18 @@ function c(e) {
       alt: "",
       "aria-label": i.allNamesString,
       className: o()(l.roleIcon, t, {
-        [l.clickable]: null != _
+        [l.clickable]: null != p
       }),
       height: f ? u : void 0,
       src: i.url,
       width: u
-    })), null == _) ? (0, r.jsx)(a.tEY, {
+    })), null == p) ? (0, r.jsx)(a.tEY, {
       offset: {
         left: 5
       },
       children: e
     }) : (0, r.jsx)(a.P3F, {
-      onClick: _,
+      onClick: p,
       tag: "span",
       focusProps: {
         offset: {
@@ -66,6 +66,6 @@ function c(e) {
     "aria-label": !1,
     shouldShow: d,
     element: "span",
-    children: p()
+    children: _()
   })
 }

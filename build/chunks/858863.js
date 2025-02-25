@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(312089),
   i = n(910974),
@@ -72,4 +72,4 @@ var s = n(192379),
     }, t
   }(s.Component);
 f.propTypes = {}, f.defaultProps = d;
-let _ = f
+let p = f

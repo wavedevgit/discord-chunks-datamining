@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B_: () => _,
+  B_: () => p,
   Lm: () => c,
   Ol: () => u,
   P4: () => d,
-  Tk: () => g,
+  Tk: () => m,
   cO: () => f,
   cj: () => a,
   qi: () => h,
-  qu: () => p
+  qu: () => _
 }), n(301563), n(411104);
 var r = n(654861),
   i = n.n(r);
@@ -44,11 +44,11 @@ function f(e) {
   return u(c(e) - 1)
 }
 
-function _(e) {
+function p(e) {
   return Date.now() - c(e)
 }
 
-function p(e, t) {
+function _(e, t) {
   return e === t ? 0 : null == t ? 1 : null == e ? -1 : e.length > t.length ? 1 : e.length < t.length ? -1 : e > t ? 1 : -1
 }
 
@@ -60,7 +60,7 @@ function h(e) {
     return !1
   }
 }
-class g {
+class m {
   next() {
     if (this.seq > s) throw Error("Snowflake sequence number overflow: ".concat(this.seq));
     return this.seq++

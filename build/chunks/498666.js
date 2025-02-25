@@ -21,7 +21,7 @@ t.useSyncExternalStoreWithSelector = function(e, t, n, r, i) {
     };
     o.current = f
   } else f = o.current;
-  var _ = s(e, (o = u(function() {
+  var p = s(e, (o = u(function() {
     function e(e) {
       if (!l) {
         if (l = !0, o = e, e = r(e), void 0 !== i && f.hasValue) {
@@ -43,6 +43,6 @@ t.useSyncExternalStoreWithSelector = function(e, t, n, r, i) {
     }]
   }, [t, n, r, i]))[0], o[1]);
   return c(function() {
-    f.hasValue = !0, f.value = _
-  }, [_]), d(_), _
+    f.hasValue = !0, f.value = p
+  }, [p]), d(p), p
 }

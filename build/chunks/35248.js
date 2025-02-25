@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(600164),
   d = n(311821),
   f = n(591759),
-  _ = n(987209),
-  p = n(563132),
+  p = n(987209),
+  _ = n(563132),
   h = n(409813),
-  g = n(620824),
-  m = n(737143),
+  m = n(620824),
+  g = n(737143),
   E = n(926841),
   v = n(362755),
   b = n(981631),
@@ -59,20 +59,20 @@ let N = e => {
         browserCheckoutStateSkuId: R,
         browserCheckoutStatePlanId: P,
         contextMetadata: D
-      } = (0, p.JL)(),
+      } = (0, _.JL)(),
       {
         isGift: w
-      } = (0, _.wD)(),
+      } = (0, p.wD)(),
       [L, x] = i.useState(!1);
     switch (o) {
       case h.h8.AWAITING_BROWSER_CHECKOUT_GOOGLE_PAY:
         t = b.i$l.GOOGLE_PAY, n = (0, E.a)();
         break;
       case h.h8.AWAITING_BROWSER_CHECKOUT_APPLE_PAY:
-        t = b.i$l.APPLE_PAY, n = (0, g.b)();
+        t = b.i$l.APPLE_PAY, n = (0, m.b)();
         break;
       default:
-        n = (0, m.q1)()
+        n = (0, g.q1)()
     }
     return i.useEffect(() => {
       let e = setTimeout(() => {

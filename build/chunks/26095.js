@@ -47,28 +47,28 @@ l[r.ForwardRef] = a, l[r.Memo] = s;
 var u = Object.defineProperty,
   d = Object.getOwnPropertyNames,
   f = Object.getOwnPropertySymbols,
-  _ = Object.getOwnPropertyDescriptor,
-  p = Object.getPrototypeOf,
+  p = Object.getOwnPropertyDescriptor,
+  _ = Object.getPrototypeOf,
   h = Object.prototype;
 
-function g(e, t, n) {
+function m(e, t, n) {
   if ("string" != typeof t) {
     if (h) {
-      var r = p(t);
-      r && r !== h && g(e, r, n)
+      var r = _(t);
+      r && r !== h && m(e, r, n)
     }
     var i = d(t);
     f && (i = i.concat(f(t)));
     for (var a = c(e), s = c(t), l = 0; l < i.length; ++l) {
-      var m = i[l];
-      if (!o[m] && !(n && n[m]) && !(s && s[m]) && !(a && a[m])) {
-        var E = _(t, m);
+      var g = i[l];
+      if (!o[g] && !(n && n[g]) && !(s && s[g]) && !(a && a[g])) {
+        var E = p(t, g);
         try {
-          u(e, m, E)
+          u(e, g, E)
         } catch (e) {}
       }
     }
   }
   return e
 }
-e.exports = g
+e.exports = m

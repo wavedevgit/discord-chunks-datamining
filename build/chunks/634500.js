@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(981631),
   f = n(388032);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -44,17 +44,17 @@ function h() {
     null !== t.current && ((0, a.Mr3)(t.current), t.current = null)
   }
 
-  function _() {
+  function p() {
     l.Z.clearVADWarning()
   }
-  return i.useEffect(() => (e ? t.current = (0, a.h7j)(e => (0, r.jsx)(c.default, p({
+  return i.useEffect(() => (e ? t.current = (0, a.h7j)(e => (0, r.jsx)(c.default, _({
     title: f.NW.string(f.t.NYklho),
     body: f.NW.string(f.t.EJ26Oj),
-    onCancel: _,
+    onCancel: p,
     cancelText: f.NW.string(f.t.UYW0d3),
     confirmText: f.NW.string(f.t.E3Y7ND),
     onConfirm: () => {
-      s.Z.setMode(d.pM4.PUSH_TO_TALK), _()
+      s.Z.setMode(d.pM4.PUSH_TO_TALK), p()
     }
   }, e))) : n(), () => {
     n()

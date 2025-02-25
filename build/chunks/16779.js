@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Rg: () => p,
-  Xh: () => _,
+  Rg: () => _,
+  Xh: () => p,
   ho: () => f
 }), n(627341);
 var r = n(200651);
@@ -20,20 +20,20 @@ function f(e) {
   var t, n, c;
   let {
     activity: f
-  } = e, _ = null !== (c = null === (t = f.timestamps) || void 0 === t ? void 0 : t.start) && void 0 !== c ? c : f.created_at;
-  if (null == _ || (0, u.Z)(f)) return null;
-  let p = (0, i.EQ)(f).when(a.Z, () => o.jje).with({
+  } = e, p = null !== (c = null === (t = f.timestamps) || void 0 === t ? void 0 : t.start) && void 0 !== c ? c : f.created_at;
+  if (null == p || (0, u.Z)(f)) return null;
+  let _ = (0, i.EQ)(f).when(a.Z, () => o.jje).with({
     type: d.IIU.LISTENING
   }, () => o.aXf).with({
     type: d.IIU.WATCHING
   }, () => o.ARS).otherwise(() => o.iWm);
   return (0, r.jsxs)(s.m7, {
-    children: [(0, r.jsx)(p, {
+    children: [(0, r.jsx)(_, {
       size: "xxs",
       color: o.TVs.colors.TEXT_POSITIVE
     }), (0, r.jsx)(l.x3, {
       entry: {
-        start: _,
+        start: p,
         end: null === (n = f.timestamps) || void 0 === n ? void 0 : n.end
       },
       textColor: "text-positive",
@@ -42,7 +42,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     activity: t
   } = e;
@@ -54,7 +54,7 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   var t;
   let {
     activity: n

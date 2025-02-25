@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(200651),
   i = n(192379),
@@ -43,7 +43,7 @@ function f(e) {
   }, [s, r, u, n]), null
 }
 
-function _(e) {
+function p(e) {
   return (0, r.jsx)(s.Z, {
     confettiLocation: e.confettiLocation,
     children: (0, r.jsx)(f, d({}, e))

@@ -11,11 +11,11 @@ var o, a = n(442837),
   u = n(258609),
   d = n(338336),
   f = n(314897),
-  _ = n(938475),
-  p = n(981631),
+  p = n(938475),
+  _ = n(981631),
   h = n(65154);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -54,7 +54,7 @@ function T(e, t) {
       channelId: t
     });
   return o.on(l.z.State, (e, t, n) => {
-    s.Z.wait(() => s.Z.dispatch(m({
+    s.Z.wait(() => s.Z.dispatch(g({
       type: "RTC_CONNECTION_STATE",
       state: e
     }, t, n)))
@@ -212,11 +212,11 @@ function j(e) {
 }
 
 function k(e) {
-  return e.state === p.$7l.ACTIVE && null != r && r.resetBackoff("App state is active"), !1
+  return e.state === _.$7l.ACTIVE && null != r && r.resetBackoff("App state is active"), !1
 }
 
 function U(e) {
-  return e.state === p.hes.RTC_CONNECTED && (I = !0), !0
+  return e.state === _.hes.RTC_CONNECTED && (I = !0), !0
 }
 
 function G() {
@@ -246,19 +246,19 @@ function V(e) {
 }
 class Z extends(o = a.ZP.Store) {
   initialize() {
-    this.waitFor(_.ZP), (0, d.r)(this.getRTCConnectionId, this.getMediaSessionId)
+    this.waitFor(p.ZP), (0, d.r)(this.getRTCConnectionId, this.getMediaSessionId)
   }
   getRTCConnection() {
     return r
   }
   getState() {
-    return null != r ? r.state : p.hes.DISCONNECTED
+    return null != r ? r.state : _.hes.DISCONNECTED
   }
   isConnected() {
-    return this.getState() === p.hes.RTC_CONNECTED
+    return this.getState() === _.hes.RTC_CONNECTED
   }
   isDisconnected() {
-    return this.getState() === p.hes.DISCONNECTED
+    return this.getState() === _.hes.DISCONNECTED
   }
   getRemoteDisconnectVoiceChannelId() {
     return v
@@ -279,7 +279,7 @@ class Z extends(o = a.ZP.Store) {
     return null != r ? r.hostname : ""
   }
   getQuality() {
-    return null != r ? r.quality : p.IE4.UNKNOWN
+    return null != r ? r.quality : _.IE4.UNKNOWN
   }
   getPings() {
     return null != r ? r.getPings() : E
@@ -329,7 +329,7 @@ class Z extends(o = a.ZP.Store) {
     return null == t ? void 0 : t.get(e)
   }
 }
-g(Z, "displayName", "RTCConnectionStore");
+m(Z, "displayName", "RTCConnectionStore");
 let H = new Z(s.Z, __OVERLAY__ ? {} : {
   CONNECTION_OPEN: A,
   CONNECTION_CLOSED: C,

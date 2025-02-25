@@ -20,10 +20,10 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = {},
-  _ = 0;
+  p = 0;
 
-function p() {
-  _ += 1
+function _() {
+  p += 1
 }
 
 function h(e) {
@@ -31,7 +31,7 @@ function h(e) {
   delete f[e]
 }
 
-function g(e) {
+function m(e) {
   let {
     id: t
   } = e;
@@ -39,7 +39,7 @@ function g(e) {
   f[t] = !0
 }
 
-function m(e) {
+function g(e) {
   let {
     id: t
   } = e;
@@ -98,7 +98,7 @@ function O(e) {
 }
 class S extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(s.Z, l.Z), this.removeChangeListener(p), this.addChangeListener(p), f = null != e ? e : {}
+    this.waitFor(s.Z, l.Z), this.removeChangeListener(_), this.addChangeListener(_), f = null != e ? e : {}
   }
   getState() {
     return f
@@ -110,15 +110,15 @@ class S extends(r = i.ZP.PersistedStore) {
     return f
   }
   get version() {
-    return _
+    return p
   }
 }
 d(S, "displayName", "CategoryCollapseStore"), d(S, "persistKey", "collapsedCategories");
 let I = new S(o.Z, {
   CONNECTION_OPEN: E,
   USER_GUILD_SETTINGS_FULL_UPDATE: v,
-  CATEGORY_COLLAPSE: g,
-  CATEGORY_EXPAND: m,
+  CATEGORY_COLLAPSE: m,
+  CATEGORY_EXPAND: g,
   CATEGORY_COLLAPSE_ALL: y,
   CATEGORY_EXPAND_ALL: O,
   CHANNEL_DELETE: b

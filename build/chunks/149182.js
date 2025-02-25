@@ -32,11 +32,11 @@
       }
     }
   }(u = t.regeneratorRuntime = c ? e.exports : {}).wrap = d;
-  var _ = "suspendedStart",
-    p = "suspendedYield",
+  var p = "suspendedStart",
+    _ = "suspendedYield",
     h = "executing",
-    g = "completed",
-    m = {};
+    m = "completed",
+    g = {};
 
   function E() {}
 
@@ -93,10 +93,10 @@
   }
 
   function A(e, t, n) {
-    var r = _;
+    var r = p;
     return function(i, o) {
       if (r === h) throw Error("Generator is already running");
-      if (r === g) {
+      if (r === m) {
         if ("throw" === i) throw o;
         return L()
       }
@@ -105,25 +105,25 @@
         if (a) {
           var s = C(a, n);
           if (s) {
-            if (s === m) continue;
+            if (s === g) continue;
             return s
           }
         }
         if ("next" === n.method) n.sent = n._sent = n.arg;
         else if ("throw" === n.method) {
-          if (r === _) throw r = g, n.arg;
+          if (r === p) throw r = m, n.arg;
           n.dispatchException(n.arg)
         } else "return" === n.method && n.abrupt("return", n.arg);
         r = h;
         var l = f(e, t, n);
         if ("normal" === l.type) {
-          if (r = n.done ? g : p, l.arg === m) continue;
+          if (r = n.done ? m : _, l.arg === g) continue;
           return {
             value: l.arg,
             done: n.done
           }
         }
-        "throw" === l.type && (r = g, n.method = "throw", n.arg = l.arg)
+        "throw" === l.type && (r = m, n.method = "throw", n.arg = l.arg)
       }
     }
   }
@@ -132,15 +132,15 @@
     var r = e.iterator[t.method];
     if (n === r) {
       if (t.delegate = null, "throw" === t.method) {
-        if (e.iterator.return && (t.method = "return", t.arg = n, C(e, t), "throw" === t.method)) return m;
+        if (e.iterator.return && (t.method = "return", t.arg = n, C(e, t), "throw" === t.method)) return g;
         t.method = "throw", t.arg = TypeError("The iterator does not provide a 'throw' method")
       }
-      return m
+      return g
     }
     var i = f(r, e.iterator, t.arg);
-    if ("throw" === i.type) return t.method = "throw", t.arg = i.arg, t.delegate = null, m;
+    if ("throw" === i.type) return t.method = "throw", t.arg = i.arg, t.delegate = null, g;
     var o = i.arg;
-    return o ? o.done ? (t[e.resultName] = o.value, t.next = e.nextLoc, "return" !== t.method && (t.method = "next", t.arg = n), t.delegate = null, m) : o : (t.method = "throw", t.arg = TypeError("iterator result is not an object"), t.delegate = null, m)
+    return o ? o.done ? (t[e.resultName] = o.value, t.next = e.nextLoc, "return" !== t.method && (t.method = "next", t.arg = n), t.delegate = null, g) : o : (t.method = "throw", t.arg = TypeError("iterator result is not an object"), t.delegate = null, g)
   }
 
   function R(e) {
@@ -265,16 +265,16 @@
       }
       o && ("break" === e || "continue" === e) && o.tryLoc <= t && t <= o.finallyLoc && (o = null);
       var a = o ? o.completion : {};
-      return (a.type = e, a.arg = t, o) ? (this.method = "next", this.next = o.finallyLoc, m) : this.complete(a)
+      return (a.type = e, a.arg = t, o) ? (this.method = "next", this.next = o.finallyLoc, g) : this.complete(a)
     },
     complete: function(e, t) {
       if ("throw" === e.type) throw e.arg;
-      return "break" === e.type || "continue" === e.type ? this.next = e.arg : "return" === e.type ? (this.rval = this.arg = e.arg, this.method = "return", this.next = "end") : "normal" === e.type && t && (this.next = t), m
+      return "break" === e.type || "continue" === e.type ? this.next = e.arg : "return" === e.type ? (this.rval = this.arg = e.arg, this.method = "return", this.next = "end") : "normal" === e.type && t && (this.next = t), g
     },
     finish: function(e) {
       for (var t = this.tryEntries.length - 1; t >= 0; --t) {
         var n = this.tryEntries[t];
-        if (n.finallyLoc === e) return this.complete(n.completion, n.afterLoc), P(n), m
+        if (n.finallyLoc === e) return this.complete(n.completion, n.afterLoc), P(n), g
       }
     },
     catch: function(e) {
@@ -296,7 +296,7 @@
         iterator: w(e),
         resultName: t,
         nextLoc: r
-      }, "next" === this.method && (this.arg = n), m
+      }, "next" === this.method && (this.arg = n), g
     }
   }
 }(function() {

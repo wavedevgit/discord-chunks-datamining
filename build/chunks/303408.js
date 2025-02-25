@@ -43,8 +43,8 @@ function l(e) {
     u = "[\\w-]+",
     d = "(" + u + "|@\\{" + u + "\\})",
     f = [],
-    _ = [],
-    p = function(e) {
+    p = [],
+    _ = function(e) {
       return {
         className: "string",
         begin: "~?" + e + ".*?" + e
@@ -57,26 +57,26 @@ function l(e) {
         relevance: n
       }
     },
-    g = {
+    m = {
       $pattern: /[a-z-]+/,
       keyword: "and or not only",
       attribute: r.join(" ")
     },
-    m = {
+    g = {
       begin: "\\(",
       end: "\\)",
-      contains: _,
-      keywords: g,
+      contains: p,
+      keywords: m,
       relevance: 0
     };
-  _.push(e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, p("'"), p('"'), l.CSS_NUMBER_MODE, {
+  p.push(e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, _("'"), _('"'), l.CSS_NUMBER_MODE, {
     begin: "(url|data-uri)\\(",
     starts: {
       className: "string",
       end: "[\\)\\n]",
       excludeEnd: !0
     }
-  }, l.HEXCOLOR, m, h("variable", "@@?" + u, 10), h("variable", "@\\{" + u + "\\}"), h("built_in", "~?`[^`]*?`"), {
+  }, l.HEXCOLOR, g, h("variable", "@@?" + u, 10), h("variable", "@\\{" + u + "\\}"), h("built_in", "~?`[^`]*?`"), {
     className: "attribute",
     begin: u + "\\s*:",
     end: ":",
@@ -85,7 +85,7 @@ function l(e) {
   }, l.IMPORTANT, {
     beginKeywords: "and not"
   }, l.FUNCTION_DISPATCH);
-  let E = _.concat({
+  let E = p.concat({
       begin: /\{/,
       end: /\}/,
       contains: f
@@ -95,7 +95,7 @@ function l(e) {
       endsWithParent: !0,
       contains: [{
         beginKeywords: "and not"
-      }].concat(_)
+      }].concat(p)
     },
     b = {
       begin: d + "\\s*:",
@@ -112,7 +112,7 @@ function l(e) {
           endsWithParent: !0,
           illegal: "[<=$]",
           relevance: 0,
-          contains: _
+          contains: p
         }
       }]
     },
@@ -121,9 +121,9 @@ function l(e) {
       begin: "@(import|media|charset|font-face|(-[a-z]+-)?keyframes|supports|document|namespace|page|viewport|host)\\b",
       starts: {
         end: "[;{}]",
-        keywords: g,
+        keywords: m,
         returnEnd: !0,
-        contains: _,
+        contains: p,
         relevance: 0
       }
     },

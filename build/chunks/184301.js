@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(47120), n(411104);
 var r = n(259443),
   i = n(911284),
@@ -33,7 +33,7 @@ function u(e) {
 }
 let d = 300,
   f = new r.Yd("preloadUserProfileForPopout"),
-  _ = async e => {
+  p = async e => {
     let t = a.default.getId() === e,
       {
         recentActivityEnabled: n
@@ -46,7 +46,7 @@ let d = 300,
       f.log("Failed to fetch content inventory outbox for ".concat(e, ":"), t)
     }
   };
-async function p() {
+async function _() {
   let e, t, n;
   for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
   let s = i[0],
@@ -59,6 +59,6 @@ async function p() {
     type: "popout",
     withMutualFriends: !0,
     withMutualGuilds: !0
-  }, n)), _(e)]);
+  }, n)), p(e)]);
   return d
 }

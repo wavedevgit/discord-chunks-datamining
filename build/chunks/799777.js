@@ -20,20 +20,20 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = "GameLibraryViewStore",
-  _ = 200,
-  p = u.sHY.ASCENDING,
+  p = 200,
+  _ = u.sHY.ASCENDING,
   h = u.iEv.LAST_PLAYED,
-  g = !1,
-  m = a().debounce(() => {
-    g = !1, y.emitChange()
-  }, _);
+  m = !1,
+  g = a().debounce(() => {
+    m = !1, y.emitChange()
+  }, p);
 
 function E(e) {
   let {
     key: t,
     isKeyboardEvent: n
   } = e;
-  n && (g = !0, m()), r = t
+  n && (m = !0, g()), r = t
 }
 
 function v(e) {
@@ -41,8 +41,8 @@ function v(e) {
     direction: t,
     key: n
   } = e;
-  p = t, h = n, l.K.set(f, {
-    sortDirection: p,
+  _ = t, h = n, l.K.set(f, {
+    sortDirection: _,
     sortKey: h
   })
 }
@@ -50,10 +50,10 @@ class b extends(i = s.ZP.Store) {
   initialize() {
     var e;
     let t = null !== (e = l.K.get(f)) && void 0 !== e ? e : {};
-    null != t.sortDirection && null != t.sortKey && (p = t.sortDirection, h = t.sortKey)
+    null != t.sortDirection && null != t.sortKey && (_ = t.sortDirection, h = t.sortKey)
   }
   get sortDirection() {
-    return p
+    return _
   }
   get sortKey() {
     return h
@@ -62,7 +62,7 @@ class b extends(i = s.ZP.Store) {
     return r
   }
   get isNavigatingByKeyboard() {
-    return g
+    return m
   }
 }
 d(b, "displayName", "GameLibraryViewStore");

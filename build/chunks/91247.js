@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  TO: () => g,
-  dm: () => p,
+  TO: () => m,
+  dm: () => _,
   uB: () => S,
   vW: () => y,
   zH: () => O
@@ -55,7 +55,7 @@ function d(e, t) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -63,7 +63,7 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -71,11 +71,11 @@ function _(e, t) {
   return i
 }
 
-function p(e, t, n, o, l) {
-  var u, f, _;
-  let p = h(t);
-  null != o && r.Z.addDetail("payload_size(kb)", Math.round(o.uncompressed_byte_size / 1024)), r.Z.addDetail("server_time(ms)", null !== (u = p.identify_total_server_duration_ms) && void 0 !== u ? u : 0);
-  let g = d(c({}, o, p, b(t), l), {
+function _(e, t, n, o, l) {
+  var u, f, p;
+  let _ = h(t);
+  null != o && r.Z.addDetail("payload_size(kb)", Math.round(o.uncompressed_byte_size / 1024)), r.Z.addDetail("server_time(ms)", null !== (u = _.identify_total_server_duration_ms) && void 0 !== u ? u : 0);
+  let m = d(c({}, o, _, b(t), l), {
     duration_ms_since_identify_start: n - e.identifyStartTime,
     duration_ms_since_connection_start: n - e.connectionStartTime,
     duration_ms_since_emit_start: Date.now() - n,
@@ -85,9 +85,9 @@ function p(e, t, n, o, l) {
     identify_uncompressed_byte_size: e.identifyUncompressedByteSize,
     identify_compressed_byte_size: e.identifyCompressedByteSize,
     had_cache_at_startup: null !== (f = e.analytics.hadCacheAtStartup) && void 0 !== f && f,
-    used_cache_at_startup: null !== (_ = e.analytics.usedCacheAtStartup) && void 0 !== _ && _
+    used_cache_at_startup: null !== (p = e.analytics.usedCacheAtStartup) && void 0 !== p && p
   });
-  i.Z.attachReadyPayloadProperties(g), a.default.track(s.rMx.READY_PAYLOAD_RECEIVED, g, {
+  i.Z.attachReadyPayloadProperties(m), a.default.track(s.rMx.READY_PAYLOAD_RECEIVED, m, {
     logEventProperties: !0
   })
 }
@@ -105,16 +105,16 @@ function h(e) {
   return n
 }
 
-function g(e) {
+function m(e) {
   try {
     var t;
-    let n = m(null === (t = e._trace) || void 0 === t ? void 0 : t[0]);
+    let n = g(null === (t = e._trace) || void 0 === t ? void 0 : t[0]);
     if (null != n) return n
   } catch (e) {}
   return null != e._trace ? e._trace.join(" -> ") : "???"
 }
 
-function m(e) {
+function g(e) {
   return null == e ? null : E(JSON.parse(e), "")
 }
 
@@ -163,12 +163,12 @@ function y(e) {
       user_guild_settings: c,
       user_settings: u,
       user_settings_proto: d,
-      experiments: _,
-      guild_experiments: p,
+      experiments: p,
+      guild_experiments: _,
       relationships: h,
-      users: g
+      users: m
     } = e,
-    m = f(e, ["guilds", "merged_presences", "merged_members", "read_state", "private_channels", "user_guild_settings", "user_settings", "user_settings_proto", "experiments", "guild_experiments", "relationships", "users"]),
+    g = f(e, ["guilds", "merged_presences", "merged_members", "read_state", "private_channels", "user_guild_settings", "user_settings", "user_settings_proto", "experiments", "guild_experiments", "relationships", "users"]),
     E = [],
     v = [],
     b = [],
@@ -193,14 +193,14 @@ function y(e) {
     E.push("partial" === e.data_mode ? e.partial_updates.channels : e.channels), v.push("partial" === e.data_mode ? e.partial_updates.roles : e.roles), b.push("partial" === e.data_mode ? e.partial_updates.emojis : e.emojis), y.push(o), O.push("partial" === e.data_mode ? e.partial_updates.stickers : e.stickers), S.push(r), I.push(a), T.push(s, i)
   }), {
     presences_size: JSON.stringify(null !== (t = null == o ? void 0 : o.friends) && void 0 !== t ? t : []).length,
-    users_size: JSON.stringify(g).length,
+    users_size: JSON.stringify(m).length,
     read_states_size: JSON.stringify(s).length,
     private_channels_size: JSON.stringify(l).length,
     user_settings_size: JSON.stringify(null != u ? u : "").length + (null != d ? d : "").length,
-    experiments_size: JSON.stringify(null != _ ? _ : []).length + JSON.stringify(null != p ? p : []).length,
+    experiments_size: JSON.stringify(null != p ? p : []).length + JSON.stringify(null != _ ? _ : []).length,
     user_guild_settings_size: JSON.stringify(c).length,
     relationships_size: JSON.stringify(h).length,
-    remaining_data_size: JSON.stringify(null != m ? m : {}).length,
+    remaining_data_size: JSON.stringify(null != g ? g : {}).length,
     guild_channels_size: JSON.stringify(E).length,
     guild_members_size: JSON.stringify(null != a ? a : []).length,
     guild_presences_size: JSON.stringify(null !== (n = null == o ? void 0 : o.guilds) && void 0 !== n ? n : []).length,

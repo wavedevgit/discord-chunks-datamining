@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r, i = n(442837),
   o = n(570140);
@@ -45,7 +45,7 @@ class f extends(r = i.ZP.Store) {
   }
 }
 a(f, "displayName", "BasicGuildStore");
-let _ = new f(o.Z, {
+let p = new f(o.Z, {
   BASIC_GUILD_FETCH: c,
   BASIC_GUILD_FETCH_SUCCESS: u,
   BASIC_GUILD_FETCH_FAILURE: d

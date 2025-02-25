@@ -12,11 +12,11 @@ var i, o = n(442837),
   u = n(710845),
   d = n(48481),
   f = n(131704),
-  _ = n(314897),
-  p = n(592125),
+  p = n(314897),
+  _ = n(592125),
   h = n(984933),
-  g = n(355863),
-  m = n(914010),
+  m = n(355863),
+  g = n(914010),
   E = n(358085),
   v = n(145597),
   b = n(372679),
@@ -195,7 +195,7 @@ function Q(e) {
 function X() {
   let e = V.selectedGuildId,
     t = V.selectedChannelId;
-  if (null == e || h.ZP.hasChannels(e) && (null == t || h.ZP.hasSelectableChannel(e, t)) || (e = null, t = null), null != t && null == p.Z.getChannel(t) && (e = null, t = null), null == e && null == t && (e = m.Z.getGuildId()), null != e && null == t) {
+  if (null == e || h.ZP.hasChannels(e) && (null == t || h.ZP.hasSelectableChannel(e, t)) || (e = null, t = null), null != t && null == _.Z.getChannel(t) && (e = null, t = null), null == e && null == t && (e = g.Z.getGuildId()), null != e && null == t) {
     let n = h.ZP.getDefaultChannel(e);
     null != n && (t = n.id)
   }
@@ -297,14 +297,14 @@ function ef(e) {
   V.notificationPositionMode = t
 }
 
-function e_(e) {
+function ep(e) {
   let {
     mode: t
   } = e;
   V.textChatNotifications = t
 }
 
-function ep(e) {
+function e_(e) {
   let {
     disable: t
   } = e;
@@ -318,14 +318,14 @@ function eh(e) {
   V.showKeybindIndicators = t
 }
 
-function eg(e) {
+function em(e) {
   let {
     message: t
   } = e, n = V.customInviteMessage !== t;
   return V.customInviteMessage = t, n
 }
 
-function em(e) {
+function eg(e) {
   let {
     opacity: t
   } = e, n = V.textWidgetOpacity !== t;
@@ -404,8 +404,8 @@ function eI(e) {
 }
 class eT extends(i = o.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(_.default), this.syncWith([_.default], () => {
-        let e = _.default.getId();
+    if (this.waitFor(p.default), this.syncWith([p.default], () => {
+        let e = p.default.getId();
         V = null != e ? F(e) : T({}, P)
       }), __OVERLAY__) {
       if (E.isPlatformEmbedded) {
@@ -416,7 +416,7 @@ class eT extends(i = o.ZP.PersistedStore) {
     }
     if (null != e) {
       w = e;
-      let t = _.default.getId();
+      let t = p.default.getId();
       null != t && (null == (V = F(t)).textChatNotifications && (V.textChatNotifications = P.textChatNotifications), null == V.textWidgetOpacity && (V.textWidgetOpacity = P.textWidgetOpacity), null == V.disableClickableRegions && (V.disableClickableRegions = P.disableClickableRegions))
     }
   }
@@ -436,9 +436,9 @@ class eT extends(i = o.ZP.PersistedStore) {
     return D === e
   }
   isPinned(e) {
-    let t = g.Z.getLayout(v.qU);
+    let t = m.Z.getLayout(v.qU);
     return null != t && null != t.widgets.find(t => {
-      let n = g.Z.getWidget(t);
+      let n = m.Z.getWidget(t);
       return null != n && n.type === e && !!n.pinned
     })
   }
@@ -511,7 +511,7 @@ I(eT, "displayName", "OverlayStore"), I(eT, "persistKey", "OverlayStoreV2"), I(e
     o = C(e, ["pinnedWidgets", "positions", "sizes", "v"]);
   return T({}, P, 5 === i ? o : null)
 }, e => {
-  let t = _.default.getId();
+  let t = p.default.getId();
   return null == e || null == t ? {} : {
     [t]: T({}, e)
   }
@@ -532,12 +532,12 @@ let eN = new eT(s.Z, {
   OVERLAY_SET_DISPLAY_USER_MODE: eu,
   OVERLAY_SET_AVATAR_SIZE_MODE: ed,
   OVERLAY_SET_NOTIFICATION_POSITION_MODE: ef,
-  OVERLAY_SET_TEXT_CHAT_NOTIFICATION_MODE: e_,
-  OVERLAY_SET_DISABLE_CLICKABLE_REGIONS: ep,
+  OVERLAY_SET_TEXT_CHAT_NOTIFICATION_MODE: ep,
+  OVERLAY_SET_DISABLE_CLICKABLE_REGIONS: e_,
   OVERLAY_SET_SHOW_KEYBIND_INDICATORS: eh,
-  OVERLAY_SET_INVITE_MESSAGE: eg,
+  OVERLAY_SET_INVITE_MESSAGE: em,
   OVERLAY_SET_GAME_INVITE_NOTIFICATION: eE,
-  OVERLAY_SET_TEXT_WIDGET_OPACITY: em,
+  OVERLAY_SET_TEXT_WIDGET_OPACITY: eg,
   OVERLAY_DISABLE_EXTERNAL_LINK_ALERT: ev,
   OVERLAY_INCOMPATIBLE_APP: eb,
   OVERLAY_SET_INPUT_LOCKED: ee,

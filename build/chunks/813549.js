@@ -21,11 +21,11 @@ let c = e => {
     botType: u,
     usernameClass: d,
     discriminatorClass: f,
-    botClass: _,
-    botVerified: p = !1,
+    botClass: p,
+    botVerified: _ = !1,
     style: h,
-    useRemSizes: g = !1,
-    usernameIcon: m
+    useRemSizes: m = !1,
+    usernameIcon: g
   } = e;
   return (0, r.jsxs)("div", {
     className: o()(c, l.nameTag),
@@ -35,16 +35,16 @@ let c = e => {
       style: null != s ? {
         color: s
       } : void 0,
-      children: [m, t]
+      children: [g, t]
     }), null != n ? (0, r.jsxs)("span", {
       className: null != f ? f : void 0,
       children: ["#", n]
     }) : null, null != u ? (0, r.jsx)(a.Z, {
       type: u,
       invertColor: i,
-      className: o()(_, l.bot),
-      verified: p,
-      useRemSizes: g
+      className: o()(p, l.bot),
+      verified: _,
+      useRemSizes: m
     }) : null]
   })
 }

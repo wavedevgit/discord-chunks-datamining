@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(481060),
   i = n(570140),
@@ -13,17 +13,17 @@ var r = n(481060),
   u = n(435064),
   d = n(779618),
   f = n(39604),
-  _ = n(356659),
-  p = n(388032);
+  p = n(356659),
+  _ = n(388032);
 let h = "CLIPS_IN_CALL_WARNING";
-class g extends c.Z {
+class m extends c.Z {
   showClipsToast() {
     (0, r.showToast)({
       id: h,
-      message: p.NW.string(p.t["d+41qK"]),
+      message: _.NW.string(_.t["d+41qK"]),
       type: r.ToastType.CLIP,
       options: {
-        duration: _.G$
+        duration: p.G$
       }
     })
   }
@@ -47,7 +47,7 @@ class g extends c.Z {
   }
   handleClipsInitOnGamesChange(e) {
     let t = o.ZP.getVisibleGame();
-    null != t && (e.added.find(e => e.pid === t.pid) ? setTimeout(() => this.fireClipsInitEvent(), _.jp) : this.fireClipsInitEvent())
+    null != t && (e.added.find(e => e.pid === t.pid) ? setTimeout(() => this.fireClipsInitEvent(), p.jp) : this.fireClipsInitEvent())
   }
   fireClipsInitEvent() {
     if (!(0, d.Z)(s.Z)) return;
@@ -82,4 +82,4 @@ class g extends c.Z {
     })
   }
 }
-let m = new g
+let g = new m

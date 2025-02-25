@@ -14,11 +14,11 @@ var i = n(772848),
   u = n(100527),
   d = n(807169),
   f = n(728345),
-  _ = n(358221),
-  p = n(75060),
+  p = n(358221),
+  _ = n(75060),
   h = n(233764),
-  g = n(375824),
-  m = n(188597),
+  m = n(375824),
+  g = n(188597),
   E = n(695346),
   v = n(131704),
   b = n(314897),
@@ -123,15 +123,15 @@ async function ee(e) {
     d = I.default.getCurrentUser();
   if (null == c || null == u || null == d) return;
   let f = u.getGuildId(),
-    _ = w.ZP.getShelfActivities(f),
+    p = w.ZP.getShelfActivities(f),
     h = (0, L.Z)({
       applicationId: r,
-      activityConfigs: _
+      activityConfigs: p
     }),
     {
-      releasePhase: g
+      releasePhase: m
     } = q(h),
-    m = p.Z.getRawThermalState();
+    g = _.Z.getRawThermalState();
   T.default.track(V.rMx.ACTIVITY_SESSION_LEFT, {
     channel_id: u.id,
     guild_id: f,
@@ -140,8 +140,8 @@ async function ee(e) {
     application_id: r,
     duration_ms: s,
     user_premium_tier: d.premiumType,
-    raw_thermal_state: m,
-    release_phase: g,
+    raw_thermal_state: g,
+    release_phase: m,
     activity_premium_tier_requirement: null == h ? void 0 : null === (t = h.activity) || void 0 === t ? void 0 : t.premium_tier_requirement,
     shelf_rank: null == h ? void 0 : null === (n = h.activity) || void 0 === n ? void 0 : n.shelf_rank,
     activity_user_session_id: c.activityUserSessionId,
@@ -154,7 +154,7 @@ async function ee(e) {
     instance_ids: null != c.launchId ? [c.launchId] : void 0,
     media_session_ids: c.mediaSessionIds,
     activity_user_session_id: c.activityUserSessionId,
-    raw_thermal_state: m,
+    raw_thermal_state: g,
     duration_ms: s
   }), delete Y[r]
 }
@@ -169,8 +169,8 @@ function et(e) {
     embeddedActivity: u,
     location: f,
     inviterUserId: h
-  } = e, g = b.default.getId(), m = c.find(e => e.userId === g), E = (0, U.pY)(f), v = y.Z.getChannel(E);
-  if (l && null != v && v.isPrivate() && a && null == m && s.Z.selectParticipant(v.id, null), null == m) return;
+  } = e, m = b.default.getId(), g = c.find(e => e.userId === m), E = (0, U.pY)(f), v = y.Z.getChannel(E);
+  if (l && null != v && v.isPrivate() && a && null == g && s.Z.selectParticipant(v.id, null), null == g) return;
   let S = O.Z.getMediaSessionId(),
     N = u.compositeInstanceId,
     A = null == S && (null == v ? void 0 : v.isVocal()) === !0 && (null == v ? void 0 : v.isPrivate()) === !1;
@@ -190,7 +190,7 @@ function et(e) {
     {
       releasePhase: F
     } = q(G),
-    Z = p.Z.getRawThermalState(),
+    Z = _.Z.getRawThermalState(),
     H = null != S ? [S] : [],
     W = {
       activitySessionId: N,
@@ -201,7 +201,7 @@ function et(e) {
     };
   Y[o] = W;
   let z = K[o];
-  (0, C.Ew)(m.nonce) || m.nonce === (null == z ? void 0 : z.nonce) || (z = void 0), T.default.track(V.rMx.ACTIVITY_SESSION_JOINED, {
+  (0, C.Ew)(g.nonce) || g.nonce === (null == z ? void 0 : z.nonce) || (z = void 0), T.default.track(V.rMx.ACTIVITY_SESSION_JOINED, {
     channel_id: v.id,
     guild_id: v.getGuildId(),
     media_session_id: H[0],
@@ -210,7 +210,7 @@ function et(e) {
     location_stack: null == z ? void 0 : z.locations,
     user_premium_tier: M.premiumType,
     raw_thermal_state: Z,
-    n_participants: _.Z.getUserParticipantCount(v.id),
+    n_participants: p.Z.getUserParticipantCount(v.id),
     is_activity_start: l,
     release_phase: F,
     activity_premium_tier_requirement: null == G ? void 0 : null === (t = G.activity) || void 0 === t ? void 0 : t.premium_tier_requirement,
@@ -311,9 +311,9 @@ class er extends c.Z {
           case h.Z.Reasons.LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED:
             n = i.detailCode
         }
-      } else if (i instanceof g.Z) {
+      } else if (i instanceof m.Z) {
         var d;
-        t = 1, r = i.reason, u = null !== (d = (0, m.A0)(i.reason, s)) && void 0 !== d ? d : u
+        t = 1, r = i.reason, u = null !== (d = (0, g.A0)(i.reason, s)) && void 0 !== d ? d : u
       } else switch (t = 2, n = i.status, r = i.code, i.code) {
         case V.evJ.INVALID_ACTIVITY_LAUNCH_NO_ACCESS:
           u = Z.NW.string(Z.t.Gyzcra);
@@ -342,11 +342,11 @@ class er extends c.Z {
       this.showLaunchErrorModal(u);
       let f = y.Z.getChannel(a);
       if (null == f) return;
-      let _ = f.getGuildId(),
-        v = p.Z.getRawThermalState();
+      let p = f.getGuildId(),
+        v = _.Z.getRawThermalState();
       T.default.track(V.rMx.ACTIVITY_SESSION_JOIN_FAILED, {
         channel_id: a,
-        guild_id: _,
+        guild_id: p,
         application_id: s,
         raw_thermal_state: v,
         is_activity_start: l,
@@ -413,20 +413,20 @@ class er extends c.Z {
         this.showLaunchErrorModal(Z.NW.string(Z.t.uGDCc3));
         return
       }
-      let _ = null !== (n = null == c ? void 0 : c.getGuildId()) && void 0 !== n ? n : void 0,
+      let p = null !== (n = null == c ? void 0 : c.getGuildId()) && void 0 !== n ? n : void 0,
         {
-          activityConfigs: p,
+          activityConfigs: _,
           applications: h
         } = await (0, D.w1)({
-          guildId: _
+          guildId: p
         });
       if (null == (0, L.Z)({
           applicationId: o,
-          activityConfigs: p,
+          activityConfigs: _,
           applications: h
         })) {
         let e = await (0, D.w1)({
-          guildId: _,
+          guildId: p,
           force: !0
         });
         (0, L.Z)({
@@ -435,11 +435,11 @@ class er extends c.Z {
           applications: e.applications
         })
       }
-      let g = w.ZP.getEmbeddedActivitiesForChannel(i).find(e => e.applicationId === o);
-      (null !== (r = null == g ? void 0 : g.userIds.size) && void 0 !== r ? r : 0) > 0 ? await (0, M.k)({
+      let m = w.ZP.getEmbeddedActivitiesForChannel(i).find(e => e.applicationId === o);
+      (null !== (r = null == m ? void 0 : m.userIds.size) && void 0 !== r ? r : 0) > 0 ? await (0, M.k)({
         channelId: i,
         applicationId: o,
-        launchId: null == g ? void 0 : g.launchId,
+        launchId: null == m ? void 0 : m.launchId,
         inputApplication: null,
         analyticsLocations: a,
         inviterUserId: l

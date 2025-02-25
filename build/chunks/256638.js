@@ -29,8 +29,8 @@ var s = n(442837),
   C = n(906732),
   I = n(812206),
   S = n(391650),
-  T = n(600164),
-  P = n(605236),
+  P = n(600164),
+  T = n(605236),
   A = n(749277),
   w = n(131130),
   Z = n(492435),
@@ -163,7 +163,7 @@ let ej = 12633 == n.j ? i.memo(function() {
     }
   }, [ep]);
   let eS = null != eC ? el.o[eC] : null,
-    eT = function(e) {
+    eP = function(e) {
       let {
         enabled: t
       } = (0, z.ZP)(!0, e !== em.kVF.PREMIUM_TIER_2_TRIAL_ENDING);
@@ -174,11 +174,11 @@ let ej = 12633 == n.j ? i.memo(function() {
     dismissibleContent: eS,
     noticeType: ep.type
   });
-  if (null != eT) return (0, r.jsx)(A.A, {
-    dismissibleContent: eT,
+  if (null != eP) return (0, r.jsx)(A.A, {
+    dismissibleContent: eP,
     noticeType: ep.type
   });
-  let eP = null === (e = ep.metadata) || void 0 === e ? void 0 : e.premiumType;
+  let eT = null === (e = ep.metadata) || void 0 === e ? void 0 : e.premiumType;
   switch (ep.type) {
     case em.kVF.LURKING_GUILD:
       return (0, r.jsx)(H.Z, {});
@@ -584,8 +584,8 @@ let ej = 12633 == n.j ? i.memo(function() {
         children: [(0, r.jsx)(c.RyX, {
           onClick: () => eE(),
           noticeType: em.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS
-        }), (0, r.jsxs)(T.Z, {
-          justify: T.Z.Justify.CENTER,
+        }), (0, r.jsxs)(P.Z, {
+          justify: P.Z.Justify.CENTER,
           children: [null != ez ? e_.NW.formatToPlainString(e_.t["pHj+z8"], {
             name: "".concat(ez),
             progress: eH,
@@ -603,9 +603,9 @@ let ej = 12633 == n.j ? i.memo(function() {
       if (null == ep.metadata) return null;
       if (null != eo.Z.testModeEmbeddedApplicationId) return (0, r.jsx)(c.qXd, {
         color: c.DM8.WARNING,
-        children: (0, r.jsxs)(T.Z, {
-          justify: T.Z.Justify.CENTER,
-          align: T.Z.Align.CENTER,
+        children: (0, r.jsxs)(P.Z, {
+          justify: P.Z.Justify.CENTER,
+          align: P.Z.Align.CENTER,
           children: [(0, r.jsx)("div", {
             children: e_.NW.format(e_.t["1qxVe3"], {
               applicationName: ep.metadata.applicationName
@@ -618,9 +618,9 @@ let ej = 12633 == n.j ? i.memo(function() {
       });
       return (0, r.jsx)(c.qXd, {
         color: c.DM8.WARNING,
-        children: (0, r.jsxs)(T.Z, {
-          justify: T.Z.Justify.CENTER,
-          align: T.Z.Align.CENTER,
+        children: (0, r.jsxs)(P.Z, {
+          justify: P.Z.Justify.CENTER,
+          align: P.Z.Align.CENTER,
           children: [(0, r.jsx)("div", {
             children: e_.NW.format(e_.t.Fv5HrK, {
               applicationName: ep.metadata.applicationName
@@ -652,7 +652,7 @@ let ej = 12633 == n.j ? i.memo(function() {
       return (0, r.jsx)(G.Z, {});
     case em.kVF.PREMIUM_UNCANCEL:
       return (0, r.jsxs)(c.qXd, {
-        color: eP === ef.p9.TIER_1 ? c.DM8.PREMIUM_TIER_1 : eP === ef.p9.TIER_0 ? c.DM8.PREMIUM_TIER_0 : c.DM8.PREMIUM_TIER_2,
+        color: eT === ef.p9.TIER_1 ? c.DM8.PREMIUM_TIER_1 : eT === ef.p9.TIER_0 ? c.DM8.PREMIUM_TIER_0 : c.DM8.PREMIUM_TIER_2,
         children: [(0, r.jsx)(c.RyX, {
           noticeType: em.kVF.PREMIUM_UNCANCEL,
           onClick: () => {
@@ -663,9 +663,9 @@ let ej = 12633 == n.j ? i.memo(function() {
           size: "md",
           color: "currentColor",
           className: eb.premiumIcon
-        }), eP === ef.p9.TIER_1 ? e_.NW.formatToPlainString(e_.t.fXv4ws, {
+        }), eT === ef.p9.TIER_1 ? e_.NW.formatToPlainString(e_.t.fXv4ws, {
           daysLeft: ep.metadata.daysLeft
-        }) : eP === ef.p9.TIER_0 ? e_.NW.formatToPlainString(e_.t.ZOHZMj, {
+        }) : eT === ef.p9.TIER_0 ? e_.NW.formatToPlainString(e_.t.ZOHZMj, {
           daysLeft: ep.metadata.daysLeft
         }) : e_.NW.formatToPlainString(e_.t.outyHh, {
           daysLeft: ep.metadata.daysLeft
@@ -681,7 +681,7 @@ let ej = 12633 == n.j ? i.memo(function() {
                 var n, i;
                 return (0, r.jsx)(e, (n = ev({}, t), i = i = {
                   daysLeft: ep.metadata.daysLeft,
-                  premiumType: eP,
+                  premiumType: eT,
                   analyticsSource: "Nag Bar",
                   premiumSubscription: ep.metadata.premiumSubscription
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -697,7 +697,7 @@ let ej = 12633 == n.j ? i.memo(function() {
               }
             })
           },
-          children: eP === ef.p9.TIER_1 ? e_.NW.string(e_.t.BkbUPD) : eP === ef.p9.TIER_0 ? e_.NW.string(e_.t.Px978f) : e_.NW.string(e_.t.LW5tCA)
+          children: eT === ef.p9.TIER_1 ? e_.NW.string(e_.t.BkbUPD) : eT === ef.p9.TIER_0 ? e_.NW.string(e_.t.Px978f) : e_.NW.string(e_.t.LW5tCA)
         })]
       });
     case em.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT:
@@ -766,9 +766,9 @@ let ej = 12633 == n.j ? i.memo(function() {
             var e, t;
             eE(null === (t = ep.metadata) || void 0 === t ? void 0 : null === (e = t.premiumSubscription) || void 0 === e ? void 0 : e.currentPeriodEnd)
           }
-        }), eP === ef.p9.TIER_1 ? e_.NW.formatToPlainString(e_.t.b6QUvb, {
+        }), eT === ef.p9.TIER_1 ? e_.NW.formatToPlainString(e_.t.b6QUvb, {
           daysLeft: ep.metadata.daysLeft
-        }) : eP === ef.p9.TIER_0 ? e_.NW.formatToPlainString(e_.t["tURZ/P"], {
+        }) : eT === ef.p9.TIER_0 ? e_.NW.formatToPlainString(e_.t["tURZ/P"], {
           daysLeft: ep.metadata.daysLeft
         }) : e_.NW.formatToPlainString(e_.t.AyC74O, {
           daysLeft: ep.metadata.daysLeft
@@ -778,7 +778,7 @@ let ej = 12633 == n.j ? i.memo(function() {
             var e, t;
             eE(null === (t = ep.metadata) || void 0 === t ? void 0 : null === (e = t.premiumSubscription) || void 0 === e ? void 0 : e.currentPeriodEnd), E.Z.open(em.oAB.SUBSCRIPTIONS)
           },
-          children: eP === ef.p9.TIER_1 ? e_.NW.string(e_.t.lboF5O) : eP === ef.p9.TIER_0 ? e_.NW.string(e_.t["4UPwOj"]) : e_.NW.string(e_.t["P/VvGR"])
+          children: eT === ef.p9.TIER_1 ? e_.NW.string(e_.t.lboF5O) : eT === ef.p9.TIER_0 ? e_.NW.string(e_.t["4UPwOj"]) : e_.NW.string(e_.t["P/VvGR"])
         })]
       });
     case em.kVF.BACK_TO_PREVIOUS_SCREEN:
@@ -872,7 +872,7 @@ let ej = 12633 == n.j ? i.memo(function() {
       let eQ = o()().add(5, "days").toDate();
       return (0, r.jsx)(Y.Z, {
         dismissCurrentNotice: () => {
-          (0, P.EW)(el.m9[em.kVF.PREMIUM_TIER_2_TRIAL_ENDING]), eE(eQ)
+          (0, T.EW)(el.m9[em.kVF.PREMIUM_TIER_2_TRIAL_ENDING]), eE(eQ)
         },
         subscriptionTier: ef.Si.TIER_2
       });

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r, i = n(442837),
   o = n(570140),
@@ -38,13 +38,13 @@ function d(e) {
 function f() {
   l = {}, c = {}
 }
-class _ extends(r = i.ZP.Store) {
+class p extends(r = i.ZP.Store) {
   getStickerPreview(e, t) {
     return (t === a.d.FirstThreadMessage ? c : l)[e]
   }
 }
-s(_, "displayName", "StickerMessagePreviewStore");
-let p = new _(o.Z, {
+s(p, "displayName", "StickerMessagePreviewStore");
+let _ = new p(o.Z, {
   ADD_STICKER_PREVIEW: u,
   CLEAR_STICKER_PREVIEW: d,
   LOGOUT: f

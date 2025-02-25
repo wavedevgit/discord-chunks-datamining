@@ -50,9 +50,9 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,7 +60,7 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -72,20 +72,20 @@ function h(e) {
   var {
     text: t,
     onClick: n
-  } = e, c = _(e, ["text", "onClick"]);
+  } = e, c = p(e, ["text", "onClick"]);
   let {
     profileType: d
-  } = (0, a.z)(), p = "string" == typeof t ? t.trim() : t;
-  if (null == p || "" === p) return null;
+  } = (0, a.z)(), _ = "string" == typeof t ? t.trim() : t;
+  if (null == _ || "" === _) return null;
   let h = () => d === s.y0.FULL_SIZE ? (0, r.jsx)(i.Text, f(u({
     color: "text-normal"
   }, c), {
-    children: p
+    children: _
   })) : (0, r.jsx)(i.Text, f(u({
     color: "text-normal"
   }, c), {
     children: (0, r.jsx)(o.Z, {
-      children: p
+      children: _
     })
   }));
   return null != n ? (0, r.jsx)(i.P3F, {

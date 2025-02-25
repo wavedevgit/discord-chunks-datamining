@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Y: () => h,
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -14,16 +14,16 @@ var r = n(200651),
   u = n(699516),
   d = n(823379),
   f = n(785717),
-  _ = n(981631),
-  p = n(388032);
+  p = n(981631),
+  _ = n(388032);
 
 function h(e) {
   let {
     user: t,
     analyticsLocation: n
-  } = e, r = (0, o.e7)([u.Z], () => u.Z.getRelationshipType(t.id) === _.OGo.PENDING_OUTGOING), {
+  } = e, r = (0, o.e7)([u.Z], () => u.Z.getRelationshipType(t.id) === p.OGo.PENDING_OUTGOING), {
     trackUserProfileAction: a
-  } = (0, f.KZ)(), p = (0, s.Z)({
+  } = (0, f.KZ)(), _ = (0, s.Z)({
     user: t,
     location: n,
     onFriendRemove: () => a({
@@ -34,13 +34,13 @@ function h(e) {
     })
   }), h = (0, l.Z)({
     user: t
-  }), g = (0, c.Z)({
+  }), m = (0, c.Z)({
     user: t
   });
-  return i.useMemo(() => [r ? null : p, h, g].filter(d.lm), [h, p, r, g])
+  return i.useMemo(() => [r ? null : _, h, m].filter(d.lm), [h, _, r, m])
 }
 
-function g(e) {
+function m(e) {
   let {
     menuItems: t,
     children: n
@@ -54,7 +54,7 @@ function g(e) {
         navId: "user-profile-friend-request-buttons",
         onSelect: void 0,
         onClose: n,
-        "aria-label": p.NW.string(p.t.Jszi3N),
+        "aria-label": _.NW.string(_.t.Jszi3N),
         children: t
       })
     },

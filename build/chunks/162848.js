@@ -58,25 +58,25 @@ function a(e, t) {
     if (e && (n.interval = parseInt(e[0], 10)), a.isDone()) throw Error("Unexpected end");
     switch (a.symbol) {
       case "day(s)":
-        n.freq = i.Ci.DAILY, a.nextSymbol() && (c(), p());
+        n.freq = i.Ci.DAILY, a.nextSymbol() && (c(), _());
         break;
       case "weekday(s)":
-        n.freq = i.Ci.WEEKLY, n.byweekday = [i.Ci.MO, i.Ci.TU, i.Ci.WE, i.Ci.TH, i.Ci.FR], a.nextSymbol(), p();
+        n.freq = i.Ci.WEEKLY, n.byweekday = [i.Ci.MO, i.Ci.TU, i.Ci.WE, i.Ci.TH, i.Ci.FR], a.nextSymbol(), _();
         break;
       case "week(s)":
-        n.freq = i.Ci.WEEKLY, a.nextSymbol() && (l(), p());
+        n.freq = i.Ci.WEEKLY, a.nextSymbol() && (l(), _());
         break;
       case "hour(s)":
-        n.freq = i.Ci.HOURLY, a.nextSymbol() && (l(), p());
+        n.freq = i.Ci.HOURLY, a.nextSymbol() && (l(), _());
         break;
       case "minute(s)":
-        n.freq = i.Ci.MINUTELY, a.nextSymbol() && (l(), p());
+        n.freq = i.Ci.MINUTELY, a.nextSymbol() && (l(), _());
         break;
       case "month(s)":
-        n.freq = i.Ci.MONTHLY, a.nextSymbol() && (l(), p());
+        n.freq = i.Ci.MONTHLY, a.nextSymbol() && (l(), _());
         break;
       case "year(s)":
-        n.freq = i.Ci.YEARLY, a.nextSymbol() && (l(), p());
+        n.freq = i.Ci.YEARLY, a.nextSymbol() && (l(), _());
         break;
       case "monday":
       case "tuesday":
@@ -94,7 +94,7 @@ function a(e, t) {
           if (!r) throw Error("Unexpected symbol " + a.symbol + ", expected weekday");
           n.byweekday.push(i.Ci[r]), a.nextSymbol()
         }
-        _(), p();
+        p(), _();
         break;
       case "january":
       case "february":
@@ -115,7 +115,7 @@ function a(e, t) {
           if (!o) throw Error("Unexpected symbol " + a.symbol + ", expected month");
           n.bymonth.push(o), a.nextSymbol()
         }
-        l(), p();
+        l(), _();
         break;
       default:
         throw Error("Unknown symbol")
@@ -225,7 +225,7 @@ function a(e, t) {
     }
   }
 
-  function _() {
+  function p() {
     a.accept("on"), a.accept("the");
     var e = f();
     if (e)
@@ -235,7 +235,7 @@ function a(e, t) {
       }
   }
 
-  function p() {
+  function _() {
     if ("until" === a.symbol) {
       var e = Date.parse(a.text);
       if (!e) throw Error("Cannot parse until date:" + a.text);

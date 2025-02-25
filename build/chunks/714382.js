@@ -38,40 +38,40 @@ function l(e, t, n) {
     u = t,
     d = [],
     f = d,
-    _ = !1;
+    p = !1;
 
-  function p() {
+  function _() {
     f === d && (f = d.slice())
   }
 
   function h() {
-    if (_) throw Error(r(3));
+    if (p) throw Error(r(3));
     return u
   }
 
-  function g(e) {
+  function m(e) {
     if ("function" != typeof e) throw Error(r(4));
-    if (_) throw Error(r(5));
+    if (p) throw Error(r(5));
     var t = !0;
-    return p(), f.push(e),
+    return _(), f.push(e),
       function() {
         if (t) {
-          if (_) throw Error(r(6));
-          t = !1, p();
+          if (p) throw Error(r(6));
+          t = !1, _();
           var n = f.indexOf(e);
           f.splice(n, 1), d = null
         }
       }
   }
 
-  function m(e) {
+  function g(e) {
     if (!s(e)) throw Error(r(7));
     if (void 0 === e.type) throw Error(r(8));
-    if (_) throw Error(r(9));
+    if (p) throw Error(r(9));
     try {
-      _ = !0, u = c(u, e)
+      p = !0, u = c(u, e)
     } finally {
-      _ = !1
+      p = !1
     }
     for (var t = d = f, n = 0; n < t.length; n++)(0, t[n])();
     return e
@@ -79,13 +79,13 @@ function l(e, t, n) {
 
   function E(e) {
     if ("function" != typeof e) throw Error(r(10));
-    c = e, m({
+    c = e, g({
       type: a.REPLACE
     })
   }
 
   function v() {
-    var e, t = g;
+    var e, t = m;
     return (e = {
       subscribe: function(e) {
         if ("object" != typeof e || null === e) throw Error(r(11));
@@ -101,11 +101,11 @@ function l(e, t, n) {
       return this
     }, e
   }
-  return m({
+  return g({
     type: a.INIT
   }), (o = {
-    dispatch: m,
-    subscribe: g,
+    dispatch: g,
+    subscribe: m,
     getState: h,
     replaceReducer: E
   })[i] = v, o

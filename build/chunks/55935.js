@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   Hg: () => S,
-  KC: () => g,
+  KC: () => m,
   QX: () => N,
   TD: () => T,
   Xf: () => b,
   Y4: () => v,
-  _w: () => m,
+  _w: () => g,
   vc: () => E,
   wY: () => h
 });
@@ -21,9 +21,9 @@ var r = n(913527),
 let u = new a.Z("DateUtils"),
   d = 6e4,
   f = 864e5,
-  _ = Object.create(null);
+  p = Object.create(null);
 
-function p(e) {
+function _(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = e;
   "string" == typeof e || "number" == typeof e || e instanceof Date || (u.error("Invalid date given to startOfDay", {
@@ -35,14 +35,14 @@ function p(e) {
 }
 
 function h(e, t) {
-  return Math.floor((p(e, !1) - p(t, !1)) / f)
+  return Math.floor((_(e, !1) - _(t, !1)) / f)
 }
 
-function g(e, t) {
+function m(e, t) {
   return Math.abs(+e - +t) <= f && e.getDate() === t.getDate()
 }
 
-function m(e, t, n) {
+function g(e, t, n) {
   return Math.abs(e.valueOf() - t.valueOf()) < n
 }
 
@@ -50,8 +50,8 @@ function E(e, t) {
   let n = y(e).locale(),
     r = l.hg.getSetting(),
     i = "".concat(n, ":").concat(t, ":").concat(r),
-    a = _[i];
-  return null == a && (a = _[i] = (0, o.Z)(t)), a(O(e))
+    a = p[i];
+  return null == a && (a = p[i] = (0, o.Z)(t)), a(O(e))
 }
 
 function v(e) {
@@ -85,7 +85,7 @@ function S(e) {
   return "sameElse" == (t = o < -1 ? "sameElse" : o < 0 ? "lastDay" : o < 1 ? "sameDay" : o < 2 ? "nextDay" : "sameElse") ? E(e, "LLL") : E(e, n.calendar(t, i()(e), i()(r)))
 }
 s.default.addChangeListener(() => {
-  _ = Object.create(null)
+  p = Object.create(null)
 });
 let I = [{
   key: "days",

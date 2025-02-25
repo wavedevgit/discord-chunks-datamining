@@ -1,6 +1,6 @@
 /** Chunk was on 11814 **/
 n.d(t, {
-  X: () => P
+  X: () => T
 }), n(789020), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -37,7 +37,7 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function T(e) {
   }
   return e
 }
-class P extends i.Component {
+class T extends i.Component {
   render() {
     let {
       type: e,
@@ -76,7 +76,7 @@ class P extends i.Component {
       }, {
         autoTrackExposure: !this.props.isForumToolbar
       }),
-      P = {
+      T = {
         size: "sm",
         color: "currentColor",
         className: o()(j.icon, {
@@ -98,7 +98,7 @@ class P extends i.Component {
           color: d.FGA.PRIMARY,
           "aria-label": m ? N.NW.string(N.t.Kfcszs) : N.NW.string(N.t.lfIHs7),
           tooltipClassName: j.__invalid_addReactionTooltip,
-          children: (0, r.jsxs)(d.P3F, (a = T({}, e), s = s = {
+          children: (0, r.jsxs)(d.P3F, (a = P({}, e), s = s = {
             tabIndex: l,
             onClick: e => {
               this.handleAddReactionClick(e)
@@ -109,7 +109,7 @@ class P extends i.Component {
               [j.active]: c,
               [j.largeReactionBtn]: S
             }, n),
-            children: [m ? (0, r.jsx)(d.Pt5, T({}, P)) : (0, r.jsx)(d.EO4, T({}, P)), i]
+            children: [m ? (0, r.jsx)(d.Pt5, P({}, T)) : (0, r.jsx)(d.EO4, P({}, T)), i]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -163,7 +163,7 @@ class P extends i.Component {
         type: n,
         channel: i,
         message: a
-      } = this.props, o = T({
+      } = this.props, o = P({
         openPopoutType: "message_reaction_emoji_picker"
       }, n === x.O.BURST && {
         openPopoutType: "message_super_reaction_emoji_picker",

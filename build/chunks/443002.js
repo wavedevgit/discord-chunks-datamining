@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(174604),
   d = n(302175),
   f = n(626135),
-  _ = n(724884),
-  p = n(355045),
+  p = n(724884),
+  _ = n(355045),
   h = n(290799),
-  g = n(394769),
-  m = n(555932),
+  m = n(394769),
+  g = n(555932),
   E = n(808189),
   v = n(362948),
   b = n(245004),
@@ -87,11 +87,11 @@ let T = function(e) {
             color: "always-white",
             variant: "display-lg",
             children: S.NW.string(S.t.N4sqzM)
-          }), (0, r.jsx)(p.Z, {
+          }), (0, r.jsx)(_.Z, {
             guild: n,
             closeLayer: D,
             onCtaVisibilityChange: A
-          }), (0, r.jsx)(m.Z, {
+          }), (0, r.jsx)(g.Z, {
             guild: n
           }), (0, r.jsx)(E.Z, {
             guild: n
@@ -111,7 +111,7 @@ let T = function(e) {
           children: [(0, r.jsx)(v.Z, {
             className: I.tierComparisonTable,
             guild: n
-          }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(h.Z, {})]
+          }), (0, r.jsx)(p.Z, {}), (0, r.jsx)(h.Z, {})]
         }), (0, r.jsx)(y.A, {}), (0, r.jsx)("div", {
           className: I.lowerBodyBackgroundImage
         })]
@@ -121,7 +121,7 @@ let T = function(e) {
           className: I.persistentCtaSpacer
         })
       })]
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(m.Z, {
       guild: n,
       isVisible: !N,
       closeLayer: D

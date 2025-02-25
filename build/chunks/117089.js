@@ -23,12 +23,12 @@ function o(e, t, n, o, a, s) {
   if ((0, i.cS)(c)) return l;
   l.nwdaymask = (0, i.rx)(0, n);
   for (var u = 0; u < c.length; u++)
-    for (var d = c[u], f = d[0], _ = d[1] - 1, p = 0; p < s.bynweekday.length; p++) {
+    for (var d = c[u], f = d[0], p = d[1] - 1, _ = 0; _ < s.bynweekday.length; _++) {
       var h = void 0,
-        g = s.bynweekday[p],
-        m = g[0],
-        E = g[1];
-      E < 0 ? (h = _ + (E + 1) * 7, h -= (0, i.Vy)(a[h] - m, 7)) : (h = f + (E - 1) * 7, h += (0, i.Vy)(7 - a[h] + m, 7)), f <= h && h <= _ && (l.nwdaymask[h] = 1)
+        m = s.bynweekday[_],
+        g = m[0],
+        E = m[1];
+      E < 0 ? (h = p + (E + 1) * 7, h -= (0, i.Vy)(a[h] - g, 7)) : (h = f + (E - 1) * 7, h += (0, i.Vy)(7 - a[h] + g, 7)), f <= h && h <= p && (l.nwdaymask[h] = 1)
     }
   return l
 }

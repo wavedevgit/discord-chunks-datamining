@@ -9,11 +9,11 @@ var r = n(466293),
   u = 2,
   d = "[object Boolean]",
   f = "[object Date]",
-  _ = "[object Error]",
-  p = "[object Map]",
+  p = "[object Error]",
+  _ = "[object Map]",
   h = "[object Number]",
-  g = "[object RegExp]",
-  m = "[object Set]",
+  m = "[object RegExp]",
+  g = "[object Set]",
   E = "[object String]",
   v = "[object Symbol]",
   b = "[object ArrayBuffer]",
@@ -33,14 +33,14 @@ function I(e, t, n, r, O, I, T) {
     case f:
     case h:
       return o(+e, +t);
-    case _:
+    case p:
       return e.name == t.name && e.message == t.message;
-    case g:
+    case m:
     case E:
       return e == t + "";
-    case p:
+    case _:
       var N = s;
-    case m:
+    case g:
       var A = r & c;
       if (N || (N = l), e.size != t.size && !A) break;
       var C = T.get(e);

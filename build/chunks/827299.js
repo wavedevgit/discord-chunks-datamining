@@ -38,12 +38,12 @@ function u(e, t, n) {
 }
 var d = new WeakMap,
   f = new WeakMap;
-class _ {
+class p {
   doesDataNeedValidation(e) {
     return !0 === l(this.search(e), f).isStale
   }
   getOrCreate(e) {
-    return null == l(this, d)[e] && (l(this, d)[e] = new _), l(this, d)[e]
+    return null == l(this, d)[e] && (l(this, d)[e] = new p), l(this, d)[e]
   }
   getState(e) {
     var t;
@@ -59,7 +59,7 @@ class _ {
     l(t, f).isLoading = !0, l(t, f).error = void 0
   }
   search(e) {
-    if (null == e) return new _;
+    if (null == e) return new p;
     let t = this;
     for (let n of e) t = t.getOrCreate(n);
     return t
@@ -78,9 +78,9 @@ class _ {
     let r = Object.values(l(t, d));
     for (; r.length > 0;) {
       let e = r.pop();
-      null != e && (l(e, f).isStale = !0, _.resetErrorState(e), r.push(...Object.values(l(e, d))), "function" == typeof l(e, f).validateData && n.push(l(e, f).validateData))
+      null != e && (l(e, f).isStale = !0, p.resetErrorState(e), r.push(...Object.values(l(e, d))), "function" == typeof l(e, f).validateData && n.push(l(e, f).validateData))
     }
-    l(t, f).isStale = !0, _.resetErrorState(t), n.forEach(e => e())
+    l(t, f).isStale = !0, p.resetErrorState(t), n.forEach(e => e())
   }
   static resetErrorState(e) {
     l(e, f).error = void 0, l(e, f).fetchFailCounter = 0
@@ -97,9 +97,9 @@ class _ {
     })
   }
 }
-let p = new _,
+let _ = new p,
   h = 5;
-class g extends Error {
+class m extends Error {
   setStatus(e) {
     this.status = e
   }
@@ -108,14 +108,14 @@ class g extends Error {
   }
 }
 
-function m(e) {
+function g(e) {
   if (e instanceof Error) return e;
   if ("object" == typeof e) {
     if ("body" in e && null != e.body && "message" in e.body) {
-      let t = new g(String(e.body.message));
+      let t = new m(String(e.body.message));
       return t.setStatus(e.status), t
     }
-    let t = new g(Object.entries(e).map((e, t) => "".concat(e, ": [").concat(String(t), "]")).join(","));
+    let t = new m(Object.entries(e).map((e, t) => "".concat(e, ": [").concat(String(t), "]")).join(","));
     return t.setStatus(e.status), t
   }
   return Error(String(e))
@@ -133,32 +133,32 @@ function E(e, t) {
   return function() {
     for (var t = arguments.length, u = Array(t), d = 0; d < t; d++) u[d] = arguments[d];
     let f = (0, r.useMemo)(() => l(...u), u),
-      _ = c(Array.isArray(e) ? e : [e], () => o(...u), u),
-      h = p.getState(f),
+      p = c(Array.isArray(e) ? e : [e], () => o(...u), u),
+      h = _.getState(f),
       E = h.error,
       v = !0 === h.isLoading,
       b = (0, r.useRef)(u),
       y = (0, r.useCallback)(() => {
         if (null == f || !0 === v) return;
         let e = !1;
-        c === i.Wu ? _.length > 0 && (e = !0) : null != _ && (e = !0);
-        let t = p.doesDataNeedValidation(f),
+        c === i.Wu ? p.length > 0 && (e = !0) : null != p && (e = !0);
+        let t = _.doesDataNeedValidation(f),
           r = null != E;
         if ((e || r) && !t) return;
-        p.loadingStart(f);
+        _.loadingStart(f);
         let o = new AbortController;
-        return a(o.signal, ...b.current).then(e => (p.loadingDone(f, !0), e)).catch(e => {
-          if (p.loadingDone(f), o.signal.aborted) return;
-          let t = m(e);
-          (h.fetchFailCounter >= s || !(t instanceof g) || !(t.status >= 500) && 429 !== t.status) && p.setError(f, t)
+        return a(o.signal, ...b.current).then(e => (_.loadingDone(f, !0), e)).catch(e => {
+          if (_.loadingDone(f), o.signal.aborted) return;
+          let t = g(e);
+          (h.fetchFailCounter >= s || !(t instanceof m) || !(t.status >= 500) && 429 !== t.status) && _.setError(f, t)
         }), () => {
           n && o.abort()
         }
-      }, [_, h.fetchFailCounter, E, f, v]);
-    return (0, r.useEffect)(() => (y(), p.subscribe(f, y), () => {
-      p.subscribe(f, void 0)
+      }, [p, h.fetchFailCounter, E, f, v]);
+    return (0, r.useEffect)(() => (y(), _.subscribe(f, y), () => {
+      _.subscribe(f, void 0)
     }), [f, y]), {
-      data: _,
+      data: p,
       error: E,
       isLoading: v
     }

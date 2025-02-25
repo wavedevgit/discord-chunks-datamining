@@ -24,11 +24,11 @@ function u(e) {
       unread: u = !1,
       mentionCount: d = 0,
       userCount: f,
-      embeddedActivitiesCount: _,
-      isSubscriptionGated: p,
+      embeddedActivitiesCount: p,
+      isSubscriptionGated: _,
       needSubscriptionToAccess: h
     } = e,
-    g = (0, a.F6)(n, o.default, i.Z);
+    m = (0, a.F6)(n, o.default, i.Z);
   switch (n.type) {
     case s.d4z.DM:
       t = u ? l.t.F2MZsr : l.t.fYqXVV;
@@ -46,28 +46,28 @@ function u(e) {
       t = d > 0 ? l.t.sDKIpq : u ? l.t.VM7z8f : l.t.WJ3MPj;
       break;
     case s.d4z.GUILD_VOICE:
-      let m = [l.NW.formatToPlainString(l.t.bkpadH, {
+      let g = [l.NW.formatToPlainString(l.t.bkpadH, {
         channelName: n.name
       })];
-      if (d > 0 && m.push(l.NW.formatToPlainString(l.t["3l1GOz"], {
+      if (d > 0 && g.push(l.NW.formatToPlainString(l.t["3l1GOz"], {
           mentionCount: d
-        })), u && m.push(l.NW.string(l.t.x5zAGR)), null != f) {
+        })), u && g.push(l.NW.string(l.t.x5zAGR)), null != f) {
         let e = n.userLimit;
-        null != e && e > 0 ? m.push(l.NW.formatToPlainString(l.t["6qgTOD"], {
+        null != e && e > 0 ? g.push(l.NW.formatToPlainString(l.t["6qgTOD"], {
           userCount: f,
           limit: e
-        })) : m.push(l.NW.formatToPlainString(l.t.GNIiAA, {
+        })) : g.push(l.NW.formatToPlainString(l.t.GNIiAA, {
           userCount: f
         }))
       }
-      null != _ && _ > 0 && m.push(l.NW.formatToPlainString(l.t.O6PLYW, {
-        activitiesCount: _
+      null != p && p > 0 && g.push(l.NW.formatToPlainString(l.t.O6PLYW, {
+        activitiesCount: p
       }));
       let E = c({
-        isSubscriptionGated: p,
+        isSubscriptionGated: _,
         needSubscriptionToAccess: h
       });
-      return null != E && m.push(E), m.join(", ");
+      return null != E && g.push(E), g.join(", ");
     case s.d4z.GUILD_STAGE_VOICE:
       t = l.t.TPPk2d;
       break;
@@ -75,11 +75,11 @@ function u(e) {
       t = r.Ec.has(n.type) ? d > 0 ? l.t["ZL7+Iy"] : u ? l.t.YlVvmZ : l.t["0nZpiI"] : d > 0 ? l.t.g8ONMz : u ? l.t.smf1CQ : l.t.s0JADg
   }
   let v = [l.NW.formatToPlainString(t, {
-      channelName: g,
+      channelName: m,
       mentionCount: d
     })],
     b = c({
-      isSubscriptionGated: p,
+      isSubscriptionGated: _,
       needSubscriptionToAccess: h
     });
   return null != b && v.push(b), v.join(", ")

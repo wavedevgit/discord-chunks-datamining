@@ -24,11 +24,11 @@ function c(e, t) {
     u = t.weeks ? (0, s.Z)(t.weeks) : 0,
     d = t.days ? (0, s.Z)(t.days) : 0,
     f = t.hours ? (0, s.Z)(t.hours) : 0,
-    _ = t.minutes ? (0, s.Z)(t.minutes) : 0,
-    p = t.seconds ? (0, s.Z)(t.seconds) : 0,
+    p = t.minutes ? (0, s.Z)(t.minutes) : 0,
+    _ = t.seconds ? (0, s.Z)(t.seconds) : 0,
     h = (0, o.default)(e),
-    g = c || n ? (0, i.default)(h, c + 12 * n) : h,
-    m = d || u ? (0, r.default)(g, d + 7 * u) : g,
-    E = 1e3 * (p + 60 * (_ + 60 * f));
-  return new Date(m.getTime() + E)
+    m = c || n ? (0, i.default)(h, c + 12 * n) : h,
+    g = d || u ? (0, r.default)(m, d + 7 * u) : m,
+    E = 1e3 * (_ + 60 * (p + 60 * f));
+  return new Date(g.getTime() + E)
 }

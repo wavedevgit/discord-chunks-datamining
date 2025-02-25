@@ -77,9 +77,9 @@ var s = {
       if (f !== t.charCodeAt(a + d)) break;
       47 === f && (u = d)
     }
-    var _ = "";
-    for (d = n + u + 1; d <= r; ++d)(d === r || 47 === e.charCodeAt(d)) && (0 === _.length ? _ += ".." : _ += "/..");
-    return _.length > 0 ? _ + t.slice(a + u) : (a += u, 47 === t.charCodeAt(a) && ++a, t.slice(a))
+    var p = "";
+    for (d = n + u + 1; d <= r; ++d)(d === r || 47 === e.charCodeAt(d)) && (0 === p.length ? p += ".." : p += "/..");
+    return p.length > 0 ? p + t.slice(a + u) : (a += u, 47 === t.charCodeAt(a) && ++a, t.slice(a))
   },
   _makeLong: function(e) {
     return e

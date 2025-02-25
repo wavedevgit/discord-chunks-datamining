@@ -50,9 +50,9 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,7 +60,7 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -73,12 +73,12 @@ function h(e) {
     location: t,
     applicationId: n,
     centerButton: c = !1
-  } = e, d = _(e, ["location", "applicationId", "centerButton"]);
-  let p = (0, a.Z)({
+  } = e, d = p(e, ["location", "applicationId", "centerButton"]);
+  let _ = (0, a.Z)({
       location: "LeaveActivityButton"
     }),
     h = c ? s.d : s.Z,
-    g = () => {
+    m = () => {
       o.Z.leaveActivity({
         location: t,
         applicationId: n,
@@ -86,8 +86,8 @@ function h(e) {
       })
     };
   return (0, r.jsx)(h, f(u({}, d), {
-    fullRegionButton: p,
-    onClick: g,
+    fullRegionButton: _,
+    onClick: m,
     iconComponent: i.PBZ,
     label: l.NW.string(l.t["R/FK4O"])
   }))

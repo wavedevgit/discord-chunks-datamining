@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -45,13 +45,13 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -69,7 +69,7 @@ function h(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   return e === c.P.REACT ? {
     position: "left",
     align: "top",
@@ -83,22 +83,22 @@ function g(e, t) {
   }
 }
 
-function m(e) {
+function g(e) {
   var {
     user: t,
     guildId: n,
     channelId: u,
     profileType: f,
     onClose: h,
-    children: m
-  } = e, E = p(e, ["user", "guildId", "channelId", "profileType", "onClose", "children"]);
+    children: g
+  } = e, E = _(e, ["user", "guildId", "channelId", "profileType", "onClose", "children"]);
   let {
     interactionType: v,
     interactionSource: b,
     resetInteraction: y,
     interactionSourceId: O
   } = (0, o.Xo)(), S = f === c.y0.FULL_SIZE ? (0, l.z)(t.id, n) : void 0, I = b === E.sourceType && v === c.P.REACT, T = b === E.sourceType && v === c.P.REPLY, N = (I || T) && O === E.sourceId;
-  return (0, r.jsx)(i.yRy, _(d({
+  return (0, r.jsx)(i.yRy, p(d({
     renderPopout: e => {
       let {
         setPopoutRef: i
@@ -117,7 +117,7 @@ function m(e) {
       y(), null == h || h()
     },
     shouldShow: N
-  }, g(v, f)), {
-    children: m
+  }, m(v, f)), {
+    children: g
   }))
 }

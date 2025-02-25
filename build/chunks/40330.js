@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p,
-  p: () => _
+  Z: () => _,
+  p: () => p
 });
 var r = n(200651);
 n(192379);
@@ -27,7 +27,7 @@ let f = e => {
       title: i
     })
   },
-  _ = e => {
+  p = e => {
     let {
       filename: t,
       size: n,
@@ -35,7 +35,7 @@ let f = e => {
       onCancelUpload: o,
       onClick: a,
       onContextMenu: c
-    } = e, _ = 100 === i, p = !_ && n > 0;
+    } = e, p = 100 === i, _ = !p && n > 0;
     return (0, r.jsx)("div", {
       className: d.fileWrapper,
       children: (0, r.jsxs)("div", {
@@ -51,18 +51,18 @@ let f = e => {
               onClick: a,
               onContextMenu: c,
               children: t
-            }), p ? (0, r.jsx)("div", {
+            }), _ ? (0, r.jsx)("div", {
               className: d.size,
               children: "— ".concat(s().filesize(n))
             }) : null]
           }), (0, r.jsx)("div", {
             className: d.progressContainer,
-            children: _ ? u.NW.string(u.t.jfKTen) : (0, r.jsx)(l.Exd, {
+            children: p ? u.NW.string(u.t.jfKTen) : (0, r.jsx)(l.Exd, {
               className: d.progress,
               percent: i
             })
           })]
-        }), _ ? null : (0, r.jsx)(l.P3F, {
+        }), p ? null : (0, r.jsx)(l.P3F, {
           onClick: o,
           children: (0, r.jsx)(l.Dio, {
             size: "md",
@@ -73,7 +73,7 @@ let f = e => {
       })
     })
   },
-  p = e => {
+  _ = e => {
     let {
       className: t,
       url: n,
@@ -81,7 +81,7 @@ let f = e => {
       fileSize: a,
       onClick: c,
       onContextMenu: u,
-      renderAdjacentContent: _
+      renderAdjacentContent: p
     } = e;
     return (0, r.jsxs)("div", {
       className: o()(d.fileWrapper, t),
@@ -106,6 +106,6 @@ let f = e => {
             children: s().filesize(a)
           })]
         })]
-      }), null != _ && _()]
+      }), null != p && p()]
     })
   }

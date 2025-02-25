@@ -12,11 +12,11 @@ var r, i = n(392711),
   u = n(314897),
   d = n(283595),
   f = n(129542),
-  _ = n(70956),
-  p = n(780570),
+  p = n(70956),
+  _ = n(780570),
   h = n(358085),
-  g = n(804739),
-  m = n(941128),
+  m = n(804739),
+  g = n(941128),
   E = n(391690),
   v = n(981631);
 
@@ -60,7 +60,7 @@ function S(e, t) {
 }
 let I = 200,
   T = 200,
-  N = +_.Z.Millis.MINUTE,
+  N = +p.Z.Millis.MINUTE,
   A = {},
   C = "content",
   R = "file://",
@@ -92,22 +92,22 @@ function B(e) {
     launch_commands: c,
     launch_options: u,
     storage: d,
-    install_path: _,
-    installed_size: p,
-    repairing: g
+    install_path: p,
+    installed_size: _,
+    repairing: m
   } = e, {
-    should_patch: m
+    should_patch: g
   } = e;
-  switch (null == m && (m = !0), e.state.type) {
+  switch (null == g && (g = !0), e.state.type) {
     case v.DJE.COMPLETE: {
       let e;
       let E = {},
         b = null;
-      if (g) e = v.vxO.REPAIRING;
+      if (m) e = v.vxO.REPAIRING;
       else if (null == t) e = v.vxO.INSTALL_REQUIRED;
-      else if (m && (t !== n || null != r && 0 !== o().difference(r, i).length)) e = v.vxO.UPDATE_REQUIRED;
-      else if (e = v.vxO.UP_TO_DATE, null != _) {
-        let e = l.Z.fileManager.join(_, C),
+      else if (g && (t !== n || null != r && 0 !== o().difference(r, i).length)) e = v.vxO.UPDATE_REQUIRED;
+      else if (e = v.vxO.UP_TO_DATE, null != p) {
+        let e = l.Z.fileManager.join(p, C),
           t = (0, f.D)();
         if (null != u && 0 !== u.length) {
           for (let n of (t !== v.QR$.WIN64 || G(t, u) || (t = v.QR$.WIN32), u))
@@ -149,11 +149,11 @@ function B(e) {
         manifestIds: r,
         targetBuildId: n,
         targetManifestIds: i,
-        installPath: _,
-        installedSize: p,
+        installPath: p,
+        installedSize: _,
         launchOptions: E,
         defaultLaunchOptionId: b,
-        shouldPatch: m,
+        shouldPatch: g,
         storage: d
       }
     }
@@ -169,7 +169,7 @@ function B(e) {
         paused: E
       } = e.state, b = l.type;
       return {
-        type: o = b === v.f07.UNINSTALLING ? v.vxO.UNINSTALLING : g ? v.vxO.REPAIRING : null == t ? v.vxO.INSTALLING : v.vxO.UPDATING,
+        type: o = b === v.f07.UNINSTALLING ? v.vxO.UNINSTALLING : m ? v.vxO.REPAIRING : null == t ? v.vxO.INSTALLING : v.vxO.UPDATING,
         stage: b,
         applicationId: a,
         branchId: s,
@@ -177,15 +177,15 @@ function B(e) {
         manifestIds: r,
         targetBuildId: n,
         targetManifestIds: i,
-        installPath: _,
-        installedSize: p,
+        installPath: p,
+        installedSize: _,
         diskProgress: c,
         networkProgress: u,
         readerProgress: d,
         progress: f,
         total: h,
         paused: E,
-        shouldPatch: m
+        shouldPatch: g
       }
     }
   }
@@ -252,7 +252,7 @@ function X(e) {
     o = !1;
   for (let e in r)
     for (let t in r[e]) {
-      let a = (0, p.Tu)(e, t);
+      let a = (0, _.Tu)(e, t);
       if (n[a] = B(r[e][t]), null != A[a]) {
         let e = Q(n, a, F);
         e > 0 && K(D += e);
@@ -267,7 +267,7 @@ function X(e) {
             case v.f07.VERIFYING:
             case v.f07.REPAIRING:
             case v.f07.POST_INSTALL_SCRIPTS:
-              c.Z.setProgress("dispatch_application_progress", (0, p.xI)(e.progress, e.total) / 100), o = !0
+              c.Z.setProgress("dispatch_application_progress", (0, _.xI)(e.progress, e.total) / 100), o = !0
           }
         }
       }
@@ -280,7 +280,7 @@ function X(e) {
             branchId: t,
             installationPath: r
           })
-        }), -1 === m.Z.getQueuePosition(e, t) && (n[a].type === v.vxO.INSTALLING || n[a].type === v.vxO.UPDATING) && d.Z.hasApplication(e, t) && E.Z.shouldBeInstalled(e, t) && s.Z.wait(() => {
+        }), -1 === g.Z.getQueuePosition(e, t) && (n[a].type === v.vxO.INSTALLING || n[a].type === v.vxO.UPDATING) && d.Z.hasApplication(e, t) && E.Z.shouldBeInstalled(e, t) && s.Z.wait(() => {
           s.Z.dispatch({
             type: "DISPATCH_APPLICATION_UPDATE",
             applicationId: e,
@@ -297,32 +297,32 @@ class J extends(r = a.ZP.Store) {
     this.waitFor(u.default)
   }
   getState(e, t) {
-    return A[(0, p.Tu)(e, t)]
+    return A[(0, _.Tu)(e, t)]
   }
   isUpToDate(e, t) {
-    let n = A[(0, p.Tu)(e, t)];
+    let n = A[(0, _.Tu)(e, t)];
     return null != n && n.type === v.vxO.UP_TO_DATE
   }
   shouldPatch(e, t) {
-    let n = A[(0, p.Tu)(e, t)];
+    let n = A[(0, _.Tu)(e, t)];
     return null != n && !0 === n.shouldPatch
   }
   isInstalled(e, t) {
-    let n = A[(0, p.Tu)(e, t)];
+    let n = A[(0, _.Tu)(e, t)];
     return null != n ? n.type !== v.vxO.UNINSTALLING : E.Z.shouldBeInstalled(e, t)
   }
   supportsCloudSync(e, t) {
     null == t && (t = e);
-    let n = A[(0, p.Tu)(e, t)];
+    let n = A[(0, _.Tu)(e, t)];
     return null != n && null != n.storage && !!n.storage.sync
   }
   isLaunchable(e, t) {
-    if (!(0, g.Q)()) return !1;
-    let n = A[(0, p.Tu)(e, t)];
+    if (!(0, m.Q)()) return !1;
+    let n = A[(0, _.Tu)(e, t)];
     return null != n && n.type === v.vxO.UP_TO_DATE && null != n.launchOptions && 0 !== n.launchOptions.length
   }
   getDefaultLaunchOption(e, t) {
-    let n = A[(0, p.Tu)(e, t)];
+    let n = A[(0, _.Tu)(e, t)];
     if (null == n) return null;
     let {
       defaultLaunchOptionId: r,
@@ -331,7 +331,7 @@ class J extends(r = a.ZP.Store) {
     return null == r || null == i ? null : i[r]
   }
   getLaunchOptions(e, t) {
-    let n = A[(0, p.Tu)(e, t)];
+    let n = A[(0, _.Tu)(e, t)];
     return null == n || null == n.launchOptions ? [] : Object.values(n.launchOptions)
   }
   getHistoricalTotalBytesRead() {

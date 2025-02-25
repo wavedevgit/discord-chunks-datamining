@@ -21,8 +21,8 @@ function c(e, t, n) {
 let u = null,
   d = {},
   f = !1,
-  _ = {},
-  p = {};
+  p = {},
+  _ = {};
 
 function h(e) {
   return {
@@ -41,15 +41,15 @@ function h(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   delete d[e], u === e && (u = null)
 }
 
-function m(e) {
+function g(e) {
   let {
     guildJoinRequests: t
   } = e;
-  f = !1, _ = {}, d = {}, t.forEach(e => {
+  f = !1, p = {}, d = {}, t.forEach(e => {
     let {
       guild_id: t
     } = e;
@@ -63,11 +63,11 @@ function E(e) {
     guildId: n
   } = e;
   if (null == t) {
-    g(n);
+    m(n);
     return
   }
   let r = h(t);
-  (0, l.d3)(r) ? g(n): d[n] = r
+  (0, l.d3)(r) ? m(n): d[n] = r
 }
 
 function v(e) {
@@ -79,21 +79,21 @@ function v(e) {
   let r = h(n),
     i = s.default.getCurrentUser();
   if (null != i && r.userId !== i.id) return !1;
-  (0, l.d3)(r) ? g(t): d[t] = r
+  (0, l.d3)(r) ? m(t): d[t] = r
 }
 
 function b(e) {
   let {
     guildId: t
   } = e;
-  g(t)
+  m(t)
 }
 
 function y(e) {
   let {
     guild: t
   } = e;
-  g(t.id)
+  m(t.id)
 }
 
 function O(e) {
@@ -115,7 +115,7 @@ function O(e) {
       features: a,
       splash: s
     } = n;
-    _[t] = {
+    p[t] = {
       id: t,
       name: i,
       icon: o,
@@ -137,7 +137,7 @@ function S(e) {
       icon: i,
       splash: o
     } = e;
-    _[t] = {
+    p[t] = {
       id: t,
       name: n,
       features: r,
@@ -152,7 +152,7 @@ function I(e) {
     guildId: t,
     cooldown: n
   } = e;
-  p[t] = null != n ? n : 0
+  _[t] = null != n ? n : 0
 }
 
 function T(e) {
@@ -168,7 +168,7 @@ function T(e) {
       features: o,
       splash: a
     } = t.guild;
-    _[n] = {
+    p[n] = {
       id: e,
       name: r,
       icon: i,
@@ -182,7 +182,7 @@ function N(e) {
   let {
     guildId: t
   } = e;
-  g(t)
+  m(t)
 }
 
 function A(e) {
@@ -203,7 +203,7 @@ class R extends(r = i.ZP.Store) {
     return Object.values(d).map(e => null == e ? void 0 : e.guildId).filter(e => null != e)
   }
   getJoinRequestGuild(e) {
-    return null != _[e] ? new a.ZP(_[e]) : null
+    return null != p[e] ? new a.ZP(p[e]) : null
   }
   get hasFetchedRequestToJoinGuilds() {
     return f
@@ -212,12 +212,12 @@ class R extends(r = i.ZP.Store) {
     return null != u
   }
   getCooldown(e) {
-    return p[e]
+    return _[e]
   }
 }
 c(R, "displayName", "UserGuildJoinRequestStore");
 let P = new R(o.Z, {
-  CONNECTION_OPEN: m,
+  CONNECTION_OPEN: g,
   GUILD_JOIN_REQUEST_UPDATE: v,
   GUILD_JOIN_REQUEST_CREATE: v,
   GUILD_JOIN_REQUEST_DELETE: b,

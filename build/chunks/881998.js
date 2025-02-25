@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   M: () => u,
-  Z: () => g
+  Z: () => m
 });
 var r, i = n(442837),
   o = n(570140),
@@ -24,11 +24,11 @@ var u = function(e) {
 let d = null,
   f = "NOT_FETCHED";
 
-function _() {
+function p() {
   f = "FETCHING"
 }
 
-function p(e) {
+function _(e) {
   f = "FETCHED", d = e.apps
 }
 class h extends(r = i.ZP.Store) {
@@ -43,7 +43,7 @@ class h extends(r = i.ZP.Store) {
   }
 }
 c(h, "displayName", "AuthorizedAppsStore");
-let g = new h(o.Z, {
-  USER_AUTHORIZED_APPS_REQUEST: _,
-  USER_AUTHORIZED_APPS_UPDATE: p
+let m = new h(o.Z, {
+  USER_AUTHORIZED_APPS_REQUEST: p,
+  USER_AUTHORIZED_APPS_UPDATE: _
 })

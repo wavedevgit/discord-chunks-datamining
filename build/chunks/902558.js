@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(268146),
   i = n(46973),
@@ -33,12 +33,12 @@ function f(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   var t;
   s.ZP.setCrashInformation(f(e.context), null !== (t = e.mediaSessionId) && void 0 !== t ? t : null)
 }
 
-function p(e) {
+function _(e) {
   var t;
   let n = (null !== (t = e.channelId) && void 0 !== t ? t : "unknown") + e.context;
   switch (e.state) {
@@ -63,13 +63,13 @@ function h(e) {
   }
   s.ZP.setCrashInformation(o, +!!n)
 }
-class g extends o.Z {
+class m extends o.Z {
   constructor(...e) {
     super(...e), c(this, "actions", {
-      RTC_CONNECTION_STATE: p,
+      RTC_CONNECTION_STATE: _,
       RTC_CONNECTION_VIDEO: h,
-      MEDIA_SESSION_JOINED: _
+      MEDIA_SESSION_JOINED: p
     })
   }
 }
-let m = new g
+let g = new m

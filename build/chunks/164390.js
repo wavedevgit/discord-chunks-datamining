@@ -49,8 +49,8 @@ function l(e, r, i, o, a, c, u) {
     else {
       var d, f = Object.keys(e);
       for (d = 0; d < f.length; d++) {
-        var _ = f[d];
-        l(e[_], _, d, o, e, c, u)
+        var p = f[d];
+        l(e[p], p, d, o, e, c, u)
       }
     }
     o.pop()
@@ -79,8 +79,8 @@ function u(e, t, n, a) {
 
 function d(e, i, o, a, l, u, f) {
   if (u += 1, "object" == typeof e && null !== e) {
-    for (_ = 0; _ < a.length; _++)
-      if (a[_] === e) {
+    for (p = 0; p < a.length; p++)
+      if (a[p] === e) {
         s(n, e, i, l);
         return
       } try {
@@ -93,16 +93,16 @@ function d(e, i, o, a, l, u, f) {
       return
     }
     if (a.push(e), Array.isArray(e))
-      for (_ = 0; _ < e.length; _++) d(e[_], _, _, a, e, u, f);
+      for (p = 0; p < e.length; p++) d(e[p], p, p, a, e, u, f);
     else {
-      var _, p = {},
+      var p, _ = {},
         h = Object.keys(e).sort(c);
-      for (_ = 0; _ < h.length; _++) {
-        var g = h[_];
-        d(e[g], g, _, a, e, u, f), p[g] = e[g]
+      for (p = 0; p < h.length; p++) {
+        var m = h[p];
+        d(e[m], m, p, a, e, u, f), _[m] = e[m]
       }
-      if (void 0 === l) return p;
-      r.push([l, i, e]), l[i] = p
+      if (void 0 === l) return _;
+      r.push([l, i, e]), l[i] = _
     }
     a.pop()
   }

@@ -7,11 +7,11 @@ var r, i, o, a = n(212036),
   u = n(622281),
   d = n(740362),
   f = n(974971),
-  _ = n(938507),
-  p = n(251069),
+  p = n(938507),
+  _ = n(251069),
   h = n(859209),
-  g = n(4340),
-  m = n(838957),
+  m = n(4340),
+  g = n(838957),
   E = n(144748),
   v = n(276321),
   b = n(641236),
@@ -69,8 +69,8 @@ var r, i, o, a = n(212036),
     throw w("Target is not a typed array")
   },
   H = function(e) {
-    if (c(e) && (!v || m(R, e))) return e;
-    throw w(_(e) + " is not a typed array constructor")
+    if (c(e) && (!v || g(R, e))) return e;
+    throw w(p(e) + " is not a typed array constructor")
   },
   W = function(e, t, n, r) {
     if (s) {
@@ -114,12 +114,12 @@ if ((!j || !c(R) || R === Function.prototype) && (R = function() {
 if ((!j || !P || P === D) && (P = R.prototype, j))
   for (r in U) l[r] && v(l[r].prototype, P);
 if (j && E(C) !== P && v(C, P), s && !d(P, L))
-  for (r in k = !0, g(P, L, {
+  for (r in k = !0, m(P, L, {
       configurable: !0,
       get: function() {
         return u(this) ? this[x] : void 0
       }
-    }), U) l[r] && p(l[r], x, r);
+    }), U) l[r] && _(l[r], x, r);
 e.exports = {
   NATIVE_ARRAY_BUFFER_VIEWS: j,
   TYPED_ARRAY_TAG: k && x,

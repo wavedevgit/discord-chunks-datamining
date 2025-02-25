@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  l: () => m
+  l: () => g
 });
 var r = n(717029),
   i = n(846042);
@@ -47,7 +47,7 @@ function u(e, t) {
 }
 
 function d(e) {
-  var t = p();
+  var t = _();
   return function() {
     var n, r = h(e);
     return n = t ? Reflect.construct(r, arguments, h(this).constructor) : r.apply(this, arguments), f(this, n)
@@ -55,15 +55,15 @@ function d(e) {
 }
 
 function f(e, t) {
-  return t && ("object" === o(t) || "function" == typeof t) ? t : _(e)
+  return t && ("object" === o(t) || "function" == typeof t) ? t : p(e)
 }
 
-function _(e) {
+function p(e) {
   if (void 0 === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return e
 }
 
-function p() {
+function _() {
   if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) return !1;
   if ("function" == typeof Proxy) return !0;
   try {
@@ -79,7 +79,7 @@ function h(e) {
   })(e)
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -87,7 +87,7 @@ function g(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-var m = function(e) {
+var g = function(e) {
   c(n, e);
   var t = d(n);
 
@@ -95,7 +95,7 @@ var m = function(e) {
     var e;
     a(this, n);
     for (var r = arguments.length, i = Array(r), o = 0; o < r; o++) i[o] = arguments[o];
-    return g(_(e = t.call.apply(t, [this].concat(i))), "priority", 40), g(_(e), "incompatibleTokens", "*"), e
+    return m(p(e = t.call.apply(t, [this].concat(i))), "priority", 40), m(p(e), "incompatibleTokens", "*"), e
   }
   return l(n, [{
     key: "parse",

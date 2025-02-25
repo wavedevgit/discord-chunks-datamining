@@ -14,7 +14,7 @@ var r = n(259443),
   d = n(626135),
   f = n(981631);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -47,12 +47,12 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = new r.Yd("MessageRoundtripTrackerStore");
+let g = new r.Yd("MessageRoundtripTrackerStore");
 
 function E(e) {
   return null != e.apiResponseTimestamp && null != e.gatewaySeenTimestamp
@@ -61,14 +61,14 @@ function E(e) {
 function v(e) {
   let t = l.Z.getBasicChannel(e.channelId);
   if (null == t) {
-    m.warn("Ignoring a messageData for channel ".concat(e.channelId, " because we can't find that channel."));
+    g.warn("Ignoring a messageData for channel ".concat(e.channelId, " because we can't find that channel."));
     return
   }
   if (Math.random() > .1) return;
   let n = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
     r = null == e.gatewaySeenTimestamp ? null : e.gatewaySeenTimestamp - e.initialSendTimestamp,
     i = (0, s.d)();
-  d.default.track(f.rMx.SEND_MESSAGE_ROUNDTRIP, p(g(p({}, (0, a.Z)()), {
+  d.default.track(f.rMx.SEND_MESSAGE_ROUNDTRIP, _(m(_({}, (0, a.Z)()), {
     api_latency_ms: n,
     gateway_latency_ms: r,
     channel_id: t.id,
@@ -104,7 +104,7 @@ class y extends i.ZP.Store {
   recordMessageSendApiResponse(e) {
     let t = this.pendingMessages.get(e);
     if (null != t) {
-      let n = g(p({}, t), {
+      let n = m(_({}, t), {
         apiResponseTimestamp: Date.now()
       });
       E(n) ? (v(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)
@@ -113,14 +113,14 @@ class y extends i.ZP.Store {
   recordGatewayResponse(e) {
     let t = this.pendingMessages.get(e);
     if (null != t) {
-      let n = g(p({}, t), {
+      let n = m(_({}, t), {
         gatewaySeenTimestamp: Date.now()
       });
       E(n) ? (v(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)
     }
   }
   constructor(...e) {
-    super(...e), _(this, "pendingMessages", new Map)
+    super(...e), p(this, "pendingMessages", new Map)
   }
 }
 let O = new y(o.Z, {

@@ -10,8 +10,8 @@ var r = n(581031),
   u = [],
   d = s("Reflect", "construct"),
   f = /^\s*(?:class|function)\b/,
-  _ = r(f.exec),
-  p = !f.exec(c),
+  p = r(f.exec),
+  _ = !f.exec(c),
   h = function(e) {
     if (!o(e)) return !1;
     try {
@@ -20,7 +20,7 @@ var r = n(581031),
       return !1
     }
   },
-  g = function(e) {
+  m = function(e) {
     if (!o(e)) return !1;
     switch (a(e)) {
       case "AsyncFunction":
@@ -29,14 +29,14 @@ var r = n(581031),
         return !1
     }
     try {
-      return p || !!_(f, l(e))
+      return _ || !!p(f, l(e))
     } catch (e) {
       return !0
     }
   };
-g.sham = !0, e.exports = !d || i(function() {
+m.sham = !0, e.exports = !d || i(function() {
   var e;
   return h(h.call) || !h(Object) || !h(function() {
     e = !0
   }) || e
-}) ? g : h
+}) ? m : h

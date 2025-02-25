@@ -19,11 +19,11 @@ function d(e) {
     headingIcon: o,
     subheading: d,
     className: f,
-    scrollIntoView: _ = !1,
-    headingColor: p = "header-secondary"
-  } = e, h = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), g = i.useRef(null);
+    scrollIntoView: p = !1,
+    headingColor: _ = "header-secondary"
+  } = e, h = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), m = i.useRef(null);
   return i.useEffect(() => {
-    let e = g.current;
+    let e = m.current;
     if (null == e) return;
     let t = requestAnimationFrame(() => {
       e.scrollIntoView({
@@ -32,7 +32,7 @@ function d(e) {
     });
     return () => cancelAnimationFrame(t)
   }, [h]), (0, r.jsxs)("section", {
-    ref: _ ? g : void 0,
+    ref: p ? m : void 0,
     className: a()(u.section, f),
     children: [null != n && (0, r.jsxs)("div", {
       className: u.headings,
@@ -40,7 +40,7 @@ function d(e) {
         className: u.header,
         children: [(0, r.jsx)(l.X6q, {
           variant: "text-xs/semibold",
-          color: p,
+          color: _,
           children: n
         }), null != o && (0, r.jsx)(o, {
           size: "xxs",

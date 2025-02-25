@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B: () => eg,
-  Z: () => em
+  B: () => em,
+  Z: () => eg
 }), n(789020), n(411104);
 var r = n(525654),
   i = n.n(r),
@@ -14,11 +14,11 @@ var r = n(525654),
   u = n(544891),
   d = n(570140),
   f = n(479531),
-  _ = n(34756),
-  p = n(595519),
+  p = n(34756),
+  _ = n(595519),
   h = n(839426),
-  g = n(895924),
-  m = n(625128),
+  m = n(895924),
+  g = n(625128),
   E = n(972830),
   v = n(305325),
   b = n(63568),
@@ -158,9 +158,9 @@ function ef(e) {
   } = null != i ? i : {};
   if (!d && !f && !(null == i ? void 0 : i.forceTransition) && s && V.Z.getGuildId() !== t) return;
   let {
-    type: _
-  } = r, m = M.Z.getChannel(r.id), O = eu(t, r, i), S = _ === X.d4z.GUILD_STAGE_VOICE, I = X.Z5c.CHANNEL(t, O);
-  L.tx.has(_) ? (0, E.h)(() => {
+    type: p
+  } = r, g = M.Z.getChannel(r.id), O = eu(t, r, i), S = p === X.d4z.GUILD_STAGE_VOICE, I = X.Z5c.CHANNEL(t, O);
+  L.tx.has(p) ? (0, E.h)(() => {
     Promise.resolve().then(n.bind(n, 287734)).then(e => {
       let {
         default: n
@@ -180,22 +180,22 @@ function ef(e) {
           intent: null == i ? void 0 : i.intent,
           inviterUserId: null == i ? void 0 : i.inviterUserId,
           analyticsLocations: o,
-          commandOrigin: g.bB.CHAT
+          commandOrigin: m.bB.CHAT
         }))
       };
       !d && (0, y.n)(t, [U.Z, G.Z, Z.default, k.ZP]) ? (0, v.hk)(t, a) : a()
     })
-  }) : (0, p.l5)(m) && c === ee.Iq.EMBEDDED_APPLICATION && null != u && ((0, D.uL)(X.Z5c.CHANNEL(null != t ? t : X.ME, O)), (0, h.Z)({
+  }) : (0, _.l5)(g) && c === ee.Iq.EMBEDDED_APPLICATION && null != u && ((0, D.uL)(X.Z5c.CHANNEL(null != t ? t : X.ME, O)), (0, h.Z)({
     channelId: O,
     applicationId: u,
     intent: null == i ? void 0 : i.intent,
     inviterUserId: null == i ? void 0 : i.inviterUserId,
     analyticsLocations: o,
-    commandOrigin: g.bB.CHAT
+    commandOrigin: m.bB.CHAT
   })), ed(r, i)(I)
 }
 
-function e_(e) {
+function ep(e) {
   let {
     guildScheduledEvent: t,
     welcomeModalChannelId: n
@@ -208,8 +208,8 @@ function e_(e) {
   })
 }
 
-function ep(e, t, n) {
-  return d.Z.isDispatching() ? Promise.resolve().then(() => ep(e, t, n)) : (d.Z.dispatch({
+function e_(e, t, n) {
+  return d.Z.isDispatching() ? Promise.resolve().then(() => e_(e, t, n)) : (d.Z.dispatch({
     type: "INVITE_RESOLVE",
     code: e
   }), (0, C.Z)(e, t, n).then(e => {
@@ -238,7 +238,7 @@ let eh = function(e, t) {
       var r;
       let i = M.Z.getChannel(e),
         o = Z.default.getCurrentUser();
-      return null == i || null == o || (!i.nsfw || !!o.nsfwAllowed) && ((null == t ? void 0 : t.guildScheduledEvent) != null ? e_(t) : ef({
+      return null == i || null == o || (!i.nsfw || !!o.nsfwAllowed) && ((null == t ? void 0 : t.guildScheduledEvent) != null ? ep(t) : ef({
         guildId: null !== (r = i.getGuildId()) && void 0 !== r ? r : X.ME,
         channel: i,
         options: t,
@@ -246,14 +246,14 @@ let eh = function(e, t) {
       }), !1)
     })
   },
-  eg = async e => {
+  em = async e => {
     let {
       guild_id: t,
       channel_id: n
     } = e;
     (0, I.xt)(e) && null != n ? eh(n) : await q.Z.transitionToGuildSync(t)
-  }, em = {
-    resolveInvite: ep,
+  }, eg = {
+    resolveInvite: e_,
     getInviteContext: (e, t) => ({
       location: e,
       location_guild_id: null != t.guild ? t.guild.id : void 0,
@@ -401,8 +401,8 @@ let eh = function(e, t) {
         context: i,
         callback: o,
         skipOnboarding: a
-      } = e, s = (0, A.fU)(r), l = s.baseCode, c = x.default.getSessionId(), f = ec(i, s), p = Z.default.getCurrentUser();
-      return null !== (t = null == p ? void 0 : p.hasFlag(X.xW$.QUARANTINED)) && void 0 !== t && t ? ((0, R.default)(), new Promise((e, t) => t(Error()))) : (d.Z.dispatch({
+      } = e, s = (0, A.fU)(r), l = s.baseCode, c = x.default.getSessionId(), f = ec(i, s), _ = Z.default.getCurrentUser();
+      return null !== (t = null == _ ? void 0 : _.hasFlag(X.xW$.QUARANTINED)) && void 0 !== t && t ? ((0, R.default)(), new Promise((e, t) => t(Error()))) : (d.Z.dispatch({
         type: "INVITE_ACCEPT",
         code: l
       }), u.tn.post({
@@ -443,7 +443,7 @@ let eh = function(e, t) {
             message: null === (t = e.body) || void 0 === t ? void 0 : t.message,
             code: null === (n = e.body) || void 0 === n ? void 0 : n.code
           }
-        }), new _.Z(e)
+        }), new p.Z(e)
       }))
     },
     acceptInviteAndTransitionToInviteChannel(e) {
@@ -501,13 +501,13 @@ let eh = function(e, t) {
       }
     },
     openNativeAppModal(e) {
-      m.Z.openNativeAppModal(e, X.Etm.INVITE_BROWSER)
+      g.Z.openNativeAppModal(e, X.Etm.INVITE_BROWSER)
     },
     openApp(e, t, n, r, o) {
       var a, u;
       let f;
-      let _ = null != e ? (0, A.fU)(e) : null,
-        p = null == _ ? void 0 : _.baseCode;
+      let p = null != e ? (0, A.fU)(e) : null,
+        _ = null == p ? void 0 : p.baseCode;
       if (d.Z.dispatch({
           type: "INVITE_APP_OPENING",
           code: e
@@ -519,20 +519,20 @@ let eh = function(e, t) {
         return
       }
       if ((null === (a = i().os) || void 0 === a ? void 0 : a.family) === "Android" || (null === (u = i().os) || void 0 === u ? void 0 : u.family) === "iOS") {
-        let e = null != p ? (0, s.z0)(p) : (0, s.Gk)(),
+        let e = null != _ ? (0, s.z0)(_) : (0, s.Gk)(),
           t = (0, l.WS)();
         f = (0, l.ZP)(e, {
           utmSource: 2 === o ? "friend_invite" : ea,
           fingerprint: n,
           username: r,
           attemptId: t,
-          event: null == _ ? void 0 : _.guildScheduledEventId,
-          iosFallbackLink: "https://discord.com/api/download/mobile?invite_code=".concat(p)
+          event: null == p ? void 0 : p.guildScheduledEventId,
+          iosFallbackLink: "https://discord.com/api/download/mobile?invite_code=".concat(_)
         }), H.default.track(X.rMx.DEEP_LINK_CLICKED, {
           fingerprint: (0, c.K)(n),
           attempt_id: t,
           source: ea,
-          invite_code: p
+          invite_code: _
         })
       } else "#" === (f = null != t ? X.Z5c.INVITE_PROXY(t) : "")[0] && (f = f.slice(1)), f = "discord://".concat(f);
       z.Z.launch(f, t => {

@@ -47,8 +47,8 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = "daily_cap",
-  p = 3,
+let p = "daily_cap",
+  _ = 3,
   h = {
     numberOfDCsShownToday: 0,
     dailyCapPeriodStart: null,
@@ -59,14 +59,14 @@ let _ = "daily_cap",
     lastDCDismissed: null
   };
 
-function g() {
+function m() {
   h = f(u({}, h), {
     dismissibleContentSeenDuringSession: new Set,
     renderedAtTimestamps: new Map
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     value: t
   } = e;
@@ -89,8 +89,8 @@ function v(e) {
       let e = new Date;
       e.setHours(0, 0, 0, 0), h.dailyCapPeriodStart = e.getTime()
     }
-    h.numberOfDCsShownToday += 1, h.numberOfDCsShownToday > p && a.default.track(l.rMx.DCF_CAP_EXCEEDED, {
-      cap_type: _,
+    h.numberOfDCsShownToday += 1, h.numberOfDCsShownToday > _ && a.default.track(l.rMx.DCF_CAP_EXCEEDED, {
+      cap_type: p,
       dismissible_content: t,
       shown_dcs: h.numberOfDCsShownToday
     })
@@ -133,13 +133,13 @@ class O extends(r = i.ZP.PersistedStore) {
   hasUserHitDCCap(e) {
     if (null != e && (s.O.has(e) || h.dailyCapOverridden) || null != e && h.dismissibleContentSeenDuringSession.has(e)) return !1;
     let t = new Date;
-    return t.setHours(0, 0, 0, 0), null != h.dailyCapPeriodStart && h.dailyCapPeriodStart < t.getTime() && (h.numberOfDCsShownToday = 0, h.dailyCapPeriodStart = null), h.numberOfDCsShownToday >= p
+    return t.setHours(0, 0, 0, 0), null != h.dailyCapPeriodStart && h.dailyCapPeriodStart < t.getTime() && (h.numberOfDCsShownToday = 0, h.dailyCapPeriodStart = null), h.numberOfDCsShownToday >= _
   }
 }
 c(O, "displayName", "DismissibleContentFrameworkStore"), c(O, "persistKey", "DismissibleContentFrameworkStore"), c(O, "migrations", [e => u({}, e)]);
 let S = new O(o.Z, {
-  LOGOUT: g,
-  DCF_DAILY_CAP_OVERRIDE: m,
+  LOGOUT: m,
+  DCF_DAILY_CAP_OVERRIDE: g,
   DCF_NEW_USER_MIN_AGE_REQUIRED_OVERRIDE: E,
   DCF_HANDLE_DC_SHOWN: v,
   DCF_HANDLE_DC_DISMISSED: b,

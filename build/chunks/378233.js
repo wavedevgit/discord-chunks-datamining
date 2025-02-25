@@ -27,14 +27,14 @@ var r = n(606301),
   u = n(913663),
   d = n(373228),
   f = n(611480),
-  _ = n(981631);
+  p = n(981631);
 let {
-  API_ENDPOINT: p,
+  API_ENDPOINT: _,
   MEDIA_PROXY_ENDPOINT: h,
-  PROJECT_ENV: g,
-  ASSET_ENDPOINT: m,
+  PROJECT_ENV: m,
+  ASSET_ENDPOINT: g,
   CDN_HOST: E
-} = window.GLOBAL_ENV, v = Object.values(d.og), b = decodeURIComponent(_.ANM.STICKER_ASSET("[\\d]+", "(".concat(v.join("|"), ")"))), y = RegExp("(".concat(location.protocol).concat(m, "|").concat(location.protocol).concat(h, ")(").concat(b, ")"), "ig"), O = RegExp("".concat(location.protocol).concat(p, "(").concat(b, ")"), "ig"), S = e => {
+} = window.GLOBAL_ENV, v = Object.values(d.og), b = decodeURIComponent(p.ANM.STICKER_ASSET("[\\d]+", "(".concat(v.join("|"), ")"))), y = RegExp("(".concat(location.protocol).concat(g, "|").concat(location.protocol).concat(h, ")(").concat(b, ")"), "ig"), O = RegExp("".concat(location.protocol).concat(_, "(").concat(b, ")"), "ig"), S = e => {
   if (null != e.cover_sticker_id) {
     let t = e.stickers.find(t => t.id === e.cover_sticker_id);
     if (null != t) return t
@@ -76,22 +76,22 @@ let {
   let r = e.format_type;
   e.format_type === d.u3.GIF && t && (r = d.u3.PNG);
   let o = I(r),
-    a = _.ANM.STICKER_ASSET(e.id, o),
+    a = p.ANM.STICKER_ASSET(e.id, o),
     s = o === d.og.WEBP ? "&quality=lossless" : "";
-  if ("development" !== g) {
-    if (e.format_type === d.u3.LOTTIE) return "".concat(location.protocol).concat(m).concat(a);
+  if ("development" !== m) {
+    if (e.format_type === d.u3.LOTTIE) return "".concat(location.protocol).concat(g).concat(a);
     let r = e.format_type === d.u3.APNG && t && !(0, c.isAndroid)() ? "&passthrough=false" : "",
       o = Math.min(2, (0, i.x_)());
     return "".concat(location.protocol).concat(h).concat(a, "?size=").concat((0, i.oO)(n * o)).concat(r).concat(s)
   }
-  return "".concat(location.protocol).concat(p).concat(a)
+  return "".concat(location.protocol).concat(_).concat(a)
 }, C = (e, t) => {
   let n;
   let r = e.banner_asset_id;
   if (null == r) return null;
   let o = l.$k ? "webp" : "png";
-  return n = null != E ? "".concat(location.protocol, "//").concat(E, "/app-assets/").concat(f.Ks, "/store/").concat(r, ".").concat(o) : "".concat(location.protocol).concat(p).concat(_.ANM.STORE_ASSET(f.Ks, r, o)), null != t && (n += "?size=".concat((0, i.oO)(t))), n
-}, R = e => null != e.match("development" !== g ? y : O), P = e => e.stickers.some(e => {
+  return n = null != E ? "".concat(location.protocol, "//").concat(E, "/app-assets/").concat(f.Ks, "/store/").concat(r, ".").concat(o) : "".concat(location.protocol).concat(_).concat(p.ANM.STORE_ASSET(f.Ks, r, o)), null != t && (n += "?size=".concat((0, i.oO)(t))), n
+}, R = e => null != e.match("development" !== m ? y : O), P = e => e.stickers.some(e => {
   let {
     format_type: t
   } = e;

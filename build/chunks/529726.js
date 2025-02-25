@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120), n(653041);
 var r = n(31775),
   i = n.n(r),
@@ -21,8 +21,8 @@ function c(e, t, n) {
 let u = 6e4,
   d = 1e3,
   f = 10,
-  _ = 2e3,
-  p = 500;
+  p = 2e3,
+  _ = 500;
 class h extends o.Z {
   handleMessageBecameVisible(e) {
     let {
@@ -60,15 +60,15 @@ class h extends o.Z {
     this.batchBuffer = [], null != this.batchTimerId && (clearTimeout(this.batchTimerId), this.batchTimerId = null)
   }
   bufferViewTrack(e) {
-    this.batchBuffer.length >= f && this.drainBuffer(), this.batchBuffer.push(e), null == this.batchTimerId && (this.batchTimerId = setTimeout(() => this.drainBuffer(), _))
+    this.batchBuffer.length >= f && this.drainBuffer(), this.batchBuffer.push(e), null == this.batchTimerId && (this.batchTimerId = setTimeout(() => this.drainBuffer(), p))
   }
   constructor(...e) {
     super(...e), c(this, "currentlyVisibleMessageTimers", {}), c(this, "viewsInCurrentChannel", new Set), c(this, "recentViewTimes", new(i())({
-      max: p,
+      max: _,
       maxAge: u
     })), c(this, "batchBuffer", []), c(this, "batchTimerId", null), c(this, "actions", {
       CHANNEL_SELECT: () => this.handleChannelSelect()
     })
   }
 }
-let g = new h
+let m = new h

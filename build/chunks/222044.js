@@ -37,7 +37,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let t = [],
     n = e.defaultReactionEmoji;
   if ((null == n ? void 0 : n.emojiId) != null) {
@@ -56,14 +56,14 @@ function _(e) {
     })) : null != e.emojiName && t.push(s.ZP.getURL(e.emojiName))
   }), t
 }
-class p extends r.Z {
+class _ extends r.Z {
   handleChannelPreload(e) {
     let {
       channelId: t
     } = e;
     if ((0, l.AB)(t)) return;
     let n = o.Z.getChannel(t);
-    null != n && n.isForumLikeChannel() && _(n).forEach(e => {
+    null != n && n.isForumLikeChannel() && p(n).forEach(e => {
       null != e && 0 !== e.length && f(e)
     })
   }
@@ -73,4 +73,4 @@ class p extends r.Z {
     })
   }
 }
-let h = new p
+let h = new _

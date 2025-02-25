@@ -80,7 +80,7 @@ let a = e => t => {
     if (!f) return e((...e) => {
       console.warn(`[zustand persist middleware] Unable to update item '${l.name}', the given storage is currently unavailable.`), n(...e)
     }, r, i);
-    let _ = () => {
+    let p = () => {
         let e = l.partialize({
           ...r()
         });
@@ -89,15 +89,15 @@ let a = e => t => {
           version: l.version
         })
       },
-      p = i.setState;
+      _ = i.setState;
     i.setState = (e, t) => {
-      p(e, t), _()
+      _(e, t), p()
     };
     let h = e((...e) => {
-      n(...e), _()
+      n(...e), p()
     }, r, i);
     i.getInitialState = () => h;
-    let g = () => {
+    let m = () => {
       var e, t;
       if (!f) return;
       c = !1, u.forEach(e => {
@@ -115,7 +115,7 @@ let a = e => t => {
       }).then(e => {
         var t;
         let [i, o] = e;
-        if (n(s = l.merge(o, null != (t = r()) ? t : h), !0), i) return _()
+        if (n(s = l.merge(o, null != (t = r()) ? t : h), !0), i) return p()
       }).then(() => {
         null == i || i(s, void 0), s = r(), c = !0, d.forEach(e => e(s))
       }).catch(e => {
@@ -133,7 +133,7 @@ let a = e => t => {
         null == f || f.removeItem(l.name)
       },
       getOptions: () => l,
-      rehydrate: () => g(),
+      rehydrate: () => m(),
       hasHydrated: () => c,
       onHydrate: e => (u.add(e), () => {
         u.delete(e)
@@ -141,5 +141,5 @@ let a = e => t => {
       onFinishHydration: e => (d.add(e), () => {
         d.delete(e)
       })
-    }, l.skipHydration || g(), s || h
+    }, l.skipHydration || m(), s || h
   }

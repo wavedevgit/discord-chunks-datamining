@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(627341);
 var r = n(200651);
 n(192379);
@@ -45,12 +45,12 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     user: t,
     activity: n,
-    className: _
-  } = e, p = (0, s.Z)({
+    className: p
+  } = e, _ = (0, s.Z)({
     activity: n,
     user: t
   }), h = (0, i.EQ)(n).with({
@@ -62,10 +62,10 @@ function _(e) {
   }, () => [l.ho, l.Rg]).otherwise(() => []);
   return 0 === h.length ? null : (0, r.jsxs)(a.Gk, {
     location: a.Gt.USER_PROFILE,
-    className: _,
+    className: p,
     children: [h.map((e, t) => (0, r.jsx)(e, {
       activity: n
-    }, "activity-".concat(t))), (0, i.EQ)(p).when(o.Cb, e => (0, r.jsx)(u, {
+    }, "activity-".concat(t))), (0, i.EQ)(_).when(o.Cb, e => (0, r.jsx)(u, {
       entry: e
     })).when(o.Q0, e => (0, r.jsx)(d, {
       entry: e

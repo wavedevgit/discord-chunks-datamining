@@ -44,8 +44,8 @@ function l(e, t) {
 function c(e) {
   var t = f();
   return function() {
-    var n, r = _(e);
-    return n = t ? Reflect.construct(r, arguments, _(this).constructor) : r.apply(this, arguments), u(this, n)
+    var n, r = p(e);
+    return n = t ? Reflect.construct(r, arguments, p(this).constructor) : r.apply(this, arguments), u(this, n)
   }
 }
 
@@ -68,13 +68,13 @@ function f() {
   }
 }
 
-function _(e) {
-  return (_ = Object.setPrototypeOf ? Object.getPrototypeOf : function(e) {
+function p(e) {
+  return (p = Object.setPrototypeOf ? Object.getPrototypeOf : function(e) {
     return e.__proto__ || Object.getPrototypeOf(e)
   })(e)
 }
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -93,7 +93,7 @@ var h = function(e) {
     var e;
     i(this, n);
     for (var r = arguments.length, o = Array(r), a = 0; a < r; a++) o[a] = arguments[a];
-    return p(d(e = t.call.apply(t, [this].concat(o))), "priority", 140), p(d(e), "incompatibleTokens", ["R", "u", "t", "T"]), e
+    return _(d(e = t.call.apply(t, [this].concat(o))), "priority", 140), _(d(e), "incompatibleTokens", ["R", "u", "t", "T"]), e
   }
   return a(n, [{
     key: "parse",

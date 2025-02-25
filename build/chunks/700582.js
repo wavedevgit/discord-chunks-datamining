@@ -58,12 +58,12 @@ let f = i.memo(function(e) {
     size: s = o.EFr.SIZE_32,
     animate: u = !1,
     "aria-hidden": f = !1
-  } = e, _ = c(e, ["user", "guildId", "size", "animate", "aria-hidden"]);
-  let p = i.useContext(a.Z);
+  } = e, p = c(e, ["user", "guildId", "size", "animate", "aria-hidden"]);
+  let _ = i.useContext(a.Z);
   return (0, r.jsx)(o.qEK, l({
-    src: d(t, (0, o.pxk)(s), u, null != n ? n : p),
+    src: d(t, (0, o.pxk)(s), u, null != n ? n : _),
     size: s,
     "aria-label": f ? void 0 : t.username,
     "aria-hidden": f
-  }, _))
+  }, p))
 })

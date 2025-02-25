@@ -17,16 +17,16 @@ function s(e, t) {
     u = n.padding,
     d = n.flipVariations,
     f = n.allowedAutoPlacements,
-    _ = void 0 === f ? i.Ct : f,
-    p = (0, r.Z)(s),
-    h = p ? d ? i.bw : i.bw.filter(function(e) {
-      return (0, r.Z)(e) === p
+    p = void 0 === f ? i.Ct : f,
+    _ = (0, r.Z)(s),
+    h = _ ? d ? i.bw : i.bw.filter(function(e) {
+      return (0, r.Z)(e) === _
     }) : i.mv,
-    g = h.filter(function(e) {
-      return _.indexOf(e) >= 0
+    m = h.filter(function(e) {
+      return p.indexOf(e) >= 0
     });
-  0 === g.length && (g = h);
-  var m = g.reduce(function(t, n) {
+  0 === m.length && (m = h);
+  var g = m.reduce(function(t, n) {
     return t[n] = (0, o.Z)(e, {
       placement: n,
       boundary: l,
@@ -34,7 +34,7 @@ function s(e, t) {
       padding: u
     })[(0, a.Z)(n)], t
   }, {});
-  return Object.keys(m).sort(function(e, t) {
-    return m[e] - m[t]
+  return Object.keys(g).sort(function(e, t) {
+    return g[e] - g[t]
   })
 }

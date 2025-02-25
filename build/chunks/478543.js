@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(240872),
   d = n(19780),
   f = n(942389),
-  _ = n(572004),
-  p = n(63063),
+  p = n(572004),
+  _ = n(63063),
   h = n(358085),
-  g = n(145022),
-  m = n(981631),
+  m = n(145022),
+  g = n(981631),
   E = n(388032),
   v = n(642643);
 
@@ -29,9 +29,9 @@ function y(e) {
   let {
     url: t
   } = e, [n, o] = i.useState(!1), s = i.useRef(void 0), l = i.useCallback(() => {
-    !n && ((0, _.JG)(t) && o(!0), s.current = setTimeout(() => o(!1), 2e3))
+    !n && ((0, p.JG)(t) && o(!0), s.current = setTimeout(() => o(!1), 2e3))
   }, [t, n]);
-  return i.useEffect(() => () => clearTimeout(s.current), []), _.wS ? (0, r.jsxs)(c.P3F, {
+  return i.useEffect(() => () => clearTimeout(s.current), []), p.wS ? (0, r.jsxs)(c.P3F, {
     className: a()(v.copyLink, n ? v.copied : null),
     onClick: l,
     children: [(0, r.jsx)(c.xPt, {
@@ -98,15 +98,15 @@ function I(e) {
       clearBuildOverride: s,
       submitting: f
     } = e,
-    _ = ["discord_web"];
-  h.isPlatformEmbedded || _.push("discord_marketing", "discord_developers");
-  let p = (0, g.Z)(o, _);
-  if (!p.valid) return T(p.reason);
+    p = ["discord_web"];
+  h.isPlatformEmbedded || p.push("discord_marketing", "discord_developers");
+  let _ = (0, m.Z)(o, p);
+  if (!_.valid) return T(_.reason);
   l()(null != o, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
   let {
-    discord_web: m,
+    discord_web: g,
     discord_developers: v
-  } = o.targetBuildOverride, y = null != m ? m : v;
+  } = o.targetBuildOverride, y = null != g ? g : v;
   l()(null != y, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), b(y, i) ? (n = E.NW.string(E.t.tX4xrq), t = s, r = c.zxk.Colors.RED) : (n = E.NW.string(E.t.nOunHB), t = a, r = c.zxk.Colors.GREEN);
   let O = () => {
     d.Z.isConnected() ? u.Z.show({
@@ -148,7 +148,7 @@ function N(e, t, n) {
       }) : E.NW.string(E.t.Wj3LW1)
     }), (0, r.jsx)(c.eee, {
       className: v.infoLink,
-      href: p.Z.getArticleURL(m.BhN.BUILD_OVERRIDE_EMBED),
+      href: _.Z.getArticleURL(g.BhN.BUILD_OVERRIDE_EMBED),
       target: "_blank",
       children: (0, r.jsx)(c.d3s, {
         size: "xs",
@@ -170,7 +170,7 @@ let A = e => {
     clearBuildOverride: l
   } = e, [c, u] = i.useState(!1), d = i.useCallback(() => {
     !c && (u(!0), s().catch(() => u(!1)))
-  }, [s, c]), _ = i.useCallback(() => {
+  }, [s, c]), p = i.useCallback(() => {
     !c && (u(!0), l().catch(() => u(!1)))
   }, [l, c]);
   return (0, r.jsxs)("div", {
@@ -183,7 +183,7 @@ let A = e => {
         currentOverrides: n,
         linkMeta: o,
         applyBuildOverride: d,
-        clearBuildOverride: _,
+        clearBuildOverride: p,
         submitting: c
       })]
     })]
