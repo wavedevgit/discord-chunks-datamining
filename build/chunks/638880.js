@@ -38,47 +38,49 @@ async function S(e) {
       partyId: A,
       joinUserId: C,
       joinSessionId: R,
-      joinSecret: P,
+      secret: P,
       inviterUserId: D,
-      isContextlessActivity: w,
-      customId: L,
-      referrerId: x
+      instanceId: w,
+      isContextlessActivity: L,
+      customId: x,
+      referrerId: M
     } = e,
-    M = (0, g.Z)(),
-    j = o.Z.getChannel(c),
-    k = null == j ? void 0 : j.getGuildId(),
-    U = null == k || "" === k,
-    G = s.default.getCurrentUser();
-  if (null == G) return !1;
-  let B = (0, u.sq)();
-  if (!B && (null == j || U && !j.isPrivate() || null == c)) return Promise.resolve(!1);
+    j = (0, g.Z)(),
+    k = o.Z.getChannel(c),
+    U = null == k ? void 0 : k.getGuildId(),
+    G = null == U || "" === U,
+    B = s.default.getCurrentUser();
+  if (null == B) return !1;
+  if (!(0, u.sq)() && (null == k || G && !k.isPrivate() || null == c)) return Promise.resolve(!1);
   let F = f.ZP.getCurrentEmbeddedActivity();
   (null == F ? void 0 : F.applicationId) != null && (t = i.Z.getApplication(null == F ? void 0 : F.applicationId));
   let V = (null == F ? void 0 : F.location.kind) === r.X.CONTEXTLESS;
-  if ((V || a.Z.getVoiceChannelId() === c) && null != F && F.applicationId === n && (V || (0, h.pY)(F.location) === a.Z.getVoiceChannelId())) return (0, b.Z)(k, F.location), Promise.resolve(!0);
-  if (!await (0, _.p)({
+  if ((V || a.Z.getVoiceChannelId() === c) && null != F && F.applicationId === n && (V || (0, h.pY)(F.location) === a.Z.getVoiceChannelId())) return (0, b.Z)(U, F.location), Promise.resolve(!0);
+  let Z = await (0, m.Z)(n, c),
+    H = (0, u.Kb)(Z);
+  if (L && (H ? c = void 0 : L = !1), !await (0, _.p)({
       applicationId: n,
-      application: await (0, m.Z)(n, c),
-      channel: j,
+      application: Z,
+      channel: k,
       currentEmbeddedApplication: t,
-      embeddedActivitiesManager: M,
-      user: G
+      embeddedActivitiesManager: j,
+      user: B
     })) return !1;
-  if (null != j) {
-    let e = (0, E.Z)(j.id),
-      n = y.wP.includes(j.type);
+  if (null != k) {
+    let e = (0, E.Z)(k.id),
+      n = y.wP.includes(k.type);
     if (e) {
       if (!await (0, v.Z)({
-          channelId: j.id,
+          channelId: k.id,
           bypassChangeModal: null != t
         })) return !1
-    } else if (!(0, l.WS)(j) || !n) return !1
-  } else if (null == j && !B) return !1;
-  return null != c && (0, p.Z)(c), null != F && (0, d.cG)(F.location), await (0, d.af)({
+    } else if (!(0, l.WS)(k) || !n) return !1
+  } else if (null == k && !H) return !1;
+  return null != c && (0, p.Z)(c), null != F && (0, d.cG)(F.location), await (0, d.G6)({
     channelId: c,
     applicationId: n,
     isStart: !1,
-    embeddedActivitiesManager: M,
+    embeddedActivitiesManager: j,
     analyticsLocations: S,
     locationObject: O,
     componentId: I,
@@ -87,10 +89,11 @@ async function S(e) {
     partyId: A,
     joinUserId: C,
     joinSessionId: R,
-    joinSecret: P,
+    secret: P,
     inviterUserId: D,
-    isContextlessActivity: w,
-    customId: L,
-    referrerId: x
+    isContextlessActivity: L,
+    customId: x,
+    instanceId: w,
+    referrerId: M
   })
 }

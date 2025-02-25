@@ -164,7 +164,7 @@ class D {
   _getEmbeddedActivities() {
     var e, t;
     let n = s.ZP.getEmbeddedActivitiesForChannel(this.channelId).concat(s.ZP.getEmbeddedActivitiesForStartingChannel(this.channelId)),
-      i = null !== (e = s.ZP.getSelfEmbeddedActivityForChannel(this.channelId)) && void 0 !== e ? e : s.ZP.getSelfEmbeddedActivitiesForStartingChannel(this.channelId);
+      i = null !== (e = s.ZP.getSelfEmbeddedActivityForChannel(this.channelId)) && void 0 !== e ? e : s.ZP.getSelfEmbeddedActivityForStartingChannel(this.channelId);
     if (null == i) return n;
     {
       let e = (0, r.uniqBy)([...n, i], e => e.compositeInstanceId),

@@ -35,7 +35,7 @@ async function p(e) {
   let S = await (0, c.Z)(t, a);
   return null == a ? (o.S.dispatch(d.CkL.SHOW_ACTIVITIES_CHANNEL_SELECTOR, {
     applicationId: t
-  }), !1) : null != r.Z.getChannel(a) && null != O && null != S && (s.tZ(S.id), await (0, l.af)({
+  }), !1) : null != r.Z.getChannel(a) && null != O && null != S && (s.tZ(S.id), await (0, l.G6)({
     channelId: a,
     applicationId: S.id,
     isStart: !0,
@@ -49,6 +49,7 @@ async function p(e) {
     onExecutedCallback: g,
     referrerId: E,
     customId: v,
+    instanceId: void 0,
     inviterUserId: b
   }))
 }

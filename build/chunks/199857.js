@@ -86,7 +86,7 @@ class E extends l.Z {
         audioSSRC: n,
         videoSSRC: r
       } = t;
-      this.users.delete(e), null != n && this.userIdsBySsrc.delete(n), null != r && this.userIdsBySsrc.delete(r), this.logger.info("Renegotiating: User left"), this.handleNegotiationNeeded()
+      this.users.delete(e), null != n && this.userIdsBySsrc.delete(n), null != r && this.userIdsBySsrc.delete(r), this.logger.info("Renegotiating: User left: ".concat(e)), this.handleNegotiationNeeded()
     }
   }
   setBitRate(e) {
@@ -97,7 +97,7 @@ class E extends l.Z {
   }
   setSDP(e) {
     if (!(0, u.$6)(e)) throw Error("Incorrect SDP received from rtc-worker: ".concat(e));
-    this.sdp = e, this.setRemoteAnswer()
+    this.sdp = e, this.logger.info("Set sdp: ".concat(e)), this.setRemoteAnswer()
   }
   get peerConnectionState() {
     return this.pc.connectionState
@@ -269,8 +269,9 @@ class E extends l.Z {
   }
   async setRemoteAnswer() {
     let e = JSON.stringify(this.unassignedStreams),
-      t = JSON.stringify(this.assignedStreams),
-      n = this.pc,
+      t = JSON.stringify(this.assignedStreams);
+    this.logger.info("setRemoteDescription: unassigned streams: ".concat(e, ", assigned streams: ").concat(t, ", outbound streams: ").concat(this.outboundStreams.length));
+    let n = this.pc,
       {
         ssrcs: r,
         answer: i
@@ -281,7 +282,7 @@ class E extends l.Z {
     } catch (a) {
       this.logger.warn("Failed to set remote answer: ".concat(a, ", type: ").concat(i.type, ", sdp: ").concat(i.sdp)), this.emit(s.Sh.SdpError, "setRemoteDescription", a.message, i.type, i.sdp), null != o && this.emit(s.Sh.SdpError, "setLocalDescription", a.message, o.type, o.sdp);
       let n = "unassignedStreams: ".concat(e, ", assignedStreams: ").concat(t, ", ssrcs: ").concat(JSON.stringify(r));
-      this.emit(s.Sh.SdpError, "generateSDPAnswer", a.message, "streams20250221", n)
+      this.emit(s.Sh.SdpError, "generateSDPAnswer", a.message, "streams20250224", n)
     }(this.unassignedStreams.audio.length > 0 || this.unassignedStreams.video.length > 0) && (this.negotiationNeeded = !0, this.logger.info("Renegotiating: Streams left unassigned after negotiation - renegotiate")), this.negotiating = !1, this.negotiationNeeded && this.handleNegotiationNeeded()
   }
   setConnected() {
@@ -293,7 +294,7 @@ class E extends l.Z {
       this.negotiationNeeded = !0;
       return
     }
-    this.logger.info("Negotiation started, assigned streams: ".concat(JSON.stringify(this.assignedStreams), ", unassigned streams: ").concat(JSON.stringify(this.unassignedStreams))), this.negotiating = !0, this.negotiationNeeded = !1;
+    this.logger.info("Negotiation started, assigned streams: ".concat(JSON.stringify(this.assignedStreams), ", unassigned streams: ").concat(JSON.stringify(this.unassignedStreams), ", outbound stream: ").concat(this.outboundStreams.length)), this.negotiating = !0, this.negotiationNeeded = !1;
     let t = this.pc,
       n = await t.createOffer(this.makeOfferAnswerOptions());
     try {

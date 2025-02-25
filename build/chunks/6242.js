@@ -4,8 +4,8 @@ n.d(t, {
   lL: () => u
 });
 var r = n(818083),
-  l = n(594174),
-  i = n(74538),
+  i = n(594174),
+  l = n(74538),
   a = n(474936);
 let o = (0, r.B)({
   kind: "user",
@@ -26,11 +26,11 @@ let o = (0, r.B)({
 });
 
 function s(e, t) {
-  return (0, i.I5)(e, a.p9.TIER_2) || t
+  return (0, l.I5)(e, a.p9.TIER_2) || t
 }
 
 function c(e) {
-  let t = l.default.getCurrentUser();
+  let t = i.default.getCurrentUser();
   return o.getCurrentConfig({
     location: "get_hd_streaming_viewer_config"
   }, {

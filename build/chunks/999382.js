@@ -68,7 +68,7 @@ function B(e, t) {
 }
 let F = !0,
   V = ["name", "description", "icon", "splash", "banner", "homeHeader", "afkChannelId", "afkTimeout", "systemChannelId", "verificationLevel", "defaultMessageNotifications", "explicitContentFilter", "features", "systemChannelFlags", "preferredLocale", "rulesChannelId", "safetyAlertsChannelId", "discoverySplash", "publicUpdatesChannelId", "premiumProgressBarEnabled", "profile"],
-  Z = ["brandColorPrimary", "description", "icon", "name", "traits", "visibility", "gameApplicationIds"],
+  Z = ["brandColorPrimary", "description", "icon", "name", "traits", "visibility", "gameApplicationIds", "customBanner"],
   H = new Set(["icon", "splash", "banner", "discoverySplash", "homeHeader"]),
   W = !1,
   Y = x.QZA.CLOSED,

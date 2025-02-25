@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => s
 });
 var r = n(200651),
-  l = n(192379),
-  i = n(70097),
+  i = n(192379),
+  l = n(70097),
   a = n(576645),
   o = n(451326);
 
@@ -12,14 +12,14 @@ function s(e) {
   let {
     baseTileRef: t,
     cleanup: n
-  } = e, s = (0, a.bK)(), c = (0, l.useRef)(s);
+  } = e, s = (0, a.bK)(), c = (0, i.useRef)(s);
   return null == t || 0 === t.offsetHeight || c.current ? null : (0, r.jsx)("div", {
     style: {
       width: 1.22 * t.offsetWidth,
       height: 1.22 * t.offsetHeight
     },
     className: o.demoEffectOverlay,
-    children: (0, r.jsx)(i.Z, {
+    children: (0, r.jsx)(l.Z, {
       autoPlay: !0,
       className: o.demoEffectImg,
       onEnded: n,

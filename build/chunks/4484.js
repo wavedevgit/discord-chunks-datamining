@@ -94,16 +94,17 @@ let D = i.forwardRef(function(e, t) {
         focus: t
       }
     }
-    if (null != o && !E.Ew.equals(o, s)) {
+    let u = null != o && !E.Ew.equals(o, s);
+    if (l && !et && E.bN.focus(e), null != o && u) {
       e.selection = o;
       let t = _.T.currentEntry(e);
       null != t && (t.selection = o), l = !0
     }
-    let u = p.cr(e);
-    if (null != u && u[0].command.id !== (null === (r = c.Z.getActiveCommand(D.id)) || void 0 === r ? void 0 : r.id) && _.T.withMergedEntry(e, () => {
+    let d = p.cr(e);
+    if (null != d && d[0].command.id !== (null === (r = c.Z.getActiveCommand(D.id)) || void 0 === r ? void 0 : r.id) && _.T.withMergedEntry(e, () => {
         (0, T.L)(e, D.id, null, !0)
       }), l) {
-      if (et || E.bN.focus(e), "parent" === t) try {
+      if ("parent" === t) try {
         em.current = !1, e.onChange()
       } finally {
         em.current = !0

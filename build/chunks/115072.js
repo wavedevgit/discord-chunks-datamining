@@ -14,8 +14,8 @@ var i = r(200651),
   m = r(273031),
   h = r(859235),
   v = r(898463),
-  f = r(951394),
-  x = r(594174),
+  x = r(951394),
+  f = r(594174),
   p = r(768581),
   g = r(55935),
   j = r(358085),
@@ -53,9 +53,9 @@ function _(e) {
       },
       rejectWithError: !0
     }).then(e => {
-      if (null != e.body && "8ff0474b7ec7294030197fda7f6bf906f02e477f" !== e.body.hash) {
+      if (null != e.body && "cdcf1a7fbc91c71f806313d34b8eeb176bf83698" !== e.body.hash) {
         {
-          let e = new Date("1740445003599"),
+          let e = new Date("1740450630032"),
             t = new Date;
           (0, g.TD)(t, e).hours > 6 && eh(!0)
         }
@@ -63,15 +63,15 @@ function _(e) {
       }
     })
   }, []);
-  let ev = (0, o.e7)([x.default], () => {
-      let e = x.default.getCurrentUser();
+  let ev = (0, o.e7)([f.default], () => {
+      let e = f.default.getCurrentUser();
       return (null == e ? void 0 : e.isStaff()) || (null == e ? void 0 : e.isStaffPersonal())
     }),
-    ef = (0, o.e7)([d.C], () => {
+    ex = (0, o.e7)([d.C], () => {
       var e;
       return null === (e = d.C.getCurrentBuildOverride().overrides) || void 0 === e ? void 0 : e.discord_web
     }),
-    ex = () => {
+    ef = () => {
       null == P || P()
     },
     ep = e => {
@@ -97,7 +97,7 @@ function _(e) {
         priority: R,
         feature: n,
         url: J,
-        buildOverride: null !== (t = null == ef ? void 0 : ef.id) && void 0 !== t ? t : null
+        buildOverride: null !== (t = null == ex ? void 0 : ex.id) && void 0 !== t ? t : null
       }, !0 === H ? {
         overridePlatformInformation: H,
         device: U,
@@ -109,7 +109,7 @@ function _(e) {
       } : {
         overridePlatformInformation: H
       }, l).catch(() => ed(!0));
-    ec(!1), null != o && o.ok ? (ev && window.open(o.body.permalink_url, "_blank"), ex(), (0, s.ZDy)(async () => {
+    ec(!1), null != o && o.ok ? (ev && window.open(o.body.permalink_url, "_blank"), ef(), (0, s.ZDy)(async () => {
       let {
         default: e
       } = await r.e("64648").then(r.bind(r, 81155));
@@ -174,15 +174,15 @@ function _(e) {
     }), (0, i.jsx)(s.hzk, {
       children: (0, i.jsxs)("form", {
         onSubmit: eg,
-        children: [null != ef && (0, i.jsx)(s.ToO, {
+        children: [null != ex && (0, i.jsx)(s.ToO, {
           type: s.ToO.Types.WARNING,
           body: N.NW.format(N.t["yY60+/"], {
             buildOverrideHook: () => (0, i.jsx)("b", {
-              children: null == ef ? void 0 : ef.id
+              children: null == ex ? void 0 : ex.id
             })
           }),
           title: N.NW.string(N.t["ZP/hEx"])
-        }), null == ef && em && (0, i.jsx)(s.ToO, {
+        }), null == ex && em && (0, i.jsx)(s.ToO, {
           type: s.ToO.Types.WARNING,
           body: N.NW.string(N.t.x18RUl),
           title: N.NW.string(N.t.cTVCIC)
@@ -355,7 +355,7 @@ function _(e) {
                     upload: e
                   }), (0, i.jsx)("div", {
                     className: W.removeAttachment,
-                    children: (0, i.jsx)(f.ZP, {
+                    children: (0, i.jsx)(x.ZP, {
                       children: (0, i.jsx)(m.Z, {
                         tooltip: N.NW.string(N.t.vN7REx),
                         onClick: () => ep(e.id),
@@ -392,7 +392,7 @@ function _(e) {
           children: "Submit and Open Report"
         }), (0, i.jsx)(s.zxk, {
           color: s.zxk.Colors.PRIMARY,
-          onClick: ex,
+          onClick: ef,
           children: N.NW.string(N.t["ETE/oK"])
         })]
       })

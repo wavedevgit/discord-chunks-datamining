@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var l = n(120356),
-  i = n.n(l),
+var i = n(120356),
+  l = n.n(i),
   a = n(481060),
   o = n(618158),
   s = n(640498);
@@ -16,7 +16,7 @@ function c(e) {
     className: n
   } = e;
   return (0, r.jsx)(a.DY3, {
-    className: i()(n, s.root),
+    className: l()(n, s.root),
     text: t,
     position: "bottom",
     color: a.FGA.GREY,

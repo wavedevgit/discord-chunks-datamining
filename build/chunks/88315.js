@@ -8,8 +8,8 @@ n.d(t, {
   np: () => f
 });
 var r = n(979590),
-  l = n.n(r),
-  i = n(866442),
+  i = n.n(r),
+  l = n(866442),
   a = n(220082),
   o = n(594174),
   s = n(984063),
@@ -25,12 +25,12 @@ function d(e, t) {
   let {
     width: n,
     height: r,
-    left: l,
-    top: i
+    left: i,
+    top: l
   } = e.getBoundingClientRect();
   return {
-    x: (t.clientX - l) / n,
-    y: (t.clientY - i) / r
+    x: (t.clientX - i) / n,
+    y: (t.clientY - l) / r
   }
 }
 
@@ -55,12 +55,12 @@ function h(e, t, n, r) {
   let u = o.default.getUser(e),
     d = null == u ? void 0 : u.getAvatarURL(null, c.Ks),
     f = null != d ? null === (s = a.SR.getState().palette[d]) || void 0 === s ? void 0 : s[0] : null,
-    m = null != f ? "#".concat(l()({
+    m = null != f ? "#".concat(i()({
       r: f[0],
       g: f[1],
       b: f[2]
     }).toHex()) : r,
-    p = (0, i.Bd)((0, i._i)(m)) > .5 ? n : t;
+    p = (0, l.Bd)((0, l._i)(m)) > .5 ? n : t;
   return {
     fillColor: m,
     outlineColor: p

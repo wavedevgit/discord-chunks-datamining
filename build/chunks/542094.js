@@ -157,7 +157,9 @@ function S(e) {
           sectionName: v,
           source: b,
           customId: O,
-          referrerId: h
+          referrerId: h,
+          instanceId: void 0,
+          isContextlessActivity: !1
         }).then(e => e && (null == a ? void 0 : a({
           applicationId: t
         })))

@@ -55,6 +55,7 @@ function d(e) {
     name: e.name,
     description: e.description,
     icon: e.icon_hash,
+    customBanner: e.custom_banner_hash,
     onlineCount: e.online_count,
     memberCount: e.member_count,
     brandColorPrimary: e.brand_color_primary,
@@ -68,7 +69,7 @@ function d(e) {
 
 function f(e) {
   let t = {};
-  return null != e.name && (t.name = e.name), null != e.description && (t.description = e.description), void 0 !== e.icon && (t.icon = e.icon), null != e.visibility && (t.visibility = e.visibility), null != e.brandColorPrimary && (t.brand_color_primary = e.brandColorPrimary), null != e.traits && (t.traits = e.traits.map((e, t) => {
+  return null != e.name && (t.name = e.name), null != e.description && (t.description = e.description), void 0 !== e.icon && (t.icon = e.icon), void 0 !== e.customBanner && (t.custom_banner = e.customBanner), null != e.visibility && (t.visibility = e.visibility), null != e.brandColorPrimary && (t.brand_color_primary = e.brandColorPrimary), null != e.traits && (t.traits = e.traits.map((e, t) => {
     var n, r, i;
     return (null == e ? void 0 : e.label) == null || e.label.length <= 0 ? null : {
       label: e.label,

@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => u
 });
 var r = n(192379),
-  l = n(442837),
-  i = n(569545),
+  i = n(442837),
+  l = n(569545),
   a = n(959457),
   o = n(626135),
   s = n(981631),
@@ -16,7 +16,7 @@ function u(e, t) {
     handleMouseMove: u,
     handleMouseUp: d,
     handleMouseEnter: f
-  } = e, m = r.useRef(null), p = (0, l.e7)([a.Z], () => a.Z.getRTCConnection((0, i.V9)(t))), h = r.useCallback((e, t, r) => {
+  } = e, m = r.useRef(null), p = (0, i.e7)([a.Z], () => a.Z.getRTCConnection((0, l.V9)(t))), h = r.useCallback((e, t, r) => {
     m.current = Date.now(), n(e, t, r)
   }, [n]);
   return {

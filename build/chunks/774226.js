@@ -32,10 +32,10 @@ function l() {
   }).enabled
 }
 
-function c() {
+function c(e) {
   return s.useExperiment({
     location: "useIsContextlessActivitiesExperimentEnabled"
-  }).enabled
+  }).enabled && null != e && (0, i.yE)(e.flags, o.udG.CONTEXTLESS_ACTIVITY)
 }
 
 function u(e) {

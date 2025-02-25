@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => E
 });
 var r = n(200651),
-  l = n(192379),
-  i = n(642128),
+  i = n(192379),
+  l = n(642128),
   a = n(442837),
   o = n(780384),
   s = n(481060),
@@ -56,8 +56,8 @@ function E(e) {
     inPopout: n
   } = e, {
     reducedMotion: E
-  } = l.useContext(o.Sf), O = (0, l.useRef)(null), S = d.n.getState().clipsButtonRef, j = (0, f.V9)(t), x = (0, a.e7)([c.Z], () => c.Z.getActiveAnimation()), Z = (0, a.Wu)([c.Z], () => c.Z.getStreamClipAnimations(j)), w = (0, l.useRef)();
-  l.useEffect(() => () => {
+  } = i.useContext(o.Sf), O = (0, i.useRef)(null), S = d.n.getState().clipsButtonRef, j = (0, f.V9)(t), x = (0, a.e7)([c.Z], () => c.Z.getActiveAnimation()), Z = (0, a.Wu)([c.Z], () => c.Z.getStreamClipAnimations(j)), w = (0, i.useRef)();
+  i.useEffect(() => () => {
     (0, u.Gh)(j)
   }, [j]);
   let C = () => {
@@ -75,16 +75,16 @@ function E(e) {
       if (w.current = t, e.timestamp !== x || null == t || n) return v;
       let {
         top: r,
-        left: l
+        left: i
       } = t;
       return {
         top: r + 36,
-        left: l - 216,
+        left: i - 216,
         height: 151,
         width: 268
       }
     },
-    N = (0, l.useRef)(null),
+    N = (0, i.useRef)(null),
     I = (0, s.Yzy)(Z, {
       keys: e => e.timestamp,
       ref: N,
@@ -96,7 +96,7 @@ function E(e) {
       },
       config: b
     }, "animate-always"),
-    R = (0, l.useRef)(null),
+    R = (0, i.useRef)(null),
     _ = (0, s.Yzy)(Z, {
       ref: R,
       keys: e => e.timestamp,
@@ -125,17 +125,17 @@ function E(e) {
         null != t.item && null != Z.find(e => e.timestamp === t.item.timestamp) && (0, u.Gh)(j, t.item.timestamp)
       }
     }, "animate-always");
-  return (0, i.useChain)([N, R], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
+  return (0, l.useChain)([N, R], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: p.hidden,
       ref: O
-    }), I((e, t) => null != t && (0, r.jsx)(i.animated.div, {
+    }), I((e, t) => null != t && (0, r.jsx)(l.animated.div, {
       className: p.whiteFlash,
       style: e
     })), (0, r.jsx)(m.ZP, {
       children: (0, r.jsx)("div", {
         className: p.hidden,
-        children: _((e, t, n, l) => (null == t ? void 0 : t.thumbnail) != null && (0, r.jsx)(i.animated.img, {
+        children: _((e, t, n, i) => (null == t ? void 0 : t.thumbnail) != null && (0, r.jsx)(l.animated.img, {
           src: t.thumbnail,
           className: p.movingImage,
           style: e

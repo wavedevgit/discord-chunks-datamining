@@ -47,7 +47,8 @@ function c(e, t, n, c, u) {
         sessionId: p,
         applicationId: null !== (a = c.altId) && void 0 !== a ? a : c.id,
         channelId: e.id,
-        messageId: t.id
+        messageId: t.id,
+        activity: u
       }), r.Z.updateNotificationStatus(l), m("join")
     },
     onDismissClick: () => {

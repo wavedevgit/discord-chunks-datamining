@@ -1,6 +1,6 @@
 /**
   Module ID: 71567
-  Original File Name: a5baf395ad422b28
+  Original File Name: dfe541fe935f87e6
 **/
 .popoutContainer_a6cedd {
     display: flex;
@@ -12748,6 +12748,25 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     margin-bottom: 20px
 }
 
+.container__11c5f {
+    display: flex;
+    flex-direction: row;
+    gap: 32px
+}
+
+.column__11c5f {
+    flex-basis: 50%
+}
+
+.progressBarImage__11c5f {
+    width: 320px;
+    height: 252px
+}
+
+.switch__11c5f {
+    margin-bottom: 8px
+}
+
 .container_bb7f52 {
     display: flex;
     flex-direction: column;
@@ -12757,7 +12776,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 .divider_bb7f52 {
     align-self: stretch;
     height: 1px;
-    background-color: var(--divider-subtle)
+    background-color: var(--divider-strong)
 }
 
 .description_e98840 {
@@ -13193,7 +13212,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     cursor: pointer
 }
 
-.itemSelected_ec9088 {
+.itemSelected_ec9088,.uploadItemSelected_ec9088 {
     border: 1px solid var(--brand-400);
     width: calc(100% + 8px);
     height: calc(100% + 8px);
@@ -13201,12 +13220,61 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     border-radius: 10px
 }
 
-.itemSelectedThick_ec9088 {
-    border: 2px solid var(--brand-400);
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
-    margin: -5px;
-    border-radius: 12px
+.uploadItemSelected_ec9088 {
+    overflow: hidden;
+    display: flex;
+    padding: 4px
+}
+
+.uploadItemSelected_ec9088 .uploadItem_ec9088 {
+    border: none
+}
+
+.uploadItem_ec9088 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle)
+}
+
+.uploadItem_ec9088:hover .overlay_ec9088,.uploadItem_ec9088:hover .overlayIcon_ec9088 {
+    opacity: 1
+}
+
+.uploadItemContainer_ec9088,.uploadItemWrapper_ec9088 {
+    display: flex;
+    flex: 1 1 auto
+}
+
+.uploadItemContainer_ec9088 {
+    height: 64px;
+    cursor: pointer
+}
+
+.overlay_ec9088 {
+    z-index: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-backdrop)
+}
+
+.overlay_ec9088,.overlayIcon_ec9088 {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .2s ease
+}
+
+.uploadedImage_ec9088 {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .section_e537cd {
@@ -13537,4 +13605,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=a5baf395ad422b28.css.map*/
+/*# sourceMappingURL=dfe541fe935f87e6.css.map*/

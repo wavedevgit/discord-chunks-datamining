@@ -15,8 +15,8 @@ function a(e) {
     a = r.useMemo(() => (n.sort((e, n) => {
       var r, l, i, a;
       let o = null !== (i = null === (r = t[e.id]) || void 0 === r ? void 0 : r.score) && void 0 !== i ? i : 0,
-        s = null !== (a = null === (l = t[n.id]) || void 0 === l ? void 0 : l.score) && void 0 !== a ? a : 0;
-      return o !== s ? s - o : 0
+        c = null !== (a = null === (l = t[n.id]) || void 0 === l ? void 0 : l.score) && void 0 !== a ? a : 0;
+      return o !== c ? c - o : 0
     }), n), [n, t]),
     o = r.useMemo(() => a.slice(0, 5), [a]);
   return {

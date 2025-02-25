@@ -5,8 +5,8 @@ n.d(t, {
   cF: () => m
 }), n(47120), n(653041);
 var r = n(200651),
-  l = n(192379),
-  i = n(392711),
+  i = n(192379),
+  l = n(392711),
   a = n(933546),
   o = n(314897),
   s = n(70956),
@@ -40,8 +40,8 @@ function b(e, t) {
       cropSelfVideo: f,
       version: m
     } = n,
-    [b, g] = l.useState(Date.now());
-  l.useEffect(() => {
+    [b, g] = i.useState(Date.now());
+  i.useEffect(() => {
     let e = setTimeout(() => {
       g(Date.now())
     }, h);
@@ -49,13 +49,13 @@ function b(e, t) {
       clearTimeout(e)
     }
   }, [t]);
-  let y = l.useRef({}),
+  let y = i.useRef({}),
     {
       visibleParticipants: E,
       participantTileWidth: O
-    } = l.useMemo(() => {
+    } = i.useMemo(() => {
       let n = Date.now(),
-        l = (0, i.sortBy)(t, e => (function(e) {
+        i = (0, l.sortBy)(t, e => (function(e) {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Date.now();
           switch (e.type) {
             case d.fO.PRESENCE_EMBEDDED_ACTIVITY:
@@ -74,7 +74,7 @@ function b(e, t) {
               }(e.lastSpoke)).concat((0, a.Z)(e.userNick, e.user))
           }
         })(e, n)),
-        [m, p] = (0, i.partition)(l, d.Io),
+        [m, p] = (0, l.partition)(i, d.Io),
         b = m.findIndex(v),
         g = null; - 1 !== b && (g = m[b], m.splice(b, 1));
       let E = null == g || f ? e : e - r - s,
@@ -98,7 +98,7 @@ function b(e, t) {
         }
       }
       let C = w.filter(c.lm),
-        P = (0, i.keyBy)((0, i.range)(C.length), e => C[e].id);
+        P = (0, l.keyBy)((0, l.range)(C.length), e => C[e].id);
       y.current = P;
       let N = [...x, ...C];
       return null != g && (f && N.length >= O ? N[Math.max(0, N.length - 1)] = g : N.push(g)), {
@@ -116,8 +116,8 @@ function g(e) {
   let {
     participants: t,
     participantTileWidth: n,
-    selectedParticipantId: l,
-    onDoubleClick: i,
+    selectedParticipantId: i,
+    onDoubleClick: l,
     onContextMenu: a,
     onClick: o,
     channel: s,
@@ -137,12 +137,12 @@ function g(e) {
         } : void 0,
         children: (0, r.jsx)(u.ZP, {
           participant: e,
-          selected: l === e.id,
+          selected: i === e.id,
           channel: s,
           className: f.tile,
           fit: u.BP.COVER,
           onClick: o,
-          onDoubleClick: i,
+          onDoubleClick: l,
           onContextMenu: a,
           width: t ? p : n,
           inCall: c,

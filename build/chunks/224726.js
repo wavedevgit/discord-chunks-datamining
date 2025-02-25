@@ -39,17 +39,21 @@ let E = function() {
     }), g.Z.updateGuildProfile(n, {
       icon: e
     }))
+  }, [n]), R = i.useCallback(e => {
+    null != n && g.Z.updateGuildProfile(n, {
+      customBanner: e
+    })
   }, [n]);
   i.useEffect(() => {
     null != n && E()
   }, [n, E]);
-  let R = i.useCallback(() => {
+  let D = i.useCallback(() => {
     E(!0)
   }, [E]);
   return (i.useEffect(() => {
     l.Z.getDetectableGames()
   }, []), S === d.a.FETCHED && null == T) ? (0, r.jsx)(v.g, {
-    forceFetchGuildProfile: R
+    forceFetchGuildProfile: D
   }) : S === d.a.NOT_FETCHED || S === d.a.FETCHING ? (0, r.jsx)("main", {
     className: I.spinner,
     children: (0, r.jsx)(a.$jN, {})
@@ -75,7 +79,8 @@ let E = function() {
         }), (0, r.jsx)("div", {
           className: I.divider
         }), (0, r.jsx)(f.Z, {
-          profile: T
+          profile: T,
+          onCustomBannerChange: R
         }), (0, r.jsx)("div", {
           className: I.divider
         }), (0, r.jsx)(_.Z, {

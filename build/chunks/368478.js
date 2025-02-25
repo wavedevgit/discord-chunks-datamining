@@ -25,7 +25,7 @@ function _(e) {
     primaryEntryPointCommand: n,
     application: a,
     showAppLauncherPopup: c = !1
-  } = e, [h, _] = r.useState(!1), C = (0, i.e7)([o.ZP], () => o.ZP.getCurrentEmbeddedActivity()), v = (0, l.GK)(), y = c ? b.t.cpT0Cg : b.t["0hKkS0"], x = r.useMemo(() => null != n ? (0, p.XZ)(n.displayName) : b.NW.string(b.t["3xjX0d"]), [n]), j = void 0 !== a.flags && (0, m.yE)(a.flags, g.udG.EMBEDDED), O = null != C && C.applicationId === a.id && (v || (0, s.pY)(C.location) === t.channel.id), {
+  } = e, [h, _] = r.useState(!1), C = (0, i.e7)([o.ZP], () => o.ZP.getCurrentEmbeddedActivity()), v = (0, l.GK)(a), y = c ? b.t.cpT0Cg : b.t["0hKkS0"], x = r.useMemo(() => null != n ? (0, p.XZ)(n.displayName) : b.NW.string(b.t["3xjX0d"]), [n]), j = void 0 !== a.flags && (0, m.yE)(a.flags, g.udG.EMBEDDED), O = null != C && C.applicationId === a.id && (v || (0, s.pY)(C.location) === t.channel.id), {
     analyticsLocations: E
   } = (0, d.ZP)(u.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), N = null != t.channel.recipients ? t.channel.recipients[0] : void 0;
   return {

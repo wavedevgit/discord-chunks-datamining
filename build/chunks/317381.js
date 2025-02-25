@@ -494,8 +494,8 @@ class eT extends(i = o.ZP.PersistedStore) {
     var t;
     return null == e ? null : null !== (t = Array.from(L.values()).find(t => t.location.id === e.id)) && void 0 !== t ? t : null
   }
-  getSelfEmbeddedActivitiesForStartingChannel(e) {
-    if (null != location) return Array.from(L.values()).find(t => (0, v.wq)(t.location) === e)
+  getSelfEmbeddedActivityForStartingChannel(e) {
+    if (null != e) return Array.from(L.values()).find(t => (0, v.wq)(t.location) === e)
   }
   getSelfEmbeddedActivities() {
     return L

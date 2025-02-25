@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => p
 });
 var r = n(192379),
-  l = n(392711),
-  i = n.n(l),
+  i = n(392711),
+  l = n.n(i),
   a = n(772848),
   o = n(846519),
   s = n(125268),
@@ -42,48 +42,48 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = i().debounce(s.BR, u.Fq, {
+let m = l().debounce(s.BR, u.Fq, {
   maxWait: u.Fq
 });
 
 function p(e, t, n) {
-  let l = r.useRef((0, a.Z)()),
-    i = r.useRef(new o.Xp),
+  let i = r.useRef((0, a.Z)()),
+    l = r.useRef(new o.Xp),
     p = r.useCallback(r => {
       r.lastUpdatedAt = Date.now(), (0, s.gr)(r, e, n), (0, s.BR)(t, n, r)
     }, [t, n, e]),
     h = r.useCallback((r, o, m) => {
-      l.current = (0, a.Z)();
+      i.current = (0, a.Z)();
       let h = f(d({}, r), {
-        id: l.current,
+        id: i.current,
         x: o,
         y: m,
         userId: e,
         state: c.f.START,
         lastUpdatedAt: Date.now()
       });
-      (0, s.BR)(t, n, h), (0, s.gr)(h, e, n), i.current.start(u.FO, () => p(h))
+      (0, s.BR)(t, n, h), (0, s.gr)(h, e, n), l.current.start(u.FO, () => p(h))
     }, [e, t, n, p]),
     v = r.useCallback((r, a, o) => {
       let h = f(d({}, r), {
-        id: l.current,
+        id: i.current,
         x: a,
         y: o,
         userId: e,
         state: c.f.START,
         lastUpdatedAt: Date.now()
       });
-      m(t, n, h), (0, s.gr)(h, e, n), i.current.start(u.FO, () => p(h))
+      m(t, n, h), (0, s.gr)(h, e, n), l.current.start(u.FO, () => p(h))
     }, [e, t, n, p]),
     b = r.useCallback((r, a, o) => {
-      m.cancel(), (0, s.Df)(t, n, l.current), (0, s.gr)(f(d({}, r), {
-        id: l.current,
+      m.cancel(), (0, s.Df)(t, n, i.current), (0, s.gr)(f(d({}, r), {
+        id: i.current,
         x: a,
         y: o,
         userId: e,
         state: c.f.STOP,
         lastUpdatedAt: Date.now()
-      }), e, n), i.current.stop()
+      }), e, n), l.current.stop()
     }, [t, n, e]),
     g = r.useCallback((e, t, n) => v(e, t, n), [v]);
   return r.useMemo(() => ({
