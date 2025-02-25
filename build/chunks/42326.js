@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   l = n.n(i),
-  a = n(481060),
-  o = n(618158),
+  o = n(481060),
+  a = n(618158),
   s = n(640498);
 
 function c(e) {
@@ -15,13 +15,13 @@ function c(e) {
     errorMessage: t,
     className: n
   } = e;
-  return (0, r.jsx)(a.DY3, {
+  return (0, r.jsx)(o.DY3, {
     className: l()(n, s.root),
     text: t,
     position: "bottom",
-    color: a.FGA.GREY,
-    children: (0, r.jsx)(o.Z, {
-      children: (0, r.jsx)(a.P4T, {
+    color: o.FGA.GREY,
+    children: (0, r.jsx)(a.Z, {
+      children: (0, r.jsx)(o.P4T, {
         size: "custom",
         width: 20,
         height: 20,

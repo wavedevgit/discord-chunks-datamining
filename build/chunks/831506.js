@@ -1,12 +1,12 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   Z: () => N
 }), n(47120);
 var r, l = n(392711),
   i = n.n(l),
-  a = n(442837),
-  o = n(570140),
+  o = n(442837),
+  a = n(570140),
   s = n(314897),
   c = n(699516),
   u = n(885110),
@@ -40,10 +40,10 @@ function y(e, t) {
 function b(e, t, n, r) {
   let l = n.find(e => null != e.party && e.party.id),
     i = null != l && null != l.party ? l.party.id : null,
-    a = g(t, e);
-  if (null == i || r === d.Skl.OFFLINE) return null != a && void y(t, e);
-  if (null != a) {
-    if (a === i) return !1;
+    o = g(t, e);
+  if (null == i || r === d.Skl.OFFLINE) return null != o && void y(t, e);
+  if (null != o) {
+    if (o === i) return !1;
     y(t, e)
   }! function(e, t, n) {
     var r;
@@ -92,7 +92,7 @@ function j(e) {
     null != n && n.delete(t.id)
   }
 }
-class S extends(r = a.ZP.Store) {
+class S extends(r = o.ZP.Store) {
   initialize() {
     this.syncWith([u.Z], O), this.waitFor(u.Z, c.Z)
   }
@@ -107,7 +107,7 @@ class S extends(r = a.ZP.Store) {
   }
 }
 f(S, "displayName", "GamePartyStore");
-let N = new S(o.Z, {
+let N = new S(a.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
     let {
       guilds: t,

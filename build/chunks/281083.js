@@ -1,10 +1,10 @@
-/** Chunk was on 94698 **/
+/** Chunk was on 63354 **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => _
 }), n(47120);
-var r = n(209739),
-  o = n.n(r),
+var o = n(209739),
+  r = n.n(o),
   c = n(358085);
 let i = {
   [c.PlatformTypes.WINDOWS]: {
@@ -12,18 +12,18 @@ let i = {
   }
 };
 
-function a(e) {
+function _(e) {
   let t = i[(0, c.getPlatform)()];
   if (null == t) return !1;
   for (let n of Object.keys(e)) {
-    let r = e[n],
+    let o = e[n],
       c = t[n];
-    if (null == r || null == c || null != r.error) continue;
+    if (null == o || null == c || null != o.error) continue;
     let i = function(e) {
       var t, n;
       return "".concat(null !== (t = e.major) && void 0 !== t ? t : 0, ".").concat(null !== (n = e.minor) && void 0 !== n ? n : 0, ".0")
-    }(r);
-    if (!o().satisfies(i, c)) return !0
+    }(o);
+    if (!r().satisfies(i, c)) return !0
   }
   return !1
 }

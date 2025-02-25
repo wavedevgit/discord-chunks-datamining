@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => S
 }), n(47120);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(823379),
   v = n(51144),
   y = n(308361);
-let _ = d.u.SIZE_24;
+let O = d.u.SIZE_24;
 
-function O(e) {
+function j(e) {
   var t, n;
   let {
     activity: l,
@@ -85,7 +85,7 @@ function O(e) {
   })) : v
 }
 
-function j(e) {
+function _(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -174,7 +174,7 @@ function S(e) {
   null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (m = u.map(e => e.user.id));
   let S = (0, a.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
     N = null != n || (0, c.Z)(t),
-    I = i.useMemo(() => {
+    Z = i.useMemo(() => {
       let e = new Map;
       return N && null != u && u.forEach(t => {
         let n = t.member;
@@ -185,14 +185,14 @@ function S(e) {
     className: y.flexColumn,
     children: [(0, r.jsxs)("div", {
       className: y.flexRow,
-      children: [(0, r.jsx)(O, {
+      children: [(0, r.jsx)(j, {
         activity: t,
         user: l,
         embeddedApp: n,
         onOpenSpotifyAlbum: g
       }), (0, r.jsxs)("div", {
         className: y.detailsAndAvatarsContainer,
-        children: [(0, r.jsx)(j, {
+        children: [(0, r.jsx)(_, {
           activity: t,
           embeddedApp: n,
           onOpenSpotifyTrack: p
@@ -206,18 +206,18 @@ function S(e) {
           className: y.usersSummary,
           guildId: o.guild_id,
           users: S,
-          size: _,
+          size: O,
           max: 7,
           renderUser: e => {
             var t;
             if (null == e) return null;
-            let n = I.get(e.id),
+            let n = Z.get(e.id),
               i = null !== (t = null == n ? void 0 : n.nick) && void 0 !== t ? t : v.ZP.getName(e);
             return (0, r.jsx)(s.DY3, {
               text: i,
               position: "bottom",
               children: (0, r.jsx)("img", {
-                src: e.getAvatarURL(o.guild_id, _),
+                src: e.getAvatarURL(o.guild_id, O),
                 alt: i,
                 className: y.avatar
               }, e.id)

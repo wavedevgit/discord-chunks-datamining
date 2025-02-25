@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  a = n(570140),
-  o = n(519938),
+  o = n(570140),
+  a = n(519938),
   s = n(928518),
   c = n(585483),
   u = n(317381),
@@ -16,16 +16,16 @@ var r = n(200651),
   p = n(918559),
   h = n(981631);
 let v = (e, t) => {
-  a.Z.wait(() => {
-    (0, o.Cz)(e, t)
+  o.Z.wait(() => {
+    (0, a.Cz)(e, t)
   })
 };
 
 function b(e) {
   let t, {
       embedId: n,
-      className: a,
-      style: o
+      className: o,
+      style: a
     } = e,
     b = (0, l.e7)([s.Z], () => s.Z.getWindow(h.KJ3.CHANNEL_CALL_POPOUT)),
     g = (0, m.Z)(),
@@ -58,7 +58,7 @@ function b(e) {
     }
   }, [n, S]), (0, r.jsx)("div", {
     ref: O,
-    style: o,
-    className: a
+    style: a,
+    className: o
   })
 }

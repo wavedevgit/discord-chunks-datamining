@@ -1,46 +1,46 @@
-/** Chunk was on 48710 **/
+/** Chunk was on 61195 **/
 n.d(t, {
-  U: () => f
+  U: () => h
 });
-var r = n(200651),
-  l = n(192379),
-  i = n(399606),
-  o = n(481060),
-  a = n(592125),
-  s = n(922482),
-  c = n(750154),
+var i = n(200651),
+  o = n(192379),
+  r = n(399606),
+  a = n(481060),
+  l = n(592125),
+  c = n(922482),
+  s = n(750154),
   u = n(427679),
   d = n(388032);
 
-function h(e) {
+function _(e) {
   var t, n;
   let {
-    activity: h
+    activity: _
   } = e, {
-    channelId: f
-  } = null !== (t = (0, c.rq)(h)) && void 0 !== t ? t : {}, p = (0, i.e7)([u.Z], () => u.Z.getStageInstanceByChannel(f), [f]), g = l.useRef(null), N = l.useCallback(() => {
-    let e = a.Z.getChannel(f);
-    null != e && s.Cq(e)
-  }, [f]), v = null !== (n = null == p ? void 0 : p.topic) && void 0 !== n ? n : h.name, O = d.NW.formatToPlainString(d.t["T+DNAA"], {
+    channelId: h
+  } = null !== (t = (0, s.rq)(_)) && void 0 !== t ? t : {}, f = (0, r.e7)([u.Z], () => u.Z.getStageInstanceByChannel(h), [h]), p = o.useRef(null), g = o.useCallback(() => {
+    let e = l.Z.getChannel(h);
+    null != e && c.Cq(e)
+  }, [h]), v = null !== (n = null == f ? void 0 : f.topic) && void 0 !== n ? n : _.name, b = d.NW.formatToPlainString(d.t["T+DNAA"], {
     channel: v
   });
-  return (0, r.jsx)("div", {
-    ref: g,
-    children: (0, r.jsx)(o.P3F, {
-      onClick: N,
+  return (0, i.jsx)("div", {
+    ref: p,
+    children: (0, i.jsx)(a.P3F, {
+      onClick: g,
       focusProps: {
-        ringTarget: g
+        ringTarget: p
       },
-      children: (0, r.jsx)(o.X6q, {
+      children: (0, i.jsx)(a.X6q, {
         variant: "heading-sm/semibold",
-        children: O
+        children: b
       })
     })
   })
 }
-class f {
+class h {
   shouldShow(e) {
-    return (0, c.JE)(e)
+    return (0, s.JE)(e)
   }
   createHeader(e) {
     return {
@@ -51,10 +51,10 @@ class f {
   constructor() {
     var e;
     (e = "body") in this ? Object.defineProperty(this, e, {
-      value: h,
+      value: _,
       enumerable: !0,
       configurable: !0,
       writable: !0
-    }) : this[e] = h
+    }) : this[e] = _
   }
 }

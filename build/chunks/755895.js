@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 e.exports = {
   gameName: "gameName__8c6c2",
   clickableGameName: "clickableGameName__8c6c2",

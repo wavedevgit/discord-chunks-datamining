@@ -1,10 +1,10 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => x
 }), n(47120);
 var i, r = n(192379),
-  s = n(392711),
-  o = n.n(s),
+  o = n(392711),
+  s = n.n(o),
   l = n(995295),
   a = n(374470),
   c = n(902704),
@@ -12,8 +12,8 @@ var i, r = n(192379),
   u = n(13245),
   h = n(808506),
   p = n(372679),
-  g = n(671999),
-  f = n(358085);
+  f = n(671999),
+  g = n(358085);
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -27,27 +27,27 @@ let y = {
     x: 0,
     y: 0
   },
-  O = !1;
+  _ = !1;
 
 function v(e) {
   let {
     clientX: t,
     clientY: n
   } = e;
-  O = !0, y.x = t, y.y = n
+  _ = !0, y.x = t, y.y = n
 }
-let S = new Map;
+let O = new Map;
 
 function b(e, t) {
-  if (null == t) S.delete(e), 0 === S.size && (window.removeEventListener("mousemove", v), O = !1);
+  if (null == t) O.delete(e), 0 === O.size && (window.removeEventListener("mousemove", v), _ = !1);
   else {
-    let n = S.get(e);
+    let n = O.get(e);
     if (null != n && (0, c.Z)(n.zone, t.zone)) return;
-    0 === S.size && window.addEventListener("mousemove", v), S.set(e, t)
+    0 === O.size && window.addEventListener("mousemove", v), O.set(e, t)
   }
-  if (f.isPlatformEmbedded) {
+  if (g.isPlatformEmbedded) {
     if (h.ZP.isFocusedPidOutOfProcess()) {
-      let e = Array.from(S.values()).map(e => {
+      let e = Array.from(O.values()).map(e => {
         let {
           zone: t
         } = e;
@@ -66,21 +66,21 @@ function b(e, t) {
       if (null == e) return;
       e.broadcastCommand({
         message: "set_click_zones",
-        zones: Array.from(S.values()).map(e => {
+        zones: Array.from(O.values()).map(e => {
           let {
             zone: t
           } = e;
           return t
         })
-      }), n = e, x || (n.setClickZoneCallback((e, t, n) => {
-        let i = S.get(e);
-        null != i && (O || (y.x = t, y.y = n), i.instance.click())
-      }), x = !0)
+      }), n = e, S || (n.setClickZoneCallback((e, t, n) => {
+        let i = O.get(e);
+        null != i && (_ || (y.x = t, y.y = n), i.instance.click())
+      }), S = !0)
     }
   }
 }
-let x = !1;
-class Z extends(i = r.PureComponent) {
+let S = !1;
+class x extends(i = r.PureComponent) {
   componentDidMount() {
     this.props.observe ? this.observeZone() : this.updateZone()
   }
@@ -100,11 +100,11 @@ class Z extends(i = r.PureComponent) {
     this.updateZone(), this.interval.start(this.props.observeInterval, this.updateZone)
   }
   click() {
-    let e = (0, g.B)("click", y.x, y.y);
-    (0, g.J)(e, y.x, y.y)
+    let e = (0, f.B)("click", y.x, y.y);
+    (0, f.J)(e, y.x, y.y)
   }
   constructor(...e) {
-    super(...e), m(this, "zone", o().uniqueId("ClickArea")), m(this, "interval", new d.Xp), m(this, "updateZone", () => {
+    super(...e), m(this, "zone", s().uniqueId("ClickArea")), m(this, "interval", new d.Xp), m(this, "updateZone", () => {
       let e = (0, l.findDOMNode)(this);
       if ((0, a.k)(e)) {
         let {
@@ -127,7 +127,7 @@ class Z extends(i = r.PureComponent) {
     })
   }
 }
-m(Z, "defaultProps", {
+m(x, "defaultProps", {
   observe: !0,
   observeInterval: 1e3
 })

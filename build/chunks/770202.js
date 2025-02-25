@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => S
 }), n(411104), n(47120);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(473403),
   v = n(981631),
   y = n(490897),
-  _ = n(436804);
+  O = n(436804);
 
-function O(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -59,11 +59,11 @@ class C extends m.ZP {
       canReorderChannel: a
     } = this.props, s = (0, r.jsx)("li", {
       className: o()(this.getClassName(), {
-        [_.disabled]: this.isDisabled()
+        [O.disabled]: this.isDisabled()
       }),
       "data-dnd-name": e.name,
       children: (0, r.jsxs)(b.Z, {
-        className: _.iconVisibility,
+        className: O.iconVisibility,
         channel: e,
         selected: t,
         onClick: this.handleClick,
@@ -80,7 +80,7 @@ class C extends m.ZP {
     return a ? n(i(s)) : s
   }
   constructor(...e) {
-    super(...e), O(this, "handleContextMenu", e => {
+    super(...e), j(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, i = f.Z.getGuild(t.getGuildId());
@@ -90,7 +90,7 @@ class C extends m.ZP {
         } = await n.e("99905").then(n.bind(n, 649400));
         return n => {
           var l, o;
-          return (0, r.jsx)(e, (l = j({}, n), o = o = {
+          return (0, r.jsx)(e, (l = _({}, n), o = o = {
             channel: t,
             guild: i
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
@@ -105,7 +105,7 @@ class C extends m.ZP {
           }), l))
         }
       })
-    }), O(this, "handleClick", e => {
+    }), j(this, "handleClick", e => {
       (function(e) {
         let t = e.getGuildId();
         if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
@@ -135,5 +135,5 @@ let P = (0, u.B)(C),
         canReorderChannel: !0 !== i && null != e ? g.Z.can(v.Plq.MANAGE_CHANNELS, e) : g.Z.can(v.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(P, j({}, l, e))
+    return (0, r.jsx)(P, _({}, l, e))
   })

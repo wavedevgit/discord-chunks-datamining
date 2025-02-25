@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => m
 });
@@ -24,7 +24,7 @@ let m = i.memo(function(e) {
     withGuildIcon: m
   } = e, {
     density: b
-  } = (0, s.TCT)(), v = (0, c.Q3)("GuildSidebarThreadList"), y = (0, a.Wu)([u.Z], () => l.map(e => u.Z.getChannel(e)).filter(p.lm), [l]), _ = (0, a.e7)([d.ZP], () => {
+  } = (0, s.TCT)(), v = (0, c.Q3)("GuildSidebarThreadList"), y = (0, a.Wu)([u.Z], () => l.map(e => u.Z.getChannel(e)).filter(p.lm), [l]), O = (0, a.e7)([d.ZP], () => {
     let e = y[y.length - 1];
     if (null == e) return 0;
     let t = d.ZP.getVoiceStates(e.guild_id)[e.id];
@@ -42,7 +42,7 @@ let m = i.memo(function(e) {
           [g.spineBorderWithGuildIcon]: m
         }),
         style: {
-          bottom: (v && "cozy" === b ? 28 : 24) + _
+          bottom: (v && "cozy" === b ? 28 : 24) + O
         }
       }), y.map((e, t) => (0, r.jsx)(h.Z, {
         thread: e,

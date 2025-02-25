@@ -1,4 +1,4 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   b6: () => p,
@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(866442),
   l = n(503438),
   i = n(420660),
-  a = n(168631),
-  o = n(621853),
+  o = n(168631),
+  a = n(621853),
   s = n(981631),
   c = n(388032);
 let u = e => "".concat(e).length < 13 ? 1e3 * e : e,
@@ -37,9 +37,9 @@ let u = e => "".concat(e).length < 13 ? 1e3 * e : e,
   },
   m = (e, t) => {
     var n;
-    let l = o.Z.getUserProfile(e.id),
+    let l = a.Z.getUserProfile(e.id),
       [i, s] = null !== (n = null == l ? void 0 : l.themeColors) && void 0 !== n ? n : [],
-      c = (0, a.V3)(i),
+      c = (0, o.V3)(i),
       u = null != s ? (0, r.Rf)(s) : t;
     return {
       color: u,

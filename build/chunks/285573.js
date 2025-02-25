@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => v
 });
@@ -24,15 +24,15 @@ let v = (0, c.B)(function(e) {
     position: c,
     disableManageChannels: v,
     sorting: y,
-    sortingType: _,
-    sortingPosition: O,
-    connectChannelDragSource: j,
+    sortingType: O,
+    sortingPosition: j,
+    connectChannelDragSource: _,
     connectChannelDropTarget: x,
     tabIndex: C
   } = e, P = (0, a.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
-  }), S = (0, a.e7)([u.Z], () => u.Z.getChannel(null == P ? void 0 : P.parent_id)), N = l === (null == P ? void 0 : P.id), I = (0, a.e7)([p.Z], () => null != S ? p.Z.can(g.Plq.MANAGE_CHANNELS, S) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), Z = i.useCallback(e => {
+  }), S = (0, a.e7)([u.Z], () => u.Z.getChannel(null == P ? void 0 : P.parent_id)), N = l === (null == P ? void 0 : P.id), Z = (0, a.e7)([p.Z], () => null != S ? p.Z.can(g.Plq.MANAGE_CHANNELS, S) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), I = i.useCallback(e => {
     null != P && (0, s.jW)(e, async () => {
       let {
         default: e
@@ -72,8 +72,8 @@ let v = (0, c.B)(function(e) {
     })
   }, [P]);
   if (null == P) return null;
-  let w = (0, h.jo)(c, O),
-    E = (0, h.CN)(P, y, _),
+  let w = (0, h.jo)(c, j),
+    E = (0, h.CN)(P, y, O),
     T = (0, r.jsx)("div", {
       className: o()(w, {
         [b.disabled]: E,
@@ -85,7 +85,7 @@ let v = (0, c.B)(function(e) {
         channel: P,
         guild: t,
         selected: N,
-        onContextMenu: Z,
+        onContextMenu: I,
         forceInteractable: !0,
         resolvedUnreadSetting: m.i.ONLY_MENTIONS,
         children: [(0, r.jsx)(h.eP, {
@@ -98,5 +98,5 @@ let v = (0, c.B)(function(e) {
         })]
       })
     });
-  return I && (T = x(j(T))), T
+  return Z && (T = x(_(T))), T
 })

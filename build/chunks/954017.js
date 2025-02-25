@@ -1,4 +1,4 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   H: () => v,
@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(512722),
   l = n.n(r),
   i = n(493683),
-  a = n(726542),
-  o = n(122810),
+  o = n(726542),
+  a = n(122810),
   s = n(503438),
   c = n(693824),
   u = n(690725),
@@ -52,11 +52,11 @@ let v = async e => {
     reply: t,
     altText: n
   } = e, r = h(e, ["reply", "altText"]);
-  let a = await S(r),
-    o = await i.Z.openPrivateChannel(r.user.id, !1, !1),
-    s = f.Z.getChannel(o);
+  let o = await S(r),
+    a = await i.Z.openPrivateChannel(r.user.id, !1, !1),
+    s = f.Z.getChannel(a);
   l()(null != s, "Channel cannot be null"), (0, m.B)({
-    file: a,
+    file: o,
     altText: n,
     channel: s,
     reply: t
@@ -68,10 +68,10 @@ let v = async e => {
     user: l
   } = e, {
     theme: i
-  } = (0, y.j3)(l, "black"), a = "dark" === i, o = (0, d.Z)(t), {
+  } = (0, y.j3)(l, "black"), o = "dark" === i, a = (0, d.Z)(t), {
     assets: s,
     application_id: c
-  } = t, u = (0, p.getAssetImage)(c, null == s ? void 0 : s.large_image, 64), f = null == r ? void 0 : r.getIconURL(64), m = null != o ? a ? o.icon.darkPNG : o.icon.lightPNG : t.type === b.IIU.PLAYING ? a ? n(414575) : n(807612) : null;
+  } = t, u = (0, p.getAssetImage)(c, null == s ? void 0 : s.large_image, 64), f = null == r ? void 0 : r.getIconURL(64), m = null != a ? o ? a.icon.darkPNG : a.icon.lightPNG : t.type === b.IIU.PLAYING ? o ? n(414575) : n(807612) : null;
   return function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -113,7 +113,7 @@ let v = async e => {
       var r;
       e.setFont({
         truncate: c.GX.Truncate
-      }), null != l ? E(e, n, t) : (0, s.Z)(n) ? I(e, n, t) : (0, o.Z)(n) && n.name === a.Z.get(b.ABu.LEAGUE_OF_LEGENDS).name ? x(e, n, t) : P(e, n, t), (null === (r = e.assetMap) || void 0 === r ? void 0 : r.has("Platform")) && e.drawImage("Platform", {
+      }), null != l ? E(e, n, t) : (0, s.Z)(n) ? I(e, n, t) : (0, a.Z)(n) && n.name === o.Z.get(b.ABu.LEAGUE_OF_LEGENDS).name ? x(e, n, t) : P(e, n, t), (null === (r = e.assetMap) || void 0 === r ? void 0 : r.has("Platform")) && e.drawImage("Platform", {
         x: g.En - g.o3 - g.ez,
         y: g.o3
       }, {
@@ -141,15 +141,15 @@ let v = async e => {
     h: g.dI
   });
   let {
-    color: a,
-    theme: o
+    color: o,
+    theme: a
   } = (0, y.j3)(n, "black");
-  e.setColor(a), e.drawRoundedRect({
+  e.setColor(o), e.drawRoundedRect({
     x: 0,
     y: 0,
     h: g.dI,
     w: g.En
-  }, 8, !0), e.setColor("dark" === o ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), e.drawRoundedRect({
+  }, 8, !0), e.setColor("dark" === a ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), e.drawRoundedRect({
     x: 0,
     y: 0,
     h: g.dI,
@@ -166,9 +166,9 @@ let v = async e => {
   }, {
     w: g.vS,
     h: g.vS
-  }, 8) : N(e, o);
+  }, 8) : N(e, a);
   let s = g.vS + g.o3 + g.sB;
-  e.setColor("dark" === o ? "white" : "rgb(6, 6, 7)"), e.setFont({
+  e.setColor("dark" === a ? "white" : "rgb(6, 6, 7)"), e.setFont({
     size: 16,
     family: ["gg sans", "sans-serif"],
     weight: 700
@@ -191,14 +191,14 @@ let v = async e => {
   });
   let {
     color: i,
-    theme: a
+    theme: o
   } = (0, y.j3)(n, "black");
   e.setColor(i), e.drawRoundedRect({
     x: 0,
     y: 0,
     h: g.dI,
     w: g.En
-  }, 8, !0), e.setColor("dark" === a ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), e.drawRoundedRect({
+  }, 8, !0), e.setColor("dark" === o ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), e.drawRoundedRect({
     x: 0,
     y: 0,
     h: g.dI,
@@ -210,20 +210,20 @@ let v = async e => {
     w: g.vS,
     h: g.vS
   }, 8);
-  let o = g.vS + g.o3 + g.sB;
-  e.setColor("dark" === a ? "white" : "rgb(6, 6, 7)"), e.setFont({
+  let a = g.vS + g.o3 + g.sB;
+  e.setColor("dark" === o ? "white" : "rgb(6, 6, 7)"), e.setFont({
     size: 14,
     family: ["gg sans", "sans-serif"],
     weight: 700
   }), e.drawText("".concat(t.details), {
-    x: o,
+    x: a,
     y: g.SG + +g.Nv,
     w: (null === (l = e.assetMap) || void 0 === l ? void 0 : l.has(g.W3.Platform)) ? g.ee : g.sp
   }, !0), e.setFont({
     size: 14,
     weight: 400
   }), e.drawText("by ".concat(t.state), {
-    x: o,
+    x: a,
     y: g.SG + 2 * g.Nv
   }, !0)
 }, x = (e, t, n) => {
@@ -256,20 +256,20 @@ let v = async e => {
     x: g.o3,
     y: g.o3
   }, !0, 2 + 2 / 3);
-  let a = g.vS + g.o3 + g.sB;
+  let o = g.vS + g.o3 + g.sB;
   e.setColor("dark" === i ? "white" : "rgb(6, 6, 7)"), e.setFont({
     size: 14,
     family: ["gg sans", "sans-serif"],
     weight: 700
   }), e.drawText("".concat(t.details), {
-    x: a,
+    x: o,
     y: g.SG + +g.Nv,
     w: (null === (r = e.assetMap) || void 0 === r ? void 0 : r.has("Platform")) ? g.ee : g.sp
   }, !0), e.setFont({
     size: 14,
     weight: 400
   }), e.drawText("".concat(t.state), {
-    x: a,
+    x: o,
     y: g.SG + 2 * g.Nv
   }, !0)
 }, E = (e, t, n) => {
@@ -279,15 +279,15 @@ let v = async e => {
     h: g.dI
   });
   let {
-    color: a,
-    theme: o
+    color: o,
+    theme: a
   } = (0, y.j3)(n, "black");
-  e.setColor(a), e.drawRoundedRect({
+  e.setColor(o), e.drawRoundedRect({
     x: 0,
     y: 0,
     h: g.dI,
     w: g.En
-  }, 8, !0), e.setColor("dark" === o ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), e.drawRoundedRect({
+  }, 8, !0), e.setColor("dark" === a ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), e.drawRoundedRect({
     x: 0,
     y: 0,
     h: g.dI,
@@ -304,9 +304,9 @@ let v = async e => {
   }, {
     w: g.vS,
     h: g.vS
-  }, 8) : N(e, o);
+  }, 8) : N(e, a);
   let s = g.vS + g.o3 + g.sB;
-  e.setColor("dark" === o ? "white" : "rgb(6, 6, 7)"), e.setFont({
+  e.setColor("dark" === a ? "white" : "rgb(6, 6, 7)"), e.setFont({
     size: 16,
     family: ["gg sans", "sans-serif"],
     weight: 700

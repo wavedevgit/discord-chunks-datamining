@@ -1,4 +1,4 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   ZP: () => C,
@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(434650),
   c = n(40851),
   u = n(657305),
@@ -57,7 +57,7 @@ let T = e => {
     className: l
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(l, w.list, n ? w.listCollapse : w.listDefault),
+    className: o()(l, w.list, n ? w.listCollapse : w.listDefault),
     role: "group",
     children: t
   })
@@ -97,65 +97,65 @@ function A(e) {
       deaf: c,
       serverDeaf: d
     });
-  p && (i ? R.push((0, r.jsx)(o.DY3, {
+  p && (i ? R.push((0, r.jsx)(a.DY3, {
     className: w.iconSpacing,
     text: E.NW.string(E.t["PXMZ//"]),
-    children: (0, r.jsx)(o.Amn, {
+    children: (0, r.jsx)(a.Amn, {
       size: "md",
       color: "currentColor",
-      className: a()(w.icon, h),
+      className: o()(w.icon, h),
       colorClass: w.strikethrough
     })
-  }, "video")) : R.push((0, r.jsx)(o.DY3, {
+  }, "video")) : R.push((0, r.jsx)(a.DY3, {
     className: w.iconSpacing,
     text: E.NW.string(E.t.FlNoSU),
-    children: (0, r.jsx)(o.Odl, {
+    children: (0, r.jsx)(a.Odl, {
       size: "md",
       color: "currentColor",
-      className: a()(w.icon, h)
+      className: o()(w.icon, h)
     })
-  }, "video"))), W && R.push((0, r.jsx)(o.DY3, {
+  }, "video"))), W && R.push((0, r.jsx)(a.DY3, {
     className: w.iconSpacing,
     text: E.NW.string(E.t.HFwRpq),
-    children: (0, r.jsx)(o.P4T, {
-      className: a()(w.icon, h),
-      color: o.TVs.colors.STATUS_WARNING_BACKGROUND
+    children: (0, r.jsx)(a.P4T, {
+      className: o()(w.icon, h),
+      color: a.TVs.colors.STATUS_WARNING_BACKGROUND
     })
-  }, "disconnected")), null != v && R.push((0, r.jsx)(o.DY3, {
+  }, "disconnected")), null != v && R.push((0, r.jsx)(a.DY3, {
     text: (0, u.Z)(v.name),
     className: w.iconSpacing,
-    children: (0, r.jsx)(o.nG3, {
+    children: (0, r.jsx)(a.nG3, {
       size: "md",
       color: "currentColor",
-      className: a()(w.icon, h)
+      className: o()(w.icon, h)
     })
   }, "activity")), N === x.YE.XBOX || Z === I.wR.XBOX ? R.push((0, r.jsx)("div", {
-    className: a()(w.iconSpacing),
+    className: o()(w.iconSpacing),
     children: (0, r.jsx)(j.Z, {
-      className: a()(w.icon, h)
+      className: o()(w.icon, h)
     })
   }, "xbox")) : (N === x.YE.PLAYSTATION || Z === I.wR.PLAYSTATION) && R.push((0, r.jsx)("div", {
-    className: a()(w.iconSpacing),
+    className: o()(w.iconSpacing),
     children: (0, r.jsx)(O.Z, {
-      className: a()(w.icon, h)
+      className: o()(w.icon, h)
     })
-  }, "playstation")), b && R.push((0, r.jsx)(o.DY3, {
+  }, "playstation")), b && R.push((0, r.jsx)(a.DY3, {
     className: w.iconSpacing,
     text: E.NW.string(E.t.JH1SJy),
-    children: (0, r.jsx)(o.tEF, {
+    children: (0, r.jsx)(a.tEF, {
       size: "xs",
       color: "currentColor",
-      className: a()(w.icon, h)
+      className: o()(w.icon, h)
     })
   }, "watch")), g && R.push((0, r.jsx)("div", {
-    className: a()(w.iconSpacing, w.liveIconSpacing),
+    className: o()(w.iconSpacing, w.liveIconSpacing),
     children: (0, r.jsx)(m.ZP, {
       size: m.ZP.Sizes.SMALL
     })
   }, "stream"));
   let L = null != T && !(0, S.yE)(T.flags, P.udG.EMBEDDED);
   return 0 !== R.length || null != M || L ? (0, r.jsxs)("div", {
-    className: a()(w.icons, t),
+    className: o()(w.icons, t),
     children: [(0, r.jsxs)("div", {
       className: w.iconGroup,
       children: [M, R]
@@ -210,8 +210,8 @@ let C = function(e) {
     guildId: M,
     nick: L,
     isGuest: U,
-    flipped: V,
-    className: G,
+    flipped: G,
+    className: V,
     overlap: F,
     "aria-label": B,
     tabIndex: Y,
@@ -229,8 +229,8 @@ let C = function(e) {
         e === v.Z.isOpen() || (e = v.Z.isOpen()) || et(!1)
       };
     return v.Z.addChangeListener(t), () => v.Z.removeChangeListener(t)
-  }, []), (0, r.jsx)(o.P3F, {
-    className: a()(G, {
+  }, []), (0, r.jsx)(a.P3F, {
+    className: o()(V, {
       [w.voiceUser]: !0,
       [w.overlap]: F,
       [w.selected]: s,
@@ -262,18 +262,18 @@ let C = function(e) {
     "aria-label": B,
     tabIndex: Y,
     children: (0, r.jsxs)("div", {
-      className: a()(w.content, {
-        [w.flipped]: V
+      className: o()(w.content, {
+        [w.flipped]: G
       }),
-      children: [D && !k ? (0, r.jsx)(o.ua7, {
+      children: [D && !k ? (0, r.jsx)(a.ua7, {
         text: E.NW.string(E.t.BVK71t),
         children: e => (0, r.jsx)("div", Z({
-          className: a()(w.iconPriortySpeaker, {
+          className: o()(w.iconPriortySpeaker, {
             [w.iconPriortySpeakerSpeaking]: !W && !R && _
           })
         }, e))
       }) : null, (0, r.jsx)("div", {
-        className: a()(t, w.avatar, {
+        className: o()(t, w.avatar, {
           [w.avatarLarge]: i === P.ipw.LARGE,
           [w.avatarSmall]: i === P.ipw.SMALL,
           [w.avatarSpeaking]: _
@@ -284,7 +284,7 @@ let C = function(e) {
       }), function() {
         var e, t;
         let l = (0, r.jsxs)("div", {
-            className: a()(n, {
+            className: o()(n, {
               [w.username]: !0,
               [w.usernameSpeaking]: !W && !R && _
             }),
@@ -299,7 +299,7 @@ let C = function(e) {
             contextGuildId: M,
             isOverlay: d,
             disableTooltip: !0,
-            className: a()(w.clanTag, d && w.isOverlay),
+            className: o()(w.clanTag, d && w.isOverlay),
             profileViewedAnalytics: {
               source: d ? P.jXE.OVERLAY : P.Sbl.VOICE_PANEL
             }
@@ -318,10 +318,10 @@ let C = function(e) {
         }), e)) : null
       }(), (0, r.jsx)(A, Z({
         disabled: u
-      }, m)), q && ((Q || ee) && !k ? (0, r.jsx)(o.DY3, {
+      }, m)), q && ((Q || ee) && !k ? (0, r.jsx)(a.DY3, {
         text: E.NW.string(E.t["+1H47u"]),
-        children: (0, r.jsx)(o.P3F, {
-          className: a()(w.moreClickable, ee && w.moreActive),
+        children: (0, r.jsx)(a.P3F, {
+          className: o()(w.moreClickable, ee && w.moreActive),
           onClick: function(e) {
             null != M && null != K && (et(!0), (0, b.D)(e, H, K, {
               context: X
@@ -335,9 +335,9 @@ let C = function(e) {
               })
             }))
           },
-          children: (0, r.jsx)(o.xhG, {
+          children: (0, r.jsx)(a.xhG, {
             size: "md",
-            className: a()(w.icon)
+            className: o()(w.icon)
           })
         })
       }) : null)]
@@ -359,7 +359,7 @@ function D(e) {
       guild_id: i,
       user_id: u
     })
-  }, [t.id, c, i, u, f]), (0, r.jsx)(o.DY3, {
+  }, [t.id, c, i, u, f]), (0, r.jsx)(a.DY3, {
     text: E.NW.formatToPlainString(E.t.Sq9xJy, {
       game: t.name
     }),
@@ -370,7 +370,7 @@ function D(e) {
     children: (0, r.jsx)("div", {
       ref: m,
       children: (0, r.jsx)(y.Z, {
-        className: a()(w.icon, n),
+        className: o()(w.icon, n),
         game: t,
         size: y.Z.Sizes.XSMALL,
         onMouseEnter: () => {
@@ -394,26 +394,26 @@ function _(e) {
     serverMute: i,
     deaf: s,
     serverDeaf: c
-  } = e, u = (0, o.bWb)().enabled, d = [];
+  } = e, u = (0, a.bWb)().enabled, d = [];
   if (n) {
     let e;
     if (u) {
       let n;
-      n = i ? o.v0G : l ? o.v0G : o.nRN, e = (0, r.jsx)(n, {
-        className: a()(w.icon, t, {
+      n = i ? a.v0G : l ? a.v0G : a.nRN, e = (0, r.jsx)(n, {
+        className: o()(w.icon, t, {
           [w.iconServer]: i
         }),
         color: "currentColor"
       })
-    } else e = (0, r.jsx)(o.nRN, {
+    } else e = (0, r.jsx)(a.nRN, {
       size: "md",
       color: "currentColor",
-      className: a()(w.icon, t, {
+      className: o()(w.icon, t, {
         [w.iconServer]: i
       }),
       colorClass: l ? w.strikethrough : void 0
     });
-    d.push((0, r.jsx)(o.DY3, {
+    d.push((0, r.jsx)(a.DY3, {
       text: l ? E.NW.string(E.t.Q8Uzoa) : i ? E.NW.string(E.t.uLddbW) : E.NW.string(E.t.tjtv3N),
       className: w.iconSpacing,
       children: e
@@ -422,21 +422,21 @@ function _(e) {
   if (c || s) {
     let e;
     if (u) {
-      let n = c ? o.Vm4 : o.wE8;
+      let n = c ? a.Vm4 : a.wE8;
       e = (0, r.jsx)(n, {
-        className: a()(w.icon, t, {
+        className: o()(w.icon, t, {
           [w.iconServer]: c
         }),
         color: "currentColor"
       })
-    } else e = (0, r.jsx)(o.wE8, {
+    } else e = (0, r.jsx)(a.wE8, {
       size: "md",
       color: "currentColor",
-      className: a()(w.icon, t, {
+      className: o()(w.icon, t, {
         [w.iconServer]: c
       })
     });
-    d.push((0, r.jsx)(o.DY3, {
+    d.push((0, r.jsx)(a.DY3, {
       className: w.iconSpacing,
       text: c ? E.NW.string(E.t.btxSdH) : E.NW.string(E.t.NjmiOD),
       children: e

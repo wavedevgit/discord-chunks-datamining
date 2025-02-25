@@ -14,8 +14,8 @@ n.d(t, {
 var r = n(261470),
   i = n(544891),
   l = n(570140),
-  a = n(984063),
-  o = n(981631);
+  o = n(984063),
+  a = n(981631);
 
 function s(e, t, n, r, i) {
   l.Z.dispatch({
@@ -30,7 +30,7 @@ function s(e, t, n, r, i) {
 
 function c(e, t, n, r) {
   return i.tn.post({
-    url: o.ANM.SHARED_CANVAS_LINES(e, n),
+    url: a.ANM.SHARED_CANVAS_LINES(e, n),
     body: {
       line_id: t,
       points: r
@@ -51,7 +51,7 @@ function u(e, t, n, r) {
 
 function d(e, t, n) {
   return i.tn.post({
-    url: o.ANM.SHARED_CANVAS_EMOJI_HOSES(e, t),
+    url: a.ANM.SHARED_CANVAS_EMOJI_HOSES(e, t),
     body: {
       emoji_hose: n
     },
@@ -61,14 +61,14 @@ function d(e, t, n) {
 
 function f(e, t, n) {
   i.tn.del({
-    url: o.ANM.SHARED_CANVAS_EMOJI_HOSE(e, t, n),
+    url: a.ANM.SHARED_CANVAS_EMOJI_HOSE(e, t, n),
     backoff: new r.Z,
     rejectWithError: !0
   })
 }
 
 function m(e, t) {
-  t.state = a.f.STOP, l.Z.dispatch({
+  t.state = o.f.STOP, l.Z.dispatch({
     type: "SHARED_CANVAS_UPDATE_EMOJI_HOSE",
     emojiHose: t,
     userId: t.userId,

@@ -1,9 +1,9 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   P: () => w,
   Qo: () => E,
-  ZP: () => Z,
-  kw: () => A,
+  ZP: () => I,
+  kw: () => D,
   rj: () => T
 });
 var r = n(200651),
@@ -23,9 +23,9 @@ var r = n(200651),
   b = n(430824),
   v = n(496675),
   y = n(9156),
-  _ = n(203818),
-  O = n(438144),
-  j = n(981631),
+  O = n(203818),
+  j = n(438144),
+  _ = n(981631),
   x = n(388032),
   C = n(449579);
 
@@ -64,26 +64,26 @@ function S(e, t) {
 function N(e) {
   e.stopPropagation()
 }
-let I = i.memo(function(e) {
+let Z = i.memo(function(e) {
     let t, {
         channel: l,
         connectChannelDragSource: p,
-        connectChannelDropTarget: _,
-        disableManageChannels: O,
-        position: I,
-        sortingPosition: Z,
+        connectChannelDropTarget: O,
+        disableManageChannels: j,
+        position: Z,
+        sortingPosition: I,
         hideIcon: w,
         children: E
       } = e,
       T = (0, g.Q3)("CategoryChannel"),
-      A = (0, s.e7)([y.ZP], () => y.ZP.isChannelMuted(l.getGuildId(), l.id)),
-      D = (0, s.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
-      R = (0, s.e7)([v.Z], () => v.Z.can(j.Plq.MANAGE_CHANNELS, l));
-    t = null != Z ? I > Z ? C.containerDragAfter : C.containerDragBefore : C.containerDefault;
+      D = (0, s.e7)([y.ZP], () => y.ZP.isChannelMuted(l.getGuildId(), l.id)),
+      A = (0, s.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
+      R = (0, s.e7)([v.Z], () => v.Z.can(_.Plq.MANAGE_CHANNELS, l));
+    t = null != I ? Z > I ? C.containerDragAfter : C.containerDragBefore : C.containerDefault;
     let L = i.useCallback(() => {
-        D ? (0, u.mJ)(l.id) : (0, u.c4)(l.id)
-      }, [l.id, D]),
-      k = i.useCallback(e => {
+        A ? (0, u.mJ)(l.id) : (0, u.c4)(l.id)
+      }, [l.id, A]),
+      M = i.useCallback(e => {
         if ("null" !== l.id) {
           let t = b.Z.getGuild(l.getGuildId());
           null != t && (0, d.jW)(e, async () => {
@@ -97,8 +97,8 @@ let I = i.memo(function(e) {
           })
         }
       }, [l]),
-      M = i.useCallback(() => {
-        let e = l.type === j.d4z.GUILD_CATEGORY ? null : l.type,
+      k = i.useCallback(() => {
+        let e = l.type === _.d4z.GUILD_CATEGORY ? null : l.type,
           t = l.getGuildId();
         null != t && (0, c.ZDy)(async () => {
           let {
@@ -146,11 +146,11 @@ let I = i.memo(function(e) {
           children: (0, r.jsxs)("div", {
             ref: F,
             className: o()(C.iconVisibility, C.wrapper, {
-              [C.collapsed]: D,
-              [C.muted]: A,
+              [C.collapsed]: A,
+              [C.muted]: D,
               [C.clickable]: !0
             }),
-            onContextMenu: k,
+            onContextMenu: M,
             children: [(0, r.jsxs)(c.P3F, S(P({
               innerRef: V,
               className: C.mainContent,
@@ -160,7 +160,7 @@ let I = i.memo(function(e) {
               "aria-label": x.NW.formatToPlainString(x.t.y5l3Jy, {
                 categoryName: l.name
               }),
-              "aria-expanded": !D,
+              "aria-expanded": !A,
               focusProps: {
                 enabled: !1
               },
@@ -181,7 +181,7 @@ let I = i.memo(function(e) {
             })), (0, r.jsx)("div", {
               onClick: N,
               className: C.children,
-              children: R && !O ? (0, r.jsx)(c.ua7, {
+              children: R && !j ? (0, r.jsx)(c.ua7, {
                 text: x.NW.string(x.t["fUYU+v"]),
                 children: e => {
                   let {
@@ -193,7 +193,7 @@ let I = i.memo(function(e) {
                     look: c.zxk.Looks.BLANK,
                     size: c.zxk.Sizes.NONE,
                     className: o()(C.addButton, C.forceVisible),
-                    onClick: M,
+                    onClick: k,
                     onMouseEnter: t,
                     onMouseLeave: n,
                     tabIndex: U,
@@ -221,9 +221,9 @@ let I = i.memo(function(e) {
           })
         }), E]
       });
-    return null != _ && null != p ? _(p(H)) : H
+    return null != O && null != p ? O(p(H)) : H
   }),
-  Z = (0, p.B)(I),
+  I = (0, p.B)(Z),
   w = i.memo(function(e) {
     let {
       name: t,
@@ -261,8 +261,8 @@ let I = i.memo(function(e) {
   E = i.memo(function(e) {
     let {
       category: t
-    } = e, n = (0, s.e7)([_.Z], () => _.Z.isVoiceCategoryCollapsed(t.guild.id)), l = (0, g.Q3)("VoiceChannelCategoryButton"), o = i.useCallback(() => {
-      n ? (0, O.s)(t.guild.id) : (0, O.M)(t.guild.id)
+    } = e, n = (0, s.e7)([O.Z], () => O.Z.isVoiceCategoryCollapsed(t.guild.id)), l = (0, g.Q3)("VoiceChannelCategoryButton"), o = i.useCallback(() => {
+      n ? (0, j.s)(t.guild.id) : (0, j.M)(t.guild.id)
     }, [t.guild.id, n]);
     return l ? (0, r.jsxs)(c.zxk, {
       look: c.zxk.Looks.FILLED,
@@ -295,8 +295,8 @@ let I = i.memo(function(e) {
     let {
       category: t,
       channel: n
-    } = e, i = (0, s.e7)([_.Z], () => _.Z.isVoiceCategoryCollapsed(t.guild.id));
-    return i || null == n || n.record.type === j.d4z.GUILD_CATEGORY ? i ? (0, r.jsx)("li", {
+    } = e, i = (0, s.e7)([O.Z], () => O.Z.isVoiceCategoryCollapsed(t.guild.id));
+    return i || null == n || n.record.type === _.d4z.GUILD_CATEGORY ? i ? (0, r.jsx)("li", {
       className: o()(C.containerDefault),
       children: (0, r.jsx)("div", {
         className: o()(C.iconVisibility, C.wrapperStatic),
@@ -313,7 +313,7 @@ let I = i.memo(function(e) {
       }
     })
   }),
-  A = i.memo(function(e) {
+  D = i.memo(function(e) {
     let {
       channel: t
     } = e;

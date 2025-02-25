@@ -1,12 +1,12 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
   Z: () => d
 });
 var i = n(200651);
 n(192379);
 var r = n(120356),
-  s = n.n(r),
-  o = n(382790),
+  o = n.n(r),
+  s = n(382790),
   l = n(430036),
   a = n(518084),
   c = n(406231);
@@ -20,8 +20,8 @@ function d(e) {
     className: u
   } = e;
   return (0, i.jsxs)(a.ZP, {
-    className: s()(c.wrapper, u),
-    children: [(0, i.jsx)(o.Z, {
+    className: o()(c.wrapper, u),
+    children: [(0, i.jsx)(s.Z, {
       contained: !0,
       dragStart: t,
       locked: d

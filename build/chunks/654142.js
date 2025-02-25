@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => v
 }), n(653041), n(47120);
@@ -67,10 +67,10 @@ let v = i.memo(function(e) {
   }(e, ["folderNode"]);
   let {
     id: y,
-    name: _,
-    color: O,
-    children: j
-  } = t, x = j.map(e => e.id), C = (0, s.Z)(e => e.guildId), P = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), S = function(e) {
+    name: O,
+    color: j,
+    children: _
+  } = t, x = _.map(e => e.id), C = (0, s.Z)(e => e.guildId), P = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), S = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -81,8 +81,8 @@ let v = i.memo(function(e) {
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
   }(t), N = (0, f.Z)(t), {
-    mentionCount: I,
-    isMentionLowImportance: Z,
+    mentionCount: Z,
+    isMentionLowImportance: I,
     unread: w
   } = (0, l.cj)([u.default], () => ({
     mentionCount: x.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
@@ -97,18 +97,18 @@ let v = i.memo(function(e) {
       } = await n.e("52590").then(n.bind(n, 205784));
       return t => (0, r.jsx)(e, b(m({}, t), {
         folderId: y,
-        folderName: _,
-        folderColor: O,
-        unread: w || I > 0
+        folderName: O,
+        folderColor: j,
+        unread: w || Z > 0
       }))
     })
-  }, [y, _, O, w, I]);
+  }, [y, O, j, w, Z]);
   return (0, r.jsx)(h.Z, b(m({}, v), {
     folderNode: t,
     expanded: P,
     selected: null != C && x.includes(C),
-    mentionCount: I,
-    isMentionLowImportance: Z,
+    mentionCount: Z,
+    isMentionLowImportance: I,
     unread: w,
     mediaState: N,
     defaultFolderName: S,

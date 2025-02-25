@@ -1,35 +1,35 @@
-/** Chunk was on 37874 **/
+/** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => c
+  Z: () => u
 });
 var i = n(200651);
 n(192379);
 var r = n(120356),
   o = n.n(r),
   l = n(481060),
-  a = n(809357),
-  s = n(914057);
+  s = n(809357),
+  a = n(914057);
 
-function c(e) {
+function u(e) {
   let {
     onClick: t,
     keybind: n,
     className: r,
-    IconComponent: c
-  } = e, u = (0, a.o)();
+    IconComponent: u
+  } = e, c = (0, s.o)();
   return (0, i.jsxs)("div", {
-    className: o()(s.buttonContainer, r),
+    className: o()(a.buttonContainer, r),
     children: [(0, i.jsx)(l.P3F, {
-      className: s.button,
+      className: a.button,
       onClick: t,
       "aria-hidden": !0,
-      children: (0, i.jsx)(c, {
+      children: (0, i.jsx)(u, {
         size: "md",
         color: "currentColor",
         "aria-hidden": !0
       })
-    }), null != n && u ? (0, i.jsx)(l.Text, {
-      className: o()(s.keybind),
+    }), null != n && c ? (0, i.jsx)(l.Text, {
+      className: o()(a.keybind),
       "aria-hidden": !0,
       variant: "text-xxs/bold",
       color: "interactive-normal",

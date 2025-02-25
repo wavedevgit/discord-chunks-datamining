@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   i: () => v
 }), n(47120);
@@ -31,9 +31,9 @@ function v() {
     enabled: v
   } = (0, f.W)({
     location: "vc-announcement-modal"
-  }), y = v ? [o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], [_, O] = (0, u.US)(y, void 0, !0), j = (0, s.s9z)(s.JQI);
+  }), y = v ? [o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], [O, j] = (0, u.US)(y, void 0, !0), _ = (0, s.s9z)(s.JQI);
   i.useEffect(() => {
-    v && !t && _ === o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && !e && !j && (c.Z.dispatch({
+    v && !t && O === o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && !e && !_ && (c.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
     }), (0, a.ZD)(async () => {
       let {
@@ -56,8 +56,8 @@ function v() {
       }
     }, {
       onCloseCallback: () => {
-        O(m.L.UNKNOWN), (0, h.U9)(["discover"])
+        j(m.L.UNKNOWN), (0, h.U9)(["discover"])
       }
     }))
-  }, [_, v, t, O, e, j])
+  }, [O, v, t, j, e, _])
 }

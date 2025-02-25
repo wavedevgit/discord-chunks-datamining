@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(979590),
   i = n.n(r),
   l = n(866442),
-  a = n(220082),
-  o = n(594174),
+  o = n(220082),
+  a = n(594174),
   s = n(984063),
   c = n(813900);
 
@@ -52,9 +52,9 @@ function p(e) {
 
 function h(e, t, n, r) {
   var s;
-  let u = o.default.getUser(e),
+  let u = a.default.getUser(e),
     d = null == u ? void 0 : u.getAvatarURL(null, c.Ks),
-    f = null != d ? null === (s = a.SR.getState().palette[d]) || void 0 === s ? void 0 : s[0] : null,
+    f = null != d ? null === (s = o.SR.getState().palette[d]) || void 0 === s ? void 0 : s[0] : null,
     m = null != f ? "#".concat(i()({
       r: f[0],
       g: f[1],

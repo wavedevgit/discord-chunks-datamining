@@ -1,4 +1,4 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   Z: () => O
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var l = n(442837),
   i = n(481060),
-  a = n(572691),
-  o = n(287734),
+  o = n(572691),
+  a = n(287734),
   s = n(872810),
   c = n(40851),
   u = n(102172),
@@ -71,9 +71,9 @@ function O(e) {
       return t !== j.ownerId
     }).length > 0
   })), I = (0, l.e7)([f.Z], () => f.Z.getChannel(null == j ? void 0 : j.channelId)), [x, E] = (0, u.wq)(I), w = (0, c.Aq)(), Z = null != N && null != j && N.state !== g.jm8.ENDED && N.ownerId === j.ownerId, T = e => {
-    null != j && (null == S || S(), o.default.selectVoiceChannel(j.channelId), Z || (0, s.iV)(j, {
+    null != j && (null == S || S(), a.default.selectVoiceChannel(j.channelId), Z || (0, s.iV)(j, {
       forceMultiple: e
-    }), w.dispatch(g.CkL.POPOUT_CLOSE), p.S.dispatch(g.CkL.MODAL_CLOSE), a.Z.popAll())
+    }), w.dispatch(g.CkL.POPOUT_CLOSE), p.S.dispatch(g.CkL.MODAL_CLOSE), o.Z.popAll())
   };
   if (null == j) return null;
   let A = (0, u.P9)(E);

@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => R
 }), n(47120), n(653041);
@@ -19,21 +19,21 @@ var r = n(200651),
   b = n(674552),
   v = n(593364),
   y = n(905423),
-  _ = n(199902),
-  O = n(592125),
-  j = n(944486),
+  O = n(199902),
+  j = n(592125),
+  _ = n(944486),
   x = n(979651),
   C = n(709054),
   P = n(853856),
   S = n(593214),
   N = n(919755),
-  I = n(110977),
-  Z = n(603274),
+  Z = n(110977),
+  I = n(603274),
   w = n(981631),
   E = n(388032),
   T = n(588827);
 
-function A(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function A(e) {
   }
   return e
 }
-let D = {
+let A = {
   analyticsSource: {
     page: w.ZY5.GUILD_CHANNEL,
     section: w.jXE.CHANNEL_LIST,
@@ -66,7 +66,7 @@ function R() {
       favoriteAdded: R,
       clearFavoriteAdded: L
     } = (0, S.up)(),
-    [k, M] = i.useState(!1),
+    [M, k] = i.useState(!1),
     {
       favoriteServerMuted: G,
       favoriteChannels: B
@@ -74,22 +74,22 @@ function R() {
       favoriteChannels: P.Z.getFavoriteChannels(),
       favoriteServerMuted: P.Z.favoriteServerMuted
     })),
-    U = (0, s.e7)([j.Z], () => j.Z.getChannelId(w.I_8)),
-    W = (0, s.e7)([O.Z], () => O.Z.getChannel(U)),
+    U = (0, s.e7)([_.Z], () => _.Z.getChannelId(w.I_8)),
+    W = (0, s.e7)([j.Z], () => j.Z.getChannel(U)),
     V = (0, y.Z)(e => e.guildId) === w.I_8,
     {
       badge: F,
       unread: H
     } = (0, N.Z)(B),
     z = function(e) {
-      let t = (0, s.e7)([j.Z], () => j.Z.getVoiceChannelId()),
+      let t = (0, s.e7)([_.Z], () => _.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
-        r = (0, s.e7)([_.Z], () => {
+        r = (0, s.e7)([O.Z], () => {
           if (!n) return !1;
-          let t = _.Z.getCurrentUserActiveStream();
+          let t = O.Z.getCurrentUserActiveStream();
           return null != t && null != e[t.channelId]
         }),
-        i = (0, s.e7)([_.Z], () => _.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
+        i = (0, s.e7)([O.Z], () => O.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
         l = (0, s.e7)([x.Z], () => n && null != t && x.Z.hasVideo(t), [n, t]),
         o = (0, s.Wu)([p.ZP], () => C.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
         a = (0, s.e7)([p.ZP], () => Array.from(p.ZP.getSelfEmbeddedActivities().values()).some(t => {
@@ -120,28 +120,28 @@ function R() {
   return (0, r.jsxs)(m.H, {
     children: [(0, r.jsx)(g.Z, {
       selected: V,
-      hovered: k,
+      hovered: M,
       unread: H && !G,
       className: T.pill
-    }), (0, r.jsx)(Z.Z, {
+    }), (0, r.jsx)(I.Z, {
       onShow: Q,
-      children: (0, r.jsx)(I.S, {
+      children: (0, r.jsx)(Z.S, {
         children: (0, r.jsx)(c.aRk, {
-          selected: Y || V || k,
+          selected: Y || V || M,
           upperBadge: z,
           lowerBadge: q,
-          children: (0, r.jsx)(c.LYs, (e = A({}, l), t = t = {
+          children: (0, r.jsx)(c.LYs, (e = D({}, l), t = t = {
             ariaLabel: E.NW.formatToPlainString(E.t["/uzRsr"], {
               guildName: E.NW.string(E.t.wMWycn),
               mentions: F
             }),
             to: {
               pathname: w.Z5c.CHANNEL(w.I_8, U),
-              state: D
+              state: A
             },
-            selected: V || k,
-            onMouseEnter: () => M(!0),
-            onMouseLeave: () => M(!1),
+            selected: V || M,
+            onMouseEnter: () => k(!0),
+            onMouseLeave: () => k(!1),
             onMouseDown: function() {
               null != W && u.Z.preload(W.guild_id, W.id)
             },
@@ -150,7 +150,7 @@ function R() {
                 let {
                   default: e
                 } = await n.e("3190").then(n.bind(n, 631981));
-                return t => (0, r.jsx)(e, A({}, t))
+                return t => (0, r.jsx)(e, D({}, t))
               })
             },
             children: (0, r.jsx)("div", {

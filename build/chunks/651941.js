@@ -1,12 +1,12 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   Z: () => d
 }), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(47120);
 var r, l = n(442837),
   i = n(253135),
-  a = n(570140),
-  o = n(709054);
+  o = n(570140),
+  a = n(709054);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -36,14 +36,14 @@ class u extends(r = l.ZP.PersistedStore) {
     return null != this.getKeyTrustedAt(e, t)
   }
   getUserIds() {
-    return o.default.keys(c)
+    return a.default.keys(c)
   }
   getUserVerifiedKeys(e) {
     return c[e]
   }
 }
 s(u, "displayName", "VerifiedKeyStore"), s(u, "persistKey", "VerifiedKeyStore");
-let d = new u(a.Z, {
+let d = new u(o.Z, {
   SECURE_FRAMES_VERIFIED_KEY_CREATE: function(e) {
     let {
       userId: t,

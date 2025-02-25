@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(192379),
   i = n(846519),
   l = n(692547),
-  a = n(481060),
-  o = n(220082),
+  o = n(481060),
+  a = n(220082),
   s = n(979651),
   c = n(125268),
   u = n(673125),
@@ -18,9 +18,9 @@ var r = n(192379),
 let v = 1e3 / 60;
 
 function b(e, t, n, b) {
-  let g = (0, a.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
-    y = (0, a.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
-    E = (0, a.dQu)(l.Z.unsafe_rawColors.WHITE_500).hex(),
+  let g = (0, o.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
+    y = (0, o.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
+    E = (0, o.dQu)(l.Z.unsafe_rawColors.WHITE_500).hex(),
     O = r.useRef({}),
     S = r.useRef(new i.Xp),
     j = r.useCallback(t => {
@@ -33,8 +33,8 @@ function b(e, t, n, b) {
           fallbackColor: r,
           linesDrawnAt: i,
           streamerId: l,
-          channelId: a,
-          outlineColorDark: o,
+          channelId: o,
+          outlineColorDark: a,
           outlineColorLight: u
         } = e;
         if (0 === n.length) return;
@@ -47,7 +47,7 @@ function b(e, t, n, b) {
           height: b
         } = f.getBoundingClientRect(), g = [];
         n.forEach(e => {
-          if (null == s.Z.getVoiceStateForChannel(a, e.userId)) {
+          if (null == s.Z.getVoiceStateForChannel(o, e.userId)) {
             g.push(e);
             return
           }! function(e) {
@@ -57,8 +57,8 @@ function b(e, t, n, b) {
               canvasWidth: r,
               canvasHeight: i,
               fallbackColor: l,
-              outlineColorDark: a,
-              outlineColorLight: o,
+              outlineColorDark: o,
+              outlineColorLight: a,
               linesDrawnAt: s,
               streamerId: c,
               deadDrawables: u
@@ -71,8 +71,8 @@ function b(e, t, n, b) {
                   canvasWidth: r,
                   canvasHeight: i,
                   fallbackColor: l,
-                  outlineColorDark: a,
-                  outlineColorLight: o,
+                  outlineColorDark: o,
+                  outlineColorLight: a,
                   linesDrawnAt: s,
                   deadDrawables: u
                 });
@@ -83,8 +83,8 @@ function b(e, t, n, b) {
                   canvasWidth: r,
                   canvasHeight: i,
                   fallbackColor: l,
-                  outlineColorDark: a,
-                  outlineColorLight: o,
+                  outlineColorDark: o,
+                  outlineColorLight: a,
                   streamerId: c,
                   deadDrawables: u
                 })
@@ -95,7 +95,7 @@ function b(e, t, n, b) {
             canvasWidth: v,
             canvasHeight: b,
             fallbackColor: r,
-            outlineColorDark: o,
+            outlineColorDark: a,
             outlineColorLight: u,
             linesDrawnAt: i,
             deadDrawables: g,
@@ -133,7 +133,7 @@ function b(e, t, n, b) {
   }, [e, j, n]);
   r.useEffect(() => {
     let e = S.current;
-    return u.Z.addChangeListener(x), x(), (0, o.vM)(t.getAvatarURL(null, h.Ks)), () => {
+    return u.Z.addChangeListener(x), x(), (0, a.vM)(t.getAvatarURL(null, h.Ks)), () => {
       u.Z.removeChangeListener(x), e.stop()
     }
   })

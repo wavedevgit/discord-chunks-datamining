@@ -1,11 +1,11 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
   Z: () => p
 }), n(301563);
 var i = n(200651),
   r = n(192379),
-  s = n(512969),
-  o = n(749210),
+  o = n(512969),
+  s = n(749210),
   l = n(287734),
   a = n(765717),
   c = n(893607),
@@ -39,7 +39,7 @@ class h extends r.Component {
         messageId: i
       }
     }(e);
-    (0, c.Ss)(t) && (0, c.cq)(n) ? (o.Z.selectGuild(t), l.default.selectChannel({
+    (0, c.Ss)(t) && (0, c.cq)(n) ? (s.Z.selectGuild(t), l.default.selectChannel({
       guildId: t,
       channelId: n,
       messageId: i
@@ -49,7 +49,7 @@ class h extends r.Component {
     return null
   }
 }
-let p = () => (0, i.jsxs)(s.rs, {
+let p = () => (0, i.jsxs)(o.rs, {
   children: [(0, i.jsx)(a.Z, {
     path: u.Z5c.CHANNEL(c.Hw.guildId(), c.Hw.channelId({
       optional: !0

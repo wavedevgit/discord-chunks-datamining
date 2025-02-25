@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   u: () => L
 }), n(47120);
@@ -19,21 +19,21 @@ var r = n(200651),
   b = n(944486),
   v = n(594174),
   y = n(431),
-  _ = n(774343),
-  O = n(417363),
-  j = n(941128),
+  O = n(774343),
+  j = n(417363),
+  _ = n(941128),
   x = n(780570),
   C = n(278464),
   P = n(276952),
   S = n(682662),
   N = n(662146),
-  I = n(674552),
-  Z = n(981631),
+  Z = n(674552),
+  I = n(981631),
   w = n(474936),
   E = n(871465),
   T = n(388032),
-  A = n(760541);
-let D = {
+  D = n(760541);
+let A = {
   origin: {
     x: -16,
     y: 0
@@ -54,21 +54,21 @@ function R(e) {
     badge: b,
     link: v,
     showProgressBadge: y
-  } = e, _ = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [O, j] = i.useState(!1), [x, C] = i.useState(!1), [w, R] = i.useState(null), [L, k] = i.useState(0), M = (0, l.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), B = () => {
-    R(null), k(0), clearTimeout(w)
+  } = e, O = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [j, _] = i.useState(!1), [x, C] = i.useState(!1), [w, R] = i.useState(null), [L, M] = i.useState(0), k = (0, l.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), B = () => {
+    R(null), M(0), clearTimeout(w)
   };
   if (null == f) return null;
   let U = T.NW.string(T.t.YUU0RE);
-  x && (U = a.K.get(Z.wli) ? T.NW.string(T.t.nkq1l5) : T.NW.string(T.t.Be8Q5O));
+  x && (U = a.K.get(I.wli) ? T.NW.string(T.t.nkq1l5) : T.NW.string(T.t.Be8Q5O));
   let W = null;
   !h && y && (W = (0, r.jsx)(c.Z, {
-    className: A.downloadProgress,
+    className: D.downloadProgress,
     determineOwnVisibility: !1
   }));
-  let V = h || O || _,
+  let V = h || j || O,
     F = (0, r.jsx)(s.aRk, {
       selected: G || V,
-      lowerBadge: b > 0 ? (0, I.Ne)(b) : null,
+      lowerBadge: b > 0 ? (0, Z.Ne)(b) : null,
       upperBadge: W,
       lowerBadgeSize: {
         width: (0, s.OVM)(b)
@@ -91,27 +91,27 @@ function R(e) {
         }
         return e
       }({
-        onMouseEnter: () => j(!0),
-        onMouseLeave: () => j(!1),
+        onMouseEnter: () => _(!0),
+        onMouseLeave: () => _(!1),
         onClick: () => {
-          if (!__OVERLAY__ && (null != w && clearTimeout(w), R(setTimeout(B, 500)), k(L + 1), 15 === L)) {
+          if (!__OVERLAY__ && (null != w && clearTimeout(w), R(setTimeout(B, 500)), M(L + 1), 15 === L)) {
             B();
-            let e = !a.K.get(Z.wli);
-            a.K.set(Z.wli, e), e && a.K.set(E.O5, !0), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), C(!0), setTimeout(() => {
+            let e = !a.K.get(I.wli);
+            a.K.set(I.wli, e), e && a.K.set(E.O5, !0), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), C(!0), setTimeout(() => {
               C(!1)
             }, 1e3)
           }
         },
         selected: V,
         ariaLabel: T.NW.string(T.t.YUU0RE)
-      }, M), n = n = {
+      }, k), n = n = {
         to: {
           pathname: v,
           state: {
             analyticsSource: {
-              page: Z.ZY5.GUILD_CHANNEL,
-              section: Z.jXE.NAVIGATION,
-              object: Z.qAy.BUTTON_HOME
+              page: I.ZY5.GUILD_CHANNEL,
+              section: I.jXE.NAVIGATION,
+              object: I.qAy.BUTTON_HOME
             }
           }
         },
@@ -128,16 +128,16 @@ function R(e) {
       }), t))
     });
   return (0, r.jsx)("div", {
-    className: A.tutorialContainer,
+    className: D.tutorialContainer,
     children: (0, r.jsx)(m.Z, {
-      inlineSpecs: D,
+      inlineSpecs: A,
       tutorialId: "friends-list",
       position: "right",
       children: (0, r.jsxs)(S.H, {
         children: [(0, r.jsx)(P.Z, {
           selected: h,
-          hovered: O,
-          className: A.pill
+          hovered: j,
+          className: D.pill
         }), (0, r.jsx)(N.Z, {
           color: s.ua7.Colors.PRIMARY,
           hideOnClick: !0,
@@ -152,8 +152,8 @@ function R(e) {
 
 function L() {
   let e = (0, C.n)(),
-    t = (0, o.e7)([j.Z, O.Z], () => {
-      let e = (0, c.E)(j.Z.activeItems, O.Z),
+    t = (0, o.e7)([_.Z, j.Z], () => {
+      let e = (0, c.E)(_.Z.activeItems, j.Z),
         {
           total: t,
           progress: n
@@ -175,11 +175,11 @@ function L() {
     d = (0, h.q)(),
     p = n + s + d,
     g = p === s && s > 0 && n + d === 0,
-    m = _.Z.getHomeLink();
-  return g && (m = Z.Z5c.APPLICATION_STORE), (0, r.jsx)(R, {
+    m = O.Z.getHomeLink();
+  return g && (m = I.Z5c.APPLICATION_STORE), (0, r.jsx)(R, {
     selected: e,
     user: u,
-    selectedChannelId: b.Z.getChannelId(Z.ME),
+    selectedChannelId: b.Z.getChannelId(I.ME),
     badge: p,
     link: m,
     showProgressBadge: t

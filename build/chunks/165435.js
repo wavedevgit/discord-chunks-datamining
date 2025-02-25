@@ -1,5 +1,4 @@
-/** Chunk was on 63141 **/
-"use strict";
+/** Chunk was on 48799 **/
 e.exports = {
   key: "key__1728a"
 }

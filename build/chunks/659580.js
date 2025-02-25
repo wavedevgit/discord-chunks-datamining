@@ -1,4 +1,4 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   default: () => N
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var l = n(990547),
   i = n(442837),
-  a = n(46973),
-  o = n(481060),
+  o = n(46973),
+  a = n(481060),
   s = n(846027),
   c = n(410575),
   u = n(906732),
@@ -54,24 +54,24 @@ function N(e) {
     W = (0, f.Z)(C),
     R = (0, p.Z)(C),
     M = (0, m.Z)(C),
-    L = a.Yn.DEFAULT,
+    L = o.Yn.DEFAULT,
     U = g.Z.isSelfDeaf(L),
-    V = (0, i.e7)([g.Z], () => g.Z.getMode()),
-    G = V === O.pM4.VOICE_ACTIVITY ? O.pM4.PUSH_TO_TALK : O.pM4.VOICE_ACTIVITY;
+    G = (0, i.e7)([g.Z], () => g.Z.getMode()),
+    V = G === O.pM4.VOICE_ACTIVITY ? O.pM4.PUSH_TO_TALK : O.pM4.VOICE_ACTIVITY;
   return (0, r.jsx)(c.Z, {
     object: O.qAy.CONTEXT_MENU,
-    children: (0, r.jsxs)(o.v2r, {
+    children: (0, r.jsxs)(a.v2r, {
       onSelect: Z,
       onInteraction: A,
       className: S.menu,
       onClose: t,
       navId: "audio-device-context",
       "aria-label": j.NW.string(j.t.ZR1Ss7),
-      children: [N ? _ : null, n ? k : null, !w && P ? (0, r.jsx)(o.kSQ, {
+      children: [N ? _ : null, n ? k : null, !w && P ? (0, r.jsx)(a.kSQ, {
         label: j.NW.string(j.t["pS+K2N"]),
         children: W
-      }) : null, (0, r.jsxs)(o.kSQ, {
-        children: [I ? R : null, x ? M : null, w ? (0, r.jsx)(o.Clw, {}) : null, w && E ? (0, r.jsx)(o.S89, {
+      }) : null, (0, r.jsxs)(a.kSQ, {
+        children: [I ? R : null, x ? M : null, w ? (0, r.jsx)(a.Clw, {}) : null, w && E ? (0, r.jsx)(a.S89, {
           id: "deafen",
           label: j.NW.string(j.t.wjcRFR),
           action: () => s.Z.toggleSelfDeaf({
@@ -79,11 +79,11 @@ function N(e) {
             location: "AudioDeviceMenu"
           }),
           checked: U
-        }, "self-deafen") : null, w && N && y.isPlatformEmbedded ? (0, r.jsx)(o.S89, {
-          checked: V === O.pM4.PUSH_TO_TALK,
+        }, "self-deafen") : null, w && N && y.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
+          checked: G === O.pM4.PUSH_TO_TALK,
           id: "input-mode",
           label: j.NW.string(j.t.Q8gkVF),
-          action: () => s.Z.setMode(G, void 0, void 0, {
+          action: () => s.Z.setMode(V, void 0, void 0, {
             analyticsLocations: C
           })
         }) : null, D]

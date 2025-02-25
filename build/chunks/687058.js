@@ -1,15 +1,15 @@
-/** Chunk was on 94698 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => u
 }), n(757143), n(301563);
 var r = n(192379),
-  o = n(442837),
-  c = n(131951),
-  i = n(65154),
+  l = n(442837),
+  i = n(131951),
+  o = n(65154),
   a = n(388032);
 
-function l(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,16 +27,16 @@ function l(e) {
   }
   return e
 }
-let d = /^Default/;
+let c = /^Default/;
 
-function s() {
-  let e = (0, o.e7)([c.Z], () => c.Z.getInputDevices());
+function u() {
+  let e = (0, l.e7)([i.Z], () => i.Z.getInputDevices());
   return r.useMemo(() => {
     var t, n;
-    let r = l({}, e),
-      o = r[i.w5];
-    return null == o ? r : (r[i.w5] = (t = l({}, o), n = n = {
-      name: o.disabled ? a.NW.string(a.t["/QIjDA"]) : o.name.replace(d, a.NW.string(a.t.bBvAEB))
+    let r = s({}, e),
+      l = r[o.w5];
+    return null == l ? r : (r[o.w5] = (t = s({}, l), n = n = {
+      name: l.disabled ? a.NW.string(a.t["/QIjDA"]) : l.name.replace(c, a.NW.string(a.t.bBvAEB))
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

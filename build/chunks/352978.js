@@ -5,8 +5,8 @@ n.d(t, {
 }), n(47120);
 var r, i = n(200651),
   l = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   c = n(763520),
   u = n(153066),
@@ -17,7 +17,7 @@ let m = l.memo(function(e) {
     streamId: t,
     onResize: n,
     wrapperClassName: r,
-    videoComponent: a,
+    videoComponent: o,
     className: f,
     fit: m = "contain",
     mirror: p = !1,
@@ -33,9 +33,9 @@ let m = l.memo(function(e) {
     E(!1)
   }, []);
   return (0, i.jsxs)("div", {
-    className: o()(d.wrapper, r),
-    children: [null != t && (0, i.jsx)(a, {
-      className: o()(d.video, (0, u.l)(d, "video", m), {
+    className: a()(d.wrapper, r),
+    children: [null != t && (0, i.jsx)(o, {
+      className: a()(d.video, (0, u.l)(d, "video", m), {
         [d.mirror]: p
       }, f),
       streamId: t,
@@ -43,7 +43,7 @@ let m = l.memo(function(e) {
       onReady: S,
       paused: h
     }), h ? null : (0, i.jsx)("div", {
-      className: o()(d.previewWrapper, {
+      className: a()(d.previewWrapper, {
         [d.loading]: y
       }),
       children: y && (0, i.jsxs)(l.Fragment, {

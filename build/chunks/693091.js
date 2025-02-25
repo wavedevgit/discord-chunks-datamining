@@ -1,7 +1,7 @@
 /** Chunk was on 12416 **/
 n.d(t, {
-  AS: () => a,
-  S4: () => o,
+  AS: () => o,
+  S4: () => a,
   X4: () => u
 }), n(47120);
 var r = n(192379),
@@ -15,7 +15,7 @@ function l(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class a {
+class o {
   updateState(e, t) {
     this.items = e;
     let n = this.locked !== t;
@@ -91,7 +91,7 @@ class a {
     }), this.locked = e
   }
 }
-let o = r.createContext(new a(!0));
+let a = r.createContext(new o(!0));
 
 function s(e, t, n) {
   return t && 0 !== e ? 20 * Math.max(e / 5, 0) : n
@@ -103,7 +103,7 @@ let c = {
 };
 
 function u(e, t, n) {
-  let [l, a] = (0, i.q_F)(() => ({
+  let [l, o] = (0, i.q_F)(() => ({
     from: {
       opacity: 0,
       scale: 1,
@@ -111,7 +111,7 @@ function u(e, t, n) {
       height: 0,
       contentOpacity: 1
     }
-  }), void 0, []), u = r.useRef(a), d = r.useContext(o), f = r.useMemo(() => {
+  }), void 0, []), u = r.useRef(o), d = r.useContext(a), f = r.useMemo(() => {
     let t = !1;
     return n => {
       null == n ? d.unsubscribe(e) : d.subscribe(e, n, e => {
@@ -120,17 +120,17 @@ function u(e, t, n) {
           matchHeight: r,
           height: i,
           top: l,
-          index: a
+          index: o
         } = e, {
-          current: o
+          current: a
         } = u, d = {
-          opacity: n && a > 4 ? 0 : n ? Math.min(1 - a / 4, 1) : 1,
-          scale: n ? Math.min(1 - a / 4, 1) : 1,
-          transform: s(a, n, l),
-          contentOpacity: n && a > 0 ? 0 : 1,
+          opacity: n && o > 4 ? 0 : n ? Math.min(1 - o / 4, 1) : 1,
+          scale: n ? Math.min(1 - o / 4, 1) : 1,
+          transform: s(o, n, l),
+          contentOpacity: n && o > 0 ? 0 : 1,
           height: n ? r : i
         };
-        o({
+        a({
           from: t ? void 0 : {
             opacity: 0,
             scale: 1.1,

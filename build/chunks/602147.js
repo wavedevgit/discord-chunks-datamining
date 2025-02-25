@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => b
 });
@@ -22,7 +22,7 @@ let b = i.forwardRef(function(e, t) {
     onClick: b,
     questId: v,
     className: y
-  } = e, _ = i.useCallback(() => {
+  } = e, O = i.useCallback(() => {
     (0, c.k5)({
       source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
     });
@@ -58,7 +58,7 @@ let b = i.forwardRef(function(e, t) {
     ref: t,
     className: y,
     onClick: () => {
-      _(), void 0 !== b && b()
+      O(), void 0 !== b && b()
     },
     selected: n,
     tooltip: m.NW.string(m.t["4nEZLi"]),

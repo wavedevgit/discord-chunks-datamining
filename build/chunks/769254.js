@@ -1,4 +1,4 @@
-/** Chunk was on 37874 **/
+/** Chunk was on 54030 **/
 e.exports = {
   channelNameContainer: "channelNameContainer_c99562",
   label: "label_c99562",

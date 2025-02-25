@@ -1,4 +1,4 @@
-/** Chunk was on 37874 **/
+/** Chunk was on 50751 **/
 n.d(t, {
   Z: () => d
 }), n(47120);
@@ -6,63 +6,63 @@ var i = n(200651),
   r = n(192379),
   o = n(704215),
   l = n(481060),
-  a = n(243778),
-  s = n(921944),
-  c = n(388032),
-  u = n(968714);
+  s = n(243778),
+  a = n(921944),
+  u = n(388032),
+  c = n(968714);
 
 function d(e) {
   let {
     locked: t
-  } = e, [n, d] = (0, a.US)(t ? [] : [o.z.OVERLAY_OOP_WELCOME_BACKGROUND_NUX], void 0, !0);
+  } = e, [n, d] = (0, s.US)(t ? [] : [o.z.OVERLAY_OOP_WELCOME_BACKGROUND_NUX], void 0, !0);
   return (r.useEffect(() => {
     if (!t && n === o.z.OVERLAY_OOP_WELCOME_BACKGROUND_NUX) return () => {
-      n === o.z.OVERLAY_OOP_WELCOME_BACKGROUND_NUX && d(s.L.AUTO_DISMISS)
+      n === o.z.OVERLAY_OOP_WELCOME_BACKGROUND_NUX && d(a.L.AUTO_DISMISS)
     }
   }, [t, d, n]), t || n !== o.z.OVERLAY_OOP_WELCOME_BACKGROUND_NUX) ? null : (0, i.jsx)("div", {
-    className: u.overlayBackgroundNux,
+    className: c.overlayBackgroundNux,
     children: (0, i.jsxs)("div", {
-      className: u.mainContainer,
+      className: c.mainContainer,
       children: [(0, i.jsxs)("div", {
-        className: u.mainTitleContainer,
+        className: c.mainTitleContainer,
         children: [(0, i.jsx)(l.X6q, {
           variant: "heading-xl/medium",
           color: "header-primary",
-          children: c.NW.string(c.t.jzjJQk)
+          children: u.NW.string(u.t.jzjJQk)
         }), (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: c.NW.string(c.t["5dOfxc"])
+          children: u.NW.string(u.t["5dOfxc"])
         })]
       }), (0, i.jsxs)("div", {
-        className: u.widgetCalloutContainer,
+        className: c.widgetCalloutContainer,
         children: [(0, i.jsxs)("div", {
-          className: u.widgetCallout,
+          className: c.widgetCallout,
           children: [(0, i.jsx)(l.qjv, {}), (0, i.jsx)(l.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: c.NW.string(c.t.S6VRyM)
+            children: u.NW.string(u.t.S6VRyM)
           })]
         }), (0, i.jsxs)("div", {
-          className: u.widgetCallout,
+          className: c.widgetCallout,
           children: [(0, i.jsx)(l.Dkj, {}), (0, i.jsx)(l.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: c.NW.string(c.t.xq8CKS)
+            children: u.NW.string(u.t.xq8CKS)
           })]
         }), (0, i.jsxs)("div", {
-          className: u.widgetCallout,
+          className: c.widgetCallout,
           children: [(0, i.jsx)(l.Odl, {}), (0, i.jsx)(l.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: c.NW.string(c.t.GwpRe3)
+            children: u.NW.string(u.t.GwpRe3)
           })]
         }), (0, i.jsxs)("div", {
-          className: u.widgetCallout,
+          className: c.widgetCallout,
           children: [(0, i.jsx)(l.KY1, {}), (0, i.jsx)(l.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: c.NW.string(c.t.VUoC5O)
+            children: u.NW.string(u.t.VUoC5O)
           })]
         })]
       })]

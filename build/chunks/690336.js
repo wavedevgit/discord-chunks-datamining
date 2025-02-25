@@ -1,21 +1,21 @@
-/** Chunk was on 37874 **/
+/** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => O
+  Z: () => y
 }), n(653041), n(47120);
 var i = n(200651),
   r = n(192379),
   o = n(442837),
   l = n(481060),
-  a = n(355863),
-  s = n(451478),
-  c = n(830917),
-  u = n(388627),
+  s = n(355863),
+  a = n(451478),
+  u = n(830917),
+  c = n(388627),
   d = n(892127),
   p = n(444982),
-  f = n(561064),
-  h = n(501787);
+  h = n(561064),
+  f = n(501787);
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -34,52 +34,52 @@ function g(e) {
   return e
 }
 
-function _(e) {
+function g(e) {
   return e.widget.id
 }
 
-function m(e, t, n, r) {
-  var o, a;
-  return n === l.pJH.YEETED ? null : (0, i.jsx)(d.Z, (o = g({}, t), a = a = {
+function O(e, t, n, r) {
+  var o, s;
+  return n === l.pJH.YEETED ? null : (0, i.jsx)(d.Z, (o = m({}, t), s = s = {
     transitionState: n,
     cleanUp: r
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
       n.push.apply(n, i)
     }
     return n
-  })(Object(a)).forEach(function(e) {
-    Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(a, e))
+  })(Object(s)).forEach(function(e) {
+    Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
   }), o), e)
 }
 let v = [],
-  O = r.memo(function(e) {
+  y = r.memo(function(e) {
     let {
       className: t
-    } = e, n = (0, f.Z)(), d = (0, o.e7)([s.Z], () => s.Z.windowSize((0, c.ZY)(n))), O = (0, o.e7)([a.Z], () => {
-      let e = a.Z.getLayout(h.OVERLAY_V3_LAYOUT_ID);
+    } = e, n = (0, h.Z)(), d = (0, o.e7)([a.Z], () => a.Z.windowSize((0, u.ZY)(n))), y = (0, o.e7)([s.Z], () => {
+      let e = s.Z.getLayout(f.OVERLAY_V3_LAYOUT_ID);
       if (null == e) return v;
       let t = [];
       for (let n of e.widgets) {
-        let e = a.Z.getWidget(n);
+        let e = s.Z.getWidget(n);
         if (null == e) continue;
         let i = p.Z[e.type];
-        null != i && (null == i.predicate || i.predicate()) && t.push(g({
+        null != i && (null == i.predicate || i.predicate()) && t.push(m({
           widget: e
         }, i))
       }
       return t
-    }, [], u.HP), b = r.useCallback(e => (0, i.jsx)("div", {
+    }, [], c.HP), E = r.useCallback(e => (0, i.jsx)("div", {
       className: t,
       style: d,
       children: e
     }), [t, d]);
     return (0, i.jsx)(l.W3x, {
-      items: O,
-      renderItem: m,
-      getItemKey: _,
-      wrapChildren: b
+      items: y,
+      renderItem: O,
+      getItemKey: g,
+      wrapChildren: E
     })
   })

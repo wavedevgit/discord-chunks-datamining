@@ -62,7 +62,7 @@ function b(e, t, m) {
   if ((0, s.Z)(E), p.isPlatformEmbedded)(0, i.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("93382"), n.e("79477"), n.e("94698")]).then(n.bind(n, 60594));
+    } = await Promise.all([n.e("93382"), n.e("79477"), n.e("59989")]).then(n.bind(n, 60594));
     return n => (0, r.jsx)(t, v(g({}, n), {
       guildId: e,
       analyticsLocation: m

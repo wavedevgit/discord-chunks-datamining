@@ -1,10 +1,10 @@
 /** Chunk was on 79477 **/
 n.d(t, {
-  Z: () => p
+  Z: () => x
 });
-var l = n(200651);
+var r = n(200651);
 n(192379);
-var r = n(442837),
+var l = n(442837),
   s = n(481060),
   i = n(984933),
   a = n(430824),
@@ -13,25 +13,25 @@ var r = n(442837),
   u = n(938475),
   d = n(102172),
   m = n(499596),
-  g = n(148381),
+  p = n(148381),
   h = n(388032),
-  x = n(454778);
+  g = n(454778);
 
-function p(e) {
+function x(e) {
   let {
     selectedChannelId: t,
     guildId: n,
-    onChangeSelectedChannelId: p
-  } = e, v = (0, r.e7)([c.default], () => c.default.getCurrentUser()), f = (0, r.e7)([a.Z, i.ZP, o.Z], () => (0, d.h_)(i.ZP.getChannels(n), a.Z, o.Z)), j = (0, r.e7)([u.ZP], () => u.ZP.getVoiceStates(n)), S = f.map(e => {
+    onChangeSelectedChannelId: x
+  } = e, f = (0, l.e7)([c.default], () => c.default.getCurrentUser()), v = (0, l.e7)([a.Z, i.ZP, o.Z], () => (0, d.h_)(i.ZP.getChannels(n), a.Z, o.Z)), j = (0, l.e7)([u.ZP], () => u.ZP.getVoiceStates(n)), S = v.map(e => {
     var n;
     return {
-      name: (0, l.jsx)(m.Z, {
+      name: (0, r.jsx)(m.Z, {
         channel: e,
         users: null === (n = j[e.id]) || void 0 === n ? void 0 : n.filter(e => {
           let {
             user: t
           } = e;
-          return t.id !== (null == v ? void 0 : v.id)
+          return t.id !== (null == f ? void 0 : f.id)
         }).map(e => {
           let {
             user: t
@@ -43,19 +43,19 @@ function p(e) {
       value: e.id
     }
   });
-  return (0, l.jsx)(g.Z, {
+  return (0, r.jsx)(p.Z, {
     title: h.NW.string(h.t["eg7R/v"]),
-    scrollerInnerClassName: x.channelSelectScrollerInner,
-    children: (0, l.jsx)(s.FXm, {
+    scrollerInnerClassName: g.channelSelectScrollerInner,
+    children: (0, r.jsx)(s.FXm, {
       options: S,
       value: t,
-      itemInfoClassName: x.channelInfoWrapper,
-      itemTitleClassName: x.channelTitleWrapper,
+      itemInfoClassName: g.channelInfoWrapper,
+      itemTitleClassName: g.channelTitleWrapper,
       onChange: e => {
         let {
           value: t
         } = e;
-        return p(t)
+        return x(t)
       }
     })
   })

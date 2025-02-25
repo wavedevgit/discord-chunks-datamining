@@ -4,8 +4,8 @@ n.d(t, {
 }), n(653041), n(47120);
 var r, i = n(442837),
   l = n(570140),
-  a = n(633302),
-  o = n(594174),
+  o = n(633302),
+  a = n(594174),
   s = n(176354),
   c = n(984063),
   u = n(88315),
@@ -40,7 +40,7 @@ let p = {},
 
 function y(e) {
   if (null == h[e]) {
-    let t = o.default.getUser(e);
+    let t = a.default.getUser(e);
     if (null == t) return;
     let n = t.getAvatarURL(null, d.Ks),
       r = new Image;
@@ -93,10 +93,10 @@ let O = new E(l.Z, {
   SHARED_CANVAS_UPDATE_EMOJI_HOSE: function(e) {
     var t, n, r, i, l;
     let {
-      emojiHose: o,
+      emojiHose: a,
       streamerId: u,
       userId: f
-    } = e, h = (i = m({}, o), l = l = {
+    } = e, h = (i = m({}, a), l = l = {
       type: c.W.EMOJI_HOSE
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);
@@ -110,15 +110,15 @@ let O = new E(l.Z, {
     }), i);
     if (null == p[u]) p[u] = [h];
     else {
-      let e = p[u].findIndex(e => e.id === o.id);
+      let e = p[u].findIndex(e => e.id === a.id);
       e >= 0 ? p[u][e] = m({}, p[u][e], h) : p[u].push(h)
     }
-    let b = null !== (n = null !== (t = o.emojiId) && void 0 !== t ? t : o.emojiName) && void 0 !== n ? n : "";
+    let b = null !== (n = null !== (t = a.emojiId) && void 0 !== t ? t : a.emojiName) && void 0 !== n ? n : "";
     if (null == v[b]) {
-      let e = null != o.emojiName ? a.ZP.convertNameToSurrogate(o.emojiName) : null;
+      let e = null != a.emojiName ? o.ZP.convertNameToSurrogate(a.emojiName) : null;
       v[b] = new Image, v[b].src = (0, s.qc)({
-        id: o.emojiId,
-        name: null !== (r = null != e ? e : o.emojiName) && void 0 !== r ? r : "",
+        id: a.emojiId,
+        name: null !== (r = null != e ? e : a.emojiName) && void 0 !== r ? r : "",
         animated: !1
       }, d.qh)
     }

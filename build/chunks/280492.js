@@ -1,10 +1,11 @@
-/** Chunk was on 624 **/
+/** Chunk was on 79120 **/
+"use strict";
 n.d(t, {
-  iN: () => i,
-  oV: () => s
+  iN: () => l,
+  oV: () => i
 });
 var r = n(846027);
-let i = {
+let l = {
     binds: ["mod+shift+m"],
     comboKeysBindGlobal: !0,
     action: () => (r.Z.toggleSelfMute({
@@ -12,7 +13,7 @@ let i = {
       location: "Default Keybind"
     }), !1)
   },
-  s = {
+  i = {
     binds: ["mod+shift+d"],
     comboKeysBindGlobal: !0,
     action: () => (r.Z.toggleSelfDeaf({

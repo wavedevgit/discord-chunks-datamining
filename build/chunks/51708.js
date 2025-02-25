@@ -2,9 +2,9 @@
 n.d(t, {
   Z: () => d
 });
-var l = n(200651);
+var r = n(200651);
 n(192379);
-var r = n(481060),
+var l = n(481060),
   s = n(100527),
   i = n(906732),
   a = n(436774),
@@ -18,26 +18,26 @@ function d(e) {
   } = e, {
     analyticsLocations: n
   } = (0, i.ZP)(s.Z.GO_LIVE_MODAL_V2);
-  return (0, l.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: u.root,
-    children: [(0, l.jsxs)(r.Text, {
+    children: [(0, r.jsxs)(l.Text, {
       className: u.infoText,
       variant: "text-sm/medium",
       color: "text-normal",
-      children: [(0, l.jsx)(r.SrA, {
+      children: [(0, r.jsx)(l.SrA, {
         color: a.JX.PREMIUM_TIER_2
       }), c.NW.string(c.t.ZVevCg)]
-    }), (0, l.jsx)(r.zxk, {
-      look: r.zxk.Looks.BLANK,
+    }), (0, r.jsx)(l.zxk, {
+      look: l.zxk.Looks.BLANK,
       onClick: () => (0, o.E)({
         analyticsLocation: n[0],
         onClose: t
       }),
-      children: (0, l.jsxs)(r.Text, {
+      children: (0, r.jsxs)(l.Text, {
         className: u.ctaButton,
         variant: "text-sm/medium",
         color: "premium-nitro-pink-text",
-        children: [c.NW.string(c.t.pj0XBA), (0, l.jsx)(r.Fbu, {
+        children: [c.NW.string(c.t.pj0XBA), (0, r.jsx)(l.Fbu, {
           color: "currentColor",
           size: "xs"
         })]

@@ -1,9 +1,9 @@
-/** Chunk was on 94698 **/
+/** Chunk was on 63354 **/
 "use strict";
-var r = {
+var o = {
   title: "title__1964c " + n(382840).modalContent,
   scrollerInner: "scrollerInner__1964c",
   bottomSeparator: "bottomSeparator__1964c",
   scrollWrapper: "scrollWrapper__1964c"
 };
-e.exports = r
+e.exports = o

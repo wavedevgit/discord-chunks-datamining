@@ -1,11 +1,11 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
   Z: () => d
 });
 var i = n(224706),
   r = n(13245),
-  s = n(593481),
-  o = n(150097),
+  o = n(593481),
+  s = n(150097),
   l = n(312839),
   a = n(987650),
   c = n(388032);
@@ -16,12 +16,12 @@ function d(e, t, n, d, u) {
     p = u.session_id;
   if (null == p) return null;
   let {
-    icon: g,
-    title: f,
+    icon: f,
+    title: g,
     body: m
-  } = (0, o.Xi)(e, t, n), {
+  } = (0, s.Xi)(e, t, n), {
     trackView: y,
-    trackClick: O
+    trackClick: _
   } = (0, l.R)(a.n0.ActivityInvite, {
     notif_type: a.n0.ActivityInvite,
     notif_user_id: n.id,
@@ -34,15 +34,15 @@ function d(e, t, n, d, u) {
     activity_name: u.name
   });
   return {
-    icon: g,
-    title: f,
+    icon: f,
+    title: g,
     body: m,
-    hint: e => (0, s.QR)(e, (0, l.P)(), c.t.aB5xLy),
+    hint: e => (0, o.QR)(e, (0, l.P)(), c.t.aB5xLy),
     onNotificationShow: () => {
       y()
     },
     confirmText: c.NW.string(c.t.VJlc0d),
-    onConfirmClick: (s, o) => {
+    onConfirmClick: (o, s) => {
       i.Z.join({
         userId: n.id,
         sessionId: p,
@@ -50,10 +50,10 @@ function d(e, t, n, d, u) {
         channelId: e.id,
         messageId: t.id,
         activity: u
-      }), r.Z.updateNotificationStatus(o), O("join")
+      }), r.Z.updateNotificationStatus(s), _("join")
     },
     onDismissClick: () => {
-      O("dismiss")
+      _("dismiss")
     }
   }
 }

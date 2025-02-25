@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => x
 });
@@ -20,9 +20,9 @@ var i = n(120356),
   b = n(768581),
   v = n(51144),
   y = n(754231),
-  _ = n(898218);
+  O = n(898218);
 
-function O(e) {
+function j(e) {
   let {
     guildId: t,
     member: n,
@@ -53,30 +53,30 @@ function O(e) {
       }({
         src: null != o ? o : n.user.getAvatarURL(t, 16),
         size: a.EFr.SIZE_16,
-        className: l()(i, _.partyAvatar),
+        className: l()(i, O.partyAvatar),
         "aria-label": null !== (s = n.nick) && void 0 !== s ? s : v.ZP.getName(n.user)
       }, e))
     }
   })
 }
 
-function j(e) {
+function _(e) {
   let {
     members: t,
     guildId: n
   } = e;
   return (0, r.jsx)(h.Z, {
-    className: _.partyMembers,
+    className: O.partyMembers,
     guildId: n,
     users: t,
     max: 6,
-    renderUser: (e, t, i) => (0, r.jsx)(O, {
+    renderUser: (e, t, i) => (0, r.jsx)(j, {
       guildId: n,
       member: e,
       className: t
     }, i),
     renderMoreUsers: (e, t, n) => (0, r.jsx)("div", {
-      className: l()(_.morePartyMembers, t),
+      className: l()(O.morePartyMembers, t),
       children: e
     }, n)
   })
@@ -88,8 +88,8 @@ let x = e => {
     members: i,
     embeddedApp: l,
     onAction: h
-  } = e, b = (0, d.Q3)("ChannelActivityRow"), v = null != l, O = v ? Array.from(l.embeddedActivity.userIds) : [], x = (0, o.e7)([m.default, g.default], () => {
-    if (v) return m.default.getUser(O[0]);
+  } = e, b = (0, d.Q3)("ChannelActivityRow"), v = null != l, j = v ? Array.from(l.embeddedActivity.userIds) : [], x = (0, o.e7)([m.default, g.default], () => {
+    if (v) return m.default.getUser(j[0]);
     if (null != i) {
       var e, t;
       return i.length <= 0 ? null : null !== (t = null === (e = i.find(e => e.user.id !== g.default.getId())) || void 0 === e ? void 0 : e.user) && void 0 !== t ? t : i[0].user
@@ -99,9 +99,9 @@ let x = e => {
   let C = v || (0, c.Z)(n),
     P = (0, f.vd)(t.type);
   return (0, r.jsxs)("div", {
-    className: _.activity,
+    className: O.activity,
     children: [(0, r.jsx)("div", {
-      className: _.channelActivityContainer,
+      className: O.channelActivityContainer,
       children: C ? (0, r.jsx)(y.Z, {
         activity: n,
         embeddedApp: l,
@@ -117,13 +117,13 @@ let x = e => {
         user: x,
         guildId: t.getGuildId(),
         channelId: t.id,
-        renderHeaderAccessory: null != i ? () => (0, r.jsx)(j, {
+        renderHeaderAccessory: null != i ? () => (0, r.jsx)(_, {
           guildId: t.guild_id,
           members: i
         }) : void 0
       })
     }), (0, r.jsx)("div", {
-      className: _.activityActionsContainer,
+      className: O.activityActionsContainer,
       children: (0, r.jsx)(u.Z, {
         type: s.P.VOICE_CHANNEL,
         activity: n,
@@ -131,7 +131,7 @@ let x = e => {
         user: x,
         guildId: t.getGuildId(),
         channelId: t.id,
-        color: b ? a.zxk.Colors.PRIMARY : _.button,
+        color: b ? a.zxk.Colors.PRIMARY : O.button,
         look: b ? a.zxk.Looks.FILLED : void 0,
         onAction: h
       })

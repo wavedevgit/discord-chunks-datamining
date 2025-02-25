@@ -1,6 +1,6 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
-  ZP: () => j
+  ZP: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -57,7 +57,7 @@ function y(e) {
   })
 }
 
-function _(e) {
+function O(e) {
   let {
     guild: t,
     controller: n,
@@ -130,7 +130,7 @@ function _(e) {
   })
 }
 
-function O() {
+function j() {
   return (0, r.jsx)(c.r7p, {
     size: "custom",
     color: "currentColor",
@@ -139,32 +139,32 @@ function O() {
     width: 20
   })
 }
-let j = i.memo(function(e) {
+let _ = i.memo(function(e) {
   let {
     bannerVisible: t,
     controller: n,
     className: l,
     onClick: a,
-    onContextMenu: j,
+    onContextMenu: _,
     onMouseDown: x,
     disableBannerAnimation: C,
     "aria-expanded": P,
     "aria-controls": S,
     guild: N,
-    guildBanner: I,
-    animationOverlayHeight: Z,
+    guildBanner: Z,
+    animationOverlayHeight: I,
     children: w,
     headerClassName: E,
     communityInfoVisible: T,
-    hasSubheader: A
-  } = e, D = N.hasFeature(g.oNc.ANIMATED_BANNER), R = (0, d.Z)(N), L = !R && N.hasCommunityInfoSubheader(), k = !R && T, M = (0, h.xR)(I) && D && !C, [G, B] = i.useState(!1), U = i.useRef(), W = i.useRef(null), V = i.useRef(), F = p.QK.getSetting();
+    hasSubheader: D
+  } = e, A = N.hasFeature(g.oNc.ANIMATED_BANNER), R = (0, d.Z)(N), L = !R && N.hasCommunityInfoSubheader(), M = !R && T, k = (0, h.xR)(Z) && A && !C, [G, B] = i.useState(!1), U = i.useRef(), W = i.useRef(null), V = i.useRef(), F = p.QK.getSetting();
   i.useEffect(() => {
-    if (M && t && !U.current && F) return B(!0), V.current = setTimeout(() => {
+    if (k && t && !U.current && F) return B(!0), V.current = setTimeout(() => {
       B(!1)
     }, 5e3), () => {
       clearTimeout(V.current)
     }
-  }, [M, t, F]), i.useEffect(() => {
+  }, [k, t, F]), i.useEffect(() => {
     U.current = t
   }, [t]);
   let H = () => {
@@ -189,10 +189,10 @@ let j = i.memo(function(e) {
             [v.hasBanner]: H(),
             [v.bannerVisible]: t,
             [e]: !z && t,
-            [v.communityInfoVisible]: k || A && L
+            [v.communityInfoVisible]: M || D && L
           }),
           onMouseDown: x,
-          onContextMenu: j,
+          onContextMenu: _,
           onClick: a,
           children: [(0, r.jsxs)("header", {
             className: o()(v.header, E, {
@@ -203,7 +203,7 @@ let j = i.memo(function(e) {
               children: [(0, r.jsx)(f.Z, {
                 guild: N,
                 isBannerVisible: t
-              }), N.id === m._ && (0, r.jsx)(O, {}), (0, r.jsx)(c.X6q, {
+              }), N.id === m._ && (0, r.jsx)(j, {}), (0, r.jsx)(c.X6q, {
                 variant: "text-md/semibold",
                 lineClamp: 1,
                 className: v.name,
@@ -217,7 +217,7 @@ let j = i.memo(function(e) {
                   offset: 4
                 },
                 onClick: a,
-                onContextMenu: j,
+                onContextMenu: _,
                 "aria-label": b.NW.formatToPlainString(b.t.xMXpl5, {
                   guildName: null !== (i = null == N ? void 0 : N.toString()) && void 0 !== i ? i : ""
                 })
@@ -225,26 +225,26 @@ let j = i.memo(function(e) {
                 className: v.headerChildren,
                 children: w
               })]
-            }), L && (0, r.jsx)(_, {
+            }), L && (0, r.jsx)(O, {
               guild: N,
               controller: n,
-              hasBanner: null != I,
-              hasSubheader: null != A && A
+              hasBanner: null != Z,
+              hasSubheader: null != D && D
             })]
-          }), null != I ? (0, r.jsx)(y, {
+          }), null != Z ? (0, r.jsx)(y, {
             guild: N,
             controller: n,
-            guildBanner: I,
+            guildBanner: Z,
             animate: G
           }) : null]
-        }), M && H() ? (0, r.jsx)("div", {
+        }), k && H() ? (0, r.jsx)("div", {
           className: v.animatedBannerHoverLayer,
           onMouseEnter: () => {
             B(!0), clearTimeout(V.current)
           },
           onMouseLeave: () => B(!1),
           style: {
-            height: Z
+            height: I
           }
         }) : null]
       })

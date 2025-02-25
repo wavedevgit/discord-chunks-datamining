@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => y
 });
@@ -23,14 +23,14 @@ function y(e) {
   let {
     guild: t,
     selected: n
-  } = e, y = (0, d.jS)(t.id, "Guild Sidebar"), _ = (0, l.e7)([g.Z], () => g.Z.can(b.Plq.KICK_MEMBERS, t)), O = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), j = y && _ && null != O ? O : 0;
+  } = e, y = (0, d.jS)(t.id, "Guild Sidebar"), O = (0, l.e7)([g.Z], () => g.Z.can(b.Plq.KICK_MEMBERS, t)), j = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), _ = y && O && null != j ? j : 0;
   i.useEffect(() => {
-    _ && y && t.hasFeature(b.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && t.hasFeature(b.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
+    O && y && t.hasFeature(b.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && t.hasFeature(b.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
       guildId: t.id,
       status: p.wB.SUBMITTED,
       limit: h.p
     })
-  }, [_, t, y]);
+  }, [O, t, y]);
   let x = i.useCallback(() => {
       (0, m._X)(t.id)
     }, [t.id]),
@@ -47,8 +47,8 @@ function y(e) {
       text: v.NW.string(v.t.oclz3d),
       selected: n,
       onClick: x,
-      trailing: j > 0 ? (0, r.jsx)(a.mAB, {
-        count: j
+      trailing: _ > 0 ? (0, r.jsx)(a.mAB, {
+        count: _
       }) : null
     })
   })

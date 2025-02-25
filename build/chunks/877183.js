@@ -1,12 +1,12 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
   Z: () => m
 });
 var i = n(200651);
 n(192379);
 var r = n(704215),
-  s = n(13245),
-  o = n(605236),
+  o = n(13245),
+  s = n(605236),
   l = n(593481),
   a = n(371651),
   c = n(237997),
@@ -14,14 +14,14 @@ var r = n(704215),
   u = n(312839),
   h = n(987650),
   p = n(388032);
-let g = () => ({
+let f = () => ({
     icon: n(639525),
     title: p.NW.string(p.t.r0ObgY),
     body: p.NW.string(p.t.hc6XFx),
-    hint: f,
+    hint: g,
     notifType: h.n0.OopWelcomeNudge
   }),
-  f = e => (0, l.QR)(e, (0, u.P)(), p.t["z8/sgI"]);
+  g = e => (0, l.QR)(e, (0, u.P)(), p.t["z8/sgI"]);
 
 function m(e) {
   let {
@@ -30,7 +30,7 @@ function m(e) {
     icon: n,
     title: l,
     body: h,
-    hint: f,
+    hint: g,
     notifType: m
   } = function(e, t) {
     if (t.isFirstTimeNux) {
@@ -67,9 +67,9 @@ function m(e) {
       }), n
     }
     return e
-  }(g(), e), {
+  }(f(), e), {
     trackView: y,
-    trackClick: O
+    trackClick: _
   } = (0, u.R)(m, {
     notif_type: m
   });
@@ -77,7 +77,7 @@ function m(e) {
     icon: n,
     title: l,
     body: h,
-    hint: f,
+    hint: g,
     renderFooter: () => (0, i.jsx)("div", {
       style: {
         textAlign: "center",
@@ -87,16 +87,16 @@ function m(e) {
     }),
     confirmText: t ? p.NW.string(p.t.TxyTbm) : void 0,
     onConfirmClick: t ? () => {
-      O("unlock"), s.Z.setInputLocked(!1, (0, d.QF)())
+      _("unlock"), o.Z.setInputLocked(!1, (0, d.QF)())
     } : void 0,
     onNotificationShow: () => {
-      y(), t && (0, o.EW)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
+      y(), t && (0, s.EW)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
     },
     onNotificationClick: (e, t) => {
-      O("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.QF)()) ? s.Z.setInputLocked(!1, (0, d.QF)()) : c.Z.isInstanceLocked() && s.Z.setInstanceLocked(!1)
+      _("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.QF)()) ? o.Z.setInputLocked(!1, (0, d.QF)()) : c.Z.isInstanceLocked() && o.Z.setInstanceLocked(!1)
     },
     onDismissClick: () => {
-      O("dismiss")
+      _("dismiss")
     }
   }
 }

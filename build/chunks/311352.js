@@ -1,6 +1,6 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
-  Z: () => j
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -46,10 +46,10 @@ function y(e) {
   })
 }
 
-function _() {
+function O() {
   (0, g.C1)()
 }
-let O = e => {
+let j = e => {
     let {
       keybindString: t,
       children: n
@@ -104,7 +104,7 @@ let O = e => {
       children: () => n
     })
   },
-  j = () => {
+  _ = () => {
     let e = (0, i.e7)([u.Z], () => u.Z.hasLayers()),
       t = (0, h.Go)(),
       {
@@ -117,14 +117,14 @@ let O = e => {
       a = (0, i.e7)([d.ZP], () => d.ZP.getKeybindForAction(m.kg4.SAVE_CLIP));
     if (!(t && n) || null == a || e) return null;
     let s = p.BB(a.shortcut, !0);
-    return (0, r.jsx)(O, {
+    return (0, r.jsx)(j, {
       keybindString: s,
       children: (0, r.jsx)(c.Z, {
         disabled: l,
         tooltipText: null != a ? b.NW.formatToPlainString(b.t.HIMcv7, {
           hotkey: p.BB(null == a ? void 0 : a.shortcut, !0)
         }) : b.NW.string(b.t.s52pjo),
-        onClick: _,
+        onClick: O,
         onContextMenu: y,
         icon: o.AlX
       })

@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(954955),
-  s = n.n(o),
+  o = n.n(l),
+  a = n(954955),
+  s = n.n(a),
   c = n(772848),
   u = n(442837),
   d = n(902704),
@@ -110,17 +110,17 @@ function x(e) {
     observe: t = !0,
     className: n,
     children: l
-  } = e, o = i.useContext(j), s = (0, u.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(v.G.ClickZones)), c = (0, u.e7)([p.Z], () => p.Z.disableClickableRegions), [{
+  } = e, a = i.useContext(j), s = (0, u.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(v.G.ClickZones)), c = (0, u.e7)([p.Z], () => p.Z.disableClickableRegions), [{
     refHandler: d,
     setObserve: f
   }] = i.useState(() => {
     let e = null;
     return {
       setObserve(t) {
-        null != e && (t ? o.observe(e) : o.unobserve(e))
+        null != e && (t ? a.observe(e) : a.unobserve(e))
       },
       refHandler(t) {
-        null != e && o.unobserve(e), e = t
+        null != e && a.unobserve(e), e = t
       }
     }
   });
@@ -128,7 +128,7 @@ function x(e) {
     c ? f(!1) : f(t)
   }, [t, f, c]), (0, r.jsx)("div", {
     ref: d,
-    className: a()(n, E.clickable, s && E.debugMode),
+    className: o()(n, E.clickable, s && E.debugMode),
     "data-click-zone": !0,
     children: l
   })

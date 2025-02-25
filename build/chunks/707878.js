@@ -1,11 +1,11 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
-  Z: () => O
+  Z: () => _
 }), n(47120);
 var i = n(200651),
   r = n(192379),
-  s = n(442837),
-  o = n(481060),
+  o = n(442837),
+  s = n(481060),
   l = n(13245),
   a = n(313201),
   c = n(237997),
@@ -13,8 +13,8 @@ var i = n(200651),
   u = n(987650),
   h = n(981631),
   p = n(388032),
-  g = n(18643);
-let f = Object.values(u.wF).map(e => 100 * e),
+  f = n(18643);
+let g = Object.values(u.wF).map(e => 100 * e),
   m = (0, a.hQ)();
 class y extends r.PureComponent {
   handleUpdateBackgroundOpacity(e) {
@@ -27,24 +27,24 @@ class y extends r.PureComponent {
   }
   render() {
     return (0, i.jsxs)("div", {
-      className: g.container,
-      children: [(0, i.jsx)(o.vwX, {
+      className: f.container,
+      children: [(0, i.jsx)(s.vwX, {
         id: m,
-        tag: o.RB0.H5,
-        className: g.title,
+        tag: s.RB0.H5,
+        className: f.title,
         children: p.NW.string(p.t.OVovCQ)
       }), (0, i.jsx)("div", {
-        className: g.sliderContainer,
-        children: (0, i.jsx)(o.iRW, {
+        className: f.sliderContainer,
+        children: (0, i.jsx)(s.iRW, {
           mini: !0,
           initialValue: this.initialValue,
           defaultValue: this.initialValue,
-          minValue: f[0],
-          maxValue: f[f.length - 1],
+          minValue: g[0],
+          maxValue: g[g.length - 1],
           handleSize: 10,
           onValueChange: this.handleUpdateBackgroundOpacity,
           asValueChanges: this.handlePreviewBackgroundOpacity,
-          markers: f,
+          markers: g,
           onMarkerRender: h.dG4,
           equidistant: !0,
           stickToMarkers: !0,
@@ -63,6 +63,6 @@ class y extends r.PureComponent {
     }) : this[t] = n
   }
 }
-let O = s.ZP.connectStores([c.Z], () => ({
+let _ = o.ZP.connectStores([c.Z], () => ({
   opacity: c.Z.getTextWidgetOpacity()
 }))(y)

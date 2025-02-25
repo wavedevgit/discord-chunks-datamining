@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => x
 }), n(47120), n(230036), n(978209);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(768581),
   v = n(709054),
   y = n(981631),
-  _ = n(124368),
-  O = n(388032),
-  j = n(59996);
+  O = n(124368),
+  j = n(388032),
+  _ = n(59996);
 
 function x(e) {
   let {
@@ -37,16 +37,16 @@ function x(e) {
   return i.useEffect(() => {
     (0, p.q)()
   }, []), (0, r.jsxs)("div", {
-    className: j.popout,
+    className: _.popout,
     children: [(0, r.jsx)(s.Text, {
-      className: j.title,
+      className: _.title,
       variant: "text-xs/bold",
       color: "header-secondary",
-      children: t.isForumLikeChannel() ? O.NW.string(O.t.ioVdOz) : O.NW.string(O.t.VNYs2t)
+      children: t.isForumLikeChannel() ? j.NW.string(j.t.ioVdOz) : j.NW.string(j.t.VNYs2t)
     }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(C, {
       thread: e
     }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(s.P3F, {
-      className: j.more,
+      className: _.more,
       onClick: () => {
         t.isForumLikeChannel() ? (0, u.Kh)(t.id) : (0, s.ZDy)(async () => {
           let {
@@ -77,7 +77,7 @@ function x(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "none",
-        children: O.NW.string(O.t["4qdZ9/"])
+        children: j.NW.string(j.t["4qdZ9/"])
       })
     })]
   })
@@ -88,29 +88,29 @@ function C(e) {
     thread: t
   } = e, n = (0, a.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, p.Ok)(t);
   return (0, r.jsxs)(s.P3F, {
-    className: j.row,
+    className: _.row,
     onClick: e => {
-      (0, h.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, _.on.POPOUT)
+      (0, h.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, O.on.POPOUT)
     },
     children: [null == n ? (0, r.jsx)("img", {
-      className: j.avatar,
+      className: _.avatar,
       src: b.ZP.getDefaultAvatarURL(void 0, void 0),
       alt: ""
     }) : (0, r.jsx)(c.Z, {
-      className: j.avatar,
+      className: _.avatar,
       user: n,
       size: s.EFr.SIZE_16
     }), (0, r.jsx)(s.Text, {
-      className: j.name,
+      className: _.name,
       variant: "text-sm/normal",
       color: "none",
       children: t.name
     }), (0, r.jsxs)(s.Text, {
-      className: j.timestamp,
+      className: _.timestamp,
       variant: "text-sm/normal",
       color: "none",
       children: [(0, r.jsx)("span", {
-        className: j.bullet,
+        className: _.bullet,
         children: "•"
       }), (0, p.Ye)(i)]
     })]

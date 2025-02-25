@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   R: () => v,
   Z: () => y
@@ -43,13 +43,13 @@ let y = e => {
     guildId: r,
     closePopout: v
   } = e, y = (0, c.Dt)(), {
-    notClaimed: _,
-    notEmailVerified: O,
-    notPhoneVerified: j,
+    notClaimed: O,
+    notEmailVerified: j,
+    notPhoneVerified: _,
     newAccount: x,
     newMember: C
   } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), P = 0 === t ? g.NW.string(g.t["6zY8BA"]) : null, S = null, N = null;
-  return (0 === t && (_ ? (S = g.NW.string(g.t.IRxUlJ), N = g.NW.string(g.t.fiNVio)) : j ? (S = g.NW.string(g.t.vW8iUF), N = g.NW.string(g.t["50gfOj"])) : O ? (S = g.NW.string(g.t.vdSOp6), N = g.NW.string(g.t.lm1UKi)) : C ? (S = g.NW.formatToPlainString(g.t.v1ktYW, {
+  return (0 === t && (O ? (S = g.NW.string(g.t.IRxUlJ), N = g.NW.string(g.t.fiNVio)) : _ ? (S = g.NW.string(g.t.vW8iUF), N = g.NW.string(g.t["50gfOj"])) : j ? (S = g.NW.string(g.t.vdSOp6), N = g.NW.string(g.t.lm1UKi)) : C ? (S = g.NW.formatToPlainString(g.t.v1ktYW, {
     min: h.YeM.MEMBER_AGE
   }), N = g.NW.string(g.t.BddRzc)) : x && (S = g.NW.formatToPlainString(g.t["sncw4+"], {
     min: h.YeM.ACCOUNT_AGE
@@ -74,7 +74,7 @@ let y = e => {
         className: m.buttonContainer,
         children: [null != N ? (0, i.jsx)(o.zxk, {
           onClick: () => {
-            _ ? s.j() : j ? (0, o.ZDy)(async () => {
+            O ? s.j() : _ ? (0, o.ZDy)(async () => {
               let {
                 default: e
               } = await Promise.all([n.e("76540"), n.e("42936")]).then(n.bind(n, 607018));
@@ -83,7 +83,7 @@ let y = e => {
               }, t))
             }, {
               modalKey: f.M
-            }) : O && (a.Z.verifyResend(), (0, o.h7j)(e => {
+            }) : j && (a.Z.verifyResend(), (0, o.h7j)(e => {
               var t, n, r;
               return (0, i.jsx)(o.ConfirmModal, (n = b({
                 header: g.NW.string(g.t.LykQYm),
@@ -110,7 +110,7 @@ let y = e => {
           },
           className: m.primaryButton,
           children: N
-        }) : null, _ || j || O ? (0, i.jsx)(o.zxk, {
+        }) : null, O || _ || j ? (0, i.jsx)(o.zxk, {
           onClick: v,
           look: o.zxk.Looks.BLANK,
           className: m.cancel,

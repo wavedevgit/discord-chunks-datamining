@@ -1,4 +1,4 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   Z: () => c
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var l = n(710845),
   i = n(620662),
-  a = n(915863),
-  o = n(981631),
+  o = n(915863),
+  a = n(981631),
   s = n(388032);
 
 function c(e) {
@@ -19,7 +19,7 @@ function c(e) {
     color: u,
     onAction: d
   } = e;
-  return (0, i.Z)(t, o.xjy.INSTANCE) ? (0, r.jsx)(a.Z, {
+  return (0, i.Z)(t, a.xjy.INSTANCE) ? (0, r.jsx)(o.Z, {
     look: c,
     color: u,
     onClick: () => {

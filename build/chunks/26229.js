@@ -1,4 +1,4 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
   Z: () => r
 });
@@ -8,7 +8,7 @@ let r = n(192379).memo(function(e) {
     layout: t,
     layoutSize: n,
     className: r,
-    renderWidget: s
+    renderWidget: o
   } = e;
   return null != t ? (0, i.jsx)("div", {
     className: r,
@@ -16,6 +16,6 @@ let r = n(192379).memo(function(e) {
       width: n.width,
       height: n.height
     },
-    children: t.widgets.map(e => s(e, n))
+    children: t.widgets.map(e => o(e, n))
   }) : null
 })

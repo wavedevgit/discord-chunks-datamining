@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => B
 }), n(47120);
@@ -18,21 +18,21 @@ var r, i = n(200651),
   b = n(702321),
   v = n(82295),
   y = n(313201),
-  _ = n(540059),
-  O = n(860144),
-  j = n(214852),
+  O = n(540059),
+  j = n(860144),
+  _ = n(214852),
   x = n(518311),
   C = n(355298),
   P = n(869404),
   S = n(333984),
   N = n(210887),
-  I = n(592125),
-  Z = n(158776),
+  Z = n(592125),
+  I = n(158776),
   w = n(55589),
   E = n(515753),
   T = n(981631),
-  A = n(388032),
-  D = n(730499);
+  D = n(388032),
+  A = n(730499);
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,7 +56,7 @@ function L(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,12 +68,12 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = l.memo(function() {
+let k = l.memo(function() {
   return (0, i.jsxs)("svg", {
     width: "184",
     height: "428",
     viewBox: "0 0 184 428",
-    className: D.empty,
+    className: A.empty,
     children: [(0, i.jsx)("rect", {
       x: 40,
       y: 6,
@@ -278,14 +278,14 @@ class G extends(r = l.Component) {
           children: r => (0, i.jsx)(p.aVo, L({
             fade: !0,
             innerRole: o,
-            innerAriaLabel: A.NW.string(A.t.YUU0RE),
+            innerAriaLabel: D.NW.string(D.t.YUU0RE),
             innerTag: "ul",
             ref: e => {
               var t;
               this._list = e, this.props.listRef.current = e, l.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null
             },
             onScroll: this.handleScroll,
-            className: D.scroller,
+            className: A.scroller,
             sectionHeight: this.getSectionHeight,
             paddingTop: t,
             paddingBottom: 8,
@@ -322,9 +322,9 @@ class G extends(r = l.Component) {
         c = n.some(e => (0, b.Z)(e)),
         u = {
           num_users_visible: a.length,
-          num_users_visible_with_mobile_indicator: s.filter(e => null != e && Z.Z.isMobileOnline(e)).length
+          num_users_visible_with_mobile_indicator: s.filter(e => null != e && I.Z.isMobileOnline(e)).length
         };
-      this.hasReportedAnalytics = !0, g.ZP.trackWithMetadata(T.rMx.DM_LIST_VIEWED, k(L({}, u, (0, m.X)()), {
+      this.hasReportedAnalytics = !0, g.ZP.trackWithMetadata(T.rMx.DM_LIST_VIEWED, M(L({}, u, (0, m.X)()), {
         visible_user_ids: s.filter(e => null != e),
         changelog_dm_visible: c
       }))
@@ -371,7 +371,7 @@ class G extends(r = l.Component) {
       } = e, {
         privateChannelIds: r
       } = this.props;
-      return 0 === t ? this.renderChild(n) : 0 === n && 0 === r.length ? (0, i.jsx)(M, {}, "no-private-channels") : this.renderDM(t, n)
+      return 0 === t ? this.renderChild(n) : 0 === n && 0 === r.length ? (0, i.jsx)(k, {}, "no-private-channels") : this.renderDM(t, n)
     }), R(this, "renderSection", e => {
       let {
         section: t
@@ -379,15 +379,15 @@ class G extends(r = l.Component) {
         showDMHeader: n
       } = this.props;
       return 0 !== t && n ? (0, i.jsxs)(v.Z, {
-        className: D.privateChannelsHeaderContainer,
+        className: A.privateChannelsHeaderContainer,
         children: [(0, i.jsx)("span", {
-          className: D.headerText,
-          children: A.NW.string(A.t.YUU0RE)
+          className: A.headerText,
+          children: D.NW.string(D.t.YUU0RE)
         }), (0, i.jsx)(x.Z, {
-          tooltip: A.NW.string(A.t["6Urw1t"]),
+          tooltip: D.NW.string(D.t["6Urw1t"]),
           tooltipPosition: "top",
           popoutAlign: "left",
-          iconClassName: D.privateChannelRecipientsInviteButtonIcon,
+          iconClassName: A.privateChannelRecipientsInviteButtonIcon,
           icon: p.qJs,
           subscribeToGlobalHotkey: !0
         })]
@@ -421,7 +421,7 @@ R(G, "defaultProps", {
 });
 let B = e => {
   var t;
-  let n = (0, _.Q3)("ConnectedPrivateChannelsList"),
+  let n = (0, O.Q3)("ConnectedPrivateChannelsList"),
     {
       density: r
     } = (0, p.TCT)(),
@@ -432,21 +432,21 @@ let B = e => {
       showDMHeader: h
     } = e,
     g = l.Children.count(d),
-    m = I.Z.getMutablePrivateChannels(),
+    m = Z.Z.getMutablePrivateChannels(),
     b = (0, P.k1)(m),
     v = (0, u.Wu)([w.Z, C.Z, S.Z], () => {
       let e = w.Z.getPrivateChannelIds();
       return (0, P.tU)(e, [C.Z, S.Z])
     }, []);
-  (0, j.z)(O.R);
-  let x = (0, u.cj)([f.Z, N.Z, I.Z], () => ({
+  (0, _.z)(j.R);
+  let x = (0, u.cj)([f.Z, N.Z, Z.Z], () => ({
       theme: N.Z.darkSidebar ? T.BRd.DARK : a,
       keyboardModeEnabled: f.Z.keyboardModeEnabled,
-      version: null != o ? "".concat(o, ":").concat(I.Z.getPrivateChannelsVersion()) : I.Z.getPrivateChannelsVersion()
+      version: null != o ? "".concat(o, ":").concat(Z.Z.getPrivateChannelsVersion()) : Z.Z.getPrivateChannelsVersion()
     })),
-    Z = l.useRef(null),
-    E = null !== (t = e.listScrollerRef) && void 0 !== t ? t : Z,
-    A = l.useCallback(e => {
+    I = l.useRef(null),
+    E = null !== (t = e.listScrollerRef) && void 0 !== t ? t : I,
+    D = l.useCallback(e => {
       let t = E.current,
         n = document.querySelector(e);
       null != t && null != n && t.scrollIntoViewNode({
@@ -461,7 +461,7 @@ let B = e => {
         }
       })
     }, [E]),
-    D = l.useCallback(() => new Promise(e => {
+    A = l.useCallback(() => new Promise(e => {
       let t = E.current;
       if (null == t) return e();
       t.scrollToTop({
@@ -477,18 +477,18 @@ let B = e => {
         }
       })
     }), [E]),
-    M = (0, y.Dt)(),
+    k = (0, y.Dt)(),
     B = (0, c.ZP)({
-      id: "private-channels-".concat(M),
+      id: "private-channels-".concat(k),
       isEnabled: x.keyboardModeEnabled,
-      scrollToStart: D,
+      scrollToStart: A,
       scrollToEnd: R,
       defaultFocused: (g + +!!h).toString(),
-      setFocus: A
+      setFocus: D
     });
   return (0, i.jsx)(s.bG, {
     navigator: B,
-    children: (0, i.jsx)(G, L(k(L({
+    children: (0, i.jsx)(G, L(M(L({
       density: r,
       isVisualRefreshEnabled: n,
       channels: b,

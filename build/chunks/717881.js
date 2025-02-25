@@ -1,4 +1,4 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   P: () => A,
@@ -8,8 +8,8 @@ var r = n(200651);
 n(192379);
 var l = n(120356),
   i = n.n(l),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(620662),
   c = n(387903),
   u = n(850827),
@@ -69,7 +69,7 @@ function T(e) {
     source: n,
     activity: l,
     applicationStream: i,
-    user: a,
+    user: o,
     guildId: s,
     channelId: c,
     onAction: d,
@@ -81,10 +81,10 @@ function T(e) {
     source: n,
     activity: l,
     applicationStream: i,
-    user: a,
+    user: o,
     guildId: s,
-    look: o.zxk.Looks.FILLED,
-    color: null != f ? f : o.zxk.Colors.PRIMARY,
+    look: a.zxk.Looks.FILLED,
+    color: null != f ? f : a.zxk.Colors.PRIMARY,
     channelId: c,
     onAction: d
   })
@@ -95,7 +95,7 @@ let A = c.Z.Types,
       activity: t,
       user: n,
       useStoreStream: l = !0,
-      showActions: o = !0,
+      showActions: a = !0,
       hideHeader: u = !1,
       showChannelDetails: P = !1,
       analyticsParams: A
@@ -114,17 +114,17 @@ let A = c.Z.Types,
       }
       return l
     }(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails", "analyticsParams"]);
-    let D = (0, a.e7)([S.Z, O.Z], () => {
+    let D = (0, o.e7)([S.Z, O.Z], () => {
         var e;
         return O.Z.getChannel(null === (e = S.Z.getVoiceStateForUser(n.id)) || void 0 === e ? void 0 : e.channelId)
       }),
-      _ = (0, a.e7)([v.Z], () => l ? v.Z.getAnyStreamForUser(n.id) : null),
-      k = (0, a.e7)([j.Z, S.Z, O.Z], () => {
+      _ = (0, o.e7)([v.Z], () => l ? v.Z.getAnyStreamForUser(n.id) : null),
+      k = (0, o.e7)([j.Z, S.Z, O.Z], () => {
         var e, r;
         return (0, s.Z)(t, I.xjy.EMBEDDED) ? j.Z.getGuild(null === (e = O.Z.getChannel(null === (r = S.Z.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === r ? void 0 : r.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null
       }),
-      W = (0, a.e7)([j.Z], () => null != _ ? j.Z.getGuild(_.guildId) : null),
-      R = (0, a.e7)([d.Z], () => null != t ? null != t.application_id ? d.Z.getApplication(t.application_id) : d.Z.getApplicationByName(t.name) : null),
+      W = (0, o.e7)([j.Z], () => null != _ ? j.Z.getGuild(_.guildId) : null),
+      R = (0, o.e7)([d.Z], () => null != t ? null != t.application_id ? d.Z.getApplication(t.application_id) : d.Z.getApplicationByName(t.name) : null),
       M = (0, f.Z)(),
       L = (0, b.Z)(n),
       U = M && null != t && L;
@@ -137,7 +137,7 @@ let A = c.Z.Types,
       showReactions: U,
       showChannelDetails: P,
       channel: P ? D : void 0,
-      renderActions: o ? () => (0, r.jsxs)("div", {
+      renderActions: a ? () => (0, r.jsxs)("div", {
         className: i()(U && E.actionsWrapper),
         children: [(0, r.jsx)(T, Z(w({}, C), {
           applicationStream: _,

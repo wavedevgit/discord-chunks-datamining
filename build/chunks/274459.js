@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(642128),
+  o = n.n(l),
+  a = n(642128),
   s = n(442837),
   c = n(481060),
   u = n(596454),
@@ -37,7 +37,7 @@ function y(e) {
     leave: {
       rotate: -120
     },
-    config: o.config.default,
+    config: a.config.default,
     onRest: (e, t) => {
       let {
         phase: n
@@ -57,13 +57,13 @@ function y(e) {
     let {
       rotate: i
     } = e;
-    return t && (0, r.jsx)(o.animated.div, {
+    return t && (0, r.jsx)(a.animated.div, {
       className: p.voiceChannelEffectEmojiContainer,
       style: {
         transform: i.to(g)
       },
       children: (0, r.jsx)(u.Z, {
-        className: a()(p.voiceChannelEffectEmoji),
+        className: o()(p.voiceChannelEffectEmoji),
         emojiId: f.id,
         emojiName: f.name,
         animated: null !== (n = f.animated) && void 0 !== n && n

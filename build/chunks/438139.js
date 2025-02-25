@@ -1,4 +1,4 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   Z: () => d
@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   i = n(846519),
-  a = n(388032);
+  o = n(388032);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -104,22 +104,22 @@ function d(e) {
         }(t, ["timestamps"]),
         {
           hours: i,
-          minutes: o,
+          minutes: a,
           seconds: u
         } = this.state,
         d = {
           hours: this.renderTime(i, !0),
-          minutes: this.renderTime(o),
+          minutes: this.renderTime(a),
           seconds: this.renderTime(u)
         };
       return null != n.end ? (0, r.jsx)(e, c(s({}, l), {
-        message: a.NW.formatToPlainString(a.t["I/J7vL"], d)
+        message: o.NW.formatToPlainString(o.t["I/J7vL"], d)
       })) : null != n.start ? (0, r.jsx)(e, c(s({}, l), {
-        message: a.NW.formatToPlainString(a.t.M9Fexc, d)
+        message: o.NW.formatToPlainString(o.t.M9Fexc, d)
       })) : null
     }
     constructor(e) {
-      super(e), o(this, "_interval", void 0), this._interval = new i.Xp, this.state = s({}, this.getUpdatedTime())
+      super(e), a(this, "_interval", void 0), this._interval = new i.Xp, this.state = s({}, this.getUpdatedTime())
     }
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   j: () => w
 }), n(47120);
@@ -19,21 +19,21 @@ var r = n(200651),
   b = n(819640),
   v = n(626135),
   y = n(316496),
-  _ = n(903002),
-  O = n(214492),
-  j = n(981631),
+  O = n(903002),
+  j = n(214492),
+  _ = n(981631),
   x = n(921944),
   C = n(46140),
   P = n(388032),
   S = n(94594),
   N = n(204794);
-let I = {
+let Z = {
     topLeftDark: "rgba(62, 22, 137, 0.8)",
     topRightDark: "rgba(160, 86, 242, 0.4)",
     topLeftLight: "rgba(159, 86, 242, 0.4)",
     topRightLight: "rgba(222, 194, 252, 0.5)"
   },
-  Z = e => {
+  I = e => {
     let {
       closePopout: t,
       setToggleDefaultState: n
@@ -42,14 +42,14 @@ let I = {
     } = (0, h.ZP)(p.Z.SHARING_CONTROLS_COACHMARK), a = (0, d.ZP)(), f = m.G6.useSetting(), {
       assets: g,
       count: b
-    } = (0, O.fq)(), v = (0, i.useRef)(null);
+    } = (0, j.fq)(), v = (0, i.useRef)(null);
     return (0, c.Tbt)(v), (0, r.jsxs)("div", {
       className: S.wrapper,
       ref: v,
       children: [(0, r.jsx)("div", {
         className: S.gradient,
         style: {
-          background: "radial-gradient(75% 75% at 0% 0%, ".concat((0, s.wj)(a) ? I.topLeftDark : I.topLeftLight, " 0%, transparent 100%),\n    radial-gradient(70% 50% at 100% 0%, ").concat((0, s.wj)(a) ? I.topRightDark : I.topRightLight, " 0%, transparent 100%)")
+          background: "radial-gradient(75% 75% at 0% 0%, ".concat((0, s.wj)(a) ? Z.topLeftDark : Z.topLeftLight, " 0%, transparent 100%),\n    radial-gradient(70% 50% at 100% 0%, ").concat((0, s.wj)(a) ? Z.topRightDark : Z.topRightLight, " 0%, transparent 100%)")
         }
       }), (0, r.jsxs)("div", {
         className: S.content,
@@ -89,15 +89,15 @@ let I = {
             variant: "text-xs/normal",
             color: "text-secondary",
             children: P.NW.string(P.t.JW4KKS)
-          }), (0, r.jsx)(_.D, {
+          }), (0, r.jsx)(O.D, {
             assets: g,
             assetCount: b,
-            size: _.F.SMALL
+            size: O.F.SMALL
           })]
         }), (0, r.jsx)(c.zxk, {
           className: S.viewSettingsButton,
           onClick: () => {
-            t(), u.Z.open(j.oAB.ACTIVITY_PRIVACY, null, {
+            t(), u.Z.open(_.oAB.ACTIVITY_PRIVACY, null, {
               analyticsLocations: o
             })
           },
@@ -119,12 +119,12 @@ let I = {
       rtcPopoutEnabled: s
     } = (0, y.S)("SharingPrivacyPopout"), u = (0, g.Ws)({
       location: C.dr.CONFLICT_CHECKS
-    }), d = m.G6.useSetting(), [p, h] = (0, i.useState)(!1), _ = (0, o.e7)([b.Z], () => b.Z.getLayers().includes(j.S9g.USER_SETTINGS));
+    }), d = m.G6.useSetting(), [p, h] = (0, i.useState)(!1), O = (0, o.e7)([b.Z], () => b.Z.getLayers().includes(_.S9g.USER_SETTINGS));
     return ((0, i.useEffect)(() => {
-      n && v.default.track(j.rMx.OPEN_POPOUT, {
+      n && v.default.track(_.rMx.OPEN_POPOUT, {
         type: "SharingPrivacyPopout"
       })
-    }, [n]), s && (u || n) && (!d || p) && !_) ? (0, r.jsx)(f.ZP, {
+    }, [n]), s && (u || n) && (!d || p) && !O) ? (0, r.jsx)(f.ZP, {
       contentTypes: n ? [] : [a.z.SHARE_ACTIVITY_COACHMARK_V2],
       children: e => {
         let {
@@ -142,7 +142,7 @@ let I = {
             let {
               closePopout: t
             } = e;
-            return (0, r.jsx)(Z, {
+            return (0, r.jsx)(I, {
               closePopout: t,
               setToggleDefaultState: h
             })

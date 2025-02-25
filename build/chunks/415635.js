@@ -1,4 +1,4 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   Z: () => y
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   i = n(772848),
-  a = n(442837),
-  o = n(570140),
+  o = n(442837),
+  a = n(570140),
   s = n(607070),
   c = n(367907),
   u = n(37091),
@@ -23,29 +23,29 @@ function y(e) {
     guildId: n,
     userId: y,
     containerDimensions: b
-  } = e, h = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [v, O] = l.useState([]), j = v.length < 50;
+  } = e, h = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), [v, O] = l.useState([]), j = v.length < 50;
   l.useEffect(() => {
     function e(e) {
       var r;
       let {
         channelId: l,
-        userId: a,
-        emoji: o,
+        userId: o,
+        emoji: a,
         animationType: s,
         animationId: p
       } = e;
-      if (null != y && y !== a || u.Z.getEnabled() && (0, d.Z)(null !== (r = null == o ? void 0 : o.name) && void 0 !== r ? r : "")) return;
-      let g = null != o && null != s && null != p;
+      if (null != y && y !== o || u.Z.getEnabled() && (0, d.Z)(null !== (r = null == a ? void 0 : a.name) && void 0 !== r ? r : "")) return;
+      let g = null != a && null != s && null != p;
       if (l === t && !h && j && g) {
-        let e = (0, f._r)(o),
-          r = null != o.id && !o.animated,
+        let e = (0, f._r)(a),
+          r = null != a.id && !a.animated,
           l = {
             id: (0, i.Z)(),
             animationType: s,
             animationId: p,
             shouldResize: r,
             url: e,
-            userId: a
+            userId: o
           };
         O(e => [...e, l]), c.ZP.trackWithMetadata(m.rMx.VOICE_CHANNEL_EFFECT_VIEWED, {
           channel_id: t,
@@ -53,8 +53,8 @@ function y(e) {
         })
       }
     }
-    return o.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
-      o.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
+    return a.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
+      a.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
     }
   }, [t, n, y, h, j]);
   let S = l.useCallback(e => {

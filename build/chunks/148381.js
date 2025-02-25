@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => m
 }), n(47120);
-var l = n(200651),
-  r = n(192379),
+var r = n(200651),
+  l = n(192379),
   s = n(120356),
   i = n.n(s),
   a = n(481060),
@@ -18,29 +18,29 @@ function m(e) {
     scrollerClassName: n,
     scrollerInnerClassName: s,
     children: m
-  } = e, g = r.useRef(null), [h, x] = r.useState(!1), [p, v] = r.useState(!1), f = r.useCallback(() => {
+  } = e, p = l.useRef(null), [h, g] = l.useState(!1), [x, f] = l.useState(!1), v = l.useCallback(() => {
     let {
       current: e
-    } = g;
-    null != e && (x(!e.isScrolledToTop()), v(!e.isScrolledToBottom()))
+    } = p;
+    null != e && (g(!e.isScrolledToTop()), f(!e.isScrolledToBottom()))
   }, []);
-  return (0, o.Ng)(() => f()), (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsxs)("div", {
+  return (0, o.Ng)(() => v()), (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
       className: i()(d.title, d.scrollWrapper),
-      children: [(0, l.jsx)(a.vwX, {
+      children: [(0, r.jsx)(a.vwX, {
         className: u.formItemTitle,
         children: t
-      }), (0, l.jsx)(c.Z, {
+      }), (0, r.jsx)(c.Z, {
         separator: h
       })]
-    }), (0, l.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: n,
-      children: (0, l.jsx)(a.Den, {
-        ref: g,
+      children: (0, r.jsx)(a.Den, {
+        ref: p,
         className: i()(d.scrollerInner, s, {
-          [d.bottomSeparator]: p
+          [d.bottomSeparator]: x
         }),
-        onScroll: f,
+        onScroll: v,
         children: m
       })
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   Z: () => Z
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(481060),
   c = n(717881),
   u = n(616780),
@@ -49,7 +49,7 @@ class w extends l.PureComponent {
       activeStream: n,
       currentUserId: l,
       canWatch: i,
-      unavailableReason: a
+      unavailableReason: o
     } = this.props;
     return (0, r.jsxs)(s.P3F, {
       onClick: t,
@@ -63,7 +63,7 @@ class w extends l.PureComponent {
           variant: "text-sm/normal",
           color: "none",
           className: E.white,
-          children: (0, N.Z)(e, n, l, a)
+          children: (0, N.Z)(e, n, l, o)
         })
       }) : null]
     })
@@ -75,10 +75,10 @@ class w extends l.PureComponent {
       stream: n,
       previewIsOpen: l,
       onAction: i,
-      hideTip: o
+      hideTip: a
     } = this.props;
     return null == n ? null : (0, r.jsx)("div", {
-      className: a()(E.streamPreviewWrapper, {
+      className: o()(E.streamPreviewWrapper, {
         [E.mounted]: l
       }),
       children: (0, r.jsxs)("div", {
@@ -108,7 +108,7 @@ class w extends l.PureComponent {
             className: E.activityActions,
             color: E.watchButton,
             onAction: i
-          }), !o && (0, r.jsx)(f.Z, {
+          }), !a && (0, r.jsx)(f.Z, {
             type: f.Z.Types.INLINE,
             className: E.protip,
             children: __OVERLAY__ ? x.NW.string(x.t["YRdw7+"]) : x.NW.string(x.t.CCTgbG)
@@ -122,7 +122,7 @@ class w extends l.PureComponent {
 function Z(e) {
   var t, n, {
       user: i,
-      channel: a
+      channel: o
     } = e,
     s = function(e, t) {
       if (null == e) return {};
@@ -139,9 +139,9 @@ function Z(e) {
       }
       return l
     }(e, ["user", "channel"]);
-  let [c, d] = (0, o.Wu)([v.Z, y.Z, b.Z, p.Z], () => (0, j.p9)(a, v.Z, y.Z, b.Z, p.Z)), f = (0, o.e7)([m.Z], () => m.Z.getStreamForUser(i.id, a.getGuildId())), O = (0, o.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(f)), N = (0, o.e7)([g.default], () => g.default.getId()), P = (0, S.Cf)(f), I = (0, o.e7)([h.Z], () => (0, S.Um)(f, h.Z)), x = l.useMemo(() => ({
-    [a.guild_id]: [i.id]
-  }), [a.guild_id, i.id]);
+  let [c, d] = (0, a.Wu)([v.Z, y.Z, b.Z, p.Z], () => (0, j.p9)(o, v.Z, y.Z, b.Z, p.Z)), f = (0, a.e7)([m.Z], () => m.Z.getStreamForUser(i.id, o.getGuildId())), O = (0, a.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(f)), N = (0, a.e7)([g.default], () => g.default.getId()), P = (0, S.Cf)(f), I = (0, a.e7)([h.Z], () => (0, S.Um)(f, h.Z)), x = l.useMemo(() => ({
+    [o.guild_id]: [i.id]
+  }), [o.guild_id, i.id]);
   return (0, u.$)(x), (0, r.jsx)(w, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

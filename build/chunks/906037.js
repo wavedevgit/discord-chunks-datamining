@@ -19,11 +19,11 @@ function a(e, t, n) {
 function s(e, t) {
   var n, a;
   let s = o(e),
-    c = r.Z.getGame();
+    l = r.Z.getGame();
   i.Z.dispatch({
     type: "OVERLAY_WIDGET_CHANGED",
-    gameName: null !== (n = null == c ? void 0 : c.name) && void 0 !== n ? n : null,
-    gameId: null !== (a = null == c ? void 0 : c.id) && void 0 !== a ? a : null,
+    gameName: null !== (n = null == l ? void 0 : l.name) && void 0 !== n ? n : null,
+    gameId: null !== (a = null == l ? void 0 : l.id) && void 0 !== a ? a : null,
     widgetType: e.widget,
     visible: s && t,
     locked: e.locked,

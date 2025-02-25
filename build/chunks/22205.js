@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(392711),
-  a = n.n(l),
-  o = n(642128),
+  o = n.n(l),
+  a = n(642128),
   s = n(818405),
   c = n(587158),
   u = n(286379),
@@ -39,7 +39,7 @@ function R(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = a().throttle(() => {
+let _ = o().throttle(() => {
     b.Z.increment({
       name: u.V.APP_CRASHED,
       tags: ["reason:".concat(s.v.UNHANDLED_JS_ERROR), "level:".concat(c.c.FATAL)]
@@ -47,37 +47,37 @@ let _ = a().throttle(() => {
   }, 100, {
     trailing: !1
   }),
-  T = 10 * O.Z.Millis.SECOND;
+  k = 10 * O.Z.Millis.SECOND;
 
-function k(e) {
+function T(e) {
   var t, n;
   let {
     error: l,
-    onLock: a,
+    onLock: o,
     onReload: s,
     onDisable: c,
     onCrashDisabled: u
-  } = e, m = i.useMemo(() => new o.SpringValue(1), []), h = i.useRef(null), [b, g] = i.useState(!1), [O, S] = i.useState(!1), j = (0, d.e7)([y.default], () => y.default.getCurrentUser());
-  (0, v.ZP)(() => (h.current = setTimeout(x, T), p.Z.track(P.rMx.NOTIFICATION_VIEWED, {
+  } = e, m = i.useMemo(() => new a.SpringValue(1), []), h = i.useRef(null), [b, g] = i.useState(!1), [O, S] = i.useState(!1), j = (0, d.e7)([y.default], () => y.default.getCurrentUser());
+  (0, v.ZP)(() => (h.current = setTimeout(x, k), p.Z.track(P.rMx.NOTIFICATION_VIEWED, {
     notif_type: C.n0.OverlayCrashed
   }), () => {
     null != h.current && clearTimeout(h.current)
   }));
   let x = i.useCallback(() => {
-      m.set(0), null != h.current && clearTimeout(h.current), h.current = null, null == a || a(), null == u || u()
-    }, [m, a, u]),
+      m.set(0), null != h.current && clearTimeout(h.current), h.current = null, null == o || o(), null == u || u()
+    }, [m, o, u]),
     R = i.useCallback(e => {
-      !O && (S(!0), null == a || a(), p.Z.track(P.rMx.NOTIFICATION_CLICKED, {
+      !O && (S(!0), null == o || o(), p.Z.track(P.rMx.NOTIFICATION_CLICKED, {
         notif_type: C.n0.OverlayCrashed,
         action_type: "reload"
       }, !0), e.stopPropagation(), setTimeout(() => null == s ? void 0 : s(), 200))
-    }, [a, s, O]),
+    }, [o, s, O]),
     _ = i.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (g(!0), null != h.current && clearTimeout(h.current)) : g(!1)
     }, [g]),
-    k = i.useCallback(e => {
-      e.stopPropagation(), null == a || a(), null == c || c()
-    }, [c, a]),
+    T = i.useCallback(e => {
+      e.stopPropagation(), null == o || o(), null == c || c()
+    }, [c, o]),
     A = (0, d.e7)([Z.ZP], () => Z.ZP.getFocusedRunningGame()),
     D = b ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
@@ -117,8 +117,8 @@ function k(e) {
     }),
     onNotificationClick: _,
     onConfirmClick: R,
-    onCancelClick: null != A ? k : void 0,
-    onDismissClick: a,
+    onCancelClick: null != A ? T : void 0,
+    onDismissClick: o,
     expand: !0,
     locked: !0,
     notificationId: "overlay-crashed",
@@ -161,7 +161,7 @@ class A extends i.PureComponent {
     } = this.state;
     return null != n ? i ? (0, r.jsx)(x.Z, {
       className: I.errorClickNotification,
-      children: (0, r.jsx)(k, {
+      children: (0, r.jsx)(T, {
         error: n,
         onLock: () => {
           var e;

@@ -1,6 +1,6 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
-  Z: () => I
+  Z: () => Z
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -19,15 +19,15 @@ var r = n(200651),
   b = n(276952),
   v = n(199540),
   y = n(40153),
-  _ = n(252686),
-  O = n(682662),
-  j = n(662146),
+  O = n(252686),
+  j = n(682662),
+  _ = n(662146),
   x = n(388032),
   C = n(602079),
   P = n(638410);
 let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
   N = (0, s.animated)(d.Kqy),
-  I = i.memo(function(e) {
+  Z = i.memo(function(e) {
     let {
       folderNode: t,
       setNodeRef: n,
@@ -35,17 +35,17 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       expanded: s,
       mediaState: u,
       mentionCount: g = 0,
-      isMentionLowImportance: I,
-      unread: Z = !1,
+      isMentionLowImportance: Z,
+      unread: I = !1,
       defaultFolderName: w,
       useCircleMask: E = !1,
       draggable: T = !1,
-      sorting: A = !1,
-      onDragStart: D,
+      sorting: D = !1,
+      onDragStart: A,
       onDragEnd: R,
       onExpandCollapse: L,
-      onContextMenu: k,
-      renderChildNode: M,
+      onContextMenu: M,
+      renderChildNode: k,
       folderIconContent: G,
       folderIconContentClassName: B
     } = e, {
@@ -54,13 +54,13 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       children: V
     } = t, F = (0, h.Q3)("FolderItem"), [H, z] = i.useState(!1), [q, Y] = i.useState(!1), Q = H || q;
     i.useEffect(() => {
-      A && z(!1)
-    }, [A]);
+      D && z(!1)
+    }, [D]);
     let [{
       dragging: K
     }, J] = (0, a.c)({
       type: m.eD.FOLDER,
-      item: () => (null == D || D(), {
+      item: () => (null == A || A(), {
         type: m.eD.FOLDER,
         nodeId: t.id
       }),
@@ -96,16 +96,16 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       config: {
         duration: S
       }
-    }), el = i.useCallback(e => null == n ? void 0 : n(U, e), [n, U]), eo = (0, r.jsxs)(O.H, {
+    }), el = i.useCallback(e => null == n ? void 0 : n(U, e), [n, U]), eo = (0, r.jsxs)(j.H, {
       children: [(0, r.jsx)(b.Z, {
         disabled: K || s,
         hovered: H,
         selected: l,
-        unread: Z,
+        unread: I,
         className: P.pill
-      }), (0, r.jsx)(j.Z, {
+      }), (0, r.jsx)(_.Z, {
         text: ee,
-        disabled: A,
+        disabled: D,
         selected: l,
         disableWrapper: !0,
         children: (0, r.jsx)("div", {
@@ -114,18 +114,18 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
             [P.wobble]: !K && q && !s
           }),
           "data-dnd-name": ee,
-          children: K ? (0, r.jsx)(_.Z, {}) : (0, r.jsx)(v.Z, {
+          children: K ? (0, r.jsx)(O.Z, {}) : (0, r.jsx)(v.Z, {
             folderNode: t,
             expanded: s,
             forceCircular: E,
-            sorting: A,
+            sorting: D,
             mediaState: u,
             mentionCount: g,
-            isMentionLowImportance: I,
+            isMentionLowImportance: Z,
             tooltipName: ee,
             folderGroupId: en,
             onClick: L,
-            onContextMenu: k,
+            onContextMenu: M,
             onHoverChange: z,
             onKeyDown: $,
             treeItemProps: et,
@@ -161,7 +161,7 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
             overflow: "hidden"
           },
           role: "group",
-          children: V.map(t => M(t, e.height))
+          children: V.map(t => k(t, e.height))
         }, i)
       }), T && s ? (0, r.jsx)(y.Zu, {
         name: ee,

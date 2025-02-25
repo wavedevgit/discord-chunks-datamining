@@ -1,12 +1,12 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 }), n(47120);
 var i = n(200651);
 n(192379);
 var r = n(120356),
-  s = n.n(r),
-  o = n(392711),
+  o = n.n(r),
+  s = n(392711),
   l = n(442837),
   a = n(261435),
   c = n(237997),
@@ -15,37 +15,37 @@ var r = n(120356),
   h = n(981631),
   p = n(514386);
 
-function g(e) {
+function f(e) {
   let {
     locked: t,
     keybind: n
   } = e, r = (0, l.Wu)([a.Z], () => a.Z.getNotifications()), u = (0, l.e7)([c.Z], () => c.Z.getNotificationPositionMode());
   if (u === h._vf.DISABLED) return null;
-  let g = r.filter(e => !t || e.status !== h._1z.TIMED_OUT),
-    m = (0, o.groupBy)(g, e => e.type);
+  let f = r.filter(e => !t || e.status !== h._1z.TIMED_OUT),
+    m = (0, s.groupBy)(f, e => e.type);
   return (0, i.jsx)(d.Z, {
     observeInterval: 200,
     children: (0, i.jsx)("div", {
-      className: s()(p.container, p[u]),
+      className: o()(p.container, p[u]),
       children: Object.entries(m).map(e => {
-        let [r, s] = e;
-        return 0 === s.length ? null : (0, i.jsx)(f, {
+        let [r, o] = e;
+        return 0 === o.length ? null : (0, i.jsx)(g, {
           locked: t,
           keybind: n,
           position: u,
-          notification: s[0]
+          notification: o[0]
         }, r)
       })
     })
   })
 }
 
-function f(e) {
+function g(e) {
   let {
     notification: t,
     position: n,
     keybind: r,
-    locked: s
+    locked: o
   } = e;
   return (0, i.jsx)("div", {
     className: p.notificationGroup,
@@ -54,7 +54,7 @@ function f(e) {
       position: n,
       notification: t,
       keybind: r,
-      locked: s
+      locked: o
     }, t.id)
   })
 }

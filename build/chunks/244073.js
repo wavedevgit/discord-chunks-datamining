@@ -1,11 +1,11 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
   Z: () => D
 }), n(47120);
 var i = n(200651),
   r = n(192379),
-  s = n(120356),
-  o = n.n(s),
+  o = n(120356),
+  s = n.n(o),
   l = n(568611),
   a = n(442837),
   c = n(481060),
@@ -13,24 +13,24 @@ var i = n(200651),
   u = n(925549),
   h = n(287734),
   p = n(933557),
-  g = n(600164),
-  f = n(870569),
+  f = n(600164),
+  g = n(870569),
   m = n(345243),
   y = n(873596),
-  O = n(917405),
+  _ = n(917405),
   v = n(430824),
-  S = n(131951),
+  O = n(131951),
   b = n(699516),
-  x = n(594174),
-  Z = n(979651),
-  j = n(362446),
+  S = n(594174),
+  x = n(979651),
+  Z = n(362446),
   E = n(518084),
   N = n(981631),
-  C = n(388032),
-  I = n(204346),
-  P = n(347363);
+  j = n(388032),
+  C = n(204346),
+  I = n(347363);
 
-function w(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,20 +39,20 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      w(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
 }
 
-function T(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,21 +64,21 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class k extends r.PureComponent {
+class T extends r.PureComponent {
   handleDisconnect() {
     h.default.selectVoiceChannel(null)
   }
   renderChannelLink(e) {
     let {
       guild: t
-    } = this.props, n = (0, p.F6)(e, x.default, b.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : N.ME;
+    } = this.props, n = (0, p.F6)(e, S.default, b.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, o = null != t ? t.id : N.ME;
     return (0, i.jsx)(l.rU, {
-      to: N.Z5c.CHANNEL(s),
+      to: N.Z5c.CHANNEL(o),
       onClick: t => {
-        t.stopPropagation(), u.Z.channelListScrollTo(s, e.id)
+        t.stopPropagation(), u.Z.channelListScrollTo(o, e.id)
       },
       children: (0, i.jsx)(m.Z, {
-        className: P.channel,
+        className: I.channel,
         children: r
       })
     })
@@ -89,7 +89,7 @@ class k extends r.PureComponent {
       contentClassName: t,
       pinned: n,
       lobbyId: r,
-      channel: s,
+      channel: o,
       quality: l,
       lastPing: a,
       hasVideo: d,
@@ -97,43 +97,43 @@ class k extends r.PureComponent {
       deaf: h,
       mute: p
     } = this.props;
-    return null == s ? null : (0, i.jsx)(E.ZP.Bar, {
-      className: o()(e, I.controls, {
-        [I.unpinned]: !n
+    return null == o ? null : (0, i.jsx)(E.ZP.Bar, {
+      className: s()(e, C.controls, {
+        [C.unpinned]: !n
       }),
       children: (0, i.jsxs)(E.ZP.Content, {
-        className: o()(t, I.content),
+        className: s()(t, C.content),
         dynamicSize: !0,
         children: [(0, i.jsx)("div", {
-          className: P.inner,
+          className: I.inner,
           children: (0, i.jsx)(c.yRy, {
-            renderPopout: () => this.renderPopout(s.id),
+            renderPopout: () => this.renderPopout(o.id),
             position: "top",
-            children: e => (0, i.jsx)(c.P3F, T(_({}, e), {
-              children: (0, i.jsx)(O.Z, {
-                channelId: s.id,
+            children: e => (0, i.jsx)(c.P3F, k(w({}, e), {
+              children: (0, i.jsx)(_.Z, {
+                channelId: o.id,
                 quality: l,
                 lastPing: a,
                 hasVideo: d,
                 state: u,
-                children: this.renderChannelLink(s)
+                children: this.renderChannelLink(o)
               })
             }))
           })
-        }), (0, i.jsxs)(g.Z, {
+        }), (0, i.jsxs)(f.Z, {
           grow: 0,
-          children: [(0, i.jsx)(f.Z, {
-            tooltipText: p ? C.NW.string(C.t.YqAjX1) : C.NW.string(C.t["w4m94+"]),
+          children: [(0, i.jsx)(g.Z, {
+            tooltipText: p ? j.NW.string(j.t.YqAjX1) : j.NW.string(j.t["w4m94+"]),
             icon: p ? c.nRN : c.S6n,
-            iconForeground: p ? I.strikethrough : null,
+            iconForeground: p ? C.strikethrough : null,
             onClick: this.handleToggleSelfMute
-          }), (0, i.jsx)(f.Z, {
-            tooltipText: h ? C.NW.string(C.t["2US87+"]) : C.NW.string(C.t.wjcRFR),
+          }), (0, i.jsx)(g.Z, {
+            tooltipText: h ? j.NW.string(j.t["2US87+"]) : j.NW.string(j.t.wjcRFR),
             icon: h ? c.wE8 : c.VWR,
             onClick: this.handleToggleSelfDeaf,
-            iconForeground: h ? I.strikethrough : null
-          }), null == r && (0, i.jsx)(f.Z, {
-            tooltipText: C.NW.string(C.t["6vrfgo"]),
+            iconForeground: h ? C.strikethrough : null
+          }), null == r && (0, i.jsx)(g.Z, {
+            tooltipText: j.NW.string(j.t["6vrfgo"]),
             onClick: this.handleDisconnect,
             icon: c.gkL
           })]
@@ -142,7 +142,7 @@ class k extends r.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), w(this, "handleToggleSelfMute", () => {
+    super(...e), P(this, "handleToggleSelfMute", () => {
       let {
         context: e
       } = this.props;
@@ -150,7 +150,7 @@ class k extends r.PureComponent {
         context: e,
         location: "Overlay Controls"
       })
-    }), w(this, "handleToggleSelfDeaf", () => {
+    }), P(this, "handleToggleSelfDeaf", () => {
       let {
         context: e
       } = this.props;
@@ -158,7 +158,7 @@ class k extends r.PureComponent {
         context: e,
         location: "Overlay Controls"
       })
-    }), w(this, "renderPopout", e => {
+    }), P(this, "renderPopout", e => {
       let {
         lobbyId: t
       } = this.props;
@@ -176,30 +176,30 @@ function D(e) {
     context: t,
     lobbyId: n,
     channel: r
-  } = e, s = function(e, t) {
+  } = e, o = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
       var n, i, r = {},
-        s = Object.keys(e);
-      for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        o = Object.keys(e);
+      for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
       return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var s = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
   }(e, ["context", "lobbyId", "channel"]);
-  let o = (0, a.e7)([v.Z], () => v.Z.getGuild(null == r ? void 0 : r.getGuildId())),
-    l = (0, a.e7)([Z.Z], () => null != r && Z.Z.hasVideo(r.id)),
-    [c, d] = (0, a.Wu)([S.Z], () => [S.Z.isSelfMute(t) || S.Z.isSelfMutedTemporarily(t), S.Z.isSelfDeaf(t)]),
-    [u, h, p] = (0, a.Wu)([j.Z], () => [j.Z.getConnectionState(n), j.Z.getLastPing(n), j.Z.getQuality(n)]);
-  return (0, i.jsx)(k, T(_({}, s), {
+  let s = (0, a.e7)([v.Z], () => v.Z.getGuild(null == r ? void 0 : r.getGuildId())),
+    l = (0, a.e7)([x.Z], () => null != r && x.Z.hasVideo(r.id)),
+    [c, d] = (0, a.Wu)([O.Z], () => [O.Z.isSelfMute(t) || O.Z.isSelfMutedTemporarily(t), O.Z.isSelfDeaf(t)]),
+    [u, h, p] = (0, a.Wu)([Z.Z], () => [Z.Z.getConnectionState(n), Z.Z.getLastPing(n), Z.Z.getQuality(n)]);
+  return (0, i.jsx)(T, k(w({}, o), {
     context: t,
     lobbyId: n,
     channel: r,
-    guild: o,
+    guild: s,
     hasVideo: l,
     mute: c,
     deaf: d,

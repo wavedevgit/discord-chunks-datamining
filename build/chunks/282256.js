@@ -1,4 +1,4 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   i = n(120356),
-  a = n.n(i),
-  o = n(434650),
+  o = n.n(i),
+  a = n(434650),
   s = n(393903),
   c = n(448986),
   u = n(353093),
@@ -82,9 +82,9 @@ let p = l.memo(function(e) {
     } = N.current;
     null != t.current && e()
   }, [j]);
-  let P = (0, o.O)(v);
+  let P = (0, a.O)(v);
   return (0, r.jsxs)("div", {
-    className: a()(f.container, p && f.isOverlayContainer),
+    className: o()(f.container, p && f.isOverlayContainer),
     ref: O,
     children: [(0, r.jsx)("div", {
       className: f.usernameContainer,
@@ -93,7 +93,7 @@ let p = l.memo(function(e) {
       className: f.chipletParent,
       ref: P,
       children: (0, r.jsx)("span", {
-        className: a()(f.chipletContainer, !j && p && f.noPadding),
+        className: o()(f.chipletContainer, !j && p && f.noPadding),
         ref: y,
         style: b,
         children: (0, r.jsx)(d.ZP, (t = function(e) {
@@ -115,7 +115,7 @@ let p = l.memo(function(e) {
           return e
         }({}, g), n = n = {
           contextGuildId: m,
-          className: a()(g.className, p && f.isOverlayTag)
+          className: o()(g.className, p && f.isOverlayTag)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

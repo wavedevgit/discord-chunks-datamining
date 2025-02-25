@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   EM: () => m,
   WW: () => b,
@@ -64,7 +64,7 @@ let v = i.memo(function(e) {
     disableManageChannels: v
   } = e, {
     isFavoritesPerk: y
-  } = (0, o.z)("ChannelListSection"), _ = i.useCallback(() => {
+  } = (0, o.z)("ChannelListSection"), O = i.useCallback(() => {
     let e = g.getCategoryFromSection(g.recentsSectionNumber);
     if (null == e) return;
     let t = null,
@@ -92,13 +92,13 @@ let v = i.memo(function(e) {
     case g.recentsSectionNumber:
       return (0, r.jsx)(u.P, {
         name: h.NW.string(h.t.gKcrqK),
-        onDismiss: _
+        onDismiss: O
       });
     case g.voiceChannelsSectionNumber: {
-      var O;
+      var j;
       let e = g.getCategoryFromSection(g.voiceChannelsSectionNumber);
       if (null == e || e.isEmpty()) return null;
-      let n = null === (O = g.getChannelFromSectionRow(t, 0)) || void 0 === O ? void 0 : O.channel;
+      let n = null === (j = g.getChannelFromSectionRow(t, 0)) || void 0 === j ? void 0 : j.channel;
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)("div", {
           className: f.sectionDivider

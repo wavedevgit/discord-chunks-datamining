@@ -1,5 +1,4 @@
-/** Chunk was on 63141 **/
-"use strict";
+/** Chunk was on 48799 **/
 n.r(e.exports = {
   content: "content__777cc",
   staticSize: "staticSize__777cc",

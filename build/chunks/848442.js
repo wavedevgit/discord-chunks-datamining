@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => E
 });
@@ -20,16 +20,16 @@ var i = n(120356),
   b = n(605236),
   v = n(703656),
   y = n(984933),
-  _ = n(430824),
-  O = n(626135),
-  j = n(434479),
+  O = n(430824),
+  j = n(626135),
+  _ = n(434479),
   x = n(981631),
   C = n(176505),
   P = n(629481),
   S = n(388032),
   N = n(40125);
 
-function I(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function I(e) {
   return e
 }
 
-function Z(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,8 +66,8 @@ function w(e) {
     guildId: t,
     selected: n,
     handleClick: i
-  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([_.Z], () => _.Z.getGuild(t)), C = (null == g ? void 0 : g.hasFeature(x.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, w = "false" === s.K.get(P.tM, "false"), E = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
-  return (0, r.jsx)(j.m, {
+  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([O.Z], () => O.Z.getGuild(t)), C = (null == g ? void 0 : g.hasFeature(x.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, w = "false" === s.K.get(P.tM, "false"), E = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
+  return (0, r.jsx)(_.m, {
     id: "shop-".concat(t),
     className: l()(N.previewChannelRow, {
       [N.selected]: n,
@@ -95,7 +95,7 @@ function w(e) {
       }), n && (0, r.jsx)(c.P3F, {
         className: N.closeButton,
         onClick: e => {
-          if (e.stopPropagation(), (0, b.EW)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), O.default.track(x.rMx.GUILD_SHOP_PREVIEW_CLICK, Z(I({}, (0, p.hH)(t)), {
+          if (e.stopPropagation(), (0, b.EW)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), j.default.track(x.rMx.GUILD_SHOP_PREVIEW_CLICK, I(Z({}, (0, p.hH)(t)), {
               action_taken: P.mz.DISMISS_CHANNEL_ROW
             })), !u || !C) {
             var n;
@@ -123,7 +123,7 @@ function E(e) {
     guildId: t.id,
     selected: i,
     handleClick: o
-  }) : (0, r.jsx)(j.m, {
+  }) : (0, r.jsx)(_.m, {
     id: "shop-".concat(t.id),
     renderIcon: e => (0, r.jsx)(m.Z, {
       width: 20,
@@ -138,7 +138,7 @@ function E(e) {
         let {
           default: e
         } = await n.e("66050").then(n.bind(n, 376573));
-        return n => (0, r.jsx)(e, Z(I({}, n), {
+        return n => (0, r.jsx)(e, I(Z({}, n), {
           guild: t
         }))
       })

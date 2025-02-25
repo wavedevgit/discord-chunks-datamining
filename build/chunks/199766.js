@@ -13,6 +13,6 @@ function l(e, t, n, i) {
   e.save();
   let l = r.Z.getAvatarImage(i);
   if (null == l) return;
-  let a = 20 * window.devicePixelRatio;
-  e.beginPath(), e.arc(t, n, a / 2, 0, 2 * Math.PI), e.clip(), e.drawImage(l, t - a / 2, n - a / 2, a, a), e.restore()
+  let o = 20 * window.devicePixelRatio;
+  e.beginPath(), e.arc(t, n, o / 2, 0, 2 * Math.PI), e.clip(), e.drawImage(l, t - o / 2, n - o / 2, o, o), e.restore()
 }

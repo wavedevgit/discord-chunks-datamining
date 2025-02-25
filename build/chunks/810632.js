@@ -1,94 +1,95 @@
-/** Chunk was on 37874 **/
+/** Chunk was on 61195 **/
 n.d(t, {
-  B: () => N
+  B: () => j
 }), n(230036), n(47120);
 var i = n(200651),
-  r = n(192379),
-  o = n(442837),
-  l = n(481060),
-  a = n(872810),
-  s = n(594190),
-  c = n(74299),
+  o = n(192379),
+  r = n(442837),
+  a = n(481060),
+  l = n(872810),
+  c = n(594190),
+  s = n(74299),
   u = n(451467),
   d = n(537413),
-  p = n(830461),
-  f = n(989941),
-  h = n(567126),
-  g = n(143135),
-  _ = n(751571),
-  m = n(695346),
-  v = n(361291),
-  O = n(592125),
-  b = n(430824),
-  y = n(131951),
-  E = n(944486),
-  x = n(594174),
-  S = n(449224),
-  I = n(358085),
-  C = n(981631),
-  j = n(37113),
-  w = n(761274),
-  Z = n(388032);
+  _ = n(830461),
+  h = n(989941),
+  f = n(567126),
+  p = n(143135),
+  g = n(751571),
+  v = n(695346),
+  b = n(361291),
+  y = n(592125),
+  m = n(430824),
+  I = n(131951),
+  O = n(944486),
+  N = n(594174),
+  C = n(449224),
+  S = n(358085),
+  x = n(145597),
+  w = n(981631),
+  T = n(37113),
+  P = n(761274),
+  E = n(388032);
 
-function N(e) {
-  let t = (0, o.e7)([E.Z], () => E.Z.getVoiceChannelId()),
-    N = (0, o.e7)([O.Z], () => O.Z.getChannel(t), [t]),
-    P = (0, o.e7)([x.default], () => x.default.getCurrentUser()),
-    T = null == N ? void 0 : N.getGuildId(),
-    k = (0, o.e7)([y.Z], () => (0, c.Z)(y.Z));
-  async function A() {
+function j(e) {
+  let t = (0, r.e7)([O.Z], () => O.Z.getVoiceChannelId()),
+    j = (0, r.e7)([y.Z], () => y.Z.getChannel(t), [t]),
+    Z = (0, r.e7)([N.default], () => N.default.getCurrentUser()),
+    A = null == j ? void 0 : j.getGuildId(),
+    W = (0, r.e7)([I.Z], () => (0, s.Z)(I.Z));
+  async function k() {
     var e;
-    return null !== (e = (await (0, p._)()).sort((e, t) => (0, h.ov)(t) - (0, h.ov)(e))[0]) && void 0 !== e ? e : null
+    return null !== (e = (await (0, _._)()).sort((e, t) => (0, f.ov)(t) - (0, f.ov)(e))[0]) && void 0 !== e ? e : null
   }
-  let D = r.useCallback(async () => {
+  let R = o.useCallback(async () => {
     var e, n, i;
-    if (null == N || null == t || null == P) return !1;
-    let r = await A(),
-      o = (0, I.isWindows)() ? (0, f.Z)(s.ZP, S.Z) : null;
-    if (null == o && null == r) return !1;
-    let l = null != T ? null === (e = b.Z.getGuild(T)) || void 0 === e ? void 0 : e.premiumTier : null,
+    if (null == j || null == t || null == Z) return !1;
+    let o = await k(),
+      r = (0, S.isWindows)() ? (0, h.Z)(c.ZP, C.Z) : null;
+    if (null == r && null == o) return !1;
+    let a = null != A ? null === (e = m.Z.getGuild(A)) || void 0 === e ? void 0 : e.premiumTier : null,
       {
-        preset: c,
-        resolution: p,
-        fps: h,
-        soundshareEnabled: O
-      } = v.Z.getState(),
-      [E, x] = null !== (n = (0, d.Z)(c, P, l)) && void 0 !== n ? n : [j.LY.RESOLUTION_720, j.ws.FPS_30],
-      C = c,
-      Z = p,
-      k = h;
-    C !== j.tI.PRESET_CUSTOM && (Z = E, k = x), (0, u.Z)(C, Z, k, P, l) || (Z = E, k = x), (0, u.Z)(C, Z, k, P, l, N) || (C = j.tI.PRESET_VIDEO, Z = j.LY.RESOLUTION_720, k = j.ws.FPS_30), (0, a.Rc)({
-      preset: C,
-      resolution: Z,
-      frameRate: k,
-      soundshareEnabled: O
+        preset: s,
+        resolution: _,
+        fps: f,
+        soundshareEnabled: y
+      } = b.Z.getState(),
+      [O, N] = null !== (n = (0, d.Z)(s, Z, a)) && void 0 !== n ? n : [T.LY.RESOLUTION_720, T.ws.FPS_30],
+      x = s,
+      w = _,
+      E = f;
+    x !== T.tI.PRESET_CUSTOM && (w = O, E = N), (0, u.Z)(x, w, E, Z, a) || (w = O, E = N), (0, u.Z)(x, w, E, Z, a, j) || (x = T.tI.PRESET_VIDEO, w = T.LY.RESOLUTION_720, E = T.ws.FPS_30), (0, l.Rc)({
+      preset: x,
+      resolution: w,
+      frameRate: E,
+      soundshareEnabled: y
     });
-    let D = (0, g.Z)(o, r, s.ZP.getRunningGames()),
-      L = !(0, I.isWindows)() || null == D || (null == r ? void 0 : r.id.startsWith("camera:")) || null == D ? null : D.pid,
-      R = null,
-      W = null;
-    return null == L && null != r && (R = r.id, W = r.name), !!(y.Z.getUseSystemScreensharePicker() || await _.Z.hasPermission(w.Eu.SCREEN_RECORDING, {
+    let W = (0, p.Z)(r, o, c.ZP.getRunningGames()),
+      R = !(0, S.isWindows)() || null == W || (null == o ? void 0 : o.id.startsWith("camera:")) || null == W ? null : W.pid,
+      D = null,
+      B = null;
+    return null == R && null != o && (D = o.id, B = o.name), !!(I.Z.getUseSystemScreensharePicker() || await g.Z.hasPermission(P.Eu.SCREEN_RECORDING, {
       showAuthorizationError: !1
-    })) && ((0, a.WH)(T, t, {
-      pid: L,
-      sourceId: R,
-      sourceName: W,
+    })) && ((0, l.WH)(A, t, {
+      pid: R,
+      sourceId: D,
+      sourceName: B,
       audioSourceId: null,
-      sound: O,
-      previewDisabled: null !== (i = m.I0.getSetting()) && void 0 !== i && i
+      sound: y,
+      previewDisabled: null !== (i = v.I0.getSetting()) && void 0 !== i && i
     }), !0)
-  }, [N, T, P, t]);
-  return r.useCallback(async () => {
-    if (!(!k || null == t || await D())) {
-      if (null == P) {
-        (0, l.showToast)((0, l.createToast)(Z.NW.string(Z.t.OKnWyc), l.ToastType.FAILURE));
+  }, [j, A, Z, t]);
+  return o.useCallback(async () => {
+    if (!(!W || null == t || await R())) {
+      if (null == Z) {
+        (0, a.showToast)((0, a.createToast)(E.NW.string(E.t.OKnWyc), a.ToastType.FAILURE));
         return
-      }(0, l.ZDy)(async () => {
+      }(0, a.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79477"), n.e("63432")]).then(n.bind(n, 60594));
+        } = await Promise.all([n.e("79477"), n.e("53175")]).then(n.bind(n, 60594));
         return t => {
-          var n, r;
+          var n, o;
           return (0, i.jsx)(e, (n = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -106,24 +107,25 @@ function N(e) {
               })
             }
             return e
-          }({}, t), r = r = {
+          }({}, t), o = o = {
+            sourcePID: (0, x.QF)(),
             selectSource: !1,
-            guildId: T,
-            analyticsLocation: C.Sbl.UNLOCKED_OVERLAY
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+            guildId: A,
+            analyticsLocation: w.Sbl.UNLOCKED_OVERLAY
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var i = Object.getOwnPropertySymbols(e);
               n.push.apply(n, i)
             }
             return n
-          })(Object(r)).forEach(function(e) {
-            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
+          })(Object(o)).forEach(function(e) {
+            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
           }), n))
         }
       }, {
-        contextKey: null != e ? (0, l.VnL)(e) : void 0
+        contextKey: null != e ? (0, a.VnL)(e) : void 0
       })
     }
-  }, [k, D, T, t, e, P])
+  }, [W, R, A, t, e, Z])
 }

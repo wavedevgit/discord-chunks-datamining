@@ -1,40 +1,40 @@
-/** Chunk was on 48710 **/
+/** Chunk was on 61195 **/
 n.d(t, {
-  Z: () => h
+  Z: () => _
 });
-var r = n(200651);
+var i = n(200651);
 n(192379);
-var l = n(120356),
-  i = n.n(l),
-  o = n(481060),
-  a = n(570928),
-  s = n(540059),
-  c = n(977059),
+var o = n(120356),
+  r = n.n(o),
+  a = n(481060),
+  l = n(570928),
+  c = n(540059),
+  s = n(977059),
   u = n(388032),
   d = n(411677);
-let h = function(e) {
+let _ = function(e) {
   let {
     className: t,
     hasVideo: n,
-    text: l,
-    hasConnectedChannel: h,
-    textVariant: f = "text-md/medium"
-  } = e, p = (0, s.Q3)("RTCConnectionStatusText"), {
-    enabled: g
-  } = (0, c.S)({
+    text: o,
+    hasConnectedChannel: _,
+    textVariant: h = "text-md/medium"
+  } = e, f = (0, c.Q3)("RTCConnectionStatusText"), {
+    enabled: p
+  } = (0, s.S)({
     location: "RTCConnectionStatusText"
-  }), N = n ? u.NW.string(u.t.IlHdW1) : u.NW.string(u.t.WsOisr);
-  return (0, r.jsx)(a.Z, {
-    className: i()(t, g ? d.hoverableStatus : d.status),
-    hoverText: g && h ? p ? (0, r.jsx)(o.Text, {
-      variant: f,
+  }), g = n ? u.NW.string(u.t.IlHdW1) : u.NW.string(u.t.WsOisr);
+  return (0, i.jsx)(l.Z, {
+    className: r()(t, p ? d.hoverableStatus : d.status),
+    hoverText: p && _ ? f ? (0, i.jsx)(a.Text, {
+      variant: h,
       color: "currentColor",
-      children: N
-    }) : N : null,
-    children: p ? (0, r.jsx)(o.Text, {
-      variant: f,
+      children: g
+    }) : g : null,
+    children: f ? (0, i.jsx)(a.Text, {
+      variant: h,
       color: "currentColor",
-      children: l
-    }) : l
+      children: o
+    }) : o
   })
 }

@@ -34,12 +34,12 @@ var r = l(200651),
   R = l(59468),
   I = l(989941),
   P = l(39540),
-  k = l(958707),
-  E = l(152165),
+  _ = l(958707),
+  k = l(152165),
   G = l(133179),
-  _ = l(70722),
-  W = l(761274),
-  A = l(46140),
+  E = l(70722),
+  A = l(761274),
+  W = l(46140),
   B = l(65154),
   L = l(388032),
   T = l(242891);
@@ -77,9 +77,9 @@ function H(e) {
     enableGoLiveCaptureCard: s
   } = b.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), a = w.Z.supports(B.AN.GO_LIVE_HARDWARE), [c, h] = i.useState(null), [Z, N] = i.useState(null), [S, M] = i.useState(null), I = null != S && S.length > 0, [P, E] = i.useState(o.vA.WINDOW), [_, F] = i.useState(!1), H = i.useRef(null), U = i.useRef(new f.Xp), V = (0, d.e7)([j.ZP], () => j.ZP.getRunningGames()), J = function(e, t, l) {
+  }), a = w.Z.supports(B.AN.GO_LIVE_HARDWARE), [c, h] = i.useState(null), [Z, N] = i.useState(null), [S, M] = i.useState(null), I = null != S && S.length > 0, [P, k] = i.useState(o.vA.WINDOW), [E, F] = i.useState(!1), H = i.useRef(null), U = i.useRef(new f.Xp), V = (0, d.e7)([j.ZP], () => j.ZP.getRunningGames()), J = function(e, t, l) {
     let r = (0, C.Zy)({
-      location: A.dr.STREAM_SOURCE_SELECT
+      location: W.dr.STREAM_SOURCE_SELECT
     });
     return i.useMemo(() => {
       if (null == l || !r) return null;
@@ -127,7 +127,7 @@ function H(e) {
     }, []),
     [Q, q] = i.useState(void 0);
   i.useEffect(() => {
-    g.Z.hasPermission(W.Eu.SCREEN_RECORDING, {
+    g.Z.hasPermission(A.Eu.SCREEN_RECORDING, {
       showAuthorizationError: !1
     }).then(q)
   }, []);
@@ -170,8 +170,8 @@ function H(e) {
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: T.segmentContainer,
-      children: [(0, r.jsx)(k.Z, {
-        separator: _
+      children: [(0, r.jsx)(_.Z, {
+        separator: E
       }), (0, r.jsx)(u.sY7, {
         options: function() {
           let e = [{
@@ -191,7 +191,7 @@ function H(e) {
           let {
             value: t
           } = e;
-          return E(t)
+          return k(t)
         },
         className: T.segmentControl,
         optionClassName: T.segmentControlOption
@@ -233,7 +233,7 @@ function U(e) {
     className: n()(T.nativeSourceSingleTypeButton, T.nativePickerRadioItem),
     children: (0, r.jsxs)("div", {
       className: T.nativeSourceSingleTypeButtonInner,
-      children: [(0, r.jsx)(E.Z, {
+      children: [(0, r.jsx)(k.Z, {
         className: T.nativeSourceSingleTypeImage
       }), (0, r.jsx)(u.Text, {
         variant: "text-md/medium",
@@ -320,7 +320,7 @@ function J(e) {
         url: ""
       })
     }, [t, a]),
-    p = (0, N.isMac)() && c().satisfies(null === h.Z || void 0 === h.Z ? void 0 : h.Z.os.release, _.jR),
+    p = (0, N.isMac)() && c().satisfies(null === h.Z || void 0 === h.Z ? void 0 : h.Z.os.release, E.jR),
     j = (0, N.isMac)(),
     [g, m] = i.useState(!1),
     v = i.useCallback(() => {
@@ -400,13 +400,13 @@ function X(e) {
     lastPickerError: a
   } = (0, P.Z)(t, l);
   return i.useEffect(() => {
-    (0, N.isLinux)() || (0, N.isMac)() && c().satisfies(null === h.Z || void 0 === h.Z ? void 0 : h.Z.os.release, _.jR) ? (0, S.T)(s) : (0, S.t)()
+    (0, N.isLinux)() || (0, N.isMac)() && c().satisfies(null === h.Z || void 0 === h.Z ? void 0 : h.Z.os.release, E.jR) ? (0, S.T)(s) : (0, S.t)()
   }, [s]), n === M.Uc.Error ? (0, r.jsx)(u.Text, {
     className: T.errorMessage,
     variant: "text-md/normal",
     color: "text-danger",
     children: null != a && a.length > 0 ? a : L.NW.string(L.t.CKsXk5)
-  }) : (0, r.jsx)(E.Z, {
+  }) : (0, r.jsx)(k.Z, {
     animated: !0,
     className: T.nativePickerGuide
   })

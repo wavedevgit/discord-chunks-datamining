@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(392711),
-  a = n(933546),
-  o = n(314897),
+  o = n(933546),
+  a = n(314897),
   s = n(70956),
   c = n(823379),
   u = n(27457),
@@ -20,7 +20,7 @@ let m = 112,
 
 function v(e) {
   var t;
-  let n = o.default.getId();
+  let n = a.default.getId();
   return e.type === d.fO.USER && e.user.id === n && (null === (t = e.voiceState) || void 0 === t ? void 0 : t.selfVideo)
 }
 
@@ -34,7 +34,7 @@ function b(e, t) {
     },
     {
       tileWidth: r,
-      tileMinWidth: o,
+      tileMinWidth: a,
       tileMargin: s,
       limit: u,
       cropSelfVideo: f,
@@ -64,21 +64,21 @@ function b(e, t) {
               return "\x01".concat(e.sortKey);
             case d.fO.HIDDEN_STREAM:
             case d.fO.STREAM:
-              return "\x02".concat((0, a.Z)(e.userNick, e.user));
+              return "\x02".concat((0, o.Z)(e.userNick, e.user));
             case d.fO.USER:
               var n;
               let r = "\x06";
               return e.speaking ? r = "\x03" : t - e.lastSpoke < h ? r = "\x04" : (null === (n = e.voiceState) || void 0 === n ? void 0 : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
                 let t = String(864e13).length;
                 return String(864e13 - e).padStart(t, "0")
-              }(e.lastSpoke)).concat((0, a.Z)(e.userNick, e.user))
+              }(e.lastSpoke)).concat((0, o.Z)(e.userNick, e.user))
           }
         })(e, n)),
         [m, p] = (0, l.partition)(i, d.Io),
         b = m.findIndex(v),
         g = null; - 1 !== b && (g = m[b], m.splice(b, 1));
       let E = null == g || f ? e : e - r - s,
-        O = Math.max(0, Math.min(Math.floor((E - s) / (o + s)), u, t.length)),
+        O = Math.max(0, Math.min(Math.floor((E - s) / (a + s)), u, t.length)),
         S = Math.min((E - s) / O - s, r),
         j = Math.max(0, O - p.length),
         x = p.slice(0, O),
@@ -105,7 +105,7 @@ function b(e, t) {
         visibleParticipants: N,
         participantTileWidth: S
       }
-    }, [e, t, b, m, f, u, s, o, r]);
+    }, [e, t, b, m, f, u, s, a, r]);
   return {
     visibleParticipants: E,
     participantTileWidth: O
@@ -118,8 +118,8 @@ function g(e) {
     participantTileWidth: n,
     selectedParticipantId: i,
     onDoubleClick: l,
-    onContextMenu: a,
-    onClick: o,
+    onContextMenu: o,
+    onClick: a,
     channel: s,
     inCall: c,
     popoutWindow: d,
@@ -141,9 +141,9 @@ function g(e) {
           channel: s,
           className: f.tile,
           fit: u.BP.COVER,
-          onClick: o,
+          onClick: a,
           onDoubleClick: l,
-          onContextMenu: a,
+          onContextMenu: o,
           width: t ? p : n,
           inCall: c,
           paused: m,

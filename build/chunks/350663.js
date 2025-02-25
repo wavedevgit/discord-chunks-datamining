@@ -1,24 +1,24 @@
-/** Chunk was on 37874 **/
+/** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => E,
-  z: () => O
+  Z: () => x,
+  z: () => y
 }), n(47120);
 var i = n(200651),
   r = n(192379),
   o = n(120356),
   l = n.n(o),
-  a = n(642128),
-  s = n(481060),
-  c = n(110924),
-  u = n(569545),
+  s = n(642128),
+  a = n(481060),
+  u = n(110924),
+  c = n(569545),
   d = n(237997),
   p = n(444295),
-  f = n(752802),
-  h = n(340101),
-  g = n(981631),
-  _ = n(978399);
+  h = n(752802),
+  f = n(340101),
+  m = n(981631),
+  g = n(978399);
 
-function m(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -49,8 +49,8 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = 8,
-  b = e => {
+let y = 8,
+  E = e => {
     let {
       participant: t,
       width: n,
@@ -59,8 +59,8 @@ let O = 8,
       pinned: l
     } = e;
     return (0, i.jsx)("div", {
-      className: _.tileContainer,
-      children: (0, i.jsx)(f.Z, {
+      className: g.tileContainer,
+      children: (0, i.jsx)(h.Z, {
         participant: t,
         width: n,
         locked: r,
@@ -69,35 +69,35 @@ let O = 8,
       }, t.user.id)
     })
   },
-  y = {
+  b = {
     mass: 1,
     tension: 250,
     friction: 18,
     clamp: !0
   },
-  E = r.memo(function(e) {
+  x = r.memo(function(e) {
     let {
       widgetId: t,
       tileWidth: n,
       layout: o,
-      locked: f,
-      activeStreams: E,
-      streamParticipants: x,
+      locked: h,
+      activeStreams: x,
+      streamParticipants: j,
       participantsVersion: S,
       pinned: I
-    } = e, C = 9 / 16 * n, j = x.map(e => ({
+    } = e, C = 9 / 16 * n, Z = j.map(e => ({
       participant: e,
       key: e.user.id,
       width: n,
-      locked: f,
+      locked: h,
       widgetId: t,
       height: C,
       pinned: I
-    })), w = (0, c.Z)(n), Z = o === h.C5.VERTICAL, N = 0, P = 0, T = (0, s.Yzy)(Z ? j.map((e, t) => v(m({}, e), {
-      y: (N += e.height + (t > 0 ? O : 0)) - e.height,
+    })), N = (0, u.Z)(n), w = o === f.C5.VERTICAL, _ = 0, P = 0, T = (0, a.Yzy)(w ? Z.map((e, t) => v(O({}, e), {
+      y: (_ += e.height + (t > 0 ? y : 0)) - e.height,
       x: 0
-    })) : j.map((e, t) => v(m({}, e), {
-      x: (P += e.width + (t > 0 ? O : 0)) - e.width,
+    })) : Z.map((e, t) => v(O({}, e), {
+      x: (P += e.width + (t > 0 ? y : 0)) - e.width,
       y: 0
     })), {
       key: e => e.key,
@@ -138,35 +138,35 @@ let O = 8,
           height: r
         }
       },
-      config: y,
-      trail: 100 * (n === w)
-    }, n !== w ? "animate-never" : "respect-motion-settings"), k = (0, p.ee)(() => new Set(x.map(e => e.user.id)), [x, S]), A = (0, p.ee)(() => new Set(x.filter(e => E.has((0, u.V9)(e.stream))).map(e => e.user.id)), [x, E, S]);
+      config: b,
+      trail: 100 * (n === N)
+    }, n !== N ? "animate-never" : "respect-motion-settings"), A = (0, p.ee)(() => new Set(j.map(e => e.user.id)), [j, S]), D = (0, p.ee)(() => new Set(j.filter(e => x.has((0, c.V9)(e.stream))).map(e => e.user.id)), [j, x, S]);
     return r.useEffect(() => {
-      0 !== k.size && (0, p.zi)(g.Odu.GO_LIVE, {
+      0 !== A.size && (0, p.zi)(m.Odu.GO_LIVE, {
         locked: d.Z.isInstanceLocked(),
-        shownUserIds: Array.from(k),
-        liveUserIds: Array.from(A),
+        shownUserIds: Array.from(A),
+        liveUserIds: Array.from(D),
         contentInventoryIds: []
       })
-    }, [k, A]), (0, i.jsx)("div", {
+    }, [A, D]), (0, i.jsx)("div", {
       className: l()({
-        [_.gridContainer]: !0,
-        [_.vertical]: Z,
-        [_.horizontal]: !Z
+        [g.gridContainer]: !0,
+        [g.vertical]: w,
+        [g.horizontal]: !w
       }),
-      style: Z ? {
-        height: N
+      style: w ? {
+        height: _
       } : {
         width: P
       },
-      children: T((e, t, r, o) => (0, i.jsx)(a.animated.div, {
-        className: _.gridItem,
+      children: T((e, t, r, o) => (0, i.jsx)(s.animated.div, {
+        className: g.gridItem,
         style: Object.assign({}, e, {
           width: n,
           height: C,
-          zIndex: j.length - o
+          zIndex: Z.length - o
         }),
-        children: b(t)
+        children: E(t)
       }))
     })
   })

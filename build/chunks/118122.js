@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => C
 });
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(603592),
   v = n(981631),
   y = n(675999),
-  _ = n(388032),
-  O = n(626050);
-let j = {
+  O = n(388032),
+  j = n(626050);
+let _ = {
   origin: {
     x: -16,
     y: 0
@@ -65,8 +65,8 @@ function C(e) {
     disableTooltip: t,
     lastTargetNode: n
   } = e, a = (0, l.e7)([f.Z], () => f.Z.getGuilds()), C = i.useMemo(() => Object.values(a), [a]), P = (0, l.e7)([g.default], () => g.default.getCurrentUser()), S = i.useMemo(() => C.some(e => e.isOwner(P)), [C, P]), N = (0, o.s9z)(e => (0, o.DEQ)(e, y.PU)), {
-    analyticsLocations: I
-  } = (0, s.ZP)(), Z = (0, u.Q3)("CreateJoinGuildButton"), w = (0, r.jsx)(b.Z, {
+    analyticsLocations: Z
+  } = (0, s.ZP)(), I = (0, u.Q3)("CreateJoinGuildButton"), w = (0, r.jsx)(b.Z, {
     showPill: !1,
     id: "create-join-button",
     onClick: () => {
@@ -78,24 +78,24 @@ function C(e) {
           page: v.Sbl.CREATE_JOIN_GUILD_MODAL,
           section: v.jXE.GUILD_CAP_UPSELL_MODAL
         },
-        analyticsLocations: I
+        analyticsLocations: Z
       }) : c.Z.openCreateGuildModal({
         location: "Guild List"
       })
     },
     selected: N,
     onContextMenu: x,
-    tooltip: _.NW.string(_.t.l5WIbW),
-    icon: Z ? o.oFk : o.BRu
+    tooltip: O.NW.string(O.t.l5WIbW),
+    icon: I ? o.oFk : o.BRu
   });
   return t ? w : (0, r.jsx)("div", {
-    className: O.tutorialContainer,
+    className: j.tutorialContainer,
     children: (0, r.jsxs)(h.Z, {
       tutorialId: S ? "create-more-servers" : "create-first-server",
-      inlineSpecs: j,
+      inlineSpecs: _,
       position: "right",
       children: [w, null != n && (0, r.jsx)(m.ZP, {
-        name: _.NW.string(_.t["45xjMz"]),
+        name: O.NW.string(O.t["45xjMz"]),
         targetNode: n,
         below: !0,
         noCombine: !0

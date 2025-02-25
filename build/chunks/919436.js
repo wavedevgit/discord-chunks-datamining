@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => R
 }), n(411104), n(47120);
@@ -18,17 +18,17 @@ var r, i = n(200651),
   b = n(199902),
   v = n(19780),
   y = n(306680),
-  _ = n(944486),
-  O = n(594174),
-  j = n(451478),
+  O = n(944486),
+  j = n(594174),
+  _ = n(451478),
   x = n(276952),
   C = n(682662),
   P = n(662146),
   S = n(674552),
   N = n(981631),
-  I = n(704857);
+  Z = n(704857);
 
-function Z(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -44,7 +44,7 @@ function w(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      Z(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -67,7 +67,7 @@ let T = {
   tension: 600
 };
 
-function A(e) {
+function D(e) {
   switch (e) {
     case "height":
     case "opacity":
@@ -80,17 +80,17 @@ function A(e) {
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
 }
-class D extends(r = l.PureComponent) {
+class A extends(r = l.PureComponent) {
   componentWillEnter(e) {
     let {
       controller: t
     } = this.state;
     e(), t.update({
-      immediate: !j.Z.isFocused(),
+      immediate: !_.Z.isFocused(),
       height: 1,
       opacity: 1,
       scale: 1,
-      config: A
+      config: D
     }).start().then(() => this.setState({
       animating: !1
     }))
@@ -104,7 +104,7 @@ class D extends(r = l.PureComponent) {
       scale: 1,
       opacity: 1,
       height: 1,
-      config: A
+      config: D
     }).start().then(e)
   }
   componentWillLeave(e) {
@@ -114,11 +114,11 @@ class D extends(r = l.PureComponent) {
     this.setState({
       animating: !0
     }, () => t.update({
-      immediate: !j.Z.isFocused(),
+      immediate: !_.Z.isFocused(),
       height: 0,
       opacity: 0,
       scale: 0,
-      config: A
+      config: D
     }).start().then(e))
   }
   componentWillUnmount() {
@@ -143,7 +143,7 @@ class D extends(r = l.PureComponent) {
   getChannelIcon() {
     let {
       channel: e
-    } = this.props, t = e.type === N.d4z.DM ? O.default.getUser(e.getRecipientId()) : null;
+    } = this.props, t = e.type === N.d4z.DM ? j.default.getUser(e.getRecipientId()) : null;
     return null != t ? t.getAvatarURL(void 0, 48, !1) : (0, p.x)(e)
   }
   render() {
@@ -170,7 +170,7 @@ class D extends(r = l.PureComponent) {
           hovered: !b && g,
           selected: !b && n,
           unread: !b && p,
-          className: I.pill
+          className: Z.pill
         }), (0, i.jsx)(P.Z, {
           text: null != t ? t : "",
           selected: n,
@@ -217,19 +217,19 @@ class D extends(r = l.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), Z(this, "state", {
+    super(...e), I(this, "state", {
       hovered: !1,
       animating: !0,
       controller: new o.Controller({
         scale: 0,
         height: 0,
         opacity: 0,
-        config: A
+        config: D
       })
-    }), Z(this, "handleContextMenu", e => {
+    }), I(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, r = t.type === N.d4z.DM ? O.default.getUser(t.getRecipientId()) : null;
+      } = this.props, r = t.type === N.d4z.DM ? j.default.getUser(t.getRecipientId()) : null;
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
@@ -250,7 +250,7 @@ class D extends(r = l.PureComponent) {
     })
   }
 }
-Z(D, "defaultProps", {
+I(A, "defaultProps", {
   badge: 0,
   audio: !1,
   video: !1,
@@ -262,7 +262,7 @@ let R = l.forwardRef(function(e, t) {
     l = (0, s.e7)([v.Z], () => v.Z.getChannelId(), []),
     o = (0, s.e7)([d.Z], () => null != l ? d.Z.getMode(l) : N.WtW.VOICE, [l]),
     a = (0, s.e7)([b.Z], () => b.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    u = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
+    u = (0, s.e7)([O.Z], () => O.Z.getChannelId(), []),
     p = (0, s.e7)([y.ZP], () => y.ZP.getMentionCount(n), [n]),
     {
       isFacepileEnabled: m
@@ -271,22 +271,22 @@ let R = l.forwardRef(function(e, t) {
     }, {
       autoTrackExposure: !1
     }),
-    O = l === n,
-    j = !1,
+    j = l === n,
+    _ = !1,
     x = !1;
-  O && (j = o === N.WtW.VOICE, x = o === N.WtW.VIDEO);
+  j && (_ = o === N.WtW.VOICE, x = o === N.WtW.VIDEO);
   let C = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
     P = (0, f.Q3)("DirectMessage");
-  return (0, i.jsx)(D, E(w({}, e), {
+  return (0, i.jsx)(A, E(w({}, e), {
     ref: t,
     channelName: r,
     unread: p > 0,
     selected: u === n,
     badge: p,
-    audio: j,
+    audio: _,
     video: x,
     stream: a,
-    isCurrentUserInThisDMCall: O,
+    isCurrentUserInThisDMCall: j,
     isGDMFacepileEnabled: m,
     size: P ? C : 56,
     isVisualRefreshEnabled: P

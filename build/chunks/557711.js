@@ -1,4 +1,4 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var l = n(120356),
   i = n.n(l),
-  a = n(481060),
-  o = n(5192),
+  o = n(481060),
+  a = n(5192),
   s = n(829820),
   c = n(550750);
 
@@ -29,17 +29,17 @@ function u(e) {
     loading: h,
     disabled: v,
     onClick: O
-  } = (0, s.Fe)(t, n, d, o.ZP.getNickname(u, l, n)), j = () => {
+  } = (0, s.Fe)(t, n, d, a.ZP.getNickname(u, l, n)), j = () => {
     null == y || y(), O()
   };
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(o.ua7, {
     text: b,
     children: e => {
       let {
         onMouseEnter: n,
         onMouseLeave: l
       } = e;
-      return (0, r.jsx)(a.zxk, {
+      return (0, r.jsx)(o.zxk, {
         size: f,
         className: i()(c.syncButton, g),
         innerClassName: c.syncButtonInner,
@@ -51,7 +51,7 @@ function u(e) {
         disabled: v,
         submitting: h,
         "aria-label": null != b ? b : t.name,
-        children: (0, r.jsx)(a.iOO, {
+        children: (0, r.jsx)(o.iOO, {
           size: "xs",
           color: "currentColor"
         })

@@ -1,5 +1,4 @@
-/** Chunk was on 63141 **/
-"use strict";
+/** Chunk was on 48799 **/
 var i = {
   headerContainer: "headerContainer__0aebc",
   opacityHeader: "opacityHeader__0aebc " + n(587397).header,

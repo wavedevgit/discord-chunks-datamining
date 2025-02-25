@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   m: () => f
 });
@@ -56,7 +56,7 @@ function f(e) {
       trailing: v,
       showUnread: y = !1
     } = e,
-    _ = function(e, t) {
+    O = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -71,16 +71,16 @@ function f(e) {
       }
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "showUnread"]);
-  let O = (0, o.JA)(n),
-    j = null !== (t = (0, a.q)(m)) && void 0 !== t ? t : "";
+  let j = (0, o.JA)(n),
+    _ = null !== (t = (0, a.q)(m)) && void 0 !== t ? t : "";
   return (0, r.jsx)("li", {
-    children: (0, r.jsxs)(s.kL8, h(p({}, _), {
-      buttonProps: h(p({}, O), {
+    children: (0, r.jsxs)(s.kL8, h(p({}, O), {
+      buttonProps: h(p({}, j), {
         id: n,
         role: "button"
       }),
       tag: "div",
-      "aria-label": j,
+      "aria-label": _,
       focusProps: {
         offset: {
           top: 1,
@@ -88,7 +88,7 @@ function f(e) {
           right: 4
         }
       },
-      onContextMenu: null != _.onContextMenu ? _.onContextMenu : e => {
+      onContextMenu: null != O.onContextMenu ? O.onContextMenu : e => {
         e.stopPropagation()
       },
       className: l()(u.containerDefault, d.wrapper, {

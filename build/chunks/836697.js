@@ -1,6 +1,6 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
-  Z: () => O
+  Z: () => j
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -20,7 +20,7 @@ var r = n(200651),
   v = n(388032),
   y = n(546070);
 
-function _(e) {
+function O(e) {
   let {
     onActivate: t,
     children: n
@@ -102,36 +102,36 @@ function _(e) {
   })
 }
 
-function O(e) {
+function j(e) {
   let {
     onActivate: t
-  } = e, n = (0, s.Q3)("PendingGuildJoinRequestsFolderNode"), [O, j] = i.useState(!1), x = (0, l.e7)([p.Z], () => p.Z.getGuildId()), C = (0, l.e7)([d.Z], () => d.Z.hasFetchedRequestToJoinGuilds), P = (0, g.Z)(), S = (0, a.Z)(x), N = i.useMemo(() => {
+  } = e, n = (0, s.Q3)("PendingGuildJoinRequestsFolderNode"), [j, _] = i.useState(!1), x = (0, l.e7)([p.Z], () => p.Z.getGuildId()), C = (0, l.e7)([d.Z], () => d.Z.hasFetchedRequestToJoinGuilds), P = (0, g.Z)(), S = (0, a.Z)(x), N = i.useMemo(() => {
     let e = (0, f.qQ)({
       folderId: h.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: v.NW.string(v.t["scsU+v"]),
-      expanded: O,
+      expanded: j,
       guildIds: []
     });
     for (let t of P) e.children.push((0, f.Mg)(t, e.id));
     return e
-  }, [P, O]);
+  }, [P, j]);
   i.useEffect(() => {
-    O && !C && c.Z.fetchRequestToJoinGuilds()
-  }, [O, C]);
-  let I = null != x && P.includes(x);
+    j && !C && c.Z.fetchRequestToJoinGuilds()
+  }, [j, C]);
+  let Z = null != x && P.includes(x);
   return (i.useEffect(() => {
-    !O && I && S !== x && j(!0)
-  }, [O, I, S, x]), 0 === P.length) ? null : (0, r.jsx)(_, {
+    !j && Z && S !== x && _(!0)
+  }, [j, Z, S, x]), 0 === P.length) ? null : (0, r.jsx)(O, {
     onActivate: t,
     children: (0, r.jsx)(m.Z, {
       folderNode: N,
-      expanded: O,
-      useCircleMask: !O && !I,
-      selected: I,
+      expanded: j,
+      useCircleMask: !j && !Z,
+      selected: Z,
       draggable: !1,
       sorting: !1,
       onExpandCollapse: () => {
-        j(!O), u.ZP.clearCoachmark()
+        _(!j), u.ZP.clearCoachmark()
       },
       folderIconContentClassName: y.folderIconContent,
       folderIconContent: (0, r.jsx)(o.wGF, {

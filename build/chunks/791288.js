@@ -1,11 +1,11 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
   Z: () => W
 }), n(47120);
 var i = n(200651),
   r = n(192379),
-  s = n(512722),
-  o = n.n(s),
+  o = n(512722),
+  s = n.n(o),
   l = n(442837),
   a = n(481060),
   c = n(493683),
@@ -13,50 +13,50 @@ var i = n(200651),
   u = n(99690),
   h = n(835473),
   p = n(194082),
-  g = n(442550),
-  f = n(297781),
+  f = n(442550),
+  g = n(297781),
   m = n(371991),
   y = n(656709),
-  O = n(561308),
+  _ = n(561308),
   v = n(593481),
-  S = n(371651),
+  O = n(371651),
   b = n(703656),
-  x = n(199902),
-  Z = n(592125),
-  j = n(158776),
+  S = n(199902),
+  x = n(592125),
+  Z = n(158776),
   E = n(594174),
   N = n(237997),
-  C = n(5192),
-  I = n(145597),
-  P = n(312839),
-  w = n(981631),
-  _ = n(701488),
-  T = n(987650),
-  k = n(388032),
+  j = n(5192),
+  C = n(145597),
+  I = n(312839),
+  P = n(981631),
+  w = n(701488),
+  k = n(987650),
+  T = n(388032),
   D = n(995816);
 
 function M(e) {
   let {
     game: t,
     trackClick: n,
-    onDismissClick: s
-  } = e, o = (0, h.q)(t.id), c = (0, l.e7)([N.Z], () => N.Z.showInviteNotification), u = r.useCallback(e => {
+    onDismissClick: o
+  } = e, s = (0, h.q)(t.id), c = (0, l.e7)([N.Z], () => N.Z.showInviteNotification), u = r.useCallback(e => {
     e.stopPropagation(), n(c ? "muted" : "unmuted"), d.Z.setShowGameInviteNotification(!c)
   }, [c, n]);
-  if (null == o) return null;
-  let p = o.getIconURL(_.Si.LARGE);
+  if (null == s) return null;
+  let p = s.getIconURL(w.Si.LARGE);
   return (0, i.jsxs)("div", {
     className: D.header,
     children: [(0, i.jsxs)("div", {
       className: D.headerLeft,
-      children: [(0, i.jsx)(g.f, {
+      children: [(0, i.jsx)(f.f, {
         src: p,
         size: 16
       }), (0, i.jsx)(a.Text, {
         className: D.gameInfo,
         variant: "text-sm/semibold",
         color: "header-primary",
-        children: o.name
+        children: s.name
       })]
     }), (0, i.jsxs)("div", {
       className: D.headerRight,
@@ -77,7 +77,7 @@ function M(e) {
       }), (0, i.jsx)(a.zxk, {
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.NONE,
-        onClick: s,
+        onClick: o,
         className: D.dismissButton,
         children: (0, i.jsx)(a.CTb, {
           size: "xs",
@@ -93,57 +93,57 @@ function R(e) {
   let {
     entry: t,
     idx: n
-  } = e, s = (0, l.e7)([E.default], () => E.default.getUser(t.author_id)), h = (0, O.kr)(t), g = h ? a.TVs.colors.TEXT_POSITIVE : a.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY, [v, S] = r.useState("unsent"), [I, P] = r.useState(!1), _ = (0, l.e7)([N.Z], () => N.Z.customInviteMessage), T = (0, l.e7)([x.Z], () => null != s ? x.Z.getAnyStreamForUser(s.id) : null, [s]), {
+  } = e, o = (0, l.e7)([E.default], () => E.default.getUser(t.author_id)), h = (0, _.kr)(t), f = h ? a.TVs.colors.TEXT_POSITIVE : a.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY, [v, O] = r.useState("unsent"), [C, I] = r.useState(!1), w = (0, l.e7)([N.Z], () => N.Z.customInviteMessage), k = (0, l.e7)([S.Z], () => null != o ? S.Z.getAnyStreamForUser(o.id) : null, [o]), {
     isMobileOnline: M,
     status: R
-  } = (0, l.cj)([j.Z], () => null == s ? {
+  } = (0, l.cj)([Z.Z], () => null == o ? {
     isMobileOnline: void 0,
     status: void 0
   } : {
-    isMobileOnline: j.Z.isMobileOnline(s.id),
-    status: j.Z.getStatus(s.id)
-  }, [s]);
+    isMobileOnline: Z.Z.isMobileOnline(o.id),
+    status: Z.Z.getStatus(o.id)
+  }, [o]);
   r.useEffect(() => {
     if ("sent" === v) {
-      let e = setTimeout(() => P(!0), 2e3);
+      let e = setTimeout(() => I(!0), 2e3);
       return () => clearTimeout(e)
     }
   }, [v]);
   let A = async e => {
-    if (null != s && "unsent" === v) {
+    if (null != o && "unsent" === v) {
       e.stopPropagation();
       try {
         var i;
-        S("sending");
-        let e = await c.Z.getOrEnsurePrivateChannel(s.id),
-          r = null !== (i = Z.Z.getChannel(e)) && void 0 !== i ? i : null;
-        o()(null != r, "Send channel must be defined"), (0, b.uL)(w.Z5c.CHANNEL(r.guild_id, r.id)), await (0, y.p)({
+        O("sending");
+        let e = await c.Z.getOrEnsurePrivateChannel(o.id),
+          r = null !== (i = x.Z.getChannel(e)) && void 0 !== i ? i : null;
+        s()(null != r, "Send channel must be defined"), (0, b.uL)(P.Z5c.CHANNEL(r.guild_id, r.id)), await (0, y.p)({
           channel: r,
-          content: null != _ ? _ : k.NW.string(k.t.DwAcMz),
+          content: null != w ? w : T.NW.string(T.t.DwAcMz),
           entry: t,
           whenReady: !0
-        }), d.Z.track(w.rMx.OVERLAY_GAME_INVITE_SENT, {
-          target_user_id: s.id,
+        }), d.Z.track(P.rMx.OVERLAY_GAME_INVITE_SENT, {
+          target_user_id: o.id,
           target_content_entry_id: t.id,
           target_index: n,
-          sent_custom_message: null != _
-        }), S("sent")
+          sent_custom_message: null != w
+        }), O("sent")
       } catch (e) {
-        S("unsent")
+        O("unsent")
       }
     }
   }, L = async () => {
     var e;
-    if (null == s) return;
-    let t = await c.Z.getOrEnsurePrivateChannel(s.id),
-      n = null !== (e = Z.Z.getChannel(t)) && void 0 !== e ? e : null;
-    o()(null != n, "Send channel must be defined"), (0, b.uL)(w.Z5c.CHANNEL(n.guild_id, n.id))
+    if (null == o) return;
+    let t = await c.Z.getOrEnsurePrivateChannel(o.id),
+      n = null !== (e = x.Z.getChannel(t)) && void 0 !== e ? e : null;
+    s()(null != n, "Send channel must be defined"), (0, b.uL)(P.Z5c.CHANNEL(n.guild_id, n.id))
   };
-  return null == s ? null : (0, i.jsxs)("div", {
+  return null == o ? null : (0, i.jsxs)("div", {
     className: D.userRow,
     children: [(0, i.jsx)(u.Z, {
       className: D.avatarContainer,
-      user: s,
+      user: o,
       isMobile: M,
       status: R
     }), (0, i.jsxs)("div", {
@@ -154,12 +154,12 @@ function R(e) {
           className: D.username,
           variant: "text-md/medium",
           color: "header-primary",
-          children: C.ZP.getName(void 0, void 0, s)
-        }), null != T && (0, i.jsx)(p.ZP, {})]
-      }), (0, i.jsxs)(f.m7, {
+          children: j.ZP.getName(void 0, void 0, o)
+        }), null != k && (0, i.jsx)(p.ZP, {})]
+      }), (0, i.jsxs)(g.m7, {
         children: [(0, i.jsx)(a.iWm, {
           size: "xxs",
-          color: g
+          color: f
         }), (0, i.jsx)(m.ZP, {
           entry: t,
           textColor: h ? "text-positive" : "content-inventory-overlay-text-secondary",
@@ -170,12 +170,12 @@ function R(e) {
       className: D.inviteButtonWrapper,
       children: (0, i.jsx)(a.zxk, {
         submitting: "sending" === v,
-        onClick: I ? L : A,
+        onClick: C ? L : A,
         className: D.inviteButton,
         color: a.Ttl.PRIMARY,
         look: "sent" === v ? a.iLD.OUTLINED : a.iLD.FILLED,
         size: a.PhG.MAX,
-        children: "sent" === v ? I ? (0, i.jsx)(a.kBi, {
+        children: "sent" === v ? C ? (0, i.jsx)(a.kBi, {
           size: "sm"
         }) : (0, i.jsx)(a.kSu, {
           size: "sm",
@@ -192,26 +192,26 @@ function A(e) {
   let {
     onCancel: t,
     onSave: n
-  } = e, s = (0, l.e7)([N.Z], () => N.Z.customInviteMessage), o = r.createRef(), [c, u] = r.useState(null != s ? s : k.NW.string(k.t.DwAcMz)), [h, p] = r.useState(c.length), g = e => {
+  } = e, o = (0, l.e7)([N.Z], () => N.Z.customInviteMessage), s = r.createRef(), [c, u] = r.useState(null != o ? o : T.NW.string(T.t.DwAcMz)), [h, p] = r.useState(c.length), f = e => {
     e.stopPropagation(), d.Z.setInviteMessage(c), n(e)
   };
   return (0, i.jsxs)("div", {
     className: D.editMessageContainer,
     children: [(0, i.jsx)(a.oil, {
       autoFocus: !0,
-      inputRef: o,
+      inputRef: s,
       onClick: e => e.stopPropagation(),
       onKeyDown: e => {
         if (e.stopPropagation(), " " === e.key) {
           var n, i;
-          if (e.preventDefault(), null == o.current) return;
-          let t = o.current,
+          if (e.preventDefault(), null == s.current) return;
+          let t = s.current,
             r = null !== (n = t.selectionStart) && void 0 !== n ? n : 0,
-            s = null !== (i = t.selectionEnd) && void 0 !== i ? i : 0,
+            o = null !== (i = t.selectionEnd) && void 0 !== i ? i : 0,
             l = t.value;
-          t.value = l.substring(0, r) + " " + l.substring(s), t.setSelectionRange(r + 1, r + 1), p(l.length)
+          t.value = l.substring(0, r) + " " + l.substring(o), t.setSelectionRange(r + 1, r + 1), p(l.length)
         }
-        "Enter" === e.key && g(e), "Escape" === e.key && (e.preventDefault(), t(e))
+        "Enter" === e.key && f(e), "Escape" === e.key && (e.preventDefault(), t(e))
       },
       onKeyUp: e => e.stopPropagation(),
       maxLength: 99,
@@ -231,13 +231,13 @@ function A(e) {
         className: D.cancelButton,
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.TINY,
-        children: k.NW.string(k.t["ETE/oK"])
+        children: T.NW.string(T.t["ETE/oK"])
       }), (0, i.jsx)(a.zxk, {
-        onClick: g,
+        onClick: f,
         color: a.zxk.Colors.PRIMARY,
         look: a.zxk.Looks.FILLED,
         size: a.zxk.Sizes.TINY,
-        children: k.NW.string(k.t.R3BPHx)
+        children: T.NW.string(T.t.R3BPHx)
       })]
     })]
   })
@@ -246,15 +246,15 @@ function A(e) {
 function L(e) {
   let {
     entries: t
-  } = e, n = t.slice(0, 5), s = (0, l.e7)([N.Z], () => N.Z.customInviteMessage), o = k.NW.formatToPlainString(k.t["5uzKGB"], {
-    inviteMessage: null != s ? s : k.NW.string(k.t.DwAcMz)
+  } = e, n = t.slice(0, 5), o = (0, l.e7)([N.Z], () => N.Z.customInviteMessage), s = T.NW.formatToPlainString(T.t["5uzKGB"], {
+    inviteMessage: null != o ? o : T.NW.string(T.t.DwAcMz)
   }), [c, u] = r.useState(!1);
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(v.iz, {}), (0, i.jsxs)(a.Text, {
       className: D.helpText,
       variant: "text-sm/medium",
       color: "header-secondary",
-      children: [o, (0, i.jsx)(a.zxk, {
+      children: [s, (0, i.jsx)(a.zxk, {
         onClick: e => {
           e.stopPropagation(), u(!c), d.Z.setInstanceLocked(c)
         },
@@ -284,10 +284,10 @@ function W(e, t) {
   let {
     trackView: n,
     trackClick: r
-  } = (0, P.R)(T.n0.SendGameInvitesNotification, {
-    notif_type: T.n0.SendGameInvitesNotification
+  } = (0, I.R)(k.n0.SendGameInvitesNotification, {
+    notif_type: k.n0.SendGameInvitesNotification
   });
-  return o()(t.length > 0, "Some entries must be present"), {
+  return s()(t.length > 0, "Some entries must be present"), {
     icon: null,
     title: t => (0, i.jsx)(M, {
       game: e,
@@ -298,13 +298,13 @@ function W(e, t) {
       entries: t
     }),
     onNotificationShow: () => {
-      n(), d.Z.track(w.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
+      n(), d.Z.track(P.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
         user_ids: t.map(e => e.author_id),
         entry_ids: t.map(e => e.id)
       })
     },
     onNotificationClick: (e, t) => {
-      e.stopPropagation(), r("unlock"), S.default.isOverlayOOPEnabledForPid((0, I.QF)()) ? d.Z.setInputLocked(!1, (0, I.QF)()) : d.Z.setInstanceLocked(!1)
+      e.stopPropagation(), r("unlock"), O.default.isOverlayOOPEnabledForPid((0, C.QF)()) ? d.Z.setInputLocked(!1, (0, C.QF)()) : d.Z.setInstanceLocked(!1)
     },
     onDismissClick: () => {
       r("dismiss")

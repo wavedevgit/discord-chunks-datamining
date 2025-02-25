@@ -1,11 +1,11 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
   Z: () => m
 });
 var i = n(200651),
   r = n(192379),
-  s = n(442837),
-  o = n(831218),
+  o = n(442837),
+  s = n(831218),
   l = n(840780),
   a = n(51596),
   c = n(905423),
@@ -13,10 +13,10 @@ var i = n(200651),
   u = n(145597),
   h = n(981631),
   p = n(388032),
-  g = n(892426);
-let f = () => (0, a.$Z)("DM_SEARCH"),
+  f = n(892426);
+let g = () => (0, a.$Z)("DM_SEARCH"),
   m = r.memo(function() {
-    let e = (0, s.e7)([d.Z], () => d.Z.isLocked((0, u.QF)()) ? "true" : "false"),
+    let e = (0, o.e7)([d.Z], () => d.Z.isLocked((0, u.QF)()) ? "true" : "false"),
       t = (0, c.Z)(e => {
         let {
           channelId: t
@@ -24,22 +24,22 @@ let f = () => (0, a.$Z)("DM_SEARCH"),
         return t
       });
     return (0, i.jsxs)("div", {
-      className: g.privateChannels,
+      className: f.privateChannels,
       children: [(0, i.jsx)("div", {
-        className: g.searchBar,
+        className: f.searchBar,
         children: (0, i.jsx)("button", {
           type: "button",
-          className: g.searchBarComponent,
-          onClick: f,
+          className: f.searchBarComponent,
+          onClick: g,
           children: p.NW.string(p.t.LzcpeX)
         })
-      }), (0, i.jsx)(o.Z, {
+      }), (0, i.jsx)(s.Z, {
         padding: 8,
         theme: h.BRd.DARK,
         version: e,
         selectedChannelId: t
       }), (0, i.jsx)("section", {
-        className: g.panels,
+        className: f.panels,
         "aria-label": p.NW.string(p.t.StREWF),
         children: (0, i.jsx)(l.Z, {
           guildId: null

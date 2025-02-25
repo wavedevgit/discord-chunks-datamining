@@ -1,17 +1,17 @@
 /** Chunk was on 12416 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 }), n(653041);
 var r = n(88315),
   i = n(199766),
   l = n(813900);
 
-function a(e) {
+function o(e) {
   let {
     line: t,
     context: n,
-    canvasWidth: a,
-    canvasHeight: o,
+    canvasWidth: o,
+    canvasHeight: a,
     fallbackColor: s,
     outlineColorDark: c,
     outlineColorLight: u,
@@ -19,7 +19,7 @@ function a(e) {
     deadDrawables: f
   } = e;
   null == d.current[t.id] && (d.current[t.id] = Date.now()), n.lineCap = "round", n.lineJoin = "round";
-  let m = t.points.map(e => (0, r.RR)(e, a, o)),
+  let m = t.points.map(e => (0, r.RR)(e, o, a)),
     p = d.current[t.id],
     h = e => p + e.deltaTime,
     v = e => h(e) + 1500 >= Date.now(),

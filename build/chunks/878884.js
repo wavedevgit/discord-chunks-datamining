@@ -1,10 +1,10 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   Z: () => E
 }), n(47120);
-var r, l, i, a = n(442837),
-  o = n(46973),
+var r, l, i, o = n(442837),
+  a = n(46973),
   s = n(570140),
   c = n(642047),
   u = n(189786),
@@ -70,7 +70,7 @@ function P() {
 function I() {
   v.clear(), O.clear(), j.clear()
 }
-class x extends(r = a.ZP.Store) {
+class x extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(g.Z, m.default, f.Z, p.Z), this.syncWith([m.default], P)
   }
@@ -103,7 +103,7 @@ let E = new x(s.Z, {
       state: t,
       context: n
     } = e;
-    if (n !== o.Yn.DEFAULT || t !== b.hes.DISCONNECTED) return !1;
+    if (n !== a.Yn.DEFAULT || t !== b.hes.DISCONNECTED) return !1;
     I()
   },
   VOICE_STATE_UPDATES: function(e) {
@@ -125,7 +125,7 @@ let E = new x(s.Z, {
       channelId: r,
       context: l
     } = e;
-    return l === o.Yn.DEFAULT && t.reduce((e, t) => {
+    return l === a.Yn.DEFAULT && t.reduce((e, t) => {
       if (null != g.Z.getVoiceStateForChannel(r, t)) return e;
       let l = m.default.getUser(t);
       return null == l ? (j.add(t), e) : (S(l, n, r), !0)
@@ -136,6 +136,6 @@ let E = new x(s.Z, {
       userId: t,
       context: n
     } = e;
-    return n === o.Yn.DEFAULT && N(t)
+    return n === a.Yn.DEFAULT && N(t)
   }
 })

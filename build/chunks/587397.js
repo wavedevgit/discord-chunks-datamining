@@ -1,5 +1,4 @@
-/** Chunk was on 63141 **/
-"use strict";
+/** Chunk was on 48799 **/
 e.exports = {
   contained: "contained_ee4d7e",
   header: "header_ee4d7e",

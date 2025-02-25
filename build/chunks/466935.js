@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => y
 });
@@ -23,7 +23,7 @@ function y(e) {
   let {
     guild: t,
     selected: n
-  } = e, y = (0, l.e7)([h.Z], () => h.Z.can(m.Plq.KICK_MEMBERS, t)), _ = (0, l.e7)([c.Z], () => c.Z.getSubmittedGuildJoinRequestTotal(t.id)), O = y && null != _ ? _ : 0;
+  } = e, y = (0, l.e7)([h.Z], () => h.Z.can(m.Plq.KICK_MEMBERS, t)), O = (0, l.e7)([c.Z], () => c.Z.getSubmittedGuildJoinRequestTotal(t.id)), j = y && null != O ? O : 0;
   return i.useEffect(() => {
     y && s.Z.fetchGuildJoinRequests({
       guildId: t.id,
@@ -46,8 +46,8 @@ function y(e) {
         tab: b.oC.MEMBER_APPLICATIONS
       }), (0, p.uL)(m.Z5c.CHANNEL(t.id, b.oC.MEMBER_APPLICATIONS))
     },
-    trailing: O > 0 ? (0, r.jsx)(o.mAB, {
-      count: O
+    trailing: j > 0 ? (0, r.jsx)(o.mAB, {
+      count: j
     }) : null
   })
 }

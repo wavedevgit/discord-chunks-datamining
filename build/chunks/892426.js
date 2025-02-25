@@ -1,5 +1,4 @@
-/** Chunk was on 63141 **/
-"use strict";
+/** Chunk was on 48799 **/
 e.exports = {
   privateChannels: "privateChannels_ee924e",
   searchBar: "searchBar_ee924e",

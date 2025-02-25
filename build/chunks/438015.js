@@ -1,11 +1,11 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
   Z: () => d
 }), n(47120);
 var i = n(200651),
   r = n(192379),
-  s = n(13245),
-  o = n(593481),
+  o = n(13245),
+  s = n(593481),
   l = n(981631);
 
 function a(e, t, n) {
@@ -22,7 +22,7 @@ class c extends r.Component {
     let {
       props: {
         position: r,
-        zIndex: s
+        zIndex: o
       }
     } = this;
     switch (r) {
@@ -46,7 +46,7 @@ class c extends r.Component {
       right: t,
       bottom: n,
       top: i,
-      zIndex: s
+      zIndex: o
     }
   }
   render() {
@@ -57,7 +57,7 @@ class c extends r.Component {
         notification: {
           props: {
             renderFooter: r,
-            onNotificationShow: s,
+            onNotificationShow: o,
             onDismissClick: l,
             onNotificationClick: c,
             onConfirmClick: d,
@@ -70,17 +70,17 @@ class c extends r.Component {
       var n, i, r = function(e, t) {
         if (null == e) return {};
         var n, i, r = {},
-          s = Object.keys(e);
-        for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+          o = Object.keys(e);
+        for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
         return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        var o = Object.getOwnPropertySymbols(e);
+        for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
     }(this.props.notification.props, ["renderFooter", "onNotificationShow", "onDismissClick", "onNotificationClick", "onConfirmClick", "onCancelClick"]);
-    return (0, i.jsx)(o.ZP, (e = function(e) {
+    return (0, i.jsx)(s.ZP, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -126,7 +126,7 @@ class c extends r.Component {
           onDismissClick: n
         }
       } = this.props.notification;
-      s.Z.updateNotificationStatus(t), null == n || n(e, t)
+      o.Z.updateNotificationStatus(t), null == n || n(e, t)
     }), a(this, "handleNotificationClick", e => {
       let {
         id: t,

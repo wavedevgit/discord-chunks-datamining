@@ -1,4 +1,4 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(192379),
   l = n(442837),
   i = n(131951),
-  a = n(65154),
-  o = n(388032);
+  o = n(65154),
+  a = n(388032);
 
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -34,9 +34,9 @@ function u() {
   return r.useMemo(() => {
     var t, n;
     let r = s({}, e),
-      l = r[a.w5];
-    return null == l ? r : (r[a.w5] = (t = s({}, l), n = n = {
-      name: l.disabled ? o.NW.string(o.t.xlUg0t) : l.name.replace(c, o.NW.string(o.t.bBvAEB))
+      l = r[o.w5];
+    return null == l ? r : (r[o.w5] = (t = s({}, l), n = n = {
+      name: l.disabled ? a.NW.string(a.t.xlUg0t) : l.name.replace(c, a.NW.string(a.t.bBvAEB))
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

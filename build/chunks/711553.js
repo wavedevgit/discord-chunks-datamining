@@ -1,12 +1,12 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
   Z: () => u
 });
 var i = n(200651);
 n(192379);
 var r = n(120356),
-  s = n.n(r),
-  o = n(481060),
+  o = n.n(r),
+  s = n(481060),
   l = n(518084),
   a = n(981631),
   c = n(388032),
@@ -21,14 +21,14 @@ let u = function(e) {
     onDragStart: p
   } = e;
   return t = null != n ? (0, i.jsxs)(l.ZP.Bar, {
-    className: s()(d.header, d.draggableStartArea),
+    className: o()(d.header, d.draggableStartArea),
     onMouseDown: p,
     children: [(0, i.jsx)(l.ZP.Content, {
-      className: s()(d.headerTitle, d.draggableStartArea),
+      className: o()(d.headerTitle, d.draggableStartArea),
       dynamicSize: !0,
       children: n
     }), (0, i.jsx)(l.ZP.Content, {
-      children: (0, i.jsx)(o.yRy, {
+      children: (0, i.jsx)(s.yRy, {
         position: "right",
         renderPopout: null != h ? h : a.dG4,
         autoInvert: !1,
@@ -52,7 +52,7 @@ let u = function(e) {
             }
             return e
           }({}, e), n = n = {
-            icon: o.ewm,
+            icon: s.ewm,
             label: c.NW.string(c.t["3D5yo6"])
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);

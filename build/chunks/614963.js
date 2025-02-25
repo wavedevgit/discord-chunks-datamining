@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(251625),
   i = n(823379),
   l = n(981631),
-  a = n(388032);
+  o = n(388032);
 
-function o() {
+function a() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 30;
   return e <= 5 ? 3 : e <= 15 ? 10 : 15
 }
@@ -46,15 +46,15 @@ function s(e, t) {
     n.packetsSentOrReceived += t > 0 ? r[t].packetsSentOrReceived - r[t - 1].packetsSentOrReceived : 0, n.packetsLost += t > 0 ? r[t].packetsLost - r[t - 1].packetsLost : 0, n.frameRate += e.frameRate, n.resolution += e.resolution
   });
   let l = r[0].type,
-    a = r.length;
+    o = r.length;
   return {
     type: l,
     packetsSentOrReceived: n.packetsSentOrReceived,
     packetsLost: n.packetsLost,
     packetLossRate: n.packetsLost / (n.packetsLost + n.packetsSentOrReceived),
-    frameRate: n.frameRate / a,
-    resolution: n.resolution / a,
-    numDatapoints: a
+    frameRate: n.frameRate / o,
+    resolution: n.resolution / o,
+    numDatapoints: o
   }
 }
 let c = (0, r.oH)((e, t) => ({
@@ -64,17 +64,17 @@ let c = (0, r.oH)((e, t) => ({
 
 function u(e, t) {
   if ("streamer" === e.type) {
-    if (100 * e.packetLossRate > 10) return c(a.NW.string(a.t["1f1LHh"]), "Packet Loss");
-    if (e.frameRate <= o(t)) return c(a.NW.string(a.t["1f1LHh"]), "Frame Rate Encode")
+    if (100 * e.packetLossRate > 10) return c(o.NW.string(o.t["1f1LHh"]), "Packet Loss");
+    if (e.frameRate <= a(t)) return c(o.NW.string(o.t["1f1LHh"]), "Frame Rate Encode")
   } else {
-    if (100 * e.packetLossRate > 10) return c(a.NW.string(a.t.BcOif3), "Packet Loss");
-    if (e.frameRate <= o(t)) return c(a.NW.string(a.t.BcOif3), "Frame Rate Decode")
+    if (100 * e.packetLossRate > 10) return c(o.NW.string(o.t.BcOif3), "Packet Loss");
+    if (e.frameRate <= a(t)) return c(o.NW.string(o.t.BcOif3), "Frame Rate Decode")
   }
   return null
 }
 
 function d(e, t, n, r) {
-  if (n) return c(a.NW.string(a.t["9lcycn"]), "Soundshare Failed");
+  if (n) return c(o.NW.string(o.t["9lcycn"]), "Soundshare Failed");
   if (null != t) {
     let e = s(t, 5),
       n = s(t, 30);
@@ -83,5 +83,5 @@ function d(e, t, n, r) {
       return null !== (i = u(e, null == r ? void 0 : r.maxFrameRate)) && void 0 !== i ? i : u(n, null == r ? void 0 : r.maxFrameRate)
     }
   }
-  return e === l.IE4.BAD ? c(a.NW.string(a.t.Ic588P), "Bad Connection") : null
+  return e === l.IE4.BAD ? c(o.NW.string(o.t.Ic588P), "Bad Connection") : null
 }

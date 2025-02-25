@@ -1,6 +1,6 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
-  U: () => _
+  U: () => O
 });
 var r = n(200651),
   i = n(192379),
@@ -70,12 +70,12 @@ function y(e) {
         signupTarget: t
       }))
     })
-  }, [t]), _ = "url(".concat(t.backgroundAssetUrl, ") black top / cover no-repeat"), O = (0, r.jsxs)("div", {
+  }, [t]), O = "url(".concat(t.backgroundAssetUrl, ") black top / cover no-repeat"), j = (0, r.jsxs)("div", {
     className: m.tooltipContainer,
     children: [(0, r.jsx)("div", {
       className: m.tooltipBackground,
       style: {
-        background: _
+        background: O
       }
     }), (0, r.jsx)(o.X6q, {
       variant: "heading-sm/medium",
@@ -84,16 +84,16 @@ function y(e) {
       variant: "text-xs/normal",
       children: g.NW.string(g.t.IIbwAg)
     })]
-  }), j = (0, c.Fg)();
+  }), _ = (0, c.Fg)();
   return (0, r.jsxs)(d.H, {
     children: [(0, r.jsx)(o.ze6, {
       theme: f.BRd.DARK,
       children: (0, r.jsx)(p.Z, {
-        text: O,
+        text: j,
         tooltipClass: m.tooltip,
         tooltipContentClass: m.tooltipContent,
         children: (0, r.jsx)(o.ze6, {
-          theme: j,
+          theme: _,
           children: (0, r.jsx)(o.aRk, {
             lowerBadge: (0, r.jsx)(o.mAB, {
               count: 1,
@@ -111,7 +111,7 @@ function y(e) {
       })
     }), (0, r.jsx)("div", {
       style: {
-        background: _,
+        background: O,
         width: 0,
         height: 0
       }
@@ -119,7 +119,7 @@ function y(e) {
   })
 }
 
-function _() {
+function O() {
   let e = (0, a.e7)([h.Z], () => h.Z.getActiveUserSignUp());
   return null == e ? null : (0, r.jsx)(y, {
     target: e

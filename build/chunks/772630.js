@@ -1,4 +1,4 @@
-/** Chunk was on 37874 **/
+/** Chunk was on 54030 **/
 e.exports = {
   videoList: "videoList__95c18",
   vertical: "vertical__95c18",

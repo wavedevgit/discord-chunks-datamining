@@ -1,7 +1,7 @@
-/** Chunk was on 46906 **/
+/** Chunk was on 79120 **/
 "use strict";
 n.d(t, {
-  D: () => o
+  D: () => a
 });
 var r = n(200651);
 n(192379);
@@ -26,7 +26,7 @@ function i(e) {
   return e
 }
 
-function a(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -39,15 +39,15 @@ function a(e, t) {
   }), e
 }
 
-function o(e, t, o, s, c) {
-  let u = o.getGuildId();
+function a(e, t, a, s, c) {
+  let u = a.getGuildId();
   return null != u ? (0, l.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([n.e("97589"), n.e("80125"), n.e("87168")]).then(n.bind(n, 357823));
-    return n => (0, r.jsx)(e, a(i({}, n), {
+    return n => (0, r.jsx)(e, o(i({}, n), {
       user: t,
-      channel: o,
+      channel: a,
       guildId: u,
       onInteraction: e => c("GuildVoiceUserContextMenu", e)
     }))
@@ -55,9 +55,9 @@ function o(e, t, o, s, c) {
     let {
       default: e
     } = await Promise.all([n.e("80125"), n.e("66067")]).then(n.bind(n, 238296));
-    return n => (0, r.jsx)(e, a(i({}, n), {
+    return n => (0, r.jsx)(e, o(i({}, n), {
       user: t,
-      channel: o,
+      channel: a,
       onInteraction: e => c("BaseVoiceUserContextMenu", e)
     }))
   }, s)

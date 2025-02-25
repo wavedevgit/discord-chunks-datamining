@@ -1,4 +1,4 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
   f: () => h,
   y: () => u
@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(200651);
 n(192379);
 var r = n(481060),
-  s = n(312839),
-  o = n(556296),
+  o = n(312839),
+  s = n(556296),
   l = n(13140),
   a = n(981631),
   c = n(987650),
@@ -17,9 +17,9 @@ function u() {
   let {
     trackView: e,
     trackClick: t
-  } = (0, s.R)(c.n0.ClipsReminderNotification, {
+  } = (0, o.R)(c.n0.ClipsReminderNotification, {
     notif_type: c.n0.ClipsReminderNotification
-  }), n = o.ZP.getKeybindForAction(a.kg4.SAVE_CLIP);
+  }), n = s.ZP.getKeybindForAction(a.kg4.SAVE_CLIP);
   if (null == n) return null;
   let u = l.BB(n.shortcut, !0);
   return {
@@ -51,7 +51,7 @@ function h(e) {
   let {
     trackView: t,
     trackClick: n
-  } = (0, s.R)(c.n0.ClipsNotification, {
+  } = (0, o.R)(c.n0.ClipsNotification, {
     notif_type: c.n0.ClipsNotification
   });
   return {

@@ -1,4 +1,4 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
   Z: () => Y
 }), n(47120), n(411104);
@@ -20,25 +20,25 @@ var i = n(120356),
   b = n(378844),
   v = n(359110),
   y = n(922482),
-  _ = n(431328),
-  O = n(501655),
-  j = n(427679),
+  O = n(431328),
+  j = n(501655),
+  _ = n(427679),
   x = n(368442),
   C = n(201469),
   P = n(680089),
   S = n(592125),
   N = n(430824),
-  I = n(607744),
-  Z = n(496675),
+  Z = n(607744),
+  I = n(496675),
   w = n(306680),
   E = n(9156),
   T = n(979651),
-  A = n(934415),
-  D = n(98597),
+  D = n(934415),
+  A = n(98597),
   R = n(648501),
   L = n(473403),
-  k = n(207055),
-  M = n(981631),
+  M = n(207055),
+  k = n(981631),
   G = n(647086),
   B = n(388032),
   U = n(436804),
@@ -78,7 +78,7 @@ function H(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class z extends D.ZP {
+class z extends A.ZP {
   getVoiceStatesCount() {
     var e;
     let {
@@ -90,7 +90,7 @@ class z extends D.ZP {
     let {
       channel: e
     } = this.props;
-    return (0, A.rY)(e, T.Z, N.Z)
+    return (0, D.rY)(e, T.Z, N.Z)
   }
   getModeClass() {
     let {
@@ -108,12 +108,12 @@ class z extends D.ZP {
       speakerVoiceStates: i,
       numAudience: l
     } = this.props;
-    return (0, r.jsx)(k.Z, {
+    return (0, r.jsx)(M.Z, {
       channel: e,
       voiceStates: i,
       collapsed: t,
       tabIndex: n,
-      location: M.Sbl.GUILD_CHANNEL_LIST,
+      location: k.Sbl.GUILD_CHANNEL_LIST,
       numAudience: l
     })
   }
@@ -138,10 +138,10 @@ class z extends D.ZP {
       unread: b,
       resolvedUnreadSetting: v,
       mentionCount: y,
-      isFavoriteSuggestion: _
+      isFavoriteSuggestion: O
     } = this.props, {
-      shouldShowGuildVerificationPopout: O
-    } = this.state, j = this.getVoiceStatesCount(), x = (0, r.jsxs)("li", {
+      shouldShowGuildVerificationPopout: j
+    } = this.state, _ = this.getVoiceStatesCount(), x = (0, r.jsxs)("li", {
       className: l()(this.getModeClass(), {
         [U.disabled]: this.isDisabled()
       }),
@@ -151,7 +151,7 @@ class z extends D.ZP {
         renderPopout: this.renderPopout,
         spacing: 0,
         onRequestClose: this.closeGuildVerificationPopout,
-        shouldShow: O,
+        shouldShow: j,
         children: () => (0, r.jsx)(a.ua7, {
           text: this.getTooltipText(),
           children: o => {
@@ -179,7 +179,7 @@ class z extends D.ZP {
                 [W.iconLive]: null != f
               }),
               channel: e,
-              selected: !_ && t,
+              selected: !O && t,
               connected: n,
               unread: n ? b : void 0,
               resolvedUnreadSetting: v,
@@ -193,17 +193,17 @@ class z extends D.ZP {
               },
               connectDragPreview: u,
               subtitle: this.renderSubtitle(),
-              isFavoriteSuggestion: _,
+              isFavoriteSuggestion: O,
               "aria-label": (0, p.ZP)({
                 channel: e,
                 unread: b,
                 mentionCount: y,
-                userCount: j,
+                userCount: _,
                 isSubscriptionGated: g,
                 needSubscriptionToAccess: m
               })
             }, c), {
-              children: [_ && this.renderAcceptSuggestionButton(), _ && this.renderRemoveSuggestionButton(), !_ && this.renderOpenChatButton(), !_ && this.renderInviteButton(), !_ && this.renderEditButton(), !_ && this.renderChannelInfo()]
+              children: [O && this.renderAcceptSuggestionButton(), O && this.renderRemoveSuggestionButton(), !O && this.renderOpenChatButton(), !O && this.renderInviteButton(), !O && this.renderEditButton(), !O && this.renderChannelInfo()]
             }))
           }
         })
@@ -319,18 +319,18 @@ function Y(e) {
   } = e, c = (0, o.cj)([w.ZP], () => ({
     unread: w.ZP.hasUnread(n.id),
     mentionCount: w.ZP.getMentionCount(n.id)
-  })), u = (0, o.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(n)), d = (0, o.cj)([S.Z, I.Z, Z.Z], () => {
+  })), u = (0, o.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(n)), d = (0, o.cj)([S.Z, Z.Z, I.Z], () => {
     let e = S.Z.getChannel(n.parent_id),
-      r = I.Z.getCheck(n.guild_id);
+      r = Z.Z.getCheck(n.guild_id);
     return {
-      canManageChannel: null != t && Z.Z.can(M.Plq.MANAGE_CHANNELS, n),
-      canReorderChannel: !0 !== i && (t.id === G._ || (null != e ? Z.Z.can(M.Plq.MANAGE_CHANNELS, e) : Z.Z.can(M.Plq.MANAGE_CHANNELS, t))),
-      canMoveMembers: Z.Z.can(M.Plq.MOVE_MEMBERS, n),
-      locked: !Z.Z.can(M.Plq.CONNECT, n),
-      bypassLimit: Z.Z.can(M.Plq.MOVE_MEMBERS, n),
+      canManageChannel: null != t && I.Z.can(k.Plq.MANAGE_CHANNELS, n),
+      canReorderChannel: !0 !== i && (t.id === G._ || (null != e ? I.Z.can(k.Plq.MANAGE_CHANNELS, e) : I.Z.can(k.Plq.MANAGE_CHANNELS, t))),
+      canMoveMembers: I.Z.can(k.Plq.MOVE_MEMBERS, n),
+      locked: !I.Z.can(k.Plq.CONNECT, n),
+      bypassLimit: I.Z.can(k.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, o.e7)([P.Z], () => P.Z.isCollapsed(n.parent_id)), h = (0, C.ZP)(n.id), f = (0, o.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, _.Rk)(n.id, O.pV.AUDIENCE), {
+  }), p = (0, o.e7)([P.Z], () => P.Z.isCollapsed(n.parent_id)), h = (0, C.ZP)(n.id), f = (0, o.e7)([_.Z], () => _.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, O.Rk)(n.id, j.pV.AUDIENCE), {
     isSubscriptionGated: b,
     needSubscriptionToAccess: v
   } = (0, m.Z)(n.id), y = (0, o.e7)([E.ZP], () => E.ZP.isFavorite(t.id, n.id)), N = (0, x.xJ)(n.id), T = (0, R.Z)({
@@ -340,8 +340,8 @@ function Y(e) {
     voiceStates: s,
     isSubscriptionGated: b,
     needSubscriptionToAccess: v,
-    enableConnectedUserLimit: N || n.userLimit > 0 && n.userLimit < M.xGv
-  }), A = e.connected && null == T;
+    enableConnectedUserLimit: N || n.userLimit > 0 && n.userLimit < k.xGv
+  }), D = e.connected && null == T;
   return (0, r.jsx)(q, H(F({
     categoryCollapsed: p,
     connectAction: h,
@@ -351,7 +351,7 @@ function Y(e) {
     needSubscriptionToAccess: v
   }, c, d, e), {
     isFavoriteSuggestion: l && !y,
-    forceShowButtons: A,
+    forceShowButtons: D,
     channelInfo: T,
     resolvedUnreadSetting: u
   }))

@@ -1,6 +1,6 @@
-/** Chunk was on 32098 **/
+/** Chunk was on 64615 **/
 n.d(t, {
-  Z: () => _
+  Z: () => O
 });
 var r = n(200651),
   i = n(192379),
@@ -20,13 +20,13 @@ var r = n(200651),
   v = n(388032),
   y = n(55345);
 
-function _(e) {
+function O(e) {
   let {
     guild: t,
     selected: n
   } = e, l = i.useCallback(() => {
     (0, p.jd)(t.id), (0, d.uL)(g.Z5c.CHANNEL(t.id, m.oC.GUILD_BOOSTS))
-  }, [t.id]), _ = (0, f.Z)(t), O = (null == _ ? void 0 : _.type) === h.o.UNREAD;
+  }, [t.id]), O = (0, f.Z)(t), j = (null == O ? void 0 : O.type) === h.o.UNREAD;
   return (0, r.jsx)(u.m, {
     id: "skill-trees-".concat(t.id),
     renderIcon: e => (0, r.jsx)(c.Z, {
@@ -34,18 +34,18 @@ function _(e) {
     }),
     text: (0, r.jsx)("span", {
       className: o()({
-        [y.textImportant]: O
+        [y.textImportant]: j
       }),
       children: v.NW.string(b.Z.yv3DJC)
     }),
     selected: n,
     onClick: l,
-    showUnread: O,
+    showUnread: j,
     trailing: (() => {
-      switch (null == _ ? void 0 : _.type) {
+      switch (null == O ? void 0 : O.type) {
         case h.o.UNREAD:
           return (0, r.jsx)(a.mAB, {
-            count: _.count,
+            count: O.count,
             color: s.Z.BACKGROUND_MODIFIER_ACCENT
           });
         case h.o.WARNING:

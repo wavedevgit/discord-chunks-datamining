@@ -1,11 +1,11 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 48799 **/
 n.d(t, {
   Z: () => h
 });
 var i = n(278323),
   r = n(13245),
-  s = n(45114),
-  o = n(593481),
+  o = n(45114),
+  s = n(593481),
   l = n(237997),
   a = n(312839),
   c = n(981631),
@@ -14,11 +14,11 @@ var i = n(278323),
 
 function h(e, t, n, h) {
   let p = t.username,
-    g = u.NW.format(u.t.VDODnp, {
+    f = u.NW.format(u.t.VDODnp, {
       username: "",
       game: n.name
     }),
-    f = t.getAvatarURL(e.guild_id, 80),
+    g = t.getAvatarURL(e.guild_id, 80),
     {
       trackView: m,
       trackClick: y
@@ -29,10 +29,10 @@ function h(e, t, n, h) {
       activity_name: n.name
     });
   return {
-    icon: f,
+    icon: g,
     title: p,
-    body: g,
-    hint: e => (0, o.QR)(e, (0, a.P)(), u.t["Odi54+"]),
+    body: f,
+    hint: e => (0, s.QR)(e, (0, a.P)(), u.t["Odi54+"]),
     confirmText: u.NW.string(u.t["fgP/wc"]),
     cancelText: u.NW.string(u.t.tpXzJy),
     onNotificationShow: () => {
@@ -47,7 +47,7 @@ function h(e, t, n, h) {
       }), y("join"), r.Z.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {
-      (0, s.In)(e.id, !0, !0), r.Z.updateNotificationStatus(n), y("decline")
+      (0, o.In)(e.id, !0, !0), r.Z.updateNotificationStatus(n), y("decline")
     },
     onDismissClick: () => {
       y("dismiss")
