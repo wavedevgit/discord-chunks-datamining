@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 0ad2f4bb1cdf0614
+  Original File Name: cb4a72013e4fff6d
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -2815,6 +2815,15 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     z-index: 2
 }
 
+.collectibleDecoReminderCoachmarkArtContainer__83ef9 {
+    left: 0!important;
+    top: -42px!important
+}
+
+.collectibleDecoReminderCoachmarkArt__83ef9 {
+    width: 75%
+}
+
 .collectibleDecoReminderCoachmarkHeader__83ef9 {
     padding-top: 60px
 }
@@ -5421,4 +5430,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=0ad2f4bb1cdf0614.css.map*/
+/*# sourceMappingURL=cb4a72013e4fff6d.css.map*/

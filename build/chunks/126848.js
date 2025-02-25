@@ -18,8 +18,8 @@ var s = r(120356),
   b = r(52188),
   g = r(346497),
   O = r(924540),
-  h = r(474486),
-  m = r(227140),
+  m = r(474486),
+  h = r(227140),
   x = r(351402),
   j = r(170671),
   y = r(474936),
@@ -44,11 +44,11 @@ function P(e) {
       autoTrackExposure: !1
     }),
     T = w && (null == _ ? void 0 : _.trial_id) === y.a7,
-    L = (0, u.m)({
+    R = (0, u.m)({
       location: "UserSettingsPremiumLabel"
     }),
-    R = (0, a.wE)(l.z.Q1_2025_MARKETING_MOMENT_PROMO_SHEET);
-  return t = !0 === L ? !0 === R ? (0, n.jsx)(h.Du, {}) : (0, n.jsx)(m.Z, {
+    L = (0, a.wE)(l.z.Q1_2025_MARKETING_MOMENT_PROMO_SHEET);
+  return t = !0 === R ? !0 === L ? (0, n.jsx)(m.Du, {}) : (0, n.jsx)(h.Z, {
     copy: C.NW.string(C.t.OS9KPj),
     showStars: !1
   }) : E ? (0, n.jsx)(f.Z, {}) : null != S ? (0, n.jsx)(O.GN, {

@@ -1,31 +1,31 @@
-/** Chunk was on 82412 **/
+/** Chunk was on 93259 **/
 n.d(t, {
-  dx: () => o
+  dx: () => l
 }), n(610138), n(216116), n(78328), n(815648), n(47120);
-var r = n(749681);
+var a = n(749681);
 n(703656), n(34674), n(132871);
-var c = n(272242);
+var o = n(272242);
 n(981631);
-var l = n(49898),
-  a = n(979007);
-let o = e => {
+var r = n(49898),
+  i = n(979007);
+let l = e => {
   let {
     guildId: t,
     applicationId: n,
-    applicationSection: o,
-    entrypoint: i,
+    applicationSection: l,
+    entrypoint: c,
     skuId: s,
-    restorePreviousView: u
-  } = e, d = null == n ? void 0 : o === c.c.STORE ? a.GlobalDiscoveryAppsSections.STORE : a.GlobalDiscoveryAppsSections.ABOUT;
-  return (0, r.transitionToGlobalDiscovery)({
-    tab: l.GlobalDiscoveryTab.APPS,
+    restorePreviousView: d
+  } = e, _ = null == n ? void 0 : l === o.c.STORE ? i.GlobalDiscoveryAppsSections.STORE : i.GlobalDiscoveryAppsSections.ABOUT;
+  return (0, a.transitionToGlobalDiscovery)({
+    tab: r.GlobalDiscoveryTab.APPS,
     applicationId: n,
-    section: d,
-    skuId: d === a.GlobalDiscoveryAppsSections.STORE ? s : void 0,
+    section: _,
+    skuId: _ === i.GlobalDiscoveryAppsSections.STORE ? s : void 0,
     newSessionState: {
       guildId: null != t ? t : null,
-      entrypoint: i,
-      restorePreviousView: u
+      entrypoint: c,
+      restorePreviousView: d
     }
   })
 }

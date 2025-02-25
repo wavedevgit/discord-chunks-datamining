@@ -1,11 +1,11 @@
-/** Chunk was on 5202 **/
+/** Chunk was on 93259 **/
 n.d(t, {
   default: () => S
 }), n(47120);
 var a = n(200651),
   o = n(192379),
-  i = n(481060),
-  r = n(846027),
+  r = n(481060),
+  i = n(846027),
   l = n(410575),
   c = n(2052),
   s = n(100527),
@@ -31,7 +31,7 @@ function S(e) {
     videoEnabled: n,
     onEnable: S,
     onClose: N
-  } = e, A = h.Z.getCameraComponent(), R = (0, u.Dt)(), y = (0, m.Z)(), k = b.qF.useSetting(), [L, P] = o.useState((0, f.P)(O.default.getCurrentUser())), w = (0, c.O)(), {
+  } = e, A = h.Z.getCameraComponent(), R = (0, u.Dt)(), k = (0, m.Z)(), y = b.qF.useSetting(), [L, P] = o.useState((0, f.P)(O.default.getCurrentUser())), w = (0, c.O)(), {
     analyticsLocations: B
   } = (0, d.ZP)(s.Z.CAMERA_PREVIEW), x = o.useRef(null);
   o.useEffect(() => {
@@ -43,7 +43,7 @@ function S(e) {
     null === (e = x.current) || void 0 === e || e.scrollToTop()
   }, []);
   let D = async () => {
-    await U(), r.Z.setVideoEnabled(!0), null == S || S()
+    await U(), i.Z.setVideoEnabled(!0), null == S || S()
   }, U = async () => {
     try {
       await (0, p.wG)(L, {
@@ -75,15 +75,15 @@ function S(e) {
     value: B,
     children: (0, a.jsx)(l.Z, {
       page: E.ZY5.PREVIEW_CAMERA_MODAL,
-      children: (0, a.jsxs)(i.Y0X, {
+      children: (0, a.jsxs)(r.Y0X, {
         className: T.modalRoot,
-        size: i.CgR.DYNAMIC,
+        size: r.CgR.DYNAMIC,
         "aria-labelledby": R,
         transitionState: t,
-        children: [(0, a.jsxs)(i.hzk, {
-          className: y ? T.contentWithVideoBackgrounds : T.content,
+        children: [(0, a.jsxs)(r.hzk, {
+          className: k ? T.contentWithVideoBackgrounds : T.content,
           scrollerRef: x,
-          children: [(0, a.jsx)(i.X6q, {
+          children: [(0, a.jsx)(r.X6q, {
             id: R,
             className: T.header,
             variant: "heading-xl/semibold",
@@ -110,31 +110,31 @@ function S(e) {
             }),
             onLearnMore: N
           })]
-        }), (0, a.jsxs)(i.mzw, {
+        }), (0, a.jsxs)(r.mzw, {
           justify: _.Z.Justify.BETWEEN,
           children: [(() => {
             let e = n ? v.NW.string(v.t.KQENho) : v.NW.string(v.t.kgIe9f);
-            return (0, a.jsx)(i.zxk, {
+            return (0, a.jsx)(r.zxk, {
               onClick: n ? U : D,
-              size: i.zxk.Sizes.SMALL,
+              size: r.zxk.Sizes.SMALL,
               autoFocus: !n,
               children: e
             })
-          })(), (0, a.jsx)(i.XZJ, {
+          })(), (0, a.jsx)(r.XZJ, {
             size: 18,
-            type: i.XZJ.Types.INVERTED,
-            value: k,
+            type: r.XZJ.Types.INVERTED,
+            value: y,
             onChange: () => {
-              b.qF.updateSetting(!k), C.default.track(E.rMx.UPDATE_USER_SETTINGS_LOCAL, {
-                always_preview_video: !k
+              b.qF.updateSetting(!y), C.default.track(E.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+                always_preview_video: !y
               })
             },
-            children: (0, a.jsx)(i.Text, {
+            children: (0, a.jsx)(r.Text, {
               variant: "text-sm/normal",
               children: v.NW.string(v.t["3Ppr1t"])
             })
           })]
-        }), (0, a.jsx)(i.olH, {
+        }), (0, a.jsx)(r.olH, {
           onClick: N,
           className: T.modalClose
         })]

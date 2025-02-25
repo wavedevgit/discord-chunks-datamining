@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 802f33bd0b18e4d4
+  Original File Name: 9de2c4215aa930e2
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -2805,6 +2805,15 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     z-index: 2
 }
 
+.collectibleDecoReminderCoachmarkArtContainer__83ef9 {
+    left: 0!important;
+    top: -42px!important
+}
+
+.collectibleDecoReminderCoachmarkArt__83ef9 {
+    width: 75%
+}
+
 .collectibleDecoReminderCoachmarkHeader__83ef9 {
     padding-top: 60px
 }
@@ -4841,4 +4850,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=802f33bd0b18e4d4.css.map*/
+/*# sourceMappingURL=9de2c4215aa930e2.css.map*/

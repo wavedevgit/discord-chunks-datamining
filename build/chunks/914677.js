@@ -51,7 +51,7 @@ let c = "url(#gradient)",
       progressCircleStrokeSize: b = 2,
       progressCircleVariation: g,
       progressCircleStroke: O
-    } = e, h = 43 + b / 2, m = 2 * Math.PI * h, [x, j] = s.useState(f);
+    } = e, m = 43 + b / 2, h = 2 * Math.PI * m, [x, j] = s.useState(f);
     s.useEffect(() => {
       let e = setTimeout(() => {
         j(t)
@@ -72,7 +72,7 @@ let c = "url(#gradient)",
           className: g === l.Qo.NITRO_GEM || g === l.Qo.AVATAR_DECO ? a.baseProgressCircle : void 0,
           fill: "transparent",
           strokeWidth: b,
-          r: "".concat(h),
+          r: "".concat(m),
           cx: "50%",
           cy: "50%",
           stroke: v,
@@ -81,12 +81,12 @@ let c = "url(#gradient)",
           stroke: _,
           strokeWidth: b,
           strokeLinecap: "round",
-          strokeDasharray: "".concat(m, " ").concat(m),
+          strokeDasharray: "".concat(h, " ").concat(h),
           className: c,
           style: {
-            strokeDashoffset: (1 - x / 100) * m
+            strokeDashoffset: (1 - x / 100) * h
           },
-          r: "".concat(h),
+          r: "".concat(m),
           cx: "50%",
           cy: "50%"
         })]

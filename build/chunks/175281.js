@@ -1,4 +1,4 @@
-/** Chunk was on 11663 **/
+/** Chunk was on 25499 **/
 n.d(t, {
   Z: () => k
 }), n(266796), n(47120), n(653041);
@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(612226),
   m = n(951483),
   f = n(714338),
-  O = n(607070),
-  g = n(460181),
+  g = n(607070),
+  O = n(460181),
   N = n(585483),
   I = n(264549),
   b = n(981631),
@@ -34,10 +34,10 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 let y = {
-  UP: u().throttle(() => (0, g.GN)("ddr-up"), 100),
-  DOWN: u().throttle(() => (0, g.GN)("ddr-down"), 100),
-  LEFT: u().throttle(() => (0, g.GN)("ddr-left"), 100),
-  RIGHT: u().throttle(() => (0, g.GN)("ddr-right"), 100)
+  UP: u().throttle(() => (0, O.GN)("ddr-up"), 100),
+  DOWN: u().throttle(() => (0, O.GN)("ddr-down"), 100),
+  LEFT: u().throttle(() => (0, O.GN)("ddr-left"), 100),
+  RIGHT: u().throttle(() => (0, O.GN)("ddr-right"), 100)
 };
 
 function R(e) {
@@ -286,10 +286,10 @@ function k(e) {
     onClose: n
   } = e, [l, a] = i.useState(!1), [s, c] = i.useState(!1), u = i.useMemo(() => __OVERLAY__ ? (0, m.Zg)() : (0, h.Rv)(), []), {
     keyboardModeEnabled: d,
-    useReducedMotion: g
-  } = (0, _.cj)([O.Z], () => ({
-    keyboardModeEnabled: O.Z.keyboardModeEnabled,
-    useReducedMotion: O.Z.useReducedMotion
+    useReducedMotion: O
+  } = (0, _.cj)([g.Z], () => ({
+    keyboardModeEnabled: g.Z.keyboardModeEnabled,
+    useReducedMotion: g.Z.useReducedMotion
   }));
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(P, {
@@ -311,7 +311,7 @@ function k(e) {
           content: u,
           keyboardModeEnabled: d,
           activateRagingDemon: function() {
-            g || (f.Z.disable(), a(!0), c(!0))
+            O || (f.Z.disable(), a(!0), c(!0))
           }
         }, "modal")
       })

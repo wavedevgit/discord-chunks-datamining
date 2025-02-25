@@ -6,7 +6,7 @@ var r = n(200651);
 n(192379);
 var i = n(524437),
   s = n(481060),
-  a = n(704454),
+  a = n(191237),
   l = n(247206),
   o = n(294602),
   c = n(880257),
@@ -27,7 +27,10 @@ function b() {
       explicitContentNonFriendDm: N
     } = (0, o.B)(),
     x = e => {
-      !(0, a.G7)("explicit_media_redaction_settings") && (0, l.zj)(e)
+      if ((0, l.Ks)()) {
+        a.Z.showAgeVerificationGetStartedModal();
+        return
+      }(0, l.zj)(e)
     },
     _ = [{
       value: i.Q4.BLUR,

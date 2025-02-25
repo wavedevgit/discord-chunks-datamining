@@ -28,8 +28,8 @@ function f(e) {
     ctaLabel: b,
     ctaLoading: g,
     ctaDisabled: O,
-    ctaClassName: h,
-    onClick: m
+    ctaClassName: m,
+    onClick: h
   } = e, x = (0, a.ZP)();
   return (0, n.jsx)(u.Z, {
     className: i()(d.statusWarningBlock, {
@@ -42,13 +42,13 @@ function f(e) {
         variant: "text-sm/normal",
         color: "interactive-active",
         children: f
-      }), null != b && null != m && (0, n.jsx)("div", {
+      }), null != b && null != h && (0, n.jsx)("div", {
         className: d.ctaButtonContainer,
         children: (0, n.jsx)(l.zxk, {
-          className: i()(d.ctaButton, (0, o.wj)(x) ? void 0 : d.ctaBlackButton, h),
+          className: i()(d.ctaButton, (0, o.wj)(x) ? void 0 : d.ctaBlackButton, m),
           color: (0, o.wj)(x) ? l.zxk.Colors.WHITE : l.zxk.Colors.CUSTOM,
           size: l.PhG.MEDIUM,
-          onClick: m,
+          onClick: h,
           disabled: O,
           submitting: g,
           children: (0, n.jsx)(l.Text, {

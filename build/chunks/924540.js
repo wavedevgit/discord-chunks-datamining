@@ -1,8 +1,8 @@
 /** Chunk was on 40580 **/
 "use strict";
 r.d(t, {
-  $H: () => h,
-  GN: () => m
+  $H: () => m,
+  GN: () => h
 });
 var n = r(200651),
   s = r(192379),
@@ -78,7 +78,7 @@ function O(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   var t, r;
   let {
     isTabSelected: s,
@@ -95,7 +95,7 @@ function h(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     isTabSelected: t,
     userDiscount: r,

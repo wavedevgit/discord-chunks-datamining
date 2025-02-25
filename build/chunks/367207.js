@@ -1,4 +1,4 @@
-/** Chunk was on 11663 **/
+/** Chunk was on 25499 **/
 n.d(t, {
   Z: () => G
 }), n(411104), n(47120);
@@ -18,8 +18,8 @@ var i = n(392711),
   h = n(431),
   m = n(626135),
   f = n(74538),
-  O = n(557457),
-  g = n(970645),
+  g = n(557457),
+  O = n(970645),
   N = n(30684),
   I = n(514701),
   b = n(6242),
@@ -146,7 +146,7 @@ class F extends s.Z {
       })
     }), Z(this, "_maybeFetchCheckoutRecovery", async () => {
       let e = p.default.getCurrentUser();
-      null != e && e.verified && !(0, f.I5)(e) && N.Z.shouldFetchCheckoutRecovery() && await (0, g.o)()
+      null != e && e.verified && !(0, f.I5)(e) && N.Z.shouldFetchCheckoutRecovery() && await (0, O.o)()
     }), Z(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
@@ -191,7 +191,7 @@ class F extends s.Z {
       let d = U.NW.formatToPlainString(U.t.AbyeZG, {
         nickname: l.userNick,
         resolution: (0, j.o6)(l.maxResolution.height),
-        fps: (0, O.bp)(l.maxFrameRate)
+        fps: (0, g.bp)(l.maxFrameRate)
       });
       a.Z.sendNitroSystemMessage(e, d), m.default.track(x.rMx.PREMIUM_UPSELL_MESSAGE_SENT, {
         type: k.cd.HD_STREAMING_VIEWER_UPSELL,

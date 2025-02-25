@@ -109,19 +109,20 @@ function b(e) {
 let P = e => {
   let {
     className: t,
-    channel: n,
-    locked: l,
-    hasActiveThreads: a,
-    withGuildIcon: o
-  } = e, c = (0, s.e7)([I.Z], () => I.Z.getGuild(n.guild_id), [n.guild_id]), u = n.type === S.d4z.DM || n.type === S.d4z.GROUP_DM, d = null;
-  if (o && null != c && !u) d = (0, r.jsx)(T.Z, {
+    containerClassName: n,
+    channel: l,
+    locked: a,
+    hasActiveThreads: o,
+    withGuildIcon: c
+  } = e, u = (0, s.e7)([I.Z], () => I.Z.getGuild(l.guild_id), [l.guild_id]), d = l.type === S.d4z.DM || l.type === S.d4z.GROUP_DM, A = null;
+  if (c && null != u && !d) A = (0, r.jsx)(T.Z, {
     size: T.E.SMALL_32,
     className: C.iconContainerWithGuildIcon,
     iconClassName: C.iconWithGuildIcon,
-    channel: n,
-    guild: c,
-    locked: l,
-    hasActiveThreads: a
+    channel: l,
+    guild: u,
+    locked: a,
+    hasActiveThreads: o
   });
   else {
     let e = function(e, t, n) {
@@ -141,26 +142,26 @@ let P = e => {
         default:
           return (0, _.KS)(e, t, n)
       }
-    }(n, c, {
-      locked: l,
-      hasActiveThreads: a
+    }(l, u, {
+      locked: a,
+      hasActiveThreads: o
     });
     if (null == e) return null;
-    d = (0, r.jsx)(e, {
+    A = (0, r.jsx)(e, {
       color: "currentColor",
       className: i()(C.icon, t)
     })
   }
-  let A = o ? null == c ? void 0 : c.name : (0, _.bT)(n, c, l, a),
-    N = o && null != c ? "".concat(c.name, " - ").concat(A, " icon") : "".concat(A, " icon");
+  let N = c ? null == u ? void 0 : u.name : (0, _.bT)(l, u, a, o),
+    O = c && null != u ? "".concat(u.name, " - ").concat(N, " icon") : "".concat(N, " icon");
   return (0, r.jsx)(E.ua7, {
-    text: A,
+    text: N,
     delay: 500,
     children: e => (0, r.jsx)("div", L(D({}, e), {
       role: "img",
-      "aria-label": N,
-      className: i()(C.iconContainer),
-      children: d
+      "aria-label": O,
+      className: i()(C.iconContainer, n),
+      children: A
     }))
   })
 };

@@ -1,10 +1,11 @@
 /** Chunk was on 624 **/
 n.d(t, {
-  Ep: () => l,
-  nS: () => a
+  SI: () => c,
+  nS: () => l
 });
-var r = n(818083);
-let i = (0, r.B)({
+var r = n(191237),
+  i = n(818083);
+let s = (0, i.B)({
     kind: "user",
     id: "2025-02_dm_defaults_new_users",
     label: "Default DM Settings - New Users",
@@ -31,7 +32,7 @@ let i = (0, r.B)({
       }
     }]
   }),
-  s = (0, r.B)({
+  a = (0, i.B)({
     kind: "user",
     id: "2025-02_dm_defaults",
     label: "Default DM Settings",
@@ -58,29 +59,30 @@ let i = (0, r.B)({
       }
     }]
   }),
-  a = e => {
-    let t = s.useExperiment({
+  l = e => {
+    let t = a.useExperiment({
         location: e
       }, {
         autoTrackExposure: !1
       }),
-      n = i.useExperiment({
+      n = s.useExperiment({
         location: e
       }, {
         autoTrackExposure: !1
       });
     return t.dmOffByDefault || n.dmOffByDefault
   },
-  l = e => {
-    let t = s.getCurrentConfig({
+  o = e => {
+    let t = a.getCurrentConfig({
         location: e
       }, {
         autoTrackExposure: !1
       }),
-      n = i.getCurrentConfig({
+      n = s.getCurrentConfig({
         location: e
       }, {
         autoTrackExposure: !1
       });
     return t.messageRequestOnByDefault || n.messageRequestOnByDefault
-  }
+  },
+  c = () => r.Z.shouldShowTiggerPawtect() && o("shouldAgeVerifyForDMDefaultOff")

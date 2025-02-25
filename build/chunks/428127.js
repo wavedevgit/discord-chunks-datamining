@@ -45,7 +45,6 @@ function v(e) {
       color: "currentColor"
     }), (0, r.jsx)(c.Text, {
       variant: "text-xs/semibold",
-      color: "currentColor",
       className: m.barText,
       children: g.NW.format(g.t["fDlr+P"], {
         count: b.length

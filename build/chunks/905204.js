@@ -2,9 +2,9 @@
 t.d(n, {
   Z: () => x
 }), t(86693), t(536091), t(653041), t(47120);
-var l = t(192379),
-  r = t(392711),
-  a = t.n(r),
+var r = t(192379),
+  l = t(392711),
+  a = t.n(l),
   i = t(442837),
   o = t(570140),
   s = t(724213),
@@ -28,39 +28,39 @@ function x(e) {
     var n;
     return null !== (n = h.Z.getPendingResponseOptions(e)) && void 0 !== n ? n : g
   }, [e]);
-  return l.useEffect(() => (f(e), () => f(e)), [e]), l.useEffect(() => {
+  return r.useEffect(() => (f(e), () => f(e)), [e]), r.useEffect(() => {
     null != n && 0 !== Object.keys(n).length && m.Z.updateOnboardingResponses(e)
   }, [e, n]), {
-    handleSelectOption: l.useCallback((n, t, l) => {
-      let r = h.Z.getOnboardingResponses(e),
+    handleSelectOption: r.useCallback((n, t, r) => {
+      let l = h.Z.getOnboardingResponses(e),
         {
           addedRoleIds: i,
           removedRoleIds: f
-        } = function(e, n, t, l) {
-          var r, i, o, s, c;
+        } = function(e, n, t, r) {
+          var l, i, o, s, c;
           let d = [],
             m = [];
           if (e.singleSelect && t) {
-            let t = e.options.find(e => l.includes(e.id));
-            d = a().difference(null !== (r = n.roleIds) && void 0 !== r ? r : [], null !== (i = null == t ? void 0 : t.roleIds) && void 0 !== i ? i : []), m = a().difference(null !== (o = null == t ? void 0 : t.roleIds) && void 0 !== o ? o : [], null !== (s = n.roleIds) && void 0 !== s ? s : [])
+            let t = e.options.find(e => r.includes(e.id));
+            d = a().difference(null !== (l = n.roleIds) && void 0 !== l ? l : [], null !== (i = null == t ? void 0 : t.roleIds) && void 0 !== i ? i : []), m = a().difference(null !== (o = null == t ? void 0 : t.roleIds) && void 0 !== o ? o : [], null !== (s = n.roleIds) && void 0 !== s ? s : [])
           } else if (t) d = null !== (c = n.roleIds) && void 0 !== c ? c : [], m = [];
           else {
-            let t = e.options.filter(e => l.includes(e.id)),
-              r = t.filter(e => n.id !== e.id),
+            let t = e.options.filter(e => r.includes(e.id)),
+              l = t.filter(e => n.id !== e.id),
               i = t.map(e => e.roleIds).flat().filter(u.lm),
-              o = r.map(e => e.roleIds).flat().filter(u.lm);
+              o = l.map(e => e.roleIds).flat().filter(u.lm);
             d = [], m = a().difference(i, o)
           }
           return {
             addedRoleIds: d,
             removedRoleIds: m
           }
-        }(n, t, l, r),
+        }(n, t, r, l),
         {
           addedChannelIds: g,
           removedChannelIds: x
         } = function(e) {
-          var n, t, l, r, i;
+          var n, t, r, l, i;
           let {
             guildId: o,
             prompt: c,
@@ -70,14 +70,14 @@ function x(e) {
           } = e, f = [], g = [];
           if (c.singleSelect && m) {
             let e = c.options.find(e => p.includes(e.id));
-            f = a().difference(null !== (n = d.channelIds) && void 0 !== n ? n : [], null !== (t = null == e ? void 0 : e.channelIds) && void 0 !== t ? t : []), g = a().difference(null !== (l = null == e ? void 0 : e.channelIds) && void 0 !== l ? l : [], null !== (r = d.channelIds) && void 0 !== r ? r : [])
+            f = a().difference(null !== (n = d.channelIds) && void 0 !== n ? n : [], null !== (t = null == e ? void 0 : e.channelIds) && void 0 !== t ? t : []), g = a().difference(null !== (r = null == e ? void 0 : e.channelIds) && void 0 !== r ? r : [], null !== (l = d.channelIds) && void 0 !== l ? l : [])
           } else if (m) f = null !== (i = d.channelIds) && void 0 !== i ? i : [], g = [];
           else {
             let e = c.options.filter(e => p.includes(e.id)),
               n = e.filter(e => d.id !== e.id),
               t = e.map(e => e.channelIds).flat().filter(u.lm),
-              l = n.map(e => e.channelIds).flat().filter(u.lm);
-            f = [], g = a().difference(t, l)
+              r = n.map(e => e.channelIds).flat().filter(u.lm);
+            f = [], g = a().difference(t, r)
           }
           return (0, s.hi)(o) && f.push(...h.Z.getDefaultChannelIds(o)), {
             addedChannelIds: f,
@@ -87,38 +87,38 @@ function x(e) {
           guildId: e,
           prompt: n,
           option: t,
-          selected: l,
-          responses: r
+          selected: r,
+          responses: l
         }),
         _ = function(e) {
           for (var n = 1; n < arguments.length; n++) {
             var t = null != arguments[n] ? arguments[n] : {},
-              l = Object.keys(t);
-            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+              r = Object.keys(t);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
               return Object.getOwnPropertyDescriptor(t, e).enumerable
-            }))), l.forEach(function(n) {
-              var l;
-              l = t[n], n in e ? Object.defineProperty(e, n, {
-                value: l,
+            }))), r.forEach(function(n) {
+              var r;
+              r = t[n], n in e ? Object.defineProperty(e, n, {
+                value: r,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[n] = l
+              }) : e[n] = r
             })
           }
           return e
         }({}, g.reduce((n, t) => {
-          let l = c.ZP.getChannelIdFlags(e, t);
+          let r = c.ZP.getChannelIdFlags(e, t);
           return n[t] = {
-            flags: (0, d.mB)(l, p.ic.OPT_IN_ENABLED, !0)
+            flags: (0, d.mB)(r, p.ic.OPT_IN_ENABLED, !0)
           }, n
         }, {}), x.reduce((n, t) => {
-          let l = c.ZP.getChannelIdFlags(e, t);
+          let r = c.ZP.getChannelIdFlags(e, t);
           return n[t] = {
-            flags: (0, d.mB)(l, p.ic.OPT_IN_ENABLED, !1)
+            flags: (0, d.mB)(r, p.ic.OPT_IN_ENABLED, !1)
           }, n
         }, {}));
-      m.Z.selectOption(e, n.id, t.id, l), o.Z.dispatch({
+      m.Z.selectOption(e, n.id, t.id, r), o.Z.dispatch({
         type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK",
         guildId: e,
         overrides: _

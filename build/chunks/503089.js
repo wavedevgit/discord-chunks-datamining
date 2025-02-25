@@ -20,8 +20,8 @@ var n = r(200651),
   b = r(960048),
   g = r(410575),
   O = r(493544),
-  h = r(981631),
-  m = r(388032),
+  m = r(981631),
+  h = r(388032),
   x = r(293984);
 
 function j(e, t, r) {
@@ -79,7 +79,7 @@ function E(e) {
     name: null == s ? void 0 : s.impressionName,
     properties: null == s ? void 0 : s.impressionProperties
   });
-  let c = null !== (t = null == s ? void 0 : s.element) && void 0 !== t ? t : h.VqG,
+  let c = null !== (t = null == s ? void 0 : s.element) && void 0 !== t ? t : m.VqG,
     u = null !== (r = null == s ? void 0 : s.elementProps) && void 0 !== r ? r : {};
   return (0, n.jsx)(g.Z, {
     section: s.section,
@@ -126,10 +126,10 @@ class N extends s.PureComponent {
     } = this.props, {
       notice: r
     } = null !== (e = this.getPredicateSections().find(e => t === e.section)) && void 0 !== e ? e : {};
-    return null != r && r.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (f.S.dispatch(h.CkL.SHAKE_APP, {
+    return null != r && r.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (f.S.dispatch(m.CkL.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
-    }), this._intensity = Math.min(this._intensity + S, _), f.S.dispatch(h.CkL.EMPHASIZE_NOTICE), !1) : (this._intensity = P, !0)
+    }), this._intensity = Math.min(this._intensity + S, _), f.S.dispatch(m.CkL.EMPHASIZE_NOTICE), !1) : (this._intensity = P, !0)
   }
   renderSidebar(e) {
     let {
@@ -161,7 +161,7 @@ class N extends s.PureComponent {
                 return (0, n.jsx)(l.njP.Separator, {}, t);
               case O.ID.CUSTOM:
                 var r;
-                let s = null !== (r = e.element) && void 0 !== r ? r : h.VqG;
+                let s = null !== (r = e.element) && void 0 !== r ? r : m.VqG;
                 return (0, n.jsx)(s, {}, t);
               default:
                 return this.renderSettingsSectionTabBarItem(e, o === e.section, i)
@@ -222,7 +222,7 @@ class N extends s.PureComponent {
   }
   constructor(...e) {
     super(...e), j(this, "_unmounted", !1), j(this, "_intensity", P), j(this, "_subscribedStores", []), j(this, "scrollerRef", s.createRef()), j(this, "state", C(y({}, v), {
-      sidebarOpen: this.props.section !== h.oAB.SUBSCRIPTIONS && this.props.section !== h.oAB.PROFILE_CUSTOMIZATION
+      sidebarOpen: this.props.section !== m.oAB.SUBSCRIPTIONS && this.props.section !== m.oAB.PROFILE_CUSTOMIZATION
     })), j(this, "setPreventNavigation", (e, t) => {
       this.setState({
         shouldPreventNavigation: e,
@@ -273,7 +273,7 @@ class N extends s.PureComponent {
         newIndicatorDismissibleContentTypes: g,
         badgeCount: O
       } = e, j = null;
-      s === h.oAB.ACCOUNT && this.props.isEligibleForPomelo ? j = (0, n.jsx)(l.P4T, {
+      s === m.oAB.ACCOUNT && this.props.isEligibleForPomelo ? j = (0, n.jsx)(l.P4T, {
         size: "custom",
         width: 20,
         height: 20,
@@ -283,11 +283,11 @@ class N extends s.PureComponent {
         color: "text-muted",
         children: e.decoration
       }) : null != r && (null == g ? void 0 : g.includes(r)) && !t ? j = null != b ? b : (0, n.jsx)(l.IGR, {
-        text: m.NW.string(m.t.y2b7CA)
+        text: h.NW.string(h.t.y2b7CA)
       }) : null != p ? j = p : null != O && O > 0 && (j = (0, n.jsx)(l.mAB, {
         count: O
       }));
-      let y = s === h.oAB.PREMIUM ? (0, n.jsx)(d.Z, {
+      let y = s === m.oAB.PREMIUM ? (0, n.jsx)(d.Z, {
         label: i,
         isSelected: t,
         decoration: j

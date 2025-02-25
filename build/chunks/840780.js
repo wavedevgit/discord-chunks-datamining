@@ -169,12 +169,12 @@ class es extends i.PureComponent {
       channelName: a,
       guildForConnectedChannel: s
     } = this.props;
-    if (null == i || null == l || null == n) return null;
+    if (null == i || null == n) return null;
     let c = {
         start: i.connectedSince
       },
       p = a;
-    null != s ? (e = en.Z5c.CHANNEL(s.id, l.id), p = "".concat(p, " / ").concat(s.name)) : e = en.Z5c.CHANNEL(en.ME, l.id);
+    null != s && null != l ? (e = en.Z5c.CHANNEL(s.id, l.id), p = "".concat(p, " / ").concat(s.name)) : null != l && (e = en.Z5c.CHANNEL(en.ME, l.id));
     let h = (0, r.jsx)(R.Z, {
       href: e,
       onClick: this.handleApplicationOrChannelLinkClick,
@@ -200,7 +200,7 @@ class es extends i.PureComponent {
         size: Z.Z.Sizes.SMALL
       }), (0, r.jsxs)("div", {
         className: ei.info,
-        children: [t, (0, M.Qm)(l.type) ? h : (0, r.jsx)(ea, {
+        children: [t, null != l && (0, M.Qm)(l.type) ? h : (0, r.jsx)(ea, {
           timestamps: c
         })]
       })]
@@ -284,7 +284,7 @@ let ec = (0, g.Z)(function(e) {
     f = (0, c.e7)([V.Z], () => V.Z.getGuild(null == h ? void 0 : h.guild_id)),
     [g, y] = (0, c.Wu)([G.Z], () => [G.Z.getCurrentUserActiveStream(), G.Z.getStreamerActiveStreamMetadata()]),
     O = (0, c.e7)([m.Z], () => m.Z.useReducedMotion),
-    C = (0, c.e7)([_.ZP], () => null != h ? _.ZP.getSelfEmbeddedActivityForChannel(h.id) : null),
+    C = (0, c.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()),
     P = (0, c.e7)([V.Z, H.Z, W.ZP], () => null != d ? w.JL(d, V.Z, H.Z, !1) : null != o && w.h_(W.ZP.getChannels(o), V.Z, H.Z).length > 0),
     [N] = (0, j.Z)([null !== (l = null != y && null != y.id ? y.id : null != u && null != u.id ? u.id : null != C ? C.applicationId : void 0) && void 0 !== l ? l : ""]),
     Z = (0, c.e7)([S.Z], () => S.Z.getFakeGameData()),

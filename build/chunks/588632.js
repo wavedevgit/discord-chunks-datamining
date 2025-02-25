@@ -2,8 +2,8 @@
 t.d(n, {
   Z: () => u
 }), t(47120), t(653041);
-var l = t(200651),
-  r = t(192379),
+var r = t(200651),
+  l = t(192379),
   a = t(692547),
   i = t(481060),
   o = t(596454),
@@ -21,12 +21,12 @@ function u(e) {
     onChange: u,
     canBeNew: m,
     memberCounts: h
-  } = e, p = r.useMemo(() => {
+  } = e, p = l.useMemo(() => {
     let e = new Map;
     return n.forEach(n => {
       e.set(n.id, n)
     }), e
-  }, [n]), f = r.useMemo(() => {
+  }, [n]), f = l.useMemo(() => {
     let e = [];
     return n.forEach(n => {
       e.push({
@@ -35,47 +35,47 @@ function u(e) {
         key: n.id
       })
     }), e
-  }, [n]), g = r.useCallback(e => {
-    var n, t, r, a;
+  }, [n]), g = l.useCallback(e => {
+    var n, t, l, a;
     if (null == e) return;
     let i = p.get(e.value);
-    if (null != i && d(i.emoji)) return (0, l.jsx)(o.Z, {
+    if (null != i && d(i.emoji)) return (0, r.jsx)(o.Z, {
       emojiId: null === (n = i.emoji) || void 0 === n ? void 0 : n.id,
       emojiName: null === (t = i.emoji) || void 0 === t ? void 0 : t.name,
-      animated: null !== (a = null === (r = i.emoji) || void 0 === r ? void 0 : r.animated) && void 0 !== a && a
+      animated: null !== (a = null === (l = i.emoji) || void 0 === l ? void 0 : l.animated) && void 0 !== a && a
     })
-  }, [p]), x = r.useCallback((e, n) => {
+  }, [p]), x = l.useCallback((e, n) => {
     if (null == e || n.inPill) return;
     let t = p.get(e.value);
     if (null == t || !d(t.emoji)) return;
-    let r = null == h || null == t.roleIds ? 0 : Math.max(...t.roleIds.map(e => h[e])),
-      o = null != h && r > 0;
-    return (0, l.jsxs)("div", {
+    let l = null == h || null == t.roleIds ? 0 : Math.max(...t.roleIds.map(e => h[e])),
+      o = null != h && l > 0;
+    return (0, r.jsxs)("div", {
       className: c.suffix,
-      children: [m && t.isUnseen && (0, l.jsx)(i.IGR, {
+      children: [m && t.isUnseen && (0, r.jsx)(i.IGR, {
         color: a.Z.unsafe_rawColors.BRAND_260.css,
         text: s.NW.string(s.t.y2b7CA),
         className: c.newBadge
-      }), o && (0, l.jsx)("div", {
+      }), o && (0, r.jsx)("div", {
         className: c.memberCount,
         "data-hover": !0,
-        children: (0, l.jsx)(i.Text, {
+        children: (0, r.jsx)(i.Text, {
           variant: "text-xs/normal",
           color: "always-white",
           children: s.NW.format(s.t.EgKsZG, {
-            memberCount: r
+            memberCount: l
           })
         })
       })]
     })
-  }, [m, h, p]), _ = r.useCallback(e => {
+  }, [m, h, p]), _ = l.useCallback(e => {
     let n = [];
     e.forEach(e => {
       let t = p.get(e);
       null != t && n.push(t)
     }), u(n)
   }, [u, p]);
-  return (0, l.jsx)(i.VcW, {
+  return (0, r.jsx)(i.VcW, {
     multi: !0,
     options: f,
     onChange: _,

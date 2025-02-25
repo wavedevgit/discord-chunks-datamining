@@ -17,11 +17,11 @@ var n = r(192379),
   b = r(557017),
   g = r(474936),
   O = r(231338);
-let h = e => {
+let m = e => {
     let t = new Date;
     return t.setDate(t.getDate() - 10), e.currentPeriodEnd >= t
   },
-  m = e => {
+  h = e => {
     var t;
     let r = null === (t = (0, p.Af)(e)) || void 0 === t ? void 0 : t.planId;
     return void 0 === r || p.ZP.getPremiumType(r) !== g.p9.TIER_2
@@ -52,7 +52,7 @@ function x(e) {
         v ? p(!1) : p(!0);
         return
       }
-      x.isPaused ? p(!0) : x.isEnded ? c.Z.hasAnyUnexpiredOffer() || c.Z.hasAnyUnexpiredDiscountOffer() || h(x) ? p(!1) : p(!0) : x.isActive ? p(m(x)) : p(!1)
+      x.isPaused ? p(!0) : x.isEnded ? c.Z.hasAnyUnexpiredOffer() || c.Z.hasAnyUnexpiredDiscountOffer() || m(x) ? p(!1) : p(!0) : x.isActive ? p(h(x)) : p(!1)
     }
   }, [g.enabled, y, x, j, v]), r
 }

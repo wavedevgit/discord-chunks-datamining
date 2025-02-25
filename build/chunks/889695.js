@@ -1,4 +1,4 @@
-/** Chunk was on 72618 **/
+/** Chunk was on 46086 **/
 n.d(t, {
   Z: () => E
 }), n(47120), n(653041);
@@ -18,8 +18,8 @@ var r = n(200651),
   m = n(709054),
   f = n(962086),
   O = n(160404),
-  S = n(225675),
-  h = n(981631),
+  h = n(225675),
+  S = n(981631),
   v = n(388032),
   C = n(214174);
 
@@ -42,7 +42,7 @@ function E(e) {
   } = (0, u.cj)([O.Z], () => ({
     impersonateType: O.Z.getImpersonateType(t),
     viewingRoles: O.Z.getViewingRoles(t)
-  })), P = E === S.z.SERVER_SHOP, N = (0, u.e7)([_.ZP], () => null != n ? _.ZP.getTrueMember(t, n.id) : null), [L, x] = (0, d.A7R)(null == T ? [] : m.default.keys(T)), y = o.useRef(i);
+  })), P = E === h.z.SERVER_SHOP, N = (0, u.e7)([_.ZP], () => null != n ? _.ZP.getTrueMember(t, n.id) : null), [L, x] = (0, d.A7R)(null == T ? [] : m.default.keys(T)), y = o.useRef(i);
   o.useEffect(() => {
     let e = {},
       t = y.current;
@@ -69,7 +69,7 @@ function E(e) {
   }), s.e$(p.I0({
     forceRoles: w,
     context: i
-  }), s.$e(h.Plq.MANAGE_GUILD, h.Plq.MANAGE_ROLES)) || i.isOwner(n.id)) ? (0, r.jsx)("div", {
+  }), s.$e(S.Plq.MANAGE_GUILD, S.Plq.MANAGE_ROLES)) || i.isOwner(n.id)) ? (0, r.jsx)("div", {
     className: C.container,
     children: (0, r.jsx)(d.hQY, {
       placeholder: v.NW.string(v.t.Sojqsr),

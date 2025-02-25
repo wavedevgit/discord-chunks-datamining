@@ -1,6 +1,6 @@
 /**
   Module ID: 58121
-  Original File Name: e192bcd9725c8248
+  Original File Name: 656fa7e1e5d4b1fb
 **/
 .coverContainer__2f300 {
     height: 640px;
@@ -1284,9 +1284,15 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
     color: inherit
 }
 
+.visual-refresh .returnIconContainer__0b563 {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px
+}
+
 .visual-refresh .header__0b563 {
     border-top: 1px solid var(--app-border-frame);
     height: calc(var(--custom-channel-header-height) + 1px)
 }
 
-/*# sourceMappingURL=e192bcd9725c8248.css.map*/
+/*# sourceMappingURL=656fa7e1e5d4b1fb.css.map*/

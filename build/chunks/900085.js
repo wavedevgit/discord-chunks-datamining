@@ -1,4 +1,4 @@
-/** Chunk was on 11663 **/
+/** Chunk was on 25499 **/
 n.d(t, {
   Z: () => X
 }), n(411104), n(47120), n(301563), n(733860);
@@ -16,8 +16,8 @@ var r, i = n(200651),
   h = n(815372),
   m = n(14429),
   f = n(576855),
-  O = n(313201),
-  g = n(991346),
+  g = n(313201),
+  O = n(991346),
   N = n(592125),
   I = n(888369),
   b = n(430824),
@@ -282,7 +282,7 @@ class K extends l.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), U(this, "scrollerRef", l.createRef()), U(this, "inputRef", l.createRef()), U(this, "_listId", (0, O.hQ)()), U(this, "state", {
+    super(...e), U(this, "scrollerRef", l.createRef()), U(this, "inputRef", l.createRef()), U(this, "_listId", (0, g.hQ)()), U(this, "state", {
       query: this.props.query,
       mouseFocusDisabled: !0
     }), U(this, "handleInputChange", () => {
@@ -566,7 +566,7 @@ class K extends l.PureComponent {
 
 function X(e) {
   let t = (0, c.cj)([v.Z], () => v.Z.getProps()),
-    n = (0, g.Pt)(),
+    n = (0, O.Pt)(),
     r = k.Z.useExperiment({
       location: "QuickSwitcher"
     }).enabled,

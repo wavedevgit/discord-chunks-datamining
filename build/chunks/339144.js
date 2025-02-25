@@ -115,7 +115,7 @@ let O = i.memo(function(e) {
       onClick: D,
       icon: a.ejJ
     }) : null,
-    B = null == Z || null == S ? null : (0, r.jsx)(m.Z, {
+    B = null == Z ? null : (0, r.jsx)(m.Z, {
       tooltipText: v.NW.string(v.t["R/FK4O"]),
       onClick: R(Z.applicationId, Z.location),
       icon: a.PBZ

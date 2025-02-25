@@ -94,16 +94,19 @@ async function O() {
       type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
     }), u.Z.recordQuestRequestAttempt(g.ANM.QUESTS_CURRENT_QUESTS);
     try {
-      let e = (await i.tn.get({
-        url: g.ANM.QUESTS_CURRENT_QUESTS,
-        rejectWithError: !1
-      })).body.quests.filter(e => (0, p.Qe)(e)).map(e => (0, p.WP)(e)).filter(e => {
-        var t;
-        return (null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null || m.r.build(e.config).rewardPlatforms.length > 0
-      });
+      let e = await i.tn.get({
+          url: g.ANM.QUESTS_CURRENT_QUESTS,
+          rejectWithError: !1
+        }),
+        t = e.body.quests.filter(e => (0, p.Qe)(e)).map(e => (0, p.WP)(e)).filter(e => {
+          var t;
+          return (null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null || m.r.build(e.config).rewardPlatforms.length > 0
+        }),
+        n = e.body.excluded_quests;
       o.Z.dispatch({
         type: "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS",
-        quests: e
+        quests: t,
+        excludedQuests: n
       }), u.Z.recordQuestRequestApiResponse(g.ANM.QUESTS_CURRENT_QUESTS, {
         wasSuccessful: !0
       })

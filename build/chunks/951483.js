@@ -1,4 +1,4 @@
-/** Chunk was on 11663 **/
+/** Chunk was on 25499 **/
 n.d(t, {
   Sr: () => C,
   Xq: () => T,
@@ -19,8 +19,8 @@ var r = n(186070),
   h = n(673553),
   m = n(280492),
   f = n(746887),
-  O = n(721383),
-  g = n(743810),
+  g = n(721383),
+  O = n(743810),
   N = n(981631),
   I = n(388032);
 
@@ -39,10 +39,10 @@ let C = {
     [N.EkH.CHANNEL_PREV]: i.x5,
     [N.EkH.NAVIGATE_BACK]: i.Nx,
     [N.EkH.NAVIGATE_FORWARD]: i.On,
-    [N.EkH.UNREAD_NEXT]: g.pd,
-    [N.EkH.UNREAD_PREV]: g.wk,
-    [N.EkH.MENTION_CHANNEL_NEXT]: g.Nv,
-    [N.EkH.MENTION_CHANNEL_PREV]: g.uX,
+    [N.EkH.UNREAD_NEXT]: O.pd,
+    [N.EkH.UNREAD_PREV]: O.wk,
+    [N.EkH.MENTION_CHANNEL_NEXT]: O.Nv,
+    [N.EkH.MENTION_CHANNEL_PREV]: O.uX,
     [N.EkH.TOGGLE_PREVIOUS_GUILD]: i.$c,
     [N.EkH.JUMP_TO_GUILD]: l.u,
     [N.EkH.SUBMIT]: p.z,
@@ -55,7 +55,7 @@ let C = {
     [N.EkH.SCROLL_UP]: d.B2,
     [N.EkH.SCROLL_DOWN]: d.gN,
     [N.EkH.SEARCH_EMOJIS]: _.S,
-    [N.EkH.TOGGLE_HOTKEYS]: O._,
+    [N.EkH.TOGGLE_HOTKEYS]: g._,
     [N.EkH.JUMP_TO_FIRST_UNREAD]: s.O,
     [N.EkH.RETURN_TO_AUDIO_CHANNEL]: u.F,
     [N.EkH.CALL_ACCEPT]: r.IL,

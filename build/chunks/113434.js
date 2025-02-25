@@ -81,23 +81,25 @@ function B() {
     },
     [t, n] = r.useState(!1),
     i = (0, d.Wu)([N.Z], () => [...N.Z.quests.values()]),
+    o = (0, d.Wu)([N.Z], () => [...N.Z.excludedQuests.values()]),
     {
-      isFetchingCurrentQuests: o,
-      lastFetchedCurrentQuests: a
+      isFetchingCurrentQuests: a,
+      lastFetchedCurrentQuests: s
     } = (0, d.cj)([N.Z], () => ({
       isFetchingCurrentQuests: N.Z.isFetchingCurrentQuests,
       lastFetchedCurrentQuests: N.Z.lastFetchedCurrentQuests
     })),
-    s = (0, R.cB)({
+    l = (0, R.cB)({
       location: x.dr.USE_QUESTS
     });
   return r.useEffect(() => {
-    "cache-only" !== e.fetchPolicy && ("cache-and-network" === e.fetchPolicy || "cache-or-network" === e.fetchPolicy && 0 === a) && s && !t && !o && (n(!0), (0, T.xw)(), (0, P.Z)({
+    "cache-only" !== e.fetchPolicy && ("cache-and-network" === e.fetchPolicy || "cache-or-network" === e.fetchPolicy && 0 === s) && l && !t && !a && (n(!0), (0, T.xw)(), (0, P.Z)({
       location: x.dr.USE_QUESTS
     }) && (0, T.w)(A.Ok.DESKTOP_ACCOUNT_PANEL_AREA))
-  }, [e.fetchPolicy, s, t, o, a]), {
+  }, [e.fetchPolicy, l, t, a, s]), {
     quests: i,
-    isFetchingCurrentQuests: o
+    excludedQuests: o,
+    isFetchingCurrentQuests: a
   }
 }
 

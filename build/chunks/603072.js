@@ -2,8 +2,8 @@
 t.r(n), t.d(n, {
   default: () => B
 }), t(47120);
-var l = t(200651),
-  r = t(192379),
+var r = t(200651),
+  l = t(192379),
   a = t(120356),
   i = t.n(a),
   o = t(442837),
@@ -19,8 +19,8 @@ var l = t(200651),
   x = t(104155),
   _ = t(22082),
   C = t(703656),
-  j = t(433355),
-  b = t(592125),
+  b = t(433355),
+  j = t(592125),
   v = t(430824),
   N = t(944486),
   y = t(31445),
@@ -37,7 +37,7 @@ function T(e) {
     guild: n,
     previousChannel: t
   } = e, a = (0, y.Z)(n);
-  r.useEffect(() => {
+  l.useEffect(() => {
     (0, h.EW)(s.z.CHANNEL_BROWSER_NEW_BADGE_NUX, {
       dismissAction: w.L.DISMISS
     })
@@ -50,13 +50,13 @@ function T(e) {
     o = a ? P.NW.string(P.t.h9mGOD) : P.NW.string(P.t.et6wam);
   return (0, m.Tt)({
     location: i
-  }), (0, l.jsxs)(f.Z, {
+  }), (0, r.jsxs)(f.Z, {
     className: E.header,
     innerClassname: E.innerHeader,
     hideSearch: !0,
     channelId: Z.oC.CUSTOMIZE_COMMUNITY,
     guildId: n.id,
-    toolbar: null != t ? (0, l.jsx)(d.zxk, {
+    toolbar: null != t ? (0, r.jsx)(d.zxk, {
       className: E.returnButton,
       size: d.zxk.Sizes.SMALL,
       look: d.zxk.Looks.OUTLINED,
@@ -64,18 +64,19 @@ function T(e) {
       onClick: () => {
         null != t && (0, C.XU)(n.id, t.id)
       },
-      children: (0, l.jsx)(d.Text, {
+      children: (0, r.jsx)(d.Text, {
         className: E.returnButtonText,
         variant: "text-xs/medium",
         color: "none",
         children: P.NW.format(P.t.IX7oWl, {
-          channelNameHook: () => null == t ? null : (0, l.jsxs)(r.Fragment, {
-            children: [(0, l.jsx)(p._, {
+          channelNameHook: () => null == t ? null : (0, r.jsxs)(l.Fragment, {
+            children: [(0, r.jsx)(p._, {
               className: E.returnIcon,
+              containerClassName: E.returnIconContainer,
               guild: n,
               channel: t
-            }), (0, l.jsx)(u.Z, {
-              children: (0, l.jsx)(d.Text, {
+            }), (0, r.jsx)(u.Z, {
+              children: (0, r.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 color: "none",
                 children: t.name
@@ -85,10 +86,10 @@ function T(e) {
         })
       })
     }) : [],
-    children: [(0, l.jsx)(f.Z.Icon, {
+    children: [(0, r.jsx)(f.Z.Icon, {
       icon: d.H$4,
       "aria-hidden": !0
-    }), (0, l.jsx)(f.Z.Title, {
+    }), (0, r.jsx)(f.Z.Title, {
       children: o
     })]
   })
@@ -98,41 +99,41 @@ function B(e) {
   let {
     guildId: n,
     selectedSection: t
-  } = e, a = (0, o.e7)([v.Z], () => v.Z.getGuild(n)), s = (0, y.Z)(a), [u, m] = r.useState(null != t ? t : I.l7.CUSTOMIZE);
-  r.useEffect(() => {
+  } = e, a = (0, o.e7)([v.Z], () => v.Z.getGuild(n)), s = (0, y.Z)(a), [u, m] = l.useState(null != t ? t : I.l7.CUSTOMIZE);
+  l.useEffect(() => {
     null != t && m(t)
   }, [t]);
   let h = (0, o.e7)([N.Z], () => N.Z.getLastSelectedChannelId(n)),
-    p = (0, o.e7)([j.ZP], () => j.ZP.getCurrentSidebarChannelId(Z.oC.CHANNEL_BROWSER)),
+    p = (0, o.e7)([b.ZP], () => b.ZP.getCurrentSidebarChannelId(Z.oC.CHANNEL_BROWSER)),
     f = null != p && u === I.l7.BROWSE,
-    C = (0, o.e7)([b.Z], () => b.Z.getChannel(h)),
+    C = (0, o.e7)([j.Z], () => j.Z.getChannel(h)),
     w = (0, o.e7)([_.Z], () => _.Z.getNewChannelIds(n).size > 0),
     B = (0, g.fU)(n);
-  return null == a ? null : (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsxs)("div", {
+  return null == a ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
       className: i()(S.chat, {
         [S.threadSidebarOpen]: f
       }),
-      children: [(0, l.jsx)(T, {
+      children: [(0, r.jsx)(T, {
         guild: a,
         previousChannel: C
-      }), (0, l.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: i()(S.content, E.container),
-        children: [s && (0, l.jsxs)(d.njP, {
+        children: [s && (0, r.jsxs)(d.njP, {
           className: E.tabBar,
           type: "top",
           look: "brand",
           selectedItem: u,
           onItemSelect: e => m(e),
-          children: [(0, l.jsx)(d.njP.Item, {
+          children: [(0, r.jsx)(d.njP.Item, {
             className: E.tabBarItem,
             id: I.l7.CUSTOMIZE,
             children: P.NW.string(P.t.H2cICQ)
-          }, I.l7.CUSTOMIZE), (0, l.jsxs)(d.njP.Item, {
+          }, I.l7.CUSTOMIZE), (0, r.jsxs)(d.njP.Item, {
             className: E.tabBarItem,
             id: I.l7.BROWSE,
             "aria-label": P.NW.string(P.t.et6wam),
-            children: [P.NW.string(P.t.et6wam), (0, l.jsx)(d.IGR, {
+            children: [P.NW.string(P.t.et6wam), (0, r.jsx)(d.IGR, {
               text: w ? P.NW.string(P.t.psHMa2) : B,
               color: w ? c.Z.unsafe_rawColors.BRAND_260.css : c.Z.colors.BACKGROUND_ACCENT.css,
               className: i()({
@@ -143,19 +144,19 @@ function B(e) {
         }), (() => {
           switch (u) {
             case I.l7.CUSTOMIZE:
-              return (0, l.jsx)(O.Z, {
+              return (0, r.jsx)(O.Z, {
                 guildId: n,
                 onBrowseChannels: () => m(I.l7.BROWSE)
               });
             case I.l7.BROWSE:
             default:
-              return (0, l.jsx)(x.Z, {
+              return (0, r.jsx)(x.Z, {
                 guildId: n
               })
           }
         })()]
       })]
-    }), f && (0, l.jsx)(x.I, {
+    }), f && (0, r.jsx)(x.I, {
       channelId: p
     })]
   })
