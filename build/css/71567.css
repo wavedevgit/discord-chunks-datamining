@@ -1,6 +1,6 @@
 /**
   Module ID: 71567
-  Original File Name: 35694aa0e43cc9ed
+  Original File Name: a5baf395ad422b28
 **/
 .popoutContainer_a6cedd {
     display: flex;
@@ -12760,17 +12760,12 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     background-color: var(--divider-subtle)
 }
 
-.subtitle_e98840 {
-    text-transform: uppercase;
-    margin-bottom: 8px
-}
-
 .description_e98840 {
     margin-bottom: 24px
 }
 
 .switch_e98840 {
-    margin-top: 16px;
+    margin-top: 0;
     margin-bottom: 0
 }
 
@@ -12782,11 +12777,6 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 
 .halfWidth__1b19d {
     flex-basis: 50%
-}
-
-.subtitle__1b19d {
-    text-transform: uppercase;
-    margin-bottom: 8px
 }
 
 .tip__1b19d {
@@ -12804,14 +12794,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     flex-basis: 50%
 }
 
-.subtitle__7b422 {
-    text-transform: uppercase;
-    margin-bottom: 8px
-}
-
 .subtitle__57c9c {
-    text-transform: uppercase;
-    margin-bottom: 8px;
     display: flex;
     align-items: center;
     gap: 8px
@@ -12822,22 +12805,21 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .switch__57c9c {
-    margin-top: 16px;
+    margin-top: 0;
     margin-bottom: 0
 }
 
-.switch__80a8f {
-    margin-bottom: 16px;
-    margin-top: 16px
+.description__80a8f {
+    margin-bottom: 16px
 }
 
-.subtitle__80a8f {
-    text-transform: uppercase;
-    margin-bottom: 8px
+.switch__80a8f {
+    margin-bottom: 8px;
+    margin-top: 8px
 }
 
 .systemChannel__80a8f {
-    margin-top: 32px;
+    margin-top: 24px;
     display: flex;
     flex-direction: row;
     gap: 16px
@@ -12871,6 +12853,14 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     flex-basis: 50%
 }
 
+.divider__65a39 {
+    align-self: stretch;
+    height: 1px;
+    background-color: var(--divider-subtle);
+    margin-top: 24px;
+    margin-bottom: 24px
+}
+
 .container_f83afb {
     display: flex;
     flex-direction: column;
@@ -12885,7 +12875,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 .divider_f83afb {
     align-self: stretch;
     height: 1px;
-    background-color: var(--divider-subtle)
+    background-color: var(--divider-strong)
 }
 
 .container__33d66 {
@@ -13547,4 +13537,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=35694aa0e43cc9ed.css.map*/
+/*# sourceMappingURL=a5baf395ad422b28.css.map*/

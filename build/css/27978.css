@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 301217cc05759b04
+  Original File Name: 0ad2f4bb1cdf0614
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -2014,6 +2014,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: 100%
 }
 
+.plated__972a0 {
+    padding-right: 36px
+}
+
 .linkButton__972a0 {
     padding-right: 8px
 }
@@ -2068,6 +2072,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .decorator__972a0 {
     margin-left: 4px
+}
+
+.platedWrapper__972a0 {
+    background-color: transparent;
+    background-color: initial
 }
 
 @media (hover:hover) {
@@ -5412,4 +5421,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=301217cc05759b04.css.map*/
+/*# sourceMappingURL=0ad2f4bb1cdf0614.css.map*/

@@ -71,10 +71,9 @@ function v(e) {
       className: N.subtext,
       children: j.NW.string(j.t.zCGuJy)
     }) : null, y ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.X6, {
-        variant: "text-xs/bold",
-        color: "interactive-normal",
-        className: N.subtitle,
+      children: [(0, r.jsx)("div", {
+        className: N.divider
+      }), (0, r.jsx)(o.vwX, {
         children: j.NW.string(j.t.LUo0Q0)
       }), (0, r.jsx)(x.m, {
         guildId: t,
@@ -89,33 +88,26 @@ function v(e) {
         className: N.twoColumns,
         children: [(0, r.jsxs)("div", {
           className: N.column,
-          children: [(0, r.jsx)(a.X6, {
-            variant: "text-xs/bold",
-            color: "interactive-normal",
-            className: N.subtitle,
+          children: [(0, r.jsx)(o.vwX, {
             children: j.NW.string(j.t.TRyLUl)
           }), (0, r.jsx)(d.Z, {
             value: t
           })]
         }), (0, r.jsxs)("div", {
           className: N.column,
-          children: [(0, r.jsx)(a.X6, {
-            variant: "text-xs/bold",
-            color: "interactive-normal",
-            className: N.subtitle,
+          children: [(0, r.jsx)(o.vwX, {
             children: j.NW.string(j.t.VECJcH)
           }), (0, r.jsx)(d.Z, {
             value: I
           })]
         })]
+      }), (0, r.jsx)("div", {
+        className: N.divider
       }), (0, r.jsxs)("div", {
         className: N.twoColumns,
         children: [(0, r.jsxs)("div", {
           className: N.column,
-          children: [(0, r.jsx)(a.X6, {
-            variant: "text-xs/bold",
-            color: "interactive-normal",
-            className: N.subtitle,
+          children: [(0, r.jsx)(o.vwX, {
             children: j.NW.string(j.t.XVGbn5)
           }), (0, r.jsx)(d.Z, {
             value: E
@@ -140,13 +132,9 @@ function _(e) {
   let {
     guildId: t
   } = e, n = (0, l.e7)([p.Z], () => p.Z.enabled);
-  return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(a.X6, {
-      variant: "text-xs/bold",
-      color: "interactive-normal",
-      className: N.subtitle,
-      children: j.NW.string(j.t.qlhNb2)
-    }), (0, r.jsx)(a.xv, {
+  return (0, r.jsxs)(o.hjN, {
+    title: j.NW.string(j.t.qlhNb2),
+    children: [(0, r.jsx)(a.xv, {
       variant: "text-sm/medium",
       color: "text-secondary",
       className: N.description,

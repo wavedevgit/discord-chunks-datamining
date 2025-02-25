@@ -1,6 +1,6 @@
 /**
   Module ID: 50677
-  Original File Name: 016a6626d6608710
+  Original File Name: d10b6507c3db0b87
 **/
 .hoverRoll__0263c {
     display: inline-block;
@@ -320,6 +320,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: 100%
 }
 
+.plated__972a0 {
+    padding-right: 36px
+}
+
 .linkButton__972a0 {
     padding-right: 8px
 }
@@ -374,6 +378,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .decorator__972a0 {
     margin-left: 4px
+}
+
+.platedWrapper__972a0 {
+    background-color: transparent;
+    background-color: initial
 }
 
 @media (hover:hover) {
@@ -1247,4 +1256,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=016a6626d6608710.css.map*/
+/*# sourceMappingURL=d10b6507c3db0b87.css.map*/

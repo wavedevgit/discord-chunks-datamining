@@ -92,9 +92,9 @@ function A(e) {
   } = (0, g.S)(), {
     recentAvatarsLimit: A,
     numberOfLockedAvatarSlots: N
-  } = (0, p.pC)(t), [E, S] = a.useState(null), w = null != E ? E : null == b ? void 0 : b.message, P = u.length > A ? u.slice(0, A) : u, T = P.length, _ = Math.max(A - T, 0), F = (0, c.vRw)(), R = a.useCallback(async e => {
+  } = (0, p.pC)(t), [E, w] = a.useState(null), P = null != E ? E : null == b ? void 0 : b.message, S = u.length > A ? u.slice(0, A) : u, T = S.length, F = Math.max(A - T, 0), _ = (0, c.vRw)(), R = a.useCallback(async e => {
     if (null == s) return;
-    S(null);
+    w(null);
     let {
       id: t,
       storageHash: a,
@@ -147,40 +147,40 @@ function A(e) {
           showUpsellHeader: !0
         }, n))
       }, {
-        contextKey: F
+        contextKey: _
       })
     } catch (e) {
-      S(v.NW.string(v.t.fZRH9P))
+      w(v.NW.string(v.t.fZRH9P))
     }
-  }, [F, i, l, s]);
+  }, [_, i, l, s]);
   return (a.useEffect(() => {
     (0, m.N)()
   }, []), f) ? (0, r.jsx)(c.$jN, {
     className: y.spinner
   }) : (0, r.jsxs)("div", {
     className: y.recentAvatarContainer,
-    children: [null != w && !f && (0, r.jsx)(c.Text, {
+    children: [null != P && !f && (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
       className: y.errorMessage,
-      children: w
+      children: P
     }), T > 0 && (0, r.jsx)("ul", {
       "aria-label": v.NW.string(v.t.lsU63N),
       className: y.recentAvatarList,
-      children: P.map((e, t) => (0, r.jsx)("li", {
+      children: S.map((e, t) => (0, r.jsx)("li", {
         children: (0, r.jsx)(O, {
           avatar: e,
           orderNumber: t + 1,
           onSelectRecentAvatar: R
         })
       }, e.id))
-    }), _ > 0 && (0, r.jsxs)("div", {
+    }), F > 0 && (0, r.jsxs)("div", {
       className: y.emptyAvatarSlots,
       children: [(0, r.jsx)(c.nn4, {
         children: v.NW.format(v.t["8W2HOz"], {
-          numberOfEmptyAvatarSlots: _
+          numberOfEmptyAvatarSlots: F
         })
-      }), [...Array(_)].map((e, t) => (0, r.jsx)(x.Z, {
+      }), [...Array(F)].map((e, t) => (0, r.jsx)(x.Z, {
         className: y.avatarPlaceholder
       }, t))]
     }), !t && (0, r.jsx)(C, {

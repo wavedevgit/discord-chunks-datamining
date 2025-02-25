@@ -1,27 +1,27 @@
-/** Chunk was on 99786 **/
-n.d(e, {
+/** Chunk was on 72891 **/
+i.d(n, {
   Z: () => l
 });
-var o = n(200651);
-n(192379);
-var i = n(180781),
-  r = n(321867),
-  a = n(486324);
+var t = i(200651);
+i(192379);
+var o = i(180781),
+  r = i(321867),
+  a = i(486324);
 
-function l(t) {
+function l(e) {
   let {
-    type: e,
-    analyticsPage: n,
+    type: n,
+    analyticsPage: i,
     analyticsSection: l,
     isGIF: c,
     banner: s
-  } = t;
-  return [a.pC.BANNER, a.pC.AVATAR].includes(e) && c ? (0, o.jsx)(r.Z, {
+  } = e;
+  return [a.pC.BANNER, a.pC.AVATAR].includes(n) && c ? (0, t.jsx)(r.Z, {
     analyticsSection: l,
-    type: e
-  }) : e === a.pC.GUILD_BANNER ? (0, o.jsx)(i.Z, {
+    type: n
+  }) : n === a.pC.GUILD_BANNER ? (0, t.jsx)(o.Z, {
     analyticsSection: l,
-    analyticsPage: n,
+    analyticsPage: i,
     isGIF: c,
     banner: s
   }) : null

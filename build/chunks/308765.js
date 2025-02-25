@@ -233,7 +233,7 @@ let i = {
     inlineRequire: () => n(177082).Z
   },
   VoiceFiltersCatalogManager: {
-    actions: ["VOICE_FILTER_CATALOG_FETCH_SUCCESS", "VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME", "CURRENT_USER_UPDATE", "LOGIN_SUCCESS"],
+    actions: ["POST_CONNECTION_OPEN", "VOICE_FILTER_CATALOG_FETCH_SUCCESS", "VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME"],
     inlineRequire: () => n(886196).Z
   },
   ThreadManager: {

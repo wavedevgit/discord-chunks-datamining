@@ -26,22 +26,26 @@ async function a(e, t) {
   let {
     nick: n,
     avatar: a,
-    avatarDecoration: s
+    avatarDescription: s,
+    avatarId: l,
+    avatarDecoration: c
   } = t;
   if (null == e) throw Error("Need guildId");
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SUBMIT"
   });
-  let l = {
+  let u = {
     nick: n,
     avatar: a,
-    avatar_decoration_id: null === s ? null : null == s ? void 0 : s.id,
-    avatar_decoration_sku_id: null === s ? null : null == s ? void 0 : s.skuId
+    avatar_description: s,
+    avatar_id: l,
+    avatar_decoration_id: null === c ? null : null == c ? void 0 : c.id,
+    avatar_decoration_sku_id: null === c ? null : null == c ? void 0 : c.skuId
   };
   try {
     let t = await r.tn.patch({
       url: o.ANM.SET_GUILD_MEMBER(e),
-      body: l,
+      body: u,
       oldFormErrors: !0,
       rejectWithError: !1
     });

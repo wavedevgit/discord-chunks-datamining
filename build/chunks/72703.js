@@ -1,5 +1,8 @@
-/** Chunk was on 99786 **/
-n.d(e, {
-  q: () => i
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  q: () => r
 });
-var o, i = ((o = {}).NEW_ASSET = "NEW_ASSET", o.EDITED_ARCHIVED_ASSET = "EDITED_ARCHIVED_ASSET", o.ARCHIVED_ASSET = "ARCHIVED_ASSET", o)
+var r = function(e) {
+  return e.NEW_ASSET = "NEW_ASSET", e.EDITED_ARCHIVED_ASSET = "EDITED_ARCHIVED_ASSET", e.ARCHIVED_ASSET = "ARCHIVED_ASSET", e
+}({})

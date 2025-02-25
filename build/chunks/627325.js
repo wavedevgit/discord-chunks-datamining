@@ -64,7 +64,7 @@ function S(e) {
       let {
         id: n
       } = t;
-      return s()(e, (0, d._I)(A[n].name.toLowerCase()))
+      return s()(e, (0, d._I)(E.NW.string(A[n].name).toLowerCase()))
     })]
   }, [D, T, A]), W = e => Math.ceil(e / n), F = i.useCallback(e => {
     let {

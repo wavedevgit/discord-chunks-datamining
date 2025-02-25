@@ -1,0 +1,355 @@
+/**
+  Module ID: 57433
+  Original File Name: f46b32bf2763af59
+**/
+.container_aea6af {
+    background-color: var(--background-tertiary);
+    display: flex;
+    height: 44px;
+    align-items: center
+}
+
+.guildBoostingIcon_aea6af {
+    color: var(--guild-boosting-pink);
+    padding-left: 12px;
+    padding-right: 8px
+}
+
+.subscribeButton_aea6af {
+    margin-left: auto;
+    font-weight: 600
+}
+
+.notice_d37fb3 {
+    background-color: var(--background-tertiary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center
+}
+
+.noticeWithoutRightPadding_d37fb3 {
+    padding: 8px 0 8px 8px
+}
+
+.noticeWithRightPadding_d37fb3 {
+    padding: 8px
+}
+
+.noticeLeft_d37fb3 {
+    flex-grow: 1;
+    display: flex;
+    align-items: center
+}
+
+.icon_d37fb3 {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    flex-shrink: 0
+}
+
+.text_d37fb3 {
+    flex: 1;
+    margin-right: 16px
+}
+
+.nitroPreviewUpsell_c8eb34 {
+    border-radius: 5px 5px 0 0;
+    padding-right: 0;
+    padding-left: 12px
+}
+
+.modal__038c3 {
+    width: 650px
+}
+
+.modalContent__038c3 {
+    padding-left: 0;
+    margin-bottom: 0
+}
+
+.previewContainerParent__038c3 {
+    padding: var(--spacing-32);
+    padding-bottom: 0;
+    margin-bottom: -12px;
+    background: var(--background-secondary)
+}
+
+.previewContainer__038c3 {
+    width: 240px;
+    text-align: left
+}
+
+.container__0c185 {
+    border-radius: var(--radius-xs);
+    background: var(--background-secondary-alt)
+}
+
+.modalContent__11787 {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box
+}
+
+.editingContainer__11787 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--black-500);
+    border-radius: 4px;
+    min-height: 300px;
+    height: 400px;
+    max-height: 500px
+}
+
+.image__11787 {
+    height: 100%;
+    pointer-events: all;
+    position: absolute;
+    cursor: grab
+}
+
+.rotationSupported__11787 {
+    will-change: transform
+}
+
+.imageEnabled__11787 {
+    cursor: grab
+}
+
+.imageDisabled__11787 {
+    cursor: not-allowed
+}
+
+.icon__11787 {
+    color: var(--text-normal);
+    padding: 0 20px
+}
+
+.overlay__11787 {
+    z-index: 1;
+    border: 5px solid var(--white-500);
+    box-sizing: border-box;
+    pointer-events: none;
+    position: absolute;
+    box-shadow: 0 0 0 9999px rgba(47,49,54,.6)
+}
+
+.overlayAvatar__11787 {
+    border-radius: 50%
+}
+
+.overlayAvatar__11787,.overlayBanner__11787 {
+}
+
+.sliderContainer__11787 {
+    justify-content: center;
+    width: 90%;
+    margin: 20px auto
+}
+
+.sliderContainer__11787,.toolsContainer__11787 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.toolsContainer__11787 {
+    padding: 18px 0 18px 30px
+}
+
+.zoomControls__11787 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    margin: 0 auto
+}
+
+.zoomIcon__11787 {
+    width: 24px
+}
+
+.slider__11787 {
+    width: 128px
+}
+
+.rotateButton__11787 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: 6px;
+    right: -6px;
+    color: var(--interactive-normal)
+}
+
+.nitroUpsell__11787 {
+    margin: -4px 0 0;
+    margin-bottom: var(--spacing-16)
+}
+
+.cancelButton__11787 {
+    margin-right: 12px
+}
+
+.modalFooter__11787 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.buttonsRight__11787 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end
+}
+
+.titleCase__11787 {
+    text-transform: none
+}
+
+.modalHeader__57752 {
+    padding-bottom: 0;
+    justify-content: space-between
+}
+
+.modalCloseButton__57752 {
+    position: relative;
+    right: -8px
+}
+
+.modalContent__57752 {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--spacing-8)
+}
+
+.editingContainer__57752 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--black-500);
+    border-radius: var(--radius-sm);
+    min-height: 300px;
+    height: 400px;
+    max-height: 500px
+}
+
+.image__57752 {
+    height: 100%;
+    pointer-events: all;
+    position: absolute;
+    cursor: grab
+}
+
+.rotationSupported__57752 {
+    will-change: transform
+}
+
+.imageEnabled__57752 {
+    cursor: grab
+}
+
+.imageDisabled__57752 {
+    cursor: not-allowed
+}
+
+.icon__57752 {
+    color: var(--text-normal);
+    padding: 0 20px
+}
+
+.overlay__57752 {
+    z-index: 1;
+    border: 5px solid var(--white-500);
+    box-sizing: border-box;
+    pointer-events: none;
+    position: absolute;
+    box-shadow: 0 0 0 9999px rgba(47,49,54,.6)
+}
+
+.overlayAvatar__57752 {
+    border-radius: 50%
+}
+
+.overlayAvatar__57752,.overlayBanner__57752 {
+}
+
+.sliderContainer__57752 {
+    justify-content: center;
+    width: 90%;
+    margin: 20px auto
+}
+
+.sliderContainer__57752,.toolsContainer__57752 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.toolsContainer__57752 {
+    padding: 18px 0 18px 30px
+}
+
+.zoomControls__57752 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    margin: 0 auto
+}
+
+.zoomIcon__57752 {
+    width: 24px
+}
+
+.slider__57752 {
+    width: 128px
+}
+
+.rotateButton__57752 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: 6px;
+    right: -6px;
+    color: var(--interactive-normal)
+}
+
+.premiumUpsell__57752 {
+    margin: -4px 0 0;
+    margin-bottom: var(--spacing-16);
+    border-radius: var(--radius-sm)
+}
+
+.modalFooter__57752 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: var(--spacing-16)
+}
+
+.linkButton__57752 {
+    padding: var(--spacing-8)
+}
+
+.resetButton__57752 {
+    margin-left: -8px;
+    margin-right: auto
+}
+
+.titleCase__57752 {
+    text-transform: none
+}
+
+/*# sourceMappingURL=f46b32bf2763af59.css.map*/

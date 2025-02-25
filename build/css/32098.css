@@ -1,6 +1,6 @@
 /**
   Module ID: 32098
-  Original File Name: 73fbf15f31dabe65
+  Original File Name: d19bd81d26557e65
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -4719,6 +4719,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: 100%
 }
 
+.plated__972a0 {
+    padding-right: 36px
+}
+
 .linkButton__972a0 {
     padding-right: 8px
 }
@@ -4773,6 +4777,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .decorator__972a0 {
     margin-left: 4px
+}
+
+.platedWrapper__972a0 {
+    background-color: transparent;
+    background-color: initial
 }
 
 @media (hover:hover) {
@@ -5334,4 +5343,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=73fbf15f31dabe65.css.map*/
+/*# sourceMappingURL=d19bd81d26557e65.css.map*/

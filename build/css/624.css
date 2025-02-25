@@ -1,6 +1,6 @@
 /**
   Module ID: 624
-  Original File Name: aae3d5966fbfefd9
+  Original File Name: 8ebc36e0a2e656ff
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -2249,10 +2249,7 @@ h1.title_feb59c,h2.title_feb59c {
 
 .container__37e49 {
     position: relative;
-    height: 52px
-}
-
-.content__37e49 {
+    height: 52px;
     font-size: 14px;
     font-weight: 500;
     display: flex;
@@ -2260,20 +2257,19 @@ h1.title_feb59c,h2.title_feb59c {
     flex-shrink: 0;
     container-type: inline-size;
     padding: 0 8px 1px;
-    height: 100%;
     z-index: 1
 }
 
-.content__37e49 .avatar__37e49 {
+.container__37e49 .avatar__37e49 {
     flex-shrink: 0;
     cursor: pointer
 }
 
-.content__37e49 .avatar__37e49:hover {
+.container__37e49 .avatar__37e49:hover {
     opacity: .8
 }
 
-.content__37e49 .redIcon__37e49 {
+.container__37e49 .redIcon__37e49 {
     color: var(--status-danger)
 }
 
@@ -2433,22 +2429,12 @@ h1.title_feb59c,h2.title_feb59c {
     left: 4px
 }
 
-.theme-dark .content__37e49 {
+.theme-dark .container__37e49 {
     background: var(--bg-overlay-1,var(--background-secondary-alt))
 }
 
-.theme-dark .nameplated__37e49 {
-    background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
-    background: initial
-}
-
-.theme-light .content__37e49 {
+.theme-light .container__37e49 {
     background: var(--bg-overlay-3,var(--background-secondary-alt))
-}
-
-.theme-light .nameplated__37e49 {
-    background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
-    background: initial
 }
 
 @container (max-width: 260px) {
@@ -2467,7 +2453,7 @@ h1.title_feb59c,h2.title_feb59c {
     left: 0
 }
 
-.visual-refresh .content__37e49 {
+.visual-refresh .container__37e49 {
     background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
     background: initial;
     justify-content: space-between;
@@ -16974,4 +16960,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=aae3d5966fbfefd9.css.map*/
+/*# sourceMappingURL=8ebc36e0a2e656ff.css.map*/

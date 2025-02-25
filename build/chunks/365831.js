@@ -228,7 +228,7 @@ function I(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "always-white",
-          children: t
+          children: null != t ? v.NW.string(t) : ""
         })]
       }))
     }), (0, r.jsxs)("div", {

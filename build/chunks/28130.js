@@ -1,6 +1,6 @@
 /** Chunk was on 55849 **/
 n.d(t, {
-  Z: () => F
+  Z: () => _
 }), n(47120);
 var r = n(200651),
   a = n(192379),
@@ -44,7 +44,7 @@ function E(e) {
   }
   return e
 }
-let S = [{
+let w = [{
   gif: n(495682),
   png: n(458060)
 }, {
@@ -58,7 +58,7 @@ let S = [{
   png: n(690695)
 }];
 
-function w(e) {
+function P(e) {
   let {
     shouldAnimate: t = !0
   } = e, [n, l] = a.useState(!1);
@@ -66,7 +66,7 @@ function w(e) {
     className: N.gifGrid,
     onMouseMove: () => l(!0),
     onMouseLeave: () => l(!1),
-    children: S.map(e => (0, r.jsx)("div", {
+    children: w.map(e => (0, r.jsx)("div", {
       className: N.gif,
       style: {
         backgroundImage: "url(".concat(t || n ? e.gif : e.png, ")")
@@ -75,7 +75,7 @@ function w(e) {
   })
 }
 
-function P(e) {
+function S(e) {
   let {
     guildFeature: t,
     guild: n
@@ -97,7 +97,7 @@ function T(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: N.optionBoxText,
-    children: [(0, r.jsx)(P, {
+    children: [(0, r.jsx)(S, {
       guild: n,
       guildFeature: (0, j.C6)(t, {
         isGIF: !0
@@ -117,7 +117,7 @@ function T(e) {
   })
 }
 
-function _(e) {
+function F(e) {
   let {
     title: t,
     uploadType: n,
@@ -125,7 +125,7 @@ function _(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: N.optionBoxText,
-    children: [(0, r.jsx)(P, {
+    children: [(0, r.jsx)(S, {
       guildFeature: (0, j.C6)(n, {
         isGIF: !1
       }),
@@ -145,26 +145,26 @@ function _(e) {
   })
 }
 
-function F(e) {
+function _(e) {
   let {
     transitionState: t,
     onClose: c,
     onComplete: j,
-    uploadType: S,
-    maxFileSizeBytes: P,
-    showUpsellHeader: F,
+    uploadType: w,
+    maxFileSizeBytes: S,
+    showUpsellHeader: _,
     filters: R,
-    analyticsLocation: I,
-    analyticsLocations: Z = [],
-    modalSubTitle: D,
-    imageSpecifications: L,
-    modalTitle: k = A.NW.string(A.t.DToW4e),
+    analyticsLocation: Z,
+    analyticsLocations: L = [],
+    modalSubTitle: I,
+    imageSpecifications: k,
+    modalTitle: D = A.NW.string(A.t.DToW4e),
     uploadOptionTitle: M = A.NW.string(A.t["MsUY/f"])
   } = e, U = (0, l.e7)([x.Z], () => x.Z.isFocused()), W = (0, l.e7)([g.default], () => g.default.getCurrentUser()), B = (0, l.e7)([m.Z], () => m.Z.getGuildId()), H = (0, l.e7)([p.Z], () => p.Z.getGuild(B)), {
-    reducedMotion: V
-  } = a.useContext(i.Sfi), G = (0, i.vRw)(), z = !h.ZP.canUseAnimatedAvatar(W) && S === O.pC.AVATAR, {
+    reducedMotion: G
+  } = a.useContext(i.Sfi), z = (0, i.vRw)(), V = !h.ZP.canUseAnimatedAvatar(W) && w === O.pC.AVATAR, {
     analyticsLocations: q
-  } = (0, s.ZP)(Z, o.Z.SELECT_IMAGE_MODAL);
+  } = (0, s.ZP)(L, o.Z.SELECT_IMAGE_MODAL);
 
   function X(e) {
     let {
@@ -179,15 +179,15 @@ function F(e) {
     })
   }
   a.useEffect(() => {
-    z && b.default.track(y.rMx.PREMIUM_UPSELL_VIEWED, {
+    V && b.default.track(y.rMx.PREMIUM_UPSELL_VIEWED, {
       type: y.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location_stack: q
     }), b.default.track(y.rMx.OPEN_MODAL, {
       type: y.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
-      location: I
+      location: Z
     })
-  }, [z, I, q]);
-  let Y = S === O.pC.AVATAR || S === O.pC.BANNER,
+  }, [V, Z, q]);
+  let Y = w === O.pC.AVATAR || w === O.pC.BANNER,
     $ = (0, d.M)(!Y);
   return (0, r.jsxs)(i.Y0X, {
     transitionState: t,
@@ -199,10 +199,10 @@ function F(e) {
         children: [(0, r.jsx)(i.vwX, {
           tag: i.RB0.H1,
           className: N.modalTitle,
-          children: k
-        }), null != D ? (0, r.jsx)(i.Text, {
-          variant: "text-md/normal",
           children: D
+        }), null != I ? (0, r.jsx)(i.Text, {
+          variant: "text-md/normal",
+          children: I
         }) : null]
       }), (0, r.jsx)(i.olH, {
         onClick: c,
@@ -224,9 +224,9 @@ function F(e) {
           }), (0, r.jsx)(i.Text, {
             variant: "text-sm/semibold",
             color: "interactive-normal",
-            children: (0, r.jsx)(_, {
+            children: (0, r.jsx)(F, {
               title: M,
-              uploadType: S,
+              uploadType: w,
               guild: H
             })
           }), (0, r.jsx)(u.ZP, {
@@ -243,18 +243,18 @@ function F(e) {
                   imageUri: e,
                   file: t,
                   onCrop: X,
-                  uploadType: S,
-                  showUpsellHeader: F,
+                  uploadType: w,
+                  showUpsellHeader: _,
                   allowSkip: !0,
-                  analyticsPage: null == I ? void 0 : I.page
+                  analyticsPage: null == Z ? void 0 : Z.page
                 }, n))
               }, {
-                contextKey: G
+                contextKey: z
               })
             },
-            maxFileSizeBytes: P,
+            maxFileSizeBytes: S,
             onFileSizeError: function() {
-              c(), (0, v.Z)(P)
+              c(), (0, v.Z)(S)
             },
             filters: R
           })]
@@ -266,7 +266,7 @@ function F(e) {
                 default: e
               } = await n.e("72891").then(n.bind(n, 195297));
               return t => (0, r.jsx)(e, E({
-                uploadType: S,
+                uploadType: w,
                 onComplete: e => {
                   let {
                     imageUri: t,
@@ -278,17 +278,17 @@ function F(e) {
                     isFromTenor: !0
                   })
                 },
-                showUpsellHeader: F,
-                analyticsPage: null == I ? void 0 : I.page
+                showUpsellHeader: _,
+                analyticsPage: null == Z ? void 0 : Z.page
               }, t))
             }, {
-              contextKey: G
+              contextKey: z
             })
           },
           children: [(0, r.jsxs)("div", {
             className: N.contentCircle,
-            children: [(0, r.jsx)(w, {
-              shouldAnimate: U && !V.enabled
+            children: [(0, r.jsx)(P, {
+              shouldAnimate: U && !G.enabled
             }), (0, r.jsx)("div", {
               className: N.gifIconContainer,
               children: (0, r.jsx)(i.OUq, {
@@ -303,17 +303,17 @@ function F(e) {
             variant: "text-sm/semibold",
             color: "interactive-normal",
             children: (0, r.jsx)(T, {
-              uploadType: S,
+              uploadType: w,
               guild: H
             })
           })]
         })]
-      }), null != L ? (0, r.jsx)(i.Text, {
+      }), null != k ? (0, r.jsx)(i.Text, {
         className: N.imageSpecifications,
         variant: "text-sm/normal",
-        children: L
-      }) : null, F && $ && (0, r.jsx)(f.Z, {
-        uploadType: S,
+        children: k
+      }) : null, _ && $ && (0, r.jsx)(f.Z, {
+        uploadType: w,
         showUpsell: !0,
         position: "inline",
         showShadow: !1,
