@@ -66,7 +66,7 @@ let y = {
       var c;
       let u = {
           environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-          build_number: "372164"
+          build_number: "372180"
         },
         d = l.default.getCurrentUser();
       null != d && (u.user_id = d.id, u.user_name = d.tag, null != d.email && (u.email = d.email));
