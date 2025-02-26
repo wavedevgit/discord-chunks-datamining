@@ -5,8 +5,8 @@ r.d(t, {
 });
 var n = r(200651);
 r(192379);
-var i = r(120356),
-  l = r.n(i),
+var l = r(120356),
+  i = r.n(l),
   o = r(622535),
   a = r(481060),
   s = r(597688),
@@ -16,19 +16,19 @@ var i = r(120356),
   p = r(388032),
   f = r(974492);
 let h = e => {
-  var t, r, i, h, b;
-  let C, {
-    category: m,
+  var t, r, l, h, b;
+  let m, {
+    category: C,
     subblock: g,
     badgeText: v,
     handleTransition: x
   } = e;
-  null != g && (C = null === (t = s.Z.getCategoryByStoreListingId(null == g ? void 0 : g.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId);
-  let j = null !== (r = null != C ? C : null == m ? void 0 : m.skuId) && void 0 !== r ? r : "",
+  null != g && (m = null === (t = s.Z.getCategoryByStoreListingId(null == g ? void 0 : g.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId);
+  let j = null !== (r = null != m ? m : null == C ? void 0 : C.skuId) && void 0 !== r ? r : "",
     {
       handleCardVisibilityChange: _
     } = (0, d.E)(j, "home", "marketing featured block"),
-    y = null !== (h = null == g ? void 0 : g.bannerUrl) && void 0 !== h ? h : (0, c.uV)(null !== (i = null == m ? void 0 : m.featuredBlock) && void 0 !== i ? i : "", {
+    y = null !== (h = null == g ? void 0 : g.bannerUrl) && void 0 !== h ? h : (0, c.uV)(null !== (l = null == C ? void 0 : C.featuredBlock) && void 0 !== l ? l : "", {
       size: u.J0,
       format: "png"
     });
@@ -36,7 +36,7 @@ let h = e => {
     onChange: _,
     threshold: 0,
     children: (0, n.jsxs)(a.P3F, {
-      className: l()(f.featuredBlock),
+      className: i()(f.featuredBlock),
       style: {
         backgroundImage: "url(".concat(y, ")")
       },

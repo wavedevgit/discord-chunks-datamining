@@ -2,21 +2,21 @@
 n.d(t, {
   Z: () => s
 });
-var l = n(200651);
+var r = n(200651);
 n(192379);
-var r = n(120356),
-  i = n.n(r),
-  a = n(481060),
-  o = n(57913);
+var l = n(120356),
+  i = n.n(l),
+  o = n(481060),
+  a = n(57913);
 
 function s(e) {
   let {
     children: t,
     className: n
   } = e;
-  return (0, l.jsx)(a.Text, {
+  return (0, r.jsx)(o.Text, {
     color: "none",
-    className: i()(o.title, n),
+    className: i()(a.title, n),
     variant: "text-sm/medium",
     children: t
   })

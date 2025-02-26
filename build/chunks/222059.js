@@ -1,4 +1,4 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
   u: () => L
 }), n(47120);
@@ -25,10 +25,10 @@ var r = n(200651),
   C = n(780570),
   x = n(278464),
   P = n(276952),
-  N = n(682662),
-  S = n(662146),
-  Z = n(674552),
-  I = n(981631),
+  S = n(682662),
+  N = n(662146),
+  I = n(674552),
+  Z = n(981631),
   w = n(474936),
   E = n(871465),
   T = n(388032),
@@ -59,7 +59,7 @@ function R(e) {
   };
   if (null == f) return null;
   let U = T.NW.string(T.t.YUU0RE);
-  C && (U = a.K.get(I.wli) ? T.NW.string(T.t.nkq1l5) : T.NW.string(T.t.Be8Q5O));
+  C && (U = a.K.get(Z.wli) ? T.NW.string(T.t.nkq1l5) : T.NW.string(T.t.Be8Q5O));
   let W = null;
   !h && v && (W = (0, r.jsx)(c.Z, {
     className: D.downloadProgress,
@@ -68,7 +68,7 @@ function R(e) {
   let V = h || j || O,
     F = (0, r.jsx)(s.aRk, {
       selected: G || V,
-      lowerBadge: b > 0 ? (0, Z.Ne)(b) : null,
+      lowerBadge: b > 0 ? (0, I.Ne)(b) : null,
       upperBadge: W,
       lowerBadgeSize: {
         width: (0, s.OVM)(b)
@@ -96,8 +96,8 @@ function R(e) {
         onClick: () => {
           if (!__OVERLAY__ && (null != w && clearTimeout(w), R(setTimeout(B, 500)), k(L + 1), 15 === L)) {
             B();
-            let e = !a.K.get(I.wli);
-            a.K.set(I.wli, e), e && a.K.set(E.O5, !0), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), x(!0), setTimeout(() => {
+            let e = !a.K.get(Z.wli);
+            a.K.set(Z.wli, e), e && a.K.set(E.O5, !0), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), x(!0), setTimeout(() => {
               x(!1)
             }, 1e3)
           }
@@ -109,9 +109,9 @@ function R(e) {
           pathname: y,
           state: {
             analyticsSource: {
-              page: I.ZY5.GUILD_CHANNEL,
-              section: I.jXE.NAVIGATION,
-              object: I.qAy.BUTTON_HOME
+              page: Z.ZY5.GUILD_CHANNEL,
+              section: Z.jXE.NAVIGATION,
+              object: Z.qAy.BUTTON_HOME
             }
           }
         },
@@ -133,12 +133,12 @@ function R(e) {
       inlineSpecs: A,
       tutorialId: "friends-list",
       position: "right",
-      children: (0, r.jsxs)(N.H, {
+      children: (0, r.jsxs)(S.H, {
         children: [(0, r.jsx)(P.Z, {
           selected: h,
           hovered: j,
           className: D.pill
-        }), (0, r.jsx)(S.Z, {
+        }), (0, r.jsx)(N.Z, {
           color: s.ua7.Colors.PRIMARY,
           hideOnClick: !0,
           text: U,
@@ -176,10 +176,10 @@ function L() {
     p = n + s + d,
     g = p === s && s > 0 && n + d === 0,
     m = O.Z.getHomeLink();
-  return g && (m = I.Z5c.APPLICATION_STORE), (0, r.jsx)(R, {
+  return g && (m = Z.Z5c.APPLICATION_STORE), (0, r.jsx)(R, {
     selected: e,
     user: u,
-    selectedChannelId: b.Z.getChannelId(I.ME),
+    selectedChannelId: b.Z.getChannelId(Z.ME),
     badge: p,
     link: m,
     showProgressBadge: t

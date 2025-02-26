@@ -1,12 +1,12 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.r(t), r.d(t, {
-  default: () => ei
+  default: () => el
 }), r(47120);
 var n = r(200651),
-  i = r(192379),
-  l = r(120356),
-  o = r.n(l),
+  l = r(192379),
+  i = r(120356),
+  o = r.n(i),
   a = r(979554),
   s = r(399606),
   c = r(704215),
@@ -16,8 +16,8 @@ var n = r(200651),
   f = r(434650),
   h = r(100527),
   b = r(906732),
-  C = r(702486),
-  m = r(605236),
+  m = r(702486),
+  C = r(605236),
   g = r(977395),
   v = r(214852),
   x = r(479446),
@@ -30,8 +30,8 @@ var n = r(200651),
   S = r(74538),
   w = r(335131),
   E = r(381585),
-  L = r(597688),
-  I = r(328347),
+  I = r(597688),
+  L = r(328347),
   N = r(223143),
   T = r(298228),
   B = r(937510),
@@ -60,17 +60,17 @@ function et(e) {
   let {
     products: t,
     handleShopCardMount: r,
-    header: i,
-    category: l,
+    header: l,
+    category: i,
     isPremiumUser: o,
     isGiftEasterEggEnabled: a
   } = e, c = (0, s.e7)([k.default], () => k.default.getCurrentUser());
   return null == c || 0 === t.length ? null : (0, n.jsxs)("div", {
-    children: [null != i ? (0, n.jsx)(u.Text, {
+    children: [null != l ? (0, n.jsx)(u.Text, {
       className: ee.itemTypeTitle,
       color: "header-secondary",
       variant: "text-sm/bold",
-      children: i
+      children: l
     }) : (0, n.jsx)(u.LZC, {
       size: 24
     }), (0, n.jsx)("div", {
@@ -82,7 +82,7 @@ function et(e) {
         children: (0, n.jsx)(V.Z, {
           onMount: r(e),
           isPremiumUser: o,
-          category: l,
+          category: i,
           product: e,
           user: c,
           isGiftEasterEggEnabled: a,
@@ -97,24 +97,24 @@ function er(e) {
   var {
     category: t,
     initialItemCardRef: r
-  } = e, l = function(e, t) {
+  } = e, i = function(e, t) {
     if (null == e) return {};
-    var r, n, i = function(e, t) {
+    var r, n, l = function(e, t) {
       if (null == e) return {};
-      var r, n, i = {},
-        l = Object.keys(e);
-      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
-      return i
+      var r, n, l = {},
+        i = Object.keys(e);
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var i = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
     }
-    return i
+    return l
   }(e, ["category", "initialItemCardRef"]);
   let o = (0, B.l)(t.products),
-    a = (0, s.e7)([I.Z], () => I.Z.initialProductSkuId),
-    c = i.useCallback(e => t => {
+    a = (0, s.e7)([L.Z], () => L.Z.initialProductSkuId),
+    c = l.useCallback(e => t => {
       var n;
       (e.skuId === a || (null === (n = e.variants) || void 0 === n ? void 0 : n.some(e => e.skuId === a)) === !0) && (r.current = t.current)
     }, [a, r]);
@@ -139,24 +139,24 @@ function er(e) {
     products: o,
     handleShopCardMount: c,
     category: t
-  }, l))
+  }, i))
 }
 
 function en(e) {
   let {
     category: t,
     isPremiumUser: r,
-    initialItemCardRef: l,
+    initialItemCardRef: i,
     isGiftEasterEggEnabled: a,
     setIsGiftEasterEggEnabled: s,
     showEasterEggToggle: c,
     isFullScreen: d
-  } = e, p = i.useRef(10 + 70 * Math.random()), [h, b] = i.useState(!1), C = (0, K.M7)(t.skuId), m = (0, f.O)(e => {
-    b(e && null != C)
+  } = e, p = l.useRef(10 + 70 * Math.random()), [h, b] = l.useState(!1), m = (0, K.M7)(t.skuId), C = (0, f.O)(e => {
+    b(e && null != m)
   }, d ? .13 : .15);
   return (0, n.jsxs)("div", {
     className: ee.categoryWrapper,
-    ref: m,
+    ref: C,
     children: [c && (0, n.jsx)(u.P3F, {
       className: o()(ee.hiddenWumpus, {
         [ee.hiddenWumpusEnabled]: a
@@ -171,46 +171,46 @@ function en(e) {
       })
     }), (0, n.jsx)(R.Z, {
       category: t,
-      hideLimitedTimeBadge: null != C
+      hideLimitedTimeBadge: null != m
     }), (0, n.jsx)(er, {
       category: t,
-      initialItemCardRef: l,
+      initialItemCardRef: i,
       isPremiumUser: r,
       isGiftEasterEggEnabled: a
-    }), null != C && null != t.unpublishedAt && (0, n.jsx)(F.$, {
+    }), null != m && null != t.unpublishedAt && (0, n.jsx)(F.$, {
       unpublishedAt: t.unpublishedAt,
       isVisible: h,
-      displayOptions: C,
+      displayOptions: m,
       isFullScreen: d
     })]
   })
 }
-let ei = function(e) {
+let el = function(e) {
   var t;
   let {
     isFullScreen: r = !0,
-    tab: l = $.AW.HOME
+    tab: i = $.AW.HOME
   } = e;
   (0, v.z)(g.f);
   let {
     analyticsSource: f,
     analyticsLocations: x
-  } = (0, s.cj)([I.Z], () => I.Z.getAnalytics()), {
+  } = (0, s.cj)([L.Z], () => L.Z.getAnalytics()), {
     analyticsLocations: j
   } = (0, b.ZP)([...x, h.Z.COLLECTIBLES_SHOP]), {
     sessionId: B,
     scrollerRef: F,
     scrollHandler: R
-  } = (0, C._)(J.rMx.COLLECTIBLES_SHOP_SCROLLED, f), {
+  } = (0, m._)(J.rMx.COLLECTIBLES_SHOP_SCROLLED, f), {
     selectedTab: V,
     transitionState: K,
     transitionToTab: et
-  } = (0, Z.B)(F, l, r), [er, ei] = i.useState(!1), [el, eo] = i.useState($.IV), [ea, es] = i.useState(), [ec, ed] = i.useState(), {
+  } = (0, Z.B)(F, i, r), [er, el] = l.useState(!1), [ei, eo] = l.useState($.IV), [ea, es] = l.useState(), [ec, ed] = l.useState(), {
     closeIntroToOrbsClaimedCoachmark: eu
   } = (0, y.Z)({
     location: "CollectiblesShop"
   });
-  i.useEffect(() => () => {
+  l.useEffect(() => () => {
     eu()
   }, [f, eu]);
   let ep = (0, s.e7)([O.Z], () => O.Z.getLayers().includes(J.S9g.COLLECTIBLES_SHOP)),
@@ -219,9 +219,9 @@ let ei = function(e) {
       onClose: eh
     } = (0, H.Db)(),
     eb = (0, s.e7)([k.default], () => k.default.getCurrentUser()),
-    eC = S.ZP.canUseCollectibles(eb),
+    em = S.ZP.canUseCollectibles(eb),
     {
-      categories: em,
+      categories: eC,
       isFetchingCategories: eg,
       fetchCategoriesError: ev,
       fetchPurchasesError: ex,
@@ -232,14 +232,14 @@ let ei = function(e) {
     }),
     ey = null !== (t = null != ev ? ev : ex) && void 0 !== t ? t : ej;
   (0, _.P)();
-  let eO = (0, T.O)(em),
-    ek = i.useRef(null),
-    [eP, eS] = i.useState(!1);
+  let eO = (0, T.O)(eC),
+    ek = l.useRef(null),
+    [eP, eS] = l.useState(!1);
   (0, A.Kp)({
     isFetchingCategories: eg,
     isLayer: ep,
     initialItemCardRef: ek
-  }), i.useEffect(() => {
+  }), l.useEffect(() => {
     if (K === $.f7.VISIBLE) {
       var e;
       let t;
@@ -248,61 +248,61 @@ let ei = function(e) {
         source: t,
         page_session_id: B,
         page_type: V === $.AW.HOME ? "home" : "full",
-        category: V === $.AW.HOME ? void 0 : null === (e = L.Z.getCategory(ea)) || void 0 === e ? void 0 : e.name
+        category: V === $.AW.HOME ? void 0 : null === (e = I.Z.getCategory(ea)) || void 0 === e ? void 0 : e.name
       })
     }
-    eC || P.default.track(J.rMx.PREMIUM_UPSELL_VIEWED, {
+    em || P.default.track(J.rMx.PREMIUM_UPSELL_VIEWED, {
       type: Q.cd.COLLECTIBLES_SHOP,
       location_stack: j
     })
-  }, [eC, j, f, B, ea, es, ec, K, V]);
+  }, [em, j, f, B, ea, es, ec, K, V]);
   let {
     dismissCollectiblesShopTabNewBadge: ew
   } = (0, G.Z)();
-  i.useEffect(() => {
-    ew(), !(0, m.un)(c.z.COLLECTIBLES_GIFTING_COACHMARK) && (0, m.EW)(c.z.COLLECTIBLES_GIFTING_COACHMARK, {
+  l.useEffect(() => {
+    ew(), !(0, C.un)(c.z.COLLECTIBLES_GIFTING_COACHMARK) && (0, C.EW)(c.z.COLLECTIBLES_GIFTING_COACHMARK, {
       dismissAction: X.L.AUTO_DISMISS,
       forceTrack: !0
     })
-  }, [ew]), i.useEffect(() => {
+  }, [ew]), l.useEffect(() => {
     r || (0, p.Y)(J.Z5c.COLLECTIBLES_SHOP)
-  }, [r]), i.useEffect(() => () => {
+  }, [r]), l.useEffect(() => () => {
     (0, w.K$)({
-      categories: [...em.values()],
+      categories: [...eC.values()],
       itemTypes: [a.Z.AVATAR_DECORATION, a.Z.PROFILE_EFFECT]
     })
-  }, [em]), i.useEffect(() => {
+  }, [eC]), l.useEffect(() => {
     if (!r || ep || ef) return;
     let e = e => {
       e.key === Y.mR.Escape && eh()
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [r, ep, ef, eh]);
-  let eE = i.useCallback(() => {
+  let eE = l.useCallback(() => {
       e_()
     }, [e_]),
     {
-      setCategoryRef: eL,
-      handleScrollToCategory: eI
+      setCategoryRef: eI,
+      handleScrollToCategory: eL
     } = (0, A.xV)(F.current),
     {
       reducedMotion: eN
-    } = i.useContext(u.Sfi),
-    eT = i.useRef(null),
-    eB = i.useRef(null);
-  (0, u.Tbt)(eT), i.useEffect(() => {
+    } = l.useContext(u.Sfi),
+    eT = l.useRef(null),
+    eB = l.useRef(null);
+  (0, u.Tbt)(eT), l.useEffect(() => {
     if (!r) {
       var e;
       null === (e = eB.current) || void 0 === e || e.focus()
     }
   }, [r]);
-  let eZ = i.useCallback(async (e, t, n) => {
-      let i = n && !r && !eN.enabled;
-      ed(e), es(t), await et($.AW.CATALOG, i), t && eI(t)
-    }, [eI, r, eN.enabled, et]),
-    eF = (0, s.e7)([L.Z], () => {
+  let eZ = l.useCallback(async (e, t, n) => {
+      let l = n && !r && !eN.enabled;
+      ed(e), es(t), await et($.AW.CATALOG, l), t && eL(t)
+    }, [eL, r, eN.enabled, et]),
+    eF = (0, s.e7)([I.Z], () => {
       var e;
-      return null === (e = L.Z.getCategory(ea)) || void 0 === e ? void 0 : e.name
+      return null === (e = I.Z.getCategory(ea)) || void 0 === e ? void 0 : e.name
     });
   return (0, n.jsx)(b.Gt, {
     value: j,
@@ -321,7 +321,7 @@ let ei = function(e) {
           onScroll: () => {
             if (R(), null != F.current) {
               let e = F.current.getDistanceFromBottom();
-              el >= $.iA ? ei(e < 20) : e <= 200 && eo(el + $.IV)
+              ei >= $.iA ? el(e < 20) : e <= 200 && eo(ei + $.IV)
             }
           },
           children: (0, n.jsxs)("div", {
@@ -343,7 +343,7 @@ let ei = function(e) {
                   return (0, n.jsx)(z.Z, {
                     isFullScreen: r,
                     handleTransition: eZ,
-                    numVisibleItems: el,
+                    numVisibleItems: ei,
                     tab: e
                   });
                 case $.AW.CATALOG:
@@ -364,13 +364,13 @@ let ei = function(e) {
                           } = e;
                           return t.length > 0
                         }).map((e, t) => (0, n.jsx)("div", {
-                          ref: t => eL(e.skuId, t),
+                          ref: t => eI(e.skuId, t),
                           children: (0, n.jsx)(E.k0, {
                             newValue: {
                               categoryPosition: t
                             },
                             children: (0, n.jsx)(en, {
-                              isPremiumUser: eC,
+                              isPremiumUser: em,
                               category: e,
                               initialItemCardRef: ek,
                               setIsGiftEasterEggEnabled: eS,

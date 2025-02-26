@@ -1,5 +1,6 @@
-/** Chunk was on 93886 **/
-e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   muted: "muted__20a53",
   avatar: "avatar__20a53",
   highlighted: "highlighted__20a53",
@@ -10,4 +11,5 @@ e.exports = {
   wrappedName: "wrappedName__20a53",
   nameAndDecorators: "nameAndDecorators__20a53",
   subText: "subText__20a53"
-}
+};
+e.exports = r

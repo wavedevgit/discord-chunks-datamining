@@ -1,4 +1,4 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
   Z: () => en
 }), n(47120), n(411104);
@@ -26,10 +26,10 @@ var i = n(120356),
   C = n(66999),
   x = n(554747),
   P = n(378844),
-  N = n(335353),
-  S = n(896835),
-  Z = n(359110),
-  I = n(155409),
+  S = n(335353),
+  N = n(896835),
+  I = n(359110),
+  Z = n(155409),
   w = n(695346),
   E = n(447564),
   T = n(592125),
@@ -171,7 +171,7 @@ class ee extends U.ZP {
         return (0, r.jsx)(s.P3F, {
           className: l()(K.iconItem, K.alwaysShown),
           onClick: () => {
-            (0, S.X)("VoiceChannel") ? (0, E.k)(e, "VoiceChannel") : window.open(B.Z.getArticleURL(q.BhN.HD_STREAMING_POTION), "_blank")
+            (0, N.X)("VoiceChannel") ? (0, E.k)(e, "VoiceChannel") : window.open(B.Z.getArticleURL(q.BhN.HD_STREAMING_POTION), "_blank")
           },
           "aria-label": Q.NW.string(Q.t.gpF6QU),
           onMouseEnter: n,
@@ -211,8 +211,8 @@ class ee extends U.ZP {
       isFavoriteSuggestion: x,
       withGuildIcon: P
     } = this.props, {
-      shouldShowActivities: S,
-      shouldShowGuildVerificationPopout: Z
+      shouldShowActivities: N,
+      shouldShowGuildVerificationPopout: I
     } = this.state, w = this.getVoiceStatesCount(), E = (0, r.jsxs)("li", {
       className: l()(this.getModeClass(), {
         [K.disabled]: this.isDisabled()
@@ -226,7 +226,7 @@ class ee extends U.ZP {
           renderPopout: this.renderPopout,
           spacing: 0,
           onRequestClose: this.closeGuildVerificationPopout,
-          shouldShow: S && !u && !d && !Z || Z,
+          shouldShow: N && !u && !d && !I || I,
           children: () => (0, r.jsx)(s.ua7, {
             text: this.getTooltipText(),
             children: s => {
@@ -248,7 +248,7 @@ class ee extends U.ZP {
                 }
                 return i
               }(s, ["onClick", "onContextMenu"]);
-              return (0, r.jsx)(N.Z, {
+              return (0, r.jsx)(S.Z, {
                 channel: e,
                 children: (0, r.jsxs)(V.Z, $(X({
                   className: K.iconVisibility,
@@ -294,7 +294,7 @@ class ee extends U.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return v && (E = f(E)), y && (E = p(h(E))), O && (E = (0, r.jsx)(I.Z, {
+    return v && (E = f(E)), y && (E = p(h(E))), O && (E = (0, r.jsx)(Z.Z, {
       tutorialId: "voice-conversations",
       position: "right",
       offsetX: -20,
@@ -420,7 +420,7 @@ class ee extends U.ZP {
           return (0, r.jsx)(s.P3F, {
             className: l()(K.iconItem, n ? K.alwaysShown : null),
             onClick: () => {
-              c.Z.updateChatOpen(e.id, !0), (0, Z.Kh)(e.id)
+              c.Z.updateChatOpen(e.id, !0), (0, I.Kh)(e.id)
             },
             "aria-label": Q.NW.string(Q.t.ZXxLQk),
             onMouseEnter: i,
@@ -471,7 +471,7 @@ function en(e) {
   }), f = (0, o.e7)([M.Z], () => M.Z.hasVideo(n.id)), g = (0, h.ZP)(n), m = (0, b.ZP)(n), y = (0, x.qY)(n.id), {
     isSubscriptionGated: v,
     needSubscriptionToAccess: j
-  } = (0, C.Z)(n.id), _ = (0, O.Z)(), P = (0, o.e7)([k.ZP], () => k.ZP.isFavorite(t.id, n.id)), N = e.connected || (null == _ ? void 0 : _.channelId) === n.id, S = (0, W.Z)({
+  } = (0, C.Z)(n.id), _ = (0, O.Z)(), P = (0, o.e7)([k.ZP], () => k.ZP.isFavorite(t.id, n.id)), S = e.connected || (null == _ ? void 0 : _.channelId) === n.id, N = (0, W.Z)({
     channel: n,
     isChannelSelected: a,
     isChannelCollapsed: s,
@@ -480,7 +480,7 @@ function en(e) {
     needSubscriptionToAccess: j,
     enableConnectedUserLimit: !0,
     enableActivities: !0
-  }), Z = N && null == S;
+  }), I = S && null == N;
   return (0, r.jsx)(et, $(X({
     channelName: m,
     embeddedApps: g,
@@ -490,10 +490,10 @@ function en(e) {
     isSubscriptionGated: v,
     needSubscriptionToAccess: j
   }, u, p, e), {
-    connected: N,
+    connected: S,
     isFavoriteSuggestion: l && !P,
-    forceShowButtons: Z,
-    channelInfo: S,
+    forceShowButtons: I,
+    channelInfo: N,
     resolvedUnreadSetting: d
   }))
 }

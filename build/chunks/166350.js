@@ -1,22 +1,22 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  NR: () => l,
+  NR: () => i,
   Ob: () => s,
   ZI: () => o,
   m1: () => c,
   uc: () => a
 });
 var n = r(987170),
-  i = r(987338);
-let l = (0, n.Z)({
+  l = r(987338);
+let i = (0, n.Z)({
     kind: "user",
     id: "2024-07_ctp_collectibles_shop_open_vanilla",
     label: "CTP collectibles shop open - A/A test - Vanilla",
     defaultConfig: {
       doSomething: !1
     },
-    commonTriggerPoint: i.$P.COLLECTIBLES_SHOP_OPEN,
+    commonTriggerPoint: l.$P.COLLECTIBLES_SHOP_OPEN,
     treatments: [{
       id: 1,
       label: "Treatment",
@@ -32,7 +32,7 @@ let l = (0, n.Z)({
     defaultConfig: {
       doSomething: !1
     },
-    commonTriggerPoint: i.$P.COLLECTIBLES_SHOP_OPEN,
+    commonTriggerPoint: l.$P.COLLECTIBLES_SHOP_OPEN,
     treatments: [{
       id: 1,
       label: "Treatment",
@@ -48,7 +48,7 @@ let l = (0, n.Z)({
     defaultConfig: {
       doSomething: !1
     },
-    commonTriggerPoint: i.$P.COLLECTIBLES_SHOP_OPEN,
+    commonTriggerPoint: l.$P.COLLECTIBLES_SHOP_OPEN,
     treatments: [{
       id: 1,
       label: "Treatment 1",
@@ -70,7 +70,7 @@ let l = (0, n.Z)({
     defaultConfig: {
       doSomething: !1
     },
-    commonTriggerPoint: i.$P.COLLECTIBLES_SHOP_OPEN,
+    commonTriggerPoint: l.$P.COLLECTIBLES_SHOP_OPEN,
     treatments: [{
       id: 1,
       label: "Treatment",
@@ -86,7 +86,7 @@ let l = (0, n.Z)({
     defaultConfig: {
       doSomething: !1
     },
-    commonTriggerPoint: i.$P.COLLECTIBLES_SHOP_OPEN,
+    commonTriggerPoint: l.$P.COLLECTIBLES_SHOP_OPEN,
     treatments: [{
       id: 1,
       label: "Treatment",

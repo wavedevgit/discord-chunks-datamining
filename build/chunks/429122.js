@@ -1,4 +1,4 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
   ZP: () => y,
   dt: () => m,
@@ -93,7 +93,7 @@ let y = i.memo(function(e) {
     guildChannels: n,
     guildChannelsVersion: p
   });
-  let N = O ? (0, r.jsx)("div", {
+  let S = O ? (0, r.jsx)("div", {
     className: f.sectionDivider
   }) : null;
   return j && 0 !== P.length ? (0, r.jsxs)(r.Fragment, {
@@ -106,6 +106,6 @@ let y = i.memo(function(e) {
         showUserPopout: !0,
         guildId: m
       })
-    }), N]
-  }) : N
+    }), S]
+  }) : S
 })

@@ -4,9 +4,9 @@ r.d(t, {
   Z: () => v
 }), r(47120);
 var n = r(200651),
-  i = r(192379),
-  l = r(120356),
-  o = r.n(l),
+  l = r(192379),
+  i = r(120356),
+  o = r.n(i),
   a = r(442837),
   s = r(481060),
   c = r(594174),
@@ -16,30 +16,30 @@ var n = r(200651),
   f = r(38900),
   h = r(709999),
   b = r(957058),
-  C = r(215023),
-  m = r(388032),
+  m = r(215023),
+  C = r(388032),
   g = r(974492);
 let v = e => {
   let {
     isLoading: t,
     rankedSkuIds: r,
-    handleTransition: l,
+    handleTransition: i,
     numVisibleItems: v,
     tab: x
-  } = e, j = (0, a.e7)([c.default], () => c.default.getCurrentUser()), _ = i.createRef(), y = (0, b.u)(), O = i.useMemo(() => y(r), [t, y, r]), k = (0, p.l)(O);
+  } = e, j = (0, a.e7)([c.default], () => c.default.getCurrentUser()), _ = l.createRef(), y = (0, b.u)(), O = l.useMemo(() => y(r), [t, y, r]), k = (0, p.l)(O);
   return null == j ? null : (0, n.jsxs)("div", {
     className: o()(g.row, g.between, g.section, g.popularPicksSection),
     children: [(0, n.jsxs)("div", {
       className: g.popularPicksHeader,
       children: [(0, n.jsx)(s.X6q, {
         variant: "heading-lg/semibold",
-        children: m.NW.string(m.t.ivaAAw)
-      }), x === C.AW.HOME && (0, n.jsxs)(s.P3F, {
+        children: C.NW.string(C.t.ivaAAw)
+      }), x === m.AW.HOME && (0, n.jsxs)(s.P3F, {
         className: g.shopAll,
-        onClick: () => l("shop all top"),
+        onClick: () => i("shop all top"),
         children: [(0, n.jsx)(s.dRF, {}), (0, n.jsx)(s.Text, {
           variant: "text-sm/medium",
-          children: m.NW.string(m.t.xFcotb)
+          children: C.NW.string(C.t.xFcotb)
         })]
       })]
     }), (0, n.jsx)("div", {

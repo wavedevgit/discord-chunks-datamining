@@ -1,10 +1,10 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
-  CN: () => Z,
+  CN: () => I,
   ZP: () => A,
   eP: () => E,
   hR: () => w,
-  jo: () => I
+  jo: () => Z
 });
 var r, i = n(200651),
   l = n(192379),
@@ -37,7 +37,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function N(e) {
   return e
 }
 
-function S(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,11 +63,11 @@ function S(e, t) {
   }), e
 }
 
-function Z(e, t, n) {
+function I(e, t, n) {
   return null != t && !!t && !(0, j.ig)(n, e.type)
 }
 
-function I(e, t) {
+function Z(e, t) {
   return null == t ? x.containerDefault : e > t ? x.containerDragAfter : x.containerDragBefore
 }
 
@@ -120,17 +120,17 @@ function E(e) {
     tabIndex: o,
     forceShowButtons: u,
     hasChannelInfo: h = !1
-  } = e, m = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), O = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), j = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), P = (0, s.e7)([v.Z], () => (0, p.b)(v.Z, m, t, O)), Z = (0, s.e7)([v.Z], () => v.Z.can(_.Plq.CREATE_INSTANT_INVITE, t) ? C.NW.string(C.t.zJrgTE) : C.NW.string(C.t.Sd8Ix8));
+  } = e, m = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), O = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), j = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), P = (0, s.e7)([v.Z], () => (0, p.b)(v.Z, m, t, O)), I = (0, s.e7)([v.Z], () => v.Z.can(_.Plq.CREATE_INSTANT_INVITE, t) ? C.NW.string(C.t.zJrgTE) : C.NW.string(C.t.Sd8Ix8));
   if (l || !P) return null;
 
-  function I() {
+  function Z() {
     if (null != m) {
       let e = b.Z.getAllActiveStreams().filter(e => e.state !== _.jm8.ENDED && e.channelId === t.id);
       (0, c.ZDy)(async () => {
         let {
           default: r
         } = await Promise.all([n.e("7654"), n.e("33781")]).then(n.bind(n, 560114));
-        return n => (0, i.jsx)(r, S(N({}, n), {
+        return n => (0, i.jsx)(r, N(S({}, n), {
           guild: m,
           channel: t,
           streamUserId: 1 === e.length ? e[0].ownerId : null,
@@ -153,13 +153,13 @@ function E(e) {
       children: w
     })
   })), (0, i.jsx)(c.ua7, {
-    text: Z,
-    children: e => (0, i.jsx)(c.P3F, S(N({
+    text: I,
+    children: e => (0, i.jsx)(c.P3F, N(S({
       className: a()(x.iconItem, u ? x.alwaysShown : void 0, h ? x.iconWithChannelInfo : x.iconNoChannelInfo)
     }, e), {
-      onClick: I,
+      onClick: Z,
       tabIndex: o,
-      "aria-label": Z,
+      "aria-label": I,
       children: w
     }))
   })
@@ -173,7 +173,7 @@ function T(e) {
   };
   return (0, i.jsx)(c.ua7, {
     text: C.NW.string(C.t.ROh4T0),
-    children: e => (0, i.jsx)(c.P3F, S(N({
+    children: e => (0, i.jsx)(c.P3F, N(S({
       className: x.iconItem
     }, e), {
       onClick: n,
@@ -197,7 +197,7 @@ function D(e) {
   };
   return (0, i.jsx)(c.ua7, {
     text: C.NW.string(C.t["N2c/Ul"]),
-    children: e => (0, i.jsx)(c.P3F, S(N({
+    children: e => (0, i.jsx)(c.P3F, N(S({
       className: x.iconItem
     }, e), {
       onClick: n,
@@ -212,23 +212,23 @@ function D(e) {
 }
 class A extends(r = l.PureComponent) {
   renderEditButton() {
-    return (0, i.jsx)(w, N({}, this.props))
+    return (0, i.jsx)(w, S({}, this.props))
   }
   renderInviteButton() {
-    return (0, i.jsx)(E, N({}, this.props))
+    return (0, i.jsx)(E, S({}, this.props))
   }
   renderRemoveSuggestionButton() {
-    return (0, i.jsx)(T, N({}, this.props))
+    return (0, i.jsx)(T, S({}, this.props))
   }
   renderAcceptSuggestionButton() {
-    return (0, i.jsx)(D, N({}, this.props))
+    return (0, i.jsx)(D, S({}, this.props))
   }
   getClassName() {
     let {
       position: e,
       sortingPosition: t
     } = this.props;
-    return I(e, t)
+    return Z(e, t)
   }
   isDisabled() {
     let {
@@ -236,7 +236,7 @@ class A extends(r = l.PureComponent) {
       sorting: t,
       sortingType: n
     } = this.props;
-    return Z(e, t, n)
+    return I(e, t, n)
   }
 }
 P(A, "defaultProps", {

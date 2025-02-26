@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => T
 });
-var l, r, i, a, o, s, c = n(442837),
+var r, l, i, o, a, s, c = n(442837),
   u = n(570140),
   d = n(592125),
   E = n(896797),
@@ -10,7 +10,7 @@ var l, r, i, a, o, s, c = n(442837),
   h = n(944486),
   p = n(55589),
   C = n(981631);
-let _ = (null !== (o = null === (a = window) || void 0 === a ? void 0 : null === (i = a.location) || void 0 === i ? void 0 : i.pathname) && void 0 !== o ? o : "").startsWith(C.Z5c.ACTIVITIES) ? C.Z5c.ACTIVITIES : null;
+let _ = (null !== (a = null === (o = window) || void 0 === o ? void 0 : null === (i = o.location) || void 0 === i ? void 0 : i.pathname) && void 0 !== a ? a : "").startsWith(C.Z5c.ACTIVITIES) ? C.Z5c.ACTIVITIES : null;
 
 function g(e) {
   let {
@@ -27,12 +27,12 @@ class O extends(s = c.ZP.Store) {
     return null != _ ? _ : E.Z.fallbackRoute
   }
 }
-r = "AppViewStore", (l = "displayName") in O ? Object.defineProperty(O, l, {
-  value: r,
+l = "AppViewStore", (r = "displayName") in O ? Object.defineProperty(O, r, {
+  value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : O[l] = r;
+}) : O[r] = l;
 let T = new O(u.Z, {
   OVERLAY_INITIALIZE: function() {
     let e = p.Z.getPrivateChannelIds(),

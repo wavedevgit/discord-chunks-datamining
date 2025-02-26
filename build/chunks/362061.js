@@ -1,11 +1,11 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => i
+  Z: () => l
 });
 var n = r(200651);
 
-function i(e) {
+function l(e) {
   let {
     isDark: t,
     style: r

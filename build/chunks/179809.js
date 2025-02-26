@@ -1,6 +1,6 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => I
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -25,9 +25,9 @@ var r = n(200651),
   C = n(388032),
   x = n(602079),
   P = n(638410);
-let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
-  S = (0, s.animated)(d.Kqy),
-  Z = i.memo(function(e) {
+let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
+  N = (0, s.animated)(d.Kqy),
+  I = i.memo(function(e) {
     let {
       folderNode: t,
       setNodeRef: n,
@@ -35,8 +35,8 @@ let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       expanded: s,
       mediaState: u,
       mentionCount: g = 0,
-      isMentionLowImportance: Z,
-      unread: I = !1,
+      isMentionLowImportance: I,
+      unread: Z = !1,
       defaultFolderName: w,
       useCircleMask: E = !1,
       draggable: T = !1,
@@ -94,14 +94,14 @@ let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         height: 0
       },
       config: {
-        duration: N
+        duration: S
       }
     }), el = i.useCallback(e => null == n ? void 0 : n(U, e), [n, U]), eo = (0, r.jsxs)(j.H, {
       children: [(0, r.jsx)(b.Z, {
         disabled: K || s,
         hovered: H,
         selected: l,
-        unread: I,
+        unread: Z,
         className: P.pill
       }), (0, r.jsx)(_.Z, {
         text: ee,
@@ -121,7 +121,7 @@ let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
             sorting: D,
             mediaState: u,
             mentionCount: g,
-            isMentionLowImportance: Z,
+            isMentionLowImportance: I,
             tooltipName: ee,
             folderGroupId: en,
             onClick: L,
@@ -152,7 +152,7 @@ let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         let {
           key: i
         } = n;
-        return t && (0, r.jsx)(S, {
+        return t && (0, r.jsx)(N, {
           as: "ul",
           gap: F ? "xxs" : 0,
           id: en,

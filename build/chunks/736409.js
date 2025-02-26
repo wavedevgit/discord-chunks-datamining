@@ -1,4 +1,4 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
   j: () => w
 }), n(47120);
@@ -25,15 +25,15 @@ var r = n(200651),
   C = n(921944),
   x = n(46140),
   P = n(388032),
-  N = n(94594),
-  S = n(204794);
-let Z = {
+  S = n(94594),
+  N = n(204794);
+let I = {
     topLeftDark: "rgba(62, 22, 137, 0.8)",
     topRightDark: "rgba(160, 86, 242, 0.4)",
     topLeftLight: "rgba(159, 86, 242, 0.4)",
     topRightLight: "rgba(222, 194, 252, 0.5)"
   },
-  I = e => {
+  Z = e => {
     let {
       closePopout: t,
       setToggleDefaultState: n
@@ -44,17 +44,17 @@ let Z = {
       count: b
     } = (0, j.fq)(), y = (0, i.useRef)(null);
     return (0, c.Tbt)(y), (0, r.jsxs)("div", {
-      className: N.wrapper,
+      className: S.wrapper,
       ref: y,
       children: [(0, r.jsx)("div", {
-        className: N.gradient,
+        className: S.gradient,
         style: {
-          background: "radial-gradient(75% 75% at 0% 0%, ".concat((0, s.wj)(a) ? Z.topLeftDark : Z.topLeftLight, " 0%, transparent 100%),\n    radial-gradient(70% 50% at 100% 0%, ").concat((0, s.wj)(a) ? Z.topRightDark : Z.topRightLight, " 0%, transparent 100%)")
+          background: "radial-gradient(75% 75% at 0% 0%, ".concat((0, s.wj)(a) ? I.topLeftDark : I.topLeftLight, " 0%, transparent 100%),\n    radial-gradient(70% 50% at 100% 0%, ").concat((0, s.wj)(a) ? I.topRightDark : I.topRightLight, " 0%, transparent 100%)")
         }
       }), (0, r.jsxs)("div", {
-        className: N.content,
+        className: S.content,
         children: [(0, r.jsx)(c.zxk, {
-          className: N.closeButton,
+          className: S.closeButton,
           "aria-label": P.NW.string(P.t.cpT0Cg),
           look: c.zxk.Looks.BLANK,
           size: c.zxk.Sizes.NONE,
@@ -65,16 +65,16 @@ let Z = {
           })
         }), (0, r.jsx)("img", {
           alt: "",
-          src: S.Z,
-          className: N.controllerImage
+          src: N.Z,
+          className: S.controllerImage
         }), (0, r.jsx)(l.X6, {
           variant: "heading-md/bold",
-          className: N.title,
+          className: S.title,
           children: P.NW.string(P.t.PRjSRk)
         }), (0, r.jsxs)("div", {
-          className: N.contentContainer,
+          className: S.contentContainer,
           children: [(0, r.jsxs)("div", {
-            className: N.toggleContainer,
+            className: S.toggleContainer,
             children: [(0, r.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "header-primary",
@@ -95,7 +95,7 @@ let Z = {
             size: O.F.SMALL
           })]
         }), (0, r.jsx)(c.zxk, {
-          className: N.viewSettingsButton,
+          className: S.viewSettingsButton,
           onClick: () => {
             t(), u.Z.open(_.oAB.ACTIVITY_PRIVACY, null, {
               analyticsLocations: o
@@ -142,7 +142,7 @@ let Z = {
             let {
               closePopout: t
             } = e;
-            return (0, r.jsx)(I, {
+            return (0, r.jsx)(Z, {
               closePopout: t,
               setToggleDefaultState: h
             })

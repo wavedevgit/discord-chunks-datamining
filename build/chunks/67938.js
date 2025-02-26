@@ -5,15 +5,15 @@ r.d(t, {
 });
 var n = r(200651);
 r(192379);
-var i = r(442837),
-  l = r(481060),
+var l = r(442837),
+  i = r(481060),
   o = r(607070),
   a = r(726256);
 
 function s(e) {
   let {
     category: t
-  } = e, r = (0, i.e7)([o.Z], () => o.Z.useReducedMotion);
+  } = e, r = (0, l.e7)([o.Z], () => o.Z.useReducedMotion);
   return (0, n.jsx)("div", {
     className: a.banner,
     "aria-label": t.name,
@@ -27,7 +27,7 @@ function s(e) {
         className: a.animatedLayer,
         alt: "",
         "aria-hidden": !0
-      }), (0, n.jsx)(l.Text, {
+      }), (0, n.jsx)(i.Text, {
         className: a.summary,
         variant: "text-md/normal",
         children: t.summary

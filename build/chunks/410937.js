@@ -3,10 +3,10 @@ n.d(t, {
   Z: () => c
 });
 var i = n(200651),
-  r = n(481060),
-  a = n(688465),
-  l = n(755007),
-  s = n(388032),
+  a = n(481060),
+  r = n(688465),
+  s = n(755007),
+  l = n(388032),
   o = n(605510);
 
 function c(e) {
@@ -17,11 +17,11 @@ function c(e) {
     className: o.priceLine,
     children: [(0, i.jsxs)("div", {
       className: o.orbText,
-      children: [(0, i.jsx)(r.Text, {
+      children: [(0, i.jsx)(a.Text, {
         variant: "text-xs/normal",
-        children: s.NW.string(s.t.eFNRzc)
-      }), (0, i.jsx)(a.Z, {})]
-    }), (0, i.jsx)(l.Z, {
+        children: l.NW.string(l.t.eFNRzc)
+      }), (0, i.jsx)(r.Z, {})]
+    }), (0, i.jsx)(s.Z, {
       orbAmount: t.amount,
       showInsufficientOrbBalanceTooltip: !0
     })]

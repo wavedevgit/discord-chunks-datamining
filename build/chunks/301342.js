@@ -1,8 +1,8 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
   P: () => w,
   Qo: () => E,
-  ZP: () => I,
+  ZP: () => Z,
   kw: () => D,
   rj: () => T
 });
@@ -48,7 +48,7 @@ function P(e) {
   return e
 }
 
-function N(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,17 +61,17 @@ function N(e, t) {
   }), e
 }
 
-function S(e) {
+function N(e) {
   e.stopPropagation()
 }
-let Z = i.memo(function(e) {
+let I = i.memo(function(e) {
     let t, {
         channel: l,
         connectChannelDragSource: p,
         connectChannelDropTarget: O,
         disableManageChannels: j,
-        position: Z,
-        sortingPosition: I,
+        position: I,
+        sortingPosition: Z,
         hideIcon: w,
         children: E
       } = e,
@@ -79,7 +79,7 @@ let Z = i.memo(function(e) {
       D = (0, s.e7)([v.ZP], () => v.ZP.isChannelMuted(l.getGuildId(), l.id)),
       A = (0, s.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
       R = (0, s.e7)([y.Z], () => y.Z.can(_.Plq.MANAGE_CHANNELS, l));
-    t = null != I ? Z > I ? x.containerDragAfter : x.containerDragBefore : x.containerDefault;
+    t = null != Z ? I > Z ? x.containerDragAfter : x.containerDragBefore : x.containerDefault;
     let L = i.useCallback(() => {
         A ? (0, u.mJ)(l.id) : (0, u.c4)(l.id)
       }, [l.id, A]),
@@ -90,7 +90,7 @@ let Z = i.memo(function(e) {
             let {
               default: e
             } = await Promise.all([n.e("8965"), n.e("14280")]).then(n.bind(n, 139035));
-            return n => (0, r.jsx)(e, N(P({}, n), {
+            return n => (0, r.jsx)(e, S(P({}, n), {
               channel: l,
               guild: t
             }))
@@ -104,7 +104,7 @@ let Z = i.memo(function(e) {
           let {
             default: i
           } = await Promise.all([n.e("45094"), n.e("1344")]).then(n.bind(n, 218613));
-          return n => (0, r.jsx)(i, N(P({}, n), {
+          return n => (0, r.jsx)(i, S(P({}, n), {
             channelType: e,
             guildId: t,
             categoryId: "null" !== l.id ? l.id : null
@@ -151,7 +151,7 @@ let Z = i.memo(function(e) {
               [x.clickable]: !0
             }),
             onContextMenu: k,
-            children: [(0, r.jsxs)(c.P3F, N(P({
+            children: [(0, r.jsxs)(c.P3F, S(P({
               innerRef: V,
               className: x.mainContent,
               tabIndex: U
@@ -179,7 +179,7 @@ let Z = i.memo(function(e) {
                 className: x.icon
               }) : null]
             })), (0, r.jsx)("div", {
-              onClick: S,
+              onClick: N,
               className: x.children,
               children: R && !j ? (0, r.jsx)(c.ua7, {
                 text: C.NW.string(C.t["fUYU+v"]),
@@ -223,7 +223,7 @@ let Z = i.memo(function(e) {
       });
     return null != O && null != p ? O(p(H)) : H
   }),
-  I = (0, p.B)(Z),
+  Z = (0, p.B)(I),
   w = i.memo(function(e) {
     let {
       name: t,

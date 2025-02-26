@@ -1,11 +1,10 @@
-/** Chunk was on 63354 **/
-"use strict";
+/** Chunk was on 86029 **/
 n.d(t, {
-  a: () => i
+  a: () => o
 });
-var o = n(818083),
-  r = n(984134);
-let c = (0, o.B)({
+var r = n(818083),
+  i = n(984134);
+let l = (0, r.B)({
   kind: "user",
   id: "2025-01_go_live_modal_refresh",
   label: "Go Live Modal Refresh",
@@ -21,21 +20,21 @@ let c = (0, o.B)({
   }]
 });
 
-function i(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
   } = e, {
-    isInHoldout: o
-  } = r.h.useExperiment({
+    isInHoldout: r
+  } = i.h.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return c.useExperiment({
+  return l.useExperiment({
     location: t
   }, {
-    disable: o,
+    disable: r,
     autoTrackExposure: n
   })
 }

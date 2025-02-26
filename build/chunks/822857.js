@@ -1,8 +1,8 @@
 /** Chunk was on 56650 **/
 n.d(t, {
-  W: () => r
+  W: () => l
 });
-var l = n(907584);
-let r = e => ({
-  enabled: l.Z.getCurrentConfig(e).enabled
+var r = n(907584);
+let l = e => ({
+  enabled: r.Z.getCurrentConfig(e).enabled
 })

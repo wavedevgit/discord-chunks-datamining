@@ -1,6 +1,6 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
-  Z: () => N
+  Z: () => S
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -62,23 +62,23 @@ function P(e) {
     m = g === y.Wyy,
     b = f.map(e => e.id),
     [v, C] = i.useState(!1),
-    [P, N] = i.useState(c),
-    S = u ? c ? 22 : -11 : c ? 0 : -_,
-    Z = (0, d.q_F)({
-      transform: "translate3d(0, ".concat(S, "px, 0)"),
+    [P, S] = i.useState(c),
+    N = u ? c ? 22 : -11 : c ? 0 : -_,
+    I = (0, d.q_F)({
+      transform: "translate3d(0, ".concat(N, "px, 0)"),
       config: {
         duration: j
       },
       onStart() {
-        C(!0), N(c)
+        C(!0), S(c)
       },
       onRest() {
-        C(!1), N(c)
+        C(!1), S(c)
       }
     }, "animate-always"),
-    I = v ? Z : void 0;
+    Z = v ? I : void 0;
   (v || P) && (t = (0, r.jsx)(a.animated.div, {
-    style: I,
+    style: Z,
     className: O.expandedFolderIconWrapper,
     children: (0, r.jsx)(d.ROc, {
       size: u ? "sm" : "md",
@@ -88,7 +88,7 @@ function P(e) {
       }
     })
   })), (v || !P) && (n = (0, r.jsx)(a.animated.div, {
-    style: I,
+    style: Z,
     className: O.closedFolderIconWrapper,
     children: b.slice(0, 4).map((e, t) => (0, r.jsx)(x, {
       index: t,
@@ -107,7 +107,7 @@ function P(e) {
   })
 }
 
-function N(e) {
+function S(e) {
   var t, n;
   let {
     folderNode: l,
@@ -123,12 +123,12 @@ function N(e) {
     folderIconContent: _,
     onClick: C,
     onContextMenu: x,
-    onHoverChange: N,
-    onKeyDown: S,
+    onHoverChange: S,
+    onKeyDown: N,
     treeItemProps: {
-      onFocus: Z
+      onFocus: I
     }
-  } = e, I = function(e, t) {
+  } = e, Z = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -143,10 +143,10 @@ function N(e) {
     }
     return i
   }(e.treeItemProps, ["onFocus"]), [w, E] = i.useState(!1), T = i.useCallback(() => {
-    c || E(!0), null == N || N(!0)
-  }, [c, N]), D = i.useCallback(() => {
-    c || E(!1), null == N || N(!1)
-  }, [c, N]), A = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), L = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, k = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
+    c || E(!0), null == S || S(!0)
+  }, [c, S]), D = i.useCallback(() => {
+    c || E(!1), null == S || S(!1)
+  }, [c, S]), A = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), L = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, k = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
   return (0, r.jsx)(d.aRk, {
     isFolder: !0,
     style: A ? {
@@ -184,8 +184,8 @@ function N(e) {
       onContextMenu: x,
       onMouseEnter: T,
       onMouseLeave: D,
-      onKeyDown: S,
-      onFocus: Z,
+      onKeyDown: N,
+      onFocus: I,
       "aria-label": v.NW.formatToPlainString(v.t["90/DwM"], {
         folderName: m,
         mentions: f
@@ -195,7 +195,7 @@ function N(e) {
       focusProps: {
         enabled: !1
       }
-    }, I), n = n = {
+    }, Z), n = n = {
       role: "treeitem",
       children: null != _ ? (0, r.jsx)("div", {
         className: o()(O.expandedFolderIconWrapper, j),

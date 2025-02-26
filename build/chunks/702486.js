@@ -4,18 +4,18 @@ r.d(t, {
   _: () => s
 });
 var n = r(192379),
-  i = r(772848),
-  l = r(638730),
+  l = r(772848),
+  i = r(638730),
   o = r(626135);
 let a = (e, t, r, n) => {
     let {
-      scrollTop: i = 0,
-      scrollOffset: l = 0,
+      scrollTop: l = 0,
+      scrollOffset: i = 0,
       scrollHeight: a = 0,
       scrollWidth: s = 0
     } = n;
     if (a > 0) {
-      let n = (i + l) / a;
+      let n = (l + i) / a;
       n > 0 && o.default.track(e, {
         scroll_visible_percent: n,
         source: r,
@@ -27,18 +27,18 @@ let a = (e, t, r, n) => {
   },
   s = (e, t) => {
     let r = n.useRef(null),
-      o = n.useRef((0, i.Z)()),
-      s = (0, l.h)(a, 5e3, [], {
+      o = n.useRef((0, l.Z)()),
+      s = (0, i.h)(a, 5e3, [], {
         trailing: !0
       }),
       c = n.useCallback(() => {
         var n;
-        let i = null === (n = r.current) || void 0 === n ? void 0 : n.getScrollerNode();
-        null != i && s(e, o.current, t, {
-          scrollTop: i.scrollTop,
-          scrollOffset: i.offsetHeight,
-          scrollHeight: i.scrollHeight,
-          scrollWidth: i.scrollWidth
+        let l = null === (n = r.current) || void 0 === n ? void 0 : n.getScrollerNode();
+        null != l && s(e, o.current, t, {
+          scrollTop: l.scrollTop,
+          scrollOffset: l.offsetHeight,
+          scrollHeight: l.scrollHeight,
+          scrollWidth: l.scrollWidth
         })
       }, [s, e, t]);
     return {

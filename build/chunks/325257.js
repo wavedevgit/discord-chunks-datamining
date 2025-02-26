@@ -1,4 +1,4 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
   Z: () => M
 }), n(47120);
@@ -25,10 +25,10 @@ var r = n(200651),
   C = n(727258),
   x = n(276952),
   P = n(249792),
-  N = n(40153),
-  S = n(593618),
-  Z = n(252686),
-  I = n(682662),
+  S = n(40153),
+  N = n(593618),
+  I = n(252686),
+  Z = n(682662),
   w = n(674552),
   E = n(981631),
   T = n(388032),
@@ -164,19 +164,19 @@ let M = i.memo(function(e) {
         null === (t = document.querySelector("[aria-owns=folder-items-".concat(el, "]"))) || void 0 === t || t.focus()
       }
     }, [el]),
-    eN = i.useCallback(e => {
+    eS = i.useCallback(e => {
       if (e) {
         eO.delay();
         return
       }
       eO.cancel(), ev(!1)
     }, [eO]),
-    eS = i.useCallback(e => {
+    eN = i.useCallback(e => {
       null == B || B(ei, e)
     }, [ei, B]),
-    eZ = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE);
+    eI = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == F) return null;
-  let eI = ey || em ? (0, r.jsx)(P.Z, {
+  let eZ = ey || em ? (0, r.jsx)(P.Z, {
       guild: F,
       show: ey,
       active: z,
@@ -202,13 +202,13 @@ let M = i.memo(function(e) {
       onMouseDown: e_,
       onContextMenu: ex,
       onKeyDown: eP,
-      icon: F.getIconURL(2 * eZ, eg && H, eo),
+      icon: F.getIconURL(2 * eI, eg && H, eo),
       selected: z || eg
     }, ep), {
       role: "treeitem"
     })),
-    ew = eu ? (0, r.jsx)(N.OG, {
-      children: (0, r.jsx)(Z.Z, {})
+    ew = eu ? (0, r.jsx)(S.OG, {
+      children: (0, r.jsx)(I.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? ed : void 0,
       "data-dnd-name": F.toString(),
@@ -226,25 +226,25 @@ let M = i.memo(function(e) {
         upperBadge: ea,
         lowerBadge: es,
         lowerBadgeSize: ec,
-        children: eI
+        children: eZ
       })
     });
-  return (0, r.jsxs)(I.H, {
-    ref: eS,
+  return (0, r.jsxs)(Z.H, {
+    ref: eN,
     children: [(0, r.jsx)(x.Z, {
       hovered: !eu && eg,
       selected: !eu && z,
       unread: !eu && q,
       className: D.pill
-    }), (0, r.jsx)(S.Z, {
+    }), (0, r.jsx)(N.Z, {
       guild: F,
       disabled: ee,
       isDragging: eu,
       children: ew
-    }), $ ? (0, r.jsx)(N.ZP, {
+    }), $ ? (0, r.jsx)(S.ZP, {
       name: F.name,
       targetNode: G,
-      onDragOverChanged: eN
+      onDragOverChanged: eS
     }) : null]
   })
 })

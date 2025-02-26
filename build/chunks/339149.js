@@ -1,7 +1,7 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
-  E: () => Z,
-  Z: () => I
+  E: () => I,
+  Z: () => Z
 }), n(47120), n(653041);
 var r, i = n(200651),
   l = n(192379),
@@ -97,7 +97,7 @@ let P = {
     })
   }
 };
-class N extends l.PureComponent {
+class S extends l.PureComponent {
   renderText() {
     let {
       state: e,
@@ -145,7 +145,7 @@ class N extends l.PureComponent {
     })
   }
 }
-class S extends(r = l.PureComponent) {
+class N extends(r = l.PureComponent) {
   componentWillAppear(e) {
     this.state.animationScale.setValue(1), e()
   }
@@ -167,7 +167,7 @@ class S extends(r = l.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? j.NW.string(j.t.cw57am) : (0, i.jsx)(N, {
+    return null == e || null == t ? j.NW.string(j.t.cw57am) : (0, i.jsx)(S, {
       application: e,
       state: t,
       isPaused: n
@@ -229,7 +229,7 @@ class S extends(r = l.PureComponent) {
   }
 }
 
-function Z(e, t) {
+function I(e, t) {
   return e.reduce((e, n) => {
     let {
       applicationId: r,
@@ -238,12 +238,12 @@ function Z(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-C(S, "defaultProps", {
+C(N, "defaultProps", {
   strokeSize: p._3P.StrokeSizes.MEDIUM
 });
-let I = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
+let Z = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
   let e = b.Z.activeItems,
-    t = Z(e, m.Z),
+    t = I(e, m.Z),
     {
       total: n,
       progress: r
@@ -274,6 +274,6 @@ let I = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(S, x({}, n)) : null
-  }) : (0, i.jsx)(S, x({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(N, x({}, n)) : null
+  }) : (0, i.jsx)(N, x({}, n))
 })

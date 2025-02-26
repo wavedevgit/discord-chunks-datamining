@@ -1,13 +1,19 @@
 /** Chunk was on web.js **/
 "use strict";
+n.d(t, {
+  EU: () => s,
+  Xm: () => o
+});
+var r = n(357352),
+  i = n(359135);
 
-function r(e) {
+function o(e) {
   return null == e ? null : {
-    nameplate: i(e.nameplate)
+    nameplate: a(e.nameplate)
   }
 }
 
-function i(e) {
+function a(e) {
   return null == e ? null : {
     asset: e.asset,
     skuId: e.sku_id,
@@ -16,6 +22,12 @@ function i(e) {
     palette: e.palette
   }
 }
-n.d(t, {
-  X: () => r
-})
+
+function s(e) {
+  return {
+    src: (0, r.b)(e.asset + "_playtest/static.png"),
+    animatedSrc: (0, r.b)(e.asset + "_playtest/animated.png"),
+    imgAlt: e.label,
+    palette: i.rY[e.palette]
+  }
+}

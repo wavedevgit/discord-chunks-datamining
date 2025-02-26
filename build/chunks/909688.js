@@ -1,11 +1,11 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  j: () => l
+  j: () => i
 });
 var n = r(818083),
-  i = r(987338);
-let l = (0, n.B)({
+  l = r(987338);
+let i = (0, n.B)({
   kind: "user",
   id: "2025-01_mobile_shop_adaptive_back_button_color",
   label: "mobile shop adaptive back button color",
@@ -19,5 +19,5 @@ let l = (0, n.B)({
       enabled: !0
     }
   }],
-  commonTriggerPoint: i.$P.COLLECTIBLES_SHOP_OPEN
+  commonTriggerPoint: l.$P.COLLECTIBLES_SHOP_OPEN
 })

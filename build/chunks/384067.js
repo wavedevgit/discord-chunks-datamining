@@ -4,9 +4,9 @@ r.d(t, {
   Z: () => h
 }), r(47120);
 var n = r(200651),
-  i = r(192379),
-  l = r(120356),
-  o = r.n(l),
+  l = r(192379),
+  i = r(120356),
+  o = r.n(i),
   a = r(622535),
   s = r(481060),
   c = r(597688),
@@ -18,11 +18,11 @@ let h = e => {
   var t;
   let {
     wideBannerBlock: r,
-    handleTransition: l,
+    handleTransition: i,
     tab: h
-  } = e, b = null === (t = c.Z.getCategoryByStoreListingId(r.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, C = i.useRef(null), [m, g] = i.useState();
-  i.useEffect(() => {
-    let e = C.current;
+  } = e, b = null === (t = c.Z.getCategoryByStoreListingId(r.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, m = l.useRef(null), [C, g] = l.useState();
+  l.useEffect(() => {
+    let e = m.current;
     if (null == e) return;
     let t = () => {
       e.naturalWidth > 0 && e.naturalHeight > 0 && g(1080 * (e.naturalHeight / e.naturalWidth))
@@ -44,12 +44,12 @@ let h = e => {
       children: [(0, n.jsx)("div", {
         className: f.wideBannerBackgroundImg,
         children: (0, n.jsx)("img", {
-          ref: C,
+          ref: m,
           src: j,
           alt: r.title,
           style: {
             width: "100%",
-            height: null != m ? "".concat(m, "px") : "auto",
+            height: null != C ? "".concat(C, "px") : "auto",
             objectFit: "cover",
             objectPosition: "left center",
             display: "block"
@@ -58,7 +58,7 @@ let h = e => {
       }), (0, n.jsx)("div", {
         className: f.wideBannerContentContainer,
         style: {
-          maxHeight: null != m ? "".concat(m, "px") : "auto"
+          maxHeight: null != C ? "".concat(C, "px") : "auto"
         },
         children: (0, n.jsxs)("div", {
           className: f.wideBannerTextContainer,
@@ -80,7 +80,7 @@ let h = e => {
       }), !0 !== r.disableCta && (0, n.jsx)(s.zxk, {
         className: f.wideBannerBlockButton,
         color: s.Ttl.WHITE,
-        onClick: () => l("shop wide banner", v),
+        onClick: () => i("shop wide banner", v),
         children: p.NW.string(p.t.jVcuVV)
       })]
     })

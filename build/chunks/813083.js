@@ -5,8 +5,8 @@ r.d(t, {
 }), r(627341);
 var n = r(200651);
 r(192379);
-var i = r(120356),
-  l = r.n(i),
+var l = r(120356),
+  i = r.n(l),
   o = r(278074),
   a = r(780384),
   s = r(481060),
@@ -18,7 +18,7 @@ let f = e => {
   let {
     category: t,
     display: r,
-    className: i
+    className: l
   } = e, f = (0, c.ZP)();
   if (null == t.unpublishedAt) return null;
   let h = (0, d.OT)(t.unpublishedAt);
@@ -27,7 +27,7 @@ let f = e => {
     return (0, n.jsx)(s.IGR, {
       disableColor: !0,
       text: e,
-      className: l()((0, a.wj)(f) ? p.badgeDark : p.badgeLight, i)
+      className: i()((0, a.wj)(f) ? p.badgeDark : p.badgeLight, l)
     })
   }
   return (0, o.EQ)([r, h > 1]).with(["card", !0], () => null).with(["banner", !0], () => b(u.NW.formatToPlainString(u.t["8gsP5O"], {

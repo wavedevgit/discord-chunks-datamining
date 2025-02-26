@@ -1,11 +1,11 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  c: () => l
+  c: () => i
 });
 var n = r(442837),
-  i = r(479766);
+  l = r(479766);
 
-function l() {
-  return (0, n.e7)([i.Z], () => i.Z.balance)
+function i() {
+  return (0, n.e7)([l.Z], () => l.Z.balance)
 }

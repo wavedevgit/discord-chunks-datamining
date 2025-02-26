@@ -5,8 +5,8 @@ r.d(t, {
 });
 var n = r(200651);
 r(192379);
-var i = r(120356),
-  l = r.n(i),
+var l = r(120356),
+  i = r.n(l),
   o = r(481060),
   a = r(932563),
   s = r(960919),
@@ -17,13 +17,13 @@ function u(e) {
   let {
     orbAmount: t,
     showInsufficientOrbBalanceTooltip: r
-  } = e, i = (0, a.c)(), u = null != i && i >= t;
+  } = e, l = (0, a.c)(), u = null != l && l >= t;
   return (0, n.jsx)(o.ua7, {
     position: "top",
     text: c.NW.string(c.t.zqh7ZG),
     shouldShow: r && !u,
     children: e => {
-      var r, i;
+      var r, l;
       return (0, n.jsxs)(o.Text, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
@@ -43,20 +43,20 @@ function u(e) {
         return e
       }({
         variant: "text-lg/bold",
-        className: l()(d.orbPriceTag, {
+        className: i()(d.orbPriceTag, {
           [d.insufficientBalance]: !u
         })
-      }, e), i = i = {
+      }, e), l = l = {
         children: [(0, n.jsx)(s.Z, {}), t]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
           r.push.apply(r, n)
         }
         return r
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
       }), r))
     }
   })

@@ -1,12 +1,12 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  $: () => C
+  $: () => m
 }), r(653041);
 var n = r(200651),
-  i = r(192379),
-  l = r(120356),
-  o = r.n(l),
+  l = r(192379),
+  i = r(120356),
+  o = r.n(i),
   a = r(642128),
   s = r(873546),
   c = r(481060),
@@ -21,14 +21,14 @@ function b(e) {
     endDate: t
   } = e, {
     days: r,
-    hours: i,
-    minutes: l,
+    hours: l,
+    minutes: i,
     seconds: o
   } = (0, d.Z)(t), a = function(e, t, r, n) {
-    let i = (e, t) => "".concat(e.toString().padStart(2, "0")).concat(t),
-      l = [];
-    return e > 0 && l.push(i(e, u.NW.string(u.t.QJyuxc))), (t > 0 || l.length > 0) && l.push(i(t, u.NW.string(u.t["1LyF1t"]))), (r > 0 || l.length > 0) && l.push(i(r, u.NW.string(u.t.n7dksL))), l.push(i(n, u.NW.string(u.t["6m/6nJ"]))), l.join(":")
-  }(r, i, l, o);
+    let l = (e, t) => "".concat(e.toString().padStart(2, "0")).concat(t),
+      i = [];
+    return e > 0 && i.push(l(e, u.NW.string(u.t.QJyuxc))), (t > 0 || i.length > 0) && i.push(l(t, u.NW.string(u.t["1LyF1t"]))), (r > 0 || i.length > 0) && i.push(l(r, u.NW.string(u.t.n7dksL))), i.push(l(n, u.NW.string(u.t["6m/6nJ"]))), i.join(":")
+  }(r, l, i, o);
   return (0, n.jsx)(c.Text, {
     variant: "heading-md/medium",
     className: p.countdown,
@@ -40,12 +40,12 @@ function b(e) {
     })
   })
 }
-let C = i.memo(function(e) {
+let m = l.memo(function(e) {
   let {
     unpublishedAt: t,
     isVisible: r,
-    displayOptions: i,
-    isFullScreen: l
+    displayOptions: l,
+    isFullScreen: i
   } = e, d = (0, c.q_F)({
     transform: "translateX(-50%) ".concat(r ? "translateY(-75%)" : "translateY(0%)"),
     opacity: +!!r,
@@ -55,7 +55,7 @@ let C = i.memo(function(e) {
     }
   });
   return (0, n.jsxs)(a.animated.div, {
-    className: o()([p.countDownWrapper, l && p.fullScreenWrapper, s.tq && p.mobileWrapper]),
+    className: o()([p.countDownWrapper, i && p.fullScreenWrapper, s.tq && p.mobileWrapper]),
     role: "status",
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -74,13 +74,13 @@ let C = i.memo(function(e) {
         })
       }
       return e
-    }({}, i.style, d),
+    }({}, l.style, d),
     children: [(0, n.jsx)(c.Text, {
       variant: "text-md/medium",
       className: p.countdownLabel,
-      children: i.label()
-    }), null != i.iconSrc && (0, n.jsx)("img", {
-      src: i.iconSrc,
+      children: l.label()
+    }), null != l.iconSrc && (0, n.jsx)("img", {
+      src: l.iconSrc,
       className: p.countdownIcon,
       alt: "",
       "aria-hidden": !0

@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 19b7c2ac90d035a3
+  Original File Name: 514342510afa2aca
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -1826,119 +1826,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     color: var(--text-primary)
 }
 
-.muted__20a53 .avatar__20a53 {
-    opacity: .3
-}
-
-.muted__20a53 {
-    color: var(--interactive-muted)
-}
-
-.highlighted__20a53 {
-    color: var(--interactive-active)
-}
-
-.layout__20a53 {
-    min-width: 0;
-    border-radius: 4px;
-    height: 42px;
-    padding: 0 8px
-}
-
-.avatar__20a53,.layout__20a53 {
-    display: flex;
-    align-items: center
-}
-
-.avatar__20a53 {
-    justify-content: center;
-    flex: 0 0 auto;
-    width: 32px;
-    height: 32px;
-    margin-right: 12px
-}
-
-.content__20a53 {
-    min-width: 0;
-    flex: 1 1 auto
-}
-
-.content__20a53,.name__20a53 {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden
-}
-
-.name__20a53 {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 500;
-    flex: 0 1 auto
-}
-
-.highlighted__20a53 .name__20a53 {
-    font-weight: 500;
-    font-weight: var(--font-weight-semibold-1x-light-theme,500)
-}
-
-.wrappedLayout__20a53 {
-    height: auto;
-    padding: 5px 8px
-}
-
-.wrappedName__20a53 {
-    overflow: none;
-    white-space: normal
-}
-
-.nameAndDecorators__20a53 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center
-}
-
-.subText__20a53 {
-    margin-top: -2px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden
-}
-
-.subText__20a53:empty {
-    display: none
-}
-
-.enable-forced-colors .highlighted__20a53,.enable-forced-colors .muted__20a53 {
-    color: inherit
-}
-
-:where(.visual-refresh) .highlighted__20a53 {
-    color: var(--text-primary)
-}
-
-:where(.visual-refresh) .highlighted__20a53 .subText__20a53 {
-    color: var(--text-secondary)
-}
-
-:where(.visual-refresh) .layout__20a53 {
-    padding: 0
-}
-
-:where(.visual-refresh) .avatar__20a53 {
-    height: auto;
-    height: initial;
-    width: auto;
-    width: initial
-}
-
-.visual-refresh.density-cozy .layout__20a53 {
-    height: 48px
-}
-
-.visual-refresh.density-compact .layout__20a53 {
-    height: 42px
-}
-
 .container_e45859 {
     box-sizing: border-box;
     display: block;
@@ -2533,8 +2420,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -4592,61 +4479,48 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     border-color: var(--bg-brand)
 }
 
-:root {
-    --custom-virtual-currency-border-subtle: var(--border-subtle,rgba(108,111,124,0.12))
-}
-
-.baseCardOutline__1ab14 {
-    border-radius: 16px;
-    border: 1px solid rgba(108, 111, 124, 0.12);
-    border: 1px solid var(--custom-virtual-currency-border-subtle);
-    box-shadow: 0 12px 24px 0 rgba(0,0,0,.4)
-}
-
-.coachmarkTitle__1ab14 {
-    color: --header-primary;
-    color: var(--plum-3,--header-primary);
-    font-size: 18px;
-    line-height: 20px
-}
-
-.coachmarkDescription__1ab14,.coachmarkTitle__1ab14 {
-    text-align: center;
-    font-style: normal;
-    font-weight: 500
-}
-
-.coachmarkDescription__1ab14 {
-    align-self: stretch;
-    color: --header-secondary;
-    color: var(--plum-9,--header-secondary);
-    font-size: 14px;
-    line-height: 18px
-}
-
 .container__6e9b4 {
     position: relative;
     pointer-events: all;
+    display: flex;
     width: 256px;
-    height: 228px;
-    padding: 16px 0;
-    gap: var(--space-16);
-    background: var(--primary-730);
-    box-shadow: 0 12px 32px 0 rgba(0,0,0,.24);
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bg-surface-overlay);
+    border: 1px solid rgba(0,0,0,.08);
+    border: 1px solid var(--border-subtle,rgba(0,0,0,.08));
+    border-radius: 24px;
+    box-shadow: 0 12px 36px 0 rgba(0,0,0,.12);
     box-sizing: border-box;
     z-index: 1000
 }
 
-.container__6e9b4,.content__6e9b4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center
+.title__6e9b4 {
+    color: var(--header-primary);
+    line-height: 20px
+}
+
+.description__6e9b4 {
+    color: var(--header-secondary);
+    line-height: 18px;
+    text-align: center
+}
+
+.orbIcon__6e9b4,.orbIconImg__6e9b4 {
+    height: 40px
 }
 
 .content__6e9b4 {
+    margin-top: 12px;
+    flex-direction: column;
     width: 100%;
-    height: 64px;
     gap: 4px
+}
+
+.closeButton__6e9b4,.content__6e9b4 {
+    display: flex;
+    align-items: center
 }
 
 .closeButton__6e9b4 {
@@ -4655,16 +4529,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     cursor: pointer;
     position: absolute;
     right: 12px;
-    top: 16px;
-    display: flex;
-    width: 32px;
-    height: 32px;
+    top: 12px;
+    width: 20px;
+    height: 20px;
     padding: var(--space-8);
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    border-radius: 8px;
-    background: rgba(0,0,0,.54)
+    justify-content: center
 }
 
 .closeButtonInner__6e9b4 {
@@ -4672,7 +4541,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .closeButtonIcon__6e9b4 {
-    color: var(--primary-130);
     align-self: center
 }
 
@@ -4718,19 +4586,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     stroke-width: 2px;
     stroke: var(--interactive-active);
     background: var(--interactive-active)
-}
-
-.svgContainer_da47dd {
-    width: 114px;
-    height: 113px;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.svg_da47dd {
-    height: 144px;
-    width: 154px
 }
 
 .settingsItemHighlight__7cd2d {
@@ -5424,4 +5279,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=19b7c2ac90d035a3.css.map*/
+/*# sourceMappingURL=514342510afa2aca.css.map*/

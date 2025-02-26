@@ -1,4 +1,4 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
   Z: () => v
 });
@@ -79,7 +79,7 @@ function v(e) {
       transform: x ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
-  }, O ? "respect-motion-settings" : "animate-never"), N = i.useCallback(e => {
+  }, O ? "respect-motion-settings" : "animate-never"), S = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), null != C && d(C)
   }, [d, C]);
   return (0, r.jsx)("div", {
@@ -95,7 +95,7 @@ function v(e) {
         className: o()(m.bar, m.emptyBar)
       }) : j === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
-        onClick: N,
+        onClick: S,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
           size: "custom",
           color: "currentColor",
@@ -116,7 +116,7 @@ function v(e) {
         })]
       }) : j === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
-        onClick: N,
+        onClick: S,
         children: (0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "status-danger-text",

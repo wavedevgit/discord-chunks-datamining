@@ -1,4 +1,4 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
   Z: () => b
 });
@@ -22,14 +22,14 @@ let b = i.memo(function(e) {
     guildNode: b,
     lowerBadge: y
   } = e, v = b.id, O = (0, l.e7)([p.Z], () => p.Z.getGuild(v)), j = (0, a.E)(O), _ = (0, l.e7)([h.Z], () => h.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(v)), x = (0, c.Z)(e => e.guildId), P = (0, f.Z)(v), {
-    badge: N,
-    unread: S,
-    isMentionLowImportance: Z
+    badge: S,
+    unread: N,
+    isMentionLowImportance: I
   } = (0, l.cj)([d.default], () => ({
     badge: d.default.getMentionCount(v),
     isMentionLowImportance: d.default.getIsMentionLowImportance(v),
     unread: d.default.hasUnread(v)
-  })), I = (0, s.Ij)(O) && 0 === N, w = i.useMemo(() => null != y ? y : I ? (0, r.jsx)("div", {
+  })), Z = (0, s.Ij)(O) && 0 === S, w = i.useMemo(() => null != y ? y : Z ? (0, r.jsx)("div", {
     className: m.pauseBackground,
     children: (0, r.jsx)(o.fpf, {
       size: "custom",
@@ -38,7 +38,7 @@ let b = i.memo(function(e) {
       width: 10,
       height: 10
     })
-  }) : null, [y, I]);
+  }) : null, [y, Z]);
   return (0, r.jsx)(g.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -61,10 +61,10 @@ let b = i.memo(function(e) {
     unavailable: C,
     animatable: _,
     selected: x === v,
-    badge: N,
-    isMentionLowImportance: Z,
+    badge: S,
+    isMentionLowImportance: I,
     lowerBadge: w,
-    unread: S,
+    unread: N,
     mediaState: P,
     guildJoinRequestStatus: j
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

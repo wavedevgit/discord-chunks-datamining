@@ -78,7 +78,7 @@ function I(e) {
   let u = e.avatar_decoration_data;
   void 0 !== u && (e.avatarDecorationData = (0, o.FG)(u), delete e.avatar_decoration_data);
   let d = e.collectibles;
-  void 0 !== d && (e.collectibles = (0, a.X)(d), delete e.collectibles);
+  void 0 !== d && (e.collectibles = (0, a.Xm)(d), delete e.collectibles);
   let f = e.global_name;
   void 0 !== f && (e.globalName = f, delete e.global_name);
   let _ = e.primary_guild;

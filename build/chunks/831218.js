@@ -1,4 +1,4 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
   Z: () => B
 }), n(47120);
@@ -24,10 +24,10 @@ var r, i = n(200651),
   C = n(518311),
   x = n(355298),
   P = n(869404),
-  N = n(333984),
-  S = n(210887),
-  Z = n(592125),
-  I = n(158776),
+  S = n(333984),
+  N = n(210887),
+  I = n(592125),
+  Z = n(158776),
   w = n(55589),
   E = n(515753),
   T = n(981631),
@@ -322,7 +322,7 @@ class G extends(r = l.Component) {
         c = n.some(e => (0, b.Z)(e)),
         u = {
           num_users_visible: a.length,
-          num_users_visible_with_mobile_indicator: s.filter(e => null != e && I.Z.isMobileOnline(e)).length
+          num_users_visible_with_mobile_indicator: s.filter(e => null != e && Z.Z.isMobileOnline(e)).length
         };
       this.hasReportedAnalytics = !0, g.ZP.trackWithMetadata(T.rMx.DM_LIST_VIEWED, k(L({}, u, (0, m.X)()), {
         visible_user_ids: s.filter(e => null != e),
@@ -432,20 +432,20 @@ let B = e => {
       showDMHeader: h
     } = e,
     g = l.Children.count(d),
-    m = Z.Z.getMutablePrivateChannels(),
+    m = I.Z.getMutablePrivateChannels(),
     b = (0, P.k1)(m),
-    y = (0, u.Wu)([w.Z, x.Z, N.Z], () => {
+    y = (0, u.Wu)([w.Z, x.Z, S.Z], () => {
       let e = w.Z.getPrivateChannelIds();
-      return (0, P.tU)(e, [x.Z, N.Z])
+      return (0, P.tU)(e, [x.Z, S.Z])
     }, []);
   (0, _.z)(j.R);
-  let C = (0, u.cj)([f.Z, S.Z, Z.Z], () => ({
-      theme: S.Z.darkSidebar ? T.BRd.DARK : a,
+  let C = (0, u.cj)([f.Z, N.Z, I.Z], () => ({
+      theme: N.Z.darkSidebar ? T.BRd.DARK : a,
       keyboardModeEnabled: f.Z.keyboardModeEnabled,
-      version: null != o ? "".concat(o, ":").concat(Z.Z.getPrivateChannelsVersion()) : Z.Z.getPrivateChannelsVersion()
+      version: null != o ? "".concat(o, ":").concat(I.Z.getPrivateChannelsVersion()) : I.Z.getPrivateChannelsVersion()
     })),
-    I = l.useRef(null),
-    E = null !== (t = e.listScrollerRef) && void 0 !== t ? t : I,
+    Z = l.useRef(null),
+    E = null !== (t = e.listScrollerRef) && void 0 !== t ? t : Z,
     D = l.useCallback(e => {
       let t = E.current,
         n = document.querySelector(e);

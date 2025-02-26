@@ -1,6 +1,6 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
-  Z: () => N
+  Z: () => S
 }), n(411104), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -123,7 +123,7 @@ class x extends m.ZP {
   }
 }
 let P = (0, u.B)(x),
-  N = i.memo(function(e) {
+  S = i.memo(function(e) {
     let {
       channel: t,
       guild: n,

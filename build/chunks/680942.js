@@ -4,8 +4,8 @@ r.d(t, {
   Z: () => g
 });
 var n = r(200651),
-  i = r(192379),
-  l = r(481060),
+  l = r(192379),
+  i = r(481060),
   o = r(727637),
   a = r(906732),
   s = r(333867),
@@ -16,8 +16,8 @@ var n = r(200651),
   f = r(474936),
   h = r(231338),
   b = r(388032),
-  C = r(275509);
-let m = {
+  m = r(275509);
+let C = {
     dark: [{
       box: "#FFF19E",
       ribbon: "#FF484B"
@@ -74,13 +74,13 @@ let m = {
       disableCustomColor: _ = !1
     } = e, {
       analyticsLocations: y
-    } = (0, a.ZP)(), O = i.useRef(null), k = (0, o.Z)(O), P = _ ? h.BR.DARK : h.BR.LIGHT, S = (0, u.hv)("CollectiblesShopGiftButton");
-    return (0, d.x6)(t) ? null : (0, n.jsx)(l.ua7, {
+    } = (0, a.ZP)(), O = l.useRef(null), k = (0, o.Z)(O), P = _ ? h.BR.DARK : h.BR.LIGHT, S = (0, u.hv)("CollectiblesShopGiftButton");
+    return (0, d.x6)(t) ? null : (0, n.jsx)(i.ua7, {
       text: b.NW.string(b.t["JCFN//"]),
       delay: x,
       children: e => {
-        var i, o;
-        return (0, n.jsx)(l.zxk, (i = function(e) {
+        var l, o;
+        return (0, n.jsx)(i.zxk, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -99,11 +99,11 @@ let m = {
           return e
         }({}, e), o = o = {
           buttonRef: O,
-          className: C.giftButton,
-          color: _ ? l.Ttl.BRAND : l.Ttl.CUSTOM,
-          look: l.zxk.Looks.FILLED,
-          size: l.PhG.ICON,
-          innerClassName: C.giftButtonInner,
+          className: m.giftButton,
+          color: _ ? i.Ttl.BRAND : i.Ttl.CUSTOM,
+          look: i.zxk.Looks.FILLED,
+          size: i.PhG.ICON,
+          innerClassName: m.giftButtonInner,
           "aria-label": b.NW.string(b.t.PEjaCw),
           onClick: e => {
             e.stopPropagation(), (0, s.Z)({
@@ -125,12 +125,12 @@ let m = {
             hovered: k,
             isContentDismissed: !0,
             themeOverride: P,
-            boxColors: m
-          }) : (0, n.jsx)(l.OgN, {
+            boxColors: C
+          }) : (0, n.jsx)(i.OgN, {
             size: "md",
             color: "currentColor"
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
@@ -138,8 +138,8 @@ let m = {
           }
           return r
         })(Object(o)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
-        }), i))
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
+        }), l))
       }
     })
   }

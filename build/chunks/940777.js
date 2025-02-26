@@ -1,4 +1,4 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
   Z: () => R
 }), n(47120), n(653041);
@@ -25,10 +25,10 @@ var r = n(200651),
   C = n(979651),
   x = n(709054),
   P = n(853856),
-  N = n(593214),
-  S = n(919755),
-  Z = n(110977),
-  I = n(603274),
+  S = n(593214),
+  N = n(919755),
+  I = n(110977),
+  Z = n(603274),
   w = n(981631),
   E = n(388032),
   T = n(588827);
@@ -65,7 +65,7 @@ function R() {
     {
       favoriteAdded: R,
       clearFavoriteAdded: L
-    } = (0, N.up)(),
+    } = (0, S.up)(),
     [k, M] = i.useState(!1),
     {
       favoriteServerMuted: G,
@@ -80,7 +80,7 @@ function R() {
     {
       badge: F,
       unread: H
-    } = (0, S.Z)(B),
+    } = (0, N.Z)(B),
     z = function(e) {
       let t = (0, s.e7)([_.Z], () => _.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
@@ -123,9 +123,9 @@ function R() {
       hovered: k,
       unread: H && !G,
       className: T.pill
-    }), (0, r.jsx)(I.Z, {
+    }), (0, r.jsx)(Z.Z, {
       onShow: Q,
-      children: (0, r.jsx)(Z.S, {
+      children: (0, r.jsx)(I.S, {
         children: (0, r.jsx)(c.aRk, {
           selected: Y || V || k,
           upperBadge: z,

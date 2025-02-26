@@ -1,4 +1,4 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
   ZP: () => _
 }), n(47120);
@@ -149,15 +149,15 @@ let _ = i.memo(function(e) {
     onMouseDown: C,
     disableBannerAnimation: x,
     "aria-expanded": P,
-    "aria-controls": N,
-    guild: S,
-    guildBanner: Z,
-    animationOverlayHeight: I,
+    "aria-controls": S,
+    guild: N,
+    guildBanner: I,
+    animationOverlayHeight: Z,
     children: w,
     headerClassName: E,
     communityInfoVisible: T,
     hasSubheader: D
-  } = e, A = S.hasFeature(g.oNc.ANIMATED_BANNER), R = (0, d.Z)(S), L = !R && S.hasCommunityInfoSubheader(), k = !R && T, M = (0, h.xR)(Z) && A && !x, [G, B] = i.useState(!1), U = i.useRef(), W = i.useRef(null), V = i.useRef(), F = p.QK.getSetting();
+  } = e, A = N.hasFeature(g.oNc.ANIMATED_BANNER), R = (0, d.Z)(N), L = !R && N.hasCommunityInfoSubheader(), k = !R && T, M = (0, h.xR)(I) && A && !x, [G, B] = i.useState(!1), U = i.useRef(), W = i.useRef(null), V = i.useRef(), F = p.QK.getSetting();
   i.useEffect(() => {
     if (M && t && !U.current && F) return B(!0), V.current = setTimeout(() => {
       B(!1)
@@ -201,16 +201,16 @@ let _ = i.memo(function(e) {
             children: [(0, r.jsxs)("div", {
               className: o()(y.headerContent, y.primaryInfo),
               children: [(0, r.jsx)(f.Z, {
-                guild: S,
+                guild: N,
                 isBannerVisible: t
-              }), S.id === m._ && (0, r.jsx)(j, {}), (0, r.jsx)(c.X6q, {
+              }), N.id === m._ && (0, r.jsx)(j, {}), (0, r.jsx)(c.X6q, {
                 variant: "text-md/semibold",
                 lineClamp: 1,
                 className: y.name,
-                children: S.toString()
+                children: N.toString()
               }), null != a && (0, r.jsx)(c.P3F, {
                 className: y.headerButton,
-                "aria-controls": N,
+                "aria-controls": S,
                 "aria-expanded": P,
                 focusProps: {
                   ringTarget: W,
@@ -219,22 +219,22 @@ let _ = i.memo(function(e) {
                 onClick: a,
                 onContextMenu: _,
                 "aria-label": b.NW.formatToPlainString(b.t.xMXpl5, {
-                  guildName: null !== (i = null == S ? void 0 : S.toString()) && void 0 !== i ? i : ""
+                  guildName: null !== (i = null == N ? void 0 : N.toString()) && void 0 !== i ? i : ""
                 })
               }), (0, r.jsx)("div", {
                 className: y.headerChildren,
                 children: w
               })]
             }), L && (0, r.jsx)(O, {
-              guild: S,
+              guild: N,
               controller: n,
-              hasBanner: null != Z,
+              hasBanner: null != I,
               hasSubheader: null != D && D
             })]
-          }), null != Z ? (0, r.jsx)(v, {
-            guild: S,
+          }), null != I ? (0, r.jsx)(v, {
+            guild: N,
             controller: n,
-            guildBanner: Z,
+            guildBanner: I,
             animate: G
           }) : null]
         }), M && H() ? (0, r.jsx)("div", {
@@ -244,7 +244,7 @@ let _ = i.memo(function(e) {
           },
           onMouseLeave: () => B(!1),
           style: {
-            height: I
+            height: Z
           }
         }) : null]
       })

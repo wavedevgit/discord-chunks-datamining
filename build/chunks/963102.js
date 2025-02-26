@@ -4,9 +4,9 @@ r.d(t, {
   I: () => _
 }), r(653041);
 var n = r(200651),
-  i = r(192379),
-  l = r(120356),
-  o = r.n(l),
+  l = r(192379),
+  i = r(120356),
+  o = r.n(i),
   a = r(442837),
   s = r(481060),
   c = r(425493),
@@ -16,8 +16,8 @@ var n = r(200651),
   f = r(822857),
   h = r(775451),
   b = r(594174),
-  C = r(471731),
-  m = r(335131),
+  m = r(471731),
+  C = r(335131),
   g = r(215023),
   v = r(388032),
   x = r(470602);
@@ -26,14 +26,14 @@ function j(e) {
   let {
     tab: t,
     displayText: r,
-    selected: i,
-    handleTransition: l
+    selected: l,
+    handleTransition: i
   } = e;
   return (0, n.jsx)(u.Z.Title, {
-    onClick: () => l(t),
+    onClick: () => i(t),
     wrapperClassName: x.tabWrapper,
     className: o()(x.tab, {
-      [x.selected]: i
+      [x.selected]: l
     }),
     children: r
   })
@@ -43,7 +43,7 @@ function _(e) {
   let {
     isFullScreen: t,
     isLayer: r,
-    onClose: l,
+    onClose: i,
     selectedTab: _,
     handleTransition: y
   } = e, O = (0, d.ZP)(), k = (0, a.e7)([b.default], () => b.default.getCurrentUser()), P = (null == k ? void 0 : k.isStaff()) || (null == k ? void 0 : k.isStaffPersonal()) || !1, {
@@ -67,8 +67,8 @@ function _(e) {
         [x.fullscreenHeaderBar]: t
       }),
       innerClassname: S ? x.headerBarInner : void 0,
-      toolbar: t || !P ? null : (0, n.jsx)(i.Fragment, {}),
-      children: [(0, n.jsx)(C.Z, {
+      toolbar: t || !P ? null : (0, n.jsx)(l.Fragment, {}),
+      children: [(0, n.jsx)(m.Z, {
         className: x.discordLogo
       }), (0, n.jsx)(u.Z.Title, {
         children: v.NW.string(v.t.pWG4zc)
@@ -94,7 +94,7 @@ function _(e) {
           ctaText: v.NW.string(v.t["H57f4+"]),
           ctaOnClick: () => (0, p.navigateToQuestHome)()
         }), t && (0, n.jsx)(c.Z, {
-          closeAction: r ? m.DR : l,
+          closeAction: r ? C.DR : i,
           keybind: "ESC"
         })]
       })]

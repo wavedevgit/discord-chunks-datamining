@@ -1,4 +1,4 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
   E: () => eb,
   j: () => em
@@ -25,10 +25,10 @@ var r, i = n(200651),
   C = n(258871),
   x = n(216306),
   P = n(398758),
-  N = n(486311),
-  S = n(220444),
-  Z = n(31022),
-  I = n(10401),
+  S = n(486311),
+  N = n(220444),
+  I = n(31022),
+  Z = n(10401),
   w = n(131704),
   E = n(592125),
   T = n(796974),
@@ -179,7 +179,7 @@ class ef extends(r = l.PureComponent) {
         channel: o,
         category: a
       } = l;
-      return !!(0, w.vc)(o.record.type) && (!a.isCollapsed || !a.isMuted) && !o.isMuted && !!t.isItemVisible(r, i, !0) && (0, S.d)(o.record)
+      return !!(0, w.vc)(o.record.type) && (!a.isCollapsed || !a.isMuted) && !o.isMuted && !!t.isItemVisible(r, i, !0) && (0, N.d)(o.record)
     })
   }
   renderTopUnread() {
@@ -610,7 +610,7 @@ class ef extends(r = l.PureComponent) {
               selected: a === eo.oC.MEMBER_SAFETY
             }, er.z.GUILD_MOD_DASH_MEMBER_SAFETY);
           case er.z.GUILD_BOOSTS:
-            return (0, i.jsx)(N.Z, {
+            return (0, i.jsx)(S.Z, {
               guild: r,
               selected: a === eo.oC.GUILD_BOOSTS
             }, er.z.GUILD_BOOSTS);
@@ -653,7 +653,7 @@ class ef extends(r = l.PureComponent) {
             }) : null]
           }, x);
         case el.d4z.GUILD_STAGE_VOICE:
-          var P, S;
+          var P, N;
           return (0, i.jsx)(K.Z, {
             channel: O,
             guild: r,
@@ -662,7 +662,7 @@ class ef extends(r = l.PureComponent) {
             connected: c === y.id,
             collapsed: y.isCollapsed || b.isCollapsed,
             voiceStates: null !== (P = d[y.id]) && void 0 !== P ? P : [],
-            speakerVoiceStates: null !== (S = h[y.id]) && void 0 !== S ? S : [],
+            speakerVoiceStates: null !== (N = h[y.id]) && void 0 !== N ? N : [],
             disableManageChannels: p,
             isFavoriteCategory: v
           }, x);
@@ -742,7 +742,7 @@ class ef extends(r = l.PureComponent) {
         if (!l.isPlaceholderRow(e, t)) return null === (r = l.getChannelFromSectionRow(e, t)) || void 0 === r ? void 0 : null === (n = r.channel) || void 0 === n ? void 0 : n.id
       }
     }), ec(this, "testShouldSkipTutorial", () => {
-      if (!I.Z.shouldShow("voice-conversations")) return;
+      if (!Z.Z.shouldShow("voice-conversations")) return;
       let {
         guildChannels: e
       } = this.props, t = e.getFirstVoiceChannel();
@@ -797,12 +797,12 @@ let eg = e => {
     setFocus: j,
     scrollToStart: _,
     scrollToEnd: C
-  }), N = x.setFocus;
+  }), S = x.setFocus;
   l.useEffect(() => {
-    null != n && N(n)
-  }, [n, N]);
-  let S = (0, Z.Z)(t),
-    I = (0, v.Q3)("NavigableChannels");
+    null != n && S(n)
+  }, [n, S]);
+  let N = (0, I.Z)(t),
+    Z = (0, v.Q3)("NavigableChannels");
   return (0, i.jsx)(b.Gt, {
     value: a,
     children: (0, i.jsx)(f.Z, {
@@ -814,10 +814,10 @@ let eg = e => {
           ref: O,
           selectedChannel: d,
           selectedVoiceChannel: p,
-          stageChannelSpeakerVoiceStates: S,
+          stageChannelSpeakerVoiceStates: N,
           selectedGuildId: h,
           optInEnabled: y,
-          isRefreshEnabled: I
+          isRefreshEnabled: Z
         }))
       })
     })

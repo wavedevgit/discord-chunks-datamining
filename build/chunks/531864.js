@@ -4,9 +4,9 @@ r.d(t, {
   Z: () => b
 }), r(47120);
 var n = r(200651),
-  i = r(192379),
-  l = r(120356),
-  o = r.n(l),
+  l = r(192379),
+  i = r(120356),
+  o = r.n(i),
   a = r(979554),
   s = r(876917),
   c = r(597688),
@@ -94,32 +94,32 @@ let f = {
     let {
       peaking: t,
       transitioning: r,
-      style: l
-    } = e, f = window.innerHeight, [b, C] = i.useState(!1), m = h.map(e => {
+      style: i
+    } = e, f = window.innerHeight, [b, m] = l.useState(!1), C = h.map(e => {
       let {
         skuId: t
       } = e;
       return c.Z.getProduct(t)
     });
-    return i.useEffect(() => {
+    return l.useEffect(() => {
       r && setTimeout(() => {
-        C(!0)
+        m(!0)
       }, u.lb)
     }, [r]), (0, n.jsx)("div", {
-      style: l,
+      style: i,
       className: o()(p.jumbleWrapper, {
         [p.peaking]: t,
         [p.transitioned]: b
       }),
       children: h.map((e, t) => {
-        var i, l;
+        var l, i;
         let {
           top: o,
           left: c,
           rotation: h,
           size: b,
-          skuId: C
-        } = e, g = null === (i = m[t]) || void 0 === i ? void 0 : i.items[0], v = null === (l = m[t]) || void 0 === l ? void 0 : l.type, x = v === a.Z.AVATAR_DECORATION ? 384 : 512;
+          skuId: m
+        } = e, g = null === (l = C[t]) || void 0 === l ? void 0 : l.items[0], v = null === (i = C[t]) || void 0 === i ? void 0 : i.type, x = v === a.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, n.jsxs)("div", {
           className: p.asset,
           style: {
@@ -138,7 +138,7 @@ let f = {
             isPurchased: !1,
             isHovering: !0
           })]
-        }, C + t)
+        }, m + t)
       })
     })
   }

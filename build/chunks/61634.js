@@ -1,6 +1,6 @@
-/** Chunk was on 30829 **/
+/** Chunk was on 86029 **/
 n.d(t, {
-  Z: () => N
+  Z: () => S
 }), n(47120);
 var r = n(106351),
   i = n(442837),
@@ -30,21 +30,21 @@ function P(e, t) {
   return null != e && e.type !== r.d.GUILD_STAGE_VOICE && t !== e.id && n.canBasicChannel(x.S7T.VIEW_CHANNEL, e)
 }
 
-function N(e) {
+function S(e) {
   var t;
   let n = (0, i.e7)([j.ZP], () => j.ZP.isMuted(e)),
     r = (0, u.k5)(e),
     {
       enabled: x
     } = (0, c.bA)("use-guild-media-state"),
-    N = (0, i.Wu)([o.ZP, v.Z], () => {
+    S = (0, i.Wu)([o.ZP, v.Z], () => {
       let t = o.ZP.getEmbeddedActivitiesForGuild(e);
       return x ? t.filter(e => !(0, s.BA)([...e.userIds], v.Z.getBlockedOrIgnoredIDs())) : t
     }),
-    S = (0, a.pY)(null === (t = N[0]) || void 0 === t ? void 0 : t.location),
-    Z = (0, l.NX)(S),
+    N = (0, a.pY)(null === (t = S[0]) || void 0 === t ? void 0 : t.location),
+    I = (0, l.NX)(N),
     {
-      guildHasVoice: I,
+      guildHasVoice: Z,
       guildHasVideo: w,
       selectedVoiceChannelHasVideo: E
     } = (0, i.cj)([O.Z, _.Z, b.Z, y.Z, m.Z], () => {
@@ -91,7 +91,7 @@ function N(e) {
       activity: P,
       isCurrentUserConnected: !1
     };
-    let S = C.default.keys(p.Z.getStageInstancesByGuild(e)).some(e => {
+    let N = C.default.keys(p.Z.getStageInstancesByGuild(e)).some(e => {
         let t = m.Z.getChannel(e);
         return null != t && y.Z.can(d.gl, t)
       }),
@@ -100,15 +100,15 @@ function N(e) {
       R = (x ? (0, s.aK)(f.Z.getAllApplicationStreams()) : f.Z.getAllApplicationStreams()).some(t => t.guildId === e),
       L = u && E,
       k = (() => {
-        if (Z) return N.length > 0;
-        for (let e of N) {
+        if (I) return S.length > 0;
+        for (let e of S) {
           let t = m.Z.getChannel((0, a.pY)(e.location));
           if (null != t && (0, h.vd)(t.type)) return !0
         }
         return !1
       })(),
       M = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return u ? (g = !0, b = (null == r ? void 0 : r.channel_id) === c, v = D, j = L, _ = A, P = M) : (g = I, b = null != r, v = S, j = w, _ = R, P = k), {
+    return u ? (g = !0, b = (null == r ? void 0 : r.channel_id) === c, v = D, j = L, _ = A, P = M) : (g = Z, b = null != r, v = N, j = w, _ = R, P = k), {
       audio: g,
       video: j,
       screenshare: _,
@@ -117,5 +117,5 @@ function N(e) {
       activity: P,
       isCurrentUserConnected: u || D
     }
-  }, [e, n, x, E, T, Z, N, r, I, w])
+  }, [e, n, x, E, T, I, S, r, Z, w])
 }
