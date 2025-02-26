@@ -36,7 +36,7 @@ let f = [{
   label: () => p.NW.string(p.t["46dqJS"])
 }];
 
-function b(e) {
+function N(e) {
   let {
     status: t,
     currentStatus: n,
@@ -87,7 +87,7 @@ function b(e) {
   })
 }
 
-function N(e, t, n) {
+function b(e, t, n) {
   return (0, r.jsx)(s.sNh, {
     id: e,
     keepItemStyles: !0,
@@ -159,22 +159,22 @@ function x(e) {
     })
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [N(g.Skl.ONLINE, e), (0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), t ? b({
+    children: [b(g.Skl.ONLINE, e), (0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), t ? N({
       status: g.Skl.IDLE,
       currentStatus: e,
       description: E(g.Skl.IDLE),
       defaultClickExpire: n
-    }) : N(g.Skl.IDLE, e, E(g.Skl.IDLE)), t ? b({
+    }) : b(g.Skl.IDLE, e, E(g.Skl.IDLE)), t ? N({
       status: g.Skl.DND,
       currentStatus: e,
       description: E(g.Skl.DND),
       defaultClickExpire: n
-    }) : N(g.Skl.DND, e, E(g.Skl.DND)), t ? b({
+    }) : b(g.Skl.DND, e, E(g.Skl.DND)), t ? N({
       status: g.Skl.INVISIBLE,
       currentStatus: e,
       description: E(g.Skl.INVISIBLE),
       defaultClickExpire: n
-    }) : N(g.Skl.INVISIBLE, e, E(g.Skl.INVISIBLE)), m || u ? (0, r.jsxs)(r.Fragment, {
+    }) : b(g.Skl.INVISIBLE, e, E(g.Skl.INVISIBLE)), m || u ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), (0, r.jsx)(s.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",

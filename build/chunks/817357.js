@@ -15,8 +15,8 @@ var l = n(200651),
   h = n(594174),
   b = n(78839),
   k = n(29920),
-  x = n(780525),
-  p = n(388032),
+  p = n(780525),
+  x = n(388032),
   f = n(265914);
 
 function g(e) {
@@ -66,9 +66,9 @@ function j(e) {
     transitionState: t,
     onClose: d
   } = e, u = {
-    [x.e.skuId]: x.e,
-    [x.xB.skuId]: x.xB,
-    [x.We.skuId]: x.We
+    [p.e.skuId]: p.e,
+    [p.xB.skuId]: p.xB,
+    [p.We.skuId]: p.We
   }, j = (0, i.e7)([h.default], () => h.default.getCurrentUser()), [I, y] = s.useState(null), [v, N] = s.useState(null), [O, P] = s.useState(!1), z = (0, i.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()), {
     analyticsLocations: C
   } = (0, a.ZP)([o.Z.PREMIUM_MARKETING_REWARD_SELECTION_MODAL]), _ = s.useMemo(() => null != I ? {
@@ -103,13 +103,13 @@ function j(e) {
     null != v && (P(!0), await (0, k.Ei)({
       rewardSkuIds: [v.skuId],
       subscriptionId: z.id
-    }) ? (d(), (0, m.Z)({
+    }) ? ((0, r.pTH)(), (0, m.Z)({
       product: v,
       analyticsLocations: C,
-      overrideTitle: p.NW.formatToPlainString(p.t.dTWbOz, {
+      overrideTitle: x.NW.formatToPlainString(x.t.dTWbOz, {
         itemName: v.name
       }),
-      overrideDescription: p.NW.string(p.t.Gf9x7e)
+      overrideDescription: x.NW.string(x.t.Gf9x7e)
     })) : (P(!1), S()))
   }, E = e => {
     !O && (y(u[e.skuId]), N(e))
@@ -137,7 +137,7 @@ function j(e) {
             variant: "heading-lg/bold",
             color: "header-primary",
             className: f.title,
-            children: p.NW.string(p.t.OZGelZ)
+            children: x.NW.string(x.t.OZGelZ)
           }), Object.keys(u).map(e => {
             let t = u[e];
             return (0, l.jsx)(g, {
@@ -171,14 +171,14 @@ function j(e) {
           color: r.zxk.Colors.PRIMARY,
           onClick: () => d(),
           disabled: O,
-          children: p.NW.string(p.t["13/7kZ"])
+          children: x.NW.string(x.t["13/7kZ"])
         }), (0, l.jsx)(r.zxk, {
           look: r.zxk.Looks.FILLED,
           color: r.zxk.Colors.BRAND,
           onClick: w,
           disabled: null == v,
           submitting: O,
-          children: p.NW.string(p.t["cY+Ooa"])
+          children: x.NW.string(x.t["cY+Ooa"])
         })]
       })
     })]

@@ -1,11 +1,11 @@
 /** Chunk was on 32249 **/
 n.d(t, {
-  Z: () => f
+  Z: () => v
 }), n(47120);
 var r = n(200651),
   o = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   s = n(481060),
   a = n(393903),
   c = n(604162),
@@ -20,24 +20,24 @@ function p(e, t, n) {
   return n.left + e / t * n.width
 }
 
-function f(e) {
+function v(e) {
   let {
     percent: t,
     animate: n,
-    interactionEnabled: i,
-    backgroundColor: f,
-    preloadedBuffers: v,
+    interactionEnabled: l,
+    backgroundColor: v,
+    preloadedBuffers: f,
     duration: E,
-    maxSeekableTime: b,
-    onClick: g,
+    maxSeekableTime: g,
+    onClick: b,
     onScrubBack: O,
     onScrubForward: S
-  } = e, [C, j] = o.useState(null), [h, y] = o.useState(null), [x, _] = o.useState(null), [N, D] = o.useState(!1), P = o.useRef(null), T = e => {
+  } = e, [C, j] = o.useState(null), [h, y] = o.useState(null), [x, _] = o.useState(null), [D, N] = o.useState(!1), P = o.useRef(null), T = e => {
     P.current = e, j(e)
   };
   o.useEffect(() => {
-    null != C && (null == b ? _(null) : _(p(b, E, C)))
-  }, [C, b, E]);
+    null != C && (null == g ? _(null) : _(p(g, E, C)))
+  }, [C, g, E]);
   let I = (0, a.y)(() => {
     null != I.current && T(I.current.getBoundingClientRect())
   });
@@ -67,39 +67,39 @@ function f(e) {
     className: d.cont,
     ref: I,
     children: [(0, r.jsxs)(s.P3F, {
-      className: l()(d.hitboxArea, {
-        [d.interactionEnabled]: i
+      className: i()(d.hitboxArea, {
+        [d.interactionEnabled]: l
       }),
       ignoreKeyPress: !0,
       onClick: e => {
-        i && null != g && g(m(e.clientX, e.currentTarget.getBoundingClientRect(), E))
+        l && null != b && b(m(e.clientX, e.currentTarget.getBoundingClientRect(), E))
       },
       onMouseEnter: e => {
-        i && (null != I.current && T(I.current.getBoundingClientRect()), D(!0), A(e))
+        l && (null != I.current && T(I.current.getBoundingClientRect()), N(!0), A(e))
       },
       onMouseLeave: e => {
-        i && (D(!1), y(null))
+        l && (N(!1), y(null))
       },
       onMouseMove: e => {
-        i && N && A(e)
+        l && D && A(e)
       },
       onKeyDown: w,
-      tabIndex: i ? void 0 : -1,
+      tabIndex: l ? void 0 : -1,
       focusProps: {
         offset: {
           top: 12,
           bottom: 12
         }
       },
-      children: [null == v ? void 0 : v.map(e => (0, r.jsx)("div", {
-        className: l()(d.buffer, {
-          [d.bufferHovered]: N
+      children: [null == f ? void 0 : f.map(e => (0, r.jsx)("div", {
+        className: i()(d.buffer, {
+          [d.bufferHovered]: D
         }),
         style: {
           width: "".concat(100 * e.size, "%"),
           left: "".concat(100 * e.start, "%")
         }
-      }, "".concat(e.start, ":").concat(e.size))), !i && null != q && q > 0 && (0, r.jsx)("div", {
+      }, "".concat(e.start, ":").concat(e.size))), !l && null != q && q > 0 && (0, r.jsx)("div", {
         className: d.seekableBar,
         style: {
           right: null != q ? "".concat(q, "px") : "auto",
@@ -109,10 +109,10 @@ function f(e) {
         className: d.progress,
         percent: t,
         foregroundColor: "#FFFFFF",
-        backgroundColor: null != f ? f : void 0,
-        size: N ? s.Exd.Sizes.XSMALL : s.Exd.Sizes.XXSMALL,
+        backgroundColor: null != v ? v : void 0,
+        size: D ? s.Exd.Sizes.XSMALL : s.Exd.Sizes.XXSMALL,
         animate: n
-      }), N && null != k && (0, r.jsx)(s.Text, {
+      }), D && null != k && (0, r.jsx)(s.Text, {
         className: d.timeDisplay,
         variant: "text-xs/normal",
         style: {
@@ -120,7 +120,7 @@ function f(e) {
           color: "#FFFFFF"
         },
         children: k
-      }), N && i && null != R && (0, r.jsx)("div", {
+      }), D && l && null != R && (0, r.jsx)("div", {
         className: d.grabber,
         style: {
           right: "".concat(R - 6, "px")

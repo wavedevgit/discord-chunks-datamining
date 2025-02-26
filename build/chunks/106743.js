@@ -4,8 +4,8 @@ n.d(t, {
 }), n(301563), n(566702);
 var r = n(200651),
   o = n(192379),
-  i = n(261833),
-  l = n(481060),
+  l = n(261833),
+  i = n(481060),
   s = n(184299),
   a = n(677488);
 
@@ -18,29 +18,29 @@ function c(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: a.transcriptHeader,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(i.X6q, {
         variant: "heading-md/semibold",
         color: "currentColor",
         children: "Transcript"
-      }), (0, r.jsx)(l.P3F, {
+      }), (0, r.jsx)(i.P3F, {
         onClick: c,
         className: a.transcriptBackBtn,
-        children: (0, r.jsx)(i.D, {
+        children: (0, r.jsx)(l.D, {
           color: "currentColor"
         })
       })]
-    }), (0, r.jsx)(l.tEY, {
-      children: (0, r.jsx)(l.w0Z, {
+    }), (0, r.jsx)(i.tEY, {
+      children: (0, r.jsx)(i.w0Z, {
         className: a.transcriptScroller,
         fade: !0,
         children: (0, r.jsx)("div", {
           className: a.transcriptBody,
           children: (null == u ? void 0 : u.fetchStatus) === s.iF.FETCHING ? (0, r.jsx)("div", {
             className: a.transcriptBodySpinner,
-            children: (0, r.jsx)(l.$jN, {
-              type: l.$jN.Type.WANDERING_CUBES
+            children: (0, r.jsx)(i.$jN, {
+              type: i.$jN.Type.WANDERING_CUBES
             })
-          }) : (0, r.jsx)(l.X6q, {
+          }) : (0, r.jsx)(i.X6q, {
             variant: "heading-md/normal",
             color: "text-muted",
             children: m.map((e, t) => (0, r.jsx)("p", {

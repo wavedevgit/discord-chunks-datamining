@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 }), n(47120), n(733860);
 var r = n(358230),
   i = n(931261),
@@ -20,7 +20,7 @@ let f = () => {
   return [p.Z5c.FRIENDS, c.Z.hasLibraryApplication() && !o.bm.getSetting() ? p.Z5c.APPLICATION_LIBRARY : null, p.Z5c.APPLICATION_STORE, e ? p.Z5c.MESSAGE_REQUESTS : null, p.Z5c.COLLECTIBLES_SHOP, o.Ex.getSetting() ? p.Z5c.FAMILY_CENTER : null].filter(m.lm)
 };
 
-function b() {
+function N() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
     t = l.Z.getState().guildId;
   null == t ? function(e) {

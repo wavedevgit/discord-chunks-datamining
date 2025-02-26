@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  P: () => b
+  P: () => N
 }), n(733860);
 var r = n(200651);
 n(192379);
@@ -18,13 +18,13 @@ var i = n(524437),
   h = n(388032),
   f = n(833344);
 
-function b() {
+function N() {
   var e;
   let t = null === (e = (0, c.Z)()) || void 0 === e || e,
     {
       explicitContentGuilds: n,
-      explicitContentFriendDm: b,
-      explicitContentNonFriendDm: N
+      explicitContentFriendDm: N,
+      explicitContentNonFriendDm: b
     } = (0, o.B)(),
     x = e => {
       if ((0, l.Ks)()) {
@@ -61,7 +61,7 @@ function b() {
       titleClassName: f.selectItemTitle,
       children: (0, r.jsx)(s.q4e, {
         options: _,
-        value: b,
+        value: N,
         onChange: e => x({
           explicitContentFriendDm: e
         })
@@ -72,7 +72,7 @@ function b() {
       titleClassName: f.selectItemTitle,
       children: (0, r.jsx)(s.q4e, {
         options: _,
-        value: N,
+        value: b,
         onChange: e => x({
           explicitContentNonFriendDm: e
         })

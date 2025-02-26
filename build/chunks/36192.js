@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(43015),
   h = n(136097),
   f = n(605236),
-  b = n(246946),
-  N = n(594174),
+  N = n(246946),
+  b = n(594174),
   x = n(460562),
   _ = n(823379),
   E = n(981631),
@@ -30,7 +30,7 @@ function v() {
   let {
     currentSession: t,
     otherSessions: n
-  } = (0, h.h)(), s = (0, l.e7)([b.Z], () => b.Z.hidePersonalInformation), a = (0, l.e7)([N.default], () => N.default.getCurrentUser()), [u, g] = i.useState(!1);
+  } = (0, h.h)(), s = (0, l.e7)([N.Z], () => N.Z.hidePersonalInformation), a = (0, l.e7)([b.default], () => b.default.getCurrentUser()), [u, g] = i.useState(!1);
   i.useEffect(() => {
     (0, f.EW)(c.z.AUTH_SESSIONS_NEW, {
       dismissAction: j.L.AUTO
@@ -142,8 +142,8 @@ function S(e) {
     setChecked: u,
     checked: m,
     useChecks: g
-  } = e, f = null !== (l = null === (t = o.client_info) || void 0 === t ? void 0 : t.location) && void 0 !== l ? l : null === (n = o.client_info) || void 0 === n ? void 0 : n.ip, b = null === (i = o.client_info) || void 0 === i ? void 0 : i.platform, {
-    text: N,
+  } = e, f = null !== (l = null === (t = o.client_info) || void 0 === t ? void 0 : t.location) && void 0 !== l ? l : null === (n = o.client_info) || void 0 === n ? void 0 : n.ip, N = null === (i = o.client_info) || void 0 === i ? void 0 : i.platform, {
+    text: b,
     icon: x
   } = function(e) {
     switch (null == e ? void 0 : e.toLowerCase().trim()) {
@@ -163,7 +163,7 @@ function S(e) {
           text: e, icon: d.pzj
         }
     }
-  }(null === (s = o.client_info) || void 0 === s ? void 0 : s.os), E = c ? null : (0, h.p)(o.approx_last_used_time), j = [N, b].filter(_.lm), v = [f, E].filter(_.lm);
+  }(null === (s = o.client_info) || void 0 === s ? void 0 : s.os), E = c ? null : (0, h.p)(o.approx_last_used_time), j = [b, N].filter(_.lm), v = [f, E].filter(_.lm);
   return (0, r.jsxs)("div", {
     className: a()(O.session, c ? O.currentSession : null),
     children: [(0, r.jsx)("div", {

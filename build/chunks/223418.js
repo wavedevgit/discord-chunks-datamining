@@ -5,7 +5,7 @@ n.d(t, {
   rq: () => s,
   yE: () => a
 });
-var r, o, i, l, s = ((r = {}).PLAYING = "playing", r.PAUSED = "paused", r.ENDED = "ended", r),
+var r, o, l, i, s = ((r = {}).PLAYING = "playing", r.PAUSED = "paused", r.ENDED = "ended", r),
   a = ((o = {}).PAUSE_BUTTON = "PAUSE_BUTTON", o.LOST_FOCUS = "LOST_FOCUS", o.MODAL_CLOSED = "MODAL_CLOSED", o),
-  c = ((i = {}).ERROR = "ERROR", i.SOURCE_ERROR = "SOURCE_ERROR", i.ABORT = "ABORT", i.EMPTIED = "EMPTIED", i.STALLED = "STALLED", i.SUSPEND = "SUSPEND", i),
-  u = ((l = {}).PLAYBACK = "k", l.SPACE = " ", l.SEEK_BACK = "j", l.SEEK_FORWARD = "l", l.CAPTION = "c", l.FULLSCREEN = "f", l.MUTE = "m", l)
+  c = ((l = {}).ERROR = "ERROR", l.SOURCE_ERROR = "SOURCE_ERROR", l.ABORT = "ABORT", l.EMPTIED = "EMPTIED", l.STALLED = "STALLED", l.SUSPEND = "SUSPEND", l),
+  u = ((i = {}).PLAYBACK = "k", i.SPACE = " ", i.SEEK_BACK = "j", i.SEEK_FORWARD = "l", i.CAPTION = "c", i.FULLSCREEN = "f", i.MUTE = "m", i)

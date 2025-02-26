@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(497321),
   h = n(279837),
   f = n(952306),
-  b = n(600164),
-  N = n(690221),
+  N = n(600164),
+  b = n(690221),
   x = n(346585),
   _ = n(347649),
   E = n(332473),
@@ -148,7 +148,7 @@ class X extends i.PureComponent {
       messageType: u.QYI.WARNING,
       children: [this.props.forceMigrationExperiment ? H.NW.format(H.t.zT1hgo, {
         date: (0, x.IE)(this.props.locale)
-      }) : H.NW.format(H.t.pdYZys, {}), " ", "", (0, r.jsx)(N.Z, {
+      }) : H.NW.format(H.t.pdYZys, {}), " ", "", (0, r.jsx)(b.Z, {
         className: z.noticeTextButton,
         onClick: () => (0, j.Z)(F.Kq.USER_SETTINGS),
         children: H.NW.string(H.t.LhlgY2)
@@ -199,15 +199,15 @@ class X extends i.PureComponent {
         })
       }), (0, r.jsx)(O.F, {
         setting: V.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        children: (0, r.jsxs)(b.Z, {
-          align: b.Z.Align.STRETCH,
-          children: [(0, r.jsx)(b.Z.Child, {
+        children: (0, r.jsxs)(N.Z, {
+          align: N.Z.Align.STRETCH,
+          children: [(0, r.jsx)(N.Z.Child, {
             wrap: !0,
             children: (0, r.jsx)(L.Z, {
               backupCodes: e
             })
-          }), t.mfaEnabled ? null : (0, r.jsx)(b.Z, {
-            align: b.Z.Align.CENTER,
+          }), t.mfaEnabled ? null : (0, r.jsx)(N.Z, {
+            align: N.Z.Align.CENTER,
             basis: "323px",
             grow: 0,
             children: (0, r.jsx)("img", {

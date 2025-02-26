@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(410154),
   h = n(626135),
   f = n(695349),
-  b = n(103433),
-  N = n(166021),
+  N = n(103433),
+  b = n(166021),
   x = n(32173),
   _ = n(391110),
   E = n(75077),
@@ -58,7 +58,7 @@ let S = e => {
       className: O.container,
       children: (0, r.jsxs)(m.Gt, {
         value: P,
-        children: [(0, r.jsx)(b.Z, {
+        children: [(0, r.jsx)(N.Z, {
           className: O.heroHeading,
           onBackClick: () => {
             S(!1), h.default.track(j.rMx.NITRO_HOME_NAVIGATION, {
@@ -74,7 +74,7 @@ let S = e => {
             color: "header-primary",
             className: O.heading,
             children: t
-          }), (0, r.jsx)(N.Z, {
+          }), (0, r.jsx)(b.Z, {
             className: O.cardCarousel,
             cards: (0, E.sP)({
               perksCards: A,
@@ -91,7 +91,7 @@ let S = e => {
             color: "header-primary",
             className: O.heading,
             children: n
-          }), (0, r.jsx)(N.Z, {
+          }), (0, r.jsx)(b.Z, {
             className: O.cardCarousel,
             cards: (0, E.sP)({
               perksCards: A,
@@ -108,7 +108,7 @@ let S = e => {
             color: "header-primary",
             className: O.heading,
             children: C.NW.string(C.t.LTaxu7)
-          }), (0, r.jsx)(N.Z, {
+          }), (0, r.jsx)(b.Z, {
             className: O.cardCarousel,
             cards: (0, E.sP)({
               perksCards: A,

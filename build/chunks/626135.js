@@ -354,8 +354,8 @@ function Z(e) {
 
 function H(e) {
   var t, n, r, i;
-  let o = e;
-  if (o || (o = {}), null != o.location) {
+  let o = null != e ? e : {};
+  if (null != o.location) {
     let {
       location: e
     } = o;

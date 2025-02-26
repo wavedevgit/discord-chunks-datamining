@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(63063),
   h = n(281494),
   f = n(276444),
-  b = n(520540),
-  N = n(796634),
+  N = n(520540),
+  b = n(796634),
   x = n(197115),
   _ = n(119269),
   E = n(938736),
@@ -155,17 +155,17 @@ let I = e => {
         referralSentUsers: R,
         hasSentAllReferrals: D,
         refreshAt: Z
-      } = (0, N.G)(),
+      } = (0, b.G)(),
       w = i.useMemo(() => R.map(e => new m.Z(e)), [R]),
       {
         subscriberHomeVariant: k
-      } = b.g.useExperiment({
+      } = N.g.useExperiment({
         location: "ReferralProgramProgressBar"
       }, {
         autoTrackExposure: !1
       }),
       W = y === j.g2L.UNAPPLIED || y === j.g2L.QUALIFIED,
-      L = k === b.p.VARIANT_2,
+      L = k === N.p.VARIANT_2,
       B = {
         redeemed: 0,
         converted: 0,
@@ -174,13 +174,13 @@ let I = e => {
     I.forEach(e => {
       e === h.Fe.REDEEMED && B.redeemed++, e === h.Fe.CONVERTED && (B.redeemed++, B.converted++)
     });
-    let M = B.sent === N.Q,
+    let M = B.sent === b.Q,
       U = p.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: V
       } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
       G = i.useRef(null),
-      F = B.sent / N.Q * 100,
+      F = B.sent / b.Q * 100,
       H = !1;
     P && null != Z && (H = 0 < (t = Math.ceil((new Date(Z).getTime() - new Date().getTime()) / 864e5)) && t < E.AV, s = 100 * (E.AV - t) / E.AV);
     let z = H && null != t,
@@ -270,7 +270,7 @@ let I = e => {
           })]
         })]
       }),
-      K = B.redeemed === N.Q;
+      K = B.redeemed === b.Q;
     return (0, r.jsx)(d.Gt, {
       value: V,
       children: (0, r.jsx)("div", {

@@ -26,8 +26,8 @@ function g(e) {
     changeAvatarButtonText: p,
     guildId: h,
     className: f,
-    disabled: b = !1,
-    isTryItOutFlow: N = !1,
+    disabled: N = !1,
+    isTryItOutFlow: b = !1,
     forcedDivider: x,
     withHighlight: _ = !1
   } = e, E = _ ? a.gtL : a.zxk;
@@ -35,7 +35,7 @@ function g(e) {
     className: f,
     title: g,
     errors: n,
-    disabled: b,
+    disabled: N,
     forcedDivider: x,
     children: (0, r.jsxs)("div", {
       className: u.buttonsContainer,
@@ -44,7 +44,7 @@ function g(e) {
           [u.buttonHighlighted]: _
         }),
         size: a.zxk.Sizes.SMALL,
-        onClick: () => (0, l.$r)(c.pC.AVATAR, h, N, N ? m : void 0),
+        onClick: () => (0, l.$r)(c.pC.AVATAR, h, b, b ? m : void 0),
         children: null != p ? p : d.NW.string(d.t["4OynCA"])
       }), t && (0, r.jsx)(a.zxk, {
         className: u.removeButton,

@@ -20,18 +20,18 @@ let h = e => {
       premiumSubscription: i,
       className: h,
       isFullscreen: f = !1,
-      textColor: b
+      textColor: N
     } = e,
-    N = (0, d.Nx)();
+    b = (0, d.Nx)();
   if (null == i) return null;
   let x = null != i ? c.ZP.getPremiumPlanItem(i) : null;
   if (c.ZP.isBoostOnlySubscription(i) ? t = g.NW.string(g.t.Uj0md3) : null != x && (t = c.ZP.getDisplayPremiumType(x.planId)), null == t) return null;
   let _ = () => l.Z.open(m.oAB.SUBSCRIPTIONS),
     E = (null != x ? c.ZP.getSkuIdForPlan(x.planId) : null) === u.Si.TIER_1;
-  return n = null != b ? b : N || f ? "always-white" : "text-normal", (0, r.jsxs)(a.Zbd, {
+  return n = null != N ? N : b || f ? "always-white" : "text-normal", (0, r.jsxs)(a.Zbd, {
     className: s()(p.container, h, {
       [p.lightTextLink]: f,
-      [p.centerText]: N
+      [p.centerText]: b
     }),
     type: a.Zbd.Types.CUSTOM,
     children: [(0, r.jsx)(a.P4T, {
@@ -40,7 +40,7 @@ let h = e => {
       height: 20,
       color: "currentColor",
       className: s()(p.icon, {
-        [p.lightThemeColorOnly]: N || f
+        [p.lightThemeColorOnly]: b || f
       })
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",

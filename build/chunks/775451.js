@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(790542),
   h = n(317257),
   f = n(120786),
-  b = n(970815),
-  N = n(82856),
+  N = n(970815),
+  b = n(82856),
   x = n(981631),
   _ = n(215023),
   E = n(388032),
@@ -43,7 +43,7 @@ let C = {
       analyticsLocations: W
     } = (0, d.ZP)(c.Z.VIRTUAL_CURRENCY_BALANCE_WIDGET), L = i.useRef(null), {
       shouldOpen: B
-    } = (0, N.lJ)({
+    } = (0, b.lJ)({
       backgroundElementRef: L
     }), {
       shouldOpen: M
@@ -67,7 +67,7 @@ let C = {
     i.useEffect(() => {
       if (!O) return;
       let e = (0, g.wH)();
-      (0, N.Pe)() || e || U ? (w(!0), D(!1)) : w(!1)
+      (0, b.Pe)() || e || U ? (w(!0), D(!1)) : w(!1)
     }, [O, U]);
     let V = i.useCallback(() => {
         let e = !R;
@@ -79,7 +79,7 @@ let C = {
       F = (0, o.Z)(null, G);
     return (0, r.jsxs)("div", {
       className: a()(j.container, I),
-      children: [(0, r.jsx)(b.A4, {
+      children: [(0, r.jsx)(N.A4, {
         ref: L,
         balance: y,
         balanceWidgetMode: U ? h.b.DEFAULT : A,

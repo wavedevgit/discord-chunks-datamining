@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(661111),
   h = n(179658),
   f = n(491428),
-  b = n(225433),
-  N = n(484614),
+  N = n(225433),
+  b = n(484614),
   x = n(615287),
   _ = n(386506),
   E = n(865427),
@@ -103,7 +103,7 @@ class J extends i.Component {
     return (0, r.jsxs)(O.Z, {
       direction: O.Z.Direction.VERTICAL,
       className: a()(U.buildOverrideGroup, G.marginBottom20, V.card, U.row),
-      children: [(0, r.jsx)(b.Z, {
+      children: [(0, r.jsx)(N.Z, {
         className: a()(U.removeBuildOverride, {
           [U.removeBuildOverrideDisabled]: i
         }),
@@ -606,7 +606,7 @@ class $ extends i.Component {
           children: [(0, r.jsx)(O.Z.Child, {
             wrap: !0,
             basis: "75%",
-            children: (0, r.jsx)(N.Z, {
+            children: (0, r.jsx)(b.Z, {
               value: n
             })
           }), (0, r.jsx)(m.zxk, {
@@ -994,7 +994,7 @@ let er = d.ZP.connectStores([R.default], () => ({
     isIdleStatusIndicatorEnabled: g,
     onlyShowPreviewAppCollections: p,
     disableAppCollectionsCache: f,
-    preventPopoutClose: b
+    preventPopoutClose: N
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(P.F, {
@@ -1095,7 +1095,7 @@ let er = d.ZP.connectStores([R.default], () => ({
         }), (0, r.jsx)(P.F, {
           setting: L.s6.DEVELOPER_OPTIONS_PREVENT_POPOUT_CLOSE,
           children: (0, r.jsx)(m.j7V, {
-            value: b,
+            value: N,
             note: "This is to enable viewing console logs for popout crashes. This may leave your app/popout in a weird state.",
             onChange: e => (0, h.y)({
               preventPopoutClose: e

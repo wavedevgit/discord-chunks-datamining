@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  q: () => N
+  q: () => b
 });
 var r = n(200651),
   i = n(192379),
@@ -22,9 +22,9 @@ function f(e) {
   let {
     userId: t,
     count: n
-  } = e, d = (0, s.e7)([m.default], () => m.default.getUser(t)), f = g.ZP.getFormattedName(d), b = i.useCallback(() => {
+  } = e, d = (0, s.e7)([m.default], () => m.default.getUser(t)), f = g.ZP.getFormattedName(d), N = i.useCallback(() => {
     (0, c.Zn)(t)
-  }, [t]), N = i.useCallback(() => (0, u.openUserProfileModal)({
+  }, [t]), b = i.useCallback(() => (0, u.openUserProfileModal)({
     userId: t
   }), [t]);
   return i.useEffect(() => {
@@ -39,7 +39,7 @@ function f(e) {
       className: h.text,
       children: [(0, r.jsx)(a.P3F, {
         className: h.username,
-        onClick: N,
+        onClick: b,
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "interactive-active",
@@ -53,7 +53,7 @@ function f(e) {
         })
       })]
     }), (0, r.jsx)(a.P3F, {
-      onClick: b,
+      onClick: N,
       className: h.sectionIconContainer,
       children: (0, r.jsx)(a.XHJ, {
         size: "xs"
@@ -62,7 +62,7 @@ function f(e) {
   })
 }
 
-function b(e) {
+function N(e) {
   let {
     className: t,
     userId: n,
@@ -97,7 +97,7 @@ function b(e) {
   })
 }
 
-function N(e) {
+function b(e) {
   let {
     userId: t
   } = e, n = (0, d._)(t);
@@ -106,7 +106,7 @@ function N(e) {
       userId: t,
       count: n.length
     }), n.map((e, s) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(b, {
+      children: [(0, r.jsx)(N, {
         className: h.row,
         userId: t,
         index: s,

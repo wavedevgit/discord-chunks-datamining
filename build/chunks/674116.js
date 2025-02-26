@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(63063),
   h = n(680924),
   f = n(58765),
-  b = n(429789),
-  N = n(726763),
+  N = n(429789),
+  b = n(726763),
   x = n(208113),
   _ = n(894939),
   E = n(710808),
@@ -112,10 +112,10 @@ function G() {
           className: U.marginBottom20,
           children: M.NW.string(M.t["8/udY2"])
         }),
-        children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)(R.Z, {}), (0, r.jsx)(u.F, {
+        children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(R.Z, {}), (0, r.jsx)(u.F, {
           setting: W.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
           children: (0, r.jsx)(D.Z, {})
-        }), (0, r.jsx)(y.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(b.Z, {}), p && (0, r.jsx)(T.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(A.Z, {
+        }), (0, r.jsx)(y.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(N.Z, {}), p && (0, r.jsx)(T.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(A.Z, {
           refreshStyles: !0
         }), (0, r.jsx)(o.$i$, {
           className: U.marginBottom40

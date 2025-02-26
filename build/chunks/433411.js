@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -17,13 +17,13 @@ var r = n(200651),
   h = n(388032),
   f = n(625422);
 
-function b(e) {
+function N(e) {
   let {
     user: t,
     guild: n,
     className: s,
     sectionTitle: m,
-    forcedDivider: b = !1,
+    forcedDivider: N = !1,
     withTutorial: x = !1,
     isTryItOutFlow: _ = !1
   } = e, {
@@ -40,7 +40,7 @@ function b(e) {
   }), [E, _, n]), y = _ || void 0 !== v ? null != v : (j ? O : C) != null, A = x ? l.gtL : l.zxk;
   return (0, r.jsxs)(p.Z, {
     className: s,
-    forcedDivider: b,
+    forcedDivider: N,
     hasBackground: !0,
     title: m,
     errors: S,
@@ -63,12 +63,12 @@ function b(e) {
         },
         children: (0, c.ad)(t, n) ? h.NW.string(h.t["GsW4/v"]) : h.NW.string(h.t.GReZ6O)
       })]
-    }), t.isStaff() && T && (0, r.jsx)(N, {
+    }), t.isStaff() && T && (0, r.jsx)(b, {
       user: t
     })]
   })
 }
-let N = e => {
+let b = e => {
   let {
     user: t
   } = e;

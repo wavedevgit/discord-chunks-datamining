@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
@@ -17,15 +17,15 @@ var i = n(120356),
   p = n(193528),
   h = n(993413),
   f = n(388032),
-  b = n(530398);
+  N = n(530398);
 
-function N(e) {
+function b(e) {
   let {
     user: t,
     pendingAvatar: n,
     pendingColors: i,
     onThemeColorsChange: a,
-    preventDisabled: N,
+    preventDisabled: b,
     guildId: x,
     className: _,
     showPremiumIcon: E = !0,
@@ -46,21 +46,21 @@ function N(e) {
   };
   return (0, r.jsx)(h.Z, {
     title: f.NW.string(f.t.DMeO2d),
-    disabled: !T && !N,
-    className: s()(b.__invalid_profileThemesSection, _),
+    disabled: !T && !b,
+    className: s()(N.__invalid_profileThemesSection, _),
     showPremiumIcon: E,
     forcedDivider: C,
     children: (0, r.jsxs)("div", {
-      className: b.sectionContainer,
+      className: N.sectionContainer,
       children: [(0, r.jsx)("div", {
-        className: b.sparkleContainer,
+        className: N.sparkleContainer,
         children: (0, r.jsx)(p.Z, {
           onChange: e => P([e, S]),
           color: v,
           suggestedColors: A,
           showEyeDropper: !0,
           label: (0, r.jsx)(c.Text, {
-            className: b.colorSwatchLabel,
+            className: N.colorSwatchLabel,
             color: "header-secondary",
             variant: "text-xs/normal",
             "aria-hidden": !0,
@@ -68,14 +68,14 @@ function N(e) {
           })
         })
       }), (0, r.jsx)("div", {
-        className: b.sparkleContainer,
+        className: N.sparkleContainer,
         children: (0, r.jsx)(p.Z, {
           onChange: e => P([v, e]),
           color: S,
           suggestedColors: A,
           showEyeDropper: !0,
           label: (0, r.jsx)(c.Text, {
-            className: b.colorSwatchLabel,
+            className: N.colorSwatchLabel,
             color: "header-secondary",
             variant: "text-xs/normal",
             "aria-hidden": !0,
@@ -83,7 +83,7 @@ function N(e) {
           })
         })
       }), j && null != x && (0, r.jsx)(c.zxk, {
-        className: b.resetButton,
+        className: N.resetButton,
         color: c.zxk.Colors.PRIMARY,
         look: c.zxk.Looks.LINK,
         size: c.zxk.Sizes.SMALL,

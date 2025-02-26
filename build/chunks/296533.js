@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(430824),
   h = n(267642),
   f = n(709054),
-  b = n(357956),
-  N = n(275909),
+  N = n(357956),
+  b = n(275909),
   x = n(300037),
   _ = n(981631),
   E = n(474936),
@@ -107,13 +107,13 @@ function v(e) {
     className: C.boostContainer,
     children: [(0, r.jsxs)("div", {
       className: C.boostInnerContainer,
-      children: [(0, r.jsx)(N.Z, {
+      children: [(0, r.jsx)(b.Z, {
         isCanceled: _,
         hasCooldown: x,
         useReducedMotion: p
       }), (0, r.jsx)("div", {
         className: C.boostDescriptionContainer,
-        children: null != f && x && !_ ? (0, r.jsx)(b.Z, {
+        children: null != f && x && !_ ? (0, r.jsx)(N.Z, {
           className: C.boostDescriptionInnerContainer,
           cooldown: f.getTime()
         }) : (0, r.jsx)(O, {

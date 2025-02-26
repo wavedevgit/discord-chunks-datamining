@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(216045),
   h = n(839469),
   f = n(25990),
-  b = n(594174),
-  N = n(585483),
+  N = n(594174),
+  b = n(585483),
   x = n(16703),
   _ = n(785145),
   E = n(981631),
@@ -34,7 +34,7 @@ function S() {
     t = (0, x.Z)(),
     n = (0, s.e7)([u.Z, f.Z], () => u.Z.showNotice() || f.Z.showNotice()),
     S = null != e ? e : t,
-    T = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
+    T = (0, s.e7)([N.default], () => N.default.getCurrentUser()),
     {
       subsection: I,
       setSubsection: y
@@ -50,10 +50,10 @@ function S() {
   function D(t) {
     if (I !== t) {
       if (n) {
-        N.S.dispatch(E.CkL.SHAKE_APP, {
+        b.S.dispatch(E.CkL.SHAKE_APP, {
           duration: 300,
           intensity: l.$x
-        }), N.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
+        }), b.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
         return
       }
       t === j.NB.GUILD && null == e && null != S && (0, d.Fq)(S, A), y(t)

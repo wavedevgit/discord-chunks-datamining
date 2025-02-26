@@ -16,9 +16,9 @@ var r = n(200651),
   p = n(409673),
   h = n(603074),
   f = n(388032),
-  b = n(553767);
+  N = n(553767);
 
-function N(e) {
+function b(e) {
   let {
     onSelect: t
   } = e, [n, a] = i.useState(!1), o = (0, s.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.canUseCustomCallSounds(o);
@@ -74,7 +74,7 @@ function N(e) {
         children: (0, r.jsx)(l.vdY, {
           size: "md",
           color: "currentColor",
-          className: b.secondaryIcon
+          className: N.secondaryIcon
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
@@ -105,7 +105,7 @@ function x(e) {
     children: (0, r.jsx)(l.gj8, {
       size: "md",
       color: "currentColor",
-      className: b.secondaryIconActive
+      className: N.secondaryIconActive
     })
   })
 }
@@ -117,17 +117,17 @@ function _(e) {
     onSelect: i
   } = e, s = null != t, c = null == t ? void 0 : t.emojiId, d = null == t ? void 0 : t.emojiName, u = s && (null != d || null != c);
   return (0, r.jsxs)("div", {
-    className: b.soundButtonSettingContainer,
+    className: N.soundButtonSettingContainer,
     children: [(0, r.jsxs)("div", {
-      className: b.container,
+      className: N.container,
       children: [u && (0, r.jsx)(o.Z, {
         emojiId: c,
         emojiName: d,
-        className: b.emoji
+        className: N.emoji
       }), (0, r.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "header-primary",
-        className: b.soundText,
+        className: N.soundText,
         children: null == t ? f.NW.string(f.t.PoWNfX) : n ? f.NW.format(f.t.B6HU6O, {
           soundName: t.name,
           subtextHook: e => (0, r.jsx)(l.Text, {
@@ -142,11 +142,11 @@ function _(e) {
       }) : (0, r.jsx)(l.gj8, {
         size: "md",
         color: "currentColor",
-        className: b.secondaryIconDisabled
+        className: N.secondaryIconDisabled
       })]
     }), (0, r.jsxs)("div", {
-      className: b.container,
-      children: [(0, r.jsx)(N, {
+      className: N.container,
+      children: [(0, r.jsx)(b, {
         onSelect: i
       }), s && !n && (0, r.jsx)(p.hU, {
         onClick: () => i(null),
@@ -154,7 +154,7 @@ function _(e) {
         children: (0, r.jsx)(l.XHJ, {
           size: "md",
           color: a.Z.unsafe_rawColors.RED_400.css,
-          className: b.secondaryIcon
+          className: N.secondaryIcon
         })
       })]
     })]

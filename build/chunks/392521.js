@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  ZP: () => b,
+  ZP: () => N,
   u0: () => l
 });
 var r, i = n(200651);
@@ -137,7 +137,7 @@ let o = "premium_tier_2_gradient",
       }), p]
     })
   },
-  b = e => {
+  N = e => {
     let {
       className: t,
       variant: n

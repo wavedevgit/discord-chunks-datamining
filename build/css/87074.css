@@ -1,6 +1,6 @@
 /**
   Module ID: 87074
-  Original File Name: 64b86ed41453c026
+  Original File Name: 93e10cd49a2664f6
 **/
 .modal__038c3 {
     width: 650px
@@ -58,9 +58,9 @@
 .recentAvatarContainer__1df30 {
     position: relative;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-row-gap: var(--spacing-8);
-    row-gap: var(--spacing-8)
+    grid-template-columns: auto 1fr;
+    grid-gap: var(--spacing-8) var(--spacing-16);
+    gap: var(--spacing-8) var(--spacing-16)
 }
 
 .errorMessage__1df30 {
@@ -128,7 +128,7 @@
 .modalContent__54675 {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-16);
+    gap: var(--spacing-24);
     padding-top: var(--spacing-8);
     padding-bottom: var(--modal-horizontal-padding)
 }
@@ -295,10 +295,6 @@
     border-radius: var(--radius-sm)
 }
 
-.recentAvatarsSection__54675 {
-    margin-top: 8px
-}
-
 .modalHeader_edf440 {
     padding: 16px 16px 16px 20px
 }
@@ -445,4 +441,4 @@
     margin-top: var(--spacing-8)
 }
 
-/*# sourceMappingURL=64b86ed41453c026.css.map*/
+/*# sourceMappingURL=93e10cd49a2664f6.css.map*/

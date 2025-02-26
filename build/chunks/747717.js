@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var o = n(120356),
-  i = n.n(o),
-  l = n(677488);
+  l = n.n(o),
+  i = n(677488);
 
 function s(e) {
   let {
@@ -19,7 +19,7 @@ function s(e) {
     height: "40",
     viewBox: "0 0 2 40",
     fill: "none",
-    className: i()(l.verticalDivider, t),
+    className: l()(i.verticalDivider, t),
     children: (0, r.jsx)("path", {
       d: "M1 0V40",
       stroke: n,

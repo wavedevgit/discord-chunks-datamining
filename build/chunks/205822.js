@@ -98,10 +98,8 @@ class C extends r.Component {
         var t;
         let i = null !== (t = e[n].webkitGetAsEntry()) && void 0 !== t ? t : e[n].getAsEntry();
         if (null == i) return g.warn("Dropped item is null or undefined"), !1;
-        return i.isFile || this.props.canUploadDirectory && i.isDirectory
-      } catch (e) {
-        g.error("Error validating dropped item", e)
-      }
+        if (!i.isFile && !(this.props.canUploadDirectory && i.isDirectory)) return !1
+      } catch (e) {}
       return !0
     }), f(this, "preventUnwantedDrop", function(e) {
       let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],

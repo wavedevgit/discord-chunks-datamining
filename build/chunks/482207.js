@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => f
 });
-var r, a, l, i = n(442837),
+var r, l, a, i = n(442837),
   o = n(570140);
 let s = {
     isFetching: !1,
@@ -11,7 +11,7 @@ let s = {
   },
   c = [],
   u = s;
-class d extends(l = i.ZP.Store) {
+class d extends(a = i.ZP.Store) {
   get isFetching() {
     return u.isFetching
   }
@@ -26,12 +26,12 @@ class d extends(l = i.ZP.Store) {
     return c
   }
 }
-a = "RecentAvatarsStore", (r = "displayName") in d ? Object.defineProperty(d, r, {
-  value: a,
+l = "RecentAvatarsStore", (r = "displayName") in d ? Object.defineProperty(d, r, {
+  value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : d[r] = a;
+}) : d[r] = l;
 let f = new d(o.Z, {
   RECENT_AVATARS_FETCH_START: function() {
     u.isFetching = !0, u.error = null

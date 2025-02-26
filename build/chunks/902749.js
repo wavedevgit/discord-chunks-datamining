@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var o = n(692547),
-  i = n(390507),
-  l = n(325767);
+  l = n(390507),
+  i = n(325767);
 let s = e => {
   var t, n, s, a, {
       size: c = "md",
@@ -15,24 +15,24 @@ let s = e => {
       color: m = o.Z.colors.INTERACTIVE_NORMAL,
       colorClass: p = ""
     } = e,
-    f = function(e, t) {
+    v = function(e, t) {
       if (null == e) return {};
       var n, r, o = function(e, t) {
         if (null == e) return {};
         var n, r, o = {},
-          i = Object.keys(e);
-        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
         return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
       return o
     }(e, ["size", "width", "height", "color", "colorClass"]);
-  let v = (0, i.m)(c),
-    E = null !== (s = null == v ? void 0 : v.width) && void 0 !== s ? s : u,
-    b = null !== (a = null == v ? void 0 : v.height) && void 0 !== a ? a : d;
+  let f = (0, l.m)(c),
+    E = null !== (s = null == f ? void 0 : f.width) && void 0 !== s ? s : u,
+    g = null !== (a = null == f ? void 0 : f.height) && void 0 !== a ? a : d;
   return (0, r.jsx)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -50,10 +50,10 @@ let s = e => {
       })
     }
     return e
-  }({}, (0, l.Z)(f)), n = n = {
+  }({}, (0, i.Z)(v)), n = n = {
     xmlns: "http://www.w3.org/2000/svg",
     width: E,
-    height: b,
+    height: g,
     fill: "none",
     viewBox: "0 0 24 24",
     children: (0, r.jsx)("path", {

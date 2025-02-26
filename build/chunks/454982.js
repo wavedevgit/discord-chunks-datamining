@@ -48,7 +48,7 @@ let m = function(e) {
     code: m,
     outboundPromotion: g,
     transitionState: p
-  } = e, [h, f] = i.useState(null), b = (0, l.Dt)();
+  } = e, [h, f] = i.useState(null), N = (0, l.Dt)();
   return i.useEffect(() => {
     null == m && (0, o.A2)(g.id).then(e => n(e)).catch(e => {
       var t;
@@ -56,7 +56,7 @@ let m = function(e) {
     })
   }, [m, g.id, n]), (0, r.jsx)(s.Y0X, {
     transitionState: p,
-    "aria-labelledby": b,
+    "aria-labelledby": N,
     children: null != h ? (0, r.jsx)(u, {
       onClose: t
     }) : null == m ? (0, r.jsx)(s.hzk, {

@@ -18,8 +18,8 @@ function p(e) {
   var t, n, p, h;
   let {
     transitionState: f,
-    onSuccess: b,
-    onClose: N,
+    onSuccess: N,
+    onClose: b,
     requirementsUpdated: x,
     noSkip: _ = !1
   } = e, [E, j] = i.useState(""), [C, O] = i.useState(""), [v, S] = i.useState(""), [T, I] = i.useState(null), [y, A] = i.useState(null), P = (0, s.e7)([c.Z], () => c.Z.getErrors()), R = (0, s.e7)([c.Z], () => c.Z.getFormState()), D = i.useRef(null);
@@ -31,7 +31,7 @@ function p(e) {
       password: E,
       newPassword: C
     });
-    if (null == n ? void 0 : n.ok) b();
+    if (null == n ? void 0 : n.ok) N();
     else {
       var r;
       (null == n ? void 0 : null === (r = n.body) || void 0 === r ? void 0 : r.username) != null && (0, d.P)()
@@ -58,7 +58,7 @@ function p(e) {
         className: g.subtitle,
         children: x ? m.NW.string(m.t["37iHbW"]) : m.NW.string(m.t.iOurYm)
       }), !0 !== _ && (0, r.jsx)(a.olH, {
-        onClick: N,
+        onClick: b,
         className: g.modalCloseButton
       })]
     }), (0, r.jsxs)("form", {
@@ -104,7 +104,7 @@ function p(e) {
           className: g.cancel,
           look: a.zxk.Looks.LINK,
           color: a.zxk.Colors.PRIMARY,
-          onClick: N,
+          onClick: b,
           children: m.NW.string(m.t["ETE/oK"])
         })]
       })]

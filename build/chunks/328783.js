@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -16,19 +16,19 @@ var r = n(200651),
   p = n(388032),
   h = n(457713);
 let f = (0, l.hQ)(),
-  b = i.memo(function(e) {
+  N = i.memo(function(e) {
     let {
       availableClans: t
     } = e, n = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), l = (0, s.e7)([c.default], () => {
       var e;
       return (0, u.Pb)(null === (e = c.default.getCurrentUser()) || void 0 === e ? void 0 : e.primaryGuild).guildId
-    }), b = i.useMemo(() => t.reduce((e, t) => {
+    }), N = i.useMemo(() => t.reduce((e, t) => {
       var n;
       return (null === (n = t.profile) || void 0 === n ? void 0 : n.tag) != null && e.push({
         label: t.name,
         value: t.id
       }), e
-    }, []), [t]), N = i.useCallback(e => {
+    }, []), [t]), b = i.useCallback(e => {
       var t, i;
       if (null == e) return null;
       let s = n.get(e.value);
@@ -45,9 +45,9 @@ let f = (0, l.hQ)(),
     }, [n]), x = i.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, r.jsx)(r.Fragment, {
-        children: N(t)
+        children: b(t)
       })
-    }, [N]), _ = i.useCallback(e => (0, d.nE)(e, !0, g.Sbl.USER_SETTINGS), []), E = i.useCallback(e => e === l, [l]), j = i.useCallback(e => e, []), C = i.useCallback(() => (0, d.nE)(null, !1), []);
+    }, [b]), _ = i.useCallback(e => (0, d.nE)(e, !0, g.Sbl.USER_SETTINGS), []), E = i.useCallback(e => e === l, [l]), j = i.useCallback(e => e, []), C = i.useCallback(() => (0, d.nE)(null, !1), []);
     return (0, r.jsxs)(o.Z, {
       title: p.NW.string(p.t.umdfaG),
       titleId: f,
@@ -59,10 +59,10 @@ let f = (0, l.hQ)(),
         className: h.select,
         optionClassName: h.selectPopout,
         isSelected: E,
-        options: b,
+        options: N,
         select: _,
         renderOptionValue: x,
-        renderOptionLabel: N,
+        renderOptionLabel: b,
         serialize: j,
         clear: C,
         clearable: null != l
