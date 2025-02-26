@@ -26,15 +26,15 @@ let g = function(e) {
     formFields: n,
     user: g,
     showRequirements: v = !0
-  } = e, C = (0, a.e7)([o.default], () => null != g ? g : o.default.getCurrentUser()), N = (0, l.jS)(t, "DisabledFormRenderer");
+  } = e, C = (0, a.e7)([o.default], () => null != g ? g : o.default.getCurrentUser()), y = (0, l.jS)(t, "DisabledFormRenderer");
   if (null == C) return null;
-  let y = N ? f.Ih : c.Ih;
+  let N = y ? f.Ih : c.Ih;
   return (0, r.jsxs)(r.Fragment, {
-    children: [v && (0, r.jsx)(y, {
+    children: [v && (0, r.jsx)(N, {
       icon: i.b7C,
       text: _.NW.string(_.t.v2z4c3),
       meetsRequirement: !0
-    }), n.map((e, t) => N ? function(e, t) {
+    }), n.map((e, t) => y ? function(e, t) {
       switch (e.field_type) {
         case s.QJ.TERMS:
           return (0, r.jsx)(b.QC, {

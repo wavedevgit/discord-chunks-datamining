@@ -37,8 +37,8 @@ let x = i.memo(function(e) {
       canStream: w,
       runningGame: E,
       embeddedActivity: T,
-      activity: D,
-      application: A,
+      activity: A,
+      application: D,
       analyticsContext: R
     } = e,
     {
@@ -48,22 +48,22 @@ let x = i.memo(function(e) {
       autoTrackExposure: !1
     }),
     k = (0, g.B)(O.IlC.APP),
-    M = C(A, D, T),
+    M = C(D, A, T),
     G = i.useCallback(() => {
-      o()(null != D, "Received null activity"), y.default.track(O.rMx.OPEN_MODAL, {
+      o()(null != A, "Received null activity"), y.default.track(O.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
-        application_id: D.application_id,
+        application_id: A.application_id,
         location: R.location
-      }), (0, s.h7)(D, !1)
-    }, [D, R]),
-    B = i.useCallback((e, t) => () => {
+      }), (0, s.h7)(A, !1)
+    }, [A, R]),
+    U = i.useCallback((e, t) => () => {
       d.Z.leaveActivity({
         location: t,
         applicationId: e,
         showFeedback: !0
       })
     }, []),
-    U = i.useCallback(() => {
+    B = i.useCallback(() => {
       (0, f.Z)(P)
     }, [P]),
     W = i.useCallback(() => {
@@ -113,7 +113,7 @@ let x = i.memo(function(e) {
         }
       })
     }, [Z, N, E, k, L]),
-    V = (null != E || null == T || (0, c.R)()) && (I || S) ? (I ? (t = !1, l = U, u = a.g5r, x = j.NW.string(j.t.S5anIS)) : w ? (t = !1, l = W, u = a.hGI, x = null != E ? j.NW.formatToPlainString(j.t.AB5gT0, {
+    V = (null != E || null == T || (0, c.R)()) && (I || S) ? (I ? (t = !1, l = B, u = a.g5r, x = j.NW.string(j.t.S5anIS)) : w ? (t = !1, l = W, u = a.hGI, x = null != E ? j.NW.formatToPlainString(j.t.AB5gT0, {
       game: E.name
     }) : j.NW.string(j.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, x = null != Z && (0, m.vd)(Z.type) ? j.NW.string(j.t.uQn9Bw) : null != N ? j.NW.string(j.t.fBXEoK) : j.NW.string(j.t.n3feND)), (0, r.jsx)("div", {
       className: _.panelButtonContainer,
@@ -131,7 +131,7 @@ let x = i.memo(function(e) {
     }) : null,
     H = null == T ? null : (0, r.jsx)(v.Z, {
       tooltipText: j.NW.string(j.t["R/FK4O"]),
-      onClick: B(T.applicationId, T.location),
+      onClick: U(T.applicationId, T.location),
       icon: a.PBZ
     }),
     z = null == P ? null : (0, r.jsx)(p.Z, {});

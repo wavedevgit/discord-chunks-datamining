@@ -13,8 +13,8 @@ var r, i = n(200651),
   h = n(129293),
   p = n(388905),
   g = n(981631),
-  m = n(388032),
-  f = n(455812);
+  f = n(388032),
+  m = n(455812);
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,24 +68,24 @@ class b extends(r = o.PureComponent) {
     } = this.state;
     return (0, i.jsxs)(p.ZP, {
       children: [(0, i.jsx)(p.Dx, {
-        className: f.marginBottom8,
-        children: m.NW.string(m.t.Z33eiI)
+        className: m.marginBottom8,
+        children: f.NW.string(f.t.Z33eiI)
       }), (0, i.jsx)(p.DK, {
-        children: m.NW.format(m.t.NRWtfH, {
+        children: f.NW.format(f.t.NRWtfH, {
           guildName: n.name
         })
       }), (0, i.jsx)(p.zx, {
-        className: f.marginTop40,
+        className: m.marginTop40,
         onClick: () => t(e),
-        children: m.NW.string(m.t.fIv16O)
+        children: f.NW.string(f.t.fIv16O)
       }), (0, i.jsx)(p.zx, {
-        className: f.marginTop8,
+        className: m.marginTop8,
         color: p.zx.Colors.LINK,
         look: p.zx.Looks.LINK,
         onClick: () => {
           t(g.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
         },
-        children: m.NW.string(m.t["cGmT/P"])
+        children: f.NW.string(f.t["cGmT/P"])
       })]
     })
   }
@@ -97,16 +97,16 @@ class b extends(r = o.PureComponent) {
     return (0, i.jsxs)(p.ZP, {
       children: [(0, i.jsx)(p.Ee, {
         src: n(105020),
-        className: f.marginBottom20
+        className: m.marginBottom20
       }), (0, i.jsx)(p.Dx, {
-        className: f.marginBottom8,
-        children: m.NW.string(m.t.ox9hIS)
+        className: m.marginBottom8,
+        children: f.NW.string(f.t.ox9hIS)
       }), (0, i.jsx)(p.DK, {
-        children: m.NW.string(m.t["/dcuR0"])
+        children: f.NW.string(f.t["/dcuR0"])
       }), (0, i.jsx)(p.zx, {
-        className: f.marginTop40,
+        className: m.marginTop40,
         onClick: () => t(e),
-        children: m.NW.string(m.t.fIv16O)
+        children: f.NW.string(f.t.fIv16O)
       })]
     })
   }

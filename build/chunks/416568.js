@@ -32,22 +32,22 @@ var r = n(200651),
   w = n(931928),
   E = n(431286),
   T = n(796974),
-  D = n(271383),
-  A = n(430824),
+  A = n(271383),
+  D = n(430824),
   R = n(771845),
   L = n(358085),
   k = n(709054),
   M = n(727258),
   G = n(605951),
-  B = n(474109),
-  U = n(741616),
+  U = n(474109),
+  B = n(741616),
   W = n(187835),
   V = n(118122),
   F = n(193154),
   H = n(602147),
   z = n(416637),
-  q = n(222059),
-  Y = n(751277),
+  Y = n(222059),
+  q = n(751277),
   Q = n(65721),
   K = n(843343),
   J = n(654142),
@@ -166,7 +166,7 @@ function es(e) {
   } = (0, m.TCT)(), [h] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
-  }), b = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), v = i.useMemo(() => n ? [] : b, [b, n]), ei = (0, p.Wu)([A.Z, D.ZP], () => k.default.keys(A.Z.getGuilds()).filter(e => D.ZP.isCurrentUserGuest(e))), es = v.concat(ei), ec = (0, p.e7)([_.Z], () => _.Z.isFullscreenInContext()), eu = (0, p.e7)([A.Z], () => A.Z.getGeoRestrictedGuilds()), [ed, ep] = i.useState(!1), eh = i.useCallback(() => ep(!0), []), ef = i.useCallback(() => ep(!1), []), eg = i.useRef(!1), [em] = i.useState(() => new f.V7), eb = i.useRef(null), ey = i.useRef(null), ev = (0, u.OP)(), {
+  }), b = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), v = i.useMemo(() => n ? [] : b, [b, n]), ei = (0, p.Wu)([D.Z, A.ZP], () => k.default.keys(D.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), es = v.concat(ei), ec = (0, p.e7)([_.Z], () => _.Z.isFullscreenInContext()), eu = (0, p.e7)([D.Z], () => D.Z.getGeoRestrictedGuilds()), [ed, ep] = i.useState(!1), eh = i.useCallback(() => ep(!0), []), ef = i.useCallback(() => ep(!1), []), eg = i.useRef(!1), [em] = i.useState(() => new f.V7), eb = i.useRef(null), ey = i.useRef(null), ev = (0, u.OP)(), {
     ref: eO
   } = ev, ej = function(e, t) {
     if (null == e) return {};
@@ -229,14 +229,14 @@ function es(e) {
       n !== t && (t = n, eI.scrollToGuild(t, !1))
     })
   }, [h, eI]);
-  let eD = i.useCallback(() => {
+  let eA = i.useCallback(() => {
     eI.scrollTo({
       to: 0,
       animate: !1
     })
   }, [eI]);
   (0, G.Z)(eI.scrollToGuild);
-  let eA = i.useCallback(function e(t) {
+  let eD = i.useCallback(function e(t) {
       switch (t.type) {
         case M.eD.FOLDER:
           return (0, r.jsx)(J.Z, {
@@ -272,15 +272,15 @@ function es(e) {
   (0, E.i)();
   let eG = i.useRef(null),
     {
-      shouldShow: eB,
-      closeCoachmarkIfOpen: eU,
+      shouldShow: eU,
+      closeCoachmarkIfOpen: eB,
       questId: eW
     } = (0, w.qp)({
       isVirtualCurrencyEnabled: eM,
       discoveryButtonRef: eG,
       scrollToBottom: eI.scrollToBottom
     }),
-    eV = eM && eB,
+    eV = eM && eU,
     eF = eV ? eW : void 0,
     eH = eu.map(e => (0, r.jsx)(F.Z, {
       id: e.id,
@@ -291,7 +291,7 @@ function es(e) {
     value: eZ,
     children: [eV && (0, r.jsx)(w.fO, {
       backgroundElementRef: eG,
-      onClose: eU,
+      onClose: eB,
       renderTail: !0
     }), (0, r.jsx)(m.f6W, {
       theme: a,
@@ -307,7 +307,7 @@ function es(e) {
           }, ej, e_), a = a = {
             role: "tree",
             className: er.tree,
-            children: [(0, r.jsx)(B.Z, {
+            children: [(0, r.jsx)(U.Z, {
               ref: eb,
               isVisible: eI.isItemVisible,
               onJumpTo: eI.handleJumpToGuild,
@@ -324,26 +324,26 @@ function es(e) {
                 gap: "xs",
                 ref: eI.scrollerRef,
                 onScroll: eI.handleScroll,
-                children: [(0, r.jsx)(q.u, {}), eL ? (0, r.jsx)(P.Z, {}) : null, (0, r.jsx)(Y.Z, {
+                children: [(0, r.jsx)(Y.u, {}), eL ? (0, r.jsx)(P.Z, {}) : null, (0, r.jsx)(q.Z, {
                   isOnHubVerificationRoute: eT
-                }), (0, r.jsx)(U.Z, {}), ek, es.map(e => (0, r.jsx)(ee.Z, {
+                }), (0, r.jsx)(B.Z, {}), ek, es.map(e => (0, r.jsx)(ee.Z, {
                   guildId: e
                 }, e)), (0, r.jsx)($.Z, {
-                  onActivate: eD
+                  onActivate: eA
                 }), (0, r.jsx)(Q.Z, {}), s ? (0, r.jsx)(m.Kqy, {
                   gap: "xs",
                   "aria-label": en.NW.string(en.t["7hB4kp"]),
-                  children: eR.map(eA)
+                  children: eR.map(eD)
                 }) : (0, r.jsx)("div", {
                   "aria-label": en.NW.string(en.t["7hB4kp"]),
-                  children: eR.map(eA)
+                  children: eR.map(eD)
                 }), eH, n ? null : (0, r.jsx)(V.Z, {
                   disableTooltip: v.length > 0,
                   lastTargetNode: eR[eR.length - 1]
                 }), (0, r.jsx)(K.Z, {}), !n && s ? (0, r.jsx)(H.Z, {
                   ref: eG,
                   questId: eF,
-                  onClick: eU,
+                  onClick: eB,
                   selected: eE,
                   className: er.discoveryIcon
                 }) : null, t ? null : (0, r.jsx)(W.Z, {})]
@@ -352,12 +352,12 @@ function es(e) {
                 children: (0, r.jsx)(H.Z, {
                   ref: eG,
                   questId: eF,
-                  onClick: eU,
+                  onClick: eB,
                   selected: eE,
                   className: er.discoveryIcon
                 })
               })]
-            }), (0, r.jsx)(B.Z, {
+            }), (0, r.jsx)(U.Z, {
               reverse: !0,
               ref: ey,
               isVisible: eI.isItemVisible,

@@ -84,7 +84,7 @@ let O = [],
         })
       }
       return t
-    }, [m], f.HP), I = o.useCallback(e => (0, r.jsx)("div", {
+    }, [m], f.HP), C = o.useCallback(e => (0, r.jsx)("div", {
       className: t,
       style: b,
       children: e
@@ -93,6 +93,6 @@ let O = [],
       items: x,
       renderItem: y,
       getItemKey: h,
-      wrapChildren: I
+      wrapChildren: C
     })
   })

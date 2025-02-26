@@ -1,6 +1,6 @@
 /**
   Module ID: 96858
-  Original File Name: 7032c89e25493f7e
+  Original File Name: cecc110a14387270
 **/
 .logo__11f7b {
     flex: 0 0 auto;
@@ -135,7 +135,7 @@
     right: 0;
     width: 84px;
     height: 22px;
-    background: hsl(var(--black-500-hsl)/.3);
+    background: var(--opacity-black-28);
     border-bottom-left-radius: 3px;
     z-index: 1;
     transition: background .4s ease .4s
@@ -197,4 +197,4 @@
     }
 }
 
-/*# sourceMappingURL=7032c89e25493f7e.css.map*/
+/*# sourceMappingURL=cecc110a14387270.css.map*/

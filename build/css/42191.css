@@ -1,6 +1,6 @@
 /**
   Module ID: 42191
-  Original File Name: 64b1049b91241e5e
+  Original File Name: 40e00b14756696f7
 **/
 .container__4216d {
     align-items: center;
@@ -889,7 +889,7 @@
     object-fit: cover;
     align-items: center;
     justify-content: center;
-    background-color: hsl(var(--black-500-hsl)/.05);
+    background-color: var(--opacity-black-4);
     animation: fadeIn_a3c1e1 .7s
 }
 
@@ -1344,4 +1344,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=64b1049b91241e5e.css.map*/
+/*# sourceMappingURL=40e00b14756696f7.css.map*/

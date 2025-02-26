@@ -1,6 +1,6 @@
 /** Chunk was on 86029 **/
 n.d(t, {
-  Z: () => B
+  Z: () => U
 }), n(47120);
 var r, i = n(200651),
   l = n(192379),
@@ -31,8 +31,8 @@ var r, i = n(200651),
   w = n(55589),
   E = n(515753),
   T = n(981631),
-  D = n(388032),
-  A = n(730499);
+  A = n(388032),
+  D = n(730499);
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,7 +73,7 @@ let M = l.memo(function() {
     width: "184",
     height: "428",
     viewBox: "0 0 184 428",
-    className: A.empty,
+    className: D.empty,
     children: [(0, i.jsx)("rect", {
       x: 40,
       y: 6,
@@ -278,14 +278,14 @@ class G extends(r = l.Component) {
           children: r => (0, i.jsx)(p.aVo, L({
             fade: !0,
             innerRole: o,
-            innerAriaLabel: D.NW.string(D.t.YUU0RE),
+            innerAriaLabel: A.NW.string(A.t.YUU0RE),
             innerTag: "ul",
             ref: e => {
               var t;
               this._list = e, this.props.listRef.current = e, l.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null
             },
             onScroll: this.handleScroll,
-            className: A.scroller,
+            className: D.scroller,
             sectionHeight: this.getSectionHeight,
             paddingTop: t,
             paddingBottom: 8,
@@ -379,15 +379,15 @@ class G extends(r = l.Component) {
         showDMHeader: n
       } = this.props;
       return 0 !== t && n ? (0, i.jsxs)(y.Z, {
-        className: A.privateChannelsHeaderContainer,
+        className: D.privateChannelsHeaderContainer,
         children: [(0, i.jsx)("span", {
-          className: A.headerText,
-          children: D.NW.string(D.t.YUU0RE)
+          className: D.headerText,
+          children: A.NW.string(A.t.YUU0RE)
         }), (0, i.jsx)(C.Z, {
-          tooltip: D.NW.string(D.t["6Urw1t"]),
+          tooltip: A.NW.string(A.t["6Urw1t"]),
           tooltipPosition: "top",
           popoutAlign: "left",
-          iconClassName: A.privateChannelRecipientsInviteButtonIcon,
+          iconClassName: D.privateChannelRecipientsInviteButtonIcon,
           icon: p.qJs,
           subscribeToGlobalHotkey: !0
         })]
@@ -419,7 +419,7 @@ class G extends(r = l.Component) {
 R(G, "defaultProps", {
   padding: 8
 });
-let B = e => {
+let U = e => {
   var t;
   let n = (0, O.Q3)("ConnectedPrivateChannelsList"),
     {
@@ -446,7 +446,7 @@ let B = e => {
     })),
     Z = l.useRef(null),
     E = null !== (t = e.listScrollerRef) && void 0 !== t ? t : Z,
-    D = l.useCallback(e => {
+    A = l.useCallback(e => {
       let t = E.current,
         n = document.querySelector(e);
       null != t && null != n && t.scrollIntoViewNode({
@@ -461,7 +461,7 @@ let B = e => {
         }
       })
     }, [E]),
-    A = l.useCallback(() => new Promise(e => {
+    D = l.useCallback(() => new Promise(e => {
       let t = E.current;
       if (null == t) return e();
       t.scrollToTop({
@@ -478,16 +478,16 @@ let B = e => {
       })
     }), [E]),
     M = (0, v.Dt)(),
-    B = (0, c.ZP)({
+    U = (0, c.ZP)({
       id: "private-channels-".concat(M),
       isEnabled: C.keyboardModeEnabled,
-      scrollToStart: A,
+      scrollToStart: D,
       scrollToEnd: R,
       defaultFocused: (g + +!!h).toString(),
-      setFocus: D
+      setFocus: A
     });
   return (0, i.jsx)(s.bG, {
-    navigator: B,
+    navigator: U,
     children: (0, i.jsx)(G, L(k(L({
       density: r,
       isVisualRefreshEnabled: n,

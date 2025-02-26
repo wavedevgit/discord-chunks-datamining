@@ -1,6 +1,6 @@
 /**
   Module ID: 488
-  Original File Name: 54b562c7b9c9f23c
+  Original File Name: b3d097a13dbd3e12
 **/
 .container__5537c {
     min-width: 100%;
@@ -787,7 +787,7 @@
 }
 
 .imageUploaderInner_e4d0bf:focus-within,.imageUploaderInner_e4d0bf:hover {
-    box-shadow: inset 0 0 120px hsl(var(--black-500-hsl)/.75)
+    box-shadow: inset 0 0 120px var(--opacity-black-76)
 }
 
 .imageUploaderInner_e4d0bf:focus-within .imageUploaderAcronym_e4d0bf,.imageUploaderInner_e4d0bf:hover .imageUploaderAcronym_e4d0bf {
@@ -1518,4 +1518,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=54b562c7b9c9f23c.css.map*/
+/*# sourceMappingURL=b3d097a13dbd3e12.css.map*/

@@ -80,11 +80,13 @@ let E = function() {
           className: I.divider
         }), (0, r.jsx)(f.Z, {
           profile: T,
-          onCustomBannerChange: R
+          onCustomBannerChange: R,
+          canManageGuild: P
         }), (0, r.jsx)("div", {
           className: I.divider
         }), (0, r.jsx)(_.Z, {
-          profile: T
+          profile: T,
+          canManageGuild: P
         }), (0, r.jsx)("div", {
           className: I.divider
         }), (0, r.jsx)(b.Z, {
@@ -93,11 +95,13 @@ let E = function() {
         }), (0, r.jsx)("div", {
           className: I.divider
         }), (0, r.jsx)(x.Z, {
-          profile: T
+          profile: T,
+          canManageGuild: P
         }), (0, r.jsx)("div", {
           className: I.divider
         }), (0, r.jsx)(O.Z, {
-          profile: T
+          profile: T,
+          canManageGuild: P
         })]
       }), (0, r.jsx)("div", {
         className: I.rightColumn,

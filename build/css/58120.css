@@ -1,6 +1,6 @@
 /**
   Module ID: 58120
-  Original File Name: 81368f61180625e6
+  Original File Name: 7a411661a8202e48
 **/
 .container_f89b2c {
     box-sizing: border-box;
@@ -80,8 +80,8 @@
 }
 
 .theme-dark .container_f89b2c {
-    background-color: hsl(var(--black-500-hsl)/.1);
-    border-color: hsl(var(--black-500-hsl)/.3)
+    background-color: var(--opacity-black-8);
+    border-color: var(--opacity-black-28)
 }
 
 .visual-refresh .container_f89b2c {
@@ -275,4 +275,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=81368f61180625e6.css.map*/
+/*# sourceMappingURL=7a411661a8202e48.css.map*/

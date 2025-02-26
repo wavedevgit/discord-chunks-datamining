@@ -1,6 +1,6 @@
 /**
   Module ID: 61080
-  Original File Name: 24ca9e3913267561
+  Original File Name: 7c57051009b47bd3
 **/
 .fallback_b789ab {
     box-sizing: border-box;
@@ -1673,7 +1673,7 @@ img.thumbnail__0f2e8 {
     max-height: 92px;
     margin-right: 16px;
     margin-bottom: 16px;
-    filter: drop-shadow(0 8px 8px hsl(var(--black-500-hsl)/.32))
+    filter: drop-shadow(0 8px 8px var(--opacity-black-32))
 }
 
 .coachtip_b61b37,.coachtipContent_b61b37 {
@@ -1718,7 +1718,7 @@ img.thumbnail__0f2e8 {
 
 .popout_af3b89 {
     width: 348px;
-    filter: drop-shadow(0 8px 8px hsl(var(--black-500-hsl)/.32))
+    filter: drop-shadow(0 8px 8px var(--opacity-black-32))
 }
 
 .hero_af3b89,.popout_af3b89 {
@@ -2239,4 +2239,4 @@ img.thumbnail__0f2e8 {
     margin-top: 8px
 }
 
-/*# sourceMappingURL=24ca9e3913267561.css.map*/
+/*# sourceMappingURL=7c57051009b47bd3.css.map*/

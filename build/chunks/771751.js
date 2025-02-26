@@ -103,15 +103,15 @@ function O(e) {
   let {
     id: E,
     expires_at: S,
-    redeemed_at: k,
-    trial_id: I,
+    redeemed_at: I,
+    trial_id: k,
     subscription_trial: w,
     referrer: Z
   } = s, P = null !== (n = null === (t = u.find(e => {
     let {
       value: t
     } = e;
-    return t === I
+    return t === k
   })) || void 0 === t ? void 0 : t.label) && void 0 !== n ? n : "Unknown";
   null != Z && (P = "".concat(P, " from @").concat(Z.username));
   let R = null != S,
@@ -178,12 +178,12 @@ function O(e) {
     }), (0, r.jsxs)(c.P3F, {
       className: l()(g.row, g.idRow),
       onClick: () => {
-        (0, h.JG)(I), v(!0)
+        (0, h.JG)(k), v(!0)
       },
       children: [(0, r.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
-        children: ["Trial: ", I]
+        children: ["Trial: ", k]
       }), _ ? (0, r.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
@@ -216,7 +216,7 @@ function O(e) {
           color: "Acknowledged" === B ? void 0 : "always-white",
           children: B
         })
-      }), null != k && (0, r.jsx)("div", {
+      }), null != I && (0, r.jsx)("div", {
         className: l()(g.badge, g.__invalid_badgeBottom, g.redeemed),
         children: (0, r.jsx)(c.Text, {
           variant: "eyebrow",
@@ -260,8 +260,8 @@ function E(e) {
       value: t
     } = e;
     return t === O
-  })) || void 0 === t ? void 0 : t.label) && void 0 !== n ? n : "Unknown", k = null != N, I = null != N && new Date(N).getTime() < Date.now(), w = async () => {
-    b(!0), k ? await C(j, "discount") : await (0, d.a)(void 0, i), s(), b(!1)
+  })) || void 0 === t ? void 0 : t.label) && void 0 !== n ? n : "Unknown", I = null != N, k = null != N && new Date(N).getTime() < Date.now(), w = async () => {
+    b(!0), I ? await C(j, "discount") : await (0, d.a)(void 0, i), s(), b(!1)
   };
   a.useEffect(() => {
     if (u) {
@@ -282,7 +282,7 @@ function E(e) {
     }
   }, [u, x]);
   let Z = "Active";
-  return I && (Z = "Expired"), k && (Z = "Acknowledged"), (0, r.jsxs)("div", {
+  return k && (Z = "Expired"), I && (Z = "Acknowledged"), (0, r.jsxs)("div", {
     className: l()(g.card, g.discount),
     children: [(0, r.jsxs)("div", {
       className: l()(g.row, g.nameRow),
@@ -347,8 +347,8 @@ function E(e) {
       children: [(0, r.jsx)(c.P3F, {
         onClick: w,
         className: l()(g.badge, g.clickable, {
-          [g.acked]: k,
-          [g.expired]: I
+          [g.acked]: I,
+          [g.expired]: k
         }),
         children: (0, r.jsx)(c.Text, {
           variant: "eyebrow",
@@ -373,9 +373,9 @@ function E(e) {
 }
 
 function S() {
-  let [e, t] = a.useState([]), [n, i] = a.useState([]), [o, h] = a.useState(), [x, p] = a.useState(), [b, y] = a.useState([]), [C, S] = a.useState([]), [k, I] = a.useState(!0);
+  let [e, t] = a.useState([]), [n, i] = a.useState([]), [o, h] = a.useState(), [x, p] = a.useState(), [b, y] = a.useState([]), [C, S] = a.useState([]), [I, k] = a.useState(!0);
   a.useEffect(() => {
-    (0 === e.length || 0 === n.length || k) && v().then(e => {
+    (0 === e.length || 0 === n.length || I) && v().then(e => {
       let n = Object.keys(e.trial).map(t => ({
           label: t,
           value: e.trial[t]
@@ -386,17 +386,17 @@ function S() {
         }));
       t(n), i(r), null == o && h(n[0].value), null == x && p(r[0].value)
     })
-  }, [e, n, o, x, k]), a.useEffect(() => {
-    k && (I(!1), m.Z.forceReset(), (0, d.T)(), N().then(e => {
+  }, [e, n, o, x, I]), a.useEffect(() => {
+    I && (k(!1), m.Z.forceReset(), (0, d.T)(), N().then(e => {
       y(e.trial.sort((e, t) => e.id.localeCompare(t.id))), S(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
-  }, [k]);
+  }, [I]);
   let w = async () => {
-    null != o && (await j(o, "trial"), I(!0))
+    null != o && (await j(o, "trial"), k(!0))
   }, Z = async () => {
-    null != x && (await j(x, "discount"), I(!0))
+    null != x && (await j(x, "discount"), k(!0))
   }, P = async () => {
-    await T(), I(!0)
+    await T(), k(!0)
   };
   return (0, r.jsx)(c.zJl, {
     className: l()(_.panel),
@@ -419,7 +419,7 @@ function S() {
             children: "Clear Mobile Trials DismissibleContent"
           }), (0, r.jsx)(c.zxk, {
             size: c.zxk.Sizes.SMALL,
-            onClick: () => I(!0),
+            onClick: () => k(!0),
             children: "Refresh DevTools"
           })]
         })]
@@ -471,7 +471,7 @@ function S() {
         }), b.map(t => (0, r.jsx)(O, {
           offer: t,
           offerOptions: e,
-          forceRefetch: () => I(!0)
+          forceRefetch: () => k(!0)
         }, t.id))]
       }), C.length > 0 && (0, r.jsxs)("section", {
         className: g.section,
@@ -481,7 +481,7 @@ function S() {
         }), C.map(e => (0, r.jsx)(E, {
           offer: e,
           offerOptions: n,
-          forceRefetch: () => I(!0)
+          forceRefetch: () => k(!0)
         }, e.id))]
       })]
     })

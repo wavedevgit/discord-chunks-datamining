@@ -1,6 +1,6 @@
 /**
   Module ID: 12009
-  Original File Name: b09e0ad152fc6853
+  Original File Name: 77440168866ff97f
 **/
 .header__553a5 {
     width: 100%;
@@ -429,7 +429,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    color: hsl(var(--black-500-hsl)/.6)
+    color: var(--opacity-black-60)
 }
 
 .emptyContainer_d13feb {
@@ -549,4 +549,4 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
     border-radius: var(--radius-md)
 }
 
-/*# sourceMappingURL=b09e0ad152fc6853.css.map*/
+/*# sourceMappingURL=77440168866ff97f.css.map*/

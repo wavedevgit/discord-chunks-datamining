@@ -1,6 +1,6 @@
 /**
   Module ID: 18895
-  Original File Name: f29a9bca4c7f75e3
+  Original File Name: fb8c687fd4d247cb
 **/
 .effect_a9ddb3 {
     position: absolute;
@@ -375,7 +375,7 @@
 
 .reactionBtn_f8896c.forceShow_f8896c:hover {
     background-color: var(--background-primary);
-    border-color: hsl(var(--white-500-hsl)/.2)
+    border-color: var(--opacity-white-20)
 }
 
 .largeReactionBtn_f8896c.forceShow_f8896c {
@@ -432,7 +432,7 @@
 
 .reaction_f8896c:hover {
     background-color: var(--background-primary);
-    border-color: hsl(var(--white-500-hsl)/.2)
+    border-color: var(--opacity-white-20)
 }
 
 .reaction_f8896c:hover .reactionCount_f8896c {
@@ -530,7 +530,7 @@
 }
 
 .theme-light .reaction_f8896c:hover {
-    border-color: hsl(var(--black-500-hsl)/.2)
+    border-color: var(--opacity-black-20)
 }
 
 .theme-light .reaction_f8896c.reactionMe_f8896c {
@@ -691,7 +691,7 @@
 
 .reactionBtn__23977.forceShow__23977:hover {
     background-color: var(--background-primary);
-    border-color: hsl(var(--white-500-hsl)/.2)
+    border-color: var(--opacity-white-20)
 }
 
 .largeReactionBtn__23977.forceShow__23977 {
@@ -748,7 +748,7 @@
 
 .reaction__23977:hover {
     background-color: var(--background-primary);
-    border-color: hsl(var(--white-500-hsl)/.2)
+    border-color: var(--opacity-white-20)
 }
 
 .reaction__23977:hover .reactionCount__23977 {
@@ -802,7 +802,7 @@
 }
 
 .theme-light .reaction__23977:hover {
-    border-color: hsl(var(--black-500-hsl)/.2)
+    border-color: var(--opacity-black-20)
 }
 
 .theme-light .reaction__23977.reactionMe__23977 {
@@ -1246,7 +1246,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    color: hsl(var(--black-500-hsl)/.6)
+    color: var(--opacity-black-60)
 }
 
 .thumbnailContainer_faa96b {
@@ -1470,4 +1470,4 @@
     background-color: var(--background-tertiary)
 }
 
-/*# sourceMappingURL=f29a9bca4c7f75e3.css.map*/
+/*# sourceMappingURL=fb8c687fd4d247cb.css.map*/

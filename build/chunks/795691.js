@@ -15,21 +15,22 @@ function d(e) {
   let {
     guildId: t,
     selectedGameApplicationIds: n,
-    onUpdateGames: d
+    onUpdateGames: d,
+    disabled: u
   } = e, {
-    topGames: u,
-    tryFetchTopGames: m
-  } = (0, a.I)(), g = u.get(t), [p, h] = i.useState(!1);
+    topGames: m,
+    tryFetchTopGames: g
+  } = (0, a.I)(), p = m.get(t), [h, f] = i.useState(!1);
   i.useEffect(() => {
-    h(!0), m(t).finally(() => {
-      h(!1)
+    f(!0), g(t).finally(() => {
+      f(!1)
     })
-  }, [t, m]);
-  let f = i.useMemo(() => null == g ? [] : Object.keys(g).filter(e => !n.includes(e)).sort((e, t) => g[t].score - g[e].score), [g, n]),
-    b = i.useCallback(e => {
+  }, [t, g]);
+  let b = i.useMemo(() => null == p ? [] : Object.keys(p).filter(e => !n.includes(e)).sort((e, t) => p[t].score - p[e].score), [p, n]),
+    x = i.useCallback(e => {
       n.includes(e) ? d(n.filter(t => t !== e)) : d([...n, e])
     }, [d, n]);
-  return p && null == g ? (0, r.jsx)(s.$jN, {}) : null == f || 0 === f.length ? null : (0, r.jsxs)(r.Fragment, {
+  return h && null == p ? (0, r.jsx)(s.$jN, {}) : null == b || 0 === b.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: c.separator
     }), (0, r.jsxs)("div", {
@@ -40,10 +41,11 @@ function d(e) {
         children: o.NW.string(o.t.bFGpub)
       }), (0, r.jsx)("div", {
         className: c.gamesList,
-        children: f.map(e => (0, r.jsx)(l.Z, {
+        children: b.map(e => (0, r.jsx)(l.Z, {
           applicationId: e,
           selected: !1,
-          onClick: b
+          onClick: x,
+          disabled: u
         }, e))
       })]
     })]

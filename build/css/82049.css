@@ -1,6 +1,6 @@
 /**
   Module ID: 82049
-  Original File Name: e4c9584eefa7e227
+  Original File Name: 2f3ebafbd19b9205
 **/
 .container__6b668 {
     display: flex;
@@ -465,7 +465,7 @@
     left: -26px;
     right: -26px;
     bottom: -16px;
-    background-color: hsl(var(--black-500-hsl)/.1)
+    background-color: var(--opacity-black-8)
 }
 
 .checkboxContainerMuted_db81c6 {
@@ -632,4 +632,4 @@
     padding-bottom: var(--spacing-12)
 }
 
-/*# sourceMappingURL=e4c9584eefa7e227.css.map*/
+/*# sourceMappingURL=2f3ebafbd19b9205.css.map*/

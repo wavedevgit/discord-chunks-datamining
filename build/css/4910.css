@@ -1,6 +1,6 @@
 /**
   Module ID: 4910
-  Original File Name: eb5fbbcf8bcbbf43
+  Original File Name: a004fe0d73ba99f2
 **/
 .container__05cdc {
     display: flex
@@ -72,7 +72,7 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: hsl(var(--black-500-hsl)/.4)
+    background-color: var(--opacity-black-40)
 }
 
 .overlay__86ab2,.overlayIcon__86ab2 {
@@ -1052,4 +1052,4 @@
     max-height: max(200px, min(calc(100vh - 80px), 660px))
 }
 
-/*# sourceMappingURL=eb5fbbcf8bcbbf43.css.map*/
+/*# sourceMappingURL=a004fe0d73ba99f2.css.map*/

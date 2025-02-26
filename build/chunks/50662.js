@@ -58,17 +58,17 @@ function C(e) {
   let {
     guildJoinRequest: a,
     guild: C,
-    guildJoinRequestUser: N
+    guildJoinRequestUser: y
   } = e, {
-    createdAt: y,
-    actionedAt: I,
-    guildId: T,
+    createdAt: N,
+    actionedAt: T,
+    guildId: I,
     userId: w
   } = a, {
     approveRequest: O,
     rejectRequest: P,
     submitting: R
-  } = (0, h.s)(T, w, a.joinRequestId), E = null === (t = a.actionedByUser) || void 0 === t ? void 0 : t.id, S = (0, o.e7)([p.default], () => p.default.getUser(E)), B = (0, o.e7)([m.ZP], () => null != E ? m.ZP.getMember(T, E) : null, [E, T]), k = (0, o.e7)([u.Z], () => u.Z.getMemberCount(T)), F = (null != k ? k : 0) >= C.maxMembers, q = j.NW.string(j.t["4eQVBA"]), Z = (0, r.jsx)(s.T39, {
+  } = (0, h.s)(I, w, a.joinRequestId), E = null === (t = a.actionedByUser) || void 0 === t ? void 0 : t.id, S = (0, o.e7)([p.default], () => p.default.getUser(E)), B = (0, o.e7)([m.ZP], () => null != E ? m.ZP.getMember(I, E) : null, [E, I]), k = (0, o.e7)([u.Z], () => u.Z.getMemberCount(I)), F = (null != k ? k : 0) >= C.maxMembers, q = j.NW.string(j.t["4eQVBA"]), Z = (0, r.jsx)(s.T39, {
     size: "custom",
     color: "currentColor",
     width: 24,
@@ -85,15 +85,15 @@ function C(e) {
     color: l.Z.colors.WHITE.css,
     secondaryColor: l.Z.colors.STATUS_DANGER.css
   }));
-  let A = null != S && null != I ? j.NW.format(j.t.pRpZCQ, {
-    date: i()(f.default.extractTimestamp(I)).format("ll"),
+  let A = null != S && null != T ? j.NW.format(j.t.pRpZCQ, {
+    date: i()(f.default.extractTimestamp(T)).format("ll"),
     usernameHook: function() {
       var e;
       return (0, r.jsx)(s.P3F, {
         className: _.actionedByUser,
         onClick: () => (0, d.openUserProfileModal)({
           userId: S.id,
-          guildId: T,
+          guildId: I,
           analyticsLocation: {
             section: b.jXE.GUILD_MEMBER_VERIFICATION_APPLICATION_REVIEW,
             object: b.qAy.ACTIONED_BY_USER
@@ -108,7 +108,7 @@ function C(e) {
         })
       }, "username-hook")
     }
-  }) : i()(y).format("lll");
+  }) : i()(N).format("lll");
   return (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsxs)("div", {
@@ -131,7 +131,7 @@ function C(e) {
         children: [a.applicationStatus === x.wB.SUBMITTED && (0, r.jsxs)("div", {
           className: _.buttons,
           children: [(0, r.jsx)(s.ua7, {
-            text: j.NW.string(j.t.RbIXi4),
+            text: j.NW.string(j.t.cdPGbG),
             shouldShow: F,
             children: e => (0, r.jsx)(s.zxk, v(g({}, e), {
               color: s.zxk.Colors.GREEN,
@@ -154,7 +154,7 @@ function C(e) {
               } = await n.e("84259").then(n.bind(n, 597409));
               return t => (0, r.jsx)(e, v(g({}, t), {
                 guild: C,
-                user: N
+                user: y
               }))
             })
           },

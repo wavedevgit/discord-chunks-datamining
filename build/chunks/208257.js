@@ -22,21 +22,21 @@ var r = n(200651),
   g = n(572940),
   v = n(80487),
   C = n(146463),
-  N = n(981631),
-  y = n(388032),
-  I = n(345375);
+  y = n(981631),
+  N = n(388032),
+  T = n(345375);
 
-function T(e) {
+function I(e) {
   let {
     guild: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: I.setupHeader,
+    className: T.setupHeader,
     children: [(0, r.jsxs)("div", {
-      className: I.previewContainer,
+      className: T.previewContainer,
       children: [(0, r.jsx)(o.X6q, {
         variant: "heading-lg/bold",
-        children: y.NW.string(y.t.aOQWKi)
+        children: N.NW.string(N.t.aOQWKi)
       }), (0, r.jsxs)(o.zxk, {
         color: o.zxk.Colors.TRANSPARENT,
         onClick: () => {
@@ -80,18 +80,18 @@ function T(e) {
           })
         },
         size: o.PhG.SMALL,
-        "aria-label": y.NW.string(y.t.rqfRdX),
-        innerClassName: I.previewButton,
+        "aria-label": N.NW.string(N.t.rqfRdX),
+        innerClassName: T.previewButton,
         children: [(0, r.jsx)(o.tEF, {
           size: "xs",
           color: "currentColor"
-        }), y.NW.string(y.t.rqfRdX)]
+        }), N.NW.string(N.t.rqfRdX)]
       })]
     }), (0, r.jsx)(o.Text, {
-      className: I.description,
+      className: T.description,
       variant: "text-sm/medium",
       color: "header-secondary",
-      children: y.NW.format(y.t.xpB4Ym, {
+      children: N.NW.format(N.t.Ty8RcH, {
         guildName: t.name
       })
     })]
@@ -122,26 +122,26 @@ function w(e) {
   } = (0, f.m)({
     guildId: w,
     guildJoinRequests: F
-  }), D = (0, i.e7)([u.Z], () => u.Z.can(N.Plq.KICK_MEMBERS, q)), M = a.useRef(!1);
+  }), D = (0, i.e7)([u.Z], () => u.Z.can(y.Plq.KICK_MEMBERS, q)), M = a.useRef(!1);
   M.current || (M.current = !0, W(S, "REVIEW_APPLICATION" === R ? p.wB.SUBMITTED : R)), a.useEffect(() => {
     D || E("REVIEW_APPLICATION")
   }, [D]);
-  let L = a.useRef(!1);
+  let U = a.useRef(!1);
   a.useEffect(() => {
-    L.current = !0
+    U.current = !0
   }, [S, R]), a.useEffect(() => {
-    if (L.current && 0 !== F.length && "REVIEW_APPLICATION" !== R) {
+    if (U.current && 0 !== F.length && "REVIEW_APPLICATION" !== R) {
       var e;
-      L.current = !1, m.Z.setSelectedGuildJoinRequest(w, F[0]), null === (e = P.current) || void 0 === e || e.scrollToTop()
+      U.current = !1, m.Z.setSelectedGuildJoinRequest(w, F[0]), null === (e = P.current) || void 0 === e || e.scrollToTop()
     }
   }, [w, F, B, R]);
-  let U = a.useCallback(async e => {
+  let L = a.useCallback(async e => {
       "REVIEW_APPLICATION" !== R && S !== e && (m.Z.setSelectedSortOrder(w, e), await W(e, R))
     }, [R, S, w, W]),
     z = a.useCallback(async e => {
       R !== e && (E(e), (0, l.Q2)({
         guildId: w,
-        source: N.jXE.GUILD_MEMBER_VERIFICATION_APPLICATION_REVIEW,
+        source: y.jXE.GUILD_MEMBER_VERIFICATION_APPLICATION_REVIEW,
         tab: e
       }), m.Z.setSelectedGuildJoinRequest(w, null), "REVIEW_APPLICATION" !== e && (m.Z.setSelectedApplicationTab(w, e), await W(S, e)))
     }, [R, S, w, W]),
@@ -151,7 +151,7 @@ function w(e) {
       let t = null === (e = P.current) || void 0 === e ? void 0 : e.getScrollerState();
       null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 200 && await W(S, R)
     }, [R, S, W]),
-    G = null !== (n = null == q ? void 0 : q.hasFeature(N.oNc.CLAN)) && void 0 !== n && n;
+    G = null !== (n = null == q ? void 0 : q.hasFeature(y.oNc.CLAN)) && void 0 !== n && n;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(v.Z, {
       currentTab: R,
@@ -161,11 +161,11 @@ function w(e) {
       canActionJoinRequests: D,
       isSidebarOpen: O
     }), (0, r.jsx)("div", {
-      className: I.content,
+      className: T.content,
       children: "REVIEW_APPLICATION" === R ? null != q ? (0, r.jsx)(o.zJl, {
         children: (0, r.jsxs)("div", {
-          className: I.scrollerContent,
-          children: [(0, r.jsx)(T, {
+          className: T.scrollerContent,
+          children: [(0, r.jsx)(I, {
             guild: q
           }), (0, r.jsx)(s.Z, {
             guild: q,
@@ -176,22 +176,22 @@ function w(e) {
         children: [D && A && (0, r.jsx)(o.Wn, {
           messageType: o.QYI.WARNING,
           textVariant: "text-sm/medium",
-          className: I.headerWarning,
-          children: y.NW.format(y.t.o3mLzM, {
+          className: T.headerWarning,
+          children: N.NW.format(N.t.h10yUl, {
             count: null == q ? void 0 : q.maxMembers
           })
         }), (0, r.jsx)("div", {
-          className: I.listControls,
+          className: T.listControls,
           children: (0, r.jsx)(g.Z, {
-            className: I.sortSelect,
+            className: T.sortSelect,
             sortOrder: S,
-            onSortChange: U
+            onSortChange: L
           })
         }), (0, r.jsx)(o.Text, {
-          className: I.description,
+          className: T.description,
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: y.NW.string(y.t.OCorGR)
+          children: N.NW.string(N.t.OCorGR)
         }), (0, r.jsx)(C.Z, {
           applicationStatus: R,
           guildJoinRequests: F,

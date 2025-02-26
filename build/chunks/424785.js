@@ -1,6 +1,6 @@
 /** Chunk was on 86029 **/
 n.d(t, {
-  Z: () => Y
+  Z: () => q
 }), n(47120), n(411104);
 var r = n(200651);
 n(192379);
@@ -33,15 +33,15 @@ var i = n(120356),
   w = n(306680),
   E = n(9156),
   T = n(979651),
-  D = n(934415),
-  A = n(98597),
+  A = n(934415),
+  D = n(98597),
   R = n(648501),
   L = n(473403),
   k = n(207055),
   M = n(981631),
   G = n(647086),
-  B = n(388032),
-  U = n(436804),
+  U = n(388032),
+  B = n(436804),
   W = n(362208);
 
 function V(e, t, n) {
@@ -78,7 +78,7 @@ function H(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class z extends A.ZP {
+class z extends D.ZP {
   getVoiceStatesCount() {
     var e;
     let {
@@ -90,7 +90,7 @@ class z extends A.ZP {
     let {
       channel: e
     } = this.props;
-    return (0, D.rY)(e, T.Z, N.Z)
+    return (0, A.rY)(e, T.Z, N.Z)
   }
   getModeClass() {
     let {
@@ -98,7 +98,7 @@ class z extends A.ZP {
       sortingPosition: t,
       isUserOver: n
     } = this.props;
-    return n ? U.containerUserOver : null != t ? e > t ? U.containerDragAfter : U.containerDragBefore : U.containerDefault
+    return n ? B.containerUserOver : null != t ? e > t ? B.containerDragAfter : B.containerDragBefore : B.containerDefault
   }
   renderVoiceUsers() {
     let {
@@ -143,7 +143,7 @@ class z extends A.ZP {
       shouldShowGuildVerificationPopout: j
     } = this.state, _ = this.getVoiceStatesCount(), C = (0, r.jsxs)("li", {
       className: l()(this.getModeClass(), {
-        [U.disabled]: this.isDisabled()
+        [B.disabled]: this.isDisabled()
       }),
       "data-dnd-name": e.name,
       children: [(0, r.jsx)(a.yRy, {
@@ -174,7 +174,7 @@ class z extends A.ZP {
               return i
             }(o, ["onClick", "onContextMenu"]);
             return (0, r.jsxs)(L.Z, H(F({
-              className: U.iconVisibility,
+              className: B.iconVisibility,
               iconClassName: l()({
                 [W.iconLive]: null != f
               }),
@@ -266,7 +266,7 @@ class z extends A.ZP {
         forceShowButtons: n
       } = this.props;
       if (!t) return (0, r.jsx)(a.ua7, {
-        text: B.NW.string(B.t.ZXxLQk),
+        text: U.NW.string(U.t.ZXxLQk),
         children: t => {
           let {
             onMouseEnter: i,
@@ -275,11 +275,11 @@ class z extends A.ZP {
             onBlur: u
           } = t;
           return (0, r.jsx)(a.P3F, {
-            className: l()(U.iconItem, n ? U.alwaysShown : null),
+            className: l()(B.iconItem, n ? B.alwaysShown : null),
             onClick: () => {
               s.Z.updateChatOpen(e.id, !0), this.handleClickChat()
             },
-            "aria-label": B.NW.string(B.t.ZXxLQk),
+            "aria-label": U.NW.string(U.t.ZXxLQk),
             onMouseEnter: i,
             onMouseLeave: o,
             onFocus: c,
@@ -287,7 +287,7 @@ class z extends A.ZP {
             children: (0, r.jsx)(a.kBi, {
               size: "xs",
               color: "currentColor",
-              className: U.actionIcon
+              className: B.actionIcon
             })
           })
         }
@@ -296,7 +296,7 @@ class z extends A.ZP {
       let {
         connected: e
       } = this.props;
-      return this.isFull() && !e ? B.NW.string(B.t.rZfiNj) : null
+      return this.isFull() && !e ? U.NW.string(U.t.rZfiNj) : null
     }), V(this, "renderSubtitle", () => {
       var e;
       let t = null === (e = this.props.stageInstance) || void 0 === e ? void 0 : e.topic;
@@ -306,9 +306,9 @@ class z extends A.ZP {
     })
   }
 }
-let q = (0, u.B)((0, d.Q)(z));
+let Y = (0, u.B)((0, d.Q)(z));
 
-function Y(e) {
+function q(e) {
   let {
     guild: t,
     channel: n,
@@ -341,8 +341,8 @@ function Y(e) {
     isSubscriptionGated: b,
     needSubscriptionToAccess: y,
     enableConnectedUserLimit: N || n.userLimit > 0 && n.userLimit < M.xGv
-  }), D = e.connected && null == T;
-  return (0, r.jsx)(q, H(F({
+  }), A = e.connected && null == T;
+  return (0, r.jsx)(Y, H(F({
     categoryCollapsed: p,
     connectAction: h,
     numAudience: g,
@@ -351,7 +351,7 @@ function Y(e) {
     needSubscriptionToAccess: y
   }, c, d, e), {
     isFavoriteSuggestion: l && !v,
-    forceShowButtons: D,
+    forceShowButtons: A,
     channelInfo: T,
     resolvedUnreadSetting: u
   }))

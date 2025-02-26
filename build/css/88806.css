@@ -1,6 +1,6 @@
 /**
   Module ID: 88806
-  Original File Name: bcac647f2bc3dafc
+  Original File Name: b57ecb74b9af3ad9
 **/
 .headerImage__96095 {
     width: 100%;
@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: hsl(var(--black-500-hsl)/.85);
+    background-color: var(--opacity-black-84);
     cursor: pointer
 }
 
@@ -45,4 +45,4 @@
     height: 146px
 }
 
-/*# sourceMappingURL=bcac647f2bc3dafc.css.map*/
+/*# sourceMappingURL=b57ecb74b9af3ad9.css.map*/

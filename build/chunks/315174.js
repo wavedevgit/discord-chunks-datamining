@@ -156,16 +156,16 @@ let _ = i.memo(function(e) {
     children: w,
     headerClassName: E,
     communityInfoVisible: T,
-    hasSubheader: D
-  } = e, A = N.hasFeature(g.oNc.ANIMATED_BANNER), R = (0, d.Z)(N), L = !R && N.hasCommunityInfoSubheader(), k = !R && T, M = (0, h.xR)(I) && A && !x, [G, B] = i.useState(!1), U = i.useRef(), W = i.useRef(null), V = i.useRef(), F = p.QK.getSetting();
+    hasSubheader: A
+  } = e, D = N.hasFeature(g.oNc.ANIMATED_BANNER), R = (0, d.Z)(N), L = !R && N.hasCommunityInfoSubheader(), k = !R && T, M = (0, h.xR)(I) && D && !x, [G, U] = i.useState(!1), B = i.useRef(), W = i.useRef(null), V = i.useRef(), F = p.QK.getSetting();
   i.useEffect(() => {
-    if (M && t && !U.current && F) return B(!0), V.current = setTimeout(() => {
-      B(!1)
+    if (M && t && !B.current && F) return U(!0), V.current = setTimeout(() => {
+      U(!1)
     }, 5e3), () => {
       clearTimeout(V.current)
     }
   }, [M, t, F]), i.useEffect(() => {
-    U.current = t
+    B.current = t
   }, [t]);
   let H = () => {
       let {
@@ -189,7 +189,7 @@ let _ = i.memo(function(e) {
             [y.hasBanner]: H(),
             [y.bannerVisible]: t,
             [e]: !z && t,
-            [y.communityInfoVisible]: k || D && L
+            [y.communityInfoVisible]: k || A && L
           }),
           onMouseDown: C,
           onContextMenu: _,
@@ -229,7 +229,7 @@ let _ = i.memo(function(e) {
               guild: N,
               controller: n,
               hasBanner: null != I,
-              hasSubheader: null != D && D
+              hasSubheader: null != A && A
             })]
           }), null != I ? (0, r.jsx)(v, {
             guild: N,
@@ -240,9 +240,9 @@ let _ = i.memo(function(e) {
         }), M && H() ? (0, r.jsx)("div", {
           className: y.animatedBannerHoverLayer,
           onMouseEnter: () => {
-            B(!0), clearTimeout(V.current)
+            U(!0), clearTimeout(V.current)
           },
-          onMouseLeave: () => B(!1),
+          onMouseLeave: () => U(!1),
           style: {
             height: Z
           }

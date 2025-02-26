@@ -33,22 +33,22 @@ var i = n(120356),
   w = n(695346),
   E = n(447564),
   T = n(592125),
-  D = n(430824),
-  A = n(607744),
+  A = n(430824),
+  D = n(607744),
   R = n(496675),
   L = n(306680),
   k = n(9156),
   M = n(979651),
   G = n(934415),
-  B = n(63063),
-  U = n(98597),
+  U = n(63063),
+  B = n(98597),
   W = n(648501),
   V = n(473403),
   F = n(830993),
   H = n(653577),
   z = n(207055),
-  q = n(981631),
-  Y = n(647086),
+  Y = n(981631),
+  q = n(647086),
   Q = n(388032),
   K = n(436804);
 
@@ -86,7 +86,7 @@ function $(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class ee extends U.ZP {
+class ee extends B.ZP {
   componentWillUnmount() {
     this.activitiesHideTimeout.stop()
   }
@@ -101,7 +101,7 @@ class ee extends U.ZP {
     let {
       channel: e
     } = this.props;
-    return (0, G.rY)(e, M.Z, D.Z)
+    return (0, G.rY)(e, M.Z, A.Z)
   }
   getModeClass() {
     let {
@@ -142,7 +142,7 @@ class ee extends U.ZP {
       voiceStates: t,
       withGuildIcon: i,
       tabIndex: l,
-      location: q.Sbl.GUILD_CHANNEL_LIST
+      location: Y.Sbl.GUILD_CHANNEL_LIST
     })
   }
   renderChannelInfo() {
@@ -171,7 +171,7 @@ class ee extends U.ZP {
         return (0, r.jsx)(s.P3F, {
           className: l()(K.iconItem, K.alwaysShown),
           onClick: () => {
-            (0, N.X)("VoiceChannel") ? (0, E.k)(e, "VoiceChannel") : window.open(B.Z.getArticleURL(q.BhN.HD_STREAMING_POTION), "_blank")
+            (0, N.X)("VoiceChannel") ? (0, E.k)(e, "VoiceChannel") : window.open(U.Z.getArticleURL(Y.BhN.HD_STREAMING_POTION), "_blank")
           },
           "aria-label": Q.NW.string(Q.t.gpF6QU),
           onMouseEnter: n,
@@ -329,7 +329,7 @@ class ee extends U.ZP {
     }), J(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, i = D.Z.getGuild(t.getGuildId());
+      } = this.props, i = A.Z.getGuild(t.getGuildId());
       null != i && (0, u.jW)(e, async () => {
         let {
           default: e
@@ -457,15 +457,15 @@ function en(e) {
   } = e, u = (0, o.cj)([L.ZP], () => ({
     unread: L.ZP.hasUnread(n.id),
     mentionCount: L.ZP.getMentionCount(n.id)
-  })), d = (0, o.e7)([k.ZP], () => k.ZP.resolveUnreadSetting(n)), p = (0, o.cj)([T.Z, A.Z, R.Z], () => {
+  })), d = (0, o.e7)([k.ZP], () => k.ZP.resolveUnreadSetting(n)), p = (0, o.cj)([T.Z, D.Z, R.Z], () => {
     let e = T.Z.getChannel(n.parent_id),
-      r = A.Z.getCheck(n.guild_id);
+      r = D.Z.getCheck(n.guild_id);
     return {
-      canManageChannel: R.Z.can(q.Plq.MANAGE_CHANNELS, n),
-      canReorderChannel: !0 !== i && (t.id === Y._ || (null != e ? R.Z.can(q.Plq.MANAGE_CHANNELS, e) : R.Z.can(q.Plq.MANAGE_CHANNELS, t))),
-      canMoveMembers: R.Z.can(q.Plq.MOVE_MEMBERS, n),
-      locked: !R.Z.can(q.Plq.CONNECT, n),
-      bypassLimit: R.Z.can(q.Plq.MOVE_MEMBERS, n),
+      canManageChannel: R.Z.can(Y.Plq.MANAGE_CHANNELS, n),
+      canReorderChannel: !0 !== i && (t.id === q._ || (null != e ? R.Z.can(Y.Plq.MANAGE_CHANNELS, e) : R.Z.can(Y.Plq.MANAGE_CHANNELS, t))),
+      canMoveMembers: R.Z.can(Y.Plq.MOVE_MEMBERS, n),
+      locked: !R.Z.can(Y.Plq.CONNECT, n),
+      bypassLimit: R.Z.can(Y.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
   }), f = (0, o.e7)([M.Z], () => M.Z.hasVideo(n.id)), g = (0, h.ZP)(n), m = (0, b.ZP)(n), y = (0, x.qY)(n.id), {
@@ -484,7 +484,7 @@ function en(e) {
   return (0, r.jsx)(et, $(X({
     channelName: m,
     embeddedApps: g,
-    embeddedActivityType: q.IIU.PLAYING,
+    embeddedActivityType: Y.IIU.PLAYING,
     video: f,
     hasActiveEvent: null != y,
     isSubscriptionGated: v,

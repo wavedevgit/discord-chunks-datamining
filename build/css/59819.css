@@ -1,6 +1,6 @@
 /**
   Module ID: 59819
-  Original File Name: 5b48808ff5bd8039
+  Original File Name: 3bd6d1f9a22b0403
 **/
 .container__6b668 {
     display: flex;
@@ -505,7 +505,7 @@
     left: -26px;
     right: -26px;
     bottom: -16px;
-    background-color: hsl(var(--black-500-hsl)/.1)
+    background-color: var(--opacity-black-8)
 }
 
 .checkboxContainerMuted_db81c6 {
@@ -672,4 +672,4 @@
     padding-bottom: var(--spacing-12)
 }
 
-/*# sourceMappingURL=5b48808ff5bd8039.css.map*/
+/*# sourceMappingURL=3bd6d1f9a22b0403.css.map*/

@@ -1,6 +1,6 @@
 /** Chunk was on 97811 **/
 n.d(t, {
-  Z: () => N
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -61,16 +61,16 @@ function C(e) {
     })]
   })
 }
-let N = function(e) {
+let y = function(e) {
   var t;
   let {
     applicationStatus: n,
     guildJoinRequests: a,
     guildId: u,
     onScroll: m,
-    listRef: N,
-    atMaxMemberCapacity: y
-  } = e, I = (0, l.e7)([d.Z], () => d.Z.getGuild(u), [u]), T = (0, l.e7)([f.Z], () => f.Z.isFetching()), w = T ? [a.length + 25] : [a.length], O = (0, h.L)({
+    listRef: y,
+    atMaxMemberCapacity: N
+  } = e, T = (0, l.e7)([d.Z], () => d.Z.getGuild(u), [u]), I = (0, l.e7)([f.Z], () => f.Z.isFetching()), w = I ? [a.length + 25] : [a.length], O = (0, h.L)({
     guildId: u
   }), P = null !== (t = (0, b.A)({
     guildId: u
@@ -83,14 +83,14 @@ let N = function(e) {
         [g.selected]: O === o,
         [g.siblingSelected]: O === a[t - 1]
       }),
-      guild: I,
+      guild: T,
       guildJoinRequest: o,
       onClick: () => p.Z.setSelectedGuildJoinRequest(u, o),
       applicationStatus: n,
-      atMaxMemberCapacity: y
+      atMaxMemberCapacity: N
     }, "".concat(o.userId, "-").concat(o.applicationStatus, "-").concat(t))
   };
-  return T || 0 !== a.length ? (0, r.jsxs)(r.Fragment, {
+  return I || 0 !== a.length ? (0, r.jsxs)(r.Fragment, {
     children: [0 !== P && n === x.wB.SUBMITTED && (0, r.jsx)(s.Text, {
       className: g.title,
       variant: "text-xs/semibold",
@@ -158,7 +158,7 @@ let N = function(e) {
             innerAriaLabel: _.NW.string(_.t["9Oq93t"]),
             ref: e => {
               var n;
-              N.current = e, t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null
+              y.current = e, t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null
             },
             paddingTop: 0,
             paddingBottom: 16,

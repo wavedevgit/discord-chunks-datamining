@@ -1,6 +1,6 @@
 /**
   Module ID: 34761
-  Original File Name: 3d184c95a42132e6
+  Original File Name: 0ad07a797f1ec9d0
 **/
 .questionContainer__0a749 {
     margin-top: 24px
@@ -745,7 +745,7 @@ div:has(>div>.container_d6cfa8) {
 }
 
 .theme-light .container_d6cfa8 {
-    background-color: hsl(var(--white-500-hsl)/.8)
+    background-color: var(--opacity-white-80)
 }
 
-/*# sourceMappingURL=3d184c95a42132e6.css.map*/
+/*# sourceMappingURL=0ad07a797f1ec9d0.css.map*/

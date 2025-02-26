@@ -36,6 +36,6 @@ function u(e) {
     color: o.zxk.Colors.BRAND,
     submitting: n,
     onClick: f,
-    children: d.NW.string(d.t.aqiUAA)
+    children: d.NW.string(d.t.x2UVBA)
   })
 }

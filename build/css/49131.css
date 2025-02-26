@@ -1,6 +1,6 @@
 /**
   Module ID: 49131
-  Original File Name: 175b4db32a04b14e
+  Original File Name: 8b73088c5961a587
 **/
 .container_c6ad88 {
     background-color: var(--background-primary);
@@ -1277,7 +1277,7 @@
 
 .uploadFileInputContainer__8bb30:hover>.uploadThumbnailContainer__8bb30>.changeThumbnailLabelContainer__8bb30 {
     visibility: visible;
-    background-color: hsl(var(--black-500-hsl)/.8)
+    background-color: var(--opacity-black-80)
 }
 
 .editIcon__8bb30 {
@@ -1861,7 +1861,7 @@
 
 .obscuredTag__9a337 {
     z-index: 1;
-    color: hsl(var(--black-500-hsl)/.6)
+    color: var(--opacity-black-60)
 }
 
 .thumbnailOverride__9a337 {
@@ -2153,7 +2153,7 @@
 }
 
 .theme-light .textContentFooter__9a337 {
-    background: linear-gradient(0deg,hsl(var(--white-500-hsl)/1),hsl(var(--white-500-hsl)/.97) 36px,hsl(var(--white-500-hsl)/.4))
+    background: linear-gradient(0deg,hsl(var(--white-500-hsl)/1),var(--opacity-white-96) 36px,var(--opacity-white-40))
 }
 
 .theme-light .textContentFooter__9a337.noTags__9a337 {
@@ -2222,4 +2222,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=175b4db32a04b14e.css.map*/
+/*# sourceMappingURL=8b73088c5961a587.css.map*/

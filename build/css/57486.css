@@ -1,6 +1,6 @@
 /**
   Module ID: 57486
-  Original File Name: 2983ebc518408348
+  Original File Name: e6163247952a452d
 **/
 .noScroll_afb566 {
     overflow-y: visible!important
@@ -90,7 +90,7 @@
 
 .stepIndex_afb566 {
     border-radius: 50%;
-    background-color: hsl(var(--white-500-hsl)/.15);
+    background-color: var(--opacity-white-16);
     width: 24px;
     height: 24px;
     margin-right: 8px;
@@ -258,4 +258,4 @@
     margin-left: 16px
 }
 
-/*# sourceMappingURL=2983ebc518408348.css.map*/
+/*# sourceMappingURL=e6163247952a452d.css.map*/

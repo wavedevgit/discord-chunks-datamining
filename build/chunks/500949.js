@@ -2,9 +2,9 @@
 n.d(t, {
   $R: () => X,
   A0: () => et,
-  GU: () => J,
+  GU: () => K,
   H8: () => q,
-  HI: () => K,
+  HI: () => J,
   HW: () => z,
   Ib: () => es,
   KB: () => eu,
@@ -47,8 +47,8 @@ var r, a, i = n(192379),
   O = n(53796),
   E = n(723757),
   S = n(375924),
-  k = n(596136),
-  I = n(341901),
+  I = n(596136),
+  k = n(341901),
   w = n(856308),
   Z = n(665352),
   P = n(394900),
@@ -113,8 +113,8 @@ let z = {
     ProPhoto: O.Z,
     REC_2020: E.Z,
     REC_2100_HLG: S.Z,
-    REC_2100_PQ: k.Z,
-    XYZ_D50: I.Z,
+    REC_2100_PQ: I.Z,
+    XYZ_D50: k.Z,
     XYZ_D65: w.Z
   },
   G = Object.fromEntries(Object.keys(z).map(e => [e, e]));
@@ -158,13 +158,13 @@ function Y(e, t, n, r, a) {
   }
 }
 
-function J(e) {
+function K(e) {
   return F(M({}, e), {
     highlight: !e.highlight
   })
 }
 
-function K(e) {
+function J(e) {
   return (0, P.Z)((0, R.Z)(e, l.Z), {
     format: "hex"
   })

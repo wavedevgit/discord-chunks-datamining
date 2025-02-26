@@ -1,6 +1,6 @@
 /**
   Module ID: 79005
-  Original File Name: e8281b488078ae3d
+  Original File Name: 60052f0fac9daf2a
 **/
 @use postcss-pxtorem;
 
@@ -905,15 +905,15 @@
 }
 
 .background-opacity-low .edited_c19a55 {
-    color: hsl(var(--white-500-hsl)/.6)
+    color: var(--opacity-white-60)
 }
 
 .background-opacity-medium .edited_c19a55 {
-    color: hsl(var(--white-500-hsl)/.5)
+    color: var(--opacity-white-48)
 }
 
 .background-opacity-high .edited_c19a55 {
-    color: hsl(var(--white-500-hsl)/.4)
+    color: var(--opacity-white-40)
 }
 
 .badgesContainer_c19a55 {
@@ -1068,4 +1068,4 @@
     margin: 36px 24px
 }
 
-/*# sourceMappingURL=e8281b488078ae3d.css.map*/
+/*# sourceMappingURL=60052f0fac9daf2a.css.map*/

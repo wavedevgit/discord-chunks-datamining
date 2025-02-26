@@ -72,7 +72,7 @@ function f(e) {
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "showUnread"]);
   let j = (0, o.JA)(n),
-    _ = null !== (t = (0, a.q)(m)) && void 0 !== t ? t : "";
+    _ = null !== (t = (0, a.qg)(m)) && void 0 !== t ? t : "";
   return (0, r.jsx)("li", {
     children: (0, r.jsxs)(s.kL8, h(p({}, O), {
       buttonProps: h(p({}, j), {

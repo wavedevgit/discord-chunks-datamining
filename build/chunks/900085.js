@@ -1,4 +1,4 @@
-/** Chunk was on 65936 **/
+/** Chunk was on 42239 **/
 n.d(t, {
   Z: () => X
 }), n(411104), n(47120), n(301563), n(733860);
@@ -83,7 +83,7 @@ let V = () => (0, i.jsxs)("div", {
     })
   })]
 });
-class G extends(r = l.Component) {
+class F extends(r = l.Component) {
   render() {
     let e = b.Z.getGuild(this.props.channel.guild_id);
     return (0, i.jsx)(x.$W, w(U({}, this.props), {
@@ -94,10 +94,10 @@ class G extends(r = l.Component) {
     }))
   }
 }
-Z(G, "defaultProps", {
+Z(F, "defaultProps", {
   unread: !1
 });
-let F = c.ZP.connectStores([T.ZP, O.Z], e => {
+let G = c.ZP.connectStores([T.ZP, O.Z], e => {
     let {
       channel: t
     } = e;
@@ -107,7 +107,7 @@ let F = c.ZP.connectStores([T.ZP, O.Z], e => {
       isMentionLowImportance: T.ZP.getIsMentionLowImportance(t.id),
       category: O.Z.getChannel(t.parent_id)
     }
-  })(G),
+  })(F),
   W = c.ZP.connectStores([S.ZP], e => {
     let {
       channel: t
@@ -116,7 +116,7 @@ let F = c.ZP.connectStores([T.ZP, O.Z], e => {
     return {
       voiceStates: S.ZP.getVoiceStates(t.guild_id)[t.id]
     }
-  })(G),
+  })(F),
   B = c.ZP.connectStores([I.default], e => {
     let {
       guild: t
@@ -467,7 +467,7 @@ class K extends l.PureComponent {
             children: n.record.text
           }, "".concat(n.type, "-").concat(n.record.id));
         case p.h8.TEXT_CHANNEL:
-          return (0, i.jsx)(F, {
+          return (0, i.jsx)(G, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),

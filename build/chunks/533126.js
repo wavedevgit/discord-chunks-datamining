@@ -16,7 +16,7 @@ function i(e) {
 }
 n.d(t, {
   U2: () => _,
-  wz: () => f
+  wz: () => m
 });
 var o = "copy",
   a = "convert";
@@ -116,7 +116,7 @@ var g = {
     }),
     signal: u(o)
   },
-  m = {
+  f = {
     type: c(o),
     id: c(o),
     rawId: c(a),
@@ -130,10 +130,10 @@ var g = {
     clientExtensionResults: s(p, e => e.getClientExtensionResults())
   };
 
-function f(e) {
+function m(e) {
   return l(r, g, e)
 }
 async function _(e) {
   let t = await navigator.credentials.get(e);
-  return t.toJSON = () => l(i, m, t), t
+  return t.toJSON = () => l(i, f, t), t
 }

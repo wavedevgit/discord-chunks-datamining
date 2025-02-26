@@ -62,32 +62,32 @@ let q = function(e) {
   var t, n, b;
   let {
     clan: q,
-    prioritizedGameIds: w,
-    position: k,
-    transitionState: F,
-    onClose: N
-  } = e, S = (0, d.Dt)(), O = (0, c.e7)([u.Z], () => u.Z.get(q.id)), [R, P] = o.useState(null !== (n = null == O ? void 0 : O.formFields) && void 0 !== n ? n : []), [D, M] = o.useState(!1), [Z, W] = o.useState(!1), [z, E] = o.useState(!1), Y = (0, c.e7)([x.default], () => x.default.getCurrentUser()), A = (0, c.e7)([f.ZP], () => f.ZP.isMember(q.id, null == Y ? void 0 : Y.id), [q, Y]), V = (0, c.e7)([_.Z], () => {
+    prioritizedGameIds: k,
+    position: w,
+    transitionState: N,
+    onClose: F
+  } = e, S = (0, d.Dt)(), O = (0, c.e7)([u.Z], () => u.Z.get(q.id)), [R, P] = o.useState(null !== (n = null == O ? void 0 : O.formFields) && void 0 !== n ? n : []), [D, M] = o.useState(!1), [Z, W] = o.useState(!1), [z, E] = o.useState(!1), Y = (0, c.e7)([x.default], () => x.default.getCurrentUser()), V = (0, c.e7)([f.ZP], () => f.ZP.isMember(q.id, null == Y ? void 0 : Y.id), [q, Y]), A = (0, c.e7)([_.Z], () => {
     var e;
     return (null === (e = _.Z.getRequest(q.id)) || void 0 === e ? void 0 : e.applicationStatus) === m.wB.SUBMITTED
-  }), [X, L] = o.useState(""), U = o.useRef(() => (0, C._v)({
+  }), [L, U] = o.useState(""), X = o.useRef(() => (0, C._v)({
     guildId: q.id,
-    position: k
+    position: w
   }));
   o.useEffect(() => (l.ZP.fetchVerificationForm(q.id), () => {
-    U.current()
-  }), [q.id, U]), o.useEffect(() => {
+    X.current()
+  }), [q.id, X]), o.useEffect(() => {
     null != O && P(O.formFields)
   }, [O]);
   let Q = o.useCallback(e => {
-      D || (M(!0), U.current = () => !1, (0, C.r)({
+      D || (M(!0), X.current = () => !1, (0, C.r)({
         guildId: q.id,
-        position: k
+        position: w
       })), P(e)
-    }, [P, D, M, q.id, k]),
+    }, [P, D, M, q.id, w]),
     G = o.useCallback(async e => {
       await l.ZP.submitVerificationForm(q.id, e, l.q0)
     }, [q.id]),
-    J = o.useCallback(async () => {
+    H = o.useCallback(async () => {
       try {
         var e, t;
         W(!0);
@@ -122,15 +122,15 @@ let q = function(e) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e));
         let i = () => {
-            E(!0), setTimeout(N, 1300), W(!1), setTimeout(l.xo, 2300)
+            E(!0), setTimeout(F, 1300), W(!1), setTimeout(l.xo, 2300)
           },
           o = Date.now();
         o - n > 1e3 ? i() : setTimeout(i, 1e3 - (o - n))
       } catch (e) {
-        L(null == e ? void 0 : e.message), W(!1)
+        U(null == e ? void 0 : e.message), W(!1)
       }
-    }, [G, N, O, R]),
-    H = R.some(e => !(0, p.OA)(e)),
+    }, [G, F, O, R]),
+    J = R.some(e => !(0, p.OA)(e)),
     K = (null !== (b = null == O ? void 0 : null === (t = O.guild) || void 0 === t ? void 0 : t.approximate_member_count) && void 0 !== b ? b : 0) >= g.Du,
     $ = (0, c.e7)([s.Z], () => s.Z.useReducedMotion),
     ee = (0, r.q_F)({
@@ -162,7 +162,7 @@ let q = function(e) {
     }),
     en = o.useRef(null);
   return (0, i.jsxs)(r.Y0X, {
-    transitionState: F,
+    transitionState: N,
     "aria-labelledby": S,
     size: r.CgR.DYNAMIC,
     className: j.container,
@@ -191,19 +191,19 @@ let q = function(e) {
         children: [(0, i.jsx)(h.x, {
           clan: q,
           className: j.profileCard,
-          prioritizedGameIds: w,
+          prioritizedGameIds: k,
           expanded: !0,
-          isMember: A,
-          hasPendingJoinRequest: V,
+          isMember: V,
+          hasPendingJoinRequest: A,
           atMaxMemberCapacity: K
         }), (0, i.jsxs)("div", {
           className: j.applyButtonContainer,
           children: [(0, i.jsxs)(r.zxk, {
             type: "submit",
-            onClick: z ? void 0 : J,
+            onClick: z ? void 0 : H,
             submitting: Z,
             fullWidth: !0,
-            disabled: H || null == O,
+            disabled: J || null == O,
             innerClassName: j.applyButtonInner,
             children: [K && (0, i.jsx)(r.aNP, {
               size: "custom",
@@ -219,10 +219,10 @@ let q = function(e) {
                 "aria-hidden": !0
               })
             }))]
-          }), "" !== X && (0, i.jsx)(r.Text, {
+          }), "" !== L && (0, i.jsx)(r.Text, {
             variant: "text-sm/normal",
             color: "text-danger",
-            children: X
+            children: L
           })]
         }), K && (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(r.Text, {
@@ -237,7 +237,7 @@ let q = function(e) {
           variant: "text-xs/medium",
           color: "text-muted",
           className: j.noticeText,
-          children: v.NW.string(v.t.FwXzw8)
+          children: v.NW.string(v.t.VjgH0d)
         }), (0, i.jsx)(r.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
@@ -248,7 +248,7 @@ let q = function(e) {
     }), (0, i.jsx)("div", {
       className: j.closeButtonContainer,
       children: (0, i.jsx)(r.zxk, {
-        onClick: N,
+        onClick: F,
         look: r.iLD.OUTLINED,
         color: r.Ttl.PRIMARY,
         children: v.NW.string(v.t.cpT0Cg)

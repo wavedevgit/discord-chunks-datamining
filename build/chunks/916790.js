@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => k
+  Z: () => I
 }), n(47120), n(566702);
 var r = n(200651),
   a = n(192379),
@@ -185,7 +185,7 @@ let S = [{
   }
 }];
 
-function k() {
+function I() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     i = function(e) {
@@ -236,7 +236,7 @@ function k() {
     C.current = null
   }, []);
   let O = t.trim().length > 0,
-    k = a.useMemo(() => O ? x : p ? c : s, [s, x, O, p, c]);
+    I = a.useMemo(() => O ? x : p ? c : s, [s, x, O, p, c]);
   return (0, r.jsxs)("div", {
     ref: e,
     className: l()(y.panel, j.panel),
@@ -258,7 +258,7 @@ function k() {
       })]
     }), (0, r.jsx)(g.Z, {
       columns: S,
-      data: k,
+      data: I,
       selectedRowKey: null == _ ? void 0 : _.id.toString(),
       onClickRow: e => v(e.actionLog)
     }), null != _ && (0, r.jsx)(E, {

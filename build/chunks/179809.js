@@ -40,27 +40,27 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       defaultFolderName: w,
       useCircleMask: E = !1,
       draggable: T = !1,
-      sorting: D = !1,
-      onDragStart: A,
+      sorting: A = !1,
+      onDragStart: D,
       onDragEnd: R,
       onExpandCollapse: L,
       onContextMenu: k,
       renderChildNode: M,
       folderIconContent: G,
-      folderIconContentClassName: B
+      folderIconContentClassName: U
     } = e, {
-      id: U,
+      id: B,
       name: W,
       children: V
-    } = t, F = (0, h.Q3)("FolderItem"), [H, z] = i.useState(!1), [q, Y] = i.useState(!1), Q = H || q;
+    } = t, F = (0, h.Q3)("FolderItem"), [H, z] = i.useState(!1), [Y, q] = i.useState(!1), Q = H || Y;
     i.useEffect(() => {
-      D && z(!1)
-    }, [D]);
+      A && z(!1)
+    }, [A]);
     let [{
       dragging: K
     }, J] = (0, a.c)({
       type: m.eD.FOLDER,
-      item: () => (null == A || A(), {
+      item: () => (null == D || D(), {
         type: m.eD.FOLDER,
         nodeId: t.id
       }),
@@ -71,10 +71,10 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         dragging: e.isDragging()
       })
     }), X = i.useCallback(e => {
-      Y(e)
+      q(e)
     }, []), $ = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && L()
-    }, [L, s]), ee = null != W && "" !== W ? W : null != w && "" !== w ? w : C.NW.string(C.t.xV9hVl), et = (0, c.Ie)("".concat(U)), en = "folder-items-".concat(U), er = function(e) {
+    }, [L, s]), ee = null != W && "" !== W ? W : null != w && "" !== w ? w : C.NW.string(C.t.xV9hVl), et = (0, c.Ie)("".concat(B)), en = "folder-items-".concat(B), er = function(e) {
       let t = (0, d.dQu)(d.TVs.modules.guildbar.AVATAR_SIZE),
         n = (0, h.Q3)("FolderItem.useHeight"),
         {
@@ -96,7 +96,7 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       config: {
         duration: S
       }
-    }), el = i.useCallback(e => null == n ? void 0 : n(U, e), [n, U]), eo = (0, r.jsxs)(j.H, {
+    }), el = i.useCallback(e => null == n ? void 0 : n(B, e), [n, B]), eo = (0, r.jsxs)(j.H, {
       children: [(0, r.jsx)(b.Z, {
         disabled: K || s,
         hovered: H,
@@ -105,20 +105,20 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         className: P.pill
       }), (0, r.jsx)(_.Z, {
         text: ee,
-        disabled: D,
+        disabled: A,
         selected: l,
         disableWrapper: !0,
         children: (0, r.jsx)("div", {
           ref: T ? J : void 0,
           className: o()(x.folderIcon, {
-            [P.wobble]: !K && q && !s
+            [P.wobble]: !K && Y && !s
           }),
           "data-dnd-name": ee,
           children: K ? (0, r.jsx)(O.Z, {}) : (0, r.jsx)(y.Z, {
             folderNode: t,
             expanded: s,
             forceCircular: E,
-            sorting: D,
+            sorting: A,
             mediaState: u,
             mentionCount: g,
             isMentionLowImportance: I,
@@ -129,7 +129,7 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
             onHoverChange: z,
             onKeyDown: $,
             treeItemProps: et,
-            folderIconContentClassName: B,
+            folderIconContentClassName: U,
             folderIconContent: G
           })
         })
@@ -142,7 +142,7 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
     return (0, r.jsxs)("div", {
       ref: el,
       className: o()(x.wrapper, s && x.isExpanded),
-      "data-drop-hovering": q,
+      "data-drop-hovering": Y,
       children: [!K && s && (0, r.jsx)("span", {
         className: o()(x.expandedFolderBackground, {
           [x.collapsed]: !s,

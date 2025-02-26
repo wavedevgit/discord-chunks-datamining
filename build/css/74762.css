@@ -1,6 +1,6 @@
 /**
   Module ID: 74762
-  Original File Name: 36a9c1a63e4314c4
+  Original File Name: 2790ed5556004dd3
 **/
 .header__7e090 {
     background-image: url(/assets/cb4131669938b6ad.svg);
@@ -67,7 +67,7 @@
 }
 
 .shine__884d1 {
-    color: hsl(var(--white-500-hsl)/.5)
+    color: var(--opacity-white-48)
 }
 
 .upsellFooter__5e07c {
@@ -415,4 +415,4 @@
     padding-top: 16px
 }
 
-/*# sourceMappingURL=36a9c1a63e4314c4.css.map*/
+/*# sourceMappingURL=2790ed5556004dd3.css.map*/

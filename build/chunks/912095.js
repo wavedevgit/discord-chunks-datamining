@@ -93,7 +93,7 @@ class E extends s.Z {
         o = t.capture.width / i;
       n = o < 1 ? void 0 : o
     }
-    this.logger.info("BaseWebRTCConnection.updateVideoQuality: resolutionScaleFactor: ".concat(n, ", ") + "encodingVideoWidth: ".concat(e.encodingVideoWidth, ", remoteSinkWantsMaxFramerate: ").concat(e.remoteSinkWantsMaxFramerate, ", ") + "encodingVideoMaxBitRate: ".concat(e.encodingVideoMaxBitRate, ", localWant: ").concat(this.getLocalWant())), this.setVideoEncoderParameters([{
+    this.logger.verbose("BaseWebRTCConnection.updateVideoQuality: resolutionScaleFactor: ".concat(n, ", ") + "encodingVideoWidth: ".concat(e.encodingVideoWidth, ", remoteSinkWantsMaxFramerate: ").concat(e.remoteSinkWantsMaxFramerate, ", ") + "encodingVideoMaxBitRate: ".concat(e.encodingVideoMaxBitRate, ", localWant: ").concat(this.getLocalWant())), this.setVideoEncoderParameters([{
       parameter: 1,
       value: n
     }, {

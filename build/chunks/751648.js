@@ -2,13 +2,10 @@
 "use strict";
 n.d(t, {
   S6: () => c,
-  U9: () => _,
   ZO: () => s,
   df: () => l,
   hF: () => d,
   j2: () => f,
-  jM: () => h,
-  l: () => p,
   vp: () => u
 });
 var r = n(544891),
@@ -100,27 +97,5 @@ function d(e) {
 function f() {
   return i.Z.dispatch({
     type: "VIRTUAL_CURRENCY_EARNED_ORBS_COACHMARK_CLOSE"
-  })
-}
-
-function _() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
-  return i.Z.dispatch({
-    type: "VIRTUAL_CURRENCY_ONBOARDING_COACHMARK_OPEN",
-    onboardingCoachmarkTypes: e
-  })
-}
-
-function p() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
-  return i.Z.dispatch({
-    type: "VIRTUAL_CURRENCY_ONBOARDING_COACHMARK_CLOSE",
-    onboardingCoachmarkTypes: e
-  })
-}
-
-function h() {
-  return i.Z.dispatch({
-    type: "VIRTUAL_CURRENCY_ONBOARDING_COACHMARK_SKIP"
   })
 }

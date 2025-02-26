@@ -1,6 +1,6 @@
 /**
   Module ID: 24315
-  Original File Name: 81911499a2d3be9b
+  Original File Name: a7979b964758c504
 **/
 .card__4bb93 {
     display: flex;
@@ -203,7 +203,7 @@
 }
 
 .scrollerInner__1964c.bottomSeparator__1964c {
-    border-bottom: 1px solid hsl(var(--white-500-hsl)/.04)
+    border-bottom: 1px solid var(--opacity-white-4)
 }
 
 .scrollWrapper__1964c {
@@ -770,7 +770,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: hsl(var(--black-500-hsl)/.4)
+    background: var(--opacity-black-40)
 }
 
 .sourceOverlayCTA_febe19 {
@@ -884,4 +884,4 @@
     gap: var(--spacing-8)
 }
 
-/*# sourceMappingURL=81911499a2d3be9b.css.map*/
+/*# sourceMappingURL=a7979b964758c504.css.map*/

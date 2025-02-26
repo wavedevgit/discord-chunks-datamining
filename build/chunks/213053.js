@@ -1,21 +1,20 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => E
+  Z: () => m
 }), n(47120);
 var r = n(192379),
   i = n(120356),
   o = n.n(i),
   a = n(866442),
   s = n(442837),
-  l = n(780384),
-  c = n(481060),
-  u = n(607070),
-  d = n(629935),
-  f = n(168551),
-  _ = n(168631);
+  l = n(481060),
+  c = n(607070),
+  u = n(629935),
+  d = n(168551),
+  f = n(168631);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,20 +23,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
-let g = "custom-profile-theme",
-  m = Object.freeze({
+let h = "custom-profile-theme",
+  g = Object.freeze({
     "--profile-gradient-primary-color": "var(--background-secondary-alt)",
     "--profile-gradient-secondary-color": "var(--background-secondary-alt)",
     "--profile-gradient-overlay-color": "rgba(0, 0, 0, 0)",
@@ -53,41 +52,41 @@ let g = "custom-profile-theme",
     "--profile-role-pill-border-color": "var(--interactive-normal)"
   });
 
-function E(e) {
+function m(e) {
   let {
     theme: t,
     primaryColor: n,
     secondaryColor: i
-  } = e, [p, E] = (0, s.Wu)([u.Z], () => [u.Z.desaturateUserColors, u.Z.syncProfileThemeWithUserTheme]), v = (0, _.fq)(t), b = (0, _.wu)(t, n, E), y = (0, _.lM)(t, n), O = (0, _.e4)(t, i), S = E ? null == v ? void 0 : v.overlaySyncedWithUserTheme : null == v ? void 0 : v.overlay;
+  } = e, [_, m] = (0, s.Wu)([c.Z], () => [c.Z.desaturateUserColors, c.Z.syncProfileThemeWithUserTheme]), E = (0, f.fq)(t), v = (0, f.wu)(t, n, m), b = (0, f.lM)(t, n), y = (0, f.e4)(t, i), O = m ? null == E ? void 0 : E.overlaySyncedWithUserTheme : null == E ? void 0 : E.overlay;
   return {
     profileThemeStyle: (0, r.useMemo)(() => {
-      if (null == n || null == i || null == v || null == b || null == y || null == O || null == S) return m;
-      let e = (e, t) => (0, a.ho)(e, p, null, t);
-      return h({
+      if (null == n || null == i || null == E || null == v || null == b || null == y || null == O) return g;
+      let e = (e, t) => (0, a.ho)(e, _, null, t);
+      return p({
         "--profile-gradient-primary-color": e(n),
         "--profile-gradient-secondary-color": e(i),
-        "--profile-gradient-overlay-color": S,
-        "--profile-gradient-button-color": e((0, _.ZB)(n)),
-        "--profile-avatar-border-color": e(b),
-        "--profile-body-background-color": v.sectionBox,
-        "--profile-body-background-hover": v.profileBodyBackgroundHover,
-        "--profile-body-divider-color": e(y, v.dividerOpacity),
-        "--profile-body-border-color": e(y, .12),
-        "--profile-message-input-border-color": e(O),
-        "--profile-note-background-color": v.noteBackgroundColor,
-        "--profile-role-pill-background-color": v.rolePillBackgroundColor,
-        "--profile-role-pill-border-color": v.rolePillBorderColor
-      }, (0, d.W4)({
+        "--profile-gradient-overlay-color": O,
+        "--profile-gradient-button-color": e((0, f.ZB)(n)),
+        "--profile-avatar-border-color": e(v),
+        "--profile-body-background-color": E.sectionBox,
+        "--profile-body-background-hover": E.profileBodyBackgroundHover,
+        "--profile-body-divider-color": e(b, E.dividerOpacity),
+        "--profile-body-border-color": e(b, .12),
+        "--profile-message-input-border-color": e(y),
+        "--profile-note-background-color": E.noteBackgroundColor,
+        "--profile-role-pill-background-color": E.rolePillBackgroundColor,
+        "--profile-role-pill-border-color": E.rolePillBorderColor
+      }, (0, u.W4)({
         enabled: !0,
         primaryColor: n,
         secondaryColor: i,
-        isDarkTheme: (0, l.wj)(t),
+        isDarkTheme: (0, l.wjy)(t),
         textMixAmount: 25
       }))
-    }, [n, i, v, b, y, O, S, t, p]),
-    profileThemeClassName: o()((0, c.QeD)(t), {
-      [f.e3]: null != n,
-      [g]: null != n
+    }, [n, i, E, v, b, y, O, t, _]),
+    profileThemeClassName: o()((0, l.QeD)(t), {
+      [d.e3]: null != n,
+      [h]: null != n
     })
   }
 }

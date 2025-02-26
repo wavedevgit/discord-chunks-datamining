@@ -144,16 +144,16 @@ function S(e) {
     return i
   }(e.treeItemProps, ["onFocus"]), [w, E] = i.useState(!1), T = i.useCallback(() => {
     c || E(!0), null == S || S(!0)
-  }, [c, S]), D = i.useCallback(() => {
+  }, [c, S]), A = i.useCallback(() => {
     c || E(!1), null == S || S(!1)
-  }, [c, S]), A = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), L = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, k = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
+  }, [c, S]), D = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), L = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, k = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
   return (0, r.jsx)(d.aRk, {
     isFolder: !0,
-    style: A ? {
+    style: D ? {
       width: k,
       height: k
     } : void 0,
-    selected: !!A || !a,
+    selected: !!D || !a,
     upperBadge: R,
     lowerBadge: L,
     lowerBadgeSize: {
@@ -183,7 +183,7 @@ function S(e) {
       onClick: C,
       onContextMenu: x,
       onMouseEnter: T,
-      onMouseLeave: D,
+      onMouseLeave: A,
       onKeyDown: N,
       onFocus: I,
       "aria-label": v.NW.formatToPlainString(v.t["90/DwM"], {

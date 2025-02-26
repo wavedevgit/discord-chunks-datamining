@@ -1,6 +1,6 @@
-/** Chunk was on 56650 **/
+/** Chunk was on 45847 **/
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -27,7 +27,7 @@ let E = 0,
         return c.NW.string(c.t.AlY4ZW)
     }
   },
-  p = [s._vf.DISABLED, s._vf.TOP_LEFT, s._vf.TOP_RIGHT, s._vf.BOTTOM_LEFT, s._vf.BOTTOM_RIGHT];
+  _ = [s._vf.DISABLED, s._vf.TOP_LEFT, s._vf.TOP_RIGHT, s._vf.BOTTOM_LEFT, s._vf.BOTTOM_RIGHT];
 
 function C(e) {
   let {
@@ -44,7 +44,7 @@ function C(e) {
         className: o()(u.wrapper, {
           [u.disabledSelected]: t === s._vf.DISABLED
         }),
-        children: p.map(e => (0, r.jsxs)("label", {
+        children: _.map(e => (0, r.jsxs)("label", {
           className: o()({
             [u.selected]: e === t,
             [u.disabled]: e === s._vf.DISABLED,
@@ -74,4 +74,4 @@ function C(e) {
   })
 }
 C.Positions = s._vf;
-let _ = C
+let p = C

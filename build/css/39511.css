@@ -1,6 +1,6 @@
 /**
   Module ID: 39511
-  Original File Name: 585d74dc0fedde49
+  Original File Name: 8b3494b51787ff0e
 **/
 .header_fefb6d {
     align-items: flex-start;
@@ -132,7 +132,7 @@
     width: 18px;
     line-height: 0;
     color: var(--white-500);
-    background: hsl(var(--black-500-hsl)/.6);
+    background: var(--opacity-black-60);
     border-radius: 4px;
     opacity: 1;
     transform: none;
@@ -140,7 +140,7 @@
 }
 
 .closeButton_fa5bb9:hover {
-    background: hsl(var(--black-500-hsl)/.8);
+    background: var(--opacity-black-80);
     color: var(--white-500)
 }
 
@@ -182,4 +182,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=585d74dc0fedde49.css.map*/
+/*# sourceMappingURL=8b3494b51787ff0e.css.map*/

@@ -3,7 +3,7 @@ n.d(t, {
   P: () => w,
   Qo: () => E,
   ZP: () => Z,
-  kw: () => D,
+  kw: () => A,
   rj: () => T
 });
 var r = n(200651),
@@ -76,13 +76,13 @@ let I = i.memo(function(e) {
         children: E
       } = e,
       T = (0, g.Q3)("CategoryChannel"),
-      D = (0, s.e7)([v.ZP], () => v.ZP.isChannelMuted(l.getGuildId(), l.id)),
-      A = (0, s.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
+      A = (0, s.e7)([v.ZP], () => v.ZP.isChannelMuted(l.getGuildId(), l.id)),
+      D = (0, s.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
       R = (0, s.e7)([y.Z], () => y.Z.can(_.Plq.MANAGE_CHANNELS, l));
     t = null != Z ? I > Z ? x.containerDragAfter : x.containerDragBefore : x.containerDefault;
     let L = i.useCallback(() => {
-        A ? (0, u.mJ)(l.id) : (0, u.c4)(l.id)
-      }, [l.id, A]),
+        D ? (0, u.mJ)(l.id) : (0, u.c4)(l.id)
+      }, [l.id, D]),
       k = i.useCallback(e => {
         if ("null" !== l.id) {
           let t = b.Z.getGuild(l.getGuildId());
@@ -113,8 +113,8 @@ let I = i.memo(function(e) {
       }, [l]),
       G = (0, a.JA)(l.id),
       {
-        role: B,
-        tabIndex: U
+        role: U,
+        tabIndex: B
       } = G,
       W = function(e, t) {
         if (null == e) return {};
@@ -146,21 +146,21 @@ let I = i.memo(function(e) {
           children: (0, r.jsxs)("div", {
             ref: F,
             className: o()(x.iconVisibility, x.wrapper, {
-              [x.collapsed]: A,
-              [x.muted]: D,
+              [x.collapsed]: D,
+              [x.muted]: A,
               [x.clickable]: !0
             }),
             onContextMenu: k,
             children: [(0, r.jsxs)(c.P3F, S(P({
               innerRef: V,
               className: x.mainContent,
-              tabIndex: U
+              tabIndex: B
             }, W), {
               onClick: L,
               "aria-label": C.NW.formatToPlainString(C.t.y5l3Jy, {
                 categoryName: l.name
               }),
-              "aria-expanded": !A,
+              "aria-expanded": !D,
               focusProps: {
                 enabled: !1
               },
@@ -196,7 +196,7 @@ let I = i.memo(function(e) {
                     onClick: M,
                     onMouseEnter: t,
                     onMouseLeave: n,
-                    tabIndex: U,
+                    tabIndex: B,
                     focusProps: {
                       offset: {
                         top: -3,
@@ -313,7 +313,7 @@ let I = i.memo(function(e) {
       }
     })
   }),
-  D = i.memo(function(e) {
+  A = i.memo(function(e) {
     let {
       channel: t
     } = e;

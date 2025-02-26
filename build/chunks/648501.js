@@ -38,14 +38,14 @@ function N(e) {
     enableConnectedUserLimit: w,
     enableActivities: E,
     isSubscriptionGated: T,
-    needSubscriptionToAccess: D,
-    isNewChannel: A,
+    needSubscriptionToAccess: A,
+    isNewChannel: D,
     muted: R,
     resolvedUnreadSetting: L
-  } = e, k = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), M = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), G = (0, a.ZP)(n), B = (0, i.e7)([h.Z], () => !h.Z.can(C.Plq.CONNECT, n)), U = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), W = (0, u.PK)(n.id) && n.isGuildStageVoice(), V = (0, v.ZP)({
+  } = e, k = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), M = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), G = (0, a.ZP)(n), U = (0, i.e7)([h.Z], () => !h.Z.can(C.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), W = (0, u.PK)(n.id) && n.isGuildStageVoice(), V = (0, v.ZP)({
     channel: n,
-    locked: B,
-    video: U || W,
+    locked: U,
+    video: B || W,
     selected: N
   }), F = (0, i.e7)([d.Z], () => d.Z.getNewThreadCount(n.guild_id, n.id)), H = (0, s.n2)(n.guild_id, n.id), z = (0, i.e7)([p.Z], () => {
     var e, t;
@@ -56,9 +56,9 @@ function N(e) {
     isMentionLowImportance: M
   });
   if ((0, c.O)(T)) return (0, r.jsx)(c.Z, {
-    locked: D
+    locked: A
   });
-  if (A) return (0, r.jsx)(o.IGR, {
+  if (D) return (0, r.jsx)(o.IGR, {
     text: P.NW.string(P.t.y2b7CA),
     color: l.Z.unsafe_rawColors.BRAND_260.css,
     className: S.newChannel
@@ -75,10 +75,10 @@ function N(e) {
     color: "text-muted",
     children: (0, o.NGo)(H)
   });
-  let q = null !== (t = null == Z ? void 0 : Z.length) && void 0 !== t ? t : 0;
+  let Y = null !== (t = null == Z ? void 0 : Z.length) && void 0 !== t ? t : 0;
   return null != w && w && V ? (0, r.jsx)(j.Z, {
-    userCount: q,
-    video: U || W,
+    userCount: Y,
+    video: B || W,
     channel: n
   }) : I && (0, m.a)(Z) && z ? (0, r.jsx)(o.IGR, {
     text: P.NW.string(P.t.dI3q4u),

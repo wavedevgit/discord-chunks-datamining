@@ -23,8 +23,8 @@ function p(e) {
   } = e, p = i.useRef(null), h = (0, a.e7)([c.default], () => c.default.getCurrentUser());
   o()(null != h, "user cannot be null"), (0, f.Z)(p, h, l, n);
   let {
-    handleClick: v,
-    handleMouseDown: b,
+    handleClick: b,
+    handleMouseDown: v,
     handleMouseEnter: g,
     handleMouseMove: y,
     handleMouseUp: E
@@ -39,8 +39,8 @@ function p(e) {
   return (0, r.jsx)(s.Z, {
     children: (0, r.jsx)("canvas", {
       ref: p,
-      onClick: v,
-      onMouseDown: b,
+      onClick: b,
+      onMouseDown: v,
       onMouseEnter: g,
       onMouseMove: y,
       onMouseUp: E,

@@ -1,6 +1,6 @@
 /**
   Module ID: 63354
-  Original File Name: 197ab8622ceca03e
+  Original File Name: b8b8e73c65b6e402
 **/
 .card__4bb93 {
     display: flex;
@@ -225,7 +225,7 @@
 }
 
 .scrollerInner__1964c.bottomSeparator__1964c {
-    border-bottom: 1px solid hsl(var(--white-500-hsl)/.04)
+    border-bottom: 1px solid var(--opacity-white-4)
 }
 
 .scrollWrapper__1964c {
@@ -2000,7 +2000,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: hsl(var(--black-500-hsl)/.4)
+    background: var(--opacity-black-40)
 }
 
 .sourceOverlayCTA_febe19 {
@@ -2114,4 +2114,4 @@
     gap: var(--spacing-8)
 }
 
-/*# sourceMappingURL=197ab8622ceca03e.css.map*/
+/*# sourceMappingURL=b8b8e73c65b6e402.css.map*/

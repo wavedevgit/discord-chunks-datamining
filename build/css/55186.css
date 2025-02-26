@@ -1,6 +1,6 @@
 /**
   Module ID: 55186
-  Original File Name: 40f7fd7ce9aff920
+  Original File Name: 6c32a03c481a816c
 **/
 .ephemeral__5126c {
     position: relative;
@@ -1219,15 +1219,15 @@
 }
 
 .background-opacity-low .edited_c19a55 {
-    color: hsl(var(--white-500-hsl)/.6)
+    color: var(--opacity-white-60)
 }
 
 .background-opacity-medium .edited_c19a55 {
-    color: hsl(var(--white-500-hsl)/.5)
+    color: var(--opacity-white-48)
 }
 
 .background-opacity-high .edited_c19a55 {
-    color: hsl(var(--white-500-hsl)/.4)
+    color: var(--opacity-white-40)
 }
 
 .badgesContainer_c19a55 {
@@ -2177,4 +2177,4 @@
     color: var(--primary-500)
 }
 
-/*# sourceMappingURL=40f7fd7ce9aff920.css.map*/
+/*# sourceMappingURL=6c32a03c481a816c.css.map*/

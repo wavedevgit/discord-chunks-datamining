@@ -26,7 +26,7 @@ var d = n(616254),
   D = n(846519),
   w = n(579806),
   L = n(896361),
-  x = n(892254);
+  x = n(746106);
 n(422859);
 var M = n(857192),
   k = n(807725),
@@ -48,7 +48,7 @@ function W(e, t, n) {
   let i = null != n ? new URLSearchParams(n) : null;
   (null === (r = H[t]) || void 0 === r || !r.call(H, i)) && (0, C.uL)(t)
 }
-let Y = e => Z.render((0, u.jsx)(x.Z, {
+let Y = e => Z.render((0, u.jsx)(x.w, {
   children: (0, u.jsx)(L.Z, {
     children: (0, u.jsx)(e, {})
   })

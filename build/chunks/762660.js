@@ -51,12 +51,12 @@ function j(e) {
     onClick: _,
     atMaxMemberCapacity: g
   } = e, [v, C] = a.useState(null), {
-    user: N,
-    createdAt: y
+    user: y,
+    createdAt: N
   } = l;
-  if (null == N) throw Error("Missing user on this guild join request!");
-  let I = a.useMemo(() => new u.Z(N), [N]),
-    T = m.ZP.getUserAvatarURL(I),
+  if (null == y) throw Error("Missing user on this guild join request!");
+  let T = a.useMemo(() => new u.Z(y), [y]),
+    I = m.ZP.getUserAvatarURL(T),
     w = t === f.wB.SUBMITTED,
     O = a.useCallback(async (e, t) => {
       let {
@@ -81,21 +81,21 @@ function j(e) {
     className: o()(h.container, j),
     onClick: _,
     children: [(0, r.jsx)(c.qEK, {
-      src: T,
+      src: I,
       size: c.EFr.SIZE_40,
-      "aria-label": N.username,
+      "aria-label": y.username,
       className: h.__invalid_spacer
     }), (0, r.jsxs)("div", {
       className: h.userDetails,
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: N.username
+        children: y.username
       }), (0, r.jsx)(c.Text, {
         className: h.createdAt,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: s()(y).format("lll")
+        children: s()(N).format("lll")
       })]
     }), w && !g && (0, r.jsx)(b, {
       icon: c.dz2,
@@ -137,7 +137,7 @@ function j(e) {
               return e
             }({}, t), a = a = {
               guild: i,
-              user: I
+              user: T
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

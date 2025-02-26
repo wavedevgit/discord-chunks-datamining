@@ -1,6 +1,6 @@
 /**
   Module ID: 15066
-  Original File Name: 97704752c349a197
+  Original File Name: ac4568b7ab6aeae1
 **/
 .loadingWrapper__5a143 {
     display: flex;
@@ -569,7 +569,7 @@
 }
 
 .background-opacity-low .embedDescription__623de,.background-opacity-low .embedFieldValue__623de,.background-opacity-low .embedFooterText__623de,.background-opacity-low .embedProvider__623de {
-    text-shadow: 0 0 1px hsl(var(--black-500-hsl)/.3)
+    text-shadow: 0 0 1px var(--opacity-black-28)
 }
 
 .background-opacity-low .embedTitleLink__623de {
@@ -577,7 +577,7 @@
 }
 
 .background-opacity-low .embedTitleLink__623de {
-    text-shadow: 0 0 1px hsl(var(--white-500-hsl)/.3),0 0 3px hsl(var(--black-500-hsl)/.6)
+    text-shadow: 0 0 1px var(--opacity-white-28),0 0 3px var(--opacity-black-60)
 }
 
 .background-opacity-medium .embedFull__623de {
@@ -617,7 +617,7 @@
 }
 
 .background-opacity-medium .embedTitleLink__623de {
-    text-shadow: 0 0 1px hsl(var(--white-500-hsl)/.2),0 0 3px hsl(var(--black-500-hsl)/.4)
+    text-shadow: 0 0 1px var(--opacity-white-20),0 0 3px var(--opacity-black-40)
 }
 
 .background-opacity-high .embedFull__623de {
@@ -1159,7 +1159,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 16px;
+    font-size: 1rem;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -1443,4 +1443,4 @@ h1.title_feb59c,h2.title_feb59c {
     margin-right: var(--spacing-32)
 }
 
-/*# sourceMappingURL=97704752c349a197.css.map*/
+/*# sourceMappingURL=ac4568b7ab6aeae1.css.map*/

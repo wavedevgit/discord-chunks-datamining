@@ -42,7 +42,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function D(e) {
   return e
 }
 
-function A(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -196,7 +196,7 @@ class R extends P.ZP {
       return null != i && i.length > 0 && l && !n ? (0, r.jsx)(I.Z, {
         onAction: this.handleActivitiesPopoutClose,
         channel: t
-      }) : (0, r.jsx)(x.Z, A(D({}, e), {
+      }) : (0, r.jsx)(x.Z, D(A({}, e), {
         channel: this.props.channel
       }))
     }), T(this, "handleContextMenu", e => {
@@ -208,7 +208,7 @@ class R extends P.ZP {
           let {
             default: e
           } = await Promise.all([n.e("79695"), n.e("25421"), n.e("71582")]).then(n.bind(n, 354741));
-          return n => (0, r.jsx)(e, A(D({}, n), {
+          return n => (0, r.jsx)(e, D(A({}, n), {
             channel: t,
             selected: !0
           }))
@@ -221,7 +221,7 @@ class R extends P.ZP {
           let {
             default: e
           } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("69151")]).then(n.bind(n, 131404));
-          return n => (0, r.jsx)(e, A(D({}, n), {
+          return n => (0, r.jsx)(e, D(A({}, n), {
             user: i,
             channel: t,
             showModalItems: !1
@@ -234,7 +234,7 @@ class R extends P.ZP {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("18320"), n.e("44011")]).then(n.bind(n, 373651));
-        return n => (0, r.jsx)(e, A(D({}, n), {
+        return n => (0, r.jsx)(e, D(A({}, n), {
           channel: t,
           guild: i
         }))
@@ -282,7 +282,7 @@ function k(e) {
     enableActivities: T,
     resolvedUnreadSetting: f
   }), k = (0, p.ZP)(t);
-  return (0, r.jsx)(L, A(D({}, h, v, e), {
+  return (0, r.jsx)(L, D(A({}, h, v, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
     isSubscriptionGated: N,

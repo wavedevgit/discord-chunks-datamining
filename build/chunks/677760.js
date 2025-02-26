@@ -14,8 +14,8 @@ var r = n(200651),
   h = n(108427),
   p = n(314897),
   g = n(701190),
-  m = n(626135),
-  f = n(768581),
+  f = n(626135),
+  m = n(768581),
   _ = n(823379),
   b = n(264229),
   N = n(230224),
@@ -128,7 +128,7 @@ function A(e) {
   }(e, ["children", "cardChildren", "startAnimHeightPx", "innerStyle"]), [d, h] = i.useState(y(c)), {
     ref: p,
     height: g
-  } = (0, u.Z)(), m = (0, l.q_F)({
+  } = (0, u.Z)(), f = (0, l.q_F)({
     height: null != g && 0 !== g ? "".concat(g, "px") : "".concat(a, "px"),
     config: o.config.stiff
   });
@@ -137,10 +137,10 @@ function A(e) {
     e !== d && h(e)
   }, [c, d]), (0, r.jsxs)(o.animated.div, {
     className: O.inviteCard,
-    style: m,
+    style: f,
     children: [(0, r.jsx)(o.animated.div, {
       className: O.inviteChildContainer,
-      style: m,
+      style: f,
       children: (0, r.jsx)("section", {
         ref: p,
         className: null == s ? void 0 : s(d),
@@ -204,7 +204,7 @@ function R(e) {
     guild: i
   } = null != t ? t : {}, o = {};
   if ((null == i ? void 0 : i.splash) != null) {
-    let e = f.ZP.getGuildSplashURL({
+    let e = m.ZP.getGuildSplashURL({
       id: i.id,
       splash: i.splash
     });
@@ -229,7 +229,7 @@ function w(e) {
   return i.useEffect(() => {
     (0, h.e)("invite_mobile")
   }, []), i.useEffect(() => {
-    null != o && o.state === I.r2o.RESOLVED && m.default.track(I.rMx.INVITE_VIEWED, {
+    null != o && o.state === I.r2o.RESOLVED && f.default.track(I.rMx.INVITE_VIEWED, {
       invite_code: t,
       friends_count: null == o ? void 0 : o.friends_count
     }, {
@@ -240,7 +240,7 @@ function w(e) {
     onAcceptInvite: e => {
       ! function(e, t, n) {
         var r, i, o;
-        null == e || e.preventDefault(), m.default.track(I.rMx.INVITE_APP_OPENED, {
+        null == e || e.preventDefault(), f.default.track(I.rMx.INVITE_APP_OPENED, {
           invite_code: (0, b.jX)(t),
           guild_id: null == n ? void 0 : null === (r = n.guild) || void 0 === r ? void 0 : r.id,
           channel_id: null == n ? void 0 : null === (i = n.channel) || void 0 === i ? void 0 : i.id,

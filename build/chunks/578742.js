@@ -27,11 +27,11 @@ var n = r(200651),
   y = r(187565),
   O = r(990488),
   S = r(592286),
-  w = r(981631),
-  E = r(388032),
-  F = r(949543),
-  P = r(419851),
-  k = r(246403);
+  E = r(981631),
+  P = r(388032),
+  k = r(949543),
+  w = r(419851),
+  F = r(246403);
 let T = e => {
     let {
       headerId: t,
@@ -43,28 +43,28 @@ let T = e => {
       passwordError: c
     } = e;
     return (0, n.jsxs)("div", {
-      className: F.content,
+      className: k.content,
       children: [(0, n.jsx)("div", {
-        className: F.applicationIconContainer,
+        className: k.applicationIconContainer,
         children: (0, n.jsx)("img", {
-          alt: E.NW.string(E.t.ewGfjo),
-          src: P,
-          className: F.applicationIcon
+          alt: P.NW.string(P.t.ewGfjo),
+          src: w,
+          className: k.applicationIcon
         })
       }), (0, n.jsx)(o.X6q, {
         id: t,
         variant: "heading-xl/semibold",
-        className: F.header,
-        children: E.NW.string(E.t.MhcDLy)
+        className: k.header,
+        children: P.NW.string(P.t.MhcDLy)
       }), (0, n.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: E.NW.string(E.t.SPlaR0)
+        children: P.NW.string(P.t.SPlaR0)
       }), (0, n.jsx)("hr", {
-        className: F.divider
+        className: k.divider
       }), (0, n.jsx)(o.xJW, {
-        title: E.NW.string(E.t.dI4d4e),
-        className: F.formItem,
+        title: P.NW.string(P.t.dI4d4e),
+        className: k.formItem,
         children: (0, n.jsx)(o.oil, {
           value: r,
           error: s,
@@ -72,8 +72,8 @@ let T = e => {
           autoFocus: !0
         })
       }), (0, n.jsx)(o.xJW, {
-        title: E.NW.string(E.t["CIGa+/"]),
-        className: F.formItem,
+        title: P.NW.string(P.t["CIGa+/"]),
+        className: k.formItem,
         children: (0, n.jsx)(o.oil, {
           type: "password",
           value: a,
@@ -89,28 +89,28 @@ let T = e => {
       email: r
     } = e;
     return (0, n.jsxs)("div", {
-      className: F.content,
+      className: k.content,
       children: [(0, n.jsx)("img", {
-        alt: E.NW.string(E.t.wNAbl5),
-        src: k,
-        className: F.applicationIcon
+        alt: P.NW.string(P.t.wNAbl5),
+        src: F,
+        className: k.applicationIcon
       }), (0, n.jsx)(o.X6q, {
         id: t,
         variant: "heading-xl/semibold",
-        className: F.header,
-        children: E.NW.format(E.t.v01XgI, {
+        className: k.header,
+        children: P.NW.format(P.t.v01XgI, {
           email: r
         })
       }), (0, n.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: E.NW.string(E.t["/Hw5aW"])
+        children: P.NW.string(P.t["/Hw5aW"])
       }), (0, n.jsx)(o.zxk, {
-        className: F.resendButton,
+        className: k.resendButton,
         size: o.zxk.Sizes.NONE,
         look: o.zxk.Looks.LINK,
         onClick: () => l.Z.verifyResend(),
-        children: E.NW.string(E.t["MLk/mJ"])
+        children: P.NW.string(P.t["MLk/mJ"])
       })]
     })
   },
@@ -145,18 +145,18 @@ let T = e => {
       isPreview: d = !1
     } = e;
     return (0, n.jsxs)("div", {
-      className: F.content,
+      className: k.content,
       children: [(0, n.jsx)(o.X6q, {
         id: r,
         variant: "heading-xxl/normal",
-        className: F.header,
-        children: s ? E.NW.format(E.t.cgX47e, {
+        className: k.header,
+        children: s ? P.NW.format(P.t.cgX47e, {
           guildName: l
-        }) : E.NW.string(E.t.DrEECw)
+        }) : P.NW.string(P.t.DrEECw)
       }), (0, n.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: s ? E.NW.string(E.t["3smSPD"]) : E.NW.string(E.t["7D3C5u"])
+        children: s ? P.NW.string(P.t["3smSPD"]) : P.NW.string(P.t["7D3C5u"])
       }), (0, n.jsx)(B, {
         guildId: t,
         formState: a,
@@ -169,21 +169,21 @@ let T = e => {
   W = e => {
     var t, r, l, O;
     let {
-      verificationForm: P,
-      headerId: k,
+      verificationForm: w,
+      headerId: F,
       guildId: B,
       onClose: W,
       onComplete: A,
       isPreview: q = !1
-    } = e, L = (0, y.N0)(B, null == P ? void 0 : P.guild, q), {
+    } = e, L = (0, y.N0)(B, null == w ? void 0 : w.guild, q), {
       guildProfile: G,
       fetchGuildProfile: D
     } = (0, _.u)(B), z = (0, m.h)(), Z = (0, i.e7)([p.ZP, x.default], () => p.ZP.isMember(B, x.default.getId())), [J, K] = a.useState(!1);
     a.useEffect(() => {
       z && Z && !J && null == G && D().finally(() => K(!0))
     }, [D, G, J, Z, z]);
-    let V = null == P ? void 0 : P.formFields.some(e => e.field_type !== N.QJ.TERMS),
-      [H, U] = a.useState(null !== (l = null == P ? void 0 : P.formFields) && void 0 !== l ? l : []),
+    let V = null == w ? void 0 : w.formFields.some(e => e.field_type !== N.QJ.TERMS),
+      [H, U] = a.useState(null !== (l = null == w ? void 0 : w.formFields) && void 0 !== l ? l : []),
       [X, Q] = a.useState(!1),
       [Y, $] = a.useState(null),
       [ee, et] = a.useState(""),
@@ -197,13 +197,13 @@ let T = e => {
         storeMemberCount: g.Z.getMemberCount(B),
         storeOnlineCount: g.Z.getOnlineCount(B)
       })),
-      ed = null != ec ? ec : null == P ? void 0 : null === (t = P.guild) || void 0 === t ? void 0 : t.approximate_presence_count,
-      eu = null != es ? es : null == P ? void 0 : null === (r = P.guild) || void 0 === r ? void 0 : r.approximate_member_count,
+      ed = null != ec ? ec : null == w ? void 0 : null === (t = w.guild) || void 0 === t ? void 0 : t.approximate_presence_count,
+      eu = null != es ? es : null == w ? void 0 : null === (r = w.guild) || void 0 === r ? void 0 : r.approximate_member_count,
       em = null != V && V;
     a.useEffect(() => {
-      null != P && U(P.formFields)
-    }, [P]), a.useEffect(() => {
-      null != B && h.default.track(w.rMx.OPEN_MODAL, {
+      null != w && U(w.formFields)
+    }, [w]), a.useEffect(() => {
+      null != B && h.default.track(E.rMx.OPEN_MODAL, {
         type: S.N4,
         guild_id: B
       })
@@ -227,13 +227,13 @@ let T = e => {
         if (null == A || ep) return !0;
         if (em || (null == e_ ? void 0 : e_.isStaff())) return !1;
         switch (null == L ? void 0 : L.verificationLevel) {
-          case w.sFg.VERY_HIGH:
+          case E.sFg.VERY_HIGH:
             return !eg;
-          case w.sFg.LOW:
-          case w.sFg.MEDIUM:
-          case w.sFg.HIGH:
+          case E.sFg.LOW:
+          case E.sFg.MEDIUM:
+          case E.sFg.HIGH:
             return !ex && !eg;
-          case w.sFg.NONE:
+          case E.sFg.NONE:
           default:
             return !1
         }
@@ -295,7 +295,7 @@ let T = e => {
             })
           }
           return e
-        }({}, null != P ? P : I.t), t = {
+        }({}, null != w ? w : I.t), t = {
           formFields: H
         }, t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var r = Object.keys(e);
@@ -309,51 +309,51 @@ let T = e => {
         }), e))), null == W || W(!0)
       } catch (t) {
         let e = null == t ? void 0 : t.body;
-        (null == e ? void 0 : null === (r = e.errors) || void 0 === r ? void 0 : r.version) != null || (null == e ? void 0 : null === (n = e.errors) || void 0 === n ? void 0 : n.form_fields) != null ? $(E.NW.string(E.t.PD09Sk)) : $(null == e ? void 0 : e.message)
+        (null == e ? void 0 : null === (r = e.errors) || void 0 === r ? void 0 : r.version) != null || (null == e ? void 0 : null === (n = e.errors) || void 0 === n ? void 0 : n.form_fields) != null ? $(P.NW.string(P.t.PD09Sk)) : $(null == e ? void 0 : e.message)
       } finally {
         Q(!1)
       }
     }, eS = z && null != G;
     return (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("div", {
-        className: F.guildSidebar,
+        className: k.guildSidebar,
         children: (0, n.jsxs)("div", {
-          className: F.sidebarCard,
+          className: k.sidebarCard,
           children: [(0, n.jsx)("div", {
             style: {
               background: eS ? ej : eN
             },
-            className: F.sidebarGradientOverlay
+            className: k.sidebarGradientOverlay
           }), eS ? (0, n.jsx)(f.Z, {
             profile: G,
-            className: F.guildProfile,
+            className: k.guildProfile,
             disableCTA: !0
           }) : (0, n.jsx)(b.Z, {
-            className: F.guildProfile,
+            className: k.guildProfile,
             guild: L,
             presenceCount: ed,
             memberCount: eu
           })]
         })
       }), (0, n.jsx)("div", {
-        className: F.modal,
+        className: k.modal,
         children: (0, n.jsxs)("div", {
-          className: F.mainContentWrapper,
+          className: k.mainContentWrapper,
           ref: eI,
           children: [(0, n.jsx)(u.Z, {
-            className: F.modalContent,
+            className: k.modalContent,
             containerRef: eI,
             faderSize: 180,
             faderEdgeThreshold: 48,
             children: (0, n.jsx)(o.qBt, {
-              className: F.sequencer,
+              className: k.sequencer,
               steps: [y.KJ.CLAIM_ACCOUNT, y.KJ.EMAIL_CONFIRMATION, y.KJ.VERIFICATION_FORM],
               step: ef,
               children: (() => {
                 switch (ef) {
                   case y.KJ.CLAIM_ACCOUNT:
                     return (0, n.jsx)(T, {
-                      headerId: k,
+                      headerId: F,
                       email: ee,
                       password: er,
                       setEmail: et,
@@ -363,12 +363,12 @@ let T = e => {
                     });
                   case y.KJ.EMAIL_CONFIRMATION:
                     return (0, n.jsx)(R, {
-                      headerId: k,
+                      headerId: F,
                       email: ee
                     });
                   case y.KJ.VERIFICATION_FORM:
                     return (0, n.jsx)(M, {
-                      headerId: k,
+                      headerId: F,
                       guildId: B,
                       guildName: L.name,
                       formState: H,
@@ -385,52 +385,52 @@ let T = e => {
             switch (ef) {
               case y.KJ.CLAIM_ACCOUNT:
                 return (0, n.jsxs)("div", {
-                  className: F.footer,
+                  className: k.footer,
                   children: [(0, n.jsx)(o.zxk, {
-                    className: F.submitButton,
+                    className: k.submitButton,
                     type: "submit",
                     submitting: X,
                     onClick: ey,
                     disabled: 0 === ee.length || 0 === er.length,
-                    children: E.NW.string(E.t.PDTjLC)
+                    children: P.NW.string(P.t.PDTjLC)
                   }), (0, n.jsx)(o.Text, {
                     variant: "text-xs/normal",
                     color: "header-secondary",
-                    children: E.NW.string(E.t["9GPiR0"])
+                    children: P.NW.string(P.t["9GPiR0"])
                   })]
                 });
               case y.KJ.EMAIL_CONFIRMATION:
                 return null;
               case y.KJ.VERIFICATION_FORM:
                 return (0, n.jsxs)("div", {
-                  className: F.footer,
+                  className: k.footer,
                   children: [(0, n.jsx)(o.DY3, {
                     color: o.FGA.NESTED,
                     shouldShow: eh && ep && V,
-                    text: ev ? E.NW.string(E.t.PLNbh4) : E.NW.string(E.t.brWmV1),
+                    text: ev ? P.NW.string(P.t.PLNbh4) : P.NW.string(P.t.brWmV1),
                     children: (0, n.jsx)(o.zxk, {
-                      className: F.submitButton,
+                      className: k.submitButton,
                       type: "submit",
                       submitting: X,
                       onClick: eO,
                       color: o.zxk.Colors.GREEN,
                       disabled: eh,
-                      children: E.NW.string(E.t.geKm7u)
+                      children: P.NW.string(P.t.geKm7u)
                     })
                   }), null != Y && (0, n.jsx)(o.Text, {
                     variant: "text-xs/normal",
                     color: "text-danger",
                     children: Y
                   }), null == Y && V && (0, n.jsxs)("div", {
-                    className: F.disclaimerFooter,
+                    className: k.disclaimerFooter,
                     children: [(0, n.jsx)(o.Text, {
                       color: "header-secondary",
                       variant: "text-xs/normal",
-                      children: E.NW.string(E.t["+fPCTU"])
+                      children: P.NW.string(P.t["+fPCTU"])
                     }), (0, n.jsx)(o.Text, {
                       color: "header-secondary",
                       variant: "text-xs/normal",
-                      children: E.NW.string(E.t.FwXzw8)
+                      children: P.NW.string(P.t.VjgH0d)
                     })]
                   })]
                 })

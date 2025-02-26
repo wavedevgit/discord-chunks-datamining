@@ -21,8 +21,8 @@ var r = n(200651),
   h = n(768581),
   p = n(51144),
   g = n(245335),
-  m = n(981631),
-  f = n(888592),
+  f = n(981631),
+  m = n(888592),
   _ = n(388032),
   b = n(72171);
 let N = 100,
@@ -37,7 +37,7 @@ let N = 100,
   v = e => e.target_type === g.Iq.STREAM && null != e.target_user,
   I = e => {
     var t;
-    return (null === (t = e.channel) || void 0 === t ? void 0 : t.type) === m.d4z.GROUP_DM
+    return (null === (t = e.channel) || void 0 === t ? void 0 : t.type) === f.d4z.GROUP_DM
   },
   E = e => null == e.channel && null == e.guild && null != e.inviter,
   O = e => {
@@ -45,7 +45,7 @@ let N = 100,
     let n = x(e);
     return (null !== (t = null == n ? void 0 : n.memberCount) && void 0 !== t ? t : 0) > N
   },
-  j = e => e.state === m.r2o.ACCEPTED,
+  j = e => e.state === f.r2o.ACCEPTED,
   C = e => {
     let {
       guild_scheduled_event: t
@@ -82,7 +82,7 @@ function T(e) {
     textClassName: i,
     className: o
   } = e, l = x(n);
-  return null == l || S(n) || (null == n ? void 0 : null === (t = n.guild) || void 0 === t ? void 0 : t.id) === f.fQ ? null : (0, r.jsx)(s.EJ, {
+  return null == l || S(n) || (null == n ? void 0 : null === (t = n.guild) || void 0 === t ? void 0 : t.id) === m.fQ ? null : (0, r.jsx)(s.EJ, {
     className: a()(b.activityCount, o),
     online: l.onlineCount,
     total: l.memberCount,

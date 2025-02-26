@@ -1,61 +1,61 @@
 /**
   Module ID: 95676
-  Original File Name: 7743843935f321ae
+  Original File Name: fbe1edb6dba249f3
 **/
 :root {
-    --legacy-elevation-low: 0 1px 5px hsl(var(--black-500-hsl)/0.2);
-    --legacy-elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.1);
+    --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
+    --legacy-elevation-high: 0 2px 10px 0 var(--opacity-black-8);
     --legacy-elevation-border: 0 0 0 1px hsl(var(--primary-300-hsl)/0.3)
 }
 
 .theme-dark {
-    --legacy-elevation-low: 0 1px 5px 0 hsl(var(--black-500-hsl)/0.3);
-    --legacy-elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.2);
+    --legacy-elevation-low: 0 1px 5px 0 var(--opacity-black-28);
+    --legacy-elevation-high: 0 2px 10px 0 var(--opacity-black-20);
     --legacy-elevation-border: 0 0 0 1px hsl(var(--primary-700-hsl)/0.6)
 }
 
 .elevationLow_fcf29c {
-    box-shadow: 0 1px 5px hsl(var(--black-500-hsl) / 0.2);
+    box-shadow: 0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-low)
 }
 
 .elevationHigh_fcf29c {
-    box-shadow: 0 2px 10px 0 hsl(var(--black-500-hsl) / 0.1);
+    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high)
 }
 
 .elevationBorderLow_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 1px 5px hsl(var(--black-500-hsl) / 0.2);
+    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-low)
 }
 
 .darkElevationBorderHigh_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 2px 10px 0 hsl(var(--black-500-hsl) / 0.1);
+    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high)
 }
 
 .lightElevationLow_fcf29c {
-    box-shadow: 0 1px 5px hsl(var(--black-500-hsl) / 0.2);
+    box-shadow: 0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-low)
 }
 
 .lightElevationHigh_fcf29c {
-    box-shadow: 0 2px 10px 0 hsl(var(--black-500-hsl) / 0.1);
+    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high)
 }
 
 .lightElevationBorderLow_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 1px 5px hsl(var(--black-500-hsl) / 0.2);
+    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-low)
 }
 
 .elevationBorderHigh_fcf29c,.elevationBorderLow_fcf29c,.elevationHigh_fcf29c,.elevationLow_fcf29c,.lightElevationBorderHigh_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 2px 10px 0 hsl(var(--black-500-hsl) / 0.1);
+    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high)
 }
 
 .container_fcf29c {
-    box-shadow: 0 2px 10px 0 hsl(var(--black-500-hsl) / 0.1);
+    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high);
     padding: 10px 10px 10px 16px;
     overflow: hidden;
@@ -770,4 +770,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=7743843935f321ae.css.map*/
+/*# sourceMappingURL=fbe1edb6dba249f3.css.map*/

@@ -1,8 +1,8 @@
 /** Chunk was on 86029 **/
 n.d(t, {
-  PD: () => D,
+  PD: () => A,
   ZP: () => L,
-  aR: () => A
+  aR: () => D
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -86,8 +86,8 @@ let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
       })
     })
   },
-  D = 57,
-  A = 57 + E,
+  A = 57,
+  D = 57 + E,
   R = {
     tension: 180,
     friction: 80
@@ -101,7 +101,7 @@ let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     } = (0, g.ZP)(h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), {
       premiumSubscriberCount: b,
       id: j
-    } = t, E = (0, O.rF)(b, j), D = (0, O.FZ)(E, t.id), A = null == D, L = null != D ? D : E, k = (0, c.e7)([C.Z], () => {
+    } = t, E = (0, O.rF)(b, j), A = (0, O.FZ)(E, t.id), D = null == A, L = null != A ? A : E, k = (0, c.e7)([C.Z], () => {
       var e;
       return null !== (e = C.Z.getCountForGuild(j)) && void 0 !== e ? e : 0
     }), M = (0, c.e7)([y.Z], () => y.Z.can(S.Plq.MANAGE_GUILD, t));
@@ -110,18 +110,18 @@ let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     }, [j, k, b]);
     let G = "".concat(Math.min(100, b / (0, O.vn)(t.id)[L] * 100), "%"),
       {
-        current: B
+        current: U
       } = i.useRef(G),
-      U = {
+      B = {
         from: {
-          width: k === b ? B : "0%"
+          width: k === b ? U : "0%"
         },
         to: {
           width: G
         },
         config: R
       },
-      [W, V] = (0, d.q_F)(() => U),
+      [W, V] = (0, d.q_F)(() => B),
       F = () => {
         (0, f.yw)(S.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
           location: {
@@ -148,20 +148,20 @@ let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
         numBoosts: b,
         numTotal: (0, O.vn)(t.id)[L]
       });
-    A && (H = (0, O.e9)(L), z = N.NW.format(N.t.B2byER, {
+    D && (H = (0, O.e9)(L), z = N.NW.format(N.t.B2byER, {
       numBoosts: b
     })), l && (H = H.toLocaleLowerCase());
-    let q = (0, s.JA)("boosts-".concat(t.id));
+    let Y = (0, s.JA)("boosts-".concat(t.id));
     return (0, r.jsx)("li", {
       children: (0, r.jsx)(d.ua7, {
-        text: A ? N.NW.string(N.t["Y+V9go"]) : N.NW.formatToPlainString(N.t.UyDKl5, {
+        text: D ? N.NW.string(N.t["Y+V9go"]) : N.NW.formatToPlainString(N.t.UyDKl5, {
           levelName: (0, O.nW)(L)
         }),
         color: d.ua7.Colors.BLACK,
         position: "top",
         delay: 200,
         hideOnClick: !0,
-        children: e => (0, r.jsxs)(d.P3F, w(Z({}, q, e), {
+        children: e => (0, r.jsxs)(d.P3F, w(Z({}, Y, e), {
           "aria-label": void 0,
           role: "button",
           focusProps: {
@@ -173,7 +173,7 @@ let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
           onClick: F,
           onMouseEnter: () => {
             var t;
-            null === (t = e.onMouseEnter) || void 0 === t || t.call(e), V(U)
+            null === (t = e.onMouseEnter) || void 0 === t || t.call(e), V(B)
           },
           className: o()(I.container, {
             [I.containerWithMargin]: n
@@ -213,12 +213,12 @@ let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
             })]
           }), (0, r.jsxs)("div", {
             className: o()(I.progressBarContainer, {
-              [I.progressBarContainerComplete]: A
+              [I.progressBarContainerComplete]: D
             }),
             children: [(0, r.jsx)(a.animated.div, {
               className: I.progressBar,
               style: W
-            }), A ? (0, r.jsx)("span", {
+            }), D ? (0, r.jsx)("span", {
               "aria-label": N.NW.string(N.t["7iL1q6"]),
               role: "img",
               className: I.tadaIcon,

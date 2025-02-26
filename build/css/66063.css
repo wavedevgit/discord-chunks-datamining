@@ -1,6 +1,6 @@
 /**
   Module ID: 66063
-  Original File Name: 47da26912c041b04
+  Original File Name: 019419aef33ffa46
 **/
 .container_f89b2c {
     box-sizing: border-box;
@@ -80,8 +80,8 @@
 }
 
 .theme-dark .container_f89b2c {
-    background-color: hsl(var(--black-500-hsl)/.1);
-    border-color: hsl(var(--black-500-hsl)/.3)
+    background-color: var(--opacity-black-8);
+    border-color: var(--opacity-black-28)
 }
 
 .visual-refresh .container_f89b2c {
@@ -240,4 +240,4 @@
     color: var(--text-muted-on-default)
 }
 
-/*# sourceMappingURL=47da26912c041b04.css.map*/
+/*# sourceMappingURL=019419aef33ffa46.css.map*/

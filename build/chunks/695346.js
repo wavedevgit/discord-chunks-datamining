@@ -10,6 +10,7 @@ n.d(t, {
   G6: () => es,
   H1: () => R,
   I0: () => w,
+  JG: () => eL,
   L1: () => ey,
   NA: () => eh,
   OW: () => ei,
@@ -21,10 +22,10 @@ n.d(t, {
   R$: () => g,
   RS: () => ep,
   R_: () => eD,
-  Rt: () => ej,
+  Rt: () => eU,
   SE: () => eN,
   Sb: () => eb,
-  Sh: () => eL,
+  Sh: () => ex,
   T4: () => C,
   UP: () => eo,
   Wp: () => eI,
@@ -32,7 +33,7 @@ n.d(t, {
   Xc: () => k,
   Xk: () => P,
   Xr: () => ea,
-  YC: () => eU,
+  YC: () => eG,
   Yk: () => eS,
   _O: () => A,
   _j: () => ew,
@@ -51,15 +52,15 @@ n.d(t, {
   fv: () => I,
   fz: () => O,
   gR: () => W,
-  gw: () => ex,
+  gw: () => eM,
   h2: () => Y,
-  hg: () => eM,
+  hg: () => ek,
   iG: () => H,
   iH: () => eC,
   jU: () => Q,
   kJ: () => Z,
   kU: () => X,
-  l4: () => ek,
+  l4: () => ej,
   mX: () => F,
   nc: () => eg,
   qF: () => D,
@@ -456,7 +457,8 @@ let eb = (0, c.KM)((0, c.Zc)("appearance", "developerMode", e => null != e && e,
   }, e => o.D5.create({
     value: e
   })),
-  eL = (0, c.Zc)("textAndImages", "explicitContentSettings", e => {
+  eL = (0, c.Zc)("privacy", "slayerSdkReceiveDmsInGame", e => null != e ? e : i.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET, e => e),
+  ex = (0, c.Zc)("textAndImages", "explicitContentSettings", e => {
     let {
       explicitContentGuilds: t,
       explicitContentFriendDm: n,
@@ -479,7 +481,7 @@ let eb = (0, c.KM)((0, c.Zc)("appearance", "developerMode", e => null != e && e,
       explicitContentNonFriendDm: null != r ? r : void 0
     }
   }),
-  ex = (0, c.Zc)("textAndImages", "keywordFilterSettings", e => {
+  eM = (0, c.Zc)("textAndImages", "keywordFilterSettings", e => {
     let {
       profanity: t,
       sexualContent: n,
@@ -519,8 +521,8 @@ let eb = (0, c.KM)((0, c.Zc)("appearance", "developerMode", e => null != e && e,
 }, e => o.D5.create({
   value: e
 }));
-let eM = (0, c.Zc)("appearance", "timestampHourCycle", e => null != e ? e : i.hg.AUTO, e => e);
+let ek = (0, c.Zc)("appearance", "timestampHourCycle", e => null != e ? e : i.hg.AUTO, e => e);
 (0, c.Zc)("appearance", "launchPadMode", e => null != e ? e : i.l1.LAUNCH_PAD_DISABLED, e => e), (0, c.Zc)("appearance", "swipeRightToLeftMode", e => null != e ? e : i.n9.SWIPE_RIGHT_TO_LEFT_UNSET, e => e);
-let ek = (0, c.Zc)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e),
-  ej = (0, c.Zc)("safetySettings", "ignoreProfileSpeedbumpDisabled", e => null != e && e, e => e),
-  eU = (0, c.Zc)("appearance", "uiDensity", e => e === i.Pi.UNSET_UI_DENSITY ? i.Pi.COMPACT : null != e ? e : i.Pi.COMPACT, e => e)
+let ej = (0, c.Zc)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e),
+  eU = (0, c.Zc)("safetySettings", "ignoreProfileSpeedbumpDisabled", e => null != e && e, e => e),
+  eG = (0, c.Zc)("appearance", "uiDensity", e => e === i.Pi.UNSET_UI_DENSITY ? i.Pi.COMPACT : null != e ? e : i.Pi.COMPACT, e => e)

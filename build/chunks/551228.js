@@ -1,71 +1,71 @@
-/** Chunk was on 65936 **/
-n.d(t, {
-  ZP: () => m,
-  pi: () => p,
-  te: () => E
-}), n(47120);
-var r = n(200651),
-  i = n(192379),
-  l = n(442837),
-  o = n(594174),
-  s = n(379357),
-  a = n(719247),
-  c = n(442550),
-  u = n(297781),
-  d = n(443487),
-  _ = n(62545);
-let E = [u.XF];
+/** Chunk was on 62880 **/
+t.d(n, {
+  ZP: () => j,
+  pi: () => h,
+  te: () => m
+}), t(47120);
+var l = t(200651),
+  i = t(192379),
+  a = t(442837),
+  s = t(594174),
+  r = t(379357),
+  c = t(719247),
+  d = t(442550),
+  o = t(297781),
+  u = t(443487),
+  x = t(62545);
+let m = [o.XF];
 
-function p(e) {
-  var t, n, r, i;
-  let s = (0, l.e7)([a.Z], () => a.Z.getMatchingActivity(e)),
-    c = (0, l.e7)([o.default], () => o.default.getUser(e.author_id));
-  if (null == s || null == c) return {};
-  let u = e.extra.entries[0],
-    d = null !== (r = null !== (n = s.state) && void 0 !== n ? n : null === (t = u.media.artists[0]) || void 0 === t ? void 0 : t.name) && void 0 !== r ? r : u.media.title,
-    _ = null !== (i = s.details) && void 0 !== i ? i : u.media.title;
+function h(e) {
+  var n, t, l, i;
+  let r = (0, a.e7)([c.Z], () => c.Z.getMatchingActivity(e)),
+    d = (0, a.e7)([s.default], () => s.default.getUser(e.author_id));
+  if (null == r || null == d) return {};
+  let o = e.extra.entries[0],
+    u = null !== (l = null !== (t = r.state) && void 0 !== t ? t : null === (n = o.media.artists[0]) || void 0 === n ? void 0 : n.name) && void 0 !== l ? l : o.media.title,
+    x = null !== (i = r.details) && void 0 !== i ? i : o.media.title;
   return {
-    activity: s,
-    artist: d,
-    currentEntry: u,
-    title: _,
-    user: c
+    activity: r,
+    artist: u,
+    currentEntry: o,
+    title: x,
+    user: d
   }
 }
-let m = i.memo(function(e) {
+let j = i.memo(function(e) {
   let {
-    entry: t,
-    channel: n,
+    entry: n,
+    channel: t,
     selected: i,
-    hovered: l
+    hovered: a
   } = e, {
-    activity: o,
-    artist: a
-  } = p(t), {
-    largeImage: m
-  } = (0, s.rv)({
-    entry: t
+    activity: s,
+    artist: c
+  } = h(n), {
+    largeImage: j
+  } = (0, r.rv)({
+    entry: n
   });
-  return null == o ? (0, r.jsx)(d.cA, {}) : (0, r.jsxs)(d.Zb, {
+  return null == s ? (0, l.jsx)(u.cA, {}) : (0, l.jsxs)(u.Zb, {
     selected: i,
-    children: [(0, r.jsxs)(d.e$, {
-      children: [(0, r.jsx)(d.F9, {
-        entry: t,
-        channelId: n.id,
-        guildId: n.guild_id
-      }), (0, r.jsx)(d.ll, {
-        children: a
-      }), (0, r.jsx)(u.Gk, {
-        location: u.Gt.CARD,
-        children: E.map((e, n) => (0, r.jsx)(e, {
-          entry: t,
-          hovered: l
-        }, n))
+    children: [(0, l.jsxs)(u.e$, {
+      children: [(0, l.jsx)(u.F9, {
+        entry: n,
+        channelId: t.id,
+        guildId: t.guild_id
+      }), (0, l.jsx)(u.ll, {
+        children: c
+      }), (0, l.jsx)(o.Gk, {
+        location: o.Gt.CARD,
+        children: m.map((e, t) => (0, l.jsx)(e, {
+          entry: n,
+          hovered: a
+        }, t))
       })]
-    }), (0, r.jsx)(c.f, {
-      src: null == m ? void 0 : m.src,
+    }), (0, l.jsx)(d.f, {
+      src: null == j ? void 0 : j.src,
       size: 48,
-      className: _.thumbnail
+      className: x.thumbnail
     })]
   })
 })

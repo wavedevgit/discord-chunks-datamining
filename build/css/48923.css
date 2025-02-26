@@ -1,6 +1,6 @@
 /**
   Module ID: 48923
-  Original File Name: 510f451df999bdf7
+  Original File Name: 2105eaca5ce4be11
 **/
 .modalRoot__5b400 {
     max-width: 340px;
@@ -814,7 +814,7 @@
 }
 
 .submenuWrapper_a86e4f:before {
-    background-color: hsl(var(--white-500-hsl)/.4);
+    background-color: var(--opacity-white-40);
     content: "";
     height: 12px;
     position: absolute;
@@ -1126,7 +1126,7 @@
 
 .theme-dark .playstationButtonConnected_b69c3a,.theme-dark .xboxButtonConnected_b69c3a {
     fill: var(--interactive-active);
-    filter: drop-shadow(0 0 1px hsl(var(--white-500-hsl)/.8))
+    filter: drop-shadow(0 0 1px var(--opacity-white-80))
 }
 
 .connectConsoleButtonWrapper_b69c3a:hover {
@@ -1246,7 +1246,7 @@
 }
 
 .theme-light .stepIconWrapper__10e9a {
-    border: 2px solid hsl(var(--black-500-hsl)/.1)
+    border: 2px solid var(--opacity-black-8)
 }
 
 .stepWrapperComplete__10e9a .stepIconWrapper__10e9a {
@@ -1262,7 +1262,7 @@
 
 .stepWrapperComplete__10e9a .stepConnector__10e9a:before {
     background-color: var(--white-500);
-    box-shadow: 0 0 6px hsl(var(--white-500-hsl)/.8);
+    box-shadow: 0 0 6px var(--opacity-white-80);
     bottom: 0;
     content: "";
     left: 0;
@@ -1353,7 +1353,7 @@
 }
 
 .theme-light .microphoneUnitRefreshIconWrapper_de2d78 {
-    color: hsl(var(--black-500-hsl)/.5)
+    color: var(--opacity-black-48)
 }
 
 .theme-dark .microphoneUnitRefreshIconWrapper_de2d78 {
@@ -1725,7 +1725,7 @@
 }
 
 .promotedBadgeWrapper__636a2:after {
-    background-color: hsl(var(--white-500-hsl)/.4);
+    background-color: var(--opacity-white-40);
     content: "";
     height: 12px;
     position: absolute;
@@ -1913,7 +1913,7 @@
 }
 
 .shine_b628ac {
-    color: hsl(var(--white-500-hsl)/.1)
+    color: var(--opacity-white-8)
 }
 
 .full-motion .shine_b628ac {
@@ -2059,7 +2059,7 @@
 }
 
 .cta_f339f7 {
-    background-color: var(--custom-cta-color,hsl(var(--black-500-hsl)/.2));
+    background-color: var(--custom-cta-color,var(--opacity-black-20));
     color: var(--white-500);
     flex: 0 0 auto;
     margin-top: 8px;
@@ -2069,11 +2069,11 @@
 }
 
 .cta_f339f7:focus,.cta_f339f7:hover {
-    background-color: var(--custom-cta-color-hover,hsl(var(--black-500-hsl)/.3))
+    background-color: var(--custom-cta-color-hover,var(--opacity-black-28))
 }
 
 .cta_f339f7:active {
-    background-color: var(--custom-cta-color-active,hsl(var(--black-500-hsl)/.35))
+    background-color: var(--custom-cta-color-active,var(--opacity-black-36))
 }
 
 .ctaClaimReward_f339f7 {
@@ -2416,8 +2416,8 @@
 }
 
 .theme-dark .container_f89b2c {
-    background-color: hsl(var(--black-500-hsl)/.1);
-    border-color: hsl(var(--black-500-hsl)/.3)
+    background-color: var(--opacity-black-8);
+    border-color: var(--opacity-black-28)
 }
 
 .visual-refresh .container_f89b2c {
@@ -2457,4 +2457,4 @@
     padding-top: 10px
 }
 
-/*# sourceMappingURL=510f451df999bdf7.css.map*/
+/*# sourceMappingURL=2105eaca5ce4be11.css.map*/

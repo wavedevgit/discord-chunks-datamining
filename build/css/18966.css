@@ -1,6 +1,6 @@
 /**
   Module ID: 18966
-  Original File Name: 7e247bcdec875e27
+  Original File Name: ed32cb1d39263d65
 **/
 .button_e18686 {
     text-indent: -9999em;
@@ -148,8 +148,8 @@
 }
 
 .theme-dark .container_f89b2c {
-    background-color: hsl(var(--black-500-hsl)/.1);
-    border-color: hsl(var(--black-500-hsl)/.3)
+    background-color: var(--opacity-black-8);
+    border-color: var(--opacity-black-28)
 }
 
 .visual-refresh .container_f89b2c {
@@ -797,4 +797,4 @@
     margin: 10px
 }
 
-/*# sourceMappingURL=7e247bcdec875e27.css.map*/
+/*# sourceMappingURL=ed32cb1d39263d65.css.map*/

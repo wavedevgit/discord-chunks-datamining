@@ -32,8 +32,8 @@ var r = n(200651),
   w = n(474936),
   E = n(871465),
   T = n(388032),
-  D = n(760541);
-let A = {
+  A = n(760541);
+let D = {
   origin: {
     x: -16,
     y: 0
@@ -54,15 +54,15 @@ function R(e) {
     badge: b,
     link: y,
     showProgressBadge: v
-  } = e, O = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [j, _] = i.useState(!1), [C, x] = i.useState(!1), [w, R] = i.useState(null), [L, k] = i.useState(0), M = (0, l.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), B = () => {
+  } = e, O = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [j, _] = i.useState(!1), [C, x] = i.useState(!1), [w, R] = i.useState(null), [L, k] = i.useState(0), M = (0, l.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), U = () => {
     R(null), k(0), clearTimeout(w)
   };
   if (null == f) return null;
-  let U = T.NW.string(T.t.YUU0RE);
-  C && (U = a.K.get(Z.wli) ? T.NW.string(T.t.nkq1l5) : T.NW.string(T.t.Be8Q5O));
+  let B = T.NW.string(T.t.YUU0RE);
+  C && (B = a.K.get(Z.wli) ? T.NW.string(T.t.nkq1l5) : T.NW.string(T.t.Be8Q5O));
   let W = null;
   !h && v && (W = (0, r.jsx)(c.Z, {
-    className: D.downloadProgress,
+    className: A.downloadProgress,
     determineOwnVisibility: !1
   }));
   let V = h || j || O,
@@ -94,8 +94,8 @@ function R(e) {
         onMouseEnter: () => _(!0),
         onMouseLeave: () => _(!1),
         onClick: () => {
-          if (!__OVERLAY__ && (null != w && clearTimeout(w), R(setTimeout(B, 500)), k(L + 1), 15 === L)) {
-            B();
+          if (!__OVERLAY__ && (null != w && clearTimeout(w), R(setTimeout(U, 500)), k(L + 1), 15 === L)) {
+            U();
             let e = !a.K.get(Z.wli);
             a.K.set(Z.wli, e), e && a.K.set(E.O5, !0), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), x(!0), setTimeout(() => {
               x(!1)
@@ -128,20 +128,20 @@ function R(e) {
       }), t))
     });
   return (0, r.jsx)("div", {
-    className: D.tutorialContainer,
+    className: A.tutorialContainer,
     children: (0, r.jsx)(m.Z, {
-      inlineSpecs: A,
+      inlineSpecs: D,
       tutorialId: "friends-list",
       position: "right",
       children: (0, r.jsxs)(S.H, {
         children: [(0, r.jsx)(P.Z, {
           selected: h,
           hovered: j,
-          className: D.pill
+          className: A.pill
         }), (0, r.jsx)(N.Z, {
           color: s.ua7.Colors.PRIMARY,
           hideOnClick: !0,
-          text: U,
+          text: B,
           selected: h,
           children: F
         })]

@@ -1,6 +1,6 @@
 /** Chunk was on 17945 **/
 n.d(t, {
-  default: () => m
+  default: () => g
 }), n(47120), n(26686);
 var r = n(200651),
   a = n(192379),
@@ -14,24 +14,24 @@ var r = n(200651),
   p = n(246364),
   b = n(981631),
   h = n(388032),
-  g = n(529023);
-let m = function(e) {
+  m = n(529023);
+let g = function(e) {
   let {
     guild: t,
-    guildJoinRequest: m,
-    user: f,
-    transitionState: j,
-    onClose: x
-  } = e, O = (0, o.Dt)(), [v, y] = a.useState(null), [N, P] = a.useState(""), w = (0, i.e7)([l.Z], () => l.Z.canManageUser(b.Plq.BAN_MEMBERS, f, t)), [k, E] = a.useState(!1), C = a.useCallback(() => {
+    guildJoinRequest: g,
+    user: j,
+    transitionState: f,
+    onClose: v
+  } = e, y = (0, o.Dt)(), [x, O] = a.useState(null), [N, P] = a.useState(""), k = (0, i.e7)([l.Z], () => l.Z.canManageUser(b.Plq.BAN_MEMBERS, j, t)), [w, C] = a.useState(!1), W = a.useCallback(() => {
     var e;
     d.ZP.reportApplication({
       guild: t,
-      guildJoinRequest: m,
-      guildJoinRequestUser: f,
-      reason: v,
+      guildJoinRequest: g,
+      guildJoinRequestUser: j,
+      reason: x,
       reasonOther: N,
-      responses: JSON.stringify(null === (e = m.formResponses) || void 0 === e ? void 0 : e.map(e => e.response))
-    }), w && k ? (u.Z.updateGuildJoinRequest(t.id, f.id, m.joinRequestId, p.wB.REJECTED, ""), x(), (0, s.ZDy)(async () => {
+      responses: JSON.stringify(null === (e = g.formResponses) || void 0 === e ? void 0 : e.map(e => e.response))
+    }), k && w ? (u.Z.updateGuildJoinRequest(t.id, j.id, g.joinRequestId, p.wB.REJECTED, ""), v(), (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("43350").then(n.bind(n, 98746));
@@ -56,7 +56,7 @@ let m = function(e) {
           return e
         }({}, n), i = i = {
           guildId: t.id,
-          user: f
+          user: j
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -68,69 +68,69 @@ let m = function(e) {
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a))
       }
-    })) : x()
-  }, [t, m, f, v, N, w, k, x]), D = a.useCallback(e => {
-    y(e.value)
-  }, [y]), S = a.useMemo(() => [{
+    })) : v()
+  }, [t, g, j, x, N, k, w, v]), E = a.useCallback(e => {
+    O(e.value)
+  }, [O]), S = a.useMemo(() => [{
     value: "spam",
-    name: h.NW.string(h.t.iq4Iur)
+    name: h.NW.string(h.t.vGSLTk)
   }, {
     value: "abusive",
-    name: h.NW.string(h.t["2EwC2d"])
+    name: h.NW.string(h.t.CY25rq)
   }, {
     value: "harm",
-    name: h.NW.string(h.t.c2x8o6)
+    name: h.NW.string(h.t["3dHiMT"])
   }, {
     value: "pii",
-    name: h.NW.string(h.t.O2PDJC)
+    name: h.NW.string(h.t.eDyWCA)
   }, {
     value: "other",
-    name: h.NW.string(h.t["NkfV+f"])
-  }], []), W = c.ZP.getName(null, null, f);
+    name: h.NW.string(h.t["2J2mKC"])
+  }], []), D = c.ZP.getName(null, null, j);
   return (0, r.jsxs)(s.Y0X, {
-    transitionState: j,
-    "aria-labelledby": O,
+    transitionState: f,
+    "aria-labelledby": y,
     children: [(0, r.jsx)(s.xBx, {
       children: (0, r.jsx)(s.X6q, {
-        id: O,
+        id: y,
         variant: "heading-md/semibold",
-        children: h.NW.string(h.t.aEqS3d)
+        children: h.NW.string(h.t["4uon39"])
       })
     }), (0, r.jsxs)(s.hzk, {
-      className: g.content,
+      className: m.content,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
-        children: h.NW.format(h.t.wrYOur, {
-          username: W
+        children: h.NW.format(h.t["0CVj1t"], {
+          username: D
         })
       }), (0, r.jsx)(s.FXm, {
         options: S,
-        value: v,
-        onChange: D
-      }), "other" === v && (0, r.jsx)(s.Kx8, {
+        value: x,
+        onChange: E
+      }), "other" === x && (0, r.jsx)(s.Kx8, {
         value: N,
         onChange: P,
-        placeholder: h.NW.string(h.t["+E7Irq"]),
+        placeholder: h.NW.string(h.t["AqO4+P"]),
         maxLength: 200
-      }), w && (0, r.jsx)(s.XZJ, {
+      }), k && (0, r.jsx)(s.XZJ, {
         type: s.XZJ.Types.INVERTED,
-        value: k,
-        onChange: (e, t) => E(t),
+        value: w,
+        onChange: (e, t) => C(t),
         children: (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
-          children: h.NW.format(h.t.cD5hlp, {
-            username: W
+          children: h.NW.format(h.t["1kdfnZ"], {
+            username: D
           })
         })
       })]
     }), (0, r.jsxs)(s.mzw, {
       children: [(0, r.jsx)(s.zxk, {
-        onClick: C,
+        onClick: W,
         children: h.NW.string(h.t["+78Pfn"])
       }), (0, r.jsx)(s.zxk, {
         look: s.iLD.LINK,
         color: s.Ttl.PRIMARY,
-        onClick: x,
+        onClick: v,
         children: h.NW.string(h.t["ETE/oK"])
       })]
     })]

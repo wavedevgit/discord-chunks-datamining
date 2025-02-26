@@ -235,7 +235,7 @@ let F = e => {
     } = (0, a.cj)([g.Z], () => ({
       storeMemberCount: g.Z.getMemberCount(S),
       storeOnlineCount: g.Z.getOnlineCount(S)
-    })), [H, q] = l.useState(null !== (t = null == r ? void 0 : r.formFields) && void 0 !== t ? t : []), [J, Y] = l.useState(!1), [X, K] = l.useState(null), [Q, $] = l.useState(""), [ee, et] = l.useState(""), [ei, en] = l.useState(null), [el, er] = l.useState(null), es = null !== (i = null == V ? void 0 : V.hasFeature(b.oNc.CLAN)) && void 0 !== i && i, {
+    })), [H, q] = l.useState(null !== (t = null == r ? void 0 : r.formFields) && void 0 !== t ? t : []), [J, Y] = l.useState(!1), [K, X] = l.useState(null), [Q, $] = l.useState(""), [ee, et] = l.useState(""), [ei, en] = l.useState(null), [el, er] = l.useState(null), es = null !== (i = null == V ? void 0 : V.hasFeature(b.oNc.CLAN)) && void 0 !== i && i, {
       emojisToRender: ea,
       remainingEmojis: eo,
       numGuildEmoji: eu
@@ -292,7 +292,7 @@ let F = e => {
         Y(!1)
       }
     }, eN = async () => {
-      Y(!0), K(null);
+      Y(!0), X(null);
       let e = null != Z ? h.ZP.getMember(S, Z.id) : null;
       if (null != e && !e.isPending) {
         null == A || A(!0);
@@ -305,7 +305,7 @@ let F = e => {
       } catch (n) {
         var t, i;
         let e = null == n ? void 0 : n.body;
-        (null == e ? void 0 : null === (t = e.errors) || void 0 === t ? void 0 : t.version) != null || (null == e ? void 0 : null === (i = e.errors) || void 0 === i ? void 0 : i.form_fields) != null ? K(O.NW.string(O.t.PD09Sk)) : K(null == e ? void 0 : e.message)
+        (null == e ? void 0 : null === (t = e.errors) || void 0 === t ? void 0 : t.version) != null || (null == e ? void 0 : null === (i = e.errors) || void 0 === i ? void 0 : i.form_fields) != null ? X(O.NW.string(O.t.PD09Sk)) : X(null == e ? void 0 : e.message)
       } finally {
         Y(!1)
       }
@@ -460,11 +460,11 @@ let F = e => {
                   color: o.zxk.Colors.GREEN,
                   disabled: null == C || eg,
                   children: O.NW.string(O.t.geKm7u)
-                }), null != X && (0, n.jsx)(o.Text, {
+                }), null != K && (0, n.jsx)(o.Text, {
                   variant: "text-xs/normal",
                   color: "text-danger",
-                  children: X
-                }), null == X && M && (0, n.jsxs)("div", {
+                  children: K
+                }), null == K && M && (0, n.jsxs)("div", {
                   className: T.disclaimerFooter,
                   children: [(0, n.jsx)(o.Text, {
                     color: "header-secondary",
@@ -473,7 +473,7 @@ let F = e => {
                   }), es && (0, n.jsx)(o.Text, {
                     color: "header-secondary",
                     variant: "text-xs/normal",
-                    children: O.NW.string(O.t.FwXzw8)
+                    children: O.NW.string(O.t.VjgH0d)
                   })]
                 })]
               })

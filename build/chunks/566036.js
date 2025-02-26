@@ -20,21 +20,22 @@ let h = () => null;
 function f(e) {
   let {
     gameApplicationIds: t,
-    handleChange: n
+    handleChange: n,
+    disabled: i
   } = e, {
-    options: i,
-    matchSorterOptions: s
+    options: s,
+    matchSorterOptions: a
   } = (0, o.h)();
   return (0, r.jsx)(l.VcW, {
     multi: !0,
     hidePills: !0,
     wrapperClassName: g.selectWrapper,
-    options: i,
+    options: s,
     value: t,
     placeholder: m.NW.string(m.t.acyezc),
     onChange: n,
-    isDisabled: 20 === t.length,
-    matchSorterOptions: s,
+    isDisabled: 20 === t.length || i,
+    matchSorterOptions: a,
     clearQueryOnSelect: !0,
     customPillContainerClassName: g.pills,
     renderCustomPill: h
@@ -44,14 +45,16 @@ function f(e) {
 function b(e) {
   let {
     gameApplicationIds: t,
-    onRemoveGame: n
+    onRemoveGame: n,
+    disabled: i
   } = e;
   return 0 === t.length ? null : (0, r.jsx)("div", {
     className: g.selectedGames,
     children: t.map(e => (0, r.jsx)(d.Z, {
       applicationId: e,
       selected: !0,
-      onClick: n
+      onClick: n,
+      disabled: i
     }, e))
   })
 }
@@ -60,17 +63,18 @@ let x = [];
 function j(e) {
   var t;
   let {
-    profile: n
-  } = e, s = n.id, o = null !== (t = null == n ? void 0 : n.gameApplicationIds) && void 0 !== t ? t : x, d = i.useCallback(e => {
-    c.Z.updateGuildProfile(s, {
+    profile: n,
+    canManageGuild: s
+  } = e, o = n.id, d = null !== (t = null == n ? void 0 : n.gameApplicationIds) && void 0 !== t ? t : x, h = i.useCallback(e => {
+    c.Z.updateGuildProfile(o, {
       gameApplicationIds: e
     })
-  }, [s]), h = i.useCallback(e => {
-    let t = o.filter(t => t !== e);
-    c.Z.updateGuildProfile(s, {
+  }, [o]), j = i.useCallback(e => {
+    let t = d.filter(t => t !== e);
+    c.Z.updateGuildProfile(o, {
       gameApplicationIds: t
     })
-  }, [s, o]), j = i.useRef(o), N = i.useMemo(() => (a().isEqual(new Set(o), new Set(j.current)) || (j.current = [...o]), j.current), [o]);
+  }, [o, d]), N = i.useRef(d), v = i.useMemo(() => (a().isEqual(new Set(d), new Set(N.current)) || (N.current = [...d]), N.current), [d]);
   return (0, r.jsxs)(l.hjN, {
     className: p.section,
     children: [(0, r.jsxs)("div", {
@@ -84,15 +88,18 @@ function j(e) {
     }), (0, r.jsxs)("div", {
       className: g.sectionBody,
       children: [(0, r.jsx)(f, {
-        gameApplicationIds: o,
-        handleChange: d
+        gameApplicationIds: d,
+        handleChange: h,
+        disabled: !s
       }), (0, r.jsx)(b, {
-        gameApplicationIds: N,
-        onRemoveGame: h
+        gameApplicationIds: v,
+        onRemoveGame: j,
+        disabled: !s
       }), (0, r.jsx)(u.Z, {
-        guildId: s,
-        selectedGameApplicationIds: o,
-        onUpdateGames: d
+        guildId: o,
+        selectedGameApplicationIds: d,
+        onUpdateGames: h,
+        disabled: !s
       })]
     })]
   })

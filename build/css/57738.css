@@ -1,6 +1,6 @@
 /**
   Module ID: 57738
-  Original File Name: ce2e03d73fdb6e41
+  Original File Name: 6a30544f5472394e
 **/
 .clickable_c69b6d {
     cursor: pointer
@@ -20,7 +20,7 @@
     height: 4px;
     background-color: var(--green-360);
     border-radius: 2px;
-    box-shadow: 0 0 3px hsl(var(--black-500-hsl)/.4)
+    box-shadow: 0 0 3px var(--opacity-black-40)
 }
 
 .containerDragBefore_c69b6d:before {
@@ -653,7 +653,7 @@
 }
 
 .iconTierNone__97677 {
-    color: hsl(var(--white-500-hsl)/.2)
+    color: var(--opacity-white-20)
 }
 
 .iconTierOne__97677,.iconTierTwo__97677 {
@@ -697,7 +697,7 @@
 }
 
 .iconTierNone__85d16 {
-    color: hsl(var(--white-500-hsl)/.2)
+    color: var(--opacity-white-20)
 }
 
 .boostedGuildTierIconBackgroundWithVisibleBanner__85d16 {
@@ -1397,7 +1397,7 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: hsl(var(--black-500-hsl)/.4)
+    background-color: var(--opacity-black-40)
 }
 
 .overlay__86ab2,.overlayIcon__86ab2 {
@@ -1870,7 +1870,7 @@
 }
 
 .theme-dark .expandForeground__43dab {
-    stroke: hsl(var(--white-500-hsl)/.6)
+    stroke: var(--opacity-white-60)
 }
 
 .theme-dark .changeDetails__43dab {
@@ -2260,7 +2260,7 @@
 }
 
 .theme-dark .overflowRolesPopout__48c1c {
-    color: hsl(var(--white-500-hsl)/.8)
+    color: var(--opacity-white-80)
 }
 
 .theme-light .overflowRolesPopout__48c1c {
@@ -2384,4 +2384,4 @@
     background-image: url(/assets/436b5a86429f186a.svg)
 }
 
-/*# sourceMappingURL=ce2e03d73fdb6e41.css.map*/
+/*# sourceMappingURL=6a30544f5472394e.css.map*/

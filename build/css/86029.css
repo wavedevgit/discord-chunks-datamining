@@ -1,6 +1,6 @@
 /**
   Module ID: 86029
-  Original File Name: daaeafe47c26a28c
+  Original File Name: 8db692e4eadc75a7
 **/
 button.button__67645,span.button__67645 {
     line-height: 0;
@@ -360,7 +360,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     text-transform: uppercase;
     border-radius: 12px;
     pointer-events: auto;
-    box-shadow: 0 2px 6px hsl(var(--black-500-hsl)/.24);
+    box-shadow: 0 2px 6px var(--opacity-black-24);
     -webkit-app-region: no-drag;
     transition-property: visibility;
     transition-delay: 0s
@@ -505,7 +505,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 4px;
     background-color: var(--green-360);
     border-radius: 2px;
-    box-shadow: 0 0 3px hsl(var(--black-500-hsl)/.3)
+    box-shadow: 0 0 3px var(--opacity-black-28)
 }
 
 .centerTarget_d144f8 {
@@ -523,7 +523,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 16px;
     background-color: var(--green-360);
     border-radius: 50%;
-    box-shadow: 0 0 3px hsl(var(--black-500-hsl)/.3)
+    box-shadow: 0 0 3px var(--opacity-black-28)
 }
 
 .visual-refresh .target_d144f8.dragOver_d144f8:before {
@@ -1330,7 +1330,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .tier0Icon_eff079 {
-    color: hsl(var(--white-500-hsl)/.2)
+    color: var(--opacity-white-20)
 }
 
 :where(.visual-refresh) .container_eff079 {
@@ -1450,7 +1450,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 4px;
     background-color: var(--green-360);
     border-radius: 2px;
-    box-shadow: 0 0 3px hsl(var(--black-500-hsl)/.4)
+    box-shadow: 0 0 3px var(--opacity-black-40)
 }
 
 .containerDragBefore__29444:before {
@@ -3418,7 +3418,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 .wrapper_e03935 {
     box-sizing: border-box;
     position: relative;
-    background-color: hsl(var(--black-500-hsl)/.1);
+    background-color: var(--opacity-black-8);
     padding-bottom: 56.25%;
     border-radius: 8px;
     border: 2px solid var(--brand-500)
@@ -3445,7 +3445,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .option_e03935:hover {
     background-color: var(--brand-500);
-    box-shadow: 0 2px 0 hsl(var(--black-500-hsl)/.3);
+    box-shadow: 0 2px 0 var(--opacity-black-28);
     opacity: .8
 }
 
@@ -3509,7 +3509,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 .selected_e03935.option_e03935 {
     background-color: var(--brand-500);
     border-color: var(--brand-500);
-    box-shadow: 0 2px 0 hsl(var(--black-500-hsl)/.3);
+    box-shadow: 0 2px 0 var(--opacity-black-28);
     opacity: 1
 }
 
@@ -4205,4 +4205,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=daaeafe47c26a28c.css.map*/
+/*# sourceMappingURL=8db692e4eadc75a7.css.map*/

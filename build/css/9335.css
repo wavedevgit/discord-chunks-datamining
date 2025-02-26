@@ -1,6 +1,6 @@
 /**
   Module ID: 9335
-  Original File Name: 358cd3e7d5d36894
+  Original File Name: 5c210cd35deb73bb
 **/
 .icon20px__69362 {
     width: 20px;
@@ -240,7 +240,7 @@
 }
 
 .activityOverlay_fb7f3a {
-    background: hsl(var(--black-500-hsl)/.6);
+    background: var(--opacity-black-60);
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -782,4 +782,4 @@
     height: calc(var(--custom-activity-shelf-modal-modal-max-height) - var(--custom-activity-shelf-modal-modal-header-without-description-height) - var(--custom-activity-shelf-modal-divider-height))
 }
 
-/*# sourceMappingURL=358cd3e7d5d36894.css.map*/
+/*# sourceMappingURL=5c210cd35deb73bb.css.map*/

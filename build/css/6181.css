@@ -1,6 +1,6 @@
 /**
   Module ID: 6181
-  Original File Name: 67ac9a153c100387
+  Original File Name: 620082ad5b76581a
 **/
 .container__5537c {
     min-width: 100%;
@@ -431,7 +431,7 @@
 }
 
 .imageUploaderInner_e4d0bf:focus-within,.imageUploaderInner_e4d0bf:hover {
-    box-shadow: inset 0 0 120px hsl(var(--black-500-hsl)/.75)
+    box-shadow: inset 0 0 120px var(--opacity-black-76)
 }
 
 .imageUploaderInner_e4d0bf:focus-within .imageUploaderAcronym_e4d0bf,.imageUploaderInner_e4d0bf:hover .imageUploaderAcronym_e4d0bf {
@@ -1143,4 +1143,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=67ac9a153c100387.css.map*/
+/*# sourceMappingURL=620082ad5b76581a.css.map*/

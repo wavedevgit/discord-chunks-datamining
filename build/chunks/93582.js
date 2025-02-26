@@ -1,7 +1,10 @@
-/** Chunk was on 86029 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  q: () => function e(t) {
-    return "string" == typeof t || "number" == typeof t ? t : t instanceof Array ? t.map(e).join("") : r.isValidElement(t) ? e(t.props.children) : void 0
-  }
+  q: () => i
 });
-var r = n(192379)
+var r = n(192379);
+
+function i(e) {
+  return "string" == typeof e || "number" == typeof e ? e : e instanceof Array ? e.map(i).join("") : r.isValidElement(e) ? i(e.props.children) : void 0
+}

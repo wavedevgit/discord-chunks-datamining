@@ -33,7 +33,7 @@ var r = n(200651),
   E = n(388032),
   T = n(588827);
 
-function D(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function D(e) {
   }
   return e
 }
-let A = {
+let D = {
   analyticsSource: {
     page: w.ZY5.GUILD_CHANNEL,
     section: w.jXE.CHANNEL_LIST,
@@ -69,18 +69,18 @@ function R() {
     [k, M] = i.useState(!1),
     {
       favoriteServerMuted: G,
-      favoriteChannels: B
+      favoriteChannels: U
     } = (0, s.cj)([P.Z], () => ({
       favoriteChannels: P.Z.getFavoriteChannels(),
       favoriteServerMuted: P.Z.favoriteServerMuted
     })),
-    U = (0, s.e7)([_.Z], () => _.Z.getChannelId(w.I_8)),
-    W = (0, s.e7)([j.Z], () => j.Z.getChannel(U)),
+    B = (0, s.e7)([_.Z], () => _.Z.getChannelId(w.I_8)),
+    W = (0, s.e7)([j.Z], () => j.Z.getChannel(B)),
     V = (0, v.Z)(e => e.guildId) === w.I_8,
     {
       badge: F,
       unread: H
-    } = (0, N.Z)(B),
+    } = (0, N.Z)(U),
     z = function(e) {
       let t = (0, s.e7)([_.Z], () => _.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
@@ -111,9 +111,9 @@ function R() {
         isCurrentUserConnected: n,
         activity: g
       })
-    }(B),
-    q = F > 0 ? (0, y.N)(F) : null,
-    Y = (0, f.Q3)("FavoritesButton"),
+    }(U),
+    Y = F > 0 ? (0, y.N)(F) : null,
+    q = (0, f.Q3)("FavoritesButton"),
     Q = i.useCallback(() => {
       L()
     }, [L]);
@@ -127,17 +127,17 @@ function R() {
       onShow: Q,
       children: (0, r.jsx)(I.S, {
         children: (0, r.jsx)(c.aRk, {
-          selected: Y || V || k,
+          selected: q || V || k,
           upperBadge: z,
-          lowerBadge: q,
-          children: (0, r.jsx)(c.LYs, (e = D({}, l), t = t = {
+          lowerBadge: Y,
+          children: (0, r.jsx)(c.LYs, (e = A({}, l), t = t = {
             ariaLabel: E.NW.formatToPlainString(E.t["/uzRsr"], {
               guildName: E.NW.string(E.t.wMWycn),
               mentions: F
             }),
             to: {
-              pathname: w.Z5c.CHANNEL(w.I_8, U),
-              state: A
+              pathname: w.Z5c.CHANNEL(w.I_8, B),
+              state: D
             },
             selected: V || k,
             onMouseEnter: () => M(!0),
@@ -150,7 +150,7 @@ function R() {
                 let {
                   default: e
                 } = await n.e("3190").then(n.bind(n, 631981));
-                return t => (0, r.jsx)(e, D({}, t))
+                return t => (0, r.jsx)(e, A({}, t))
               })
             },
             children: (0, r.jsx)("div", {

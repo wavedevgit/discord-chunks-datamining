@@ -32,22 +32,22 @@ var r, i = n(200651),
   w = n(131704),
   E = n(592125),
   T = n(796974),
-  D = n(984933),
-  A = n(914010),
+  A = n(984933),
+  D = n(914010),
   R = n(540126),
   L = n(734307),
   k = n(854444),
   M = n(761091),
   G = n(301342),
-  B = n(906817),
-  U = n(429122),
+  U = n(906817),
+  B = n(429122),
   W = n(285573),
   V = n(995993),
   F = n(910595),
   H = n(466935),
   z = n(120818),
-  q = n(61642),
-  Y = n(848442),
+  Y = n(61642),
+  q = n(848442),
   Q = n(53425),
   K = n(424785),
   J = n(770202),
@@ -432,7 +432,7 @@ class ef extends(r = l.PureComponent) {
         guildChannels: n,
         isRefreshEnabled: r
       } = this.props;
-      return (0, B.EM)(e, t, n, !!r)
+      return (0, U.EM)(e, t, n, !!r)
     }), ec(this, "getSectionFooterHeight", e => {
       let {
         guildChannels: t,
@@ -442,7 +442,7 @@ class ef extends(r = l.PureComponent) {
         optInEnabled: l,
         guildChannelsVersion: o
       } = this.props;
-      return (0, U.dt)({
+      return (0, B.dt)({
         sectionIndex: e,
         guildChannels: t,
         guildChannelsVersion: o,
@@ -523,14 +523,14 @@ class ef extends(r = l.PureComponent) {
         selectedChannelId: o,
         disableManageChannels: a
       } = this.props;
-      return (0, i.jsx)(B.ZP, {
+      return (0, i.jsx)(U.ZP, {
         sectionIndex: t,
         guild: l,
         guildChannels: n,
         guildChannelsVersion: r,
         selectedChannelId: o,
         disableManageChannels: a
-      }, (0, B.WW)(t, n))
+      }, (0, U.WW)(t, n))
     }), ec(this, "renderRow", e => {
       let {
         section: t,
@@ -556,7 +556,7 @@ class ef extends(r = l.PureComponent) {
           case er.z.GUILD_HUB_HEADER_OPTIONS:
             return (0, i.jsx)(C.Z, {
               guild: r,
-              channel: D.ZP.getDefaultChannel(r.id)
+              channel: A.ZP.getDefaultChannel(r.id)
             }, er.z.GUILD_HUB_HEADER_OPTIONS);
           case er.z.GUILD_PREMIUM_PROGRESS_BAR:
             let l = e.getRows();
@@ -575,12 +575,12 @@ class ef extends(r = l.PureComponent) {
               selected: a === er.z.GUILD_SCHEDULED_EVENTS
             }, er.z.GUILD_SCHEDULED_EVENTS);
           case er.z.GUILD_ROLE_SUBSCRIPTIONS:
-            return (0, i.jsx)(q.Z, {
+            return (0, i.jsx)(Y.Z, {
               guild: r,
               selected: a === eo.oC.ROLE_SUBSCRIPTIONS
             }, er.z.GUILD_ROLE_SUBSCRIPTIONS);
           case er.z.GUILD_SHOP:
-            return (0, i.jsx)(Y.Z, {
+            return (0, i.jsx)(q.Z, {
               guild: r,
               selected: a === eo.oC.GUILD_SHOP
             }, er.z.GUILD_SHOP);
@@ -722,7 +722,7 @@ class ef extends(r = l.PureComponent) {
         optInEnabled: s,
         guildId: c
       } = this.props;
-      return (0, i.jsx)(U.ZP, {
+      return (0, i.jsx)(B.ZP, {
         guildId: c,
         guildChannels: n,
         guildChannelsVersion: r,
@@ -731,7 +731,7 @@ class ef extends(r = l.PureComponent) {
         selectedChannelId: o,
         selectedVoiceChannelId: a,
         optInEnabled: s
-      }, (0, U.eo)(t, n, s))
+      }, (0, B.eo)(t, n, s))
     }), ec(this, "getAnchorId", (e, t) => {
       var n, r, i;
       let {
@@ -768,7 +768,7 @@ let eg = e => {
     selectedVoiceChannelId: r
   } = e, o = (0, u.e7)([g.Z], () => g.Z.keyboardModeEnabled), {
     analyticsLocations: a
-  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([E.Z], () => E.Z.getChannel(n)), p = (0, u.e7)([E.Z], () => E.Z.getChannel(r)), h = (0, u.e7)([A.Z], () => A.Z.getGuildId()), y = (0, P.DM)(t), O = l.useRef(null), j = l.useCallback((e, t) => {
+  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([E.Z], () => E.Z.getChannel(n)), p = (0, u.e7)([E.Z], () => E.Z.getChannel(r)), h = (0, u.e7)([D.Z], () => D.Z.getGuildId()), y = (0, P.DM)(t), O = l.useRef(null), j = l.useCallback((e, t) => {
     let n = O.current;
     if (null != n) {
       if (el.Xyh.test(t) || (0, eo.AB)(t)) n.scrollToChannel(t, !1, 2 * ei.yE, () => {

@@ -1,6 +1,6 @@
 /**
   Module ID: 2026
-  Original File Name: 44bac21800f10de0
+  Original File Name: 865616cdfe8e943a
 **/
 .buttonContent_a83ec9 {
     width: 24px;
@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: hsl(var(--black-500-hsl)/.85);
+    background-color: var(--opacity-black-84);
     border-radius: 50%;
     padding: 0
 }
@@ -412,7 +412,7 @@
 }
 
 .unlockDiscountButton_c50f62:hover {
-    background-color: hsl(var(--white-500-hsl)/.1)
+    background-color: var(--opacity-white-8)
 }
 
 .lightText_c50f62 {
@@ -463,4 +463,4 @@
     opacity: .7
 }
 
-/*# sourceMappingURL=44bac21800f10de0.css.map*/
+/*# sourceMappingURL=865616cdfe8e943a.css.map*/

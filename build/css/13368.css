@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: a103e306796ba503
+  Original File Name: c8e4b1c2a3111dbc
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -1184,7 +1184,7 @@
 }
 
 .overlayButton__2f4f7:hover {
-    background-color: hsl(var(--black-500-hsl)/.7)
+    background-color: var(--opacity-black-68)
 }
 
 .overlayButton__2f4f7.idle__2f4f7 {
@@ -1246,13 +1246,13 @@
 }
 
 .status__2f4f7.interactive__2f4f7:hover {
-    background-color: hsl(var(--black-500-hsl)/.8)
+    background-color: var(--opacity-black-80)
 }
 
 .gameIconContainer__2f4f7 {
     width: 40px;
     height: 40px;
-    background-color: hsl(var(--black-500-hsl)/.55);
+    background-color: var(--opacity-black-56);
     border-radius: 50%;
     padding: 4px;
     margin-left: 8px;
@@ -1339,7 +1339,7 @@
 }
 
 .selectedScreen__2f4f7 {
-    background: hsl(var(--black-500-hsl)/.6);
+    background: var(--opacity-black-60);
     justify-content: center;
     top: 0;
     right: 0;
@@ -1358,7 +1358,7 @@
 }
 
 .toggleMute__2f4f7.interactive__2f4f7:hover {
-    background-color: hsl(var(--black-500-hsl)/.8)
+    background-color: var(--opacity-black-80)
 }
 
 .hidden__2f4f7 {
@@ -2304,7 +2304,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: hsl(var(--black-500-hsl)/.6);
+    background: var(--opacity-black-60);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2379,7 +2379,7 @@
 }
 
 .splash_b41471 {
-    background: hsl(var(--black-500-hsl)/.6);
+    background: var(--opacity-black-60);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2499,7 +2499,7 @@
     line-height: 12px;
     font-size: 12px;
     font-weight: 500;
-    color: hsl(var(--white-500-hsl)/.8)
+    color: var(--opacity-white-80)
 }
 
 .textLeft_c8b06d,.textRight_c8b06d {
@@ -3134,7 +3134,7 @@
 }
 
 .theme-dark .previewHover__6da2d {
-    background: hsl(var(--black-500-hsl)/.6)
+    background: var(--opacity-black-60)
 }
 
 .theme-light .watchButton__6da2d {
@@ -3656,4 +3656,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     pointer-events: auto
 }
 
-/*# sourceMappingURL=a103e306796ba503.css.map*/
+/*# sourceMappingURL=c8e4b1c2a3111dbc.css.map*/

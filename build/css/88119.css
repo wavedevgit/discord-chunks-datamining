@@ -1,6 +1,6 @@
 /**
   Module ID: 88119
-  Original File Name: c52592122b954ced
+  Original File Name: ce9cca3e3ad24f95
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -1432,7 +1432,7 @@ strong {
 }
 
 .theme-dark .footerSeparator_cba592 {
-    box-shadow: 0 -1px 0 hsl(var(--white-500-hsl)/.04)
+    box-shadow: 0 -1px 0 var(--opacity-white-4)
 }
 
 .theme-light .errorState_cba592 {
@@ -2018,7 +2018,7 @@ strong {
 }
 
 .overlayButton__2f4f7:hover {
-    background-color: hsl(var(--black-500-hsl)/.7)
+    background-color: var(--opacity-black-68)
 }
 
 .overlayButton__2f4f7.idle__2f4f7 {
@@ -2080,13 +2080,13 @@ strong {
 }
 
 .status__2f4f7.interactive__2f4f7:hover {
-    background-color: hsl(var(--black-500-hsl)/.8)
+    background-color: var(--opacity-black-80)
 }
 
 .gameIconContainer__2f4f7 {
     width: 40px;
     height: 40px;
-    background-color: hsl(var(--black-500-hsl)/.55);
+    background-color: var(--opacity-black-56);
     border-radius: 50%;
     padding: 4px;
     margin-left: 8px;
@@ -2173,7 +2173,7 @@ strong {
 }
 
 .selectedScreen__2f4f7 {
-    background: hsl(var(--black-500-hsl)/.6);
+    background: var(--opacity-black-60);
     justify-content: center;
     top: 0;
     right: 0;
@@ -2192,7 +2192,7 @@ strong {
 }
 
 .toggleMute__2f4f7.interactive__2f4f7:hover {
-    background-color: hsl(var(--black-500-hsl)/.8)
+    background-color: var(--opacity-black-80)
 }
 
 .hidden__2f4f7 {
@@ -3427,7 +3427,7 @@ strong {
     left: 0;
     right: 0;
     bottom: 0;
-    background: hsl(var(--black-500-hsl)/.6);
+    background: var(--opacity-black-60);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3502,7 +3502,7 @@ strong {
 }
 
 .splash_b41471 {
-    background: hsl(var(--black-500-hsl)/.6);
+    background: var(--opacity-black-60);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3639,7 +3639,7 @@ strong {
     animation-name: Shine_df4aaf;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    color: hsl(var(--white-500-hsl)/.1)
+    color: var(--opacity-white-8)
 }
 
 @keyframes Shine_df4aaf {
@@ -4703,7 +4703,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .screenMessage_bfe55a {
-    background-color: hsl(var(--black-500-hsl)/.6);
+    background-color: var(--opacity-black-60);
     position: absolute;
     top: 0;
     right: 0;
@@ -6847,7 +6847,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .addReactButton__34c2c:hover,.buttonInner__34c2c:hover {
     background-color: var(--background-primary);
-    border-color: hsl(var(--white-500-hsl)/.2);
+    border-color: var(--opacity-white-20);
     color: var(--interactive-active)
 }
 
@@ -9159,11 +9159,11 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .signTextLeft__66682 .signButton__66682:focus .signCarotCustomColors__66682,.signTextLeft__66682 .signButton__66682:hover .signCarotCustomColors__66682 {
-    border-color: var(--custom-clan-hover-bg,hsl(var(--black-500-hsl)/.3))
+    border-color: var(--custom-clan-hover-bg,var(--opacity-black-28))
 }
 
 .signTextLeft__66682 .signButton__66682:active .signCarotCustomColors__66682 {
-    border-color: var(--custom-clan-active-bg,hsl(var(--black-500-hsl)/.35))
+    border-color: var(--custom-clan-active-bg,var(--opacity-black-36))
 }
 
 .signTextRight__66682 {
@@ -9189,11 +9189,11 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .signTextRight__66682 .signButton__66682:focus .signCarotCustomColors__66682,.signTextRight__66682 .signButton__66682:hover .signCarotCustomColors__66682 {
-    border-color: var(--custom-clan-hover-bg,hsl(var(--black-500-hsl)/.3))
+    border-color: var(--custom-clan-hover-bg,var(--opacity-black-28))
 }
 
 .signTextRight__66682 .signButton__66682:active .signCarotCustomColors__66682 {
-    border-color: var(--custom-clan-active-bg,hsl(var(--black-500-hsl)/.35))
+    border-color: var(--custom-clan-active-bg,var(--opacity-black-36))
 }
 
 .signHintHelperText__66682 {
@@ -10055,7 +10055,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     width: 400px;
     z-index: 100;
     border-left: 1px solid var(--background-secondary);
-    filter: drop-shadow(0 8px 40px hsl(var(--black-500-hsl)/.32))
+    filter: drop-shadow(0 8px 40px var(--opacity-black-32))
 }
 
 .notFloating__01ae2 {
@@ -14947,7 +14947,7 @@ div.profileThemedContainer__656be {
     max-height: 92px;
     margin-right: 16px;
     margin-bottom: 16px;
-    filter: drop-shadow(0 8px 8px hsl(var(--black-500-hsl)/.32))
+    filter: drop-shadow(0 8px 8px var(--opacity-black-32))
 }
 
 .coachtip_b61b37,.coachtipContent_b61b37 {
@@ -14992,7 +14992,7 @@ div.profileThemedContainer__656be {
 
 .popout_af3b89 {
     width: 348px;
-    filter: drop-shadow(0 8px 8px hsl(var(--black-500-hsl)/.32))
+    filter: drop-shadow(0 8px 8px var(--opacity-black-32))
 }
 
 .hero_af3b89,.popout_af3b89 {
@@ -15426,4 +15426,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=c52592122b954ced.css.map*/
+/*# sourceMappingURL=ce9cca3e3ad24f95.css.map*/

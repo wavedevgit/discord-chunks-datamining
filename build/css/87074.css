@@ -1,6 +1,6 @@
 /**
   Module ID: 87074
-  Original File Name: 93e10cd49a2664f6
+  Original File Name: ebec2e175fc463e3
 **/
 .modal__038c3 {
     width: 650px
@@ -242,19 +242,19 @@
 }
 
 .theme-dark .gifGrid__54675:after {
-    background-color: hsl(var(--black-500-hsl)/.65)
+    background-color: var(--opacity-black-64)
 }
 
 .theme-dark .option__54675:hover.imageUploadOption__54675:before {
-    background-color: hsl(var(--black-500-hsl)/.1)
+    background-color: var(--opacity-black-8)
 }
 
 .theme-dark .option__54675:hover .gifGrid__54675:after {
-    background-color: hsl(var(--black-500-hsl)/.7)
+    background-color: var(--opacity-black-68)
 }
 
 .theme-light .gifGrid__54675:after {
-    background-color: hsl(var(--white-500-hsl)/.65)
+    background-color: var(--opacity-white-64)
 }
 
 .theme-light .option__54675:hover {
@@ -262,7 +262,7 @@
 }
 
 .theme-light .option__54675:hover .gifGrid__54675:after {
-    background-color: hsl(var(--white-500-hsl)/.55)
+    background-color: var(--opacity-white-56)
 }
 
 .gif__54675 {
@@ -441,4 +441,4 @@
     margin-top: var(--spacing-8)
 }
 
-/*# sourceMappingURL=93e10cd49a2664f6.css.map*/
+/*# sourceMappingURL=ebec2e175fc463e3.css.map*/

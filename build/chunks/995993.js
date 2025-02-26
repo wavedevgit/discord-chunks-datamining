@@ -74,8 +74,8 @@ function x(e) {
         }), i))
       }
     })
-  }, [t]), D = null;
-  return S && !I && !Z || x || w || (D = (0, r.jsx)(s.IGR, {
+  }, [t]), A = null;
+  return S && !I && !Z || x || w || (A = (0, r.jsx)(s.IGR, {
     color: a.Z.colors.BADGE_BRAND_BG.css,
     text: _.NW.string(_.t.y2b7CA),
     className: C.newChannel
@@ -90,6 +90,6 @@ function x(e) {
     selected: x,
     onClick: E,
     onContextMenu: T,
-    trailing: D
+    trailing: A
   })
 }

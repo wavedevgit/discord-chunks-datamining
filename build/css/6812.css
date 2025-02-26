@@ -1,6 +1,6 @@
 /**
   Module ID: 6812
-  Original File Name: ae888def42e67d97
+  Original File Name: c67c93d8d38da738
 **/
 .availabilityIndicator__40463 {
     display: flex;
@@ -273,19 +273,19 @@
 }
 
 .theme-dark .gifGrid__54675:after {
-    background-color: hsl(var(--black-500-hsl)/.65)
+    background-color: var(--opacity-black-64)
 }
 
 .theme-dark .option__54675:hover.imageUploadOption__54675:before {
-    background-color: hsl(var(--black-500-hsl)/.1)
+    background-color: var(--opacity-black-8)
 }
 
 .theme-dark .option__54675:hover .gifGrid__54675:after {
-    background-color: hsl(var(--black-500-hsl)/.7)
+    background-color: var(--opacity-black-68)
 }
 
 .theme-light .gifGrid__54675:after {
-    background-color: hsl(var(--white-500-hsl)/.65)
+    background-color: var(--opacity-white-64)
 }
 
 .theme-light .option__54675:hover {
@@ -293,7 +293,7 @@
 }
 
 .theme-light .option__54675:hover .gifGrid__54675:after {
-    background-color: hsl(var(--white-500-hsl)/.55)
+    background-color: var(--opacity-white-56)
 }
 
 .gif__54675 {
@@ -472,4 +472,4 @@
     margin-top: var(--spacing-8)
 }
 
-/*# sourceMappingURL=ae888def42e67d97.css.map*/
+/*# sourceMappingURL=c67c93d8d38da738.css.map*/

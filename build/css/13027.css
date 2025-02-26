@@ -1,6 +1,6 @@
 /**
   Module ID: 13027
-  Original File Name: ad718b2aec467067
+  Original File Name: 94c59a52d515fad2
 **/
 .section__82d84 {
     margin-bottom: 16px
@@ -108,8 +108,8 @@
 }
 
 .theme-dark .container_f89b2c {
-    background-color: hsl(var(--black-500-hsl)/.1);
-    border-color: hsl(var(--black-500-hsl)/.3)
+    background-color: var(--opacity-black-8);
+    border-color: var(--opacity-black-28)
 }
 
 .visual-refresh .container_f89b2c {
@@ -250,4 +250,4 @@
     min-height: 0
 }
 
-/*# sourceMappingURL=ad718b2aec467067.css.map*/
+/*# sourceMappingURL=94c59a52d515fad2.css.map*/

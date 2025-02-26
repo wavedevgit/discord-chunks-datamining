@@ -29,7 +29,7 @@ let p = function(e) {
     let e = setTimeout(() => (0, u.uL)((0, s.M)()), 3e3);
     return () => clearTimeout(e)
   }, [p]);
-  let m = i.useCallback(async (e, t) => {
+  let f = i.useCallback(async (e, t) => {
     try {
       g(2), await o(e, t), g(3)
     } catch (e) {
@@ -47,7 +47,7 @@ let p = function(e) {
           children: d.NW.string(d.t.SXCxyc)
         }), (0, r.jsx)(c.zx, {
           className: h.marginTop40,
-          onClick: () => m(t, n),
+          onClick: () => f(t, n),
           children: d.NW.string(d.t.UQvCf3)
         }), (0, r.jsx)(c.zx, {
           className: a()(h.marginTop8, h.marginCenterHorz),

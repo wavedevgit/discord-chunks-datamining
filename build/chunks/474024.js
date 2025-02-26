@@ -19,28 +19,29 @@ var r = n(200651),
 function h(e) {
   var t;
   let {
-    profile: n
-  } = e, h = n.id, f = s.Y.VISIBLE.has(n.visibility), b = (0, a.e7)([o.Z], () => {
+    profile: n,
+    canManageGuild: h
+  } = e, f = n.id, b = s.Y.VISIBLE.has(n.visibility), x = (0, a.e7)([o.Z], () => {
     var e;
-    return (null === (e = o.Z.getProfile(h)) || void 0 === e ? void 0 : e.visibility) === c.k.PUBLIC_WITH_RECRUITMENT
-  }, [h]), x = i.useCallback(() => {
-    f ? u.Z.updateGuildProfile(h, {
+    return (null === (e = o.Z.getProfile(f)) || void 0 === e ? void 0 : e.visibility) === c.k.PUBLIC_WITH_RECRUITMENT
+  }, [f]), j = i.useCallback(() => {
+    b ? u.Z.updateGuildProfile(f, {
       visibility: c.k.RESTRICTED
-    }) : u.Z.updateGuildProfile(h, {
-      visibility: b ? c.k.PUBLIC_WITH_RECRUITMENT : c.k.PUBLIC
+    }) : u.Z.updateGuildProfile(f, {
+      visibility: x ? c.k.PUBLIC_WITH_RECRUITMENT : c.k.PUBLIC
     })
-  }, [h, b, f]), j = i.useCallback(() => {
+  }, [f, x, b]), N = i.useCallback(() => {
     u.Z.setSection(m.pNK.ACCESS, m.KsC.ACCESS_DISCOVERABLE)
-  }, []), N = null === (t = n.features) || void 0 === t ? void 0 : t.includes(m.oNc.DISCOVERABLE);
+  }, []), v = null === (t = n.features) || void 0 === t ? void 0 : t.includes(m.oNc.DISCOVERABLE);
   return (0, r.jsxs)(l.hjN, {
     className: p.twoColumnContainer,
     children: [(0, r.jsxs)("div", {
       className: p.column,
       children: [(0, r.jsx)(l.j7V, {
-        onChange: x,
-        value: !f,
+        onChange: j,
+        value: !b,
         hideBorder: !0,
-        disabled: N,
+        disabled: v || !h,
         children: g.NW.string(g.t.fjHWen)
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
@@ -50,12 +51,12 @@ function h(e) {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: g.NW.string(g.t.YtCViY)
-      }), N && (0, r.jsx)(l.Text, {
+      }), v && (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: g.NW.format(g.t.R8jY9v, {
           accessLink: (e, t) => (0, r.jsx)(l.eee, {
-            onClick: j,
+            onClick: N,
             children: e
           }, t)
         })
@@ -63,7 +64,7 @@ function h(e) {
     }), (0, r.jsx)("div", {
       className: p.column,
       children: (0, r.jsx)(d.Z, {
-        guildId: h,
+        guildId: f,
         name: n.name
       })
     })]

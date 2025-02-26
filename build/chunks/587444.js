@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => f,
-  u: () => m
+  Z: () => m,
+  u: () => f
 });
 var r = n(200651);
 n(192379);
@@ -17,7 +17,7 @@ var i = n(120356),
   p = n(968693),
   g = n(455812);
 
-function m(e) {
+function f(e) {
   let {
     text: t,
     buttonCta: i,
@@ -66,7 +66,7 @@ function m(e) {
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     text: t,
     buttonCta: n,
@@ -75,7 +75,7 @@ function f(e) {
   } = e;
   return (0, r.jsx)(s.ZP, {
     theme: i,
-    children: (0, r.jsx)(m, {
+    children: (0, r.jsx)(f, {
       text: t,
       buttonCta: n,
       onClick: o

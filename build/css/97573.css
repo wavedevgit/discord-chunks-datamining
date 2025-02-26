@@ -1,6 +1,6 @@
 /**
   Module ID: 97573
-  Original File Name: 3131eefeebefe7f5
+  Original File Name: dd42bef87dbd2d75
 **/
 .button_e18686 {
     text-indent: -9999em;
@@ -126,7 +126,7 @@
 }
 
 .theme-dark .row_a429ea:after {
-    background-color: hsl(var(--white-500-hsl)/.04)
+    background-color: var(--opacity-white-4)
 }
 
 .theme-light .row_a429ea:after {
@@ -164,4 +164,4 @@
     border-color: null
 }
 
-/*# sourceMappingURL=3131eefeebefe7f5.css.map*/
+/*# sourceMappingURL=dd42bef87dbd2d75.css.map*/

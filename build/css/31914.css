@@ -1,6 +1,6 @@
 /**
   Module ID: 31914
-  Original File Name: 9d241bd917791009
+  Original File Name: 9c1c08549ff30198
 **/
 .wrapper__1bb33 {
     position: relative
@@ -260,7 +260,7 @@
 }
 
 .shine__884d1 {
-    color: hsl(var(--white-500-hsl)/.5)
+    color: var(--opacity-white-48)
 }
 
 .confirmation__2db04 {
@@ -859,4 +859,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=9d241bd917791009.css.map*/
+/*# sourceMappingURL=9c1c08549ff30198.css.map*/

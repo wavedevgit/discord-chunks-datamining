@@ -21,8 +21,8 @@ var i = n(120356),
   O = n(671533),
   S = n(259580),
   P = n(358085),
-  p = n(962086),
-  A = n(160404),
+  A = n(962086),
+  p = n(160404),
   R = n(889695),
   C = n(981631),
   f = n(176505),
@@ -66,11 +66,11 @@ function b() {
       backNavigationSection: i,
       isFullServerPreview: l,
       isServerShopPreview: P
-    } = (0, o.cj)([A.Z], () => ({
-      viewingRoles: null != e ? A.Z.getViewingRoles(e) : null,
-      backNavigationSection: A.Z.getBackNavigationSection(e),
-      isFullServerPreview: null != e && A.Z.isFullServerPreview(e),
-      isServerShopPreview: null != e && A.Z.isViewingServerShop(e)
+    } = (0, o.cj)([p.Z], () => ({
+      viewingRoles: null != e ? p.Z.getViewingRoles(e) : null,
+      backNavigationSection: p.Z.getBackNavigationSection(e),
+      isFullServerPreview: null != e && p.Z.isFullServerPreview(e),
+      isServerShopPreview: null != e && p.Z.isViewingServerShop(e)
     }));
   if (null == n || null == e) return null;
   let b = function(e) {
@@ -91,7 +91,7 @@ function b() {
       let {
         backToSettings: n
       } = t;
-      null != e && (A.Z.isFullServerPreview(e) && (0, N.uL)(C.Z5c.CHANNEL(e)), u.ZP.shouldShowOnboarding(e) && (c.Z.finishOnboarding(e), (0, E.EI)(e)), (0, p.mL)(e), n && _.Z.open(e, i), i === C.pNK.ROLE_SUBSCRIPTIONS && (0, d.GN)(e))
+      null != e && (p.Z.isFullServerPreview(e) && (0, N.uL)(C.Z5c.CHANNEL(e)), u.ZP.shouldShowOnboarding(e) && (c.Z.finishOnboarding(e), (0, E.EI)(e)), (0, A.mL)(e), n && _.Z.open(e, i), i === C.pNK.ROLE_SUBSCRIPTIONS && (0, d.GN)(e))
     };
   return (0, r.jsxs)(s.qXd, {
     color: s.DM8.BRAND,
@@ -171,7 +171,7 @@ function k(e) {
   let {
     guildId: t
   } = e;
-  return (0, o.e7)([A.Z], () => A.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
+  return (0, o.e7)([p.Z], () => p.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
     className: l()(h.settingsWrapper, {
       [h.windows]: (0, P.isWindows)(),
       [h.osx]: (0, P.isMac)()

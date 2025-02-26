@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(778569),
   p = n(100527),
   h = n(906732),
-  v = n(835473),
-  b = n(314897),
+  b = n(835473),
+  v = n(314897),
   g = n(592125),
   y = n(594174),
   E = n(849171),
@@ -33,7 +33,7 @@ function x(e) {
     analyticsLocations: o
   } = (0, h.ZP)(p.Z.PRESENCE_ACTIVITY_TILE), {
     activity: a
-  } = t, s = a.application_id, [c] = (0, v.Z)([s]), {
+  } = t, s = a.application_id, [c] = (0, b.Z)([s]), {
     url: u
   } = (0, m.Z)({
     applicationId: s,
@@ -67,27 +67,27 @@ function Z(e) {
     channelId: n,
     participant: l,
     applicationId: m
-  } = e, p = (0, E.V_)(t), [x] = (0, E.Ym)(t), Z = (0, a.e7)([g.Z], () => g.Z.getChannel(n)), w = (0, a.e7)([y.default, b.default], () => (0, d.J)(l, b.default) ? null : y.default.getUser(l.userId)), C = i.useMemo(() => null != w ? [w] : [], [w]), P = (0, v.q)(m), {
+  } = e, p = (0, E.V_)(t), [x] = (0, E.Ym)(t), Z = (0, a.e7)([g.Z], () => g.Z.getChannel(n)), C = (0, a.e7)([y.default, v.default], () => (0, d.J)(l, v.default) ? null : y.default.getUser(l.userId)), w = i.useMemo(() => null != C ? [C] : [], [C]), P = (0, b.q)(m), {
     analyticsLocations: N
-  } = (0, h.ZP)(), I = (0, c.O)(), R = l.activity.session_id, _ = (0, f.Z)(l.activity, O.xjy.EMBEDDED) && (0, f.Z)(l.activity, O.xjy.CONTEXTLESS), [k, T] = i.useState(!1), A = null == w ? void 0 : w.id, D = i.useCallback(async e => {
-    e.stopPropagation(), null != m && null != A && (T(!0), await (0, u.Z)({
+  } = (0, h.ZP)(), I = (0, c.O)(), _ = l.activity.session_id, R = (0, f.Z)(l.activity, O.xjy.EMBEDDED) && (0, f.Z)(l.activity, O.xjy.CONTEXTLESS), [T, A] = i.useState(!1), D = null == C ? void 0 : C.id, k = i.useCallback(async e => {
+    e.stopPropagation(), null != m && null != D && (A(!0), await (0, u.Z)({
       applicationId: m,
       activityChannelId: n,
       locationObject: I.location,
       analyticsLocations: N,
-      joinUserId: A,
-      joinSessionId: R,
+      joinUserId: D,
+      joinSessionId: _,
       instanceId: void 0,
-      isContextlessActivity: _
-    }), T(!1))
-  }, [m, A, I.location, N, R, n, _]);
-  return null == Z || null == w || null == P ? null : (0, r.jsxs)("div", {
+      isContextlessActivity: R
+    }), A(!1))
+  }, [m, D, I.location, N, _, n, R]);
+  return null == Z || null == C || null == P ? null : (0, r.jsxs)("div", {
     className: j.splash,
     children: [(0, r.jsx)(E.OV, {
       avatarSize: x,
       guildId: Z.guild_id,
       channelId: Z.id,
-      users: C
+      users: w
     }), (0, r.jsx)(s.Text, {
       className: o()(j.subheader, {
         [j.small]: p === E.nR.SMALL,
@@ -95,7 +95,7 @@ function Z(e) {
       }),
       variant: "text-sm/normal",
       children: S.NW.formatToPlainString(S.t["7Uuia2"], {
-        username: w.username
+        username: C.username
       })
     }), (0, r.jsx)(s.Text, {
       className: o()(j.header, {
@@ -107,8 +107,8 @@ function Z(e) {
     }), (0, r.jsx)("div", {
       className: j.buttons,
       children: (0, r.jsx)(s.zxk, {
-        onClick: D,
-        submitting: k,
+        onClick: k,
+        submitting: T,
         size: (0, E.ac)(p),
         className: j.button,
         color: s.zxk.Colors.PRIMARY,

@@ -1,6 +1,6 @@
 /**
   Module ID: 9558
-  Original File Name: cb354a997d61033d
+  Original File Name: 42bdf83753c69963
 **/
 .container_fa0751 {
     padding: 40px 28px 24px 24px;
@@ -268,7 +268,7 @@
 }
 
 .blackoutOverlay__6f8c0 {
-    background-color: hsl(var(--black-500-hsl)/.8);
+    background-color: var(--opacity-black-80);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -277,4 +277,4 @@
     z-index: 100
 }
 
-/*# sourceMappingURL=cb354a997d61033d.css.map*/
+/*# sourceMappingURL=42bdf83753c69963.css.map*/

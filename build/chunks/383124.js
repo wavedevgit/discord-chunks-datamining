@@ -17,36 +17,41 @@ function m(e) {
   let {
     applicationId: t,
     selected: n,
-    onClick: s
+    onClick: s,
+    disabled: m
   } = e, {
-    isFetching: m,
-    coverImageUrl: g
+    isFetching: g,
+    coverImageUrl: p
   } = (0, c.$)(t, {
     coverImageHeight: 336,
     coverImageWidth: 252
-  }), p = (0, o.e7)([d.Z], () => {
+  }), h = (0, o.e7)([d.Z], () => {
     var e, n;
     return null !== (n = null === (e = d.Z.getDetectableGame(t)) || void 0 === e ? void 0 : e.name) && void 0 !== n ? n : ""
-  }), h = i.useCallback(() => {
+  }), f = i.useCallback(() => {
     null == s || s(t)
-  }, [t, s]), f = i.useMemo(() => m ? null : null == g ? (0, r.jsx)("div", {
+  }, [t, s]), b = i.useMemo(() => g ? null : null == p ? (0, r.jsx)("div", {
     className: u.gameUnknownImage,
     children: (0, r.jsx)(l.IMN, {
       size: "lg"
     })
   }) : (0, r.jsx)("img", {
     className: u.gameImage,
-    alt: p,
-    src: g
-  }), [g, m, p]);
+    alt: h,
+    src: p
+  }), [p, g, h]);
   return (0, r.jsxs)("div", {
     className: a()(u.selectedGame, {
-      [u.dimmed]: !n
+      [u.dimmed]: !n,
+      [u.disabled]: m
     }),
     children: [(0, r.jsxs)(l.P3F, {
-      onClick: h,
+      "aria-disabled": m,
+      tabIndex: m ? -1 : 0,
+      onClick: m ? void 0 : f,
       className: a()(u.gameImageBackground, {
-        [u.gameImageLoading]: m
+        [u.gameImageLoading]: g,
+        [u.disabled]: m
       }),
       children: [n && (0, r.jsx)("div", {
         className: u.checkBackground,
@@ -54,12 +59,12 @@ function m(e) {
           displayOnly: !0,
           value: n
         })
-      }), f]
+      }), b]
     }), (0, r.jsx)(l.Text, {
       className: u.gameName,
       variant: "text-xs/medium",
       color: "header-primary",
-      children: p
+      children: h
     })]
   })
 }

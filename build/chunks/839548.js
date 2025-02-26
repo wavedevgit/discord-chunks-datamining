@@ -87,7 +87,7 @@ class d extends o.Z {
       return null !== (t = e.maxPixelCount) && void 0 !== t ? t : 0
     }));
     let l = this.pickProperties(a, e);
-    this.logger.info("updateVideoQuality: ".concat(JSON.stringify(l))), this.updateVideoQualityCore(l, o)
+    this.logger.verbose("updateVideoQuality: ".concat(JSON.stringify(l))), this.updateVideoQualityCore(l, o)
   }
   applyVideoQualityMode(e) {
     if (this.context !== l.Yn.DEFAULT) return;

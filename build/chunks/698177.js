@@ -14,8 +14,8 @@ var r = n(200651),
   h = n(952802),
   p = n(388905),
   g = n(815660),
-  m = n(388032),
-  f = n(968693),
+  f = n(388032),
+  m = n(968693),
   _ = n(455812);
 let b = () => {
   let [e, t] = i.useState(""), [o, b] = i.useState(""), [N, x] = i.useState(!1), [v, I] = i.useState(!1), [E, O] = i.useState(null), [j, C] = i.useState(null), S = (0, l.e7)([d.Z], () => d.Z.getCountryCode()), y = S.code.split(" ")[0], T = async () => {
@@ -40,8 +40,8 @@ let b = () => {
     children: [(0, r.jsx)(p.Ee, {
       src: n(292824)
     }), (0, r.jsxs)(p.Dx, {
-      className: a()(_.marginTop20, f.flex, f.justifyCenter, f.alignCenter),
-      children: [m.NW.string(m.t.WWzQtb), (0, r.jsx)(s.owK, {
+      className: a()(_.marginTop20, m.flex, m.justifyCenter, m.alignCenter),
+      children: [f.NW.string(f.t.WWzQtb), (0, r.jsx)(s.owK, {
         size: "md",
         color: "currentColor",
         className: _.marginLeft8
@@ -50,14 +50,14 @@ let b = () => {
   });
   return v ? P : (0, r.jsxs)(p.ZP, {
     children: [(0, r.jsx)(p.Dx, {
-      children: m.NW.string(m.t.o4JNrK)
+      children: f.NW.string(f.t.o4JNrK)
     }), (0, r.jsx)(p.DK, {
       className: _.marginTop8,
-      children: m.NW.string(m.t.y0tVbm)
+      children: f.NW.string(f.t.y0tVbm)
     }), (0, r.jsxs)(p.gO, {
       className: _.marginTop20,
       children: [(0, r.jsx)(h.Z, {
-        label: m.NW.string(m.t.eJnn09),
+        label: f.NW.string(f.t.eJnn09),
         alpha2: S.alpha2,
         countryCode: y,
         value: e,
@@ -68,7 +68,7 @@ let b = () => {
         error: E
       }), (0, r.jsx)(p.II, {
         className: _.marginTop20,
-        label: m.NW.string(m.t.OdzNbm),
+        label: f.NW.string(f.t.OdzNbm),
         value: o,
         onChange: b,
         maxLength: g.z,
@@ -77,12 +77,12 @@ let b = () => {
         size: p.zx.Sizes.SMALL,
         look: p.zx.Looks.LINK,
         onClick: T,
-        children: m.NW.string(m.t["5b60go"])
+        children: f.NW.string(f.t["5b60go"])
       }), (0, r.jsx)(p.zx, {
         className: _.marginTop20,
         onClick: A,
         submitting: N,
-        children: m.NW.string(m.t.i4jeWV)
+        children: f.NW.string(f.t.i4jeWV)
       })]
     })]
   })

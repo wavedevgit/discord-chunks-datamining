@@ -1,7 +1,7 @@
 /** Chunk was on 86029 **/
 n.d(t, {
   CN: () => I,
-  ZP: () => A,
+  ZP: () => D,
   eP: () => E,
   hR: () => w,
   jo: () => Z
@@ -187,7 +187,7 @@ function T(e) {
   })
 }
 
-function D(e) {
+function A(e) {
   let {
     channel: t
   } = e, n = () => {
@@ -210,7 +210,7 @@ function D(e) {
     }))
   })
 }
-class A extends(r = l.PureComponent) {
+class D extends(r = l.PureComponent) {
   renderEditButton() {
     return (0, i.jsx)(w, S({}, this.props))
   }
@@ -221,7 +221,7 @@ class A extends(r = l.PureComponent) {
     return (0, i.jsx)(T, S({}, this.props))
   }
   renderAcceptSuggestionButton() {
-    return (0, i.jsx)(D, S({}, this.props))
+    return (0, i.jsx)(A, S({}, this.props))
   }
   getClassName() {
     let {
@@ -239,6 +239,6 @@ class A extends(r = l.PureComponent) {
     return I(e, t, n)
   }
 }
-P(A, "defaultProps", {
+P(D, "defaultProps", {
   isDefaultChannel: !1
 })

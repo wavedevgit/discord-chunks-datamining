@@ -1,6 +1,6 @@
 /**
   Module ID: 62229
-  Original File Name: badf9149b08fdee9
+  Original File Name: e6cb37cabace0232
 **/
 .content__72a27 {
     margin-top: -5px;
@@ -191,11 +191,11 @@
 }
 
 .signTextLeft__66682 .signButton__66682:focus .signCarotCustomColors__66682,.signTextLeft__66682 .signButton__66682:hover .signCarotCustomColors__66682 {
-    border-color: var(--custom-clan-hover-bg,hsl(var(--black-500-hsl)/.3))
+    border-color: var(--custom-clan-hover-bg,var(--opacity-black-28))
 }
 
 .signTextLeft__66682 .signButton__66682:active .signCarotCustomColors__66682 {
-    border-color: var(--custom-clan-active-bg,hsl(var(--black-500-hsl)/.35))
+    border-color: var(--custom-clan-active-bg,var(--opacity-black-36))
 }
 
 .signTextRight__66682 {
@@ -221,11 +221,11 @@
 }
 
 .signTextRight__66682 .signButton__66682:focus .signCarotCustomColors__66682,.signTextRight__66682 .signButton__66682:hover .signCarotCustomColors__66682 {
-    border-color: var(--custom-clan-hover-bg,hsl(var(--black-500-hsl)/.3))
+    border-color: var(--custom-clan-hover-bg,var(--opacity-black-28))
 }
 
 .signTextRight__66682 .signButton__66682:active .signCarotCustomColors__66682 {
-    border-color: var(--custom-clan-active-bg,hsl(var(--black-500-hsl)/.35))
+    border-color: var(--custom-clan-active-bg,var(--opacity-black-36))
 }
 
 .signHintHelperText__66682 {
@@ -634,4 +634,4 @@
     gap: 4px
 }
 
-/*# sourceMappingURL=badf9149b08fdee9.css.map*/
+/*# sourceMappingURL=e6cb37cabace0232.css.map*/

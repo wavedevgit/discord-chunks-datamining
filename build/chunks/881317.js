@@ -14,8 +14,8 @@ var r = n(200651),
   h = n(82554),
   p = n(726521),
   g = n(185625),
-  m = n(314897),
-  f = n(63063),
+  f = n(314897),
+  m = n(63063),
   _ = n(981631),
   b = n(388032),
   N = n(45738),
@@ -104,7 +104,7 @@ let E = e => {
     })
   },
   O = () => {
-    let [e, t] = i.useState(!0), [n, o] = i.useState(!1), p = (0, a.e7)([m.default], () => m.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), I = () => {
+    let [e, t] = i.useState(!0), [n, o] = i.useState(!1), p = (0, a.e7)([f.default], () => f.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), I = () => {
       (0, g.qJ)().then(() => {
         t(!1), o(!0)
       }).catch(() => {
@@ -128,7 +128,7 @@ let E = e => {
       }), (0, r.jsx)(u.DK, {
         className: x.marginBottom8,
         children: b.NW.format(b.t["532l+v"], {
-          supportURL: f.Z.getArticleURL(_.BhN.COPYRIGHT_AND_IP_POLICY)
+          supportURL: m.Z.getArticleURL(_.BhN.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, r.jsxs)("div", {
         className: N.container,

@@ -1,157 +1,157 @@
-/** Chunk was on 65936 **/
-n.d(t, {
-  Z: () => C
+/** Chunk was on 45260 **/
+n.d(l, {
+  Z: () => V
 }), n(47120);
-var r = n(200651),
+var t = n(200651),
   i = n(192379),
-  l = n(442837),
-  o = n(481060),
-  s = n(835473),
-  a = n(297781),
+  d = n(442837),
+  r = n(481060),
+  a = n(835473),
+  s = n(297781),
   c = n(443487),
-  u = n(314897),
-  d = n(594174),
-  _ = n(626135),
-  E = n(5192),
-  p = n(873128),
+  o = n(314897),
+  u = n(594174),
+  L = n(626135),
+  C = n(5192),
+  h = n(873128),
   m = n(246627),
-  h = n(709737),
-  f = n(69589),
-  g = n(531501),
-  N = n(981631),
-  O = n(701488),
-  I = n(388032),
-  b = n(498322);
+  x = n(709737),
+  v = n(69589),
+  j = n(531501),
+  f = n(981631),
+  Z = n(701488),
+  g = n(388032),
+  H = n(498322);
 
-function T(e) {
+function _(e) {
   let {
-    application: t
-  } = e, n = t.getIconURL(O.Si.LARGE), i = null == n ? null : (0, r.jsx)("img", {
-    className: b.gameIcon,
+    application: l
+  } = e, n = l.getIconURL(Z.Si.LARGE), i = null == n ? null : (0, t.jsx)("img", {
+    className: H.gameIcon,
     src: n,
     "aria-hidden": !0,
     alt: ""
   });
-  return (0, r.jsxs)("div", {
-    className: b.gameTitleContainer,
-    children: [i, (0, r.jsx)(o.Text, {
+  return (0, t.jsxs)("div", {
+    className: H.gameTitleContainer,
+    children: [i, (0, t.jsx)(r.Text, {
       variant: "text-sm/medium",
-      className: b.gameTitle,
-      children: t.name
+      className: H.gameTitle,
+      children: l.name
     })]
   })
 }
 
-function C(e) {
-  var t, n, g, O, b;
-  let C, {
-      selected: y,
-      channel: P,
-      entry: R
+function V(e) {
+  var l, n, j, Z, H;
+  let V, {
+      selected: p,
+      channel: I,
+      entry: N
     } = e,
-    A = P.guild_id,
-    v = (0, p.Z)({
-      guildId: A,
-      leaderboardId: R.extra.leaderboard_id,
+    b = I.guild_id,
+    E = (0, h.Z)({
+      guildId: b,
+      leaderboardId: N.extra.leaderboard_id,
       intervalOffset: 0
     }),
     {
-      rankChanges: x
+      rankChanges: A
     } = (0, m.Z)({
-      guildId: A,
-      leaderboardId: R.extra.leaderboard_id,
-      intervalStart: null !== (O = null == v ? void 0 : v.interval_start) && void 0 !== O ? O : ""
+      guildId: b,
+      leaderboardId: N.extra.leaderboard_id,
+      intervalStart: null !== (Z = null == E ? void 0 : E.interval_start) && void 0 !== Z ? Z : ""
     }),
-    D = (0, l.e7)([u.default], () => u.default.getId()),
-    [L, k] = i.useMemo(() => {
-      let e = x.find(e => e.userId === D),
-        t = x[0],
-        n = null != e ? e : t,
-        r = null == v ? void 0 : v.users.find(e => e.user_id === (null == n ? void 0 : n.userId));
-      return [n, r]
-    }, [v, x, D]),
-    j = (0, l.e7)([d.default], () => d.default.getUser(null == L ? void 0 : L.userId)),
-    M = E.ZP.getName(A, void 0, j);
+    R = (0, d.e7)([o.default], () => o.default.getId()),
+    [k, y] = i.useMemo(() => {
+      let e = A.find(e => e.userId === R),
+        l = A[0],
+        n = null != e ? e : l,
+        t = null == E ? void 0 : E.users.find(e => e.user_id === (null == n ? void 0 : n.userId));
+      return [n, t]
+    }, [E, A, R]),
+    P = (0, d.e7)([u.default], () => u.default.getUser(null == k ? void 0 : k.userId)),
+    G = C.ZP.getName(b, void 0, P);
   ! function(e) {
     let {
-      leaderboard: t,
+      leaderboard: l,
       guildId: n
-    } = e, r = null == t ? void 0 : t.leaderboard_id;
+    } = e, t = null == l ? void 0 : l.leaderboard_id;
     i.useEffect(() => {
-      null != r && _.default.track(N.rMx.LEADERBOARD_MEMBERLIST_CARD_VIEWED, {
-        leaderboard_id: r,
+      null != t && L.default.track(f.rMx.LEADERBOARD_MEMBERLIST_CARD_VIEWED, {
+        leaderboard_id: t,
         guild_id: n
       })
-    }, [r, n])
+    }, [t, n])
   }({
-    leaderboard: v,
-    guildId: A
+    leaderboard: E,
+    guildId: b
   });
-  let Z = (0, s.q)(null == v ? void 0 : null === (t = v.settings) || void 0 === t ? void 0 : t.application_id);
-  if (null == v || null == Z) return null;
-  if (0 === v.users.length || null == L || null == j) return (0, r.jsx)(S, {
-    application: Z,
-    selected: y
+  let T = (0, a.q)(null == E ? void 0 : null === (l = E.settings) || void 0 === l ? void 0 : l.application_id);
+  if (null == E || null == T) return null;
+  if (0 === E.users.length || null == k || null == P) return (0, t.jsx)(M, {
+    application: T,
+    selected: p
   });
   let {
-    sort_by_statistic_id: U
-  } = v.guild_settings, w = null !== (b = null == k ? void 0 : null === (g = k.statistics) || void 0 === g ? void 0 : null === (n = g[U]) || void 0 === n ? void 0 : n.value) && void 0 !== b ? b : 0, {
-    currentRank: V
-  } = L;
-  return C = L.userId === D ? I.NW.formatToPlainString(I.t["eU+JxM"], {
-    rank: V
-  }) : I.NW.formatToPlainString(I.t["8BLSQ0"], {
-    rank: V,
-    username: M
-  }), (0, r.jsxs)(c.Zb, {
-    selected: y,
-    children: [(0, r.jsxs)(c.e$, {
-      children: [(0, r.jsx)(T, {
-        application: Z
-      }), (0, r.jsx)(o.LZC, {
+    sort_by_statistic_id: D
+  } = E.guild_settings, S = null !== (H = null == y ? void 0 : null === (j = y.statistics) || void 0 === j ? void 0 : null === (n = j[D]) || void 0 === n ? void 0 : n.value) && void 0 !== H ? H : 0, {
+    currentRank: w
+  } = k;
+  return V = k.userId === R ? g.NW.formatToPlainString(g.t["eU+JxM"], {
+    rank: w
+  }) : g.NW.formatToPlainString(g.t["8BLSQ0"], {
+    rank: w,
+    username: G
+  }), (0, t.jsxs)(c.Zb, {
+    selected: p,
+    children: [(0, t.jsxs)(c.e$, {
+      children: [(0, t.jsx)(_, {
+        application: T
+      }), (0, t.jsx)(r.LZC, {
         size: 2
-      }), (0, r.jsx)(c.ll, {
-        children: C
-      }), (0, r.jsx)(a.Gk, {
-        location: a.Gt.CARD,
-        children: (0, r.jsx)(h.DC, {
-          value: w,
-          statisticId: U
+      }), (0, t.jsx)(c.ll, {
+        children: V
+      }), (0, t.jsx)(s.Gk, {
+        location: s.Gt.CARD,
+        children: (0, t.jsx)(x.DC, {
+          value: S,
+          statisticId: D
         })
       })]
-    }), (0, r.jsx)(f.Z, {
-      user: j,
-      rank: V
+    }), (0, t.jsx)(v.Z, {
+      user: P,
+      rank: w
     })]
   })
 }
 
-function S(e) {
+function M(e) {
   let {
-    selected: t,
+    selected: l,
     application: n
   } = e;
-  return (0, r.jsxs)(c.Zb, {
-    selected: t,
-    children: [(0, r.jsxs)(c.e$, {
-      children: [(0, r.jsx)(T, {
+  return (0, t.jsxs)(c.Zb, {
+    selected: l,
+    children: [(0, t.jsxs)(c.e$, {
+      children: [(0, t.jsx)(_, {
         application: n
-      }), (0, r.jsx)(o.LZC, {
+      }), (0, t.jsx)(r.LZC, {
         size: 2
-      }), (0, r.jsx)(c.ll, {
-        children: I.NW.string(I.t["t+b0DA"])
-      }), (0, r.jsx)(a.Gk, {
-        location: a.Gt.CARD,
-        children: (0, r.jsx)(h.ZR, {
-          text: I.NW.string(I.t.zX8HUl)
+      }), (0, t.jsx)(c.ll, {
+        children: g.NW.string(g.t["t+b0DA"])
+      }), (0, t.jsx)(s.Gk, {
+        location: s.Gt.CARD,
+        children: (0, t.jsx)(x.ZR, {
+          text: g.NW.string(g.t.zX8HUl)
         })
       })]
-    }), (0, r.jsx)(g.Z, {
+    }), (0, t.jsx)(j.Z, {
       color: "#5B5A56",
-      children: (0, r.jsx)("img", {
+      children: (0, t.jsx)("img", {
         src: "https://cdn.discordapp.com/assets/content/173a83bdbe0a455bf0d251f4cc9c2c027cd3da855384773916f3eb08298a880c.png",
         alt: "",
-        className: b.emptyStateImage
+        className: H.emptyStateImage
       })
     })]
   })

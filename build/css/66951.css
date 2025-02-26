@@ -1,6 +1,6 @@
 /**
   Module ID: 66951
-  Original File Name: a6e27cd79787d66f
+  Original File Name: 5a58c4106844dfe4
 **/
 .subscription_d970da {
     display: flex;
@@ -263,7 +263,7 @@
 }
 
 .shine__884d1 {
-    color: hsl(var(--white-500-hsl)/.5)
+    color: var(--opacity-white-48)
 }
 
 .upsellFooter__5e07c {
@@ -541,4 +541,4 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=a6e27cd79787d66f.css.map*/
+/*# sourceMappingURL=5a58c4106844dfe4.css.map*/

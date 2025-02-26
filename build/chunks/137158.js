@@ -106,7 +106,7 @@ function O(e) {
     }), "footer" === a && (0, r.jsxs)(f.hjN, {
       className: y.containerFooter,
       children: [(0, r.jsx)(f.ua7, {
-        text: j.NW.string(j.t.B3Jj1N),
+        text: j.NW.string(j.t.FoxyPT),
         shouldShow: !s,
         children: e => {
           var t, n;

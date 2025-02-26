@@ -1,6 +1,6 @@
 /**
   Module ID: 53175
-  Original File Name: 683b8e600c57c0c5
+  Original File Name: bc1bc1af3be36e84
 **/
 .card__4bb93 {
     display: flex;
@@ -203,7 +203,7 @@
 }
 
 .scrollerInner__1964c.bottomSeparator__1964c {
-    border-bottom: 1px solid hsl(var(--white-500-hsl)/.04)
+    border-bottom: 1px solid var(--opacity-white-4)
 }
 
 .scrollWrapper__1964c {
@@ -780,7 +780,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: hsl(var(--black-500-hsl)/.4)
+    background: var(--opacity-black-40)
 }
 
 .sourceOverlayCTA_febe19 {
@@ -894,4 +894,4 @@
     gap: var(--spacing-8)
 }
 
-/*# sourceMappingURL=683b8e600c57c0c5.css.map*/
+/*# sourceMappingURL=bc1bc1af3be36e84.css.map*/

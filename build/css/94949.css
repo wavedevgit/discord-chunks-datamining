@@ -1,6 +1,6 @@
 /**
   Module ID: 94949
-  Original File Name: 5403c775f78ab717
+  Original File Name: ded527a01627741c
 **/
 .churnFooterContainer__64988 {
     position: relative;
@@ -305,7 +305,7 @@
 }
 
 .shine__884d1 {
-    color: hsl(var(--white-500-hsl)/.5)
+    color: var(--opacity-white-48)
 }
 
 .confirmation__2db04 {
@@ -349,4 +349,4 @@
     margin-top: 18px
 }
 
-/*# sourceMappingURL=5403c775f78ab717.css.map*/
+/*# sourceMappingURL=ded527a01627741c.css.map*/

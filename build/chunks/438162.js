@@ -22,16 +22,16 @@ var r = n(200651),
   y = n(989941),
   O = n(199902),
   x = n(314897),
-  I = n(592125),
-  C = n(430824),
+  C = n(592125),
+  I = n(430824),
   P = n(131951),
   k = n(944486),
   E = n(449224),
   L = n(574254),
   w = n(556296),
   T = n(237997),
-  N = n(451478),
-  Z = n(585483),
+  Z = n(451478),
+  N = n(585483),
   j = n(358085),
   S = n(13140),
   A = n(145597),
@@ -153,9 +153,9 @@ function el() {
 
 function eu(e) {
   let t = F.ZP.isInputLocked((0, A.getPID)());
-  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? Z.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? N.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !1
-  }) : "keydown" === e.type.toLowerCase() && Z.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  }) : "keydown" === e.type.toLowerCase() && N.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !0
   }))
 }
@@ -169,9 +169,9 @@ function e_() {
       hasValidResolution: _,
       hasZeroSizeDimension: m,
       keybind: L,
-      isPreviewingInGame: Z
-    } = (0, c.cj)([F.ZP, T.default, N.Z, w.ZP], () => {
-      let t = N.Z.windowSize((0, D.ZY)(e)),
+      isPreviewingInGame: N
+    } = (0, c.cj)([F.ZP, T.default, Z.Z, w.ZP], () => {
+      let t = Z.Z.windowSize((0, D.ZY)(e)),
         n = w.ZP.getOverlayKeybind(),
         r = (0, A.getPID)();
       return {
@@ -188,7 +188,7 @@ function e_() {
     {
       analyticsLocations: z
     } = (0, b.ZP)(f.Z.OVERLAY),
-    M = t || Z;
+    M = t || N;
   ! function(e, t) {
     let n = o.useRef({
       mount: e,
@@ -211,8 +211,8 @@ function e_() {
     let e = o.useRef(!1),
       t = (0, H.pL)(),
       n = k.Z.getVoiceChannelId(),
-      r = I.Z.getChannel(n),
-      a = null != r ? C.Z.getGuild(r.guild_id) : null,
+      r = C.Z.getChannel(n),
+      a = null != r ? I.Z.getGuild(r.guild_id) : null,
       i = null != O.Z.getCurrentUserActiveStream(),
       c = null != n,
       l = (0, h.Z)(P.Z) && !i && null != t,
@@ -255,8 +255,8 @@ function e_() {
     e.removeEventListener("contextmenu", en, !1), null == et && (et = Date.now(), s.Z.track(X.rMx.OVERLAY_UNLOCKED))
   }, [t, e]);
   let er = (0, c.e7)([k.Z], () => k.Z.getVoiceChannelId()),
-    e_ = (0, c.e7)([I.Z], () => I.Z.getChannel(er)),
-    es = (0, c.e7)([C.Z], () => null != e_ ? C.Z.getGuild(e_.guild_id) : null),
+    e_ = (0, c.e7)([C.Z], () => C.Z.getChannel(er)),
+    es = (0, c.e7)([I.Z], () => null != e_ ? I.Z.getGuild(e_.guild_id) : null),
     ed = (0, c.e7)([x.default], () => x.default.getId()),
     ef = (0, c.e7)([g.ZP, E.Z], () => (0, y.Z)(g.ZP, E.Z)),
     eb = (0, v.Ns)(null == ef ? void 0 : ef.id),
@@ -269,7 +269,7 @@ function e_() {
     children: (0, r.jsx)(u.vWI, {
       children: (0, r.jsxs)("div", {
         className: Q.overlay,
-        children: [(0, r.jsx)(R.Z, {}), Z && (0, r.jsx)("header", {
+        children: [(0, r.jsx)(R.Z, {}), N && (0, r.jsx)("header", {
           className: Q.previewingInGameHeader,
           children: J.NW.string(J.t.iOq96u)
         }), ee, (!t || j.has(X.O0n.TEXT_WIDGET)) && (0, r.jsx)(eo, {

@@ -151,15 +151,15 @@ let g = function(e) {
     canActionJoinRequests: s,
     isSidebarOpen: d
   } = e, [f, b] = a.useState(0), g = a.useRef(null), v = a.useRef(f), C = j(o, s, t), {
-    lastVisibleIndex: N,
-    onItemLayout: y,
-    overflowItemsRef: I
+    lastVisibleIndex: y,
+    onItemLayout: N,
+    overflowItemsRef: T
   } = (0, l.zP)({
     items: C,
     itemGapPx: 16,
     maxLines: 1,
     containerWidth: f - 400
-  }), T = a.useMemo(() => C.slice(0, N + 1), [N, C]), w = a.useMemo(() => C.slice(N + 1), [N, C]), O = a.useCallback(() => {
+  }), I = a.useMemo(() => C.slice(0, y + 1), [y, C]), w = a.useMemo(() => C.slice(y + 1), [y, C]), O = a.useCallback(() => {
     var e;
     let t = null === (e = g.current) || void 0 === e ? void 0 : e.getBoundingClientRect();
     null != t && v.current !== t.width && (b(t.width), v.current = t.width)
@@ -189,14 +189,14 @@ let g = function(e) {
           className: h.measurements,
           children: [C.map((e, t) => (0, r.jsx)(l.AJ, {
             index: t,
-            onItemLayout: y,
+            onItemLayout: N,
             children: (0, r.jsx)(c.njP.Item, {
               id: e.id,
               "aria-label": e.label,
               children: e.label
             })
           }, e.id)), (0, r.jsx)("div", {
-            ref: I,
+            ref: T,
             children: (0, r.jsx)(_, {
               tabs: w,
               onTabSelect: i,
@@ -208,7 +208,7 @@ let g = function(e) {
           selectedItem: n,
           type: "top-pill",
           onItemSelect: i,
-          children: [T.map(e => (0, r.jsx)(c.njP.Item, {
+          children: [I.map(e => (0, r.jsx)(c.njP.Item, {
             id: e.id,
             "aria-label": e.label,
             children: e.label

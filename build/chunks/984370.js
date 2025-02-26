@@ -21,8 +21,8 @@ var i = n(120356),
   O = n(2818),
   S = n(954551),
   P = n(208450),
-  p = n(975146),
-  A = n(979651),
+  A = n(975146),
+  p = n(979651),
   R = n(358085),
   C = n(998502),
   f = n(665149),
@@ -89,7 +89,7 @@ function v(e) {
     role: L,
     hideSearch: j,
     showDivider: x
-  } = e, V = null == i || (0, y.AB)(i) ? null : i, F = (0, a.e7)([A.Z], () => A.Z.isInChannel(V) || !1), G = (0, a.e7)([d.Z], () => null != V && d.Z.getParticipantsListOpen(V)), {
+  } = e, V = null == i || (0, y.AB)(i) ? null : i, F = (0, a.e7)([p.Z], () => p.Z.isInChannel(V) || !1), G = (0, a.e7)([d.Z], () => null != V && d.Z.getParticipantsListOpen(V)), {
     hasBugReporterAccess: w
   } = E.Z.useExperiment({
     location: "HeaderBar"
@@ -118,7 +118,7 @@ function v(e) {
           canShowReminder: !0
         }), !Y && (0, r.jsx)(T.Z, {}), B && !W ? (0, r.jsx)(S.Z, {}) : null, !Y && (w ? (0, r.jsx)(m.Z, {}) : (0, r.jsx)(D.Z, {})), z && F && null != V && !G && l === h.d4z.GROUP_DM && (0, r.jsxs)("div", {
           className: U.controlButtonWrapper,
-          children: [(0, r.jsx)(f.ZP.Divider, {}), (0, r.jsx)(p.Z, {
+          children: [(0, r.jsx)(f.ZP.Divider, {}), (0, r.jsx)(A.Z, {
             onClick: () => s.Z.toggleParticipantsList(V, !G)
           })]
         })]

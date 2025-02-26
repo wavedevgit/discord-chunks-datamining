@@ -1,6 +1,6 @@
 /**
   Module ID: 94085
-  Original File Name: e47bf1b2921b83e7
+  Original File Name: db81008498bb7616
 **/
 .closeButton__47998 {
     position: absolute;
@@ -1328,15 +1328,15 @@
 }
 
 .background-opacity-low .edited_c19a55 {
-    color: hsl(var(--white-500-hsl)/.6)
+    color: var(--opacity-white-60)
 }
 
 .background-opacity-medium .edited_c19a55 {
-    color: hsl(var(--white-500-hsl)/.5)
+    color: var(--opacity-white-48)
 }
 
 .background-opacity-high .edited_c19a55 {
-    color: hsl(var(--white-500-hsl)/.4)
+    color: var(--opacity-white-40)
 }
 
 .badgesContainer_c19a55 {
@@ -1457,4 +1457,4 @@
     border-radius: 8px
 }
 
-/*# sourceMappingURL=e47bf1b2921b83e7.css.map*/
+/*# sourceMappingURL=db81008498bb7616.css.map*/

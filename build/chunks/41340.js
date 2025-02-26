@@ -64,7 +64,7 @@ function g(e) {
   } = e, [j, y] = a.useState(!1), [C, N] = a.useState(!1), [T, O] = a.useState(null), E = e => (null == e && (e = g.status), e in b) ? b[e] : "Unknown status ".concat(e), S = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
-  }, k = async e => {
+  }, I = async e => {
     let {
       status: t = g.status,
       premiumStreakStart: n,
@@ -98,7 +98,7 @@ function g(e) {
       body: a,
       rejectWithError: !1
     }), v()
-  }, I = async () => {
+  }, k = async () => {
     try {
       await o.tn.post({
         url: "/debug/subscriptions/".concat(g.id, "/transition"),
@@ -194,7 +194,7 @@ function g(e) {
             serialize: e => E(e),
             isSelected: e => e === g.status,
             options: _,
-            select: e => k({
+            select: e => I({
               status: e
             }),
             popoutLayerContext: m.O$
@@ -205,7 +205,7 @@ function g(e) {
           className: f.formSection,
           children: [(0, r.jsx)(s.zxk, {
             size: s.zxk.Sizes.SMALL,
-            onClick: e => I(),
+            onClick: e => k(),
             children: "Renew Subscription"
           }), null !== T && (0, r.jsx)(s.kzN, {
             className: f.error,
@@ -219,7 +219,7 @@ function g(e) {
           children: (0, r.jsx)("input", {
             type: "date",
             value: null === (i = g.premiumSince) || void 0 === i ? void 0 : i.toISOString().substring(0, 10),
-            onChange: e => k({
+            onChange: e => I({
               premiumStreakStart: e.target.value
             })
           })
@@ -230,7 +230,7 @@ function g(e) {
           children: (0, r.jsx)("input", {
             type: "date",
             value: P,
-            onChange: e => k({
+            onChange: e => I({
               endedAt: e.target.value
             })
           })

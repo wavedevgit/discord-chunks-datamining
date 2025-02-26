@@ -1,6 +1,6 @@
 /**
   Module ID: 85089
-  Original File Name: 06f4c55055e4b5b2
+  Original File Name: a31b21c7d2e84b18
 **/
 .animationContainer__884d1,.container__884d1 {
     position: relative;
@@ -32,7 +32,7 @@
 }
 
 .shine__884d1 {
-    color: hsl(var(--white-500-hsl)/.5)
+    color: var(--opacity-white-48)
 }
 
 .rootContainer__5ce63 {
@@ -245,4 +245,4 @@
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0,.5))
 }
 
-/*# sourceMappingURL=06f4c55055e4b5b2.css.map*/
+/*# sourceMappingURL=a31b21c7d2e84b18.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 79783
-  Original File Name: 0e66613f834e6001
+  Original File Name: 6500ddeb04936932
 **/
 .imageUploader_e4d0bf {
     text-align: center;
@@ -70,7 +70,7 @@
 }
 
 .imageUploaderInner_e4d0bf:focus-within,.imageUploaderInner_e4d0bf:hover {
-    box-shadow: inset 0 0 120px hsl(var(--black-500-hsl)/.75)
+    box-shadow: inset 0 0 120px var(--opacity-black-76)
 }
 
 .imageUploaderInner_e4d0bf:focus-within .imageUploaderAcronym_e4d0bf,.imageUploaderInner_e4d0bf:hover .imageUploaderAcronym_e4d0bf {
@@ -725,7 +725,7 @@
 }
 
 .theme-dark .rolePills__83361 {
-    color: hsl(var(--white-500-hsl)/.8)
+    color: var(--opacity-white-80)
 }
 
 .theme-dark .card__83361 {
@@ -1777,11 +1777,11 @@
 }
 
 .theme-dark .inviteSettingsInviteRow__1de14 {
-    box-shadow: 0 1px 0 0 hsl(var(--white-500-hsl)/.04)
+    box-shadow: 0 1px 0 0 var(--opacity-white-4)
 }
 
 .theme-light .inviteSettingsInviteRow__1de14 {
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=0e66613f834e6001.css.map*/
+/*# sourceMappingURL=6500ddeb04936932.css.map*/

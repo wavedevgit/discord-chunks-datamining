@@ -1,6 +1,6 @@
 /**
   Module ID: 39369
-  Original File Name: 2a76720dbaa1a4da
+  Original File Name: 8d6c86a88943f283
 **/
 .container__270b2 {
     flex-direction: row;
@@ -156,7 +156,7 @@
 
 .closeIconBanner__4efb4 {
     color: var(--white-500);
-    background-color: hsl(var(--black-500-hsl)/.42)
+    background-color: var(--opacity-black-40)
 }
 
 .closeButton__4efb4 {
@@ -174,7 +174,7 @@
 }
 
 .closeButton__4efb4:focus .closeIconBanner__4efb4,.closeButton__4efb4:hover .closeIconBanner__4efb4 {
-    background-color: hsl(var(--black-500-hsl)/.8)
+    background-color: var(--opacity-black-80)
 }
 
 .visual-refresh .closeIconBanner__4efb4 {
@@ -1198,4 +1198,4 @@
     background-color: initial
 }
 
-/*# sourceMappingURL=2a76720dbaa1a4da.css.map*/
+/*# sourceMappingURL=8d6c86a88943f283.css.map*/

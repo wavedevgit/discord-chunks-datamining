@@ -95,7 +95,7 @@ let h = function(e) {
           }), (0, r.jsx)(i.zxk, {
             color: i.Ttl.PRIMARY,
             onClick: v,
-            children: f.NW.string(f.t["6DpJRU"])
+            children: f.NW.string(f.t.KnIQtb)
           })]
         })]
       }), (0, r.jsx)("div", {

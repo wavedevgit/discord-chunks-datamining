@@ -211,15 +211,15 @@ let T = {
       switch (e) {
         case 429:
           throw (0, a.Zy)(), o.Z.show({
-            title: E.NW.string(E.t["2bHM5e"]),
-            body: E.NW.string(E.t.D0lNBA),
-            confirmText: E.NW.string(E.t.qFctfH)
+            title: E.NW.string(E.t.MmIrpa),
+            body: E.NW.string(E.t.yjpDQ0),
+            confirmText: E.NW.string(E.t.XNGT1N)
           }), O(b({}, t), {
-            message: E.NW.string(E.t.D0lNBA)
+            message: E.NW.string(E.t.yjpDQ0)
           });
         case 403:
           throw O(b({}, t), {
-            message: E.NW.string(E.t.bu2hl5)
+            message: E.NW.string(E.t["8T1rxM"])
           });
         default:
           var l;

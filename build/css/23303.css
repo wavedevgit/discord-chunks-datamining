@@ -1,61 +1,61 @@
 /**
   Module ID: 23303
-  Original File Name: 9fa614b59d3383f5
+  Original File Name: ea25343ccc919920
 **/
 :root {
-    --legacy-elevation-low: 0 1px 5px hsl(var(--black-500-hsl)/0.2);
-    --legacy-elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.1);
+    --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
+    --legacy-elevation-high: 0 2px 10px 0 var(--opacity-black-8);
     --legacy-elevation-border: 0 0 0 1px hsl(var(--primary-300-hsl)/0.3)
 }
 
 .theme-dark {
-    --legacy-elevation-low: 0 1px 5px 0 hsl(var(--black-500-hsl)/0.3);
-    --legacy-elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.2);
+    --legacy-elevation-low: 0 1px 5px 0 var(--opacity-black-28);
+    --legacy-elevation-high: 0 2px 10px 0 var(--opacity-black-20);
     --legacy-elevation-border: 0 0 0 1px hsl(var(--primary-700-hsl)/0.6)
 }
 
 .elevationLow_fcf29c {
-    box-shadow: 0 1px 5px hsl(var(--black-500-hsl) / 0.2);
+    box-shadow: 0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-low)
 }
 
 .elevationHigh_fcf29c {
-    box-shadow: 0 2px 10px 0 hsl(var(--black-500-hsl) / 0.1);
+    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high)
 }
 
 .elevationBorderLow_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 1px 5px hsl(var(--black-500-hsl) / 0.2);
+    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-low)
 }
 
 .darkElevationBorderHigh_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 2px 10px 0 hsl(var(--black-500-hsl) / 0.1);
+    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high)
 }
 
 .lightElevationLow_fcf29c {
-    box-shadow: 0 1px 5px hsl(var(--black-500-hsl) / 0.2);
+    box-shadow: 0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-low)
 }
 
 .lightElevationHigh_fcf29c {
-    box-shadow: 0 2px 10px 0 hsl(var(--black-500-hsl) / 0.1);
+    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high)
 }
 
 .lightElevationBorderLow_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 1px 5px hsl(var(--black-500-hsl) / 0.2);
+    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-low)
 }
 
 .elevationBorderHigh_fcf29c,.elevationBorderLow_fcf29c,.elevationHigh_fcf29c,.elevationLow_fcf29c,.lightElevationBorderHigh_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 2px 10px 0 hsl(var(--black-500-hsl) / 0.1);
+    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high)
 }
 
 .container_fcf29c {
-    box-shadow: 0 2px 10px 0 hsl(var(--black-500-hsl) / 0.1);
+    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high);
     padding: 10px 10px 10px 16px;
     overflow: hidden;
@@ -337,7 +337,7 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: hsl(var(--black-500-hsl)/.4)
+    background-color: var(--opacity-black-40)
 }
 
 .overlay__86ab2,.overlayIcon__86ab2 {
@@ -1215,4 +1215,4 @@ div:has(>div>.container_f792fa) {
     background-color: var(--bg-base-tertiary)!important
 }
 
-/*# sourceMappingURL=9fa614b59d3383f5.css.map*/
+/*# sourceMappingURL=ea25343ccc919920.css.map*/

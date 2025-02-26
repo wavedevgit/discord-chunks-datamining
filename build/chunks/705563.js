@@ -46,7 +46,7 @@ function _(e) {
   return null != v && v.applicationStatus === h.wB.SUBMITTED && y ? (0, r.jsxs)("div", {
     className: b.buttons,
     children: [(0, r.jsx)(l.ua7, {
-      text: g.NW.string(g.t.RbIXi4),
+      text: g.NW.string(g.t.cdPGbG),
       shouldShow: N,
       children: e => {
         var t, n;

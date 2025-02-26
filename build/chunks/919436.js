@@ -67,7 +67,7 @@ let T = {
   tension: 600
 };
 
-function D(e) {
+function A(e) {
   switch (e) {
     case "height":
     case "opacity":
@@ -80,7 +80,7 @@ function D(e) {
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
 }
-class A extends(r = l.PureComponent) {
+class D extends(r = l.PureComponent) {
   componentWillEnter(e) {
     let {
       controller: t
@@ -90,7 +90,7 @@ class A extends(r = l.PureComponent) {
       height: 1,
       opacity: 1,
       scale: 1,
-      config: D
+      config: A
     }).start().then(() => this.setState({
       animating: !1
     }))
@@ -104,7 +104,7 @@ class A extends(r = l.PureComponent) {
       scale: 1,
       opacity: 1,
       height: 1,
-      config: D
+      config: A
     }).start().then(e)
   }
   componentWillLeave(e) {
@@ -118,7 +118,7 @@ class A extends(r = l.PureComponent) {
       height: 0,
       opacity: 0,
       scale: 0,
-      config: D
+      config: A
     }).start().then(e))
   }
   componentWillUnmount() {
@@ -224,7 +224,7 @@ class A extends(r = l.PureComponent) {
         scale: 0,
         height: 0,
         opacity: 0,
-        config: D
+        config: A
       })
     }), Z(this, "handleContextMenu", e => {
       let {
@@ -250,7 +250,7 @@ class A extends(r = l.PureComponent) {
     })
   }
 }
-Z(A, "defaultProps", {
+Z(D, "defaultProps", {
   badge: 0,
   audio: !1,
   video: !1,
@@ -277,7 +277,7 @@ let R = l.forwardRef(function(e, t) {
   j && (_ = o === N.WtW.VOICE, C = o === N.WtW.VIDEO);
   let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
     P = (0, f.Q3)("DirectMessage");
-  return (0, i.jsx)(A, E(w({}, e), {
+  return (0, i.jsx)(D, E(w({}, e), {
     ref: t,
     channelName: r,
     unread: p > 0,
