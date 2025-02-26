@@ -21,8 +21,8 @@ function h(e) {
     i = (0, a.e7)([u.Z], () => u.Z.getSubscriptionListingForPlan(n), [n]),
     h = (0, a.e7)([c.Z], () => null != i ? c.Z.getForSKU(i.id) : null, [i]),
     f = (0, a.e7)([u.Z], () => null != i ? u.Z.getSubscriptionGroupListingForSubscriptionListing(i.id) : null, [i]),
-    N = null == h ? void 0 : h.applicationId,
-    b = (0, a.e7)([l.Z], () => null != N ? l.Z.getApplication(N) : null, [N]),
+    b = null == h ? void 0 : h.applicationId,
+    N = (0, a.e7)([l.Z], () => null != b ? l.Z.getApplication(b) : null, [b]),
     x = null === (t = e.metadata) || void 0 === t ? void 0 : t.application_subscription_guild_id,
     _ = (0, a.e7)([o.Z], () => o.Z.getGuild(x), [x]),
     [E, j] = r.useState(!1),
@@ -45,7 +45,7 @@ function h(e) {
       subscription: e
     });
   return {
-    application: b,
+    application: N,
     guild: _,
     expanded: E,
     handleToggleExpanded: () => j(e => !e),

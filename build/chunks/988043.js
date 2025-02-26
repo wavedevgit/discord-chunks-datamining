@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(51331),
   h = n(922628),
   f = n(703115),
-  N = n(526761),
-  b = n(726985),
+  b = n(526761),
+  N = n(726985),
   x = n(736530),
   _ = n(981631),
   E = n(388032);
@@ -26,7 +26,7 @@ function j(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, N = (0, m.c_)(), j = u.h2.useSetting().includes(n), C = (0, d.q)(), O = i.useCallback(e => {
+  } = e, b = (0, m.c_)(), j = u.h2.useSetting().includes(n), C = (0, d.q)(), O = i.useCallback(e => {
     let r = (0, c.YK)();
     e ? r.delete(n) : r.add(n), u.h2.updateSetting(Array.from(r)), l.default.track(_.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: f.Y.DIRECT_MESSAGES_TOGGLE,
@@ -57,7 +57,7 @@ function j(e) {
     })
   };
   return (0, r.jsx)(g.U, {
-    setting: b.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
+    setting: N.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
     children: n === x.T ? (0, r.jsx)(p.Z, {
       title: E.NW.string(E.t.RAQUSE),
       note: E.NW.string(E.t.wbYDfX),
@@ -67,7 +67,7 @@ function j(e) {
       }
     }) : (0, r.jsx)(p.Z, {
       title: E.NW.string(E.t.RAQUSE),
-      note: N ? E.NW.string(E.t.V0ka0d) : E.NW.string(E.t.G7c3Xl),
+      note: b ? E.NW.string(E.t.V0ka0d) : E.NW.string(E.t.G7c3Xl),
       value: !j,
       onChange: O
     })
@@ -76,7 +76,7 @@ function j(e) {
 
 function C(e) {
   let {
-    ingress: t = N.f4.USER_SETTINGS_PRIVACY_SAFETY,
+    ingress: t = b.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, m.is)();
   return (0, r.jsx)(j, {

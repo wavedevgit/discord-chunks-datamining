@@ -3,7 +3,7 @@ n.d(t, {
   Nv: () => x,
   pd: () => f,
   uX: () => _,
-  wk: () => N
+  wk: () => b
 });
 var r = n(350483),
   i = n(220444),
@@ -39,7 +39,7 @@ let g = (e, t) => {
       }), !1
     }
   },
-  N = {
+  b = {
     binds: ["alt+shift+up"],
     comboKeysBindGlobal: !0,
     action() {
@@ -54,12 +54,12 @@ let g = (e, t) => {
       }), !1
     }
   },
-  b = (e, t) => o.ZP.getMentionCount(t) > 0,
+  N = (e, t) => o.ZP.getMentionCount(t) > 0,
   x = {
     binds: ["mod+shift+alt+down"],
     comboKeysBindGlobal: !0,
     action: () => ((0, r.Z)(1, {
-      channelPredicate: b,
+      channelPredicate: N,
       ensureChatIsVisible: h,
       withVoiceChannels: !0
     }), !1)
@@ -68,7 +68,7 @@ let g = (e, t) => {
     binds: ["mod+shift+alt+up"],
     comboKeysBindGlobal: !0,
     action: () => ((0, r.Z)(-1, {
-      channelPredicate: b,
+      channelPredicate: N,
       ensureChatIsVisible: h,
       withVoiceChannels: !0
     }), !1)

@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(87051),
   h = n(419363),
   f = n(818083),
-  N = n(688465),
-  b = n(487419),
+  b = n(688465),
+  N = n(487419),
   x = n(197344),
   _ = n(476756),
   E = n(734934),
@@ -239,7 +239,7 @@ function K(e) {
 }
 
 function q() {
-  let e = (0, c.e7)([b.Z], () => b.Z.getGuildAlertSettings()),
+  let e = (0, c.e7)([N.Z], () => N.Z.getGuildAlertSettings()),
     [t, n] = i.useState(null),
     s = Z.default.keys(e).map(t => {
       let n = e[t];
@@ -253,7 +253,7 @@ function q() {
     children: [(0, r.jsxs)(u.X6q, {
       variant: "heading-lg/semibold",
       className: a()(V.titleWithBeta, G.marginBottom20),
-      children: [U.NW.string(U.t.D9yVAA), (0, r.jsx)(N.Z, {})]
+      children: [U.NW.string(U.t.D9yVAA), (0, r.jsx)(b.Z, {})]
     }), (0, r.jsx)(u.R94, {
       type: u.geA.DESCRIPTION,
       className: G.marginBottom20,

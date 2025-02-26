@@ -50,8 +50,8 @@ function p(e) {
     onClose: p,
     hasCancelableGuildBoostSlot: h,
     premiumSubscription: f,
-    onSelect: N,
-    fractionalState: b
+    onSelect: b,
+    fractionalState: N
   } = e, x = {
     transfer: {
       label: null != t.premiumGuildSubscription ? d.NW.string(d.t["PR0n//"]) : d.NW.string(d.t["+fmEYG"]),
@@ -75,18 +75,18 @@ function p(e) {
       break;
     case o.O0b.PAUSE_PENDING:
     case o.O0b.PAUSED:
-      b === c.a$.NONE && (x.transfer.disabled = !0, x.transfer.subtext = d.NW.string(d.t.LiLRRU)), x.cancel.subtext = d.NW.string(d.t["1ywaWF"]), x.cancel.disabled = !0, x.uncancel.disabled = !0
+      N === c.a$.NONE && (x.transfer.disabled = !0, x.transfer.subtext = d.NW.string(d.t.LiLRRU)), x.cancel.subtext = d.NW.string(d.t["1ywaWF"]), x.cancel.disabled = !0, x.uncancel.disabled = !0
   }
-  b !== c.a$.NONE && (x.cancel.subtext = d.NW.string(d.t.dq4vq6), x.cancel.disabled = !0, x.uncancel.disabled = !0);
-  let _ = i.useMemo(() => f.isPausedOrPausePending && b === c.a$.NONE ? (0, r.jsx)(s.sNh, {
+  N !== c.a$.NONE && (x.cancel.subtext = d.NW.string(d.t.dq4vq6), x.cancel.disabled = !0, x.uncancel.disabled = !0);
+  let _ = i.useMemo(() => f.isPausedOrPausePending && N === c.a$.NONE ? (0, r.jsx)(s.sNh, {
     id: "manage-subscription",
     label: d.NW.string(d.t.obRG6e),
     action: () => a.Z.open(o.oAB.SUBSCRIPTIONS),
     iconLeft: s.WGR,
     className: u.manageSubscription
-  }) : null, [b, f]);
+  }) : null, [N, f]);
   return (0, r.jsxs)(s.v2r, {
-    onSelect: N,
+    onSelect: b,
     navId: "subscription-context",
     variant: "fixed",
     "aria-label": d.NW.string(d.t.ogxXGh),

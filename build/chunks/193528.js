@@ -17,7 +17,7 @@ var r = n(200651),
   h = n(388032),
   f = n(574689);
 
-function N(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function N(e) {
   return e
 }
 
-function b(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function x(e) {
     (R !== j || D !== C) && w((0, l.Z)())
   }, [C, j, D, R]), (0, r.jsx)(d.yRy, {
     positionKey: Z,
-    renderPopout: e => (0, r.jsx)(d.Z$W, b(N({}, e), {
+    renderPopout: e => (0, r.jsx)(d.Z$W, N(b({}, e), {
       value: s,
       onChange: t,
       suggestedColors: x,
@@ -97,7 +97,7 @@ function x(e) {
         className: a()(f.colorSwatch, {
           [f.disabled]: _
         }),
-        children: [(0, r.jsx)(d.P3F, b(N({}, n), {
+        children: [(0, r.jsx)(d.P3F, N(b({}, n), {
           tabIndex: _ ? -1 : 0,
           onClick: _ ? p.dG4 : t,
           style: {

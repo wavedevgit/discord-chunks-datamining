@@ -17,8 +17,8 @@ var i = n(512722),
   p = n(433411),
   h = n(532432),
   f = n(349177),
-  N = n(872736),
-  b = n(134795),
+  b = n(872736),
+  N = n(134795),
   x = n(610966),
   _ = n(513901),
   E = n(451392),
@@ -126,7 +126,7 @@ function P() {
       user: w,
       sectionTitle: y.NW.string(y.t.wR5wOj)
     }, "effect"), z ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(b.Z, {
+      children: [(0, r.jsx)(N.Z, {
         showRemoveBannerButton: K,
         errors: F.banner,
         onBannerChange: C.g_,
@@ -151,7 +151,7 @@ function P() {
       currentBio: null !== (Z = null == k ? void 0 : k.bio) && void 0 !== Z ? Z : ""
     }, "bio"), ee.length > 0 && (0, r.jsx)(d.Z, {
       availableClans: ee
-    }), null != J && (0, r.jsx)(N.Z, {
+    }), null != J && (0, r.jsx)(b.Z, {
       legacyUsername: J
     }, "legacy_username")]
   })

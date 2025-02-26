@@ -62,7 +62,7 @@ function f() {
   } = (0, u.E)(), [n, s] = i.useState(), l = i.useRef(null), f = i.useCallback((e, n) => {
     if (!e.type.startsWith("text/")) return (0, d.Eo)("Make sure you're only uploading text files!");
     t(JSON.parse(atob(n))), (0, d.XA)("Profile Effect (maybe??) imported!")
-  }, [t]), N = i.useCallback(e => {
+  }, [t]), b = i.useCallback(e => {
     var t;
     if ((null === (t = e.currentTarget) || void 0 === t ? void 0 : t.files) == null) {
       (0, d.Eo)("Error uploading file. Try again!");
@@ -99,7 +99,7 @@ function f() {
             children: "Import Shared Config"
           }), (0, r.jsx)(c.Z, {
             ref: l,
-            onChange: N,
+            onChange: b,
             multiple: !1
           })]
         }), (0, r.jsx)(o.zxk, {

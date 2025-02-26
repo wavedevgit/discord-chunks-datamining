@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(533525),
   h = n(314684),
   f = n(794484),
-  N = n(536844),
-  b = n(342414),
+  b = n(536844),
+  N = n(342414),
   x = n(938736),
   _ = n(391110),
   E = n(71363),
@@ -47,7 +47,7 @@ let T = "SubscriberNitroHome",
           className: v.container,
           children: (0, r.jsxs)(d.Gt, {
             value: s,
-            children: [(0, r.jsx)(b.Z, {
+            children: [(0, r.jsx)(N.Z, {
               className: v.heroHeading,
               location: _.MQ.HOME
             }), (0, r.jsx)(f.Z, {
@@ -66,7 +66,7 @@ let T = "SubscriberNitroHome",
                 setIsAllPerksVisible: n,
                 previousComponent: _.MQ.HOME
               })
-            }), (0, r.jsx)(N.Z, {
+            }), (0, r.jsx)(b.Z, {
               className: v.giftNitro,
               location: c.Z.PREMIUM_MARKETING_GIFT_SECTION,
               analyticsLocation: {

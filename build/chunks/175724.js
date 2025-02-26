@@ -16,8 +16,8 @@ var r = n(374470),
   p = n(268350),
   h = n(433355),
   f = n(592125),
-  N = n(703558),
-  b = n(323873),
+  b = n(703558),
+  N = n(323873),
   x = n(375954),
   _ = n(306680),
   E = n(944486),
@@ -56,9 +56,9 @@ let T = {
 
 function I(e) {
   if (null != e) {
-    if (b.Z.isEditingAny(e)) return s.Z.endEditMessage(e), !1;
+    if (N.Z.isEditingAny(e)) return s.Z.endEditMessage(e), !1;
     if (null != d.Z.getPendingReply(e)) return (0, c.A6)(e), !1;
-    if (null != g.Z.getStickerPreview(e, N.d.ChannelMessage)) return (0, p.qB)(e, N.d.ChannelMessage), !1
+    if (null != g.Z.getStickerPreview(e, b.d.ChannelMessage)) return (0, p.qB)(e, b.d.ChannelMessage), !1
   }
 }
 

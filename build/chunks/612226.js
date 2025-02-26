@@ -20,8 +20,8 @@ var r, i = n(346610),
   p = n(175724),
   h = n(705371),
   f = n(138976),
-  N = n(296805),
-  b = n(561716),
+  b = n(296805),
+  N = n(561716),
   x = n(239748),
   _ = n(337482),
   E = n(679080),
@@ -113,7 +113,7 @@ let z = {
   [M.EkH.SEARCH_SOUNDBOARD]: C.Z,
   [M.EkH.SCROLL_UP]: _.B2,
   [M.EkH.SCROLL_DOWN]: _.gN,
-  [M.EkH.QUICKSWITCHER_SHOW]: b.$,
+  [M.EkH.QUICKSWITCHER_SHOW]: N.$,
   [M.EkH.CREATE_DM_GROUP]: o.K,
   [M.EkH.SEARCH_EMOJIS]: E.S,
   [M.EkH.SEARCH_GIFS]: j.O,
@@ -130,7 +130,7 @@ let z = {
   [M.EkH.ZOOM_IN]: B.UF,
   [M.EkH.ZOOM_OUT]: B.RC,
   [M.EkH.ZOOM_RESET]: B.MY,
-  [M.EkH.OPEN_APP_DIRECTORY]: N.T,
+  [M.EkH.OPEN_APP_DIRECTORY]: b.T,
   [M.EkH.BROWSER_DEVTOOLS]: d.p
 };
 

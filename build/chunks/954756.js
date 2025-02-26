@@ -36,13 +36,13 @@ function p() {
       }
       l && (0, a.b9)(), p(!1)
     }, []),
-    N = i.useCallback(() => {
+    b = i.useCallback(() => {
       (0, a.W3)()
     }, []);
   return (0, r.jsx)(l.Z, {
     submitting: n,
     onSave: f,
-    onReset: N,
+    onReset: b,
     disabled: e,
     errorMessage: null != h ? h : void 0
   })

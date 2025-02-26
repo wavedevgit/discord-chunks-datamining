@@ -25,13 +25,13 @@ let o = {
       offsetXPercentageMin: p,
       offsetYPercentageMax: h,
       offsetYPercentageMin: f,
-      customConfettiCanvas: N,
-      speedValues: b = o,
+      customConfettiCanvas: b,
+      speedValues: N = o,
       dragCoefficientValue: x = 1.66,
       onAnimationEnd: _
     } = e, [E, j] = i.useState(null), {
       confettiCanvas: C
-    } = i.useContext(a.h), O = (0, s.uR)(null != N ? N : C, E), [v, S] = i.useState(!1);
+    } = i.useContext(a.h), O = (0, s.uR)(null != b ? b : C, E), [v, S] = i.useState(!1);
     i.useEffect(() => {
       v && (null == _ || _())
     });
@@ -55,8 +55,8 @@ let o = {
             h = c(e.height, 75, r),
             {
               xMin: f,
-              xMax: N,
-              yMin: b,
+              xMax: b,
+              yMin: N,
               yMax: x
             } = d;
           return s = function(e) {
@@ -92,10 +92,10 @@ let o = {
               type: "static-random",
               minValue: {
                 x: f,
-                y: b
+                y: N
               },
               maxValue: {
-                x: N,
+                x: b,
                 y: x
               }
             },
@@ -118,11 +118,11 @@ let o = {
           })(Object(a)).forEach(function(e) {
             Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(a, e))
           }), s
-        }(t.getBoundingClientRect(), g, p, h, f, b, x), null != m ? m : 50), r === e.length - 1 && null != _ && S(!0)
+        }(t.getBoundingClientRect(), g, p, h, f, N, x), null != m ? m : 50), r === e.length - 1 && null != _ && S(!0)
       }, 60 * r)), () => {
         for (let t of e) clearTimeout(t)
       }
-    }, [O, t, u, m, g, p, h, f, b, x, _]), (0, r.jsx)(s.Ji, {
+    }, [O, t, u, m, g, p, h, f, N, x, _]), (0, r.jsx)(s.Ji, {
       ref: j,
       sprites: null != T ? T : l.CA,
       colors: null != n ? n : l.Br,

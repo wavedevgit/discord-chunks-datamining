@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 }), n(47120);
 var r, i = n(200651),
   s = n(192379),
@@ -103,7 +103,7 @@ p(f, "defaultProps", {
   size: c.zxk.Sizes.MEDIUM,
   color: c.zxk.Colors.BRAND
 });
-let N = o.ZP.connectStores([m.default], () => {
+let b = o.ZP.connectStores([m.default], () => {
   let e = m.default.getCurrentUser();
   return l()(null != e, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
     currentUser: e

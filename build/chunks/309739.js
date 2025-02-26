@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(410030),
   h = n(726542),
   f = n(921801),
-  N = n(553795),
-  b = n(430824),
+  b = n(553795),
+  N = n(430824),
   x = n(63063),
   _ = n(358085),
   E = n(709054),
@@ -32,7 +32,7 @@ var r = n(200651),
 
 function A(e) {
   let t = () => {
-    O.SE.updateSetting(e ? E.default.keys(b.Z.getGuilds()) : [])
+    O.SE.updateSetting(e ? E.default.keys(N.Z.getGuilds()) : [])
   };
   (0, m.h7j)(e => {
     var n, i;
@@ -237,7 +237,7 @@ function w(e) {
 }
 
 function k() {
-  let e = (0, c.e7)([N.Z], () => N.Z.getAccounts()),
+  let e = (0, c.e7)([b.Z], () => b.Z.getAccounts()),
     t = i.useMemo(() => e.filter(e => h.Z.isSupported(e.type) && S.vbS.has(e.type)), [e]),
     [n, s] = i.useState(""),
     a = i.useMemo(() => {

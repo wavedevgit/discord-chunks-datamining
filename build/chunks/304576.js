@@ -17,8 +17,8 @@ var i = n(120356),
   p = n(104494),
   h = n(639119),
   f = n(105759),
-  N = n(346497),
-  b = n(422034),
+  b = n(346497),
+  N = n(422034),
   x = n(710220),
   _ = n(318747),
   E = n(635921),
@@ -52,7 +52,7 @@ let v = e => {
       isDarkMode: A
     } = e, {
       analyticsLocations: P
-    } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_HERO_CTA), R = (0, m._O)(), D = (0, p.Ng)(), Z = (0, p.Wp)(D, j.Si.TIER_2) ? j.Si.TIER_2 : void 0, w = (0, h.N)(), k = (0, u.Nx)(), W = (0, N.Vi)(), L = (0, a.e7)([d.Z], () => d.Z.affinities), B = (0, f.Z)(), {
+    } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_HERO_CTA), R = (0, m._O)(), D = (0, p.Ng)(), Z = (0, p.Wp)(D, j.Si.TIER_2) ? j.Si.TIER_2 : void 0, w = (0, h.N)(), k = (0, u.Nx)(), W = (0, b.Vi)(), L = (0, a.e7)([d.Z], () => d.Z.affinities), B = (0, f.Z)(), {
       enabled: M
     } = g._.useExperiment({
       location: "HeroHeading"
@@ -79,7 +79,7 @@ let v = e => {
             isMarketingPageV2Enabled: !0
           }) : V && (0, r.jsx)("div", {
             className: s()(O.affinityDescriptionV2),
-            children: (0, r.jsx)(b.Z, {
+            children: (0, r.jsx)(N.Z, {
               textColor: "text-normal",
               smallerText: !i,
               isMarketingPageV2Enabled: !0

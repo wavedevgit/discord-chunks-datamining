@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(52647),
   h = n(317257),
   f = n(120786),
-  N = n(775451),
-  b = n(970815),
+  b = n(775451),
+  N = n(970815),
   x = n(720463),
   _ = n(931928),
   E = n(450272),
@@ -57,7 +57,7 @@ function T() {
       children: "Balance Widget Components"
     }), (0, r.jsx)(E.E_, {
       label: "Balance Widget Menu",
-      children: (0, r.jsx)(N.V9, {
+      children: (0, r.jsx)(b.V9, {
         ctaText: C.NW.string(C.t["H57f4+"]),
         ctaOnClick: j.dG4,
         isCoachmarkEnabled: !1
@@ -118,20 +118,20 @@ function T() {
       })]
     }), (0, r.jsxs)(E.E_, {
       label: "Balance Widget Pill",
-      children: [(0, r.jsx)(b.A4, {
+      children: [(0, r.jsx)(N.A4, {
         balance: 150,
         balanceWidgetMode: h.b.DEFAULT
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(N.A4, {
         balance: 150,
         balanceWidgetMode: h.b.HIGHLIGHTED
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(N.A4, {
         balance: 150,
         balanceWidgetMode: h.b.SELECTED
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(N.A4, {
         balance: 0,
         balanceWidgetMode: h.b.DEFAULT,
         showNotificationBadge: !0
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(N.A4, {
         balance: null,
         balanceWidgetMode: h.b.DEFAULT
       })]
@@ -170,7 +170,7 @@ function T() {
         children: "Simulate Loading State"
       }), (0, r.jsx)("div", {
         className: O.interactivePillContainer,
-        children: (0, r.jsx)(b.A4, {
+        children: (0, r.jsx)(N.A4, {
           balance: p,
           balanceWidgetMode: S,
           onClick: () => I()

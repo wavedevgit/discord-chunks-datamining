@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(390954),
   h = n(89057),
   f = n(921801),
-  N = n(246946),
-  b = n(594174),
+  b = n(246946),
+  N = n(594174),
   x = n(351402),
   _ = n(853872),
   E = n(78839),
@@ -87,12 +87,12 @@ class T extends i.PureComponent {
 }
 
 function I() {
-  let e = (0, l.cj)([j.default, x.Z, _.Z, b.default, N.Z, E.ZP], () => {
+  let e = (0, l.cj)([j.default, x.Z, _.Z, N.default, b.Z, E.ZP], () => {
     let e = E.ZP.getPremiumTypeSubscription(),
-      t = b.default.getCurrentUser();
+      t = N.default.getCurrentUser();
     return a()(null != t, "UserSettingsBilling: currentUser cannot be undefined"), {
       locale: j.default.locale,
-      hide: N.Z.enabled,
+      hide: b.Z.enabled,
       isClaimed: t.isClaimed(),
       isVerified: t.verified,
       premiumSubscription: e,

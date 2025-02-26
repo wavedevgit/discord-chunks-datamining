@@ -12,7 +12,7 @@ function o(e) {
   let {
     onError: t,
     onSuccess: n
-  } = null != e ? e : {}, [o, c] = r.useState(!1), [d, u] = r.useState(!1), [m, g] = r.useState(!1), [p, h] = r.useState(!1), [f, N] = r.useState(!1), [b, x] = r.useState(!1), [_, E] = r.useState(!1), [j, C] = r.useState(!1), O = o || d || m || p || b || j, v = r.useCallback(async e => {
+  } = null != e ? e : {}, [o, c] = r.useState(!1), [d, u] = r.useState(!1), [m, g] = r.useState(!1), [p, h] = r.useState(!1), [f, b] = r.useState(!1), [N, x] = r.useState(!1), [_, E] = r.useState(!1), [j, C] = r.useState(!1), O = o || d || m || p || N || j, v = r.useCallback(async e => {
     if (!O) {
       c(!0);
       try {
@@ -62,14 +62,14 @@ function o(e) {
     }
   }, [O, t, n]), y = r.useCallback(async () => {
     if (!f) {
-      N(!0);
+      b(!0);
       try {
         await (0, s.qd)(), null == n || n()
       } catch (n) {
         let e = new i.Hx(n);
         null == t || t(e)
       } finally {
-        N(!1)
+        b(!1)
       }
     }
   }, [f, t, n]), A = r.useCallback(async e => {
@@ -93,7 +93,7 @@ function o(e) {
     selectTeenUser: A,
     getLinkCode: y,
     requestLink: r.useCallback(async (e, r) => {
-      if (!b) {
+      if (!N) {
         x(!0);
         try {
           await s.ZP.requestLink(e, r), null == n || n()
@@ -104,7 +104,7 @@ function o(e) {
           x(!1)
         }
       }
-    }, [b, t, n]),
+    }, [N, t, n]),
     loadMore: r.useCallback(async e => {
       let n = a.Z.getActionsForDisplayType(e),
         r = n[n.length - 1],
@@ -128,7 +128,7 @@ function o(e) {
     isCancelLoading: p,
     isGetLinkCodeLoading: f,
     isSelectTeenUserLoading: _,
-    isRequestingLink: b,
+    isRequestingLink: N,
     isMoreLoading: j
   }
 }

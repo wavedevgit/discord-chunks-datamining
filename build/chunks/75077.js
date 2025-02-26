@@ -1,12 +1,12 @@
 /** Chunk was on 53485 **/
 n.d(t, {
   BS: () => E,
-  Dp: () => b,
+  Dp: () => N,
   Gw: () => j,
   Op: () => y,
   gx: () => v,
   iG: () => O,
-  k3: () => N,
+  k3: () => b,
   mN: () => A,
   oo: () => _,
   sP: () => I,
@@ -27,7 +27,7 @@ var r = n(278074),
   p = n(474936),
   h = n(735825),
   f = n(388032);
-let N = e => {
+let b = e => {
     switch (e) {
       case h.EB.PENDING:
         return f.NW.string(f.t.fhK8ho);
@@ -39,7 +39,7 @@ let N = e => {
         return ""
     }
   },
-  b = e => {
+  N = e => {
     switch (e) {
       case h.EB.PENDING:
         return f.NW.string(f.t["9o4F4+"]);
@@ -165,7 +165,7 @@ let v = (e, t, n) => (0, s.wj)(e) ? t : n,
       location: S
     }, {
       autoTrackExposure: !1
-    }), f = g && !p && !h, N = P();
+    }), f = g && !p && !h, b = P();
     return null != n.collectibleDeco && o({
       card: n.collectibleDeco
     }), null != n.tenureBadge && o({
@@ -176,11 +176,11 @@ let v = (e, t, n) => (0, s.wj)(e) ? t : n,
       card: n.freeBoost
     }), null != n.shyProject && o({
       card: n.shyProject
-    }), r && N ? (0 === t.length && c(), o({
+    }), r && b ? (0 === t.length && c(), o({
       card: n.newAppStylesUpdateJune2024
     }), o({
       card: n.serverProfiles
-    })) : r && !N && (f || null != n.shyProject ? f && o({
+    })) : r && !b && (f || null != n.shyProject ? f && o({
       card: n.referralProgram
     }) : c(), o({
       card: n.newAppStylesUpdateJune2024

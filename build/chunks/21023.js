@@ -60,8 +60,8 @@ let g = e => {
       })]
     })
   },
-  f = (e, t, n, f, N) => {
-    let b = {
+  f = (e, t, n, f, b) => {
+    let N = {
         0: {
           label: (0, r.jsx)(g, {
             text: u.NW.string(u.t["09yRKy"])
@@ -322,7 +322,7 @@ let g = e => {
           withBottomBorder: !1
         }
       },
-      x = N === c.a$.FP_ONLY,
-      _ = [b[0], b[1], b[2], b[3], b[4], b[5], b[6], ...x ? [] : [b[7]], b[8], b[9], b[10], b[11], ...x ? [] : [b[12]], b[13], b[14], b[15], b[16], b[17]];
-    return (0, o.V)() && _.push(b[22]), _
+      x = b === c.a$.FP_ONLY,
+      _ = [N[0], N[1], N[2], N[3], N[4], N[5], N[6], ...x ? [] : [N[7]], N[8], N[9], N[10], N[11], ...x ? [] : [N[12]], N[13], N[14], N[15], N[16], N[17]];
+    return (0, o.V)() && _.push(N[22]), _
   }

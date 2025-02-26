@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -18,7 +18,7 @@ var i = n(392711),
   h = n(981631),
   f = n(490897);
 
-function N(e, t) {
+function b(e, t) {
   return [{
     resourceId: e,
     type: f.W.GUILD_EVENT
@@ -27,12 +27,12 @@ function N(e, t) {
     withCurrentVoiceChannel: !0
   }).map(e => e.id)]
 }
-let b = s().throttle(function(e, t) {
+let N = s().throttle(function(e, t) {
   var i, s;
   let l, {
       channelPredicate: m = () => !0,
       guildPredicate: f = () => !0,
-      guildFeaturePredicate: b = () => !1,
+      guildFeaturePredicate: N = () => !1,
       ensureChatIsVisible: x = () => !1,
       withVoiceChannels: _ = !1
     } = t,
@@ -44,14 +44,14 @@ let b = s().throttle(function(e, t) {
       return t > 0 ? n.slice(r).concat(n.slice(0, r), e) : (n.splice(r, 0, e), n.slice(r + 1).concat(n.slice(0, r + 1)))
     }(E, e),
     O = e > 0 ? 0 : C.length - 1,
-    v = N(E, _),
+    v = b(E, _),
     S = v.indexOf(j) + e;
   for (; null != E && "" !== E;) {
     if (l = v[S], f(E))
       for (; null != l && "" !== l;) {
         if ("string" == typeof l) {
           if (m(E, l)) return (0, p.K)(E, l, !1, x(E, l))
-        } else if ("object" == typeof l && b(l.resourceId, l.type)) return E !== d.Z.getGuildId() && (0, p.K)(E, null === (s = c.ZP.getDefaultChannel(E)) || void 0 === s ? void 0 : s.id), (0, a.ZDy)(async () => {
+        } else if ("object" == typeof l && N(l.resourceId, l.type)) return E !== d.Z.getGuildId() && (0, p.K)(E, null === (s = c.ZP.getDefaultChannel(E)) || void 0 === s ? void 0 : s.id), (0, a.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("42743"), n.e("22347"), n.e("56236"), n.e("72365")]).then(n.bind(n, 17671));
@@ -90,7 +90,7 @@ let b = s().throttle(function(e, t) {
         S += e, l = v[S]
       }
     if (O += e, null == (E = C[O]) || "" === E) break;
-    v = N(E, _), S = e < 0 ? v.length - 1 : 0
+    v = b(E, _), S = e < 0 ? v.length - 1 : 0
   }
   g.S.dispatch(h.CkL.SHAKE_APP, {
     duration: 200,

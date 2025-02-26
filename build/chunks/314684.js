@@ -25,8 +25,8 @@ var r = n(192379),
   p = n(706140),
   h = n(243778),
   f = n(594174),
-  N = n(314884),
-  b = n(580130),
+  b = n(314884),
+  N = n(580130),
   x = n(626135),
   _ = n(823379),
   E = n(111361),
@@ -80,15 +80,15 @@ function P() {
     i = w(),
     l = Z([T.Ft.FREE_AVATAR_DECO_1_MONTH]),
     o = (0, a.e7)([f.default], () => f.default.getCurrentUser()),
-    c = (0, a.e7)([N.Z], () => N.Z.boostSlots),
+    c = (0, a.e7)([b.Z], () => b.Z.boostSlots),
     d = r.useMemo(() => Object.values(c).some(e => null == e.premiumGuildSubscription), [c]),
     u = null != i,
     m = u && !1 === d,
     g = null != l,
     p = function() {
-      let e = (0, a.e7)([b.Z], () => {
+      let e = (0, a.e7)([N.Z], () => {
         var e;
-        return null !== (e = b.Z.getForApplication(I.XAJ)) && void 0 !== e ? e : D
+        return null !== (e = N.Z.getForApplication(I.XAJ)) && void 0 !== e ? e : D
       }, [], _.OL);
       return (0, v.Cl)(T.qY, e)
     }(),
@@ -159,9 +159,9 @@ function R(e) {
 let D = new Set;
 
 function Z(e) {
-  let t = (0, a.e7)([b.Z], () => {
+  let t = (0, a.e7)([N.Z], () => {
       var e;
-      return null !== (e = b.Z.getForApplication(S.CL)) && void 0 !== e ? e : D
+      return null !== (e = N.Z.getForApplication(S.CL)) && void 0 !== e ? e : D
     }, [], _.OL),
     n = (0, a.e7)([f.default], () => {
       let e = f.default.getCurrentUser();
@@ -223,7 +223,7 @@ let k = e => {
 function M() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S.CL,
     t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    n = (0, a.e7)([b.Z], () => b.Z.isFetchingForApplication(e)),
+    n = (0, a.e7)([N.Z], () => N.Z.isFetchingForApplication(e)),
     i = (0, a.e7)([f.default], () => {
       let e = f.default.getCurrentUser();
       return null != e && (0, E.M5)(e, S.p9.TIER_2)

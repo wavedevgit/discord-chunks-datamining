@@ -16,15 +16,15 @@ var r = n(200651),
   p = n(821629),
   h = n(114625),
   f = n(711896),
-  N = n(780525),
-  b = n(474936),
+  b = n(780525),
+  N = n(474936),
   x = n(388032),
   _ = n(276353);
 let E = e => {
   let {
     isFullScreen: t,
     analyticsLocations: n
-  } = e, i = (0, l.e7)([m.default], () => m.default.getCurrentUser()), E = g.ZP.isPremiumExactly(i, b.p9.TIER_1), j = new Date(N.Lk);
+  } = e, i = (0, l.e7)([m.default], () => m.default.getCurrentUser()), E = g.ZP.isPremiumExactly(i, N.p9.TIER_1), j = new Date(b.Lk);
   return (0, r.jsx)(d.O, {
     newLocations: [c.Z.PREMIUM_MARKETING_PAGE_BANNER],
     children: (0, r.jsxs)("div", {
@@ -53,7 +53,7 @@ let E = e => {
           variant: "text-sm/medium",
           color: "always-white",
           children: x.NW.format(x.t.ESckJy, {
-            termsLink: N.Ps
+            termsLink: b.Ps
           })
         }), (0, r.jsx)(o.gtL, {
           color: "white",
@@ -62,7 +62,7 @@ let E = e => {
           onClick: () => {
             (0, u.Z)({
               analyticsLocations: n,
-              subscriptionTier: b.Si.TIER_2,
+              subscriptionTier: N.Si.TIER_2,
               confirmationFooter: (0, r.jsx)(h.Z, {}),
               planSelectBanner: (0, r.jsx)(f.Z, {})
             })

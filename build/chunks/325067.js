@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 });
 var r, i, s, a = n(392711),
   l = n.n(a),
@@ -38,7 +38,7 @@ i = "MFAStore", (r = "displayName") in f ? Object.defineProperty(f, r, {
   configurable: !0,
   writable: !0
 }) : f[r] = i;
-let N = new f(d.Z, {
+let b = new f(d.Z, {
   MFA_ENABLE_SUCCESS: function(e) {
     let {
       token: t,

@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(706454),
   h = n(553795),
   f = n(63063),
-  N = n(981631),
-  b = n(856651),
+  b = n(981631),
+  N = n(856651),
   x = n(388032),
   _ = n(518571);
 
@@ -36,32 +36,32 @@ function E(e) {
     }
   }, [n, o]), j = null;
   switch (n.type) {
-    case N.ABu.REDDIT:
+    case b.ABu.REDDIT:
       j = (0, g.oP)(m, _.metadataItem);
       break;
-    case N.ABu.STEAM:
+    case b.ABu.STEAM:
       j = (0, g.Dq)(m, _.metadataItem);
       break;
-    case N.ABu.TWITTER:
+    case b.ABu.TWITTER:
       j = (0, g.rJ)(m, _.metadataItem);
       break;
-    case N.ABu.EBAY:
+    case b.ABu.EBAY:
       j = (0, g.ul)(m, _.metadataItem);
       break;
-    case N.ABu.PAYPAL:
+    case b.ABu.PAYPAL:
       j = (0, g.li)(m, _.metadataItem);
       break;
-    case N.ABu.TIKTOK:
+    case b.ABu.TIKTOK:
       j = (0, g.hf)(m, _.metadataItem)
   }
-  let C = (0, u.FI)(m[b.PC.CREATED_AT], h),
+  let C = (0, u.FI)(m[N.PC.CREATED_AT], h),
     O = null,
     v = x.NW.string(x.t.wzzjk5);
   return (null == j || 0 === j.length) && null == C && (O = (0, r.jsx)(l.Text, {
     variant: "text-xs/normal",
     color: "header-secondary",
     children: x.NW.format(x.t.Up2ni4, {
-      helpdeskUrl: f.Z.getArticleURL(N.BhN.CONNECTION_DETAILS)
+      helpdeskUrl: f.Z.getArticleURL(b.BhN.CONNECTION_DETAILS)
     })
   }, "label"), v = x.NW.string(x.t["LVh3//"])), a && (v = x.NW.string(x.t.i4jeWV)), (0, r.jsxs)("div", {
     className: _.metadataContainer,
@@ -100,15 +100,15 @@ function j(e) {
   i.useEffect(() => {
     g(t.visibility), h(t.metadataVisibility)
   }, [t]);
-  let N = d.Z.get(t.type),
-    b = !0 === N.hasMetadata;
+  let b = d.Z.get(t.type),
+    N = !0 === b.hasMetadata;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: _.activityRow,
       children: [(0, r.jsx)("img", {
-        alt: N.name,
+        alt: b.name,
         className: _.connectionIcon,
-        src: (0, a.wj)(f) ? N.icon.darkSVG : N.icon.lightSVG
+        src: (0, a.wj)(f) ? b.icon.darkSVG : b.icon.lightSVG
       }), (0, r.jsxs)("div", {
         className: _.activitySettings,
         children: [(0, r.jsxs)(l.j7V, {
@@ -131,13 +131,13 @@ function j(e) {
           children: [(0, r.jsx)(l.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            children: N.name
-          }), b && (0, r.jsx)(E, {
+            children: b.name
+          }), N && (0, r.jsx)(E, {
             account: t,
             refreshed: s.includes(t.id),
             handleRefresh: n
           })]
-        }), b && (0, r.jsx)(l.j7V, {
+        }), N && (0, r.jsx)(l.j7V, {
           className: _.additionalDetailsSwitch,
           hideBorder: !0,
           disabled: 1 !== u || null == t.metadata,
