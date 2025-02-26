@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => eZ
 }), n(411104);
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(345114),
   y = n(924301),
   x = n(225890),
-  O = n(434404),
-  E = n(507435),
+  E = n(434404),
+  O = n(507435),
   j = n(504733),
   N = n(563959),
   C = n(703656),
@@ -75,8 +75,8 @@ var r = n(200651),
   ev = n(296571),
   ey = n(587737),
   ex = n(482239),
-  eO = n(328749),
-  eE = n(4305),
+  eE = n(328749),
+  eO = n(4305),
   ej = n(910548),
   eN = n(981631),
   eC = n(70722),
@@ -330,7 +330,7 @@ let ew = Object.freeze({
         messageId: t.id
       });
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(eE.Z, {
+        children: [(0, r.jsx)(eO.Z, {
           message: t,
           guildId: i.guild_id,
           compact: n,
@@ -406,7 +406,7 @@ let ew = Object.freeze({
         message: t,
         compact: n,
         onClick: () => {
-          null != l && O.Z.open(l, eN.pNK.DISCOVERY)
+          null != l && E.Z.open(l, eN.pNK.DISCOVERY)
         }
       })
     },
@@ -473,7 +473,7 @@ let ew = Object.freeze({
         onContextMenuThread: p
       })
     },
-    [eN.uaV.THREAD_STARTER_MESSAGE]: eO.Z,
+    [eN.uaV.THREAD_STARTER_MESSAGE]: eE.Z,
     [eN.uaV.GUILD_INVITE_REMINDER]: function(e) {
       let {
         message: t,
@@ -691,7 +691,7 @@ let ew = Object.freeze({
       })
     },
     [eN.uaV.VOICE_HANGOUT_INVITE]: void 0,
-    [eN.uaV.POLL_RESULT]: E.Z,
+    [eN.uaV.POLL_RESULT]: O.Z,
     [eN.uaV.CHANGELOG]: void 0,
     [eN.uaV.NITRO_NOTIFICATION]: function(e) {
       let {

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(605236),
   u = n(768762),
   m = n(999382),
-  p = n(743475),
-  g = n(983135),
+  g = n(743475),
+  p = n(983135),
   h = n(570961),
   f = n(208665),
   b = n(359191),
@@ -85,7 +85,7 @@ function T(e) {
       [E.upsellOnTop]: S
     }),
     children: [!f && s !== x.PG.LANDING && (0, r.jsx)(P, {
-      setOnboardingStep: g.$K,
+      setOnboardingStep: p.$K,
       page: s,
       homeSettingsEnabled: !0
     }), f && s !== x.PG.LANDING && (0, r.jsx)("div", {
@@ -94,7 +94,7 @@ function T(e) {
         look: c.zxk.Looks.BLANK,
         size: c.zxk.Sizes.MIN,
         onClick: () => {
-          (0, h.NB)(), (0, p.BG)(), (0, g.$K)(x.PG.LANDING)
+          (0, h.NB)(), (0, g.BG)(), (0, p.$K)(x.PG.LANDING)
         },
         children: [(0, r.jsx)(u.Z, {
           className: E.arrow,

@@ -34,14 +34,18 @@ let x = () => (0, n.jsx)(l.Z, {
       guildId: r,
       onClose: l,
       onComplete: _,
-      isPreview: f = !1
-    } = e, g = (0, d.rb)(e => e.shouldShowWarning), p = (0, u.ng)(r, f), v = (0, s.Dt)();
+      inviteKey: f,
+      isPreview: g = !1
+    } = e, p = (0, d.rb)(e => e.shouldShowWarning), {
+      verificationForm: v,
+      hasFetched: h
+    } = (0, u.ng)(r, g, f), C = (0, s.Dt)();
     return (a.useEffect(() => {
-      p === c.t && l()
-    }, [l, p]), p === c.t) ? null : (0, n.jsxs)(n.Fragment, {
+      h && v === c.t && l()
+    }, [h, l, v]), v === c.t) ? null : (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsxs)(o.Y0X, {
         transitionState: t,
-        "aria-labelledby": v,
+        "aria-labelledby": C,
         size: o.CgR.DYNAMIC,
         className: b.container,
         hideShadow: !0,
@@ -51,15 +55,15 @@ let x = () => (0, n.jsx)(l.Z, {
             onClick: () => l(!1)
           })
         }), (0, n.jsx)(m.Z, {
-          verificationForm: p,
-          headerId: v,
+          verificationForm: v,
+          headerId: C,
           guildId: r,
           onClose: l,
           onComplete: _,
-          isPreview: f
+          isPreview: g
         })]
       }), (0, n.jsx)(i.W, {
-        children: !0 === g && (0, n.jsx)(o.oXn, {
+        children: !0 === p && (0, n.jsx)(o.oXn, {
           className: b.notice,
           children: (0, n.jsx)(x, {})
         })

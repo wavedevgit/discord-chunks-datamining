@@ -16,8 +16,8 @@ let u = e => {
   let t, n, i, {
       guildFeature: u,
       guild: m,
-      className: p,
-      hideTooltip: g = !1,
+      className: g,
+      hideTooltip: p = !1,
       tooltipPosition: h = "left",
       onClick: f
     } = e,
@@ -39,8 +39,8 @@ let u = e => {
       className: d.description,
       children: null != x && (0, o.e9)(x)
     })]
-  })), n = g || null == i ? (0, r.jsx)("div", {
-    className: s()(d.availabilityIndicator, p),
+  })), n = p || null == i ? (0, r.jsx)("div", {
+    className: s()(d.availabilityIndicator, g),
     children: t
   }) : (0, r.jsx)(a.ua7, {
     position: h,
@@ -65,7 +65,7 @@ let u = e => {
         }
         return e
       }({}, e), i = i = {
-        className: s()(d.availabilityIndicator, p),
+        className: s()(d.availabilityIndicator, g),
         children: t
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);

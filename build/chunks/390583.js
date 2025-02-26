@@ -15,7 +15,7 @@ var a = n(723047),
   u = n(293810),
   m = n(388032);
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function g(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function h() {
     children: [(0, r.jsx)(d.p, {
       benefits: n,
       onEdit: function(e) {
-        (0, s.h7j)(i => (0, r.jsx)(c.x3, g(p({}, i), {
+        (0, s.h7j)(i => (0, r.jsx)(c.x3, p(g({}, i), {
           guildId: t,
           omitChannelIds: f,
           initialData: n[e],
@@ -95,7 +95,7 @@ function h() {
       size: 8
     }), (0, r.jsx)(d.s, {
       onClick: function() {
-        (0, s.h7j)(e => (0, r.jsx)(c.x3, g(p({}, e), {
+        (0, s.h7j)(e => (0, r.jsx)(c.x3, p(g({}, e), {
           guildId: t,
           omitChannelIds: f,
           onSave: e => b(e)

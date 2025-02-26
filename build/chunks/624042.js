@@ -1,5 +1,4 @@
-/** Chunk was on 13368 **/
-"use strict";
+/** Chunk was on 68051 **/
 e.exports = {
   flex: "flex__08d32",
   platformIcon: "platformIcon__08d32"

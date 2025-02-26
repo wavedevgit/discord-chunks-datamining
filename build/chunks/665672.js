@@ -1,11 +1,11 @@
-/** Chunk was on 83366 **/
+/** Chunk was on 14093 **/
 n.d(t, {
   Z: () => i
 });
 var r = n(512722),
   l = n.n(r);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,6 +23,6 @@ class i {
     return l()(null != t, "DiscordCanvas: Couldn't get a canvas for export."), this.exporter.exportCanvas(t, e)
   }
   constructor(e, t) {
-    o(this, "canvas", void 0), o(this, "exporter", void 0), this.canvas = e, this.exporter = t
+    a(this, "canvas", void 0), a(this, "exporter", void 0), this.canvas = e, this.exporter = t
   }
 }

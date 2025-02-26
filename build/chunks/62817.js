@@ -1,12 +1,12 @@
-/** Chunk was on 83366 **/
+/** Chunk was on 14093 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(301563), n(47120), n(177593);
 var r, l = n(442837),
-  o = n(570140),
+  a = n(570140),
   i = n(375954);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,7 +22,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -30,25 +30,25 @@ function s(e) {
 let c = Object.freeze([]),
   u = {},
   d = {},
+  m = {},
   p = {},
-  f = {},
-  O = {};
+  h = {};
 
-function y(e, t) {}
+function f(e, t) {}
 
-function b(e, t) {
+function g(e, t) {
   let n = u[e];
-  return null != n && (u[e] = n.filter(e => e.id !== t), delete d[t], delete p[t], n.length !== u[e].length)
+  return null != n && (u[e] = n.filter(e => e.id !== t), delete d[t], delete m[t], n.length !== u[e].length)
 }
 
-function m(e, t) {
+function x(e, t) {
   let n = u[e];
   if (null == n) return !1;
   u[e] = n.map(e => e.id === t.id ? s({}, e, t) : e);
-  let r = p[t.id];
-  null != r && null != f[r.id] && (f[r.id] = s({}, f[r.id], t))
+  let r = m[t.id];
+  null != r && null != p[r.id] && (p[r.id] = s({}, p[r.id], t))
 }
-class g extends(r = l.ZP.Store) {
+class v extends(r = l.ZP.Store) {
   initialize() {
     this.waitFor(i.Z)
   }
@@ -57,39 +57,39 @@ class g extends(r = l.ZP.Store) {
     return null !== (t = u[e]) && void 0 !== t ? t : c
   }
   getMessageForFile(e) {
-    return p[e]
+    return m[e]
   }
   getUploaderFileForMessageId(e) {
-    return f[e]
+    return p[e]
   }
   getUploadAttachments(e) {
-    if (null != e) return O[e]
+    if (null != e) return h[e]
   }
 }
-a(g, "displayName", "UploadStore");
-let v = new g(o.Z, {
+o(v, "displayName", "UploadStore");
+let y = new v(a.Z, {
   CONNECTION_OPEN: function() {
-    O = {}
+    h = {}
   },
   LOGOUT: function() {
-    O = {}
+    h = {}
   },
   UPLOAD_START: function(e) {
     var t, n, r;
     let {
       channelId: l,
-      file: o,
+      file: a,
       uploader: i,
-      message: a
+      message: o
     } = e;
     if (i._aborted || i._errored) return;
-    let O = null !== (t = u[l]) && void 0 !== t ? t : c;
-    d[o.id] = i, u[l] = [...O, o], p[o.id] = a;
+    let h = null !== (t = u[l]) && void 0 !== t ? t : c;
+    d[a.id] = i, u[l] = [...h, a], m[a.id] = o;
     let {
-      items: y
-    } = o;
-    null != y && (f[a.id] = (n = s({}, o), r = r = {
-      items: y
+      items: f
+    } = a;
+    null != f && (p[o.id] = (n = s({}, a), r = r = {
+      items: f
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -99,35 +99,35 @@ let v = new g(o.Z, {
       return n
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-    }), n)), a.nonce
+    }), n)), o.nonce
   },
   UPLOAD_COMPRESSION_PROGRESS: function(e) {
     let {
       channelId: t,
       file: n
     } = e;
-    m(t, n)
+    x(t, n)
   },
   UPLOAD_PROGRESS: function(e) {
     let {
       channelId: t,
       file: n
     } = e;
-    m(t, n)
+    x(t, n)
   },
   UPLOAD_COMPLETE: function(e) {
     let {
       channelId: t,
       file: n
     } = e;
-    return b(t, n.id)
+    return g(t, n.id)
   },
   UPLOAD_FAIL: function(e) {
     let {
       channelId: t,
       file: n
     } = e;
-    return b(t, n.id)
+    return g(t, n.id)
   },
   UPLOAD_CANCEL_REQUEST: function(e) {
     let {
@@ -151,14 +151,14 @@ let v = new g(o.Z, {
     let {
       channelId: t,
       file: n
-    } = e, r = p[n.id];
-    null != r && r.nonce, m(t, n)
+    } = e, r = m[n.id];
+    null != r && r.nonce, x(t, n)
   },
   UPLOAD_RESTORE_FAILED_UPLOAD: function(e) {
     let {
       file: t,
       messageId: n
     } = e;
-    f[n] = t
+    p[n] = t
   }
 })

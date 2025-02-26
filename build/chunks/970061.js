@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(47120), n(13667), n(390547), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -36,27 +36,27 @@ function m(e) {
   })
 }
 
-function p(e) {
+function g(e) {
   let {
     title: t,
     children: n,
     buttonLabel: s,
     buttonCallback: a,
     disabled: o
-  } = e, [p, g] = i.useState(!1), h = n.flatMap(e => e.items.map(e => e.completed)), f = h.filter(e => e).length / h.length, b = (0, c.q_F)({
+  } = e, [g, p] = i.useState(!1), h = n.flatMap(e => e.items.map(e => e.completed)), f = h.filter(e => e).length / h.length, b = (0, c.q_F)({
     width: "".concat(100 * f, "%")
   });
   return (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsxs)(c.P3F, {
       className: u.headerBar,
-      onClick: () => g(e => !e),
+      onClick: () => p(e => !e),
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-md/semibold",
         className: u.headerText,
         children: t
       }), (0, r.jsx)(d.Z, {
-        direction: p ? d.Z.Directions.DOWN : d.Z.Directions.UP,
+        direction: g ? d.Z.Directions.DOWN : d.Z.Directions.UP,
         className: u.headerCaret
       })]
     }), (0, r.jsx)("div", {
@@ -65,7 +65,7 @@ function p(e) {
         className: u.progressBarInner,
         style: b
       })
-    }), !p && n.map((e, t) => {
+    }), !g && n.map((e, t) => {
       let {
         title: n,
         items: s

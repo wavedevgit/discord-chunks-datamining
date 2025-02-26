@@ -3,7 +3,7 @@
 n.d(t, {
   EH: () => m,
   Mf: () => d,
-  lL: () => p,
+  lL: () => g,
   t4: () => u
 });
 var r = n(442837),
@@ -26,7 +26,7 @@ function m(e, t) {
   return (0, r.e7)([l.Z, i.Z], () => null != t && l.Z.editedDefaultChannelIds.has(t) ? c.NW.string(c.t.Lz94y8) : a.Uu(o.Plq.VIEW_CHANNEL, i.Z.getChannel(e)) ? void 0 : c.NW.string(c.t["031cXl"]))
 }
 
-function p(e, t) {
+function g(e, t) {
   let n = (0, r.e7)([s.Z], () => {
       var n;
       return (null === (n = s.Z.getGuild(e)) || void 0 === n ? void 0 : n.rulesChannelId) === t

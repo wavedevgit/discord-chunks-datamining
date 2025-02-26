@@ -47,7 +47,7 @@ function u(e) {
     }
     return e
   }({
-    text: s.NW.string(s.t.Xs2Otb),
+    text: s.NW.string(s.t["2ZhEh4"]),
     button: s.NW.string(s.t.pj0XBA),
     buttonAnalyticsObject: {
       section: o.jXE.USER_PROFILE,

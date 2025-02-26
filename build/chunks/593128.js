@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(425493),
   u = n(852860),
   m = n(493544),
-  p = n(585483),
-  g = n(931240),
+  g = n(585483),
+  p = n(931240),
   h = n(970606),
   f = n(389134),
   b = n(35313),
@@ -63,7 +63,7 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = e => [{
+let Z = e => [{
     section: m.ID.HEADER,
     label: T.NW.string(T.t["7r0U+/"])
   }, {
@@ -114,9 +114,9 @@ let D = e => [{
   }, {
     section: m.ID.CUSTOM,
     label: T.NW.string(T.t.vc5h39),
-    element: Z
+    element: D
   }],
-  Z = e => {
+  D = e => {
     let {
       guildId: t,
       onClose: s,
@@ -124,7 +124,7 @@ let D = e => [{
     } = e, [l, c] = i.useState(!1), d = async () => {
       c(!0);
       try {
-        await (0, g.nr)(t), s()
+        await (0, p.nr)(t), s()
       } catch (e) {
         throw c(!1), e
       }
@@ -135,7 +135,7 @@ let D = e => [{
       "aria-label": T.NW.string(T.t.vc5h39),
       onClick: () => {
         if (a) {
-          p.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
+          g.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
           return
         }(0, o.ZDy)(async () => {
           let {
@@ -196,7 +196,7 @@ let D = e => [{
     let {
       guildId: t,
       onClose: n
-    } = e, [S, Z] = i.useState(I.Wy.GAMES), {
+    } = e, [S, D] = i.useState(I.Wy.GAMES), {
       initialSettings: A,
       settings: W,
       errors: L,
@@ -213,7 +213,7 @@ let D = e => [{
         dirty: t.dirty
       }
     }), U = i.useCallback(e => {
-      G ? p.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : Z(e)
+      G ? g.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : D(e)
     }, [G]), B = (0, b.f)(), F = i.useCallback(e => {
       "Escape" === e.key && (e.stopPropagation(), n())
     }, [n]);
@@ -224,26 +224,26 @@ let D = e => [{
     }), [F]), i.useEffect(() => {
       c.Z.getDetectableGames()
     }, []), i.useEffect(() => {
-      (0, g.aH)(t)
+      (0, p.aH)(t)
     }, [t]);
-    let z = i.useCallback(e => (0, g.mf)(t, {
+    let z = i.useCallback(e => (0, p.mf)(t, {
         gameApplicationIds: e
       }), [t]),
-      H = i.useCallback(e => (0, g.mf)(t, {
+      H = i.useCallback(e => (0, p.mf)(t, {
         playstyle: e
       }), [t]),
-      V = i.useCallback(e => (0, g.mf)(t, {
+      V = i.useCallback(e => (0, p.mf)(t, {
         interests: e
       }), [t]),
-      Y = i.useCallback(e => (0, g.mf)(t, e), [t]),
+      Y = i.useCallback(e => (0, p.mf)(t, e), [t]),
       K = i.useCallback(() => {
-        G ? p.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : n()
+        G ? g.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : n()
       }, [G, n]),
       q = async () => {
-        await (0, g.Ii)(t, W), (0, h.Af)(t)
+        await (0, p.Ii)(t, W), (0, h.Af)(t)
       }, X = i.useMemo(() => null != L && Object.values(L).some(e => null != e), [L]);
     if (null == W) return null;
-    let Q = D(L);
+    let Q = Z(L);
     return (0, r.jsxs)(s.animated.div, {
       style: B,
       className: P.modal,
@@ -389,7 +389,7 @@ let D = e => [{
                 onSave: q,
                 submitting: M,
                 onReset: () => {
-                  (0, g.mf)(t, A)
+                  (0, p.mf)(t, A)
                 },
                 errorMessage: Object.values(L).find(e => null != e)
               })

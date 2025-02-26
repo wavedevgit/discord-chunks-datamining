@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  c: () => p
+  c: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -14,12 +14,12 @@ var r = n(200651),
   u = n(388032),
   m = n(894641);
 
-function p(e) {
+function g(e) {
   let {
     fetchDiscoveryData: t,
     settingsView: n,
-    requireTerms: p,
-    rules: g
+    requireTerms: g,
+    rules: p
   } = e, h = (0, s.e7)([l.Z], () => l.Z.getProps().guild);
   if (i.useEffect(() => {
       null != h && t(h.id)
@@ -50,8 +50,8 @@ function p(e) {
     case d.U.ELIGIBLE_DISABLED:
     case d.U.ELIGIBLE_ENABLED:
       return (0, r.jsx)(c.d, {
-        requireTerms: p,
-        rules: g,
+        requireTerms: g,
+        rules: p,
         settingsView: n
       });
     case d.U.INELIGIBLE:

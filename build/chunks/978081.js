@@ -1,5 +1,4 @@
-/** Chunk was on 13368 **/
-"use strict";
+/** Chunk was on 68051 **/
 e.exports = {
   container: "container__91e7c",
   chipletContainer: "chipletContainer__91e7c",

@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => F
 });
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(786761),
   y = n(493892),
   x = n(901461),
-  O = n(739566),
-  E = n(443877),
+  E = n(739566),
+  O = n(443877),
   j = n(492593),
   N = n(938353),
   C = n(25015),
@@ -84,7 +84,7 @@ let F = i.memo(function e(t) {
     treatSpam: V
   } = t, z = k.OBS.has(s.type) ? s.messageReference : void 0, K = (0, l.e7)([m.Z], () => m.Z.getMessageByReference(z)), Y = (0, l.e7)([h.Z], () => s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED ? h.Z.getChannel(K.message.channel_id) : null), X = f.x4.useSetting(), q = f.RS.useSetting(), Q = f.NA.useSetting(), J = f.QK.useSetting(), $ = (0, d.A)((null !== (n = s.editedTimestamp) && void 0 !== n ? n : s.timestamp).valueOf()), ee = (0, u.Z)(null == a ? void 0 : a.id), {
     disableReactionCreates: et
-  } = (0, E.Z)(a), {
+  } = (0, O.Z)(a), {
     content: en,
     hasSpoilerEmbeds: er
   } = (0, C.Z)(s, {
@@ -93,7 +93,7 @@ let F = i.memo(function e(t) {
     allowHeading: $,
     allowLinks: !0,
     previewLinkTarget: !0
-  }), ei = (0, O.ZP)(s), ea = (0, l.e7)([h.Z], () => s.hasFlag(k.iLy.HAS_THREAD) && h.Z.getChannel(_.default.castMessageIdAsChannelId(s.id))), eo = s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED && null != Y, el = !eo && void 0 === i, es = (0, I.Z)({
+  }), ei = (0, E.ZP)(s), ea = (0, l.e7)([h.Z], () => s.hasFlag(k.iLy.HAS_THREAD) && h.Z.getChannel(_.default.castMessageIdAsChannelId(s.id))), eo = s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED && null != Y, el = !eo && void 0 === i, es = (0, I.Z)({
     message: s,
     channel: a,
     enabled: el

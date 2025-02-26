@@ -14,8 +14,8 @@ var i = n(442837),
   d = n(971792),
   u = n(861345),
   m = n(331146),
-  p = n(798680),
-  g = n(388032),
+  g = n(798680),
+  p = n(388032),
   h = n(255180);
 
 function f(e) {
@@ -56,7 +56,7 @@ function x() {
     guildId: t
   } = (0, o.N)(), [x, j] = c.XZ(e, t), N = (0, d.Z)(t, e), {
     setCurrentTab: v
-  } = (0, p.dw)(), _ = () => v(p.ue.EMOJIS), O = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), y = null == O ? void 0 : O.getMaxRoleSubscriptionEmojiSlots();
+  } = (0, g.dw)(), _ = () => v(g.ue.EMOJIS), O = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), y = null == O ? void 0 : O.getMaxRoleSubscriptionEmojiSlots();
 
   function C(e) {
     null == x ? j(new Set(e)) : j(new Set([...x, ...e]))
@@ -68,15 +68,15 @@ function x() {
   }
   let E = (0, l.mY)();
   return (0, r.jsxs)(s.hjN, {
-    title: g.NW.string(g.t.D0qeOz),
+    title: p.NW.string(p.t.D0qeOz),
     disabled: E,
     children: [(0, r.jsxs)(s.R94, {
       type: s.R94.Types.DESCRIPTION,
       className: h.formDescription,
       disabled: E,
-      children: [g.NW.format(g.t.zuwel5, {
+      children: [p.NW.format(p.t.zuwel5, {
         premiumEmojiMaximum: y
-      }), (0, r.jsx)("br", {}), g.NW.format(g.t.sEkgBg, {
+      }), (0, r.jsx)("br", {}), p.NW.format(p.t.sEkgBg, {
         handleTransitionToManageEmoji: _
       })]
     }), (0, r.jsx)(m.E, {
@@ -113,7 +113,7 @@ function x() {
         })
       },
       disabled: E,
-      children: g.NW.string(g.t.ouOOV1)
+      children: p.NW.string(p.t.ouOOV1)
     })]
   })
 }

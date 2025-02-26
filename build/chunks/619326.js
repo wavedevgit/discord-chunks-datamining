@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(44315),
   u = n(663993),
   m = n(981631),
-  p = n(388032),
-  g = n(906689);
+  g = n(388032),
+  p = n(906689);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -85,23 +85,23 @@ function j(e) {
     }),
     O = (0, o.xUy)({
       isSelected: j,
-      label: p.NW.formatToPlainString(p.t.ZC69mJ, {
+      label: g.NW.formatToPlainString(g.t.ZC69mJ, {
         colorHex: (0, l.Rf)(m.p6O)
       })
     }),
     y = (0, o.xUy)({
       isSelected: !j,
-      label: p.NW.formatToPlainString(p.t["3kiLZW"], {
+      label: g.NW.formatToPlainString(g.t["3kiLZW"], {
         colorHex: (0, l.Rf)(t)
       })
     });
   return (0, r.jsxs)("div", f(h({
-    className: g.buttonsContainer,
-    "aria-label": p.NW.string(p.t.FJjrIy)
+    className: p.buttonsContainer,
+    "aria-label": g.NW.string(g.t.FJjrIy)
   }, _), {
     children: [(0, r.jsx)("div", {
-      className: a()(g.colorSwatch, {
-        [g.disabled]: s
+      className: a()(p.colorSwatch, {
+        [p.disabled]: s
       }),
       children: (0, r.jsxs)(o.P3F, f(h({
         onClick: s ? void 0 : function() {
@@ -110,41 +110,41 @@ function j(e) {
         "aria-disabled": s
       }, O), {
         children: [(0, r.jsx)("div", {
-          className: g.swatch,
+          className: p.swatch,
           style: {
             backgroundColor: (0, l.Rf)(m.p6O)
           },
           children: j ? v : null
         }), (0, r.jsx)(o.Text, {
-          className: g.swatchDescription,
+          className: p.swatchDescription,
           color: "header-secondary",
           variant: "text-xs/normal",
           "aria-hidden": !0,
-          children: p.NW.string(p.t.Mcfzam)
+          children: g.NW.string(g.t.Mcfzam)
         })]
       }))
     }), (0, r.jsxs)("div", {
-      className: a()(g.colorSwatch, {
-        [g.disabled]: s
+      className: a()(p.colorSwatch, {
+        [p.disabled]: s
       }),
       children: [(0, r.jsxs)(o.P3F, f(h({
         onClick: s ? void 0 : u,
         "aria-disabled": s
       }, y), {
         children: [(0, r.jsx)("div", {
-          className: a()(g.customSwatch, {
-            [g.defaultSwatch]: N === m.p6O
+          className: a()(p.customSwatch, {
+            [p.defaultSwatch]: N === m.p6O
           }),
           style: {
             "--custom-color": (0, l.Rf)(N)
           },
           children: j ? null : v
         }), (0, r.jsx)(o.Text, {
-          className: g.swatchDescription,
+          className: p.swatchDescription,
           color: "header-secondary",
           variant: "text-xs/normal",
           "aria-hidden": !0,
-          children: p.NW.string(p.t["2ArXy8"])
+          children: g.NW.string(g.t["2ArXy8"])
         })]
       })), !s && (0, r.jsx)(o.yRy, {
         onRequestOpen: u,
@@ -153,11 +153,11 @@ function j(e) {
           onChange: b
         })),
         children: e => (0, r.jsx)(o.P3F, f(h({}, e), {
-          className: g.dropperIconButton,
-          "aria-label": p.NW.string(p.t.Qp04hI),
+          className: p.dropperIconButton,
+          "aria-label": g.NW.string(g.t.Qp04hI),
           children: (0, r.jsx)(o.ilE, {
             size: "custom",
-            className: g.dropperIcon,
+            className: p.dropperIcon,
             width: 14,
             height: 14,
             color: x(N)

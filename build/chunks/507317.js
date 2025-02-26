@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(813197),
   u = n(709586),
   m = n(768581),
-  p = n(434404),
-  g = n(981631),
+  g = n(434404),
+  p = n(981631),
   h = n(30513),
   f = n(486324),
   b = n(200299),
@@ -23,9 +23,9 @@ var r = n(200651),
 let N = function(e) {
   let {
     guild: t
-  } = e, N = t.hasFeature(g.oNc.BANNER), v = i.useCallback((e, i) => {
+  } = e, N = t.hasFeature(p.oNc.BANNER), v = i.useCallback((e, i) => {
     if (null == e || void 0 === i) {
-      p.Z.saveGuild(t.id, {
+      g.Z.saveGuild(t.id, {
         homeHeader: null
       });
       return
@@ -57,7 +57,7 @@ let N = function(e) {
           let {
             imageUri: n
           } = e;
-          return p.Z.saveGuild(t.id, {
+          return g.Z.saveGuild(t.id, {
             homeHeader: n
           })
         },
@@ -65,19 +65,19 @@ let N = function(e) {
       }, n))
     })
   }, [t.id]), _ = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, a.yw)(g.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+    e.preventDefault(), e.stopPropagation(), (0, a.yw)(p.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: {
-        section: g.jXE.GUILD_SETTINGS_ONBOARDING,
-        object: g.qAy.LEARN_MORE
+        section: p.jXE.GUILD_SETTINGS_ONBOARDING,
+        object: p.qAy.LEARN_MORE
       },
       guild_id: null == t ? void 0 : t.id,
       location_stack: []
     }), (0, o.Z)({
       analyticsLocations: [],
       analyticsSourceLocation: {
-        section: g.jXE.GUILD_SETTINGS_ONBOARDING,
-        object: g.qAy.ONBOARDING_EDIT,
-        page: g.ZY5.GUILD_SETTINGS
+        section: p.jXE.GUILD_SETTINGS_ONBOARDING,
+        object: p.qAy.ONBOARDING_EDIT,
+        page: p.ZY5.GUILD_SETTINGS
       },
       guild: t,
       perks: (0, h.XO)()
@@ -104,7 +104,7 @@ let N = function(e) {
       }), (0, r.jsx)(l.Z, {
         className: j.boostIndicator,
         guild: t,
-        guildFeature: g.oNc.BANNER,
+        guildFeature: p.oNc.BANNER,
         onClick: _
       })]
     }), (0, r.jsxs)("div", {
@@ -137,7 +137,7 @@ let N = function(e) {
       }), (0, r.jsx)(l.Z, {
         className: j.boostIndicator,
         guild: t,
-        guildFeature: g.oNc.BANNER,
+        guildFeature: p.oNc.BANNER,
         onClick: _
       })]
     }), (0, r.jsxs)("div", {

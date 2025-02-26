@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -14,7 +14,7 @@ var i = n(442837),
   d = n(474936),
   u = n(388032),
   m = n(486557);
-let p = e => {
+let g = e => {
     let {
       onOpenPremiumClick: t
     } = e, n = (0, r.jsx)(s.zxk, {
@@ -40,11 +40,11 @@ let p = e => {
       })]
     })
   },
-  g = e => {
+  p = e => {
     let {
       onOpenPremiumClick: t
     } = e, n = (0, i.e7)([o.default], () => o.default.getCurrentUser());
-    return c.ZP.isPremium(n, d.p9.TIER_2) ? null : (0, r.jsx)(p, {
+    return c.ZP.isPremium(n, d.p9.TIER_2) ? null : (0, r.jsx)(g, {
       onOpenPremiumClick: t
     })
   }

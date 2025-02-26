@@ -16,8 +16,8 @@ var r = n(200651),
   h = n(600164),
   g = n(436774),
   x = n(140465),
-  f = n(774026),
-  v = n(592125),
+  v = n(774026),
+  f = n(592125),
   j = n(944486),
   S = n(594174),
   N = n(74538),
@@ -160,7 +160,7 @@ function A(e) {
   } = e, L = (0, c.e7)([S.default], () => {
     let e = S.default.getCurrentUser();
     return o()(null != e, "StreamSettings: user cannot be undefined"), e
-  }), D = (0, c.e7)([j.Z, v.Z], () => v.Z.getChannel(j.Z.getVoiceChannelId())), M = N.ZP.canStreamQuality(N.U2.MID, L), {
+  }), D = (0, c.e7)([j.Z, f.Z], () => f.Z.getChannel(j.Z.getVoiceChannelId())), M = N.ZP.canStreamQuality(N.U2.MID, L), {
     location: z
   } = (0, m.O)(), U = (0, p.Zq)({
     autoTrackExposure: !1
@@ -216,7 +216,7 @@ function A(e) {
       message: C.NW.string(C.t.deDogI),
       onClose: t,
       openStreamUpsellModal: _
-    }) : null, G && (0, r.jsx)(b.c, {}), V && null != D.hdStreamingUntil && (0, r.jsx)(f.Z, {
+    }) : null, G && (0, r.jsx)(b.c, {}), V && null != D.hdStreamingUntil && (0, r.jsx)(v.Z, {
       streamingUntil: D.hdStreamingUntil,
       user: F,
       channel: D
@@ -238,7 +238,7 @@ function A(e) {
       onClose: t,
       openStreamUpsellModal: _,
       glow: B
-    }) : null, G && (0, r.jsx)(b.c, {}), V && null != D.hdStreamingUntil && (0, r.jsx)(f.Z, {
+    }) : null, G && (0, r.jsx)(b.c, {}), V && null != D.hdStreamingUntil && (0, r.jsx)(v.Z, {
       streamingUntil: null == D ? void 0 : D.hdStreamingUntil,
       user: F,
       channel: D

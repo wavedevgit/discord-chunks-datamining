@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(434404),
   u = n(949640),
   m = n(981631),
-  p = n(30513),
-  g = n(200299),
+  g = n(30513),
+  p = n(200299),
   h = n(388032),
   f = n(553221);
 
@@ -29,7 +29,13 @@ function b(e) {
       splash: e
     })
   }, []), v = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, u.E6)(t, j, m.jXE.GUILD_INVITE_BACKGROUND, m.qAy.UPLOAD_IMAGE, (0, p.o9)())
+    e.preventDefault(), e.stopPropagation(), (0, u.E6)({
+      guild: t,
+      analyticsLocations: j,
+      analyticsSection: m.jXE.GUILD_INVITE_BACKGROUND,
+      analyticsObject: m.qAy.UPLOAD_IMAGE,
+      perks: (0, g.o9)()
+    })
   }, [j, t]), _ = (0, r.jsx)(o.Z, {
     image: t.splash,
     makeURL: e => null != e ? c.ZP.getGuildSplashURL({
@@ -40,8 +46,8 @@ function b(e) {
     onChange: N,
     hint: h.NW.string(h.t.uPvxqK),
     enabled: x,
-    maxFileSizeBytes: g.B,
-    onFileSizeError: () => (0, l.Z)(g.B)
+    maxFileSizeBytes: p.B,
+    onFileSizeError: () => (0, l.Z)(p.B)
   });
   return b ? _ : (0, r.jsx)(s.P3F, {
     "aria-hidden": !0,

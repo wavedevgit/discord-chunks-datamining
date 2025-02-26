@@ -1,5 +1,4 @@
-/** Chunk was on 55186 **/
-"use strict";
+/** Chunk was on 61080 **/
 e.exports = {
   container: "container_cfd26e",
   title: "title_cfd26e",

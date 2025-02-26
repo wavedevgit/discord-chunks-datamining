@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(47120), n(653041), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -21,7 +21,7 @@ let u = e => {
   } = e, m = i.useCallback(e => {
     let t = new Set(c);
     t.delete(e), u(t)
-  }, [u, c]), p = i.useCallback(e => {
+  }, [u, c]), g = i.useCallback(e => {
     if (c.size === o.c4) return;
     let t = new Set(c);
     t.add(e), u(t)
@@ -42,7 +42,7 @@ let u = e => {
           icon: n,
           text: e,
           selected: t,
-          onClick: t ? m : p
+          onClick: t ? m : g
         }, e)
       })
     })]
@@ -55,8 +55,8 @@ function m(e) {
     onUpdateTraits: n,
     progress: a,
     availableTraits: m,
-    hidePreview: p = !1
-  } = e, g = i.useMemo(() => {
+    hidePreview: g = !1
+  } = e, p = i.useMemo(() => {
     let e = [];
     return o.gh.forEach(t => e.push({
       value: t,
@@ -96,7 +96,7 @@ function m(e) {
         className: d.languageSelect,
         children: (0, r.jsx)(s.VcW, {
           wrapperClassName: d.input,
-          options: g,
+          options: p,
           value: b,
           onChange: x,
           placeholder: c.NW.string(c.t.GA91en),
@@ -105,7 +105,7 @@ function m(e) {
       })]
     }), (0, r.jsx)("div", {
       className: d.fixedWidthSidebar,
-      children: null != a && f.length > 0 && !p && (0, r.jsx)(l.Z, {
+      children: null != a && f.length > 0 && !g && (0, r.jsx)(l.Z, {
         guildId: t,
         progress: a,
         traitsToHighlight: j,
@@ -115,7 +115,7 @@ function m(e) {
     })]
   })
 }
-let p = e => {
+let g = e => {
   let {
     guildId: t,
     title: n,
@@ -124,7 +124,7 @@ let p = e => {
     progress: l,
     traits: o,
     optional: u = !1,
-    hidePreview: p = !1
+    hidePreview: g = !1
   } = e;
   return (0, r.jsxs)("div", {
     className: d.slideContent,
@@ -147,7 +147,7 @@ let p = e => {
       onUpdateTraits: a,
       progress: l,
       availableTraits: o,
-      hidePreview: p
+      hidePreview: g
     })]
   })
 }

@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(692547),
   u = n(780384),
   m = n(481060),
-  p = n(852860),
-  g = n(902840),
+  g = n(852860),
+  p = n(902840),
   h = n(410030),
   f = n(100527),
   b = n(906732),
@@ -34,8 +34,8 @@ var r = n(200651),
   P = n(999382),
   w = n(67734),
   R = n(375263),
-  D = n(586382),
-  Z = n(594980),
+  Z = n(586382),
+  D = n(594980),
   k = n(515025),
   A = n(760632),
   W = n(578053),
@@ -101,7 +101,7 @@ let q = () => {
   }, [e, t]), o = i.useCallback(() => {
     null != e && T.Z.init(e.id)
   }, [e]);
-  return (0, r.jsx)(p.Z, {
+  return (0, r.jsx)(g.Z, {
     submitting: n,
     errorMessage: a,
     onSave: l,
@@ -333,7 +333,7 @@ class X extends i.PureComponent {
       guild: e,
       canManageGuild: t
     } = this.props;
-    return (0, g.Jc)(e, !1) ? (0, r.jsx)("div", {
+    return (0, p.Jc)(e, !1) ? (0, r.jsx)("div", {
       children: (0, r.jsx)(m.hjN, {
         className: z.divider,
         children: (0, r.jsx)(m.j7V, {
@@ -377,7 +377,7 @@ class X extends i.PureComponent {
               className: z.flexFormTitle,
               children: [(0, r.jsx)("div", {
                 children: F.NW.string(F.t.tzGY0t)
-              }), (0, r.jsx)(D.h, {
+              }), (0, r.jsx)(Z.hH, {
                 guild: e
               })]
             }), (0, r.jsx)(m.R94, {
@@ -389,7 +389,7 @@ class X extends i.PureComponent {
               children: F.NW.format(F.t.ZYA9PT, {
                 articleURL: S.Z.getArticleURL(U.BhN.GUILD_INVITE_SPLASH)
               })
-            }), (0, r.jsx)(Z.c, {
+            }), (0, r.jsx)(D.c, {
               guild: e,
               canManageGuild: t,
               buttonClassName: z.marginTop16
@@ -424,7 +424,7 @@ class X extends i.PureComponent {
             className: z.flexFormTitle,
             children: [(0, r.jsx)("div", {
               children: F.NW.string(F.t["0r0AzM"])
-            }), (0, r.jsx)(D.z, {
+            }), (0, r.jsx)(Z.zA, {
               guild: e
             })]
           }), (0, r.jsx)(m.R94, {
@@ -591,8 +591,8 @@ function Q() {
   } = (0, c.cj)([y.Z], () => ({
     canManageGuild: y.Z.can(U.Plq.MANAGE_GUILD, e),
     isGuildAdmin: y.Z.can(U.Plq.ADMINISTRATOR, e)
-  })), m = (0, x.E)(e), p = (0, c.e7)([C.default], () => C.default.getCurrentUser());
-  return (o()(null != p, "GuildSettingsOverview: currentUser cannot be undefined"), null == e) ? null : (0, r.jsx)(b.Gt, {
+  })), m = (0, x.E)(e), g = (0, c.e7)([C.default], () => C.default.getCurrentUser());
+  return (o()(null != g, "GuildSettingsOverview: currentUser cannot be undefined"), null == e) ? null : (0, r.jsx)(b.Gt, {
     value: l,
     children: (0, r.jsx)(X, {
       canManageGuild: d,
@@ -601,7 +601,7 @@ function Q() {
       guild: e,
       errors: t,
       submitting: n,
-      currentUser: p,
+      currentUser: g,
       isInventoryFeedEnabled: m,
       theme: a,
       analyticsLocations: l

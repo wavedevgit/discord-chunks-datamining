@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(314897),
   u = n(353093),
   m = n(214715),
-  p = n(18100),
-  g = n(308083),
+  g = n(18100),
+  p = n(308083),
   h = n(388032),
   f = n(761056),
   b = n(617006);
@@ -26,13 +26,13 @@ let x = e => {
     error: x
   } = e, {
     interests: j
-  } = s, [N, v] = i.useState(""), [_, O] = i.useState(0), y = (0, c.e7)([d.default], () => d.default.getId()), C = i.useMemo(() => (0, l.chunk)((0, u.XV)(g.i6, y), 9), [y]), I = [...C[_], ...C[(_ + 1) % C.length]], E = i.useMemo(() => Array.from(j), [j]), S = i.useMemo(() => E.filter(e => !g.WZ.has(e) && !g.gh.has(e)), [E]), T = e => {
+  } = s, [N, v] = i.useState(""), [_, O] = i.useState(0), y = (0, c.e7)([d.default], () => d.default.getId()), C = i.useMemo(() => (0, l.chunk)((0, u.XV)(p.i6, y), 9), [y]), I = [...C[_], ...C[(_ + 1) % C.length]], E = i.useMemo(() => Array.from(j), [j]), S = i.useMemo(() => E.filter(e => !p.WZ.has(e) && !p.gh.has(e)), [E]), T = e => {
     let t = new Set(j);
     t.delete(e), n({
       interests: t
     })
   }, P = i.useCallback(e => {
-    if (j.size === g.c4) return;
+    if (j.size === p.c4) return;
     let t = null != e ? e : N.trim();
     if (0 === t.length) return;
     let r = new Set(j);
@@ -82,8 +82,8 @@ let x = e => {
             onKeyDown: w,
             onChange: v,
             placeholder: h.NW.string(h.t.axCpsL),
-            maxLength: g.Sq,
-            disabled: j.size === g.c4
+            maxLength: p.Sq,
+            disabled: j.size === p.c4
           }), N.length > 0 && (0, r.jsx)(o.P3F, {
             onClick: () => P(N.trim()),
             className: a()(b.plusIcon, b.clickable),
@@ -134,7 +134,7 @@ let x = e => {
         })]
       }), (0, r.jsx)("div", {
         className: b.fixedWidthSidebar,
-        children: E.length > 0 && (0, r.jsx)(p.Z, {
+        children: E.length > 0 && (0, r.jsx)(g.Z, {
           guildId: t,
           progress: s,
           traitsToHighlight: S,

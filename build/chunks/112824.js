@@ -15,8 +15,8 @@ var i = n(120356),
   d = n(496675),
   u = n(700785),
   m = n(647086),
-  p = n(135899),
-  g = n(388032),
+  g = n(135899),
+  p = n(388032),
   h = n(412856);
 
 function f(e) {
@@ -52,13 +52,13 @@ function b(e, t) {
 }
 
 function x(e) {
-  return p.$X.filter(t => (null == e ? void 0 : e.id) !== m._ && u.oz(t, e))
+  return g.$X.filter(t => (null == e ? void 0 : e.id) !== m._ && u.oz(t, e))
 }
 
 function j(e) {
   let {
     guild: t
-  } = e, i = (0, l.e7)([c.Z], () => c.Z.getRole(t.id, t.getEveryoneRoleId())), u = x(t), m = u.length > 0, j = p.$X.some(e => !d.Z.can(e, t, null, {
+  } = e, i = (0, l.e7)([c.Z], () => c.Z.getRole(t.id, t.getEveryoneRoleId())), u = x(t), m = u.length > 0, j = g.$X.some(e => !d.Z.can(e, t, null, {
     [i.id]: b(f({}, i), {
       permissions: a.Od(i.permissions, e)
     })
@@ -68,11 +68,11 @@ function j(e) {
       children: [(0, r.jsx)(o.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: g.NW.string(g.t["+vaUlJ"])
+        children: p.NW.string(p.t["+vaUlJ"])
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: g.NW.format(g.t.RXAtdH, {
+        children: p.NW.format(p.t.RXAtdH, {
           numPerms: u.length
         })
       })]
@@ -82,18 +82,18 @@ function j(e) {
       height: 24,
       width: 24,
       className: h.warning,
-      "aria-label": g.NW.string(g.t.bG7Gu7)
+      "aria-label": p.NW.string(p.t.bG7Gu7)
     }) : (0, r.jsx)(o.owK, {
       size: "custom",
       color: "currentColor",
       height: 24,
       width: 24,
       className: h.check,
-      "aria-label": g.NW.string(g.t["YQix8/"])
+      "aria-label": p.NW.string(p.t["YQix8/"])
     })]
   });
   return m ? j ? (0, r.jsx)(o.ua7, {
-    text: g.NW.string(g.t["E5v/a2"]),
+    text: p.NW.string(p.t["E5v/a2"]),
     children: e => (0, r.jsx)("div", b(f({
       className: s()(h.simpleItemWrapper, h.disabled)
     }, e), {

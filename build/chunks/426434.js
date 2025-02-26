@@ -14,8 +14,8 @@ var i = n(392711),
   d = n(434404),
   u = n(449226),
   m = n(981631),
-  p = n(388032),
-  g = n(412856);
+  g = n(388032),
+  p = n(412856);
 
 function h(e) {
   let t, {
@@ -36,36 +36,36 @@ function h(e) {
       })
     }, 1e3);
   if (!f) return null;
-  v || (t = x ? p.NW.format(p.t.nFwNyc, {
+  v || (t = x ? g.NW.format(g.t.nFwNyc, {
     settingsHook: () => l.Z.open(m.oAB.ACCOUNT)
-  }) : p.NW.string(p.t["9Ghu4+"]));
+  }) : g.NW.string(g.t["9Ghu4+"]));
   let O = n.hasFeature(m.oNc.DISCOVERABLE);
   return (0, r.jsxs)("div", {
-    className: g.simpleItemWrapper,
+    className: p.simpleItemWrapper,
     children: [(0, r.jsxs)("div", {
-      className: g.itemContent,
+      className: p.itemContent,
       children: [(0, r.jsx)(a.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: p.NW.string(p.t.lbBfER)
+        children: g.NW.string(g.t.lbBfER)
       }), (0, r.jsxs)(a.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: [p.NW.string(p.t["a/93Jy"]), " ", t]
+        children: [g.NW.string(g.t["a/93Jy"]), " ", t]
       })]
     }), !v || N && O ? (0, r.jsx)(a.ua7, {
-      text: O ? p.NW.string(p.t["KG1V/P"]) : x ? p.NW.string(p.t.NmsheX) : p.NW.string(p.t.LieBtb),
+      text: O ? g.NW.string(g.t["KG1V/P"]) : x ? g.NW.string(g.t.NmsheX) : g.NW.string(g.t.LieBtb),
       children: e => (0, r.jsx)(u.Z, {
         checked: N,
         disabled: !0,
         onChange: _,
-        className: g.bringToFront,
+        className: p.bringToFront,
         tooltipProps: e
       })
     }) : (0, r.jsx)(u.Z, {
       checked: N,
       onChange: _,
-      className: g.bringToFront
+      className: p.bringToFront
     })]
   })
 }

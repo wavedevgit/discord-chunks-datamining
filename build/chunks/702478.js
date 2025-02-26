@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(497321),
   u = n(841470),
   m = n(142497),
-  p = n(706454),
-  g = n(650774),
+  g = n(706454),
+  p = n(650774),
   h = n(430824),
   f = n(246946),
   b = n(626135),
@@ -102,9 +102,9 @@ let I = function(e, t, n) {
   },
   T = () => {
     let e = (0, l.e7)([N.Z], () => N.Z.getGuildId()),
-      t = (0, l.e7)([g.Z], () => g.Z.getMemberCount(e)),
+      t = (0, l.e7)([p.Z], () => p.Z.getMemberCount(e)),
       n = (0, l.e7)([h.Z], () => h.Z.getGuild(e)),
-      s = (0, l.e7)([p.default], () => p.default.locale),
+      s = (0, l.e7)([g.default], () => g.default.locale),
       {
         analytics: a,
         errorCode: o

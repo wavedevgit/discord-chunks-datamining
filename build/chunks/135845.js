@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => _
 });
@@ -26,10 +26,10 @@ function _(e) {
       onTransitionToInviteChannel: y,
       onAcceptInstantInvite: x
     } = e,
-    O = null == v ? void 0 : v.id,
-    E = (0, o.e7)([u.Z], () => u.Z.getGuildId()),
-    j = (0, o.e7)([d.Z], () => null != _ && null != _.target_user ? d.Z.getActiveStreamForUser(_.target_user.id, O) : null, [_, O]),
-    N = (0, o.e7)([d.Z], () => null != _ && null != _.target_user ? d.Z.getStreamForUser(_.target_user.id, O) : null, [_, O]),
+    E = null == v ? void 0 : v.id,
+    O = (0, o.e7)([u.Z], () => u.Z.getGuildId()),
+    j = (0, o.e7)([d.Z], () => null != _ && null != _.target_user ? d.Z.getActiveStreamForUser(_.target_user.id, E) : null, [_, E]),
+    N = (0, o.e7)([d.Z], () => null != _ && null != _.target_user ? d.Z.getStreamForUser(_.target_user.id, E) : null, [_, E]),
     C = null != _ && _.target_type === f.Iq.STREAM && null != _.target_user && null != j,
     I = null != _ && null != N && null != _.channel && null != _.guild && N.channelId === _.channel.id && N.guildId === _.guild.id;
   a()(null != _, "Invite cannot be null");
@@ -52,7 +52,7 @@ function _(e) {
   }) : (t = h.NW.string(h.t["I6JG4+"]), n = l.Z.Button.Colors.GREEN, C && (t = h.NW.string(h.t["Q1W99/"]), n = l.Z.Button.Colors.PRIMARY), i = T ? h.NW.string(h.t["4hyaHh"]) : h.NW.formatToPlainString(h.t.QmlLEh, {
     name: P.username
   }));
-  let R = E === v.id && null != Z ? (0, r.jsx)(l.Z.Channel, {
+  let R = O === v.id && null != Z ? (0, r.jsx)(l.Z.Channel, {
     channel: Z
   }) : h.NW.formatToPlainString(h.t.u0vaDA, {
     guildName: v.name

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(296991),
   u = n(999382),
   m = n(217472),
-  p = n(651390),
-  g = n(981631),
+  g = n(651390),
+  p = n(981631),
   h = n(388032),
   f = n(932372);
 
@@ -31,7 +31,7 @@ function b(e) {
   }, [b, t]);
   if (null == s) return null;
   if (null == n) return (0, r.jsx)(c.$jN, {});
-  let N = !s.hasFeature(g.oNc.CLAN);
+  let N = !s.hasFeature(p.oNc.CLAN);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: f.headerContainer,
@@ -52,7 +52,7 @@ function b(e) {
         onChange: x,
         checked: t
       })]
-    }), t && (0, r.jsx)(p.c, {
+    }), t && (0, r.jsx)(g.c, {
       guildId: s.id
     }), (0, r.jsx)("div", {
       className: a()(f.rules, {

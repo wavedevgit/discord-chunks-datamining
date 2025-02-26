@@ -13,8 +13,8 @@ var r, i = n(200651),
   d = n(374470),
   u = n(477690),
   m = n(481060),
-  p = n(624138),
-  g = n(981631),
+  g = n(624138),
+  p = n(981631),
   h = n(388032),
   f = n(115313);
 
@@ -27,8 +27,8 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 let x = -1,
-  j = (0, p.Mg)(u.Z.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
-  N = (0, p.Mg)(u.Z.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
+  j = (0, g.Mg)(u.Z.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
+  N = (0, g.Mg)(u.Z.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
   v = {
     tension: 140,
     friction: 30
@@ -98,7 +98,7 @@ class O extends(r = s.Component) {
     let {
       progress: t
     } = this.props;
-    if (null == e.name || e.key === g.Eu4.NONE) return null;
+    if (null == e.name || e.key === p.Eu4.NONE) return null;
     let n = Math.min(t, e.numRequired);
     return (0, i.jsxs)("div", {
       className: f.__invalid_tierTooltip,
@@ -118,11 +118,11 @@ class O extends(r = s.Component) {
     let {
       progress: a,
       tiers: l
-    } = this.props, c = l[n], d = a >= e.numRequired, u = null != c && e.key === c.key, p = e.key === l[0].key;
-    s = p ? f.tierFirst : u ? f.tierCurrent : d ? f.tierAccomplished : f.tierInProgress;
-    let g = e.y - (p ? 0 : N / 2),
+    } = this.props, c = l[n], d = a >= e.numRequired, u = null != c && e.key === c.key, g = e.key === l[0].key;
+    s = g ? f.tierFirst : u ? f.tierCurrent : d ? f.tierAccomplished : f.tierInProgress;
+    let p = e.y - (g ? 0 : N / 2),
       h = this.state.tierMarkerActive === t,
-      x = !p && u && h;
+      x = !g && u && h;
     return (0, i.jsx)(m.ua7, {
       text: this.renderTierMarkerTooltip(e),
       position: "right",
@@ -151,7 +151,7 @@ class O extends(r = s.Component) {
           }({}, e), r = r = {
             className: s,
             style: {
-              top: g,
+              top: p,
               transform: t.scale.interpolate(e => "scale(".concat(e, ")"))
             },
             children: x && (0, i.jsx)(m.dz2, {

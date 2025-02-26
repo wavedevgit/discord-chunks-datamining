@@ -41,10 +41,10 @@ function L(e) {
     isObscured: o,
     src: l
   } = e, [s, c] = (0, i.useState)(!1);
-  return o ? (0, r.jsx)(p.a.Provider, {
+  return o ? (0, r.jsx)(p.aQ.Provider, {
     value: s,
-    children: (0, r.jsx)(p.Z, {
-      type: p.Z.Types.ATTACHMENT,
+    children: (0, r.jsx)(p.ZP, {
+      type: p.ZP.Types.ATTACHMENT,
       reason: m.wk.EXPLICIT_CONTENT,
       className: P.obscureContainer,
       obscured: !0,

@@ -18,8 +18,8 @@ function u(e) {
     guild: t,
     numSounds: n,
     isOutOfSlots: u
-  } = e, m = t.premiumTier, p = (0, a.FZ)(m, t.id), g = o._k[m] - 2;
-  if (null == p || m === l.Eu4.TIER_3 || n < g) return null;
+  } = e, m = t.premiumTier, g = (0, a.FZ)(m, t.id), p = o._k[m] - 2;
+  if (null == g || m === l.Eu4.TIER_3 || n < p) return null;
   let h = u ? {
     color: i.Ttl.GREEN,
     look: i.iLD.FILLED,
@@ -28,8 +28,8 @@ function u(e) {
   return (0, r.jsx)(s.Z, {
     header: c.NW.string(c.t.zT9Sxc),
     text: c.NW.formatToPlainString(c.t.OKqEAQ, {
-      level: p,
-      numAdditional: (0, a.Je)(p)
+      level: g,
+      numAdditional: (0, a.Je)(g)
     }),
     headerColor: "header-primary",
     textColor: "text-normal",
@@ -39,7 +39,7 @@ function u(e) {
       page: l.ZY5.GUILD_SETTINGS,
       section: l.jXE.GUILD_SETTINGS_SOUNDBOARD,
       object: l.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL,
-      objectType: (0, a.ge)(p)
+      objectType: (0, a.ge)(g)
     },
     className: d.container
   })

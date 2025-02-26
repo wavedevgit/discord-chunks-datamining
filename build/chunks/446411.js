@@ -24,8 +24,8 @@ var r, n = l(200651),
   j = l(400266),
   I = l(592125),
   O = l(52824),
-  S = l(626135),
-  P = l(585483),
+  P = l(626135),
+  S = l(585483),
   N = l(55935),
   C = l(408433),
   E = l(956664),
@@ -95,7 +95,7 @@ function G(e) {
     autoMute: w,
     volume: j,
     onPlay: I,
-    onPause: S,
+    onPause: P,
     onEnded: N,
     onControlsHide: C,
     onControlsShow: M,
@@ -106,10 +106,10 @@ function G(e) {
     placeholderVersion: V,
     sourceMetadata: _
   } = e, [B, W] = i.useState(x), F = null != c && null == c.proxyURL, G = i.useCallback(() => W(!1), [W]), Z = e => {
-    e.preventDefault(), e.stopPropagation(), null == I || I(!1), W(!0), F && (P.S.dispatch(H.CkL.VIDEO_EMBED_PLAYBACK_STARTED), P.S.subscribeOnce(H.CkL.VIDEO_EMBED_PLAYBACK_STARTED, G))
+    e.preventDefault(), e.stopPropagation(), null == I || I(!1), W(!0), F && (S.S.dispatch(H.CkL.VIDEO_EMBED_PLAYBACK_STARTED), S.S.subscribeOnce(H.CkL.VIDEO_EMBED_PLAYBACK_STARTED, G))
   };
   i.useEffect(() => () => {
-    F && P.S.unsubscribe(H.CkL.VIDEO_EMBED_PLAYBACK_STARTED, G)
+    F && S.S.unsubscribe(H.CkL.VIDEO_EMBED_PLAYBACK_STARTED, G)
   }, [F, G]);
   let {
     width: U,
@@ -143,7 +143,7 @@ function G(e) {
       autoMute: w,
       volume: j,
       onPlay: I,
-      onPause: S,
+      onPause: P,
       onMute: k,
       onControlsHide: C,
       onControlsShow: M,
@@ -522,7 +522,7 @@ class U extends(r = i.PureComponent) {
           channelId: null !== (n = null == e ? void 0 : e.id) && void 0 !== n ? n : "",
           location: a.I.CONTEXTUAL_IMAGE,
           withCommands: !0
-        }), S.default.track(H.rMx.IMAGE_HOVERED, {
+        }), P.default.track(H.rMx.IMAGE_HOVERED, {
           guild_id: null == e ? void 0 : e.guild_id,
           channel_id: null == e ? void 0 : e.id,
           image_recommendations_shown: this.props.showImageRecs
@@ -553,8 +553,8 @@ class U extends(r = i.PureComponent) {
     if (null == d) return null;
     let I = (0, O.q)(d),
       {
-        srcToOnClickOverride: S,
-        srcToHandlePreloadImage: P
+        srcToOnClickOverride: P,
+        srcToHandlePreloadImage: S
       } = null == h ? {
         srcToOnClickOverride: {},
         srcToHandlePreloadImage: {}
@@ -605,8 +605,8 @@ class U extends(r = i.PureComponent) {
           return g(F(W({}, C), {
             autoPlay: v && !l && !s,
             renderAccessory: N ? e : null,
-            handlePreloadImage: P[I],
-            onClick: S[I],
+            handlePreloadImage: S[I],
+            onClick: P[I],
             onMouseEnter: () => this.handleImageHover(!0, d, M),
             onMouseLeave: () => this.handleImageHover(!1, d, M),
             renderAdjacentContent: () => {
@@ -931,8 +931,8 @@ class U extends(r = i.PureComponent) {
     }) : (null === (e = t.provider) || void 0 === e ? void 0 : e.name) === "Amazon Music" && t.type === H.hBH.RICH ? (0, n.jsx)(g.Z, {
       embed: t,
       className: r
-    }) : this.isInline() ? null != l ? (0, n.jsx)(h.Z, {
-      type: h.Z.Types.ATTACHMENT,
+    }) : this.isInline() ? null != l ? (0, n.jsx)(h.ZP, {
+      type: h.ZP.Types.ATTACHMENT,
       reason: l,
       onReveal: this.onReveal,
       onToggleObscurity: this.onToggleObscurity,
@@ -942,8 +942,8 @@ class U extends(r = i.PureComponent) {
         [R.obscureVideoSpacing]: this.state.isVisible && this.state.videoControlsShown
       }),
       children: this.renderInlineMediaEmbed
-    }) : this.renderInlineMediaEmbed() : null != l ? (0, n.jsx)(h.Z, {
-      type: h.Z.Types.EMBED,
+    }) : this.renderInlineMediaEmbed() : null != l ? (0, n.jsx)(h.ZP, {
+      type: h.ZP.Types.EMBED,
       onReveal: this.onReveal,
       onToggleObscurity: this.onToggleObscurity,
       reason: l,

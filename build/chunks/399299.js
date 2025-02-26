@@ -16,8 +16,8 @@ var r = n(200651),
   h = n(925329),
   g = n(565138),
   x = n(977059),
-  f = n(695346),
-  v = n(494620),
+  v = n(695346),
+  f = n(494620),
   j = n(592125),
   S = n(650774),
   N = n(430824),
@@ -54,23 +54,23 @@ function Y(e) {
   } = e, i = (0, a.e7)([p.ZP, y.Z], () => (0, T.isWindows)() ? (0, w.Z)(p.ZP, y.Z) : null), c = (0, a.e7)([u.Z], () => (null == i ? void 0 : i.id) != null ? u.Z.getApplication(i.id) : null), d = (0, a.e7)([p.ZP], () => p.ZP.getRunningGames()), m = (0, a.Wu)([u.Z], () => d.map(e => null != e.id ? u.Z.getApplication(e.id) : null).filter(P.lm), [d]), g = null;
   if (null != t ? g = t.name : null != i && (g = i.name), null == g) return null;
   let x = (0, D.Z)(i, t, d),
-    f = l ? m.find(e => {
+    v = l ? m.find(e => {
       let {
         id: t
       } = e;
       return t === (null == x ? void 0 : x.id)
     }) : c,
-    v = null != t && t.id.startsWith("screen") ? o.pzj : o.GON;
+    f = null != t && t.id.startsWith("screen") ? o.pzj : o.GON;
   return (0, r.jsx)(o.xJW, {
     title: G.NW.string(G.t.TC7Ev7),
     className: V.modalContent,
     titleClassName: V.formItemTitleVerySlim,
     children: (0, r.jsxs)(k.Z, {
-      children: [null != f ? (0, r.jsx)(h.Z, {
-        game: f,
+      children: [null != v ? (0, r.jsx)(h.Z, {
+        game: v,
         size: h.Z.Sizes.XSMALL,
         className: F.selectedIcon
-      }) : (0, r.jsx)(v, {
+      }) : (0, r.jsx)(f, {
         className: F.selectedIcon
       }), (0, r.jsx)("span", {
         className: F.ellipsisText,
@@ -141,8 +141,8 @@ function X(e) {
   } = e, n = (0, a.e7)([S.Z], () => {
     var e;
     return null !== (e = S.Z.getMemberCount(t)) && void 0 !== e ? e : 0
-  }), s = f.eo.useSetting(), c = l.useCallback((e, t) => {
-    f.eo.updateSetting(t), C.default.track(z.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
+  }), s = v.eo.useSetting(), c = l.useCallback((e, t) => {
+    v.eo.updateSetting(t), C.default.track(z.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
       value: t
     })
   }, []);
@@ -215,7 +215,7 @@ function q(e) {
     targetGuildPremiumTier: p,
     selectSource: h,
     selectGuild: g,
-    sound: f,
+    sound: v,
     previewDisabled: S,
     onClose: N,
     onChangeSelectedFPS: y,
@@ -252,7 +252,7 @@ function q(e) {
       }), null != et ? (0, r.jsx)(J, {
         text: et
       }) : null, null != t && null == et ? (0, r.jsx)(H, {
-        enabled: f,
+        enabled: v,
         onChange: M,
         screen: t.id.startsWith("screen")
       }) : null]
@@ -273,8 +273,8 @@ function q(e) {
       text: G.NW.format(G.t.RrLvub, {
         helpCenterLink: E.Z.getArticleURL(z.BhN.NVIDIA_DRIVER_ISSUES)
       })
-    }) : null, es && (0, r.jsx)(v.Z, {
-      look: v.z.WARNING,
+    }) : null, es && (0, r.jsx)(f.Z, {
+      look: f.z.WARNING,
       className: F.hardwareWarning,
       children: G.NW.format(G.t.zCLXws, {
         onClick: () => {

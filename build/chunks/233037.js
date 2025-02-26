@@ -22,7 +22,7 @@ function x(e) {
     selectedChannelId: t,
     guildId: n,
     onChangeSelectedChannelId: x
-  } = e, f = (0, l.e7)([c.default], () => c.default.getCurrentUser()), v = (0, l.e7)([a.Z, i.ZP, o.Z], () => (0, d.h_)(i.ZP.getChannels(n), a.Z, o.Z)), j = (0, l.e7)([u.ZP], () => u.ZP.getVoiceStates(n)), S = v.map(e => {
+  } = e, v = (0, l.e7)([c.default], () => c.default.getCurrentUser()), f = (0, l.e7)([a.Z, i.ZP, o.Z], () => (0, d.h_)(i.ZP.getChannels(n), a.Z, o.Z)), j = (0, l.e7)([u.ZP], () => u.ZP.getVoiceStates(n)), S = f.map(e => {
     var n;
     return {
       name: (0, r.jsx)(m.Z, {
@@ -31,7 +31,7 @@ function x(e) {
           let {
             user: t
           } = e;
-          return t.id !== (null == f ? void 0 : f.id)
+          return t.id !== (null == v ? void 0 : v.id)
         }).map(e => {
           let {
             user: t

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(650774),
   u = n(21297),
   m = n(118215),
-  p = n(30766),
-  g = n(166184),
+  g = n(30766),
+  p = n(166184),
   h = n(654351),
   f = n(259674),
   b = n(845377),
@@ -33,7 +33,7 @@ let _ = ["322850917248663552", "172018499005317120", "414234792121597953", "2284
     i.useEffect(() => {
       (0, u.z)([y, C])
     }, [y, C]);
-    let [I, E] = (0, o.Wu)([p.Z], () => [p.Z.getGuild(y), p.Z.getGuild(C)], [y, C]), {
+    let [I, E] = (0, o.Wu)([g.Z], () => [g.Z.getGuild(y), g.Z.getGuild(C)], [y, C]), {
       canEnableDiscovery: S,
       isPendingSuccess: T
     } = (0, o.cj)([m.ZP], () => ({
@@ -41,8 +41,8 @@ let _ = ["322850917248663552", "172018499005317120", "414234792121597953", "2284
       isPendingSuccess: m.ZP.isPendingSuccess(t.id)
     }), [t.id]), [P, w] = (0, o.Wu)([d.Z], () => [null, d.Z.getMemberCount(t.id)], [t.id]), R = i.useCallback(() => {
       null != n && n()
-    }, [n]), D = null;
-    return s ? T ? D = j.NW.string(j.t.zP8DFx) : S || (D = j.NW.string(j.t.ABFu19)) : D = j.NW.string(j.t["5VbUBw"]), (0, r.jsxs)("div", {
+    }, [n]), Z = null;
+    return s ? T ? Z = j.NW.string(j.t.zP8DFx) : S || (Z = j.NW.string(j.t.ABFu19)) : Z = j.NW.string(j.t["5VbUBw"]), (0, r.jsxs)("div", {
       className: N.container,
       children: [(0, r.jsx)("img", {
         alt: "",
@@ -50,19 +50,19 @@ let _ = ["322850917248663552", "172018499005317120", "414234792121597953", "2284
         className: N.sparkles
       }), (0, r.jsxs)("div", {
         className: N.discoverPreview,
-        children: [(0, r.jsx)(g.Z, {
+        children: [(0, r.jsx)(p.Z, {
           className: N.placeholderCard,
           disabled: !0,
           small: !0,
           loading: null == I,
           guild: I
-        }), (0, r.jsx)(g.Z, {
+        }), (0, r.jsx)(p.Z, {
           className: N.previewCard,
           guild: t,
           description: j.NW.string(j.t["0k7fyM"]),
           presenceCount: P,
           memberCount: w
-        }), (0, r.jsx)(g.Z, {
+        }), (0, r.jsx)(p.Z, {
           className: N.placeholderCard,
           disabled: !0,
           small: !0,
@@ -96,7 +96,7 @@ let _ = ["322850917248663552", "172018499005317120", "414234792121597953", "2284
           })
         })
       }), (0, r.jsx)(c.ua7, {
-        text: D,
+        text: Z,
         children: e => {
           var t, n;
           return (0, r.jsx)(c.zxk, (t = function(e) {

@@ -52,7 +52,7 @@ class T extends s.Z {
         if (!1 === t) {
           if ((null == i ? void 0 : i.contentIdentifier) === "summer_bogo_content") {
             if (!await (0, O.k)()) return !1
-          } else if ((null == i ? void 0 : i.contentIdentifier) === "Q1_MARKETING_MOMENT_ANNOUNCEMENT_CONTENT_IDENTIFIER" && !1 === await (0, v.M)({
+          } else if ((null == i ? void 0 : i.contentIdentifier) === "Q1_MARKETING_MOMENT_ANNOUNCEMENT_CONTENT_IDENTIFIER" && !1 === (0, v.M)({
               location: "OfferAnnouncementManager"
             })) return !1
         }

@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => K
 }), n(47120);
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(930114),
   y = n(981632),
   x = n(108989),
-  O = n(703656),
-  E = n(314897),
+  E = n(703656),
+  O = n(314897),
   j = n(82142),
   N = n(283595),
   C = n(594174),
@@ -320,7 +320,7 @@ class V extends i.Component {
       let {
         libraryApplication: t
       } = this.props;
-      e.preventDefault(), null != t && t.isHidden() ? (0, O.uL)(L.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, O.uL)(L.Z5c.APPLICATION_LIBRARY, {
+      e.preventDefault(), null != t && t.isHidden() ? (0, E.uL)(L.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, E.uL)(L.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : void 0
         }
@@ -392,7 +392,7 @@ class V extends i.Component {
   }
 }
 let z = (0, f.Z)((0, m.Z)(V)),
-  K = c.ZP.connectStores([j.Z, S.Z, C.default, N.Z, I.Z, E.default, h.Z], e => {
+  K = c.ZP.connectStores([j.Z, S.Z, C.default, N.Z, I.Z, O.default, h.Z], e => {
     let {
       code: t,
       author: n,
@@ -404,7 +404,7 @@ let z = (0, f.Z)((0, m.Z)(V)),
       gifter: o,
       currentUser: r,
       subscriptionPlan: null != i && null != i.subscriptionPlanId ? (0, Z.oE)(i.subscriptionPlanId) : null,
-      isSelfGift: null != i ? E.default.getId() === i.userId : E.default.getId() === n.id,
+      isSelfGift: null != i ? O.default.getId() === i.userId : O.default.getId() === n.id,
       resolved: j.Z.getIsResolved(t),
       libraryApplication: null != a && (null == i ? void 0 : i.entitlementBranches) != null ? A.z2(i.entitlementBranches, a, N.Z) : null,
       useReducedMotion: l

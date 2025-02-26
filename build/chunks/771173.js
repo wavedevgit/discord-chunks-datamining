@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
 var i = n(907305),
-  o = n(747017),
-  a = n(953372);
+  o = n(468363),
+  a = n(747017),
+  s = n(953372);
 
-function s(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -18,22 +19,22 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function l(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      l(e, t, n[t])
     })
   }
   return e
 }
 
-function c(e, t) {
+function u(e, t) {
   if (null == e) return {};
-  var n, r, i = u(e, t);
+  var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -41,7 +42,7 @@ function c(e, t) {
   return i
 }
 
-function u(e, t) {
+function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -49,14 +50,18 @@ function u(e, t) {
   return i
 }
 
-function d(e) {
+function f(e) {
   var {
     location: t
-  } = e, n = c(e, ["location"]);
+  } = e, n = u(e, ["location"]);
   let {
-    activityStatusCleanupEnabled: s
+    activityStatusCleanupEnabled: l
   } = (0, i.w)({
     location: t
+  }), {
+    voiceActivityStatusEnabled: d
+  } = (0, o.U)({
+    location: t
   });
-  return s ? (0, r.jsx)(a.Z, l({}, n)) : (0, r.jsx)(o.Z, l({}, n))
+  return l || d ? (0, r.jsx)(s.Z, c({}, n)) : (0, r.jsx)(a.Z, c({}, n))
 }

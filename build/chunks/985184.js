@@ -56,8 +56,8 @@ function O(e) {
       })
     })
   });
-  return null == t || 0 === t.length ? null : i ? (0, n.jsx)(a.Z, {
-    type: a.Z.Types.ATTACHMENT,
+  return null == t || 0 === t.length ? null : i ? (0, n.jsx)(a.ZP, {
+    type: a.ZP.Types.ATTACHMENT,
     reason: c.wk.SPOILER,
     obscured: p,
     onToggleObscurity: () => f(e => !e),

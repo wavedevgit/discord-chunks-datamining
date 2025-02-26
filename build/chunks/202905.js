@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(65361),
   u = n(910200),
   m = n(434404),
-  p = n(999382),
-  g = n(548522),
+  g = n(999382),
+  p = n(548522),
   h = n(651390),
   f = n(981631),
   b = n(388032),
@@ -39,9 +39,9 @@ function N(e) {
   } = e, {
     guild: n,
     guildProfile: N
-  } = (0, l.cj)([p.Z], () => ({
-    guild: p.Z.getGuild(),
-    guildProfile: p.Z.getGuildProfile()
+  } = (0, l.cj)([g.Z], () => ({
+    guild: g.Z.getGuild(),
+    guildProfile: g.Z.getGuildProfile()
   })), v = null == n ? void 0 : n.id, _ = (0, l.e7)([c.Z], () => c.Z.get(v)), {
     fetchGuildProfile: O
   } = (0, d.u)(v), y = (null == N ? void 0 : N.visibility) == null || !s.Y.VISIBLE.has(null == N ? void 0 : N.visibility), C = (null == N ? void 0 : N.visibility) === s.k.PUBLIC_WITH_RECRUITMENT;
@@ -76,7 +76,7 @@ function N(e) {
       guildId: n.id
     }), (0, r.jsx)("div", {
       className: x.form,
-      children: null != T ? (0, r.jsx)(g.y, {
+      children: null != T ? (0, r.jsx)(p.y, {
         guild: n,
         formFields: T
       }) : (0, r.jsx)(o.$jN, {})

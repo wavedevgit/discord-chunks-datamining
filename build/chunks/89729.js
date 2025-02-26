@@ -1,4 +1,4 @@
-/** Chunk was on 22173 **/
+/** Chunk was on 18895 **/
 n.d(t, {
   g: () => h
 });
@@ -53,58 +53,58 @@ function h(e, t) {
     },
     O = b ? j.burst : j.standard,
     y = Math.max(0, (null !== (n = b ? null == g ? void 0 : g.burst_count : null == g ? void 0 : g.count) && void 0 !== n ? n : 0) - v.length),
-    x = (0, r.Lh)(t);
+    T = (0, r.Lh)(t);
   return 1 === v.length ? y > 0 ? null != h ? d.NW.formatToPlainString(O.reactionTooltip1NInteractive, {
     a: v[0],
     n: y,
-    emojiName: x,
+    emojiName: T,
     onClick: h
   }) : d.NW.formatToPlainString(O.reactionTooltip1N, {
     a: v[0],
     n: y,
-    emojiName: x
+    emojiName: T
   }) : d.NW.formatToPlainString(O.reactionTooltip1, {
     a: v[0],
-    emojiName: x
+    emojiName: T
   }) : 2 === v.length ? y > 0 ? null != h ? d.NW.formatToPlainString(O.reactionTooltip2NInteractive, {
     a: v[0],
     b: v[1],
     n: y,
-    emojiName: x,
+    emojiName: T,
     onClick: h
   }) : d.NW.formatToPlainString(O.reactionTooltip2N, {
     a: v[0],
     b: v[1],
     n: y,
-    emojiName: x
+    emojiName: T
   }) : d.NW.formatToPlainString(O.reactionTooltip2, {
     a: v[0],
     b: v[1],
-    emojiName: x
+    emojiName: T
   }) : 3 === v.length ? y > 0 ? null != h ? d.NW.formatToPlainString(O.reactionTooltip3NInteractive, {
     a: v[0],
     b: v[1],
     c: v[2],
     n: y,
-    emojiName: x,
+    emojiName: T,
     onClick: h
   }) : d.NW.formatToPlainString(O.reactionTooltip3N, {
     a: v[0],
     b: v[1],
     c: v[2],
     n: y,
-    emojiName: x
+    emojiName: T
   }) : d.NW.formatToPlainString(O.reactionTooltip3, {
     a: v[0],
     b: v[1],
     c: v[2],
-    emojiName: x
+    emojiName: T
   }) : null != h ? d.NW.formatToPlainString(O.reactionTooltipNInteractive, {
     n: y,
-    emojiName: x,
+    emojiName: T,
     onClick: h
   }) : d.NW.formatToPlainString(O.reactionTooltipN, {
     n: y,
-    emojiName: x
+    emojiName: T
   })
 }

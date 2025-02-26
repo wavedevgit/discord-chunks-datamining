@@ -1,10 +1,10 @@
-/** Chunk was on 94458 **/
+/** Chunk was on 14093 **/
 n.d(t, {
-  Z: () => v
+  Z: () => x
 });
 var r = n(200651),
-  a = n(192379),
-  l = n(481060),
+  l = n(192379),
+  a = n(481060),
   i = n(239091),
   o = n(299206),
   s = n(810568),
@@ -15,7 +15,7 @@ var r = n(200651),
   p = n(388032),
   h = n(694247);
 
-function x(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,19 +47,19 @@ function g(e, t) {
   }), e
 }
 
-function v(e) {
+function x(e) {
   var t;
   let {
     user: n,
-    guildId: v,
-    channel: f,
+    guildId: x,
+    channel: v,
     entry: y,
     onSelect: j,
     disableGameProfileLinks: P
-  } = e, O = a.useContext(m.Ir), b = (0, u.Z)({
+  } = e, O = l.useContext(m.Ir), b = (0, u.Z)({
     userId: n.id,
-    guildId: v,
-    channelId: null == f ? void 0 : f.id,
+    guildId: x,
+    channelId: null == v ? void 0 : v.id,
     onAction: O
   }), C = (0, o.Z)({
     id: n.id,
@@ -74,7 +74,7 @@ function v(e) {
     trackEntryPointImpression: !0,
     sourceUserId: y.author_id
   });
-  return (0, r.jsx)(l.yRy, {
+  return (0, r.jsx)(a.yRy, {
     align: "top",
     position: "right",
     disablePointerEvents: !1,
@@ -82,7 +82,7 @@ function v(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(l.v2r, {
+      return (0, r.jsx)(a.v2r, {
         navId: "content-inventory-context",
         onClose: () => {
           (0, i.Zy)(), t()
@@ -90,26 +90,26 @@ function v(e) {
         "aria-label": p.NW.string(p.t.liqwPD),
         onSelect: j,
         children: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsxs)(l.kSQ, {
-            children: [b, null != E && (0, r.jsx)(l.sNh, {
+          children: [(0, r.jsxs)(a.kSQ, {
+            children: [b, null != E && (0, r.jsx)(a.sNh, {
               id: "game-profile",
               label: p.NW.string(p.t.f7aVGh),
               action: e => {
                 E(e), null == O || O()
               }
             })]
-          }), (0, r.jsxs)(l.kSQ, {
+          }), (0, r.jsxs)(a.kSQ, {
             children: [C, I]
           })]
         })
       })
     },
-    children: e => (0, r.jsx)(l.ua7, {
+    children: e => (0, r.jsx)(a.ua7, {
       text: p.NW.string(p.t.UKOtz8),
-      children: t => (0, r.jsx)(l.P3F, g(x(g(x({}, t), {
+      children: t => (0, r.jsx)(a.P3F, g(f(g(f({}, t), {
         className: h.menuIcon
       }), e), {
-        children: (0, r.jsx)(l.xhG, {
+        children: (0, r.jsx)(a.xhG, {
           color: "currentColor",
           size: "custom",
           width: 16,

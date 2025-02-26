@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   As: () => B,
   ZP: () => Q,
@@ -22,8 +22,8 @@ var r, i, a = n(192379),
   v = n(344185),
   y = n(569471),
   x = n(723170),
-  O = n(675478),
-  E = n(581883),
+  E = n(675478),
+  O = n(581883),
   j = n(131704),
   N = n(592125),
   C = n(984933),
@@ -227,9 +227,9 @@ class V extends o.EventEmitter {
         collapsedChannels: i,
         loadState: a
       } = this.state, o = d().findIndex(r, e => e.channelId === t), l = r[o], s = !l.collapsed;
-      i[t] = s, (0, O.BU)(n, t, e => {
+      i[t] = s, (0, E.BU)(n, t, e => {
         e.collapsedInInbox = s
-      }, O.fy.FREQUENT_USER_ACTION), this.setState({
+      }, E.fy.FREQUENT_USER_ACTION), this.setState({
         scrollToChannelIndex: o,
         collapsedChannels: i,
         loadState: "done" !== a || s || l.isFullyLoaded ? a : "loaded",
@@ -287,7 +287,7 @@ function K() {
   let e = function() {
       var e, t;
       let n = {},
-        r = null !== (t = null === (e = E.Z.settings.guilds) || void 0 === e ? void 0 : e.guilds) && void 0 !== t ? t : {};
+        r = null !== (t = null === (e = O.Z.settings.guilds) || void 0 === e ? void 0 : e.guilds) && void 0 !== t ? t : {};
       for (let e in r)
         for (let t in r[e].channels) {
           let i = N.Z.getChannel(t);

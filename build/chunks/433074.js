@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => C
 }), n(47120);
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(674588),
   y = n(264043),
   x = n(132871),
-  O = n(147890),
-  E = n(981631),
+  E = n(147890),
+  O = n(981631),
   j = n(388032),
   N = n(587199);
 
@@ -45,7 +45,7 @@ function C(e) {
   i.useEffect(() => {
     (0, v.gZ)(I)
   }, [I]), i.useEffect(() => {
-    D && Z === y.M.FETCHED && _.default.track(E.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
+    D && Z === y.M.FETCHED && _.default.track(O.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: I,
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: S.author.id,
@@ -53,7 +53,7 @@ function C(e) {
       channel_id: S.channel_id
     })
   }, [D, I, null == L ? void 0 : L.id, S.channel_id, R, S.author.id, Z]), i.useEffect(() => {
-    D && w && _.default.track(E.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    D && w && _.default.track(O.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: S.author.id,
       guild_id: R,
@@ -61,13 +61,13 @@ function C(e) {
     })
   }, [D, R, w, S.author.id, S.channel_id]);
   let U = e => {
-    _.default.track(E.rMx.APP_DIRECTORY_PROFILE_EMBED_APP_INFO_CLICKED, {
+    _.default.track(O.rMx.APP_DIRECTORY_PROFILE_EMBED_APP_INFO_CLICKED, {
       application_id: I,
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       clicked_section: e,
       guild_id: R,
       channel_id: S.channel_id
-    }), (0, O.dx)({
+    }), (0, E.dx)({
       view: x.eN.APPLICATION,
       guildId: R,
       applicationId: I,

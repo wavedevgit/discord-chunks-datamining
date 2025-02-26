@@ -13,9 +13,9 @@ var r = n(200651),
   d = n(969632),
   u = n(922112),
   m = n(388032),
-  p = n(339945);
+  g = n(339945);
 
-function g(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ let f = [],
     } = e, b = (0, s.Wu)([d.Z], () => {
       var e;
       return null !== (e = d.Z.getSettings().resourceChannels) && void 0 !== e ? e : f
-    }), x = i.useMemo(() => b.map(e => h(g({}, e), {
+    }), x = i.useMemo(() => b.map(e => h(p({}, e), {
       id: e.channelId
     })), [b]), {
       handleDragStart: j,
@@ -69,7 +69,7 @@ let f = [],
         let {
           default: e
         } = await n.e("84725").then(n.bind(n, 462499));
-        return n => (0, r.jsx)(e, h(g({}, n), {
+        return n => (0, r.jsx)(e, h(p({}, n), {
           guildId: t,
           onSave: c.r2,
           onIconUpload: _
@@ -77,7 +77,7 @@ let f = [],
       })
     }, [t, _]);
     return (0, r.jsxs)("div", {
-      className: p.editResources,
+      className: g.editResources,
       children: [b.map((e, n) => (0, r.jsx)(u.Z, {
         guildId: t,
         resourceChannel: e,
@@ -86,7 +86,7 @@ let f = [],
         onDragReset: N,
         onDragComplete: v
       }, e.channelId)), b.length < o.x3 && (0, r.jsxs)(a.P3F, {
-        className: p.addActionItem,
+        className: g.addActionItem,
         onClick: O,
         children: [(0, r.jsx)(a.oFk, {
           size: "xs",

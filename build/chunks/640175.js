@@ -17,14 +17,14 @@ function u(e) {
     guildId: t,
     defaultSettings: n,
     canManageGuild: u
-  } = e, m = (0, s.e7)([l.Z], () => l.Z.getMemberCount(t)), p = i.useMemo(() => [{
+  } = e, m = (0, s.e7)([l.Z], () => l.Z.getMemberCount(t)), g = i.useMemo(() => [{
     name: d.NW.string(d.t["n/bTaW"]),
     value: c.bL.ALL_MESSAGES,
     desc: null != m && m >= c.qWG ? d.NW.string(d.t["L+P4t7"]) : null
   }, {
     name: d.NW.string(d.t["6fQPho"]),
     value: c.bL.ONLY_MENTIONS
-  }], [m]), g = i.useCallback(e => {
+  }], [m]), p = i.useCallback(e => {
     let {
       value: t
     } = e;
@@ -33,9 +33,9 @@ function u(e) {
     })
   }, []);
   return (0, r.jsx)(a.FXm, {
-    options: p,
+    options: g,
     value: n,
     disabled: !u,
-    onChange: g
+    onChange: p
   })
 }

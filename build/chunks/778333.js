@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => _
 });
@@ -25,9 +25,9 @@ function _(e) {
   } = e, b = (0, a.e7)([d.default], () => d.default.getId()), v = (null === (t = n.inviter) || void 0 === t ? void 0 : t.id) === b, y = n.state === f.r2o.ACCEPTING, x = (0, a.e7)([p.Z], () => {
     var e;
     return null != n.inviter && p.Z.isFriend(null === (e = n.inviter) || void 0 === e ? void 0 : e.id)
-  }), O = i.useCallback(() => {
+  }), E = i.useCallback(() => {
     null != n.inviter && null != u.Z.getDMFromUserId(n.inviter.id) && o.Z.openPrivateChannel([n.inviter.id])
-  }, [n.inviter]), E = i.useCallback(() => {
+  }, [n.inviter]), O = i.useCallback(() => {
     let e = _("Invite Button Embed");
     l.Z.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
@@ -35,7 +35,7 @@ function _(e) {
     })
   }, [n.code, _]);
   if (null == n.inviter) return null;
-  let j = x ? O : E,
+  let j = x ? E : O,
     N = h.NW.string(h.t.ib7Ng4),
     C = s.Z.Button.Colors.GREEN;
   x ? (N = h.NW.string(h.t.xhxnPj), C = s.Z.Button.Colors.PRIMARY) : v && (N = h.NW.string(h.t.ib7Ng4), C = s.Z.Button.Colors.PRIMARY);

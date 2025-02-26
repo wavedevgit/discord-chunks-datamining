@@ -1,10 +1,10 @@
-/** Chunk was on 94458 **/
+/** Chunk was on 14093 **/
 n.d(t, {
   Z: () => N
 }), n(627494), n(757143), n(301563);
 var r = n(200651),
-  a = n(192379),
-  l = n(442837),
+  l = n(192379),
+  a = n(442837),
   i = n(481060),
   o = n(706454),
   s = n(594174),
@@ -14,21 +14,21 @@ var r = n(200651),
   m = n(379357),
   p = n(561308),
   h = n(685270),
-  x = n(31074),
+  f = n(31074),
   g = n(206295),
-  v = n(335326),
-  f = n(297781),
+  x = n(335326),
+  v = n(297781),
   y = n(591853),
   j = n(410441),
   P = n(981631),
   O = n(388032);
 let b = (e, t, n) => {
     let r = O.t.LHF6Dw,
-      a = u.ZP.getName(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, n),
-      l = e.extra.media_title;
+      l = u.ZP.getName(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, n),
+      a = e.extra.media_title;
     return O.NW.formatToMarkdownString(r, {
-      mediaTitle: l,
-      userName: a,
+      mediaTitle: a,
+      userName: l,
       episodeDescription: e.extra.media_subtitle
     }).replaceAll("*", "")
   },
@@ -42,25 +42,25 @@ let b = (e, t, n) => {
       entry: n,
       onReaction: u,
       onVoiceChannelPreview: N
-    } = e, I = (0, l.e7)([s.default], () => s.default.getUser(n.author_id)), {
+    } = e, I = (0, a.e7)([s.default], () => s.default.getUser(n.author_id)), {
       largeImage: w
     } = (0, m.rv)({
       entry: n
     }), {
       primaryColor: E,
-      secondaryColor: T
-    } = (0, g.Z)(null == w ? void 0 : w.src), Z = (0, l.e7)([o.default], () => o.default.locale), S = (0, x.Z)(P.ABu.CRUNCHYROLL), A = (0, p.ap)(n.extra.media_assets_large_text), _ = a.useCallback(e => {
+      secondaryColor: Z
+    } = (0, g.Z)(null == w ? void 0 : w.src), S = (0, a.e7)([o.default], () => o.default.locale), T = (0, f.Z)(P.ABu.CRUNCHYROLL), A = (0, p.ap)(n.extra.media_assets_large_text), _ = l.useCallback(e => {
       if (null != I && (null == w ? void 0 : w.src) != null) return (0, h.B)({
         entry: n,
         mediaImageSrc: null == w ? void 0 : w.src,
         avatarSrc: I.getAvatarURL(null == t ? void 0 : t.guild_id, 128),
         description: b(n, t, I),
-        timestamp: (0, p.yh)(n, Z),
+        timestamp: (0, p.yh)(n, S),
         episodeDescription: A,
-        colors: [E, T],
+        colors: [E, Z],
         channelId: e
       })
-    }, [t, n, A, Z, null == w ? void 0 : w.src, E, T, I]), k = () => {
+    }, [t, n, A, S, null == w ? void 0 : w.src, E, Z, I]), k = () => {
       if (null == n.extra.url) return;
       let e = d.Z.safeParseWithQuery(n.extra.url);
       null != e && null != e.protocol && null != e.hostname && (0, c.q)({
@@ -76,13 +76,13 @@ let b = (e, t, n) => {
         title: n.extra.media_title,
         subtitle: n.extra.media_subtitle,
         headerIcons: (0, r.jsx)(j.Z, {
-          onClick: S,
+          onClick: T,
           Icon: i.omf,
           "aria-label": O.NW.string(O.t.jdJYX1)
         }),
-        badges: (0, r.jsx)(f.Gk, {
-          location: f.Gt.POPOUT,
-          children: v.t.map((e, t) => (0, r.jsx)(e, {
+        badges: (0, r.jsx)(v.Gk, {
+          location: v.Gt.POPOUT,
+          children: x.t.map((e, t) => (0, r.jsx)(e, {
             entry: n
           }, t))
         }),

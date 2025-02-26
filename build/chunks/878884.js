@@ -1,5 +1,4 @@
 /** Chunk was on 79120 **/
-"use strict";
 n.d(t, {
   Z: () => E
 }), n(47120);
@@ -13,11 +12,11 @@ var r, l, i, o = n(442837),
   p = n(19780),
   m = n(594174),
   g = n(979651),
-  y = n(938475),
-  b = n(981631),
-  h = n(354459);
-let v = new c.Z,
-  O = new c.Z,
+  b = n(938475),
+  y = n(981631),
+  O = n(354459);
+let h = new c.Z,
+  v = new c.Z,
   j = new Set;
 
 function S(e, t, n) {
@@ -25,10 +24,10 @@ function S(e, t, n) {
       userId: e.id,
       channelId: n
     }),
-    l = (0, y.PH)(r, null != t ? t : b.ME, e.id);
-  v.set(e.id, l);
+    l = (0, b.PH)(r, null != t ? t : y.ME, e.id);
+  h.set(e.id, l);
   let i = {
-    type: h.fO.USER,
+    type: O.fO.USER,
     user: e,
     id: e.id,
     streamId: null,
@@ -41,17 +40,17 @@ function S(e, t, n) {
     userNick: d.ZP.getName(t, n, e),
     localVideoDisabled: !1
   };
-  O.set(e.id, i)
+  v.set(e.id, i)
 }
 
-function N(e) {
-  let t = v.delete(e),
-    n = O.delete(e),
+function P(e) {
+  let t = h.delete(e),
+    n = v.delete(e),
     r = j.delete(e);
   return t || n || r
 }
 
-function P() {
+function N() {
   var e;
   let t = p.Z.getChannelId();
   if (null == t) return !1;
@@ -67,44 +66,44 @@ function P() {
   }), r
 }
 
-function I() {
-  v.clear(), O.clear(), j.clear()
+function x() {
+  h.clear(), v.clear(), j.clear()
 }
-class x extends(r = o.ZP.Store) {
+class I extends(r = o.ZP.Store) {
   initialize() {
-    this.waitFor(g.Z, m.default, f.Z, p.Z), this.syncWith([m.default], P)
+    this.waitFor(g.Z, m.default, f.Z, p.Z), this.syncWith([m.default], N)
   }
   get desyncedVoiceStatesCount() {
-    return v.size()
+    return h.size()
   }
   getDesyncedUserIds() {
-    return v.keys()
+    return h.keys()
   }
   getDesyncedVoiceStates() {
-    return v.values()
+    return h.values()
   }
   getDesyncedParticipants() {
-    return O.values()
+    return v.values()
   }
 }
-i = "RTCConnectionDesyncStore", (l = "displayName") in x ? Object.defineProperty(x, l, {
+i = "RTCConnectionDesyncStore", (l = "displayName") in I ? Object.defineProperty(I, l, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : x[l] = i;
-let E = new x(s.Z, {
+}) : I[l] = i;
+let E = new I(s.Z, {
   CONNECTION_OPEN: function() {
-    I()
+    x()
   },
-  VOICE_CHANNEL_SELECT: I,
+  VOICE_CHANNEL_SELECT: x,
   RTC_CONNECTION_STATE: function(e) {
     let {
       state: t,
       context: n
     } = e;
-    if (n !== a.Yn.DEFAULT || t !== b.hes.DISCONNECTED) return !1;
-    I()
+    if (n !== a.Yn.DEFAULT || t !== y.hes.DISCONNECTED) return !1;
+    x()
   },
   VOICE_STATE_UPDATES: function(e) {
     let {
@@ -115,7 +114,7 @@ let E = new x(s.Z, {
         userId: r,
         channelId: l
       } = t;
-      return l === n && !!N(r) || e
+      return l === n && !!P(r) || e
     }, !1)
   },
   RTC_CONNECTION_CLIENT_CONNECT: function(e) {
@@ -136,6 +135,6 @@ let E = new x(s.Z, {
       userId: t,
       context: n
     } = e;
-    return n === a.Yn.DEFAULT && N(t)
+    return n === a.Yn.DEFAULT && P(t)
   }
 })

@@ -49,13 +49,13 @@ function m(e) {
   }({}, i, r, d[t])
 }
 
-function p(e) {
+function g(e) {
   let {
     error: t
   } = e;
   u = t.code
 }
-class g extends(r = a.ZP.Store) {
+class p extends(r = a.ZP.Store) {
   getOverviewAnalytics(e) {
     return d[e]
   }
@@ -63,12 +63,12 @@ class g extends(r = a.ZP.Store) {
     return u
   }
 }
-o(g, "displayName", "GuildSettingsAnalyticsStore");
-let h = new g(l.Z, {
+o(p, "displayName", "GuildSettingsAnalyticsStore");
+let h = new p(l.Z, {
   GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_SUCCESS: m,
   GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_SUCCESS: m,
   GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_SUCCESS: m,
-  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE: p,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE: p,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE: p
+  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE: g,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE: g,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE: g
 })

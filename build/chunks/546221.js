@@ -14,8 +14,8 @@ var i = n(481060),
   d = n(997519),
   u = n(146710),
   m = n(146610),
-  p = n(67152),
-  g = n(791382),
+  g = n(67152),
+  p = n(791382),
   h = n(277369),
   f = n(215124),
   b = n(981631),
@@ -38,7 +38,7 @@ function N(e) {
       children: [x.NW.string(x.t["9Ub4KS"]), " ", s]
     }), (0, r.jsx)(i.LZC, {
       size: 16
-    }), (0, r.jsx)(p.ZP, {
+    }), (0, r.jsx)(g.ZP, {
       payoutsByPeriod: t
     })]
   })
@@ -64,7 +64,7 @@ let _ = e => {
     application: o
   } = e, {
     loading: m,
-    team: p,
+    team: g,
     currentPeriod: _,
     allPeriods: O,
     metrics: y
@@ -85,14 +85,14 @@ let _ = e => {
         size: 8
       }), (0, r.jsxs)("div", {
         className: j.metricsContainer,
-        children: [(0, r.jsx)(g.Z, {
+        children: [(0, r.jsx)(p.Z, {
           label: x.NW.string(x.t.iY1jW1),
           value: (0, a.T4)(null !== (t = y.revenue) && void 0 !== t ? t : 0, b.pKx.USD),
-          additionalContent: (0, r.jsx)(g.H, {
+          additionalContent: (0, r.jsx)(p.H, {
             value: y.revenuePctChange,
             isPercent: !0
           })
-        }), (0, r.jsx)(g.Z, {
+        }), (0, r.jsx)(p.Z, {
           label: x.NW.string(x.t.cXyw29),
           value: (0, r.jsxs)(r.Fragment, {
             children: [null !== (n = y.subscribers) && void 0 !== n ? n : "-", " ", (0, r.jsx)(i.tBG, {
@@ -102,7 +102,7 @@ let _ = e => {
               "aria-hidden": !0
             })]
           }),
-          additionalContent: (0, r.jsx)(g.H, {
+          additionalContent: (0, r.jsx)(p.H, {
             value: y.subscriberChange
           })
         })]
@@ -115,7 +115,7 @@ let _ = e => {
       className: j.formSection,
       children: (0, r.jsx)(N, {
         payoutsByPeriod: O,
-        team: p
+        team: g
       })
     }), (0, r.jsx)(i.hjN, {
       title: x.NW.string(x.t.O8cDAA),

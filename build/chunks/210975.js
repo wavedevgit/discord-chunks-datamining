@@ -1,55 +1,55 @@
-/** Chunk was on 55697 **/
-n.d(t, {
+/** Chunk was on 33397 **/
+r.d(t, {
   m$: () => f,
-  wV: () => u,
+  wV: () => c,
   zU: () => d
 });
-var r = n(442837),
-  i = n(569545),
-  l = n(314897),
-  o = n(19780),
-  a = n(98369),
-  s = n(277642),
-  c = n(441894);
+var n = r(442837),
+  l = r(569545),
+  i = r(314897),
+  u = r(19780),
+  s = r(98369),
+  a = r(277642),
+  o = r(441894);
 
-function u(e) {
+function c(e) {
   let {
     userId: t,
-    channelId: n,
-    location: i
-  } = e, s = (0, c.J)({
-    channelId: n,
-    location: i
+    channelId: r,
+    location: l
+  } = e, a = (0, o.J)({
+    channelId: r,
+    location: l
   });
-  return (0, r.e7)([a.Z, l.default, o.Z], () => null != t && s && o.Z.isUserConnected(t) && l.default.getId() !== t && a.Z.isUserVerified(t), [s, t])
+  return (0, n.e7)([s.Z, i.default, u.Z], () => null != t && a && u.Z.isUserConnected(t) && i.default.getId() !== t && s.Z.isUserVerified(t), [a, t])
 }
 
 function d(e) {
   let {
     streamKey: t,
-    channelId: n,
-    location: o
-  } = e, u = (0, c.J)({
-    channelId: n,
-    location: o
-  }), d = (0, s.t)(t);
-  return (0, r.e7)([a.Z, l.default], () => {
-    if (!u || d || null == t) return !1;
-    let e = l.default.getId(),
+    channelId: r,
+    location: u
+  } = e, c = (0, o.J)({
+    channelId: r,
+    location: u
+  }), d = (0, a.t)(t);
+  return (0, n.e7)([s.Z, i.default], () => {
+    if (!c || d || null == t) return !1;
+    let e = i.default.getId(),
       {
-        ownerId: n
-      } = (0, i.my)(t);
-    return n !== e && a.Z.isStreamVerified(t)
-  }, [d, u, t])
+        ownerId: r
+      } = (0, l.my)(t);
+    return r !== e && s.Z.isStreamVerified(t)
+  }, [d, c, t])
 }
 
 function f(e) {
   let {
     channelId: t,
-    location: n
-  } = e, i = (0, c.J)({
+    location: r
+  } = e, l = (0, o.J)({
     channelId: t,
-    location: n
-  }), l = (0, s.r)();
-  return (0, r.e7)([a.Z], () => !!i && !l && a.Z.isCallVerified(), [l, i])
+    location: r
+  }), i = (0, a.r)();
+  return (0, n.e7)([s.Z], () => !!l && !i && s.Z.isCallVerified(), [i, l])
 }

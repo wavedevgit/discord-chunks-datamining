@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(318766),
   u = n(907040),
   m = n(456268),
-  p = n(999382),
-  g = n(185923),
+  g = n(999382),
+  p = n(185923),
   h = n(388032),
   f = n(561549);
 let b = e => {
@@ -29,7 +29,7 @@ let b = e => {
       reasonMaxLength: j,
       placeholder: N,
       position: v
-    } = e, [_, O] = i.useState(!1), y = (0, l.e7)([p.Z], () => p.Z.isGuildMetadataLoaded());
+    } = e, [_, O] = i.useState(!1), y = (0, l.e7)([g.Z], () => g.Z.isGuildMetadataLoaded());
     return (0, r.jsxs)("div", {
       className: a()(f.reasonContainer),
       children: [(0, r.jsx)(o.yRy, {
@@ -45,7 +45,7 @@ let b = e => {
             closePopout: t
           } = e;
           return (0, r.jsx)(u.Z, {
-            pickerIntention: g.Hz.COMMUNITY_CONTENT,
+            pickerIntention: p.Hz.COMMUNITY_CONTENT,
             closePopout: t,
             onSelectEmoji: (e, n) => {
               null != e && h(e), n && t()

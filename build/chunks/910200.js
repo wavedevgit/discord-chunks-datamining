@@ -1,28 +1,28 @@
 /** Chunk was on 84335 **/
 n.d(t, {
-  Z: () => I
+  Z: () => y
 }), n(266796);
 var r = n(200651);
 n(192379);
 var l = n(120356),
   i = n.n(l),
   a = n(442837),
-  o = n(692547),
-  c = n(481060),
-  s = n(220082),
+  s = n(692547),
+  o = n(481060),
+  c = n(220082),
   u = n(114487),
   d = n(686546),
   m = n(813197),
   v = n(430824),
   x = n(768581),
-  h = n(15210),
-  f = n(464647),
-  j = n(43542),
-  g = n(723776),
-  p = n(686369),
+  f = n(15210),
+  I = n(464647),
+  h = n(43542),
+  j = n(723776),
+  g = n(686369),
   b = n(545495);
 
-function y(e) {
+function p(e) {
   let {
     profile: t
   } = e, n = (0, a.e7)([v.Z], () => v.Z.getGuild(t.id)), l = function(e, t) {
@@ -31,9 +31,9 @@ function y(e) {
         icon: e.icon,
         size: 64
       }),
-      r = (0, s.ZP)(n, t);
+      r = (0, c.ZP)(n, t);
     return null != e.brandColorPrimary ? e.brandColorPrimary : r
-  }(t, (0, c.dQu)(o.Z.colors.BG_BASE_TERTIARY).hex()), i = (0, p.d)(l, n, t);
+  }(t, (0, o.dQu)(s.Z.colors.BG_BASE_TERTIARY).hex()), i = (0, g.d)(l, n, t);
   return (0, r.jsx)("div", {
     className: b.banner,
     style: {
@@ -65,7 +65,7 @@ function O(e) {
     })
   }) : (0, r.jsx)("div", {
     className: b.avatarContainer,
-    children: (0, r.jsx)(c.tEY, {
+    children: (0, r.jsx)(o.tEY, {
       within: !0,
       children: (0, r.jsx)(d.ZP, {
         mask: d.QS.CLAN_ICON,
@@ -80,7 +80,7 @@ function O(e) {
             iconSize: 64
           }), (0, r.jsx)("div", {
             className: b.overlay
-          }), (0, r.jsx)(c.vdY, {
+          }), (0, r.jsx)(o.vdY, {
             size: "custom",
             className: b.overlayIcon,
             width: 20,
@@ -96,39 +96,39 @@ function O(e) {
   })
 }
 
-function I(e) {
+function y(e) {
   let {
     profile: t,
     onIconChange: n,
     className: l,
     disableCTA: a,
-    CTAOverride: o
-  } = e, s = null;
-  return null != o ? s = o : a || (s = (0, r.jsx)(h.Z, {
+    CTAOverride: s
+  } = e, c = null;
+  return null != s ? c = s : a || (c = (0, r.jsx)(f.Z, {
     profile: t
   })), (0, r.jsxs)("div", {
     className: i()(b.container, l),
-    children: [(0, r.jsx)(y, {
+    children: [(0, r.jsx)(p, {
       profile: t
     }), (0, r.jsx)(O, {
       onIconChange: n,
       profile: t
-    }), (0, r.jsx)(j.Z, {
+    }), (0, r.jsx)(h.Z, {
       profile: t
     }), (0, r.jsxs)("div", {
       className: b.body,
-      children: [(0, r.jsx)(c.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: t.description
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(I.Z, {
         profile: t
-      }), (0, r.jsx)(g.F, {
+      }), (0, r.jsx)(j.F, {
         profile: t
       })]
-    }), null != s && (0, r.jsx)("div", {
+    }), null != c && (0, r.jsx)("div", {
       className: b.buttonContainer,
-      children: s
+      children: c
     })]
   })
 }

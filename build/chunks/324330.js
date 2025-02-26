@@ -15,23 +15,23 @@ var i = n(392711),
   d = n(313364),
   u = n(434404),
   m = n(999382),
-  p = n(981631),
-  g = n(388032),
+  g = n(981631),
+  p = n(388032),
   h = n(494375);
 
 function f() {
   var e, t;
   let n = (0, s.e7)([m.Z], () => m.Z.getProps().guild, []),
     i = null !== (e = null == n ? void 0 : n.isCommunity()) && void 0 !== e && e,
-    o = (0, l.K2)(null !== (t = null == n ? void 0 : n.id) && void 0 !== t ? t : p.lds, "GuildSettingsMembersRow") && (null == n ? void 0 : n.hasFeature(p.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)),
+    o = (0, l.K2)(null !== (t = null == n ? void 0 : n.id) && void 0 !== t ? t : g.lds, "GuildSettingsMembersRow") && (null == n ? void 0 : n.hasFeature(g.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)),
     d = i || o;
   return (0, r.jsxs)(a.P3F, {
     onClick: e => {
-      null != n && (d ? (e.preventDefault(), u.Z.close(), (0, c._X)(n.id)) : u.Z.open(n.id, p.pNK.MEMBERS))
+      null != n && (d ? (e.preventDefault(), u.Z.close(), (0, c._X)(n.id)) : u.Z.open(n.id, g.pNK.MEMBERS))
     },
     className: h.rowContainer,
     children: [(0, r.jsx)("div", {
-      children: g.NW.string(g.t["9Oq93t"])
+      children: p.NW.string(p.t["9Oq93t"])
     }), d && (0, r.jsx)(a.rgF, {
       size: "custom",
       color: "currentColor",
@@ -46,7 +46,7 @@ function b() {
   var e;
   let {
     guild: t
-  } = (0, s.e7)([m.Z], () => m.Z.getProps(), [], i.isEqual), n = null !== (e = null == t ? void 0 : t.id) && void 0 !== e ? e : p.lds;
+  } = (0, s.e7)([m.Z], () => m.Z.getProps(), [], i.isEqual), n = null !== (e = null == t ? void 0 : t.id) && void 0 !== e ? e : g.lds;
   return (0, o.n2)(n) ? (0, r.jsx)(d.Z, {
     guildId: n
   }) : null

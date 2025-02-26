@@ -1,36 +1,36 @@
-/** Chunk was on 83366 **/
+/** Chunk was on 79120 **/
 n.d(t, {
   Z: () => s
 });
 var r = n(200651);
 n(192379);
 var l = n(655922),
-  o = n(420660),
-  i = n(915863),
+  i = n(420660),
+  o = n(915863),
   a = n(388032);
 
 function s(e) {
   var t, n, {
       activity: s,
       onAction: c,
-      ButtonComponent: u = i.Z
+      ButtonComponent: u = o.Z
     } = e,
     d = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
         if (null == e) return {};
         var n, r, l = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+          i = Object.keys(e);
+        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
         return l
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+        var i = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
       }
       return l
     }(e, ["activity", "onAction", "ButtonComponent"]);
-  return (0, o.Z)(s) ? (0, r.jsx)(u, (t = function(e) {
+  return (0, i.Z)(s) ? (0, r.jsx)(u, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

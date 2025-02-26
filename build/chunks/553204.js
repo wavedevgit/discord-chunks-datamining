@@ -13,14 +13,14 @@ var r = n(200651),
   d = n(518738),
   u = n(208567),
   m = n(624138),
-  p = n(388032),
-  g = n(219045);
+  g = n(388032),
+  p = n(219045);
 let h = (0, m.Mg)(l.Z.ROLE_ICON_UPLOADER_ICON_SIZE);
 
 function f(e) {
   let {
     role: t,
-    "aria-label": n = p.NW.string(p.t["MsUY/f"]),
+    "aria-label": n = g.NW.string(g.t["MsUY/f"]),
     className: s,
     onClick: l,
     disabled: m = !1
@@ -43,27 +43,27 @@ function f(e) {
     return e
   }({
     enableTooltip: !1,
-    className: g.icon
+    className: p.icon
   }, b)) : (0, r.jsx)(o.FmF, {
     size: "md",
     color: "currentColor",
-    className: g.icon
+    className: p.icon
   });
   return (0, r.jsx)(o.tEY, {
     ringTarget: f,
     children: (0, r.jsxs)(o.P3F, {
       "aria-label": n,
-      className: a()(g.container, s, {
-        [g.disabled]: m
+      className: a()(p.container, s, {
+        [p.disabled]: m
       }),
       onClick: m ? void 0 : l,
       "aria-disabled": m,
       children: [(0, r.jsx)("div", {
         ref: f,
-        className: g.preview,
+        className: p.preview,
         children: x
       }), null != b ? (0, r.jsx)(u.S, {
-        className: g.uploaderIcon
+        className: p.uploaderIcon
       }) : null]
     })
   })

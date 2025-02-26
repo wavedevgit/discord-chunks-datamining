@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => s
 });
@@ -35,8 +35,8 @@ function s(e) {
       STEPS: l
     } = await Promise.all([n.e("8016"), n.e("17938"), n.e("54433"), n.e("31914")]).then(n.bind(n, 7305));
     return n => {
-      var x, O, {
-          onClose: E
+      var x, E, {
+          onClose: O
         } = n,
         j = function(e, t) {
           if (null == e) return {};
@@ -76,10 +76,10 @@ function s(e) {
                 })
               }
               return e
-            }({}, j), O = O = {
+            }({}, j), E = E = {
               initialPlanId: t,
               onClose: e => {
-                E(), null == u || u(e)
+                O(), null == u || u(e)
               },
               analyticsLocations: f,
               analyticsObject: p,
@@ -92,15 +92,15 @@ function s(e) {
               trialId: c,
               trialFooterMessageOverride: d,
               reviewWarningMessage: v
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(x, Object.getOwnPropertyDescriptors(O)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(x, Object.getOwnPropertyDescriptors(E)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
                 n.push.apply(n, r)
               }
               return n
-            })(Object(O)).forEach(function(e) {
-              Object.defineProperty(x, e, Object.getOwnPropertyDescriptor(O, e))
+            })(Object(E)).forEach(function(e) {
+              Object.defineProperty(x, e, Object.getOwnPropertyDescriptor(E, e))
             }), x))
           })
         })

@@ -14,8 +14,8 @@ var i = n(442837),
   d = n(852679),
   u = n(926491),
   m = n(145499),
-  p = n(424218),
-  g = n(267642),
+  g = n(424218),
+  p = n(267642),
   h = n(63063),
   f = n(999382),
   b = n(981631),
@@ -32,7 +32,7 @@ let v = {
       guild: t
     } = e, {
       analyticsLocations: n
-    } = (0, l.ZP)(), i = (0, g.vn)(t.id)[b.Eu4.TIER_1] - t.premiumSubscriberCount;
+    } = (0, l.ZP)(), i = (0, p.vn)(t.id)[b.Eu4.TIER_1] - t.premiumSubscriberCount;
     return (0, r.jsxs)("div", {
       className: N.upsellContainer,
       children: [(0, r.jsx)(s.X6q, {
@@ -75,7 +75,7 @@ let v = {
     children: [(0, r.jsx)(s.R94, {
       type: s.geA.DESCRIPTION,
       children: j.NW.format(j.t.hxLvi4, {
-        fileSize: (0, p.IC)(x.Ht, {
+        fileSize: (0, g.IC)(x.Ht, {
           useKibibytes: !0
         })
       })
@@ -92,9 +92,9 @@ let v = {
         guildStickers: a
       } = e,
       l = s.premiumTier,
-      o = (0, g.Qi)(a, l),
-      d = (0, g.FZ)(l, s.id),
-      u = (0, g.A3)(l),
+      o = (0, p.Qi)(a, l),
+      d = (0, p.FZ)(l, s.id),
+      u = (0, p.A3)(l),
       m = a.length;
     return null == d || l === b.Eu4.TIER_3 || o > 0 ? (0, r.jsx)(r.Fragment, {}) : (m > u ? (t = j.NW.formatToPlainString(j.t.ZtAY1d, {
       level: d
@@ -102,7 +102,7 @@ let v = {
       level: d
     }), i = b.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = j.NW.string(j.t.zT9Sxc), n = j.NW.formatToPlainString(j.t.YaW9wM, {
       level: d,
-      numAdditional: (0, g.ig)(d)
+      numAdditional: (0, p.ig)(d)
     }), i = b.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.Z, {
       header: t,
       text: n,
@@ -111,7 +111,7 @@ let v = {
         page: b.ZY5.GUILD_SETTINGS,
         section: b.jXE.GUILD_SETTINGS_STICKERS,
         object: i,
-        objectType: (0, g.ge)(d)
+        objectType: (0, p.ge)(d)
       }
     }))
   },

@@ -1,4 +1,4 @@
-/** Chunk was on 22173 **/
+/** Chunk was on 18895 **/
 n.d(t, {
   Z: () => O
 }), n(47120);
@@ -56,9 +56,9 @@ function O(e) {
     emoji: n,
     startPosition: O,
     targetPosition: y
-  } = e, [x, T] = o.useState(0), [S, _] = o.useState(0), [N, C] = o.useState(null), {
-    confettiCanvas: R
-  } = o.useContext(u.h), P = (0, r.uR)(R, N), E = o.useMemo(() => [{
+  } = e, [T, x] = o.useState(0), [_, S] = o.useState(0), [N, C] = o.useState(null), {
+    confettiCanvas: E
+  } = o.useContext(u.h), P = (0, r.uR)(E, N), R = o.useMemo(() => [{
     src: null == n.id ? m.ZP.getURL(n.name) : p.ZP.getEmojiURL({
       id: n.id,
       animated: !1,
@@ -80,7 +80,7 @@ function O(e) {
       let {
         y: t
       } = e;
-      _(t)
+      S(t)
     }
   }), A = (0, l.q_F)({
     from: {
@@ -104,23 +104,23 @@ function O(e) {
       let {
         x: t
       } = e;
-      T(t)
+      x(t)
     }
   });
   return o.useEffect(() => {
-    x > 0 && S > 0 && P.createConfetti(v(b({}, f.We), {
+    T > 0 && _ > 0 && P.createConfetti(v(b({}, f.We), {
       position: {
         type: "static",
         value: {
-          x: x,
-          y: S
+          x: T,
+          y: _
         }
       }
     }))
-  }, [P, x, S]), (0, i.jsxs)(i.Fragment, {
+  }, [P, T, _]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(r.Ji, {
       ref: C,
-      sprites: E,
+      sprites: R,
       colors: j,
       spriteWidth: f.Ko,
       spriteHeight: f.Ko

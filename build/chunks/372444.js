@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -36,14 +36,14 @@ let m = e => {
   })
 };
 
-function p(e) {
+function g(e) {
   let {
     header: t,
     text: i,
     analyticsLocation: c,
     guild: d,
-    className: p,
-    textColor: g,
+    className: g,
+    textColor: p,
     headerColor: h,
     buttonProps: f
   } = e, {
@@ -52,7 +52,7 @@ function p(e) {
   return (0, r.jsx)(o.Gt, {
     value: b,
     children: (0, r.jsxs)("div", {
-      className: s()(u.banner, p),
+      className: s()(u.banner, g),
       children: [(0, r.jsx)("img", {
         className: u.__invalid_headerGraphic,
         alt: "",
@@ -66,7 +66,7 @@ function p(e) {
           children: t
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          color: null != g ? g : "always-white",
+          color: null != p ? p : "always-white",
           children: i
         })]
       }), (0, r.jsx)("div", {

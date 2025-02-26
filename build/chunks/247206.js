@@ -17,6 +17,7 @@ n.d(t, {
   bR: () => J,
   l4: () => w,
   lJ: () => k,
+  m8: () => ee,
   oh: () => B,
   tG: () => C,
   vx: () => L,
@@ -362,5 +363,11 @@ let J = (e, t) => null != e && null != t && (e <= E.LN || t <= E.iE);
 function $() {
   let e = (0, m.G7)("explicit_media_redaction_utils"),
     t = (0, o.sf)();
+  return e && t
+}
+
+function ee() {
+  let e = (0, m.UQ)("explicit_media_redaction_utils"),
+    t = (0, o.L5)();
   return e && t
 }

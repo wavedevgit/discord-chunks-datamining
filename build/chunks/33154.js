@@ -1,4 +1,4 @@
-/** Chunk was on 22173 **/
+/** Chunk was on 18895 **/
 n.d(t, {
   Z: () => g,
   s: () => f
@@ -26,7 +26,7 @@ let g = e => {
     v && !O && f()
   }, [v, O, f]);
   let y = null,
-    x = p.NW.string(p.t.d7b1p6);
+    T = p.NW.string(p.t.d7b1p6);
   switch (t) {
     case 0:
       y = p.NW.string(p.t.Xiwf1d);
@@ -38,7 +38,7 @@ let g = e => {
       return (0, u.vE)(t)
   }
   if (null == y) return null;
-  let T = async () => {
+  let x = async () => {
     j(!0);
     try {
       await l.Z.joinGuild(i.id, {
@@ -64,12 +64,12 @@ let g = e => {
       }), (0, o.jsx)(s.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: x
+        children: T
       }), (0, o.jsxs)("div", {
         className: m.buttonContainer,
         children: [(0, o.jsx)(s.zxk, {
           buttonRef: g,
-          onClick: T,
+          onClick: x,
           submitting: v,
           children: p.NW.string(p.t["9VLmlZ"])
         }), (0, o.jsx)(s.zxk, {

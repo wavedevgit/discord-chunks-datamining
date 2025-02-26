@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(243730),
   u = n(852898),
   m = n(203377),
-  p = n(388032),
-  g = n(530176);
+  g = n(388032),
+  p = n(530176);
 
 function h() {
   let [e, t] = i.useState(!0);
@@ -45,16 +45,16 @@ function f(e) {
   let _ = (0, c.e)(t, h);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: g.titleContainer,
+      className: p.titleContainer,
       children: [(0, r.jsx)(a.Text, {
-        className: g.titleText,
+        className: p.titleText,
         color: "header-primary",
         variant: "text-md/semibold",
-        children: p.NW.format(p.t.BUdGkJ, {
+        children: g.NW.format(g.t.BUdGkJ, {
           roleName: h.name
         })
       }), _ ? (0, r.jsx)(a.P3F, {
-        className: g.menu,
+        className: p.menu,
         onClick: function(e) {
           (0, l.jW)(e, async () => {
             let {
@@ -95,7 +95,7 @@ function f(e) {
             }
           })
         },
-        "aria-label": p.NW.string(p.t.PdRCRk),
+        "aria-label": g.NW.string(g.t.PdRCRk),
         children: (0, r.jsx)(a.xhG, {
           size: "md",
           color: "currentColor"
@@ -105,31 +105,31 @@ function f(e) {
       messageType: a.QYI.WARNING,
       children: v
     }) : null, (0, r.jsxs)(a.njP, {
-      className: g.tabBar,
-      "aria-label": p.NW.string(p.t["+1H47u"]),
+      className: p.tabBar,
+      "aria-label": g.NW.string(g.t["+1H47u"]),
       selectedItem: f,
       type: "top",
       look: "brand",
       onItemSelect: x,
       children: [(0, r.jsx)(a.njP.Item, {
-        className: g.tabBarItem,
+        className: p.tabBarItem,
         id: m.ZI.DISPLAY,
         disabled: N,
-        children: p.NW.string(p.t.hmdom5)
+        children: g.NW.string(g.t.hmdom5)
       }), (0, r.jsx)(a.njP.Item, {
-        className: g.tabBarItem,
+        className: p.tabBarItem,
         id: m.ZI.PERMISSIONS,
-        children: p.NW.string(p.t.WIDE1N)
+        children: g.NW.string(g.t.WIDE1N)
       }), (0, r.jsx)(a.njP.Item, {
-        className: g.tabBarItem,
+        className: p.tabBarItem,
         id: m.ZI.VERIFICATIONS,
         disabled: N,
-        children: p.NW.string(p.t["5//Mur"])
+        children: g.NW.string(g.t["5//Mur"])
       }), (0, r.jsx)(a.njP.Item, {
-        className: g.tabBarItem,
+        className: p.tabBarItem,
         id: m.ZI.MEMBERS,
         disabled: N,
-        children: N ? p.NW.string(p.t["kg//+/"]) : p.NW.formatToPlainString(p.t.bHnZWV, {
+        children: N ? g.NW.string(g.t["kg//+/"]) : g.NW.formatToPlainString(g.t.bHnZWV, {
           numMembers: String(j)
         })
       })]

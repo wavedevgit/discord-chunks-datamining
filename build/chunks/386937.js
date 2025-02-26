@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(477690),
   u = n(481060),
   m = n(179360),
-  p = n(129861),
-  g = n(999382),
+  g = n(129861),
+  p = n(999382),
   h = n(733683),
   f = n(237583),
   b = n(899667),
@@ -210,7 +210,7 @@ class T extends i.Component {
     }), C(this, "renderSubscriber", (e, t, n) => {
       var i;
       return null == e ? null : (0, r.jsx)(u.ua7, {
-        text: (0, r.jsx)(p.Z, {
+        text: (0, r.jsx)(g.Z, {
           user: e.user,
           nick: e.nick
         }),
@@ -233,7 +233,7 @@ class T extends i.Component {
           className: y.avatar
         }), (0, r.jsx)("div", {
           className: y.subscribersPopoutUsername,
-          children: (0, r.jsx)(p.Z, {
+          children: (0, r.jsx)(g.Z, {
             user: e.user,
             nick: e.nick
           })
@@ -251,8 +251,8 @@ class T extends i.Component {
     }, n))
   }
 }
-let P = c.ZP.connectStores([g.Z, j.default, b.Z, x.ZP], () => {
-  let e = g.Z.getGuildId(),
+let P = c.ZP.connectStores([p.Z, j.default, b.Z, x.ZP], () => {
+  let e = p.Z.getGuildId(),
     t = null != e ? b.Z.getAppliedGuildBoostsForGuild(e) : null,
     n = o()(null != t ? t : []).uniqBy(e => e.userId),
     r = n.map(t => ({

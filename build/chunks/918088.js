@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Tk: () => P,
   ZP: () => T,
@@ -24,11 +24,11 @@ var r = n(278074),
   v = n(839963),
   y = n(897325),
   x = n(57101),
-  O = n(562293),
-  E = n(981631),
+  E = n(562293),
+  O = n(981631),
   j = n(388032);
 let N = {
-  channelId: E.lds,
+  channelId: O.lds,
   selectedAnswerIds: new Set,
   submitting: !1,
   editing: !1,
@@ -77,8 +77,8 @@ function P(e, t) {
     poll: l
   } = e;
   if (null == l) return;
-  let m = e.state === E.yb.SENT,
-    f = m ? null != o ? o : (0, O.H)(l.expiry) : "",
+  let m = e.state === O.yb.SENT,
+    f = m ? null != o ? o : (0, E.H)(l.expiry) : "",
     h = null == f && m,
     {
       selectedAnswerIds: g,
@@ -134,11 +134,11 @@ function T(e, t) {
     poll: _
   } = e;
   if (null == _) return;
-  let O = m.default.getCurrentUser();
-  if (null == O) return;
-  let E = a.Z.useReducedMotion,
+  let E = m.default.getCurrentUser();
+  if (null == E) return;
+  let O = a.Z.useReducedMotion,
     N = null === (s = d.Z.getChannel(e.getChannelId())) || void 0 === s ? void 0 : null === (n = s.getGuildId) || void 0 === n ? void 0 : n.call(s),
-    S = (0, y.E)(O, N),
+    S = (0, y.E)(E, N),
     T = _.answers,
     A = _.layout_type,
     w = P(e, t, {
@@ -221,7 +221,7 @@ function T(e, t) {
       isVictor: U && g,
       didSelfVote: _,
       style: b,
-      shouldAnimateTransition: V && !E,
+      shouldAnimateTransition: V && !O,
       votesPercentage: Math.round(100 * p),
       votes: (0, r.EQ)(A).with(i.C.IMAGE_ONLY_ANSWERS, () => "(".concat(u.toLocaleString(), ")")).otherwise(() => j.NW.formatToPlainString(j.t.XRkuoa, {
         count: u.toLocaleString()

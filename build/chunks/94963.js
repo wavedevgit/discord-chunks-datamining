@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(866442),
   u = n(442837),
   m = n(481060),
-  p = n(650774),
-  g = n(430824),
+  g = n(650774),
+  p = n(430824),
   h = n(900681),
   f = n(175557),
   b = n(688298),
@@ -128,7 +128,7 @@ let I = [{
       brandSecondaryColor: P,
       badgePrimaryColor: w,
       badgeSecondaryColor: R
-    } = s, D = (0, u.e7)([g.Z], () => g.Z.getGuild(l)), Z = null !== (t = (0, u.e7)([p.Z], () => p.Z.getMemberCount(l))) && void 0 !== t ? t : 0, k = i.useMemo(() => ({
+    } = s, Z = (0, u.e7)([p.Z], () => p.Z.getGuild(l)), D = null !== (t = (0, u.e7)([g.Z], () => g.Z.getMemberCount(l))) && void 0 !== t ? t : 0, k = i.useMemo(() => ({
       primary: null != T ? T : N.OH,
       secondary: null != P ? P : N.K_
     }), [T, P]), A = i.useMemo(() => {
@@ -168,9 +168,9 @@ let I = [{
       var e, t, n;
       return C(y({}, s), {
         id: l,
-        name: null !== (e = null == D ? void 0 : D.name) && void 0 !== e ? e : "",
-        icon: null == D ? void 0 : D.icon,
-        memberCount: Z,
+        name: null !== (e = null == Z ? void 0 : Z.name) && void 0 !== e ? e : "",
+        icon: null == Z ? void 0 : Z.icon,
+        memberCount: D,
         games: Array.from(s.gameApplicationIds),
         traits: Array.from(s.interests),
         banner: S,
@@ -188,7 +188,7 @@ let I = [{
           score: 0
         }, e), {})
       })
-    }, [s, l, D, Z, S, w, R, U]);
+    }, [s, l, Z, D, S, w, R, U]);
     return (0, r.jsxs)("div", {
       className: O.slideContent,
       children: [(0, r.jsx)(m.X6q, {

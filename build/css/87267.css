@@ -1,6 +1,6 @@
 /**
   Module ID: 87267
-  Original File Name: 32f7acfde191ad7c
+  Original File Name: f15ad3484c80cdc9
 **/
 .container__96e72:hover>.text__96e72 {
     -webkit-text-decoration: underline;
@@ -189,7 +189,7 @@
 }
 
 .obscureWrapper__1bcc7.obscure__1bcc7 {
-    filter: blur(40px) brightness(.55);
+    filter: blur(var(--__obscured-background-blur-radius)) brightness(var(--__obscured-background-brightness));
     pointer-events: none
 }
 
@@ -213,4 +213,4 @@
     box-shadow: none!important
 }
 
-/*# sourceMappingURL=32f7acfde191ad7c.css.map*/
+/*# sourceMappingURL=f15ad3484c80cdc9.css.map*/

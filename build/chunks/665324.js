@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(846519),
   u = n(481060),
   m = n(232567),
-  p = n(596454),
-  g = n(410030),
+  g = n(596454),
+  p = n(410030),
   h = n(623624),
   f = n(357156),
   b = n(208049),
@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(999382),
   w = n(70409),
   R = n(981631),
-  D = n(710111),
-  Z = n(388032),
+  Z = n(710111),
+  D = n(388032),
   k = n(871490);
 
 function A(e) {
@@ -74,7 +74,7 @@ function M() {
   let e = (0, c.e7)([P.Z], () => P.Z.getProps().guild);
   return null == e ? null : (0, r.jsx)(u.hjN, {
     tag: u.RB0.H1,
-    title: Z.NW.string(Z.t.OWQNYm),
+    title: D.NW.string(D.t.OWQNYm),
     children: (0, r.jsx)(z, {
       guild: e
     })
@@ -100,13 +100,13 @@ function U(e) {
     guildId: i
   } = e, s = O.Z.getGuild(i), a = (0, E.U2)(t, s);
   return 0 === t ? (0, r.jsx)(r.Fragment, {
-    children: Z.NW.format(Z.t["7E9Hd3"], {
+    children: D.NW.format(D.t["7E9Hd3"], {
       slots: n,
       totalSlots: a
     })
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.ua7, {
-      text: Z.NW.formatToPlainString(Z.t.tuuJJS, {
+      text: D.NW.formatToPlainString(D.t.tuuJJS, {
         currentBoostLevel: t
       }),
       children: e => (0, r.jsx)(u.P3F, {
@@ -123,7 +123,7 @@ function U(e) {
         tabIndex: -1,
         children: (0, r.jsx)(C.Z, A({}, e))
       })
-    }), Z.NW.format(Z.t.HHCdvb, {
+    }), D.NW.format(D.t.HHCdvb, {
       slots: n,
       totalSlots: a,
       boostLevel: t
@@ -170,11 +170,11 @@ let B = e => {
     renderPopoutBody: () => (0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: Z.NW.format(Z.t.bGXPVl, {})
+      children: D.NW.format(D.t.bGXPVl, {})
     }),
     renderPopoutChildren: e => (0, r.jsx)(u.zxk, W(A({}, e), {
       disabled: !0,
-      children: Z.NW.string(Z.t["/uNYPD"])
+      children: D.NW.string(D.t["/uNYPD"])
     }))
   });
 
@@ -183,10 +183,10 @@ function z(e) {
     guild: t
   } = e, [s, a] = (0, c.Wu)([x.Z], () => {
     var e;
-    return [null !== (e = x.Z.getSoundsForGuild(t.id)) && void 0 !== e ? e : D.Hy, x.Z.isFetchingSounds() || x.Z.isFetchingDefaultSounds()]
+    return [null !== (e = x.Z.getSoundsForGuild(t.id)) && void 0 !== e ? e : Z.Hy, x.Z.isFetchingSounds() || x.Z.isFetchingDefaultSounds()]
   }), {
     canCreateExpressions: l
-  } = (0, f.XJ)(t), o = i.useRef(null), d = (0, g.ZP)(), m = t.premiumTier, p = (0, E.yw)(t, s, m);
+  } = (0, f.XJ)(t), o = i.useRef(null), d = (0, p.ZP)(), m = t.premiumTier, g = (0, E.yw)(t, s, m);
   i.useEffect(() => {
     (0, b.w)()
   }, []);
@@ -214,8 +214,8 @@ function z(e) {
         }))
       })
     },
-    disabled: p <= 0 || !l,
-    children: Z.NW.string(Z.t["/uNYPD"])
+    disabled: g <= 0 || !l,
+    children: D.NW.string(D.t["/uNYPD"])
   }) : (0, r.jsx)(F, {});
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -223,7 +223,7 @@ function z(e) {
         className: k.helpText,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: Z.NW.string(Z.t.BohnsL)
+        children: D.NW.string(D.t.BohnsL)
       }), (0, r.jsx)("div", {
         className: k.buttons,
         children: !v && O
@@ -237,9 +237,9 @@ function z(e) {
         width: 272,
         height: 212
       }), (0, r.jsx)(u.OZU, {
-        note: Z.NW.string(Z.t.ZhoSBA),
+        note: D.NW.string(D.t.ZhoSBA),
         noteClassName: k.emptyText,
-        children: Z.NW.string(Z.t.I6P1p6)
+        children: D.NW.string(D.t.I6P1p6)
       }), O]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.$i$, {
@@ -251,22 +251,22 @@ function z(e) {
         children: (0, r.jsx)(U, {
           guildId: t.id,
           currentTier: m,
-          availableSounds: p
+          availableSounds: g
         })
       }), (0, r.jsx)(w.Z, {
         guild: t,
         numSounds: s.length,
-        isOutOfSlots: 0 === p
+        isOutOfSlots: 0 === g
       }), (0, r.jsxs)("div", {
         className: k.soundTable,
         children: [(0, r.jsxs)("div", {
           className: k.tableHeaders,
           children: [(0, r.jsx)(G, {
-            children: Z.NW.string(Z.t.sMOuub)
+            children: D.NW.string(D.t.sMOuub)
           }), (0, r.jsx)(G, {
-            children: Z.NW.string(Z.t.lLFvlZ)
+            children: D.NW.string(D.t.lLFvlZ)
           }), (0, r.jsx)(G, {
-            children: Z.NW.string(Z.t["85qMS0"])
+            children: D.NW.string(D.t["85qMS0"])
           })]
         }), s.map(e => (0, r.jsx)(H, {
           sound: e,
@@ -287,14 +287,14 @@ function H(e) {
     guild: o
   } = e, {
     soundId: d,
-    name: g,
+    name: p,
     user: h,
     userId: x,
     emojiId: j,
     emojiName: N
   } = t, O = (0, c.e7)([y.default], () => null != h ? h : y.default.getUser(x), [x, h]), {
     canManageGuildExpression: C
-  } = (0, f.XJ)(o), E = i.useMemo(() => C(t), [t, C]), S = null != j || null != N, [P, w] = i.useState(!1), D = (0, v.z)(t, o.id);
+  } = (0, f.XJ)(o), E = i.useMemo(() => C(t), [t, C]), S = null != j || null != N, [P, w] = i.useState(!1), Z = (0, v.z)(t, o.id);
   async function L() {
     if (!P) {
       w(!0);
@@ -325,7 +325,7 @@ function H(e) {
     className: a()(k.row, {
       [k.active]: s
     }),
-    children: [S ? (0, r.jsx)(p.Z, {
+    children: [S ? (0, r.jsx)(g.Z, {
       emojiId: j,
       emojiName: N,
       className: k.emoji
@@ -337,12 +337,12 @@ function H(e) {
       onClick: () => {
         P || l(t)
       },
-      onContextMenu: D,
+      onContextMenu: Z,
       className: k.soundName,
       children: (0, r.jsxs)(u.Text, {
         variant: "text-sm/normal",
         className: k.soundName,
-        children: [g, " ", (0, r.jsx)(u.gj8, {
+        children: [p, " ", (0, r.jsx)(u.gj8, {
           size: "md",
           color: "currentColor",
           className: k.soundPreviewIcon
@@ -376,7 +376,7 @@ function H(e) {
             }))
           })
         },
-        "aria-label": Z.NW.string(Z.t.bt75u7),
+        "aria-label": D.NW.string(D.t.bt75u7),
         children: (0, r.jsx)(u.vdY, {
           size: "xs",
           color: "currentColor",
@@ -386,22 +386,22 @@ function H(e) {
         className: k.soundRemove,
         onClick: function(e) {
           e.stopPropagation(), (0, u.h7j)(e => (0, r.jsx)(u.ConfirmModal, W(A({
-            header: Z.NW.formatToPlainString(Z.t["PR/VbG"], {
-              soundName: g
+            header: D.NW.formatToPlainString(D.t["PR/VbG"], {
+              soundName: p
             }),
-            confirmText: Z.NW.string(Z.t.oyYWHB),
-            cancelText: Z.NW.string(Z.t["ETE/oK"]),
+            confirmText: D.NW.string(D.t.oyYWHB),
+            cancelText: D.NW.string(D.t["ETE/oK"]),
             onConfirm: L
           }, e), {
             children: (0, r.jsx)(u.Text, {
               variant: "text-md/normal",
-              children: Z.NW.format(Z.t["u6+CmJ"], {
-                soundName: g
+              children: D.NW.format(D.t["u6+CmJ"], {
+                soundName: p
               })
             })
           })))
         },
-        "aria-label": Z.NW.string(Z.t.N86XcH),
+        "aria-label": D.NW.string(D.t.N86XcH),
         children: (0, r.jsx)(u.Dio, {
           size: "md",
           color: "currentColor",

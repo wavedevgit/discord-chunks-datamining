@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(607070),
   u = n(714939),
   m = n(981631),
-  p = n(388032),
-  g = n(266329);
+  g = n(388032),
+  p = n(266329);
 
 function h(e) {
   let {
@@ -22,12 +22,12 @@ function h(e) {
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: g.roleTag,
+    className: p.roleTag,
     children: [(0, r.jsx)(l.xko, {
-      className: g.roleDot,
+      className: p.roleDot,
       color: t
     }), (0, r.jsx)("span", {
-      className: g.roleText,
+      className: p.roleText,
       children: n
     })]
   })
@@ -39,22 +39,22 @@ function f(e) {
     display: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(g.banner, t.backgroundClass, {
-      [g.bannerOut]: !n
+    className: a()(p.banner, t.backgroundClass, {
+      [p.bannerOut]: !n
     }),
     children: [(0, r.jsx)("div", {
-      className: g.roles,
+      className: p.roles,
       children: t.roles.map((e, t) => (0, r.jsx)("div", {
-        className: g.rolesRow,
+        className: p.rolesRow,
         children: e.map(e => (0, r.jsx)(h, {
           color: e.color,
           children: e.name
         }, e.name))
       }, t))
     }), (0, r.jsx)("div", {
-      className: g.profileCard,
+      className: p.profileCard,
       children: (0, r.jsxs)("div", {
-        className: g.avatarContainer,
+        className: p.avatarContainer,
         children: [(0, r.jsx)(l.qEK, {
           size: l.EFr.SIZE_56,
           "aria-hidden": !0,
@@ -63,7 +63,7 @@ function f(e) {
         }), (0, r.jsx)(l.Text, {
           color: "header-primary",
           variant: "text-md/bold",
-          className: g.avatarName,
+          className: p.avatarName,
           children: t.username
         })]
       })
@@ -73,80 +73,80 @@ function f(e) {
 
 function b() {
   let e = i.useMemo(() => [{
-      backgroundClass: g.bannerClubs,
+      backgroundClass: p.bannerClubs,
       username: "Wumpus#0000",
       avatar: n(91055),
       roles: [
         [{
-          name: p.NW.string(p.t["7oaPPj"]),
+          name: g.NW.string(g.t["7oaPPj"]),
           color: "#7e00fc"
         }, {
-          name: p.NW.string(p.t["Z/HN6+"]),
+          name: g.NW.string(g.t["Z/HN6+"]),
           color: "#faa61a"
         }, {
-          name: p.NW.string(p.t.lvHTg4),
+          name: g.NW.string(g.t.lvHTg4),
           color: "#f06ea8"
         }],
         [{
-          name: p.NW.string(p.t["6yECkp"]),
+          name: g.NW.string(g.t["6yECkp"]),
           color: "#45ddc0"
         }, {
-          name: p.NW.string(p.t["5DabCQ"]),
+          name: g.NW.string(g.t["5DabCQ"]),
           color: "#00b0f4"
         }, {
-          name: p.NW.string(p.t.bB900d),
+          name: g.NW.string(g.t.bB900d),
           color: "#ba1616"
         }]
       ]
     }, {
-      backgroundClass: g.bannerGaming,
+      backgroundClass: p.bannerGaming,
       username: "Graggle#0000",
       avatar: n(507003),
       roles: [
         [{
-          name: p.NW.string(p.t["xz/Vfn"]),
+          name: g.NW.string(g.t["xz/Vfn"]),
           color: "#4a76e6"
         }, {
-          name: p.NW.string(p.t.Bceru7),
+          name: g.NW.string(g.t.Bceru7),
           color: "#ad87ff"
         }, {
-          name: p.NW.string(p.t.W51slp),
+          name: g.NW.string(g.t.W51slp),
           color: "#6defcf"
         }],
         [{
-          name: p.NW.string(p.t.y9gTiY),
+          name: g.NW.string(g.t.y9gTiY),
           color: "#ff73fa"
         }, {
-          name: p.NW.string(p.t.HslvdX),
+          name: g.NW.string(g.t.HslvdX),
           color: "#3ba55c"
         }, {
-          name: p.NW.string(p.t.ipL1AA),
+          name: g.NW.string(g.t.ipL1AA),
           color: "#ff1b66"
         }]
       ]
     }, {
-      backgroundClass: g.bannerHobbies,
+      backgroundClass: p.bannerHobbies,
       username: "Mallow#0000",
       avatar: n(552557),
       roles: [
         [{
-          name: p.NW.string(p.t.pAFEbm),
+          name: g.NW.string(g.t.pAFEbm),
           color: "#20d6b8"
         }, {
-          name: p.NW.string(p.t["p/HZEB"]),
+          name: g.NW.string(g.t["p/HZEB"]),
           color: "#236136"
         }, {
-          name: p.NW.string(p.t["9Qp/JS"]),
+          name: g.NW.string(g.t["9Qp/JS"]),
           color: "#ff9a15"
         }],
         [{
-          name: p.NW.string(p.t.craF5e),
+          name: g.NW.string(g.t.craF5e),
           color: "#ff78b9"
         }, {
-          name: p.NW.string(p.t.L1TvXF),
+          name: g.NW.string(g.t.L1TvXF),
           color: "#00b0f4"
         }, {
-          name: p.NW.string(p.t.lqKz9P),
+          name: g.NW.string(g.t.lqKz9P),
           color: "#6f52e4"
         }]
       ]
@@ -160,7 +160,7 @@ function b() {
     let e = setTimeout(() => s((t + 1) % a.current.length), 6332);
     return () => clearTimeout(e)
   }, [t]), (0, r.jsx)("div", {
-    className: g.bannerContainer,
+    className: p.bannerContainer,
     "aria-hidden": !0,
     children: e.map((e, n) => (0, r.jsx)(f, {
       guild: e,
@@ -181,28 +181,28 @@ function x(e) {
   }, [s, n.id]);
   return (0, r.jsx)(c.NM, {
     children: (0, r.jsxs)(l.hjN, {
-      className: g.section,
-      title: p.NW.string(p.t.LPJmLy),
+      className: p.section,
+      title: g.NW.string(g.t.LPJmLy),
       tag: l.RB0.H2,
       children: [(0, r.jsxs)("div", {
-        className: g.container,
+        className: p.container,
         children: [(0, r.jsx)(b, {}), (0, r.jsx)(l.X6q, {
           variant: "heading-xl/semibold",
-          children: p.NW.string(p.t.ALlnbm)
+          children: g.NW.string(g.t.ALlnbm)
         }), (0, r.jsx)(l.Text, {
           color: "header-secondary",
           variant: "text-md/normal",
-          className: g.introBody,
-          children: p.NW.string(p.t["1ydhVl"])
+          className: p.introBody,
+          children: g.NW.string(g.t["1ydhVl"])
         }), (0, r.jsx)(l.zxk, {
-          className: g.button,
+          className: p.button,
           size: l.zxk.Sizes.MEDIUM,
           onClick: m,
           submitting: a,
-          children: p.NW.string(p.t.JZZjQE)
+          children: g.NW.string(g.t.JZZjQE)
         })]
       }), (0, r.jsx)(l.$i$, {
-        className: g.divider
+        className: p.divider
       }), (0, r.jsx)(u.Z, {
         role: n,
         onClick: h

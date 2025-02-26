@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(481060),
   u = n(99690),
   m = n(410030),
-  p = n(726542),
-  g = n(981631),
+  g = n(726542),
+  p = n(981631),
   h = n(856651),
   f = n(388032),
   b = n(784735);
@@ -44,8 +44,8 @@ function j(e) {
     theme: s,
     platform: l,
     integration: m,
-    onRemove: p,
-    locked: g
+    onRemove: g,
+    locked: p
   } = e;
   if ((null == m ? void 0 : m.application) != null) o()(null != m.application.bot, "bot is null"), i = (0, r.jsx)(u.Z, {
     size: d.EFr.SIZE_24,
@@ -74,8 +74,8 @@ function j(e) {
       "aria-label": f.NW.string(f.t.N86XcH),
       size: d.zxk.Sizes.TINY,
       look: d.zxk.Looks.BLANK,
-      onClick: p,
-      disabled: g,
+      onClick: g,
+      disabled: p,
       className: b.closeButton,
       children: (0, r.jsx)(d.ua7, {
         text: f.NW.string(f.t.N86XcH),
@@ -98,9 +98,9 @@ function N(e) {
     onConfigurationChange: c,
     platform: u,
     applicationId: m,
-    metadataField: p,
-    operator: g
-  } = e, f = null !== (n = null == l ? void 0 : l.index) && void 0 !== n ? n : -1, x = null != g ? g : h.iO.GREATER_THAN, j = Math.round(Number(null !== (s = null == l ? void 0 : null === (t = l.configuration) || void 0 === t ? void 0 : t.value) && void 0 !== s ? s : 0));
+    metadataField: g,
+    operator: p
+  } = e, f = null !== (n = null == l ? void 0 : l.index) && void 0 !== n ? n : -1, x = null != p ? p : h.iO.GREATER_THAN, j = Math.round(Number(null !== (s = null == l ? void 0 : null === (t = l.configuration) || void 0 === t ? void 0 : t.value) && void 0 !== s ? s : 0));
   x === h.iO.GREATER_THAN ? j = Math.max(1, j + 1) : x === h.iO.LESS_THAN && (j = Math.max(0, j - 1));
   let [N, v] = i.useState(j.toString());
   return i.useEffect(() => {
@@ -119,7 +119,7 @@ function N(e) {
           x === h.iO.GREATER_THAN ? n = Math.max(0, n - 1) : x === h.iO.LESS_THAN && (n = Math.max(1, n + 1)), c({
             connectionType: null !== (t = null == u ? void 0 : u.type) && void 0 !== t ? t : h.Kt,
             applicationId: m,
-            connectionMetadataField: p,
+            connectionMetadataField: g,
             operator: x,
             value: n.toString()
           }, f)
@@ -128,7 +128,7 @@ function N(e) {
       }
     },
     disabled: o
-  }, p)
+  }, g)
 }
 
 function v(e) {
@@ -187,15 +187,15 @@ function _(e) {
     applicationId: c,
     onConfigurationChange: u,
     locked: m,
-    operator: p
-  } = e, g = i.createRef(), x = (null == l ? void 0 : l.configuration) != null, j = (0, r.jsx)(N, {
-    inputRef: g,
+    operator: g
+  } = e, p = i.createRef(), x = (null == l ? void 0 : l.configuration) != null, j = (0, r.jsx)(N, {
+    inputRef: p,
     metadataField: a,
     existingPendingConfiguration: l,
     locked: m || !x,
     onConfigurationChange: u,
     platform: o,
-    operator: p,
+    operator: g,
     applicationId: c
   }, a), v = null != s ? f.NW.format(s, {
     metadataHook: () => j
@@ -228,8 +228,8 @@ function _(e) {
         var t, n, r;
         let i = null;
         if (e) {
-          let e = null != p ? p : h.iO.GREATER_THAN,
-            r = Math.round(Number(null === (t = g.current) || void 0 === t ? void 0 : t.value));
+          let e = null != g ? g : h.iO.GREATER_THAN,
+            r = Math.round(Number(null === (t = p.current) || void 0 === t ? void 0 : t.value));
           e === h.iO.GREATER_THAN ? r = Math.max(0, r - 1) : e === h.iO.LESS_THAN && (r = Math.max(1, r + 1)), i = {
             connectionType: null !== (n = null == o ? void 0 : o.type) && void 0 !== n ? n : h.Kt,
             applicationId: c,
@@ -250,7 +250,7 @@ function O(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, s = p.Z.get(g.ABu.STEAM);
+  } = e, s = g.Z.get(p.ABu.STEAM);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_, {
       titleText: f.NW.string(f.t.zdXqGx),
@@ -297,7 +297,7 @@ function y(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, s = p.Z.get(g.ABu.TWITTER);
+  } = e, s = g.Z.get(p.ABu.TWITTER);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_, {
       titleText: f.NW.string(f.t.zdXqGx),
@@ -340,7 +340,7 @@ function C(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, s = p.Z.get(g.ABu.REDDIT);
+  } = e, s = g.Z.get(p.ABu.REDDIT);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_, {
       titleText: f.NW.string(f.t.zdXqGx),
@@ -383,7 +383,7 @@ function I(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, s = p.Z.get(g.ABu.PAYPAL);
+  } = e, s = g.Z.get(p.ABu.PAYPAL);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_, {
       titleText: f.NW.string(f.t.zdXqGx),
@@ -410,7 +410,7 @@ function E(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, s = p.Z.get(g.ABu.EBAY);
+  } = e, s = g.Z.get(p.ABu.EBAY);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_, {
       titleText: f.NW.string(f.t.zdXqGx),
@@ -462,7 +462,7 @@ function S(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, s = p.Z.get(g.ABu.TIKTOK);
+  } = e, s = g.Z.get(p.ABu.TIKTOK);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(v, {
       titleText: f.NW.string(f.t.QHHwRU),
@@ -586,7 +586,7 @@ function P(e) {
   if (null != o && null == c) return null;
   let d = null;
   try {
-    d = p.Z.get(n[0].configuration.connectionType)
+    d = g.Z.get(n[0].configuration.connectionType)
   } catch (e) {}
   let u = new Map;
   n.forEach(e => {
@@ -599,22 +599,22 @@ function P(e) {
     },
     f = null;
   switch (null == d ? void 0 : d.type) {
-    case g.ABu.STEAM:
+    case p.ABu.STEAM:
       f = (0, r.jsx)(O, x({}, h));
       break;
-    case g.ABu.TWITTER:
+    case p.ABu.TWITTER:
       f = (0, r.jsx)(y, x({}, h));
       break;
-    case g.ABu.REDDIT:
+    case p.ABu.REDDIT:
       f = (0, r.jsx)(C, x({}, h));
       break;
-    case g.ABu.PAYPAL:
+    case p.ABu.PAYPAL:
       f = (0, r.jsx)(I, x({}, h));
       break;
-    case g.ABu.EBAY:
+    case p.ABu.EBAY:
       f = (0, r.jsx)(E, x({}, h));
       break;
-    case g.ABu.TIKTOK:
+    case p.ABu.TIKTOK:
       f = (0, r.jsx)(S, x({}, h));
       break;
     default:

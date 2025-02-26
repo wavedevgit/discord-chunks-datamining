@@ -18,13 +18,13 @@ function m(e) {
     scrollerClassName: n,
     scrollerInnerClassName: s,
     children: m
-  } = e, p = l.useRef(null), [h, g] = l.useState(!1), [x, f] = l.useState(!1), v = l.useCallback(() => {
+  } = e, p = l.useRef(null), [h, g] = l.useState(!1), [x, v] = l.useState(!1), f = l.useCallback(() => {
     let {
       current: e
     } = p;
-    null != e && (g(!e.isScrolledToTop()), f(!e.isScrolledToBottom()))
+    null != e && (g(!e.isScrolledToTop()), v(!e.isScrolledToBottom()))
   }, []);
-  return (0, o.Ng)(() => v()), (0, r.jsxs)(r.Fragment, {
+  return (0, o.Ng)(() => f()), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: i()(d.title, d.scrollWrapper),
       children: [(0, r.jsx)(a.vwX, {
@@ -40,7 +40,7 @@ function m(e) {
         className: i()(d.scrollerInner, s, {
           [d.bottomSeparator]: x
         }),
-        onScroll: v,
+        onScroll: f,
         children: m
       })
     })]

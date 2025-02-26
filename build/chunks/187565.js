@@ -5,7 +5,7 @@ r.d(t, {
   k3: () => h,
   lk: () => P,
   ng: () => m
-}), r(47120), r(566702), r(266796);
+}), r(47120), r(773603), r(566702), r(266796);
 var n, i = r(192379),
   o = r(442837),
   l = r(999382),
@@ -22,35 +22,36 @@ var n, i = r(192379),
   p = r(388032),
   y = ((n = {})[n.CLAIM_ACCOUNT = 0] = "CLAIM_ACCOUNT", n[n.EMAIL_CONFIRMATION = 1] = "EMAIL_CONFIRMATION", n[n.VERIFICATION_FORM = 2] = "VERIFICATION_FORM", n);
 
-function m(e, t) {
-  let r = (0, b.jS)(e, "MemberVerificationScreens"),
-    n = (0, o.e7)([d.Z], () => d.Z.get(e)),
-    l = (0, o.e7)([s.Z], () => s.Z.pendingState);
+function m(e, t, r) {
+  let [n, l] = i.useState(!1), u = (0, b.jS)(e, "MemberVerificationScreens"), a = (0, o.e7)([d.Z], () => d.Z.get(e)), O = (0, o.e7)([s.Z], () => s.Z.pendingState);
   i.useEffect(() => {
-    !t && f.ZP.fetchVerificationForm(e)
-  }, [e, t]);
-  let u = i.useMemo(() => {
-    var e, i;
-    let o;
-    if (!t || !r || null == l) return null;
-    if (l.joinType === c.A.APPLY) o = null != l.pendingVerificationFields ? [...l.pendingVerificationFields] : void 0;
-    else if (null != l.termRules) {
-      let e = l.termRules.map(e => e.value.trim()).filter(e => "" !== e);
-      o = [{
+    !t && f.ZP.fetchVerificationForm(e, r).finally(() => l(!0))
+  }, [e, r, t]);
+  let g = i.useMemo(() => {
+    var e, r;
+    let n;
+    if (!t || !u || null == O) return null;
+    if (O.joinType === c.A.APPLY) n = null != O.pendingVerificationFields ? [...O.pendingVerificationFields] : void 0;
+    else if (null != O.termRules) {
+      let e = O.termRules.map(e => e.value.trim()).filter(e => "" !== e);
+      n = [{
         field_type: j.QJ.TERMS,
         label: p.NW.string(p.t["9suSIC"]),
         values: e,
         required: !0
       }]
     }
-    return null == o ? null : {
-      version: null !== (e = null == n ? void 0 : n.version) && void 0 !== e ? e : "",
-      description: null !== (i = null == n ? void 0 : n.description) && void 0 !== i ? i : "",
-      formFields: o,
-      guild: null == n ? void 0 : n.guild
+    return null == n ? null : {
+      version: null !== (e = null == a ? void 0 : a.version) && void 0 !== e ? e : "",
+      description: null !== (r = null == a ? void 0 : a.description) && void 0 !== r ? r : "",
+      formFields: n,
+      guild: null == a ? void 0 : a.guild
     }
-  }, [t, r, l, n]);
-  return null != u ? u : n
+  }, [t, u, O, a]);
+  return {
+    hasFetched: n,
+    verificationForm: null != g ? g : a
+  }
 }
 
 function v(e, t, r) {

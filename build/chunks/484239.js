@@ -32,7 +32,7 @@ let h = e => {
       imageOverlayText: S
     } = e,
     T = (0, o._)(O),
-    I = (0, l.yQ)(),
+    I = (0, l.Er)(),
     y = (null == I ? void 0 : I.nitroTenureStatus) === d.EB.REDEEMABLE;
   switch (null == I ? void 0 : I.nitroTenureStatus) {
     case d.EB.REDEEMABLE:

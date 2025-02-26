@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(605436),
   u = n(228643),
   m = n(496675),
-  p = n(626135),
-  g = n(823379),
+  g = n(626135),
+  p = n(823379),
   h = n(243730),
   f = n(946724),
   b = n(999382),
@@ -48,8 +48,8 @@ function E(e) {
     null == P && s(null)
   }, [P, s]);
   let R = (0, l.e7)([m.Z], () => m.Z.getHighestRole(T), [T]),
-    D = (0, l.e7)([m.Z], () => !m.Z.isRoleHigher(T, R, P)),
-    Z = i.useRef(null),
+    Z = (0, l.e7)([m.Z], () => !m.Z.isRoleHigher(T, R, P)),
+    D = i.useRef(null),
     k = (0, l.e7)([b.Z], () => b.Z.getProps().integrations),
     A = {
       role: P,
@@ -64,7 +64,7 @@ function E(e) {
         role: n,
         editRoleId: r
       } = W.current, i = (0, x.UT)(E), s = null !== (t = null === (e = h.Z.getRoleMemberCount(T.id)) || void 0 === e ? void 0 : e[r]) && void 0 !== t ? t : 0;
-      p.default.track(C.rMx.ROLE_PAGE_VIEWED, function(e) {
+      g.default.track(C.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -98,7 +98,7 @@ function E(e) {
       t = (0, r.jsx)(N.ZP, {
         guild: T,
         role: P,
-        locked: D,
+        locked: Z,
         highestRole: R,
         setSelectedSection: S
       });
@@ -107,7 +107,7 @@ function E(e) {
       t = (0, r.jsx)(_.ZP, {
         guild: T,
         role: P,
-        locked: D,
+        locked: Z,
         setSelectedSection: S,
         initialSearchQuery: w
       });
@@ -116,7 +116,7 @@ function E(e) {
       t = (0, r.jsx)(j.Z, {
         guild: T,
         role: P,
-        locked: D,
+        locked: Z,
         setSelectedSection: S,
         integrations: null != k ? k : void 0
       });
@@ -125,12 +125,12 @@ function E(e) {
       t = (0, r.jsx)(v.ZP, {
         guild: T,
         role: P,
-        locked: D,
+        locked: Z,
         setSelectedSection: S
       });
       break;
     default:
-      (0, g.vE)(E)
+      (0, p.vE)(E)
   }
   return (0, r.jsxs)(o.hjN, {
     className: I.page,
@@ -141,9 +141,9 @@ function E(e) {
       setSelectedSection: S
     }), (0, r.jsx)("div", {
       className: I.contentContainer,
-      ref: Z,
+      ref: D,
       children: (0, r.jsx)(o.JcV, {
-        containerRef: Z,
+        containerRef: D,
         children: t
       })
     })]

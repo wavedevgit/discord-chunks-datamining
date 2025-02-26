@@ -15,26 +15,35 @@ function o(e) {
     onSelect: n
   } = e, [{
     muteStreamAudio: a,
-    notifyFriends: o
-  }, c] = (0, s.E_)();
+    notifyFriends: o,
+    hidePreview: c
+  }, u] = (0, s.E_)();
   return (0, r.jsxs)(l.v2r, {
     "aria-label": i.NW.string(i.t["+1H47u"]),
     navId: "stream-options",
     onClose: t,
     onSelect: n,
     children: [(0, r.jsx)(l.S89, {
+      id: "stream-option-share-preview",
+      checked: c,
+      label: i.NW.string(i.t.H3Qjqa),
+      action: () => u({
+        type: "set_hide_preview",
+        hidePreview: !c
+      })
+    }), (0, r.jsx)(l.S89, {
       id: "stream-option-mute",
       checked: a,
       label: i.NW.string(i.t["b0+Ira"]),
-      action: () => c({
+      action: () => u({
         type: "set_mute_audio",
         value: !a
       })
     }), (0, r.jsx)(l.S89, {
       id: "stream-option-notify",
       checked: o,
-      label: i.NW.string(i.t.Cef4t7),
-      action: () => c({
+      label: i.NW.string(i.t.SiHtX1),
+      action: () => u({
         type: "set_notify_friends",
         value: !o
       })

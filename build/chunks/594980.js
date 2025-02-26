@@ -10,11 +10,11 @@ var r = n(200651),
   l = n(884858),
   o = n(813197),
   c = n(434404),
-  d = n(157176),
+  d = n(70086),
   u = n(949640),
   m = n(981631),
-  p = n(30513),
-  g = n(200299),
+  g = n(30513),
+  p = n(200299),
   h = n(388032);
 
 function f(e) {
@@ -29,7 +29,13 @@ function f(e) {
       splash: e
     })
   }, []), v = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, u.E6)(t, b, m.jXE.GUILD_INVITE_BACKGROUND, m.qAy.BUTTON_CTA, (0, p.o9)())
+    e.preventDefault(), e.stopPropagation(), (0, u.E6)({
+      guild: t,
+      analyticsLocations: b,
+      analyticsSection: m.jXE.GUILD_INVITE_BACKGROUND,
+      analyticsObject: m.qAy.BUTTON_CTA,
+      perks: (0, g.o9)()
+    })
   }, [b, t]);
   return x ? (0, r.jsxs)(s.zxk, {
     disabled: !j,
@@ -38,10 +44,10 @@ function f(e) {
     children: [h.NW.string(h.t.yG2pUl), (0, r.jsx)(o.ZP, {
       disabled: !j,
       onChange: N,
-      maxFileSizeBytes: g.B,
-      onFileSizeError: () => (0, l.Z)(g.B)
+      maxFileSizeBytes: p.B,
+      onFileSizeError: () => (0, l.Z)(p.B)
     })]
-  }) : (0, r.jsx)(d.e, {
+  }) : (0, r.jsx)(d.P, {
     className: f,
     onClick: v
   })

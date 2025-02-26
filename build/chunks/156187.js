@@ -1,5 +1,4 @@
-/** Chunk was on 13368 **/
-"use strict";
+/** Chunk was on 68051 **/
 e.exports = {
   streamIcon: "streamIcon__43481",
   iconButton: "iconButton__43481",

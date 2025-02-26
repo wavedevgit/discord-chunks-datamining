@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => g
 }), n(653041);
@@ -29,7 +29,7 @@ function g(e) {
     y = n.state === m.r2o.ACCEPTING,
     x = (0, o.e7)([c.Z], () => null != n.channel ? c.Z.getChannel(n.channel.id) : null, [n]);
   a()(null == x || x.isPrivate(), "must be a private channel");
-  let O = null != x;
+  let E = null != x;
   if (null == x) {
     if (null == n.channel) return (0, r.jsx)(p.Z, {});
     x = (0, s.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
@@ -39,14 +39,14 @@ function g(e) {
       return null != n && e.push(n), e
     }, []);
     let e = d.default.getCurrentUser();
-    O && null != e && t.push(e)
+    E && null != e && t.push(e)
   }
-  let E = x.name;
-  (null == E || "" === E) && (E = t.length > 0 ? t.filter(u.lm).map(e => e.username).join(", ") : f.NW.string(f.t.LJpTRE));
-  let j = O ? _ : b,
+  let O = x.name;
+  (null == O || "" === O) && (O = t.length > 0 ? t.filter(u.lm).map(e => e.username).join(", ") : f.NW.string(f.t.LJpTRE));
+  let j = E ? _ : b,
     N = f.NW.string(f.t.XpeFYm),
     C = l.Z.Button.Colors.GREEN;
-  O && (N = f.NW.string(f.t.cEnaW1), C = l.Z.Button.Colors.PRIMARY);
+  E && (N = f.NW.string(f.t.cEnaW1), C = l.Z.Button.Colors.PRIMARY);
   let I = f.NW.string(f.t["3p3/BA"]);
   return v && (I = f.NW.string(f.t.qmtuXF)), (0, r.jsxs)(l.Z, {
     children: [(0, r.jsx)(l.Z.Header, {
@@ -56,10 +56,10 @@ function g(e) {
         className: h.headerLine,
         children: [(0, r.jsx)(l.Z.Icon, {
           channel: x,
-          onClick: O ? j : void 0
+          onClick: E ? j : void 0
         }), (0, r.jsx)(l.Z.Info, {
-          title: E,
-          onClick: O ? j : void 0,
+          title: O,
+          onClick: E ? j : void 0,
           children: (0, r.jsx)(l.Z.Data, {
             members: t.length
           })
@@ -67,7 +67,7 @@ function g(e) {
       }), (0, r.jsx)(l.Z.Button, {
         onClick: j,
         submitting: y,
-        isDisabled: O,
+        isDisabled: E,
         color: C,
         children: N
       })]

@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   FZ: () => A,
   Hl: () => M,
@@ -37,8 +37,8 @@ var r = n(5148),
   v = n.n(b),
   y = n(634523),
   x = n.n(y),
-  O = n(302648),
-  E = n.n(O);
+  E = n(302648),
+  O = n.n(E);
 
 function j(e, t, n, i) {
   let a = i.getCurrentContent(),
@@ -92,7 +92,7 @@ function C(e, t) {
 function I(e, t) {
   switch (e) {
     case "transpose-characters":
-      return E()(t);
+      return O()(t);
     case "move-selection-to-start-of-block":
       return _()(t);
     case "move-selection-to-end-of-block":

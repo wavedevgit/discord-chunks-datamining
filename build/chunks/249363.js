@@ -25,7 +25,7 @@ function m(e) {
       className: u.column,
       children: [(0, r.jsxs)(i.vwX, {
         className: u.title,
-        children: [d.NW.string(d.t.tzGY0t), (0, r.jsx)(a.h, {
+        children: [d.NW.string(d.t.tzGY0t), (0, r.jsx)(a.hH, {
           guild: t
         })]
       }), (0, r.jsx)(i.Text, {

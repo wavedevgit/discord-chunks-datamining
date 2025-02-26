@@ -1,5 +1,4 @@
 /** Chunk was on 79120 **/
-"use strict";
 n.d(t, {
   Z: () => u
 });
@@ -23,17 +22,17 @@ function u(e) {
     look: p,
     color: m,
     className: g,
-    onAction: y
+    onAction: b
   } = e, {
-    tooltip: b,
-    loading: h,
-    disabled: v,
-    onClick: O
+    tooltip: y,
+    loading: O,
+    disabled: h,
+    onClick: v
   } = (0, s.Fe)(t, n, d, a.ZP.getNickname(u, l, n)), j = () => {
-    null == y || y(), O()
+    null == b || b(), v()
   };
   return (0, r.jsx)(o.ua7, {
-    text: b,
+    text: y,
     children: e => {
       let {
         onMouseEnter: n,
@@ -48,9 +47,9 @@ function u(e) {
         onClick: j,
         onMouseEnter: n,
         onMouseLeave: l,
-        disabled: v,
-        submitting: h,
-        "aria-label": null != b ? b : t.name,
+        disabled: h,
+        submitting: O,
+        "aria-label": null != y ? y : t.name,
         children: (0, r.jsx)(o.iOO, {
           size: "xs",
           color: "currentColor"

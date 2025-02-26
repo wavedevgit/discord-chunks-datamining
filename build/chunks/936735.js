@@ -18,8 +18,8 @@ function m(e) {
     guild: t,
     discoverableGuild: n
   } = e, m = null == t ? void 0 : t.id, {
-    memberCount: p,
-    onlineCount: g
+    memberCount: g,
+    onlineCount: p
   } = (0, a.cj)([d.Z], () => {
     var e, t;
     return {
@@ -52,8 +52,8 @@ function m(e) {
       premiumSubscriptionCount: null == t ? void 0 : t.premiumSubscriberCount,
       emojis: i,
       emojiCount: i.length,
-      presenceCount: g,
-      memberCount: p
+      presenceCount: p,
+      memberCount: g
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ function m(e) {
     })(Object(r)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
     }), e))
-  }, [n, t, p, g]), b = i.useMemo(() => {
+  }, [n, t, g, p]), b = i.useMemo(() => {
     var e;
     let t = null == f ? void 0 : null === (e = f.emojis) || void 0 === e ? void 0 : e[0];
     return null != t ? {

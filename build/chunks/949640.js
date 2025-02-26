@@ -1,19 +1,20 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  E6: () => u,
-  f4: () => m,
-  mw: () => d
+  E6: () => m,
+  f4: () => g,
+  mw: () => u
 });
 var r = n(200651),
   i = n(481060),
   s = n(367907),
   a = n(48217),
   l = n(26323),
-  o = n(434404),
-  c = n(981631);
+  o = n(267642),
+  c = n(434404),
+  d = n(981631);
 
-function d(e) {
+function u(e) {
   let {
     uploadType: t,
     maxFileSizeBytes: s,
@@ -54,37 +55,46 @@ function d(e) {
   })
 }
 
-function u(e, t, n, r, i) {
-  (0, s.yw)(c.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+function m(e) {
+  let {
+    guild: t,
+    analyticsLocations: n,
+    analyticsSection: r,
+    analyticsObject: i,
+    perks: a,
+    targetPremiumGuildTier: c
+  } = e;
+  (0, s.yw)(d.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
     location: {
-      section: n,
-      object: c.qAy.LEARN_MORE
+      section: r,
+      object: d.qAy.LEARN_MORE,
+      objectType: c ? (0, o.ge)(c) : void 0
     },
-    guild_id: e.id,
-    location_stack: t
+    guild_id: t.id,
+    location_stack: n
   }), (0, l.Z)({
-    analyticsLocations: t,
+    analyticsLocations: n,
     analyticsSourceLocation: {
-      section: n,
-      object: r,
-      page: c.ZY5.GUILD_SETTINGS
+      section: r,
+      object: i,
+      page: d.ZY5.GUILD_SETTINGS
     },
-    guild: e,
-    perks: i
+    guild: t,
+    perks: a
   })
 }
 
-function m(e, t, n, r) {
+function g(e, t, n, r) {
   let i = null == r ? void 0 : r.type,
     s = {
-      page: c.ZY5.GUILD_SETTINGS,
-      section: c.jXE.ANIMATED_GUILD_BANNER_UPSELL,
+      page: d.ZY5.GUILD_SETTINGS,
+      section: d.jXE.ANIMATED_GUILD_BANNER_UPSELL,
       object: "temp"
     };
   if (null != i && null != n) {
-    if ("image/gif" !== i || e.hasFeature(c.oNc.ANIMATED_BANNER)) {
-      if (!e.hasFeature(c.oNc.BANNER)) {
-        s.object = c.qAy.IMAGE_CROPPING_MODAL, (0, a.c)({
+    if ("image/gif" !== i || e.hasFeature(d.oNc.ANIMATED_BANNER)) {
+      if (!e.hasFeature(d.oNc.BANNER)) {
+        s.object = d.qAy.IMAGE_CROPPING_MODAL, (0, a.c)({
           guild: e,
           analyticsLocations: t,
           analyticsLocation: s,
@@ -94,7 +104,7 @@ function m(e, t, n, r) {
         return
       }
     } else {
-      s.object = c.qAy.GIF_CROPPING_MODAL, (0, a.c)({
+      s.object = d.qAy.GIF_CROPPING_MODAL, (0, a.c)({
         guild: e,
         analyticsLocations: t,
         analyticsLocation: s,
@@ -104,7 +114,7 @@ function m(e, t, n, r) {
       return
     }
   }
-  o.Z.updateGuild({
+  c.Z.updateGuild({
     banner: n
   })
 }

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(723047),
   u = n(727843),
   m = n(290348),
-  p = n(518470),
-  g = n(22902),
+  g = n(518470),
+  p = n(22902),
   h = n(783454),
   f = n(388032),
   b = n(255180);
@@ -25,7 +25,7 @@ function x() {
     editStateId: t
   } = (0, u.N)(), [n, s] = m.TT(t), [x, j] = m.F2(t), N = (0, c.oC)(t), {
     options: v
-  } = (0, g.Z)(null !== (e = null == N ? void 0 : N.active_trial) && void 0 !== e ? e : null), _ = (0, p.Z)(), O = null != n, y = i.useCallback(e => {
+  } = (0, p.Z)(null !== (e = null == N ? void 0 : N.active_trial) && void 0 !== e ? e : null), _ = (0, g.Z)(), O = null != n, y = i.useCallback(e => {
     let t = v.find(e => e.isDefault);
     a()(null != t, "Missing default trial duartion option"), s(e ? t.value : null)
   }, [s, v]), C = (0, d.mY)(), I = (0, o.Dt)(), E = (0, o.Dt)();

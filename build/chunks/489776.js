@@ -13,9 +13,9 @@ var r = n(200651),
   d = n(65912),
   u = n(564488),
   m = n(388032),
-  p = n(617145);
+  g = n(617145);
 
-function g(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,13 +59,13 @@ function f(e) {
   } = c.I6[n], O = !(0, o.Vb)(N) && (null == N ? void 0 : N.triggerType) === n, [y, C] = i.useState(O ? N : b), I = (0, l.q_F)({
     opacity: +!O,
     pointerEvents: O ? "none" : "all",
-    config: h(g({}, s.config.stiff), {
+    config: h(p({}, s.config.stiff), {
       clamp: !0
     })
   }), E = (0, l.q_F)({
     opacity: +!!O,
     pointerEvents: O ? "all" : "none",
-    config: h(g({}, s.config.stiff), {
+    config: h(p({}, s.config.stiff), {
       clamp: !0
     }),
     onStart: () => {
@@ -76,22 +76,22 @@ function f(e) {
     }
   });
   return null == N || O ? (0, r.jsxs)("div", {
-    className: p.mainRuleContainer,
+    className: g.mainRuleContainer,
     style: {
       height: O ? "auto" : "60px"
     },
     children: [(0, r.jsx)(s.animated.div, {
-      className: p.animatedRuleCardContainer,
+      className: g.animatedRuleCardContainer,
       style: E,
       children: (0, r.jsx)(u.Z, {
         rule: y,
         persistEdit: x
       })
     }), (0, r.jsx)(s.animated.div, {
-      className: p.animatedNewRuleContainer,
+      className: g.animatedNewRuleContainer,
       style: I,
       children: (0, r.jsxs)(l.P3F, {
-        className: p.addAnotherRuleCardContainer,
+        className: g.addAnotherRuleCardContainer,
         onClick: () => {
           v(t, n)
         },
@@ -100,7 +100,7 @@ function f(e) {
           width: 20,
           height: 20,
           color: a.Z.BLUE_345,
-          className: p.plusIcon
+          className: g.plusIcon
         }), (0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
           color: "text-link",

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(142497),
   u = n(338327),
   m = n(496675),
-  p = n(63063),
-  g = n(981631),
+  g = n(63063),
+  p = n(981631),
   h = n(190378),
   f = n(388032),
   b = n(411975),
@@ -187,7 +187,7 @@ let S = () => [{
   R = e => {
     let {
       guild: t
-    } = e, [n, s] = i.useState(0), [a, o] = i.useState(0), [N, v] = i.useState(), _ = (0, l.e7)([m.Z], () => m.Z.can(g.Plq.ADMINISTRATOR, t)), O = null == N ? void 0 : N.offsetWidth, y = null == N ? void 0 : N.offsetHeight;
+    } = e, [n, s] = i.useState(0), [a, o] = i.useState(0), [N, v] = i.useState(), _ = (0, l.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), O = null == N ? void 0 : N.offsetWidth, y = null == N ? void 0 : N.offsetHeight;
     i.useEffect(() => {
       null != O && s(O / 2), null != y && o(y / 2)
     }, [O, y, s, o]), i.useEffect(() => {
@@ -221,7 +221,7 @@ let S = () => [{
         variant: "text-md/normal",
         className: b.body,
         children: f.NW.format(f.t["52EgsL"], {
-          helpdeskArticle: p.Z.getArticleURL(g.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
+          helpdeskArticle: g.Z.getArticleURL(p.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
       }), (0, r.jsx)(c.ua7, {
         text: _ ? null : f.NW.string(f.t["pjG+T0"]),
@@ -244,7 +244,7 @@ let S = () => [{
         className: b.body,
         variant: "text-sm/normal",
         children: f.NW.format(f.t.rjhrqK, {
-          helpdeskArticle: p.Z.getArticleURL(g.BhN.GUILD_COMMUNITY_FEATURE)
+          helpdeskArticle: g.Z.getArticleURL(p.BhN.GUILD_COMMUNITY_FEATURE)
         })
       }), (0, r.jsx)("div", {
         className: b.features,

@@ -430,8 +430,8 @@ let k = function(e) {
       [A.hideOverflow]: b && M,
       [A.mosaicItemWithFooter]: null != d
     }),
-    children: [null != j ? (0, r.jsx)(h.Z, {
-      type: h.Z.Types.ATTACHMENT,
+    children: [null != j ? (0, r.jsx)(h.ZP, {
+      type: h.ZP.Types.ATTACHMENT,
       inline: v,
       reason: j,
       isSingleMosaicItem: c,

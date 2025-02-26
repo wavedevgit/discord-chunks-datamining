@@ -1,30 +1,29 @@
-/** Chunk was on 26660 **/
-"use strict";
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => u
 });
-var r, o, i, a = n(442837),
-  s = n(570140);
-let l = null;
-class c extends(i = a.ZP.Store) {
+var r, i, a, o = n(442837),
+  l = n(570140);
+let s = null;
+class c extends(a = o.ZP.Store) {
   hasAction() {
-    return null != l
+    return null != s
   }
   getAction() {
-    return l
+    return s
   }
 }
 
 function d(e) {
-  l = e.requiredAction
+  s = e.requiredAction
 }
-o = "UserRequiredActionStore", (r = "displayName") in c ? Object.defineProperty(c, r, {
-  value: o,
+i = "UserRequiredActionStore", (r = "displayName") in c ? Object.defineProperty(c, r, {
+  value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : c[r] = o;
-let u = new c(s.Z, {
+}) : c[r] = i;
+let u = new c(l.Z, {
   CONNECTION_OPEN: d,
   USER_REQUIRED_ACTION_UPDATE: d
 })

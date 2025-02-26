@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -14,10 +14,10 @@ var r = n(200651),
   u = n(388032),
   m = n(412856);
 
-function p(e) {
+function g(e) {
   let {
     guild: t
-  } = e, s = t.verificationLevel, p = i.useMemo(() => (0, o.I9)(s), [s]);
+  } = e, s = t.verificationLevel, g = i.useMemo(() => (0, o.I9)(s), [s]);
   return (0, r.jsxs)(l.P3F, {
     onClick: () => (0, l.ZDy)(async () => {
       let {
@@ -84,7 +84,7 @@ function p(e) {
             color: "currentColor",
             width: 16,
             height: 16
-          }), p]
+          }), g]
         })
       })]
     }), (0, r.jsx)(c.Z, {

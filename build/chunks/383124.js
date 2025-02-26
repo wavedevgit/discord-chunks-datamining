@@ -20,27 +20,29 @@ function m(e) {
     onClick: s
   } = e, {
     isFetching: m,
-    coverImageUrl: p
+    coverImageUrl: g
   } = (0, c.$)(t, {
     coverImageHeight: 336,
     coverImageWidth: 252
-  }), g = (0, o.e7)([d.Z], () => {
+  }), p = (0, o.e7)([d.Z], () => {
     var e, n;
     return null !== (n = null === (e = d.Z.getDetectableGame(t)) || void 0 === e ? void 0 : e.name) && void 0 !== n ? n : ""
   }), h = i.useCallback(() => {
     null == s || s(t)
-  }, [t, s]), f = i.useMemo(() => m ? null : null == p ? (0, r.jsx)("div", {
+  }, [t, s]), f = i.useMemo(() => m ? null : null == g ? (0, r.jsx)("div", {
     className: u.gameUnknownImage,
     children: (0, r.jsx)(l.IMN, {
       size: "lg"
     })
   }) : (0, r.jsx)("img", {
     className: u.gameImage,
-    alt: g,
-    src: p
-  }), [p, m, g]);
+    alt: p,
+    src: g
+  }), [g, m, p]);
   return (0, r.jsxs)("div", {
-    className: u.selectedGame,
+    className: a()(u.selectedGame, {
+      [u.dimmed]: !n
+    }),
     children: [(0, r.jsxs)(l.P3F, {
       onClick: h,
       className: a()(u.gameImageBackground, {
@@ -55,9 +57,9 @@ function m(e) {
       }), f]
     }), (0, r.jsx)(l.Text, {
       className: u.gameName,
-      variant: "text-xs/normal",
+      variant: "text-xs/medium",
       color: "header-primary",
-      children: g
+      children: p
     })]
   })
 }

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(823379),
   u = n(63063),
   m = n(426563),
-  p = n(727072),
-  g = n(85960),
+  g = n(727072),
+  p = n(85960),
   h = n(577330),
   f = n(65912),
   b = n(51248),
@@ -36,12 +36,12 @@ function y(e) {
   } = (0, f.V)(), {
     guild: S,
     subsection: T
-  } = (0, s.cj)([o.Z], () => o.Z.getProps()), P = null !== (n = null !== (t = null == S ? void 0 : S.id) && void 0 !== t ? t : y) && void 0 !== n ? n : v.lds, w = null != I, [R] = (0, p.RD)(P), {
-    rulesByTriggerType: D
-  } = (0, p.pH)(P), Z = {
-    [g.vh.MEMBERS]: _.NW.string(_.t.sx4E5u),
-    [g.vh.CONTENT]: _.NW.string(_.t.fphZb2)
-  }, k = i.useMemo(() => Object.values(null != D ? D : {}).flat().filter(d.lm), [D]), A = {
+  } = (0, s.cj)([o.Z], () => o.Z.getProps()), P = null !== (n = null !== (t = null == S ? void 0 : S.id) && void 0 !== t ? t : y) && void 0 !== n ? n : v.lds, w = null != I, [R] = (0, g.RD)(P), {
+    rulesByTriggerType: Z
+  } = (0, g.pH)(P), D = {
+    [p.vh.MEMBERS]: _.NW.string(_.t.sx4E5u),
+    [p.vh.CONTENT]: _.NW.string(_.t.fphZb2)
+  }, k = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), A = {
     isInEditMode: w,
     setEditingRule: E
   }, W = i.useRef(A);
@@ -64,7 +64,7 @@ function y(e) {
           return n === e
         })) || void 0 === n ? void 0 : n.name) && void 0 !== r ? r : null
       }
-      return null != t ? g.I6[t].getDefaultRuleName() : null
+      return null != t ? p.I6[t].getDefaultRuleName() : null
     }, [k]),
     M = i.useMemo(() => {
       var e, t;
@@ -73,14 +73,14 @@ function y(e) {
   i.useEffect(() => {
     C(w, (0, j.af)(M))
   }, [C, w, M]);
-  let G = (0, g.Z6)(P),
+  let G = (0, p.Z6)(P),
     U = e => (0, r.jsx)(r.Fragment, {
       children: e.map(e => {
         var t;
         return (0, r.jsx)(x.Z, {
           guildId: P,
           triggerType: e,
-          rules: null !== (t = D[e]) && void 0 !== t ? t : [],
+          rules: null !== (t = Z[e]) && void 0 !== t ? t : [],
           initWithEdit: T === v.KsC.AUTOMOD_MENTION_SPAM && e === N.fX.MENTION_SPAM
         }, e)
       })
@@ -131,13 +131,13 @@ function y(e) {
     }), R ? (0, r.jsx)(h.Z, {}) : Object.entries(G).map(e => {
       let [t, n] = e;
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
-      let s = null != Z[t] ? (0, r.jsx)(l.hjN, {
+      let s = null != D[t] ? (0, r.jsx)(l.hjN, {
         tag: "h3",
         className: O.categoryHeader,
         children: (0, r.jsx)(l.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
-          children: Z[t]
+          children: D[t]
         })
       }) : null;
       return (0, r.jsxs)("div", {

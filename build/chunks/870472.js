@@ -46,7 +46,7 @@ function c(e, t) {
     },
     setState: u,
     goBack: m,
-    goForward: p
+    goForward: g
   } = e;
   r.useLayoutEffect(() => {
     let e = e => t => {
@@ -89,7 +89,7 @@ function c(e, t) {
       document.removeEventListener("keydown", t), document.removeEventListener("keyup", n)
     }
   }, [u]);
-  let g = r.useCallback(e => {
+  let p = r.useCallback(e => {
       var t, r;
       let i = (null !== (r = e.clipboardData.getData("text")) && void 0 !== r ? r : "").split(l.uz).map(e => e.trim()).filter(e => e.length > 0);
       !(i.length <= 1) && ((0, a.flushSync)(() => {
@@ -249,8 +249,8 @@ function c(e, t) {
     O = r.useCallback(e => {
       var t, n, r, s;
       let a = e.metaKey || e.ctrlKey;
-      "z" === e.key && a ? (m().selections.length > 0 ? null === (t = i.current) || void 0 === t || t.blur() : null === (n = i.current) || void 0 === n || n.focus(), e.preventDefault(), e.stopPropagation()) : "y" === e.key && a && (p().selections.length > 0 ? null === (r = i.current) || void 0 === r || r.blur() : null === (s = i.current) || void 0 === s || s.focus(), e.preventDefault(), e.stopPropagation())
-    }, [m, p, i]),
+      "z" === e.key && a ? (m().selections.length > 0 ? null === (t = i.current) || void 0 === t || t.blur() : null === (n = i.current) || void 0 === n || n.focus(), e.preventDefault(), e.stopPropagation()) : "y" === e.key && a && (g().selections.length > 0 ? null === (r = i.current) || void 0 === r || r.blur() : null === (s = i.current) || void 0 === s || s.focus(), e.preventDefault(), e.stopPropagation())
+    }, [m, g, i]),
     y = r.useCallback(e => {
       var t;
       let n = o.trim().length > 0,
@@ -283,7 +283,7 @@ function c(e, t) {
       e.relatedTarget !== e.currentTarget && v(e, !1, !1)
     }, [v]);
   return {
-    handlePasteEvent: g,
+    handlePasteEvent: p,
     handleInputChange: N,
     handleKeyDown: r.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;

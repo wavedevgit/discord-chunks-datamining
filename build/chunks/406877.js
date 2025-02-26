@@ -1,40 +1,40 @@
-/** Chunk was on 53162 **/
-n.d(e, {
-  Z: () => s
+/** Chunk was on 68051 **/
+n.d(t, {
+  Z: () => c
 }), n(47120);
 var r = n(192379),
-  a = n(668781),
-  o = n(881052),
-  i = n(824389),
+  i = n(668781),
+  a = n(881052),
+  o = n(824389),
   l = n(179838),
-  c = n(388032);
+  s = n(388032);
 
-function s(t, e) {
-  let [n, s] = r.useState(!1);
+function c(e, t) {
+  let [n, c] = r.useState(!1);
   return {
     isLoading: n,
     downloadAttachment: r.useCallback(async n => {
-      if (null != t && null != e) {
-        s(!0);
+      if (null != e && null != t) {
+        c(!0);
         try {
           let {
             url: r
-          } = await i.gs({
-            guildId: t,
-            productId: e,
+          } = await o.gs({
+            guildId: e,
+            productId: t,
             attachmentId: n
           });
           await l.L(r)
-        } catch (e) {
-          let t = e instanceof o.Hx ? e.getAnyErrorMessage() : void 0;
-          a.Z.show({
-            title: c.NW.string(c.t.R0RpRU),
-            body: null != t ? t : c.NW.string(c.t.eAn6z8)
+        } catch (t) {
+          let e = t instanceof a.Hx ? t.getAnyErrorMessage() : void 0;
+          i.Z.show({
+            title: s.NW.string(s.t.R0RpRU),
+            body: null != e ? e : s.NW.string(s.t.eAn6z8)
           })
         } finally {
-          s(!1)
+          c(!1)
         }
       }
-    }, [t, e])
+    }, [e, t])
   }
 }

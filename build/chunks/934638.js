@@ -22,7 +22,7 @@ function u(e) {
     }), l.Z.updateGuildProfile(u, {
       description: e
     })
-  }, [u]), p = (0, s.e7)([o.Z], () => o.Z.getError("description"));
+  }, [u]), g = (0, s.e7)([o.Z], () => o.Z.getError("description"));
   return (0, r.jsxs)(a.hjN, {
     className: d.section,
     children: [(0, r.jsxs)("div", {
@@ -39,7 +39,7 @@ function u(e) {
       onChange: m,
       maxLength: 120,
       disabled: !n,
-      error: p
+      error: g
     })]
   })
 }

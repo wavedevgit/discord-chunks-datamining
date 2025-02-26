@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => v
 });
@@ -24,7 +24,7 @@ function v(e) {
     onOpen: t,
     onClose: n,
     className: v
-  } = e, y = (0, a.e7)([m.default], () => m.default.getCurrentUser()), x = (0, l.Q3)("RecentsButton"), O = i.useRef(null), E = (0, a.e7)([p.ZP], () => (null == y ? void 0 : y.id) != null && p.ZP.getMentionCount(y.id, g.W.NOTIFICATION_CENTER) > 0), {
+  } = e, y = (0, a.e7)([m.default], () => m.default.getCurrentUser()), x = (0, l.Q3)("RecentsButton"), E = i.useRef(null), O = (0, a.e7)([p.ZP], () => (null == y ? void 0 : y.id) != null && p.ZP.getMentionCount(y.id, g.W.NOTIFICATION_CENTER) > 0), {
     enabled: j
   } = c.Z.useExperiment({
     location: "RecentsButton"
@@ -35,17 +35,17 @@ function v(e) {
     onOpen: t,
     onClose: n,
     badgeState: {
-      badgeForYou: E
+      badgeForYou: O
     },
     popoutPosition: "bottom",
     popoutAlign: "right",
     children: (e, t, n, i) => {
       var a, l;
       return (0, r.jsxs)("div", {
-        ref: O,
+        ref: E,
         className: b.recentsIcon,
         children: [j && (0, r.jsx)(h.Z, {
-          inboxIconRef: O,
+          inboxIconRef: E,
           recentsPopoutShown: t
         }), (0, r.jsx)(u.U, {
           location: "inbox-button",
@@ -74,7 +74,7 @@ function v(e) {
             "aria-label": _.NW.string(_.t.GSmTKC),
             tooltip: t ? null : _.NW.string(_.t.GSmTKC),
             selected: t,
-            showBadge: E || N || i
+            showBadge: O || N || i
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

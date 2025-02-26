@@ -14,8 +14,8 @@ var r, i = n(200651),
   d = n(442837),
   u = n(692547),
   m = n(481060),
-  p = n(570140),
-  g = n(484614),
+  g = n(570140),
+  p = n(484614),
   h = n(852860),
   f = n(881052),
   b = n(751189),
@@ -66,7 +66,7 @@ class I extends(r = d.ZP.Store) {
   }
 }
 C(I, "displayName", "GuildSettingsTemplateMetadataStore_");
-let E = new I(p.Z);
+let E = new I(g.Z);
 
 function S() {
   let [e, t] = s.useState(!1), n = async () => {
@@ -143,7 +143,7 @@ function P() {
   });
   let o = null != t && null == t.getFirstFieldErrorMessage("name") && null == t.getFirstFieldErrorMessage("description");
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(D, {}), (0, i.jsx)(Z, {
+    children: [(0, i.jsx)(Z, {}), (0, i.jsx)(D, {
       guild: e,
       guildTemplate: l
     }), o ? (0, i.jsx)(m.Text, {
@@ -242,7 +242,7 @@ function R(e) {
   })
 }
 
-function D() {
+function Z() {
   let e = (0, d.e7)([E], () => E.name),
     t = (0, d.e7)([E], () => E.description),
     n = (0, d.e7)([E], () => E.error);
@@ -271,7 +271,7 @@ function D() {
   })
 }
 
-function Z(e) {
+function D(e) {
   let {
     guild: t,
     guildTemplate: n
@@ -281,7 +281,7 @@ function Z(e) {
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(m.xJW, {
       title: _.NW.string(_.t.zGGcLy),
-      children: (0, i.jsx)(g.Z, {
+      children: (0, i.jsx)(p.Z, {
         buttonLook: m.zxk.Looks.FILLED,
         buttonColor: m.zxk.Colors.BRAND,
         value: (0, j.Z)(n.code)

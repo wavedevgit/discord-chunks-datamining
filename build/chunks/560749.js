@@ -16,8 +16,8 @@ var r = n(200651),
   h = n(131704),
   g = n(592125),
   x = n(580005),
-  f = n(984933),
-  v = n(430824),
+  v = n(984933),
+  f = n(430824),
   j = n(496675),
   S = n(914010),
   N = n(594174),
@@ -33,7 +33,7 @@ function T(e) {
   let {
     result: t,
     onSelectChannel: n
-  } = e, l = (0, s.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), a = (0, s.Wu)([Z.ZP, N.default], () => Z.ZP.getVoiceStatesForChannel(t.record).map(e => N.default.getUser(e.user.id)).filter(b.lm));
+  } = e, l = (0, s.e7)([f.Z], () => f.Z.getGuild(t.record.guild_id)), a = (0, s.Wu)([Z.ZP, N.default], () => Z.ZP.getVoiceStatesForChannel(t.record).map(e => N.default.getUser(e.user.id)).filter(b.lm));
   return (0, r.jsxs)(i.P3F, {
     className: E.channelResult,
     onClick: () => n(t.record.id),
@@ -77,23 +77,23 @@ function I(e) {
     searchOptions: {
       frecencyBoosters: !0
     }
-  }), W = (0, s.Wu)([S.Z, f.ZP, g.Z, v.Z, j.Z], () => {
+  }), W = (0, s.Wu)([S.Z, v.ZP, g.Z, f.Z, j.Z], () => {
     let e = [],
       t = S.Z.getGuildId();
     if (null == t) return e;
-    for (let n of f.ZP.getVocalChannelIds(t)) {
+    for (let n of v.ZP.getVocalChannelIds(t)) {
       let t = g.Z.getChannel(n);
-      null != t && (0, O.JL)(t, v.Z, j.Z) && e.push(t)
+      null != t && (0, O.JL)(t, f.Z, j.Z) && e.push(t)
     }
     return e
-  }), A = (0, s.Wu)([m.Z, g.Z, x.Z, v.Z, j.Z], () => {
+  }), A = (0, s.Wu)([m.Z, g.Z, x.Z, f.Z, j.Z], () => {
     let e = [],
       t = new Set;
     for (let n of m.Z.getChannelHistory()) {
       let r = g.Z.getChannel(n);
-      (null == r ? void 0 : r.type) === C.d4z.GUILD_VOICE && (0, O.JL)(r, v.Z, j.Z) && (t.add(r.id), e.push(r))
+      (null == r ? void 0 : r.type) === C.d4z.GUILD_VOICE && (0, O.JL)(r, f.Z, j.Z) && (t.add(r.id), e.push(r))
     }
-    for (let n of x.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === C.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
+    for (let n of x.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === C.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, f.Z, j.Z) && (t.add(n.id), e.push(n));
     return e
   }), k = l.useMemo(() => {
     let e = new Set(A.map(e => e.id)),

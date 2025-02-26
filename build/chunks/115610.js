@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   O: () => _
 }), n(230036), n(86693), n(536091);
@@ -40,14 +40,14 @@ async function _(e, t) {
     });
     return
   }
-  let O = d.Z.getGuildIds().filter(g).map(e => i.ZP.getUsableGuildEmoji(e)).flat().filter(e => null == p.ZP.getEmojiUnavailableReason({
+  let E = d.Z.getGuildIds().filter(g).map(e => i.ZP.getUsableGuildEmoji(e)).flat().filter(e => null == p.ZP.getEmojiUnavailableReason({
     emoji: e,
     channel: t,
     guildId: b,
     intention: h.Hz.CHAT
   })).sort((e, t) => -m.default.compare(e.id, t.id));
-  if (O.length > 10) {
-    let n = O[Math.floor(Math.pow(Math.random(), 2) * O.length)];
+  if (E.length > 10) {
+    let n = E[Math.floor(Math.pow(Math.random(), 2) * E.length)];
     r.Z.sendMessage(t.id, a.ZP.parse(t, n.allNamesString), !1, {
       messageReference: {
         guild_id: null !== (f = t.getGuildId()) && void 0 !== f ? f : void 0,
@@ -57,8 +57,8 @@ async function _(e, t) {
     });
     return
   }
-  let E = y.filter(e => e.type === c.n0.STANDARD),
-    j = [E[Math.floor(Math.random() * E.length)].id];
+  let O = y.filter(e => e.type === c.n0.STANDARD),
+    j = [O[Math.floor(Math.random() * O.length)].id];
   r.Z.sendStickers(t.id, j, "", {
     messageReference: {
       guild_id: null !== (_ = t.getGuildId()) && void 0 !== _ ? _ : void 0,

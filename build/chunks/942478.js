@@ -18,7 +18,7 @@ function u() {
     originalGuild: t,
     submitting: n,
     errors: u
-  } = (0, s.cj)([c.Z], () => c.Z.getProps()), m = i.useMemo(() => (0, d.LG)(u), [u]), p = i.useCallback(() => {
+  } = (0, s.cj)([c.Z], () => c.Z.getProps()), m = i.useMemo(() => (0, d.LG)(u), [u]), g = i.useCallback(() => {
     if (null == e) return;
     let n = {
       systemChannelFlags: e.systemChannelFlags,
@@ -28,13 +28,13 @@ function u() {
       defaultMessageNotifications: e.defaultMessageNotifications
     };
     (0, l.OL)(new Set(e.features), new Set(t.features)) || (n.features = e.features), o.Z.saveGuild(e.id, n)
-  }, [e, t]), g = i.useCallback(() => {
+  }, [e, t]), p = i.useCallback(() => {
     null != e && o.Z.init(e.id)
   }, [e]);
   return (0, r.jsx)(a.Z, {
     submitting: n,
     errorMessage: m,
-    onSave: p,
-    onReset: g
+    onSave: g,
+    onReset: p
   })
 }

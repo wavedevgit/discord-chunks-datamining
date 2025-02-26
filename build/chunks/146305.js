@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(147890),
   u = n(353093),
   m = n(593128),
-  p = n(979264),
-  g = n(688465),
+  g = n(979264),
+  p = n(688465),
   h = n(676317),
   f = n(874993),
   b = n(45966),
@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(585483),
   w = n(823379),
   R = n(434404),
-  D = n(360606),
-  Z = n(946724),
+  Z = n(360606),
+  D = n(946724),
   k = n(999382),
   A = n(44550),
   W = n(853714),
@@ -67,8 +67,8 @@ var r = n(200651),
   ed = n(804153),
   eu = n(178387),
   em = n(993097),
-  ep = n(486358),
-  eg = n(942478),
+  eg = n(486358),
+  ep = n(942478),
   eh = n(890861),
   ef = n(708510),
   eb = n(237245),
@@ -131,8 +131,8 @@ let eT = {
         }),
         ariaLabel: eC.NW.string(eC.t["KzCF//"])
       },
-      eD = t.guild.hasFeature(e_.oNc.COMMUNITY) && t.canViewGuildAnalytics,
-      eZ = (null === (eT = t.guild.profile) || void 0 === eT ? void 0 : eT.badge) != null ? (0, u.ky)(t.guild.id, t.guild.profile.badge, eO.NC.SIZE_16) : null;
+      eZ = t.guild.hasFeature(e_.oNc.COMMUNITY) && t.canViewGuildAnalytics,
+      eD = (null === (eT = t.guild.profile) || void 0 === eT ? void 0 : eT.badge) != null ? (0, u.ky)(t.guild.id, t.guild.profile.badge, eO.NC.SIZE_16) : null;
     switch (e) {
       case e_.pNK.PROFILE:
         return {
@@ -147,15 +147,15 @@ let eT = {
         };
       case e_.pNK.ENGAGEMENT:
         return {
-          section: e_.pNK.ENGAGEMENT, impressionName: i.ImpressionNames.GUILD_SETTINGS_ENGAGEMENT, label: eC.NW.string(eC.t["6TAHb2"]), ariaLabel: eC.NW.string(eC.t["6TAHb2"]), element: ep.Z, notice: {
+          section: e_.pNK.ENGAGEMENT, impressionName: i.ImpressionNames.GUILD_SETTINGS_ENGAGEMENT, label: eC.NW.string(eC.t["6TAHb2"]), ariaLabel: eC.NW.string(eC.t["6TAHb2"]), element: eg.Z, notice: {
             stores: [k.Z],
-            element: eg.R
+            element: ep.R
           }
         };
       case e_.pNK.BOOST_PERKS:
         return {
           section: e_.pNK.BOOST_PERKS, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_PERKS, label: eC.NW.string(eC.t.UKgg5O), ariaLabel: eC.NW.string(eC.t.UKgg5O), element: eu.I, notice: {
-            stores: [k.Z],
+            stores: [k.Z, A.Z],
             element: em.C
           }
         };
@@ -173,7 +173,7 @@ let eT = {
       case e_.pNK.ROLES:
         return {
           section: e_.pNK.ROLES, impressionName: i.ImpressionNames.GUILD_SETTINGS_ROLES, label: eC.NW.string(eC.t.LPJmLy), element: B.Z, type: o.bT.MINIMAL, ariaLabel: eC.NW.string(eC.t.KXcECw), notice: {
-            stores: [Z.Z],
+            stores: [D.Z],
             element: B._
           }, predicate: () => t.canManageRoles
         };
@@ -219,7 +219,7 @@ let eT = {
       case e_.pNK.INTEGRATIONS:
         return {
           section: e_.pNK.INTEGRATIONS, impressionName: i.ImpressionNames.GUILD_SETTINGS_INTEGRATION, label: eC.NW.string(eC.t.CIsNZ2), ariaLabel: eC.NW.string(eC.t.CIsNZ2), element: Q.Z, notice: {
-            stores: [D.default, k.Z],
+            stores: [Z.default, k.Z],
             element: Q.j
           }, predicate: () => t.canManageGuild || t.canManageWebhooks || t.canUnlinkChannels
         };
@@ -275,8 +275,8 @@ let eT = {
           }, predicate() {
             var e;
             return null !== (e = t.canAccessClanSettings) && void 0 !== e && e
-          }, icon: null != eZ ? (0, r.jsx)(p.KQ, {
-            src: eZ
+          }, icon: null != eD ? (0, r.jsx)(g.KQ, {
+            src: eD
           }) : null
         };
       case e_.pNK.COMMUNITY:
@@ -304,7 +304,7 @@ let eT = {
         };
       case e_.pNK.ANALYTICS:
         return {
-          section: e_.pNK.ANALYTICS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: eC.NW.string(eC.t["0wWfUF"]), ariaLabel: eC.NW.string(eC.t["0wWfUF"]), element: z.Z, predicate: () => eD
+          section: e_.pNK.ANALYTICS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: eC.NW.string(eC.t["0wWfUF"]), ariaLabel: eC.NW.string(eC.t["0wWfUF"]), element: z.Z, predicate: () => eZ
         };
       case e_.pNK.DISCOVERY:
         return {
@@ -317,7 +317,7 @@ let eT = {
         return {
           section: e_.pNK.DISCOVERY_LANDING_PAGE, impressionName: i.ImpressionNames.GUILD_SETTINGS_DISCOVERY_LANDING_PAGE, label: (0, r.jsxs)("div", {
             className: eI.landingPageTabLink,
-            children: [eC.NW.string(eC.t.kGlQGB), " ", (0, r.jsx)(g.Z, {})]
+            children: [eC.NW.string(eC.t.kGlQGB), " ", (0, r.jsx)(p.Z, {})]
           }), ariaLabel: eC.NW.string(eC.t.kGlQGB), element: q.Z, notice: {
             stores: [k.Z],
             element: q.J

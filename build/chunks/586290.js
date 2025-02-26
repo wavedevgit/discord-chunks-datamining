@@ -1,6 +1,6 @@
 /** Chunk was on 79477 **/
 n.d(t, {
-  Z: () => v
+  Z: () => f
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -16,9 +16,9 @@ var r = n(200651),
   h = n(388032),
   g = n(414803),
   x = n(382840),
-  f = n(455812);
+  v = n(455812);
 
-function v(e) {
+function f(e) {
   let {
     selectedSource: t,
     onChangeVideoDeviceSource: n,
@@ -26,7 +26,7 @@ function v(e) {
   } = e;
   i()(null != t, "Camera capture device cannot be null");
   let a = (0, p.Z)(),
-    v = (0, d.Z)(),
+    f = (0, d.Z)(),
     [j, S] = l.useState(function(e, t, n) {
       if (null != t && null != n) {
         let r = t.find(t => t.id === e);
@@ -34,12 +34,12 @@ function v(e) {
         let l = o().reduce(n, (e, t) => (0, c.stringSimilarity)(r.name, t.name) > (0, c.stringSimilarity)(r.name, e.name) ? t : e);
         if (null != l) return l.id
       }
-    }(t.id, a, v));
+    }(t.id, a, f));
   return null != j && s(j), (0, r.jsxs)(u.xJW, {
     title: "Capture Device",
     className: x.modalContent,
     children: [(0, r.jsx)(u.xJW, {
-      className: f.marginTop8,
+      className: v.marginTop8,
       children: (0, r.jsxs)(m.Z, {
         children: [(0, r.jsx)("span", {
           className: g.ellipsisText,
@@ -53,15 +53,15 @@ function v(e) {
         })]
       })
     }), (0, r.jsx)(u.xJW, {
-      className: f.marginTop8,
+      className: v.marginTop8,
       title: h.NW.string(h.t.y4ooen),
       children: (0, r.jsx)(u.q4e, {
         value: j,
-        className: f.__invalid_marginaTop8,
+        className: v.__invalid_marginaTop8,
         onChange: e => {
           S(e), s(e)
         },
-        options: o().map(v, e => {
+        options: o().map(f, e => {
           let {
             id: t,
             name: n

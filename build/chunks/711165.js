@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   _: () => w
 }), n(230036), n(47120);
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(618857),
   y = n(695346),
   x = n(23750),
-  O = n(592125),
-  E = n(594174),
+  E = n(592125),
+  O = n(594174),
   j = n(823379),
   N = n(324081),
   C = n(240126),
@@ -134,7 +134,7 @@ function k(e) {
     scheduledMessages: t
   } = e, n = i.useMemo(() => t.reduce((e, t) => {
     var n, r;
-    let i = O.Z.getChannel(t.scheduledMessage.channelId);
+    let i = E.Z.getChannel(t.scheduledMessage.channelId);
     return null == i || (e[i.id] = {
       channel: i,
       scheduledMessages: [...null !== (r = null === (n = e[i.id]) || void 0 === n ? void 0 : n.scheduledMessages) && void 0 !== r ? r : [], t]
@@ -172,7 +172,7 @@ let R = i.memo(function(e) {
   } = e, l = new x.ZP({
     id: t.scheduledMessageId,
     content: t.scheduledMessage.content,
-    author: E.default.getUser(t.userId),
+    author: O.default.getUser(t.userId),
     timestamp: s()(t.sendAtTimestamp).toDate(),
     channel_id: t.scheduledMessage.channelId
   }), {

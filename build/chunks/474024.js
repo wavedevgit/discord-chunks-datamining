@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(323220),
   u = n(434404),
   m = n(981631),
-  p = n(388032),
-  g = n(985775);
+  g = n(388032),
+  p = n(985775);
 
 function h(e) {
   var t;
@@ -33,27 +33,27 @@ function h(e) {
     u.Z.setSection(m.pNK.ACCESS, m.KsC.ACCESS_DISCOVERABLE)
   }, []), N = null === (t = n.features) || void 0 === t ? void 0 : t.includes(m.oNc.DISCOVERABLE);
   return (0, r.jsxs)(l.hjN, {
-    className: g.twoColumnContainer,
+    className: p.twoColumnContainer,
     children: [(0, r.jsxs)("div", {
-      className: g.column,
+      className: p.column,
       children: [(0, r.jsx)(l.j7V, {
         onChange: x,
         value: !f,
         hideBorder: !0,
         disabled: N,
-        children: p.NW.string(p.t.fjHWen)
+        children: g.NW.string(g.t.fjHWen)
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: p.NW.string(p.t.J1YOV1)
+        children: g.NW.string(g.t.J1YOV1)
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: p.NW.string(p.t.YtCViY)
+        children: g.NW.string(g.t.YtCViY)
       }), N && (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: p.NW.format(p.t.R8jY9v, {
+        children: g.NW.format(g.t.R8jY9v, {
           accessLink: (e, t) => (0, r.jsx)(l.eee, {
             onClick: j,
             children: e
@@ -61,7 +61,7 @@ function h(e) {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: g.column,
+      className: p.column,
       children: (0, r.jsx)(d.Z, {
         guildId: h,
         name: n.name

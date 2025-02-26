@@ -1,9 +1,9 @@
-/** Chunk was on 53162 **/
-n.d(e, {
-  L: () => a
+/** Chunk was on 68051 **/
+n.d(t, {
+  L: () => i
 });
 var r = n(782568);
 
-function a(t) {
-  return (0, r.Z)(t)
+function i(e) {
+  return (0, r.Z)(e)
 }

@@ -1,8 +1,8 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => p,
-  j: () => g
+  Z: () => g,
+  j: () => p
 });
 var r = n(200651);
 n(192379);
@@ -16,7 +16,7 @@ var i = n(442837),
   u = n(821864),
   m = n(905753);
 
-function p(e) {
+function g(e) {
   let {
     refToScroller: t
   } = e, n = (0, i.e7)([d.Z], () => d.Z.getGuild()), {
@@ -25,8 +25,8 @@ function p(e) {
     integrations: o,
     editedIntegration: u,
     webhooks: m,
-    editedWebhook: p,
-    isFetching: g,
+    editedWebhook: g,
+    isFetching: p,
     errors: h
   } = (0, i.cj)([c.default], () => ({
     editedIntegration: c.default.editedIntegration,
@@ -45,15 +45,15 @@ function p(e) {
     integrations: o,
     webhooks: m,
     editedIntegration: u,
-    editedWebhook: p,
-    isFetchingWebhooks: g,
+    editedWebhook: g,
+    isFetchingWebhooks: p,
     hasChanges: c.default.hasChanges,
     errors: h,
     refToScroller: t
   })
 }
 
-function g() {
+function p() {
   let {
     guild: e,
     submitting: t

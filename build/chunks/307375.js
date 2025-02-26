@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(63063),
   u = n(384632),
   m = n(981631),
-  p = n(388032),
-  g = n(198874);
+  g = n(388032),
+  p = n(198874);
 
 function h(e) {
   let {
@@ -26,51 +26,51 @@ function h(e) {
       n = h && (t === u.A.DISCOVERABLE || f);
     return [{
       id: u.A.INVITE,
-      title: p.NW.string(p.t["HQVS/P"]),
-      body: p.NW.string(p.t.KzXzFR),
+      title: g.NW.string(g.t["HQVS/P"]),
+      body: g.NW.string(g.t.KzXzFR),
       icon: o.mBM,
       enabled: !e,
-      ineligibleText: p.NW.string(p.t.LIZgwM)
+      ineligibleText: g.NW.string(g.t.LIZgwM)
     }, {
       id: u.A.APPLY,
-      title: p.NW.string(p.t.LrFEYW),
-      body: p.NW.string(p.t.kJj2oK),
+      title: g.NW.string(g.t.LrFEYW),
+      body: g.NW.string(g.t.kJj2oK),
       icon: o._XJ,
       enabled: !e,
-      ineligibleText: p.NW.string(p.t.LIZgwM)
+      ineligibleText: g.NW.string(g.t.LIZgwM)
     }, {
       id: u.A.DISCOVERABLE,
-      title: p.NW.string(p.t.lhOHLy),
-      body: p.NW.string(p.t.pqQylZ),
+      title: g.NW.string(g.t.lhOHLy),
+      body: g.NW.string(g.t.pqQylZ),
       icon: o.enf,
       enabled: n,
-      ineligibleText: h ? p.NW.string(p.t.iBpXPj) : p.NW.string(p.t["5TQ+eH"])
+      ineligibleText: h ? g.NW.string(g.t.iBpXPj) : g.NW.string(g.t["5TQ+eH"])
     }]
   }, [t, h, f]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.X6q, {
       color: "header-primary",
       variant: "text-md/semibold",
-      children: p.NW.string(p.t["N+GnPz"])
+      children: g.NW.string(g.t["N+GnPz"])
     }), (0, r.jsx)(o.Text, {
       color: "text-secondary",
       variant: "text-sm/medium",
-      className: g.bodyText,
-      children: p.NW.format(p.t["Y/jYws"], {
+      className: p.bodyText,
+      children: g.NW.format(g.t["Y/jYws"], {
         helpdeskArticle: d.Z.getArticleURL(m.BhN.MEMBER_APPLICATIONS)
       })
     }), (0, r.jsx)(o.njP, {
       selectedItem: t,
       onItemSelect: n,
       orientation: "horizontal",
-      className: g.joinOptions,
+      className: p.joinOptions,
       children: b.map(e => {
         let n = e.id === t;
         return (0, r.jsx)(o.njP.Item, {
           id: e.id,
           selectedItem: t,
           disableItemStyles: !0,
-          className: g.joinOptionTab,
+          className: p.joinOptionTab,
           disabled: !e.enabled,
           "aria-label": e.title,
           children: (0, r.jsx)(o.DY3, {
@@ -79,12 +79,12 @@ function h(e) {
             shouldShow: !e.enabled,
             spacing: 16,
             hideOnClick: !1,
-            className: g.tooltipContainer,
-            tooltipClassName: g.tooltip,
+            className: p.tooltipContainer,
+            tooltipClassName: p.tooltip,
             children: (0, r.jsxs)("div", {
-              className: a()(g.joinOptionContent, {
-                [g.active]: n,
-                [g.uninteractive]: !e.enabled
+              className: a()(p.joinOptionContent, {
+                [p.active]: n,
+                [p.uninteractive]: !e.enabled
               }),
               children: [(0, r.jsx)(e.icon, {
                 size: "md",

@@ -34,29 +34,33 @@ let p = () => (0, o.jsx)(s.Z, {
       transitionState: n,
       onClose: s,
       onComplete: _,
-      isPreview: h = !1
-    } = e, x = (0, d.rb)(e => e.shouldShowWarning), C = (0, u.ng)(t, h), N = (0, l.Dt)();
+      inviteKey: h,
+      isPreview: x = !1
+    } = e, C = (0, d.rb)(e => e.shouldShowWarning), {
+      hasFetched: N,
+      verificationForm: g
+    } = (0, u.ng)(t, x, h), E = (0, l.Dt)();
     return (r.useEffect(() => {
-      C === c.t && s()
-    }, [s, C]), C === c.t) ? null : (0, o.jsxs)(o.Fragment, {
+      N && g === c.t && s()
+    }, [N, s, g]), g === c.t) ? null : (0, o.jsxs)(o.Fragment, {
       children: [(0, o.jsxs)(a.Y0X, {
         size: a.CgR.MEDIUM,
         className: b.container,
         transitionState: n,
-        "aria-labelledby": N,
+        "aria-labelledby": E,
         children: [(0, o.jsx)(a.olH, {
           onClick: () => s(!1),
           className: b.closeButton
         }), (0, o.jsx)(m.Z, {
-          verificationForm: C,
-          headerId: N,
+          verificationForm: g,
+          headerId: E,
           guildId: t,
           onClose: s,
           onComplete: _,
-          isPreview: h
+          isPreview: x
         })]
       }), (0, o.jsx)(i.W, {
-        children: !0 === x && (0, o.jsx)(a.oXn, {
+        children: !0 === C && (0, o.jsx)(a.oXn, {
           className: b.notice,
           children: (0, o.jsx)(p, {})
         })

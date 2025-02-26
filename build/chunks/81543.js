@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => f,
-  n: () => p
+  n: () => g
 });
 var r, i = n(200651),
   s = n(192379),
@@ -33,8 +33,8 @@ function m(e) {
   }
   return e
 }
-var p = ((r = {})[r.RIGHT = -1] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
-let g = {
+var g = ((r = {})[r.RIGHT = -1] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
+let p = {
   friction: 10,
   tension: 40,
   overshootClamping: !0
@@ -44,7 +44,7 @@ class h extends s.PureComponent {
     var t, n;
     null === (t = (n = this.props).onAnimationStart) || void 0 === t || t.call(n), this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
       toValue: 0
-    }, g)).start(() => {
+    }, p)).start(() => {
       var t, n;
       e(), null === (t = (n = this.props).onAnimationEnd) || void 0 === t || t.call(n)
     })
@@ -55,7 +55,7 @@ class h extends s.PureComponent {
   componentWillLeave(e) {
     o.Z.spring(this._animated, m({
       toValue: this.props.direction
-    }, g)).start(e)
+    }, p)).start(e)
   }
   getStyle() {
     return o.Z.accelerate({

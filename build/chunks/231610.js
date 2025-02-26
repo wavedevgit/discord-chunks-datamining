@@ -14,8 +14,8 @@ var i = n(481060),
   d = n(619326),
   u = n(553204),
   m = n(388032),
-  p = n(255180),
-  g = n(659138);
+  g = n(255180),
+  p = n(659138);
 
 function h() {
   let {
@@ -85,17 +85,17 @@ function h() {
     }), (0, r.jsx)(i.LZC, {
       size: 24
     }), (0, r.jsx)("div", {
-      className: p.__invalid_iconSection,
+      className: g.__invalid_iconSection,
       children: (0, r.jsxs)(i.hjN, {
         title: m.NW.string(m.t["zn8/AQ"]),
         disabled: N,
         children: [(0, r.jsx)(i.R94, {
           type: i.R94.Types.DESCRIPTION,
-          className: p.formDescription,
+          className: g.formDescription,
           disabled: N,
           children: m.NW.string(m.t.AqHUra)
         }), (0, r.jsxs)("div", {
-          className: g.iconUploaderContainer,
+          className: p.iconUploaderContainer,
           children: [(0, r.jsx)(u.Z, {
             role: x,
             "aria-label": m.NW.string(m.t.mD1oGB),
@@ -104,7 +104,7 @@ function h() {
           }), (0, r.jsx)(i.zxk, {
             look: i.zxk.Looks.OUTLINED,
             color: i.zxk.Colors.PRIMARY,
-            className: p.__invalid_imageUploadButtonCTA,
+            className: g.__invalid_imageUploadButtonCTA,
             onClick: j,
             disabled: N,
             children: m.NW.string(m.t.mD1oGB)
@@ -115,17 +115,17 @@ function h() {
       size: 24
     }), (0, r.jsx)(i.Rny, {
       children: (0, r.jsxs)("div", {
-        className: g.previewContainer,
+        className: p.previewContainer,
         "aria-hidden": !0,
         children: [(0, r.jsx)(c.Z, {
           guildId: t,
           role: x,
-          className: g.messageContainer,
+          className: p.messageContainer,
           theme: "light"
         }), (0, r.jsx)(c.Z, {
           guildId: t,
           role: x,
-          className: g.messageContainer,
+          className: p.messageContainer,
           theme: "dark"
         })]
       })

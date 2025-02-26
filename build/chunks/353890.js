@@ -14,8 +14,8 @@ var i = n(120356),
   d = n(637853),
   u = n(816436),
   m = n(259580),
-  p = n(889369),
-  g = n(838324),
+  g = n(889369),
+  p = n(838324),
   h = n(388032),
   f = n(13729);
 
@@ -23,12 +23,12 @@ function b(e) {
   let {
     guild: t,
     scrollToQuestions: n
-  } = e, i = (0, a.e7)([p.Z], () => p.Z.editedDefaultChannelIds), s = (0, u.b)(t.id, i).filter(e => e.isCategory() || (0, c.s)(e.guild_id, e.id));
+  } = e, i = (0, a.e7)([g.Z], () => g.Z.editedDefaultChannelIds), s = (0, u.b)(t.id, i).filter(e => e.isCategory() || (0, c.s)(e.guild_id, e.id));
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsx)("div", {
       className: f.header,
-      children: (0, r.jsx)(g.Z, {
+      children: (0, r.jsx)(p.Z, {
         guildId: t.id,
         scrollToQuestions: n
       })

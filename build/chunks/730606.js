@@ -72,10 +72,10 @@ function L(e) {
   } = e, [s, l] = i.useState(!1), c = i.useCallback(() => {
     l(e => !e)
   }, []);
-  return n ? (0, r.jsx)(d.a.Provider, {
+  return n ? (0, r.jsx)(d.aQ.Provider, {
     value: s,
-    children: (0, r.jsx)(d.Z, {
-      type: d.Z.Types.ATTACHMENT,
+    children: (0, r.jsx)(d.ZP, {
+      type: d.ZP.Types.ATTACHMENT,
       reason: g.wk.EXPLICIT_CONTENT,
       obscured: !0,
       isSingleMosaicItem: !0,

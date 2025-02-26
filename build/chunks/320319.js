@@ -75,9 +75,9 @@ let R = {
       forceShadow: x,
       cardType: C,
       confettiCanvas: O
-    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [W, L] = i.useState(!1), [B, M] = i.useState(!1), U = (0, b.yQ)(), V = (0, b.IB)(), [G, F] = i.useState(!1), [H, z] = i.useState((t === E.u.FREE_BOOST || t === E.u.TENURE_REWARD_COLLECTIBLE) && V && (null == U ? void 0 : U.nitroTenureStatus) === v.EB.REDEEMABLE);
+    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [W, L] = i.useState(!1), [B, M] = i.useState(!1), U = (0, b.Er)(), V = (0, b.IB)(), [G, F] = i.useState(!1), [H, z] = i.useState(t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === v.EB.REDEEMABLE);
     i.useEffect(() => {
-      (t === E.u.FREE_BOOST || t === E.u.TENURE_REWARD_COLLECTIBLE) && V && (null == U ? void 0 : U.nitroTenureStatus) === v.EB.REDEEMABLE && z(!0)
+      t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === v.EB.REDEEMABLE && z(!0)
     }, [V, t, U]);
     let Y = i.useCallback(() => {
         F(!0)
@@ -98,7 +98,7 @@ let R = {
     } = (0, _.Z)(5), en = (0, l.debounce)(() => {
       f.default.track(S.rMx.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
         card_type: (0, l.snakeCase)(t),
-        is_tenure_reward: t === E.u.FREE_BOOST || t === E.u.TENURE_REWARD_COLLECTIBLE,
+        is_tenure_reward: t === E.u.TENURE_REWARD_COLLECTIBLE,
         reward_status: null == U ? void 0 : U.nitroTenureStatus
       })
     }, 800), er = (0, l.debounce)(() => {
@@ -130,7 +130,7 @@ let R = {
         reward_status: null == U ? void 0 : U.nitroTenureStatus
       }
     }, {
-      disableTrack: t !== E.u.FREE_BOOST && t !== E.u.TENURE_REWARD_COLLECTIBLE || null == U
+      disableTrack: t !== E.u.TENURE_REWARD_COLLECTIBLE || null == U
     }), (0, g.Z)({
       type: o.ImpressionTypes.VIEW,
       name: o.ImpressionNames.PERK_DISCOVERABILITY_CARD,
@@ -172,7 +172,7 @@ let R = {
         [y.reducedMotion]: k
       }),
       children: [(0, r.jsx)(Z, P(A({}, e), {
-        ref: t === E.u.FREE_BOOST || t === E.u.TENURE_REWARD_COLLECTIBLE ? ei : void 0
+        ref: t === E.u.TENURE_REWARD_COLLECTIBLE ? ei : void 0
       })), H && (0, r.jsx)(N.Z, {
         speedValues: R,
         numBursts: 3,

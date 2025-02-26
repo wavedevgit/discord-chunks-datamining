@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(481060),
   u = n(239091),
   m = n(749210),
-  p = n(479531),
-  g = n(110924),
+  g = n(479531),
+  p = n(110924),
   h = n(410030),
   f = n(367907),
   b = n(906732),
@@ -34,7 +34,7 @@ var r = n(200651),
   w = n(388032),
   R = n(81250);
 
-function D(e, t, n) {
+function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -43,14 +43,14 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Z(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      Z(e, t, n[t])
     })
   }
   return e
@@ -78,20 +78,20 @@ function A(e) {
     ban: l,
     hideDiscriminator: o,
     onClose: c
-  } = e, [u, g] = i.useState(!1), [h, j] = i.useState(null), {
+  } = e, [u, p] = i.useState(!1), [h, j] = i.useState(null), {
     analyticsLocations: N
   } = (0, b.ZP)(), v = null !== (t = null == N ? void 0 : N[0]) && void 0 !== t ? t : null;
   async function _() {
     if (null != s) {
-      j(null), g(!0);
+      j(null), p(!0);
       try {
-        await m.Z.unbanUser(s.id, a.id), c(), O.default.track(P.rMx.GUILD_BAN_REMOVED, k(Z({}, (0, f.hH)(s.id)), {
+        await m.Z.unbanUser(s.id, a.id), c(), O.default.track(P.rMx.GUILD_BAN_REMOVED, k(D({}, (0, f.hH)(s.id)), {
           target_user_id: a.id,
           reason: l.reason,
           location: v
         }))
       } catch (e) {
-        j(new p.Z(e)), g(!1)
+        j(new g.Z(e)), p(!1)
       }
     }
   }
@@ -176,25 +176,25 @@ class W extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), D(this, "handleShowModal", () => {
+    super(...e), Z(this, "handleShowModal", () => {
       let {
         guild: e,
         user: t,
         hideDiscriminator: n,
         ban: i
       } = this.props;
-      (0, d.h7j)(s => (0, r.jsx)(A, k(Z({}, s), {
+      (0, d.h7j)(s => (0, r.jsx)(A, k(D({}, s), {
         guild: e,
         user: t,
         ban: i,
         hideDiscriminator: n
       })))
-    }), D(this, "handleContextMenu", e => {
+    }), Z(this, "handleContextMenu", e => {
       (0, u.jW)(e, async () => {
         let {
           default: e
         } = await n.e("23835").then(n.bind(n, 768079));
-        return t => (0, r.jsx)(e, k(Z({}, t), {
+        return t => (0, r.jsx)(e, k(D({}, t), {
           user: this.props.user
         }))
       })
@@ -245,9 +245,9 @@ function M(e) {
     I.Z.setSection(P.pNK.SAFETY), (0, S.K)(T.u.DM_AND_SPAM_PROTECTION)
   }, []), u = i.useCallback(e => {
     a(e), 0 === e.trim().length && I.Z.setSearchQuery(e)
-  }, []), p = i.useCallback(() => {
+  }, []), g = i.useCallback(() => {
     a(""), I.Z.setSearchQuery("")
-  }, []), g = i.useCallback(async () => {
+  }, []), p = i.useCallback(async () => {
     if (0 === s.trim().length) {
       I.Z.setSearchQuery(s), o(!1);
       return
@@ -260,8 +260,8 @@ function M(e) {
       o(!1)
     }
   }, [t, l, s]), h = i.useCallback(e => {
-    "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), g())
-  }, [g]);
+    "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), p())
+  }, [p]);
   return (0, r.jsxs)(d.hjN, {
     tag: d.RB0.H1,
     title: w.NW.string(w.t["7OY0gI"]),
@@ -283,12 +283,12 @@ function M(e) {
         "aria-label": w.NW.string(w.t.MiqUmZ),
         onChange: u,
         onKeyDown: h,
-        onClear: p,
+        onClear: g,
         size: d.E1j.Sizes.MEDIUM,
         isLoading: l
       }), (0, r.jsx)(d.zxk, {
         color: d.zxk.Colors.BRAND,
-        onClick: g,
+        onClick: p,
         size: d.zxk.Sizes.SMALL,
         disabled: l,
         submitting: l,
@@ -304,7 +304,7 @@ function G() {
   let {
     guild: s,
     searchQuery: u
-  } = (0, c.e7)([E.Z], () => E.Z.getProps(), [], l.isEqual), p = null != u && u.trim().length > 0, f = (0, g.Z)(p), b = p !== f, [x] = (0, c.e7)([E.Z], () => E.Z.getBans(), [], y.Q), j = null !== (e = null == x ? void 0 : x.size) && void 0 !== e ? e : 0, v = (0, h.ZP)(), O = null !== (t = null == s ? void 0 : s.id) && void 0 !== t ? t : P.lds, C = i.useRef(null), I = i.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+  } = (0, c.e7)([E.Z], () => E.Z.getProps(), [], l.isEqual), g = null != u && u.trim().length > 0, f = (0, p.Z)(g), b = g !== f, [x] = (0, c.e7)([E.Z], () => E.Z.getBans(), [], y.Q), j = null !== (e = null == x ? void 0 : x.size) && void 0 !== e ? e : 0, v = (0, h.ZP)(), O = null !== (t = null == s ? void 0 : s.id) && void 0 !== t ? t : P.lds, C = i.useRef(null), I = i.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
     if (null == t || 0 === e.trim().length) return !1;
     let [
       [n], r
@@ -318,12 +318,12 @@ function G() {
       null != e && I(t)(e) && r.push(e)
     }
     return r
-  }, [I]), T = i.useMemo(() => S(x, u, j), [x, S, u, j]), D = null != x, A = T.length % 1e3 == 0 && T.length > 0 && D, W = 0 === T.length, [G, U] = i.useState({
+  }, [I]), T = i.useMemo(() => S(x, u, j), [x, S, u, j]), Z = null != x, A = T.length % 1e3 == 0 && T.length > 0 && Z, W = 0 === T.length, [G, U] = i.useState({
     currentPage: 1,
     pageSize: 100
   });
   i.useEffect(() => {
-    b && 1 !== G.currentPage && U(e => k(Z({}, e), {
+    b && 1 !== G.currentPage && U(e => k(D({}, e), {
       currentPage: 1
     }))
   }, [b, G.currentPage]);
@@ -333,10 +333,10 @@ function G() {
     F = i.useMemo(() => o().chunk(T, G.pageSize), [G.pageSize, T]),
     z = i.useCallback(e => {
       var t, n, r;
-      null === (t = C.current) || void 0 === t || t.scrollToSectionTop(0), (e + 1) * G.pageSize > T.length && A && !p && (H.current = null !== (r = null === (n = T[T.length - 1]) || void 0 === n ? void 0 : n.id) && void 0 !== r ? r : null, B(H.current)), (null != F[e - 1] || A) && U(t => k(Z({}, t), {
+      null === (t = C.current) || void 0 === t || t.scrollToSectionTop(0), (e + 1) * G.pageSize > T.length && A && !g && (H.current = null !== (r = null === (n = T[T.length - 1]) || void 0 === n ? void 0 : n.id) && void 0 !== r ? r : null, B(H.current)), (null != F[e - 1] || A) && U(t => k(D({}, t), {
         currentPage: e
       }))
-    }, [G.pageSize, T, A, F, B, p]),
+    }, [G.pageSize, T, A, F, B, g]),
     H = i.useRef(null);
   i.useEffect(() => {
     B(H.current)

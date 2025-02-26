@@ -70,7 +70,7 @@ function m(e) {
   return void 0 !== m && m && (C = _.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
     children: [null === (p = null == T ? void 0 : null === (s = T.options) || void 0 === s ? void 0 : s.renderHeader) || void 0 === p || p ? h : null, T.renderStep(E), null == v || N ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
-        className: a()(A, _.body, {
+        className: a()(A, _.body, _.noRoundedCorners, {
           [_.reviewStep]: v === f.h8.REVIEW
         }),
         children: (0, r.jsx)(u.MyZ, {

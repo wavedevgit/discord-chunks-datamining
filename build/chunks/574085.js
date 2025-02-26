@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(47120), n(266796), n(653041);
 var r = n(200651);
 n(192379);
@@ -33,7 +33,7 @@ function m(e) {
   return e
 }
 
-function p(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,11 +46,11 @@ function p(e, t) {
   }), e
 }
 
-function g() {
+function p() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, a.N)(), [n, g] = l.R7(e);
+  } = (0, a.N)(), [n, p] = l.R7(e);
 
   function h(e, t) {
     let {
@@ -66,34 +66,34 @@ function g() {
       ref_type: d.Qs.INTANGIBLE,
       ref_id: void 0
     };
-    null != t ? l[t] = o : l.push(o), g(l)
+    null != t ? l[t] = o : l.push(o), p(l)
   }
   let f = (0, s.mY)();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.p, {
       benefits: n,
       onEdit: function(e) {
-        (0, i.h7j)(i => (0, r.jsx)(o.DI, p(m({}, i), {
+        (0, i.h7j)(i => (0, r.jsx)(o.DI, g(m({}, i), {
           guildId: t,
           initialData: n[e],
           onSave: t => h(t, e),
           onDelete: () => (function(e) {
             let t = [...n];
-            t.splice(e, 1), g(t)
+            t.splice(e, 1), p(t)
           })(e)
         })))
       },
       onMove: function(e, t) {
         let r = [...n],
           [i] = r.splice(e, 1);
-        r.splice(t, 0, i), g(r)
+        r.splice(t, 0, i), p(r)
       },
       guildId: t
     }), n.length > 0 ? (0, r.jsx)(i.LZC, {
       size: 8
     }) : null, (0, r.jsx)(c.s, {
       onClick: function() {
-        (0, i.h7j)(e => (0, r.jsx)(o.DI, p(m({}, e), {
+        (0, i.h7j)(e => (0, r.jsx)(o.DI, g(m({}, e), {
           guildId: t,
           onSave: e => h(e)
         })))

@@ -50,8 +50,8 @@ function b(e) {
       reducedSizeAltTextButton: !0
     })
   };
-  return r ? (0, n.jsx)(i.Z, {
-    type: i.Z.Types.ATTACHMENT,
+  return r ? (0, n.jsx)(i.ZP, {
+    type: i.ZP.Types.ATTACHMENT,
     reason: o.wk.SPOILER,
     obscured: y,
     onToggleObscurity: () => m(e => !e),

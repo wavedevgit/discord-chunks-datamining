@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(863249),
   u = n(246364),
   m = n(983736),
-  p = n(571728),
-  g = n(699553),
+  g = n(571728),
+  p = n(699553),
   h = n(434404),
   f = n(999382),
   b = n(654351),
@@ -66,13 +66,13 @@ function I(e) {
     settingsGuild: I,
     settingsMetadata: E,
     settingsProfile: S
-  } = e, T = I.id, [P, w] = i.useState(!1), [R, D] = i.useState(null), Z = I.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), k = null !== (t = (0, p.A)({
+  } = e, T = I.id, [P, w] = i.useState(!1), [R, Z] = i.useState(null), D = I.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), k = null !== (t = (0, g.A)({
     guildId: I.id
   })) && void 0 !== t ? t : 0, A = i.useCallback(() => {
-    D(null), h.Z.init(T, v.pNK.ACCESS)
+    Z(null), h.Z.init(T, v.pNK.ACCESS)
   }, [T]), W = i.useCallback(async e => {
     try {
-      w(!0), await e(), D(null)
+      w(!0), await e(), Z(null)
     } finally {
       w(!1)
     }
@@ -82,7 +82,7 @@ function I(e) {
         throwErr: !0
       })
     } catch (e) {
-      throw "object" == typeof e && "message" in e ? D(e.message) : D(O.NW.formatToPlainString(O.t.aTVNen, {
+      throw "object" == typeof e && "message" in e ? Z(e.message) : Z(O.NW.formatToPlainString(O.t.aTVNen, {
         statusPageURL: v.yXt.STATUS
       })), e
     }
@@ -90,7 +90,7 @@ function I(e) {
     try {
       await d.ZP.updateVerificationForm(T, e, t)
     } catch (e) {
-      throw D(new o.Hx(e).getAnyErrorMessage()), e
+      throw Z(new o.Hx(e).getAnyErrorMessage()), e
     }
   }, [T]), G = i.useCallback(async (e, t) => {
     let n = t.length > 0 ? [{
@@ -127,7 +127,7 @@ function I(e) {
             features: e
           })
         }
-        f.verificationDirty && await M([...e], !0), f.profileDirty && null != S && await (0, g.pV)(I.id, {
+        f.verificationDirty && await M([...e], !0), f.profileDirty && null != S && await (0, p.pV)(I.id, {
           visibility: S.visibility
         })
       })
@@ -151,7 +151,7 @@ function I(e) {
               guildId: I.id
             }, E))
           } catch (e) {
-            throw D(new o.Hx(e).getAnyErrorMessage()), e
+            throw Z(new o.Hx(e).getAnyErrorMessage()), e
           }
         }
       })
@@ -173,7 +173,7 @@ function I(e) {
         e()
       },
       t = e => {
-        if (Z && k > 0 && s.joinType !== j.A.APPLY) {
+        if (D && k > 0 && s.joinType !== j.A.APPLY) {
           (0, a.ZDy)(async () => {
             let {
               default: t
@@ -195,20 +195,20 @@ function I(e) {
           termRules: t = []
         } = s;
         if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) {
-          D(O.NW.string(O.t.TCHkcX));
+          Z(O.NW.string(O.t.TCHkcX));
           return
         }
       }
       if (s.joinType === j.A.APPLY) {
         var t;
         if (!(null === (t = s.pendingVerificationFields) || void 0 === t ? void 0 : t.some(e => (0, m._C)(e)))) {
-          D(O.NW.string(O.t.HGVrIy));
+          Z(O.NW.string(O.t.HGVrIy));
           return
         }
       }
       e()
     })(() => t(() => e(U)))
-  }, [Z, U, s, T, k]), F = s.joinType === j.A.DISCOVERABLE && s.settingsView === N.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== _.o3 && E.keywords.length > 0;
+  }, [D, U, s, T, k]), F = s.joinType === j.A.DISCOVERABLE && s.settingsView === N.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== _.o3 && E.keywords.length > 0;
   return (0, r.jsx)(l.Z, {
     message: F ? O.NW.string(O.t.V2G2Ym) : void 0,
     onSaveText: F ? O.NW.string(O.t["qjtt/v"]) : void 0,

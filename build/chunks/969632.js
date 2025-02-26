@@ -34,31 +34,31 @@ function u(e) {
 let m = {
     enabled: !1
   },
-  p = null,
-  g = Object.assign({}, m),
+  g = null,
+  p = Object.assign({}, m),
   h = !1,
   f = {};
 
 function b() {
-  p = null, g = Object.assign({}, m), h = !1, p = c.Z.getGuildId(), g = s().cloneDeep(Object.assign({}, o.Z.getSettings(p)))
+  g = null, p = Object.assign({}, m), h = !1, g = c.Z.getGuildId(), p = s().cloneDeep(Object.assign({}, o.Z.getSettings(g)))
 }
 
 function x(e, t) {
-  if (null == g.newMemberActions) return !1;
-  let n = g.newMemberActions.findIndex(t => t.channelId === e);
+  if (null == p.newMemberActions) return !1;
+  let n = p.newMemberActions.findIndex(t => t.channelId === e);
   if (n < 0) return !1;
-  g.newMemberActions[n] = u({}, t), g.newMemberActions = [...g.newMemberActions]
+  p.newMemberActions[n] = u({}, t), p.newMemberActions = [...p.newMemberActions]
 }
 
 function j(e, t) {
-  if (null == g.resourceChannels) return !1;
-  let n = g.resourceChannels.findIndex(t => t.channelId === e);
+  if (null == p.resourceChannels) return !1;
+  let n = p.resourceChannels.findIndex(t => t.channelId === e);
   if (n < 0) return !1;
-  g.resourceChannels[n] = u({}, t), g.resourceChannels = [...g.resourceChannels]
+  p.resourceChannels[n] = u({}, t), p.resourceChannels = [...p.resourceChannels]
 }
 
 function N() {
-  h = !1, g = s().cloneDeep(Object.assign({}, o.Z.getSettings(p)))
+  h = !1, p = s().cloneDeep(Object.assign({}, o.Z.getSettings(g)))
 }
 class v extends(r = a.ZP.PersistedStore) {
   initialize(e) {
@@ -70,10 +70,10 @@ class v extends(r = a.ZP.PersistedStore) {
     }
   }
   getSettings() {
-    return null != g ? g : m
+    return null != p ? p : m
   }
   hasChanges() {
-    return null != p && !s().isEqual(s().omit(g, "newMemberActions"), s().omit(o.Z.getSettings(p), "newMemberActions"))
+    return null != g && !s().isEqual(s().omit(p, "newMemberActions"), s().omit(o.Z.getSettings(g), "newMemberActions"))
   }
   getSubmitting() {
     return h
@@ -85,13 +85,13 @@ class v extends(r = a.ZP.PersistedStore) {
   getResourceChannel(e) {
     var t;
     if (null == e) return null;
-    let n = null === (t = g.resourceChannels) || void 0 === t ? void 0 : t.find(t => t.channelId === e);
+    let n = null === (t = p.resourceChannels) || void 0 === t ? void 0 : t.find(t => t.channelId === e);
     return null == n ? null : n
   }
   getNewMemberAction(e) {
     var t;
     if (null == e) return null;
-    let n = null === (t = g.newMemberActions) || void 0 === t ? void 0 : t.find(t => t.channelId === e);
+    let n = null === (t = p.newMemberActions) || void 0 === t ? void 0 : t.find(t => t.channelId === e);
     return null == n ? null : n
   }
 }
@@ -101,7 +101,7 @@ let _ = new v(l.Z, {
   GUILD_SETTINGS_SET_SECTION: b,
   GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET: b,
   GUILD_HOME_SETTINGS_FETCH_SUCCESS: function() {
-    g = s().cloneDeep(Object.assign({}, o.Z.getSettings(p)))
+    p = s().cloneDeep(Object.assign({}, o.Z.getSettings(g)))
   },
   GUILD_HOME_SETTINGS_UPDATE_START: function() {
     h = !0
@@ -124,12 +124,12 @@ let _ = new v(l.Z, {
     let {
       welcomeMessage: t
     } = e;
-    if (null == t) g.welcomeMessage = void 0;
+    if (null == t) p.welcomeMessage = void 0;
     else {
       var n, r, i, s, a, l;
-      g.welcomeMessage = {
-        authorIds: null !== (s = null !== (i = t.authorIds) && void 0 !== i ? i : null === (n = g.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) && void 0 !== s ? s : [],
-        message: null !== (l = null !== (a = t.message) && void 0 !== a ? a : null === (r = g.welcomeMessage) || void 0 === r ? void 0 : r.message) && void 0 !== l ? l : ""
+      p.welcomeMessage = {
+        authorIds: null !== (s = null !== (i = t.authorIds) && void 0 !== i ? i : null === (n = p.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) && void 0 !== s ? s : [],
+        message: null !== (l = null !== (a = t.message) && void 0 !== a ? a : null === (r = p.welcomeMessage) || void 0 === r ? void 0 : r.message) && void 0 !== l ? l : ""
       }
     }
   },
@@ -145,20 +145,20 @@ let _ = new v(l.Z, {
     let {
       action: n
     } = e;
-    g.newMemberActions = null !== (t = g.newMemberActions) && void 0 !== t ? t : [], g.newMemberActions = [...g.newMemberActions, n]
+    p.newMemberActions = null !== (t = p.newMemberActions) && void 0 !== t ? t : [], p.newMemberActions = [...p.newMemberActions, n]
   },
   GUILD_SETTINGS_ONBOARDING_DELETE_NEW_MEMBER_ACTION: function(e) {
     let {
       channelId: t
     } = e;
-    if (null == g.newMemberActions) return !1;
-    g.newMemberActions = [...g.newMemberActions.filter(e => e.channelId !== t)]
+    if (null == p.newMemberActions) return !1;
+    p.newMemberActions = [...p.newMemberActions.filter(e => e.channelId !== t)]
   },
   GUILD_SETTINGS_ONBOARDING_REORDER_NEW_MEMBER_ACTION: function(e) {
     let {
       actions: t
     } = e;
-    g.newMemberActions = t
+    p.newMemberActions = t
   },
   GUILD_SETTINGS_ONBOARDING_UPDATE_RESOURCE_CHANNEL: function(e) {
     let {
@@ -172,20 +172,20 @@ let _ = new v(l.Z, {
     let {
       resourceChannel: n
     } = e;
-    g.resourceChannels = (null !== (t = g.resourceChannels) && void 0 !== t ? t : []).filter(e => e.channelId !== n.channelId), g.resourceChannels = [...g.resourceChannels, n]
+    p.resourceChannels = (null !== (t = p.resourceChannels) && void 0 !== t ? t : []).filter(e => e.channelId !== n.channelId), p.resourceChannels = [...p.resourceChannels, n]
   },
   GUILD_SETTINGS_ONBOARDING_DELETE_RESOURCE_CHANNEL: function(e) {
     let {
       resourceChannelId: t
     } = e;
-    if (null == g.resourceChannels) return !1;
-    g.resourceChannels = [...g.resourceChannels.filter(e => e.channelId !== t)]
+    if (null == p.resourceChannels) return !1;
+    p.resourceChannels = [...p.resourceChannels.filter(e => e.channelId !== t)]
   },
   GUILD_SETTINGS_ONBOARDING_REORDER_RESOURCE_CHANNEL: function(e) {
     let {
       resourceChannels: t
     } = e;
-    g.resourceChannels = t
+    p.resourceChannels = t
   },
   GUILD_SETTINGS_ONBOARDING_DISMISS_RESOURCE_CHANNEL_SUGGESTION: function(e) {
     var t;

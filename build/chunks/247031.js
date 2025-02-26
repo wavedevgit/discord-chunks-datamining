@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(239091),
   u = n(749210),
   m = n(493544),
-  p = n(479531),
-  g = n(118012),
+  g = n(479531),
+  p = n(118012),
   h = n(210887),
   f = n(246946),
   b = n(594174),
@@ -54,7 +54,7 @@ function R(e) {
   return e
 }
 
-function D(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,7 +67,7 @@ function D(e, t) {
   }), e
 }
 
-function Z(e) {
+function D(e) {
   let {
     transitionState: t,
     guild: n,
@@ -82,7 +82,7 @@ function Z(e) {
       try {
         await u.Z.unbanUser(n.id, s.id), o()
       } catch (e) {
-        f(new p.Z(e)), m(!1)
+        f(new g.Z(e)), m(!1)
       }
     }
   }
@@ -92,15 +92,15 @@ function Z(e) {
     children: [(0, r.jsxs)(c.xBx, {
       className: T.header,
       separator: !1,
-      children: [(0, r.jsx)(g.Z, {
-        size: g.Z.Sizes.SIZE_24,
+      children: [(0, r.jsx)(p.Z, {
+        size: p.Z.Sizes.SIZE_24,
         className: T.userUsername,
         children: N.ZP.getUserTag(s, {
           mode: "username",
           identifiable: l ? "never" : "always"
         })
-      }), l || s.isPomelo() ? null : (0, r.jsxs)(g.Z, {
-        size: g.Z.Sizes.SIZE_24,
+      }), l || s.isPomelo() ? null : (0, r.jsxs)(p.Z, {
+        size: p.Z.Sizes.SIZE_24,
         className: T.userDiscrim,
         children: ["#", s.discriminator]
       })]
@@ -170,7 +170,7 @@ class k extends i.PureComponent {
         hideDiscriminator: n,
         ban: i
       } = this.props;
-      (0, c.h7j)(s => (0, r.jsx)(Z, D(R({}, s), {
+      (0, c.h7j)(s => (0, r.jsx)(D, Z(R({}, s), {
         guild: e,
         user: t,
         ban: i,
@@ -181,7 +181,7 @@ class k extends i.PureComponent {
         let {
           default: e
         } = await n.e("23835").then(n.bind(n, 768079));
-        return t => (0, r.jsx)(e, D(R({}, t), {
+        return t => (0, r.jsx)(e, Z(R({}, t), {
           user: this.props.user
         }))
       })

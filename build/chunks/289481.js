@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => N
 }), n(47120);
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(305248),
   y = n(520116),
   x = n(981631),
-  O = n(388032),
-  E = n(990991);
+  E = n(388032),
+  O = n(990991);
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -104,7 +104,7 @@ let N = i.memo(function(e) {
       (0, f.uL)(x.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
     };
     return (0, r.jsx)("div", {
-      className: E.channel,
+      className: O.channel,
       children: (0, r.jsx)(c.y5t, {
         component: (0, r.jsxs)(b.Z, {
           channel: l,
@@ -137,8 +137,8 @@ function I(e) {
     getNumUnreadChannels: a
   } = e, o = (0, m.Z)() && null != t.guildId;
   return (0, r.jsx)(c.M0o, {
-    className: E.markReadButton,
-    tooltip: o ? O.NW.string(O.t["5lLMhI"]) : O.NW.string(O.t.e6RscX),
+    className: O.markReadButton,
+    tooltip: o ? E.NW.string(E.t["5lLMhI"]) : E.NW.string(E.t.e6RscX),
     color: c.YX$.TERTIARY,
     icon: o ? (0, r.jsx)(c.W6s, {
       size: "xs",
@@ -174,12 +174,12 @@ function S(e) {
     })
   }
   return (0, r.jsx)(c.ua7, {
-    text: O.NW.string(O.t.iTcumZ),
+    text: E.NW.string(E.t.iTcumZ),
     children: e => {
       var n, i;
       return (0, r.jsx)(c.P3F, (n = j({}, e), i = i = {
-        className: o()(E.collapseButton, {
-          [E.collapsed]: t.collapsed
+        className: o()(O.collapseButton, {
+          [O.collapsed]: t.collapsed
         }),
         onClick: a,
         children: (0, r.jsx)(g.Z, {

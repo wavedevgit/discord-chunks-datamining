@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(823379),
   u = n(999382),
   m = n(413584),
-  p = n(388032),
-  g = n(412142),
+  g = n(388032),
+  p = n(412142),
   h = n(174361);
 let f = e => {
     let {
@@ -22,47 +22,47 @@ let f = e => {
       setShowCreateModal: i
     } = e, s = [{
       emoji: "\uD83D\uDCAC",
-      description: p.NW.string(p.t["s/ent7"]),
-      name: p.NW.string(p.t["v/gQ4e"])
+      description: g.NW.string(g.t["s/ent7"]),
+      name: g.NW.string(g.t["v/gQ4e"])
     }, {
       emoji: "\uD83C\uDFF9",
-      description: p.NW.string(p.t.Y9So0N),
-      name: p.NW.string(p.t["7mUf0d"])
+      description: g.NW.string(g.t.Y9So0N),
+      name: g.NW.string(g.t["7mUf0d"])
     }, {
       emoji: "\uD83D\uDDDE",
-      description: p.NW.string(p.t.wsJcws),
-      name: p.NW.string(p.t.vrGLjo)
+      description: g.NW.string(g.t.wsJcws),
+      name: g.NW.string(g.t.vrGLjo)
     }];
     return (0, r.jsxs)(a.hjN, {
-      title: p.NW.string(p.t["2rkmDg"]),
+      title: g.NW.string(g.t["2rkmDg"]),
       tag: "h1",
       children: [(0, r.jsxs)("div", {
-        className: g.welcomeDescription,
+        className: p.welcomeDescription,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          children: p.NW.format(p.t.a59UeH, {})
+          children: g.NW.format(g.t.a59UeH, {})
         }), (0, r.jsx)(a.zxk, {
           onClick: () => {
             i(!0), t(2)
           },
-          children: p.NW.string(p.t.RWdjPz)
+          children: g.NW.string(g.t.RWdjPz)
         })]
       }), (0, r.jsxs)("div", {
-        className: g.exampleContainer,
+        className: p.exampleContainer,
         children: [(0, r.jsxs)("div", {
-          className: g.exampleWumpus,
+          className: p.exampleWumpus,
           children: [(0, r.jsx)("img", {
-            className: g.wumpus,
+            className: p.wumpus,
             alt: "",
             src: n(663346)
           }), (0, r.jsx)("div", {
-            className: g.tooltipPointer
+            className: p.tooltipPointer
           }), (0, r.jsx)("div", {
-            className: g.tooltip,
-            children: p.NW.string(p.t.aHNFSE)
+            className: p.tooltip,
+            children: g.NW.string(g.t.aHNFSE)
           })]
         }), (0, r.jsxs)("div", {
-          className: g.exampleModal,
+          className: p.exampleModal,
           children: [(0, r.jsx)("img", {
             alt: "",
             className: h.guildIcon,
@@ -71,20 +71,20 @@ let f = e => {
             height: 64
           }), (0, r.jsx)(a.X6q, {
             variant: "heading-xl/semibold",
-            className: g.header,
-            children: p.NW.format(p.t["5NJlXl"], {})
+            className: p.header,
+            children: g.NW.format(g.t["5NJlXl"], {})
           }), (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
             className: h.guildDescription,
-            children: p.NW.string(p.t.Xvsuk5)
+            children: g.NW.string(g.t.Xvsuk5)
           }), (0, r.jsx)(a.vwX, {
             className: h.choiceHeader,
-            children: p.NW.string(p.t["haj5+v"])
+            children: g.NW.string(g.t["haj5+v"])
           }), (0, r.jsx)("div", {
             className: h.options,
             children: s.map(e => (0, r.jsxs)("div", {
-              className: g.optionContainer,
+              className: p.optionContainer,
               children: [(0, r.jsx)(o.Z, {
                 emojiName: e.emoji,
                 className: h.optionEmoji
@@ -109,7 +109,7 @@ let f = e => {
   b = () => {
     let {
       guild: e
-    } = (0, s.e7)([u.Z], () => u.Z.getProps()), [t, n] = i.useState(0), [o, p] = i.useState(!1);
+    } = (0, s.e7)([u.Z], () => u.Z.getProps()), [t, n] = i.useState(0), [o, g] = i.useState(!1);
     switch (i.useEffect(() => {
         null != e && l.Z.wait(() => {
           (0, c.RM)(e.id).then(e => {
@@ -124,7 +124,7 @@ let f = e => {
       case 1:
         return (0, r.jsx)(f, {
           setWelcomeView: n,
-          setShowCreateModal: p
+          setShowCreateModal: g
         });
       case 2:
         return (0, r.jsx)(m.Z, {

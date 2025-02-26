@@ -6,8 +6,8 @@ n.d(t, {
   S1: () => l,
   TY: () => c,
   Uv: () => d,
-  _l: () => p,
-  d_: () => g,
+  _l: () => g,
+  d_: () => p,
   lO: () => o,
   sI: () => a,
   we: () => m
@@ -70,7 +70,7 @@ function m(e, t, n) {
   })
 }
 
-function p(e, t, n) {
+function g(e, t, n) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_ROLE_ICON",
     id: e,
@@ -79,7 +79,7 @@ function p(e, t, n) {
   })
 }
 
-function g(e, t) {
+function p(e, t) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_ROLE_CONNECTION_CONFIGURATIONS",
     roleId: e,

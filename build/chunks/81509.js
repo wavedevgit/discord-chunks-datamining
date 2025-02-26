@@ -14,8 +14,8 @@ var i = n(120356),
   d = n(565138),
   u = n(601964),
   m = n(526717),
-  p = n(594278),
-  g = n(549631),
+  g = n(594278),
+  p = n(549631),
   h = n(388032),
   f = n(605149);
 
@@ -34,7 +34,7 @@ function b(e) {
       })
     }), (0, r.jsxs)("div", {
       className: f.subscriberCountText,
-      children: [(0, r.jsx)(g.Z, {
+      children: [(0, r.jsx)(p.Z, {
         color: c.Z.WHITE
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
@@ -172,8 +172,8 @@ function v(e) {
   if (!d) return null;
   let {
     guildIcon: u,
-    guildName: p,
-    guildAvatarUrl: g,
+    guildName: g,
+    guildAvatarUrl: p,
     subscriberCount: h,
     emojisToShow: b,
     notShownEmojiCount: v,
@@ -183,8 +183,8 @@ function v(e) {
     className: f.guildCard,
     children: [(0, r.jsx)(x, {
       guildIcon: u,
-      guildName: p,
-      guildAvatarUrl: g,
+      guildName: g,
+      guildAvatarUrl: p,
       subscriberCount: h
     }), (0, r.jsx)(j, {
       quote: i,
@@ -209,7 +209,7 @@ function _(e) {
       children: h.NW.string(h.t["tJp+QU"])
     }), (0, r.jsx)(a.LZC, {
       size: 24
-    }), (0, r.jsx)(p.Z, {
+    }), (0, r.jsx)(g.Z, {
       carouselClassName: f.creatorGuildCarousel,
       items: t,
       renderItem: e => (0, r.jsx)(v, {

@@ -1,10 +1,10 @@
-/** Chunk was on 94458 **/
+/** Chunk was on 14093 **/
 n.d(t, {
   Z: () => P
 }), n(627494), n(757143), n(301563);
 var r = n(200651),
-  a = n(192379),
-  l = n(317261),
+  l = n(192379),
+  a = n(317261),
   i = n(70956),
   o = n(5192),
   s = n(379357),
@@ -14,22 +14,22 @@ var r = n(200651),
   m = n(227172),
   p = n(555672),
   h = n(297781),
-  x = n(591853),
+  f = n(591853),
   g = n(410441),
-  v = n(797342),
-  f = n(388032);
+  x = n(797342),
+  v = n(388032);
 let y = (e, t, n, r) => {
-    let a = function(e) {
-        if (e === l._.WEEK) return f.t["7TXfc3"]
+    let l = function(e) {
+        if (e === a._.WEEK) return v.t["7TXfc3"]
       }(r),
       i = o.ZP.getName(t.guild_id, t.id, n),
       s = e.extra.game_name;
-    return f.NW.formatToMarkdownString(a, {
+    return v.NW.formatToMarkdownString(l, {
       gameName: s,
       userName: i
     }).replaceAll("*", "")
   },
-  j = (e, t) => f.NW.formatToPlainString(f.t.tAwI1t, {
+  j = (e, t) => v.NW.formatToPlainString(v.t.tAwI1t, {
     username: t.username,
     activity: e.extra.game_name
   }),
@@ -37,7 +37,7 @@ let y = (e, t, n, r) => {
     let {
       channel: t,
       entry: n,
-      disableGameProfileLinks: l,
+      disableGameProfileLinks: a,
       onReaction: o,
       onVoiceChannelPreview: P
     } = e, {
@@ -48,33 +48,33 @@ let y = (e, t, n, r) => {
       user: b,
       details: C,
       appName: N
-    } = (0, v.n)(n), {
+    } = (0, x.n)(n), {
       primaryColor: I,
       secondaryColor: w
-    } = (0, d.Z)(null == O ? void 0 : O.src), E = (0, c.yA)(n), T = (0, c.Nq)(n), Z = a.useCallback(e => {
-      if (null != t && null != b && null != E && null != T && (0, p.qy)(T)) return (0, u.SO)({
+    } = (0, d.Z)(null == O ? void 0 : O.src), E = (0, c.yA)(n), Z = (0, c.Nq)(n), S = l.useCallback(e => {
+      if (null != t && null != b && null != E && null != Z && (0, p.qy)(Z)) return (0, u.SO)({
         entry: n,
         applicationImageSrc: null == O ? void 0 : O.src,
         avatarSrcs: [b.getAvatarURL(null == t ? void 0 : t.guild_id, 128)],
-        description: y(n, t, b, T),
-        timestamp: f.NW.formatToPlainString(f.t.YL7UEx, {
+        description: y(n, t, b, Z),
+        timestamp: v.NW.formatToPlainString(v.t.YL7UEx, {
           hours: Math.round(E / i.Z.Seconds.HOUR)
         }),
         colors: [I, w],
         channelId: e
       })
-    }, [null == O ? void 0 : O.src, t, E, n, I, T, w, b]);
-    if (null == b || null == E || null == T || !(0, p.qy)(T)) return null;
-    let S = null != n.extra.platform ? m.v[n.extra.platform] : null;
-    return (0, r.jsxs)(x.yR, {
-      children: [(0, r.jsx)(x.wG, {
+    }, [null == O ? void 0 : O.src, t, E, n, I, Z, w, b]);
+    if (null == b || null == E || null == Z || !(0, p.qy)(Z)) return null;
+    let T = null != n.extra.platform ? m.v[n.extra.platform] : null;
+    return (0, r.jsxs)(f.yR, {
+      children: [(0, r.jsx)(f.wG, {
         channel: t,
-        headerIcons: null == S ? null : (0, r.jsx)(g.Z, {
-          Icon: S,
-          "aria-label": f.NW.string(f.t.YR4cHB)
+        headerIcons: null == T ? null : (0, r.jsx)(g.Z, {
+          Icon: T,
+          "aria-label": v.NW.string(v.t.YR4cHB)
         }),
         entry: n,
-        userDescription: f.t.rPqqtr,
+        userDescription: v.t.rPqqtr,
         title: N,
         subtitle: C,
         badges: (0, r.jsx)(h.Gk, {
@@ -83,14 +83,14 @@ let y = (e, t, n, r) => {
             entry: n
           }, t))
         }),
-        disableGameProfileLinks: l
-      }), (0, r.jsx)(x.St, {
-        children: (0, r.jsx)(x.WT, {
+        disableGameProfileLinks: a
+      }), (0, r.jsx)(f.St, {
+        children: (0, r.jsx)(f.WT, {
           onReaction: o,
           onVoiceChannelPreview: P,
           user: b,
           channel: t,
-          generateReactionImage: Z,
+          generateReactionImage: S,
           reactionImageAltText: j(n, b),
           entry: n
         })

@@ -15,9 +15,9 @@ var i = n(120356),
   d = n(723047),
   u = n(880229),
   m = n(388032),
-  p = n(961570);
+  g = n(961570);
 
-function g(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,19 +57,19 @@ function f(e) {
     onImport: l
   } = e, f = (0, d.mY)();
   return (0, r.jsx)("div", {
-    className: p.container,
+    className: g.container,
     children: i.map(e => (0, r.jsxs)("div", {
-      className: p.row,
+      className: g.row,
       children: [(0, r.jsx)("img", {
         alt: "",
         src: null == e.image_asset ? void 0 : (0, o._W)(e.application_id, e.image_asset, 512),
-        className: s()(p.rowIcon, p.listingImage)
+        className: s()(g.rowIcon, g.listingImage)
       }), (0, r.jsxs)("div", {
-        className: p.rowBody,
+        className: g.rowBody,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "header-primary",
-          className: s()(p.rowText, p.listingName),
+          className: s()(g.rowText, g.listingName),
           children: e.name
         }), (0, r.jsx)(a.Text, {
           color: "header-secondary",
@@ -83,7 +83,7 @@ function f(e) {
         look: a.zxk.Looks.OUTLINED,
         color: a.zxk.Colors.PRIMARY,
         onClick: () => {
-          (0, a.h7j)(i => (0, r.jsx)(u.K, h(g({}, i), {
+          (0, a.h7j)(i => (0, r.jsx)(u.K, h(p({}, i), {
             fromSubscriptionListing: e,
             existingChannelBenefits: t,
             existingIntangibleBenefits: n,
@@ -104,11 +104,11 @@ function b(e) {
     disabled: i = !1
   } = e;
   return (0, r.jsxs)(a.P3F, {
-    className: s()(p.importRoleCard, {
-      [p.disabled]: i
+    className: s()(g.importRoleCard, {
+      [g.disabled]: i
     }),
     onClick: i ? void 0 : function() {
-      (0, a.h7j)(e => (0, r.jsx)(u.C, h(g({}, e), {
+      (0, a.h7j)(e => (0, r.jsx)(u.C, h(p({}, e), {
         guildId: t,
         onImport: n
       })))
@@ -119,15 +119,15 @@ function b(e) {
       width: 23,
       height: 23,
       color: "currentColor",
-      className: p.rowIcon
+      className: g.rowIcon
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "header-primary",
-      className: p.rowText,
+      className: g.rowText,
       children: m.NW.string(m.t.xK9pBA)
     }), (0, r.jsx)(l.Z, {
       direction: l.Z.Directions.RIGHT,
-      className: p.caret
+      className: g.caret
     })]
   })
 }

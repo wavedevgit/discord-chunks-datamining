@@ -16,8 +16,8 @@ var r = n(200651),
   h = n(537413),
   g = n(615161),
   x = n(156582),
-  f = n(37113),
-  v = n(388032),
+  v = n(37113),
+  f = n(388032),
   j = n(23661);
 
 function S(e) {
@@ -45,36 +45,36 @@ function N(e) {
   }, y] = (0, g.E_)(), C = (0, i.e7)([m.default], () => m.default.getCurrentUser()), P = (0, i.e7)([d.Z, c.Z], () => c.Z.getChannel(d.Z.getVoiceChannelId())), E = null == P ? void 0 : P.getGuildId(), T = (0, i.e7)([u.Z], () => {
     var e;
     return null != E ? null === (e = u.Z.getGuild(E)) || void 0 === e ? void 0 : e.premiumTier : null
-  }), [I, w] = null !== (t = (0, h.Z)(N, C, T)) && void 0 !== t ? t : [f.LY.RESOLUTION_720, f.ws.FPS_30], _ = [{
-    value: f.tI.PRESET_VIDEO,
-    label: v.NW.string(v.t.HcwHc3)
+  }), [I, w] = null !== (t = (0, h.Z)(N, C, T)) && void 0 !== t ? t : [v.LY.RESOLUTION_720, v.ws.FPS_30], _ = [{
+    value: v.tI.PRESET_VIDEO,
+    label: f.NW.string(f.t.HcwHc3)
   }, ...O === s.vA.CAMERA ? [] : [{
-    value: f.tI.PRESET_DOCUMENTS,
-    label: v.NW.string(v.t["rCa/jI"])
+    value: v.tI.PRESET_DOCUMENTS,
+    label: f.NW.string(f.t["rCa/jI"])
   }], {
-    value: f.tI.PRESET_CUSTOM,
-    label: v.NW.string(v.t["+eOtrK"])
+    value: v.tI.PRESET_CUSTOM,
+    label: f.NW.string(f.t["+eOtrK"])
   }], R = [{
-    value: f.LY.RESOLUTION_720,
-    label: "".concat(f.LY.RESOLUTION_720, "p")
+    value: v.LY.RESOLUTION_720,
+    label: "".concat(v.LY.RESOLUTION_720, "p")
   }, {
-    value: f.LY.RESOLUTION_1080,
-    label: "".concat(f.LY.RESOLUTION_1080, "p")
+    value: v.LY.RESOLUTION_1080,
+    label: "".concat(v.LY.RESOLUTION_1080, "p")
   }, {
-    value: f.LY.RESOLUTION_1440,
-    label: "".concat(f.LY.RESOLUTION_1440, "p")
+    value: v.LY.RESOLUTION_1440,
+    label: "".concat(v.LY.RESOLUTION_1440, "p")
   }, ...O === s.vA.CAMERA ? [] : [{
-    value: f.LY.RESOLUTION_SOURCE,
-    label: v.NW.string(v.t.XjXqzs)
+    value: v.LY.RESOLUTION_SOURCE,
+    label: f.NW.string(f.t.XjXqzs)
   }]], W = [{
-    value: f.ws.FPS_15,
-    label: "".concat(f.ws.FPS_15, "fps")
+    value: v.ws.FPS_15,
+    label: "".concat(v.ws.FPS_15, "fps")
   }, {
-    value: f.ws.FPS_30,
-    label: "".concat(f.ws.FPS_30, "fps")
+    value: v.ws.FPS_30,
+    label: "".concat(v.ws.FPS_30, "fps")
   }, {
-    value: f.ws.FPS_60,
-    label: "".concat(f.ws.FPS_60, "fps")
+    value: v.ws.FPS_60,
+    label: "".concat(v.ws.FPS_60, "fps")
   }];
   return l.useEffect(() => {
     (0, p.Z)(N, Z, b, C, T) || (y({
@@ -96,16 +96,16 @@ function N(e) {
       isSelected: e => e === N,
       serialize: String,
       options: _
-    }), N !== f.tI.PRESET_CUSTOM && (0, r.jsxs)(a.Text, {
+    }), N !== v.tI.PRESET_CUSTOM && (0, r.jsxs)(a.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      children: [I === f.LY.RESOLUTION_SOURCE ? v.NW.string(v.t.XjXqzs) : "".concat(I, "p"), ", ", w, "fps"]
-    }), N === f.tI.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
+      children: [I === v.LY.RESOLUTION_SOURCE ? f.NW.string(f.t.XjXqzs) : "".concat(I, "p"), ", ", w, "fps"]
+    }), N === v.tI.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.PhF, {
         popoutWidth: "auto",
         popoutPosition: "top",
         className: j.select,
-        renderOptionLabel: e => e.value !== f.LY.RESOLUTION_720 ? (0, r.jsx)(S, {
+        renderOptionLabel: e => e.value !== v.LY.RESOLUTION_720 ? (0, r.jsx)(S, {
           label: e.label
         }) : e.label,
         select: e => {
@@ -124,7 +124,7 @@ function N(e) {
         popoutPosition: "top",
         popoutWidth: "auto",
         className: j.select,
-        renderOptionLabel: e => e.value === f.ws.FPS_60 ? (0, r.jsx)(S, {
+        renderOptionLabel: e => e.value === v.ws.FPS_60 ? (0, r.jsx)(S, {
           label: e.label
         }) : e.label,
         select: e => {

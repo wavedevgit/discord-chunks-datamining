@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(999382),
   u = n(8426),
   m = n(969632),
-  p = n(998164),
-  g = n(340189),
+  g = n(998164),
+  p = n(340189),
   h = n(507317),
   f = n(399614),
   b = n(387960),
@@ -77,8 +77,8 @@ function C(e) {
         })
       }), (0, r.jsx)("div", {
         className: N.section,
-        children: (0, r.jsx)(g.Z, {})
-      }), (0, r.jsx)(p.Z, {
+        children: (0, r.jsx)(p.Z, {})
+      }), (0, r.jsx)(g.Z, {
         guildId: t.id
       }), (0, r.jsx)("div", {
         className: N.sectionSeparator

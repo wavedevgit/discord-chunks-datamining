@@ -1,4 +1,4 @@
-/** Chunk was on 22173 **/
+/** Chunk was on 18895 **/
 n.d(t, {
   Lp: () => ei,
   NN: () => es,
@@ -28,33 +28,33 @@ var i = n(200651),
   j = n(884338),
   O = n(446489),
   y = n(824578),
-  x = n(95398),
-  T = n(406432),
-  S = n(169525),
-  _ = n(566006),
+  T = n(95398),
+  x = n(406432),
+  _ = n(169525),
+  S = n(566006),
   N = n(255269),
   C = n(937889),
-  R = n(443877),
+  E = n(443877),
   P = n(524444),
-  E = n(287151),
+  R = n(287151),
   I = n(267128),
   w = n(695346),
   Z = n(433355),
   A = n(592125),
   M = n(496675),
-  k = n(699516),
-  L = n(451478),
+  L = n(699516),
+  k = n(451478),
   D = n(55935),
-  B = n(109434),
-  U = n(456269),
+  U = n(109434),
+  B = n(456269),
   F = n(109590),
   W = n(660189),
   V = n(208970),
   G = n(73315),
   H = n(470623),
   z = n(196255),
-  K = n(858543),
-  J = n(265641),
+  J = n(858543),
+  K = n(265641),
   X = n(627896),
   Y = n(883728),
   q = n(981631),
@@ -111,12 +111,12 @@ let ei = 72,
         {
           content: a,
           firstMedia: s
-        } = (0, U.mX)({
+        } = (0, B.mX)({
           firstMessage: r
         }),
         {
           messageCountText: c
-        } = (0, U.nP)(i);
+        } = (0, B.nP)(i);
       return {
         channel: i,
         isOpen: o,
@@ -129,28 +129,28 @@ let ei = 72,
       threadId: t,
       overrideMedia: s
     }), {
-      ref: x,
-      height: T
-    } = (0, b.Z)(), S = (0, H.xH)(e => e.setCardHeight, d.X);
+      ref: T,
+      height: x
+    } = (0, b.Z)(), _ = (0, H.xH)(e => e.setCardHeight, d.X);
     o.useEffect(() => {
-      null != T && S(t, T)
-    }, [T, S, t]), o.useEffect(() => {
-      null == r || r(x.current, t)
-    }, [x, r, t]);
-    let _ = o.useRef(null),
+      null != x && _(t, x)
+    }, [x, _, t]), o.useEffect(() => {
+      null == r || r(T.current, t)
+    }, [T, r, t]);
+    let S = o.useRef(null),
       {
         handleLeftClick: N,
         handleRightClick: C
       } = (0, Y.Z)({
-        facepileRef: _,
+        facepileRef: S,
         goToThread: n,
         channel: m
       }),
-      R = (0, h.JA)(t),
+      E = (0, h.JA)(t),
       {
         role: P,
-        onFocus: E
-      } = R,
+        onFocus: R
+      } = E,
       I = function(e, t) {
         if (null == e) return {};
         var n, i, o = function(e, t) {
@@ -165,14 +165,14 @@ let ei = 72,
           for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
         }
         return o
-      }(R, ["role", "onFocus"]),
+      }(E, ["role", "onFocus"]),
       {
         isFocused: w,
         handleFocus: M,
-        handleBlur: k
-      } = (0, J.Z)(E);
+        handleBlur: L
+      } = (0, K.Z)(R);
     return (0, i.jsxs)("div", {
-      ref: x,
+      ref: T,
       "data-item-id": t,
       onClick: N,
       onContextMenu: C,
@@ -182,7 +182,7 @@ let ei = 72,
       children: [(0, i.jsx)(f.P3F, en({
         onClick: N,
         focusProps: {
-          ringTarget: x
+          ringTarget: T
         },
         onContextMenu: C,
         "aria-label": Q.NW.formatToPlainString(Q.t.pgYN6e, {
@@ -191,7 +191,7 @@ let ei = 72,
         }),
         className: ee.focusTarget,
         onFocus: M,
-        onBlur: k
+        onBlur: L
       }, I)), (0, i.jsxs)("div", {
         className: ee.left,
         children: [(0, i.jsx)(f.y5t, {
@@ -207,7 +207,7 @@ let ei = 72,
           children: (0, i.jsx)(ec, {
             channel: m,
             firstMessage: j,
-            facepileRef: _
+            facepileRef: S
           })
         })]
       }), (null == j ? void 0 : j.blocked) || null == y ? null : (0, i.jsx)(ef, {
@@ -227,13 +227,13 @@ function ea(e) {
   } = e, {
     isNew: l,
     hasUnreads: c
-  } = (0, U.J$)(t), u = es(t), {
+  } = (0, B.J$)(t), u = es(t), {
     postTitleRef: d,
     isNewBadgeOverflow: h
   } = (0, X.x)(l, 24, s);
   return (0, i.jsxs)("div", {
     className: ee.body,
-    children: [(0, i.jsx)(K.ZP, {
+    children: [(0, i.jsx)(J.ZP, {
       channel: t
     }), (0, i.jsx)("div", {
       className: a()(ee.header, {
@@ -297,9 +297,9 @@ let el = o.memo(function(e) {
   } = e, {
     isBlocked: l,
     isIgnored: c
-  } = (0, p.cj)([k.Z], () => ({
-    isBlocked: null != t && k.Z.isBlockedForMessage(t),
-    isIgnored: null != t && k.Z.isIgnoredForMessage(t)
+  } = (0, p.cj)([L.Z], () => ({
+    isBlocked: null != t && L.Z.isBlockedForMessage(t),
+    isIgnored: null != t && L.Z.isIgnoredForMessage(t)
   })), u = (0, p.e7)([W.Z], () => W.Z.isLoading(n.id)), d = (0, p.e7)([M.Z], () => M.Z.can(q.Plq.MANAGE_MESSAGES, n)), h = w.cC.useSetting(), m = null;
   if (l) m = (0, i.jsx)(f.Text, {
     className: ee.blockedMessage,
@@ -337,7 +337,7 @@ let el = o.memo(function(e) {
       children: null == t ? u ? null : Q.NW.string(Q.t.mE3KJC) : e
     })
   }
-  return (0, i.jsxs)(x.a.Provider, {
+  return (0, i.jsxs)(T.aQ.Provider, {
     value: (0, N.Z)(h, d),
     children: [!l && (0, i.jsx)(z.Z, {
       channel: n,
@@ -402,7 +402,7 @@ function eu(e) {
   } = e, {
     messageCountText: r,
     unreadCount: s
-  } = (0, U.nP)(t);
+  } = (0, B.nP)(t);
   return (0, i.jsxs)("div", {
     className: a()(ee.messageCountBox, {
       [ee.hasRead]: o && null == s
@@ -437,12 +437,12 @@ function ed(e) {
   let {
     firstMessage: t,
     channel: n
-  } = e, o = (0, p.e7)([A.Z], () => A.Z.getChannel(n.parent_id)), r = (0, U.Bs)(o), {
+  } = e, o = (0, p.e7)([A.Z], () => A.Z.getChannel(n.parent_id)), r = (0, B.Bs)(o), {
     disableReactionCreates: a,
     isLurking: s,
     isPendingMember: l
-  } = (0, R.Z)(n);
-  return null == r || a ? null : (0, i.jsx)(E.le, {
+  } = (0, E.Z)(n);
+  return null == r || a ? null : (0, i.jsx)(R.le, {
     className: ee.updateReactionButton,
     message: t,
     readOnly: n.isArchivedLockedThread(),
@@ -455,7 +455,7 @@ function ed(e) {
     burst_count: 0,
     me: !1,
     me_burst: !1,
-    type: _.O.NORMAL,
+    type: S.O.NORMAL,
     emojiSize: "reaction",
     emojiSizeTooltip: "reaction"
   })
@@ -466,19 +466,19 @@ function eh(e) {
   let {
     firstMessage: n,
     channel: o
-  } = e, r = (0, U.IN)(n), {
+  } = e, r = (0, B.IN)(n), {
     disableReactionUpdates: a,
     isLurking: s,
     isPendingMember: l
-  } = (0, R.Z)(o);
-  return null == r ? null : (0, i.jsx)(E.le, en({
+  } = (0, E.Z)(o);
+  return null == r ? null : (0, i.jsx)(R.le, en({
     className: ee.updateReactionButton,
     message: n,
     readOnly: a || o.isArchivedLockedThread(),
     isLurking: s,
     isPendingMember: l,
     useChatFontScaling: !1,
-    type: r.burst_count >= r.count ? _.O.BURST : _.O.NORMAL,
+    type: r.burst_count >= r.count ? S.O.BURST : S.O.NORMAL,
     emojiSize: "reaction",
     emojiSizeTooltip: "reaction"
   }, r), "".concat(null !== (t = r.emoji.id) && void 0 !== t ? t : 0, ":").concat(r.emoji.name))
@@ -490,7 +490,7 @@ function ep(e) {
     channel: n
   } = e, {
     sortOrder: o
-  } = (0, B.H)(n.parent_id), r = (0, U.xw)(n, o), a = null === (t = n.threadMetadata) || void 0 === t ? void 0 : t.createTimestamp, s = null == a ? null : Q.NW.formatToPlainString(Q.t["13euCQ"], {
+  } = (0, U.H)(n.parent_id), r = (0, B.xw)(n, o), a = null === (t = n.threadMetadata) || void 0 === t ? void 0 : t.createTimestamp, s = null == a ? null : Q.NW.formatToPlainString(Q.t["13euCQ"], {
     timestamp: (0, D.vc)(u()(a), "LLLL")
   });
   return (0, i.jsx)(f.ua7, {
@@ -523,7 +523,7 @@ function em(e) {
     channel: t,
     userIds: n,
     facepileRef: o
-  } = e, r = (0, U.iM)(t, n);
+  } = e, r = (0, B.iM)(t, n);
   return (0, i.jsx)("div", {
     ref: o,
     children: (0, i.jsx)(j.Z, {
@@ -544,14 +544,14 @@ function ef(e) {
       channel: o,
       firstMedia: r
     } = e,
-    s = (0, p.e7)([L.Z], () => L.Z.isFocused()),
-    l = (0, T.d$)(r.src),
+    s = (0, p.e7)([k.Z], () => k.Z.isFocused()),
+    l = (0, x.d$)(r.src),
     c = w.QK.useSetting(),
-    [u, d] = (0, S.hL)({
+    [u, d] = (0, _.hL)({
       media: r,
       channel: o
     }),
-    h = (0, S.MC)(d),
+    h = (0, _.MC)(d),
     {
       src: m,
       width: g,

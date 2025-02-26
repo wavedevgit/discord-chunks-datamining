@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(318766),
   u = n(907040),
   m = n(273039),
-  p = n(176354),
-  g = n(434404),
+  g = n(176354),
+  p = n(434404),
   h = n(185923),
   f = n(388032),
   b = n(565208),
@@ -47,20 +47,20 @@ function v(e) {
     guildId: t,
     trait: n,
     index: s,
-    onTraitUpdate: g
+    onTraitUpdate: p
   } = e, f = i.useCallback(() => {
-    g(t, s, {
+    p(t, s, {
       emoji: void 0
     })
-  }, [t, s, g]), x = i.useCallback(e => (n, r) => {
-    g(t, s, {
+  }, [t, s, p]), x = i.useCallback(e => (n, r) => {
+    p(t, s, {
       emoji: null != n ? n : void 0
     }), r && e()
-  }, [t, s, g]), N = i.useMemo(() => {
+  }, [t, s, p]), N = i.useMemo(() => {
     let e = n.emoji,
       t = null == e || null == e.name ? null : () => {
         var t;
-        let n = p.ZP.isCustomEmoji(e) ? e.name : e.surrogates;
+        let n = g.ZP.isCustomEmoji(e) ? e.name : e.surrogates;
         return (0, r.jsx)(o.Z, {
           animated: null !== (t = e.animated) && void 0 !== t && t,
           emojiId: e.id,
@@ -107,10 +107,10 @@ function v(e) {
       })
     })
   }, [n.emoji, f, x]), [v, _] = i.useState(!1), O = i.useCallback(() => _(!0), []), y = i.useCallback(() => _(!1), []), C = i.useCallback(e => {
-    g(t, s, {
+    p(t, s, {
       label: e
     })
-  }, [t, s, g]);
+  }, [t, s, p]);
   return (0, r.jsx)(l.oil, {
     value: n.label,
     onChange: C,
@@ -131,7 +131,7 @@ function O(e) {
     profile: t
   } = e, n = i.useMemo(() => t.traits, [t]), s = i.useCallback((e, t, r) => {
     let i = [...n];
-    i[t] = j({}, n[t], r), g.Z.updateGuildProfile(e, {
+    i[t] = j({}, n[t], r), p.Z.updateGuildProfile(e, {
       traits: i
     })
   }, [n]);

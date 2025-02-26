@@ -1,4 +1,4 @@
-/** Chunk was on 72320 **/
+/** Chunk was on 88119 **/
 e.exports = {
   stickyContainer: "stickyContainer__57d3f",
   stickyBannerContainer: "stickyBannerContainer__57d3f",

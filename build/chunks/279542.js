@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  ZP: () => D,
+  ZP: () => Z,
   fp: () => P,
   k0: () => T
 }), n(47120);
@@ -15,8 +15,8 @@ var r = n(200651),
   d = n(230711),
   u = n(497321),
   m = n(688465),
-  p = n(241559),
-  g = n(496675),
+  g = n(241559),
+  p = n(496675),
   h = n(246946),
   f = n(594174),
   b = n(63063),
@@ -64,7 +64,7 @@ function E(e, t) {
 function S(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([g.Z], () => null != t && g.Z.can(O.Plq.MANAGE_GUILD, t), [t]), s = i.useCallback(async e => {
+  } = e, n = (0, o.e7)([p.Z], () => null != t && p.Z.can(O.Plq.MANAGE_GUILD, t), [t]), s = i.useCallback(async e => {
     let {
       value: n
     } = e;
@@ -111,7 +111,7 @@ function T(e) {
     guild: t,
     className: n,
     withDivider: s = !0
-  } = e, l = (0, o.e7)([g.Z], () => null != t && g.Z.can(O.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
+  } = e, l = (0, o.e7)([p.Z], () => null != t && p.Z.can(O.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
     let {
       value: n
     } = e;
@@ -169,7 +169,7 @@ async function P(e, t) {
 function w(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([g.Z], () => null != t && g.Z.can(O.Plq.MANAGE_GUILD, t), [t]), s = t.hasFeature(O.oNc.COMMUNITY), a = (0, p.n2)(t.id), [l, d] = i.useState(t.hasFeature(O.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), u = i.useCallback(async e => {
+  } = e, n = (0, o.e7)([p.Z], () => null != t && p.Z.can(O.Plq.MANAGE_GUILD, t), [t]), s = t.hasFeature(O.oNc.COMMUNITY), a = (0, g.n2)(t.id), [l, d] = i.useState(t.hasFeature(O.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), u = i.useCallback(async e => {
     d(e), await P(t, e)
   }, [t]);
   return s || !a ? null : (0, r.jsxs)(r.Fragment, {
@@ -210,7 +210,7 @@ function R(e) {
   let {
     guild: t,
     mfaLevel: n
-  } = e, s = (0, o.e7)([g.Z], () => null != t && g.Z.can(O.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([f.default], () => f.default.getCurrentUser()), {
+  } = e, s = (0, o.e7)([p.Z], () => null != t && p.Z.can(O.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([f.default], () => f.default.getCurrentUser()), {
     isGuildOwnerWithMFA: u,
     showMFAUserTooltip: m
   } = i.useMemo(() => null == a ? {
@@ -219,7 +219,7 @@ function R(e) {
   } : {
     isGuildOwnerWithMFA: t.isOwnerWithRequiredMfaLevel(a),
     showMFAUserTooltip: !a.mfaEnabled && t.isOwner(a)
-  }, [a, t]), p = n === O.BpS.ELEVATED, h = (0, l.throttle)(async e => {
+  }, [a, t]), g = n === O.BpS.ELEVATED, h = (0, l.throttle)(async e => {
     u && !m && await j.Z.updateMFALevel({
       guildId: t.id,
       level: e ? O.BpS.ELEVATED : O.BpS.NONE,
@@ -232,7 +232,7 @@ function R(e) {
     }), (0, r.jsxs)("div", {
       className: C.setupContainer,
       children: [(0, r.jsx)(c.j7V, {
-        value: p,
+        value: g,
         onChange: h,
         className: C.switchItem,
         disabled: !u,
@@ -262,7 +262,7 @@ function R(e) {
   }) : null
 }
 
-function D() {
+function Z() {
   let {
     guild: e,
     mfaLevel: t

@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 0fd970885a4fc587
+  Original File Name: a103e306796ba503
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -2958,59 +2958,6 @@
     margin-top: 8px
 }
 
-.reactions__5ba62 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 100px;
-    height: 32px
-}
-
-.reactions__5ba62,.reply__5ba62 {
-    display: flex;
-    border-radius: 8px
-}
-
-.reply__5ba62 {
-    background: var(--background-primary);
-    text-indent: 0;
-    padding: 16px;
-    width: 300px;
-    font-size: 16px;
-    box-shadow: var(--elevation-high);
-    flex-direction: column
-}
-
-.replyHeader__5ba62 {
-    margin-bottom: 8px;
-    text-transform: uppercase
-}
-
-.replyInput__5ba62 {
-    background: var(--input-background)
-}
-
-.emojiButton__5ba62 {
-    background-color: transparent;
-    margin-left: 8px
-}
-
-.reaction__5ba62 {
-    opacity: .8;
-    transition: opacity .2s linear;
-    display: flex;
-    align-self: center
-}
-
-.reaction__5ba62:hover {
-    opacity: 1
-}
-
-.closeIcon__5ba62 {
-    color: var(--interactive-normal);
-    cursor: pointer
-}
-
 .actionsStreamPreview__34f7d {
     margin-top: 10px
 }
@@ -3709,4 +3656,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     pointer-events: auto
 }
 
-/*# sourceMappingURL=0fd970885a4fc587.css.map*/
+/*# sourceMappingURL=a103e306796ba503.css.map*/

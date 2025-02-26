@@ -1,42 +1,42 @@
-/** Chunk was on 4493 **/
+/** Chunk was on 61080 **/
 r.d(t, {
-  Z: () => f
+  Z: () => m
 }), r(411104), r(230036);
 var n = r(200651);
 r(192379);
 var a = r(120356),
-  i = r.n(a),
-  o = r(643872),
+  o = r.n(a),
+  i = r(643872),
   l = r(481060),
   s = r(810568),
   c = r(388032),
   u = r(384370),
   d = r(44021);
-let p = [o.p.OFFICIAL, o.p.TWITTER, o.p.YOUTUBE];
+let p = [i.p.OFFICIAL, i.p.TWITTER, i.p.YOUTUBE];
 
-function m(e) {
+function f(e) {
   let {
     website: t,
     trackClick: r
   } = e, {
     action: a,
-    icon: i,
+    icon: o,
     title: u
   } = function(e) {
     switch (e.category) {
-      case o.p.OFFICIAL:
+      case i.p.OFFICIAL:
         return {
           icon: (0, n.jsx)(l.enf, {
             colorClass: d.linkIcon
           }), action: s.as.WebsiteLink, title: c.NW.string(c.t.fOUKvr)
         };
-      case o.p.TWITTER:
+      case i.p.TWITTER:
         return {
           icon: (0, n.jsx)(l.TAi, {
             colorClass: d.linkIcon
           }), action: s.as.XLink, title: c.NW.string(c.t["INic4+"])
         };
-      case o.p.YOUTUBE:
+      case i.p.YOUTUBE:
         return {
           action: s.as.YouTubeLink, icon: (0, n.jsx)(l.$5w, {
             colorClass: d.linkIcon
@@ -51,7 +51,7 @@ function m(e) {
     tooltipClassName: d.tooltip,
     tooltipContentClassName: d.tooltipContent,
     children: e => {
-      var o, s, {
+      var i, s, {
           onClick: c
         } = e,
         p = function(e, t) {
@@ -59,17 +59,17 @@ function m(e) {
           var r, n, a = function(e, t) {
             if (null == e) return {};
             var r, n, a = {},
-              i = Object.keys(e);
-            for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
+              o = Object.keys(e);
+            for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
             return a
           }(e, t);
           if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+            var o = Object.getOwnPropertySymbols(e);
+            for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
           }
           return a
         }(e, ["onClick"]);
-      return (0, n.jsx)(l.eee, (o = function(e) {
+      return (0, n.jsx)(l.eee, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -94,8 +94,8 @@ function m(e) {
           r(a), null == c || c()
         },
         target: "_blank",
-        children: i
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+        children: o
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
@@ -103,12 +103,12 @@ function m(e) {
         }
         return r
       })(Object(s)).forEach(function(e) {
-        Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
-      }), o))
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+      }), i))
     }
   })
 }
-let f = function(e) {
+let m = function(e) {
   let {
     detectedGame: t,
     trackClick: r
@@ -127,8 +127,8 @@ let f = function(e) {
       color: "header-secondary",
       children: c.NW.string(c.t.Oj3o19)
     }), (0, n.jsx)("div", {
-      className: i()(u.row, u.gapMd),
-      children: a.map(e => (0, n.jsx)(m, {
+      className: o()(u.row, u.gapMd),
+      children: a.map(e => (0, n.jsx)(f, {
         website: e,
         trackClick: r
       }, e.url))

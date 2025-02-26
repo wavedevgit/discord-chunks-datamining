@@ -1,6 +1,6 @@
 /**
   Module ID: 27151
-  Original File Name: 932b439d8504ee26
+  Original File Name: 9e579e07ff2361e9
 **/
 .clipPill_d762d7 {
     position: absolute;
@@ -100,7 +100,7 @@
 }
 
 .obscured__6c706.hiddenMosaicItem__6c706.hiddenExplicit__6c706 {
-    filter: blur(40px) brightness(.55)
+    filter: blur(var(--__obscured-background-blur-radius)) brightness(var(--__obscured-background-brightness))
 }
 
 .obscureVideoSpacing__6c706 {
@@ -585,4 +585,4 @@ html:not(.visual-refresh) .classificationContainer_a48d6b {
     margin: 0 var(--spacing-40)
 }
 
-/*# sourceMappingURL=932b439d8504ee26.css.map*/
+/*# sourceMappingURL=9e579e07ff2361e9.css.map*/

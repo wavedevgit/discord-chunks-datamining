@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(637853),
   u = n(999382),
   m = n(889369),
-  p = n(983135),
-  g = n(570961),
+  g = n(983135),
+  p = n(570961),
   h = n(208665),
   f = n(974513),
   b = n(716130),
@@ -28,7 +28,7 @@ function _(e) {
   let {
     guildId: t,
     prompts: n
-  } = e, l = (0, s.e7)([m.Z], () => m.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...l]), p = c.length, g = c.length + u.length, h = p / g * 100, f = Math.max(Math.ceil(85 * g / 100) - p, 0), [b, x] = i.useState(!1), j = b ? a.CJ0 : a.u04;
+  } = e, l = (0, s.e7)([m.Z], () => m.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...l]), g = c.length, p = c.length + u.length, h = g / p * 100, f = Math.max(Math.ceil(85 * p / 100) - g, 0), [b, x] = i.useState(!1), j = b ? a.CJ0 : a.u04;
   return (0, r.jsxs)("div", {
     className: v.channelCoverage,
     children: [(0, r.jsxs)(a.P3F, {
@@ -45,7 +45,7 @@ function _(e) {
           variant: "text-xs/medium",
           color: "text-muted",
           children: N.NW.format(N.t.nMVKCQ, {
-            numChannelsMissing: g - p
+            numChannelsMissing: p - g
           })
         })]
       }), (0, r.jsxs)("div", {
@@ -123,21 +123,21 @@ function y(e) {
     saveOnClose: n
   } = e, l = (0, s.e7)([c.Z], () => c.Z.isLoading()), o = (0, s.e7)([h.Z], () => h.Z.editedOnboardingPrompts), d = (0, s.e7)([h.Z], () => h.Z.advancedMode), u = i.useRef(!1);
   i.useEffect(() => {
-    l || u.current || 0 !== o.length || (u.current = !0, d || (0, g.tS)(t, [(0, j.ae)()], !1))
+    l || u.current || 0 !== o.length || (u.current = !0, d || (0, p.tS)(t, [(0, j.ae)()], !1))
   });
   let m = i.useRef(t);
   if (i.useEffect(() => {
       m.current = t
     }), i.useEffect(() => {
       if (n) return () => {
-        (0, g.rS)(m.current, {
+        (0, p.rS)(m.current, {
           ignoreDefaultPrompt: !0
         }).catch(() => {})
       }
     }, [n]), null == t) return null;
   let O = async () => {
     try {
-      await (0, g.rS)(t), await (0, p.di)(t.id)
+      await (0, p.rS)(t), await (0, g.di)(t.id)
     } catch (e) {}
   };
   return (0, r.jsxs)(r.Fragment, {
@@ -192,10 +192,10 @@ function C() {
   return null == e ? null : (0, r.jsx)(l.Z, {
     onSave: () => {
       try {
-        (0, g.rS)(e)
+        (0, p.rS)(e)
       } catch (e) {}
     },
-    onReset: g.NB,
+    onReset: p.NB,
     submitting: t,
     onSaveText: N.NW.string(N.t.R3BPHx)
   })

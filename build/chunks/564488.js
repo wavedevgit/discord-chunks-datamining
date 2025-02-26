@@ -18,13 +18,13 @@ let m = i.memo(function(e) {
     persistEdit: n = !1,
     initWithEdit: m = !1
   } = e, {
-    hasChanges: p,
-    editingRule: g,
+    hasChanges: g,
+    editingRule: p,
     createNewEditingRule: h,
     setEditingRule: f
   } = (0, l.V)(), {
     isLoading: b
-  } = (0, l.w)(), [x] = i.useState(() => !(0, s.Vb)(t)), j = (null == g ? void 0 : g.id) === t.id || n, N = (0, a.U)(null == t ? void 0 : t.id), v = j && null != g ? g : t, _ = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), O = i.useCallback(() => {
+  } = (0, l.w)(), [x] = i.useState(() => !(0, s.Vb)(t)), j = (null == p ? void 0 : p.id) === t.id || n, N = (0, a.U)(null == t ? void 0 : t.id), v = j && null != p ? p : t, _ = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), O = i.useCallback(() => {
     h(t.guildId, t.triggerType)
   }, [t.guildId, t.triggerType, h]), y = i.useCallback(e => {
     !b && f(e, !0)
@@ -33,10 +33,10 @@ let m = i.memo(function(e) {
     m && f(t, !0)
   }, [m, t, f]);
   let C = i.useCallback(() => {
-    j ? p || f(null) : p ? _(() => {
+    j ? g || f(null) : g ? _(() => {
       f(t)
     }) : f(t)
-  }, [j, p, _, t, f]);
+  }, [j, g, _, t, f]);
   return (0, r.jsx)(d.Z, {
     renderHeader: (0, r.jsx)(u.Z, {
       rule: v,
@@ -47,7 +47,7 @@ let m = i.memo(function(e) {
       onChangeRule: y,
       onSetupRule: O
     }),
-    isStuck: j && p,
+    isStuck: j && g,
     isExpanded: j,
     onExpand: C,
     children: j && (0, r.jsx)(c.Z, {

@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   y6: () => m
 }), n(47120);
@@ -22,8 +22,8 @@ let p = e => {
       initialized: v,
       loading: y,
       items: x,
-      hasMore: O,
-      cursor: E,
+      hasMore: E,
+      cursor: O,
       errored: j
     } = (0, i.cj)([c.Z], () => ({
       initialized: c.Z.initialized,
@@ -55,8 +55,8 @@ let p = e => {
       })
     }, [v, h, t, m, N, C, f]);
     let S = r.useCallback(async e => {
-      !g.current && v && O && null != E && (e || !j) && (g.current = !0, b(!0), await (0, s.jk)({
-        after: E,
+      !g.current && v && E && null != O && (e || !j) && (g.current = !0, b(!0), await (0, s.jk)({
+        after: O,
         with_mentions: m,
         roles_filter: N,
         everyone_filter: C,
@@ -64,12 +64,12 @@ let p = e => {
       }, () => {
         g.current = !1
       }), b(!1))
-    }, [v, O, E, j, m, N, C]);
+    }, [v, E, O, j, m, N, C]);
     return {
       initialized: v,
       loading: y,
       items: x,
-      hasMore: O,
+      hasMore: E,
       loadMore: S,
       loadingMore: _,
       setReadNotifItemToAcked: e => {

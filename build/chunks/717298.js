@@ -16,8 +16,8 @@ var r = n(200651),
   h = n(89425),
   g = n(100527),
   x = n(906732),
-  f = n(594190),
-  v = n(751571),
+  v = n(594190),
+  f = n(751571),
   j = n(695346),
   S = n(592125),
   N = n(430824),
@@ -78,22 +78,22 @@ function F(e) {
   }
 
   function Q(e) {
-    var n, r, l, s, i;
-    let a = b.Z.getVoiceChannelId();
-    if (null == a) return;
-    let c = S.Z.getChannel(a),
-      u = null == c ? void 0 : c.getGuildId(),
-      p = null === (n = N.Z.getGuild(u)) || void 0 === n ? void 0 : n.premiumTier,
-      h = F.preset,
-      [g, x] = null !== (r = (0, E.Z)(F.preset, B, p)) && void 0 !== r ? r : [],
-      Z = null != g ? g : F.resolution,
-      O = null != x ? x : F.fps;
-    (0, P.Z)(h, Z, O, B, p, c) || (h = M.tI.PRESET_VIDEO, Z = M.LY.RESOLUTION_720, O = M.ws.FPS_30), (0, m.Rc)({
-      preset: h,
-      resolution: Z,
-      frameRate: O,
+    var n, r, l, s;
+    let i = b.Z.getVoiceChannelId();
+    if (null == i) return;
+    let a = S.Z.getChannel(i),
+      c = null == a ? void 0 : a.getGuildId(),
+      u = null === (n = N.Z.getGuild(c)) || void 0 === n ? void 0 : n.premiumTier,
+      p = F.preset,
+      [h, g] = null !== (r = (0, E.Z)(F.preset, B, u)) && void 0 !== r ? r : [],
+      x = null != h ? h : F.resolution,
+      Z = null != g ? g : F.fps;
+    (0, P.Z)(p, x, Z, B, u, a) || (p = M.tI.PRESET_VIDEO, x = M.LY.RESOLUTION_720, Z = M.ws.FPS_30), j.I0.updateSetting(F.hidePreview), (0, m.Rc)({
+      preset: p,
+      resolution: x,
+      frameRate: Z,
       soundshareEnabled: !F.muteStreamAudio
-    }), (0, m.WH)(u, a, (s = function(e) {
+    }), (0, m.WH)(c, i, (l = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -114,7 +114,7 @@ function F(e) {
       if (e.hasOwnProperty("pid")) return {
         pid: e.pid
       };
-      let t = (0, I.Z)(void 0, e, f.ZP.getRunningGames()),
+      let t = (0, I.Z)(void 0, e, v.ZP.getRunningGames()),
         n = !(0, y.isWindows)() || null == t || (null == e ? void 0 : e.id.startsWith(o.vA.CAMERA)) || null == t ? null : t.pid;
       return null != n ? {
         pid: n
@@ -123,21 +123,21 @@ function F(e) {
         sourceName: e.name,
         sourceIcon: e.icon
       }
-    }(e)), i = i = {
+    }(e)), s = s = {
       sound: !F.muteStreamAudio,
-      previewDisabled: null !== (l = j.I0.getSetting()) && void 0 !== l && l,
+      previewDisabled: F.hidePreview,
       nativePickerStyleUsed: Y ? "" : void 0
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(i)).forEach(function(e) {
-      Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(i, e))
-    }), s)), Y || (async () => {
-      await v.Z.hasPermission(z.Eu.SCREEN_RECORDING, {
+    })(Object(s)).forEach(function(e) {
+      Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
+    }), l)), Y || (async () => {
+      await f.Z.hasPermission(z.Eu.SCREEN_RECORDING, {
         showAuthorizationError: !1
       }) || d.Z.show({
         title: U.NW.string(U.t["X+mXen"]),

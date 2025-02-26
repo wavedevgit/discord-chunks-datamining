@@ -1,4 +1,4 @@
-/** Chunk was on 71611 **/
+/** Chunk was on 88119 **/
 e.exports = {
   carouselMaxWidth: "carouselMaxWidth_b8429c",
   scroller: "scroller_b8429c",

@@ -328,7 +328,7 @@ function Q(e) {
     } = e,
     N = s.useRef(new o.qA),
     [x, _] = s.useState(null),
-    C = (0, I.yQ)(),
+    C = (0, I.Er)(),
     v = (null == C ? void 0 : C.showCard) === !0,
     S = (null == C ? void 0 : C.tenureRewardType) === M.nW.AVATAR_DECO,
     y = null === (t = (0, O.Af)(r)) || void 0 === t ? void 0 : t.planId,

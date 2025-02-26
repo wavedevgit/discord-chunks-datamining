@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(215569),
   u = n(780384),
   m = n(481060),
-  p = n(410030),
-  g = n(367907),
+  g = n(410030),
+  p = n(367907),
   h = n(768762),
   f = n(626135),
   b = n(585483),
@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(966301),
   w = n(976269),
   R = n(981631),
-  D = n(388032),
-  Z = n(77526);
+  Z = n(388032),
+  D = n(77526);
 
 function k(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -89,7 +89,7 @@ function L(e) {
   })), U = (0, o.e7)([C.Z], () => {
     let e = (0, I.lg)(x);
     return null != e && !C.Z.isEducationUpsellDismissed(e)
-  }), B = (0, p.ZP)(), F = i.useRef(null), [{
+  }), B = (0, g.ZP)(), F = i.useRef(null), [{
     spring: z
   }, H] = (0, m.q_F)(() => ({
     spring: 0
@@ -144,13 +144,13 @@ function L(e) {
       }
       return !0
     }, $ = async () => {
-      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, A(k({}, (0, g.hH)(s)), {
+      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, A(k({}, (0, p.hH)(s)), {
         step: I.PG[x],
         back: !1,
         skip: !L
       })), (0, N.Nb)((0, I.lg)(x)), await J() && (0, N.IG)(s, x)
     }, ee = async () => {
-      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, A(k({}, (0, g.hH)(s)), {
+      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, A(k({}, (0, p.hH)(s)), {
         step: I.PG[x],
         back: !0,
         skip: !1
@@ -158,8 +158,8 @@ function L(e) {
     }, et = null;
   U && (x === I.PG.SAFETY_CHECK ? et = (0, r.jsx)(S.j7, {}) : x === I.PG.DEFAULT_CHANNELS ? et = (0, r.jsx)(S.Io, {}) : x === I.PG.CUSTOMIZATION_QUESTIONS ? et = (0, r.jsx)(S.cZ, {}) : x === I.PG.HOME_SETTINGS && (et = (0, r.jsx)(S.g6, {})));
   let en = (0, r.jsx)(m.zxk, {
-      className: a()(Z.button, {
-        [Z.hidden]: U
+      className: a()(D.button, {
+        [D.hidden]: U
       }),
       color: m.zxk.Colors.PRIMARY,
       look: m.zxk.Looks.OUTLINED,
@@ -167,27 +167,27 @@ function L(e) {
       onClick: ee,
       disabled: U || G,
       children: (0, r.jsxs)("span", {
-        className: Z.button,
+        className: D.button,
         children: [(0, r.jsx)(h.Z, {
-          className: Z.arrow,
+          className: D.arrow,
           direction: h.Z.Directions.LEFT
-        }), D.NW.string(D.t["13/7kZ"])]
+        }), Z.NW.string(Z.t["13/7kZ"])]
       })
     }),
     er = (0, r.jsx)(m.zxk, {
-      className: Z.button,
+      className: D.button,
       color: M ? m.zxk.Colors.BRAND : m.zxk.Colors.PRIMARY,
       look: m.zxk.Looks.FILLED,
       size: m.zxk.Sizes.SMALL,
       onClick: $,
       disabled: U || G,
       children: (0, r.jsxs)(l.animated.span, {
-        className: Z.button,
+        className: D.button,
         style: {
           color: q
         },
-        children: [M ? D.NW.string(D.t.PDTjLC) : D.NW.string(D.t["5WxrcX"]), (0, r.jsx)(h.Z, {
-          className: Z.arrow,
+        children: [M ? Z.NW.string(Z.t.PDTjLC) : Z.NW.string(Z.t["5WxrcX"]), (0, r.jsx)(h.Z, {
+          className: D.arrow,
           direction: h.Z.Directions.RIGHT
         })]
       })
@@ -195,37 +195,37 @@ function L(e) {
   return (0, r.jsx)(d.W, {
     component: "div",
     children: (0, r.jsx)(m.oXn, {
-      className: a()(Z.noticeRegion),
+      className: a()(D.noticeRegion),
       children: (0, r.jsx)(l.animated.div, {
-        className: Z.container,
+        className: D.container,
         style: {
           backgroundColor: X
         },
         children: (0, r.jsxs)("div", {
-          className: Z.flexContainer,
+          className: D.flexContainer,
           ref: F,
           children: [U ? (0, r.jsxs)("div", {
-            className: Z.educationUpsellRoot,
+            className: D.educationUpsellRoot,
             children: [(0, r.jsx)("img", {
-              className: a()(Z.wumpus),
+              className: a()(D.wumpus),
               src: n(33631),
               alt: "wumpus"
             }), (0, r.jsxs)("div", {
-              className: Z.educationUpsell,
+              className: D.educationUpsell,
               children: [et, (0, r.jsx)("div", {
-                className: Z.educationUpsellArrow
+                className: D.educationUpsellArrow
               })]
             })]
           }) : null, (0, r.jsx)(m.JcV, {
             containerRef: F,
             children: (0, r.jsxs)("div", {
-              className: Z.actions,
+              className: D.actions,
               children: [en, (0, r.jsxs)("div", {
-                className: Z.next,
+                className: D.next,
                 children: [G ? (0, r.jsx)(m.Text, {
                   variant: "text-sm/normal",
                   color: "status-warning",
-                  children: D.NW.string(D.t.DhYsPD)
+                  children: Z.NW.string(Z.t.DhYsPD)
                 }) : null, Q ? null : er]
               })]
             })

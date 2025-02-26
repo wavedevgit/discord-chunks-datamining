@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => M
 }), n(47120), n(266796);
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(132871),
   y = n(147890),
   x = n(220082),
-  O = n(240991),
-  E = n(592125),
+  E = n(240991),
+  O = n(592125),
   j = n(496675),
   N = n(944486),
   C = n(914010),
@@ -70,7 +70,7 @@ function W(e) {
   } = i.useMemo(() => (0, g.sl)(n, {
     fakeAppIconURL: L,
     size: 56
-  }), [n]), W = i.useMemo(() => null != M ? (0, O.parseBioReact)(M) : null, [M]), [U, B] = i.useState(!1), G = i.useCallback(e => {
+  }), [n]), W = i.useMemo(() => null != M ? (0, E.parseBioReact)(M) : null, [M]), [U, B] = i.useState(!1), G = i.useCallback(e => {
     e && B(!0)
   }, []), H = (0, c.O)(G);
   i.useEffect(() => {
@@ -86,7 +86,7 @@ function W(e) {
     z = (0, S.TK)(n.id, (0, b.LD)(I, !1)),
     K = V || z,
     Y = n.isVerified && n.isDiscoverable,
-    X = (0, l.e7)([N.Z, E.Z], () => E.Z.getChannel(N.Z.getChannelId())),
+    X = (0, l.e7)([N.Z, O.Z], () => O.Z.getChannel(N.Z.getChannelId())),
     q = (0, l.e7)([j.Z], () => (null == X ? void 0 : X.isPrivate()) || j.Z.can(Z.Plq.SEND_MESSAGES, X)),
     {
       analyticsLocations: Q

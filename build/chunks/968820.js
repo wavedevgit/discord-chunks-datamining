@@ -19,8 +19,8 @@ function m(e) {
     children: t,
     revenue: n,
     revenueTrend: m,
-    summaryMetricLabel: p,
-    summaryMetricValue: g,
+    summaryMetricLabel: g,
+    summaryMetricValue: p,
     summaryMetricTrend: h,
     summaryMetricTrendIsPercent: f
   } = e;
@@ -37,8 +37,8 @@ function m(e) {
             isPercent: !0
           })
         }), (0, r.jsx)(l.Z, {
-          label: p,
-          value: g,
+          label: g,
+          value: p,
           additionalContent: (0, r.jsx)(s.H, {
             value: h,
             isPercent: f

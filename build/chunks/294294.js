@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -15,7 +15,7 @@ var i = n(512722),
   u = n(430824),
   m = n(388032);
 
-function p(e) {
+function g(e) {
   let {
     guildId: t
   } = e, n = (0, a.e7)([u.Z], () => u.Z.getGuild(t));

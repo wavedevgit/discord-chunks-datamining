@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(471445),
   u = n(131704),
   m = n(324067),
-  p = n(699516),
-  g = n(594174),
+  g = n(699516),
+  p = n(594174),
   h = n(303737),
   f = n(981631),
   b = n(388032),
@@ -69,8 +69,8 @@ function _(e) {
   } = e, i = (0, h.m7)(n), s = (0, h.m7)(null !== (t = null == i ? void 0 : i.parent_id) && void 0 !== t ? t : f.lds);
   if (null == i) return null;
   let a = (0, d.KS)(i),
-    l = (0, c.F6)(i, g.default, p.Z),
-    o = null != s ? (0, c.F6)(s, g.default, p.Z) : void 0;
+    l = (0, c.F6)(i, p.default, g.Z),
+    o = null != s ? (0, c.F6)(s, p.default, g.Z) : void 0;
   return (0, r.jsx)(N, {
     icon: null != a && (0, r.jsx)(a, {
       className: x.labelIcon
@@ -109,7 +109,7 @@ function y(e) {
         }
         of _[n.channel.id])((0, u.r8)(r.type) || (0, u.bw)(r.type)) && (r.id !== s && (null == d ? void 0 : d.has(r.id)) && (r.id !== a || s === a) || (s === r.id && (t = !0), e.push({
         value: r.id,
-        label: (0, c.F6)(r, g.default, p.Z)
+        label: (0, c.F6)(r, p.default, g.Z)
       })));
     return null == s || t || null == y || e.push({
       value: s,

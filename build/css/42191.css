@@ -1,6 +1,6 @@
 /**
   Module ID: 42191
-  Original File Name: 4dce147eba08aaa8
+  Original File Name: 64b1049b91241e5e
 **/
 .container__4216d {
     align-items: center;
@@ -720,7 +720,7 @@
 }
 
 .obscured__6c706.hiddenMosaicItem__6c706.hiddenExplicit__6c706 {
-    filter: blur(40px) brightness(.55)
+    filter: blur(var(--__obscured-background-blur-radius)) brightness(var(--__obscured-background-brightness))
 }
 
 .obscureVideoSpacing__6c706 {
@@ -1344,4 +1344,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=4dce147eba08aaa8.css.map*/
+/*# sourceMappingURL=64b1049b91241e5e.css.map*/

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(481060),
   u = n(570140),
   m = n(275759),
-  p = n(313201),
-  g = n(63063),
+  g = n(313201),
+  p = n(63063),
   h = n(243730),
   f = n(764260),
   b = n(946724),
@@ -46,7 +46,7 @@ function E(e) {
   }
   return e
 }
-let S = (0, p.hQ)();
+let S = (0, g.hQ)();
 
 function T(e, t) {
   return t !== m.O1.AND ? Object.values(o().groupBy(e, e => "".concat(e.connectionType, ":").concat(e.applicationId))) : 0 === e.length ? [] : [
@@ -69,7 +69,7 @@ function P(e) {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: y.NW.format(y.t.q5f7tL, {
-        helpdeskArticleUrl: g.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
+        helpdeskArticleUrl: p.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(d.zxk, {
       disabled: n,
@@ -91,12 +91,12 @@ function w(e) {
     setSelectedSection: l,
     integrations: o
   } = e, {
-    headerHeight: p,
+    headerHeight: g,
     headerRef: w
   } = (0, x.Z)(0), {
     scrolledToTop: R,
-    handleScroll: D
-  } = (0, N.V)(), Z = (0, c.e7)([h.Z], () => {
+    handleScroll: Z
+  } = (0, N.V)(), D = (0, c.e7)([h.Z], () => {
     var e;
     return null === (e = h.Z.getRoleMemberCount(t.id)) || void 0 === e ? void 0 : e[n.id]
   }, [n.id, t.id]), k = (0, c.Wu)([b.Z], () => {
@@ -169,7 +169,7 @@ function w(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           children: y.NW.format(y.t.q5f7tL, {
-            helpdeskArticleUrl: g.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
+            helpdeskArticleUrl: p.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, s) {
@@ -258,9 +258,9 @@ function w(e) {
   return (0, r.jsx)(d.yWw, {
     className: C.scroller,
     style: {
-      scrollPaddingTop: p
+      scrollPaddingTop: g
     },
-    onScroll: D,
+    onScroll: Z,
     children: (0, r.jsxs)("div", {
       className: I.contentWidth,
       children: [(0, r.jsx)("div", {
@@ -274,7 +274,7 @@ function w(e) {
           selectedSection: v.ZI.VERIFICATIONS,
           setSelectedSection: l
         })
-      }), (null != Z ? Z : 0) > 0 ? (0, r.jsxs)("div", {
+      }), (null != D ? D : 0) > 0 ? (0, r.jsxs)("div", {
         className: C.warningContainer,
         children: [(0, r.jsx)(d.P4T, {
           size: "custom",

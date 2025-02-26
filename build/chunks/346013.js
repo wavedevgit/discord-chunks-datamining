@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => F
 }), n(47120);
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(336197),
   y = n(406432),
   x = n(348238),
-  O = n(38267),
-  E = n(184301),
+  E = n(38267),
+  O = n(184301),
   j = n(347475),
   N = n(695346),
   C = n(271383),
@@ -78,7 +78,7 @@ function F(e) {
     channel: U
   } = e, B = (0, w.J)(l, F), {
     setPopout: G
-  } = (0, O.Z)(F.id, k.d$), H = (0, x.qo)(F, U, G, !0), V = N.QK.useSetting(), z = (0, T.n)(), [K, Y] = i.useState(!1), [X, q] = i.useState((null == B ? void 0 : B.coverImage) == null), Q = (0, u.e7)([m.Z], () => m.Z.useReducedMotion), J = (0, u.e7)([C.ZP, I.default], () => {
+  } = (0, E.Z)(F.id, k.d$), H = (0, x.qo)(F, U, G, !0), V = N.QK.useSetting(), z = (0, T.n)(), [K, Y] = i.useState(!1), [X, q] = i.useState((null == B ? void 0 : B.coverImage) == null), Q = (0, u.e7)([m.Z], () => m.Z.useReducedMotion), J = (0, u.e7)([C.ZP, I.default], () => {
     var e;
     return C.ZP.isMember(null == B ? void 0 : B.guildId, null === (e = I.default.getCurrentUser()) || void 0 === e ? void 0 : e.id)
   }, [B]), $ = (0, u.e7)([C.ZP], () => (null == B ? void 0 : B.authorId) != null ? C.ZP.getMember(B.guildId, B.authorId) : null), ee = (0, g.Z)((null == $ ? void 0 : $.avatarDecoration) != null ? null == $ ? void 0 : $.avatarDecoration : null == B ? void 0 : null === (t = B.user) || void 0 === t ? void 0 : t.avatarDecoration), [et, en] = i.useMemo(() => {
@@ -99,7 +99,7 @@ function F(e) {
     }), B.canAccess ? (0, v.Z)(Z.Z5c.CHANNEL(B.guildId, B.threadId, B.messageId)) : J ? (0, v.Z)(Z.Z5c.CHANNEL(B.guildId, B.parentChannelId)) : await P.Ub(B.guildId, {}, {
       channelId: B.parentChannelId
     }))
-  }, [B, U, J]), ec = i.useCallback(() => (s()((null == B ? void 0 : B.authorId) != null, "Author Id cannot be null when loading user profile"), (0, E.Z)(B.authorId, B.avatarUrl, {
+  }, [B, U, J]), ec = i.useCallback(() => (s()((null == B ? void 0 : B.authorId) != null, "Author Id cannot be null when loading user profile"), (0, O.Z)(B.authorId, B.avatarUrl, {
     guildId: B.guildId,
     channelId: U.id
   })), [B, U]);

@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   W: () => x,
   u: () => y
@@ -56,23 +56,23 @@ function x(e) {
     staticBannerSrc: o,
     videoBannerSrc: y,
     bannerAspectRatio: x = 0,
-    iconSrc: O,
-    embedUrl: E,
+    iconSrc: E,
+    embedUrl: O,
     actions: j = [],
     onView: N,
     onLinkCopied: C
   } = e, {
     primaryColor: I,
     secondaryColor: S
-  } = (0, p.Z)(null != O ? O : o), P = "linear-gradient(45deg, ".concat(I, ", ").concat(S, ")"), T = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), A = a.useRef(!1), w = (0, d.O)(e => {
+  } = (0, p.Z)(null != E ? E : o), P = "linear-gradient(45deg, ".concat(I, ", ").concat(S, ")"), T = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), A = a.useRef(!1), w = (0, d.O)(e => {
     null != N && !1 === A.current && e && (N(), A.current = !0)
-  }, void 0, null != N), Z = f.wS && null != E ? (0, i.jsx)(c.zxk, {
+  }, void 0, null != N), Z = f.wS && null != O ? (0, i.jsx)(c.zxk, {
     look: c.zxk.Looks.BLANK,
     size: c.zxk.Sizes.ICON,
     "aria-label": g.NW.string(g.t.WqhZsr),
     className: _.linkIcon,
     onClick: () => {
-      (0, f.JG)(E), (0, c.showToast)((0, c.createToast)(g.NW.string(g.t["L/PwZW"]), c.ToastType.SUCCESS)), null == C || C()
+      (0, f.JG)(O), (0, c.showToast)((0, c.createToast)(g.NW.string(g.t["L/PwZW"]), c.ToastType.SUCCESS)), null == C || C()
     },
     children: (0, i.jsx)(c.xPt, {
       size: "xs",
@@ -122,10 +122,10 @@ function x(e) {
         }), Z]
       }), (0, i.jsxs)("div", {
         className: _.contentWrapper,
-        children: [null != O && (0, i.jsx)("div", {
+        children: [null != E && (0, i.jsx)("div", {
           className: _.img,
           style: {
-            backgroundImage: "url(".concat(O, ")")
+            backgroundImage: "url(".concat(E, ")")
           }
         }), (0, i.jsxs)("div", {
           className: _.content,

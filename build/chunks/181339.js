@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(367907),
   u = n(933557),
   m = n(369994),
-  p = n(162157),
-  g = n(177862),
+  g = n(162157),
+  p = n(177862),
   h = n(11265),
   f = n(592125),
   b = n(984933),
@@ -34,7 +34,7 @@ function I(e) {
     isExpanded: n,
     selectedChannelId: s,
     className: l
-  } = e, h = (0, p.BT)(t), b = t.canHaveRaidActivityAlerts(), [x, j] = i.useState(b), N = (0, o.e7)([f.Z], () => f.Z.getChannel(s), [s]), v = (0, u.ZP)(N), I = async () => {
+  } = e, h = (0, g.BT)(t), b = t.canHaveRaidActivityAlerts(), [x, j] = i.useState(b), N = (0, o.e7)([f.Z], () => f.Z.getChannel(s), [s]), v = (0, u.ZP)(N), I = async () => {
     j(!x);
     try {
       var e;
@@ -42,7 +42,7 @@ function I(e) {
       let n = null !== (e = null != s ? s : t.safetyAlertsChannelId) && void 0 !== e ? e : null;
       if (null != n) {
         let e = {
-          raid_alert_type: g.wR.JOIN_RAID,
+          raid_alert_type: p.wR.JOIN_RAID,
           enabled: !b,
           raid_alert_channel_id: n,
           guild_id: t.id,
@@ -90,7 +90,7 @@ function E(e) {
     selectedChannelId: i,
     setSelectedChannelId: s,
     className: m
-  } = e, p = null !== (t = n.safetyAlertsChannelId) && void 0 !== t ? t : null, h = (0, o.Wu)([b.ZP, N.default, j.Z, x.Z], () => {
+  } = e, g = null !== (t = n.safetyAlertsChannelId) && void 0 !== t ? t : null, h = (0, o.Wu)([b.ZP, N.default, j.Z, x.Z], () => {
     let e = b.ZP.getChannels(n.id)[b.sH].filter(e => {
       let {
         channel: t
@@ -105,11 +105,11 @@ function E(e) {
         label: (0, u.F6)(t, N.default, j.Z, !0)
       }
     });
-    return null != p ? e : [...e]
-  }, [n.id, p]), f = async e => {
+    return null != g ? e : [...e]
+  }, [n.id, g]), f = async e => {
     s(e);
     try {
-      if (e !== p && (await v.Z.saveGuild(n.id, {
+      if (e !== g && (await v.Z.saveGuild(n.id, {
           safetyAlertsChannelId: e
         }, {
           throwErr: !0
@@ -117,7 +117,7 @@ function E(e) {
           safetyAlertsChannelId: e
         })), null != e) {
         let t = {
-          raid_alert_type: g.wR.JOIN_RAID,
+          raid_alert_type: p.wR.JOIN_RAID,
           enabled: n.canHaveRaidActivityAlerts(),
           raid_alert_channel_id: e,
           guild_id: n.id,
@@ -126,7 +126,7 @@ function E(e) {
         (0, d.yw)(O.rMx.GUILD_RAID_ALERTS_SETUP, t)
       }
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(y.NW.string(y.t["46Rs3t"]), c.ToastType.FAILURE)), s(p)
+      (0, c.showToast)((0, c.createToast)(y.NW.string(y.t["46Rs3t"]), c.ToastType.FAILURE)), s(g)
     }
   };
   return (0, r.jsx)("div", {

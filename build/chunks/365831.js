@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   y: () => I
 }), n(47120), n(266796);
@@ -40,7 +40,7 @@ function x(e) {
   return e
 }
 
-function O(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = {
+let O = {
     mass: 2,
     friction: 30,
     tension: 500,
@@ -107,7 +107,7 @@ function I(e) {
       height: 72 * !!D,
       pointerEvents: D ? "auto" : "none",
       backgroundColor: null !== (t = null == I ? void 0 : I.baseColor) && void 0 !== t ? t : w,
-      config: E,
+      config: O,
       delay: W ? 150 : 100 * !!F
     }, "respect-motion-settings"),
     B = (0, c.Yzy)(null == I ? void 0 : I.id, {
@@ -124,7 +124,7 @@ function I(e) {
         opacity: 0,
         delay: 50
       },
-      config: E
+      config: O
     }, "respect-motion-settings"),
     [G] = (0, c.bYB)(3, e => ({
       from: null == a ? {
@@ -142,7 +142,7 @@ function I(e) {
         opacity: 1
       } : [{
         translateY: -4,
-        config: O(x({}, C), {
+        config: E(x({}, C), {
           restVelocity: .5
         })
       }, {
@@ -171,7 +171,7 @@ function I(e) {
         translateX: 32 * (null != n),
         delay: 0
       },
-      config: E
+      config: O
     }, "respect-motion-settings"),
     V = (0, c.Yzy)(null == I ? void 0 : I.name, {
       key: L,
@@ -258,7 +258,7 @@ function I(e) {
           children: e => (0, r.jsx)(l.animated.div, {
             className: y.buttonWrapper,
             style: G[0],
-            children: (0, r.jsx)(c.P3F, O(x({
+            children: (0, r.jsx)(c.P3F, E(x({
               className: y.button,
               "aria-hidden": M,
               focusProps: {
@@ -284,7 +284,7 @@ function I(e) {
         children: e => (0, r.jsx)(l.animated.div, {
           className: y.buttonWrapper,
           style: G[1],
-          children: (0, r.jsx)(c.P3F, O(x({
+          children: (0, r.jsx)(c.P3F, E(x({
             className: y.button,
             "aria-hidden": M,
             focusProps: {

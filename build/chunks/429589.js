@@ -1,12 +1,12 @@
-/** Chunk was on 83366 **/
+/** Chunk was on 79120 **/
 n.d(t, {
   Z: () => a
 });
 var r = n(200651);
 n(192379);
 var l = n(481060),
-  o = n(103450),
-  i = n(915863);
+  i = n(103450),
+  o = n(915863);
 
 function a(e) {
   var {
@@ -14,23 +14,23 @@ function a(e) {
     embeddedActivity: n,
     user: a,
     onAction: s,
-    ButtonComponent: c = i.Z
+    ButtonComponent: c = o.Z
   } = e, u = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
       var n, r, l = {},
-        o = Object.keys(e);
-      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
       return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
   }(e, ["activity", "embeddedActivity", "user", "onAction", "ButtonComponent"]);
-  let d = (0, o.e)({
+  let d = (0, i.e)({
     activity: null != t ? t : void 0,
     embeddedActivity: n,
     user: a,
@@ -38,19 +38,19 @@ function a(e) {
   });
   if (null == d) return null;
   let {
-    isJoining: p,
-    handleJoinRequest: f,
-    buttonCTA: O,
-    tooltip: y,
+    isJoining: f,
+    handleJoinRequest: p,
+    buttonCTA: m,
+    tooltip: g,
     isEnabled: b
   } = d;
   return (0, r.jsx)(l.ua7, {
-    text: y,
+    text: g,
     children: e => {
       var t, n;
       let {
         onMouseEnter: l,
-        onMouseLeave: o
+        onMouseLeave: i
       } = e;
       return (0, r.jsx)(c, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -70,14 +70,14 @@ function a(e) {
         }
         return e
       }({
-        onClick: f,
+        onClick: p,
         onMouseEnter: l,
-        onMouseLeave: o,
+        onMouseLeave: i,
         disabled: !b,
-        submitting: p,
+        submitting: f,
         fullWidth: !0
       }, u), n = n = {
-        children: O
+        children: m
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

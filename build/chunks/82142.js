@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => w
 }), n(47120);
@@ -18,8 +18,8 @@ let h = {},
   v = [],
   y = new Set,
   x = {},
-  O = {},
-  E = new Set;
+  E = {},
+  O = new Set;
 
 function j(e) {
   let t = p.Z.createFromServer(e),
@@ -44,7 +44,7 @@ function j(e) {
 
 function N(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  if (t && !E.has(e.channel_id)) return !1;
+  if (t && !O.has(e.channel_id)) return !1;
   let n = (0, m.Fp)(e) ? (0, m.Q_)((null == e ? void 0 : e.embeds) != null ? null == e ? void 0 : e.embeds[0].url : void 0) : (0, m.Q_)(e.content);
   return 0 !== n.length && (n.forEach(e => {
     _.includes(e) || v.includes(e) || (C({
@@ -72,7 +72,7 @@ function S(e) {
     channelId: t,
     messages: n
   } = e;
-  E.add(t), n.forEach(e => N(e, !0))
+  O.add(t), n.forEach(e => N(e, !0))
 }
 
 function P(e) {
@@ -88,7 +88,7 @@ class T extends(r = s.ZP.Store) {
     return null == t || t.isExpired() ? null : t
   }
   getError(e) {
-    return null != e ? O[e] : null
+    return null != e ? E[e] : null
   }
   getForGifterSKUAndPlan(e, t, n) {
     return Array.from(g.values()).filter(r => r.userId === e && r.skuId === t && (null == n || r.subscriptionPlanId === n) && !r.isExpired())
@@ -126,13 +126,13 @@ a = "GiftCodeStore", (i = "displayName") in T ? Object.defineProperty(T, i, {
 }) : T[i] = a;
 let A = new T(d.Z, {
     CONNECTION_OPEN: function() {
-      return E.clear(), !1
+      return O.clear(), !1
     },
     CHANNEL_SELECT: function(e) {
       let {
         channelId: t
       } = e;
-      return null != t && E.add(t), !1
+      return null != t && O.add(t), !1
     },
     GIFT_CODE_RESOLVE: C,
     GIFT_CODE_RESOLVE_SUCCESS: function(e) {
@@ -171,7 +171,7 @@ let A = new T(d.Z, {
       } = e;
       b = b.filter(e => e !== t);
       let r = g.get(t);
-      if (O[t] = n, null != r) switch (n.code) {
+      if (E[t] = n, null != r) switch (n.code) {
         case f.evJ.UNKNOWN_GIFT_CODE:
           g.set(t, r.set("revoked", !0));
           break;

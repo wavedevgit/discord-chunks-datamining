@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(430824),
   u = n(700785),
   m = n(8426),
-  p = n(969632),
-  g = n(824990),
+  g = n(969632),
+  p = n(824990),
   h = n(981631),
   f = n(388032),
   b = n(339945);
@@ -22,10 +22,10 @@ let x = [],
   j = function(e) {
     let {
       guildId: t
-    } = e, n = (0, a.e7)([d.Z], () => d.Z.getGuild(t)), j = (0, a.Wu)([p.Z], () => {
+    } = e, n = (0, a.e7)([d.Z], () => d.Z.getGuild(t)), j = (0, a.Wu)([g.Z], () => {
       var e, t;
-      return null !== (t = null === (e = p.Z.getSettings().resourceChannels) || void 0 === e ? void 0 : e.map(e => e.channelId)) && void 0 !== t ? t : x
-    }), N = (0, a.Wu)([p.Z], () => p.Z.getDismissedSuggestedChannelIds(t)), v = (0, a.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), _ = i.useMemo(() => (0, s.chain)(v).filter(e => e.channel.type === h.d4z.GUILD_TEXT && e.channel.id !== (null == n ? void 0 : n.rulesChannelId) && !N.includes(e.channel.id) && !j.includes(e.channel.id) && u.Uu(h.Plq.VIEW_CHANNEL, e.channel) && !u.Uu(h.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [v, N, null == n ? void 0 : n.rulesChannelId, j]), O = i.useCallback(() => {
+      return null !== (t = null === (e = g.Z.getSettings().resourceChannels) || void 0 === e ? void 0 : e.map(e => e.channelId)) && void 0 !== t ? t : x
+    }), N = (0, a.Wu)([g.Z], () => g.Z.getDismissedSuggestedChannelIds(t)), v = (0, a.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), _ = i.useMemo(() => (0, s.chain)(v).filter(e => e.channel.type === h.d4z.GUILD_TEXT && e.channel.id !== (null == n ? void 0 : n.rulesChannelId) && !N.includes(e.channel.id) && !j.includes(e.channel.id) && u.Uu(h.Plq.VIEW_CHANNEL, e.channel) && !u.Uu(h.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [v, N, null == n ? void 0 : n.rulesChannelId, j]), O = i.useCallback(() => {
       let e = _.map(e => e.channel.id);
       (0, m.q6)(t, e)
     }, [t, _]);
@@ -56,7 +56,7 @@ let x = [],
           })]
         }), (0, r.jsx)("div", {
           className: b.suggestedChannels,
-          children: _.map((e, t) => (0, r.jsx)(g.Z, {
+          children: _.map((e, t) => (0, r.jsx)(p.Z, {
             channel: e.channel,
             end: t < _.length - 1
           }, e.channel.id))

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(774078),
   u = n(15640),
   m = n(774380),
-  p = n(404270),
-  g = n(386937),
+  g = n(404270),
+  p = n(386937),
   h = n(316350),
   f = n(899667),
   b = n(626135),
@@ -110,12 +110,12 @@ function E() {
           helpdeskArticle: j.Z.getArticleURL(v.BhN.GUILD_SUBSCRIPTIONS)
         })
       })]
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(p.Z, {
       tiers: (0, x.cP)(null != e && e.hasFeature(v.oNc.COMMUNITY) && e.maxStageVideoChannelUsers >= v.B9o),
       renderTier: I
     }), (0, r.jsx)("div", {
       className: O.divider
-    }), n ? (0, r.jsx)(p.Z, {}) : null, n ? (0, r.jsx)(m.Z, {
+    }), n ? (0, r.jsx)(g.Z, {}) : null, n ? (0, r.jsx)(m.Z, {
       onOpenPremiumClick: () => void b.default.track(v.rMx.PREMIUM_PROMOTION_OPENED, {
         location: {
           page: v.ZY5.GUILD_SETTINGS,

@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => F
 }), n(47120);
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(895924),
   y = n(311819),
   x = n(321231),
-  O = n(758199),
-  E = n(429551),
+  E = n(758199),
+  O = n(429551),
   j = n(973616),
   N = n(314897),
   C = n(592125),
@@ -47,13 +47,13 @@ let W = i.memo(e => {
     return e.start(c ? 15 * A.Z.Millis.SECOND : A.Z.Millis.SECOND, () => {
       r((new Date().getTime() - t) / A.Z.Millis.SECOND)
     }), () => e.stop()
-  }, [c, t]), (0, E.m)(n)
+  }, [c, t]), (0, O.m)(n)
 });
 W.displayName = "ActivityRuntimeCounter";
 let F = i.memo(function(e) {
   var t, n, l, d;
   let {
-    application: E,
+    application: O,
     channelId: A,
     guildId: Z
   } = e, {
@@ -63,20 +63,20 @@ let F = i.memo(function(e) {
     currentEmbeddedActivity: z,
     activityLaunchState: K
   } = (0, o.cj)([u.ZP], () => ({
-    embeddedActivity: u.ZP.getEmbeddedActivitiesForChannel(null != G ? G : "").find(e => e.applicationId === E.id),
+    embeddedActivity: u.ZP.getEmbeddedActivitiesForChannel(null != G ? G : "").find(e => e.applicationId === O.id),
     currentEmbeddedActivity: u.ZP.getCurrentEmbeddedActivity(),
-    activityLaunchState: u.ZP.getLaunchState(E.id, null != G ? G : void 0)
-  }), [G, E.id]), Y = null == V ? void 0 : V.userIds, X = (0, o.Wu)([S.default], () => Array.from(null != Y ? Y : []).map(e => S.default.getUser(e)).filter(w.lm), [Y]), q = (0, o.e7)([I.Z], () => {
+    activityLaunchState: u.ZP.getLaunchState(O.id, null != G ? G : void 0)
+  }), [G, O.id]), Y = null == V ? void 0 : V.userIds, X = (0, o.Wu)([S.default], () => Array.from(null != Y ? Y : []).map(e => S.default.getUser(e)).filter(w.lm), [Y]), q = (0, o.e7)([I.Z], () => {
     if (null == Y) return null;
     for (let e of Y) {
-      let t = I.Z.findActivity(e, e => e.application_id === E.id);
+      let t = I.Z.findActivity(e, e => e.application_id === O.id);
       if (null != t) return t
     }
     return null
-  }, [E.id, Y]), Q = null == q ? void 0 : q.details, J = i.useMemo(() => {
-    let e = new j.ZP(E);
+  }, [O.id, Y]), Q = null == q ? void 0 : q.details, J = i.useMemo(() => {
+    let e = new j.ZP(O);
     return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = L.wT), e
-  }, [E]), $ = (0, f.s5)({
+  }, [O]), $ = (0, f.s5)({
     userId: H,
     channelId: A,
     application: J
@@ -87,13 +87,13 @@ let F = i.memo(function(e) {
     channel: B
   }), en = i.useId(), er = null != K && K.isLaunching && K.componentId === en, ei = async () => {
     P.default.track(R.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
-      application_id: E.id,
+      application_id: O.id,
       channel_id: A,
       channel_type: null == B ? void 0 : B.type,
       is_activity_start: ee,
       cta: "Play"
     }), ee ? await (0, m.Z)({
-      targetApplicationId: E.id,
+      targetApplicationId: O.id,
       channelId: A,
       locationObject: U.location,
       analyticsLocations: F,
@@ -116,9 +116,9 @@ let F = i.memo(function(e) {
   if (eo) {
     let e;
     let t = T.ZP.getApplicationIconURL({
-      id: E.id,
-      icon: E.icon,
-      bot: E.bot
+      id: O.id,
+      icon: O.icon,
+      bot: O.bot
     });
     et.disabled && (e = null !== (l = et.tooltip) && void 0 !== l ? l : et.text);
     let i = S.default.getCurrentUser(),
@@ -141,12 +141,12 @@ let F = i.memo(function(e) {
             }
         }
       }(q);
-    return (0, r.jsx)(O.W, {
-      header: E.name,
+    return (0, r.jsx)(E.W, {
+      header: O.name,
       title: c,
       iconSrc: t,
       embedUrl: (0, y.H)({
-        applicationId: E.id,
+        applicationId: O.id,
         referrerId: null == i ? void 0 : i.id
       }),
       info: (0, r.jsxs)("div", {
@@ -186,11 +186,11 @@ let F = i.memo(function(e) {
         label: "View",
         onClick() {
           P.default.track(R.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
-            application_id: E.id,
+            application_id: O.id,
             channel_id: A,
             channel_type: null == B ? void 0 : B.type,
             cta: "View"
-          }), (0, b.X)(E.id)
+          }), (0, b.X)(O.id)
         }
       }]
     })

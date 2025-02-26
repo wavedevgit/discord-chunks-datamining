@@ -1,8 +1,8 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => D,
-  j: () => Z
+  Z: () => Z,
+  j: () => D
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(111028),
   u = n(977258),
   m = n(45966),
-  p = n(473403),
-  g = n(454585),
+  g = n(473403),
+  p = n(454585),
   h = n(323502),
   f = n(958832),
   b = n(324067),
@@ -116,7 +116,7 @@ function R(e) {
             className: w.channelInfo,
             children: [(0, r.jsxs)("div", {
               className: w.channelName,
-              children: [(0, r.jsx)(p._, {
+              children: [(0, r.jsx)(g._, {
                 channel: e,
                 guild: t
               }), (0, r.jsx)(d.Z, {
@@ -133,7 +133,7 @@ function R(e) {
               children: (0, r.jsx)(o.Text, {
                 className: w.topic,
                 variant: "text-xs/normal",
-                children: g.Z.parseTopic(e.topic, !0, {
+                children: p.Z.parseTopic(e.topic, !0, {
                   channelId: e.id
                 })
               })
@@ -168,10 +168,10 @@ function R(e) {
   })
 }
 
-function D(e) {
+function Z(e) {
   let {
     saveOnClose: t = !1
-  } = e, n = (0, l.e7)([N.Z], () => N.Z.getGuild()), s = (0, l.e7)([m.Z], () => m.Z.isLoading()), c = (0, l.e7)([x.ZP], () => x.ZP.getChannels(null == n ? void 0 : n.id)), d = (0, l.e7)([b.Z], () => b.Z.getCategories(null == n ? void 0 : n.id)), u = (0, l.e7)([y.Z], () => y.Z.advancedMode), p = i.useRef(null), [g, h] = i.useState(!1), f = i.useRef(n);
+  } = e, n = (0, l.e7)([N.Z], () => N.Z.getGuild()), s = (0, l.e7)([m.Z], () => m.Z.isLoading()), c = (0, l.e7)([x.ZP], () => x.ZP.getChannels(null == n ? void 0 : n.id)), d = (0, l.e7)([b.Z], () => b.Z.getCategories(null == n ? void 0 : n.id)), u = (0, l.e7)([y.Z], () => y.Z.advancedMode), g = i.useRef(null), [p, h] = i.useState(!1), f = i.useRef(n);
   return (i.useEffect(() => {
     f.current = n
   }), i.useEffect(() => {
@@ -195,7 +195,7 @@ function D(e) {
         className: w.collapseButton,
         onClick: () => h(e => !e),
         children: (0, r.jsx)(j.Z, {
-          direction: g ? j.Z.Directions.DOWN : j.Z.Directions.UP,
+          direction: p ? j.Z.Directions.DOWN : j.Z.Directions.UP,
           height: 16,
           width: 16
         })
@@ -210,7 +210,7 @@ function D(e) {
       }), (0, r.jsx)(I.Wu, {
         className: w.advancedModeToggle,
         guildId: n.id
-      }), g ? null : (0, r.jsxs)(r.Fragment, {
+      }), p ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(R, {
           guild: n
         }), (0, r.jsx)(E.Z, {
@@ -233,7 +233,7 @@ function D(e) {
           color: "header-secondary",
           children: P.NW.string(P.t.bLDQ1d)
         }), (0, r.jsx)("div", {
-          ref: p,
+          ref: g,
           className: w.advancedModeQuestions,
           children: (0, r.jsx)(T.Z, {
             guildId: n.id,
@@ -246,7 +246,7 @@ function D(e) {
     }), (0, r.jsx)(S.Z, {
       guild: n,
       scrollToQuestions: () => {
-        null != p.current && p.current.scrollIntoView({
+        null != g.current && g.current.scrollIntoView({
           behavior: "smooth"
         })
       }
@@ -254,7 +254,7 @@ function D(e) {
   })
 }
 
-function Z() {
+function D() {
   let e = (0, l.e7)([N.Z], () => N.Z.getProps().guild),
     t = (0, l.e7)([_.Z], () => _.Z.submitting),
     n = (0, l.e7)([y.Z], () => y.Z.advancedMode);

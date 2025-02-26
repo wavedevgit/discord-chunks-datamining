@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => N
 }), n(47120), n(653041);
@@ -53,10 +53,10 @@ function y(e, t) {
   }), e
 }
 let x = (e, t) => null == e && null == t || e === t,
-  O = (e, t) => e.findIndex(e => x(e.emoji.id, null == t ? void 0 : t.id) && x(e.emoji.name, null == t ? void 0 : t.name)),
-  E = (e, t) => {
+  E = (e, t) => e.findIndex(e => x(e.emoji.id, null == t ? void 0 : t.id) && x(e.emoji.name, null == t ? void 0 : t.name)),
+  O = (e, t) => {
     if (null == t) return e;
-    let n = O(e, t);
+    let n = E(e, t);
     return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
   };
 class j extends i.PureComponent {
@@ -80,8 +80,8 @@ class j extends i.PureComponent {
       isForumToolbar: v,
       channel: y,
       className: x,
-      forceAddReactions: O,
-      reactionClassName: E,
+      forceAddReactions: E,
+      reactionClassName: O,
       useChatFontScaling: j,
       forceHideReactionCreates: N,
       remainingReactions: C,
@@ -90,14 +90,14 @@ class j extends i.PureComponent {
     } = this.props, {
       disableTransitionAppear: P
     } = this.state, T = j ? _ : g, A = S > 0;
-    if (!A && !O) return null;
+    if (!A && !E) return null;
     let {
       canShowImprovedReactionButton: w
     } = c.Z.getCurrentConfig({
       location: "message_reactions"
     }, {
       autoTrackExposure: !0
-    }), Z = O || A;
+    }), Z = E || A;
     return (0, r.jsxs)(l.W, {
       component: "div",
       className: o()(T.reactions, x, {
@@ -122,13 +122,13 @@ class j extends i.PureComponent {
         isPendingMember: b,
         isForumToolbar: v,
         useChatFontScaling: j,
-        className: E,
+        className: O,
         emojiSize: w ? "reactionLarge" : "reaction"
       }), C > 0 && (0, r.jsx)(s.P3F, {
         onClick: t => {
           t.stopPropagation(), (0, f.op)(y, e)
         },
-        className: o()(T.reaction, E, T.remainingReactions),
+        className: o()(T.reaction, O, T.remainingReactions),
         "aria-label": h.NW.string(h.t.lfIHs7),
         children: (0, r.jsxs)(s.Text, {
           className: T.reactionInner,
@@ -167,7 +167,7 @@ let N = e => {
     visibleReactionsCount: s
   } = i.useMemo(() => {
     let e = [],
-      r = E(t.reactions, a),
+      r = O(t.reactions, a),
       i = null != n && n < r.length ? r.slice(0, n) : r,
       o = r.length - i.length,
       l = r.length;

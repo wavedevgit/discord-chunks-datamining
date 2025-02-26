@@ -1,5 +1,4 @@
-/** Chunk was on 13368 **/
-"use strict";
+/** Chunk was on 68051 **/
 e.exports = {
   pro: "pro__30cbe",
   tip: "tip__30cbe",

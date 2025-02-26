@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -14,13 +14,13 @@ var r = n(200651),
   u = n(388032),
   m = n(950092);
 
-function p(e) {
+function g(e) {
   let {
     guild: t
-  } = e, n = i.useId(), p = (0, s.e7)([o.Z], () => null != t && o.Z.can(d.Plq.MANAGE_GUILD, t), [t]), g = t.hasFeature(d.oNc.COMMUNITY), [h, f] = i.useState(t.hasFeature(d.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), b = i.useCallback(async e => {
+  } = e, n = i.useId(), g = (0, s.e7)([o.Z], () => null != t && o.Z.can(d.Plq.MANAGE_GUILD, t), [t]), p = t.hasFeature(d.oNc.COMMUNITY), [h, f] = i.useState(t.hasFeature(d.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), b = i.useCallback(async e => {
     f(e), await (0, l.fp)(t, e)
   }, [t]);
-  return g ? null : (0, r.jsxs)("div", {
+  return p ? null : (0, r.jsxs)("div", {
     className: m.bannerContainer,
     children: [(0, r.jsx)(c.Z, {
       width: 64,
@@ -42,7 +42,7 @@ function p(e) {
         id: n,
         checked: h,
         onChange: b,
-        disabled: !p
+        disabled: !g
       })
     })]
   })

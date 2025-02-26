@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => y
 }), n(789020), n(47120);
@@ -22,7 +22,7 @@ var r = n(200651),
 
 function y(e) {
   var t, y;
-  let x, O, E, {
+  let x, E, O, {
       onTransitionToInviteChannel: j,
       onAcceptInstantInvite: N,
       guild: C,
@@ -63,7 +63,7 @@ function y(e) {
       isStage: W,
       isStream: !1
     });
-  return O = (0, r.jsxs)("span", {
+  return E = (0, r.jsxs)("span", {
     className: v.infoTitle,
     children: [(0, r.jsx)(s.Z, {
       guildId: C.id,
@@ -81,7 +81,7 @@ function y(e) {
         disableBoostClick: !0
       })
     })]
-  }), F && (E = (0, r.jsx)(o.DY3, {
+  }), F && (O = (0, r.jsx)(o.DY3, {
     className: v.tooltipContainer,
     text: b.NW.string(b.t["/FeTKy"]),
     children: (0, r.jsx)(o.d3s, {
@@ -89,7 +89,7 @@ function y(e) {
       color: "currentColor",
       className: v.infoIcon
     })
-  })), M ? (O = (0, r.jsx)(d.Z.Channel, {
+  })), M ? (E = (0, r.jsx)(d.Z.Channel, {
     channel: R
   }), x = (0, r.jsxs)("span", {
     className: v.infoTitle,
@@ -113,14 +113,14 @@ function y(e) {
       guild: C
     }), (0, r.jsx)(d.Z.Header, {
       text: Y,
-      extra: E
+      extra: O
     }), (0, r.jsxs)(d.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: v.headerLine,
         children: [(0, r.jsx)(d.Z.Icon, {
           guild: C
         }), (0, r.jsx)(d.Z.Info, {
-          title: O,
+          title: E,
           onClick: B ? V : L ? K : null,
           children: x
         })]

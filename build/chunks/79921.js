@@ -1,5 +1,4 @@
-/** Chunk was on 13368 **/
-"use strict";
+/** Chunk was on 68051 **/
 e.exports = {
   "outgoing-call-pulse": "outgoing-call-pulse__07f91",
   list: "list__07f91",

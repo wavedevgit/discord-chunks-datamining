@@ -1,5 +1,4 @@
-/** Chunk was on 55186 **/
-"use strict";
+/** Chunk was on 61080 **/
 e.exports = {
   divider: "divider__5e421",
   updateMessage: "updateMessage__5e421",

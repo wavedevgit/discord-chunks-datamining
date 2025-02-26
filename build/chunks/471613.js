@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var r, i, s, a = n(442837),
   l = n(570140),
@@ -10,7 +10,7 @@ var r, i, s, a = n(442837),
 let d = {},
   u = {},
   m = 0;
-class p extends(s = a.ZP.Store) {
+class g extends(s = a.ZP.Store) {
   initialize() {
     this.waitFor(c.Z)
   }
@@ -25,13 +25,13 @@ class p extends(s = a.ZP.Store) {
     return u[e]
   }
 }
-i = "GuildSettingsEmojiStore", (r = "displayName") in p ? Object.defineProperty(p, r, {
+i = "GuildSettingsEmojiStore", (r = "displayName") in g ? Object.defineProperty(g, r, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : p[r] = i;
-let g = new p(l.Z, {
+}) : g[r] = i;
+let p = new g(l.Z, {
   EMOJI_DELETE: function(e) {
     let {
       guildId: t,

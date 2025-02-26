@@ -163,10 +163,10 @@ function F(e) {
   } = e, M = (0, a.e7)([b.Z], () => b.Z.isFocused()), W = (0, a.e7)([g.default], () => g.default.getCurrentUser()), B = (0, a.e7)([m.Z], () => m.Z.getGuildId()), H = (0, a.e7)([p.Z], () => p.Z.getGuild(B)), {
     reducedMotion: G
   } = l.useContext(i.Sfi), V = (0, i.vRw)(), z = !x.ZP.canUseAnimatedAvatar(W) && w === v.pC.AVATAR, {
-    analyticsLocations: X
+    analyticsLocations: q
   } = (0, s.ZP)(Z, o.Z.SELECT_IMAGE_MODAL);
 
-  function q(e) {
+  function X(e) {
     let {
       imageUri: t,
       file: n,
@@ -181,12 +181,12 @@ function F(e) {
   l.useEffect(() => {
     z && j.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
       type: O.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
-      location_stack: X
+      location_stack: q
     }), j.default.track(O.rMx.OPEN_MODAL, {
       type: O.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location: L
     })
-  }, [z, L, X]);
+  }, [z, L, q]);
   let Y = w === v.pC.AVATAR || w === v.pC.BANNER,
     $ = (0, d.M)(!Y);
   return (0, r.jsxs)(i.Y0X, {
@@ -231,7 +231,7 @@ function F(e) {
             })
           }), (0, r.jsx)(u.ZP, {
             onChange: function(e, t) {
-              if (t.type === C.m.MP4) return q({
+              if (t.type === C.m.MP4) return X({
                 imageUri: e,
                 file: t
               });
@@ -242,7 +242,7 @@ function F(e) {
                 return n => (0, r.jsx)(l, E({
                   imageUri: e,
                   file: t,
-                  onCrop: q,
+                  onCrop: X,
                   uploadType: w,
                   showUpsellHeader: F,
                   allowSkip: !0,
@@ -272,7 +272,7 @@ function F(e) {
                     imageUri: t,
                     file: n
                   } = e;
-                  return q({
+                  return X({
                     imageUri: t,
                     file: n,
                     isFromTenor: !0

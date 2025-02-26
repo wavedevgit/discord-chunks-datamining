@@ -1,7 +1,6 @@
 /** Chunk was on 79120 **/
-"use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => b
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -17,13 +16,13 @@ var r = n(200651),
   m = n(981631),
   g = n(133521);
 
-function y(e) {
+function b(e) {
   let {
     channelId: t,
     guildId: n,
-    userId: y,
-    containerDimensions: b
-  } = e, h = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), [v, O] = l.useState([]), j = v.length < 50;
+    userId: b,
+    containerDimensions: y
+  } = e, O = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), [h, v] = l.useState([]), j = h.length < 50;
   l.useEffect(() => {
     function e(e) {
       var r;
@@ -34,9 +33,9 @@ function y(e) {
         animationType: s,
         animationId: p
       } = e;
-      if (null != y && y !== o || u.Z.getEnabled() && (0, d.Z)(null !== (r = null == a ? void 0 : a.name) && void 0 !== r ? r : "")) return;
+      if (null != b && b !== o || u.Z.getEnabled() && (0, d.Z)(null !== (r = null == a ? void 0 : a.name) && void 0 !== r ? r : "")) return;
       let g = null != a && null != s && null != p;
-      if (l === t && !h && j && g) {
+      if (l === t && !O && j && g) {
         let e = (0, f._r)(a),
           r = null != a.id && !a.animated,
           l = {
@@ -47,7 +46,7 @@ function y(e) {
             url: e,
             userId: o
           };
-        O(e => [...e, l]), c.ZP.trackWithMetadata(m.rMx.VOICE_CHANNEL_EFFECT_VIEWED, {
+        v(e => [...e, l]), c.ZP.trackWithMetadata(m.rMx.VOICE_CHANNEL_EFFECT_VIEWED, {
           channel_id: t,
           guild_id: n
         })
@@ -56,23 +55,23 @@ function y(e) {
     return a.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
       a.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
     }
-  }, [t, n, y, h, j]);
+  }, [t, n, b, O, j]);
   let S = l.useCallback(e => {
-    O(t => {
+    v(t => {
       let n = [...t],
         r = n.findIndex(t => t.id === e);
       return n.splice(r, 1), n
     })
   }, []);
-  return h ? null : (0, r.jsx)("div", {
+  return O ? null : (0, r.jsx)("div", {
     className: g.effectsWrapper,
     style: {
-      width: b.width
+      width: y.width
     },
     children: (0, r.jsx)("div", {
       className: g.effects,
-      children: v.map(e => (0, r.jsx)(p.Z, {
-        containerDimensions: b,
+      children: h.map(e => (0, r.jsx)(p.Z, {
+        containerDimensions: y,
         effect: e,
         onComplete: S
       }, e.id))

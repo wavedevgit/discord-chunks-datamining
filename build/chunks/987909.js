@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => x
 }), n(47120);
@@ -45,7 +45,7 @@ function y(e) {
     assets: d,
     currentUser: t,
     message: a
-  }), [d, t, a]), O = i.useCallback(async () => {
+  }), [d, t, a]), E = i.useCallback(async () => {
     let {
       valid: e
     } = await (0, g.v)({
@@ -119,7 +119,7 @@ function y(e) {
     color: o.Ttl.PRIMARY,
     onMouseEnter: () => _(!0),
     onMouseLeave: () => _(!1),
-    onClick: O,
+    onClick: E,
     children: [(0, r.jsx)(c.ZP, {
       className: b.CTAMessageSticker,
       isInteracting: h,

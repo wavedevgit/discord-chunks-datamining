@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(434404),
   u = n(999382),
   m = n(24318),
-  p = n(822693),
-  g = n(388032),
+  g = n(822693),
+  p = n(388032),
   h = n(822943);
 
 function f(e, t, n) {
@@ -43,15 +43,15 @@ class b extends i.PureComponent {
       widgetEnabled: n
     } = this.props;
     return (0, r.jsxs)(a.xJW, {
-      title: g.NW.string(g.t.LUo0Q0),
-      children: [(0, r.jsx)(p.m, {
+      title: p.NW.string(p.t.LUo0Q0),
+      children: [(0, r.jsx)(g.m, {
         guildId: e.id,
         widgetEnabled: n,
         widgetChannelId: t,
         className: h.spacing
       }), (0, r.jsx)(a.R94, {
         type: a.geA.DESCRIPTION,
-        children: g.NW.string(g.t.LxVR9P)
+        children: p.NW.string(p.t.LxVR9P)
       })]
     })
   }
@@ -60,13 +60,13 @@ class b extends i.PureComponent {
     return (0, r.jsxs)("div", {
       className: h.infoWrapper,
       children: [(0, r.jsx)(a.xJW, {
-        title: g.NW.string(g.t.TRyLUl),
+        title: p.NW.string(p.t.TRyLUl),
         className: h.infoItem,
         children: (0, r.jsx)(o.Z, {
           value: e.id
         })
       }), (0, r.jsx)(a.xJW, {
-        title: g.NW.string(g.t.VECJcH),
+        title: p.NW.string(p.t.VECJcH),
         className: h.infoItem,
         children: (0, r.jsx)(o.Z, {
           value: t
@@ -81,12 +81,12 @@ class b extends i.PureComponent {
         className: h.infoWrapper,
         children: [(0, r.jsxs)(a.xJW, {
           className: h.infoItem,
-          title: g.NW.string(g.t.XVGbn5),
+          title: p.NW.string(p.t.XVGbn5),
           children: [(0, r.jsx)(o.Z, {
             value: t
           }), (0, r.jsx)(a.R94, {
             type: a.geA.DESCRIPTION,
-            children: g.NW.format(g.t["+baN19"], {})
+            children: p.NW.format(p.t["+baN19"], {})
           })]
         }), (0, r.jsx)("img", {
           className: h.infoItem,
@@ -103,7 +103,7 @@ class b extends i.PureComponent {
     } = this.props;
     return null == e ? null : this.props.hide ? (0, r.jsx)(l.Z, {}) : (0, r.jsxs)(a.hjN, {
       tag: a.RB0.H1,
-      title: g.NW.string(g.t.qlhNb2),
+      title: p.NW.string(p.t.qlhNb2),
       children: [this.renderToggle(), this.renderChannelSelect(e), (0, r.jsx)(a.$i$, {
         className: h.divider
       }), this.renderAPIInfo(e), (0, r.jsx)(a.$i$, {
@@ -119,7 +119,7 @@ class b extends i.PureComponent {
       className: h.spacing,
       value: this.state.internalEnabled,
       onChange: this.handleToggleWidget,
-      children: g.NW.string(g.t.NR6hub)
+      children: p.NW.string(p.t.NR6hub)
     })), f(this, "handleToggleWidget", e => {
       let {
         guild: t,

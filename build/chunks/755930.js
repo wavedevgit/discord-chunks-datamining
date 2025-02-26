@@ -22,9 +22,9 @@ var l = n(481060),
   d = n(809086),
   u = n(981631),
   m = n(388032),
-  p = n(403599);
+  g = n(403599);
 
-function g(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -74,9 +74,9 @@ function b(e) {
     renderHeader: r,
     renderContent: i
   } = e, s = h(e, ["key", "cellClassName", "renderHeader", "renderContent"]);
-  return g({
+  return p({
     key: t,
-    bodyCellClassName: p.cell,
+    bodyCellClassName: g.cell,
     cellClassName: n,
     renderHeader: r,
     render: i
@@ -86,7 +86,7 @@ function b(e) {
 function x() {
   return (0, r.jsx)(l.Text, {
     variant: "text-xs/medium",
-    className: p.unpublishedBadge,
+    className: g.unpublishedBadge,
     children: m.NW.string(m.t.TJ4CCw)
   })
 }
@@ -97,7 +97,7 @@ function j(e) {
     key: n,
     renderHeader: i
   } = e, s = h(e, ["cellClassName", "key", "renderHeader"]);
-  return b(g({
+  return b(p({
     cellClassName: t,
     key: n,
     renderHeader: i,
@@ -110,15 +110,15 @@ function j(e) {
           listing: t,
           imageSize: 128,
           alt: "",
-          className: p.listingImage
+          className: g.listingImage
         }), (0, r.jsxs)(l.Text, {
           variant: "text-md/medium",
           color: "header-primary",
-          className: p.listingNameLabel,
+          className: g.listingNameLabel,
           children: [t.name, !t.published && (0, r.jsx)(x, {})]
         })]
       })), (0, r.jsx)(y, {
-        className: p.listingNameCell,
+        className: g.listingNameCell,
         children: n
       })
     }
@@ -132,7 +132,7 @@ function N(e) {
     key: i,
     renderHeader: s
   } = e, a = h(e, ["cellClassName", "getAmount", "key", "renderHeader"]);
-  return b(g({
+  return b(p({
     key: i,
     cellClassName: t,
     renderHeader: s,
@@ -152,7 +152,7 @@ function v(e) {
     key: i,
     renderHeader: s
   } = e, a = h(e, ["cellClassName", "getCount", "key", "renderHeader"]);
-  return b(g({
+  return b(p({
     key: i,
     cellClassName: t,
     renderHeader: s,
@@ -180,8 +180,8 @@ function _(e) {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e
-    }(g({}, r), {
-      cellClassName: a()(r.cellClassName, p.cellAlignRight)
+    }(p({}, r), {
+      cellClassName: a()(r.cellClassName, g.cellAlignRight)
     })
   }
   return t
@@ -191,7 +191,7 @@ let O = e => {
       children: t
     } = e;
     return (0, r.jsx)(l.Text, {
-      className: p.headerCell,
+      className: g.headerCell,
       variant: "text-xs/medium",
       color: "interactive-normal",
       "aria-hidden": !0,
@@ -223,11 +223,11 @@ let O = e => {
       children: t
     } = e;
     return (0, r.jsxs)(y, {
-      className: p.personCountCell,
+      className: g.personCountCell,
       children: [null != t ? t : "-", " ", (0, r.jsx)(l.tBG, {
         size: "md",
         color: "currentColor",
-        className: p.personCountIcon,
+        className: g.personCountIcon,
         "aria-hidden": !0
       })]
     })
@@ -244,16 +244,16 @@ function E(e) {
   } = e, m = h(e, ["className", "headerClassName", "rowClassName", "enableRowSeparators", "initialSortKey", "initialSortDirection"]);
   let [f, b] = i.useState(c), [x, j] = i.useState(d);
   return (0, r.jsx)("div", {
-    className: a()(p.tableContainer, t),
-    children: (0, r.jsx)(o.Z, g({
+    className: a()(g.tableContainer, t),
+    children: (0, r.jsx)(o.Z, p({
       className: a()({
-        [p.tableWithoutSeparators]: !l
-      }, p.table),
+        [g.tableWithoutSeparators]: !l
+      }, g.table),
       rowClassName: a()({
-        [p.rowWithSeparators]: l
+        [g.rowWithSeparators]: l
       }, s),
-      headerClassName: a()(p.header, {
-        [p.headerWithoutSeparators]: !l
+      headerClassName: a()(g.header, {
+        [g.headerWithoutSeparators]: !l
       }, n),
       sortKey: f,
       sortDirection: x,

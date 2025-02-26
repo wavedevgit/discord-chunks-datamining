@@ -27,8 +27,8 @@ var r = n(392711),
   d = n(626135),
   u = n(960048),
   m = n(969632),
-  p = n(981631),
-  g = n(388032);
+  g = n(981631),
+  p = n(388032);
 
 function h(e) {
   a.Z.dispatch({
@@ -69,7 +69,7 @@ async function N(e, t, n, r) {
   if (!r) return Promise.resolve();
   try {
     let r = await s.tn.patch({
-        url: p.ANM.NEW_MEMBER_ACTION(e, t),
+        url: g.ANM.NEW_MEMBER_ACTION(e, t),
         body: {
           icon: n
         },
@@ -86,8 +86,8 @@ async function N(e, t, n, r) {
     var o;
     let e = i().flatMap(null !== (o = t.body) && void 0 !== o ? o : {}, e => e);
     return l.Z.show({
-      title: g.NW.string(g.t["6nCZyM"]),
-      body: g.NW.format(g.t.dYCPDw, {
+      title: p.NW.string(p.t["6nCZyM"]),
+      body: p.NW.format(p.t.dYCPDw, {
         errorMessage: e.join(", ")
       })
     }), u.Z.addBreadcrumb({
@@ -127,7 +127,7 @@ function y(e) {
 async function C(e, t, n) {
   try {
     let r = await s.tn.put({
-        url: p.ANM.RESOURCE_CHANNEL(e, t),
+        url: g.ANM.RESOURCE_CHANNEL(e, t),
         body: {
           icon: n
         },
@@ -144,8 +144,8 @@ async function C(e, t, n) {
     var r;
     let e = i().flatMap(null !== (r = t.body) && void 0 !== r ? r : {}, e => e);
     l.Z.show({
-      title: g.NW.string(g.t["6nCZyM"]),
-      body: g.NW.format(g.t.dYCPDw, {
+      title: p.NW.string(p.t["6nCZyM"]),
+      body: p.NW.format(p.t.dYCPDw, {
         errorMessage: e.join(", ")
       })
     })
@@ -155,8 +155,8 @@ async function C(e, t, n) {
 function I(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   return n || m.Z.hasChanges() ? o.Z.getEnabled(e) && !(0, c.uo)(t) ? (l.Z.show({
-    title: g.NW.string(g.t["6nCZyM"]),
-    body: g.NW.string(g.t.JuhUTU)
+    title: p.NW.string(p.t["6nCZyM"]),
+    body: p.NW.string(p.t.JuhUTU)
   }), u.Z.addBreadcrumb({
     message: "Error saving home settings"
   }), Promise.reject()) : S(e, t) : Promise.resolve()
@@ -167,8 +167,8 @@ function E(e, t) {
   let i = o.Z.getSettings(e);
   if (t && !(0, c.uo)(i)) {
     l.Z.show({
-      title: g.NW.string(g.t["6nCZyM"]),
-      body: g.NW.string(g.t.JuhUTU)
+      title: p.NW.string(p.t["6nCZyM"]),
+      body: p.NW.string(p.t.JuhUTU)
     });
     return
   }
@@ -213,7 +213,7 @@ async function S(e, t) {
   });
   try {
     let i = await s.tn.put({
-        url: p.ANM.GUILD_HOME_SETTINGS(e),
+        url: g.ANM.GUILD_HOME_SETTINGS(e),
         body: (0, c.HH)(e, t),
         oldFormErrors: !0,
         rejectWithError: !1
@@ -223,7 +223,7 @@ async function S(e, t) {
       type: "GUILD_HOME_SETTINGS_UPDATE_SUCCESS",
       guildId: e,
       homeSettings: l
-    }), d.default.track(p.rMx.GUILD_SETTINGS_GUIDE_UPDATED, {
+    }), d.default.track(g.rMx.GUILD_SETTINGS_GUIDE_UPDATED, {
       guild_id: e,
       welcome_message_author_id: (null !== (u = null == l ? void 0 : null === (n = l.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) && void 0 !== u ? u : [])[0],
       welcome_message_length: null !== (m = null == l ? void 0 : null === (o = l.welcomeMessage) || void 0 === o ? void 0 : null === (r = o.message) || void 0 === r ? void 0 : r.length) && void 0 !== m ? m : 0,
@@ -237,8 +237,8 @@ async function S(e, t) {
     a.Z.dispatch({
       type: "GUILD_HOME_SETTINGS_UPDATE_FAIL"
     }), l.Z.show({
-      title: g.NW.string(g.t["6nCZyM"]),
-      body: g.NW.format(g.t.dYCPDw, {
+      title: p.NW.string(p.t["6nCZyM"]),
+      body: p.NW.format(p.t.dYCPDw, {
         errorMessage: e.join(", ")
       })
     })

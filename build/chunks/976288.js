@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(813197),
   u = n(650774),
   m = n(434404),
-  p = n(999382),
-  g = n(718157),
+  g = n(999382),
+  p = n(718157),
   h = n(450474),
   f = n(166184),
   b = n(936735),
@@ -49,12 +49,12 @@ function I(e) {
     m.Z.updateGuild({
       discoverySplash: null
     })
-  }, []), p = i.useCallback(e => {
+  }, []), g = i.useCallback(e => {
     m.Z.updateGuild({
       description: e
     })
   }, []), {
-    memberCount: g,
+    memberCount: p,
     onlineCount: h
   } = (0, s.cj)([u.Z], () => ({
     memberCount: u.Z.getMemberCount(n.id),
@@ -117,14 +117,14 @@ function I(e) {
           className: y.editableSection,
           value: null !== (t = n.description) && void 0 !== t ? t : "",
           placeholder: O.NW.string(O.t.Nvfows),
-          onChange: p,
+          onChange: g,
           maxLength: 120
         })]
       })]
     }), (0, r.jsx)(f.Z, {
       className: y.preview,
       guild: n,
-      memberCount: g,
+      memberCount: p,
       presenceCount: h
     })]
   })
@@ -162,7 +162,7 @@ function E(e) {
         children: O.NW.string(O.t.CE5Gyc)
       }), (0, r.jsx)("div", {
         className: y.editableSection,
-        children: (0, r.jsx)(g.E, {
+        children: (0, r.jsx)(p.E, {
           guildId: t.id,
           guildMetadata: n
         })
@@ -199,10 +199,10 @@ function S(e) {
     guildMetadata: n,
     requireTag: s,
     error: d
-  } = e, [u, m] = i.useState(null), p = i.useCallback(e => {
+  } = e, [u, m] = i.useState(null), g = i.useCallback(e => {
     let r = [...n.keywords];
     r.splice(e, 1), m(null), (0, o.zH)(t, r)
-  }, [t, n]), g = i.useCallback(e => {
+  }, [t, n]), p = i.useCallback(e => {
     let {
       keywords: r
     } = n;
@@ -211,11 +211,11 @@ function S(e) {
     let t = n.keywords.length >= v.G7;
     return {
       text: e,
-      onClick: () => g(e),
+      onClick: () => p(e),
       disabled: t,
       tooltipText: t ? O.NW.string(O.t.Xx7XeH) : void 0
     }
-  }), [n.keywords, n.primaryCategoryId, g]), f = null != d ? d : u;
+  }), [n.keywords, n.primaryCategoryId, p]), f = null != d ? d : u;
   return (0, r.jsxs)("div", {
     className: y.sectionContainer,
     children: [(0, r.jsxs)("div", {
@@ -231,8 +231,8 @@ function S(e) {
       }), (0, r.jsx)(l.Z, {
         className: y.editableSection,
         tags: n.keywords,
-        onRemoveTag: p,
-        onAddTag: g,
+        onRemoveTag: g,
+        onAddTag: p,
         onAddTagError: m,
         maxTags: v.G7,
         maxTaxLength: v._0,
@@ -343,12 +343,12 @@ function R(e) {
     errors: a,
     guildMetadata: l,
     guild: o
-  } = (0, s.cj)([p.Z], () => {
+  } = (0, s.cj)([g.Z], () => {
     let {
       errors: e,
       guildMetadata: t,
       guild: n
-    } = p.Z.getProps();
+    } = g.Z.getProps();
     return {
       errors: e,
       guildMetadata: t,

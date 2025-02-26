@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(999382),
   u = n(614342),
   m = n(303737),
-  p = n(618748),
-  g = n(500395),
+  g = n(618748),
+  p = n(500395),
   h = n(975464),
   f = n(981631),
   b = n(674563),
@@ -33,12 +33,12 @@ function j() {
     null != t && (0, m.sO)(t) && (0, c.EW)(a.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
   }, [t]);
   let _ = (null == t ? void 0 : t.hasFeature(f.oNc.CREATOR_MONETIZABLE)) === !1 && (null == t ? void 0 : t.hasFeature(f.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) === !1;
-  return e = null == t || j ? (0, r.jsx)(l.$jN, {}) : null != v ? (0, r.jsx)(g.Z, {
+  return e = null == t || j ? (0, r.jsx)(l.$jN, {}) : null != v ? (0, r.jsx)(p.Z, {
     guild: t,
     config: v
   }) : _ ? (0, r.jsx)(h.Z, {
     guild: t
-  }) : (0, r.jsx)(p.Z, {
+  }) : (0, r.jsx)(g.Z, {
     guild: t,
     application: n
   }), (0, r.jsx)("div", {

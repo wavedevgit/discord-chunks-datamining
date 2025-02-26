@@ -1,7 +1,6 @@
 /** Chunk was on 79120 **/
-"use strict";
 n.d(t, {
-  Z: () => Z
+  Z: () => w
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -16,25 +15,25 @@ var r = n(200651),
   p = n(258609),
   m = n(199902),
   g = n(314897),
-  y = n(430824),
-  b = n(496675),
-  h = n(158776),
-  v = n(979651),
-  O = n(626135),
+  b = n(430824),
+  y = n(496675),
+  O = n(158776),
+  h = n(979651),
+  v = n(626135),
   j = n(102172),
   S = n(687516),
-  N = n(718805),
-  P = n(871118),
-  I = n(981631),
-  x = n(388032),
+  P = n(718805),
+  N = n(871118),
+  x = n(981631),
+  I = n(388032),
   E = n(651148);
-class w extends l.PureComponent {
+class Z extends l.PureComponent {
   componentDidMount() {
     let {
       user: e,
       streamApplication: t
     } = this.props;
-    O.default.track(I.rMx.OPEN_POPOUT, {
+    v.default.track(x.rMx.OPEN_POPOUT, {
       type: "Stream Preview",
       other_user_id: e.id,
       application_id: null != t ? t.id : null,
@@ -54,7 +53,7 @@ class w extends l.PureComponent {
     return (0, r.jsxs)(s.P3F, {
       onClick: t,
       className: E.previewContainer,
-      children: [(0, r.jsx)(P.Z, {
+      children: [(0, r.jsx)(N.Z, {
         className: E.previewImage,
         stream: e
       }), i ? (0, r.jsx)("div", {
@@ -63,7 +62,7 @@ class w extends l.PureComponent {
           variant: "text-sm/normal",
           color: "none",
           className: E.white,
-          children: (0, N.Z)(e, n, l, o)
+          children: (0, P.Z)(e, n, l, o)
         })
       }) : null]
     })
@@ -94,8 +93,8 @@ class w extends l.PureComponent {
             channelId: n.channelId,
             analyticsParams: {
               location: {
-                page: I.ZY5.GO_LIVE_MODAL,
-                section: I.jXE.STREAM_VIEWER_POPOUT
+                page: x.ZY5.GO_LIVE_MODAL,
+                section: x.jXE.STREAM_VIEWER_POPOUT
               }
             },
             onAction: i
@@ -111,7 +110,7 @@ class w extends l.PureComponent {
           }), !a && (0, r.jsx)(f.Z, {
             type: f.Z.Types.INLINE,
             className: E.protip,
-            children: __OVERLAY__ ? x.NW.string(x.t["YRdw7+"]) : x.NW.string(x.t.CCTgbG)
+            children: __OVERLAY__ ? I.NW.string(I.t["YRdw7+"]) : I.NW.string(I.t.CCTgbG)
           })]
         })]
       })
@@ -119,7 +118,7 @@ class w extends l.PureComponent {
   }
 }
 
-function Z(e) {
+function w(e) {
   var t, n, {
       user: i,
       channel: o
@@ -139,10 +138,10 @@ function Z(e) {
       }
       return l
     }(e, ["user", "channel"]);
-  let [c, d] = (0, a.Wu)([v.Z, y.Z, b.Z, p.Z], () => (0, j.p9)(o, v.Z, y.Z, b.Z, p.Z)), f = (0, a.e7)([m.Z], () => m.Z.getStreamForUser(i.id, o.getGuildId())), O = (0, a.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(f)), N = (0, a.e7)([g.default], () => g.default.getId()), P = (0, S.Cf)(f), I = (0, a.e7)([h.Z], () => (0, S.Um)(f, h.Z)), x = l.useMemo(() => ({
+  let [c, d] = (0, a.Wu)([h.Z, b.Z, y.Z, p.Z], () => (0, j.p9)(o, h.Z, b.Z, y.Z, p.Z)), f = (0, a.e7)([m.Z], () => m.Z.getStreamForUser(i.id, o.getGuildId())), v = (0, a.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(f)), P = (0, a.e7)([g.default], () => g.default.getId()), N = (0, S.Cf)(f), x = (0, a.e7)([O.Z], () => (0, S.Um)(f, O.Z)), I = l.useMemo(() => ({
     [o.guild_id]: [i.id]
   }), [o.guild_id, i.id]);
-  return (0, u.$)(x), (0, r.jsx)(w, (t = function(e) {
+  return (0, u.$)(I), (0, r.jsx)(Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -163,11 +162,11 @@ function Z(e) {
     canWatch: c,
     unavailableReason: d,
     user: i,
-    streamApplication: P,
+    streamApplication: N,
     stream: f,
-    activeStream: O,
-    currentUserId: N,
-    activity: I
+    activeStream: v,
+    currentUserId: P,
+    activity: x
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

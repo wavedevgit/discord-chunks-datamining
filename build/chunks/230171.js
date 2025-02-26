@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   O: () => A,
   U: () => C.Un
@@ -22,8 +22,8 @@ var r = n(200651),
   v = n(592125),
   y = n(496675),
   x = n(944486),
-  O = n(914010),
-  E = n(768581),
+  E = n(914010),
+  O = n(768581),
   j = n(135431),
   N = n(758199),
   C = n(914498),
@@ -47,10 +47,10 @@ function A(e) {
     customInstallUrl: t.customInstallUrl,
     installParams: t.installParams,
     integrationTypesConfig: t.integrationTypesConfig
-  }), M = D && null != t.integrationTypesConfig && a.Y.GUILD_INSTALL in t.integrationTypesConfig, W = D && null != t.integrationTypesConfig && a.Y.USER_INSTALL in t.integrationTypesConfig, F = (0, o.e7)([O.Z], () => {
+  }), M = D && null != t.integrationTypesConfig && a.Y.GUILD_INSTALL in t.integrationTypesConfig, W = D && null != t.integrationTypesConfig && a.Y.USER_INSTALL in t.integrationTypesConfig, F = (0, o.e7)([E.Z], () => {
     var e;
-    return null !== (e = O.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }), U = (0, f.PL)(!0, !1), B = (0, f.LD)(F, !1), G = (0, j.TK)(t.id, U), H = (0, j.TK)(t.id, B), V = (0, p.ye)(t), z = E.ZP.getApplicationIconURL({
+    return null !== (e = E.Z.getGuildId()) && void 0 !== e ? e : void 0
+  }), U = (0, f.PL)(!0, !1), B = (0, f.LD)(F, !1), G = (0, j.TK)(t.id, U), H = (0, j.TK)(t.id, B), V = (0, p.ye)(t), z = O.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: k
@@ -71,12 +71,12 @@ function A(e) {
       let {
         banner: t
       } = k;
-      e = (0, E.aN)({
+      e = (0, O.aN)({
         id: k.id,
         banner: t,
         size: 512,
         canAnimate: !1
-      }), (0, E.xR)(t) && null == K && (n = (0, E.aN)({
+      }), (0, O.xR)(t) && null == K && (n = (0, O.aN)({
         id: k.id,
         banner: t,
         size: 512,

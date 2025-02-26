@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(484614),
   u = n(314852),
   m = n(65361),
-  p = n(246946),
-  g = n(434404),
+  g = n(246946),
+  p = n(434404),
   h = n(330010),
   f = n(999382),
   b = n(24318),
@@ -27,7 +27,7 @@ function v(e) {
     guildId: t
   } = e, {
     guildProfile: c,
-    fetchGuildProfile: p,
+    fetchGuildProfile: g,
     fetchStatus: v
   } = (0, m.u)(t), _ = v !== u.a.FETCHED, {
     fetchedEmbed: O,
@@ -48,12 +48,12 @@ function v(e) {
   i.useEffect(() => {
     O || (0, h.R)(t)
   }, [O, t]), i.useEffect(() => {
-    p()
-  }, [t, p]);
+    g()
+  }, [t, g]);
   let w = i.useCallback(async e => {
     T(!0);
     try {
-      await g.Z.updateEmbed(t, e, C)
+      await p.Z.updateEmbed(t, e, C)
     } finally {
       T(!1)
     }
@@ -131,7 +131,7 @@ function v(e) {
 function _(e) {
   let {
     guildId: t
-  } = e, n = (0, l.e7)([p.Z], () => p.Z.enabled);
+  } = e, n = (0, l.e7)([g.Z], () => g.Z.enabled);
   return (0, r.jsxs)(o.hjN, {
     title: j.NW.string(j.t.qlhNb2),
     children: [(0, r.jsx)(a.xv, {

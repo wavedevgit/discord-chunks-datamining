@@ -1,7 +1,5 @@
-/** Chunk was on 83366 **/
+/** Chunk was on 14093 **/
 n.d(t, {
-  L: () => o,
   z: () => r
 });
-let r = 200;
-var l, o = ((l = {}).ReactBegin = "React Begin", l.ReplyBegin = "Reply Begin", l.ReactSubmit = "React Submit", l.ReplySubmit = "Reply Submit", l.ReactSend = "React Send", l.ReplySend = "Reply Send", l)
+let r = 200

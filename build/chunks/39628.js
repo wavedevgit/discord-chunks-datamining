@@ -1,7 +1,6 @@
 /** Chunk was on 79120 **/
-"use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => b
 }), n(47120);
 var r, l = n(200651),
   i = n(192379),
@@ -129,4 +128,4 @@ class g extends(r = i.PureComponent) {
 d(g, "defaultProps", {
   themed: !1
 });
-let y = g
+let b = g

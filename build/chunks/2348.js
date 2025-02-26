@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(111028),
   u = n(977258),
   m = n(637853),
-  p = n(473403),
-  g = n(216306),
+  g = n(473403),
+  p = n(216306),
   h = n(743475),
   f = n(827907),
   b = n(868814),
@@ -127,10 +127,10 @@ let y = i.memo(function() {
       channel: t,
       category: i,
       guild: s,
-      isFirstChannel: g,
+      isFirstChannel: p,
       isLastChannel: O,
       tooltipDirection: I = "right"
-    } = e, E = (0, f.Mf)(t.id, i.id), S = (0, f.t4)(t.id, i.id), T = (0, f.EH)(t.id, i.id), P = (0, f.lL)(s.id, i.id), w = null != (0, b.Z)(s).find(e => e.id === t.id), R = (0, m.mn)(t.id), D = e => {
+    } = e, E = (0, f.Mf)(t.id, i.id), S = (0, f.t4)(t.id, i.id), T = (0, f.EH)(t.id, i.id), P = (0, f.lL)(s.id, i.id), w = null != (0, b.Z)(s).find(e => e.id === t.id), R = (0, m.mn)(t.id), Z = e => {
       if (!S) return e.stopPropagation(), (0, u.s)(s.id, t.id) ? (0, h.pt)(t.id) : (0, o.ZDy)(async () => {
         let {
           default: e
@@ -140,7 +140,7 @@ let y = i.memo(function() {
           startingChannelId: t.id
         }))
       }), !0
-    }, Z = e => {
+    }, D = e => {
       t.isGuildVocal() ? (0, c.jW)(e, async () => {
         let {
           default: e
@@ -152,7 +152,7 @@ let y = i.memo(function() {
       }) : (0, c.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("50506"), n.e("68880"), n.e("99152"), n.e("79695"), n.e("22878"), n.e("13351"), n.e("66711"), n.e("78447"), n.e("97349"), n.e("53937"), n.e("83366"), n.e("6380"), n.e("46097"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("22173"), n.e("79120"), n.e("30243"), n.e("99393"), n.e("68241"), n.e("85574"), n.e("11814"), n.e("60691"), n.e("38902"), n.e("42743"), n.e("84466"), n.e("7590"), n.e("69057"), n.e("98254"), n.e("22356"), n.e("35755"), n.e("55697"), n.e("94458"), n.e("94989"), n.e("37220"), n.e("17024"), n.e("82158"), n.e("91315"), n.e("71611"), n.e("18320"), n.e("1093"), n.e("45260"), n.e("40242")]).then(n.bind(n, 373651));
+        } = await Promise.all([n.e("50506"), n.e("68880"), n.e("99152"), n.e("79695"), n.e("22878"), n.e("13351"), n.e("66711"), n.e("97349"), n.e("53937"), n.e("6380"), n.e("46097"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("18895"), n.e("79120"), n.e("30243"), n.e("99393"), n.e("68241"), n.e("85574"), n.e("68051"), n.e("60691"), n.e("38902"), n.e("42743"), n.e("84466"), n.e("7590"), n.e("69057"), n.e("78447"), n.e("98254"), n.e("22356"), n.e("35755"), n.e("14093"), n.e("12416"), n.e("94989"), n.e("37220"), n.e("17024"), n.e("82158"), n.e("91315"), n.e("88119"), n.e("18320"), n.e("1093"), n.e("45260"), n.e("40242")]).then(n.bind(n, 373651));
         return n => (0, r.jsx)(e, _(v({}, n), {
           channel: t,
           guild: s
@@ -166,18 +166,18 @@ let y = i.memo(function() {
         position: I,
         children: e => (0, r.jsxs)(o.P3F, _(v({
           className: a()(N.channelRow, {
-            [N.firstChannel]: g,
+            [N.firstChannel]: p,
             [N.lastChannel]: O,
             [N.disabled]: S
           })
         }, e), {
-          onClick: D,
-          onContextMenu: Z,
+          onClick: Z,
+          onContextMenu: D,
           children: [(0, r.jsx)("div", {
             className: N.channelInfo,
             children: (0, r.jsxs)("div", {
               className: N.channelName,
-              children: [(0, r.jsx)(p._, {
+              children: [(0, r.jsx)(g._, {
                 channel: t,
                 guild: s
               }), (0, r.jsx)(d.Z, {
@@ -254,7 +254,7 @@ function E(e) {
       isLastChannel: t[s.channel.id].length - 1 === i,
       tooltipDirection: a ? "right" : "top"
     }, l.channel.id)
-  }, [t, n, a]), c = (0, g.tn)(n.id, t, 64);
+  }, [t, n, a]), c = (0, p.tn)(n.id, t, 64);
   return (0, r.jsx)("div", {
     className: s,
     children: c.map((e, t) => {

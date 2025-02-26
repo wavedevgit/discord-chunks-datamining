@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => B
 }), n(653041), n(47120), n(13667), n(390547), n(301563);
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(906732),
   y = n(835473),
   x = n(471445),
-  O = n(111028),
-  E = n(955415),
+  E = n(111028),
+  O = n(955415),
   j = n(747127),
   N = n(601964),
   C = n(592125),
@@ -96,7 +96,7 @@ function U(e) {
         className: L.channelIcon,
         size: "xs",
         color: "currentColor"
-      }) : null, (0, r.jsx)(O.Z, {
+      }) : null, (0, r.jsx)(E.Z, {
         children: (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           children: R.NW.format(R.t["dc+LW1"], {
@@ -112,7 +112,7 @@ function U(e) {
       [L.stacked]: i,
       [L.ended]: a
     }),
-    children: (0, r.jsx)(O.Z, {
+    children: (0, r.jsx)(E.Z, {
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/normal",
         children: R.NW.format(R.t.u0vaDA, {
@@ -127,7 +127,7 @@ function B(e) {
   var t, n, a;
   let l, d, {
       invite: x,
-      getAcceptInviteContext: O
+      getAcceptInviteContext: E
     } = e,
     {
       approximate_member_count: A,
@@ -202,7 +202,7 @@ function B(e) {
     em = () => {
       p.Z.acceptInviteAndTransitionToInviteChannel({
         inviteKey: x.code,
-        context: O("Invite Button Embed"),
+        context: E("Invite Button Embed"),
         analyticsLocations: eo
       })
     };
@@ -226,7 +226,7 @@ function B(e) {
           [L.stacked]: Y
         })
       })
-    }), (0, r.jsxs)(E.Z, {
+    }), (0, r.jsxs)(O.Z, {
       className: o()(L.content, {
         [L.large]: z,
         [L.stacked]: Y

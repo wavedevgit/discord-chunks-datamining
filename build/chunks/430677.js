@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(603211),
   u = n(307707),
   m = n(734893),
-  p = n(216701),
-  g = n(592125),
+  g = n(216701),
+  p = n(592125),
   h = n(430824),
   f = n(768581),
   b = n(388032),
@@ -62,10 +62,10 @@ let v = function(e) {
     onDragStart: T,
     onDragComplete: P,
     onDragReset: w
-  } = e, R = (0, l.e7)([g.Z], () => g.Z.getChannel(C.channelId)), D = (0, l.e7)([h.Z], () => h.Z.getGuild(y)), {
-    customEmoji: Z,
+  } = e, R = (0, l.e7)([p.Z], () => p.Z.getChannel(C.channelId)), Z = (0, l.e7)([h.Z], () => h.Z.getGuild(y)), {
+    customEmoji: D,
     unicodeEmoji: k
-  } = (0, u.Z)(null === (t = C.emoji) || void 0 === t ? void 0 : t.id, null === (s = C.emoji) || void 0 === s ? void 0 : s.name), A = null == C.emoji || null != Z || null != k, W = f.ZP.getNewMemberActionIconURL({
+  } = (0, u.Z)(null === (t = C.emoji) || void 0 === t ? void 0 : t.id, null === (s = C.emoji) || void 0 === s ? void 0 : s.name), A = null == C.emoji || null != D || null != k, W = f.ZP.getNewMemberActionIconURL({
     channelId: C.channelId,
     icon: C.icon
   }), L = null;
@@ -95,7 +95,7 @@ let v = function(e) {
       }))
     })
   }, [y, C, I, E, S]);
-  if (null == R || null == D) return null;
+  if (null == R || null == Z) return null;
   let z = null !== (O = (0, c.KS)(R)) && void 0 !== O ? O : o.VL1;
   return (0, r.jsxs)("div", {
     className: a()(x.actionItemContainer),
@@ -127,10 +127,10 @@ let v = function(e) {
         })
       }) : (0, r.jsx)("div", {
         className: x.actionItemEmojiWrapper,
-        children: (0, r.jsx)(p.Z, {
+        children: (0, r.jsx)(g.Z, {
           emojiId: null === (v = C.emoji) || void 0 === v ? void 0 : v.id,
           emojiName: null === (_ = C.emoji) || void 0 === _ ? void 0 : _.name,
-          size: p.R.MEDIUM,
+          size: g.R.MEDIUM,
           defaultComponent: (0, r.jsx)(z, {})
         })
       }), (0, r.jsxs)("div", {

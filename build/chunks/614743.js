@@ -1,5 +1,4 @@
-/** Chunk was on 55186 **/
-"use strict";
+/** Chunk was on 61080 **/
 e.exports = {
   rankContainer: "rankContainer__632c2",
   goldBorder: "goldBorder__632c2",

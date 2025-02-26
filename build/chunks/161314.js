@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => N
 }), n(47120), n(266796);
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(76535),
   y = n(866104),
   x = n(886176),
-  O = n(981631),
-  E = n(388032),
+  E = n(981631),
+  O = n(388032),
   j = n(906989);
 
 function N(e) {
@@ -37,7 +37,7 @@ function N(e) {
   } = (0, f.eD)(n), S = (0, f.ue)(n, {
     publishedOnly: !0
   }), P = i.useCallback(async () => {
-    b.default.track(O.rMx.GUILD_SHOP_EMBED_CLICKED, function(e) {
+    b.default.track(E.rMx.GUILD_SHOP_EMBED_CLICKED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -54,7 +54,7 @@ function N(e) {
         })
       }
       return e
-    }({}, (0, u.hH)(n))), await (0, h.Z)(O.Z5c.SERVER_SHOP(n))
+    }({}, (0, u.hH)(n))), await (0, h.Z)(E.Z5c.SERVER_SHOP(n))
   }, [n]);
   (0, p.Z)({
     type: l.ImpressionTypes.VIEW,
@@ -82,14 +82,14 @@ function N(e) {
         variant: "heading-sm/semibold",
         color: "interactive-normal",
         className: j.serverShopLabelText,
-        children: E.NW.string(E.t.al5EXF)
+        children: O.NW.string(O.t.al5EXF)
       })]
     }), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsx)(d.X6q, {
       variant: "heading-md/semibold",
       color: "text-normal",
-      children: E.NW.format(E.t.NZeik5, {
+      children: O.NW.format(O.t.NZeik5, {
         guildName: a.name
       })
     }), (0, r.jsx)(d.LZC, {
@@ -113,7 +113,7 @@ function N(e) {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: E.NW.format(E.t.tKZNlZ, {
+            children: O.NW.format(O.t.tKZNlZ, {
               listingCount: S.length
             })
           })
@@ -121,7 +121,7 @@ function N(e) {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: E.NW.format(E.t["kXr8+f"], {
+            children: O.NW.format(O.t["kXr8+f"], {
               createdYear: T.getFullYear()
             })
           })
@@ -137,7 +137,7 @@ function N(e) {
           }), (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "always-white",
-            children: E.NW.string(E.t.jXx1CA)
+            children: O.NW.string(O.t.jXx1CA)
           })]
         })
       })]

@@ -14,9 +14,9 @@ var i = n(108930),
   d = n(206851),
   u = n(246933),
   m = n(995414),
-  p = n(308083);
+  g = n(308083);
 
-function g(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,24 +54,24 @@ function h(e) {
     return i
   }(e, ["banner"]);
   switch (t) {
-    case p.qC.NIGHT_SKY:
-      return (0, r.jsx)(o.Z, g({}, n));
-    case p.qC.CASTLE:
-      return (0, r.jsx)(i.Z, g({}, n));
-    case p.qC.WORLD_MAP:
-      return (0, r.jsx)(m.Z, g({}, n));
-    case p.qC.SEA_FOAM:
-      return (0, r.jsx)(c.Z, g({}, n));
-    case p.qC.WARP_TUNNEL:
-      return (0, r.jsx)(u.Z, g({}, n));
-    case p.qC.HOUSE:
-      return (0, r.jsx)(a.Z, g({}, n));
-    case p.qC.HEIGHTMAP:
-      return (0, r.jsx)(s.Z, g({}, n));
-    case p.qC.MESH:
-      return (0, r.jsx)(l.Z, g({}, n));
-    case p.qC.SPATTER:
-      return (0, r.jsx)(d.Z, g({}, n))
+    case g.qC.NIGHT_SKY:
+      return (0, r.jsx)(o.Z, p({}, n));
+    case g.qC.CASTLE:
+      return (0, r.jsx)(i.Z, p({}, n));
+    case g.qC.WORLD_MAP:
+      return (0, r.jsx)(m.Z, p({}, n));
+    case g.qC.SEA_FOAM:
+      return (0, r.jsx)(c.Z, p({}, n));
+    case g.qC.WARP_TUNNEL:
+      return (0, r.jsx)(u.Z, p({}, n));
+    case g.qC.HOUSE:
+      return (0, r.jsx)(a.Z, p({}, n));
+    case g.qC.HEIGHTMAP:
+      return (0, r.jsx)(s.Z, p({}, n));
+    case g.qC.MESH:
+      return (0, r.jsx)(l.Z, p({}, n));
+    case g.qC.SPATTER:
+      return (0, r.jsx)(d.Z, p({}, n))
   }
   return null
 }

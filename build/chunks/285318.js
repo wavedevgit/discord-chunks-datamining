@@ -109,7 +109,7 @@ function m(e) {
         presets: e
       })
     }))
-  }, [s, n]), p = e => {
+  }, [s, n]), g = e => {
     let t = new Set(l);
     t.has(e) ? t.delete(e) : t.add(e), o(t), m(Array.from(t))
   };
@@ -117,15 +117,15 @@ function m(e) {
     children: [(0, r.jsx)(u, {
       preset: a.Ux.PROFANITY,
       toggled: l.has(a.Ux.PROFANITY),
-      onToggle: p
+      onToggle: g
     }), (0, r.jsx)(u, {
       preset: a.Ux.SLURS,
       toggled: l.has(a.Ux.SLURS),
-      onToggle: p
+      onToggle: g
     }), (0, r.jsx)(u, {
       preset: a.Ux.SEXUAL_CONTENT,
       toggled: l.has(a.Ux.SEXUAL_CONTENT),
-      onToggle: p
+      onToggle: g
     })]
   })
 }

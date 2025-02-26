@@ -13,13 +13,13 @@ var r = n(200651),
   d = n(481060),
   u = n(550271),
   m = n(688298),
-  p = n(995119),
-  g = n(116175),
+  g = n(995119),
+  p = n(116175),
   h = n(308083),
   f = n(388032),
   b = n(63069),
   x = n(617006);
-let j = [g.ZD.SWORD, g.ZD.WATER_DROP, g.ZD.SKULL, g.ZD.TOADSTOOL, g.ZD.MOON, g.ZD.LIGHTNING, g.ZD.LEAF, g.ZD.HEART, g.ZD.FIRE, g.ZD.COMPASS, g.ZD.CROSSHAIRS, g.ZD.FLOWER, g.ZD.FORCE, g.ZD.GEM, g.ZD.LAVA, g.ZD.PSYCHIC, g.ZD.SMOKE, g.ZD.SNOW, g.ZD.SOUND, g.ZD.SUN, g.ZD.WIND],
+let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.ZD.LIGHTNING, p.ZD.LEAF, p.ZD.HEART, p.ZD.FIRE, p.ZD.COMPASS, p.ZD.CROSSHAIRS, p.ZD.FLOWER, p.ZD.FORCE, p.ZD.GEM, p.ZD.LAVA, p.ZD.PSYCHIC, p.ZD.SMOKE, p.ZD.SNOW, p.ZD.SOUND, p.ZD.SUN, p.ZD.WIND],
   N = e => {
     let {
       handleUpdate: t,
@@ -31,7 +31,7 @@ let j = [g.ZD.SWORD, g.ZD.WATER_DROP, g.ZD.SKULL, g.ZD.TOADSTOOL, g.ZD.MOON, g.Z
       furthestStep: _,
       inSettings: O
     } = e, y = i.useMemo(() => {
-      let e = (0, g.yf)();
+      let e = (0, p.yf)();
       return {
         primary: null != s ? s : e.primary,
         secondary: null != l ? l : e.secondary
@@ -44,8 +44,8 @@ let j = [g.ZD.SWORD, g.ZD.WATER_DROP, g.ZD.SKULL, g.ZD.TOADSTOOL, g.ZD.MOON, g.Z
       })
     }, [y.primary, y.secondary, t, s, l]);
     let C = i.useMemo(() => {
-        for (let e = 0; e < g.sg.length; e++)
-          if (g.sg[e].primary === y.primary && g.sg[e].secondary === y.secondary) return 1 + e;
+        for (let e = 0; e < p.sg.length; e++)
+          if (p.sg[e].primary === y.primary && p.sg[e].secondary === y.secondary) return 1 + e;
         return 0
       }, [y.primary, y.secondary]),
       [I, E] = i.useState(!1),
@@ -73,7 +73,7 @@ let j = [g.ZD.SWORD, g.ZD.WATER_DROP, g.ZD.SKULL, g.ZD.TOADSTOOL, g.ZD.MOON, g.Z
         color: "header-secondary",
         className: x.subtitle,
         children: f.NW.string(f.t.Tr399P)
-      }), (0, r.jsx)(p.Z, {
+      }), (0, r.jsx)(g.Z, {
         onClick: S
       }), (0, r.jsxs)("div", {
         className: b.container,
@@ -110,7 +110,7 @@ let j = [g.ZD.SWORD, g.ZD.WATER_DROP, g.ZD.SKULL, g.ZD.TOADSTOOL, g.ZD.MOON, g.Z
             }), (0, r.jsxs)("div", {
               className: b.pickerGrid,
               children: [(0, r.jsx)(m.Z, {
-                showSecondaryColor: g.ME[n] >= 2,
+                showSecondaryColor: p.ME[n] >= 2,
                 palette: y,
                 onPrimaryColorChange: e => {
                   t({
@@ -166,11 +166,11 @@ let j = [g.ZD.SWORD, g.ZD.WATER_DROP, g.ZD.SKULL, g.ZD.TOADSTOOL, g.ZD.MOON, g.Z
                     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
                   }), t))
                 }
-              }), g.sg.map((e, i) => (0, r.jsx)(d.P3F, {
+              }), p.sg.map((e, i) => (0, r.jsx)(d.P3F, {
                 onClick: () => {
                   t({
-                    badgePrimaryColor: g.sg[i].primary,
-                    badgeSecondaryColor: g.sg[i].secondary
+                    badgePrimaryColor: p.sg[i].primary,
+                    badgeSecondaryColor: p.sg[i].secondary
                   })
                 },
                 className: o()(b.badgeAssetContainer, {

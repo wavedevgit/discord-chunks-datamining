@@ -1,4 +1,4 @@
-/** Chunk was on 4493 **/
+/** Chunk was on 61080 **/
 e.exports = {
   friends: "friends_b37a75",
   emptyState: "emptyState_b37a75 friends_b37a75",

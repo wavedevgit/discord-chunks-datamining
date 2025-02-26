@@ -1,11 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AK: () => a,
   cG: () => i,
   dR: () => o,
-  mK: () => s,
-  oY: () => l
+  oY: () => a
 });
 var r = n(290031);
 
@@ -14,13 +12,13 @@ function i(e) {
     location: t
   } = e, {
     enableNitroTenureRewardCard: n
-  } = r.OW.useExperiment({
+  } = r.O.useExperiment({
     location: t
   }, {
     autoTrackExposure: !1
   }), {
     enabled: i
-  } = r.Hd.useExperiment({
+  } = r.H.useExperiment({
     location: t
   });
   return n || i
@@ -31,13 +29,13 @@ function o(e) {
     location: t
   } = e, {
     enableNitroTenureRewardCard: n
-  } = r.OW.getCurrentConfig({
+  } = r.O.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: !1
   }), {
     enabled: i
-  } = r.Hd.getCurrentConfig({
+  } = r.H.getCurrentConfig({
     location: t
   });
   return n || i
@@ -48,33 +46,7 @@ function a(e) {
     location: t
   } = e, {
     enabled: n
-  } = r.sg.useExperiment({
-    location: t
-  }, {
-    autoTrackExposure: !1
-  });
-  return n
-}
-
-function s(e) {
-  let {
-    location: t
-  } = e, {
-    enabled: n
-  } = r.fR.useExperiment({
-    location: t
-  }, {
-    autoTrackExposure: !1
-  });
-  return n
-}
-
-function l(e) {
-  let {
-    location: t
-  } = e, {
-    enabled: n
-  } = r.Hd.useExperiment({
+  } = r.H.useExperiment({
     location: t
   });
   return n

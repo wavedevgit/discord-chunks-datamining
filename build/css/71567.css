@@ -1,6 +1,6 @@
 /**
   Module ID: 71567
-  Original File Name: c1aa25ad4b5a86c8
+  Original File Name: d12b4f67f62e3ae2
 **/
 .popoutContainer_a6cedd {
     display: flex;
@@ -11171,12 +11171,12 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     height: 16px
 }
 
-.upsellButton__2717a {
+.upsellButton__71816 {
     display: flex;
     align-items: center
 }
 
-.premiumUpsellBadge__2717a {
+.premiumUpsellBadge__71816 {
     margin-right: 4px
 }
 
@@ -12693,58 +12693,36 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     color: var(--input-placeholder-text)
 }
 
-.editVanityUrlCard__46bca {
-    padding: 20px;
-    margin-top: var(--space-16)
+.upsellButton__5abaa {
+    margin-top: 16px
 }
 
-.description__46bca {
-    margin-bottom: 8px
+.editVanityUrlCard__5abaa {
+    padding: 16px
 }
 
-.removeVanityUrlButton__46bca {
-    margin-top: 20px;
+.formTitleField__5abaa {
+    margin-bottom: 12px
+}
+
+.removeVanityUrlButton__5abaa {
+    margin-top: 12px;
     align-self: flex-start;
     padding: 0
 }
 
-.vanityUrlErrorCode__46bca,.vanityUrlHelpLink__46bca {
-    margin-top: 20px
+.vanityInfo__5abaa {
+    margin-top: 16px
 }
 
-.formTitleField__46bca {
-    flex-grow: 1
+.description__46bca {
+    margin-bottom: 16px
 }
 
 .flexFormTitle__46bca {
     display: flex;
     margin-bottom: 8px;
     align-items: center
-}
-
-.guildFeatureAvailabilityIndicator__46bca {
-    background-color: var(--background-secondary-alt);
-    padding: 1px 2px;
-    border-radius: var(--radius-lg);
-    margin-left: 4px;
-    height: 18px
-}
-
-.upsell__46bca {
-    cursor: pointer
-}
-
-.upsellButton__46bca {
-    display: flex;
-    align-items: center
-}
-
-.premiumUpsellBadge__46bca {
-    margin-right: 4px
-}
-
-.marginTop16__46bca {
-    margin-top: 16px
 }
 
 .infoWrapper__60406 {
@@ -12791,6 +12769,15 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     cursor: pointer
 }
 
+.title_a2e6f9 {
+    display: flex;
+    align-items: center
+}
+
+.description_a2e6f9 {
+    margin-bottom: 16px
+}
+
 .container__11c5f {
     display: flex;
     flex-direction: row;
@@ -12813,7 +12800,8 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 .container_bb7f52 {
     display: flex;
     flex-direction: column;
-    gap: 40px
+    gap: 40px;
+    padding-bottom: 40px
 }
 
 .divider_bb7f52 {
@@ -13390,6 +13378,15 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     width: 126px
 }
 
+.dimmed_a3ec8a {
+    opacity: .3;
+    transition: opacity .3s ease
+}
+
+.dimmed_a3ec8a:focus-within,.dimmed_a3ec8a:hover {
+    opacity: 1
+}
+
 .checkBackground_a3ec8a {
     position: absolute;
     right: 4px;
@@ -13434,8 +13431,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    display: flex;
-    align-items: center;
+    display: inline;
     gap: 4px
 }
 
@@ -13701,4 +13697,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=c1aa25ad4b5a86c8.css.map*/
+/*# sourceMappingURL=d12b4f67f62e3ae2.css.map*/

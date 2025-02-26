@@ -72,15 +72,15 @@ function C(e) {
     renderContent: o,
     size: a
   } = e, [s, l] = i.useState(!1);
-  return (0, r.jsx)(p.a.Provider, {
+  return (0, r.jsx)(p.aQ.Provider, {
     value: !n,
-    children: (0, r.jsx)(p.Z, {
+    children: (0, r.jsx)(p.ZP, {
       containerStyles: a === b.q.CLIP ? {
         borderBottomLeftRadius: 0,
         borderBottomRightRadius: 0,
         boxShadow: "none"
       } : void 0,
-      type: p.Z.Types.ATTACHMENT,
+      type: p.ZP.Types.ATTACHMENT,
       onReveal: () => l(!0),
       className: O.spoilerContainer,
       children: e => (0, r.jsxs)("div", {

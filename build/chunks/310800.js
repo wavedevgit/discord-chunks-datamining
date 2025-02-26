@@ -14,8 +14,8 @@ var i = n(852229),
   d = n(863663),
   u = n(676651),
   m = n(613810),
-  p = n(391181),
-  g = n(388032),
+  g = n(391181),
+  p = n(388032),
   h = n(443837);
 let f = "guild-product-listings-header";
 
@@ -66,12 +66,12 @@ function b(e) {
     children: [(0, r.jsx)(s.vwX, {
       className: h.productListingsHeader,
       id: f,
-      children: _ ? g.NW.string(g.t.RwuStb) : g.NW.string(g.t.WKMcMT)
+      children: _ ? p.NW.string(p.t.RwuStb) : p.NW.string(p.t.WKMcMT)
     }), _ ? (0, r.jsx)("ul", {
       className: h.productListings,
       "aria-labelledby": f,
       children: b.map(e => (0, r.jsx)("li", {
-        children: (0, r.jsx)(p.Z, {
+        children: (0, r.jsx)(g.Z, {
           guildId: t,
           product: e,
           onEditProduct: () => u(e.id),
@@ -117,7 +117,7 @@ function x(e) {
       }), (0, r.jsx)(s.LZC, {
         size: 6,
         horizontal: !0
-      }), g.NW.string(g.t.riG6DQ)]
+      }), p.NW.string(p.t.riG6DQ)]
     }), (0, r.jsx)(s.LZC, {
       size: 24
     }), (0, r.jsx)(b, {

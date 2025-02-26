@@ -269,8 +269,8 @@ let W = {
     }, n.key)
   },
   spoiler: {
-    react: (e, t, n) => (0, r.jsx)(f.Z, {
-      type: f.Z.Types.TEXT,
+    react: (e, t, n) => (0, r.jsx)(f.ZP, {
+      type: f.ZP.Types.TEXT,
       inline: n.formatInline,
       renderTextElement: (e, t) => null == e || e.type !== u.Z || t ? e : i.cloneElement(e, {
         tabIndex: -1

@@ -16,8 +16,8 @@ var r = n(200651),
   d = n(8426),
   u = n(969632),
   m = n(974513),
-  p = n(290511),
-  g = n(388032),
+  g = n(290511),
+  p = n(388032),
   h = n(969630);
 
 function f(e) {
@@ -41,7 +41,7 @@ function f(e) {
           variant: "text-xs/semibold",
           color: "status-positive",
           className: h.statusText,
-          children: g.NW.string(g.t.rPnzRU)
+          children: p.NW.string(p.t.rPnzRU)
         })]
       });
       break;
@@ -55,7 +55,7 @@ function f(e) {
           variant: "text-xs/semibold",
           color: "status-warning",
           className: h.statusText,
-          children: g.NW.string(g.t["yTa+dn"])
+          children: p.NW.string(p.t["yTa+dn"])
         })]
       });
       break;
@@ -69,7 +69,7 @@ function f(e) {
           variant: "text-xs/semibold",
           color: "status-danger",
           className: h.statusText,
-          children: g.NW.string(g.t.EkokLy)
+          children: p.NW.string(p.t.EkokLy)
         })]
       })
   }
@@ -99,14 +99,14 @@ function f(e) {
         color: a.zxk.Colors.PRIMARY,
         look: a.zxk.Looks.OUTLINED,
         onClick: c,
-        children: g.NW.string(g.t.bt75u7)
+        children: p.NW.string(p.t.bt75u7)
       }) : (0, r.jsxs)(a.zxk, {
         className: h.cta,
         innerClassName: h.ctaInner,
         size: a.zxk.Sizes.SMALL,
         color: a.zxk.Colors.PRIMARY,
         onClick: c,
-        children: [g.NW.string(g.t["0GWElZ"]), (0, r.jsx)(a.ZSh, {
+        children: [p.NW.string(p.t["0GWElZ"]), (0, r.jsx)(a.ZSh, {
           size: "xxs",
           color: "currentColor"
         })]
@@ -119,7 +119,7 @@ function b(e) {
   let t = (0, s.e7)([l.Z], () => l.Z.getDefaultChannelIds(e)),
     n = i.useMemo(() => new Set(t), [t]),
     [r, a] = (0, o.VF)(e, n);
-  return a.length >= p.md && r.length >= p.X
+  return a.length >= g.md && r.length >= g.X
 }
 
 function x(e) {
@@ -133,17 +133,17 @@ function j(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: c
-  } = e, d = (0, s.Wu)([l.Z], () => l.Z.getDefaultChannelIds(t)), u = (0, s.e7)([l.Z], () => (0, o.kl)(t, l.Z.getDefaultChannelIds(t), l.Z.getOnboardingPrompts(t)).length), x = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, x), N = j.length, v = b(t), _ = (0, m.O4)(t), O = (0, s.e7)([l.Z], () => l.Z.isAdvancedMode(t)), y = O ? g.NW.formatToPlainString(g.t.nHwnLC, {
+  } = e, d = (0, s.Wu)([l.Z], () => l.Z.getDefaultChannelIds(t)), u = (0, s.e7)([l.Z], () => (0, o.kl)(t, l.Z.getDefaultChannelIds(t), l.Z.getOnboardingPrompts(t)).length), x = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, x), N = j.length, v = b(t), _ = (0, m.O4)(t), O = (0, s.e7)([l.Z], () => l.Z.isAdvancedMode(t)), y = O ? p.NW.formatToPlainString(p.t.nHwnLC, {
     numDefaultChannels: N,
     numFromQuestions: u - N
-  }) : v ? g.NW.formatToPlainString(g.t.HxEwSk, {
+  }) : v ? p.NW.formatToPlainString(p.t.HxEwSk, {
     numDefaultChannels: N
-  }) : g.NW.formatToPlainString(g.t.ey3uVV, {
-    numDefaultChannels: p.md,
-    numChattableChannels: p.X
+  }) : p.NW.formatToPlainString(p.t.ey3uVV, {
+    numDefaultChannels: g.md,
+    numChattableChannels: g.X
   });
   return (0, r.jsx)(f, {
-    title: O ? g.NW.string(g.t.YZookZ) : g.NW.string(g.t["4GSygo"]),
+    title: O ? p.NW.string(p.t.YZookZ) : p.NW.string(p.t["4GSygo"]),
     description: y,
     icon: (0, r.jsx)(a.VL1, {
       size: "md",
@@ -161,10 +161,10 @@ function N(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: i
-  } = e, c = (0, s.Wu)([l.Z], () => l.Z.getDefaultChannelIds(t)), d = (0, s.Wu)([l.Z], () => l.Z.getOnboardingPrompts(t)), u = d.length, [m, p] = (0, o.dF)(t, d, c), b = m.length, x = m.length + p.length, j = b / x * 100, N = (0, s.e7)([l.Z], () => l.Z.isAdvancedMode(t)), v = u > 0, _ = "none";
+  } = e, c = (0, s.Wu)([l.Z], () => l.Z.getDefaultChannelIds(t)), d = (0, s.Wu)([l.Z], () => l.Z.getOnboardingPrompts(t)), u = d.length, [m, g] = (0, o.dF)(t, d, c), b = m.length, x = m.length + g.length, j = b / x * 100, N = (0, s.e7)([l.Z], () => l.Z.isAdvancedMode(t)), v = u > 0, _ = "none";
   return v && (j >= 85 && !i ? _ = "good" : j < 85 && (_ = "warning")), (0, r.jsx)(f, {
-    title: N ? g.NW.string(g.t.AGjtFh) : g.NW.string(g.t.dqCzoa),
-    description: g.NW.format(g.t.iuNisr, {
+    title: N ? p.NW.string(p.t.AGjtFh) : p.NW.string(p.t.dqCzoa),
+    description: p.NW.format(p.t.iuNisr, {
       numChannels: b,
       numTotalChannels: x,
       channelsHook: (e, t) => (0, r.jsx)("span", {
@@ -190,20 +190,20 @@ function v(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: o
-  } = e, m = (0, s.e7)([u.Z], () => u.Z.getSettings()), p = (0, s.e7)([l.Z], () => l.Z.getEnabled(t)), b = (0, c.uo)(m), x = m.enabled, j = i.useCallback(() => {
+  } = e, m = (0, s.e7)([u.Z], () => u.Z.getSettings()), g = (0, s.e7)([l.Z], () => l.Z.getEnabled(t)), b = (0, c.uo)(m), x = m.enabled, j = i.useCallback(() => {
     (0, d.To)(t, !x)
   }, [t, x]), N = !(0, c.av)(m), v = "none";
   N && (b && !o ? v = "good" : b || (v = "required"));
-  let _ = g.NW.string(g.t.GMOwOD);
-  b ? N || (_ = g.NW.string(g.t.wHOoyM)) : _ = g.NW.string(g.t.wXFbgY);
+  let _ = p.NW.string(p.t.GMOwOD);
+  b ? N || (_ = p.NW.string(p.t.wHOoyM)) : _ = p.NW.string(p.t.wXFbgY);
   let O = null;
-  return N && p && (O = (0, r.jsx)(a.rsf, {
+  return N && g && (O = (0, r.jsx)(a.rsf, {
     className: h.inlineSwitch,
     checked: x,
     onChange: j,
     disabled: !b
   })), (0, r.jsx)(f, {
-    title: g.NW.string(g.t.mRHqsr),
+    title: p.NW.string(p.t.mRHqsr),
     description: _,
     icon: (0, r.jsx)(a.Vy8, {
       size: "md",

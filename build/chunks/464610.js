@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(84613),
   u = n(740903),
   m = n(598622),
-  p = n(388032),
-  g = n(66269);
+  g = n(388032),
+  p = n(66269);
 
 function h(e) {
   let {
@@ -24,9 +24,9 @@ function h(e) {
     page: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: g.safetyStepRow,
+    className: p.safetyStepRow,
     children: [(0, r.jsxs)("div", {
-      className: g.safetyStepContent,
+      className: p.safetyStepContent,
       children: [(0, r.jsx)(s.qEK, {
         src: i,
         size: s.EFr.SIZE_40,
@@ -43,12 +43,12 @@ function h(e) {
         })]
       })]
     }), (0, r.jsx)(s.zxk, {
-      className: g.__invalid_editButton,
+      className: p.__invalid_editButton,
       size: s.zxk.Sizes.SMALL,
       color: s.zxk.Colors.PRIMARY,
       look: s.zxk.Looks.OUTLINED,
       onClick: () => (0, d.K)(a),
-      children: p.NW.string(p.t.bt75u7)
+      children: g.NW.string(g.t.bt75u7)
     })]
   })
 }
@@ -92,46 +92,46 @@ function f(e) {
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      className: g.header,
-      children: p.NW.string(p.t["0A+VSE"])
+      className: p.header,
+      children: g.NW.string(g.t["0A+VSE"])
     }), (0, r.jsxs)("div", {
-      className: g.safetyChecklist,
+      className: p.safetyChecklist,
       children: [(0, r.jsx)(h, {
         icon: n(14215),
-        title: p.NW.string(p.t["53eF5u"]),
-        subtitle: p.NW.formatToPlainString(p.t.TG7NYG, {
+        title: g.NW.string(g.t["53eF5u"]),
+        subtitle: g.NW.formatToPlainString(g.t.TG7NYG, {
           enabled: N.filter(e => e.enabled).length,
           total: N.length
         }),
         page: u.u.CAPTCHA_AND_RAID_PROTECTION
       }), (0, r.jsx)("div", {
-        className: g.divider
+        className: p.divider
       }), (0, r.jsx)(h, {
         icon: n(128724),
-        title: p.NW.string(p.t.O0SfFx),
-        subtitle: p.NW.formatToPlainString(p.t.TG7NYG, {
+        title: g.NW.string(g.t.O0SfFx),
+        subtitle: g.NW.formatToPlainString(g.t.TG7NYG, {
           enabled: v.filter(e => e.enabled).length,
           total: v.length
         }),
         page: u.u.DM_AND_SPAM_PROTECTION
       }), (0, r.jsx)("div", {
-        className: g.divider
+        className: p.divider
       }), O && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h, {
           icon: n(145136),
-          title: p.NW.string(p.t.uRelg4),
-          subtitle: p.NW.formatToPlainString(p.t.TG7NYG, {
+          title: g.NW.string(g.t.uRelg4),
+          subtitle: g.NW.formatToPlainString(g.t.TG7NYG, {
             enabled: b,
             total: x
           }),
           page: u.u.AUTOMOD
         }), (0, r.jsx)("div", {
-          className: g.divider
+          className: p.divider
         })]
       }), (0, r.jsx)(h, {
         icon: n(913414),
-        title: p.NW.string(p.t.xrmhRU),
-        subtitle: p.NW.formatToPlainString(p.t.TG7NYG, {
+        title: g.NW.string(g.t.xrmhRU),
+        subtitle: g.NW.formatToPlainString(g.t.TG7NYG, {
           enabled: _.filter(e => e.enabled).length,
           total: _.length
         }),

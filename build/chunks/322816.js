@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(144991),
   u = n(496675),
   m = n(594174),
-  p = n(626135),
-  g = n(233608),
+  g = n(626135),
+  p = n(233608),
   h = n(700785),
   f = n(764260),
   b = n(631969),
@@ -71,15 +71,15 @@ function S(e) {
     [n.id]: E(I({}, n), {
       permissions: h.Hn
     })
-  }), [n]), p = i.useMemo(() => h.uB({
+  }), [n]), g = i.useMemo(() => h.uB({
     user: a,
     context: t,
     roles: u
-  }), [a, t, u]), g = !l.fS(d, p);
+  }), [a, t, u]), p = !l.fS(d, g);
   return (0, r.jsx)("div", {
     className: y.clearButtonWrapper,
     children: (0, r.jsx)(c.ua7, {
-      text: g ? O.NW.string(O.t["IQ/6Sk"]) : null,
+      text: p ? O.NW.string(O.t["IQ/6Sk"]) : null,
       position: "top",
       color: c.ua7.Colors.RED,
       children: e => {
@@ -95,7 +95,7 @@ function S(e) {
           onClick: () => (0, f.TY)(n.id),
           onMouseEnter: t,
           onMouseLeave: i,
-          disabled: l.fS(n.permissions, h.Hn) || g || s,
+          disabled: l.fS(n.permissions, h.Hn) || p || s,
           children: O.NW.string(O.t["UYq7+P"])
         })
       }
@@ -154,7 +154,7 @@ function P(e) {
     locked: s,
     setSelectedSection: l,
     initialSearchQuery: o
-  } = e, [d, u] = i.useState(null != o ? o : ""), m = i.useMemo(() => g.Z.generateGuildPermissionSpec(t), [t]).map(e => E(I({}, e), {
+  } = e, [d, u] = i.useState(null != o ? o : ""), m = i.useMemo(() => p.Z.generateGuildPermissionSpec(t), [t]).map(e => E(I({}, e), {
     permissions: e.permissions.filter(e => {
       let t = d.trimStart().toLowerCase();
       return e.title.toLowerCase().includes(t) || null != e.description && e.description.toString().toLowerCase().includes(t)
@@ -167,7 +167,7 @@ function P(e) {
     handleScroll: S
   } = (0, j.V)(), P = i.useRef(!1);
   return i.useEffect(() => {
-    !P.current && "" !== d.trimStart() && (p.default.track(_.rMx.SEARCH_STARTED, {
+    !P.current && "" !== d.trimStart() && (g.default.track(_.rMx.SEARCH_STARTED, {
       search_type: "Permissions"
     }), P.current = !0)
   }, [d]), (0, r.jsx)(c.yWw, {

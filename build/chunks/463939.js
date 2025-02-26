@@ -11,8 +11,8 @@ var r, i, s = n(200651),
   d = n.n(c),
   u = n(481060),
   m = n(264451),
-  p = n(759178),
-  g = n(462087),
+  g = n(759178),
+  p = n(462087),
   h = n(685201),
   f = n(766434),
   b = n(755930),
@@ -64,7 +64,7 @@ function y(e) {
       return (0, s.jsxs)(s.Fragment, {
         children: [null != o ? N.NW.formatToPlainString(N.t.I6YOjY, {
           payoutDate: o
-        }) : N.NW.string(N.t.G5ATX1), (0, s.jsx)(g.Z, {
+        }) : N.NW.string(N.t.G5ATX1), (0, s.jsx)(p.Z, {
           className: v.statusScheduledIcon
         })]
       });
@@ -102,7 +102,7 @@ function y(e) {
       return (0, s.jsxs)(s.Fragment, {
         children: [null != o ? N.NW.formatToPlainString(N.t.I6YOjY, {
           payoutDate: o
-        }) : N.NW.string(N.t.ubdQTk), (0, s.jsx)(g.Z, {
+        }) : N.NW.string(N.t.ubdQTk), (0, s.jsx)(p.Z, {
           className: v.statusScheduledIcon
         })]
       });
@@ -119,7 +119,7 @@ function y(e) {
     case j.jw.REJECTED:
     case j.jw.RISK_REVIEW:
       return (0, s.jsxs)(s.Fragment, {
-        children: [p.Z.getStatusErrorText(r), (0, s.jsx)(u.k$p, {
+        children: [g.Z.getStatusErrorText(r), (0, s.jsx)(u.k$p, {
           size: "md",
           color: "currentColor",
           className: v.statusErrorIcon

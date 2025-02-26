@@ -12,7 +12,7 @@ var r, i, s = n(200651),
   u = n(82923),
   m = n(50081);
 
-function p(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,7 +20,7 @@ function p(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-var g = ((i = g || {})[i.HOVERING = 0] = "HOVERING", i[i.FLYING = 1] = "FLYING", i);
+var p = ((i = p || {})[i.HOVERING = 0] = "HOVERING", i[i.FLYING = 1] = "FLYING", i);
 let h = Object.freeze({
   HOVERING: {
     Y_DURATION: 1500,
@@ -144,8 +144,8 @@ class b extends(r = a.Component) {
         delay: h.FLYING.DURATION / h.FLYING.OPACITY_DURATION_DIVIDEND
       }),
       m = this.createFireAnimation(h.FLYING.FIRE_COUNT, h.FLYING.DURATION, h.FLYING.FIRE_MIN_INTENSITY, h.FLYING.FIRE_MAX_INTENSITY),
-      p = u.Z.parallel([o, c, d, m]);
-    if (this.currentAnimation = u.Z.sequence([r, l, p]), await (null === (e = this.currentAnimation) || void 0 === e ? void 0 : e.start()), !this.isUnmounted) {
+      g = u.Z.parallel([o, c, d, m]);
+    if (this.currentAnimation = u.Z.sequence([r, l, g]), await (null === (e = this.currentAnimation) || void 0 === e ? void 0 : e.start()), !this.isUnmounted) {
       let {
         onFlyingComplete: e
       } = this.props;
@@ -189,7 +189,7 @@ class b extends(r = a.Component) {
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            p(e, t, n[t])
+            g(e, t, n[t])
           })
         }
         return e
@@ -212,8 +212,8 @@ class b extends(r = a.Component) {
     })
   }
   constructor(...e) {
-    super(...e), p(this, "x", new u.Z.Value(0)), p(this, "y", new u.Z.Value(0)), p(this, "opacity", new u.Z.Value(1)), p(this, "fireScale", new u.Z.Value(1)), p(this, "currentAnimation", null), p(this, "isUnmounted", !1)
+    super(...e), g(this, "x", new u.Z.Value(0)), g(this, "y", new u.Z.Value(0)), g(this, "opacity", new u.Z.Value(1)), g(this, "fireScale", new u.Z.Value(1)), g(this, "currentAnimation", null), g(this, "isUnmounted", !1)
   }
 }
-p(b, "Stages", g);
+g(b, "Stages", p);
 let x = b

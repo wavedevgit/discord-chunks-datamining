@@ -15,8 +15,8 @@ var i = n(120356),
   d = n(603211),
   u = n(107862),
   m = n(307707),
-  p = n(216701),
-  g = n(570961),
+  g = n(216701),
+  p = n(570961),
   h = n(290511),
   f = n(388032),
   b = n(995265);
@@ -69,7 +69,7 @@ function N(e) {
     drag: P,
     dragSourcePosition: w,
     drop: R,
-    setIsDraggable: D
+    setIsDraggable: Z
   } = (0, d.Z)({
     type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(N.id),
     index: T,
@@ -78,10 +78,10 @@ function N(e) {
     onDragComplete: I,
     onDragReset: E
   }), {
-    customEmoji: Z,
+    customEmoji: D,
     unicodeEmoji: k
   } = (0, m.Z)(null === (t = O.emoji) || void 0 === t ? void 0 : t.id, null === (i = O.emoji) || void 0 === i ? void 0 : i.name);
-  return (0, h.Oq)(O.emoji) || null != Z || null != k || (S = f.NW.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
+  return (0, h.Oq)(O.emoji) || null != D || null != k || (S = f.NW.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
     className: s()(b.optionCard, {
       [b.hasError]: y || null != S,
       [b.dropIndicatorBefore]: null != w && T < w,
@@ -98,19 +98,19 @@ function N(e) {
         option: O,
         index: _,
         onSave: e => {
-          (0, g.Kk)(u, N.id, {
+          (0, p.Kk)(u, N.id, {
             options: N.options.map(t => t.id === O.id ? e : t)
           })
         },
         onDelete: () => {
-          (0, g.Kk)(u, N.id, {
+          (0, p.Kk)(u, N.id, {
             options: N.options.filter(e => e.id !== O.id)
           })
         }
       }))
     }),
-    onMouseEnter: () => D(!0),
-    onMouseLeave: () => D(!1),
+    onMouseEnter: () => Z(!0),
+    onMouseLeave: () => Z(!1),
     innerRef: e => P(R(e)),
     children: [(0, r.jsx)("div", {
       className: b.dragContainer,
@@ -123,7 +123,7 @@ function N(e) {
       className: b.optionCardRow,
       children: [(0, r.jsx)("div", {
         className: b.emoji,
-        children: (0, r.jsx)(p.Z, {
+        children: (0, r.jsx)(g.Z, {
           emojiId: null === (a = O.emoji) || void 0 === a ? void 0 : a.id,
           emojiName: null === (c = O.emoji) || void 0 === c ? void 0 : c.name,
           defaultComponent: null
@@ -166,7 +166,7 @@ function v(e) {
       return n => (0, r.jsx)(e, j(x({}, n), {
         guild: t,
         prompt: i,
-        onSave: e => (0, g.Kk)(t, i.id, {
+        onSave: e => (0, p.Kk)(t, i.id, {
           options: [...i.options, e]
         }),
         onDelete: () => {},

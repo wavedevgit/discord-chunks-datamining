@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(236413),
   u = n(727072),
   m = n(85960),
-  p = n(65912),
-  g = n(457414),
+  g = n(65912),
+  p = n(457414),
   h = n(154502),
   f = n(295708),
   b = n(273504),
@@ -167,10 +167,10 @@ function S(e) {
     rule: t,
     isDefaultRule: n,
     onContextMenu: l
-  } = e, o = (0, g.w)(t.triggerType, t), {
+  } = e, o = (0, p.w)(t.triggerType, t), {
     isLoading: c,
     saveRule: m
-  } = (0, p.w)(), {
+  } = (0, g.w)(), {
     updateRule: h
   } = (0, u.pH)(t.guildId), [f, b] = i.useState(t.enabled), O = (0, s.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !c) {
@@ -249,7 +249,7 @@ function T(e) {
   let {
     triggerType: t,
     onSetupRule: n
-  } = e, s = i.useMemo(() => (0, g.w)(t), [t]);
+  } = e, s = i.useMemo(() => (0, p.w)(t), [t]);
   if (null == s) return null;
   let {
     headerText: l,
@@ -310,11 +310,11 @@ function P(e) {
         rule: t
       }, n))
     }))
-  }, p = (0, r.jsx)(T, {
+  }, g = (0, r.jsx)(T, {
     triggerType: i,
     onSetupRule: d
   });
-  return null == t || c || (p = s ? (0, r.jsx)(I, {
+  return null == t || c || (g = s ? (0, r.jsx)(I, {
     rule: t,
     onChangeRule: u,
     onContextMenu: m
@@ -325,6 +325,6 @@ function P(e) {
   })), (0, r.jsx)(a.P3F, {
     className: j.mainContainer,
     onContextMenu: m,
-    children: p
+    children: g
   })
 }

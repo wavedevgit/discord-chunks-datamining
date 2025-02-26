@@ -14,7 +14,7 @@ var r = n(200651),
   u = n(596390),
   m = n(41011);
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function p(e) {
   return e
 }
 
-function g(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -81,7 +81,7 @@ let h = i.forwardRef(function(e, t) {
     color: o.ua7.Colors.RED,
     position: "left",
     forceOpen: u || void 0,
-    children: e => (0, r.jsxs)("div", g(p({
+    children: e => (0, r.jsxs)("div", p(g({
       ref: t,
       className: a()(m.chipletValue, {
         [m.isEditing]: d,
@@ -111,7 +111,7 @@ let h = i.forwardRef(function(e, t) {
       color: o.ua7.Colors.RED,
       position: "top",
       forceOpen: u || void 0,
-      children: e => (0, r.jsx)("span", g(p({}, e), {
+      children: e => (0, r.jsx)("span", p(g({}, e), {
         className: m.errorValue,
         children: b
       }))
@@ -126,8 +126,8 @@ function f(e) {
     value: t,
     onChange: n,
     onBlur: s,
-    onFocus: p,
-    onRemove: g,
+    onFocus: g,
+    onRemove: p,
     isSelected: f,
     isSelecting: b,
     error: x,
@@ -146,28 +146,28 @@ function f(e) {
   }, [j]), i.useEffect(() => () => {
     clearTimeout(w.current)
   }, []);
-  let D = i.useCallback(e => {
+  let Z = i.useCallback(e => {
       n(e.target.value)
     }, [n]),
-    Z = i.useCallback(function() {
+    D = i.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      if (t.trim().length <= 0 && g(), null != N.current && null != y.current && null != v.current) {
+      if (t.trim().length <= 0 && p(), null != N.current && null != y.current && null != v.current) {
         var n;
         N.current.scrollTo(0, 0), N.current.setSelectionRange(0, 0), N.current.scrollLeft = 0, y.current.scrollLeft = 0, (null === (n = v.current) || void 0 === n ? void 0 : n.ref) != null && (v.current.ref.scrollLeft = 0)
       }
       O(!1), s(e)
-    }, [t, y, s, g]),
+    }, [t, y, s, p]),
     k = i.useCallback(e => {
       let n = t.trim().length <= 0;
-      u.ye.has(e.key) ? (e.preventDefault(), e.stopPropagation(), Z(!0)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), Z(!0))
-    }, [Z, t]),
+      u.ye.has(e.key) ? (e.preventDefault(), e.stopPropagation(), D(!0)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), D(!0))
+    }, [D, t]),
     A = i.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
-      p(t), t ? e.preventDefault() : O(!0), e.stopPropagation()
-    }, [p]),
+      g(t), t ? e.preventDefault() : O(!0), e.stopPropagation()
+    }, [g]),
     W = i.useCallback(e => {
-      g()
-    }, [g]);
+      p()
+    }, [p]);
   return (0, r.jsx)("div", {
     className: m.chipletFlexContainer,
     children: (0, r.jsxs)("div", {
@@ -181,7 +181,7 @@ function f(e) {
       }),
       children: [(0, r.jsxs)(o.P3F, {
         tag: "div",
-        onBlur: () => Z(!1),
+        onBlur: () => D(!1),
         onClick: A,
         ignoreKeyPress: !0,
         onMouseEnter: () => P(!0),
@@ -197,7 +197,7 @@ function f(e) {
             [m.isSelecting]: b
           }),
           ref: N,
-          onChange: D,
+          onChange: Z,
           onKeyDownCapture: k,
           value: t,
           style: {

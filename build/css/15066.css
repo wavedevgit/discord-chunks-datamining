@@ -1,6 +1,6 @@
 /**
   Module ID: 15066
-  Original File Name: 746a1f2d45074809
+  Original File Name: 97704752c349a197
 **/
 .loadingWrapper__5a143 {
     display: flex;
@@ -680,7 +680,7 @@
 }
 
 .hiddenExplicitEmbed__623de.isHidden__623de .grid__623de {
-    filter: blur(40px) brightness(.55)
+    filter: blur(var(--__obscured-background-blur-radius)) brightness(var(--__obscured-background-brightness))
 }
 
 .justifyAuto__623de {
@@ -707,7 +707,7 @@
 }
 
 .hiddenExplicitAttachment__623de.isHidden__623de {
-    filter: blur(40px) brightness(.55)
+    filter: blur(var(--__obscured-background-blur-radius)) brightness(var(--__obscured-background-brightness))
 }
 
 .enable-forced-colors .embed__623de {
@@ -1443,4 +1443,4 @@ h1.title_feb59c,h2.title_feb59c {
     margin-right: var(--spacing-32)
 }
 
-/*# sourceMappingURL=746a1f2d45074809.css.map*/
+/*# sourceMappingURL=97704752c349a197.css.map*/

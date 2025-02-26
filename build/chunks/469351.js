@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(204875),
   u = n(715796),
   m = n(411667),
-  p = n(434404),
-  g = n(962086),
+  g = n(434404),
+  p = n(962086),
   h = n(225675),
   f = n(703656),
   b = n(430824),
@@ -37,17 +37,17 @@ function S(e) {
     listingsLoaded: S
   } = (0, N.eD)(t), T = (0, a.e7)([b.Z], () => b.Z.getGuild(t)), P = (0, a.e7)([x.default], () => x.default.getCurrentUser()), w = (null == T ? void 0 : T.isOwner(P)) === !0, {
     loading: R
-  } = (0, o.H)(t), [D, Z] = i.useState(n ? "manage_listings" : "payment");
+  } = (0, o.H)(t), [Z, D] = i.useState(n ? "manage_listings" : "payment");
   (0, u.P)(T);
   let k = i.useCallback(() => {
     if (null == T) return;
     let e = b.Z.getRole(T.id, T.getEveryoneRoleId());
     if (null == e) return;
-    p.Z.close();
+    g.Z.close();
     let t = {
       [e.id]: e
     };
-    (0, g.iD)(T.id, {
+    (0, p.iD)(T.id, {
       type: h.z.SERVER_SHOP,
       roles: t,
       initialTab: "guild_products",
@@ -73,8 +73,8 @@ function S(e) {
       look: "brand",
       className: E.tabBar,
       "aria-label": I.NW.string(I.t.X6h2g4),
-      selectedItem: D,
-      onItemSelect: Z,
+      selectedItem: Z,
+      onItemSelect: D,
       children: [(0, r.jsx)(d.Z, {
         id: "basic_info",
         disabledTooltip: I.NW.string(I.t.NVDuUV),
@@ -100,7 +100,7 @@ function S(e) {
         })
       }) : null]
     }),
-    L = (0, s.EQ)(D).with("basic_info", () => (0, r.jsx)(v.Z, {
+    L = (0, s.EQ)(Z).with("basic_info", () => (0, r.jsx)(v.Z, {
       guildId: t
     })).with("manage_listings", () => (0, r.jsx)(_.Z, {
       guildId: t
@@ -108,7 +108,7 @@ function S(e) {
       guildId: t
     })).exhaustive(),
     M = S ? (0, r.jsx)(l.njP.Panel, {
-      id: D,
+      id: Z,
       children: L
     }) : (0, r.jsx)(l.$jN, {});
   return (0, r.jsxs)(c.AL, {

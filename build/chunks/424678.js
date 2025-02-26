@@ -1,12 +1,12 @@
-/** Chunk was on 83366 **/
+/** Chunk was on 79120 **/
 n.d(t, {
   Z: () => s
 }), n(47120), n(301563);
 var r = n(200651),
   l = n(192379),
-  o = n(481060);
+  i = n(481060);
 
-function i(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,7 +22,7 @@ class a extends l.PureComponent {
       className: n
     } = this.props;
     return (0, r.jsxs)("span", {
-      children: [(0, r.jsx)(o.eee, {
+      children: [(0, r.jsx)(i.eee, {
         className: n,
         onClick: this.handleClick,
         children: e
@@ -30,7 +30,7 @@ class a extends l.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), i(this, "handleClick", () => {
+    super(...e), o(this, "handleClick", () => {
       let {
         onClick: e,
         index: t
@@ -53,7 +53,7 @@ class s extends l.PureComponent {
     }, "spotify-artist-".concat(n)))
   }
   constructor(...e) {
-    super(...e), i(this, "handleOpenSpotifyArtist", e => {
+    super(...e), o(this, "handleOpenSpotifyArtist", e => {
       let {
         onOpenSpotifyArtist: t
       } = this.props;

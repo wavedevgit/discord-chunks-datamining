@@ -15,7 +15,7 @@ var i = n(120356),
   u = n(981631),
   m = n(500297);
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function p(e) {
   }
   return e
 }
-let g = u.Ilk.PRIMARY_400,
+let p = u.Ilk.PRIMARY_400,
   h = u.Ilk.PRIMARY_500;
 
 function f(e) {
@@ -57,13 +57,13 @@ function f(e) {
     return i
   }(e, ["enabled", "imageClassName", "iconWrapperClassName"]);
   let f = (0, o.ZP)(),
-    b = (0, a.wj)(f) ? g : h,
+    b = (0, a.wj)(f) ? p : h,
     x = {
       height: 18,
       width: 18,
       color: (0, c.Lq)(b)
     };
-  return (0, r.jsx)(d.Z, p({
+  return (0, r.jsx)(d.Z, g({
     className: s()({
       [m.avatarUploader]: t,
       [m.avatarUploaderDisabled]: !t
@@ -71,9 +71,9 @@ function f(e) {
     imageClassName: s()(n, m.avatarUploaderInnerSquare, {
       [m.avatarUploaderInnerSquareDisabled]: !t
     }),
-    icon: null != u.image && "" !== u.image ? (0, r.jsx)(l.vdY, p({
+    icon: null != u.image && "" !== u.image ? (0, r.jsx)(l.vdY, g({
       size: "custom"
-    }, x)) : (0, r.jsx)(l.FmF, p({
+    }, x)) : (0, r.jsx)(l.FmF, g({
       size: "custom"
     }, x)),
     iconClassName: s()(m.avatarUploadIcon, m.hideDefaultIcon),

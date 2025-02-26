@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(723047),
   u = n(727843),
   m = n(587431),
-  p = n(86126),
-  g = n(880193),
+  g = n(86126),
+  p = n(880193),
   h = n(516448),
   f = n(975331),
   b = n(231610),
@@ -98,11 +98,11 @@ function v(e) {
           }), t))
         }
       })]
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(p.Z, {
       priceTiers: T
     }), (0, r.jsx)(h.Z, {
       allSubscriptionListings: s
-    }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(b.Z, {}), (0, r.jsx)(p.Z, {
+    }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(b.Z, {}), (0, r.jsx)(g.Z, {
       onDeleteEditState: C
     })]
   })

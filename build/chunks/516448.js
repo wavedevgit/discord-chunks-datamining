@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(164e3),
   u = n(783454),
   m = n(862319),
-  p = n(140285),
-  g = n(390583),
+  g = n(140285),
+  p = n(390583),
   h = n(641249),
   f = n(574085),
   b = n(293810),
@@ -80,13 +80,13 @@ function N(e) {
         disabled: S,
         children: x.NW.string(x.t["5a4Axc"])
       }), I && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(p.Z, {
+        children: [(0, r.jsx)(g.Z, {
           "aria-labelledby": E,
           disabled: S
         }), (0, r.jsx)(s.LZC, {
           size: 8
         })]
-      }), (0, r.jsx)(g.Z, {})]
+      }), (0, r.jsx)(p.Z, {})]
     }), (0, r.jsx)(s.LZC, {
       size: 24
     }), (0, r.jsxs)(s.hjN, {

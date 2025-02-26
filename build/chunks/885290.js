@@ -245,10 +245,10 @@ function W(e) {
     imageSpecifications: Z,
     modalTitle: I = _.NW.string(_.t.DToW4e),
     uploadOptionTitle: k = _.NW.string(_.t["MsUY/f"])
-  } = e, U = (0, o.e7)([v.default], () => v.default.getCurrentUser()), W = (0, o.e7)([O.Z], () => O.Z.getGuildId()), B = (0, o.e7)([y.Z], () => y.Z.getGuild(W)), H = (0, s.vRw)(), G = d === S.pC.AVATAR || d === S.pC.BANNER, V = !N.ZP.canUseAnimatedAvatar(U) && d === S.pC.AVATAR, z = (0, p.M)(!G), X = (0, g.Tq)({
+  } = e, U = (0, o.e7)([v.default], () => v.default.getCurrentUser()), W = (0, o.e7)([O.Z], () => O.Z.getGuildId()), B = (0, o.e7)([y.Z], () => y.Z.getGuild(W)), H = (0, s.vRw)(), G = d === S.pC.AVATAR || d === S.pC.BANNER, V = !N.ZP.canUseAnimatedAvatar(U) && d === S.pC.AVATAR, z = (0, p.M)(!G), q = (0, g.Tq)({
     location: "NewSelectImageModal"
   }), {
-    analyticsLocations: q
+    analyticsLocations: X
   } = (0, u.ZP)(L, c.Z.SELECT_IMAGE_MODAL), Y = l.useCallback(e => {
     let {
       assetOrigin: t = b.q.NEW_ASSET,
@@ -314,15 +314,15 @@ function W(e) {
   l.useEffect(() => {
     V && C.default.track(P.rMx.PREMIUM_UPSELL_VIEWED, {
       type: P.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
-      location_stack: q
+      location_stack: X
     }), C.default.track(P.rMx.OPEN_MODAL, {
       type: P.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location: E,
-      location_stack: q
+      location_stack: X
     })
-  }, [V, E, q]);
+  }, [V, E, X]);
   let Q = h && z,
-    ee = d === S.pC.AVATAR && X;
+    ee = d === S.pC.AVATAR && q;
   return (0, r.jsxs)(s.Y0X, {
     transitionState: t,
     size: s.CgR.DYNAMIC,

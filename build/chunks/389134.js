@@ -12,9 +12,9 @@ var r, i = n(392711),
   d = n(944163),
   u = n(77498),
   m = n(116175),
-  p = n(308083);
+  g = n(308083);
 
-function g(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -41,18 +41,18 @@ function f(e) {
 }
 let b = () => ({
     gameApplicationIds: new Set,
-    playstyle: p.zv.NONE,
+    playstyle: g.zv.NONE,
     interests: new Set,
     description: "",
-    wildcardDescriptors: [p.U6, p.U6, p.U6],
+    wildcardDescriptors: [g.U6, g.U6, g.U6],
     tag: "",
     verificationForm: h({}, d.t),
     badgeKind: m.ZD.SWORD,
     badgePrimaryColor: m.sg["0"].primary,
     badgeSecondaryColor: m.sg["0"].secondary,
-    banner: p.qC.NIGHT_SKY,
-    brandPrimaryColor: p.ym["0"].primary,
-    brandSecondaryColor: p.ym["0"].secondary
+    banner: g.qC.NIGHT_SKY,
+    brandPrimaryColor: g.ym["0"].primary,
+    brandSecondaryColor: g.ym["0"].secondary
   }),
   x = b(),
   j = l()(x),
@@ -70,7 +70,7 @@ class O extends(r = o.ZP.Store) {
     }
   }
 }
-g(O, "displayName", "ClanSettingsStore");
+p(O, "displayName", "ClanSettingsStore");
 let y = new O(c.Z, {
   CLAN_SETTINGS_FETCH_START: function() {
     v = !1, x = b(), j = l()(x), N = !1, _ = {}

@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 e.exports = {
   channel: "channel__8f92d",
   channelLeft: "channelLeft__8f92d"

@@ -19,17 +19,17 @@ function d(e) {
   } = e, {
     topGames: u,
     tryFetchTopGames: m
-  } = (0, a.I)(), p = u.get(t), [g, h] = i.useState(!1);
+  } = (0, a.I)(), g = u.get(t), [p, h] = i.useState(!1);
   i.useEffect(() => {
     h(!0), m(t).finally(() => {
       h(!1)
     })
   }, [t, m]);
-  let f = i.useMemo(() => null == p ? [] : Object.keys(p).sort((e, t) => p[t].score - p[e].score), [p]),
+  let f = i.useMemo(() => null == g ? [] : Object.keys(g).filter(e => !n.includes(e)).sort((e, t) => g[t].score - g[e].score), [g, n]),
     b = i.useCallback(e => {
       n.includes(e) ? d(n.filter(t => t !== e)) : d([...n, e])
     }, [d, n]);
-  return g && null == p ? (0, r.jsx)(s.$jN, {}) : null == f || 0 === f.length ? null : (0, r.jsxs)(r.Fragment, {
+  return p && null == g ? (0, r.jsx)(s.$jN, {}) : null == f || 0 === f.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: c.separator
     }), (0, r.jsxs)("div", {
@@ -42,7 +42,7 @@ function d(e) {
         className: c.gamesList,
         children: f.map(e => (0, r.jsx)(l.Z, {
           applicationId: e,
-          selected: n.includes(e),
+          selected: !1,
           onClick: b
         }, e))
       })]

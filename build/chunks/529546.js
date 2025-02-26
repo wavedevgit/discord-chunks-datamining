@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 e.exports = {
   clickableSticker: "clickableSticker_abd7a8",
   stickerName: "stickerName_abd7a8",

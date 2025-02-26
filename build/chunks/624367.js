@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(266796), n(566702);
@@ -22,8 +22,8 @@ var i = n(373793),
   v = n(624138),
   y = n(135431),
   x = n(147865),
-  O = n(778569),
-  E = n(388032),
+  E = n(778569),
+  O = n(388032),
   j = n(739299);
 let N = (0, v.Mg)(o.Z.ACTIVITY_BOOKMARK_EMBED_IMAGE_WIDTH);
 
@@ -39,7 +39,7 @@ function C(e) {
   } = (0, c.ZP)(s.Z.ACTIVITY_BOOKMARK), [A] = (0, _.Z)([C]), w = (0, a.e7)([b.Z], () => {
     var e;
     return null !== (e = b.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }), Z = null == A ? void 0 : null === (t = A.bot) || void 0 === t ? void 0 : t.id, k = null != A && (0, d.ye)(A), R = (0, x.ZP)(null !== (o = null == A ? void 0 : A.maxParticipants) && void 0 !== o ? o : 0), L = (0, O.Z)({
+  }), Z = null == A ? void 0 : null === (t = A.bot) || void 0 === t ? void 0 : t.id, k = null != A && (0, d.ye)(A), R = (0, x.ZP)(null !== (o = null == A ? void 0 : A.maxParticipants) && void 0 !== o ? o : 0), L = (0, E.Z)({
     applicationId: C,
     size: N,
     names: ["embedded_cover"]
@@ -116,12 +116,12 @@ function C(e) {
               },
               className: j.button,
               color: l.Ttl.PRIMARY,
-              children: E.NW.string(E.t.fbcCzc)
+              children: O.NW.string(O.t.fbcCzc)
             }), (0, r.jsx)(l.zxk, {
               onClick: F,
               className: j.button,
               color: l.Ttl.GREEN,
-              children: E.NW.string(E.t.RscU7O)
+              children: O.NW.string(O.t.RscU7O)
             })]
           })]
         })]

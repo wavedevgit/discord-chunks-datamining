@@ -17,9 +17,9 @@ var r = n(200651),
   h = n(981631),
   g = n(474936),
   x = n(388032),
-  f = n(929475);
+  v = n(929475);
 
-function v(e) {
+function f(e) {
   var {
     location: t
   } = e, n = function(e, t) {
@@ -63,8 +63,8 @@ function v(e) {
     }
     return e
   }({
-    className: i()(f.enhancedCTA, f.ctaGradientBackground),
-    iconClassName: f.premiumIcon,
+    className: i()(v.enhancedCTA, v.ctaGradientBackground),
+    iconClassName: v.premiumIcon,
     subscriptionTier: g.Si.TIER_2,
     buttonText: a(),
     size: o.zxk.Sizes.TINY,
@@ -75,12 +75,12 @@ function v(e) {
 function j() {
   let e = (0, a.e7)([c.Z], () => c.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
-    className: i()(f.reverseTrialEducationBannerContainer, {
-      [f.reducedMotion]: e
+    className: i()(v.reverseTrialEducationBannerContainer, {
+      [v.reducedMotion]: e
     }),
     children: [(0, r.jsx)(o.Fmz, {
-      className: i()(f.unlockAnimation, {
-        [f.reducedMotion]: e
+      className: i()(v.unlockAnimation, {
+        [v.reducedMotion]: e
       }),
       loop: !1,
       shouldAnimate: !e,
@@ -88,7 +88,7 @@ function j() {
       importData: () => n.e("21812").then(n.t.bind(n, 741855, 19))
     }), (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
-      className: f.reverseTrialEducationText,
+      className: v.reverseTrialEducationText,
       children: x.NW.format(x.t.GimLpa, {})
     })]
   })
@@ -106,17 +106,17 @@ function S(e) {
     objectType: h.Qqv.BUY
   };
   return (0, r.jsxs)("div", {
-    className: i()(f.upsellBanner, f.enhancedBanner, {
-      [f.gradientGlow]: s
+    className: i()(v.upsellBanner, v.enhancedBanner, {
+      [v.gradientGlow]: s
     }),
     children: [(0, r.jsxs)("div", {
-      className: f.iconTextContainer,
+      className: v.iconTextContainer,
       children: [(0, r.jsx)(o.SrA, {
         size: "md",
         color: u.JX.PREMIUM_TIER_2
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
-        className: i()(f.upsellText, f.enhancedUpsellText),
+        className: i()(v.upsellText, v.enhancedUpsellText),
         children: null != t ? t : x.NW.format(x.t["L/zCtr"], {
           onClick: () => l({
             analyticsLocation: a,
@@ -125,8 +125,8 @@ function S(e) {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: f.enhancedCTAs,
-      children: (0, r.jsx)(v, {
+      className: v.enhancedCTAs,
+      children: (0, r.jsx)(f, {
         location: a
       })
     })]

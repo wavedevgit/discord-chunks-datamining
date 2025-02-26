@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(481060),
   u = n(726542),
   m = n(100527),
-  p = n(933557),
-  g = n(184301),
+  g = n(933557),
+  p = n(184301),
   h = n(347475),
   f = n(210887),
   b = n(598077),
@@ -127,7 +127,7 @@ class w extends i.PureComponent {
           children: t
         }, i),
         count: l.count,
-        channel: null == l.channel || "string" == typeof l.channel ? l.channel : (0, p.F6)(l.channel, j.default, x.Z, !0),
+        channel: null == l.channel || "string" == typeof l.channel ? l.channel : (0, g.F6)(l.channel, j.default, x.Z, !0),
         channelHook: (e, t) => (0, r.jsx)("span", {
           onContextMenu: i,
           children: e
@@ -164,7 +164,7 @@ class w extends i.PureComponent {
       }
     } = e;
     if (null != i && null != s) return (0, r.jsx)(d.yRy, {
-      preload: () => (0, g.Z)(s, i.getAvatarURL(t, 80), {
+      preload: () => (0, p.Z)(s, i.getAvatarURL(t, 80), {
         guildId: t
       }),
       renderPopout: e => (0, r.jsx)(h.Z, T(S({}, e), {
@@ -219,7 +219,7 @@ class w extends i.PureComponent {
       variant: "text-sm/normal",
       children: [u, "—", m]
     });
-    let p = o ? s : C.dG4;
+    let g = o ? s : C.dG4;
     return (0, r.jsx)(l.mh, {
       id: t.id,
       children: s => (0, r.jsxs)("div", {
@@ -227,7 +227,7 @@ class w extends i.PureComponent {
         children: [(0, r.jsxs)(d.P3F, T(S({
           className: c,
           "aria-expanded": i,
-          onClick: p
+          onClick: g
         }, s), {
           children: [(0, r.jsx)(y.mp, {
             action: t.action,

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(700833),
   u = n(217472),
   m = n(592286),
-  p = n(388032),
-  g = n(429511);
+  g = n(388032),
+  p = n(429511);
 
 function h(e) {
   var t;
@@ -52,8 +52,8 @@ function h(e) {
     children: [(0, r.jsx)(s.X6, {
       variant: "text-xs/bold",
       color: "text-muted",
-      className: g.title,
-      children: p.NW.format(p.t["sm+75u"], {
+      className: p.title,
+      children: g.NW.format(g.t["sm+75u"], {
         currentCount: h.length,
         maxCount: m.nx
       })
@@ -71,7 +71,7 @@ function h(e) {
       actionsLocation: "side",
       fieldStyle: a.it.COMPACT
     })), !_ && (0, r.jsx)("div", {
-      className: g.addQuestionsContainer,
+      className: p.addQuestionsContainer,
       children: (0, r.jsx)(o.Z, {
         addFormField: y,
         guild: n,
@@ -87,29 +87,29 @@ function f(e) {
   let {
     addFormField: t
   } = e, n = i.useMemo(() => [{
-    text: p.NW.string(p.t.EOwiEh),
+    text: g.NW.string(g.t.EOwiEh),
     onClick: () => {
       t({
         field_type: a.QJ.TEXT_INPUT,
-        label: p.NW.string(p.t.EOwiEh),
+        label: g.NW.string(g.t.EOwiEh),
         required: !0
       })
     }
   }, {
-    text: p.NW.string(p.t.jqrNDg),
+    text: g.NW.string(g.t.jqrNDg),
     onClick: () => {
       t({
         field_type: a.QJ.TEXT_INPUT,
-        label: p.NW.string(p.t.jqrNDg),
+        label: g.NW.string(g.t.jqrNDg),
         required: !0
       })
     }
   }, {
-    text: p.NW.string(p.t.I5q8vr),
+    text: g.NW.string(g.t.I5q8vr),
     onClick: () => {
       t({
         field_type: a.QJ.TEXT_INPUT,
-        label: p.NW.string(p.t.I5q8vr),
+        label: g.NW.string(g.t.I5q8vr),
         required: !0
       })
     }
@@ -118,8 +118,8 @@ function f(e) {
     children: [(0, r.jsx)(s.X6, {
       variant: "text-xs/bold",
       color: "text-muted",
-      className: g.examplesHeader,
-      children: p.NW.string(p.t.ID04cH)
+      className: p.examplesHeader,
+      children: g.NW.string(g.t.ID04cH)
     }), (0, r.jsx)(c.j, {
       pills: n
     })]

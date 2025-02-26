@@ -12,7 +12,7 @@ n.d(t, {
   kG: () => f,
   km: () => d,
   u7: () => g
-}), n(580130);
+});
 var r = n(55563),
   i = n(513785),
   o = n(474936),
@@ -66,10 +66,9 @@ function m(e) {
 }
 
 function E() {
-  var e, t;
-  return null !== (t = null !== (e = i.Z.getTenureRewardStatusForRewardId(a.Ft.FREE_AVATAR_DECO_1_MONTH)) && void 0 !== e ? e : i.Z.getTenureRewardStatusForRewardId(a.Ft.FREE_GUILD_BOOST_1_MONTH)) && void 0 !== t ? t : i.Z.getTenureRewardStatusForRewardId(a.Ft.FREE_GUILD_BOOST_3_MONTHS)
+  return i.Z.getTenureRewardStatusForRewardId(a.Ft.FREE_AVATAR_DECO_1_MONTH)
 }
 
 function v(e) {
-  return e === a.Ft.FREE_AVATAR_DECO_1_MONTH ? a.nW.AVATAR_DECO : e === a.Ft.FREE_GUILD_BOOST_1_MONTH || e === a.Ft.FREE_GUILD_BOOST_3_MONTHS ? a.nW.SERVER_BOOST : void 0
+  if (e === a.Ft.FREE_AVATAR_DECO_1_MONTH) return a.nW.AVATAR_DECO
 }

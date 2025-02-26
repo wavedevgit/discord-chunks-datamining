@@ -1,26 +1,26 @@
-/** Chunk was on 83366 **/
+/** Chunk was on 68051 **/
 n.d(t, {
-  $: () => i
+  $: () => o
 });
 var r = n(200651);
 n(192379);
-var l = n(907040),
-  o = n(185923);
+var i = n(907040),
+  a = n(185923);
 
-function i(e) {
+function o(e) {
   let {
     channel: t,
     closePopout: n,
-    analyticsOverride: i,
-    onSelectEmoji: a,
+    analyticsOverride: o,
+    onSelectEmoji: l,
     messageId: s
   } = e;
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(i.Z, {
     closePopout: n,
     channel: t,
-    onSelectEmoji: a,
-    pickerIntention: o.Hz.REACTION,
-    analyticsOverride: i,
+    onSelectEmoji: l,
+    pickerIntention: a.Hz.REACTION,
+    analyticsOverride: o,
     messageId: s
   })
 }

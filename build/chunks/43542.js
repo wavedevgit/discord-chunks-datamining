@@ -6,9 +6,9 @@ var r = n(200651),
   l = n(192379),
   i = n(442837),
   a = n(481060),
-  o = n(523751),
-  c = n(706454),
-  s = n(601964),
+  s = n(523751),
+  o = n(706454),
+  c = n(601964),
   u = n(709054),
   d = n(997431),
   m = n(388032),
@@ -17,9 +17,9 @@ var r = n(200651),
 function x(e) {
   let {
     profile: t
-  } = e, n = (0, i.e7)([c.default], () => c.default.locale), x = (0, d.M)(u.default.extractTimestamp(t.id), n), h = l.useMemo(() => {
-    let e = new s.ZP(t);
-    return (0, r.jsx)(o.Z, {
+  } = e, n = (0, i.e7)([o.default], () => o.default.locale), x = (0, d.M)(u.default.extractTimestamp(t.id), n), f = l.useMemo(() => {
+    let e = new c.ZP(t);
+    return (0, r.jsx)(s.Z, {
       guild: e,
       className: v.guildBadge,
       tooltipColor: a.ua7.Colors.NESTED,
@@ -35,7 +35,7 @@ function x(e) {
         variant: "heading-lg/medium",
         color: "header-primary",
         children: t.name
-      }), h]
+      }), f]
     }), (0, r.jsxs)("div", {
       className: v.members,
       children: [(0, r.jsxs)("div", {

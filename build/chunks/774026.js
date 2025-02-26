@@ -26,8 +26,8 @@ function h(e) {
     channelId: h.id,
     guildId: h.guild_id,
     messageId: void 0
-  })(g), f = s()(n).diff(s()(), "hours");
-  return f <= 0 ? null : (0, r.jsxs)("div", {
+  })(g), v = s()(n).diff(s()(), "hours");
+  return v <= 0 ? null : (0, r.jsxs)("div", {
     className: p.attribution,
     children: [(0, r.jsx)(c.Z, {
       className: p.img
@@ -41,7 +41,7 @@ function h(e) {
         children: m.NW.format(m.t.NZDuBg, {
           actorName: null !== (t = l.globalName) && void 0 !== t ? t : l.username,
           actorHook: x,
-          num: f,
+          num: v,
           helpCenterLink: u.Z.getArticleURL(d.BhN.HD_STREAMING_POTION)
         })
       })]

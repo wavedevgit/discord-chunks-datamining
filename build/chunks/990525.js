@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   J: () => b
 }), n(47120);
@@ -24,13 +24,13 @@ let b = e => {
   } = e, {
     activeVoice: a,
     mostRecentlyRequestedVoiceId: b
-  } = (0, f.o)(), v = (0, m.z)(t.id), y = t.id === a, x = !t.available && !t.temporarilyAvailable, O = t.temporarilyAvailable && !n && !y, E = !y && t.id === b, [j, N] = i.useState(!1);
+  } = (0, f.o)(), v = (0, m.z)(t.id), y = t.id === a, x = !t.available && !t.temporarilyAvailable, E = t.temporarilyAvailable && !n && !y, O = !y && t.id === b, [j, N] = i.useState(!1);
   i.useEffect(() => {
-    let e = E ? setTimeout(() => N(E), 200) : void 0;
+    let e = O ? setTimeout(() => N(O), 200) : void 0;
     return () => {
       clearTimeout(e), N(!1)
     }
-  }, [E]);
+  }, [O]);
   let C = null == v ? void 0 : v.previewSoundURLs,
     [I, S] = i.useState(0),
     {
@@ -43,10 +43,10 @@ let b = e => {
     }),
     Z = _[t.styleKey],
     k = i.useCallback(() => {
-      n || !x ? ((0, p.v6)(a === t.id ? null : t.id), O && u.default.track(h.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, {
+      n || !x ? ((0, p.v6)(a === t.id ? null : t.id), E && u.default.track(h.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, {
         voice_filter_id: t.id
       })) : (0, c.i)()
-    }, [a, t.id, x, n, O]),
+    }, [a, t.id, x, n, E]),
     R = i.useCallback(() => {
       u.default.track(h.rMx.VOICE_FILTER_PREVIEW_PLAYED, {
         voice_filter_id: t.id
@@ -95,7 +95,7 @@ let b = e => {
             color: "currentColor",
             colorClass: _.lockedIcon
           })
-        }), O && (0, r.jsx)("div", {
+        }), E && (0, r.jsx)("div", {
           className: o()([_.iconCircle, _.iconBorder]),
           children: (0, r.jsx)("div", {
             className: o()([_.clockCircle]),

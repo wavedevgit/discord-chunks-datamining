@@ -18,7 +18,7 @@ let c = e => {
     isTrendingUp: d,
     isTrendingDown: u,
     tooltipText: m
-  } = e, p = null != m ? (0, r.jsx)(s.ua7, {
+  } = e, g = null != m ? (0, r.jsx)(s.ua7, {
     text: m,
     position: "top",
     "aria-label": "string" == typeof m ? m : t,
@@ -62,7 +62,7 @@ let c = e => {
     className: o.analyticsCard,
     children: [(0, r.jsxs)(s.vwX, {
       className: o.analyticsCardTitle,
-      children: [t, p]
+      children: [t, g]
     }), (0, r.jsx)("div", {
       className: o.analyticsCardContent,
       children: (0, r.jsx)(s.X6q, {

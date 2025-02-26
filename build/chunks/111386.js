@@ -1,10 +1,10 @@
-/** Chunk was on 94458 **/
+/** Chunk was on 14093 **/
 n.d(t, {
   Z: () => m
 }), n(47120);
 var r = n(200651),
-  a = n(192379),
-  l = n(704215),
+  l = n(192379),
+  a = n(704215),
   i = n(481060),
   o = n(243778),
   s = n(388032),
@@ -31,12 +31,12 @@ let d = () => (0, r.jsxs)("div", {
   m = e => {
     let {
       children: t
-    } = e, [n] = (0, o.US)([l.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP]), [s, u] = a.useState(!1);
-    return (a.useEffect(() => {
+    } = e, [n] = (0, o.US)([a.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP]), [s, u] = l.useState(!1);
+    return (l.useEffect(() => {
       setTimeout(() => {
         u(!0)
       }, 300)
-    }), n !== l.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP) ? (0, r.jsx)(r.Fragment, {
+    }), n !== a.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP) ? (0, r.jsx)(r.Fragment, {
       children: t
     }) : (0, r.jsx)(i.ua7, {
       text: (0, r.jsx)(d, {}),
@@ -49,7 +49,7 @@ let d = () => (0, r.jsxs)("div", {
       hideOnClick: !1,
       "aria-label": "test",
       children: e => {
-        var n, a;
+        var n, l;
         return (0, r.jsx)("div", (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -67,17 +67,17 @@ let d = () => (0, r.jsxs)("div", {
             })
           }
           return e
-        }({}, e), a = a = {
+        }({}, e), l = l = {
           children: t
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(l)).forEach(function(e) {
+          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
         }), n))
       }
     })

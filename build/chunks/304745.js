@@ -1,4 +1,4 @@
-/** Chunk was on 71611 **/
+/** Chunk was on 88119 **/
 n.d(t, {
   M: () => Z
 }), n(653041);
@@ -90,7 +90,7 @@ function Z(e) {
         shouldShow: k && (Z === N.D.ACTIVITY || null == Z),
         animation: U ? a.yRy.Animation.FADE : a.yRy.Animation.TRANSLATE,
         animationPosition: U ? "top" : "bottom",
-        position: "bottom",
+        position: "top",
         align: "center",
         spacing: 16,
         onRequestClose: () => {

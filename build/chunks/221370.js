@@ -1,11 +1,11 @@
-/** Chunk was on 4493 **/
+/** Chunk was on 61080 **/
 r.d(t, {
-  Z: () => _
+  Z: () => b
 }), r(47120), r(653041);
 var n = r(200651),
   a = r(192379),
-  i = r(120356),
-  o = r.n(i),
+  o = r(120356),
+  i = r.n(o),
   l = r(758713),
   s = r(657707),
   c = r(481060),
@@ -30,9 +30,9 @@ function p(e) {
   }
   return e
 }
-let m = [l.z.DESKTOP, l.z.XBOX, l.z.PLAYSTATION, l.z.NINTENDO];
+let f = [l.z.DESKTOP, l.z.XBOX, l.z.PLAYSTATION, l.z.NINTENDO];
 
-function f(e) {
+function m(e) {
   var {
     platform: t
   } = e, r = function(e, t) {
@@ -40,13 +40,13 @@ function f(e) {
     var r, n, a = function(e, t) {
       if (null == e) return {};
       var r, n, a = {},
-        i = Object.keys(e);
-      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
+        o = Object.keys(e);
+      for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
       return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+      var o = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
     }
     return a
   }(e, ["platform"]);
@@ -77,7 +77,7 @@ function g(e) {
     platforms: t
   } = e;
   return (0, n.jsx)("div", {
-    className: o()(d.row, d.gapSm),
+    className: i()(d.row, d.gapSm),
     style: {
       alignItems: "center"
     },
@@ -98,7 +98,7 @@ function g(e) {
       }(e),
       children: t => {
         var r, a;
-        return (0, n.jsx)(f, (r = p({}, t), a = a = {
+        return (0, n.jsx)(m, (r = p({}, t), a = a = {
           platform: e
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var r = Object.keys(e);
@@ -115,19 +115,19 @@ function g(e) {
   })
 }
 
-function _(e) {
+function b(e) {
   let {
     detectedGame: t,
     className: r
-  } = e, i = a.useMemo(() => {
+  } = e, o = a.useMemo(() => {
     let e = new Set(t.platforms),
       r = [...e];
-    return !e.has(l.z.DESKTOP) && (e.has(l.z.MACOS) || e.has(l.z.LINUX)) && r.push(l.z.DESKTOP), r.filter(e => m.includes(e))
+    return !e.has(l.z.DESKTOP) && (e.has(l.z.MACOS) || e.has(l.z.LINUX)) && r.push(l.z.DESKTOP), r.filter(e => f.includes(e))
   }, [t.platforms]);
-  return 0 === i.length ? null : (0, n.jsx)("div", {
-    className: o()(d.column, d.gapLg, r),
-    children: i.length > 0 && (0, n.jsx)(g, {
-      platforms: i
+  return 0 === o.length ? null : (0, n.jsx)("div", {
+    className: i()(d.column, d.gapLg, r),
+    children: o.length > 0 && (0, n.jsx)(g, {
+      platforms: o
     })
   })
 }

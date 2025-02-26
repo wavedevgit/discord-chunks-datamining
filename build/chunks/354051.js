@@ -16,7 +16,7 @@ var i = n(442837),
 let m = e => {
   let {
     guild: t
-  } = e, n = (0, i.e7)([a.Z], () => a.Z.can(c.Plq.ADMINISTRATOR, t), [t]), m = t.hasFeature(c.oNc.DISCOVERABLE), p = () => {
+  } = e, n = (0, i.e7)([a.Z], () => a.Z.can(c.Plq.ADMINISTRATOR, t), [t]), m = t.hasFeature(c.oNc.DISCOVERABLE), g = () => {
     let e = new Set(t.features);
     t.hasFeature(c.oNc.DISCOVERABLE) && e.delete(c.oNc.DISCOVERABLE), l.Z.updateGuild({
       features: e
@@ -67,7 +67,7 @@ let m = e => {
             return e
           }({
             size: s.zxk.Sizes.SMALL,
-            onClick: p,
+            onClick: g,
             color: s.zxk.Colors.PRIMARY,
             className: u.disableDiscoveryButton,
             disabled: !n

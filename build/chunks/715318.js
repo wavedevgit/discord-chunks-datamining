@@ -1,12 +1,12 @@
-/** Chunk was on 4493 **/
+/** Chunk was on 61080 **/
 r.d(t, {
   Z: () => c
 });
 var n = r(200651);
 r(192379);
 var a = r(481060),
-  i = r(239091),
-  o = r(299206),
+  o = r(239091),
+  i = r(299206),
   l = r(858042),
   s = r(388032);
 
@@ -15,7 +15,7 @@ function c(e) {
     applicationId: t,
     className: r,
     viewId: c
-  } = e, u = (0, o.Z)({
+  } = e, u = (0, i.Z)({
     id: t,
     label: s.NW.string(s.t["FfCL+/"])
   }), d = (0, l.M)({
@@ -33,7 +33,7 @@ function c(e) {
       return (0, n.jsx)(a.v2r, {
         navId: "game-profile-context",
         onClose: () => {
-          (0, i.Zy)(), t()
+          (0, o.Zy)(), t()
         },
         "aria-label": s.NW.string(s.t.PNeFgY),
         onSelect: () => {},
@@ -49,8 +49,8 @@ function c(e) {
     children: e => (0, n.jsx)(a.ua7, {
       text: s.NW.string(s.t.UKOtz8),
       children: t => {
-        var i, o;
-        return (0, n.jsx)(a.P3F, (i = function(e) {
+        var o, i;
+        return (0, n.jsx)(a.P3F, (o = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -69,21 +69,21 @@ function c(e) {
           return e
         }({
           className: r
-        }, t, e), o = o = {
+        }, t, e), i = i = {
           children: (0, n.jsx)(a.xhG, {
             size: "xs",
             color: a.TVs.colors.WHITE
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
             r.push.apply(r, n)
           }
           return r
-        })(Object(o)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
-        }), i))
+        })(Object(i)).forEach(function(e) {
+          Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(i, e))
+        }), o))
       }
     })
   })

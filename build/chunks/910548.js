@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   ZP: () => F
 }), n(47120);
@@ -20,8 +20,8 @@ var r, i = n(200651),
   v = n(267642),
   y = n(739566),
   x = n(834129),
-  O = n(981631),
-  E = n(388032),
+  E = n(981631),
+  O = n(388032),
   j = n(65527);
 
 function N(e) {
@@ -189,7 +189,7 @@ function W(e) {
       case "exit":
         return "enter"
     }
-  }(u, h), O = P.includes(h), E = O && "exit" === u, N = a.useCallback(e => {
+  }(u, h), E = P.includes(h), O = E && "exit" === u, N = a.useCallback(e => {
     m(e)
   }, []), C = a.useCallback(() => {
     "exit" === u && (null == t || t())
@@ -228,7 +228,7 @@ function W(e) {
       })
     }
   }, [g, h, u, o]), a.useEffect(() => {
-    if (O && "leaf_fall" === u) {
+    if (E && "leaf_fall" === u) {
       let e = w[h].leafRotationDirection;
       y.createConfetti({
         id: "".concat(Z, "-").concat((0, c.Z)()),
@@ -278,7 +278,7 @@ function W(e) {
         sprite: "TOP_LEFT" === h ? R : L
       })
     }
-  }, [O, y, h, u]), (0, i.jsxs)(i.Fragment, {
+  }, [E, y, h, u]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.Ji, {
       ref: v,
       sprites: D,
@@ -296,7 +296,7 @@ function W(e) {
       children: (0, i.jsx)(p.kci, {
         animationRef: A,
         className: l()(j.easterEggAnimation, {
-          [j.easterEggAnimationHideLeaf]: E
+          [j.easterEggAnimationHideLeaf]: O
         }),
         nextScene: x,
         sceneSegments: I,
@@ -319,12 +319,12 @@ function F(e) {
     } = e,
     c = function(e) {
       switch (e.type) {
-        case O.uaV.GUILD_BOOST_TIER_1:
-          return O.Eu4.TIER_1;
-        case O.uaV.GUILD_BOOST_TIER_2:
-          return O.Eu4.TIER_2;
-        case O.uaV.GUILD_BOOST_TIER_3:
-          return O.Eu4.TIER_3
+        case E.uaV.GUILD_BOOST_TIER_1:
+          return E.Eu4.TIER_1;
+        case E.uaV.GUILD_BOOST_TIER_2:
+          return E.Eu4.TIER_2;
+        case E.uaV.GUILD_BOOST_TIER_3:
+          return E.Eu4.TIER_3
       }
       return null
     }(n),
@@ -341,20 +341,20 @@ function F(e) {
     T = (0, y.ZH)(n),
     A = T.nick,
     w = l(T);
-  t = null == c || null == o ? d > 1 ? E.NW.format(E.t.yfC9dn, {
+  t = null == c || null == o ? d > 1 ? O.NW.format(O.t.yfC9dn, {
     username: A,
     usernameHook: w,
     numSubscriptions: d
-  }) : E.NW.format(E.t["57St//"], {
+  }) : O.NW.format(O.t["57St//"], {
     username: A,
     usernameHook: w
-  }) : d > 1 ? E.NW.format(E.t.PO9uJC, {
+  }) : d > 1 ? O.NW.format(O.t.PO9uJC, {
     username: A,
     usernameHook: w,
     numSubscriptions: d,
     guildName: o.name,
     newTierName: (0, v.nW)(c)
-  }) : E.NW.format(E.t.cUfTTE, {
+  }) : O.NW.format(O.t.cUfTTE, {
     username: A,
     usernameHook: w,
     guildName: o.name,
@@ -375,7 +375,7 @@ function F(e) {
     L = a.useCallback(() => {
       (0, g.AI)({
         settingsVisible: !0
-      }), m.Z.open(O.oAB.POGGERMODE), I(!1)
+      }), m.Z.open(E.oAB.POGGERMODE), I(!1)
     }, []),
     D = a.useCallback((e, t) => {
       (null == t ? void 0 : t.id.startsWith(Z)) && L()

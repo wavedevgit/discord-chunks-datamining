@@ -1,4 +1,4 @@
-/** Chunk was on 11814 **/
+/** Chunk was on 68051 **/
 n.d(t, {
   Z: () => A
 });
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(411198),
   y = n(610699),
   x = n(313876),
-  O = n(778333),
-  E = n(949981),
+  E = n(778333),
+  O = n(949981),
   j = n(680668),
   N = n(143708),
   C = n(358595),
@@ -111,7 +111,7 @@ function A(e) {
     default:
       switch ((0, m.VR)(R)) {
         case m.wx.GROUP_DM:
-          B = (0, r.jsx)(E.Z, {
+          B = (0, r.jsx)(O.Z, {
             onTransitionToInviteChannel: F,
             onAcceptInstantInvite: U,
             currentUserId: M,
@@ -120,7 +120,7 @@ function A(e) {
           });
           break;
         case m.wx.FRIEND:
-          B = (0, r.jsx)(O.Z, {
+          B = (0, r.jsx)(E.Z, {
             invite: R,
             author: n,
             getAcceptInviteContext: A

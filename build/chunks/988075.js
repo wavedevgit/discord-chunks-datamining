@@ -39,8 +39,8 @@ function O(e) {
   });
   return (0, n.jsx)("div", {
     className: f.fileDisplayContainer,
-    children: O ? (0, n.jsx)(s.Z, {
-      type: s.Z.Types.ATTACHMENT,
+    children: O ? (0, n.jsx)(s.ZP, {
+      type: s.ZP.Types.ATTACHMENT,
       reason: u.wk.SPOILER,
       obscured: j,
       onToggleObscurity: () => g(e => !e),

@@ -1,6 +1,6 @@
 /**
   Module ID: 24315
-  Original File Name: cbe10158adb3d2a7
+  Original File Name: 81911499a2d3be9b
 **/
 .card__4bb93 {
     display: flex;
@@ -701,7 +701,7 @@
 
 .root_febe19 {
     display: grid;
-    grid-template-columns: 384px 384px;
+    grid-template-columns: 376px 376px;
     grid-gap: 24px 16px;
     gap: 24px 16px
 }
@@ -726,20 +726,25 @@
     display: flex
 }
 
-.source_febe19:hover .sourcePreviewContainer_febe19 {
-    border-color: var(--bg-mod-strong)
+.source_febe19:hover .sourcePreviewContainer_febe19:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--bg-mod-strong)
 }
 
 .sourcePreviewContainer_febe19 {
-    overflow: hidden;
     border-radius: var(--radius-md);
-    padding: 2px;
-    border: 2px solid transparent
+    position: relative
 }
 
 .sourcePreviewImage_febe19 {
-    -o-object-fit: contain;
-    object-fit: contain;
+    -o-object-fit: cover;
+    object-fit: cover;
     -o-object-position: center;
     object-position: center;
     width: 100%;
@@ -854,12 +859,13 @@
 }
 
 .footer__7f727 {
-    background-color: var(--bg-surface-raised)
+    background-color: var(--bg-surface-raised);
+    border: 1px solid var(--border-subtle);
+    filter: var(--shadow-top-ledge-filter)
 }
 
 .header__7f727 {
-    padding-top: 16px;
-    padding-bottom: 16px
+    padding: var(--spacing-16)
 }
 
 .segmentedControl__7f727 {
@@ -868,8 +874,8 @@
 }
 
 .content__7f727 {
-    padding-left: var(--spacing-8);
-    padding-right: var(--spacing-8)
+    padding-left: var(--spacing-16);
+    padding-right: var(--spacing-16)
 }
 
 .rightButtonGroup__7f727 {
@@ -878,4 +884,4 @@
     gap: var(--spacing-8)
 }
 
-/*# sourceMappingURL=cbe10158adb3d2a7.css.map*/
+/*# sourceMappingURL=81911499a2d3be9b.css.map*/

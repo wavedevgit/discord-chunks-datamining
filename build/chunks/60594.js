@@ -16,8 +16,8 @@ var r = n(200651),
   h = n(872810),
   g = n(410575),
   x = n(579806),
-  f = n(636449),
-  v = n(317381),
+  v = n(636449),
+  f = n(317381),
   j = n(89425),
   S = n(812206),
   N = n(835473),
@@ -122,9 +122,9 @@ function eo(e) {
     resolution: eh,
     fps: eg,
     soundshareEnabled: ex
-  } = (0, u.cj)([I.Z], () => I.Z.getState()), ef = l.useRef(Date.now()), ev = (0, u.e7)([W.Z, w.Z], () => w.Z.getChannel(W.Z.getVoiceChannelId())), ej = (0, u.e7)([y.ZP, k.Z], () => (0, M.isWindows)() ? (0, B.Z)(y.ZP, k.Z) : null), eS = (0, u.e7)([v.ZP], () => v.ZP.getCurrentEmbeddedActivity()), eN = (0, N.q)(null == eS ? void 0 : eS.applicationId), [eZ, eb] = l.useState(null);
+  } = (0, u.cj)([I.Z], () => I.Z.getState()), ev = l.useRef(Date.now()), ef = (0, u.e7)([W.Z, w.Z], () => w.Z.getChannel(W.Z.getVoiceChannelId())), ej = (0, u.e7)([y.ZP, k.Z], () => (0, M.isWindows)() ? (0, B.Z)(y.ZP, k.Z) : null), eS = (0, u.e7)([f.ZP], () => f.ZP.getCurrentEmbeddedActivity()), eN = (0, N.q)(null == eS ? void 0 : eS.applicationId), [eZ, eb] = l.useState(null);
   l.useEffect(() => {
-    (0, f.R)() && (async () => {
+    (0, v.R)() && (async () => {
       var e;
       eb(await (null === x.Z || void 0 === x.Z ? void 0 : null === (e = x.Z.window) || void 0 === e ? void 0 : e.getMediaSourceId("DISCORD_ACTIVITY_POPOUT")))
     })()
@@ -133,7 +133,7 @@ function eo(e) {
       let e = A.default.getCurrentUser();
       return i()(null != e, "GoLiveModal: user cannot be undefined"), e
     }),
-    ey = null !== (t = null == ev ? void 0 : ev.getGuildId()) && void 0 !== t ? t : ec,
+    ey = null !== (t = null == ef ? void 0 : ef.getGuildId()) && void 0 !== t ? t : ec,
     eC = (0, u.e7)([_.Z], () => {
       var e;
       return null != ey ? null === (e = _.Z.getGuild(ey)) || void 0 === e ? void 0 : e.premiumTier : null
@@ -165,16 +165,16 @@ function eo(e) {
     [eQ, e$] = l.useState(ex),
     [e0, e1] = l.useState(null !== (o = T.I0.getSetting()) && void 0 !== o && o),
     [e2, e3] = l.useState(null != ec ? ec : null),
-    e4 = null !== (E = null == ev ? void 0 : ev.id) && void 0 !== E ? E : ez,
+    e4 = null !== (E = null == ef ? void 0 : ef.id) && void 0 !== E ? E : ez,
     [e7, e5] = l.useState(ew ? "" : void 0);
   async function e8() {
     var e, t;
     i()(null != ej || null != eG || null != eS && null != eZ, "got nothing to stream");
-    let n = null !== (e = null == ev ? void 0 : ev.id) && void 0 !== e ? e : ez;
+    let n = null !== (e = null == ef ? void 0 : ef.id) && void 0 !== e ? e : ez;
     i()(null != n, "Received null target channel ID");
     let r = w.Z.getChannel(n),
       l = null !== (t = null == r ? void 0 : r.getGuildId()) && void 0 !== t ? t : ec;
-    if (null == ev && !await (0, j.Z)({
+    if (null == ef && !await (0, j.Z)({
         channelId: n
       })) return;
     let s = eB,
@@ -198,7 +198,7 @@ function eo(e) {
       sound: eQ,
       previewDisabled: e0,
       nativePickerStyleUsed: e7,
-      goLiveModalDurationMs: Date.now() - ef.current
+      goLiveModalDurationMs: Date.now() - ev.current
     }), null != eR && eW(et.L.AUTO_DISMISS), eI || (async () => {
       await P.Z.hasPermission(en.Eu.SCREEN_RECORDING, {
         showAuthorizationError: !1
@@ -230,7 +230,7 @@ function eo(e) {
       let l = (0, F.Z)(e, eO, eC),
         [s, a] = null != l ? l : [t, n];
       e !== eB && (t = s, n = a);
-      let o = null !== (r = null == ev ? void 0 : ev.id) && void 0 !== r ? r : ez;
+      let o = null !== (r = null == ef ? void 0 : ef.id) && void 0 !== r ? r : ez;
       i()(null != o, "Received null target channel ID");
       let c = w.Z.getChannel(o);
       if (!(0, G.Z)(e, t, n, eO, eC, c)) {
@@ -238,7 +238,7 @@ function eo(e) {
         t = e, n = r
       }
       n !== eK && eq(n), t !== eX && eH(t), s !== t || a !== n ? eJ($.tI.PRESET_CUSTOM) : e !== eB && eJ(e)
-    }, [ev, ez, eO, eC, eK, eX, eB]),
+    }, [ef, ez, eO, eC, eK, eX, eB]),
     te = l.useCallback(e => {
       (0, V.t)(), (0, V.T)(null != e ? e : e7)
     }, [e7]);
@@ -356,7 +356,7 @@ function eo(e) {
         children: (0, r.jsx)("div", {
           className: el.modalSize,
           children: (0, r.jsx)(J.Z, {
-            selectedChannelId: null !== (D = null == ev ? void 0 : ev.id) && void 0 !== D ? D : ez,
+            selectedChannelId: null !== (D = null == ef ? void 0 : ef.id) && void 0 !== D ? D : ez,
             selectedPreset: eB,
             selectedResolution: eX,
             selectedSource: eG,

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(150512),
   u = n(314897),
   m = n(8426),
-  p = n(969632),
-  g = n(535907),
+  g = n(969632),
+  p = n(535907),
   h = n(388032),
   f = n(339945);
 
@@ -52,9 +52,9 @@ function x(e, t) {
 let j = function(e) {
   let {
     guildId: t
-  } = e, s = (0, l.cj)([p.Z], () => {
+  } = e, s = (0, l.cj)([g.Z], () => {
     var e;
-    return null !== (e = p.Z.getSettings().welcomeMessage) && void 0 !== e ? e : g.z
+    return null !== (e = g.Z.getSettings().welcomeMessage) && void 0 !== e ? e : p.z
   }), j = i.useCallback(() => (0, o.ZDy)(async () => {
     let {
       default: e

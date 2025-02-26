@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -14,7 +14,7 @@ var i = n(120356),
   d = n(388032),
   u = n(503714),
   m = n(532524);
-let p = [{
+let g = [{
     key: "tier_name",
     cellClassName: u.tierNameColumn,
     renderHeader: () => d.NW.string(d.t["2Uiha2"]),
@@ -57,7 +57,7 @@ let p = [{
       })
     }
   }],
-  g = e => {
+  p = e => {
     let {
       totalPayoutsForPeriod: t,
       guildId: n,
@@ -66,7 +66,7 @@ let p = [{
     return (0, r.jsx)("div", {
       className: s()(m.tableContainer, i),
       children: (0, r.jsx)(a.Z, {
-        columns: p,
+        columns: g,
         data: l,
         className: s()(m.table, u.table),
         rowClassName: u.row,

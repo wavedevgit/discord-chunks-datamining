@@ -1,7 +1,7 @@
 /** Chunk was on 71567 **/
 "use strict";
 n.d(t, {
-  X: () => D,
+  X: () => Z,
   Z: () => A
 }), n(266796), n(47120), n(653041);
 var r = n(200651),
@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(481060),
   u = n(852860),
   m = n(493773),
-  p = n(933557),
-  g = n(63568),
+  g = n(933557),
+  p = n(63568),
   h = n(769654),
   f = n(984933),
   b = n(650774),
@@ -64,7 +64,7 @@ function w(e, t) {
   }), e
 }
 let R = "dismissedCommunityFeaturesUpsell",
-  D = () => {
+  Z = () => {
     let e;
     let {
       guild: t,
@@ -93,15 +93,15 @@ let R = "dismissedCommunityFeaturesUpsell",
       errorMessage: e
     })
   },
-  Z = e => {
+  D = e => {
     let {
       discoveryEnabled: t,
       onboardingEnabled: n,
       guild: s
-    } = e, [a, u] = i.useState(!0 === c.K.get(R)), p = (0, l.e7)([b.Z], () => {
+    } = e, [a, u] = i.useState(!0 === c.K.get(R)), g = (0, l.e7)([b.Z], () => {
       var e;
       return null !== (e = b.Z.getMemberCount(s.id)) && void 0 !== e ? e : 0
-    }), [g, f] = i.useState(!1);
+    }), [p, f] = i.useState(!1);
     (0, m.ZP)(() => {
       o.tn.get({
         url: I.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(s.id),
@@ -111,7 +111,7 @@ let R = "dismissedCommunityFeaturesUpsell",
       }).catch(() => f(!1))
     });
     let j = (0, l.e7)([x.Z], () => x.Z.getGuild("942897714956472401")),
-      N = s.isCommunity() && p >= 1e3 && g && null == j;
+      N = s.isCommunity() && g >= 1e3 && p && null == j;
     if (t && n && !N) return null;
     let v = async () => {
       try {
@@ -208,7 +208,7 @@ let R = "dismissedCommunityFeaturesUpsell",
       } = e;
       t.type === I.d4z.GUILD_TEXT && m.push({
         value: t.id,
-        label: (0, p.F6)(t, v.default, N.Z, !0)
+        label: (0, g.F6)(t, v.default, N.Z, !0)
       })
     });
     let h = () => {
@@ -217,7 +217,7 @@ let R = "dismissedCommunityFeaturesUpsell",
       b = () => {
         if (null == e) return;
         let t = new Set(e.features);
-        t.delete(I.oNc.COMMUNITY), t.delete(I.oNc.DISCOVERABLE), (0, g.K2)(e.id, "disableCommunity") || e.hasFeature(I.oNc.CLAN) || t.delete(I.oNc.MEMBER_VERIFICATION_GATE_ENABLED), t.delete(I.oNc.PREVIEW_ENABLED), _.Z.updateGuild({
+        t.delete(I.oNc.COMMUNITY), t.delete(I.oNc.DISCOVERABLE), (0, p.K2)(e.id, "disableCommunity") || e.hasFeature(I.oNc.CLAN) || t.delete(I.oNc.MEMBER_VERIFICATION_GATE_ENABLED), t.delete(I.oNc.PREVIEW_ENABLED), _.Z.updateGuild({
           features: t,
           rulesChannelId: null,
           publicUpdatesChannelId: null
@@ -229,7 +229,7 @@ let R = "dismissedCommunityFeaturesUpsell",
         })
       },
       y = () => {
-        let t = (0, g.K2)(e.id, "GuildSettingsCommunity");
+        let t = (0, p.K2)(e.id, "GuildSettingsCommunity");
         e.features.has(I.oNc.DISCOVERABLE) && e.features.has(I.oNc.PARTNERED) ? (0, d.h7j)(e => (0, r.jsx)(d.ConfirmModal, w(P({}, e), {
           header: E.NW.string(E.t.iBnVHR),
           confirmText: E.NW.string(E.t["cY+Ooa"]),
@@ -272,7 +272,7 @@ let R = "dismissedCommunityFeaturesUpsell",
     return (0, r.jsxs)(d.hjN, {
       title: E.NW.string(E.t.nRtNqq),
       tag: d.RB0.H1,
-      children: [u ? (0, r.jsx)(Z, {
+      children: [u ? (0, r.jsx)(D, {
         discoveryEnabled: e.features.has(I.oNc.DISCOVERABLE),
         onboardingEnabled: e.features.has(I.oNc.GUILD_ONBOARDING),
         guild: e

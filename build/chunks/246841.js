@@ -1,5 +1,4 @@
 /** Chunk was on 79120 **/
-"use strict";
 n.d(t, {
   Z: () => s
 });
@@ -23,15 +22,15 @@ function s(e) {
     onAction: m
   } = e, {
     label: g,
-    tooltip: y,
-    loading: b,
-    disabled: h,
-    onClick: v
-  } = (0, o.Ih)(t, n, s), O = () => {
-    null == m || m(), v()
+    tooltip: b,
+    loading: y,
+    disabled: O,
+    onClick: h
+  } = (0, o.Ih)(t, n, s), v = () => {
+    null == m || m(), h()
   };
   return (0, r.jsx)(l.ua7, {
-    text: y,
+    text: b,
     children: e => {
       let {
         onMouseEnter: t,
@@ -44,11 +43,11 @@ function s(e) {
         look: d,
         color: f,
         fullWidth: p,
-        onClick: O,
+        onClick: v,
         onMouseEnter: t,
         onMouseLeave: n,
-        disabled: h,
-        submitting: b,
+        disabled: O,
+        submitting: y,
         children: [(0, r.jsx)(i.Z, {
           width: 16,
           height: 16

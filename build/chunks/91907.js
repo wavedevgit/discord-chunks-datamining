@@ -1,28 +1,28 @@
-/** Chunk was on 30243 **/
+/** Chunk was on 61080 **/
 r.d(t, {
-  Z: () => c
+  Z: () => s
 });
 var n = r(200651),
-  l = r(192379),
-  i = r(793030),
-  o = r(256139),
-  a = r(866040);
+  a = r(192379),
+  o = r(793030),
+  i = r(256139),
+  l = r(866040);
 
-function c(e) {
+function s(e) {
   let {
     user: t,
     text: r,
-    channel: c,
-    textClassName: s,
+    channel: s,
+    textClassName: c,
     onPopoutClosed: u
-  } = e, d = (0, l.useMemo)(() => [t], [t]);
-  return (0, n.jsx)(a.Z, {
+  } = e, d = (0, a.useMemo)(() => [t], [t]);
+  return (0, n.jsx)(l.Z, {
     participants: d,
-    channel: c,
+    channel: s,
     onPopoutClosed: u,
     children: e => {
-      var t, l;
-      return (0, n.jsx)(o.Z, (t = function(e) {
+      var t, a;
+      return (0, n.jsx)(i.Z, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -39,25 +39,25 @@ function c(e) {
           })
         }
         return e
-      }({}, e), l = l = {
+      }({}, e), a = a = {
         tag: "span",
-        children: (0, n.jsx)(i.xv, {
-          className: s,
+        children: (0, n.jsx)(o.xv, {
+          className: c,
           variant: "text-sm/semibold",
           color: "text-primary",
           lineClamp: 1,
           scaleFontToUserSetting: !0,
           children: r
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
           r.push.apply(r, n)
         }
         return r
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
+      })(Object(a)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
       }), t))
     }
   })
