@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => p
+  Z: () => m
 }), t(266796);
 var r = t(200651);
 t(192379);
@@ -14,54 +14,54 @@ var i = t(120356),
   u = t(279604),
   x = t(783684),
   v = t(388032),
-  m = t(355135);
+  p = t(355135);
 
-function p(e) {
+function m(e) {
   let {
     powerup: n
   } = e, {
     onActivate: t,
     onDeactivate: i,
-    onShowMore: p
+    onShowMore: m
   } = (0, u.Z)(n);
   return (0, r.jsxs)(l.Z, {
     label: n.title,
-    onClick: p,
+    onClick: m,
     active: n.active,
     children: [(0, r.jsx)("div", {
-      className: m.imageContainer,
+      className: p.imageContainer,
       children: (0, r.jsx)("img", {
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: m.contentContainer,
+      className: p.contentContainer,
       children: [(0, r.jsxs)("div", {
-        className: m.headerContainer,
+        className: p.headerContainer,
         children: [(0, r.jsx)(a.X6, {
           variant: "heading-md/bold",
           children: n.title
         }), n.bundle && (0, r.jsx)(a.xv, {
-          className: o()(m.bundle, {
-            [m.active]: n.active
+          className: o()(p.bundle, {
+            [p.active]: n.active
           }),
           variant: "text-xs/semibold",
           children: v.NW.string(x.Z.j2jUjY)
         })]
       }), (0, r.jsx)(a.xv, {
-        className: m.description,
+        className: p.description,
         variant: "text-sm/medium",
         children: n.description
       }), (0, r.jsxs)("div", {
-        className: m.labelContainer,
+        className: p.labelContainer,
         children: [(0, r.jsxs)("div", {
-          className: m.inline,
+          className: p.inline,
           children: [(0, r.jsx)(c.Z, {}), (0, r.jsx)(a.xv, {
             tag: "div",
             variant: "heading-md/bold",
             children: n.cost
           })]
         }), n.active && (0, r.jsxs)("div", {
-          className: m.inline,
+          className: p.inline,
           children: [(0, r.jsx)(s.owK, {
             size: "xs",
             color: s.TVs.colors.TEXT_POSITIVE
@@ -73,7 +73,7 @@ function p(e) {
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: m.buttonContainer,
+      className: p.buttonContainer,
       children: (0, r.jsx)(d.Z, {
         skuId: n.skuId,
         active: n.active,

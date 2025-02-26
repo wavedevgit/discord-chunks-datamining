@@ -14,8 +14,8 @@ var i = t(793030),
   u = t(763792),
   x = t(800869),
   v = t(767218),
-  m = t(309945),
-  p = t(981631),
+  p = t(309945),
+  m = t(981631),
   b = t(783684),
   j = t(388032),
   h = t(599985);
@@ -51,14 +51,14 @@ function _(e) {
         count: 5,
         type: v.b.TOTAL
       })]
-    }), (0, r.jsx)(x.Z, {}), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(x.Z, {}), (0, r.jsx)(p.Z, {
       powerup: u.W["0"]
     }), (0, r.jsx)(s.Z, {
       className: h.boostButton,
       guild: t,
       analyticsLocation: {
-        page: p.ZY5.POWERUPS_OVERVIEW,
-        section: p.jXE.POWERUPS_OVERVIEW_SIDEABAR
+        page: m.ZY5.POWERUPS_OVERVIEW,
+        section: m.jXE.POWERUPS_OVERVIEW_SIDEABAR
       },
       color: a.Ttl.CUSTOM,
       size: a.PhG.LARGE,

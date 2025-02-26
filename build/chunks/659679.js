@@ -19,17 +19,17 @@ function v(e) {
     boost: t
   } = e, {
     username: v,
-    roleColor: m
+    roleColor: p
   } = (0, a.cj)([l.ZP], () => {
     var e, n, r;
     return {
       username: null !== (r = l.ZP.getNick(t.guildId, t.userId)) && void 0 !== r ? r : null === (e = t.user) || void 0 === e ? void 0 : e.username,
       roleColor: null === (n = l.ZP.getMember(t.guildId, t.userId)) || void 0 === n ? void 0 : n.colorString
     }
-  }, [t]), p = i.useCallback(() => (0, r.jsx)(s.PUh, {
+  }, [t]), m = i.useCallback(() => (0, r.jsx)(s.PUh, {
     name: v,
-    color: null != m ? m : void 0
-  }), [v, m]);
+    color: null != p ? p : void 0
+  }), [v, p]);
   return (0, r.jsx)(c.Z, {
     className: x.textContainer,
     iconNode: (0, r.jsx)(d.Z, {
@@ -44,7 +44,7 @@ function v(e) {
       variant: "text-md/semibold",
       children: u.NW.format(u.t["57St//"], {
         username: v,
-        usernameHook: p
+        usernameHook: m
       })
     })
   })

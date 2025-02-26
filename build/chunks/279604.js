@@ -38,9 +38,16 @@ function s(e) {
   }, [e]);
   return {
     onActivate: n,
-    onDeactivate: i.useCallback(e => {
-      e.stopPropagation()
-    }, []),
+    onDeactivate: i.useCallback(n => {
+      n.stopPropagation(), (0, o.ZDy)(async () => {
+        let {
+          default: n
+        } = await t.e("31924").then(t.bind(t, 625651));
+        return t => (0, r.jsx)(n, a({
+          powerup: e
+        }, t))
+      })
+    }, [e]),
     onShowMore: i.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {

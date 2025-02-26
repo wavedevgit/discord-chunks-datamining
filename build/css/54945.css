@@ -1,6 +1,6 @@
 /**
   Module ID: 54945
-  Original File Name: 32c725a3bfda6973
+  Original File Name: 7dac909abdd2776b
 **/
 .rootContainer_f4adbd {
     align-items: center;
@@ -214,8 +214,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -1274,4 +1274,4 @@
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=32c725a3bfda6973.css.map*/
+/*# sourceMappingURL=7dac909abdd2776b.css.map*/

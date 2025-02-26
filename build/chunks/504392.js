@@ -13,12 +13,12 @@ var r = t(200651),
   u = t(11658),
   x = t(166351),
   v = t(953478),
-  m = t(460608),
-  p = t(535396),
+  p = t(460608),
+  m = t(535396),
   b = t(783684),
   j = t(388032),
   h = t(748448);
-let _ = [p.U.LEVEL, p.U.PERK];
+let _ = [m.U.LEVEL, m.U.PERK];
 
 function C(e) {
   let {
@@ -63,13 +63,13 @@ function C(e) {
               className: h.powerupContainer,
               children: n.map((e, t) => {
                 switch (e.type) {
-                  case p.U.LEVEL:
+                  case m.U.LEVEL:
                     return (0, r.jsx)(u.ZP, {
                       index: t,
                       powerup: e,
                       nextPowerup: n[t + 1]
                     }, "powerup-".concat(e.skuId));
-                  case p.U.PERK:
+                  case m.U.PERK:
                     return (0, r.jsx)(x.Z, {
                       powerup: e
                     }, "powerup-".concat(e.skuId))
@@ -82,7 +82,7 @@ function C(e) {
         className: h.sidebarContainer,
         children: [(0, r.jsx)(v.Z, {
           guildId: n
-        }), (0, r.jsx)(m.Z, {
+        }), (0, r.jsx)(p.Z, {
           guildId: n
         })]
       })]
