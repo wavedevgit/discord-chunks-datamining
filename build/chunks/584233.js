@@ -17,5 +17,5 @@ async function o(e) {
   } = await Promise.resolve().then(n.bind(n, 17181));
   await a({
     guildId: o.guild.id
-  }), r.Z.transitionToInvite(o)
+  }), r.ZP.transitionToInvite(o)
 }

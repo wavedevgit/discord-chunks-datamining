@@ -21,7 +21,7 @@ let m = e => {
     inviteCode: n
   } = e, [m, b] = i.useState(f.hO.INITIAL), [_, E] = i.useState(null != n);
   i.useEffect(() => {
-    null != n && o.Z.resolveInvite(n, "Hub").finally(() => E(!1))
+    null != n && o.ZP.resolveInvite(n, "Hub").finally(() => E(!1))
   }, [n]);
   let O = (0, l.e7)([u.Z], () => null != n ? u.Z.getInvite(n) : null),
     N = (0, l.e7)([c.Z], () => c.Z.getGuild(t));

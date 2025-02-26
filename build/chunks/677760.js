@@ -250,7 +250,7 @@ function w(e) {
           l = p.default.getFingerprint(),
           c = null != l ? l : p.default.getId(),
           u = null != n && (null == n ? void 0 : n.type) != null ? Number(null == n ? void 0 : n.type) : void 0;
-        s.Z.openApp(a, void 0, c, void 0, u)
+        s.ZP.openApp(a, void 0, c, void 0, u)
       }(e, t, o)
     },
     transitionTo: n

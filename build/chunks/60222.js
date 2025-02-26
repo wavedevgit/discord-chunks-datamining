@@ -1,7 +1,7 @@
 /** Chunk was on 88313 **/
 a.d(t, {
   A: () => i,
-  m: () => c
+  m: () => l
 }), a(47120);
 var r = a(442837),
   n = a(430824),
@@ -13,6 +13,6 @@ function i(e) {
   return !!(null === (t = a.getGuild(e)) || void 0 === t ? void 0 : t.hasFeature(o.oNc.COMMUNITY))
 }
 
-function c(e) {
+function l(e) {
   return (0, r.e7)([n.Z], () => i(e, [n.Z]), [e])
 }

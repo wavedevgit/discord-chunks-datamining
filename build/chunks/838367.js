@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => h
 });
 var r, l = n(442837),
-  a = n(570140),
-  s = n(314897),
+  s = n(570140),
+  a = n(314897),
   i = n(900849);
 
 function c(e, t, n) {
@@ -44,7 +44,7 @@ function d(e, t) {
 let u = {};
 class m extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(s.default)
+    this.waitFor(a.default)
   }
   isFetchingGuild(e) {
     let t = u[e];
@@ -60,7 +60,7 @@ class m extends(r = l.ZP.Store) {
   }
 }
 c(m, "displayName", "GuildPopoutStore");
-let h = new m(a.Z, {
+let h = new m(s.Z, {
   GUILD_POPOUT_FETCH_START: function(e) {
     let {
       guildId: t

@@ -52,7 +52,7 @@ let _ = /^discord.gg\/[a-zA-Z0-9-]+/,
           }],
           onClick: () => {
             var e;
-            c.Z.acceptInviteAndTransitionToInviteChannel({
+            c.ZP.acceptInviteAndTransitionToInviteChannel({
               inviteKey: r.code,
               context: {
                 location: "Application Directory"

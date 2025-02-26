@@ -1,7 +1,7 @@
 /** Chunk was on 88313 **/
 a.d(t, {
   Ui: () => i,
-  p$: () => l
+  p$: () => c
 });
 var r = a(818083),
   n = a(981631);
@@ -33,7 +33,7 @@ function i(e) {
   });
   return (null == e ? void 0 : e.id) != null && a
 }
-let c = (0, r.B)({
+let l = (0, r.B)({
   kind: "user",
   id: "2023-04_guild_media_channel_post_preview_embed_users",
   label: "Guild Role Subscription Users",
@@ -49,10 +49,10 @@ let c = (0, r.B)({
   }]
 });
 
-function l() {
+function c() {
   let {
     enabledForUser: e
-  } = c.useExperiment({
+  } = l.useExperiment({
     location: "96e84c_2"
   }, {
     autoTrackExposure: !0

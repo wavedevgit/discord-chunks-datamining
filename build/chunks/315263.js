@@ -47,7 +47,7 @@ async function x(e) {
   if (null == n) {
     let {
       invite: t
-    } = await s.Z.resolveInvite(e.code, "Markdown Link");
+    } = await s.ZP.resolveInvite(e.code, "Markdown Link");
     n = t
   }
   if (null == n) return;
@@ -57,7 +57,7 @@ async function x(e) {
   }
   let r = A.ZP.getFlattenedGuildIds(),
     i = null == n ? void 0 : null === (t = n.guild) || void 0 === t ? void 0 : t.id;
-  null != i && r.includes(i) ? s.Z.transitionToInviteSync(n) : await L(n, e.code)
+  null != i && r.includes(i) ? s.ZP.transitionToInviteSync(n) : await L(n, e.code)
 }
 let M = {
   skipExtensionCheck: void 0,

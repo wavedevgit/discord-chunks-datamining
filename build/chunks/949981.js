@@ -1,75 +1,82 @@
 /** Chunk was on 68051 **/
 n.d(t, {
-  Z: () => g
+  Z: () => y
 }), n(653041);
-var r = n(200651);
-n(192379);
-var i = n(512722),
-  a = n.n(i),
-  o = n(442837),
-  l = n(955415),
-  s = n(131704),
-  c = n(592125),
-  d = n(594174),
-  u = n(823379),
-  p = n(358595),
-  m = n(981631),
-  f = n(388032),
-  h = n(217480);
+var r = n(200651),
+  i = n(192379),
+  a = n(512722),
+  o = n.n(a),
+  l = n(442837),
+  s = n(447543),
+  c = n(100527),
+  d = n(906732),
+  u = n(955415),
+  p = n(131704),
+  m = n(592125),
+  f = n(594174),
+  h = n(823379),
+  g = n(358595),
+  _ = n(981631),
+  b = n(388032),
+  v = n(217480);
 
-function g(e) {
+function y(e) {
   let t, {
       invite: n,
-      author: i,
-      currentUserId: g,
-      onTransitionToInviteChannel: _,
-      onAcceptInstantInvite: b
+      author: a,
+      currentUserId: y,
+      onTransitionToInviteChannel: x,
+      onAcceptInstantInvite: E
     } = e,
-    v = g === i.id,
-    y = n.state === m.r2o.ACCEPTING,
-    x = (0, o.e7)([c.Z], () => null != n.channel ? c.Z.getChannel(n.channel.id) : null, [n]);
-  a()(null == x || x.isPrivate(), "must be a private channel");
-  let E = null != x;
-  if (null == x) {
-    if (null == n.channel) return (0, r.jsx)(p.Z, {});
-    x = (0, s.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
+    O = y === a.id,
+    j = n.state === _.r2o.ACCEPTING,
+    N = (0, l.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
+  o()(null == N || N.isPrivate(), "must be a private channel");
+  let {
+    analyticsLocations: C
+  } = (0, d.ZP)(c.Z.INVITE_EMBED), I = null != N, S = i.useCallback(() => {
+    let e = "noop";
+    I ? (x(), e = "transition") : (E(), e = "accept"), (0, s.r$)(n, e, C)
+  }, [n, C, I, x, E]);
+  if (null == N) {
+    if (null == n.channel) return (0, r.jsx)(g.Z, {});
+    N = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
   } else {
-    t = x.recipients.reduce((e, t) => {
-      let n = d.default.getUser(t);
+    t = N.recipients.reduce((e, t) => {
+      let n = f.default.getUser(t);
       return null != n && e.push(n), e
     }, []);
-    let e = d.default.getCurrentUser();
-    E && null != e && t.push(e)
+    let e = f.default.getCurrentUser();
+    I && null != e && t.push(e)
   }
-  let O = x.name;
-  (null == O || "" === O) && (O = t.length > 0 ? t.filter(u.lm).map(e => e.username).join(", ") : f.NW.string(f.t.LJpTRE));
-  let j = E ? _ : b,
-    N = f.NW.string(f.t.XpeFYm),
-    C = l.Z.Button.Colors.GREEN;
-  E && (N = f.NW.string(f.t.cEnaW1), C = l.Z.Button.Colors.PRIMARY);
-  let I = f.NW.string(f.t["3p3/BA"]);
-  return v && (I = f.NW.string(f.t.qmtuXF)), (0, r.jsxs)(l.Z, {
-    children: [(0, r.jsx)(l.Z.Header, {
-      text: I
-    }), (0, r.jsxs)(l.Z.Body, {
+  let P = N.name;
+  (null == P || "" === P) && (P = t.length > 0 ? t.filter(h.lm).map(e => e.username).join(", ") : b.NW.string(b.t.LJpTRE));
+  let T = b.NW.string(b.t.XpeFYm),
+    A = u.Z.Button.Colors.GREEN;
+  I && (T = b.NW.string(b.t.cEnaW1), A = u.Z.Button.Colors.PRIMARY);
+  let w = b.NW.string(b.t["3p3/BA"]);
+  return O && (w = b.NW.string(b.t.qmtuXF)), (0, r.jsxs)(u.Z, {
+    children: [(0, r.jsx)(u.Z.Header, {
+      text: w
+    }), (0, r.jsxs)(u.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: h.headerLine,
-        children: [(0, r.jsx)(l.Z.Icon, {
-          channel: x,
-          onClick: E ? j : void 0
-        }), (0, r.jsx)(l.Z.Info, {
-          title: O,
-          onClick: E ? j : void 0,
-          children: (0, r.jsx)(l.Z.Data, {
+        className: v.headerLine,
+        children: [(0, r.jsx)(u.Z.Icon, {
+          channel: N,
+          onClick: I ? S : void 0
+        }), (0, r.jsx)(u.Z.Info, {
+          title: P,
+          onClick: I ? S : void 0,
+          children: (0, r.jsx)(u.Z.Data, {
             members: t.length
           })
         })]
-      }), (0, r.jsx)(l.Z.Button, {
-        onClick: j,
-        submitting: y,
-        isDisabled: E,
-        color: C,
-        children: N
+      }), (0, r.jsx)(u.Z.Button, {
+        onClick: S,
+        submitting: j,
+        isDisabled: I,
+        color: A,
+        children: T
       })]
     })]
   })

@@ -16,16 +16,16 @@ var r = n(570140),
   p = n(981631);
 let m = {
   acceptInvite(e) {
-    let t = i.Z.getInviteContext("Desktop Invite Modal", e),
+    let t = i.ZP.getInviteContext("Desktop Invite Modal", e),
       n = (0, a.y)(),
       u = (0, a.h6)(),
       p = (0, a.U1)(),
       m = (0, a.yS)();
-    i.Z.acceptInvite({
+    i.ZP.acceptInvite({
       inviteKey: e.code,
       context: t,
       callback: e => {
-        null == e || null == e.guild || null == e.channel || __OVERLAY__ || i.Z.transitionToInvite(e)
+        null == e || null == e.guild || null == e.channel || __OVERLAY__ || i.ZP.transitionToInvite(e)
       }
     }).then(() => {
       if ((0, s.gY)({

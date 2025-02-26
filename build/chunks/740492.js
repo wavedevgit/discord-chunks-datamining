@@ -181,10 +181,6 @@ class A extends(r = a.ZP.DeviceSettingsStore) {
     var e;
     return null === (e = b.saveCameraUploadsToDevice) || void 0 === e || e
   }
-  get swipeToReply() {
-    var e;
-    return null !== (e = b.swipeToReply) && void 0 !== e && e
-  }
   get showPlayAgain() {
     var e;
     return null === (e = b.showPlayAgain) || void 0 === e || e

@@ -256,7 +256,7 @@ class S extends r.PureComponent {
       loading: !0,
       invites: null
     }), k(this, "handleRevoke", e => {
-      h.Z.revokeInvite(e), this.setState({
+      h.ZP.revokeInvite(e), this.setState({
         invites: this.state.invites.filter(t => t !== e)
       })
     }), k(this, "handleClose", () => {

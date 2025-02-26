@@ -262,7 +262,7 @@ function G(e) {
     var t;
     let n = (0, b.so)(e),
       r = null !== (t = e.channel_id) && void 0 !== t ? t : null == x ? void 0 : x.id;
-    null != r && c.Z.createInvite(r, {
+    null != r && c.ZP.createInvite(r, {
       max_age: A.value,
       max_uses: z.value
     }, k.t4x.GUILD_EVENTS), n ? W(e) : d()

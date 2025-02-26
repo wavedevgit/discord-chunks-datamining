@@ -579,7 +579,7 @@ async function eu(e) {
     invitedChannelId: n,
     applicationId: r,
     location: i
-  } = e, o = await c.Z.createInvite(t, {
+  } = e, o = await c.ZP.createInvite(t, {
     target_type: Q.Iq.EMBEDDED_APPLICATION,
     target_application_id: r
   }, i);
@@ -592,7 +592,7 @@ async function ed(e) {
     userId: r,
     location: i,
     prefixedContent: o
-  } = e, a = await c.Z.createInvite(t, {
+  } = e, a = await c.ZP.createInvite(t, {
     target_type: Q.Iq.EMBEDDED_APPLICATION,
     target_application_id: n
   }, i);

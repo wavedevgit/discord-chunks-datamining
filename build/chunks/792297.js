@@ -16,12 +16,12 @@ var r = n(200651),
 let f = 24,
   _ = 36,
   p = 88,
-  h = 76,
-  g = 256;
+  h = 88,
+  g = 272;
 
 function m(e, t) {
   let n = window.innerWidth - (e ? p : f) * 2,
-    r = window.innerHeight - 2 * h - 2 * _;
+    r = window.innerHeight - 2 * h;
   if (!(0, l._H)(t)) return {
     width: n,
     height: r
@@ -29,7 +29,7 @@ function m(e, t) {
   let {
     width: i,
     height: o
-  } = t, a = window.innerWidth - 2 * g - 2 * f, s = (e ? window.innerHeight - 2 * h : window.innerHeight) - 2 * _, c = (0, l.Tj)({
+  } = t, a = window.innerWidth - 2 * g, s = window.innerHeight - (e ? h : _) * 2, c = (0, l.Tj)({
     width: i,
     height: o,
     maxWidth: n,

@@ -181,8 +181,8 @@ class ej extends i.PureComponent {
     if (null == e) return;
     let {
       invite: t
-    } = await h.Z.resolveInvite(e, $.Usc.INVITE);
-    null != t && ((0, f.A)(t), null != t.type && et.xf.has(t.type) && h.Z.openNativeAppModal(e))
+    } = await h.ZP.resolveInvite(e, $.Usc.INVITE);
+    null != t && ((0, f.A)(t), null != t.type && et.xf.has(t.type) && h.ZP.openNativeAppModal(e))
   }
   resolveGuildTemplate() {
     let {

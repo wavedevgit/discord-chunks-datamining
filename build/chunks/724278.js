@@ -158,7 +158,7 @@ function G(e) {
     startTime: S,
     endTime: G
   } = (0, h.ZP)(n, g), P = (0, E.Z)(n.guild_id, n.id, g), W = r.useCallback(e => {
-    e.stopPropagation(), null != n && (0, s.B)(n)
+    e.stopPropagation(), null != n && (0, s.Bk)(n)
   }, [n]), z = (0, N.Z)(g, n.id), k = (0, f.Z)(n);
   r.useEffect(() => {
     I.Z.getGuildEventUserCounts(t.id, n.id, null != g ? [g] : []), I.Z.getGuildEventsForCurrentUser(t.id)

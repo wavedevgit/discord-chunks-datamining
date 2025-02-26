@@ -59,7 +59,7 @@ let b = (e, t) => n => {
       var e;
       return null == n ? null : null !== (e = T.Z.getGuild(n.id)) && void 0 !== e ? e : new N.ZP(n)
     }, [n]), I = (0, m.u)(l, o), O = i.useCallback(e => {
-      u && null != l && (e.stopPropagation(), (0, c.B)(l))
+      u && null != l && (e.stopPropagation(), (0, c.Bk)(l))
     }, [u, l]), S = i.useCallback(e => {
       M(l)(e)
     }, [l]);

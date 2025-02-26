@@ -59,7 +59,7 @@ function h(e) {
   }, [n]), b = l.useCallback(() => {
     (0, o.uL)(v.Z5c.GUILD_MEMBER_VERIFICATION(n))
   }, [n]), p = l.useCallback(() => {
-    null != h && a.Z.acceptInvite({
+    null != h && a.ZP.acceptInvite({
       inviteKey: h,
       context: {
         location: "guild_profile"
@@ -67,37 +67,37 @@ function h(e) {
     })
   }, [h]), O = l.useCallback(() => {
     t.visibility !== d.k.PUBLIC_WITH_RECRUITMENT && null != h ? p() : s.Z.openMemberVerificationModal(n, void 0, h)
-  }, [n, p, t.visibility, h]), y = l.useCallback(() => {
+  }, [n, p, t.visibility, h]), E = l.useCallback(() => {
     (0, u.Ub)(n, {
       object: v.qAy.GUILD_PROFILE
     })
-  }, [n]), N = l.useMemo(() => ({
+  }, [n]), y = l.useMemo(() => ({
     size: i.zxk.Sizes.SMALL,
     fullWidth: !0
   }), []);
   switch (j) {
     case m.s.IS_MEMBER:
-      return (0, r.jsx)(i.zxk, I(f({}, N), {
+      return (0, r.jsx)(i.zxk, I(f({}, y), {
         onClick: g,
         children: x.NW.string(x.t.KLOhbG)
       }));
     case m.s.HAS_APPLICATION:
-      return (0, r.jsx)(i.zxk, I(f({}, N), {
+      return (0, r.jsx)(i.zxk, I(f({}, y), {
         onClick: b,
         children: x.NW.string(x.t["4yfIDg"])
       }));
     case m.s.APPLY_TO_JOIN:
-      return (0, r.jsx)(i.zxk, I(f({}, N), {
+      return (0, r.jsx)(i.zxk, I(f({}, y), {
         onClick: O,
         children: x.NW.string(x.t["7XdMW1"])
       }));
     case m.s.LURK_DISCOVERABLE:
-      return (0, r.jsx)(i.zxk, I(f({}, N), {
-        onClick: y,
+      return (0, r.jsx)(i.zxk, I(f({}, y), {
+        onClick: E,
         children: x.NW.string(x.t.eb9gDA)
       }));
     case m.s.JOIN_VIA_INVITE:
-      return (0, r.jsx)(i.zxk, I(f({}, N), {
+      return (0, r.jsx)(i.zxk, I(f({}, y), {
         onClick: p,
         children: x.NW.string(x.t.eb9gDA)
       }));

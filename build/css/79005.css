@@ -1,6 +1,6 @@
 /**
   Module ID: 79005
-  Original File Name: cc36d641181b5f7a
+  Original File Name: e8281b488078ae3d
 **/
 @use postcss-pxtorem;
 
@@ -1061,10 +1061,11 @@
     left: 0;
     right: 0;
     display: grid;
-    grid-template-rows: 76px 1fr 76px;
-    grid-template-columns: 64px 232px 1fr 232px 64px;
-    grid-gap: 24px 12px;
-    gap: 24px 12px
+    grid-template-rows: 40px 1fr 40px;
+    grid-template-columns: 40px 184px 1fr 184px 40px;
+    grid-gap: 12px;
+    gap: 12px;
+    margin: 36px 24px
 }
 
-/*# sourceMappingURL=cc36d641181b5f7a.css.map*/
+/*# sourceMappingURL=e8281b488078ae3d.css.map*/

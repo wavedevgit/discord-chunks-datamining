@@ -192,21 +192,21 @@ function B(e) {
     }),
     es = (0, c.Wu)([f.ZP], () => null != ei ? f.ZP.getEmbeddedActivitiesForChannel(ei.id).filter(e => e.applicationId === H.id).flatMap(e => Array.from(e.userIds)) : [], [ei, H.id]),
     ec = (0, c.Wu)([P.default], () => es.map(e => P.default.getUser(e)), [es]),
-    ed = x.state === Z.r2o.ACCEPTING,
-    eu = null != ee;
-  if (null == ee) {
-    if (null == x.guild) return (0, r.jsx)(w.Z, {});
-    ee = new N.ZP(x.guild)
-  }
-  let ep = eu && !ea || eu && en,
-    em = () => {
-      p.Z.acceptInviteAndTransitionToInviteChannel({
+    ed = i.useCallback(() => {
+      (0, p.r$)(x, "accept", eo), p.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: x.code,
         context: E("Invite Button Embed"),
         analyticsLocations: eo
       })
-    };
-  return (eu && en && (l = R.NW.string(R.t.wJNK8P)), ea || (l = R.NW.string(R.t.hHGrW1)), d = en ? R.NW.string(R.t.KC26NT) : er || !eu ? R.NW.string(R.t.VJlc0d) : R.NW.string(R.t.I0v0Qk), null == x.code || "" === x.code) ? null : (0, r.jsxs)("div", {
+    }, [x, eo, E]),
+    eu = x.state === Z.r2o.ACCEPTING,
+    ep = null != ee;
+  if (null == ee) {
+    if (null == x.guild) return (0, r.jsx)(w.Z, {});
+    ee = new N.ZP(x.guild)
+  }
+  let em = ep && !ea || ep && en;
+  return (ep && en && (l = R.NW.string(R.t.wJNK8P)), ea || (l = R.NW.string(R.t.hHGrW1)), d = en ? R.NW.string(R.t.KC26NT) : er || !ep ? R.NW.string(R.t.VJlc0d) : R.NW.string(R.t.I0v0Qk), null == x.code || "" === x.code) ? null : (0, r.jsxs)("div", {
     className: L.container,
     ref: $,
     children: [(0, r.jsx)("div", {
@@ -234,7 +234,7 @@ function B(e) {
       children: [(0, r.jsxs)("div", {
         className: L.info,
         children: [(0, r.jsx)(u.vwX, {
-          children: eu ? R.NW.string(R.t["1ckx+P"]) : R.NW.string(R.t.BoQUFR)
+          children: ep ? R.NW.string(R.t["1ckx+P"]) : R.NW.string(R.t.BoQUFR)
         }), (0, r.jsx)(u.X6q, {
           className: L.heading,
           variant: "heading-xl/semibold",
@@ -250,7 +250,7 @@ function B(e) {
           [L.large]: z,
           [L.split]: !er && Y
         }),
-        children: [!er && eu ? (0, r.jsxs)("div", {
+        children: [!er && ep ? (0, r.jsxs)("div", {
           className: o()(L.endedNote, {
             [L.large]: z
           }),
@@ -261,7 +261,7 @@ function B(e) {
             variant: "text-xs/medium",
             children: R.NW.string(R.t.lEvDDQ)
           })]
-        }) : null, eu ? null : (0, r.jsx)(F, {
+        }) : null, ep ? null : (0, r.jsx)(F, {
           members: A,
           membersOnline: B,
           isLarge: z,
@@ -316,12 +316,12 @@ function B(e) {
               }({
                 className: L.actionButton,
                 onClick: () => {
-                  em(), null == i || i()
+                  ed(), null == i || i()
                 },
                 wrapperClassName: L.tooltipButtonWrapper
               }, a), n = n = {
-                submitting: ed,
-                disabled: ep,
+                submitting: eu,
+                disabled: em,
                 color: u.Ttl.GREEN,
                 children: d
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

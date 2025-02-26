@@ -65,7 +65,7 @@ let P = {
         }
       } = e, {
         invite: n
-      } = await d.Z.resolveInvite(t, "Desktop Modal");
+      } = await d.ZP.resolveInvite(t, "Desktop Modal");
       if (null == n) throw new y.Z({
         errorCode: C.lTL.INVALID_INVITE
       }, "Invalid invite id: ".concat(t));

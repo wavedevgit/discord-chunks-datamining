@@ -105,7 +105,7 @@ function p(e) {
       r = S();
     return (p || n || r) && (e.push({
       section: g.DIVIDER
-    }), e.push(m(d.pNK.COMMUNITY, T)), e.push(m(d.pNK.ONBOARDING, T)), e.push(m(d.pNK.ANALYTICS, T)), e.push(m(d.pNK.COMMUNITY_WELCOME, T)), e.push(m(d.pNK.ROLE_SUBSCRIPTIONS, T)), e.push(m(d.pNK.GUILD_PRODUCTS, T)), e.push(m(d.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, T))), e.push({
+    }), e.push(m(d.pNK.COMMUNITY, T)), e.push(m(d.pNK.ONBOARDING, T)), e.push(m(d.pNK.ANALYTICS, T)), e.push(m(d.pNK.COMMUNITY_WELCOME, T)), e.push(m(d.pNK.DISCOVERY_LANDING_PAGE, T)), e.push(m(d.pNK.ROLE_SUBSCRIPTIONS, T)), e.push(m(d.pNK.GUILD_PRODUCTS, T)), e.push(m(d.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, T))), e.push({
       section: g.DIVIDER
     }), e.push(m(d.pNK.GUILD_PREMIUM, T)), e.push(m(d.pNK.GUILD_TEMPLATES, T)), e.push(m(d.pNK.DELETE, T)), e.filter(o.lm)
   }

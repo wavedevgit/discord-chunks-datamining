@@ -58,7 +58,7 @@ let U = "Accept Invite Page",
 async function z(e) {
   let {
     invite: t
-  } = await d.Z.resolveInvite(e, U);
+  } = await d.ZP.resolveInvite(e, U);
   null != t && (0, g.A)(t)
 }
 class V extends i.PureComponent {
@@ -101,7 +101,7 @@ class V extends i.PureComponent {
           prev_user_id: t
         })
       }
-      d.Z.acceptInvite({
+      d.ZP.acceptInvite({
         inviteKey: o,
         context: this.getAcceptInviteContext(U),
         skipOnboarding: !0,
@@ -112,7 +112,7 @@ class V extends i.PureComponent {
       let {
         channel: e
       } = t;
-      null != e && ((0, v.c)(k.M5.INVITE_UNCLAIMED), null != t.guild ? i(L.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code)) : d.Z.transitionToInvite(t, i))
+      null != e && ((0, v.c)(k.M5.INVITE_UNCLAIMED), null != t.guild ? i(L.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code)) : d.ZP.transitionToInvite(t, i))
     }
   }
   getInviteKey() {
@@ -267,7 +267,7 @@ class V extends i.PureComponent {
         return this.renderSpinner(B.NW.string(B.t["Z+hCVV"]));
       case L.r2o.RESOLVED:
         var a;
-        if (n && (0, y.yE)(null !== (a = e.flags) && void 0 !== a ? a : 0, l.$.IS_GUEST_INVITE)) return d.Z.openApp(e.code), u.x.set(N.J, e.code), this.renderAppOpened(() => i(L.Z5c.APP));
+        if (n && (0, y.yE)(null !== (a = e.flags) && void 0 !== a ? a : 0, l.$.IS_GUEST_INVITE)) return d.ZP.openApp(e.code), u.x.set(N.J, e.code), this.renderAppOpened(() => i(L.Z5c.APP));
         if (n || !W.KO) return this.renderAuthenticatedOrDownload();
         if (this.getMode() === F.LOGIN) return (0, r.jsx)(R.Z, {
           invite: e,
@@ -297,26 +297,26 @@ class V extends i.PureComponent {
     var t;
     super(...e), t = this, G(this, "state", {
       error: null
-    }), G(this, "getAcceptInviteContext", e => d.Z.getInviteContext(e, this.props.invite)), G(this, "handleContinue", e => {
+    }), G(this, "getAcceptInviteContext", e => d.ZP.getInviteContext(e, this.props.invite)), G(this, "handleContinue", e => {
       let {
         invite: t,
         transitionTo: n
       } = this.props;
       if (null != t.channel || (null == e ? void 0 : e.channel) != null) {
         var r;
-        (null === (r = t.guild) || void 0 === r ? void 0 : r.id) != null ? n(L.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code)) : d.Z.transitionToInvite(null != e ? e : t, n)
+        (null === (r = t.guild) || void 0 === r ? void 0 : r.id) != null ? n(L.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code)) : d.ZP.transitionToInvite(null != e ? e : t, n)
       }
     }), G(this, "handleAccept", () => {
       this.setState({
         error: null
       });
       let e = this.getInviteKey();
-      d.Z.acceptInvite({
+      d.ZP.acceptInvite({
         inviteKey: e,
         context: this.getAcceptInviteContext(U),
         skipOnboarding: !0,
         callback: t => {
-          (0, g.A)(t), null != t.channel && d.Z.openApp(e, t.channel.id)
+          (0, g.A)(t), null != t.channel && d.ZP.openApp(e, t.channel.id)
         }
       }).catch(e => {
         if (e instanceof h.yZ || e instanceof h.Hx) {

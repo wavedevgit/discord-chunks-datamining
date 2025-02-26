@@ -92,7 +92,7 @@ function C(e) {
         A(t, e.vanityURLCode);
         return
       }
-      l.Z.createInvite(n.id, {
+      l.ZP.createInvite(n.id, {
         [I]: 1,
         unique: !0
       }, T).then(e => A(t, e.code))

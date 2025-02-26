@@ -1,6 +1,6 @@
 /** Chunk was on 84335 **/
 n.d(t, {
-  Z: () => y
+  Z: () => E
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -96,7 +96,7 @@ function O(e) {
   })
 }
 
-function y(e) {
+function E(e) {
   let {
     profile: t,
     onIconChange: n,

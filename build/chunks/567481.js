@@ -95,7 +95,7 @@ let E = new u.Z("RPCCommandsOverlay"),
         if (null == r.application.id) throw new h.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, "No application.");
-        return a.Z.resolveInvite(t, "Game SDK").then(e => {
+        return a.ZP.resolveInvite(t, "Game SDK").then(e => {
           let {
             invite: t,
             code: r

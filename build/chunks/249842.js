@@ -1,18 +1,18 @@
 /** Chunk was on 68241 **/
 n.d(t, {
-  P: () => s
+  P: () => a
 });
 var r = n(544891),
   l = n(570140),
-  a = n(981631);
-async function s(e) {
+  s = n(981631);
+async function a(e) {
   l.Z.dispatch({
     type: "GUILD_POPOUT_FETCH_START",
     guildId: e
   });
   try {
     let t = await r.tn.get({
-      url: a.ANM.GUILD_PREVIEW(e),
+      url: s.ANM.GUILD_PREVIEW(e),
       oldFormErrors: !0,
       rejectWithError: !0
     });

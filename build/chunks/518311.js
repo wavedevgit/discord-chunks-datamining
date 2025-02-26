@@ -231,7 +231,7 @@ class ed extends(r = l.PureComponent) {
     }, {
       autoTrackExposure: !1
     });
-    C.Z.createInvite(e.id, {
+    C.ZP.createInvite(e.id, {
       max_age: t
     }, J.t4x.GROUP_DM)
   }

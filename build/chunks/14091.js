@@ -168,7 +168,7 @@ class Z extends i.PureComponent {
         callback: n
       })
     }), E(this, "selectChannel", e => {
-      e !== b.Z.getChannelId() && d.Z.transitionToInviteChannelSync(e)
+      e !== b.Z.getChannelId() && d.ZP.transitionToInviteChannelSync(e)
     }), E(this, "searchPrevious", () => {
       let {
         searchId: e,

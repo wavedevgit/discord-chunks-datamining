@@ -86,29 +86,29 @@ function k(e) {
     {
       onClose: k
     } = a,
-    [D, w] = o.useState(!1),
-    G = (0, l.e7)([N.default], () => N.default.getCurrentUser()),
-    Z = null != G && null == G.nsfwAllowed,
-    [M, P] = o.useState(Z ? v.F.AGE_GATE : v.F.CHOOSE_TEMPLATE),
+    [D, P] = o.useState(!1),
+    w = (0, l.e7)([N.default], () => N.default.getCurrentUser()),
+    G = null != w && null == w.nsfwAllowed,
+    [Z, M] = o.useState(G ? v.F.AGE_GATE : v.F.CHOOSE_TEMPLATE),
     [B, R] = o.useState(null);
   o.useEffect(() => {
-    s(D ? v.F.COMPLETE : M)
-  }, [s, M, D]);
+    s(D ? v.F.COMPLETE : Z)
+  }, [s, Z, D]);
   let [U, W] = o.useState(null), [z, H] = o.useState(null), [J, Y] = o.useState(!1), V = (0, l.e7)([x.Z], () => x.Z.getType() === I.M5.INVITE_UNCLAIMED), K = o.useCallback(e => {
-    H(e), P(v.F.CREATION_INTENT), h.default.track(g.rMx.GUILD_TEMPLATE_SELECTED, {
+    H(e), M(v.F.CREATION_INTENT), h.default.track(g.rMx.GUILD_TEMPLATE_SELECTED, {
       template_name: e.label,
       template_code: e.code
     })
-  }, [H, P]), {
+  }, [H, M]), {
     content: q,
     footer: X
   } = (0, f.v)({
     hasFooter: !1,
     onBack: () => {
-      H(null), P(v.F.CHOOSE_TEMPLATE)
+      H(null), M(v.F.CHOOSE_TEMPLATE)
     },
     onCreationIntentChosen: e => {
-      Y(e === A.lr.COMMUNITY), P(v.F.CUSTOMIZE_GUILD)
+      Y(e === A.lr.COMMUNITY), M(v.F.CUSTOMIZE_GUILD)
     }
   }), {
     content: Q,
@@ -118,10 +118,10 @@ function k(e) {
     titleClassName: y.customizeGuildTitle,
     hasFooter: !1,
     onGuildCreated: e => {
-      W(e), (null == z ? void 0 : z.id) === O.l.CREATE ? P(v.F.CHANNEL_PROMPT) : w(!0)
+      W(e), (null == z ? void 0 : z.id) === O.l.CREATE ? M(v.F.CHANNEL_PROMPT) : P(!0)
     },
     onBack: () => {
-      P(v.F.CREATION_INTENT)
+      M(v.F.CREATION_INTENT)
     },
     isSlideReady: B === v.F.CUSTOMIZE_GUILD,
     isCommunity: J
@@ -132,21 +132,21 @@ function k(e) {
     createdGuildId: U,
     hasFooter: !1,
     onChannelPromptCompleted: () => {
-      w(!0)
+      P(!0)
     },
     isSlideReady: B === v.F.CHANNEL_PROMPT
   }), {
     content: es,
     footer: en
   } = (0, j.Z)({
-    onBack: () => P(v.F.CHOOSE_TEMPLATE),
+    onBack: () => M(v.F.CHOOSE_TEMPLATE),
     onComplete: () => {
       k()
     },
     onConnect: k,
     isSlideReady: B === v.F.JOIN_GUILD
   }), eo = null;
-  switch (M) {
+  switch (Z) {
     case v.F.CUSTOMIZE_GUILD:
       eo = $;
       break;
@@ -181,7 +181,7 @@ function k(e) {
     children: [(0, n.jsx)("div", {
       className: y.sidebar,
       children: (0, n.jsx)(T.Z, {
-        step: M
+        step: Z
       })
     }), (0, n.jsx)(c.f6W, {
       theme: g.BRd.LIGHT,
@@ -191,7 +191,7 @@ function k(e) {
         children: [(0, n.jsx)("div", {
           className: y.slidesContainer,
           children: (0, n.jsxs)(c.MyZ, {
-            activeSlide: M,
+            activeSlide: Z,
             onSlideReady: e => R(e),
             centered: !1,
             width: er,
@@ -201,7 +201,7 @@ function k(e) {
                 className: y.container,
                 children: (0, n.jsx)(E.Z, {
                   onComplete: () => {
-                    V ? k() : P(v.F.CHOOSE_TEMPLATE)
+                    V ? k() : M(v.F.CHOOSE_TEMPLATE)
                   },
                   onClose: k
                 })
@@ -252,16 +252,16 @@ function k(e) {
               })
             })]
           })
-        }), M !== v.F.AGE_GATE ? (0, n.jsx)(c.olH, {
+        }), Z !== v.F.AGE_GATE ? (0, n.jsx)(c.olH, {
           onClick: k,
           className: y.closeButton
-        }) : null, M === v.F.CHOOSE_TEMPLATE ? (0, n.jsx)(c.mzw, {
+        }) : null, Z === v.F.CHOOSE_TEMPLATE ? (0, n.jsx)(c.mzw, {
           justify: _.Z.Justify.BETWEEN,
           className: r()(y.footer, y.join),
           children: (0, n.jsx)(c.eee, {
             className: y.joinCTA,
             onClick: () => {
-              P(v.F.JOIN_GUILD)
+              M(v.F.JOIN_GUILD)
             },
             children: (0, n.jsxs)(c.Text, {
               variant: "text-sm/medium",

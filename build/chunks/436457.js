@@ -40,7 +40,7 @@ function E(e) {
     I(null), j(!0);
     let n = t.split("/"),
       o = n[n.length - 1];
-    d.Z.resolveInvite(o, "Join Guild", {
+    d.ZP.resolveInvite(o, "Join Guild", {
       inputValue: t
     }).then(e => {
       let {
@@ -51,12 +51,12 @@ function E(e) {
         return
       }
       if (null != t.channel) {
-        let e = d.Z.getInviteContext("Join Guild", t);
-        d.Z.acceptInvite({
+        let e = d.ZP.getInviteContext("Join Guild", t);
+        d.ZP.acceptInvite({
           inviteKey: t.code,
           context: e,
           callback: e => {
-            s(), d.Z.transitionToInvite(e)
+            s(), d.ZP.transitionToInvite(e)
           }
         }).catch(e => {
           e instanceof u.yZ || e instanceof u.Hx ? I((0, m.O)(e.code)) : I(N.NW.string(N.t.dDZRd3))

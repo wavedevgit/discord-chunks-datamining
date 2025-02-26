@@ -43,14 +43,14 @@ function E(e) {
       U(e === N.lr.COMMUNITY), b(N._m.CUSTOMIZE_GUILD)
     }, []),
     j = o.useCallback(() => b(N._m.JOIN_GUILD), [b]),
-    M = o.useCallback(() => {
+    P = o.useCallback(() => {
       if (C === N._m.CUSTOMIZE_GUILD) {
         b(N._m.CREATION_INTENT);
         return
       }
       b(N._m.GUILD_TEMPLATES), A(null)
     }, [C]),
-    P = o.useCallback(e => {
+    M = o.useCallback(e => {
       v(e), i(e)
     }, [i, v]),
     k = o.useCallback(() => {
@@ -86,7 +86,7 @@ function E(e) {
             impressionProperties: R,
             children: (0, r.jsx)(d.Z, {
               onClose: E,
-              onBack: M,
+              onBack: P,
               onCreationIntentChosen: G
             })
           }), (0, r.jsx)(s.Mi4, {
@@ -95,9 +95,9 @@ function E(e) {
             impressionProperties: R,
             children: (0, r.jsx)(p.Z, {
               guildTemplate: h,
-              onGuildCreated: P,
+              onGuildCreated: M,
               onClose: E,
-              onBack: M,
+              onBack: P,
               isSlideReady: L === N._m.CUSTOMIZE_GUILD,
               isCommunity: w
             })
@@ -116,7 +116,7 @@ function E(e) {
             impressionName: a.ImpressionNames.GUILD_ADD_JOIN,
             impressionProperties: R,
             children: (0, r.jsx)(f.Z, {
-              onBack: M,
+              onBack: P,
               onClose: E,
               isSlideReady: L === N._m.JOIN_GUILD
             })

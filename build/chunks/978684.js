@@ -31,7 +31,7 @@ class f extends a.Z {
         if (null != e && "string" == typeof e && s.default.isAuthenticated()) {
           let {
             invite: t
-          } = await o.Z.resolveInvite(e, "Desktop Modal");
+          } = await o.ZP.resolveInvite(e, "Desktop Modal");
           null != t && (i.Z.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: t,

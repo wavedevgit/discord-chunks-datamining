@@ -214,7 +214,7 @@ let v = {
         }
         return i
       }(e.args, ["channel_id"]);
-      return o.Z.createInvite(t, n, "RPC").catch(() => {
+      return o.ZP.createInvite(t, n, "RPC").catch(() => {
         throw new m.Z({
           errorCode: N.lTL.INVALID_PERMISSIONS
         }, "Unable to generate an invite for ".concat(t, ". Does this user have permissions?"))

@@ -165,7 +165,7 @@ function B(e) {
     }), (0, r.jsx)(g.Z, {
       className: W.revokeInvite,
       onClick: () => {
-        b.Z.revokeInvite(n)
+        b.ZP.revokeInvite(n)
       }
     })]
   })
