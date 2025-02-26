@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(481060),
   d = n(37234),
   f = n(100527),
-  p = n(906732),
-  _ = n(626135),
+  _ = n(906732),
+  p = n(626135),
   h = n(55935),
-  m = n(63063),
-  g = n(281494),
+  g = n(63063),
+  m = n(281494),
   E = n(474936),
   v = n(981631),
   b = n(388032),
@@ -64,7 +64,7 @@ function A(e, t) {
   }), e
 }
 let C = async (e, t, n) => {
-  n(!0), await (0, g.Eo)(e).then(() => {
+  n(!0), await (0, m.Eo)(e).then(() => {
     t(), (0, d.Ou)()
   }).finally(() => {
     n(!1)
@@ -108,7 +108,7 @@ let C = async (e, t, n) => {
         className: y.confirmationShareButton,
         submitting: s,
         onClick: () => {
-          C(o, t, l), _.default.track(v.rMx.SHARE_NITRO_FLOW_STEPS, {
+          C(o, t, l), p.default.track(v.rMx.SHARE_NITRO_FLOW_STEPS, {
             location_stack: a,
             step: E.fz.FLOW_COMPLETED,
             other_user_id: Number(o)
@@ -136,9 +136,9 @@ function P(e) {
     channel: n,
     onClose: o,
     isResending: s
-  } = e, [c, d] = i.useState(!1), [g, O] = i.useState(!1), I = n.isDM() && void 0 !== n.recipients ? n.recipients[0] : null, {
+  } = e, [c, d] = i.useState(!1), [m, O] = i.useState(!1), I = n.isDM() && void 0 !== n.recipients ? n.recipients[0] : null, {
     analyticsLocations: T
-  } = (0, p.ZP)(f.Z.REFERRAL_TRIALS_POPOUT), N = new Date("2023-06-15T08:00:00-08:00");
+  } = (0, _.ZP)(f.Z.REFERRAL_TRIALS_POPOUT), N = new Date("2023-06-15T08:00:00-08:00");
   return null == I ? null : c ? (0, r.jsx)(R, {
     onClose: o,
     referralsRemaining: t,
@@ -168,7 +168,7 @@ function P(e) {
             className: a()(y.learnMore, {
               [y.learnMoreResendUnderlinedText]: s
             }),
-            href: m.Z.getArticleURL(v.BhN.SHARE_NITRO_FAQ),
+            href: g.Z.getArticleURL(v.BhN.SHARE_NITRO_FAQ),
             children: s ? b.NW.string(b.t.yJfqPT) : b.NW.format(b.t["+Z4ey8"], {
               count: t
             })
@@ -186,9 +186,9 @@ function P(e) {
       className: y.generalButtonContainer,
       children: (0, r.jsx)(u.zxk, {
         className: y.generalShareButton,
-        submitting: g,
+        submitting: m,
         onClick: () => {
-          s ? C(I, o, O) : (d(!0), _.default.track(v.rMx.SHARE_NITRO_FLOW_STEPS, {
+          s ? C(I, o, O) : (d(!0), p.default.track(v.rMx.SHARE_NITRO_FLOW_STEPS, {
             location_stack: T,
             step: E.fz.FLOW_STARTED,
             other_user_id: Number(I)

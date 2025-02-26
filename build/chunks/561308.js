@@ -1,27 +1,26 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ae: () => b,
-  GE: () => A,
+  GE: () => N,
   GL: () => h,
-  Jd: () => P,
-  Jg: () => O,
-  Nq: () => I,
+  Jd: () => R,
+  Jg: () => y,
+  Nq: () => S,
   Ol: () => v,
-  PJ: () => g,
-  T_: () => p,
-  V5: () => T,
-  ap: () => C,
-  bT: () => R,
-  dw: () => N,
-  ig: () => x,
+  PJ: () => m,
+  T_: () => _,
+  V5: () => I,
+  ap: () => A,
+  bT: () => C,
+  dw: () => T,
+  ig: () => L,
   kr: () => E,
-  n2: () => y,
-  q_: () => w,
-  vU: () => D,
-  yA: () => S,
-  yh: () => m,
-  zo: () => L
+  n2: () => b,
+  q_: () => D,
+  vU: () => P,
+  yA: () => O,
+  yh: () => g,
+  zo: () => w
 }), n(301563);
 var r = n(164369),
   i = n(913527),
@@ -47,7 +46,7 @@ let d = e => {
     start: "id" in e ? c.default.extractTimestamp(e.id) : e.start,
     now: "end" in e && null != e.end ? Math.min(e.end, t) : t
   }),
-  p = (e, t) => {
+  _ = (e, t) => {
     let {
       seconds: n,
       minutes: r,
@@ -63,7 +62,7 @@ let d = e => {
       seconds: o(n)
     })
   },
-  _ = {
+  p = {
     secondsAgo: e => u.NW.formatToPlainString(u.t.EOrEJi, {
       count: e
     }),
@@ -85,7 +84,7 @@ let d = e => {
   },
   h = function(e, t, n) {
     let {
-      formatSet: r = _
+      formatSet: r = p
     } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {}, i = o()(n), a = o()(c.default.extractTimestamp(e.id)), s = i.diff(a, "s"), u = Math.abs(s);
     if (u < l.Z.Seconds.MINUTE) return r.secondsAgo(s);
     if (u < l.Z.Seconds.HOUR) {
@@ -107,59 +106,55 @@ let d = e => {
     let d = Math.round(s / l.Z.Seconds.DAYS_30);
     return r.monthsAgo(d)
   },
-  m = function(e, t) {
+  g = function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : Date.now(),
       r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
-    return E(e) ? p(e, n) : h(e, t, n, r)
+    return E(e) ? _(e, n) : h(e, t, n, r)
   };
 
-function g(e, t) {
+function m(e, t) {
   return e.traits.find(e => e.type === t)
 }
 
 function E(e) {
   var t, n;
-  return null !== (n = null === (t = g(e, a.N.IS_LIVE)) || void 0 === t ? void 0 : t.is_live) && void 0 !== n && n
+  return null !== (n = null === (t = m(e, a.N.IS_LIVE)) || void 0 === t ? void 0 : t.is_live) && void 0 !== n && n
 }
 
 function v(e) {
   var t, n;
-  return null !== (n = null === (t = g(e, a.N.FIRST_TIME)) || void 0 === t ? void 0 : t.first_time) && void 0 !== n && n
+  return null !== (n = null === (t = m(e, a.N.FIRST_TIME)) || void 0 === t ? void 0 : t.first_time) && void 0 !== n && n
 }
 
 function b(e) {
-  return c.default.age(e.id) / l.Z.Millis.HOUR < 48
-}
-
-function y(e) {
   return null != e.expires_at && new Date(e.expires_at) < new Date
 }
 
+function y(e) {
+  return E(e) && !b(e)
+}
+
 function O(e) {
-  return E(e) && !y(e)
+  var t;
+  return null === (t = m(e, a.N.DURATION_SECONDS)) || void 0 === t ? void 0 : t.duration_seconds
 }
 
 function S(e) {
   var t;
-  return null === (t = g(e, a.N.DURATION_SECONDS)) || void 0 === t ? void 0 : t.duration_seconds
+  return null === (t = m(e, a.N.AGGREGATE_RANGE)) || void 0 === t ? void 0 : t.range
 }
 
 function I(e) {
   var t;
-  return null === (t = g(e, a.N.AGGREGATE_RANGE)) || void 0 === t ? void 0 : t.range
+  return null === (t = m(e, a.N.MARATHON)) || void 0 === t ? void 0 : t.marathon
 }
 
 function T(e) {
-  var t;
-  return null === (t = g(e, a.N.MARATHON)) || void 0 === t ? void 0 : t.marathon
-}
-
-function N(e) {
-  let t = g(e, a.N.RESURRECTED);
+  let t = m(e, a.N.RESURRECTED);
   return (null == t ? void 0 : t.resurrected_last_played) != null ? new Date(t.resurrected_last_played) : void 0
 }
 
-function A(e) {
+function N(e) {
   let {
     months: t = 0,
     weeks: n = 0,
@@ -175,7 +170,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   if (null == e || "" === e) return null;
   let t = /\w+ (\d+), \w+ (\d+)/.exec(e);
   return null == t ? null : u.NW.formatToPlainString(u.t["ijVm6+"], {
@@ -184,7 +179,7 @@ function C(e) {
   })
 }
 
-function R(e, t) {
+function C(e, t) {
   var n, r, i, o;
   let a;
   let s = null !== (i = null == t ? void 0 : null === (n = t.size) || void 0 === n ? void 0 : n[0]) && void 0 !== i ? i : void 0,
@@ -197,24 +192,24 @@ function R(e, t) {
   })), null != a && null != e ? "".concat(e, " (").concat(a, ")") : null != e ? e : a
 }
 
-function P(e) {
+function R(e) {
   return e.content_type === s.s.TOP_GAME
 }
 
-function D(e) {
+function P(e) {
   var t;
-  return null === (t = g(e, a.N.STREAK_DAYS)) || void 0 === t ? void 0 : t.streak_count_days
+  return null === (t = m(e, a.N.STREAK_DAYS)) || void 0 === t ? void 0 : t.streak_count_days
 }
 
-function w(e) {
-  let t = D(e);
+function D(e) {
+  let t = P(e);
   if (null == t || t < 3) return !1;
   let n = c.default.extractTimestamp(e.id);
   return !(Date.now() - n > 48 * l.Z.Millis.HOUR)
 }
 
-function L(e) {
-  let t = S(e);
+function w(e) {
+  let t = O(e);
   if (null == t) return {
     text: null,
     tooltipText: null
@@ -233,7 +228,7 @@ function L(e) {
   }
 }
 
-function x(e) {
+function L(e) {
   var t;
-  return null === (t = g(e, a.N.TRENDING_CONTENT)) || void 0 === t ? void 0 : t.trending
+  return null === (t = m(e, a.N.TRENDING_CONTENT)) || void 0 === t ? void 0 : t.trending
 }

@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,15 +44,15 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let h = {},
-  m = new Set;
+  g = new Set;
 
-function g(e) {
+function m(e) {
   return {
     id: e.id,
     parentId: e.parent_id
@@ -64,17 +64,17 @@ function E(e) {
 }
 
 function v(e) {
-  null != e.threads && e.threads.length > 0 && (h[e.id] = {}, e.threads.filter(e => l.AW.has(e.type)).forEach(t => b(e.id, t))), e.hasThreadsSubscription && m.add(e.id)
+  null != e.threads && e.threads.length > 0 && (h[e.id] = {}, e.threads.filter(e => l.AW.has(e.type)).forEach(t => b(e.id, t))), e.hasThreadsSubscription && g.add(e.id)
 }
 
 function b(e, t) {
   let n = h[e],
     r = t.parent_id;
-  r in n || (n[r] = {}), h[e][r][t.id] = g(t)
+  r in n || (n[r] = {}), h[e][r][t.id] = m(t)
 }
 
 function y(e) {
-  h = {}, m.clear(), e.guilds.forEach(e => {
+  h = {}, g.clear(), e.guilds.forEach(e => {
     v(e)
   })
 }
@@ -111,9 +111,9 @@ function T(e) {
   if ((null === (t = r.threadMetadata) || void 0 === t ? void 0 : t.archived) === !0) return A(r);
   {
     let e = null !== (n = h[r.guild_id]) && void 0 !== n ? n : {};
-    h[r.guild_id] = _(f({}, e), {
-      [r.parent_id]: _(f({}, e[r.parent_id]), {
-        [r.id]: g(r)
+    h[r.guild_id] = p(f({}, e), {
+      [r.parent_id]: p(f({}, e[r.parent_id]), {
+        [r.id]: m(r)
       })
     })
   }
@@ -125,7 +125,7 @@ function N(e) {
     threads: n,
     channelIds: r
   } = e;
-  for (let e in null == r && m.add(t), h[t] = f({}, h[t]), h[t]) h[t][e] = f({}, h[t][e]);
+  for (let e in null == r && g.add(t), h[t] = f({}, h[t]), h[t]) h[t][e] = f({}, h[t][e]);
   n.forEach(e => b(t, e))
 }
 
@@ -136,7 +136,7 @@ function A(e) {
     id: r
   } = e;
   if (null == t || null == n || !(t in h) || !(n in h[t]) || !(r in h[t][n])) return !1;
-  h[t] = _(f({}, h[t]), {
+  h[t] = p(f({}, h[t]), {
     [n]: f({}, h[t][n])
   }), delete h[t][n][r], o().isEmpty(h[t][n]) && delete h[t][n]
 }
@@ -180,7 +180,7 @@ class D extends(r = a.ZP.Store) {
     })
   }
   hasLoaded(e) {
-    return m.has(e)
+    return g.has(e)
   }
 }
 d(D, "displayName", "ActiveThreadsStore");

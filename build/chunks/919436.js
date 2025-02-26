@@ -16,8 +16,8 @@ var r, i = n(200651),
   g = n(93687),
   m = n(266076),
   b = n(199902),
-  v = n(19780),
-  y = n(306680),
+  y = n(19780),
+  v = n(306680),
   O = n(944486),
   j = n(594174),
   _ = n(451478),
@@ -26,9 +26,9 @@ var r, i = n(200651),
   P = n(662146),
   N = n(674552),
   S = n(981631),
-  I = n(704857);
+  Z = n(704857);
 
-function Z(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -44,7 +44,7 @@ function w(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      Z(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -162,7 +162,7 @@ class A extends(r = l.PureComponent) {
     } = this.props, {
       hovered: g,
       animating: b
-    } = this.state, v = e.isMultiUserDM() && null == e.icon && h;
+    } = this.state, y = e.isMultiUserDM() && null == e.icon && h;
     return (0, i.jsx)(o.animated.div, {
       style: this.getAnimatedStyle(),
       children: (0, i.jsxs)(x.H, {
@@ -170,7 +170,7 @@ class A extends(r = l.PureComponent) {
           hovered: !b && g,
           selected: !b && n,
           unread: !b && p,
-          className: I.pill
+          className: Z.pill
         }), (0, i.jsx)(P.Z, {
           text: null != t ? t : "",
           selected: n,
@@ -200,9 +200,9 @@ class A extends(r = l.PureComponent) {
                 selected: n || g,
                 ariaLabel: null != t ? t : "",
                 onContextMenu: this.handleContextMenu,
-                icon: v ? void 0 : this.getChannelIcon(),
-                backgroundStyle: v ? "on-hover" : "always",
-                children: v ? (0, i.jsx)(m.Z, {
+                icon: y ? void 0 : this.getChannelIcon(),
+                backgroundStyle: y ? "on-hover" : "always",
+                children: y ? (0, i.jsx)(m.Z, {
                   channel: e,
                   size: c.EFr.SIZE_48,
                   facepileSizeOverride: c.EFr.SIZE_32,
@@ -217,7 +217,7 @@ class A extends(r = l.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), Z(this, "state", {
+    super(...e), I(this, "state", {
       hovered: !1,
       animating: !0,
       controller: new o.Controller({
@@ -226,7 +226,7 @@ class A extends(r = l.PureComponent) {
         opacity: 0,
         config: D
       })
-    }), Z(this, "handleContextMenu", e => {
+    }), I(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, r = t.type === S.d4z.DM ? j.default.getUser(t.getRecipientId()) : null;
@@ -250,7 +250,7 @@ class A extends(r = l.PureComponent) {
     })
   }
 }
-Z(A, "defaultProps", {
+I(A, "defaultProps", {
   badge: 0,
   audio: !1,
   video: !1,
@@ -259,11 +259,11 @@ Z(A, "defaultProps", {
 let R = l.forwardRef(function(e, t) {
   let n = e.channel.id,
     r = (0, h.ZP)(e.channel),
-    l = (0, s.e7)([v.Z], () => v.Z.getChannelId(), []),
+    l = (0, s.e7)([y.Z], () => y.Z.getChannelId(), []),
     o = (0, s.e7)([d.Z], () => null != l ? d.Z.getMode(l) : S.WtW.VOICE, [l]),
     a = (0, s.e7)([b.Z], () => b.Z.getAllApplicationStreamsForChannel(n).length > 0),
     u = (0, s.e7)([O.Z], () => O.Z.getChannelId(), []),
-    p = (0, s.e7)([y.ZP], () => y.ZP.getMentionCount(n), [n]),
+    p = (0, s.e7)([v.ZP], () => v.ZP.getMentionCount(n), [n]),
     {
       isFacepileEnabled: m
     } = g.Z.useExperiment({

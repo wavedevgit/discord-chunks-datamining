@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(388032),
   d = n(428836),
   f = n(744481),
-  p = n(724641),
-  _ = n(811974),
+  _ = n(724641),
+  p = n(811974),
   h = n(212545),
-  m = n(184229),
-  g = n(504309);
+  g = n(184229),
+  m = n(504309);
 let E = function(e) {
   let t = (0, l.ZP)(),
     n = i.useRef(null),
@@ -47,13 +47,13 @@ let E = function(e) {
       })
     }, [n]), e.type) {
     case c.He.PRZELEWY24: {
-      let i = (0, a.wj)(t) ? m : g,
+      let i = (0, a.wj)(t) ? g : m,
         {
           onNameChange: l,
           onEmailChange: c,
           onP24BankChange: f,
-          p24BankValue: p,
-          billingAddressInfo: _
+          p24BankValue: _,
+          billingAddressInfo: p
         } = e;
       return (0, r.jsxs)("div", {
         className: d.body,
@@ -64,7 +64,7 @@ let E = function(e) {
             name: u.NW.string(u.t["w/qqKC"]),
             placeholder: u.NW.string(u.t["w/qqKC"]),
             onChange: e => c(e),
-            value: _.email
+            value: p.email
           })
         }), (0, r.jsx)(s.hjN, {
           className: d.nonTopInputWrapper,
@@ -73,14 +73,14 @@ let E = function(e) {
             name: u.NW.string(u.t.yf7ms7),
             placeholder: u.NW.string(u.t.yf7ms7),
             onChange: e => l(e),
-            value: _.name
+            value: p.name
           })
         }), (0, r.jsxs)(s.hjN, {
           className: d.nonTopInputWrapper,
           title: u.NW.string(u.t.De3b8v),
           children: [(0, r.jsx)(o.P24BankElement, {
             options: {
-              value: p,
+              value: _,
               style: E
             },
             onChange: e => f(e.value)
@@ -99,8 +99,8 @@ let E = function(e) {
         onAccountHolderNameChange: i,
         onEPSBankChange: l,
         epsBankValue: c,
-        billingAddressInfo: _
-      } = e, h = (0, a.wj)(t) ? f : p;
+        billingAddressInfo: p
+      } = e, h = (0, a.wj)(t) ? f : _;
       return (0, r.jsxs)("div", {
         className: d.body,
         children: [(0, r.jsx)(s.hjN, {
@@ -110,7 +110,7 @@ let E = function(e) {
             name: u.NW.string(u.t.sN3wra),
             placeholder: u.NW.string(u.t.sN3wra),
             onChange: e => i(e),
-            value: _.name
+            value: p.name
           })
         }), (0, r.jsxs)(s.hjN, {
           className: d.nonTopInputWrapper,
@@ -137,7 +137,7 @@ let E = function(e) {
         onIdealBankChange: l,
         idealBankValue: c,
         billingAddressInfo: f
-      } = e, p = (0, a.wj)(t) ? _ : h;
+      } = e, _ = (0, a.wj)(t) ? p : h;
       return (0, r.jsxs)("div", {
         className: d.body,
         children: [(0, r.jsx)(s.hjN, {
@@ -161,7 +161,7 @@ let E = function(e) {
           }), (0, r.jsx)("div", {
             className: d.bankSelectionStub,
             children: (0, r.jsx)("img", {
-              src: p,
+              src: _,
               alt: "iDeal"
             })
           })]

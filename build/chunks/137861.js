@@ -104,8 +104,8 @@ function o(e) {
         contains: []
       }]
     },
-    p = f;
-  return p.variants[1].contains = [f], f.variants[1].contains = [p], {
+    _ = f;
+  return _.variants[1].contains = [f], f.variants[1].contains = [_], {
     name: "Kotlin",
     aliases: ["kt", "kts"],
     keywords: t,

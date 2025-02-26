@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(911969),
   d = n(367907),
   f = n(588468),
-  p = n(30465),
-  _ = n(218867),
+  _ = n(30465),
+  p = n(218867),
   h = n(313201),
-  m = n(806966),
-  g = n(98528),
+  g = n(806966),
+  m = n(98528),
   E = n(551058),
   v = n(555573),
   b = n(10718),
@@ -47,7 +47,7 @@ let w = 512,
     let {
       channel: n,
       canOnlyUseTextCommands: o
-    } = e, s = i.useRef(!1), l = i.useRef(0), [V, Z] = i.useState(0), H = i.useRef(null), [W, Y] = i.useState(!1), K = m.Xn.useStore(e => e.activeCategoryIndex);
+    } = e, s = i.useRef(!1), l = i.useRef(0), [V, Z] = i.useState(0), H = i.useRef(null), [W, Y] = i.useState(!1), K = g.Xn.useStore(e => e.activeCategoryIndex);
     i.useEffect(() => {
       (0, d.yw)(C.rMx.APPLICATION_COMMAND_BROWSER_OPENED)
     }, []);
@@ -76,7 +76,7 @@ let w = 512,
         includeFrecency: !0
       },
       allowFetch: !0
-    }), en = (0, g.Qs)({
+    }), en = (0, m.Qs)({
       activeCategoryIndex: K,
       isScrolling: s,
       listRef: H,
@@ -84,7 +84,7 @@ let w = 512,
         let t = q[e];
         if (null != t) {
           let e = z.findIndex(e => e.id === t.id);
-          m.Xn.setActiveCategoryIndex(e)
+          g.Xn.setActiveCategoryIndex(e)
         }
       },
       scrollOffset: j,
@@ -205,8 +205,8 @@ let w = 512,
         }, s)
       }, [n, Q, el, z, V]),
       ef = (0, h.Dt)();
-    return (0, p.KR)(ef, !0, (0, f.DJ)(V)), i.useEffect(() => () => {
-      (0, p.sJ)()
+    return (0, _.KR)(ef, !0, (0, f.DJ)(V)), i.useEffect(() => () => {
+      (0, _.sJ)()
     }, []), (0, r.jsxs)(f.ZP, {
       id: ef,
       className: P.outerWrapper,
@@ -220,7 +220,7 @@ let w = 512,
         activeCategoryIndex: K,
         onSectionClick: es,
         applicationCommandListRef: H
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         role: "listbox",
         className: P.list,
         listPadding: G,

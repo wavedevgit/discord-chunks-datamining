@@ -43,22 +43,22 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = {},
+let p = {},
   h = {};
 
-function m(e) {
+function g(e) {
   let {
     channelId: t,
     messageId: n,
     content: r,
     source: i
   } = e, o = l.dN.getSetting(), c = s.ZP.unparse(r, t);
-  _[t] = {
+  p[t] = {
     channelId: t,
     messageId: n,
     textValue: c,
@@ -66,14 +66,14 @@ function m(e) {
   }, h[t] = i
 }
 
-function g(e) {
+function m(e) {
   let {
     channelId: t,
     textValue: n,
     richValue: r
-  } = e, i = _[t];
+  } = e, i = p[t];
   if (null == i) return !1;
-  _[t] = p(d({}, i), {
+  p[t] = _(d({}, i), {
     textValue: n,
     richValue: r
   })
@@ -83,8 +83,8 @@ function E(e) {
   let {
     channelId: t
   } = e;
-  if (null == t || null == _[t]) return !1;
-  delete _[t], delete h[t]
+  if (null == t || null == p[t]) return !1;
+  delete p[t], delete h[t]
 }
 
 function v(e) {
@@ -93,30 +93,30 @@ function v(e) {
     channelId: n,
     id: r
   } = e;
-  (null === (t = _[n]) || void 0 === t ? void 0 : t.messageId) === r && (delete _[n], delete h[n])
+  (null === (t = p[n]) || void 0 === t ? void 0 : t.messageId) === r && (delete p[n], delete h[n])
 }
 class b extends(r = i.ZP.Store) {
   isEditing(e, t) {
     var n;
-    return (null === (n = _[e]) || void 0 === n ? void 0 : n.messageId) === t
+    return (null === (n = p[e]) || void 0 === n ? void 0 : n.messageId) === t
   }
   isEditingAny(e) {
-    return null != _[e]
+    return null != p[e]
   }
   getEditingTextValue(e) {
     var t;
-    return null === (t = _[e]) || void 0 === t ? void 0 : t.textValue
+    return null === (t = p[e]) || void 0 === t ? void 0 : t.textValue
   }
   getEditingRichValue(e) {
     var t;
-    return null === (t = _[e]) || void 0 === t ? void 0 : t.richValue
+    return null === (t = p[e]) || void 0 === t ? void 0 : t.richValue
   }
   getEditingMessageId(e) {
     var t;
-    return null === (t = _[e]) || void 0 === t ? void 0 : t.messageId
+    return null === (t = p[e]) || void 0 === t ? void 0 : t.messageId
   }
   getEditingMessage(e) {
-    let t = _[e];
+    let t = p[e];
     return null != t && null != t.messageId ? c.Z.getMessage(e, t.messageId) : null
   }
   getEditActionSource(e) {
@@ -125,8 +125,8 @@ class b extends(r = i.ZP.Store) {
 }
 u(b, "displayName", "EditMessageStore");
 let y = new b(o.Z, {
-  MESSAGE_START_EDIT: m,
-  MESSAGE_UPDATE_EDIT: g,
+  MESSAGE_START_EDIT: g,
+  MESSAGE_UPDATE_EDIT: m,
   MESSAGE_END_EDIT: E,
   MESSAGE_DELETE: v
 })

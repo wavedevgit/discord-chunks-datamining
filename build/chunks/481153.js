@@ -15,23 +15,23 @@ var r = n(200651),
   p = n(981632),
   g = n(594174),
   m = n(509545),
-  _ = n(55563),
-  f = n(296848),
+  f = n(55563),
+  _ = n(296848),
   b = n(981631),
   N = n(474936),
   x = n(388032),
   v = n(911252),
   I = n(968693),
   E = n(455812);
-let O = l.ZP.connectStores([_.Z, c.Z, m.Z, g.default], e => {
+let O = l.ZP.connectStores([f.Z, c.Z, m.Z, g.default], e => {
   let {
     giftCode: t
-  } = e, n = _.Z.get(t.skuId), {
+  } = e, n = f.Z.get(t.skuId), {
     subscriptionPlanId: r
   } = t;
   return {
     sku: n,
-    subscriptionPlan: null != r ? (0, f.oE)(r) : null,
+    subscriptionPlan: null != r ? (0, _.oE)(r) : null,
     application: c.Z.getApplication(n.applicationId),
     gifter: g.default.getUser(t.userId)
   }
@@ -45,8 +45,8 @@ let O = l.ZP.connectStores([_.Z, c.Z, m.Z, g.default], e => {
     subscriptionPlan: g
   } = e, m = null == o ? x.NW.string(x.t.lTGZAg) : x.NW.formatToPlainString(x.t.TjWdPT, {
     username: o.username
-  }), _ = l.name;
-  return null != g && (_ = x.NW.formatToPlainString(g.interval === N.rV.MONTH ? x.t.CTpcCQ : x.t.rgPWGx, {
+  }), f = l.name;
+  return null != g && (f = x.NW.formatToPlainString(g.interval === N.rV.MONTH ? x.t.CTpcCQ : x.t.rgPWGx, {
     skuName: l.name,
     intervalCount: g.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
@@ -74,7 +74,7 @@ let O = l.ZP.connectStores([_.Z, c.Z, m.Z, g.default], e => {
           className: v.applicationIcon,
           game: c,
           skuId: l.id
-        }), _]
+        }), f]
       })]
     })]
   })

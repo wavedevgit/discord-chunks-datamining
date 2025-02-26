@@ -1,6 +1,6 @@
 /** Chunk was on 30829 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -18,14 +18,14 @@ var r = n(200651),
   m = n(975966),
   b = n(368365);
 
-function v(e) {
+function y(e) {
   let {
     channel: t,
     connected: n,
     hovered: l,
-    subtitle: v,
-    onClick: y
-  } = e, O = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), j = null != O && O.length > 0, _ = (0, c.ZP)(t, !0), C = null != v && v.length > 0;
+    subtitle: y,
+    onClick: v
+  } = e, O = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), j = null != O && O.length > 0, _ = (0, c.ZP)(t, !0), C = null != y && y.length > 0;
   i.useEffect(() => {
     j && h.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
       guild_id: t.guild_id,
@@ -37,7 +37,7 @@ function v(e) {
   let P = o()(m.statusDiv, n && _ ? m.hoverable : null);
   return j ? (0, r.jsx)(s.P3F, {
     className: P,
-    onClick: _ ? y : void 0,
+    onClick: _ ? v : void 0,
     children: (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
@@ -49,7 +49,7 @@ function v(e) {
     })
   }) : n && _ && (!C || l) ? (0, r.jsxs)(s.P3F, {
     className: P,
-    onClick: y,
+    onClick: v,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: m.statusText,
@@ -62,6 +62,6 @@ function v(e) {
       height: x
     })]
   }) : C ? (0, r.jsx)(d.Z, {
-    children: v
+    children: y
   }) : null
 }

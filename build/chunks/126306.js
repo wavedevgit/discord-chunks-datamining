@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  l: () => _
+  l: () => p
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -19,7 +19,7 @@ let f = Object.freeze({
     2: c.scale,
     3: c.fade
   }),
-  p = Object.freeze({
+  _ = Object.freeze({
     top: c.animatorTop,
     bottom: c.animatorBottom,
     left: c.animatorLeft,
@@ -28,14 +28,14 @@ let f = Object.freeze({
     window_center: c.animatorCenter
   });
 
-function _(e) {
+function p(e) {
   let {
     position: t,
     type: n,
     children: o
   } = e, {
     reducedMotion: d
-  } = i.useContext(l.S), _ = d.enabled ? 3 : n, [h, m] = i.useState(null != t), [g] = i.useState(() => new s.V7), [E, v] = i.useState(!0), b = i.useRef(null);
+  } = i.useContext(l.S), p = d.enabled ? 3 : n, [h, g] = i.useState(null != t), [m] = i.useState(() => new s.V7), [E, v] = i.useState(!0), b = i.useRef(null);
   return i.useLayoutEffect(() => {
     var e;
     null === (e = b.current) || void 0 === e || e.addEventListener("transitionend", () => {
@@ -43,15 +43,15 @@ function _(e) {
     }), setTimeout(() => {
       v(!1)
     }, u)
-  }, []), i.useEffect(() => () => g.stop(), [g]), i.useEffect(() => {
-    null != t && g.start(10, () => m(!0))
-  }, [t, g]), (0, r.jsx)("div", {
+  }, []), i.useEffect(() => () => m.stop(), [m]), i.useEffect(() => {
+    null != t && m.start(10, () => g(!0))
+  }, [t, m]), (0, r.jsx)("div", {
     "data-popout-animating": E,
-    className: a()(null != t ? p[t] : null, {
-      [f[_]]: null != t,
+    className: a()(null != t ? _[t] : null, {
+      [f[p]]: null != t,
       [c.didRender]: h
     }),
     children: o
   })
 }
-_.Types = d
+p.Types = d

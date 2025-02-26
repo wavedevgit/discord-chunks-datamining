@@ -15,11 +15,11 @@ var r, i = n(192379),
   u = n(430824),
   d = n(131951),
   f = n(496675),
-  p = n(944486),
-  _ = n(102172),
+  _ = n(944486),
+  p = n(102172),
   h = n(74299),
-  m = n(299570),
-  g = n(65154);
+  g = n(299570),
+  m = n(65154);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,7 +39,7 @@ let b = !1,
   I = {};
 
 function T() {
-  return d.Z.supports(g.AN.NATIVE_SCREENSHARE_PICKER)
+  return d.Z.supports(m.AN.NATIVE_SCREENSHARE_PICKER)
 }
 
 function N() {
@@ -67,12 +67,12 @@ function R() {
 }
 
 function P() {
-  let e = c.Z.getChannel(p.Z.getVoiceChannelId());
-  return b = null != e && (0, h.Z)(d.Z) && (0, _.JL)(e, u.Z, f.Z, !1), A(), !1
+  let e = c.Z.getChannel(_.Z.getVoiceChannelId());
+  return b = null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, f.Z, !1), A(), !1
 }
 class D extends(r = o.ZP.Store) {
   initialize() {
-    this.syncWith([d.Z, p.Z, c.Z, u.Z, f.Z], P), l.Z.subscribe({
+    this.syncWith([d.Z, _.Z, c.Z, u.Z, f.Z], P), l.Z.subscribe({
       location: "NativeScreenSharePickerStore_initialize"
     }, A), P()
   }
@@ -83,7 +83,7 @@ class D extends(r = o.ZP.Store) {
     return N()
   }
   releasePickerStream() {
-    (0, m.t)()
+    (0, g.t)()
   }
   getPickerState() {
     return I
@@ -97,8 +97,8 @@ function w(e) {
   if (I = {
       lastPickerAction: 1
     }, 0 === y && !t) {
-    let e = c.Z.getChannel(p.Z.getVoiceChannelId());
-    null != e && (0, h.Z)(d.Z) && (0, _.JL)(e, u.Z, f.Z, !1) && (0, s.WH)(e.getGuildId(), e.id, {
+    let e = c.Z.getChannel(_.Z.getVoiceChannelId());
+    null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, f.Z, !1) && (0, s.WH)(e.getGuildId(), e.id, {
       sourceId: "prepicked:0",
       nativePickerStyleUsed: I.lastPresentedPickerStyle
     })

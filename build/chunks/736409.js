@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(667105),
   m = n(695346),
   b = n(819640),
-  v = n(626135),
-  y = n(316496),
+  y = n(626135),
+  v = n(316496),
   O = n(903002),
   j = n(214492),
   _ = n(981631),
@@ -27,13 +27,13 @@ var r = n(200651),
   P = n(388032),
   N = n(94594),
   S = n(204794);
-let I = {
+let Z = {
     topLeftDark: "rgba(62, 22, 137, 0.8)",
     topRightDark: "rgba(160, 86, 242, 0.4)",
     topLeftLight: "rgba(159, 86, 242, 0.4)",
     topRightLight: "rgba(222, 194, 252, 0.5)"
   },
-  Z = e => {
+  I = e => {
     let {
       closePopout: t,
       setToggleDefaultState: n
@@ -42,14 +42,14 @@ let I = {
     } = (0, h.ZP)(p.Z.SHARING_CONTROLS_COACHMARK), a = (0, d.ZP)(), f = m.G6.useSetting(), {
       assets: g,
       count: b
-    } = (0, j.fq)(), v = (0, i.useRef)(null);
-    return (0, c.Tbt)(v), (0, r.jsxs)("div", {
+    } = (0, j.fq)(), y = (0, i.useRef)(null);
+    return (0, c.Tbt)(y), (0, r.jsxs)("div", {
       className: N.wrapper,
-      ref: v,
+      ref: y,
       children: [(0, r.jsx)("div", {
         className: N.gradient,
         style: {
-          background: "radial-gradient(75% 75% at 0% 0%, ".concat((0, s.wj)(a) ? I.topLeftDark : I.topLeftLight, " 0%, transparent 100%),\n    radial-gradient(70% 50% at 100% 0%, ").concat((0, s.wj)(a) ? I.topRightDark : I.topRightLight, " 0%, transparent 100%)")
+          background: "radial-gradient(75% 75% at 0% 0%, ".concat((0, s.wj)(a) ? Z.topLeftDark : Z.topLeftLight, " 0%, transparent 100%),\n    radial-gradient(70% 50% at 100% 0%, ").concat((0, s.wj)(a) ? Z.topRightDark : Z.topRightLight, " 0%, transparent 100%)")
         }
       }), (0, r.jsxs)("div", {
         className: N.content,
@@ -117,11 +117,11 @@ let I = {
       setIsForceShowSharingPopout: l
     } = e, {
       rtcPopoutEnabled: s
-    } = (0, y.S)("SharingPrivacyPopout"), u = (0, g.Ws)({
+    } = (0, v.S)("SharingPrivacyPopout"), u = (0, g.Ws)({
       location: x.dr.CONFLICT_CHECKS
     }), d = m.G6.useSetting(), [p, h] = (0, i.useState)(!1), O = (0, o.e7)([b.Z], () => b.Z.getLayers().includes(_.S9g.USER_SETTINGS));
     return ((0, i.useEffect)(() => {
-      n && v.default.track(_.rMx.OPEN_POPOUT, {
+      n && y.default.track(_.rMx.OPEN_POPOUT, {
         type: "SharingPrivacyPopout"
       })
     }, [n]), s && (u || n) && (!d || p) && !O) ? (0, r.jsx)(f.ZP, {
@@ -142,7 +142,7 @@ let I = {
             let {
               closePopout: t
             } = e;
-            return (0, r.jsx)(Z, {
+            return (0, r.jsx)(I, {
               closePopout: t,
               setToggleDefaultState: h
             })

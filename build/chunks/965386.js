@@ -4,7 +4,7 @@ n.d(t, {
   BR: () => d,
   RX: () => l,
   Tw: () => u,
-  dY: () => p,
+  dY: () => _,
   wL: () => f,
   z5: () => c
 });
@@ -68,7 +68,7 @@ let l = e => {
       children: t
     })
   },
-  p = e => {
+  _ = e => {
     let {
       children: t,
       className: n

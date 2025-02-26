@@ -18,11 +18,11 @@ function c(e) {
     },
     d = t,
     f = "<>",
-    p = "</>",
-    _ = /<[A-Za-z0-9\\._:-]+\s*\/>/,
+    _ = "</>",
+    p = /<[A-Za-z0-9\\._:-]+\s*\/>/,
     h = /<[A-Za-z0-9\\._:-]+/,
-    m = /\/[A-Za-z0-9\\._:-]+>|\/>/,
-    g = (e, t) => {
+    g = /\/[A-Za-z0-9\\._:-]+>|\/>/,
+    m = (e, t) => {
       let n;
       let r = e[0].length + e.index,
         i = e.input[r];
@@ -307,18 +307,18 @@ function c(e) {
       }, {
         variants: [{
           begin: f,
-          end: p
+          end: _
         }, {
-          match: _
+          match: p
         }, {
           begin: h,
-          "on:begin": g,
-          end: m
+          "on:begin": m,
+          end: g
         }],
         subLanguage: "xml",
         contains: [{
           begin: h,
-          end: m,
+          end: g,
           skip: !0,
           contains: ["self"]
         }]
@@ -373,34 +373,34 @@ function u(e) {
       },
       contains: [o.exports.CLASS_REFERENCE]
     },
-    p = {
+    _ = {
       className: "meta",
       relevance: 10,
       begin: /^\s*['"]use strict['"]/
     },
-    _ = ["type", "interface", "public", "private", "protected", "implements", "declare", "abstract", "readonly", "enum", "override", "satisfies"],
+    p = ["type", "interface", "public", "private", "protected", "implements", "declare", "abstract", "readonly", "enum", "override", "satisfies"],
     h = {
       $pattern: t,
-      keyword: n.concat(_),
+      keyword: n.concat(p),
       literal: r,
       built_in: l.concat(u),
       "variable.language": s
     },
-    m = {
+    g = {
       className: "meta",
       begin: "@" + a
     },
-    g = (e, t, n) => {
+    m = (e, t, n) => {
       let r = e.contains.findIndex(e => e.label === t);
       if (-1 === r) throw Error("can not find mode to replace");
       e.contains.splice(r, 1, n)
     };
-  Object.assign(o.keywords, h), o.exports.PARAMS_CONTAINS.push(m);
+  Object.assign(o.keywords, h), o.exports.PARAMS_CONTAINS.push(g);
   let E = o.contains.find(e => "attr" === e.scope),
     v = Object.assign({}, E, {
       match: i.concat(a, i.lookahead(/\s*\?:/))
     });
-  return o.exports.PARAMS_CONTAINS.push([o.exports.CLASS_REFERENCE, E, v]), o.contains = o.contains.concat([m, d, f, v]), g(o, "shebang", e.SHEBANG()), g(o, "use_strict", p), o.contains.find(e => "func.def" === e.label).relevance = 0, Object.assign(o, {
+  return o.exports.PARAMS_CONTAINS.push([o.exports.CLASS_REFERENCE, E, v]), o.contains = o.contains.concat([g, d, f, v]), m(o, "shebang", e.SHEBANG()), m(o, "use_strict", _), o.contains.find(e => "func.def" === e.label).relevance = 0, Object.assign(o, {
     name: "TypeScript",
     aliases: ["ts", "tsx", "mts", "cts"]
   }), o

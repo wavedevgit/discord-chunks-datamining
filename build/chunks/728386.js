@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(540059),
   d = n(28546),
   f = n(443603),
-  p = n(957825),
-  _ = n(388032),
+  _ = n(957825),
+  p = n(388032),
   h = n(342203);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -60,8 +60,8 @@ function b(e, t) {
   let {
     disabled: n,
     type: o
-  } = e, [m, E] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), b = i.useContext(c.ZP), y = !1, [O, S] = i.useState(!1), I = m === p.X1.STICKER, T = !1, N = i.useCallback(() => {
-    (0, d.RO)(p.X1.STICKER, o)
+  } = e, [g, E] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), b = i.useContext(c.ZP), y = !1, [O, S] = i.useState(!1), I = g === _.X1.STICKER, T = !1, N = i.useCallback(() => {
+    (0, d.RO)(_.X1.STICKER, o)
   }, [o]);
   i.useEffect(() => {
     let e = () => {
@@ -86,9 +86,9 @@ function b(e, t) {
   if (n) return null;
   let D = O;
   return (0, r.jsx)("div", {
-    className: a()(p.CT, h.buttonContainer),
+    className: a()(_.CT, h.buttonContainer),
     ref: t,
-    children: (0, r.jsx)(f.Z, v(g({
+    children: (0, r.jsx)(f.Z, v(m({
       innerClassName: a()(h.button, h.stickerButton, {
         [h.stickerButtonTilted]: D && !I
       })
@@ -97,7 +97,7 @@ function b(e, t) {
         N(), R()
       },
       isActive: I,
-      "aria-label": _.NW.string(_.t.rZpidX),
+      "aria-label": p.NW.string(p.t.rZpidX),
       "aria-expanded": I,
       "aria-haspopup": "dialog",
       "aria-controls": E,

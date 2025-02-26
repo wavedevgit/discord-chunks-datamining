@@ -47,22 +47,22 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = {
+let _ = {
     lastSeenNewlyAddedEmojiIds: {}
   },
-  _ = p,
+  p = _,
   h = {};
 
-function m() {
-  _ = p, h = {}
+function g() {
+  p = _, h = {}
 }
 
-function g(e) {
+function m(e) {
   var t;
   let {
     guildId: n,
     emojiId: r
-  } = e, i = null !== (t = h[n]) && void 0 !== t ? t : _.lastSeenNewlyAddedEmojiIds[n];
+  } = e, i = null !== (t = h[n]) && void 0 !== t ? t : p.lastSeenNewlyAddedEmojiIds[n];
   null == i || 0 > l.default.compare(i.id, r) ? h[n] = {
     id: r,
     lastSeen: Date.now(),
@@ -77,7 +77,7 @@ function E(e) {
   let {
     guildId: n,
     emojiId: r
-  } = e, i = null !== (t = h[n]) && void 0 !== t ? t : _.lastSeenNewlyAddedEmojiIds[n];
+  } = e, i = null !== (t = h[n]) && void 0 !== t ? t : p.lastSeenNewlyAddedEmojiIds[n];
   (null == i || 0 > l.default.compare(i.id, r)) && (h[n] = {
     id: r,
     lastSeen: Date.now(),
@@ -86,21 +86,21 @@ function E(e) {
 }
 
 function v() {
-  for (let e in h) _.lastSeenNewlyAddedEmojiIds[e] = h[e]
+  for (let e in h) p.lastSeenNewlyAddedEmojiIds[e] = h[e]
 }
 
 function b() {
-  _ = p, v()
+  p = _, v()
 }
 class y extends(r = a.ZP.PersistedStore) {
   initialize(e) {
-    _ = null != e ? e : p
+    p = null != e ? e : _
   }
   getState() {
-    return _
+    return p
   }
   getLastSeenEmojiByGuild(e) {
-    return _.lastSeenNewlyAddedEmojiIds[e]
+    return p.lastSeenNewlyAddedEmojiIds[e]
   }
   isNewerThanLastSeen(e, t) {
     if (null == e || null == t) return !1;
@@ -128,8 +128,8 @@ c(y, "displayName", "NewlyAddedEmojiStore"), c(y, "persistKey", "NewlyAddedEmoji
   }
 }]);
 let O = new y(s.Z, {
-  LOGOUT: m,
-  NEWLY_ADDED_EMOJI_SEEN_ACKNOWLEDGED: g,
+  LOGOUT: g,
+  NEWLY_ADDED_EMOJI_SEEN_ACKNOWLEDGED: m,
   NEWLY_ADDED_EMOJI_SEEN_PENDING: E,
   NEWLY_ADDED_EMOJI_SEEN_UPDATED: v,
   CLEAR_CACHES: b,

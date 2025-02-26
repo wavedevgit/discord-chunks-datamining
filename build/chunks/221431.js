@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(192379),
   i = n(190031),
@@ -45,9 +45,9 @@ function f(e) {
   return Array.isArray(e) ? e[0] : e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n, o, l = "__create-react-context-" + c() + "__",
-    p = function(e) {
+    _ = function(e) {
       function n() {
         var t;
         return t = e.apply(this, arguments) || this, t.emitter = d(t.props.value), t
@@ -66,8 +66,8 @@ function p(e, t) {
         return this.props.children
       }, n
     }(r.Component);
-  p.childContextTypes = ((n = {})[l] = a().object.isRequired, n);
-  var _ = function(t) {
+  _.childContextTypes = ((n = {})[l] = a().object.isRequired, n);
+  var p = function(t) {
     function n() {
       var e;
       return e = t.apply(this, arguments) || this, e.state = {
@@ -94,9 +94,9 @@ function p(e, t) {
       return f(this.props.children)(this.state.value)
     }, n
   }(r.Component);
-  return _.contextTypes = ((o = {})[l] = a().object, o), {
-    Provider: p,
-    Consumer: _
+  return p.contextTypes = ((o = {})[l] = a().object, o), {
+    Provider: _,
+    Consumer: p
   }
 }
-let _ = r.createContext || p
+let p = r.createContext || _

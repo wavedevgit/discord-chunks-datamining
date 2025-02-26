@@ -92,7 +92,7 @@ function t(e) {
         begin: `\\b(${c})[jJ](?=${d})`
       }]
     },
-    p = {
+    _ = {
       className: "comment",
       begin: t.lookahead(/# type:/),
       end: /$/,
@@ -105,7 +105,7 @@ function t(e) {
         endsWithParent: !0
       }]
     },
-    _ = {
+    p = {
       className: "params",
       variants: [{
         className: "",
@@ -135,13 +135,13 @@ function t(e) {
     }, {
       match: /\bor\b/,
       scope: "keyword"
-    }, l, p, e.HASH_COMMENT_MODE, {
+    }, l, _, e.HASH_COMMENT_MODE, {
       match: [/\bdef/, /\s+/, n],
       scope: {
         1: "keyword",
         3: "title.function"
       },
-      contains: [_]
+      contains: [p]
     }, {
       variants: [{
         match: [/\bclass/, /\s+/, n, /\s*/, /\(\s*/, n, /\s*\)/]
@@ -157,7 +157,7 @@ function t(e) {
       className: "meta",
       begin: /^[\t ]*@/,
       end: /(?=#)|$/,
-      contains: [f, _, l]
+      contains: [f, p, l]
     }]
   }
 }

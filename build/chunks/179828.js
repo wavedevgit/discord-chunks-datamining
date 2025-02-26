@@ -1,4 +1,4 @@
-/** Chunk was on 73049 **/
+/** Chunk was on 2998 **/
 t.d(n, {
   Z: () => _
 }), t(230036), t(47120);
@@ -13,13 +13,13 @@ var r = t(200651),
   u = t(271383),
   f = t(430824),
   p = t(496675),
-  m = t(700785),
-  b = t(785717),
-  g = t(256226),
-  v = t(678738),
+  b = t(700785),
+  m = t(785717),
+  v = t(256226),
+  g = t(678738),
   y = t(314172),
-  h = t(981631),
-  I = t(388032),
+  I = t(981631),
+  h = t(388032),
   j = t(894660);
 
 function x(e) {
@@ -32,23 +32,23 @@ function x(e) {
     highestRole: u,
     canManageRoles: f,
     onAddRole: p,
-    onRemoveRole: b
-  } = e, v = f && null != a, x = o.useMemo(() => "roles-".concat((0, i.Z)()), []), _ = (0, l.ZP)({
+    onRemoveRole: m
+  } = e, g = f && null != a, x = o.useMemo(() => "roles-".concat((0, i.Z)()), []), _ = (0, l.ZP)({
     id: x,
     isEnabled: !0,
-    scrollToStart: h.Cyb,
-    scrollToEnd: h.Cyb,
+    scrollToStart: I.Cyb,
+    scrollToEnd: I.Cyb,
     wrap: !0
-  }), O = d.length, Z = 0 === O ? I.NW.string(I.t["vR7M+/"]) : I.NW.formatToPlainString(I.t.PCs0oq, {
+  }), O = d.length, Z = 0 === O ? h.NW.string(h.t["vR7M+/"]) : h.NW.formatToPlainString(h.t.PCs0oq, {
     numRoles: O
   }), N = d.map(e => {
     var o;
-    return (0, r.jsx)(g.Z, {
+    return (0, r.jsx)(v.Z, {
       role: e,
       guildId: c.id,
       disableBorderColor: !0,
-      onRemove: () => b(e),
-      canRemove: f ? m.r6(c, t.id, u, e) : (null === (o = e.tags) || void 0 === o ? void 0 : o.guild_connections) === null && n.id === t.id
+      onRemove: () => m(e),
+      canRemove: f ? b.r6(c, t.id, u, e) : (null === (o = e.tags) || void 0 === o ? void 0 : o.guild_connections) === null && n.id === t.id
     }, e.id)
   });
   return (0, r.jsx)(s.bG, {
@@ -95,7 +95,7 @@ function x(e) {
           "aria-label": Z,
           ref: o
         }, i), t = t = {
-          children: [N, v && (0, r.jsx)(y.Z, {
+          children: [N, g && (0, r.jsx)(y.Z, {
             guild: c,
             guildMember: a,
             numRoles: O,
@@ -125,12 +125,12 @@ function _(e) {
     scrollIntoView: l
   } = e, {
     trackUserProfileAction: s
-  } = (0, b.KZ)(), g = (0, c.e7)([u.ZP], () => u.ZP.getMember(i.id, n.id)), y = (0, c.e7)([f.Z], () => f.Z.getRoles(i.id)), j = null == g ? void 0 : g.roles, _ = o.useMemo(() => null == j || 0 === j.length ? [] : Object.values(y).filter(e => j.includes(e.id)).sort((e, n) => {
+  } = (0, m.KZ)(), v = (0, c.e7)([u.ZP], () => u.ZP.getMember(i.id, n.id)), y = (0, c.e7)([f.Z], () => f.Z.getRoles(i.id)), j = null == v ? void 0 : v.roles, _ = o.useMemo(() => null == j || 0 === j.length ? [] : Object.values(y).filter(e => j.includes(e.id)).sort((e, n) => {
     var t, r;
     let o = (null === (t = e.tags) || void 0 === t ? void 0 : t.guild_connections) !== null,
       i = (null === (r = n.tags) || void 0 === r ? void 0 : r.guild_connections) !== null;
     return o && !i ? 1 : !o && i ? -1 : 0
-  }), [y, j]), O = m.e9(i, t.id), [Z] = (0, c.Wu)([p.Z], () => [p.Z.can(h.Plq.MANAGE_ROLES, i), null != i ? p.Z.getGuildVersion(i.id) : null]), N = o.useCallback(e => {
+  }), [y, j]), O = b.e9(i, t.id), [Z] = (0, c.Wu)([p.Z], () => [p.Z.can(I.Plq.MANAGE_ROLES, i), null != i ? p.Z.getGuildVersion(i.id) : null]), N = o.useCallback(e => {
     var t, r;
     s({
       action: "REMOVE_ROLE"
@@ -142,15 +142,15 @@ function _(e) {
       action: "ADD_ROLE"
     });
     let t = null != j ? j : []; - 1 === t.indexOf(e) && (t = t.concat([e])), d.Z.updateMemberRoles(i.id, n.id, t, [e], [])
-  }, [j, i.id, n.id, s]), E = Z && null != g;
-  return 0 !== _.length || E ? (0, r.jsx)(v.Z, {
-    heading: I.NW.string(I.t.LPJmLy),
+  }, [j, i.id, n.id, s]), E = Z && null != v;
+  return 0 !== _.length || E ? (0, r.jsx)(g.Z, {
+    heading: h.NW.string(h.t.LPJmLy),
     scrollIntoView: l,
     children: (0, r.jsx)(x, {
       user: n,
       currentUser: t,
       guild: i,
-      guildMember: g,
+      guildMember: v,
       roles: _,
       highestRole: O,
       canManageRoles: Z,

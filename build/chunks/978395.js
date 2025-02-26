@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(246946),
   d = n(5192),
   f = n(74538),
-  p = n(648052),
-  _ = n(537006),
+  _ = n(648052),
+  p = n(537006),
   h = n(483424),
-  m = n(681837),
-  g = n(91433),
+  g = n(681837),
+  m = n(91433),
   E = n(944043),
   v = n(502762),
   b = n(530),
@@ -62,13 +62,13 @@ function R(e) {
       }),
       nickname: M,
       pronouns: null == R ? void 0 : R.pronouns,
-      tags: (0, r.jsx)(p.Z, {
+      tags: (0, r.jsx)(_.Z, {
         displayProfile: R,
         profileType: N.y0.BITE_SIZE,
         onClose: x
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(m.Z, {
+        children: [(0, r.jsx)(g.Z, {
           userId: t.id
         }), !B && (0, r.jsx)(y.Z, {
           userId: t.id,
@@ -77,14 +77,14 @@ function R(e) {
         })]
       })
     }), k === A.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
-      children: (0, r.jsx)(g.Z, {
+      children: (0, r.jsx)(m.Z, {
         user: t,
         guildId: null == P ? void 0 : P.id,
         channelId: L,
         applicationId: G ? j : void 0
       })
     }), G && U.map(e => (0, r.jsx)(v.Z.Overlay, {
-      children: (0, r.jsx)(g.Z, {
+      children: (0, r.jsx)(m.Z, {
         user: t,
         isGameRelationship: !0,
         applicationId: e.applicationId,
@@ -106,7 +106,7 @@ function R(e) {
       bio: null == R ? void 0 : R.bio,
       hidePersonalInformation: B,
       onClose: x
-    }), V && (0, r.jsx)(_.Z, {
+    }), V && (0, r.jsx)(p.Z, {
       isPremiumUser: F,
       onInteraction: x,
       className: C.upsell

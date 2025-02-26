@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(117530),
   d = n(459273),
   f = n(585483),
-  p = n(541716),
-  _ = n(91313),
+  _ = n(541716),
+  p = n(91313),
   h = n(53529),
-  m = n(288897),
-  g = n(925994),
+  g = n(288897),
+  m = n(925994),
   E = n(436660),
   v = n(887490),
   b = n(194625),
@@ -71,15 +71,15 @@ let w = i.forwardRef(function(e, t) {
     "aria-invalid": eu,
     "aria-describedby": ed,
     "aria-labelledby": ef,
-    "aria-autocomplete": ep
-  } = e, e_ = i.useRef(null), eh = i.useRef(null), em = i.useRef(!0), eg = i.useRef(!0), eE = M || k, ev = i.useCallback((e, t, n) => {
+    "aria-autocomplete": e_
+  } = e, ep = i.useRef(null), eh = i.useRef(null), eg = i.useRef(!0), em = i.useRef(!0), eE = M || k, ev = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
       selection: o
     } = n, a = v.bN.richValue(e), s = e.selection, l = !1;
     if (void 0 !== i && i !== a) {
-      if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === p.Ie.EDIT) {
+      if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === _.Ie.EDIT) {
         try {
           e.previewMarkdown = !0, (0, A.KH)(e, w.guild_id, w.id)
         } finally {
@@ -101,20 +101,20 @@ let w = i.forwardRef(function(e, t) {
       let t = h.T.currentEntry(e);
       null != t && (t.selection = o), l = !0
     }
-    let d = _.cr(e);
+    let d = p.cr(e);
     if (null != d && d[0].command.id !== (null === (r = c.Z.getActiveCommand(w.id)) || void 0 === r ? void 0 : r.id) && h.T.withMergedEntry(e, () => {
         (0, N.L)(e, w.id, null, !0)
       }), l) {
       if ("parent" === t) try {
-        eg.current = !1, e.onChange()
+        em.current = !1, e.onChange()
       } finally {
-        eg.current = !0
+        em.current = !0
       } else e.onChange()
     }
   }, [w.id, w.guild_id, en]), eb = i.useCallback(() => {
-    em.current = !1
+    eg.current = !1
   }, []), ey = i.useCallback(() => {
-    em.current = !0
+    eg.current = !0
   }, []), eO = (0, y.Z)({
     channel: w,
     chatInputType: o,
@@ -124,8 +124,8 @@ let w = i.forwardRef(function(e, t) {
     onChangeEnd: ey,
     updateState: ev
   }), eS = i.useCallback((e, t) => {
-    let n = _.tM(eO, e, w.id),
-      r = _.lk(e, w.guild_id, w.id, n, t);
+    let n = p.tM(eO, e, w.id),
+      r = p.lk(e, w.guild_id, w.id, n, t);
     return {
       values: n,
       results: r
@@ -136,7 +136,7 @@ let w = i.forwardRef(function(e, t) {
     if (null != t && null != t.options) {
       let i = eS(t, !1);
       e = i.values;
-      let o = _.cu(eO).filter(e => !i.results[e].success).map(e => {
+      let o = p.cu(eO).filter(e => !i.results[e].success).map(e => {
         var n;
         return (null !== (n = t.options) && void 0 !== n ? n : []).find(t => t.name === e)
       });
@@ -156,12 +156,12 @@ let w = i.forwardRef(function(e, t) {
         return
       }
     }
-    null == q || q((0, g.sk)(v.bN.richValue(eO), {
+    null == q || q((0, m.sk)(v.bN.richValue(eO), {
       mode: "raw",
       ignoreTrailingEmptyNodes: !0
     }), t, e)
   }, [w.id, eO, q, eS, ee]);
-  (0, O.Z)(t, eO, w, eI), (0, T.Z)(eO, e_, F);
+  (0, O.Z)(t, eO, w, eI), (0, T.Z)(eO, ep, F);
   let {
     handleKeyDown: eT,
     handleKeyUp: eN
@@ -183,12 +183,12 @@ let w = i.forwardRef(function(e, t) {
   } = (0, I.Z)(eO, eE, V), eR = i.useCallback(e => {
     null == Q || Q()
   }, [Q]), eP = i.useCallback(e => {
-    e !== eh.current ? eg.current && (null == B || B(null, (0, g.sk)(e, {
+    e !== eh.current ? em.current && (null == B || B(null, (0, m.sk)(e, {
       mode: "raw"
-    }), e)) : eg.current && Q()
+    }), e)) : em.current && Q()
   }, [Q, B]);
   i.useLayoutEffect(() => {
-    em.current && (eh.current = n, ev(eO, "parent", {
+    eg.current && (eh.current = n, ev(eO, "parent", {
       value: n
     }))
   }, [eO, n, ev]), i.useEffect(() => {
@@ -207,9 +207,9 @@ let w = i.forwardRef(function(e, t) {
       event: P.CkL.GLOBAL_CLIPBOARD_PASTE,
       handler: eC
     }), (0, r.jsx)("div", {
-      ref: e_,
+      ref: ep,
       className: a()(L, D.slateContainer),
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(g.Z, {
         id: x,
         editor: eO,
         channelId: w.id,
@@ -238,7 +238,7 @@ let w = i.forwardRef(function(e, t) {
         "aria-labelledby": ef,
         "aria-describedby": ed,
         "aria-invalid": eu,
-        "aria-autocomplete": ep,
+        "aria-autocomplete": e_,
         "aria-required": U
       })
     })]

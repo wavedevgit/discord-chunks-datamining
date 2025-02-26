@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -19,15 +19,15 @@ function f(e) {
     defaultPosition: n = s.VD2.BOTTOM_RIGHT,
     children: o,
     width: f,
-    height: p
-  } = e, [_, h] = i.useState(n);
+    height: _
+  } = e, [p, h] = i.useState(n);
   return (0, r.jsx)(a._, {
     className: t,
-    position: _,
+    position: p,
     id: 0,
     onMove: (e, t) => h(t),
     maxX: f,
-    maxY: p,
+    maxY: _,
     edgeOffsetTop: l,
     edgeOffsetBottom: c,
     edgeOffsetLeft: u,
@@ -35,4 +35,4 @@ function f(e) {
     children: o
   })
 }
-let p = (0, o.Z)(f)
+let _ = (0, o.Z)(f)

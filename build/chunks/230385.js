@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r = n(704215),
   i = n(147913),
@@ -13,9 +13,9 @@ var r = n(704215),
   u = n(709706),
   d = n(358820),
   f = n(981631),
-  p = n(921944);
+  _ = n(921944);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,7 +24,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 let h = new o.Z("VoiceFilterManager");
-class m extends i.Z {
+class g extends i.Z {
   loadNativeModule() {
     (0, d.r5)()
   }
@@ -100,7 +100,7 @@ class m extends i.Z {
       })
     }
     null !== t && ((0, a.EW)(r.z.VOICE_FILTER_IN_CALL_COACHMARK, {
-      dismissAction: p.L.INDIRECT_ACTION
+      dismissAction: _.L.INDIRECT_ACTION
     }), l.default.track(f.rMx.VOICE_FILTER_ENABLED, {
       active_voice_filter_id: t,
       previous_filter_id: n
@@ -118,7 +118,7 @@ class m extends i.Z {
     c.ZP.stopVoiceFilterDownloads()
   }
   constructor(...e) {
-    super(...e), _(this, "actions", {
+    super(...e), p(this, "actions", {
       VOICE_FILTER_REQUEST_SWITCH: this.handleVoiceFilterRequestSwitch,
       VOICE_FILTER_DOWNLOAD_READY: this.handleVoiceFilterDownloadReady,
       VOICE_FILTER_DOWNLOAD_FAILED: this.handleVoiceFilterDownloadFailed,
@@ -129,4 +129,4 @@ class m extends i.Z {
     })
   }
 }
-let g = new m
+let m = new g

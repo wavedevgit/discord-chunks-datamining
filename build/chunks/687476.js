@@ -20,11 +20,11 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let p = new Set,
-  _ = new Map,
+let _ = new Set,
+  p = new Map,
   h = new Map,
-  m = new Map,
   g = new Map,
+  m = new Map,
   E = null;
 
 function v(e) {
@@ -38,17 +38,17 @@ function b(e) {
   let r = new Set,
     i = new Set,
     o = new Set;
-  if (g.set(e, n.isOwner(t)), n.hasFeature(d.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) {
+  if (m.set(e, n.isOwner(t)), n.hasFeature(d.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) {
     var a;
     let c = s.ZP.getMember(e, t.id),
       d = new Set(null !== (a = null == c ? void 0 : c.roles) && void 0 !== a ? a : []),
       f = l.Z.getRoles(n.id);
     for (let t in f) {
       let n = f[t];
-      (0, u.Z)(n) && (r.add(t), (0, u.h)(n) && (i.add(t), d.has(t) && o.add(t))), d.has(t) && v(n) && g.set(e, !0)
+      (0, u.Z)(n) && (r.add(t), (0, u.h)(n) && (i.add(t), d.has(t) && o.add(t))), d.has(t) && v(n) && m.set(e, !0)
     }
   }
-  return _.set(e, r), m.set(e, o), h.set(e, i), !0
+  return p.set(e, r), g.set(e, o), h.set(e, i), !0
 }
 
 function y() {
@@ -59,7 +59,7 @@ function y() {
 }
 
 function O() {
-  _.clear(), m.clear(), h.clear(), g.clear(), E = null
+  p.clear(), g.clear(), h.clear(), m.clear(), E = null
 }
 
 function S(e) {
@@ -98,7 +98,7 @@ function T(e) {
   let {
     guildId: t
   } = e;
-  return !!_.has(t) && b(t)
+  return !!p.has(t) && b(t)
 }
 
 function N(e) {
@@ -106,7 +106,7 @@ function N(e) {
     guildId: t,
     user: n
   } = e, r = c.default.getCurrentUser();
-  return !!(n.id === (null == r ? void 0 : r.id) && _.has(t)) && b(t)
+  return !!(n.id === (null == r ? void 0 : r.id) && p.has(t)) && b(t)
 }
 class A extends(r = o.ZP.Store) {
   initialize() {
@@ -116,23 +116,23 @@ class A extends(r = o.ZP.Store) {
     return null == E ? y() : E
   }
   buildRoles(e) {
-    _.has(e) || b(e)
+    p.has(e) || b(e)
   }
   getSubscriptionRoles(e) {
     var t;
-    return this.buildRoles(e), null !== (t = _.get(e)) && void 0 !== t ? t : p
+    return this.buildRoles(e), null !== (t = p.get(e)) && void 0 !== t ? t : _
   }
   getPurchasableSubscriptionRoles(e) {
     var t;
-    return this.buildRoles(e), null !== (t = h.get(e)) && void 0 !== t ? t : p
+    return this.buildRoles(e), null !== (t = h.get(e)) && void 0 !== t ? t : _
   }
   getUserSubscriptionRoles(e) {
     var t;
-    return this.buildRoles(e), null !== (t = m.get(e)) && void 0 !== t ? t : p
+    return this.buildRoles(e), null !== (t = g.get(e)) && void 0 !== t ? t : _
   }
   getUserIsAdmin(e) {
     var t;
-    return this.buildRoles(e), null !== (t = g.get(e)) && void 0 !== t && t
+    return this.buildRoles(e), null !== (t = m.get(e)) && void 0 !== t && t
   }
 }
 f(A, "displayName", "SubscriptionRoleStore");

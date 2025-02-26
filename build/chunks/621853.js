@@ -13,12 +13,12 @@ var r = n(392711),
   u = n(430824),
   d = n(158776),
   f = n(412788),
-  p = n(771845),
-  _ = n(291175),
+  _ = n(771845),
+  p = n(291175),
   h = n(215023),
-  m = n(388032);
+  g = n(388032);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -138,7 +138,7 @@ function V(e) {
 }
 
 function F(e) {
-  var t, n, r, i, s, l, c, d, f, h, g, v, S, N, x, j, U, G, V, F, Z, H, W, Y, K, z, q;
+  var t, n, r, i, s, l, c, d, f, h, m, v, S, N, x, j, U, G, V, F, Z, H, W, Y, K, z, q;
   let Q = null !== (x = null === (t = e.guild_member_profile) || void 0 === t ? void 0 : t.guild_id) && void 0 !== x ? x : y;
   if (null === (n = O.get(e.user.id)) || void 0 === n || n.delete(Q), null != e.mutual_guilds) {
     let t = {};
@@ -151,7 +151,7 @@ function F(e) {
         guild: i,
         nick: r
       })
-    }), L.set(e.user.id, p.ZP.getFlattenedGuildIds().filter(e => null != t[e]).map(e => ({
+    }), L.set(e.user.id, _.ZP.getFlattenedGuildIds().filter(e => null != t[e]).map(e => ({
       guild: t[e].guild,
       nick: t[e].nick
     })))
@@ -172,7 +172,7 @@ function F(e) {
       popoutAnimationParticleType: null === (l = e.user_profile) || void 0 === l ? void 0 : l.popout_animation_particle_type,
       bio: null !== (j = null === (c = e.user_profile) || void 0 === c ? void 0 : c.bio) && void 0 !== j ? j : "",
       profileEffectId: null === (f = e.user_profile) || void 0 === f ? void 0 : null === (d = f.profile_effect) || void 0 === d ? void 0 : d.id,
-      profileEffectExpiresAt: null === (g = e.user_profile) || void 0 === g ? void 0 : null === (h = g.profile_effect) || void 0 === h ? void 0 : h.expires_at,
+      profileEffectExpiresAt: null === (m = e.user_profile) || void 0 === m ? void 0 : null === (h = m.profile_effect) || void 0 === h ? void 0 : h.expires_at,
       pronouns: null !== (U = null === (v = e.user_profile) || void 0 === v ? void 0 : v.pronouns) && void 0 !== U ? U : "",
       connectedAccounts: null !== (G = e.connected_accounts.filter(e => a.Z.isSupported(e.type))) && void 0 !== G ? G : [],
       applicationRoleConnections: null !== (V = e.application_role_connections) && void 0 !== V ? V : [],
@@ -193,19 +193,19 @@ function F(e) {
         name: $.name
       } : null,
       badges: null != e.badges ? e.badges.map(e => {
-        let t = (0, _.fv)(e.id);
+        let t = (0, p.fv)(e.id);
         if ((e.id === I || null != t) && null != X) {
-          let n = m.NW.formatToPlainString(m.t["8zbGNT"], {
+          let n = g.NW.formatToPlainString(g.t["8zbGNT"], {
             date: X
           });
-          return null != t && (n = 2 === t.badgeVersion ? m.NW.formatToPlainString(m.t.Hu4jfn, {
+          return null != t && (n = 2 === t.badgeVersion ? g.NW.formatToPlainString(g.t.Hu4jfn, {
             date: X
-          }) : (0, _.sZ)(t.id, X)), b(E({}, e), {
+          }) : (0, p.sZ)(t.id, X)), b(E({}, e), {
             description: n
           })
         }
         return e.id.startsWith(T) && null != J ? b(E({}, e), {
-          description: m.NW.formatToPlainString(m.t.IWkAq6, {
+          description: g.NW.formatToPlainString(g.t.IWkAq6, {
             date: J
           })
         }) : e
@@ -328,9 +328,9 @@ function Y(e) {
     profileEffectExpiresAt: d
   } = e, f = C.get(t);
   if (null == n || null == f) return !1;
-  let p = f.get(n);
-  if (null == p) return !1;
-  if (f.set(n, b(E({}, p), {
+  let _ = f.get(n);
+  if (null == _) return !1;
+  if (f.set(n, b(E({}, _), {
       accentColor: r,
       banner: i,
       bio: a,
@@ -399,7 +399,7 @@ function et(e) {
 }
 class en extends f.Z {
   initialize() {
-    this.waitFor(p.ZP), this.syncWith([s.default], ee)
+    this.waitFor(_.ZP), this.syncWith([s.default], ee)
   }
   isFetchingProfile(e, t) {
     let n = O.get(e);
@@ -463,7 +463,7 @@ class en extends f.Z {
       RELATIONSHIP_REMOVE: $,
       RELATIONSHIP_UPDATE: $,
       LOGOUT: j
-    }), g(this, "loadCache", () => {
+    }), m(this, "loadCache", () => {
       let e = this.readSnapshot(en.LATEST_SNAPSHOT_VERSION);
       null != e && e.forEach(e => {
         let {
@@ -475,6 +475,6 @@ class en extends f.Z {
     })
   }
 }
-g(en, "displayName", "UserProfileStore"), g(en, "LATEST_SNAPSHOT_VERSION", 1);
+m(en, "displayName", "UserProfileStore"), m(en, "LATEST_SNAPSHOT_VERSION", 1);
 let er = new en,
   ei = er

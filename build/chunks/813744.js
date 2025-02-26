@@ -21,15 +21,15 @@ function f() {
       var e, t;
       return null !== (t = null === (e = c.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== t && t
     }),
-    [f, p] = (0, i.Wu)([l.Z], () => [l.Z.isIdle(), l.Z.isAFK()]),
-    _ = [];
-  return f || p || _.push("ACTIVE"), f && _.push("IDLE"), p && _.push("AFK"), n && t ? (0, r.jsx)(a.ZP, {
+    [f, _] = (0, i.Wu)([l.Z], () => [l.Z.isIdle(), l.Z.isAFK()]),
+    p = [];
+  return f || _ || p.push("ACTIVE"), f && p.push("IDLE"), _ && p.push("AFK"), n && t ? (0, r.jsx)(a.ZP, {
     children: (0, r.jsxs)("div", {
       className: d.container,
       children: [(0, r.jsxs)("div", {
         className: d.status,
         children: [(0, r.jsx)(o.qbd, {
-          status: _.includes("ACTIVE") ? u.Sk.ONLINE : u.Sk.IDLE,
+          status: p.includes("ACTIVE") ? u.Sk.ONLINE : u.Sk.IDLE,
           className: d.statusIndicator
         }), (0, r.jsx)(o.Text, {
           variant: "text-md/normal",
@@ -38,7 +38,7 @@ function f() {
           className: d.statusText,
           children: (0, r.jsx)(o.Text, {
             variant: "text-md/bold",
-            children: _.join(" + ")
+            children: p.join(" + ")
           })
         })]
       }), f && (0, r.jsxs)(o.Text, {

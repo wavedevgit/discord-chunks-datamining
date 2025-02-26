@@ -13,11 +13,11 @@ var r, i = n(200651),
   u = n(846519),
   d = n(302901),
   f = n(539907),
-  p = n(952265),
-  _ = n(481060),
+  _ = n(952265),
+  p = n(481060),
   h = n(40851),
-  m = n(314910),
-  g = n(920676),
+  g = n(314910),
+  m = n(920676),
   E = n(981631);
 
 function v(e, t, n) {
@@ -112,7 +112,7 @@ class T extends(r = o.Component) {
       }), {
         isShown: n,
         position: this.state.renderedPosition
-      }), (0, i.jsx)(_.y5t, {
+      }), (0, i.jsx)(p.y5t, {
         forceLevel: 2,
         children: this.renderLayer()
       })]
@@ -131,15 +131,15 @@ class T extends(r = o.Component) {
       positionKey: l,
       overridePositionRef: c,
       disablePointerEvents: u,
-      layerContext: p,
-      clickTrap: _ = !1
+      layerContext: _,
+      clickTrap: p = !1
     } = this.props, {
       resizeKey: h,
-      isLoading: g,
+      isLoading: m,
       shouldShowLoadingState: E
     } = this.state;
-    return g && !E ? null : (0, i.jsx)(d.mh, {
-      layerContext: null != p ? p : m.nz,
+    return m && !E ? null : (0, i.jsx)(d.mh, {
+      layerContext: null != _ ? _ : g.nz,
       children: (0, i.jsx)(f.j, {
         ref: this.layerRef,
         onMount: this.handlePopoutShow,
@@ -156,7 +156,7 @@ class T extends(r = o.Component) {
         positionKey: null != l ? l : String(h),
         disablePointerEvents: u,
         onPositionChange: this.handlePopoutPositionChange,
-        clickTrap: _,
+        clickTrap: p,
         children: this.renderPopout
       })
     })
@@ -254,7 +254,7 @@ class T extends(r = o.Component) {
         ignoreModalClicks: t
       } = this.props, n = e.target, r = this.domElementRef.current;
       if (null != r) {
-        if ((0, f.t)(r, n) || t && (0, p.$s)()) return;
+        if ((0, f.t)(r, n) || t && (0, _.$s)()) return;
         this.isValidClickStart = !0
       }
     }), v(this, "handleDocumentMouseUp", e => {
@@ -272,5 +272,5 @@ v(T, "defaultProps", {
   autoInvert: !1,
   nudgeAlignIntoViewport: !1,
   spacing: 0,
-  loadingComponent: (0, i.jsx)(g.x, {})
+  loadingComponent: (0, i.jsx)(m.x, {})
 }), v(T, "contextType", h.ZP)

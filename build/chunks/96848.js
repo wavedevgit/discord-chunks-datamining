@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(47120), n(757143), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -17,11 +17,11 @@ let d = {
   },
   f = l.Hz.GIFT;
 
-function p(e) {
+function _(e) {
   let {
     setEmojiConfetti: t,
     emojiConfetti: n
-  } = e, [s, l] = i.useState(!1), p = e => (0, r.jsxs)("div", {
+  } = e, [s, l] = i.useState(!1), _ = e => (0, r.jsxs)("div", {
     className: u.customGiftContent,
     children: [(0, r.jsxs)("div", {
       className: u.customGiftHeader,
@@ -33,7 +33,7 @@ function p(e) {
         children: c.NW.string(c.t.stGFAw)
       })]
     }), e]
-  }), _ = e => {
+  }), p = e => {
     null != t && (t(e), l(!1))
   };
   return (0, r.jsx)(o.yRy, {
@@ -50,10 +50,10 @@ function p(e) {
         children: (0, r.jsx)(a.Z, {
           analyticsOverride: d,
           closePopout: t,
-          onSelectEmoji: _,
+          onSelectEmoji: p,
           wrapper: "div",
           pickerIntention: f,
-          renderHeader: p,
+          renderHeader: _,
           headerClassName: u.emojiHeader,
           className: u.emojiList,
           listHeaderClassName: u.emojiList,

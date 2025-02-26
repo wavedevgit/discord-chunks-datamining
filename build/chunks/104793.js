@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ft: () => g,
+  Ft: () => m,
   ML: () => y,
   ZJ: () => b,
-  mF: () => m
+  mF: () => g
 }), n(47120);
 var r = n(512722),
   i = n.n(r),
@@ -16,19 +16,19 @@ var r = n(512722),
   u = n(430824),
   d = n(895924),
   f = n(581364),
-  p = n(807169),
-  _ = n(689079),
+  _ = n(807169),
+  p = n(689079),
   h = n(981631),
-  m = function(e) {
+  g = function(e) {
     return e[e.ALLOWED = 0] = "ALLOWED", e[e.NSFW_NOT_ALLOWED = 1] = "NSFW_NOT_ALLOWED", e[e.WRONG_COMMAND_TYPE = 2] = "WRONG_COMMAND_TYPE", e[e.PREDICATE_FAILED = 3] = "PREDICATE_FAILED", e[e.CONTEXT_NOT_ALLOWED = 4] = "CONTEXT_NOT_ALLOWED", e[e.MISSING_BASE_PERMISSIONS = 5] = "MISSING_BASE_PERMISSIONS", e[e.CHANNEL_DENIED = 6] = "CHANNEL_DENIED", e[e.USER_DENIED = 7] = "USER_DENIED", e
   }({});
 
-function g(e, t, n) {
+function m(e, t, n) {
   var r;
   let {
     context: l,
-    commandTypes: m,
-    allowNsfw: g,
+    commandTypes: g,
+    allowNsfw: m,
     computedPermissions: O,
     userId: S,
     roleIds: I,
@@ -41,9 +41,9 @@ function g(e, t, n) {
     isUserInstalled: P,
     commandBotId: D
   } = n;
-  if (!m.includes(e.type)) return 2;
-  if (e.nsfw && !g) return 1;
-  let w = null != l ? (0, p.Vh)(l, D) : void 0;
+  if (!g.includes(e.type)) return 2;
+  if (e.nsfw && !m) return 1;
+  let w = null != l ? (0, _.Vh)(l, D) : void 0;
   if (null != e.contexts) {
     if (null != w && !e.contexts.includes(w)) return 4
   } else if (e.inputType === d.iw.BOT && (!1 === e.dmPermission && w === s.D.BOT_DM || w === s.D.PRIVATE_CHANNEL)) return 4;
@@ -54,8 +54,8 @@ function g(e, t, n) {
         guild: t
       })) return 3
   }
-  if (e.applicationId === _.bi.BUILT_IN) return 0;
-  let L = null != l ? (0, p.ny)(l) : void 0;
+  if (e.applicationId === p.bi.BUILT_IN) return 0;
+  let L = null != l ? (0, _.ny)(l) : void 0;
   if (null == L || a.e$(O, h.Plq.ADMINISTRATOR) || P && (null === (r = e.integration_types) || void 0 === r ? void 0 : r.includes(o.Y.USER_INSTALL))) return 0;
   if (!N && R && (null == e.integration_types || e.integration_types.includes(o.Y.GUILD_INSTALL))) return 5;
   if (l instanceof c.Sf) {

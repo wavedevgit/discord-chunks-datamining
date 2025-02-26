@@ -20,16 +20,16 @@ var r = n(192379),
   u = n(902840),
   d = n(38618),
   f = n(592125),
-  p = n(70956),
-  _ = n(765104),
+  _ = n(70956),
+  p = n(765104),
   h = n(981631);
-let m = 75,
-  g = 50,
-  E = 30 * p.Z.Millis.SECOND,
+let g = 75,
+  m = 50,
+  E = 30 * _.Z.Millis.SECOND,
   v = null;
 async function b(e, t) {
   let n, r;
-  if (!_.Z.shouldFetch(e, t)) return;
+  if (!p.Z.shouldFetch(e, t)) return;
   let i = Date.now();
   l.Z.dispatch({
     type: "REQUEST_CHANNEL_SUMMARY",
@@ -58,7 +58,7 @@ async function b(e, t) {
 async function y(e) {
   var t, n;
   let r, i;
-  if (!_.Z.shouldFetch(e)) return;
+  if (!p.Z.shouldFetch(e)) return;
   let a = Date.now();
   l.Z.dispatch({
     type: "REQUEST_CHANNEL_SUMMARIES",
@@ -74,7 +74,7 @@ async function y(e) {
     r = new c.Hx(e)
   }
   let u = (null == i ? void 0 : null === (t = i.body) || void 0 === t ? void 0 : t.summaries) instanceof Array ? i.body.summaries : null !== (n = null == i ? void 0 : i.body) && void 0 !== n ? n : [];
-  u = o().takeRight(u, m), l.Z.dispatch({
+  u = o().takeRight(u, g), l.Z.dispatch({
     type: "RECEIVE_CHANNEL_SUMMARIES",
     channelId: e,
     summaries: u,
@@ -132,7 +132,7 @@ function A(e, t) {
 async function C() {
   var e;
   let t, n;
-  if (!_.Z.shouldFetchChannelAffinities()) return Promise.resolve(null);
+  if (!p.Z.shouldFetchChannelAffinities()) return Promise.resolve(null);
   let r = Date.now();
   l.Z.dispatch({
     type: "REQUEST_CHANNEL_AFFINITIES",
@@ -162,7 +162,7 @@ async function R(e) {
   } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
   e = null != e ? e : [];
   let o = Date.now();
-  if (0 === (e = e.concat(_.Z.defaultChannelIds({
+  if (0 === (e = e.concat(p.Z.defaultChannelIds({
       withQuickSwitcher: r,
       withChannelAffinities: i
     })).filter(e => {
@@ -170,11 +170,11 @@ async function R(e) {
       return (0, u.Lp)(t, !1, !0)
     }).filter(e => {
       let t = Date.now(),
-        n = _.Z.status(e);
+        n = p.Z.status(e);
       if (null == n ? void 0 : n.fetching) return !1;
       let r = null == n ? void 0 : n.lastReceivedAt;
       return null == r || t - r > E
-    }).slice(0, g)).length) return Promise.resolve(null);
+    }).slice(0, m)).length) return Promise.resolve(null);
   l.Z.dispatch({
     type: "REQUEST_CHANNEL_SUMMARIES_BULK",
     channelIds: e,
@@ -243,7 +243,7 @@ let w = {
     let {
       channelIds: t = []
     } = e;
-    return P(t), (0, a.Wu)([_.Z], () => _.Z.topSummaries(), [])
+    return P(t), (0, a.Wu)([p.Z], () => p.Z.topSummaries(), [])
   },
   deleteSummary: D
 }

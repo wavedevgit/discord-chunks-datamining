@@ -13,9 +13,9 @@ var r = n(592125),
   u = n(814074),
   d = n(582142),
   f = n(989263),
-  p = n(872261);
+  _ = n(872261);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 let h = 750,
-  m = 15,
-  g = 500,
+  g = 15,
+  m = 500,
   E = 25,
   v = 25,
   b = 1,
   y = null,
-  O = new l.b(h, g),
-  S = new c.S(m),
+  O = new l.b(h, m),
+  S = new c.S(g),
   I = !1;
 class T extends a.Z {
   initialize() {
@@ -124,7 +124,7 @@ function N() {
 }
 
 function A() {
-  T.dropUnreachableChannels(), T.replaceLru((0, p.J)(O, h + g))
+  T.dropUnreachableChannels(), T.replaceLru((0, _.J)(O, h + m))
 }
 
 function C(e) {
@@ -161,5 +161,5 @@ function x(e) {
 function M(e) {
   I = !0
 }
-_(T, "displayName", "SaveableChannelsStore"), _(T, "LATEST_SNAPSHOT_VERSION", 1);
+p(T, "displayName", "SaveableChannelsStore"), p(T, "LATEST_SNAPSHOT_VERSION", 1);
 let k = new T

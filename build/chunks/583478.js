@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,31 +34,31 @@ function p(e) {
   }
   return e
 }
-let _ = new l.Z("BalanceCounter"),
+let p = new l.Z("BalanceCounter"),
   h = (0, c.dU)(void 0) === u.C.PRODUCTION,
-  m = {
+  g = {
     jump: 1,
     duration: 1
   },
-  g = 3e3,
+  m = 3e3,
   E = {
     POSITIVE: [{
       delta: 200,
       duration: 1e3,
-      tickConfig: p({}, m)
+      tickConfig: _({}, g)
     }, {
       delta: 500,
       duration: 2e3,
-      tickConfig: p({}, m)
+      tickConfig: _({}, g)
     }].sort((e, t) => e.delta - t.delta),
     NEGATIVE: [{
       delta: 1e3,
       duration: 1e3,
-      tickConfig: p({}, m)
+      tickConfig: _({}, g)
     }, {
       delta: 4e3,
       duration: 2e3,
-      tickConfig: p({}, m)
+      tickConfig: _({}, g)
     }].sort((e, t) => e.delta - t.delta)
   },
   v = {
@@ -84,15 +84,15 @@ function b(e, t) {
       r.tickConfig = b(e, i), t = r.duration, n = r.delta
     }
   }
-})(), h || _.log("Initializing data structures for BalanceCounter speed and tick configurations: ", {
-  MAX_ANIMATION_DURATION_MS: g,
+})(), h || p.log("Initializing data structures for BalanceCounter speed and tick configurations: ", {
+  MAX_ANIMATION_DURATION_MS: m,
   ANIMATION_THRESHOLDS: E
 });
 let y = (e, t, n, r) => {
     let i = Math.abs(r - n),
       o = E[t],
       a = v[t];
-    if (i > a.delta) return b(i, g - a.duration);
+    if (i > a.delta) return b(i, m - a.duration);
     for (let e of o)
       if (i <= e.delta) return e.tickConfig;
     return {
@@ -127,7 +127,7 @@ let y = (e, t, n, r) => {
       if (o === t) {
         if (!h && null !== f.current) {
           let e = Date.now();
-          _.log("Balance Counter finished updating: ", {
+          p.log("Balance Counter finished updating: ", {
             time: e - f.current.lastChangedAt,
             delta: o - u.current
           })
@@ -150,15 +150,15 @@ let y = (e, t, n, r) => {
         c.current = null, o < t ? l(o + i) : o > t && l(o - i)
       }, a)
     }, [o, t, l]);
-    let p = null === t,
-      m = null === o ? O(t) : O(o),
-      g = p ? 0 : m;
+    let _ = null === t,
+      g = null === o ? O(t) : O(o),
+      m = _ ? 0 : g;
     return (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       className: a()([d.balanceCounterText, n]),
       style: {
-        width: "calc(".concat(g, "ch + ").concat(p ? "0px" : "8px", ")"),
-        opacity: +!p
+        width: "calc(".concat(m, "ch + ").concat(_ ? "0px" : "8px", ")"),
+        opacity: +!_
       },
       children: o
     })

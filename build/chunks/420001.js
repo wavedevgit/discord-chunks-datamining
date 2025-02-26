@@ -13,12 +13,12 @@ var r = n(911969),
   u = n(594174),
   d = n(5192),
   f = n(417574),
-  p = n(877565),
-  _ = n(590921),
+  _ = n(877565),
+  p = n(590921),
   h = n(126226),
-  m = n(388032);
+  g = n(388032);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -72,9 +72,9 @@ function y(e) {
 }
 let O = b(E({}, h.Z), {
   sentinel: void 0,
-  focusMode: _.QZ.MANUAL,
+  focusMode: p.QZ.MANUAL,
   matches(e, t, n, r, i) {
-    if (i.commands === _.L8.DISABLED || i.commands === _.L8.OLD_BUILT_INS || n.length < 2 || !c.Xk.getSetting()) return !1;
+    if (i.commands === p.L8.DISABLED || i.commands === p.L8.OLD_BUILT_INS || n.length < 2 || !c.Xk.getSetting()) return !1;
     let o = y(n);
     return null != o && o.cleanedQuery.length > 0
   },
@@ -85,7 +85,7 @@ let O = b(E({}, h.Z), {
     let d = (0, s.hV)(e, u.cleanedQuery),
       {
         commands: f,
-        sections: p
+        sections: _
       } = i.JT({
         channel: e,
         type: "channel"
@@ -93,23 +93,23 @@ let O = b(E({}, h.Z), {
         commandTypes: [r.yU.CHAT],
         text: d.text
       }, {
-        limit: _.AQ,
-        placeholderCount: _.YP,
+        limit: p.AQ,
+        placeholderCount: p.YP,
         scoreMethod: o.p.COMMAND_OR_APPLICATION,
         allowFetch: l
       });
     if (null == f) return h.K;
-    let m = f.filter(e => e.section.botId === u.user.id);
+    let g = f.filter(e => e.section.botId === u.user.id);
     if (d.hasSpaceTerminator) {
       let e = d.text.trim(),
         t = e + " ";
-      m = m.filter(n => n.untranslatedName === e || n.untranslatedName.startsWith(t))
+      g = g.filter(n => n.untranslatedName === e || n.untranslatedName.startsWith(t))
     }
-    return 0 === m.length ? h.K : {
+    return 0 === g.length ? h.K : {
       results: {
-        entries: m.slice(0, _.AQ).map(e => ({
+        entries: g.slice(0, p.AQ).map(e => ({
           command: e,
-          section: null == p ? void 0 : p.find(t => t.id === e.applicationId)
+          section: null == _ ? void 0 : _.find(t => t.id === e.applicationId)
         }))
       }
     }
@@ -127,15 +127,15 @@ let O = b(E({}, h.Z), {
       onHover: s,
       onClick: c
     } = e;
-    return (0, p.HI)({
+    return (0, _.HI)({
       query: o,
       selectedIndex: n,
       autocompletes: t,
       onHover: s,
       onClick: c,
-      titleWithQuery: m.t.HFRoZW,
-      titleWithoutQuery: m.NW.string(m.t["0hKkS0"]),
-      Component: a.commands === _.L8.OLD_BUILT_INS ? l.ZP.Command : l.ZP.NewCommand,
+      titleWithQuery: g.t.HFRoZW,
+      titleWithoutQuery: g.NW.string(g.t["0hKkS0"]),
+      Component: a.commands === p.L8.OLD_BUILT_INS ? l.ZP.Command : l.ZP.NewCommand,
       getProps: e => {
         let {
           command: t,
@@ -177,7 +177,7 @@ let O = b(E({}, h.Z), {
       location: a.Vh.SUGGESTION
     });
     return null == l ? null : b(E({}, l), {
-      type: _.z2.COMMAND_SUGGESTION
+      type: p.z2.COMMAND_SUGGESTION
     })
   }
 })

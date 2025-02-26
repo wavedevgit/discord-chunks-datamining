@@ -14,11 +14,11 @@ var i = n(120356),
   u = n(100527),
   d = n(906732),
   f = n(933557),
-  p = n(359110),
-  _ = n(769654),
+  _ = n(359110),
+  p = n(769654),
   h = n(922482),
-  m = n(430824),
-  g = n(323038),
+  g = n(430824),
+  m = n(323038),
   E = n(960870),
   v = n(139793),
   b = n(652853),
@@ -56,16 +56,16 @@ function D(e) {
   }), k = (0, v.Z)({
     userId: t.id,
     onAction: M
-  }), j = (0, s.e7)([m.Z], () => m.Z.getGuild(n.guild_id)), U = (0, g.Z)(n), G = (0, f.ZP)(n), B = () => n.isDM() || n.isGroupDM() ? R.NW.string(R.t["9FaEzs"]) : n.isGuildStageVoice() ? R.NW.string(R.t.QygGCA) : R.NW.string(R.t.msxteH), V = () => {
+  }), j = (0, s.e7)([g.Z], () => g.Z.getGuild(n.guild_id)), U = (0, m.Z)(n), G = (0, f.ZP)(n), B = () => n.isDM() || n.isGroupDM() ? R.NW.string(R.t["9FaEzs"]) : n.isGuildStageVoice() ? R.NW.string(R.t.QygGCA) : R.NW.string(R.t.msxteH), V = () => {
     let e = e => {
         e.stopPropagation(), null == M || M({
           action: "OPEN_VOICE_CHANNEL"
-        }), n.isGuildStageVoice() ? (0, h.Cq)(n) : (c.default.selectVoiceChannel(n.id), (0, p.Kh)(n.id)), null == D || D()
+        }), n.isGuildStageVoice() ? (0, h.Cq)(n) : (c.default.selectVoiceChannel(n.id), (0, _.Kh)(n.id)), null == D || D()
       },
       t = e => {
         e.stopPropagation(), M({
           action: "OPEN_VOICE_GUILD"
-        }), (0, _.X)(n.guild_id), null == D || D()
+        }), (0, p.X)(n.guild_id), null == D || D()
       };
     return (0, r.jsx)("div", {
       className: P.details,

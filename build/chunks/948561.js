@@ -14,11 +14,11 @@ var r = n(952639),
   u = n(786761),
   d = n(797614),
   f = n(869765),
-  p = n(314897),
-  _ = n(433355),
+  _ = n(314897),
+  p = n(433355),
   h = n(592125),
-  m = n(375954),
-  g = n(944486),
+  g = n(375954),
+  m = n(944486),
   E = n(914010),
   v = n(709054),
   b = n(93735),
@@ -126,7 +126,7 @@ function U(e, t) {
 
 function G(e) {
   if (j(e, O.Pq.TIMEOUT)) {
-    let t = m.Z.getMessage(e.channel_id, e.id),
+    let t = g.Z.getMessage(e.channel_id, e.id),
       {
         attachmentIds: n,
         embedIds: r
@@ -265,15 +265,15 @@ function K(e) {
   let {
     message: s
   } = e;
-  if (null == s.channel_id || null == s.id || (null === (t = s.author) || void 0 === t ? void 0 : t.id) === p.default.getId() || null == s.embeds && null == s.attachments || (null === (n = s.embeds) || void 0 === n ? void 0 : n.length) === 0 && (null === (r = s.attachments) || void 0 === r ? void 0 : r.length) === 0) return !1;
+  if (null == s.channel_id || null == s.id || (null === (t = s.author) || void 0 === t ? void 0 : t.id) === _.default.getId() || null == s.embeds && null == s.attachments || (null === (n = s.embeds) || void 0 === n ? void 0 : n.length) === 0 && (null === (r = s.attachments) || void 0 === r ? void 0 : r.length) === 0) return !1;
   if (!(0, b.N7)(s)) {
-    let e = null !== (a = null !== (o = m.Z.getMessage(s.channel_id, s.id)) && void 0 !== o ? o : S.Z.getMessage(s.id, s.channel_id)) && void 0 !== a ? a : null === (i = f.Z.getMessage(s.channel_id, s.id)) || void 0 === i ? void 0 : i.message;
+    let e = null !== (a = null !== (o = g.Z.getMessage(s.channel_id, s.id)) && void 0 !== o ? o : S.Z.getMessage(s.id, s.channel_id)) && void 0 !== a ? a : null === (i = f.Z.getMessage(s.channel_id, s.id)) || void 0 === i ? void 0 : i.message;
     null == e || (0, b.N7)((0, u.wi)(e, s)) || j(e, O.Pq.UPDATE)
   }
-  let l = g.Z.getChannelId(),
-    c = _.ZP.getCurrentSidebarChannelId(l);
+  let l = m.Z.getChannelId(),
+    c = p.ZP.getCurrentSidebarChannelId(l);
   if (s.channel_id !== l && s.channel_id !== c) return !1;
-  let d = m.Z.getMessage(s.channel_id, s.id);
+  let d = g.Z.getMessage(s.channel_id, s.id);
   return null != d && W([d], {
     isMessageUpdate: !0
   })
@@ -287,9 +287,9 @@ function z(e) {
     optimistic: o,
     isPushNotification: a
   } = e;
-  if (o || a || null == r || (null === (t = i.author) || void 0 === t ? void 0 : t.id) === p.default.getId()) return !1;
-  let s = g.Z.getChannelId(),
-    l = _.ZP.getCurrentSidebarChannelId(s),
+  if (o || a || null == r || (null === (t = i.author) || void 0 === t ? void 0 : t.id) === _.default.getId()) return !1;
+  let s = m.Z.getChannelId(),
+    l = p.ZP.getCurrentSidebarChannelId(s),
     c = r === s || r === l,
     u = h.Z.getChannel(r);
   if (!c) return !1;
@@ -306,8 +306,8 @@ function q(e) {
     messages: n
   } = e;
   if (null == t || null == n) return !1;
-  let r = g.Z.getChannelId(),
-    i = _.ZP.getCurrentSidebarChannelId(r);
+  let r = m.Z.getChannelId(),
+    i = p.ZP.getCurrentSidebarChannelId(r);
   return (t === r || t === i) && W(n)
 }
 
@@ -343,7 +343,7 @@ function $(e) {
   let {
     channelId: t
   } = e;
-  return null != t && t === g.Z.getChannelId() && en(t)
+  return null != t && t === m.Z.getChannelId() && en(t)
 }
 
 function ee(e) {
@@ -352,7 +352,7 @@ function ee(e) {
     local: n
   } = e;
   if (!n || t.type !== A.yP.PRELOADED_USER_SETTINGS) return !1;
-  let r = g.Z.getChannelId();
+  let r = m.Z.getChannelId();
   return null != r && en(r)
 }
 
@@ -365,7 +365,7 @@ function et(e) {
 }
 
 function en(e) {
-  let t = m.Z.getMessages(e);
+  let t = g.Z.getMessages(e);
   return 0 !== t.length && Y(t)
 }
 class er extends c.Z {

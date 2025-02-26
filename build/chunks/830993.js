@@ -1,6 +1,6 @@
 /** Chunk was on 30829 **/
 n.d(t, {
-  Z: () => I
+  Z: () => Z
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(496675),
   m = n(158776),
   b = n(979651),
-  v = n(823379),
-  y = n(355363),
+  y = n(823379),
+  v = n(355363),
   O = n(449932),
   j = n(561788),
   _ = n(876548),
@@ -28,7 +28,7 @@ var r = n(200651),
   N = n(931857),
   S = n(513538);
 
-function I(e) {
+function Z(e) {
   var t, l;
   let {
     channel: o,
@@ -36,7 +36,7 @@ function I(e) {
     onAction: f,
     voiceStates: g,
     isChannelSelected: b,
-    shouldShowSettingNudge: y
+    shouldShowSettingNudge: v
   } = e;
   ! function(e, t) {
     let n = i.useMemo(() => {
@@ -54,9 +54,9 @@ function I(e) {
   }(o, g);
   let j = (0, u.ZP)(o),
     _ = Array.from((0, u.uF)(j).values()),
-    C = null !== (t = null == g ? void 0 : g.filter(v.lm)) && void 0 !== t ? t : [],
+    C = null !== (t = null == g ? void 0 : g.filter(y.lm)) && void 0 !== t ? t : [],
     S = e => t => [x.IIU.PLAYING, x.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === x.IIU.LISTENING,
-    I = (0, a.e7)([m.Z], () => {
+    Z = (0, a.e7)([m.Z], () => {
       let e = {};
       return C.forEach(t => {
         let n = m.Z.findActivity(t.user.id, S(t));
@@ -71,9 +71,9 @@ function I(e) {
         }
       }), Object.values(e)
     }, [C], a.pF);
-  return I.length + _.length === 0 ? null : (0, r.jsxs)(s.Ttm, {
+  return Z.length + _.length === 0 ? null : (0, r.jsxs)(s.Ttm, {
     className: N.container,
-    children: [(0, r.jsx)(Z, {
+    children: [(0, r.jsx)(I, {
       channel: o,
       isChannelSelected: b,
       voiceStatesCount: null !== (l = null == g ? void 0 : g.length) && void 0 !== l ? l : 0
@@ -87,7 +87,7 @@ function I(e) {
         channel: o,
         onAction: f
       }, t)
-    }), I.map((e, t) => {
+    }), Z.map((e, t) => {
       let {
         members: n,
         activity: i
@@ -98,7 +98,7 @@ function I(e) {
         members: n,
         onAction: f
       }, t)
-    }), y && (0, r.jsxs)(r.Fragment, {
+    }), v && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: N.headerDivider
       }), (0, r.jsx)("div", {
@@ -153,12 +153,12 @@ function I(e) {
   })
 }
 
-function Z(e) {
+function I(e) {
   let {
     channel: t,
     isChannelSelected: n,
     voiceStatesCount: i
-  } = e, l = (0, a.e7)([g.Z], () => !g.Z.can(x.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, y.ZP)({
+  } = e, l = (0, a.e7)([g.Z], () => !g.Z.can(x.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, v.ZP)({
     channel: t,
     locked: l,
     video: s,

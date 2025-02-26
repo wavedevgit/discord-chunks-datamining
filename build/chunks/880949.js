@@ -18,19 +18,19 @@ let u = e => {
     width: u = 32,
     height: d = 32,
     shouldAnimate: f = !0,
-    isLocked: p = !1
-  } = e, [_, h] = i.useState(!1), m = n.getIconURL(32, f && o), g = () => h(!0), E = () => h(!1);
+    isLocked: _ = !1
+  } = e, [p, h] = i.useState(!1), g = n.getIconURL(32, f && o), m = () => h(!0), E = () => h(!1);
   return (0, r.jsxs)("div", {
-    onFocus: g,
+    onFocus: m,
     onBlur: E,
-    onMouseOver: g,
+    onMouseOver: m,
     onMouseLeave: E,
     children: [(0, r.jsx)(l.ZP, {
       className: a()(c.mask, t),
-      mask: o || _ ? l.QS.SQUIRCLE : l.QS.AVATAR_DEFAULT,
+      mask: o || p ? l.QS.SQUIRCLE : l.QS.AVATAR_DEFAULT,
       width: u,
       height: d,
-      children: null == m ? (0, r.jsx)("div", {
+      children: null == g ? (0, r.jsx)("div", {
         className: a()(c.guildIcon, c.guildIconWithoutImage),
         children: (0, r.jsx)("div", {
           className: c.guildAcronym,
@@ -38,10 +38,10 @@ let u = e => {
         })
       }) : (0, r.jsx)("img", {
         alt: n.toString(),
-        src: m,
+        src: g,
         className: c.guildIcon
       })
-    }), p ? (0, r.jsx)("div", {
+    }), _ ? (0, r.jsx)("div", {
       className: c.categoryItemLockIconContainer,
       children: (0, r.jsx)(s.mBM, {
         size: "custom",

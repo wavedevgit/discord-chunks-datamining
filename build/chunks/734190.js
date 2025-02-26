@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(488131),
   m = n(592125),
   b = n(306680),
-  v = n(979651),
-  y = n(938475),
+  y = n(979651),
+  v = n(938475),
   O = n(714794),
   j = n(876548),
   _ = n(25601),
@@ -27,8 +27,8 @@ var r = n(200651),
   P = n(124368),
   N = n(388032),
   S = n(436804),
-  I = n(81503),
-  Z = n(366772);
+  Z = n(81503),
+  I = n(366772);
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -68,10 +68,10 @@ function T(e) {
     withGuildIcon: n,
     inverted: i
   } = e, l = {
-    className: o()(Z.spine, {
-      [Z.spineWithGuildIcon]: n
+    className: o()(I.spine, {
+      [I.spineWithGuildIcon]: n
     }, {
-      [Z.invertedSpine]: i
+      [I.invertedSpine]: i
     }),
     style: t
   }, {
@@ -112,8 +112,8 @@ function D(e) {
     withGuildIcon: n
   } = e;
   return (0, r.jsx)("svg", {
-    className: o()(Z.spine, {
-      [Z.spineWithGuildIcon]: n
+    className: o()(I.spine, {
+      [I.spineWithGuildIcon]: n
     }),
     width: "12",
     height: "11",
@@ -131,10 +131,10 @@ let A = i.memo(function(e) {
   let {
     thread: t,
     isSelectedChannel: l,
-    isSelectedVoice: Z,
+    isSelectedVoice: I,
     isLast: A,
     withGuildIcon: R
-  } = e, L = (0, s.e7)([y.ZP], () => y.ZP.getVoiceStatesForChannel(t), [t]), k = (0, s.e7)([v.Z], () => v.Z.hasVideo(t.id)), {
+  } = e, L = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(t), [t]), k = (0, s.e7)([y.Z], () => y.Z.hasVideo(t.id)), {
     unread: M,
     mentionCount: G,
     isMentionLowImportance: B
@@ -202,32 +202,32 @@ let A = i.memo(function(e) {
         right: 4
       },
       children: (0, r.jsxs)("div", {
-        className: o()(S.iconVisibility, I.wrapper, I.typeThread, {
-          [I.modeSelected]: l,
-          [I.modeMuted]: !l && U,
-          [I.modeUnreadImportant]: !U && !l && M,
-          [I.withGuildIcon]: R
+        className: o()(S.iconVisibility, Z.wrapper, Z.typeThread, {
+          [Z.modeSelected]: l,
+          [Z.modeMuted]: !l && U,
+          [Z.modeUnreadImportant]: !U && !l && M,
+          [Z.withGuildIcon]: R
         }),
         onMouseDown: V,
         onContextMenu: F,
         children: [!M || U || l ? null : (0, r.jsx)("div", {
-          className: o()(I.unread, I.unreadImportant)
+          className: o()(Z.unread, Z.unreadImportant)
         }), (0, r.jsx)(c.P3F, E(w({}, Y), {
           innerRef: Q,
-          className: I.link,
+          className: Z.link,
           onClick: W,
           "aria-label": K,
           focusProps: {
             enabled: !1
           },
           children: (0, r.jsxs)("div", {
-            className: o()(I.linkTop, I.__invalid_threadMainContent),
+            className: o()(Z.linkTop, Z.__invalid_threadMainContent),
             children: [(0, r.jsx)(p.Z, {
-              className: I.name,
+              className: Z.name,
               "aria-hidden": !0,
               children: t.name
             }), (0, r.jsxs)("div", {
-              className: I.children,
+              className: Z.children,
               children: [H > 0 && t.userLimit > 0 ? (0, r.jsx)(j.Z, {
                 userCount: H,
                 video: k,
@@ -242,7 +242,7 @@ let A = i.memo(function(e) {
       })
     }), (0, r.jsx)(C.Z, {
       channel: t,
-      collapsed: !Z,
+      collapsed: !I,
       collapsedMax: 6,
       voiceStates: L,
       location: x.Sbl.GUILD_CHANNEL_LIST

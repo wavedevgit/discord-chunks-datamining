@@ -11,10 +11,10 @@ var n = Symbol.for("react.element"),
   u = Symbol.for("react.suspense"),
   d = Symbol.for("react.memo"),
   f = Symbol.for("react.lazy"),
-  p = Symbol.iterator;
+  _ = Symbol.iterator;
 
-function _(e) {
-  return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
+function p(e) {
+  return null === e || "object" != typeof e ? null : "function" == typeof(e = _ && e[_] || e["@@iterator"]) ? e : null
 }
 var h = {
     isMounted: function() {
@@ -24,17 +24,17 @@ var h = {
     enqueueReplaceState: function() {},
     enqueueSetState: function() {}
   },
-  m = Object.assign,
-  g = {};
+  g = Object.assign,
+  m = {};
 
 function E(e, t, n) {
-  this.props = e, this.context = t, this.refs = g, this.updater = n || h
+  this.props = e, this.context = t, this.refs = m, this.updater = n || h
 }
 
 function v() {}
 
 function b(e, t, n) {
-  this.props = e, this.context = t, this.refs = g, this.updater = n || h
+  this.props = e, this.context = t, this.refs = m, this.updater = n || h
 }
 E.prototype.isReactComponent = {}, E.prototype.setState = function(e, t) {
   if ("object" != typeof e && "function" != typeof e && null != e) throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
@@ -43,7 +43,7 @@ E.prototype.isReactComponent = {}, E.prototype.setState = function(e, t) {
   this.updater.enqueueForceUpdate(this, e, "forceUpdate")
 }, v.prototype = E.prototype;
 var y = b.prototype = new v;
-y.constructor = b, m(y, E.prototype), y.isPureReactComponent = !0;
+y.constructor = b, g(y, E.prototype), y.isPureReactComponent = !0;
 var O = Array.isArray,
   S = Object.prototype.hasOwnProperty,
   I = {
@@ -134,7 +134,7 @@ function w(e, t, i, o, a) {
     for (var c = 0; c < e.length; c++) {
       var u = o + D(s = e[c], c);
       l += w(s, t, i, u, a)
-    } else if ("function" == typeof(u = _(e)))
+    } else if ("function" == typeof(u = p(e)))
       for (e = u.call(e), c = 0; !(s = e.next()).done;) u = o + D(s = s.value, c++), l += w(s, t, i, u, a);
     else if ("object" === s) throw Error("Objects are not valid as a React child (found: " + ("[object Object]" === (t = String(e)) ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
   return l
@@ -200,7 +200,7 @@ t.Children = {
   }
 }, t.Component = E, t.Fragment = i, t.Profiler = a, t.PureComponent = b, t.StrictMode = o, t.Suspense = u, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = j, t.act = U, t.cloneElement = function(e, t, r) {
   if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
-  var i = m({}, e.props),
+  var i = g({}, e.props),
     o = e.key,
     a = e.ref,
     s = e._owner;

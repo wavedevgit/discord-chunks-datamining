@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  BD: () => m,
-  DF: () => _,
+  BD: () => g,
+  DF: () => p,
   ZP: () => b,
   _F: () => h
 });
@@ -48,21 +48,21 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var _ = function(e) {
+var p = function(e) {
     return e.TOP_CENTER = "caretTopCenter", e.TOP_RIGHT = "caretTopRight", e.TOP_LEFT = "caretTopLeft", e.BOTTOM_CENTER = "caretBottomCenter", e.BOTTOM_LEFT = "caretBottomLeft", e.BOTTOM_RIGHT = "caretBottomRight", e.LEFT_CENTER = "caretLeftCenter", e.LEFT_TOP = "caretLeftTop", e.RIGHT_CENTER = "caretRightCenter", e.RIGHT_TOP = "caretRightTop", e
   }({}),
   h = function(e) {
     return e[e.ADJACENT = 0] = "ADJACENT", e[e.STACKED = 1] = "STACKED", e
   }({}),
-  m = function(e) {
+  g = function(e) {
     return e.BRAND = "brand", e.PRIMARY = "primary", e
   }({});
-let g = Object.freeze({
+let m = Object.freeze({
     brand: c.colorBrand,
     primary: c.colorPrimary
   }),
@@ -82,9 +82,9 @@ function b(e) {
     header: i,
     headerClassName: u,
     content: f,
-    contentClassName: _,
+    contentClassName: p,
     buttonCTA: h,
-    secondaryButtonCTA: m,
+    secondaryButtonCTA: g,
     onClick: b,
     onSecondaryClick: y,
     buttonProps: O = {
@@ -103,7 +103,7 @@ function b(e) {
   (0, s.ZP)(() => {
     null == I || I()
   });
-  let R = null != m,
+  let R = null != g,
     P = e => {
       b(e), null == N || N(l.L.PRIMARY)
     },
@@ -111,7 +111,7 @@ function b(e) {
       null == y || y(), null == N || N(l.L.SECONDARY)
     };
   return (0, r.jsxs)("div", {
-    className: o()(n, g[t], c.upsellTooltipWrapper, c[A]),
+    className: o()(n, m[t], c.upsellTooltipWrapper, c[A]),
     children: [T, null == i ? null : (0, r.jsx)(a.X6q, {
       color: E[t],
       className: o()(u, c.upsellTooltipHeader),
@@ -119,7 +119,7 @@ function b(e) {
       children: i
     }), (0, r.jsx)(a.Text, {
       color: v[t],
-      className: o()(_, c.content),
+      className: o()(p, c.content),
       variant: "text-sm/normal",
       children: f
     }), null != h || R ? (0, r.jsxs)("div", {
@@ -127,11 +127,11 @@ function b(e) {
         [c.upsellButtonsAdjacent]: 0 === C,
         [c.upsellButtonsStacked]: 1 === C
       }),
-      children: [R ? (0, r.jsx)(a.zxk, p(d({}, S), {
+      children: [R ? (0, r.jsx)(a.zxk, _(d({}, S), {
         fullWidth: 1 === C,
         onClick: D,
-        children: m
-      })) : null, null == h ? null : (0, r.jsx)(a.zxk, p(d({}, O), {
+        children: g
+      })) : null, null == h ? null : (0, r.jsx)(a.zxk, _(d({}, O), {
         fullWidth: !R || 1 === C,
         onClick: P,
         children: h
@@ -139,4 +139,4 @@ function b(e) {
     }) : null]
   })
 }
-b.CaretPosition = _, b.ButtonLayout = h
+b.CaretPosition = p, b.ButtonLayout = h

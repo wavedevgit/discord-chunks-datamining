@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(998698),
   d = n(459273),
   f = n(358085),
-  p = n(62883),
-  _ = n(752305),
+  _ = n(62883),
+  p = n(752305),
   h = n(981631);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -133,7 +133,7 @@ class O extends i.PureComponent {
       {
         onChange: o
       } = this.props;
-    null == o || o(null, i, (0, _.JM)(i));
+    null == o || o(null, i, (0, p.JM)(i));
     let a = t.length + e.length;
     this.setState({
       nextSelection: a
@@ -158,10 +158,10 @@ class O extends i.PureComponent {
       id: c,
       submitting: u,
       textAreaPaddingClassName: f,
-      spellcheckEnabled: p,
-      "aria-controls": _,
-      "aria-expanded": m,
-      "aria-activedescendant": g
+      spellcheckEnabled: _,
+      "aria-controls": p,
+      "aria-expanded": g,
+      "aria-activedescendant": m
     } = this.props;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.d9, {
@@ -188,10 +188,10 @@ class O extends i.PureComponent {
         onContextMenu: this.handleContextMenu,
         value: t ? "" : e,
         tabIndex: 0,
-        spellCheck: p,
-        "aria-controls": _,
-        "aria-expanded": m,
-        "aria-activedescendant": g,
+        spellCheck: _,
+        "aria-controls": p,
+        "aria-expanded": g,
+        "aria-activedescendant": m,
         "aria-haspopup": "listbox",
         "aria-autocomplete": "list",
         "aria-multiline": !0
@@ -208,18 +208,18 @@ class O extends i.PureComponent {
     return this.props.value
   }
   constructor(...e) {
-    super(...e), m(this, "_ref", void 0), m(this, "state", {
+    super(...e), g(this, "_ref", void 0), g(this, "state", {
       nextSelection: -1
-    }), m(this, "focus", () => {
+    }), g(this, "focus", () => {
       let {
         _ref: e
       } = this;
       null != e && e.focus()
-    }), m(this, "handleSetRef", e => {
+    }), g(this, "handleSetRef", e => {
       this._ref = e
-    }), m(this, "handleKeyPress", e => {
+    }), g(this, "handleKeyPress", e => {
       if (e.which === h.yXg.ENTER && !e.shiftKey && !this.hasOpenCodeBlock() && (!this.props.disableEnterToSubmit || e.ctrlKey)) return e.preventDefault(), this.props.onSubmit(this.props.value)
-    }), m(this, "handleKeyDown", e => {
+    }), g(this, "handleKeyDown", e => {
       switch (e.which) {
         case h.yXg.ARROW_DOWN:
           this.props.moveSelection(1) && e.preventDefault();
@@ -241,7 +241,7 @@ class O extends i.PureComponent {
         onKeyDown: t
       } = this.props;
       null == t || t(e)
-    }), m(this, "handleKeyUp", e => {
+    }), g(this, "handleKeyUp", e => {
       switch (e.which) {
         case h.yXg.ARROW_RIGHT:
         case h.yXg.ARROW_LEFT:
@@ -253,35 +253,35 @@ class O extends i.PureComponent {
         onKeyUp: t
       } = this.props;
       null == t || t(e)
-    }), m(this, "handleGlobalPaste", e => {
+    }), g(this, "handleGlobalPaste", e => {
       let {
         event: t
       } = e;
       this.handlePaste(t) || this.focus()
-    }), m(this, "handlePaste", e => {
+    }), g(this, "handlePaste", e => {
       let t = this.props.onPaste(e);
       return t && e.preventDefault(), t
-    }), m(this, "handleClick", () => {
+    }), g(this, "handleClick", () => {
       this.props.maybeShowAutocomplete()
-    }), m(this, "handleContextMenu", e => {
+    }), g(this, "handleContextMenu", e => {
       f.isPlatformEmbedded && (0, l.jW)(e, async () => {
         let {
           default: e
         } = await n.e("99989").then(n.bind(n, 889662));
-        return t => (0, r.jsx)(e, v(g({}, t), {
+        return t => (0, r.jsx)(e, v(m({}, t), {
           isChannelTextArea: !0,
-          text: (0, p.getSelectionText)()
+          text: (0, _.getSelectionText)()
         }))
       }, {
         align: "bottom",
         enableSpellCheck: !0
       })
-    }), m(this, "handleOnChange", e => {
+    }), g(this, "handleOnChange", e => {
       let {
         onChange: t,
         allowNewLines: n
       } = this.props, r = e.currentTarget.value, i = n ? r : r.replace("\n", "");
-      null == t || t(e, i, (0, _.JM)(i))
+      null == t || t(e, i, (0, p.JM)(i))
     })
   }
 }

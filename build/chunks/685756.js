@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function p(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,12 +48,12 @@ function _(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = 3,
-  g = 8;
+let g = 3,
+  m = 8;
 
 function E() {}
 let v = 20 * c.Z.Millis.SECOND,
@@ -126,7 +126,7 @@ class w extends a.Z {
       let e = Date.now() - this.connectionStartTime;
       this.handleClose(!1, 0, "The connection timed out after ".concat(e, " ms - did not receive OP_HELLO in time."))
     }, v);
-    let e = this.webSocket = new WebSocket("".concat(this.url, "?v=").concat(g));
+    let e = this.webSocket = new WebSocket("".concat(this.url, "?v=").concat(m));
     e.binaryType = "arraybuffer", e.onopen = () => {
       1 === this.connectionState ? this.emit("connect") : 5 === this.connectionState && this.doResumeOrClose(), this.connectionState = 4;
       let e = Date.now() - this.connectionStartTime;
@@ -270,7 +270,7 @@ class w extends a.Z {
   }
   handleHello(e) {
     var t, n, r;
-    if (this.serverVersion = null !== (t = e.v) && void 0 !== t ? t : m, this.serverVersion <= 3) {
+    if (this.serverVersion = null !== (t = e.v) && void 0 !== t ? t : g, this.serverVersion <= 3) {
       let t = u.isPlatformEmbedded ? O : S;
       this.heartbeatInterval = e.heartbeat_interval * t
     } else this.heartbeatInterval = e.heartbeat_interval * this.heartbeatIntervalModifier, u.isPlatformEmbedded || (this.heartbeatInterval = Math.min(I, null !== (n = this.heartbeatInterval) && void 0 !== n ? n : NaN));
@@ -401,18 +401,18 @@ class w extends a.Z {
   selectProtocol(e, t, n, r) {
     let i;
     let o = {};
-    null == n ? i = null : "sdp" in n && null != n.sdp && "" !== n.sdp ? (i = n.sdp, o = h(p({}, n), {
+    null == n ? i = null : "sdp" in n && null != n.sdp && "" !== n.sdp ? (i = n.sdp, o = h(_({}, n), {
       codecs: A(n.codecs),
       rtc_connection_id: t
     })) : "address" in n && null != n.address && "" !== n.address && n.port && null != n.mode && "" !== n.mode && (i = {
       address: n.address,
       port: n.port,
       mode: n.mode
-    }, o = h(p({}, n), {
+    }, o = h(_({}, n), {
       codecs: A(n.codecs),
       rtc_connection_id: t,
       experiments: r
-    })), this.send(1, p({
+    })), this.send(1, _({
       protocol: e,
       data: i
     }, o))

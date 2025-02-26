@@ -32,7 +32,7 @@ function b(e) {
   }, n), t
 }
 
-function v(e, t) {
+function y(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
   return s()(t.type !== p.eD.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
@@ -51,13 +51,13 @@ function v(e, t) {
   }
 }
 
-function y(e) {
+function v(e) {
   let {
     name: t,
     targetNode: n,
     combine: l,
     below: a
-  } = e, s = i.useMemo(() => v([p.eD.GUILD, p.eD.FOLDER], n, a, l), [n, a, l]), [{
+  } = e, s = i.useMemo(() => y([p.eD.GUILD, p.eD.FOLDER], n, a, l), [n, a, l]), [{
     canDrop: u,
     isOver: d
   }, h] = (0, c.L)(s), f = b([
@@ -83,7 +83,7 @@ function O(e) {
   } = e, [{
     canDrop: a,
     isOver: s
-  }, u] = (0, c.L)(() => v([p.eD.GUILD], n, !0, !0));
+  }, u] = (0, c.L)(() => y([p.eD.GUILD], n, !0, !0));
   i.useEffect(() => {
     null == l || l(s)
   }, [l, s]);
@@ -119,7 +119,7 @@ let j = i.memo(function(e) {
   return (0, r.jsxs)("div", {
     className: m.wrapper,
     "aria-hidden": !0,
-    children: [(0, r.jsx)(y, {
+    children: [(0, r.jsx)(v, {
       name: t,
       targetNode: n,
       below: l
@@ -138,7 +138,7 @@ function _(e) {
   } = e, [{
     canDrop: i,
     isOver: l
-  }, a] = (0, c.L)(() => v([p.eD.GUILD], n, !0, !0)), s = b([
+  }, a] = (0, c.L)(() => y([p.eD.GUILD], n, !0, !0)), s = b([
     [l, m.wrapperOver]
   ]), u = b([
     [l, m.dragOver],

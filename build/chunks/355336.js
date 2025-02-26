@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $: () => m
+  $: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -44,13 +44,13 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -68,7 +68,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   let n = new Map,
     o = new t(e => {
       e.forEach(e => {
@@ -83,14 +83,14 @@ function m(e, t) {
     var {
       children: f,
       className: h,
-      onResize: m,
-      contentClassName: g,
+      onResize: g,
+      contentClassName: m,
       onScroll: E,
       dir: v = "ltr",
       fade: b = !1,
       customTheme: y = !1,
       style: O
-    } = t, S = _(t, ["children", "className", "onResize", "contentClassName", "onScroll", "dir", "fade", "customTheme", "style"]);
+    } = t, S = p(t, ["children", "className", "onResize", "contentClassName", "onScroll", "dir", "fade", "customTheme", "style"]);
     let I = i.useRef(null),
       T = i.useRef(null),
       [N, A] = i.useState(!1),
@@ -112,16 +112,16 @@ function m(e, t) {
     return i.useEffect(() => () => clearTimeout(I.current), []), (0, l.zn)({
       ref: C,
       key: "container",
-      onUpdate: m,
+      onUpdate: g,
       resizeObserver: o,
       listenerMap: n
     }), (0, l.zn)({
       ref: T,
       key: "content",
-      onUpdate: m,
+      onUpdate: g,
       resizeObserver: o,
       listenerMap: n
-    }), (0, r.jsx)("div", p(d({
+    }), (0, r.jsx)("div", _(d({
       ref: C,
       className: a()(h, {
         [c.fade]: b,
@@ -138,7 +138,7 @@ function m(e, t) {
         containerRef: T,
         children: (0, r.jsxs)("div", {
           ref: T,
-          className: a()(g, c.content),
+          className: a()(m, c.content),
           children: [f, N && (0, r.jsx)("div", {
             className: c.pointerCover
           })]

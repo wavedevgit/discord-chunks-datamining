@@ -55,13 +55,13 @@ function t(e) {
         contains: ["self", o, s, a, c, u]
       }]
     },
-    p = {
+    _ = {
       className: "name",
       relevance: 0,
       begin: t,
       keywords: i
     },
-    _ = {
+    p = {
       variants: [{
         begin: "\\(",
         end: "\\)"
@@ -73,7 +73,7 @@ function t(e) {
         begin: /lambda/,
         endsWithParent: !0,
         returnBegin: !0,
-        contains: [p, {
+        contains: [_, {
           endsParent: !0,
           variants: [{
             begin: /\(/,
@@ -84,13 +84,13 @@ function t(e) {
           }],
           contains: [c]
         }]
-      }, p, d]
+      }, _, d]
     };
-  return d.contains = [o, a, s, c, u, f, _].concat(l), {
+  return d.contains = [o, a, s, c, u, f, p].concat(l), {
     name: "Scheme",
     aliases: ["scm"],
     illegal: /\S/,
-    contains: [e.SHEBANG(), a, s, u, f, _].concat(l)
+    contains: [e.SHEBANG(), a, s, u, f, p].concat(l)
   }
 }
 e.exports = t

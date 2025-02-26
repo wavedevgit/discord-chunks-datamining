@@ -1,88 +1,71 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => h
 }), n(47120);
-var r = n(200651),
-  i = n(192379),
-  o = n(442837),
-  a = n(468363),
-  s = n(561308),
-  l = n(158776),
-  c = n(885110),
-  u = n(456644),
-  d = n(308406),
-  f = n(369566),
-  p = n(565640),
-  _ = n(29899),
-  h = n(151545),
-  m = n(744802),
-  g = n(493043),
-  E = n(864141),
-  v = n(231338);
+var r = n(200651);
+n(192379);
+var i = n(442837),
+  o = n(468363),
+  a = n(158776),
+  s = n(885110),
+  l = n(308406),
+  c = n(369566),
+  u = n(29899),
+  d = n(151545),
+  f = n(493043),
+  _ = n(864141),
+  p = n(231338);
 
-function b(e) {
+function h(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: b,
-    guildId: y,
-    className: O,
-    onClose: S
+    displayProfile: h,
+    guildId: g,
+    className: m,
+    onClose: E
   } = e, {
-    live: I,
-    recent: T,
-    stream: N
-  } = (0, f.Z)(t.id), [A] = I, {
-    voiceChannel: C,
-    voiceActivity: R
-  } = (0, _.Z)({
+    live: v,
+    stream: b
+  } = (0, c.Z)(t.id), [y] = v, {
+    voiceChannel: O,
+    voiceActivity: S
+  } = (0, u.Z)({
     userId: t.id,
-    guildId: y,
+    guildId: g,
     surface: "user-profile-featured-activity"
-  }), P = null != A && A === R, D = t.id === n.id, w = (0, o.e7)([c.Z, l.Z], () => {
-    let e = D ? c.Z.getStatus() : l.Z.getStatus(t.id, y);
-    return e === v.Sk.OFFLINE || e === v.Sk.INVISIBLE
+  }), I = null != y && y === S, T = t.id === n.id, N = (0, i.e7)([s.Z, a.Z], () => {
+    let e = T ? s.Z.getStatus() : a.Z.getStatus(t.id, g);
+    return e === p.Sk.OFFLINE || e === p.Sk.INVISIBLE
   }), {
-    recentActivityEnabled: L
-  } = (0, u.i)({
+    voiceActivityStatusEnabled: A
+  } = (0, o.U)({
     location: "UserProfileFeaturedActivity"
   }), {
-    voiceActivityStatusEnabled: x
-  } = (0, a.U)({
+    voiceActivityCardEnabled: C
+  } = (0, l.o)({
     location: "UserProfileFeaturedActivity"
-  }), {
-    voiceActivityCardEnabled: M
-  } = (0, d.o)({
-    location: "UserProfileFeaturedActivity"
-  }), k = x || M, j = (0, p.Z)(t.id, "UserProfileFeaturedActivity"), U = i.useMemo(() => D ? T.find(s.Ae) : j, [D, T, j]);
-  return w || null == N ? !k || w || null == C || P ? w || null == A ? L && null != U ? (0, r.jsx)(m.Z, {
+  }), R = A || C;
+  return N || null == b ? !R || N || null == O || I ? N || null == y ? null : (0, r.jsx)(d.Z, {
+    user: t,
+    currentUser: n,
+    activity: y,
+    profileGuildId: null == h ? void 0 : h.guildId,
+    className: m,
+    onClose: E
+  }) : (0, r.jsx)(_.Z, {
+    user: t,
+    voiceChannel: O,
+    className: m,
+    onClose: E
+  }) : (0, r.jsx)(f.Z, {
     location: "UserProfileFeaturedActivity",
     user: t,
     currentUser: n,
-    entry: U,
-    profileGuildId: null == b ? void 0 : b.guildId,
-    className: O,
-    onClose: S
-  }) : null : (0, r.jsx)(h.Z, {
-    user: t,
-    currentUser: n,
-    activity: A,
-    profileGuildId: null == b ? void 0 : b.guildId,
-    className: O,
-    onClose: S
-  }) : (0, r.jsx)(E.Z, {
-    user: t,
-    voiceChannel: C,
-    className: O,
-    onClose: S
-  }) : (0, r.jsx)(g.Z, {
-    location: "UserProfileFeaturedActivity",
-    user: t,
-    currentUser: n,
-    stream: N,
-    profileGuildId: null == b ? void 0 : b.guildId,
-    className: O,
-    onClose: S
+    stream: b,
+    profileGuildId: null == h ? void 0 : h.guildId,
+    className: m,
+    onClose: E
   })
 }

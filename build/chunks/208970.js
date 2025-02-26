@@ -52,7 +52,7 @@ function f(e) {
   return !!(null != t && t.isForumLikeChannel())
 }
 
-function p(e) {
+function _(e) {
   var t;
   let n = null !== (t = d[e]) && void 0 !== t ? t : {
     query: null,
@@ -62,13 +62,13 @@ function p(e) {
   return d[e] = n, n
 }
 
-function _(e) {
+function p(e) {
   let {
     channelId: t,
     query: n
   } = e;
   if (!f(t)) return !1;
-  let r = p(t);
+  let r = _(t);
   d[t] = u(l({}, r), {
     query: n,
     results: null
@@ -80,31 +80,31 @@ function h(e) {
     channelId: t
   } = e;
   if (!f(t)) return !1;
-  let n = p(t);
+  let n = _(t);
   d[t] = u(l({}, n), {
     loading: !0
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     channelId: t,
     threadIds: n
   } = e;
   if (!f(t)) return !1;
-  let r = p(t);
+  let r = _(t);
   d[t] = u(l({}, r), {
     loading: !1,
     results: n
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     channelId: t
   } = e;
   if (!f(t)) return !1;
-  let n = p(t);
+  let n = _(t);
   d[t] = u(l({}, n), {
     loading: !1,
     results: []
@@ -165,9 +165,9 @@ let S = new O(o.Z, {
   CONNECTION_OPEN: y,
   THREAD_DELETE: v,
   CHANNEL_DELETE: b,
-  FORUM_SEARCH_QUERY_UPDATED: _,
+  FORUM_SEARCH_QUERY_UPDATED: p,
   FORUM_SEARCH_START: h,
-  FORUM_SEARCH_SUCCESS: m,
-  FORUM_SEARCH_FAILURE: g,
+  FORUM_SEARCH_SUCCESS: g,
+  FORUM_SEARCH_FAILURE: m,
   FORUM_SEARCH_CLEAR: E
 })

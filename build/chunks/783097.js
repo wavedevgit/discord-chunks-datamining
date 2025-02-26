@@ -30,11 +30,11 @@ var r = n(912370),
   u = n(768581),
   d = n(585483),
   f = n(630388),
-  p = n(541099),
-  _ = n(827498),
+  _ = n(541099),
+  p = n(827498),
   h = n(981631),
-  m = n(689079),
-  g = n(388032);
+  g = n(689079),
+  m = n(388032);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -93,19 +93,19 @@ function S(e, t) {
   return i
 }
 let I = {
-  id: m.bi.BUILT_IN
+  id: g.bi.BUILT_IN
 };
 
 function T(e) {
-  return e.id !== m.bi.BUILT_IN
+  return e.id !== g.bi.BUILT_IN
 }
 
 function N(e) {
-  return T(e) ? e.name : g.NW.string(g.t.UB2gGx)
+  return T(e) ? e.name : m.NW.string(m.t.UB2gGx)
 }
 
 function A(e) {
-  return T(e) ? e.description : g.NW.string(g.t.X9fusr)
+  return T(e) ? e.description : m.NW.string(m.t.X9fusr)
 }
 
 function C(e) {
@@ -137,7 +137,7 @@ function w(e) {
     sectionName: d,
     commandOrigin: f = a.bB.APPLICATION_LAUNCHER
   } = e, {
-    channel: _
+    channel: p
   } = r, h = async () => {
     try {
       let i = await (0, s.Z)({
@@ -148,18 +148,18 @@ function w(e) {
         maxSizeCallback: u,
         commandOrigin: f,
         sectionName: d,
-        source: p.Z.entrypoint()
+        source: _.Z.entrypoint()
       });
       if (t.inputType === a.iw.BUILT_IN_TEXT && null != i && null != r.channel) {
         var e;
-        let t = l.ZP.parse(_, i.content);
+        let t = l.ZP.parse(p, i.content);
         t.tts = null !== (e = i.tts) && void 0 !== e && e, o.Z.sendMessage(r.channel.id, t)
       }
     } catch (e) {
       throw i.Z.show({
-        title: g.NW.string(g.t["aHO//v"]),
-        body: g.NW.string(g.t.kuzKHB),
-        confirmText: g.NW.string(g.t["5911LS"]),
+        title: m.NW.string(m.t["aHO//v"]),
+        body: m.NW.string(m.t.kuzKHB),
+        confirmText: m.NW.string(m.t["5911LS"]),
         onConfirm: () => h()
       }), e
     }
@@ -182,8 +182,8 @@ function L(e) {
     description: e.description
   } : {
     iconURL: null != n ? n : null,
-    name: g.NW.string(g.t.UB2gGx),
-    description: g.NW.string(g.t.X9fusr)
+    name: m.NW.string(m.t.UB2gGx),
+    description: m.NW.string(m.t.X9fusr)
   }
 }
 
@@ -197,7 +197,7 @@ function M(e) {
 }
 
 function k(e) {
-  return e === _._b.TEXT
+  return e === p._b.TEXT
 }
 
 function j(e) {

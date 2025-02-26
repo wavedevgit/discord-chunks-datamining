@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   J: () => d,
-  Z: () => p
+  Z: () => _
 }), n(47120);
 var r = n(298444),
   i = n(570140),
@@ -43,4 +43,4 @@ class f extends a.Z {
     })
   }
 }
-let p = new f
+let _ = new f

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -15,39 +15,39 @@ var i = n(481060),
   d = n(388032),
   f = n(481736);
 
-function p(e) {
+function _(e) {
   var t, n;
   let {
-    user: p,
-    activity: _,
+    user: _,
+    activity: p,
     onAction: h
-  } = e, m = (0, s.Ih)(_, p), g = (0, s.Fe)(_, p);
-  return (0, a.Z)(_) && ((0, o.Z)(_, u.xjy.PLAY) || (0, o.Z)(_, u.xjy.SYNC)) ? (0, r.jsxs)(r.Fragment, {
+  } = e, g = (0, s.Ih)(p, _), m = (0, s.Fe)(p, _);
+  return (0, a.Z)(p) && ((0, o.Z)(p, u.xjy.PLAY) || (0, o.Z)(p, u.xjy.SYNC)) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.ef, {
       icon: i.iOO,
-      tooltipText: null !== (t = g.tooltip) && void 0 !== t ? t : d.NW.string(d.t.eU3inJ),
-      disabled: g.disabled,
-      submitting: g.loading,
+      tooltipText: null !== (t = m.tooltip) && void 0 !== t ? t : d.NW.string(d.t.eU3inJ),
+      disabled: m.disabled,
+      submitting: m.loading,
       fullWidth: !0,
       onClick: e => {
         e.stopPropagation(), null == h || h({
           action: "PRESS_LISTEN_ALONG_ON_SPOTIFY_BUTTON"
-        }), g.onClick()
+        }), m.onClick()
       }
     }), (0, r.jsx)(i.DY3, {
-      text: m.tooltip,
+      text: g.tooltip,
       className: f.primaryButton,
       children: (0, r.jsx)(c.tG, {
         icon: () => (0, r.jsx)(l.Z, {}),
-        text: null !== (n = m.label) && void 0 !== n ? n : d.NW.string(d.t.rRffNz),
-        disabled: m.disabled,
-        submitting: m.loading,
+        text: null !== (n = g.label) && void 0 !== n ? n : d.NW.string(d.t.rRffNz),
+        disabled: g.disabled,
+        submitting: g.loading,
         wrapperClassName: f.primaryButton,
         fullWidth: !0,
         onClick: e => {
           null == e || e.stopPropagation(), null == h || h({
             action: "PRESS_PLAY_ON_SPOTIFY_BUTTON"
-          }), m.onClick()
+          }), g.onClick()
         }
       })
     })]

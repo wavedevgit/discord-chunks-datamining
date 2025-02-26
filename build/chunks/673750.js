@@ -16,11 +16,11 @@ var r = n(512722),
   u = n(873741),
   d = n(931301),
   f = n(314897),
-  p = n(866960),
-  _ = n(70956),
+  _ = n(866960),
+  p = n(70956),
   h = n(403182),
-  m = n(651655),
-  g = n(861990),
+  g = n(651655),
+  m = n(861990),
   E = n(141795),
   v = n(981631),
   b = n(959517);
@@ -87,8 +87,8 @@ var A = function(e) {
 let C = e => 0 === e.type,
   R = e => 1 === e.type,
   P = e => C(e) ? e.message.nonce : R(e) ? e.message.messageId : e.message.data.id,
-  D = [+_.Z.Millis.MINUTE, 5 * _.Z.Millis.MINUTE];
-class w extends m.Z {
+  D = [+p.Z.Millis.MINUTE, 5 * p.Z.Millis.MINUTE];
+class w extends g.Z {
   isFull() {
     return this.queue.length >= this.maxSize
   }
@@ -139,7 +139,7 @@ class w extends m.Z {
       else if (429 === n.status) {
         let e = parseInt(n.headers["retry-after"]);
         isNaN(e) ? t(null, n) : t({
-          retryAfter: e * _.Z.Millis.SECOND
+          retryAfter: e * p.Z.Millis.SECOND
         })
       } else t(null, n)
     }
@@ -149,7 +149,7 @@ class w extends m.Z {
     let {
       channelId: r
     } = e, i = T(e, ["channelId"]), a = (0, u.d)(), s = O({
-      mobile_network_type: p.Z.getType()
+      mobile_network_type: _.Z.getType()
     }, i, null != a && {
       signal_strength: a
     });
@@ -169,17 +169,17 @@ class w extends m.Z {
       location: l
     }, this.logger.log("Overlay location: ", n));
     let f = this.createResponseHandler(e.nonce, t),
-      _ = new AbortController;
+      p = new AbortController;
     this.startQueueMetricTimers(e.nonce), o.tn.post(I(O({
       url: v.ANM.MESSAGES(r),
       body: s,
       context: n,
       oldFormErrors: !0
     }, b.hs), {
-      signal: _.signal,
+      signal: p.signal,
       rejectWithError: !0,
       onRequestCreated: () => {
-        null != e.nonce && this.requests.set(e.nonce, _)
+        null != e.nonce && this.requests.set(e.nonce, p)
       }
     }), f)
   }
@@ -209,9 +209,9 @@ class w extends m.Z {
         data: c,
         nonce: u,
         attachments: d,
-        maxSizeCallback: p,
-        analytics_location: _,
-        sectionName: m,
+        maxSizeCallback: _,
+        analytics_location: p,
+        sectionName: g,
         source: b
       } = e,
       y = {
@@ -222,14 +222,14 @@ class w extends m.Z {
         session_id: f.default.getSessionId(),
         data: c,
         nonce: u,
-        analytics_location: _,
-        section_name: m,
+        analytics_location: p,
+        section_name: g,
         source: b
       };
     if (null != d) {
       y.data.attachments = [], n = [];
       let e = d;
-      y.data.attachments = e.map((e, t) => (i()(e.status === E.m.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.B)(e, t)))
+      y.data.attachments = e.map((e, t) => (i()(e.status === E.m.COMPLETED, "Uploads must be staged before trying to send a message"), (0, m.B)(e, t)))
     }
     let O = new AbortController;
     o.tn.post({
@@ -246,7 +246,7 @@ class w extends m.Z {
           let {
             total: t
           } = e, n = (0, h.dg)(s);
-          null != t && t > n && (this.cancelRequest(u), null == p || p(n))
+          null != t && t > n && (this.cancelRequest(u), null == _ || _(n))
         })
       }
     }, this.createResponseHandler(u, t))

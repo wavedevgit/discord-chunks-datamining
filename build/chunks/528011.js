@@ -1,12 +1,12 @@
-/** Chunk was on 63061 **/
+/** Chunk was on 65936 **/
 n.d(t, {
   g: () => h,
   mI: () => m
 }), n(47120);
 var r = n(149765),
   i = n(399606),
-  o = n(581883),
-  l = n(430824),
+  l = n(581883),
+  o = n(430824),
   s = n(496675),
   a = n(914010),
   c = n(594174),
@@ -17,18 +17,18 @@ var r = n(149765),
   p = n(676770);
 
 function m(e) {
-  let t = (0, i.e7)([l.Z, s.Z], () => {
-      let t = l.Z.getGuild(e);
+  let t = (0, i.e7)([o.Z, s.Z], () => {
+      let t = o.Z.getGuild(e);
       if (null == t) return !1;
       let n = s.Z.getGuildPermissions(t);
       return null != n && r.Db(n, p.cv)
     }),
     n = (0, i.e7)([E.Z], () => null != e ? E.Z.getGuildIncident(e) : null),
-    o = null != n && (0, _.ur)(n);
+    l = null != n && (0, _.ur)(n);
   return {
     shouldShowIncidentActions: t,
     incidentData: n,
-    isUnderLockdown: o
+    isUnderLockdown: l
   }
 }
 
@@ -37,10 +37,10 @@ function h() {
   let t = function(e) {
       let t = c.default.getCurrentUser(),
         n = E.Z.getIncidentsByGuild();
-      for (let i of d.default.keys(n).map(e => l.Z.getGuild(e))) {
+      for (let i of d.default.keys(n).map(e => o.Z.getGuild(e))) {
         if (null == i) continue;
-        let o = n[i.id];
-        if (!(null == o || !(0, _.i9)(o) && !(0, _.ur)(o) || (0, _.ur)(o) && i.id !== e) && r.Db(u.uB({
+        let l = n[i.id];
+        if (!(null == l || !(0, _.i9)(l) && !(0, _.ur)(l) || (0, _.ur)(l) && i.id !== e) && r.Db(u.uB({
             user: t,
             context: i,
             checkElevated: !1
@@ -48,7 +48,7 @@ function h() {
       }
       return null
     }(a.Z.getGuildId()),
-    n = null !== (e = o.Z.getGuildsProto()) && void 0 !== e ? e : {},
+    n = null !== (e = l.Z.getGuildsProto()) && void 0 !== e ? e : {},
     i = null != t ? n[t] : null,
     s = null != i && i.disableRaidAlertNag;
   return {

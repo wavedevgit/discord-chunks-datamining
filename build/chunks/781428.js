@@ -15,8 +15,8 @@ var r, i = n(200651),
   p = n(570140),
   g = n(893776),
   m = n(899742),
-  _ = n(579806),
-  f = n(743142),
+  f = n(579806),
+  _ = n(743142),
   b = n(254942),
   N = n(388905),
   x = n(379760),
@@ -112,7 +112,7 @@ class X extends(r = o.PureComponent) {
       authenticated: t
     }, null != n ? (0, I.Z)(n, !1, !1) : {}), {
       flush: !0
-    }), null == _.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
+    }), null == f.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
       e && (0, Z.us)().then(e => {
         let {
           challenge: t,
@@ -165,7 +165,7 @@ class X extends(r = o.PureComponent) {
       if (null != n.channel) return "dm_invite";
       if (null != n.inviter) return "friend_invite"
     }
-    return null != i ? (0, f.L)(i) : null
+    return null != i ? (0, _.L)(i) : null
   }
   get giftCodeSKUId() {
     let {

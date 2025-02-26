@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => u,
+  Z: () => d,
   g: () => c
 }), n(47120);
 var r = n(192379),
-  i = n(442837),
-  o = n(146282),
-  a = n(327220),
-  s = n(959580),
-  l = n(371177);
+  a = n(442837),
+  i = n(146282),
+  l = n(327220),
+  o = n(959580),
+  s = n(371177);
 
 function c(e, t) {
   let {
@@ -18,16 +17,16 @@ function c(e, t) {
   return !!(null == n || n.has(t.content_type))
 }
 
-function u(e) {
+function d(e) {
   let {
     feed: t,
     filters: n
-  } = (0, i.cj)([o.Z], () => ({
-    feed: o.Z.getFeed(e),
-    filters: o.Z.getFilters()
-  })), u = r.useMemo(() => {
+  } = (0, a.cj)([i.Z], () => ({
+    feed: i.Z.getFeed(e),
+    filters: i.Z.getFilters()
+  })), d = r.useMemo(() => {
     let e = null == t ? void 0 : t.entries.map(e => e.content);
     return null != n ? null == e ? void 0 : e.filter(e => c(n, e)) : e
   }, [t, n]);
-  return u = (0, a.Z)(u), u = (0, s.Z)(u), u = (0, l.Z)(u)
+  return d = (0, l.Z)(d), d = (0, o.Z)(d), d = (0, s.Z)(d)
 }

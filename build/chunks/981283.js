@@ -14,11 +14,11 @@ var i = n(392711),
   u = n(199902),
   d = n(314897),
   f = n(650774),
-  p = n(19780),
-  _ = n(594174),
+  _ = n(19780),
+  p = n(594174),
   h = n(449753),
-  m = n(569545),
-  g = n(960861),
+  g = n(569545),
+  m = n(960861),
   E = n(803647),
   v = n(70722),
   b = n(981631);
@@ -47,7 +47,7 @@ function O(e) {
 let S = (0, i.debounce)(l.xc, 1e3),
   I = {
     init() {
-      h.Z.init(), g.ZP.initializeIfNeeded(), a.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
+      h.Z.init(), m.ZP.initializeIfNeeded(), a.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
         let {
           videoState: t
         } = e, n = u.Z.getCurrentUserActiveStream();
@@ -68,9 +68,9 @@ let S = (0, i.debounce)(l.xc, 1e3),
           allowMultiple: n
         } = e;
         if (n) return;
-        let r = (0, m.my)(t);
+        let r = (0, g.my)(t);
         u.Z.getAllActiveStreams().forEach(e => {
-          e.ownerId !== r.ownerId && e.ownerId !== d.default.getId() && (e.ownerId === d.default.getId() && s.Z.setGoLiveSource(null), (0, l.aP)((0, m.V9)(e), !1))
+          e.ownerId !== r.ownerId && e.ownerId !== d.default.getId() && (e.ownerId === d.default.getId() && s.Z.setGoLiveSource(null), (0, l.aP)((0, g.V9)(e), !1))
         })
       }), a.Z.subscribe("VOICE_STATE_UPDATES", e => {
         let {
@@ -82,7 +82,7 @@ let S = (0, i.debounce)(l.xc, 1e3),
           } = e;
           if (t !== d.default.getId()) return;
           let n = u.Z.getAllActiveStreams(),
-            r = p.Z.getChannelId();
+            r = _.Z.getChannelId();
           n.forEach(e => {
             e.channelId !== r && (0, E.Z)(e, !1)
           })
@@ -94,8 +94,8 @@ let S = (0, i.debounce)(l.xc, 1e3),
         } = e, {
           ownerId: r,
           guildId: i
-        } = (0, m.my)(n);
-        if (null == i || null == r || r !== (null === (t = _.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) return;
+        } = (0, g.my)(n);
+        if (null == i || null == r || r !== (null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) return;
         let o = f.Z.getMemberCount(i);
         null != o && !(o < 2) && !(o > v.tB) && c.eo.getSetting() && S(n)
       })

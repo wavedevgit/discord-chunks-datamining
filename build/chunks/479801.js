@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  e: () => m
+  e: () => g
 }), n(47120);
 var r = n(192379),
   i = n(442837),
@@ -44,15 +44,15 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = 6e5,
+let p = 6e5,
   h = 6e5;
 
-function m(e, t) {
+function g(e, t) {
   let n = "useMaybeFetchCollectiblesCategories";
   (0, o.j)({
     location: n + " auto on",
@@ -63,28 +63,28 @@ function m(e, t) {
   });
   let u = (0, i.e7)([a.Z], () => a.Z.hasLoadedExperiments),
     f = null == e ? void 0 : e.includeBundles,
-    m = (0, c.hv)("useMaybeFetchCollectiblesCategoriesShared"),
-    [g, E, v, b, y, O] = (0, i.Wu)([l.Z], () => {
+    g = (0, c.hv)("useMaybeFetchCollectiblesCategoriesShared"),
+    [m, E, v, b, y, O] = (0, i.Wu)([l.Z], () => {
       var e, t;
       return [l.Z.isFetchingCategories, l.Z.lastFetchOptions, l.Z.error, null !== (e = l.Z.lastErrorTimestamp) && void 0 !== e ? e : 0, null !== (t = l.Z.lastSuccessfulFetch) && void 0 !== t ? t : 0, l.Z.categories]
     });
   return (0, r.useEffect)(() => {
-    if (!u || g) return;
+    if (!u || m) return;
     let n = Date.now() - b < h;
     if (v && n) return;
-    let r = p(d({}, e), {
+    let r = _(d({}, e), {
         includeBundles: f,
-        variantsReturnStyle: m
+        variantsReturnStyle: g
       }),
       i = !(0, s.oc)(E, r),
-      o = Date.now() - y < _;
+      o = Date.now() - y < p;
     (i || !o) && (0, s.F$)(r, t)
-  }, [u, g, E, y, e, v, f, b, m, t]), {
-    isFetching: g,
+  }, [u, m, E, y, e, v, f, b, g, t]), {
+    isFetching: m,
     categories: O,
     fetchCategoriesError: v,
     refreshCategories: (0, r.useCallback)(() => {
-      let t = p(d({}, e), {
+      let t = _(d({}, e), {
         includeBundles: f
       });
       (0, s.F$)(t)

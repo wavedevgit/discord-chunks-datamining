@@ -13,9 +13,9 @@ var c = n(36645),
   u = n(874893),
   d = n(981631),
   f = n(957825),
-  p = n(969943);
+  _ = n(969943);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,13 +31,13 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
-let m = (window.innerWidth - d.PrS) / 2,
-  g = "standard",
+let g = (window.innerWidth - d.PrS) / 2,
+  m = "standard",
   E = null;
 
 function v() {
@@ -89,7 +89,7 @@ class A extends(r = a.ZP.DeviceSettingsStore) {
   }
   get videoUploadQuality() {
     var e;
-    return null !== (e = b.videoUploadQuality) && void 0 !== e ? e : g
+    return null !== (e = b.videoUploadQuality) && void 0 !== e ? e : m
   }
   get dataSavingMode() {
     var e, t;
@@ -109,7 +109,7 @@ class A extends(r = a.ZP.DeviceSettingsStore) {
   }
   get postSidebarWidth() {
     var e;
-    return null !== (e = b.postSidebarWidth) && void 0 !== e ? e : m
+    return null !== (e = b.postSidebarWidth) && void 0 !== e ? e : g
   }
   get callChatSidebarWidth() {
     var e;
@@ -195,10 +195,10 @@ class A extends(r = a.ZP.DeviceSettingsStore) {
   }
   get listDensity() {
     var e;
-    return null !== (e = b.listDensity) && void 0 !== e ? e : p.fx.COZY
+    return null !== (e = b.listDensity) && void 0 !== e ? e : _.fx.COZY
   }
 }
-_(A, "displayName", "UnsyncedUserSettingsStore"), _(A, "persistKey", "UnsyncedUserSettingsStore"), _(A, "migrations", [() => {
+p(A, "displayName", "UnsyncedUserSettingsStore"), p(A, "persistKey", "UnsyncedUserSettingsStore"), p(A, "migrations", [() => {
   let e = s.K.get("UserSettingsStore");
   return s.K.remove("UserSettingsStore"), o().pick(e, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations", "showPlayAgain")
 }, e => {

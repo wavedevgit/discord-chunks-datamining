@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(119837),
   d = n(802433),
   f = n(658312),
-  p = n(729436),
-  _ = n(142145),
+  _ = n(729436),
+  p = n(142145),
   h = n(710867),
-  m = n(312904),
-  g = n(186917),
+  g = n(312904),
+  m = n(186917),
   E = n(663058);
 
 function v(e, t, n) {
@@ -51,12 +51,12 @@ let y = e => {
       useOpacityOnHover: l = !0,
       autoPlay: c = !0,
       restartMethod: h,
-      urlQueryString: g,
+      urlQueryString: m,
       profileEffectConfig: v,
       noBorderRadius: b = !1,
       introDelay: y = u.lG
     } = e, O = i.useRef(null), [S, I] = i.useState([]);
-    (0, m.Z)(v);
+    (0, g.Z)(v);
     let [T, N] = i.useState(0), [A, C] = i.useState(0), {
       accessibilityLabel: R
     } = v, [P, D] = i.useState(-y), {
@@ -69,7 +69,7 @@ let y = e => {
     i.useEffect(() => {
       M.current = y
     }), i.useEffect(() => {
-      D(-M.current), I((0, p.H)(v.effects))
+      D(-M.current), I((0, _.H)(v.effects))
     }, [v]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
@@ -104,7 +104,7 @@ let y = e => {
               alt: R
             }, e.src + i)
           }
-          return (0, r.jsx)(_.Z, {
+          return (0, r.jsx)(p.Z, {
             layerConfig: e,
             animationType: v.animationType,
             ticking: x.current,
@@ -112,7 +112,7 @@ let y = e => {
             accessibilityLabel: R,
             hasPlayedThrough: k,
             setHasPlayedThrough: j,
-            urlQueryString: g,
+            urlQueryString: m,
             maxLoops: n,
             loopEnd: A,
             bannerAdjustment: t
@@ -157,8 +157,8 @@ let y = e => {
       [o, a] = i.useState(!1),
       {
         preset: u
-      } = (0, g.Z)(e.profileEffectId, () => a(!1)),
-      f = (0, p.C)(null == u ? void 0 : u.config);
+      } = (0, m.Z)(e.profileEffectId, () => a(!1)),
+      f = (0, _.C)(null == u ? void 0 : u.config);
     return null != u && null != f && (t || e.shopPreview || u.config.animationType !== d.Q.INTERMITTENT) ? !t && e.shopPreview || !t && u.config.animationType === d.Q.PERSISTENT || n || !1 === e.autoPlay && !1 === e.isHovering ? (0, r.jsx)(O, {
       useThumbnail: e.useThumbnail,
       config: f,

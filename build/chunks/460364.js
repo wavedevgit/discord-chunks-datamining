@@ -49,9 +49,9 @@ function f(e, t) {
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,7 +59,7 @@ function p(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -73,16 +73,16 @@ function h(e) {
     isFocused: n,
     menuSubmenuProps: c,
     rows: d,
-    rowHeight: _,
+    rowHeight: p,
     onScroll: h,
-    listClassName: m
-  } = e, g = i.useRef(null), E = i.useRef(null), v = i.useRef(null), b = i.useRef(null), {
+    listClassName: g
+  } = e, m = i.useRef(null), E = i.useRef(null), v = i.useRef(null), b = i.useRef(null), {
     isUsingKeyboardNavigation: y,
     focusIndex: O
-  } = c, S = p(c, ["isUsingKeyboardNavigation", "focusIndex"]);
+  } = c, S = _(c, ["isUsingKeyboardNavigation", "focusIndex"]);
   i.useLayoutEffect(() => {
     var e;
-    n && ((0, a.F)(g), null === (e = v.current) || void 0 === e || e.focus())
+    n && ((0, a.F)(m), null === (e = v.current) || void 0 === e || e.focus())
   }, [n]), i.useEffect(() => {
     if (n && O >= 0 && y) {
       var e;
@@ -91,7 +91,7 @@ function h(e) {
   }, [n, y, O]);
   let I = i.useCallback(e => d[e], [d]);
   return (0, r.jsxs)("div", {
-    ref: g,
+    ref: m,
     className: l.__invalid_submenuContainer,
     children: [(0, r.jsx)("div", {
       ref: E
@@ -111,12 +111,12 @@ function h(e) {
           ref: v,
           children: (0, r.jsx)(s.Z, {
             ref: b,
-            className: m,
+            className: g,
             listPadding: [6, 0, 6, 8],
             onScroll: h,
             renderRow: I,
             rowCount: d.length,
-            rowHeight: _
+            rowHeight: p
           })
         }))
       })

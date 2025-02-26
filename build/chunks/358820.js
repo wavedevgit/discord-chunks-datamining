@@ -17,11 +17,11 @@ var r = n(512722),
   u = n(358085),
   d = n(960048),
   f = n(998502),
-  p = n(743498),
-  _ = n(709706),
+  _ = n(743498),
+  p = n(709706),
   h = n(750180);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -67,28 +67,28 @@ function O(e) {
     url: t,
     modelId: n,
     fileName: r
-  } = e, i = _.Z.getModelState(n);
-  (null == i ? void 0 : i.status) !== h.L.DOWNLOADING && (a.Z.dispatch(g({
+  } = e, i = p.Z.getModelState(n);
+  (null == i ? void 0 : i.status) !== h.L.DOWNLOADING && (a.Z.dispatch(m({
     type: "VOICE_FILTER_DOWNLOAD_STARTED"
   }, e)), f.ZP.downloadVoiceFilterFile(t, r, t => {
     let {
       downloadedBytes: n,
       totalBytes: r
     } = t;
-    a.Z.dispatch(v(g({
+    a.Z.dispatch(v(m({
       type: "VOICE_FILTER_DOWNLOAD_PROGRESS"
     }, e), {
       downloadedBytes: n,
       totalBytes: r
     }))
   }).then(() => {
-    a.Z.dispatch(g({
+    a.Z.dispatch(m({
       type: "VOICE_FILTER_DOWNLOAD_READY"
     }, e))
   }).catch(t => {
-    (null == t ? void 0 : t.USER_CANCELED_DOWNLOAD) ? b.info("User canceled the download for Voice Filter dependency", e): b.error("Failed to fetch voice filter model", g({
+    (null == t ? void 0 : t.USER_CANCELED_DOWNLOAD) ? b.info("User canceled the download for Voice Filter dependency", e): b.error("Failed to fetch voice filter model", m({
       reason: t
-    }, e)), a.Z.dispatch(v(g({
+    }, e)), a.Z.dispatch(v(m({
       type: "VOICE_FILTER_DOWNLOAD_FAILED"
     }, e), {
       error: t
@@ -97,7 +97,7 @@ function O(e) {
 }
 
 function S(e) {
-  if (!_.Z.isNativeModuleLoaded()) {
+  if (!p.Z.isNativeModuleLoaded()) {
     b.warn("Voice Filter apply ignored, module not loaded.");
     return
   }
@@ -117,7 +117,7 @@ function S(e) {
   })
 }
 async function I() {
-  if (!_.Z.isNativeModuleLoaded()) {
+  if (!p.Z.isNativeModuleLoaded()) {
     b.info("Voice Filter catalog refresh ignored, module not loaded.");
     return
   }
@@ -150,7 +150,7 @@ function T() {
   })
 }
 async function N() {
-  if (!(_.Z.isNativeModuleLoaded() || _.Z.isNativeModuleLoading() || __OVERLAY__)) {
+  if (!(p.Z.isNativeModuleLoaded() || p.Z.isNativeModuleLoading() || __OVERLAY__)) {
     if (!(0, u.isWindows)() && !(0, u.isMac)()) {
       a.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
@@ -171,7 +171,7 @@ async function N() {
       let n = l.Z.getMostRecentlyRequestedVoiceFilter();
       if (null != n) {
         var e;
-        (null === (e = _.Z.getVoiceFilter(n)) || void 0 === e ? void 0 : e.available) !== !0 ? (0, p.v6)(null) : (0, p.v6)(n)
+        (null === (e = p.Z.getVoiceFilter(n)) || void 0 === e ? void 0 : e.available) !== !0 ? (0, _.v6)(null) : (0, _.v6)(n)
       }
     } catch (e) {
       b.warn("Failed to load Voice Filters module: ".concat(e.message)), d.Z.captureException(e), a.Z.dispatch({

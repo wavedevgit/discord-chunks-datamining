@@ -11,7 +11,7 @@ var a, s = n(442837),
   d = n(581883),
   f = n(283595);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,14 +20,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -36,8 +36,8 @@ let h = {
     applicationId: null,
     originURL: null
   },
-  m = h,
-  g = new Set,
+  g = h,
+  m = new Set,
   E = !1;
 
 function v() {
@@ -45,14 +45,14 @@ function v() {
 }
 
 function b() {
-  r = null, i = null, g = new Set, m.applicationId = null, m.originURL = null, v()
+  r = null, i = null, m = new Set, g.applicationId = null, g.originURL = null, v()
 }
 
 function y(e) {
   let {
     applicationId: t
   } = e;
-  g.add(t), o = null
+  m.add(t), o = null
 }
 
 function O(e) {
@@ -60,7 +60,7 @@ function O(e) {
     applicationId: t,
     originURL: n
   } = e;
-  r = t, i = n, g.delete(t), o = null, m.applicationId = t, m.originURL = n
+  r = t, i = n, m.delete(t), o = null, g.applicationId = t, g.originURL = n
 }
 
 function S(e) {
@@ -68,7 +68,7 @@ function S(e) {
     applicationId: t,
     error: n
   } = e;
-  g.delete(t), o = n
+  m.delete(t), o = n
 }
 
 function I(e) {
@@ -79,7 +79,7 @@ function I(e) {
 }
 class T extends(a = s.ZP.PersistedStore) {
   initialize(e) {
-    r = (m = _({}, null != e ? e : h)).applicationId, i = m.originURL, this.waitFor(d.Z, c.Z), this.syncWith([d.Z, c.Z], () => !0), f.Z.whenInitialized(() => {
+    r = (g = p({}, null != e ? e : h)).applicationId, i = g.originURL, this.waitFor(d.Z, c.Z), this.syncWith([d.Z, c.Z], () => !0), f.Z.whenInitialized(() => {
       E = !0
     })
   }
@@ -93,13 +93,13 @@ class T extends(a = s.ZP.PersistedStore) {
     return u.Sb.getSetting() && this.inTestModeForApplication(e)
   }
   getState() {
-    return m
+    return g
   }
   get isTestMode() {
     return null != r
   }
   get isFetchingAuthorization() {
-    return g.size > 0
+    return m.size > 0
   }
   get testModeEmbeddedApplicationId() {
     return null != i ? r : null
@@ -119,7 +119,7 @@ class T extends(a = s.ZP.PersistedStore) {
     })
   }
 }
-p(T, "displayName", "TestModeStore"), p(T, "persistKey", "TestModeStore");
+_(T, "displayName", "TestModeStore"), _(T, "persistKey", "TestModeStore");
 let N = new T(l.Z, {
   DEVELOPER_TEST_MODE_AUTHORIZATION_START: y,
   DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: O,

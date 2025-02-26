@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(481060),
   d = n(220082),
   f = n(583405),
-  p = n(313201),
-  _ = n(279745),
+  _ = n(313201),
+  p = n(279745),
   h = n(695346),
-  m = n(451478),
-  g = n(768581),
+  g = n(451478),
+  m = n(768581),
   E = n(28660),
   v = n(462997),
   b = n(474321);
@@ -103,7 +103,7 @@ function C(e) {
     bannerHeight: R,
     themePadding: P,
     animateOnHover: D = !1
-  } = e, w = (0, p.Dt)(), [L, x] = i.useState(!1), M = (0, l.e7)([m.Z], () => m.Z.isFocused()), k = h.QK.getSetting(), {
+  } = e, w = (0, _.Dt)(), [L, x] = i.useState(!1), M = (0, l.e7)([g.Z], () => g.Z.isFocused()), k = h.QK.getSetting(), {
     bannerSrc: j,
     status: U
   } = (0, E.Z)({
@@ -150,7 +150,7 @@ function C(e) {
           backgroundImage: null != j ? "url(".concat(j, ")") : void 0,
           backgroundColor: "COMPLETE" !== U ? c.Z.unsafe_rawColors.PRIMARY_800.css : F
         },
-        children: [!k && (0, g.F8)(j) && (0, r.jsx)(_.Z, {
+        children: [!k && (0, m.F8)(j) && (0, r.jsx)(p.Z, {
           className: b.gifTag
         }), O]
       })]

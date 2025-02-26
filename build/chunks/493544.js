@@ -163,7 +163,7 @@ let S = function(e) {
     mobileSidebarOpen: x,
     toggleSidebar: y,
     hideSidebar: C = !1
-  } = e, v = o.useRef(null), S = o.useRef(null), E = (0, b.Z)(s), N = (0, f.Yzy)(C, {
+  } = e, v = o.useRef(null), S = o.useRef(null), N = (0, b.Z)(s), E = (0, f.Yzy)(C, {
     from: {
       position: "absolute",
       opacity: 0
@@ -177,10 +177,10 @@ let S = function(e) {
     v.current = e, null != h && (h.current = e)
   }, [h]);
   o.useLayoutEffect(() => {
-    null != v.current && E !== s && v.current.scrollTo({
+    null != v.current && N !== s && v.current.scrollTo({
       to: 0
     })
-  }, [s, E, v]);
+  }, [s, N, v]);
   let T = (0, i.jsx)(_, {
     isMobile: d.tq,
     mobileSidebarOpen: x,
@@ -196,7 +196,7 @@ let S = function(e) {
     }, s)
   }
   return (0, i.jsx)(i.Fragment, {
-    children: N((e, n) => (0, i.jsxs)(c.animated.div, {
+    children: E((e, n) => (0, i.jsxs)(c.animated.div, {
       style: e,
       className: m.standardSidebarView,
       children: [!n && (null == t ? null : (0, i.jsx)(f.f6W, {

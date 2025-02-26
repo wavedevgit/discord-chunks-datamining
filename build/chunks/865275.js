@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(47120), n(411104), n(26686);
 var r = n(836560),
   i = n(392711),
@@ -48,8 +48,8 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = new a.Z("UploaderBase.tsx");
-class _ extends r.EventEmitter {
+let _ = new a.Z("UploaderBase.tsx");
+class p extends r.EventEmitter {
   _addAttachmentsToPayload(e, t, n) {
     let r = u({}, e),
       i = [...o().get(r, t, []), ...n];
@@ -59,7 +59,7 @@ class _ extends r.EventEmitter {
     null != this.processingMessageChangeInterval && (clearInterval(this.processingMessageChangeInterval), this.processingMessageChangeInterval = void 0)
   }
   cancel() {
-    p.log("cancel() for ".concat(this.id)), this._aborted = !0, null != this._cancel && this._cancel(), this._handleComplete()
+    _.log("cancel() for ".concat(this.id)), this._aborted = !0, null != this._cancel && this._cancel(), this._handleComplete()
   }
   cancelItem(e) {
     throw Error("cancelItem() is not implemented on UploaderBase; must implement cancelItem() on subclass")
@@ -116,9 +116,9 @@ class _ extends r.EventEmitter {
         reason: n,
         body: r
       } = e;
-      this.clearProcessingMessageInterval(), !this._aborted && (this._errored = !0, p.log("_handleError: ".concat(t, " (").concat(JSON.stringify(n), ") for ").concat(this.id)), this.emit("error", this._file, t, r, n), this.removeAllListeners())
+      this.clearProcessingMessageInterval(), !this._aborted && (this._errored = !0, _.log("_handleError: ".concat(t, " (").concat(JSON.stringify(n), ") for ").concat(this.id)), this.emit("error", this._file, t, r, n), this.removeAllListeners())
     }), c(this, "_handleComplete", e => {
-      this.clearProcessingMessageInterval(), p.log("_handleComplete for ".concat(this.id)), this.emit("complete", this._file, e), this.removeAllListeners()
+      this.clearProcessingMessageInterval(), _.log("_handleComplete for ".concat(this.id)), this.emit("complete", this._file, e), this.removeAllListeners()
     }), this.id = o().uniqueId("Uploader"), this._url = e, this._method = t, this._raiseEndpointErrors = null !== (r = null == n ? void 0 : n.raiseEndpointErrors) && void 0 !== r && r
   }
 }

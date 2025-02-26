@@ -20,11 +20,11 @@ var r = n(392711),
   u = n(981631),
   d = n(817384);
 let f = /sketchfab/i,
-  p = /^https:\/\/sketchfab\.com/i,
-  _ = /youtube|steam|imgur|vimeo|sketchfab|soundcloud|streamable|twitch|vid\.me|twitter/i,
+  _ = /^https:\/\/sketchfab\.com/i,
+  p = /youtube|steam|imgur|vimeo|sketchfab|soundcloud|streamable|twitch|vid\.me|twitter/i,
   h = 0x15b7e4a5bfb,
-  m = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop$/,
-  g = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
+  g = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop$/,
+  m = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
   E = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/shop");
 
 function v(e) {
@@ -36,9 +36,9 @@ function v(e) {
 }
 
 function b(e, t, n) {
-  if (null != t && f.test(t.name) || p.test(n.url)) return !1;
+  if (null != t && f.test(t.name) || _.test(n.url)) return !1;
   let r = null != n.proxy_url || /^https:/i.test(n.url);
-  return null != e && c.default.extractTimestamp(e) < h && (r = r && null != t && _.test(t.name)), r
+  return null != e && c.default.extractTimestamp(e) < h && (r = r && null != t && p.test(t.name)), r
 }
 
 function y(e) {
@@ -155,7 +155,7 @@ function T(e) {
 }
 
 function N(e) {
-  return e.type === u.hBH.ARTICLE && null != e.url && (g.test(e.url) || m.test(e.url))
+  return e.type === u.hBH.ARTICLE && null != e.url && (m.test(e.url) || g.test(e.url))
 }
 
 function A(e) {

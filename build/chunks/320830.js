@@ -35,11 +35,11 @@ function g(e) {
   return e
 }
 let m = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
-  _ = {
+  f = {
     START: 0,
     END: 1
   },
-  f = {
+  _ = {
     friction: 10,
     tension: 130
   },
@@ -52,18 +52,18 @@ let m = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         clearTimeout(this.timeout), window.removeEventListener("resize", this.handleResizeDebounced)
       }
       componentWillAppear(e) {
-        this.state.shouldAnimate ? this.animateTo(_.END, e) : e()
+        this.state.shouldAnimate ? this.animateTo(f.END, e) : e()
       }
       componentWillEnter(e) {
-        this.state.shouldAnimate ? (clearTimeout(this.timeout), this.timeout = setTimeout(() => this.animateTo(_.END, e), 40)) : e()
+        this.state.shouldAnimate ? (clearTimeout(this.timeout), this.timeout = setTimeout(() => this.animateTo(f.END, e), 40)) : e()
       }
       componentWillLeave(e) {
-        this.state.shouldAnimate ? this.animateTo(_.START, e) : e()
+        this.state.shouldAnimate ? this.animateTo(f.START, e) : e()
       }
       animateTo(e, t) {
         l.Z.spring(this.anim, g({
           toValue: e
-        }, f)).start(t)
+        }, _)).start(t)
       }
       getAnimatedStyle(e) {
         return this.state.shouldAnimate ? {
@@ -100,11 +100,11 @@ let m = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         })
       }
       constructor(...e) {
-        super(...e), p(this, "timeout", void 0), p(this, "anim", new l.Z.Value(_.START)), p(this, "state", {
+        super(...e), p(this, "timeout", void 0), p(this, "anim", new l.Z.Value(f.START)), p(this, "state", {
           shouldAnimate: !s.tq
         }), p(this, "handleResize", () => {
           let e = window.innerWidth > m;
-          !this.state.shouldAnimate && e && this.anim.setValue(_.END), this.setState({
+          !this.state.shouldAnimate && e && this.anim.setValue(f.END), this.setState({
             shouldAnimate: e
           })
         }), p(this, "handleResizeDebounced", a()(this.handleResize, 60))

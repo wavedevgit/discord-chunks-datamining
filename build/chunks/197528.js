@@ -15,8 +15,8 @@ var r = n(200651),
   p = n(659154),
   h = n(581690),
   x = n(902928),
-  v = n(521937),
-  m = n(981631),
+  m = n(521937),
+  v = n(981631),
   b = n(597977);
 let C = n(575703);
 
@@ -24,7 +24,7 @@ function _() {
   let e;
   let t = (0, l.TH)(),
     [n, s] = a.useState(() => {
-      if (t.pathname === m.Z5c.ACTIVATE_HANDOFF) {
+      if (t.pathname === v.Z5c.ACTIVATE_HANDOFF) {
         let {
           user_code: e
         } = o.parse(window.location.search);
@@ -70,7 +70,7 @@ function _() {
       }), j = !1;
       break;
     case "user-code-input":
-      e = (0, r.jsx)(v.v, {
+      e = (0, r.jsx)(m.v, {
         usePrefilledCode: n.usePrefilledCode || !1,
         onUserCodeAccepted: g
       });
@@ -85,7 +85,7 @@ function _() {
       break;
     case "success":
       e = (0, r.jsx)(x.u, {
-        onComplete: () => (0, d.uL)(m.Z5c.ME),
+        onComplete: () => (0, d.uL)(v.Z5c.ME),
         data: n.userCodeData
       });
       break;
@@ -114,5 +114,5 @@ function _() {
 }
 let g = (0, s.e)(_),
   N = function() {
-    return (0, l.TH)().pathname !== m.Z5c.ACTIVATE_HANDOFF ? (0, r.jsx)(g, {}) : (0, r.jsx)(_, {})
+    return (0, l.TH)().pathname !== v.Z5c.ACTIVATE_HANDOFF ? (0, r.jsx)(g, {}) : (0, r.jsx)(_, {})
   }

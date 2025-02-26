@@ -1,4 +1,4 @@
-/** Chunk was on 13287 **/
+/** Chunk was on 42407 **/
 n.d(t, {
   default: () => C
 }), n(47120);
@@ -18,8 +18,8 @@ var o = n(200651),
   p = n(672339),
   m = n(898531),
   I = n(131951),
-  v = n(594174),
-  h = n(626135),
+  h = n(594174),
+  v = n(626135),
   O = n(747545),
   T = n(981631),
   E = n(388032),
@@ -31,11 +31,11 @@ function C(e) {
     videoEnabled: n,
     onEnable: C,
     onClose: N
-  } = e, A = I.Z.getCameraComponent(), L = (0, u.Dt)(), R = (0, m.Z)(), P = b.qF.useSetting(), [y, k] = a.useState((0, f.P)(v.default.getCurrentUser())), x = (0, l.O)(), {
+  } = e, A = I.Z.getCameraComponent(), L = (0, u.Dt)(), R = (0, m.Z)(), P = b.qF.useSetting(), [y, k] = a.useState((0, f.P)(h.default.getCurrentUser())), x = (0, l.O)(), {
     analyticsLocations: w
   } = (0, _.ZP)(s.Z.CAMERA_PREVIEW), D = a.useRef(null);
   a.useEffect(() => {
-    h.default.track(T.rMx.OPEN_MODAL, {
+    v.default.track(T.rMx.OPEN_MODAL, {
       type: "Camera Preview Modal"
     })
   }, []), a.useEffect(() => {
@@ -43,8 +43,8 @@ function C(e) {
     null === (e = D.current) || void 0 === e || e.scrollToTop()
   }, []);
   let B = async () => {
-    await G(), r.Z.setVideoEnabled(!0), null == C || C()
-  }, G = async () => {
+    await W(), r.Z.setVideoEnabled(!0), null == C || C()
+  }, W = async () => {
     try {
       await (0, p.wG)(y, {
         location: function(e) {
@@ -115,7 +115,7 @@ function C(e) {
           children: [(() => {
             let e = n ? E.NW.string(E.t.KQENho) : E.NW.string(E.t.kgIe9f);
             return (0, o.jsx)(i.zxk, {
-              onClick: n ? G : B,
+              onClick: n ? W : B,
               size: i.zxk.Sizes.SMALL,
               autoFocus: !n,
               children: e
@@ -125,7 +125,7 @@ function C(e) {
             type: i.XZJ.Types.INVERTED,
             value: P,
             onChange: () => {
-              b.qF.updateSetting(!P), h.default.track(T.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+              b.qF.updateSetting(!P), v.default.track(T.rMx.UPDATE_USER_SETTINGS_LOCAL, {
                 always_preview_video: !P
               })
             },

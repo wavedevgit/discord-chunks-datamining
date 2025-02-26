@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -49,9 +49,9 @@ function f(e, t) {
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,7 +59,7 @@ function p(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -68,18 +68,18 @@ function _(e, t) {
 }
 let h = 500;
 
-function m(e) {
+function g(e) {
   let {
     children: t,
     "aria-label": n,
     className: o,
     position: c
-  } = e, d = p(e, ["children", "aria-label", "className", "position"]), _ = i.useRef(null), m = null != n ? n : "string" == typeof t && t;
+  } = e, d = _(e, ["children", "aria-label", "className", "position"]), p = i.useRef(null), g = null != n ? n : "string" == typeof t && t;
   return (0, r.jsx)(s.ua7, f(u({}, d), {
     position: null != c ? c : "top",
     delay: h,
     text: t,
-    "aria-label": m,
+    "aria-label": g,
     children: n => {
       let {
         onMouseEnter: i,
@@ -87,12 +87,12 @@ function m(e) {
       } = n;
       return (0, r.jsx)("div", {
         className: a()(o, l.overflow),
-        ref: _,
+        ref: p,
         "aria-hidden": e["aria-hidden"],
         onMouseEnter: () => {
           let {
             current: e
-          } = _;
+          } = p;
           null != e && e.offsetWidth < e.scrollWidth && (null == i || i())
         },
         onMouseLeave: s,

@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(512722),
   i = n.n(r),
@@ -16,7 +16,7 @@ var r = n(512722),
   g = n(954824),
   m = n(981631);
 
-function _(e) {
+function f(e) {
   let t = function(e) {
       var t;
       let n = null === (t = a().os) || void 0 === t ? void 0 : t.family;

@@ -47,24 +47,24 @@ let C = (e, t, n, r) => {
     } = e, {
       parent_title: I,
       provider: w,
-      image_url: T
-    } = n.extra.media, Z = n.extra.artist.name, S = (0, o.e7)([c.default], () => c.default.getUser(n.author_id)), {
-      primaryColor: E,
+      image_url: E
+    } = n.extra.media, T = n.extra.artist.name, Z = (0, o.e7)([c.default], () => c.default.getUser(n.author_id)), {
+      primaryColor: S,
       secondaryColor: A
-    } = (0, g.Z)(T), _ = (0, p.Nq)(n), k = a.useCallback(() => {
-      if (null == t || null == S || !(0, d.Hi)(_, v.y9)) return;
-      let e = C(n, t, S, _);
+    } = (0, g.Z)(E), _ = (0, p.Nq)(n), k = a.useCallback(() => {
+      if (null == t || null == Z || !(0, d.Hi)(_, v.y9)) return;
+      let e = C(n, t, Z, _);
       return (0, h.CR)({
-        user: S,
+        user: Z,
         channel: t,
-        mediaImageSrc: T,
-        artist: Z,
+        mediaImageSrc: E,
+        artist: T,
         description: e,
-        colors: [E, A],
+        colors: [S, A],
         badges: (0, h.UU)(n)
       })
-    }, [T, Z, t, n, E, _, A, S]), R = (0, x.Z)(P.ABu.SPOTIFY);
-    if (null == S || !(0, d.Hi)(_, v.y9)) return null;
+    }, [E, T, t, n, S, _, A, Z]), R = (0, x.Z)(P.ABu.SPOTIFY);
+    if (null == Z || !(0, d.Hi)(_, v.y9)) return null;
     let M = () => {
       let e = O.Hw.ALBUM,
         t = s.Z.isProtocolRegistered() ? O.C7.PLAYER_OPEN(e, n.extra.media.external_parent_id) : O.C7.WEB_OPEN(e, n.extra.media.external_parent_id);
@@ -88,7 +88,7 @@ let C = (e, t, n, r) => {
         }) : null,
         userDescription: b.t.CcVI1d,
         title: I,
-        subtitle: Z,
+        subtitle: T,
         badges: (0, r.jsx)(f.Gk, {
           location: f.Gt.POPOUT,
           children: v.Ho.map((e, t) => (0, r.jsx)(e, {
@@ -99,10 +99,10 @@ let C = (e, t, n, r) => {
         children: (0, r.jsx)(y.WT, {
           onReaction: l,
           onVoiceChannelPreview: m,
-          user: S,
+          user: Z,
           channel: t,
           generateReactionImage: k,
-          reactionImageAltText: N(n, S),
+          reactionImageAltText: N(n, Z),
           entry: n
         })
       })]

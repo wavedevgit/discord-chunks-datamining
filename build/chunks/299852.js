@@ -14,8 +14,8 @@ var r, i = n(200651),
   p = n(598077),
   g = n(896797),
   m = n(981631),
-  _ = n(930441),
-  f = n(388032),
+  f = n(930441),
+  _ = n(388032),
   b = n(455812);
 
 function N(e, t, n) {
@@ -67,25 +67,25 @@ class x extends(r = o.PureComponent) {
     let {
       defaultRoute: n,
       transitionTo: r
-    } = this.props, o = f.NW.formatToPlainString(f.t.YDAohI, {
+    } = this.props, o = _.NW.formatToPlainString(_.t.YDAohI, {
       category: t
     });
     return (0, i.jsxs)(d.ZP, {
       children: [(0, i.jsx)(d.Dx, {
         className: b.marginBottom8,
-        children: f.NW.string(f.t.f6rdLi)
+        children: _.NW.string(_.t.f6rdLi)
       }), (0, i.jsx)(d.DK, {
         children: o
       }), (0, i.jsx)(d.zx, {
         className: b.marginTop20,
         onClick: () => r(n),
-        children: f.NW.string(f.t.fIv16O)
+        children: _.NW.string(_.t.fIv16O)
       }), (0, i.jsx)(d.zx, {
         className: b.marginTop8,
         color: d.zx.Colors.LINK,
         look: d.zx.Looks.LINK,
-        onClick: () => r(m.Z5c.SETTINGS("notifications", _.vG)),
-        children: f.NW.string(f.t.YYTira)
+        onClick: () => r(m.Z5c.SETTINGS("notifications", f.vG)),
+        children: _.NW.string(_.t.YYTira)
       })]
     })
   }
@@ -98,7 +98,7 @@ class x extends(r = o.PureComponent) {
       category: r
     } = this.state;
     if (null != r) {
-      let e = _.Od.find(e => e.category === r);
+      let e = f.Od.find(e => e.category === r);
       if (null != e) return this.renderCategorySuccess(r, e.label())
     }
     return (0, i.jsxs)(d.ZP, {
@@ -108,13 +108,13 @@ class x extends(r = o.PureComponent) {
         className: b.marginBottom20
       }), (0, i.jsx)(d.Dx, {
         className: b.marginBottom8,
-        children: f.NW.string(f.t["6U6OMT"])
+        children: _.NW.string(_.t["6U6OMT"])
       }), (0, i.jsx)(d.DK, {
-        children: f.NW.string(f.t["yaDJ4+"])
+        children: _.NW.string(_.t["yaDJ4+"])
       }), (0, i.jsx)(d.zx, {
         className: b.marginTop40,
         onClick: () => t(e),
-        children: f.NW.string(f.t.fIv16O)
+        children: _.NW.string(_.t.fIv16O)
       })]
     })
   }
@@ -129,13 +129,13 @@ class x extends(r = o.PureComponent) {
         className: b.marginBottom20
       }), (0, i.jsx)(d.Dx, {
         className: b.marginBottom8,
-        children: f.NW.string(f.t.ox9hIS)
+        children: _.NW.string(_.t.ox9hIS)
       }), (0, i.jsx)(d.DK, {
-        children: f.NW.string(f.t["/dcuR0"])
+        children: _.NW.string(_.t["/dcuR0"])
       }), (0, i.jsx)(d.zx, {
         className: b.marginTop40,
         onClick: () => t(e),
-        children: f.NW.string(f.t.fIv16O)
+        children: _.NW.string(_.t.fIv16O)
       })]
     })
   }

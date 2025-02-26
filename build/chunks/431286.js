@@ -1,6 +1,6 @@
 /** Chunk was on 30829 **/
 n.d(t, {
-  i: () => v
+  i: () => y
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -18,7 +18,7 @@ var r = n(200651),
   m = n(921944),
   b = n(642145);
 
-function v() {
+function y() {
   let {
     hasLayers: e
   } = (0, l.cj)([p.Z], () => ({
@@ -28,12 +28,12 @@ function v() {
   } = (0, l.cj)([g.Z], () => ({
     onboardingModalOpenedPrior: g.Z.onboardingModalOpenedPrior
   })), {
-    enabled: v
+    enabled: y
   } = (0, f.W)({
     location: "vc-announcement-modal"
-  }), y = v ? [o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], [O, j] = (0, u.US)(y, void 0, !0), _ = (0, s.s9z)(s.JQI);
+  }), v = y ? [o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], [O, j] = (0, u.US)(v, void 0, !0), _ = (0, s.s9z)(s.JQI);
   i.useEffect(() => {
-    v && !t && O === o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && !e && !_ && (c.Z.dispatch({
+    y && !t && O === o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && !e && !_ && (c.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
     }), (0, a.ZD)(async () => {
       let {
@@ -59,5 +59,5 @@ function v() {
         j(m.L.UNKNOWN), (0, h.U9)(["discover"])
       }
     }))
-  }, [O, v, t, j, e, _])
+  }, [O, y, t, j, e, _])
 }

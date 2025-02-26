@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(306680),
   m = n(594174),
   b = n(768581),
-  v = n(709054),
-  y = n(981631),
+  y = n(709054),
+  v = n(981631),
   O = n(124368),
   j = n(388032),
   _ = n(59996);
@@ -28,10 +28,10 @@ function C(e) {
     channel: t
   } = e, l = (0, a.Wu)([d.Z, g.ZP, f.Z], () => {
     let e = d.Z.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
-    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.Z.can(y.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
+    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.Z.can(v.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
       let n = g.ZP.lastMessageId(e.id),
         r = g.ZP.lastMessageId(t.id);
-      return v.default.compare(n, r)
+      return y.default.compare(n, r)
     }).reverse().value()
   }), c = t.isForumLikeChannel() ? 5 : 3;
   return i.useEffect(() => {

@@ -24,14 +24,14 @@ function f(e) {
     onOpenProfile: c
   } = e, {
     note: f
-  } = (0, a.Z)(t), p = null != f && "" !== f, _ = (0, o.kc)({
+  } = (0, a.Z)(t), _ = null != f && "" !== f, p = (0, o.kc)({
     location: "UserProfileNoteButton"
   });
   return (0, r.jsx)(s.y, {
     action: "PRESS_ADD_NOTE",
-    icon: p ? i.hH0 : i.Wos,
-    tooltipText: d(p, _, f),
-    tooltipClassName: p ? u.tooltip : void 0,
+    icon: _ ? i.hH0 : i.Wos,
+    tooltipText: d(_, p, f),
+    tooltipClassName: _ ? u.tooltip : void 0,
     isHovering: n,
     onClick: () => null == c ? void 0 : c({
       subsection: l.Tb.NOTE

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(411104), n(301563);
 var r = n(570140),
   i = n(846027),
@@ -13,8 +13,8 @@ var r = n(570140),
   u = n(314897),
   d = n(569545),
   f = n(803647),
-  p = n(981631),
-  _ = n(65154);
+  _ = n(981631),
+  p = n(65154);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -24,7 +24,7 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class m {
+class g {
   _onGameDetectionUpdate(e) {
     this.applications = e.map(e => {
       var t, n;
@@ -92,7 +92,7 @@ class m {
               resolution: n.resolution,
               frameRate: n.fps
             },
-            context: _.Yn.STREAM
+            context: p.Yn.STREAM
           })
         } else {
           var r;
@@ -106,7 +106,7 @@ class m {
               resolution: n.resolution,
               frameRate: n.fps
             },
-            context: _.Yn.STREAM
+            context: p.Yn.STREAM
           })
         }
         break;
@@ -174,19 +174,19 @@ class m {
         videoState: t,
         context: n
       } = e;
-      n === _.Yn.STREAM && this._onCapturePaused(t === p.FQ1.PAUSED)
+      n === p.Yn.STREAM && this._onCapturePaused(t === _.FQ1.PAUSED)
     }), r.Z.subscribe("MEDIA_ENGINE_SET_GO_LIVE_SOURCE", e => {
       var t;
       let {
         settings: n
       } = e;
-      (null == n ? void 0 : n.context) === _.Yn.STREAM && (null == n ? void 0 : n.desktopSettings) == null && (null == n ? void 0 : n.cameraSettings) == null && this._onCaptureEnded(), (null == n ? void 0 : null === (t = n.desktopSettings) || void 0 === t ? void 0 : t.sound) != null && (this.director.sound = n.desktopSettings.sound)
+      (null == n ? void 0 : n.context) === p.Yn.STREAM && (null == n ? void 0 : n.desktopSettings) == null && (null == n ? void 0 : n.cameraSettings) == null && this._onCaptureEnded(), (null == n ? void 0 : null === (t = n.desktopSettings) || void 0 === t ? void 0 : t.sound) != null && (this.director.sound = n.desktopSettings.sound)
     })
   }
 }
-let g = {
+let m = {
   instance: null,
   init() {
-    null == this.instance && (this.instance = new m)
+    null == this.instance && (this.instance = new g)
   }
 }

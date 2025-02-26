@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r, i = n(200651),
   o = n(192379),
@@ -35,12 +35,12 @@ let f = {
     friction: 14,
     tension: 200
   },
-  p = {
+  _ = {
     DURATION: "DURATION",
     VOLUME: "VOLUME"
   };
 
-function _(e) {
+function p(e) {
   let t = 0 | e,
     n = t % 60;
   return "".concat((t - n) / 60, ":").concat(String(n).padStart(2, "0"))
@@ -91,7 +91,7 @@ class h extends(r = o.Component) {
       bottom: a,
       height: s
     } = n.getBoundingClientRect();
-    return Math.min(1, Math.max(0, r === p.VOLUME ? (a - t) / s : (e - i) / o))
+    return Math.min(1, Math.max(0, r === _.VOLUME ? (a - t) / s : (e - i) / o))
   }
   render() {
     let {
@@ -105,14 +105,14 @@ class h extends(r = o.Component) {
       animatedProgress: u
     } = this.state, d = o ? u : a;
     return (0, i.jsx)("div", {
-      className: s()(n, t === p.VOLUME ? c.vertical : c.horizontal),
+      className: s()(n, t === _.VOLUME ? c.vertical : c.horizontal),
       children: (0, i.jsx)("div", {
-        className: s()(r, o ? c.mediaBarInteractionDragging : c.mediaBarInteraction, t === p.VOLUME ? c.mediaBarInteractionVolume : null),
+        className: s()(r, o ? c.mediaBarInteractionDragging : c.mediaBarInteraction, t === _.VOLUME ? c.mediaBarInteractionVolume : null),
         onMouseDown: this.handleDragStart,
         onMouseMove: this.handleMouseMove,
         ref: e => this.wrapper = e,
         children: (0, i.jsxs)("div", {
-          className: s()(c.mediaBarWrapper, t === p.VOLUME ? c.mediaBarWrapperVolume : null),
+          className: s()(c.mediaBarWrapper, t === _.VOLUME ? c.mediaBarWrapperVolume : null),
           children: [null != e ? e.map((e, t) => {
             let [n, r] = e;
             return (0, i.jsx)("div", {
@@ -122,7 +122,7 @@ class h extends(r = o.Component) {
                 left: "".concat(100 * n, "%")
               }
             }, t)
-          }) : null, t === p.DURATION ? (0, i.jsx)(l.Z.div, {
+          }) : null, t === _.DURATION ? (0, i.jsx)(l.Z.div, {
             className: c.mediaBarPreview,
             style: {
               width: a.interpolate({
@@ -141,7 +141,7 @@ class h extends(r = o.Component) {
             children: (0, i.jsx)("span", {
               className: c.mediaBarGrabber
             })
-          }), t === p.DURATION ? (0, i.jsx)(l.Z.div, {
+          }), t === _.DURATION ? (0, i.jsx)(l.Z.div, {
             ref: this.setBubbleRef,
             className: c.bubble,
             style: {
@@ -173,7 +173,7 @@ class h extends(r = o.Component) {
           value: r
         }
       } = this;
-      !t && null != e && (e.innerText = _(n._value * r))
+      !t && null != e && (e.innerText = p(n._value * r))
     }), u(this, "handleAnimatedChange", () => {
       let {
         bubble: e,
@@ -185,7 +185,7 @@ class h extends(r = o.Component) {
           value: r
         }
       } = this;
-      t && null != e && (e.innerText = _(n._value * r))
+      t && null != e && (e.innerText = p(n._value * r))
     }), u(this, "handleMouseMove", e => {
       let {
         dragging: t,
@@ -241,7 +241,7 @@ class h extends(r = o.Component) {
     })
   }
 }
-u(h, "Types", p), u(h, "defaultProps", {
+u(h, "Types", _), u(h, "defaultProps", {
   currentWindow: window
 });
-let m = h
+let g = h

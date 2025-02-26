@@ -15,8 +15,8 @@ var r = n(200651),
   p = n(448986),
   g = n(388905),
   m = n(198993),
-  _ = n(710845),
-  f = n(314897),
+  f = n(710845),
+  _ = n(314897),
   b = n(585483),
   N = n(358085),
   x = n(172517),
@@ -28,7 +28,7 @@ var r = n(200651),
   C = n(869938),
   S = n(455812);
 let y = n(515695),
-  T = new _.Z("LoginQRSocket");
+  T = new f.Z("LoginQRSocket");
 
 function A(e) {
   let {
@@ -158,7 +158,7 @@ function R(e) {
   let {
     authTokenCallback: t,
     conditionalMediationAbortController: n
-  } = e, o = (0, l.e7)([f.default], () => f.default.getIsPasswordlessActive()), {
+  } = e, o = (0, l.e7)([_.default], () => _.default.getIsPasswordlessActive()), {
     state: u,
     rsaKeyPair: d,
     cancel: g,
@@ -170,7 +170,7 @@ function R(e) {
       s({
         step: 0
       }), d ? n(e => e + 1) : (T.info("document is not visible, will defer reconnection when document becomes visible."), o(!0))
-    }), _ = i.useCallback(() => {
+    }), f = i.useCallback(() => {
       T.error("Could not complete QR code login, trying to restart with a new QR code."), s({
         step: 0
       }), g.pending || g.fail(m)
@@ -194,10 +194,10 @@ function R(e) {
         if (null != a) return a;
         throw Error("No key pair set")
       }
-      let f = () => {
+      let _ = () => {
         h ? (h = !1, i.send(JSON.stringify({
           op: "heartbeat"
-        }))) : (o("heartbeat timeout, reconnecting."), i.close(), _())
+        }))) : (o("heartbeat timeout, reconnecting."), i.close(), f())
       };
       return i.onmessage = async t => {
         let {
@@ -225,7 +225,7 @@ function R(e) {
           }
           case "pending_login": {
             let e = r.ticket;
-            null == e && _(), s({
+            null == e && f(), s({
               step: 4,
               ticket: e
             });
@@ -264,7 +264,7 @@ function R(e) {
             o("got hello, auth timeout=".concat(r.timeout_ms, "ms"));
             let e = r.heartbeat_interval;
             d = setTimeout(() => {
-              d = null, f(), c = setInterval(f, e)
+              d = null, _(), c = setInterval(_, e)
             }, Math.floor(e * Math.random()));
             return
           }
@@ -279,19 +279,19 @@ function R(e) {
           encoded_public_key: l
         })), u(a)
       }, i.onclose = e => {
-        o("disconnected, code: ".concat(e.code, " ").concat(e.reason)), _()
+        o("disconnected, code: ".concat(e.code, " ").concat(e.reason)), f()
       }, i.onerror = e => {
-        o("disconnected, error: ".concat(JSON.stringify(e))), _()
+        o("disconnected, error: ".concat(JSON.stringify(e))), f()
       }, () => {
         o("cleaning up"), i.onopen = () => null, i.onmessage = () => null, i.onclose = () => null, i.onerror = () => null, i.close(1e3), g.cancel(), null != d && clearTimeout(d), null != c && clearInterval(c)
       }
-    }, [m, e, t, g, _]), {
+    }, [m, e, t, g, f]), {
       state: l,
       rsaKeyPair: c,
       cancel: m,
-      handleFailure: _
+      handleFailure: f
     }
-  }(t), _ = function(e) {
+  }(t), f = function(e) {
     switch (e) {
       case 0:
       case 1:
@@ -327,7 +327,7 @@ function R(e) {
     }), (0, r.jsx)(c.qBt, {
       fillParent: !0,
       className: C.qrLogin,
-      step: _,
+      step: f,
       steps: [0, 1],
       children: (0, r.jsx)("div", {
         className: C.qrLoginInner,

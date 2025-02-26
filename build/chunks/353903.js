@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  G0: () => m,
-  u$: () => g
+  G0: () => g,
+  u$: () => m
 }), n(47120);
 var r, i = n(200651),
   o = n(192379),
@@ -21,8 +21,8 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = 12,
-  p = [c.Z.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, c.Z.unsafe_rawColors.PREMIUM_TIER_1_BLUE.css, "#929AFA"];
-class _ extends o.PureComponent {
+  _ = [c.Z.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, c.Z.unsafe_rawColors.PREMIUM_TIER_1_BLUE.css, "#929AFA"];
+class p extends o.PureComponent {
   render() {
     let {
       props: {
@@ -42,7 +42,7 @@ class _ extends o.PureComponent {
   }
   constructor(...e) {
     super(...e), d(this, "state", {
-      backgroundColor: s().sample(p)
+      backgroundColor: s().sample(_)
     })
   }
 }
@@ -76,9 +76,9 @@ class h extends(r = o.Component) {
     return (0, i.jsxs)(l.Z.div, {
       className: u.column,
       style: this.getAnimatedStyle(),
-      children: [e.map((e, t) => (0, i.jsx)(_, {
+      children: [e.map((e, t) => (0, i.jsx)(p, {
         height: e
-      }, t)), e.map((e, t) => (0, i.jsx)(_, {
+      }, t)), e.map((e, t) => (0, i.jsx)(p, {
         height: e
       }, "alt".concat(t)))]
     })
@@ -111,7 +111,7 @@ class h extends(r = o.Component) {
 d(h, "defaultProps", {
   direction: -1
 });
-let m = e => {
+let g = e => {
   let {
     columns: t
   } = e;
@@ -125,7 +125,7 @@ let m = e => {
     }, t))
   })
 };
-class g extends o.PureComponent {
+class m extends o.PureComponent {
   render() {
     let {
       columns: e,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C: () => _
+  C: () => p
 });
 var r = n(200651),
   i = n(120356),
@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(473608),
   d = n(97494),
   f = n(717711);
-let p = e => {
+let _ = e => {
     let {
       sku: t
     } = e, n = (0, s.e7)([c.Z], () => c.Z.getProduct(t.id));
@@ -28,7 +28,7 @@ let p = e => {
       })]
     })
   },
-  _ = e => {
+  p = e => {
     let {
       sku: t,
       value: n,
@@ -38,7 +38,7 @@ let p = e => {
       className: o()(f.row, i),
       children: [(0, r.jsx)("div", {
         className: f.rowLabel,
-        children: (0, r.jsx)(p, {
+        children: (0, r.jsx)(_, {
           sku: t
         })
       }), (0, r.jsx)("div", {

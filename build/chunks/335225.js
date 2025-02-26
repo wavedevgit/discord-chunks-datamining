@@ -14,10 +14,10 @@ var r = n(566885),
       u = 4 === e,
       d = 6 === e,
       f = 7 === e,
-      p = 5 === e || d;
-    return function(_, h, m, g) {
-      for (var E, v, b = a(_), y = o(b), O = r(h, m), S = s(y), I = 0, T = g || l, N = t ? T(_, S) : n || f ? T(_, 0) : void 0; S > I; I++)
-        if ((p || I in y) && (v = O(E = y[I], I, b), e)) {
+      _ = 5 === e || d;
+    return function(p, h, g, m) {
+      for (var E, v, b = a(p), y = o(b), O = r(h, g), S = s(y), I = 0, T = m || l, N = t ? T(p, S) : n || f ? T(p, 0) : void 0; S > I; I++)
+        if ((_ || I in y) && (v = O(E = y[I], I, b), e)) {
           if (t) N[I] = v;
           else if (v) switch (e) {
             case 3:

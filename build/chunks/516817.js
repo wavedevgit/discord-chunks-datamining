@@ -19,8 +19,8 @@ function u(e) {
     selected: i,
     reverse: u,
     content: d
-  } = e, f = (0, a.D)("Nameplate"), p = !!(n || i), _ = (0, s.BY)(null == t ? void 0 : t.src, p), h = (0, l.p)(t, n, i, d);
-  return null != t && f && null != _ ? (0, r.jsx)("div", {
+  } = e, f = (0, a.D)("Nameplate"), _ = !!(n || i), p = (0, s.BY)(null == t ? void 0 : t.src, _), h = (0, l.p)(t, n, i, d);
+  return null != t && f && null != p ? (0, r.jsx)("div", {
     className: o()(c.container),
     style: {
       background: h.background
@@ -31,7 +31,7 @@ function u(e) {
         [c.selected]: i,
         [c.reverse]: u
       }),
-      src: _,
+      src: p,
       alt: t.imgAlt,
       height: "100%",
       width: "auto",

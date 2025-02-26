@@ -3,10 +3,10 @@
 n.d(t, {
   Ii: () => v,
   LX: () => h,
-  WJ: () => p,
+  WJ: () => _,
   aH: () => E,
-  mf: () => m,
-  nE: () => _,
+  mf: () => g,
+  nE: () => p,
   nr: () => b
 }), n(266796), n(47120);
 var r = n(544891),
@@ -39,14 +39,14 @@ function f(e) {
   }
   return e
 }
-async function p(e) {
+async function _(e) {
   let t = await r.tn.get({
     url: u.ANM.GUILD_CLAN_DISCOVERY_INFO(e),
     rejectWithError: !1
   });
   return (0, c.Gh)(t.body)
 }
-async function _(e, t, n) {
+async function p(e, t, n) {
   try {
     null != e && !0 === t && (0, l.hx)({
       guildId: e,
@@ -76,14 +76,14 @@ function h() {
   })
 }
 
-function m(e, t) {
+function g(e, t) {
   i.Z.dispatch({
     type: "CLAN_SETTINGS_UPDATE",
     guildId: e,
     updates: t
   })
 }
-let g = e => {
+let m = e => {
   var t, n, r, i, o, a;
   return {
     tag: e.tag,
@@ -116,7 +116,7 @@ async function E(e) {
   i.Z.dispatch({
     type: "CLAN_SETTINGS_FETCH_SUCCESS",
     guildId: e,
-    settings: g(t.body)
+    settings: m(t.body)
   })
 }
 async function v(e, t) {

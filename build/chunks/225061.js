@@ -62,12 +62,12 @@ function t(e) {
       className: "literal",
       begin: /\b(true|false|nil)\b/
     },
-    p = {
+    _ = {
       begin: "\\[|(#::?" + n + ")?\\{",
       end: "[\\]\\}]",
       relevance: 0
     },
-    _ = {
+    p = {
       className: "symbol",
       begin: "[:]{1,2}" + n
     },
@@ -75,18 +75,18 @@ function t(e) {
       begin: "\\(",
       end: "\\)"
     },
-    m = {
+    g = {
       endsWithParent: !0,
       relevance: 0
     },
-    g = {
+    m = {
       keywords: i,
       className: "name",
       begin: n,
       relevance: 0,
-      starts: m
+      starts: g
     },
-    E = [u, h, s, l, c, d, _, p, a, f, o],
+    E = [u, h, s, l, c, d, p, _, a, f, o],
     v = {
       beginKeywords: r,
       keywords: {
@@ -102,11 +102,11 @@ function t(e) {
         endsParent: !0
       }].concat(E)
     };
-  return h.contains = [v, g, m], m.contains = E, p.contains = E, {
+  return h.contains = [v, m, g], g.contains = E, _.contains = E, {
     name: "Clojure",
     aliases: ["clj", "edn"],
     illegal: /\S/,
-    contains: [u, h, s, l, c, d, _, p, a, f]
+    contains: [u, h, s, l, c, d, p, _, a, f]
   }
 }
 e.exports = t

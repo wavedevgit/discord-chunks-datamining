@@ -10,17 +10,17 @@ var r = n(926515),
   u = n(644659).get,
   d = n(973326),
   f = n(440196),
-  p = l("native-string-replace", String.prototype.replace),
-  _ = RegExp.prototype.exec,
-  h = _,
-  m = i("".charAt),
-  g = i("".indexOf),
+  _ = l("native-string-replace", String.prototype.replace),
+  p = RegExp.prototype.exec,
+  h = p,
+  g = i("".charAt),
+  m = i("".indexOf),
   E = i("".replace),
   v = i("".slice),
   b = function() {
     var e = /a/,
       t = /b*/g;
-    return r(_, e, "a"), r(_, t, "a"), 0 !== e.lastIndex || 0 !== t.lastIndex
+    return r(p, e, "a"), r(p, t, "a"), 0 !== e.lastIndex || 0 !== t.lastIndex
   }(),
   y = s.BROKEN_CARET,
   O = void 0 !== /()??/.exec("")[1];
@@ -36,7 +36,7 @@ var r = n(926515),
     P = S.source,
     D = 0,
     w = T;
-  if (C && (-1 === g(R = E(R, "y", ""), "g") && (R += "g"), w = v(T, S.lastIndex), S.lastIndex > 0 && (!S.multiline || S.multiline && "\n" !== m(T, S.lastIndex - 1)) && (P = "(?: " + P + ")", w = " " + w, D++), n = RegExp("^(?:" + P + ")", R)), O && (n = RegExp("^" + P + "$(?!\\s)", R)), b && (i = S.lastIndex), s = r(_, C ? n : S, w), C ? s ? (s.input = v(s.input, D), s[0] = v(s[0], D), s.index = S.lastIndex, S.lastIndex += s[0].length) : S.lastIndex = 0 : b && s && (S.lastIndex = S.global ? s.index + s[0].length : i), O && s && s.length > 1 && r(p, s[0], n, function() {
+  if (C && (-1 === m(R = E(R, "y", ""), "g") && (R += "g"), w = v(T, S.lastIndex), S.lastIndex > 0 && (!S.multiline || S.multiline && "\n" !== g(T, S.lastIndex - 1)) && (P = "(?: " + P + ")", w = " " + w, D++), n = RegExp("^(?:" + P + ")", R)), O && (n = RegExp("^" + P + "$(?!\\s)", R)), b && (i = S.lastIndex), s = r(p, C ? n : S, w), C ? s ? (s.input = v(s.input, D), s[0] = v(s[0], D), s.index = S.lastIndex, S.lastIndex += s[0].length) : S.lastIndex = 0 : b && s && (S.lastIndex = S.global ? s.index + s[0].length : i), O && s && s.length > 1 && r(_, s[0], n, function() {
       for (l = 1; l < arguments.length - 2; l++) void 0 === arguments[l] && (s[l] = void 0)
     }), s && A)
     for (l = 0, s.groups = d = c(null); l < A.length; l++) d[(f = A[l])[0]] = s[f[1]];

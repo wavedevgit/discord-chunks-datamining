@@ -20,11 +20,11 @@ var r = n(200651),
   u = n(143450),
   d = n(186325),
   f = n(693789),
-  p = n(507274),
-  _ = n(84735),
+  _ = n(507274),
+  p = n(84735),
   h = n(261833),
-  m = n(742746),
-  g = n(147479),
+  g = n(742746),
+  m = n(147479),
   E = n(481060),
   v = n(600164),
   b = n(602091),
@@ -107,8 +107,8 @@ function L(e) {
       children: o,
       size: f = "small",
       role: h = "dialog",
-      className: m,
-      fullscreenOnMobile: g = !0,
+      className: g,
+      fullscreenOnMobile: m = !0,
       hideShadow: E = !1,
       onAnimationEnd: v = y.dG,
       returnRef: O,
@@ -140,7 +140,7 @@ function L(e) {
     }), [j, M]);
   return (0, r.jsx)(b.zM.Provider, {
     value: U,
-    children: (0, r.jsx)(p.V, A(T({
+    children: (0, r.jsx)(_.V, A(T({
       className: S.focusLock,
       role: h,
       returnRef: O,
@@ -148,13 +148,13 @@ function L(e) {
       "aria-labelledby": x ? void 0 : U.headerId
     }, N), {
       children: (0, r.jsx)(s.animated.div, {
-        className: a()(m, S.root, D[f], {
-          [S.fullscreenOnMobile]: g,
+        className: a()(g, S.root, D[f], {
+          [S.fullscreenOnMobile]: m,
           [S.rootWithShadow]: !E
         }),
         ref: L,
         style: w,
-        children: (0, r.jsx)(_.J, {
+        children: (0, r.jsx)(p.J, {
           containerRef: L,
           children: o
         })
@@ -187,11 +187,11 @@ function x(e) {
 function M(e) {
   switch (null != e ? e : "thin") {
     case "auto":
-      return g.yW;
+      return m.yW;
     case "none":
-      return g.xV;
+      return m.xV;
     default:
-      return g.h2
+      return m.h2
   }
 }
 
@@ -257,7 +257,7 @@ function G(e) {
     className: t,
     scrollerRef: n
   } = e, i = C(e, ["className", "scrollerRef"]);
-  return (0, r.jsx)(m.Tv, T({
+  return (0, r.jsx)(g.Tv, T({
     className: t,
     ref: n
   }, i))

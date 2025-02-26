@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(95152),
   d = n(476326),
   f = n(543651),
-  p = n(377171),
-  _ = n(95398),
+  _ = n(377171),
+  p = n(95398),
   h = n(70097),
-  m = n(592125),
-  g = n(956664),
+  g = n(592125),
+  m = n(956664),
   E = n(709054),
   v = n(273031),
   b = n(859235),
@@ -72,15 +72,15 @@ function C(e) {
     renderContent: o,
     size: a
   } = e, [s, l] = i.useState(!1);
-  return (0, r.jsx)(_.a.Provider, {
+  return (0, r.jsx)(p.a.Provider, {
     value: !n,
-    children: (0, r.jsx)(_.Z, {
+    children: (0, r.jsx)(p.Z, {
       containerStyles: a === b.q.CLIP ? {
         borderBottomLeftRadius: 0,
         borderBottomRightRadius: 0,
         boxShadow: "none"
       } : void 0,
-      type: _.Z.Types.ATTACHMENT,
+      type: p.Z.Types.ATTACHMENT,
       onReveal: () => l(!0),
       className: O.spoilerContainer,
       children: e => (0, r.jsxs)("div", {
@@ -107,10 +107,10 @@ function R(e) {
     spoiler: o,
     size: s = b.q.MEDIUM,
     onMouseEnter: c
-  } = e, [u, d] = i.useState(), [f, p] = i.useState({
+  } = e, [u, d] = i.useState(), [f, _] = i.useState({
     width: 0,
     height: 0
-  }), _ = s === b.q.SMALL;
+  }), p = s === b.q.SMALL;
   i.useEffect(() => {
     if (null == t || !1 === A.includes(t.type)) return;
     let e = URL.createObjectURL(t);
@@ -120,13 +120,13 @@ function R(e) {
       let {
         width: e,
         height: t
-      } = (0, g.zp)(n.width, n.height);
-      p({
+      } = (0, m.zp)(n.width, n.height);
+      _({
         width: e,
         height: t
       })
     }, n.src = e, () => {
-      d(void 0), p({
+      d(void 0), _({
         width: 0,
         height: 0
       }), URL.revokeObjectURL(e)
@@ -138,14 +138,14 @@ function R(e) {
         src: u,
         className: a()(O.media, {
           [O.spoiler]: e,
-          [O.imageSmall]: _
+          [O.imageSmall]: p
         }),
         "aria-hidden": !0,
         alt: null != n ? n : "",
         style: t ? f : {}
       })
-    }, [u, _, n, f]),
-    m = i.useCallback(() => {
+    }, [u, p, n, f]),
+    g = i.useCallback(() => {
       null != u && (0, l.h7j)(e => (0, r.jsx)(l.Y0X, N(I({
         className: O.__invalid_modal
       }, e), {
@@ -157,10 +157,10 @@ function R(e) {
   return (0, r.jsx)("div", {
     onMouseEnter: c,
     className: a()(O.mediaContainer, {
-      [O.imageSmall]: _
+      [O.imageSmall]: p
     }),
     children: (0, r.jsx)(l.P3F, {
-      onClick: m,
+      onClick: g,
       className: O.clickableMedia,
       children: (0, r.jsx)(C, {
         size: s,
@@ -251,14 +251,14 @@ function w(e) {
     draftType: n,
     upload: o,
     keyboardModeEnabled: d,
-    label: _,
+    label: p,
     size: h = b.q.MEDIUM,
-    canEdit: g = !0,
+    canEdit: m = !0,
     hideFileName: S = !1,
     clip: T
-  } = e, A = null != T, C = (h = A ? b.q.CLIP : h) === b.q.SMALL, R = (0, s.e7)([m.Z], () => {
+  } = e, A = null != T, C = (h = A ? b.q.CLIP : h) === b.q.SMALL, R = (0, s.e7)([g.Z], () => {
     var e;
-    return null === (e = m.Z.getChannel(t)) || void 0 === e ? void 0 : e.guild_id
+    return null === (e = g.Z.getChannel(t)) || void 0 === e ? void 0 : e.guild_id
   }), P = e => {
     e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, N(I({}, e), {
       draftType: n,
@@ -280,7 +280,7 @@ function w(e) {
   };
   return (0, r.jsxs)(b.Z, {
     actions: (0, r.jsxs)(i.Fragment, {
-      children: [g ? (0, r.jsx)(v.Z, {
+      children: [m ? (0, r.jsx)(v.Z, {
         className: a()({
           [O.action]: C
         }),
@@ -301,7 +301,7 @@ function w(e) {
             [O.actionBarIcon]: C
           })
         })
-      }) : null, g && !A ? (0, r.jsx)(v.Z, {
+      }) : null, m && !A ? (0, r.jsx)(v.Z, {
         className: a()({
           [O.action]: C
         }),
@@ -347,7 +347,7 @@ function w(e) {
       children: (0, r.jsx)(l.Text, {
         className: O.filename,
         variant: "text-sm/normal",
-        children: null != _ ? _ : o.filename
+        children: null != p ? p : o.filename
       })
     }), A && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(f.Z, {
@@ -358,7 +358,7 @@ function w(e) {
         title: T.name,
         guildId: R
       }), (0, r.jsx)(l.IGR, {
-        color: p.Z.BG_BRAND,
+        color: _.Z.BG_BRAND,
         className: O.clipsBadge,
         text: y.NW.string(y.t.oA4afH)
       })]

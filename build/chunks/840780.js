@@ -1,6 +1,6 @@
 /** Chunk was on 30829 **/
 n.d(t, {
-  Z: () => ev
+  Z: () => ey
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(438139),
   m = n(730749),
   b = n(607070),
-  v = n(636449),
-  y = n(214629),
+  y = n(636449),
+  v = n(214629),
   O = n(566620),
   j = n(317381),
   _ = n(736409),
@@ -27,8 +27,8 @@ var r = n(200651),
   P = n(933557),
   N = n(194082),
   S = n(550532),
-  I = n(436774),
-  Z = n(605236),
+  Z = n(436774),
+  I = n(605236),
   w = n(243778),
   E = n(594190),
   T = n(925329),
@@ -172,7 +172,7 @@ class eb extends i.PureComponent {
           className: ep.perksDemoContainer,
           children: [(0, r.jsx)(d.SrA, {
             size: "xxs",
-            color: I.JX.PREMIUM_TIER_2
+            color: Z.JX.PREMIUM_TIER_2
           }), (0, r.jsx)(U.Z, {
             className: ep.perksDemoText,
             variant: "text-xxs/semibold",
@@ -207,7 +207,7 @@ class eb extends i.PureComponent {
         children: f
       })
     });
-    t = (0, v.R)() ? (0, r.jsx)(el.Z, {
+    t = (0, y.R)() ? (0, r.jsx)(el.Z, {
       children: n.name
     }) : (0, r.jsx)(G.Z, {
       href: e,
@@ -229,7 +229,7 @@ class eb extends i.PureComponent {
         })]
       })]
     });
-    return (0, v.R)() ? (0, r.jsx)(d.yRy, {
+    return (0, y.R)() ? (0, r.jsx)(d.yRy, {
       position: "top",
       align: "center",
       spacing: 16,
@@ -297,14 +297,14 @@ class eb extends i.PureComponent {
         channel: t,
         embeddedActivity: n
       } = this.props;
-      s()(null != t, "Channel is null during navigation click"), s()(null != n, "Activity null during navigation click"), f.Z.channelListScrollTo(null !== (e = t.guild_id) && void 0 !== e ? e : es.ME, t.id), !(0, v.R)() && ((0, V.vd)(t.type) && h.Z.selectParticipant(t.id, (0, x.gN)({
+      s()(null != t, "Channel is null during navigation click"), s()(null != n, "Activity null during navigation click"), f.Z.channelListScrollTo(null !== (e = t.guild_id) && void 0 !== e ? e : es.ME, t.id), !(0, y.R)() && ((0, V.vd)(t.type) && h.Z.selectParticipant(t.id, (0, x.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
       })), (0, V.Qm)(t.type) && (0, O.tg)(ec.Ez.PANEL))
     })
   }
 }
-let ev = (0, m.Z)(function(e) {
+let ey = (0, m.Z)(function(e) {
   var t, {
       guildId: n
     } = e,
@@ -340,9 +340,9 @@ let ev = (0, m.Z)(function(e) {
     }),
     x = (0, c.e7)([Y.Z, K.Z, q.ZP], () => null != s ? A.JL(s, Y.Z, K.Z, !1) : !!_ || null != n && A.h_(q.ZP.getChannels(n), Y.Z, K.Z).length > 0),
     [N] = (0, C.Z)([null !== (t = null != g && null != g.id ? g.id : null != a && null != a.id ? a.id : null != O ? O.applicationId : void 0) && void 0 !== t ? t : ""]),
-    I = (0, c.e7)([S.Z], () => S.Z.getFakeGameData()),
+    Z = (0, c.e7)([S.Z], () => S.Z.getFakeGameData()),
     T = (0, c.e7)([j.ZP], () => j.ZP.getCurrentEmbeddedActivity()),
-    L = (0, y.Z0)() && null != T && (0, v.R)(),
+    L = (0, v.Z0)() && null != T && (0, y.R)(),
     k = (0, c.e7)([Q.Z], () => (0, R.Z)(Q.Z) && (0, er.isWindows)()),
     G = (0, c.e7)([J.Z], () => null != o ? J.Z.findActivity(o, e => e.type === es.IIU.PLAYING) : null),
     U = null != f && f.ownerId === o && f.state !== es.jm8.ENDED,
@@ -354,9 +354,9 @@ let ev = (0, m.Z)(function(e) {
       markActivityPopoutQuickRefocusNUXAsDismissed: ea
     } = function() {
       let e = [],
-        t = (0, Z.wE)(u.z.ACTIVITY_POPOUT_NUX_MODAL),
+        t = (0, I.wE)(u.z.ACTIVITY_POPOUT_NUX_MODAL),
         n = (0, c.e7)([en.Z], () => en.Z.isFocused());
-      (0, v.R)() && t && n && e.push(u.z.ACTIVITY_POPOUT_NUX_QUICK_REFOCUS_TOOLTIP);
+      (0, y.R)() && t && n && e.push(u.z.ACTIVITY_POPOUT_NUX_QUICK_REFOCUS_TOOLTIP);
       let [r, i] = (0, w.US)(e);
       return {
         showsActivityPopoutQuickRefocusNUX: r === u.z.ACTIVITY_POPOUT_NUX_QUICK_REFOCUS_TOOLTIP,
@@ -365,11 +365,11 @@ let ev = (0, m.Z)(function(e) {
     }();
   return (0, r.jsx)(eb, eg(ef({}, l), {
     guildId: n,
-    canGoLive: k || L || void 0 !== I,
+    canGoLive: k || L || void 0 !== Z,
     activity: G,
     embeddedActivity: O,
     userId: o,
-    runningGame: null != I ? I : a,
+    runningGame: null != Z ? Z : a,
     application: N,
     useReducedMotion: m,
     isStreaming: U,

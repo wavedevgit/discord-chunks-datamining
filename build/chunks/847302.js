@@ -3,7 +3,7 @@
 n.d(t, {
   Gg: () => y,
   KH: () => E,
-  ZP: () => g
+  ZP: () => m
 }), n(47120), n(978209), n(301563), n(653041);
 var r = n(512722),
   i = n.n(r),
@@ -15,18 +15,18 @@ var r = n(512722),
   u = n(925994),
   d = n(436660),
   f = n(887490);
-let p = /(@[^@#]+(?:#0|#\d{4}))|(@[^\s\t@#:]+)(?=[\s\t@:])|(:[a-zA-Z0-9_~]+:)|(#"(?:\ |\\\\|\\"|(?!")\w)+")|(#[^\s\t@#:]+(?=[\s\t@#:]))/g,
-  _ = new Set(["emoji", "customEmoji", "textMention", "userMention", "roleMention", "channelMention", "staticRouteLink", "soundboard", "timestamp"]),
+let _ = /(@[^@#]+(?:#0|#\d{4}))|(@[^\s\t@#:]+)(?=[\s\t@:])|(:[a-zA-Z0-9_~]+:)|(#"(?:\ |\\\\|\\"|(?!")\w)+")|(#[^\s\t@#:]+(?=[\s\t@#:]))/g,
+  p = new Set(["emoji", "customEmoji", "textMention", "userMention", "roleMention", "channelMention", "staticRouteLink", "soundboard", "timestamp"]),
   h = new Set(["line", "blockQuote"]),
-  m = new Set(["applicationCommandOption"]);
+  g = new Set(["applicationCommandOption"]);
 
-function g(e, t, n) {
+function m(e, t, n) {
   let {
     isInline: r,
     isVoid: i,
     onChange: o
   } = e;
-  e.isVoid = e => !!_.has(e.type) || i(e), e.isInline = e => !!_.has(e.type) || r(e);
+  e.isVoid = e => !!p.has(e.type) || i(e), e.isInline = e => !!p.has(e.type) || r(e);
   let a = null,
     s = !0;
   return e.onChange = () => {
@@ -45,7 +45,7 @@ function E(e, t, n) {
       let [o, a] = i;
       for (let i = o.children.length - 1; i >= 0; i--) {
         let s = o.children[i];
-        if (m.has(s.type)) {
+        if (g.has(s.type)) {
           let o = [s, f.C0.child(a, i)];
           r ? b(e, o, !0, null) : v(e, o, t, n)
         }
@@ -207,11 +207,11 @@ function y(e, t, n, r) {
         continue
     }
     if (!T(n, t[0], l)) continue;
-    let p = (0, c.t)(e, i, r.serializedChildren, u.start),
-      _ = (0, c.t)(e, i, r.serializedChildren, u.start + u.text.length);
+    let _ = (0, c.t)(e, i, r.serializedChildren, u.start),
+      p = (0, c.t)(e, i, r.serializedChildren, u.start + u.text.length);
     d.Q.textToVoid(e, l, {
-      anchor: p,
-      focus: _
+      anchor: _,
+      focus: p
     }), o = !0
   }
   return o
@@ -223,15 +223,15 @@ function O(e, t, n, r, i) {
     let u;
     let d = o.children[c];
     if (!f.LC.isText(d)) continue;
-    let _ = f.C0.child(a, c),
+    let p = f.C0.child(a, c),
       h = [];
-    for (p.lastIndex = 0; null != (u = p.exec(d.text));) {
+    for (_.lastIndex = 0; null != (u = _.exec(d.text));) {
       if (0 !== u.index && null == d.text.charAt(u.index - 1).match(/(\t|\s)/)) {
-        p.lastIndex = u.index + 1;
+        _.lastIndex = u.index + 1;
         continue
       }
       if (I(e, a, {
-          path: _,
+          path: p,
           offset: u.index
         }, i)) continue;
       let o = (0, s.i)(u[0], n, r);
@@ -239,7 +239,7 @@ function O(e, t, n, r, i) {
         index: u.index,
         length: u[0].length,
         node: o
-      }) : p.lastIndex = u.index + 1
+      }) : _.lastIndex = u.index + 1
     }
     for (let t of h.reverse()) S(e, [d, f.C0.child(a, c)], t.index, t.length, t.node), l = !0
   }

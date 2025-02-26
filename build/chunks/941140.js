@@ -67,7 +67,7 @@ let d = {
         getQuery: e => e,
         key: "required-options"
       }) : null,
-      p = d.length > 0 ? (0, a.HI)({
+      _ = d.length > 0 ? (0, a.HI)({
         query: i,
         selectedIndex: n,
         autocompletes: d,
@@ -86,7 +86,7 @@ let d = {
         indexOffset: u.length
       }) : null;
     return (0, r.jsxs)(r.Fragment, {
-      children: [f, p]
+      children: [f, _]
     })
   },
   onSelect(e) {

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  getOrParseBioAST: () => g,
+  getOrParseBioAST: () => m,
   parseBioReact: () => h,
   parseBioReactWithCachedAST: () => E,
   parseBioReactWithoutScrolling: () => b
@@ -17,27 +17,27 @@ var r = n(392711),
   d = n(428595);
 n(454585);
 var f = n(364458);
-let p = (0, f.Z)([d.Z.PROFILE_BIO_RULES, (0, u.Z)({
+let _ = (0, f.Z)([d.Z.PROFILE_BIO_RULES, (0, u.Z)({
     enableBuildOverrides: !1
   })]),
-  _ = new(a())({
+  p = new(a())({
     max: 2e3
   }),
-  h = c.w4(p),
-  m = void 0;
+  h = c.w4(_),
+  g = void 0;
 
-function g(e) {
-  let t = _.get(e);
-  return null != t || (t = m(e, !0), _.set(e, t)), t
+function m(e) {
+  let t = p.get(e);
+  return null != t || (t = g(e, !0), p.set(e, t)), t
 }
 
 function E(e) {
   if (0 === e.trim().length) return null;
-  let t = g(e);
-  return l().reactFor(l().ruleOutput(p, "react"))(t)
+  let t = m(e);
+  return l().reactFor(l().ruleOutput(_, "react"))(t)
 }
 let v = ["link", "url", "autolink", "customEmoji", "emoji", "commandMention"],
-  b = c.w4((0, f.Z)([i().omit(p, v), {
+  b = c.w4((0, f.Z)([i().omit(_, v), {
     emoji: {
       react: () => null
     }

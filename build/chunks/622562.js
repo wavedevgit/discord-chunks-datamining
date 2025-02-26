@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function p(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -52,9 +52,9 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = (e, t) => void 0 !== t && t > e ? t : e;
+let g = (e, t) => void 0 !== t && t > e ? t : e;
 
-function g(e) {
+function m(e) {
   let {
     backgroundElementRef: t,
     getOffsetsRelativeToElement: n,
@@ -62,11 +62,11 @@ function g(e) {
     onGetBoundingRect: o = () => {},
     debounceTime: a = 60,
     minimumOffsets: d
-  } = e, [f, _] = i.useState(null), {
+  } = e, [f, p] = i.useState(null), {
     hasLayers: h
   } = (0, l.cj)([u.Z], () => ({
     hasLayers: u.Z.hasLayers()
-  })), g = i.useCallback(() => {
+  })), m = i.useCallback(() => {
     let e = t.current;
     return null === e ? {
       height: 0,
@@ -78,12 +78,12 @@ function g(e) {
   }, [t]), E = i.useCallback(() => {
     let e = t.current;
     if (null === e) return r;
-    let i = p({}, n(g())),
+    let i = _({}, n(m())),
       a = e.getBoundingClientRect();
-    return void 0 !== i.top && (i.top = m(a.top + i.top, null == d ? void 0 : d.top)), void 0 !== i.left && (i.left = m(a.left + i.left, null == d ? void 0 : d.left)), void 0 !== i.right && (i.right = m(window.innerWidth - a.right + i.right, null == d ? void 0 : d.right)), void 0 !== i.bottom && (i.bottom = m(window.innerHeight - a.bottom + i.bottom, null == d ? void 0 : d.bottom)), o(a), i
-  }, [n, r, g, d, t, o]), v = i.useCallback(() => {
+    return void 0 !== i.top && (i.top = g(a.top + i.top, null == d ? void 0 : d.top)), void 0 !== i.left && (i.left = g(a.left + i.left, null == d ? void 0 : d.left)), void 0 !== i.right && (i.right = g(window.innerWidth - a.right + i.right, null == d ? void 0 : d.right)), void 0 !== i.bottom && (i.bottom = g(window.innerHeight - a.bottom + i.bottom, null == d ? void 0 : d.bottom)), o(a), i
+  }, [n, r, m, d, t, o]), v = i.useCallback(() => {
     let e = E();
-    return (0, s.isEqual)(e, f) || _(e), e
+    return (0, s.isEqual)(e, f) || p(e), e
   }, [E, f]);
   i.useEffect(() => {
     v()
@@ -110,7 +110,7 @@ function g(e) {
     window.removeEventListener("resize", I)
   }), [I]), {
     offsets: f,
-    getElementDimensions: g,
+    getElementDimensions: m,
     getElementOffsets: E,
     updateElementOffsets: v,
     updateElementOffsetsWithPolling: S
@@ -129,7 +129,7 @@ function E(e) {
     offsets: c,
     updateElementOffsets: u,
     updateElementOffsetsWithPolling: f
-  } = g(p({}, _(e, ["children", "style", "className", "key", "offsetControlRef"]))), h = p({}, c, n);
+  } = m(_({}, p(e, ["children", "style", "className", "key", "offsetControlRef"]))), h = _({}, c, n);
   return (i.useEffect(() => {
     void 0 !== l && (l.current = {
       updateElementOffsets: u,

@@ -1,42 +1,41 @@
-/** Chunk was on web.js **/
-"use strict";
-n.d(t, {
-  Z: () => u
+/** Chunk was on 62880 **/
+t.d(n, {
+  Z: () => o
 });
-var r = n(200651);
-n(192379);
-var i = n(100527),
-  o = n(906732),
-  a = n(26033),
-  s = n(194811),
-  l = n(382405),
-  c = n(670451);
+var l = t(200651);
+t(192379);
+var i = t(100527),
+  a = t(906732),
+  s = t(26033),
+  r = t(194811),
+  c = t(382405),
+  d = t(670451);
 
-function u(e) {
+function o(e) {
   let {
-    user: t,
-    entry: n,
-    className: u,
-    onClose: d,
-    hideContextMenu: f = !1,
-    appContext: p
+    user: n,
+    entry: t,
+    className: o,
+    onClose: u,
+    hideContextMenu: x = !1,
+    appContext: m
   } = e, {
-    analyticsLocations: _
-  } = (0, o.ZP)(i.Z.USER_PROFILE_RECENT_ACTIVITY_CARD);
-  return (0, a.Rh)(n) ? (0, r.jsx)(o.Gt, {
-    value: _,
-    children: (0, r.jsx)(l.Z, {
-      entry: n,
-      user: t,
-      className: u,
-      onClose: d,
-      header: (0, r.jsx)(s.Z, {
-        contextMenu: f ? null : (0, r.jsx)(c.Z, {
+    analyticsLocations: h
+  } = (0, a.ZP)(i.Z.USER_PROFILE_RECENT_ACTIVITY_CARD);
+  return (0, s.Rh)(t) ? (0, l.jsx)(a.Gt, {
+    value: h,
+    children: (0, l.jsx)(c.Z, {
+      entry: t,
+      user: n,
+      className: o,
+      onClose: u,
+      header: (0, l.jsx)(r.Z, {
+        contextMenu: x ? null : (0, l.jsx)(d.Z, {
           display: "recent",
-          entry: n,
-          user: t,
-          onClose: d,
-          appContext: p
+          entry: t,
+          user: n,
+          onClose: u,
+          appContext: m
         })
       })
     })

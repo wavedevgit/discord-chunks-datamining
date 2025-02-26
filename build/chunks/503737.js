@@ -1,12 +1,12 @@
-/** Chunk was on 63061 **/
+/** Chunk was on 65936 **/
 n.d(t, {
   Z: () => p
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(570140),
-  l = n(468026),
+  l = n(570140),
+  o = n(468026),
   s = n(317770),
   a = n(981631),
   c = n(388032);
@@ -31,24 +31,24 @@ function u(e) {
 }
 let d = "ActivityInviteManager",
   _ = () => {
-    o.Z.dispatch({
+    l.Z.dispatch({
       type: "ACTIVITY_INVITE_MODAL_CLOSE"
     })
   };
 class E extends s.Z {
   _initialize() {
-    o.Z.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), o.Z.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
+    l.Z.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), l.Z.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
   }
   _terminate() {
-    o.Z.unsubscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), o.Z.unsubscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
+    l.Z.unsubscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), l.Z.unsubscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
   }
   handleModalOpen(e) {
     let {
       activity: t,
-      isPrivate: o,
+      isPrivate: l,
       context: s
     } = e, E = s === a.IlC.POPOUT ? i.u1M : i.z1l;
-    o ? (0, i.h7j)(e => (0, r.jsx)(l.default, u({
+    l ? (0, i.h7j)(e => (0, r.jsx)(o.default, u({
       title: c.NW.formatToPlainString(c.t["2tN7io"], {
         name: t.name
       }),

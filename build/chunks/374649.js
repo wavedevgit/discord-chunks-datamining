@@ -26,7 +26,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function p(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,14 +51,14 @@ function _(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -66,7 +66,7 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -82,13 +82,13 @@ async function E(e) {
     applyEntitlements: o = !1,
     currency: u,
     renewal: f,
-    metadata: _
-  } = e, g = {
+    metadata: p
+  } = e, m = {
     items: (t = (0, c.gB)(t)).map(e => {
       var {
         planId: t
       } = e;
-      return h(p({}, m(e, ["planId"])), {
+      return h(_({}, g(e, ["planId"])), {
         plan_id: t
       })
     }),
@@ -98,12 +98,12 @@ async function E(e) {
     apply_entitlements: o,
     currency: u,
     renewal: f,
-    metadata: _
+    metadata: p
   };
   try {
     let e = await a.tn.post({
       url: d.ANM.BILLING_SUBSCRIPTIONS_PREVIEW,
-      body: g,
+      body: m,
       oldFormErrors: !0,
       rejectWithError: !1
     });
@@ -121,8 +121,8 @@ async function v(e) {
     currency: o,
     applyEntitlements: u = !1,
     analyticsLocations: f,
-    analyticsLocation: _,
-    userDiscountOfferId: g
+    analyticsLocation: p,
+    userDiscountOfferId: m
   } = e;
   null != n && (n = (0, c.gB)(n));
   let E = {
@@ -130,7 +130,7 @@ async function v(e) {
       var {
         planId: t
       } = e;
-      return h(p({}, m(e, ["planId"])), {
+      return h(_({}, g(e, ["planId"])), {
         plan_id: t
       })
     }),
@@ -138,13 +138,13 @@ async function v(e) {
     renewal: i,
     apply_entitlements: u,
     currency: o,
-    user_discount_offer_id: g
+    user_discount_offer_id: m
   };
   try {
     let e = await a.tn.patch({
       url: d.ANM.BILLING_SUBSCRIPTION_PREVIEW(t),
       query: {
-        location: _,
+        location: p,
         location_stack: f
       },
       body: E,
@@ -233,7 +233,7 @@ function I(e) {
     let {
       subscriptionId: t
     } = e;
-    e = m(e, ["subscriptionId"])
+    e = g(e, ["subscriptionId"])
   }
   let t = (0, r.useRef)(e);
   (0, r.useEffect)(() => {

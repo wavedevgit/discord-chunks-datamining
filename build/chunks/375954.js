@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => em
+  Z: () => eg
 }), n(47120), n(789020), n(653041), n(978209), n(177593);
 var r, i = n(392711),
   o = n.n(i),
@@ -12,11 +12,11 @@ var r, i = n(392711),
   u = n(673750),
   d = n(710845),
   f = n(247206),
-  p = n(723352),
-  _ = n(160404),
+  _ = n(723352),
+  p = n(160404),
   h = n(786761),
-  m = n(418476),
-  g = (n(739566), n(995774)),
+  g = n(418476),
+  m = (n(739566), n(995774)),
   E = n(706454),
   v = n(630388),
   b = n(709054),
@@ -296,7 +296,7 @@ function ea(e) {
     emoji: o,
     reactionType: a
   } = e, s = c.Z.get(n);
-  if (null == s || !(0, g.sm)(e)) return !1;
+  if (null == s || !(0, m.sm)(e)) return !1;
   let l = y.default.getId() === i;
   s = s.update(r, n => "MESSAGE_REACTION_ADD" === t ? n.addReaction(o, l, e.colors, a) : n.removeReaction(o, l, a)), c.Z.commit(s)
 }
@@ -324,7 +324,7 @@ function el(e) {
   if (!a.has(i)) return !1;
   a = a.update(i, e => {
     var n;
-    return (null === (n = e.embeds) || void 0 === n ? void 0 : n.filter(p.K).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, v.pj)(e.flags, w.iLy.EPHEMERAL))), e
+    return (null === (n = e.embeds) || void 0 === n ? void 0 : n.filter(_.K).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, v.pj)(e.flags, w.iLy.EPHEMERAL))), e
   }), c.Z.commit(a)
 }
 
@@ -360,12 +360,12 @@ function ef(e) {
   }
 }
 
-function ep(e) {
+function e_(e) {
   let t = c.Z.getOrCreate(e.channelId);
   (t.cached || !t.ready) && c.Z.commit(t.addCachedMessages(e.messages, e.stale))
 }
 
-function e_(e) {
+function ep(e) {
   let {
     message: t
   } = e, n = D.default.getCurrentUser();
@@ -373,13 +373,13 @@ function e_(e) {
 }
 class eh extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(D.default, O.Z, S.Z, T.ZP, E.default, R.Z, P.Z, N.Z, C.Z, I.ZP), this.syncWith([_.Z], () => {})
+    this.waitFor(D.default, O.Z, S.Z, T.ZP, E.default, R.Z, P.Z, N.Z, C.Z, I.ZP), this.syncWith([p.Z], () => {})
   }
   getMessages(e) {
-    if (_.Z.hasViewingRoles()) {
+    if (p.Z.hasViewingRoles()) {
       let t = O.Z.getChannel(e),
         n = null == t ? void 0 : t.getGuildId();
-      if (_.Z.isViewingRoles(n) && !A.Z.can(w.Plq.VIEW_CHANNEL, t)) return new c.Z(e)
+      if (p.Z.isViewingRoles(n) && !A.Z.can(w.Plq.VIEW_CHANNEL, t)) return new c.Z(e)
     }
     return c.Z.getOrCreate(e)
   }
@@ -388,7 +388,7 @@ class eh extends(r = a.ZP.Store) {
   }
   getLastEditableMessage(e) {
     let t = D.default.getCurrentUser();
-    return o()(this.getMessages(e).toArray()).reverse().find(e => (0, m.Z)(e, null == t ? void 0 : t.id))
+    return o()(this.getMessages(e).toArray()).reverse().find(e => (0, g.Z)(e, null == t ? void 0 : t.id))
   }
   getLastChatCommandMessage(e) {
     let t = D.default.getCurrentUser();
@@ -436,7 +436,7 @@ class eh extends(r = a.ZP.Store) {
   }
 }
 L(eh, "displayName", "MessageStore");
-let em = new eh(s.Z, {
+let eg = new eh(s.Z, {
   BACKGROUND_SYNC_CHANNEL_MESSAGES: U,
   CONNECTION_OPEN: j,
   OVERLAY_INITIALIZE: j,
@@ -445,7 +445,7 @@ let em = new eh(s.Z, {
   LOAD_MESSAGES_SUCCESS: Z,
   LOAD_MESSAGES_FAILURE: H,
   LOAD_MESSAGES_SUCCESS_CACHED: F,
-  LOCAL_MESSAGES_LOADED: ep,
+  LOCAL_MESSAGES_LOADED: e_,
   LOAD_MESSAGE_INTERACTION_DATA_SUCCESS: $,
   TRUNCATE_MESSAGES: B,
   CLEAR_MESSAGES: V,
@@ -475,5 +475,5 @@ let em = new eh(s.Z, {
   LOGOUT: ed,
   UPLOAD_START: W,
   UPLOAD_FAIL: Y,
-  LOCAL_MESSAGE_CREATE: e_
+  LOCAL_MESSAGE_CREATE: ep
 })

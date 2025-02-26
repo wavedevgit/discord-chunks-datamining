@@ -19,12 +19,12 @@ function c(e) {
     animateOnHover: d = !1,
     avatarOverride: f
   } = e, {
-    onMouseEnter: p,
-    onMouseLeave: _,
+    onMouseEnter: _,
+    onMouseLeave: p,
     shouldAnimate: h
   } = (0, l.Z)(d), {
-    pendingAvatar: m
-  } = (0, s.Z)({}), g = u ? m : void 0, E = void 0 !== f ? f : g, v = (0, i.e7)([a.ZP], () => null != n && null != t ? a.ZP.getMember(n, t.id) : null);
+    pendingAvatar: g
+  } = (0, s.Z)({}), m = u ? g : void 0, E = void 0 !== f ? f : m, v = (0, i.e7)([a.ZP], () => null != n && null != t ? a.ZP.getMember(n, t.id) : null);
   return {
     avatarSrc: r.useMemo(() => null != t ? (0, o.SG)(E, v, t, {
       canAnimate: h,
@@ -32,8 +32,8 @@ function c(e) {
     }) : void 0, [E, v, t, h, c]),
     isAvatarAnimating: h,
     eventHandlers: {
-      onMouseEnter: p,
-      onMouseLeave: _
+      onMouseEnter: _,
+      onMouseLeave: p
     }
   }
 }

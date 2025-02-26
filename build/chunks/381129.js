@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(474991), n(398202), n(301563), n(47120);
 var r = n(512722),
   i = n.n(r),
@@ -39,7 +39,7 @@ function f(e) {
     }
   return null
 }
-let p = {
+let _ = {
   shouldShowEveryoneGuard: function(e, t) {
     let n = t.getGuildId();
     return i()(n, "isGuildChannel with null guildId"), d(e, t) > u && s.Z.can(l.Plq.MENTION_EVERYONE, t)

@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(388032),
   f = n(823825);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -47,12 +47,12 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = 4,
+let m = 4,
   E = 10,
   v = 2;
 
@@ -102,12 +102,12 @@ function y(e) {
     highlighted: o = !1
   } = e, u = n.getIconURL(24);
   if (null == u) return null;
-  let p = (null == i ? void 0 : null === (t = i[n.id]) || void 0 === t ? void 0 : t.level) === s.m.HIGH,
+  let _ = (null == i ? void 0 : null === (t = i[n.id]) || void 0 === t ? void 0 : t.level) === s.m.HIGH,
     h = (0, r.jsxs)(l.Text, {
       variant: "text-sm/semibold",
       color: "interactive-active",
       className: f.tooltipText,
-      children: [n.name, p && (0, r.jsx)(l.Text, {
+      children: [n.name, _ && (0, r.jsx)(l.Text, {
         tag: "div",
         variant: "text-sm/normal",
         color: "text-muted",
@@ -118,13 +118,13 @@ function y(e) {
     text: h,
     position: "bottom",
     "aria-label": n.name,
-    children: e => (0, r.jsxs)("div", m(_({}, e), {
+    children: e => (0, r.jsxs)("div", g(p({}, e), {
       className: a()(f.gameImageContainer, o && f.highlighted),
       children: [(0, r.jsx)("img", {
         src: u,
         alt: n.name,
         className: f.gameImage
-      }), p && (0, r.jsx)(c.ZP, {
+      }), _ && (0, r.jsx)(c.ZP, {
         mask: c.QS.GAMEPLAY_HIGH_ACTIVITY_ICON,
         width: E + 2 * v,
         height: E + 2 * v,
@@ -158,17 +158,17 @@ let O = e => (t, n) => {
       let e = t.filter(e => null != e && null != e.icon),
         r = e.filter(e => !n.has(e.id)).sort(O(o));
       return [...e.filter(e => n.has(e.id)).sort(O(o)), ...r]
-    }, [o, t, n]), c = s.slice(0, g - 1), d = i.useMemo(() => {
+    }, [o, t, n]), c = s.slice(0, m - 1), d = i.useMemo(() => {
       var e;
-      let t = s[g - 1];
+      let t = s[m - 1];
       if (null == t) return null;
       let n = t.getIconURL(24);
       if (null == n) return null;
-      if (s.length <= g) return (0, r.jsx)(y, {
+      if (s.length <= m) return (0, r.jsx)(y, {
         game: t,
         gameActivity: o
       });
-      let i = s.slice(g - 1);
+      let i = s.slice(m - 1);
       return (0, r.jsx)(l.ua7, {
         "aria-label": null !== (e = (0, u.f6)(i.map(e => e.name))) && void 0 !== e ? e : "",
         onTooltipShow: () => null == a ? void 0 : a(),
@@ -177,7 +177,7 @@ let O = e => (t, n) => {
           gameActivity: o
         }),
         position: "bottom",
-        children: e => (0, r.jsxs)("div", m(_({}, e), {
+        children: e => (0, r.jsxs)("div", g(p({}, e), {
           className: f.gameImageContainer,
           children: [(0, r.jsx)("img", {
             src: n,

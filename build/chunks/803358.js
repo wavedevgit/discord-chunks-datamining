@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r = n(979590),
   i = n.n(r),
@@ -64,12 +64,12 @@ function f(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let p = e => null == e ? e : {
+let _ = e => null == e ? e : {
   backgroundColors: e.background_colors.map(e => i()((0, o.Rf)(e))),
   buttonColors: e.button_colors.map(e => i()((0, o.Rf)(e))),
   confettiColors: e.confetti_colors.map(e => i()((0, o.Rf)(e)))
 };
-class _ extends a.Z {
+class p extends a.Z {
   static fromServer(e) {
     var {
       store_listing_id: t,
@@ -79,12 +79,12 @@ class _ extends a.Z {
       styles: o
     } = e, a = d(e, ["store_listing_id", "sku_id", "unpublished_at", "banner_asset", "styles"]);
     let s = null != r ? new Date(r) : null;
-    return new _(u(l({}, a), {
+    return new p(u(l({}, a), {
       storeListingId: t,
       skuId: n,
       unpublishedAt: s,
       bannerAsset: i,
-      styles: p(o)
+      styles: _(o)
     }))
   }
   constructor(e) {

@@ -20,20 +20,20 @@ let b = i.forwardRef(function(e, t) {
   let {
     selected: n,
     onClick: b,
-    questId: v,
-    className: y
+    questId: y,
+    className: v
   } = e, O = i.useCallback(() => {
     (0, c.k5)({
       source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
     });
-    let e = void 0 !== v ? h.GlobalDiscoveryTab.QUESTS : u.Z.getField("selectedTab");
+    let e = void 0 !== y ? h.GlobalDiscoveryTab.QUESTS : u.Z.getField("selectedTab");
     switch (e) {
       case h.GlobalDiscoveryTab.QUESTS:
         return (0, d.transitionToGlobalDiscovery)({
           tab: h.GlobalDiscoveryTab.QUESTS,
           location: g.dr.DISCOVERY_COMPASS,
           questContent: l.j.DISCOVERY_COMPASS,
-          questId: v
+          questId: y
         });
       case h.GlobalDiscoveryTab.SERVERS:
         return (0, d.transitionToGlobalDiscovery)({
@@ -52,11 +52,11 @@ let b = i.forwardRef(function(e, t) {
           tab: e
         })
     }
-  }, [v]);
+  }, [y]);
   return (0, r.jsx)(p.Z, {
     id: "guild-discover-button",
     ref: t,
-    className: y,
+    className: v,
     onClick: () => {
       O(), void 0 !== b && b()
     },

@@ -14,18 +14,18 @@ var r = n(796774),
     return n > .5 || .5 === n && t % 2 != 0 ? t + r(e) : t
   },
   f = function(e, t, n) {
-    var r, i, f, p = o(n),
-      _ = 8 * n - t - 1,
-      h = (1 << _) - 1,
-      m = h >> 1,
-      g = 23 === t ? s(2, -24) - s(2, -77) : 0,
+    var r, i, f, _ = o(n),
+      p = 8 * n - t - 1,
+      h = (1 << p) - 1,
+      g = h >> 1,
+      m = 23 === t ? s(2, -24) - s(2, -77) : 0,
       E = +(e < 0 || 0 === e && 1 / e < 0),
       v = 0;
-    for ((e = a(e)) != e || e === 1 / 0 ? (i = +(e != e), r = h) : (f = s(2, -(r = l(c(e) / u))), e * f < 1 && (r--, f *= 2), r + m >= 1 ? e += g / f : e += g * s(2, 1 - m), e * f >= 2 && (r++, f /= 2), r + m >= h ? (i = 0, r = h) : r + m >= 1 ? (i = d((e * f - 1) * s(2, t)), r += m) : (i = d(e * s(2, m - 1) * s(2, t)), r = 0)); t >= 8;) p[v++] = 255 & i, i /= 256, t -= 8;
-    for (r = r << t | i, _ += t; _ > 0;) p[v++] = 255 & r, r /= 256, _ -= 8;
-    return p[--v] |= 128 * E, p
+    for ((e = a(e)) != e || e === 1 / 0 ? (i = +(e != e), r = h) : (f = s(2, -(r = l(c(e) / u))), e * f < 1 && (r--, f *= 2), r + g >= 1 ? e += m / f : e += m * s(2, 1 - g), e * f >= 2 && (r++, f /= 2), r + g >= h ? (i = 0, r = h) : r + g >= 1 ? (i = d((e * f - 1) * s(2, t)), r += g) : (i = d(e * s(2, g - 1) * s(2, t)), r = 0)); t >= 8;) _[v++] = 255 & i, i /= 256, t -= 8;
+    for (r = r << t | i, p += t; p > 0;) _[v++] = 255 & r, r /= 256, p -= 8;
+    return _[--v] |= 128 * E, _
   },
-  p = function(e, t) {
+  _ = function(e, t) {
     var n, r = e.length,
       i = 8 * r - t - 1,
       o = (1 << i) - 1,
@@ -45,5 +45,5 @@ var r = n(796774),
   };
 e.exports = {
   pack: f,
-  unpack: p
+  unpack: _
 }

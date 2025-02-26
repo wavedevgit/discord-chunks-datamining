@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  KS: () => _,
+  KS: () => p,
   Th: () => h,
-  bT: () => p
+  bT: () => _
 });
 var r = n(481060),
   i = n(281956),
@@ -16,7 +16,7 @@ var r = n(481060),
   d = n(981631),
   f = n(388032);
 
-function p(e, t, n, r) {
+function _(e, t, n, r) {
   if (null == e) return null;
   if (e.id === (null == t ? void 0 : t.rulesChannelId)) return f.NW.string(f.t["/7EhaW"]);
   switch (e.type) {
@@ -64,18 +64,18 @@ function p(e, t, n, r) {
   }
 }
 
-function _(e, t) {
+function p(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
     {
       locked: f = !1,
-      video: p = !1,
-      stream: _ = !1,
+      video: _ = !1,
+      stream: p = !1,
       hasActiveThreads: h = !1,
-      textFocused: m = !1
+      textFocused: g = !1
     } = n;
   if (null == e) return null;
   null == t && (t = a.Z.getGuild(e.getGuildId()));
-  let g = (0, i.n)(null == t ? void 0 : t.id, [a.Z, s.Z, l.default, o.ZP]);
+  let m = (0, i.n)(null == t ? void 0 : t.id, [a.Z, s.Z, l.default, o.ZP]);
   if ((null == e ? void 0 : e.id) === (null == t ? void 0 : t.rulesChannelId)) return r.snC;
   switch (e.type) {
     case d.d4z.GUILD_ANNOUNCEMENT:
@@ -114,21 +114,21 @@ function _(e, t) {
       if ((0, c.Z)(e)) return r.D7T;
       return r.XBm;
     case d.d4z.GUILD_STAGE_VOICE:
-      if (g) return (0, c.Z)(e) ? r.mBM : r.pki;
+      if (m) return (0, c.Z)(e) ? r.mBM : r.pki;
       if (f) return r.mBM;
       if ((0, c.Z)(e)) return r.pki;
       return r.ewx;
     case d.d4z.GUILD_VOICE:
-      if (m) return r.kBi;
+      if (g) return r.kBi;
       if (e.isNSFW()) return r.BVY;
-      if (_) return r.hGI;
-      if (g) {
+      if (p) return r.hGI;
+      if (m) {
         if ((0, c.Z)(e)) return r.mBM;
-        return p ? r.TLW : r.gjC
+        return _ ? r.TLW : r.gjC
       }
       if (f) return r.mBM;
-      if ((0, c.Z)(e)) return p ? r.TLW : r.gjC;
-      return p ? r.Odl : r.gj8;
+      if ((0, c.Z)(e)) return _ ? r.TLW : r.gjC;
+      return _ ? r.Odl : r.gj8;
     case d.d4z.GUILD_DIRECTORY:
       return r.aVH;
     case d.d4z.GUILD_CATEGORY:

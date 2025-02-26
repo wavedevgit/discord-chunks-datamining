@@ -34,9 +34,9 @@ var d = function(e) {
   }, t.prototype.exrule = function(e) {
     f(e, this._exrule)
   }, t.prototype.rdate = function(e) {
-    p(e, this._rdate)
+    _(e, this._rdate)
   }, t.prototype.exdate = function(e) {
-    p(e, this._exdate)
+    _(e, this._exdate)
   }, t.prototype.rrules = function() {
     return this._rrule.map(function(e) {
       return (0, l.S)(e.toString())
@@ -65,7 +65,7 @@ var d = function(e) {
       }).filter(function(e) {
         return !/^DTSTART/.test(e)
       }))
-    }), this._rdate.length && e.push(_("RDATE", this._rdate, this.tzid())), this._exdate.length && e.push(_("EXDATE", this._exdate, this.tzid())), e
+    }), this._rdate.length && e.push(p("RDATE", this._rdate, this.tzid())), this._exdate.length && e.push(p("EXDATE", this._exdate, this.tzid())), e
   }, t.prototype.toString = function() {
     return this.valueOf().join("\n")
   }, t.prototype.clone = function() {
@@ -87,12 +87,12 @@ function f(e, t) {
   (0, a.q9)(t.map(String), String(e)) || t.push(e)
 }
 
-function p(e, t) {
+function _(e, t) {
   if (!(e instanceof Date)) throw TypeError(String(e) + " is not Date instance");
   (0, a.q9)(t.map(Number), Number(e)) || (t.push(e), (0, o.DY)(t))
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   var r = !n || "UTC" === n.toUpperCase(),
     i = r ? "".concat(e, ":") : "".concat(e, ";TZID=").concat(n, ":"),
     a = t.map(function(e) {

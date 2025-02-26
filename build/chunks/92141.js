@@ -9,24 +9,24 @@ function a(e, t, n, a, s, l) {
     d = u.length;
   if (d != r(t).length && !c) return !1;
   for (var f = d; f--;) {
-    var p = u[f];
-    if (!(c ? p in t : o.call(t, p))) return !1
+    var _ = u[f];
+    if (!(c ? _ in t : o.call(t, _))) return !1
   }
-  var _ = l.get(e);
-  if (_ && l.get(t)) return _ == t;
+  var p = l.get(e);
+  if (p && l.get(t)) return p == t;
   var h = !0;
   l.set(e, t), l.set(t, e);
-  for (var m = c; ++f < d;) {
-    var g = e[p = u[f]],
-      E = t[p];
-    if (a) var v = c ? a(E, g, p, t, e, l) : a(g, E, p, e, t, l);
-    if (!(void 0 === v ? g === E || s(g, E, n, a, l) : v)) {
+  for (var g = c; ++f < d;) {
+    var m = e[_ = u[f]],
+      E = t[_];
+    if (a) var v = c ? a(E, m, _, t, e, l) : a(m, E, _, e, t, l);
+    if (!(void 0 === v ? m === E || s(m, E, n, a, l) : v)) {
       h = !1;
       break
     }
-    m || (m = "constructor" == p)
+    g || (g = "constructor" == _)
   }
-  if (h && !m) {
+  if (h && !g) {
     var b = e.constructor,
       y = t.constructor;
     b != y && "constructor" in e && "constructor" in t && !("function" == typeof b && b instanceof b && "function" == typeof y && y instanceof y) && (h = !1)

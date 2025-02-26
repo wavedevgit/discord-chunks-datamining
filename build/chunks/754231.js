@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(81063),
   m = n(768581),
   b = n(823379),
-  v = n(51144),
-  y = n(308361);
+  y = n(51144),
+  v = n(308361);
 let O = d.u.SIZE_24;
 
 function j(e) {
@@ -41,24 +41,24 @@ function j(e) {
       children: () => (0, r.jsx)("img", {
         alt: n,
         src: t,
-        className: y.applicationLargeImage
+        className: v.applicationLargeImage
       })
     })
   }(a) : null;
   let h = null !== (t = d.large_image) && void 0 !== t ? t : d.small_image,
     f = (0, c.Z)(l),
-    b = f ? y.spotifyLargeImage : y.applicationLargeImage,
-    v = null != h ? (0, r.jsx)("img", {
+    b = f ? v.spotifyLargeImage : v.applicationLargeImage,
+    y = null != h ? (0, r.jsx)("img", {
       alt: null !== (n = d.large_text) && void 0 !== n ? n : "",
       src: (0, g.getAssetImage)(p, h, [128, 128]),
       className: b
     }) : null;
-  return f && null != u ? (v = (0, r.jsx)(s.P3F, {
-    className: y.clickable,
+  return f && null != u ? (y = (0, r.jsx)(s.P3F, {
+    className: v.clickable,
     onClick: () => {
       u(l, o.id)
     },
-    children: v
+    children: y
   }), (0, r.jsx)(s.ua7, {
     text: null != d.large_text ? d.large_text : null,
     position: "top",
@@ -80,9 +80,9 @@ function j(e) {
         }
         return i
       }(e, ["onClick"]);
-      return null != v ? i.cloneElement(v, n) : null
+      return null != y ? i.cloneElement(y, n) : null
     }
-  })) : v
+  })) : y
 }
 
 function _(e) {
@@ -95,7 +95,7 @@ function _(e) {
   else {
     if (!(null != t && (0, c.Z)(t)) || null == t.sync_id || null == l || null == i) return null;
     o = l, a = (0, r.jsx)(s.P3F, {
-      className: y.headerLink,
+      className: v.headerLink,
       onClick: () => {
         i(t)
       },
@@ -104,7 +104,7 @@ function _(e) {
   }
   return (0, r.jsx)(p.Z, {
     title: o,
-    className: y.header,
+    className: v.header,
     children: a
   })
 }
@@ -117,13 +117,13 @@ function C(e) {
   } = e, l = null == t ? void 0 : t.details, a = null == t ? void 0 : t.state, s = l;
   return (null != t && (0, c.Z)(t) && null != a && (s = [(0, r.jsx)(h.Z, {
     artists: a,
-    linkClassName: y.bodyLink,
+    linkClassName: v.bodyLink,
     canOpen: null != t.sync_id,
     onOpenSpotifyArtist: e => {
       null == i || i(t, n.id, e)
     }
   }, a)]), null == s || "" === s) ? null : (0, r.jsx)("div", {
-    className: o()(y.ellipsisRow, y.colorHeaderSecondary, y.bodyTextSize),
+    className: o()(v.ellipsisRow, v.colorHeaderSecondary, v.bodyTextSize),
     children: s
   })
 }
@@ -133,7 +133,7 @@ function x(e) {
     activity: t
   } = e, n = null == t ? void 0 : t.state;
   return null == n || "" === n || (0, c.Z)(t) ? null : (0, r.jsx)("div", {
-    className: o()(y.ellipsisRow, y.colorHeaderSecondary, y.bodyTextSize, y.__invalid_activity),
+    className: o()(v.ellipsisRow, v.colorHeaderSecondary, v.bodyTextSize, v.__invalid_activity),
     children: n
   })
 }
@@ -154,7 +154,7 @@ function P(e) {
   return (0, r.jsx)(u.Z, {
     start: i,
     end: l,
-    className: y.timeBar,
+    className: v.timeBar,
     themed: !0,
     singleLine: !0
   })
@@ -174,7 +174,7 @@ function N(e) {
   null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (m = u.map(e => e.user.id));
   let N = (0, a.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
     S = null != n || (0, c.Z)(t),
-    I = i.useMemo(() => {
+    Z = i.useMemo(() => {
       let e = new Map;
       return S && null != u && u.forEach(t => {
         let n = t.member;
@@ -182,16 +182,16 @@ function N(e) {
       }), e
     }, [u, S]);
   return S ? (0, r.jsxs)("div", {
-    className: y.flexColumn,
+    className: v.flexColumn,
     children: [(0, r.jsxs)("div", {
-      className: y.flexRow,
+      className: v.flexRow,
       children: [(0, r.jsx)(j, {
         activity: t,
         user: l,
         embeddedApp: n,
         onOpenSpotifyAlbum: g
       }), (0, r.jsxs)("div", {
-        className: y.detailsAndAvatarsContainer,
+        className: v.detailsAndAvatarsContainer,
         children: [(0, r.jsx)(_, {
           activity: t,
           embeddedApp: n,
@@ -203,7 +203,7 @@ function N(e) {
         }), (0, r.jsx)(x, {
           activity: t
         }), m.length > 0 && (0, r.jsx)(d.Z, {
-          className: y.usersSummary,
+          className: v.usersSummary,
           guildId: o.guild_id,
           users: N,
           size: O,
@@ -211,15 +211,15 @@ function N(e) {
           renderUser: e => {
             var t;
             if (null == e) return null;
-            let n = I.get(e.id),
-              i = null !== (t = null == n ? void 0 : n.nick) && void 0 !== t ? t : v.ZP.getName(e);
+            let n = Z.get(e.id),
+              i = null !== (t = null == n ? void 0 : n.nick) && void 0 !== t ? t : y.ZP.getName(e);
             return (0, r.jsx)(s.DY3, {
               text: i,
               position: "bottom",
               children: (0, r.jsx)("img", {
                 src: e.getAvatarURL(o.guild_id, O),
                 alt: i,
-                className: y.avatar
+                className: v.avatar
               }, e.id)
             }, e.id)
           }

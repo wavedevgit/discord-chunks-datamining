@@ -85,7 +85,7 @@ var r = n(363406),
     }
     return l
   },
-  p = function(e) {
+  _ = function(e) {
     for (var t = [{
         obj: {
           o: e
@@ -102,16 +102,16 @@ var r = n(363406),
       }
     return s(t), e
   },
-  _ = function(e) {
+  p = function(e) {
     return "[object RegExp]" === Object.prototype.toString.call(e)
   },
   h = function(e) {
     return !!e && "object" == typeof e && !!(e.constructor && e.constructor.isBuffer && e.constructor.isBuffer(e))
   },
-  m = function(e, t) {
+  g = function(e, t) {
     return [].concat(e, t)
   },
-  g = function(e, t) {
+  m = function(e, t) {
     if (o(e)) {
       for (var n = [], r = 0; r < e.length; r += 1) n.push(t(e[r]));
       return n
@@ -121,12 +121,12 @@ var r = n(363406),
 e.exports = {
   arrayToObject: l,
   assign: u,
-  combine: m,
-  compact: p,
+  combine: g,
+  compact: _,
   decode: d,
   encode: f,
   isBuffer: h,
-  isRegExp: _,
-  maybeMap: g,
+  isRegExp: p,
+  maybeMap: m,
   merge: c
 }

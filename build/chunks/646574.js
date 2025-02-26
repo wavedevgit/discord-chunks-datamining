@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(481060),
   d = n(607070),
   f = n(243778),
-  p = n(594174),
-  _ = n(74538),
+  _ = n(594174),
+  p = n(74538),
   h = n(921944),
-  m = n(388032),
-  g = n(107525);
+  g = n(388032),
+  m = n(107525);
 let E = {
     tension: 750,
     mass: 2.5,
@@ -32,13 +32,13 @@ function b(e) {
     textColor: i
   } = e, o = null != n;
   return (0, r.jsxs)("span", {
-    className: o ? void 0 : g.tooltipContainer,
+    className: o ? void 0 : m.tooltipContainer,
     children: [(0, r.jsxs)("span", {
-      className: g.tooltipContainer,
+      className: m.tooltipContainer,
       children: [(0, r.jsx)(u.SrA, {
         size: "md",
         color: "currentColor",
-        className: g.nitroWheel
+        className: m.nitroWheel
       }), o ? (0, r.jsx)(u.X6q, {
         color: null != i ? i : "text-normal",
         variant: "heading-sm/semibold",
@@ -53,7 +53,7 @@ function b(e) {
 }
 
 function y(e) {
-  return e ? m.NW.string(m.t["5cRA/f"]) : m.NW.string(m.t.buV4am)
+  return e ? g.NW.string(g.t["5cRA/f"]) : g.NW.string(g.t.buV4am)
 }
 
 function O(e) {
@@ -61,7 +61,7 @@ function O(e) {
     checked: t,
     onClick: n,
     id: o = "burst-reaction-toggle-button"
-  } = e, O = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), S = p.default.getCurrentUser(), I = null == S || (0, _.I5)(S) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [T, N] = (0, f.US)(I), [A, C] = i.useState(!1), [R, P] = (0, u.q_F)(() => ({})), D = (0, s.animated)(u.Pt5);
+  } = e, O = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), S = _.default.getCurrentUser(), I = null == S || (0, p.I5)(S) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [T, N] = (0, f.US)(I), [A, C] = i.useState(!1), [R, P] = (0, u.q_F)(() => ({})), D = (0, s.animated)(u.Pt5);
 
   function w() {
     P({
@@ -78,8 +78,8 @@ function O(e) {
     let e = T === c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP;
     e && (N(h.L.DISMISS), setTimeout(() => C(e), 200))
   }, [T, N]);
-  let L = A ? m.NW.string(m.t["Osi/u7"]) : y(t),
-    x = A ? m.NW.string(m.t.ORK94u) : void 0;
+  let L = A ? g.NW.string(g.t["Osi/u7"]) : y(t),
+    x = A ? g.NW.string(g.t.ORK94u) : void 0;
   return (0, r.jsxs)(u.DY3, {
     position: "top",
     text: (0, r.jsx)(b, {
@@ -90,20 +90,20 @@ function O(e) {
     color: u.ua7.Colors.BRAND,
     forceOpen: A,
     "aria-label": L,
-    tooltipClassName: g.tooltip,
+    tooltipClassName: m.tooltip,
     children: [(0, r.jsx)("input", {
-      className: g.visuallyHidden,
+      className: m.visuallyHidden,
       checked: t,
       onChange: w,
       id: o,
       type: "checkbox"
     }), (0, r.jsxs)("label", {
       htmlFor: o,
-      className: a()(g.label, {
-        [g.labelChecked]: t
+      className: a()(m.label, {
+        [m.labelChecked]: t
       }),
       children: [t ? (0, r.jsx)(u.ZX5, {
-        className: g.shine,
+        className: m.shine,
         shinePaused: O
       }) : null, (0, r.jsx)(D, {
         style: O ? void 0 : R,
@@ -111,12 +111,12 @@ function O(e) {
         width: v,
         height: v,
         color: t ? "white" : "currentColor",
-        className: g.icon
+        className: m.icon
       }), (0, r.jsx)("span", {
         children: (0, r.jsx)(u.Text, {
-          className: g.visuallyHidden,
+          className: m.visuallyHidden,
           variant: "text-sm/semibold",
-          children: m.NW.string(m.t.buV4am)
+          children: g.NW.string(g.t.buV4am)
         })
       })]
     })]

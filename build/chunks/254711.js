@@ -14,11 +14,11 @@ var r = n(512722),
   u = n(749210),
   d = n(904245),
   f = n(911969),
-  p = n(386696),
-  _ = n(957730),
+  _ = n(386696),
+  p = n(957730),
   h = n(968437),
-  m = n(928477),
-  g = n(665906),
+  g = n(928477),
+  m = n(665906),
   E = n(695346),
   v = n(592125),
   b = n(496675),
@@ -365,14 +365,14 @@ let L = n(227419).Z,
       let {
         channel: t
       } = e;
-      return null != t && (0, g.ki)(t)
+      return null != t && (0, m.ki)(t)
     },
     execute: async (e, t) => {
       var n, r;
       let {
         channel: i
-      } = t, o = null !== (n = x(e, "name")) && void 0 !== n ? n : "", a = null !== (r = x(e, "message")) && void 0 !== r ? r : "", l = await (0, m.gK)(i, o, s.d.PUBLIC_THREAD, (0, h.WD)(i, null), "Slash Command");
-      d.Z.sendMessage(l.id, _.ZP.parse(l, a))
+      } = t, o = null !== (n = x(e, "name")) && void 0 !== n ? n : "", a = null !== (r = x(e, "message")) && void 0 !== r ? r : "", l = await (0, g.gK)(i, o, s.d.PUBLIC_THREAD, (0, h.WD)(i, null), "Slash Command");
+      d.Z.sendMessage(l.id, p.ZP.parse(l, a))
     }
   }, {
     id: "-11",
@@ -612,7 +612,7 @@ let L = n(227419).Z,
       } = t;
       if (null == n || null == r) return;
       let i = x(e, "user");
-      if (!(0, p.F)(n.id, i)) {
+      if (!(0, _.F)(n.id, i)) {
         d.Z.sendBotMessage(r.id, C.NW.string(C.t.F5pqSU));
         return
       }(async () => {
@@ -686,7 +686,7 @@ let L = n(227419).Z,
       (async () => {
         await c.Z.openPrivateChannel(o).then(e => {
           let t = v.Z.getChannel(e);
-          i()(null != t, "Newly created PrivateChannel is null"), d.Z.sendMessage(t.id, _.ZP.parse(t, a))
+          i()(null != t, "Newly created PrivateChannel is null"), d.Z.sendMessage(t.id, p.ZP.parse(t, a))
         })
       })().catch(() => {
         d.Z.sendBotMessage(r.id, C.NW.string(C.t["3XaE9/"]))

@@ -3,16 +3,16 @@
 n.d(t, {
   B0: () => h,
   M4: () => R,
-  Nt: () => _,
+  Nt: () => p,
   RV: () => b,
   VP: () => C,
   X: () => A,
-  ZD: () => g,
+  ZD: () => m,
   fw: () => E,
   hs: () => O,
   i_: () => P,
   k8: () => N,
-  ox: () => m,
+  ox: () => g,
   qJ: () => y,
   yL: () => v
 }), n(411104), n(977457), n(47120);
@@ -57,12 +57,12 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function _(e, t) {
+async function p(e, t) {
   var n;
   let r = I(e),
     o = await i.tn.get({
@@ -86,9 +86,9 @@ async function h(e, t) {
     });
   return null !== (n = o.body) && void 0 !== n ? n : JSON.parse(o.text)
 }
-async function m(e, t) {
+async function g(e, t) {
   let n = I(e),
-    r = await _(e, t);
+    r = await p(e, t);
   await i.tn.post({
     url: c.ANM.SUBMIT_REPORT_MENU(n),
     body: T(r, e, [{
@@ -99,7 +99,7 @@ async function m(e, t) {
   })
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   return s.ZP.get("iar_skip_api_report_submit") ? Promise.resolve() : i.tn.post({
     url: c.ANM.SUBMIT_REPORT_MENU(I(t)),
     body: T(e, t, n),
@@ -205,7 +205,7 @@ let T = (e, t, n, r) => {
       channel_id: e,
       id: n
     } = t.record;
-    return p(d({}, c, s), {
+    return _(d({}, c, s), {
       name: t.name,
       channel_id: e,
       message_id: n
@@ -215,7 +215,7 @@ let T = (e, t, n, r) => {
     let {
       id: e
     } = t.record;
-    return p(d({}, c, s), {
+    return _(d({}, c, s), {
       name: t.name,
       guild_id: e
     })
@@ -225,7 +225,7 @@ let T = (e, t, n, r) => {
       guildId: e,
       channelId: n
     } = t.record;
-    return p(d({}, c, s), {
+    return _(d({}, c, s), {
       name: t.name,
       channel_id: n,
       guild_id: e
@@ -237,7 +237,7 @@ let T = (e, t, n, r) => {
       guild_id: n,
       channel_id: r
     } = t.record;
-    return p(d({}, c, s), {
+    return _(d({}, c, s), {
       name: t.name,
       channel_id: r,
       guild_id: n,
@@ -249,28 +249,28 @@ let T = (e, t, n, r) => {
       id: e,
       guild_id: n
     } = t.record;
-    return p(d({}, c, s), {
+    return _(d({}, c, s), {
       name: t.name,
       guild_id: n,
       guild_scheduled_event_id: e
     })
-  } else if (t.name === l.b.USER) return p(d({}, c, s), {
+  } else if (t.name === l.b.USER) return _(d({}, c, s), {
     name: t.name,
     user_id: t.record.id,
     guild_id: t.contextualGuildId
   });
-  else if (t.name === l.BM.USER) return p(d({}, c, s), {
+  else if (t.name === l.BM.USER) return _(d({}, c, s), {
     name: t.name,
     user_id: t.record.id,
     guild_id: t.contextualGuildId,
     email_token: r
   });
-  else if (t.name === l.BM.MESSAGE) return p(d({}, c, s), {
+  else if (t.name === l.BM.MESSAGE) return _(d({}, c, s), {
     name: t.name,
     message_id: t.record.id,
     email_token: r
   });
-  else if (t.name === l.b.APPLICATION) return p(d({}, c, s), {
+  else if (t.name === l.b.APPLICATION) return _(d({}, c, s), {
     name: t.name,
     application_id: t.record.id,
     guild_id: t.contextualGuildId,

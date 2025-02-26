@@ -20,11 +20,11 @@ let l = "",
   u = "",
   d = null,
   f = !1,
-  p = null,
-  _ = "",
+  _ = null,
+  p = "",
   h = "",
-  m = "",
   g = "",
+  m = "",
   E = "",
   v = "",
   b = "",
@@ -36,11 +36,11 @@ let l = "",
   N = null;
 
 function A() {
-  d = null, l = "", c = null, u = "", f = !1, p = null, _ = "US", h = "", m = "", g = "", E = "", v = "", b = "", y = "", O = !1, S = null, I = null, T = null, N = null
+  d = null, l = "", c = null, u = "", f = !1, _ = null, p = "US", h = "", g = "", m = "", E = "", v = "", b = "", y = "", O = !1, S = null, I = null, T = null, N = null
 }
 
 function C(e) {
-  h = e.name, _ = e.country, g = e.line1, E = e.line2, v = e.city, b = e.postalCode, y = e.state, m = e.email
+  h = e.name, p = e.country, m = e.line1, E = e.line2, v = e.city, b = e.postalCode, y = e.state, g = e.email
 }
 
 function R(e) {
@@ -68,7 +68,7 @@ function D(e) {
     nonce: n,
     billingAddress: r
   } = e;
-  l = t, c = n, C(r), O = _.length > 0
+  l = t, c = n, C(r), O = p.length > 0
 }
 
 function w() {
@@ -96,14 +96,14 @@ function M(e) {
     info: t,
     isValid: n
   } = e;
-  null != t.name && "" !== t.name && (h = t.name), _ = t.country, h = t.name, g = t.line1, E = t.line2, v = t.city, b = t.postalCode, y = t.state, m = t.email, O = n
+  null != t.name && "" !== t.name && (h = t.name), p = t.country, h = t.name, m = t.line1, E = t.line2, v = t.city, b = t.postalCode, y = t.state, g = t.email, O = n
 }
 
 function k(e) {
   let {
     data: t
   } = e;
-  p = t
+  _ = t
 }
 
 function j() {
@@ -147,7 +147,7 @@ class V extends(r = i.ZP.Store) {
     return I
   }
   get adyenPaymentData() {
-    return p
+    return _
   }
   get redirectedPaymentSourceId() {
     return N
@@ -163,9 +163,9 @@ class V extends(r = i.ZP.Store) {
   getBillingAddressInfo() {
     return {
       name: h,
-      email: m,
-      country: _,
-      line1: g,
+      email: g,
+      country: p,
+      line1: m,
       line2: E,
       city: v,
       postalCode: b,

@@ -1,12 +1,12 @@
-/** Chunk was on 63061 **/
+/** Chunk was on 65936 **/
 n.d(t, {
   Z: () => F
 }), n(411104), n(47120);
 var r = n(200651);
 n(192379);
 var i = n(392711),
-  o = n(481060),
-  l = n(570140),
+  l = n(481060),
+  o = n(570140),
   s = n(904245),
   a = n(317770),
   c = n(100527),
@@ -19,24 +19,24 @@ var i = n(392711),
   h = n(626135),
   f = n(74538),
   g = n(557457),
-  O = n(970645),
-  N = n(30684),
+  N = n(970645),
+  O = n(30684),
   I = n(514701),
   b = n(6242),
   T = n(467721),
   C = n(757692),
   S = n(281494),
   y = n(276444),
-  R = n(937579),
-  P = n(522558),
+  P = n(937579),
+  R = n(522558),
   A = n(879463),
   v = n(822070),
-  D = n(520540),
-  L = n(11352),
-  x = n(474936),
+  x = n(520540),
+  D = n(11352),
+  L = n(474936),
   k = n(981631),
-  M = n(354459),
-  j = n(37113),
+  j = n(354459),
+  M = n(37113),
   Z = n(388032);
 
 function U(e, t, n) {
@@ -75,17 +75,17 @@ function V(e, t) {
 }
 class G extends a.Z {
   _initialize() {
-    __OVERLAY__ ? l.Z.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (l.Z.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), l.Z.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), l.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), l.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), l.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities), l.Z.subscribe("POST_CONNECTION_OPEN", this._trackCustomNotificationSoundsExposure), l.Z.subscribe("MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED", this.maybeShowHDStreamingViewerUpsellMessage))
+    __OVERLAY__ ? o.Z.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (o.Z.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), o.Z.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), o.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), o.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), o.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities), o.Z.subscribe("POST_CONNECTION_OPEN", this._trackCustomNotificationSoundsExposure), o.Z.subscribe("MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED", this.maybeShowHDStreamingViewerUpsellMessage))
   }
   _terminate() {
-    __OVERLAY__ ? l.Z.unsubscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (l.Z.unsubscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), l.Z.unsubscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), l.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), l.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), l.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities), l.Z.unsubscribe("POST_CONNECTION_OPEN", this._trackCustomNotificationSoundsExposure), l.Z.unsubscribe("MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED", this.maybeShowHDStreamingViewerUpsellMessage))
+    __OVERLAY__ ? o.Z.unsubscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (o.Z.unsubscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), o.Z.unsubscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), o.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), o.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), o.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities), o.Z.unsubscribe("POST_CONNECTION_OPEN", this._trackCustomNotificationSoundsExposure), o.Z.unsubscribe("MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED", this.maybeShowHDStreamingViewerUpsellMessage))
   }
   handleMessageLengthUpsell(e) {
     let {
       channel: t,
       content: i
     } = e;
-    (0, o.ZDy)(async () => {
+    (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("33184").then(n.bind(n, 465836));
@@ -104,7 +104,7 @@ class G extends a.Z {
       n = {
         autoTrackExposure: !1
       };
-    D.g.getCurrentConfig(t, n).enabled && !A.eP.getCurrentConfig(t, n).enabled && v.$.getCurrentConfig(t, n).enabled && (0, S.bq)()
+    x.g.getCurrentConfig(t, n).enabled && !A.eP.getCurrentConfig(t, n).enabled && v.$.getCurrentConfig(t, n).enabled && (0, S.bq)()
   }
   openPremiumPaymentModalInApp(e) {
     if (__OVERLAY__) throw Error("Should not use this function from the overlay, use ModalAPI.openModal instead");
@@ -124,8 +124,8 @@ class G extends a.Z {
       followupSKUInfo: r,
       analyticsObject: i
     } = null != e ? e : {};
-    return new Promise((e, o) => {
-      this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = o, l.Z.dispatch({
+    return new Promise((e, l) => {
+      this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = l, o.Z.dispatch({
         type: "PREMIUM_PAYMENT_MODAL_OPEN",
         initialPlanId: t,
         subscriptionTier: n,
@@ -139,32 +139,32 @@ class G extends a.Z {
       let e = p.default.getCurrentUser();
       if (null != e && e.verified) {
         let t = !(0, f.I5)(e) && m.Z.shouldFetchOffer();
-        await (0, R.T)("PremiumManager", void 0, t)
+        await (0, P.T)("PremiumManager", t)
       }
-      l.Z.dispatch({
+      o.Z.dispatch({
         type: "PREMIUM_MARKETING_DATA_READY"
       })
     }), U(this, "_maybeFetchCheckoutRecovery", async () => {
       let e = p.default.getCurrentUser();
-      null != e && e.verified && !(0, f.I5)(e) && N.Z.shouldFetchCheckoutRecovery() && await (0, O.o)()
+      null != e && e.verified && !(0, f.I5)(e) && O.Z.shouldFetchCheckoutRecovery() && await (0, N.o)()
     }), U(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
-      } = P.w.getCurrentConfig({
+      } = R.w.getCurrentConfig({
         location: "PremiumManager"
       }, {
         autoTrackExposure: !1
       });
       e && (0, _.W)()
     }), U(this, "_trackCustomNotificationSoundsExposure", () => {
-      L.Y.trackExposure({
+      D.Y.trackExposure({
         location: "PremiumManager"
       })
     }), U(this, "_handlePremiumPaymentModalOpen", e => {
       (0, d.Z)(V(w({}, e), {
         analyticsLocations: [c.Z.OVERLAY],
         onClose: e => {
-          l.Z.dispatch({
+          o.Z.dispatch({
             type: "PREMIUM_PAYMENT_MODAL_CLOSE",
             didSucceed: e
           })
@@ -180,21 +180,21 @@ class G extends a.Z {
       (null == t ? void 0 : t.id) !== e.senderUserId && this._maybeSendViewerUpsellMessage(e.channelId, e.guildId, t)
     }), U(this, "_maybeSendViewerUpsellMessage", (0, i.debounce)((e, t, n) => {
       var r, i;
-      let o = u.Z.getSelectedParticipant(e),
-        l = (0, C.o)(o, n),
+      let l = u.Z.getSelectedParticipant(e),
+        o = (0, C.o)(l, n),
         {
           sendNitroMessage: a
-        } = (0, b.TD)(l),
+        } = (0, b.TD)(o),
         c = null !== (i = null === (r = E.Z.getGuild(t)) || void 0 === r ? void 0 : r.premiumTier) && void 0 !== i ? i : k.Eu4.NONE;
-      if (T.Z.cooldownIsActive() || !a || c >= k.Eu4.TIER_2 || (null == o ? void 0 : o.type) !== M.fO.STREAM || (null == o ? void 0 : o.id) === (null == n ? void 0 : n.id) || null == o.maxResolution || null == o.maxFrameRate) return;
+      if (T.Z.cooldownIsActive() || !a || c >= k.Eu4.TIER_2 || (null == l ? void 0 : l.type) !== j.fO.STREAM || (null == l ? void 0 : l.id) === (null == n ? void 0 : n.id) || null == l.maxResolution || null == l.maxFrameRate) return;
       I.I();
       let d = Z.NW.formatToPlainString(Z.t.AbyeZG, {
-        nickname: o.userNick,
-        resolution: (0, j.o6)(o.maxResolution.height),
-        fps: (0, g.bp)(o.maxFrameRate)
+        nickname: l.userNick,
+        resolution: (0, M.o6)(l.maxResolution.height),
+        fps: (0, g.bp)(l.maxFrameRate)
       });
       s.Z.sendNitroSystemMessage(e, d), h.default.track(k.rMx.PREMIUM_UPSELL_MESSAGE_SENT, {
-        type: x.cd.HD_STREAMING_VIEWER_UPSELL,
+        type: L.cd.HD_STREAMING_VIEWER_UPSELL,
         location_section: null != t ? k.jXE.TEXT_IN_VOICE : k.jXE.CHANNEL_TEXT_AREA,
         location_object: k.qAy.MESSAGE,
         guild_id: t

@@ -1,24 +1,24 @@
-/** Chunk was on 63061 **/
+/** Chunk was on 65936 **/
 n.d(t, {
   Z: () => p
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(570140),
-  l = n(317770),
+  l = n(570140),
+  o = n(317770),
   s = n(731971),
   a = n(626135),
   c = n(379164),
   u = n(590965),
   d = n(981631);
 let _ = "INVITE_MODAL_KEY";
-class E extends l.Z {
+class E extends o.Z {
   _initialize() {
-    o.Z.subscribe("INVITE_MODAL_OPEN", this.handleOpenModal), o.Z.subscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
+    l.Z.subscribe("INVITE_MODAL_OPEN", this.handleOpenModal), l.Z.subscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
   }
   _terminate() {
-    (0, i.Mr3)(_), o.Z.unsubscribe("INVITE_MODAL_OPEN", this.handleOpenModal), o.Z.unsubscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
+    (0, i.Mr3)(_), l.Z.unsubscribe("INVITE_MODAL_OPEN", this.handleOpenModal), l.Z.unsubscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
   }
   handleOpenModal(e) {
     let {

@@ -18,9 +18,9 @@ var i = n(399606),
   g = n(39604),
   m = n(981631),
   b = n(388032),
-  v = n(64960);
+  y = n(64960);
 
-function y(e) {
+function v(e) {
   (0, a.jW)(e, async () => {
     let {
       default: e
@@ -68,29 +68,29 @@ let j = e => {
           dismissibleContent: l.z.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK,
           shouldUseHorizontalButtons: !0,
           inlineArt: !0,
-          artClassName: v.clipsEducationArt,
+          artClassName: y.clipsEducationArt,
           position: "top",
           header: (0, r.jsx)("div", {
-            className: v.header,
+            className: y.header,
             children: b.NW.format(b.t["o+srEx"], {
               keybind: t,
               keybindHook: () => (0, r.jsx)("span", {
-                className: v.keybindHintKeys,
+                className: y.keybindHintKeys,
                 children: (0, r.jsx)(o.M2$, {
-                  className: v.keybindShortcut,
+                  className: y.keybindShortcut,
                   shortcut: t
                 })
               })
             })
           }),
-          headerClassName: v.clipsEducationHeader,
+          headerClassName: y.clipsEducationHeader,
           body: (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
             color: "always-white",
-            className: v.bodyText,
+            className: y.bodyText,
             children: b.NW.format(b.t.DWeRm5, {
               keybindHook: () => (0, r.jsx)("div", {
-                className: v.keyCombo,
+                className: y.keyCombo,
                 children: t
               }),
               keybind: t
@@ -125,7 +125,7 @@ let j = e => {
           hotkey: p.BB(null == a ? void 0 : a.shortcut, !0)
         }) : b.NW.string(b.t.s52pjo),
         onClick: O,
-        onContextMenu: y,
+        onContextMenu: v,
         icon: o.AlX
       })
     })

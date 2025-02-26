@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  U: () => p
+  U: () => _
 });
 var r = n(620824),
   i = n(737143),
@@ -16,7 +16,7 @@ let f = new l.E([c.NR, c.ZI, c.Ob, c.uc, c.m1, r.y, o.b, i.L4, a.u], u.$P.PAYMEN
   location: "payment flow started"
 });
 
-function p(e) {
+function _(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
   s.default.track(d.rMx.PAYMENT_FLOW_STARTED, e, t), f.trigger()
 }

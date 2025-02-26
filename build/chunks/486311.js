@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(981631),
   m = n(176505),
   b = n(783684),
-  v = n(388032),
-  y = n(55345);
+  y = n(388032),
+  v = n(55345);
 
 function O(e) {
   let {
@@ -34,9 +34,9 @@ function O(e) {
     }),
     text: (0, r.jsx)("span", {
       className: o()({
-        [y.textImportant]: j
+        [v.textImportant]: j
       }),
-      children: v.NW.string(b.Z.yv3DJC)
+      children: y.NW.string(b.Z.yv3DJC)
     }),
     selected: n,
     onClick: l,

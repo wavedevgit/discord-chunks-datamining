@@ -15,11 +15,11 @@ var i = n(442837),
   u = n(359110),
   d = n(769654),
   f = n(496675),
-  p = n(323038),
-  _ = n(652853),
+  _ = n(323038),
+  p = n(652853),
   h = n(788858),
-  m = n(228168),
-  g = n(981631),
+  g = n(228168),
+  m = n(981631),
   E = n(481736);
 let v = 3;
 
@@ -32,8 +32,8 @@ function b(e) {
     onClose: O
   } = e, {
     profileType: S
-  } = (0, _.z)(), I = (0, p.Z)(b);
-  if (!(0, i.e7)([f.Z], () => f.Z.can(g.Plq.VIEW_CHANNEL, b))) return null;
+  } = (0, p.z)(), I = (0, _.Z)(b);
+  if (!(0, i.e7)([f.Z], () => f.Z.can(m.Plq.VIEW_CHANNEL, b))) return null;
   let T = e => {
       e.stopPropagation(), (0, d.X)(n.id), null == y || y({
         action: "OPEN_VOICE_GUILD"
@@ -44,8 +44,8 @@ function b(e) {
         action: "OPEN_VOICE_CHANNEL"
       }), null == O || O()
     },
-    A = S === m.y0.FULL_SIZE,
-    C = S === m.y0.PANEL,
+    A = S === g.y0.FULL_SIZE,
+    C = S === g.y0.PANEL,
     R = !A && !C;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {

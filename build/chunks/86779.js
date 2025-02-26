@@ -15,8 +15,8 @@ var r = n(200651),
   p = n(314897),
   g = n(626135),
   m = n(70956),
-  _ = n(970648),
-  f = n(981631),
+  f = n(970648),
+  _ = n(981631),
   b = n(388032),
   N = n(689169);
 let x = "mweb_handoff_nonce",
@@ -42,7 +42,7 @@ let x = "mweb_handoff_nonce",
       })
     }, [m, e]);
     let [S, y] = i.useState(null), T = i.useCallback(e => {
-      y(e), g.default.track(f.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
+      y(e), g.default.track(_.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
         reason: e,
         fingerprint: (0, a.K)(C)
       }, {
@@ -56,15 +56,15 @@ let x = "mweb_handoff_nonce",
         }
       }, [A, T]), i.useEffect(() => {
         null != n && "null" !== n && null != A && null == S && s.tn.post({
-          url: f.ANM.HANDOFF_EXCHANGE,
+          url: _.ANM.HANDOFF_EXCHANGE,
           body: {
             key: A,
             handoff_token: n
           },
           rejectWithError: !0
         }).then(e => h.Z.loginToken(e.body.token, !1)).then(() => {
-          g.default.track(f.rMx.LOGIN_SUCCESSFUL, {
-            source: f.uRl.MOBILE_WEB_HANDOFF,
+          g.default.track(_.rMx.LOGIN_SUCCESSFUL, {
+            source: _.uRl.MOBILE_WEB_HANDOFF,
             is_new_user: !1,
             fingerprint: (0, a.K)(C)
           });
@@ -95,16 +95,16 @@ let x = "mweb_handoff_nonce",
       }), (0, r.jsx)(u.zxk, {
         color: u.zxk.Colors.BRAND_INVERTED,
         onClick: () => {
-          let e = _.Z.generateNonce();
+          let e = f.Z.generateNonce();
           c.K.set(x, e), c.K.set(v, Date.now() + I);
-          let t = new URL(f.x0X),
+          let t = new URL(_.x0X),
             n = new URLSearchParams(window.location.search);
           n.delete("fingerprint"), n.delete("handoff_token");
           let r = new URLSearchParams;
-          r.set("redirect", encodeURIComponent(window.location.pathname + n.toString())), r.set("key", e), r.set("fingerprint", C), t.search = r.toString(), g.default.track(f.rMx.DEEP_LINK_CLICKED, {
+          r.set("redirect", encodeURIComponent(window.location.pathname + n.toString())), r.set("key", e), r.set("fingerprint", C), t.search = r.toString(), g.default.track(_.rMx.DEEP_LINK_CLICKED, {
             fingerprint: (0, a.K)(C),
             source: "mobile_web_handoff",
-            destination: f.x0X
+            destination: _.x0X
           }, {
             fingerprint: C,
             flush: !0

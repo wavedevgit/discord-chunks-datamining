@@ -2,13 +2,13 @@
 "use strict";
 n.d(t, {
   AE: () => c,
-  JS: () => _,
+  JS: () => p,
   Qu: () => h,
-  Ws: () => g,
-  bk: () => m,
+  Ws: () => m,
+  bk: () => g,
   ee: () => f,
   ou: () => d,
-  zi: () => p
+  zi: () => _
 }), n(47120);
 var r = n(192379),
   i = n(615287),
@@ -36,10 +36,10 @@ function d(e, t, r) {
   var a, c, d;
   let f = null != r ? o.Z.getDetectableGame(r) : null,
     {
-      default: p
+      default: _
     } = n(371651),
-    _ = null !== (a = null == p ? void 0 : p.getMostRecentOverlayRenderMethod()) && void 0 !== a ? a : void 0,
-    h = null != _ ? i.gl[_] : void 0;
+    p = null !== (a = null == _ ? void 0 : _.getMostRecentOverlayRenderMethod()) && void 0 !== a ? a : void 0,
+    h = null != p ? i.gl[p] : void 0;
   s.default.track(l.rMx.OVERLAY_TOGGLED, {
     enabled: e,
     setting_type: u(t),
@@ -67,7 +67,7 @@ function f(e, t) {
   }, t), n
 }
 
-function p(e, t) {
+function _(e, t) {
   var n, r, i;
   let {
     locked: o,
@@ -85,7 +85,7 @@ function p(e, t) {
   })
 }
 
-function _(e, t) {
+function p(e, t) {
   let {
     pinned: n,
     opacity: r
@@ -99,11 +99,11 @@ function _(e, t) {
 var h = function(e) {
     return e.SCREEN_SHARE = "screen share", e.CAMERA = "camera", e.MICROPHONE = "microphone", e.AUDIO = "audio", e.VOICE = "voice", e.CALL_BUTTON = "call button", e.SOUNDBOARD = "soundboard", e.GO_LIVE = "go live", e.INVITE = "invite", e.REDIRECT = "redirect", e
   }({}),
-  m = function(e) {
+  g = function(e) {
     return e.ENABLED = "enabled", e.DISABLED = "disabled", e.SETTINGS_OPENED = "settings opened", e.PANEL_OPENED = "panel opened", e.STREAM_PREVIEWED = "stream previewed", e.INVITE_SENT = "invite sent", e.JOIN_REQUEST_SENT = "join request sent", e.PROFILE_OPENED = "profile opened", e.GUILD_PROFILE_OPENED = "guild profile opened", e.CHAT = "chat", e
   }({});
 
-function g(e, t) {
+function m(e, t) {
   let {
     type: n,
     value: r,

@@ -8,9 +8,9 @@ n.r(t), n.d(t, {
   OVERLAY_MIN_RESOLUTION: () => c,
   OVERLAY_VERSION: () => s,
   UNSET_PID: () => f,
-  getPID: () => _,
-  getRPCAuthToken: () => m,
-  log: () => g,
+  getPID: () => p,
+  getRPCAuthToken: () => g,
+  log: () => m,
   setOutOfProcessSupport: () => v,
   setPID: () => h,
   supportsOutOfProcess: () => b,
@@ -31,9 +31,9 @@ let s = 2,
   u = "overlay_default",
   d = -2,
   f = -1,
-  p = !1;
+  _ = !1;
 
-function _() {
+function p() {
   var e;
   if (void 0 !== r && r !== f) return r;
   let t = parseInt(null !== (e = new URLSearchParams(window.location.search).get("pid")) && void 0 !== e ? e : "", 10);
@@ -44,15 +44,15 @@ function h(e) {
   r = e
 }
 
-function m() {
+function g() {
   return new URLSearchParams(window.location.search).get("rpc_auth_token")
 }
 
-function g(e) {
+function m(e) {
   (0, i.lW)({
     type: a.BmY.LOG_MESSAGES,
-    pid: _(),
-    token: m(),
+    pid: p(),
+    token: g(),
     payload: e
   })
 }
@@ -62,9 +62,9 @@ function E(e) {
 }
 
 function v(e) {
-  p = e
+  _ = e
 }
 
 function b() {
-  return p
+  return _
 }

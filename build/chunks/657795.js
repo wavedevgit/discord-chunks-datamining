@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(906732),
   d = n(104494),
   f = n(639119),
-  p = n(165583),
-  _ = n(626135),
+  _ = n(165583),
+  p = n(626135),
   h = n(453070),
-  m = n(926491),
-  g = n(419922),
+  g = n(926491),
+  m = n(419922),
   E = n(27733),
   v = n(611480),
   b = n(981631),
@@ -35,9 +35,9 @@ function T(e) {
   (0, h.fP)();
   let {
     analyticsLocations: A
-  } = (0, u.ZP)(c.Z.EMPTY_STATE), C = (0, s.Wu)([m.Z], () => v.Wt.map(e => m.Z.getStickerById(e)));
+  } = (0, u.ZP)(c.Z.EMPTY_STATE), C = (0, s.Wu)([g.Z], () => v.Wt.map(e => g.Z.getStickerById(e)));
   i.useEffect(() => {
-    _.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, {
+    p.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, {
       type: y.cd.EMPTY_STICKER_PICKER_UPSELL,
       source: {
         section: b.jXE.EMPTY_STICKER_PICKER_UPSELL
@@ -53,7 +53,7 @@ function T(e) {
     className: a()(S.emptyState, T, {
       [S.unifyTrialUpsell]: D
     }),
-    children: [D ? (0, r.jsx)(p.ZP, {
+    children: [D ? (0, r.jsx)(_.ZP, {
       discountOffer: P,
       trialOffer: R,
       onClose: N,
@@ -72,7 +72,7 @@ function T(e) {
         children: O.NW.string(O.t.FnNud3)
       }), (0, r.jsx)("div", {
         className: S.stickersRow,
-        children: C.filter(e => null != e).map(e => (0, r.jsx)(g.ZP, {
+        children: C.filter(e => null != e).map(e => (0, r.jsx)(m.ZP, {
           sticker: e,
           className: S.sticker,
           size: I

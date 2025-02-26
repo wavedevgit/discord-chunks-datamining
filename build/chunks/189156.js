@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  WR: () => p,
+  WR: () => _,
   qE: () => f,
-  wQ: () => _
+  wQ: () => p
 });
 var r = n(200651);
 n(192379);
@@ -48,7 +48,7 @@ function f(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     userId: t,
     headingColor: n
@@ -68,14 +68,14 @@ function p(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     userId: t,
     headingColor: n
   } = e;
   return (0, r.jsx)(s.Z.Overlay, {
     className: u.profile,
-    children: (0, r.jsx)(p, {
+    children: (0, r.jsx)(_, {
       userId: t,
       headingColor: n
     })

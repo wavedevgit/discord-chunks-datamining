@@ -15,8 +15,8 @@ var r = n(200651),
   p = n(659900),
   g = n(962220),
   m = n(473855),
-  _ = n(306453),
-  f = n(929809),
+  f = n(306453),
+  _ = n(929809),
   b = n(108427),
   N = n(390885),
   x = n(314897),
@@ -95,7 +95,7 @@ class L extends i.PureComponent {
     } = this.props;
     return (s()(null != e, "guild template must not be null"), e.state === S.Rj.RESOLVING) ? (0, r.jsx)(u.ZP, {
       className: Z.authBox,
-      children: (0, r.jsx)(_.Z, {
+      children: (0, r.jsx)(f.Z, {
         guildTemplate: e
       })
     }) : (0, r.jsx)(k, {
@@ -135,7 +135,7 @@ class L extends i.PureComponent {
           transitionTo: i,
           location: o,
           onRegister: () => {
-            (0, f.c)(y.M5.ORGANIC_REGISTERED_GUILD_TEMPLATE), N.Z.flowStart(T.MK.ORGANIC_GUILD_TEMPLATES, T.EW.NUF_STARTED)
+            (0, _.c)(y.M5.ORGANIC_REGISTERED_GUILD_TEMPLATE), N.Z.flowStart(T.MK.ORGANIC_GUILD_TEMPLATES, T.EW.NUF_STARTED)
           }
         });
       case S.Rj.EXPIRED:

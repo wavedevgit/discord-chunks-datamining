@@ -14,8 +14,8 @@ var r, i = n(200651),
   p = n(481060),
   g = n(893776),
   m = n(881052),
-  _ = n(899370),
-  f = n(224841),
+  f = n(899370),
+  _ = n(224841),
   b = n(13430),
   N = n(213609),
   x = n(882037),
@@ -191,7 +191,7 @@ class eu extends(r = o.PureComponent) {
       onRegister: c,
       usernameSuggestion: u,
       isMobileWebInviteRegistration: d
-    } = this.props, h = null != a ? a.code : null, p = null != s ? s.skuId : null, g = x.MD.getState(), _ = (0, K.Ew)(u) ? null : t === u, f = $.a ? await (0, y.K)(t) : t, b = $.a ? await (0, y.K)(n) : n;
+    } = this.props, h = null != a ? a.code : null, p = null != s ? s.skuId : null, g = x.MD.getState(), f = (0, K.Ew)(u) ? null : t === u, _ = $.a ? await (0, y.K)(t) : t, b = $.a ? await (0, y.K)(n) : n;
     V.S.dispatch(Q.CkL.WAVE_EMPHASIZE), this.setState({
       registering: !0,
       apiErrors: {}
@@ -199,12 +199,12 @@ class eu extends(r = o.PureComponent) {
     try {
       d || null == a ? await (0, I.R$)({
         email: e,
-        username: f,
+        username: _,
         globalName: b,
         consent: i,
         password: r,
         invite: h,
-        usedUsernameSuggestion: _,
+        usedUsernameSuggestion: f,
         guildTemplateCode: null == l ? void 0 : l.code,
         giftCodeSKUId: p,
         birthday: o,
@@ -213,7 +213,7 @@ class eu extends(r = o.PureComponent) {
         consent: i,
         invite: h,
         giftCodeSKUId: p,
-        usedUsernameSuggestion: _,
+        usedUsernameSuggestion: f,
         globalName: b
       }), null == c || c()
     } catch (t) {
@@ -442,8 +442,8 @@ class eu extends(r = o.PureComponent) {
       emailClientError: h,
       usernameClientError: g,
       passwordClientError: m,
-      dateOfBirthClientError: _,
-      registering: f,
+      dateOfBirthClientError: f,
+      registering: _,
       apiErrors: {
         email: N,
         username: x,
@@ -469,7 +469,7 @@ class eu extends(r = o.PureComponent) {
       }, e), {
         children: (0, i.jsx)(E.zx, {
           type: "submit",
-          submitting: f,
+          submitting: _,
           disabled: !this.hasConsent() || this.state.isRateLimited,
           children: en.NW.string(en.t["3PatS0"])
         })
@@ -571,7 +571,7 @@ class eu extends(r = o.PureComponent) {
         name: "date_of_birth",
         onChange: this.handleBirthdayChange,
         ref: this.dateOfBirthRef,
-        error: null != _ ? _ : ec(O),
+        error: null != f ? f : ec(O),
         value: u,
         required: !0
       }), (0, i.jsx)(C.Z, {}), D, R, Z, P, $.a ? null : (0, i.jsx)(E.zx, {
@@ -621,7 +621,7 @@ class eu extends(r = o.PureComponent) {
       isUnderage: e,
       isMobileWebInviteRegistration: t
     } = this.props;
-    if (e || this.hasError("date_of_birth")) return (0, i.jsx)(f.Z, {});
+    if (e || this.hasError("date_of_birth")) return (0, i.jsx)(_.Z, {});
     let {
       invite: n,
       giftCode: r,
@@ -741,10 +741,10 @@ class eu extends(r = o.PureComponent) {
 }
 
 function ed(e) {
-  let t = (0, d.cj)([U.Z, G.default, _.Z, R.Z, P.Z], () => ({
+  let t = (0, d.cj)([U.Z, G.default, f.Z, R.Z, P.Z], () => ({
       consentRequired: U.Z.getAuthenticationConsentRequired(),
       authenticated: G.default.isAuthenticated(),
-      isUnderage: _.Z.isUnderageAnonymous(),
+      isUnderage: f.Z.isUnderageAnonymous(),
       country: R.Z.getCountryCode(),
       hasLoggedInAccounts: P.Z.getHasLoggedInAccounts()
     })),

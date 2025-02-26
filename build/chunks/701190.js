@@ -47,8 +47,8 @@ function d(e, t) {
   }), e
 }
 let f = new Map,
-  p = new Map,
-  _ = {};
+  _ = new Map,
+  p = {};
 
 function h(e, t) {
   var n;
@@ -61,12 +61,12 @@ function h(e, t) {
       state: s.r2o.RESOLVING,
       code: r.baseCode
     };
-  t(o), (f = new Map(f)).set(e, o), (null === (n = o.guild) || void 0 === n ? void 0 : n.id) != null && (_ = d(c({}, _), {
+  t(o), (f = new Map(f)).set(e, o), (null === (n = o.guild) || void 0 === n ? void 0 : n.id) != null && (p = d(c({}, p), {
     [o.guild.id]: e
   }))
 }
 
-function m(e) {
+function g(e) {
   let {
     code: t
   } = e, n = (0, a.fU)(t);
@@ -76,7 +76,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   return h(e.code, t => {
     var n, r;
     t.state = s.r2o.RESOLVED, t.guild = e.invite.guild, t.channel = e.invite.channel, t.inviter = e.invite.inviter, t.approximate_member_count = null !== (n = e.invite.approximate_member_count) && void 0 !== n ? n : null, t.approximate_presence_count = null !== (r = e.invite.approximate_presence_count) && void 0 !== r ? r : null, t.target_type = e.invite.target_type, t.target_user = e.invite.target_user, t.target_application = e.invite.target_application, t.expires_at = e.invite.expires_at, t.stage_instance = e.invite.stage_instance, t.friends_count = e.invite.friends_count, t.is_contact = e.invite.is_contact, t.guild_scheduled_event = e.invite.guild_scheduled_event, t.type = e.invite.type, t.flags = e.invite.flags, t.is_nickname_changeable = e.invite.is_nickname_changeable
@@ -121,7 +121,7 @@ function S(e) {
 }
 
 function I(e) {
-  return p.set(e.code, e.error), h(e.code, e => {
+  return _.set(e.code, e.error), h(e.code, e => {
     e.state = s.r2o.ERROR
   })
 }
@@ -148,19 +148,19 @@ class C extends(r = i.ZP.Store) {
     return f.get(e)
   }
   getInviteError(e) {
-    return p.get(e)
+    return _.get(e)
   }
   getInvites() {
     return f
   }
   getInviteKeyForGuildId(e) {
-    return _[e]
+    return p[e]
   }
 }
 l(C, "displayName", "InviteStore");
 let R = new C(o.Z, {
-  INVITE_RESOLVE: m,
-  INVITE_RESOLVE_SUCCESS: g,
+  INVITE_RESOLVE: g,
+  INVITE_RESOLVE_SUCCESS: m,
   INVITE_RESOLVE_FAILURE: y,
   INSTANT_INVITE_REVOKE_SUCCESS: y,
   FRIEND_INVITE_CREATE_SUCCESS: v,

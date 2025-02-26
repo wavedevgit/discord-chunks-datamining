@@ -16,8 +16,8 @@ var r = n(544891),
   u = n(630388),
   d = n(45966),
   f = n(290511),
-  p = n(981631),
-  _ = n(372897);
+  _ = n(981631),
+  p = n(372897);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -28,7 +28,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,13 +53,13 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function v(e) {
-  c.default.track(p.rMx.GUILD_ONBOARDING_LOADED, E(m({}, (0, o.hH)(e)), {
+  c.default.track(_.rMx.GUILD_ONBOARDING_LOADED, E(g({}, (0, o.hH)(e)), {
     has_new_prompts: !1,
     number_of_prompts: 0
   }))
@@ -70,13 +70,13 @@ function b(e) {
     type: "GUILD_ONBOARDING_PROMPTS_FETCH_START",
     guildId: e
   }), r.tn.get({
-    url: p.ANM.GUILD_ONBOARDING(e),
+    url: _.ANM.GUILD_ONBOARDING(e),
     rejectWithError: !1
   }).then(t => {
     let {
       body: n
     } = t, r = (0, f.cf)(n);
-    return i.Z.dispatch(m({
+    return i.Z.dispatch(g({
       type: "GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS",
       guildId: e
     }, r)).then(() => r.prompts)
@@ -88,9 +88,9 @@ function b(e) {
 async function y(e) {
   var t, n;
   let r = a.default.getId(),
-    i = (0, u.yE)(null !== (n = null === (t = s.ZP.getMember(e, r)) || void 0 === t ? void 0 : t.flags) && void 0 !== n ? n : 0, _.q.COMPLETED_ONBOARDING),
+    i = (0, u.yE)(null !== (n = null === (t = s.ZP.getMember(e, r)) || void 0 === t ? void 0 : t.flags) && void 0 !== n ? n : 0, p.q.COMPLETED_ONBOARDING),
     o = l.Z.getGuild(e);
-  if (null == o || !o.hasFeature(p.oNc.GUILD_ONBOARDING)) return Promise.resolve();
+  if (null == o || !o.hasFeature(_.oNc.GUILD_ONBOARDING)) return Promise.resolve();
   let c = d.Z.shouldFetchPrompts(e),
     f = d.Z.getOnboardingPrompts(e);
   if (!c && f.length > 0) return f.every(e => !e.inOnboarding) ? I(e) : i || O(e), Promise.resolve();
@@ -107,10 +107,10 @@ function O(e) {
 let S = -2;
 
 function I(e) {
-  c.default.track(p.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(m({}, (0, o.hH)(e)), {
+  c.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(g({}, (0, o.hH)(e)), {
     step: S,
     required: !0
-  })), c.default.track(p.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(m({}, (0, o.hH)(e)), {
+  })), c.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(g({}, (0, o.hH)(e)), {
     step: S,
     skipped: !1,
     is_final_step: !0,

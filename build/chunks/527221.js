@@ -11,13 +11,13 @@ var r = n(173850),
   u = RegExp.prototype;
 e.exports = function(e, t, n, d) {
   var f = s(e),
-    p = !a(function() {
+    _ = !a(function() {
       var t = {};
       return t[f] = function() {
         return 7
       }, 7 !== "" [e](t)
     }),
-    _ = p && !a(function() {
+    p = _ && !a(function() {
       var t = !1,
         n = /a/;
       return "split" === e && ((n = {}).constructor = {}, n.constructor[c] = function() {
@@ -26,12 +26,12 @@ e.exports = function(e, t, n, d) {
         return t = !0, null
       }, n[f](""), !t
     });
-  if (!p || !_ || n) {
+  if (!_ || !p || n) {
     var h = r(/./ [f]),
-      m = t(f, "" [e], function(e, t, n, i, a) {
+      g = t(f, "" [e], function(e, t, n, i, a) {
         var s = r(e),
           l = t.exec;
-        return l === o || l === u.exec ? p && !a ? {
+        return l === o || l === u.exec ? _ && !a ? {
           done: !0,
           value: h(t, n, i)
         } : {
@@ -41,7 +41,7 @@ e.exports = function(e, t, n, d) {
           done: !1
         }
       });
-    i(String.prototype, e, m[0]), i(u, f, m[1])
+    i(String.prototype, e, g[0]), i(u, f, g[1])
   }
   d && l(u[f], "sham", !0)
 }

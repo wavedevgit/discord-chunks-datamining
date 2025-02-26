@@ -14,11 +14,11 @@ var i = n(442837),
   u = n(605436),
   d = n(496675),
   f = n(475413),
-  p = n(981631),
-  _ = n(388032),
+  _ = n(981631),
+  p = n(388032),
   h = n(915034);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -61,12 +61,12 @@ function b(e) {
   let {
     guild: t,
     guildMember: n,
-    numRoles: m,
+    numRoles: g,
     highestRole: E,
     onAddRole: b,
     buttonRef: y
   } = e, O = (0, i.e7)([c.Z], () => c.Z.roleStyle);
-  if (!(0, i.e7)([d.Z], () => d.Z.can(p.Plq.MANAGE_ROLES, t))) return null;
+  if (!(0, i.e7)([d.Z], () => d.Z.can(_.Plq.MANAGE_ROLES, t))) return null;
   let S = e => (0, u.Gy)(t.id, e.id) && !e.managed && d.Z.isRoleHigher(t, E, e) && -1 === n.roles.indexOf(e.id);
   return (0, r.jsx)(a.y, {
     position: "bottom",
@@ -84,25 +84,25 @@ function b(e) {
       })
     },
     children: e => (0, r.jsx)(s.DY3, {
-      text: _.NW.string(_.t.icyMgY),
+      text: p.NW.string(p.t.icyMgY),
       "aria-label": !1,
-      shouldShow: m > 0,
-      children: (0, r.jsxs)(f.kF, v(g({
+      shouldShow: g > 0,
+      children: (0, r.jsxs)(f.kF, v(m({
         className: h.button,
         color: o.zx.Colors.CUSTOM,
         themeColor: "none",
         size: o.zx.Sizes.NONE,
         grow: !1,
-        "aria-label": _.NW.string(_.t.icyMgY),
+        "aria-label": p.NW.string(p.t.icyMgY),
         buttonRef: y
       }, e), {
         children: [(0, r.jsx)(s.qJs, {
           size: "xs",
           color: "currentColor"
-        }), 0 === m && (0, r.jsx)(s.Text, {
+        }), 0 === g && (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "none",
-          children: _.NW.string(_.t.icyMgY)
+          children: p.NW.string(p.t.icyMgY)
         })]
       }))
     })

@@ -15,8 +15,8 @@ var r = n(200651),
   p = n(108427),
   g = n(626135),
   m = n(981631),
-  _ = n(388032),
-  f = n(902105),
+  f = n(388032),
+  _ = n(902105),
   b = n(455812);
 
 function N(e) {
@@ -54,38 +54,38 @@ function x(e) {
   return "failed" === l ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(375673),
-      className: a()(f.image, b.marginBottom20)
+      className: a()(_.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom8,
-      children: _.NW.string(_.t.PCgG39)
+      children: f.NW.string(f.t.PCgG39)
     }), (0, r.jsx)(d.DK, {
       className: b.marginBottom40,
-      children: _.NW.string(_.t.tQpeAw)
+      children: f.NW.string(f.t.tQpeAw)
     }), (0, r.jsx)(d.zx, {
       onClick: I,
-      children: _.NW.string(_.t.dKhVQE)
+      children: f.NW.string(f.t.dKhVQE)
     })]
   }) : "succeeded" === l ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(73962),
-      className: a()(f.image, b.marginBottom20)
+      className: a()(_.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom40,
-      children: _.NW.string(_.t.dAfGb2)
+      children: f.NW.string(f.t.dAfGb2)
     }), (0, r.jsx)(d.zx, {
       onClick: E,
-      children: _.NW.string(_.t.uJWIj4)
+      children: f.NW.string(f.t.uJWIj4)
     })]
   }) : (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(892235),
-      className: a()(f.image, b.marginBottom20)
+      className: a()(_.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom8,
-      children: _.NW.string(_.t["0c8+5u"])
+      children: f.NW.string(f.t["0c8+5u"])
     }), (0, r.jsx)(d.DK, {
       className: b.marginBottom40,
-      children: _.NW.string(_.t.ULTCBA)
+      children: f.NW.string(f.t.ULTCBA)
     }), (0, r.jsx)(d.zx, {
       submitting: !0,
       color: d.zx.Colors.PRIMARY

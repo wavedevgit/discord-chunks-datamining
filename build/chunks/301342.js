@@ -2,7 +2,7 @@
 n.d(t, {
   P: () => w,
   Qo: () => E,
-  ZP: () => Z,
+  ZP: () => I,
   kw: () => D,
   rj: () => T
 });
@@ -21,8 +21,8 @@ var r = n(200651),
   g = n(540059),
   m = n(680089),
   b = n(430824),
-  v = n(496675),
-  y = n(9156),
+  y = n(496675),
+  v = n(9156),
   O = n(203818),
   j = n(438144),
   _ = n(981631),
@@ -64,22 +64,22 @@ function N(e, t) {
 function S(e) {
   e.stopPropagation()
 }
-let I = i.memo(function(e) {
+let Z = i.memo(function(e) {
     let t, {
         channel: l,
         connectChannelDragSource: p,
         connectChannelDropTarget: O,
         disableManageChannels: j,
-        position: I,
-        sortingPosition: Z,
+        position: Z,
+        sortingPosition: I,
         hideIcon: w,
         children: E
       } = e,
       T = (0, g.Q3)("CategoryChannel"),
-      D = (0, s.e7)([y.ZP], () => y.ZP.isChannelMuted(l.getGuildId(), l.id)),
+      D = (0, s.e7)([v.ZP], () => v.ZP.isChannelMuted(l.getGuildId(), l.id)),
       A = (0, s.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
-      R = (0, s.e7)([v.Z], () => v.Z.can(_.Plq.MANAGE_CHANNELS, l));
-    t = null != Z ? I > Z ? x.containerDragAfter : x.containerDragBefore : x.containerDefault;
+      R = (0, s.e7)([y.Z], () => y.Z.can(_.Plq.MANAGE_CHANNELS, l));
+    t = null != I ? Z > I ? x.containerDragAfter : x.containerDragBefore : x.containerDefault;
     let L = i.useCallback(() => {
         A ? (0, u.mJ)(l.id) : (0, u.c4)(l.id)
       }, [l.id, A]),
@@ -223,7 +223,7 @@ let I = i.memo(function(e) {
       });
     return null != O && null != p ? O(p(H)) : H
   }),
-  Z = (0, p.B)(I),
+  I = (0, p.B)(Z),
   w = i.memo(function(e) {
     let {
       name: t,

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _,
-  q: () => p
+  Z: () => p,
+  q: () => _
 });
 var r = n(192379),
   i = n(442837),
@@ -15,9 +15,9 @@ var r = n(192379),
   d = n(238),
   f = n(55563);
 
-function p(e) {
+function _(e) {
   r.useEffect(() => {
-    _(e)
+    p(e)
   }, [e]);
   let t = (0, i.Wu)([d.Z, f.Z, u.Z], () => {
       let t = d.Z.getStoreLayout(e);
@@ -30,6 +30,6 @@ function p(e) {
   }), [t, n])
 }
 
-function _(e) {
+function p(e) {
   (0, o.k)(e), (0, s.oJ)(e), c.default.isAuthenticated() && (0, a.yD)(e, !1)
 }

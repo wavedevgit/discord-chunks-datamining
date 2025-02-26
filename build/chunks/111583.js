@@ -13,7 +13,7 @@ var i, o = n(442837),
   d = n(300429),
   f = n(981631);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,21 +22,21 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 let h = 10 * c.Z.Millis.SECOND,
-  m = 1.5 * c.Z.Millis.SECOND,
-  g = 5,
+  g = 1.5 * c.Z.Millis.SECOND,
+  m = 5,
   E = {},
   v = Object.freeze({});
 
@@ -55,7 +55,7 @@ function y(e) {
     o = .8 * h;
   if (null != r && (null != r.timeout || r.prevSend + o > i)) return !1;
   let c = setTimeout(() => {
-    if (null != r && r.channelId === t && n === u.default.getId() && null != r.timeout) r.timeout = null, !(R(t) > g) && a.tn.post({
+    if (null != r && r.channelId === t && n === u.default.getId() && null != r.timeout) r.timeout = null, !(R(t) > m) && a.tn.post({
       url: f.ANM.TYPING(t),
       oldFormErrors: !0,
       rejectWithError: !0
@@ -77,7 +77,7 @@ function y(e) {
         })
       }
     })
-  }, null == r || r.prevSend > i - 2 * o ? m : 0);
+  }, null == r || r.prevSend > i - 2 * o ? g : 0);
   return r = {
     channelId: t,
     timeout: c,
@@ -117,7 +117,7 @@ function T(e) {
   let {
     channelId: t,
     userId: n
-  } = e, r = _({}, b(t));
+  } = e, r = p({}, b(t));
   clearTimeout(r[n]), r[n] = I(t, n), E[t] = r
 }
 
@@ -127,7 +127,7 @@ function N(e) {
     userId: n
   } = e, r = E[t];
   if (null == r || null == r[n]) return !1;
-  let i = _({}, r);
+  let i = p({}, r);
   clearTimeout(i[n]), delete i[n], E[t] = i
 }
 
@@ -161,7 +161,7 @@ class P extends(i = o.ZP.Store) {
     return null != b(e)[t]
   }
 }
-p(P, "displayName", "TypingStore");
+_(P, "displayName", "TypingStore");
 let D = new P(s.Z, {
   TYPING_START: T,
   TYPING_STOP: N,

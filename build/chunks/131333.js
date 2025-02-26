@@ -13,8 +13,8 @@ var r = n(200651),
   u = n(549006),
   d = n(146128),
   f = n(981631),
-  p = n(675654),
-  _ = n(333219);
+  _ = n(675654),
+  p = n(333219);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -124,7 +124,7 @@ let k = i.forwardRef(function(e, t) {
   } = i.useContext(l.h), u = (0, o.uR)(c, a);
   return i.useImperativeHandle(t, () => ({
     fireConfetti: (e, t) => {
-      u.createMultipleConfetti(E(m({}, p.We), {
+      u.createMultipleConfetti(E(g({}, _.We), {
         position: {
           type: "static",
           value: {
@@ -166,10 +166,10 @@ let k = i.forwardRef(function(e, t) {
 function j(e) {
   let {
     children: t
-  } = e, n = i.useRef({}), [o, l] = i.useState(null), c = M(o), p = i.useRef(null), [h, m] = i.useState(!1), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), v = i.useCallback(e => {
+  } = e, n = i.useRef({}), [o, l] = i.useState(null), c = M(o), _ = i.useRef(null), [h, g] = i.useState(!1), m = i.useRef("jack_o_lantern"), E = (0, s.bp)(), v = i.useCallback(e => {
     if (!h) {
       let t = w(e);
-      null != t && (g.current = t, m(!0), l(null))
+      null != t && (m.current = t, g(!0), l(null))
     }
   }, [h]), b = i.useMemo(() => ({
     triggerAnimation: v,
@@ -177,17 +177,17 @@ function j(e) {
   }), [v]), y = i.useCallback(e => {
     l(e)
   }, []), O = i.useCallback(e => {
-    "exit" === e && m(!1)
+    "exit" === e && g(!1)
   }, []), S = i.useCallback(e => {
-    p.current = e
+    _.current = e
   }, []);
   return (i.useEffect(() => {
     if ("confetti" === o) {
-      if (null == p.current) return;
-      let e = p.current.getBoundingClientRect(),
+      if (null == _.current) return;
+      let e = _.current.getBoundingClientRect(),
         t = e.left - I,
         r = e.top + T,
-        i = n.current[g.current];
+        i = n.current[m.current];
       null == i || i.fireConfetti(t, r)
     }
   }, [o]), E !== f.IlC.APP) ? (0, r.jsx)(r.Fragment, {
@@ -204,10 +204,10 @@ function j(e) {
       }, e)
     }), h ? (0, r.jsx)(u.ZP, {
       children: (0, r.jsx)("div", {
-        className: _.animationWrapper,
+        className: p.animationWrapper,
         children: (0, r.jsx)(a.kci, {
           animationRef: S,
-          className: _.lottieAnimation,
+          className: p.lottieAnimation,
           nextScene: c,
           sceneSegments: L,
           onScenePlay: y,

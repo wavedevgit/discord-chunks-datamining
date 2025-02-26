@@ -5,7 +5,7 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var i = n(456644),
+var i = n(81570),
   o = n(899007),
   a = n(995250);
 
@@ -53,10 +53,7 @@ function d(e) {
   var {
     location: t
   } = e, n = c(e, ["location"]);
-  let {
-    allProfileReactReplyEnabled: s
-  } = (0, i.i)({
+  return (0, i.T)({
     location: t
-  });
-  return s ? (0, r.jsx)(a.Z, l({}, n)) : (0, r.jsx)(o.Z, l({}, n))
+  }) ? (0, r.jsx)(a.Z, l({}, n)) : (0, r.jsx)(o.Z, l({}, n))
 }

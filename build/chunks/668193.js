@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  r: () => p
+  r: () => _
 });
 var r = n(595490),
   i = n.n(r),
@@ -56,7 +56,7 @@ function f(e) {
   if (Array.isArray(e)) return e
 }
 
-function p(e, t, n) {
+function _(e, t, n) {
   var r = s((0, o.useState)(function() {
       return t(e)
     }), 2),

@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(62170),
   d = n(640108),
   f = n(793148),
-  p = n(585483),
-  _ = n(70956),
+  _ = n(585483),
+  p = n(70956),
   h = n(36703),
-  m = n(347312),
-  g = n(981631),
+  g = n(347312),
+  m = n(981631),
   E = n(388032),
   v = n(946608);
 let b = i.lazy(() => n.e("89792").then(n.bind(n, 711635)));
@@ -52,10 +52,10 @@ function O(e, t, n) {
 
 function S(e, t, n) {
   i.useEffect(() => {
-    if (t) return p.S.dispatch(g.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, {
+    if (t) return _.S.dispatch(m.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, {
       src: e
-    }), p.S.subscribe(g.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, r), () => {
-      p.S.unsubscribe(g.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, r)
+    }), _.S.subscribe(m.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, r), () => {
+      _.S.unsubscribe(m.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, r)
     };
 
     function r(t) {
@@ -71,8 +71,8 @@ let I = i.memo(function(e) {
       src: n,
       volume: o = 1,
       onVolumeChange: d,
-      onMute: p,
-      waveform: g,
+      onMute: _,
+      waveform: m,
       durationSecs: I,
       onVolumeShow: T,
       onVolumeHide: N,
@@ -119,8 +119,8 @@ let I = i.memo(function(e) {
       k(0 === t), Y(t), null == d || d(t)
     }, [d]),
     et = i.useCallback(() => {
-      k(!M), null == p || p(!M)
-    }, [M, p]),
+      k(!M), null == _ || _(!M)
+    }, [M, _]),
     en = i.useCallback(() => {
       B(!0)
     }, []),
@@ -156,7 +156,7 @@ let I = i.memo(function(e) {
     if (e || j) {
       if (j) {
         var i, o;
-        eo.current = performance.now(), null == r || r(!1, t, (null !== (o = null === (i = P.current) || void 0 === i ? void 0 : i.duration) && void 0 !== o ? o : 0) * _.Z.Millis.SECOND)
+        eo.current = performance.now(), null == r || r(!1, t, (null !== (o = null === (i = P.current) || void 0 === i ? void 0 : i.duration) && void 0 !== o ? o : 0) * p.Z.Millis.SECOND)
       } else {
         let e = performance.now(),
           r = eo.current,
@@ -224,9 +224,9 @@ let I = i.memo(function(e) {
         width: 18,
         height: 18
       })
-    }), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(g.Z, {
       className: v.waveform,
-      waveform: g,
+      waveform: m,
       currentTime: D,
       duration: null != L ? L : 1,
       playing: j,

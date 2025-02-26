@@ -18,7 +18,23 @@ function d(e) {
       accountScopes: n
     } = e,
     o = [];
-  return (n.includes(i.x.SDK_SOCIAL_LAYER) && (t = c.NW.format(c.t.DfBeUl, {
+  return (n.includes(i.x.SDK_SOCIAL_LAYER) ? (t = c.NW.format(c.t.DfBeUl, {
+    learnMoreURL: s.Z.getArticleURL(l.BhN.SOCIAL_LAYER_CONNECTIONS)
+  }), o.push({
+    icon: a.iFz,
+    text: c.NW.formatToPlainString(c.t.WNKzo6, {
+      maxFriends: l.L4X
+    })
+  }, {
+    icon: a.mrm,
+    text: c.NW.string(c.t.j7peBg)
+  }, {
+    icon: a.iWm,
+    text: c.NW.string(c.t["feD3+v"])
+  }, {
+    icon: a.ewm,
+    text: c.NW.string(c.t.YFFVMz)
+  })) : n.includes(i.x.SDK_SOCIAL_LAYER) && (t = c.NW.format(c.t.DfBeUl, {
     learnMoreURL: s.Z.getArticleURL(l.BhN.SOCIAL_LAYER_CONNECTIONS)
   }), o.push({
     icon: a.iFz,

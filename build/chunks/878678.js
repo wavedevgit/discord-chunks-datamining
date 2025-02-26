@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ConfirmModal: () => _,
+  ConfirmModal: () => p,
   s: () => h
 });
 var r = n(200651),
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,15 +36,15 @@ function p(e) {
   return e
 }
 
-function _(e) {
+function p(e) {
   let t, n, {
       header: o,
       children: f,
-      confirmText: p,
-      cancelText: _,
+      confirmText: _,
+      cancelText: p,
       className: h,
-      onConfirm: m,
-      onCancel: g,
+      onConfirm: g,
+      onCancel: m,
       onClose: E,
       onCloseCallback: v,
       bodyClassName: b,
@@ -61,7 +61,7 @@ function _(e) {
       var e;
       return null === (e = N.current) || void 0 === e ? void 0 : e.focus()
     }, 0)
-  }, [I]), i.useLayoutEffect(() => () => null == v ? void 0 : v()), null != _ && (t = (0, r.jsx)(s.zx, {
+  }, [I]), i.useLayoutEffect(() => () => null == v ? void 0 : v()), null != p && (t = (0, r.jsx)(s.zx, {
     type: "button",
     look: A ? s.zx.Looks.FILLED : s.zx.Looks.LINK,
     color: s.zx.Colors.PRIMARY,
@@ -69,11 +69,11 @@ function _(e) {
     size: s.zx.Sizes.MEDIUM,
     disabled: O,
     onClick: () => {
-      null == g || g(), E()
+      null == m || m(), E()
     },
     autoFocus: I,
-    children: _
-  })), null != p && (n = (0, r.jsx)(s.zx, {
+    children: p
+  })), null != _ && (n = (0, r.jsx)(s.zx, {
     buttonRef: N,
     type: "submit",
     size: s.zx.Sizes.MEDIUM,
@@ -81,13 +81,13 @@ function _(e) {
     submitting: O,
     onClick: async () => {
       try {
-        await (null == m ? void 0 : m()), E()
+        await (null == g ? void 0 : g()), E()
       } catch (e) {
         throw e
       }
     },
     autoFocus: !I,
-    children: p
+    children: _
   })), (0, r.jsxs)(u.Y0, {
     className: h,
     transitionState: y,
@@ -110,6 +110,6 @@ function _(e) {
 function h(e) {
   return (0, r.jsx)(u.u_, {
     onCloseRequest: e.dismissable ? e.onCancel : null,
-    renderModal: t => (0, r.jsx)(_, p({}, t, e))
+    renderModal: t => (0, r.jsx)(p, _({}, t, e))
   })
 }

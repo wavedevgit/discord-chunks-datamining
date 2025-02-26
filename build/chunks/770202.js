@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(496675),
   m = n(98597),
   b = n(473403),
-  v = n(981631),
-  y = n(490897),
+  y = n(981631),
+  v = n(490897),
   O = n(436804);
 
 function j(e, t, n) {
@@ -73,7 +73,7 @@ class x extends m.ZP {
         "aria-label": (0, d.ZP)({
           channel: e
         }),
-        resolvedUnreadSetting: y.i.ONLY_MENTIONS,
+        resolvedUnreadSetting: v.i.ONLY_MENTIONS,
         children: [this.renderInviteButton(), this.renderEditButton()]
       })
     });
@@ -109,12 +109,12 @@ class x extends m.ZP {
       (function(e) {
         let t = e.getGuildId();
         if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
-        (0, p.uL)(v.Z5c.CHANNEL(t, e.id), {
+        (0, p.uL)(y.Z5c.CHANNEL(t, e.id), {
           state: {
             analyticsSource: {
-              page: v.ZY5.GUILD_CHANNEL,
-              section: v.jXE.CHANNEL_LIST,
-              object: v.qAy.CHANNEL
+              page: y.ZY5.GUILD_CHANNEL,
+              section: y.jXE.CHANNEL_LIST,
+              object: y.qAy.CHANNEL
             }
           }
         })
@@ -131,8 +131,8 @@ let P = (0, u.B)(x),
     } = e, l = (0, a.cj)([h.Z, g.Z], () => {
       let e = h.Z.getChannel(t.parent_id);
       return {
-        canManageChannel: g.Z.can(v.Plq.MANAGE_CHANNELS, t),
-        canReorderChannel: !0 !== i && null != e ? g.Z.can(v.Plq.MANAGE_CHANNELS, e) : g.Z.can(v.Plq.MANAGE_CHANNELS, n)
+        canManageChannel: g.Z.can(y.Plq.MANAGE_CHANNELS, t),
+        canReorderChannel: !0 !== i && null != e ? g.Z.can(y.Plq.MANAGE_CHANNELS, e) : g.Z.can(y.Plq.MANAGE_CHANNELS, n)
       }
     });
     return (0, r.jsx)(P, _({}, l, e))

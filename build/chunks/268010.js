@@ -47,20 +47,20 @@ let b = (e, t, n) => {
     } = (0, m.rv)({
       entry: n
     }), {
-      primaryColor: T,
-      secondaryColor: Z
-    } = (0, g.Z)(null == w ? void 0 : w.src), S = (0, l.e7)([o.default], () => o.default.locale), E = (0, x.Z)(P.ABu.CRUNCHYROLL), A = (0, p.ap)(n.extra.media_assets_large_text), _ = a.useCallback(e => {
+      primaryColor: E,
+      secondaryColor: T
+    } = (0, g.Z)(null == w ? void 0 : w.src), Z = (0, l.e7)([o.default], () => o.default.locale), S = (0, x.Z)(P.ABu.CRUNCHYROLL), A = (0, p.ap)(n.extra.media_assets_large_text), _ = a.useCallback(e => {
       if (null != I && (null == w ? void 0 : w.src) != null) return (0, h.B)({
         entry: n,
         mediaImageSrc: null == w ? void 0 : w.src,
         avatarSrc: I.getAvatarURL(null == t ? void 0 : t.guild_id, 128),
         description: b(n, t, I),
-        timestamp: (0, p.yh)(n, S),
+        timestamp: (0, p.yh)(n, Z),
         episodeDescription: A,
-        colors: [T, Z],
+        colors: [E, T],
         channelId: e
       })
-    }, [t, n, A, S, null == w ? void 0 : w.src, T, Z, I]), k = () => {
+    }, [t, n, A, Z, null == w ? void 0 : w.src, E, T, I]), k = () => {
       if (null == n.extra.url) return;
       let e = d.Z.safeParseWithQuery(n.extra.url);
       null != e && null != e.protocol && null != e.hostname && (0, c.q)({
@@ -76,7 +76,7 @@ let b = (e, t, n) => {
         title: n.extra.media_title,
         subtitle: n.extra.media_subtitle,
         headerIcons: (0, r.jsx)(j.Z, {
-          onClick: E,
+          onClick: S,
           Icon: i.omf,
           "aria-label": O.NW.string(O.t.jdJYX1)
         }),

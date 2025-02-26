@@ -18,7 +18,7 @@ function a(e, t) {
     onChange: f
   } = e;
 
-  function p(n) {
+  function _(n) {
     let i = r.T.currentEntry(e);
     if (null != i && (i.mergeable = !1), n >= e.history.stack.length) return;
     e.history.index = n;
@@ -37,20 +37,20 @@ function a(e, t) {
     } = e;
     0 === t.stack.length && (t.stack = [c(e)], t.index = 0), null != e.selection && (r.T.currentEntry(e).selection = e.selection), h = null, f()
   }, e.undo = () => {
-    e.history.index > 0 && p(e.history.index - 1)
+    e.history.index > 0 && _(e.history.index - 1)
   }, e.redo = () => {
-    e.history.index < e.history.stack.length - 1 && p(e.history.index + 1)
+    e.history.index < e.history.stack.length - 1 && _(e.history.index + 1)
   };
-  let _ = null,
+  let p = null,
     h = null,
-    m = null;
+    g = null;
   return e.apply = t => {
     let {
       history: o
     } = e;
     n(t);
     let a = i.bN.richValue(e);
-    a !== m && (0 === o.stack.length && (o.stack = [c(e)], o.index = 0), r.T.isSaving(e) && (s(e, t, _), _ = t), h = t, m = a)
+    a !== g && (0 === o.stack.length && (o.stack = [c(e)], o.index = 0), r.T.isSaving(e) && (s(e, t, p), p = t), h = t, g = a)
   }, e.deleteBackward = t => {
     r.T.withSingleEntry(e, () => o(t))
   }, e.deleteForward = t => {

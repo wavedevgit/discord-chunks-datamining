@@ -17,22 +17,22 @@ function d(e) {
     gameFriends: t,
     hasIncomingPendingGameFriends: n,
     hasOutgoingPendingGameFriends: d
-  } = e, [f, p] = i.useState(!1), _ = i.useCallback(() => p(!0), []), h = i.useMemo(() => f ? t.map(e => {
+  } = e, [f, _] = i.useState(!1), p = i.useCallback(() => _(!0), []), h = i.useMemo(() => f ? t.map(e => {
     let {
       applicationId: t
     } = e;
     return t
-  }) : u, [f, t]), m = (0, o.Z)(h, f), g = i.useMemo(() => m.filter(a.lm), [m]);
+  }) : u, [f, t]), g = (0, o.Z)(h, f), m = i.useMemo(() => g.filter(a.lm), [g]);
   return {
-    onMouseEnter: _,
-    ariaLabel: i.useMemo(() => t.length > 0 ? (0, l.A)(g) : void 0, [g, t.length]),
+    onMouseEnter: p,
+    ariaLabel: i.useMemo(() => t.length > 0 ? (0, l.A)(m) : void 0, [m, t.length]),
     tooltipText: i.useMemo(() => {
       if (t.length > 0) return (0, r.jsx)(s.k, {
-        applications: g
+        applications: m
       });
       if (n) return c.NW.string(c.t["0eWeam"]);
       if (d) return c.NW.string(c.t.MCgl9f);
       throw Error("[GameRelationshipButton] Tooltip text should not be undefined.")
-    }, [g, t.length, n, d])
+    }, [m, t.length, n, d])
   }
 }

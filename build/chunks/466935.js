@@ -1,6 +1,6 @@
 /** Chunk was on 30829 **/
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -17,27 +17,27 @@ var r = n(200651),
   g = n(434479),
   m = n(981631),
   b = n(176505),
-  v = n(388032);
+  y = n(388032);
 
-function y(e) {
+function v(e) {
   let {
     guild: t,
     selected: n
-  } = e, y = (0, l.e7)([h.Z], () => h.Z.can(m.Plq.KICK_MEMBERS, t)), O = (0, l.e7)([c.Z], () => c.Z.getSubmittedGuildJoinRequestTotal(t.id)), j = y && null != O ? O : 0;
+  } = e, v = (0, l.e7)([h.Z], () => h.Z.can(m.Plq.KICK_MEMBERS, t)), O = (0, l.e7)([c.Z], () => c.Z.getSubmittedGuildJoinRequestTotal(t.id)), j = v && null != O ? O : 0;
   return i.useEffect(() => {
-    y && s.Z.fetchGuildJoinRequests({
+    v && s.Z.fetchGuildJoinRequests({
       guildId: t.id,
       status: u.wB.SUBMITTED,
       limit: d.p
     })
-  }, [y, t.id]), (0, r.jsx)(g.m, {
+  }, [v, t.id]), (0, r.jsx)(g.m, {
     id: "application-review-".concat(t.id),
     renderIcon: e => (0, r.jsx)(f.Z, {
       className: e,
       width: 24,
       height: 24
     }),
-    text: v.NW.string(v.t.tcvVXF),
+    text: y.NW.string(y.t.tcvVXF),
     selected: n,
     onClick: () => {
       (0, a.Q2)({

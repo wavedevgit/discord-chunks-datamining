@@ -2,7 +2,7 @@
 n.d(t, {
   EM: () => m,
   WW: () => b,
-  ZP: () => v
+  ZP: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -54,16 +54,16 @@ function b(e, t) {
     }
   }
 }
-let v = i.memo(function(e) {
+let y = i.memo(function(e) {
   let {
     sectionIndex: t,
     guild: n,
     guildChannels: g,
     guildChannelsVersion: m,
     selectedChannelId: b,
-    disableManageChannels: v
+    disableManageChannels: y
   } = e, {
-    isFavoritesPerk: y
+    isFavoritesPerk: v
   } = (0, o.z)("ChannelListSection"), O = i.useCallback(() => {
     let e = g.getCategoryFromSection(g.recentsSectionNumber);
     if (null == e) return;
@@ -87,7 +87,7 @@ let v = i.memo(function(e) {
       });
     case c.p2:
       return (0, r.jsx)(u.P, {
-        name: y ? h.NW.string(h.t.mlPMCw) : h.NW.string(h.t.k8fFjo)
+        name: v ? h.NW.string(h.t.mlPMCw) : h.NW.string(h.t.k8fFjo)
       });
     case g.recentsSectionNumber:
       return (0, r.jsx)(u.P, {
@@ -114,7 +114,7 @@ let v = i.memo(function(e) {
       return (0, r.jsx)(u.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: v,
+        disableManageChannels: y,
         children: (0, r.jsx)(s.Z, {
           inlineSpecs: d.MF,
           arrowAlignment: l.cy.TOP,
@@ -129,7 +129,7 @@ let v = i.memo(function(e) {
       return (0, r.jsx)(u.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: v
+        disableManageChannels: y
       })
     }
   }

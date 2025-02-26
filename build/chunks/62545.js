@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-"use strict";
-var r = {
+/** Chunk was on 65936 **/
+e.exports = {
   container: "container__0f2e8",
   contentTitle: "contentTitle__0f2e8",
   additionalParticipantBadge: "additionalParticipantBadge__0f2e8",
@@ -13,5 +12,4 @@ var r = {
   facePileItem: "facePileItem__0f2e8",
   additionalParticipantBadgeText: "additionalParticipantBadgeText__0f2e8",
   thumbnail: "thumbnail__0f2e8"
-};
-e.exports = r
+}

@@ -27,13 +27,13 @@ function f(e, t, n) {
   return 3 * l(t, n) * e * e + 2 * c(t, n) * e + u(t)
 }
 
-function p(e, t, n, o, a) {
+function _(e, t, n, o, a) {
   var s, l, c = 0;
   do(s = d(l = t + (n - t) / 2, o, a) - e) > 0 ? n = l : t = l; while (Math.abs(s) > r && ++c < i);
   return l
 }
 
-function _(e, n, r, i) {
+function p(e, n, r, i) {
   for (var o = 0; o < t; ++o) {
     var a = f(n, r, i);
     if (0 === a) break;
@@ -52,7 +52,7 @@ e.exports = function(e, t, r, i) {
     for (var i = 0, s = 1, c = o - 1; s !== c && l[s] <= t; ++s) i += a;
     var u = i + (t - l[--s]) / (l[s + 1] - l[s]) * a,
       d = f(u, e, r);
-    return d >= n ? _(t, u, e, r) : 0 === d ? u : p(t, i, i + a, e, r)
+    return d >= n ? p(t, u, e, r) : 0 === d ? u : _(t, i, i + a, e, r)
   }
   return function(n) {
     return e === t && r === i ? n : 0 === n ? 0 : 1 === n ? 1 : d(u(n), t, i)

@@ -13,9 +13,9 @@ var r = n(544891),
   u = n(37234),
   d = n(981631),
   f = n(792101),
-  p = n(388032);
+  _ = n(388032);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,13 +31,13 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -126,20 +126,20 @@ let E = {
       username: n,
       email: a,
       emailToken: u,
-      password: _,
-      avatar: m,
+      password: p,
+      avatar: g,
       newPassword: E,
       discriminator: v
     } = e, {
       close: b
     } = t;
     return (0, c.Z)(e => {
-      let t = g(h({
+      let t = m(h({
           username: n,
           email: a,
           email_token: u,
-          password: _,
-          avatar: m,
+          password: p,
+          avatar: g,
           new_password: E
         }, e), {
           discriminator: null != v && "" !== v ? v : void 0
@@ -157,7 +157,7 @@ let E = {
     }, {
       checkEnabled: !1,
       modalProps: {
-        title: p.NW.string(p.t.clQc1d)
+        title: _.NW.string(_.t.clQc1d)
       },
       hooks: {
         onEarlyClose: () => o.Z.dispatch({
@@ -182,7 +182,7 @@ let E = {
         type: "USER_PASSWORD_UPDATE",
         user: t,
         newPassword: E
-      }), null != _ && null != E && o.Z.dispatch({
+      }), null != p && null != E && o.Z.dispatch({
         type: "PASSWORD_UPDATED",
         userId: t.id
       }), b ? this.close() : this.submitComplete(), e

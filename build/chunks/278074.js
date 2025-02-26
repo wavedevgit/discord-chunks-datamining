@@ -66,14 +66,14 @@ function d(...e) {
 
 function f(e) {
   return Object.assign(e, {
-    optional: () => _(e),
-    and: t => g(e, t),
+    optional: () => p(e),
+    and: t => m(e, t),
     or: t => E(e, t),
     select: t => void 0 === t ? b(e) : b(t, e)
   })
 }
 
-function p(e) {
+function _(e) {
   let t;
   return Object.assign(Object.assign(t = e, {
     *[Symbol.iterator]() {
@@ -82,12 +82,12 @@ function p(e) {
       })
     }
   }), {
-    optional: () => p(_(e)),
-    select: t => p(void 0 === t ? b(e) : b(t, e))
+    optional: () => _(p(e)),
+    select: t => _(void 0 === t ? b(e) : b(t, e))
   })
 }
 
-function _(e) {
+function p(e) {
   return f({
     [r]: () => ({
       match: t => {
@@ -113,13 +113,13 @@ let h = (e, t) => {
       if (!t(n)) return !1;
     return !0
   },
-  m = (e, t) => {
+  g = (e, t) => {
     for (let [n, r] of e.entries())
       if (!t(r, n)) return !1;
     return !0
   };
 
-function g(...e) {
+function m(...e) {
   return f({
     [r]: () => ({
       match: t => {
@@ -206,27 +206,27 @@ let I = f(v(function(e) {
   N = e => Object.assign(f(e), {
     startsWith: t => {
       var n;
-      return N(g(e, (n = t, v(e => O(e) && e.startsWith(n)))))
+      return N(m(e, (n = t, v(e => O(e) && e.startsWith(n)))))
     },
     endsWith: t => {
       var n;
-      return N(g(e, (n = t, v(e => O(e) && e.endsWith(n)))))
+      return N(m(e, (n = t, v(e => O(e) && e.endsWith(n)))))
     },
     minLength: t => {
       let n;
-      return N(g(e, (n = t, v(e => O(e) && e.length >= n))))
+      return N(m(e, (n = t, v(e => O(e) && e.length >= n))))
     },
     maxLength: t => {
       let n;
-      return N(g(e, (n = t, v(e => O(e) && e.length <= n))))
+      return N(m(e, (n = t, v(e => O(e) && e.length <= n))))
     },
     includes: t => {
       var n;
-      return N(g(e, (n = t, v(e => O(e) && e.includes(n)))))
+      return N(m(e, (n = t, v(e => O(e) && e.includes(n)))))
     },
     regex: t => {
       var n;
-      return N(g(e, (n = t, v(e => O(e) && !!e.match(n)))))
+      return N(m(e, (n = t, v(e => O(e) && !!e.match(n)))))
     }
   }),
   A = N(v(O)),
@@ -240,15 +240,15 @@ let I = f(v(function(e) {
   M = () => v(e => y(e) && e > 0),
   k = () => v(e => y(e) && e < 0),
   j = e => Object.assign(f(e), {
-    between: (t, n) => j(g(e, C(t, n))),
-    lt: t => j(g(e, R(t))),
-    gt: t => j(g(e, P(t))),
-    lte: t => j(g(e, D(t))),
-    gte: t => j(g(e, w(t))),
-    int: () => j(g(e, L())),
-    finite: () => j(g(e, x())),
-    positive: () => j(g(e, M())),
-    negative: () => j(g(e, k()))
+    between: (t, n) => j(m(e, C(t, n))),
+    lt: t => j(m(e, R(t))),
+    gt: t => j(m(e, P(t))),
+    lte: t => j(m(e, D(t))),
+    gte: t => j(m(e, w(t))),
+    int: () => j(m(e, L())),
+    finite: () => j(m(e, x())),
+    positive: () => j(m(e, M())),
+    negative: () => j(m(e, k()))
   }),
   U = j(v(y)),
   G = (e, t) => v(n => S(n) && e <= n && t >= n),
@@ -259,13 +259,13 @@ let I = f(v(function(e) {
   H = () => v(e => S(e) && e > 0),
   W = () => v(e => S(e) && e < 0),
   Y = e => Object.assign(f(e), {
-    between: (t, n) => Y(g(e, G(t, n))),
-    lt: t => Y(g(e, B(t))),
-    gt: t => Y(g(e, V(t))),
-    lte: t => Y(g(e, F(t))),
-    gte: t => Y(g(e, Z(t))),
-    positive: () => Y(g(e, H())),
-    negative: () => Y(g(e, W()))
+    between: (t, n) => Y(m(e, G(t, n))),
+    lt: t => Y(m(e, B(t))),
+    gt: t => Y(m(e, V(t))),
+    lte: t => Y(m(e, F(t))),
+    gte: t => Y(m(e, Z(t))),
+    positive: () => Y(m(e, H())),
+    negative: () => Y(m(e, W()))
   }),
   K = Y(v(S)),
   z = f(v(function(e) {
@@ -280,9 +280,9 @@ let I = f(v(function(e) {
 var X = {
   __proto__: null,
   matcher: r,
-  optional: _,
+  optional: p,
   array: function(...e) {
-    return p({
+    return _({
       [r]: () => ({
         match: t => {
           if (!Array.isArray(t)) return {
@@ -361,7 +361,7 @@ var X = {
           if (1 === e.length) throw Error(`\`P.map\` wasn't given enough arguments. Expected (key, value), received ${null==(n=e[0])?void 0:n.toString()}`);
           let [o, a] = e;
           return {
-            matched: m(t, (e, t) => {
+            matched: g(t, (e, t) => {
               let n = l(o, t, i),
                 r = l(a, e, i);
               return n && r
@@ -373,7 +373,7 @@ var X = {
       })
     })
   },
-  intersection: g,
+  intersection: m,
   union: E,
   not: function(e) {
     return f({

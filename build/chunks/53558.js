@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -35,9 +35,9 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -45,7 +45,7 @@ function p(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -57,7 +57,7 @@ function h(e) {
   var {
     user: t,
     onClick: n
-  } = e, i = p(e, ["user", "onClick"]);
+  } = e, i = _(e, ["user", "onClick"]);
   return (0, s.q)(t.id), (0, r.jsx)(c.tG, f({
     action: "PRESS_APP_STOREFRONT",
     icon: o.EOn,
@@ -68,19 +68,19 @@ function h(e) {
   }, i))
 }
 
-function m(e) {
+function g(e) {
   var t, {
       user: s,
       guildId: c
     } = e,
-    u = p(e, ["user", "guildId"]);
+    u = _(e, ["user", "guildId"]);
   let d = (0, i.e7)([l.Z], () => {
       var e;
       return null === (e = l.Z.getUserProfile(s.id)) || void 0 === e ? void 0 : e.application
     }),
-    _ = (0, a.R)(null !== (t = null == d ? void 0 : d.id) && void 0 !== t ? t : "");
-  if (null == d || !_) return null;
-  let m = () => {
+    p = (0, a.R)(null !== (t = null == d ? void 0 : d.id) && void 0 !== t ? t : "");
+  if (null == d || !p) return null;
+  let g = () => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -94,6 +94,6 @@ function m(e) {
   return (0, r.jsx)(h, f({
     user: s,
     guildId: c,
-    onClick: m
+    onClick: g
   }, u))
 }

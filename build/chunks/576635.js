@@ -16,21 +16,21 @@ function d(e) {
   var t, n, d;
   let {
     user: f,
-    displayProfile: p,
-    pendingThemeColors: _,
+    displayProfile: _,
+    pendingThemeColors: p,
     pendingAvatar: h,
-    isPreview: m
-  } = e, g = (0, o.ZP)(), E = (0, i.e7)([a.Z], () => a.Z.syncProfileThemeWithUserTheme), v = null != h ? h : null == f ? void 0 : f.getAvatarURL(null == p ? void 0 : p.guildId, 80), b = (0, l.Sl)(u.Ilk.PRIMARY_530).hex, [y, O] = (0, s.Cf)(v, b, !1);
-  if (!(null == p ? void 0 : p.canEditThemes) && !m) return {
-    theme: g,
+    isPreview: g
+  } = e, m = (0, o.ZP)(), E = (0, i.e7)([a.Z], () => a.Z.syncProfileThemeWithUserTheme), v = null != h ? h : null == f ? void 0 : f.getAvatarURL(null == _ ? void 0 : _.guildId, 80), b = (0, l.Sl)(u.Ilk.PRIMARY_530).hex, [y, O] = (0, s.Cf)(v, b, !1);
+  if (!(null == _ ? void 0 : _.canEditThemes) && !g) return {
+    theme: m,
     primaryColor: null,
     secondaryColor: null
   };
-  let S = null == p ? void 0 : p.getPreviewThemeColors(_),
+  let S = null == _ ? void 0 : _.getPreviewThemeColors(p),
     I = null !== (t = null == S ? void 0 : S[0]) && void 0 !== t ? t : (0, r._i)(y),
     T = null !== (n = null == S ? void 0 : S[1]) && void 0 !== n ? n : (0, r._i)(O);
   return {
-    theme: E ? g : null !== (d = (0, c.V3)(I)) && void 0 !== d ? d : g,
+    theme: E ? m : null !== (d = (0, c.V3)(I)) && void 0 !== d ? d : m,
     primaryColor: I,
     secondaryColor: T
   }

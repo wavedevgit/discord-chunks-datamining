@@ -22,13 +22,13 @@ function b() {
   return m()
 }
 
-function v(e) {
+function y(e) {
   let {
     channelId: t
   } = e, n = u.Z.getChannel(t);
   return !!(null != n && (0, s.hv)(n.type)) && m()
 }
-class y extends(r = o.ZP.Store) {
+class v extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(h.Z, u.Z, p.Z, d.ZP)
   }
@@ -36,17 +36,17 @@ class y extends(r = o.ZP.Store) {
     return f
   }
 }
-l = "PrivateChannelReadStateStore", (i = "displayName") in y ? Object.defineProperty(y, i, {
+l = "PrivateChannelReadStateStore", (i = "displayName") in v ? Object.defineProperty(v, i, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : y[i] = l;
-let O = new y(a.Z, {
+}) : v[i] = l;
+let O = new v(a.Z, {
   CONNECTION_OPEN: b,
   OVERLAY_INITIALIZE: b,
-  MESSAGE_CREATE: v,
-  MESSAGE_ACK: v,
+  MESSAGE_CREATE: y,
+  MESSAGE_ACK: y,
   CHANNEL_SELECT: function(e) {
     let {
       channelId: t

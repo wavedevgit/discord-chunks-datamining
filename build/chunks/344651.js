@@ -14,11 +14,11 @@ var o = n(442837),
   u = n(864106),
   d = n(710845),
   f = n(292419),
-  p = n(566006),
-  _ = n(686478),
+  _ = n(566006),
+  p = n(686478),
   h = n(952537),
-  m = n(218543),
-  g = n(48481),
+  g = n(218543),
+  m = n(48481),
   E = n(131704),
   v = n(209747),
   b = n(598077),
@@ -166,11 +166,11 @@ function z(e, t, n) {
     flags: c,
     premium_since: d,
     pending: f,
-    joined_at: p,
-    communication_disabled_until: _,
+    joined_at: _,
+    communication_disabled_until: p,
     unusual_dm_activity_until: h
-  } = n, m = O.ZP.getMember(e, t.id);
-  (!(null != m && m.nick === a && m.avatar === s && i().isEqual(m.roles, o) && (0, u.sr)(m.avatarDecoration, l)) || m.premiumSince !== d || m.isPending !== f || m.joinedAt !== p || m.communicationDisabledUntil !== _ || m.flags !== c || (null !== (r = m.unusualDMActivityUntil) && void 0 !== r ? r : null) !== (null != h ? h : null)) && K({
+  } = n, g = O.ZP.getMember(e, t.id);
+  (!(null != g && g.nick === a && g.avatar === s && i().isEqual(g.roles, o) && (0, u.sr)(g.avatarDecoration, l)) || g.premiumSince !== d || g.isPending !== f || g.joinedAt !== _ || g.communicationDisabledUntil !== p || g.flags !== c || (null !== (r = g.unusualDMActivityUntil) && void 0 !== r ? r : null) !== (null != h ? h : null)) && K({
     type: "GUILD_MEMBER_ADD",
     guildId: e,
     user: t,
@@ -180,8 +180,8 @@ function z(e, t, n) {
     avatarDecoration: l,
     premiumSince: d,
     isPending: f,
-    joinedAt: p,
-    communicationDisabledUntil: _,
+    joinedAt: _,
+    communicationDisabledUntil: p,
     unusualDMActivityUntil: h,
     flags: c
   })
@@ -234,7 +234,7 @@ function X(e) {
   })
 }
 W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id]), e => {
-  m.Z.initialGuild.measure(() => {
+  g.Z.initialGuild.measure(() => {
     o.ZP.Emitter.batched(() => {
       let t = R.Fx(e, D.Wb.identifyStartTime);
       null != I.default.getCurrentUser() && (K({
@@ -264,10 +264,10 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
     })
   })
 }), H(["READY_SUPPLEMENTAL"], e => {
-  m.Z.readySupplemental.measure(() => {
+  g.Z.readySupplemental.measure(() => {
     o.ZP.Emitter.batched(() => {
       var t, n;
-      e = m.Z.hydrateReadySupplemental.measure(() => R.r$(e, D.Wb.identifyStartTime));
+      e = g.Z.hydrateReadySupplemental.measure(() => R.r$(e, D.Wb.identifyStartTime));
       let r = e => e.map(e => ({
           user: e.user,
           status: e.status,
@@ -282,7 +282,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
       let o = e.presences ? r(e.presences) : [],
         a = (null !== (t = e.lazy_private_channels) && void 0 !== t ? t : []).map(e => (0, E.q_)(e)),
         s = null !== (n = e.game_invites) && void 0 !== n ? n : [];
-      m.Z.dispatchReadySupplemental.measure(() => {
+      g.Z.dispatchReadySupplemental.measure(() => {
         K({
           type: "CONNECTION_OPEN_SUPPLEMENTAL",
           guilds: i,
@@ -338,17 +338,17 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
     });
     return
   }
-  m.Z.ready.measure(() => {
+  g.Z.ready.measure(() => {
     o.ZP.Emitter.batched(() => {
-      let t = (e = m.Z.hydrateReady.measure(() => R.IM(e, D.Wb.identifyStartTime, n))).private_channels.map(e => (0, E.q_)(e)),
+      let t = (e = g.Z.hydrateReady.measure(() => R.IM(e, D.Wb.identifyStartTime, n))).private_channels.map(e => (0, E.q_)(e)),
         r = e.guilds.filter(e => !0 === e.unavailable && !0 !== e.geo_restricted).map(e => e.id),
         i = e.guilds.filter(e => !0 !== e.unavailable),
         o = e.guilds.filter(e => !0 === e.geo_restricted);
       i.forEach(e => {
         e.presences = []
       });
-      let a = null == e.user_settings_proto ? void 0 : (0, g.ac)(e.user_settings_proto);
-      m.Z.dispatchReady.measure(() => {
+      let a = null == e.user_settings_proto ? void 0 : (0, m.ac)(e.user_settings_proto);
+      g.Z.dispatchReady.measure(() => {
         var n;
         K({
           type: "CONNECTION_OPEN",
@@ -749,7 +749,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
     user: e
   })
 }), H(["USER_SETTINGS_PROTO_UPDATE"], e => {
-  let t = (0, g.kI)(e.settings.type, e.settings.proto);
+  let t = (0, m.kI)(e.settings.type, e.settings.proto);
   if (null != t) {
     if ("string" == typeof t) throw console.error("Invalid proto: |".concat(t, "| |").concat(e.settings.proto, "|")), console.error({
       parsed: t,
@@ -942,12 +942,12 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
 }), H(["SAVED_MESSAGE_CREATE"], e => {
   K({
     type: "SAVED_MESSAGE_CREATE",
-    savedMessage: (0, _.jk)(e)
+    savedMessage: (0, p.jk)(e)
   })
 }), H(["SAVED_MESSAGE_DELETE"], e => {
   K({
     type: "SAVED_MESSAGE_DELETE",
-    savedMessageData: (0, _.$_)(e)
+    savedMessageData: (0, p.$_)(e)
   })
 }), H(["FRIEND_SUGGESTION_CREATE"], e => {
   K({
@@ -986,7 +986,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
       id: e.answer_id,
       name: ""
     },
-    reactionType: p.O.VOTE
+    reactionType: _.O.VOTE
   })
 }), H(["MESSAGE_REACTION_REMOVE_ALL"], e => {
   K({

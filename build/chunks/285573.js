@@ -1,6 +1,6 @@
 /** Chunk was on 30829 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -17,13 +17,13 @@ var r = n(200651),
   g = n(981631),
   m = n(490897),
   b = n(436804);
-let v = (0, c.B)(function(e) {
+let y = (0, c.B)(function(e) {
   let {
     guild: t,
     selectedChannelId: l,
     position: c,
-    disableManageChannels: v,
-    sorting: y,
+    disableManageChannels: y,
+    sorting: v,
     sortingType: O,
     sortingPosition: j,
     connectChannelDragSource: _,
@@ -32,7 +32,7 @@ let v = (0, c.B)(function(e) {
   } = e, P = (0, a.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
-  }), N = (0, a.e7)([u.Z], () => u.Z.getChannel(null == P ? void 0 : P.parent_id)), S = l === (null == P ? void 0 : P.id), I = (0, a.e7)([p.Z], () => null != N ? p.Z.can(g.Plq.MANAGE_CHANNELS, N) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), Z = i.useCallback(e => {
+  }), N = (0, a.e7)([u.Z], () => u.Z.getChannel(null == P ? void 0 : P.parent_id)), S = l === (null == P ? void 0 : P.id), Z = (0, a.e7)([p.Z], () => null != N ? p.Z.can(g.Plq.MANAGE_CHANNELS, N) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), I = i.useCallback(e => {
     null != P && (0, s.jW)(e, async () => {
       let {
         default: e
@@ -73,7 +73,7 @@ let v = (0, c.B)(function(e) {
   }, [P]);
   if (null == P) return null;
   let w = (0, h.jo)(c, j),
-    E = (0, h.CN)(P, y, O),
+    E = (0, h.CN)(P, v, O),
     T = (0, r.jsx)("div", {
       className: o()(w, {
         [b.disabled]: E,
@@ -85,7 +85,7 @@ let v = (0, c.B)(function(e) {
         channel: P,
         guild: t,
         selected: S,
-        onContextMenu: Z,
+        onContextMenu: I,
         forceInteractable: !0,
         resolvedUnreadSetting: m.i.ONLY_MENTIONS,
         children: [(0, r.jsx)(h.eP, {
@@ -93,10 +93,10 @@ let v = (0, c.B)(function(e) {
           tabIndex: x
         }), (0, r.jsx)(h.hR, {
           channel: P,
-          disableManageChannels: v,
+          disableManageChannels: y,
           tabIndex: x
         })]
       })
     });
-  return I && (T = C(_(T))), T
+  return Z && (T = C(_(T))), T
 })

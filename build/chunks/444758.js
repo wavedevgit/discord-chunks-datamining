@@ -13,11 +13,11 @@ var r = n(477660),
   u = n(430824),
   d = n(496675),
   f = n(699516),
-  p = n(594174),
-  _ = n(768581),
+  _ = n(594174),
+  p = n(768581),
   h = n(934415),
-  m = n(624138),
-  g = n(699450),
+  g = n(624138),
+  m = n(699450),
   E = n(594199),
   v = n(981631),
   b = n(388032);
@@ -69,8 +69,8 @@ function N(e) {
   return {
     type: "guild",
     guildId: e.id,
-    content: (0, m.aF)(e.name, 32),
-    icon: _.ZP.getGuildIconURL({
+    content: (0, g.aF)(e.name, 32),
+    icon: p.ZP.getGuildIconURL({
       id: e.id,
       icon: e.icon,
       size: 40
@@ -80,7 +80,7 @@ function N(e) {
 
 function A(e, t) {
   let n;
-  let r = w((0, m.aF)(e.name, 32));
+  let r = w((0, g.aF)(e.name, 32));
   return {
     type: "channel",
     content: [n = "italics" === t ? {
@@ -142,10 +142,10 @@ function P(e, t) {
     type: r.type,
     id: r.id,
     guildId: r.guild_id,
-    name: (0, a.F6)(r, p.default, f.Z),
+    name: (0, a.F6)(r, _.default, f.Z),
     isDm: r.isPrivate(),
     isForumPost: r.isForumPost(),
-    isMentionable: (0, g.B)(r.type),
+    isMentionable: (0, m.B)(r.type),
     canViewChannel: (0, l.YO)(r),
     roleSubscriptionGated: i,
     iconType: u,

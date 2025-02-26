@@ -13,29 +13,29 @@ var r, i = n(401801),
       return d('"use strict"; return (' + e + ").constructor;")()
     } catch (e) {}
   },
-  p = Object.getOwnPropertyDescriptor;
-if (p) try {
-  p({}, "")
+  _ = Object.getOwnPropertyDescriptor;
+if (_) try {
+  _({}, "")
 } catch (e) {
-  p = null
+  _ = null
 }
-var _ = function() {
+var p = function() {
     throw new c
   },
-  h = p ? function() {
+  h = _ ? function() {
     try {
-      return arguments.callee, _
+      return arguments.callee, p
     } catch (e) {
       try {
-        return p(arguments, "callee").get
+        return _(arguments, "callee").get
       } catch (e) {
-        return _
+        return p
       }
     }
-  }() : _,
-  m = n(322499)(),
-  g = n(79536)(),
-  E = Object.getPrototypeOf || (g ? function(e) {
+  }() : p,
+  g = n(322499)(),
+  m = n(79536)(),
+  E = Object.getPrototypeOf || (m ? function(e) {
     return e.__proto__
   } : null),
   v = {},
@@ -45,7 +45,7 @@ var _ = function() {
     "%AggregateError%": "undefined" == typeof AggregateError ? r : AggregateError,
     "%Array%": Array,
     "%ArrayBuffer%": "undefined" == typeof ArrayBuffer ? r : ArrayBuffer,
-    "%ArrayIteratorPrototype%": m && E ? E([][Symbol.iterator]()) : r,
+    "%ArrayIteratorPrototype%": g && E ? E([][Symbol.iterator]()) : r,
     "%AsyncFromSyncIteratorPrototype%": r,
     "%AsyncFunction%": v,
     "%AsyncGenerator%": v,
@@ -75,10 +75,10 @@ var _ = function() {
     "%Int32Array%": "undefined" == typeof Int32Array ? r : Int32Array,
     "%isFinite%": isFinite,
     "%isNaN%": isNaN,
-    "%IteratorPrototype%": m && E ? E(E([][Symbol.iterator]())) : r,
+    "%IteratorPrototype%": g && E ? E(E([][Symbol.iterator]())) : r,
     "%JSON%": "object" == typeof JSON ? JSON : r,
     "%Map%": "undefined" == typeof Map ? r : Map,
-    "%MapIteratorPrototype%": "undefined" != typeof Map && m && E ? E(new Map()[Symbol.iterator]()) : r,
+    "%MapIteratorPrototype%": "undefined" != typeof Map && g && E ? E(new Map()[Symbol.iterator]()) : r,
     "%Math%": Math,
     "%Number%": Number,
     "%Object%": Object,
@@ -91,11 +91,11 @@ var _ = function() {
     "%Reflect%": "undefined" == typeof Reflect ? r : Reflect,
     "%RegExp%": RegExp,
     "%Set%": "undefined" == typeof Set ? r : Set,
-    "%SetIteratorPrototype%": "undefined" != typeof Set && m && E ? E(new Set()[Symbol.iterator]()) : r,
+    "%SetIteratorPrototype%": "undefined" != typeof Set && g && E ? E(new Set()[Symbol.iterator]()) : r,
     "%SharedArrayBuffer%": "undefined" == typeof SharedArrayBuffer ? r : SharedArrayBuffer,
     "%String%": String,
-    "%StringIteratorPrototype%": m && E ? E("" [Symbol.iterator]()) : r,
-    "%Symbol%": m ? Symbol : r,
+    "%StringIteratorPrototype%": g && E ? E("" [Symbol.iterator]()) : r,
+    "%Symbol%": g ? Symbol : r,
     "%SyntaxError%": l,
     "%ThrowTypeError%": h,
     "%TypedArray%": b,
@@ -228,20 +228,20 @@ e.exports = function(e, t) {
     u = i.alias;
   u && (r = u[0], C(n, A([0, 1], u)));
   for (var d = 1, f = !0; d < n.length; d += 1) {
-    var _ = n[d],
-      h = P(_, 0, 1),
-      m = P(_, -1);
-    if (('"' === h || "'" === h || "`" === h || '"' === m || "'" === m || "`" === m) && h !== m) throw new l("property names with quotes must have matching quotes");
-    if ("constructor" !== _ && f || (s = !0), r += "." + _, N(y, o = "%" + r + "%")) a = y[o];
+    var p = n[d],
+      h = P(p, 0, 1),
+      g = P(p, -1);
+    if (('"' === h || "'" === h || "`" === h || '"' === g || "'" === g || "`" === g) && h !== g) throw new l("property names with quotes must have matching quotes");
+    if ("constructor" !== p && f || (s = !0), r += "." + p, N(y, o = "%" + r + "%")) a = y[o];
     else if (null != a) {
-      if (!(_ in a)) {
+      if (!(p in a)) {
         if (!t) throw new c("base intrinsic for " + e + " exists, but the property is not available.");
         return
       }
-      if (p && d + 1 >= n.length) {
-        var g = p(a, _);
-        a = (f = !!g) && "get" in g && !("originalValue" in g.get) ? g.get : a[_]
-      } else f = N(a, _), a = a[_];
+      if (_ && d + 1 >= n.length) {
+        var m = _(a, p);
+        a = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : a[p]
+      } else f = N(a, p), a = a[p];
       f && !s && (y[o] = a)
     }
   }

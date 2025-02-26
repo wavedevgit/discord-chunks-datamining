@@ -84,7 +84,7 @@ function b(e) {
       let e = new Blob([b], {
         type: "text/plain"
       });
-      (0, i.d)([(0, c.dp)(e, "message.txt")], t, o.d.ChannelMessage, {
+      (0, i.d)([(0, c.dp)(e, "message.txt", "text/plain")], t, o.d.ChannelMessage, {
         requireConfirm: !0,
         showLargeMessageDialog: !0
       }), a.S.dispatchToLastSubscribed(f.CkL.CLEAR_TEXT)

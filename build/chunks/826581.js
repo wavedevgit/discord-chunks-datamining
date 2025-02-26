@@ -12,11 +12,11 @@ var r, i = n(913527),
   u = n(594174),
   d = n(70956),
   f = n(881952),
-  p = n(246364),
-  _ = n(937111),
+  _ = n(246364),
+  p = n(937111),
   h = n(981631);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,14 +25,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -68,11 +68,11 @@ function I(e, t) {
 
 function T(e, t, n) {
   if (t !== n && null != t) {
-    if (t === p.wB.SUBMITTED) {
+    if (t === _.wB.SUBMITTED) {
       let t = S(e);
       I(e, t + 1)
     }
-    if (n === p.wB.SUBMITTED) {
+    if (n === _.wB.SUBMITTED) {
       let t = S(e);
       I(e, Math.max(0, t - 1))
     }
@@ -98,7 +98,7 @@ function R(e) {
     total: r,
     guildId: i
   } = e;
-  A = !1, t === p.wB.SUBMITTED && I(i, r), n.forEach(e => {
+  A = !1, t === _.wB.SUBMITTED && I(i, r), n.forEach(e => {
     G(e)
   })
 }
@@ -134,7 +134,7 @@ function B(e) {
   let {
     guildId: n,
     request: r
-  } = e, i = (0, _.j)(r), o = u.default.getCurrentUser();
+  } = e, i = (0, p.j)(r), o = u.default.getCurrentUser();
   if (null == o || i.userId === o.id) return !1;
   let a = null === (t = j(i.joinRequestId)) || void 0 === t ? void 0 : t.applicationStatus;
   return T(n, i.applicationStatus, a), G(i), !0
@@ -153,8 +153,8 @@ function F(e) {
     guildId: t,
     action: n
   } = e;
-  x.values(w(t, p.wB.SUBMITTED)).forEach(e => {
-    G(v(g({}, e), {
+  x.values(w(t, _.wB.SUBMITTED)).forEach(e => {
+    G(v(m({}, e), {
       applicationStatus: n
     }))
   }), I(t, 0)
@@ -178,7 +178,7 @@ function Y(e) {
   } = e;
   if (r === W[n]) return;
   W[n] = r;
-  let i = null !== (t = Z[n]) && void 0 !== t ? t : p.wB.SUBMITTED;
+  let i = null !== (t = Z[n]) && void 0 !== t ? t : _.wB.SUBMITTED;
   "REVIEW_APPLICATION" !== i && ((0, f.bk)(i) && k.clear(), (0, f.Nd)(i) && M.clear())
 }
 let K = {};
@@ -214,20 +214,20 @@ class X extends(r = a.ZP.Store) {
   getSelectedApplicationTab(e) {
     var t;
     let n = c.Z.getGuild(e),
-      r = this.getRequests(e, p.wB.SUBMITTED).length > 0,
-      i = (null == n ? void 0 : n.hasFeature(h.oNc.CLAN)) && !r ? "REVIEW_APPLICATION" : p.wB.SUBMITTED;
+      r = this.getRequests(e, _.wB.SUBMITTED).length > 0,
+      i = (null == n ? void 0 : n.hasFeature(h.oNc.CLAN)) && !r ? "REVIEW_APPLICATION" : _.wB.SUBMITTED;
     return null !== (t = Z[e]) && void 0 !== t ? t : i
   }
   getSelectedSortOrder(e) {
     var t;
-    return null !== (t = W[e]) && void 0 !== t ? t : p.Nw.TIMESTAMP_DESC
+    return null !== (t = W[e]) && void 0 !== t ? t : _.Nw.TIMESTAMP_DESC
   }
   getSelectedGuildJoinRequest(e) {
     let t = K[e];
     return null != t ? j(t.joinRequestId) : null
   }
 }
-m(X, "displayName", "GuildJoinRequestStoreV2");
+g(X, "displayName", "GuildJoinRequestStoreV2");
 let J = new X(l.Z, {
   GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS: N,
   GUILD_JOIN_REQUESTS_FETCH_SUCCESS: R,

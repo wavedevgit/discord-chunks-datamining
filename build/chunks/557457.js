@@ -3,9 +3,9 @@
 n.d(t, {
   Wc: () => E,
   Ye: () => v,
-  bp: () => g,
-  ml: () => m,
-  nG: () => p,
+  bp: () => m,
+  ml: () => g,
+  nG: () => _,
   tR: () => f
 });
 var r = n(430824),
@@ -22,16 +22,16 @@ function f(e) {
   if (null == e) return;
   let t = e.maxResolution.type === u.uA.SOURCE ? l.LY.RESOLUTION_SOURCE : e.maxResolution.height,
     n = (0, l.aW)(t);
-  return (0, l.L9)(e.maxFrameRate) !== l.ws.FPS_5 && null == l.ND.find(e => e.resolution === n && e.fps !== l.ws.FPS_5 && !_(e))
-}
-
-function p(e) {
-  if (null == e) return;
-  let t = (0, l.L9)(e.maxFrameRate);
-  return null == l.ND.find(e => e.fps === t && !_(e))
+  return (0, l.L9)(e.maxFrameRate) !== l.ws.FPS_5 && null == l.ND.find(e => e.resolution === n && e.fps !== l.ws.FPS_5 && !p(e))
 }
 
 function _(e) {
+  if (null == e) return;
+  let t = (0, l.L9)(e.maxFrameRate);
+  return null == l.ND.find(e => e.fps === t && !p(e))
+}
+
+function p(e) {
   return null != e.quality || null != e.guildPremiumTier
 }
 
@@ -39,13 +39,13 @@ function h(e, t, n) {
   return l.ND.find(r => (null == r.preset || r.preset === e) && r.resolution === t && r.fps === n)
 }
 
-function m(e) {
+function g(e) {
   return e.type === u.uA.SOURCE ? d.NW.string(d.t.XjXqzs) : d.NW.formatToPlainString(d.t.TEOC0N, {
     resolution: e.height
   })
 }
 
-function g(e) {
+function m(e) {
   return d.NW.formatToPlainString(d.t.Qb44XF, {
     fps: e
   })

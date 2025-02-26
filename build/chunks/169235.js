@@ -1,4 +1,4 @@
-/** Chunk was on 82190 **/
-e.exports = {
+/** Chunk was on 65207 **/
+n.exports = {
   containerScrollGradient: "containerScrollGradient_a54921"
 }

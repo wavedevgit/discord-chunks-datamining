@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(153867),
   d = n(230711),
   f = n(351773),
-  p = n(100527),
-  _ = n(94795),
+  _ = n(100527),
+  p = n(94795),
   h = n(327943),
-  m = n(539873),
-  g = n(207164),
+  g = n(539873),
+  m = n(207164),
   E = n(238302),
   v = n(514361),
   b = n(572397),
@@ -73,10 +73,10 @@ function M(e) {
 }
 
 function k() {
-  let e = (0, g.Z)();
+  let e = (0, m.Z)();
   return i.useEffect(() => {
-    (0, _.nJ)(), e()
-  }, [e]), (0, r.jsx)(m.Z, {
+    (0, p.nJ)(), e()
+  }, [e]), (0, r.jsx)(g.Z, {
     isEditor: !0
   })
 }
@@ -89,7 +89,7 @@ function j(e) {
     onClose: u
   } = e, f = i.useCallback(() => {
     u(), l || d.Z.open()
-  }, [u, l]), _ = (0, s.EQ)({
+  }, [u, l]), p = (0, s.EQ)({
     isPreview: o,
     isCoachmark: l
   }).with({
@@ -103,7 +103,7 @@ function j(e) {
           default: e
         } = await n.e("69052").then(n.bind(n, 184250));
         return t => (0, r.jsx)(e, L({
-          analyticsSource: p.Z.APP_ICON_EDITOR,
+          analyticsSource: _.Z.APP_ICON_EDITOR,
           analyticsLocation: {
             section: A.jXE.SETTINGS_APP_ICONS
           }
@@ -117,7 +117,7 @@ function j(e) {
           default: e
         } = await n.e("68192").then(n.bind(n, 742234));
         return t => (0, r.jsx)(e, L({
-          analyticsSource: p.Z.CLIENT_THEMES_EDITOR,
+          analyticsSource: _.Z.CLIENT_THEMES_EDITOR,
           analyticsLocation: {
             section: A.jXE.SETTINGS_CLIENT_THEMES
           }
@@ -149,7 +149,7 @@ function j(e) {
           color: c.Ttl.PRIMARY,
           size: c.zxk.Sizes.NONE,
           onClick: f,
-          "aria-label": _,
+          "aria-label": p,
           children: (0, r.jsx)(S.Z, {
             direction: S.Z.Directions.LEFT
           })
@@ -176,13 +176,13 @@ function U(e) {
   }, {
     name: P.NW.string(P.t.RPh2oq),
     value: 1
-  }], []), p = (0, l.e7)([v.Z], () => v.Z.isPreview), m = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), g = p || m, y = i.useMemo(() => T.Z.theme, []), O = (0, b.J)(), S = i.useCallback(() => {
-    p && O(), m && (0, _.O7)()
-  }, [p, m, O]), I = (0, f.Z)(null, g ? S : A.dG4), R = i.useCallback(() => {
-    g && (0, u.ZI)({
+  }], []), _ = (0, l.e7)([v.Z], () => v.Z.isPreview), g = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), m = _ || g, y = i.useMemo(() => T.Z.theme, []), O = (0, b.J)(), S = i.useCallback(() => {
+    _ && O(), g && (0, p.O7)()
+  }, [_, g, O]), I = (0, f.Z)(null, m ? S : A.dG4), R = i.useCallback(() => {
+    m && (0, u.ZI)({
       theme: y
-    }), (0, _.G8)(), (0, E.Mo)(), S(), null == n || n(C.L.DISMISS)
-  }, [S, n, g, y]);
+    }), (0, p.G8)(), (0, E.Mo)(), S(), null == n || n(C.L.DISMISS)
+  }, [S, n, m, y]);
   return (0, r.jsx)(N.Z, {
     className: D.draggableContainer,
     children: (0, r.jsxs)("div", {
@@ -219,7 +219,7 @@ function U(e) {
         }), 1 === a && (0, r.jsx)(k, {})]
       }), (0, r.jsx)(j, {
         tab: a,
-        isPreview: g,
+        isPreview: m,
         onClose: R,
         isCoachmark: !1
       })]

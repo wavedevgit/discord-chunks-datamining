@@ -13,8 +13,8 @@ var r = n(200651),
   u = n(239091),
   d = n(751688),
   f = n(5192),
-  p = n(51144),
-  _ = n(802747);
+  _ = n(51144),
+  p = n(802747);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,7 +61,7 @@ function v(e) {
     maxUsers: o,
     guildId: s,
     channelId: h,
-    className: g,
+    className: m,
     avatarClassName: v,
     size: b = c.EFr.SIZE_24,
     overflowCountVariant: y = "text-xs/medium",
@@ -78,9 +78,9 @@ function v(e) {
 
   function L() {
     return (0, r.jsx)(c.VqE, {
-      className: _.popoutWrapper,
+      className: p.popoutWrapper,
       children: (0, r.jsx)(c.Ttm, {
-        className: _.scroller,
+        className: p.scroller,
         children: t.map(e => (0, r.jsx)(d.Z, {
           user: e,
           guildId: s,
@@ -95,7 +95,7 @@ function v(e) {
             let {
               default: t
             } = await Promise.all([n.e("79695"), n.e("69220"), n.e("31327")]).then(n.bind(n, 881351));
-            return n => (0, r.jsx)(t, E(m({}, n), {
+            return n => (0, r.jsx)(t, E(g({}, n), {
               user: e,
               guildId: s,
               channelId: h
@@ -110,9 +110,9 @@ function v(e) {
 
   function x() {
     let e = l()(t).take(o).map(e => {
-        let t = p.ZP.getName(e);
+        let t = _.ZP.getName(e);
         return T ? (0, r.jsx)("div", {
-          className: a()(_.avatar, v),
+          className: a()(p.avatar, v),
           children: (0, r.jsx)(c.qEK, {
             src: e.getAvatarURL(s, 24),
             "aria-label": t,
@@ -120,7 +120,7 @@ function v(e) {
           })
         }, e.id) : (0, r.jsx)(c.DY3, {
           text: t,
-          className: a()(_.avatar, v),
+          className: a()(p.avatar, v),
           children: (0, r.jsx)(c.qEK, {
             src: e.getAvatarURL(s, 24),
             "aria-label": t,
@@ -135,7 +135,7 @@ function v(e) {
       position: "bottom",
       onRequestClose: () => w(!1),
       children: () => (0, r.jsx)(c.zxk, {
-        className: a()(_.avatar, _.overflow, S),
+        className: a()(p.avatar, p.overflow, S),
         onFocus: C,
         onClick: e => {
           null == A || A(e), w(!0)
@@ -151,7 +151,7 @@ function v(e) {
     }, "overflow")), e
   }
   return t.length <= 0 ? null : (0, r.jsx)("div", {
-    className: a()(g, _.avatars),
+    className: a()(m, p.avatars),
     children: x()
   })
 }

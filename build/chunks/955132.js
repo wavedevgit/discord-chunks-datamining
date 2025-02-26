@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  GC: () => m,
+  GC: () => g,
   RR: () => h,
-  Wb: () => _
+  Wb: () => p
 });
 var r = n(570140),
   i = n(579806),
@@ -15,13 +15,13 @@ var r = n(570140),
   u = n(548570),
   d = n(616810),
   f = n(755278);
-let p = new o.Z("ConnectionStore"),
-  _ = new u.Z,
-  h = new d.Z(_),
-  m = new f.Z(_);
-_.handleIdentify = () => {
+let _ = new o.Z("ConnectionStore"),
+  p = new u.Z,
+  h = new d.Z(p),
+  g = new f.Z(p);
+p.handleIdentify = () => {
   let e = a.default.getToken();
-  return (p.verbose("handleIdentify called", {
+  return (_.verbose("handleIdentify called", {
     hasToken: null != e
   }), null == e) ? null : {
     token: e,
@@ -29,12 +29,12 @@ _.handleIdentify = () => {
     presence: h.getInitialState()
   }
 }, (0, c.isDesktop)() && i.Z.remotePowerMonitor.on("resume", () => {
-  _.expeditedHeartbeat(5e3, "power monitor resumed")
+  p.expeditedHeartbeat(5e3, "power monitor resumed")
 }), l.Z.addOfflineCallback(() => {
-  _.networkStateChange(15e3, "network detected offline.", !1)
+  p.networkStateChange(15e3, "network detected offline.", !1)
 }), l.Z.addOnlineCallback(() => {
-  _.networkStateChange(5e3, "network detected online.")
-}), _.on("disconnect", e => {
+  p.networkStateChange(5e3, "network detected online.")
+}), p.on("disconnect", e => {
   let {
     code: t,
     reason: n
@@ -44,7 +44,7 @@ _.handleIdentify = () => {
     code: t,
     reason: n
   })
-}), _.on("close", e => {
+}), p.on("close", e => {
   let {
     code: t,
     reason: n

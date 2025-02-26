@@ -17,12 +17,12 @@ var r = n(392711),
   u = n(630388),
   d = n(823379),
   f = n(314897),
-  p = n(412788),
-  _ = n(981631),
+  _ = n(412788),
+  p = n(981631),
   h = n(308083),
-  m = n(474936);
+  g = n(474936);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -81,8 +81,8 @@ function I(e) {
   void 0 !== d && (e.collectibles = (0, a.X)(d), delete e.collectibles);
   let f = e.global_name;
   void 0 !== f && (e.globalName = f, delete e.global_name);
-  let p = e.primary_guild;
-  return void 0 !== p && (e.primary_guild = (0, h.lt)(p)), e
+  let _ = e.primary_guild;
+  return void 0 !== _ && (e.primary_guild = (0, h.lt)(_)), e
 }
 
 function T(e) {
@@ -114,7 +114,7 @@ function C(e, t) {
   if (!e) return t;
   let n = s.Z.getPremiumTypeOverride(),
     r = s.Z.getPremiumTypeActual();
-  return n === m.F_ ? r : n
+  return n === g.F_ ? r : n
 }
 
 function R(e, t) {
@@ -295,9 +295,9 @@ function Y(e) {
   let {
     message: t
   } = e;
-  if (R(t, !0), null != t.flags && u.yE(t.flags, _.iLy.URGENT)) {
+  if (R(t, !0), null != t.flags && u.yE(t.flags, p.iLy.URGENT)) {
     let e = E[f.default.getId()];
-    return null != e && (E[f.default.getId()] = e.set("flags", u.mB(e.flags, _.xW$.HAS_UNREAD_URGENT_MESSAGES, !0)), !0)
+    return null != e && (E[f.default.getId()] = e.set("flags", u.mB(e.flags, p.xW$.HAS_UNREAD_URGENT_MESSAGES, !0)), !0)
   }
   return !1
 }
@@ -467,14 +467,14 @@ function ef(e) {
   return N(e.suggestion.suggested_user)
 }
 
-function ep(e) {
+function e_(e) {
   let {
     suggestions: t
   } = e;
   return t.reduce((e, t) => N(t.suggested_user) || e, !1)
 }
 
-function e_(e) {
+function ep(e) {
   let {
     users: t
   } = e;
@@ -490,7 +490,7 @@ function eh(e) {
   return null != t.user && N(t.user)
 }
 
-function em(e) {
+function eg(e) {
   let {
     appliedBoosts: t
   } = e;
@@ -502,7 +502,7 @@ function em(e) {
   })
 }
 
-function eg(e) {
+function em(e) {
   let {
     request: t
   } = e, {
@@ -578,7 +578,7 @@ function eT(e) {
   } = e;
   return t.reduce((e, t) => (0, i.Z)(t) && N(t.member.user) || e, !1)
 }
-class eN extends p.Z {
+class eN extends _.Z {
   initialize() {
     this.waitFor(f.default, s.Z)
   }
@@ -660,8 +660,8 @@ class eN extends p.Z {
       GUILD_BAN_REMOVE: $,
       CHANNEL_RECIPIENT_ADD: ee,
       CHANNEL_RECIPIENT_REMOVE: ee,
-      GUILD_JOIN_REQUEST_CREATE: eg,
-      GUILD_JOIN_REQUEST_UPDATE: eg,
+      GUILD_JOIN_REQUEST_CREATE: em,
+      GUILD_JOIN_REQUEST_UPDATE: em,
       GUILD_MEMBER_ADD: et,
       GUILD_MEMBER_UPDATE: et,
       GUILD_MEMBERS_CHUNK_BATCH: er,
@@ -674,11 +674,11 @@ class eN extends p.Z {
       GAME_RELATIONSHIP_ADD: eu,
       LOAD_RELATIONSHIPS_SUCCESS: ed,
       FRIEND_SUGGESTION_CREATE: ef,
-      LOAD_FRIEND_SUGGESTIONS_SUCCESS: ep,
-      AUDIT_LOG_FETCH_SUCCESS: e_,
-      AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS: e_,
+      LOAD_FRIEND_SUGGESTIONS_SUCCESS: e_,
+      AUDIT_LOG_FETCH_SUCCESS: ep,
+      AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS: ep,
       GIFT_CODE_RESOLVE_SUCCESS: eh,
-      GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: em,
+      GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: eg,
       LOAD_THREADS_SUCCESS: B,
       LOAD_ARCHIVED_THREADS_SUCCESS: B,
       LOAD_FORUM_POSTS: V,
@@ -699,5 +699,5 @@ class eN extends p.Z {
     })
   }
 }
-g(eN, "displayName", "UserStore"), g(eN, "LATEST_SNAPSHOT_VERSION", 1);
+m(eN, "displayName", "UserStore"), m(eN, "LATEST_SNAPSHOT_VERSION", 1);
 let eA = new eN

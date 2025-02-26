@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   k: () => h,
-  u: () => _
+  u: () => p
 }), n(47120);
 var r, i = n(200651),
   o = n(192379),
@@ -14,7 +14,7 @@ var r, i = n(200651),
   d = n(388032),
   f = n(567510);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,7 +22,7 @@ function p(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = {
+let p = {
   DEFAULT: "default",
   SUCCESS: "success",
   ERROR: "error"
@@ -65,14 +65,14 @@ class h extends(r = o.PureComponent) {
       hideMessage: r,
       className: o,
       buttonLook: a,
-      supportsCopy: p,
+      supportsCopy: _,
       disabled: h
-    } = this.props, m = null != r;
+    } = this.props, g = null != r;
     switch (n) {
-      case _.SUCCESS:
+      case p.SUCCESS:
         e = l.Ttl.GREEN;
         break;
-      case _.ERROR:
+      case p.ERROR:
         e = l.Ttl.RED;
         break;
       default:
@@ -88,11 +88,11 @@ class h extends(r = o.PureComponent) {
           className: f.layout,
           children: [(0, i.jsxs)(c.Z, {
             className: f.inputWrapper,
-            children: [this.renderInput(m), m ? (0, i.jsx)("div", {
+            children: [this.renderInput(g), g ? (0, i.jsx)("div", {
               className: f.hiddenMessage,
               children: r
             }) : null]
-          }), p ? (0, i.jsx)(c.Z, {
+          }), _ ? (0, i.jsx)(c.Z, {
             shrink: 1,
             grow: 0,
             style: {
@@ -113,21 +113,21 @@ class h extends(r = o.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), p(this, "inputRef", o.createRef()), p(this, "containerRef", o.createRef()), p(this, "handleButtonClick", () => {
+    super(...e), _(this, "inputRef", o.createRef()), _(this, "containerRef", o.createRef()), _(this, "handleButtonClick", () => {
       this.select();
       let {
         onCopy: e,
         value: t
       } = this.props;
       e(t)
-    }), p(this, "handleInputClick", () => {
+    }), _(this, "handleInputClick", () => {
       this.select()
     })
   }
 }
-p(h, "contextType", l.q3N), p(h, "defaultProps", {
+_(h, "contextType", l.q3N), _(h, "defaultProps", {
   supportsCopy: !0,
   buttonColor: l.Ttl.PRIMARY,
   buttonLook: l.iLD.FILLED,
-  mode: _.DEFAULT
-}), p(h, "Modes", _), p(h, "ButtonColors", l.Ttl), p(h, "ButtonLooks", l.iLD)
+  mode: p.DEFAULT
+}), _(h, "Modes", p), _(h, "ButtonColors", l.Ttl), _(h, "ButtonLooks", l.iLD)

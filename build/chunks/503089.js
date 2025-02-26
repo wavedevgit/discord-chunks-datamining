@@ -67,7 +67,7 @@ let v = Object.freeze({
   _ = 15,
   S = 2;
 
-function E(e) {
+function N(e) {
   var t, r;
   let {
     section: s,
@@ -89,7 +89,7 @@ function E(e) {
     }))
   })
 }
-class N extends s.PureComponent {
+class E extends s.PureComponent {
   componentDidMount() {
     this.getPredicateSections().forEach(e => {
       let {
@@ -204,7 +204,7 @@ class N extends s.PureComponent {
         scrollerRef: this.scrollerRef,
         section: r,
         sidebar: this.renderSidebar(l),
-        content: (0, n.jsx)(E, {
+        content: (0, n.jsx)(N, {
           section: a,
           setPreventNavigation: this.setPreventNavigation,
           scrollerRef: this.scrollerRef
@@ -306,4 +306,4 @@ class N extends s.PureComponent {
     })
   }
 }
-let w = N
+let w = E

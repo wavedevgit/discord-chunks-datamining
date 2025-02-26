@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  F: () => p,
-  x: () => _
+  F: () => _,
+  x: () => p
 });
 var r = n(200651);
 n(192379);
@@ -84,7 +84,7 @@ function f(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     color: t,
     name: n,
@@ -99,7 +99,7 @@ function p(e) {
   }) : (0, r.jsx)(f, c({}, e))
 }
 
-function _(e) {
+function p(e) {
   let {
     color: t,
     className: n

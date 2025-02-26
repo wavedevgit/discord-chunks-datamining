@@ -40,7 +40,7 @@ n(328794);
 var d = n(16686),
   f = n.g.Set || n(344460);
 
-function p(e) {
+function _(e) {
   var t = new f;
 
   function n(e) {
@@ -50,7 +50,7 @@ function p(e) {
     return e.update()
   })
 }
-var _ = function(e) {
+var p = function(e) {
   function t(e) {
     i(this, t);
     var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
@@ -133,10 +133,10 @@ var _ = function(e) {
   }, {
     key: "_updateValue",
     value: function(e) {
-      for (var t in this._value = e, p(this), this._listeners) this._listeners[t]({
+      for (var t in this._value = e, _(this), this._listeners) this._listeners[t]({
         value: this.__getValue()
       })
     }
   }]), t
 }(s);
-e.exports = _
+e.exports = p

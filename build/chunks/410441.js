@@ -1,32 +1,32 @@
-/** Chunk was on 41849 **/
+/** Chunk was on 30243 **/
 r.d(t, {
-  Z: () => i
+  Z: () => o
 });
 var n = r(200651);
 r(192379);
-var a = r(481060),
-  o = r(78421);
+var l = r(481060),
+  i = r(78421);
 
-function i(e) {
+function o(e) {
   let {
     onClick: t,
     Icon: r,
-    "aria-label": i
-  } = e, s = (0, a.dQu)(a.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_PRIMARY), l = (0, n.jsx)(r, {
-    color: s.hex(),
+    "aria-label": o
+  } = e, a = (0, l.dQu)(l.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_PRIMARY), c = (0, n.jsx)(r, {
+    color: a.hex(),
     size: "custom",
     width: 16,
     height: 16
   });
   return null == t ? (0, n.jsx)("div", {
-    className: o.container,
-    "aria-label": i,
-    children: l
-  }) : (0, n.jsx)(a.ua7, {
-    text: i,
+    className: i.container,
+    "aria-label": o,
+    children: c
+  }) : (0, n.jsx)(l.ua7, {
+    text: o,
     children: e => {
-      var r, i;
-      return (0, n.jsx)(a.P3F, (r = function(e) {
+      var r, o;
+      return (0, n.jsx)(l.P3F, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -44,19 +44,19 @@ function i(e) {
         }
         return e
       }({
-        className: o.container
-      }, e), i = i = {
+        className: i.container
+      }, e), o = o = {
         onClick: t,
-        children: l
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        children: c
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
           r.push.apply(r, n)
         }
         return r
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+      })(Object(o)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
       }), r))
     }
   })

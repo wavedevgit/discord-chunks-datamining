@@ -12,11 +12,11 @@ var r, i = n(200651),
   u = n(642128),
   d = n(374470),
   f = n(143450),
-  p = n(84735),
-  _ = n(981729),
+  _ = n(84735),
+  p = n(981729),
   h = n(607070),
-  m = n(540059),
-  g = n(191740);
+  g = n(540059),
+  m = n(191740);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -142,7 +142,7 @@ class T extends(r = o.PureComponent) {
       min: d,
       max: f
     } = this.state, {
-      disabled: m,
+      disabled: g,
       stickToMarkers: E,
       className: b,
       children: O,
@@ -171,20 +171,20 @@ class T extends(r = o.PureComponent) {
           r = null != C && C === n,
           a = this.renderMark(n);
         return (0, i.jsx)("div", {
-          className: s()(g.mark, {
-            [g.defaultValue]: r,
-            [g.markAbove]: 0 === k,
-            [g.markBelow]: 1 === k
+          className: s()(m.mark, {
+            [m.defaultValue]: r,
+            [m.markAbove]: 0 === k,
+            [m.markBelow]: 1 === k
           }),
           style: {
             left: "".concat(e, "%")
           },
           children: null != D ? D(n) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
-              className: g.markValue,
+              className: m.markValue,
               children: a
             }), (0, i.jsx)("div", {
-              className: g["markDash".concat(null == a ? "simple" : "")]
+              className: m["markDash".concat(null == a ? "simple" : "")]
             })]
           })
         }, t)
@@ -196,20 +196,20 @@ class T extends(r = o.PureComponent) {
       keyboardFocused: r && h.Z.keyboardModeEnabled,
       children: e => {
         var o;
-        return (0, i.jsx)(p.t, {
+        return (0, i.jsx)(_.t, {
           focusTarget: this.containerRef,
           ringTarget: this.grabberRef,
           children: (0, i.jsxs)(u.animated.div, {
-            className: s()(g.slider, b, {
-              [g.hasMarks]: (null !== (o = null == Z ? void 0 : Z.length) && void 0 !== o ? o : 0) > 0,
-              [g.disabled]: m,
-              [g.mini]: T
+            className: s()(m.slider, b, {
+              [m.hasMarks]: (null !== (o = null == Z ? void 0 : Z.length) && void 0 !== o ? o : 0) > 0,
+              [m.disabled]: g,
+              [m.mini]: T
             }),
             style: null == e ? void 0 : e.sliderStyles,
             "aria-valuemin": d,
             "aria-valuemax": f,
             "aria-valuenow": t,
-            "aria-disabled": m,
+            "aria-disabled": g,
             "aria-orientation": R,
             "aria-hidden": j,
             "aria-label": U,
@@ -230,26 +230,26 @@ class T extends(r = o.PureComponent) {
             onMouseLeave: () => null == e ? void 0 : e.setHovered(!1),
             ref: this.containerRef,
             children: [(0, i.jsx)("div", {
-              className: g.track,
+              className: m.track,
               children: Z
             }), (0, i.jsx)("div", {
-              className: s()(g.bar, L),
+              className: s()(m.bar, L),
               style: S,
               children: (0, i.jsx)("div", {
-                className: g.barFill,
+                className: m.barFill,
                 style: y(v({}, I), {
                   width: F
                 })
               })
             }), O, (0, i.jsx)("div", {
-              className: g.track,
-              children: (0, i.jsx)(_.u, {
-                color: _.u.Colors.GREY,
+              className: m.track,
+              children: (0, i.jsx)(p.u, {
+                color: p.u.Colors.GREY,
                 hideOnClick: !1,
                 text: A || E ? null : H,
                 forceOpen: n || r && h.Z.keyboardModeEnabled,
                 children: e => (0, i.jsx)("div", y(v({}, e), {
-                  className: s()(g.grabber, x),
+                  className: s()(m.grabber, x),
                   style: y(v({}, M), {
                     left: F
                   }),
@@ -346,9 +346,9 @@ class T extends(r = o.PureComponent) {
       } = e;
       if (!(0, d.k)(f)) return;
       let {
-        left: p,
-        width: _
-      } = f.getBoundingClientRect(), h = (u - p) / _;
+        left: _,
+        width: p
+      } = f.getBoundingClientRect(), h = (u - _) / p;
       if (s) {
         let {
           nextClosestMarkerIndex: e
@@ -463,7 +463,7 @@ function N(e) {
     active: t,
     keyboardFocused: n,
     children: r
-  } = e, i = (0, m.Q3)("Slider"), [a, s] = o.useState(!1), l = (0, f.q)({
+  } = e, i = (0, g.Q3)("Slider"), [a, s] = o.useState(!1), l = (0, f.q)({
     "--grabber-size": n || t || a ? "20px" : "16px",
     "--bar-size": n || t || a ? "6px" : "4px",
     config: y(v({}, u.config.stiff), {

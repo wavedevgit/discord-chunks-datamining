@@ -12,7 +12,7 @@ class i {
     if (this.options = t, this.loose = !!t.loose, this.includePrerelease = !!t.includePrerelease, this.raw = e.trim().replace(r, " "), this.set = this.raw.split("||").map(e => this.parseRange(e.trim())).filter(e => e.length), !this.set.length) throw TypeError(`Invalid SemVer Range: ${this.raw}`);
     if (this.set.length > 1) {
       let e = this.set[0];
-      if (this.set = this.set.filter(e => !g(e[0])), 0 === this.set.length) this.set = [e];
+      if (this.set = this.set.filter(e => !m(e[0])), 0 === this.set.length) this.set = [e];
       else if (this.set.length > 1) {
         for (let e of this.set)
           if (1 === e.length && E(e[0])) {
@@ -41,17 +41,17 @@ class i {
     return this.range
   }
   parseRange(e) {
-    let t = ((this.options.includePrerelease && h) | (this.options.loose && m)) + ":" + e,
+    let t = ((this.options.includePrerelease && h) | (this.options.loose && g)) + ":" + e,
       n = o.get(t);
     if (n) return n;
     let r = this.options.loose,
       i = r ? u[d.HYPHENRANGELOOSE] : u[d.HYPHENRANGE];
-    l("hyphen replace", e = e.replace(i, P(this.options.includePrerelease))), l("comparator trim", e = e.replace(u[d.COMPARATORTRIM], f)), l("tilde trim", e = e.replace(u[d.TILDETRIM], p)), l("caret trim", e = e.replace(u[d.CARETTRIM], _));
+    l("hyphen replace", e = e.replace(i, P(this.options.includePrerelease))), l("comparator trim", e = e.replace(u[d.COMPARATORTRIM], f)), l("tilde trim", e = e.replace(u[d.TILDETRIM], _)), l("caret trim", e = e.replace(u[d.CARETTRIM], p));
     let a = e.split(" ").map(e => b(e, this.options)).join(" ").split(/\s+/).map(e => R(e, this.options));
     r && (a = a.filter(e => (l("loose invalid filter", e, this.options), !!e.match(u[d.COMPARATORLOOSE])))), l("range list", a);
     let c = new Map;
     for (let e of a.map(e => new s(e, this.options))) {
-      if (g(e)) return [e];
+      if (m(e)) return [e];
       c.set(e.value, e)
     }
     c.size > 1 && c.has("") && c.delete("");
@@ -84,14 +84,14 @@ let o = new(n(147567)),
     safeRe: u,
     t: d,
     comparatorTrimReplace: f,
-    tildeTrimReplace: p,
-    caretTrimReplace: _
+    tildeTrimReplace: _,
+    caretTrimReplace: p
   } = n(646664),
   {
     FLAG_INCLUDE_PRERELEASE: h,
-    FLAG_LOOSE: m
+    FLAG_LOOSE: g
   } = n(942177),
-  g = e => "<0.0.0-0" === e.value,
+  m = e => "<0.0.0-0" === e.value,
   E = e => "" === e.value,
   v = (e, t) => {
     let n = !0,

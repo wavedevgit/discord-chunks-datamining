@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,15 +13,15 @@ var r = n(200651),
   u = n(806966),
   d = n(28546),
   f = n(149203),
-  p = n(981631),
-  _ = n(388032),
+  _ = n(981631),
+  p = n(388032),
   h = n(82845);
-let m = i.forwardRef(function(e, t) {
+let g = i.forwardRef(function(e, t) {
     let {
       emojiListRef: n,
       gridNavigatorId: o,
-      isFullRow: m,
-      onKeyDown: g,
+      isFullRow: g,
+      onKeyDown: m,
       onFocus: E,
       autoFocus: v,
       className: b,
@@ -33,13 +33,13 @@ let m = i.forwardRef(function(e, t) {
       (0, d.ql)("")
     }, []), C = e => {
       switch (e.keyCode) {
-        case p.yXg.ARROW_LEFT:
-        case p.yXg.ARROW_RIGHT:
-        case p.yXg.ARROW_UP:
-        case p.yXg.ARROW_DOWN:
+        case _.yXg.ARROW_LEFT:
+        case _.yXg.ARROW_RIGHT:
+        case _.yXg.ARROW_UP:
+        case _.yXg.ARROW_DOWN:
           document.activeElement !== e.target && e.preventDefault()
       }
-      g(e)
+      m(e)
     };
     return i.useImperativeHandle(t, () => ({
       focus: () => {
@@ -57,10 +57,10 @@ let m = i.forwardRef(function(e, t) {
       onFocus: E,
       onChange: N,
       className: a()(b, {
-        [h.searchBarFullRow]: m
+        [h.searchBarFullRow]: g
       }),
       inputProps: {
-        "aria-label": _.NW.string(_.t.tCauZW),
+        "aria-label": p.NW.string(p.t.tCauZW),
         "aria-haspopup": "grid",
         "aria-controls": o,
         "aria-expanded": !0,
@@ -68,4 +68,4 @@ let m = i.forwardRef(function(e, t) {
       }
     })
   }),
-  g = i.memo(m)
+  m = i.memo(g)

@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,15 +45,15 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,35 +61,35 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let g = 1,
+let m = 1,
   E = i.memo(function(e) {
     let {
       onClick: t,
       trusted: n,
       title: o,
       href: d,
-      children: p,
-      messageId: m,
+      children: _,
+      messageId: g,
       channelId: E
     } = e, v = h(e, ["onClick", "trusted", "title", "href", "children", "messageId", "channelId"]), {
       analyticsLocations: b
     } = (0, c.ZP)(l.Z.MASKED_LINK), y = i.useCallback(t => (0, u.q)(e, t, b), [b, e]), O = i.useCallback(e => {
-      e.button === g && y(e)
+      e.button === m && y(e)
     }, [y]), S = a().sanitizeUrl(d);
-    return (0, r.jsx)(s.eee, _(f({}, v), {
+    return (0, r.jsx)(s.eee, p(f({}, v), {
       title: o,
       target: "_blank",
       rel: "noreferrer noopener",
       href: S,
       onClick: y,
       onAuxClick: O,
-      children: null != p ? p : o
+      children: null != _ ? _ : o
     }))
   })

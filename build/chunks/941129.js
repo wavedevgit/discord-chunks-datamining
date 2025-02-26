@@ -1,7 +1,7 @@
-/** Chunk was on 63061 **/
+/** Chunk was on 65936 **/
 n.d(t, {
   S: () => i,
-  u: () => o
+  u: () => l
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -36,7 +36,7 @@ function i() {
   }).enabled
 }
 
-function o() {
+function l() {
   return r.useExperiment({
     location: "b85a21_2"
   }, {

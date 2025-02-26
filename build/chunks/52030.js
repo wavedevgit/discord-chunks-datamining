@@ -20,18 +20,18 @@ let s = [],
   u = new Map,
   d = new Map,
   f = new Map,
-  p = new Map,
-  _ = e => {
+  _ = new Map,
+  p = e => {
     f.set(e.tab, !0), d.set(e.tab, void 0), u.set(e.tab, e.options), u.set(e.tab, e.options), c.set(e.tab, void 0)
   },
   h = e => {
-    p.set(e.tab, e.shopHome.shopBlocks), l.set(e.tab, Date.now()), f.set(e.tab, !1), d.set(e.tab, void 0), c.set(e.tab, void 0)
+    _.set(e.tab, e.shopHome.shopBlocks), l.set(e.tab, Date.now()), f.set(e.tab, !1), d.set(e.tab, void 0), c.set(e.tab, void 0)
   },
-  m = e => {
-    p.set(e.tab, s), f.set(e.tab, !1), d.set(e.tab, e.error), c.set(e.tab, Date.now())
+  g = e => {
+    _.set(e.tab, s), f.set(e.tab, !1), d.set(e.tab, e.error), c.set(e.tab, Date.now())
   },
-  g = () => {
-    p.clear(), u.clear(), d.clear(), f.clear(), l.clear(), c.clear()
+  m = () => {
+    _.clear(), u.clear(), d.clear(), f.clear(), l.clear(), c.clear()
   };
 class E extends(r = i.ZP.Store) {
   getLastSuccessfulFetch(e) {
@@ -51,13 +51,13 @@ class E extends(r = i.ZP.Store) {
   }
   getShopBlocks(e) {
     var t;
-    return null !== (t = p.get(e)) && void 0 !== t ? t : s
+    return null !== (t = _.get(e)) && void 0 !== t ? t : s
   }
 }
 a(E, "displayName", "CollectiblesShopHomesStore");
 let v = new E(o.Z, {
-  COLLECTIBLES_SHOP_HOME_FETCH: _,
+  COLLECTIBLES_SHOP_HOME_FETCH: p,
   COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: h,
-  COLLECTIBLES_SHOP_HOME_FETCH_FAILURE: m,
-  LOGOUT: g
+  COLLECTIBLES_SHOP_HOME_FETCH_FAILURE: g,
+  LOGOUT: m
 })

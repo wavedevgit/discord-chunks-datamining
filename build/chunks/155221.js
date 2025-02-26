@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(756647),
   d = n(442837),
   f = n(433517),
-  p = n(799656),
-  _ = n(765717),
+  _ = n(799656),
+  p = n(765717),
   h = n(663993),
-  m = n(329816),
-  g = n(554608),
+  g = n(329816),
+  m = n(554608),
   E = n(83949),
   v = n(137412),
   b = n(893607),
@@ -117,7 +117,7 @@ let x = (0, h.Un)({
     name: "ActivateDevice"
   }),
   Z = (0, h.Un)({
-    createPromise: () => Promise.all([n.e("50506"), n.e("68880"), n.e("93828"), n.e("48835"), n.e("99152"), n.e("30371"), n.e("34981"), n.e("25292"), n.e("8016"), n.e("22878"), n.e("90508"), n.e("13351"), n.e("95477"), n.e("11212"), n.e("66711"), n.e("78447"), n.e("97349"), n.e("55186"), n.e("17938"), n.e("53937"), n.e("83366"), n.e("6380"), n.e("46097"), n.e("84335"), n.e("76540"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("22173"), n.e("40580"), n.e("79120"), n.e("30243"), n.e("99393"), n.e("49508"), n.e("22646"), n.e("68241"), n.e("3940"), n.e("25183"), n.e("80284"), n.e("85574"), n.e("11814"), n.e("48923"), n.e("67830"), n.e("30419"), n.e("99839"), n.e("18824"), n.e("60691"), n.e("38902"), n.e("42743"), n.e("49049"), n.e("53485"), n.e("56650"), n.e("70205"), n.e("7590"), n.e("91689"), n.e("93382"), n.e("93375"), n.e("64679"), n.e("69057"), n.e("98254"), n.e("22356"), n.e("57738"), n.e("35755"), n.e("12416"), n.e("94458"), n.e("21881"), n.e("94989"), n.e("37220"), n.e("17024"), n.e("82158"), n.e("91315"), n.e("71611"), n.e("61195"), n.e("77803"), n.e("78553"), n.e("30829"), n.e("20011"), n.e("35467"), n.e("63061"), n.e("90728"), n.e("95468"), n.e("1272")]).then(n.bind(n, 457094)),
+    createPromise: () => Promise.all([n.e("50506"), n.e("68880"), n.e("93828"), n.e("48835"), n.e("99152"), n.e("30371"), n.e("34981"), n.e("25292"), n.e("8016"), n.e("22878"), n.e("90508"), n.e("13351"), n.e("95477"), n.e("11212"), n.e("66711"), n.e("78447"), n.e("97349"), n.e("55186"), n.e("17938"), n.e("53937"), n.e("83366"), n.e("6380"), n.e("46097"), n.e("84335"), n.e("76540"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("22173"), n.e("40580"), n.e("79120"), n.e("30243"), n.e("99393"), n.e("49508"), n.e("22646"), n.e("68241"), n.e("3940"), n.e("25183"), n.e("80284"), n.e("85574"), n.e("11814"), n.e("48923"), n.e("67830"), n.e("30419"), n.e("99839"), n.e("18824"), n.e("60691"), n.e("38902"), n.e("42743"), n.e("49049"), n.e("53485"), n.e("56650"), n.e("70205"), n.e("7590"), n.e("91689"), n.e("93382"), n.e("93375"), n.e("64679"), n.e("69057"), n.e("98254"), n.e("22356"), n.e("57738"), n.e("35755"), n.e("55697"), n.e("94458"), n.e("21881"), n.e("94989"), n.e("37220"), n.e("17024"), n.e("82158"), n.e("91315"), n.e("71611"), n.e("61195"), n.e("77803"), n.e("78553"), n.e("30829"), n.e("20011"), n.e("35467"), n.e("65936"), n.e("90728"), n.e("95468"), n.e("1272")]).then(n.bind(n, 457094)),
     webpackId: 457094,
     name: "ViewsWithMainInterface",
     memo: !0,
@@ -144,7 +144,7 @@ let x = (0, h.Un)({
     name: "MobileWebHandoffFallback"
   }),
   z = (0, h.Un)({
-    createPromise: () => Promise.all([n.e("50506"), n.e("68880"), n.e("93828"), n.e("48835"), n.e("99152"), n.e("30371"), n.e("25292"), n.e("8016"), n.e("22878"), n.e("90508"), n.e("13351"), n.e("95477"), n.e("11212"), n.e("66711"), n.e("78447"), n.e("97349"), n.e("55186"), n.e("17938"), n.e("53937"), n.e("83366"), n.e("6380"), n.e("46097"), n.e("84335"), n.e("76540"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("22173"), n.e("40580"), n.e("79120"), n.e("30243"), n.e("99393"), n.e("49508"), n.e("22646"), n.e("68241"), n.e("3940"), n.e("25183"), n.e("80284"), n.e("85574"), n.e("11814"), n.e("48923"), n.e("67830"), n.e("30419"), n.e("99839"), n.e("18824"), n.e("60691"), n.e("38902"), n.e("42743"), n.e("49049"), n.e("53485"), n.e("56650"), n.e("70205"), n.e("7590"), n.e("93382"), n.e("93375"), n.e("64679"), n.e("69057"), n.e("98254"), n.e("22356"), n.e("57738"), n.e("35755"), n.e("12416"), n.e("94458"), n.e("94989"), n.e("37220"), n.e("17024"), n.e("82158"), n.e("91315"), n.e("71611"), n.e("61195"), n.e("78553"), n.e("30829"), n.e("35467"), n.e("63061"), n.e("48799"), n.e("63141")]).then(n.bind(n, 290161)),
+    createPromise: () => Promise.all([n.e("50506"), n.e("68880"), n.e("93828"), n.e("48835"), n.e("99152"), n.e("30371"), n.e("25292"), n.e("8016"), n.e("22878"), n.e("90508"), n.e("13351"), n.e("95477"), n.e("11212"), n.e("66711"), n.e("78447"), n.e("97349"), n.e("55186"), n.e("17938"), n.e("53937"), n.e("83366"), n.e("6380"), n.e("46097"), n.e("84335"), n.e("76540"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("22173"), n.e("40580"), n.e("79120"), n.e("30243"), n.e("99393"), n.e("49508"), n.e("22646"), n.e("68241"), n.e("3940"), n.e("25183"), n.e("80284"), n.e("85574"), n.e("11814"), n.e("48923"), n.e("67830"), n.e("30419"), n.e("99839"), n.e("18824"), n.e("60691"), n.e("38902"), n.e("42743"), n.e("49049"), n.e("53485"), n.e("56650"), n.e("70205"), n.e("7590"), n.e("93382"), n.e("93375"), n.e("64679"), n.e("69057"), n.e("98254"), n.e("22356"), n.e("57738"), n.e("35755"), n.e("55697"), n.e("94458"), n.e("94989"), n.e("37220"), n.e("17024"), n.e("82158"), n.e("91315"), n.e("71611"), n.e("61195"), n.e("78553"), n.e("30829"), n.e("35467"), n.e("65936"), n.e("48799"), n.e("63141")]).then(n.bind(n, 290161)),
     webpackId: 290161,
     name: "Overlay"
   }),
@@ -193,22 +193,22 @@ class er extends i.Component {
       migrationStatus: n,
       skipsSettingDefaultPageTitle: i
     } = this.props;
-    return e = n === g.P.IN_PROGRESS ? null : R.KO ? T.isPlatformEmbedded ? (0, r.jsxs)(a.rs, {
+    return e = n === m.P.IN_PROGRESS ? null : R.KO ? T.isPlatformEmbedded ? (0, r.jsxs)(a.rs, {
       children: [t ? null : (0, r.jsx)(a.AW, {
         path: A.Z5c.ACCOUNT_STANDING,
         component: q
       }), (0, r.jsx)(a.AW, {
         exact: !0,
         path: A.Z5c.INDEX,
-        render: () => (0, r.jsx)(p.Z, {})
-      }), (0, r.jsx)(_.Z, {
+        render: () => (0, r.jsx)(_.Z, {})
+      }), (0, r.jsx)(p.Z, {
         exact: !0,
         path: A.Z5c.APPS,
         component: M
       }), (0, r.jsx)(a.AW, {
         path: en([A.Z5c.LOGIN, A.Z5c.REGISTER, A.Z5c.INVITE(":inviteCode"), A.Z5c.INVITE_LOGIN(":inviteCode"), A.Z5c.GIFT_CODE(":giftCode"), A.Z5c.GIFT_CODE_LOGIN(":giftCode"), A.Z5c.RESET], C.a),
         component: H
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.INVITE_PROXY(b.Hw.channelId()),
         component: k
       }), (0, r.jsx)(a.l_, {
@@ -221,10 +221,10 @@ class er extends i.Component {
         render: ee
       })]
     }) : (0, r.jsxs)(a.rs, {
-      children: [(0, r.jsx)(_.Z, {
+      children: [(0, r.jsx)(p.Z, {
         exact: !0,
         path: A.Z5c.INDEX,
-        render: () => (0, r.jsx)(p.Z, {})
+        render: () => (0, r.jsx)(_.Z, {})
       }), (0, r.jsx)(a.AW, {
         path: en([A.Z5c.LOGIN, A.Z5c.LOGIN_HANDOFF, A.Z5c.REGISTER, A.Z5c.BILLING_PREFIX, A.Z5c.BILLING_PROMOTION_REDEMPTION(":code"), A.Z5c.INVITE(":inviteCode"), A.Z5c.INVITE_LOGIN(":inviteCode"), A.Z5c.GIFT_CODE(":giftCode"), A.Z5c.GIFT_CODE_LOGIN(":giftCode"), A.Z5c.GUILD_TEMPLATE(":guildTemplateCode"), A.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), A.Z5c.DISABLE_EMAIL_NOTIFICATIONS, A.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, A.Z5c.RESET, A.Z5c.REPORT, A.Z5c.REPORT_SECOND_LOOK, A.Z5c.ACCOUNT_REVERT(":token")], C.a),
         component: H
@@ -239,13 +239,13 @@ class er extends i.Component {
       }), (0, r.jsx)(a.l_, {
         from: A.Z5c.INVITE(""),
         to: A.Z5c.LOGIN
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.INVITE_PROXY(b.Hw.channelId()),
         component: k
       }), (0, r.jsx)(a.l_, {
         from: A.Z5c.GIFT_CODE(""),
         to: A.Z5c.LOGIN
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.QUESTS(":questId"),
         component: Q,
         impressionName: s.ImpressionNames.QUESTS_LANDING_PAGE,
@@ -257,37 +257,37 @@ class er extends i.Component {
             quest_id: t.params.questId
           }
         }
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.HANDOFF,
         component: Y
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.MOBILE_WEB_HANDOFF,
         component: K
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.CONNECTION_LINK(":type"),
         component: B
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.CONNECTION_LINK_AUTHORIZE(":type"),
         component: V
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.ACTIVATE,
         component: F
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.ACTIVATE_HANDOFF,
         component: F
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.CONNECTIONS_AUTHORIZE_CONTINUE(":type"),
         component: X
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.CONNECTIONS_SUCCESS(":type"),
         component: U
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.CONNECTIONS_ERROR(":type"),
         component: G
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.CONNECTIONS(":type"),
         component: j
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.DOWNLOAD_QR_CODE_REDIRECT,
         render: () => {
           var e, t, n;
@@ -303,7 +303,7 @@ class er extends i.Component {
             qr_code: !0
           }), window.location.href = (0, S.Gn)(null != a && "" !== a ? a : "qr_code", r), null
         }
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(p.Z, {
         path: A.Z5c.OPEN_APP_FROM_EMAIL,
         render: () => {
           var e, t;
@@ -347,12 +347,12 @@ class er extends i.Component {
         to: A.Z5c.LOGIN
       })]
     }) : (0, r.jsx)(a.rs, {
-      children: (0, r.jsx)(_.Z, {
+      children: (0, r.jsx)(p.Z, {
         component: x
       })
-    }), (0, r.jsxs)(m.Z, {
+    }), (0, r.jsxs)(g.Z, {
       skipsSettingDefaultPageTitle: i,
-      children: [e, T.isPlatformEmbedded && (n === g.P.NOT_STARTED || n === g.P.IN_PROGRESS) && !0 !== f.K.get(l.SV) ? (0, r.jsx)(E.Z, {}) : null]
+      children: [e, T.isPlatformEmbedded && (n === m.P.NOT_STARTED || n === m.P.IN_PROGRESS) && !0 !== f.K.get(l.SV) ? (0, r.jsx)(E.Z, {}) : null]
     })
   }
 }
@@ -372,9 +372,9 @@ function eo(e) {
     skipsSettingDefaultPageTitle: t
   }))
 }
-let ea = d.ZP.connectStores([y.default, g.Z], () => ({
+let ea = d.ZP.connectStores([y.default, m.Z], () => ({
   isAuthenticated: y.default.isAuthenticated(),
-  migrationStatus: g.Z.getMigrationStatus()
+  migrationStatus: m.Z.getMigrationStatus()
 }), {
   forwardRef: !0
 })(eo)

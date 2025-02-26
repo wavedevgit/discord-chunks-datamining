@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C: () => m
+  C: () => g
 });
 var r = n(36056),
   i = n(950697),
@@ -13,10 +13,10 @@ var r = n(36056),
   u = n(320215),
   d = n(660284),
   f = n(838390),
-  p = n(284267),
-  _ = n(973408),
+  _ = n(284267),
+  p = n(973408),
   h = n(647943);
-class m {
+class g {
   constructor(e, t, n) {
     this.defaultCheckDepth = 16, this.typeName = e, this.fields = t.map(r.nb), this.options = null != n ? n : {}, this.refTypeCheck = new i.Z(this), this.refJsonReader = new o.C(this), this.refJsonWriter = new a.k(this), this.refBinReader = new s.I(this), this.refBinWriter = new l.R(this)
   }
@@ -29,7 +29,7 @@ class m {
     return (0, u.l)(this, t, e), t
   }
   equals(e, t) {
-    return (0, p.Y)(this, e, t)
+    return (0, _.Y)(this, e, t)
   }
   is(e, t = this.defaultCheckDepth) {
     return this.refTypeCheck.is(e, t, !1)
@@ -59,7 +59,7 @@ class m {
     return JSON.stringify(this.toJson(e, t), null, null !== (n = null == t ? void 0 : t.prettySpaces) && void 0 !== n ? n : 0)
   }
   toBinary(e, t) {
-    let n = (0, _.X)(t);
+    let n = (0, p.X)(t);
     return this.internalBinaryWrite(e, n.writerFactory(), n).finish()
   }
   internalJsonRead(e, t, n) {

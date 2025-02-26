@@ -1,13 +1,13 @@
-/** Chunk was on 41849 **/
+/** Chunk was on 4493 **/
 r.d(t, {
-  Z: () => b
+  Z: () => _
 }), r(47120), r(653041);
 var n = r(200651),
   a = r(192379),
-  o = r(120356),
-  i = r.n(o),
-  s = r(758713),
-  l = r(657707),
+  i = r(120356),
+  o = r.n(i),
+  l = r(758713),
+  s = r(657707),
   c = r(481060),
   u = r(388032),
   d = r(384370);
@@ -30,7 +30,7 @@ function p(e) {
   }
   return e
 }
-let m = [s.z.DESKTOP, s.z.XBOX, s.z.PLAYSTATION, s.z.NINTENDO];
+let m = [l.z.DESKTOP, l.z.XBOX, l.z.PLAYSTATION, l.z.NINTENDO];
 
 function f(e) {
   var {
@@ -40,31 +40,31 @@ function f(e) {
     var r, n, a = function(e, t) {
       if (null == e) return {};
       var r, n, a = {},
-        o = Object.keys(e);
-      for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
+        i = Object.keys(e);
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
       return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+      var i = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
     }
     return a
   }(e, ["platform"]);
   switch (t) {
-    case s.z.DESKTOP:
-      return (0, n.jsx)(l.pzj, p({
+    case l.z.DESKTOP:
+      return (0, n.jsx)(s.pzj, p({
         size: "xs"
       }, r));
-    case s.z.XBOX:
-      return (0, n.jsx)(l.Mko, p({
+    case l.z.XBOX:
+      return (0, n.jsx)(s.Mko, p({
         size: "xs"
       }, r));
-    case s.z.PLAYSTATION:
-      return (0, n.jsx)(l.Tsp, p({
+    case l.z.PLAYSTATION:
+      return (0, n.jsx)(s.Tsp, p({
         size: "xs"
       }, r));
-    case s.z.NINTENDO:
-      return (0, n.jsx)(l.aPH, p({
+    case l.z.NINTENDO:
+      return (0, n.jsx)(s.aPH, p({
         size: "xs"
       }, r));
     default:
@@ -77,20 +77,20 @@ function g(e) {
     platforms: t
   } = e;
   return (0, n.jsx)("div", {
-    className: i()(d.row, d.gapSm),
+    className: o()(d.row, d.gapSm),
     style: {
       alignItems: "center"
     },
     children: t.map(e => (0, n.jsx)(c.ua7, {
       text: function(e) {
         switch (e) {
-          case s.z.DESKTOP:
+          case l.z.DESKTOP:
             return u.NW.string(u.t.KT6uCA);
-          case s.z.XBOX:
+          case l.z.XBOX:
             return u.NW.string(u.t.DDWUJi);
-          case s.z.PLAYSTATION:
+          case l.z.PLAYSTATION:
             return u.NW.string(u.t.fzMz2t);
-          case s.z.NINTENDO:
+          case l.z.NINTENDO:
             return u.NW.string(u.t.AMW8jY);
           default:
             return null
@@ -115,19 +115,19 @@ function g(e) {
   })
 }
 
-function b(e) {
+function _(e) {
   let {
     detectedGame: t,
     className: r
-  } = e, o = a.useMemo(() => {
+  } = e, i = a.useMemo(() => {
     let e = new Set(t.platforms),
       r = [...e];
-    return !e.has(s.z.DESKTOP) && (e.has(s.z.MACOS) || e.has(s.z.LINUX)) && r.push(s.z.DESKTOP), r.filter(e => m.includes(e))
+    return !e.has(l.z.DESKTOP) && (e.has(l.z.MACOS) || e.has(l.z.LINUX)) && r.push(l.z.DESKTOP), r.filter(e => m.includes(e))
   }, [t.platforms]);
-  return 0 === o.length ? null : (0, n.jsx)("div", {
-    className: i()(d.column, d.gapLg, r),
-    children: o.length > 0 && (0, n.jsx)(g, {
-      platforms: o
+  return 0 === i.length ? null : (0, n.jsx)("div", {
+    className: o()(d.column, d.gapLg, r),
+    children: i.length > 0 && (0, n.jsx)(g, {
+      platforms: i
     })
   })
 }

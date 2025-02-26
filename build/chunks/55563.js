@@ -20,20 +20,20 @@ function u(e, t, n) {
 }
 let d = new Map,
   f = new Set,
-  p = new Set,
-  _ = new Map,
+  _ = new Set,
+  p = new Map,
   h = new Map,
-  m = new Map;
+  g = new Map;
 
-function g(e) {
+function m(e) {
   var t;
-  _.set(e.id, l.Z.createFromServer(e)), f.delete(e.id), p.delete(e.id), null === (t = e.bundled_sku_ids) || void 0 === t || t.forEach(t => {
+  p.set(e.id, l.Z.createFromServer(e)), f.delete(e.id), _.delete(e.id), null === (t = e.bundled_sku_ids) || void 0 === t || t.forEach(t => {
     d.set(t, e.id)
   }), h.has(e.application_id) || h.set(e.application_id, new Set), h.get(e.application_id).add(e.id)
 }
 
 function E(e) {
-  g(e)
+  m(e)
 }
 
 function v(e) {
@@ -54,14 +54,14 @@ function y(e) {
   let {
     skuId: t
   } = e;
-  f.delete(t), p.add(t)
+  f.delete(t), _.add(t)
 }
 
 function O(e) {
   let {
     skuId: t
   } = e;
-  f.delete(t), p.add(t)
+  f.delete(t), _.add(t)
 }
 
 function S(e) {
@@ -69,7 +69,7 @@ function S(e) {
     giftCode: t
   } = e;
   if (null == t.store_listing) return !1;
-  g(t.store_listing.sku)
+  m(t.store_listing.sku)
 }
 
 function I(e) {
@@ -85,11 +85,11 @@ function T(e) {
     skus: n
   } = e;
   for (let e of n) E(e);
-  null != t && m.set(t, new Set(n.map(e => e.id)))
+  null != t && g.set(t, new Set(n.map(e => e.id)))
 }
 
 function N(e) {
-  g(e.sku), null != e.child_skus && e.child_skus.forEach(e => g(e)), null != e.alternative_skus && e.alternative_skus.forEach(e => g(e))
+  m(e.sku), null != e.child_skus && e.child_skus.forEach(e => m(e)), null != e.alternative_skus && e.alternative_skus.forEach(e => m(e))
 }
 
 function A(e) {
@@ -110,11 +110,11 @@ function R(e) {
   let {
     entitlements: t
   } = e;
-  for (let e of t) null != e.sku && g(e.sku)
+  for (let e of t) null != e.sku && m(e.sku)
 }
 
 function P() {
-  d = new Map, f = new Set, p = new Set, _ = new Map, h = new Map, m = new Map
+  d = new Map, f = new Set, _ = new Set, p = new Map, h = new Map, g = new Map
 }
 
 function D() {
@@ -126,24 +126,24 @@ class w extends(i = o.yh) {
     this.waitFor(s.default, c.Z), this.syncWith([s.default], D), r = s.default.locale
   }
   get(e) {
-    return _.get(e)
+    return p.get(e)
   }
   getForApplication(e) {
     let t = h.get(e);
-    return null == t ? [] : Array.from(t).map(e => _.get(e))
+    return null == t ? [] : Array.from(t).map(e => p.get(e))
   }
   isFetching(e) {
     return f.has(e)
   }
   getSKUs() {
-    return Object.fromEntries(_)
+    return Object.fromEntries(p)
   }
   getParentSKU(e) {
     let t = d.get(e);
     if (null != t) return this.get(t)
   }
   didFetchingSkuFail(e) {
-    return p.has(e)
+    return _.has(e)
   }
 }
 u(w, "displayName", "SKUStore");

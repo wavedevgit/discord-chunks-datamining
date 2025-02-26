@@ -12,17 +12,17 @@ var c = n(960048),
   u = n(591759),
   d = n(303850),
   f = n(105713),
-  p = n(981631);
-let _ = ["https://cdn.discordapp.com/bad-domains/updated_hashes.json", "https://cdn.discordapp.com/bad-domains/hashes.json"],
+  _ = n(981631);
+let p = ["https://cdn.discordapp.com/bad-domains/updated_hashes.json", "https://cdn.discordapp.com/bad-domains/hashes.json"],
   h = new d.R;
 
-function m(e) {
+function g(e) {
   let t = new URLSearchParams;
   t.append("query", '@http.x_client_trace_id:"'.concat(e, '"')), t.append("showAllSpans", "true");
   let n = u.Z.toURLSafe("traces?".concat(t.toString()), "https://datadog.discord.tools/apm/");
   return null == n ? null : n.toString()
 }
-let g = /\/api(\/v\d+)?\/science/;
+let m = /\/api(\/v\d+)?\/science/;
 
 function E(e) {
   let t = 10;
@@ -43,7 +43,7 @@ function E(e) {
       isPlatformEmbedded: u
     } = n(358085);
     if ("/" === e.url[0]) {
-      var d, p;
+      var d, _;
       e.url = (0, r.K0)() + e.url, "Authorization" in e.header || "authorization" in e.header || e.set("Authorization", t.getToken());
       let n = l.getSuperPropertiesBase64();
       null != n && e.set("X-Super-Properties", n);
@@ -57,15 +57,15 @@ function E(e) {
       e.set("X-Discord-Locale", a.locale);
       let c = (0, f.Z)();
       null != c && e.set("X-Discord-Timezone", c);
-      let _ = o.getDebugOptionsHeaderValue();
-      if (null != _ && "" !== _ && e.set("X-Debug-Options", _), o.isTracingRequests) {
+      let p = o.getDebugOptionsHeaderValue();
+      if (null != p && "" !== p && e.set("X-Debug-Options", p), o.isTracingRequests) {
         let t = s.getCurrentUser(),
-          n = h.generate(null !== (p = null == t ? void 0 : t.id) && void 0 !== p ? p : "0");
+          n = h.generate(null !== (_ = null == t ? void 0 : t.id) && void 0 !== _ ? _ : "0");
         e.set("x-client-trace-id", n);
         try {
           let t = new URL(e.url).pathname;
-          if (!g.test(t)) {
-            let r = m(n);
+          if (!m.test(t)) {
+            let r = g(n);
             null !== r && console.debug("%c[tracing]%c %s %s\n%s", "font-weight: bold", "", e.method, t, r)
           }
         } catch (e) {
@@ -80,7 +80,7 @@ function E(e) {
     }), e.on("error", (t, n) => {
       if (i.Hj("Network", "Failed ".concat(e.method, " to ").concat(e.url, " with status ").concat(null == t ? void 0 : t.status, " and body: ").concat(null == n ? void 0 : n.text)), null != t && "parse" in t && t.parse) {
         let n = "[FILTERED]";
-        if (_.includes(e.url)) {
+        if (p.includes(e.url)) {
           var r, o;
           n = null === (o = e.xhr) || void 0 === o ? void 0 : null === (r = o.responseText) || void 0 === r ? void 0 : r.slice(0, 1e3)
         }
@@ -114,7 +114,7 @@ function E(e) {
         "X-Captcha-Key": n
       };
       null != r && (i["X-Captcha-Rqtoken"] = r), t(i)
-    }).catch(r), !0) : 401 === e.statusCode && (null === (l = e.body) || void 0 === l ? void 0 : l.code) === p.evJ.MFA_REQUIRED && (null === (c = e.body) || void 0 === c ? void 0 : c.mfa) ? (Promise.all([n.e("52030"), n.e("6604")]).then(n.bind(n, 24031)).then(n => {
+    }).catch(r), !0) : 401 === e.statusCode && (null === (l = e.body) || void 0 === l ? void 0 : l.code) === _.evJ.MFA_REQUIRED && (null === (c = e.body) || void 0 === c ? void 0 : c.mfa) ? (Promise.all([n.e("52030"), n.e("6604")]).then(n.bind(n, 24031)).then(n => {
       let {
         openMFAModal: i
       } = n;

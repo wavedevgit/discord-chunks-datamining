@@ -14,9 +14,9 @@ var r, i = n(200651),
   p = n(388905),
   g = n(981631),
   m = n(388032),
-  _ = n(455812);
+  f = n(455812);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -68,18 +68,18 @@ class b extends(r = o.PureComponent) {
     } = this.state;
     return (0, i.jsxs)(p.ZP, {
       children: [(0, i.jsx)(p.Dx, {
-        className: _.marginBottom8,
+        className: f.marginBottom8,
         children: m.NW.string(m.t.Z33eiI)
       }), (0, i.jsx)(p.DK, {
         children: m.NW.format(m.t.NRWtfH, {
           guildName: n.name
         })
       }), (0, i.jsx)(p.zx, {
-        className: _.marginTop40,
+        className: f.marginTop40,
         onClick: () => t(e),
         children: m.NW.string(m.t.fIv16O)
       }), (0, i.jsx)(p.zx, {
-        className: _.marginTop8,
+        className: f.marginTop8,
         color: p.zx.Colors.LINK,
         look: p.zx.Looks.LINK,
         onClick: () => {
@@ -97,14 +97,14 @@ class b extends(r = o.PureComponent) {
     return (0, i.jsxs)(p.ZP, {
       children: [(0, i.jsx)(p.Ee, {
         src: n(105020),
-        className: _.marginBottom20
+        className: f.marginBottom20
       }), (0, i.jsx)(p.Dx, {
-        className: _.marginBottom8,
+        className: f.marginBottom8,
         children: m.NW.string(m.t.ox9hIS)
       }), (0, i.jsx)(p.DK, {
         children: m.NW.string(m.t["/dcuR0"])
       }), (0, i.jsx)(p.zx, {
-        className: _.marginTop40,
+        className: f.marginTop40,
         onClick: () => t(e),
         children: m.NW.string(m.t.fIv16O)
       })]
@@ -118,14 +118,14 @@ class b extends(r = o.PureComponent) {
     return e ? this.renderBusy() : t ? this.renderSuccess() : this.renderError()
   }
   constructor(...e) {
-    super(...e), f(this, "state", {
+    super(...e), _(this, "state", {
       busy: !0,
       success: !1,
       guild: null
     })
   }
 }
-f(b, "defaultProps", {
+_(b, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
 let N = l.ZP.connectStores([d.Z], () => ({

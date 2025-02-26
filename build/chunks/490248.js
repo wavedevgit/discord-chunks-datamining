@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L7: () => m,
-  r4: () => g
+  L7: () => g,
+  r4: () => m
 }), n(266796);
 var r = n(200651),
   i = n(120356),
@@ -14,8 +14,8 @@ var r = n(200651),
   u = n(981631),
   d = n(215023),
   f = n(388032),
-  p = n(108337),
-  _ = n(232474);
+  _ = n(108337),
+  p = n(232474);
 let h = e => {
     let {
       profileBadge: t,
@@ -26,23 +26,23 @@ let h = e => {
       customDescriptionComponent: l
     } = e;
     return (0, r.jsxs)("div", {
-      className: p.tooltipContainer,
+      className: _.tooltipContainer,
       children: [(0, r.jsx)("img", {
         src: n,
         className: i,
         alt: ""
       }), (0, r.jsx)("div", {
-        className: p.tooltipWordmarkContainer,
+        className: _.tooltipWordmarkContainer,
         children: a
       }), o, null != l ? l : (0, r.jsx)(s.xv, {
         variant: "text-xs/normal",
         color: "text-muted",
-        className: p.tooltipDescription,
+        className: _.tooltipDescription,
         children: t.description
       })]
     })
   },
-  m = e => {
+  g = e => {
     let {
       profileBadge: t,
       tenureBadge: n
@@ -55,12 +55,12 @@ let h = e => {
       }),
       tooltipWordmarkComponent: (0, r.jsx)(l.Z, {
         width: 56,
-        className: p.tooltipWordmark
+        className: _.tooltipWordmark
       }),
       imageSrc: (0, c.J)(n.id)
     })
   },
-  g = e => {
+  m = e => {
     let {
       profileBadge: t,
       viewerOwnsBadge: n = !1
@@ -73,16 +73,16 @@ let h = e => {
       }),
       tooltipWordmarkComponent: (0, r.jsx)(s.X6, {
         variant: "heading-md/extrabold",
-        className: o()(p.tooltipWordmark, p.orbBadge),
+        className: o()(_.tooltipWordmark, _.orbBadge),
         children: f.NW.string(f.t.ElYQFR)
       }),
-      imageSrc: _.Z,
-      imageClassName: p.orbBadgeImage,
+      imageSrc: p.Z,
+      imageClassName: _.orbBadgeImage,
       customDescriptionComponent: n ? void 0 : (0, r.jsx)(a.rU, {
         to: {
           pathname: u.Z5c.COLLECTIBLES_SHOP_WITH_TAB(d.AW.ORBS)
         },
-        className: p.orbLink,
+        className: _.orbLink,
         children: f.NW.string(f.t["o/NCfn"])
       })
     })

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(13667), n(390547), n(47120), n(653041);
 var r = n(392711),
   i = n.n(r),
@@ -13,9 +13,9 @@ var r = n(392711),
   u = n(626135),
   d = n(709054),
   f = n(981631),
-  p = n(490897);
+  _ = n(490897);
 
-function _(e, t, n) {
+function p(e, t, n) {
   let r = i().flatMap(e, e => {
     let t = l.ZP.getSelectableChannelIds(e),
       n = [...t, ...l.ZP.getVocalChannelIds(e)],
@@ -28,17 +28,17 @@ function _(e, t, n) {
     return n
   }).map(e => ({
     channelId: e,
-    readStateType: p.W.CHANNEL,
+    readStateType: _.W.CHANNEL,
     messageId: c.ZP.lastMessageId(e)
   }));
   return e.forEach(e => {
     r.push({
       channelId: d.default.cast(e),
-      readStateType: p.W.GUILD_EVENT,
-      messageId: c.ZP.lastMessageId(e, p.W.GUILD_EVENT)
+      readStateType: _.W.GUILD_EVENT,
+      messageId: c.ZP.lastMessageId(e, _.W.GUILD_EVENT)
     }), r.push({
       channelId: d.default.cast(e),
-      readStateType: p.W.GUILD_ONBOARDING_QUESTION,
+      readStateType: _.W.GUILD_ONBOARDING_QUESTION,
       messageId: a.Z.ackIdForGuild(e)
     })
   }), u.default.track(f.rMx.MARK_AS_READ, {

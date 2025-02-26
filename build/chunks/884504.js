@@ -1,4 +1,5 @@
-/** Chunk was on 41849 **/
+/** Chunk was on 13368 **/
+"use strict";
 e.exports = {
   reactions: "reactions__5ba62",
   reply: "reply__5ba62",

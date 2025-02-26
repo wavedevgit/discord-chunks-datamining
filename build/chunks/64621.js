@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(381586),
   d = n(243778),
   f = n(970731),
-  p = n(158776),
-  _ = n(594174),
-  h = n(456644),
-  m = n(652853),
-  g = n(228168),
+  _ = n(158776),
+  p = n(594174),
+  h = n(81570),
+  g = n(652853),
+  m = n(228168),
   E = n(981631),
   v = n(388032),
   b = n(103428),
@@ -34,30 +34,27 @@ function N(e) {
     user: N
   } = e, {
     profileType: A
-  } = (0, m.z)(), {
-    recentActivityEnabled: C,
-    allProfileReactReplyEnabled: R
-  } = (0, h.i)({
+  } = (0, g.z)(), C = (0, h.T)({
     location: "UserProfilePopoutInteractionCoachmark"
-  }), P = (0, a.e7)([_.default], () => {
+  }), R = (0, a.e7)([p.default], () => {
     var e;
-    return (null === (e = _.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === N.id
-  }), D = (0, a.e7)([p.Z], () => p.Z.findActivity(N.id, e => {
+    return (null === (e = p.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === N.id
+  }), P = (0, a.e7)([_.Z], () => _.Z.findActivity(N.id, e => {
     let {
       type: t
     } = e;
     return t === E.IIU.CUSTOM_STATUS
-  })), w = !P && A === g.y0.BITE_SIZE && (0, o.EQ)(t).with(g.n_.AVATAR, () => R && null == D).with(g.n_.STATUS, () => R).with(g.n_.ACTIVITY, () => !R && C).exhaustive(), [L, x] = i.useState(!1);
-  (0, c.Z)(() => x(!0), w ? S : null);
+  })), D = !R && A === m.y0.BITE_SIZE && (0, o.EQ)(t).with(m.n_.AVATAR, () => C && null == P).with(m.n_.STATUS, () => C).with(m.n_.ACTIVITY, () => !C).exhaustive(), [w, L] = i.useState(!1);
+  (0, c.Z)(() => L(!0), D ? S : null);
   let {
-    asset: M,
-    assetClassName: k,
-    className: j,
-    content: U,
-    header: G,
-    spacing: B,
-    dismissibleContentType: V
-  } = R ? {
+    asset: x,
+    assetClassName: M,
+    className: k,
+    content: j,
+    header: U,
+    spacing: G,
+    dismissibleContentType: B
+  } = C ? {
     asset: O,
     assetClassName: b.profileImage,
     className: b.profileCoachmark,
@@ -73,12 +70,12 @@ function N(e) {
     header: v.NW.string(v.t.XDBiPT),
     spacing: I,
     dismissibleContentType: s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
-  }, F = (0, u.N)(s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), Z = L && !F ? [V] : [], [H, W] = (0, d.US)(Z);
+  }, V = (0, u.N)(s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), F = w && !V ? [B] : [], [Z, H] = (0, d.US)(F);
   return (0, r.jsx)(l.yRy, {
     align: "center",
-    position: t === g.n_.AVATAR ? "left" : "right",
-    shouldShow: null != H,
-    spacing: B,
+    position: t === m.n_.AVATAR ? "left" : "right",
+    shouldShow: null != Z,
+    spacing: G,
     renderPopout: e => {
       let {
         position: t,
@@ -88,11 +85,11 @@ function N(e) {
       return (0, r.jsx)(l.VqE, {
         ref: i,
         children: (0, r.jsx)(f.ZP, {
-          className: j,
+          className: k,
           asset: (0, r.jsx)("img", {
             alt: "",
-            src: M,
-            className: k
+            src: x,
+            className: M
           }),
           buttonCTA: v.NW.string(v.t["+IrDzM"]),
           buttonLayout: f._F.STACKED,
@@ -104,11 +101,11 @@ function N(e) {
           content: (0, r.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "always-white",
-            children: U
+            children: j
           }),
-          header: G,
+          header: U,
           headerClassName: b.tooltipHeader,
-          markAsDismissed: W,
+          markAsDismissed: H,
           onClick: n
         })
       })

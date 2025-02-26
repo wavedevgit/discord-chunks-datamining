@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -44,13 +44,13 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -68,24 +68,24 @@ function h(e, t) {
   return i
 }
 
-function m(e) {
+function g(e) {
   let {
     children: t,
     size: n = 16,
     className: o,
     flowerStarClassName: u
-  } = e, f = _(e, ["children", "size", "className", "flowerStarClassName"]), h = i.Children.only(t), m = {
+  } = e, f = p(e, ["children", "size", "className", "flowerStarClassName"]), h = i.Children.only(t), g = {
     width: n,
     height: n
-  }, g = (0, s.bWb)().enabled && !e.allowFullSizedIcon;
+  }, m = (0, s.bWb)().enabled && !e.allowFullSizedIcon;
   return (0, r.jsxs)("div", {
     className: a()(c.flowerStarContainer, o),
-    style: m,
-    children: [(0, r.jsx)(l.Z, p(d({}, f), {
+    style: g,
+    children: [(0, r.jsx)(l.Z, _(d({}, f), {
       className: a()(u, c.flowerStar)
     })), (0, r.jsx)("div", {
       className: a()(c.childContainer, {
-        [c.redesignIconChildContainer]: g
+        [c.redesignIconChildContainer]: m
       }),
       children: h
     })]

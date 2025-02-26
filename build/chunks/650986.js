@@ -130,9 +130,9 @@ function t(e) {
       contains: []
     });
   c.contains.push(f), u.contains.push(d);
-  let p = [n, l];
+  let _ = [n, l];
   return [c, u, d, f].forEach(e => {
-    e.contains = e.contains.concat(p)
+    e.contains = e.contains.concat(_)
   }), {
     name: "Markdown",
     aliases: ["md", "mkdown", "mkd"],
@@ -141,7 +141,7 @@ function t(e) {
       variants: [{
         begin: "^#{1,6}",
         end: "$",
-        contains: p = p.concat(c, u)
+        contains: _ = _.concat(c, u)
       }, {
         begin: "(?=^.+?\\n[=-]{2,}$)",
         contains: [{
@@ -149,13 +149,13 @@ function t(e) {
         }, {
           begin: "^",
           end: "\\n",
-          contains: p
+          contains: _
         }]
       }]
     }, n, o, c, u, {
       className: "quote",
       begin: "^>\\s+",
-      contains: p,
+      contains: _,
       end: "$"
     }, i, r, l, a, {
       scope: "literal",

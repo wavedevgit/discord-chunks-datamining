@@ -19,14 +19,14 @@ function c(e) {
     state: c,
     isInline: u,
     onClick: d
-  } = e, f = n + (u ? ":" : ""), p = null, _ = s.Z.Colors.HEADER_PRIMARY;
-  (null == c ? void 0 : c.isActive) && !u ? p = l.active : (null == c ? void 0 : null === (t = c.lastValidationResult) || void 0 === t ? void 0 : t.success) === !1 ? p = l.error : (null == c ? void 0 : c.hasValue) && !u && (p = l.set);
+  } = e, f = n + (u ? ":" : ""), _ = null, p = s.Z.Colors.HEADER_PRIMARY;
+  (null == c ? void 0 : c.isActive) && !u ? _ = l.active : (null == c ? void 0 : null === (t = c.lastValidationResult) || void 0 === t ? void 0 : t.success) === !1 ? _ = l.error : (null == c ? void 0 : c.hasValue) && !u && (_ = l.set);
   let h = (0, r.jsx)(s.Z, {
     size: u ? s.Z.Sizes.SIZE_16 : s.Z.Sizes.SIZE_14,
-    color: _,
+    color: p,
     className: o()(l.option, {
       [l.inline]: u
-    }, p, i),
+    }, _, i),
     children: f
   });
   return null == d ? h : (0, r.jsx)(a.P3F, {

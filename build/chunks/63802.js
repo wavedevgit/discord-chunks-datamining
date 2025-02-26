@@ -3,7 +3,7 @@
 n.d(t, {
   Qi: () => E,
   R9: () => b,
-  l_: () => g,
+  l_: () => m,
   t: () => v
 });
 var r = n(200651);
@@ -38,7 +38,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,15 +49,15 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,14 +65,14 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let g = "premium_new_tier_2_gradient",
+let m = "premium_new_tier_2_gradient",
   E = "premium_old_tier_2_gradient";
 
 function v(e) {
@@ -108,7 +108,7 @@ function b(e) {
     color: i = "white",
     foreground: o
   } = e, a = h(e, ["width", "height", "color", "foreground"]);
-  return (0, r.jsxs)("svg", _(f({}, (0, l.Z)(f({}, a))), {
+  return (0, r.jsxs)("svg", p(f({}, (0, l.Z)(f({}, a))), {
     preserveAspectRatio: "none",
     width: t,
     height: n,
@@ -117,7 +117,7 @@ function b(e) {
     xmlns: "http://www.w3.org/2000/svg",
     children: [(0, r.jsxs)("defs", {
       children: [(0, r.jsxs)("linearGradient", {
-        id: g,
+        id: m,
         x1: "0%",
         y1: "0%",
         x2: "100%",

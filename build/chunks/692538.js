@@ -40,20 +40,20 @@ var r = n(995769),
       },
       d = t.ignoreQueryPrefix ? e.replace(/^\?/, "") : e,
       f = t.parameterLimit === 1 / 0 ? void 0 : t.parameterLimit,
-      p = d.split(t.delimiter, f),
-      _ = -1,
+      _ = d.split(t.delimiter, f),
+      p = -1,
       h = t.charset;
     if (t.charsetSentinel)
-      for (m = 0; m < p.length; ++m) 0 === p[m].indexOf("utf8=") && (p[m] === u ? h = "utf-8" : p[m] === c && (h = "iso-8859-1"), _ = m, m = p.length);
-    for (m = 0; m < p.length; ++m)
-      if (m !== _) {
-        var m, g, E, v = p[m],
+      for (g = 0; g < _.length; ++g) 0 === _[g].indexOf("utf8=") && (_[g] === u ? h = "utf-8" : _[g] === c && (h = "iso-8859-1"), p = g, g = _.length);
+    for (g = 0; g < _.length; ++g)
+      if (g !== p) {
+        var g, m, E, v = _[g],
           b = v.indexOf("]="),
-          y = -1 === b ? v.indexOf("=") : b + 1; - 1 === y ? (g = t.decoder(v, a.decoder, h, "key"), E = t.strictNullHandling ? null : "") : (g = t.decoder(v.slice(0, y), a.decoder, h, "key"), E = r.maybeMap(l(v.slice(y + 1), t), function(e) {
+          y = -1 === b ? v.indexOf("=") : b + 1; - 1 === y ? (m = t.decoder(v, a.decoder, h, "key"), E = t.strictNullHandling ? null : "") : (m = t.decoder(v.slice(0, y), a.decoder, h, "key"), E = r.maybeMap(l(v.slice(y + 1), t), function(e) {
           return t.decoder(e, a.decoder, h, "value")
         })), E && t.interpretNumericEntities && "iso-8859-1" === h && (E = s(E)), v.indexOf("[]=") > -1 && (E = o(E) ? [E] : E);
-        var O = i.call(n, g);
-        O && "combine" === t.duplicates ? n[g] = r.combine(n[g], E) : O && "last" !== t.duplicates || (n[g] = E)
+        var O = i.call(n, m);
+        O && "combine" === t.duplicates ? n[m] = r.combine(n[m], E) : O && "last" !== t.duplicates || (n[m] = E)
       } return n
   },
   f = function(e, t, n, r) {
@@ -73,7 +73,7 @@ var r = n(995769),
     }
     return i
   },
-  p = function(e, t, n, r) {
+  _ = function(e, t, n, r) {
     if (e) {
       var o = n.allowDots ? e.replace(/\.([^.[]+)/g, "[$1]") : e,
         a = /(\[[^[\]]*])/,
@@ -92,7 +92,7 @@ var r = n(995769),
       return l && u.push("[" + o.slice(l.index) + "]"), f(u, t, n, r)
     }
   },
-  _ = function(e) {
+  p = function(e) {
     if (!e) return a;
     if (void 0 !== e.allowEmptyArrays && "boolean" != typeof e.allowEmptyArrays) throw TypeError("`allowEmptyArrays` option can only be `true` or `false`, when provided");
     if (void 0 !== e.decodeDotInKeys && "boolean" != typeof e.decodeDotInKeys) throw TypeError("`decodeDotInKeys` option can only be `true` or `false`, when provided");
@@ -124,11 +124,11 @@ var r = n(995769),
     }
   };
 e.exports = function(e, t) {
-  var n = _(t);
+  var n = p(t);
   if ("" === e || null == e) return n.plainObjects ? Object.create(null) : {};
   for (var i = "string" == typeof e ? d(e, n) : e, o = n.plainObjects ? Object.create(null) : {}, a = Object.keys(i), s = 0; s < a.length; ++s) {
     var l = a[s],
-      c = p(l, i[l], n, "string" == typeof e);
+      c = _(l, i[l], n, "string" == typeof e);
     o = r.merge(o, c, n)
   }
   return !0 === n.allowSparse ? o : r.compact(o)

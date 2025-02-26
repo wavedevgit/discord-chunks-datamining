@@ -3,8 +3,8 @@
 n.d(t, {
   Qf: () => f,
   XV: () => d,
-  bV: () => p,
-  qt: () => _
+  bV: () => _,
+  qt: () => p
 }), n(47120);
 var r = n(392711),
   i = n(524437),
@@ -381,7 +381,7 @@ let s = [{
   },
   d = [...s, ...l, c, u],
   f = [c, ...l, ...s, u],
-  p = [{
+  _ = [{
     theme: o.BR.DARKER,
     getName: () => a.NW.string(a.t.b8Cei4)
   }, {
@@ -394,4 +394,4 @@ let s = [{
     theme: "system",
     getName: () => a.NW.string(a.t.zlvNOj)
   }],
-  _ = (0, r.keyBy)(d, "id")
+  p = (0, r.keyBy)(d, "id")

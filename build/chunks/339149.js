@@ -1,7 +1,7 @@
 /** Chunk was on 30829 **/
 n.d(t, {
-  E: () => I,
-  Z: () => Z
+  E: () => Z,
+  Z: () => I
 }), n(47120), n(653041);
 var r, i = n(200651),
   l = n(192379),
@@ -17,8 +17,8 @@ var r, i = n(200651),
   g = n(703656),
   m = n(417363),
   b = n(941128),
-  v = n(780570),
-  y = n(353042),
+  y = n(780570),
+  v = n(353042),
   O = n(981631),
   j = n(388032),
   _ = n(707057);
@@ -105,7 +105,7 @@ class N extends l.PureComponent {
     } = this.props;
     if (e.type === O.vxO.UPDATING || e.type === O.vxO.REPAIRING || e.type === O.vxO.INSTALLING) {
       if (t) return j.NW.string(j.t["5oxtFR"]);
-      if (e.stage === O.f07.PATCHING || e.stage === O.f07.REPAIRING) return (0, i.jsx)(y.Z, {
+      if (e.stage === O.f07.PATCHING || e.stage === O.f07.REPAIRING) return (0, i.jsx)(v.Z, {
         getHistoricalTotalBytes: m.Z.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
         children: this.renderProgressBody
@@ -229,7 +229,7 @@ class S extends(r = l.PureComponent) {
   }
 }
 
-function I(e, t) {
+function Z(e, t) {
   return e.reduce((e, n) => {
     let {
       applicationId: r,
@@ -241,15 +241,15 @@ function I(e, t) {
 C(S, "defaultProps", {
   strokeSize: p._3P.StrokeSizes.MEDIUM
 });
-let Z = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
+let I = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
   let e = b.Z.activeItems,
-    t = I(e, m.Z),
+    t = Z(e, m.Z),
     {
       total: n,
       progress: r
-    } = v.lK(t);
+    } = y.lK(t);
   return {
-    percent: v.xI(r, n),
+    percent: y.xI(r, n),
     isPaused: b.Z.paused,
     firstApplication: e.length > 0 ? h.Z.getApplication(e[0].applicationId) : null,
     firstState: t.length > 0 ? t[0] : null

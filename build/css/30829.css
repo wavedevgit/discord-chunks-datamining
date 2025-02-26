@@ -1,6 +1,6 @@
 /**
   Module ID: 30829
-  Original File Name: 6ef1c7e98909687d
+  Original File Name: ec5ebc5050868bb3
 **/
 button.button__67645,span.button__67645 {
     line-height: 0;
@@ -3228,8 +3228,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .closeButton__49970:hover {
-    color: var(--interactive-hover);
-    background-color: var(--background-modifier-hover)
+    color: var(--interactive-hover)
 }
 
 .controllerImage__49970 {
@@ -4351,4 +4350,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=6ef1c7e98909687d.css.map*/
+/*# sourceMappingURL=ec5ebc5050868bb3.css.map*/

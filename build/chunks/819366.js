@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(239091),
   d = n(100527),
   f = n(906732),
-  p = n(927723),
-  _ = n(645727),
+  _ = n(927723),
+  p = n(645727),
   h = n(124072),
-  m = n(184301),
-  g = n(347475),
+  g = n(184301),
+  m = n(347475),
   E = n(592125),
   v = n(271383),
   b = n(430824),
@@ -72,7 +72,7 @@ function P(e) {
     className: o,
     children: a
   } = e, s = i.useCallback(() => {
-    (0, _.k)({
+    (0, p.k)({
       kind: "user"
     })
   }, []), l = i.useCallback(e => {
@@ -98,7 +98,7 @@ function D(e) {
     className: t,
     userId: i,
     channelId: o,
-    parsedUserId: _,
+    parsedUserId: p,
     content: N,
     inlinePreview: C = !1,
     viewingChannelId: D
@@ -116,9 +116,9 @@ function D(e) {
         guildId: M
       }))
     })
-  }, j = I.ZP.useName(L), U = (0, l.e7)([E.Z, v.ZP, y.Z], () => S.ZP.getNickname(M, o, L)), G = b.Z.getGuild(M), B = (0, p.Ib)(G, x) && i === T.fL ? T.jM : null;
+  }, j = I.ZP.useName(L), U = (0, l.e7)([E.Z, v.ZP, y.Z], () => S.ZP.getNickname(M, o, L)), G = b.Z.getGuild(M), B = (0, _.Ib)(G, x) && i === T.fL ? T.jM : null;
   if (null == L) return (0, r.jsx)(P, {
-    userId: _,
+    userId: p,
     className: t,
     children: N
   });
@@ -135,11 +135,11 @@ function D(e) {
   }) : (0, r.jsx)(f.Gt, {
     value: w,
     children: (0, r.jsx)(c.yRy, {
-      preload: null == L ? void 0 : () => (0, m.Z)(L.id, L.getAvatarURL(M, 80), {
+      preload: null == L ? void 0 : () => (0, g.Z)(L.id, L.getAvatarURL(M, 80), {
         guildId: null != M ? M : void 0,
         channelId: null != o ? o : void 0
       }),
-      renderPopout: e => (a()(null != L, "Unexpected missing user"), (0, r.jsx)(g.Z, A({
+      renderPopout: e => (a()(null != L, "Unexpected missing user"), (0, r.jsx)(m.Z, A({
         userId: L.id,
         guildId: null != M ? M : void 0,
         channelId: o

@@ -15,9 +15,9 @@ function l(e) {
     onChange: n,
     hideValue: l,
     disabled: c = !1
-  } = e, u = i.useRef(null), d = i.useMemo(() => new a.tR, []), [f, p] = i.useState("");
+  } = e, u = i.useRef(null), d = i.useMemo(() => new a.tR, []), [f, _] = i.useState("");
 
-  function _(e) {
+  function p(e) {
     null != t && n((0, a.rK)(t, d.selectValue(e)))
   }
 
@@ -26,7 +26,7 @@ function l(e) {
       let e = (0, a.tj)(t, f);
       if (null != e) {
         var n;
-        _(e), null === (n = u.current) || void 0 === n || n.close()
+        p(e), null === (n = u.current) || void 0 === n || n.close()
       }
     }
   }
@@ -35,9 +35,9 @@ function l(e) {
     className: s.select,
     options: d.getOptions(f),
     value: l ? void 0 : d.lookupByValue(t),
-    onChange: _,
+    onChange: p,
     isDisabled: c,
-    onSearchChange: p,
+    onSearchChange: _,
     onKeyDown: h
   })
 }

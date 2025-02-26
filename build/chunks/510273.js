@@ -1,11 +1,11 @@
-/** Chunk was on 63061 **/
+/** Chunk was on 65936 **/
 n.d(t, {
   Z: () => E
 }), n(266796);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   s = n(481060),
   a = n(955204),
   c = n(818765),
@@ -68,7 +68,7 @@ function E(e) {
     achievement: t,
     unlocked: n
   } = e, {
-    name: o,
+    name: l,
     description: E,
     rarity: p,
     hideDescriptionUntilUnlock: m,
@@ -85,9 +85,9 @@ function E(e) {
     }
   }, []);
   let g = null != h && n,
-    O = g ? s.P3F : "div";
-  return (0, r.jsxs)(O, {
-    className: l()(d.container, g && d.actionable),
+    N = g ? s.P3F : "div";
+  return (0, r.jsxs)(N, {
+    className: o()(d.container, g && d.actionable),
     onClick: () => {
       g && h()
     },
@@ -103,7 +103,7 @@ function E(e) {
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: o()
+        children: l()
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",

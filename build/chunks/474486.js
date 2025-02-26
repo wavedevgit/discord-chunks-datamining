@@ -61,7 +61,7 @@ function _(e, t) {
   }), e
 }
 let S = "url(#dark-purple-gradient)",
-  E = () => (0, n.jsxs)("div", {
+  N = () => (0, n.jsxs)("div", {
     className: y.coachtipContent,
     children: [(0, n.jsx)(l.X6q, {
       variant: "heading-sm/bold",
@@ -73,7 +73,7 @@ let S = "url(#dark-purple-gradient)",
       })
     })]
   }),
-  N = () => (0, n.jsx)("svg", {
+  E = () => (0, n.jsx)("svg", {
     width: "15",
     height: "15",
     viewBox: "0 0 15 15",
@@ -97,7 +97,7 @@ let S = "url(#dark-purple-gradient)",
         artClassName: y.coachmarkArt,
         dismissIconClassName: y.exitIcon,
         onDismissIconClick: w,
-        dismissIcon: (0, n.jsx)(N, {}),
+        dismissIcon: (0, n.jsx)(E, {}),
         headerClassName: y.incentiveCoachtipContent,
         contentClassName: y.incentiveCoachtipContainer,
         pointerClassName: y.incentiveTooltipPointer,
@@ -146,7 +146,7 @@ let S = "url(#dark-purple-gradient)",
           customAnimationClassName: y.customCircleAnimation,
           circleColor: "url(#purple-gradient)"
         })
-      }), (0, n.jsx)(E, {})]
+      }), (0, n.jsx)(N, {})]
     });
     return (0, n.jsx)(l.ua7, {
       text: r,
@@ -211,7 +211,7 @@ let S = "url(#dark-purple-gradient)",
       renderPopout: () => (0, n.jsx)(u.Z, {
         dismissIconClassName: y.exitIcon,
         onDismissIconClick: f,
-        dismissIcon: (0, n.jsx)(N, {}),
+        dismissIcon: (0, n.jsx)(E, {}),
         artClassName: y.collectibleDecoReminderCoachmarkArtContainer,
         headerClassName: y.collectibleDecoReminderCoachmarkHeader,
         contentClassName: y.collectibleDecoReminderCoachmarkContent,

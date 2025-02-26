@@ -20,10 +20,10 @@ class s extends i.PureComponent {
       onVolumeChange: u,
       onVolumeShow: d,
       onVolumeHide: f,
-      autoMute: p,
-      onMute: _,
+      autoMute: _,
+      onMute: p,
       mimeType: h,
-      onPlay: m
+      onPlay: g
     } = this.props;
     return (0, r.jsx)(a.ZP, {
       src: e,
@@ -34,14 +34,14 @@ class s extends i.PureComponent {
       className: i,
       playable: s,
       volume: l,
-      onMute: _,
-      autoMute: p,
+      onMute: p,
+      autoMute: _,
       onVolumeChange: u,
       onVolumeShow: d,
       onVolumeHide: f,
       renderLinkComponent: c,
       mimeType: h,
-      onPlay: m
+      onPlay: g
     })
   }
 }

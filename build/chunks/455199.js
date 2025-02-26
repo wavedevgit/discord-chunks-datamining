@@ -12,11 +12,11 @@ var r, i = n(392711),
   u = n(786761),
   d = n(572804),
   f = n(901461),
-  p = n(814082),
-  _ = n(23750),
+  _ = n(814082),
+  p = n(23750),
   h = n(314897),
-  m = n(592125),
-  g = n(375954),
+  g = n(592125),
+  m = n(375954),
   E = n(306680),
   v = n(699516),
   b = n(914010),
@@ -88,8 +88,8 @@ function U(e) {
 }
 
 function G(e) {
-  if (e instanceof _.ZP) return e;
-  let t = g.Z.getMessage(e.channel_id, e.id);
+  if (e instanceof p.ZP) return e;
+  let t = m.Z.getMessage(e.channel_id, e.id);
   return null != t ? t : (0, u.e5)(e)
 }
 
@@ -114,10 +114,10 @@ function F(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
   if ((0, f.Z)(e) && !S.V$x.SELF_MENTIONABLE_SYSTEM.has(e.type)) return null;
   null == t && (t = e.channel_id);
-  let n = m.Z.getChannel(t);
+  let n = g.Z.getChannel(t);
   if (null == n || n.type === S.d4z.DM || w.guildFilter === S.NgX.THIS_SERVER && n.getGuildId() !== b.Z.getGuildId()) return null;
   let r = h.default.getId();
-  if (v.Z.isBlockedOrIgnoredForMessage(e) || (0, p.Z)(e, r)) return null;
+  if (v.Z.isBlockedOrIgnoredForMessage(e) || (0, _.Z)(e, r)) return null;
   e = G(e);
   let i = !w.everyoneFilter,
     o = !w.roleFilter;
@@ -223,7 +223,7 @@ function X(e) {
     guild: t
   } = e, n = [];
   A = o().filter(A, e => {
-    let r = m.Z.getChannel(e.channel_id);
+    let r = g.Z.getChannel(e.channel_id);
     return null != r && r.getGuildId() !== t.id || (delete R[e.id], n.push(e), !1)
   }), j({
     deletedMessages: n
@@ -265,7 +265,7 @@ function en(e) {
 }
 class er extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(O.default, m.Z, g.Z, E.ZP)
+    this.waitFor(O.default, g.Z, m.Z, E.ZP)
   }
   get hasLoadedEver() {
     return L

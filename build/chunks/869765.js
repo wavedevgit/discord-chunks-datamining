@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Y: () => _,
+  Y: () => p,
   Z: () => U
 }), n(47120), n(653041);
 var r, i = n(31775),
@@ -14,7 +14,7 @@ var r, i = n(31775),
   d = n(375954),
   f = n(981631);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function p(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-var _ = function(e) {
+var p = function(e) {
   return e[e.LOADED = 0] = "LOADED", e[e.NOT_LOADED = 1] = "NOT_LOADED", e[e.DELETED = 2] = "DELETED", e
 }({});
 let h = Object.freeze({
     state: 1
   }),
-  m = new Set;
-class g {
+  g = new Set;
+class m {
   handleCacheDisposed(e, t) {
     this._cachedMessageIds.has(e) && (this._cachedMessageIds = new Set(this._cachedMessageIds), this._cachedMessageIds.delete(e))
   }
@@ -46,10 +46,10 @@ class g {
     return this._cachedMessageIds
   }
   constructor() {
-    p(this, "_cachedMessages", new(o())({
+    _(this, "_cachedMessages", new(o())({
       max: 100,
       dispose: (e, t) => this.handleCacheDisposed(e, t)
-    })), p(this, "_cachedMessageIds", new Set)
+    })), _(this, "_cachedMessageIds", new Set)
   }
 }
 class E {
@@ -63,7 +63,7 @@ class E {
   }
   set(e, t, n) {
     let r = this._channelCaches.get(e);
-    null == r && (r = new g, this._channelCaches.set(e, r)), r.set(t, n)
+    null == r && (r = new m, this._channelCaches.set(e, r)), r.set(t, n)
   }
   updateExistingMessageIfCached(e) {
     let t = this._channelCaches.get(e.channel_id);
@@ -89,7 +89,7 @@ class E {
     this._channelCaches.clear()
   }
   constructor() {
-    p(this, "_channelCaches", new Map)
+    _(this, "_channelCaches", new Map)
   }
 }
 let v = new E;
@@ -259,10 +259,10 @@ class j extends(r = a.ZP.Store) {
   }
   getReplyIdsForChannel(e) {
     let t;
-    return null != e && (t = v.getCachedMessageIdsForChannel(e)), null != t ? t : m
+    return null != e && (t = v.getCachedMessageIdsForChannel(e)), null != t ? t : g
   }
 }
-p(j, "displayName", "ReferencedMessageStore");
+_(j, "displayName", "ReferencedMessageStore");
 let U = new j(s.Z, {
   CACHE_LOADED: S,
   LOCAL_MESSAGES_LOADED: O,

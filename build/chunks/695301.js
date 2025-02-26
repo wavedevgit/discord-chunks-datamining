@@ -20,16 +20,16 @@ let b = i.memo(function(e) {
   var t, n;
   let {
     guildNode: b,
-    lowerBadge: v
-  } = e, y = b.id, O = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), j = (0, a.E)(O), _ = (0, l.e7)([h.Z], () => h.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), x = (0, c.Z)(e => e.guildId), P = (0, f.Z)(y), {
+    lowerBadge: y
+  } = e, v = b.id, O = (0, l.e7)([p.Z], () => p.Z.getGuild(v)), j = (0, a.E)(O), _ = (0, l.e7)([h.Z], () => h.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(v)), x = (0, c.Z)(e => e.guildId), P = (0, f.Z)(v), {
     badge: N,
     unread: S,
-    isMentionLowImportance: I
+    isMentionLowImportance: Z
   } = (0, l.cj)([d.default], () => ({
-    badge: d.default.getMentionCount(y),
-    isMentionLowImportance: d.default.getIsMentionLowImportance(y),
-    unread: d.default.hasUnread(y)
-  })), Z = (0, s.Ij)(O) && 0 === N, w = i.useMemo(() => null != v ? v : Z ? (0, r.jsx)("div", {
+    badge: d.default.getMentionCount(v),
+    isMentionLowImportance: d.default.getIsMentionLowImportance(v),
+    unread: d.default.hasUnread(v)
+  })), I = (0, s.Ij)(O) && 0 === N, w = i.useMemo(() => null != y ? y : I ? (0, r.jsx)("div", {
     className: m.pauseBackground,
     children: (0, r.jsx)(o.fpf, {
       size: "custom",
@@ -38,7 +38,7 @@ let b = i.memo(function(e) {
       width: 10,
       height: 10
     })
-  }) : null, [v, Z]);
+  }) : null, [y, I]);
   return (0, r.jsx)(g.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -60,9 +60,9 @@ let b = i.memo(function(e) {
     guild: O,
     unavailable: C,
     animatable: _,
-    selected: x === y,
+    selected: x === v,
     badge: N,
-    isMentionLowImportance: I,
+    isMentionLowImportance: Z,
     lowerBadge: w,
     unread: S,
     mediaState: P,

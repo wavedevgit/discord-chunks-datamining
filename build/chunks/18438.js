@@ -1,21 +1,21 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Cf: () => m,
+  Cf: () => g,
   Fq: () => u,
   HP: () => c,
   I5: () => f,
-  ID: () => g,
+  ID: () => m,
   IO: () => b,
   It: () => d,
   W3: () => O,
   b9: () => S,
-  cV: () => p,
+  cV: () => _,
   g_: () => h,
   iq: () => l,
   pG: () => y,
   sr: () => E,
-  xn: () => _,
+  xn: () => p,
   z5: () => v
 }), n(411104);
 var r = n(544891),
@@ -99,14 +99,14 @@ function f(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_DECORATION",
     avatarDecoration: e
   })
 }
 
-function _(e) {
+function p(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT_ID",
     profileEffectId: e
@@ -120,14 +120,14 @@ function h(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO",
     bio: e
   })
 }
 
-function g(e) {
+function m(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS",
     pronouns: e

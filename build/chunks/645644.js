@@ -13,11 +13,11 @@ var r = n(772848),
   u = n(579806),
   d = n(581567),
   f = n(594190),
-  p = n(371651),
-  _ = n(449224),
+  _ = n(371651),
+  p = n(449224),
   h = n(808506),
-  m = n(237997),
-  g = n(626135),
+  g = n(237997),
+  m = n(626135),
   E = n(998502),
   v = n(145597),
   b = n(830917),
@@ -300,7 +300,7 @@ class j {
       {
         oopEnabled: r,
         legacyEnabled: i
-      } = p.default.getPerGameEnabledStatus(t),
+      } = _.default.getPerGameEnabledStatus(t),
       o = {
         legacy_override: !0 === i,
         enabled: r || i,
@@ -313,7 +313,7 @@ class j {
       o.quns_mode = this.getQunsName(e)
     }
     if (null == e) {
-      let e = null != t ? p.default.getRenderMethod(t.pid) : null;
+      let e = null != t ? _.default.getRenderMethod(t.pid) : null;
       return N({
         original_method: null != e ? e : s.gl.Disabled
       }, o)
@@ -359,7 +359,7 @@ class j {
     if (null != n) {
       n.screenAnalytics.destroy();
       let t = await n.getAnalytics();
-      for (let e of (g.default.track(S.rMx.OVERLAY_USAGE_STATS, t.usage), t.notifications)) g.default.track(S.rMx.OVERLAY_USAGE_NOTIFICATION_STATS, e);
+      for (let e of (m.default.track(S.rMx.OVERLAY_USAGE_STATS, t.usage), t.notifications)) m.default.track(S.rMx.OVERLAY_USAGE_NOTIFICATION_STATS, e);
       D.verbose("OVERLAY_USAGE_STATS: ".concat(e.name), t), delete j.gamesByPid[e.pid]
     }
     delete j.gamesByName[t]
@@ -377,28 +377,28 @@ class j {
   }
   async getAnalytics() {
     var e, t, n, r, i, o, a, l, c;
-    let p = null !== (n = this.overlayMethod) && void 0 !== n ? n : s.gl.Disabled,
-      _ = {
+    let _ = null !== (n = this.overlayMethod) && void 0 !== n ? n : s.gl.Disabled,
+      p = {
         setting_is_enabled: h.default.enabled,
         setting_method: this.getSettingMethod(),
-        setting_display_user: m.default.getDisplayUserMode(),
-        setting_display_name: m.default.getDisplayNameMode(),
-        setting_avatar_size: m.default.getAvatarSizeMode(),
-        setting_notification_position: m.default.getNotificationPositionMode(),
-        setting_chat_notification: m.default.getTextChatNotificationMode()
+        setting_display_user: g.default.getDisplayUserMode(),
+        setting_display_name: g.default.getDisplayNameMode(),
+        setting_avatar_size: g.default.getAvatarSizeMode(),
+        setting_notification_position: g.default.getNotificationPositionMode(),
+        setting_chat_notification: g.default.getTextChatNotificationMode()
       },
-      g = (0, f.b6)(this.game),
+      m = (0, f.b6)(this.game),
       E = (0, d.G8)(this.game),
-      v = null !== (r = this.overlayMethodStats) && void 0 !== r ? r : this.buildOverlayMethodStats(p, this.game),
+      v = null !== (r = this.overlayMethodStats) && void 0 !== r ? r : this.buildOverlayMethodStats(_, this.game),
       b = null != v.any_other_method ? s.gl[v.any_other_method] : null,
-      y = g.enabledLegacy || g.enabledOOP;
+      y = m.enabledLegacy || m.enabledOOP;
     return {
       usage: C(N(C(N({
         event_uuid: this.uuid,
         overlay_usage_stats_version: R
-      }, this.notificationAnalytics.getAnalytics(), this.widgetAnalytics.getAnalytics(), this.screenAnalytics.getAnalytics(), _), {
+      }, this.notificationAnalytics.getAnalytics(), this.widgetAnalytics.getAnalytics(), this.screenAnalytics.getAnalytics(), p), {
         overlay_status_game_enabled: y,
-        overlay_status_game_source: g.source,
+        overlay_status_game_source: m.source,
         game_name: null !== (i = E.gameName) && void 0 !== i ? i : null,
         game_id: null !== (o = E.gameId) && void 0 !== o ? o : null,
         game_exe: null !== (a = E.exe) && void 0 !== a ? a : null,
@@ -620,7 +620,7 @@ T(X, "connections", new Set), T(X, "previousHasConnection", !1);
 class J {
   static handleMessageAcked(e) {
     D.verbose("MESSAGE_ACKED", e);
-    let t = _.Z.getGame();
+    let t = p.Z.getGame();
     if (null == t) {
       D.error("Game not found.");
       return
@@ -635,7 +635,7 @@ class J {
   static handleMessageCreate(e) {
     if (e.message.state !== S.yb.SENDING) return;
     D.verbose("MESSAGE_CREATE", e, Error().stack);
-    let t = _.Z.getGame();
+    let t = p.Z.getGame();
     if (null == t) {
       D.error("Game not found.");
       return

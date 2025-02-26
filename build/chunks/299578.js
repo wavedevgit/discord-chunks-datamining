@@ -10,7 +10,7 @@ var r = n(807419),
   d = c.hasOwnProperty,
   f = RegExp("^" + u.call(d).replace(s, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
 
-function p(e) {
+function _(e) {
   return !(!o(e) || i(e)) && (r(e) ? f : l).test(a(e))
 }
-e.exports = p
+e.exports = _

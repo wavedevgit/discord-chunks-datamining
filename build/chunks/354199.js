@@ -9,11 +9,11 @@ var r = n(754675),
   u = "[object Map]",
   d = "[object Number]",
   f = "[object RegExp]",
-  p = "[object Set]",
-  _ = "[object String]",
+  _ = "[object Set]",
+  p = "[object String]",
   h = "[object Symbol]",
-  m = "[object ArrayBuffer]",
-  g = "[object DataView]",
+  g = "[object ArrayBuffer]",
+  m = "[object DataView]",
   E = "[object Float32Array]",
   v = "[object Float64Array]",
   b = "[object Int8Array]",
@@ -27,12 +27,12 @@ var r = n(754675),
 function A(e, t, n) {
   var A = e.constructor;
   switch (t) {
-    case m:
+    case g:
       return r(e);
     case l:
     case c:
       return new A(+e);
-    case g:
+    case m:
       return i(e, n);
     case E:
     case v:
@@ -47,11 +47,11 @@ function A(e, t, n) {
     case u:
       return new A;
     case d:
-    case _:
+    case p:
       return new A(e);
     case f:
       return o(e);
-    case p:
+    case _:
       return new A;
     case h:
       return a(e)

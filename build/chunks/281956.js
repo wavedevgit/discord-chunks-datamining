@@ -19,12 +19,12 @@ function c(e) {
       notClaimed: d
     } = n.getCheck(e),
     f = r.getCurrentUser(),
-    p = !1;
+    _ = !1;
   if (null != f) {
-    var _, h;
-    p = null !== (h = null === (_ = c.getMember(e, f.id)) || void 0 === _ ? void 0 : _.isPending) && void 0 !== h && h
+    var p, h;
+    _ = null !== (h = null === (p = c.getMember(e, f.id)) || void 0 === p ? void 0 : p.isPending) && void 0 !== h && h
   }
-  return (p || d) && !!(0, l.Dc)(u)
+  return (_ || d) && !!(0, l.Dc)(u)
 }
 
 function u(e) {

@@ -26,11 +26,11 @@ n(777639);
 var u = n(703656),
   d = n(1870),
   f = n(549616),
-  p = n(833798),
-  _ = n(778787),
+  _ = n(833798),
+  p = n(778787),
   h = n(161226),
-  m = n(251728),
-  g = n(578976),
+  g = n(251728),
+  m = n(578976),
   E = n(439170),
   v = n(981631);
 
@@ -104,7 +104,7 @@ let I = e => {
       type: "COLLECTIBLES_CATEGORIES_FETCH",
       options: null != e ? e : {}
     });
-    let n = (0, g.n)(e);
+    let n = (0, m.n)(e);
     try {
       let e = await a.tn.get({
         url: v.ANM.COLLECTIBLES_CATEGORIES,
@@ -165,7 +165,7 @@ let I = e => {
       s.Z.dispatch({
         type: "COLLECTIBLES_PRODUCT_FETCH_SUCCESS",
         skuId: e,
-        product: _.Z.fromServer(r.body)
+        product: p.Z.fromServer(r.body)
       })
     } catch (n) {
       let t = new c.Hx(n);
@@ -238,7 +238,7 @@ let I = e => {
       });
       s.Z.dispatch({
         type: "COLLECTIBLES_MARKETING_FETCH_SUCCESS",
-        marketings: p.s.fromServer(e.body)
+        marketings: _.s.fromServer(e.body)
       })
     } catch (e) {
       (0, E.G)(new c.Hx(e)), s.Z.dispatch({
@@ -251,7 +251,7 @@ let I = e => {
       tab: e,
       options: null != t ? t : {}
     });
-    let n = (0, g.n)(t, e);
+    let n = (0, m.n)(t, e);
     try {
       let t = await a.tn.get({
         url: v.ANM.COLLECTIBLES_SHOP,
@@ -261,7 +261,7 @@ let I = e => {
       s.Z.dispatch({
         type: "COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS",
         tab: e,
-        shopHome: m.Y.fromServer(t.body)
+        shopHome: g.Y.fromServer(t.body)
       })
     } catch (n) {
       let t = new c.Hx(n);

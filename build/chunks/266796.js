@@ -10,29 +10,29 @@ var r = n(147018),
   u = n(714050),
   d = n(4340),
   f = n(381740),
-  p = o.Symbol,
-  _ = p && p.prototype;
-if (i && l(p) && (!("description" in _) || void 0 !== p().description)) {
+  _ = o.Symbol,
+  p = _ && _.prototype;
+if (i && l(_) && (!("description" in p) || void 0 !== _().description)) {
   var h = {},
-    m = function() {
+    g = function() {
       var e = arguments.length < 1 || void 0 === arguments[0] ? void 0 : u(arguments[0]),
-        t = c(_, this) ? new p(e) : void 0 === e ? p() : p(e);
+        t = c(p, this) ? new _(e) : void 0 === e ? _() : _(e);
       return "" === e && (h[t] = !0), t
     };
-  f(m, p), m.prototype = _, _.constructor = m;
-  var g = "Symbol(description detection)" === String(p("description detection")),
-    E = a(_.valueOf),
-    v = a(_.toString),
+  f(g, _), g.prototype = p, p.constructor = g;
+  var m = "Symbol(description detection)" === String(_("description detection")),
+    E = a(p.valueOf),
+    v = a(p.toString),
     b = /^Symbol\((.*)\)[^)]+$/,
     y = a("".replace),
     O = a("".slice);
-  d(_, "description", {
+  d(p, "description", {
     configurable: !0,
     get: function() {
       var e = E(this);
       if (s(h, e)) return "";
       var t = v(e),
-        n = g ? O(t, 7, -1) : y(t, b, "$1");
+        n = m ? O(t, 7, -1) : y(t, b, "$1");
       return "" === n ? void 0 : n
     }
   }), r({
@@ -40,6 +40,6 @@ if (i && l(p) && (!("description" in _) || void 0 !== p().description)) {
     constructor: !0,
     forced: !0
   }, {
-    Symbol: m
+    Symbol: g
   })
 }

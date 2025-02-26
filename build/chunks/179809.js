@@ -1,6 +1,6 @@
 /** Chunk was on 30829 **/
 n.d(t, {
-  Z: () => I
+  Z: () => Z
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(624138),
   m = n(727258),
   b = n(276952),
-  v = n(199540),
-  y = n(40153),
+  y = n(199540),
+  v = n(40153),
   O = n(252686),
   j = n(682662),
   _ = n(662146),
@@ -27,7 +27,7 @@ var r = n(200651),
   P = n(638410);
 let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
   S = (0, s.animated)(d.Kqy),
-  I = i.memo(function(e) {
+  Z = i.memo(function(e) {
     let {
       folderNode: t,
       setNodeRef: n,
@@ -35,8 +35,8 @@ let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       expanded: s,
       mediaState: u,
       mentionCount: g = 0,
-      isMentionLowImportance: I,
-      unread: Z = !1,
+      isMentionLowImportance: Z,
+      unread: I = !1,
       defaultFolderName: w,
       useCircleMask: E = !1,
       draggable: T = !1,
@@ -101,7 +101,7 @@ let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         disabled: K || s,
         hovered: H,
         selected: l,
-        unread: Z,
+        unread: I,
         className: P.pill
       }), (0, r.jsx)(_.Z, {
         text: ee,
@@ -114,14 +114,14 @@ let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
             [P.wobble]: !K && q && !s
           }),
           "data-dnd-name": ee,
-          children: K ? (0, r.jsx)(O.Z, {}) : (0, r.jsx)(v.Z, {
+          children: K ? (0, r.jsx)(O.Z, {}) : (0, r.jsx)(y.Z, {
             folderNode: t,
             expanded: s,
             forceCircular: E,
             sorting: D,
             mediaState: u,
             mentionCount: g,
-            isMentionLowImportance: I,
+            isMentionLowImportance: Z,
             tooltipName: ee,
             folderGroupId: en,
             onClick: L,
@@ -133,7 +133,7 @@ let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
             folderIconContent: G
           })
         })
-      }), T ? (0, r.jsx)(y.ZP, {
+      }), T ? (0, r.jsx)(v.ZP, {
         name: ee,
         targetNode: t,
         onDragOverChanged: X
@@ -163,7 +163,7 @@ let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
           role: "group",
           children: V.map(t => M(t, e.height))
         }, i)
-      }), T && s ? (0, r.jsx)(y.Zu, {
+      }), T && s ? (0, r.jsx)(v.Zu, {
         name: ee,
         targetNode: t
       }) : null]

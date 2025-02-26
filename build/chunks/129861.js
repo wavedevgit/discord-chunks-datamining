@@ -14,9 +14,9 @@ var i = n(120356),
   u = n(246946),
   d = n(51144),
   f = n(388032),
-  p = n(987596);
+  _ = n(987596);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,13 +32,13 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -85,29 +85,29 @@ let y = e => {
       discriminatorClass: c,
       className: u,
       usernameClass: d,
-      color: _,
-      botClass: m,
+      color: p,
+      botClass: g,
       showStreamerModeTooltip: E
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(p.info, u),
+      className: o()(_.info, u),
       children: [(0, r.jsx)(s.ua7, {
         text: f.NW.string(f.t.Br1ls7),
         shouldShow: E,
         "aria-label": !!E && void 0,
-        children: e => (0, r.jsx)("span", g(h({}, e), {
-          className: o()(p.__invalid_username, d),
-          style: null != _ ? {
-            color: _
+        children: e => (0, r.jsx)("span", m(h({}, e), {
+          className: o()(_.__invalid_username, d),
+          style: null != p ? {
+            color: p
           } : void 0,
           children: t
         }))
       }), null != n ? (0, r.jsx)("span", {
-        className: o()(p.infoSpacing, c),
+        className: o()(_.infoSpacing, c),
         children: n
       }) : void 0, null != i && (0, r.jsx)(l.Z, {
         type: i,
-        className: o()(p.infoSpacing, m),
+        className: o()(_.infoSpacing, g),
         verified: a
       })]
     })
@@ -121,10 +121,10 @@ let y = e => {
       overrideDiscriminator: s,
       forcePomelo: l,
       hideBotTag: f = !1,
-      hideDiscriminator: p = !1
-    } = e, _ = E(e, ["user", "nick", "forceUsername", "showAccountIdentifier", "overrideDiscriminator", "forcePomelo", "hideBotTag", "hideDiscriminator"]);
-    let m = (0, a.e7)([u.Z], () => u.Z.hidePersonalInformation),
-      g = m || p || t.isNonUserBot(),
+      hideDiscriminator: _ = !1
+    } = e, p = E(e, ["user", "nick", "forceUsername", "showAccountIdentifier", "overrideDiscriminator", "forcePomelo", "hideBotTag", "hideDiscriminator"]);
+    let g = (0, a.e7)([u.Z], () => u.Z.hidePersonalInformation),
+      m = g || _ || t.isNonUserBot(),
       v = t.toString(),
       O = f ? null : b(t),
       S = t.isVerifiedBot(),
@@ -141,13 +141,13 @@ let y = e => {
         secondary: n,
         botType: O,
         botVerified: S,
-        showStreamerModeTooltip: m && d.ZP.isNameConcealed(e)
-      }, _))
+        showStreamerModeTooltip: g && d.ZP.isNameConcealed(e)
+      }, p))
     }
     return (0, r.jsx)(c.Z, h({
       name: T,
       botType: O,
       botVerified: S,
-      discriminator: g || T !== v ? null : null != s ? s : t.discriminator
-    }, _))
+      discriminator: m || T !== v ? null : null != s ? s : t.discriminator
+    }, p))
   }

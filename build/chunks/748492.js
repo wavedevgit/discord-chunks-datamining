@@ -17,11 +17,11 @@ var i = n(120356),
   u = n(835473),
   d = n(221888),
   f = n(600164),
-  p = n(788983),
-  _ = n(189771),
+  _ = n(788983),
+  p = n(189771),
   h = n(560688),
-  m = n(618158),
-  g = n(922745),
+  g = n(618158),
+  m = n(922745),
   E = n(871499),
   v = n(402113),
   b = n(800965),
@@ -64,12 +64,12 @@ function L(e) {
     idle: R,
     selectedParticipant: w,
     embeddedActivity: L
-  } = e, x = (0, c.bp)() === A.IlC.POPOUT, M = (0, a.e7)([S.Z], () => S.Z.isVideoEnabled()), k = (0, a.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), j = !1 === (null === (t = null == k ? void 0 : k.disabled) || void 0 === t || t), U = (0, u.Z)([o])[0], G = (0, _.Z)(i), B = e => {
+  } = e, x = (0, c.bp)() === A.IlC.POPOUT, M = (0, a.e7)([S.Z], () => S.Z.isVideoEnabled()), k = (0, a.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), j = !1 === (null === (t = null == k ? void 0 : k.disabled) || void 0 === t || t), U = (0, u.Z)([o])[0], G = (0, p.Z)(i), B = e => {
     l.Z.setVideoEnabled(e)
   }, V = () => {
     j ? B(!0) : (0, h.Z)()
   }, F = () => {
-    (0, N.Z)(() => p.hP(i))
+    (0, N.Z)(() => _.hP(i))
   };
   return (0, r.jsxs)("div", {
     className: D.videoControls,
@@ -78,11 +78,11 @@ function L(e) {
     onMouseLeave: y,
     children: [(0, r.jsx)("div", {
       className: D.topControls,
-      children: (0, r.jsx)(g.r, {
+      children: (0, r.jsx)(m.r, {
         idle: R,
         title: null !== (n = null == U ? void 0 : U.name) && void 0 !== n ? n : i.name,
         onJumpToChannel: T,
-        preventIdleComponent: m.Z
+        preventIdleComponent: g.Z
       })
     }), (0, r.jsxs)("div", {
       className: D.bottomControls,
@@ -98,7 +98,7 @@ function L(e) {
           hasPermission: G,
           onChange: B,
           onCameraUnavailable: V
-        }), (0, r.jsx)(m.Z, {
+        }), (0, r.jsx)(g.Z, {
           children: (0, r.jsx)(d.Z, {
             channelId: i.id,
             guildId: i.getGuildId(),
@@ -138,8 +138,8 @@ function x(e) {
     onMouseLeave: c,
     onJumpToChannel: d,
     idle: f,
-    users: p,
-    embeddedActivity: _
+    users: _,
+    embeddedActivity: p
   } = e, h = (0, u.Z)([i])[0];
   return (0, r.jsxs)(s.P3F, {
     className: o()(D.videoControls, D.videoControlsTextActivity),
@@ -149,23 +149,23 @@ function x(e) {
     onDoubleClick: d,
     children: [(0, r.jsx)("div", {
       className: o()(D.topControls),
-      children: (0, r.jsx)(g.r, {
+      children: (0, r.jsx)(m.r, {
         idle: f,
         title: null !== (t = null == h ? void 0 : h.name) && void 0 !== t ? t : n.name,
         onJumpToChannel: d,
-        preventIdleComponent: m.Z
+        preventIdleComponent: g.Z
       })
     }), (0, r.jsxs)("div", {
       className: D.bottomControls,
       children: [(0, r.jsx)(T.Z, {
         renderIcon: !1,
-        users: p,
+        users: _,
         size: 24,
         max: 3,
         className: P.__invalid_userSummaryContainer
       }), (0, r.jsx)(v.Z, {
         applicationId: i,
-        location: _.location,
+        location: p.location,
         iconClassName: P.leaveActivityIcon,
         isActive: !0
       })]
@@ -196,8 +196,8 @@ function k(e) {
     applicationId: c,
     channel: d,
     onJumpToChannel: f,
-    onToggleHeight: p,
-    isExpanded: _,
+    onToggleHeight: _,
+    isExpanded: p,
     hideExpandedButton: h,
     embeddedActivity: E
   } = e, b = (0, u.Z)([c])[0];
@@ -215,16 +215,16 @@ function k(e) {
         color: "currentColor",
         className: P.menuIcon
       }), l && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(g.r, {
+        children: [(0, r.jsx)(m.r, {
           idle: !l,
           title: null !== (t = null == b ? void 0 : b.name) && void 0 !== t ? t : d.name,
           onJumpToChannel: f,
-          preventIdleComponent: m.Z
+          preventIdleComponent: g.Z
         }), (0, r.jsxs)("div", {
           className: P.pipHeaderButtonsRight,
           children: [h ? null : (0, r.jsx)(w, {
-            isExpanded: _,
-            onClick: p
+            isExpanded: p,
+            onClick: _
           }), (0, r.jsx)(v.Z, {
             applicationId: c,
             location: E.location,

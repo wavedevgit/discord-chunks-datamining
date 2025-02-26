@@ -39,11 +39,11 @@ function t(e) {
       className: "symbol",
       begin: "[:]{1,2}" + n
     },
-    p = {
+    _ = {
       begin: "\\(",
       end: "\\)"
     },
-    _ = {
+    p = {
       endsWithParent: !0,
       relevance: 0
     },
@@ -52,14 +52,14 @@ function t(e) {
       relevance: 0,
       keywords: r,
       begin: n,
-      starts: _
+      starts: p
     },
-    m = [p, a, u, d, s, f, c, o, l, i];
-  return p.contains = [e.COMMENT("comment", ""), h, _], _.contains = m, c.contains = m, {
+    g = [_, a, u, d, s, f, c, o, l, i];
+  return _.contains = [e.COMMENT("comment", ""), h, p], p.contains = g, c.contains = g, {
     name: "Hy",
     aliases: ["hylang"],
     illegal: /\S/,
-    contains: [e.SHEBANG(), p, a, u, d, s, f, c, o, l]
+    contains: [e.SHEBANG(), _, a, u, d, s, f, c, o, l]
   }
 }
 e.exports = t

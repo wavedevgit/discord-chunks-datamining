@@ -18,8 +18,8 @@ n.d(t, {
   Pe: () => j,
   QK: () => eO,
   QZ: () => S,
-  R$: () => m,
-  RS: () => e_,
+  R$: () => g,
+  RS: () => ep,
   R_: () => eD,
   Rt: () => ej,
   SE: () => eN,
@@ -61,14 +61,14 @@ n.d(t, {
   kU: () => X,
   l4: () => ek,
   mX: () => F,
-  nc: () => em,
+  nc: () => eg,
   qF: () => D,
-  rN: () => eg,
+  rN: () => em,
   tU: () => ef,
   uL: () => x,
-  up: () => g,
+  up: () => m,
   vF: () => y,
-  x4: () => ep,
+  x4: () => e_,
   xM: () => en,
   xq: () => K,
   zA: () => V
@@ -83,21 +83,21 @@ var r = n(442837),
   u = n(263937),
   d = n(973005),
   f = n(981631),
-  p = n(969943),
-  _ = n(611480);
+  _ = n(969943),
+  p = n(611480);
 let h = (0, c.Zc)("textAndImages", "useLegacyChatInput", e => {
     var t;
     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
   }, e => o.D5.create({
     value: e
   })),
-  m = (0, c.Zc)("textAndImages", "useRichChatInput", e => {
+  g = (0, c.Zc)("textAndImages", "useRichChatInput", e => {
     var t;
     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
   }, e => o.D5.create({
     value: e
   })),
-  g = (0, c.Zc)("textAndImages", "expressionSuggestionsEnabled", e => {
+  m = (0, c.Zc)("textAndImages", "expressionSuggestionsEnabled", e => {
     var t;
     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
   }, e => o.D5.create({
@@ -345,13 +345,13 @@ let el = new Set(Object.values(f.Skl)),
   }, e => o.D5.create({
     value: e
   })),
-  ep = (0, c.KM)((0, c.Zc)("textAndImages", "inlineAttachmentMedia", e => {
+  e_ = (0, c.KM)((0, c.Zc)("textAndImages", "inlineAttachmentMedia", e => {
     var t;
     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
   }, e => o.D5.create({
     value: e
   })), "text", "inlineAttachmentMedia"),
-  e_ = (0, c.KM)((0, c.Zc)("textAndImages", "inlineEmbedMedia", e => {
+  ep = (0, c.KM)((0, c.Zc)("textAndImages", "inlineEmbedMedia", e => {
     var t;
     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
   }, e => o.D5.create({
@@ -363,19 +363,19 @@ let el = new Set(Object.values(f.Skl)),
   }, e => o.D5.create({
     value: e
   })), "text", "renderEmbeds"),
-  em = (0, c.KM)((0, c.Zc)("textAndImages", "renderReactions", e => {
+  eg = (0, c.KM)((0, c.Zc)("textAndImages", "renderReactions", e => {
     var t;
     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
   }, e => o.D5.create({
     value: e
   })), "text", "renderReactions"),
-  eg = (0, c.Zc)("localization", "timezoneOffset", e => {
+  em = (0, c.Zc)("localization", "timezoneOffset", e => {
     var t;
     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t ? t : null
   }, e => o.T4.create({
     value: null != e ? e : 0
   })),
-  eE = new Set([p.fx.AUTO, a.l.COZY, a.l.COMPACT]);
+  eE = new Set([_.fx.AUTO, a.l.COZY, a.l.COMPACT]);
 (0, c.Zc)("appearance", "channelListLayout", e => null != e && eE.has(e.value) ? e.value : a.l.COZY, e => o.Gm.create({
   value: e
 }));
@@ -420,7 +420,7 @@ let eb = (0, c.KM)((0, c.Zc)("appearance", "developerMode", e => null != e && e,
   })),
   eI = (0, c.R2)((0, c.KM)((0, c.Zc)("textAndImages", "animateStickers", e => {
     var t;
-    return null !== (t = null == e ? void 0 : e.value) && void 0 !== t ? t : _.yr.ALWAYS_ANIMATE
+    return null !== (t = null == e ? void 0 : e.value) && void 0 !== t ? t : p.yr.ALWAYS_ANIMATE
   }, e => o.yC.create({
     value: e
   })), "text", "animateStickers"), "animateStickers", () => {

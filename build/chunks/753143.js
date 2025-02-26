@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => f,
-  r: () => p
+  r: () => _
 }), n(411104), n(47120);
 var r = n(192379),
   i = n(134158),
@@ -61,11 +61,11 @@ function f(e) {
     rowHeight: s,
     footerHeight: c,
     sidebarHeight: f,
-    listHeaderHeight: p,
-    chunkSize: _ = 256,
+    listHeaderHeight: _,
+    chunkSize: p = 256,
     paddingTop: h = 0,
-    paddingBottom: m = 0,
-    getScrollerState: g,
+    paddingBottom: g = 0,
+    getScrollerState: m,
     getAnchorId: E
   } = e, v = (0, o.Z)(), b = (0, r.useRef)(d), [y] = (0, r.useState)(() => new i.Z), {
     dirty: O,
@@ -73,14 +73,14 @@ function f(e) {
     chunkEnd: I,
     forceUpdateOnChunkChange: T
   } = (0, a.Z)({
-    chunkSize: _,
-    getScrollerState: g,
+    chunkSize: p,
+    getScrollerState: m,
     forceUpdate: v
   }), {
     items: N
   } = b.current, A = null, {
     scrollTop: C
-  } = g();
+  } = m();
   for (let e of N) {
     if (0 === C) break;
     if ("footer" === e.type || "header" === e.type || null == e.anchorId) continue;
@@ -96,19 +96,19 @@ function f(e) {
     }
   }
   let R = (0, r.useMemo)(() => {
-      let e = Math.max(0, S * _);
+      let e = Math.max(0, S * p);
       return null != f && e < f
-    }, [_, S, f]),
+    }, [p, S, f]),
     P = (0, r.useMemo)(() => O > 0 ? b.current : (y.mergeProps({
       sectionHeight: n,
       rowHeight: s,
       footerHeight: c,
-      listHeaderHeight: p,
-      paddingBottom: m,
+      listHeaderHeight: _,
+      paddingBottom: g,
       paddingTop: h,
       sections: t,
       getAnchorId: E
-    }), y.compute(Math.max(0, S * _), I * _)), [O, S, I, n, s, c, p, m, h, t, y, _, E]);
+    }), y.compute(Math.max(0, S * p), I * p)), [O, S, I, n, s, c, _, g, h, t, y, p, E]);
   return (0, r.useLayoutEffect)(() => void(b.current = P)), u(l({}, P), {
     listComputer: y,
     forceUpdateOnChunkChange: T,
@@ -117,7 +117,7 @@ function f(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     scrollerRef: t,
     anchor: n,

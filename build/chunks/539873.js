@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(100527),
   d = n(313201),
   f = n(540059),
-  p = n(98278),
-  _ = n(311476),
+  _ = n(98278),
+  p = n(311476),
   h = n(587446),
-  m = n(996073),
-  g = n(327943),
+  g = n(996073),
+  m = n(327943),
   E = n(997945),
   v = n(401460),
   b = n(441319),
@@ -72,15 +72,15 @@ function P(e) {
     disabled: o,
     isEditor: N,
     renderCTAButtons: C
-  } = e, [P, D] = (0, s.Wu)([g.Z], () => [g.Z.getCurrentDesktopIcon(), g.Z.isUpsellPreview]), {
+  } = e, [P, D] = (0, s.Wu)([m.Z], () => [m.Z.getCurrentDesktopIcon(), m.Z.isUpsellPreview]), {
     enabled: w
-  } = _.Z.getCurrentConfig({
+  } = p.Z.getCurrentConfig({
     location: "UserSettingsAppearanceInAppIcon"
   }, {
     autoTrackExposure: D,
     disable: !D
   }), L = i.useRef(null);
-  (0, m.Z)(L, O.h1.CUSTOM_APP_ICONS);
+  (0, g.Z)(L, O.h1.CUSTOM_APP_ICONS);
   let x = (0, d.Dt)(),
     M = (0, l.arW)({
       orientation: "horizontal",
@@ -137,7 +137,7 @@ function P(e) {
                 variant: "text-sm/normal",
                 children: S.NW.format(S.t.x2dQxM, {
                   onClick: () => {
-                    (0, p.$)()
+                    (0, _.$)()
                   }
                 })
               })]

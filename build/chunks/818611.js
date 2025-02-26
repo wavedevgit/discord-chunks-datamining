@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(481060),
   d = n(727637),
   f = n(597688),
-  p = n(884697),
-  _ = n(74538),
+  _ = n(884697),
+  p = n(74538),
   h = n(864106),
-  m = n(439959),
-  g = n(125988),
+  g = n(439959),
+  m = n(125988),
   E = n(388032),
   v = n(412839);
 
@@ -106,22 +106,22 @@ let N = 3,
     } = e, h = I(e, ["user", "avatarDecoration", "innerRef", "section", "isSelected"]);
     let b = (0, c.e7)([f.Z], () => {
         let e = f.Z.getProduct(n.skuId);
-        return (0, p.G1)(e)
+        return (0, _.G1)(e)
       }),
-      O = (0, p.Yq)(n.skuId),
-      T = _.ZP.canUseCollectibles(t),
-      N = a === m.$0.PREMIUM_PURCHASE && !T,
+      O = (0, _.Yq)(n.skuId),
+      T = p.ZP.canUseCollectibles(t),
+      N = a === g.$0.PREMIUM_PURCHASE && !T,
       C = i.useRef(null),
       R = (0, d.Z)(null != o ? o : C),
       {
         avatarDecorationSrc: P
-      } = (0, g.Z)({
+      } = (0, m.Z)({
         user: t,
         avatarDecorationOverride: n,
         size: A,
         onlyAnimateOnHover: !R
       }),
-      w = () => a === m.$0.PURCHASE || a === m.$0.PREMIUM_PURCHASE && T ? null : O ? (0, r.jsx)(u.lBU, {
+      w = () => a === g.$0.PURCHASE || a === g.$0.PREMIUM_PURCHASE && T ? null : O ? (0, r.jsx)(u.lBU, {
         className: v.newBadge,
         text: (0, r.jsxs)("div", {
           className: v.newBadgeText,
@@ -163,14 +163,14 @@ let N = 3,
       selectedAvatarDecorationRef: a,
       onSelect: l,
       onOpenShop: c
-    } = e, d = (0, m.ZP)(), f = i.useCallback(() => {
+    } = e, d = (0, g.ZP)(), f = i.useCallback(() => {
       c(void 0)
-    }, [c]), p = (e, i, c, p) => {
+    }, [c]), _ = (e, i, c, _) => {
       let {
-        section: _,
-        items: g
+        section: p,
+        items: m
       } = d[e];
-      return (0, s.EQ)(g[i]).with(m.Tm, () => (0, r.jsxs)(D, {
+      return (0, s.EQ)(m[i]).with(g.Tm, () => (0, r.jsxs)(D, {
         style: y({}, c),
         isSelected: null === o,
         onSelect: () => l(null),
@@ -183,7 +183,7 @@ let N = 3,
           color: "header-primary",
           children: (0, h.ad)(t, n) ? E.NW.string(E.t["GsW4/v"]) : E.NW.string(E.t.PoWNfX)
         })]
-      }, p)).with(m.oT, () => (0, r.jsxs)(D, {
+      }, _)).with(g.oT, () => (0, r.jsxs)(D, {
         style: c,
         onSelect: f,
         children: [(0, r.jsx)(u.EOn, {
@@ -197,19 +197,19 @@ let N = 3,
           color: "header-primary",
           children: E.NW.string(E.t.pWG4zc)
         })]
-      }, p)).otherwise(e => {
+      }, _)).otherwise(e => {
         let n = (null == o ? void 0 : o.id) === e.id;
         return (0, r.jsx)(w, {
           style: y({}, c),
           user: t,
           avatarDecoration: e,
-          section: _,
+          section: p,
           innerRef: n ? a : void 0,
           isSelected: n,
           onSelect: () => l(e)
-        }, p)
+        }, _)
       })
-    }, _ = (e, t) => {
+    }, p = (e, t) => {
       let {
         header: n
       } = d[e];
@@ -238,8 +238,8 @@ let N = 3,
       paddingHorizontal: C,
       paddingVertical: 0,
       removeEdgeItemGutters: !0,
-      renderItem: p,
-      renderSection: _,
+      renderItem: _,
+      renderSection: p,
       getSectionHeight: e => d[e].height,
       getItemKey: (e, t) => d[e].items[t].id,
       getItemHeight: P

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,15 +45,15 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,20 +61,20 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let g = i.forwardRef(function(e, t) {
+let m = i.forwardRef(function(e, t) {
   var n, {
       avatar: o,
       name: d,
-      nameplate: p,
-      children: m,
-      subText: g,
+      nameplate: _,
+      children: g,
+      subText: m,
       decorators: E,
       onClick: v,
       hovered: b,
@@ -95,15 +95,15 @@ let g = i.forwardRef(function(e, t) {
     [u.active]: y,
     [null != T ? T : ""]: y,
     [u.clickable]: !y && (null != S || null != v),
-    [u.wrapperPlated]: null != p
+    [u.wrapperPlated]: null != _
   }), P["aria-selected"] = null !== (n = P["aria-selected"]) && void 0 !== n ? n : y;
   let D = i.useRef(null),
     w = (0, r.jsxs)("div", {
       className: a()(u.childContainer, {
-        [u.nameplated]: null != p
+        [u.nameplated]: null != _
       }),
       children: [(0, r.jsx)(c.Z, {
-        nameplate: p,
+        nameplate: _,
         hovered: b,
         selected: y,
         content: D.current
@@ -126,18 +126,18 @@ let g = i.forwardRef(function(e, t) {
               }),
               children: d
             }), E]
-          }), null != g ? (0, r.jsx)("div", {
+          }), null != m ? (0, r.jsx)("div", {
             className: u.subText,
-            children: g
+            children: m
           }) : null]
-        }), null != m ? (0, r.jsx)("div", {
+        }), null != g ? (0, r.jsx)("div", {
           className: u.children,
-          children: m
+          children: g
         }) : null]
       })]
     });
-  return null != S ? (0, r.jsx)(l.tEY, _(f({}, R), {
-    children: (0, r.jsx)(s.rU, _(f({
+  return null != S ? (0, r.jsx)(l.tEY, p(f({}, R), {
+    children: (0, r.jsx)(s.rU, p(f({
       to: S,
       onClick: v
     }, P), {
@@ -145,15 +145,15 @@ let g = i.forwardRef(function(e, t) {
       ref: t,
       children: w
     }))
-  })) : null != v ? (0, r.jsx)(l.P3F, _(f({
+  })) : null != v ? (0, r.jsx)(l.P3F, p(f({
     onClick: v,
     focusProps: R
   }, P), {
     role: "listitem",
     innerRef: t,
     children: w
-  })) : (0, r.jsx)(l.tEY, _(f({}, R), {
-    children: (0, r.jsx)("div", _(f({}, P), {
+  })) : (0, r.jsx)(l.tEY, p(f({}, R), {
+    children: (0, r.jsx)("div", p(f({}, P), {
       role: "listitem",
       ref: t,
       children: w

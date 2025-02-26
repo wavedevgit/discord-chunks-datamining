@@ -183,30 +183,30 @@ class f {
   }
   getPeriodicStats() {
     let e = [];
-    for (let [h, m] of Object.entries(this.periodicInboundStats)) {
+    for (let [h, g] of Object.entries(this.periodicInboundStats)) {
       let {
-        previous: g,
+        previous: m,
         current: E,
         currentTimestampMs: v,
         previousTimestampMs: b,
         numRateSamples: y
-      } = m;
+      } = g;
       if (void 0 !== b && v > b) {
-        var t, n, r, i, o, a, s, l, c, u, d, f, p, _;
+        var t, n, r, i, o, a, s, l, c, u, d, f, _, p;
         let O = v - b,
           S = {
             userId: h,
-            silent: null !== (n = E.silent) && void 0 !== n ? n : 0 - (null !== (t = g.silent) && void 0 !== t ? t : 0),
-            normal: null !== (i = E.normal) && void 0 !== i ? i : 0 - (null !== (r = g.normal) && void 0 !== r ? r : 0),
-            merged: null !== (a = E.merged) && void 0 !== a ? a : 0 - (null !== (o = g.merged) && void 0 !== o ? o : 0),
-            expanded: null !== (l = E.expanded) && void 0 !== l ? l : 0 - (null !== (s = g.expanded) && void 0 !== s ? s : 0),
-            accelerated: null !== (u = E.accelerated) && void 0 !== u ? u : 0 - (null !== (c = g.accelerated) && void 0 !== c ? c : 0),
-            preemptiveExpanded: null !== (f = E.preemptiveExpanded) && void 0 !== f ? f : 0 - (null !== (d = g.preemptiveExpanded) && void 0 !== d ? d : 0),
-            cng: null !== (_ = E.cng) && void 0 !== _ ? _ : 0 - (null !== (p = g.cng) && void 0 !== p ? p : 0),
-            accelerateRate: m.accelerateRateSum / y,
-            expandRate: m.expandRateSum / y,
-            preemptiveExpandRate: m.preemptiveExpandRateSum / y,
-            speechExpandRate: m.speechExpandRateSum / y,
+            silent: null !== (n = E.silent) && void 0 !== n ? n : 0 - (null !== (t = m.silent) && void 0 !== t ? t : 0),
+            normal: null !== (i = E.normal) && void 0 !== i ? i : 0 - (null !== (r = m.normal) && void 0 !== r ? r : 0),
+            merged: null !== (a = E.merged) && void 0 !== a ? a : 0 - (null !== (o = m.merged) && void 0 !== o ? o : 0),
+            expanded: null !== (l = E.expanded) && void 0 !== l ? l : 0 - (null !== (s = m.expanded) && void 0 !== s ? s : 0),
+            accelerated: null !== (u = E.accelerated) && void 0 !== u ? u : 0 - (null !== (c = m.accelerated) && void 0 !== c ? c : 0),
+            preemptiveExpanded: null !== (f = E.preemptiveExpanded) && void 0 !== f ? f : 0 - (null !== (d = m.preemptiveExpanded) && void 0 !== d ? d : 0),
+            cng: null !== (p = E.cng) && void 0 !== p ? p : 0 - (null !== (_ = m.cng) && void 0 !== _ ? _ : 0),
+            accelerateRate: g.accelerateRateSum / y,
+            expandRate: g.expandRateSum / y,
+            preemptiveExpandRate: g.preemptiveExpandRateSum / y,
+            speechExpandRate: g.speechExpandRateSum / y,
             durationMs: O
           };
         S.normal + S.merged + S.expanded + S.accelerated + S.preemptiveExpanded > 0 && e.push(S)
@@ -225,7 +225,7 @@ class f {
   constructor(e) {
     c(this, "connection", void 0), c(this, "inboundStats", void 0), c(this, "outboundStats", void 0), c(this, "networkQuality", void 0), c(this, "systemResources", void 0), c(this, "duration", void 0), c(this, "decryptionFailures", void 0), c(this, "routingFailures", void 0), c(this, "periodicInboundStats", void 0), c(this, "inputDeviceStats", void 0), c(this, "outputDeviceStats", void 0), c(this, "sampleAudioDevice", void 0), c(this, "sampleStats", void 0), this.connection = e, this.sampleAudioDevice = (e, t) => {
       var n;
-      void 0 !== e && (void 0 !== e.restartCount && (t.restartCount = p(e.restartCount, t.restartCount)), void 0 !== e.bufferViolations && (t.bufferViolations = p(e.bufferViolations, t.bufferViolations)), (null !== (n = e.timeToFirstCallbackMs) && void 0 !== n ? n : 0) !== 0 && void 0 === t.timeToFirstCallbackMs && (t.timeToFirstCallbackMs = e.timeToFirstCallbackMs))
+      void 0 !== e && (void 0 !== e.restartCount && (t.restartCount = _(e.restartCount, t.restartCount)), void 0 !== e.bufferViolations && (t.bufferViolations = _(e.bufferViolations, t.bufferViolations)), (null !== (n = e.timeToFirstCallbackMs) && void 0 !== n ? n : 0) !== 0 && void 0 === t.timeToFirstCallbackMs && (t.timeToFirstCallbackMs = e.timeToFirstCallbackMs))
     }, this.sampleStats = e => {
       if (null == e) return;
       this.networkQuality.incrementNetworkStats((0, a.zO)()), this.systemResources.takeSample(), this.decryptionFailures = e.transport.decryptionFailures, this.routingFailures = e.transport.routingFailures, this.duration.connected++;
@@ -252,7 +252,7 @@ class f {
       }), i().forEach(e.rtp.inbound, (t, n) => {
         i().forEach(t, t => {
           if ("audio" === t.type) {
-            var r, o, a, s, l, c, d, f, p, _, h, m, g, E, v, b, y, O, S;
+            var r, o, a, s, l, c, d, f, _, p, h, g, m, E, v, b, y, O, S;
             let I = null !== (r = e.transport.ping) && void 0 !== r ? r : 0,
               T = t.packetsReceived,
               N = t.packetsLost,
@@ -282,8 +282,8 @@ class f {
                 decryptSuccessCount: null !== (c = t.decryptSuccessCount) && void 0 !== c ? c : 0,
                 decryptFailureCount: null !== (d = t.decryptFailureCount) && void 0 !== d ? d : 0,
                 decryptDuration: null !== (f = t.decryptDuration) && void 0 !== f ? f : 0,
-                decryptAttempts: null !== (p = t.decryptAttempts) && void 0 !== p ? p : 0,
-                decryptMissingKeyCount: null !== (_ = t.decryptMissingKeyCount) && void 0 !== _ ? _ : 0,
+                decryptAttempts: null !== (_ = t.decryptAttempts) && void 0 !== _ ? _ : 0,
+                decryptMissingKeyCount: null !== (p = t.decryptMissingKeyCount) && void 0 !== p ? p : 0,
                 decryptInvalidNonceCount: null !== (h = t.decryptInvalidNonceCount) && void 0 !== h ? h : 0
               };
             if (null != this.inboundStats[n]) {
@@ -309,8 +309,8 @@ class f {
                 previous: this.periodicInboundStats[n].previous,
                 currentTimestampMs: Date.now(),
                 current: L,
-                accelerateRateSum: this.periodicInboundStats[n].accelerateRateSum + (null !== (m = t.accelerateRate) && void 0 !== m ? m : 0),
-                expandRateSum: this.periodicInboundStats[n].expandRateSum + (null !== (g = t.expandRate) && void 0 !== g ? g : 0),
+                accelerateRateSum: this.periodicInboundStats[n].accelerateRateSum + (null !== (g = t.accelerateRate) && void 0 !== g ? g : 0),
+                expandRateSum: this.periodicInboundStats[n].expandRateSum + (null !== (m = t.expandRate) && void 0 !== m ? m : 0),
                 preemptiveExpandRateSum: this.periodicInboundStats[n].preemptiveExpandRateSum + (null !== (E = t.preemptiveExpandRate) && void 0 !== E ? E : 0),
                 speechExpandRateSum: this.periodicInboundStats[n].speechExpandRateSum + (null !== (v = t.speechExpandRate) && void 0 !== v ? v : 0),
                 numRateSamples: this.periodicInboundStats[n].numRateSamples + 1
@@ -366,7 +366,7 @@ class f {
     }, this.periodicInboundStats = {}, this.inputDeviceStats = {}, this.outputDeviceStats = {}
   }
 }
-let p = (e, t) => {
+let _ = (e, t) => {
   let {
     accumulated: n,
     lastValue: r

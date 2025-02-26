@@ -1,6 +1,6 @@
 /** Chunk was on 30829 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => I
 }), n(47120), n(13667), n(390547), n(653041);
 var r = n(200651);
 n(192379);
@@ -18,8 +18,8 @@ var i = n(120356),
   g = n(199902),
   m = n(592125),
   b = n(594174),
-  v = n(938475),
-  y = n(823379),
+  y = n(938475),
+  v = n(823379),
   O = n(709054),
   j = n(853856),
   _ = n(981631),
@@ -42,11 +42,11 @@ function N(e, t) {
 }
 
 function S() {
-  let e = (0, s.Wu)([j.Z, m.Z], () => O.default.keys(j.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(y.lm)),
+  let e = (0, s.Wu)([j.Z, m.Z], () => O.default.keys(j.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(v.lm)),
     t = e.map(e => e.id),
     n = e.filter(e => e.type === _.d4z.GUILD_VOICE),
     i = e.filter(e => e.type === _.d4z.GUILD_STAGE_VOICE).map(e => e.id),
-    l = (0, s.Wu)([v.ZP], () => a().flatMap(n, e => v.ZP.getVoiceStatesForChannel(e).map(e => {
+    l = (0, s.Wu)([y.ZP], () => a().flatMap(n, e => y.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
       } = e;
@@ -74,8 +74,8 @@ function S() {
       return n
     }, [t]),
     S = (0, s.Wu)([b.default], () => P.map(e => b.default.getUser(e)), [P]),
-    I = (0, s.Wu)([b.default], () => C.map(e => b.default.getUser(e)), [C]),
-    Z = N(c.gj8, l.filter(e => !C.includes(e.id) && !P.includes(e.id))),
+    Z = (0, s.Wu)([b.default], () => C.map(e => b.default.getUser(e)), [C]),
+    I = N(c.gj8, l.filter(e => !C.includes(e.id) && !P.includes(e.id))),
     w = 0 === o.length ? null : (0, r.jsxs)("div", {
       className: x.row,
       children: [(0, r.jsx)(c.ewx, {
@@ -99,14 +99,14 @@ function S() {
         })]
       })]
     }),
-    E = N(c.hGI, I.filter(e => null != e && !P.includes(e.id))),
+    E = N(c.hGI, Z.filter(e => null != e && !P.includes(e.id))),
     T = N(c.nG3, S);
   return (0, r.jsxs)(r.Fragment, {
-    children: [w, Z, E, T]
+    children: [w, I, E, T]
   })
 }
 
-function I() {
+function Z() {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: l()(x.row, x.rowGuildName),
@@ -118,7 +118,7 @@ function I() {
   })
 }
 
-function Z(e) {
+function I(e) {
   let {
     "aria-label": t = !1,
     onShow: n,
@@ -128,7 +128,7 @@ function Z(e) {
     hideOnClick: !0,
     spacing: l ? 12 : 20,
     position: "right",
-    text: (0, r.jsx)(I, {}),
+    text: (0, r.jsx)(Z, {}),
     "aria-label": t,
     tooltipClassName: P.listItemTooltip,
     onTooltipShow: n,

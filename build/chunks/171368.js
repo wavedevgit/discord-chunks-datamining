@@ -2,7 +2,7 @@
 "use strict";
 n.r(t), n.d(t, {
   closeUserProfileModal: () => g,
-  openUserProfileModal: () => m
+  openUserProfileModal: () => h
 });
 var r = n(259443),
   i = n(481060),
@@ -12,29 +12,23 @@ var r = n(259443),
   l = n(314897),
   c = n(594174),
   u = n(9161),
-  d = n(456644),
-  f = n(484459);
-let p = (0, i.pxk)(i.EFr.SIZE_120),
+  d = n(484459);
+let f = (0, i.pxk)(i.EFr.SIZE_120),
   _ = new r.Yd("UserProfileModalActionCreators"),
-  h = async e => {
+  p = async e => {
     let t = l.default.getId() === e,
       {
         recentActivityTabEnabled: n
       } = (0, u.x)({
         location: "UserProfileModalActionCreators"
-      }),
-      {
-        recentActivityEnabled: r
-      } = (0, d.G)({
-        location: "UserProfileModalActionCreators"
       });
-    if (n || r || t) try {
+    if (n || t) try {
       await (0, s.Z)(e)
     } catch (t) {
       _.log("Failed to fetch content inventory outbox for ".concat(e, ":"), t)
     }
   };
-async function m(e) {
+async function h(e) {
   let {
     userId: t,
     guildId: n,
@@ -43,27 +37,27 @@ async function m(e) {
     roleId: s,
     sessionId: l,
     joinRequestId: u,
-    section: d,
-    subsection: _,
-    friendToken: m,
-    showGuildProfile: g,
+    section: _,
+    subsection: h,
+    friendToken: g,
+    showGuildProfile: m,
     analyticsLocation: E,
     sourceAnalyticsLocations: v,
     appContext: b
   } = e, y = c.default.getUser(t);
-  h(t), null == y ? await (0, a.In)(t, {
+  p(t), null == y ? await (0, a.In)(t, {
     type: "modal",
-    guildId: g && null != n ? n : void 0,
+    guildId: m && null != n ? n : void 0,
     withMutualGuilds: !0,
     withMutualFriends: !0,
-    friendToken: m,
+    friendToken: g,
     joinRequestId: u
-  }) : (0, f.Z)(y.id, y.getAvatarURL(void 0, p), {
+  }) : (0, d.Z)(y.id, y.getAvatarURL(void 0, f), {
     type: "modal",
-    guildId: g && null != n ? n : void 0,
+    guildId: m && null != n ? n : void 0,
     withMutualGuilds: !0,
     withMutualFriends: !0,
-    friendToken: m,
+    friendToken: g,
     joinRequestId: u
   }), o.Z.dispatch({
     type: "USER_PROFILE_MODAL_OPEN",
@@ -73,10 +67,10 @@ async function m(e) {
     messageId: null != i ? i : void 0,
     roleId: null != s ? s : void 0,
     sessionId: null != l ? l : void 0,
-    section: d,
-    subsection: _,
-    friendToken: m,
-    showGuildProfile: g,
+    section: _,
+    subsection: h,
+    friendToken: g,
+    showGuildProfile: m,
     analyticsLocation: E,
     sourceAnalyticsLocations: v,
     appContext: b

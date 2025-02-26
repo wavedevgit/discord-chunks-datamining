@@ -15,11 +15,11 @@ var r = n(200651),
   u = n(377108),
   d = n(692547),
   f = n(481060),
-  p = n(68405),
-  _ = n(527429),
+  _ = n(68405),
+  p = n(527429),
   h = n(788911),
-  m = n(40851),
-  g = n(198620),
+  g = n(40851),
+  m = n(198620),
   E = n(29909),
   v = n(591759),
   b = n(132748),
@@ -87,7 +87,7 @@ function x(e) {
 }
 
 function M(e) {
-  return ((0, g._M)(e) || (0, g.MO)(e)) && (e.pathname.toLowerCase().endsWith(".webp") || e.pathname.toLowerCase().endsWith(".avif"))
+  return ((0, m._M)(e) || (0, m.MO)(e)) && (e.pathname.toLowerCase().endsWith(".webp") || e.pathname.toLowerCase().endsWith(".avif"))
 }
 
 function k(e) {
@@ -205,7 +205,7 @@ class U extends i.PureComponent {
       resultType: e,
       data: t
     } = this.props;
-    e === y.wI2.FAVORITES && ((0, p.t1)(y.wI2.FAVORITES), (0, p.hM)(t, y.wI2.FAVORITES, {
+    e === y.wI2.FAVORITES && ((0, _.t1)(y.wI2.FAVORITES), (0, _.hM)(t, y.wI2.FAVORITES, {
       limit: null
     }))
   }
@@ -216,7 +216,7 @@ class U extends i.PureComponent {
       data: i,
       resultQuery: o
     } = this.props;
-    null != n && n(e), (0, p.R7)({
+    null != n && n(e), (0, _.R7)({
       type: r,
       index: t,
       offset: this.props.searchOffset,
@@ -277,7 +277,7 @@ class U extends i.PureComponent {
     return 0 === e.length && t === n && i !== y.wI2.TRENDING_GIFS ? i === y.wI2.FAVORITES ? this.renderEmptyFavorites() : (0, r.jsx)(h.Z, {
       message: O.NW.string(O.t["5dX4UF"]),
       className: S.noResults
-    }) : (0, r.jsx)(_.Z, {
+    }) : (0, r.jsx)(p.Z, {
       getItemGrid: this.getItemGrid,
       getCoordsMap: this.getCoordsMap,
       onFocus: this.handleFocus,
@@ -322,7 +322,7 @@ class U extends i.PureComponent {
         scrollTop: n,
         scrollHeight: r
       } = t.getScrollerState();
-      r - n <= C && (e !== this.prevResultQuery && (0, p.mO)(e), this.prevResultQuery = e)
+      r - n <= C && (e !== this.prevResultQuery && (0, _.mO)(e), this.prevResultQuery = e)
     }), I(this, "renderItem", (e, t, n, i) => {
       if (e > 0) return null;
       let {
@@ -428,7 +428,7 @@ class U extends i.PureComponent {
 function G() {
   let {
     renderWindow: e
-  } = i.useContext(m.ZP), t = e.document, [n] = i.useState(() => new c.w(() => t.createElement("img"), e => {
+  } = i.useContext(g.ZP), t = e.document, [n] = i.useState(() => new c.w(() => t.createElement("img"), e => {
     e.onload = null, e.src = ""
   })), [r] = i.useState(() => new c.w(() => {
     let e = t.createElement("video");

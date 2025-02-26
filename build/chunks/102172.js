@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  JL: () => _,
+  JL: () => p,
   P9: () => h,
   h_: () => E,
-  p9: () => m,
-  wq: () => g
+  p9: () => g,
+  wq: () => m
 }), n(653041), n(47120);
 var r = n(442837),
   i = n(387343),
@@ -17,9 +17,9 @@ var r = n(442837),
   u = n(979651),
   d = n(934415),
   f = n(981631),
-  p = n(388032);
+  _ = n(388032);
 
-function _(e, t, n) {
+function p(e, t, n) {
   var r;
   let o = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3];
   if (e.isPrivate()) return !0;
@@ -31,17 +31,17 @@ function _(e, t, n) {
 function h(e) {
   switch (e) {
     case 0:
-      return p.NW.string(p.t["1i3tSU"]);
+      return _.NW.string(_.t["1i3tSU"]);
     case 1:
-      return p.NW.string(p.t.elyVbm);
+      return _.NW.string(_.t.elyVbm);
     case 2:
-      return p.NW.string(p.t.pgUTZG);
+      return _.NW.string(_.t.pgUTZG);
     default:
-      return p.NW.string(p.t["7Xq/nZ"])
+      return _.NW.string(_.t["7Xq/nZ"])
   }
 }
 
-function m(e, t, n, r, o) {
+function g(e, t, n, r, o) {
   let s;
   if (null == e) return [!1, 2];
   let l = t.isInChannel(e.id),
@@ -49,12 +49,12 @@ function m(e, t, n, r, o) {
     u = (0, i.Z)(e, r),
     f = null != o.getAwaitingRemoteSessionInfo() || null != o.getRemoteSessionId();
   f ? s = 0 : u || l ? c && !l && (s = 1) : s = 2;
-  let p = u && !c;
-  return [!__OVERLAY__ && !f && (l || p), s]
+  let _ = u && !c;
+  return [!__OVERLAY__ && !f && (l || _), s]
 }
 
-function g(e) {
-  return (0, r.Wu)([u.Z, l.Z, c.Z, o.Z], () => m(e, u.Z, l.Z, c.Z, o.Z))
+function m(e) {
+  return (0, r.Wu)([u.Z, l.Z, c.Z, o.Z], () => g(e, u.Z, l.Z, c.Z, o.Z))
 }
 
 function E(e, t, n) {
@@ -62,6 +62,6 @@ function E(e, t, n) {
   for (let {
       channel: i
     }
-    of e[s.Zb]) _(i, t, n) && r.push(i);
+    of e[s.Zb]) p(i, t, n) && r.push(i);
   return r
 }

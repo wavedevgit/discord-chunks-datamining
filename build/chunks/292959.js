@@ -41,15 +41,15 @@ let d = {
   },
   f = d;
 
-function p(e, t) {
+function _(e, t) {
   __OVERLAY__ || a.default.track(e, t)
 }
 
-function _(e) {
+function p(e) {
   let {
     desktopType: t
   } = e;
-  f.desktopType = t, p(l.rMx.LOCAL_SETTINGS_UPDATED, {
+  f.desktopType = t, _(l.rMx.LOCAL_SETTINGS_UPDATED, {
     notifications_enabled: t === l.qrD.ALL
   })
 }
@@ -61,11 +61,11 @@ function h(e) {
   f.disabledSounds = t
 }
 
-function m() {
+function g() {
   f.disableAllSounds = !f.disableAllSounds
 }
 
-function g(e) {
+function m(e) {
   let {
     ttsType: t
   } = e;
@@ -98,12 +98,12 @@ function y(e) {
     enabled: t,
     source: n
   } = e;
-  p(l.rMx.ENABLE_NOTIFICATIONS, {
+  _(l.rMx.ENABLE_NOTIFICATIONS, {
     enabled: t === l.$Ab.ENABLED,
     source: n
-  }), t === l.$Ab.BLOCKED ? _({
+  }), t === l.$Ab.BLOCKED ? p({
     desktopType: l.qrD.NEVER
-  }) : t === l.$Ab.ENABLED && _({
+  }) : t === l.$Ab.ENABLED && p({
     desktopType: l.qrD.ALL
   })
 }
@@ -144,10 +144,10 @@ c(O, "displayName", "NotificationSettingsStore"), c(O, "persistKey", "notificati
   return t.disabledSounds = t.disabledSounds || [], t.disableUnreadBadge = t.disableUnreadBadge || !1, t.taskbarFlash = null == t.taskbarFlash || t.taskbarFlash, t.ttsType = t.ttsType || l.PrB.NEVER, null == t.desktopType && (t.desktopType = s.isPlatformEmbedded ? l.qrD.ALL : l.qrD.NEVER), t
 }]);
 let S = new O(o.Z, {
-  NOTIFICATIONS_SET_DESKTOP_TYPE: _,
-  NOTIFICATIONS_SET_TTS_TYPE: g,
+  NOTIFICATIONS_SET_DESKTOP_TYPE: p,
+  NOTIFICATIONS_SET_TTS_TYPE: m,
   NOTIFICATIONS_SET_DISABLED_SOUNDS: h,
-  NOTIFICATIONS_TOGGLE_ALL_DISABLED: m,
+  NOTIFICATIONS_TOGGLE_ALL_DISABLED: g,
   NOTIFICATIONS_SET_PERMISSION_STATE: y,
   NOTIFICATIONS_SET_DISABLE_UNREAD_BADGE: E,
   NOTIFICATIONS_SET_TASKBAR_FLASH: v,

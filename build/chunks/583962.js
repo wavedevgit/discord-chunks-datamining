@@ -19,8 +19,8 @@ var r = n(200651),
   g = n(906732),
   m = n(540059),
   b = n(434404),
-  v = n(496675),
-  y = n(259580),
+  y = n(496675),
+  v = n(259580),
   O = n(267642),
   j = n(624138),
   _ = n(667815),
@@ -29,9 +29,9 @@ var r = n(200651),
   P = n(30513),
   N = n(981631),
   S = n(388032),
-  I = n(331972);
+  Z = n(331972);
 
-function Z(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -67,7 +67,7 @@ let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     let {
       guild: t,
       onSelect: n
-    } = e, [l, o] = i.useState(t.premiumProgressBarEnabled), [a, s] = i.useState(!1), u = (0, c.e7)([v.Z], () => v.Z.can(N.Plq.MANAGE_GUILD, t)), h = async () => {
+    } = e, [l, o] = i.useState(t.premiumProgressBarEnabled), [a, s] = i.useState(!1), u = (0, c.e7)([y.Z], () => y.Z.can(N.Plq.MANAGE_GUILD, t)), h = async () => {
       u && (s(!0), await b.Z.saveGuild(t.id, {
         premiumProgressBarEnabled: !l
       }), o(!l), s(!1))
@@ -104,7 +104,7 @@ let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     } = t, E = (0, O.rF)(b, j), D = (0, O.FZ)(E, t.id), A = null == D, L = null != D ? D : E, k = (0, c.e7)([C.Z], () => {
       var e;
       return null !== (e = C.Z.getCountForGuild(j)) && void 0 !== e ? e : 0
-    }), M = (0, c.e7)([v.Z], () => v.Z.can(N.Plq.MANAGE_GUILD, t));
+    }), M = (0, c.e7)([y.Z], () => y.Z.can(N.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
       k !== b && (0, _.v)(j, b)
     }, [j, k, b]);
@@ -161,7 +161,7 @@ let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
         position: "top",
         delay: 200,
         hideOnClick: !0,
-        children: e => (0, r.jsxs)(d.P3F, w(Z({}, q, e), {
+        children: e => (0, r.jsxs)(d.P3F, w(I({}, q, e), {
           "aria-label": void 0,
           role: "button",
           focusProps: {
@@ -175,53 +175,53 @@ let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
             var t;
             null === (t = e.onMouseEnter) || void 0 === t || t.call(e), V(U)
           },
-          className: o()(I.container, {
-            [I.containerWithMargin]: n
+          className: o()(Z.container, {
+            [Z.containerWithMargin]: n
           }),
           onContextMenu: e => {
-            M && (0, p.vq)(e, e => (0, r.jsx)(T, w(Z({}, e), {
+            M && (0, p.vq)(e, e => (0, r.jsx)(T, w(I({}, e), {
               guild: t
             })))
           },
           children: [(0, r.jsx)(d.nn4, {
             children: e["aria-label"]
           }), (0, r.jsxs)("div", {
-            className: I.textArea,
+            className: Z.textArea,
             children: [(0, r.jsx)("div", {
-              className: I.goalTextContainer,
+              className: Z.goalTextContainer,
               children: (0, r.jsx)(d.Text, {
-                className: I.goalText,
+                className: Z.goalText,
                 color: l ? "none" : "interactive-active",
                 variant: l ? "text-sm/medium" : "text-xs/bold",
                 lineClamp: 1,
                 children: H
               })
             }), (0, r.jsxs)("div", {
-              className: I.progressFraction,
+              className: Z.progressFraction,
               children: [(0, r.jsx)(d.Text, {
                 color: l ? "none" : "interactive-normal",
                 variant: l ? "text-sm/medium" : "text-xs/normal",
-                className: I.progressText,
+                className: Z.progressText,
                 lineClamp: 1,
                 children: z
-              }), (0, r.jsx)(y.Z, {
-                className: I.count,
+              }), (0, r.jsx)(v.Z, {
+                className: Z.count,
                 height: 16,
                 width: 16,
-                direction: y.Z.Directions.RIGHT
+                direction: v.Z.Directions.RIGHT
               })]
             })]
           }), (0, r.jsxs)("div", {
-            className: o()(I.progressBarContainer, {
-              [I.progressBarContainerComplete]: A
+            className: o()(Z.progressBarContainer, {
+              [Z.progressBarContainerComplete]: A
             }),
             children: [(0, r.jsx)(a.animated.div, {
-              className: I.progressBar,
+              className: Z.progressBar,
               style: W
             }), A ? (0, r.jsx)("span", {
               "aria-label": S.NW.string(S.t["7iL1q6"]),
               role: "img",
-              className: I.tadaIcon,
+              className: Z.tadaIcon,
               children: "\uD83C\uDF89"
             }) : null]
           })]

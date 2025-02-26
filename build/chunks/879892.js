@@ -14,8 +14,8 @@ var i = n(481060),
   u = n(509545),
   d = n(626135),
   f = n(267642),
-  p = n(852679),
-  _ = n(981631);
+  _ = n(852679),
+  p = n(981631);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,7 +26,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -78,7 +78,7 @@ async function O(e) {
   let {
     analyticsLocations: t,
     analyticsLocation: h,
-    analyticsSourceLocation: g,
+    analyticsSourceLocation: m,
     numberOfBoostsToAdd: b,
     onClose: O,
     closeLayer: S,
@@ -99,7 +99,7 @@ async function O(e) {
         var {
           onClose: n
         } = t, i = v(t, ["onClose"]);
-        return (0, r.jsx)(e, E(m({}, i), {
+        return (0, r.jsx)(e, E(g({}, i), {
           onClose: n
         }))
       }
@@ -116,8 +116,8 @@ async function O(e) {
       null == O || O(), null == N || N(e)
     },
     k = () => {
-      null == O || O(), null == S || S(), d.default.track(_.rMx.MODAL_DISMISSED, {
-        type: _.ZY5.PREMIUM_GUILD_USER_MODAL,
+      null == O || O(), null == S || S(), d.default.track(p.rMx.MODAL_DISMISSED, {
+        type: p.ZY5.PREMIUM_GUILD_USER_MODAL,
         location_section: h.section
       })
     };
@@ -131,12 +131,12 @@ async function O(e) {
         var {
           onClose: i
         } = n, o = v(n, ["onClose"]);
-        return (0, r.jsx)(t, E(m({}, o), {
+        return (0, r.jsx)(t, E(g({}, o), {
           onClose: e => {
             i(), M(e)
           },
           selectedGuild: T,
-          locationSection: _.ZY5.PREMIUM_GUILD_USER_MODAL,
+          locationSection: p.ZY5.PREMIUM_GUILD_USER_MODAL,
           guildBoostSlots: e
         }))
       }
@@ -147,10 +147,10 @@ async function O(e) {
       },
       contextKey: P
     })
-  } else(0, p.Z)({
+  } else(0, _.Z)({
     analyticsLocations: t,
     analyticsLocation: h,
-    analyticsSourceLocation: g,
+    analyticsSourceLocation: m,
     guildId: T.id,
     closeLayer: k,
     totalNumberOfSlotsToAssign: null != b ? b : 1,

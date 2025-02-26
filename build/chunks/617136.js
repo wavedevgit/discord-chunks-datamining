@@ -21,8 +21,8 @@ var r = n(192379),
   u = n(497505),
   d = n(977156),
   f = n(566078),
-  p = n(46140),
-  _ = n(981631);
+  _ = n(46140),
+  p = n(981631);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -33,7 +33,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,12 +58,12 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let v = Object.keys(u.jn),
-  b = new Set([_.rMx.QUEST_CONTENT_VIEWED, _.rMx.QUEST_CONTENT_CLICKED]);
+  b = new Set([p.rMx.QUEST_CONTENT_VIEWED, p.rMx.QUEST_CONTENT_CLICKED]);
 
 function y(e) {
   var t;
@@ -102,9 +102,9 @@ function T(e) {
     trackGuildAndChannelMetadata: l = !1
   } = e, u = c.Z.quests.get(t);
   if (null == u || (0, d.X7)({
-      location: p.dr.QUEST_PREVIEW_TOOL
-    }) && a.Z.getLayers().includes(_.S9g.USER_SETTINGS)) return;
-  let f = m({}, S(u), r);
+      location: _.dr.QUEST_PREVIEW_TOOL
+    }) && a.Z.getLayers().includes(p.S9g.USER_SETTINGS)) return;
+  let f = g({}, S(u), r);
   if (o.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, f), u.preview) return;
   let h = b.has(n);
   if (l) return i.ZP.trackWithMetadata(n, f, h);
@@ -128,8 +128,8 @@ function A(e) {
   } = e;
   T({
     questId: t,
-    event: _.rMx.QUEST_CONTENT_CLICKED,
-    properties: E(m({}, I(n, i, o)), {
+    event: p.rMx.QUEST_CONTENT_CLICKED,
+    properties: E(g({}, I(n, i, o)), {
       cta_name: r,
       impression_id: a
     }),
@@ -146,8 +146,8 @@ function C(e) {
   } = e;
   T({
     questId: n,
-    event: _.rMx.QUEST_BAR_MODE_CHANGED,
-    properties: E(m({}, I(t)), {
+    event: p.rMx.QUEST_BAR_MODE_CHANGED,
+    properties: E(g({}, I(t)), {
       mode: r,
       previous_mode: i
     })
@@ -167,7 +167,7 @@ function R() {
     T({
       questId: n,
       event: r,
-      properties: E(m({}, i), {
+      properties: E(g({}, i), {
         impression_id: null == e ? void 0 : e.getId()
       }),
       trackGuildAndChannelMetadata: o
@@ -189,8 +189,8 @@ function P() {
     } = t;
     e({
       questId: n,
-      event: _.rMx.QUEST_CONTENT_CLICKED,
-      properties: E(m({}, I(r, o, a)), {
+      event: p.rMx.QUEST_CONTENT_CLICKED,
+      properties: E(g({}, I(r, o, a)), {
         cta_name: i
       }),
       trackGuildAndChannelMetadata: s

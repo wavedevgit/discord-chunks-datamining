@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, o, a, s, l, c, u, d, f, p, _, h, m, g, E;
+let r, i, o, a, s, l, c, u, d, f, _, p, h, g, m, E;
 n.d(t, {
   Z: () => eo
 });
@@ -49,7 +49,7 @@ function w(e) {
   let {
     avatar: t
   } = e;
-  r = t, _ = void 0
+  r = t, p = void 0
 }
 
 function L(e) {
@@ -84,7 +84,7 @@ function j(e) {
   let {
     item: t
   } = e;
-  (null == t ? void 0 : t.type) === b.Z.PROFILE_EFFECT ? (m = null, g = null == t ? void 0 : t.id) : (null == t ? void 0 : t.type) === b.Z.AVATAR_DECORATION && (g = null, m = t)
+  (null == t ? void 0 : t.type) === b.Z.PROFILE_EFFECT ? (g = null, m = null == t ? void 0 : t.id) : (null == t ? void 0 : t.type) === b.Z.AVATAR_DECORATION && (m = null, g = t)
 }
 
 function U(e) {
@@ -126,14 +126,14 @@ function Z(e) {
   let {
     themeColors: t
   } = e;
-  p = t
+  _ = t
 }
 
 function H(e) {
   let {
     avatar: t
   } = e;
-  _ = t
+  p = t
 }
 
 function W(e) {
@@ -147,14 +147,14 @@ function Y(e) {
   let {
     avatarDecoration: t
   } = e;
-  m = t
+  g = t
 }
 
 function K(e) {
   let {
     profileEffectId: t
   } = e;
-  g = t
+  m = t
 }
 
 function z(e) {
@@ -172,7 +172,7 @@ function q(e) {
       avatarDecoration: r
     }
   } = e;
-  p = t, E = n, m = r
+  _ = t, E = n, g = r
 }
 
 function Q() {
@@ -196,7 +196,7 @@ function ee() {
 }
 
 function et() {
-  _ = void 0, h = void 0, m = void 0, g = void 0, E = void 0, p = void 0
+  p = void 0, h = void 0, g = void 0, m = void 0, E = void 0, _ = void 0
 }
 
 function en() {
@@ -264,30 +264,30 @@ class ei extends(v = y.ZP.Store) {
     }
   }
   getTryItOutThemeColors() {
-    return p
+    return _
   }
   getTryItOutAvatar() {
-    return _
+    return p
   }
   getTryItOutAvatarV2() {
     return h
   }
   getTryItOutAvatarDecoration() {
-    return m
+    return g
   }
   getTryItOutProfileEffectId() {
-    return g
+    return m
   }
   getTryItOutBanner() {
     return E
   }
   getAllTryItOut() {
     return {
-      tryItOutThemeColors: p,
-      tryItOutAvatar: _,
+      tryItOutThemeColors: _,
+      tryItOutAvatar: p,
       tryItOutAvatarV2: h,
-      tryItOutAvatarDecoration: m,
-      tryItOutProfileEffectId: g,
+      tryItOutAvatarDecoration: g,
+      tryItOutProfileEffectId: m,
       tryItOutBanner: E
     }
   }

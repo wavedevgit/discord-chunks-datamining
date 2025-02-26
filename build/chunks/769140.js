@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(872810),
   d = n(110924),
   f = n(833664),
-  p = n(579630),
-  _ = n(100527),
+  _ = n(579630),
+  p = n(100527),
   h = n(906732),
-  m = n(750881),
-  g = n(194082),
+  g = n(750881),
+  m = n(194082),
   E = n(318374),
   v = n(449605),
   b = n(102172),
@@ -65,14 +65,14 @@ function z(e) {
   }, {
     enabled: $,
     analyticsEligible: ee
-  } = (0, m.R4)("user-profile-stream-activity-card-web"), et = (0, s.e7)([T.Z], () => T.Z.getGuild(null == o ? void 0 : o.guildId)), en = (0, s.e7)([I.Z], () => I.Z.getChannel(null == o ? void 0 : o.channelId)), er = (0, s.Wu)([R.ZP], () => null != en ? R.ZP.getVoiceStatesForChannel(en).map(e => {
+  } = (0, g.R4)("user-profile-stream-activity-card-web"), et = (0, s.e7)([T.Z], () => T.Z.getGuild(null == o ? void 0 : o.guildId)), en = (0, s.e7)([I.Z], () => I.Z.getChannel(null == o ? void 0 : o.channelId)), er = (0, s.Wu)([R.ZP], () => null != en ? R.ZP.getVoiceStatesForChannel(en).map(e => {
     let {
       user: t
     } = e;
     return t
-  }) : []), ei = (0, s.e7)([A.Z], () => A.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, p.Z)(e))), {
+  }) : []), ei = (0, s.e7)([A.Z], () => A.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
     analyticsLocations: eo
-  } = (0, h.ZP)(_.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ea = (0, D.Z)({
+  } = (0, h.ZP)(p.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ea = (0, D.Z)({
     display: "live",
     voiceChannelId: null == en ? void 0 : en.id,
     user: t,
@@ -84,7 +84,7 @@ function z(e) {
   }), {
     previewUrl: el,
     isLoading: ec
-  } = (0, v.Z)(null == o ? void 0 : o.guildId, null == o ? void 0 : o.channelId, null == o ? void 0 : o.ownerId), [eu, ed] = (0, b.wq)(en), ef = (0, s.e7)([N.Z], () => null != en && N.Z.canBasicChannel(F.S7T.CONNECT, en)), ep = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
+  } = (0, v.Z)(null == o ? void 0 : o.guildId, null == o ? void 0 : o.channelId, null == o ? void 0 : o.ownerId), [eu, ed] = (0, b.wq)(en), ef = (0, s.e7)([N.Z], () => null != en && N.Z.canBasicChannel(F.S7T.CONNECT, en)), e_ = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
   i.useEffect(() => {
     if (ee) {
       var e;
@@ -92,15 +92,15 @@ function z(e) {
         activity_user_id: t.id,
         discoverable: null === (e = o.discoverable) || void 0 === e || e,
         surface: "user-profile-stream-activity-card",
-        relationship_type: ep,
-        treatment: $ && !1 === o.discoverable ? m.h9.HIDE : m.h9.SHOW
+        relationship_type: e_,
+        treatment: $ && !1 === o.discoverable ? g.h9.HIDE : g.h9.SHOW
       })
     }
-  }, [t, ep, $, ee, o]);
-  let e_ = (0, d.Z)(ec ? null : el),
-    eh = ec || null == el ? e_ : el;
+  }, [t, e_, $, ee, o]);
+  let ep = (0, d.Z)(ec ? null : el),
+    eh = ec || null == el ? ep : el;
   if (null == et || null == en || $ && !1 === o.discoverable) return null;
-  let em = () => {
+  let eg = () => {
       let e = a()(W.preview, J),
         t = e => {
           e.stopPropagation(), ea({
@@ -152,7 +152,7 @@ function z(e) {
         })]
       })
     },
-    eg = () => {
+    em = () => {
       if (Q !== V.y0.FULL_SIZE) return null;
       let e = e => {
           e.stopPropagation(), null == ea || ea({
@@ -232,8 +232,8 @@ function z(e) {
         text: null != ei ? Z.NW.formatToPlainString(Z.t["4CQq9f"], {
           name: ei.name
         }) : Z.NW.string(Z.t["Jpkr/v"]),
-        tags: (0, r.jsx)(g.ZP, {
-          size: g.OH.SMALL
+        tags: (0, r.jsx)(m.ZP, {
+          size: m.OH.SMALL
         }),
         contextMenu: (0, r.jsx)(B.Z, {
           display: "live",
@@ -244,7 +244,7 @@ function z(e) {
         className: H.body,
         children: [(0, r.jsxs)("div", {
           className: a()(H.content, J),
-          children: [em(), eg(), Q === V.y0.FULL_SIZE && ev()]
+          children: [eg(), em(), Q === V.y0.FULL_SIZE && ev()]
         }), eE()]
       }), Q !== V.y0.FULL_SIZE && ev()]
     })

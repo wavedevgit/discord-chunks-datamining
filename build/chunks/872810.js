@@ -24,11 +24,11 @@ var r = n(512722),
   u = n(525925),
   d = n(522474),
   f = n(543882),
-  p = n(199902),
-  _ = n(314897),
+  _ = n(199902),
+  p = n(314897),
   h = n(592125),
-  m = n(430824),
-  g = n(944486),
+  g = n(430824),
+  m = n(944486),
   E = n(979651),
   v = n(934415),
   b = n(70956),
@@ -84,7 +84,7 @@ function P(e, t) {
 
 function D(e, t) {
   let n = h.Z.getChannel(t);
-  return i()(null != n, "Cannot join a null voice channel"), !E.Z.isInChannel(t) && (0, v.rY)(n, E.Z, m.Z)
+  return i()(null != n, "Cannot join a null voice channel"), !E.Z.isInChannel(t) && (0, v.rY)(n, E.Z, g.Z)
 }
 
 function w(e, t) {
@@ -95,11 +95,11 @@ function w(e, t) {
   } = e;
   if (null != n && D(n, r)) return;
   let i = (0, c.V9)(e),
-    o = (null == t ? void 0 : t.forceMultiple) || p.Z.getAllActiveStreamsForChannel(r).filter(e => {
+    o = (null == t ? void 0 : t.forceMultiple) || _.Z.getAllActiveStreamsForChannel(r).filter(e => {
       let {
         ownerId: t
       } = e;
-      return t !== _.default.getId()
+      return t !== p.default.getId()
     }).length >= C;
   s.Z.dispatch({
     type: "STREAM_WATCH",
@@ -124,7 +124,7 @@ function x(e, t) {
   if (null != n && D(n, r)) return;
   w(e, t);
   let i = d.Z.getWindowOpen(I.KJ3.CHANNEL_CALL_POPOUT),
-    o = g.Z.getVoiceChannelId();
+    o = m.Z.getVoiceChannelId();
   (!i || o !== r) && (0, u.Z)(e)
 }
 
@@ -212,6 +212,6 @@ function B(e, t) {
 
 function V() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
-    t = p.Z.getCurrentUserActiveStream();
+    t = _.Z.getCurrentUserActiveStream();
   null != t && M((0, c.V9)(t), e)
 }

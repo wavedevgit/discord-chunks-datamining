@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Dd: () => h,
-  Sw: () => m,
-  To: () => g
+  Sw: () => g,
+  To: () => m
 });
 var r = n(200651);
 n(192379);
@@ -37,9 +37,9 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -47,7 +47,7 @@ function p(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -55,18 +55,18 @@ function _(e, t) {
   return i
 }
 let h = a.Z.Types,
-  m = {
+  g = {
     LEFT: "left",
     RIGHT: "right"
   };
 
-function g(e) {
+function m(e) {
   let t, n, {
       type: i = a.Z.Types.DANGER,
       imageData: d,
-      button: _,
+      button: p,
       className: h,
-      iconClassName: g,
+      iconClassName: m,
       title: E,
       body: v,
       style: b,
@@ -76,16 +76,16 @@ function g(e) {
   if (null != d) {
     let {
       position: e
-    } = d, n = p(d, ["position"]);
+    } = d, n = _(d, ["position"]);
     t = (0, r.jsx)(s.Z.Child, {
       grow: 0,
       shrink: 0,
       children: (0, r.jsx)("img", f({
         alt: "",
-        className: o()(u.icon, g)
+        className: o()(u.icon, m)
       }, n))
-    }), e === m.RIGHT && (O = s.Z.Direction.HORIZONTAL_REVERSE)
-  } else null != _ && (n = _);
+    }), e === g.RIGHT && (O = s.Z.Direction.HORIZONTAL_REVERSE)
+  } else null != p && (n = p);
   let S = !0;
   return i === a.Z.Types.PRIMARY && (S = !1), (0, r.jsx)(a.Z, {
     className: o()(u.formNotice, h),
@@ -112,4 +112,4 @@ function g(e) {
     })
   })
 }
-g.Types = a.Z.Types
+m.Types = a.Z.Types

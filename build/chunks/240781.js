@@ -14,11 +14,11 @@ var i = n(120356),
   u = n(449217),
   d = n(905357),
   f = n(95422),
-  p = n(222062),
-  _ = n(706454),
+  _ = n(222062),
+  p = n(706454),
   h = n(158776),
-  m = n(55935),
-  g = n(74538),
+  g = n(55935),
+  m = n(74538),
   E = n(204418),
   v = n(388032),
   b = n(387868);
@@ -38,7 +38,7 @@ let y = [{
   O = e => {
     let {
       purchase: t
-    } = e, n = (0, s.e7)([_.default], () => _.default.locale), i = (0, c.qS)(t), o = null != t.expiresAt ? (0, m.TD)(Date.now(), t.expiresAt) : null, a = (0, f.a)(t);
+    } = e, n = (0, s.e7)([p.default], () => p.default.locale), i = (0, c.qS)(t), o = null != t.expiresAt ? (0, g.TD)(Date.now(), t.expiresAt) : null, a = (0, f.a)(t);
     return (0, r.jsxs)("div", {
       className: b.purchaseInfo,
       children: [(0, r.jsx)(l.Text, {
@@ -86,11 +86,11 @@ let y = [{
       guildId: n,
       avatarDecorationOverride: i,
       className: f
-    } = e, _ = (0, s.e7)([h.Z], () => h.Z.getStatus(t.id)), {
-      product: m,
+    } = e, p = (0, s.e7)([h.Z], () => h.Z.getStatus(t.id)), {
+      product: g,
       purchase: S
-    } = (0, u.Z)(null == i ? void 0 : i.skuId), I = g.ZP.canUseCollectibles(t), T = (0, c.qS)(S), N = (0, c.G1)(m), A = !I && T, C = (0, p.M)(!N || I), R = (0, d.k)(m);
-    return null != m && (null == S || A) ? (0, r.jsxs)("div", {
+    } = (0, u.Z)(null == i ? void 0 : i.skuId), I = m.ZP.canUseCollectibles(t), T = (0, c.qS)(S), N = (0, c.G1)(g), A = !I && T, C = (0, _.M)(!N || I), R = (0, d.k)(g);
+    return null != g && (null == S || A) ? (0, r.jsxs)("div", {
       className: o()(b.modalPreview, b.shopPreviewContainer, f),
       children: [(0, r.jsx)("div", {
         className: b.shopPreviewBanner,
@@ -134,7 +134,7 @@ let y = [{
                 guildId: n,
                 avatarSize: o,
                 avatarDecorationOverride: i,
-                status: a ? _ : void 0,
+                status: a ? p : void 0,
                 "aria-hidden": !0
               })
             }, "".concat(o).concat(a))

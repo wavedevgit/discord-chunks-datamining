@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   CO: () => f,
-  Rz: () => _,
-  S1: () => p,
+  Rz: () => p,
+  S1: () => _,
   T_: () => s,
   al: () => l,
   dx: () => u,
@@ -59,7 +59,7 @@ function f(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let t = (0, a.ZY)(e),
     n = e.document;
   i.Z.dispatch({
@@ -73,7 +73,7 @@ function p(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   i.Z.dispatch({
     type: "WINDOW_UNLOAD",
     windowId: (0, a.ZY)(e)

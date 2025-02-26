@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AT: () => m,
-  g5: () => p,
+  AT: () => g,
+  g5: () => _,
   gc: () => h
 }), n(47120), n(411104);
 var r = n(123763),
@@ -42,37 +42,37 @@ let d = {
     _version: void 0
   },
   f = null;
-class p extends s.y {
+class _ extends s.y {
   getClass() {
     return this.constructor
   }
   static clearAll(e) {
-    return f = e, null == p._clearAllPromise && (p._clearAllPromise = new Promise(t => {
+    return f = e, null == _._clearAllPromise && (_._clearAllPromise = new Promise(t => {
       requestIdleCallback(() => {
-        p.clearPersistQueue(e), p.allPersistKeys.forEach(t => {
-          p.shouldClear(e, t) && a.K.remove(t)
+        _.clearPersistQueue(e), _.allPersistKeys.forEach(t => {
+          _.shouldClear(e, t) && a.K.remove(t)
         }), s.y.getAll().forEach(t => {
-          t instanceof p && p.shouldClear(e, t.getClass().persistKey) && (t._isInitialized = !1, t.initializeIfNeeded())
-        }), p._clearAllPromise = null, t()
+          t instanceof _ && _.shouldClear(e, t.getClass().persistKey) && (t._isInitialized = !1, t.initializeIfNeeded())
+        }), _._clearAllPromise = null, t()
       }, {
         timeout: 500
       })
-    })), p._clearAllPromise
+    })), _._clearAllPromise
   }
   static shouldClear(e, t) {
     var n;
-    return (null === (n = e.omit) || void 0 === n || !n.includes(t)) && ("all" === e.type || "user-data-only" === e.type && !p.userAgnosticPersistKeys.has(t))
+    return (null === (n = e.omit) || void 0 === n || !n.includes(t)) && ("all" === e.type || "user-data-only" === e.type && !_.userAgnosticPersistKeys.has(t))
   }
   static clearPersistQueue(e) {
-    p._writeResolvers.forEach((t, n) => {
+    _._writeResolvers.forEach((t, n) => {
       let [r, i] = t;
-      p.shouldClear(e, n) && (p._writePromises.delete(n), p._writeResolvers.delete(n), cancelIdleCallback(i), r(!1))
-    }), p._writePromises.clear(), p._writeResolvers.clear()
+      _.shouldClear(e, n) && (_._writePromises.delete(n), _._writeResolvers.delete(n), cancelIdleCallback(i), r(!1))
+    }), _._writePromises.clear(), _._writeResolvers.clear()
   }
   static getAllStates() {
-    return Promise.all(Array.from(p._writePromises.values())).then(() => {
+    return Promise.all(Array.from(_._writePromises.values())).then(() => {
       let e = {};
-      return p.allPersistKeys.forEach(t => {
+      return _.allPersistKeys.forEach(t => {
         var n;
         e[t] = (null !== (n = a.K.get(t)) && void 0 !== n ? n : d)._state
       }), e
@@ -80,39 +80,39 @@ class p extends s.y {
   }
   static initializeAll(e) {
     s.y.getAll().forEach(t => {
-      if (t instanceof p) {
+      if (t instanceof _) {
         let n = t.getClass().persistKey;
         e.hasOwnProperty(n) && t.initializeFromState(e[n])
       }
     })
   }
   initializeFromState(e) {
-    this.initialize(e) && this.asyncPersist(), this._isInitialized ? this.emitChange() : (p.allPersistKeys.add(this.getClass().persistKey), this._isInitialized = !0)
+    this.initialize(e) && this.asyncPersist(), this._isInitialized ? this.emitChange() : (_.allPersistKeys.add(this.getClass().persistKey), this._isInitialized = !0)
   }
   static destroy() {
-    f = null, s.y.destroy(), p.clearPersistQueue({
+    f = null, s.y.destroy(), _.clearPersistQueue({
       type: "all"
-    }), p.allPersistKeys.clear(), p.userAgnosticPersistKeys.clear()
+    }), _.allPersistKeys.clear(), _.userAgnosticPersistKeys.clear()
   }
   initializeIfNeeded() {
     if (!this._isInitialized) {
       let e = Date.now();
-      p.allPersistKeys.add(this.getClass().persistKey);
+      _.allPersistKeys.add(this.getClass().persistKey);
       let {
         state: t,
         requiresPersist: n
-      } = p.migrateAndReadStoreState(this.getClass().persistKey, this.getClass().migrations);
+      } = _.migrateAndReadStoreState(this.getClass().persistKey, this.getClass().migrations);
       this.initialize(t) && this.asyncPersist(), n && this.asyncPersist(), this._isInitialized = !0;
       let r = Date.now() - e;
       r > 5 && o.Z.mark("\uD83E\uDDA5", this.getName() + ".initialize()", r)
     }
   }
   static migrateAndReadStoreState(e, t) {
-    if (null != f && p.shouldClear(f, e)) return a.K.remove(e), {
+    if (null != f && _.shouldClear(f, e)) return a.K.remove(e), {
       state: void 0,
       requiresPersist: !1
     };
-    let n = null != p._clearAllPromise ? null : a.K.get(e),
+    let n = null != _._clearAllPromise ? null : a.K.get(e),
       r = null != n ? n : d,
       {
         _state: i,
@@ -143,14 +143,14 @@ class p extends s.y {
       disableWrite: t,
       throttleDelay: n
     } = this.getClass();
-    if (p.disableWrites || t) return Promise.resolve(!1);
-    let r = p._writePromises.get(e);
+    if (_.disableWrites || t) return Promise.resolve(!1);
+    let r = _._writePromises.get(e);
     return null != r || (r = new Promise(t => {
       let r = n > 0 ? () => this.throttledCallback(t) : () => this.callback(t);
-      p._writeResolvers.set(e, [t, requestIdleCallback(r, {
+      _._writeResolvers.set(e, [t, requestIdleCallback(r, {
         timeout: 500
       })])
-    }), p._writePromises.set(e, r)), r
+    }), _._writePromises.set(e, r)), r
   }
   persist() {
     let {
@@ -172,7 +172,7 @@ class p extends s.y {
         let {
           persistKey: t
         } = this.getClass();
-        this.persist(), p._writePromises.delete(t), p._writeResolvers.delete(t), e()
+        this.persist(), _._writePromises.delete(t), _._writeResolvers.delete(t), e()
       }), l(this, "throttledCallback", i()(e => this.callback(e), this.getClass().throttleDelay, {
         leading: !1
       })), "string" != typeof this.getClass().persistKey) throw Error("".concat(this.getClass().name, " initialized without a `persistKey`. Add one so we know where to save your stuff!"));
@@ -181,17 +181,17 @@ class p extends s.y {
     this.addChangeListener(() => this.asyncPersist())
   }
 }
-l(p, "allPersistKeys", new Set), l(p, "userAgnosticPersistKeys", new Set), l(p, "_writePromises", new Map), l(p, "_writeResolvers", new Map), l(p, "_clearAllPromise", void 0), l(p, "disableWrites", !1), l(p, "persistKey", void 0), l(p, "disableWrite", !1), l(p, "throttleDelay", 0), l(p, "migrations", void 0);
-class _ extends p {
+l(_, "allPersistKeys", new Set), l(_, "userAgnosticPersistKeys", new Set), l(_, "_writePromises", new Map), l(_, "_writeResolvers", new Map), l(_, "_clearAllPromise", void 0), l(_, "disableWrites", !1), l(_, "persistKey", void 0), l(_, "disableWrite", !1), l(_, "throttleDelay", 0), l(_, "migrations", void 0);
+class p extends _ {
   initializeFromState(e) {
-    return p.userAgnosticPersistKeys.add(this.getClass().persistKey), super.initializeFromState(e)
+    return _.userAgnosticPersistKeys.add(this.getClass().persistKey), super.initializeFromState(e)
   }
   initializeIfNeeded() {
-    return p.userAgnosticPersistKeys.add(this.getClass().persistKey), super.initializeIfNeeded()
+    return _.userAgnosticPersistKeys.add(this.getClass().persistKey), super.initializeIfNeeded()
   }
   getState() {
     return this.getUserAgnosticState()
   }
 }
-class h extends _ {}
-class m extends _ {}
+class h extends p {}
+class g extends p {}

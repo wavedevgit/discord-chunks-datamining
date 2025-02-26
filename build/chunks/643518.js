@@ -1,6 +1,6 @@
-/** Chunk was on 73049 **/
+/** Chunk was on 2998 **/
 t.d(n, {
-  Z: () => v
+  Z: () => g
 }), t(653041);
 var r = t(442837),
   o = t(468363),
@@ -13,22 +13,22 @@ var r = t(442837),
   u = t(326094),
   f = t(708108),
   p = t(146078),
-  m = t(228168),
-  b = t(981631),
-  g = t(388032);
+  b = t(228168),
+  m = t(981631),
+  v = t(388032);
 
-function v(e) {
+function g(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: v,
+    guildId: g,
     initialSubsection: y
   } = e, {
-    voiceActivityStatusEnabled: h
+    voiceActivityStatusEnabled: I
   } = (0, o.U)({
     location: "useUserProfileModalTabBarItems"
   }), {
-    voiceActivityCardEnabled: I
+    voiceActivityCardEnabled: h
   } = (0, s.o)({
     location: "useUserProfileModalTabBarItems"
   }), {
@@ -41,35 +41,35 @@ function v(e) {
     voiceActivity: N
   } = (0, d.Z)({
     userId: n.id,
-    guildId: v,
+    guildId: g,
     surface: "use-user-profile-modal-tab-bar-items"
   }), P = n.id === (null == t ? void 0 : t.id), E = (0, r.e7)([l.Z, i.Z], () => {
     let e = P ? l.Z.getStatus() : i.Z.getStatus(n.id);
-    return e === b.Skl.OFFLINE || e === b.Skl.INVISIBLE
+    return e === m.Skl.OFFLINE || e === m.Skl.INVISIBLE
   }), S = null != _ || j.length > 0, T = x.length > 0, {
     mutualFriends: C,
-    mutualGuilds: L
+    mutualGuilds: A
   } = (0, a.Z)(n, {
     fetch: n.id !== (null == t ? void 0 : t.id),
     type: "modal"
-  }), A = null == C ? void 0 : C.length, w = null == L ? void 0 : L.length, M = (0, u.Z)({
+  }), w = null == C ? void 0 : C.length, L = null == A ? void 0 : A.length, R = (0, u.Z)({
     user: n,
-    location: b.Sbl.PROFILE_MODAL_TABS
-  }), U = [{
-    section: m.oh.USER_INFO,
-    text: g.NW.string(g.t.jGoPJS)
+    location: m.Sbl.PROFILE_MODAL_TABS
+  }), M = [{
+    section: b.oh.USER_INFO,
+    text: v.NW.string(v.t.jGoPJS)
   }];
-  return !E && (S || (h || I) && null == _ && null == N && null != Z) ? U.push({
-    section: m.oh.ACTIVITY,
-    text: g.NW.string(g.t.chq59f)
-  }) : (T || null == O && y === m.Tb.RECENT_ACTIVITY) && U.push({
-    section: m.oh.ACTIVITY,
-    text: g.NW.string(g.t.chq59f)
-  }), !P && M && (U.push({
-    section: m.oh.MUTUAL_FRIENDS,
-    text: (0, f.Z)(A)
-  }), U.push({
-    section: m.oh.MUTUAL_GUILDS,
-    text: (0, p.Z)(w)
-  })), U
+  return !E && (S || (I || h) && null == _ && null == N && null != Z) ? M.push({
+    section: b.oh.ACTIVITY,
+    text: v.NW.string(v.t.chq59f)
+  }) : (T || null == O && y === b.Tb.RECENT_ACTIVITY) && M.push({
+    section: b.oh.ACTIVITY,
+    text: v.NW.string(v.t.chq59f)
+  }), !P && R && (M.push({
+    section: b.oh.MUTUAL_FRIENDS,
+    text: (0, f.Z)(w)
+  }), M.push({
+    section: b.oh.MUTUAL_GUILDS,
+    text: (0, p.Z)(L)
+  })), M
 }

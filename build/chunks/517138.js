@@ -90,7 +90,7 @@ function t(e) {
     },
     d = "[1-9](_?[0-9])*|0",
     f = "[0-9](_?[0-9])*",
-    p = {
+    _ = {
       className: "number",
       relevance: 0,
       variants: [{
@@ -107,7 +107,7 @@ function t(e) {
         begin: "\\b0(_?[0-7])+r?i?\\b"
       }]
     },
-    _ = {
+    p = {
       variants: [{
         match: /\(\)/
       }, {
@@ -126,7 +126,7 @@ function t(e) {
       },
       keywords: o
     },
-    m = [u, {
+    g = [u, {
       variants: [{
         match: [/class\s+/, i, /\s+<\s+/, i]
       }, {
@@ -157,7 +157,7 @@ function t(e) {
         1: "keyword",
         3: "title.function"
       },
-      contains: [_]
+      contains: [p]
     }, {
       begin: e.IDENT_RE + "::"
     }, {
@@ -171,7 +171,7 @@ function t(e) {
         begin: n
       }],
       relevance: 0
-    }, p, {
+    }, _, {
       className: "variable",
       begin: "(\\$\\W)|((\\$|@@?)(\\w+))(?=[^@$?])(?![A-Za-z])(?![@$?'])"
     }, {
@@ -208,12 +208,12 @@ function t(e) {
       }].concat(s, l),
       relevance: 0
     }].concat(s, l);
-  c.contains = m, _.contains = m;
-  let g = [{
+  c.contains = g, p.contains = g;
+  let m = [{
     begin: /^\s*=>/,
     starts: {
       end: "$",
-      contains: m
+      contains: g
     }
   }, {
     className: "meta.prompt",
@@ -221,7 +221,7 @@ function t(e) {
     starts: {
       end: "$",
       keywords: o,
-      contains: m
+      contains: g
     }
   }];
   return l.unshift(s), {
@@ -231,7 +231,7 @@ function t(e) {
     illegal: /\/\*/,
     contains: [e.SHEBANG({
       binary: "ruby"
-    })].concat(g).concat(l).concat(m)
+    })].concat(m).concat(l).concat(g)
   }
 }
 e.exports = t

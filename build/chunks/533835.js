@@ -1,4 +1,4 @@
-/** Chunk was on 73049 **/
+/** Chunk was on 2998 **/
 t.d(n, {
   default: () => j
 }), t(47120);
@@ -13,10 +13,10 @@ var r = t(200651),
   u = t(699516),
   f = t(594174),
   p = t(971393),
-  m = t(787018),
-  b = t(752342),
-  g = t(886794),
-  v = t(910364);
+  b = t(787018),
+  m = t(752342),
+  v = t(886794),
+  g = t(910364);
 
 function y(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -37,7 +37,7 @@ function y(e) {
   return e
 }
 
-function h(e, n) {
+function I(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function h(e, n) {
     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
   }), e
 }
-let I = [c.Z.BITE_SIZE_PROFILE_POPOUT, c.Z.PROFILE_PANEL];
+let h = [c.Z.BITE_SIZE_PROFILE_POPOUT, c.Z.PROFILE_PANEL];
 
 function j(e) {
   var {
@@ -85,26 +85,26 @@ function j(e) {
   o.useEffect(() => {
     O(j || c)
   }, [j, c]);
-  let N = !I.some(e => {
+  let N = !h.some(e => {
       var n;
       return (null !== (n = t.sourceAnalyticsLocations) && void 0 !== n ? n : []).includes(e)
     }),
     P = d.Rt.useSetting();
-  return _ && Z && N && !x ? (0, r.jsx)(m.Z, y({
+  return _ && Z && N && !x ? (0, r.jsx)(b.Z, y({
     user: n,
     currentUser: i,
     onViewBlockedProfileClick: () => O(!1)
-  }, t)) : _ && N && x && !(j && P) ? (0, r.jsx)(m.W, y({
+  }, t)) : _ && N && x && !(j && P) ? (0, r.jsx)(b.W, y({
     user: n,
     currentUser: i,
     onViewBlockedProfileClick: () => O(!1)
-  }, t)) : n.isNonUserBot() ? (0, r.jsx)(g.Z, h(y({}, t), {
+  }, t)) : n.isNonUserBot() ? (0, r.jsx)(v.Z, I(y({}, t), {
     user: n,
     currentUser: i
-  })) : n.bot ? (0, r.jsx)(b.Z, h(y({}, t), {
+  })) : n.bot ? (0, r.jsx)(m.Z, I(y({}, t), {
     user: n,
     currentUser: i
-  })) : (0, r.jsx)(v.Z, h(y({}, t), {
+  })) : (0, r.jsx)(g.Z, I(y({}, t), {
     user: n,
     currentUser: i
   }))

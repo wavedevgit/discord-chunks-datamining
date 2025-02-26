@@ -62,6 +62,6 @@ function l(e) {
   if (null == d) return !1;
   let f = d.getGuildId();
   if (null == f || null == o.Z.getGuild(f)) return !1;
-  let p = i.ZP.getMember(f, t);
-  return null != p && l.some(e => p.roles.includes(e))
+  let _ = i.ZP.getMember(f, t);
+  return null != _ && l.some(e => _.roles.includes(e))
 }

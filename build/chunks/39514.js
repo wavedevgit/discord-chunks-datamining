@@ -15,8 +15,8 @@ var r = n(200651),
   p = n(388905),
   g = n(362762),
   m = n(108427),
-  _ = n(314897),
-  f = n(896797),
+  f = n(314897),
+  _ = n(896797),
   b = n(82142),
   N = n(283595),
   x = n(55563),
@@ -279,7 +279,7 @@ class P extends i.PureComponent {
     })
   }
 }
-let Z = l.ZP.connectStores([b.Z, N.Z, _.default, x.Z, f.Z, g.Z], e => {
+let Z = l.ZP.connectStores([b.Z, N.Z, f.default, x.Z, _.Z, g.Z], e => {
   let t = e.match.params.giftCode,
     n = b.Z.get(t),
     r = null != n ? x.Z.get(n.skuId) : null;
@@ -287,8 +287,8 @@ let Z = l.ZP.connectStores([b.Z, N.Z, _.default, x.Z, f.Z, g.Z], e => {
     giftCode: n,
     sku: r,
     libraryApplication: null != r && (null == n ? void 0 : n.entitlementBranches) != null ? v.z2(n.entitlementBranches, r, N.Z) : null,
-    authenticated: _.default.isAuthenticated(),
-    defaultRoute: f.Z.defaultRoute,
+    authenticated: f.default.isAuthenticated(),
+    defaultRoute: _.Z.defaultRoute,
     isResolved: b.Z.getIsResolved(t),
     isAccepting: b.Z.getIsAccepting(t),
     libraryApplicationsFetched: N.Z.fetched,

@@ -20,11 +20,11 @@ var r = n(200651),
   u = n(594190),
   d = n(98278),
   f = n(594174),
-  p = n(78839),
-  _ = n(617136),
+  _ = n(78839),
+  p = n(617136),
   h = n(915750),
-  m = n(272008),
-  g = n(113434),
+  g = n(272008),
+  m = n(113434),
   E = n(569984),
   v = n(497505),
   b = n(918701),
@@ -86,12 +86,12 @@ function x(e) {
   } = e, s = (0, a.e7)([f.default], () => {
     var e;
     return null === (e = f.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasVerifiedEmailOrPhone()
-  }), l = (0, _.O5)();
+  }), l = (0, p.O5)();
   return i.useCallback(() => {
     null != t && (l({
       questId: t.id,
       questContent: n,
-      questContentCTA: _.jZ.CLAIM_REWARD,
+      questContentCTA: p.jZ.CLAIM_REWARD,
       questContentPosition: r,
       questContentRowIndex: o
     }), s ? (0, b.Bg)(t.config) ? (0, T.openQuestsNitroRewardModal)(t, n) : (0, b.Xv)(t.config) ? (0, S.m)(t, n) : (0, b.vQ)(t.config) ? (0, T.openQuestInGameRewardModal)(t, n) : (0, b.xN)(t.config) ? (0, T.openQuestOrbsRewardModal)(t, n) : (0, T.openQuestsRewardCodeModal)({
@@ -145,13 +145,13 @@ let k = e => {
     let {
       message: n,
       xboxURL: i
-    } = (0, g.KX)(), o = (0, _.O5)(), a = n => {
+    } = (0, m.KX)(), o = (0, p.O5)(), a = n => {
       var r;
       let a = n.target;
       (null == a ? void 0 : null === (r = a.tagName) || void 0 === r ? void 0 : r.toLowerCase()) === "a" && o({
         questId: e,
         questContent: t,
-        questContentCTA: a.getAttribute("href") === i ? _.jZ.HOW_TO_HELP_ARTICLE_XBOX : _.jZ.HOW_TO_HELP_ARTICLE_PLAYSTATION
+        questContentCTA: a.getAttribute("href") === i ? p.jZ.HOW_TO_HELP_ARTICLE_XBOX : p.jZ.HOW_TO_HELP_ARTICLE_PLAYSTATION
       })
     };
     return (0, r.jsx)("span", {
@@ -169,16 +169,16 @@ function U(e) {
     location: s,
     questContentPosition: u,
     questContentRowIndex: f,
-    inGiftInventory: p,
+    inGiftInventory: _,
     isVideoQuest: E
   } = e, v = x({
     quest: n,
     location: s,
     questContentPosition: u,
     questContentRowIndex: f
-  }), y = (0, g._s)({
+  }), y = (0, m._s)({
     quest: n
-  }), S = (0, g.Rf)(n), I = (0, g.GU)(n), P = I.length > 0 ? I[0] : null, w = i.useCallback(() => {
+  }), S = (0, m.Rf)(n), I = (0, m.GU)(n), P = I.length > 0 ? I[0] : null, w = i.useCallback(() => {
     (0, d.$)()
   }, []), M = i.useCallback(() => {
     (0, c.mK)({
@@ -195,13 +195,13 @@ function U(e) {
       onClick: null
     };
     switch (o) {
-      case g.OH.UNACCEPTED:
+      case m.OH.UNACCEPTED:
         let e = R.NW.string(R.t.kUQLMD);
         E && j ? e = R.NW.string(R.t.CwGuEx) : E && (e = R.NW.string(R.t.umdNio));
-        let t = E ? _.jZ.START_QUEST : _.jZ.ACCEPT_QUEST;
+        let t = E ? p.jZ.START_QUEST : p.jZ.ACCEPT_QUEST;
         return {
           text: e, tooltipText: e, onClick: () => {
-            (0, m.AH)(n.id, {
+            (0, g.AH)(n.id, {
               questContent: s,
               questContentCTA: t,
               questContentPosition: u,
@@ -209,16 +209,16 @@ function U(e) {
             }), E && (0, T.openVideoQuestModal)(n)
           }
         };
-      case g.OH.ACCEPTED:
-      case g.OH.IN_PROGRESS:
-        if (y && p) return {
+      case m.OH.ACCEPTED:
+      case m.OH.IN_PROGRESS:
+        if (y && _) return {
           text: R.NW.string(R.t.Cfye4u),
           tooltipText: null,
           onClick: () => (0, b.gI)({
             quest: n
           }, {
             content: s,
-            ctaContent: _.jZ.CONNECT_CONSOLE,
+            ctaContent: p.jZ.CONNECT_CONSOLE,
             position: u,
             rowIndex: f,
             impressionId: k
@@ -232,7 +232,7 @@ function U(e) {
         return {
           text: R.NW.string(R.t.cfY4PD), tooltipText: R.NW.string(R.t.hsbwjo), onClick: null
         };
-      case g.OH.COMPLETED:
+      case m.OH.COMPLETED:
         if ((0, b.xN)(n.config)) {
           let e = (0, b.LM)(n.config);
           return {
@@ -246,7 +246,7 @@ function U(e) {
         return {
           text: R.NW.string(R.t.cfY4PD), tooltipText: null, onClick: v
         };
-      case g.OH.CLAIMED:
+      case m.OH.CLAIMED:
         let i = {
           tooltipText: null,
           onClick: v
@@ -271,7 +271,7 @@ function U(e) {
           text: R.NW.string(R.t.bAGFz8)
         })
     }
-  }, [P, o, E, y, p, v, a, n, s, u, f, k, S, w, j, M])
+  }, [P, o, E, y, _, v, a, n, s, u, f, k, S, w, j, M])
 }
 
 function G() {
@@ -288,12 +288,12 @@ function B(e) {
     quest: r
   } = e, i = (0, y.Zy)({
     location: n
-  }), o = (0, g.tP)(r), {
+  }), o = (0, m.tP)(r), {
     premiumSubscription: s,
     hasFetchedSubscriptions: l
-  } = (0, a.cj)([p.ZP], () => ({
-    premiumSubscription: p.ZP.getPremiumSubscription(),
-    hasFetchedSubscriptions: p.ZP.hasFetchedSubscriptions()
+  } = (0, a.cj)([_.ZP], () => ({
+    premiumSubscription: _.ZP.getPremiumSubscription(),
+    hasFetchedSubscriptions: _.ZP.hasFetchedSubscriptions()
   })), c = (0, a.e7)([E.Z], () => null != E.Z.questDeliveryOverride);
   if (null == r || (0, b.Bg)(r.config) && (!l || (null == s ? void 0 : s.isPurchasedExternally))) return !1;
   let u = (null === (t = r.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null,

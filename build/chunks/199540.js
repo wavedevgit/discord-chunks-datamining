@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(430824),
   m = n(624138),
   b = n(674552),
-  v = n(981631),
-  y = n(388032),
+  y = n(981631),
+  v = n(388032),
   O = n(602079);
 let j = (0, m.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
   _ = (0, m.Mg)(u.Z.FOLDER_ITEM_GUILD_ICON_SIZE),
@@ -58,13 +58,13 @@ function P(e) {
       color: p,
       children: f
     } = l,
-    g = null != p ? p : v.Wyy,
-    m = g === v.Wyy,
+    g = null != p ? p : y.Wyy,
+    m = g === y.Wyy,
     b = f.map(e => e.id),
-    [y, C] = i.useState(!1),
+    [v, C] = i.useState(!1),
     [P, N] = i.useState(c),
     S = u ? c ? 22 : -11 : c ? 0 : -_,
-    I = (0, d.q_F)({
+    Z = (0, d.q_F)({
       transform: "translate3d(0, ".concat(S, "px, 0)"),
       config: {
         duration: j
@@ -76,9 +76,9 @@ function P(e) {
         C(!1), N(c)
       }
     }, "animate-always"),
-    Z = y ? I : void 0;
-  (y || P) && (t = (0, r.jsx)(a.animated.div, {
-    style: Z,
+    I = v ? Z : void 0;
+  (v || P) && (t = (0, r.jsx)(a.animated.div, {
+    style: I,
     className: O.expandedFolderIconWrapper,
     children: (0, r.jsx)(d.ROc, {
       size: u ? "sm" : "md",
@@ -87,8 +87,8 @@ function P(e) {
         color: (0, s.Rf)(g)
       }
     })
-  })), (y || !P) && (n = (0, r.jsx)(a.animated.div, {
-    style: Z,
+  })), (v || !P) && (n = (0, r.jsx)(a.animated.div, {
+    style: I,
     className: O.closedFolderIconWrapper,
     children: b.slice(0, 4).map((e, t) => (0, r.jsx)(x, {
       index: t,
@@ -118,7 +118,7 @@ function N(e) {
     mentionCount: f = 0,
     isMentionLowImportance: g,
     tooltipName: m,
-    folderGroupId: v,
+    folderGroupId: y,
     folderIconContentClassName: j,
     folderIconContent: _,
     onClick: C,
@@ -126,9 +126,9 @@ function N(e) {
     onHoverChange: N,
     onKeyDown: S,
     treeItemProps: {
-      onFocus: I
+      onFocus: Z
     }
-  } = e, Z = function(e, t) {
+  } = e, I = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -185,17 +185,17 @@ function N(e) {
       onMouseEnter: T,
       onMouseLeave: D,
       onKeyDown: S,
-      onFocus: I,
-      "aria-label": y.NW.formatToPlainString(y.t["90/DwM"], {
+      onFocus: Z,
+      "aria-label": v.NW.formatToPlainString(v.t["90/DwM"], {
         folderName: m,
         mentions: f
       }),
       "aria-expanded": s,
-      "aria-owns": v,
+      "aria-owns": y,
       focusProps: {
         enabled: !1
       }
-    }, Z), n = n = {
+    }, I), n = n = {
       role: "treeitem",
       children: null != _ ? (0, r.jsx)("div", {
         className: o()(O.expandedFolderIconWrapper, j),

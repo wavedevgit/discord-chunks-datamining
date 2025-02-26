@@ -1,4 +1,4 @@
-/** Chunk was on 73049 **/
+/** Chunk was on 2998 **/
 t.d(n, {
   Z: () => O
 });
@@ -14,13 +14,13 @@ var o = t(442837),
   u = t(308406),
   f = t(369566),
   p = t(29899),
-  m = t(678738),
-  b = t(151545),
-  g = t(744802),
-  v = t(493043),
+  b = t(678738),
+  m = t(151545),
+  v = t(744802),
+  g = t(493043),
   y = t(864141),
-  h = t(228168),
-  I = t(981631),
+  I = t(228168),
+  h = t(981631),
   j = t(388032),
   x = t(387706),
   _ = t(865152);
@@ -44,50 +44,50 @@ function O(e) {
   }), {
     live: T,
     recent: C,
-    stream: L
+    stream: A
   } = (0, f.Z)(n.id), {
-    voiceChannel: A,
-    voiceActivity: w
+    voiceChannel: w,
+    voiceActivity: L
   } = (0, p.Z)({
     userId: n.id,
     guildId: Z,
     surface: "user-profile-modal-activity"
-  }), M = (0, o.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), U = n.id === t.id, R = (0, o.e7)([a.Z, c.Z], () => {
-    let e = U ? a.Z.getStatus() : c.Z.getStatus(n.id);
+  }), R = (0, o.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), M = n.id === t.id, U = (0, o.e7)([a.Z, c.Z], () => {
+    let e = M ? a.Z.getStatus() : c.Z.getStatus(n.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), B = T.length > 0 || null != L, W = (E || S) && null == L && null == w && null != A, D = C.length > 0;
-  return !R && (B || W) || D || !M ? (0, r.jsxs)(i.zJl, {
+  }), B = T.length > 0 || null != A, D = (E || S) && null == A && null == L && null != w, W = C.length > 0;
+  return !U && (B || D) || W || !R ? (0, r.jsxs)(i.zJl, {
     className: x.scroller,
     fade: !0,
-    children: [!R && (B || W) ? (0, r.jsxs)(m.Z, {
-      children: [null != L && (0, r.jsx)(v.Z, {
+    children: [!U && (B || D) ? (0, r.jsxs)(b.Z, {
+      children: [null != A && (0, r.jsx)(g.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,
-        stream: L,
+        stream: A,
         onClose: P,
         profileGuildId: null == O ? void 0 : O.guildId
-      }), W && (0, r.jsx)(y.Z, {
+      }), D && (0, r.jsx)(y.Z, {
         user: n,
-        voiceChannel: A,
+        voiceChannel: w,
         onClose: P
-      }), T.map((e, o) => (0, r.jsx)(b.Z, {
+      }), T.map((e, o) => (0, r.jsx)(m.Z, {
         user: n,
         currentUser: t,
         activity: e,
         onClose: P,
         profileGuildId: null == O ? void 0 : O.guildId
       }, "live-".concat(o)))]
-    }) : null, D ? (0, r.jsx)(m.Z, {
+    }) : null, W ? (0, r.jsx)(b.Z, {
       heading: j.NW.string(j.t.M0zgnZ),
-      subheading: U ? j.NW.format(j.t["4bk9Ag"], {
+      subheading: M ? j.NW.format(j.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, r.jsx)(i.eee, {
-          href: d.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: d.Z.getArticleURL(h.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
       }) : void 0,
-      scrollIntoView: N === h.Tb.RECENT_ACTIVITY,
-      children: C.map(e => (0, r.jsx)(g.Z, {
+      scrollIntoView: N === I.Tb.RECENT_ACTIVITY,
+      children: C.map(e => (0, r.jsx)(v.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,

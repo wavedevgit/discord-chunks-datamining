@@ -11,12 +11,12 @@ var i, o, a = n(442837),
   u = n(570140),
   d = n(607070),
   f = n(47760),
-  p = n(540059),
-  _ = n(541049);
+  _ = n(540059),
+  p = n(541049);
 n(449934);
 var h = n(12647),
-  m = n(358085),
-  g = n(238514),
+  g = n(358085),
+  m = n(238514),
   E = n(740492),
   v = n(581883),
   b = n(874893),
@@ -61,7 +61,7 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = null !== (i = (0, _.Z)()) && void 0 !== i ? i : y.BRd.DARK,
+let A = null !== (i = (0, p.Z)()) && void 0 !== i ? i : y.BRd.DARK,
   C = null,
   R = null,
   P = !1;
@@ -70,12 +70,12 @@ function D() {
   var e, t;
   if (__OVERLAY__) return y.BRd.DARK;
   if (d.Z.syncForcedColors && "active" === d.Z.systemForcedColors && null != r) return r;
-  if (E.ZP.useSystemTheme === b.K.ON && null != r) return (0, p.O_)("ThemeStore") ? (0, c.wj)(r) ? null != C ? C : y.BRd.DARK : y.BRd.LIGHT : r;
-  let n = null === (e = g.Z.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme;
+  if (E.ZP.useSystemTheme === b.K.ON && null != r) return (0, _.O_)("ThemeStore") ? (0, c.wj)(r) ? null != C ? C : y.BRd.DARK : y.BRd.LIGHT : r;
+  let n = null === (e = m.Z.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme;
   if (null != n) return n;
   let i = null === (t = v.Z.settings.appearance) || void 0 === t ? void 0 : t.theme;
   if (null == i) return A;
-  if (!(0, p.O_)("ThemeStore")) return i === s.Q2.LIGHT ? y.BRd.LIGHT : y.BRd.DARK;
+  if (!(0, _.O_)("ThemeStore")) return i === s.Q2.LIGHT ? y.BRd.LIGHT : y.BRd.DARK;
   switch (i) {
     case s.Q2.DARK:
     case s.Q2.DARKER:
@@ -148,9 +148,9 @@ function F() {
 }
 
 function Z(e) {
-  if (!__OVERLAY__ && m.isPlatformEmbedded) {
+  if (!__OVERLAY__ && g.isPlatformEmbedded) {
     let t = [],
-      n = (0, p.O_)("ThemeStore");
+      n = (0, _.O_)("ThemeStore");
     n && t.push("visual-refresh");
     try {
       let r = (0, l.uJ)(n ? "BACKGROUND_TERTIARY" : "BACKGROUND_SECONDARY", {
@@ -168,7 +168,7 @@ class H extends(o = a.ZP.PersistedStore) {
       var t;
       Z(A = e.theme), C = null !== (t = e.selectedDarkTheme) && void 0 !== t ? t : null
     }
-    this.waitFor(E.ZP, g.Z, v.Z, d.Z)
+    this.waitFor(E.ZP, m.Z, v.Z, d.Z)
   }
   getState() {
     return {

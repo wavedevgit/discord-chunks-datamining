@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m,
+  Z: () => g,
   a: () => h
 }), n(47120);
 var r = n(200651),
@@ -14,8 +14,8 @@ var r = n(200651),
   u = n(39127),
   d = n(594174),
   f = n(353368),
-  p = n(480723);
-let _ = 50;
+  _ = n(480723);
+let p = 50;
 
 function h(e) {
   var t;
@@ -28,12 +28,12 @@ function h(e) {
     height: n.height
   }
 }
-let m = i.forwardRef(function(e, t) {
+let g = i.forwardRef(function(e, t) {
   let {
     sound: n,
     containerDimensions: h
-  } = e, m = (0, s.e7)([d.default], () => d.default.getCurrentUser()), g = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), [E, v] = i.useState([]), b = E.length < _, y = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, O = i.useCallback(() => {
-    if (!g && b && y && null != m) {
+  } = e, g = (0, s.e7)([d.default], () => d.default.getCurrentUser()), m = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), [E, v] = i.useState([]), b = E.length < p, y = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, O = i.useCallback(() => {
+    if (!m && b && y && null != g) {
       var e;
       let t = (0, c._r)({
           id: n.emojiId,
@@ -49,11 +49,11 @@ let m = i.forwardRef(function(e, t) {
           animationType: i,
           shouldResize: r,
           url: t,
-          userId: m.id
+          userId: g.id
         };
       v(e => [...e, l])
     }
-  }, [g, b, y, m, n]);
+  }, [m, b, y, g, n]);
   i.useImperativeHandle(t, () => ({
     addAnimation: O
   }));
@@ -64,8 +64,8 @@ let m = i.forwardRef(function(e, t) {
       return n.splice(r, 1), n
     })
   }, []);
-  return g || !y ? null : (0, r.jsx)("div", {
-    className: p.effects,
+  return m || !y ? null : (0, r.jsx)("div", {
+    className: _.effects,
     style: {
       width: h.width,
       height: h.height

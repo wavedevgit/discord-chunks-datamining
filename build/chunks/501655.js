@@ -15,11 +15,11 @@ var r = n(759174),
   u = n(699516),
   d = n(594174),
   f = n(979651),
-  p = n(938475),
-  _ = n(5192),
+  _ = n(938475),
+  p = n(5192),
   h = n(88751),
-  m = n(427679),
-  g = n(590415),
+  g = n(427679),
+  m = n(590415),
   E = n(974609);
 
 function v(e, t, n) {
@@ -77,8 +77,8 @@ function T(e) {
     connectedOn: s,
     voiceState: l,
     type: c
-  } = e, u = n ? "\0" : "\x01", d = "STREAM" === c ? "\0" : "\x01", f = l.selfMute ? "\x01" : "\0", p = l.selfVideo ? "\0" : "\x01", _ = "".concat(null !== (t = null == r ? void 0 : r.position) && void 0 !== t ? t : 999).padStart(3, "0");
-  return "".concat(u).concat(d).concat(f).concat(p).concat(_).concat(s).concat((0, i.Z)(a, o))
+  } = e, u = n ? "\0" : "\x01", d = "STREAM" === c ? "\0" : "\x01", f = l.selfMute ? "\x01" : "\0", _ = l.selfVideo ? "\0" : "\x01", p = "".concat(null !== (t = null == r ? void 0 : r.position) && void 0 !== t ? t : 999).padStart(3, "0");
+  return "".concat(u).concat(d).concat(f).concat(_).concat(p).concat(s).concat((0, i.Z)(a, o))
 }
 
 function N(e) {
@@ -90,7 +90,7 @@ function N(e) {
 }
 
 function A(e) {
-  return e === g.xO.REQUESTED_TO_SPEAK || e === g.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
+  return e === m.xO.REQUESTED_TO_SPEAK || e === m.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
 }
 
 function C(e) {
@@ -102,7 +102,7 @@ function C(e) {
     ignored: o,
     isFriend: a
   } = e, s = [];
-  return A(r) && s.push("ALL_REQUESTED_TO_SPEAK"), r === g.xO.REQUESTED_TO_SPEAK && s.push("REQUESTED_TO_SPEAK_ONLY"), t ? s.push("SPEAKER") : (null != n ? s.push(n.id) : s.push("NO_ROLE"), s.push("AUDIENCE")), i ? s.push("BLOCKED") : o && s.push("IGNORED"), a && s.push("FRIEND"), s
+  return A(r) && s.push("ALL_REQUESTED_TO_SPEAK"), r === m.xO.REQUESTED_TO_SPEAK && s.push("REQUESTED_TO_SPEAK_ONLY"), t ? s.push("SPEAKER") : (null != n ? s.push(n.id) : s.push("NO_ROLE"), s.push("AUDIENCE")), i ? s.push("BLOCKED") : o && s.push("IGNORED"), a && s.push("FRIEND"), s
 }
 class R {
   _getParticipantsForUser(e, t) {
@@ -112,15 +112,15 @@ class R {
       y = f.Z.getVoiceStateForChannel(this.channelId, e);
     if (null == y) return v;
     let S = d.default.getUser(e);
-    if (null == S) return null != this.guildId && m.Z.isPublic(this.channelId) && l.Z.requestMember(this.guildId, e), v;
+    if (null == S) return null != this.guildId && g.Z.isPublic(this.channelId) && l.Z.requestMember(this.guildId, e), v;
     let I = null != t ? t[0] : null,
       T = null != this.guildId ? c.ZP.getMember(this.guildId, e) : null,
-      N = null !== (n = null == T ? void 0 : T.nick) && void 0 !== n ? n : _.ZP.getName(this.guildId, this.channelId, S),
+      N = null !== (n = null == T ? void 0 : T.nick) && void 0 !== n ? n : p.ZP.getName(this.guildId, this.channelId, S),
       A = {
         user: S,
-        userNick: _.ZP.getName(this.guildId, this.channelId, S),
+        userNick: p.ZP.getName(this.guildId, this.channelId, S),
         nick: N,
-        comparator: (0, p.sQ)(y, N),
+        comparator: (0, _.sQ)(y, N),
         voiceState: y,
         role: (0, E.H)(this.guildId, e),
         speaker: h.ZP.isSpeaker(e, this.channelId),
@@ -133,7 +133,7 @@ class R {
       C = O(b({}, A), {
         type: "VOICE",
         id: S.id,
-        rtsState: (0, g.gf)(y)
+        rtsState: (0, m.gf)(y)
       });
     v.push(C);
     let R = null !== (i = a.Z.getStreamForUser(e, this.guildId)) && void 0 !== i ? i : a.Z.getActiveStreamForUser(e, this.guildId);
@@ -142,7 +142,7 @@ class R {
       s = O(b({}, A), {
         id: e,
         type: "STREAM",
-        rtsState: g.xO.NONE
+        rtsState: m.xO.NONE
       }), v.push(s)
     }
     return v

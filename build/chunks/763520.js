@@ -1,48 +1,48 @@
-/** Chunk was on 70151 **/
-t.d(l, {
-  m: () => f,
-  o: () => x
-}), t(47120);
-var n, i = t(259443),
-  r = t(379649),
-  s = t(314897),
-  a = t(592125),
-  o = t(866960),
-  c = t(19780),
-  u = t(979651),
-  d = t(626135),
-  m = t(981631);
+/** Chunk was on 65936 **/
+n.d(t, {
+  m: () => p,
+  o: () => h
+}), n(47120);
+var r, i = n(259443),
+  l = n(379649),
+  o = n(314897),
+  s = n(592125),
+  a = n(866960),
+  c = n(19780),
+  u = n(979651),
+  d = n(626135),
+  _ = n(981631);
 
-function p(e, l, t) {
-  return l in e ? Object.defineProperty(e, l, {
-    value: t,
+function E(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[l] = t, e
+  }) : e[t] = n, e
 }
-var f = ((n = {}).SELF_VIDEO = "self_video", n.SELF_STREAM = "self_stream", n.REMOTE_VIDEO = "remote_video", n.REMOTE_STREAM = "remote_stream", n.CHANGE_VIDEO_BACKGROUND = "change_video_background", n.VIDEO_PLAYER = "video_player", n.REPLAY_VIDEO_STREAM = "replay_video_stream", n);
-let v = new Map;
-class x {
+var p = ((r = {}).SELF_VIDEO = "self_video", r.SELF_STREAM = "self_stream", r.REMOTE_VIDEO = "remote_video", r.REMOTE_STREAM = "remote_stream", r.CHANGE_VIDEO_BACKGROUND = "change_video_background", r.VIDEO_PLAYER = "video_player", r.REPLAY_VIDEO_STREAM = "replay_video_stream", r);
+let m = new Map;
+class h {
   onSpinnerStarted() {
-    null == this.spinnerVisibleStart && (this.spinnerVisibleStart = (0, r.zO)())
+    null == this.spinnerVisibleStart && (this.spinnerVisibleStart = (0, l.zO)())
   }
-  trackSpinnerDuration(e, l, t) {
+  trackSpinnerDuration(e, t, n) {
     if (null == this.spinnerVisibleStart) return;
-    let n = function(e) {
-        var l;
-        let t = (null !== (l = v.get(e)) && void 0 !== l ? l : 0) + 1;
-        return v.set(e, t), t
-      }(t),
-      i = (0, r.zO)() - this.spinnerVisibleStart;
+    let r = function(e) {
+        var t;
+        let n = (null !== (t = m.get(e)) && void 0 !== t ? t : 0) + 1;
+        return m.set(e, n), n
+      }(n),
+      i = (0, l.zO)() - this.spinnerVisibleStart;
     if (this.spinnerVisibleStart = null, i < 0) {
-      this.logger.warn("spinner duration is negative: ".concat(i, " ms\n        [").concat(e, ", count for stream: ").concat(n, "]"));
+      this.logger.warn("spinner duration is negative: ".concat(i, " ms\n        [").concat(e, ", count for stream: ").concat(r, "]"));
       return
     }
-    this.logger.info("spinner visible for ".concat(i, " ms\n      [").concat(e, ", count for stream: ").concat(n, "]"));
-    let p = c.Z.getGuildId(),
-      f = u.Z.getUserVoiceChannelId(p, s.default.getId()),
-      x = function(e) {
+    this.logger.info("spinner visible for ".concat(i, " ms\n      [").concat(e, ", count for stream: ").concat(r, "]"));
+    let E = c.Z.getGuildId(),
+      p = u.Z.getUserVoiceChannelId(E, o.default.getId()),
+      h = function(e) {
         if (null != e) {
           if (e.isGuildVoice()) return "guild_voice";
           if (e.isGuildStageVoice()) return "is_stage_channel";
@@ -50,23 +50,23 @@ class x {
           if (e.isGroupDM()) return "group_dm"
         }
         return null
-      }(a.Z.getChannel(f));
-    d.default.track(m.rMx.VIDEO_SPINNER_SHOWN_V2, {
+      }(s.Z.getChannel(p));
+    d.default.track(_.rMx.VIDEO_SPINNER_SHOWN_V2, {
       video_spinner_context: e,
       duration_video_spinner_visible_ms: i,
       rtc_connection_id: c.Z.getRTCConnectionId(),
       media_session_id: c.Z.getMediaSessionId(),
-      event_count_for_stream: n,
-      guild_id: p,
-      channel_id: f,
-      channel_type: x,
-      spinning_user_id: l,
-      connection_type: o.Z.getType(),
-      effective_connection_speed: o.Z.getEffectiveConnectionSpeed(),
-      service_provider: o.Z.getServiceProvider()
+      event_count_for_stream: r,
+      guild_id: E,
+      channel_id: p,
+      channel_type: h,
+      spinning_user_id: t,
+      connection_type: a.Z.getType(),
+      effective_connection_speed: a.Z.getEffectiveConnectionSpeed(),
+      service_provider: a.Z.getServiceProvider()
     })
   }
   constructor(e) {
-    p(this, "logger", void 0), p(this, "spinnerVisibleStart", null), this.logger = new i.Yd(e)
+    E(this, "logger", void 0), E(this, "spinnerVisibleStart", null), this.logger = new i.Yd(e)
   }
 }

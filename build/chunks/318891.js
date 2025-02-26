@@ -15,11 +15,11 @@ var i = n(570140),
   u = n(366050),
   d = n(19780),
   f = n(944486),
-  p = n(914010),
-  _ = n(979651),
+  _ = n(914010),
+  p = n(979651),
   h = n(636449),
-  m = n(317381),
-  g = n(719296),
+  g = n(317381),
+  m = n(719296),
   E = n(958185),
   v = n(981631);
 
@@ -50,10 +50,10 @@ function S(e) {
 }
 
 function I() {
-  let e = m.ZP.getConnectedActivityChannelId(),
-    t = m.ZP.getSelfEmbeddedActivityForChannel(null != e ? e : v.lds),
+  let e = g.ZP.getConnectedActivityChannelId(),
+    t = g.ZP.getSelfEmbeddedActivityForChannel(null != e ? e : v.lds),
     n = l.Z.getChannel(e);
-  return null == e || null == n || null == t ? y() : b(n, (0, g.Z)(t.location.id, t.applicationId))
+  return null == e || null == n || null == t ? y() : b(n, (0, m.Z)(t.location.id, t.applicationId))
 }
 
 function T() {
@@ -64,10 +64,10 @@ function T() {
 }
 class N extends a.Z {
   _initialize() {
-    f.Z.addChangeListener(I), p.Z.addChangeListener(I), d.Z.addChangeListener(I), _.Z.addChangeListener(I), s.Z.addChangeListener(I), m.ZP.addChangeListener(I), c.Z.addChangeListener(T)
+    f.Z.addChangeListener(I), _.Z.addChangeListener(I), d.Z.addChangeListener(I), p.Z.addChangeListener(I), s.Z.addChangeListener(I), g.ZP.addChangeListener(I), c.Z.addChangeListener(T)
   }
   _terminate() {
-    f.Z.removeChangeListener(I), p.Z.removeChangeListener(I), d.Z.removeChangeListener(I), _.Z.removeChangeListener(I), s.Z.removeChangeListener(I), m.ZP.removeChangeListener(I), c.Z.removeChangeListener(T)
+    f.Z.removeChangeListener(I), _.Z.removeChangeListener(I), d.Z.removeChangeListener(I), p.Z.removeChangeListener(I), s.Z.removeChangeListener(I), g.ZP.removeChangeListener(I), c.Z.removeChangeListener(T)
   }
 }
 let A = new N

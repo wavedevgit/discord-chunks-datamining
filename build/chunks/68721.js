@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(411104);
 var r = n(836560),
   i = n(259443),
@@ -21,11 +21,11 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = new i.Yd("Output"),
-  p = new a.Z;
-class _ extends r.EventEmitter {
+  _ = new a.Z;
+class p extends r.EventEmitter {
   destroy() {
     var e, t, n;
-    this.removeAllListeners(), null === (e = (t = this).cleanup) || void 0 === e || e.call(t), this.reset(), null != this.stream && (p.release(this.stream), this.stream = void 0), null === (n = this._audioFilter) || void 0 === n || n.dispose(), this._audioFilter = void 0, this.destroyed = !0
+    this.removeAllListeners(), null === (e = (t = this).cleanup) || void 0 === e || e.call(t), this.reset(), null != this.stream && (_.release(this.stream), this.stream = void 0), null === (n = this._audioFilter) || void 0 === n || n.dispose(), this._audioFilter = void 0, this.destroyed = !0
   }
   reset() {
     this.setSpeaking(!1)
@@ -76,7 +76,7 @@ class _ extends r.EventEmitter {
     this._automaticGainControl !== e && (this._automaticGainControl = e, null != this.stream && this.enable())
   }
   async enable() {
-    null != this.cleanup && (this.cleanup(), this.cleanup = void 0), null != this.stream && (p.release(this.stream), this.stream = void 0);
+    null != this.cleanup && (this.cleanup(), this.cleanup = void 0), null != this.stream && (_.release(this.stream), this.stream = void 0);
     let e = await (0, o.Hg)(),
       t = {
         echoCancellation: this.echoCancellation,
@@ -85,17 +85,17 @@ class _ extends r.EventEmitter {
       };
     e.some(e => e.id === this.sourceId) && (t.deviceId = this.sourceId);
     try {
-      let e = await p.acquire({
+      let e = await _.acquire({
         audio: t
       });
-      if (this.destroyed) throw p.release(e), Error("AudioInput: Already destroyed");
+      if (this.destroyed) throw _.release(e), Error("AudioInput: Already destroyed");
       if (this._noiseCancellation) try {
         let t = await (0, s.n)();
         this._audioFilter = await t.createNoiseFilter(this.context), this._audioFilter.addEventListener("ready", e => {
           var t;
           null === (t = this._audioFilter) || void 0 === t || t.enable()
         }), this._audioFilter.addEventListener("dispose", t => {
-          p.release(e)
+          _.release(e)
         });
         let n = this.context.createMediaStreamSource(e),
           r = this.context.createMediaStreamDestination();

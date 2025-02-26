@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  KV: () => _,
-  PY: () => p,
+  KV: () => p,
+  PY: () => _,
   Wo: () => h,
   iy: () => E,
-  yp: () => m
+  yp: () => g
 }), n(411104), n(177593), n(47120);
 var r = n(763472),
   i = n(726542),
@@ -18,11 +18,11 @@ var r = n(763472),
   d = n(981631);
 let f = 30 * a.Z.Millis.SECOND;
 
-function p(e) {
+function _(e) {
   return null != e.getActiveSocketAndDevice() || l.Z.isProtocolRegistered()
 }
 
-function _() {
+function p() {
   let e = c.Z.getActiveSocketAndDevice();
   if (null != e) return Promise.resolve(e);
   if (!l.Z.isProtocolRegistered()) return Promise.reject(Error("protocol is not registered"));
@@ -66,7 +66,7 @@ function h() {
   return t.isPremium
 }
 
-function m() {
+function g() {
   let e = c.Z.getActiveSocketAndDevice();
   if (null == e) return Promise.reject(Error("no active profile"));
   let {
@@ -77,20 +77,20 @@ function m() {
   })
 }
 
-function g(e) {
+function m(e) {
   if ("string" == typeof e) return e;
   throw Error("value is not a string")
 }
 async function E(e, t) {
   var n;
   let i = await (0, r.sd)(e, t),
-    o = (0, u.c8)(g(null !== (n = i.type) && void 0 !== n ? n : u.Hw.TRACK));
+    o = (0, u.c8)(m(null !== (n = i.type) && void 0 !== n ? n : u.Hw.TRACK));
   if (null === o) throw Error("invalid type ".concat(i.type));
   return {
     context_uri: "string" == typeof i.context_uri ? i.context_uri : void 0,
-    album_id: g(i.album_id),
-    artist_ids: Array.isArray(i.artist_ids) ? i.artist_ids.map(g) : [],
+    album_id: m(i.album_id),
+    artist_ids: Array.isArray(i.artist_ids) ? i.artist_ids.map(m) : [],
     type: o,
-    button_urls: Array.isArray(i.button_urls) ? i.button_urls.map(g) : []
+    button_urls: Array.isArray(i.button_urls) ? i.button_urls.map(m) : []
   }
 }

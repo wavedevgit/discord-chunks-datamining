@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  H: () => m,
+  H: () => g,
   Z: () => A
 }), n(47120), n(733860);
 var i, o = n(392711),
@@ -21,22 +21,22 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let p = [],
-  _ = {},
+let _ = [],
+  p = {},
   h = [],
-  m = e => {
+  g = e => {
     null != e && l.Z.dispatch({
       type: "VOICE_CHANNEL_EFFECT_CLEAR",
       userId: e
     })
   },
-  g = [],
+  m = [],
   E = 20,
   v = 10 * c.Z.Millis.SECOND,
   b = () => {
     let e = new Date;
-    if ((g = [e, ...g].slice(0, E)).length >= E) {
-      let t = g[g.length - 1],
+    if ((m = [e, ...m].slice(0, E)).length >= E) {
+      let t = m[m.length - 1],
         n = e.getTime() - t.getTime();
       n < v && (r = new Date(e.getTime() + v - n))
     }
@@ -57,7 +57,7 @@ let p = [],
       userId: n,
       animationType: r
     } = e;
-    null != t && null != r && (_[n] = {
+    null != t && null != r && (p[n] = {
       emoji: t,
       sentAt: Date.now(),
       animationType: r
@@ -70,17 +70,17 @@ let p = [],
     let {
       emoji: t
     } = e;
-    null != t && (p.unshift(t), (p = (0, o.uniqBy)(p, "name")).length > d.e5 + 1 && p.pop())
+    null != t && (_.unshift(t), (_ = (0, o.uniqBy)(_, "name")).length > d.e5 + 1 && _.pop())
   },
   T = e => {
     let {
       userId: t
     } = e;
-    null != _[t] && delete _[t]
+    null != p[t] && delete p[t]
   };
 class N extends(i = a.ZP.Store) {
   get recentlyUsedEmojis() {
-    return p
+    return _
   }
   get isOnCooldown() {
     return null != r && new Date < r
@@ -89,7 +89,7 @@ class N extends(i = a.ZP.Store) {
     return r
   }
   getEffectForUserId(e) {
-    return _[e]
+    return p[e]
   }
 }
 f(N, "displayName", "VoiceChannelEffectsStore");

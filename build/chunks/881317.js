@@ -15,8 +15,8 @@ var r = n(200651),
   p = n(726521),
   g = n(185625),
   m = n(314897),
-  _ = n(63063),
-  f = n(981631),
+  f = n(63063),
+  _ = n(981631),
   b = n(388032),
   N = n(45738),
   x = n(455812);
@@ -128,7 +128,7 @@ let E = e => {
       }), (0, r.jsx)(u.DK, {
         className: x.marginBottom8,
         children: b.NW.format(b.t["532l+v"], {
-          supportURL: _.Z.getArticleURL(f.BhN.COPYRIGHT_AND_IP_POLICY)
+          supportURL: f.Z.getArticleURL(_.BhN.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, r.jsxs)("div", {
         className: N.container,

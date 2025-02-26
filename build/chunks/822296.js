@@ -19,14 +19,14 @@ function f(e) {
     stream: t,
     width: n,
     noArt: f = !1,
-    selected: p = !1
-  } = e, _ = (0, i.e7)([l.Z], () => l.Z.getChannel(t.channelId));
+    selected: _ = !1
+  } = e, p = (0, i.e7)([l.Z], () => l.Z.getChannel(t.channelId));
   return (0, a.ZP)(() => {
-    (null == _ ? void 0 : _.isGuildStageVoice()) && (0, o.aP)((0, s.V9)(t), !1)
+    (null == p ? void 0 : p.isGuildStageVoice()) && (0, o.aP)((0, s.V9)(t), !1)
   }), (0, r.jsx)(c.Z, {
     artURL: d,
     noArt: f,
-    selected: p,
+    selected: _,
     size: (0, c.L)(n),
     header: u.NW.formatToMarkdownString(u.t["1Ww0Hh"], {}),
     onCTAClick: () => (0, o.aP)((0, s.V9)(t)),

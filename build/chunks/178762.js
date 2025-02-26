@@ -31,10 +31,10 @@ var r = n(200651),
   N = n(551228),
   I = n(678869),
   w = n(278399),
-  T = n(886217),
-  Z = n(555672),
-  S = n(644548),
-  E = n(335326),
+  E = n(886217),
+  T = n(555672),
+  Z = n(644548),
+  S = n(335326),
   A = n(268010),
   _ = n(797342),
   k = n(206583),
@@ -59,7 +59,7 @@ function M(e) {
   return e
 }
 
-function L(e, t) {
+function W(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -72,7 +72,7 @@ function L(e, t) {
   }), e
 }
 
-function W(e, t) {
+function L(e, t) {
   if (null == e) return {};
   var n, r, a = function(e, t) {
     if (null == e) return {};
@@ -92,47 +92,47 @@ let D = 72;
 function z(e) {
   return (null == e ? void 0 : e.type) === f.so.CONTENT_INVENTORY ? D : 0
 }
-let B = e => {
+let U = e => {
     var {
       entry: t
-    } = e, n = W(e, ["entry"]);
+    } = e, n = L(e, ["entry"]);
     switch (t.content_type) {
       case s.s.PLAYED_GAME:
-        return (0, r.jsx)(b.Z, L(M({}, n), {
+        return (0, r.jsx)(b.Z, W(M({}, n), {
           entry: t
         }));
       case s.s.WATCHED_MEDIA:
-        return (0, r.jsx)(E.Z, L(M({}, n), {
+        return (0, r.jsx)(S.Z, W(M({}, n), {
           entry: t
         }));
       case s.s.TOP_GAME:
-        return (0, r.jsx)(Z.ZP, L(M({}, n), {
+        return (0, r.jsx)(T.ZP, W(M({}, n), {
           entry: t
         }));
       case s.s.TOP_ARTIST:
-        return (0, r.jsx)(w.ZP, L(M({}, n), {
+        return (0, r.jsx)(w.ZP, W(M({}, n), {
           entry: t
         }));
       case s.s.LISTENED_SESSION:
-        return (0, r.jsx)(N.ZP, L(M({}, n), {
+        return (0, r.jsx)(N.ZP, W(M({}, n), {
           entry: t
         }));
       case s.s.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(P.Z, L(M({}, n), {
+        return (0, r.jsx)(P.Z, W(M({}, n), {
           entry: t
         }));
       case s.s.LEADERBOARD:
-        return (0, r.jsx)(v.Z, L(M({}, n), {
+        return (0, r.jsx)(v.Z, W(M({}, n), {
           entry: t
         }));
       default:
         return null
     }
   },
-  U = e => {
+  B = e => {
     var {
       closePopout: t
-    } = e, n = W(e, ["closePopout"]);
+    } = e, n = L(e, ["closePopout"]);
     return (0, r.jsx)(H, M({
       onReaction: (e, r) => {
         n.trackRankingItemInteraction(e, {
@@ -153,30 +153,30 @@ let B = e => {
     var t, {
         entry: n
       } = e,
-      a = W(e, ["entry"]);
+      a = L(e, ["entry"]);
     switch (n.content_type) {
       case s.s.PLAYED_GAME:
-        return (0, r.jsx)(C.Z, L(M({}, a), {
+        return (0, r.jsx)(C.Z, W(M({}, a), {
           entry: n
         }));
       case s.s.WATCHED_MEDIA:
-        return (0, r.jsx)(A.Z, L(M({}, a), {
+        return (0, r.jsx)(A.Z, W(M({}, a), {
           entry: n
         }));
       case s.s.TOP_GAME:
-        return (0, r.jsx)(S.Z, L(M({}, a), {
+        return (0, r.jsx)(Z.Z, W(M({}, a), {
           entry: n
         }));
       case s.s.TOP_ARTIST:
-        return (0, r.jsx)(T.Z, L(M({}, a), {
+        return (0, r.jsx)(E.Z, W(M({}, a), {
           entry: n
         }));
       case s.s.LISTENED_SESSION:
-        return (0, r.jsx)(I.Z, L(M({}, a), {
+        return (0, r.jsx)(I.Z, W(M({}, a), {
           entry: n
         }));
       case s.s.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(O.ZP, L(M({}, a), {
+        return (0, r.jsx)(O.ZP, W(M({}, a), {
           entry: n
         }));
       case s.s.LEADERBOARD:
@@ -195,7 +195,7 @@ let B = e => {
     var t, {
         index: l
       } = e,
-      h = W(e, ["index"]);
+      h = L(e, ["index"]);
     let [g, v] = a.useState("default"), f = (0, o.JA)("".concat(l)), P = null === (t = y.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff(), {
       isRich: O,
       appName: b
@@ -205,11 +205,11 @@ let B = e => {
       guildId: h.channel.guild_id,
       requestId: h.requestId,
       richPresenceName: O ? b : void 0
-    }), [b, h.channel.guild_id, h.channel.id, h.entry, h.requestId, O]), N = a.useRef(!1), [I, w] = a.useState(!1), [T, Z] = a.useState(!1), S = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled);
+    }), [b, h.channel.guild_id, h.channel.id, h.entry, h.requestId, O]), N = a.useRef(!1), [I, w] = a.useState(!1), [E, T] = a.useState(!1), Z = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled);
     a.useEffect(() => {
-      I && S && Z(!0)
-    }, [I, S]);
-    let E = a.useCallback(e => {
+      I && Z && T(!0)
+    }, [I, Z]);
+    let S = a.useCallback(e => {
         P && (0, m.jW)(e, async () => {
           let {
             default: e
@@ -235,7 +235,7 @@ let B = e => {
       }), []),
       H = () => {
         N.current = !1, setTimeout(() => {
-          N.current || (w(!1), Z(S))
+          N.current || (w(!1), T(Z))
         }, 100)
       };
     return (0, r.jsx)("div", {
@@ -254,7 +254,7 @@ let B = e => {
           } = e;
           return (0, r.jsx)(G.Provider, {
             value: H,
-            children: (0, r.jsx)(U, M({
+            children: (0, r.jsx)(B, M({
               closePopout: t,
               updatePopoutPosition: A,
               trackRankingItemInteraction: D
@@ -266,14 +266,14 @@ let B = e => {
         positionKey: g,
         onRequestOpen: () => z(C),
         onRequestClose: () => {
-          T && H()
+          E && H()
         },
         spacing: 8,
         children: (e, t) => {
           let {
             isShown: n
           } = t;
-          return (0, r.jsx)(d.P3F, L(M({}, e, f), {
+          return (0, r.jsx)(d.P3F, W(M({}, e, f), {
             focusProps: {
               offset: {
                 top: 4,
@@ -285,8 +285,8 @@ let B = e => {
             onClick: () => {
               I || w(!0)
             },
-            onContextMenu: E,
-            children: (0, r.jsx)(B, L(M({}, h), {
+            onContextMenu: S,
+            children: (0, r.jsx)(U, W(M({}, h), {
               selected: n,
               hovered: N.current
             }))

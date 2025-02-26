@@ -15,15 +15,15 @@ async function a(e, t, a) {
     isAuthenticated: u = !0,
     emailToken: d,
     appContext: f
-  } = a, p = (0, i.Gwq)();
+  } = a, _ = (0, i.Gwq)();
   try {
     let a;
-    let _ = u ? await (0, o.Nt)(e, t) : await (0, o.B0)(e, t),
+    let p = u ? await (0, o.Nt)(e, t) : await (0, o.B0)(e, t),
       h = [],
-      m = e => {
+      g = e => {
         h.push(e)
       },
-      g = e => {
+      m = e => {
         a = e, null == s || s()
       };
     (0, i.ZDy)(async () => {
@@ -31,11 +31,11 @@ async function a(e, t, a) {
         default: t
       } = await Promise.all([n.e("25292"), n.e("95477"), n.e("11212"), n.e("55186"), n.e("28467"), n.e("92457")]).then(n.bind(n, 186023));
       return n => (0, r.jsx)(t, {
-        menu: _,
+        menu: p,
         reportType: e,
         modalProps: n,
-        onNavigate: m,
-        onSubmit: g,
+        onNavigate: g,
+        onSubmit: m,
         isAuthenticated: u,
         emailToken: d
       })
@@ -43,7 +43,7 @@ async function a(e, t, a) {
       onCloseCallback: () => {
         (0, o.k8)(e, h, a), null == l || l(), c && (0, o.X)(e, null != a ? a : null)
       },
-      contextKey: null != f ? (0, i.VnL)(f) : p
+      contextKey: null != f ? (0, i.VnL)(f) : _
     })
   } catch (e) {}
 }

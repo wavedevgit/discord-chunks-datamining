@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AQ: () => g,
-  DY: () => _,
+  AQ: () => m,
+  DY: () => p,
   yQ: () => h
 }), n(653041), n(733860);
 var r, i, o, a, s, l, c = n(553813),
@@ -26,7 +26,7 @@ let f = [{
   decode: !0
 }];
 
-function p(e, t) {
+function _(e, t) {
   let n = t.concat(f),
     r = [];
   return n.forEach(t => {
@@ -39,7 +39,7 @@ function p(e, t) {
   }), r
 }
 
-function _(e) {
+function p(e) {
   let t = [];
   return e.has(d.V8.SIGNAL_AV1_DECODE) ? t.unshift({
     name: "AV1",
@@ -53,21 +53,21 @@ function _(e) {
 }
 
 function h(e, t) {
-  return "string" == typeof e ? p(JSON.parse(e).map(e => ({
-    codec: m(e.codec),
+  return "string" == typeof e ? _(JSON.parse(e).map(e => ({
+    codec: g(e.codec),
     encode: e.encode,
     decode: e.decode
-  })), t) : p(e.map(e => ({
-    codec: m(e),
+  })), t) : _(e.map(e => ({
+    codec: g(e),
     encode: !0,
     decode: !0
   })), t)
 }
 
-function m(e) {
+function g(e) {
   return "AV1X" === e ? "AV1" : e
 }
 
-function g(e) {
+function m(e) {
   return "AV1" === e ? "AV1X" : e
 }

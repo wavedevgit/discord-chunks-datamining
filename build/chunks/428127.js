@@ -1,6 +1,6 @@
 /** Chunk was on 30829 **/
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -21,7 +21,7 @@ let b = {
   tension: 300
 };
 
-function v(e) {
+function y(e) {
   var t;
   let {
     guildChannels: n,
@@ -60,7 +60,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function v(e) {
   let {
     position: t,
     guildChannels: n,
@@ -69,12 +69,12 @@ function y(e) {
     jumpToChannel: d
   } = e, {
     bottomBar: h,
-    topBar: y
+    topBar: v
   } = (0, s.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), O = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
     mode: j,
     mentionCount: _,
     targetChannelId: C
-  } = "bottom" === t ? h : y, x = j === f.x.HIDDEN, P = (0, c.q_F)({
+  } = "bottom" === t ? h : v, x = j === f.x.HIDDEN, P = (0, c.q_F)({
     to: {
       transform: x ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
@@ -125,7 +125,7 @@ function y(e) {
             count: _
           })
         })
-      }) : j === f.x.VOICE_CHANNELS ? (0, r.jsx)(v, {
+      }) : j === f.x.VOICE_CHANNELS ? (0, r.jsx)(y, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

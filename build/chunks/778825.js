@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, o, a, s, l, c, u, d, f, p, _;
+let r, i, o, a, s, l, c, u, d, f, _, p;
 n.d(t, {
   Z: () => Z
 });
-var h, m = n(442837),
-  g = n(570140),
+var h, g = n(442837),
+  m = n(570140),
   E = n(981631);
 
 function v(e, t, n) {
@@ -20,11 +20,11 @@ let b = E.QZA.CLOSED,
   y = {};
 
 function O(e) {
-  f = e.guild, b = E.QZA.OPEN, y = {}, p = e.source, _ = e.analyticsLocations
+  f = e.guild, b = E.QZA.OPEN, y = {}, _ = e.source, p = e.analyticsLocations
 }
 
 function S() {
-  b = E.QZA.CLOSED, y = {}, p = void 0, _ = []
+  b = E.QZA.CLOSED, y = {}, _ = void 0, p = []
 }
 
 function I() {
@@ -127,7 +127,7 @@ function B() {
 function V() {
   j(), S()
 }
-class F extends(h = m.ZP.Store) {
+class F extends(h = g.ZP.Store) {
   getFormState() {
     return b
   }
@@ -187,14 +187,14 @@ class F extends(h = m.ZP.Store) {
     return f
   }
   getSource() {
-    return p
+    return _
   }
   getAnalyticsLocations() {
-    return _
+    return p
   }
 }
 v(F, "displayName", "GuildIdentitySettingsStore");
-let Z = new F(g.Z, {
+let Z = new F(m.Z, {
   GUILD_IDENTITY_SETTINGS_INIT: O,
   GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: V,
   GUILD_IDENTITY_SETTINGS_SET_GUILD: T,

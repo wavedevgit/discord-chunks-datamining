@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(276952),
   m = n(682662),
   b = n(674552),
-  v = n(593364),
-  y = n(905423),
+  y = n(593364),
+  v = n(905423),
   O = n(199902),
   j = n(592125),
   _ = n(944486),
@@ -27,8 +27,8 @@ var r = n(200651),
   P = n(853856),
   N = n(593214),
   S = n(919755),
-  I = n(110977),
-  Z = n(603274),
+  Z = n(110977),
+  I = n(603274),
   w = n(981631),
   E = n(388032),
   T = n(588827);
@@ -76,7 +76,7 @@ function R() {
     })),
     U = (0, s.e7)([_.Z], () => _.Z.getChannelId(w.I_8)),
     W = (0, s.e7)([j.Z], () => j.Z.getChannel(U)),
-    V = (0, y.Z)(e => e.guildId) === w.I_8,
+    V = (0, v.Z)(e => e.guildId) === w.I_8,
     {
       badge: F,
       unread: H
@@ -112,7 +112,7 @@ function R() {
         activity: g
       })
     }(B),
-    q = F > 0 ? (0, v.N)(F) : null,
+    q = F > 0 ? (0, y.N)(F) : null,
     Y = (0, f.Q3)("FavoritesButton"),
     Q = i.useCallback(() => {
       L()
@@ -123,9 +123,9 @@ function R() {
       hovered: k,
       unread: H && !G,
       className: T.pill
-    }), (0, r.jsx)(Z.Z, {
+    }), (0, r.jsx)(I.Z, {
       onShow: Q,
-      children: (0, r.jsx)(I.S, {
+      children: (0, r.jsx)(Z.S, {
         children: (0, r.jsx)(c.aRk, {
           selected: Y || V || k,
           upperBadge: z,

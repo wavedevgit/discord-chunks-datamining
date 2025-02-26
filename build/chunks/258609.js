@@ -20,8 +20,8 @@ let c = null,
   u = null,
   d = new Set,
   f = {},
-  p = {},
-  _ = new Set;
+  _ = {},
+  p = new Set;
 
 function h(e) {
   let {
@@ -30,11 +30,11 @@ function h(e) {
   c = t, u = null
 }
 
-function m() {
+function g() {
   c = null, u = null
 }
 
-function g(e) {
+function m(e) {
   let {
     sessionType: t,
     nonce: n,
@@ -56,7 +56,7 @@ function E(e) {
   let {
     platform: t
   } = e;
-  _.add(t)
+  p.add(t)
 }
 
 function v(e) {
@@ -64,18 +64,18 @@ function v(e) {
     platform: t,
     devices: n
   } = e;
-  _.delete(t);
+  p.delete(t);
   let r = f[t] = {},
     i = {};
-  for (let e of n) r[e.id] = e, p[t] === e.id && (i[t] = e.id);
-  p = i
+  for (let e of n) r[e.id] = e, _[t] === e.id && (i[t] = e.id);
+  _ = i
 }
 
 function b(e) {
   let {
     platform: t
   } = e;
-  _.delete(t)
+  p.delete(t)
 }
 
 function y(e) {
@@ -83,16 +83,16 @@ function y(e) {
     platform: t,
     deviceId: n
   } = e;
-  p[t] = n
+  _[t] = n
 }
 let O = Object.freeze({});
 class S extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
-    null != e && (p = e.lastSelectedDeviceByPlatform), this.waitFor(a.Z, s.Z)
+    null != e && (_ = e.lastSelectedDeviceByPlatform), this.waitFor(a.Z, s.Z)
   }
   getUserAgnosticState() {
     return {
-      lastSelectedDeviceByPlatform: p
+      lastSelectedDeviceByPlatform: _
     }
   }
   getDevicesForPlatform(e) {
@@ -100,14 +100,14 @@ class S extends(r = i.ZP.DeviceSettingsStore) {
     return null !== (t = f[e]) && void 0 !== t ? t : O
   }
   getLastSelectedDeviceByPlatform(e) {
-    return p[e]
+    return _[e]
   }
   getDevice(e, t) {
     var n;
     return null === (n = f[e]) || void 0 === n ? void 0 : n[t]
   }
   getFetchingDevices(e) {
-    return _.has(e)
+    return p.has(e)
   }
   getPendingDeviceCommands() {
     return d
@@ -122,8 +122,8 @@ class S extends(r = i.ZP.DeviceSettingsStore) {
 l(S, "displayName", "GameConsoleStore"), l(S, "persistKey", "GameConsoleStore");
 let I = new S(o.Z, {
   REMOTE_SESSION_CONNECT: h,
-  REMOTE_SESSION_DISCONNECT: m,
-  WAIT_FOR_REMOTE_SESSION: g,
+  REMOTE_SESSION_DISCONNECT: g,
+  WAIT_FOR_REMOTE_SESSION: m,
   GAME_CONSOLE_FETCH_DEVICES_START: E,
   GAME_CONSOLE_FETCH_DEVICES_SUCCESS: v,
   GAME_CONSOLE_FETCH_DEVICES_FAIL: b,

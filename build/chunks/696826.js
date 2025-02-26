@@ -23,9 +23,9 @@ var l = n(44315),
   u = n(540059),
   d = n(981631),
   f = n(182294),
-  p = n(621003);
+  _ = n(621003);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,13 +41,13 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -209,11 +209,11 @@ function C(e, t, n) {
     cutoutX: u,
     cutoutY: d,
     cutoutWidth: f,
-    cutoutHeight: p,
-    cutoutRadius: _,
+    cutoutHeight: _,
+    cutoutRadius: p,
     polygonScale: h,
-    polygonOrigin: m,
-    dotY: g,
+    polygonOrigin: g,
+    dotY: m,
     dotX: E,
     dotRadius: v
   } = e;
@@ -231,21 +231,21 @@ function C(e, t, n) {
       x: u,
       y: d,
       width: f,
-      height: p,
-      rx: _,
-      ry: _,
+      height: _,
+      rx: p,
+      ry: p,
       fill: "black"
     }), (0, r.jsx)(a.animated.polygon, {
       points: A(t),
       fill: "black",
       transform: h,
       style: {
-        transformOrigin: m
+        transformOrigin: g
       }
     }), (0, r.jsx)(a.animated.circle, {
       fill: "black",
       cx: E,
-      cy: g,
+      cy: m,
       r: v
     })]
   })
@@ -292,16 +292,16 @@ function D(e) {
     style: s,
     color: l
   } = e, u = t === d.Skl.ONLINE && n, f = y(t, l);
-  return (0, r.jsx)(c.ZP, g(h({
+  return (0, r.jsx)(c.ZP, m(h({
     mask: R(t, u),
-    className: o()(p.mask, a),
+    className: o()(_.mask, a),
     style: s
   }, P(i, t, u)), {
     children: (0, r.jsx)("div", {
       style: {
         backgroundColor: f
       },
-      className: p.status
+      className: _.status
     })
   }))
 }

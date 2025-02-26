@@ -15,8 +15,8 @@ var r = n(200651),
   p = n(720196),
   g = n(981631),
   m = n(388032),
-  _ = n(279178),
-  f = n(455812);
+  f = n(279178),
+  _ = n(455812);
 
 function b(e) {
   let {
@@ -33,7 +33,7 @@ function b(e) {
   }, [b]), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(u.Ee, {
       src: null == O ? n(26230) : n(935227),
-      className: a()(f.marginBottom20, f.marginTop8)
+      className: a()(_.marginBottom20, _.marginTop8)
     }), (0, r.jsx)(u.Dx, {
       children: m.NW.string(m.t["IfBQ5+"])
     }), null != O && "" !== O ? (0, r.jsx)(s.Text, {
@@ -41,13 +41,13 @@ function b(e) {
       color: "text-danger",
       children: O
     }) : null, (0, r.jsxs)(u.gO, {
-      className: a()(f.marginBottom20, f.marginTop20),
+      className: a()(_.marginBottom20, _.marginTop20),
       children: [(0, r.jsx)(u.II, {
         name: "password",
         type: "password",
         label: m.NW.string(m.t["8dM4FB"]),
         setRef: y,
-        className: f.marginBottom20,
+        className: _.marginBottom20,
         value: C,
         onChange: S,
         error: I,
@@ -55,7 +55,7 @@ function b(e) {
         maxLength: 72,
         placeholder: m.NW.string(m.t["yY/PXV"])
       }), (0, r.jsx)(u.zx, {
-        className: f.marginTop8,
+        className: _.marginTop8,
         onClick: () => {
           if (!x) {
             if (0 === C.length) {
@@ -111,7 +111,7 @@ function b(e) {
         children: m.NW.string(m.t.ezv91d)
       })]
     }), (0, r.jsx)("div", {
-      className: _.buttonContainer,
+      className: f.buttonContainer,
       children: (0, r.jsx)(u.zx, {
         color: u.zx.Colors.PRIMARY,
         onClick: () => {

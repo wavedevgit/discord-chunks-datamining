@@ -16,7 +16,7 @@ function d(e) {
     transitionTo: t,
     token: n,
     width: d
-  } = e, [h, p] = i.useState(u.n.START), [g, m] = i.useState(null), [_, f] = i.useState(""), b = {
+  } = e, [h, p] = i.useState(u.n.START), [g, m] = i.useState(null), [f, _] = i.useState(""), b = {
     impression_group: o.ImpressionGroups.ACCOUNT_REVERT_FLOW
   };
   return (0, r.jsx)("div", {
@@ -40,7 +40,7 @@ function d(e) {
         impressionProperties: b,
         impressionName: o.ImpressionNames.ACCOUNT_REVERT_CHANGE_PASSWORD,
         children: (0, r.jsx)(l.Z, {
-          setOriginalEmail: f,
+          setOriginalEmail: _,
           setSlide: p,
           transitionTo: t,
           ready: g === u.n.PASSWORD,
@@ -51,7 +51,7 @@ function d(e) {
         impressionProperties: b,
         impressionName: o.ImpressionNames.ACCOUNT_REVERT_SUCCESS,
         children: (0, r.jsx)(c.Z, {
-          email: _
+          email: f
         })
       })]
     })

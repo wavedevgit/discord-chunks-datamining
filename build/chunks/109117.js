@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  S1: () => _
+  S1: () => p
 });
 var r = n(268146),
   i = n(433517),
@@ -33,8 +33,8 @@ function d(e) {
   return e
 }
 let f = window.DiscordNative,
-  p = "".concat(c.rMx.APP_NATIVE_CRASH, "Storage");
-async function _() {
+  _ = "".concat(c.rMx.APP_NATIVE_CRASH, "Storage");
+async function p() {
   var e;
   if (__OVERLAY__) return;
   let t = null == f ? void 0 : null === (e = f.processUtils) || void 0 === e ? void 0 : e.getLastCrash;
@@ -46,11 +46,11 @@ async function _() {
     {
       didCrashReporterSeeCrash: r,
       didCrashOrUncleanExit: o
-    } = h(i.K.get(p, {}), n),
-    a = g(r, o, n);
-  s.default.track(c.rMx.APP_NATIVE_CRASH, a), i.K.set(p, {
+    } = h(i.K.get(_, {}), n),
+    a = m(r, o, n);
+  s.default.track(c.rMx.APP_NATIVE_CRASH, a), i.K.set(_, {
     lastId: null == n ? void 0 : n.id
-  }), o && setTimeout(async () => await m(), 1e4)
+  }), o && setTimeout(async () => await g(), 1e4)
 }
 
 function h(e, t) {
@@ -63,7 +63,7 @@ function h(e, t) {
     didCrashOrUncleanExit: o
   }
 }
-async function m() {
+async function g() {
   var e, t;
   if (null !== (t = null === (e = a.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== t && t) try {
     await o.Z.getMediaEngine().writeAudioDebugState(), await (0, l.E)(c.GU0.RTC), console.log("Successfully uploaded debug files")
@@ -72,8 +72,8 @@ async function m() {
   }
 }
 
-function g(e, t, n) {
-  var i, o, a, s, l, c, u, f, p, _, h, m, g, E, v, b, y, O, S;
+function m(e, t, n) {
+  var i, o, a, s, l, c, u, f, _, p, h, g, m, E, v, b, y, O, S;
 
   function I(e) {
     return (null == n ? void 0 : n.storedInformation) != null && 1 === n.storedInformation[e]
@@ -93,11 +93,11 @@ function g(e, t, n) {
     was_receiving_stream: I(r.X4.IsReceivingStream),
     video_media_session_id: T(r.X4.VideoMediaSessionId),
     stream_media_session_id: T(r.X4.StreamMediaSessionId),
-    last_memory_usage_kb: null !== (p = null == n ? void 0 : null === (i = n.lastMemoryInformation) || void 0 === i ? void 0 : i.memoryUsageKB) && void 0 !== p ? p : null,
-    last_used_js_heap_size_kb: null !== (_ = null == n ? void 0 : null === (o = n.lastMemoryInformation) || void 0 === o ? void 0 : o.usedJSHeapSizeKB) && void 0 !== _ ? _ : null,
+    last_memory_usage_kb: null !== (_ = null == n ? void 0 : null === (i = n.lastMemoryInformation) || void 0 === i ? void 0 : i.memoryUsageKB) && void 0 !== _ ? _ : null,
+    last_used_js_heap_size_kb: null !== (p = null == n ? void 0 : null === (o = n.lastMemoryInformation) || void 0 === o ? void 0 : o.usedJSHeapSizeKB) && void 0 !== p ? p : null,
     last_memory_usage_uptime: null !== (h = null == n ? void 0 : null === (a = n.lastMemoryInformation) || void 0 === a ? void 0 : a.uptimeSeconds) && void 0 !== h ? h : null,
-    highest_memory_usage_kb: null !== (m = null == n ? void 0 : null === (s = n.highestMemoryInformation) || void 0 === s ? void 0 : s.memoryUsageKB) && void 0 !== m ? m : null,
-    highest_used_js_heap_size_kb: null !== (g = null == n ? void 0 : null === (l = n.highestMemoryInformation) || void 0 === l ? void 0 : l.usedJSHeapSizeKB) && void 0 !== g ? g : null,
+    highest_memory_usage_kb: null !== (g = null == n ? void 0 : null === (s = n.highestMemoryInformation) || void 0 === s ? void 0 : s.memoryUsageKB) && void 0 !== g ? g : null,
+    highest_used_js_heap_size_kb: null !== (m = null == n ? void 0 : null === (l = n.highestMemoryInformation) || void 0 === l ? void 0 : l.usedJSHeapSizeKB) && void 0 !== m ? m : null,
     highest_memory_usage_uptime: null !== (E = null == n ? void 0 : null === (c = n.highestMemoryInformation) || void 0 === c ? void 0 : c.uptimeSeconds) && void 0 !== E ? E : null
   };
   if (!e || null == n) return d({

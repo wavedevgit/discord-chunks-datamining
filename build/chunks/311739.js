@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -14,8 +14,8 @@ var i = n(120356),
   u = n(692629),
   d = n(626135),
   f = n(981631),
-  p = n(388032),
-  _ = n(471108);
+  _ = n(388032),
+  p = n(471108);
 
 function h(e) {
   var t;
@@ -32,13 +32,13 @@ function h(e) {
     onClick: s,
     children: [(0, r.jsx)(a.EOn, {
       size: "sm",
-      className: o()(_.icon),
+      className: o()(p.icon),
       color: a.TVs.colors.MENTION_FOREGROUND
-    }), null !== (t = null == d ? void 0 : d.name) && void 0 !== t ? t : p.NW.string(p.t["Ij+2ra"]), (0, r.jsx)(u.Z, {})]
+    }), null !== (t = null == d ? void 0 : d.name) && void 0 !== t ? t : _.NW.string(_.t["Ij+2ra"]), (0, r.jsx)(u.Z, {})]
   }, i)
 }
 
-function m(e) {
+function g(e) {
   return {
     react(t, n, i) {
       let o = i.noStyleAndInteraction ? void 0 : n => {

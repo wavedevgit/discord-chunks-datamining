@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(40851),
   d = n(861254),
   f = n(221241),
-  p = n(82965),
-  _ = n(67844),
+  _ = n(82965),
+  p = n(67844),
   h = n(871499),
-  m = n(981631),
-  g = n(962070);
+  g = n(981631),
+  m = n(962070);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,16 +78,16 @@ function S(e, t) {
 }
 
 function I(e) {
-  let t = (0, _.X)(e),
+  let t = (0, p.X)(e),
     {
       enabled: n,
       cameraUnavailable: o,
       onChange: a,
       onCameraUnavailable: d,
       hasPermission: f,
-      children: p,
+      children: _,
       channelLimitReached: h = !1,
-      join: g
+      join: m
     } = e,
     E = (0, u.bp)(),
     v = o ? () => d() : () => a(!e.enabled, E),
@@ -95,11 +95,11 @@ function I(e) {
       Component: b,
       play: y,
       events: O
-    } = (0, c.o)(g || n ? "disable" : "enable");
+    } = (0, c.o)(m || n ? "disable" : "enable");
   i.useEffect(() => () => y(), [n, y]);
-  let S = E === m.IlC.POPOUT ? n ? s.O : l.A : b;
+  let S = E === g.IlC.POPOUT ? n ? s.O : l.A : b;
   return (0, r.jsx)(r.Fragment, {
-    children: p({
+    children: _({
       onClick: v,
       isActive: n,
       disabled: !n && (!f || h),
@@ -107,8 +107,8 @@ function I(e) {
       iconColor: "currentColor",
       label: t,
       unavailable: o,
-      onMouseEnter: g ? void 0 : O.onMouseEnter,
-      onMouseLeave: g ? void 0 : O.onMouseLeave
+      onMouseEnter: m ? void 0 : O.onMouseEnter,
+      onMouseLeave: m ? void 0 : O.onMouseLeave
     })
   })
 }
@@ -123,8 +123,8 @@ function T(e) {
     cameraUnavailable: l,
     hasPermission: c,
     className: u,
-    channelLimitReached: _,
-    channelLimit: m,
+    channelLimitReached: p,
+    channelLimit: g,
     centerButton: E = !1,
     onPopoutClick: b
   } = e, S = O(e, ["enabled", "join", "channel", "onChange", "onCameraUnavailable", "cameraUnavailable", "hasPermission", "className", "channelLimitReached", "channelLimit", "centerButton", "onPopoutClick"]);
@@ -140,7 +140,7 @@ function T(e) {
     } = (0, f.Z)({
       location: "VideoButton"
     }),
-    R = (0, p.Z)({
+    R = (0, _.Z)({
       location: "VideoButton"
     }),
     P = () => n ? "join" : C && t ? "green" : R || N === d.BK.GroupedButtonsRedMic ? "primaryDark" : "green",
@@ -153,8 +153,8 @@ function T(e) {
     onCameraUnavailable: s,
     cameraUnavailable: l,
     hasPermission: c,
-    channelLimitReached: _,
-    channelLimit: m,
+    channelLimitReached: p,
+    channelLimit: g,
     children: e => {
       var {
         unavailable: t,
@@ -175,7 +175,7 @@ function T(e) {
           null === (t = S.onMouseLeave) || void 0 === t || t.call(S, e), null == o || o()
         },
         className: a()(u, {
-          [g.fauxDisabled]: t
+          [m.fauxDisabled]: t
         }),
         onPopoutClick: b,
         fullRegionButton: n

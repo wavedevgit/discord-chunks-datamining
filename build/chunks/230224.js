@@ -22,8 +22,8 @@ var r = n(200651),
   p = n(51144),
   g = n(245335),
   m = n(981631),
-  _ = n(888592),
-  f = n(388032),
+  f = n(888592),
+  _ = n(388032),
   b = n(72171);
 let N = 100,
   x = e => {
@@ -82,7 +82,7 @@ function T(e) {
     textClassName: i,
     className: o
   } = e, l = x(n);
-  return null == l || S(n) || (null == n ? void 0 : null === (t = n.guild) || void 0 === t ? void 0 : t.id) === _.fQ ? null : (0, r.jsx)(s.EJ, {
+  return null == l || S(n) || (null == n ? void 0 : null === (t = n.guild) || void 0 === t ? void 0 : t.id) === f.fQ ? null : (0, r.jsx)(s.EJ, {
     className: a()(b.activityCount, o),
     online: l.onlineCount,
     total: l.memberCount,
@@ -95,15 +95,15 @@ function A(e) {
   let {
     invite: t,
     showBigUserIcon: n
-  } = e, o = i.useMemo(() => n ? null : v(t) && null != t.target_user ? h.ZP.getUserAvatarURL(t.target_user) : S(t) && null != t.inviter ? h.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), a = f.NW.string(f.t["3rE1Pz"]);
+  } = e, o = i.useMemo(() => n ? null : v(t) && null != t.target_user ? h.ZP.getUserAvatarURL(t.target_user) : S(t) && null != t.inviter ? h.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), a = _.NW.string(_.t["3rE1Pz"]);
   if (I(t)) {
     var c, u;
-    a = (null === (c = t.channel) || void 0 === c ? void 0 : c.name) != null && (null === (u = t.inviter) || void 0 === u ? void 0 : u.username) != null ? f.NW.format(f.t.Lu4h19, {
+    a = (null === (c = t.channel) || void 0 === c ? void 0 : c.name) != null && (null === (u = t.inviter) || void 0 === u ? void 0 : u.username) != null ? _.NW.format(_.t.Lu4h19, {
       username: t.inviter.username
-    }) : f.NW.string(f.t.OsdY8P)
-  } else v(t) && null != t.target_user ? a = f.NW.formatToPlainString(f.t.x2L32d, {
+    }) : _.NW.string(_.t.OsdY8P)
+  } else v(t) && null != t.target_user ? a = _.NW.formatToPlainString(_.t.x2L32d, {
     username: t.target_user.username
-  }) : j(t) ? a = f.NW.string(f.t["FDsl+P"]) : S(t) && null != t.inviter && (a = f.NW.format(f.t.spU2mJ, {
+  }) : j(t) ? a = _.NW.string(_.t["FDsl+P"]) : S(t) && null != t.inviter && (a = _.NW.format(_.t.spU2mJ, {
     username: p.ZP.getFormattedName(t.inviter)
   }));
   return (0, r.jsxs)("div", {
@@ -136,7 +136,7 @@ function P(e) {
     className: b.inviteJoinContainer,
     children: [(0, r.jsx)(s.DK, {
       className: b.appIn,
-      children: f.NW.string(f.t["3gg9fH"])
+      children: _.NW.string(_.t["3gg9fH"])
     }), (0, r.jsxs)("div", {
       className: b.guildContainer,
       children: [(0, r.jsx)(s.Vj, {
@@ -160,11 +160,11 @@ function P(e) {
     }))) : n = e
   } else if (null != o) {
     let e = p.ZP.getFormattedName(o);
-    n = f.NW.formatToPlainString(f.t["4aF92d"], {
+    n = _.NW.formatToPlainString(_.t["4aF92d"], {
       username: e
     }), i = (0, r.jsx)(s.DK, {
       className: b.directInviteSubTitle,
-      children: f.NW.format(f.t.Quj7HR, {
+      children: _.NW.format(_.t.Quj7HR, {
         username: e
       })
     })

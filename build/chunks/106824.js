@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  P: () => p,
-  Z: () => _
+  P: () => _,
+  Z: () => p
 }), n(47120);
 var r = n(836560),
   i = n(555573),
@@ -50,7 +50,7 @@ function f(e, t) {
   }), e
 }
 
-function p() {
+function _() {
   return {
     query: null,
     selectedIndex: null,
@@ -58,7 +58,7 @@ function p() {
     didInitialQuery: !1
   }
 }
-class _ extends r.EventEmitter {
+class p extends r.EventEmitter {
   updateProps(e) {
     let t = this.props.focused !== e.focused,
       n = this.props.channel.id !== e.channel.id || this.props.activeCommandOption !== e.activeCommandOption,
@@ -147,25 +147,25 @@ class _ extends r.EventEmitter {
     let {
       type: d,
       typeInfo: f,
-      query: p
-    } = c, _ = r || n && ((null === (e = this.state.query) || void 0 === e ? void 0 : e.queryText) !== p || (null === (t = this.state.query) || void 0 === t ? void 0 : t.typeInfo) !== f), h = a.fq.getSetting();
+      query: _
+    } = c, p = r || n && ((null === (e = this.state.query) || void 0 === e ? void 0 : e.queryText) !== _ || (null === (t = this.state.query) || void 0 === t ? void 0 : t.typeInfo) !== f), h = a.fq.getSetting();
     i.allowStickers = i.allowStickers ? h : i.allowStickers;
-    let m = a.eR.getSetting();
-    i.allowSoundmoji = i.allowSoundmoji ? m : i.allowSoundmoji;
+    let g = a.eR.getSetting();
+    i.allowSoundmoji = i.allowSoundmoji ? g : i.allowSoundmoji;
     let {
-      results: g,
+      results: m,
       metadata: E
-    } = f.queryResults(this.props.channel, this.props.guild, p, i, _), v = 0;
-    for (let e of Object.values(g)) Array.isArray(e) && (v += e.length);
-    let b = !0 === g.isLoading,
+    } = f.queryResults(this.props.channel, this.props.guild, _, i, p), v = 0;
+    for (let e of Object.values(m)) Array.isArray(e) && (v += e.length);
+    let b = !0 === m.isLoading,
       y = this.shouldShow(v, b, f),
       O = this.state.selectedIndex;
     !y || b ? O = null : null != O && O >= v && (O = v - 1), y && !this.state.isVisible && (0, o.a7)(d, this.props.channel, E), this.setState({
       query: {
         type: d,
         typeInfo: f,
-        queryText: p,
-        results: g,
+        queryText: _,
+        results: m,
         resultCount: v,
         options: i,
         isLoading: b
@@ -188,7 +188,7 @@ class _ extends r.EventEmitter {
       options: f
     } = this.state.query;
     if (e >= d) return !1;
-    let p = null === (i = c.onSelect) || void 0 === i ? void 0 : i.call(c, {
+    let _ = null === (i = c.onSelect) || void 0 === i ? void 0 : i.call(c, {
       results: u,
       index: e,
       type: t ? s.QB.SEND : s.QB.INSERT,
@@ -198,7 +198,7 @@ class _ extends r.EventEmitter {
       tabOrEnter: n,
       queryText: null === (r = this.state.query) || void 0 === r ? void 0 : r.queryText
     });
-    return null != p && (0, o.Qt)(l, null !== (a = p.type) && void 0 !== a ? a : null, this.props.channel, p.metadata), !0
+    return null != _ && (0, o.Qt)(l, null !== (a = _.type) && void 0 !== a ? a : null, this.props.channel, _.metadata), !0
   }
   setState(e) {
     for (let t in e)
@@ -208,6 +208,6 @@ class _ extends r.EventEmitter {
       }
   }
   constructor(e) {
-    super(), c(this, "props", void 0), c(this, "state", void 0), this.props = e, this.state = p()
+    super(), c(this, "props", void 0), c(this, "state", void 0), this.props = e, this.state = _()
   }
 }

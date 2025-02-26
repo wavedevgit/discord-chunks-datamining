@@ -1,43 +1,43 @@
-/** Chunk was on 33397 **/
-r.d(t, {
-  Z: () => c
-}), r(47120), r(518263), r(970173), r(520712), r(268111), r(941497), r(32026), r(480839), r(744285), r(492257), r(873817), r(610885), r(126298);
-var n, l, i, u = r(442837),
-  s = r(570140);
-let a = new Map;
-class o extends(n = u.ZP.Store) {
+/** Chunk was on 55697 **/
+n.d(t, {
+  Z: () => u
+}), n(47120), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298);
+var r, i, l, o = n(442837),
+  a = n(570140);
+let s = new Map;
+class c extends(r = o.ZP.Store) {
   getUsers() {
-    return a
+    return s
   }
   isKeyVerified(e, t) {
-    let r = a.get(e);
-    if (null == t || null == r || r.length !== t.length) return !1;
+    let n = s.get(e);
+    if (null == t || null == n || n.length !== t.length) return !1;
     for (let e = 0; e < t.length; e++)
-      if (t[e] !== r[e]) return !1;
+      if (t[e] !== n[e]) return !1;
     return !0
   }
 }
-i = "TransientKeyStore", (l = "displayName") in o ? Object.defineProperty(o, l, {
-  value: i,
+l = "TransientKeyStore", (i = "displayName") in c ? Object.defineProperty(c, i, {
+  value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : o[l] = i;
-let c = new o(s.Z, {
+}) : c[i] = l;
+let u = new c(a.Z, {
   CONNECTION_OPEN: function() {
-    a.clear()
+    s.clear()
   },
   SECURE_FRAMES_TRANSIENT_KEY_CREATE: function(e) {
     let {
       userId: t,
-      key: r
-    } = e, n = new Uint8Array(r);
-    a.set(t, n)
+      key: n
+    } = e, r = new Uint8Array(n);
+    s.set(t, r)
   },
   SECURE_FRAMES_TRANSIENT_KEY_DELETE: function(e) {
     let {
       userId: t
     } = e;
-    return a.delete(t)
+    return s.delete(t)
   }
 })

@@ -16,7 +16,7 @@ var r = n(200651),
   d = n(872801),
   f = n(625259);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,20 +25,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 let h = f.layerContainer;
-class m extends i.Component {
+class g extends i.Component {
   componentWillUnmount() {
     this.state.layerContainerElement = null
   }
@@ -55,16 +55,16 @@ class m extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), p(this, "state", {
+    super(...e), _(this, "state", {
       layerContainerElement: null
-    }), p(this, "setLayerContainerElement", e => {
+    }), _(this, "setLayerContainerElement", e => {
       this.setState({
         layerContainerElement: e
       })
-    }), p(this, "getContextValue", (0, u.oH)(e => [e, this.setLayerContainerElement]))
+    }), _(this, "getContextValue", (0, u.oH)(e => [e, this.setLayerContainerElement]))
   }
 }
-let g = e => {
+let m = e => {
   let {
     layerContext: t,
     className: n
@@ -97,13 +97,13 @@ let b = e => {
 function y(e) {
   let t = i.createContext([null, () => {}]),
     n = {
-      LayerProvider: e => (0, r.jsx)(m, _({
+      LayerProvider: e => (0, r.jsx)(g, p({
         layerContext: t
       }, e)),
-      LayerContainer: e => (0, r.jsx)(g, _({
+      LayerContainer: e => (0, r.jsx)(m, p({
         layerContext: t
       }, e)),
-      Layer: e => (0, r.jsx)(b, _({
+      Layer: e => (0, r.jsx)(b, p({
         layerContext: t
       }, e)),
       layerContext: t

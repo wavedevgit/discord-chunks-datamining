@@ -20,7 +20,7 @@ n.d(t, {
   Jg: () => eS,
   K: () => ev,
   KM: () => eP,
-  Kr: () => e_,
+  Kr: () => ep,
   LM: () => eb,
   Nj: () => eN,
   OG: () => e6,
@@ -31,7 +31,7 @@ n.d(t, {
   V$: () => e4,
   WP: () => J,
   Xh: () => eo,
-  Xv: () => eg,
+  Xv: () => em,
   ZZ: () => F,
   Zp: () => ts,
   _D: () => V,
@@ -56,8 +56,8 @@ n.d(t, {
   u7: () => ti,
   vQ: () => eE,
   vR: () => ey,
-  xN: () => em,
-  xn: () => ep,
+  xN: () => eg,
+  xn: () => e_,
   yH: () => te,
   yI: () => en,
   ys: () => eO,
@@ -75,13 +75,13 @@ var r = n(991998),
   u = n(742635),
   d = n(570140),
   f = n(230711),
-  p = n(782568);
+  _ = n(782568);
 n(597688);
-var _ = n(231757);
+var p = n(231757);
 n(706454);
 var h = n(572004),
-  m = n(70956),
-  g = n(630388),
+  g = n(70956),
+  m = n(630388),
   E = n(823379),
   v = n(49012),
   b = n(960048),
@@ -402,16 +402,16 @@ function ed(e) {
 function ef(e, t) {
   if (!ed(t)) return !1;
   let n = I.jn[t];
-  return (0, g.yE)(e.dismissedQuestContent, C.a_[n])
+  return (0, m.yE)(e.dismissedQuestContent, C.a_[n])
 }
 
-function ep(e) {
+function e_(e) {
   let t = e.rewardsConfig.rewards.find(e => e.type === c.w.COLLECTIBLE);
   return (null == t ? void 0 : t.type) === c.w.COLLECTIBLE ? t : null
 }
 
-function e_(e) {
-  let t = ep(e);
+function ep(e) {
+  let t = e_(e);
   if (null == t || !("expiresAt" in t) || null == t.expiresAt) return null;
   let n = new Date(e.expiresAt),
     i = new Date(t.expiresAt),
@@ -444,12 +444,12 @@ function eh(e) {
   return e.rewardsConfig.rewards.some(e => e.type === c.w.FRACTIONAL_PREMIUM)
 }
 
-function em(e) {
+function eg(e) {
   return e.rewardsConfig.rewards.some(e => e.type === c.w.VIRTUAL_CURRENCY)
 }
 
-function eg(e) {
-  return null != ep(e)
+function em(e) {
+  return null != e_(e)
 }
 
 function eE(e) {
@@ -554,7 +554,7 @@ function eL(e, t) {
         questContentCTA: t.ctaContent,
         questContentPosition: t.position,
         impressionId: t.impressionId
-      }), (0, p.Z)(n)
+      }), (0, _.Z)(n)
     }
   })
 }
@@ -574,7 +574,7 @@ let ex = (e, t) => {
     let s = null === (a = e.userStatus) || void 0 === a ? void 0 : null === (o = a.progress) || void 0 === o ? void 0 : null === (r = o[t.eventName]) || void 0 === r ? void 0 : null === (n = r.heartbeat) || void 0 === n ? void 0 : n.lastBeatAt;
     if (null == s || !ek(e)) return 0;
     let l = Date.now() - new Date(s).valueOf();
-    return (0, i.floor)(l / m.Z.Millis.SECOND, 2)
+    return (0, i.floor)(l / g.Z.Millis.SECOND, 2)
   },
   eU = (e, t) => {
     var n, r, i, o, a;
@@ -610,7 +610,7 @@ let ex = (e, t) => {
     return {
       progressSeconds: f,
       targetSeconds: d,
-      targetMinutes: Math.ceil(d / m.Z.Seconds.MINUTE),
+      targetMinutes: Math.ceil(d / g.Z.Seconds.MINUTE),
       percentComplete: eM(d, f),
       taskType: l
     }
@@ -728,7 +728,7 @@ function e2(e, t) {
     questContent: t.content,
     questContentCTA: t.ctaContent,
     impressionId: t.impressionId
-  }), (0, _.Z)({
+  }), (0, p.Z)({
     platformType: n,
     location: t.ctaContent
   })
@@ -747,12 +747,12 @@ function e3(e, t) {
     impressionId: t.impressionId
   });
   let r = tr(n);
-  if (1 === r.length) return (0, _.Z)({
+  if (1 === r.length) return (0, p.Z)({
     platformType: r.at(0)
   });
   d.Z.dispatch({
     type: "CONNECTIONS_GRID_MODAL_SHOW",
-    onComplete: e => (0, _.Z)({
+    onComplete: e => (0, p.Z)({
       platformType: e
     }),
     includedPlatformTypes: new Set(r)
@@ -831,13 +831,13 @@ function te(e) {
 
 function tt(e) {
   var t;
-  let n = null === (t = ep(e)) || void 0 === t ? void 0 : t.expirationMode;
+  let n = null === (t = e_(e)) || void 0 === t ? void 0 : t.expirationMode;
   return !!(0, T.U)() && !!n && j.has(n)
 }
 
 function tn(e) {
   var t;
-  return tt(e) && (null === (t = ep(e)) || void 0 === t ? void 0 : t.expirationMode) === l.n.PREMIUM_PERMANENT
+  return tt(e) && (null === (t = e_(e)) || void 0 === t ? void 0 : t.expirationMode) === l.n.PREMIUM_PERMANENT
 }
 
 function tr(e) {

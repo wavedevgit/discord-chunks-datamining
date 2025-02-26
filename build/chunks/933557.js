@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   F6: () => d,
-  ZP: () => _,
+  ZP: () => p,
   le: () => f,
-  mA: () => p
+  mA: () => _
 }), n(47120), n(757143), n(301563);
 var r = n(442837),
   i = n(353926),
@@ -24,15 +24,15 @@ function d(e, t, n) {
       let [a] = e.recipients.map(t.getUser).filter(s.lm);
       if (null == a) return "???";
       let d = n.getNickname(a.id),
-        p = null !== (o = null != d ? d : l.ZP.getName(a)) && void 0 !== o ? o : "???";
-      return r ? "@".concat(p) : p;
+        _ = null !== (o = null != d ? d : l.ZP.getName(a)) && void 0 !== o ? o : "???";
+      return r ? "@".concat(_) : _;
     case c.d4z.GROUP_DM:
       if ("" !== e.name) return e.name;
-      let _ = e.recipients.map(t.getUser).filter(s.lm).map(e => {
+      let p = e.recipients.map(t.getUser).filter(s.lm).map(e => {
         var t;
         return null !== (t = n.getNickname(e.id)) && void 0 !== t ? t : l.ZP.getName(e)
       });
-      if (_.length > 0) return _.join(", ");
+      if (p.length > 0) return p.join(", ");
       return u.NW.formatToPlainString(u.t["9Uk8PD"], {
         name: l.ZP.getName(t.getCurrentUser())
       });
@@ -60,11 +60,11 @@ function f(e) {
   return e.replace(/\\/g, "\\\\").replace(/"/g, '\\"')
 }
 
-function p(e) {
+function _(e) {
   return e.replace(/\\"/g, '"').replace(/\\\\/g, "\\")
 }
 
-function _(e) {
+function p(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   return (0, r.e7)([a.default, i.Z, o.Z], () => null == e ? null : d(e, a.default, o.Z, t))
 }

@@ -1,11 +1,11 @@
-/** Chunk was on 63061 **/
+/** Chunk was on 65936 **/
 n.d(t, {
   Z: () => m
 }), n(47120);
 var r = n(570140),
   i = n(447543),
-  o = n(87051),
-  l = n(18438),
+  l = n(87051),
+  o = n(18438),
   s = n(44609),
   a = n(731971),
   c = n(695346),
@@ -50,11 +50,11 @@ let m = {
           let t = new Set((0, E._o)());
           t.add(e.guild.id), c.SE.updateSetting(Array.from(t))
         }
-        null != n && n.length > 0 && (0, l.iq)(e.guild.id, {
+        null != n && n.length > 0 && (0, o.iq)(e.guild.id, {
           nick: n
         }), (0, s.m4)({
           location: "acceptInvite"
-        }) && o.Z.updateGuildNotificationSettings(e.guild.id, {
+        }) && l.Z.updateGuildNotificationSettings(e.guild.id, {
           muted: m
         }, _.ZB.Muted)
       }
@@ -75,16 +75,16 @@ let m = {
       let n = (0, a.y)(),
         r = (0, a.h6)(),
         i = (0, a.U1)(),
-        o = (0, a.yS)(),
-        l = (0, a.aP)();
+        l = (0, a.yS)(),
+        o = (0, a.aP)();
       u.default.track(p.rMx.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
         invite_code: e,
         guild_id: t,
         nickname_present: null != n && n.length > 0,
         dms_allowed: r,
         activity_status_shown: i,
-        muted_server: o,
-        changed_from_default: l
+        muted_server: l,
+        changed_from_default: o
       })
     }(0, a.oE)(), r.Z.dispatch({
       type: "INVITE_MODAL_CLOSE"

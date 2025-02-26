@@ -14,7 +14,7 @@ var r = n(152057),
   d = n(994752),
   f = n(276344);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,10 +22,10 @@ function p(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = r.v.LEAGUE_OF_LEGENDS_WEEKLY,
+let p = r.v.LEAGUE_OF_LEGENDS_WEEKLY,
   h = 3,
-  m = 5,
-  g = 9e5,
+  g = 5,
+  m = 9e5,
   E = new Map,
   v = new Set,
   b = new Map;
@@ -44,7 +44,7 @@ function O(e, t) {
       location: "GuildLeaderboardManager"
     }) || !c.Z.isFocused() || !a.Z.isConnected()) return !1;
   let i = s.Z.getIdleSince();
-  return !(null != i && Date.now() - i > g)
+  return !(null != i && Date.now() - i > m)
 }
 
 function S() {
@@ -55,13 +55,13 @@ function I() {
   var e;
   S();
   let t = l.Z.getGuildId();
-  if (null == t || !O(t, _)) return;
-  let n = d.Z.getLeaderboardResponse(t, _),
+  if (null == t || !O(t, p)) return;
+  let n = d.Z.getLeaderboardResponse(t, p),
     r = setTimeout(() => T({
       guildId: t,
-      leaderboardId: _
+      leaderboardId: p
     }), Math.max(0, (null !== (e = null == n ? void 0 : n.expires_at) && void 0 !== e ? e : Date.now()) - Date.now())),
-    i = y(t, _);
+    i = y(t, p);
   E.set(i, r)
 }
 async function T(e) {
@@ -103,7 +103,7 @@ async function T(e) {
     var a;
     let e = (null !== (a = b.get(o)) && void 0 !== a ? a : 0) + 1;
     if (b.set(o, e), !O(t, n)) return;
-    let r = 1e3 * Math.pow(m, e);
+    let r = 1e3 * Math.pow(g, e);
     E.set(o, setTimeout(() => T({
       guildId: t,
       leaderboardId: n,
@@ -124,7 +124,7 @@ class C extends o.Z {
     return T(e)
   }
   constructor(...e) {
-    super(...e), p(this, "actions", {
+    super(...e), _(this, "actions", {
       POST_CONNECTION_OPEN: A,
       CONNECTION_CLOSED: N,
       WINDOW_FOCUS: N,

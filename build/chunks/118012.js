@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -51,7 +51,7 @@ function d(e, t) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,14 +59,14 @@ function f(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = Object.freeze({
+let p = Object.freeze({
     STANDARD: a.colorStandard,
     MUTED: a.colorMuted,
     ERROR: a.colorError,
@@ -91,28 +91,28 @@ let _ = Object.freeze({
     SIZE_24: s.size24,
     SIZE_32: s.size32
   }),
-  m = e => {
+  g = e => {
     let {
       className: t,
-      color: n = _.STANDARD,
+      color: n = p.STANDARD,
       size: i = h.SIZE_14,
       tag: s = "div",
       selectable: l = !1,
       strong: u = !1,
-      children: p,
-      style: m,
-      "aria-label": g
+      children: _,
+      style: g,
+      "aria-label": m
     } = e, E = f(e, ["className", "color", "size", "tag", "selectable", "strong", "children", "style", "aria-label"]);
     return (0, r.jsx)(s, d(c({
-      "aria-label": g,
+      "aria-label": m,
       className: o()(n, i, t, {
         [a.selectable]: l,
         [a.strong]: u
       }),
-      style: m
+      style: g
     }, E), {
-      children: p
+      children: _
     }))
   };
-m.Colors = _, m.Sizes = h;
-let g = m
+g.Colors = p, g.Sizes = h;
+let m = g

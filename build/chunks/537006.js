@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(243778),
   d = n(197115),
   f = n(703656),
-  p = n(785717),
-  _ = n(652853),
+  _ = n(785717),
+  p = n(652853),
   h = n(475413),
-  m = n(228168),
-  g = n(981631),
+  g = n(228168),
+  m = n(981631),
   E = n(921944),
   v = n(474936),
   b = n(388032),
@@ -49,7 +49,7 @@ function S(e) {
     newestAnalyticsLocation: a
   } = (0, l.ZP)(), {
     trackUserProfileAction: u
-  } = (0, p.KZ)();
+  } = (0, _.KZ)();
   return (0, r.jsxs)("div", {
     className: y.upsellButtons,
     children: [(0, r.jsx)("div", {
@@ -64,8 +64,8 @@ function S(e) {
         buttonShineClassName: y.viewPremiumPerksButtonShine,
         onClick: () => {
           u({
-            action: m.yM.VIEW_PREMIUM_PERKS
-          }), (0, f.uL)(g.Z5c.APPLICATION_STORE), null == i || i()
+            action: g.yM.VIEW_PREMIUM_PERKS
+          }), (0, f.uL)(m.Z5c.APPLICATION_STORE), null == i || i()
         },
         children: [(0, r.jsx)(s.SrA, {
           size: "xs",
@@ -74,13 +74,13 @@ function S(e) {
       }) : (0, r.jsx)(d.Z, {
         onClick: () => {
           u({
-            action: m.yM.GET_PREMIUM
+            action: g.yM.GET_PREMIUM
           }), null == i || i()
         },
         buttonText: b.NW.string(b.t.x6rkDg),
         subscriptionTier: v.Si.TIER_2,
         premiumModalAnalyticsLocation: {
-          section: g.jXE.USER_PROFILE
+          section: m.jXE.USER_PROFILE
         },
         className: y.upsellButton,
         size: t ? s.zxk.Sizes.TINY : s.zxk.Sizes.SMALL,
@@ -92,7 +92,7 @@ function S(e) {
       className: y.upsellButtonWrapper,
       children: (0, r.jsx)(h.tG, {
         icon: s.EOn,
-        action: m.yM.VISIT_SHOP,
+        action: g.yM.VISIT_SHOP,
         text: b.NW.string(b.t.b2d0Nz),
         look: s.zxk.Looks.FILLED,
         color: s.zxk.Colors.PRIMARY,
@@ -116,7 +116,7 @@ let I = function(e) {
     className: i
   } = e, {
     profileType: l
-  } = (0, _.z)(), c = l === m.y0.FULL_SIZE;
+  } = (0, p.z)(), c = l === g.y0.FULL_SIZE;
   return (0, r.jsx)(u.ZP, {
     contentTypes: [a.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS],
     children: e => {

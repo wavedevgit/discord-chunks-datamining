@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function v(e, t) {
   }), e
 }
 
-function y(e) {
+function v(e) {
   let {
     target: t
   } = e, a = (0, l.Ie)("fakedoor"), h = i.useCallback(() => {
@@ -57,16 +57,16 @@ function y(e) {
       let {
         default: e
       } = await Promise.all([n.e("22862"), n.e("75715")]).then(n.bind(n, 646202));
-      return n => (0, r.jsx)(e, v(b({}, n), {
+      return n => (0, r.jsx)(e, y(b({}, n), {
         target: t
       }))
     })
-  }, [t]), y = i.useCallback(e => {
+  }, [t]), v = i.useCallback(e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
       } = await n.e("39612").then(n.bind(n, 761624));
-      return n => (0, r.jsx)(e, v(b({}, n), {
+      return n => (0, r.jsx)(e, y(b({}, n), {
         signupTarget: t
       }))
     })
@@ -99,9 +99,9 @@ function y(e) {
               count: 1,
               color: u.Z.BG_BRAND
             }),
-            children: (0, r.jsx)(o.LYs, v(b({}, a), {
+            children: (0, r.jsx)(o.LYs, y(b({}, a), {
               onClick: h,
-              onContextMenu: y,
+              onContextMenu: v,
               children: (0, r.jsx)(o.Dkj, {
                 color: u.Z.TEXT_NORMAL
               })
@@ -121,7 +121,7 @@ function y(e) {
 
 function O() {
   let e = (0, a.e7)([h.Z], () => h.Z.getActiveUserSignUp());
-  return null == e ? null : (0, r.jsx)(y, {
+  return null == e ? null : (0, r.jsx)(v, {
     target: e
   })
 }

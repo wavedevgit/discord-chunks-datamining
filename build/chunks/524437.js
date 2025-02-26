@@ -7,13 +7,13 @@ n.d(t, {
   Fm: () => ec,
   JY: () => eD,
   Me: () => et,
-  Ns: () => _,
+  Ns: () => p,
   Pi: () => E,
   Q2: () => v,
   Q4: () => f,
   Us: () => b,
   X: () => u,
-  Xr: () => p,
+  Xr: () => _,
   aV: () => eR,
   az: () => Z,
   bE: () => eo,
@@ -47,19 +47,19 @@ var r = n(230367),
   f = function(e) {
     return e[e.UNSET_EXPLICIT_CONTENT_REDACTION = 0] = "UNSET_EXPLICIT_CONTENT_REDACTION", e[e.SHOW = 1] = "SHOW", e[e.BLUR = 2] = "BLUR", e[e.BLOCK = 3] = "BLOCK", e
   }({}),
-  p = function(e) {
+  _ = function(e) {
     return e[e.DEFAULT_UNSET = 0] = "DEFAULT_UNSET", e[e.DISABLED = 1] = "DISABLED", e[e.NON_FRIENDS = 2] = "NON_FRIENDS", e[e.FRIENDS_AND_NON_FRIENDS = 3] = "FRIENDS_AND_NON_FRIENDS", e
   }({}),
-  _ = function(e) {
+  p = function(e) {
     return e[e.NOTIFICATIONS_ENABLED = 0] = "NOTIFICATIONS_ENABLED", e[e.ONLY_DMS = 1] = "ONLY_DMS", e[e.NOTIFICATIONS_DISABLED = 2] = "NOTIFICATIONS_DISABLED", e
   }({}),
   h = function(e) {
     return e[e.OFF = 0] = "OFF", e[e.ON_FOR_LARGE_GUILDS = 1] = "ON_FOR_LARGE_GUILDS", e[e.ON = 2] = "ON", e
   }({}),
-  m = function(e) {
+  g = function(e) {
     return e[e.OFF_FOR_NEW_GUILDS = 0] = "OFF_FOR_NEW_GUILDS", e[e.ON_FOR_NEW_GUILDS = 1] = "ON_FOR_NEW_GUILDS", e
   }({}),
-  g = function(e) {
+  m = function(e) {
     return e[e.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET = 0] = "SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET", e[e.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL = 1] = "SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL", e[e.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME = 2] = "SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME", e[e.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE = 3] = "SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE", e
   }({}),
   E = function(e) {
@@ -459,7 +459,7 @@ class w extends a.C {
           o.joinSound = eG.internalBinaryRead(e, e.uint32(), n, o.joinSound);
           break;
         case 7:
-          o.mobileRedesignChannelListSettings = eg.internalBinaryRead(e, e.uint32(), n, o.mobileRedesignChannelListSettings);
+          o.mobileRedesignChannelListSettings = em.internalBinaryRead(e, e.uint32(), n, o.mobileRedesignChannelListSettings);
           break;
         case 8:
           o.disableRaidAlertPush = e.bool();
@@ -503,7 +503,7 @@ class w extends a.C {
   }
   internalBinaryWrite(e, t, n) {
     for (let i of Object.keys(e.channels)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), j.internalBinaryWrite(e.channels[i], t, n), t.join().join();
-    0 !== e.hubProgress && t.tag(2, r.TD.Varint).uint32(e.hubProgress), 0 !== e.guildOnboardingProgress && t.tag(3, r.TD.Varint).uint32(e.guildOnboardingProgress), e.guildRecentsDismissedAt && l.E.internalBinaryWrite(e.guildRecentsDismissedAt, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.dismissedGuildContent.length && t.tag(5, r.TD.LengthDelimited).bytes(e.dismissedGuildContent), e.joinSound && eG.internalBinaryWrite(e.joinSound, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.mobileRedesignChannelListSettings && eg.internalBinaryWrite(e.mobileRedesignChannelListSettings, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), !1 !== e.disableRaidAlertPush && t.tag(8, r.TD.Varint).bool(e.disableRaidAlertPush), !1 !== e.disableRaidAlertNag && t.tag(9, r.TD.Varint).bool(e.disableRaidAlertNag), e.customNotificationSoundConfig && G.internalBinaryWrite(e.customNotificationSoundConfig, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), !1 !== e.leaderboardsDisabled && t.tag(11, r.TD.Varint).bool(e.leaderboardsDisabled);
+    0 !== e.hubProgress && t.tag(2, r.TD.Varint).uint32(e.hubProgress), 0 !== e.guildOnboardingProgress && t.tag(3, r.TD.Varint).uint32(e.guildOnboardingProgress), e.guildRecentsDismissedAt && l.E.internalBinaryWrite(e.guildRecentsDismissedAt, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.dismissedGuildContent.length && t.tag(5, r.TD.LengthDelimited).bytes(e.dismissedGuildContent), e.joinSound && eG.internalBinaryWrite(e.joinSound, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.mobileRedesignChannelListSettings && em.internalBinaryWrite(e.mobileRedesignChannelListSettings, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), !1 !== e.disableRaidAlertPush && t.tag(8, r.TD.Varint).bool(e.disableRaidAlertPush), !1 !== e.disableRaidAlertNag && t.tag(9, r.TD.Varint).bool(e.disableRaidAlertNag), e.customNotificationSoundConfig && G.internalBinaryWrite(e.customNotificationSoundConfig, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), !1 !== e.leaderboardsDisabled && t.tag(11, r.TD.Varint).bool(e.leaderboardsDisabled);
     let i = n.writeUnknownFields;
     return !1 !== i && (!0 == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -546,7 +546,7 @@ class w extends a.C {
       no: 7,
       name: "mobile_redesign_channel_list_settings",
       kind: "message",
-      T: () => eg
+      T: () => em
     }, {
       no: 8,
       name: "disable_raid_alert_push",
@@ -1493,7 +1493,7 @@ class ee extends a.C {
       no: 27,
       name: "dm_spam_filter_v2",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.DmSpamFilterV2", p]
+      T: () => ["discord_protos.discord_users.v1.DmSpamFilterV2", _]
     }, {
       no: 28,
       name: "include_stickers_in_autocomplete",
@@ -1606,7 +1606,7 @@ class en extends a.C {
       no: 7,
       name: "reaction_notifications",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.ReactionNotificationType", _]
+      T: () => ["discord_protos.discord_users.v1.ReactionNotificationType", p]
     }])
   }
 }
@@ -1874,7 +1874,7 @@ class ei extends a.C {
       no: 25,
       name: "guilds_leaderboard_opt_out_default",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.GuildsLeaderboardOptOutDefault", m]
+      T: () => ["discord_protos.discord_users.v1.GuildsLeaderboardOptOutDefault", g]
     }, {
       no: 26,
       name: "allow_game_friend_dms_in_discord",
@@ -1889,7 +1889,7 @@ class ei extends a.C {
       no: 28,
       name: "slayer_sdk_receive_dms_in_game",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.SlayerSDKReceiveInGameDMs", g]
+      T: () => ["discord_protos.discord_users.v1.SlayerSDKReceiveInGameDMs", m]
     }])
   }
 }
@@ -2009,7 +2009,7 @@ class eu extends a.C {
           o.status = s.Gm.internalBinaryRead(e, e.uint32(), n, o.status);
           break;
         case 2:
-          o.customStatus = ep.internalBinaryRead(e, e.uint32(), n, o.customStatus);
+          o.customStatus = e_.internalBinaryRead(e, e.uint32(), n, o.customStatus);
           break;
         case 3:
           o.showCurrentGame = s.D5.internalBinaryRead(e, e.uint32(), n, o.showCurrentGame);
@@ -2027,7 +2027,7 @@ class eu extends a.C {
     return o
   }
   internalBinaryWrite(e, t, n) {
-    e.status && s.Gm.internalBinaryWrite(e.status, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.customStatus && ep.internalBinaryWrite(e.customStatus, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.showCurrentGame && s.D5.internalBinaryWrite(e.showCurrentGame, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), "0" !== e.statusExpiresAtMs && t.tag(4, r.TD.Bit64).fixed64(e.statusExpiresAtMs);
+    e.status && s.Gm.internalBinaryWrite(e.status, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.customStatus && e_.internalBinaryWrite(e.customStatus, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.showCurrentGame && s.D5.internalBinaryWrite(e.showCurrentGame, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), "0" !== e.statusExpiresAtMs && t.tag(4, r.TD.Bit64).fixed64(e.statusExpiresAtMs);
     let i = n.writeUnknownFields;
     return !1 !== i && (!0 == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -2041,7 +2041,7 @@ class eu extends a.C {
       no: 2,
       name: "custom_status",
       kind: "message",
-      T: () => ep
+      T: () => e_
     }, {
       no: 3,
       name: "show_current_game",
@@ -2134,8 +2134,8 @@ class ef extends a.C {
     }])
   }
 }
-let ep = new ef;
-class e_ extends a.C {
+let e_ = new ef;
+class ep extends a.C {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, o.C, {
@@ -2183,8 +2183,8 @@ class e_ extends a.C {
     }])
   }
 }
-let eh = new e_;
-class em extends a.C {
+let eh = new ep;
+class eg extends a.C {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, o.C, {
@@ -2232,7 +2232,7 @@ class em extends a.C {
     }])
   }
 }
-let eg = new em;
+let em = new eg;
 class eE extends a.C {
   create(e) {
     let t = {

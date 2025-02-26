@@ -22,21 +22,21 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p() {
+function _() {
   return (0, u.wt)({
     location: "VoiceFilterLoopbackManager",
     autoTrackExposure: !1
   })
 }
-class _ extends i.Z {
+class p extends i.Z {
   handleExperimentStateChange() {
-    !p() && a.Z.getVoiceFilterPlaybackEnabled() && (0, c._j)(!1)
+    !_() && a.Z.getVoiceFilterPlaybackEnabled() && (0, c._j)(!1)
   }
   handleRtcConnectionState(e) {
     let {
       state: t
     } = e, n = a.Z.getActiveVoiceFilter();
-    if (!p() || null == n) return;
+    if (!_() || null == n) return;
     let i = a.Z.getVoiceFilterPlaybackEnabled();
     t === d.hes.RTC_CONNECTED ? r.Z.setLoopback("voice_filter", i) : t === d.hes.RTC_DISCONNECTED && r.Z.setLoopback("voice_filter", !1)
   }
@@ -64,4 +64,4 @@ class _ extends i.Z {
     }), f(this, "stores", new Map().set(o.Z, this.handleExperimentStateChange))
   }
 }
-let h = new _
+let h = new p

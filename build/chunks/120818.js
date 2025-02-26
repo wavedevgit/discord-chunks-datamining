@@ -1,6 +1,6 @@
 /** Chunk was on 30829 **/
 n.d(t, {
-  T: () => v
+  T: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -24,17 +24,17 @@ function b(e, t) {
     children: e
   }, t)
 }
-let v = i.memo(function(e) {
+let y = i.memo(function(e) {
   var t, n;
   let {
-    guild: v
-  } = e, y = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(v.id), [v.id]), O = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(v.id)), j = i.useMemo(() => {
-    if (null == y || null == O) return 0;
+    guild: y
+  } = e, v = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(y.id), [y.id]), O = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(y.id)), j = i.useMemo(() => {
+    if (null == v || null == O) return 0;
     let e = 0;
-    return y.forEach(t => {
+    return v.forEach(t => {
       null != O[t.channelId] && e++
     }), e
-  }, [O, y]), _ = null == y ? 0 : y.length, C = (0, l.JA)("progress-bar-".concat(v.id));
+  }, [O, v]), _ = null == v ? 0 : v.length, C = (0, l.JA)("progress-bar-".concat(y.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(a.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -62,7 +62,7 @@ let v = i.memo(function(e) {
       },
       className: m.progressBarContainer,
       onClick: function() {
-        (0, d.uL)(h.Z5c.CHANNEL(v.id, f.oC.GUILD_HOME))
+        (0, d.uL)(h.Z5c.CHANNEL(y.id, f.oC.GUILD_HOME))
       },
       children: [(0, r.jsxs)("div", {
         className: m.progressBarText,

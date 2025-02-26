@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(692547),
   d = n(481060),
   f = n(239091),
-  p = n(607070),
-  _ = n(134433),
+  _ = n(607070),
+  p = n(134433),
   h = n(111028),
-  m = n(91218),
-  g = n(518738),
+  g = n(91218),
+  m = n(518738),
   E = n(388032),
   v = n(963082);
 
@@ -90,11 +90,11 @@ let N = i.forwardRef(function(e, t) {
     onMouseDown: w
   } = e, L = (0, s.JA)(C.id), {
     tabIndex: x
-  } = L, M = I(L, ["tabIndex"]), k = (0, g.p9)({
+  } = L, M = I(L, ["tabIndex"]), k = (0, m.p9)({
     roleId: C.id,
     size: 16,
     guildId: P
-  }), j = (0, c.e7)([p.Z], () => p.Z.roleStyle), U = (null === (o = C.tags) || void 0 === o ? void 0 : o.guild_connections) === null, G = i.useCallback(e => {
+  }), j = (0, c.e7)([_.Z], () => _.Z.roleStyle), U = (null === (o = C.tags) || void 0 === o ? void 0 : o.guild_connections) === null, G = i.useCallback(e => {
     (0, f.jW)(e, async () => {
       let {
         default: e
@@ -105,7 +105,7 @@ let N = i.forwardRef(function(e, t) {
       }))
     })
   }, [C.id]), B = (0, d.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(), V = null !== (b = C.colorString) && void 0 !== b ? b : B, F = null !== (O = (0, l.wK)(V, .6)) && void 0 !== O ? O : void 0, Z = u.Z.unsafe_rawColors.WHITE_500.css, H = (0, l._i)(V);
-  null != H && .3 > (0, l.Bd)(H) && (Z = u.Z.unsafe_rawColors.PRIMARY_630.css), T = U ? (0, r.jsx)(_.Z, {
+  null != H && .3 > (0, l.Bd)(H) && (Z = u.Z.unsafe_rawColors.PRIMARY_630.css), T = U ? (0, r.jsx)(p.Z, {
     className: v.roleFlowerStar,
     iconClassName: N ? v.roleVerifiedIcon : void 0,
     color: V,
@@ -167,7 +167,7 @@ let N = i.forwardRef(function(e, t) {
       "aria-label": C.name,
       tabIndex: x
     }, M), {
-      children: [Y(), null != k ? (0, r.jsx)(m.Z, S(y({
+      children: [Y(), null != k ? (0, r.jsx)(g.Z, S(y({
         className: v.roleIcon
       }, k), {
         enableTooltip: !1

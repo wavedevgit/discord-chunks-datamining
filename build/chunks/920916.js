@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(481060),
   d = n(809206),
   f = n(607070),
-  p = n(235400),
-  _ = n(204418),
+  _ = n(235400),
+  p = n(204418),
   h = n(583434),
-  m = n(530618),
-  g = n(70097),
+  g = n(530618),
+  m = n(70097),
   E = n(454585),
   v = n(164946),
   b = n(369111),
@@ -103,19 +103,19 @@ function V(e) {
     onClose: o,
     quest: l,
     location: d,
-    reward: p,
-    decoration: _,
+    reward: _,
+    decoration: p,
     onUseNow: h,
-    preview: g
-  } = e, E = i.useRef(null), [v, b] = i.useState(null), y = i.useRef(new s.qA), S = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), T = (0, c.e7)([O.default], () => O.default.getCurrentUser()), A = i.useMemo(() => (0, C.fh)(l, C.eC.HERO), [l]), R = (null === (t = l.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [D, L] = i.useState(!0 === g || R ? "claimed" : "loading");
+    preview: m
+  } = e, E = i.useRef(null), [v, b] = i.useState(null), y = i.useRef(new s.qA), S = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), T = (0, c.e7)([O.default], () => O.default.getCurrentUser()), A = i.useMemo(() => (0, C.fh)(l, C.eC.HERO), [l]), R = (null === (t = l.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [D, L] = i.useState(!0 === m || R ? "claimed" : "loading");
   i.useEffect(() => {
-    R || !0 === g || (0, I.QB)(l.id, N.y$.CROSS_PLATFORM, d).then(() => L("claimed")).catch(() => L("error"))
-  }, [l, d, R, g]);
+    R || !0 === m || (0, I.QB)(l.id, N.y$.CROSS_PLATFORM, d).then(() => L("claimed")).catch(() => L("error"))
+  }, [l, d, R, m]);
   let M = () => {
       L("applying"), h().finally(o)
     },
-    k = !0 === g && null === _ && (null == p ? void 0 : p.skuId) !== "",
-    j = null == _ && !0 !== g,
+    k = !0 === m && null === p && (null == _ ? void 0 : _.skuId) !== "",
+    j = null == p && !0 !== m,
     U = null == T || j || k || "loading" === D,
     G = !S && !R && "claimed" === D;
   return (0, r.jsxs)(r.Fragment, {
@@ -142,14 +142,14 @@ function V(e) {
         }) : (0, r.jsx)(Z, {
           quest: l,
           user: T,
-          decoration: _,
+          decoration: p,
           backgroundUrl: A.url,
           isSaving: "applying" === D,
           onClose: o,
           onConfirm: M
         })
       })
-    }), G && (0, r.jsx)(m.Z, {
+    }), G && (0, r.jsx)(g.Z, {
       confettiTarget: E.current,
       confettiCanvas: v,
       sprites: w.CA,
@@ -192,7 +192,7 @@ function Z(e) {
     className: x.claimedRootContainer,
     children: [(0, r.jsxs)("div", {
       className: x.headerContainer,
-      children: [(0, r.jsx)(g.Z, {
+      children: [(0, r.jsx)(m.Z, {
         className: x.headerBackground,
         autoPlay: !1,
         loop: !1,
@@ -214,7 +214,7 @@ function Z(e) {
         className: x.footerBody,
         children: [(0, r.jsx)("div", {
           className: x.previewContainer,
-          children: (0, r.jsx)(_.Z, {
+          children: (0, r.jsx)(p.Z, {
             user: n,
             guildId: null,
             avatarDecorationOverride: i,
@@ -252,7 +252,7 @@ function H(e) {
     transitionState: l,
     preview: c
   } = e, u = i.useMemo(() => (0, A.xn)(o.config), [o]), [d, f] = B(null !== (n = null == u ? void 0 : u.skuId) && void 0 !== n ? n : null);
-  return null == u ? null : (null === (t = o.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? (0, r.jsx)(p.default, {
+  return null == u ? null : (null === (t = o.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? (0, r.jsx)(_.default, {
     transitionState: l,
     onCloseModal: G,
     onClose: s,

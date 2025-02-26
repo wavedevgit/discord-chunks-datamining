@@ -14,11 +14,11 @@ var i = n(120356),
   u = n(849522),
   d = n(639119),
   f = n(594174),
-  p = n(74538),
-  _ = n(694320),
+  _ = n(74538),
+  p = n(694320),
   h = n(981631),
-  m = n(474936),
-  g = n(388032),
+  g = n(474936),
+  m = n(388032),
   E = n(397415);
 
 function v(e, t, n) {
@@ -68,9 +68,9 @@ function S(e) {
     maxCharacterCount: I,
     showRemainingCharsAfterCount: T,
     className: N
-  } = e, A = (0, a.e7)([f.default], () => p.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), C = (0, u.Z)(), R = null != I ? I : C, P = null !== (v = null != T ? T : I) && void 0 !== v ? v : C / 10, D = S.length, w = null != y.upsellLongMessages && (null != D ? D : 0) > h.J6R && A, L = null != y.upsellLongMessages && !A, x = (null === (n = (0, d.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === m.Si.TIER_2, M = R - D, k = M > P, j = M < 0 && x, U = 0 === M ? g.NW.string(g.t.tU6YQ0) : M > 0 ? g.NW.formatToPlainString(g.t.qH8uFR, {
+  } = e, A = (0, a.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), C = (0, u.Z)(), R = null != I ? I : C, P = null !== (v = null != T ? T : I) && void 0 !== v ? v : C / 10, D = S.length, w = null != y.upsellLongMessages && (null != D ? D : 0) > h.J6R && A, L = null != y.upsellLongMessages && !A, x = (null === (n = (0, d.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === g.Si.TIER_2, M = R - D, k = M > P, j = M < 0 && x, U = 0 === M ? m.NW.string(m.t.tU6YQ0) : M > 0 ? m.NW.formatToPlainString(m.t.qH8uFR, {
     count: M
-  }) : g.NW.string(g.t.YSRIqa), {
+  }) : m.NW.string(m.t.YSRIqa), {
     analyticsLocations: G
   } = (0, c.ZP)(l.Z.CHARACTER_COUNT);
   if (!(w && M >= 0 || !k || L && !k)) return null;
@@ -82,7 +82,7 @@ function S(e) {
       children: [(0, r.jsxs)("div", {
         className: E.flairContainer,
         children: [w && B ? (0, r.jsx)(s.ua7, {
-          text: g.NW.formatToPlainString(g.t.vcvHa2, {
+          text: m.NW.formatToPlainString(m.t.vcvHa2, {
             maxLength: R
           }),
           position: "top",
@@ -104,10 +104,10 @@ function S(e) {
           }))
         })]
       }), (0, r.jsx)(s.nn4, {
-        children: g.NW.format(g.t.qH8uFR, {
+        children: m.NW.format(m.t.qH8uFR, {
           count: M
         })
-      }), L && !k ? (0, r.jsx)(_.Z, {
+      }), L && !k ? (0, r.jsx)(p.Z, {
         className: E.upsell,
         iconOnly: (null === (i = y.upsellLongMessages) || void 0 === i ? void 0 : i.iconOnly) || !1,
         remaining: M

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  S: () => p,
+  S: () => _,
   Z: () => N
 }), n(47120);
 var r, i = n(442837),
@@ -21,23 +21,23 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = 100;
-var p = function(e) {
+var _ = function(e) {
   return e[e.SendMessage = 0] = "SendMessage", e[e.CreateThread = 1] = "CreateThread", e
 }({});
-let _ = {
+let p = {
   0: {},
   1: {}
 };
 
 function h(e, t, n) {
-  if (m(e, t), E(e, t) || n <= 0) return;
+  if (g(e, t), E(e, t) || n <= 0) return;
   let r = n + Date.now();
-  _[t][e.id] = {
+  p[t][e.id] = {
     rateLimitPerUser: e.rateLimitPerUser,
     cooldownMs: n,
     cooldownEndTimestamp: r,
     timer: new o.V7
-  }, _[t][e.id].timer.start(1e3, () => {
+  }, p[t][e.id].timer.start(1e3, () => {
     a.Z.dispatch({
       type: "SLOWMODE_SET_COOLDOWN",
       channelId: e.id,
@@ -47,11 +47,11 @@ function h(e, t, n) {
   }, !0)
 }
 
-function m(e, t) {
-  null != _[t][e.id] && (_[t][e.id].timer.stop(), delete _[t][e.id])
+function g(e, t) {
+  null != p[t][e.id] && (p[t][e.id].timer.stop(), delete p[t][e.id])
 }
 
-function g(e, t) {
+function m(e, t) {
   let n = l.Z.getChannel(e);
   if (null == n) return !1;
   h(n, t, 0 === n.rateLimitPerUser ? 0 : n.rateLimitPerUser * s.Z.Millis.SECOND + f)
@@ -65,7 +65,7 @@ function v(e) {
   let {
     channelId: t
   } = e;
-  return g(t, 0)
+  return m(t, 0)
 }
 
 function b(e) {
@@ -80,7 +80,7 @@ function y(e) {
     channelId: t,
     slowmodeType: n
   } = e;
-  return g(t, n)
+  return m(t, n)
 }
 
 function O(e) {
@@ -100,7 +100,7 @@ function S(e) {
   [0, 1].forEach(e => {
     for (let r of t) {
       var n;
-      let t = _[e][r.id],
+      let t = p[e][r.id],
         i = r.rateLimitPerUser;
       null != t && t.rateLimitPerUser !== i && h(r, e, Math.min(null !== (n = null == t ? void 0 : t.cooldownMs) && void 0 !== n ? n : 0, i * s.Z.Millis.SECOND))
     }
@@ -109,7 +109,7 @@ function S(e) {
 
 function I() {
   [0, 1].forEach(e => {
-    Object.keys(_[e]).forEach(t => _[e][t].timer.stop()), _[e] = {}
+    Object.keys(p[e]).forEach(t => p[e][t].timer.stop()), p[e] = {}
   })
 }
 class T extends(r = i.ZP.Store) {
@@ -117,7 +117,7 @@ class T extends(r = i.ZP.Store) {
     this.waitFor(l.Z)
   }
   getSlowmodeCooldownGuess(e, t) {
-    let n = _[null != t ? t : 0][e];
+    let n = p[null != t ? t : 0][e];
     return null != n ? n.cooldownMs : 0
   }
   isChannelOnCooldown(e, t) {

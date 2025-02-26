@@ -33,14 +33,14 @@ function i() {
     }
   }
 
-  function p(e, t, n, r) {
+  function _(e, t, n, r) {
     var i = Object.create((t && t.prototype instanceof b ? t : b).prototype);
     return s(i, "_invoke", {
       value: R(e, n, new L(r || []))
     }), i
   }
 
-  function _(e, t, n) {
+  function p(e, t, n) {
     try {
       return {
         type: "normal",
@@ -53,10 +53,10 @@ function i() {
       }
     }
   }
-  n.wrap = p;
+  n.wrap = _;
   var h = "suspendedStart",
-    m = "suspendedYield",
-    g = "executing",
+    g = "suspendedYield",
+    m = "executing",
     E = "completed",
     v = {};
 
@@ -86,7 +86,7 @@ function i() {
     var n;
 
     function i(n, o, s, l) {
-      var c = _(e[n], e, o);
+      var c = p(e[n], e, o);
       if ("throw" !== c.type) {
         var u = c.arg,
           d = u.value;
@@ -117,7 +117,7 @@ function i() {
   function R(e, n, r) {
     var i = h;
     return function(o, a) {
-      if (i === g) throw Error("Generator is already running");
+      if (i === m) throw Error("Generator is already running");
       if (i === E) {
         if ("throw" === o) throw a;
         return {
@@ -139,10 +139,10 @@ function i() {
           if (i === h) throw i = E, r.arg;
           r.dispatchException(r.arg)
         } else "return" === r.method && r.abrupt("return", r.arg);
-        i = g;
-        var c = _(e, n, r);
+        i = m;
+        var c = p(e, n, r);
         if ("normal" === c.type) {
-          if (i = r.done ? E : m, c.arg === v) continue;
+          if (i = r.done ? E : g, c.arg === v) continue;
           return {
             value: c.arg,
             done: r.done
@@ -157,7 +157,7 @@ function i() {
     var r = n.method,
       i = e.iterator[r];
     if (i === t) return n.delegate = null, "throw" === r && e.iterator.return && (n.method = "return", n.arg = t, P(e, n), "throw" === n.method) || "return" !== r && (n.method = "throw", n.arg = TypeError("The iterator does not provide a '" + r + "' method")), v;
-    var o = _(i, e.iterator, n.arg);
+    var o = p(i, e.iterator, n.arg);
     if ("throw" === o.type) return n.method = "throw", n.arg = o.arg, n.delegate = null, v;
     var a = o.arg;
     return a ? a.done ? (n[e.resultName] = a.value, n.next = e.nextLoc, "return" !== n.method && (n.method = "next", n.arg = t), n.delegate = null, v) : a : (n.method = "throw", n.arg = TypeError("iterator result is not an object"), n.delegate = null, v)
@@ -217,7 +217,7 @@ function i() {
     return this
   }), n.AsyncIterator = C, n.async = function(e, t, r, i, o) {
     void 0 === o && (o = Promise);
-    var a = new C(p(e, t, r, i), o);
+    var a = new C(_(e, t, r, i), o);
     return n.isGeneratorFunction(t) ? a : a.next().then(function(e) {
       return e.done ? e.value : a.next()
     })

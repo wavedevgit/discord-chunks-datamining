@@ -1,11 +1,11 @@
-/** Chunk was on 63061 **/
+/** Chunk was on 65936 **/
 n.d(t, {
   Z: () => y
 }), n(47120), n(653041);
 var r = n(570140),
   i = n(317770),
-  o = n(460181),
-  l = n(474873),
+  l = n(460181),
+  o = n(474873),
   s = n(314897),
   a = n(19780),
   c = n(944486),
@@ -13,15 +13,15 @@ var r = n(570140),
   d = n(351780),
   _ = n(843693),
   E = n(981631);
-let p = (0, o.uk)("poggermode_applause", l.Z.getSoundpack()),
+let p = (0, l.uk)("poggermode_applause", o.Z.getSoundpack()),
   m = !1,
   h = !1,
   f = [],
   g = null,
-  O = () => {
+  N = () => {
     !m && (p.loop(), m = !0)
   },
-  N = () => {
+  O = () => {
     p.stop(), m = !1
   },
   I = () => {
@@ -33,7 +33,7 @@ let p = (0, o.uk)("poggermode_applause", l.Z.getSoundpack()),
     if (0 === f.length || !I() || h) return;
     h = !0;
     let [e, t] = f[f.length - 1];
-    (0, o.GN)(e, t), g = setTimeout(T, 1e3)
+    (0, l.GN)(e, t), g = setTimeout(T, 1e3)
   },
   T = () => {
     f.pop(), h = !1, b()
@@ -60,10 +60,10 @@ class S extends i.Z {
     let {
       userId: t
     } = e;
-    s.default.getId() === t && N()
+    s.default.getId() === t && O()
   }
   stopAudio() {
-    N()
+    O()
   }
   startAudio() {
     var e;
@@ -73,8 +73,8 @@ class S extends i.Z {
     let n = s.default.getId(),
       r = u.Z.isTyping(t, n),
       i = _.ZP.getUserCombo(n, t),
-      o = null !== (e = null == i ? void 0 : i.multiplier) && void 0 !== e ? e : 1;
-    r && o >= 7 ? O() : N()
+      l = null !== (e = null == i ? void 0 : i.multiplier) && void 0 !== e ? e : 1;
+    r && l >= 7 ? N() : O()
   }
   playAchievementUnlockSound() {
     I() && C("poggermode_achievement_unlock")

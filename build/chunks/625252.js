@@ -71,7 +71,7 @@ function E() {
         })]
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
-        color: "text-muted",
+        color: "text-secondary",
         children: b.NW.string(b.t.IqmRZ2)
       }), (0, r.jsx)(o.zxk, {
         size: "large",

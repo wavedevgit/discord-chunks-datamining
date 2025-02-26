@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => p,
+  ZP: () => _,
   c7: () => f
 }), n(47120);
 var r = n(192379),
@@ -44,30 +44,30 @@ function f() {
     autoTrackExposure: !1
   });
   let c = (0, l.hv)("useFetchPurchases"),
-    [u, d, f, p, _, h] = (0, i.Wu)([s.Z], () => [s.Z.isFetching, s.Z.isClaiming, s.Z.fetchError, s.Z.claimError, s.Z.purchases, s.Z.hasPreviouslyFetched]),
-    m = (0, r.useRef)(s.Z.hasPreviouslyFetched);
+    [u, d, f, _, p, h] = (0, i.Wu)([s.Z], () => [s.Z.isFetching, s.Z.isClaiming, s.Z.fetchError, s.Z.claimError, s.Z.purchases, s.Z.hasPreviouslyFetched]),
+    g = (0, r.useRef)(s.Z.hasPreviouslyFetched);
   (0, r.useEffect)(() => {
-    m.current = h
+    g.current = h
   }, [h]);
-  let g = (0, r.useRef)(s.Z.fetchError);
+  let m = (0, r.useRef)(s.Z.fetchError);
   return (0, r.useEffect)(() => {
-    g.current = f
+    m.current = f
   }, [f]), (0, r.useEffect)(() => {
-    (!0 !== e || !m.current || null != g.current) && (0, a.qg)({
+    (!0 !== e || !g.current || null != m.current) && (0, a.qg)({
       variantsReturnStyle: c,
       location: t
     })
   }, [t, e, c]), {
     isClaiming: d,
     fetchPurchasesError: f,
-    claimError: p,
+    claimError: _,
     isFetching: u,
-    purchases: _,
+    purchases: p,
     hasPreviouslyFetched: h
   }
 }
 
-function p(e) {
+function _(e) {
   let t = null == e ? void 0 : e.paymentGateway,
     n = "useFetchCollectiblesCategoriesAndPurchases";
   (0, o.j)({
@@ -89,17 +89,17 @@ function p(e) {
     isClaiming: l,
     fetchPurchasesError: u,
     claimError: d,
-    isFetching: p,
-    purchases: _,
+    isFetching: _,
+    purchases: p,
     hasPreviouslyFetched: h
   } = f(null == e ? void 0 : e.stalePurchasesOK, null == e ? void 0 : e.location);
   return {
-    isFetching: r || p,
+    isFetching: r || _,
     isFetchingCategories: r,
-    isFetchingPurchases: p,
+    isFetchingPurchases: _,
     isClaiming: l,
     categories: i,
-    purchases: _,
+    purchases: p,
     fetchCategoriesError: a,
     fetchPurchasesError: u,
     claimError: d,

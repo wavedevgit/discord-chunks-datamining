@@ -29,12 +29,12 @@ function l(e, t, n) {
     u = void 0 === l ? a.MATCHES : l,
     d = i.baseSort,
     f = void 0 === d ? s : d,
-    _ = i.sorter;
-  return (void 0 === _ ? function(e) {
+    p = i.sorter;
+  return (void 0 === p ? function(e) {
     return e.sort(function(e, t) {
-      return p(e, t, f)
+      return _(e, t, f)
     })
-  } : _)(e.reduce(h, [])).map(function(e) {
+  } : p)(e.reduce(h, [])).map(function(e) {
     return e.item
   });
 
@@ -59,20 +59,20 @@ function c(e, t, n, r) {
       keyThreshold: r.threshold
     }
   }
-  return g(e, t).reduce(function(e, t, i) {
+  return m(e, t).reduce(function(e, t, i) {
     var o = e.rank,
       s = e.rankedValue,
       l = e.keyIndex,
       c = e.keyThreshold,
       d = t.itemValue,
       f = t.attributes,
-      p = u(d, n, r),
-      _ = s,
+      _ = u(d, n, r),
+      p = s,
       h = f.minRanking,
-      m = f.maxRanking,
-      g = f.threshold;
-    return p < h && p >= a.MATCHES ? p = h : p > m && (p = m), p > o && (o = p, l = i, c = g, _ = d), {
-      rankedValue: _,
+      g = f.maxRanking,
+      m = f.threshold;
+    return _ < h && _ >= a.MATCHES ? _ = h : _ > g && (_ = g), _ > o && (o = _, l = i, c = m, p = d), {
+      rankedValue: p,
       rank: o,
       keyIndex: l,
       keyThreshold: c
@@ -86,7 +86,7 @@ function c(e, t, n, r) {
 }
 
 function u(e, t, n) {
-  return (e = _(e, n), (t = _(t, n)).length > e.length) ? a.NO_MATCH : e === t ? a.CASE_SENSITIVE_EQUAL : (e = e.toLowerCase()) === (t = t.toLowerCase()) ? a.EQUAL : e.startsWith(t) ? a.STARTS_WITH : e.includes(" " + t) ? a.WORD_STARTS_WITH : e.includes(t) ? a.CONTAINS : 1 === t.length ? a.NO_MATCH : d(e).includes(t) ? a.ACRONYM : f(e, t)
+  return (e = p(e, n), (t = p(t, n)).length > e.length) ? a.NO_MATCH : e === t ? a.CASE_SENSITIVE_EQUAL : (e = e.toLowerCase()) === (t = t.toLowerCase()) ? a.EQUAL : e.startsWith(t) ? a.STARTS_WITH : e.includes(" " + t) ? a.WORD_STARTS_WITH : e.includes(t) ? a.CONTAINS : 1 === t.length ? a.NO_MATCH : d(e).includes(t) ? a.ACRONYM : f(e, t)
 }
 
 function d(e) {
@@ -121,7 +121,7 @@ function f(e, t) {
   return o(r - s)
 }
 
-function p(e, t, n) {
+function _(e, t, n) {
   var r = -1,
     i = 1,
     o = e.rank,
@@ -131,7 +131,7 @@ function p(e, t, n) {
   return o !== s ? o > s ? r : i : a === l ? n(e, t) : a < l ? r : i
 }
 
-function _(e, t) {
+function p(e, t) {
   return e = "" + e, t.keepDiacritics || (e = o()(e)), e
 }
 
@@ -141,13 +141,13 @@ function h(e, t) {
   else if (null == e) n = null;
   else if (Object.hasOwnProperty.call(e, t)) n = e[t];
   else {
-    if (t.includes(".")) return m(t, e);
+    if (t.includes(".")) return g(t, e);
     n = null
   }
   return null == n ? [] : Array.isArray(n) ? n : [String(n)]
 }
 
-function m(e, t) {
+function g(e, t) {
   for (var n = e.split("."), r = [t], i = 0, o = n.length; i < o; i++) {
     for (var a = n[i], s = [], l = 0, c = r.length; l < c; l++) {
       var u = r[l];
@@ -167,7 +167,7 @@ function m(e, t) {
   return r
 }
 
-function g(e, t) {
+function m(e, t) {
   for (var n = [], r = 0, i = t.length; r < i; r++)
     for (var o = t[r], a = v(o), s = h(e, o), l = 0, c = s.length; l < c; l++) n.push({
       itemValue: s[l],

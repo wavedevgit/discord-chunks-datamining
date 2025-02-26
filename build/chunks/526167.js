@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   G6: () => b,
-  hY: () => m,
+  hY: () => g,
   og: () => v,
   rO: () => y,
   vu: () => f
@@ -15,24 +15,24 @@ let u = (null !== (r = c().name) && void 0 !== r ? r : "unknown").toLowerCase(),
 function f() {
   return d
 }
-let p = "electron" === u.toLowerCase() ? parseInt(null !== (o = c().version) && void 0 !== o ? o : "", 10) : -1;
+let _ = "electron" === u.toLowerCase() ? parseInt(null !== (o = c().version) && void 0 !== o ? o : "", 10) : -1;
 
-function _() {
-  return p
+function p() {
+  return _
 }
 let h = "firefox" === u.toLowerCase() ? parseInt(null !== (a = c().version) && void 0 !== a ? a : "", 10) : -1;
 
-function m() {
+function g() {
   return h
 }
-let g = "edge" === u.toLowerCase() ? parseInt(null !== (s = c().version) && void 0 !== s ? s : "", 10) : -1;
+let m = "edge" === u.toLowerCase() ? parseInt(null !== (s = c().version) && void 0 !== s ? s : "", 10) : -1;
 
 function E() {
-  return g
+  return m
 }
 
 function v() {
-  return -1 !== f() || -1 !== _() || -1 !== m() || -1 !== E()
+  return -1 !== f() || -1 !== p() || -1 !== g() || -1 !== E()
 }
 
 function b() {

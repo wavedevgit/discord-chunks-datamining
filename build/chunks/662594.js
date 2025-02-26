@@ -15,11 +15,11 @@ var r, i = n(392711),
   u = n(570140),
   d = n(353926),
   f = n(700785),
-  p = n(199902),
-  _ = n(314897),
+  _ = n(199902),
+  p = n(314897),
   h = n(592125),
-  m = n(650774),
-  g = n(271383),
+  g = n(650774),
+  m = n(271383),
   E = n(430824),
   v = n(158776),
   b = n(885110),
@@ -98,15 +98,15 @@ function D(e, t, n, r) {
 }
 
 function w(e, t, n) {
-  let r = n === _.default.getId(),
+  let r = n === p.default.getId(),
     i = v.Z.isMobileOnline(n),
     o = r ? b.Z.getStatus() : v.Z.getStatus(n, e),
     a = r ? b.Z.getActivities() : v.Z.getActivities(n, e),
-    s = p.Z.getStreamForUser(n, e),
+    s = _.Z.getStreamForUser(n, e),
     l = y.default.getUser(n);
   return null == l ? null : A(T({
     type: "MEMBER"
-  }, g.ZP.getMember(e, n)), {
+  }, m.ZP.getMember(e, n)), {
     user: l,
     status: o,
     activities: a,
@@ -295,7 +295,7 @@ function Z(e) {
 let H = [];
 
 function W() {
-  let e = p.Z.getAllApplicationStreams(),
+  let e = _.Z.getAllApplicationStreams(),
     t = H.concat(e);
   H = e, t.forEach(e => {
     j.forEach(null, t => t.rebuildMember(e.ownerId))
@@ -303,7 +303,7 @@ function W() {
 }
 
 function Y() {
-  let e = _.default.getId();
+  let e = p.default.getId();
   j.forEach(null, t => t.rebuildMember(e))
 }
 
@@ -312,7 +312,7 @@ function K() {
 }
 class z extends(r = c.ZP.Store) {
   initialize() {
-    this.waitFor(y.default, E.Z, h.Z, g.ZP, v.Z, b.Z, _.default, m.Z, p.Z, d.Z), this.syncWith([b.Z], Y), this.syncWith([p.Z], W)
+    this.waitFor(y.default, E.Z, h.Z, m.ZP, v.Z, b.Z, p.default, g.Z, _.Z, d.Z), this.syncWith([b.Z], Y), this.syncWith([_.Z], W)
   }
   getProps(e, t) {
     let n = j.get(e, L(t));

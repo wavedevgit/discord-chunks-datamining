@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => p
+  Z: () => _
 });
 var i, o = n(442837),
   a = n(570140),
@@ -37,7 +37,7 @@ class f extends(i = o.ZP.Store) {
   }
 }
 c(f, "displayName", "OverlayRunningGameStore");
-let p = new f(a.Z, {
+let _ = new f(a.Z, {
   OVERLAY_INITIALIZE: u,
   OVERLAY_SET_ASSOCIATED_GAME: d
 })

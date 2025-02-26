@@ -18,24 +18,24 @@ var i = n(698091),
   f = function(e) {
     return !!e && e[d] === e
   },
-  p = function(e) {
+  _ = function(e) {
     return e && e[d]
   },
-  _ = function(e, t) {
+  p = function(e, t) {
     return i.defineHidden(e, d, t)
   },
   h = function(e) {
     return e && e[d] && e[d].getPayload()
   },
-  m = function() {
+  g = function() {
     function e() {
-      this.payload = void 0, _(this, this)
+      this.payload = void 0, p(this, this)
     }
     return e.prototype.getPayload = function() {
       return this.payload || []
     }, e
   }(),
-  g = function(e) {
+  m = function(e) {
     function t(t) {
       var n;
       return (n = e.call(this) || this)._value = t, n.done = !0, n.elapsedTime = void 0, n.lastPosition = void 0, n.lastVelocity = void 0, n.v0 = void 0, i.is.num(n._value) && (n.lastPosition = n._value), n
@@ -54,7 +54,7 @@ var i = n(698091),
       var e = this.done;
       this.done = !1, i.is.num(this._value) && (this.elapsedTime = 0, this.lastPosition = this._value, e && (this.lastVelocity = null), this.v0 = null)
     }, t
-  }(m),
+  }(g),
   E = function(e) {
     function t(t, n) {
       var r;
@@ -81,7 +81,7 @@ var i = n(698091),
         output: [this.getValue(), t]
       })), this._value = 0, e.prototype.reset.call(this)
     }, t
-  }(g),
+  }(m),
   v = {
     current: null
   },
@@ -121,7 +121,7 @@ var i = n(698091),
         return t.add(e)
       })
     }, t
-  }(m),
+  }(g),
   y = function(e) {
     function t(t, n) {
       var r;
@@ -142,7 +142,7 @@ var i = n(698091),
       }) : (this.source = this._makeAnimated(e), this.payload = this._makePayload(this.source))
     }, n._makeAnimated = function(e, t) {
       return void 0 === t && (t = e), e ? e.map(function(e, n) {
-        return (i.isAnimatedString(e) ? E : g).create(e, t[n])
+        return (i.isAnimatedString(e) ? E : m).create(e, t[n])
       }) : []
     }, t
   }(b),
@@ -236,4 +236,4 @@ var T = Symbol.for("AnimatedComponent"),
   A = function(e) {
     return i.is.str(e) ? e : e && i.is.str(e.displayName) ? e.displayName : i.is.fun(e) && e.name || null
   };
-t.Animated = m, t.AnimatedArray = y, t.AnimatedObject = b, t.AnimatedProps = O, t.AnimatedString = E, t.AnimatedValue = g, t.createHost = N, t.getAnimated = p, t.getPayload = h, t.isAnimated = f, t.setAnimated = _
+t.Animated = g, t.AnimatedArray = y, t.AnimatedObject = b, t.AnimatedProps = O, t.AnimatedString = E, t.AnimatedValue = m, t.createHost = N, t.getAnimated = _, t.getPayload = h, t.isAnimated = f, t.setAnimated = p

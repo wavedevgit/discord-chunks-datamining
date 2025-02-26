@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(570140),
   d = n(68405),
   f = n(600164),
-  p = n(28546),
-  _ = n(656733),
+  _ = n(28546),
+  p = n(656733),
   h = n(985375),
-  m = n(653235),
-  g = n(215016),
+  g = n(653235),
+  m = n(215016),
   E = n(981631),
   v = n(149203),
   b = n(388032),
@@ -144,11 +144,11 @@ class A extends i.PureComponent {
     } = this.props, {
       resultType: d
     } = this.state;
-    return null == d ? (0, r.jsx)(m.Z, {
+    return null == d ? (0, r.jsx)(g.Z, {
       className: e,
       hideFavoritesTile: u,
       onSelectItem: this.handleSelectItem
-    }) : (0, r.jsx)(g.ZP, {
+    }) : (0, r.jsx)(m.ZP, {
       className: e,
       data: d === E.wI2.FAVORITES ? o : t,
       onSelectGIF: this.handleSelectGIF,
@@ -192,14 +192,14 @@ class A extends i.PureComponent {
       } = this.state;
       e.keyCode === E.yXg.ESCAPE && null != t && (e.stopPropagation(), e.preventDefault(), this.handleClearQuery())
     }), O(this, "handleChangeQuery", e => {
-      (0, p.ql)(e), this.search(e, E.wI2.SEARCH)
+      (0, _.ql)(e), this.search(e, E.wI2.SEARCH)
     }), O(this, "handleSelectSuggestion", e => {
-      (0, p.ql)(""), d.v2(), this.search(e, E.wI2.SEARCH_SUGGESTION, !0)
+      (0, _.ql)(""), d.v2(), this.search(e, E.wI2.SEARCH_SUGGESTION, !0)
     }), O(this, "handleClearQuery", () => {
       let {
         current: e
       } = this.props.searchBarRef;
-      (0, p.ql)(""), d.v2(), this.setState({
+      (0, _.ql)(""), d.v2(), this.setState({
         resultType: null
       }), null != e && e.focus()
     }), O(this, "handleSelectGIF", e => {
@@ -225,39 +225,39 @@ class A extends i.PureComponent {
   }
 }
 let C = i.forwardRef((e, t) => {
-  e.persistSearch || (0, p.ql)("");
+  e.persistSearch || (0, _.ql)("");
   let {
     query: n,
     resultQuery: o,
     resultItems: a,
     suggestions: c
-  } = (0, l.cj)([_.Z], () => ({
-    query: _.Z.getQuery(),
-    resultQuery: _.Z.getResultQuery(),
-    resultItems: _.Z.getResultItems(),
-    suggestions: _.Z.getSuggestions()
+  } = (0, l.cj)([p.Z], () => ({
+    query: p.Z.getQuery(),
+    resultQuery: p.Z.getResultQuery(),
+    resultItems: p.Z.getResultItems(),
+    suggestions: p.Z.getSuggestions()
   })), {
     expressionPickerQuery: u,
     isSearchSuggestion: d
-  } = (0, p.Iu)(e => ({
+  } = (0, _.Iu)(e => ({
     expressionPickerQuery: e.searchQuery,
     isSearchSuggestion: e.isSearchSuggestion
-  }), s.X), f = null != u && "" !== u ? u : n, m = (0, h.HI)(), g = i.createRef();
+  }), s.X), f = null != u && "" !== u ? u : n, g = (0, h.HI)(), m = i.createRef();
   return i.useLayoutEffect(() => {
     if (d) {
       var e;
-      null === (e = g.current) || void 0 === e || e.focus()
+      null === (e = m.current) || void 0 === e || e.focus()
     }
-  }, [d, g]), (0, r.jsx)(A, T(S({}, e), {
+  }, [d, m]), (0, r.jsx)(A, T(S({}, e), {
     forwardedRef: t,
     query: f,
     resultQuery: o,
     resultItems: a,
     suggestions: c,
-    favorites: m,
+    favorites: g,
     searchOffset: 0,
-    searchTotalResults: _.Z.getResultItems().length,
+    searchTotalResults: p.Z.getResultItems().length,
     searchLimit: null,
-    searchBarRef: g
+    searchBarRef: m
   }))
 })

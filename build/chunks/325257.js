@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(153867),
   m = n(377171),
   b = n(540059),
-  v = n(35225),
-  y = n(703656),
+  y = n(35225),
+  v = n(703656),
   O = n(769654),
   j = n(271383),
   _ = n(771845),
@@ -27,8 +27,8 @@ var r = n(200651),
   P = n(249792),
   N = n(40153),
   S = n(593618),
-  I = n(252686),
-  Z = n(682662),
+  Z = n(252686),
+  I = n(682662),
   w = n(674552),
   E = n(981631),
   T = n(388032),
@@ -136,12 +136,12 @@ let M = i.memo(function(e) {
     [eh, ef] = i.useState(!1),
     eg = !ee && eh,
     [em, eb] = i.useState(!1),
-    [ev, ey] = i.useState(!1),
-    [eO] = i.useState(() => new d.sW(70, () => ey(!0)));
+    [ey, ev] = i.useState(!1),
+    [eO] = i.useState(() => new d.sW(70, () => ev(!0)));
   i.useEffect(() => () => eO.cancel(), [eO]);
   let ej = i.useCallback(() => {
       if (null != V) {
-        (0, y.uL)(V, {
+        (0, v.uL)(V, {
           state: L
         });
         return
@@ -151,7 +151,7 @@ let M = i.memo(function(e) {
     }, [ei, V]),
     e_ = i.useCallback(() => {
       if (null != V || null == F || Q || !et) return;
-      let e = (0, v.V)(F.id);
+      let e = (0, y.V)(F.id);
       null != e && h.Z.preload(F.id, e)
     }, [V, F, Q, et]),
     eC = (0, u.e7)([j.ZP], () => j.ZP.isCurrentUserGuest(ei)),
@@ -169,22 +169,22 @@ let M = i.memo(function(e) {
         eO.delay();
         return
       }
-      eO.cancel(), ey(!1)
+      eO.cancel(), ev(!1)
     }, [eO]),
     eS = i.useCallback(e => {
       null == B || B(ei, e)
     }, [ei, B]),
-    eI = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE);
+    eZ = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == F) return null;
-  let eZ = ev || em ? (0, r.jsx)(P.Z, {
+  let eI = ey || em ? (0, r.jsx)(P.Z, {
       guild: F,
-      show: ev,
+      show: ey,
       active: z,
       onAnimationStart: function() {
-        eb(ev)
+        eb(ey)
       },
       onAnimationRest: function() {
-        ev || eb(!1)
+        ey || eb(!1)
       }
     }) : (0, r.jsx)(p.LYs, R(A({
       ariaLabel: T.NW.formatToPlainString(T.t["/uzRsr"], {
@@ -202,34 +202,34 @@ let M = i.memo(function(e) {
       onMouseDown: e_,
       onContextMenu: ex,
       onKeyDown: eP,
-      icon: F.getIconURL(2 * eI, eg && H, eo),
+      icon: F.getIconURL(2 * eZ, eg && H, eo),
       selected: z || eg
     }, ep), {
       role: "treeitem"
     })),
     ew = eu ? (0, r.jsx)(N.OG, {
-      children: (0, r.jsx)(I.Z, {})
+      children: (0, r.jsx)(Z.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? ed : void 0,
       "data-dnd-name": F.toString(),
       style: {
         scale: null == er ? 1 : er
       },
-      "data-drop-hovering": ev,
+      "data-drop-hovering": ey,
       className: o()(D.blobContainer, {
         [D.sorting]: ee,
-        [D.wobble]: ev,
-        [D.selected]: ev || z
+        [D.wobble]: ey,
+        [D.selected]: ey || z
       }),
       children: (0, r.jsx)(p.aRk, {
-        selected: !!eo || ev || z || eg,
+        selected: !!eo || ey || z || eg,
         upperBadge: ea,
         lowerBadge: es,
         lowerBadgeSize: ec,
-        children: eZ
+        children: eI
       })
     });
-  return (0, r.jsxs)(Z.H, {
+  return (0, r.jsxs)(I.H, {
     ref: eS,
     children: [(0, r.jsx)(x.Z, {
       hovered: !eu && eg,

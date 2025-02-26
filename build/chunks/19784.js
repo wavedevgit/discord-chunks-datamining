@@ -25,15 +25,15 @@ var i = function(e) {
             return t.priority > e.priority
           }), s.splice(~t ? t : s.length, 0, e))
         },
-        p = function() {
+        _ = function() {
           if (!t) try {
-            m(), e(p)
+            g(), e(_)
           } catch (e) {
             console.error(e)
           }
         },
-        _ = function() {
-          t && (t = !1, 0 == o && (o = r.now(), e(p)))
+        p = function() {
+          t && (t = !1, 0 == o && (o = r.now(), e(_)))
         },
         h = [];
       this.setTimeout = function(e, t) {
@@ -52,9 +52,9 @@ var i = function(e) {
             handler: e,
             cancel: i
           };
-        return h.splice(o, 0, s), _(), s
+        return h.splice(o, 0, s), p(), s
       };
-      var m = this.advance = function() {
+      var g = this.advance = function() {
         var e = r.now();
         if (c.size && (c.forEach(f), c.clear()), h.length && r.batchedUpdates(function() {
             var t = a(h, function(t) {
@@ -77,9 +77,9 @@ var i = function(e) {
         }
       };
       this.start = function(e) {
-        l > e.priority ? c.add(e) : (f(e), _())
+        l > e.priority ? c.add(e) : (f(e), p())
       }, this.onFrame = function(e) {
-        u.add(e), _()
+        u.add(e), p()
       }, this.onWrite = function(e) {
         n ? e(o) : d.add(e)
       }

@@ -1,7 +1,7 @@
 /** Chunk was on 40580 **/
 "use strict";
 r.d(t, {
-  m: () => x
+  m: () => m
 }), r(47120);
 var n = r(192379),
   s = r(442837),
@@ -10,49 +10,44 @@ var n = r(192379),
   l = r(594174),
   a = r(78839),
   c = r(431),
-  u = r(358085),
-  d = r(111361),
-  p = r(74538),
-  f = r(937579),
-  b = r(557017),
-  g = r(474936),
-  O = r(231338);
-let m = e => {
+  u = r(111361),
+  d = r(74538),
+  p = r(937579),
+  f = r(557017),
+  b = r(474936);
+let g = e => {
     let t = new Date;
     return t.setDate(t.getDate() - 10), e.currentPeriodEnd >= t
   },
-  h = e => {
+  O = e => {
     var t;
-    let r = null === (t = (0, p.Af)(e)) || void 0 === t ? void 0 : t.planId;
-    return void 0 === r || p.ZP.getPremiumType(r) !== g.p9.TIER_2
+    let r = null === (t = (0, d.Af)(e)) || void 0 === t ? void 0 : t.planId;
+    return void 0 === r || d.ZP.getPremiumType(r) !== b.p9.TIER_2
   };
 
-function x(e) {
+function m(e) {
   let {
     location: t
-  } = e, [r, p] = n.useState(null), g = b.t.useExperiment({
+  } = e, [r, d] = n.useState(null), b = f.t.useExperiment({
     location: t
-  }), x = (0, s.e7)([a.ZP], () => a.ZP.getMostRecentPremiumTypeSubscription()), j = (0, s.e7)([c.Z], () => !c.Z.shouldFetchOffer()), y = (0, s.e7)([a.ZP], () => a.ZP.hasFetchedMostRecentPremiumTypeSubscription()), C = (0, s.e7)([l.default], () => l.default.getCurrentUser()), v = (0, d.I5)(C);
+  }), m = (0, s.e7)([a.ZP], () => a.ZP.getMostRecentPremiumTypeSubscription()), h = (0, s.e7)([c.Z], () => !c.Z.shouldFetchOffer()), x = (0, s.e7)([a.ZP], () => a.ZP.hasFetchedMostRecentPremiumTypeSubscription()), j = (0, s.e7)([l.default], () => l.default.getCurrentUser()), y = (0, u.I5)(j);
   return (0, o.ZP)(() => {
-    if (!1 === g.enabled) {
-      p(!1);
+    if (!1 === b.enabled) {
+      d(!1);
       return
     }
-    if (y || (0, i.ou)(), c.Z.shouldFetchOffer()) {
-      let e;
-      (0, u.isAndroid)() ? e = O.gg.GOOGLE: (0, u.isIOS)() && (e = O.gg.APPLE), (0, f.T)("useCollectibleDecoIsEligible", e)
-    }
+    x || (0, i.ou)(), c.Z.shouldFetchOffer() && (0, p.T)("useCollectibleDecoIsEligible")
   }), n.useEffect(() => {
-    if (!1 === g.enabled) {
-      p(!1);
+    if (!1 === b.enabled) {
+      d(!1);
       return
     }
-    if (y && j) {
-      if (null === x) {
-        v ? p(!1) : p(!0);
+    if (x && h) {
+      if (null === m) {
+        y ? d(!1) : d(!0);
         return
       }
-      x.isPaused ? p(!0) : x.isEnded ? c.Z.hasAnyUnexpiredOffer() || c.Z.hasAnyUnexpiredDiscountOffer() || m(x) ? p(!1) : p(!0) : x.isActive ? p(h(x)) : p(!1)
+      m.isPaused ? d(!0) : m.isEnded ? c.Z.hasAnyUnexpiredOffer() || c.Z.hasAnyUnexpiredDiscountOffer() || g(m) ? d(!1) : d(!0) : m.isActive ? d(O(m)) : d(!1)
     }
-  }, [g.enabled, y, x, j, v]), r
+  }, [b.enabled, x, m, h, y]), r
 }

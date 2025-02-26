@@ -72,10 +72,10 @@ function i(e) {
       }]
     }];
   d.contains = f;
-  let p = e.inherit(e.TITLE_MODE, {
+  let _ = e.inherit(e.TITLE_MODE, {
       begin: u
     }),
-    _ = "(\\(.*\\)\\s*)?\\B[-=]>",
+    p = "(\\(.*\\)\\s*)?\\B[-=]>",
     h = {
       className: "params",
       begin: "\\([^\\(]",
@@ -87,7 +87,7 @@ function i(e) {
         contains: ["self"].concat(f)
       }]
     },
-    m = {
+    g = {
       variants: [{
         match: [/class\s+/, u, /\s+extends\s+/, u]
       }, {
@@ -106,21 +106,21 @@ function i(e) {
     illegal: /\/\*/,
     contains: [...f, e.COMMENT("###", "###"), e.HASH_COMMENT_MODE, {
       className: "function",
-      begin: "^\\s*" + u + "\\s*=\\s*" + _,
+      begin: "^\\s*" + u + "\\s*=\\s*" + p,
       end: "[-=]>",
       returnBegin: !0,
-      contains: [p, h]
+      contains: [_, h]
     }, {
       begin: /[:\(,=]\s*/,
       relevance: 0,
       contains: [{
         className: "function",
-        begin: _,
+        begin: p,
         end: "[-=]>",
         returnBegin: !0,
         contains: [h]
       }]
-    }, m, {
+    }, g, {
       begin: u + ":",
       end: ":",
       returnBegin: !0,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function p(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,22 +48,22 @@ function _(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e) {
+function g(e) {
   let {
     onComplete: t,
     onCheckItOutClick: n,
     config: c
-  } = e, f = (0, i.e7)([l.Z], () => l.Z.useReducedMotion), p = (0, s.ZP)();
+  } = e, f = (0, i.e7)([l.Z], () => l.Z.useReducedMotion), _ = (0, s.ZP)();
   return (0, r.jsxs)("div", {
     className: d.container,
     children: [(0, r.jsx)("img", {
       alt: u.NW.string(u.t.X4IxWF),
-      src: c.getImageUrl((0, o.wj)(p), f),
+      src: c.getImageUrl((0, o.wj)(_), f),
       className: d.coachmark
     }), (0, r.jsxs)("div", {
       className: d.body,
@@ -96,7 +96,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     onComplete: t,
     onCheckItOutClick: n,
@@ -109,7 +109,7 @@ function g(e) {
     shouldShow: !0,
     position: "top",
     align: "center",
-    renderPopout: e => (0, r.jsx)(m, h(p({}, e), {
+    renderPopout: e => (0, r.jsx)(g, h(_({}, e), {
       onComplete: () => {
         t(), i(c.L.USER_DISMISS)
       },

@@ -47,7 +47,7 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = {
+let _ = {
     MP4: "mp4",
     TINYMP4: "tinymp4",
     NANOMP4: "nanomp4",
@@ -55,7 +55,7 @@ let p = {
     TINYWEBM: "tinywebm",
     NANOWEBM: "nanowebm"
   },
-  _ = {
+  p = {
     FIXED_HEIGHT_MP4: "fixed_height.mp4",
     FIXED_HEIGHT_SMALL_MP4: "fixed_height_small.mp4",
     FIXED_WIDTH_MP4: "fixed_width.mp4",
@@ -63,9 +63,9 @@ let p = {
     DOWNSIZED_SMALL_MP4: "downsized_small.mp4",
     ORIGINAL_MP4: "original.mp4"
   },
-  h = p.MP4,
-  m = null,
-  g = "",
+  h = _.MP4,
+  g = null,
+  m = "",
   E = "",
   v = [],
   b = [],
@@ -74,27 +74,27 @@ let p = {
   S = [];
 
 function I(e) {
-  m = e.analyticsID
+  g = e.analyticsID
 }
 
 function T(e) {
-  "" === (g = e.query) && (E = "", v = [], O = [])
+  "" === (m = e.query) && (E = "", v = [], O = [])
 }
 
 function N(e) {
   switch (e) {
-    case _.FIXED_HEIGHT_MP4:
-    case _.FIXED_HEIGHT_SMALL_MP4:
-    case _.FIXED_WIDTH_MP4:
-    case _.FIXED_WIDTH_SMALL_MP4:
-    case _.DOWNSIZED_SMALL_MP4:
-    case _.ORIGINAL_MP4:
-    case p.MP4:
-    case p.TINYMP4:
-    case p.NANOMP4:
-    case p.WEBM:
-    case p.TINYWEBM:
-    case p.NANOWEBM:
+    case p.FIXED_HEIGHT_MP4:
+    case p.FIXED_HEIGHT_SMALL_MP4:
+    case p.FIXED_WIDTH_MP4:
+    case p.FIXED_WIDTH_SMALL_MP4:
+    case p.DOWNSIZED_SMALL_MP4:
+    case p.ORIGINAL_MP4:
+    case _.MP4:
+    case _.TINYMP4:
+    case _.NANOMP4:
+    case _.WEBM:
+    case _.TINYWEBM:
+    case _.NANOWEBM:
       return !0;
     default:
       return !1
@@ -106,7 +106,7 @@ function A(e) {
 }
 
 function C(e) {
-  if (null != e.query && g === E) return !1;
+  if (null != e.query && m === E) return !1;
   null != e.query && (E = e.query), v = e.items.map(e => {
     let {
       width: t,
@@ -165,10 +165,10 @@ function w(e) {
 }
 class L extends(r = i.ZP.Store) {
   getAnalyticsID() {
-    return m
+    return g
   }
   getQuery() {
-    return g
+    return m
   }
   getResultQuery() {
     return E

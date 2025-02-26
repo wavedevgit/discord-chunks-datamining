@@ -1,11 +1,11 @@
-/** Chunk was on 63061 **/
+/** Chunk was on 65936 **/
 n.d(t, {
   Z: () => X
 }), n(411104), n(47120), n(301563), n(733860);
 var r, i = n(200651),
-  o = n(192379),
-  l = n(120356),
-  s = n.n(l),
+  l = n(192379),
+  o = n(120356),
+  s = n.n(o),
   a = n(873546),
   c = n(442837),
   u = n(481060),
@@ -17,24 +17,24 @@ var r, i = n(200651),
   h = n(14429),
   f = n(576855),
   g = n(313201),
-  O = n(991346),
-  N = n(592125),
+  N = n(991346),
+  O = n(592125),
   I = n(888369),
   b = n(430824),
   T = n(306680),
   C = n(944486),
   S = n(938475),
   y = n(483360),
-  R = n(585483),
-  P = n(63063),
+  P = n(585483),
+  R = n(63063),
   A = n(51596),
   v = n(823385),
-  D = n(415795),
-  L = n(670512),
-  x = n(558631),
+  x = n(415795),
+  D = n(670512),
+  L = n(558631),
   k = n(981631),
-  M = n(388032),
-  j = n(438767);
+  j = n(388032),
+  M = n(438767);
 
 function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,24 +71,24 @@ function w(e, t) {
   }), e
 }
 let V = () => (0, i.jsxs)("div", {
-  className: j.emptyState,
+  className: M.emptyState,
   children: [(0, i.jsx)("div", {
-    className: j.emptyStateNote,
-    children: M.NW.string(M.t.bpbATE)
+    className: M.emptyStateNote,
+    children: j.NW.string(j.t.bpbATE)
   }), (0, i.jsx)("div", {
-    className: j.emptyStateCTA,
+    className: M.emptyStateCTA,
     children: (0, i.jsx)(u.eee, {
-      href: P.Z.getArticleURL(k.BhN.QUICK_SWITCHER_TUTORIAL),
-      children: M.NW.string(M.t["4iPfEB"])
+      href: R.Z.getArticleURL(k.BhN.QUICK_SWITCHER_TUTORIAL),
+      children: j.NW.string(j.t["4iPfEB"])
     })
   })]
 });
-class G extends(r = o.Component) {
+class G extends(r = l.Component) {
   render() {
     let e = b.Z.getGuild(this.props.channel.guild_id);
-    return (0, i.jsx)(D.$W, w(U({}, this.props), {
+    return (0, i.jsx)(x.$W, w(U({}, this.props), {
       children: (0, i.jsx)("div", {
-        className: j.miscContainer,
+        className: M.miscContainer,
         children: null != e ? e.name : null
       })
     }))
@@ -97,7 +97,7 @@ class G extends(r = o.Component) {
 Z(G, "defaultProps", {
   unread: !1
 });
-let F = c.ZP.connectStores([T.ZP, N.Z], e => {
+let F = c.ZP.connectStores([T.ZP, O.Z], e => {
     let {
       channel: t
     } = e;
@@ -105,7 +105,7 @@ let F = c.ZP.connectStores([T.ZP, N.Z], e => {
       unread: T.ZP.hasUnread(t.id),
       mentions: T.ZP.getMentionCount(t.id),
       isMentionLowImportance: T.ZP.getIsMentionLowImportance(t.id),
-      category: N.Z.getChannel(t.parent_id)
+      category: O.Z.getChannel(t.parent_id)
     }
   })(G),
   W = c.ZP.connectStores([S.ZP], e => {
@@ -124,7 +124,7 @@ let F = c.ZP.connectStores([T.ZP, N.Z], e => {
     return {
       unread: I.default.hasUnread(t.id)
     }
-  })(D.ic),
+  })(x.ic),
   H = c.ZP.connectStores([T.ZP], e => {
     let {
       channel: t
@@ -132,26 +132,26 @@ let F = c.ZP.connectStores([T.ZP, N.Z], e => {
     return {
       mentions: T.ZP.getMentionCount(t.id)
     }
-  })(D.PZ),
-  z = c.ZP.connectStores([N.Z, T.ZP], e => {
+  })(x.PZ),
+  z = c.ZP.connectStores([O.Z, T.ZP], e => {
     let {
       user: t
-    } = e, n = N.Z.getDMFromUserId(t.id);
+    } = e, n = O.Z.getDMFromUserId(t.id);
     return {
       mentions: null != n ? T.ZP.getMentionCount(n) : 0
     }
-  })(D.n5);
+  })(x.n5);
 
 function Y(e, t, n) {
   return (0, i.jsx)(u.ua7, {
     text: n,
     children: e => (0, i.jsx)("span", w(U({}, e), {
-      className: j.autocompleteQuerySymbol,
+      className: M.autocompleteQuerySymbol,
       children: t
     }))
   }, e)
 }
-class K extends o.PureComponent {
+class K extends l.PureComponent {
   componentDidMount() {
     E.Z.disable(), E.Z.enableTemp(_.u)
   }
@@ -165,11 +165,11 @@ class K extends o.PureComponent {
     } = this.state, {
       selectedIndex: i
     } = this.props, {
-      current: o
+      current: l
     } = this.scrollerRef;
-    null != o && (r !== t.query ? o.scrollTo({
+    null != l && (r !== t.query ? l.scrollTo({
       to: 0
-    }) : n && i >= 0 && o.scrollToIndex({
+    }) : n && i >= 0 && l.scrollToIndex({
       section: 0,
       row: i,
       padding: 10
@@ -192,8 +192,8 @@ class K extends o.PureComponent {
     } = this.state, r = t.length > 0 && "" !== n;
     return (0, i.jsx)(u.tEY, {
       children: (0, i.jsx)("input", {
-        className: j.input,
-        "aria-label": M.NW.string(M.t.ZvKwYW),
+        className: M.input,
+        "aria-label": j.NW.string(j.t.ZvKwYW),
         ref: this.inputRef,
         type: "text",
         role: "combobox",
@@ -201,7 +201,7 @@ class K extends o.PureComponent {
         "aria-expanded": r,
         "aria-activedescendant": r ? this.getRowId(e) : void 0,
         "aria-autocomplete": "list",
-        placeholder: M.NW.string(M.t.Vtvewc),
+        placeholder: j.NW.string(j.t.Vtvewc),
         onChange: this.handleInputChange,
         onKeyDown: this.handleKeyDown,
         value: this.state.query,
@@ -222,19 +222,19 @@ class K extends o.PureComponent {
     return 0 === t.length && e.length > 0 ? (0, i.jsx)(V, {}) : 0 === t.length ? null : (0, i.jsx)(u._2F, {
       innerId: this._listId,
       innerRole: "listbox",
-      "aria-label": M.NW.string(M.t.Wef5Dg),
+      "aria-label": j.NW.string(j.t.Wef5Dg),
       ref: this.scrollerRef,
       sectionHeight: 0,
       rowHeight: 34,
       paddingBottom: 10,
       sections: [t.length],
-      className: j.scroller,
+      className: M.scroller,
       renderRow: this.renderRow,
       renderSection: this.renderSection
     })
   }
   focusNode(e) {
-    R.S.dispatch(k.CkL.QUICKSWITCHER_RESULT_FOCUS, {
+    P.S.dispatch(k.CkL.QUICKSWITCHER_RESULT_FOCUS, {
       node: e
     })
   }
@@ -243,16 +243,16 @@ class K extends o.PureComponent {
   }
   renderProtip() {
     return (0, i.jsx)(f.Z, {
-      className: s()(j.protip, {
-        [j.hasContent]: this.state.query.length > 0
+      className: s()(M.protip, {
+        [M.hasContent]: this.state.query.length > 0
       }),
       type: f.Z.Types.INLINE,
-      children: M.NW.format(M.t.wukqXV, {
-        userSymbolHook: (e, t) => Y(t, p.xQ.USER, M.NW.string(M.t.GQRCGh)),
-        textChannelSymbolHook: (e, t) => Y(t, p.xQ.TEXT_CHANNEL, M.NW.string(M.t.wrwhub)),
-        voiceChannelSymbolHook: (e, t) => Y(t, p.xQ.VOICE_CHANNEL, M.NW.string(M.t["jz+hJi"])),
-        guildSymbolHook: (e, t) => Y(t, p.xQ.GUILD, M.NW.string(M.t.WuwCWl)),
-        helpdeskArticle: P.Z.getArticleURL(k.BhN.QUICK_SWITCHER_TUTORIAL)
+      children: j.NW.format(j.t.wukqXV, {
+        userSymbolHook: (e, t) => Y(t, p.xQ.USER, j.NW.string(j.t.GQRCGh)),
+        textChannelSymbolHook: (e, t) => Y(t, p.xQ.TEXT_CHANNEL, j.NW.string(j.t.wrwhub)),
+        voiceChannelSymbolHook: (e, t) => Y(t, p.xQ.VOICE_CHANNEL, j.NW.string(j.t["jz+hJi"])),
+        guildSymbolHook: (e, t) => Y(t, p.xQ.GUILD, j.NW.string(j.t.WuwCWl)),
+        helpdeskArticle: R.Z.getArticleURL(k.BhN.QUICK_SWITCHER_TUTORIAL)
       })
     })
   }
@@ -263,26 +263,26 @@ class K extends o.PureComponent {
       seenTutorial: t,
       results: n
     } = this.props;
-    return t ? null : (0, i.jsx)(L.Z, {
+    return t ? null : (0, i.jsx)(D.Z, {
       hasQuery: e.length > 0 && n.length > 0
     })
   }
   render() {
     return (0, i.jsx)(u.Y0X, {
-      "aria-label": M.NW.string(M.t.ZvKwYW),
+      "aria-label": j.NW.string(j.t.ZvKwYW),
       size: u.CgR.DYNAMIC,
       transitionState: this.props.transitionState,
-      className: s()(j.container, a.tq && j.mobileContainer),
+      className: s()(M.container, a.tq && M.mobileContainer),
       fullscreenOnMobile: !1,
       children: (0, i.jsxs)("div", {
-        className: s()(j.quickswitcher, a.tq && j.mobileQuickswitcher),
+        className: s()(M.quickswitcher, a.tq && M.mobileQuickswitcher),
         onMouseMove: this.handleMouseMove,
         children: [this.renderInput(), this.renderResults(), this.renderProtip(), this.renderTutorial()]
       })
     })
   }
   constructor(...e) {
-    super(...e), Z(this, "scrollerRef", o.createRef()), Z(this, "inputRef", o.createRef()), Z(this, "_listId", (0, g.hQ)()), Z(this, "state", {
+    super(...e), Z(this, "scrollerRef", l.createRef()), Z(this, "inputRef", l.createRef()), Z(this, "_listId", (0, g.hQ)()), Z(this, "state", {
       query: this.props.query,
       mouseFocusDisabled: !0
     }), Z(this, "handleInputChange", () => {
@@ -318,8 +318,8 @@ class K extends o.PureComponent {
         case p.h8.TEXT_CHANNEL:
         case p.h8.VOICE_CHANNEL:
           let r = t.record,
-            o = b.Z.getGuild(r.getGuildId());
-          if (null == o) return;
+            l = b.Z.getGuild(r.getGuildId());
+          if (null == l) return;
           switch (r.type) {
             case k.d4z.GUILD_TEXT:
             case k.d4z.GUILD_ANNOUNCEMENT:
@@ -331,7 +331,7 @@ class K extends o.PureComponent {
                 } = await Promise.all([n.e("79695"), n.e("18320"), n.e("44011")]).then(n.bind(n, 373651));
                 return t => (0, i.jsx)(e, w(U({}, t), {
                   channel: r,
-                  guild: o,
+                  guild: l,
                   onSelect: A.Cp
                 }))
               });
@@ -343,7 +343,7 @@ class K extends o.PureComponent {
                 } = await Promise.all([n.e("79695"), n.e("18320"), n.e("83331"), n.e("81070")]).then(n.bind(n, 213202));
                 return t => (0, i.jsx)(e, w(U({}, t), {
                   channel: r,
-                  guild: o,
+                  guild: l,
                   onSelect: A.Cp
                 }))
               });
@@ -366,7 +366,7 @@ class K extends o.PureComponent {
                 } = await n.e("99905").then(n.bind(n, 649400));
                 return t => (0, i.jsx)(e, w(U({}, t), {
                   channel: r,
-                  guild: o,
+                  guild: l,
                   onSelect: A.Cp
                 }))
               });
@@ -415,7 +415,7 @@ class K extends o.PureComponent {
       });
       let i = e.key.toLowerCase(),
         {
-          selectedIndex: o
+          selectedIndex: l
         } = this.props;
       switch (i) {
         case "escape":
@@ -425,37 +425,37 @@ class K extends o.PureComponent {
           (!0 === e.ctrlKey || !0 === e.metaKey) && (e.preventDefault(), e.stopPropagation(), (0, A.Cp)());
           return;
         case "enter": {
-          if (-1 === o) return;
+          if (-1 === l) return;
           if (e.preventDefault(), e.altKey) return this.handleContextMenu(e);
-          let t = r[o];
+          let t = r[l];
           null != t && this.selectResult(t);
           return
         }
         case "arrowup":
-          o = (0, p.gJ)(p.a8.UP, o, r);
+          l = (0, p.gJ)(p.a8.UP, l, r);
           break;
         case "arrowdown":
-          o = (0, p.gJ)(p.a8.DOWN, o, r);
+          l = (0, p.gJ)(p.a8.DOWN, l, r);
           break;
         case "n":
           if (!e.ctrlKey) return;
-          o = (0, p.gJ)(p.a8.DOWN, o, r);
+          l = (0, p.gJ)(p.a8.DOWN, l, r);
           break;
         case "p":
           if (!e.ctrlKey) return;
-          o = (0, p.gJ)(p.a8.UP, o, r);
+          l = (0, p.gJ)(p.a8.UP, l, r);
           break;
         default:
           return
       }
-      e.preventDefault(), (0, A.tF)(o)
+      e.preventDefault(), (0, A.tF)(l)
     }), Z(this, "renderRow", e => {
       let {
         row: t
       } = e, n = this.props.results[t], {
         selectedIndex: r
       } = this.props, {
-        showScores: o
+        showScores: l
       } = h.Z.getCurrentConfig({
         location: "62f4be_1"
       }, {
@@ -463,7 +463,7 @@ class K extends o.PureComponent {
       });
       switch (n.type) {
         case p.h8.HEADER:
-          return (0, i.jsx)(D.h4, {
+          return (0, i.jsx)(x.h4, {
             children: n.record.text
           }, "".concat(n.type, "-").concat(n.record.id));
         case p.h8.TEXT_CHANNEL:
@@ -475,7 +475,7 @@ class K extends o.PureComponent {
             onFocus: this.focusNode,
             onContextMenu: this.handleContextMenu,
             channel: n.record,
-            score: o ? n.score : void 0
+            score: l ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
         case p.h8.VOICE_CHANNEL:
           return (0, i.jsx)(W, {
@@ -486,7 +486,7 @@ class K extends o.PureComponent {
             onFocus: this.focusNode,
             onContextMenu: this.handleContextMenu,
             channel: n.record,
-            score: o ? n.score : void 0
+            score: l ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
         case p.h8.GUILD:
           return (0, i.jsx)(B, {
@@ -497,7 +497,7 @@ class K extends o.PureComponent {
             onFocus: this.focusNode,
             onContextMenu: this.handleContextMenu,
             guild: n.record,
-            score: o ? n.score : void 0
+            score: l ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
         case p.h8.USER:
           return (0, i.jsx)(z, {
@@ -509,7 +509,7 @@ class K extends o.PureComponent {
             onContextMenu: this.handleContextMenu,
             user: n.record,
             comparator: n.comparator,
-            score: o ? n.score : void 0
+            score: l ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
         case p.h8.GROUP_DM:
           return (0, i.jsx)(H, {
@@ -520,10 +520,10 @@ class K extends o.PureComponent {
             onFocus: this.focusNode,
             onContextMenu: this.handleContextMenu,
             channel: n.record,
-            score: o ? n.score : void 0
+            score: l ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
         case p.h8.APPLICATION:
-          return (0, i.jsx)(D.Mx, {
+          return (0, i.jsx)(x.Mx, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -532,29 +532,29 @@ class K extends o.PureComponent {
             application: n.record
           }, "".concat(n.type, "-").concat(n.record.id));
         case p.h8.LINK:
-          return (0, i.jsx)(D.rU, {
+          return (0, i.jsx)(x.rU, {
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
             onMouseEnter: () => this.focusResult(n),
             onFocus: this.focusNode,
             onContextMenu: this.handleContextMenu,
             link: n.record,
-            score: o ? n.score : void 0,
+            score: l ? n.score : void 0,
             id: this.getRowId(t)
           }, "".concat(n.type, "-").concat(n.record.id));
         case p.h8.IN_APP_NAVIGATION:
-          return (0, i.jsx)(D.s8, {
+          return (0, i.jsx)(x.s8, {
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
             onMouseEnter: () => this.focusResult(n),
             onFocus: this.focusNode,
             onContextMenu: this.handleContextMenu,
             navigationRecord: n.record,
-            score: o ? n.score : void 0,
+            score: l ? n.score : void 0,
             id: this.getRowId(t),
             children: n.record.type === m.Ky.SETTINGS && (0, i.jsx)("div", {
-              className: j.miscContainer,
-              children: M.NW.string(M.t["3D5yo6"])
+              className: M.miscContainer,
+              children: j.NW.string(j.t["3D5yo6"])
             })
           }, "".concat(n.type, "-").concat(n.record.id));
         default:
@@ -566,14 +566,14 @@ class K extends o.PureComponent {
 
 function X(e) {
   let t = (0, c.cj)([v.Z], () => v.Z.getProps()),
-    n = (0, O.Pt)(),
-    r = x.Z.useExperiment({
+    n = (0, N.Pt)(),
+    r = L.Z.useExperiment({
       location: "QuickSwitcher"
     }).enabled,
-    l = o.useMemo(() => r ? Object.values(n).filter(e => null != e.url).filter(e => null == e.predicate || e.predicate()) : [], [n, r]);
-  return o.useLayoutEffect(() => {
+    o = l.useMemo(() => r ? Object.values(n).filter(e => null != e.url).filter(e => null == e.predicate || e.predicate()) : [], [n, r]);
+  return l.useLayoutEffect(() => {
     if (!r) return;
-    let e = l.map(e => {
+    let e = o.map(e => {
       var t;
       return {
         title: "string" == typeof e.label ? e.label : "",
@@ -582,9 +582,9 @@ function X(e) {
       }
     }).filter(e => "" !== e.title && null != e.path);
     e.unshift({
-      title: M.NW.string(M.t["3D5yo6"]),
-      searchableTitles: [M.NW.string(M.t["3D5yo6"])],
+      title: j.NW.string(j.t["3D5yo6"]),
+      searchableTitles: [j.NW.string(j.t["3D5yo6"])],
       path: k.Z5c.SETTINGS("account")
     }), (0, y.gF)(e)
-  }, [l, r]), (0, i.jsx)(K, U({}, t, e))
+  }, [o, r]), (0, i.jsx)(K, U({}, t, e))
 }

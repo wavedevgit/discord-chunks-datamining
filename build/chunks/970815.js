@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A4: () => _,
+  A4: () => p,
   b6: () => l.b
 }), n(47120);
 var r = n(200651),
@@ -18,15 +18,15 @@ let f = () => (0, r.jsx)("img", {
     src: n(808824),
     alt: ""
   }),
-  p = "balance-widget-pill",
-  _ = (0, i.forwardRef)(function(e, t) {
+  _ = "balance-widget-pill",
+  p = (0, i.forwardRef)(function(e, t) {
     let {
       balance: n,
       balanceWidgetMode: o = l.b.DEFAULT,
-      showNotificationBadge: _,
+      showNotificationBadge: p,
       onClick: h,
-      onMouseEnter: m,
-      onMouseLeave: g,
+      onMouseEnter: g,
+      onMouseLeave: m,
       onMouseDown: E,
       className: v
     } = e, b = d.default;
@@ -49,10 +49,10 @@ let f = () => (0, r.jsx)("img", {
       onClick: I ? void 0 : h,
       className: d.clickable,
       children: (0, r.jsxs)("span", {
-        onMouseEnter: m,
-        onMouseLeave: g,
+        onMouseEnter: g,
+        onMouseLeave: m,
         onMouseDown: E,
-        id: p,
+        id: _,
         ref: t,
         className: a()(d.container, b, v, {
           [d.containerLoading]: I
@@ -62,7 +62,7 @@ let f = () => (0, r.jsx)("img", {
         }), (0, r.jsx)(c.Z, {
           value: T,
           className: I ? d.counterLoading : void 0
-        }), _ && (0, r.jsx)(f, {})]
+        }), p && (0, r.jsx)(f, {})]
       })
     })
   })

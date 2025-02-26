@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120), n(26686);
 var r = n(192379),
   i = n(399606),
@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function p(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,61 +47,61 @@ function _(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m() {
+function g() {
   let [e, t] = r.useState({});
   return {
     previewErrorsById: e,
     setErrorById: r.useCallback((e, n) => {
-      t(t => h(p({}, t), {
+      t(t => h(_({}, t), {
         [e]: n
       }))
     }, [t])
   }
 }
 
-function g(e) {
+function m(e) {
   let {
     applicationId: t,
     skuIDs: n,
     currentPaymentSourceId: f,
-    isGift: p
-  } = e, _ = r.useMemo(() => n.filter(e => !d.YQ.includes(e)), [JSON.stringify(n)]), h = (0, i.e7)([u.Z], () => _.every(e => !u.Z.isFetching(e) && null != u.Z.get(e))), {
-    previewErrorsById: g,
+    isGift: _
+  } = e, p = r.useMemo(() => n.filter(e => !d.YQ.includes(e)), [JSON.stringify(n)]), h = (0, i.e7)([u.Z], () => p.every(e => !u.Z.isFetching(e) && null != u.Z.get(e))), {
+    previewErrorsById: m,
     setErrorById: E
-  } = m(), v = (0, i.cj)([u.Z], () => {
+  } = g(), v = (0, i.cj)([u.Z], () => {
     let e = {};
-    for (let n of _) {
+    for (let n of p) {
       var t;
       e[n] = null !== (t = u.Z.get(n)) && void 0 !== t ? t : void 0
     }
     return e
-  }, [_]), b = (0, l.hv)("useSkus");
+  }, [p]), b = (0, l.hv)("useSkus");
   r.useEffect(() => {
-    for (let e of _) u.Z.isFetching(e) || null != u.Z.get(e) || (0, o.$N)(t, e, b)
-  }, [t, _, b]);
+    for (let e of p) u.Z.isFetching(e) || null != u.Z.get(e) || (0, o.$N)(t, e, b)
+  }, [t, p, b]);
   let y = (0, i.cj)([c.Z], () => {
     let e = {};
-    for (let n of _) {
+    for (let n of p) {
       var t;
       e[n] = null !== (t = c.Z.getPricesForSku(n)) && void 0 !== t ? t : void 0
     }
     return e
-  }, [_]);
+  }, [p]);
   return r.useEffect(() => {
-    for (let e of _) c.Z.isFetchingSKU(e) || (0, o.x2)(t, e, f, {
-      isGift: p
+    for (let e of p) c.Z.isFetchingSKU(e) || (0, o.x2)(t, e, f, {
+      isGift: _
     }).catch(t => {
       t instanceof a.HF && (t.code === s.SM.BILLING_BUNDLE_ALREADY_PURCHASED || t.code === s.SM.BILLING_BUNDLE_PARTIALLY_OWNED || t.code === s.SM.INVALID_BILLING_ADDRESS) && E(e, t)
     })
-  }, [t, _, f, p, E]), {
+  }, [t, p, f, _, E]), {
     hasFetchedSkus: h,
     skusById: v,
     skuPricePreviewsById: y,
-    previewErrorsById: g
+    previewErrorsById: m
   }
 }

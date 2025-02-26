@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  R$: () => _,
+  R$: () => f,
   ZP: () => m
 });
 var r = n(913527),
@@ -21,7 +21,7 @@ function m(e) {
     invite: r = null,
     giftCodeSKUId: i = null
   } = e;
-  return _((t = function(e) {
+  return f((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -67,14 +67,14 @@ function m(e) {
   }), t))
 }
 
-function _(e) {
+function f(e) {
   let {
     email: t,
     phoneToken: n,
     username: r,
     globalName: m,
-    consent: _,
-    password: f,
+    consent: f,
+    password: _,
     guildTemplateCode: b,
     birthday: N,
     invite: x = null,
@@ -100,9 +100,9 @@ function _(e) {
       email: t,
       username: r,
       global_name: m,
-      password: f,
+      password: _,
       invite: x,
-      consent: _,
+      consent: f,
       phone_token: n,
       date_of_birth: null == N ? void 0 : N.format("YYYY-MM-DD"),
       gift_code_sku_id: v,

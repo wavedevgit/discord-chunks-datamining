@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -49,10 +49,10 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = 4,
-  _ = 1,
+let _ = 4,
+  p = 1,
   h = 3,
-  m = [
+  g = [
     [{
       top: 15,
       left: 15,
@@ -109,19 +109,19 @@ let p = 4,
     }]
   ];
 
-function g(e) {
+function m(e) {
   let {
     users: t,
     channel: n
-  } = e, c = t.length > p, d = t.length - p + 1, g = d >= 10 ? h : _;
+  } = e, c = t.length > _, d = t.length - _ + 1, m = d >= 10 ? h : p;
   return (0, r.jsx)("div", {
     className: l.container,
-    children: m[(0, i.clamp)(t.length - 1, 0, m.length - 1)].map((e, i) => {
-      let p = t[i];
-      return null == p ? null : (0, r.jsx)("div", {
+    children: g[(0, i.clamp)(t.length - 1, 0, g.length - 1)].map((e, i) => {
+      let _ = t[i];
+      return null == _ ? null : (0, r.jsx)("div", {
         className: l.circle,
         style: e,
-        children: c && i === g ? (0, r.jsx)("div", {
+        children: c && i === m ? (0, r.jsx)("div", {
           className: l.overflowCount,
           children: (0, r.jsx)(o.Text, {
             variant: "text-xxs/semibold",
@@ -131,14 +131,14 @@ function g(e) {
             })
           })
         }) : (0, r.jsx)(o.ua7, {
-          text: s.ZP.getName(n.guild_id, n.id, p),
+          text: s.ZP.getName(n.guild_id, n.id, _),
           children: e => (0, r.jsx)("img", f(u({}, e), {
             className: l.avatar,
-            src: p.getAvatarURL(n.guild_id, (0, o.pxk)(o.EFr.SIZE_80)),
+            src: _.getAvatarURL(n.guild_id, (0, o.pxk)(o.EFr.SIZE_80)),
             alt: ""
           }))
         })
-      }, p.id)
+      }, _.id)
     })
   })
 }

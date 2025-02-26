@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Mg: () => p,
+  Mg: () => _,
   eD: () => u,
   g8: () => f,
-  qQ: () => _
+  qQ: () => p
 }), n(47120), n(86693), n(536091);
 var r = n(512722),
   i = n.n(r),
@@ -152,7 +152,7 @@ class f {
   }
 }
 
-function p(e, t) {
+function _(e, t) {
   return {
     type: "guild",
     id: e,
@@ -162,7 +162,7 @@ function p(e, t) {
   }
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   var r, i, o;
   return {
     type: "folder",

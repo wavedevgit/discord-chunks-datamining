@@ -12,11 +12,11 @@ var r, i = n(392711),
   u = n(57513),
   d = n(51025),
   f = n(812206),
-  p = n(283595),
-  _ = n(417363),
+  _ = n(283595),
+  p = n(417363),
   h = n(391690),
-  m = n(70956),
-  g = n(780570),
+  g = n(70956),
+  m = n(780570),
   E = n(804739);
 
 function v(e, t, n) {
@@ -33,9 +33,9 @@ let b = new Set,
   S = {},
   I = new Set,
   T = {},
-  N = 10 * m.Z.Millis.MINUTE,
-  A = 6 * m.Z.Millis.HOUR,
-  C = 10 * m.Z.Millis.MINUTE,
+  N = 10 * g.Z.Millis.MINUTE,
+  A = 6 * g.Z.Millis.HOUR,
+  C = 10 * g.Z.Millis.MINUTE,
   R = new s.V7;
 
 function P(e) {
@@ -48,7 +48,7 @@ function D() {
 
 function w() {
   if (!(0, E.Q)()) return !1;
-  let e = p.Z.entitledBranchIds,
+  let e = _.Z.entitledBranchIds,
     t = [];
   for (let n of e) T.hasOwnProperty(n) || (T[n] = null, t.push(n));
   if (0 === t.length) return !1;
@@ -61,7 +61,7 @@ function L() {
     let {
       applicationId: t,
       branchId: n
-    } = (0, g.CP)(e);
+    } = (0, m.CP)(e);
     null != f.Z.getApplication(t) && (I.delete(e), x(t, n))
   }
 }
@@ -70,10 +70,10 @@ function x(e, t) {
   if (null != y[t] && h.Z.shouldBeInstalled(e, t)) {
     let n = y[t],
       r = n.manifestIds,
-      i = _.Z.getState(e, t);
+      i = p.Z.getState(e, t);
     null != i && i.shouldPatch && (i.buildId !== n.id || !o().isEqual(i.manifestIds, r)) && l.Z.wait(() => {
       let i = f.Z.getApplication(e);
-      null != i ? (I.delete((0, g.Tu)(e, t)), (0, d.li)(i, t, n.id, r, !0)) : I.add((0, g.Tu)(e, t))
+      null != i ? (I.delete((0, m.Tu)(e, t)), (0, d.li)(i, t, n.id, r, !0)) : I.add((0, m.Tu)(e, t))
     })
   }
 }
@@ -142,8 +142,8 @@ function V(e) {
   let {
     branches: t
   } = e, n = {};
-  for (let e in p.Z.libraryApplications) {
-    let t = p.Z.libraryApplications[e];
+  for (let e in _.Z.libraryApplications) {
+    let t = _.Z.libraryApplications[e];
     n[t.branchId] = t
   }
   for (let e of t) {
@@ -175,14 +175,14 @@ function H(e) {
   if (!(0, E.Q)()) return !1;
   let n = new Set;
   for (let e of t) n.add(e.application_id);
-  for (let e in p.Z.libraryApplications) {
-    let t = p.Z.libraryApplications[e];
-    n.has(t.id) && (0, g.Je)(t) && l.Z.wait(() => u.l(t.id, t.branchId))
+  for (let e in _.Z.libraryApplications) {
+    let t = _.Z.libraryApplications[e];
+    n.has(t.id) && (0, m.Je)(t) && l.Z.wait(() => u.l(t.id, t.branchId))
   }
 }
 class W extends(r = a.ZP.Store) {
   initialize() {
-    this.syncWith([p.Z], w), this.waitFor(_.Z, p.Z, f.Z)
+    this.syncWith([_.Z], w), this.waitFor(p.Z, _.Z, f.Z)
   }
   getTargetBuildId(e, t) {
     return null == y[t] ? null : y[t].id

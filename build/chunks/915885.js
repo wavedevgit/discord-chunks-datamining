@@ -1,6 +1,6 @@
 /** Chunk was on 30829 **/
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -17,20 +17,20 @@ var r = n(200651),
   g = n(496675),
   m = n(527379),
   b = n(981631),
-  v = n(388032);
+  y = n(388032);
 
-function y(e) {
+function v(e) {
   let {
     guild: t,
     selected: n
-  } = e, y = (0, d.jS)(t.id, "Guild Sidebar"), O = (0, l.e7)([g.Z], () => g.Z.can(b.Plq.KICK_MEMBERS, t)), j = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), _ = y && O && null != j ? j : 0;
+  } = e, v = (0, d.jS)(t.id, "Guild Sidebar"), O = (0, l.e7)([g.Z], () => g.Z.can(b.Plq.KICK_MEMBERS, t)), j = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), _ = v && O && null != j ? j : 0;
   i.useEffect(() => {
-    O && y && t.hasFeature(b.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && t.hasFeature(b.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
+    O && v && t.hasFeature(b.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && t.hasFeature(b.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
       guildId: t.id,
       status: p.wB.SUBMITTED,
       limit: h.p
     })
-  }, [O, t, y]);
+  }, [O, t, v]);
   let C = i.useCallback(() => {
       (0, m._X)(t.id)
     }, [t.id]),
@@ -44,7 +44,7 @@ function y(e) {
         color: "currentColor",
         className: e
       }),
-      text: v.NW.string(v.t.oclz3d),
+      text: y.NW.string(y.t.oclz3d),
       selected: n,
       onClick: C,
       trailing: _ > 0 ? (0, r.jsx)(a.mAB, {

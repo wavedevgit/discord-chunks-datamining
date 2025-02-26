@@ -42,15 +42,15 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = new Map,
+let p = new Map,
   h = {},
-  m = l.VD2.BOTTOM_RIGHT,
-  g = {
+  g = l.VD2.BOTTOM_RIGHT,
+  m = {
     [c.cL.VIDEO]: c.l8[c.cL.VIDEO],
     [c.cL.CAMERA_PREVIEW]: c.l8[c.cL.CAMERA_PREVIEW]
   };
@@ -62,30 +62,30 @@ function E(e) {
     component: a,
     props: s
   } = e;
-  if (null != _.get(o)) return;
+  if (null != p.get(o)) return;
   let c = {
     id: o,
     component: a,
-    position: null !== (t = s.position) && void 0 !== t ? t : m,
+    position: null !== (t = s.position) && void 0 !== t ? t : g,
     props: s,
     docked: null !== (n = s.docked) && void 0 !== n && n
   };
-  _.set(o, c), a === l.NYg.VIDEO ? null == r && (r = o) : a === l.NYg.EMBED_IFRAME && null == i && (i = o)
+  p.set(o, c), a === l.NYg.VIDEO ? null == r && (r = o) : a === l.NYg.EMBED_IFRAME && null == i && (i = o)
 }
 
 function v(e) {
   let {
     id: t
   } = e;
-  if (!_.has(t)) return !1;
+  if (!p.has(t)) return !1;
   {
-    _.delete(t);
-    let e = Array.from(_.keys());
+    p.delete(t);
+    let e = Array.from(p.keys());
     r === t ? r = e.find(e => {
-      let t = _.get(e);
+      let t = p.get(e);
       return null != t && t.component === l.NYg.VIDEO
     }) : i === t && (i = e.find(e => {
-      let t = _.get(e);
+      let t = p.get(e);
       return null != t && t.component === l.NYg.EMBED_IFRAME
     }))
   }
@@ -99,11 +99,11 @@ function b(e) {
   if (null == t || r !== t && i !== t) return !1;
   {
     let e = new Map;
-    _.forEach((t, r) => {
-      e.set(r, p(d({}, t), {
+    p.forEach((t, r) => {
+      e.set(r, _(d({}, t), {
         position: n
       }))
-    }), _ = e, m = n
+    }), p = e, g = n
   }
 }
 
@@ -112,7 +112,7 @@ function y(e) {
     width: t,
     pipType: n
   } = e;
-  g[n] = t
+  m[n] = t
 }
 
 function O(e) {
@@ -129,9 +129,9 @@ function S(e) {
   } = e;
   if (r !== t && i !== t) return !1;
   {
-    let e = _.get(t);
+    let e = p.get(t);
     if (null == e) return !1;
-    _.set(t, p(d({}, e), {
+    p.set(t, _(d({}, e), {
       hidden: !0
     }))
   }
@@ -143,9 +143,9 @@ function I(e) {
   } = e;
   if (r !== t && i !== t) return !1;
   {
-    let e = _.get(t);
+    let e = p.get(t);
     if (null == e) return !1;
-    _.set(t, p(d({}, e), {
+    p.set(t, _(d({}, e), {
       hidden: !1
     }))
   }
@@ -154,39 +154,39 @@ function I(e) {
 function T(e) {
   let {
     id: t
-  } = e, n = _.get(t);
+  } = e, n = p.get(t);
   null != n && (n.component === l.NYg.VIDEO ? r = t : n.component === l.NYg.EMBED_IFRAME && (i = t))
 }
 
 function N() {
-  r = null, i = null, _ = new Map
+  r = null, i = null, p = new Map
 }
 class A extends(o = a.ZP.PersistedStore) {
   initialize(e) {
     if (null == e) {
-      m = l.VD2.BOTTOM_RIGHT, g = {
+      g = l.VD2.BOTTOM_RIGHT, m = {
         [c.cL.VIDEO]: c.l8[c.cL.VIDEO],
         [c.cL.CAMERA_PREVIEW]: c.l8[c.cL.CAMERA_PREVIEW]
       };
       return
     }
-    m = e.openPosition, g = e.pipWidths
+    g = e.openPosition, m = e.pipWidths
   }
   get pipWindow() {
     var e;
-    return null == r && null == i ? null : _.get(null !== (e = null != r ? r : i) && void 0 !== e ? e : "")
+    return null == r && null == i ? null : p.get(null !== (e = null != r ? r : i) && void 0 !== e ? e : "")
   }
   get pipVideoWindow() {
-    return null == r ? null : _.get(r)
+    return null == r ? null : p.get(r)
   }
   get pipActivityWindow() {
-    return null == i ? null : _.get(i)
+    return null == i ? null : p.get(i)
   }
   get pipWindows() {
-    return _
+    return p
   }
   pipWidth(e) {
-    return g[e]
+    return m[e]
   }
   isEmbeddedActivityHidden() {
     return null == i
@@ -195,12 +195,12 @@ class A extends(o = a.ZP.PersistedStore) {
     return h[e]
   }
   isOpen(e) {
-    return null != e && _.has(e)
+    return null != e && p.has(e)
   }
   getState() {
     return {
-      openPosition: m,
-      pipWidths: g
+      openPosition: g,
+      pipWidths: m
     }
   }
 }

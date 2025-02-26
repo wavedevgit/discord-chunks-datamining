@@ -20,7 +20,7 @@ function o(e) {
     if (null === t) return !0;
     var n = Object.hasOwnProperty.call(t, "constructor") && t.constructor;
     return n === Object || "function" == typeof n && Function.toString.call(n) === z
-  }(e) || Array.isArray(e) || !!e[W] || !!(null === (t = e.constructor) || void 0 === t ? void 0 : t[W]) || f(e) || p(e))
+  }(e) || Array.isArray(e) || !!e[W] || !!(null === (t = e.constructor) || void 0 === t ? void 0 : t[W]) || f(e) || _(e))
 }
 
 function a(e, t, n) {
@@ -33,7 +33,7 @@ function a(e, t, n) {
 
 function s(e) {
   var t = e[Y];
-  return t ? t.i > 3 ? t.i - 4 : t.i : Array.isArray(e) ? 1 : f(e) ? 2 : 3 * !!p(e)
+  return t ? t.i > 3 ? t.i - 4 : t.i : Array.isArray(e) ? 1 : f(e) ? 2 : 3 * !!_(e)
 }
 
 function l(e, t) {
@@ -57,11 +57,11 @@ function f(e) {
   return V && e instanceof Map
 }
 
-function p(e) {
+function _(e) {
   return F && e instanceof Set
 }
 
-function _(e) {
+function p(e) {
   return e.o || e.t
 }
 
@@ -82,13 +82,13 @@ function h(e) {
   return Object.create(Object.getPrototypeOf(e), t)
 }
 
-function m(e, t) {
-  return void 0 === t && (t = !1), E(e) || i(e) || !o(e) || (s(e) > 1 && (e.set = e.add = e.clear = e.delete = g), Object.freeze(e), t && a(e, function(e, t) {
-    return m(t, !0)
+function g(e, t) {
+  return void 0 === t && (t = !1), E(e) || i(e) || !o(e) || (s(e) > 1 && (e.set = e.add = e.clear = e.delete = m), Object.freeze(e), t && a(e, function(e, t) {
+    return g(t, !0)
   }, !0)), e
 }
 
-function g() {
+function m() {
   r(2)
 }
 
@@ -176,12 +176,12 @@ function R(e, t, n, r, a, s, c) {
 }
 
 function P(e, t, n) {
-  void 0 === n && (n = !1), !e.l && e.h.D && e.m && m(t, n)
+  void 0 === n && (n = !1), !e.l && e.h.D && e.m && g(t, n)
 }
 
 function D(e, t) {
   var n = e[Y];
-  return (n ? _(n) : e)[t]
+  return (n ? p(n) : e)[t]
 }
 
 function w(e, t) {
@@ -202,7 +202,7 @@ function x(e) {
 }
 
 function M(e, t, n) {
-  var r = f(t) ? v("MapSet").F(t, n) : p(t) ? v("MapSet").T(t, n) : e.O ? function(e, t) {
+  var r = f(t) ? v("MapSet").F(t, n) : _(t) ? v("MapSet").T(t, n) : e.O ? function(e, t) {
     var n = Array.isArray(e),
       r = {
         i: +!!n,
@@ -281,7 +281,7 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
   J = {
     get: function(e, t) {
       if (t === Y) return e;
-      var n = _(e);
+      var n = p(e);
       if (!l(n, t)) return function(e, t, n) {
         var r, i = w(t, n);
         return i ? "value" in i ? i.value : null === (r = i.get) || void 0 === r ? void 0 : r.call(e.k) : void 0
@@ -290,16 +290,16 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
       return e.I || !o(r) ? r : r === D(e.t, t) ? (x(e), e.o[t] = M(e.A.h, r, e)) : r
     },
     has: function(e, t) {
-      return t in _(e)
+      return t in p(e)
     },
     ownKeys: function(e) {
-      return Reflect.ownKeys(_(e))
+      return Reflect.ownKeys(p(e))
     },
     set: function(e, t, n) {
-      var r = w(_(e), t);
+      var r = w(p(e), t);
       if (null == r ? void 0 : r.set) return r.set.call(e.k, n), !0;
       if (!e.P) {
-        var i = D(_(e), t),
+        var i = D(p(e), t),
           o = null == i ? void 0 : i[Y];
         if (o && o.t === n) return e.o[t] = n, e.R[t] = !1, !0;
         if (d(n, i) && (void 0 !== n || l(e.t, t))) return !0;
@@ -311,7 +311,7 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
       return void 0 !== D(e.t, t) || t in e.t ? (e.R[t] = !1, x(e), L(e)) : delete e.R[t], e.o && delete e.o[t], !0
     },
     getOwnPropertyDescriptor: function(e, t) {
-      var n = _(e),
+      var n = p(e),
         r = Reflect.getOwnPropertyDescriptor(n, t);
       return r ? {
         writable: !0,
@@ -374,10 +374,10 @@ var ee = new(function() {
           }) : (O(c, i), A(a, c))
         }
         if (!e || "object" != typeof e) {
-          if (void 0 === (a = n(e)) && (a = e), a === H && (a = void 0), t.D && m(a, !0), i) {
+          if (void 0 === (a = n(e)) && (a = e), a === H && (a = void 0), t.D && g(a, !0), i) {
             var f = [],
-              p = [];
-            v("Patches").M(e, a, f, p), i(f, p)
+              _ = [];
+            v("Patches").M(e, a, f, _), i(f, _)
           }
           return a
         }

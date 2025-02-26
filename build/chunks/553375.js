@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => p,
+  ZP: () => _,
   nK: () => d,
   uj: () => f
 });
@@ -51,7 +51,7 @@ function f(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     user: t,
     activity: n,
@@ -60,8 +60,8 @@ function p(e) {
     isMenuOpen: c,
     appContext: f
   } = e, {
-    applicationId: p,
-    sourceUserId: _
+    applicationId: _,
+    sourceUserId: p
   } = d({
     activity: n,
     entry: o,
@@ -70,8 +70,8 @@ function p(e) {
     location: "UserProfileActivityContextMenu",
     source: a.m1.UserProfileCardContextMenu,
     trackEntryPointImpression: c,
-    applicationId: p,
-    sourceUserId: _,
+    applicationId: _,
+    sourceUserId: p,
     appContext: f
   });
   return null == h ? null : (0, r.jsx)(i.sNh, {

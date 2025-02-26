@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,17 +44,17 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let h = {},
-  m = (0, l.isWindows)() ? "".concat(s.Z.process.env.LOCALAPPDATA, "\\DiscordGames") : (0, l.isMac)() ? "/Applications/DiscordGames" : "/tmp";
+  g = (0, l.isWindows)() ? "".concat(s.Z.process.env.LOCALAPPDATA, "\\DiscordGames") : (0, l.isMac)() ? "/Applications/DiscordGames" : "/tmp";
 
-function g(e, t) {
+function m(e, t) {
   var n;
-  h = _(f({}, h), {
+  h = p(f({}, h), {
     [e]: f({}, null !== (n = h[e]) && void 0 !== n ? n : {}, t)
   })
 }
@@ -64,7 +64,7 @@ function E(e) {
 }
 
 function v(e, t) {
-  r.pathLabels = _(f({}, r.pathLabels), {
+  r.pathLabels = p(f({}, r.pathLabels), {
     [e]: t
   })
 }
@@ -110,7 +110,7 @@ function S(e) {
 
 function I(e) {
   if (r.installationPaths.has(e.path)) return !1;
-  g(e.path, e.metadata);
+  m(e.path, e.metadata);
   let t = new Set(r.installationPaths);
   t.add(e.path), r.installationPaths = t
 }
@@ -138,12 +138,12 @@ function A(e) {
   let {
     metadataPayload: t
   } = e;
-  for (let e in t) g(e, t[e])
+  for (let e in t) m(e, t[e])
 }
 class C extends(i = o.ZP.PersistedStore) {
   initialize(e) {
     let t = f({}, e);
-    null == t.installations && (t.installations = {}), null == t.defaultInstallationPath && (t.defaultInstallationPath = m), null == t.installationPaths ? t.installationPaths = new Set([t.defaultInstallationPath]) : t.installationPaths = new Set(Array.from(t.installationPaths)), null == t.pathLabels && (t.pathLabels = {}), r = t
+    null == t.installations && (t.installations = {}), null == t.defaultInstallationPath && (t.defaultInstallationPath = g), null == t.installationPaths ? t.installationPaths = new Set([t.defaultInstallationPath]) : t.installationPaths = new Set(Array.from(t.installationPaths)), null == t.pathLabels && (t.pathLabels = {}), r = t
   }
   getState() {
     return r
@@ -177,7 +177,7 @@ class C extends(i = o.ZP.PersistedStore) {
   }
   getLabelFromPath(e) {
     var t, n;
-    return e === m ? u.NW.string(u.t.VdDrjo) : null !== (n = null !== (t = s.Z.fileManager.basename(e)) && void 0 !== t ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(-1)[0]) && void 0 !== n ? n : "?"
+    return e === g ? u.NW.string(u.t.VdDrjo) : null !== (n = null !== (t = s.Z.fileManager.basename(e)) && void 0 !== t ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(-1)[0]) && void 0 !== n ? n : "?"
   }
 }
 d(C, "displayName", "InstallationManagerStore"), d(C, "persistKey", "InstallationManagerStore");

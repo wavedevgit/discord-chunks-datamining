@@ -14,11 +14,11 @@ var i = n(481060),
   u = n(430824),
   d = n(131951),
   f = n(594174),
-  p = n(358085),
-  _ = n(981631),
+  _ = n(358085),
+  p = n(981631),
   h = n(37113);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -57,15 +57,15 @@ function v(e, t) {
   }), e
 }
 
-function b(e, t, m) {
-  let E = l.Z.getWindowOpen(_.KJ3.CHANNEL_CALL_POPOUT) ? _.KJ3.CHANNEL_CALL_POPOUT : null;
-  if ((0, s.Z)(E), p.isPlatformEmbedded)(0, i.ZDy)(async () => {
+function b(e, t, g) {
+  let E = l.Z.getWindowOpen(p.KJ3.CHANNEL_CALL_POPOUT) ? p.KJ3.CHANNEL_CALL_POPOUT : null;
+  if ((0, s.Z)(E), _.isPlatformEmbedded)(0, i.ZDy)(async () => {
     let {
       default: t
     } = await Promise.all([n.e("93382"), n.e("79477"), n.e("59989")]).then(n.bind(n, 60594));
-    return n => (0, r.jsx)(t, v(g({}, n), {
+    return n => (0, r.jsx)(t, v(m({}, n), {
       guildId: e,
-      analyticsLocation: m
+      analyticsLocation: g
     }))
   });
   else {

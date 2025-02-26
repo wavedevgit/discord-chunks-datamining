@@ -13,7 +13,7 @@ var r, i = n(442837),
   d = n(921944),
   f = n(474936);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,20 +21,20 @@ function p(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = 2,
+let p = 2,
   h = {
     client: {
       desktop: c.aH.DEFAULT,
       coachmarkImpressions: 0
     }
   },
-  m = !1,
-  g = !0,
+  g = !1,
+  m = !0,
   E = () => {
-    g = !l.ZP.canUsePremiumAppIcons(a.default.getCurrentUser())
+    m = !l.ZP.canUsePremiumAppIcons(a.default.getCurrentUser())
   },
   v = e => {
-    if (h.client.desktop = e, !g) {
+    if (h.client.desktop = e, !m) {
       var t;
       s.default.track(u.rMx.APP_ICON_UPDATED, {
         icon_id: e,
@@ -52,17 +52,17 @@ function b(e) {
 }
 
 function y() {
-  m = !0
+  g = !0
 }
 
 function O() {
-  S(), m = !1
+  S(), g = !1
 }
 
 function S() {
-  g && (h.client = {
+  m && (h.client = {
     desktop: c.aH.DEFAULT,
-    coachmarkImpressions: _
+    coachmarkImpressions: p
   })
 }
 
@@ -70,17 +70,17 @@ function I(e) {
   let {
     markAsDismissed: t
   } = e;
-  h.client.coachmarkImpressions += 1, h.client.coachmarkImpressions >= _ && (null == t || t(d.L.UNKNOWN), O())
+  h.client.coachmarkImpressions += 1, h.client.coachmarkImpressions >= p && (null == t || t(d.L.UNKNOWN), O())
 }
 class T extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     null != e && (h = e), this.waitFor(a.default), this.syncWith([a.default], E)
   }
   get isEditorOpen() {
-    return m
+    return g
   }
   get isUpsellPreview() {
-    return g
+    return m
   }
   getState() {
     return h
@@ -90,7 +90,7 @@ class T extends(r = i.ZP.PersistedStore) {
     return null == h ? void 0 : null === (e = h.client) || void 0 === e ? void 0 : e.desktop
   }
 }
-p(T, "displayName", "AppIconPersistedStoreState"), p(T, "persistKey", "AppIconPersistedStoreState");
+_(T, "displayName", "AppIconPersistedStoreState"), _(T, "persistKey", "AppIconPersistedStoreState");
 let N = new T(o.Z, {
   APP_ICON_UPDATED: b,
   APP_ICON_EDITOR_OPEN: y,

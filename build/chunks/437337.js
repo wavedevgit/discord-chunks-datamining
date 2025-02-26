@@ -13,8 +13,8 @@ var r = n(200651),
   u = n(84735),
   d = n(180035),
   f = n(481060),
-  p = n(540059),
-  _ = n(333930);
+  _ = n(540059),
+  p = n(333930);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -103,12 +103,12 @@ let O = function(e) {
     onChange: n,
     checked: o,
     disabled: h,
-    className: g,
+    className: m,
     focusProps: b,
     innerRef: O
   } = e, {
     reducedMotion: S
-  } = i.useContext(c.S), I = i.useRef(null), [T, N] = i.useState(!1), A = (0, p.Q3)("Switch"), C = (0, d.d)(A ? l.Z.colors.INTERACTIVE_MUTED : l.Z.unsafe_rawColors.PRIMARY_400).spring(), R = (0, d.d)(A ? l.Z.colors.REDESIGN_INPUT_CONTROL_SELECTED : l.Z.unsafe_rawColors.GREEN_360).spring(), {
+  } = i.useContext(c.S), I = i.useRef(null), [T, N] = i.useState(!1), A = (0, _.Q3)("Switch"), C = (0, d.d)(A ? l.Z.colors.INTERACTIVE_MUTED : l.Z.unsafe_rawColors.PRIMARY_400).spring(), R = (0, d.d)(A ? l.Z.colors.REDESIGN_INPUT_CONTROL_SELECTED : l.Z.unsafe_rawColors.GREEN_360).spring(), {
     state: P,
     opacity: D
   } = (0, f.q_F)({
@@ -129,13 +129,13 @@ let O = function(e) {
     var t;
     !h && T && !e.repeat && (N(!1), "Enter" === e.key && (null === (t = I.current) || void 0 === t || t.click()))
   }
-  return (0, r.jsx)(u.t, E(m({}, b), {
+  return (0, r.jsx)(u.t, E(g({}, b), {
     within: !0,
     offset: -2,
     children: (0, r.jsxs)(s.animated.div, {
-      className: a()(_.container, g, {
-        [_.checked]: o,
-        [_.disabled]: h
+      className: a()(p.container, m, {
+        [p.checked]: o,
+        [p.disabled]: h
       }),
       onMouseDown: () => !h && N(!0),
       onMouseUp: () => N(!1),
@@ -147,7 +147,7 @@ let O = function(e) {
         })
       },
       children: [(0, r.jsxs)(s.animated.svg, {
-        className: _.slider,
+        className: p.slider,
         viewBox: "0 0 28 20",
         preserveAspectRatio: "xMinYMid meet",
         style: {
@@ -183,7 +183,7 @@ let O = function(e) {
         ref: e => {
           I.current = e, null != O && (O.current = e)
         },
-        className: _.input,
+        className: p.input,
         tabIndex: h ? -1 : 0,
         onKeyDown: L,
         onKeyUp: x,

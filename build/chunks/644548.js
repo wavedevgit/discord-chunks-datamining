@@ -51,26 +51,26 @@ let y = (e, t, n, r) => {
     } = (0, v.n)(n), {
       primaryColor: I,
       secondaryColor: w
-    } = (0, d.Z)(null == O ? void 0 : O.src), T = (0, c.yA)(n), Z = (0, c.Nq)(n), S = a.useCallback(e => {
-      if (null != t && null != b && null != T && null != Z && (0, p.qy)(Z)) return (0, u.SO)({
+    } = (0, d.Z)(null == O ? void 0 : O.src), E = (0, c.yA)(n), T = (0, c.Nq)(n), Z = a.useCallback(e => {
+      if (null != t && null != b && null != E && null != T && (0, p.qy)(T)) return (0, u.SO)({
         entry: n,
         applicationImageSrc: null == O ? void 0 : O.src,
         avatarSrcs: [b.getAvatarURL(null == t ? void 0 : t.guild_id, 128)],
-        description: y(n, t, b, Z),
+        description: y(n, t, b, T),
         timestamp: f.NW.formatToPlainString(f.t.YL7UEx, {
-          hours: Math.round(T / i.Z.Seconds.HOUR)
+          hours: Math.round(E / i.Z.Seconds.HOUR)
         }),
         colors: [I, w],
         channelId: e
       })
-    }, [null == O ? void 0 : O.src, t, T, n, I, Z, w, b]);
-    if (null == b || null == T || null == Z || !(0, p.qy)(Z)) return null;
-    let E = null != n.extra.platform ? m.v[n.extra.platform] : null;
+    }, [null == O ? void 0 : O.src, t, E, n, I, T, w, b]);
+    if (null == b || null == E || null == T || !(0, p.qy)(T)) return null;
+    let S = null != n.extra.platform ? m.v[n.extra.platform] : null;
     return (0, r.jsxs)(x.yR, {
       children: [(0, r.jsx)(x.wG, {
         channel: t,
-        headerIcons: null == E ? null : (0, r.jsx)(g.Z, {
-          Icon: E,
+        headerIcons: null == S ? null : (0, r.jsx)(g.Z, {
+          Icon: S,
           "aria-label": f.NW.string(f.t.YR4cHB)
         }),
         entry: n,
@@ -90,7 +90,7 @@ let y = (e, t, n, r) => {
           onVoiceChannelPreview: P,
           user: b,
           channel: t,
-          generateReactionImage: S,
+          generateReactionImage: Z,
           reactionImageAltText: j(n, b),
           entry: n
         })

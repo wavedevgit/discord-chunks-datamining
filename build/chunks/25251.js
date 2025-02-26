@@ -19,22 +19,22 @@ function c(e, t, n) {
 let u = [],
   d = [],
   f = !1,
-  p = u,
-  _ = {},
+  _ = u,
+  p = {},
   h = null,
-  m = 0,
-  g = 3e5,
+  g = 0,
+  m = 3e5,
   E = 6e4,
   v = 36e5,
   b = e => {
-    p = (0, a.cloneDeep)(e);
+    _ = (0, a.cloneDeep)(e);
     let t = {};
-    p.forEach(e => {
+    _.forEach(e => {
       if (t[e.id] = e, d.length > 0) {
         var n;
         t[e.id].config.effects = null !== (n = (0, a.sample)(d)) && void 0 !== n ? n : []
       }
-    }), _ = t
+    }), p = t
   },
   y = () => {
     f = !0
@@ -43,13 +43,13 @@ let u = [],
     let {
       profileEffects: t
     } = e;
-    r = void 0, i = Date.now() + g, m = 0, b(0 === t.length ? u : t), f = !1
+    r = void 0, i = Date.now() + m, g = 0, b(0 === t.length ? u : t), f = !1
   },
   S = e => {
     let {
       error: t
     } = e;
-    r = t, i = Date.now() + Math.min(E * 2 ** m, v), ++m, b(u), f = !1
+    r = t, i = Date.now() + Math.min(E * 2 ** g, v), ++g, b(u), f = !1
   },
   I = e => {
     let {
@@ -71,7 +71,7 @@ class A extends(o = s.ZP.Store) {
     return r
   }
   get profileEffects() {
-    return p
+    return _
   }
   get tryItOutId() {
     return h
@@ -83,7 +83,7 @@ class A extends(o = s.ZP.Store) {
     return null != i && null == r
   }
   getProfileEffectById(e) {
-    return null != e ? _[e] : void 0
+    return null != e ? p[e] : void 0
   }
 }
 c(A, "displayName", "ProfileEffectStore");

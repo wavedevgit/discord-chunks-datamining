@@ -49,7 +49,7 @@ function t(e) {
       end: "\\)",
       contains: ["self", i, a, o, u]
     },
-    p = {
+    _ = {
       contains: [o, a, l, c, f, u],
       variants: [{
         begin: "['`]\\(",
@@ -64,7 +64,7 @@ function t(e) {
         begin: "'" + n
       }]
     },
-    _ = {
+    p = {
       variants: [{
         begin: "'" + t
       }, {
@@ -75,7 +75,7 @@ function t(e) {
       begin: "\\(\\s*",
       end: "\\)"
     },
-    m = {
+    g = {
       endsWithParent: !0,
       relevance: 0
     };
@@ -87,10 +87,10 @@ function t(e) {
     }, {
       begin: n
     }]
-  }, m], m.contains = [p, _, h, i, o, a, s, l, c, d, u], {
+  }, g], g.contains = [_, p, h, i, o, a, s, l, c, d, u], {
     name: "Lisp",
     illegal: /\S/,
-    contains: [o, e.SHEBANG(), i, a, s, p, _, h, u]
+    contains: [o, e.SHEBANG(), i, a, s, _, p, h, u]
   }
 }
 e.exports = t

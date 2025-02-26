@@ -16,8 +16,8 @@ var r, i = n(200651),
   g = n(367907),
   m = n(453542),
   b = n(702321),
-  v = n(82295),
-  y = n(313201),
+  y = n(82295),
+  v = n(313201),
   O = n(540059),
   j = n(860144),
   _ = n(214852),
@@ -26,8 +26,8 @@ var r, i = n(200651),
   P = n(869404),
   N = n(333984),
   S = n(210887),
-  I = n(592125),
-  Z = n(158776),
+  Z = n(592125),
+  I = n(158776),
   w = n(55589),
   E = n(515753),
   T = n(981631),
@@ -322,7 +322,7 @@ class G extends(r = l.Component) {
         c = n.some(e => (0, b.Z)(e)),
         u = {
           num_users_visible: a.length,
-          num_users_visible_with_mobile_indicator: s.filter(e => null != e && Z.Z.isMobileOnline(e)).length
+          num_users_visible_with_mobile_indicator: s.filter(e => null != e && I.Z.isMobileOnline(e)).length
         };
       this.hasReportedAnalytics = !0, g.ZP.trackWithMetadata(T.rMx.DM_LIST_VIEWED, k(L({}, u, (0, m.X)()), {
         visible_user_ids: s.filter(e => null != e),
@@ -378,7 +378,7 @@ class G extends(r = l.Component) {
       } = e, {
         showDMHeader: n
       } = this.props;
-      return 0 !== t && n ? (0, i.jsxs)(v.Z, {
+      return 0 !== t && n ? (0, i.jsxs)(y.Z, {
         className: A.privateChannelsHeaderContainer,
         children: [(0, i.jsx)("span", {
           className: A.headerText,
@@ -432,20 +432,20 @@ let B = e => {
       showDMHeader: h
     } = e,
     g = l.Children.count(d),
-    m = I.Z.getMutablePrivateChannels(),
+    m = Z.Z.getMutablePrivateChannels(),
     b = (0, P.k1)(m),
-    v = (0, u.Wu)([w.Z, x.Z, N.Z], () => {
+    y = (0, u.Wu)([w.Z, x.Z, N.Z], () => {
       let e = w.Z.getPrivateChannelIds();
       return (0, P.tU)(e, [x.Z, N.Z])
     }, []);
   (0, _.z)(j.R);
-  let C = (0, u.cj)([f.Z, S.Z, I.Z], () => ({
+  let C = (0, u.cj)([f.Z, S.Z, Z.Z], () => ({
       theme: S.Z.darkSidebar ? T.BRd.DARK : a,
       keyboardModeEnabled: f.Z.keyboardModeEnabled,
-      version: null != o ? "".concat(o, ":").concat(I.Z.getPrivateChannelsVersion()) : I.Z.getPrivateChannelsVersion()
+      version: null != o ? "".concat(o, ":").concat(Z.Z.getPrivateChannelsVersion()) : Z.Z.getPrivateChannelsVersion()
     })),
-    Z = l.useRef(null),
-    E = null !== (t = e.listScrollerRef) && void 0 !== t ? t : Z,
+    I = l.useRef(null),
+    E = null !== (t = e.listScrollerRef) && void 0 !== t ? t : I,
     D = l.useCallback(e => {
       let t = E.current,
         n = document.querySelector(e);
@@ -477,7 +477,7 @@ let B = e => {
         }
       })
     }), [E]),
-    M = (0, y.Dt)(),
+    M = (0, v.Dt)(),
     B = (0, c.ZP)({
       id: "private-channels-".concat(M),
       isEnabled: C.keyboardModeEnabled,
@@ -492,7 +492,7 @@ let B = e => {
       density: r,
       isVisualRefreshEnabled: n,
       channels: b,
-      privateChannelIds: v,
+      privateChannelIds: y,
       listRef: E,
       theme: a,
       version: o

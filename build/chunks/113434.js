@@ -3,17 +3,17 @@
 n.d(t, {
   B4: () => eO,
   B6: () => Q,
-  Bd: () => eg,
+  Bd: () => em,
   DU: () => el,
   Fr: () => es,
   GI: () => ed,
   GU: () => ey,
   Gd: () => eA,
-  I: () => em,
+  I: () => eg,
   J2: () => B,
   Jf: () => er,
-  KX: () => ep,
-  OH: () => e_,
+  KX: () => e_,
+  OH: () => ep,
   Qy: () => eC,
   Rf: () => en,
   _Q: () => eh,
@@ -47,11 +47,11 @@ var r = n(192379),
   u = n(780384),
   d = n(442837),
   f = n(410030),
-  p = n(583434),
-  _ = n(706454),
+  _ = n(583434),
+  p = n(706454),
   h = n(553795),
-  m = n(594174),
-  g = n(78839),
+  g = n(594174),
+  m = n(78839),
   E = n(70956),
   v = n(63063),
   b = n(930153),
@@ -220,7 +220,7 @@ function Q(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
       dateStyle: "short"
     },
-    n = (0, d.e7)([_.default], () => _.default.locale);
+    n = (0, d.e7)([p.default], () => p.default.locale);
   return r.useMemo(() => null == e ? "" : new Date(e).toLocaleDateString(n, t), [e, t, n])
 }
 
@@ -370,7 +370,7 @@ function el(e) {
     {
       product: r,
       isFetching: i
-    } = (0, p.T)(L.r.build(e).defaultReward.skuId);
+    } = (0, _.T)(L.r.build(e).defaultReward.skuId);
   return {
     hasQuestCollectibles: n,
     avatarDecoration: null == r ? void 0 : null === (t = r.items) || void 0 === t ? void 0 : t[0],
@@ -450,7 +450,7 @@ let ed = e => {
     } = eu(), r = ee(t), i = 0 === n.length;
     return (0, C.$J)(t) && i && !r
   },
-  ep = () => {
+  e_ = () => {
     let {
       xboxAccounts: e,
       playstationAccounts: t
@@ -466,7 +466,7 @@ let ed = e => {
       playstationURL: o
     }
   };
-var e_ = function(e) {
+var ep = function(e) {
   return e[e.UNACCEPTED = 0] = "UNACCEPTED", e[e.ACCEPTED = 1] = "ACCEPTED", e[e.IN_PROGRESS = 2] = "IN_PROGRESS", e[e.COMPLETED = 3] = "COMPLETED", e[e.CLAIMED = 4] = "CLAIMED", e
 }({});
 
@@ -479,8 +479,8 @@ function eh(e) {
   return a ? 4 : o ? 3 : s ? 2 : +!!i
 }
 
-function em(e) {
-  let t = (0, d.e7)([_.default], () => _.default.locale),
+function eg(e) {
+  let t = (0, d.e7)([p.default], () => p.default.locale),
     {
       percentComplete: n
     } = en(e),
@@ -497,7 +497,7 @@ function em(e) {
   }
 }
 
-function eg(e) {
+function em(e) {
   var t, n;
   let r = en(e),
     i = (0, C.b7)(e),
@@ -535,10 +535,10 @@ function ev(e, t) {
     taskType: s.X.PLAY_ON_XBOX
   }, () => x.cd.CONSOLE).with({
     taskType: s.X.PLAY_ON_PLAYSTATION
-  }, () => x.cd.CONSOLE).exhaustive(), [t]), p = u ? x.cd.DESKTOP : d ? x.cd.CONSOLE : null;
+  }, () => x.cd.CONSOLE).exhaustive(), [t]), _ = u ? x.cd.DESKTOP : d ? x.cd.CONSOLE : null;
   return [r.useMemo(() => (0, a.EQ)({
     lastPlatformProgress: f,
-    currentProgressingPlatform: p,
+    currentProgressingPlatform: _,
     selectedPlatform: n
   }).with({
     currentProgressingPlatform: x.cd.CONSOLE
@@ -562,7 +562,7 @@ function ev(e, t) {
     currentProgressingPlatform: null,
     lastPlatformProgress: null,
     selectedPlatform: null
-  }, () => c && l ? A.LI.SELECT : c ? A.LI.CONSOLE : A.LI.DESKTOP).exhaustive(), [c, l, f, p, n]), o, i]
+  }, () => c && l ? A.LI.SELECT : c ? A.LI.CONSOLE : A.LI.DESKTOP).exhaustive(), [c, l, f, _, n]), o, i]
 }
 
 function eb(e) {
@@ -576,17 +576,17 @@ function eb(e) {
     u = null == r,
     d = s.T.DESKTOP.has(i.taskType) && i.percentComplete > 0,
     f = 0 === i.percentComplete,
-    p = l && !c && !a && u && (d || f && o === A.LI.DESKTOP),
-    _ = (0, y.isWeb)() && p && !(0, C.Gd)(e),
-    h = (0, y.isMac)() && i.taskType === s.X.STREAM_ON_DESKTOP && p,
-    m = ey(e),
-    g = [];
-  for (let e of (h && g.push(j.NW.string(j.t.MFGxFB)), _ && g.push(j.NW.string(j.t.BV6xDg)), m)) g.push(e);
-  return g
+    _ = l && !c && !a && u && (d || f && o === A.LI.DESKTOP),
+    p = (0, y.isWeb)() && _ && !(0, C.Gd)(e),
+    h = (0, y.isMac)() && i.taskType === s.X.STREAM_ON_DESKTOP && _,
+    g = ey(e),
+    m = [];
+  for (let e of (h && m.push(j.NW.string(j.t.MFGxFB)), p && m.push(j.NW.string(j.t.BV6xDg)), g)) m.push(e);
+  return m
 }
 
 function ey(e) {
-  let t = (0, d.e7)([g.ZP], () => g.ZP.getPremiumSubscription()),
+  let t = (0, d.e7)([m.ZP], () => m.ZP.getPremiumSubscription()),
     n = (0, C.Bg)(e.config) && (null == t ? void 0 : t.isPurchasedExternally) === !0,
     r = [];
   return n && r.push(j.NW.string(j.t.nnfWPD)), r
@@ -629,7 +629,7 @@ function eI(e) {
 
 function eT(e) {
   var t, n;
-  let r = (0, d.e7)([_.default], () => _.default.locale),
+  let r = (0, d.e7)([p.default], () => p.default.locale),
     i = en(e),
     [o] = ev(e, i);
   if ((null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return j.NW.string(j.t["ij5E//"]);
@@ -678,7 +678,7 @@ function eC(e) {
   let t = L.r.build(e).defaultReward.messages.name,
     n = (0, C.Kr)(e),
     r = (0, C.f$)(e),
-    i = (0, d.e7)([m.default], () => m.default.getCurrentUser()),
+    i = (0, d.e7)([g.default], () => g.default.getCurrentUser()),
     o = null != i && O.ZP.isPremium(i, k.p9.TIER_2);
   if (null == n) return j.NW.formatToPlainString(j.t.l9uXLy, {
     decorationName: t

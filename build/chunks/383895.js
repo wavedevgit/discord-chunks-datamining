@@ -1,13 +1,13 @@
-/** Chunk was on 41849 **/
+/** Chunk was on 4493 **/
 r.d(t, {
   Z: () => y
 });
 var n = r(200651),
   a = r(192379),
-  o = r(120356),
-  i = r.n(o),
-  s = r(442837),
-  l = r(481060),
+  i = r(120356),
+  o = r.n(i),
+  l = r(442837),
+  s = r(481060),
   c = r(178762),
   u = r(91140),
   d = r(297781),
@@ -15,17 +15,17 @@ var n = r(200651),
   m = r(944486),
   f = r(594174),
   g = r(5192),
-  b = r(810568),
-  _ = r(388032),
+  _ = r(810568),
+  b = r(388032),
   h = r(996401),
   O = r(384370);
 let y = e => {
   let {
     entry: t,
     viewId: r,
-    officialGuildId: o,
+    officialGuildId: i,
     onClose: y
-  } = e, v = (0, s.e7)([m.Z, p.Z], () => p.Z.getChannel(m.Z.getChannelId())), j = (0, s.e7)([f.default], () => f.default.getUser(t.author_id)), {
+  } = e, v = (0, l.e7)([m.Z, p.Z], () => p.Z.getChannel(m.Z.getChannelId())), j = (0, l.e7)([f.default], () => f.default.getUser(t.author_id)), {
     nick: x,
     avatar: P
   } = a.useMemo(() => {
@@ -35,25 +35,25 @@ let y = e => {
       avatar: e
     }
   }, [j, v]);
-  return null == j ? null : (0, n.jsx)(l.yRy, {
+  return null == j ? null : (0, n.jsx)(s.yRy, {
     position: "right",
     renderPopout: e => {
       let {
         closePopout: a,
-        updatePosition: i
+        updatePosition: o
       } = e;
       return (0, n.jsx)(c.J, {
         entry: t,
         closePopout: a,
-        updatePopoutPosition: i,
+        updatePopoutPosition: o,
         onReaction: () => {
-          (0, b.UE)({
-            action: b.as.SendMessageUser,
+          (0, _.UE)({
+            action: _.as.SendMessageUser,
             applicationId: t.extra.application_id,
             gameName: t.extra.game_name,
             recipientUserId: t.author_id,
             viewId: r,
-            officialGuildId: o
+            officialGuildId: i
           }), y(), a()
         },
         onUserPopoutClosed: () => a(),
@@ -62,18 +62,18 @@ let y = e => {
     },
     positionKey: "game-profile-entry-".concat(t.id),
     onRequestOpen: () => {
-      (0, b.UE)({
-        action: b.as.ClickMessageUser,
+      (0, _.UE)({
+        action: _.as.ClickMessageUser,
         applicationId: t.extra.application_id,
         gameName: t.extra.game_name,
         recipientUserId: t.author_id,
         viewId: r,
-        officialGuildId: o
+        officialGuildId: i
       })
     },
     children: e => {
       var r, a;
-      return (0, n.jsx)(l.P3F, (r = function(e) {
+      return (0, n.jsx)(s.P3F, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -92,7 +92,7 @@ let y = e => {
         return e
       }({}, e), a = a = {
         className: h.profileEntryCard,
-        children: (0, n.jsx)(l.tEY, {
+        children: (0, n.jsx)(s.tEY, {
           offset: {
             top: 4,
             bottom: 4,
@@ -103,14 +103,14 @@ let y = e => {
             children: [(0, n.jsx)("img", {
               className: h.avatar,
               src: P,
-              alt: _.NW.formatToPlainString(_.t.IzVXxc, {
+              alt: b.NW.formatToPlainString(b.t.IzVXxc, {
                 userName: x
               })
             }), (0, n.jsx)("div", {
-              className: i()(h.playerInfo),
+              className: o()(h.playerInfo),
               children: (0, n.jsxs)("div", {
-                className: i()(O.column, O.gapXs),
-                children: [(0, n.jsx)(l.Text, {
+                className: o()(O.column, O.gapXs),
+                children: [(0, n.jsx)(s.Text, {
                   variant: "text-md/medium",
                   color: "text-primary",
                   lineClamp: 1,
@@ -124,7 +124,7 @@ let y = e => {
               })
             }), (0, n.jsx)("div", {
               className: h.reactions,
-              children: (0, n.jsx)(l.n$P, {
+              children: (0, n.jsx)(s.n$P, {
                 size: "sm"
               })
             })]

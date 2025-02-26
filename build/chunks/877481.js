@@ -13,11 +13,11 @@ var r = n(274616),
   u = n(6132),
   d = n(830168),
   f = n(358085),
-  p = n(591759),
-  _ = n(998502),
+  _ = n(591759),
+  p = n(998502),
   h = n(981631);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -64,8 +64,8 @@ let b = new i.Z("Games"),
   N = 36e5;
 
 function A() {
-  return null != S ? Promise.resolve(S) : (0, f.isDesktop)() ? _.ZP.ensureModule("discord_game_utils").then(() => {
-    let e = _.ZP.getGameUtils();
+  return null != S ? Promise.resolve(S) : (0, f.isDesktop)() ? p.ZP.ensureModule("discord_game_utils").then(() => {
+    let e = p.ZP.getGameUtils();
     return null != e && null != e.findLaunchable ? (S = e, e) : Promise.reject(Error("game utils not found"))
   }) : Promise.reject(Error("not desktop client"))
 }
@@ -77,7 +77,7 @@ function C(e) {
       thirdPartySkus: e.thirdPartySkus,
       executables: e.executables.filter(e => e.os === (0, f.getPlatformName)()).map(e => e.name)
     },
-    n = e.aliases.map(e => v(g({}, t), {
+    n = e.aliases.map(e => v(m({}, t), {
       name: e
     }));
   return [t, ...n]
@@ -120,7 +120,7 @@ function D(e, t, n) {
 
 function w(e) {
   return b.info("launch", e), new Promise((t, n) => {
-    null == p.Z.safeParseWithQuery(e.launchTarget) ? n(Error("Failed to parse launch target. ".concat(e.launchTarget))) : (window.open(e.launchTarget), t([]))
+    null == _.Z.safeParseWithQuery(e.launchTarget) ? n(Error("Failed to parse launch target. ".concat(e.launchTarget))) : (window.open(e.launchTarget), t([]))
   })
 }
 let L = {
@@ -135,23 +135,23 @@ let L = {
       launchOptions: l,
       defaultLaunchOptionId: c,
       installPath: f,
-      applicationId: p,
-      branchId: _,
-      buildId: m,
-      shouldPatch: g
+      applicationId: _,
+      branchId: p,
+      buildId: g,
+      shouldPatch: m
     } = e;
     if (null == l || null == c || null == f) throw Error("Couldn't construct launchable for ".concat(e.applicationId));
     null == a && (a = c);
     let E = l[a];
     if (null == E) throw Error("Couldn't construct launchable for ".concat(e.applicationId, ". No launch option."));
-    return (0, r.o)([_]).then(e => {
+    return (0, r.o)([p]).then(e => {
       let t = e[0];
       if (null == t) return Promise.reject(Error("branch is null"));
       let {
         liveBuildId: n
       } = t;
-      if (g && n !== m) return Promise.reject(Error("live build id changed"))
-    }).then(() => d.Z.runLaunchSetup(p, _)).then(() => {
+      if (m && n !== g) return Promise.reject(Error("live build id changed"))
+    }).then(() => d.Z.runLaunchSetup(_, p)).then(() => {
       let e = (0, o.Z)(f),
         r = {
           DISCORD_INSTANCE_ID: u.Z.getId().toString(),
@@ -160,7 +160,7 @@ let L = {
           DISCORD_CURRENT_BRANCH: i,
           DISCORD_STORAGE_PATH: h.SRg.ROOT_STORAGE_PATH(e, s.default.getId())
         };
-      return d.Z.launch(p, _, E.name, r)
+      return d.Z.launch(_, p, E.name, r)
     })
   },
   removeShortcuts: e => (0, f.isWindows)() ? A().then(t => {

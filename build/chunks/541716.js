@@ -252,7 +252,7 @@ let s = {
     showCharacterCount: !0,
     layout: 1
   },
-  p = {
+  _ = {
     analyticsName: "thread_creation",
     attachments: !0,
     drafts: {
@@ -287,7 +287,7 @@ let s = {
       iconOnly: !0
     }
   },
-  _ = {
+  p = {
     analyticsName: "create_forum_post",
     attachments: !0,
     drafts: {
@@ -338,7 +338,7 @@ let s = {
       disableEnterToSubmit: !0
     }
   },
-  m = {
+  g = {
     analyticsName: "user_profile",
     drafts: {
       type: i.d.ChannelMessage
@@ -363,7 +363,7 @@ let s = {
     toolbarType: 2,
     layout: 1
   },
-  g = {
+  m = {
     analyticsName: "overlay_inline_reply",
     drafts: {
       type: i.d.ChannelMessage
@@ -482,18 +482,18 @@ let s = {
   S = {
     NORMAL: s,
     OVERLAY: l,
-    OVERLAY_INLINE_REPLY: g,
+    OVERLAY_INLINE_REPLY: m,
     SIDEBAR: c,
     EDIT: u,
     FORM: d,
     VOICE_CHANNEL_STATUS: f,
-    THREAD_CREATION: p,
-    USER_PROFILE: m,
+    THREAD_CREATION: _,
+    USER_PROFILE: g,
     USER_PROFILE_REPLY: E,
     PROFILE_BIO_INPUT: v,
     CUSTOM_GIFT: b,
     RULES_INPUT: y,
-    CREATE_FORUM_POST: _,
+    CREATE_FORUM_POST: p,
     CREATE_POLL: h,
     FORUM_CHANNEL_GUIDELINES: O,
     ATOMIC_REACTOR_REPLY_INPUT: {

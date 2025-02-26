@@ -35,42 +35,42 @@ let u = new Map,
     userAffinities: [],
     lastFetched: 0
   }),
-  p = c({}, f);
+  _ = c({}, f);
 
-function _() {
-  u = new Map(p.userAffinities.filter(e => !a.Z.isBlockedOrIgnored(e.otherUserId)).map(e => [e.otherUserId, e]))
+function p() {
+  u = new Map(_.userAffinities.filter(e => !a.Z.isBlockedOrIgnored(e.otherUserId)).map(e => [e.otherUserId, e]))
 }
 
 function h() {
   d = !0
 }
 
-function m(e) {
+function g(e) {
   let {
     affineUsers: t
   } = e;
-  p.lastFetched = Date.now(), d = !1, p.userAffinities = t, _()
+  _.lastFetched = Date.now(), d = !1, _.userAffinities = t, p()
 }
 
-function g() {
+function m() {
   d = !1
 }
 
 function E() {
-  p = c({}, f), u = new Map, d = !1
+  _ = c({}, f), u = new Map, d = !1
 }
 class v extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(a.Z), null != e && (p.userAffinities = e.userAffinities, p.lastFetched = e.lastFetched, _()), this.syncWith([a.Z], _)
+    this.waitFor(a.Z), null != e && (_.userAffinities = e.userAffinities, _.lastFetched = e.lastFetched, p()), this.syncWith([a.Z], p)
   }
   shouldFetch() {
-    if (!d) return Date.now() - p.lastFetched > s.K
+    if (!d) return Date.now() - _.lastFetched > s.K
   }
   isFetching() {
     return d
   }
   getUserAffinities() {
-    return p.userAffinities
+    return _.userAffinities
   }
   getUserAffinitiesMap() {
     return u
@@ -83,13 +83,13 @@ class v extends(r = i.ZP.PersistedStore) {
     return u.get(e)
   }
   getState() {
-    return p
+    return _
   }
 }
 l(v, "displayName", "UserAffinitiesV2Store"), l(v, "persistKey", "UserAffinitiesStoreV2");
 let b = new v(o.Z, {
   LOAD_USER_AFFINITIES_V2: h,
-  LOAD_USER_AFFINITIES_V2_SUCCESS: m,
-  LOAD_USER_AFFINITIES_V2_FAILURE: g,
+  LOAD_USER_AFFINITIES_V2_SUCCESS: g,
+  LOAD_USER_AFFINITIES_V2_FAILURE: m,
   LOGOUT: E
 })

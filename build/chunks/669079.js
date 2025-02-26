@@ -30,11 +30,11 @@ var r = n(278074),
   u = n(626135),
   d = n(823379),
   f = n(74538),
-  p = n(226951),
-  _ = n(73346),
+  _ = n(226951),
+  p = n(73346),
   h = n(981631),
-  m = n(474936),
-  g = n(388032);
+  g = n(474936),
+  m = n(388032);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,9 +59,9 @@ function v(e) {
 }
 let b = ["discordapp.com/gifts", "discord.com/gifts"],
   y = 3,
-  O = [p.Z.escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...b.map(e => p.Z.escape(e))].join("|"),
+  O = [_.Z.escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...b.map(e => _.Z.escape(e))].join("|"),
   S = RegExp("(?: |^|https?://)(?:".concat(O, ")/([a-z0-9-]+)"), "gi"),
-  I = [...["discord.com/billing/promotions", "promos.discord.gg"].map(e => p.Z.escape(e))].join("|"),
+  I = [...["discord.com/billing/promotions", "promos.discord.gg"].map(e => _.Z.escape(e))].join("|"),
   T = RegExp("(?: |^|https?://)(?:".concat(I, ")(/|(/)?\\?code=)([a-z0-9-]+)"), "gi"),
   N = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789",
   A = (e, t) => Array(t).fill(void 0).map(() => "[".concat(N, "]{").concat(e, "}")).join("-?"),
@@ -115,7 +115,7 @@ async function H(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   try {
-    let r = (await (0, _.Kb)({
+    let r = (await (0, p.Kb)({
       url: h.ANM.GIFT_CODE_RESOLVE(e),
       query: {
         with_application: t,
@@ -154,59 +154,59 @@ function Y(e, t, n, r, i, o, a) {
 function K(e, t, n) {
   switch (e) {
     case h.wZ8.ERROR:
-      return g.NW.formatToMarkdownString(g.t.JUvC0t, {});
+      return m.NW.formatToMarkdownString(m.t.JUvC0t, {});
     case h.wZ8.SUCCESS:
-      return t.isSubscription ? g.NW.formatToPlainString(g.t["1C2BGx"], {
+      return t.isSubscription ? m.NW.formatToPlainString(m.t["1C2BGx"], {
         skuName: n.name
-      }) : g.NW.string(g.t["+BNMcH"]);
+      }) : m.NW.string(m.t["+BNMcH"]);
     case h.wZ8.CONFIRM:
     default:
-      return t.isSubscription ? g.NW.formatToPlainString(g.t["2VN4Nz"], {
+      return t.isSubscription ? m.NW.formatToPlainString(m.t["2VN4Nz"], {
         skuName: n.name
-      }) : g.NW.string(g.t.RmamAA)
+      }) : m.NW.string(m.t.RmamAA)
   }
 }
 
 function z(e, t, n) {
   switch (e) {
     case h.wZ8.ERROR:
-      return g.NW.string(g.t.w19zb2);
+      return m.NW.string(m.t.w19zb2);
     case h.wZ8.SUCCESS:
-      if (__OVERLAY__) return g.NW.string(g.t.zW87EB);
-      if (t.isSubscription) return g.NW.string(g.t.ex5TKi);
-      return g.NW.string(g.t.OOkjqq);
+      if (__OVERLAY__) return m.NW.string(m.t.zW87EB);
+      if (t.isSubscription) return m.NW.string(m.t.ex5TKi);
+      return m.NW.string(m.t.OOkjqq);
     case h.wZ8.OPEN:
-      return g.NW.string(g.t.F8ktcn);
+      return m.NW.string(m.t.F8ktcn);
     case h.wZ8.CONFIRM:
     default:
-      if (null != n && n) return g.NW.string(g.t.n6I6k5);
-      if (null != t.giftStyle) return t.isClaimed ? g.NW.string(g.t.OgpR0d) : g.NW.string(g.t["2BWscn"]);
-      return t.isSubscription ? g.NW.string(g.t.wQ1FHx) : g.NW.string(g.t.OgpR0d)
+      if (null != n && n) return m.NW.string(m.t.n6I6k5);
+      if (null != t.giftStyle) return t.isClaimed ? m.NW.string(m.t.OgpR0d) : m.NW.string(m.t["2BWscn"]);
+      return t.isSubscription ? m.NW.string(m.t.wQ1FHx) : m.NW.string(m.t.OgpR0d)
   }
 }
 
 function q(e) {
   return (0, r.EQ)(e).with({
-    interval: m.rV.MONTH,
-    premiumSubscriptionType: m.p9.TIER_2
-  }, () => g.NW.formatToPlainString(g.t["vFfV+P"], {
-    timeInterval: g.NW.string(g.t.FPybU1)
+    interval: g.rV.MONTH,
+    premiumSubscriptionType: g.p9.TIER_2
+  }, () => m.NW.formatToPlainString(m.t["vFfV+P"], {
+    timeInterval: m.NW.string(m.t.FPybU1)
   })).with({
-    interval: m.rV.YEAR,
-    premiumSubscriptionType: m.p9.TIER_2
-  }, () => g.NW.formatToPlainString(g.t["vFfV+P"], {
-    timeInterval: g.NW.string(g.t.tfqrho)
+    interval: g.rV.YEAR,
+    premiumSubscriptionType: g.p9.TIER_2
+  }, () => m.NW.formatToPlainString(m.t["vFfV+P"], {
+    timeInterval: m.NW.string(m.t.tfqrho)
   })).with({
-    interval: m.rV.MONTH,
-    premiumSubscriptionType: m.p9.TIER_1
-  }, () => g.NW.formatToPlainString(g.t.gjKbFx, {
+    interval: g.rV.MONTH,
+    premiumSubscriptionType: g.p9.TIER_1
+  }, () => m.NW.formatToPlainString(m.t.gjKbFx, {
     intervalCount: e.intervalCount
   })).with({
-    interval: m.rV.YEAR,
-    premiumSubscriptionType: m.p9.TIER_1
-  }, () => g.NW.formatToPlainString(g.t.GIe7Bw, {
+    interval: g.rV.YEAR,
+    premiumSubscriptionType: g.p9.TIER_1
+  }, () => m.NW.formatToPlainString(m.t.GIe7Bw, {
     intervalCount: e.intervalCount
-  })).otherwise(() => g.NW.string(g.t["5ayf7+"]))
+  })).otherwise(() => m.NW.string(m.t["5ayf7+"]))
 }
 
 function Q(e) {
@@ -225,19 +225,19 @@ function Q(e) {
       return X(r, i, o, a, s);
     case h.wZ8.SUCCESS:
       if (null != l) return q(l);
-      return g.NW.formatToPlainString(g.t["3CPsbm"], {
+      return m.NW.formatToPlainString(m.t["3CPsbm"], {
         skuName: n.name
       });
     case h.wZ8.CONFIRM:
     default:
       if (null != l) {
-        let e = l.interval === m.rV.MONTH ? g.t.P9eTKi : g.t.d8rUd3;
-        return g.NW.format(e, {
+        let e = l.interval === g.rV.MONTH ? m.t.P9eTKi : m.t.d8rUd3;
+        return m.NW.format(e, {
           skuName: n.name,
           intervalCount: l.intervalCount
         })
       }
-      return g.NW.formatToPlainString(g.t.l6Ea4e, {
+      return m.NW.formatToPlainString(m.t.l6Ea4e, {
         skuName: n.name
       })
   }
@@ -245,7 +245,7 @@ function Q(e) {
 
 function X(e, t, n, r, i) {
   let o = n || r ? void 0 : e,
-    a = g.NW.format(g.t["5zyz9/"], {
+    a = m.NW.format(m.t["5zyz9/"], {
       onGoToLibrary: i
     });
   return null != o ? a : null == t ? null : et(t, c.default.getCurrentUser())
@@ -273,26 +273,26 @@ let ee = (e, t) => (0, o.e7)([l.Z], () => {
 function et(e, t) {
   switch (e.code) {
     case h.evJ.INVALID_GIFT_SELF_REDEMPTION:
-      return g.NW.string(g.t.wa9h7O);
+      return m.NW.string(m.t.wa9h7O);
     case h.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED:
-      return g.NW.string(g.t.Iw2TUV);
+      return m.NW.string(m.t.Iw2TUV);
     case h.evJ.INVALID_GIFT_REDEMPTION_OWNED:
-      return g.NW.string(g.t.mdLtb2);
+      return m.NW.string(m.t.mdLtb2);
     case h.evJ.UNKNOWN_GIFT_CODE:
-      return g.NW.string(g.t.roztIi);
+      return m.NW.string(m.t.roztIi);
     case h.evJ.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE:
-      return g.NW.formatToPlainString(g.t["4YTHKy"], {
-        planName: (0, f.M5)(t, m.p9.TIER_2) ? g.NW.string(g.t["lG6a5+"]) : g.NW.string(g.t["FSOz7+"])
+      return m.NW.formatToPlainString(m.t["4YTHKy"], {
+        planName: (0, f.M5)(t, g.p9.TIER_2) ? m.NW.string(m.t["lG6a5+"]) : m.NW.string(m.t["FSOz7+"])
       });
     case h.evJ.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED:
-      return g.NW.string(g.t["9i1J39"]);
+      return m.NW.string(m.t["9i1J39"]);
     case h.evJ.INVALID_GIFT_REDEMPTION_INVOICE_OPEN:
-      return g.NW.string(g.t.U26WX1);
+      return m.NW.string(m.t.U26WX1);
     case h.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED:
-      return g.NW.string(g.t.ypuSd3);
+      return m.NW.string(m.t.ypuSd3);
     case h.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE:
-      return g.NW.string(g.t.mXMmWF);
+      return m.NW.string(m.t.mXMmWF);
     default:
-      return g.NW.string(g.t["s9+XlJ"])
+      return m.NW.string(m.t["s9+XlJ"])
   }
 }

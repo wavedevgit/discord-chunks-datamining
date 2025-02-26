@@ -53,11 +53,11 @@ e.exports = function(e) {
     }
   }
 
-  function p(e) {
+  function _(e) {
     e.className += " " + l + "_animation_active"
   }
 
-  function _(e, n, r) {
+  function p(e, n, r) {
     if (e.addEventListener) e.addEventListener(n, r);
     else {
       if (!e.attachEvent) return t.error("[scroll] Don't know how to add event listeners.");
@@ -73,11 +73,11 @@ e.exports = function(e) {
     }
   }
 
-  function m(e) {
+  function g(e) {
     return i(e).container.childNodes[0].childNodes[0].childNodes[0]
   }
 
-  function g(e) {
+  function m(e) {
     return i(e).container.childNodes[0].childNodes[0].childNodes[1]
   }
   return c(window.document), {
@@ -136,7 +136,7 @@ e.exports = function(e) {
       }
 
       function S(e) {
-        return m(e).childNodes[0]
+        return g(e).childNodes[0]
       }
 
       function I() {
@@ -164,8 +164,8 @@ e.exports = function(e) {
       }
 
       function P(e, t, n) {
-        var r = m(e),
-          i = g(e),
+        var r = g(e),
+          i = m(e),
           o = N(t),
           a = A(n),
           s = C(t),
@@ -176,11 +176,11 @@ e.exports = function(e) {
       function D() {
         var e = i(s).container;
         if (!e) {
-          (e = document.createElement("div")).className = l, e.style.cssText = u(["visibility: hidden", "display: inline", "width: 0px", "height: 0px", "z-index: -1", "overflow: hidden", "margin: 0", "padding: 0"]), i(s).container = e, p(e), s.appendChild(e);
+          (e = document.createElement("div")).className = l, e.style.cssText = u(["visibility: hidden", "display: inline", "width: 0px", "height: 0px", "z-index: -1", "overflow: hidden", "margin: 0", "padding: 0"]), i(s).container = e, _(e), s.appendChild(e);
           var t = function() {
             i(s).onRendered && i(s).onRendered()
           };
-          _(e, "animationstart", t), i(s).onAnimationStart = t
+          p(e, "animationstart", t), i(s).onAnimationStart = t
         }
         return e
       }
@@ -213,10 +213,10 @@ e.exports = function(e) {
         o || (o = D());
         var c = a.width,
           f = a.height,
-          p = u(["position: absolute", "flex: none", "overflow: hidden", "z-index: -1", "visibility: hidden", "width: 100%", "height: 100%", "left: 0px", "top: 0px"]),
+          _ = u(["position: absolute", "flex: none", "overflow: hidden", "z-index: -1", "visibility: hidden", "width: 100%", "height: 100%", "left: 0px", "top: 0px"]),
           h = u(["position: absolute", "flex: none", "overflow: hidden", "z-index: -1", "visibility: hidden"].concat(r(-(1 + c), -(1 + f), -f, -c))),
-          m = u(["position: absolute", "flex: none", "overflow: scroll", "z-index: -1", "visibility: hidden", "width: 100%", "height: 100%"]),
           g = u(["position: absolute", "flex: none", "overflow: scroll", "z-index: -1", "visibility: hidden", "width: 100%", "height: 100%"]),
+          m = u(["position: absolute", "flex: none", "overflow: scroll", "z-index: -1", "visibility: hidden", "width: 100%", "height: 100%"]),
           E = u(["position: absolute", "left: 0", "top: 0"]),
           v = u(["position: absolute", "width: 200%", "height: 200%"]),
           b = document.createElement("div"),
@@ -235,7 +235,7 @@ e.exports = function(e) {
           var e = i(s);
           e && e.onShrink ? e.onShrink() : d("Aborting shrink scroll handler: element has been uninstalled")
         }
-        b.dir = "ltr", b.style.cssText = p, b.className = l, y.className = l, y.style.cssText = h, O.style.cssText = m, S.style.cssText = E, I.style.cssText = g, T.style.cssText = v, O.appendChild(S), I.appendChild(T), y.appendChild(O), y.appendChild(I), b.appendChild(y), o.appendChild(b), _(O, "scroll", N), _(I, "scroll", A), i(s).onExpandScroll = N, i(s).onShrinkScroll = A
+        b.dir = "ltr", b.style.cssText = _, b.className = l, y.className = l, y.style.cssText = h, O.style.cssText = g, S.style.cssText = E, I.style.cssText = m, T.style.cssText = v, O.appendChild(S), I.appendChild(T), y.appendChild(O), y.appendChild(I), b.appendChild(y), o.appendChild(b), p(O, "scroll", N), p(I, "scroll", A), i(s).onExpandScroll = N, i(s).onShrinkScroll = A
       }
 
       function L() {
@@ -311,12 +311,12 @@ e.exports = function(e) {
             return
           }
           d("Element rendered.");
-          var e = m(s),
-            t = g(s);
+          var e = g(s),
+            t = m(s);
           (0 === e.scrollLeft || 0 === e.scrollTop || 0 === t.scrollLeft || 0 === t.scrollTop) && (d("Scrollbars out of sync. Updating detector elements..."), l(u))
         }
 
-        function p() {
+        function _() {
           if (d("Scroll detected."), h(s)) {
             d("Scroll event fired while unrendered. Ignoring...");
             return
@@ -327,9 +327,9 @@ e.exports = function(e) {
           d("Aborting because element has been uninstalled");
           return
         }
-        i(s).onRendered = f, i(s).onExpand = p, i(s).onShrink = p;
-        var _ = i(s).style;
-        a(s, _.width, _.height)
+        i(s).onRendered = f, i(s).onExpand = _, i(s).onShrink = _;
+        var p = i(s).style;
+        a(s, p.width, p.height)
       }
 
       function x() {
@@ -358,7 +358,7 @@ e.exports = function(e) {
     },
     uninstall: function(e) {
       var t = i(e);
-      t && (t.onExpandScroll && h(m(e), "scroll", t.onExpandScroll), t.onShrinkScroll && h(g(e), "scroll", t.onShrinkScroll), t.onAnimationStart && h(t.container, "animationstart", t.onAnimationStart), t.container && e.removeChild(t.container))
+      t && (t.onExpandScroll && h(g(e), "scroll", t.onExpandScroll), t.onShrinkScroll && h(m(e), "scroll", t.onShrinkScroll), t.onAnimationStart && h(t.container, "animationstart", t.onAnimationStart), t.container && e.removeChild(t.container))
     },
     initDocument: c
   }

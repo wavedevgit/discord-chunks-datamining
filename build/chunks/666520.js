@@ -1,4 +1,4 @@
-/** Chunk was on 73049 **/
+/** Chunk was on 2998 **/
 t.d(n, {
   Z: () => p
 }), t(301563);
@@ -18,26 +18,26 @@ function p(e) {
     autoFocus: n = !1,
     className: t,
     userId: p,
-    onUpdate: m
-  } = e, b = (0, i.e7)([a.Z], () => a.Z.hidePersonalInformation), {
-    loading: g,
-    note: v
+    onUpdate: b
+  } = e, m = (0, i.e7)([a.Z], () => a.Z.hidePersonalInformation), {
+    loading: v,
+    note: g
   } = (0, c.Z)(p), y = o.useRef(null);
   return (o.useEffect(() => {
-    if (!n || b) return;
+    if (!n || m) return;
     let e = y.current;
     (null == e ? void 0 : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
-  }, [n, b]), b) ? null : (0, r.jsx)("div", {
+  }, [n, m]), m) ? null : (0, r.jsx)("div", {
     className: t,
     children: (0, r.jsx)(l.lcI, {
       ref: y,
       className: f.textarea,
-      disabled: g,
-      placeholder: g ? u.NW.string(u.t["WLKx//"]) : u.NW.string(u.t.VBhOe3),
+      disabled: v,
+      placeholder: v ? u.NW.string(u.t["WLKx//"]) : u.NW.string(u.t.VBhOe3),
       "aria-label": u.NW.string(u.t.PbMNh4),
       onBlur: e => {
         let n = e.currentTarget.value;
-        (null != v ? v : "") !== n && (null == m || m(), s.Z.updateNote(p, n))
+        (null != g ? g : "") !== n && (null == b || b(), s.Z.updateNote(p, n))
       },
       onKeyPress: e => {
         if (13 === e.which) {
@@ -47,7 +47,7 @@ function p(e) {
           } else e.preventDefault(), e.currentTarget.blur()
         } else e.which === d.yXg.SPACE && e.stopPropagation()
       },
-      defaultValue: null != v ? v : void 0,
+      defaultValue: null != g ? g : void 0,
       maxLength: d.vuo
     })
   })

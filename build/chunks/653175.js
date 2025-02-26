@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(570140),
   i = n(367907),
@@ -14,7 +14,7 @@ var r = n(570140),
   d = n(944486),
   f = n(594174);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,19 +23,19 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
-let h = (e, t) => _({
+let h = (e, t) => p({
     channel_id: e.id,
     channel_type: e.type,
     guild_id: e.getGuildId(),
@@ -43,7 +43,7 @@ let h = (e, t) => _({
     duration: u.Z.getDuration(),
     media_session_id: u.Z.getMediaSessionId()
   }, (0, i.kO)(u.Z.getGuildId(), u.Z.getChannelId(), t)),
-  m = () => {
+  g = () => {
     var e;
     let t = (0, o.P)(f.default.getCurrentUser());
     return {
@@ -54,13 +54,13 @@ let h = (e, t) => _({
     }
   };
 
-function g(e, t, n, i) {
+function m(e, t, n, i) {
   let o = d.Z.getVoiceChannelId(),
     s = l.Z.getChannel(o);
   if (null == t && null != o && null != s) {
     let t = h(s, i);
     if (e(), a.Z.hasUsedBackgroundInCall) {
-      let e = _({}, t, m());
+      let e = p({}, t, g());
       r.Z.dispatch({
         type: "VIDEO_BACKGROUND_SHOW_FEEDBACK",
         analyticsData: e

@@ -53,7 +53,7 @@ let f = i.forwardRef(function(e, t) {
     onChange: u
   } = e, f = i.useRef(null);
 
-  function p(e, t) {
+  function _(e, t) {
     (0, a.ZD)(async () => {
       let {
         default: i
@@ -77,7 +77,7 @@ let f = i.forwardRef(function(e, t) {
     },
     children: (0, r.jsx)(s.ZP, d(c({}, e), {
       ref: f,
-      onChange: p
+      onChange: _
     }))
   })
 })

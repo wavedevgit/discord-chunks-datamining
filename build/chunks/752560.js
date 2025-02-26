@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  P: () => g
+  P: () => m
 }), n(47120), n(653041);
 var r = n(392711),
   i = n(271383),
@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function p(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,12 +47,12 @@ function _(e, t) {
 }
 
 function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = 3 * a.Z.Millis.SECOND;
-class g {
+let g = 3 * a.Z.Millis.SECOND;
+class m {
   getSearchIndex() {
     return null == this._search || this._search.hasDefaultQuery ? l.R_.CURRENT_GUILD_MEMBER : l.R_.INCLUDED_IN_SEARCH_RESULTS
   }
@@ -91,7 +91,7 @@ class g {
   }
   _getIsIncludedInSearch(e, t) {
     if (null == this._search || this._search.hasDefaultQuery) return [!1, !1];
-    let n = p({}, e, t),
+    let n = _({}, e, t),
       r = this._search.isMemberIncludedInSearchResults(n),
       i = r !== e.isIncludedInSearchResults;
     return [r, i]
@@ -151,11 +151,11 @@ class g {
     for (let o of e) {
       if (null == o.joinedAt) continue;
       let e = o;
-      if (t && (e = h(p({}, e), {
+      if (t && (e = h(_({}, e), {
           isIncludedInSearchResults: !0
         })), n) {
         let t = (0, s.Dw)(o.joinedAt);
-        e = h(p({}, e), {
+        e = h(_({}, e), {
           isCurrentGuildMemberByTimestamp: t <= this._members.newMemberTimestamp,
           refreshTimestamp: this.lastRefreshTimestamp
         })
@@ -221,7 +221,7 @@ class g {
   _scheduleRefresh(e) {
     this.lastRefreshTimestamp = e, this.lastCursorTimestamp = Date.now(), null != this._lastRefreshTimer && clearTimeout(this._lastRefreshTimer), this._lastRefreshTimer = setTimeout(() => {
       this._lastRefreshTimer = null, this.lastRefreshTimestamp = 0
-    }, m)
+    }, g)
   }
   refreshNewMembersAndSearchResults() {
     if (null == this._search || null == this._members || !this._initialized) return !1;

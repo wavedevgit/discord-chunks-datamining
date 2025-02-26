@@ -17,11 +17,11 @@ function f(e, t) {
   void 0 === t && (t = {});
   var n = t,
     f = n.placement,
-    p = void 0 === f ? e.placement : f,
-    _ = n.strategy,
-    h = void 0 === _ ? e.strategy : _,
-    m = n.boundary,
-    g = void 0 === m ? l.zV : m,
+    _ = void 0 === f ? e.placement : f,
+    p = n.strategy,
+    h = void 0 === p ? e.strategy : p,
+    g = n.boundary,
+    m = void 0 === g ? l.zV : g,
     E = n.rootBoundary,
     v = void 0 === E ? l.Pj : E,
     b = n.elementContext,
@@ -34,13 +34,13 @@ function f(e, t) {
     A = y === l.k5 ? l.YP : l.k5,
     C = e.rects.popper,
     R = e.elements[S ? A : y],
-    P = (0, r.Z)((0, c.kK)(R) ? R : R.contextElement || (0, i.Z)(e.elements.popper), g, v, h),
+    P = (0, r.Z)((0, c.kK)(R) ? R : R.contextElement || (0, i.Z)(e.elements.popper), m, v, h),
     D = (0, o.Z)(e.elements.reference),
     w = (0, a.Z)({
       reference: D,
       element: C,
       strategy: "absolute",
-      placement: p
+      placement: _
     }),
     L = (0, s.Z)(Object.assign({}, C, w)),
     x = y === l.k5 ? L : D,
@@ -52,7 +52,7 @@ function f(e, t) {
     },
     k = e.modifiersData.offset;
   if (y === l.k5 && k) {
-    var j = k[p];
+    var j = k[_];
     Object.keys(M).forEach(function(e) {
       var t = [l.F2, l.I].indexOf(e) >= 0 ? 1 : -1,
         n = [l.we, l.I].indexOf(e) >= 0 ? "y" : "x";

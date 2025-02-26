@@ -5,7 +5,7 @@ n.d(t, {
   P1: () => f,
   TY: () => u,
   Tx: () => s,
-  VR: () => p,
+  VR: () => _,
   W6: () => l,
   wx: () => o.wx
 });
@@ -42,6 +42,6 @@ function f(e) {
   return e.target_type === o.Iq.EMBEDDED_APPLICATION
 }
 
-function p(e) {
+function _(e) {
   return "number" == typeof e.type ? e.type : a(e) ? o.wx.GROUP_DM : d(e) ? o.wx.FRIEND : o.wx.GUILD
 }

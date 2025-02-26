@@ -1,11 +1,11 @@
-/** Chunk was on 63061 **/
+/** Chunk was on 65936 **/
 n.d(t, {
   Z: () => E
 });
 var r, i = n(442837),
-  o = n(570140);
+  l = n(570140);
 
-function l(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,8 +39,8 @@ class _ extends(r = i.ZP.PersistedStore) {
     return u
   }
 }
-l(_, "displayName", "PerksRelevanceStore"), l(_, "persistKey", "PerksRelevanceStore");
-let E = new _(o.Z, {
+o(_, "displayName", "PerksRelevanceStore"), o(_, "persistKey", "PerksRelevanceStore");
+let E = new _(l.Z, {
   BILLING_PERKS_RELEVANCE_FETCH_START: function() {
     d.hasFetchedRelevance = !0
   },

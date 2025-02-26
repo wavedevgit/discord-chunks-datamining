@@ -10,11 +10,11 @@ var r = n(147018),
   u = n(859209),
   d = n(4340),
   f = n(740362),
-  p = n(603528),
-  _ = n(24033),
+  _ = n(603528),
+  p = n(24033),
   h = n(767587),
-  m = n(892725),
-  g = n(33995),
+  g = n(892725),
+  m = n(33995),
   E = n(905145),
   v = n(644659),
   b = n(325008),
@@ -35,13 +35,13 @@ var r = n(147018),
   R = v.getterFor(O),
   P = "stack" in I(O),
   D = function(e) {
-    return f(g, e) && g[e].m ? g[e].c : 0
+    return f(m, e) && m[e].m ? m[e].c : 0
   },
   w = function() {
-    p(this, L);
+    _(this, L);
     var e = arguments.length,
-      t = m(e < 1 ? void 0 : arguments[0]),
-      n = m(e < 2 ? void 0 : arguments[1], "Error"),
+      t = g(e < 1 ? void 0 : arguments[0]),
+      n = g(e < 2 ? void 0 : arguments[1], "Error"),
       r = D(n);
     if (C(this, {
         type: O,
@@ -88,10 +88,10 @@ r({
 var V = o(O),
   F = V.prototype;
 for (var Z in j && (y || T === V) && u(F, "toString", h), U && b && T === V && d(F, "code", x(function() {
-    return D(_(this).name)
-  })), g)
-  if (f(g, Z)) {
-    var H = g[Z],
+    return D(p(this).name)
+  })), m)
+  if (f(m, Z)) {
+    var H = m[Z],
       W = H.s,
       Y = l(6, H.c);
     f(V, W) || c(V, W, Y), f(F, W) || c(F, W, Y)

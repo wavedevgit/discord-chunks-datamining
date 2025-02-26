@@ -1,7 +1,7 @@
 /** Chunk was on 30829 **/
 n.d(t, {
-  R: () => v,
-  Z: () => y
+  R: () => y,
+  Z: () => v
 });
 var r, i = n(200651);
 n(192379);
@@ -36,13 +36,13 @@ function b(e) {
   }
   return e
 }
-var v = ((r = {})[r.VOICE = 0] = "VOICE", r);
-let y = e => {
+var y = ((r = {})[r.VOICE = 0] = "VOICE", r);
+let v = e => {
   let {
     type: t,
     guildId: r,
-    closePopout: v
-  } = e, y = (0, c.Dt)(), {
+    closePopout: y
+  } = e, v = (0, c.Dt)(), {
     notClaimed: O,
     notEmailVerified: j,
     notPhoneVerified: _,
@@ -55,7 +55,7 @@ let y = e => {
     min: h.YeM.ACCOUNT_AGE
   }), S = g.NW.string(g.t.BddRzc))), null == P || null == N) ? null : (0, i.jsxs)(o.VqE, {
     className: m.container,
-    "aria-labelledby": y,
+    "aria-labelledby": v,
     children: [(0, i.jsx)("img", {
       alt: "",
       className: m.image,
@@ -64,7 +64,7 @@ let y = e => {
       className: m.content,
       children: [(0, i.jsx)(o.X6q, {
         variant: "heading-md/semibold",
-        id: y,
+        id: v,
         children: P
       }), (0, i.jsx)(o.Text, {
         color: "header-secondary",
@@ -106,12 +106,12 @@ let y = e => {
               })(Object(r)).forEach(function(e) {
                 Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
               }), n))
-            })), v()
+            })), y()
           },
           className: m.primaryButton,
           children: S
         }) : null, O || _ || j ? (0, i.jsx)(o.zxk, {
-          onClick: v,
+          onClick: y,
           look: o.zxk.Looks.BLANK,
           className: m.cancel,
           children: g.NW.string(g.t.oEAioK)

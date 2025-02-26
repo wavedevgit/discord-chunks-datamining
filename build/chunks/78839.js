@@ -14,7 +14,7 @@ var r, i = n(442837),
   d = n(981631),
   f = n(474936);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -47,12 +47,12 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = null,
+let m = null,
   E = null,
   v = null,
   b = null,
@@ -81,7 +81,7 @@ function C(e) {
     }
     let t = l.Q.createFromServer(e);
     n[t.id] = t, k(t) && (r[t.id] = t, t.type === d.NYc.GUILD && t.status !== d.O0b.ENDED && i.push(t), t.type === d.NYc.APPLICATION && t.status !== d.O0b.ENDED && o.push(t))
-  }), g = n, E = r, b = i, y = o
+  }), m = n, E = r, b = i, y = o
 }
 
 function R(e) {
@@ -100,9 +100,9 @@ function P(e) {
   let {
     subscription: t
   } = e, n = l.Q.createFromServer(t);
-  g = m(_({}, g), {
+  m = g(p({}, m), {
     [n.id]: n
-  }), k(n) && (E = m(_({}, E), {
+  }), k(n) && (E = g(p({}, E), {
     [n.id]: n
   })), null != b && n.type === d.NYc.GUILD && (b = R({
     activeSubscriptions: b,
@@ -166,7 +166,7 @@ function x(e) {
 }
 
 function M() {
-  g = null, E = null, v = null, b = null, y = null, O = !1, S = !1, I = null, T = !1
+  m = null, E = null, v = null, b = null, y = null, O = !1, S = !1, I = null, T = !1
 }
 
 function k(e) {
@@ -180,7 +180,7 @@ function j(e) {
 
 function U(e, t) {
   let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-    r = n ? E : g;
+    r = n ? E : m;
   if (null == r) return null;
   for (let n in r) {
     let i = r[n];
@@ -203,7 +203,7 @@ function U(e, t) {
 }
 class G extends(r = i.ZP.Store) {
   hasFetchedSubscriptions() {
-    return null != g
+    return null != m
   }
   hasFetchedMostRecentPremiumTypeSubscription() {
     return O
@@ -225,11 +225,11 @@ class G extends(r = i.ZP.Store) {
   }
   getSubscriptions() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-    return e ? E : g
+    return e ? E : m
   }
   getSubscriptionById(e) {
     var t;
-    return null !== (t = null == g ? void 0 : g[e]) && void 0 !== t ? t : void 0
+    return null !== (t = null == m ? void 0 : m[e]) && void 0 !== t ? t : void 0
   }
   getActiveGuildSubscriptions() {
     return b
@@ -241,7 +241,7 @@ class G extends(r = i.ZP.Store) {
     var t;
     let n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
       r = new Set(e),
-      i = n ? E : g;
+      i = n ? E : m;
     return null == i ? null : null !== (t = Object.values(i).find(e => e.items.some(e => r.has(e.planId)))) && void 0 !== t ? t : null
   }
   getMostRecentPremiumTypeSubscription() {
@@ -254,7 +254,7 @@ class G extends(r = i.ZP.Store) {
     return N
   }
 }
-p(G, "displayName", "SubscriptionStore");
+_(G, "displayName", "SubscriptionStore");
 let B = new G(o.Z, {
   BILLING_SUBSCRIPTION_FETCH_SUCCESS: C,
   BILLING_SUBSCRIPTION_UPDATE_SUCCESS: P,

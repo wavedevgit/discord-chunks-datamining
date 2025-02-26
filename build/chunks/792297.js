@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => v,
-  p: () => g
+  p: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -14,14 +14,14 @@ var r = n(200651),
   u = n(730606),
   d = n(570124);
 let f = 24,
-  p = 36,
-  _ = 88,
+  _ = 36,
+  p = 88,
   h = 76,
-  m = 256;
+  g = 256;
 
-function g(e, t) {
-  let n = window.innerWidth - (e ? _ : f) * 2,
-    r = window.innerHeight - 2 * h - 2 * p;
+function m(e, t) {
+  let n = window.innerWidth - (e ? p : f) * 2,
+    r = window.innerHeight - 2 * h - 2 * _;
   if (!(0, l._H)(t)) return {
     width: n,
     height: r
@@ -29,7 +29,7 @@ function g(e, t) {
   let {
     width: i,
     height: o
-  } = t, a = window.innerWidth - 2 * m - 2 * f, s = (e ? window.innerHeight - 2 * h : window.innerHeight) - 2 * p, c = (0, l.Tj)({
+  } = t, a = window.innerWidth - 2 * g - 2 * f, s = (e ? window.innerHeight - 2 * h : window.innerHeight) - 2 * _, c = (0, l.Tj)({
     width: i,
     height: o,
     maxWidth: n,
@@ -50,10 +50,10 @@ function E(e) {
     children: o
   } = e, {
     entering: l
-  } = (0, c.Y)(), f = t[n], p = g(t.length > 1, {
+  } = (0, c.Y)(), f = t[n], _ = m(t.length > 1, {
     width: f.width,
     height: f.height
-  }), [_, h] = i.useState(0);
+  }), [p, h] = i.useState(0);
   return i.useEffect(() => {
     let e = () => h(e => e + 1);
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
@@ -67,7 +67,7 @@ function E(e) {
     className: a()(d.mediaArea, {
       [d.animated]: l
     }),
-    children: p.width > 0 && p.height > 0 && o(p.width, p.height)
+    children: _.width > 0 && _.height > 0 && o(_.width, _.height)
   }, f.url)
 }
 let v = i.memo(E)

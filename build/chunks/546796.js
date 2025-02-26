@@ -63,25 +63,25 @@ function f(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let p = () => {
+let _ = () => {
   throw Error("updateModal has not been implemented.")
 };
 {
   let e = n(169480);
-  r = e.showModal, p = e.updateModalProps, i = n(952265).Mr
+  r = e.showModal, _ = e.updateModalProps, i = n(952265).Mr
 }
-let _ = 60008;
+let p = 60008;
 
 function h() {
   var e, t;
   return null !== (t = null === (e = o.default.getCurrentUser()) || void 0 === e ? void 0 : e.mfaEnabled) && void 0 !== t && t
 }
 
-function m(e, t) {
-  return e.body && e.body.code === _ || t && 429 === e.status
+function g(e, t) {
+  return e.body && e.body.code === p || t && 429 === e.status
 }
 
-function g(e) {
+function m(e) {
   let {
     promiseFn: t,
     resolve: n,
@@ -105,28 +105,28 @@ function g(e) {
     i(c), n(e)
   }
 
-  function _(e) {
+  function p(e) {
     i(c), o(e)
   }
 
   function h(e) {
-    return p(c, h, d, u(l({}, a), {
+    return _(c, h, d, u(l({}, a), {
       isLoading: !0
     })), E({
       promiseFn: t,
       resolve: f,
-      reject: _,
+      reject: p,
       code: e,
-      mfaCodeHandler: m,
+      mfaCodeHandler: g,
       isModalOpen: !0
     })
   }
 
-  function m(e) {
+  function g(e) {
     let {
       res: t
     } = e;
-    p(c, h, d, u(l({}, a), {
+    _(c, h, d, u(l({}, a), {
       error: t.body.message
     }))
   }
@@ -138,13 +138,13 @@ function E(e) {
     resolve: n,
     reject: r,
     code: i,
-    mfaCodeHandler: o = g,
+    mfaCodeHandler: o = m,
     isModalOpen: a = !1
   } = e, s = d(e, ["promiseFn", "resolve", "reject", "code", "mfaCodeHandler", "isModalOpen"]);
   return t(null != i ? {
     code: i
   } : {}).then(n, e => {
-    if (m(e, a)) return o(l({
+    if (g(e, a)) return o(l({
       promiseFn: t,
       resolve: n,
       reject: r,
@@ -161,7 +161,7 @@ function v(e, t) {
     } = n,
     i = d(n, ["checkEnabled"]);
   return new Promise((t, n) => {
-    ((0, a.d)(r) ? g : E)(l({
+    ((0, a.d)(r) ? m : E)(l({
       promiseFn: e,
       resolve: t,
       reject: n

@@ -18,8 +18,8 @@ var i = n(120356),
   g = n(314897),
   m = n(594174),
   b = n(768581),
-  v = n(51144),
-  y = n(754231),
+  y = n(51144),
+  v = n(754231),
   O = n(898218);
 
 function j(e) {
@@ -54,7 +54,7 @@ function j(e) {
         src: null != o ? o : n.user.getAvatarURL(t, 16),
         size: a.EFr.SIZE_16,
         className: l()(i, O.partyAvatar),
-        "aria-label": null !== (s = n.nick) && void 0 !== s ? s : v.ZP.getName(n.user)
+        "aria-label": null !== (s = n.nick) && void 0 !== s ? s : y.ZP.getName(n.user)
       }, e))
     }
   })
@@ -88,21 +88,21 @@ let C = e => {
     members: i,
     embeddedApp: l,
     onAction: h
-  } = e, b = (0, d.Q3)("ChannelActivityRow"), v = null != l, j = v ? Array.from(l.embeddedActivity.userIds) : [], C = (0, o.e7)([m.default, g.default], () => {
-    if (v) return m.default.getUser(j[0]);
+  } = e, b = (0, d.Q3)("ChannelActivityRow"), y = null != l, j = y ? Array.from(l.embeddedActivity.userIds) : [], C = (0, o.e7)([m.default, g.default], () => {
+    if (y) return m.default.getUser(j[0]);
     if (null != i) {
       var e, t;
       return i.length <= 0 ? null : null !== (t = null === (e = i.find(e => e.user.id !== g.default.getId())) || void 0 === e ? void 0 : e.user) && void 0 !== t ? t : i[0].user
     }
   });
   if (null == C) return null;
-  let x = v || (0, c.Z)(n),
+  let x = y || (0, c.Z)(n),
     P = (0, f.vd)(t.type);
   return (0, r.jsxs)("div", {
     className: O.activity,
     children: [(0, r.jsx)("div", {
       className: O.channelActivityContainer,
-      children: x ? (0, r.jsx)(y.Z, {
+      children: x ? (0, r.jsx)(v.Z, {
         activity: n,
         embeddedApp: l,
         user: C,

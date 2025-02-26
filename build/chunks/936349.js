@@ -25,10 +25,10 @@ let u = {
   d = u,
   f = +l.Z.Millis.HOUR;
 
-function p(e) {
+function _(e) {
   e.latencyRankedRegions.length > 0 && (d.lastGeoRankedOrder = e.geoRankedRegions, d.preferredRegions = e.latencyRankedRegions), d.lastTestTimestamp = Date.now()
 }
-class _ extends(r = a.ZP.DeviceSettingsStore) {
+class p extends(r = a.ZP.DeviceSettingsStore) {
   initialize(e) {
     d = null != e ? e : u
   }
@@ -53,7 +53,7 @@ class _ extends(r = a.ZP.DeviceSettingsStore) {
     return null === d.preferredRegions || !o().isEqual(e, null !== (t = d.lastGeoRankedOrder) && void 0 !== t ? t : []) || Date.now() - (null !== (n = d.lastTestTimestamp) && void 0 !== n ? n : 0) >= f
   }
 }
-c(_, "displayName", "RTCRegionStore"), c(_, "persistKey", "RTCRegionStore"), c(_, "migrations", [e => (e.preferredRegion ? e.preferredRegions = [e.preferredRegion] : e.preferredRegions = null, delete e.preferredRegion, e)]);
-let h = new _(s.Z, {
-  RTC_LATENCY_TEST_COMPLETE: p
+c(p, "displayName", "RTCRegionStore"), c(p, "persistKey", "RTCRegionStore"), c(p, "migrations", [e => (e.preferredRegion ? e.preferredRegions = [e.preferredRegion] : e.preferredRegions = null, delete e.preferredRegion, e)]);
+let h = new p(s.Z, {
+  RTC_LATENCY_TEST_COMPLETE: _
 })

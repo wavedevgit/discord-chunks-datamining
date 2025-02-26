@@ -25,11 +25,11 @@ var r = n(192379),
   u = n(578976),
   d = n(569545),
   f = n(199902),
-  p = n(430824),
-  _ = n(131951),
+  _ = n(430824),
+  p = n(131951),
   h = n(158776),
-  m = n(959457),
-  g = n(594174),
+  g = n(959457),
+  m = n(594174),
   E = n(451478),
   v = n(626135),
   b = n(980463),
@@ -44,36 +44,36 @@ let C = 35e5,
   R = 1e4,
   P = new a.Yd("HDStreamingConsumableModal"),
   D = e => {
-    let t = (0, s.e7)([p.Z], () => p.Z.getGuild(null == e ? void 0 : e.guild_id)),
-      n = (0, s.e7)([g.default], () => {
+    let t = (0, s.e7)([_.Z], () => _.Z.getGuild(null == e ? void 0 : e.guild_id)),
+      n = (0, s.e7)([m.default], () => {
         var e;
-        return null === (e = g.default.getCurrentUser()) || void 0 === e ? void 0 : e.id
+        return null === (e = m.default.getCurrentUser()) || void 0 === e ? void 0 : e.id
       }),
       i = (0, s.Wu)([f.Z], () => null == e ? [] : f.Z.getAllActiveStreamsForChannel(e.id).filter(e => e.ownerId !== n)),
       o = i.some(e => {
-        let t = g.default.getUser(e.ownerId);
+        let t = m.default.getUser(e.ownerId);
         return null != t && h.Z.isMobileOnline(t.id)
       }),
       [a, l] = (0, r.useState)(null),
       [c, u] = (0, r.useState)([]);
-    (0, s.e7)([m.Z], () => {
+    (0, s.e7)([g.Z], () => {
       if (null == a || Date.now() - a > R) {
         let e = i.map(e => {
           var t;
           let n = (0, d.V9)(e),
-            r = m.Z.getRTCConnection(n);
+            r = g.Z.getRTCConnection(n);
           return null == r ? void 0 : null === (t = r.getVideoStats()) || void 0 === t ? void 0 : t.inbound_bitrate_estimate_percentile99
         });
         P.info("Setting bitrates", e), u(e), l(Date.now())
       }
     }, [a, i]);
-    let _ = (0, r.useMemo)(() => 0 === c.length || !c.some(e => null == e || e < C), [c]);
-    return ((null == t ? void 0 : t.premiumTier) === N.Eu4.NONE || (null == t ? void 0 : t.premiumTier) === N.Eu4.TIER_1) && _ && !o
+    let p = (0, r.useMemo)(() => 0 === c.length || !c.some(e => null == e || e < C), [c]);
+    return ((null == t ? void 0 : t.premiumTier) === N.Eu4.NONE || (null == t ? void 0 : t.premiumTier) === N.Eu4.TIER_1) && p && !o
   },
   w = (e, t) => {
-    let n = (0, s.e7)([g.default], () => {
+    let n = (0, s.e7)([m.default], () => {
         var e;
-        return null === (e = g.default.getCurrentUser()) || void 0 === e ? void 0 : e.id
+        return null === (e = m.default.getCurrentUser()) || void 0 === e ? void 0 : e.id
       }),
       r = (0, s.Wu)([f.Z], () => null == e ? [] : f.Z.getAllActiveStreamsForChannel(e.id).filter(e => e.ownerId !== n)),
       i = (0, I.j)(t),
@@ -124,7 +124,7 @@ function k(e) {
   M(e, () => {
     let t = f.Z.getCurrentUserActiveStream();
     if (null != t && t.channelId === e.id) {
-      let e = _.Z.getState().goLiveSource;
+      let e = p.Z.getState().goLiveSource;
       (0, b.x8)(null == e ? void 0 : e.quality);
       let t = (0, u.s)(A.LY.RESOLUTION_1440, A.ws.FPS_60, e);
       l.Z.setGoLiveSource(t)
@@ -147,7 +147,7 @@ function U(e) {
 }
 
 function G(e) {
-  let t = (0, s.e7)([p.Z], () => p.Z.getGuild(null == e ? void 0 : e.guild_id)),
+  let t = (0, s.e7)([_.Z], () => _.Z.getGuild(null == e ? void 0 : e.guild_id)),
     n = (0, I.j)("VoiceEffectsActionBar");
   return ((null == t ? void 0 : t.premiumTier) === N.Eu4.NONE || (null == t ? void 0 : t.premiumTier) === N.Eu4.TIER_1) && (null == e ? void 0 : e.type) === N.d4z.GUILD_VOICE && !(null == e ? void 0 : e.isHDStreamSplashed) && n
 }
@@ -169,7 +169,7 @@ function F(e) {
   if (null == e || null == e.potions || 0 === e.potions.length) return null;
   for (let r of e.potions) {
     var t, n;
-    if (r.type === T.B.CONFETTI && r.used_by === (null === (t = g.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (null === (n = r.emoji) || void 0 === n ? void 0 : n.length) > 0) return r.emoji[0]
+    if (r.type === T.B.CONFETTI && r.used_by === (null === (t = m.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (null === (n = r.emoji) || void 0 === n ? void 0 : n.length) > 0) return r.emoji[0]
   }
   return null
 }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(789020), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120);
 var r = n(200651);
 n(192379);
@@ -14,8 +14,8 @@ var i = n(243814),
   u = n(941532),
   d = n(713938),
   f = n(981631),
-  p = n(388032),
-  _ = n(35114);
+  _ = n(388032),
+  p = n(35114);
 let h = e => {
   switch (e) {
     case s.ZC.IP_LOCATION:
@@ -27,18 +27,18 @@ let h = e => {
   }
 };
 
-function m(e) {
+function g(e) {
   var t;
   let n, {
       application: o,
-      scopes: m,
+      scopes: g,
       redirectUri: E,
       approximateGuildCount: v,
       isEmbeddedFlow: b,
       disclosures: y
     } = e,
     O = new Date(c.default.extractTimestamp(o.id)),
-    S = (0, d.W3)(m),
+    S = (0, d.W3)(g),
     I = (0, l.yE)(null !== (t = o.flags) && void 0 !== t ? t : 0, f.udG.EMBEDDED);
   if (null != E && !I && !b) try {
     let e = new URL(E);
@@ -47,32 +47,32 @@ function m(e) {
     n = null
   }
   return (0, r.jsxs)("div", {
-    className: _.applicationDetails,
-    children: [null != n ? (0, r.jsx)(g, {
+    className: p.applicationDetails,
+    children: [null != n ? (0, r.jsx)(m, {
       icon: a.xPt,
-      text: p.NW.format(p.t["5k5OKC"], {
+      text: _.NW.format(_.t["5k5OKC"], {
         origin: n
       })
-    }) : null, (0, r.jsx)(g, {
+    }) : null, (0, r.jsx)(m, {
       icon: a.mBM,
       text: (0, u.i)(o)
-    }), (0, r.jsx)(g, {
+    }), (0, r.jsx)(m, {
       icon: a.T39,
-      text: p.NW.formatToPlainString(p.t["+1bjc3"], {
+      text: _.NW.formatToPlainString(_.t["+1bjc3"], {
         date: O
       })
-    }), m.includes(i.x.BOT) && null != v ? (0, r.jsx)(g, {
+    }), g.includes(i.x.BOT) && null != v ? (0, r.jsx)(m, {
       icon: a.wGt,
-      text: p.NW.formatToPlainString(p.t.UHGHSE, {
+      text: _.NW.formatToPlainString(_.t.UHGHSE, {
         guildCount: v
       })
-    }) : null, (0, r.jsx)(g, {
+    }) : null, (0, r.jsx)(m, {
       icon: a.b7C,
       text: S
     }), null != y ? y.map(e => {
       let t = (0, s.PM)(e),
         n = h(e);
-      return null != n && null != t ? (0, r.jsx)(g, {
+      return null != n && null != t ? (0, r.jsx)(m, {
         icon: n,
         text: t
       }) : null
@@ -80,19 +80,19 @@ function m(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     icon: t,
     text: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: _.entry,
+    className: p.entry,
     children: [(0, r.jsx)(t, {
-      className: _.entryIcon,
+      className: p.entryIcon,
       color: "currentColor"
     }), (0, r.jsx)(o.x, {
       variant: "text-xs/normal",
-      className: _.entryInner,
+      className: p.entryInner,
       children: n
     })]
   })

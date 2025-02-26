@@ -42,11 +42,11 @@ function f() {
   }
 }
 
-function p() {
+function _() {
   return d = f(), !1
 }
 
-function _() {
+function p() {
   u = {}
 }
 
@@ -54,14 +54,14 @@ function h() {
   u = {}
 }
 
-function m(e) {
+function g(e) {
   let {
     settings: t
   } = e;
   u = c({}, u, t)
 }
 
-function g(e) {
+function m(e) {
   let {
     settings: t
   } = e;
@@ -79,7 +79,7 @@ function E() {
 }
 class v extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    u = null != e ? e : {}, this.syncWith([s.Z], p)
+    u = null != e ? e : {}, this.syncWith([s.Z], _)
   }
   getState() {
     return u
@@ -99,8 +99,8 @@ l(v, "displayName", "UserSettingsOverridesStore"), l(v, "persistKey", "UserSetti
 }]);
 let b = new v(a.Z, {
   USER_SETTINGS_PROTO_UPDATE: E,
-  USER_SETTINGS_OVERRIDE_APPLY: m,
-  USER_SETTINGS_OVERRIDE_CLEAR: g,
-  LOGOUT: _,
+  USER_SETTINGS_OVERRIDE_APPLY: g,
+  USER_SETTINGS_OVERRIDE_CLEAR: m,
+  LOGOUT: p,
   LOGIN_SUCCESS: h
 })

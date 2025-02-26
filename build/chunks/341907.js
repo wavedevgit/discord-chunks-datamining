@@ -24,11 +24,11 @@ var i = n(772848),
   u = n(751648),
   d = n(82856),
   f = n(314897),
-  p = n(866960),
-  _ = n(626135),
+  _ = n(866960),
+  p = n(626135),
   h = n(954824),
-  m = n(617136),
-  g = n(569984),
+  g = n(617136),
+  m = n(569984),
   E = n(497505),
   v = n(918701),
   b = n(184299),
@@ -145,7 +145,7 @@ function U(e, t) {
 }
 
 function G(e, t) {
-  (0, m._3)({
+  (0, g._3)({
     questId: e.id,
     questContent: t.content,
     questContentPosition: t.position,
@@ -225,10 +225,10 @@ function H(e) {
       var t, r;
       let i = b.ZP.getState().getVideoProgress(e.id);
       if (null == i) return;
-      let o = g.Z.getQuest(e.id);
+      let o = m.Z.getQuest(e.id);
       null != o && (null === (t = o.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null && (null === (r = o.userStatus) || void 0 === r ? void 0 : r.completedAt) == null && (0, v.FI)(o, i.maxTimestampSec);
       let a = F(i.maxTimestampSec, i.duration);
-      (0, m.dA)({
+      (0, g.dA)({
         questId: e.id,
         event: A.rMx.QUEST_VIDEO_PROGRESSED,
         properties: {
@@ -236,13 +236,13 @@ function H(e) {
           video_timestamp_seconds: i.maxTimestampSec,
           video_session_id: n
         }
-      }), (0, m.dA)({
+      }), (0, g.dA)({
         questId: e.id,
         event: A.rMx.QUEST_VIDEO_MODAL_CLOSED,
         properties: {
           video_progress: a,
           video_session_id: n,
-          network_connection_speed: p.Z.getEffectiveConnectionSpeed()
+          network_connection_speed: _.Z.getEffectiveConnectionSpeed()
         }
       })
     }
@@ -269,7 +269,7 @@ function W(e) {
 function Y(e) {
   let t = W(e),
     n = (0, o.zS)(t);
-  null != n && _.default.track(A.rMx.DEEP_LINK_CLICKED, {
+  null != n && p.default.track(A.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, a.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource

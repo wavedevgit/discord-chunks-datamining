@@ -15,8 +15,8 @@ var r = n(200651),
   p = n(626135),
   g = n(587444),
   m = n(981631),
-  _ = n(58346),
-  f = n(388032),
+  f = n(58346),
+  _ = n(388032),
   b = n(455812);
 
 function N(e, t, n) {
@@ -28,7 +28,7 @@ function N(e, t, n) {
   });
   let r = h.default.getFingerprint(),
     i = null != r ? r : h.default.getId();
-  c.Z.openMobileApp(n.state === _.Rj.RESOLVED ? t : void 0, i)
+  c.Z.openMobileApp(n.state === f.Rj.RESOLVED ? t : void 0, i)
 }
 
 function x(e) {
@@ -37,20 +37,20 @@ function x(e) {
   } = e, n = (0, o.e7)([s.Z], () => s.Z.getGuildTemplate(t));
   return (i.useEffect(() => {
     (0, d.e)("guild_template_mobile")
-  }, []), null == n || n.state === _.Rj.RESOLVING) ? (0, r.jsx)(l.ZP, {
+  }, []), null == n || n.state === f.Rj.RESOLVING) ? (0, r.jsx)(l.ZP, {
     children: (0, r.jsx)(a.$jN, {})
-  }) : n.state === _.Rj.RESOLVED ? (0, r.jsxs)(l.ZP, {
+  }) : n.state === f.Rj.RESOLVED ? (0, r.jsxs)(l.ZP, {
     children: [(0, r.jsx)(u.Z, {
       guildTemplate: n,
       tall: !0
     }), (0, r.jsx)(l.zx, {
       onClick: e => N(e, t, n),
       className: b.marginTop20,
-      children: f.NW.string(f.t["a3Gl+f"])
+      children: _.NW.string(_.t["a3Gl+f"])
     })]
   }) : (0, r.jsx)(g.Z, {
-    text: f.NW.string(f.t["e/rZ2t"]),
-    buttonCta: f.NW.string(f.t.HAvYn5),
+    text: _.NW.string(_.t["e/rZ2t"]),
+    buttonCta: _.NW.string(_.t.HAvYn5),
     onClick: e => N(e, t, n)
   })
 }

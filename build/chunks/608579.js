@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(100527),
   d = n(906732),
   f = n(597688),
-  p = n(317951),
-  _ = n(987209),
+  _ = n(317951),
+  p = n(987209),
   h = n(563132),
-  m = n(409813),
-  g = n(791785),
+  g = n(409813),
+  m = n(791785),
   E = n(961830),
   v = n(742956),
   b = n(346790),
@@ -85,7 +85,7 @@ function w(e) {
     returnRef: G
   } = e, {
     analyticsLocations: B
-  } = (0, d.ZP)([...U, u.Z.COLLECTIBLES_PAYMENT_MODAL]), V = i.useRef(new s.qA), [F, Z] = i.useState(null), [H, W] = i.useState(!1), Y = i.useMemo(() => (0, T.UY)(L), [L]), K = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), z = null != L ? [L] : K, q = null !== (t = z[0]) && void 0 !== t ? t : null, Q = null != L && p.Rm.has(L), X = i.useCallback(() => {
+  } = (0, d.ZP)([...U, u.Z.COLLECTIBLES_PAYMENT_MODAL]), V = i.useRef(new s.qA), [F, Z] = i.useState(null), [H, W] = i.useState(!1), Y = i.useMemo(() => (0, T.UY)(L), [L]), K = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), z = null != L ? [L] : K, q = null !== (t = z[0]) && void 0 !== t ? t : null, Q = null != L && _.Rm.has(L), X = i.useCallback(() => {
     W(!0), null == o || o()
   }, [o]), J = i.useCallback(e => {
     W(!1), n(e), c.Z.dispatch({
@@ -100,7 +100,7 @@ function w(e) {
     step: n,
     onClose: () => t(!1)
   }), ee = i.useMemo(() => [E.WA, ...x ? [O.Dd] : [], b.n, ...E.yp, E.wo, {
-    key: m.h8.CONFIRM,
+    key: g.h8.CONFIRM,
     renderStep: e => (0, r.jsx)(y.x, D(R({}, e), {
       confettiCanvas: F,
       analyticsLocations: B,
@@ -133,12 +133,12 @@ function w(e) {
       isGift: x,
       activeSubscription: null,
       purchaseType: N.GZ.ONE_TIME,
-      children: (0, r.jsx)(_.KB, {
+      children: (0, r.jsx)(p.KB, {
         isGift: x,
         giftRecipient: M,
         giftMessage: k,
         giftingOrigin: j,
-        children: (0, r.jsx)(g.PaymentModal, {
+        children: (0, r.jsx)(m.PaymentModal, {
           onClose: J,
           onComplete: X,
           applicationId: I.XAJ,

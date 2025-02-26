@@ -27,12 +27,12 @@ var r = n(192379),
   u = n(857192),
   d = n(747161),
   f = n(848479),
-  p = n(960048),
-  _ = n(981631),
+  _ = n(960048),
+  p = n(981631),
   h = n(94752),
-  m = n(388032);
+  g = n(388032);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -48,7 +48,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -108,207 +108,207 @@ function k(e) {
   M.push(e)
 }
 let j = {
-  [_.rMx.APP_OPENED]: {
+  [p.rMx.APP_OPENED]: {
     throttlePeriod: R,
     throttleKeys: () => []
   },
-  [_.rMx.APP_BACKGROUND]: {
+  [p.rMx.APP_BACKGROUND]: {
     throttlePeriod: C,
     throttleKeys: () => []
   },
-  [_.rMx.ACK_MESSAGES]: {
+  [p.rMx.ACK_MESSAGES]: {
     throttlePeriod: P,
     throttleKeys: e => [e.guild_id, e.channel_id, e.location_section]
   },
-  [_.rMx.GUILD_VIEWED]: {
+  [p.rMx.GUILD_VIEWED]: {
     throttlePeriod: P,
     throttleKeys: e => [e.guild_id, e.is_pending]
   },
-  [_.rMx.FRIENDS_LIST_VIEWED]: {
+  [p.rMx.FRIENDS_LIST_VIEWED]: {
     throttlePeriod: P,
     throttleKeys: e => [e.tab_opened]
   },
-  [_.rMx.NOW_PLAYING_CARD_HOVERED]: {
+  [p.rMx.NOW_PLAYING_CARD_HOVERED]: {
     throttlePeriod: P,
     throttleKeys: e => [e.tab_opened]
   },
-  [_.rMx.START_SPEAKING]: {
+  [p.rMx.START_SPEAKING]: {
     throttlePeriod: P,
     throttleKeys: e => [e.server]
   },
-  [_.rMx.START_LISTENING]: {
+  [p.rMx.START_LISTENING]: {
     throttlePeriod: P,
     throttleKeys: e => [e.server]
   },
-  [_.rMx.ACTIVITY_UPDATED]: {
+  [p.rMx.ACTIVITY_UPDATED]: {
     throttlePeriod: A,
     throttleKeys: e => [e.application_id],
     deduplicate: !0
   },
-  [_.rMx.CHANNEL_OPENED]: {
+  [p.rMx.CHANNEL_OPENED]: {
     throttlePeriod: P,
     throttleKeys: e => null != e.channel_static_route ? [e.guild_id, e.channel_static_route, e.channel_view] : [e.channel_id, e.channel_view]
   },
-  [_.rMx.TEXT_IN_VOICE_OPENED]: {
+  [p.rMx.TEXT_IN_VOICE_OPENED]: {
     throttlePeriod: w,
     throttleKeys: e => [e.channel_id]
   },
-  [_.rMx.NOTIFICATION_VIEWED]: {
+  [p.rMx.NOTIFICATION_VIEWED]: {
     throttlePeriod: P,
     throttleKeys: e => [e.notif_type]
   },
-  [_.rMx.MEMBER_LIST_VIEWED]: {
+  [p.rMx.MEMBER_LIST_VIEWED]: {
     throttlePeriod: P,
     throttleKeys: e => [e.channel_id]
   },
-  [_.rMx.DM_LIST_VIEWED]: {
+  [p.rMx.DM_LIST_VIEWED]: {
     throttlePeriod: P,
     throttleKeys: e => [e.channel_id]
   },
-  [_.rMx.NAV_DRAWER_OPENED]: {
+  [p.rMx.NAV_DRAWER_OPENED]: {
     throttlePeriod: P,
     throttleKeys: () => []
   },
-  [_.rMx.KEYBOARD_SHORTCUT_USED]: {
+  [p.rMx.KEYBOARD_SHORTCUT_USED]: {
     throttlePeriod: C,
     throttleKeys: e => {
       var t;
       return [e.shortcut_name, e.location_object, ...null !== (t = e.source_class_list) && void 0 !== t ? t : []]
     }
   },
-  [_.rMx.QUICKSWITCHER_OPENED]: {
+  [p.rMx.QUICKSWITCHER_OPENED]: {
     throttlePeriod: N,
     throttleKeys: () => []
   },
-  [_.rMx.CHAT_INPUT_COMPONENT_VIEWED]: {
+  [p.rMx.CHAT_INPUT_COMPONENT_VIEWED]: {
     throttlePeriod: P,
     throttleKeys: e => [e.type]
   },
-  [_.rMx.ROLE_PAGE_VIEWED]: {
+  [p.rMx.ROLE_PAGE_VIEWED]: {
     throttlePeriod: C,
     throttleKeys: e => [e.role_id, e.tab_opened]
   },
-  [_.rMx.VIDEO_INPUT_INITIALIZED]: {
+  [p.rMx.VIDEO_INPUT_INITIALIZED]: {
     throttlePeriod: R,
     throttleKeys: () => []
   },
-  [_.rMx.AUDIO_INPUT_INITIALIZED]: {
+  [p.rMx.AUDIO_INPUT_INITIALIZED]: {
     throttlePeriod: R,
     throttleKeys: () => []
   },
-  [_.rMx.HUB_ONBOARDING_CAROUSEL_SCROLLED]: {
+  [p.rMx.HUB_ONBOARDING_CAROUSEL_SCROLLED]: {
     throttlePeriod: P,
     throttleKeys: () => []
   },
-  [_.rMx.HUB_STUDENT_PROMPT_CLICKED]: {
+  [p.rMx.HUB_STUDENT_PROMPT_CLICKED]: {
     throttlePeriod: P,
     throttleKeys: () => []
   },
-  [_.rMx.RPC_SERVER_ERROR_CAUGHT]: {
+  [p.rMx.RPC_SERVER_ERROR_CAUGHT]: {
     throttlePeriod: w,
     throttleKeys: () => []
   },
-  [_.rMx.RPC_COMMAND_SENT]: {
+  [p.rMx.RPC_COMMAND_SENT]: {
     throttlePeriod: w,
     throttleKeys: e => [e.application_id, e.command],
     throttlePercent: L
   },
-  [_.rMx.RPC_SUBSCRIPTION_REQUESTED]: {
+  [p.rMx.RPC_SUBSCRIPTION_REQUESTED]: {
     throttlePeriod: w,
     throttleKeys: e => [e.application_id, e.event],
     throttlePercent: L
   },
-  [_.rMx.ACTIVITY_HANDSHAKE]: {
+  [p.rMx.ACTIVITY_HANDSHAKE]: {
     throttlePeriod: w,
     throttleKeys: e => [e.application_id]
   },
-  [_.rMx.CHANNEL_BANNER_VIEWED]: {
+  [p.rMx.CHANNEL_BANNER_VIEWED]: {
     throttlePeriod: w,
     throttleKeys: e => [e.banner_type, e.channel_id]
   },
-  [_.rMx.PREMIUM_UPSELL_VIEWED]: {
+  [p.rMx.PREMIUM_UPSELL_VIEWED]: {
     throttlePeriod: A,
     throttleKeys: e => [e.type]
   },
-  [_.rMx.FORUM_CHANNEL_SEARCHED]: {
+  [p.rMx.FORUM_CHANNEL_SEARCHED]: {
     throttlePeriod: A,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
-  [_.rMx.FORUM_CHANNEL_SCROLLED]: {
+  [p.rMx.FORUM_CHANNEL_SCROLLED]: {
     throttlePeriod: P,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
-  [_.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED]: {
+  [p.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED]: {
     throttlePeriod: A,
     throttleKeys: e => [e.user_id]
   },
-  [_.rMx.MEDIA_VIEWER_SESSION_COMPLETED]: {
+  [p.rMx.MEDIA_VIEWER_SESSION_COMPLETED]: {
     throttlePeriod: A,
     throttleKeys: () => []
   },
-  [_.rMx.SUMMARIES_UNREAD_BAR_VIEWED]: {
+  [p.rMx.SUMMARIES_UNREAD_BAR_VIEWED]: {
     throttlePeriod: R,
     throttleKeys: e => [e.channel_id]
   },
-  [_.rMx.ACTIVITY_CARDS_VIEWED]: {
+  [p.rMx.ACTIVITY_CARDS_VIEWED]: {
     throttlePeriod: P,
     throttleKeys: e => [e.context, e.guild_id]
   },
-  [_.rMx.GUILD_TOOLTIP_SHOWN]: {
+  [p.rMx.GUILD_TOOLTIP_SHOWN]: {
     throttlePeriod: P,
     throttleKeys: e => [e.guild_id]
   },
-  [_.rMx.ACK_COMMUNITY_MESSAGES]: {
+  [p.rMx.ACK_COMMUNITY_MESSAGES]: {
     throttlePeriod: P,
     throttleKeys: e => [e.channel_id]
   },
-  [_.rMx.REDESIGN_NAV_BAR_CLICKED]: {
+  [p.rMx.REDESIGN_NAV_BAR_CLICKED]: {
     throttlePeriod: P,
     throttleKeys: e => [e.tab]
   },
-  [_.rMx.CHANNEL_LIST_END_REACHED]: {
+  [p.rMx.CHANNEL_LIST_END_REACHED]: {
     throttlePeriod: P,
     throttleKeys: e => [e.guild_id]
   },
-  [_.rMx.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED]: {
+  [p.rMx.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED]: {
     throttlePeriod: A,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
-  [_.rMx.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
+  [p.rMx.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
     throttlePeriod: D,
     throttleKeys: () => []
   },
-  [_.rMx.KEYWORD_FILTER_MATCH]: {
+  [p.rMx.KEYWORD_FILTER_MATCH]: {
     throttlePeriod: P,
     throttleKeys: e => [e.message_id]
   },
-  [_.rMx.MEDIA_INPUT_VOLUME_CHANGED]: {
+  [p.rMx.MEDIA_INPUT_VOLUME_CHANGED]: {
     throttlePeriod: R,
     throttleKeys: e => [e.location_stack]
   },
-  [_.rMx.MEDIA_OUTPUT_VOLUME_CHANGED]: {
+  [p.rMx.MEDIA_OUTPUT_VOLUME_CHANGED]: {
     throttlePeriod: R,
     throttleKeys: e => [e.location_stack]
   },
-  [_.rMx.APP_DMS_QUICK_LAUNCHER_IMPRESSION]: {
+  [p.rMx.APP_DMS_QUICK_LAUNCHER_IMPRESSION]: {
     throttlePeriod: P,
     throttleKeys: e => [e.channel_id]
   },
-  [_.rMx.USER_VOICE_ACTIVITY_VIEWED]: {
+  [p.rMx.USER_VOICE_ACTIVITY_VIEWED]: {
     throttlePeriod: R,
     throttleKeys: e => [e.activity_user_id, e.surface],
     deduplicate: !0
   },
-  [_.rMx.PARTY_VOICE_ACTIVITY_VIEWED]: {
+  [p.rMx.PARTY_VOICE_ACTIVITY_VIEWED]: {
     throttlePeriod: R,
     throttleKeys: e => [e.voice_channel_id],
     deduplicate: !0
   },
-  [_.rMx.MEMBER_LIST_SWIPE_PEEK]: {
+  [p.rMx.MEMBER_LIST_SWIPE_PEEK]: {
     throttlePeriod: 1e3,
     throttleKeys: e => [e.channel_id]
   },
-  [_.rMx.OPEN_MODAL]: e => e.type === _.jXE.MEDIA_VIEWER ? {
+  [p.rMx.OPEN_MODAL]: e => e.type === p.jXE.MEDIA_VIEWER ? {
     throttlePeriod: A,
     throttleKeys: e => [e.type]
   } : void 0
@@ -367,7 +367,7 @@ function H(e) {
     } = o;
     o = E({}, y(o, ["source"]), G(e))
   }
-  o.client_performance_cpu = f.Z.getCurrentCPUUsagePercent(), o.client_performance_memory = f.Z.getCurrentMemoryUsageKB(), o.cpu_core_count = f.Z.getCPUCoreCount(), o.accessibility_features = B(), o.rendered_locale = m.NW.currentLocale, o.uptime_app = Math.floor((performance.now() - x) / 1e3);
+  o.client_performance_cpu = f.Z.getCurrentCPUUsagePercent(), o.client_performance_memory = f.Z.getCurrentMemoryUsageKB(), o.cpu_core_count = f.Z.getCPUCoreCount(), o.accessibility_features = B(), o.rendered_locale = g.NW.currentLocale, o.uptime_app = Math.floor((performance.now() - x) / 1e3);
   let a = f.Z.getProcessUptime();
   null != a && (o.uptime_process_renderer = Math.floor(a));
   let {
@@ -411,7 +411,7 @@ function J(e, t) {
 function $(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
     r = String(e);
-  if (c.R.includes(r) || p.Z.addBreadcrumb({
+  if (c.R.includes(r) || _.Z.addBreadcrumb({
       category: "analytics",
       message: "".concat(r)
     }), J(e, t), null != n.throttlePercent && Math.random() > n.throttlePercent) return Promise.resolve();

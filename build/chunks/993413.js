@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(757143), n(301563), n(266796);
 var r = n(200651);
 n(192379);
@@ -34,34 +34,34 @@ function f(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     title: t,
     titleIcon: n,
     titleId: i,
     description: s,
     children: d,
-    className: p,
-    errors: _,
+    className: _,
+    errors: p,
     disabled: h = !1,
-    hideDivider: m = !1,
-    showBorder: g = !1,
+    hideDivider: g = !1,
+    showBorder: m = !1,
     borderType: E,
     hasBackground: v = !1,
     forcedDivider: b = !1,
     showPremiumIcon: y = !1
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(u.customizationSection, p, {
+    className: o()(u.customizationSection, _, {
       [u.disabled]: h,
-      [u.hideDivider]: m,
-      [u.showBorder]: g,
+      [u.hideDivider]: g,
+      [u.showBorder]: m,
       [u.withDivider]: b
     }),
     children: (0, r.jsxs)(c.Z, {
       className: u.customizationSectionBorder,
       backgroundClassName: u.customizationSectionBackground,
-      isShown: g,
+      isShown: m,
       type: E,
       hasBackground: v,
       children: [(0, r.jsxs)(a.vwX, {
@@ -72,8 +72,8 @@ function p(e) {
         type: a.R94.Types.DESCRIPTION,
         className: u.sectionDescription,
         children: s
-      }) : null, d, null != _ && (0, r.jsx)(f, {
-        errors: _
+      }) : null, d, null != p && (0, r.jsx)(f, {
+        errors: p
       })]
     })
   })

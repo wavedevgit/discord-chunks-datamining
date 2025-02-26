@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  M: () => p,
+  M: () => _,
   Z: () => y
 });
 var r, i = n(31775),
@@ -48,11 +48,11 @@ function d(e, t) {
   }), e
 }
 let f = 20;
-var p = function(e) {
+var _ = function(e) {
   return e[e.NOT_FETCHED = 0] = "NOT_FETCHED", e[e.FETCHING = 1] = "FETCHING", e[e.FETCHED = 2] = "FETCHED", e[e.ERROR = 3] = "ERROR", e
 }({});
 
-function _(e) {
+function p(e) {
   let {
     applicationId: t,
     guildId: n,
@@ -63,19 +63,19 @@ function _(e) {
 let h = new(o())({
     max: f
   }),
-  m = {};
+  g = {};
 
-function g(e) {
+function m(e) {
   let {
     applicationId: t,
     guildId: n,
     page: r
-  } = e, i = _({
+  } = e, i = p({
     applicationId: t,
     guildId: n,
     page: r
   });
-  m = d(c({}, m), {
+  g = d(c({}, g), {
     [i]: 1
   })
 }
@@ -88,7 +88,7 @@ function E(e) {
     loadId: i,
     page: o,
     totalPages: a
-  } = e, s = _({
+  } = e, s = p({
     applicationId: t,
     guildId: n,
     page: o
@@ -99,7 +99,7 @@ function E(e) {
     loadId: i,
     page: o,
     totalPages: a
-  }), m = d(c({}, m), {
+  }), g = d(c({}, g), {
     [s]: 2
   })
 }
@@ -109,12 +109,12 @@ function v(e) {
     applicationId: t,
     guildId: n,
     page: r
-  } = e, i = _({
+  } = e, i = p({
     applicationId: t,
     guildId: n,
     page: r
   });
-  m = d(c({}, m), {
+  g = d(c({}, g), {
     [i]: 3
   })
 }
@@ -126,7 +126,7 @@ class b extends(r = a.ZP.Store) {
       page: r
     } = e;
     if (null == t) return;
-    let i = _({
+    let i = p({
       applicationId: t,
       guildId: n,
       page: r
@@ -139,7 +139,7 @@ class b extends(r = a.ZP.Store) {
       guildId: n,
       page: r
     } = e;
-    if (null != t) return m[_({
+    if (null != t) return g[p({
       applicationId: t,
       guildId: n,
       page: r
@@ -148,7 +148,7 @@ class b extends(r = a.ZP.Store) {
 }
 l(b, "displayName", "ApplicationDirectorySimilarApplicationsStore");
 let y = new b(s.Z, {
-  APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS: g,
+  APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS: m,
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS: E,
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE: v
 })

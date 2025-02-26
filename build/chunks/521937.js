@@ -24,13 +24,13 @@ function x(e) {
       user_code: e
     } = i.parse(window.location.search);
     return n && null != e ? e : ""
-  }), v = (0, s.TH)(), m = a.useCallback(() => {
-    (0, d.c$)(v)
-  }, [v]), {
+  }), m = (0, s.TH)(), v = a.useCallback(() => {
+    (0, d.c$)(m)
+  }, [m]), {
     manualSubmit: b,
     error: C,
     submitting: _
-  } = (0, u.c)(o, t, m);
+  } = (0, u.c)(o, t, v);
   return (0, r.jsxs)("div", {
     className: h.content,
     children: [(0, r.jsxs)("div", {

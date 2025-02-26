@@ -15,7 +15,7 @@ var r = n(200651),
   d = n(313201),
   f = n(554789);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -48,13 +48,13 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -107,7 +107,7 @@ class b extends i.PureComponent {
     } = this.props;
     return (0, r.jsx)(s.mh, {
       id: n.key,
-      children: i => (0, r.jsx)(c.P3F, m(_({
+      children: i => (0, r.jsx)(c.P3F, g(p({
         focusProps: {
           enabled: !1
         },
@@ -122,7 +122,7 @@ class b extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), p(this, "handleClick", () => {
+    super(...e), _(this, "handleClick", () => {
       let {
         option: e,
         onChange: t
@@ -139,8 +139,8 @@ function y(e) {
     scroller: i,
     renderOption: o,
     onChange: u,
-    className: p
-  } = e, h = a()(f.quickSelectPopout, p, {
+    className: _
+  } = e, h = a()(f.quickSelectPopout, _, {
     [f.quickSelectPopoutScroll]: i
   }), E = t.map(e => {
     let t = null != n && e.value === n.value,
@@ -160,10 +160,10 @@ function y(e) {
     async scrollToEnd() {}
   }), O = y.containerProps, {
     ref: S
-  } = O, I = g(O, ["ref"]);
+  } = O, I = m(O, ["ref"]);
   return (0, c.Tbt)(S), (0, r.jsx)(s.bG, {
     navigator: y,
-    children: (0, r.jsx)("div", m(_({
+    children: (0, r.jsx)("div", g(p({
       ref: S,
       className: h
     }, I), {
@@ -184,13 +184,13 @@ class O extends i.PureComponent {
       className: i,
       popoutProps: o
     } = this.props;
-    return (0, r.jsx)(c.yRy, m(_({}, o), {
+    return (0, r.jsx)(c.yRy, g(p({}, o), {
       renderPopout: this.renderPopout,
       children: (o, a) => {
         let {
           isShown: s
         } = a;
-        return (0, r.jsx)(c.P3F, m(_({}, o), {
+        return (0, r.jsx)(c.P3F, g(p({}, o), {
           className: i,
           "aria-haspopup": "listbox",
           "aria-expanded": s,
@@ -204,7 +204,7 @@ class O extends i.PureComponent {
     }))
   }
   constructor(...e) {
-    super(...e), p(this, "renderPopout", e => {
+    super(...e), _(this, "renderPopout", e => {
       let {
         closePopout: t
       } = e, {
@@ -224,7 +224,7 @@ class O extends i.PureComponent {
           this.handleChange(e), t()
         }
       })
-    }), p(this, "handleChange", e => {
+    }), _(this, "handleChange", e => {
       let {
         onChange: t
       } = this.props;

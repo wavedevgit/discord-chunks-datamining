@@ -28,12 +28,12 @@ var i = n(120356),
   u = n(313201),
   d = n(565138),
   f = n(361207),
-  p = n(63063),
-  _ = n(981631),
+  _ = n(63063),
+  p = n(981631),
   h = n(388032),
-  m = n(704015);
+  g = n(704015);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -49,7 +49,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -83,7 +83,7 @@ let O = e => {
     return (0, r.jsx)(a.X6q, {
       variant: "heading-xl/semibold",
       color: "header-primary",
-      className: o()(m.title, t),
+      className: o()(g.title, t),
       id: n,
       children: i
     })
@@ -108,7 +108,7 @@ let O = e => {
     return (0, r.jsx)("img", {
       alt: "",
       src: n,
-      className: o()(m.image, t)
+      className: o()(g.image, t)
     })
   },
   T = e => {
@@ -120,8 +120,8 @@ let O = e => {
       size: i ? a.zxk.Sizes.MIN : a.zxk.Sizes.LARGE,
       fullWidth: !i,
       className: o()(t, {
-        [m.button]: !i,
-        [m.linkButton]: i
+        [g.button]: !i,
+        [g.linkButton]: i
       })
     }, n))
   };
@@ -135,7 +135,7 @@ let N = e => {
     return (0, r.jsx)(y, {
       src: n,
       size: i,
-      className: o()(m.inviteLargeIcon, t),
+      className: o()(g.inviteLargeIcon, t),
       "aria-hidden": !0
     })
   },
@@ -164,7 +164,7 @@ let C = e => {
   return (0, r.jsx)(y, {
     src: (0, s.x)(n),
     size: i,
-    className: o()(m.inviteIcon, t),
+    className: o()(g.inviteIcon, t),
     "aria-hidden": !0
   })
 };
@@ -179,10 +179,10 @@ let R = e => {
       inputClassName: c,
       setRef: d,
       type: f = "text",
-      onChange: p,
-      autoComplete: _,
+      onChange: _,
+      autoComplete: p,
       autoFocus: h,
-      maxLength: g,
+      maxLength: m,
       spellCheck: E,
       name: v,
       description: b,
@@ -204,20 +204,20 @@ let R = e => {
         inputRef: d,
         placeholder: i,
         inputClassName: o()(c, {
-          [m.inputError]: null != n
+          [g.inputError]: null != n
         }),
         "aria-label": t,
-        onChange: p,
-        autoComplete: _,
+        onChange: _,
+        autoComplete: p,
         autoFocus: h,
-        maxLength: g,
+        maxLength: m,
         spellCheck: E,
         id: I,
         onFocus: O,
         onBlur: S
       }), null != b ? (0, r.jsx)(a.R94, {
         type: a.R94.Types.DESCRIPTION,
-        className: m.description,
+        className: g.description,
         children: b
       }) : null]
     })
@@ -228,7 +228,7 @@ let R = e => {
       children: n
     } = e;
     return (0, r.jsx)("div", {
-      className: o()(m.block, t),
+      className: o()(g.block, t),
       children: n
     })
   },
@@ -239,7 +239,7 @@ let R = e => {
     } = e;
     return (0, r.jsx)(a.Text, {
       variant: "text-xs/normal",
-      className: o()(m.subText, t),
+      className: o()(g.subText, t),
       children: n
     })
   },
@@ -252,7 +252,7 @@ let R = e => {
       align: c.Z.Align.CENTER,
       className: t,
       children: (0, r.jsx)(l.Z, {
-        className: m.spinnerVideo
+        className: g.spinnerVideo
       })
     })
   },
@@ -265,9 +265,9 @@ let R = e => {
       textClassName: u
     } = e;
     return null == i ? null : (null != n && n > 0 && (t = (0, r.jsxs)("div", {
-      className: o()(m.pill, m.pillOnline, l && m.pillFlat),
+      className: o()(g.pill, g.pillOnline, l && g.pillFlat),
       children: [(0, r.jsx)("i", {
-        className: m.pillIconOnline
+        className: g.pillIconOnline
       }), (0, r.jsx)(a.Text, {
         tag: "span",
         className: u,
@@ -281,9 +281,9 @@ let R = e => {
       justify: c.Z.Justify.CENTER,
       className: s,
       children: [t, (0, r.jsxs)("div", {
-        className: o()(m.pill, l && m.pillFlat),
+        className: o()(g.pill, l && g.pillFlat),
         children: [(0, r.jsx)("i", {
-          className: m.pillIconTotal
+          className: g.pillIconTotal
         }), (0, r.jsx)(a.Text, {
           tag: "span",
           className: u,
@@ -301,19 +301,19 @@ let R = e => {
       user: t
     } = e;
     return null == t ? null : (0, r.jsxs)("div", {
-      className: m.joiningAs,
+      className: g.joiningAs,
       children: [(0, r.jsx)(a.Text, {
         tag: "span",
         variant: "text-md/normal",
         color: "header-secondary",
         children: h.NW.string(h.t["/8WWvL"])
       }), (0, r.jsx)(N, {
-        className: m.joiningAsAvatar,
+        className: g.joiningAsAvatar,
         src: t.getAvatarURL(void 0, 24),
         size: a.EFr.SIZE_24,
         "aria-label": t.username
       }), (0, r.jsx)(a.Text, {
-        className: m.joiningAsUsername,
+        className: g.joiningAsUsername,
         tag: "span",
         variant: "text-md/semibold",
         color: "header-primary",
@@ -333,9 +333,9 @@ let R = e => {
           platform: (0, f.DW)()
         })
       }), (0, r.jsx)(D, {
-        className: m.downloadButtonSubtext,
+        className: g.downloadButtonSubtext,
         children: h.NW.format(h.t.wO1VBg, {
-          supportedBrowserURL: p.Z.getArticleURL(_.BhN.SUPPORTED_BROWSERS)
+          supportedBrowserURL: _.Z.getArticleURL(p.BhN.SUPPORTED_BROWSERS)
         })
       })]
     })
@@ -348,7 +348,7 @@ let R = e => {
       onSubmit: s,
       children: l,
       expanded: c = !1,
-      theme: u = _.BRd.DARK,
+      theme: u = p.BRd.DARK,
       style: d
     } = e;
     return (0, r.jsx)(a.f6W, {
@@ -358,11 +358,11 @@ let R = e => {
         "data-disable-adaptive-theme": !0,
         onSubmit: s,
         style: d,
-        className: o()(c ? m.authBoxExpanded : m.authBox, e, t),
+        className: o()(c ? g.authBoxExpanded : g.authBox, e, t),
         children: [(0, r.jsx)("div", {
-          className: m.discordLogo
+          className: g.discordLogo
         }), (0, r.jsx)("div", {
-          className: o()(m.centeringWrapper, n),
+          className: o()(g.centeringWrapper, n),
           children: l
         })]
       })

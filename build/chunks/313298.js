@@ -21,37 +21,37 @@ let c = 75e3,
   u = 10,
   d = 5e3,
   f = 2,
-  p = 2e3,
-  _ = 1e4;
+  _ = 2e3,
+  p = 1e4;
 
 function h(e) {
   var t;
   return (null !== (t = o.Z.getMemberCount(e)) && void 0 !== t ? t : 0) >= c ? u : f
 }
 
-function m(e) {
+function g(e) {
   var t;
-  return (null !== (t = o.Z.getMemberCount(e)) && void 0 !== t ? t : 0) >= c ? d : p
+  return (null !== (t = o.Z.getMemberCount(e)) && void 0 !== t ? t : 0) >= c ? d : _
 }
-let g = {},
+let m = {},
   E = {},
   v = null;
 
 function b() {
   null == v && (v = setInterval(() => {
-    a.default.forEachKey(g, e => {
+    a.default.forEachKey(m, e => {
       S(e) && O(e)
     })
-  }, _))
+  }, p))
 }
 async function y(e, t) {
-  null == g[e] && (g[e] = new Set), g[e].add(t), null == E[e] && (E[e] = Date.now()), S(e) && await O(e)
+  null == m[e] && (m[e] = new Set), m[e].add(t), null == E[e] && (E[e] = Date.now()), S(e) && await O(e)
 }
 
 function O(e) {
-  if (null == g[e]) return;
-  let t = Array.from(g[e]);
-  g[e] = new Set, E[e] = Date.now(), requestAnimationFrame(async () => {
+  if (null == m[e]) return;
+  let t = Array.from(m[e]);
+  m[e] = new Set, E[e] = Date.now(), requestAnimationFrame(async () => {
     await r.Z.dispatch({
       type: "MEMBER_SAFETY_GUILD_MEMBER_UPDATE_BATCH",
       guildId: e,
@@ -61,18 +61,18 @@ function O(e) {
 }
 
 function S(e) {
-  let t = g[e];
+  let t = m[e];
   if (null == t) return !1;
   let n = t.size >= h(e),
     r = E[e];
   if (n) return !0;
   if (null == r) return !1;
   let i = Date.now() - r;
-  return null != r && i >= m(e)
+  return null != r && i >= g(e)
 }
 
 function I(e) {
-  g[e] = new Set, E[e] = null
+  m[e] = new Set, E[e] = null
 }
 class T extends i.Z {
   handleInitialize() {

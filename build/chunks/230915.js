@@ -38,8 +38,8 @@ var r, i, o = "https://js.stripe.com/v3",
   },
   d = null,
   f = null,
-  p = null,
-  _ = function(e) {
+  _ = null,
+  p = function(e) {
     return function() {
       e(Error("Failed to load Stripe.js"))
     }
@@ -49,7 +49,7 @@ var r, i, o = "https://js.stripe.com/v3",
       window.Stripe ? e(window.Stripe) : t(Error("Stripe.js not available"))
     }
   },
-  m = function(e) {
+  g = function(e) {
     return null !== d ? d : (d = new Promise(function(t, n) {
       if ("undefined" == typeof window || "undefined" == typeof document) {
         t(null);
@@ -61,7 +61,7 @@ var r, i, o = "https://js.stripe.com/v3",
       }
       try {
         var r, i = l();
-        i && e ? console.warn(s) : i ? i && null !== p && null !== f && (i.removeEventListener("load", p), i.removeEventListener("error", f), null === (r = i.parentNode) || void 0 === r || r.removeChild(i), i = c(e)) : i = c(e), p = h(t, n), f = _(n), i.addEventListener("load", p), i.addEventListener("error", f)
+        i && e ? console.warn(s) : i ? i && null !== _ && null !== f && (i.removeEventListener("load", _), i.removeEventListener("error", f), null === (r = i.parentNode) || void 0 === r || r.removeChild(i), i = c(e)) : i = c(e), _ = h(t, n), f = p(n), i.addEventListener("load", _), i.addEventListener("error", f)
       } catch (e) {
         n(e);
         return
@@ -70,7 +70,7 @@ var r, i, o = "https://js.stripe.com/v3",
       return d = null, Promise.reject(e)
     })
   },
-  g = function(e, t, n) {
+  m = function(e, t, n) {
     if (null === e) return null;
     var r = e.apply(void 0, t);
     return u(r, n), r
@@ -86,8 +86,8 @@ var r, i, o = "https://js.stripe.com/v3",
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
     v = !0;
     var r = Date.now();
-    return m(i).then(function(e) {
-      return g(e, t, r)
+    return g(i).then(function(e) {
+      return m(e, t, r)
     })
   };
 b.setLoadParameters = function(e) {

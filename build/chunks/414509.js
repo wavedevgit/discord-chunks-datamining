@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B: () => m,
+  B: () => g,
   Z: () => v
 }), n(47120);
 var r = n(147913),
@@ -24,9 +24,9 @@ function d(e, t, n) {
 }
 n(334431);
 let f = +s.Z.Millis.HOUR,
-  p = 3 * s.Z.Millis.DAY;
+  _ = 3 * s.Z.Millis.DAY;
 
-function _(e) {
+function p(e) {
   let {
     channelId: t
   } = e;
@@ -35,7 +35,7 @@ function _(e) {
   if (null != n && n.isGroupDM()) {
     let e = n.recipients.filter(e => a.Z.isBlocked(e)),
       r = n.recipients.filter(e => a.Z.isIgnored(e));
-    (e.length > 0 || r.length > 0) && !n.blockedUserWarningDismissed && !g(t) && (0, c.O)({
+    (e.length > 0 || r.length > 0) && !n.blockedUserWarningDismissed && !m(t) && (0, c.O)({
       channelId: t,
       blockedUserIds: e,
       ignoredUserIds: r
@@ -49,21 +49,21 @@ function h(e) {
   } = e
 }
 
-function m(e) {
+function g(e) {
   return (0, l.Iu)(e) > Date.now() - f
 }
 
-function g(e) {
-  return (0, l.Iu)(e) > Date.now() - p
+function m(e) {
+  return (0, l.Iu)(e) > Date.now() - _
 }
 class E extends r.Z {
   handleBlockedOrIgnoredUserVoiceChannelJoin(e, t) {
     let n = o.Z.getChannelId();
-    e === n && null != i.Z.getChannel(e) && (m(e) || (0, u.H)(n, t))
+    e === n && null != i.Z.getChannel(e) && (g(e) || (0, u.H)(n, t))
   }
   constructor(...e) {
     super(...e), d(this, "actions", {
-      CHANNEL_SELECT: _,
+      CHANNEL_SELECT: p,
       APP_STATE_UPDATE: h
     })
   }

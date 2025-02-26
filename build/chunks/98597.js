@@ -1,10 +1,10 @@
 /** Chunk was on 30829 **/
 n.d(t, {
-  CN: () => I,
+  CN: () => Z,
   ZP: () => A,
   eP: () => E,
   hR: () => w,
-  jo: () => Z
+  jo: () => I
 });
 var r, i = n(200651),
   l = n(192379),
@@ -20,8 +20,8 @@ var r, i = n(200651),
   g = n(155409),
   m = n(131704),
   b = n(199902),
-  v = n(430824),
-  y = n(496675),
+  y = n(430824),
+  v = n(496675),
   O = n(914010),
   j = n(281029),
   _ = n(981631),
@@ -63,11 +63,11 @@ function S(e, t) {
   }), e
 }
 
-function I(e, t, n) {
+function Z(e, t, n) {
   return null != t && !!t && !(0, j.ig)(n, e.type)
 }
 
-function Z(e, t) {
+function I(e, t) {
   return null == t ? x.containerDefault : e > t ? x.containerDragAfter : x.containerDragBefore
 }
 
@@ -79,7 +79,7 @@ function w(e) {
     forceShowButtons: l,
     hasChannelInfo: o = !1
   } = e;
-  if ((0, s.e7)([y.Z, O.Z], () => n || O.Z.getGuildId() === _.I_8 || !y.Z.can(_.Plq.MANAGE_CHANNELS, t) && !y.Z.can(_.Plq.MANAGE_ROLES, t) && !y.Z.can(_.Plq.MANAGE_WEBHOOKS, t) || (0, m.r8)(t.type) && !y.Z.can(_.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !y.Z.can(_.Plq.CONNECT, t) || !m.dF.has(t.type))) return null;
+  if ((0, s.e7)([v.Z, O.Z], () => n || O.Z.getGuildId() === _.I_8 || !v.Z.can(_.Plq.MANAGE_CHANNELS, t) && !v.Z.can(_.Plq.MANAGE_ROLES, t) && !v.Z.can(_.Plq.MANAGE_WEBHOOKS, t) || (0, m.r8)(t.type) && !v.Z.can(_.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !v.Z.can(_.Plq.CONNECT, t) || !m.dF.has(t.type))) return null;
 
   function d() {
     u.ZP.open(t.id)
@@ -120,10 +120,10 @@ function E(e) {
     tabIndex: o,
     forceShowButtons: u,
     hasChannelInfo: h = !1
-  } = e, m = (0, s.e7)([v.Z], () => v.Z.getGuild(t.getGuildId())), O = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), j = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), P = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, m, t, O)), I = (0, s.e7)([y.Z], () => y.Z.can(_.Plq.CREATE_INSTANT_INVITE, t) ? C.NW.string(C.t.zJrgTE) : C.NW.string(C.t.Sd8Ix8));
+  } = e, m = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), O = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), j = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), P = (0, s.e7)([v.Z], () => (0, p.b)(v.Z, m, t, O)), Z = (0, s.e7)([v.Z], () => v.Z.can(_.Plq.CREATE_INSTANT_INVITE, t) ? C.NW.string(C.t.zJrgTE) : C.NW.string(C.t.Sd8Ix8));
   if (l || !P) return null;
 
-  function Z() {
+  function I() {
     if (null != m) {
       let e = b.Z.getAllActiveStreams().filter(e => e.state !== _.jm8.ENDED && e.channelId === t.id);
       (0, c.ZDy)(async () => {
@@ -153,13 +153,13 @@ function E(e) {
       children: w
     })
   })), (0, i.jsx)(c.ua7, {
-    text: I,
+    text: Z,
     children: e => (0, i.jsx)(c.P3F, S(N({
       className: a()(x.iconItem, u ? x.alwaysShown : void 0, h ? x.iconWithChannelInfo : x.iconNoChannelInfo)
     }, e), {
-      onClick: Z,
+      onClick: I,
       tabIndex: o,
-      "aria-label": I,
+      "aria-label": Z,
       children: w
     }))
   })
@@ -228,7 +228,7 @@ class A extends(r = l.PureComponent) {
       position: e,
       sortingPosition: t
     } = this.props;
-    return Z(e, t)
+    return I(e, t)
   }
   isDisabled() {
     let {
@@ -236,7 +236,7 @@ class A extends(r = l.PureComponent) {
       sorting: t,
       sortingType: n
     } = this.props;
-    return I(e, t, n)
+    return Z(e, t, n)
   }
 }
 P(A, "defaultProps", {

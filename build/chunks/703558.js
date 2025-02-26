@@ -14,7 +14,7 @@ var r, i = n(392711),
   d = n(592125),
   f = n(486472);
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -47,19 +47,19 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = n(981631).en1 + 500;
+let m = n(981631).en1 + 500;
 var E = function(e) {
   return e[e.ChannelMessage = 0] = "ChannelMessage", e[e.ThreadSettings = 1] = "ThreadSettings", e[e.FirstThreadMessage = 2] = "FirstThreadMessage", e[e.ApplicationLauncherCommand = 3] = "ApplicationLauncherCommand", e[e.Poll = 4] = "Poll", e[e.SlashCommand = 5] = "SlashCommand", e[e.ForwardContextMessage = 6] = "ForwardContextMessage", e
 }({});
 let v = {};
 
 function b(e) {
-  return e.length > g && (e = e.substr(0, g)), e
+  return e.length > m && (e = e.substr(0, m)), e
 }
 
 function y(e) {
@@ -105,7 +105,7 @@ function I(e) {
   if (null == r) return;
   let i = y(r),
     o = i[t];
-  null == o && (o = i[t] = {}), o[1] = m(_({
+  null == o && (o = i[t] = {}), o[1] = g(p({
     timestamp: Date.now()
   }, o[1], n), {
     parentChannelId: t
@@ -242,7 +242,7 @@ class x extends(r = a.ZP.PersistedStore) {
     return null == n ? null : n[1]
   }
 }
-p(x, "displayName", "DraftStore"), p(x, "persistKey", "DraftStore"), p(x, "migrations", [e => {
+_(x, "displayName", "DraftStore"), _(x, "persistKey", "DraftStore"), _(x, "migrations", [e => {
   if (null == e) return {};
   for (let t in e) "timestamp" in e[t] && (e[t] = {
     0: e[t]

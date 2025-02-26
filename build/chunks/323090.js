@@ -1,4 +1,4 @@
-/** Chunk was on 73049 **/
+/** Chunk was on 2998 **/
 t.d(n, {
   Z: () => j
 });
@@ -14,13 +14,13 @@ var o = t(442837),
   u = t(621853),
   f = t(748545),
   p = t(172351),
-  m = t(280885),
-  b = t(900927),
-  g = t(678738),
-  v = t(179828),
+  b = t(280885),
+  m = t(900927),
+  v = t(678738),
+  g = t(179828),
   y = t(228168),
-  h = t(388032),
-  I = t(329462);
+  I = t(388032),
+  h = t(329462);
 
 function j(e) {
   var n;
@@ -37,11 +37,11 @@ function j(e) {
     return null === (e = u.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
   }), E = (0, o.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId())), S = (0, f.kc)({
     location: "BotUserProfileModalInfo"
-  }) ? h.NW.string(h.t["mQKv+v"]) : h.NW.string(h.t.PbMNh4);
+  }) ? I.NW.string(I.t["mQKv+v"]) : I.NW.string(I.t.PbMNh4);
   return (0, r.jsxs)(i.zJl, {
     fade: !0,
-    className: I.scroller,
-    children: [(null == x ? void 0 : x.bio) != null && (null == x ? void 0 : x.bio) !== "" && (0, r.jsx)(m.Z, {
+    className: h.scroller,
+    children: [(null == x ? void 0 : x.bio) != null && (null == x ? void 0 : x.bio) !== "" && (0, r.jsx)(b.Z, {
       userBio: x.bio,
       setLineClamp: !1
     }), (null == P ? void 0 : P.popularApplicationCommandIds) != null && null != E && (0, r.jsx)(p.Z, {
@@ -50,24 +50,24 @@ function j(e) {
       channel: E,
       guildId: null !== (n = null == x ? void 0 : x.guildId) && void 0 !== n ? n : void 0,
       onClick: O
-    }), null != N && (0, r.jsx)(v.Z, {
+    }), null != N && (0, r.jsx)(g.Z, {
       user: t,
       currentUser: j,
       guild: N,
       scrollIntoView: _ === y.Tb.ROLES
-    }), (0, r.jsx)(g.Z, {
-      heading: h.NW.string(h.t["A//N4u"]),
-      children: (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(v.Z, {
+      heading: I.NW.string(I.t["A//N4u"]),
+      children: (0, r.jsx)(m.Z, {
         userId: t.id,
         guildId: null == x ? void 0 : x.guildId,
         tooltipDelay: y.vB
       })
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(v.Z, {
       heading: S,
       scrollIntoView: _ === y.Tb.NOTE,
       children: (0, r.jsx)(l.Z, {
         userId: t.id,
-        className: I.note,
+        className: h.note,
         autoFocus: _ === y.Tb.NOTE,
         onUpdate: () => Z({
           action: "SET_NOTE"

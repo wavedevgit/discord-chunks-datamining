@@ -11,11 +11,11 @@ var r, i, o, a, s = n(512722),
   u = n(719711),
   d = n(544891),
   f = n(433517),
-  p = n(593472),
-  _ = n(189451),
+  _ = n(593472),
+  p = n(189451),
   h = n(358085),
-  m = n(591759),
-  g = n(981631),
+  g = n(591759),
+  m = n(981631),
   E = n(413135).Buffer;
 
 function v(e, t, n) {
@@ -106,7 +106,7 @@ function k(e) {
     pid: e.pid,
     pidPath: null !== (a = e.pidPath) && void 0 !== a ? a : [],
     windowHandle: null !== (s = e.windowHandle) && void 0 !== s ? s : null,
-    fullscreenType: null !== (l = e.fullscreenType) && void 0 !== l ? l : p.Jx.UNKNOWN
+    fullscreenType: null !== (l = e.fullscreenType) && void 0 !== l ? l : _.Jx.UNKNOWN
   }
 }
 let j = {
@@ -123,7 +123,7 @@ let j = {
     try {
       n = this.requireModule("discord_overlay2")
     } catch (e) {}
-    n && n.reset && n.reset(), n && n.disconnectAllProcesses && n.destroyHostProcess && (n.disconnectAllProcesses(), n.destroyHostProcess()), S.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && !0 !== f.K.get(u.SV) && this.supportsFeature(g.eRX.USER_DATA_CACHE) && S.userDataCache.cacheUserData(f.K.stringify()), null == S || null === (t = S.window) || void 0 === t || t.close(null == S ? void 0 : null === (e = S.globalOverlay) || void 0 === e ? void 0 : e.WINDOW_KEY)
+    n && n.reset && n.reset(), n && n.disconnectAllProcesses && n.destroyHostProcess && (n.disconnectAllProcesses(), n.destroyHostProcess()), S.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && !0 !== f.K.get(u.SV) && this.supportsFeature(m.eRX.USER_DATA_CACHE) && S.userDataCache.cacheUserData(f.K.stringify()), null == S || null === (t = S.window) || void 0 === t || t.close(null == S ? void 0 : null === (e = S.globalOverlay) || void 0 === e ? void 0 : e.WINDOW_KEY)
   },
   inputEventRegister(e, t, n, r) {
     Array.isArray(t) || (t = t.toJS()), this.getDiscordUtils().inputEventRegister(parseInt(e), t.map(e => {
@@ -169,7 +169,7 @@ let j = {
     this.getDiscordUtils().setObserverDebugCallback(t => e(t), t, n)
   },
   clearObserverDebugCallback() {
-    this.getDiscordUtils().setObserverDebugCallback(null, _.l.NONE, 0)
+    this.getDiscordUtils().setObserverDebugCallback(null, p.l.NONE, 0)
   },
   shouldDisplayNotifications() {
     return this.getDiscordUtils().shouldDisplayNotifications()
@@ -267,7 +267,7 @@ let j = {
   async saveImage(e) {
     var t;
     l()(h.isPlatformEmbedded, "Save image method called outside native app");
-    let n = m.Z.toURLSafe(e);
+    let n = g.Z.toURLSafe(e);
     if (null == n) return;
     let r = null !== (t = n.pathname.split("/").pop()) && void 0 !== t ? t : "unknown",
       i = f.K.get(D),
@@ -279,7 +279,7 @@ let j = {
   async saveFile(e, t) {
     var n;
     l()(h.isPlatformEmbedded, "Save file method called outside native app");
-    let r = m.Z.toURLSafe(e);
+    let r = g.Z.toURLSafe(e);
     if (null == r) return null;
     let i = null !== (n = null != t ? t : r.pathname.split("/").pop()) && void 0 !== n ? n : "unknown",
       o = await w(e),
@@ -287,7 +287,7 @@ let j = {
     return S.fileManager.saveWithDialog(a, i)
   },
   async downloadVoiceFilterFile(e, t, n) {
-    l()(h.isPlatformEmbedded, "Download voice filter file method called outside native app"), null != m.Z.toURLSafe(e) && await S.fileManager.maybeDownloadVoiceFilterFile(e, t, n)
+    l()(h.isPlatformEmbedded, "Download voice filter file method called outside native app"), null != g.Z.toURLSafe(e) && await S.fileManager.maybeDownloadVoiceFilterFile(e, t, n)
   },
   stopVoiceFilterDownloads() {
     S.fileManager.stopVoiceFilterDownloads()
@@ -296,7 +296,7 @@ let j = {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : void 0;
     if (null != e) {
       var t, n;
-      let r = null === (t = m.Z.toURLSafe(e)) || void 0 === t ? void 0 : t.pathname;
+      let r = null === (t = g.Z.toURLSafe(e)) || void 0 === t ? void 0 : t.pathname;
       if (null == r) return !1;
       let i = null === (n = r.split(".").pop()) || void 0 === n ? void 0 : n.toLowerCase();
       if (null != i && !I.includes(i)) return !1
@@ -482,13 +482,13 @@ let j = {
     "application/json" === l && (c = JSON.stringify(t));
     let u = s / 1e3 * o,
       f = Math.ceil(c.length / u),
-      p = Array(f);
+      _ = Array(f);
     for (let e = 0; e < f; e++) {
       let t = e * u;
-      p[e] = c.substring(t, t + u)
+      _[e] = c.substring(t, t + u)
     }
     return new Promise((e, t) => {
-      null != S.http && S.http.makeChunkedRequest(r, p, {
+      null != S.http && S.http.makeChunkedRequest(r, _, {
         method: i,
         chunkInterval: s,
         contentType: l,
@@ -548,14 +548,14 @@ let j = {
     let {
       getWindowFullscreenTypeByPid: i
     } = this.getDiscordUtils(), o = 0 !== e && null != i && null != t ? i(e, t) : null;
-    return -1 === o && (o = null), null !== (r = null != o ? o : n) && void 0 !== r ? r : p.Jx.UNKNOWN
+    return -1 === o && (o = null), null !== (r = null != o ? o : n) && void 0 !== r ? r : _.Jx.UNKNOWN
   },
   GetWindowFullscreenTypeExtraByPid(e, t) {
     let {
       getWindowFullscreenTypeExtraByPid: n
     } = this.getDiscordUtils();
     return null == n || null == t ? {
-      quns: p.Ng.QUNS_UNKNOWN
+      quns: _.Ng.QUNS_UNKNOWN
     } : n(e, t)
   },
   SetGPUBoostEnabledByPid(e, t) {

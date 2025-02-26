@@ -12,12 +12,12 @@ var r, i = n(392711),
   u = n(594174),
   d = n(626135),
   f = n(36703),
-  p = n(709054),
-  _ = n(710111),
+  _ = n(709054),
+  p = n(710111),
   h = n(981631),
-  m = n(526761);
+  g = n(526761);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -97,7 +97,7 @@ function M(e) {
   let {
     soundboardSounds: t
   } = e;
-  E.set(_.X8, t), y = 2
+  E.set(p.X8, t), y = 2
 }
 
 function k(e) {
@@ -146,10 +146,10 @@ function V(e) {
     type: n,
     proto: r
   } = t;
-  if (n === m.yP.FRECENCY_AND_FAVORITES_SETTINGS) {
+  if (n === g.yP.FRECENCY_AND_FAVORITES_SETTINGS) {
     var i, o;
     S = new Set(null !== (o = null == r ? void 0 : null === (i = r.favoriteSoundboardSounds) || void 0 === i ? void 0 : i.soundIds) && void 0 !== o ? o : [])
-  } else n === m.yP.PRELOADED_USER_SETTINGS && B(r)
+  } else n === g.yP.PRELOADED_USER_SETTINGS && B(r)
 }
 
 function F(e) {
@@ -163,7 +163,7 @@ function Z(e) {
   let {
     soundboardStoreState: t
   } = e;
-  E = new Map(p.default.entries(t.soundboardSounds)), S = new Set(t.favoritedSoundIds), b = new Set(t.localSoundboardMutes)
+  E = new Map(_.default.entries(t.soundboardSounds)), S = new Set(t.favoritedSoundIds), b = new Set(t.localSoundboardMutes)
 }
 class H extends(r = a.ZP.Store) {
   initialize() {
@@ -227,7 +227,7 @@ class H extends(r = a.ZP.Store) {
     return 2 === O && 2 === y
   }
 }
-g(H, "displayName", "SoundboardStore");
+m(H, "displayName", "SoundboardStore");
 let W = new H(s.Z, {
   LOGOUT: N,
   GUILD_SOUNDBOARD_FETCH: C,

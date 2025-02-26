@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -17,10 +17,10 @@ function f(e) {
   let {
     onSelect: t,
     sound: n
-  } = e, [f, p] = i.useState(!1);
+  } = e, [f, _] = i.useState(!1);
 
-  function _(e) {
-    p(!1), null == t || t(e)
+  function p(e) {
+    _(!1), null == t || t(e)
   }
   let h = e => (0, r.jsxs)("div", {
     className: u.customGiftHeader,
@@ -42,7 +42,7 @@ function f(e) {
     shouldShow: f,
     position: "bottom",
     align: "left",
-    onRequestClose: () => p(!1),
+    onRequestClose: () => _(!1),
     renderPopout: e => {
       let {
         closePopout: t
@@ -54,7 +54,7 @@ function f(e) {
           guildId: null,
           channel: null,
           onClose: t,
-          onSelect: _,
+          onSelect: p,
           analyticsSource: "gift soundboard",
           soundButtonOverlay: s.Pb.ADD,
           listPadding: d,
@@ -65,7 +65,7 @@ function f(e) {
     },
     children: () => (0, r.jsx)(a.P3F, {
       className: u.sound,
-      onClick: () => p(!0),
+      onClick: () => _(!0),
       children: null == n ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.KY1, {
           size: "custom",
@@ -93,7 +93,7 @@ function f(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     sound: t,
     onSelect: n

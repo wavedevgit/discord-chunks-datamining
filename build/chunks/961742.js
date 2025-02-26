@@ -4,10 +4,10 @@ n.d(t, {
   Ad: () => u,
   Bi: () => h,
   Kk: () => i,
-  Nv: () => p,
-  P9: () => g,
+  Nv: () => _,
+  P9: () => m,
   Vj: () => o,
-  _c: () => _,
+  _c: () => p,
   mX: () => d,
   oY: () => E,
   qo: () => a
@@ -69,11 +69,11 @@ function d() {
 }
 let f = 16384;
 
-function p(e) {
+function _(e) {
   (e.width > f || e.height > f) && (e.width > f && e.height > f ? e.width > e.height ? (e.height *= f / e.width, e.width = f) : (e.width *= f / e.height, e.height = f) : e.width > f ? (e.height *= f / e.width, e.width = f) : (e.width *= f / e.height, e.height = f))
 }
 
-function _(e, t = {}) {
+function p(e, t = {}) {
   return new Promise(e.toBlob ? n => {
     e.toBlob(n, t.type ? t.type : "image/png", t.quality ? t.quality : 1)
   } : n => {
@@ -93,14 +93,14 @@ function h(e) {
     r.decode = () => t(r), r.onload = () => t(r), r.onerror = n, r.crossOrigin = "anonymous", r.decoding = "async", r.src = e
   })
 }
-async function m(e) {
+async function g(e) {
   return Promise.resolve().then(() => new XMLSerializer().serializeToString(e)).then(encodeURIComponent).then(e => `data:image/svg+xml;charset=utf-8,${e}`)
 }
-async function g(e, t, n) {
+async function m(e, t, n) {
   let r = "http://www.w3.org/2000/svg",
     i = document.createElementNS(r, "svg"),
     o = document.createElementNS(r, "foreignObject");
-  return i.setAttribute("width", `${t}`), i.setAttribute("height", `${n}`), i.setAttribute("viewBox", `0 0 ${t} ${n}`), o.setAttribute("width", "100%"), o.setAttribute("height", "100%"), o.setAttribute("x", "0"), o.setAttribute("y", "0"), o.setAttribute("externalResourcesRequired", "true"), i.appendChild(o), o.appendChild(e), m(i)
+  return i.setAttribute("width", `${t}`), i.setAttribute("height", `${n}`), i.setAttribute("viewBox", `0 0 ${t} ${n}`), o.setAttribute("width", "100%"), o.setAttribute("height", "100%"), o.setAttribute("x", "0"), o.setAttribute("y", "0"), o.setAttribute("externalResourcesRequired", "true"), i.appendChild(o), o.appendChild(e), g(i)
 }
 let E = (e, t) => {
   if (e instanceof t) return !0;

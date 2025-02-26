@@ -28,8 +28,8 @@ var i = n(654861),
   u = n(358085),
   d = n(709054),
   f = n(981631),
-  p = n(377668),
-  _ = n(970952);
+  _ = n(377668),
+  p = n(970952);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,7 +40,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,7 +65,7 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -92,10 +92,10 @@ function A(e) {
     format: f = null
   } = e;
   if (null == i || null == o) return;
-  let p = null != f ? f : u && X(o) ? "gif" : "jpg";
-  u && J(o) && (p = "mp4");
-  let _ = window.GLOBAL_ENV.CDN_HOST;
-  if (null != _ ? ("jpg" === p && (p = O ? "webp" : "png"), t = "".concat(location.protocol, "//").concat(_, "/").concat(r, "/").concat(i, "/").concat(o, ".").concat(p)) : t = location.protocol + window.GLOBAL_ENV.API_ENDPOINT + n(i, o, p), "mp4" === p) return t;
+  let _ = null != f ? f : u && X(o) ? "gif" : "jpg";
+  u && J(o) && (_ = "mp4");
+  let p = window.GLOBAL_ENV.CDN_HOST;
+  if (null != p ? ("jpg" === _ && (_ = O ? "webp" : "png"), t = "".concat(location.protocol, "//").concat(p, "/").concat(r, "/").concat(i, "/").concat(o, ".").concat(_)) : t = location.protocol + window.GLOBAL_ENV.API_ENDPOINT + n(i, o, _), "mp4" === _) return t;
   let h = {};
   return null != s && (h.size = (0, l.oO)(s * (0, l.x_)())), null != d && (h.keep_aspect_ratio = d), c && (h.quality = "lossless"), t + "?".concat(a.stringify(h))
 }
@@ -125,7 +125,7 @@ function P(e) {
     discriminator: i,
     bot: o
   } = e, a = arguments.length > 1 && void 0 !== arguments[1] && arguments[1], s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f.IXf, l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
-  if (o && t !== p.fL) {
+  if (o && t !== _.fL) {
     let e = r.BOT_AVATARS[n];
     if (e) return e;
     if (null == n && "0000" === i) return b[0]
@@ -347,7 +347,7 @@ function Y(e) {
     let e = P(i, !1, r);
     if (null != e) return e
   }
-  if (a) return _
+  if (a) return p
 }
 
 function K(e) {
@@ -511,7 +511,7 @@ let en = {
     if (!(0, u.isAndroid)() || !e || "number" == typeof n) return n;
     {
       let e = t(!1);
-      return "number" != typeof e && e.uri === n.uri ? e : [n, E(m({}, e), {
+      return "number" != typeof e && e.uri === n.uri ? e : [n, E(g({}, e), {
         isForceCached: !0
       })]
     }
