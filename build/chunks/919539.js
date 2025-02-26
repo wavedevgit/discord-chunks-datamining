@@ -5,7 +5,7 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(481060),
-  a = n(191237),
+  a = n(168107),
   l = n(430824),
   o = n(626135),
   c = n(63063),
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(695346),
   h = n(639814),
   f = n(838436),
-  N = n(51331),
-  b = n(922628),
+  b = n(51331),
+  N = n(922628),
   x = n(703115),
   _ = n(526761),
   E = n(726985),
@@ -51,7 +51,7 @@ function v(e) {
       a.Z.showAgeVerificationGetStartedModal();
       return
     }
-    t ? A(e) : (n = !e, (0, b.V)({
+    t ? A(e) : (n = !e, (0, N.V)({
       header: O.NW.string(O.t.yAfu1t),
       body: O.NW.string(O.t["Ry2z7+"]),
       confirmText: O.NW.string(O.t.gm1Ven),
@@ -68,7 +68,7 @@ function v(e) {
   return (0, r.jsx)(f.U, {
     setting: E.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: _.FY.MESSAGE_REQUESTS_V2,
-    children: n === j.T ? (0, r.jsx)(N.Z, {
+    children: n === j.T ? (0, r.jsx)(b.Z, {
       title: O.NW.string(O.t["3o2ojo"]),
       value: !S && !I,
       onChange: e => R(e, !1),
@@ -76,7 +76,7 @@ function v(e) {
       note: O.NW.format(O.t.wkm9a2, {
         helpdeskArticle: c.Z.getArticleURL(C.BhN.MESSAGE_REQUESTS)
       })
-    }) : (0, r.jsx)(N.Z, {
+    }) : (0, r.jsx)(b.Z, {
       title: O.NW.string(O.t["3o2ojo"]),
       value: !y,
       onChange: e => R(e, !0),

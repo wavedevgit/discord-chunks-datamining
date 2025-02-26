@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
@@ -17,20 +17,20 @@ var i = n(120356),
   p = n(474936),
   h = n(981631),
   f = n(252435);
-let N = function(e) {
+let b = function(e) {
   let {
     localizedPricingPromo: t,
     smallGap: n
-  } = e, i = t.countryCode, N = (0, a.e7)([o.default], () => o.default.locale);
+  } = e, i = t.countryCode, b = (0, a.e7)([o.default], () => o.default.locale);
   (0, u.U)(h.jXE.SETTINGS_PREMIUM_BANNER, i);
-  let b = (0, a.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription()),
+  let N = (0, a.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription()),
     {
       localizedPricingBannerHeader: x,
       localizedPricingBannerBody: _
     } = (0, d.vB)({
       localizedPricingPromo: t,
-      subscription: b,
-      userLocale: N
+      subscription: N,
+      userLocale: b
     }),
     E = i.toLowerCase() + "Banner";
   return (0, r.jsxs)("div", {

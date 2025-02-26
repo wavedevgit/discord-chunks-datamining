@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
@@ -17,12 +17,12 @@ var i = n(120356),
   p = n(474936),
   h = n(981631),
   f = n(946811);
-let N = function(e) {
+let b = function(e) {
   var t, n;
   let {
     isVisible: i,
-    isFullscreen: N,
-    subscriptionTier: b,
+    isFullscreen: b,
+    subscriptionTier: N,
     isMarketingPageV2: x
   } = e, _ = null === (t = (0, u.N)()) || void 0 === t ? void 0 : t.subscription_trial, E = (0, d.Ng)(), j = (0, d.Wp)(E, p.Si.TIER_2) ? p.Si.TIER_2 : void 0, C = (0, o.q_F)({
     transform: i ? "translateY(-100%)" : "translateY(0%)",
@@ -36,7 +36,7 @@ let N = function(e) {
   }, v = (0, c.ZP)(), S = (0, l.wj)(v);
   return (0, r.jsx)(a.animated.div, {
     className: s()(f.wrapper, {
-      [f.fullscreenWrapper]: N,
+      [f.fullscreenWrapper]: b,
       [f.invisible]: !i
     }),
     style: C,
@@ -46,7 +46,7 @@ let N = function(e) {
         className: s()(f.button, {
           [f.subButton]: S
         }),
-        subscriptionTier: null !== (n = null != b ? b : null == _ ? void 0 : _.sku_id) && void 0 !== n ? n : j,
+        subscriptionTier: null !== (n = null != N ? N : null == _ ? void 0 : _.sku_id) && void 0 !== n ? n : j,
         premiumModalAnalyticsLocation: O,
         isPersistentCTA: !0
       }), (0, r.jsx)(m.Z, {

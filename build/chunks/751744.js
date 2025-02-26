@@ -1,116 +1,116 @@
 /** Chunk was on 82961 **/
 n.d(t, {
-  default: () => N
+  default: () => b
 }), n(266796);
-var o = n(200651),
-  i = n(192379),
-  r = n(442837),
-  s = n(481060),
-  l = n(191237),
-  a = n(138201),
+var r = n(200651),
+  o = n(192379),
+  i = n(442837),
+  a = n(481060),
+  s = n(168107),
+  l = n(138201),
   c = n(331692),
   d = n(103879),
-  x = n(236289),
-  m = n(800530),
-  u = n(388032),
-  h = n(915086);
-let f = [{
-    title: u.NW.string(u.t["1+E7LC"]),
-    description: u.NW.string(u.t.BXiat7)
+  u = n(236289),
+  x = n(800530),
+  f = n(388032),
+  m = n(915086);
+let h = [{
+    title: f.NW.string(f.t["1+E7LC"]),
+    description: f.NW.string(f.t.BXiat7)
   }, {
-    title: u.NW.string(u.t.iMQXtL),
-    description: u.NW.string(u.t.oQ0vws)
+    title: f.NW.string(f.t.iMQXtL),
+    description: f.NW.string(f.t.oQ0vws)
   }, {
-    title: u.NW.string(u.t["oY/z1d"]),
-    description: u.NW.string(u.t.wtj02d)
+    title: f.NW.string(f.t["oY/z1d"]),
+    description: f.NW.string(f.t.wtj02d)
   }],
-  N = function(e) {
+  b = function(e) {
     let {
       onClose: t,
       transitionState: n
-    } = e, N = (0, r.e7)([x.Z], () => x.Z.getAgeVerificationWebviewUrl()), b = (0, r.e7)([x.Z], () => x.Z.getIsLoadingAgeVerification()), _ = i.useCallback(() => {
+    } = e, b = (0, i.e7)([u.Z], () => u.Z.getAgeVerificationWebviewUrl()), N = (0, i.e7)([u.Z], () => u.Z.getIsLoadingAgeVerification()), j = o.useCallback(() => {
       t(), c.Z.close()
-    }, [t]), j = i.useCallback(() => {
-      c.Z.success(), _(), c.Z.start_verification_check()
-    }, [_]);
-    return i.useEffect(() => {
-      "" !== N && l.Z.showAgeVerification({
-        webviewUrl: N,
-        onComplete: j
+    }, [t]), _ = o.useCallback(() => {
+      c.Z.success(), j(), c.Z.start_verification_check()
+    }, [j]);
+    return o.useEffect(() => {
+      "" !== b && s.Z.showAgeVerification({
+        webviewUrl: b,
+        onComplete: _
       })
-    }, [N, j]), (0, o.jsxs)(s.Y0X, {
+    }, [b, _]), (0, r.jsxs)(a.Y0X, {
       transitionState: n,
-      className: h.root,
-      children: [(0, o.jsxs)(s.hzk, {
-        className: h.content,
-        children: [(0, o.jsxs)("div", {
-          className: h.header,
-          children: [(0, o.jsx)(s.X6q, {
+      className: m.root,
+      children: [(0, r.jsxs)(a.hzk, {
+        className: m.content,
+        children: [(0, r.jsxs)("div", {
+          className: m.header,
+          children: [(0, r.jsx)(a.X6q, {
             variant: "heading-xl/bold",
-            children: u.NW.string(u.t["9SDLnp"])
-          }), (0, o.jsx)(s.X6q, {
+            children: f.NW.string(f.t["9SDLnp"])
+          }), (0, r.jsx)(a.X6q, {
             variant: "heading-md/normal",
             color: "header-secondary",
-            children: u.NW.string(u.t["yvx///"])
+            children: f.NW.string(f.t["yvx///"])
           })]
-        }), (0, o.jsx)("div", {
-          className: h.listContent,
-          children: (0, o.jsx)("div", {
-            className: h.table,
-            children: f.map((e, t) => {
+        }), (0, r.jsx)("div", {
+          className: m.listContent,
+          children: (0, r.jsx)("div", {
+            className: m.table,
+            children: h.map((e, t) => {
               let {
                 title: n,
-                description: i
+                description: o
               } = e;
-              return (0, o.jsx)(a.ZP, {
+              return (0, r.jsx)(l.ZP, {
                 title: n,
-                description: i,
+                description: o,
                 index: t,
                 listType: "numbered",
                 titleVariant: "text-md/medium"
               }, t)
             })
           })
-        }), (0, o.jsxs)("div", {
-          className: h.anotherOption,
-          children: [(0, o.jsx)(s.Text, {
+        }), (0, r.jsxs)("div", {
+          className: m.anotherOption,
+          children: [(0, r.jsx)(a.Text, {
             variant: "text-sm/semibold",
-            className: h.optionEyebrow,
+            className: m.optionEyebrow,
             color: "header-secondary",
-            children: u.NW.string(u.t.WPwp1d)
-          }), (0, o.jsx)("div", {
-            className: h.table,
-            children: (0, o.jsx)(a.ZP, {
-              title: u.NW.string(u.t.N9WJMD),
-              description: u.NW.string(u.t["NHq38/"]),
-              buttonText: u.NW.string(u.t["9iy4lJ"]),
-              buttonColor: s.zxk.Colors.PRIMARY,
+            children: f.NW.string(f.t.WPwp1d)
+          }), (0, r.jsx)("div", {
+            className: m.table,
+            children: (0, r.jsx)(l.ZP, {
+              title: f.NW.string(f.t.N9WJMD),
+              description: f.NW.string(f.t["NHq38/"]),
+              buttonText: f.NW.string(f.t["9iy4lJ"]),
+              buttonColor: a.zxk.Colors.PRIMARY,
               titleVariant: "text-md/medium",
-              onButtonPress: () => window.open(m.sQ.AGE_VERIFICATION_LINK, "_blank")
+              onButtonPress: () => window.open(x.sQ.AGE_VERIFICATION_LINK, "_blank")
             })
-          }), (0, o.jsx)("div", {
-            className: h.learnMore,
-            children: (0, o.jsx)(s.X6q, {
+          }), (0, r.jsx)("div", {
+            className: m.learnMore,
+            children: (0, r.jsx)(a.X6q, {
               variant: "heading-sm/medium",
               color: "text-secondary",
-              children: u.NW.format(u.t.ZbWsOD, {
-                learnMoreLink: m.sQ.LEARN_MORE_UU_APPEAL_LINK
+              children: f.NW.format(f.t.ZbWsOD, {
+                learnMoreLink: x.sQ.LEARN_MORE_UU_APPEAL_LINK
               })
             })
           })]
         })]
-      }), (0, o.jsxs)(s.mzw, {
-        className: h.footer,
-        children: [(0, o.jsx)(s.zxk, {
+      }), (0, r.jsxs)(a.mzw, {
+        className: m.footer,
+        children: [(0, r.jsx)(a.zxk, {
           onClick: d.FN,
-          submitting: b,
-          children: u.NW.string(u.t["54b8V1"])
-        }), (0, o.jsx)(s.zxk, {
-          color: s.zxk.Colors.TRANSPARENT,
-          look: s.zxk.Looks.BLANK,
-          onClick: _,
-          className: h.cancelButton,
-          children: u.NW.string(u.t.dKacJy)
+          submitting: N,
+          children: f.NW.string(f.t["54b8V1"])
+        }), (0, r.jsx)(a.zxk, {
+          color: a.zxk.Colors.TRANSPARENT,
+          look: a.zxk.Looks.BLANK,
+          onClick: j,
+          className: m.cancelButton,
+          children: f.NW.string(f.t.dKacJy)
         })]
       })]
     })

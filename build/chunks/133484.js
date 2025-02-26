@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -16,13 +16,13 @@ var r = n(200651),
   p = n(388032),
   h = n(211392),
   f = n(699623),
-  N = n(820350);
+  b = n(820350);
 
-function b(e) {
+function N(e) {
   let {
     user: t,
     showOverlay: n,
-    children: b
+    children: N
   } = e, x = (0, a.ZP)(), {
     analyticsLocations: _
   } = (0, o.ZP)(l.Z.PREMIUM_UPSELL_OVERLAY);
@@ -34,7 +34,7 @@ function b(e) {
   }, [n, _]), n) ? (0, r.jsxs)("div", {
     className: h.upsellOverlayContainer,
     children: [(0, r.jsx)("div", {
-      children: b
+      children: N
     }), (0, r.jsxs)("div", {
       className: h.upsellOverlay,
       children: [(0, r.jsx)("img", {
@@ -45,7 +45,7 @@ function b(e) {
             case m.BRd.DARK:
               return f;
             case m.BRd.LIGHT:
-              return N
+              return b
           }
         }(x)
       }), (0, r.jsxs)("div", {
@@ -67,6 +67,6 @@ function b(e) {
       })]
     })]
   }) : (0, r.jsx)(r.Fragment, {
-    children: b
+    children: N
   })
 }

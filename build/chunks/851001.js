@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(639119),
   h = n(635921),
   f = n(474936),
-  N = n(869783),
-  b = n(388032),
+  b = n(869783),
+  N = n(388032),
   x = n(613995),
   _ = n(839526),
   E = n(4046),
@@ -42,7 +42,7 @@ let C = e => {
         className: x.footerHeader,
         variant: "display-md",
         color: "header-primary",
-        children: b.NW.string(b.t.lEw32t)
+        children: N.NW.string(N.t.lEw32t)
       }), (0, r.jsx)(h.PK, {
         subscriptionTier: null !== (n = null == y ? void 0 : null === (t = y.subscription_trial) || void 0 === t ? void 0 : t.sku_id) && void 0 !== n ? n : I,
         inOfferExperience: A,
@@ -62,7 +62,7 @@ let C = e => {
           ref: R,
           children: (0, r.jsx)("source", {
             src: P ? _.Z : j.Z,
-            type: P ? N.m.MP4 : N.m.WEBM
+            type: P ? b.m.MP4 : b.m.WEBM
           })
         })
       }), (0, r.jsx)("div", {

@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -17,7 +17,7 @@ var r = n(200651),
   h = n(388032),
   f = n(455812);
 
-function N(e) {
+function b(e) {
   let {
     refreshStyles: t = !1
   } = e, n = (0, l.e7)([u.Z], () => u.Z.getExperimentalEncoders());
@@ -33,7 +33,7 @@ function N(e) {
   })
 }
 
-function b(e) {
+function N(e) {
   let {
     refreshStyles: t = !1
   } = e, {
@@ -42,8 +42,8 @@ function b(e) {
   } = (0, l.cj)([u.Z], () => ({
     openH264: u.Z.getOpenH264(),
     hardwareEncoding: u.Z.getHardwareEncoding()
-  })), b = i.useRef(null);
-  (0, m.Z)(b, g.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION);
+  })), N = i.useRef(null);
+  (0, m.Z)(N, g.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION);
   let x = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.F, {
       setting: p.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_OPENH264,
@@ -60,7 +60,7 @@ function b(e) {
         style: {
           scrollMarginTop: "48px"
         },
-        containerRef: b,
+        containerRef: N,
         className: t ? null : a()(f.marginTop8, f.marginBottom20),
         value: s,
         onChange: c.Z.setHardwareEncoding,
@@ -68,7 +68,7 @@ function b(e) {
         hideBorder: t,
         children: h.NW.string(h.t.Sln58f)
       })
-    }), (0, r.jsx)(N, {
+    }), (0, r.jsx)(b, {
       refreshStyles: t
     })]
   });

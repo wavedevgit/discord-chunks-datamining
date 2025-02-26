@@ -21,12 +21,12 @@ function p(e) {
     p = (0, a.e7)([l.Z], () => l.Z.getGuild(null == i ? void 0 : i.guild_id)),
     [h, f] = r.useState(!1),
     {
-      fetchSubscriptionsSettings: N
+      fetchSubscriptionsSettings: b
     } = (0, c.JH)();
   r.useEffect(() => {
-    h && null != p && null == d.Z.getSubscriptionSettings(p.id) && N(p.id)
-  }, [h, p, N]);
-  let b = null == n ? void 0 : function(e) {
+    h && null != p && null == d.Z.getSubscriptionSettings(p.id) && b(p.id)
+  }, [h, p, b]);
+  let N = null == n ? void 0 : function(e) {
     let {
       subscription: t
     } = e, n = s()(t.currentPeriodEnd).format("M/D/YY"), r = null != t.price ? (0, o.T4)(t.price, t.currency) : "", i = s()(t.createdAt).format("M/D/YY"), a = t.status === m.O0b.CANCELED, l = t.status === m.O0b.PAST_DUE, c = null != t.trialId;
@@ -48,6 +48,6 @@ function p(e) {
     handleToggleExpanded: () => f(e => !e),
     listing: n,
     groupListing: i,
-    subscriptionInfo: b
+    subscriptionInfo: N
   }
 }

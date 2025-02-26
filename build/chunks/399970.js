@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 }), n(47120), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -17,19 +17,19 @@ var r = n(200651),
   h = n(455812);
 let f = /^\d+$|^$/;
 
-function N(e) {
+function b(e) {
   let {
     onClose: t,
     transitionState: n
   } = e, {
-    authorizedApplicationId: N,
-    authorizationError: b,
+    authorizedApplicationId: b,
+    authorizationError: N,
     authorizing: x
   } = (0, s.cj)([m.Z], () => ({
     authorizedApplicationId: m.Z.testModeApplicationId,
     authorizationError: m.Z.error,
     authorizing: m.Z.isFetchingAuthorization
-  })), [_, E] = i.useState(null != N ? N : ""), [j, C] = i.useState("8080"), [O, v] = i.useState("localhost"), S = (0, u.Dt)(), T = f.test(_);
+  })), [_, E] = i.useState(null != b ? b : ""), [j, C] = i.useState("8080"), [O, v] = i.useState("localhost"), S = (0, u.Dt)(), T = f.test(_);
   async function I() {
     o.q$();
     let e = function(e, t, n) {
@@ -44,7 +44,7 @@ function N(e) {
     null != await o.Wt(_, e) && t()
   }
   i.useEffect(() => () => l.Z.wait(() => o.q$()), []);
-  let y = null != N && N === _,
+  let y = null != b && b === _,
     A = y ? function() {
       o.mc(), E(""), v(null)
     } : I;
@@ -68,9 +68,9 @@ function N(e) {
         className: h.marginBottom20,
         type: a.R94.Types.DESCRIPTION,
         children: g.NW.string(g.t.a6Vilp)
-      }), null == b ? null : (0, r.jsx)(a.kzN, {
+      }), null == N ? null : (0, r.jsx)(a.kzN, {
         className: h.marginBottom20,
-        children: b
+        children: N
       }), (0, r.jsx)("form", {
         onSubmit: e => {
           e.preventDefault(), A()

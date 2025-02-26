@@ -17,7 +17,7 @@ var r = n(200651),
   h = n(388032),
   f = n(563840);
 
-function N(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function N(e) {
   return e
 }
 
-function b(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function x(e) {
       let {
         default: e
       } = await n.e("59716").then(n.bind(n, 275370));
-      return n => (0, r.jsx)(e, b(N({}, n), {
+      return n => (0, r.jsx)(e, N(b({}, n), {
         currentUser: _,
         otherUser: t
       }))
@@ -67,7 +67,7 @@ function x(e) {
       let {
         default: e
       } = await n.e("958").then(n.bind(n, 4526));
-      return n => (0, r.jsx)(e, b(N({}, n), {
+      return n => (0, r.jsx)(e, N(b({}, n), {
         currentUser: _,
         otherUser: t
       }))
@@ -77,7 +77,7 @@ function x(e) {
       let {
         default: e
       } = await n.e("69015").then(n.bind(n, 247265));
-      return n => (0, r.jsx)(e, b(N({}, n), {
+      return n => (0, r.jsx)(e, N(b({}, n), {
         currentUser: _,
         otherUser: t
       }))

@@ -3,7 +3,7 @@ n.d(t, {
   SI: () => c,
   nS: () => l
 });
-var r = n(191237),
+var r = n(81643),
   i = n(818083);
 let s = (0, i.B)({
     kind: "user",
@@ -85,4 +85,4 @@ let s = (0, i.B)({
       });
     return t.messageRequestOnByDefault || n.messageRequestOnByDefault
   },
-  c = () => r.Z.shouldShowTiggerPawtect() && o("shouldAgeVerifyForDMDefaultOff")
+  c = () => (0, r.sf)() && o("shouldAgeVerifyForDMDefaultOff")

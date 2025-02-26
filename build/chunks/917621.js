@@ -265,6 +265,9 @@ class S extends i.PureComponent {
       children: O.NW.string(O.t["hC/Ze3"]),
       onClick: this.handleInvite,
       disabled: i
+    } : this.isInParty() ? {
+      children: O.NW.string(O.t.KC26NT),
+      disabled: !0
     } : {
       children: this.isActionType(y.mFx.JOIN_REQUEST) ? O.NW.string(O.t["hC/Ze3"]) : O.NW.string(O.t.VJlc0d),
       disabled: !0

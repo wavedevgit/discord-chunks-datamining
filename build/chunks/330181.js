@@ -41,10 +41,10 @@ function p(e) {
     resetRenewalMutation: p,
     submitting: h,
     error: f
-  } = g(l), N = (0, d._k)(t, {
+  } = g(l), b = (0, d._k)(t, {
     includeSoftDeleted: !0
   }), {
-    currentListing: b,
+    currentListing: N,
     nextListing: x
   } = i.useMemo(() => {
     if ((null == n ? void 0 : n.renewalMutations) == null) return {
@@ -54,15 +54,15 @@ function p(e) {
     let e = n.items[0].planId,
       t = n.renewalMutations.items[0].planId;
     return {
-      currentListing: N.find(t => t.subscription_plans[0].id === e),
-      nextListing: N.find(e => e.subscription_plans[0].id === t)
+      currentListing: b.find(t => t.subscription_plans[0].id === e),
+      nextListing: b.find(e => e.subscription_plans[0].id === t)
     }
-  }, [n, N]);
-  if (null == n || null == b || null == x) return null;
+  }, [n, b]);
+  if (null == n || null == N || null == x) return null;
   let _ = a()(n.currentPeriodEnd).format("MMM DD, YYYY");
   return (0, r.jsx)(u.Z, {
     message: m.NW.format(m.t.chw89f, {
-      currentListing: b.name,
+      currentListing: N.name,
       nextListing: x.name,
       changeDate: _
     }),

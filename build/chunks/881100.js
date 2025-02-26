@@ -16,8 +16,8 @@ var r = n(399606),
   p = n(323780),
   h = n(101732),
   f = n(450598),
-  N = n(633030),
-  b = n(97942),
+  b = n(633030),
+  N = n(97942),
   x = n(269987),
   _ = n(548629),
   E = n(507084),
@@ -95,7 +95,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
             onTryItOutClick: t
           })
         },
-        imageSource: b,
+        imageSource: N,
         imageClassName: t.perGuildProfilesImage
       },
       longerMessages: {
@@ -107,7 +107,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       moreGuilds: {
         title: g.NW.string(g.t.Bv8Pfn),
         description: g.NW.string(g.t.JMfaTU),
-        imageSource: B(n, N, w),
+        imageSource: B(n, b, w),
         imageClassName: t.moreGuildsImage
       },
       moreGuildsAlt: {

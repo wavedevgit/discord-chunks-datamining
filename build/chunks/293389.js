@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(320724),
   h = n(297700),
   f = n(77498),
-  N = n(283595),
-  b = n(626135),
+  b = n(283595),
+  N = n(626135),
   x = n(251625),
   _ = n(358085),
   E = n(210887),
@@ -116,7 +116,7 @@ function Z(e) {
     rawGame: n,
     nowPlaying: s = !1,
     isOverride: p
-  } = e, x = (0, l.cj)([g.ZP, f.Z, N.Z], () => (0, g.FZ)(n, [g.ZP, f.Z, N.Z])), [_, E] = i.useState(!1), [v, I] = i.useState(null !== (t = x.name) && void 0 !== t ? t : "???"), P = a()(S.flexCenter, {
+  } = e, x = (0, l.cj)([g.ZP, f.Z, b.Z], () => (0, g.FZ)(n, [g.ZP, f.Z, b.Z])), [_, E] = i.useState(!1), [v, I] = i.useState(null !== (t = x.name) && void 0 !== t ? t : "???"), P = a()(S.flexCenter, {
     [O.game]: !s,
     [O.activeGame]: s,
     [T.card]: !s,
@@ -130,7 +130,7 @@ function Z(e) {
   function Z() {
     if (_) return;
     let e = null != x.id ? f.Z.getDetectableGame(x.id) : null;
-    b.default.track(j.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
+    N.default.track(j.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? void 0 : e.id,
       game_name: x.name
     }), (0, c.showToast)((0, c.createToast)(C.NW.formatToPlainString(C.t["6klMOj"], {

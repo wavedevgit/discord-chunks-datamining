@@ -17,8 +17,8 @@ var i = n(921801),
   p = n(540204),
   h = n(546957),
   f = n(893996),
-  N = n(273927),
-  b = n(864239),
+  b = n(273927),
+  N = n(864239),
   x = n(190014),
   _ = n(301812),
   E = n(988043),
@@ -39,12 +39,12 @@ let S = () => (0, r.jsx)(f.Z, {
   T = () => (0, r.jsxs)(f.Z, {
     title: v.NW.string(v.t.xVRG4O),
     webSetting: C.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-    children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(l.Z, {}), (0, r.jsx)(b.Z, {})]
+    children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(l.Z, {}), (0, r.jsx)(N.Z, {})]
   }),
   I = () => (0, r.jsxs)(f.Z, {
     title: v.NW.string(v.t["1Qn8iY"]),
     webSetting: C.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
-    children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(N.ZP, {})]
+    children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(b.ZP, {})]
   }),
   y = () => {
     let e = v.NW.format(v.t.VaxeGh, {

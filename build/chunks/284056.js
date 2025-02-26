@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(131951),
   h = n(19780),
   f = n(626135),
-  N = n(981631),
-  b = n(388032),
+  b = n(981631),
+  N = n(388032),
   x = n(847164);
 
 function _(e, t, n) {
@@ -53,7 +53,7 @@ class E extends i.PureComponent {
       isMicTesting: !0,
       isDetectingInput: !0,
       didDeafenUser: d
-    }), f.default.track(N.rMx.MIC_TESTING_STARTED, {
+    }), f.default.track(b.rMx.MIC_TESTING_STARTED, {
       input_device_name: t,
       input_device_volume: n,
       output_device_name: r,
@@ -75,7 +75,7 @@ class E extends i.PureComponent {
     if (t) n && r && e && u.Z.toggleSelfDeaf(), u.Z.setLoopback("mic_test", !1), this.setState({
       isMicTesting: !1,
       didDeafenUser: !1
-    }), null != this._micTestStartTime && f.default.track(N.rMx.MIC_TESTING_STOPPED, {
+    }), null != this._micTestStartTime && f.default.track(b.rMx.MIC_TESTING_STOPPED, {
       testing_duration: Math.round((Date.now() - this._micTestStartTime) / 1e3)
     })
   }
@@ -109,9 +109,9 @@ class E extends i.PureComponent {
     } = this.props, {
       isMicTesting: p,
       volume: h
-    } = this.state, f = e && !p ? b.NW.string(b.t["9viE2N"]) : null;
+    } = this.state, f = e && !p ? N.NW.string(N.t["9viE2N"]) : null;
     p && e && !c && this._micTestStop();
-    let N = a.length >= s.length ? a : s;
+    let b = a.length >= s.length ? a : s;
     return (0, r.jsxs)("div", {
       className: x.container,
       children: [(0, r.jsx)(d.vwX, {
@@ -133,7 +133,7 @@ class E extends i.PureComponent {
             size: d.zxk.Sizes.SMALL,
             className: l,
             color: o,
-            children: N
+            children: b
           }), (0, r.jsx)("div", {
             className: x.buttonSizerSpacer
           })]
@@ -240,8 +240,8 @@ function j(e) {
       isDeafened: p.Z.isSelfDeaf()
     }
   }), f = (0, l.e7)([h.Z], () => h.Z.isConnected()), {
-    ref: N,
-    width: b
+    ref: b,
+    width: N
   } = (0, m.Z)();
   return (0, r.jsx)(E, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -264,7 +264,7 @@ function j(e) {
     vadAutoThreshold: o.autoThreshold,
     inputDeviceName: null !== (t = null == i ? void 0 : i.name) && void 0 !== t ? t : "",
     outputDeviceName: null !== (n = null == s ? void 0 : s.name) && void 0 !== n ? n : "",
-    measureButtonRef: N,
-    buttonMinWidth: b
+    measureButtonRef: b,
+    buttonMinWidth: N
   }, e))
 }

@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(695346),
   h = n(546957),
   f = n(838436),
-  N = n(51331),
-  b = n(726985),
+  b = n(51331),
+  N = n(726985),
   x = n(981631),
   _ = n(388032),
   E = n(863939);
@@ -76,7 +76,7 @@ function j() {
       }
       return e
     }, [p]),
-    N = i.useCallback(() => {
+    b = i.useCallback(() => {
       o.Z.open(x.oAB.AUTHORIZED_APPS)
     }, []);
   return (0, r.jsxs)("div", {
@@ -103,7 +103,7 @@ function j() {
     }), (0, r.jsx)("div", {
       className: E.divider
     }), (0, r.jsxs)(l.P3F, {
-      onClick: N,
+      onClick: b,
       className: E.manageGamesLink,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
@@ -122,8 +122,8 @@ function C() {
   let e = p._j.useSetting();
   return (0, r.jsxs)(h.Z, {
     children: [(0, r.jsx)(j, {}), (0, r.jsx)(f.U, {
-      setting: b.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
-      children: (0, r.jsx)(N.Z, {
+      setting: N.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
+      children: (0, r.jsx)(b.Z, {
         title: _.NW.string(_.t["/U8Iwc"]),
         note: _.NW.string(_.t.WO2Hlp),
         value: e,

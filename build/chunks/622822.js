@@ -4,7 +4,7 @@ n.d(t, {
   Yt: () => u,
   bN: () => d
 });
-var r = n(191237),
+var r = n(81643),
   i = n(974814),
   a = n(594174),
   o = n(709054),
@@ -25,6 +25,6 @@ function p() {
   let e = (0, i.s8)({
       location: "age-gate-utils"
     }),
-    t = r.Z.useShouldShowTiggerPawtect();
+    t = (0, r.L5)();
   return e && t
 }

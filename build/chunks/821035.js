@@ -1,12 +1,12 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  P: () => N
+  P: () => b
 }), n(733860);
 var r = n(200651);
 n(192379);
 var i = n(524437),
   s = n(481060),
-  a = n(191237),
+  a = n(168107),
   l = n(247206),
   o = n(294602),
   c = n(880257),
@@ -18,13 +18,13 @@ var i = n(524437),
   h = n(388032),
   f = n(833344);
 
-function N() {
+function b() {
   var e;
   let t = null === (e = (0, c.Z)()) || void 0 === e || e,
     {
       explicitContentGuilds: n,
-      explicitContentFriendDm: N,
-      explicitContentNonFriendDm: b
+      explicitContentFriendDm: b,
+      explicitContentNonFriendDm: N
     } = (0, o.B)(),
     x = e => {
       if ((0, l.Ks)()) {
@@ -61,7 +61,7 @@ function N() {
       titleClassName: f.selectItemTitle,
       children: (0, r.jsx)(s.q4e, {
         options: _,
-        value: N,
+        value: b,
         onChange: e => x({
           explicitContentFriendDm: e
         })
@@ -72,7 +72,7 @@ function N() {
       titleClassName: f.selectItemTitle,
       children: (0, r.jsx)(s.q4e, {
         options: _,
-        value: b,
+        value: N,
         onChange: e => x({
           explicitContentNonFriendDm: e
         })

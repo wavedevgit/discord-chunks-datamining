@@ -17,8 +17,8 @@ var i = n(392711),
   p = n(131951),
   h = n(210887),
   f = n(962100),
-  N = n(65154),
-  b = n(388032),
+  b = n(65154),
+  N = n(388032),
   x = n(710958),
   _ = n(455812);
 
@@ -32,21 +32,21 @@ function E() {
     inputDeviceId: O,
     outputDeviceId: v
   } = (0, a.cj)([p.Z], () => ({
-    canSetInputDevice: p.Z.supports(N.AN.AUDIO_INPUT_DEVICE),
-    canSetOutputDevice: p.Z.supports(N.AN.AUDIO_OUTPUT_DEVICE),
+    canSetInputDevice: p.Z.supports(b.AN.AUDIO_INPUT_DEVICE),
+    canSetOutputDevice: p.Z.supports(b.AN.AUDIO_OUTPUT_DEVICE),
     inputDeviceId: p.Z.getInputDeviceId(),
     outputDeviceId: p.Z.getOutputDeviceId()
   })), S = (0, u.Z)(), T = (0, m.Z)();
   j || (e = (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
     className: _.marginTop8,
-    children: b.NW.format(b.t["1iK6UV"], {
+    children: N.NW.format(N.t["1iK6UV"], {
       onDownloadClick: () => (0, f.y)("Help Text Input Devices")
     })
   })), C || (t = (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
     className: _.marginTop8,
-    children: b.NW.format(b.t.Ow0dbG, {
+    children: N.NW.format(N.t.Ow0dbG, {
       onDownloadClick: () => (0, f.y)("Help Text Output Devices")
     })
   }));
@@ -85,7 +85,7 @@ function E() {
     children: [(0, r.jsx)("div", {
       className: x.column,
       children: (0, r.jsxs)(o.xJW, {
-        title: b.NW.string(b.t.hHMYbW),
+        title: N.NW.string(N.t.hHMYbW),
         children: [(0, r.jsx)(o.q4e, {
           value: O,
           onChange: e => c.Z.setInputDevice(e, {
@@ -110,7 +110,7 @@ function E() {
     }), (0, r.jsx)("div", {
       className: x.column,
       children: (0, r.jsxs)(o.xJW, {
-        title: b.NW.string(b.t.dl18zc),
+        title: N.NW.string(N.t.dl18zc),
         children: [(0, r.jsx)(o.q4e, {
           value: v,
           onChange: e => c.Z.setOutputDevice(e, {

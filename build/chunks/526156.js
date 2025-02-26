@@ -22,11 +22,11 @@ let d = e => {
   } = e, {
     viewableTabs: p,
     filteredTab: h
-  } = (0, o.a)(n, d), f = null != m ? n[m] : null, N = null !== (t = null != f ? f : h) && void 0 !== t ? t : p[0];
+  } = (0, o.a)(n, d), f = null != m ? n[m] : null, b = null !== (t = null != f ? f : h) && void 0 !== t ? t : p[0];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.njP, {
       className: c.tabBar,
-      selectedItem: N.setting,
+      selectedItem: b.setting,
       onItemSelect: e => {
         l.Z.setSection(i, e), null == g || g(e)
       },
@@ -40,13 +40,13 @@ let d = e => {
         children: e.title
       }, e.setting))
     }), (0, r.jsx)(a.njP.Panel, {
-      id: N.setting,
-      "aria-labelledby": N.title,
+      id: b.setting,
+      "aria-labelledby": b.title,
       className: s()(c.tabBarPanel, u),
       children: (e => {
         let t = e.component;
         return "function" == typeof t ? (0, r.jsx)(t, {}) : t
-      })(N)
+      })(b)
     })]
   })
 }

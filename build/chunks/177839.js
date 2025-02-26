@@ -16,10 +16,10 @@ var r = n(200651),
   p = n(477734),
   h = n(626135),
   f = n(881100),
-  N = n(981631),
-  b = n(388032),
+  b = n(981631),
+  N = n(388032),
   x = n(597520);
-let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
+let _ = e => e ? N.NW.string(N.t.QX14gI) : N.NW.string(N.t.RGadQU),
   E = e => {
     let {
       isShowingAll: t,
@@ -28,7 +28,7 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
     return (0, r.jsxs)(o.P3F, {
       onClick: n,
       className: x.customButton,
-      children: [t ? b.NW.string(b.t.maZaNz) : b.NW.string(b.t["37C26e"]), t ? (0, r.jsx)(o.u04, {
+      children: [t ? N.NW.string(N.t.maZaNz) : N.NW.string(N.t["37C26e"]), t ? (0, r.jsx)(o.u04, {
         size: "md",
         color: "currentColor",
         className: x.arrow
@@ -87,7 +87,7 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
     } = e, [s, d] = i.useState(!1), m = (0, f.N)({
       styles: x
     }), g = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), {
-      analyticsLocations: b
+      analyticsLocations: N
     } = (0, u.ZP)(), C = (0, p._f)(), O = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, C ? m.remix : m.videoBackground, m.superReactions, m.stickersPerkDiscoverability, m.badgeAlt];
     return (0, r.jsxs)("div", {
       className: a()(x.perksContainer, t, {
@@ -129,8 +129,8 @@ let _ = e => e ? b.NW.string(b.t.QX14gI) : b.NW.string(b.t.RGadQU),
           }),
           children: (0, r.jsx)(E, {
             onClick: () => {
-              h.default.track(N.rMx.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
-                location_stack: b,
+              h.default.track(b.rMx.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
+                location_stack: N,
                 was_expanded: s
               }), d(!s)
             },

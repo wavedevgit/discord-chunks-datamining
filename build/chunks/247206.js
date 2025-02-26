@@ -25,7 +25,7 @@ n.d(t, {
 }), n(789020);
 var r = n(286379),
   i = n(524437),
-  o = n(191237),
+  o = n(81643),
   a = n(432877),
   s = n(768494),
   l = n(797614),
@@ -361,6 +361,6 @@ let J = (e, t) => null != e && null != t && (e <= E.LN || t <= E.iE);
 
 function $() {
   let e = (0, m.G7)("explicit_media_redaction_utils"),
-    t = o.Z.shouldShowTiggerPawtect();
+    t = (0, o.sf)();
   return e && t
 }

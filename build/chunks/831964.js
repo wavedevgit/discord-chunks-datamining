@@ -17,8 +17,8 @@ var r, i = n(230711),
   p = n(880511),
   h = n(985443),
   f = n(612253),
-  N = n(832287),
-  b = n(872532),
+  b = n(832287),
+  N = n(872532),
   x = n(91342),
   _ = n(181708),
   E = n(821721),
@@ -74,7 +74,7 @@ let w = () => {
         description: m.NW.string(m.t.HMSHeH),
         descriptionCta: m.NW.string(m.t.jVcuVV),
         onClick: n,
-        previewImage: b,
+        previewImage: N,
         videoUrl: g ? I.Z : y.Z
       },
       referralProgram: {
@@ -92,7 +92,7 @@ let w = () => {
         description: m.NW.string(m.t.HC5wVV),
         descriptionCta: m.NW.string(m.t.jVcuVV),
         onClick: r,
-        previewImage: N,
+        previewImage: b,
         videoUrl: g ? E.Z : j.Z
       }
     }, _ = {

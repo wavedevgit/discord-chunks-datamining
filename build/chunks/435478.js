@@ -2,7 +2,7 @@
 n.d(t, {
   Mv: () => h,
   PB: () => f,
-  eq: () => N
+  eq: () => b
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -69,12 +69,12 @@ function h(e) {
     icon: c,
     hint: h,
     renderSubmenu: f
-  } = e, N = p(e, ["id", "label", "icon", "hint", "renderSubmenu"]);
-  let b = (0, a.JA)(t),
+  } = e, b = p(e, ["id", "label", "icon", "hint", "renderSubmenu"]);
+  let N = (0, a.JA)(t),
     {
       onFocus: x
-    } = b,
-    _ = p(b, ["onFocus"]),
+    } = N,
+    _ = p(N, ["onFocus"]),
     {
       id: E
     } = (0, a.f$)(),
@@ -85,7 +85,7 @@ function h(e) {
       C(e === t)
     })
   }, [t, E, O]);
-  let v = e => (0, r.jsxs)(d.kF, g(m({}, e, _, N), {
+  let v = e => (0, r.jsxs)(d.kF, g(m({}, e, _, b), {
     role: "button",
     look: o.zxk.Looks.BLANK,
     innerClassName: u.menuItemInner,
@@ -138,7 +138,7 @@ function f(e) {
   })
 }
 
-function N(e) {
+function b(e) {
   return (0, r.jsx)("div", {
     className: u.submenuPaddingContainer,
     children: (0, r.jsx)(o.v2r, m({

@@ -17,8 +17,8 @@ var i = n(120356),
   p = n(383033),
   h = n(236837),
   f = n(633488),
-  N = n(361848);
-let b = () => {
+  b = n(361848);
+let N = () => {
     let e = (0, d.mq)(m.ne.ACTIVE),
       t = (0, c.Z)(),
       {
@@ -59,11 +59,11 @@ let b = () => {
               children: n
             })]
           })
-        }), (0, r.jsx)(b, {})]
+        }), (0, r.jsx)(N, {})]
       }), (0, r.jsx)("div", {
         className: p.headerImage,
         children: (0, r.jsx)("img", {
-          src: e ? f : N,
+          src: e ? f : b,
           alt: g.NW.string(g.t.ffg6xc)
         })
       })]

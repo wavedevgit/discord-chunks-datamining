@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(4242),
   h = n(996746),
   f = n(711325),
-  N = n(852630),
-  b = n(731994),
+  b = n(852630),
+  N = n(731994),
   x = n(178389);
 
 function _(e) {
@@ -56,7 +56,7 @@ function j() {
   var e;
   let [t, n] = (0, i.useState)(!1), [s, a] = (0, i.useState)(!1), [l, c] = (0, i.useState)(null), m = (0, g.ZP)(e => e.toolsCache), {
     setToolsCache: h,
-    removeToolsCache: N
+    removeToolsCache: b
   } = (0, g.L3)(), {
     setImgCache: j
   } = (0, g.W_)(), y = (0, i.useCallback)(e => {
@@ -70,8 +70,8 @@ function j() {
       src: e
     }))
   }, [m]), A = (0, i.useCallback)(e => {
-    N(e)
-  }, [N]);
+    b(e)
+  }, [b]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: x.controls,
@@ -135,7 +135,7 @@ function j() {
         }), (0, r.jsx)(d.Z, {
           title: "upload image",
           description: "upload the background",
-          icons: b.pA,
+          icons: N.pA,
           onDrop: async e => {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
@@ -299,17 +299,17 @@ function T(e) {
         className: x.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
-      }), (0, r.jsx)(N.Z, {
+      }), (0, r.jsx)(b.Z, {
         nameplate: t
       }), (0, r.jsx)(o.Text, {
         className: x.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(N.Z, {
+        children: [(0, r.jsx)(b.Z, {
           selected: !0,
           nameplate: t
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(b.Z, {
           selected: !0
         })]
       })]

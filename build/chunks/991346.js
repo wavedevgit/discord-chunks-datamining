@@ -20,8 +20,8 @@ var r = n(192379),
   p = n(610697),
   h = n(880257),
   f = n(631885),
-  N = n(223639),
-  b = n(160913),
+  b = n(223639),
+  N = n(160913),
   x = n(725727),
   _ = n(977156),
   E = n(922611),
@@ -79,7 +79,7 @@ function M(e) {
 function U() {
   var e, t, n, a;
   let P = (0, x.YO)().length,
-    k = (0, b.U)(),
+    k = (0, N.U)(),
     W = (0, i.e7)([I.Z], () => I.Z.getProps().impressionSource),
     B = (0, f.gU)(),
     M = (0, w.bC)(),
@@ -107,7 +107,7 @@ function U() {
     location: L.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
   }), {
     enabled: J
-  } = N.Z.useExperiment({
+  } = b.Z.useExperiment({
     location: "UserSettingsInventory"
   }, {
     autoTrackExposure: !0
