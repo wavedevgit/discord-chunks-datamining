@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(906732),
   h = n(878596),
   f = n(313201),
-  b = n(565138),
-  N = n(404203),
+  N = n(565138),
+  b = n(404203),
   x = n(330181),
   _ = n(374649),
   E = n(908951),
@@ -198,9 +198,9 @@ let R = e => {
         className: y.tierName,
         children: [I.NW.format(I.t["5YBAcX"], {
           guildName: null !== (J = null == d ? void 0 : d.name) && void 0 !== J ? J : I.NW.string(I.t.FsYvDw)
-        }), null != d && (0, r.jsx)(b.Z, {
+        }), null != d && (0, r.jsx)(N.Z, {
           guild: d,
-          size: b.Z.Sizes.MINI,
+          size: N.Z.Sizes.MINI,
           className: y.guildIcon
         })]
       })
@@ -211,7 +211,7 @@ let R = e => {
     }));
     return (0, r.jsxs)("div", {
       className: y.container,
-      children: [(0, r.jsx)(N.Z, {
+      children: [(0, r.jsx)(b.Z, {
         onClick: h,
         className: y.headerContainer,
         children: e => {

@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(230711),
   h = n(410030),
   f = n(454585),
-  b = n(163684),
-  N = n(178100),
+  N = n(163684),
+  b = n(178100),
   x = n(518638),
   _ = n(725727),
   E = n(454982),
@@ -44,10 +44,10 @@ function Z(e) {
     [c, u] = i.useState(!1),
     [m, g] = i.useState(!1),
     p = () => u(e => !e),
-    b = (0, h.ZP)(),
-    _ = (0, x.Pz)(n.id, b),
+    N = (0, h.ZP)(),
+    _ = (0, x.Pz)(n.id, N),
     j = null != s,
-    C = (0, N.Z)(n, j);
+    C = (0, b.Z)(n, j);
   j && c ? t = R.NW.format(R.t.pkxVx8, {
     endDate: C,
     onClickDetails: p
@@ -165,18 +165,18 @@ let w = function() {
     })
   }, []);
   let {
-    promotionsLoaded: N,
+    promotionsLoaded: b,
     activeOutboundPromotions: x,
     claimedEndedOutboundPromotions: E,
     claimedOutboundPromotionCodeMap: w,
     addClaimedOutboundPromotionCode: k
-  } = (0, _.lG)(), W = x.length + E.length > 0, L = b.g.useExperiment({
+  } = (0, _.lG)(), W = x.length + E.length > 0, L = N.g.useExperiment({
     location: "EntitlementGifts"
   }, {
     autoTrackExposure: !1,
     disable: s
   }).enabled && W;
-  return h && N ? (0, r.jsxs)(r.Fragment, {
+  return h && b ? (0, r.jsxs)(r.Fragment, {
     children: [function() {
       var e;
       let t = n.find(e => e.giftCodeBatchId === P.m8 && !e.consumed),

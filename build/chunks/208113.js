@@ -28,7 +28,7 @@ function p(e) {
     legacyAudioSubsystemSupported: o.Z.supports(u.AN.LEGACY_AUDIO_SUBSYSTEM),
     experimentalAudioSubsystemSupported: o.Z.supports(u.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM),
     automaticAudioSubsystemSupported: o.Z.supports(u.AN.AUTOMATIC_AUDIO_SUBSYSTEM)
-  })), b = (0, r.jsx)(s.q4e, {
+  })), N = (0, r.jsx)(s.q4e, {
     className: g.marginBottom20,
     value: n,
     options: function(e, t, n) {
@@ -55,11 +55,11 @@ function p(e) {
     setting: d.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
     children: t ? (0, r.jsx)(s.xJW, {
       title: m.NW.string(m.t.wVBHr6),
-      children: b
+      children: N
     }) : (0, r.jsxs)(s.hjN, {
       className: g.marginBottom20,
       title: m.NW.string(m.t.wVBHr6),
-      children: [b, (0, r.jsx)(s.$i$, {
+      children: [N, (0, r.jsx)(s.$i$, {
         className: g.marginBottom20
       })]
     })

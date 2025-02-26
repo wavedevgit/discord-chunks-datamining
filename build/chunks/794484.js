@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(675619),
   h = n(119850),
   f = n(32173),
-  b = n(391110),
-  N = n(75077),
+  N = n(391110),
+  b = n(75077),
   x = n(320319),
   _ = n(276671);
 let E = e => {
@@ -50,14 +50,14 @@ let E = e => {
     var t, n;
     let {
       className: s,
-      variant: j = b.R0.PERKS_DISCOVERABILITY,
+      variant: j = N.R0.PERKS_DISCOVERABILITY,
       noBackground: C = !1,
       leftAlignHeaders: O = !1,
       showAllPerksButton: v,
       headerClassname: S,
       isFullScreen: T = !0,
       shouldAutoScroll: I = !1
-    } = e, y = i.useRef(null), A = (0, m.yQ)(), P = (0, g.vi)(A), R = (0, d.ZP)("perks-discoverability"), D = j === b.R0.WHATS_NEW, Z = (0, m.IY)(), w = (0, h.x)();
+    } = e, y = i.useRef(null), A = (0, m.yQ)(), P = (0, g.vi)(A), R = (0, d.ZP)("perks-discoverability"), D = j === N.R0.WHATS_NEW, Z = (0, m.IY)(), w = (0, h.x)();
     i.useEffect(() => {
       D && !P && (Z(), w())
     }, [Z, w, D, P]);
@@ -71,14 +71,14 @@ let E = e => {
       onScrollEnd: k,
       onCleanup: k
     });
-    let L = (0, N.Op)(D),
+    let L = (0, b.Op)(D),
       B = (0, f.Z)(),
-      M = (0, N.mN)(),
+      M = (0, b.mN)(),
       {
         fractionalState: U
       } = (0, c.Z)(),
       V = (0, u.W)(),
-      G = (0, N.sP)({
+      G = (0, b.sP)({
         perksCards: B,
         variant: j,
         shopMarketingVariation: R,

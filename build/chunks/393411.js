@@ -18,8 +18,8 @@ var i = n(120356),
   p = n(963249),
   h = n(301766),
   f = n(509545),
-  b = n(931331),
-  N = n(754347),
+  N = n(931331),
+  b = n(754347),
   x = n(122289),
   _ = n(74538),
   E = n(212895),
@@ -157,7 +157,7 @@ function M(e) {
 function U() {
   return (0, r.jsxs)("div", {
     className: D.wordMark,
-    children: [(0, r.jsx)(N.Z, {
+    children: [(0, r.jsx)(b.Z, {
       className: D.discordWordmark,
       "aria-label": R.NW.string(R.t["FSOz7+"])
     }), (0, r.jsx)("div", {
@@ -300,7 +300,7 @@ let G = function(e) {
     case A.p9.TIER_0:
       ed = (0, r.jsxs)("div", {
         className: D.wordMark,
-        children: [(0, r.jsx)(N.Z, {
+        children: [(0, r.jsx)(b.Z, {
           className: D.discordWordmark,
           "aria-label": R.NW.string(R.t["t9uG/v"])
         }), (0, r.jsx)("div", {
@@ -312,7 +312,7 @@ let G = function(e) {
       ed = (0, r.jsx)(U, {});
       break;
     case A.p9.TIER_2:
-      ed = (0, r.jsx)(b.Z, {
+      ed = (0, r.jsx)(N.Z, {
         className: D.planName,
         "aria-label": R.NW.string(R.t.lpNrPj)
       })

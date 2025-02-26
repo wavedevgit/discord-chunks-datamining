@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -17,7 +17,7 @@ var r = n(200651),
   h = n(388032),
   f = n(455812);
 
-function b() {
+function N() {
   return (0, r.jsx)(o.ToO, {
     type: o.sje.PRIMARY,
     title: h.NW.string(h.t.XLw6FB),
@@ -31,10 +31,10 @@ function b() {
   })
 }
 
-function N(e) {
+function b(e) {
   let {
     refreshStyles: t = !1
-  } = e, n = (0, l.e7)([d.Z], () => d.Z.supports(p.AN.VIDEO)), [s, u] = i.useState(!1), N = (0, r.jsxs)(r.Fragment, {
+  } = e, n = (0, l.e7)([d.Z], () => d.Z.supports(p.AN.VIDEO)), [s, u] = i.useState(!1), b = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.F, {
       setting: g.s6.VOICE_AND_VIDEO_VIDEO_CAMERA,
       children: (0, r.jsx)(m.Z, {
@@ -42,16 +42,16 @@ function N(e) {
         onEnablePreview: () => u(!0),
         onCancelPreview: () => u(!1)
       })
-    }), !n && (0, r.jsx)(b, {})]
+    }), !n && (0, r.jsx)(N, {})]
   });
-  return t ? N : (0, r.jsxs)(r.Fragment, {
+  return t ? b : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.y5t, {
       component: (0, r.jsx)(o.vwX, {
         tag: o.RB0.H1,
         className: f.marginBottom20,
         children: h.NW.string(h.t.LKzQSE)
       }),
-      children: N
+      children: b
     }), (0, r.jsx)(o.$i$, {
       className: a()(f.marginBottom40, f.marginTop40)
     })]

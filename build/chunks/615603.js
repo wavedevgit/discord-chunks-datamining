@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(760558),
   h = n(401786),
   f = n(450468),
-  b = n(98278),
-  N = n(314684),
+  N = n(98278),
+  b = n(314684),
   x = n(594174),
   _ = n(78839),
   E = n(267642),
@@ -150,7 +150,7 @@ let W = function(e) {
     fractionalPremiumState: h
   } = e, f = (0, o.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()), v = (null == f ? void 0 : f.isPausedOrPausePending) === !0, {
     fractionalState: S
-  } = (0, u.Z)(), W = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), L = (0, o.e7)([x.default], () => x.default.getCurrentUser()), B = (0, N.Vp)(), M = S === I.a$.FP_SUB_PAUSED, U = S !== I.a$.NONE, V = v && !M, {
+  } = (0, u.Z)(), W = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), L = (0, o.e7)([x.default], () => x.default.getCurrentUser()), B = (0, b.Vp)(), M = S === I.a$.FP_SUB_PAUSED, U = S !== I.a$.NONE, V = v && !M, {
     appliedGuildBoostSlots: G,
     unappliedGuildBoostSlots: F,
     numActiveGuildBoostSlots: H,
@@ -192,7 +192,7 @@ let W = function(e) {
         className: P.headerLearnMoreLink,
         tag: "span",
         onClick: () => {
-          (0, b.z)()
+          (0, N.z)()
         },
         children: e
       }, t);

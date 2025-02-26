@@ -17,8 +17,8 @@ var i = n(924628),
   p = n(402583),
   h = n(230341),
   f = n(893996),
-  b = n(266132),
-  N = n(726985),
+  N = n(266132),
+  b = n(726985),
   x = n(388032);
 
 function _() {
@@ -32,15 +32,15 @@ function _() {
     description: x.NW.format(x.t["/6sFWV"], {
       helpArticle: (0, l.uV)()
     }),
-    webSetting: N.s6.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-    children: [(0, r.jsx)(h.Z, {}), (0, r.jsx)(b.Z, {})]
+    webSetting: b.s6.PRIVACY_AND_SAFETY_VOICE_SECURITY,
+    children: [(0, r.jsx)(h.Z, {}), (0, r.jsx)(N.Z, {})]
   }) : null
 }
 
 function E() {
   return (0, r.jsx)(f.Z, {
     title: x.NW.string(x.t.BG7Qsb),
-    webSetting: N.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
+    webSetting: b.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
     children: (0, r.jsx)(d.Z, {})
   })
 }
@@ -48,7 +48,7 @@ function E() {
 function j() {
   return (0, r.jsxs)(f.Z, {
     title: x.NW.string(x.t.SRZyHh),
-    webSetting: N.s6.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
+    webSetting: b.s6.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
     children: [(0, r.jsx)(p.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(u.Z, {})]
   })
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 }), n(47120), n(266796), n(26686), n(653041), n(230036);
 var r = n(200651),
   i = n(192379),
@@ -23,7 +23,7 @@ function f(e, t) {
   }))
 }
 
-function b() {
+function N() {
   let e = (0, l.cj)([d.Z], () => d.Z.getAllExperimentOverrideDescriptors()),
     t = (0, l.cj)([d.Z], () => d.Z.getRegisteredExperiments()),
     [n, s] = i.useState(""),
@@ -37,7 +37,7 @@ function b() {
       onChange: s,
       onClear: () => s("")
     }), a.length > 0 ? a.map(t => {
-      let n = t.experiment.type === p.xY.GUILD ? x : N;
+      let n = t.experiment.type === p.xY.GUILD ? x : b;
       return (0, r.jsx)(n, {
         experiment: t.experiment,
         experimentId: t.id,
@@ -53,13 +53,13 @@ function b() {
   })
 }
 
-function N(e) {
+function b(e) {
   var t;
   let {
     experiment: n,
     experimentId: s,
     overrideDescriptor: u
-  } = e, [m, g] = i.useState(null != u), [b, N] = i.useState(!1), x = i.useCallback(() => {
+  } = e, [m, g] = i.useState(null != u), [N, b] = i.useState(!1), x = i.useCallback(() => {
     g(e => !e)
   }, []), _ = (0, l.e7)([d.Z], () => d.Z.getUserExperimentDescriptor(s)), E = (0, l.e7)([d.Z], () => d.Z.getLoadedUserExperiment(s)), j = (0, l.Wu)([d.Z], () => a().sortBy(d.Z.getRecentExposures(p.xY.USER, s), e => {
     let [t, n] = e;
@@ -116,7 +116,7 @@ function N(e) {
           type: o.geA.DESCRIPTION,
           children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
         }) : null]
-      }), b ? (0, r.jsxs)("div", {
+      }), N ? (0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.vwX, {
           tag: "h5",
           className: h.debugTitle,
@@ -146,7 +146,7 @@ function N(e) {
         className: h.debugButton,
         size: o.zxk.Sizes.SMALL,
         look: o.zxk.Looks.BLANK,
-        onClick: () => N(!0),
+        onClick: () => b(!0),
         children: "More Details \xbb"
       })]
     }), (0, r.jsx)(o.$i$, {
@@ -165,7 +165,7 @@ function x(e) {
     experiment: t,
     experimentId: n,
     overrideDescriptor: s
-  } = e, [m, g] = i.useState(null != s), [b, N] = i.useState(!1), x = i.useCallback(() => {
+  } = e, [m, g] = i.useState(null != s), [N, b] = i.useState(!1), x = i.useCallback(() => {
     g(e => !e)
   }, []), _ = (0, l.e7)([d.Z], () => d.Z.getLoadedGuildExperiment(n)), E = (0, l.Wu)([d.Z], () => a().sortBy(d.Z.getRecentExposures(p.xY.GUILD, n), e => {
     let [t, n] = e;
@@ -234,7 +234,7 @@ function x(e) {
           type: o.geA.DESCRIPTION,
           children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
         }) : null]
-      }), b ? (0, r.jsxs)("div", {
+      }), N ? (0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.vwX, {
           tag: "h5",
           className: h.debugTitle,
@@ -272,7 +272,7 @@ function x(e) {
         className: h.debugButton,
         size: o.zxk.Sizes.SMALL,
         look: o.zxk.Looks.BLANK,
-        onClick: () => N(!0),
+        onClick: () => b(!0),
         children: "More Details \xbb"
       })]
     }), (0, r.jsx)(o.$i$, {

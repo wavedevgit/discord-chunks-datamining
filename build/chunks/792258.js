@@ -23,22 +23,22 @@ let p = [18, 18, 16, 16, 14, 12, 10],
     let i = n.hasFeature(u.oNc.VERIFIED) || n.hasFeature(u.oNc.PARTNERED),
       h = n.toString(),
       f = n.getIconURL(40, !0),
-      b = null,
-      N = p[p.length - 1];
+      N = null,
+      b = p[p.length - 1];
     if (null == n.icon && null != h) {
       var x;
-      N = null !== (x = p[(b = (0, a.Zg)(h)).length - 1]) && void 0 !== x ? x : p[p.length - 1]
+      b = null !== (x = p[(N = (0, a.Zg)(h)).length - 1]) && void 0 !== x ? x : p[p.length - 1]
     }
     return (0, r.jsxs)("div", {
       className: g.container,
       children: [(0, r.jsxs)("div", {
         style: {
-          fontSize: N
+          fontSize: b
         },
-        children: [null != b ? (0, r.jsx)("div", {
+        children: [null != N ? (0, r.jsx)("div", {
           className: s()(g.childWrapper, g.acronym),
           "aria-hidden": !0,
-          children: b
+          children: N
         }) : null, null != f ? (0, r.jsx)(o.qEK, {
           src: n.getIconURL(40, !0),
           size: o.EFr.SIZE_40,

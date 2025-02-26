@@ -33,19 +33,19 @@ function h(e) {
     })
   }, 20), [n, s]);
   i.useEffect(() => (window.addEventListener("mousemove", f), () => window.removeEventListener("mousemove", f)), [f]);
-  let [b, N] = (0, u.q_F)(() => ({
+  let [N, b] = (0, u.q_F)(() => ({
     x: 0,
     y: 0,
     config: p
   }));
   return i.useEffect(() => {
-    N({
+    b({
       x: l.x,
       y: l.y
     })
-  }, [l.x, l.y, N]), (0, r.jsx)(c.animated.div, {
+  }, [l.x, l.y, b]), (0, r.jsx)(c.animated.div, {
     style: {
-      transform: (0, c.to)([b.x, b.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
+      transform: (0, c.to)([N.x, N.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
     },
     className: a()(g.background, t)
   })

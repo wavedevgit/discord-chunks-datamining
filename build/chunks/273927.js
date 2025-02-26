@@ -18,8 +18,8 @@ var r = n(200651),
   p = n(63063),
   h = n(838436),
   f = n(526761),
-  b = n(726985),
-  N = n(981631),
+  N = n(726985),
+  b = n(981631),
   x = n(388032),
   _ = n(280841);
 
@@ -57,11 +57,11 @@ function j(e) {
   let {
     userId: n,
     last: s
-  } = e, p = (0, l.e7)([m.Z], () => m.Z.isBlocked(n)), h = (0, l.e7)([g.default], () => g.default.getUser(n)), [f, b] = i.useState(!1), N = i.useCallback(() => {
-    b(!0), p ? c.Z.unblockUser(n).catch(() => {
-      b(!1)
+  } = e, p = (0, l.e7)([m.Z], () => m.Z.isBlocked(n)), h = (0, l.e7)([g.default], () => g.default.getUser(n)), [f, N] = i.useState(!1), b = i.useCallback(() => {
+    N(!0), p ? c.Z.unblockUser(n).catch(() => {
+      N(!1)
     }) : c.Z.unignoreUser(n, u.Z.USER_SETTINGS).catch(() => {
-      b(!1)
+      N(!1)
     })
   }, [p, n]);
   return null == h ? null : (0, r.jsxs)("div", {
@@ -87,7 +87,7 @@ function j(e) {
       })]
     }), (0, r.jsx)(o.zxk, {
       color: o.Ttl.PRIMARY,
-      onClick: N,
+      onClick: b,
       submitting: f,
       children: x.NW.string(p ? x.t.XyHpKC : x.t["8wXU9P"])
     })]
@@ -136,7 +136,7 @@ function C(e) {
 function O() {
   let e = (0, l.Wu)([m.Z], () => m.Z.getBlockedIDs());
   return (0, r.jsx)(C, {
-    setting: b.s6.BLOCKED_USERS,
+    setting: N.s6.BLOCKED_USERS,
     userIds: e,
     listType: "blocked"
   })
@@ -145,7 +145,7 @@ function O() {
 function v() {
   let e = (0, l.Wu)([m.Z], () => m.Z.getIgnoredIDs());
   return (0, r.jsx)(C, {
-    setting: b.s6.IGNORED_USERS,
+    setting: N.s6.IGNORED_USERS,
     userIds: e,
     listType: "ignored"
   })
@@ -153,13 +153,13 @@ function v() {
 
 function S() {
   return (0, r.jsxs)(h.U, {
-    setting: b.s6.RESTRICTED_USERS,
+    setting: N.s6.RESTRICTED_USERS,
     scrollPosition: f.FY.RESTRICTED_ACCOUNTS,
     scrollHighlightDelay: 900,
     children: [(0, r.jsx)(h.H, {
       header: x.NW.string(x.t["3wRorq"]),
       description: x.NW.format(x.t["0aNQo6"], {
-        helpArticle: p.Z.getArticleURL(N.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
+        helpArticle: p.Z.getArticleURL(b.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
       })
     }), (0, r.jsx)(O, {}), (0, r.jsx)(v, {})]
   })

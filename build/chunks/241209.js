@@ -14,9 +14,9 @@ var r, i, s = n(200651),
   p = n(428595),
   h = n(532901),
   f = n(663908),
-  b = n(28149);
+  N = n(28149);
 
-function N(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,7 +32,7 @@ function x(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -118,7 +118,7 @@ let C = _(x({}, d().defaultRules), {
       react(e, t, r) {
         let i = () => (0, s.jsx)("pre", {
           children: (0, s.jsx)("code", {
-            className: o()(b.scrollbarGhostHairline, "hljs"),
+            className: o()(N.scrollbarGhostHairline, "hljs"),
             children: j(e)
           })
         }, r.key);
@@ -132,7 +132,7 @@ let C = _(x({}, d().defaultRules), {
               let n = t.highlight(e.lang, e.content, !0);
               return null == n ? i() : (0, s.jsx)("pre", {
                 children: (0, s.jsx)("code", {
-                  className: o()(b.scrollbarGhostHairline, "hljs", n.language),
+                  className: o()(N.scrollbarGhostHairline, "hljs", n.language),
                   dangerouslySetInnerHTML: {
                     __html: n.value
                   }
@@ -163,7 +163,7 @@ class S extends(i = a.PureComponent) {
     })
   }
 }
-N(S, "rules", C), N(S, "defaultProps", {
+b(S, "rules", C), b(S, "defaultProps", {
   parser: O,
   output: v
 });

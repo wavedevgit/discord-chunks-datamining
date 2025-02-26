@@ -31,7 +31,7 @@ function u(e) {
       }
       return i
     }(e, ["children", "lineClamp"]);
-  let [p, h] = i.useState(!1), [f, b] = i.useState(null), N = null != f && (0, r.jsx)("button", {
+  let [p, h] = i.useState(!1), [f, N] = i.useState(null), b = null != f && (0, r.jsx)("button", {
     className: d.button,
     onClick: () => h(e => !e),
     children: (0, r.jsxs)(o.Text, {
@@ -52,7 +52,7 @@ function u(e) {
       scrollHeight: e,
       clientHeight: t
     } = x;
-    e > t && b({
+    e > t && N({
       truncatedHeight: t,
       expandedHeight: e
     })
@@ -96,6 +96,6 @@ function u(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), N]
+    }), t)), b]
   })
 }

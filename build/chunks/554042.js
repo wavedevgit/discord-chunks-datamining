@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(304761),
   h = n(865427),
   f = n(358085),
-  b = n(210887),
-  N = n(981631),
+  N = n(210887),
+  b = n(981631),
   x = n(388032),
   _ = n(602512);
 let E = [{
@@ -47,8 +47,8 @@ function j() {
   let [e, t] = i.useState(Math.round(window.outerWidth / window.innerWidth * 100)), {
     platformZoom: n,
     theme: s
-  } = (0, l.cj)([b.Z, g.Z], () => ({
-    theme: b.Z.theme,
+  } = (0, l.cj)([N.Z, g.Z], () => ({
+    theme: N.Z.theme,
     platformZoom: g.Z.zoom
   })), [j, C] = i.useState("upright"), O = ["normal", "medium", "semibold", "bold", "extrabold"], v = new Map([
     ["normal", 400],
@@ -129,10 +129,10 @@ function j() {
             orientation: "horizontal",
             options: [{
               name: x.NW.string(x.t.b8Cei4),
-              value: N.BRd.DARK
+              value: b.BRd.DARK
             }, {
               name: x.NW.string(x.t.K2sFfn),
-              value: N.BRd.LIGHT
+              value: b.BRd.LIGHT
             }],
             onChange: e => {
               (0, d.ZI)({

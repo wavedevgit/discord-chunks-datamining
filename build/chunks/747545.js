@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(906732),
   h = n(920321),
   f = n(921801),
-  b = n(695346),
-  N = n(716161),
+  N = n(695346),
+  b = n(716161),
   x = n(938117),
   _ = n(131951),
   E = n(626135),
@@ -62,7 +62,7 @@ function y(e) {
   } = (0, c.cj)([_.Z], () => ({
     currentDeviceId: _.Z.getVideoDeviceId(),
     isVideoAvailable: _.Z.isVideoAvailable()
-  })), k = (0, h.Z)(), W = b.qF.useSetting(), L = Object.values(k).map(e => {
+  })), k = (0, h.Z)(), W = N.qF.useSetting(), L = Object.values(k).map(e => {
     let {
       id: t,
       name: n
@@ -73,7 +73,7 @@ function y(e) {
     }
   });
   return i.useEffect(() => {
-    (0, N.XV)()
+    (0, b.XV)()
   }, []), (0, r.jsxs)(r.Fragment, {
     children: [y(Z), _.Z.isEnabled() ? null : (0, r.jsx)(u.Text, {
       className: S.permissionWarning,
@@ -86,7 +86,7 @@ function y(e) {
       className: S.previewToggle,
       note: v.NW.string(v.t.WNbX4O),
       onChange: e => {
-        b.qF.updateSetting(e), E.default.track(C.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+        N.qF.updateSetting(e), E.default.track(C.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e
         })
       },

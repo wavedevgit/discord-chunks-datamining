@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(607070),
   h = n(627845),
   f = n(600164),
-  b = n(313201),
-  N = n(786761),
+  N = n(313201),
+  b = n(786761),
   x = n(3148),
   _ = n(739566),
   E = n(753206),
@@ -71,9 +71,9 @@ function U(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let V = (0, b.hQ)(),
-  G = (0, b.hQ)(),
-  F = (0, b.hQ)(),
+let V = (0, N.hQ)(),
+  G = (0, N.hQ)(),
+  F = (0, N.hQ)(),
   H = o().debounce(e => {
     (0, g.o2)(e)
   }, 250),
@@ -135,7 +135,7 @@ function Y(e) {
 function K() {
   let e = I.jU.useSetting(),
     [t] = i.useState(() => {
-      let e = (0, N.e5)(U(M({}, (0, x.ZP)({
+      let e = (0, b.e5)(U(M({}, (0, x.ZP)({
         channelId: "1337",
         content: k.NW.formatToPlainString(k.t.bB80LC, {
           previewLink: "https://discord.com/accessibility"

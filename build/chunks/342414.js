@@ -17,8 +17,8 @@ var i = n(120356),
   p = n(775412),
   h = n(695349),
   f = n(520540),
-  b = n(501862),
-  N = n(533525),
+  N = n(501862),
+  b = n(533525),
   x = n(197115),
   _ = n(823188),
   E = n(184176),
@@ -156,7 +156,7 @@ let P = e => {
       location: n
     } = e, {
       analyticsLocations: i
-    } = (0, o.ZP)(l.Z.PREMIUM_MARKETING_HERO_CTA), a = (0, h.W)(), m = (0, p._O)(), f = S.NW.string(S.t.qYKftb), x = (0, N.b)(n), E = (0, j.pn)(n), C = (0, r.jsx)(P, {
+    } = (0, o.ZP)(l.Z.PREMIUM_MARKETING_HERO_CTA), a = (0, h.W)(), m = (0, p._O)(), f = S.NW.string(S.t.qYKftb), x = (0, b.b)(n), E = (0, j.pn)(n), C = (0, r.jsx)(P, {
       className: t
     }), I = S.NW.string(S.t.ifwQZW), y = !1, {
       fractionalState: w,
@@ -180,7 +180,7 @@ let P = e => {
           var t, n;
           return (0, r.jsx)("div", (t = A({}, e), n = n = {
             className: T.pillContainer,
-            children: (0, r.jsx)(b.Z, {
+            children: (0, r.jsx)(N.Z, {
               countdownText: W,
               showInfoIcon: !0
             })

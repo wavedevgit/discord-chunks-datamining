@@ -25,7 +25,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function b(e) {
   return e
 }
 
-function N(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ class x extends i.Component {
         location: e
       }
     } = this.props;
-    return N(b({}, e), {
+    return b(N({}, e), {
       object: g.qAy.BUTTON_CTA
     })
   }
@@ -136,7 +136,7 @@ class x extends i.Component {
         }), Error("Cannnot redeem promotion code as gift");
         u.default.track(g.rMx.OPEN_MODAL, {
           type: "gift_accept",
-          location: N(b({}, this.analyticsLocation), {
+          location: b(N({}, this.analyticsLocation), {
             object: g.qAy.BUTTON_CTA
           })
         }), (0, c.V)({

@@ -62,8 +62,8 @@ function g(e) {
     icon: p,
     iconPosition: h = "end",
     iconOpticalOffsetMargin: f = 0,
-    focusProps: b
-  } = e, N = function(e, t) {
+    focusProps: N
+  } = e, b = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -101,11 +101,11 @@ function g(e) {
       size: m[i]
     })
   }
-  return (0, r.jsx)(a.t, d(c({}, b), {
+  return (0, r.jsx)(a.t, d(c({}, N), {
     children: (0, r.jsxs)("button", d(c({
       role: t,
       className: s()(o.button, o[i], o[n])
-    }, N), {
+    }, b), {
       children: [null != p && "start" === h && (0, r.jsx)(x, {}), (0, r.jsx)(l.x, {
         tag: "span",
         variant: u[i],

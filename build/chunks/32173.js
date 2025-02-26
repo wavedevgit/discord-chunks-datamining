@@ -16,8 +16,8 @@ var r, i = n(200651),
   p = n(779618),
   h = n(832149),
   f = n(300284),
-  b = n(703656),
-  N = n(547972),
+  N = n(703656),
+  b = n(547972),
   x = n(131951),
   _ = n(594174),
   E = n(78839),
@@ -70,8 +70,8 @@ var r, i = n(200651),
   ep = n(637810),
   eh = n(570423),
   ef = n(912429),
-  eb = n(91394),
-  eN = n(209672),
+  eN = n(91394),
+  eb = n(209672),
   ex = n(698173),
   e_ = n(926262),
   eE = n(482668),
@@ -123,7 +123,7 @@ let eS = () => {
       })
     },
     eK = () => {
-      (0, b.uL)(G.Z5c.COLLECTIBLES_SHOP)
+      (0, N.uL)(G.Z5c.COLLECTIBLES_SHOP)
     },
     eq = () => {
       o.Z.open(G.oAB.APPEARANCE, null, {
@@ -153,7 +153,7 @@ let eS = () => {
         descriptionCta: ek ? z.NW.string(z.t.jVcuVV) : z.NW.string(z.t.hvVgAQ),
         pillText: z.NW.string(z.t.EYxi0t),
         onCtaClick: ek ? () => {
-          (0, N.Z)(H.Z.CLIPS, {
+          (0, b.Z)(H.Z.CLIPS, {
             openWithoutBackstack: !0,
             analyticsLocations: e
           })
@@ -347,7 +347,7 @@ let eS = () => {
         title: z.NW.string(z.t["6S7kOz"]),
         subtitle: z.NW.string(z.t.kN1JRE),
         description: z.NW.string(z.t.e7FKCg),
-        perkImage: eN
+        perkImage: eb
       },
       upcomingDropUntimed: {
         name: "upcomingDropUntimed",
@@ -415,7 +415,7 @@ let eS = () => {
         name: "hdVideo",
         title: z.NW.string(z.t.RSXQYG),
         subtitle: z.NW.string(z.t.ymCPxs),
-        perkImage: eb,
+        perkImage: eN,
         description: z.NW.string(z.t["4WgB//"])
       },
       newAppStylesUpdateJune2024: {

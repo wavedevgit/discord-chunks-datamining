@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(335131),
   h = n(874703),
   f = n(410154),
-  b = n(302800),
-  N = n(981631),
+  N = n(302800),
+  b = n(981631),
   x = n(474936),
   _ = n(388032),
   E = n(661837),
@@ -68,8 +68,8 @@ let O = e => {
       title: () => v.title,
       description: () => v.body,
       revertTextColor: v.revertTextColor
-    } : b.GX[C], i.useEffect(() => {
-      g.default.track(N.rMx.PREMIUM_UPSELL_VIEWED, {
+    } : N.GX[C], i.useEffect(() => {
+      g.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, {
         type: x.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
         location_stack: n,
         version: null == v ? void 0 : v.version

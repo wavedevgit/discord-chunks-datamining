@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,13 +16,13 @@ var r = n(200651),
   p = n(594174),
   h = n(981631),
   f = n(388032),
-  b = n(839627);
+  N = n(839627);
 
-function N(e) {
+function b(e) {
   let {
     previewEnabled: t,
     onEnablePreview: n,
-    onCancelPreview: N
+    onCancelPreview: b
   } = e, x = g.Z.getCameraComponent(), [_, E] = i.useState((0, c.P)(p.default.getCurrentUser())), j = i.useRef(!1), C = i.useRef(_), O = (0, o.O)(), v = (0, s.e7)([g.Z], () => g.Z.isVideoAvailable());
   return i.useEffect(() => () => {
     j.current && l.Z.wait(() => (0, d.Up)(C.current))
@@ -33,11 +33,11 @@ function N(e) {
         location: O.location
       }).catch(h.dG4)
     },
-    onCancelPreview: N,
+    onCancelPreview: b,
     renderCamera: e => t ? (0, r.jsx)("div", {
-      className: b.cameraWrapper,
+      className: N.cameraWrapper,
       children: (0, r.jsxs)("div", {
-        className: b.camera,
+        className: N.camera,
         children: [(0, r.jsx)(x, {
           deviceId: e,
           width: 387,
@@ -46,9 +46,9 @@ function N(e) {
         }), (0, r.jsx)(m.S, {})]
       })
     }) : (0, r.jsxs)("div", {
-      className: b.cameraWrapper,
+      className: N.cameraWrapper,
       children: [(0, r.jsx)("div", {
-        className: b.previewImage
+        className: N.previewImage
       }), (0, r.jsx)(a.ua7, {
         text: v ? null : f.NW.string(f.t["8jSzSU"]),
         children: e => {

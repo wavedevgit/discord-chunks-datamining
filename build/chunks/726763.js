@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 });
 var r = n(200651);
 n(192379);
@@ -18,7 +18,7 @@ var i = n(120356),
 let h = n(651714),
   f = n(297166);
 
-function b(e) {
+function N(e) {
   let {
     refreshStyles: t = !1
   } = e, n = (0, a.e7)([u.Z], () => u.Z.theme);

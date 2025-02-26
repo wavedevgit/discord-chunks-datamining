@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(305342),
   h = n(293810),
   f = n(388032),
-  b = n(447701);
-let N = e => {
+  N = n(447701);
+let b = e => {
     let [t, n] = i.useState(!1), [r, s] = i.useState(null);
     return {
       cancelSubscription: async t => {
@@ -48,7 +48,7 @@ let N = e => {
       cancelSubscription: v,
       error: S,
       submitting: T
-    } = N(O), I = async () => {
+    } = b(O), I = async () => {
       await v(x.id) && _()
     }, y = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.CHANNEL), A = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.INTANGIBLE), P = a()(x.currentPeriodEnd).format("MMMM Do, YYYY"), R = f.NW.formatToPlainString(f.t.KsMRPz, {
       numChannels: y.length,
@@ -57,38 +57,38 @@ let N = e => {
     });
     return (0, r.jsxs)(l.Y0X, {
       transitionState: n,
-      className: b.__invalid_modal,
+      className: N.__invalid_modal,
       "aria-labelledby": E,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)("img", {
           src: C,
           alt: "",
-          className: b.headerImage
+          className: N.headerImage
         }), (0, r.jsx)(l.olH, {
           withCircleBackground: !0,
-          className: b.closeButton,
+          className: N.closeButton,
           onClick: _
         })]
       }), null != S ? (0, r.jsx)(l.kzN, {
         children: S.message
       }) : null, (0, r.jsxs)(l.hzk, {
-        className: b.content,
+        className: N.content,
         children: [(0, r.jsx)(l.X6q, {
           id: E,
           variant: "text-md/medium",
-          className: b.title,
+          className: N.title,
           children: f.NW.string(f.t.O6l5tL)
         }), (0, r.jsx)(l.Text, {
-          className: b.description,
+          className: N.description,
           variant: "text-sm/normal",
           children: R
         }), (0, r.jsx)(p.c, {
           listingId: o.id,
           guildId: i.guild_id,
-          className: b.benefits
+          className: N.benefits
         })]
       }), (0, r.jsxs)(l.mzw, {
-        className: b.footer,
+        className: N.footer,
         children: [(0, r.jsx)(l.zxk, {
           color: l.zxk.Colors.RED,
           onClick: I,
@@ -97,7 +97,7 @@ let N = e => {
         }), (0, r.jsx)(l.zxk, {
           look: l.zxk.Looks.LINK,
           color: l.zxk.Colors.WHITE,
-          className: b.goBackButton,
+          className: N.goBackButton,
           onClick: _,
           children: f.NW.string(f.t.EP6EPT)
         })]

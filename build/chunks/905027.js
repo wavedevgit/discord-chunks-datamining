@@ -36,13 +36,13 @@ function g() {
       }
       a && (0, d.b9)(), p(!1)
     }, [null == t ? void 0 : t.id]),
-    b = i.useCallback(() => {
+    N = i.useCallback(() => {
       (0, d.W3)()
     }, []);
   return (0, r.jsx)(a.Z, {
     submitting: g,
     onSave: f,
-    onReset: b,
+    onReset: N,
     disabled: e,
     errorMessage: null != h ? h : void 0
   })

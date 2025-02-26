@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(208049),
   h = n(763296),
   f = n(242291),
-  b = n(893663),
-  N = n(331642),
+  N = n(893663),
+  b = n(331642),
   x = n(63063),
   _ = n(581883),
   E = n(738486),
@@ -75,7 +75,7 @@ function R(e) {
     refreshStyles: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(), [s, c] = i.useState(S.hY), g = (0, b.tT)(s), _ = A(g), j = (null == g ? void 0 : g.type) === b.zx.GLOBAL, C = (0, l.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == _;
+  } = (0, d.ZP)(), [s, c] = i.useState(S.hY), g = (0, N.tT)(s), _ = A(g), j = (null == g ? void 0 : g.type) === N.zx.GLOBAL, C = (0, l.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == _;
   i.useEffect(() => {
     C && (0, f.tt)({
       location: n
@@ -125,7 +125,7 @@ function R(e) {
           })
         }),
         forcedDivider: !t,
-        children: [(0, r.jsx)(N.Z, {
+        children: [(0, r.jsx)(b.Z, {
           sound: _,
           isGlobal: j,
           onSelect: e => {

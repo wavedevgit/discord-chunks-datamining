@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(789639),
   h = n(930295),
   f = n(481060),
-  b = n(355467),
-  N = n(239091),
+  N = n(355467),
+  b = n(239091),
   x = n(230711),
   _ = n(410575),
   E = n(941129),
@@ -71,8 +71,8 @@ var r = n(200651),
   ep = n(358820),
   eh = n(469887),
   ef = n(306609),
-  eb = n(199902),
-  eN = n(314897),
+  eN = n(199902),
+  eb = n(314897),
   ex = n(592125),
   e_ = n(819640),
   eE = n(131951),
@@ -369,7 +369,7 @@ class eX extends i.PureComponent {
       let {
         currentUser: t
       } = this.props;
-      null != t && (0, N.jW)(e, async () => {
+      null != t && (0, b.jW)(e, async () => {
         let {
           default: e
         } = await n.e("2535").then(n.bind(n, 923422));
@@ -381,20 +381,20 @@ class eX extends i.PureComponent {
         }))
       })
     }), eV(this, "audioOnInteractionHandler", (0, M.u)("AudioDeviceMenu", "Account Panel")), eV(this, "handleInputAudioContextMenu", (e, t) => {
-      (0, N.jW)(e, async () => {
+      (0, b.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 659580));
         return () => (0, r.jsx)(A.Gt, {
           value: t,
           children: this.props.simplifiedCallSettingsEnabled ? (0, r.jsx)(e, {
-            onClose: N.Zy,
+            onClose: b.Zy,
             renderInputDevices: !0,
             renderInputVolume: !0,
             simplified: !0,
             onInteraction: this.audioOnInteractionHandler
           }) : (0, r.jsx)(e, {
-            onClose: N.Zy,
+            onClose: b.Zy,
             renderInputDevices: !0,
             renderInputModes: !0,
             renderInputVolume: !0,
@@ -403,20 +403,20 @@ class eX extends i.PureComponent {
         })
       })
     }), eV(this, "handleOutputAudioContextMenu", (e, t) => {
-      (0, N.jW)(e, async () => {
+      (0, b.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 659580));
         return () => (0, r.jsx)(A.Gt, {
           value: t,
           children: this.props.simplifiedCallSettingsEnabled ? (0, r.jsx)(e, {
-            onClose: N.Zy,
+            onClose: b.Zy,
             renderOutputDevices: !0,
             renderOutputVolume: !0,
             simplified: !0,
             onInteraction: this.audioOnInteractionHandler
           }) : (0, r.jsx)(e, {
-            onClose: N.Zy,
+            onClose: b.Zy,
             renderOutputDevices: !0,
             renderOutputVolume: !0,
             onInteraction: this.audioOnInteractionHandler
@@ -529,8 +529,8 @@ function eJ(e) {
     handleToggleSelfDeaf: g,
     handleToggleSelfMute: p,
     handleInputAudioContextMenu: h,
-    handleOutputAudioContextMenu: b,
-    handleOpenAccountSettings: N,
+    handleOutputAudioContextMenu: N,
+    handleOpenAccountSettings: b,
     handleOpenSettingsContextMenu: x,
     dismissibleContents: _
   } = e;
@@ -552,12 +552,12 @@ function eJ(e) {
       selfDeaf: t,
       serverDeaf: a,
       onClick: g,
-      onContextMenu: b,
+      onContextMenu: N,
       awaitingRemote: i
     }), (0, r.jsx)(e$, {
       isEligibleForPomelo: c,
       webBuildOverride: d,
-      onClick: N,
+      onClick: b,
       onContextMenu: x,
       dismissibleContents: _.settings
     })]
@@ -567,7 +567,7 @@ function eJ(e) {
 function eQ() {
   var e;
   let t = (0, o.e7)([ev.default], () => ev.default.getCurrentUser()),
-    n = (0, o.e7)([eN.default], () => eN.default.getId()),
+    n = (0, o.e7)([eb.default], () => eb.default.getId()),
     {
       activities: s,
       streaming: a,
@@ -585,7 +585,7 @@ function eQ() {
         status: eC.Z.getStatus()
       }
     }),
-    d = (0, o.e7)([eb.Z], () => eb.Z.getAnyStreamForUser(n)),
+    d = (0, o.e7)([eN.Z], () => eN.Z.getAnyStreamForUser(n)),
     u = (0, C.Z)({
       userId: n
     }),
@@ -599,7 +599,7 @@ function eQ() {
     }),
     {
       mute: h,
-      selfMute: N,
+      selfMute: b,
       suppress: x
     } = (0, ed.Z)(p),
     {
@@ -663,9 +663,9 @@ function eQ() {
         (async () => {
           if (!e && null == n && a) {
             if (!r) {
-              await (0, b.ou)();
+              await (0, N.ou)();
               return
-            }!l && (t || await (0, b.l0)())
+            }!l && (t || await (0, N.l0)())
           }
         })()
       }, [a, n, e, r, t, l]), !e && !!a && !l && null != n && n
@@ -690,7 +690,7 @@ function eQ() {
       occluded: k,
       premiumSubscription: I,
       selfDeaf: _,
-      selfMute: N,
+      selfMute: b,
       serverDeaf: S,
       serverMute: h,
       speaking: u,
@@ -751,8 +751,8 @@ function e0(e) {
     tooltipText: d,
     tooltipColor: u,
     tooltipForceOpen: p,
-    onMouseEnter: b,
-    onMouseLeave: N,
+    onMouseEnter: N,
+    onMouseLeave: b,
     onClick: x,
     onContextMenu: _
   } = e, E = t || s || n, j = i.useRef(null), C = (0, m.O)(E ? "unmute" : "mute"), O = (0, g.P)(E ? "unmute" : "mute"), {
@@ -803,10 +803,10 @@ function e0(e) {
         tooltipColor: u,
         tooltipForceOpen: p,
         onMouseEnter: () => {
-          b(), R.onMouseEnter()
+          N(), R.onMouseEnter()
         },
         onMouseLeave: () => {
-          N(), R.onMouseLeave()
+          b(), R.onMouseLeave()
         },
         icon: (0, r.jsx)(Z, {
           size: "custom",
@@ -917,18 +917,18 @@ function e1(e) {
       onMouseLeave: p
     }
   } = (0, u.l)(c ? "undeafen" : "deafen"), h = n ? f.Vm4 : d, {
-    coloredIcons: b
+    coloredIcons: N
   } = (0, eo.Z)({
     location: "RTC Microphone Button"
   }), {
-    analyticsLocations: N
+    analyticsLocations: b
   } = (0, A.ZP)(y.Z.AUDIO_OUTPUT_BUTTON);
   i.useEffect(() => () => m(), [c, m]);
   let x = i.useCallback(e => {
-    o(e, N)
-  }, [o, N]);
+    o(e, b)
+  }, [o, b]);
   return (0, r.jsx)(A.Gt, {
-    value: N,
+    value: b,
     children: (0, r.jsx)(ew.Z, {
       tooltipText: (0, k.Z)(t, n, s),
       onMouseEnter: g,
@@ -946,7 +946,7 @@ function e1(e) {
       }),
       iconForeground: c ? eU.strikethrough : null,
       role: "switch",
-      redGlow: b && c,
+      redGlow: N && c,
       "aria-label": eM.NW.string(eM.t.wjcRFR),
       "aria-checked": c,
       disabled: s

@@ -1,6 +1,6 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 });
 var r = n(200651);
 n(192379);
@@ -35,12 +35,12 @@ let h = e => {
   f = (e, t, n, r) => t || n ? g.NW.string(g.t.fkPGam) : e === m.Si.TIER_2 ? g.NW.formatToPlainString(g.t.bkQ4bG, {
     percent: r
   }) : void 0,
-  b = e => {
+  N = e => {
     var {
       forceInverted: t,
       subscriptionTier: n,
-      isEligibleForBogoPromotion: b = !1,
-      isPersistentCTA: N = !1,
+      isEligibleForBogoPromotion: N = !1,
+      isPersistentCTA: b = !1,
       useShorterCTA: x = !1
     } = e, _ = function(e, t) {
       if (null == e) return {};
@@ -75,12 +75,12 @@ let h = e => {
         autoTrackExposure: !1
       }),
       y = I && (null == C ? void 0 : C.trial_id) === m.a7,
-      A = b ? g.NW.string(g.t.J61px8) : null != S ? f(n, x, N, S.discount.amount) : h({
+      A = N ? g.NW.string(g.t.J61px8) : null != S ? f(n, x, b, S.discount.amount) : h({
         showTrialCTA: T,
         subscriptionTier: n,
         shouldShowUpsells: !1,
         trialDurationCopy: v,
-        isPersistentCTA: N,
+        isPersistentCTA: b,
         shouldShowReferralTrialCopy: y,
         subscriptionTrial: O
       });

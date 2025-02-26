@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(100527),
   h = n(906732),
   f = n(377171),
-  b = n(878596),
-  N = n(313201),
+  N = n(878596),
+  b = n(313201),
   x = n(674180),
   _ = n(565138),
   E = n(374649),
@@ -135,10 +135,10 @@ let W = e => {
           submitting: i,
           children: D.NW.string(D.t.y3mAEx)
         }) : (0, r.jsxs)(r.Fragment, {
-          children: [!t && !s && (0, r.jsx)(b.Z, {
+          children: [!t && !s && (0, r.jsx)(N.Z, {
             label: D.NW.string(D.t.FRbWR0),
             onClick: o
-          }), (0, r.jsx)(b.Z, {
+          }), (0, r.jsx)(N.Z, {
             label: D.NW.string(D.t.Dx0lFx),
             onClick: a
           })]
@@ -154,9 +154,9 @@ let W = e => {
       groupListing: s,
       guild: o,
       expanded: p,
-      handleToggleExpanded: b,
+      handleToggleExpanded: N,
       subscriptionInfo: E
-    } = (0, v.Z)(t), [j, O] = i.useState(!1), M = (0, N.Dt)(), {
+    } = (0, v.Z)(t), [j, O] = i.useState(!1), M = (0, b.Dt)(), {
       analyticsLocations: U
     } = (0, h.ZP)(), {
       shouldHideGuildPurchaseEntryPoints: V
@@ -202,7 +202,7 @@ let W = e => {
     return (0, r.jsxs)("div", {
       className: Z.container,
       children: [(0, r.jsx)(S.Z, {
-        onClick: b,
+        onClick: N,
         className: Z.headerContainer,
         children: e => {
           let {
@@ -229,7 +229,7 @@ let W = e => {
                 }), $(), ee()]
               })]
             }), (0, r.jsx)(c.P3F, {
-              onClick: i(b),
+              onClick: i(N),
               "aria-label": D.NW.string(D.t.e5eQOz),
               "aria-controls": M,
               "aria-expanded": p,
