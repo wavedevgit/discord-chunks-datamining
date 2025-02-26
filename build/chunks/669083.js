@@ -53,8 +53,8 @@ let b = () => [{
     name: y.NW.string(y.t["2OvIZW"])
   }];
 
-function Z() {
-  let e = h.Z.getNotificationPositionMode(),
+function E() {
+  let e = h.default.getNotificationPositionMode(),
     t = e !== m._vf.DISABLED,
     n = u.ZP.getOverlayKeybind(),
     i = u.ZP.getOverlayChatKeybind();
@@ -62,13 +62,13 @@ function Z() {
     enabled: !0,
     notifications_enabled: t,
     notifications_position: t ? e : null,
-    text_notifications_mode: h.Z.getTextChatNotificationMode(),
-    text_opacity_slider: h.Z.getTextWidgetOpacity(),
+    text_notifications_mode: h.default.getTextChatNotificationMode(),
+    text_opacity_slider: h.default.getTextWidgetOpacity(),
     hotkey: null != n ? (0, f.BB)(n.shortcut) : null,
     text_activation_hotkey: null != i ? (0, f.BB)(i.shortcut) : null
   })
 }
-class E extends r.PureComponent {
+class j extends r.PureComponent {
   componentDidMount() {
     l.Z.track(m.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "overlay",
@@ -77,7 +77,7 @@ class E extends r.PureComponent {
     })
   }
   handleChangeNotificationPositionMode(e, t) {
-    l.Z.setNotificationPositionMode(t), Z()
+    l.Z.setNotificationPositionMode(t), E()
   }
   handleChangeAvatarSizeMode(e) {
     let {
@@ -280,7 +280,7 @@ class E extends r.PureComponent {
         ENABLED: e,
         DISABLED: t
       } = m.Ypu, n = this.props.textChatNotificationMode === e ? t : e;
-      l.Z.setTextChatNotificationMode(n), Z()
+      l.Z.setTextChatNotificationMode(n), E()
     }), O(this, "handleToggleInviteNotification", () => {
       let e = this.props.shouldShowInviteNotification;
       l.Z.setShowGameInviteNotification(!e)
@@ -299,18 +299,18 @@ function N(e) {
     textChatNotificationMode: a,
     shouldShowKeybindIndicators: c,
     shouldShowInviteNotification: d
-  } = (0, o.cj)([h.Z], () => ({
-    avatarSizeMode: h.Z.getAvatarSizeMode(),
-    displayNameMode: h.Z.getDisplayNameMode(),
-    displayUserMode: h.Z.getDisplayUserMode(),
-    notificationPositionMode: h.Z.getNotificationPositionMode(),
-    textChatNotificationMode: h.Z.getTextChatNotificationMode(),
-    shouldShowKeybindIndicators: h.Z.showKeybindIndicators,
-    shouldShowInviteNotification: h.Z.showInviteNotification
+  } = (0, o.cj)([h.default], () => ({
+    avatarSizeMode: h.default.getAvatarSizeMode(),
+    displayNameMode: h.default.getDisplayNameMode(),
+    displayUserMode: h.default.getDisplayUserMode(),
+    notificationPositionMode: h.default.getNotificationPositionMode(),
+    textChatNotificationMode: h.default.getTextChatNotificationMode(),
+    shouldShowKeybindIndicators: h.default.showKeybindIndicators,
+    shouldShowInviteNotification: h.default.showInviteNotification
   })), u = (0, g.Z)({
     location: "Overlay Settings"
   });
-  return (0, i.jsx)(E, {
+  return (0, i.jsx)(j, {
     onClose: t,
     avatarSizeMode: n,
     displayNameMode: r,

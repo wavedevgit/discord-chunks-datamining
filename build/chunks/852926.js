@@ -22,7 +22,7 @@ function h(e) {
     context: d.IlC.APP
   };
   let t = i.default.isOverlayOOPEnabledForPid(e);
-  return l.ZP.isReady(e) ? (r.Z.setInputLocked(!1, e), {
+  return l.default.isReady(e) ? (r.Z.setInputLocked(!1, e), {
     lock() {
       r.Z.setInputLocked(!0, e)
     },

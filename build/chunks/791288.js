@@ -23,12 +23,12 @@ var i = n(200651),
   b = n(703656),
   S = n(199902),
   x = n(592125),
-  Z = n(158776),
-  E = n(594174),
+  E = n(158776),
+  j = n(594174),
   N = n(237997),
-  j = n(5192),
-  C = n(145597),
-  I = n(312839),
+  C = n(5192),
+  I = n(145597),
+  Z = n(312839),
   P = n(981631),
   w = n(701488),
   k = n(987650),
@@ -40,7 +40,7 @@ function M(e) {
     game: t,
     trackClick: n,
     onDismissClick: o
-  } = e, s = (0, h.q)(t.id), c = (0, l.e7)([N.Z], () => N.Z.showInviteNotification), u = r.useCallback(e => {
+  } = e, s = (0, h.q)(t.id), c = (0, l.e7)([N.default], () => N.default.showInviteNotification), u = r.useCallback(e => {
     e.stopPropagation(), n(c ? "muted" : "unmuted"), d.Z.setShowGameInviteNotification(!c)
   }, [c, n]);
   if (null == s) return null;
@@ -93,19 +93,19 @@ function R(e) {
   let {
     entry: t,
     idx: n
-  } = e, o = (0, l.e7)([E.default], () => E.default.getUser(t.author_id)), h = (0, _.kr)(t), f = h ? a.TVs.colors.TEXT_POSITIVE : a.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY, [v, O] = r.useState("unsent"), [C, I] = r.useState(!1), w = (0, l.e7)([N.Z], () => N.Z.customInviteMessage), k = (0, l.e7)([S.Z], () => null != o ? S.Z.getAnyStreamForUser(o.id) : null, [o]), {
+  } = e, o = (0, l.e7)([j.default], () => j.default.getUser(t.author_id)), h = (0, _.kr)(t), f = h ? a.TVs.colors.TEXT_POSITIVE : a.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY, [v, O] = r.useState("unsent"), [I, Z] = r.useState(!1), w = (0, l.e7)([N.default], () => N.default.customInviteMessage), k = (0, l.e7)([S.Z], () => null != o ? S.Z.getAnyStreamForUser(o.id) : null, [o]), {
     isMobileOnline: M,
     status: R
-  } = (0, l.cj)([Z.Z], () => null == o ? {
+  } = (0, l.cj)([E.Z], () => null == o ? {
     isMobileOnline: void 0,
     status: void 0
   } : {
-    isMobileOnline: Z.Z.isMobileOnline(o.id),
-    status: Z.Z.getStatus(o.id)
+    isMobileOnline: E.Z.isMobileOnline(o.id),
+    status: E.Z.getStatus(o.id)
   }, [o]);
   r.useEffect(() => {
     if ("sent" === v) {
-      let e = setTimeout(() => I(!0), 2e3);
+      let e = setTimeout(() => Z(!0), 2e3);
       return () => clearTimeout(e)
     }
   }, [v]);
@@ -154,7 +154,7 @@ function R(e) {
           className: D.username,
           variant: "text-md/medium",
           color: "header-primary",
-          children: j.ZP.getName(void 0, void 0, o)
+          children: C.ZP.getName(void 0, void 0, o)
         }), null != k && (0, i.jsx)(p.ZP, {})]
       }), (0, i.jsxs)(g.m7, {
         children: [(0, i.jsx)(a.iWm, {
@@ -170,12 +170,12 @@ function R(e) {
       className: D.inviteButtonWrapper,
       children: (0, i.jsx)(a.zxk, {
         submitting: "sending" === v,
-        onClick: C ? L : A,
+        onClick: I ? L : A,
         className: D.inviteButton,
         color: a.Ttl.PRIMARY,
         look: "sent" === v ? a.iLD.OUTLINED : a.iLD.FILLED,
         size: a.PhG.MAX,
-        children: "sent" === v ? C ? (0, i.jsx)(a.kBi, {
+        children: "sent" === v ? I ? (0, i.jsx)(a.kBi, {
           size: "sm"
         }) : (0, i.jsx)(a.kSu, {
           size: "sm",
@@ -192,7 +192,7 @@ function A(e) {
   let {
     onCancel: t,
     onSave: n
-  } = e, o = (0, l.e7)([N.Z], () => N.Z.customInviteMessage), s = r.createRef(), [c, u] = r.useState(null != o ? o : T.NW.string(T.t.DwAcMz)), [h, p] = r.useState(c.length), f = e => {
+  } = e, o = (0, l.e7)([N.default], () => N.default.customInviteMessage), s = r.createRef(), [c, u] = r.useState(null != o ? o : T.NW.string(T.t.DwAcMz)), [h, p] = r.useState(c.length), f = e => {
     e.stopPropagation(), d.Z.setInviteMessage(c), n(e)
   };
   return (0, i.jsxs)("div", {
@@ -246,7 +246,7 @@ function A(e) {
 function L(e) {
   let {
     entries: t
-  } = e, n = t.slice(0, 5), o = (0, l.e7)([N.Z], () => N.Z.customInviteMessage), s = T.NW.formatToPlainString(T.t["5uzKGB"], {
+  } = e, n = t.slice(0, 5), o = (0, l.e7)([N.default], () => N.default.customInviteMessage), s = T.NW.formatToPlainString(T.t["5uzKGB"], {
     inviteMessage: null != o ? o : T.NW.string(T.t.DwAcMz)
   }), [c, u] = r.useState(!1);
   return (0, i.jsxs)("div", {
@@ -284,7 +284,7 @@ function W(e, t) {
   let {
     trackView: n,
     trackClick: r
-  } = (0, I.R)(k.n0.SendGameInvitesNotification, {
+  } = (0, Z.R)(k.n0.SendGameInvitesNotification, {
     notif_type: k.n0.SendGameInvitesNotification
   });
   return s()(t.length > 0, "Some entries must be present"), {
@@ -304,7 +304,7 @@ function W(e, t) {
       })
     },
     onNotificationClick: (e, t) => {
-      e.stopPropagation(), r("unlock"), O.default.isOverlayOOPEnabledForPid((0, C.QF)()) ? d.Z.setInputLocked(!1, (0, C.QF)()) : d.Z.setInstanceLocked(!1)
+      e.stopPropagation(), r("unlock"), O.default.isOverlayOOPEnabledForPid((0, I.getPID)()) ? d.Z.setInputLocked(!1, (0, I.getPID)()) : d.Z.setInstanceLocked(!1)
     },
     onDismissClick: () => {
       r("dismiss")

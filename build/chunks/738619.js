@@ -57,7 +57,7 @@ function M(e) {
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,8 +68,8 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -92,7 +92,7 @@ function G(e, t) {
   return i
 }
 let B = [];
-class F extends i.PureComponent {
+class V extends i.PureComponent {
   componentDidMount() {
     this.timeout = setTimeout(() => {
       this.setState({
@@ -147,7 +147,7 @@ class F extends i.PureComponent {
   }
 }
 
-function V(e) {
+function F(e) {
   let {
     channel: t,
     guild: n
@@ -180,11 +180,11 @@ function Z(e) {
   } = e, {
     rateLimitPerUser: E
   } = u, b = N.default.getCurrentUser(), y = O.Z.getGuild(t), I = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == b ? void 0 : b.id)).reject(e => S.Z.isBlockedOrIgnored(e)).map(e => N.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), A = (0, m.R6)("TypingUsers");
-  if (0 === T.length && !I && !g) return i && null != n ? (0, r.jsx)(F, {
+  if (0 === T.length && !I && !g) return i && null != n ? (0, r.jsx)(V, {
     activity: n,
     isFocused: o,
     isRefreshChatInputEnabled: A
-  }) : (0, r.jsx)(V, {
+  }) : (0, r.jsx)(F, {
     channel: u,
     guild: y
   });
@@ -232,7 +232,7 @@ function H(e) {
   let o = (0, c.e7)([I.Z], () => I.Z.findActivity(e => null != e.application_id)),
     a = (0, c.e7)([E.ZP, y.default], () => E.ZP.getUserCombo(y.default.getId(), t.id)),
     s = (0, c.e7)([b.Z, _.Z], () => (0, p.Z)(t, o, b.Z, _.Z)),
-    l = k(M({}, i), {
+    l = j(M({}, i), {
       baseTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
       activeTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
       showInviteEducation: s,

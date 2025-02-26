@@ -185,7 +185,7 @@ function M(e) {
   U(n, r)
 }
 
-function j(e) {
+function k(e) {
   let {
     folderId: t,
     expanded: n
@@ -194,7 +194,7 @@ function j(e) {
   U(r, n)
 }
 
-function k() {
+function j() {
   for (let e of I.allNodes()) e.type === c.eD.FOLDER && e.expanded && U(e, !1)
 }
 
@@ -204,7 +204,7 @@ function U(e, t) {
 }
 let G = (0, f.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
   B = (0, f.oH)((e, t) => e.getRoots().map(N)),
-  F = (0, f.oH)((e, t) => {
+  V = (0, f.oH)((e, t) => {
     let n = [];
 
     function r(e) {
@@ -217,7 +217,7 @@ let G = (0, f.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
     }
     return r(e.root), n
   }),
-  V = (0, f.oH)((e, t) => e.root.children.map(N));
+  F = (0, f.oH)((e, t) => e.root.children.map(N));
 class Z extends E.Z {
   initialize() {
     this.waitFor(g.Z, v.ZP, d.Z, h.Z, u.Z, _.Z, l.Z)
@@ -235,10 +235,10 @@ class Z extends E.Z {
     return G(I, I.version)
   }
   getFlattenedGuildFolderList() {
-    return F(I, I.version)
+    return V(I, I.version)
   }
   getCompatibleGuildFolders() {
-    return V(I, I.version)
+    return F(I, I.version)
   }
   getFastListGuildFolders() {
     return I.getRoots()
@@ -265,8 +265,8 @@ class Z extends E.Z {
       GUILD_FOLDER_EDIT_LOCAL: w,
       GUILD_FOLDER_DELETE_LOCAL: L,
       TOGGLE_GUILD_FOLDER_EXPAND: M,
-      SET_GUILD_FOLDER_EXPANDED: j,
-      GUILD_FOLDER_COLLAPSE: k
+      SET_GUILD_FOLDER_EXPANDED: k,
+      GUILD_FOLDER_COLLAPSE: j
     }), y(this, "loadCache", () => {
       let e = this.readSnapshot(Z.LATEST_SNAPSHOT_VERSION),
         t = null == e ? void 0 : e.tree;

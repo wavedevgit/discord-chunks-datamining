@@ -156,12 +156,12 @@ function P(e) {
     isLargeSize: L,
     pulseItemKey: x,
     allowAnimatedEmoji: M,
-    setPulseItemKey: j,
-    messageId: k,
+    setPulseItemKey: k,
+    messageId: j,
     isBurstReaction: U,
     rowPosition: G,
     inNitroLockedSection: B
-  } = e, [F, V] = i.useState(""), Z = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(_), [_]), W = i.useRef(null), {
+  } = e, [V, F] = i.useState(""), Z = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(_), [_]), W = i.useRef(null), {
     emoji: Y,
     size: K,
     isDisabled: z,
@@ -169,7 +169,7 @@ function P(e) {
   } = t, Q = e => {
     if (e.stopPropagation(), y.current || O.current) return;
     let n = e.altKey;
-    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(Y) && j(o), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), v(t, {
+    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(Y) && k(o), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), v(t, {
       isFinalSelection: !e.shiftKey,
       toggleFavorite: n
     })
@@ -195,7 +195,7 @@ function P(e) {
     return (0, i.createElement)("li", T(S({}, d), {
       key: o,
       ref: W
-    }), F !== C(q, f) && (0, r.jsx)(R, {
+    }), V !== C(q, f) && (0, r.jsx)(R, {
       ref: l,
       emoji: Y,
       isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(Y),
@@ -210,10 +210,10 @@ function P(e) {
       onMouseEnter: t,
       onMouseLeave: n,
       onClick: e => {
-        if (null != W.current && null != G && null != k && !e.shiftKey && null != Y.name && U && !Z && M) {
+        if (null != W.current && null != G && null != j && !e.shiftKey && null != Y.name && U && !Z && M) {
           let e = null == Y.id ? p.ZP.convertNameToSurrogate(Y.name) : Y.name,
             t = W.current.getBoundingClientRect();
-          t.x = G.x + (q + 1) * K, V(C(q, f)), (0, m.U)(k, e, Y.id, t)
+          t.x = G.x + (q + 1) * K, F(C(q, f)), (0, m.U)(j, e, Y.id, t)
         }
         Q(e)
       },

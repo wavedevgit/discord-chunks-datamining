@@ -1,12 +1,12 @@
-/** Chunk was on 25499 **/
+/** Chunk was on 63061 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
 var r, i = n(200651),
-  l = n(192379),
-  o = n(120356),
-  a = n.n(o),
-  s = n(748780),
+  o = n(192379),
+  l = n(120356),
+  s = n.n(l),
+  a = n(748780),
   c = n(846519),
   u = n(481060),
   d = n(585483),
@@ -14,7 +14,7 @@ var r, i = n(200651),
   E = n(388032),
   p = n(466894);
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,11 +22,11 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let m = {
+let h = {
   friction: 15,
   tension: 100
 };
-class f extends(r = l.PureComponent) {
+class f extends(r = o.PureComponent) {
   componentDidMount() {
     this.setState({
       shown: !0
@@ -45,26 +45,26 @@ class f extends(r = l.PureComponent) {
     let {
       reducedMotion: t
     } = this.context;
-    !0 !== t.enabled && s.Z.spring(this.state.translateY, function(e) {
+    !0 !== t.enabled && a.Z.spring(this.state.translateY, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          h(e, t, n[t])
+          m(e, t, n[t])
         })
       }
       return e
     }({
       toValue: Math.min(e, 250)
-    }, m)).start()
+    }, h)).start()
   }
   renderArrowGroup(e) {
     return (0, i.jsxs)("div", {
-      className: a()(p.arrowGroup, e),
-      children: [(0, i.jsx)(s.Z.div, {
-        className: a()(p.arrowContainer, p.horizontal),
+      className: s()(p.arrowGroup, e),
+      children: [(0, i.jsx)(a.Z.div, {
+        className: s()(p.arrowContainer, p.horizontal),
         style: this.getStyle(),
         children: (0, i.jsx)("img", {
           alt: "",
@@ -72,14 +72,14 @@ class f extends(r = l.PureComponent) {
           className: p.arrowIcon
         })
       }), (0, i.jsx)("div", {
-        className: a()(p.arrowContainer, p.diag1),
+        className: s()(p.arrowContainer, p.diag1),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(536404),
           className: p.arrowIcon
         })
       }), (0, i.jsx)("div", {
-        className: a()(p.arrowContainer, p.diag2),
+        className: s()(p.arrowContainer, p.diag2),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(569347),
@@ -108,7 +108,7 @@ class f extends(r = l.PureComponent) {
     } = this.state;
     return (0, i.jsxs)("div", {
       ref: this.rootRef,
-      className: a()(p.tutorial, {
+      className: s()(p.tutorial, {
         [p.shown]: t,
         [p.hasQuery]: e
       }),
@@ -132,10 +132,10 @@ class f extends(r = l.PureComponent) {
     }
   }
   constructor(...e) {
-    super(...e), h(this, "state", {
+    super(...e), m(this, "state", {
       shown: !1,
-      translateY: new s.Z.Value(0)
-    }), h(this, "rootRef", l.createRef()), h(this, "focusTimeout", new c.V7), h(this, "handleResultFocus", e => {
+      translateY: new a.Z.Value(0)
+    }), m(this, "rootRef", o.createRef()), m(this, "focusTimeout", new c.V7), m(this, "handleResultFocus", e => {
       let {
         node: t
       } = e;
@@ -152,5 +152,5 @@ class f extends(r = l.PureComponent) {
     })
   }
 }
-h(f, "contextType", u.Sfi);
+m(f, "contextType", u.Sfi);
 let g = f

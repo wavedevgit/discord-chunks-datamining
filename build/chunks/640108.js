@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => X,
-  yv: () => V
+  yv: () => F
 }), n(653041), n(47120), n(411104);
 var r, i, o = n(200651),
   a = n(192379),
@@ -70,8 +70,8 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = 3e3,
-  k = 1e3,
+let k = 3e3,
+  j = 1e3,
   U = "-:--",
   G = {
     friction: 14,
@@ -81,13 +81,13 @@ let j = 3e3,
     VIDEO: "VIDEO",
     AUDIO: "AUDIO"
   },
-  F = {
+  V = {
     width: "100%",
     height: "100%",
     backgroundColor: "black"
   };
 
-function V(e) {
+function F(e) {
   let t = 0 | e,
     n = t % 60;
   return "".concat((t - n) / 60, ":").concat(String(n).padStart(2, "0"))
@@ -112,7 +112,7 @@ let H = e => {
   let {
     current: t,
     duration: n
-  } = e, r = null != t ? V(t) : U, i = null != n ? V(n) : U;
+  } = e, r = null != t ? F(t) : U, i = null != n ? F(n) : U;
   return r = r.padStart(i.length, "0"), (0, o.jsxs)("div", {
     className: P.durationTimeWrapper,
     children: [(0, o.jsx)("span", {
@@ -638,7 +638,7 @@ class Q extends(i = a.PureComponent) {
     let {
       dragging: e,
       fullscreen: t
-    } = this.state, n = t ? k : j, r = Math.max(0, Date.now() - this._lastMove) > n;
+    } = this.state, n = t ? j : k, r = Math.max(0, Date.now() - this._lastMove) > n;
     r !== this.state.hideControls && null == e && this.setState({
       hideControls: r
     })
@@ -800,7 +800,7 @@ class Q extends(i = a.PureComponent) {
     } = this.props, {
       fullscreen: r
     } = this.state, i = this.getWidth();
-    return r ? F : t === B.AUDIO ? {
+    return r ? V : t === B.AUDIO ? {
       width: void 0,
       height: "auto"
     } : e ? void 0 : {

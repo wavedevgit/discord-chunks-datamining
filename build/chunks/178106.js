@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => k
 }), n(653041), n(47120);
 var r, i = n(392711),
   o = n.n(i),
@@ -169,7 +169,7 @@ class M extends(r = l.ZP.PersistedStore) {
   }
 }
 E(M, "displayName", "SoundboardEventStore"), E(M, "persistKey", "SoundboardEventStore");
-let j = new M(c.Z, {
+let k = new M(c.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: T,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: N,
   USER_SETTINGS_PROTO_UPDATE: w

@@ -88,8 +88,8 @@ function x(e, t) {
   return i
 }
 let M = "1",
-  j = .01,
-  k = .1,
+  k = .01,
+  j = .1,
   U = .01,
   G = 1e3;
 
@@ -116,7 +116,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     sound: t,
     previewSound: n,
@@ -145,7 +145,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     sound: t,
     refreshEnabled: n,
@@ -224,14 +224,14 @@ let H = i.forwardRef(function(e, t) {
     isPreviewingSound: eS
   } = (0, I.Z)(W, null !== (y = null == Y ? void 0 : Y.id) && void 0 !== y ? y : null, null !== (R = ec ? E.AY.getSetting() : null === (n = E.kU.getSetting()) || void 0 === n ? void 0 : n.volume) && void 0 !== R ? R : 100), {
     createMultipleConfettiAt: eI
-  } = i.useContext(_.h), eT = i.useRef(null), eN = Z(W.soundId, eT.current), eA = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), eC = i.useRef(j), eR = i.useRef(new c.Xp), eP = W.soundId === M, eD = "sound-".concat(W.soundId), ew = (0, s.JA)(eD), eL = null != em || null != eg, ex = !(0, S.Nq)(eE, W, Y) && !ec, eM = Q || J && !ex, ej = i.useRef(null), ek = (null !== (D = null === (o = ej.current) || void 0 === o ? void 0 : o.scrollHeight) && void 0 !== D ? D : 0) > (null !== (x = null === (u = ej.current) || void 0 === u ? void 0 : u.offsetHeight) && void 0 !== x ? x : 0), eU = null !== (B = h.Wq.useStore().bottomPosition) && void 0 !== B ? B : 0, eG = (null !== (H = null === (b = eT.current) || void 0 === b ? void 0 : b.getBoundingClientRect().bottom) && void 0 !== H ? H : 0) + 50 > eU ? "top" : "bottom", [eB, eF] = i.useState(!1), eV = ex && ei;
+  } = i.useContext(_.h), eT = i.useRef(null), eN = Z(W.soundId, eT.current), eA = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), eC = i.useRef(k), eR = i.useRef(new c.Xp), eP = W.soundId === M, eD = "sound-".concat(W.soundId), ew = (0, s.JA)(eD), eL = null != em || null != eg, ex = !(0, S.Nq)(eE, W, Y) && !ec, eM = Q || J && !ex, ek = i.useRef(null), ej = (null !== (D = null === (o = ek.current) || void 0 === o ? void 0 : o.scrollHeight) && void 0 !== D ? D : 0) > (null !== (x = null === (u = ek.current) || void 0 === u ? void 0 : u.offsetHeight) && void 0 !== x ? x : 0), eU = null !== (B = h.Wq.useStore().bottomPosition) && void 0 !== B ? B : 0, eG = (null !== (H = null === (b = eT.current) || void 0 === b ? void 0 : b.getBoundingClientRect().bottom) && void 0 !== H ? H : 0) + 50 > eU ? "top" : "bottom", [eB, eV] = i.useState(!1), eF = ex && ei;
 
   function eZ() {
     $ || eb(en)
   }
 
   function eH(e) {
-    if (eP && !eA && (eC.current = Math.min(eC.current + U, k), Math.random() < eC.current && eI(eN.x, eN.y, void 0, void 0, {
+    if (eP && !eA && (eC.current = Math.min(eC.current + U, j), Math.random() < eC.current && eI(eN.x, eN.y, void 0, void 0, {
         sprite: N.vv
       })), null != et) {
       et(e);
@@ -239,13 +239,13 @@ let H = i.forwardRef(function(e, t) {
     }
     eZ()
   }
-  let eW = F({
+  let eW = V({
       sound: W,
       previewSound: ey,
       disabled: ex && !Q,
       refreshEnabled: ea
     }),
-    eY = e => $ || ex || ea ? eV ? (0, r.jsx)(d.mBM, {
+    eY = e => $ || ex || ea ? eF ? (0, r.jsx)(d.mBM, {
       size: "xs",
       color: "currentColor",
       className: a()(ea ? C.primaryIconRefresh : C.primaryIcon, C.lockIcon, e, {
@@ -256,12 +256,12 @@ let H = i.forwardRef(function(e, t) {
       color: "currentColor",
       className: a()(C.primaryIcon, e)
     }),
-    eK = (0, r.jsx)(V, {
+    eK = (0, r.jsx)(F, {
       sound: W,
       refreshEnabled: ea,
       disabled: !X && !Q
     }),
-    ez = () => eV && !eo ? (0, r.jsxs)(r.Fragment, {
+    ez = () => eF && !eo ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: C.buttonOverlayBackground
       }), eY(C.primaryIconTopLevel), (0, r.jsx)("div", {
@@ -282,7 +282,7 @@ let H = i.forwardRef(function(e, t) {
         children: er === O.Pb.SOUNDMOJI ? (0, r.jsx)(m.ZP, {
           sound: W,
           channel: Y,
-          setTooltipShowing: eF
+          setTooltipShowing: eV
         }) : (0, r.jsxs)(r.Fragment, {
           children: [eM && eW, eY(), eM && eK]
         })
@@ -330,7 +330,7 @@ let H = i.forwardRef(function(e, t) {
   i.useEffect(() => {
     let e = eR.current;
     return eP && e.start(G, () => {
-      eC.current = Math.max(eC.current - U, j)
+      eC.current = Math.max(eC.current - U, k)
     }), () => e.stop()
   }, [eP]);
   let eQ = (0, g.a)(eT.current);
@@ -376,7 +376,7 @@ let H = i.forwardRef(function(e, t) {
         onContextMenu: J && !ex ? ev : void 0,
         onMouseOver: () => {
           var t;
-          return null != ed || ek && ea && !0 !== ec ? null === (t = e.onMouseEnter) || void 0 === t ? void 0 : t.call(e) : null
+          return null != ed || ej && ea && !0 !== ec ? null === (t = e.onMouseEnter) || void 0 === t ? void 0 : t.call(e) : null
         },
         children: [(0, r.jsxs)("div", {
           className: a()(ea ? C.soundInfoRefresh : C.soundInfo, {
@@ -401,7 +401,7 @@ let H = i.forwardRef(function(e, t) {
             className: a()(ea ? C.soundNameRefresh : C.soundName, {
               [C.hasEmoji]: eL
             }),
-            ref: ej,
+            ref: ek,
             children: eh
           })]
         }), eq()]

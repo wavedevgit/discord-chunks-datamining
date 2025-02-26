@@ -6,7 +6,7 @@ n.d(t, {
   CA: () => L,
   F8: () => ee,
   JM: () => w,
-  NZ: () => j,
+  NZ: () => k,
   ZP: () => en,
   aN: () => M,
   ay: () => J,
@@ -16,7 +16,7 @@ n.d(t, {
   pK: () => b,
   pU: () => er,
   rI: () => z,
-  tp: () => k,
+  tp: () => j,
   xR: () => X
 }), n(301563), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120);
 var i = n(654861),
@@ -199,7 +199,7 @@ function M(e) {
   return (null != a ? "".concat(location.protocol, "//").concat(a, "/banners/").concat(n, "/").concat(r, ".").concat(s) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.USER_BANNER(n, r, s)) + "?size=".concat((0, l.oO)(o * (0, l.x_)()))
 }
 
-function j(e) {
+function k(e) {
   let {
     avatarDecoration: t,
     size: n,
@@ -214,7 +214,7 @@ function j(e) {
   return c.searchParams.set("size", "".concat((0, l.oO)(n * (0, l.x_)()))), c.searchParams.set("passthrough", "".concat(r && (0, s.ae)(t.asset))), c.toString()
 }
 
-function k(e) {
+function j(e) {
   let t, {
     id: n,
     guildId: r,
@@ -259,7 +259,7 @@ function B(e) {
   return t = (null != c ? "".concat(location.protocol, "//").concat(c, "/banners/").concat(n, "/").concat(r, ".").concat(s) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_BANNER(n, r, s)) + "?size=".concat(o), "jpg" === s && (t += "&quality=lossless"), t
 }
 
-function F(e) {
+function V(e) {
   let t, {
     id: n,
     homeHeader: r
@@ -270,7 +270,7 @@ function F(e) {
   return (null != o ? "".concat(location.protocol, "//").concat(o, "/home-headers/").concat(n, "/").concat(r, ".png") : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_HOME_HEADER(n, r)) + "?size=".concat(i)
 }
 
-function V(e) {
+function F(e) {
   let t, {
     id: n,
     splash: r,
@@ -283,7 +283,7 @@ function V(e) {
 }
 
 function Z(e) {
-  return et(V(e))
+  return et(F(e))
 }
 
 function H(e) {
@@ -446,9 +446,9 @@ let en = {
   getGuildMemberAvatarURL: L,
   getGuildMemberAvatarURLSimple: w,
   getGuildMemberAvatarSource: x,
-  getGuildMemberBannerURL: k,
+  getGuildMemberBannerURL: j,
   getUserBannerURL: M,
-  getAvatarDecorationURL: j,
+  getAvatarDecorationURL: k,
   hasAnimatedGuildIcon: function e(e) {
     return X(null == e ? void 0 : e.icon)
   },
@@ -457,10 +457,10 @@ let en = {
   getGuildIconURL: H,
   getGuildSplashURL: U,
   getGuildSplashSource: G,
-  getGuildDiscoverySplashURL: V,
+  getGuildDiscoverySplashURL: F,
   getGuildDiscoverySplashSource: Z,
   getGuildBannerURL: B,
-  getGuildHomeHeaderURL: F,
+  getGuildHomeHeaderURL: V,
   getResourceChannelIconURL: function e(e) {
     let {
       channelId: t,
@@ -502,7 +502,7 @@ let en = {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     return et(B(e, t))
   },
-  getGuildHomeHeaderSource: e => et(F(e)),
+  getGuildHomeHeaderSource: e => et(V(e)),
   getChannelIconSource: e => et(Q(e)),
   getApplicationIconSource: e => et(Y(e)),
   makeSource: et,

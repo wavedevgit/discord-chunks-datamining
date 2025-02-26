@@ -14,7 +14,7 @@ function l(e) {
     withTitleBar: t,
     windowKey: n
   } = e;
-  return (0, i.useOverlayInitialFocus)(n, a.qU) ? (0, r.jsx)(o.Z, {
+  return (0, i.useOverlayInitialFocus)(n, a.OVERLAY_LAYOUT_ID) ? (0, r.jsx)(o.Z, {
     withTitleBar: t,
     windowKey: n,
     title: "Discord Overlay",

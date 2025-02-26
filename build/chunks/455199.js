@@ -60,13 +60,13 @@ let N = "recentMentionFilterSettings",
   x = 0,
   M = !1;
 
-function j(e) {
+function k(e) {
   C = {}, e.forEach(e => {
     null == C[e.getChannelId()] && (C[e.getChannelId()] = 0), C[e.getChannelId()]++
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     addedMessages: t,
     deletedMessages: n
@@ -99,18 +99,18 @@ function B(e) {
     messages: n,
     isAfter: r
   } = e, i = o().map(n, G);
-  k({
+  j({
     addedMessages: i
   }), r ? A = A.concat(i) : (A = i, R = {}), o().forEach(i, e => {
     R[e.id] = !0
   }), P = !1, D = t, x = (0, l.zO)(), L = !0
 }
 
-function F() {
+function V() {
   P = !1
 }
 
-function V(e) {
+function F(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
   if ((0, f.Z)(e) && !S.V$x.SELF_MENTIONABLE_SYSTEM.has(e.type)) return null;
   null == t && (t = e.channel_id);
@@ -145,9 +145,9 @@ function Z(e) {
       suppressRoles: !1,
       suppressEveryone: !1
     })) return !1;
-  let i = V(n, t);
+  let i = F(n, t);
   if (null == i) return !1;
-  (A = A.slice()).unshift(i), R[i.id] = !0, k({
+  (A = A.slice()).unshift(i), R[i.id] = !0, j({
     addedMessages: [i]
   })
 }
@@ -167,7 +167,7 @@ function H(e) {
 
 function W(e) {
   if (null == R[e]) return !1;
-  delete R[e], k({
+  delete R[e], j({
     deletedMessages: o().filter(A, t => {
       let {
         id: n
@@ -204,9 +204,9 @@ function z(e) {
   R = {};
   let i = [];
   r && A.forEach(e => {
-    let t = V(e);
+    let t = F(e);
     null != t && (i.push(t), R[t.id] = !0)
-  }), j(A = i), 0 === A.length && (L = !1)
+  }), k(A = i), 0 === A.length && (L = !1)
 }
 
 function q() {
@@ -225,13 +225,13 @@ function X(e) {
   A = o().filter(A, e => {
     let r = m.Z.getChannel(e.channel_id);
     return null != r && r.getGuildId() !== t.id || (delete R[e.id], n.push(e), !1)
-  }), k({
+  }), j({
     deletedMessages: n
   })
 }
 
 function J() {
-  k({
+  j({
     deletedMessages: o().filter(A, e => v.Z.isBlockedOrIgnoredForMessage(e))
   }), A = A.filter(e => !v.Z.isBlockedOrIgnoredForMessage(e))
 }
@@ -240,7 +240,7 @@ function $(e) {
   let {
     channel: t
   } = e, n = [];
-  A = o().filter(A, e => e.channel_id !== t.id || (delete R[e.id], n.push(e), !1)), k({
+  A = o().filter(A, e => e.channel_id !== t.id || (delete R[e.id], n.push(e), !1)), j({
     deletedMessages: n
   })
 }
@@ -253,7 +253,7 @@ function et(e) {
   let {
     size: t
   } = e;
-  k({
+  j({
     deletedMessages: A.slice(t)
   });
   for (let e = t; e < A.length; ++e) delete R[A[e].id];
@@ -309,7 +309,7 @@ I(er, "displayName", "RecentMentionsStore");
 let ei = new er(c.Z, {
   LOAD_RECENT_MENTIONS: U,
   LOAD_RECENT_MENTIONS_SUCCESS: B,
-  LOAD_RECENT_MENTIONS_FAILURE: F,
+  LOAD_RECENT_MENTIONS_FAILURE: V,
   SET_RECENT_MENTIONS_FILTER: z,
   CLEAR_MENTIONS: ee,
   TRUNCATE_MENTIONS: et,

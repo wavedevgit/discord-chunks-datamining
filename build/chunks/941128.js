@@ -87,13 +87,13 @@ function M(e, t, n, r) {
   0 !== s && (n ? -1 === s && (O.push(o), L()) : (s > 0 && O.splice(s, 1), O.unshift(o), L())), !n && I && _.Z.resume(), D()
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = (0, p.Tu)(e, t),
     r = S.indexOf(n); - 1 !== r && S.splice(r, 1);
   let i = x(e, t); - 1 !== i && (O.splice(i, 1), D()), L()
 }
 
-function k(e) {
+function j(e) {
   let {
     applicationId: t,
     branchId: n
@@ -102,7 +102,7 @@ function k(e) {
 }
 
 function U(e) {
-  F(e), Z(e)
+  V(e), Z(e)
 }
 
 function G(e) {
@@ -122,15 +122,15 @@ function B(e) {
   M(t, n, r, "Patch")
 }
 
-function F(e) {
+function V(e) {
   let {
     applicationId: t,
     branchId: n
   } = e;
-  j(t, n)
+  k(t, n)
 }
 
-function V(e) {
+function F(e) {
   let {
     applicationId: t,
     branchId: n
@@ -201,7 +201,7 @@ function Y(e) {
           application_id: t,
           branch_id: n
         } = e;
-        j(t, n)
+        k(t, n)
       }
     }
   }
@@ -260,12 +260,12 @@ class X extends(r = a.ZP.Store) {
 }
 v(X, "displayName", "DispatchManagerStore");
 let J = new X(l.Z, {
-  DISPATCH_APPLICATION_INSTALL: k,
+  DISPATCH_APPLICATION_INSTALL: j,
   DISPATCH_APPLICATION_UPDATE: B,
   DISPATCH_APPLICATION_UNINSTALL: U,
-  DISPATCH_APPLICATION_CANCEL: F,
+  DISPATCH_APPLICATION_CANCEL: V,
   DISPATCH_APPLICATION_REPAIR: G,
-  DISPATCH_APPLICATION_MOVE_UP: V,
+  DISPATCH_APPLICATION_MOVE_UP: F,
   DISPATCH_APPLICATION_REMOVE_FINISHED: Z,
   DISPATCH_APPLICATION_STATE_UPDATE: H,
   DISPATCH_APPLICATION_ERROR: Y,

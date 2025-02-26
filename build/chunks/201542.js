@@ -20,7 +20,7 @@ var r = n(200651),
   g = n(981631),
   E = n(388032),
   v = n(946608);
-let b = i.lazy(() => Promise.all([n.e("26460"), n.e("89792")]).then(n.bind(n, 711635)));
+let b = i.lazy(() => n.e("89792").then(n.bind(n, 711635)));
 
 function y(e) {
   let {
@@ -83,10 +83,10 @@ let I = i.memo(function(e) {
     P = i.useRef(null),
     [D, w] = i.useState(0),
     [L, x] = i.useState(I),
-    [M, j] = i.useState(!1),
-    [k, U] = i.useState(!1),
+    [M, k] = i.useState(!1),
+    [j, U] = i.useState(!1),
     [G, B] = i.useState(!1),
-    [F, V] = i.useState(!1),
+    [V, F] = i.useState(!1),
     [Z, H] = i.useState("none"),
     [W, Y] = i.useState(() => "function" == typeof o ? o() : o),
     K = i.useRef(void 0),
@@ -102,7 +102,7 @@ let I = i.memo(function(e) {
     }, []),
     X = i.useCallback(() => {
       U(!1), null == K.current && (K.current = setTimeout(() => {
-        V(!1), K.current = void 0
+        F(!1), K.current = void 0
       }, 500))
     }, []),
     J = i.useCallback(() => {
@@ -116,10 +116,10 @@ let I = i.memo(function(e) {
     }, [R]),
     ee = i.useCallback(e => {
       let t = (0, h.A)(e, 1);
-      j(0 === t), Y(t), null == d || d(t)
+      k(0 === t), Y(t), null == d || d(t)
     }, [d]),
     et = i.useCallback(() => {
-      j(!M), null == p || p(!M)
+      k(!M), null == p || p(!M)
     }, [M, p]),
     en = i.useCallback(() => {
       B(!0)
@@ -131,14 +131,14 @@ let I = i.memo(function(e) {
       let t = P.current;
       if (null == L || null == t) return;
       let n = e * L;
-      w(n), t.currentTime = n, V(!0), clearTimeout(K.current), K.current = void 0
+      w(n), t.currentTime = n, F(!0), clearTimeout(K.current), K.current = void 0
     }, [L]);
   i.useEffect(() => {
-    !F && k && V(!0)
-  }, [k, F]);
+    !V && j && F(!0)
+  }, [j, V]);
   let eo = i.useRef(null),
     ea = {
-      played: F,
+      played: V,
       currentTime: D,
       onPause: C,
       onPlay: A
@@ -153,8 +153,8 @@ let I = i.memo(function(e) {
       onPause: n,
       onPlay: r
     } = es.current;
-    if (e || k) {
-      if (k) {
+    if (e || j) {
+      if (j) {
         var i, o;
         eo.current = performance.now(), null == r || r(!1, t, (null !== (o = null === (i = P.current) || void 0 === i ? void 0 : i.duration) && void 0 !== o ? o : 0) * _.Z.Millis.SECOND)
       } else {
@@ -164,16 +164,16 @@ let I = i.memo(function(e) {
         null == n || n(t, i), eo.current = null
       }
     }
-  }, [k]), O(P, k, w), S(n, k, U);
-  let el = k ? l.fpf : l.o1U,
-    ec = k ? E.NW.string(E.t.ZcgDJS) : E.NW.string(E.t.RscU7O);
+  }, [j]), O(P, j, w), S(n, j, U);
+  let el = j ? l.fpf : l.o1U,
+    ec = j ? E.NW.string(E.t.ZcgDJS) : E.NW.string(E.t.RscU7O);
   "Safari" === platform.name ? t = (0, r.jsx)(i.Suspense, {
     children: (0, r.jsx)(b, {
       ref: P,
       className: v.audioElement,
       src: n,
       preload: Z,
-      playing: k && !G,
+      playing: j && !G,
       onEnded: J,
       onLoadedMetadata: Q,
       onError: $,
@@ -190,7 +190,7 @@ let I = i.memo(function(e) {
     onError: $,
     muted: M,
     volume: W,
-    playing: k && !G,
+    playing: j && !G,
     children: (0, r.jsx)("source", {
       src: n
     })
@@ -201,7 +201,7 @@ let I = i.memo(function(e) {
     } = (0, l.bWb)();
   return (0, r.jsxs)("div", {
     className: a()(v.container, {
-      [v.playing]: k
+      [v.playing]: j
     }),
     onMouseEnter: q,
     children: [(0, r.jsx)("div", {
@@ -217,7 +217,7 @@ let I = i.memo(function(e) {
       "aria-label": ec,
       children: (0, r.jsx)(el, {
         className: a()(v.playIcon, {
-          [v.oldPlayIconSpacing]: !ed && !k
+          [v.oldPlayIconSpacing]: !ed && !j
         }),
         size: "custom",
         color: "currentColor",
@@ -229,13 +229,13 @@ let I = i.memo(function(e) {
       waveform: g,
       currentTime: D,
       duration: null != L ? L : 1,
-      playing: k,
-      played: F,
+      playing: j,
+      played: V,
       onDrag: ei,
       onDragStart: en,
       onDragEnd: er
     }), (0, r.jsx)(y, {
-      played: F,
+      played: V,
       currentTime: D,
       duration: L
     }), (0, r.jsx)(f.Z, {

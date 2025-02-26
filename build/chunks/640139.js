@@ -4,8 +4,8 @@ r.d(t, {
 }), r(266796);
 var n = r(200651),
   o = r(481060),
-  a = r(11658),
-  s = r(773),
+  s = r(11658),
+  a = r(969867),
   c = r(535396),
   i = r(217719);
 
@@ -18,13 +18,13 @@ function l(e) {
       var r, n, o = function(e, t) {
         if (null == e) return {};
         var r, n, o = {},
-          a = Object.keys(e);
-        for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+          s = Object.keys(e);
+        for (n = 0; n < s.length; n++) r = s[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
         return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+        var s = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
       }
       return o
     }(e, ["powerup"]);
@@ -66,7 +66,7 @@ function l(e) {
           }), (() => {
             switch (l.type) {
               case c.U.LEVEL:
-                return (0, n.jsx)(a.KV, {
+                return (0, n.jsx)(s.KV, {
                   index: 0
                 });
               case c.U.PERK:
@@ -76,11 +76,20 @@ function l(e) {
                   children: l.description
                 })
             }
-          })(), (0, n.jsx)(s.Z, {
-            className: i.footer,
-            skuId: l.skuId,
-            active: l.active
-          })]
+          })(), (() => {
+            switch (l.type) {
+              case c.U.LEVEL:
+                return (0, n.jsx)(s._R, {
+                  powerup: l
+                });
+              case c.U.PERK:
+                return (0, n.jsx)(a.Z, {
+                  className: i.footer,
+                  skuId: l.skuId,
+                  active: l.active
+                })
+            }
+          })()]
         })]
       }), (0, n.jsx)("div", {
         className: i.exampleImage,

@@ -189,20 +189,20 @@ function N(e) {
         n ? D({
           action: t,
           location: e
-        }) : j(e)
+        }) : k(e)
       })
     }
   }
 
-  function j(e) {
+  function k(e) {
     var t = Q.location,
       n = U.indexOf(t.key); - 1 === n && (n = 0);
     var r = U.indexOf(e.key); - 1 === r && (r = 0);
     var i = n - r;
-    i && (x = !0, V(i))
+    i && (x = !0, F(i))
   }
-  var k = C(T()),
-    U = [k.key];
+  var j = C(T()),
+    U = [j.key];
 
   function G(e) {
     return A + p(e)
@@ -234,7 +234,7 @@ function N(e) {
     })
   }
 
-  function F(e, r) {
+  function V(e, r) {
     var i = "REPLACE",
       o = _(e, r, R(), Q.location);
     P.confirmTransitionTo(o, i, h, function(e) {
@@ -258,16 +258,16 @@ function N(e) {
     })
   }
 
-  function V(e) {
+  function F(e) {
     t.go(e)
   }
 
   function Z() {
-    V(-1)
+    F(-1)
   }
 
   function H() {
-    V(1)
+    F(1)
   }
   var W = 0;
 
@@ -295,11 +295,11 @@ function N(e) {
   var Q = {
     length: t.length,
     action: "POP",
-    location: k,
+    location: j,
     createHref: G,
     push: B,
-    replace: F,
-    go: V,
+    replace: V,
+    go: F,
     goBack: Z,
     goForward: H,
     block: z,
@@ -396,31 +396,31 @@ function L(e) {
         n ? I({
           action: t,
           location: e
-        }) : j(e)
+        }) : k(e)
       })
     }
   }
 
-  function j(e) {
+  function k(e) {
     var t = J.location,
       n = B.lastIndexOf(p(t)); - 1 === n && (n = 0);
     var r = B.lastIndexOf(p(e)); - 1 === r && (r = 0);
     var i = n - r;
     i && (T = !0, H(i))
   }
-  var k = P(),
-    U = v(k);
-  k !== U && w(U);
+  var j = P(),
+    U = v(j);
+  j !== U && w(U);
   var G = O(),
     B = [p(G)];
 
-  function F(e) {
+  function V(e) {
     var t = document.querySelector("base"),
       n = "";
     return t && t.getAttribute("href") && (n = R(window.location.href)), n + "#" + v(f + p(e))
   }
 
-  function V(e, t) {
+  function F(e, t) {
     var n = "PUSH",
       r = _(e, void 0, void 0, J.location);
     S.confirmTransitionTo(r, n, o, function(e) {
@@ -496,8 +496,8 @@ function L(e) {
     length: t.length,
     action: "POP",
     location: G,
-    createHref: F,
-    push: V,
+    createHref: V,
+    push: F,
     replace: Z,
     go: H,
     goBack: W,

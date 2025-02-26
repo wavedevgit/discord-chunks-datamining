@@ -18,8 +18,8 @@ var r = t(200651),
   g = t(221292),
   v = t(687158),
   y = t(510659),
-  I = t(113557),
-  h = t(867176),
+  h = t(113557),
+  I = t(867176),
   j = t(451834),
   x = t(502762),
   _ = t(544989),
@@ -172,7 +172,7 @@ function R(e) {
                 })
               })]
             }), (0, r.jsxs)("header", {
-              children: [(0, r.jsx)(h.Z, {
+              children: [(0, r.jsx)(I.Z, {
                 user: n,
                 displayProfile: $,
                 profileType: L.y0.FULL_SIZE
@@ -185,7 +185,7 @@ function R(e) {
                 className: w.backdrop
               }), (0, r.jsxs)("div", {
                 className: w.headerInner,
-                children: [(0, r.jsx)(I.Z, {
+                children: [(0, r.jsx)(h.Z, {
                   location: "UserProfileModal",
                   user: n,
                   displayProfile: $,

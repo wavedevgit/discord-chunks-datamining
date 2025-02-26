@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => k
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -121,13 +121,13 @@ function M(e) {
   } = e, {
     analyticsLocations: o
   } = (0, f.ZP)(d.Z.GIFT_BUTTON), [a, u] = i.useState(!1), b = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([v.default], () => v.default.getCurrentUser()), D = null != R ? y.default.age(R.id) : 0, M = !t && b && D >= L, {
-    enabled: j
+    enabled: k
   } = m.O.useExperiment({
     location: "gift-button"
-  }), k = [];
-  j && M && k.push(l.z.NITROWEEN_COACHMARKS);
-  let [U, G] = (0, _.US)(k), B = null != U, F = (0, O.Ft)(n), {
-    Component: V,
+  }), j = [];
+  k && M && j.push(l.z.NITROWEEN_COACHMARKS);
+  let [U, G] = (0, _.US)(j), B = null != U, V = (0, O.Ft)(n), {
+    Component: F,
     events: Z,
     play: H
   } = (0, c.$)();
@@ -135,7 +135,7 @@ function M(e) {
   let W = () => {
     (0, h.Z)({
       isGift: !0,
-      giftRecipient: null == F ? void 0 : F,
+      giftRecipient: null == V ? void 0 : V,
       giftMessage: N.NW.string(N.t["rX/m/f"]),
       initialPlanId: null,
       analyticsLocations: o,
@@ -170,11 +170,11 @@ function M(e) {
       }
     }, Z), {
       children: (0, r.jsx)(x, {
-        animatedIconComponent: V,
+        animatedIconComponent: F,
         hovered: a,
         isCoachmarkDismissed: !B
       })
     }))]
   })
 }
-let j = i.memo(M)
+let k = i.memo(M)

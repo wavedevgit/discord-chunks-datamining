@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j,
+  Z: () => k,
   u: () => L
 }), n(47120);
 var r = n(200651),
@@ -100,7 +100,7 @@ function M(e, t) {
     "--custom-emoji-sprite-col": e % R
   }
 }
-let j = function(e) {
+let k = function(e) {
   let {
     tabIndex: t,
     className: n,
@@ -110,13 +110,13 @@ let j = function(e) {
     "aria-controls": R,
     focusProps: P,
     shouldShowSoundmojiCoachmark: D = !1
-  } = e, [j, k] = i.useState(!1), [U, G] = i.useState(50), B = j || T, F = (0, v.l)(I, "emojiButton", B ? "Hovered" : "Normal"), V = M(U, (0, f.Q3)("EmojiButton")), Z = i.useCallback(() => {
+  } = e, [k, j] = i.useState(!1), [U, G] = i.useState(50), B = k || T, V = (0, v.l)(I, "emojiButton", B ? "Hovered" : "Normal"), F = M(U, (0, f.Q3)("EmojiButton")), Z = i.useCallback(() => {
     if (B) return;
     let e = Math.floor(Math.random() * w);
-    k(!0), G(e), (0, _.x)(O.qR.EmojiButtonMouseEntered)
-  }, [B, k, G]), H = i.useCallback(() => {
-    k(!1)
-  }, [k]), W = i.useCallback(() => (0, _.x)(O.qR.EmojiButtonFocused), []), Y = (0, h.B4)({
+    j(!0), G(e), (0, _.x)(O.qR.EmojiButtonMouseEntered)
+  }, [B, j, G]), H = i.useCallback(() => {
+    j(!1)
+  }, [j]), W = i.useCallback(() => (0, _.x)(O.qR.EmojiButtonFocused), []), Y = (0, h.B4)({
     location: "EmojiButton"
   }), [K, z] = (0, p.US)(Y ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], void 0, !0), q = K === c.z.TRIAL_NUX_EMOJI_BUTTON, Q = !T && q, X = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [J, $] = i.useState(!1), [ee, et] = i.useState(!1), en = (0, m.V2)({
     location: "EmojiButton"
@@ -143,7 +143,7 @@ let j = function(e) {
         look: u.zxk.Looks.BLANK,
         size: u.zxk.Sizes.NONE,
         tabIndex: t,
-        className: a()(F, n),
+        className: a()(V, n),
         onMouseEnter: () => {
           var e;
           Z(), null === (e = i.onMouseEnter) || void 0 === e || e.call(i), E.default.track(b.rMx.EMOJI_PICKER_BUTTON_HOVERED)
@@ -175,7 +175,7 @@ let j = function(e) {
             } = e;
             return (0, r.jsxs)(s.animated.div, {
               className: I.spriteContainer,
-              style: C(N({}, V), {
+              style: C(N({}, F), {
                 transform: t.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
               }),
               children: [(0, r.jsx)("div", {

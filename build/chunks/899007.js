@@ -82,15 +82,15 @@ function R(e) {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: x
-  } = (0, m.KZ)(), M = _.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, O.p9.TIER_2), j = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
-    live: k
-  } = (0, g.Z)(t.id), [U] = k, {
+  } = (0, m.KZ)(), M = _.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, O.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
+    live: j
+  } = (0, g.Z)(t.id), [U] = j, {
     status: G,
     isMobileOnline: B
   } = (0, s.cj)([p.Z], () => ({
     status: (0, c.Z)(U) ? y.Skl.STREAMING : p.Z.getStatus(t.id),
     isMobileOnline: p.Z.isMobileOnline(t.id)
-  })), F = void 0 !== D ? D : G, V = I === b.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(S.avatar, {
+  })), V = void 0 !== D ? D : G, F = I === b.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(S.avatar, {
     [S.biteSize]: I === b.y0.BITE_SIZE,
     [S.fullSize]: I === b.y0.FULL_SIZE,
     [S.panel]: I === b.y0.PANEL
@@ -101,16 +101,16 @@ function R(e) {
   } = (0, E.Z)({
     user: t,
     guildId: null != n ? n.guildId : o,
-    size: V,
+    size: F,
     animateOnHover: N
   }), K = (0, r.jsx)(C, {
     src: W,
     avatarDecoration: H,
-    size: V,
+    size: F,
     "aria-label": t.username,
     imageClassName: null != R ? S.overlay : void 0,
-    status: j ? y.Skl.UNKNOWN : F,
-    statusBackdropColor: M && !j ? (0, l.QFD)(w) : void 0,
+    status: k ? y.Skl.UNKNOWN : V,
+    statusBackdropColor: M && !k ? (0, l.QFD)(w) : void 0,
     isMobile: B,
     statusTooltip: !0,
     statusTooltipDelay: b.vB

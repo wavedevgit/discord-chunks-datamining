@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => j
 }), n(47120), n(301563), n(411104), n(653041), n(998459);
 var r, i = n(348327),
   o = n.n(i),
@@ -192,7 +192,7 @@ function M(e) {
   if (o()(e.stream, I)) return !1;
   I = null !== (t = e.stream) && void 0 !== t ? t : null
 }
-class j extends(r = a.ZP.Store) {
+class k extends(r = a.ZP.Store) {
   initialize() {
     x(), this.waitFor(p.Z), this.syncWith([_.Z], x)
   }
@@ -200,8 +200,8 @@ class j extends(r = a.ZP.Store) {
     return I
   }
 }
-m(j, "displayName", "ExternalStreamingStore");
-let k = new j(l.Z, {
+m(k, "displayName", "ExternalStreamingStore");
+let j = new k(l.Z, {
   STREAMING_UPDATE: M,
   USER_CONNECTIONS_UPDATE: () => L._check()
 })

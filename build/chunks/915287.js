@@ -173,13 +173,13 @@ function O(e, t, n, o) {
       renderRow: L,
       renderFooter: x,
       renderSidebar: M,
-      renderListHeader: j,
-      stickyListHeader: k,
+      renderListHeader: k,
+      stickyListHeader: j,
       wrapSection: U,
       getAnchorId: G,
       paddingTop: B,
-      paddingBottom: F,
-      fade: V = !1,
+      paddingBottom: V,
+      fade: F = !1,
       customTheme: Z = !1,
       chunkSize: H,
       style: W,
@@ -222,7 +222,7 @@ function O(e, t, n, o) {
       sidebarHeight: P,
       listHeaderHeight: D,
       paddingTop: B,
-      paddingBottom: F,
+      paddingBottom: V,
       chunkSize: H,
       getScrollerState: ea,
       getAnchorId: G
@@ -282,7 +282,7 @@ function O(e, t, n, o) {
       onScroll: ey,
       className: a()(g, {
         [e]: !0,
-        [t]: V,
+        [t]: F,
         [n]: Z,
         [d.scrolling]: en
       }),
@@ -303,8 +303,8 @@ function O(e, t, n, o) {
           containerRef: et,
           children: b({
             items: ec,
-            renderListHeader: j,
-            stickyListHeader: k,
+            renderListHeader: k,
+            stickyListHeader: j,
             renderSection: w,
             renderRow: L,
             renderFooter: x,
@@ -312,7 +312,7 @@ function O(e, t, n, o) {
             spacerTop: es
           })
         })
-      }), [J, Y, K, z, q, Q, el, X, ec, j, k, w, L, x, U, es]), i.useMemo(() => y({
+      }), [J, Y, K, z, q, Q, el, X, ec, k, j, w, L, x, U, es]), i.useMemo(() => y({
         isSidebarVisible: eu,
         renderSidebar: M,
         sidebarHeight: P,

@@ -198,15 +198,15 @@ function C(e) {
     atMaxMemberCapacity: x = !1,
     footer: M = null
   } = e, {
-    tag: j,
-    badge: k,
+    tag: k,
+    badge: j,
     branding: {
       primaryColor: U,
       secondaryColor: G
     },
     bannerHash: B,
-    gameActivity: F
-  } = n, V = (0, l.Z)(n.games), [Z, H] = i.useState(!1), W = i.useRef(null), [Y, K] = i.useState(!1), z = i.useCallback(() => {
+    gameActivity: V
+  } = n, F = (0, l.Z)(n.games), [Z, H] = i.useState(!1), W = i.useRef(null), [Y, K] = i.useState(!1), z = i.useCallback(() => {
     H(!0)
   }, []), q = i.useCallback(() => {
     H(!1)
@@ -272,13 +272,13 @@ function C(e) {
               children: [(0, r.jsx)(m.A, {
                 width: 16,
                 height: 16,
-                badge: k.badgeKind,
-                primaryTintColor: k.primaryColor,
-                secondaryTintColor: k.secondaryColor
+                badge: j.badgeKind,
+                primaryTintColor: j.primaryColor,
+                secondaryTintColor: j.secondaryColor
               }), (0, r.jsx)(s.Text, {
                 variant: "text-xs/medium",
                 color: "text-primary",
-                children: j
+                children: k
               })]
             })
           })]
@@ -339,9 +339,9 @@ function C(e) {
       }), (0, r.jsx)("div", {
         className: v.cardFooterGames,
         children: (0, r.jsx)(p.Z, {
-          games: V,
+          games: F,
           prioritizedGameIds: O,
-          gameActivity: F,
+          gameActivity: V,
           onInteraction: et("games")
         })
       })]

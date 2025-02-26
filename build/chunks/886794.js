@@ -18,8 +18,8 @@ var r = t(200651),
   g = t(280885),
   v = t(900927),
   y = t(678738),
-  I = t(502762),
-  h = t(530),
+  h = t(502762),
+  I = t(530),
   j = t(679332),
   x = t(544989),
   _ = t(228168),
@@ -60,7 +60,7 @@ function S(e) {
         className: N.root,
         hideShadow: !0,
         "aria-label": Z.NW.string(Z.t["3N/J2t"]),
-        children: [(0, r.jsxs)(I.Z, {
+        children: [(0, r.jsxs)(h.Z, {
           user: n,
           displayProfile: R,
           profileType: _.y0.FULL_SIZE,
@@ -87,7 +87,7 @@ function S(e) {
             })]
           }), (0, r.jsxs)("div", {
             className: N.body,
-            children: [(0, r.jsx)(h.Z, {
+            children: [(0, r.jsx)(I.Z, {
               user: n,
               profileType: _.y0.FULL_SIZE,
               nickname: d.ZP.getName(U, S, n),
@@ -98,7 +98,7 @@ function S(e) {
                 profileType: _.y0.FULL_SIZE,
                 onClose: w
               })
-            }), (0, r.jsx)(I.Z.Overlay, {
+            }), (0, r.jsx)(h.Z.Overlay, {
               className: N.overlay,
               children: (0, r.jsxs)("div", {
                 className: E.container,

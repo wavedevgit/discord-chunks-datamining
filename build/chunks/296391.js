@@ -19,8 +19,8 @@ var o = t(442837),
   g = t(744802),
   v = t(493043),
   y = t(864141),
-  I = t(228168),
-  h = t(981631),
+  h = t(228168),
+  I = t(981631),
   j = t(388032),
   x = t(387706),
   _ = t(865152);
@@ -82,11 +82,11 @@ function O(e) {
       heading: j.NW.string(j.t.M0zgnZ),
       subheading: U ? j.NW.format(j.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, r.jsx)(i.eee, {
-          href: d.Z.getArticleURL(h.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: d.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
       }) : void 0,
-      scrollIntoView: N === I.Tb.RECENT_ACTIVITY,
+      scrollIntoView: N === h.Tb.RECENT_ACTIVITY,
       children: C.map(e => (0, r.jsx)(g.Z, {
         location: "UserProfileModalActivity",
         user: n,

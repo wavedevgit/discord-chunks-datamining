@@ -9,7 +9,7 @@ n.d(t, {
   aC: () => L,
   pI: () => I,
   sR: () => w,
-  tt: () => j
+  tt: () => k
 }), n(653041);
 var r = n(399606),
   i = n(704215),
@@ -142,7 +142,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     location: t
   } = e;

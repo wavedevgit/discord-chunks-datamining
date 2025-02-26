@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  default: () => j
+  default: () => k
 }), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120), n(301563);
 var r = n(873546),
   i = n(636977),
@@ -64,7 +64,7 @@ let M = {
   analyticsLocations: []
 };
 
-function j(e) {
+function k(e) {
   var t;
   let {
     skipExtensionCheck: o,
@@ -150,13 +150,13 @@ function j(e) {
   let {
     host: A,
     hostname: L,
-    pathname: j,
-    search: k,
+    pathname: k,
+    search: j,
     hash: U
   } = null !== (t = R.Z.toURLSafe(e)) && void 0 !== t ? t : {}, G = R.Z.isDiscordHostname(null != L ? L : null) || R.Z.isDiscordLocalhost(null != A ? A : null, null != L ? L : null);
-  if (G && ((null == j ? void 0 : j.startsWith("/application-directory")) || (null == j ? void 0 : j.startsWith("/discovery/applications")))) {
-    let e = j.split("/"),
-      t = null == j ? void 0 : j.startsWith("/discovery/applications"),
+  if (G && ((null == k ? void 0 : k.startsWith("/application-directory")) || (null == k ? void 0 : k.startsWith("/discovery/applications")))) {
+    let e = k.split("/"),
+      t = null == k ? void 0 : k.startsWith("/discovery/applications"),
       r = e[t ? 3 : 2],
       i = "search" === r,
       o = t && "categories" === r && "featured" !== e[4];
@@ -164,7 +164,7 @@ function j(e) {
       let r, a, s;
       if (null == t || t.preventDefault(), i) {
         var l, c, u;
-        let e = new URLSearchParams(k);
+        let e = new URLSearchParams(j);
         r = null !== (l = e.get("q")) && void 0 !== l ? l : void 0, a = null !== (c = e.get("category_id")) && void 0 !== c ? c : void 0, s = null !== (u = e.get("page")) && void 0 !== u ? u : void 0
       } else o && (a = e[4]);
       return n.e("11866").then(n.bind(n, 749681)).then(e => {
@@ -182,14 +182,14 @@ function j(e) {
       }), !0
     }
   }
-  if (null != j && G && R.Z.isAppRoute(j)) {
+  if (null != k && G && R.Z.isAppRoute(k)) {
     let e = {
       navigationReplace: !1,
       openChannel: !0
     };
-    return null != k && (e.search = k), null != U && (e.hash = U), t => (null == t || t.preventDefault(), (0, v.Z)(j, e), !0)
+    return null != j && (e.search = j), null != U && (e.hash = U), t => (null == t || t.preventDefault(), (0, v.Z)(k, e), !0)
   }
-  if (null != j && G) {
+  if (null != k && G) {
     let {
       getOAuth2AuthorizeProps: t,
       openOAuth2ModalWithCreateGuildModal: r
@@ -198,8 +198,8 @@ function j(e) {
       application_id: i.clientId
     }), r(i), !0)
   }
-  let B = (0, E.Ao)(j);
-  if (null != j && G && null != B) return e => {
+  let B = (0, E.Ao)(k);
+  if (null != k && G && null != B) return e => {
     null == e || e.preventDefault();
     let t = N.Z.getGuildId();
     null != B.guildId && "" !== B.guildId && B.guildId !== t && (0, v.Z)(D.Z5c.CHANNEL(B.guildId));
@@ -208,17 +208,17 @@ function j(e) {
       eventId: n.id
     }), !0
   };
-  if (G && (null == j ? void 0 : j.startsWith("/settings/"))) {
+  if (G && (null == k ? void 0 : k.startsWith("/settings/"))) {
     let {
       default: e
-    } = n(722589), t = e(j);
+    } = n(722589), t = e(k);
     if (null != t) return e => (null == e || e.preventDefault(), l.Z.open(t.section, t.subsection, {
       openWithoutBackstack: !1,
       impressionSource: t.source,
       analyticsLocations: s
     }), !0)
   }
-  return G && (null == j ? void 0 : j.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, y.navigateToQuestHome)({
+  return G && (null == k ? void 0 : k.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, y.navigateToQuestHome)({
     fromContent: i.j.QUEST_BADGE
   }), !0) : o || null == (0, S.v)(e) ? void 0 : t => (null == t || t.preventDefault(), O.Z.show(e), !0)
 }

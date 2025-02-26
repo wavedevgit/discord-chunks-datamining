@@ -109,8 +109,8 @@ function C(e) {
     M = w ? S.NW.string(S.t["Cia+Aw"]) : S.NW.string(S.t.NgXl3N);
   if (null == A || !(0, E.Eb)(A)) return null;
   let {
-    customInstallUrl: j
-  } = A, k = null == j || g.Z.isDiscordUrl(j) ? a.qJs : a.Gr1, U = w ? void 0 : k;
+    customInstallUrl: k
+  } = A, j = null == k || g.Z.isDiscordUrl(k) ? a.qJs : a.Gr1, U = w ? void 0 : j;
   return m.wS ? (0, r.jsx)(a.yRy, {
     renderPopout: e => {
       let {

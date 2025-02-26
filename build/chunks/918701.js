@@ -32,9 +32,9 @@ n.d(t, {
   WP: () => J,
   Xh: () => eo,
   Xv: () => eg,
-  ZZ: () => V,
+  ZZ: () => F,
   Zp: () => ts,
-  _D: () => F,
+  _D: () => V,
   _j: () => e5,
   _p: () => tn,
   b7: () => eW,
@@ -135,8 +135,8 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = 2592e6,
-  k = new Set([l.n.PREMIUM_EXTENSION, l.n.PREMIUM_PERMANENT]);
+let k = 2592e6,
+  j = new Set([l.n.PREMIUM_EXTENSION, l.n.PREMIUM_PERMANENT]);
 
 function U(e) {
   try {
@@ -151,16 +151,16 @@ function U(e) {
 let G = e => e.application_id === P.Ev || e.platform === R.M7m.XBOX,
   B = e => e.platform === R.M7m.PS4 || e.platform === R.M7m.PS5;
 
-function F(e, t) {
+function V(e, t) {
   if (null == e) return !1;
   let n = e.name.toLowerCase(),
     r = N.r.build(t.config).application.name.toLowerCase();
   return G(e) || B(e) ? n === r : null != e.application_id && Z(e.application_id, t)
 }
 
-function V(e, t) {
+function F(e, t) {
   for (let [n, r] of e)
-    if (F(t, r) && !Y(r)) return r
+    if (V(t, r) && !Y(r)) return r
 }
 
 function Z(e, t) {
@@ -188,7 +188,7 @@ function Y(e) {
 
 function K(e) {
   if (!Y(e)) return !1;
-  let t = Date.now() - j,
+  let t = Date.now() - k,
     n = new Date(e.config.expiresAt).valueOf();
   return null != e.config.expiresAt && !(n <= t)
 }
@@ -481,7 +481,7 @@ function eO(e, t) {
 function eS(e, t) {
   if (null == t || null == e) return null;
   for (let n of t) {
-    let t = V(e, n);
+    let t = F(e, n);
     if (null != t) return t
   }
   return null
@@ -568,11 +568,11 @@ let ex = (e, t) => {
     }), (0, h.JG)(es(e))
   },
   eM = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
-  ej = e => e$(e) || S.Z.isProgressingOnDesktop(e.id),
-  ek = (e, t) => {
+  ek = e => e$(e) || S.Z.isProgressingOnDesktop(e.id),
+  ej = (e, t) => {
     var n, r, o, a;
     let s = null === (a = e.userStatus) || void 0 === a ? void 0 : null === (o = a.progress) || void 0 === o ? void 0 : null === (r = o[t.eventName]) || void 0 === r ? void 0 : null === (n = r.heartbeat) || void 0 === n ? void 0 : n.lastBeatAt;
-    if (null == s || !ej(e)) return 0;
+    if (null == s || !ek(e)) return 0;
     let l = Date.now() - new Date(s).valueOf();
     return (0, i.floor)(l / m.Z.Millis.SECOND, 2)
   },
@@ -584,7 +584,7 @@ let ex = (e, t) => {
       let n = S.Z.getOptimisticProgress(e.id, t.eventName);
       return null == n || n < l ? l : n
     }
-    return l + ek(e, t)
+    return l + ej(e, t)
   },
   eG = .99,
   eB = (e, t) => {
@@ -594,7 +594,7 @@ let ex = (e, t) => {
     let o = Math.min(r * eG, eU(e, t));
     return Math.max((0, i.floor)(o, 2), 0)
   },
-  eF = e => {
+  eV = e => {
     var t, n;
     let {
       quest: r,
@@ -615,7 +615,7 @@ let ex = (e, t) => {
       taskType: l
     }
   },
-  eV = e => a.T.ALL.has(e) ? e : null,
+  eF = e => a.T.ALL.has(e) ? e : null,
   eZ = e => {
     var t, n;
     let {
@@ -628,14 +628,14 @@ let ex = (e, t) => {
           o = null == t ? void 0 : null === (r = t.heartbeat) || void 0 === r ? void 0 : r.lastBeatAt;
         return null != i && null != o ? new Date(i).valueOf() > new Date(o).valueOf() ? -1 : 1 : null == i && null == o && (null == e ? void 0 : e.updatedAt) != null && (null == t ? void 0 : t.updatedAt) != null ? new Date(e.updatedAt).valueOf() > new Date(t.updatedAt).valueOf() ? -1 : 1 : null != i && null == o ? -1 : 1
       }).filter(E.lm)) {
-      let t = eV(e.eventName);
-      if (null != t && (null == i ? void 0 : i.has(t))) return eF({
+      let t = eF(e.eventName);
+      if (null != t && (null == i ? void 0 : i.has(t))) return eV({
         quest: r,
         taskType: t,
         includeTaskTypes: i
       })
     }
-    return eF({
+    return eV({
       quest: r,
       includeTaskTypes: i
     })
@@ -649,16 +649,16 @@ let ex = (e, t) => {
   } : eq(e) ? eZ({
     quest: e,
     includeTaskTypes: null != t ? t : e$(e) ? a.T.CONSOLE : a.T.ALL
-  }) : eQ(e) ? eF({
+  }) : eQ(e) ? eV({
     quest: e,
     taskType: a.X.WATCH_VIDEO
-  }) : eR(e) ? eF({
+  }) : eR(e) ? eV({
     quest: e,
     taskType: a.X.PLAY_ON_DESKTOP
-  }) : eC(e) ? eF({
+  }) : eC(e) ? eV({
     quest: e,
     taskType: a.X.PLAY_ACTIVITY
-  }) : eF({
+  }) : eV({
     quest: e,
     taskType: a.X.STREAM_ON_DESKTOP
   });
@@ -832,7 +832,7 @@ function te(e) {
 function tt(e) {
   var t;
   let n = null === (t = ep(e)) || void 0 === t ? void 0 : t.expirationMode;
-  return !!(0, T.U)() && !!n && k.has(n)
+  return !!(0, T.U)() && !!n && j.has(n)
 }
 
 function tn(e) {

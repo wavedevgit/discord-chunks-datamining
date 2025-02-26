@@ -1,7 +1,7 @@
 /** Chunk was on 48799 **/
 n.d(t, {
   B: () => y,
-  Z: () => E
+  Z: () => j
 }), n(47120), n(411104);
 var i, r, o = n(200651),
   s = n(192379),
@@ -121,7 +121,7 @@ function x(e, t) {
       throw Error("getOrientedCoords: Invalid orientation: ".concat(e))
   }
 }
-class Z extends(i = s.Component) {
+class E extends(i = s.Component) {
   shouldComponentUpdate(e, t) {
     return !(0, c.Z)(t, this.state) || !(0, c.Z)(e, this.props, ["anchor", "size", "minSize", "container"]) || !(0, c.Z)(e.anchor, this.props.anchor) || !(0, c.Z)(e.size, this.props.size) || !(0, c.Z)(e.minSize, this.props.minSize) || !(0, c.Z)(e.container, this.props.container)
   }
@@ -474,7 +474,7 @@ class Z extends(i = s.Component) {
     }), this.anchor = O(e.anchor), this.size = v(e.size, e.minSize.width, e.minSize.height)
   }
 }
-p(Z, "Operations", y), p(Z, "defaultProps", {
+p(E, "Operations", y), p(E, "defaultProps", {
   snapOrientation: !0,
   minSize: {
     width: 0,
@@ -493,4 +493,4 @@ p(Z, "Operations", y), p(Z, "defaultProps", {
   active: !0,
   targetWindow: window
 });
-let E = Z
+let j = E

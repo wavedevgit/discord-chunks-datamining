@@ -1,14 +1,14 @@
-/** Chunk was on 27805 **/
-i.d(t, {
-  a: () => s
+/** Chunk was on 63061 **/
+n.d(t, {
+  a: () => l
 });
-var n = i(192379),
-  r = i(996073);
+var r = n(192379),
+  i = n(996073);
 let o = {
   block: "center"
 };
 
-function s(e) {
-  let t = n.useRef(null);
-  return (0, r.Z)(t, e, o, 400), t
+function l(e) {
+  let t = r.useRef(null);
+  return (0, i.Z)(t, e, o, 400), t
 }

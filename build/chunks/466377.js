@@ -5,8 +5,8 @@ n.d(t, {
   Y0: () => L,
   YA: () => G,
   fM: () => w,
-  hz: () => j,
-  mz: () => k,
+  hz: () => k,
+  mz: () => j,
   ol: () => U,
   xB: () => x
 });
@@ -132,12 +132,12 @@ function L(e) {
     L = i.useRef(null),
     x = null != N["aria-label"],
     M = null != N["aria-labelledby"],
-    j = i.useId(),
-    k = null !== (t = N["aria-labelledby"]) && void 0 !== t ? t : j,
+    k = i.useId(),
+    j = null !== (t = N["aria-labelledby"]) && void 0 !== t ? t : k,
     U = i.useMemo(() => ({
-      headerId: k,
+      headerId: j,
       headerIdIsManaged: M
-    }), [k, M]);
+    }), [j, M]);
   return (0, r.jsx)(b.zM.Provider, {
     value: U,
     children: (0, r.jsx)(p.V, A(T({
@@ -195,7 +195,7 @@ function M(e) {
   }
 }
 
-function j(e) {
+function k(e) {
   let {
     className: t,
     children: n,
@@ -212,7 +212,7 @@ function j(e) {
   }))
 }
 
-function k(e) {
+function j(e) {
   var t, n, i, o, s;
   return (0, r.jsx)(v.Z, {
     grow: 0,

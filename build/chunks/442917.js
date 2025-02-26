@@ -36,13 +36,13 @@ var r = n(200651),
   L = n(445062),
   x = n(7188),
   M = n(199902),
-  j = n(314897),
-  k = n(131951),
+  k = n(314897),
+  j = n(131951),
   U = n(699516),
   G = n(594174),
   B = n(248402),
-  F = n(33039),
-  V = n(451478),
+  V = n(33039),
+  F = n(451478),
   Z = n(626135),
   H = n(5192),
   W = n(51144),
@@ -209,11 +209,11 @@ class el extends i.PureComponent {
       participantOnScreen: n,
       isVideoEnabled: i,
       width: o
-    } = this.props, a = (0, b.F6)(e, G.default, U.Z), s = (null == n ? void 0 : n.id) === j.default.getId() && i, l = this.renderStreamState(), c = null;
+    } = this.props, a = (0, b.F6)(e, G.default, U.Z), s = (null == n ? void 0 : n.id) === k.default.getId() && i, l = this.renderStreamState(), c = null;
     return (null == n ? void 0 : n.type) !== et.fO.ACTIVITY && (null != l ? c = l : ((null == n ? void 0 : n.type) === et.fO.USER || (null == n ? void 0 : n.type) === et.fO.STREAM) && (c = (0, r.jsx)(Y.Z, {
       paused: this.streamerPaused,
       streamId: t,
-      component: k.Z.getVideoComponent(),
+      component: j.Z.getVideoComponent(),
       mirror: s,
       children: (0, r.jsx)(T.Z, {
         size: u.EFr.SIZE_80,
@@ -344,10 +344,10 @@ class el extends i.PureComponent {
     })
   }
 }
-let ec = c.ZP.connectStores([k.Z, B.Z, g.Z, j.default, M.Z, F.Z, V.Z], e => {
+let ec = c.ZP.connectStores([j.Z, B.Z, g.Z, k.default, M.Z, V.Z, F.Z], e => {
   let {
     channel: t
-  } = e, n = B.Z.getSpeaker(t.id), r = g.Z.getParticipant(t.id, n), i = l()(k.Z.getVideoDevices()).values().first(), o = null == i || i.disabled, a = null != r && r.type !== et.fO.ACTIVITY && r.type !== et.fO.HIDDEN_STREAM ? F.Z.getStreamId(r.user.id, t.getGuildId(), (0, E.Z)(r.type)) : null, s = !1 === o, c = !o && k.Z.isVideoEnabled(), u = (0, O.Z)(k.Z), d = j.default.getId(), f = M.Z.getCurrentUserActiveStream(), p = !1;
+  } = e, n = B.Z.getSpeaker(t.id), r = g.Z.getParticipant(t.id, n), i = l()(j.Z.getVideoDevices()).values().first(), o = null == i || i.disabled, a = null != r && r.type !== et.fO.ACTIVITY && r.type !== et.fO.HIDDEN_STREAM ? V.Z.getStreamId(r.user.id, t.getGuildId(), (0, E.Z)(r.type)) : null, s = !1 === o, c = !o && j.Z.isVideoEnabled(), u = (0, O.Z)(j.Z), d = k.default.getId(), f = M.Z.getCurrentUserActiveStream(), p = !1;
   return {
     channel: t,
     streamId: a,
@@ -358,7 +358,7 @@ let ec = c.ZP.connectStores([k.Z, B.Z, g.Z, j.default, M.Z, F.Z, V.Z], e => {
     currentUserId: d,
     activeStreams: M.Z.getAllActiveStreams(),
     activeSelfStream: f,
-    isMainWindowFocused: V.Z.isFocused(),
+    isMainWindowFocused: F.Z.isFocused(),
     isOverlayRenderingVideo: p
   }
 })(el)

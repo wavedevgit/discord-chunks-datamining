@@ -4,9 +4,9 @@ n.d(t, {
   BU: () => tz,
   CX: () => tR,
   F3: () => eb,
-  UE: () => tj,
+  UE: () => tk,
   _7: () => eL,
-  mH: () => tV,
+  mH: () => tF,
   vt: () => eW
 });
 var r = n(653603),
@@ -70,13 +70,13 @@ var b = new WeakMap,
   L = new WeakMap,
   x = new WeakMap,
   M = new WeakMap,
-  j = new WeakMap,
   k = new WeakMap,
+  j = new WeakMap,
   U = new WeakMap,
   G = new WeakMap,
   B = new WeakMap,
-  F = Symbol("placeholder"),
-  V = Symbol("mark-placeholder"),
+  V = Symbol("placeholder"),
+  F = Symbol("mark-placeholder"),
   Z = globalThis.Text,
   H = e => e && e.ownerDocument && e.ownerDocument.defaultView || null,
   W = e => K(e) && 8 === e.nodeType,
@@ -456,7 +456,7 @@ var b = new WeakMap,
       var t;
       null === (t = x.get(e)) || void 0 === t || t()
     },
-    androidPendingDiffs: e => k.get(e)
+    androidPendingDiffs: e => j.get(e)
   },
   ey = ["anchor", "focus"],
   eO = ["anchor", "focus"],
@@ -464,7 +464,7 @@ var b = new WeakMap,
   eI = (e, t) => {
     var n = g(e, ey),
       r = g(t, eO);
-    return e[F] === t[F] && eS(n, r)
+    return e[V] === t[V] && eS(n, r)
   },
   eT = (e, t) => {
     if (e.length !== t.length) return !1;
@@ -491,7 +491,7 @@ var b = new WeakMap,
       leaf: n,
       parent: r,
       text: i
-    } = e, o = eL(), a = eb.findPath(o, i), s = d.y$.parent(a), l = !0 === n[V];
+    } = e, o = eL(), a = eb.findPath(o, i), s = d.y$.parent(a), l = !0 === n[F];
     return o.isVoid(r) ? c.createElement(eD, {
       length: d.NB.string(r).length
     }) : "" !== n.text || r.children[r.children.length - 1] !== i || o.isInline(r) || "" !== d.ML.string(o, s) ? "" === n.text ? c.createElement(eD, {
@@ -546,7 +546,7 @@ var b = new WeakMap,
       text: r,
       parent: i,
       renderPlaceholder: o,
-      renderLeaf: a = e => c.createElement(ej, Object.assign({}, e))
+      renderLeaf: a = e => c.createElement(ek, Object.assign({}, e))
     } = e, s = (0, c.useRef)(null), l = (0, c.useRef)(null), u = eL(), d = (0, c.useRef)(null);
     (0, c.useEffect)(() => () => {
       d.current && d.current.disconnect()
@@ -574,7 +574,7 @@ var b = new WeakMap,
       parent: i,
       text: r
     });
-    if (t[F]) {
+    if (t[V]) {
       var _ = {
         children: t.placeholder,
         attributes: {
@@ -604,15 +604,15 @@ var b = new WeakMap,
       text: r
     })
   },
-  eM = c.memo(ex, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && d.xv.equals(t.leaf, e.leaf) && t.leaf[F] === e.leaf[F]),
-  ej = e => {
+  eM = c.memo(ex, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && d.xv.equals(t.leaf, e.leaf) && t.leaf[V] === e.leaf[V]),
+  ek = e => {
     var {
       attributes: t,
       children: n
     } = e;
     return c.createElement("span", Object.assign({}, t), n)
   },
-  ek = e => {
+  ej = e => {
     for (var {
         decorations: t,
         isLast: n,
@@ -641,12 +641,12 @@ var b = new WeakMap,
       ref: m
     }, p)
   },
-  eU = c.memo(ek, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && eN(t.decorations, e.decorations)),
+  eU = c.memo(ej, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && eN(t.decorations, e.decorations)),
   eG = e => {
     var {
       decorations: t,
       element: n,
-      renderElement: r = e => c.createElement(eF, Object.assign({}, e)),
+      renderElement: r = e => c.createElement(eV, Object.assign({}, e)),
       renderPlaceholder: o,
       renderLeaf: a,
       selection: s
@@ -699,7 +699,7 @@ var b = new WeakMap,
     })
   },
   eB = c.memo(eG, (e, t) => e.element === t.element && e.renderElement === t.renderElement && e.renderLeaf === t.renderLeaf && e.renderPlaceholder === t.renderPlaceholder && eT(e.decorations, t.decorations) && (e.selection === t.selection || !!e.selection && !!t.selection && d.e6.equals(e.selection, t.selection))),
-  eF = e => {
+  eV = e => {
     var {
       attributes: t,
       children: n,
@@ -711,8 +711,8 @@ var b = new WeakMap,
       }
     }), n)
   },
-  eV = (0, c.createContext)(() => []),
-  eZ = () => (0, c.useContext)(eV),
+  eF = (0, c.createContext)(() => []),
+  eZ = () => (0, c.useContext)(eF),
   eH = (0, c.createContext)(!1),
   eW = () => (0, c.useContext)(eH),
   eY = e => {
@@ -1029,7 +1029,7 @@ function to(e, t) {
 }
 
 function ta(e, t, n) {
-  var r = k.get(e),
+  var r = j.get(e),
     i = null == r ? void 0 : r.find(e => {
       var {
         path: n
@@ -1233,17 +1233,17 @@ function th(e) {
     var e = t.selection && d.ML.rangeRef(t, t.selection, {
       affinity: "forward"
     });
-    j.set(t, t.marks), tp("flush", U.get(t), k.get(t));
-    for (var o = b(); l = null === (p = k.get(t)) || void 0 === p ? void 0 : p[0];) {
+    k.set(t, t.marks), tp("flush", U.get(t), j.get(t));
+    for (var o = b(); l = null === (p = j.get(t)) || void 0 === p ? void 0 : p[0];) {
       var l, p, _, h = M.get(t);
       void 0 !== h && (M.delete(t), t.marks = h), h && !1 === c && (c = null);
       var m = tr(l);
-      t.selection && d.e6.equals(t.selection, m) || d.YR.select(t, m), l.diff.text ? d.ML.insertText(t, l.diff.text) : d.ML.deleteFragment(t), k.set(t, null === (_ = k.get(t)) || void 0 === _ ? void 0 : _.filter(e => {
+      t.selection && d.e6.equals(t.selection, m) || d.YR.select(t, m), l.diff.text ? d.ML.insertText(t, l.diff.text) : d.ML.deleteFragment(t), j.set(t, null === (_ = j.get(t)) || void 0 === _ ? void 0 : _.filter(e => {
         var {
           id: t
         } = e;
         return t !== l.id
-      })), e7(t, l) || (o = !1, U.delete(t), j.delete(t), i = "action", G.delete(t), n.cancel(), r.cancel(), null == e || e.unref())
+      })), e7(t, l) || (o = !1, U.delete(t), k.delete(t), i = "action", G.delete(t), n.cancel(), r.cancel(), null == e || e.unref())
     }
     var g = null == e ? void 0 : e.unref();
     if (!g || G.get(t) || t.selection && d.e6.equals(g, t.selection) || d.YR.select(t, g), v()) {
@@ -1251,8 +1251,8 @@ function th(e) {
       return
     }
     o && n(), n.flush(), r.flush(), u();
-    var E = j.get(t);
-    j.delete(t), void 0 !== E && (t.marks = E, t.onChange())
+    var E = k.get(t);
+    k.delete(t), void 0 !== E && (t.marks = E, t.onChange())
   }, _ = e => {
     o && clearTimeout(o), o = setTimeout(() => {
       D.set(t, !1), p()
@@ -1268,8 +1268,8 @@ function th(e) {
       n.style.removeProperty("display")
     }
   }, m = (e, n) => {
-    var r, i = null !== (r = k.get(t)) && void 0 !== r ? r : [];
-    k.set(t, i);
+    var r, i = null !== (r = j.get(t)) && void 0 !== r ? r : [];
+    j.set(t, i);
     var o = d.NB.leaf(t, e),
       a = i.findIndex(t => d.y$.equals(t.path, e));
     if (a < 0) {
@@ -1335,7 +1335,7 @@ function th(e) {
             start: h.offset,
             end: E.offset
           },
-          S = k.get(t),
+          S = j.get(t),
           I = null == S ? void 0 : S.find(e => d.y$.equals(e.path, b)),
           T = I ? [I.diff, y] : [y];
         if (0 === e8(v.text, ...T).length && (l = !1), d.e6.isExpanded(r)) {
@@ -1468,19 +1468,19 @@ function th(e) {
             at: r
           });
           if (d.y$.equals(r.anchor.path, r.focus.path)) {
-            var [j, U] = d.e6.edges(r), G = {
-              start: j.offset,
+            var [k, U] = d.e6.edges(r), G = {
+              start: k.offset,
               end: U.offset,
               text: x
             };
             if (x && c && "insertCompositionText" === n) {
               var B = c.start + c.text.search(/\S|$/);
               G.start + G.text.search(/\S|$/) === B + 1 && G.end === c.start + c.text.length ? (G.start -= 1, c = null, N()) : c = !1
-            } else c = "insertText" === n && (null === c ? G : !!(c && d.e6.isCollapsed(r)) && c.end + c.text.length === j.offset && tu(tu({}, c), {}, {
+            } else c = "insertText" === n && (null === c ? G : !!(c && d.e6.isCollapsed(r)) && c.end + c.text.length === k.offset && tu(tu({}, c), {}, {
               text: c.text + x
             }));
             if (l) {
-              m(j.path, G);
+              m(k.path, G);
               return
             }
           }
@@ -1491,7 +1491,7 @@ function th(e) {
     }
   }, v = () => !!U.get(t), b = () => {
     var e;
-    return !!(null !== (e = k.get(t)) && void 0 !== e && e.length)
+    return !!(null !== (e = j.get(t)) && void 0 !== e && e.length)
   }, y = () => v() || b(), O = e => {
     G.set(t, e), a && (clearTimeout(a), a = null);
     var {
@@ -1655,7 +1655,7 @@ var tC = e => c.createElement(c.Fragment, null, eY(e)),
       A = g(e, tI),
       C = eQ(),
       [L, x] = (0, c.useState)(!1),
-      k = (0, c.useRef)(null),
+      j = (0, c.useRef)(null),
       U = (0, c.useRef)([]),
       {
         onUserInput: G,
@@ -1672,7 +1672,7 @@ var tC = e => c.createElement(c.Fragment, null, eY(e)),
     (0, c.useLayoutEffect)(() => () => {
       null != z && null != z.latestElement && (z.latestElement.remove(), z.latestElement = null)
     }, []), (0, c.useEffect)(() => {
-      k.current && o && k.current.focus()
+      j.current && o && j.current.focus()
     }, [o]);
     var q = (0, c.useCallback)(l()(() => {
         if ((el || !eb.isComposing(C)) && (!z.isUpdatingSelection || null != J && J.isFlushing()) && !z.isDraggingInternally) {
@@ -1698,12 +1698,12 @@ var tC = e => c.createElement(c.Fragment, null, eY(e)),
       }, 100), [p]),
       X = (0, c.useMemo)(() => a()(q, 0), [q]),
       J = tO({
-        node: k,
+        node: j,
         onDOMSelectionChange: q,
         scheduleOnDOMSelectionChange: X
       });
     eA(() => {
-      k.current && (e = H(k.current)) ? (O.set(C, e), S.set(C, k.current), N.set(C, k.current), T.set(k.current, C)) : N.delete(C);
+      j.current && (e = H(j.current)) ? (O.set(C, e), S.set(C, j.current), N.set(C, j.current), T.set(j.current, C)) : N.delete(C);
       var e, {
           selection: t
         } = C,
@@ -1886,8 +1886,8 @@ var tC = e => c.createElement(c.Fragment, null, eY(e)),
         }
       }, [p, u]),
       ee = (0, c.useCallback)(e => {
-        null == e ? (q.cancel(), X.cancel(), S.delete(C), N.delete(C), k.current && ev && k.current.removeEventListener("beforeinput", $)) : ev && e.addEventListener("beforeinput", $), k.current = e
-      }, [k, $, q, X]);
+        null == e ? (q.cancel(), X.cancel(), S.delete(C), N.delete(C), j.current && ev && j.current.removeEventListener("beforeinput", $)) : ev && e.addEventListener("beforeinput", $), j.current = e
+      }, [j, $, q, X]);
     eA(() => {
       var e = eb.getWindow(C);
       return e.document.addEventListener("selectionchange", X), () => {
@@ -1898,7 +1898,7 @@ var tC = e => c.createElement(c.Fragment, null, eY(e)),
     if (f && 1 === C.children.length && 1 === Array.from(d.NB.texts(C)).length && "" === d.NB.string(C) && !L) {
       var en = d.ML.start(C, []);
       et.push({
-        [F]: !0,
+        [V]: !0,
         placeholder: f,
         anchor: en,
         focus: en
@@ -1917,7 +1917,7 @@ var tC = e => c.createElement(c.Fragment, null, eY(e)),
         z.hasMarkPlaceholder = !0;
         var ed = Object.fromEntries(Object.keys(es).map(e => [e, null]));
         et.push(tA(tA(tA({
-          [V]: !0
+          [F]: !0
         }, ed), er), {}, {
           anchor: ei,
           focus: ei
@@ -1945,10 +1945,10 @@ var tC = e => c.createElement(c.Fragment, null, eY(e)),
     var ep = null === (t = I.get(C)) || void 0 === t ? void 0 : null === (n = t.getBoundingClientRect()) || void 0 === n ? void 0 : n.height;
     return c.createElement(eK.Provider, {
       value: p
-    }, c.createElement(eV.Provider, {
+    }, c.createElement(eF.Provider, {
       value: s
     }, c.createElement(e5, {
-      node: k,
+      node: j,
       receivedUserInput: Z
     }, c.createElement(b, Object.assign({
       role: p ? void 0 : "textbox",
@@ -2046,9 +2046,9 @@ var tC = e => c.createElement(c.Fragment, null, eY(e)),
       onCompositionEnd: (0, c.useCallback)(e => {
         if (eb.hasSelectableTarget(C, e.target) && (eb.isComposing(C) && (x(!1), D.set(C, !1)), null == J || J.handleCompositionEnd(e), !tL(e, A.onCompositionEnd) && !el && !eu && !eh && !ea && !eg && !em && e.data)) {
           var t = M.get(C);
-          M.delete(C), void 0 !== t && (j.set(C, C.marks), C.marks = t), d.ML.insertText(C, e.data);
-          var n = j.get(C);
-          j.delete(C), void 0 !== n && (C.marks = n)
+          M.delete(C), void 0 !== t && (k.set(C, C.marks), C.marks = t), d.ML.insertText(C, e.data);
+          var n = k.get(C);
+          k.delete(C), void 0 !== n && (C.marks = n)
         }
       }, [A.onCompositionEnd]),
       onCompositionUpdate: (0, c.useCallback)(e => {
@@ -2343,9 +2343,9 @@ var tC = e => c.createElement(c.Fragment, null, eY(e)),
     return null != n ? n : e.defaultPrevented
   },
   tM = (0, c.createContext)(!1),
-  tj = () => (0, c.useContext)(tM);
+  tk = () => (0, c.useContext)(tM);
 
-function tk(e) {
+function tj(e) {
   return e instanceof Error
 }
 var tU = (0, c.createContext)({}),
@@ -2369,14 +2369,14 @@ function tB(e) {
     onChange: r
   }
 }
-var tF = ["editor", "children", "onChange", "value"],
-  tV = e => {
+var tV = ["editor", "children", "onChange", "value"],
+  tF = e => {
     var {
       editor: t,
       children: n,
       onChange: r,
       value: i
-    } = e, o = g(e, tF), a = (0, c.useRef)(!1), [s, l] = c.useState(() => {
+    } = e, o = g(e, tV), a = (0, c.useRef)(!1), [s, l] = c.useState(() => {
       if (!d.NB.isNodeList(i)) throw Error("[Slate] value is invalid! Expected a list of elements but got: ".concat(d.o4.stringify(i)));
       if (!d.ML.isEditor(t)) throw Error("[Slate] editor is invalid! You passed: ".concat(d.o4.stringify(t)));
       return t.children = i, Object.assign(t, o), {
@@ -2472,10 +2472,10 @@ var tz = function(e) {
       } = n;
     return C.set(n, new WeakMap), n.addMark = (e, t) => {
       var r, i;
-      null === (r = x.get(n)) || void 0 === r || r(), !M.get(n) && null !== (i = k.get(n)) && void 0 !== i && i.length && M.set(n, null), j.delete(n), a(e, t)
+      null === (r = x.get(n)) || void 0 === r || r(), !M.get(n) && null !== (i = j.get(n)) && void 0 !== i && i.length && M.set(n, null), k.delete(n), a(e, t)
     }, n.removeMark = e => {
       var t;
-      !M.get(n) && null !== (t = k.get(n)) && void 0 !== t && t.length && M.set(n, null), j.delete(n), s(e)
+      !M.get(n) && null !== (t = j.get(n)) && void 0 !== t && t.length && M.set(n, null), k.delete(n), s(e)
     }, n.deleteBackward = e => {
       if ("line" !== e) return o(e);
       if (n.selection && d.e6.isCollapsed(n.selection)) {
@@ -2492,10 +2492,10 @@ var tz = function(e) {
       }
     }, n.apply = e => {
       var t, i = [],
-        o = k.get(n);
+        o = j.get(n);
       if (null != o && o.length) {
         var a = o.map(t => tl(t, e)).filter(Boolean);
-        k.set(n, a)
+        j.set(n, a)
       }
       var s = G.get(n);
       s && G.set(n, ts(n, s, e));

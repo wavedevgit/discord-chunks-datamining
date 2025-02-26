@@ -115,7 +115,7 @@ let S = {
       })]
     });
 
-    function j() {
+    function k() {
       P && (0, f.u)({
         analyticsLocations: A,
         analyticsLocation: {
@@ -128,10 +128,10 @@ let S = {
         guild: i
       })
     }
-    let k = !D && C.fractionalState === h.a$.NONE,
-      U = k ? s.P3F : "div",
-      G = k ? {
-        onClick: j
+    let j = !D && C.fractionalState === h.a$.NONE,
+      U = j ? s.P3F : "div",
+      G = j ? {
+        onClick: k
       } : {};
     return (0, r.jsx)(s.ua7, {
       text: D ? m.NW.formatToPlainString(m.t["1o48kp"], {
@@ -148,7 +148,7 @@ let S = {
       children: e => (0, r.jsxs)(U, y(v({
         className: o()(g.progressBarMarker, {
           [g.progressBarMarkerUnlocked]: D,
-          [g.progressBarMarkerLocked]: k,
+          [g.progressBarMarkerLocked]: j,
           [g.progressBarMarkerLower]: w,
           [g.progressBarMarkerCurrent]: L
         }),

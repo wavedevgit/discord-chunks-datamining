@@ -10,7 +10,7 @@ n.d(t, {
   BR: () => r.Z,
   BZ: () => K,
   Cw: () => P,
-  Cy: () => F,
+  Cy: () => V,
   EK: () => e_,
   ET: () => em,
   Et: () => z,
@@ -29,7 +29,7 @@ n.d(t, {
   QL: () => S,
   RG: () => eh,
   RK: () => ei,
-  S7: () => k,
+  S7: () => j,
   Sk: () => h,
   TC: () => Z,
   U6: () => L,
@@ -42,7 +42,7 @@ n.d(t, {
   X6: () => H,
   X7: () => R,
   XM: () => ee,
-  Zu: () => j,
+  Zu: () => k,
   aO: () => eE,
   aV: () => I,
   am: () => el,
@@ -62,7 +62,7 @@ n.d(t, {
   xr: () => d,
   yA: () => en,
   yX: () => er,
-  yY: () => V,
+  yY: () => F,
   zM: () => q
 }), n(47120);
 var r = n(290926),
@@ -182,11 +182,11 @@ var x = function(e) {
   M = function(e) {
     return e[e.SUBSCRIPTION = 0] = "SUBSCRIPTION", e[e.ONE_TIME = 1] = "ONE_TIME", e
   }({});
-let j = Object.freeze({
+let k = Object.freeze({
   0: "subscription",
   1: "sku"
 });
-var k = function(e) {
+var j = function(e) {
   return e[e.VIEW_CHANNEL = 1024] = "VIEW_CHANNEL", e[e.READ_MESSAGE_HISTORY = 65536] = "READ_MESSAGE_HISTORY", e[e.CONNECT = 1048576] = "CONNECT", e
 }({});
 let U = Object.freeze({
@@ -246,9 +246,9 @@ let U = Object.freeze({
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
   B = () => null,
-  F = () => Promise.resolve(),
-  V = [U.KICK_MEMBERS, U.BAN_MEMBERS, U.ADMINISTRATOR, U.MANAGE_CHANNELS, U.MANAGE_GUILD, U.MANAGE_ROLES, U.MANAGE_MESSAGES, U.MANAGE_THREADS, U.MODERATE_MEMBERS],
-  Z = i.$e(...V),
+  V = () => Promise.resolve(),
+  F = [U.KICK_MEMBERS, U.BAN_MEMBERS, U.ADMINISTRATOR, U.MANAGE_CHANNELS, U.MANAGE_GUILD, U.MANAGE_ROLES, U.MANAGE_MESSAGES, U.MANAGE_THREADS, U.MODERATE_MEMBERS],
+  Z = i.$e(...F),
   H = 1,
   W = 6463,
   Y = 10,

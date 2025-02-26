@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => k
 }), n(653041), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -176,7 +176,7 @@ class M extends(r = i.ZP.Store) {
   }
 }
 p(M, "displayName", "GuildCategoryStore");
-let j = new M(o.Z, {
+let k = new M(o.Z, {
   CHANNEL_SELECT: w,
   CONNECTION_OPEN: y,
   OVERLAY_INITIALIZE: y,

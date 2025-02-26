@@ -90,7 +90,7 @@ let L = n(227419).Z,
       }
     }
   },
-  j = [...L, {
+  k = [...L, {
     id: "-1",
     untranslatedName: "shrug",
     displayName: "shrug",
@@ -671,8 +671,8 @@ let L = n(227419).Z,
       },
       required: !0,
       get maxLength() {
-        var k;
-        return (null === (k = y.default.getCurrentUser()) || void 0 === k ? void 0 : k.premiumType) ? N.en1 : N.J6R
+        var j;
+        return (null === (j = y.default.getCurrentUser()) || void 0 === j ? void 0 : j.premiumType) ? N.en1 : N.J6R
       }
     }],
     execute: (e, t) => {
@@ -693,8 +693,8 @@ let L = n(227419).Z,
       })
     }
   }],
-  U = j.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
+  U = k.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
   G = (e, t, n) => {
-    let r = t ? j : U;
+    let r = t ? k : U;
     return r.filter(t => e.includes(t.type) && (!n || t.inputType === I.iw.BUILT_IN_TEXT || t.inputType === I.iw.BUILT_IN_INTEGRATION))
   }

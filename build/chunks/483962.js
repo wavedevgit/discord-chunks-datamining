@@ -16,7 +16,7 @@ var i = n(200651),
   f = n(892426);
 let g = () => (0, a.$Z)("DM_SEARCH"),
   m = r.memo(function() {
-    let e = (0, o.e7)([d.Z], () => d.Z.isLocked((0, u.QF)()) ? "true" : "false"),
+    let e = (0, o.e7)([d.default], () => d.default.isLocked((0, u.getPID)()) ? "true" : "false"),
       t = (0, c.Z)(e => {
         let {
           channelId: t

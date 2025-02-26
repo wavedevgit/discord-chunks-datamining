@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => r
+  Z: () => o
 });
-let r = (0, n(818083).B)({
+var r = n(818083),
+  i = n(70956);
+let o = (0, r.B)({
   kind: "user",
-  id: "2025-01_hotwheels_overlay_invites_v2",
-  label: "Overlay Invites Notification",
+  id: "2025-02_hotwheels_overlay_invites_3",
+  label: "Overlay Invites Notification Pt3",
   defaultConfig: {
-    enabled: !1,
-    affinityThreshold: 0
+    enabled: !1
   },
   treatments: [{
     id: 1,
-    label: "Enabled",
+    label: "Enabled, no date cutoff",
     config: {
       enabled: !0
     }
   }, {
     id: 2,
-    label: "Enabled with threshold",
+    label: "Enabled, within past week",
     config: {
       enabled: !0,
-      affinityThreshold: .65
+      dateLookbackMs: i.Z.Millis.WEEK
     }
   }]
 })

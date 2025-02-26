@@ -105,9 +105,9 @@ function O(e) {
     "aria-expanded": w,
     "aria-haspopup": L,
     "aria-controls": x
-  } = e, M = (0, u.Q3)("ChannelTextAreaButton"), j = (0, l.Yzy)(null != E, g(h({}, y), {
+  } = e, M = (0, u.Q3)("ChannelTextAreaButton"), k = (0, l.Yzy)(null != E, g(h({}, y), {
     keys: e => e ? "children" : "icon"
-  })), k = e => {
+  })), j = e => {
     let {
       component: t
     } = e;
@@ -149,20 +149,20 @@ function O(e) {
         bottom: 4
       }
     },
-    children: [j((e, t, n) => {
+    children: [k((e, t, n) => {
       let {
         key: i
       } = n;
       return t ? (0, r.jsx)(s.animated.div, {
         style: e,
         className: a()(p.buttonWrapper, o),
-        children: k({
+        children: j({
           component: E
         })
       }, i) : null != m ? (0, r.jsx)(s.animated.div, {
         style: e,
         className: a()(p.buttonWrapper, o),
-        children: k({
+        children: j({
           component: (0, r.jsx)(m, {
             className: a()(p.icon, _, {
               [p.pulseIcon]: C

@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  R$: () => m,
-  ZP: () => _
+  R$: () => _,
+  ZP: () => m
 });
 var r = n(913527),
   i = n.n(r),
@@ -16,12 +16,12 @@ var r = n(913527),
   p = n(981631),
   g = n(723359);
 
-function _(e) {
+function m(e) {
   var t, n, {
     invite: r = null,
     giftCodeSKUId: i = null
   } = e;
-  return m((t = function(e) {
+  return _((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -67,20 +67,20 @@ function _(e) {
   }), t))
 }
 
-function m(e) {
+function _(e) {
   let {
     email: t,
     phoneToken: n,
     username: r,
-    globalName: _,
-    consent: m,
+    globalName: m,
+    consent: _,
     password: f,
     guildTemplateCode: b,
     birthday: N,
     invite: x = null,
     giftCodeSKUId: v = null,
-    promoEmailConsent: E = null,
-    usedUsernameSuggestion: I = null
+    promoEmailConsent: I = null,
+    usedUsernameSuggestion: E = null
   } = e;
   return a.Z.dispatch({
     type: "REGISTER"
@@ -99,23 +99,23 @@ function m(e) {
       fingerprint: c.default.getFingerprint(),
       email: t,
       username: r,
-      global_name: _,
+      global_name: m,
       password: f,
       invite: x,
-      consent: m,
+      consent: _,
       phone_token: n,
       date_of_birth: null == N ? void 0 : N.format("YYYY-MM-DD"),
       gift_code_sku_id: v,
       guild_template_code: b,
-      promotional_email_opt_in: null == E ? void 0 : E.checked
+      promotional_email_opt_in: null == I ? void 0 : I.checked
     },
     trackedActionData: {
       event: o.NetworkActionNames.USER_REGISTER,
       properties: {
         invite_code: x,
-        used_username_suggestion: I,
-        promotional_email_opt_in: null == E ? void 0 : E.checked,
-        promotional_email_pre_checked: null == E ? void 0 : E.preChecked,
+        used_username_suggestion: E,
+        promotional_email_opt_in: null == I ? void 0 : I.checked,
+        promotional_email_pre_checked: null == I ? void 0 : I.preChecked,
         was_unique_username: !0
       }
     },

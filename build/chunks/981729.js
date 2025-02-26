@@ -4,7 +4,7 @@ n.d(t, {
   Cy: () => w,
   DY: () => U,
   FG: () => T,
-  u: () => k
+  u: () => j
 }), n(411104), n(47120);
 var r, i = n(200651),
   o = n(192379),
@@ -179,7 +179,7 @@ let w = e => {
     scale: 1,
     opacity: 1
   },
-  j = e => {
+  k = e => {
     var {
       isVisible: t,
       onAnimationRest: n,
@@ -200,7 +200,7 @@ let w = e => {
       targetElementRef: r
     }, a)) : null)
   };
-class k extends(r = o.Component) {
+class j extends(r = o.Component) {
   static getDerivedStateFromProps(e, t) {
     return t.shouldShowTooltip && null == e.text ? {
       shouldShowTooltip: !1
@@ -265,7 +265,7 @@ class k extends(r = o.Component) {
       hideOnClick: _,
       tooltipPointerClassName: h
     } = this.props, m = (u.tq || u.Em) && !0 === p && _, g = !1 !== c && !m || !0 === c, E = this.shouldShowTooltip(this.props, this.state) && this.hasDomElement, v = null;
-    return v = e instanceof Function ? E ? e() : null : e, (0, i.jsx)(j, {
+    return v = e instanceof Function ? E ? e() : null : e, (0, i.jsx)(k, {
       disableTooltipPointerEvents: g,
       targetElementRef: this.domElementRef,
       tooltipStyle: s,
@@ -326,7 +326,7 @@ class k extends(r = o.Component) {
     })
   }
 }
-v(k, "Colors", T), v(k, "defaultProps", {
+v(j, "Colors", T), v(j, "defaultProps", {
   hideOnClick: !0,
   position: "top",
   color: "primary",
@@ -342,7 +342,7 @@ let U = e => {
     className: n,
     element: r = "div"
   } = e, a = S(e, ["children", "className", "element"]);
-  return (0, i.jsx)(k, O(b({}, a), {
+  return (0, i.jsx)(j, O(b({}, a), {
     children: e => o.createElement(r, null != n ? O(b({}, e), {
       className: n
     }) : e, t)

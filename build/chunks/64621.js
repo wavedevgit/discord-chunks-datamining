@@ -51,12 +51,12 @@ function N(e) {
   (0, c.Z)(() => x(!0), w ? S : null);
   let {
     asset: M,
-    assetClassName: j,
-    className: k,
+    assetClassName: k,
+    className: j,
     content: U,
     header: G,
     spacing: B,
-    dismissibleContentType: F
+    dismissibleContentType: V
   } = R ? {
     asset: O,
     assetClassName: b.profileImage,
@@ -73,7 +73,7 @@ function N(e) {
     header: v.NW.string(v.t.XDBiPT),
     spacing: I,
     dismissibleContentType: s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
-  }, V = (0, u.N)(s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), Z = L && !V ? [F] : [], [H, W] = (0, d.US)(Z);
+  }, F = (0, u.N)(s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), Z = L && !F ? [V] : [], [H, W] = (0, d.US)(Z);
   return (0, r.jsx)(l.yRy, {
     align: "center",
     position: t === g.n_.AVATAR ? "left" : "right",
@@ -88,11 +88,11 @@ function N(e) {
       return (0, r.jsx)(l.VqE, {
         ref: i,
         children: (0, r.jsx)(f.ZP, {
-          className: k,
+          className: j,
           asset: (0, r.jsx)("img", {
             alt: "",
             src: M,
-            className: j
+            className: k
           }),
           buttonCTA: v.NW.string(v.t["+IrDzM"]),
           buttonLayout: f._F.STACKED,

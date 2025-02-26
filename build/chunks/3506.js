@@ -1,4 +1,4 @@
-/** Chunk was on 624 **/
+/** Chunk was on 53485 **/
 n.d(t, {
   Z: () => P
 });
@@ -33,19 +33,19 @@ let I = y(null);
 
 function y(e) {
   var t;
-  let n = j.Z.getNotificationPositionMode(),
+  let n = j.default.getNotificationPositionMode(),
     r = n !== v._vf.DISABLED,
     i = _.ZP.getOverlayKeybind(),
     s = _.ZP.getOverlayChatKeybind();
   return {
-    enabled: E.ZP.enabled,
+    enabled: E.default.enabled,
     notifications_enabled: r,
     notifications_position: r ? n : null,
-    text_notifications_mode: j.Z.getTextChatNotificationMode(),
+    text_notifications_mode: j.default.getTextChatNotificationMode(),
     hotkey: null != i ? (0, O.BB)(i.shortcut) : null,
     text_activation_hotkey: null != s ? (0, O.BB)(s.shortcut) : null,
-    text_opacity_slider: j.Z.getTextWidgetOpacity(),
-    old_enabled: null !== (t = null == e ? void 0 : e.enabled) && void 0 !== t ? t : E.ZP.enabled
+    text_opacity_slider: j.default.getTextWidgetOpacity(),
+    old_enabled: null !== (t = null == e ? void 0 : e.enabled) && void 0 !== t ? t : E.default.enabled
   }
 }
 
@@ -75,13 +75,13 @@ function P(e) {
     notificationPositionMode: R,
     textChatNotificationMode: D,
     shouldShowKeybindIndicators: Z
-  } = (0, o.cj)([j.Z], () => ({
-    avatarSizeMode: j.Z.getAvatarSizeMode(),
-    displayNameMode: j.Z.getDisplayNameMode(),
-    displayUserMode: j.Z.getDisplayUserMode(),
-    notificationPositionMode: j.Z.getNotificationPositionMode(),
-    textChatNotificationMode: j.Z.getTextChatNotificationMode(),
-    shouldShowKeybindIndicators: j.Z.showKeybindIndicators
+  } = (0, o.cj)([j.default], () => ({
+    avatarSizeMode: j.default.getAvatarSizeMode(),
+    displayNameMode: j.default.getDisplayNameMode(),
+    displayUserMode: j.default.getDisplayUserMode(),
+    notificationPositionMode: j.default.getNotificationPositionMode(),
+    textChatNotificationMode: j.default.getTextChatNotificationMode(),
+    shouldShowKeybindIndicators: j.default.showKeybindIndicators
   })), w = (0, o.e7)([_.ZP], () => _.ZP.getOverlayKeybind()), k = (0, b.Z)({
     location: "overlay_user_settings"
   }), W = (0, g.$1)();

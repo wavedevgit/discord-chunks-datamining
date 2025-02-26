@@ -179,13 +179,13 @@ let w = function(e) {
     iconClassName: L,
     postSuccessGuild: x,
     onSubscribeModalClose: M,
-    premiumModalAnalyticsLocation: j,
-    showIcon: k = !0,
+    premiumModalAnalyticsLocation: k,
+    showIcon: j = !0,
     disableShine: U,
     applicationId: G,
     giftMessage: B,
-    overrideDisabledButtonText: F,
-    shinyButtonClassName: V,
+    overrideDisabledButtonText: V,
+    shinyButtonClassName: F,
     showGradient: Z = !1
   } = e, H = C(e, ["isGift", "subscriptionTier", "onClick", "size", "className", "isTrialCTA", "buttonText", "buttonTextClassName", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "giftMessage", "overrideDisabledButtonText", "shinyButtonClassName", "showGradient"]);
   let W = (0, a.e7)([h.default], () => h.default.getCurrentUser()),
@@ -218,7 +218,7 @@ let w = function(e) {
         postSuccessGuild: x,
         onSubscribeModalClose: M,
         analyticsLocations: q,
-        premiumModalAnalyticsLocation: j,
+        premiumModalAnalyticsLocation: k,
         applicationId: G,
         giftMessage: B
       })
@@ -230,7 +230,7 @@ let w = function(e) {
     color: s.zxk.Colors.BRAND_INVERTED,
     onClick: J
   }, H), {
-    children: [k && (0, r.jsx)(s.SrA, {
+    children: [j && (0, r.jsx)(s.SrA, {
       size: "md",
       color: "currentColor",
       className: S.premiumIcon
@@ -262,7 +262,7 @@ let w = function(e) {
   en && ($ = O.NW.string(O.t.IJI7ys));
   let er = null != K && E.ZP.isSwitchingPlansDisabled(K, z),
     ei = null != K && K.status !== y.O0b.ACCOUNT_HOLD && !(0, _.Q0)(K.planId) && !en || er,
-    eo = ei ? null != F ? F : D({
+    eo = ei ? null != V ? V : D({
       ctaSubscriptionSkuId: n,
       currentPremiumType: et,
       isSwitchingDisabled: er,
@@ -277,14 +277,14 @@ let w = function(e) {
       innerClassName: S.premiumSubscribeButton,
       color: n === b.Si.TIER_1 ? s.zxk.Colors.PRIMARY : s.zxk.Colors.GREEN,
       size: f,
-      className: V,
+      className: F,
       wrapperClassName: o()({
         [S.tier2Gradient]: Z && n === b.Si.TIER_2,
         [S.tier1Gradient]: Z && n === b.Si.TIER_1
       }, I),
       pauseAnimation: !Y || U
     }, H, e), {
-      children: [k && (0, r.jsx)(s.SrA, {
+      children: [j && (0, r.jsx)(s.SrA, {
         size: "md",
         color: "currentColor",
         className: o()(S.premiumIcon, L)

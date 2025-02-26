@@ -71,15 +71,15 @@ let P = {},
     lastRequest: null,
     lastResponse: null
   },
-  j = [],
   k = [],
+  j = [],
   U = 75,
   G = 25;
 
 function B() {
-  j = h.Z.getProps().results.filter(e => e.type === p.h8.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
+  k = h.Z.getProps().results.filter(e => e.type === p.h8.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
 }
-class F extends(s = u.ZP.PersistedStore) {
+class V extends(s = u.ZP.PersistedStore) {
   getState() {
     return {
       shouldShowTopicsBar: r
@@ -97,7 +97,7 @@ class F extends(s = u.ZP.PersistedStore) {
   }
   summaries(e) {
     var t;
-    return null !== (t = P[e]) && void 0 !== t ? t : k
+    return null !== (t = P[e]) && void 0 !== t ? t : j
   }
   shouldShowTopicsBar() {
     return r
@@ -151,7 +151,7 @@ class F extends(s = u.ZP.PersistedStore) {
       withUnreads: r,
       numChannels: i = G
     } = e, o = [];
-    return t && (o = o.concat(j)), n && (o = o.concat(L.map(e => e.channel_id))), r && (o = o.filter(e => {
+    return t && (o = o.concat(k)), n && (o = o.concat(L.map(e => e.channel_id))), r && (o = o.filter(e => {
       let t = m.Z.getChannel(e);
       return null != t && !b.ZP.isChannelMuted(t.guild_id, e) && E.ZP.hasUnread(e)
     })), (o = o.filter(e => {
@@ -164,12 +164,12 @@ class F extends(s = u.ZP.PersistedStore) {
   }
 }
 
-function V(e, t, n, r) {
+function F(e, t, n, r) {
   let i = null == t || t < n;
   return !(null == e || e > r) && !i
 }
-N(F, "persistKey", "SummaryStore");
-let Z = new F(d.Z, {
+N(V, "persistKey", "SummaryStore");
+let Z = new V(d.Z, {
   CONNECTION_OPEN: () => !1,
   CHANNEL_SELECT(e) {
     let {
@@ -263,7 +263,7 @@ let Z = new F(d.Z, {
         o = null == e ? void 0 : e.findIndex(e => e.id === (null == i ? void 0 : i.summaryId))
       } else {
         var n;
-        o = null === (n = P[t]) || void 0 === n ? void 0 : n.findIndex(t => V(e.topVisibleMessage, e.bottomVisibleMessage, t.startId, t.endId))
+        o = null === (n = P[t]) || void 0 === n ? void 0 : n.findIndex(t => F(e.topVisibleMessage, e.bottomVisibleMessage, t.startId, t.endId))
       }
     }
   },

@@ -85,8 +85,8 @@ function y(e) {
         },
         onNotificationClick: (e, t) => {
           _("unlock"), o.Z.updateNotificationStatus(t);
-          let c = s.default.isOverlayOOPEnabledForPid((0, a.QF)());
-          if (c ? o.Z.setInputLocked(!1, (0, a.QF)()) : o.Z.setInstanceLocked(!1), null == l.default.getCurrentUser()) return;
+          let c = s.default.isOverlayOOPEnabledForPid((0, a.getPID)());
+          if (c ? o.Z.setInputLocked(!1, (0, a.getPID)()) : o.Z.setInstanceLocked(!1), null == l.default.getCurrentUser()) return;
           let u = c ? {
             contextKey: r.u1M
           } : void 0;
@@ -95,7 +95,7 @@ function y(e) {
               default: e
             } = await Promise.all([n.e("79477"), n.e("32959")]).then(n.bind(n, 60594));
             return t => (0, i.jsx)(e, g(f({}, t), {
-              sourcePID: (0, a.QF)(),
+              sourcePID: (0, a.getPID)(),
               selectSource: !1,
               guildId: p.id,
               analyticsLocation: d.Sbl.OVERLAY_NUDGE
@@ -129,8 +129,8 @@ function y(e) {
         },
         onNotificationClick: (e, t) => {
           p("unlock"), o.Z.updateNotificationStatus(t);
-          let l = s.default.isOverlayOOPEnabledForPid((0, a.QF)());
-          l ? o.Z.setInputLocked(!1, (0, a.QF)()) : o.Z.setInstanceLocked(!1);
+          let l = s.default.isOverlayOOPEnabledForPid((0, a.getPID)());
+          l ? o.Z.setInputLocked(!1, (0, a.getPID)()) : o.Z.setInstanceLocked(!1);
           let c = l ? {
             contextKey: r.u1M
           } : void 0;
@@ -139,7 +139,7 @@ function y(e) {
               default: e
             } = await Promise.all([n.e("79477"), n.e("32959")]).then(n.bind(n, 60594));
             return t => (0, i.jsx)(e, g(f({}, t), {
-              sourcePID: (0, a.QF)(),
+              sourcePID: (0, a.getPID)(),
               selectSource: !1,
               selectGuild: !0,
               analyticsLocation: d.Sbl.OVERLAY_NUDGE

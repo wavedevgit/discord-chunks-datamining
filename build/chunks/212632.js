@@ -1,6 +1,6 @@
 /** Chunk was on 56650 **/
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(47120);
 var l = n(200651),
   r = n(192379),
@@ -13,7 +13,7 @@ var l = n(200651),
   d = n(455812);
 let E = 0,
   f = () => "notification-position-selector-".concat(E++),
-  C = e => {
+  h = e => {
     switch (e) {
       case s._vf.TOP_LEFT:
         return c.NW.string(c.t.xlchpa);
@@ -27,14 +27,14 @@ let E = 0,
         return c.NW.string(c.t.AlY4ZW)
     }
   },
-  _ = [s._vf.DISABLED, s._vf.TOP_LEFT, s._vf.TOP_RIGHT, s._vf.BOTTOM_LEFT, s._vf.BOTTOM_RIGHT];
+  p = [s._vf.DISABLED, s._vf.TOP_LEFT, s._vf.TOP_RIGHT, s._vf.BOTTOM_LEFT, s._vf.BOTTOM_RIGHT];
 
-function h(e) {
+function C(e) {
   let {
     position: t,
     onChange: n
   } = e, [i] = r.useState(() => f()), E = t === s._vf.DISABLED ? c.NW.string(c.t.R6LxVV) : c.NW.formatToPlainString(c.t.XXHDMz, {
-    position: C(t)
+    position: h(t)
   });
   return (0, l.jsxs)("div", {
     children: [(0, l.jsx)(o.tEY, {
@@ -44,7 +44,7 @@ function h(e) {
         className: a()(u.wrapper, {
           [u.disabledSelected]: t === s._vf.DISABLED
         }),
-        children: _.map(e => (0, l.jsxs)("label", {
+        children: p.map(e => (0, l.jsxs)("label", {
           className: a()({
             [u.selected]: e === t,
             [u.disabled]: e === s._vf.DISABLED,
@@ -53,7 +53,7 @@ function h(e) {
             [u.bottomRight]: e === s._vf.BOTTOM_RIGHT,
             [u.bottomLeft]: e === s._vf.BOTTOM_LEFT
           }),
-          children: [C(e), e === s._vf.DISABLED ? (0, l.jsx)(o.t6m, {
+          children: [h(e), e === s._vf.DISABLED ? (0, l.jsx)(o.t6m, {
             size: "md",
             color: "currentColor",
             className: u.disabledIcon
@@ -73,5 +73,5 @@ function h(e) {
     })]
   })
 }
-h.Positions = s._vf;
-let p = h
+C.Positions = s._vf;
+let _ = C

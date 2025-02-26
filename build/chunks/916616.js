@@ -101,15 +101,15 @@ class A extends(r = o.PureComponent) {
         zoomable: L,
         original: x,
         children: M,
-        renderAccessory: j,
-        onClick: k,
+        renderAccessory: k,
+        onClick: j,
         tabIndex: U,
         dataSafeSrc: G,
         useFullWidth: B = !1
       } = t,
-      F = T(t, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth"]);
+      V = T(t, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth"]);
     if (1 === m && 1 === v) return null;
-    let V = (0, f.Tj)({
+    let F = (0, f.Tj)({
         width: m,
         height: v,
         maxWidth: b,
@@ -117,15 +117,15 @@ class A extends(r = o.PureComponent) {
         minWidth: S,
         minHeight: N
       }),
-      Z = 0 !== V.width ? V.width / V.height : 1;
+      Z = 0 !== F.width ? F.width / F.height : 1;
     "" !== a && o !== h.zo9.ERROR ? e = M({
       src: a,
-      size: V,
+      size: F,
       alt: p,
       className: r,
       mediaLayoutType: A
     }) : o !== h.zo9.LOADING && (e = (0, i.jsx)(C, {
-      size: V,
+      size: F,
       mediaLayoutType: A,
       alt: p
     })), e = (0, i.jsx)(_.N, {
@@ -133,10 +133,10 @@ class A extends(r = o.PureComponent) {
       aspectRatio: Z,
       placeholder: l,
       placeholderVersion: u,
-      placeholderStyle: P(V, A),
+      placeholderStyle: P(F, A),
       children: e
     });
-    let H = null != j ? j() : null;
+    let H = null != k ? k() : null;
     return H = null != H ? H : w, (0, i.jsx)(c.tEY, {
       ringTarget: this._containerRef,
       focusTarget: this._clickableRef,
@@ -144,23 +144,23 @@ class A extends(r = o.PureComponent) {
         className: s()(E.imageWrapper, {
           [E.imageZoom]: L,
           [E.imageWrapperBackground]: o !== h.zo9.READY,
-          [E.clickable]: null != k
+          [E.clickable]: null != j
         }, n),
-        style: R(V, D, B, A)
-      }, F), {
+        style: R(F, D, B, A)
+      }, V), {
         children: [null != x && (0, i.jsx)("a", {
           tabIndex: -1,
-          onClick: k,
+          onClick: j,
           "aria-hidden": !0,
           className: E.originalLink,
           href: x,
           ref: this._containerRef,
           "data-role": "img",
           "data-safe-src": null != G ? G : a
-        }), null != k ? (0, i.jsx)(c.P3F, {
+        }), null != j ? (0, i.jsx)(c.P3F, {
           className: E.clickableWrapper,
           tabIndex: null != U ? U : 0,
-          onClick: k,
+          onClick: j,
           "aria-label": null != p ? p : g.NW.string(g.t.X4IxWF),
           "aria-describedby": d.r5,
           innerRef: this._clickableRef,

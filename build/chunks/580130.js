@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => V
+  Z: () => F
 }), n(47120), n(653041);
 var r, i = n(392711),
   o = n.n(i),
@@ -93,11 +93,11 @@ function M(e) {
   for (let e of (y = !0, b = !1, O = !n, t)) A(e)
 }
 
-function j() {
+function k() {
   y = !1, b = !1, O = !1
 }
 
-function k(e) {
+function j(e) {
   let {
     entitlements: t
   } = e;
@@ -120,7 +120,7 @@ function G(e) {
 function B(e) {
   return R(e.entitlement)
 }
-class F extends(r = s.yh) {
+class V extends(r = s.yh) {
   initialize() {
     this.syncWith([u.Z], () => !0)
   }
@@ -215,14 +215,14 @@ class F extends(r = s.yh) {
     }), t
   }
 }
-h(F, "displayName", "EntitlementStore");
-let V = new F(l.Z, {
+h(V, "displayName", "EntitlementStore");
+let F = new V(l.Z, {
   ENTITLEMENT_FETCH_APPLICATION_START: P,
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: D,
   ENTITLEMENT_FETCH_APPLICATION_FAIL: L,
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: w,
-  SKU_PURCHASE_SUCCESS: k,
-  VIRTUAL_CURRENCY_REDEEM_SUCCESS: k,
+  SKU_PURCHASE_SUCCESS: j,
+  VIRTUAL_CURRENCY_REDEEM_SUCCESS: j,
   LIBRARY_FETCH_SUCCESS: U,
   ENTITLEMENT_CREATE: G,
   ENTITLEMENT_UPDATE: G,
@@ -230,5 +230,5 @@ let V = new F(l.Z, {
   LOGOUT: N,
   ENTITLEMENTS_FETCH_FOR_USER_START: x,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
-  ENTITLEMENTS_FETCH_FOR_USER_FAIL: j
+  ENTITLEMENTS_FETCH_FOR_USER_FAIL: k
 })

@@ -43,7 +43,7 @@ let A = {},
   x = [],
   M = 30;
 
-function j(e, t, n) {
+function k(e, t, n) {
   return s()(null != r, "Creating RTCConnection without session."), new _.Z({
     sessionId: r,
     streamKey: e,
@@ -55,7 +55,7 @@ function j(e, t, n) {
   })
 }
 
-function k() {
+function j() {
   c().forEach(L, (e, t) => {
     e.destroy(e.isOwner ? "sender-disconnect" : "receiver-disconnect"), delete L[t]
   })
@@ -81,14 +81,14 @@ function U(e) {
 }
 
 function G(e) {
-  r = e.sessionId, i = null, k()
+  r = e.sessionId, i = null, j()
 }
 
 function B() {
-  r = null, i = null, k()
+  r = null, i = null, j()
 }
 
-function F(e) {
+function V(e) {
   let {
     streamType: t,
     guildId: n,
@@ -122,7 +122,7 @@ function F(e) {
   null != l ? D[u] = l : delete D[u]
 }
 
-function V(e) {
+function F(e) {
   let {
     appContext: t,
     streamKey: n
@@ -157,7 +157,7 @@ function Z(e) {
       numViewers: null != o ? o.length : 0,
       goLiveModalDurationMs: D[t]
     });
-    a = j(t, n, i), L[t] = a
+    a = k(t, n, i), L[t] = a
   }
   x = [], y.Z.getMediaEngine().on(d.aB.ConnectionStats, U)
 }
@@ -356,8 +356,8 @@ let er = new en(f.Z, !y.Z.isSupported() || __OVERLAY__ ? {} : {
   RTC_CONNECTION_LOSS_RATE: q,
   RTC_CONNECTION_UPDATE_ID: Q,
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: q,
-  STREAM_START: F,
-  STREAM_STOP: V,
+  STREAM_START: V,
+  STREAM_STOP: F,
   STREAM_CREATE: Z,
   STREAM_SERVER_UPDATE: H,
   STREAM_UPDATE: Y,

@@ -38,7 +38,7 @@ function O(e) {
     location: "gift card"
   }), L = E;
   P && (L = D ? h.Cj.SEASONAL_STANDARD_BOX : null != b ? b : g, w && (L = h.Cj.NITROWEEN_STANDARD));
-  let [x, M] = i.useState(L), j = (0, d.iE)(), [k, U] = i.useState(), [G, B] = i.useState(t && (0, p.MY)(I) === p.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? m.NW.string(m.t.ZkOo1d) : f), [F, V] = i.useState(void 0), [Z, H] = i.useState(void 0), W = (0, p.E5)(S, t), [Y, K] = i.useState(!1), [z, q] = i.useState(!1), [Q, X] = i.useState(), J = i.useCallback(e => {
+  let [x, M] = i.useState(L), k = (0, d.iE)(), [j, U] = i.useState(), [G, B] = i.useState(t && (0, p.MY)(I) === p.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? m.NW.string(m.t.ZkOo1d) : f), [V, F] = i.useState(void 0), [Z, H] = i.useState(void 0), W = (0, p.E5)(S, t), [Y, K] = i.useState(!1), [z, q] = i.useState(!1), [Q, X] = i.useState(), J = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
     } = e;
@@ -59,8 +59,8 @@ function O(e) {
       setGiftRecipientError: A,
       validatingGiftRecipient: C,
       setValidatingGiftRecipient: R,
-      soundEffect: F,
-      setSoundEffect: V,
+      soundEffect: V,
+      setSoundEffect: F,
       emojiConfetti: Z,
       setEmojiConfetti: H,
       customGiftMessage: G,
@@ -74,8 +74,8 @@ function O(e) {
       alreadyHasHalloweenDeco: $,
       recommendedGiftSkuIds: ee,
       giftingOrigin: y,
-      claimableRewards: j,
-      selectedGiftingPromotionReward: k,
+      claimableRewards: k,
+      selectedGiftingPromotionReward: j,
       setSelectedGiftingPromotionReward: U
     },
     children: O

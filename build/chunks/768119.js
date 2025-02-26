@@ -196,7 +196,7 @@ function M(e) {
   }))
 }
 
-function j(e) {
+function k(e) {
   let {
     searchId: t,
     query: n
@@ -206,7 +206,7 @@ function j(e) {
   }))
 }
 
-function k(e) {
+function j(e) {
   return Object.keys(e).forEach(t => {
     Array.isArray(e[t]) && (e[t] = e[t].filter(e => "string" == typeof e && e.trim())), Array.isArray(e[t]) && 0 !== e[t].length || delete e[t]
   }), e
@@ -230,16 +230,16 @@ function B() {
   s.K.remove(b), S = {}
 }
 
-function F() {
+function V() {
   return null != I && D({
     searchId: I
   })
 }
-class V extends(r = a.ZP.Store) {
+class F extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(f.Z, d.Z);
     let e = s.K.get(b);
-    (null == e ? void 0 : e.history) != null && (S = k(e.history)), O = !!s.K.get(y)
+    (null == e ? void 0 : e.history) != null && (S = j(e.history)), O = !!s.K.get(y)
   }
   getCurrentSearchId() {
     return I
@@ -324,8 +324,8 @@ class V extends(r = a.ZP.Store) {
     }
   }
 }
-_(V, "displayName", "SearchStore");
-let Z = new V(l.Z, {
+_(F, "displayName", "SearchStore");
+let Z = new F(l.Z, {
   SEARCH_START: A,
   SEARCH_INDEXING: R,
   SEARCH_FINISH: P,
@@ -335,9 +335,9 @@ let Z = new V(l.Z, {
   SEARCH_SET_SHOW_BLOCKED_RESULTS: U,
   SEARCH_SCREEN_OPEN: x,
   CHANNEL_SELECT: L,
-  CHANNEL_TOGGLE_MEMBERS_SECTION: F,
+  CHANNEL_TOGGLE_MEMBERS_SECTION: V,
   SEARCH_CLEAR_HISTORY: M,
-  SEARCH_REMOVE_HISTORY: j,
+  SEARCH_REMOVE_HISTORY: k,
   SEARCH_ADD_HISTORY: C,
   LOGOUT: B,
   CONNECTION_OPEN: G

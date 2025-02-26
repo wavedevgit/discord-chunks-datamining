@@ -55,11 +55,11 @@ function x(e, t) {
 }
 let M = new Map;
 
-function j() {
+function k() {
   r = !1, i = !1, o = new Map, a = new Map, s = new Map, l = 0, c = new Set, u = new Set, d = new Set, f = new Set, M = new Map, _ = new Map, h = new Map, m = new Map, g = null, E = new Map, p = new Set, v = new Map
 }
 
-function k(e, t) {
+function j(e, t) {
   var n, r, i, o;
   if (null != t.userStatus)
     for (let a of Object.values(null !== (r = null === (n = t.userStatus) || void 0 === n ? void 0 : n.progress) && void 0 !== r ? r : {})) !(0, y.isNil)(a) && O.T.DESKTOP.has(a.eventName) && ((null === (i = a.heartbeat) || void 0 === i ? void 0 : i.lastBeatAt) != null ? p.add(e) : (null === (o = a.heartbeat) || void 0 === o ? void 0 : o.lastBeatAt) == null && p.delete(e))
@@ -69,7 +69,7 @@ function U(e, t) {
   let n = (o = new Map(o)).get(e);
   if (null != n) {
     let r = w({}, n, t);
-    k(e, t), o.set(e, r)
+    j(e, t), o.set(e, r)
   }
 }
 
@@ -89,7 +89,7 @@ function B(e, t) {
   })
 }
 
-function F(e) {
+function V(e) {
   var t;
   let {
     entitlements: n
@@ -97,14 +97,14 @@ function F(e) {
   return (null == r ? void 0 : r.tag) !== S.w.REWARD_CODE ? null : r.rewardCode
 }
 
-function V(e, t) {
+function F(e, t) {
   let n = new Map(h);
   n.set(e, t.items), h = n;
   let r = o.get(e),
     i = null == r ? void 0 : r.userStatus;
   if (null != i && null == i.claimedAt) {
     var a;
-    let n = F({
+    let n = V({
       entitlements: t
     });
     null != n && G(e, n), U(e, {
@@ -121,7 +121,7 @@ function Z(e) {
 }
 
 function H() {
-  j()
+  k()
 }
 
 function W() {
@@ -250,7 +250,7 @@ function el(e) {
     questId: t,
     entitlements: n
   } = e, r = new Set(u);
-  r.delete(t), u = r, V(t, n)
+  r.delete(t), u = r, F(t, n)
 }
 
 function ec(e) {
@@ -360,7 +360,7 @@ function ey(e) {
   } = e;
   v.delete(t)
 }
-j();
+k();
 class eO extends(b = I.ZP.Store) {
   get quests() {
     return o

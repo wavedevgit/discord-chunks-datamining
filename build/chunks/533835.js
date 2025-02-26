@@ -37,7 +37,7 @@ function y(e) {
   return e
 }
 
-function I(e, n) {
+function h(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function I(e, n) {
     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
   }), e
 }
-let h = [c.Z.BITE_SIZE_PROFILE_POPOUT, c.Z.PROFILE_PANEL];
+let I = [c.Z.BITE_SIZE_PROFILE_POPOUT, c.Z.PROFILE_PANEL];
 
 function j(e) {
   var {
@@ -85,7 +85,7 @@ function j(e) {
   o.useEffect(() => {
     O(j || c)
   }, [j, c]);
-  let N = !h.some(e => {
+  let N = !I.some(e => {
       var n;
       return (null !== (n = t.sourceAnalyticsLocations) && void 0 !== n ? n : []).includes(e)
     }),
@@ -98,13 +98,13 @@ function j(e) {
     user: n,
     currentUser: i,
     onViewBlockedProfileClick: () => O(!1)
-  }, t)) : n.isNonUserBot() ? (0, r.jsx)(g.Z, I(y({}, t), {
+  }, t)) : n.isNonUserBot() ? (0, r.jsx)(g.Z, h(y({}, t), {
     user: n,
     currentUser: i
-  })) : n.bot ? (0, r.jsx)(b.Z, I(y({}, t), {
+  })) : n.bot ? (0, r.jsx)(b.Z, h(y({}, t), {
     user: n,
     currentUser: i
-  })) : (0, r.jsx)(v.Z, I(y({}, t), {
+  })) : (0, r.jsx)(v.Z, h(y({}, t), {
     user: n,
     currentUser: i
   }))

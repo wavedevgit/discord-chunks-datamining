@@ -76,16 +76,16 @@ let R = {
   L = new Map,
   x = new Map,
   M = new Map,
-  j = new Map,
-  k = new Map;
+  k = new Map,
+  j = new Map;
 
 function U(e, t) {
   return "".concat(e, ":").concat(t)
 }
 let G = new Map,
   B = new Map,
-  F = new Map,
   V = new Map,
+  F = new Map,
   Z = new Map,
   H = new Map,
   W = new Map,
@@ -112,7 +112,7 @@ function J(e) {
   let b = (0, v.pY)(u),
     y = null != b && null !== (n = M.get(b)) && void 0 !== n ? n : P,
     O = null != y && 0 === y.length,
-    S = null !== (r = k.get(u.id)) && void 0 !== r ? r : P,
+    S = null !== (r = j.get(u.id)) && void 0 !== r ? r : P,
     T = S.find(e => e.applicationId === d),
     A = h.map(e => e.userId),
     C = c.default.getId(),
@@ -120,8 +120,8 @@ function J(e) {
     D = null === (t = h.find(e => e.userId === C)) || void 0 === t ? void 0 : t.sessionId,
     w = h.some(e => (0, E.J)(e)),
     B = L.get(d),
-    F = G.get(U(null != b ? b : null, d)),
-    V = null == F ? void 0 : F.launchParams,
+    V = G.get(U(null != b ? b : null, d)),
+    F = null == V ? void 0 : V.launchParams,
     Z = {
       applicationId: d,
       location: u,
@@ -130,8 +130,8 @@ function J(e) {
       url: m,
       userIds: new Set(A),
       participants: h,
-      referrerId: null !== (i = null == B ? void 0 : B.referrerId) && void 0 !== i ? i : null == V ? void 0 : V.referrerId,
-      customId: null !== (o = null == B ? void 0 : B.customId) && void 0 !== o ? o : null == V ? void 0 : V.customId
+      referrerId: null !== (i = null == B ? void 0 : B.referrerId) && void 0 !== i ? i : null == F ? void 0 : F.referrerId,
+      customId: null !== (o = null == B ? void 0 : B.customId) && void 0 !== o ? o : null == F ? void 0 : F.customId
     };
   R && null != B && L.set(B.applicationId, N({}, B, Z));
   let H = !w;
@@ -145,14 +145,14 @@ function J(e) {
     isStart: null == T,
     referrerId: Z.referrerId,
     customId: Z.customId,
-    inviterUserId: null == F ? void 0 : F.inviterUserId
+    inviterUserId: null == V ? void 0 : V.inviterUserId
   });
   let W = S.filter(e => e.applicationId !== d);
-  A.length > 0 && W.push(Z), k.set(u.id, W);
+  A.length > 0 && W.push(Z), j.set(u.id, W);
   let Y = (0, v.wq)(u);
   if (null != Y) {
-    let e = (null !== (a = j.get(Y)) && void 0 !== a ? a : []).filter(e => e.location.id !== u.id);
-    A.length > 0 && e.push(Z), j.set(Y, e)
+    let e = (null !== (a = k.get(Y)) && void 0 !== a ? a : []).filter(e => e.location.id !== u.id);
+    A.length > 0 && e.push(Z), k.set(Y, e)
   }
   if (null != b) {
     let e = (null !== (s = M.get(b)) && void 0 !== s ? s : []).filter(e => e.applicationId !== d),
@@ -190,7 +190,7 @@ function ee(e) {
   let {
     guilds: t
   } = e;
-  M.clear(), x.clear(), k.clear(), j.clear(), t.forEach(e => $(e))
+  M.clear(), x.clear(), j.clear(), k.clear(), t.forEach(e => $(e))
 }
 
 function et(e) {
@@ -209,8 +209,8 @@ function en(e) {
   let o = X(r.guild_id),
     a = (null !== (n = x.get(o)) && void 0 !== n ? n : []).filter(e => (0, v.pY)(e.location) !== r.id);
   x.set(o, a), i.forEach(e => {
-    k.delete(e.location.id)
-  }), j.set(r.id, [])
+    j.delete(e.location.id)
+  }), k.set(r.id, [])
 }
 
 function er(e) {
@@ -319,8 +319,8 @@ function el(e) {
 function ec(e) {
   let {
     guildId: t
-  } = e, n = X(t), r = F.get(n);
-  F.set(n, {
+  } = e, n = X(t), r = V.get(n);
+  V.set(n, {
     isFetching: !0,
     lastFetchTimestampMs: null == r ? void 0 : r.lastFetchTimestampMs
   })
@@ -329,8 +329,8 @@ function ec(e) {
 function eu(e) {
   let {
     guildId: t
-  } = e, n = X(t), r = F.get(n);
-  F.set(n, {
+  } = e, n = X(t), r = V.get(n);
+  V.set(n, {
     isFetching: !1,
     lastFetchTimestampMs: null == r ? void 0 : r.lastFetchTimestampMs
   })
@@ -368,7 +368,7 @@ function ef(e) {
   ed({
     activities: n,
     now: i
-  }), F.set(r, {
+  }), V.set(r, {
     isFetching: !1,
     lastFetchTimestampMs: i
   })
@@ -431,7 +431,7 @@ function eE(e) {
     pictureInPictureLockState: r,
     gridLockState: i
   } = e;
-  null == n ? V.delete(t) : V.set(t, n), null === r ? Z.delete(t) : void 0 !== r && Z.set(t, r), null === i ? H.delete(t) : void 0 !== i && H.set(t, i)
+  null == n ? F.delete(t) : F.set(t, n), null === r ? Z.delete(t) : void 0 !== r && Z.set(t, r), null === i ? H.delete(t) : void 0 !== i && H.set(t, i)
 }
 
 function ev(e) {
@@ -510,11 +510,11 @@ class eT extends(i = o.ZP.PersistedStore) {
   }
   getEmbeddedActivitiesForLocation(e) {
     var t;
-    return null !== (t = k.get(e.id)) && void 0 !== t ? t : P
+    return null !== (t = j.get(e.id)) && void 0 !== t ? t : P
   }
   getEmbeddedActivitiesForStartingChannel(e) {
     var t;
-    return null !== (t = j.get(e)) && void 0 !== t ? t : P
+    return null !== (t = k.get(e)) && void 0 !== t ? t : P
   }
   getEmbeddedActivitiesByChannel() {
     return M
@@ -533,19 +533,19 @@ class eT extends(i = o.ZP.PersistedStore) {
   }
   getShelfFetchStatus(e) {
     let t = X(e);
-    return F.get(t)
+    return V.get(t)
   }
   shouldFetchShelf(e) {
     var t, n;
     let r = X(e),
-      i = null !== (t = F.get(r)) && void 0 !== t ? t : {
+      i = null !== (t = V.get(r)) && void 0 !== t ? t : {
         isFetching: !1
       },
       o = Date.now() - (null !== (n = null == i ? void 0 : i.lastFetchTimestampMs) && void 0 !== n ? n : 0) > Y;
     return !(null == i ? void 0 : i.isFetching) && o
   }
   getOrientationLockStateForApp(e) {
-    return V.get(e)
+    return F.get(e)
   }
   getPipOrientationLockStateForApp(e) {
     var t;
@@ -578,7 +578,7 @@ class eT extends(i = o.ZP.PersistedStore) {
   getEmbeddedActivityForUserId(e, t) {
     let n;
     if (void 0 !== t) {
-      s: for (let [r, i] of k)
+      s: for (let [r, i] of j)
         for (let r of i)
           if (r.applicationId === t && r.userIds.has(e)) {
             n = r;

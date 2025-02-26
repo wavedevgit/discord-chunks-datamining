@@ -55,7 +55,7 @@ function I(e) {
       }), null == R || R(), (0, d.Z)(), A(), (0, u.xf)(), (0, f.uL)(b.Z5c.APPLICATION_STORE)
     },
     M = (0, m.N)(),
-    j = i.useCallback(() => {
+    k = i.useCallback(() => {
       var e;
       return null !== (e = (0, _.fr)(M)) && void 0 !== e ? e : y.NW.string(y.t.pj0XBA)
     }, [M]);
@@ -112,7 +112,7 @@ function I(e) {
           onClick: () => {
             A()
           },
-          buttonText: j()
+          buttonText: k()
         })]
       })]
     })]

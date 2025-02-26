@@ -104,7 +104,7 @@ let S = {
   [I.kg4.TOGGLE_OVERLAY_INPUT_LOCK]: {
     onTrigger() {
       let e = (0, y.Z)();
-      null != e && l.Z.setInputLocked(!N.Z.isLocked(e), e)
+      null != e && l.Z.setInputLocked(!N.default.isLocked(e), e)
     },
     keyEvents: {
       keyup: !0,
@@ -113,9 +113,9 @@ let S = {
   },
   [I.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET]: {
     onTrigger() {
-      let e = O.ZP.getFocusedPID(),
+      let e = O.default.getFocusedPID(),
         t = null != e;
-      null != e && t && N.Z.isPinned(I.Odu.TEXT) && N.Z.isLocked(e) && O.ZP.isReady(e) && l.Z.activateRegion(I.O0n.TEXT_WIDGET)
+      null != e && t && N.default.isPinned(I.Odu.TEXT) && N.default.isLocked(e) && O.default.isReady(e) && l.Z.activateRegion(I.O0n.TEXT_WIDGET)
     },
     keyEvents: {
       keyup: !0,
@@ -164,7 +164,7 @@ let S = {
     onTrigger: () => {
       if (!(0, g.D)()) return;
       let e = (0, y.Z)();
-      null != e && (N.Z.isLocked(e) ? (0, m.IN)(!0, e) : (0, m.oZ)(e))
+      null != e && (N.default.isLocked(e) ? (0, m.IN)(!0, e) : (0, m.oZ)(e))
     },
     keyEvents: {
       keyup: !0,

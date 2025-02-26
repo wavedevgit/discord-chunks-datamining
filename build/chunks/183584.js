@@ -42,7 +42,7 @@ function c(e) {
     type: "SOUNDBOARD_SET_OVERLAY_ENABLED",
     pid: e,
     enabled: !1
-  }), o.Z.isLocked(e) || i.Z.dispatch({
+  }), o.default.isLocked(e) || i.Z.dispatch({
     type: "OVERLAY_SET_INPUT_LOCKED",
     locked: !0,
     pid: e

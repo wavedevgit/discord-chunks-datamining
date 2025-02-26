@@ -1,15 +1,15 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  $s: () => O,
+  $s: () => N,
   AV: () => x,
-  Hg: () => N,
-  Kn: () => y,
+  Hg: () => T,
+  Kn: () => C,
   Nq: () => h,
-  TW: () => f,
+  TW: () => p,
   pn: () => b,
   uv: () => v,
   vx: () => _,
-  wG: () => C
+  wG: () => y
 });
 var r = n(442837),
   a = n(704215),
@@ -23,7 +23,7 @@ var r = n(442837),
   m = n(388032);
 let h = "40%",
   x = 8,
-  p = e => {
+  f = e => {
     let {
       hasSentAll: t,
       hasSentAtLeastOne: n,
@@ -40,12 +40,12 @@ let h = "40%",
       helpdeskArticle: a
     })
   },
-  f = e => {
+  p = e => {
     let t = v(e);
     return null != t && t !== u.g2L.NOT_ELIGIBLE
   },
   b = e => {
-    let t = f(e),
+    let t = p(e),
       n = (0, c.b)("PremiumManagementSettings"),
       a = (0, r.e7)([l.Z], () => l.Z.getRecipientStatus());
     return !!t && (!!n || a.size > 0)
@@ -91,18 +91,18 @@ let h = "40%",
     let t = v(e);
     return t === u.g2L.COOLDOWN || t === u.g2L.UNAPPLIED || t === u.g2L.QUALIFIED
   },
-  C = e => {
+  y = e => {
     let t = j(e),
       n = (0, i.wE)(a.z.REFERRAL_INCENTIVE_AWARDED_INFO);
     return t && !n
   },
-  y = e => {
-    let t = f(e),
+  C = e => {
+    let t = p(e),
       n = (0, c.b)(e),
       r = (0, i.wE)(a.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE);
     return !t && n && !r
   },
-  O = e => {
+  N = e => {
     let {
       referralIncentiveLifecycleState: t,
       hasSentAll: n,
@@ -125,7 +125,7 @@ let h = "40%",
         return r.redeemed === d.Q ? m.NW.string(m.t.SRJkUV) : m.NW.string(m.t.MoKnzc)
     }
   },
-  N = e => {
+  T = e => {
     let {
       helpdeskArticle: t,
       referralIncentiveLifecycleState: n,
@@ -134,7 +134,7 @@ let h = "40%",
     } = e;
     switch (n) {
       case u.g2L.NOT_ELIGIBLE:
-        return p({
+        return f({
           hasSentAll: r.sent >= d.Q,
           hasSentAtLeastOne: r.sent >= 1,
           numSentUsers: r.sent,

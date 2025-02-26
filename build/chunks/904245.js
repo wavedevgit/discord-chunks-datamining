@@ -36,13 +36,13 @@ var r = n(278074),
   L = n(48854),
   x = n(785359),
   M = n(646504),
-  j = n(64078),
-  k = n(351780),
+  k = n(64078),
+  j = n(351780),
   U = n(79390),
   G = n(980463),
   B = n(328908),
-  F = n(992970),
-  V = n(576645),
+  V = n(992970),
+  F = n(576645),
   Z = n(317951),
   H = n(287941),
   W = n(643266),
@@ -724,7 +724,7 @@ let eP = {
         uploads: o,
         confettiPotionEmoji: a
       } = e;
-      return null != a && (0, V.tv)(n, r, i, o) ? {
+      return null != a && (0, F.tv)(n, r, i, o) ? {
         confettiPotionData: {
           emoji: a,
           callback: () => (0, B.Hb)(t)
@@ -878,7 +878,7 @@ let eP = {
           nonce: M,
           poll: (0, U.x9)(b)
         });
-        (0, j.EL)(e, t.id), null != m && (t.sticker_items = m.map(e => z.Z.getStickerById(e)).filter(e => null != e)), eD.receiveMessage(e, t, !0, n)
+        (0, k.EL)(e, t.id), null != m && (t.sticker_items = m.map(e => z.Z.getStickerById(e)).filter(e => null != e)), eD.receiveMessage(e, t, !0, n)
       }
       if (!eI && null != u && u.length > 0) {
         eI = !0;
@@ -915,7 +915,7 @@ let eP = {
           null != n.party && null != n.party.id && (t.party_id = n.party.id), Y.message.application_id = n.application_id, Y.message.activity = t
         }
       }
-      return null != b && (Y.message.poll = b), null != m && (Y.message.sticker_ids = m), k.Z.isEnabled() && (Y.message.has_poggermode_enabled = !0), null != y && (Y.message.content_inventory_entry = y), null != g && (Y.message.confetti_potion = (0, V.vY)(g), g.callback()), new Promise((t, r) => {
+      return null != b && (Y.message.poll = b), null != m && (Y.message.sticker_ids = m), j.Z.isEnabled() && (Y.message.has_poggermode_enabled = !0), null != y && (Y.message.content_inventory_entry = y), null != g && (Y.message.confetti_potion = (0, F.vY)(g), g.callback()), new Promise((t, r) => {
         let i = Date.now(),
           o = l.ZP.length,
           s = Math.floor(1e4 * Math.random());
@@ -929,11 +929,11 @@ let eP = {
               },
               poll: b
             });
-            let r = (0, V.ZC)(s.body);
+            let r = (0, F.ZC)(s.body);
             null != r && ((0, G.gA)(Z.D1), (0, H.I)({
               name: r.name,
               id: r.id
-            }, void 0, !0, F.LL.MessageSent));
+            }, void 0, !0, V.LL.MessageSent));
             let i = ep.default.cast(e),
               l = I.Z.getRequest(i);
             if (null != l) {

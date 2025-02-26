@@ -45,42 +45,42 @@ async function S(e) {
       customId: x,
       referrerId: M
     } = e,
-    j = (0, g.Z)(),
-    k = o.Z.getChannel(c),
-    U = null == k ? void 0 : k.getGuildId(),
+    k = (0, g.Z)(),
+    j = o.Z.getChannel(c),
+    U = null == j ? void 0 : j.getGuildId(),
     G = null == U || "" === U,
     B = s.default.getCurrentUser();
   if (null == B) return !1;
-  if (!(0, u.sq)() && (null == k || G && !k.isPrivate() || null == c)) return Promise.resolve(!1);
-  let F = f.ZP.getCurrentEmbeddedActivity();
-  (null == F ? void 0 : F.applicationId) != null && (t = i.Z.getApplication(null == F ? void 0 : F.applicationId));
-  let V = (null == F ? void 0 : F.location.kind) === r.X.CONTEXTLESS;
-  if ((V || a.Z.getVoiceChannelId() === c) && null != F && F.applicationId === n && (V || (0, h.pY)(F.location) === a.Z.getVoiceChannelId())) return (0, b.Z)(U, F.location), Promise.resolve(!0);
+  if (!(0, u.sq)() && (null == j || G && !j.isPrivate() || null == c)) return Promise.resolve(!1);
+  let V = f.ZP.getCurrentEmbeddedActivity();
+  (null == V ? void 0 : V.applicationId) != null && (t = i.Z.getApplication(null == V ? void 0 : V.applicationId));
+  let F = (null == V ? void 0 : V.location.kind) === r.X.CONTEXTLESS;
+  if ((F || a.Z.getVoiceChannelId() === c) && null != V && V.applicationId === n && (F || (0, h.pY)(V.location) === a.Z.getVoiceChannelId())) return (0, b.Z)(U, V.location), Promise.resolve(!0);
   let Z = await (0, m.Z)(n, c),
     H = (0, u.Kb)(Z);
   if (L && (H ? c = void 0 : L = !1), !await (0, _.p)({
       applicationId: n,
       application: Z,
-      channel: k,
+      channel: j,
       currentEmbeddedApplication: t,
-      embeddedActivitiesManager: j,
+      embeddedActivitiesManager: k,
       user: B
     })) return !1;
-  if (null != k) {
-    let e = (0, E.Z)(k.id),
-      n = y.wP.includes(k.type);
+  if (null != j) {
+    let e = (0, E.Z)(j.id),
+      n = y.wP.includes(j.type);
     if (e) {
       if (!await (0, v.Z)({
-          channelId: k.id,
+          channelId: j.id,
           bypassChangeModal: null != t
         })) return !1
-    } else if (!(0, l.WS)(k) || !n) return !1
-  } else if (null == k && !H) return !1;
-  return null != c && (0, p.Z)(c), null != F && (0, d.cG)(F.location), await (0, d.G6)({
+    } else if (!(0, l.WS)(j) || !n) return !1
+  } else if (null == j && !H) return !1;
+  return null != c && (0, p.Z)(c), null != V && (0, d.cG)(V.location), await (0, d.G6)({
     channelId: c,
     applicationId: n,
     isStart: !1,
-    embeddedActivitiesManager: j,
+    embeddedActivitiesManager: k,
     analyticsLocations: S,
     locationObject: O,
     componentId: I,

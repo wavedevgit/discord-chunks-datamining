@@ -53,11 +53,11 @@ var r = n(175730),
       L = i ? A + R : 0,
       x = r ? r.width : p(n.width) - w - D,
       M = r ? r.height : p(n.height) - L - P,
-      j = x + N + D + C,
-      k = M + A + P + R,
+      k = x + N + D + C,
+      j = M + A + P + R,
       U = (0, s.v)({
         devicePixelContentBoxSize: _(Math.round(x * devicePixelRatio), Math.round(M * devicePixelRatio), l),
-        borderBoxSize: _(j, k, l),
+        borderBoxSize: _(k, j, l),
         contentBoxSize: _(x, M, l),
         contentRect: new o.N(y, E, x, M)
       });

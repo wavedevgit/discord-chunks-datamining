@@ -3,7 +3,7 @@
 n.d(t, {
   CR: () => a,
   eM: () => o,
-  m3: () => s
+  m3: () => l
 });
 var i = n(570140),
   r = n(449224);
@@ -13,19 +13,19 @@ function o(e) {
 }
 
 function a(e, t, n) {
-  (e.locked !== t.locked || e.pinned !== t.pinned || n(e) !== n(t) || o(e) !== o(t)) && s(t, n(t))
+  (e.locked !== t.locked || e.pinned !== t.pinned || n(e) !== n(t) || o(e) !== o(t)) && l(t, n(t))
 }
 
-function s(e, t) {
+function l(e, t) {
   var n, a;
-  let s = o(e),
-    l = r.Z.getGame();
+  let l = o(e),
+    s = r.Z.getGame();
   i.Z.dispatch({
     type: "OVERLAY_WIDGET_CHANGED",
-    gameName: null !== (n = null == l ? void 0 : l.name) && void 0 !== n ? n : null,
-    gameId: null !== (a = null == l ? void 0 : l.id) && void 0 !== a ? a : null,
+    gameName: null !== (n = null == s ? void 0 : s.name) && void 0 !== n ? n : null,
+    gameId: null !== (a = null == s ? void 0 : s.id) && void 0 !== a ? a : null,
     widgetType: e.widget,
-    visible: s && t,
+    visible: l && t,
     locked: e.locked,
     pinned: e.pinned
   })

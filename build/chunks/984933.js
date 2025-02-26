@@ -49,11 +49,11 @@ let I = "SELECTABLE",
       name: "Uncategorized"
     })
   },
-  L = j(O.kod),
+  L = k(O.kod),
   x = [],
   M = {};
 
-function j(e) {
+function k(e) {
   return {
     id: e,
     [I]: [],
@@ -63,7 +63,7 @@ function j(e) {
   }
 }
 
-function k(e) {
+function j(e) {
   let t = A[e];
   return null == t && (t = W(e)), t
 }
@@ -85,7 +85,7 @@ function B(e) {
   return (0, p.r8)(e) ? I : (0, p.bw)(e) ? T : e
 }
 
-function F() {
+function V() {
   let e = {},
     t = d.Z.getFavoriteChannels();
   for (let n in t) {
@@ -101,8 +101,8 @@ function F() {
   return e
 }
 
-function V(e) {
-  if (e === O.I_8) return F();
+function F(e) {
+  if (e === O.I_8) return V();
   let t = {},
     n = m.Z.getMutableGuildChannelsForGuild(e);
   for (let e in n) t[e] = {
@@ -115,7 +115,7 @@ function V(e) {
 function Z(e) {
   let {
     id: t
-  } = e, n = V(t);
+  } = e, n = F(t);
   return o().forEach(n, n => {
     let r = n.channel;
     if (e.count += 1, p.zS.has(r.type) && !v.Z.can(O.Plq.VIEW_CHANNEL, r) && !c.Z.isChannelGated(r.guild_id, r.id) && r.id !== P) return;
@@ -129,7 +129,7 @@ function H() {
 }
 
 function W(e) {
-  let t = j(e);
+  let t = k(e);
   return A[e] = t, D[e] = [], Z(t), G(t), Y(t), en(e), t
 }
 
@@ -290,7 +290,7 @@ class el extends(r = s.ZP.Store) {
     return A
   }
   getChannels(e) {
-    return null != e ? k(e) : L
+    return null != e ? j(e) : L
   }
   getFirstChannelOfType(e, t, n) {
     let r = this.getChannels(e)[n].find(t);

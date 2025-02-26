@@ -2,11 +2,11 @@
 "use strict";
 n.d(t, {
   FL: () => B,
-  Mq: () => k,
+  Mq: () => j,
   NK: () => Z,
   OP: () => I,
   Sw: () => W,
-  ZP: () => V,
+  ZP: () => F,
   ge: () => H,
   hU: () => U,
   nY: () => S,
@@ -184,7 +184,7 @@ function M(e, t) {
   return t ? null !== (n = null == e ? void 0 : e.name) && void 0 !== n ? n : E.NW.string(E.t.J90oLS) : E.NW.string(E.t["/YzI6+"])
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   let r = A(e, s.G.VOICE_CHANNEL_STATUS_OUTCOME);
   if (null == r) return null;
   let i = "blocked" === r ? E.t.cLQrq6 : E.t.bma6cn;
@@ -194,7 +194,7 @@ function j(e, t, n) {
   })
 }
 
-function k(e, t) {
+function j(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : g.VqG,
     r = arguments.length > 3 ? arguments[3] : void 0,
     i = arguments.length > 4 ? arguments[4] : void 0,
@@ -212,7 +212,7 @@ function k(e, t) {
   let m = _.Z.can(g.Plq.VIEW_CHANNEL, t),
     v = M(t, m),
     b = null != t && m ? n : g.VqG,
-    y = j(e, v, n);
+    y = k(e, v, n);
   return null != y ? y : null != h ? p === a.y.MODAL && null != i ? f !== o.P.BLOCKED ? E.NW.format(E.t["4xL9Sk"], {
     applicationName: h,
     interactionUserHook: i,
@@ -281,7 +281,7 @@ function B(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   let t = A(e, s.G.CHANNEL_ID),
     n = A(e, s.G.ALERT_ACTIONS_EXECUTION),
     r = (0, h.t)(n);
@@ -305,8 +305,8 @@ function F(e) {
   }
 }
 
-function V(e) {
-  let t = r.useMemo(() => F(e), [e]),
+function F(e) {
+  let t = r.useMemo(() => V(e), [e]),
     n = (0, f.e7)([p.Z], () => p.Z.getChannel(t.embedChannelId), [t.embedChannelId]);
   return O(b({}, t), {
     embedChannel: n
@@ -317,7 +317,7 @@ function Z(e) {
   if (null == e) return null;
   let {
     alertActionsExecution: t
-  } = F(e);
+  } = V(e);
   return null != t ? t : null
 }
 

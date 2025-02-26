@@ -3,12 +3,12 @@
 n.d(t, {
   Bg: () => U,
   E5: () => ee,
-  Fp: () => F,
+  Fp: () => V,
   JT: () => $,
   L2: () => z,
-  MY: () => j,
+  MY: () => k,
   Nz: () => Z,
-  Q_: () => V,
+  Q_: () => F,
   TO: () => Y,
   Z0: () => G,
   bT: () => H,
@@ -16,7 +16,7 @@ n.d(t, {
   dQ: () => K,
   e$: () => X,
   iM: () => Q,
-  pO: () => k,
+  pO: () => j,
   xr: () => M,
   z2: () => J
 }), n(47120), n(474991), n(398202), n(301563), n(757143), n(627341), n(566702);
@@ -75,8 +75,8 @@ let b = ["discordapp.com/gifts", "discord.com/gifts"],
 var M = function(e) {
   return e[e.DEFAULT = 0] = "DEFAULT", e[e.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", e[e.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD = 2] = "CUSTOM_MESSAGE_EMOJI_SOUNDBOARD", e
 }({});
-let j = (e, t) => i.tq || i.Em ? 0 : null != e || t ? 2 : 1,
-  k = e => 0 !== j(e);
+let k = (e, t) => i.tq || i.Em ? 0 : null != e || t ? 2 : 1,
+  j = e => 0 !== k(e);
 
 function U(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
@@ -96,8 +96,8 @@ function G(e) {
 function B(e) {
   return e.replace(/[^A-Za-z0-9]/g, "")
 }
-let F = e => (null == e ? void 0 : e.type) === h.uaV.CUSTOM_GIFT && (null == e ? void 0 : e.embeds.length) === 1 && (null == e ? void 0 : e.embeds[0].type) === h.hBH.GIFT,
-  V = e => {
+let V = e => (null == e ? void 0 : e.type) === h.uaV.CUSTOM_GIFT && (null == e ? void 0 : e.embeds.length) === 1 && (null == e ? void 0 : e.embeds[0].type) === h.hBH.GIFT,
+  F = e => {
     let t;
     if (null == e) return [];
     let n = new Set;

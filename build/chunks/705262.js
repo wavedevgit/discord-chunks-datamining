@@ -39,7 +39,7 @@ var r = n(200651),
   x = n(388032),
   M = n(77500);
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -48,14 +48,14 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -80,11 +80,11 @@ function G(e, t) {
 var B = function(e) {
   return e.EDITOR = "EDITOR", e.SETTINGS = "SETTINGS", e
 }({});
-let F = Object.freeze({
+let V = Object.freeze({
     EDITOR: w.fy.SLOW_USER_ACTION,
     SETTINGS: w.fy.INFREQUENT_USER_ACTION
   }),
-  V = i.createContext({}),
+  F = i.createContext({}),
   Z = e => {
     let {
       isPersisted: t,
@@ -202,7 +202,7 @@ let F = Object.freeze({
       isCoachmark: a
     } = e, {
       type: s
-    } = i.useContext(V), [c] = (0, l.Wu)([N.Z], () => [N.Z.isPreview]), u = (null === (n = (0, E.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === P.Si.TIER_2;
+    } = i.useContext(F), [c] = (0, l.Wu)([N.Z], () => [N.Z.isPreview]), u = (null === (n = (0, E.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === P.Si.TIER_2;
     return (0, r.jsx)(r.Fragment, {
       children: "EDITOR" === s && c && u ? (0, r.jsx)(b.ZP, {
         type: P.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
@@ -233,7 +233,7 @@ let F = Object.freeze({
     } = e, {
       type: o,
       delay: a
-    } = i.useContext(V), {
+    } = i.useContext(F), {
       analyticsLocations: s
     } = (0, _.ZP)(p.Z.CLIENT_THEMES_THEME_SELECTOR), [h, m] = (0, l.Wu)([N.Z], () => {
       var e;
@@ -258,7 +258,7 @@ let F = Object.freeze({
           let {
             default: e
           } = await n.e("68192").then(n.bind(n, 742234));
-          return t => (0, r.jsx)(e, G(k({
+          return t => (0, r.jsx)(e, G(j({
             analyticsSource: p.Z.CLIENT_THEMES_THEME_SELECTOR,
             analyticsLocation: {
               section: R.jXE.SETTINGS_APPEARANCE_THEME_PICKER,
@@ -349,7 +349,7 @@ let F = Object.freeze({
       hideSystemSelector: n = !1
     } = e, {
       delay: o
-    } = i.useContext(V), {
+    } = i.useContext(F), {
       analyticsLocations: a
     } = (0, _.ZP)(p.Z.CLIENT_THEMES_THEME_SELECTOR), [s, c, u] = (0, l.Wu)([O.Z, S.ZP, N.Z], () => [O.Z.theme, null == N.Z.gradientPreset, S.ZP.useSystemTheme === D.K.ON]), f = e => {
       (0, T.xs)(), Z({
@@ -439,11 +439,11 @@ let F = Object.freeze({
       labelledBy: o
     }), s = i.useMemo(() => ({
       type: t,
-      delay: F[t]
+      delay: V[t]
     }), [t]);
-    return (0, r.jsx)(V.Provider, {
+    return (0, r.jsx)(F.Provider, {
       value: s,
-      children: (0, r.jsx)("div", G(k({}, a), {
+      children: (0, r.jsx)("div", G(j({}, a), {
         className: M.__invalid_container,
         children: n
       }))

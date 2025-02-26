@@ -17,5 +17,5 @@ function s(e) {
 }
 
 function l() {
-  return s((0, r.e7)([i.ZP], () => i.ZP.isSupported()))
+  return s((0, r.e7)([i.default], () => i.default.isSupported()))
 }

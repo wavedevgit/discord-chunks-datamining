@@ -55,8 +55,8 @@ function b(e) {
     voiceActivityCardEnabled: M
   } = (0, d.o)({
     location: "UserProfileFeaturedActivity"
-  }), j = x || M, k = (0, p.Z)(t.id, "UserProfileFeaturedActivity"), U = i.useMemo(() => D ? T.find(s.Ae) : k, [D, T, k]);
-  return w || null == N ? !j || w || null == C || P ? w || null == A ? L && null != U ? (0, r.jsx)(m.Z, {
+  }), k = x || M, j = (0, p.Z)(t.id, "UserProfileFeaturedActivity"), U = i.useMemo(() => D ? T.find(s.Ae) : j, [D, T, j]);
+  return w || null == N ? !k || w || null == C || P ? w || null == A ? L && null != U ? (0, r.jsx)(m.Z, {
     location: "UserProfileFeaturedActivity",
     user: t,
     currentUser: n,

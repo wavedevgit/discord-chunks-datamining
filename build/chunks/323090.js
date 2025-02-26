@@ -19,8 +19,8 @@ var o = t(442837),
   g = t(678738),
   v = t(179828),
   y = t(228168),
-  I = t(388032),
-  h = t(329462);
+  h = t(388032),
+  I = t(329462);
 
 function j(e) {
   var n;
@@ -37,10 +37,10 @@ function j(e) {
     return null === (e = u.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
   }), E = (0, o.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId())), S = (0, f.kc)({
     location: "BotUserProfileModalInfo"
-  }) ? I.NW.string(I.t["mQKv+v"]) : I.NW.string(I.t.PbMNh4);
+  }) ? h.NW.string(h.t["mQKv+v"]) : h.NW.string(h.t.PbMNh4);
   return (0, r.jsxs)(i.zJl, {
     fade: !0,
-    className: h.scroller,
+    className: I.scroller,
     children: [(null == x ? void 0 : x.bio) != null && (null == x ? void 0 : x.bio) !== "" && (0, r.jsx)(m.Z, {
       userBio: x.bio,
       setLineClamp: !1
@@ -56,7 +56,7 @@ function j(e) {
       guild: N,
       scrollIntoView: _ === y.Tb.ROLES
     }), (0, r.jsx)(g.Z, {
-      heading: I.NW.string(I.t["A//N4u"]),
+      heading: h.NW.string(h.t["A//N4u"]),
       children: (0, r.jsx)(b.Z, {
         userId: t.id,
         guildId: null == x ? void 0 : x.guildId,
@@ -67,7 +67,7 @@ function j(e) {
       scrollIntoView: _ === y.Tb.NOTE,
       children: (0, r.jsx)(l.Z, {
         userId: t.id,
-        className: h.note,
+        className: I.note,
         autoFocus: _ === y.Tb.NOTE,
         onUpdate: () => Z({
           action: "SET_NOTE"

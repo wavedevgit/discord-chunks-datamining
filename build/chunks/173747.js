@@ -85,7 +85,7 @@ function M(e) {
   b.add(t)
 }
 
-function j(e) {
+function k(e) {
   let {
     applicationId: t,
     branchId: n,
@@ -109,7 +109,7 @@ function j(e) {
   }, x(t, n)
 }
 
-function k(e) {
+function j(e) {
   let {
     branchId: t
   } = e;
@@ -138,7 +138,7 @@ function B(e) {
   null == S[t] && delete S[t]
 }
 
-function F(e) {
+function V(e) {
   let {
     branches: t
   } = e, n = {};
@@ -160,7 +160,7 @@ function F(e) {
   P(A)
 }
 
-function V() {
+function F() {
   P(C)
 }
 
@@ -208,13 +208,13 @@ let Y = new W(l.Z, {
   CONNECTION_OPEN: D,
   GAMES_DATABASE_UPDATE: L,
   APPLICATION_BUILD_FETCH_START: M,
-  APPLICATION_BUILD_FETCH_SUCCESS: j,
-  APPLICATION_BUILD_NOT_FOUND: k,
+  APPLICATION_BUILD_FETCH_SUCCESS: k,
+  APPLICATION_BUILD_NOT_FOUND: j,
   APPLICATION_BUILD_SIZE_FETCH_START: U,
   APPLICATION_BUILD_SIZE_FETCH_SUCCESS: G,
   APPLICATION_BUILD_SIZE_FETCH_FAIL: B,
-  APPLICATION_BRANCHES_FETCH_SUCCESS: F,
-  APPLICATION_BRANCHES_FETCH_FAIL: V,
+  APPLICATION_BRANCHES_FETCH_SUCCESS: V,
+  APPLICATION_BRANCHES_FETCH_FAIL: F,
   CONNECTION_CLOSED: Z,
   LOGOUT: Z,
   SKU_PURCHASE_SUCCESS: H

@@ -254,8 +254,8 @@ let S = /\b\B/,
       begin: m(/[ ]+/, "(", o, /[.]?[:]?([.][ ]|[ ])/, "){3}")
     }), r
   },
-  j = M("//", "$"),
-  k = M("/\\*", "\\*/"),
+  k = M("//", "$"),
+  j = M("/\\*", "\\*/"),
   U = M("#", "$"),
   G = {
     scope: "regexp",
@@ -273,12 +273,12 @@ let S = /\b\B/,
     begin: I,
     relevance: 0
   },
-  F = {
+  V = {
     scope: "title",
     begin: T,
     relevance: 0
   };
-var V = Object.freeze({
+var F = Object.freeze({
   __proto__: null,
   APOS_STRING_MODE: w,
   BACKSLASH_ESCAPE: D,
@@ -289,8 +289,8 @@ var V = Object.freeze({
   },
   BINARY_NUMBER_RE: C,
   COMMENT: M,
-  C_BLOCK_COMMENT_MODE: k,
-  C_LINE_COMMENT_MODE: j,
+  C_BLOCK_COMMENT_MODE: j,
+  C_LINE_COMMENT_MODE: k,
   C_NUMBER_MODE: {
     scope: "number",
     begin: A,
@@ -327,7 +327,7 @@ var V = Object.freeze({
   SHEBANG: P,
   TITLE_MODE: B,
   UNDERSCORE_IDENT_RE: T,
-  UNDERSCORE_TITLE_MODE: F
+  UNDERSCORE_TITLE_MODE: V
 });
 
 function Z(e, t) {
@@ -755,7 +755,7 @@ let em = r,
           throw e.mode = D, e
         }
         if ("illegal" === r.type && "" === o) return x += "\n", 1;
-        if (k > 1e5 && k > 3 * r.index) throw Error("potential infinite loop, way more iterations than matches");
+        if (j > 1e5 && j > 3 * r.index) throw Error("potential infinite loop, way more iterations than matches");
         return x += o, o.length
       }
       let A = P(e);
@@ -768,21 +768,21 @@ let em = r,
       I();
       let x = "",
         M = 0,
-        j = 0,
         k = 0,
+        j = 0,
         U = !1;
       try {
         if (A.__emitTokens) A.__emitTokens(t, L);
         else {
           for (D.matcher.considerAll();;) {
-            k++, U ? U = !1 : D.matcher.considerAll(), D.matcher.lastIndex = j;
+            j++, U ? U = !1 : D.matcher.considerAll(), D.matcher.lastIndex = k;
             let e = D.matcher.exec(t);
             if (!e) break;
-            let n = t.substring(j, e.index),
+            let n = t.substring(k, e.index),
               r = N(n, e);
-            j = e.index + r
+            k = e.index + r
           }
-          N(t.substring(j))
+          N(t.substring(k))
         }
         return L.finalize(), R = L.toHTML(), {
           language: e,
@@ -800,8 +800,8 @@ let em = r,
           relevance: 0,
           _illegalBy: {
             message: n.message,
-            index: j,
-            context: t.slice(j - 100, j + 100),
+            index: k,
+            context: t.slice(k - 100, k + 100),
             mode: n.mode,
             resultSoFar: R
           },
@@ -993,8 +993,8 @@ let em = r,
         either: E,
         optional: h,
         anyNumberOfTimes: _
-      }, V) "object" == typeof V[n] && t(V[n]);
-    return Object.assign(e, V), e
+      }, F) "object" == typeof F[n] && t(F[n]);
+    return Object.assign(e, F), e
   },
   ey = eb({});
 ey.newInstance = () => eb({}), e.exports = ey, ey.HighlightJS = ey, ey.default = ey

@@ -72,8 +72,8 @@ function x(e, t) {
   }), e
 }
 let M = 190,
-  j = 178,
-  k = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
+  k = 178,
+  j = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
   U = e => {
     let {
       channelId: t,
@@ -98,7 +98,7 @@ let M = 190,
         buttonUseState: c
       }))
     }, {
-      modalKey: k
+      modalKey: j
     }))
   };
 
@@ -173,7 +173,7 @@ function B(e) {
       return 0
     }, [b, R, s]),
     M = (0, i.useMemo)(() => 0 === x ? 1 : f ? 2 : 3 * (null == p), [f, p, x]);
-  return (0, r.jsx)(F, {
+  return (0, r.jsx)(V, {
     channel: t,
     buttonPurchaseState: x,
     buttonDisabledState: M,
@@ -184,7 +184,7 @@ function B(e) {
     isReaction: c
   })
 }
-let F = e => {
+let V = e => {
     let {
       channel: t,
       buttonPurchaseState: n,
@@ -217,7 +217,7 @@ let F = e => {
       children: [(0, r.jsx)("div", {
         className: R.modal,
         ref: d,
-        children: (0, r.jsx)(V, {
+        children: (0, r.jsx)(F, {
           channel: t,
           selectedEmoji: c,
           isReaction: u
@@ -230,7 +230,7 @@ let F = e => {
       })]
     })
   },
-  V = e => {
+  F = e => {
     let {
       channel: t,
       selectedEmoji: n,
@@ -347,7 +347,7 @@ let F = e => {
       className: R.footer,
       children: [(0, r.jsx)(l.zxk, {
         onClick: () => {
-          (0, l.Mr3)(k)
+          (0, l.Mr3)(j)
         },
         color: l.zxk.Colors.PRIMARY,
         children: C.NW.string(C.t.w2Qbd3)
@@ -435,7 +435,7 @@ let F = e => {
       className: R.error,
       children: [(0, r.jsx)(l.Eep, {
         src: P,
-        width: j,
+        width: k,
         height: M
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",

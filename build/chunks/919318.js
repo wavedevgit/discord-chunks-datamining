@@ -17,8 +17,8 @@ var t = l(200651),
   f = l(524444),
   x = l(703656),
   p = l(6025),
-  j = l(695346),
-  b = l(592125),
+  b = l(695346),
+  j = l(592125),
   C = l(984933),
   v = l(375954),
   _ = l(496675),
@@ -38,7 +38,7 @@ function A(e) {
       firstMedia: r,
       channelId: a
     } = e,
-    o = (0, s.e7)([b.Z], () => b.Z.getChannel(a)),
+    o = (0, s.e7)([j.Z], () => j.Z.getChannel(a)),
     [c, d] = (0, g.hL)({
       media: r,
       channel: o
@@ -46,7 +46,7 @@ function A(e) {
     m = (0, g.MC)(d),
     x = (0, s.e7)([I.Z], () => I.Z.isFocused()),
     p = (0, h.d$)(r.src),
-    C = j.QK.useSetting(),
+    C = b.QK.useSetting(),
     {
       src: v,
       width: _,
@@ -79,14 +79,14 @@ function A(e) {
 function M(e) {
   let {
     resource: n
-  } = e, l = (0, s.e7)([b.Z], () => b.Z.getChannel(n.channelId)), a = (0, s.e7)([v.Z], () => v.Z.getMessages(n.channelId)), u = (0, s.e7)([_.Z], () => _.Z.can(P.Plq.VIEW_CHANNEL, l)), h = a.first(), g = (0, y.Z)(h), f = (0, d.zy)(h, !1), x = (null == f ? void 0 : f.length) > 0 ? f[0] : null, j = null != l && null == a.first() && !a.loadingMore && !a.ready && !a.hasFetched && u;
+  } = e, l = (0, s.e7)([j.Z], () => j.Z.getChannel(n.channelId)), a = (0, s.e7)([v.Z], () => v.Z.getMessages(n.channelId)), u = (0, s.e7)([_.Z], () => _.Z.can(P.Plq.VIEW_CHANNEL, l)), h = a.first(), g = (0, y.Z)(h), f = (0, d.zy)(h, !1), x = (null == f ? void 0 : f.length) > 0 ? f[0] : null, b = null != l && null == a.first() && !a.loadingMore && !a.ready && !a.hasFetched && u;
   if (r.useEffect(() => {
-      j && c.Z.fetchMessages({
+      b && c.Z.fetchMessages({
         channelId: n.channelId,
         after: n.channelId,
         limit: 5
       })
-    }, [n.channelId, j]), null == l || null == l.guild_id) return null;
+    }, [n.channelId, b]), null == l || null == l.guild_id) return null;
   let C = Z.ZP.getResourceChannelIconURL({
       channelId: l.id,
       icon: n.icon

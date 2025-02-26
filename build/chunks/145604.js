@@ -136,8 +136,8 @@ class X extends i.PureComponent {
         channelId: E
       });
       let i = null,
-        l = H.Z.getFocusedPID();
-      null == l || S.default.getOverlayMethod(l) === a.gl.Disabled || (H.Z.isInstanceLocked() ? i = K.ADE.OVERLAY_LOCKED_ACTIVATED : H.Z.isInstanceLocked() || (i = H.Z.isPinned(K.Odu.TEXT) ? K.ADE.OVERLAY_UNLOCKED_PINNED : K.ADE.OVERLAY_UNLOCKED)), F.default.track(K.rMx.JOIN_VOICE_CHANNEL, Q({
+        l = H.default.getFocusedPID();
+      null == l || S.default.getOverlayMethod(l) === a.gl.Disabled || (H.default.isInstanceLocked() ? i = K.ADE.OVERLAY_LOCKED_ACTIVATED : H.default.isInstanceLocked() || (i = H.default.isPinned(K.Odu.TEXT) ? K.ADE.OVERLAY_UNLOCKED_PINNED : K.ADE.OVERLAY_UNLOCKED)), F.default.track(K.rMx.JOIN_VOICE_CHANNEL, Q({
         location: i,
         channel_id: E,
         channel_type: y,

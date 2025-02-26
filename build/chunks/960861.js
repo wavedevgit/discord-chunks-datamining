@@ -3,7 +3,7 @@
 n.d(t, {
   UB: () => C,
   Uc: () => v,
-  ZP: () => k,
+  ZP: () => j,
   kE: () => R
 });
 var r, i = n(192379),
@@ -131,14 +131,14 @@ function M(e) {
   }
 }
 
-function j() {
+function k() {
   I = {}
 }
 E(D, "displayName", "NativeScreenSharePickerStore");
-let k = new D(a.Z, {
+let j = new D(a.Z, {
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: w,
   NATIVE_SCREEN_SHARE_PICKER_CANCEL: L,
   NATIVE_SCREEN_SHARE_PICKER_ERROR: x,
   NATIVE_SCREEN_SHARE_PICKER_PRESENT: M,
-  NATIVE_SCREEN_SHARE_PICKER_RELEASE: j
+  NATIVE_SCREEN_SHARE_PICKER_RELEASE: k
 })

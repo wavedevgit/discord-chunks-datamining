@@ -13,7 +13,7 @@ var s = e(481060),
 function c(t) {
   let {
     onSelect: a,
-    layoutId: e = o.qU,
+    layoutId: e = o.OVERLAY_LAYOUT_ID,
     version: c
   } = t;
   return (0, r.jsx)(s.v2r, {

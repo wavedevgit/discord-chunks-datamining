@@ -37,13 +37,13 @@ var r = n(200651),
   L = n(726521),
   x = n(713938),
   M = n(973616),
-  j = n(881998),
-  k = n(592125),
+  k = n(881998),
+  j = n(592125),
   U = n(944486),
   G = n(246946),
   B = n(9156),
-  F = n(768581),
-  V = n(585483),
+  V = n(768581),
+  F = n(585483),
   Z = n(49012),
   H = n(621600),
   W = n(709054),
@@ -298,7 +298,7 @@ let ec = e => {
         })
       }
     }, [v]), O = () => {
-      let e = F.ZP.getApplicationIconURL({
+      let e = V.ZP.getApplicationIconURL({
           id: o.id,
           icon: o.icon
         }),
@@ -371,7 +371,7 @@ let ec = e => {
     } = e, b = o.id, O = i.useMemo(() => M.ZP.createFromServer(o), [o]), S = (0, p.e7)([q.Z], () => {
       var e, t, n, r;
       return null === (r = q.Z.settings.applications) || void 0 === r ? void 0 : null === (n = r.appSettings) || void 0 === n ? void 0 : null === (t = n[b]) || void 0 === t ? void 0 : null === (e = t.appDmSettings) || void 0 === e ? void 0 : e.dmDisabled
-    }, [b]), I = o.bot, T = (0, p.e7)([k.Z], () => k.Z.getDMFromUserId(null == I ? void 0 : I.id)), N = (0, p.e7)([B.ZP], () => null == T ? null : B.ZP.isChannelMuted(null, T)), [A, R] = i.useState(!1), [D, L] = i.useState(!1), j = w.Z.useExperiment({
+    }, [b]), I = o.bot, T = (0, p.e7)([j.Z], () => j.Z.getDMFromUserId(null == I ? void 0 : I.id)), N = (0, p.e7)([B.ZP], () => null == T ? null : B.ZP.isChannelMuted(null, T)), [A, R] = i.useState(!1), [D, L] = i.useState(!1), k = w.Z.useExperiment({
       location: "Authorized Applications"
     }, {
       autoTrackExposure: !0
@@ -470,8 +470,8 @@ let ec = e => {
           })]
         })
       }
-    }), V = () => {
-      let e = F.ZP.getApplicationIconURL({
+    }), F = () => {
+      let e = V.ZP.getApplicationIconURL({
           id: o.id,
           icon: o.icon
         }),
@@ -501,7 +501,7 @@ let ec = e => {
           })]
         }), (0, r.jsx)(J.Z, {
           appRecord: O,
-          showAppReportingOption: j,
+          showAppReportingOption: k,
           selectedGuildId: l,
           selectedChannelId: s
         })]
@@ -587,7 +587,7 @@ let ec = e => {
     return (0, r.jsx)("div", {
       className: a()(et.authedAppV2, en.marginBottom8),
       children: (0, r.jsx)(g.y5t, {
-        component: V(),
+        component: F(),
         children: (0, r.jsxs)("div", {
           className: et.appDetailsContainer,
           children: [G(), U(), K(), $()]
@@ -600,10 +600,10 @@ let ec = e => {
   })),
   em = () => {
     let e = (0, p.e7)([G.Z], () => G.Z.hidePersonalInformation),
-      t = (0, p.e7)([j.Z], () => j.Z.getApps()),
+      t = (0, p.e7)([k.Z], () => k.Z.getApps()),
       o = (0, p.e7)([Y.default], () => Y.default.locale),
       a = (0, p.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivities()),
-      s = (0, p.e7)([k.Z, U.Z], () => k.Z.getChannel(U.Z.getChannelId())),
+      s = (0, p.e7)([j.Z, U.Z], () => j.Z.getChannel(U.Z.getChannelId())),
       c = null == s ? void 0 : s.getGuildId(),
       u = A.J.useExperiment({
         location: "UserSettingsAuthedApps"
@@ -622,7 +622,7 @@ let ec = e => {
           id: t,
           application: n
         } = e;
-        E.Z.delete(t), V.S.safeDispatch($.CkL.HIDE_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION, {
+        E.Z.delete(t), F.S.safeDispatch($.CkL.HIDE_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION, {
           applicationId: n.id
         });
         let r = a.get(n.id);

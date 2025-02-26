@@ -88,13 +88,13 @@ function A(e) {
     setInteractionToast: w
   } = (0, g.Xo)(), {
     primaryColor: L
-  } = (0, v.z)(), [x, M] = i.useState(""), [j, k] = i.useState((0, u.JM)(x)), U = i.useRef(!1), G = i.useRef(null), B = i.useCallback(e => {
+  } = (0, v.z)(), [x, M] = i.useState(""), [k, j] = i.useState((0, u.JM)(x)), U = i.useRef(!1), G = i.useRef(null), B = i.useCallback(e => {
     e.key === y.vn.ESCAPE && (e.stopPropagation(), D())
   }, [D]);
   i.useEffect(() => {
     null == E || E(null == G ? void 0 : G.current)
   }, [G, E]);
-  let F = async e => {
+  let V = async e => {
     if (null == e) return;
     f === b.n_.AVATAR ? C({
       action: "SEND_REPLY_AVATAR"
@@ -121,7 +121,7 @@ function A(e) {
       })
     } catch (e) {}
     w(b.P.REPLY)
-  }, V = {
+  }, F = {
     [S.biteSize]: s === b.y0.BITE_SIZE,
     [S.panel]: s === b.y0.PANEL,
     [S.fullSize]: s === b.y0.FULL_SIZE
@@ -134,7 +134,7 @@ function A(e) {
     ref: G,
     onKeyDown: B,
     children: (0, r.jsx)("div", {
-      className: a()(S.container, V, Z, {
+      className: a()(S.container, F, Z, {
         [S.customProfileTheme]: null != L
       }),
       children: (0, r.jsx)(d.Z, {
@@ -149,9 +149,9 @@ function A(e) {
         }),
         channel: I,
         textValue: x,
-        richValue: j,
+        richValue: k,
         onChange: (e, t, n) => {
-          t !== x && (M(t), k(n))
+          t !== x && (M(t), j(n))
         },
         focused: U.current,
         onFocus: () => {
@@ -166,7 +166,7 @@ function A(e) {
             shouldRefocus: !1
           };
           try {
-            return await F(n), D(), null == R || R(), {
+            return await V(n), D(), null == R || R(), {
               shouldClear: !0,
               shouldRefocus: !1
             }

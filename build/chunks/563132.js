@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  JL: () => F,
+  JL: () => V,
   PaymentContextProvider: () => Z
 }), n(47120), n(789020);
 var r = n(200651),
@@ -38,7 +38,7 @@ var r = n(200651),
   x = n(981631),
   M = n(474936);
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -47,14 +47,14 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -76,15 +76,15 @@ function G(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let [B, F, V] = (0, E.Z)();
+let [B, V, F] = (0, E.Z)();
 
 function Z(e) {
   var t, n, E;
   let {
-    loadId: j,
+    loadId: k,
     activeSubscription: U,
-    stepConfigs: F,
-    breadcrumbs: V = [],
+    stepConfigs: V,
+    breadcrumbs: F = [],
     skuIDs: Z,
     isGift: H = !1,
     children: W,
@@ -120,8 +120,8 @@ function Z(e) {
     breadcrumbsData: eg,
     previousStepRef: eE
   } = (0, D.Z)({
-    stepConfigs: F,
-    breadcrumbs: V
+    stepConfigs: V,
+    breadcrumbs: F
   }), [ev, eb] = (0, C.Z)(e_), {
     paymentError: ey,
     paymentAuthenticationState: eO
@@ -130,7 +130,7 @@ function Z(e) {
     purchaseErrorBlockRef: eI,
     setPurchaseError: eT
   } = (0, A.Z)(), eN = (0, l.Z)(() => {
-    let e = null != j ? j : (0, a.Z)();
+    let e = null != k ? k : (0, a.Z)();
     return y.Z.addBreadcrumb({
       message: "Checkout session ID: ".concat(e)
     }), {
@@ -144,7 +144,7 @@ function Z(e) {
     setSelectedSkuId: eP,
     setSelectedPlanId: eD,
     setSelectedPlanNotification: ew
-  } = (0, O.Z)(), [eL, ex] = (0, s.Wu)([h.Z], () => [h.Z.purchaseTokenAuthState, h.Z.purchaseTokenHash]), [eM, ej, ek, eU] = (0, s.Wu)([L.Z], () => [L.Z.browserCheckoutState, L.Z.loadId, L.Z.skuId, L.Z.planId]), [eG, eB] = i.useState(null), [eF, eV] = i.useState(null), [eZ, eH] = i.useState(null), [eW, eY] = i.useState(null), [eK, ez] = i.useState(null), [eq, eQ] = i.useState(void 0), [eX, eJ] = i.useState([]), e$ = i.useMemo(() => null == eC || (0, b.PV)(eC.id), [eC]), e0 = i.useRef(null != U ? U.planId : null);
+  } = (0, O.Z)(), [eL, ex] = (0, s.Wu)([h.Z], () => [h.Z.purchaseTokenAuthState, h.Z.purchaseTokenHash]), [eM, ek, ej, eU] = (0, s.Wu)([L.Z], () => [L.Z.browserCheckoutState, L.Z.loadId, L.Z.skuId, L.Z.planId]), [eG, eB] = i.useState(null), [eV, eF] = i.useState(null), [eZ, eH] = i.useState(null), [eW, eY] = i.useState(null), [eK, ez] = i.useState(null), [eq, eQ] = i.useState(void 0), [eX, eJ] = i.useState([]), e$ = i.useMemo(() => null == eC || (0, b.PV)(eC.id), [eC]), e0 = i.useRef(null != U ? U.planId : null);
   i.useEffect(() => {
     null == e0.current && null != U && (e0.current = U.planId)
   }, [U]);
@@ -181,7 +181,7 @@ function Z(e) {
     [ts, tl] = i.useState(null),
     tc = null !== (E = null == U ? void 0 : U.inReverseTrial) && void 0 !== E && E && !H;
   return (0, r.jsx)(B.Provider, {
-    value: G(k({
+    value: G(j({
       stripe: X,
       contextMetadata: eN,
       blockedPayments: J,
@@ -207,7 +207,7 @@ function Z(e) {
       step: e_,
       setStep: eh,
       steps: em,
-      stepConfigs: F,
+      stepConfigs: V,
       breadcrumbs: eg,
       previousStepRef: eE,
       purchaseState: ev,
@@ -222,13 +222,13 @@ function Z(e) {
       purchaseTokenAuthState: eL,
       purchaseTokenHash: ex,
       browserCheckoutState: eM,
-      browserCheckoutStateLoadId: ej,
-      browserCheckoutStateSkuId: ek,
+      browserCheckoutStateLoadId: ek,
+      browserCheckoutStateSkuId: ej,
       browserCheckoutStatePlanId: eU,
       bodyNode: eG,
       setBodyNode: eB,
-      footerNode: eF,
-      setFooterNode: eV,
+      footerNode: eV,
+      setFooterNode: eF,
       modalOverlayNode: eZ,
       setModalOverlayNode: eH,
       selectedSkuId: eA,

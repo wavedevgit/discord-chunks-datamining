@@ -103,15 +103,15 @@ function C(e) {
     bannerHeight: R,
     themePadding: P,
     animateOnHover: D = !1
-  } = e, w = (0, p.Dt)(), [L, x] = i.useState(!1), M = (0, l.e7)([m.Z], () => m.Z.isFocused()), j = h.QK.getSetting(), {
-    bannerSrc: k,
+  } = e, w = (0, p.Dt)(), [L, x] = i.useState(!1), M = (0, l.e7)([m.Z], () => m.Z.isFocused()), k = h.QK.getSetting(), {
+    bannerSrc: j,
     status: U
   } = (0, E.Z)({
     displayProfile: o,
     pendingBanner: y,
     size: C,
-    canAnimate: D || !j ? L : M
-  }), G = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), B = n.getAvatarURL(v, (0, u.pxk)(I)), F = (0, s._i)((0, d.ZP)(B, G, !1)), V = (0, f.Z)(null !== (t = null == o ? void 0 : o.primaryColor) && void 0 !== t ? t : F).hex, Z = A(I), H = Z + T - P, W = R - N - P;
+    canAnimate: D || !k ? L : M
+  }), G = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), B = n.getAvatarURL(v, (0, u.pxk)(I)), V = (0, s._i)((0, d.ZP)(B, G, !1)), F = (0, f.Z)(null !== (t = null == o ? void 0 : o.primaryColor) && void 0 !== t ? t : V).hex, Z = A(I), H = Z + T - P, W = R - N - P;
   return (0, r.jsxs)("svg", {
     className: b.mask,
     viewBox: "0 0 ".concat(C, " ").concat(R),
@@ -147,10 +147,10 @@ function C(e) {
         style: {
           height: R,
           minHeight: R,
-          backgroundImage: null != k ? "url(".concat(k, ")") : void 0,
-          backgroundColor: "COMPLETE" !== U ? c.Z.unsafe_rawColors.PRIMARY_800.css : V
+          backgroundImage: null != j ? "url(".concat(j, ")") : void 0,
+          backgroundColor: "COMPLETE" !== U ? c.Z.unsafe_rawColors.PRIMARY_800.css : F
         },
-        children: [!j && (0, g.F8)(k) && (0, r.jsx)(_.Z, {
+        children: [!k && (0, g.F8)(j) && (0, r.jsx)(_.Z, {
           className: b.gifTag
         }), O]
       })]

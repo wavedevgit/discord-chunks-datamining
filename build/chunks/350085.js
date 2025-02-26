@@ -27,10 +27,10 @@ let d = {
         let {
           prevState: r,
           dispatch: s
-        } = e, c = o.ZP.enabled, u = !0, d = n.application.id;
+        } = e, c = o.default.enabled, u = !0, d = n.application.id;
         if (null != d) {
           let e = l.Z.getActiveLibraryApplication(d);
-          null != e && (c = c && e.isOverlayEnabled()), u = a.Z.isLocked(t)
+          null != e && (c = c && e.isOverlayEnabled()), u = a.default.isLocked(t)
         }
         let p = {
           enabled: c,

@@ -113,11 +113,11 @@ function I(e) {
         match: r(/\\/, e, /u\{[0-9a-fA-F]{1,8}\}/)
       }]
     }),
-    j = (e = "") => ({
+    k = (e = "") => ({
       className: "subst",
       match: r(/\\/, e, /[\t ]*(?:[\r\n]|\r\n)/)
     }),
-    k = (e = "") => ({
+    j = (e = "") => ({
       className: "subst",
       label: "interpol",
       begin: r(/\\/, e, /\(/),
@@ -126,27 +126,27 @@ function I(e) {
     U = (e = "") => ({
       begin: r(e, /"""/),
       end: r(/"""/, e),
-      contains: [M(e), j(e), k(e)]
+      contains: [M(e), k(e), j(e)]
     }),
     G = (e = "") => ({
       begin: r(e, /"/),
       end: r(/"/, e),
-      contains: [M(e), k(e)]
+      contains: [M(e), j(e)]
     }),
     B = {
       className: "string",
       variants: [U(), U("#"), U("##"), U("###"), G(), G("#"), G("##"), G("###")]
     },
-    F = [e.BACKSLASH_ESCAPE, {
+    V = [e.BACKSLASH_ESCAPE, {
       begin: /\[/,
       end: /\]/,
       relevance: 0,
       contains: [e.BACKSLASH_ESCAPE]
     }],
-    V = {
+    F = {
       begin: /\/[^\s](?=[^/\n]*\/)/,
       end: /\//,
-      contains: F
+      contains: V
     },
     Z = e => {
       let t = r(e, /\//),
@@ -154,7 +154,7 @@ function I(e) {
       return {
         begin: t,
         end: n,
-        contains: [...F, {
+        contains: [...V, {
           scope: "comment",
           begin: `#(?!.*${n})`,
           end: /$/
@@ -163,7 +163,7 @@ function I(e) {
     },
     H = {
       scope: "regexp",
-      variants: [Z("###"), Z("##"), Z("#"), V]
+      variants: [Z("###"), Z("##"), Z("#"), F]
     },
     W = {
       match: r(/`/, b, /`/)

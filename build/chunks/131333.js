@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  t: () => k
+  t: () => j
 }), n(47120), n(301563), n(474991), n(398202);
 var r = n(200651),
   i = n(192379),
@@ -116,7 +116,7 @@ function M(e) {
       return "enter"
   }
 }
-let j = i.forwardRef(function(e, t) {
+let k = i.forwardRef(function(e, t) {
   let {
     sprites: n
   } = e, [a, s] = i.useState(null), {
@@ -163,7 +163,7 @@ let j = i.forwardRef(function(e, t) {
   })
 });
 
-function k(e) {
+function j(e) {
   let {
     children: t
   } = e, n = i.useRef({}), [o, l] = i.useState(null), c = M(o), p = i.useRef(null), [h, m] = i.useState(!1), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), v = i.useCallback(e => {
@@ -196,7 +196,7 @@ function k(e) {
     value: b,
     children: [t, Object.keys(D).map(e => {
       let t = D[e];
-      return (0, r.jsx)(j, {
+      return (0, r.jsx)(k, {
         ref: t => {
           null != t ? n.current[e] = t : delete n.current[e]
         },

@@ -164,12 +164,12 @@ function x(e) {
 var M = {
     current: null
   },
-  j = {
+  k = {
     transition: null
   },
-  k = {
+  j = {
     ReactCurrentDispatcher: M,
-    ReactCurrentBatchConfig: j,
+    ReactCurrentBatchConfig: k,
     ReactCurrentOwner: I
   };
 
@@ -198,7 +198,7 @@ t.Children = {
     if (!C(e)) throw Error("React.Children.only expected to receive a single React element child.");
     return e
   }
-}, t.Component = E, t.Fragment = i, t.Profiler = a, t.PureComponent = b, t.StrictMode = o, t.Suspense = u, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = k, t.act = U, t.cloneElement = function(e, t, r) {
+}, t.Component = E, t.Fragment = i, t.Profiler = a, t.PureComponent = b, t.StrictMode = o, t.Suspense = u, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = j, t.act = U, t.cloneElement = function(e, t, r) {
   if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
   var i = m({}, e.props),
     o = e.key,
@@ -265,12 +265,12 @@ t.Children = {
     compare: void 0 === t ? null : t
   }
 }, t.startTransition = function(e) {
-  var t = j.transition;
-  j.transition = {};
+  var t = k.transition;
+  k.transition = {};
   try {
     e()
   } finally {
-    j.transition = t
+    k.transition = t
   }
 }, t.unstable_act = U, t.useCallback = function(e, t) {
   return M.current.useCallback(e, t)

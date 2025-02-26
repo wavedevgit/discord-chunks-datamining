@@ -1,27 +1,28 @@
-/** Chunk was on 27805 **/
-i.d(t, {
-  A: () => l
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  A: () => s
 });
-var n = i(192379),
-  r = i(442837),
-  o = i(751648),
-  s = i(479766);
+var r = n(192379),
+  i = n(442837),
+  o = n(751648),
+  a = n(479766);
 
-function l() {
+function s() {
   let {
     balance: e,
     isFetching: t,
-    error: i
-  } = (0, r.cj)([s.Z], () => ({
-    balance: s.Z.balance,
-    isFetching: s.Z.isFetchingBalance,
-    error: s.Z.fetchBalanceError
+    error: n
+  } = (0, i.cj)([a.Z], () => ({
+    balance: a.Z.balance,
+    isFetching: a.Z.isFetchingBalance,
+    error: a.Z.fetchBalanceError
   }));
-  return (0, n.useEffect)(() => {
-    null !== e || null !== i || t || (0, o.ZO)()
-  }, [e, i, t]), {
+  return (0, r.useEffect)(() => {
+    null !== e || null !== n || t || (0, o.ZO)()
+  }, [e, n, t]), {
     balance: e,
     isFetching: t,
-    error: i
+    error: n
   }
 }

@@ -109,13 +109,13 @@ function M() {
   I = _.QZA.SUBMITTING, T = {}
 }
 
-function j(e) {
+function k(e) {
   var t;
   if (I !== _.QZA.SUBMITTING) return !1;
   I = _.QZA.OPEN, T = null !== (t = e.errors) && void 0 !== t ? t : {}
 }
 
-function k(e) {
+function j(e) {
   let {
     guildId: t,
     integrations: n
@@ -192,7 +192,7 @@ function B(e) {
   v = null, T = {}, N = !1
 }
 
-function F(e) {
+function V(e) {
   let {
     integrationId: t
   } = e, n = K(t);
@@ -200,7 +200,7 @@ function F(e) {
   b = n, v = null, y = null, T = {}, N = !1
 }
 
-function V() {
+function F() {
   b = null, T = {}, N = !1
 }
 
@@ -307,16 +307,16 @@ let Q = new q(c.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_SET_SECTION: R,
     INTEGRATION_SETTINGS_START_EDITING_COMMAND: G,
     INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: B,
-    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: F,
-    INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: V,
+    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: V,
+    INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: F,
     INTEGRATION_SETTINGS_UPDATE_INTEGRATION: L,
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: x,
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: Z,
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: H,
     GUILD_SETTINGS_CLOSE: D,
-    GUILD_SETTINGS_LOADED_INTEGRATIONS: k,
+    GUILD_SETTINGS_LOADED_INTEGRATIONS: j,
     WEBHOOKS_UPDATE: U,
     INTEGRATION_SETTINGS_SUBMITTING: M,
-    INTEGRATION_SETTINGS_SAVE_FAILURE: j
+    INTEGRATION_SETTINGS_SAVE_FAILURE: k
   }),
   X = Q

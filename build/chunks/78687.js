@@ -345,12 +345,12 @@ e.exports = function(e) {
         c(s)
       }
 
-      function j() {
+      function k() {
         d("Installing..."), b(), v(), n.add(0, y), n.add(1, w), n.add(2, L), n.add(3, x), n.add(4, M)
       }
       c || (c = s, s = e, e = null), e = e || {}, d("Making detectable..."), f(s) ? (d("Element is detached"), D(), d("Waiting until element is attached..."), i(s).onRendered = function() {
-        d("Element is now attached"), j()
-      }) : j()
+        d("Element is now attached"), k()
+      }) : k()
     },
     addListener: function(e, t) {
       if (!i(e).listeners.push) throw Error("Cannot add listener to an element that is not detectable.");

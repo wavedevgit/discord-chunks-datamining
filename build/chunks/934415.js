@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   EO: () => G,
-  LY: () => j,
+  LY: () => k,
   Nj: () => o.Z,
   a5: () => x,
   c4: () => L,
@@ -13,7 +13,7 @@ n.d(t, {
   rX: () => C,
   rY: () => P,
   rt: () => R,
-  wR: () => k,
+  wR: () => j,
   wl: () => M
 }), n(411104), n(653041), n(47120);
 var r = n(149765),
@@ -180,7 +180,7 @@ function M(e) {
   else if (c.sR.has(e.type)) return "text"
 }
 
-function j(e) {
+function k(e) {
   let t;
   let n = u.Z.getChannel(p.Z.getLastSelectedChannelId());
   if (null != n && n.getGuildId() === e && n.type === g.d4z.GUILD_TEXT) t = n.id;
@@ -191,20 +191,20 @@ function j(e) {
   return g.Z5c.CHANNEL(e, t)
 }
 
-function k(e, t, n, r) {
+function j(e, t, n, r) {
   let i = null == r ? "" : "?summaryId=".concat(r);
   return "".concat(location.protocol, "//").concat(location.host).concat(g.Z5c.CHANNEL(e, t, n)).concat(i)
 }
 
 function U(e, t, n, r) {
-  return null == e || null == t || null == n ? k(e, t, r) : "".concat(location.protocol, "//").concat(location.host).concat(g.Z5c.CHANNEL_THREAD_VIEW(e, t, n, r))
+  return null == e || null == t || null == n ? j(e, t, r) : "".concat(location.protocol, "//").concat(location.host).concat(g.Z5c.CHANNEL_THREAD_VIEW(e, t, n, r))
 }
 
 function G(e, t, n, r) {
   let i;
   let o = e.getGuildId(),
     a = (0, s.BC)(o, t);
-  return null != t && a ? U(o, t.id, e.id, m.default.castChannelIdAsMessageId(e.id)) : null != r ? r : k(o, e.id, n)
+  return null != t && a ? U(o, t.id, e.id, m.default.castChannelIdAsMessageId(e.id)) : null != r ? r : j(o, e.id, n)
 }
 
 function B(e) {

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => j
 }), n(266796), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -77,7 +77,7 @@ let M = e => {
         return
     }
   },
-  j = e => {
+  k = e => {
     let {
       badge: t,
       tieredTenureBadge: n
@@ -90,7 +90,7 @@ let M = e => {
     }) : t.description
   };
 
-function k(e) {
+function j(e) {
   let {
     badges: t,
     className: n,
@@ -98,11 +98,11 @@ function k(e) {
     displayProfile: f,
     onClose: L
   } = e, {
-    analyticsLocations: k
+    analyticsLocations: j
   } = (0, u.ZP)(c.Z.BADGE), {
     context: U,
     trackUserProfileAction: G
-  } = (0, O.KZ)(), [B, F] = i.useState(!1), V = E.default.getCurrentUser(), Z = (0, b.yd)(null == V ? void 0 : V.premiumType, C.p9.TIER_2), {
+  } = (0, O.KZ)(), [B, V] = i.useState(!1), F = E.default.getCurrentUser(), Z = (0, b.yd)(null == F ? void 0 : F.premiumType, C.p9.TIER_2), {
     isBadgeVersion2: H
   } = (0, d.D)();
   return (0, r.jsx)("div", {
@@ -118,33 +118,33 @@ function k(e) {
               action: "PRESS_BADGE"
             }), (0, S.NE)(x({
               badge: e.id,
-              analyticsLocations: k
+              analyticsLocations: j
             }, U)), i) {
             if (t.preventDefault(), v.default.track(A.rMx.TIERED_TENURE_BADGE_CLICKED, {
                 badge: e.id,
                 premium_type: Z,
                 viewed_user_id: null == f ? void 0 : f.userId
               }), Z) {
-              (null == f ? void 0 : f.userId) === (null == V ? void 0 : V.id) ? (0, m.uL)(A.Z5c.NITRO_HOME) : (0, p.k)({
-                analyticsLocations: k,
+              (null == f ? void 0 : f.userId) === (null == F ? void 0 : F.id) ? (0, m.uL)(A.Z5c.NITRO_HOME) : (0, p.k)({
+                analyticsLocations: j,
                 displayProfile: f
               }), null == L || L();
               return
             }
-            if ((null == f ? void 0 : f.userId) === (null == V ? void 0 : V.id)) {
+            if ((null == f ? void 0 : f.userId) === (null == F ? void 0 : F.id)) {
               let n = null != e.link ? (0, l.default)(e.link, {
-                analyticsLocations: k
+                analyticsLocations: j
               }) : null;
               if (null == n) return;
               return null == L || L(), n(t)
             }
             return (0, p.k)({
-              analyticsLocations: k,
+              analyticsLocations: j,
               displayProfile: f
             }), void(null == L || L())
           }
           let n = null != e.link ? (0, l.default)(e.link, {
-            analyticsLocations: k
+            analyticsLocations: j
           }) : null;
           if (null != n) return null == L || L(), n(t)
         },
@@ -153,12 +153,12 @@ function k(e) {
             action: "HOVER_BADGE"
           }), (0, S.Qf)(x({
             badge: e.id,
-            analyticsLocations: k
+            analyticsLocations: j
           }, U))
         },
         d = M(null == n ? void 0 : n.id),
         E = null != n && B,
-        b = j({
+        b = k({
           badge: e,
           tieredTenureBadge: i && e.id !== R.a ? n : void 0
         });
@@ -167,8 +167,8 @@ function k(e) {
         "aria-label": e.description,
         delay: N.vB,
         tooltipClassName: d,
-        onTooltipShow: () => F(null != n && 1 === n.badgeVersion),
-        onTooltipHide: () => F(!1),
+        onTooltipShow: () => V(null != n && 1 === n.badgeVersion),
+        onTooltipHide: () => V(!1),
         children: (0, r.jsxs)(s.eee, {
           onClick: c,
           onMouseEnter: u,

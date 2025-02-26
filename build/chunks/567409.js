@@ -7,8 +7,8 @@ var i = n(192379),
   r = n(392711),
   o = n.n(r),
   a = n(876215),
-  s = n(442837),
-  l = n(146282),
+  l = n(442837),
+  s = n(146282),
   c = n(26033),
   d = n(897674),
   u = n(709054),
@@ -24,7 +24,7 @@ function v(e) {
       t = (0, d.Z)(f.YN.GLOBAL_FEED),
       n = i.useMemo(() => o()(t).unionBy(e, e => e.id).filter(h).orderBy(e => u.default.extractTimestamp(e.id), "desc").uniqWith((e, t) => e.author_id === t.author_id && e.extra.application_id === t.extra.application_id).value(), [e, t]);
     return {
-      requestId: (0, s.e7)([l.Z], () => l.Z.getFeedRequestId(f.YN.GAME_PROFILE_FEED)),
+      requestId: (0, l.e7)([s.Z], () => s.Z.getFeedRequestId(f.YN.GAME_PROFILE_FEED)),
       entries: n
     }
   }();

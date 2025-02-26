@@ -62,22 +62,22 @@ function y(e) {
       currentFPS: S,
       averageFrameTime: I,
       timeSinceLastDrop: C,
-      onResetFrameData: Z,
-      droppedFramesRef: N,
+      onResetFrameData: N,
+      droppedFramesRef: Z,
       renderedFrameCount: w,
       bufferFramecountRef: _,
       frameCheckerEffect: P
     } = (0, c.d6)(!0, x, !0),
-    [T, A, D] = (0, c.ZF)(y),
+    [T, D, A] = (0, c.ZF)(y),
     [k, L] = (0, c.Y5)(T, P, b),
     R = performance.now() - j.current < c.MC,
-    M = A(I, _.current);
+    M = D(I, _.current);
   (0, u.ZP)(() => (k(), () => {
     L()
   }));
   let W = r.useCallback(() => {
-      Z(), D(), k()
-    }, [Z, D, k]),
+      N(), A(), k()
+    }, [N, A, k]),
     [V, z] = r.useState(!0),
     [U, F] = r.useState(!0),
     [G, Y] = r.useState(!0),
@@ -142,13 +142,13 @@ function y(e) {
           tag: "span",
           variant: "code",
           color: C < 2 ? "text-danger" : C < 5 ? "text-warning" : "text-primary",
-          children: N.current
+          children: Z.current
         }), (0, i.jsxs)(a.Text, {
           tag: "span",
           variant: "code",
           color: "text-secondary",
           className: g.secondaryInfoText,
-          children: ["(", (N.current / w.current * 100).toFixed(3), "%)"]
+          children: ["(", (Z.current / w.current * 100).toFixed(3), "%)"]
         })]
       })]
     }), (B || !t) && (0, i.jsxs)("div", {

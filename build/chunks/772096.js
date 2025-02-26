@@ -164,20 +164,20 @@ let C = m(_({}, l().defaultRules.link), {
       }),
       x = n.allowEmojiLinks ? y : b,
       M = [...x, ...O],
-      j = [...S, ...I],
-      k = T(t(v, L), M, [d.b.EMOJI]),
-      U = T(t(C, L), j);
-    if (null == k || null == U || 0 === N(k).trim().length) return u();
+      k = [...S, ...I],
+      j = T(t(v, L), M, [d.b.EMOJI]),
+      U = T(t(C, L), k);
+    if (null == j || null == U || 0 === N(j).trim().length) return u();
     let G = i().pick(t.rules, x),
       B = l().parserFor(G)(p.whitespaceSanitized, L),
-      F = h.whitespaceSanitized,
+      V = h.whitespaceSanitized,
       {
-        target: V
+        target: F
       } = P;
     return {
       content: B,
-      target: V,
-      title: F
+      target: F,
+      title: V
     }
   }
 })

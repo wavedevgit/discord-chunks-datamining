@@ -74,7 +74,7 @@ function M(e) {
   void 0 !== t && (clearTimeout(t), A.delete(e))
 }
 
-function j() {
+function k() {
   var e;
   let t = null !== (e = R.get(T)) && void 0 !== e ? e : 0;
   if (t > 0 && t <= S || (M(T), !x(T))) return;
@@ -85,12 +85,12 @@ function j() {
   L(T, {
     loading: !1,
     nextFetchDate: new Date(Date.now() + o)
-  }), A.set(T, setTimeout(() => k({
+  }), A.set(T, setTimeout(() => j({
     feedId: T,
     feature: i.L.INBOX
   }), o))
 }
-async function k(e) {
+async function j(e) {
   let {
     feedId: t,
     feature: n,
@@ -112,13 +112,13 @@ async function k(e) {
       feed: r
     }), R.set(t, 0), C.delete(t), L(t, {
       loading: !1
-    }), t === T && (P = null, j())
+    }), t === T && (P = null, k())
   } catch (a) {
     var i;
     let e = null !== (i = R.get(t)) && void 0 !== i ? i : 0;
     if (e < S) {
       let i = h.Z.Millis.MINUTE * Math.pow(2, e) + w(e);
-      A.set(t, setTimeout(() => k({
+      A.set(t, setTimeout(() => j({
         feedId: t,
         feature: n,
         force: r
@@ -132,7 +132,7 @@ async function k(e) {
 }
 
 function U() {
-  j()
+  k()
 }
 
 function G() {
@@ -143,7 +143,7 @@ function G() {
     location: "ContentInventoryManager",
     autoTrackExposure: !1
   });
-  e && k({
+  e && j({
     feedId: b.YN.GAME_PROFILE_FEED,
     feature: i.L.RECENT_ACTIVITY
   })
@@ -153,23 +153,23 @@ function B() {
   M(T)
 }
 
-function F(e) {
+function V(e) {
   let {
     feedId: t,
     feature: n
   } = e;
-  M(t), k({
+  M(t), j({
     feedId: t,
     feature: n,
     force: !0
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     refreshAfterMs: t
   } = e, n = v.Z.getFeed(T);
-  (null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null && (P = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), j())
+  (null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null && (P = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), k())
 }
 
 function Z(e) {
@@ -189,7 +189,7 @@ function H() {
   }, {
     autoTrackExposure: !0
   });
-  e && k({
+  e && j({
     feedId: b.YN.GAME_PROFILE_FEED,
     feature: i.L.GAME_PROFILE
   })
@@ -203,7 +203,7 @@ function W() {
   }, {
     autoTrackExposure: !0
   }), t = (0, u.Rb)("ContentInventoryManager").allowActivityWidget;
-  (e || t) && k({
+  (e || t) && j({
     feedId: b.YN.GAME_PROFILE_FEED,
     feature: i.L.OVERLAY_INVITES
   })
@@ -216,8 +216,8 @@ class Y extends a.Z {
       WINDOW_FOCUS: U,
       IDLE: U,
       CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: U,
-      CONTENT_INVENTORY_MANUAL_REFRESH: F,
-      CONTENT_INVENTORY_INBOX_STALE: V,
+      CONTENT_INVENTORY_MANUAL_REFRESH: V,
+      CONTENT_INVENTORY_INBOX_STALE: F,
       SPOTIFY_NEW_TRACK: Z,
       GAME_PROFILE_OPEN: H,
       OVERLAY_READY: W

@@ -112,7 +112,7 @@ let v = new i.Yd("OverlayActionCreators"),
         v.error("Attempting to start an overlay session outside of the overlay context");
         return
       }
-      b.setInputLocked(e, (0, f.QF)())
+      b.setInputLocked(e, (0, f.getPID)())
     },
     setEnabled(e, t) {
       o.Z.dispatch({
@@ -247,7 +247,7 @@ let v = new i.Yd("OverlayActionCreators"),
       })
     },
     setPinChat(e) {
-      let t = f.qU,
+      let t = f.OVERLAY_LAYOUT_ID,
         n = l.Z.getWidgetsForLayout(t),
         i = l.Z.getWidgetConfig(_.Odu.GUILDS),
         o = l.Z.getWidgetConfig(_.Odu.TEXT),

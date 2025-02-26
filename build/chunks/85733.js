@@ -77,15 +77,15 @@ var r = n(478497),
     var x = f ? n.replace(/\./g, "%2E") : n,
       M = a && l(A) && 1 === A.length ? x + "[]" : x;
     if (s && l(A) && 0 === A.length) return M + "[]";
-    for (var j = 0; j < N.length; ++j) {
-      var k = N[j],
-        U = "object" == typeof k && void 0 !== k.value ? k.value : A[k];
+    for (var k = 0; k < N.length; ++k) {
+      var j = N[k],
+        U = "object" == typeof j && void 0 !== j.value ? j.value : A[j];
       if (!d || null !== U) {
-        var G = v && f ? k.replace(/\./g, "%2E") : k,
+        var G = v && f ? j.replace(/\./g, "%2E") : j,
           B = l(A) ? "function" == typeof o ? o(M, G) : M : M + (v ? "." + G : "[" + G + "]");
         T.set(t, R);
-        var F = r();
-        F.set(h, T), u(w, e(U, B, o, a, s, c, d, f, "comma" === o && S && l(A) ? null : m, g, E, v, b, y, O, S, I, F))
+        var V = r();
+        V.set(h, T), u(w, e(U, B, o, a, s, c, d, f, "comma" === o && S && l(A) ? null : m, g, E, v, b, y, O, S, I, V))
       }
     }
     return w

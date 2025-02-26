@@ -14,29 +14,29 @@ var r, i = n(200651),
   h = n(481060),
   p = n(570140),
   g = n(893776),
-  _ = n(899742),
-  m = n(579806),
+  m = n(899742),
+  _ = n(579806),
   f = n(743142),
   b = n(254942),
   N = n(388905),
   x = n(379760),
   v = n(600164),
-  E = n(100159),
-  I = n(473855),
+  I = n(100159),
+  E = n(473855),
   O = n(124860),
-  C = n(86779),
-  S = n(726745),
-  j = n(913583),
+  j = n(86779),
+  C = n(726745),
+  S = n(913583),
   y = n(144114),
   T = n(541692),
   A = n(952802),
   P = n(108427),
-  R = n(365007),
-  Z = n(314897),
-  L = n(117240),
-  w = n(896797),
-  k = n(626135),
-  D = n(585483),
+  Z = n(365007),
+  R = n(314897),
+  w = n(117240),
+  L = n(896797),
+  D = n(626135),
+  k = n(585483),
   W = n(358085),
   B = n(481153),
   M = n(588705),
@@ -106,14 +106,14 @@ class X extends(r = o.PureComponent) {
       invite: r,
       location: i
     } = this.props;
-    e && !t ? (0, _.is)() : t && this.loginOrSSO(t, i, !0), k.default.track(F.rMx.LOGIN_VIEWED, Y({
+    e && !t ? (0, m.is)() : t && this.loginOrSSO(t, i, !0), D.default.track(F.rMx.LOGIN_VIEWED, Y({
       location: null != r ? "Invite Login Page" : "Non-Invite Login Page",
       login_source: this.loginSource,
       authenticated: t
-    }, null != n ? (0, E.Z)(n, !1, !1) : {}), {
+    }, null != n ? (0, I.Z)(n, !1, !1) : {}), {
       flush: !0
-    }), null == m.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
-      e && (0, R.us)().then(e => {
+    }), null == _.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
+      e && (0, Z.us)().then(e => {
         let {
           challenge: t,
           ticket: n
@@ -193,7 +193,7 @@ class X extends(r = o.PureComponent) {
     else {
       let e = window.location.protocol + window.GLOBAL_ENV.API_ENDPOINT + F.ANM.SSO,
         t = J(Y({}, i), {
-          token: Z.default.getToken()
+          token: R.default.getToken()
         });
       window.location = "".concat(e, "?").concat((0, c.stringify)(t))
     }
@@ -471,7 +471,7 @@ class X extends(r = o.PureComponent) {
         className: e,
         expanded: !0,
         children: this.renderDefaultForm(!0)
-      }), t && (0, i.jsx)(C.Z, {})]
+      }), t && (0, i.jsx)(j.Z, {})]
     })
   }
   renderGuildTemplate(e) {
@@ -479,7 +479,7 @@ class X extends(r = o.PureComponent) {
       onSubmit: this.handleLogin,
       tag: "form",
       className: s()(this.props.authBoxClassName, H.horizontalAuthBox),
-      children: () => [(0, i.jsx)(I.Z, {
+      children: () => [(0, i.jsx)(E.Z, {
         guildTemplate: e
       }, "template"), this.renderDefaultForm(!1)]
     })
@@ -546,7 +546,7 @@ class X extends(r = o.PureComponent) {
     })
   }
   renderChooseAccount() {
-    return (0, i.jsx)(j.Z, {
+    return (0, i.jsx)(S.Z, {
       onDismiss: () => {
         this.setState(e => J(Y({}, e), {
           dismissedChooseAccount: !0
@@ -598,7 +598,7 @@ class X extends(r = o.PureComponent) {
     super(e), q(this, "loginRef", void 0), q(this, "passwordRef", void 0), q(this, "codeRef", void 0), q(this, "handleAuthToken", async e => {
       this.setState({
         errors: {}
-      }), await g.Z.loginToken(e, !1), k.default.track(F.rMx.LOGIN_SUCCESSFUL, {
+      }), await g.Z.loginToken(e, !1), D.default.track(F.rMx.LOGIN_SUCCESSFUL, {
         source: F.uRl.QR_CODE,
         login_source: this.loginSource,
         gift_code_sku_id: this.giftCodeSKUId,
@@ -634,7 +634,7 @@ class X extends(r = o.PureComponent) {
         password: t,
         undelete: n
       } = this.state;
-      null == e || e.preventDefault(), D.S.dispatch(F.CkL.WAVE_EMPHASIZE), this.setState({
+      null == e || e.preventDefault(), k.S.dispatch(F.CkL.WAVE_EMPHASIZE), this.setState({
         errors: {}
       });
       try {
@@ -695,7 +695,7 @@ class X extends(r = o.PureComponent) {
         data: n,
         ticket: r
       } = e;
-      return D.S.dispatch(F.CkL.WAVE_EMPHASIZE), g.Z.loginMFAv2({
+      return k.S.dispatch(F.CkL.WAVE_EMPHASIZE), g.Z.loginMFAv2({
         code: n,
         ticket: r,
         mfaType: t,
@@ -709,7 +709,7 @@ class X extends(r = o.PureComponent) {
         errors: {}
       });
       try {
-        if (D.S.dispatch(F.CkL.WAVE_EMPHASIZE), !await g.Z.forgotPassword(t)) return;
+        if (k.S.dispatch(F.CkL.WAVE_EMPHASIZE), !await g.Z.forgotPassword(t)) return;
         (0, h.h7j)(e => (0, i.jsx)(h.ConfirmModal, J(Y({
           header: V.NW.string(V.t.f5Pi7O),
           confirmText: V.NW.string(V.t.BddRzc),
@@ -761,7 +761,7 @@ class X extends(r = o.PureComponent) {
       } = this.props, s = null != o ? (0, c.parse)(o.search) : {};
       "" !== t && (s.email = t), null != n ? (s.mode = "register", e = F.Z5c.INVITE(n.code)) : null != r ? (s.mode = "register", e = F.Z5c.GIFT_CODE(r.code)) : null != i ? e = F.Z5c.GUILD_TEMPLATE(i.code) : null != l ? (e = F.Z5c.REGISTER, s.redirect_to = l) : e = F.Z5c.REGISTER, this.loginReset(), a(e, {
         search: (0, c.stringify)(s)
-      }), D.S.dispatch(F.CkL.WAVE_EMPHASIZE)
+      }), k.S.dispatch(F.CkL.WAVE_EMPHASIZE)
     });
     let r = null != e.location ? (0, c.parse)(e.location.search) : {};
     this.state = {
@@ -784,16 +784,16 @@ q(X, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
 let $ = function(e) {
-  let t = (0, d.cj)([L.Z, w.Z, Z.default, S.Z, T.Z], () => ({
-    authenticated: Z.default.isAuthenticated(),
-    handoffAvailable: L.Z.isHandoffAvailable(),
-    user: L.Z.user,
-    loginStatus: Z.default.getLoginStatus(),
-    mfaTicket: Z.default.getMFATicket(),
-    mfaMethods: Z.default.getMFAMethods(),
-    defaultRoute: w.Z.defaultRoute,
+  let t = (0, d.cj)([w.Z, L.Z, R.default, C.Z, T.Z], () => ({
+    authenticated: R.default.isAuthenticated(),
+    handoffAvailable: w.Z.isHandoffAvailable(),
+    user: w.Z.user,
+    loginStatus: R.default.getLoginStatus(),
+    mfaTicket: R.default.getMFATicket(),
+    mfaMethods: R.default.getMFAMethods(),
+    defaultRoute: L.Z.defaultRoute,
     country: T.Z.getCountryCode(),
-    hasLoggedInAccounts: S.Z.getHasLoggedInAccounts()
+    hasLoggedInAccounts: C.Z.getHasLoggedInAccounts()
   }));
   return (0, i.jsx)(X, Y({}, e, t))
 }

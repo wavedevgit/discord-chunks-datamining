@@ -100,7 +100,7 @@ function M(e) {
   E.set(_.X8, t), y = 2
 }
 
-function j(e) {
+function k(e) {
   var t, n, r;
   let {
     soundId: i,
@@ -109,7 +109,7 @@ function j(e) {
   v.set(i, a), I.set(o, s), o !== (null === (t = u.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (T = !0)
 }
 
-function k(e) {
+function j(e) {
   var t, n;
   let {
     soundId: r,
@@ -139,7 +139,7 @@ function B(e) {
   for (let e of b.keys()) null == r[e] && b.delete(e)
 }
 
-function F(e) {
+function V(e) {
   let {
     settings: t
   } = e, {
@@ -152,7 +152,7 @@ function F(e) {
   } else n === m.yP.PRELOADED_USER_SETTINGS && B(r)
 }
 
-function V(e) {
+function F(e) {
   let {
     userId: t
   } = e;
@@ -234,16 +234,16 @@ let W = new H(s.Z, {
   GUILD_SOUNDBOARD_SOUND_CREATE: D,
   GUILD_SOUNDBOARD_SOUND_UPDATE: D,
   GUILD_SOUNDBOARD_SOUND_DELETE: L,
-  GUILD_SOUNDBOARD_SOUND_PLAY_START: j,
-  GUILD_SOUNDBOARD_SOUND_PLAY_END: k,
+  GUILD_SOUNDBOARD_SOUND_PLAY_START: k,
+  GUILD_SOUNDBOARD_SOUND_PLAY_END: j,
   USER_SOUNDBOARD_SET_VOLUME: G,
   VOICE_CHANNEL_SELECT: A,
-  USER_SETTINGS_PROTO_UPDATE: F,
+  USER_SETTINGS_PROTO_UPDATE: V,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS: x,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: M,
   SOUNDBOARD_SOUNDS_RECEIVED: R,
   GUILD_DELETE: P,
-  AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: V,
+  AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F,
   OVERLAY_INITIALIZE: Z,
   GUILD_SOUNDBOARD_SOUNDS_UPDATE: w
 })

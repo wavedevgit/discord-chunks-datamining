@@ -47,7 +47,7 @@ let I = y({}, l.A, u.Z, d.Z, h.Z, f.Z, g.Z, m.Z, b.Z, E.Z, N.Z, O.Z, p.Z, _.Z),
     server: a.Z,
     commands: I,
     events: C,
-    stores: [r.Z],
+    stores: [r.default],
     transports: [v.Z],
     registerTransportsForEmbeddedPlatform: function() {
       i.ZP.ensureModule("discord_rpc").then(() => {

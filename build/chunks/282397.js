@@ -101,7 +101,7 @@ function A(e) {
   let {
     nonce: t
   } = e;
-  j(t)
+  k(t)
 }
 
 function C(e) {
@@ -113,7 +113,7 @@ function C(e) {
     var n;
     let e = b[t.nonce];
     if (null == e) return !1;
-    null === (n = e.onSuccess) || void 0 === n || n.call(e), k(t.nonce)
+    null === (n = e.onSuccess) || void 0 === n || n.call(e), j(t.nonce)
   }
 }
 
@@ -129,7 +129,7 @@ function R(e) {
   if (null == n) return !1;
   let s = b[n];
   if (null == s) return !1;
-  null === (t = s.onFailure) || void 0 === t || t.call(s, r, i, o, a), s.data.interactionType === c.B8.APPLICATION_COMMAND ? k(n) : b[n] = g(h({}, s), {
+  null === (t = s.onFailure) || void 0 === t || t.call(s, r, i, o, a), s.data.interactionType === c.B8.APPLICATION_COMMAND ? j(n) : b[n] = g(h({}, s), {
     state: p.F.FAILED,
     errorCode: r,
     errorMessage: i
@@ -141,14 +141,14 @@ function P(e) {
     channelId: t
   } = e;
   if (null == d.Z.getChannel(t)) return !1;
-  for (let [e, t] of Object.entries(b)) t.state === p.F.FAILED && k(e)
+  for (let [e, t] of Object.entries(b)) t.state === p.F.FAILED && j(e)
 }
 
 function D(e) {
   let {
     nonce: t
   } = e;
-  j(t)
+  k(t)
 }
 
 function w(e) {
@@ -156,7 +156,7 @@ function w(e) {
     application: t,
     nonce: n
   } = e;
-  i = t.id, j(n)
+  i = t.id, k(n)
 }
 
 function L() {
@@ -179,18 +179,18 @@ function M(e) {
     a = r.find(e => e.user_id === o && e.session_id === i);
   if (null == a || null == a.nonce) return;
   let s = S[a.nonce];
-  null == s ? (t = O[a.nonce], n = b[a.nonce]) : (t = s.messageId, n = s.interaction), null != n && null != t && (k(a.nonce), null != t && "channelId" in n.data && l.Z.deleteMessage(n.data.channelId, t, !0))
+  null == s ? (t = O[a.nonce], n = b[a.nonce]) : (t = s.messageId, n = s.interaction), null != n && null != t && (j(a.nonce), null != t && "channelId" in n.data && l.Z.deleteMessage(n.data.channelId, t, !0))
 }
 
-function j(e) {
+function k(e) {
   var t;
   if (null == e) return !1;
   let n = b[e];
   if (null == n) return !1;
-  null === (t = n.onSuccess) || void 0 === t || t.call(n), k(e)
+  null === (t = n.onSuccess) || void 0 === t || t.call(n), j(e)
 }
 
-function k(e) {
+function j(e) {
   if (null != S[e]) {
     delete S[e];
     return

@@ -45,7 +45,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,7 +70,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -80,11 +80,11 @@ function G(e) {
     user: t,
     currentUser: n,
     guildId: M,
-    channelId: k,
+    channelId: j,
     messageId: G,
     roleId: B,
-    closePopout: F,
-    setPopoutRef: V,
+    closePopout: V,
+    setPopoutRef: F,
     disableUserProfileLink: Z = __OVERLAY__,
     newAnalyticsLocations: H = [],
     appContext: W = w.IlC.APP
@@ -94,7 +94,7 @@ function G(e) {
     layout: "BITE_SIZE_POPOUT",
     userId: t.id,
     guildId: M,
-    channelId: k,
+    channelId: j,
     messageId: G,
     roleId: B
   }), z = (0, a.e7)([_.Z], () => null != M ? _.Z.getGuild(M) : null), q = (0, a.e7)([p.ZP], () => null != M ? p.ZP.getMember(M, t.id) : null), Q = i.useMemo(() => null != M ? {
@@ -112,10 +112,10 @@ function G(e) {
       }
     });
   i.useEffect(() => {
-    null == V || V(null == X ? void 0 : X.current)
-  }, [X, V]);
+    null == F || F(null == X ? void 0 : X.current)
+  }, [X, F]);
   let en = e => {
-      null == F || F(), (0, C.openUserProfileModal)(U(j({
+      null == V || V(), (0, C.openUserProfileModal)(U(k({
         sourceAnalyticsLocations: Y
       }, K, e), {
         appContext: W
@@ -125,7 +125,7 @@ function G(e) {
       id: "view-profile",
       label: L.NW.string(L.t["+Xp3ho"]),
       action: () => {
-        en(), (0, m.pQ)(j({
+        en(), (0, m.pQ)(k({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: Y
         }, K))
@@ -154,8 +154,8 @@ function G(e) {
                 shouldShowTooltip: null === ee.interactionType,
                 user: t,
                 guildId: M,
-                channelId: k,
-                onClose: F,
+                channelId: j,
+                onClose: V,
                 appContext: W
               }), (0, r.jsx)(I.Z, {
                 shouldShowTooltip: null === ee.interactionType,
@@ -177,22 +177,22 @@ function G(e) {
               }), (0, r.jsx)(y.Z, {
                 userId: t.id,
                 className: x.toast,
-                onClose: F
+                onClose: V
               }), (0, r.jsx)(v.Z, {
                 location: "UserProfilePopout",
                 user: t,
                 displayProfile: J,
                 guildId: M,
-                channelId: k,
+                channelId: j,
                 profileType: D.y0.BITE_SIZE,
                 onOpenProfile: Z ? void 0 : en
               }), (0, r.jsx)(A.Z, {
                 location: "UserProfilePopout",
                 user: t,
                 guildId: M,
-                channelId: k,
+                channelId: j,
                 profileType: D.y0.BITE_SIZE,
-                onCloseProfile: F
+                onCloseProfile: V
               })]
             }), (0, r.jsx)(R.Z, {
               user: t,
@@ -201,13 +201,13 @@ function G(e) {
               guild: z,
               isHovering: null == ee.interactionType && $,
               onOpenProfile: Z ? void 0 : en,
-              channelId: k,
-              onClose: F
+              channelId: j,
+              onClose: V
             }), (0, r.jsx)(P.Z, {
               user: t,
               guildId: M,
-              channelId: k,
-              onClose: F,
+              channelId: j,
+              onClose: V,
               appContext: W
             })]
           }), (null == J ? void 0 : J.profileEffectId) != null && (0, r.jsx)(f.Z, {

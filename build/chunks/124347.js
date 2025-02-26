@@ -333,11 +333,11 @@ class D extends(r = o.Component) {
       readyState: L,
       hasMouseOver: x,
       hasFocus: M
-    } = this.state, j = null != n, k = this.getRatio(), U = (0, a.clamp)(Math.round(h * k), null != g ? g : 0, null != b ? b : 1 / 0), G = (0, a.clamp)(Math.round(m * k), null != E ? E : 0, null != y ? y : 1 / 0), B = {
+    } = this.state, k = null != n, j = this.getRatio(), U = (0, a.clamp)(Math.round(h * j), null != g ? g : 0, null != b ? b : 1 / 0), G = (0, a.clamp)(Math.round(m * j), null != E ? E : 0, null != y ? y : 1 / 0), B = {
       alt: e,
       readyState: L,
       onContextMenu: null != o ? o : void 0,
-      zoomable: j,
+      zoomable: k,
       className: u,
       imageClassName: d,
       minWidth: g,
@@ -373,7 +373,7 @@ class D extends(r = o.Component) {
       onBlur: this.onBlur
     };
     if (1 === B.width && 1 === B.height) return null;
-    switch ((j || null != S) && (B.onClick = this.onClick), r && (B.original = null != l && "" !== l ? l : B.src), L) {
+    switch ((k || null != S) && (B.onClick = this.onClick), r && (B.original = null != l && "" !== l ? l : B.src), L) {
       case v.zo9.LOADING:
         null != t && (B.src = t);
         break;
@@ -381,7 +381,7 @@ class D extends(r = o.Component) {
         if (D.isAnimated(this.props)) {
           B.onMouseLeave = this.onMouseLeave;
           let e = (s || x || M) && (null == _ || _) && D.visibilityObserver.isVisible(this);
-          e ? (B.src = this.getSrc(k), B.renderAccessory = I) : (B.src = this.getSrc(k, !p || !s), B.renderAccessory = this.renderAccessory), null != f && (B.children = t => {
+          e ? (B.src = this.getSrc(j), B.renderAccessory = I) : (B.src = this.getSrc(j, !p || !s), B.renderAccessory = this.renderAccessory), null != f && (B.children = t => {
             let {
               src: n,
               size: r,
@@ -396,7 +396,7 @@ class D extends(r = o.Component) {
               mediaLayoutType: o
             })
           })
-        } else B.src = this.getSrc(k)
+        } else B.src = this.getSrc(j)
     }
     return (0, i.jsx)(c.E, O({}, B))
   }

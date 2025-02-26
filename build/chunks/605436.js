@@ -15,7 +15,7 @@ n.d(t, {
   Yk: () => z,
   _A: () => W,
   aq: () => I,
-  cR: () => V,
+  cR: () => F,
   iI: () => B,
   ik: () => R,
   kA: () => L,
@@ -158,17 +158,17 @@ function M(e, t) {
   return null !== (n = l.ZP.getNick(t.id, e.id)) && void 0 !== n ? n : _.ZP.getName(e)
 }
 
-function j(e, t) {
+function k(e, t) {
   return t.isOwner(e)
 }
 
-function k(e, t) {
+function j(e, t) {
   return t.isOwner(e) ? h.aC.OWNER : h.aC.MEMBER
 }
 
 function U(e, t) {
   var n;
-  let r = k(e, t);
+  let r = j(e, t);
   return {
     rowType: r,
     name: M(e, t),
@@ -178,7 +178,7 @@ function U(e, t) {
     avatarURL: e.getAvatarURL(t.id, 24),
     bot: e.bot,
     verifiedBot: e.isVerifiedBot(),
-    disabled: j(e, t),
+    disabled: k(e, t),
     key: "".concat(r, ":").concat(e.id)
   }
 }
@@ -192,12 +192,12 @@ function B(e, t, n, r) {
   return e.map(c.default.getUser).filter(d.lm).filter(e => !n.isOwner(e) && T(t, e.id, r) && (i(M(e, n)) || i(e.username) || i(e.discriminator))).map(e => U(e, n)).sort(G)
 }
 
-function F(e, t, n, r, i) {
-  return e.map(c.default.getUser).filter(d.lm).filter(e => !T(t, e.id, r, i) || j(e, n))
+function V(e, t, n, r, i) {
+  return e.map(c.default.getUser).filter(d.lm).filter(e => !T(t, e.id, r, i) || k(e, n))
 }
 
-function V(e, t, n, r, i) {
-  return F(e, t, n, r, i).map(e => U(e, n)).sort(G)
+function F(e, t, n, r, i) {
+  return V(e, t, n, r, i).map(e => U(e, n)).sort(G)
 }
 
 function Z(e, t) {

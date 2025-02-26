@@ -47,9 +47,9 @@ function E(e, t, n, E) {
       formatInline: !0,
       hideSimpleEmbedContent: !1
     }).content : S,
-    hint: e => e ? null : (0, m.QR)((0, g.P)(), y.t.ykjOAA, y.NW.string(y.t.jZkzVF)),
+    hint: (e, t) => e && !t ? null : (0, m.QR)((0, g.P)(), y.t.ykjOAA, y.NW.string(y.t.jZkzVF)),
     maxBodyLines: 2,
-    renderFooter: (t, n) => t ? (0, i.jsx)(f.Z, {
+    renderFooter: (t, n, r) => t && !r ? (0, i.jsx)(f.Z, {
       id: n,
       channel: e,
       onSend: () => C("send")
@@ -58,7 +58,7 @@ function E(e, t, n, E) {
       E && (0, s.GN)(a.Ay, a.yk), I()
     },
     onNotificationClick: () => {
-      let n = (0, p.QF)();
+      let n = (0, p.getPID)();
       h.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(!1, n)) : (C("jump"), (0, l.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), c.isPlatformEmbedded && d.ZP.focus())
     },
     onDismissClick: () => {

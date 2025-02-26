@@ -83,15 +83,15 @@ function w(e) {
     activity: o,
     user: t
   }), M = (0, g.Z)(o), {
-    largeImage: j
+    largeImage: k
   } = (0, d.FO)(o), {
-    analyticsLocations: k
+    analyticsLocations: j
   } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), U = (0, h.Z)({
     display: "live",
     user: t,
     activity: o,
     entry: x,
-    analyticsLocations: k
+    analyticsLocations: j
   }), G = (0, m.Z)({
     userId: t.id,
     onAction: U
@@ -118,7 +118,7 @@ function w(e) {
         }, n))
       })
     },
-    F = () => {
+    V = () => {
       let {
         timestamps: e
       } = o;
@@ -132,7 +132,7 @@ function w(e) {
         end: n
       })
     },
-    V = () => t.id === n.id ? null : (0, r.jsx)("div", {
+    F = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: a()(A.actions, L),
       children: (0, r.jsx)(I.Z, {
         user: t,
@@ -141,7 +141,7 @@ function w(e) {
       })
     });
   return (0, r.jsx)(u.Gt, {
-    value: k,
+    value: j,
     children: (0, r.jsxs)(b.Z, {
       ref: G,
       className: a()(A.card, C),
@@ -160,7 +160,7 @@ function w(e) {
         children: (0, r.jsxs)("div", {
           className: a()(A.content, L),
           children: [(0, r.jsx)(f.E, {
-            image: j,
+            image: k,
             size: f.J.SIZE_60,
             className: A.clickableImage,
             onClick: e => {
@@ -184,10 +184,10 @@ function w(e) {
               user: t,
               activity: o,
               className: A.badges
-            }), F()]
-          }), w === N.y0.FULL_SIZE && V()]
+            }), V()]
+          }), w === N.y0.FULL_SIZE && F()]
         })
-      }), w !== N.y0.FULL_SIZE && V()]
+      }), w !== N.y0.FULL_SIZE && F()]
     })
   })
 }

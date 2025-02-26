@@ -68,13 +68,13 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = h.Z.get(D.ABu.SPOTIFY),
-  k = "wss://dealer.spotify.com/?access_token=",
+let k = h.Z.get(D.ABu.SPOTIFY),
+  j = "wss://dealer.spotify.com/?access_token=",
   U = "hm://pusher/v1/connections/",
   G = 30 * A.Z.Millis.SECOND,
   B = 30 * A.Z.Millis.SECOND,
-  F = 100,
-  V = 5 * A.Z.Millis.MINUTE,
+  V = 100,
+  F = 5 * A.Z.Millis.MINUTE,
   Z = 5 * A.Z.Millis.SECOND,
   H = 1.5 * A.Z.Millis.SECOND,
   W = "Computer",
@@ -141,8 +141,8 @@ class e_ {
     return null != this.socket && ep.has(this.socket.readyState)
   }
   connect() {
-    this.connected || this._requestedConnect || (J.info("WS Connecting"), this._requestedDisconnect = !1, this._requestedConnect = !0, ek(this.accountId, this.accessToken).then(() => {
-      this._requestedConnect = !1, this.socket = new WebSocket("".concat(k).concat(this.accessToken)), this.socket.onopen = this.handleOpen.bind(this), this.socket.onmessage = this.handleMessage.bind(this), this.socket.onclose = this.socket.onerror = this.handleClose.bind(this)
+    this.connected || this._requestedConnect || (J.info("WS Connecting"), this._requestedDisconnect = !1, this._requestedConnect = !0, ej(this.accountId, this.accessToken).then(() => {
+      this._requestedConnect = !1, this.socket = new WebSocket("".concat(j).concat(this.accessToken)), this.socket.onopen = this.handleOpen.bind(this), this.socket.onmessage = this.handleMessage.bind(this), this.socket.onclose = this.socket.onerror = this.handleClose.bind(this)
     }).catch(e => {
       J.error(e), this._requestedConnect = !1, this.handleClose()
     }))
@@ -202,7 +202,7 @@ class e_ {
     } = e;
     switch (t) {
       case "PLAYER_STATE_CHANGED":
-        null != n && null != n.state && ej(this.accountId, this.accessToken, n.state);
+        null != n && null != n.state && ek(this.accountId, this.accessToken, n.state);
         break;
       case "DEVICE_STATE_CHANGED":
         this.handleDeviceStateChange()
@@ -210,7 +210,7 @@ class e_ {
   }
   constructor(e, t) {
     w(this, "accessToken", void 0), w(this, "accountId", void 0), w(this, "connectionId", void 0), w(this, "isPremium", void 0), w(this, "pingInterval", void 0), w(this, "backoff", void 0), w(this, "socket", void 0), w(this, "_requestedDisconnect", !1), w(this, "_requestedConnect", !1), w(this, "handleDeviceStateChange", l().throttle(() => {
-      (0, R.PW)(this.accountId, this.accessToken), ek(this.accountId, this.accessToken)
+      (0, R.PW)(this.accountId, this.accessToken), ej(this.accountId, this.accessToken)
     }, z)), this.accountId = e, this.accessToken = t, this.pingInterval = new f.Xp, this.backoff = new c.Z(void 0, K), this.connect()
   }
 }
@@ -434,7 +434,7 @@ function eR() {
   let {
     userId: e
   } = i, t = ef(e);
-  if (null == t) return et.start(V, () => {
+  if (null == t) return et.start(F, () => {
     null != i && i.userId === e && (0, m.Z)()
   }), !1;
   et.stop();
@@ -464,7 +464,7 @@ function eD(e) {
         checkSoundSharing: !0,
         checkSoundboardSounds: !1
       });
-    t && n && null != r ? ($.start(B, eP, !1), ee.stop()) : ee.start(F, () => $.stop(), !1)
+    t && n && null != r ? ($.start(B, eP, !1), ee.stop()) : ee.start(V, () => $.stop(), !1)
   }
   return !1
 }
@@ -507,11 +507,11 @@ function eM(e) {
       sourceId: e,
       sound: n
     } = null == t ? void 0 : t.desktopSettings;
-    null != e && E.ZP.getObservedAppNameForWindow(e) === j.name && n ? (el = new f.Xp).start(B, eP) : (null == el || el.stop(), el = null)
+    null != e && E.ZP.getObservedAppNameForWindow(e) === k.name && n ? (el = new f.Xp).start(B, eP) : (null == el || el.stop(), el = null)
   } else null == t && (null == el || el.stop(), el = null)
 }
 
-function ej(e, t, n) {
+function ek(e, t, n) {
   var r, i, o, a, s, l, c, u, d, f, _, h, m, g;
   let E, v, {
     device: b,
@@ -582,7 +582,7 @@ function ej(e, t, n) {
   })
 }
 
-function ek(e, t) {
+function ej(e, t) {
   return R.rC.get(e, t, {
     url: P.C7.PLAYER,
     query: {
@@ -591,7 +591,7 @@ function ek(e, t) {
     onlyRetryOnAuthorizationErrors: !0
   }).then(n => {
     let r = n.body;
-    null != r ? ej(e, t, r).then(() => n) : ed(e)
+    null != r ? ek(e, t, r).then(() => n) : ed(e)
   }).catch(() => ed(e))
 }
 class eU extends(a = u.ZP.Store) {
@@ -681,7 +681,7 @@ class eU extends(a = u.ZP.Store) {
         button_urls: []
       },
       b = {
-        name: j.name,
+        name: k.name,
         assets: h,
         details: g,
         state: e,

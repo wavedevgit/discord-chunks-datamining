@@ -54,11 +54,11 @@ function d(e, t) {
 }
 
 function f(e) {
-  return F && e instanceof Map
+  return V && e instanceof Map
 }
 
 function p(e) {
-  return V && e instanceof Set
+  return F && e instanceof Set
 }
 
 function _(e) {
@@ -228,7 +228,7 @@ function M(e, t, n) {
   return (n ? n.A : y()).p.push(r), r
 }
 
-function j(e) {
+function k(e) {
   return i(e) || r(22, e),
     function e(t) {
       if (!o(t)) return t;
@@ -236,15 +236,15 @@ function j(e) {
         i = s(t);
       if (r) {
         if (!r.P && (r.i < 4 || !v("ES5").K(r))) return r.t;
-        r.I = !0, n = k(t, i), r.I = !1
-      } else n = k(t, i);
+        r.I = !0, n = j(t, i), r.I = !1
+      } else n = j(t, i);
       return a(n, function(t, i) {
         r && c(r.t, t) === i || u(n, t, e(i))
       }), 3 === i ? new Set(n) : n
     }(e)
 }
 
-function k(e, t) {
+function j(e, t) {
   switch (t) {
     case 2:
       return new Map(e);
@@ -260,8 +260,8 @@ n.d(t, {
   mv: () => i
 });
 var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
-  F = "undefined" != typeof Map,
-  V = "undefined" != typeof Set,
+  V = "undefined" != typeof Map,
+  F = "undefined" != typeof Set,
   Z = "undefined" != typeof Proxy && void 0 !== Proxy.revocable && "undefined" != typeof Reflect,
   H = B ? Symbol.for("immer-nothing") : ((U = {})["immer-nothing"] = !0, U),
   W = B ? Symbol.for("immer-draftable") : "__$immer_draftable",
@@ -399,7 +399,7 @@ var ee = new(function() {
     }
     var t = e.prototype;
     return t.createDraft = function(e) {
-      o(e) || r(8), i(e) && (e = j(e));
+      o(e) || r(8), i(e) && (e = k(e));
       var t = T(this),
         n = M(this, e, void 0);
       return n[Y].C = !0, I(t), n

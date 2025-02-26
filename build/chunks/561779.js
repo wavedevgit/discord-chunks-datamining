@@ -158,14 +158,14 @@ class T extends(r = o.PureComponent) {
       barClassName: L,
       grabberClassName: x,
       grabberStyles: M = {},
-      markerPosition: j = 0,
-      "aria-hidden": k,
+      markerPosition: k = 0,
+      "aria-hidden": j,
       "aria-label": U,
       "aria-labelledby": G,
       "aria-describedby": B
-    } = this.props, F = 0;
-    E ? null != a && (null != c ? F = a[c] : null != l && (F = a[l])) : F = this.scaleValue(t);
-    let V = "".concat(F, "%"),
+    } = this.props, V = 0;
+    E ? null != a && (null != c ? V = a[c] : null != l && (V = a[l])) : V = this.scaleValue(t);
+    let F = "".concat(V, "%"),
       Z = null != a && null != o ? a.map((e, t) => {
         let n = o[t],
           r = null != C && C === n,
@@ -173,8 +173,8 @@ class T extends(r = o.PureComponent) {
         return (0, i.jsx)("div", {
           className: s()(g.mark, {
             [g.defaultValue]: r,
-            [g.markAbove]: 0 === j,
-            [g.markBelow]: 1 === j
+            [g.markAbove]: 0 === k,
+            [g.markBelow]: 1 === k
           }),
           style: {
             left: "".concat(e, "%")
@@ -189,7 +189,7 @@ class T extends(r = o.PureComponent) {
           })
         }, t)
       }) : null,
-      H = null != P ? P(t) : "".concat(F.toFixed(0), "%"),
+      H = null != P ? P(t) : "".concat(V.toFixed(0), "%"),
       W = null !== (e = null == w ? void 0 : w(t)) && void 0 !== e ? e : void 0;
     return (0, i.jsx)(N, {
       active: n,
@@ -211,7 +211,7 @@ class T extends(r = o.PureComponent) {
             "aria-valuenow": t,
             "aria-disabled": m,
             "aria-orientation": R,
-            "aria-hidden": k,
+            "aria-hidden": j,
             "aria-label": U,
             "aria-labelledby": G,
             "aria-describedby": B,
@@ -238,7 +238,7 @@ class T extends(r = o.PureComponent) {
               children: (0, i.jsx)("div", {
                 className: g.barFill,
                 style: y(v({}, I), {
-                  width: V
+                  width: F
                 })
               })
             }), O, (0, i.jsx)("div", {
@@ -251,7 +251,7 @@ class T extends(r = o.PureComponent) {
                 children: e => (0, i.jsx)("div", y(v({}, e), {
                   className: s()(g.grabber, x),
                   style: y(v({}, M), {
-                    left: V
+                    left: F
                   }),
                   onMouseDown: this.handleMouseDown,
                   ref: this.grabberRef

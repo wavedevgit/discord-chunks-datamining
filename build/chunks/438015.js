@@ -92,6 +92,7 @@ class c extends r.Component {
       }
       return e
     }({}, h), t = t = {
+      locked: n,
       onNotificationShow: this.handleNotificationShow,
       onDismissClick: null != l ? this.handleDismissClick : void 0,
       onNotificationClick: null != c ? this.handleNotificationClick : null,
@@ -157,8 +158,8 @@ class c extends r.Component {
         props: {
           renderFooter: n
         }
-      } = this.props.notification;
-      return null != n ? n(e, t) : null
+      } = this.props.notification, i = this.props.locked;
+      return null != n ? n(e, t, i) : null
     })
   }
 }

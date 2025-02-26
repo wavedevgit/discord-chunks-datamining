@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => k,
+  ZP: () => j,
   jK: () => x,
   tS: () => M
 }), n(301563), n(47120), n(411104), n(26686), n(653041);
@@ -87,7 +87,7 @@ var x = function(e) {
     return e.VIDEO = "VIDEO", e.MUTE = "MUTE", e.DEAFEN = "DEAFEN", e.DISCONNECT = "DISCONNECT", e
   }({});
 
-function j(e) {
+function k(e) {
   var t, n, r, i, o, a, s, l;
   return {
     id: C[null !== (t = e.id) && void 0 !== t ? t : ""],
@@ -109,7 +109,7 @@ function j(e) {
     fullscreenType: null !== (l = e.fullscreenType) && void 0 !== l ? l : p.Jx.UNKNOWN
   }
 }
-let k = {
+let j = {
   requireModule: e => S.nativeModules.requireModule(e),
   ensureModule: e => h.isPlatformEmbedded ? __OVERLAY__ && R.has(e) ? Promise.resolve() : S.nativeModules.ensureModule(e) : Promise.reject(Error("not embedded")),
   get canBootstrapNewUpdater() {
@@ -150,11 +150,11 @@ let k = {
           cmdline: e.cmdLine,
           id: t
         })
-      }), e => t(e.map(j)))
+      }), e => t(e.map(k)))
     } catch (e) {}
   },
   setCandidateGamesCallback(e) {
-    this.getDiscordUtils().setCandidateGamesCallback(t => e(t.map(j)))
+    this.getDiscordUtils().setCandidateGamesCallback(t => e(t.map(k)))
   },
   clearCandidateGamesCallback() {
     this.getDiscordUtils().clearCandidateGamesCallback()

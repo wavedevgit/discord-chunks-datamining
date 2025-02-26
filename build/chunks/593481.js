@@ -87,17 +87,18 @@ class v extends(i = o.PureComponent) {
   renderHint() {
     let {
       props: {
-        hint: e
+        hint: e,
+        locked: t
       },
       state: {
-        expanded: t
+        expanded: n
       }
     } = this;
     if (null == e) return null;
     if ("function" == typeof e) {
-      let n = e(t);
-      return null != n ? (0, r.jsxs)(o.Fragment, {
-        children: [(0, r.jsx)(m, {}), n]
+      let i = e(n, t);
+      return null != i ? (0, r.jsxs)(o.Fragment, {
+        children: [(0, r.jsx)(m, {}), i]
       }, "hint-custom") : null
     }
     return (0, r.jsxs)(o.Fragment, {

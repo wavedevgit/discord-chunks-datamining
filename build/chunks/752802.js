@@ -26,8 +26,8 @@ var i = n(200651),
   S = n(131951),
   I = n(594174),
   C = n(5192),
-  Z = n(444295),
-  N = n(1226),
+  N = n(444295),
+  Z = n(1226),
   w = n(981631),
   _ = n(388032),
   P = n(549789);
@@ -51,7 +51,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ function A(e, t) {
   }), e
 }
 
-function D(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -96,13 +96,13 @@ function k(e) {
     children: e => {
       var {
         onClick: n
-      } = e, r = D(e, ["onClick"]);
-      return (0, i.jsx)(u.P3F, A(T({}, r), {
+      } = e, r = A(e, ["onClick"]);
+      return (0, i.jsx)(u.P3F, D(T({}, r), {
         className: P.controlAction,
         onClick: e => {
-          e.stopPropagation(), (0, Z.Ws)(w.Odu.GO_LIVE, {
-            type: Z.Qu.AUDIO,
-            value: p ? Z.bk.ENABLED : Z.bk.DISABLED,
+          e.stopPropagation(), (0, N.Ws)(w.Odu.GO_LIVE, {
+            type: N.Qu.AUDIO,
+            value: p ? N.bk.ENABLED : N.bk.DISABLED,
             userId: t.user.id
           }), null == n || n(), h()
         },
@@ -120,15 +120,15 @@ function k(e) {
 
 function L(e, t, r) {
   return o => {
-    (0, Z.Ws)(w.Odu.GO_LIVE, {
-      type: Z.Qu.GO_LIVE,
-      value: Z.bk.SETTINGS_OPENED,
+    (0, N.Ws)(w.Odu.GO_LIVE, {
+      type: N.Qu.GO_LIVE,
+      value: N.bk.SETTINGS_OPENED,
       userId: e.user.id
     }), o.stopPropagation(), null == r || r(), (0, d.jW)(o, async () => {
       let {
         default: r
       } = await n.e("5704").then(n.bind(n, 360429));
-      return n => (0, i.jsx)(r, A(T({}, n), {
+      return n => (0, i.jsx)(r, D(T({}, n), {
         stream: e.stream,
         exitFullscreen: () => {},
         appContext: t
@@ -155,16 +155,16 @@ function R(e) {
       className: P.watchActionContainer,
       children: (0, i.jsx)(u.ua7, {
         text: d,
-        children: e => (0, i.jsxs)(u.P3F, A(T({}, e), {
+        children: e => (0, i.jsxs)(u.P3F, D(T({}, e), {
           className: P.watchButton,
           onClick: () => {
             var t;
             null === (t = e.onClick) || void 0 === t || t.call(e), (0, h.rn)(n.stream, {
               forceMultiple: !0,
               noFocus: !0
-            }), r(), (0, Z.Ws)(w.Odu.GO_LIVE, {
-              type: Z.Qu.GO_LIVE,
-              value: Z.bk.ENABLED,
+            }), r(), (0, N.Ws)(w.Odu.GO_LIVE, {
+              type: N.Qu.GO_LIVE,
+              value: N.bk.ENABLED,
               userId: n.user.id
             })
           },
@@ -195,9 +195,9 @@ function R(e) {
             primaryGuild: c.primaryGuild,
             userId: a.id,
             onShowProfile: () => {
-              (0, Z.Ws)(w.Odu.GO_LIVE, {
-                type: Z.Qu.GO_LIVE,
-                value: Z.bk.GUILD_PROFILE_OPENED,
+              (0, N.Ws)(w.Odu.GO_LIVE, {
+                type: N.Qu.GO_LIVE,
+                value: N.bk.GUILD_PROFILE_OPENED,
                 userId: n.user.id
               })
             }
@@ -213,8 +213,8 @@ function R(e) {
             children: e => {
               var {
                 onClick: t
-              } = e, r = D(e, ["onClick"]);
-              return (0, i.jsx)(u.P3F, A(T({}, r), {
+              } = e, r = A(e, ["onClick"]);
+              return (0, i.jsx)(u.P3F, D(T({}, r), {
                 className: P.controlAction,
                 onClick: L(n, o, t),
                 children: (0, i.jsx)(u.xhG, {
@@ -237,7 +237,7 @@ let M = new Set([w.jm8.ENDED, w.jm8.FAILED, w.jm8.PAUSED]),
       locked: r,
       widgetId: o,
       pinned: a
-    } = e, c = (0, s.e7)([x.Z], () => x.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), d = (0, f.bp)(), h = null != c && M.has(c.state), m = null != c, O = (0, N.yA)(t.stream), b = (0, N.xN)(t.stream);
+    } = e, c = (0, s.e7)([x.Z], () => x.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), d = (0, f.bp)(), h = null != c && M.has(c.state), m = null != c, O = (0, Z.yA)(t.stream), b = (0, Z.xN)(t.stream);
     return !m && r || h ? null : (0, i.jsxs)("div", {
       className: P.tile,
       children: [m && !r && (0, i.jsx)(g.ZP, {

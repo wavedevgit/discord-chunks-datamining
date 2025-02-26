@@ -171,11 +171,11 @@ function M(e, t) {
   delete n[e], 0 === Object.keys(n).length && delete g[t], P(t)
 }
 
-function j(e) {
+function k(e) {
   for (let t of d.default.keys(g)) M(e, t)
 }
 
-function k() {
+function j() {
   return !0
 }
 
@@ -245,7 +245,7 @@ function B(e) {
   let {
     presences: t
   } = e;
-  j(_.ME), t.forEach(e => {
+  k(_.ME), t.forEach(e => {
     let {
       user: t,
       status: n,
@@ -264,7 +264,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     guild: t
   } = e;
@@ -287,11 +287,11 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     guild: t
   } = e;
-  j(t.id)
+  k(t.id)
 }
 
 function Z(e) {
@@ -454,11 +454,11 @@ class q extends(r = l.ZP.Store) {
 }
 h(q, "displayName", "PresenceStore");
 let Q = new q(c.Z, {
-  CONNECTION_OPEN: k,
+  CONNECTION_OPEN: j,
   CONNECTION_OPEN_SUPPLEMENTAL: U,
   OVERLAY_INITIALIZE: G,
-  GUILD_CREATE: F,
-  GUILD_DELETE: V,
+  GUILD_CREATE: V,
+  GUILD_DELETE: F,
   GUILD_MEMBER_REMOVE: Z,
   PRESENCE_UPDATES: H,
   PRESENCES_REPLACE: B,

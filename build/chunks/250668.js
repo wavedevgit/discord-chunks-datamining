@@ -33,13 +33,13 @@ var r = n(147018),
   L = n(644659),
   x = n(95948),
   M = L.get,
-  j = L.set,
-  k = L.enforce,
+  k = L.set,
+  j = L.enforce,
   U = D.f,
   G = w.f,
   B = i.RangeError,
-  F = c.ArrayBuffer,
-  V = F.prototype,
+  V = c.ArrayBuffer,
+  F = V.prototype,
   Z = c.DataView,
   H = l.NATIVE_ARRAY_BUFFER_VIEWS,
   W = l.TYPED_ARRAY_TAG,
@@ -64,7 +64,7 @@ var r = n(147018),
   },
   ee = function(e) {
     var t;
-    return I(V, e) || "ArrayBuffer" === (t = b(e)) || "SharedArrayBuffer" === t
+    return I(F, e) || "ArrayBuffer" === (t = b(e)) || "SharedArrayBuffer" === t
   },
   et = function(e, t) {
     return q(e) && !O(t) && t in e && p(+t) && t >= 0
@@ -130,15 +130,15 @@ a ? (H || (w.f = en, D.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLen
         l = s / a
       } else if (q(t)) return J(E, t);
       else return o(A, E, t)
-    } else i = new F(s = (l = h(t)) * a);
-    for (j(e, {
+    } else i = new V(s = (l = h(t)) * a);
+    for (k(e, {
         buffer: i,
         byteOffset: d,
         byteLength: s,
         length: l,
         view: new Z(i)
       }); c < l;) P(e, c++)
-  }), T && T(E, Y), v = E.prototype = S(K)), v.constructor !== E && f(v, "constructor", E), k(v).TypedArrayConstructor = E, W && f(v, W, l);
+  }), T && T(E, Y), v = E.prototype = S(K)), v.constructor !== E && f(v, "constructor", E), j(v).TypedArrayConstructor = E, W && f(v, W, l);
   var D = E !== p;
   b[l] = E, r({
     global: !0,

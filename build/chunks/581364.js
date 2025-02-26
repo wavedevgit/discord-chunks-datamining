@@ -7,8 +7,8 @@ n.d(t, {
   D7: () => x,
   Dd: () => C,
   Ft: () => w,
-  X0: () => j,
-  XA: () => k,
+  X0: () => k,
+  XA: () => j,
   Z8: () => O,
   bD: () => P,
   nG: () => N,
@@ -302,7 +302,7 @@ function M(e) {
   return null == e ? void 0 : e.id === h.bi.BUILT_IN ? _.ub.BUILT_IN : e.id === h.bi.FRECENCY ? _.ub.FRECENCY : _.ub.APP
 }
 
-function j(e, t) {
+function k(e, t) {
   var n, r;
   return {
     type: _.Qi.APPLICATION,
@@ -314,7 +314,7 @@ function j(e, t) {
   }
 }
 
-function k(e) {
+function j(e) {
   let t = e.id,
     n = e.options,
     r = null == n ? void 0 : n.find(e => e.type === u.jw.SUB_COMMAND_GROUP);

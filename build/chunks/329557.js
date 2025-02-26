@@ -1,25 +1,25 @@
-/** Chunk was on 25499 **/
+/** Chunk was on 63061 **/
 n.d(t, {
   Z: () => _
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  l = n(570140),
-  o = n(317770),
-  a = n(51596),
-  s = n(823385),
+  o = n(570140),
+  l = n(317770),
+  s = n(51596),
+  a = n(823385),
   c = n(900085);
 let u = "QUICK_SWITCHER_MODAL_KEY";
-class d extends o.Z {
+class d extends l.Z {
   _initialize() {
-    l.Z.subscribe("QUICKSWITCHER_SHOW", this.handleShow), l.Z.subscribe("QUICKSWITCHER_HIDE", this.handleHide)
+    o.Z.subscribe("QUICKSWITCHER_SHOW", this.handleShow), o.Z.subscribe("QUICKSWITCHER_HIDE", this.handleHide)
   }
   _terminate() {
-    l.Z.unsubscribe("QUICKSWITCHER_SHOW", this.handleShow), l.Z.unsubscribe("QUICKSWITCHER_HIDE", this.handleHide)
+    o.Z.unsubscribe("QUICKSWITCHER_SHOW", this.handleShow), o.Z.unsubscribe("QUICKSWITCHER_HIDE", this.handleHide)
   }
   handleShow() {
-    s.Z.isOpen() && !(0, i.nfh)(u) && (0, i.h7j)(e => (0, r.jsx)(c.Z, function(e) {
+    a.Z.isOpen() && !(0, i.nfh)(u) && (0, i.h7j)(e => (0, r.jsx)(c.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -39,7 +39,7 @@ class d extends o.Z {
     }({}, e)), {
       modalKey: u,
       instant: !0,
-      onCloseCallback: a.Cp
+      onCloseCallback: s.Cp
     })
   }
   handleHide() {

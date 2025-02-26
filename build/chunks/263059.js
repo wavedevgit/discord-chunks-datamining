@@ -63,16 +63,16 @@ function M(e) {
     currentUser: o,
     activity: L,
     profileGuildId: M,
-    className: j,
-    onClose: k
+    className: k,
+    onClose: j
   } = e, {
     profileType: U
   } = (0, O.z)(), G = {
     [w.fullSize]: U === D.y0.FULL_SIZE
   }, {
     interactionSource: B,
-    interactionSourceId: F
-  } = (0, v.Xo)(), V = (0, p.Z)({
+    interactionSourceId: V
+  } = (0, v.Xo)(), F = (0, p.Z)({
     activity: L,
     user: n
   }), Z = (0, g.Z)(L), {
@@ -83,7 +83,7 @@ function M(e) {
     display: "live",
     user: n,
     activity: L,
-    entry: V,
+    entry: F,
     analyticsLocations: W
   }), K = (0, m.Z)({
     userId: n.id,
@@ -135,7 +135,7 @@ function M(e) {
     });
   if (null === U) return null;
   let X = null !== (t = L.application_id) && void 0 !== t ? t : L.name,
-    J = B === D.n_.ACTIVITY && F === X;
+    J = B === D.n_.ACTIVITY && V === X;
   return (0, r.jsx)(u.Gt, {
     value: W,
     children: (0, r.jsx)(S.Z, {
@@ -146,8 +146,8 @@ function M(e) {
         guildId: M,
         profileType: U,
         sourceId: X,
-        sourceDetails: null == V ? (0, E.Z)(L) : null,
-        entry: V,
+        sourceDetails: null == F ? (0, E.Z)(L) : null,
+        entry: F,
         sourceType: D.n_.ACTIVITY,
         onAction: Y,
         children: () => (0, r.jsx)(y.Z, {
@@ -163,17 +163,17 @@ function M(e) {
             display: "live",
             user: n,
             activity: L,
-            entry: V,
-            onClose: k,
+            entry: F,
+            onClose: j,
             children: e
           }),
           children: (0, r.jsxs)(T.Z, {
             ref: K,
-            className: a()(j, {
+            className: a()(k, {
               [w.hoisted]: J
             }),
             onAction: Y,
-            onClose: k,
+            onClose: j,
             children: [(0, r.jsx)(N.Z, x({}, Z)), (0, r.jsx)("div", {
               className: w.body,
               children: (0, r.jsxs)("div", {

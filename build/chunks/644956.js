@@ -67,12 +67,12 @@ function M(e, t) {
   return n
 }
 
-function j(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = (0, v.B)({
+let j = (0, v.B)({
   kind: "user",
   id: "2021-07_role_popout",
   label: "Role Popout",
@@ -103,7 +103,7 @@ function U(e) {
       guildId: i,
       channelId: o
     }),
-    renderPopout: e => (0, r.jsx)(I.Z, j(x({}, e), {
+    renderPopout: e => (0, r.jsx)(I.Z, k(x({}, e), {
       userId: t.userId,
       guildId: i,
       channelId: o,
@@ -129,7 +129,7 @@ function U(e) {
             let {
               default: e
             } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("59409")]).then(n.bind(n, 757387));
-            return t => (0, r.jsx)(e, j(x({}, t), {
+            return t => (0, r.jsx)(e, k(x({}, t), {
               user: l,
               guildId: i,
               channel: c,
@@ -185,7 +185,7 @@ function G(e) {
     title: h.name,
     count: m
   });
-  return (0, r.jsx)("div", j(x({
+  return (0, r.jsx)("div", k(x({
     className: D.rolePopout,
     ref: s
   }, t), {
@@ -222,7 +222,7 @@ function B(e) {
     inlinePreview: f = !1
   } = e, {
     analyticsLocations: p
-  } = (0, g.ZP)(m.Z.ROLE_MENTION), _ = (0, u.e7)([h.Z], () => h.Z.roleStyle), E = null != t && 0 !== t && !f, v = E && "dot" === _, b = e => (0, r.jsxs)(O.Z, j(x({
+  } = (0, g.ZP)(m.Z.ROLE_MENTION), _ = (0, u.e7)([h.Z], () => h.Z.roleStyle), E = null != t && 0 !== t && !f, v = E && "dot" === _, b = e => (0, r.jsxs)(O.Z, k(x({
     className: a()(D.roleMention),
     color: "username" === _ && E ? t : null
   }, e), {
@@ -234,7 +234,7 @@ function B(e) {
     }), l]
   })), {
     enabled: S
-  } = k.getCurrentConfig({
+  } = j.getCurrentConfig({
     location: "2ec235_1"
   }, {
     autoTrackExposure: !1

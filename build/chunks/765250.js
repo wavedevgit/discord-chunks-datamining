@@ -17,7 +17,7 @@ var r = n(570140),
   a = n(145597);
 
 function s(e, t, n) {
-  let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : a.Gr;
+  let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : a.OVERLAY_DEFAULT_RESOLUTION;
   r.Z.dispatch({
     type: "LAYOUT_CREATE",
     layoutId: e,

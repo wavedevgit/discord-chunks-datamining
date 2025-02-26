@@ -129,13 +129,13 @@ function E(e) {
         });
       C.x.set(i.x), C.y.set(i.y)
     },
-    j = e => {
+    k = e => {
       n && 0 === e.button && (e.preventDefault(), D(!0), L({
         x: e.clientX,
         y: e.clientY
       }))
     },
-    k = e => {
+    j = e => {
       if (!n) {
         0 === e.button && (null == o || o(e));
         return
@@ -143,8 +143,8 @@ function E(e) {
     };
   return (0, r.jsx)(s.animated.div, {
     ref: O,
-    onMouseDown: j,
-    onMouseUp: k,
+    onMouseDown: k,
+    onMouseUp: j,
     onMouseMove: e => P && M(e.movementX, e.movementY),
     onWheel: e => !e.ctrlKey && M(-e.deltaX, -e.deltaY),
     onMouseLeave: () => D(!1),

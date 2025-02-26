@@ -34,7 +34,7 @@ function g(e) {
   return e
 }
 
-function _(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = e => {
+let _ = e => {
   let {
     state: t
   } = e;
@@ -70,8 +70,8 @@ function f(e) {
     N = null != t.channel ? (0, a.jD)(t.channel) : null,
     x = null != t.target_application ? new o.ZP(t.target_application) : null,
     v = f || null == t.inviter ? null : new s.Z(t.inviter),
-    E = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != b && b.hasFeature(d.oNc.COMMUNITY)) && null != v && (0, c.WT)(t),
-    I = m(t),
+    I = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != b && b.hasFeature(d.oNc.COMMUNITY)) && null != v && (0, c.WT)(t),
+    E = _(t),
     O = {
       invite: t,
       user: v,
@@ -82,21 +82,21 @@ function f(e) {
   return (0, c.JI)(t) ? (0, r.jsx)(u.Z, {
     invite: t,
     channel: N,
-    isSubmitting: I,
+    isSubmitting: E,
     onAcceptInvite: n
   }) : (0, r.jsxs)("div", {
     className: p.container,
     children: [(0, r.jsx)(c.GB, {
       application: x,
       guild: b,
-      user: E || (0, c.X7)(t) ? v : null
-    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, _(g({}, O), {
-      showBigUserIcon: E
-    })), (0, r.jsx)(c.UM, _(g({}, O), {
-      showBigUserIcon: E
+      user: I || (0, c.X7)(t) ? v : null
+    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, m(g({}, O), {
+      showBigUserIcon: I
+    })), (0, r.jsx)(c.UM, m(g({}, O), {
+      showBigUserIcon: I
     })), (0, r.jsx)(c.V6, g({}, O)), (0, r.jsx)(i.zxk, {
       onClick: n,
-      submitting: I,
+      submitting: E,
       className: p.acceptButton,
       children: h.NW.string(h.t.ohMvm5)
     })]

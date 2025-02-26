@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  AnalyticEventConfigs: () => k,
+  AnalyticEventConfigs: () => j,
   AnalyticsContext: () => I,
   AnalyticsSchema: () => d,
-  addExtraAnalyticsDecorator: () => j,
+  addExtraAnalyticsDecorator: () => k,
   clearAnalyticsEventsRecording: () => X,
   debugLogEvent: () => W,
   default: () => er,
@@ -104,10 +104,10 @@ let S = {
   x = performance.now(),
   M = [];
 
-function j(e) {
+function k(e) {
   M.push(e)
 }
-let k = {
+let j = {
   [_.rMx.APP_OPENED]: {
     throttlePeriod: R,
     throttleKeys: () => []
@@ -339,11 +339,11 @@ function G(e) {
 }
 let B = () => h.E.NONE;
 
-function F(e) {
+function V(e) {
   B = e
 }
-let V = (0, o.trackMaker)({
-  analyticEventConfigs: k,
+let F = (0, o.trackMaker)({
+  analyticEventConfigs: j,
   dispatcher: a.Z,
   TRACK_ACTION_NAME: "TRACK"
 });
@@ -416,13 +416,13 @@ function $(e, t) {
       message: "".concat(r)
     }), J(e, t), null != n.throttlePercent && Math.random() > n.throttlePercent) return Promise.resolve();
   let i = H(t);
-  return W(r, i, n.logEventProperties), V(e, i, {
+  return W(r, i, n.logEventProperties), F(e, i, {
     flush: n.flush,
     fingerprint: n.fingerprint
   })
 }
 let ee = (0, o.trackMaker)({
-  analyticEventConfigs: k,
+  analyticEventConfigs: j,
   dispatcher: a.Z,
   TRACK_ACTION_NAME: "TRACK"
 });
@@ -441,7 +441,7 @@ function en() {
 }
 let er = b(E({}, o), {
   getCampaignParams: o.getCampaignParams,
-  setSystemAccessibilityFeatures: F,
+  setSystemAccessibilityFeatures: V,
   expandEventProperties: H,
   track: $
 })

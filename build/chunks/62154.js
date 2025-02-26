@@ -19,8 +19,8 @@ var o = t(442837),
   g = t(530),
   v = t(740628),
   y = t(643518),
-  I = t(228168),
-  h = t(981631),
+  h = t(228168),
+  I = t(981631),
   j = t(608685);
 
 function x(e) {
@@ -53,7 +53,7 @@ function x(e) {
     className: j.body,
     children: [(0, r.jsx)(g.Z, {
       user: t,
-      profileType: I.y0.FULL_SIZE,
+      profileType: h.y0.FULL_SIZE,
       nickname: U,
       pronouns: null == Z ? void 0 : Z.pronouns,
       nicknameVariant: "heading-xl/bold",
@@ -62,10 +62,10 @@ function x(e) {
       }),
       tags: (0, r.jsx)(d.Z, {
         displayProfile: Z,
-        profileType: I.y0.FULL_SIZE,
+        profileType: h.y0.FULL_SIZE,
         onClose: S
       })
-    }), T === h.OGo.PENDING_INCOMING && (0, r.jsx)(b.Z.Overlay, {
+    }), T === I.OGo.PENDING_INCOMING && (0, r.jsx)(b.Z.Overlay, {
       className: j.friendRequestBannerOverlay,
       children: (0, r.jsx)(p.Z, {
         user: t,

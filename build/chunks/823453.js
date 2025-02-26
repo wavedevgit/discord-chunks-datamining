@@ -56,8 +56,8 @@ function N(e) {
   (0, O.Z)(window, L);
   let x = (0, S.Z)(window, __OVERLAY__ || n),
     M = (0, u.e7)([h.Z], () => h.Z.sidebarWidth),
-    j = (0, f.bWb)().enabled,
-    k = (0, _.Q3)("AppHelmet"),
+    k = (0, f.bWb)().enabled,
+    j = (0, _.Q3)("AppHelmet"),
     U = (0, _.R6)("AppHelmet");
   return (0, r.jsx)("html", {
     lang: t,
@@ -72,8 +72,8 @@ function N(e) {
       "desaturate-user-colors": C,
       "disable-forced-colors": !R && "active" === P,
       "enable-forced-colors": R,
-      "show-redesigned-icons": j,
-      "visual-refresh": k,
+      "show-redesigned-icons": k,
+      "visual-refresh": j,
       "visual-refresh-chat-input": U,
       "confetti-mode": D
     }, (0, f.QeD)(o), "density-".concat(s), (0, v.Z)(), N)

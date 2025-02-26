@@ -1,5 +1,5 @@
-/** Chunk was on 624 **/
-e.exports = {
+/** Chunk was on 82081 **/
+n.exports = {
   container: "container__4d8b6",
   gifContainer: "gifContainer__4d8b6",
   gif: "gif__4d8b6",

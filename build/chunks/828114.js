@@ -47,8 +47,8 @@ e.exports = function(e, t, n, a, _, m, N) {
     L = e.prototype,
     x = L[y] || L["@@iterator"] || _ && L[_],
     M = !b && x || P(_),
-    j = "Array" === t && L.entries || x;
-  if (j && (A = c(j.call(new e))) !== Object.prototype && A.next && (o || c(A) === v || (u ? u(A, v) : s(A[y]) || p(A, y, T)), d(A, D, !0, !0), o && (h[D] = T)), g && _ === S && x && x.name !== S && (!o && E ? f(L, "name", S) : (w = !0, M = function() {
+    k = "Array" === t && L.entries || x;
+  if (k && (A = c(k.call(new e))) !== Object.prototype && A.next && (o || c(A) === v || (u ? u(A, v) : s(A[y]) || p(A, y, T)), d(A, D, !0, !0), o && (h[D] = T)), g && _ === S && x && x.name !== S && (!o && E ? f(L, "name", S) : (w = !0, M = function() {
       return i(x, this)
     })), _) {
     if (C = {

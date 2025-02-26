@@ -14,17 +14,18 @@ var r = n(512722),
   l = n(710845),
   c = n(432877),
   u = n(873741),
-  d = n(314897),
-  f = n(866960),
-  p = n(70956),
-  _ = n(403182),
-  h = n(651655),
-  m = n(861990),
-  g = n(141795),
-  E = n(981631),
-  v = n(959517);
+  d = n(931301),
+  f = n(314897),
+  p = n(866960),
+  _ = n(70956),
+  h = n(403182),
+  m = n(651655),
+  g = n(861990),
+  E = n(141795),
+  v = n(981631),
+  b = n(959517);
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,20 +34,20 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,15 +58,15 @@ function O(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -73,23 +74,21 @@ function I(e, t) {
   return i
 }
 
-function T(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = null;
-__OVERLAY__ && (N = n(237997).Z);
 var A = function(e) {
   return e[e.SEND = 0] = "SEND", e[e.EDIT = 1] = "EDIT", e[e.COMMAND = 2] = "COMMAND", e
 }({});
 let C = e => 0 === e.type,
   R = e => 1 === e.type,
   P = e => C(e) ? e.message.nonce : R(e) ? e.message.messageId : e.message.data.id,
-  D = [+p.Z.Millis.MINUTE, 5 * p.Z.Millis.MINUTE];
-class w extends h.Z {
+  D = [+_.Z.Millis.MINUTE, 5 * _.Z.Millis.MINUTE];
+class w extends m.Z {
   isFull() {
     return this.queue.length >= this.maxSize
   }
@@ -123,7 +122,7 @@ class w extends h.Z {
   }
   startQueueMetricTimers(e) {
     let t = D.map(e => setTimeout(() => {
-      (0, s.yw)(E.rMx.SEND_MESSAGE_QUEUED, {
+      (0, s.yw)(v.rMx.SEND_MESSAGE_QUEUED, {
         queued_duration_ms: e
       })
     }, e));
@@ -136,11 +135,11 @@ class w extends h.Z {
   createResponseHandler(e, t) {
     return n => {
       if (null != e && (this.requests.delete(e), this.cancelQueueMetricTimers(e)), n.hasErr) return t(null, n);
-      if (null != n.body && (n.body.code === E.evJ.SLOWMODE_RATE_LIMITED || n.body.code === E.evJ.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED)) t(null, n);
+      if (null != n.body && (n.body.code === v.evJ.SLOWMODE_RATE_LIMITED || n.body.code === v.evJ.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED)) t(null, n);
       else if (429 === n.status) {
         let e = parseInt(n.headers["retry-after"]);
         isNaN(e) ? t(null, n) : t({
-          retryAfter: e * p.Z.Millis.SECOND
+          retryAfter: e * _.Z.Millis.SECOND
         })
       } else t(null, n)
     }
@@ -149,8 +148,8 @@ class w extends h.Z {
     let n;
     let {
       channelId: r
-    } = e, i = I(e, ["channelId"]), a = (0, u.d)(), s = y({
-      mobile_network_type: f.Z.getType()
+    } = e, i = T(e, ["channelId"]), a = (0, u.d)(), s = O({
+      mobile_network_type: p.Z.getType()
     }, i, null != a && {
       signal_strength: a
     });
@@ -165,36 +164,33 @@ class w extends h.Z {
       });
       return
     }
-    null == N || (N.isInstanceLocked() ? n = {
-      location: E.ADE.OVERLAY_LOCKED_ACTIVATED
-    } : N.isInstanceLocked() || (n = N.isPinned(E.Odu.TEXT) ? {
-      location: E.ADE.OVERLAY_UNLOCKED_PINNED
-    } : {
-      location: E.ADE.OVERLAY_UNLOCKED
-    }));
-    let l = this.createResponseHandler(e.nonce, t),
-      d = new AbortController;
-    this.startQueueMetricTimers(e.nonce), o.tn.post(S(y({
-      url: E.ANM.MESSAGES(r),
+    let l = (0, d.Z)();
+    null != l && (n = {
+      location: l
+    }, this.logger.log("Overlay location: ", n));
+    let f = this.createResponseHandler(e.nonce, t),
+      _ = new AbortController;
+    this.startQueueMetricTimers(e.nonce), o.tn.post(I(O({
+      url: v.ANM.MESSAGES(r),
       body: s,
       context: n,
       oldFormErrors: !0
-    }, v.hs), {
-      signal: d.signal,
+    }, b.hs), {
+      signal: _.signal,
       rejectWithError: !0,
       onRequestCreated: () => {
-        null != e.nonce && this.requests.set(e.nonce, d)
+        null != e.nonce && this.requests.set(e.nonce, _)
       }
-    }), l)
+    }), f)
   }
   handleEdit(e, t) {
     var {
       channelId: n,
       messageId: r
-    } = e, i = I(e, ["channelId", "messageId"]);
+    } = e, i = T(e, ["channelId", "messageId"]);
     let a = new AbortController;
     o.tn.patch({
-      url: E.ANM.MESSAGE(n, r),
+      url: v.ANM.MESSAGE(n, r),
       body: i,
       retries: 1,
       oldFormErrors: !0,
@@ -212,10 +208,10 @@ class w extends h.Z {
         channelId: l,
         data: c,
         nonce: u,
-        attachments: f,
+        attachments: d,
         maxSizeCallback: p,
-        analytics_location: h,
-        sectionName: v,
+        analytics_location: _,
+        sectionName: m,
         source: b
       } = e,
       y = {
@@ -223,21 +219,21 @@ class w extends h.Z {
         application_id: r,
         guild_id: s,
         channel_id: l,
-        session_id: d.default.getSessionId(),
+        session_id: f.default.getSessionId(),
         data: c,
         nonce: u,
-        analytics_location: h,
-        section_name: v,
+        analytics_location: _,
+        section_name: m,
         source: b
       };
-    if (null != f) {
+    if (null != d) {
       y.data.attachments = [], n = [];
-      let e = f;
-      y.data.attachments = e.map((e, t) => (i()(e.status === g.m.COMPLETED, "Uploads must be staged before trying to send a message"), (0, m.B)(e, t)))
+      let e = d;
+      y.data.attachments = e.map((e, t) => (i()(e.status === E.m.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.B)(e, t)))
     }
     let O = new AbortController;
     o.tn.post({
-      url: E.ANM.INTERACTIONS,
+      url: v.ANM.INTERACTIONS,
       fields: [{
         name: "payload_json",
         value: JSON.stringify(y)
@@ -249,14 +245,14 @@ class w extends h.Z {
         this.requests.set(u, O), e.on("progress", e => {
           let {
             total: t
-          } = e, n = (0, _.dg)(s);
+          } = e, n = (0, h.dg)(s);
           null != t && t > n && (this.cancelRequest(u), null == p || p(n))
         })
       }
     }, this.createResponseHandler(u, t))
   }
   constructor(e = 5) {
-    super(new l.Z("MessageQueue")), b(this, "maxSize", void 0), b(this, "requests", void 0), b(this, "analyticsTimeouts", void 0), this.maxSize = e, this.requests = new Map, this.analyticsTimeouts = new Map
+    super(new l.Z("MessageQueue")), y(this, "maxSize", void 0), y(this, "requests", void 0), y(this, "analyticsTimeouts", void 0), this.maxSize = e, this.requests = new Map, this.analyticsTimeouts = new Map
   }
 }
 let L = new w

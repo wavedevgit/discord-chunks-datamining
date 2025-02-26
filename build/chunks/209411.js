@@ -14,8 +14,8 @@ var r = n(200651),
   h = n(893607),
   p = n(703656),
   g = n(314897),
-  _ = n(781428),
-  m = n(981631),
+  m = n(781428),
+  _ = n(981631),
   f = n(176505);
 
 function b(e) {
@@ -24,7 +24,7 @@ function b(e) {
       if (function(e) {
           var t;
           let n = (0, a.LX)(e, {
-            path: m.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
+            path: _.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
           });
           return (null == n ? void 0 : null === (t = n.params) || void 0 === t ? void 0 : t.channelId) === f.oC.ROLE_SUBSCRIPTIONS
         }(t)) p.dL(t);
@@ -42,11 +42,11 @@ function b(e) {
     })),
     {
       location: v,
-      redirectTo: E
+      redirectTo: I
     } = e,
-    [I, O] = i.useState(N);
+    [E, O] = i.useState(N);
 
-  function C(e) {
+  function j(e) {
     let {
       handoffKey: t,
       handoffToken: n,
@@ -65,21 +65,21 @@ function b(e) {
         handoff_token: t
       } = (0, o.parse)(v.search);
       if (null != e && null != t) {
-        let n = null != E ? (0, d.L)(E) : void 0;
-        I ? s.Z.logout(null).finally(() => {
-          C({
+        let n = null != I ? (0, d.L)(I) : void 0;
+        E ? s.Z.logout(null).finally(() => {
+          j({
             handoffKey: e,
             handoffToken: t,
             handoffSource: n
           })
-        }) : C({
+        }) : j({
           handoffKey: e,
           handoffToken: t,
           handoffSource: n
         })
       }
     }
-  }), I || x === m.u34.LOGGING_IN) ? (0, r.jsx)(_.q, {}) : (0, r.jsx)(_.Z, (t = function(e) {
+  }), E || x === _.u34.LOGGING_IN) ? (0, r.jsx)(m.q, {}) : (0, r.jsx)(m.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

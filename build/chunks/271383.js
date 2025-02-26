@@ -72,8 +72,8 @@ let A = new f.Z("GuildMemberStore"),
   L = !1,
   x = 0,
   M = 0,
-  j = {},
   k = {},
+  j = {},
   U = {
     added: [],
     removed: []
@@ -82,25 +82,25 @@ let A = new f.Z("GuildMemberStore"),
 function G(e, t) {
   if (null == t.communicationDisabledUntil || !(0, p.b)(t)) return B(e, t.userId);
   let n = Z(e, t.userId);
-  w[n] !== t.communicationDisabledUntil && (0, p.b)(t) && (w[n] = t.communicationDisabledUntil, F(n))
+  w[n] !== t.communicationDisabledUntil && (0, p.b)(t) && (w[n] = t.communicationDisabledUntil, V(n))
 }
 
 function B(e, t) {
   if (null != t) {
     let n = Z(e, t);
-    null != w[n] && F(n), V(Z(e, t))
+    null != w[n] && V(n), F(Z(e, t))
   } else
     for (let t in w) {
       let n = t;
-      W(n) === e && (F(t), V(n))
+      W(n) === e && (V(t), F(n))
     }
 }
 
-function F(e) {
-  x += 1, j[e] = x
+function V(e) {
+  x += 1, k[e] = x
 }
 
-function V(e) {
+function F(e) {
   H(e) === v.default.getId() && (0, _.l)(W(e)), delete w[e]
 }
 
@@ -545,8 +545,8 @@ function ey(e) {
   if (null == f) return !1;
   let p = y.Z.getGuild(i);
   if (null == p) return !1;
-  let _ = null !== (t = k[i]) && void 0 !== t ? t : {};
-  k[i] = {
+  let _ = null !== (t = j[i]) && void 0 !== t ? t : {};
+  j[i] = {
     added: o().difference(o().union(null !== (n = _.added) && void 0 !== n ? n : [], s), null != l ? l : []),
     removed: o().difference(o().union(null !== (r = _.removed) && void 0 !== r ? r : [], l), null != s ? s : [])
   }, d[u] = K({
@@ -570,7 +570,7 @@ function eO(e) {
     guildId: t
   } = e;
   if (null == t) return !1;
-  delete k[t]
+  delete j[t]
 }
 
 function eS(e) {
@@ -753,12 +753,12 @@ class eR extends(r = s.ZP.Store) {
   }
   getPendingRoleUpdates(e) {
     var t;
-    return null !== (t = k[e]) && void 0 !== t ? t : U
+    return null !== (t = j[e]) && void 0 !== t ? t : U
   }
   getMemberRoleWithPendingUpdates(e, t) {
     var n, r;
     let i = null !== (r = null === (n = this.getMember(e, t)) || void 0 === n ? void 0 : n.roles) && void 0 !== r ? r : [],
-      a = k[e];
+      a = j[e];
     return null == a ? i : o().difference(o().union(i, a.added), a.removed)
   }
   getMemberVersion() {

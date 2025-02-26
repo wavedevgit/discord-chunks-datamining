@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Vq: () => w,
-  Xo: () => V,
+  Xo: () => F,
   qE: () => U
 }), n(411104), n(47120);
 var r = n(200651),
@@ -336,7 +336,7 @@ function M(e) {
   }))
 }
 
-function j(e) {
+function k(e) {
   let {
     children: t,
     size: n,
@@ -408,7 +408,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     src: t,
     isSpeaking: n,
@@ -444,7 +444,7 @@ function U(e) {
     "aria-label": I,
     imageClassName: T
   } = e, N = n !== m.Skl.UNKNOWN ? n : null, A = (0, h.UC)(i), C = null != N ? Math.ceil((A.status * h.D6 - A.status) / 2) : 0, R = A.size + C, P = (0, u.vj)(N, o);
-  return (0, r.jsx)(j, S(y({}, e), {
+  return (0, r.jsx)(k, S(y({}, e), {
     ariaLabel: I,
     ariaHidden: O,
     status: N,
@@ -462,7 +462,7 @@ function U(e) {
         width: A.size,
         height: A.size,
         mask: "url(#".concat(D(N, i, s, l), ")"),
-        children: (0, r.jsx)(k, {
+        children: (0, r.jsx)(j, {
           src: t,
           isSpeaking: p,
           className: T
@@ -514,7 +514,7 @@ function B(e) {
     "aria-hidden": w = !1,
     "aria-label": L,
     imageClassName: U
-  } = e, B = (0, u.vj)(O, T), F = i.useId(), V = i.useId(), [Z] = i.useState(() => y({
+  } = e, B = (0, u.vj)(O, T), V = i.useId(), F = i.useId(), [Z] = i.useState(() => y({
     fill: o
   }, M({
     size: E,
@@ -540,7 +540,7 @@ function B(e) {
     avatarCutoutRadius: Q,
     fill: X
   } = W, J = I(W, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), $ = (0, h.px)(E), ee = (0, h.UC)(E), et = ee.status * h.D6, en = ee.status * h.EW, er = null != O ? (ee.status * h.D6 - ee.status) / 2 : 0, ei = ee.size - ee.status - er - ee.offset, eo = ee.size - en - ee.offset, ea = ee.size + Math.ceil(er);
-  return (0, r.jsx)(j, S(y({}, e), {
+  return (0, r.jsx)(k, S(y({}, e), {
     ariaLabel: L,
     ariaHidden: w,
     typingOffset: er,
@@ -552,7 +552,7 @@ function B(e) {
       className: a()(v.mask, v.svg),
       "aria-hidden": !0,
       children: [(0, r.jsxs)("mask", {
-        id: F,
+        id: V,
         width: $,
         height: $,
         children: [(0, r.jsx)("circle", {
@@ -575,8 +575,8 @@ function B(e) {
         y: 0,
         width: $,
         height: $,
-        mask: "url(#".concat(F, ")"),
-        children: (0, r.jsx)(k, {
+        mask: "url(#".concat(V, ")"),
+        children: (0, r.jsx)(j, {
           src: b,
           isSpeaking: g,
           className: U
@@ -595,11 +595,11 @@ function B(e) {
             height: en,
             viewBox: "0 0 ".concat(et, " ").concat(en),
             className: R ? v.cursorDefault : void 0,
-            children: [(0, u.vP)(J, ee.status, V), (0, r.jsx)(s.animated.rect, {
+            children: [(0, u.vP)(J, ee.status, F), (0, r.jsx)(s.animated.rect, {
               fill: X,
               width: et,
               height: en,
-              mask: "url(#".concat(V, ")")
+              mask: "url(#".concat(F, ")")
             }), (0, r.jsx)(c.b, {
               ref: m,
               dotRadius: ee.status / 4,
@@ -619,10 +619,10 @@ function B(e) {
   }))
 }
 
-function F(e, t, n, r, i) {
+function V(e, t, n, r, i) {
   return null != n && null != t && (!!e || t !== n || t === m.Skl.ONLINE && r !== i)
 }
-let V = i.memo(function(e) {
+let F = i.memo(function(e) {
   var {
     statusColor: t,
     status: n
@@ -630,7 +630,7 @@ let V = i.memo(function(e) {
   let {
     isMobile: a = !1,
     isTyping: s = !1
-  } = o, l = i.useRef(n), c = i.useRef(a), d = (0, u.vj)(n, t), f = i.useRef(d), p = i.useRef(!1), _ = p.current || F(s, n, l.current, a, c.current);
+  } = o, l = i.useRef(n), c = i.useRef(a), d = (0, u.vj)(n, t), f = i.useRef(d), p = i.useRef(!1), _ = p.current || V(s, n, l.current, a, c.current);
   return i.useLayoutEffect(() => {
     p.current = _, l.current = n, c.current = a, f.current = d
   }, [n, a, d, _]), null != n && null != l.current && _ ? (0, r.jsx)(B, S(y({}, o), {

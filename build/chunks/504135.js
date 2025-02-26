@@ -80,16 +80,16 @@ function v(e) {
     iconProps: x,
     sparkle: M
   } = e, {
-    onSelect: j,
-    onInteraction: k
+    onSelect: k,
+    onInteraction: j
   } = i.useContext(c.p), U = i.useRef(null), G = i.useCallback(e => {
-    if (null == k || k({
+    if (null == j || j({
         id: T.id,
         rootItemId: T.rootItemId,
         type: c.U.DEFAULT
       }), null == N) return !1;
-    e.shiftKey && w || L || A(), e.persist(), null == j || j(), requestAnimationFrame(() => N(e))
-  }, [N, A, j, w, L, T, k]);
+    e.shiftKey && w || L || A(), e.persist(), null == k || k(), requestAnimationFrame(() => N(e))
+  }, [N, A, k, w, L, T, j]);
   return i.useEffect(() => {
     I && ((0, u.F)(U), null == C || C())
   }, [I, C]), (0, r.jsxs)(s.P, E(m({

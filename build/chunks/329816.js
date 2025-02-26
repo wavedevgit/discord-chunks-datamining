@@ -36,13 +36,13 @@ var r = n(200651),
   L = n(724145),
   x = n(195302),
   M = n(260035),
-  j = n(482215),
-  k = n(540059),
+  k = n(482215),
+  j = n(540059),
   U = n(947519),
   G = n(605236),
   B = n(243778),
-  F = n(314910),
-  V = n(84615),
+  V = n(314910),
+  F = n(84615),
   Z = n(429142),
   H = n(813744),
   W = n(311476),
@@ -127,7 +127,7 @@ let eh = (0, et.Un)({
     let t = (0, u.e7)([J.Z], () => J.Z.isFocused()),
       n = (0, u.e7)([Q.Z], () => Q.Z.hasLayers()),
       i = (0, _.s9z)(_.$sL);
-    return (0, k.Q3)("ConnectedTitleBar") ? (0, r.jsx)(ea.D, {
+    return (0, j.Q3)("ConnectedTitleBar") ? (0, r.jsx)(ea.D, {
       fixed: !0,
       show: n || i || !q.default.isAuthenticated()
     }) : (0, r.jsx)(es.Z, e_(ef({}, e), {
@@ -140,9 +140,9 @@ let eh = (0, et.Un)({
       skipsSettingDefaultPageTitle: n
     } = e, {
       pathname: o
-    } = (0, l.TH)(), p = (0, $.getPlatform)(), b = c.tq || c.Em, q = (0, u.e7)([K.Z], () => K.Z.darkSidebar ? el.BRd.DARK : void 0), J = (0, k.Q3)("AppSkeleton");
+    } = (0, l.TH)(), p = (0, $.getPlatform)(), b = c.tq || c.Em, q = (0, u.e7)([K.Z], () => K.Z.darkSidebar ? el.BRd.DARK : void 0), J = (0, j.Q3)("AppSkeleton");
     i.useEffect(() => {
-      f.K.set(k.k9, String(J))
+      f.K.set(j.k9, String(J))
     }, [J]);
     let et = (0, u.e7)([O.Z], () => O.Z.useForcedColors ? "yes" : "no"),
       [ea, es, ed] = (0, u.Wu)([w.Z], () => [w.Z.isEditorOpen, w.Z.isCoachmark, w.Z.isPreview]),
@@ -192,13 +192,13 @@ let eh = (0, et.Un)({
                 children: [(0, r.jsx)(eo.Co, {}), (0, r.jsx)(ei.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(y.Wu, {
                   appContext: el.IlC.APP,
                   renderWindow: window,
-                  children: (0, r.jsxs)(F.yP, {
+                  children: (0, r.jsxs)(V.yP, {
                     children: [null != p ? (0, r.jsx)(eg, {
                       type: p,
                       themeOverride: q
                     }) : null, (0, r.jsxs)("div", {
                       className: a()(eu.appAsidePanelWrapper, b && eu.mobileAppAsidePanelWrapper),
-                      children: [(0, r.jsx)(j.K, {}), (0, r.jsx)("div", {
+                      children: [(0, r.jsx)(k.K, {}), (0, r.jsx)("div", {
                         className: eu.notAppAsidePanel,
                         "data-app-not-dev-tools": !0,
                         children: (0, r.jsx)(M.m, {
@@ -209,7 +209,7 @@ let eh = (0, et.Un)({
                                 children: [(0, r.jsx)("div", {
                                   className: a()(b ? eu.mobileApp : eu.app),
                                   children: t
-                                }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(_.nKe, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(V.Ox, {}), (0, r.jsx)(F.Un, {}), (0, r.jsx)(Z.ot, {}), (0, r.jsx)(_.Ixi, {}), (0, r.jsx)(N.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(eh, {}), (0, r.jsx)(em, {})]
+                                }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(_.nKe, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(F.Ox, {}), (0, r.jsx)(V.Un, {}), (0, r.jsx)(Z.ot, {}), (0, r.jsx)(_.Ixi, {}), (0, r.jsx)(N.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(eh, {}), (0, r.jsx)(em, {})]
                               })
                             })
                           })

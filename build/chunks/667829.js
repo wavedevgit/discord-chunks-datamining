@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => j
 }), n(47120), n(653041), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -74,7 +74,7 @@ new E.Z("ChannelEditor.tsx");
 let M = function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
-  j = {
+  k = {
     12: P.fontSize12Padding,
     14: P.fontSize14Padding,
     15: P.fontSize15Padding,
@@ -83,7 +83,7 @@ let M = function() {
     20: P.fontSize20Padding,
     24: P.fontSize24Padding
   };
-class k extends i.Component {
+class j extends i.Component {
   componentDidMount() {
     this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload)
   }
@@ -215,25 +215,25 @@ class k extends i.Component {
       id: D,
       required: L,
       maxCharacterCount: M,
-      allowNewLines: k,
+      allowNewLines: j,
       "aria-describedby": U,
       "aria-labelledby": G,
       accessibilityLabel: B
     } = this.props, {
-      submitting: F,
-      popup: V
+      submitting: V,
+      popup: F
     } = this.state, Z = {
       channel: m,
       className: a()(R, P.textArea, {
         [P.textAreaSlate]: v,
-        [P.textAreaDisabled]: u || F
+        [P.textAreaDisabled]: u || V
       }),
       id: D,
       placeholder: this.getPlaceholder(),
       required: L,
       accessibilityLabel: B,
       disabled: u || !1,
-      submitting: F,
+      submitting: V,
       isEdit: g === O.Ie.EDIT,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
@@ -243,12 +243,12 @@ class k extends i.Component {
       moveSelection: this.handleMoveSelection,
       maybeShowAutocomplete: this.maybeShowAutocomplete,
       hideAutocomplete: this.hideAutocomplete,
-      allowNewLines: k,
+      allowNewLines: j,
       onChange: d,
       onResize: _,
       onKeyDown: p,
       onSubmit: h,
-      textAreaPaddingClassName: a()(j[E], {
+      textAreaPaddingClassName: a()(k[E], {
         [P.textAreaWithoutAttachmentButton]: g !== O.Ie.NORMAL && g !== O.Ie.OVERLAY && g !== O.Ie.THREAD_CREATION && g !== O.Ie.SIDEBAR,
         [P.textAreaForPostCreation]: g === O.Ie.CREATE_FORUM_POST,
         [P.textAreaCustomGift]: g === O.Ie.CUSTOM_GIFT,
@@ -259,10 +259,10 @@ class k extends i.Component {
       useNewSlashCommands: I,
       disableAutoFocus: f.tq || null !== (n = g.disableAutoFocus) && void 0 !== n && n,
       disableEnterToSubmit: null !== (i = null === (e = g.submit) || void 0 === e ? void 0 : e.disableEnterToSubmit) && void 0 !== i && i,
-      "aria-controls": null !== (o = V.id) && void 0 !== o ? o : void 0,
+      "aria-controls": null !== (o = F.id) && void 0 !== o ? o : void 0,
       "aria-haspopup": "listbox",
-      "aria-expanded": null !== V.id || void 0,
-      "aria-activedescendant": null !== (s = V.activeDescendant) && void 0 !== s ? s : void 0,
+      "aria-expanded": null !== F.id || void 0,
+      "aria-activedescendant": null !== (s = F.activeDescendant) && void 0 !== s ? s : void 0,
       "aria-invalid": l.length > M,
       "aria-describedby": U,
       "aria-labelledby": G,

@@ -6,8 +6,8 @@ var l = t(200651),
   s = t(192379),
   n = t(442837),
   i = t(481060),
-  r = t(239091),
-  d = t(13245),
+  d = t(239091),
+  r = t(13245),
   u = t(237997),
   c = t(981631),
   o = t(388032);
@@ -44,16 +44,16 @@ function W(e) {
     avatarSizeMode: c,
     displayNameMode: W,
     displayUserMode: N
-  } = (0, n.cj)([u.Z], () => ({
-    avatarSizeMode: u.Z.getAvatarSizeMode(),
-    displayNameMode: u.Z.getDisplayNameMode(),
-    displayUserMode: u.Z.getDisplayUserMode()
+  } = (0, n.cj)([u.default], () => ({
+    avatarSizeMode: u.default.getAvatarSizeMode(),
+    displayNameMode: u.default.getDisplayNameMode(),
+    displayUserMode: u.default.getDisplayUserMode()
   })), g = s.useRef(t);
   return s.useEffect(() => {
     g.current = t
   }), s.useEffect(() => () => g.current(), []), (0, l.jsxs)(i.v2r, {
     navId: "overlay-voice-widget-context-menu",
-    onClose: r.Zy,
+    onClose: d.Zy,
     "aria-label": o.NW.string(o.t.tPfVWl),
     onSelect: a,
     children: [(0, l.jsx)(i.kSQ, {
@@ -63,7 +63,7 @@ function W(e) {
         checked: c === e.value,
         id: "avatar-size-mode-".concat(e.value),
         group: "avatar-size-mode",
-        action: () => d.Z.setAvatarSizeMode(e.value)
+        action: () => r.Z.setAvatarSizeMode(e.value)
       }, e.value))
     }), (0, l.jsx)(i.kSQ, {
       label: o.NW.string(o.t.J0dpcH),
@@ -72,7 +72,7 @@ function W(e) {
         checked: W === e.value,
         id: "display-name-mode-".concat(e.value),
         group: "display-name-mode",
-        action: () => d.Z.setDisplayNameMode(e.value)
+        action: () => r.Z.setDisplayNameMode(e.value)
       }, e.value))
     }), (0, l.jsx)(i.kSQ, {
       label: o.NW.string(o.t.swsWWF),
@@ -81,7 +81,7 @@ function W(e) {
         checked: N === e.value,
         id: "display-user-mode-".concat(e.value),
         group: "display-user-mode",
-        action: () => d.Z.setDisplayUserMode(e.value)
+        action: () => r.Z.setDisplayUserMode(e.value)
       }, e.value))
     })]
   })

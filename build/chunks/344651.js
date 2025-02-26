@@ -73,9 +73,9 @@ function M(e, t) {
   }), e
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null == e) return {};
-  var n, r, i = k(e, t);
+  var n, r, i = j(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -83,7 +83,7 @@ function j(e, t) {
   return i
 }
 
-function k(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -121,11 +121,11 @@ let U = new d.Z("ConnectionStore"),
       guildId: t.guild_id
     }))
   }), e), e => "SOUNDBOARD_SOUNDS" !== e),
-  F = new P.Z(D.Wb, (e, t) => ((e = null != e ? e : {
+  V = new P.Z(D.Wb, (e, t) => ((e = null != e ? e : {
     type: "GUILD_MEMBERS_CHUNK_BATCH",
     chunks: []
   }).chunks.push(t), e), e => "GUILD_MEMBERS_CHUNK" !== e),
-  V = new P.Z(D.Wb, (e, t) => ((e = null == e ? {
+  F = new P.Z(D.Wb, (e, t) => ((e = null == e ? {
     type: "PRESENCE_UPDATES",
     updates: []
   } : e).updates.push(t), e), e => "PRESENCE_UPDATE" !== e && "GUILD_MEMBERS_CHUNK" !== e),
@@ -224,7 +224,7 @@ function X(e) {
     hiddenActivities: o,
     clientStatus: a
   } = e;
-  V.add({
+  F.add({
     guildId: t,
     user: n,
     status: r,
@@ -519,7 +519,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
 }), W(["THREAD_CREATE", "THREAD_UPDATE", "THREAD_DELETE"], e => y.o.loadGuildIds([e.guild_id]), (e, t) => {
   let {
     newly_created: n
-  } = e, r = j(e, ["newly_created"]);
+  } = e, r = k(e, ["newly_created"]);
   K({
     type: t,
     isNewlyCreated: n,
@@ -638,7 +638,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
   })
 }), H(["GUILD_MEMBERS_CHUNK"], e => {
   o.ZP.Emitter.batched(() => {
-    F.add({
+    V.add({
       guildId: e.guild_id,
       members: e.members,
       notFound: e.not_found

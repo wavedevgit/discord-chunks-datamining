@@ -46,7 +46,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,7 +71,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -96,7 +96,7 @@ function B(e) {
   return [r, o]
 }
 
-function F(e) {
+function V(e) {
   var t;
   let {
     transitionState: n,
@@ -114,9 +114,9 @@ function F(e) {
   let M = () => {
       L("applying"), h().finally(o)
     },
-    j = !0 === g && null === _ && (null == p ? void 0 : p.skuId) !== "",
-    k = null == _ && !0 !== g,
-    U = null == T || k || j || "loading" === D,
+    k = !0 === g && null === _ && (null == p ? void 0 : p.skuId) !== "",
+    j = null == _ && !0 !== g,
+    U = null == T || j || k || "loading" === D,
     G = !S && !R && "claimed" === D;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
@@ -158,7 +158,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     quest: t
   } = e, n = i.useMemo(() => (0, C.fh)(t, C.eC.LOGO_TYPE, "dark"), [t]), o = R.r.build(t.config).defaultRewardRedemptionInstructionsByPlatform[N.y$.CROSS_PLATFORM];
@@ -235,7 +235,7 @@ function Z(e) {
           submitting: a,
           onClick: l,
           children: L.NW.string(L.t.MAS7uL)
-        }), (0, A.zK)(t, D.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(V, {
+        }), (0, A.zK)(t, D.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(F, {
           quest: t
         })]
       })
@@ -258,7 +258,7 @@ function H(e) {
     onClose: s,
     analyticsLocations: [],
     initialSelectedDecoration: d
-  }) : (0, r.jsx)(F, {
+  }) : (0, r.jsx)(V, {
     onClose: s,
     transitionState: l,
     quest: o,
@@ -275,7 +275,7 @@ function W(e, t, i) {
     let {
       default: o
     } = await Promise.resolve().then(n.bind(n, 920916));
-    return n => (0, r.jsx)(o, U(j({}, n), {
+    return n => (0, r.jsx)(o, U(k({}, n), {
       quest: e,
       location: t,
       preview: i

@@ -17,14 +17,14 @@ var t = l(200651),
   f = l(159300),
   x = l(496675),
   p = l(709586),
-  j = l(768581),
-  b = l(981631),
+  b = l(768581),
+  j = l(981631),
   C = l(388032),
   v = l(282870),
   _ = l(63190),
   I = l(102219);
 let Z = e => {
-  let n = r.useMemo(() => null == e ? null : j.ZP.getGuildHomeHeaderURL({
+  let n = r.useMemo(() => null == e ? null : b.ZP.getGuildHomeHeaderURL({
     id: e.id,
     homeHeader: e.homeHeader
   }), [e]);
@@ -39,9 +39,9 @@ function N(e) {
   let {
     guild: n
   } = e, l = () => {
-    g.Z.open(n.id, b.pNK.ONBOARDING, void 0, b.KsC.SERVER_GUIDE)
+    g.Z.open(n.id, j.pNK.ONBOARDING, void 0, j.KsC.SERVER_GUIDE)
   };
-  return n.hasFeature(b.oNc.BANNER) ? (0, t.jsxs)(c.zxk, {
+  return n.hasFeature(j.oNc.BANNER) ? (0, t.jsxs)(c.zxk, {
     className: v.editButton,
     innerClassName: v.editButtonInner,
     type: "button",
@@ -70,7 +70,7 @@ let y = r.memo(function(e) {
   } = e, {
     homeHeaderImage: a,
     isHomeHeaderImageSet: o
-  } = Z(n), g = (0, h.b$)(n.id), p = (0, s.e7)([x.Z], () => (0, f.b)(x.Z, n)), j = (0, d.ZP)();
+  } = Z(n), g = (0, h.b$)(n.id), p = (0, s.e7)([x.Z], () => (0, f.b)(x.Z, n)), b = (0, d.ZP)();
   return (0, t.jsxs)("div", {
     className: v.header,
     children: [(0, t.jsxs)("div", {
@@ -80,7 +80,7 @@ let y = r.memo(function(e) {
           [v.headerArtPlaceholder]: !o
         }),
         style: {
-          backgroundImage: "url(".concat(o ? a : "dark" === j ? _ : I, ")")
+          backgroundImage: "url(".concat(o ? a : "dark" === b ? _ : I, ")")
         }
       }), g && (0, t.jsx)(N, {
         guild: n
@@ -135,7 +135,7 @@ let y = r.memo(function(e) {
                     return e
                   }({}, l), a = a = {
                     guild: n,
-                    source: b.t4x.GUILD_HOME
+                    source: j.t4x.GUILD_HOME
                   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, n) {
                     var l = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {

@@ -101,14 +101,14 @@ function g(e, t, n) {
         paddingVertical: L,
         paddingHorizontal: x,
         fade: M = !1,
-        className: j,
-        style: k,
+        className: k,
+        style: j,
         maxContentWidth: U,
         renderAccessory: G,
         onItemVisibilityChange: B
       } = n,
-      F = h(n, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]);
-    let V = i.useRef(null),
+      V = h(n, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]);
+    let F = i.useRef(null),
       Z = i.useRef(null),
       H = i.useRef({}),
       [W, Y] = i.useState(!1),
@@ -119,7 +119,7 @@ function g(e, t, n) {
       } = (0, c.T4)();
     (0, c.tT)({
       scrollerRef: K,
-      className: j,
+      className: k,
       specs: o,
       orientation: "vertical",
       dir: v
@@ -173,8 +173,8 @@ function g(e, t, n) {
       getScrollerState: q
     }, (0, c.Ue)(K, q, ei)), [K, q, eo, ei, ea]);
     let el = (0, i.useCallback)(e => {
-      er(1), null == V.current ? Y(!0) : clearTimeout(V.current), V.current = setTimeout(() => {
-        V.current = null, Y(!1)
+      er(1), null == F.current ? Y(!0) : clearTimeout(F.current), F.current = setTimeout(() => {
+        F.current = null, Y(!1)
       }, 200), null != E && E(e)
     }, [E, er]);
     return i.useLayoutEffect(() => {
@@ -182,13 +182,13 @@ function g(e, t, n) {
     }, [ee, z]), (0, r.jsxs)("div", _(f({
       ref: K,
       onScroll: el,
-      className: a()(j, {
+      className: a()(k, {
         [e]: !0,
         [t]: M,
         [u.scrolling]: W
       }),
-      style: (0, c.uT)(k)
-    }, F), {
+      style: (0, c.uT)(j)
+    }, V), {
       children: [null !== (g = null == G ? void 0 : G(ee)) && void 0 !== g ? g : null, (0, i.useMemo)(() => (0, r.jsx)(l.J, {
         containerRef: Z,
         children: (0, r.jsx)("div", {

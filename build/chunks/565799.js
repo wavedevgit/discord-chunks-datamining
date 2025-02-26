@@ -74,22 +74,22 @@ function M(e) {
   return null != e && e.isGuildStageVoice() && y.ZP.countVoiceStatesForChannel(e.id) > 0
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = _.Z.getChannel(e);
   return null != n && n.isGuildStageVoice() ? 0 === t.size() ? B(n.id) : null == A.get(n.id) && A.set(n.id, n) : B(e)
 }
 
-function k(e) {
+function j(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : D();
   return t.reduce((t, n) => {
     let r = x(n);
-    return e(r) ? (j(n, r), !0) : t
+    return e(r) ? (k(n, r), !0) : t
   }, !1)
 }
 
 function U(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : D();
-  return k(t => t.updateParticipant(e), t)
+  return j(t => t.updateParticipant(e), t)
 }
 
 function G(e) {
@@ -101,11 +101,11 @@ function B(e) {
   return null != e && (delete R[e], A.delete(e), !0)
 }
 
-function F() {
+function V() {
   C.clear(), A.clear(), R = {}
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
   if (null == n || e.has(n)) return;
   let r = _.Z.getChannel(n);
   (null == r ? void 0 : r.isGuildStageVoice()) && (t.add(n), e.add(n))
@@ -118,7 +118,7 @@ function Z(e) {
   return t.reduce((e, t) => {
     if (null == t.guildId || !C.has(t.guildId)) return e;
     let r = new Set;
-    return (V(n, r, t.oldChannelId), V(n, r, t.channelId), 0 === r.size) ? e : U(t.userId, Array.from(r)) || e
+    return (F(n, r, t.oldChannelId), F(n, r, t.channelId), 0 === r.size) ? e : U(t.userId, Array.from(r)) || e
   }, !1)
 }
 
@@ -195,14 +195,14 @@ function J(e) {
     let n = A.get(t.id);
     return null == n || o()(t.permissionOverwrites, n.permissionOverwrites) || (e.push(t.id), A.set(t.id, t)), e
   }, []);
-  return k(e => e.rebuild(), n), n.length > 0
+  return j(e => e.rebuild(), n), n.length > 0
 }
 
 function $(e) {
   let {
     guildId: t
   } = e;
-  if (C.has(t)) return k(e => e.rebuild(), D(t))
+  if (C.has(t)) return j(e => e.rebuild(), D(t))
 }
 let ee = [];
 class et extends(r = l.ZP.Store) {
@@ -242,8 +242,8 @@ class et extends(r = l.ZP.Store) {
 }
 T(et, "displayName", "StageChannelParticipantStore");
 let en = new et(u.Z, {
-  CONNECTION_OPEN: F,
-  OVERLAY_INITIALIZE: F,
+  CONNECTION_OPEN: V,
+  OVERLAY_INITIALIZE: V,
   VOICE_STATE_UPDATES: Z,
   CHANNEL_DELETE: X,
   GUILD_MEMBERS_CHUNK_BATCH: H,

@@ -31,7 +31,7 @@ function g(e) {
 }
 
 function E(e) {
-  return "undefined" != typeof ArrayBuffer && ArrayBuffer.isView ? ArrayBuffer.isView(e) : a(e) || F(e)
+  return "undefined" != typeof ArrayBuffer && ArrayBuffer.isView ? ArrayBuffer.isView(e) : a(e) || V(e)
 }
 
 function v(e) {
@@ -102,12 +102,12 @@ function M(e) {
   return "undefined" != typeof WeakMap && (x.working ? x(e) : e instanceof WeakMap)
 }
 
-function j(e) {
+function k(e) {
   return "[object WeakSet]" === u(e)
 }
 
-function k(e) {
-  return j(e)
+function j(e) {
+  return k(e)
 }
 
 function U(e) {
@@ -122,18 +122,18 @@ function B(e) {
   return "[object DataView]" === u(e)
 }
 
-function F(e) {
+function V(e) {
   return "undefined" != typeof DataView && (B.working ? B(e) : e instanceof DataView)
 }
-t.isArgumentsObject = r, t.isGeneratorFunction = i, t.isTypedArray = a, t.isPromise = g, t.isArrayBufferView = E, t.isUint8Array = v, t.isUint8ClampedArray = b, t.isUint16Array = y, t.isUint32Array = O, t.isInt8Array = S, t.isInt16Array = I, t.isInt32Array = T, t.isFloat32Array = N, t.isFloat64Array = A, t.isBigInt64Array = C, t.isBigUint64Array = R, P.working = "undefined" != typeof Map && P(new Map), t.isMap = D, w.working = "undefined" != typeof Set && w(new Set), t.isSet = L, x.working = "undefined" != typeof WeakMap && x(new WeakMap), t.isWeakMap = M, j.working = "undefined" != typeof WeakSet && j(new WeakSet), t.isWeakSet = k, U.working = "undefined" != typeof ArrayBuffer && U(new ArrayBuffer), t.isArrayBuffer = G, B.working = "undefined" != typeof ArrayBuffer && "undefined" != typeof DataView && B(new DataView(new ArrayBuffer(1), 0, 1)), t.isDataView = F;
-var V = "undefined" != typeof SharedArrayBuffer ? SharedArrayBuffer : void 0;
+t.isArgumentsObject = r, t.isGeneratorFunction = i, t.isTypedArray = a, t.isPromise = g, t.isArrayBufferView = E, t.isUint8Array = v, t.isUint8ClampedArray = b, t.isUint16Array = y, t.isUint32Array = O, t.isInt8Array = S, t.isInt16Array = I, t.isInt32Array = T, t.isFloat32Array = N, t.isFloat64Array = A, t.isBigInt64Array = C, t.isBigUint64Array = R, P.working = "undefined" != typeof Map && P(new Map), t.isMap = D, w.working = "undefined" != typeof Set && w(new Set), t.isSet = L, x.working = "undefined" != typeof WeakMap && x(new WeakMap), t.isWeakMap = M, k.working = "undefined" != typeof WeakSet && k(new WeakSet), t.isWeakSet = j, U.working = "undefined" != typeof ArrayBuffer && U(new ArrayBuffer), t.isArrayBuffer = G, B.working = "undefined" != typeof ArrayBuffer && "undefined" != typeof DataView && B(new DataView(new ArrayBuffer(1), 0, 1)), t.isDataView = V;
+var F = "undefined" != typeof SharedArrayBuffer ? SharedArrayBuffer : void 0;
 
 function Z(e) {
   return "[object SharedArrayBuffer]" === u(e)
 }
 
 function H(e) {
-  return void 0 !== V && (void 0 === Z.working && (Z.working = Z(new V)), Z.working ? Z(e) : e instanceof V)
+  return void 0 !== F && (void 0 === Z.working && (Z.working = Z(new F)), Z.working ? Z(e) : e instanceof F)
 }
 
 function W(e) {

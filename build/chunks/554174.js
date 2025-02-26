@@ -6,6 +6,6 @@ n.d(t, {
 var r = n(808506);
 
 function i() {
-  let e = r.ZP.getFocusedPID();
-  return null != e && (r.ZP.isReady(e) || r.ZP.isCrashed(e)) ? e : null
+  let e = r.default.getFocusedPID();
+  return null != e && (r.default.isReady(e) || r.default.isCrashed(e)) ? e : null
 }

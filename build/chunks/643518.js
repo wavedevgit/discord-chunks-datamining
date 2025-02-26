@@ -24,11 +24,11 @@ function v(e) {
     guildId: v,
     initialSubsection: y
   } = e, {
-    voiceActivityStatusEnabled: I
+    voiceActivityStatusEnabled: h
   } = (0, o.U)({
     location: "useUserProfileModalTabBarItems"
   }), {
-    voiceActivityCardEnabled: h
+    voiceActivityCardEnabled: I
   } = (0, s.o)({
     location: "useUserProfileModalTabBarItems"
   }), {
@@ -49,14 +49,17 @@ function v(e) {
   }), S = null != _ || j.length > 0, T = x.length > 0, {
     mutualFriends: C,
     mutualGuilds: L
-  } = (0, a.Z)(n, n.id !== (null == t ? void 0 : t.id)), A = null == C ? void 0 : C.length, w = null == L ? void 0 : L.length, M = (0, u.Z)({
+  } = (0, a.Z)(n, {
+    fetch: n.id !== (null == t ? void 0 : t.id),
+    type: "modal"
+  }), A = null == C ? void 0 : C.length, w = null == L ? void 0 : L.length, M = (0, u.Z)({
     user: n,
     location: b.Sbl.PROFILE_MODAL_TABS
   }), U = [{
     section: m.oh.USER_INFO,
     text: g.NW.string(g.t.jGoPJS)
   }];
-  return !E && (S || (I || h) && null == _ && null == N && null != Z) ? U.push({
+  return !E && (S || (h || I) && null == _ && null == N && null != Z) ? U.push({
     section: m.oh.ACTIVITY,
     text: g.NW.string(g.t.chq59f)
   }) : (T || null == O && y === m.Tb.RECENT_ACTIVITY) && U.push({

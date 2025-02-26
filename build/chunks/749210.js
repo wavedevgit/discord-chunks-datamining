@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  V: () => j,
+  V: () => k,
   Z: () => U
 }), n(411104), n(177593), n(566702);
 var r = n(990547),
@@ -108,14 +108,14 @@ let L = e => {
     })
   };
 
-function j(e) {
+function k(e) {
   return new Promise(t => m.Z.addConditionalChangeListener(() => {
     let n = m.Z.getGuild(e);
     return null == n || (t(n), !1)
   }))
 }
 
-function k(e, t) {
+function j(e, t) {
   return null != t ? t : (0, d.V)(e)
 }
 let U = {
@@ -186,9 +186,9 @@ let U = {
       throw (null === (s = t.body) || void 0 === s ? void 0 : s.code) === T.evJ.GUILD_AT_CAPACITY && M(), b && (null === (l = t.body) || void 0 === l ? void 0 : l.code) === T.evJ.UNKNOWN_GUILD && x(e), t
     }
   },
-  waitForGuild: j,
+  waitForGuild: k,
   async transitionToGuildSync(e, t, n) {
-    let r = k((await j(e)).id, n),
+    let r = j((await k(e)).id, n),
       i = t;
     (null == t ? void 0 : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (i = P(C({}, t), {
       welcomeModalChannelId: null != r ? r : void 0

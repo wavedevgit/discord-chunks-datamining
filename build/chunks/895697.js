@@ -42,7 +42,7 @@ function A(e) {
   } = e, L = c.ZP.getName(null == C ? void 0 : C.id, D, t), x = (0, i.e7)([u.Z], () => {
     var e;
     return null === (e = u.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
-  }), M = (0, i.e7)([a.Z, s.Z], () => a.Z.getChannel(s.Z.getChannelId())), j = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation);
+  }), M = (0, i.e7)([a.Z, s.Z], () => a.Z.getChannel(s.Z.getChannelId())), k = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation);
   return (0, r.jsxs)(o.Ttm, {
     fade: !0,
     className: N.body,
@@ -60,7 +60,7 @@ function A(e) {
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(_.Z, {
           userId: t.id
-        }), !j && (0, r.jsx)(v.Z, {
+        }), !k && (0, r.jsx)(v.Z, {
           userId: t.id,
           isHovering: R,
           onOpenProfile: P
@@ -85,7 +85,7 @@ function A(e) {
     }), (0, r.jsx)(b.Z, {
       user: t,
       bio: null == A ? void 0 : A.bio,
-      hidePersonalInformation: j,
+      hidePersonalInformation: k,
       onClose: w
     }), (0, r.jsx)(p.Z, {
       user: t,

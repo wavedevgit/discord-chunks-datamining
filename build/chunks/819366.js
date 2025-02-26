@@ -104,7 +104,7 @@ function D(e) {
     viewingChannelId: D
   } = e, {
     analyticsLocations: w
-  } = (0, f.ZP)(d.Z.USER_MENTION), L = (0, l.e7)([O.default], () => O.default.getUser(i)), x = (0, l.e7)([E.Z], () => E.Z.getChannel(o)), M = null != x ? x.getGuildId() : null, j = C || null == L || null == M || null == o ? void 0 : e => {
+  } = (0, f.ZP)(d.Z.USER_MENTION), L = (0, l.e7)([O.default], () => O.default.getUser(i)), x = (0, l.e7)([E.Z], () => E.Z.getChannel(o)), M = null != x ? x.getGuildId() : null, k = C || null == L || null == M || null == o ? void 0 : e => {
     null != x && (0, u.jW)(e, async () => {
       let {
         default: e
@@ -116,22 +116,22 @@ function D(e) {
         guildId: M
       }))
     })
-  }, k = I.ZP.useName(L), U = (0, l.e7)([E.Z, v.ZP, y.Z], () => S.ZP.getNickname(M, o, L)), G = b.Z.getGuild(M), B = (0, p.Ib)(G, x) && i === T.fL ? T.jM : null;
+  }, j = I.ZP.useName(L), U = (0, l.e7)([E.Z, v.ZP, y.Z], () => S.ZP.getNickname(M, o, L)), G = b.Z.getGuild(M), B = (0, p.Ib)(G, x) && i === T.fL ? T.jM : null;
   if (null == L) return (0, r.jsx)(P, {
     userId: _,
     className: t,
     children: N
   });
-  let F = e => (0, r.jsx)(h.Z, R(A({
+  let V = e => (0, r.jsx)(h.Z, R(A({
     className: t,
-    onContextMenu: j,
+    onContextMenu: k,
     color: B
   }, e), {
-    children: "@".concat(null != U ? U : k)
+    children: "@".concat(null != U ? U : j)
   }));
   return C ? (0, r.jsx)(f.Gt, {
     value: w,
-    children: F()
+    children: V()
   }) : (0, r.jsx)(f.Gt, {
     value: w,
     children: (0, r.jsx)(c.yRy, {
@@ -145,7 +145,7 @@ function D(e) {
         channelId: o
       }, e))),
       position: s.tq ? "top" : "right",
-      children: e => F(e)
+      children: e => V(e)
     })
   })
 }

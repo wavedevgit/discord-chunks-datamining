@@ -41,14 +41,14 @@ function R(e) {
     channelId: L,
     onClose: x
   } = e, M = d.ZP.useName(null == P ? void 0 : P.id, L, t), {
-    relationshipType: j,
-    originApplicationId: k
+    relationshipType: k,
+    originApplicationId: j
   } = (0, i.cj)([c.Z], () => ({
     relationshipType: c.Z.getRelationshipType(t.id),
     originApplicationId: c.Z.getOriginApplicationId(t.id)
   })), U = (0, s.vh)(t.id), G = (0, a.wn)({
     location: "UserProfilePopoutBody"
-  }), B = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), F = t.id === n.id, V = (0, f.I5)(n);
+  }), B = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), V = t.id === n.id, F = (0, f.I5)(n);
   return (0, r.jsxs)(o.Ttm, {
     fade: !0,
     className: C.body,
@@ -76,12 +76,12 @@ function R(e) {
           onOpenProfile: w
         })]
       })
-    }), j === A.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
+    }), k === A.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
       children: (0, r.jsx)(g.Z, {
         user: t,
         guildId: null == P ? void 0 : P.id,
         channelId: L,
-        applicationId: G ? k : void 0
+        applicationId: G ? j : void 0
       })
     }), G && U.map(e => (0, r.jsx)(v.Z.Overlay, {
       children: (0, r.jsx)(g.Z, {
@@ -93,7 +93,7 @@ function R(e) {
     }, e.applicationId)), (0, r.jsx)(E.Z, {
       user: t,
       source: E.t.POPOUT
-    }), !F && (0, r.jsx)(T.Z, {
+    }), !V && (0, r.jsx)(T.Z, {
       user: t,
       onOpenProfile: e => null == w ? void 0 : w({
         section: e
@@ -106,8 +106,8 @@ function R(e) {
       bio: null == R ? void 0 : R.bio,
       hidePersonalInformation: B,
       onClose: x
-    }), F && (0, r.jsx)(_.Z, {
-      isPremiumUser: V,
+    }), V && (0, r.jsx)(_.Z, {
+      isPremiumUser: F,
       onInteraction: x,
       className: C.upsell
     }), (0, r.jsx)(h.Z, {

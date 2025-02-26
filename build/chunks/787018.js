@@ -19,8 +19,8 @@ var r = t(200651),
   g = t(687158),
   v = t(471879),
   y = t(502762),
-  I = t(848780),
-  h = t(907179),
+  h = t(848780),
+  I = t(907179),
   j = t(475413),
   x = t(228168),
   _ = t(981631),
@@ -56,25 +56,25 @@ function E(e) {
     roleId: s,
     transitionState: f,
     onViewBlockedProfileClick: p,
-    showGuildProfile: I = !0,
-    sourceAnalyticsLocations: h = []
+    showGuildProfile: h = !0,
+    sourceAnalyticsLocations: I = []
   } = e, E = t === _.ME ? void 0 : t, {
     analyticsLocations: S
-  } = (0, d.ZP)([...h, a.Z.BLOCKED_PROFILE_MODAL]), T = (0, m.ZB)({
+  } = (0, d.ZP)([...I, a.Z.BLOCKED_PROFILE_MODAL]), T = (0, m.ZB)({
     layout: "BLOCKED_PROFILE_MODAL",
     userId: n.id,
     guildId: E,
     channelId: i,
     messageId: l,
     roleId: s,
-    showGuildProfile: I
+    showGuildProfile: h
   }), C = [{
     icon: c.owu,
     description: O.NW.string(O.t.Kn2UDA)
   }, {
     icon: c.t6m,
     description: O.NW.string(O.t.QxrDY2)
-  }], L = (0, g.ZP)(n.id, I ? E : void 0), A = o.createRef();
+  }], L = (0, g.ZP)(n.id, h ? E : void 0), A = o.createRef();
   return (0, r.jsx)(d.Gt, {
     value: S,
     children: (0, r.jsx)(m.Mt, {
@@ -229,7 +229,7 @@ function S(e) {
                 })
               }), (0, r.jsxs)(c.Kqy, {
                 align: "center",
-                children: [(0, r.jsx)(h.Z, {
+                children: [(0, r.jsx)(I.Z, {
                   size: c.PhG.MEDIUM,
                   isBlocked: w,
                   onClick: () => {
@@ -238,7 +238,7 @@ function S(e) {
                       analyticsLocations: M
                     }, U))
                   }
-                }), (0, r.jsx)(I.Z, {
+                }), (0, r.jsx)(h.Z, {
                   userId: n.id,
                   onClick: () => {
                     null == T || T(), (0, b.pQ)(P({

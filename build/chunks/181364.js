@@ -64,7 +64,7 @@ function f(e) {
       m()
     },
     onNotificationClick: (e, n) => {
-      y("unlock"), t === d.nc.NEWS && r.Z.updateNotificationStatus(n), s.default.isOverlayOOPEnabledForPid((0, a.QF)()) ? r.Z.setInputLocked(!1, (0, a.QF)()) : l.Z.isInstanceLocked() && r.Z.setInstanceLocked(!1)
+      y("unlock"), t === d.nc.NEWS && r.Z.updateNotificationStatus(n), s.default.isOverlayOOPEnabledForPid((0, a.getPID)()) ? r.Z.setInputLocked(!1, (0, a.getPID)()) : l.default.isInstanceLocked() && r.Z.setInstanceLocked(!1)
     },
     onDismissClick: () => {
       y("dismiss")

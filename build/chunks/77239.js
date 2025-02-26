@@ -20,37 +20,37 @@ e.exports = function(e, t, n, _, h, m, g, E) {
     L = 0,
     x = 0,
     M = 0,
-    j = 0,
     k = 0,
+    j = 0,
     U = 0,
     G = null,
     B = 0,
-    F = new r.Buf16(i + 1),
     V = new r.Buf16(i + 1),
+    F = new r.Buf16(i + 1),
     Z = null,
     H = 0;
-  for (R = 0; R <= i; R++) F[R] = 0;
-  for (P = 0; P < _; P++) F[t[n + P]]++;
-  for (L = C, w = i; w >= 1 && 0 === F[w]; w--);
+  for (R = 0; R <= i; R++) V[R] = 0;
+  for (P = 0; P < _; P++) V[t[n + P]]++;
+  for (L = C, w = i; w >= 1 && 0 === V[w]; w--);
   if (L > w && (L = w), 0 === w) return h[m++] = 0x1400000, h[m++] = 0x1400000, E.bits = 1, 0;
-  for (D = 1; D < w && 0 === F[D]; D++);
-  for (L < D && (L = D), j = 1, R = 1; R <= i; R++)
-    if (j <<= 1, (j -= F[R]) < 0) return -1;
-  if (j > 0 && (e === s || 1 !== w)) return -1;
-  for (R = 1, V[1] = 0; R < i; R++) V[R + 1] = V[R] + F[R];
-  for (P = 0; P < _; P++) 0 !== t[n + P] && (g[V[t[n + P]]++] = P);
-  if (e === s ? (G = Z = g, I = 19) : e === l ? (G = u, B -= 257, Z = d, H -= 257, I = 256) : (G = f, Z = p, I = -1), U = 0, P = 0, R = D, S = m, x = L, M = 0, y = -1, O = (k = 1 << L) - 1, e === l && k > o || e === c && k > a) return 1;
+  for (D = 1; D < w && 0 === V[D]; D++);
+  for (L < D && (L = D), k = 1, R = 1; R <= i; R++)
+    if (k <<= 1, (k -= V[R]) < 0) return -1;
+  if (k > 0 && (e === s || 1 !== w)) return -1;
+  for (R = 1, F[1] = 0; R < i; R++) F[R + 1] = F[R] + V[R];
+  for (P = 0; P < _; P++) 0 !== t[n + P] && (g[F[t[n + P]]++] = P);
+  if (e === s ? (G = Z = g, I = 19) : e === l ? (G = u, B -= 257, Z = d, H -= 257, I = 256) : (G = f, Z = p, I = -1), U = 0, P = 0, R = D, S = m, x = L, M = 0, y = -1, O = (j = 1 << L) - 1, e === l && j > o || e === c && j > a) return 1;
   for (;;) {
     T = R - M, g[P] < I ? (N = 0, A = g[P]) : g[P] > I ? (N = Z[H + g[P]], A = G[B + g[P]]) : (N = 96, A = 0), v = 1 << R - M, D = b = 1 << x;
     do h[S + (U >> M) + (b -= v)] = T << 24 | N << 16 | A | 0; while (0 !== b);
     for (v = 1 << R - 1; U & v;) v >>= 1;
-    if (0 !== v ? (U &= v - 1, U += v) : U = 0, P++, 0 == --F[R]) {
+    if (0 !== v ? (U &= v - 1, U += v) : U = 0, P++, 0 == --V[R]) {
       if (R === w) break;
       R = t[n + g[P]]
     }
     if (R > L && (U & O) !== y) {
-      for (0 === M && (M = L), S += D, j = 1 << (x = R - M); x + M < w && !((j -= F[x + M]) <= 0);) x++, j <<= 1;
-      if (k += 1 << x, e === l && k > o || e === c && k > a) return 1;
+      for (0 === M && (M = L), S += D, k = 1 << (x = R - M); x + M < w && !((k -= V[x + M]) <= 0);) x++, k <<= 1;
+      if (j += 1 << x, e === l && j > o || e === c && j > a) return 1;
       h[y = U & O] = L << 24 | x << 16 | S - m | 0
     }
   }

@@ -146,14 +146,14 @@ function M(e) {
   I(t.id)
 }
 
-function j(e) {
+function k(e) {
   let {
     channel: t
   } = e;
   P(t)
 }
 
-function k(e) {
+function j(e) {
   let {
     threads: t,
     mostRecentMessages: n
@@ -190,14 +190,14 @@ function B(e) {
   T(t.id)
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: t
   } = e;
   delete O[t.id]
 }
 
-function V(e) {
+function F(e) {
   let {
     message: t,
     optimistic: n,
@@ -312,9 +312,9 @@ let Q = new q(s.Z, {
   OVERLAY_INITIALIZE: L,
   GUILD_CREATE: x,
   GUILD_DELETE: M,
-  THREAD_CREATE: j,
-  THREAD_UPDATE: j,
-  THREAD_LIST_SYNC: k,
+  THREAD_CREATE: k,
+  THREAD_UPDATE: k,
+  THREAD_LIST_SYNC: j,
   LOAD_THREADS_SUCCESS: U,
   LOAD_ARCHIVED_THREADS_SUCCESS: U,
   RELATIONSHIP_ADD: z,
@@ -322,9 +322,9 @@ let Q = new q(s.Z, {
   RELATIONSHIP_REMOVE: z,
   SEARCH_FINISH: G,
   MOD_VIEW_SEARCH_FINISH: G,
-  THREAD_DELETE: F,
+  THREAD_DELETE: V,
   CHANNEL_DELETE: B,
-  MESSAGE_CREATE: V,
+  MESSAGE_CREATE: F,
   MESSAGE_UPDATE: H,
   MESSAGE_DELETE: W,
   MESSAGE_DELETE_BULK: Y,

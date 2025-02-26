@@ -1,5 +1,6 @@
-/** Chunk was on 624 **/
-e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   clickable: "clickable_a3e8db",
   container: "container_a3e8db",
   containerLoading: "containerLoading_a3e8db",
@@ -8,4 +9,5 @@ e.exports = {
   highlighted: "highlighted_a3e8db",
   selected: "selected_a3e8db",
   notificationBadge: "notificationBadge_a3e8db"
-}
+};
+e.exports = r

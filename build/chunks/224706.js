@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => k
 }), n(47120), n(301563), n(411104);
 var r = n(664751),
   i = n(990547),
@@ -180,7 +180,7 @@ async function M(e) {
     error: S
   }), Promise.reject(S))
 }
-let j = {
+let k = {
   addGame(e, t) {
     l.Z.dispatch({
       type: "RUNNING_GAME_ADD_OVERRIDE",

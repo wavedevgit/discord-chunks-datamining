@@ -261,12 +261,12 @@ var r = function(e) {
     return 0
   }
 
-  function j(e) {
+  function k(e) {
     var t = e.abs();
     return !t.isUnit() && (!!(t.equals(2) || t.equals(3) || t.equals(5)) || !(t.isEven() || t.isDivisibleBy(3) || t.isDivisibleBy(5)) && (!!t.lesser(49) || void 0))
   }
 
-  function k(e, t) {
+  function j(e, t) {
     for (var n, i, o, a = e.prev(), s = a, l = 0; s.isEven();) s = s.divide(2), l++;
     e: for (i = 0; i < t.length; i++)
       if (!e.lesser(t[i]) && !((o = r(t[i]).modPow(s, e)).isUnit() || o.equals(a))) {
@@ -483,18 +483,18 @@ var r = function(e) {
     var t = eo(e);
     return !t.isZero() && (!!t.isUnit() || (0 === t.compareAbs(2) ? this.isEven() : this.mod(t).isZero()))
   }, d.prototype.isDivisibleBy = u.prototype.isDivisibleBy = c.prototype.isDivisibleBy, c.prototype.isPrime = function(e) {
-    var t = j(this);
+    var t = k(this);
     if (void 0 !== t) return t;
     var n = this.abs(),
       i = n.bitLength();
-    if (i <= 64) return k(n, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
+    if (i <= 64) return j(n, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
     for (var o = Math.log(2) * i.toJSNumber(), a = Math.ceil(!0 === e ? 2 * Math.pow(o, 2) : o), s = [], l = 0; l < a; l++) s.push(r(l + 2));
-    return k(n, s)
+    return j(n, s)
   }, d.prototype.isPrime = u.prototype.isPrime = c.prototype.isPrime, c.prototype.isProbablePrime = function(t, n) {
-    var i = j(this);
+    var i = k(this);
     if (void 0 !== i) return i;
     for (var o = this.abs(), a = e === t ? 5 : t, s = [], l = 0; l < a; l++) s.push(r.randBetween(2, o.minus(2), n));
-    return k(o, s)
+    return j(o, s)
   }, d.prototype.isProbablePrime = u.prototype.isProbablePrime = c.prototype.isProbablePrime, c.prototype.modInv = function(e) {
     for (var t, n, i, o = r.zero, a = r.one, s = eo(e), l = this.abs(); !l.isZero();) t = s.divide(l), n = o, i = s, o = a, s = l, a = n.subtract(t.multiply(a)), l = i.subtract(t.multiply(l));
     if (!s.isUnit()) throw Error(this.toString() + " and " + e.toString() + " are not co-prime");
@@ -520,11 +520,11 @@ var r = function(e) {
   var G = U.length,
     B = U[G - 1];
 
-  function F(e) {
+  function V(e) {
     return Math.abs(e) <= t
   }
 
-  function V(e, t, n) {
+  function F(e, t, n) {
     t = eo(t);
     for (var i = e.isNegative(), o = t.isNegative(), a = i ? e.not() : e, s = o ? t.not() : t, l = 0, c = 0, u = null, d = null, f = []; !a.isZero() || !s.isZero();) l = (u = x(a, B))[1].toJSNumber(), i && (l = B - 1 - l), c = (d = x(s, B))[1].toJSNumber(), o && (c = B - 1 - c), a = u[0], s = d[0], f.push(n(l, c));
     for (var p = 0 !== n(+!!i, +!!o) ? r(-1) : r(0), _ = f.length - 1; _ >= 0; _ -= 1) p = p.multiply(B).add(r(f[_]));
@@ -532,7 +532,7 @@ var r = function(e) {
   }
   c.prototype.shiftLeft = function(e) {
     var t = eo(e).toJSNumber();
-    if (!F(t)) throw Error(String(t) + " is too large for shifting.");
+    if (!V(t)) throw Error(String(t) + " is too large for shifting.");
     if (t < 0) return this.shiftRight(-t);
     var n = this;
     if (n.isZero()) return n;
@@ -540,7 +540,7 @@ var r = function(e) {
     return n.multiply(U[t])
   }, d.prototype.shiftLeft = u.prototype.shiftLeft = c.prototype.shiftLeft, c.prototype.shiftRight = function(e) {
     var t, n = eo(e).toJSNumber();
-    if (!F(n)) throw Error(String(n) + " is too large for shifting.");
+    if (!V(n)) throw Error(String(n) + " is too large for shifting.");
     if (n < 0) return this.shiftLeft(-n);
     for (var r = this; n >= G;) {
       if (r.isZero() || r.isNegative() && r.isUnit()) return r;
@@ -550,15 +550,15 @@ var r = function(e) {
   }, d.prototype.shiftRight = u.prototype.shiftRight = c.prototype.shiftRight, c.prototype.not = function() {
     return this.negate().prev()
   }, d.prototype.not = u.prototype.not = c.prototype.not, c.prototype.and = function(e) {
-    return V(this, e, function(e, t) {
+    return F(this, e, function(e, t) {
       return e & t
     })
   }, d.prototype.and = u.prototype.and = c.prototype.and, c.prototype.or = function(e) {
-    return V(this, e, function(e, t) {
+    return F(this, e, function(e, t) {
       return e | t
     })
   }, d.prototype.or = u.prototype.or = c.prototype.or, c.prototype.xor = function(e) {
-    return V(this, e, function(e, t) {
+    return F(this, e, function(e, t) {
       return e ^ t
     })
   }, d.prototype.xor = u.prototype.xor = c.prototype.xor;

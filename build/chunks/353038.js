@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 n.d(t, {
   B: () => y,
-  Z: () => Z
+  Z: () => N
 }), n(47120), n(411104);
 var i, r, o = n(200651),
   l = n(192379),
@@ -130,7 +130,7 @@ function C(e) {
   } = e;
   return t
 }
-class Z extends(i = l.Component) {
+class N extends(i = l.Component) {
   shouldComponentUpdate(e, t) {
     return !(0, c.Z)(t, this.state) || !(0, c.Z)(e, this.props, ["anchor", "size", "minSize", "container"]) || !(0, c.Z)(e.anchor, this.props.anchor) || !(0, c.Z)(e.size, this.props.size) || !(0, c.Z)(e.minSize, this.props.minSize) || !(0, c.Z)(e.container, this.props.container)
   }
@@ -585,4 +585,4 @@ class Z extends(i = l.Component) {
     }), this.anchor = x(e.anchor), this.size = b(e.size, e.minSize.width, e.minSize.height)
   }
 }
-m(Z, "Operations", y)
+m(N, "Operations", y)

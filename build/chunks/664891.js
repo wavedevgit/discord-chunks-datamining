@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => k
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -37,7 +37,7 @@ var r = n(200651),
   x = n(800459),
   M = n(214803);
 
-function j(e) {
+function k(e) {
   var t;
   let n, {
       premiumSubscription: o,
@@ -47,8 +47,8 @@ function j(e) {
       onPaymentSourceAdd: C,
       planId: D,
       setHasAcceptedTerms: x,
-      legalTermsNodeRef: j,
-      hasLegalTermsFlash: V,
+      legalTermsNodeRef: k,
+      hasLegalTermsFlash: F,
       onInvoiceError: Z,
       planGroup: H,
       currencies: W,
@@ -93,7 +93,7 @@ function j(e) {
     planName: en.name
   });
   let ec = null;
-  return null != o && (ec = K ? (0, r.jsx)(k, {
+  return null != o && (ec = K ? (0, r.jsx)(j, {
     premiumSubscription: o,
     onInvoiceError: Z,
     priceOptions: h,
@@ -110,7 +110,7 @@ function j(e) {
     planGroup: H,
     priceOptions: h,
     preventFetch: eo
-  }) : (0, r.jsx)(F, {
+  }) : (0, r.jsx)(V, {
     premiumSubscription: o,
     newPlan: en,
     planGroup: H,
@@ -158,8 +158,8 @@ function j(e) {
         disabled: eo
       })]
     }), (0, r.jsx)(R.Z, {
-      isActive: V,
-      ref: j,
+      isActive: F,
+      ref: k,
       children: null != o && (0, I.R4)(o, D, H) ? (0, r.jsx)(G, {
         premiumSubscription: o,
         newPlan: en,
@@ -192,7 +192,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     premiumSubscription: t,
     onInvoiceError: n,
@@ -407,7 +407,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let t, {
       premiumSubscription: n,
       newPlan: i,

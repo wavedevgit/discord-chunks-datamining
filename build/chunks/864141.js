@@ -53,10 +53,10 @@ function D(e) {
     voiceChannelId: n.id,
     user: t,
     analyticsLocations: x
-  }), j = (0, v.Z)({
+  }), k = (0, v.Z)({
     userId: t.id,
     onAction: M
-  }), k = (0, s.e7)([m.Z], () => m.Z.getGuild(n.guild_id)), U = (0, g.Z)(n), G = (0, f.ZP)(n), B = () => n.isDM() || n.isGroupDM() ? R.NW.string(R.t["9FaEzs"]) : n.isGuildStageVoice() ? R.NW.string(R.t.QygGCA) : R.NW.string(R.t.msxteH), F = () => {
+  }), j = (0, s.e7)([m.Z], () => m.Z.getGuild(n.guild_id)), U = (0, g.Z)(n), G = (0, f.ZP)(n), B = () => n.isDM() || n.isGroupDM() ? R.NW.string(R.t["9FaEzs"]) : n.isGuildStageVoice() ? R.NW.string(R.t.QygGCA) : R.NW.string(R.t.msxteH), V = () => {
     let e = e => {
         e.stopPropagation(), null == M || M({
           action: "OPEN_VOICE_CHANNEL"
@@ -84,16 +84,16 @@ function D(e) {
             onClick: e,
             children: G
           })]
-        }), null != k && (0, r.jsx)(S.Z, {
+        }), null != j && (0, r.jsx)(S.Z, {
           variant: "text-xs/normal",
           text: R.NW.formatToPlainString(R.t["hq/Qzc"], {
-            guildName: k.name
+            guildName: j.name
           }),
           onClick: t
         })]
       })
     })
-  }, V = () => (0, r.jsx)("div", {
+  }, F = () => (0, r.jsx)("div", {
     className: o()(P.actions, L),
     children: (0, r.jsx)(N.Z, {
       channel: n,
@@ -104,7 +104,7 @@ function D(e) {
   return (0, r.jsx)(d.Gt, {
     value: x,
     children: (0, r.jsxs)(y.Z, {
-      ref: j,
+      ref: k,
       className: o()(P.card, i),
       onAction: M,
       onClose: D,
@@ -122,9 +122,9 @@ function D(e) {
           children: [(0, r.jsx)(I.Z, {
             users: U,
             channel: n
-          }), F(), w === C.y0.FULL_SIZE && V()]
+          }), V(), w === C.y0.FULL_SIZE && F()]
         })
-      }), w !== C.y0.FULL_SIZE && V()]
+      }), w !== C.y0.FULL_SIZE && F()]
     })
   })
 }

@@ -86,8 +86,8 @@ function P(e) {
       orientation: "horizontal",
       labelledBy: x
     }),
-    j = (0, f.Q3)("AppIconSelectionGroup"),
-    k = e => {
+    k = (0, f.Q3)("AppIconSelectionGroup"),
+    j = e => {
       if (w && !N && e !== E.aH.DEFAULT) {
         (0, l.ZDy)(async () => {
           let {
@@ -122,7 +122,7 @@ function P(e) {
               className: I.title,
               children: [(0, r.jsx)(l.X6q, {
                 className: I.titleText,
-                variant: j ? "text-lg/medium" : "text-md/medium",
+                variant: k ? "text-lg/medium" : "text-md/medium",
                 children: S.NW.string(S.t.NThqT0)
               }), !w && (0, r.jsx)(h.Z, {
                 className: I.premiumIcon
@@ -144,7 +144,7 @@ function P(e) {
             }) : (0, r.jsx)(l.X6q, {
               variant: "text-sm/normal",
               className: a()({
-                [T.subtext]: j
+                [T.subtext]: k
               }),
               children: S.NW.string(S.t.IgENJi)
             })]
@@ -161,7 +161,7 @@ function P(e) {
           }).map((e, t) => (0, r.jsx)(v.Z, {
             icon: e,
             isSelected: P === e.id,
-            onSelect: e => k(e),
+            onSelect: e => j(e),
             disabled: o,
             tabIndex: 0 !== t || o ? void 0 : 0,
             locked: w && !N && e.id !== E.aH.DEFAULT

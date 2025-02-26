@@ -12,8 +12,8 @@ var n = r(200651),
   u = r(358085),
   b = r(998502),
   f = r(145597),
-  p = r(981631),
-  d = r(388032);
+  d = r(981631),
+  p = r(388032);
 
 function O(e) {
   var t, r, {
@@ -21,7 +21,7 @@ function O(e) {
       onClose: j,
       contextKey: y
     } = e,
-    h = function(e, t) {
+    g = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -36,14 +36,14 @@ function O(e) {
       }
       return o
     }(e, ["transitionState", "onClose", "contextKey"]);
-  let x = (0, l.Dt)(),
-    g = (0, i.e7)([a.Z], () => a.Z.isFocused()),
-    k = y === p.IlC.APP,
-    P = (0, f.QF)(),
-    m = (0, i.e7)([s.Z], () => s.Z.isLocked(P));
+  let h = (0, l.Dt)(),
+    x = (0, i.e7)([a.Z], () => a.Z.isFocused()),
+    P = y === d.IlC.APP,
+    k = (0, f.getPID)(),
+    m = (0, i.e7)([s.default], () => s.default.isLocked(k));
   return (o.useEffect(() => {
-    (g || k || m) && (null == j || j())
-  }, [g, j, k, m]), g || m) ? null : (0, n.jsxs)(c.Y0X, (t = function(e) {
+    (x || P || m) && (null == j || j())
+  }, [x, j, P, m]), x || m) ? null : (0, n.jsxs)(c.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -62,19 +62,19 @@ function O(e) {
     return e
   }({
     transitionState: O,
-    "aria-labelledby": x
-  }, h), r = r = {
+    "aria-labelledby": h
+  }, g), r = r = {
     size: c.CgR.SMALL,
     children: [(0, n.jsx)(c.xBx, {
       children: (0, n.jsx)(c.X6q, {
         variant: "heading-xl/semibold",
-        children: d.NW.string(d.t.DJ8ojI)
+        children: p.NW.string(p.t.DJ8ojI)
       })
     }), (0, n.jsx)(c.hzk, {
       children: (0, n.jsx)(c.Text, {
         color: "text-normal",
         variant: "text-md/medium",
-        children: d.NW.string(d.t["E+Ph7O"])
+        children: p.NW.string(p.t["E+Ph7O"])
       })
     }), (0, n.jsxs)(c.mzw, {
       children: [(0, n.jsx)(c.zxk, {
@@ -82,12 +82,12 @@ function O(e) {
           u.isPlatformEmbedded ? b.ZP.focus() : window.focus(), j()
         },
         color: c.zxk.Colors.BRAND,
-        children: d.NW.string(d.t.ELRJQk)
+        children: p.NW.string(p.t.ELRJQk)
       }), (0, n.jsx)(c.zxk, {
         onClick: () => null == j ? void 0 : j(),
         color: c.zxk.Colors.PRIMARY,
         look: c.zxk.Looks.LINK,
-        children: d.NW.string(d.t.FgK5QE)
+        children: p.NW.string(p.t.FgK5QE)
       })]
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

@@ -40,13 +40,13 @@ var r = n(200651),
   L = n(914010),
   x = n(594174),
   M = n(626135),
-  j = n(768581),
-  k = n(900849),
+  k = n(768581),
+  j = n(900849),
   U = n(74538),
   G = n(886132),
   B = n(524444),
-  F = n(981631),
-  V = n(176505),
+  V = n(981631),
+  F = n(176505),
   Z = n(474936),
   H = n(388032),
   W = n(859289);
@@ -92,8 +92,8 @@ function q(e, t) {
 let Q = 32,
   X = 12,
   J = () => ({
-    page: null != (0, l.e7)([L.Z], () => L.Z.getGuildId()) ? F.ZY5.GUILD_CHANNEL : F.ZY5.DM_CHANNEL,
-    section: F.jXE.EMOJI_UPSELL_POPOUT
+    page: null != (0, l.e7)([L.Z], () => L.Z.getGuildId()) ? V.ZY5.GUILD_CHANNEL : V.ZY5.DM_CHANNEL,
+    section: V.jXE.EMOJI_UPSELL_POPOUT
   }),
   $ = e => {
     let {
@@ -142,13 +142,13 @@ let Q = 32,
       id: o,
       icon: s,
       name: l
-    } = t, c = Q, d = j.ZP.getGuildIconURL({
+    } = t, c = Q, d = k.ZP.getGuildIconURL({
       id: o,
       icon: s,
       size: c,
       canAnimate: !0
     }), f = (n = null == n || n) || t.isDiscoverable(), p = () => {
-      t.isDiscoverable() ? (0, k.Ub)(o, {}) : n && (0, D.uL)(F.Z5c.CHANNEL(o, w.Z.getChannelId(o)))
+      t.isDiscoverable() ? (0, j.Ub)(o, {}) : n && (0, D.uL)(V.Z5c.CHANNEL(o, w.Z.getChannelId(o)))
     }, _ = () => null != d && f ? (0, r.jsxs)(u.P3F, {
       "aria-label": l,
       onClick: p,
@@ -274,10 +274,10 @@ let Q = 32,
       closePopout: C,
       onToggleShowMoreEmojis: D,
       guildEmoji: w,
-      demoMode: j = !1,
-      nonce: k
+      demoMode: k = !1,
+      nonce: j
     } = e, Y = (0, l.e7)([x.default], () => x.default.getCurrentUser()), K = (0, l.e7)([L.Z], () => L.Z.getGuildId()), z = U.ZP.isPremium(Y), q = null != K && (K === (null == S ? void 0 : S.id) || K === (null == I ? void 0 : I.id)), Q = null != I, X = null !== (t = null == S ? void 0 : S.isDiscoverable()) && void 0 !== t && t;
-    j && (z = !0, X = !0, Q = !1, q = !1);
+    k && (z = !0, X = !0, Q = !1, q = !1);
     let $ = J(),
       {
         isRoleSubscriptionEmoji: et,
@@ -320,7 +320,7 @@ let Q = 32,
         isDiscoverable: X,
         shouldHideRoleSubscriptionCTA: eo,
         onOpenPremiumSettings: () => {
-          C(), M.default.track(F.rMx.PREMIUM_PROMOTION_OPENED, {
+          C(), M.default.track(V.rMx.PREMIUM_PROMOTION_OPENED, {
             location_page: $.page,
             location_section: $.section
           }), (0, R.z)()
@@ -333,14 +333,14 @@ let Q = 32,
         currentGuildId: es,
         popoutData: el,
         emojiSourceGuildId: null == S ? void 0 : S.id,
-        nonce: k,
-        demoMode: j
+        nonce: j,
+        demoMode: k
       }),
       ef = el.type === G.$.JOIN_GUILD,
       ep = el.type === G.$.GET_PREMIUM,
       e_ = () => {
         let e = async () => {
-          if (j || null == S || Q) return;
+          if (k || null == S || Q) return;
           C();
           let e = S.id;
           try {
@@ -349,7 +349,7 @@ let Q = 32,
         }, t = () => {
           C(), (null == I ? void 0 : I.id) != null && d.Z.transitionToGuildSync(I.id, {
             sourceLocationStack: [p.Z.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL]
-          }, V.oC.ROLE_SUBSCRIPTIONS)
+          }, F.oC.ROLE_SUBSCRIPTIONS)
         }, n = !Q && X, i = () => ep ? (0, r.jsx)(P.Z, {
           className: W.ctaButton,
           subscriptionTier: Z.Si.TIER_2,
@@ -404,7 +404,7 @@ let Q = 32,
         var e, t;
         let n = null != S && !Q && X && (null !== (t = null == S ? void 0 : null === (e = S.emojis) || void 0 === e ? void 0 : e.length) && void 0 !== t ? t : 0) > 1,
           i = () => {
-            n && (null == D || D(), eh || j || M.default.track(F.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ed), em(!eh))
+            n && (null == D || D(), eh || k || M.default.track(V.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ed), em(!eh))
           },
           o = () => {
             let e = H.NW.string(H.t.pnsAS0);
@@ -496,7 +496,7 @@ let Q = 32,
       color: u.Ttl.BRAND,
       fullWidth: !0,
       onClick: () => {
-        (0, k.Ub)(i.id, {})
+        (0, j.Ub)(i.id, {})
       },
       children: a.text
     }) : null;

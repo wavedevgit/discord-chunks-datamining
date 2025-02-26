@@ -101,7 +101,7 @@ e = n.nmd(e),
       })
     }
 
-    function j(e) {
+    function k(e) {
       return A(e, function(e) {
         return v.test(e) ? "xn--" + x(e) : e
       })
@@ -114,7 +114,7 @@ e = n.nmd(e),
         },
         decode: L,
         encode: x,
-        toASCII: j,
+        toASCII: k,
         toUnicode: M
       }, "function" == typeof define && "object" == typeof define.amd && define.amd) define("punycode", function() {
       return s

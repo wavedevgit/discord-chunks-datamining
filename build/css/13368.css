@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: f864c86906a54174
+  Original File Name: 0fd970885a4fc587
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -240,7 +240,8 @@
 .textArea_ab8e5c {
     border-radius: 6px;
     border: 1px solid hsla(0,0%,100%,.08);
-    background: var(--bg-base-primary)
+    background: var(--bg-base-primary);
+    min-height: 44px
 }
 
 .container__2af41 {
@@ -3708,4 +3709,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     pointer-events: auto
 }
 
-/*# sourceMappingURL=f864c86906a54174.css.map*/
+/*# sourceMappingURL=0fd970885a4fc587.css.map*/

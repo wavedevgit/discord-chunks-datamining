@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => k
 }), n(47120), n(627341);
 var r = n(200651),
   i = n(192379),
@@ -132,7 +132,7 @@ let w = () => (0, r.jsx)("div", {
     })
   };
 
-function j(e) {
+function k(e) {
   let {
     markAsDismissed: t,
     showClientThemesCoachmark: n

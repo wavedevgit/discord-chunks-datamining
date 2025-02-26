@@ -79,13 +79,13 @@ function w(e) {
     skuId: L,
     isGift: x = !1,
     giftRecipient: M,
-    giftMessage: j,
-    giftingOrigin: k,
+    giftMessage: k,
+    giftingOrigin: j,
     analyticsLocations: U,
     returnRef: G
   } = e, {
     analyticsLocations: B
-  } = (0, d.ZP)([...U, u.Z.COLLECTIBLES_PAYMENT_MODAL]), F = i.useRef(new s.qA), [V, Z] = i.useState(null), [H, W] = i.useState(!1), Y = i.useMemo(() => (0, T.UY)(L), [L]), K = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), z = null != L ? [L] : K, q = null !== (t = z[0]) && void 0 !== t ? t : null, Q = null != L && p.Rm.has(L), X = i.useCallback(() => {
+  } = (0, d.ZP)([...U, u.Z.COLLECTIBLES_PAYMENT_MODAL]), V = i.useRef(new s.qA), [F, Z] = i.useState(null), [H, W] = i.useState(!1), Y = i.useMemo(() => (0, T.UY)(L), [L]), K = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), z = null != L ? [L] : K, q = null !== (t = z[0]) && void 0 !== t ? t : null, Q = null != L && p.Rm.has(L), X = i.useCallback(() => {
     W(!0), null == o || o()
   }, [o]), J = i.useCallback(e => {
     W(!1), n(e), c.Z.dispatch({
@@ -95,14 +95,14 @@ function w(e) {
   }, [n]), $ = (e, t, n) => x ? (0, r.jsx)(v.Z, {
     step: n,
     onClose: () => t(!1),
-    giftingOrigin: k
+    giftingOrigin: j
   }) : (0, r.jsx)(S.Z, {
     step: n,
     onClose: () => t(!1)
   }), ee = i.useMemo(() => [E.WA, ...x ? [O.Dd] : [], b.n, ...E.yp, E.wo, {
     key: m.h8.CONFIRM,
     renderStep: e => (0, r.jsx)(y.x, D(R({}, e), {
-      confettiCanvas: V,
+      confettiCanvas: F,
       analyticsLocations: B,
       hideConfetti: null != Y
     })),
@@ -110,13 +110,13 @@ function w(e) {
       bodyClassName: A.modalOverrideBody,
       sliderBodyClassName: A.modalOverrideSliderBody
     }
-  }], [B, V, Y, x]);
+  }], [B, F, Y, x]);
   return (0, r.jsxs)(d.Gt, {
     value: B,
     children: [(0, r.jsx)(s.O_, {
       ref: Z,
       className: A.confettiCanvas,
-      environment: F.current
+      environment: V.current
     }), null != Y && (0, r.jsx)("img", {
       src: Y.imageSrc,
       className: a()(A.customConfetti, {
@@ -136,8 +136,8 @@ function w(e) {
       children: (0, r.jsx)(_.KB, {
         isGift: x,
         giftRecipient: M,
-        giftMessage: j,
-        giftingOrigin: k,
+        giftMessage: k,
+        giftingOrigin: j,
         children: (0, r.jsx)(g.PaymentModal, {
           onClose: J,
           onComplete: X,

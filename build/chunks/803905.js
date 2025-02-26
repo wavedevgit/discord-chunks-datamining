@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   $0: () => P,
-  AN: () => k,
+  AN: () => j,
   Ct: () => A,
-  EQ: () => F,
+  EQ: () => V,
   Ej: () => I,
   ME: () => m,
   O1: () => O,
@@ -12,7 +12,7 @@ n.d(t, {
   Pl: () => S,
   Ry: () => N,
   Uw: () => x,
-  ZE: () => j,
+  ZE: () => k,
   _G: () => y,
   _O: () => T,
   _y: () => g,
@@ -50,7 +50,7 @@ function f(e, t) {
   try {
     let n = d[t.premiumType];
     if (null == n) return u.warn("Cannot find the corresponding SKU to the user's premium type ".concat(t.premiumType)), !1;
-    let r = V[n];
+    let r = F[n];
     if (null == r) return u.warn("Cannot find the corresponding product catalog entry to the user's SKU ".concat(n, " and premium type ").concat(t.premiumType)), !1;
     return r.skuFeatures.includes(e)
   } catch (e) {
@@ -86,17 +86,17 @@ let _ = new p(r.q.ANIMATED_EMOJIS),
   L = new p(r.q.CUSTOM_NOTIFICATION_SOUNDS),
   x = new p("fancyVoiceChannelReactions"),
   M = new p("installPremiumApplications"),
-  j = new p("redeemPremiumPerks"),
-  k = new p(r.q.VIDEO_FILTER_ASSETS);
+  k = new p("redeemPremiumPerks"),
+  j = new p(r.q.VIDEO_FILTER_ASSETS);
 new a.Z(r.q.INCREASED_FILE_UPLOAD_SIZE, o.h);
 let U = new p(r.q.INCREASED_GUILD_LIMIT),
   G = new p(r.q.INCREASED_MESSAGE_LENGTH),
   B = new p("increasedVideoUploadQuality"),
-  F = new p("uploadLargeFiles"),
-  V = Object.freeze({
-    [c.Si.TIER_0]: new l.Z(c.Si.TIER_0, [_, h, m, S, k, B, F, A]),
-    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [_, h, b, y, S, R, D, x, B, F, A]),
-    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [_, h, m, g, E, b, y, O, S, I, C, R, P, D, w, x, M, j, k, U, G, B, F, A, T, L, v, N])
+  V = new p("uploadLargeFiles"),
+  F = Object.freeze({
+    [c.Si.TIER_0]: new l.Z(c.Si.TIER_0, [_, h, m, S, j, B, V, A]),
+    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [_, h, b, y, S, R, D, x, B, V, A]),
+    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [_, h, m, g, E, b, y, O, S, I, C, R, P, D, w, x, M, k, j, U, G, B, V, A, T, L, v, N])
   });
 
 function Z(e, t) {

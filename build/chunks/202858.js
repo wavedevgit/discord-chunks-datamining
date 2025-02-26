@@ -1,30 +1,30 @@
-/** Chunk was on 21863 **/
-r.d(t, {
-  Yn: () => y,
+/** Chunk was on 53485 **/
+n.d(t, {
+  Yn: () => g,
   ZP: () => p
-}), r(411104), r(47120);
-var n = r(200651),
-  i = r(192379),
-  o = r(283693),
-  l = r(481060),
-  c = r(816814),
-  a = r(981631),
-  s = r(388032);
+}), n(411104), n(47120);
+var r = n(200651),
+  i = n(192379),
+  s = n(283693),
+  a = n(481060),
+  l = n(816814),
+  o = n(981631),
+  c = n(388032);
 
 function d(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
@@ -32,74 +32,74 @@ function d(e) {
 
 function u(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e) {
+function m(e) {
   var {
     onError: t,
-    onSuccess: r,
-    PasswordConfirm: l
-  } = e, b = function(e, t) {
+    onSuccess: n,
+    PasswordConfirm: a
+  } = e, m = function(e, t) {
     if (null == e) return {};
-    var r, n, i = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var r, n, i = {},
-        o = Object.keys(e);
-      for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      var n, r, i = {},
+        s = Object.keys(e);
+      for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var s = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["onError", "onSuccess", "PasswordConfirm"]);
-  let [y, p] = i.useState("");
-  return (0, n.jsx)(l, u(d({}, b), {
-    handleSubmit: e => c.Z.enableMFAStart(e),
+  let [g, p] = i.useState("");
+  return (0, r.jsx)(a, u(d({}, m), {
+    handleSubmit: e => l.Z.enableMFAStart(e),
     onError: e => {
-      ("object" == typeof e && null != e && (0, o.nr)(e, "code") && "number" == typeof e.code ? e.code : 0) === a.evJ.MFA_INVALID_SECRET ? (r(y), b.onClose()) : t(e)
+      ("object" == typeof e && null != e && (0, s.nr)(e, "code") && "number" == typeof e.code ? e.code : 0) === o.evJ.MFA_INVALID_SECRET ? (n(g), m.onClose()) : t(e)
     },
     onPasswordChange: p,
-    title: s.NW.string(s.t.cDgKtb),
-    actionText: s.NW.string(s.t["3PatS0"]),
-    skipErrorMsgAbortCode: a.evJ.MFA_INVALID_SECRET
+    title: c.NW.string(c.t.cDgKtb),
+    actionText: c.NW.string(c.t["3PatS0"]),
+    skipErrorMsgAbortCode: o.evJ.MFA_INVALID_SECRET
   }))
 }
 
-function y() {
+function g() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
   return new Promise(t => {
-    (0, l.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([r.e("76540"), r.e("26660")]).then(r.bind(r, 628908));
-      return r => (0, n.jsx)(t, u(d({}, r), {
+      } = await Promise.all([n.e("76540"), n.e("26660")]).then(n.bind(n, 628908));
+      return n => (0, r.jsx)(t, u(d({}, n), {
         isTotp: e
       }))
     }, {
       onCloseCallback: t,
-      onCloseRequest: a.VqG
+      onCloseRequest: o.VqG
     })
   })
 }
 let p = {
   enableMFA: async function() {
     let e = await new Promise((e, t) => {
-      (0, l.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let {
           default: i
-        } = await r.e("24642").then(r.bind(r, 279837));
-        return r => (0, n.jsx)(b, u(d({}, r), {
+        } = await n.e("24642").then(n.bind(n, 279837));
+        return n => (0, r.jsx)(m, u(d({}, n), {
           onSuccess: e,
           onError: t,
           PasswordConfirm: i
@@ -107,15 +107,15 @@ let p = {
       })
     });
     await new Promise(t => {
-      (0, l.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let {
           default: i
-        } = await Promise.all([r.e("62729"), r.e("23746")]).then(r.bind(r, 837651));
-        return r => (0, n.jsx)(i, u(d({}, r), {
+        } = await Promise.all([n.e("62729"), n.e("23746")]).then(n.bind(n, 837651));
+        return n => (0, r.jsx)(i, u(d({}, n), {
           password: e,
           handleEnableMFASuccess: t
         }))
       })
-    }), await y()
+    }), await g()
   }
 }

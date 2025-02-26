@@ -96,7 +96,7 @@ let M = {
     [y]: l.G,
     [O]: a.X
   },
-  j = e => ({
+  k = e => ({
     name: "name",
     id: N,
     title: () => p.NW.string(p.t.vyuULS),
@@ -104,7 +104,7 @@ let M = {
     getClassNameForLayout: e => ["modalUS", "modalInternational", "modalUSWithName", "modalInternationalWithName", "settingsUSMobile", "settingsInternationalMobile", "settingsInternationalWithoutNameMobile"].includes(e) ? _.width100 : _.width60,
     renderInput: e => (0, i.jsx)(c.oil, m({}, e))
   }),
-  k = e => ({
+  j = e => ({
     name: "country",
     id: A,
     title: () => p.NW.string(p.t.eDdrAA),
@@ -177,7 +177,7 @@ let M = {
     },
     renderInput: e => (0, i.jsx)(c.oil, m({}, e))
   }),
-  F = e => {
+  V = e => {
     let t, n;
     switch (e) {
       case y:
@@ -215,7 +215,7 @@ let M = {
       renderInput: e => (0, i.jsx)(c.oil, m({}, e))
     }
   },
-  V = e => {
+  F = e => {
     let t;
     switch (e) {
       case y:
@@ -274,81 +274,81 @@ let M = {
   },
   Z = {
     modalUS: [
-      [k],
+      [j],
       [U],
       [G],
       [B],
-      [V, F]
+      [F, V]
     ],
     modalInternational: [
-      [k],
+      [j],
       [U],
       [G],
       [B],
-      [V],
-      [F]
+      [F],
+      [V]
     ],
     modalUSWithName: [
-      [k],
       [j],
+      [k],
       [U],
       [G],
       [B],
-      [V, F]
+      [F, V]
     ],
     modalInternationalWithName: [
-      [k],
       [j],
+      [k],
       [U],
       [G],
       [B],
-      [V],
-      [F]
+      [F],
+      [V]
     ],
     settingsUS: [
-      [j],
+      [k],
       [U, G],
-      [B, V, F],
-      [k]
+      [B, F, V],
+      [j]
     ],
     settingsUSMobile: [
-      [j],
+      [k],
       [U],
       [G],
       [B],
-      [V],
       [F],
-      [k]
+      [V],
+      [j]
     ],
     settingsInternational: [
-      [j],
+      [k],
       [U, G],
       [B],
-      [V, F],
-      [k]
+      [F, V],
+      [j]
     ],
     settingsInternationalMobile: [
-      [j],
+      [k],
       [U],
       [G],
       [B],
-      [V],
       [F],
-      [k]
+      [V],
+      [j]
     ],
     settingsInternationalWithoutName: [
       [U, G],
       [B],
-      [V, F],
-      [k]
+      [F, V],
+      [j]
     ],
     settingsInternationalWithoutNameMobile: [
       [U],
       [G],
       [B],
-      [V],
       [F],
-      [k]
+      [V],
+      [j]
     ]
   };
 class H extends(r = o.PureComponent) {

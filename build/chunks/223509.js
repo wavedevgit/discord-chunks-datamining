@@ -31,13 +31,13 @@ var r, i, o = n(754793),
   L = 10,
   x = 11,
   M = 12,
-  j = 13,
-  k = 14,
+  k = 13,
+  j = 14,
   U = 15,
   G = 16,
   B = 17,
-  F = 18,
-  V = 19,
+  V = 18,
+  F = 19,
   Z = 20,
   H = 21,
   W = 22,
@@ -114,11 +114,11 @@ function e_(e, t) {
     eN = new o.Buf8(4),
     eA = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15];
   if (!e || !e.state || !e.output || !e.input && 0 !== e.avail_in) return v;
-  (n = e.state).mode === M && (n.mode = j), en = e.next_out, i = e.output, eo = e.avail_out, et = e.next_in, r = e.input, er = e.avail_in, ea = n.hold, es = n.bits, el = er, ec = eo, eO = m;
+  (n = e.state).mode === M && (n.mode = k), en = e.next_out, i = e.output, eo = e.avail_out, et = e.next_in, r = e.input, er = e.avail_in, ea = n.hold, es = n.bits, el = er, ec = eo, eO = m;
   r: for (;;) switch (n.mode) {
     case I:
       if (0 === n.wrap) {
-        n.mode = j;
+        n.mode = k;
         break
       }
       for (; es < 16;) {
@@ -223,7 +223,7 @@ function e_(e, t) {
       e.adler = n.check = 1, n.mode = M;
     case M:
       if (t === _ || t === h) break r;
-    case j:
+    case k:
       if (n.last) {
         ea >>>= 7 & es, es -= 7 & es, n.mode = Q;
         break
@@ -234,7 +234,7 @@ function e_(e, t) {
       }
       switch (n.last = 1 & ea, es -= 1, 3 & (ea >>>= 1)) {
         case 0:
-          n.mode = k;
+          n.mode = j;
           break;
         case 1:
           if (ef(n), n.mode = Z, t === h) {
@@ -250,7 +250,7 @@ function e_(e, t) {
       }
       ea >>>= 2, es -= 2;
       break;
-    case k:
+    case j:
       for (ea >>>= 7 & es, es -= 7 & es; es < 32;) {
         if (0 === er) break r;
         er--, ea += r[et++] << es, es += 8
@@ -279,8 +279,8 @@ function e_(e, t) {
         e.msg = "too many length or distance symbols", n.mode = $;
         break
       }
-      n.have = 0, n.mode = F;
-    case F:
+      n.have = 0, n.mode = V;
+    case V:
       for (; n.have < n.ncode;) {
         for (; es < 3;) {
           if (0 === er) break r;
@@ -295,8 +295,8 @@ function e_(e, t) {
         e.msg = "invalid code lengths set", n.mode = $;
         break
       }
-      n.have = 0, n.mode = V;
-    case V:
+      n.have = 0, n.mode = F;
+    case F:
       for (; n.have < n.nlen + n.ndist;) {
         for (; eh = (eT = n.lencode[ea & (1 << n.lenbits) - 1]) >>> 24, em = eT >>> 16 & 255, eg = 65535 & eT, !(eh <= es);) {
           if (0 === er) break r;

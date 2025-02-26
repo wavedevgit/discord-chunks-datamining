@@ -111,7 +111,7 @@ function f(e) {
     let n = u(c(t));
     null != n && D(n)
   }, [t, x, I, D, f, p]);
-  let j = r.useCallback(e => {
+  let k = r.useCallback(e => {
     O.current && null == e && M(!0)
   }, []);
   r.useEffect(() => {
@@ -119,7 +119,7 @@ function f(e) {
   }, [N, S]), r.useEffect(() => {
     I && (C || w(f, p), R(!1))
   }, [f, p]);
-  let k = r.useCallback(e => {
+  let j = r.useCallback(e => {
       if (!O.current) return;
       if (!y && s.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
         e.preventDefault(), e.stopPropagation(), L();
@@ -154,17 +154,17 @@ function f(e) {
       }
     }, []),
     B = r.useMemo(() => Math.max(...n), [n]),
-    F = r.useCallback(() => ({
+    V = r.useCallback(() => ({
       role: "grid",
       "aria-rowcount": n.length,
       "aria-colcount": B,
       tabIndex: I && E ? -1 : 0,
       "data-ref-id": t,
-      onKeyDown: k,
+      onKeyDown: j,
       onFocus: U,
       onBlur: G
-    }), [n.length, B, I, E, t, k, U, G]),
-    V = r.useCallback((e, n) => {
+    }), [n.length, B, I, E, t, j, U, G]),
+    F = r.useCallback((e, n) => {
       let r = {
         role: "gridcell",
         "aria-rowindex": n + 1,
@@ -173,18 +173,18 @@ function f(e) {
         tabIndex: E && e === f && n === p ? 0 : -1,
         onFocus: P.get("".concat(e, ",").concat(n))
       };
-      return e === f && n === p && (r.ref = j), r
-    }, [t, E, f, p, P, j]),
+      return e === f && n === p && (r.ref = k), r
+    }, [t, E, f, p, P, k]),
     Z = r.useCallback(e => ({
       role: "row",
       "aria-rowindex": e + 1
     }), []);
   return r.useMemo(() => ({
     dispatch: g,
-    getContainerProps: F,
-    getItemProps: V,
+    getContainerProps: V,
+    getItemProps: F,
     getRowProps: Z
-  }), [g, F, V, Z])
+  }), [g, V, F, Z])
 }
 
 function p(e) {

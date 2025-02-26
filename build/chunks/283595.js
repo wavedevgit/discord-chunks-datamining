@@ -128,7 +128,7 @@ function M(e) {
   T[(0, d.Tu)(t, n)] = r, A()
 }
 
-function j(e) {
+function k(e) {
   let {
     applicationId: t,
     branchId: n
@@ -137,7 +137,7 @@ function j(e) {
   I[t] = n, C()
 }
 
-function k(e) {
+function j(e) {
   let {
     libraryApplications: t
   } = e;
@@ -149,7 +149,7 @@ function U() {
 }
 
 function G(e) {
-  let t = F();
+  let t = V();
   return Object.keys(t).forEach(n => {
     e(t[n]) || delete t[n]
   }), t
@@ -161,10 +161,10 @@ function B(e, t) {
   return null !== (n = y[r]) && void 0 !== n ? n : O[r]
 }
 
-function F() {
+function V() {
   return h({}, O, y)
 }
-class V extends(r = a.ZP.Store) {
+class F extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(f.default);
     let e = s.K.get(E);
@@ -174,10 +174,10 @@ class V extends(r = a.ZP.Store) {
     return G(e => !e.isHidden())
   }
   getAllLibraryApplications() {
-    return F()
+    return V()
   }
   hasLibraryApplication() {
-    return Object.keys(F()).length > 0
+    return Object.keys(V()).length > 0
   }
   hasApplication(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
@@ -198,7 +198,7 @@ class V extends(r = a.ZP.Store) {
         o = null !== (r = y[i]) && void 0 !== r ? r : O[i];
       if (null != o && (0, d.Je)(o) && (t || !o.isHidden())) return o
     }
-    let i = F();
+    let i = V();
     for (let n in i)
       if (i[n].id === e) {
         let e = i[n];
@@ -215,7 +215,7 @@ class V extends(r = a.ZP.Store) {
     return b
   }
   get entitledBranchIds() {
-    return o()(F()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
+    return o()(V()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
   }
   get hasRemovedLibraryApplicationThisSession() {
     return N
@@ -226,8 +226,8 @@ class V extends(r = a.ZP.Store) {
     })
   }
 }
-_(V, "displayName", "LibraryApplicationStore");
-let Z = new V(l.Z, {
+_(F, "displayName", "LibraryApplicationStore");
+let Z = new F(l.Z, {
   LOGOUT: P,
   LIBRARY_FETCH_SUCCESS: D,
   SKU_PURCHASE_SUCCESS: w,
@@ -235,7 +235,7 @@ let Z = new V(l.Z, {
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: x,
   LIBRARY_APPLICATION_UPDATE: x,
   LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE: M,
-  LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: j,
-  LIBRARY_APPLICATIONS_TEST_MODE_ENABLED: k,
+  LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: k,
+  LIBRARY_APPLICATIONS_TEST_MODE_ENABLED: j,
   DEVELOPER_TEST_MODE_RESET: U
 })

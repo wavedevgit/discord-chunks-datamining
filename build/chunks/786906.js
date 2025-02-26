@@ -24,7 +24,7 @@ var i = n(200651),
   S = n(388032),
   x = n(673463);
 
-function Z(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,7 +32,7 @@ function Z(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class E extends r.Component {
+class j extends r.Component {
   componentDidUpdate() {
     this.props.locked && this.state.showOpacitySlider && this.setState({
       showOpacitySlider: !1
@@ -105,9 +105,9 @@ class E extends r.Component {
     })
   }
   constructor(...e) {
-    super(...e), Z(this, "state", {
+    super(...e), E(this, "state", {
       showOpacitySlider: !1
-    }), Z(this, "handleClickCall", e => {
+    }), E(this, "handleClickCall", e => {
       let {
         channel: t,
         userIsInChannelCall: n,
@@ -118,26 +118,26 @@ class E extends r.Component {
         let n = !i && !e.shiftKey;
         c.Z.callPrivateChannel(t.id, n)
       }
-    }), Z(this, "handleOpenOpacitySettings", () => {
+    }), E(this, "handleOpenOpacitySettings", () => {
       let {
         pinned: e
       } = this.props;
       this.setState({
         showOpacitySlider: !0
       }), e && c.Z.setPreviewInGameMode(!0)
-    }), Z(this, "handleCloseOpacitySettings", () => {
+    }), E(this, "handleCloseOpacitySettings", () => {
       let {
         pinned: e
       } = this.props;
       this.setState({
         showOpacitySlider: !1
       }), e && c.Z.setPreviewInGameMode(!1)
-    }), Z(this, "handleMouseDown", e => {
+    }), E(this, "handleMouseDown", e => {
       let {
         onMouseDown: t
       } = this.props;
       null != t && t(e)
-    }), Z(this, "renderWidgetButtons", () => {
+    }), E(this, "renderWidgetButtons", () => {
       let {
         locked: e,
         handlePin: t,
@@ -185,14 +185,14 @@ function N(e) {
     s = (0, l.e7)([g.Z], () => g.Z.isCallActive(t.id)),
     a = (0, u.ZP)(t),
     c = (0, l.e7)([_.Z], () => !!t.isDM() && null != t.getRecipientId() && _.Z.isBlocked(t.getRecipientId()));
-  return (0, i.jsx)(E, function(e) {
+  return (0, i.jsx)(j, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
       "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), i.forEach(function(t) {
-        Z(e, t, n[t])
+        E(e, t, n[t])
       })
     }
     return e

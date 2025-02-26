@@ -104,7 +104,7 @@ function M(e) {
   g = _({}, g), delete g[e.relationship.id], null != E[e.relationship.id] && (E = _({}, E), delete E[e.relationship.id]), null != v[e.relationship.id] && (v = _({}, v), delete v[e.relationship.id]), null != I[e.relationship.id] && (I = _({}, I), delete I[e.relationship.id]), e.relationship.userIgnored || (O.delete(e.relationship.id), S.delete(e.relationship.id)), b.delete(e.relationship.id), y.delete(e.relationship.id), D()
 }
 
-function j(e) {
+function k(e) {
   let {
     relationship: t
   } = e;
@@ -113,7 +113,7 @@ function j(e) {
   }), null == t.since ? delete v[t.id] : v[t.id] = t.since, null == t.nickname ? delete E[t.id] : E[t.id] = t.nickname, t.isSpamRequest ? b.add(t.id) : b.delete(t.id), t.isStrangerRequest ? y.add(t.id) : y.delete(t.id), null == t.originApplicationId ? delete I[t.id] : I[t.id] = t.originApplicationId, t.userIgnored ? (O.add(t.id), t.type === f.OGo.PENDING_INCOMING && S.add(t.id)) : (O.delete(t.id), S.delete(t.id)), D()
 }
 
-function k(e) {
+function j(e) {
   g = _({}, g), u.default.keys(g).forEach(e => {
     g[e] === f.OGo.PENDING_INCOMING && (delete g[e], b.delete(e), S.delete(e), y.delete(e))
   }), D()
@@ -218,6 +218,6 @@ let G = new U(s.Z, {
   OVERLAY_INITIALIZE: L,
   RELATIONSHIP_ADD: x,
   RELATIONSHIP_REMOVE: M,
-  RELATIONSHIP_UPDATE: j,
-  RELATIONSHIP_PENDING_INCOMING_REMOVED: k
+  RELATIONSHIP_UPDATE: k,
+  RELATIONSHIP_PENDING_INCOMING_REMOVED: j
 })

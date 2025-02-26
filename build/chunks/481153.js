@@ -14,19 +14,19 @@ var r = n(200651),
   h = n(479446),
   p = n(981632),
   g = n(594174),
-  _ = n(509545),
-  m = n(55563),
+  m = n(509545),
+  _ = n(55563),
   f = n(296848),
   b = n(981631),
   N = n(474936),
   x = n(388032),
   v = n(911252),
-  E = n(968693),
-  I = n(455812);
-let O = l.ZP.connectStores([m.Z, c.Z, _.Z, g.default], e => {
+  I = n(968693),
+  E = n(455812);
+let O = l.ZP.connectStores([_.Z, c.Z, m.Z, g.default], e => {
   let {
     giftCode: t
-  } = e, n = m.Z.get(t.skuId), {
+  } = e, n = _.Z.get(t.skuId), {
     subscriptionPlanId: r
   } = t;
   return {
@@ -43,10 +43,10 @@ let O = l.ZP.connectStores([m.Z, c.Z, _.Z, g.default], e => {
     sku: l,
     application: c,
     subscriptionPlan: g
-  } = e, _ = null == o ? x.NW.string(x.t.lTGZAg) : x.NW.formatToPlainString(x.t.TjWdPT, {
+  } = e, m = null == o ? x.NW.string(x.t.lTGZAg) : x.NW.formatToPlainString(x.t.TjWdPT, {
     username: o.username
-  }), m = l.name;
-  return null != g && (m = x.NW.formatToPlainString(g.interval === N.rV.MONTH ? x.t.CTpcCQ : x.t.rgPWGx, {
+  }), _ = l.name;
+  return null != g && (_ = x.NW.formatToPlainString(g.interval === N.rV.MONTH ? x.t.CTpcCQ : x.t.rgPWGx, {
     skuName: l.name,
     intervalCount: g.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
@@ -57,7 +57,7 @@ let O = l.ZP.connectStores([m.Z, c.Z, _.Z, g.default], e => {
     }) : (0, r.jsx)(u.qE, {
       src: null != o ? o.getAvatarURL(void 0, 100) : null,
       size: s.EFr.DEPRECATED_SIZE_100,
-      className: I.marginBottom20
+      className: E.marginBottom20
     }), null != t ? (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
         children: x.NW.string(x.t.mDFGFh)
@@ -66,15 +66,15 @@ let O = l.ZP.connectStores([m.Z, c.Z, _.Z, g.default], e => {
       })]
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: _
+        children: m
       }), (0, r.jsxs)(u.Dx, {
-        className: a()(I.marginTop8, E.flexCenter),
+        className: a()(E.marginTop8, I.flexCenter),
         children: [l.productLine !== b.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
           size: d.Z.Sizes.MEDIUM,
           className: v.applicationIcon,
           game: c,
           skuId: l.id
-        }), m]
+        }), _]
       })]
     })]
   })

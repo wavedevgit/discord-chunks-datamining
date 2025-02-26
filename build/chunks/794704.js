@@ -1,4 +1,4 @@
-/** Chunk was on 624 **/
+/** Chunk was on 53485 **/
 n.d(t, {
   Z: () => eC
 }), n(266796), n(47120);
@@ -95,19 +95,19 @@ let eo = ec(null);
 
 function ec(e) {
   var t;
-  let n = Y.Z.getNotificationPositionMode(),
+  let n = Y.default.getNotificationPositionMode(),
     r = n !== Q._vf.DISABLED,
     i = H.ZP.getOverlayKeybind(),
     s = H.ZP.getOverlayChatKeybind();
   return {
-    enabled: z.ZP.enabled,
+    enabled: z.default.enabled,
     notifications_enabled: r,
     notifications_position: r ? n : null,
-    text_notifications_mode: Y.Z.getTextChatNotificationMode(),
+    text_notifications_mode: Y.default.getTextChatNotificationMode(),
     hotkey: null != i ? (0, X.BB)(i.shortcut) : null,
     text_activation_hotkey: null != s ? (0, X.BB)(s.shortcut) : null,
-    text_opacity_slider: Y.Z.getTextWidgetOpacity(),
-    old_enabled: null !== (t = null == e ? void 0 : e.enabled) && void 0 !== t ? t : z.ZP.enabled
+    text_opacity_slider: Y.default.getTextWidgetOpacity(),
+    old_enabled: null !== (t = null == e ? void 0 : e.enabled) && void 0 !== t ? t : z.default.enabled
   }
 }
 
@@ -275,7 +275,7 @@ function eh(e) {
     x(m), T(u)
   }, [m, u]);
   let w = (0, C.$1)(),
-    k = !(0, J.VS)(),
+    k = !(0, J.supportsOutOfProcess)(),
     {
       legacyEnabled: W,
       oopEnabled: L
@@ -622,7 +622,7 @@ function ex() {
   let [e, t] = i.useState(!1), {
     oopEnabled: n,
     legacyEnabled: s
-  } = (0, g.cj)([D.default], () => D.default.getGlobalEnabledStatus()), a = !(0, J.VS)(), l = (0, g.Wu)([S.ZP], () => S.ZP.getGamesSeen(!0)), o = (0, O.Z)(l.map(e => e.id)), c = (e, t) => {
+  } = (0, g.cj)([D.default], () => D.default.getGlobalEnabledStatus()), a = !(0, J.supportsOutOfProcess)(), l = (0, g.Wu)([S.ZP], () => S.ZP.getGamesSeen(!0)), o = (0, O.Z)(l.map(e => e.id)), c = (e, t) => {
     var r, i;
     ep(t);
     let a = !e && n;
@@ -695,7 +695,7 @@ function ex() {
 function e_() {
   let e = (0, g.e7)([H.ZP], () => H.ZP.getOverlayKeybind()),
     t = (0, C.$1)(),
-    n = !(0, J.VS)(),
+    n = !(0, J.supportsOutOfProcess)(),
     [i, s] = (0, g.Wu)([S.ZP], () => [S.ZP.canShowAdminWarning, S.ZP.getVisibleGame()], []),
     a = null != s && s.elevated && i;
   return (0, r.jsx)(ed, {
@@ -826,14 +826,14 @@ function eC(e) {
     textChatNotificationMode: u,
     disableClickableRegions: p,
     shouldShowKeybindIndicators: f
-  } = (0, g.cj)([Y.Z], () => ({
-    avatarSizeMode: Y.Z.getAvatarSizeMode(),
-    displayNameMode: Y.Z.getDisplayNameMode(),
-    displayUserMode: Y.Z.getDisplayUserMode(),
-    notificationPositionMode: Y.Z.getNotificationPositionMode(),
-    textChatNotificationMode: Y.Z.getTextChatNotificationMode(),
-    disableClickableRegions: Y.Z.disableClickableRegions,
-    shouldShowKeybindIndicators: Y.Z.showKeybindIndicators
+  } = (0, g.cj)([Y.default], () => ({
+    avatarSizeMode: Y.default.getAvatarSizeMode(),
+    displayNameMode: Y.default.getDisplayNameMode(),
+    displayUserMode: Y.default.getDisplayUserMode(),
+    notificationPositionMode: Y.default.getNotificationPositionMode(),
+    textChatNotificationMode: Y.default.getTextChatNotificationMode(),
+    disableClickableRegions: Y.default.disableClickableRegions,
+    shouldShowKeybindIndicators: Y.default.showKeybindIndicators
   })), b = (0, P.o4)("user_settings").overlayV3UI, x = (0, g.e7)([F.default], () => F.default.getCurrentUser()), _ = (0, R.Z)({
     location: "overlay_user_settings"
   });

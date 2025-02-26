@@ -105,10 +105,10 @@ function P(e) {
   } = (0, E.Xo)(), {
     live: x,
     stream: M
-  } = (0, m.Z)(t.id), j = (0, g.Z)(n === b.n_.STATUS ? t.id : null, "UserProfileInteractionToolbar"), k = !o && w !== b.y0.FULL_SIZE && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === x.length && null == M && null == j).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [U, G] = i.useState(k);
+  } = (0, m.Z)(t.id), k = (0, g.Z)(n === b.n_.STATUS ? t.id : null, "UserProfileInteractionToolbar"), j = !o && w !== b.y0.FULL_SIZE && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === x.length && null == M && null == k).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [U, G] = i.useState(j);
   if (i.useEffect(() => {
-      U && !k && G(!1)
-    }, [U, k]), t.bot || P || !D) return null;
+      U && !j && G(!1)
+    }, [U, j]), t.bot || P || !D) return null;
   let B = () => {
       n === b.n_.AVATAR ? A({
         action: "PRESS_REACT_AVATAR"
@@ -122,7 +122,7 @@ function P(e) {
         interactionSourceId: T
       }), w === b.y0.BITE_SIZE && (0, p.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
-    F = () => {
+    V = () => {
       n === b.n_.AVATAR ? A({
         action: "PRESS_REPLY_AVATAR"
       }) : n === b.n_.STATUS ? A({
@@ -135,7 +135,7 @@ function P(e) {
         interactionSourceId: T
       }), w === b.y0.BITE_SIZE && (0, p.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
-    V = e => {
+    F = e => {
       e.animationName === (0, s.get)(O, "fadeInAndOut") && G(!1)
     };
   return (0, r.jsxs)(f.ZP, {
@@ -147,7 +147,7 @@ function P(e) {
       [O.avatarPopover]: n === b.n_.AVATAR,
       [O.activityPopover]: n === b.n_.ACTIVITY
     }),
-    onAnimationEnd: U ? V : void 0,
+    onAnimationEnd: U ? F : void 0,
     children: [(0, r.jsx)(d.DY3, {
       text: y.NW.string(y.t.nhaI4e),
       shouldShow: o,
@@ -171,7 +171,7 @@ function P(e) {
       delay: 0,
       "aria-label": !1,
       children: (0, r.jsx)(f.zx, {
-        onClick: F,
+        onClick: V,
         className: O.button,
         "aria-label": R(b.P.REPLY, n),
         "aria-haspopup": "dialog",

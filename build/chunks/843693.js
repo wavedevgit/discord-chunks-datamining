@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => j,
+  ZP: () => k,
   wU: () => w
 }), n(47120);
 var r, i = n(442837),
@@ -236,4 +236,4 @@ let M = new x(s.Z, {
     POGGERMODE_UPDATE_MESSAGE_COMBO: D,
     MESSAGE_CREATE: L
   }),
-  j = M
+  k = M

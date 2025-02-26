@@ -3,10 +3,10 @@
 n.d(t, {
   DH: () => G,
   Ks: () => U,
-  Ws: () => F,
-  g2: () => j,
+  Ws: () => V,
+  g2: () => k,
   hf: () => x,
-  k3: () => k,
+  k3: () => j,
   qN: () => B,
   tP: () => M
 }), n(47120);
@@ -107,7 +107,7 @@ function M(e) {
   let n = (0, a.Wu)([u.ZP], () => u.ZP.getGamesSeen(!1)).find(t => (null == t ? void 0 : t.id) === e);
   return null != n && Date.now() - 2592e7 <= (null !== (t = n.lastLaunched) && void 0 !== t ? t : 0)
 }
-let j = e => {
+let k = e => {
     let {
       useReducedMotion: t,
       className: n
@@ -141,7 +141,7 @@ let j = e => {
       }
     }
   },
-  k = (e, t) => {
+  j = (e, t) => {
     let {
       message: n,
       xboxURL: i
@@ -187,7 +187,7 @@ function U(e) {
       analyticsLocations: [],
       analyticsSource: l.Z.QUEST_HOME_PAGE
     })
-  }, []), j = null === (t = (0, h.WD)()) || void 0 === t ? void 0 : t.getId(), k = n.id === A.V;
+  }, []), k = null === (t = (0, h.WD)()) || void 0 === t ? void 0 : t.getId(), j = n.id === A.V;
   return i.useMemo(() => {
     if (null != P) return {
       text: R.NW.string(R.t.k4z4en),
@@ -197,7 +197,7 @@ function U(e) {
     switch (o) {
       case g.OH.UNACCEPTED:
         let e = R.NW.string(R.t.kUQLMD);
-        E && k ? e = R.NW.string(R.t.CwGuEx) : E && (e = R.NW.string(R.t.umdNio));
+        E && j ? e = R.NW.string(R.t.CwGuEx) : E && (e = R.NW.string(R.t.umdNio));
         let t = E ? _.jZ.START_QUEST : _.jZ.ACCEPT_QUEST;
         return {
           text: e, tooltipText: e, onClick: () => {
@@ -221,7 +221,7 @@ function U(e) {
             ctaContent: _.jZ.CONNECT_CONSOLE,
             position: u,
             rowIndex: f,
-            impressionId: j
+            impressionId: k
           })
         };
         if (E) return {
@@ -271,7 +271,7 @@ function U(e) {
           text: R.NW.string(R.t.bAGFz8)
         })
     }
-  }, [P, o, E, y, p, v, a, n, s, u, f, j, S, w, k, M])
+  }, [P, o, E, y, p, v, a, n, s, u, f, k, S, w, j, M])
 }
 
 function G() {
@@ -301,7 +301,7 @@ function B(e) {
   return i && !d && !u && !o
 }
 
-function F(e) {
+function V(e) {
   let {
     location: t
   } = e, n = B({

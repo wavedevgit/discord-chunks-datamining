@@ -1,18 +1,18 @@
-/** Chunk was on 20565 **/
+/** Chunk was on 53485 **/
 n.d(t, {
-  f: () => s
+  f: () => a
 }), n(47120);
 var r = n(192379),
-  a = n(751648),
-  i = n(388032);
+  i = n(751648),
+  s = n(388032);
 
-function s() {
-  let [e, t] = (0, r.useState)(""), [n, s] = (0, r.useState)([]), [c, l] = (0, r.useState)(null), [o, d] = (0, r.useState)(!1);
+function a() {
+  let [e, t] = (0, r.useState)(""), [n, a] = (0, r.useState)([]), [l, o] = (0, r.useState)(null), [c, d] = (0, r.useState)(!1);
   return (0, r.useEffect)(() => {
-    if (null != c) {
-      t(i.NW.format(i.t["7gHWra"], {
+    if (null != l) {
+      t(s.NW.format(s.t["7gHWra"], {
         amount: "1 orb",
-        errorMessage: c.message
+        errorMessage: l.message
       }));
       return
     }
@@ -21,29 +21,29 @@ function s() {
         var t;
         return null === (t = e.sku) || void 0 === t ? void 0 : t.name
       });
-      t(i.NW.format(i.t.JxNFam, {
+      t(s.NW.format(s.t.JxNFam, {
         amountDescription: "1 orb",
         redeemedItemDescription: "".concat(1 === e.length ? "SKU" : "SKUs", ": ").concat(e.join(", "), ". Entitlement ").concat(1 === n.length ? "ID" : "IDs", ": ").concat(n.map(e => e.id).join(", "))
       }));
       return
     }
     t("")
-  }, [n, c]), {
+  }, [n, l]), {
     entitlements: n,
-    error: c,
-    isSubmitting: o,
+    error: l,
+    isSubmitting: c,
     responseMessage: e,
     redeemVirtualCurrency: function(e, t) {
-      return (0, a.df)({
+      return (0, i.df)({
         skuId: e,
         onRedeemStart: () => {
           d(!0)
         },
         onRedeemSucceed: e => {
-          s(e), d(!1), null == t || t()
+          a(e), d(!1), null == t || t()
         },
         onRedeemFail: e => {
-          l(e), d(!1)
+          o(e), d(!1)
         }
       })
     }

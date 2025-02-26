@@ -37,13 +37,13 @@ var r = n(200651),
   L = n(328456),
   x = n(624377),
   M = n(530618),
-  j = n(141011),
-  k = n(372654),
+  k = n(141011),
+  j = n(372654),
   U = n(616066),
   G = n(216541),
   B = n(58201),
-  F = n(302800),
-  V = n(215023),
+  V = n(302800),
+  F = n(215023),
   Z = n(474936),
   H = n(388032),
   W = n(945610);
@@ -203,7 +203,7 @@ let Q = 880,
     })
   },
   $ = e => {
-    let t = (0, F.v)(e.product.categorySkuId);
+    let t = (0, V.v)(e.product.categorySkuId);
     return null != t ? (0, r.jsx)(J, q(K({}, e), {
       displayOptions: t
     })) : (0, r.jsx)(X, K({}, e))
@@ -226,7 +226,7 @@ let Q = 880,
       return null !== (t = null === (e = S.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== t && t
     }), T = i.useMemo(() => {
       if (!b) return;
-      let e = y.type === u.Z.AVATAR_DECORATION ? (0, F.R9)(y.skuId, O) : null;
+      let e = y.type === u.Z.AVATAR_DECORATION ? (0, V.R9)(y.skuId, O) : null;
       return null != e ? I.Z.getProduct(e) : void 0
     }, [b, y.skuId, y.type, O]), {
       confettiColors: N
@@ -245,11 +245,11 @@ let Q = 880,
           className: W.bannerContainer,
           children: [v ? (0, r.jsx)("div", {
             className: W.promotionalBanner
-          }) : (0, r.jsx)(j.Z, {
+          }) : (0, r.jsx)(k.Z, {
             asset: G,
-            size: (0, k.ML)(Q),
+            size: (0, j.ML)(Q),
             className: W.decorationBanner,
-            categoryBannerOverride: (0, V.ZS)(y.categorySkuId)
+            categoryBannerOverride: (0, F.ZS)(y.categorySkuId)
           }), (0, r.jsx)($, {
             product: y,
             pairedProduct: T,
@@ -272,7 +272,7 @@ let Q = 880,
       }), !l && !A && (0, r.jsx)(M.Z, {
         confettiTarget: null != a ? a : R.current,
         confettiCanvas: s,
-        sprites: (0, k.vK)(y.categorySkuId),
+        sprites: (0, j.vK)(y.categorySkuId),
         colors: null == N ? void 0 : N.map(e => e.toHexString())
       })]
     })
@@ -297,12 +297,12 @@ let Q = 880,
     }), {
       firstAvatarDecoration: S,
       firstProfileEffect: I
-    } = (0, L.R)(n), T = (0, A.x6)(n) ? null != S && null != I : null != S || null != I, N = i.useMemo(() => null != l ? l : g ? H.NW.format(new Date < V.a$ ? H.t.BhGU09 : H.t.Jfv5Qk, {
+    } = (0, L.R)(n), T = (0, A.x6)(n) ? null != S && null != I : null != S || null != I, N = i.useMemo(() => null != l ? l : g ? H.NW.format(new Date < F.a$ ? H.t.BhGU09 : H.t.Jfv5Qk, {
       purchased_item: h,
       suggested_item: m
     }) : _ && !p ? H.NW.string(H.t["1xr2SU"]) : H.NW.format(H.t.YNaxMj, {
       itemName: h
-    }), [l, _, p, h, m, g]), C = i.useMemo(() => null != d ? d : g ? H.NW.format(new Date < V.a$ ? H.t["1jBC0t"] : H.t.qSrp39, {
+    }), [l, _, p, h, m, g]), C = i.useMemo(() => null != d ? d : g ? H.NW.format(new Date < F.a$ ? H.t["1jBC0t"] : H.t.qSrp39, {
       purchased_item: h,
       suggested_item: m
     }) : (0, c.EQ)(null == n ? void 0 : n.type).with(u.Z.BUNDLE, () => H.NW.string(H.t.zJPoLy)).with(u.Z.PROFILE_EFFECT, () => H.NW.string(H.t.f9M1YG)).otherwise(() => p && null != b ? b : H.NW.string(H.t["44b50t"])), [d, null == n ? void 0 : n.type, b, p, h, m, g]);
@@ -399,7 +399,7 @@ let Q = 880,
       overrideTitle: l,
       overrideDescription: c,
       shouldShowPromotionalExperience: u
-    } = e, p = (0, d.e7)([T.Z], () => T.Z.purchases), _ = (0, N.o)(n, p), h = (0, B.W)(n, _), m = i.useRef(new o.qA), [g, E] = i.useState(null), v = (0, F.UY)(h.skuId);
+    } = e, p = (0, d.e7)([T.Z], () => T.Z.purchases), _ = (0, N.o)(n, p), h = (0, B.W)(n, _), m = i.useRef(new o.qA), [g, E] = i.useState(null), v = (0, V.UY)(h.skuId);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.O_, {
         ref: E,

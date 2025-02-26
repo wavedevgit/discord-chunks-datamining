@@ -1,4 +1,4 @@
-/** Chunk was on 624 **/
+/** Chunk was on 53485 **/
 n.d(t, {
   Z: () => G
 }), n(266796), n(47120), n(653041);
@@ -405,7 +405,7 @@ class V extends i.PureComponent {
 function G() {
   let e = (0, c.e7)([j.ZP], () => j.ZP.getState()),
     t = (0, c.e7)([E.Z], () => (0, _.Z)(E.Z)),
-    n = (0, c.e7)([C.ZP], () => C.ZP.isSupported()),
+    n = (0, c.e7)([C.default], () => C.default.isSupported()),
     i = (0, N.Go)();
   return (0, r.jsx)(V, {
     keybinds: e,

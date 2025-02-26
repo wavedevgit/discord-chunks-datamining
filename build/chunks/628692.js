@@ -142,8 +142,8 @@ let R = function(e) {
   }), R = i.useRef(null), {
     isPlaying: P,
     playSound: D
-  } = (0, _.Z)(O, I), w = i.useCallback(() => {
-    if (D()) {
+  } = (0, _.Z)(O, I), w = i.useCallback(async () => {
+    if (await D()) {
       var e;
       null === (e = R.current) || void 0 === e || e.addAnimation()
     }

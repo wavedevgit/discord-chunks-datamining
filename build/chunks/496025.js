@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => O
+  Z: () => N
 }), n(47120), n(301563);
 var r = n(200651),
   a = n(192379),
@@ -14,29 +14,29 @@ var r = n(200651),
   m = n(258732),
   h = n(592125),
   x = n(699516),
-  p = n(594174),
-  f = n(55589),
+  f = n(594174),
+  p = n(55589),
   b = n(630388),
   _ = n(98357),
   g = n(432877),
   v = n(246992),
   j = n(397227),
-  C = n(841699);
+  y = n(841699);
 
-function y() {
+function C() {
   var e;
-  let t = (0, s.Wu)([f.Z], () => f.Z.getSortedChannels()[1]),
+  let t = (0, s.Wu)([p.Z], () => p.Z.getSortedChannels()[1]),
     [n, i] = a.useState(t.length > 0 ? t[0].channelId : void 0),
     {
       selectedChannel: l,
       options: _
-    } = (0, s.cj)([h.Z, p.default, x.Z], () => ({
+    } = (0, s.cj)([h.Z, f.default, x.Z], () => ({
       selectedChannel: h.Z.getChannel(n),
       options: t.map(e => {
         let t = h.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, u.F6)(t, p.default, x.Z) : e.channelId
+          label: null != t ? (0, u.F6)(t, f.default, x.Z) : e.channelId
         }
       })
     })),
@@ -46,7 +46,7 @@ function y() {
       let t = (0, b.x9)(null !== (e = l.recipientFlags) && void 0 !== e ? e : 0, o.V.DISMISSED_IN_GAME_MESSAGE_NUX);
       m.Z.updatePrivateChannelRecipientFlags(l.id, t)
     }, [l]),
-    C = null != l && !!l.isPrivate() && (0, b.yE)(null !== (e = l.recipientFlags) && void 0 !== e ? e : 0, o.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+    y = null != l && !!l.isPrivate() && (0, b.yE)(null !== (e = l.recipientFlags) && void 0 !== e ? e : 0, o.V.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/semibold",
@@ -73,13 +73,13 @@ function y() {
         size: c.zxk.Sizes.SMALL,
         onClick: g,
         disabled: null == n,
-        children: C ? "Clear NUX Flag" : "Set NUX Flag"
+        children: y ? "Clear NUX Flag" : "Set NUX Flag"
       })]
     })]
   })
 }
 
-function O() {
+function N() {
   let e = g.ZP.allByCategory(g.zU.MESSAGING).map(e => {
     let [t, n, {
       label: a
@@ -93,9 +93,9 @@ function O() {
     }, t)
   });
   return (0, r.jsxs)("div", {
-    className: l()(C.panel, j.panel),
+    className: l()(y.panel, j.panel),
     children: [e, (0, r.jsx)("div", {
       className: j.divider
-    }), (0, r.jsx)(y, {})]
+    }), (0, r.jsx)(C, {})]
   })
 }

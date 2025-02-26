@@ -45,11 +45,11 @@ let P = new c.Z("ConnectionStore"),
   x = !0,
   M = null;
 
-function j() {
+function k() {
   return S.Wb.isClosed() ? (P.verbose("Socket is reconnecting because of starting new session"), S.Wb.connect()) : (P.verbose("Socket is not reconnecting during a new session because it is not closed"), !1)
 }
 
-function k(e) {
+function j(e) {
   e.isSwitchingAccount && S.RR.handleAccountSwitch(), P.verbose("Closing socket because of logout"), S.Wb.close()
 }
 
@@ -80,11 +80,11 @@ function B() {
   P.verbose("connection closed dispatched"), w = Date.now()
 }
 
-function F(e) {
+function V(e) {
   return e.resetSocket && (S.Wb.close(), S.Wb.dispatcher.clear(), S.Wb.connect()), !1
 }
 
-function V(e) {
+function F(e) {
   return S.GC.update({
     guildId: e.guildId,
     channelId: e.channelId
@@ -316,16 +316,16 @@ class em extends(r = a.ZP.Store) {
 }
 C(em, "displayName", "GatewayConnectionStore");
 let eg = new em(s.Z, {
-  START_SESSION: j,
+  START_SESSION: k,
   LOGIN_SUCCESS: U,
-  LOGOUT: k,
-  CLEAR_CACHES: F,
+  LOGOUT: j,
+  CLEAR_CACHES: V,
   CONNECTION_OPEN: e => {
     G(e)
   },
   CONNECTION_CLOSED: B,
   RTC_CONNECTION_STATE: q,
-  VOICE_CHANNEL_SELECT: V,
+  VOICE_CHANNEL_SELECT: F,
   VOICE_STATE_UPDATES: W,
   GUILD_DELETE: Y,
   CHANNEL_DELETE: z,

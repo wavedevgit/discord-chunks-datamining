@@ -5,18 +5,18 @@ n.d(t, {
   HH: () => x,
   Hc: () => Y,
   IV: () => K,
-  KP: () => k,
+  KP: () => j,
   Ks: () => $,
   OP: () => W,
   Pq: () => H,
   Sv: () => G,
   Tw: () => U,
-  UU: () => V,
-  Yy: () => F,
+  UU: () => F,
+  Yy: () => V,
   aP: () => Z,
   bR: () => J,
   l4: () => w,
-  lJ: () => j,
+  lJ: () => k,
   oh: () => B,
   tG: () => C,
   vx: () => L,
@@ -166,11 +166,11 @@ let M = e => {
   let t = w();
   u.Sh.updateSetting(O({}, t, e))
 };
-var j = function(e) {
+var k = function(e) {
   return e[e.Attachment = 0] = "Attachment", e[e.Embed = 1] = "Embed", e[e.GenericMedia = 2] = "GenericMedia", e
 }({});
 
-function k(e, t) {
+function j(e, t) {
   var n, r, i, o;
   if (!t) return !1;
   if (a.ZP.get("obscure_blur_effect_enabled")) return !0;
@@ -188,11 +188,11 @@ function k(e, t) {
 
 function U(e) {
   return x(e) ? {
-    obscuredAttachments: e.attachments.filter(e => k({
+    obscuredAttachments: e.attachments.filter(e => j({
       type: 0,
       media: e
     }, !0)),
-    obscuredEmbeds: e.embeds.filter(e => k({
+    obscuredEmbeds: e.embeds.filter(e => j({
       type: 1,
       media: e
     }, !0))
@@ -209,10 +209,10 @@ function G(e) {
 function B(e) {
   return !a.ZP.get("explicit_media_redaction_ignore_pending_scan") && null == e
 }
-var F = function(e) {
+var V = function(e) {
     return e.EXPLICIT_MEDIA_LEARN_MORE_VIEWED = "explicit_media_learn_more_viewed", e.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS = "explicit_media_learn_more_click_settings", e.EXPLICIT_MEDIA_LEARN_MORE_CLICK_LEARN_MORE = "explicit_media_learn_more_click_learn_more", e.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS = "explicit_media_learn_more_click_dismiss", e.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE = "explicit_media_learn_more_click_false_positive", e.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED = "explicit_media_false_positive_viewed", e.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM = "explicit_media_false_positive_click_confirm", e.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL = "explicit_media_false_positive_click_cancel", e.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED = "explicit_media_sender_false_positive_button_clicked", e.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT = "explicit_media_false_positive_clyde_message_sent", e
   }({}),
-  V = function(e) {
+  F = function(e) {
     return e.EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW = "explicit_media_obscured_false_positive_flow", e.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW = "explicit_media_sender_false_positive_flow", e.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED = "explicit_media_message_send_blocked", e.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED = "explicit_media_add_media_to_forum_post_blocked", e
   }({});
 

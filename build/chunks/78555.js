@@ -16,5 +16,8 @@ t.r(e.exports = {
   perkRowContainer: "perkRowContainer_c90d6e",
   perkRow: "perkRow_c90d6e",
   perkText: "perkText_c90d6e",
-  button: "button_c90d6e"
+  button: "button_c90d6e",
+  buttonInner: "buttonInner_c90d6e",
+  dot: "dot_c90d6e",
+  cost: "cost_c90d6e"
 })

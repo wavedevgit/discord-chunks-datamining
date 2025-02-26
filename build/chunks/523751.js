@@ -236,18 +236,18 @@ function M(e) {
       let e = E.default.getCurrentUser();
       return g.ZP.isMember(null == o ? void 0 : o.id, null == e ? void 0 : e.id)
     }),
-    j = (0, s.e7)([m.Z], () => m.Z.theme),
-    k = (0, S.XX)(o),
-    U = (0, O.i)(k),
+    k = (0, s.e7)([m.Z], () => m.Z.theme),
+    j = (0, S.XX)(o),
+    U = (0, O.i)(j),
     G = i.useCallback(e => {
-      k.premium && M && !D && (e.stopPropagation(), e.preventDefault(), (0, _.f)({
+      j.premium && M && !D && (e.stopPropagation(), e.preventDefault(), (0, _.f)({
         guildId: o.id,
         location: {
           section: I.jXE.GUILD_HEADER,
           object: I.qAy.BOOST_GEM_ICON
         }
       }))
-    }, [k.premium, M, D, o.id]);
+    }, [j.premium, M, D, o.id]);
   if (U === O.Q.NONE) return null;
   if (U === O.Q.CLAN) {
     var B;
@@ -258,7 +258,7 @@ function M(e) {
       "aria-label": L,
       text: (0, r.jsx)(x, {
         badgeType: U,
-        guildTraits: k
+        guildTraits: j
       }),
       tooltipContentClassName: N.tooltipRemovePadding,
       children: t => (0, r.jsx)(u.P3F, P(C({}, t), {
@@ -272,8 +272,8 @@ function M(e) {
     })
   }
   let {
-    IconComponent: F,
-    backgroundDarkColor: V,
+    IconComponent: V,
+    backgroundDarkColor: F,
     backgroundLightColor: Z,
     foregroundDarkColor: H,
     foregroundLightColor: W,
@@ -281,10 +281,10 @@ function M(e) {
     premiumForegroundColor: K,
     sizeAdjustment: z
   } = w[U];
-  if (null == F) return null;
-  k.premium && (t = K, n = Y);
-  let q = (0, c.wj)(j) ? H : W,
-    Q = (0, c.wj)(j) ? V : Z;
+  if (null == V) return null;
+  j.premium && (t = K, n = Y);
+  let q = (0, c.wj)(k) ? H : W,
+    Q = (0, c.wj)(k) ? F : Z;
   t = null != t ? t : q, n = null != n ? n : Q;
   let X = Math.floor(.75 * R) - (null != z ? z : 0);
   return (0, r.jsx)(u.ua7, {
@@ -293,7 +293,7 @@ function M(e) {
     "aria-label": L,
     text: (0, r.jsx)(x, {
       badgeType: U,
-      guildTraits: k
+      guildTraits: j
     }),
     tooltipContentClassName: N.tooltipRemovePadding,
     children: e => (0, r.jsx)(u.P3F, {
@@ -305,7 +305,7 @@ function M(e) {
         color: null != n ? n : A,
         stroke: T,
         size: R,
-        children: (0, r.jsx)(F, {
+        children: (0, r.jsx)(V, {
           size: "custom",
           width: X,
           height: X,

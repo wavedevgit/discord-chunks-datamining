@@ -94,13 +94,13 @@ let L = e => {
     surrogateCodePoint: L,
     getEmojiItemProps: x,
     getEmojiRowProps: M,
-    isScrolling: j,
-    isUsingKeyboardNavigation: k,
+    isScrolling: k,
+    isUsingKeyboardNavigation: j,
     rowIndex: U,
     allowAnimatedEmoji: G,
     showEmojiFavoriteTooltip: B,
-    channelGuildId: F,
-    category: V,
+    channelGuildId: V,
+    category: F,
     selectedItemClassName: Z,
     channelId: H,
     messageId: W,
@@ -138,7 +138,7 @@ let L = e => {
             tabIndex: g,
             onFocus: E
           } = h, v = D(h, ["ref", "tabIndex", "onFocus"]), b = ea.rowIndex === p && ea.columnIndex === _, y = () => {
-            j.current || k.current || w(e)
+            k.current || j.current || w(e)
           };
           return (0, i.createElement)("li", P(C({}, v), {
             key: t
@@ -169,7 +169,7 @@ let L = e => {
             visibleRowIndex: t,
             columnIndex: i
           } = e, o = ea.rowIndex === t && ea.columnIndex === i, a = t => {
-            t.stopPropagation(), j.current || k.current || (A(e, {
+            t.stopPropagation(), k.current || j.current || (A(e, {
               isFinalSelection: !0,
               toggleFavorite: !1
             }), (0, d.D)(e.guildId), e.sectionCollapsedToThreeRows || z(), v.default.track(I.rMx.EMOJI_PICKER_THREE_ROW_COLLAPSE_TOGGLED, {
@@ -190,7 +190,7 @@ let L = e => {
         }
         case y.ld.CREATE_EMOJI: {
           let t = t => {
-            t.stopPropagation(), j.current || k.current || (A(e, {
+            t.stopPropagation(), k.current || j.current || (A(e, {
               isFinalSelection: !0,
               toggleFavorite: !1
             }), h.Z.open(e.guildId, I.pNK.EMOJI, I.jXE.EMOJI_PICKER_POPOUT))
@@ -218,14 +218,14 @@ let L = e => {
             descriptor: e,
             emojiItemKey: t,
             isInspected: a,
-            isScrolling: j,
-            isUsingKeyboardNavigation: k,
+            isScrolling: k,
+            isUsingKeyboardNavigation: j,
             surrogateCodePoint: L,
             allowAnimatedEmoji: G,
             selectedItemClassName: Z,
             onSelect: A,
             onInspect: w,
-            channelGuildId: F,
+            channelGuildId: V,
             getEmojiItemProps: x,
             isMediumSize: ef,
             isLargeSize: ed,
@@ -250,7 +250,7 @@ let L = e => {
       ref: eu,
       children: e.map(ep)
     }));
-  if (V === S.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
+  if (F === S.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
     className: a()(N.emojiListRow),
     ref: eu,
     children: (0, r.jsx)(m.Z, {
@@ -258,7 +258,7 @@ let L = e => {
       onSelectSoundmoji: R
     })
   });
-  if (V !== S.En.TOP_GUILD_EMOJI) return e_(t);
+  if (F !== S.En.TOP_GUILD_EMOJI) return e_(t);
   let eh = t.filter(e => {
       if (q && e.type === y.ld.CREATE_EMOJI) return !0;
       let t = e;

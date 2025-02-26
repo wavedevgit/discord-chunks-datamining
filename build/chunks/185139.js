@@ -46,23 +46,23 @@ function y(e) {
   let M = null != x ? x.message : "";
   null != x && x instanceof d.HF && (x.code === f.SM.CARD_DECLINED && L && (M += " ".concat(E.NW.string(E.t.iWvwQU))), x.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.NW.string(E.t.ypuSd3)), x.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.NW.string(E.t.mXMmWF)));
   let {
-    stripe: j
+    stripe: k
   } = (0, p.JL)();
-  A = A || null == j;
-  let k = i.useRef(new l.V7);
+  A = A || null == k;
+  let j = i.useRef(new l.V7);
   i.useEffect(() => {
-    let e = k.current;
-    return null != j || e.isStarted() ? null != j && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
+    let e = j.current;
+    return null != k || e.isStarted() ? null != k && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
       let e = Error("Stripe took too long to load");
       (0, h.q2)(e)
     }), () => {
       e.stop()
     }
-  }, [j]);
+  }, [k]);
   let U = t.includes(_.h8.PAYMENT_TYPE) ? _.h8.PAYMENT_TYPE : _.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(o.Elements, {
     options: g.OBo,
-    stripe: j,
+    stripe: k,
     children: [O, (0, r.jsxs)("div", {
       className: s()("paymentModalContent", v.content),
       children: [I && n !== _.h8.CONFIRM ? (0, r.jsx)(u.Z, {

@@ -115,7 +115,7 @@ async function O(e) {
     M = e => {
       null == O || O(), null == N || N(e)
     },
-    j = () => {
+    k = () => {
       null == O || O(), null == S || S(), d.default.track(_.rMx.MODAL_DISMISSED, {
         type: _.ZY5.PREMIUM_GUILD_USER_MODAL,
         location_section: h.section
@@ -152,7 +152,7 @@ async function O(e) {
     analyticsLocation: h,
     analyticsSourceLocation: g,
     guildId: T.id,
-    closeLayer: j,
+    closeLayer: k,
     totalNumberOfSlotsToAssign: null != b ? b : 1,
     onCloseModal: M,
     disablePremiumUpsell: A,

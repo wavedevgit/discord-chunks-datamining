@@ -62,8 +62,8 @@ function P(e) {
     closePopout: L,
     disableUserProfileLink: x = __OVERLAY__,
     newAnalyticsLocations: M = []
-  } = e, j = (0, h.ZP)(t.id, n), {
-    analyticsLocations: k
+  } = e, k = (0, h.ZP)(t.id, n), {
+    analyticsLocations: j
   } = (0, l.ZP)([...M, s.Z.BITE_SIZE_PROFILE_POPOUT]), U = (0, p.ZB)({
     layout: "BITE_SIZE_POPOUT",
     userId: t.id,
@@ -75,24 +75,24 @@ function P(e) {
   i.useEffect(() => {
     null == w || w(null == G ? void 0 : G.current)
   }, [G, w]);
-  let F = () => {
+  let V = () => {
       null == L || L(), (0, I.openUserProfileModal)(R({
-        sourceAnalyticsLocations: k
+        sourceAnalyticsLocations: j
       }, U))
     },
-    V = !x && (0, c.Z)(t.id),
-    Z = () => V ? (0, r.jsx)(o.sNh, {
+    F = !x && (0, c.Z)(t.id),
+    Z = () => F ? (0, r.jsx)(o.sNh, {
       id: "view-profile",
       label: N.NW.string(N.t["+Xp3ho"]),
       action: () => {
-        F(), (0, _.pQ)(R({
+        V(), (0, _.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
-          analyticsLocations: k
+          analyticsLocations: j
         }, U))
       }
     }) : null;
   return (0, r.jsx)(l.Gt, {
-    value: k,
+    value: j,
     children: (0, r.jsx)(p.Mt, {
       value: U,
       children: (0, r.jsxs)(o.VqE, {
@@ -100,7 +100,7 @@ function P(e) {
         "aria-label": t.username,
         children: [(0, r.jsxs)(b.Z, {
           user: t,
-          displayProfile: j,
+          displayProfile: k,
           profileType: T.y0.BITE_SIZE,
           children: [(0, r.jsx)(S.Z, {
             profileType: T.y0.BITE_SIZE,
@@ -112,16 +112,16 @@ function P(e) {
             className: A.header,
             children: [(0, r.jsx)(E.Z, {
               user: t,
-              displayProfile: j,
+              displayProfile: k,
               guildId: n,
               profileType: T.y0.BITE_SIZE
             }), (0, r.jsx)(m.Z, {
               user: t,
-              displayProfile: j,
+              displayProfile: k,
               guildId: n,
               channelId: C,
               profileType: T.y0.BITE_SIZE,
-              onOpenProfile: V ? F : void 0
+              onOpenProfile: F ? V : void 0
             }), t.isClyde() && (0, r.jsx)(u.Z, {
               className: A.headerTag
             })]
@@ -132,23 +132,23 @@ function P(e) {
               user: t,
               profileType: T.y0.BITE_SIZE,
               nickname: f.ZP.getName(n, C, t),
-              onOpenProfile: V ? F : void 0,
+              onOpenProfile: F ? V : void 0,
               tags: (0, r.jsx)(g.Z, {
-                displayProfile: j,
+                displayProfile: k,
                 profileType: T.y0.BITE_SIZE,
                 onClose: L
               })
             }), (0, r.jsx)(v.Z, {
               userId: t.id,
-              userBio: null == j ? void 0 : j.bio,
+              userBio: null == k ? void 0 : k.bio,
               setLineClamp: !1,
               textColor: "header-primary"
             })]
           }), (0, r.jsx)("footer", {
             className: A.footer
           })]
-        }), (null == j ? void 0 : j.profileEffectId) != null && (0, r.jsx)(d.Z, {
-          profileEffectId: null == j ? void 0 : j.profileEffectId,
+        }), (null == k ? void 0 : k.profileEffectId) != null && (0, r.jsx)(d.Z, {
+          profileEffectId: null == k ? void 0 : k.profileEffectId,
           isHovering: B
         })]
       })

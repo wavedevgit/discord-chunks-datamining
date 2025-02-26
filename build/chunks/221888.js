@@ -165,14 +165,14 @@ function L(e) {
   i.useEffect(() => {
     N && (x.current.cancel(), L(!1))
   }, [N]);
-  let j = i.useCallback(() => {
+  let k = i.useCallback(() => {
       x.current.cancel(), L(!0)
     }, []),
-    k = i.useCallback(() => {
+    j = i.useCallback(() => {
       x.current.delay()
     }, []),
     U = i.useCallback((e, t) => {
-      j(), (0, f.jW)(e, async () => {
+      k(), (0, f.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220"), n.e("31327")]).then(n.bind(n, 881351));
@@ -180,9 +180,9 @@ function L(e) {
           user: t
         }))
       }, {
-        onClose: k
+        onClose: j
       })
-    }, [k, j]);
+    }, [j, k]);
   if (0 === M.length) return null;
   if (v) return (0, r.jsx)(D, {
     maxVisibleUsers: I,
@@ -204,8 +204,8 @@ function L(e) {
   }, "overflow")), (0, r.jsx)(p.Z, {
     section: y.jXE.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {
-      onMouseEnter: j,
-      onMouseLeave: k,
+      onMouseEnter: k,
+      onMouseLeave: j,
       children: (0, r.jsx)(d.yRy, {
         renderPopout: () => (0, r.jsx)(P, {
           participantType: s.type,

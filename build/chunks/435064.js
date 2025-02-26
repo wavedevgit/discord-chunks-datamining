@@ -108,7 +108,7 @@ function M(e) {
   L.hardwareClassificationForDecoupled = t, L.hardwareClassificationForDecoupled === p.x.MEETS_AUTO_ENABLE && r !== p.x.MEETS_AUTO_ENABLE && L.clipsSettings.clipsEnabled && (L.clipsSettings.decoupledClipsEnabled = !0)
 }
 
-function j(e) {
+function k(e) {
   let {
     clip: t
   } = e;
@@ -119,7 +119,7 @@ function j(e) {
     }
 }
 
-function k(e) {
+function j(e) {
   let {
     settings: t
   } = e;
@@ -156,7 +156,7 @@ function B() {
   T = Math.max(T - 1, 0)
 }
 
-function F(e) {
+function V(e) {
   var t, n;
   let {
     clip: r
@@ -176,7 +176,7 @@ function F(e) {
   }), S = [r, ...S], L.hasClips = !0
 }
 
-function V(e) {
+function F(e) {
   let {
     clip: t
   } = e;
@@ -449,9 +449,9 @@ g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "mi
   }
 })]);
 let ei = new er(o.Z, {
-    CLIPS_SETTINGS_UPDATE: k,
-    CLIPS_SAVE_CLIP: F,
-    CLIPS_SAVE_CLIP_PLACEHOLDER: V,
+    CLIPS_SETTINGS_UPDATE: j,
+    CLIPS_SAVE_CLIP: V,
+    CLIPS_SAVE_CLIP_PLACEHOLDER: F,
     CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: Z,
     CLIPS_SAVE_CLIP_START: U,
     CLIPS_SAVE_CLIP_ERROR: B,
@@ -462,7 +462,7 @@ let ei = new er(o.Z, {
     CLIPS_CLEAR_NEW_CLIP_IDS: $,
     CLIPS_LOAD_DIRECTORY_SUCCESS: Q,
     CLIPS_DELETE_CLIP: X,
-    CLIPS_UPDATE_METADATA: j,
+    CLIPS_UPDATE_METADATA: k,
     RTC_CONNECTION_FLAGS: ee,
     CLIPS_SHOW_CALL_WARNING: H,
     VOICE_CHANNEL_SELECT: W,

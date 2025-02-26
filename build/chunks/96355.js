@@ -308,11 +308,11 @@
     return [e[0] + (t[0] - e[0]) * n, e[1] + (t[1] - e[1]) * n]
   }
 
-  function j(e, t) {
+  function k(e, t) {
     return 1e-9 > x(e, t)
   }
 
-  function k(e, t, n) {
+  function j(e, t, n) {
     var r = e.map(function(e, n) {
       return U(e, t[n])
     });
@@ -337,10 +337,10 @@
   }
 
   function B(e) {
-    return F(e) ? e1(e) : [(e[0][0] + e[e.length - 1][0]) / 2, (e[0][1] + e[e.length - 1][1]) / 2]
+    return V(e) ? e1(e) : [(e[0][0] + e[e.length - 1][0]) / 2, (e[0][1] + e[e.length - 1][1]) / 2]
   }
 
-  function F(e) {
+  function V(e) {
     for (var t = 0; t < e.length - 2; t++) {
       var n = e[t],
         r = e[t + 1],
@@ -350,7 +350,7 @@
     return !1
   }
 
-  function V(e) {
+  function F(e) {
     return new to(e).abs()
   }
 
@@ -367,11 +367,11 @@
   }
 
   function W(e) {
-    return Z(V(e))
+    return Z(F(e))
   }
 
   function Y(e, t) {
-    var n = V(e);
+    var n = F(e);
     return K(n) || z(n, t)
   }
 
@@ -443,7 +443,7 @@
       e = i.ring, r = i.skipBisect
     } else if (!Array.isArray(e)) throw TypeError(tv);
     if (!$(n = e.slice(0))) throw TypeError(tv);
-    return n.length > 1 && j(n[0], n[n.length - 1]) && n.pop(), e0(n) > 0 && n.reverse(), !r && t && G(t) && t > 0 && X(n, t), n
+    return n.length > 1 && k(n[0], n[n.length - 1]) && n.pop(), e0(n) > 0 && n.reverse(), !r && t && G(t) && t > 0 && X(n, t), n
   }
 
   function $(e) {
@@ -454,7 +454,7 @@
 
   function ee(e, t, n) {
     var r;
-    return r = e.length - t.length, Q(e, r < 0 ? -1 * r : 0), Q(t, r > 0 ? r : 0), ty(e, t), k(e, t, n)
+    return r = e.length - t.length, Q(e, r < 0 ? -1 * r : 0), Q(t, r > 0 ? r : 0), ty(e, t), j(e, t, n)
   }
 
   function et(e, t, n) {
@@ -893,7 +893,7 @@
     }), r
   }
 
-  function ej(e, t) {
+  function ek(e, t) {
     for (var n = e.objects.triangles.geometries, r = tw(function(e) {
         return e.area
       }).left; n.length > t;) ! function() {
@@ -909,7 +909,7 @@
     })
   }
 
-  function ek(e) {
+  function ej(e) {
     for (var t = tS(e.reduce(function(e, t) {
         return e.concat([t[0]], [t[1]])
       }, [])), n = [], r = 0, i = t.length; r < i; r += 3) n.push([
@@ -967,7 +967,7 @@
     })
   }
 
-  function eF(e, t, n) {
+  function eV(e, t, n) {
     void 0 === n && (n = {});
     var r = n.maxSegmentLength;
     void 0 === r && (r = 10);
@@ -989,7 +989,7 @@
     })
   }
 
-  function eV(e, t, n) {
+  function eF(e, t, n) {
     void 0 === n && (n = {});
     var r = n.maxSegmentLength;
     void 0 === r && (r = 10);
@@ -1084,7 +1084,7 @@
     var a = i.string;
     void 0 === a && (a = !0);
     var s, l = J(t, o);
-    return G(r) && l.length < r / o && Q(l, Math.ceil(r / o - l.length)), s = k(e(l), l, a), a ? function(e) {
+    return G(r) && l.length < r / o && Q(l, Math.ceil(r / o - l.length)), s = j(e(l), l, a), a ? function(e) {
       return e < 1e-4 ? n : s(e)
     } : s
   }
@@ -1898,7 +1898,7 @@
       }
     },
     tL = (tw(tD).right, function(e, t) {
-      return ej(eM(ek(e), e), t)
+      return ek(eM(ej(e), e), t)
     }),
     tx = function(e, t) {
       if (e.length > 8) return e.map(function(e, t) {
@@ -1911,7 +1911,7 @@
       });
       return eU(e, t, n)
     };
-  e.interpolate = tO, e.separate = eB, e.combine = eF, e.interpolateAll = eV, e.splitPathString = W, e.toPathString = H, e.fromCircle = eH, e.toCircle = eW, e.fromRect = eY, e.toRect = eK, Object.defineProperty(e, "__esModule", {
+  e.interpolate = tO, e.separate = eB, e.combine = eV, e.interpolateAll = eF, e.splitPathString = W, e.toPathString = H, e.fromCircle = eH, e.toCircle = eW, e.fromRect = eY, e.toRect = eK, Object.defineProperty(e, "__esModule", {
     value: !0
   })
 })

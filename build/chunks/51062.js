@@ -75,8 +75,8 @@ function S(e, t, n) {
     let n = p.default.getCurrentUser();
     return null !== (t = null != C.guild_id && null != n ? null === (e = u.ZP.getMember(C.guild_id, n.id)) || void 0 === e ? void 0 : e.isPending : null) && void 0 !== t && t
   }), {
-    canMentionEveryone: j,
-    hidePersonalInformation: k
+    canMentionEveryone: k,
+    hidePersonalInformation: j
   } = (0, o.cj)([d.Z, f.Z], () => ({
     canMentionEveryone: C.isPrivate() || M || R === l.Ie.RULES_INPUT || d.Z.can(m.Plq.MENTION_EVERYONE, C),
     hidePersonalInformation: f.Z.hidePersonalInformation
@@ -91,24 +91,24 @@ function S(e, t, n) {
     scrollerRef: n,
     state: P,
     onFocus: e => Z.setSelectedIndex(e)
-  }), F = null === (v = e.editorRef.current) || void 0 === v ? void 0 : v.getCurrentWord(), V = O(b({}, e), {
+  }), V = null === (v = e.editorRef.current) || void 0 === v ? void 0 : v.getCurrentWord(), F = O(b({}, e), {
     navigator: B,
     activeCommand: U,
     activeCommandOption: G,
     canMentionUsers: null !== (T = null === (y = R.users) || void 0 === y ? void 0 : y.allowMentioning) && void 0 !== T && T,
-    canMentionEveryone: j,
+    canMentionEveryone: k,
     canMentionClyde: x,
-    hidePersonalInformation: k,
+    hidePersonalInformation: j,
     hideMentionDescription: R === l.Ie.RULES_INPUT,
     emojiIntention: R === l.Ie.RULES_INPUT ? E.Hz.COMMUNITY_CONTENT : E.Hz.CHAT,
-    currentWord: null !== (N = null == F ? void 0 : F.word) && void 0 !== N ? N : "",
-    currentWordIsAtStart: (null == F ? void 0 : F.isAtStart) === !0,
+    currentWord: null !== (N = null == V ? void 0 : V.word) && void 0 !== N ? N : "",
+    currentWordIsAtStart: (null == V ? void 0 : V.isAtStart) === !0,
     optionText: null != G ? (0, a.KF)({
       [G.name]: null !== (A = null === (S = e.editorRef.current) || void 0 === S ? void 0 : S.getCurrentCommandOptionValue()) && void 0 !== A ? A : []
     }, G.name) : ""
-  }), [Z] = r.useState(() => new _.Z(V));
+  }), [Z] = r.useState(() => new _.Z(F));
   return r.useEffect(() => {
-    Z.updateProps(V)
+    Z.updateProps(F)
   }), r.useImperativeHandle(t, () => Z, [Z]), r.useEffect(() => {
     let e = e => D(e);
     return Z.on("change", e), Z.on("update", w), () => {

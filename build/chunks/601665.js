@@ -63,22 +63,22 @@ function R(e) {
     disableUserProfileLink: x = __OVERLAY__,
     newAnalyticsLocations: M = []
   } = e, {
-    analyticsLocations: j
-  } = (0, c.ZP)([...M, l.Z.BITE_SIZE_PROFILE_POPOUT]), k = (0, f.ZB)({
+    analyticsLocations: k
+  } = (0, c.ZP)([...M, l.Z.BITE_SIZE_PROFILE_POPOUT]), j = (0, f.ZB)({
     layout: "BITE_SIZE_POPOUT",
     userId: t.id,
     guildId: A,
     channelId: R,
     messageId: P,
     roleId: D
-  }), U = (0, _.ZP)(t.id, A), G = (0, o.e7)([d.Z], () => null != A ? d.Z.getGuild(A) : null), B = (0, o.e7)([u.ZP], () => null != A ? u.ZP.getMember(A, t.id) : null), F = i.useRef(null), V = (0, s.Z)(F);
+  }), U = (0, _.ZP)(t.id, A), G = (0, o.e7)([d.Z], () => null != A ? d.Z.getGuild(A) : null), B = (0, o.e7)([u.ZP], () => null != A ? u.ZP.getMember(A, t.id) : null), V = i.useRef(null), F = (0, s.Z)(V);
   i.useEffect(() => {
-    null == L || L(null == F ? void 0 : F.current)
-  }, [F, L]);
+    null == L || L(null == V ? void 0 : V.current)
+  }, [V, L]);
   let Z = e => {
       null == w || w(), (0, y.openUserProfileModal)(C({
-        sourceAnalyticsLocations: j
-      }, k, e))
+        sourceAnalyticsLocations: k
+      }, j, e))
     },
     H = () => x ? null : (0, r.jsx)(a.sNh, {
       id: "view-profile",
@@ -86,17 +86,17 @@ function R(e) {
       action: () => {
         Z(), (0, p.pQ)(C({
           action: "PRESS_VIEW_PROFILE",
-          analyticsLocations: j
-        }, k))
+          analyticsLocations: k
+        }, j))
       }
     });
   return (0, r.jsx)(c.Gt, {
-    value: j,
+    value: k,
     children: (0, r.jsx)(f.Mt, {
-      value: k,
+      value: j,
       shouldTrackViewOnMount: null == B || null != B.fullProfileLoadedTimestamp,
       children: (0, r.jsx)(a.VqE, {
-        ref: F,
+        ref: V,
         "aria-label": t.username,
         children: (0, r.jsxs)(g.Z, {
           user: t,
@@ -135,7 +135,7 @@ function R(e) {
             currentUser: n,
             displayProfile: U,
             guild: G,
-            isHovering: V,
+            isHovering: F,
             onOpenProfile: x ? void 0 : Z,
             channelId: R,
             onClose: w

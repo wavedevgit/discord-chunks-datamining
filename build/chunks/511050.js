@@ -1,4 +1,4 @@
-/** Chunk was on 624 **/
+/** Chunk was on 53485 **/
 n.d(t, {
   Z: () => h,
   l: () => p
@@ -26,15 +26,27 @@ let g = new s.Z("VirtualCurrency"),
       let e = a.Z.getQuest(m.V);
       return null == e ? null : (0, l.LM)(e.config)
     }, [n]), p = (0, r.useCallback)(e => {
-      if (null == s && !e) {
+      let {
+        forceOpen: t,
+        delayMS: n = 500
+      } = e;
+      if (null == s && !t) {
         g.warn("Could not open Intro to Orbs Claimed Coachmark. Reward orb quantity not found or quest does not exist with ID ".concat(m.V));
         return
-      }(0, c.wH)() || setTimeout(() => {
-        (0, o.hF)({
+      }
+      if (!(0, c.wH)()) {
+        let e = () => (0, o.hF)({
           earnedOrbsQuantity: null != s ? s : 200,
-          dedupeKey: e ? void 0 : m.V
-        })
-      }, 500)
+          dedupeKey: t ? void 0 : m.V
+        });
+        if (void 0 === n || 0 === n) {
+          e();
+          return
+        }
+        setTimeout(() => {
+          e()
+        }, n)
+      }
     }, [s]), h = (0, r.useCallback)(() => {
       (0, c.wH)() && (0, c.jj)()
     }, []);
@@ -48,4 +60,4 @@ let g = new s.Z("VirtualCurrency"),
       closeIntroToOrbsClaimedCoachmark: u.dG4
     }
   },
-  h = 12633 == n.j ? p : null
+  h = p

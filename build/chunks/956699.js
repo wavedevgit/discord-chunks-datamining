@@ -1,4 +1,4 @@
-/** Chunk was on 624 **/
+/** Chunk was on 53485 **/
 n.d(t, {
   Z: () => el
 }), n(47120), n(26686), n(301563), n(566702), n(411104);
@@ -870,7 +870,7 @@ function en() {
     o = e || t === x.R5.OUT_OF_PROCESS_V2 || t === x.R5.OUT_OF_PROCESS_V3 || t === x.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
   return (i.useEffect(() => {
     (async () => {
-      l(await (0, Z.Y4)())
+      l(await (0, Z.getOverlayURL)())
     })()
   }, []), n) ? {} : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {

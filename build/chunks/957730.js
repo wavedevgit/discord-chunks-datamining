@@ -130,7 +130,7 @@ function M(e, t, n) {
   }).first()
 }
 
-function j(e) {
+function k(e) {
   return {
     order: e.order,
     match: e.match,
@@ -141,7 +141,7 @@ function j(e) {
   }
 }
 
-function k(e) {
+function j(e) {
   return {
     match: a().anyScopeRegex(e),
     parse: e => ({
@@ -153,20 +153,20 @@ function k(e) {
 let U = u.Z.RULES,
   G = d.ZP,
   B = /^<@!?(\d+)>/,
-  F = /^<@&(\d+)>/,
-  V = /^<#(\d+)>/,
+  V = /^<@&(\d+)>/,
+  F = /^<#(\d+)>/,
   Z = /^<a?:(\w+):(\d+)>/,
   H = /(@everyone|@here|@Clyde)\b/,
   W = {
-    link: j(a().defaultRules.link),
-    autolink: j(a().defaultRules.autolink),
-    url: j(a().defaultRules.url),
-    inlineCode: j(U.inlineCode),
-    codeBlock: j(U.codeBlock),
-    rawUserMention: k(B),
-    rawRoleMention: k(F),
-    rawChannelMention: k(V),
-    rawEmoji: k(Z),
+    link: k(a().defaultRules.link),
+    autolink: k(a().defaultRules.autolink),
+    url: k(a().defaultRules.url),
+    inlineCode: k(U.inlineCode),
+    codeBlock: k(U.codeBlock),
+    rawUserMention: j(B),
+    rawRoleMention: j(V),
+    rawChannelMention: j(F),
+    rawEmoji: j(Z),
     mention: {
       match(e, t, n) {
         let r = n.split(" ").pop() + e;
@@ -256,8 +256,8 @@ let U = u.Z.RULES,
     })
   },
   Y = {
-    inlineCode: j(U.inlineCode),
-    codeBlock: j(U.codeBlock),
+    inlineCode: k(U.inlineCode),
+    codeBlock: k(U.codeBlock),
     mention: {
       match: a().anyScopeRegex(B),
       parse(e, t, n) {
@@ -282,7 +282,7 @@ let U = u.Z.RULES,
       }
     },
     roleMention: {
-      match: a().anyScopeRegex(F),
+      match: a().anyScopeRegex(V),
       parse(e, t, n) {
         let {
           guild: r
@@ -299,7 +299,7 @@ let U = u.Z.RULES,
       }
     },
     channel: {
-      match: a().anyScopeRegex(V),
+      match: a().anyScopeRegex(F),
       parse(e) {
         let t = m.Z.getChannel(e[1]);
         return {

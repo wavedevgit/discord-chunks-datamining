@@ -106,7 +106,7 @@ let T = 108e5,
   },
   x = e => e / 2,
   M = e => e ? 2 : 4,
-  j = e => {
+  k = e => {
     switch (e) {
       case 52:
         return "M0 25.6C0 16.6392 0 12.1587 1.7439 8.73615C3.27787 5.72556 5.72556 3.27787 8.73615 1.7439C12.1587 0 16.6392 0 25.6 0H26.4C35.3608 0 39.8413 0 43.2638 1.7439C46.2744 3.27787 48.7221 5.72556 50.2561 8.73615C52 12.1587 52 16.6392 52 25.6V26.4C52 35.3608 52 39.8413 50.2561 43.2638C48.7221 46.2744 46.2744 48.7221 43.2638 50.2561C39.8413 52 35.3608 52 26.4 52H25.6C16.6392 52 12.1587 52 8.73615 50.2561C5.72556 48.7221 3.27787 46.2744 1.7439 43.2638C0 39.8413 0 35.3608 0 26.4V25.6Z";
@@ -120,7 +120,7 @@ let T = 108e5,
         throw Error("Unsupported BlobMask squicle size: ".concat(e))
     }
   },
-  k = e => {
+  j = e => {
     switch (e) {
       case 48:
         return "M48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24Z";
@@ -138,17 +138,17 @@ let T = 108e5,
 function B(e, t) {
   let n = "".concat(e, "-").concat(t);
   if (G.has(n)) return G.get(n);
-  let r = F(e, t);
+  let r = V(e, t);
   return G.set(n, r), r
 }
 
-function F(e, t) {
-  return U ? (0, l.interpolate)(k(e), j(t), {
+function V(e, t) {
+  return U ? (0, l.interpolate)(j(e), k(t), {
     maxSegmentLength: 1.5
-  }) : V
+  }) : F
 }
 
-function V(e) {
+function F(e) {
   return e.toString()
 }
 class Z extends o.Component {
@@ -424,7 +424,7 @@ class Y extends o.Component {
         x: g ? -4 : 0,
         y: g ? -4 : 0
       },
-      j = g && v ? 20 : _;
+      k = g && v ? 20 : _;
     return (0, i.jsxs)("div", {
       className: s()(t, E.wrapper),
       style: l,
@@ -447,12 +447,12 @@ class Y extends o.Component {
             id: P
           }), I ? (0, i.jsx)(d.animated.rect, {
             id: N,
-            x: f - j + m,
+            x: f - k + m,
             y: -m,
-            width: j,
-            height: j,
-            rx: j / 2,
-            ry: j / 2,
+            width: k,
+            height: k,
+            rx: k / 2,
+            ry: k / 2,
             transform: this.getBadgePositionInterpolation(O, -1)
           }) : null, I ? (0, i.jsx)(d.animated.rect, {
             id: R,
@@ -594,7 +594,7 @@ function K(e) {
     height: n + 8,
     x: -4,
     y: -4
-  }, U = c ? 20 : _, G = g ? k(n) : j(n);
+  }, U = c ? 20 : _, G = g ? j(n) : k(n);
   return (0, i.jsxs)("div", {
     className: s()(r, E.wrapper),
     style: a,

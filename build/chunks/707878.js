@@ -63,6 +63,6 @@ class y extends r.PureComponent {
     }) : this[t] = n
   }
 }
-let _ = o.ZP.connectStores([c.Z], () => ({
-  opacity: c.Z.getTextWidgetOpacity()
+let _ = o.ZP.connectStores([c.default], () => ({
+  opacity: c.default.getTextWidgetOpacity()
 }))(y)

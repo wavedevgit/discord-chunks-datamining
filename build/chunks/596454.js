@@ -77,7 +77,7 @@ function I(e, t) {
   return i
 }
 n(848300);
-let T = __OVERLAY__ ? () => (0, s.e7)([_.Z], () => _.Z.isInstanceFocused()) : g.n;
+let T = __OVERLAY__ ? () => (0, s.e7)([_.default], () => _.default.isInstanceFocused()) : g.n;
 
 function N(e) {
   var t, n, {
@@ -99,24 +99,24 @@ function N(e) {
       registerAnimatedElementRef: w
     } = e,
     L = S(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerAnimatedElementRef"]);
-  let [x, M] = i.useState(!1), [j, k] = i.useState(void 0), U = i.useRef(), {
+  let [x, M] = i.useState(!1), [k, j] = i.useState(void 0), U = i.useRef(), {
     triggerAnimation: G,
     untriggerAnimation: B
-  } = i.useContext(u.Rm), F = p.Yk.useSetting(), V = T(), Z = null == D ? F : D, H = E.kV[I], W = i.useRef(null), Y = i.useMemo(() => {
+  } = i.useContext(u.Rm), V = p.Yk.useSetting(), F = T(), Z = null == D ? V : D, H = E.kV[I], W = i.useRef(null), Y = i.useMemo(() => {
     if (null != o) return o;
     if (null != f) {
       let e = !0 === A && Z;
       return h.ZP.getEmojiURL({
         id: f,
-        animated: V && !0 === y && (e || x || !0 === N),
+        animated: F && !0 === y && (e || x || !0 === N),
         size: H
       })
     }
     if (null != _) return m.ZP.getURL(_);
     throw Error("Unknown Src for Emoji")
-  }, [y, Z, f, _, H, V, x, N, A, o]), K = i.useCallback(() => {
+  }, [y, Z, f, _, H, F, x, N, A, o]), K = i.useCallback(() => {
     null != Y && (U.current = (0, d.po)(Y, e => {
-      e || k(Date.now())
+      e || j(Date.now())
     }))
   }, [Y]), z = i.useCallback(e => {
     y && M(!0), null == f && G(_), null == C || C(e)
@@ -155,14 +155,14 @@ function N(e) {
       channelId: g,
       messageId: v,
       emojiName: _,
-      disable: !1 === Z || !1 === F,
+      disable: !1 === Z || !1 === V,
       emojiRef: J
     }), P ? (0, r.jsx)("img", O(b({}, Q), {
       ref: X,
       src: Y,
       alt: null !== (t = null != s ? s : _) && void 0 !== t ? t : void 0,
       draggable: !1
-    }), j) : (0, r.jsx)("div", O(b({}, Q), {
+    }), k) : (0, r.jsx)("div", O(b({}, Q), {
       ref: X,
       role: "img",
       "aria-label": null !== (n = null != s ? s : _) && void 0 !== n ? n : void 0,
@@ -172,7 +172,7 @@ function N(e) {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center"
       }
-    }), j)]
+    }), k)]
   })
 }
 

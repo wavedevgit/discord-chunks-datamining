@@ -5,8 +5,8 @@ n.d(t, {
   DR: () => N,
   F$: () => P,
   K$: () => M,
-  Ov: () => k,
-  R2: () => j,
+  Ov: () => j,
+  R2: () => k,
   Sm: () => I,
   fK: () => L,
   jr: () => w,
@@ -219,7 +219,7 @@ let I = e => {
     s.Z.dispatch(y({
       type: "COLLECTIBLES_CATEGORY_ITEMS_VIEWED"
     }, e))
-  }, j = async e => {
+  }, k = async e => {
     let {
       release: t = i.P.PROD
     } = e;
@@ -245,7 +245,7 @@ let I = e => {
         type: "COLLECTIBLES_MARKETING_FETCH_FAILURE"
       })
     }
-  }, k = async (e, t) => {
+  }, j = async (e, t) => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SHOP_HOME_FETCH",
       tab: e,

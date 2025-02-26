@@ -152,12 +152,12 @@ function M(e, t, n) {
   }), L.cancel(), U()
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   (0, h.RF)(e, t, {
     soundboardMuted: n
   }), L.cancel(), U()
 }
-let k = i().debounce(c.On, 500, {
+let j = i().debounce(c.On, 500, {
   maxWait: 500
 });
 
@@ -181,7 +181,7 @@ function G(e) {
   } = e;
   if (n === f.default.getId()) return;
   let i = u.Z.getRemoteSessionId();
-  null != i && k(i, n, t, {
+  null != i && j(i, n, t, {
     muted: p.Z.isLocalMute(n, t),
     volume: r
   }), x(t, n, r)
@@ -195,21 +195,21 @@ function B(e) {
   n !== f.default.getId() && M(t, n, p.Z.isLocalMute(n, t))
 }
 
-function F(e) {
+function V(e) {
   let {
     context: t,
     userId: n
   } = e;
-  n !== f.default.getId() && j(t, n, d.Z.isLocalSoundboardMuted(n))
+  n !== f.default.getId() && k(t, n, d.Z.isLocalSoundboardMuted(n))
 }
-class V extends l.Z {
+class F extends l.Z {
   constructor(...e) {
     super(...e), v(this, "actions", {
       POST_CONNECTION_OPEN: w,
       AUDIO_SET_LOCAL_VOLUME: G,
       AUDIO_TOGGLE_LOCAL_MUTE: B,
-      AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F
+      AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: V
     })
   }
 }
-let Z = new V
+let Z = new F

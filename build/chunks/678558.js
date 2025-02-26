@@ -95,12 +95,12 @@ let C = e => {
     icon: L
   } = e, x = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon"]), {
     analyticsLocations: M
-  } = (0, u.ZP)(), j = (0, c.bp)() === E.IlC.POPOUT, [k, U] = i.useState(!1), {
+  } = (0, u.ZP)(), k = (0, c.bp)() === E.IlC.POPOUT, [j, U] = i.useState(!1), {
     fractionalState: G
   } = (0, d.Z)(), B = (0, p.W)();
   _.Z.hasFetched || (0, l.X8)();
-  let F = (0, m.vx)(_.Z.boostSlots),
-    V = null != I ? Math.max((0, m.KK)(o, I), 1) : 1,
+  let V = (0, m.vx)(_.Z.boostSlots),
+    F = null != I ? Math.max((0, m.KK)(o, I), 1) : 1,
     Z = (0, m.aq)({
       fractionalState: G
     }),
@@ -110,10 +110,10 @@ let C = e => {
         analyticsLocation: t,
         analyticsSourceLocation: n,
         guild: o,
-        numberOfBoostsToAdd: V,
+        numberOfBoostsToAdd: F,
         onClose: A,
         closeLayer: C,
-        inPopout: j,
+        inPopout: k,
         applicationId: P,
         handleSubscribeModalClose: D
       }), U(!1)
@@ -121,7 +121,7 @@ let C = e => {
       className: y.button,
       children: [L, null != O ? O : b.NW.string(b.t.gKmQ1N)]
     });
-  return ((null == W ? void 0 : W.isPausedOrPausePending) && (G === v.a$.NONE || 0 === F.length) && (Y = (0, r.jsxs)("div", {
+  return ((null == W ? void 0 : W.isPausedOrPausePending) && (G === v.a$.NONE || 0 === V.length) && (Y = (0, r.jsxs)("div", {
     className: y.button,
     children: [(0, r.jsx)(s.mBM, {
       size: "xs",
@@ -143,7 +143,7 @@ let C = e => {
     className: a()(x.className, {
       [y.buttonHighlighted]: w
     }),
-    submitting: k,
+    submitting: j,
     onClick: H,
     pauseAnimation: R,
     children: Y

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => F,
-  dz: () => k
+  ZP: () => V,
+  dz: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -99,7 +99,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   var t, n;
   let {
     className: o,
@@ -131,7 +131,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   var t, n;
   let i = null === (t = (0, N.N)()) || void 0 === t ? void 0 : t.subscription_trial,
     o = null !== (n = null == i ? void 0 : i.sku_id) && void 0 !== n ? n : R.Si.TIER_2;
@@ -165,7 +165,7 @@ function U(e) {
       look: _.iLD.BLANK,
       className: w.cancelButton,
       children: D.NW.string(D.t.cpT0Cg)
-    }), (0, r.jsx)(j, {
+    }), (0, r.jsx)(k, {
       className: w.subscribeButton,
       subscriptionTier: t,
       analyticsLocationObject: i,
@@ -193,7 +193,7 @@ function G(e) {
       children: D.NW.format(D.t["fF+cgY"], {
         onClick: () => (0, T.z)()
       })
-    }), (0, r.jsx)(j, {
+    }), (0, r.jsx)(k, {
       trialOffer: i,
       className: w.subscribeButtonWide,
       subscriptionTier: R.Si.TIER_2,
@@ -232,7 +232,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     headingText: t,
     context: i,
@@ -353,10 +353,10 @@ function F(e) {
     case R.cd.BURST_REACTION_UPSELL:
     case R.cd.STREAM_QUALITY_UPSELL:
     case R.cd.MESSAGE_LENGTH_UPSELL:
-      let k;
+      let j;
       switch (c) {
         case R.cd.UPLOAD_ERROR_UPSELL:
-          k = D.NW.format(D.t.F4qoDw, {
+          j = D.NW.format(D.t.F4qoDw, {
             planName: (0, O.jP)(u),
             premiumMaxSize: u === R.Si.TIER_0 ? D.NW.string(D.t["C/Rhb2"]) : C,
             onClick: () => {
@@ -365,7 +365,7 @@ function F(e) {
           });
           break;
         case R.cd.BURST_REACTION_UPSELL:
-          k = D.NW.format(D.t.poib9P, {
+          j = D.NW.format(D.t.poib9P, {
             planName: (0, O.jP)(u),
             onClick: () => {
               (0, E.uL)(P.Z5c.APPLICATION_STORE), null == s || s()
@@ -373,21 +373,21 @@ function F(e) {
           });
           break;
         case R.cd.STREAM_QUALITY_UPSELL:
-          k = D.NW.format(D.t.WspKp6, {
+          j = D.NW.format(D.t.WspKp6, {
             onClick: () => {
               (0, E.uL)(P.Z5c.APPLICATION_STORE), null == s || s(), (0, f.pT)()
             }
           });
           break;
         case R.cd.MESSAGE_LENGTH_UPSELL:
-          k = D.NW.format(D.t.GUHtEx, {
+          j = D.NW.format(D.t.GUHtEx, {
             premiumMaxMessageLength: P.en1,
             onClick: () => {
               (0, E.uL)(P.Z5c.APPLICATION_STORE), null == s || s()
             }
           })
       }
-      return l()(null != k, "There must be some upsell context"), (0, r.jsxs)("div", {
+      return l()(null != j, "There must be some upsell context"), (0, r.jsxs)("div", {
         className: w.contentContainer,
         children: [(0, r.jsx)(_.X6q, {
           variant: "heading-xl/bold",
@@ -399,7 +399,7 @@ function F(e) {
         }), (0, r.jsx)(M, {
           trialOffer: b,
           discountOffer: T,
-          children: k
+          children: j
         })]
       });
     case R.cd.BURST_REACTION_QUICK_ACTION_UPSELL:
@@ -419,7 +419,7 @@ function F(e) {
             planName: (0, O.jP)(u),
             onClick: () => (0, E.uL)(P.Z5c.APPLICATION_STORE)
           })
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(k, {
           className: w.upsellButton,
           subscriptionTier: u,
           analyticsLocationObject: v,
@@ -465,7 +465,7 @@ function F(e) {
               (0, E.uL)(P.Z5c.APPLICATION_STORE), null == s || s()
             }
           })
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(k, {
           subscriptionTier: u,
           analyticsLocationObject: v,
           onClose: s,

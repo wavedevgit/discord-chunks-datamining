@@ -173,7 +173,7 @@ function M() {
   } else n && R.log("Skipping fetch because there is no selected channel")
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t,
     channelId: n,
@@ -188,7 +188,7 @@ function j(e) {
   }), U(t, n)
 }
 
-function k(e) {
+function j(e) {
   let {
     guildId: t,
     channelId: n
@@ -228,7 +228,7 @@ function B(e) {
   }), U(t, n))
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: t,
     messageId: n
@@ -240,7 +240,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     response: t
   } = e;
@@ -314,14 +314,14 @@ class K extends d.Z {
     super(...e), C(this, "fetchMessages", P), C(this, "loadSelectedChannelIfNecessary", M), C(this, "stores", new Map().set(g.ZP, G)), C(this, "actions", {
       APP_STATE_UPDATE: Y,
       OVERLAY_INITIALIZE: x,
-      CHANNEL_SELECT: j,
-      VOICE_CHANNEL_SELECT: k,
-      THREAD_CREATE: F,
+      CHANNEL_SELECT: k,
+      VOICE_CHANNEL_SELECT: j,
+      THREAD_CREATE: V,
       THREAD_LIST_SYNC: () => M(),
-      CHANNEL_CREATE: F,
+      CHANNEL_CREATE: V,
       CHANNEL_PRELOAD: B,
       GUILD_CREATE: () => M(),
-      MESSAGE_END_EDIT: V,
+      MESSAGE_END_EDIT: F,
       LOAD_MESSAGES_SUCCESS: H,
       UPLOAD_FAIL: W,
       CHANNEL_DELETE: () => M(),

@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(47120);
 var o, a = n(442837),
   s = n(704215),
@@ -58,7 +58,7 @@ let T = !1,
     M()
   },
   D = e => {
-    j()
+    k()
   },
   w = e => {
     r = void 0
@@ -74,17 +74,17 @@ let T = !1,
   };
 
 function x() {
-  j()
+  k()
 }
 
 function M() {
   T = !0
 }
 
-function j() {
+function k() {
   N && (r = void 0), A = !1, T = !1
 }
-let k = () => {
+let j = () => {
     let e = !v.ZP.canUseClientThemes(E.default.getCurrentUser());
     if (e === N) return !1;
     N = e
@@ -114,7 +114,7 @@ let k = () => {
   };
 class B extends(o = a.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (r = (null == e ? void 0 : e.gradientPresetId) != null ? O.qt[e.gradientPresetId] : void 0), this.waitFor(E.default, f.Z, g.Z, u.Z, h.Z), this.syncWith([E.default], k), this.syncWith([u.Z], U), this.syncWith([h.Z], G)
+    null != e && (r = (null == e ? void 0 : e.gradientPresetId) != null ? O.qt[e.gradientPresetId] : void 0), this.waitFor(E.default, f.Z, g.Z, u.Z, h.Z), this.syncWith([E.default], j), this.syncWith([u.Z], U), this.syncWith([h.Z], G)
   }
   getState() {
     return N ? {} : {
@@ -149,7 +149,7 @@ class B extends(o = a.ZP.PersistedStore) {
   }
 }
 I(B, "displayName", "ClientThemesBackgroundStore"), I(B, "persistKey", "ClientThemesBackgroundStore");
-let F = new B(l.Z, {
+let V = new B(l.Z, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: C,
   UPDATE_MOBILE_PENDING_THEME_INDEX: R,
   CLIENT_THEMES_EDITOR_OPEN: P,

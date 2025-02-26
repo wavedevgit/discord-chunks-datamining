@@ -36,13 +36,13 @@ var r = n(200651),
   L = n(510659),
   x = n(287954),
   M = n(660579),
-  j = n(652853),
-  k = n(64621),
+  k = n(652853),
+  j = n(64621),
   U = n(336383),
   G = n(194811),
   B = n(373826),
-  F = n(315324),
-  V = n(788858),
+  V = n(315324),
+  F = n(788858),
   Z = n(599864),
   H = n(386019),
   W = n(228168),
@@ -64,7 +64,7 @@ function J(e) {
   } = e, {
     profileType: et,
     theme: en
-  } = (0, j.z)(), {
+  } = (0, k.z)(), {
     interactionSource: er,
     interactionSourceId: ei
   } = (0, L.Xo)(), eo = {
@@ -179,7 +179,7 @@ function J(e) {
             variant: "heading-sm/semibold",
             color: "text-normal",
             className: z.voiceChannelHeading,
-            children: [(0, r.jsx)(V.Z, {
+            children: [(0, r.jsx)(F.Z, {
               channel: ec,
               size: "xxs",
               color: l.TVs.colors.TEXT_NORMAL,
@@ -200,7 +200,7 @@ function J(e) {
           users: eu,
           guildId: el.id,
           channelId: ec.id,
-          maxUsers: F.W,
+          maxUsers: V.W,
           size: l.EFr.SIZE_16,
           onClick: e => {
             null == e || e.stopPropagation(), null == ep || ep({
@@ -214,7 +214,7 @@ function J(e) {
         })]
       })
     },
-    eT = () => et === W.y0.FULL_SIZE ? null : (0, r.jsx)(F.Z, {
+    eT = () => et === W.y0.FULL_SIZE ? null : (0, r.jsx)(V.Z, {
       user: t,
       guild: el,
       channel: ec,
@@ -236,7 +236,7 @@ function J(e) {
     }) : K.NW.string(K.t["Jpkr/v"]);
   return (0, r.jsx)(h.Gt, {
     value: ef,
-    children: (0, r.jsx)(k.Z, {
+    children: (0, r.jsx)(j.Z, {
       sourceType: W.n_.ACTIVITY,
       user: t,
       children: (0, r.jsx)(x.Z, {

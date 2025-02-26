@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => V
+  Z: () => F
 }), n(47120);
 var o, a = n(392711),
   s = n.n(a),
@@ -138,11 +138,11 @@ function M(e) {
   return o && (m = {}, v = {}, y = {}, b = {}, E.clear()), r = t.id, i = n, o
 }
 
-function j() {
+function k() {
   m = {}, v = {}, y = {}, b = {}, E.clear()
 }
 
-function k(e) {
+function j(e) {
   let {
     voiceStates: t,
     user: n,
@@ -175,7 +175,7 @@ function B(e) {
   } = e;
   T(t)
 }
-class F extends(o = l.ZP.Store) {
+class V extends(o = l.ZP.Store) {
   getAllVoiceStates() {
     return m
   }
@@ -247,11 +247,11 @@ class F extends(o = l.ZP.Store) {
     return _
   }
 }
-p(F, "displayName", "VoiceStateStore");
-let V = new F(c.Z, {
+p(V, "displayName", "VoiceStateStore");
+let F = new V(c.Z, {
   CONNECTION_OPEN: M,
-  CONNECTION_OPEN_SUPPLEMENTAL: j,
-  OVERLAY_INITIALIZE: k,
+  CONNECTION_OPEN_SUPPLEMENTAL: k,
+  OVERLAY_INITIALIZE: j,
   VOICE_CHANNEL_SELECT: x,
   VOICE_STATE_UPDATES: P,
   GUILD_DELETE: U,

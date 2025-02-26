@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $H: () => F,
+  $H: () => V,
   AB: () => U,
-  JS: () => j,
+  JS: () => k,
   ZP: () => H,
   hH: () => x,
-  kO: () => V,
+  kO: () => F,
   oG: () => Z,
-  v_: () => k,
+  v_: () => j,
   yw: () => B
 });
 var r = n(392711),
@@ -102,13 +102,13 @@ function M(e, t) {
   }
 }
 
-function j(e) {
+function k(e) {
   if (null == e) return null;
   let t = u.Z.getChannel(e);
-  return null == t ? null : k(t)
+  return null == t ? null : j(t)
 }
 
-function k(e) {
+function j(e) {
   var t;
   if (null == e) return null;
   let n = !1,
@@ -141,7 +141,7 @@ function U(e) {
     channel_type: t.type,
     guild_id: t.getGuildId(),
     media_session_id: r
-  }, V(t.getGuildId(), t.id, n), (0, C.V)())
+  }, F(t.getGuildId(), t.id, n), (0, C.V)())
 }
 
 function G(e, t) {
@@ -157,13 +157,13 @@ function B(e) {
     i = "guild_id" in t ? t.guild_id : r ? y.Z.getGuildId() : null,
     o = "channel_id" in t ? t.channel_id : r ? b.Z.getChannelId(i) : null,
     a = u.Z.getChannel(o),
-    s = w({}, t, x(G(a, i)), null != i && null != o && (0, P.AB)(o) ? M(i, o) : k(a));
+    s = w({}, t, x(G(a, i)), null != i && null != o && (0, P.AB)(o) ? M(i, o) : j(a));
   T.default.track(e, s, {
     flush: n
   })
 }
 
-function F(e) {
+function V(e) {
   let t = u.Z.getChannel(e);
   if (null == t) return {
     channel_id: e
@@ -203,7 +203,7 @@ function F(e) {
   }
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
   let r = {
     voice_state_count: 0,
     video_stream_count: 0,
@@ -224,5 +224,5 @@ function Z(e, t) {
 }
 let H = {
   trackWithMetadata: B,
-  getVoiceStateMetadata: V
+  getVoiceStateMetadata: F
 }

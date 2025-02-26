@@ -6,14 +6,14 @@ n.d(t, {
   Ou: () => G,
   R2: () => L,
   T$: () => D,
-  Uu: () => j,
-  ZC: () => V,
+  Uu: () => k,
+  ZC: () => F,
   Zm: () => w,
-  bK: () => k,
+  bK: () => j,
   mx: () => U,
   t6: () => x,
   tv: () => B,
-  vY: () => F
+  vY: () => V
 }), n(47120);
 var r = n(192379),
   i = n(525654),
@@ -120,7 +120,7 @@ function M(e, t) {
   }, [i])
 }
 
-function j(e) {
+function k(e) {
   M(e, () => {
     let t = f.Z.getCurrentUserActiveStream();
     if (null != t && t.channelId === e.id) {
@@ -132,7 +132,7 @@ function j(e) {
   })
 }
 
-function k() {
+function j() {
   var e;
   let t = (null !== (e = o().name) && void 0 !== e ? e : "unknown").toLowerCase(),
     n = (0, s.e7)([E.Z], () => E.Z.isFocused()),
@@ -156,7 +156,7 @@ function B(e, t, n, r) {
   return !t && null == n && ("" !== e || null != r && r.length > 0)
 }
 
-function F(e) {
+function V(e) {
   if (null != e) return {
     message_emoji: {
       id: e.emoji.id,
@@ -165,7 +165,7 @@ function F(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   if (null == e || null == e.potions || 0 === e.potions.length) return null;
   for (let r of e.potions) {
     var t, n;

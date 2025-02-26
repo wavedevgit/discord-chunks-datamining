@@ -19,7 +19,7 @@ function f(e) {
   let {
     locked: t,
     keybind: n
-  } = e, r = (0, l.Wu)([a.Z], () => a.Z.getNotifications()), u = (0, l.e7)([c.Z], () => c.Z.getNotificationPositionMode());
+  } = e, r = (0, l.Wu)([a.Z], () => a.Z.getNotifications()), u = (0, l.e7)([c.default], () => c.default.getNotificationPositionMode());
   if (u === h._vf.DISABLED) return null;
   let f = r.filter(e => !t || e.status !== h._1z.TIMED_OUT),
     m = (0, s.groupBy)(f, e => e.type);

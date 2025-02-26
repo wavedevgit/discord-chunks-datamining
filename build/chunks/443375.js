@@ -37,13 +37,13 @@ var i = n(120356),
   L = n(194811),
   x = n(373826),
   M = n(315324),
-  j = n(262210),
-  k = n(103479),
+  k = n(262210),
+  j = n(103479),
   U = n(386019),
   G = n(553375),
   B = n(228168),
-  F = n(981631),
-  V = n(701488),
+  V = n(981631),
+  F = n(701488),
   Z = n(388032),
   H = n(481736);
 
@@ -114,7 +114,7 @@ function K(e) {
     largeImage: ec,
     smallImage: eu
   } = (0, _.FO)(W, K), ed = (0, a.EQ)(W).when(u.Z, () => eo).when(l.Z, () => {
-    if (n.id !== i.id) return () => (0, k.s)({
+    if (n.id !== i.id) return () => (0, j.s)({
       activity: W,
       user: n,
       index: 0
@@ -175,13 +175,13 @@ function K(e) {
     variant: "text-xs/normal"
   }), eh = () => {
     var e;
-    return W.type === F.IIU.WATCHING ? null : (0, u.Z)(W) ? em() : (0, r.jsx)(x.Z, {
+    return W.type === V.IIU.WATCHING ? null : (0, u.Z)(W) ? em() : (0, r.jsx)(x.Z, {
       text: null === (e = W.assets) || void 0 === e ? void 0 : e.large_text,
       variant: "text-xs/normal"
     })
   }, em = () => {
     var e, t, n, i;
-    return (null === (e = W.party) || void 0 === e ? void 0 : e.size) == null && W.application_id === V.Zc ? (0, r.jsxs)("div", {
+    return (null === (e = W.party) || void 0 === e ? void 0 : e.size) == null && W.application_id === F.Zc ? (0, r.jsxs)("div", {
       className: H.gameState,
       children: [(0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
@@ -217,7 +217,7 @@ function K(e) {
       start: e,
       end: t
     } = W.timestamps;
-    return (0, r.jsx)(j.Z, {
+    return (0, r.jsx)(k.Z, {
       start: e,
       end: t
     })

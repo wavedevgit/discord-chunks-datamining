@@ -1,11 +1,12 @@
 /**
   Module ID: 54030
-  Original File Name: 73e4d1be8ea06c05
+  Original File Name: 506ccf6e2899e834
 **/
 .textArea_ab8e5c {
     border-radius: 6px;
     border: 1px solid hsla(0,0%,100%,.08);
-    background: var(--bg-base-primary)
+    background: var(--bg-base-primary);
+    min-height: 44px
 }
 
 .container__2af41 {
@@ -1922,4 +1923,4 @@
     transform: translateX(-50%)
 }
 
-/*# sourceMappingURL=73e4d1be8ea06c05.css.map*/
+/*# sourceMappingURL=506ccf6e2899e834.css.map*/

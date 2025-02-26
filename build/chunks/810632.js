@@ -108,7 +108,7 @@ function j(e) {
             }
             return e
           }({}, t), o = o = {
-            sourcePID: (0, x.QF)(),
+            sourcePID: (0, x.getPID)(),
             selectSource: !1,
             guildId: A,
             analyticsLocation: w.Sbl.UNLOCKED_OVERLAY

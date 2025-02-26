@@ -5,13 +5,13 @@ n.d(t, {
   Hc: () => L,
   J8: () => x,
   Q6: () => A,
-  V9: () => k,
+  V9: () => j,
   WD: () => w,
   X_: () => P,
   Zt: () => S,
   Zv: () => T,
   _V: () => N,
-  cv: () => j,
+  cv: () => k,
   gM: () => B,
   jl: () => M,
   sM: () => C,
@@ -116,7 +116,7 @@ let {
     default:
       return !1
   }
-}, x = e => e.type === d.n0.GUILD, M = e => e.type === d.n0.STANDARD, j = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], k = e => {
+}, x = e => e.type === d.n0.GUILD, M = e => e.type === d.n0.STANDARD, k = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], j = e => {
   if (null === e) return !1;
   let t = e.guild_id;
   return void 0 !== a.Z.getGuild(t)

@@ -171,7 +171,7 @@ function L(e) {
 }
 
 function x(e) {
-  return e.replace(b, (e, t) => V(t, e))
+  return e.replace(b, (e, t) => F(t, e))
 }
 
 function M(e) {
@@ -185,8 +185,8 @@ function M(e) {
     text: e
   }
 }
-let j = String.fromCodePoint(917631),
-  k = String.fromCodePoint(127988),
+let k = String.fromCodePoint(917631),
+  j = String.fromCodePoint(127988),
   U = RegExp("^[\\u{E0061}-\\u{E007A}]$", "u");
 
 function G(e, t) {
@@ -201,12 +201,12 @@ function G(e, t) {
   for (let e = 0; e < o.length; e++) {
     let t = o[e];
     if (null != r && "" !== r) {
-      if (t === j) t = r + t, r = "";
+      if (t === k) t = r + t, r = "";
       else if (U.test(t)) {
         r += t;
         continue
       } else i.push(M(r)), r = ""
-    } else if (t === k) {
+    } else if (t === j) {
       r = t;
       continue
     }
@@ -227,13 +227,13 @@ function B(e) {
   return G(e).map(e => "text" === e.type ? e.text : e.emojiName).join("")
 }
 
-function F(e) {
+function V(e) {
   if (!L(e)) return null;
   let t = G(e, !0).map(e => "text" === e.type ? e.text : e.emojiName).join("");
   return t === e ? null : t
 }
 
-function V(e) {
+function F(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
   return Object.prototype.hasOwnProperty.call(f, e) ? f[e] : t
 }
@@ -256,10 +256,10 @@ let W = {
   getByCategory: w,
   contentHasUnicodeOrEmoji: L,
   translateInlineEmojiToSurrogates: x,
-  maybeTranslateSurrogatesToInlineEmoji: F,
+  maybeTranslateSurrogatesToInlineEmoji: V,
   findInlineEmojisFromSurrogates: G,
   translateSurrogatesToInlineEmoji: B,
-  convertNameToSurrogate: V,
+  convertNameToSurrogate: F,
   convertSurrogateToName: Z,
   convertShortcutToName: function e(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],

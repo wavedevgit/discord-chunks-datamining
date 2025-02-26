@@ -29,7 +29,10 @@ function b(e) {
     mutualFriends: C,
     mutualGuilds: v,
     isFetching: y
-  } = (0, s.Z)(t, !0), x = !t.bot && null != C && C.length > 0, j = null != v && v.length > 0;
+  } = (0, s.Z)(t, {
+    fetch: !0,
+    type: "panel"
+  }), x = !t.bot && null != C && C.length > 0, j = null != v && v.length > 0;
   return x || j ? (0, r.jsxs)(u.Z.Overlay, {
     className: g.overlay,
     children: [j && (0, r.jsx)(f.Z, {

@@ -95,13 +95,13 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
       isUsingKeyboardNavigation: L,
       onInspect: x,
       onSelect: M,
-      rowIndex: j,
-      stickerClassName: k,
+      rowIndex: k,
+      stickerClassName: j,
       stickerDescriptors: U,
       stickerPadding: G = P,
       stickerSize: B = R,
-      ownedStickerPacks: F,
-      enlargeOnInteraction: V = !1,
+      ownedStickerPacks: V,
+      enlargeOnInteraction: F = !1,
       channel: Z,
       currentUser: H,
       checkSendability: W = !0
@@ -120,11 +120,11 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
     return (0, r.jsx)("div", N(I({
       className: O.row,
       style: z
-    }, null == S ? void 0 : S(j)), {
+    }, null == S ? void 0 : S(k)), {
       children: U.map(e => {
         var d;
         let f = e.visibleRowIndex === (null == C ? void 0 : C.rowIndex) && e.columnIndex === (null == C ? void 0 : C.columnIndex),
-          S = e.type === m.al.STICKER && V && f,
+          S = e.type === m.al.STICKER && F && f,
           T = t => {
             if ((null == w ? void 0 : w.current) === !0 || (null == L ? void 0 : L.current) === !0) return;
             let n = t.altKey;
@@ -146,7 +146,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
               }, n))
             }))
           },
-          U = null !== (d = null == l ? void 0 : l(e.columnIndex, j)) && void 0 !== d ? d : {},
+          U = null !== (d = null == l ? void 0 : l(e.columnIndex, k)) && void 0 !== d ? d : {},
           {
             ref: G,
             tabIndex: K,
@@ -158,7 +158,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
             return (0, r.jsx)("div", N(I({}, J), {
               children: (0, r.jsxs)(c.P3F, {
                 "aria-label": e.name,
-                className: a()(O.createSticker, k, {
+                className: a()(O.createSticker, j, {
                   [O.createInspected]: f
                 }),
                 innerRef: G,
@@ -167,7 +167,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
                 onMouseMove: R,
                 onClick: P,
                 style: q,
-                children: [!V && (0, r.jsx)("div", {
+                children: [!F && (0, r.jsx)("div", {
                   className: O.inspectedIndicator
                 }), (0, r.jsx)("div", {
                   className: O.iconWrapper,
@@ -184,7 +184,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
               })
             }), e.guild_id);
           case m.al.STICKER: {
-            let s = t && null != F && (0, g.jl)(e.sticker) && !F.has(e.sticker.pack_id),
+            let s = t && null != V && (0, g.jl)(e.sticker) && !V.has(e.sticker.pack_id),
               l = e => {
                 (0, u.jW)(e, async () => {
                   let {
@@ -196,7 +196,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
             return (0, i.createElement)("div", N(I({}, J), {
               key: e.sticker.id
             }), (0, r.jsxs)(c.P3F, {
-              className: a()(O.sticker, k, {
+              className: a()(O.sticker, j, {
                 [O.stickerInspected]: f,
                 [O.showPulse]: Q === e.sticker.id
               }),
@@ -213,16 +213,16 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
                 children: (0, E.Co)(e.sticker)
               }), (0, r.jsxs)("div", {
                 "aria-hidden": !0,
-                children: [!V && (0, r.jsx)("div", {
+                children: [!F && (0, r.jsx)("div", {
                   className: O.inspectedIndicator
                 }), (0, r.jsx)(E.ZP, {
                   className: a()(O.stickerNode, {
-                    [O.stickerNodeDimmed]: V && !f && null != C && -1 !== C.rowIndex && -1 !== C.columnIndex,
+                    [O.stickerNodeDimmed]: F && !f && null != C && -1 !== C.rowIndex && -1 !== C.columnIndex,
                     [O.stickerNodeHidden]: S,
                     [O.stickerUnsendable]: W && !(0, h.kl)(e.sticker, H, Z)
                   }),
                   disableAnimation: !f && !o,
-                  enlargeOnInteraction: V,
+                  enlargeOnInteraction: F,
                   isInteracting: f,
                   maskAsset: f,
                   sticker: e.sticker,

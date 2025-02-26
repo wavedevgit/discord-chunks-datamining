@@ -2,12 +2,12 @@
 i.d(e, {
   default: () => l
 });
-var n = i(200651),
-  c = i(192379),
-  o = i(442837),
-  a = i(481060),
-  s = i(239091),
-  u = i(13245),
+var a = i(200651),
+  n = i(192379),
+  c = i(442837),
+  o = i(481060),
+  u = i(239091),
+  s = i(13245),
   r = i(237997),
   d = i(981631),
   f = i(388032);
@@ -18,21 +18,21 @@ function l(t) {
     onClose: i
   } = t, {
     textChatNotificationMode: l
-  } = (0, o.cj)([r.Z], () => ({
-    textChatNotificationMode: r.Z.getTextChatNotificationMode()
-  })), h = c.useRef(i);
-  return c.useEffect(() => {
+  } = (0, c.cj)([r.default], () => ({
+    textChatNotificationMode: r.default.getTextChatNotificationMode()
+  })), h = n.useRef(i);
+  return n.useEffect(() => {
     h.current = i
-  }), c.useEffect(() => () => h.current(), []), (0, n.jsx)(a.v2r, {
+  }), n.useEffect(() => () => h.current(), []), (0, a.jsx)(o.v2r, {
     navId: "overlay-notifications-widget-context-menu",
-    onClose: s.Zy,
+    onClose: u.Zy,
     "aria-label": f.NW.string(f.t.tPfVWl),
     onSelect: e,
-    children: (0, n.jsx)(a.S89, {
+    children: (0, a.jsx)(o.S89, {
       label: f.NW.string(f.t.Fy5kPj),
       checked: l === d.Ypu.ENABLED,
       id: "overlay-text-chat-notifications",
-      action: () => u.Z.setTextChatNotificationMode(l === d.Ypu.ENABLED ? d.Ypu.DISABLED : d.Ypu.ENABLED)
+      action: () => s.Z.setTextChatNotificationMode(l === d.Ypu.ENABLED ? d.Ypu.DISABLED : d.Ypu.ENABLED)
     })
   })
 }

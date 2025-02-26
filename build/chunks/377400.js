@@ -1,23 +1,23 @@
-/** Chunk was on 25499 **/
+/** Chunk was on 63061 **/
 n.d(t, {
   Z: () => u
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  l = n(570140),
-  o = n(317770),
-  a = n(175281),
-  s = n(285371);
-class c extends o.Z {
+  o = n(570140),
+  l = n(317770),
+  s = n(175281),
+  a = n(285371);
+class c extends l.Z {
   _initialize() {
-    l.Z.subscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), l.Z.subscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
+    o.Z.subscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), o.Z.subscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
   }
   _terminate() {
-    l.Z.unsubscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), l.Z.unsubscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
+    o.Z.unsubscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), o.Z.unsubscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
   }
   showKeyboardShortcuts() {
-    (0, i.h7j)(e => (0, r.jsx)(a.Z, function(e) {
+    (0, i.h7j)(e => (0, r.jsx)(s.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -35,11 +35,11 @@ class c extends o.Z {
       }
       return e
     }({}, e)), {
-      modalKey: s.J
+      modalKey: a.J
     })
   }
   hideKeyboardShortcuts() {
-    (0, i.Mr3)(s.J)
+    (0, i.Mr3)(a.J)
   }
 }
 let u = new c

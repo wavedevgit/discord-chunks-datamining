@@ -14,27 +14,27 @@ var r = n(200651),
   h = n(185625),
   p = n(551549),
   g = n(108427),
-  _ = n(314897),
-  m = n(981631),
+  m = n(314897),
+  _ = n(981631),
   f = n(388032),
   b = n(455812);
 o.ZP.initialize();
 let N = e => {
   let {
     location: t
-  } = e, n = (0, o.e7)([_.default], () => _.default.isAuthenticated()), N = (0, o.e7)([d.Z], () => d.Z.hasLoadedExperiments), x = (0, p.oK)("RSL - Landing Page"), [v, E] = i.useState(!1), [I, O] = i.useState(f.NW.string(f.t["9exy+f"])), [C, S] = i.useState(!0), j = e => {
+  } = e, n = (0, o.e7)([m.default], () => m.default.isAuthenticated()), N = (0, o.e7)([d.Z], () => d.Z.hasLoadedExperiments), x = (0, p.oK)("RSL - Landing Page"), [v, I] = i.useState(!1), [E, O] = i.useState(f.NW.string(f.t["9exy+f"])), [j, C] = i.useState(!0), S = e => {
     switch (e) {
-      case m.evJ.INVALID_FORM_BODY:
-      case m.evJ.DSA_RSL_REPORT_NOT_FOUND:
+      case _.evJ.INVALID_FORM_BODY:
+      case _.evJ.DSA_RSL_REPORT_NOT_FOUND:
         O(f.NW.string(f.t.bzXDfX));
         break;
-      case m.evJ.DSA_RSL_ALREADY_REQUESTED:
+      case _.evJ.DSA_RSL_ALREADY_REQUESTED:
         O(f.NW.string(f.t.rV00ws));
         break;
-      case m.evJ.DSA_RSL_LIMITED_TIME:
+      case _.evJ.DSA_RSL_LIMITED_TIME:
         O(f.NW.string(f.t["0dI29v"]));
         break;
-      case m.evJ.DSA_RSL_REPORT_INELIGIBLE:
+      case _.evJ.DSA_RSL_REPORT_INELIGIBLE:
         O(f.NW.string(f.t["RGa/GR"]));
         break;
       default:
@@ -42,9 +42,9 @@ let N = e => {
     }
   };
   return i.useEffect(() => {
-    n ? (S(!0), s.k({
+    n ? (C(!0), s.k({
       withAnalyticsToken: !0
-    }).then(() => S(!1)).catch(() => S(!1))) : S(!1)
+    }).then(() => C(!1)).catch(() => C(!1))) : C(!1)
   }, [n]), i.useEffect(() => {
     N || x || l.Z.getExperiments()
   }, [N, x]), i.useEffect(() => {
@@ -52,18 +52,18 @@ let N = e => {
       var t, n;
       try {
         let n = null != e ? await (0, h.hs)(e) : void 0;
-        null != n ? O(f.NW.string(f.t.e6mZMj)) : j(null === (t = n.body) || void 0 === t ? void 0 : t.code)
+        null != n ? O(f.NW.string(f.t.e6mZMj)) : S(null === (t = n.body) || void 0 === t ? void 0 : t.code)
       } catch (e) {
-        j(null === (n = e.body) || void 0 === n ? void 0 : n.code)
+        S(null === (n = e.body) || void 0 === n ? void 0 : n.code)
       } finally {
-        E(!1)
+        I(!1)
       }
     };
-    E(!0), e((0, c.Z)(t)), (0, g.e)("report_second_look")
-  }, [t]), x && !C && (0, r.jsxs)(u.ZP, {
+    I(!0), e((0, c.Z)(t)), (0, g.e)("report_second_look")
+  }, [t]), x && !j && (0, r.jsxs)(u.ZP, {
     children: [(0, r.jsx)(u.Dx, {
       className: b.marginBottom8,
-      children: I
+      children: E
     }), v && (0, r.jsx)(a.$jN, {})]
   })
 }

@@ -36,8 +36,8 @@ var r = n(771356),
   L = n(583498),
   x = n(442866),
   M = n(263984),
-  j = n(591501),
-  k = n(595867),
+  k = n(591501),
+  j = n(595867),
   U = n(865790);
 let G = {
   skye: {
@@ -90,7 +90,7 @@ let G = {
   },
   tunes: {
     name: S.Z.sem63N,
-    iconURL: k.Z,
+    iconURL: j.Z,
     underDevelopment: !0,
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(100% 555.56% at 0% 100%, rgba(111, 134, 253, 0.50) 0%, rgba(111, 134, 253, 0.00) 100%), linear-gradient(90deg, rgba(254, 76, 209, 0.25) 0%, rgba(254, 76, 209, 0.00) 15%)",
     baseColor: "#010A3C",
@@ -106,7 +106,7 @@ let G = {
   },
   space_bunny: {
     name: S.Z["KN+v7+"],
-    iconURL: j.Z,
+    iconURL: k.Z,
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(100% 555.56% at 0% 100%, rgba(110, 60, 223, 0.40) 0%, rgba(110, 60, 223, 0.00) 100%), linear-gradient(90deg, rgba(118, 233, 136, 0.25) 0%, rgba(118, 233, 136, 0.00) 15%)",
     baseColor: "#160935",
     styleKey: "spacebunny",

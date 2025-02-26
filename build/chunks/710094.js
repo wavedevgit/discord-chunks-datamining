@@ -40,13 +40,13 @@ function D(e) {
       trialFooterMessageOverride: L,
       reviewWarningMessage: x,
       planGroup: M,
-      openInvoiceId: j,
-      analyticsData: k,
+      openInvoiceId: k,
+      analyticsData: j,
       analyticsLocation: U,
       referralTrialOfferId: G,
       initialPlanId: B,
-      subscriptionTier: F,
-      handleClose: V
+      subscriptionTier: V,
+      handleClose: F
     } = e,
     {
       activeSubscription: Z,
@@ -113,18 +113,18 @@ function D(e) {
     eL = null == eI ? void 0 : null === (t = eI.discount) || void 0 === t ? void 0 : t.plan_ids,
     ex = !e_ && null != eI && null != eL && null != $ && eL.includes($.id),
     eM = e_ && (0, h.pO)(em),
-    ej = null == B && null == F && ec === C.GZ.SUBSCRIPTION,
-    ek = (0, O.Kp)({
+    ek = null == B && null == V && ec === C.GZ.SUBSCRIPTION,
+    ej = (0, O.Kp)({
       isTrial: ew,
       isGift: e_,
       selectedSkuId: ee,
       startedPaymentFlowWithPaymentSources: ed.current
     }),
     eU = e_ && ec === C.GZ.ONE_TIME,
-    eG = eU || (ek ? ej && es : es),
+    eG = eU || (ej ? ek && es : es),
     eB = (0, c.id)($, e_, eg),
-    eF = i.useCallback(() => {
-      if (ek) {
+    eV = i.useCallback(() => {
+      if (ej) {
         D(E.h8.SKU_SELECT);
         return
       }
@@ -133,14 +133,14 @@ function D(e) {
         return
       }
       return eU ? D(E.h8.GIFT_CUSTOMIZATION) : D(E.h8.PLAN_SELECT)
-    }, [D, ek, eU, eB]),
-    eV = !1;
-  return ec === C.GZ.ONE_TIME ? (eV = null != X, o = (0, r.jsx)(S.Z, {
+    }, [D, ej, eU, eB]),
+    eF = !1;
+  return ec === C.GZ.ONE_TIME ? (eF = null != X, o = (0, r.jsx)(S.Z, {
     hasLegalTermsFlash: ev,
     legalTermsNodeRef: eR,
     onPaymentSourceChange: e => en(null != e ? e.id : null),
     handlePaymentSourceAdd: () => D(E.h8.ADD_PAYMENT_STEPS)
-  })) : (eV = e_ ? null == ef : null != eA && ec === C.GZ.SUBSCRIPTION && ew && !eA.canRedeemTrial(), null == Z || ep || e_ ? (a()(null != $, "Expected plan to be selected"), o = (0, r.jsx)(f.Z, {
+  })) : (eF = e_ ? null == ef : null != eA && ec === C.GZ.SUBSCRIPTION && ew && !eA.canRedeemTrial(), null == Z || ep || e_ ? (a()(null != $, "Expected plan to be selected"), o = (0, r.jsx)(f.Z, {
     selectedPlanId: $.id,
     paymentSources: z,
     onPaymentSourceChange: e => en(null != e ? e.id : null),
@@ -158,7 +158,7 @@ function D(e) {
     referralTrialOfferId: G,
     isTrial: ew || null != w && null != L,
     isDiscount: ex,
-    handleClose: V
+    handleClose: F
   })) : (a()(null != $, "Expected plan to be selected"), o = (0, r.jsx)(p.Z, {
     premiumSubscription: Z,
     paymentSources: z,
@@ -177,9 +177,9 @@ function D(e) {
     planGroup: M,
     currencies: Y,
     onCurrencyChange: e => et(e),
-    hasOpenInvoice: null != j,
+    hasOpenInvoice: null != k,
     purchaseState: ea,
-    handleClose: V
+    handleClose: F
   }))), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(v.P, {
       giftMessage: eh
@@ -191,7 +191,7 @@ function D(e) {
       children: (0, r.jsx)(T.Z, {
         premiumSubscription: null != Z ? Z : null,
         setPurchaseState: er,
-        onBack: eF,
+        onBack: eV,
         onNext: eN,
         onPurchaseError: e => ei(e),
         legalTermsNodeRef: eR,
@@ -199,16 +199,16 @@ function D(e) {
         invoiceError: eP,
         planError: eC,
         analyticsLocation: U,
-        baseAnalyticsData: k,
+        baseAnalyticsData: j,
         flowStartTime: W.startTime,
         trialId: eO,
         planGroup: M,
         purchaseTokenAuthState: J,
-        openInvoiceId: j,
+        openInvoiceId: k,
         backButtonEligible: eG,
         metadata: eT,
         isTrial: ew,
-        disablePurchase: eV
+        disablePurchase: eF
       })
     })]
   })

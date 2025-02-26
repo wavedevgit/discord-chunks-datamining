@@ -56,22 +56,22 @@ function O(e) {
     }, [n]),
     M = (0, l.e7)([f.Z], () => f.Z.isBlockedOrIgnored(null == t ? void 0 : t.id));
   if (w && M) return null;
-  let j = (null == t ? void 0 : t.bot) === !0,
-    k = (null == x ? void 0 : x.state) != null && "xs" === T,
+  let k = (null == t ? void 0 : t.bot) === !0,
+    j = (null == x ? void 0 : x.state) != null && "xs" === T,
     U = () => {
       if (null != L) return (0, r.jsx)(m.Z, {
         game: null == n ? void 0 : n.find(c.Z),
         textVariant: "text-".concat(T, "/medium"),
         textClassName: S,
-        hideText: k,
-        hideIcon: j,
+        hideText: j,
+        hideIcon: k,
         hideTooltip: R
       });
       if (null != O) return (0, r.jsx)(E.Z, {
         channel: O,
         textVariant: "text-".concat(T, "/medium"),
         textClassName: S,
-        hideText: k,
+        hideText: j,
         hideTooltip: R
       });
       let e = null == n ? void 0 : n.find(e => {
@@ -84,8 +84,8 @@ function O(e) {
         activity: e,
         textVariant: "text-".concat(T, "/medium"),
         textClassName: S,
-        hideText: k,
-        hideIcon: j,
+        hideText: j,
+        hideIcon: k,
         hideTooltip: R
       }) : null
     },

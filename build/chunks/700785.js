@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  BT: () => V,
+  BT: () => F,
   Hn: () => O,
   Hu: () => B,
   I0: () => L,
@@ -9,12 +9,12 @@ n.d(t, {
   TP: () => I,
   Uu: () => Z,
   e9: () => G,
-  iJ: () => k,
-  o4: () => j,
+  iJ: () => j,
+  o4: () => k,
   oz: () => H,
   r6: () => U,
   uB: () => x,
-  we: () => F,
+  we: () => V,
   ym: () => R
 }), n(47120);
 var r = n(392711),
@@ -219,7 +219,7 @@ function M(e, t, n) {
   return e.type !== v.d4z.PRIVATE_THREAD || n || o.e$(t, v.Plq.MANAGE_THREADS) ? o.e$(t, v.Plq.SEND_MESSAGES_IN_THREADS) ? e.isLockedThread() && !o.e$(t, v.Plq.MANAGE_THREADS) ? o.Od(t, v.Plq.SEND_MESSAGES) : o.$e(t, v.Plq.SEND_MESSAGES) : o.Od(t, v.Plq.SEND_MESSAGES) : O
 }
 
-function j(e, t) {
+function k(e, t) {
   if (f.Ec.has(e.type)) return !0;
   let {
     guild_id: n
@@ -227,14 +227,14 @@ function j(e, t) {
   if (null == t || null == n || n !== t.guild_id) return !1;
   let r = y({}, e.permissionOverwrites),
     i = y({}, t.permissionOverwrites);
-  return null == r[n] && (r[n] = F(n)), null == i[n] && (i[n] = F(n)), Object.keys(r).length === Object.keys(i).length && !Object.keys(r).some(e => {
+  return null == r[n] && (r[n] = V(n)), null == i[n] && (i[n] = V(n)), Object.keys(r).length === Object.keys(i).length && !Object.keys(r).some(e => {
     let t = r[e],
       n = i[e];
     return !(null != n && o.fS(n.deny, t.deny) && o.fS(n.allow, t.allow))
   })
 }
 
-function k(e) {
+function j(e) {
   var t;
   return i().some(m.Z.getRoles(e.id), e => e.hoist && o.e$(e.permissions, v.Plq.ADMINISTRATOR)) ? void 0 : null !== (t = e.ownerId) && void 0 !== t ? t : void 0
 }
@@ -255,7 +255,7 @@ function B(e, t) {
   return null == t.hoistRoleId ? null : m.Z.getRole(e.id, t.hoistRoleId)
 }
 
-function F(e) {
+function V(e) {
   return {
     id: e,
     type: a.BN.ROLE,
@@ -264,7 +264,7 @@ function F(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   let {
     permission: t,
     user: n,

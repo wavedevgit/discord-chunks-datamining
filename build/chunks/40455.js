@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => j
+  ZP: () => k
 }), n(47120);
 var r = n(592125),
   i = n(650774),
@@ -162,4 +162,4 @@ function M(e) {
   I = !0
 }
 _(T, "displayName", "SaveableChannelsStore"), _(T, "LATEST_SNAPSHOT_VERSION", 1);
-let j = new T
+let k = new T

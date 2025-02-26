@@ -1,13 +1,13 @@
-/** Chunk was on 25499 **/
+/** Chunk was on 63061 **/
 n.d(t, {
   Z: () => g
 }), n(653041), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
-  a = n(392711),
-  s = n.n(a),
+  o = n(120356),
+  l = n.n(o),
+  s = n(392711),
+  a = n.n(s),
   c = n(714338),
   u = n(585483),
   d = n(981631),
@@ -25,7 +25,7 @@ let p = {
     PRIMARY: () => !0,
     SECONDARY: () => !0
   },
-  h = () => (0, r.jsxs)("div", {
+  m = () => (0, r.jsxs)("div", {
     className: _.symbol,
     children: [(0, r.jsx)("div", {
       className: _.symbolBackground
@@ -34,7 +34,7 @@ let p = {
       src: n(977706)
     })]
   }, "symbol");
-class m extends i.PureComponent {
+class h extends i.PureComponent {
   componentDidMount() {
     this.setState({
       animating: !0
@@ -120,27 +120,27 @@ class m extends i.PureComponent {
       offsetX: t,
       offsetY: n,
       animating: i,
-      scale: l
-    } = this.state, a = [this.renderPrimary()];
-    return e && a.push(this.renderSecondary(t, n)), (0, r.jsx)("div", {
-      className: o()(_.container, {
+      scale: o
+    } = this.state, s = [this.renderPrimary()];
+    return e && s.push(this.renderSecondary(t, n)), (0, r.jsx)("div", {
+      className: l()(_.container, {
         [_.animate]: i
       }),
       style: {
         top: this.props.top,
         left: this.props.left,
-        transform: "scale(".concat(l, ")")
+        transform: "scale(".concat(o, ")")
       },
-      children: a
+      children: s
     })
   }
   constructor(...e) {
     super(...e), E(this, "_renderSecondaryTimeout", null), E(this, "_doneTimeout", null), E(this, "state", {
       animating: !1,
       renderSecondary: !1,
-      scale: s().random(.6, 1, !0),
-      offsetX: s().random(0, 140, !1) - 70,
-      offsetY: s().random(0, 140, !1) - 70
+      scale: a().random(.6, 1, !0),
+      offsetX: a().random(0, 140, !1) - 70,
+      offsetY: a().random(0, 140, !1) - 70
     }), E(this, "done", () => {
       this.props.onAnimationComplete(this.props.componentId)
     })
@@ -161,7 +161,7 @@ class f extends i.PureComponent {
   }
   render() {
     return (0, r.jsx)("div", {
-      className: o()(_.ragingDemon, {
+      className: l()(_.ragingDemon, {
         [_.visible]: this.state.visible
       }),
       children: this.children
@@ -177,7 +177,7 @@ class f extends i.PureComponent {
     }), E(this, "removeExplosion", e => {
       let t = this.children,
         n = t.findIndex(t => {
-          if (t.type !== m) return !1;
+          if (t.type !== h) return !1;
           let n = t.props;
           return null != n.componentId && n.componentId === e
         });
@@ -188,17 +188,17 @@ class f extends i.PureComponent {
         n = window.innerHeight / 2 >> 0;
       if (this.state.explosions < 8) {
         let i = "expl-".concat(this.state.explosions);
-        e.push((0, r.jsx)(m, {
+        e.push((0, r.jsx)(h, {
           componentId: i,
-          top: s().random(n - 100, n + 100, !1),
-          left: s().random(t - 200, t + 200, !1),
+          top: a().random(n - 100, n + 100, !1),
+          left: a().random(t - 200, t + 200, !1),
           onAnimationComplete: this.removeExplosion
         }, i)), this.setTimeout(this.createExplosion, 240), this.setState({
           explosions: this.state.explosions + 1
         })
       } else this.setTimeout(this.addSymbol, 750)
     }), E(this, "addSymbol", () => {
-      this.children = [(0, r.jsx)(h, {}, "symbol")], this.forceUpdate(), this.setTimeout(this.delayedClose, 3e3)
+      this.children = [(0, r.jsx)(m, {}, "symbol")], this.forceUpdate(), this.setTimeout(this.delayedClose, 3e3)
     }), E(this, "delayedClose", () => {
       this.props.handleDemonClose()
     })

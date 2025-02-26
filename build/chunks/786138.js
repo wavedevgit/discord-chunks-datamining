@@ -82,13 +82,13 @@ function b(e) {
       label: v.NW.string(v.t.ytAD9f),
       children: R
     }) : null,
-    j = w ? (0, r.jsx)(a.S89, {
+    k = w ? (0, r.jsx)(a.S89, {
       id: "stream-settings-audio-enable",
       label: O ? v.NW.string(v.t.af2Tw8) : v.NW.string(v.t.ZJEHt7),
       checked: T,
       action: x
     }) : null,
-    k = N && !y ? (0, r.jsx)(a.sNh, {
+    j = N && !y ? (0, r.jsx)(a.sNh, {
       id: "change-windows",
       label: O ? v.NW.string(v.t.eAktHh) : v.NW.string(v.t.qntSam),
       icon: a.hGI,
@@ -101,8 +101,8 @@ function b(e) {
       action: () => (0, c.Z)(t)
     });
   return O ? (0, r.jsxs)(r.Fragment, {
-    children: [U, k, M, j]
+    children: [U, j, M, k]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [M, b ? P : null, j, k, U]
+    children: [M, b ? P : null, k, j, U]
   })
 }

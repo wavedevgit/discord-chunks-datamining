@@ -1,4 +1,4 @@
-/** Chunk was on 624 **/
+/** Chunk was on 53485 **/
 n.d(t, {
   Z: () => eQ,
   m: () => eX
@@ -334,7 +334,7 @@ class eX extends i.PureComponent {
           handleInputAudioContextMenu: this.handleInputAudioContextMenu,
           handleOutputAudioContextMenu: this.handleOutputAudioContextMenu,
           handleOpenAccountSettings: this.handleOpenAccountSettings,
-          handleOpenSettingsContextMenu: this.handleOpenAccountSettings
+          handleOpenSettingsContextMenu: this.handleOpenSettingsContextMenu
         }))]
       }), (0, r.jsx)(Y.Z, {})]
     })

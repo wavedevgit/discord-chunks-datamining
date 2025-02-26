@@ -14,8 +14,8 @@ var r = n(200651),
   h = n(573261),
   p = n(720196),
   g = n(981631),
-  _ = n(388032),
-  m = n(279178),
+  m = n(388032),
+  _ = n(279178),
   f = n(455812);
 
 function b(e) {
@@ -24,7 +24,7 @@ function b(e) {
     setSlide: o,
     ready: b,
     token: N
-  } = e, [x, v] = i.useState(!1), [E, I] = i.useState(null), [O, C] = i.useState(null), [S, j] = i.useState(""), y = i.useRef(null);
+  } = e, [x, v] = i.useState(!1), [I, E] = i.useState(null), [O, j] = i.useState(null), [C, S] = i.useState(""), y = i.useRef(null);
   return i.useEffect(() => {
     if (b) {
       var e;
@@ -35,7 +35,7 @@ function b(e) {
       src: null == O ? n(26230) : n(935227),
       className: a()(f.marginBottom20, f.marginTop8)
     }), (0, r.jsx)(u.Dx, {
-      children: _.NW.string(_.t["IfBQ5+"])
+      children: m.NW.string(m.t["IfBQ5+"])
     }), null != O && "" !== O ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
@@ -45,28 +45,28 @@ function b(e) {
       children: [(0, r.jsx)(u.II, {
         name: "password",
         type: "password",
-        label: _.NW.string(_.t["8dM4FB"]),
+        label: m.NW.string(m.t["8dM4FB"]),
         setRef: y,
         className: f.marginBottom20,
-        value: S,
-        onChange: j,
-        error: E,
+        value: C,
+        onChange: S,
+        error: I,
         autoComplete: "new-password",
         maxLength: 72,
-        placeholder: _.NW.string(_.t["yY/PXV"])
+        placeholder: m.NW.string(m.t["yY/PXV"])
       }), (0, r.jsx)(u.zx, {
         className: f.marginTop8,
         onClick: () => {
           if (!x) {
-            if (0 === S.length) {
-              I(_.NW.string(_.t.R98xDw)), d.S.dispatch(g.CkL.WAVE_EMPHASIZE);
+            if (0 === C.length) {
+              E(m.NW.string(m.t.R98xDw)), d.S.dispatch(g.CkL.WAVE_EMPHASIZE);
               return
             }
-            return null != O && C(null), null != E && I(null), t(""), v(!0), h.Z.post({
+            return null != O && j(null), null != I && E(null), t(""), v(!0), h.Z.post({
               url: g.ANM.ACCOUNT_REVERT,
               body: {
                 token: N,
-                password: S
+                password: C
               },
               trackedActionData: {
                 event: l.NetworkActionNames.ACCOUNT_REVERT
@@ -78,23 +78,23 @@ function b(e) {
                   email: n
                 }
               } = e;
-              j(""), t(n), o(p.n.SUCCESS)
+              S(""), t(n), o(p.n.SUCCESS)
             }).catch(e => {
-              if (e instanceof Error) C(_.NW.formatToPlainString(_.t.aTVNen, {
+              if (e instanceof Error) j(m.NW.formatToPlainString(m.t.aTVNen, {
                 statusPageURL: g.yXt.STATUS
               }));
               else {
                 let t = new c.Z(e);
-                t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : C((function(e) {
+                t.hasFieldErrors() ? E(t.getAnyErrorMessage()) : j((function(e) {
                   switch (e) {
                     case g.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
-                      return _.NW.string(_.t["11zzGR"]);
+                      return m.NW.string(m.t["11zzGR"]);
                     case g.evJ.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
-                      return _.NW.string(_.t["6qmgaG"]);
+                      return m.NW.string(m.t["6qmgaG"]);
                     case g.evJ.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
-                      return _.NW.string(_.t.bChnKi);
+                      return m.NW.string(m.t.bChnKi);
                     default:
-                      return _.NW.format(_.t.aTVNen, {
+                      return m.NW.format(m.t.aTVNen, {
                         statusPageURL: g.yXt.STATUS
                       })
                   }
@@ -108,16 +108,16 @@ function b(e) {
         },
         submitting: x,
         disabled: x,
-        children: _.NW.string(_.t.ezv91d)
+        children: m.NW.string(m.t.ezv91d)
       })]
     }), (0, r.jsx)("div", {
-      className: m.buttonContainer,
+      className: _.buttonContainer,
       children: (0, r.jsx)(u.zx, {
         color: u.zx.Colors.PRIMARY,
         onClick: () => {
-          j(""), o(p.n.START)
+          S(""), o(p.n.START)
         },
-        children: _.NW.string(_.t.rzxnQ0)
+        children: m.NW.string(m.t.rzxnQ0)
       })
     })]
   })

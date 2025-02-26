@@ -43,12 +43,12 @@ function y(e) {
     isTryItOutFlow: L = !1,
     disabledInputs: x = !1,
     hideCustomStatus: M = !1,
-    hideBioSection: j = !1,
-    hideMessageInput: k = !0,
+    hideBioSection: k = !1,
+    hideMessageInput: j = !0,
     hideExampleButton: U = !1
   } = e, G = (0, l.ZP)(t.id, null == n ? void 0 : n.id), {
     avatarSrc: B,
-    avatarDecorationSrc: F
+    avatarDecorationSrc: V
   } = (0, u.Z)({
     user: t,
     guildId: null == n ? void 0 : n.id,
@@ -56,7 +56,7 @@ function y(e) {
     avatarOverride: T,
     size: a.EFr.SIZE_80,
     showPending: !0
-  }), V = (0, p.ZT)({
+  }), F = (0, p.ZT)({
     pendingProfileEffectId: P,
     displayProfile: G
   }), {
@@ -94,7 +94,7 @@ function y(e) {
         displayProfile: G,
         canUsePremiumCustomization: i,
         previewAvatar: B,
-        previewAvatarDecoration: F,
+        previewAvatarDecoration: V,
         previewTheme: Z,
         previewPrimaryColor: H,
         className: D,
@@ -118,13 +118,13 @@ function y(e) {
       pendingBio: S,
       pendingPronouns: I,
       isTryItOutFlow: L,
-      hideBioSection: j
+      hideBioSection: k
     }), (0, r.jsx)(g.Z, {
       user: t,
-      hideMessageInput: k,
+      hideMessageInput: j,
       hideExampleButton: U
-    }), null != V && (0, r.jsx)(s.Z, {
-      profileEffectId: V
+    }), null != F && (0, r.jsx)(s.Z, {
+      profileEffectId: F
     })]
   })
 }

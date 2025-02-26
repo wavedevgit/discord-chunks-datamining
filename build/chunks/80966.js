@@ -97,14 +97,14 @@ class m extends i.Component {
         onControlsHide: L,
         onVolumeChange: x,
         onMute: M,
-        alt: j = c.NW.string(c.t.FlNoSU)
+        alt: k = c.NW.string(c.t.FlNoSU)
       } = e,
-      k = _(e, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "alt"]);
+      j = _(e, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "alt"]);
     return (0, r.jsx)(a.ZP, p(d({
-      alt: j,
+      alt: k,
       className: i,
       src: f
-    }, k), {
+    }, j), {
       minWidth: s.ZP.minWidth,
       minHeight: s.ZP.minHeight,
       shouldLink: !1,

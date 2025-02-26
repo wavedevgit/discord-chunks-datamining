@@ -191,8 +191,8 @@ function x(e) {
   null != r && (r.mode = n)
 }
 let M = [],
-  j = [],
-  k = [];
+  k = [],
+  j = [];
 class U extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(c.Z, p.ZP, l.Z)
@@ -207,7 +207,7 @@ class U extends(r = a.ZP.Store) {
   }
   getOnboardingResponses(e) {
     var t, n, r;
-    return l.Z.isFullServerPreview(e) ? Array.from(null !== (n = l.Z.getOnboardingResponses(e)) && void 0 !== n ? n : j) : null !== (r = null === (t = v[e]) || void 0 === t ? void 0 : t.responses) && void 0 !== r ? r : j
+    return l.Z.isFullServerPreview(e) ? Array.from(null !== (n = l.Z.getOnboardingResponses(e)) && void 0 !== n ? n : k) : null !== (r = null === (t = v[e]) || void 0 === t ? void 0 : t.responses) && void 0 !== r ? r : k
   }
   getSelectedOptions(e) {
     let t = this.getOnboardingResponses(e);
@@ -215,9 +215,9 @@ class U extends(r = a.ZP.Store) {
   }
   getOnboardingResponsesForPrompt(e, t) {
     let n = v[e];
-    if (null == n) return j;
+    if (null == n) return k;
     let r = n.prompts.find(e => e.id === t);
-    return null == r ? j : o().intersection(r.options.map(e => e.id), this.getOnboardingResponses(e))
+    return null == r ? k : o().intersection(r.options.map(e => e.id), this.getOnboardingResponses(e))
   }
   getEnabledOnboardingPrompts(e) {
     var t, n;
@@ -226,7 +226,7 @@ class U extends(r = a.ZP.Store) {
   }
   getDefaultChannelIds(e) {
     var t, n;
-    return null !== (n = null === (t = v[e]) || void 0 === t ? void 0 : t.defaultChannelIds) && void 0 !== n ? n : k
+    return null !== (n = null === (t = v[e]) || void 0 === t ? void 0 : t.defaultChannelIds) && void 0 !== n ? n : j
   }
   getEnabled(e) {
     var t, n;

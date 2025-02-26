@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L6: () => F,
+  L6: () => V,
   Rc: () => G,
   WH: () => R,
-  aP: () => j,
+  aP: () => k,
   dV: () => B,
   g: () => M,
   iV: () => x,
-  n9: () => k,
+  n9: () => j,
   pR: () => L,
   rn: () => w,
   tK: () => P,
@@ -130,14 +130,14 @@ function x(e, t) {
 
 function M(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-  j(e, t), s.Z.dispatch({
+  k(e, t), s.Z.dispatch({
     type: "STREAM_STOP",
     streamKey: e,
     appContext: __OVERLAY__ ? I.IlC.OVERLAY : I.IlC.APP
   })
 }
 
-function j(e) {
+function k(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
   s.Z.dispatch({
     type: "STREAM_CLOSE",
@@ -145,7 +145,7 @@ function j(e) {
     canShowFeedback: t
   })
 }
-async function k(e, t, n) {
+async function j(e, t, n) {
   if (!f.Z.shouldFetchPreview(e, t, n)) return;
   let r = (0, c.V9)({
     streamType: null != e ? T.lo.GUILD : T.lo.CALL,
@@ -210,7 +210,7 @@ function B(e, t) {
   })
 }
 
-function F() {
+function V() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
     t = p.Z.getCurrentUserActiveStream();
   null != t && M((0, c.V9)(t), e)

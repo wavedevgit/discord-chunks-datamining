@@ -1,23 +1,23 @@
-/** Chunk was on 25499 **/
+/** Chunk was on 63061 **/
 n.d(t, {
-  Sr: () => C,
-  Xq: () => T,
+  Sr: () => T,
+  Xq: () => C,
   Zg: () => S
 }), n(411104);
 var r = n(186070),
   i = n(185514),
-  l = n(360038),
-  o = n(175724),
-  a = n(705371),
-  s = n(138976),
+  o = n(360038),
+  l = n(175724),
+  s = n(705371),
+  a = n(138976),
   c = n(167042),
   u = n(239748),
   d = n(337482),
   _ = n(679080),
   E = n(510761),
   p = n(189509),
-  h = n(673553),
-  m = n(280492),
+  m = n(673553),
+  h = n(280492),
   f = n(746887),
   g = n(721383),
   O = n(743810),
@@ -27,12 +27,12 @@ var r = n(186070),
 function b() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
   return t.map(e => {
-    let t = C[e];
+    let t = T[e];
     if (null == t) throw Error("getBindsFor(...): No bind for ".concat(t));
     return t.binds[0]
   })
 }
-let C = {
+let T = {
     [N.EkH.SERVER_NEXT]: E.nq,
     [N.EkH.SERVER_PREV]: E.X3,
     [N.EkH.CHANNEL_NEXT]: i.tQ,
@@ -44,25 +44,25 @@ let C = {
     [N.EkH.MENTION_CHANNEL_NEXT]: O.Nv,
     [N.EkH.MENTION_CHANNEL_PREV]: O.uX,
     [N.EkH.TOGGLE_PREVIOUS_GUILD]: i.$c,
-    [N.EkH.JUMP_TO_GUILD]: l.u,
+    [N.EkH.JUMP_TO_GUILD]: o.u,
     [N.EkH.SUBMIT]: p.z,
-    [N.EkH.TEXTAREA_FOCUS]: h.U,
-    [N.EkH.MARK_CHANNEL_READ]: o.f,
-    [N.EkH.MARK_SERVER_READ]: a.l,
-    [N.EkH.TOGGLE_MUTE]: m.iN,
-    [N.EkH.TOGGLE_DEAFEN]: m.oV,
+    [N.EkH.TEXTAREA_FOCUS]: m.U,
+    [N.EkH.MARK_CHANNEL_READ]: l.f,
+    [N.EkH.MARK_SERVER_READ]: s.l,
+    [N.EkH.TOGGLE_MUTE]: h.iN,
+    [N.EkH.TOGGLE_DEAFEN]: h.oV,
     [N.EkH.TOGGLE_CATEGORY_COLLAPSED]: f.u,
     [N.EkH.SCROLL_UP]: d.B2,
     [N.EkH.SCROLL_DOWN]: d.gN,
     [N.EkH.SEARCH_EMOJIS]: _.S,
     [N.EkH.TOGGLE_HOTKEYS]: g._,
-    [N.EkH.JUMP_TO_FIRST_UNREAD]: s.O,
+    [N.EkH.JUMP_TO_FIRST_UNREAD]: a.O,
     [N.EkH.RETURN_TO_AUDIO_CHANNEL]: u.F,
     [N.EkH.CALL_ACCEPT]: r.IL,
     [N.EkH.CALL_START]: r.FI,
     [N.EkH.QUICKSWITCHER_SHOW]: c.$
   },
-  T = {
+  C = {
     [N.EkH.QUICKSWITCHER_SHOW]: c.$
   };
 

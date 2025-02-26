@@ -1,16 +1,16 @@
-/** Chunk was on 21863 **/
-r.d(t, {
-  Z: () => a
+/** Chunk was on 53485 **/
+n.d(t, {
+  Z: () => o
 });
-var n = r(544891),
-  i = r(570140),
-  o = r(325067),
-  l = r(981631);
+var r = n(544891),
+  i = n(570140),
+  s = n(325067),
+  a = n(981631);
 
-function c(e, t) {
+function l(e, t) {
   return i.Z.dispatch({
     type: "MFA_SMS_TOGGLE"
-  }), n.tn.post({
+  }), r.tn.post({
     url: e,
     body: {
       password: t
@@ -25,9 +25,9 @@ function c(e, t) {
     }), e
   })
 }
-let a = {
-  enableMFAStart: async e => (await n.tn.post({
-    url: l.ANM.MFA_TOTP_ENABLE,
+let o = {
+  enableMFAStart: async e => (await r.tn.post({
+    url: a.ANM.MFA_TOTP_ENABLE,
     body: {
       password: e
     },
@@ -37,14 +37,14 @@ let a = {
   enable(e) {
     let {
       password: t,
-      code: r,
-      secret: o
+      code: n,
+      secret: s
     } = e;
-    return n.tn.post({
-      url: l.ANM.MFA_TOTP_ENABLE,
+    return r.tn.post({
+      url: a.ANM.MFA_TOTP_ENABLE,
       body: {
-        code: r,
-        secret: o,
+        code: n,
+        secret: s,
         password: t
       },
       oldFormErrors: !0,
@@ -56,8 +56,8 @@ let a = {
     }))
   },
   disable() {
-    n.tn.post({
-      url: l.ANM.MFA_TOTP_DISABLE,
+    r.tn.post({
+      url: a.ANM.MFA_TOTP_DISABLE,
       oldFormErrors: !0,
       rejectWithError: !1
     }).then(e => {
@@ -72,10 +72,10 @@ let a = {
       })
     })
   },
-  enableSMS: e => c(l.ANM.MFA_SMS_ENABLE, e),
-  disableSMS: e => c(l.ANM.MFA_SMS_DISABLE, e),
-  sendMFABackupCodesVerificationKeyEmail: e => n.tn.post({
-    url: l.ANM.MFA_SEND_VERIFICATION_KEY,
+  enableSMS: e => l(a.ANM.MFA_SMS_ENABLE, e),
+  disableSMS: e => l(a.ANM.MFA_SMS_DISABLE, e),
+  sendMFABackupCodesVerificationKeyEmail: e => r.tn.post({
+    url: a.ANM.MFA_SEND_VERIFICATION_KEY,
     body: {
       password: e
     },
@@ -92,14 +92,14 @@ let a = {
   }),
   confirmViewBackupCodes(e, t) {
     let {
-      viewNonce: r,
-      regenerateNonce: c
-    } = o.Z.getNonces();
-    return n.tn.post({
-      url: l.ANM.MFA_CODES_VERIFICATION,
+      viewNonce: n,
+      regenerateNonce: l
+    } = s.Z.getNonces();
+    return r.tn.post({
+      url: a.ANM.MFA_CODES_VERIFICATION,
       body: {
         key: e,
-        nonce: t ? c : r,
+        nonce: t ? l : n,
         regenerate: t
       },
       oldFormErrors: !0,

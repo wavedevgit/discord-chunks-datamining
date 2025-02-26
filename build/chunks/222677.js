@@ -163,7 +163,7 @@ async function P(e, t, n) {
     u = arguments.length > 4 ? arguments[4] : void 0,
     f = null != u && !!u.burst,
     _ = null != u && !!u.isRetry;
-  if (!_ && j(e, t, n, f)) {
+  if (!_ && k(e, t, n, f)) {
     a.Z.show({
       title: v.NW.string(v.t["uaUU/v"]),
       body: v.NW.string(v.t.psMorq),
@@ -340,7 +340,7 @@ async function M(e, t) {
   return n
 }
 
-function j(e, t, n, r) {
+function k(e, t, n, r) {
   let i = f.Z.getMessage(e, t);
   return null != i && i.userHasReactedWithEmoji(n, r)
 }

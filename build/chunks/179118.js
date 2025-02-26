@@ -48,11 +48,11 @@ function M(e) {
     giftRecipient: h,
     giftMessageError: v,
     isSendingMessage: b
-  } = e, [O, I] = i.useState(u.kO8.Modes.DEFAULT), M = (0, c.e7)([S.Z], () => S.Z.enabled), k = f || null != l && null != h, U = (null == o ? void 0 : o.productLine) === P.POd.COLLECTIBLES, G = (0, E.Z)(), {
+  } = e, [O, I] = i.useState(u.kO8.Modes.DEFAULT), M = (0, c.e7)([S.Z], () => S.Z.enabled), j = f || null != l && null != h, U = (null == o ? void 0 : o.productLine) === P.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
-  } = (0, R.wD)(), F = null == G ? void 0 : G.giftPurchaseConfirmation, V = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != V && null != F, H = () => null != s ? s.skuId : null != o ? o.id : null, W = () => {
+  } = (0, R.wD)(), V = null == G ? void 0 : G.giftPurchaseConfirmation, F = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != F && null != V, H = () => null != s ? s.skuId : null != o ? o.id : null, W = () => {
     let e;
-    return null != v ? w.NW.string(w.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? k ? Z ? F.monthGiftText : w.t["4ZJ+7e"] : w.t["P+z55e"] : k ? Z ? F.yearGiftText : w.t.p0pZXF : w.t.bXqk3t, w.NW.format(e, {
+    return null != v ? w.NW.string(w.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? j ? Z ? V.monthGiftText : w.t["4ZJ+7e"] : w.t["P+z55e"] : j ? Z ? V.yearGiftText : w.t.p0pZXF : w.t.bXqk3t, w.NW.format(e, {
       skuName: (0, A.aq)(s.id),
       intervalCount: s.intervalCount
     }))
@@ -116,7 +116,7 @@ function M(e) {
       children: [(0, r.jsx)("div", {
         className: L.blurb,
         children: W()
-      }), i && (0, r.jsx)(j, {
+      }), i && (0, r.jsx)(k, {
         giftCode: t,
         onClose: d
       }), (0, r.jsx)("div", {
@@ -166,10 +166,10 @@ function M(e) {
         [L.headerCustomGifting]: null != l && !U
       }),
       children: Y()
-    }), f && null != h && null == v || k ? Q() : q()]
+    }), f && null != h && null == v || j ? Q() : q()]
   })
 }
-let j = e => {
+let k = e => {
   let {
     giftCode: t,
     onClose: n

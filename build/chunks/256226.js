@@ -90,11 +90,11 @@ let N = i.forwardRef(function(e, t) {
     onMouseDown: w
   } = e, L = (0, s.JA)(C.id), {
     tabIndex: x
-  } = L, M = I(L, ["tabIndex"]), j = (0, g.p9)({
+  } = L, M = I(L, ["tabIndex"]), k = (0, g.p9)({
     roleId: C.id,
     size: 16,
     guildId: P
-  }), k = (0, c.e7)([p.Z], () => p.Z.roleStyle), U = (null === (o = C.tags) || void 0 === o ? void 0 : o.guild_connections) === null, G = i.useCallback(e => {
+  }), j = (0, c.e7)([p.Z], () => p.Z.roleStyle), U = (null === (o = C.tags) || void 0 === o ? void 0 : o.guild_connections) === null, G = i.useCallback(e => {
     (0, f.jW)(e, async () => {
       let {
         default: e
@@ -104,27 +104,27 @@ let N = i.forwardRef(function(e, t) {
         label: E.NW.string(E.t.sMsaLi)
       }))
     })
-  }, [C.id]), B = (0, d.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(), F = null !== (b = C.colorString) && void 0 !== b ? b : B, V = null !== (O = (0, l.wK)(F, .6)) && void 0 !== O ? O : void 0, Z = u.Z.unsafe_rawColors.WHITE_500.css, H = (0, l._i)(F);
+  }, [C.id]), B = (0, d.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(), V = null !== (b = C.colorString) && void 0 !== b ? b : B, F = null !== (O = (0, l.wK)(V, .6)) && void 0 !== O ? O : void 0, Z = u.Z.unsafe_rawColors.WHITE_500.css, H = (0, l._i)(V);
   null != H && .3 > (0, l.Bd)(H) && (Z = u.Z.unsafe_rawColors.PRIMARY_630.css), T = U ? (0, r.jsx)(_.Z, {
     className: v.roleFlowerStar,
     iconClassName: N ? v.roleVerifiedIcon : void 0,
-    color: F,
+    color: V,
     size: 14
-  }) : "dot" === k ? (0, r.jsx)(d.FhE, {
+  }) : "dot" === j ? (0, r.jsx)(d.FhE, {
     className: v.roleDot,
-    color: F,
+    color: V,
     background: !1,
     tooltip: !1
   }) : (0, r.jsx)(d.xko, {
-    color: F,
+    color: V,
     className: v.roleCircle
   });
   let W = i.useMemo(() => {
       var t;
       return y({
-        borderColor: D ? void 0 : V
+        borderColor: D ? void 0 : F
       }, null !== (t = e.style) && void 0 !== t ? t : {})
-    }, [V, D, e.style]),
+    }, [F, D, e.style]),
     Y = () => N ? (0, r.jsx)(d.DY3, {
       text: E.NW.string(E.t.u3RVsL),
       children: (0, r.jsxs)(d.P3F, {
@@ -167,9 +167,9 @@ let N = i.forwardRef(function(e, t) {
       "aria-label": C.name,
       tabIndex: x
     }, M), {
-      children: [Y(), null != j ? (0, r.jsx)(m.Z, S(y({
+      children: [Y(), null != k ? (0, r.jsx)(m.Z, S(y({
         className: v.roleIcon
-      }, j), {
+      }, k), {
         enableTooltip: !1
       })) : null, (0, r.jsx)("div", {
         "aria-hidden": !0,

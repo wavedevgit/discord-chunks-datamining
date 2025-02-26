@@ -48,8 +48,8 @@ let b = e => r.useState(() => new p.AS(e))[0],
     let {
       locked: t,
       showEmpty: n = !0
-    } = e, d = (0, o.e7)([s.Z, h.Z], () => {
-      if (s.Z.getNotificationPositionMode() === f._vf.DISABLED) return O;
+    } = e, d = (0, o.e7)([s.default, h.Z], () => {
+      if (s.default.getNotificationPositionMode() === f._vf.DISABLED) return O;
       let e = [],
         n = 0;
       for (let i of h.Z.getNotifications()) {

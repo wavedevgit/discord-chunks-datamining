@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  As: () => j,
-  By: () => k,
+  As: () => k,
+  By: () => j,
   Lu: () => U,
   e9: () => W,
-  hG: () => F,
+  hG: () => V,
   nd: () => H,
   yT: () => Y
 }), n(411104), n(230036), n(47120);
@@ -176,7 +176,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     label: t,
     tooltipText: n,
@@ -199,7 +199,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     invoice: t,
     isPrepaidPaymentSource: n
@@ -247,7 +247,7 @@ function U(e) {
       isPrepaidPaymentSource: i,
       referralTrialOfferId: o
     }), 0 === h || f ? null : (0, r.jsx)(O.R$, {
-      label: (0, r.jsx)(j, {
+      label: (0, r.jsx)(k, {
         label: N.NW.formatToPlainString(N.t.ZSVgeX, {
           planName: (0, g.PV)(n.id) ? (0, g.aq)(n.id) : n.name
         }),
@@ -255,7 +255,7 @@ function U(e) {
       }),
       value: (0, E.T4)(h, t.currency)
     }), 0 !== m ? (0, r.jsx)(O.R$, {
-      label: (0, r.jsx)(j, {
+      label: (0, r.jsx)(k, {
         label: N.NW.string(N.t["+as5ZW"]),
         tooltipText: N.NW.format(N.t.UDop9f, {}),
         tooltipAriaLabel: N.NW.string(N.t.P68ePD)
@@ -288,7 +288,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     proratedInvoice: t,
     renewalInvoice: n
@@ -307,7 +307,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     isUpdate: t,
     currentInvoice: n,
@@ -431,7 +431,7 @@ function H(e) {
           direction: y ? h.Z.Directions.UP : h.Z.Directions.DOWN,
           className: A.subscriptionDetailsToggleCaret
         })]
-      }), y ? (0, r.jsx)(V, {
+      }), y ? (0, r.jsx)(F, {
         isUpdate: s,
         currentInvoice: b,
         newInvoice: o,

@@ -1,0 +1,91 @@
+/**
+  Module ID: 82081
+  Original File Name: aa48b3ba463c57e8
+**/
+:root {
+    --custom-virtual-currency-border-subtle: var(--border-subtle,rgba(108,111,124,0.12))
+}
+
+.baseCardOutline__1ab14 {
+    border-radius: 16px;
+    border: 1px solid rgba(108, 111, 124, 0.12);
+    border: 1px solid var(--custom-virtual-currency-border-subtle);
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,.4)
+}
+
+.coachmarkTitle__1ab14 {
+    color: --header-primary;
+    color: var(--plum-3,--header-primary);
+    font-size: 18px;
+    line-height: 20px
+}
+
+.coachmarkDescription__1ab14,.coachmarkTitle__1ab14 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500
+}
+
+.coachmarkDescription__1ab14 {
+    align-self: stretch;
+    color: --header-secondary;
+    color: var(--plum-9,--header-secondary);
+    font-size: 14px;
+    line-height: 18px
+}
+
+.container__4d8b6 {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+    background: var(--primary-700);
+    background-size: cover;
+    background-origin: border-box
+}
+
+.gifContainer__4d8b6 {
+    width: 98px;
+    padding: 22px 0;
+    overflow: none
+}
+
+.gif__4d8b6 {
+    height: 98px;
+    mix-blend-mode: lighten
+}
+
+.centerContent__4d8b6 {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.contentContainer__4d8b6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 0 16px
+}
+
+.ctaButton__4d8b6 {
+    width: 218px;
+    height: 32px;
+    border-radius: 8px
+}
+
+.link__4d8b6 {
+    color: #d8dbed
+}
+
+.coachmarkModalContainer__4d8b6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px
+}
+
+/*# sourceMappingURL=aa48b3ba463c57e8.css.map*/

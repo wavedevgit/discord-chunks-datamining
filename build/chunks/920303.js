@@ -3,7 +3,7 @@
 let r;
 n.d(t, {
   I: () => v,
-  Z: () => F
+  Z: () => V
 }), n(47120), n(230036), n(978209);
 var i, o = n(392711),
   a = n.n(o),
@@ -94,23 +94,23 @@ function M(e) {
   C()
 }
 
-function j(e) {
+function k(e) {
   if (!(N.indexOf(e) >= 0)) return !1;
   N = N.filter(t => t !== e)
 }
 
-function k(e) {
+function j(e) {
   let {
     channel: t
   } = e;
-  return j(t.id)
+  return k(t.id)
 }
 
 function U(e) {
   let {
     channel: t
   } = e;
-  return I === t.parent_id && !!(0, u.yv)(t.id) && void j(t.id)
+  return I === t.parent_id && !!(0, u.yv)(t.id) && void k(t.id)
 }
 let G = [];
 class B extends(i = l.ZP.Store) {
@@ -134,9 +134,9 @@ class B extends(i = l.ZP.Store) {
   }
 }
 E(B, "displayName", "ArchivedThreadsStore");
-let F = new B(c.Z, {
+let V = new B(c.Z, {
   CONNECTION_OPEN: C,
-  THREAD_DELETE: k,
+  THREAD_DELETE: j,
   THREAD_UPDATE: U,
   CHANNEL_DELETE: M,
   LOAD_ARCHIVED_THREADS: P,

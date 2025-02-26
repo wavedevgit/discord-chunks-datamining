@@ -9,7 +9,7 @@ n.d(t, {
   QB: () => T,
   T0: () => D,
   Wf: () => R,
-  cT: () => k,
+  cT: () => j,
   eT: () => P,
   gU: () => G,
   gl: () => A,
@@ -19,7 +19,7 @@ n.d(t, {
   nE: () => C,
   pf: () => N,
   qm: () => M,
-  w: () => j,
+  w: () => k,
   xw: () => O
 }), n(411104);
 var r = n(990547),
@@ -396,7 +396,7 @@ function M(e, t, n) {
     progress: n
   })
 }
-async function j(e) {
+async function k(e) {
   o.Z.dispatch({
     type: "QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN",
     placement: e
@@ -421,7 +421,7 @@ async function j(e) {
     })
   }
 }
-async function k(e, t) {
+async function j(e, t) {
   var n;
   await l.Z.post({
     url: g.ANM.QUESTS_VIDEO_PROGRESS(e),

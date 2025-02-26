@@ -16,8 +16,8 @@ var i = t(793030),
   v = t(767218),
   m = t(309945),
   p = t(981631),
-  j = t(783684),
-  b = t(388032),
+  b = t(783684),
+  j = t(388032),
   h = t(599985);
 
 function _(e) {
@@ -30,13 +30,13 @@ function _(e) {
       className: h.headerContainer,
       children: [(0, r.jsx)(i.xv, {
         variant: "eyebrow",
-        children: b.NW.string(j.Z.hjvcLC)
+        children: j.NW.string(b.Z.hjvcLC)
       }), (0, r.jsx)(l.Z, {
         onClick: () => {},
         children: (0, r.jsx)(i.xv, {
           variant: "text-xs/semibold",
           color: "currentColor",
-          children: b.NW.string(b.t.hvVgAQ)
+          children: j.NW.string(j.t.hvVgAQ)
         })
       })]
     }), (0, r.jsxs)("div", {

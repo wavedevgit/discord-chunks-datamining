@@ -49,7 +49,7 @@ let _ = (0, g.Z)(e => {
           errorCode: b.lTL.OAUTH2_ERROR
         }, "User cancelled authorization")))
       },
-      x = c.default.isOverlayOOPEnabledForPid(null != P ? P : (0, h.QF)());
+      x = c.default.isOverlayOOPEnabledForPid(null != P ? P : (0, h.getPID)());
     if (a.context === b.IlC.OVERLAY && !x) {
       l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE", A), l.Z.dispatch({
         type: "OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN",
@@ -134,7 +134,7 @@ let _ = (0, g.Z)(e => {
     }, L)
   })
 }, function(e, t, n) {
-  if (u.ZP.isReady(null != n ? n : 0) || !d.isPlatformEmbedded) return;
+  if (u.default.isReady(null != n ? n : 0) || !d.isPlatformEmbedded) return;
   let r = (0, o.ZP)({
     application: e,
     channelId: t

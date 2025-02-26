@@ -57,23 +57,23 @@ function R(e) {
   }), {
     product: x,
     purchase: M
-  } = (0, f.Z)(null == w ? void 0 : w.skuId), j = y.ZP.canUseCollectibles(t), k = i.useRef(null), U = (0, _.Z)(a), G = (0, O.sr)(w, void 0 === R ? D : R), B = e => {
+  } = (0, f.Z)(null == w ? void 0 : w.skuId), k = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, _.Z)(a), G = (0, O.sr)(w, void 0 === R ? D : R), B = e => {
     L(e), null != e && U(e)
-  }, F = () => {
+  }, V = () => {
     P(w), c()
-  }, V = i.useCallback(e => {
+  }, F = i.useCallback(e => {
     c(), (0, u.mK)({
       analyticsLocations: a,
       analyticsSource: l.Z.EDIT_AVATAR_DECORATION_MODAL,
       initialProductSkuId: e
     })
-  }, [a, c]), Z = (0, h.M)(), H = () => null != M && (!(0, d.qS)(M) || j) || null === w ? (0, r.jsx)(s.zxk, {
-    onClick: F,
+  }, [a, c]), Z = (0, h.M)(), H = () => null != M && (!(0, d.qS)(M) || k) || null === w ? (0, r.jsx)(s.zxk, {
+    onClick: V,
     disabled: G,
     children: A.NW.string(A.t.d6sv6u)
-  }) : null == M && (j || !(0, d.G1)(x)) ? (0, r.jsx)(s.zxk, {
+  }) : null == M && (k || !(0, d.G1)(x)) ? (0, r.jsx)(s.zxk, {
     className: C.modalFooterShopButton,
-    onClick: () => V(null == x ? void 0 : x.skuId),
+    onClick: () => F(null == x ? void 0 : x.skuId),
     children: A.NW.string(A.t.fYfGgI)
   }) : (0, r.jsx)(g.Z, {
     subscriptionTier: N.Si.TIER_2,
@@ -98,9 +98,9 @@ function R(e) {
         user: t,
         guild: T,
         pendingAvatarDecoration: w,
-        selectedAvatarDecorationRef: k,
+        selectedAvatarDecorationRef: j,
         onSelect: B,
-        onOpenShop: V
+        onOpenShop: F
       }), (0, r.jsx)(S.Z, {
         className: C.modalPreview,
         user: t,

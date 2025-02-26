@@ -18,9 +18,9 @@ var r = t(200651),
   g = t(228168),
   v = t(388032),
   y = t(865152),
-  I = t(410214);
+  h = t(410214);
 
-function h(e) {
+function I(e) {
   let {
     section: n,
     subsection: t,
@@ -100,7 +100,7 @@ function j(e) {
     })
   }, [O, E]);
   return Z ? (0, r.jsx)("div", {
-    className: I.container,
+    className: h.container,
     children: (0, r.jsxs)("div", {
       className: y.empty,
       children: [(0, r.jsx)("div", {
@@ -111,9 +111,9 @@ function j(e) {
       })]
     })
   }) : (0, r.jsxs)("div", {
-    className: I.container,
+    className: h.container,
     children: [(0, r.jsx)(l.n, {
-      className: I.tabBar,
+      className: h.tabBar,
       type: "top",
       selectedItem: N,
       onItemSelect: S,
@@ -123,7 +123,7 @@ function j(e) {
           text: t
         } = e;
         return (0, r.jsx)(l.n.Item, {
-          className: I.tabBarItem,
+          className: h.tabBarItem,
           id: n,
           "aria-label": t,
           children: (0, r.jsx)(s.Text, {
@@ -132,7 +132,7 @@ function j(e) {
           })
         }, n)
       })
-    }), (0, r.jsx)(h, {
+    }), (0, r.jsx)(I, {
       items: b,
       section: N,
       subsection: P,

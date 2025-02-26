@@ -71,16 +71,16 @@ function L(e, t) {
 }
 let x = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
   M = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
-  j = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
-  k = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
+  k = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
+  j = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
   U = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
   G = (0, b.Mg)(R.__invalid_unicodeCategoryShortcutHeight),
   B = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
-  F = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
-  V = j + M + 2 * U,
+  V = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
+  F = k + M + 2 * U,
   Z = x + M,
-  H = Z + (B + 2 * F),
-  W = j + k + 2 * U,
+  H = Z + (B + 2 * V),
+  W = k + j + 2 * U,
   Y = 7;
 
 function K(e) {
@@ -116,8 +116,8 @@ function K(e) {
     }) : null, null == E && null != h ? (0, r.jsx)(O.Z, {
       categoryId: h,
       className: R.categoryIcon,
-      height: j,
-      width: j,
+      height: k,
+      width: k,
       size: "custom"
     }) : null]
   })), I = s[n + 1], C = null != I && l.type === T.En.GUILD && I.type !== T.En.GUILD;
@@ -158,7 +158,7 @@ let z = e => {
     }, t)
   }), [g, b, O, v, N, A]), D = i.useMemo(() => [8, 8, 0, 8], []), w = i.useCallback((e, t) => {
     let n = O[t];
-    if (n.type === T.En.RECENT) return V;
+    if (n.type === T.En.RECENT) return F;
     if (n.type === T.En.GUILD) {
       let e = O[t + 1];
       return null != e && e.type !== T.En.GUILD ? H : Z
@@ -177,7 +177,7 @@ let z = e => {
     O.forEach(i => {
       i.type === T.En.GUILD ? (t += 1, n += 1) : i.type === T.En.UNICODE ? r += 1 : (e += 1, t += 1)
     });
-    let i = V + t * Z + H;
+    let i = F + t * Z + H;
     return {
       nonUnicodeCategoryCount: t,
       firstUnicodeCategoryIndex: t,
@@ -201,10 +201,10 @@ let z = e => {
       let n = O[e];
       if (null == n) return 0;
       let r = q ? G : 0;
-      if (n.type === T.En.RECENT) return t ? 0 : k;
+      if (n.type === T.En.RECENT) return t ? 0 : j;
       if (n.type === T.En.GUILD) {
         let n = O[e + 1];
-        return null != n && n.type !== T.En.GUILD ? t ? B + -2 * F + M + r : M : t ? r : M
+        return null != n && n.type !== T.En.GUILD ? t ? B + -2 * V + M + r : M : t ? r : M
       }
       return t ? M + r : 2 * M
     }, [O, q]),
@@ -239,8 +239,8 @@ let z = e => {
       children: (0, r.jsx)(f.EO4, {
         size: "custom",
         color: "currentColor",
-        height: j,
-        width: j
+        height: k,
+        width: k
       })
     }, et)
   })

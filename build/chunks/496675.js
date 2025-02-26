@@ -90,11 +90,11 @@ function M() {
   x()
 }
 
-function j() {
+function k() {
   J()
 }
 
-function k() {
+function j() {
   x()
 }
 
@@ -143,11 +143,11 @@ function B(e) {
   return !!n && (R += 1, n)
 }
 
-function F() {
+function V() {
   return !0
 }
 
-function V(e) {
+function F(e) {
   var t;
   return (null === (t = O.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === e.userId && (L(e.guildId), !0)
 }
@@ -327,24 +327,24 @@ let $ = new X(l.Z, {
   OVERLAY_INITIALIZE: M,
   CACHE_LOADED: M,
   CACHE_LOADED_LAZY: M,
-  CONNECTION_CLOSED: j,
-  GUILD_CREATE: k,
-  GUILD_UPDATE: k,
-  GUILD_DELETE: k,
+  CONNECTION_CLOSED: k,
+  GUILD_CREATE: j,
+  GUILD_UPDATE: j,
+  GUILD_DELETE: j,
   GUILD_MEMBER_ADD: U,
   GUILD_MEMBER_UPDATE: U,
   CURRENT_USER_UPDATE: U,
   CHANNEL_CREATE: G,
-  THREAD_CREATE: F,
-  THREAD_UPDATE: F,
-  THREAD_LIST_SYNC: F,
-  LOAD_THREADS_SUCCESS: F,
-  LOAD_ARCHIVED_THREADS_SUCCESS: F,
+  THREAD_CREATE: V,
+  THREAD_UPDATE: V,
+  THREAD_LIST_SYNC: V,
+  LOAD_THREADS_SUCCESS: V,
+  LOAD_ARCHIVED_THREADS_SUCCESS: V,
   CHANNEL_UPDATES: B,
   LOAD_MESSAGES_SUCCESS: H,
   SEARCH_FINISH: W,
   MOD_VIEW_SEARCH_FINISH: W,
-  THREAD_MEMBER_UPDATE: V,
+  THREAD_MEMBER_UPDATE: F,
   THREAD_MEMBERS_UPDATE: Z,
   CHANNEL_DELETE: Y,
   GUILD_ROLE_CREATE: K,

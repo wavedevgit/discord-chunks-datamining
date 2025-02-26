@@ -1,4 +1,4 @@
-/** Chunk was on 624 **/
+/** Chunk was on 53485 **/
 e.exports = {
   body: "body_af7fb7",
   menus: "menus_af7fb7",

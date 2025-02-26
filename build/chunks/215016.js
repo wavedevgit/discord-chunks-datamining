@@ -3,7 +3,7 @@
 n.d(t, {
   PY: () => G,
   ZP: () => B,
-  iR: () => k
+  iR: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -90,11 +90,11 @@ function M(e) {
   return ((0, g._M)(e) || (0, g.MO)(e)) && (e.pathname.toLowerCase().endsWith(".webp") || e.pathname.toLowerCase().endsWith(".avif"))
 }
 
-function j(e) {
+function k(e) {
   let t = v.Z.toURLSafe(e);
   return null != t && M(t) ? (t.searchParams.set("animated", "true"), t.toString()) : e
 }
-class k extends i.PureComponent {
+class j extends i.PureComponent {
   componentDidMount() {
     let {
       props: {
@@ -141,7 +141,7 @@ class k extends i.PureComponent {
       loaded: i
     } = this.state;
     return i ? (0, r.jsx)("img", {
-      src: j(e),
+      src: k(e),
       width: t,
       height: n,
       className: S.gif,
@@ -328,7 +328,7 @@ class U extends i.PureComponent {
       let {
         focusedId: o
       } = this.state, a = this.props.data[t];
-      return null == a ? null : (0, r.jsx)(k, {
+      return null == a ? null : (0, r.jsx)(j, {
         item: a,
         index: t,
         format: a.format,

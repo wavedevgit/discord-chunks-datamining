@@ -98,7 +98,7 @@ function M(e, t) {
   }, [n, r])
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   let [r, o] = i.useState(e), [a, s] = i.useState(e), l = i.useRef(a);
   return i.useLayoutEffect(() => {
     l.current = a
@@ -107,16 +107,16 @@ function j(e, t, n) {
   }, [e, t, n]), [r, a]
 }
 
-function k(e, t) {
+function j(e, t) {
   let n = (0, l.dQu)(s.Z.colors.INTERACTIVE_MUTED).hex(),
     r = (0, l.dQu)(s.Z.colors.INTERACTIVE_NORMAL).hex(),
     i = (0, l.dQu)(s.Z.colors.INTERACTIVE_ACTIVE).hex(),
     o = (0, l.dQu)(s.Z.unsafe_rawColors.BRAND_430).hex(),
     a = (0, l.dQu)(s.Z.unsafe_rawColors.WHITE_500).hex(),
     c = t ? o : n,
-    [u, d] = j(c, t, e),
-    [f, p] = j(t ? a : e ? i : r, t, e),
-    [_, h] = j(e ? c : r, t, e);
+    [u, d] = k(c, t, e),
+    [f, p] = k(t ? a : e ? i : r, t, e),
+    [_, h] = k(e ? c : r, t, e);
   return {
     lastBackgroundFillColor: u,
     backgroundFillColor: d,
@@ -151,22 +151,22 @@ function G(e) {
     lastBackgroundFillColor: R,
     backgroundFillColor: D,
     lastActiveFillColor: w,
-    activeFillColor: j,
+    activeFillColor: k,
     lastInactiveFillColor: G,
     inactiveFillColor: B
-  } = k(l, d), F = {
+  } = j(l, d), V = {
     currentTime: o,
     duration: s,
     played: l
-  }, V = i.useRef(F);
+  }, F = i.useRef(V);
   i.useEffect(() => {
-    V.current = F
+    F.current = V
   }), i.useEffect(() => {
     let {
       currentTime: e,
       duration: t,
       played: n
-    } = V.current, r = L({
+    } = F.current, r = L({
       showAll: !n,
       currentTime: e,
       duration: t,
@@ -215,7 +215,7 @@ function G(e) {
       i.fill();
       let [f, p] = U(G, B, n, N.current);
       a = a || p;
-      let [_, h] = U(w, j, n, N.current);
+      let [_, h] = U(w, k, n, N.current);
       a = a || h;
       for (let e = 0; e < o.length; e++) {
         let t = o[e],
@@ -234,7 +234,7 @@ function G(e) {
     return e = requestAnimationFrame(t), () => {
       null != e && cancelAnimationFrame(e)
     }
-  }, [g, C, y, E, o, s, l, d, R, D, w, j, G, B]);
+  }, [g, C, y, E, o, s, l, d, R, D, w, k, G, B]);
   let [, Z] = (0, u.Z)({
     ref: g,
     onDrag: f,

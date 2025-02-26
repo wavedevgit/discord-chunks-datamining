@@ -27,14 +27,14 @@ var i = n(200651),
   S = n(567409),
   I = n(225559),
   C = n(703656),
-  Z = n(93127),
-  N = n(814443),
+  N = n(93127),
+  Z = n(814443),
   w = n(752048),
   _ = n(409057),
   P = n(199902),
   T = n(592125),
-  A = n(293273),
-  D = n(158776),
+  D = n(293273),
+  A = n(158776),
   k = n(699516),
   L = n(594174),
   R = n(801077),
@@ -177,7 +177,7 @@ function X(e) {
   let {
     entry: n,
     currentUserActivity: o
-  } = e, l = (0, c.e7)([L.default], () => L.default.getUser(n.author_id)), s = null !== (t = null == o ? void 0 : o.application_id) && void 0 !== t ? t : n.extra.application_id, a = (0, c.e7)([D.Z], () => null != l ? D.Z.getApplicationActivity(l.id, s) : null, [s, l]), [u, h] = r.useState("unsent");
+  } = e, l = (0, c.e7)([L.default], () => L.default.getUser(n.author_id)), s = null !== (t = null == o ? void 0 : o.application_id) && void 0 !== t ? t : n.extra.application_id, a = (0, c.e7)([A.Z], () => null != l ? A.Z.getApplicationActivity(l.id, s) : null, [s, l]), [u, h] = r.useState("unsent");
   if (!(null != a && (0, y.Z)(a, G.xjy.JOIN))) return null;
   let f = async e => {
     if (null != l && "unsent" === u) {
@@ -230,12 +230,12 @@ function J(e) {
   } = e, o = (0, c.e7)([L.default], () => L.default.getUser(t.author_id)), l = (0, c.e7)([P.Z], () => null != o ? P.Z.getAnyStreamForUser(o.id) : null, [o]), {
     isMobileOnline: s,
     status: a
-  } = (0, c.cj)([D.Z], () => null == o ? {
+  } = (0, c.cj)([A.Z], () => null == o ? {
     isMobileOnline: void 0,
     status: void 0
   } : {
-    isMobileOnline: D.Z.isMobileOnline(o.id),
-    status: D.Z.getStatus(o.id)
+    isMobileOnline: A.Z.isMobileOnline(o.id),
+    status: A.Z.getStatus(o.id)
   }, [o]);
   return null == o ? null : (0, i.jsxs)("div", {
     className: B.row,
@@ -299,7 +299,7 @@ function $(e) {
   })), [t]), s = (0, U.ee)(() => new Set(t.map(e => e.id)), [t]);
   return r.useEffect(() => {
     (0, U.zi)(G.Odu.ACTIVITY, {
-      locked: M.Z.isInstanceLocked(),
+      locked: M.default.isInstanceLocked(),
       shownUserIds: Array.from(o),
       liveUserIds: Array.from(l),
       contentInventoryIds: Array.from(s)
@@ -321,10 +321,10 @@ function ee(e) {
     userAffinityThresholdV2: o = .0029
   } = e, l = (0, S.Ns)(t);
   (0, O.ZP)(() => {
-    (0, Z.W)(), (0, Z._)()
+    (0, N.W)(), (0, N._)()
   });
-  let d = (0, c.e7)([A.Z], () => null == t ? null : A.Z.getApplicationActivity(t), [t]),
-    p = (0, c.Wu)([R.Z, k.Z, N.Z, w.Z], () => {
+  let d = (0, c.e7)([D.Z], () => null == t ? null : D.Z.getApplicationActivity(t), [t]),
+    p = (0, c.Wu)([R.Z, k.Z, Z.Z, w.Z], () => {
       if (null == t) return [];
       let e = R.Z.nowPlayingCards,
         n = {
@@ -346,7 +346,7 @@ function ee(e) {
             v1: i
           } = n;
           return null == e ? t : e > i || t
-        }(null === (t = N.Z.getUserAffinity(i)) || void 0 === t ? void 0 : t.affinity, r, n) || function(e, t, n) {
+        }(null === (t = Z.Z.getUserAffinity(i)) || void 0 === t ? void 0 : t.affinity, r, n) || function(e, t, n) {
           let {
             v2: i
           } = n;
@@ -407,7 +407,7 @@ function et(e) {
 function en(e) {
   let {
     locked: t
-  } = e, n = (0, F.II)(), r = null == n ? void 0 : n.id, o = null == n ? void 0 : n.altId, l = (0, S.Ns)(r), s = (0, c.e7)([L.default], () => L.default.getCurrentUser()), a = null != o ? o : r, u = (0, c.e7)([A.Z], () => null == a ? null : A.Z.getApplicationActivity(a), [a]);
+  } = e, n = (0, F.II)(), r = null == n ? void 0 : n.id, o = null == n ? void 0 : n.altId, l = (0, S.Ns)(r), s = (0, c.e7)([L.default], () => L.default.getCurrentUser()), a = null != o ? o : r, u = (0, c.e7)([D.Z], () => null == a ? null : D.Z.getApplicationActivity(a), [a]);
   (0, O.ZP)(() => (I.L(), () => I.v()));
   let p = null != u && (0, y.Z)(u, G.xjy.JOIN),
     f = (0, E.q)(null == u ? void 0 : u.application_id),

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Q: () => j
+  Q: () => k
 }), n(47120), n(411104), n(301563), n(757143), n(653041), n(26686);
 var r = n(512722),
   i = n.n(r),
@@ -303,11 +303,11 @@ function M(e, t, n) {
       content: o(l, !0, i)
     };
   U(r, l, c, 0, []);
-  let u = k(r);
+  let u = j(r);
   return a.set(e, u), u
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     i = m.rN(e);
@@ -337,7 +337,7 @@ function j(e, t) {
   return s
 }
 
-function k(e) {
+function j(e) {
   if (0 === (e = e.filter(e => e.text.length > 0)).length) return e;
   let t = [e[0]];
   for (let n = 1; n < e.length; n++) {
@@ -365,7 +365,7 @@ function U(e, t, n, r, o) {
     case "emoji":
     case "customEmoji": {
       let i = t.substring(r);
-      if (i.startsWith(l[0]) || (r = H(e, t, r, t.length), i = t.substring(r)), i.startsWith(l[0])) return V({
+      if (i.startsWith(l[0]) || (r = H(e, t, r, t.length), i = t.substring(r)), i.startsWith(l[0])) return F({
         result: e,
         sourceText: t,
         text: l[0],
@@ -376,7 +376,7 @@ function U(e, t, n, r, o) {
       throw Error("Slate: Unable to find emoji: ".concat(l[0], " in ").concat(t, " at ").concat(r))
     }
     case "soundboard":
-      return V({
+      return F({
         result: e,
         sourceText: t,
         text: l[0],
@@ -397,7 +397,7 @@ function U(e, t, n, r, o) {
         text: o,
         id: a
       } = n;
-      if (null != o) return i()(o === l[0], "Slate: text mentions must exactly match the regex match"), V({
+      if (null != o) return i()(o === l[0], "Slate: text mentions must exactly match the regex match"), F({
         result: e,
         sourceText: t,
         text: o,
@@ -407,7 +407,7 @@ function U(e, t, n, r, o) {
           text: o
         }
       });
-      return V({
+      return F({
         result: e,
         sourceText: t,
         text: l[0],
@@ -422,7 +422,7 @@ function U(e, t, n, r, o) {
       let {
         id: c, itemId: u
       } = n;
-      return V({
+      return F({
         result: e,
         sourceText: t,
         text: l[0],
@@ -438,7 +438,7 @@ function U(e, t, n, r, o) {
           location: "c70cbb_1"
         }, {
           autoTrackExposure: !1
-        }).enabled) return V({
+        }).enabled) return F({
         result: e,
         sourceText: t,
         text: l[0],
@@ -465,7 +465,7 @@ function U(e, t, n, r, o) {
         before: n,
         after: i
       } = G(t, s, r, l);
-      return r = F(e, t, n, r, "syntaxBefore"), o.push(s), r = B(e, t, null != a ? a : "", r, o), o.pop(), r = F(e, t, i, r, "syntaxAfter"), Z(t, r)
+      return r = V(e, t, n, r, "syntaxBefore"), o.push(s), r = B(e, t, null != a ? a : "", r, o), o.pop(), r = V(e, t, i, r, "syntaxAfter"), Z(t, r)
     }
     default:
       throw Error("Slate: Unknown rule type: ".concat(s))
@@ -491,7 +491,7 @@ function G(e, t, n, r) {
 }
 
 function B(e, t, n, r, i) {
-  return "string" == typeof n ? r = V({
+  return "string" == typeof n ? r = F({
     result: e,
     sourceText: t,
     text: n,
@@ -503,7 +503,7 @@ function B(e, t, n, r, i) {
   })), Z(t, r)
 }
 
-function F(e, t, n, r, o) {
+function V(e, t, n, r, o) {
   if (n.length > 0) {
     let a = t.indexOf(n, r),
       s = t.substring(r, a + n.length);
@@ -517,7 +517,7 @@ function F(e, t, n, r, o) {
   return r
 }
 
-function V(e) {
+function F(e) {
   let {
     result: t,
     sourceText: n,
@@ -553,7 +553,7 @@ function Z(e, t) {
 
 function H(e, t, n, r) {
   for (; n < r;)
-    if (O.has(t[n])) n = F(e, t, t[n], n, "syntaxBefore"), n = Z(t, n);
+    if (O.has(t[n])) n = V(e, t, t[n], n, "syntaxBefore"), n = Z(t, n);
     else break;
   return n
 }

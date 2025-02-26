@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   Iu: () => G,
-  Jw: () => k,
+  Jw: () => j,
   _r: () => B,
-  cX: () => V,
+  cX: () => F,
   lv: () => U,
   v: () => x
 });
@@ -44,10 +44,10 @@ let x = {
     end: 15
   },
   M = [o],
-  j = [a, s, l, c, u, d, f, p, _, h, m, g, E, v, b, y, O, S, I, T, N],
-  k = {
+  k = [a, s, l, c, u, d, f, p, _, h, m, g, E, v, b, y, O, S, I, T, N],
+  j = {
     [w.q.BASIC]: M,
-    [w.q.PREMIUM]: j
+    [w.q.PREMIUM]: k
   },
   U = i().memoize(e => new Promise(t => {
     let n = new Image;
@@ -62,7 +62,7 @@ let x = {
     }
   })),
   G = (e, t) => {
-    let n = k[e];
+    let n = j[e];
     if (null != t && e === w.q.PREMIUM) {
       let e = t.end + 1;
       return Math.floor(Math.random() * (t.start - e) + e)
@@ -85,18 +85,18 @@ function B(e) {
   return null != i ? D.ZP.getURL(i.surrogates) : ""
 }
 
-function F(e, t) {
+function V(e, t) {
   return i()(e).map(e => {
     var n;
     return null !== (n = e[t]) && void 0 !== n ? n : null
   }).filter(e => null != e).uniq().value()
 }
 
-function V(e) {
+function F(e) {
   var t, n, r, i, o, a;
   if (e.length < 1) return "";
-  let s = F(e, "userId"),
-    l = F(e, "emojiName"),
+  let s = V(e, "userId"),
+    l = V(e, "emojiName"),
     c = l.length < 2 ? null !== (t = null == l ? void 0 : l[0]) && void 0 !== t ? t : "" : l.join(", ");
   return s.length < 1 ? "" : 1 === s.length ? L.NW.formatToPlainString(L.t.yZYxzM, {
     firstUsername: null === (n = R.default.getUser(s[0])) || void 0 === n ? void 0 : n.username,

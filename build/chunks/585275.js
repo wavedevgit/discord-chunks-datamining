@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(242167), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(411104), n(773603);
 var i = n(512722),
   o = n.n(i),
@@ -40,7 +40,7 @@ function x() {
   C.stop(), null != r && (u.Z.removeSink(r, A), r = null)
 }
 let M = s().debounce((e, t, n, r) => {
-  k(e, (0, y.V9)({
+  j(e, (0, y.V9)({
     streamType: null != t ? O.lo.GUILD : O.lo.CALL,
     guildId: t,
     channelId: n,
@@ -48,7 +48,7 @@ let M = s().debounce((e, t, n, r) => {
   }))
 }, 500);
 
-function j(e) {
+function k(e) {
   let t = Math.min(D / e.width, w / e.height),
     n = e.width * t,
     r = e.height * t;
@@ -61,7 +61,7 @@ function j(e) {
     null == L || L.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r), t()
   })
 }
-async function k(e, t) {
+async function j(e, t) {
   if (r !== e) return;
   let {
     enabled: n
@@ -69,10 +69,10 @@ async function k(e, t) {
     location: "uploadStreamPreviews"
   }), i = (0, v.isWeb)() && m.I0.getSetting() || g.Z.getIsActiveStreamPreviewDisabled(t);
   if (n && i) return;
-  let a = () => k(e, t);
+  let a = () => j(e, t);
   if (!R) try {
     let n = await U(e, 60);
-    await j(n);
+    await k(n);
     let r = P.toDataURL("image/jpeg");
     if (p.Z.dispatch({
         type: "STREAM_PREVIEW_FETCH_SUCCESS",
@@ -152,7 +152,7 @@ function B(e, t) {
     i || u.Z.removeSink(e, A)
   })
 }
-let F = {
+let V = {
   init() {
     p.Z.subscribe("CONNECTION_OPEN", x), p.Z.subscribe("LOGOUT", x), p.Z.subscribe("STREAM_DELETE", x), p.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
       let {

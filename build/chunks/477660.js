@@ -221,8 +221,8 @@
     }(),
     x = "(?:\\[[^\\]]*\\]|[^\\[\\]]|\\](?=[^\\[]*\\]))*",
     M = "\\s*<?((?:\\([^)]*\\)|[^\\s\\\\]|\\\\.)*?)>?(?:\\s+['\"]([\\s\\S]*?)['\"])?\\s*",
-    j = /mailto:/i,
-    k = function(e, t, n) {
+    k = /mailto:/i,
+    j = function(e, t, n) {
       var r = (e[2] || e[1]).replace(/\s+/g, " ").toLowerCase();
       if (t._defs && t._defs[r]) {
         var i = t._defs[r];
@@ -586,7 +586,7 @@
         parse: function(e, t, n) {
           var r = e[1],
             i = e[1];
-          return j.test(i) || (i = "mailto:" + i), {
+          return k.test(i) || (i = "mailto:" + i), {
             type: "link",
             content: [{
               type: "text",
@@ -671,7 +671,7 @@
         order: G++,
         match: a(RegExp("^\\[(" + x + ")\\]\\s*\\[([^\\]]*)\\]")),
         parse: function(e, t, n) {
-          return k(e, n, {
+          return j(e, n, {
             type: "link",
             content: t(e[1], n)
           })
@@ -683,7 +683,7 @@
         order: G++,
         match: a(RegExp("^!\\[(" + x + ")\\]\\s*\\[([^\\]]*)\\]")),
         parse: function(e, t, n) {
-          return k(e, n, {
+          return j(e, n, {
             type: "image",
             alt: e[1]
           })
@@ -805,13 +805,13 @@
         }
       }
     },
-    F = function(e, t) {
+    V = function(e, t) {
       return t || "undefined" == typeof console || console.warn("simple-markdown ruleOutput should take 'react' or 'html' as the second argument."),
         function(n, r, i) {
           return e[n.type][t](n, r, i)
         }
     },
-    V = function(e) {
+    F = function(e) {
       var t = function(n, r) {
         if (r = r || {}, !Array.isArray(n)) return e(n, t, r);
         for (var i = r.key, o = [], a = null, s = 0; s < n.length; s++) {
@@ -890,8 +890,8 @@
     htmlTag: d,
     reactElement: u,
     defaultRawParse: W,
-    ruleOutput: F,
-    reactFor: V,
+    ruleOutput: V,
+    reactFor: F,
     htmlFor: Z,
     defaultParse: function() {
       return "undefined" != typeof console && console.warn("defaultParse is deprecated, please use `defaultImplicitParse`"), z.apply(null, arguments)

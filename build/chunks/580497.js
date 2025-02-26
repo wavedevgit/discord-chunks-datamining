@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => m
+  Z: () => _
 });
 var r = n(512722),
   i = n.n(r),
@@ -14,9 +14,9 @@ var r = n(512722),
   h = n(896797),
   p = n(626135),
   g = n(954824),
-  _ = n(981631);
+  m = n(981631);
 
-function m(e) {
+function _(e) {
   let t = function(e) {
       var t;
       let n = null === (t = a().os) || void 0 === t ? void 0 : t.family;
@@ -32,7 +32,7 @@ function m(e) {
       return "discord://"
     }(e),
     n = (0, s.zS)(t);
-  null != n && p.default.track(_.rMx.DEEP_LINK_CLICKED, {
+  null != n && p.default.track(m.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, c.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource

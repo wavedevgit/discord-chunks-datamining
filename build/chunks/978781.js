@@ -72,7 +72,7 @@ function M(e) {
   })
 }
 
-function j() {
+function k() {
   let e = (0, g.Z)();
   return i.useEffect(() => {
     (0, _.nJ)(), e()
@@ -81,7 +81,7 @@ function j() {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     tab: t,
     isPreview: o,
@@ -216,8 +216,8 @@ function U(e) {
         className: D.scrollContainer,
         children: [0 === a && (0, r.jsx)(M, {
           isCoachmark: o
-        }), 1 === a && (0, r.jsx)(j, {})]
-      }), (0, r.jsx)(k, {
+        }), 1 === a && (0, r.jsx)(k, {})]
+      }), (0, r.jsx)(j, {
         tab: a,
         isPreview: g,
         onClose: R,

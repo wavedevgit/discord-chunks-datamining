@@ -36,9 +36,9 @@ var r = n(200651),
   L = n(981631),
   x = n(176505),
   M = n(368365),
-  j = n(28149);
+  k = n(28149);
 
-function k(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -54,7 +54,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -77,7 +77,7 @@ function B(e, t) {
   }), e
 }
 
-function F(e) {
+function V(e) {
   let {
     emojiTooltipPosition: t = "top",
     enableEmojiClick: n = !0
@@ -102,7 +102,7 @@ function F(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   let {
     emojiTooltipPosition: t = "top",
     enableEmojiClick: n = !0
@@ -229,7 +229,7 @@ let W = {
   codeBlock: {
     react(e, t, i) {
       let o = () => (0, r.jsx)("code", {
-        className: a()(j.scrollbarGhostHairline, "hljs"),
+        className: a()(k.scrollbarGhostHairline, "hljs"),
         children: (0, T.S)(e, t, i)
       });
       return (0, r.jsx)("pre", {
@@ -249,7 +249,7 @@ let W = {
               {
                 let n = t.highlight(e.lang, e.content, !0);
                 return null == n ? o() : (0, r.jsx)("code", {
-                  className: a()(j.scrollbarGhostHairline, "hljs", n.language),
+                  className: a()(k.scrollbarGhostHairline, "hljs", n.language),
                   dangerouslySetInnerHTML: {
                     __html: n.value
                   }
@@ -380,8 +380,8 @@ function Y(e) {
   return B(U({}, W), {
     link: (0, D.Z)(e),
     devLink: (0, P.Z)(e),
-    emoji: F(e),
-    customEmoji: V(e),
+    emoji: V(e),
+    customEmoji: F(e),
     channelMention: (0, C.Z)(e),
     commandMention: (0, R.ZP)(e),
     attachmentLink: (0, A.Z)(e),

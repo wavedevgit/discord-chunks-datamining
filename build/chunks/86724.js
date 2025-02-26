@@ -160,7 +160,7 @@ function C(e) {
     let e = b.bN.richValue(i)[0],
       t = e.children[0];
     if (N.has(e.type) && b.LC.isText(t)) {
-      let e = j(t.text, s);
+      let e = k(t.text, s);
       if (null != e) return o.Po({
         channelId: s.id,
         command: e.command,
@@ -222,7 +222,7 @@ function R(e, t, n) {
     if (null != d)
       for (let r of d) {
         e.add(r.name);
-        let i = null !== (s = k(n, t, r.name)) && void 0 !== s ? s : r.text,
+        let i = null !== (s = j(n, t, r.name)) && void 0 !== s ? s : r.text,
           o = {
             type: "applicationCommandOption",
             optionName: r.name,
@@ -237,7 +237,7 @@ function R(e, t, n) {
     for (let r of u.options)
       if (!e.has(r.name) && (r.required || null != c[r.name])) {
         let e, i;
-        p.length > 0 && !T.has(r.type) ? (e = p, p = "") : e = null != (i = k(n, t, r.name)) ? i : "";
+        p.length > 0 && !T.has(r.type) ? (e = p, p = "") : e = null != (i = j(n, t, r.name)) ? i : "";
         let o = {
           type: "applicationCommandOption",
           optionName: r.name,
@@ -425,7 +425,7 @@ function M(e, t) {
   }) && v.Q.insertText(e, " ")
 }
 
-function j(e, t) {
+function k(e, t) {
   if (!e.startsWith("/")) return null;
   let n = (0, f.hV)(t, e.substring(1));
   if (!n.hasSpaceTerminator) return null;
@@ -454,7 +454,7 @@ function j(e, t) {
   return null
 }
 
-function k(e, t, n) {
+function j(e, t, n) {
   var r, o, a, s;
   let l = null === (o = e.activeCommand) || void 0 === o ? void 0 : null === (r = o.options) || void 0 === r ? void 0 : r.find(e => e.name === n),
     c = e.initialValues[n];

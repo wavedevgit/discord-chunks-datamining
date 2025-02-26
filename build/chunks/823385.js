@@ -43,17 +43,17 @@ let D = "seenQSTutorial",
   L = 100,
   x = [u.h8.USER, u.h8.GROUP_DM, u.h8.TEXT_CHANNEL, u.h8.GUILD, u.h8.APPLICATION, u.h8.LINK, u.h8.IN_APP_NAVIGATION],
   M = 0,
-  j = !1,
   k = !1,
+  j = !1,
   U = null,
   G = [],
   B = null,
-  F = 0,
-  V = [],
+  V = 0,
+  F = [],
   Z = [];
 
 function H() {
-  k = b.Z.getGuildCount() >= 3 || a().size(m.Z.getMutablePrivateChannels()) >= 20, V = []
+  j = b.Z.getGuildCount() >= 3 || a().size(m.Z.getMutablePrivateChannels()) >= 20, F = []
 }
 
 function W(e) {
@@ -165,7 +165,7 @@ function z(e, t) {
     default:
       G = e
   }
-  if (t !== B) B = t, F = Math.max(t.length, F), M = (0, u.gJ)(u.a8.DOWN, -1, G);
+  if (t !== B) B = t, V = Math.max(t.length, V), M = (0, u.gJ)(u.a8.DOWN, -1, G);
   else {
     let e = G[M];
     null != e && e.type === u.h8.HEADER && (M = (0, u.gJ)(u.a8.DOWN, M, G))
@@ -182,7 +182,7 @@ function q(e) {
   null != o && a.add("guild:".concat(o)), r = null != r ? r : new u.ZP(J, x, null != i ? L : w, {
     frecencyBoosters: !0,
     blacklist: a
-  }), B = null, F = n.length, U = i, r.search(n)
+  }), B = null, V = n.length, U = i, r.search(n)
 }
 
 function Q(e) {
@@ -204,11 +204,11 @@ function X(e, t) {
 }
 
 function J(e, t) {
-  !X(e = "" === (t = t.trim()).trim() ? K() : e, V) && (V = e, z(e, t))
+  !X(e = "" === (t = t.trim()).trim() ? K() : e, F) && (F = e, z(e, t))
 }
 
 function $() {
-  B = null, F = 0, V = [], null != r && (r.destroy(), r = null)
+  B = null, V = 0, F = [], null != r && (r.destroy(), r = null)
 }
 
 function ee(e) {
@@ -242,13 +242,13 @@ function et(e) {
 }
 
 function en() {
-  if (j) return !1;
-  j = !0, l.K.set(D, !0)
+  if (k) return !1;
+  k = !0, l.K.set(D, !0)
 }
 class er extends(i = s.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(v.ZP, b.Z, m.Z), this.syncWith([_.Z], () => !0), j = l.K.get(D) || !1, Z = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
+    this.waitFor(v.ZP, b.Z, m.Z), this.syncWith([_.Z], () => !0), k = l.K.get(D) || !1, Z = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
   }
   getState() {
     return {
@@ -263,7 +263,7 @@ class er extends(i = s.ZP.PersistedStore) {
   }
   channelNoticePredicate(e, t) {
     let n = Date.now() - t >= C.Hqc;
-    return k && n
+    return j && n
   }
   getFrequentGuilds() {
     return null != r ? r.queryGuilds("", 100) : null
@@ -281,8 +281,8 @@ class er extends(i = s.ZP.PersistedStore) {
       queryMode: U,
       results: G,
       selectedIndex: M,
-      seenTutorial: j,
-      maxQueryLength: F
+      seenTutorial: k,
+      maxQueryLength: V
     }
   }
 }

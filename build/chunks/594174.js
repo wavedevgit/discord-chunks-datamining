@@ -194,14 +194,14 @@ function M(e) {
   N(t)
 }
 
-function j(e) {
+function k(e) {
   let {
     user: t
   } = e;
   N(t)
 }
 
-function k(e) {
+function j(e) {
   let {
     messages: t
   } = e;
@@ -219,7 +219,7 @@ function G(e) {
   let {
     messages: t
   } = e;
-  return t.forEach(e => k({
+  return t.forEach(e => j({
     messages: e
   })), !1
 }
@@ -232,7 +232,7 @@ function B(e) {
   null != t && t.forEach(e => R(e, !0)), null != n && n.forEach(e => N(e.user, !0))
 }
 
-function F(e) {
+function V(e) {
   let {
     threads: t
   } = e;
@@ -246,7 +246,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     supplementalData: t
   } = e;
@@ -638,7 +638,7 @@ class eN extends p.Z {
     super({
       CONNECTION_OPEN: P,
       CONNECTION_OPEN_SUPPLEMENTAL: D,
-      UPDATE_CLIENT_PREMIUM_TYPE: j,
+      UPDATE_CLIENT_PREMIUM_TYPE: k,
       OVERLAY_INITIALIZE: L,
       CACHE_LOADED: e => this.handleLoadCache(e),
       USER_UPDATE: x,
@@ -646,10 +646,10 @@ class eN extends p.Z {
       PRESENCE_UPDATES: Q,
       SEARCH_FINISH: G,
       MOD_VIEW_SEARCH_FINISH: G,
-      LOAD_MESSAGES_SUCCESS: k,
-      LOAD_MESSAGES_AROUND_SUCCESS: k,
-      LOAD_PINNED_MESSAGES_SUCCESS: k,
-      LOAD_RECENT_MENTIONS_SUCCESS: k,
+      LOAD_MESSAGES_SUCCESS: j,
+      LOAD_MESSAGES_AROUND_SUCCESS: j,
+      LOAD_PINNED_MESSAGES_SUCCESS: j,
+      LOAD_RECENT_MENTIONS_SUCCESS: j,
       THREAD_LIST_SYNC: U,
       MESSAGE_CREATE: Y,
       MESSAGE_UPDATE: Y,
@@ -681,11 +681,11 @@ class eN extends p.Z {
       GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: em,
       LOAD_THREADS_SUCCESS: B,
       LOAD_ARCHIVED_THREADS_SUCCESS: B,
-      LOAD_FORUM_POSTS: F,
+      LOAD_FORUM_POSTS: V,
       GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: Z,
       LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: H,
       NOTIFICATION_CENTER_ITEM_CREATE: W,
-      LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS: V,
+      LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS: F,
       PASSIVE_UPDATE_V2: ei,
       LOCAL_MESSAGES_LOADED: eo,
       FAMILY_CENTER_INITIAL_LOAD: eE,

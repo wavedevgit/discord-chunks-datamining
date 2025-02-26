@@ -171,7 +171,7 @@ function m(e) {
       focusIndex: v.focusIndex,
       isUsingKeyboardNavigation: T
     }
-  }, [t, O, L, v.focusIndex, T]), j = r.useCallback(e => {
+  }, [t, O, L, v.focusIndex, T]), k = r.useCallback(e => {
     var n;
     let {
       path: r,
@@ -195,8 +195,8 @@ function m(e) {
     dispatch: y,
     getContainerProps: x,
     getSubmenuProps: M,
-    getItemProps: j,
+    getItemProps: k,
     isFocused: L,
     isUsingKeyboardNavigation: T
-  }), [y, x, M, j, L, T])
+  }), [y, x, M, k, L, T])
 }

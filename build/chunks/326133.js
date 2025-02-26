@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => k
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -87,19 +87,19 @@ let D = 490,
   L = 245,
   x = 200,
   M = 175,
-  j = i.forwardRef(function(e, t) {
+  k = i.forwardRef(function(e, t) {
     var n, o, T, A, P;
     let {
-      channel: j,
-      type: k,
+      channel: k,
+      type: j,
       editorHeight: U,
       onVisibilityChange: G
-    } = e, B = (0, h.Dt)(), F = (0, l.e7)([E.Z], () => {
+    } = e, B = (0, h.Dt)(), V = (0, l.e7)([E.Z], () => {
       var e;
-      return null !== (e = E.Z.getGuild(j.guild_id)) && void 0 !== e ? e : null
-    }, [j.guild_id]), V = i.useRef(), [Z, H, W] = (0, O.Z)(C(N({}, e), {
-      guild: F
-    }), t, V), Y = (null === (n = k.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, p.DJ)(Z.selectedIndex);
+      return null !== (e = E.Z.getGuild(k.guild_id)) && void 0 !== e ? e : null
+    }, [k.guild_id]), F = i.useRef(), [Z, H, W] = (0, O.Z)(C(N({}, e), {
+      guild: V
+    }), t, F), Y = (null === (n = j.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, p.DJ)(Z.selectedIndex);
     (0, _.KR)(B, Z.isVisible, K), v.Z.trackExposure({
       location: "6e9811_1"
     });
@@ -111,22 +111,22 @@ let D = 490,
       autoTrackExposure: !1
     }), q = (0, y.Z)({
       editorHeight: U,
-      type: k,
+      type: j,
       state: Z,
       isInPopoutExperiment: z
     }), Q = (0, l.e7)([d.ZP], () => {
-      let e = d.ZP.getSelfEmbeddedActivityForChannel(j.id),
+      let e = d.ZP.getSelfEmbeddedActivityForChannel(k.id),
         t = d.ZP.getActivityPanelMode();
-      return (0, u.l5)(j) && null != e && (0, f.pY)(e.location) === j.id && t === S.Ez.PANEL
-    }, [j]), X = i.useMemo(() => (null == q ? void 0 : q.top) == null && (null == q ? void 0 : q.left) == null && (null == q ? void 0 : q.bottom) == null && (null == q ? void 0 : q.right) == null ? "" : String(Date.now()), [null == q ? void 0 : q.top, null == q ? void 0 : q.left, null == q ? void 0 : q.bottom, null == q ? void 0 : q.right]);
+      return (0, u.l5)(k) && null != e && (0, f.pY)(e.location) === k.id && t === S.Ez.PANEL
+    }, [k]), X = i.useMemo(() => (null == q ? void 0 : q.top) == null && (null == q ? void 0 : q.left) == null && (null == q ? void 0 : q.bottom) == null && (null == q ? void 0 : q.right) == null ? "" : String(Date.now()), [null == q ? void 0 : q.top, null == q ? void 0 : q.left, null == q ? void 0 : q.bottom, null == q ? void 0 : q.right]);
     if (i.useEffect(() => {
         G(Z.isVisible)
       }, [G, Z.isVisible]), !Z.isVisible || null == Z.query || void 0 === q) return null;
     let J = null !== (o = Z.query.typeInfo.renderResults({
       results: Z.query.results,
       selectedIndex: Z.selectedIndex,
-      channel: j,
-      guild: F,
+      channel: k,
+      guild: V,
       query: Z.query.queryText,
       options: Z.query.options,
       onHover: e => H.onResultHover(e),
@@ -140,7 +140,7 @@ let D = 490,
         [I.autocompleteTop]: Q
       },
       ee = D;
-    null != q && (ee = (null === (T = k.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (A = Z.query) || void 0 === A ? void 0 : A.type) === b.eq.EMOJIS_AND_STICKERS ? w : L), ee = Math.min(window.innerHeight - M, ee);
+    null != q && (ee = (null === (T = j.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (A = Z.query) || void 0 === A ? void 0 : A.type) === b.eq.EMOJIS_AND_STICKERS ? w : L), ee = Math.min(window.innerHeight - M, ee);
     let et = (0, r.jsx)(p.ZP, {
       id: B,
       className: a()(I.autocomplete, $),
@@ -157,7 +157,7 @@ let D = 490,
               id: B,
               ref: e => {
                 var n;
-                t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null, V.current = e
+                t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null, F.current = e
               }
             }, n), {
               className: I.scroller,

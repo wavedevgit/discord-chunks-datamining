@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -71,8 +71,8 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
   L = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_UNICODE_ICON_SIZE),
   x = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
   M = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
-  j = [P, P, P, P],
-  k = (D + w) * 2 + P,
+  k = [P, P, P, P],
+  j = (D + w) * 2 + P,
   U = x + 2 * M,
   G = 7,
   B = e => {
@@ -132,8 +132,8 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       }, "recent");
       let x = t === o,
         M = n[o],
-        j = n[o + 1],
-        k = null != j && M.type === v.Ih.GUILD && j.type !== v.Ih.GUILD,
+        k = n[o + 1],
+        j = null != k && M.type === v.Ih.GUILD && k.type !== v.Ih.GUILD,
         U = M.type === v.Ih.PACK,
         G = "",
         B = null;
@@ -177,11 +177,11 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
               children: B
             }))
           })
-        }), k ? (0, r.jsx)("hr", {
+        }), j ? (0, r.jsx)("hr", {
           className: T.guildCategorySeparator
         }, "separator") : null]
       }, M.id)
-    }, [t, p, m, n]), N = i.useCallback((e, t) => t ? k : 0, []);
+    }, [t, p, m, n]), N = i.useCallback((e, t) => t ? j : 0, []);
     return {
       getScrollOffsetForIndex: N,
       renderCategoryListItem: g,
@@ -197,7 +197,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       }, [s, o, d])
     }
   },
-  F = e => {
+  V = e => {
     let {
       stickersListRef: t,
       channel: n
@@ -240,7 +240,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       categoryListRef: o,
       expressionsListRef: t,
       store: d.ZN,
-      listPadding: j,
+      listPadding: k,
       onScroll: O,
       renderCategoryListItem: b,
       rowCount: f.length,

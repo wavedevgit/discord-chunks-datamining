@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  PF: () => V,
-  R7: () => j,
+  PF: () => F,
+  R7: () => k,
   Tg: () => U,
   UU: () => G,
-  gK: () => k,
+  gK: () => j,
   hM: () => P,
   iy: () => B,
   mO: () => x,
   t1: () => R,
-  uL: () => F,
+  uL: () => V,
   v2: () => M,
   yC: () => L
 }), n(757143), n(301563);
@@ -190,7 +190,7 @@ function M() {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     type: t,
     index: n,
@@ -221,7 +221,7 @@ function j(e) {
   })
 }
 
-function k() {
+function j() {
   let e = (0, o.Z)().replace(C, "");
   c.ZP.trackWithMetadata(E.rMx.SEARCH_OPENED, {
     search_type: E.aib.GIF,
@@ -294,7 +294,7 @@ function B(e) {
   return null == t ? e : (0, u.MO)(t) ? (0, u.q5)(t).toString() : e
 }
 
-function F(e) {
+function V(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     var n;
     let r = null !== (n = i().max(Object.values(t.gifs).map(e => e.order))) && void 0 !== n ? n : 0;
@@ -311,7 +311,7 @@ function F(e) {
   }, v.fy.INFREQUENT_USER_ACTION)
 }
 
-function V(e) {
+function F(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     e in t.gifs ? delete t.gifs[e] : delete t.gifs[B(e)], _.default.track(E.rMx.GIF_UNFAVORITED, {
       total_num_favorited: i().size(t.gifs)

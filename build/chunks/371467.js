@@ -25,14 +25,14 @@ var i, r = n(512722),
   S = n(70956),
   I = n(150097),
   C = n(129724),
-  Z = n(145597),
-  N = n(371651),
+  N = n(145597),
+  Z = n(371651),
   w = n(610394),
   _ = n(388627),
   P = n(996050),
   T = n(609626),
-  A = n(421824),
-  D = n(777036),
+  D = n(421824),
+  A = n(777036),
   k = n(333727),
   L = n(585708),
   R = n(588909),
@@ -181,7 +181,7 @@ function ei(e) {
       location: "OverlayV3StartRinging"
     }).enabled || y.Z.getStatus() === M.Skl.DND || p.QZ.getSetting()) return !1;
   let o = Q.find(e => 1 === e.type && e.channelId === t && e.messageType === M.uaV.CALL);
-  null != o && $(o.id), en((0, D.Z)(r), {
+  null != o && $(o.id), en((0, A.Z)(r), {
     priority: 1,
     expirationExternallyManaged: !0,
     type: 2,
@@ -211,8 +211,8 @@ let eo = new er(a.Z, {
       nudges: n
     } = e;
     q(0);
-    let i = null !== (t = w.ZP.getFocusedPID()) && void 0 !== t ? t : Z.R2;
-    if (N.default.hasChangedRenderMode(i)) return;
+    let i = null !== (t = w.ZP.getFocusedPID()) && void 0 !== t ? t : N.UNSET_PID;
+    if (Z.default.hasChangedRenderMode(i)) return;
     let r = (0, R.Z)((0, _.pL)(), n);
     null != r && en(r, {
       priority: 2,
@@ -268,7 +268,7 @@ let eo = new er(a.Z, {
       }(a, s, u);
       if (!1 !== e) return e
     }
-    if (j.Z.getTextChatNotificationMode() === M.Ypu.DISABLED || E.Z.disableNotifications || !(0, I.eF)(s, l)) return !1;
+    if (j.default.getTextChatNotificationMode() === M.Ypu.DISABLED || E.Z.disableNotifications || !(0, I.eF)(s, l)) return !1;
     let c = !O.Z.isSoundDisabled(x.Ay),
       p = null !== (r = g.Z.getMessage(l, s.id)) && void 0 !== r ? r : (0, d.e5)(s);
     en((0, L.Z)(a, p, u, c), {
@@ -324,18 +324,18 @@ let eo = new er(a.Z, {
     }))
   },
   CLIPS_SAVE_CLIP_START: function() {
-    en((0, A.f)(W.NW.string(W.t.NBMK9v)))
+    en((0, D.f)(W.NW.string(W.t.NBMK9v)))
   },
   CLIPS_SAVE_CLIP: function() {
-    en((0, A.f)(W.NW.format(W.t.KLhk6u, {
+    en((0, D.f)(W.NW.format(W.t.KLhk6u, {
       duration: (0, C.A)(c.Z.getSettings().clipsLength / 1e3, !0)
     })))
   },
   CLIPS_SAVE_CLIP_ERROR: function() {
-    en((0, A.f)(W.NW.string(W.t["1ZbZur"])))
+    en((0, D.f)(W.NW.string(W.t["1ZbZur"])))
   },
   STREAM_START: function(e) {
-    let t = (0, A.y)();
+    let t = (0, D.y)();
     null != t && en(t)
   }
 })

@@ -3,7 +3,7 @@
 n.d(t, {
   Ds: () => M,
   YB: () => L,
-  of: () => j,
+  of: () => k,
   q5: () => x
 });
 var r = n(200651);
@@ -64,11 +64,11 @@ function L(e) {
     idle: R,
     selectedParticipant: w,
     embeddedActivity: L
-  } = e, x = (0, c.bp)() === A.IlC.POPOUT, M = (0, a.e7)([S.Z], () => S.Z.isVideoEnabled()), j = (0, a.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), k = !1 === (null === (t = null == j ? void 0 : j.disabled) || void 0 === t || t), U = (0, u.Z)([o])[0], G = (0, _.Z)(i), B = e => {
+  } = e, x = (0, c.bp)() === A.IlC.POPOUT, M = (0, a.e7)([S.Z], () => S.Z.isVideoEnabled()), k = (0, a.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), j = !1 === (null === (t = null == k ? void 0 : k.disabled) || void 0 === t || t), U = (0, u.Z)([o])[0], G = (0, _.Z)(i), B = e => {
     l.Z.setVideoEnabled(e)
-  }, F = () => {
-    k ? B(!0) : (0, h.Z)()
   }, V = () => {
+    j ? B(!0) : (0, h.Z)()
+  }, F = () => {
     (0, N.Z)(() => p.hP(i))
   };
   return (0, r.jsxs)("div", {
@@ -94,10 +94,10 @@ function L(e) {
         children: [(0, r.jsx)(O.C, {
           className: P.leftPipIcon,
           enabled: M,
-          cameraUnavailable: !k,
+          cameraUnavailable: !j,
           hasPermission: G,
           onChange: B,
-          onCameraUnavailable: F
+          onCameraUnavailable: V
         }), (0, r.jsx)(m.Z, {
           children: (0, r.jsx)(d.Z, {
             channelId: i.id,
@@ -116,7 +116,7 @@ function L(e) {
         children: [x || (0, I.R)() ? null : (0, r.jsx)(b.Z, {
           className: P.rightPipIcon,
           popoutOpen: !1,
-          onOpenPopout: V,
+          onOpenPopout: F,
           onClosePopout: C.Vq
         }), (0, r.jsx)(v.Z, {
           applicationId: o,
@@ -186,7 +186,7 @@ function M(e) {
   }) : null
 }
 
-function j(e) {
+function k(e) {
   var t;
   let {
     onMouseDown: n,

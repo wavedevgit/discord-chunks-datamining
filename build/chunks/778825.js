@@ -101,14 +101,14 @@ function M(e) {
   u = t
 }
 
-function j(e) {
+function k(e) {
   let {
     themeColors: t
   } = e;
   d = t
 }
 
-function k() {
+function j() {
   U(), G(), y = {}, b = E.QZA.OPEN
 }
 
@@ -124,10 +124,10 @@ function B() {
   y = {}
 }
 
-function F() {
-  k(), S()
+function V() {
+  j(), S()
 }
-class V extends(h = m.ZP.Store) {
+class F extends(h = m.ZP.Store) {
   getFormState() {
     return b
   }
@@ -193,10 +193,10 @@ class V extends(h = m.ZP.Store) {
     return _
   }
 }
-v(V, "displayName", "GuildIdentitySettingsStore");
-let Z = new V(g.Z, {
+v(F, "displayName", "GuildIdentitySettingsStore");
+let Z = new F(g.Z, {
   GUILD_IDENTITY_SETTINGS_INIT: O,
-  GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: F,
+  GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: V,
   GUILD_IDENTITY_SETTINGS_SET_GUILD: T,
   GUILD_IDENTITY_SETTINGS_SUBMIT: I,
   GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: N,
@@ -209,10 +209,10 @@ let Z = new V(g.Z, {
   GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: L,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: x,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: M,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: j,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: k,
   GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: U,
   GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: G,
-  GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: k,
-  GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: k,
+  GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: j,
+  GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: j,
   GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: B
 })

@@ -215,24 +215,24 @@ function D(e) {
     fullRegionButton: L = !1,
     forceGroupedButtons: x = !1
   } = e, M = I(e, ["color", "caretColor", "isActive", "className", "iconClassName", "onPopoutClick", "popoutOpen", "popoutDisabled", "premiumGlow", "fullRegionButton", "forceGroupedButtons"]);
-  let j = (0, g.Z)(t, o),
-    k = null != n ? n : j,
+  let k = (0, g.Z)(t, o),
+    j = null != n ? n : k,
     U = (0, c.Z)("(max-width: 456px)"),
     G = i.useRef(null),
     B = i.useContext(h.h9),
     {
-      coloredIcons: F
+      coloredIcons: V
     } = (0, f.Z)({
       location: "CenterControlButton"
     });
   i.useEffect(() => {
     null != G.current && (B ? G.current.pause() : G.current.play())
   }, [B]);
-  let V = (0, p.Z)({
+  let F = (0, p.Z)({
       location: "CenterControlButton"
     }),
-    Z = x || V,
-    H = Z ? [v.experimentButton, F ? P[j] : R[j], L && null == O && v.fullRegionButton, F && !L && null != O && v.attachedButton] : [C[j]],
+    Z = x || F,
+    H = Z ? [v.experimentButton, V ? P[k] : R[k], L && null == O && v.fullRegionButton, V && !L && null != O && v.attachedButton] : [C[k]],
     W = (0, r.jsx)(A, S(y({}, M), {
       grow: !1,
       onContextMenu: O,
@@ -240,14 +240,14 @@ function D(e) {
       className: a()(U ? s : null, v.staticButton, v.centerButton, o && v.active, ...H)
     }));
   return U ? W : Z ? (0, r.jsxs)("div", {
-    className: a()(F ? v.attachedCaretButtonContainer : v.caretButtonContainer, F && T && v.popoutOpen, s, L && null != O && [v.fullRegionDropdownButton, R[j]]),
+    className: a()(V ? v.attachedCaretButtonContainer : v.caretButtonContainer, V && T && v.popoutOpen, s, L && null != O && [v.fullRegionDropdownButton, R[k]]),
     children: [W, null != O ? (0, r.jsx)(m.Z, {
       children: (0, r.jsx)(l.P3F, {
         "aria-label": E.NW.string(E.t.PdRCRk),
         onClick: D ? void 0 : O,
         onContextMenu: D ? void 0 : O,
-        className: a()(v.contextMenuNubExperiment, F && !L && v.attachedCaret, F ? P[k] : R[k], {
-          [v.popoutOpen]: T && F,
+        className: a()(v.contextMenuNubExperiment, V && !L && v.attachedCaret, V ? P[j] : R[j], {
+          [v.popoutOpen]: T && V,
           [v.active]: T,
           [v.disabled]: D
         }),
@@ -283,7 +283,7 @@ function D(e) {
         "aria-label": E.NW.string(E.t.PdRCRk),
         onClick: O,
         onContextMenu: O,
-        className: a()(v.contextMenuNub, C[j], {
+        className: a()(v.contextMenuNub, C[k], {
           [v.active]: T
         }),
         children: (0, r.jsx)(_.Z, {

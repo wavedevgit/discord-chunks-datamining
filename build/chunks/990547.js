@@ -16,8 +16,8 @@ n.r(t), n.d(t, {
   encodeProperties: () => g.Z,
   extendSuperProperties: () => K,
   getCampaignParams: () => w,
-  getDevice: () => k,
-  getOS: () => j,
+  getDevice: () => j,
+  getOS: () => k,
   getSuperProperties: () => q,
   getSuperPropertiesBase64: () => Q,
   isThrottled: () => Y,
@@ -177,7 +177,7 @@ function M() {
   else return ""
 }
 
-function j() {
+function k() {
   let {
     userAgent: e
   } = window.navigator;
@@ -190,7 +190,7 @@ function j() {
   else return ""
 }
 
-function k() {
+function j() {
   let {
     userAgent: e
   } = window.navigator;
@@ -209,8 +209,8 @@ function U() {
 
 function G() {
   let e = {},
-    t = j();
-  return e.os = t, e.browser = M(), e.device = k(), e.system_locale = (0, p.qf)(), e.has_client_mods = (0, f.e)(), e
+    t = k();
+  return e.os = t, e.browser = M(), e.device = j(), e.system_locale = (0, p.qf)(), e.has_client_mods = (0, f.e)(), e
 }
 
 function B() {
@@ -223,12 +223,12 @@ function B() {
   })
 }
 
-function F() {
+function V() {
   let e = {};
   return e.referrer = document.referrer, e.referring_domain = U(), e = O({}, e, w(window.location.href), x())
 }
 
-function V(e, t) {
+function F(e, t) {
   let n = {};
   return Object.keys(e).map(r => n["".concat(r).concat(t)] = e[r]), n
 }
@@ -237,9 +237,9 @@ function Z() {
   let e = _.K.get(T);
   null == e && (e = G(), _.K.set(T, e));
   let t = _.K.get(N);
-  null == t && (t = F(), _.K.set(N, t));
+  null == t && (t = V(), _.K.set(N, t));
   let n = h.x.get(N);
-  return null == n && (n = V(F(), "_current"), h.x.set(N, n)), O({}, e, B(), t, n)
+  return null == n && (n = F(V(), "_current"), h.x.set(N, n)), O({}, e, B(), t, n)
 }
 
 function H() {
@@ -254,7 +254,7 @@ function W() {
   let r = {},
     i = window.GLOBAL_ENV.RELEASE_CHANNEL;
   i && (null == r.release_channel || "" === r.release_channel) && (r.release_channel = i.split("-")[0]);
-  let o = parseInt((n = "371928", "371928"), 10);
+  let o = parseInt((n = "372048", "372048"), 10);
   isNaN(o) || (r.client_build_number = o);
   let a = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
   return isNaN(a) || (r.native_build_number = a), r.client_event_source = H(), r.has_client_mods = (0, f.e)(), r

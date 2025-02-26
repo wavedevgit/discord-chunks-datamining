@@ -26,14 +26,14 @@ var i = n(200651),
   S = n(808506),
   I = n(237997),
   C = n(451478),
-  Z = n(585483),
-  N = n(358085),
+  N = n(585483),
+  Z = n(358085),
   w = n(13140),
   _ = n(145597),
   P = n(830917),
   T = n(86071),
-  A = n(32300),
-  D = n(681603),
+  D = n(32300),
+  A = n(681603),
   k = n(915614),
   L = n(268861),
   R = n(690336),
@@ -48,7 +48,7 @@ var i = n(200651),
   B = n(981631),
   H = n(206583),
   Q = n(254908);
-let K = !N.isPlatformEmbedded && !1,
+let K = !Z.isPlatformEmbedded && !1,
   X = K ? (0, i.jsx)(m.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
     className: Q.videoDev,
@@ -140,18 +140,18 @@ let ee = r.memo(function(e) {
     return t && n ? (0, i.jsx)(M.Z, {
       className: Q.closeContainer,
       children: (0, i.jsx)(k.Z, {
-        onClick: () => d.Z.setInputLocked(!1, (0, _.QF)()),
+        onClick: () => d.Z.setInputLocked(!1, (0, _.getPID)()),
         IconComponent: u.d$P
       })
     }) : null
   });
 
 function en() {
-  d.Z.setInputLocked(!0, (0, _.QF)())
+  d.Z.setInputLocked(!0, (0, _.getPID)())
 }
 
 function ei() {
-  d.Z.setFocusedPID(_.Js)
+  d.Z.setFocusedPID(_.DEV_PID)
 }
 
 function er() {
@@ -159,10 +159,10 @@ function er() {
 }
 
 function eo(e) {
-  let t = V.ZP.isInputLocked((0, _.QF)());
-  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? Z.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  let t = V.ZP.isInputLocked((0, _.getPID)());
+  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? N.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !0
-  }) : "keydown" === e.type.toLowerCase() && Z.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  }) : "keydown" === e.type.toLowerCase() && N.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !1
   }))
 }
@@ -174,16 +174,16 @@ function el(e) {
     locked: o,
     focused: c,
     incompatibleApp: m,
-    hasZeroSizeDimension: N,
+    hasZeroSizeDimension: Z,
     keybind: k
-  } = (0, s.cj)([V.ZP, I.Z, C.Z, j.ZP], () => {
+  } = (0, s.cj)([V.ZP, I.default, C.Z, j.ZP], () => {
     let e = C.Z.windowSize((0, P.ZY)(n)),
       t = j.ZP.getOverlayKeybind(),
-      i = (0, _.QF)();
+      i = (0, _.getPID)();
     return {
       locked: V.ZP.isInputLocked(i),
-      focused: i === _.Js ? I.Z.isFocused(i) : V.ZP.isFocused((0, _.QF)()),
-      incompatibleApp: I.Z.incompatibleApp,
+      focused: i === _.DEV_PID ? I.default.isFocused(i) : V.ZP.isFocused((0, _.getPID)()),
+      incompatibleApp: I.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
       keybind: null != t ? (0, w.BB)(t.shortcut, !0) : "???"
     }
@@ -204,7 +204,7 @@ function el(e) {
       n.current.unmount()
     }), [])
   }(() => {
-    d.Z.overlayReady((0, _.QF)()), n.addEventListener("keydown", eo), n.addEventListener("keyup", eo), K && (n.document.hasFocus() && d.Z.setFocusedPID(_.Js), n.addEventListener("focus", ei), n.addEventListener("blur", er))
+    d.Z.overlayReady((0, _.getPID)()), n.addEventListener("keydown", eo), n.addEventListener("keyup", eo), K && (n.document.hasFocus() && d.Z.setFocusedPID(_.DEV_PID), n.addEventListener("focus", ei), n.addEventListener("blur", er))
   }, () => {
     n.removeEventListener("keydown", eo), n.removeEventListener("keyup", eo), K && (n.removeEventListener("focus", ei), n.removeEventListener("blur", er))
   }), ! function() {
@@ -226,14 +226,14 @@ function el(e) {
       }),
       {
         allowActivityWidget: h
-      } = (0, A.o4)("overlay"),
+      } = (0, D.o4)("overlay"),
       m = (0, g.Ns)(null == t ? void 0 : t.id),
       j = (0, s.e7)([f.Z], () => null != f.Z.getLastFeedFetchDate(H.YN.GAME_PROFILE_FEED) || !p && !h, [p, h]);
     r.useEffect(() => {
       var i;
       if (!j || e.current) return;
       e.current = !0;
-      let r = null !== (i = S.ZP.getFocusedPID()) && void 0 !== i ? i : (0, _.QF)();
+      let r = null !== (i = S.default.getFocusedPID()) && void 0 !== i ? i : (0, _.getPID)();
       if (W.default.hasChangedRenderMode(r)) return;
       let l = [{
         type: G.nc.WELCOME
@@ -252,7 +252,7 @@ function el(e) {
       }), d.Z.overlayMounted(...l)
     }, [j, m, a, u, c, t, n, o, h, p])
   }(), r.useEffect(() => {
-    if (Z.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+    if (N.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: !0
       }), o) {
       if ((0, a.Ay)(u.u1M), n.addEventListener("contextmenu", q, !1), null != J) {
@@ -269,7 +269,7 @@ function el(e) {
   }, [o, n]), (0, i.jsx)(h.Gt, {
     value: M,
     children: (0, i.jsx)(u.vWI, {
-      children: N || m ? null : (0, i.jsx)(u.f6W, {
+      children: Z || m ? null : (0, i.jsx)(u.f6W, {
         theme: B.BRd.DARK,
         children: e => (0, i.jsxs)("div", {
           className: l()(Q.overlay, e),
@@ -285,7 +285,7 @@ function el(e) {
           }), (0, i.jsx)(U.Z, {}), !t && K && (0, i.jsx)(et, {
             locked: o,
             focused: c
-          }), (0, i.jsx)(D.Z, {}), (0, i.jsx)(L.Z, {
+          }), (0, i.jsx)(A.Z, {}), (0, i.jsx)(L.Z, {
             locked: o
           }), (0, i.jsx)(u.Ixi, {})]
         })

@@ -148,16 +148,16 @@ function R(e) {
     channelId: y,
     messageId: N,
     roleId: C
-  }), x = i.useRef(null), M = (0, m.ZP)(t.id, n), j = (0, s.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t.id) : null);
+  }), x = i.useRef(null), M = (0, m.ZP)(t.id, n), k = (0, s.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t.id) : null);
   i.useEffect(() => {
     null == o || o(null == x ? void 0 : x.current)
   }, [x, o]);
-  let k = D ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE";
+  let j = D ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE";
   return (0, r.jsx)(u.Gt, {
     value: w,
     children: (0, r.jsx)(_.Mt, {
       value: L,
-      shouldTrackViewOnMount: null == j || null != j.fullProfileLoadedTimestamp,
+      shouldTrackViewOnMount: null == k || null != k.fullProfileLoadedTimestamp,
       children: (0, r.jsx)(l.VqE, {
         ref: x,
         "aria-label": t.username,
@@ -194,7 +194,7 @@ function R(e) {
                   isBlocked: D,
                   onClick: () => {
                     null == R || R(), (0, h.pQ)(A({
-                      action: k,
+                      action: j,
                       analyticsLocations: w
                     }, L))
                   }

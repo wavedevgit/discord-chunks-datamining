@@ -74,18 +74,18 @@ let I = e => {
     setSoundEffect: C
   } = (0, l.wD)(), [R, P] = i.useState(!1), D = i.useRef(null), w = (0, s.arW)({
     orientation: "horizontal"
-  }), L = (0, u.MY)(b, t), x = L === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, M = L !== u.xr.DEFAULT, j = (0, f.rK)(), {
-    enabled: k
+  }), L = (0, u.MY)(b, t), x = L === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, M = L !== u.xr.DEFAULT, k = (0, f.rK)(), {
+    enabled: j
   } = f.ZP.useExperiment({
     location: "premiumGiftSelect_GiftAnimationOptions"
   }, {
-    autoTrackExposure: j
+    autoTrackExposure: k
   }), {
     enabled: U
   } = p.O.useExperiment({
     location: "gift card"
   }), G = null;
-  M && (G = j && k ? g.kJ : g.QI), U && (G = g.RQ);
+  M && (G = k && j ? g.kJ : g.QI), U && (G = g.RQ);
   let B = e => {
     null != C && C(null == e ? void 0 : e)
   };

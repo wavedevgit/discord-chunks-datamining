@@ -47,8 +47,8 @@ let P = e => {
         className: L,
         emojiGrid: x,
         guildId: M,
-        pickerIntention: j,
-        channel: k
+        pickerIntention: k,
+        channel: j
       } = e,
       {
         enabled: U
@@ -88,15 +88,15 @@ let P = e => {
           allNamesString: null == B ? void 0 : B.name
         }
     }
-    let F = (0, o.e7)([g.Z], () => null !== t && t.type === u.B.GUILD ? g.Z.getGuild(t.guildId) : null, [t]),
-      V = (0, o.e7)([E.Z], () => E.Z.isFocused()),
+    let V = (0, o.e7)([g.Z], () => null !== t && t.type === u.B.GUILD ? g.Z.getGuild(t.guildId) : null, [t]),
+      F = (0, o.e7)([E.Z], () => E.Z.isFocused()),
       Z = (0, o.e7)([l.Z], () => l.Z.useReducedMotion, []),
       H = m.Yk.useSetting(),
       W = (0, y.C1)(M, R(t) ? t : null),
       Y = (0, o.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
       {
         newlyAddedEmojis: K
-      } = (0, O.Z)(M, j),
+      } = (0, O.Z)(M, k),
       z = (null == B ? void 0 : B.type) === I.ld.EMOJI ? B.subCategory : T.t0.NONE;
     if (i.useEffect(() => {
         let e = Date.now();
@@ -147,18 +147,18 @@ let P = e => {
         alt: ""
       })
     }
-    let X = null != F ? (0, r.jsx)(S.Z, {
+    let X = null != V ? (0, r.jsx)(S.Z, {
       className: A.__invalid_guildIcon,
-      guild: F,
-      shouldAnimate: !Z && V
+      guild: V,
+      shouldAnimate: !Z && F
     }) : null;
     w = U && "CREATE_EMOJI" === t.type ? N.NW.string(N.t.XCmLfH) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? Y.has(t.guildId) ? N.NW.string(N.t["/K2RDA"]) : N.NW.string(N.t.NZI2Zm) : t.allNamesString;
     let J = U && "CREATE_EMOJI" === t.type ? N.NW.string(N.t["Z/r7IS"]) : P({
       inspectedEmoji: t,
-      channel: k,
+      channel: j,
       guildId: M,
-      intention: j,
-      guild: F
+      intention: k,
+      guild: V
     });
     return (0, r.jsx)(_.Z, {
       className: L,

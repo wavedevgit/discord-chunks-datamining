@@ -80,11 +80,11 @@ function M(e, t) {
   return (null === (n = i[e]) || void 0 === n ? void 0 : n[r]) != null && (delete i[e][r], !0)
 }
 
-function j(e) {
+function k(e) {
   r.delete(e)
 }
 
-function k() {
+function j() {
   let e = [];
   for (let t in i) {
     let n = i[t];
@@ -136,7 +136,7 @@ function B(e) {
   })), n.ownerId === m.default.getId() && (D[n.channelId] = !1)
 }
 
-function F(e) {
+function V(e) {
   var t;
   let {
     streamType: n,
@@ -168,7 +168,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     streamKey: t
   } = e;
@@ -195,7 +195,7 @@ function H(e) {
   let {
     streamKey: t
   } = e;
-  j(t)
+  k(t)
 }
 
 function W(e) {
@@ -204,7 +204,7 @@ function W(e) {
     channelId: n
   } = e;
   P = t, Array.from(r.values()).forEach(e => {
-    (0, f.V9)(e) !== P && e.state === I.jm8.ENDED && j((0, f.V9)(e))
+    (0, f.V9)(e) !== P && e.state === I.jm8.ENDED && k((0, f.V9)(e))
   }), null != t && (0, f.DB)(t) && t.includes(m.default.getId()) && (D[n] = !1)
 }
 
@@ -233,7 +233,7 @@ function Y(e) {
   }
   r.set(t, R(A({}, s), {
     state: l
-  })), l === I.jm8.ENDED && P !== t && j(t)
+  })), l === I.jm8.ENDED && P !== t && k(t)
 }
 
 function K(e) {
@@ -377,10 +377,10 @@ class $ extends(s = l.ZP.PersistedStore) {
     return (0, _.Z)(v.Z) && null !== (t = o[e]) && void 0 !== t ? t : null
   }
   getAllApplicationStreams() {
-    return (0, _.Z)(v.Z) ? k().filter(e => null != e && X(e.streamType, e.channelId)) : []
+    return (0, _.Z)(v.Z) ? j().filter(e => null != e && X(e.streamType, e.channelId)) : []
   }
   getAllApplicationStreamsForChannel(e) {
-    return (0, _.Z)(v.Z) ? k().filter(t => null != t && t.channelId === e && X(t.streamType, t.channelId)) : []
+    return (0, _.Z)(v.Z) ? j().filter(t => null != t && t.channelId === e && X(t.streamType, t.channelId)) : []
   }
   getViewerIds(e) {
     if (!(0, _.Z)(v.Z)) return [];
@@ -410,8 +410,8 @@ let ee = new $(c.Z, {
   OVERLAY_INITIALIZE: U,
   VOICE_STATE_UPDATES: G,
   STREAM_WATCH: B,
-  STREAM_START: F,
-  STREAM_STOP: V,
+  STREAM_START: V,
+  STREAM_STOP: F,
   STREAM_CREATE: Z,
   STREAM_UPDATE: Z,
   STREAM_TIMED_OUT: K,

@@ -151,8 +151,8 @@ K(eu, "displayName", "NotificationStore"), new eu(r.Z, __OVERLAY__ ? {} : {
       }).enabled,
       p = h && I && T ? null !== (a = (0, v.bb)(null !== (l = f.guild_id) && void 0 !== l ? l : X.aIL, o)) && void 0 !== a ? a : (0, v.iD)(f.guild_id) : void 0;
     if (S && (T && q.Z.playNotificationSound("message3", .4, p), !et) || !N) return !1;
-    let m = n(808506).ZP,
-      y = n(237997).Z;
+    let m = n(808506).default,
+      y = n(237997).default;
     if (null != m.getFocusedPID() && y.getTextChatNotificationMode() === X.Ypu.ENABLED && !w.Z.disableNotifications) return !1;
     let {
       icon: U,

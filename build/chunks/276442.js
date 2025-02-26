@@ -81,7 +81,7 @@ function b(e) {
     setPurchaseState: x
   } = (0, u.JL)(), {
     isGift: M
-  } = (0, c.wD)(), j = v(g({}, (0, s.fL)()), {
+  } = (0, c.wD)(), k = v(g({}, (0, s.fL)()), {
     paymentSources: I,
     paymentSourceId: T,
     setPaymentSourceId: N,
@@ -91,17 +91,17 @@ function b(e) {
     paymentAuthenticationState: P,
     selectedSkuId: D,
     isGift: M
-  }), k = (0, a.N)(E), U = !M && null != k && null != D && h.nG[k.trial_id].skus.includes(D), G = () => {
+  }), j = (0, a.N)(E), U = !M && null != j && null != D && h.nG[j.trial_id].skus.includes(D), G = () => {
     m(Object.values(I).length < 1 && null == n ? d.h8.PLAN_SELECT : d.h8.REVIEW, {
       trackedFromStep: d.h8.PAYMENT_TYPE
     })
   }, B = null != b ? b : G;
   i()(S, "Step should be set here");
-  let F = (0, o.Z)(() => Date.now(), [S]),
-    V = null != y && null == L.current ? y : d.h8.PAYMENT_TYPE;
+  let V = (0, o.Z)(() => Date.now(), [S]),
+    F = null != y && null == L.current ? y : d.h8.PAYMENT_TYPE;
   return (0, s.vP)({
-    paymentModalArgs: j,
-    initialStep: V,
+    paymentModalArgs: k,
+    initialStep: F,
     prependSteps: [d.h8.PROMOTION_INFO],
     appendSteps: [d.h8.REVIEW, d.h8.CONFIRM],
     breadcrumpSteps: r,
@@ -123,7 +123,7 @@ function b(e) {
       l.default.track(_.rMx.PAYMENT_FLOW_STEP, v(g({}, t), {
         from_step: n,
         to_step: r,
-        step_duration_ms: i - F,
+        step_duration_ms: i - V,
         flow_duration_ms: i - O.startTime
       }))
     },

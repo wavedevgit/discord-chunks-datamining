@@ -70,8 +70,8 @@ let I = 200,
   L = 0,
   x = [],
   M = [],
-  j = [],
-  k = !1;
+  k = [],
+  j = !1;
 
 function U() {
   P = !1
@@ -192,11 +192,11 @@ function B(e) {
   throw Error("Invalid Dispatch State. state=".concat(e.state.type))
 }
 
-function F(e) {
+function V(e) {
   return e.type === v.vxO.INSTALLING || e.type === v.vxO.UPDATING || e.type === v.vxO.REPAIRING ? e.networkProgress : null
 }
 
-function V(e) {
+function F(e) {
   return e.type === v.vxO.INSTALLING || e.type === v.vxO.UPDATING || e.type === v.vxO.REPAIRING ? e.diskProgress : null
 }
 
@@ -226,10 +226,10 @@ function W(e) {
 }
 
 function Y(e) {
-  j = (j = [{
+  k = (k = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...j]).slice(0, T)
+  }, ...k]).slice(0, T)
 }
 let K = o().throttle(H, I),
   z = o().throttle(W, I),
@@ -254,9 +254,9 @@ function X(e) {
     for (let t in r[e]) {
       let a = (0, _.Tu)(e, t);
       if (n[a] = B(r[e][t]), null != A[a]) {
-        let e = Q(n, a, F);
+        let e = Q(n, a, V);
         e > 0 && K(D += e);
-        let r = Q(n, a, V);
+        let r = Q(n, a, F);
         r > 0 && q(w += r);
         let s = Q(n, a, Z);
         if (s > 0 && z(L += s), i === t) {
@@ -271,7 +271,7 @@ function X(e) {
           }
         }
       }
-      if (!k) {
+      if (!j) {
         let r = l.Z.fileManager.dirname(n[a].installPath);
         E.Z.getInstallationPath(e, t) !== r && s.Z.wait(() => {
           s.Z.dispatch({
@@ -290,7 +290,7 @@ function X(e) {
         })
       }
     }
-  o || "dispatch_application_progress" !== c.Z.taskID || c.Z.clearProgress("dispatch_application_progress"), A = n, k = !0
+  o || "dispatch_application_progress" !== c.Z.taskID || c.Z.clearProgress("dispatch_application_progress"), A = n, j = !0
 }
 class J extends(r = a.ZP.Store) {
   initialize() {
@@ -341,7 +341,7 @@ class J extends(r = a.ZP.Store) {
     return M
   }
   getHistoricalTotalBytesWritten() {
-    return j
+    return k
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {

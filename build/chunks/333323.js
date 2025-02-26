@@ -17,8 +17,8 @@ var t = l(200651),
   f = l(433355),
   x = l(626135),
   p = l(526120),
-  j = l(563534),
-  b = l(846121),
+  b = l(563534),
+  j = l(846121),
   C = l(460347),
   v = l(404488),
   _ = l(605276),
@@ -88,21 +88,21 @@ function W(e) {
   let {
     guild: a,
     width: h
-  } = e, P = (0, s.e7)([f.ZP], () => f.ZP.getSection(O.oC.GUILD_HOME)), [W, R] = r.useState(!1), [D, T] = r.useState(y.$Y6), L = P === y.ULH.SIDEBAR_CHAT, B = (0, o.mFp)(), H = (0, s.e7)([j.Z], () => j.Z.getSettings(a.id)), z = null == H ? void 0 : H.welcomeMessage, U = (0, C.Z)(a.id), F = !U && (null !== (l = null == H ? void 0 : null === (n = H.resourceChannels) || void 0 === n ? void 0 : n.length) && void 0 !== l ? l : 0) === 0, G = (0, d.Z)("(max-width: 1300px)"), q = h - y.PrS - D, V = L && q < A || G || F;
+  } = e, P = (0, s.e7)([f.ZP], () => f.ZP.getSection(O.oC.GUILD_HOME)), [W, R] = r.useState(!1), [D, T] = r.useState(y.$Y6), L = P === y.ULH.SIDEBAR_CHAT, B = (0, o.mFp)(), H = (0, s.e7)([b.Z], () => b.Z.getSettings(a.id)), z = null == H ? void 0 : H.welcomeMessage, U = (0, C.Z)(a.id), F = !U && (null !== (l = null == H ? void 0 : null === (n = H.resourceChannels) || void 0 === n ? void 0 : n.length) && void 0 !== l ? l : 0) === 0, G = (0, d.Z)("(max-width: 1300px)"), q = h - y.PrS - D, V = L && q < A || G || F;
   return (r.useEffect(() => {
-    if (H === j.P)(0, p.cP)(a.id);
+    if (H === b.P)(0, p.cP)(a.id);
     else if (null != H) {
       var e, n, l, t, r;
       x.default.track(y.rMx.SERVER_GUIDE_VIEWED, k(S({}, (0, u.hH)(a.id)), {
         num_member_actions: null !== (l = null === (e = H.newMemberActions) || void 0 === e ? void 0 : e.length) && void 0 !== l ? l : 0,
-        num_member_actions_completed: Object.keys(null !== (t = b.Z.getCompletedActions(a.id)) && void 0 !== t ? t : {}).length,
+        num_member_actions_completed: Object.keys(null !== (t = j.Z.getCompletedActions(a.id)) && void 0 !== t ? t : {}).length,
         num_resource_channels: null !== (r = null === (n = H.resourceChannels) || void 0 === n ? void 0 : n.length) && void 0 !== r ? r : 0
       }))
     }
   }, [a.id, H]), r.useEffect(() => () => {
     g.Z.closeChannelSidebar(O.oC.GUILD_HOME)
   }, []), r.useEffect(() => {
-    F && H !== j.P && c.Z.escapeToDefaultChannel(a.id)
+    F && H !== b.P && c.Z.escapeToDefaultChannel(a.id)
   }, [a.id, F, H]), F) ? null : (0, t.jsxs)(t.Fragment, {
     children: [(0, t.jsxs)("div", {
       className: i()(E.chat, w.background, {

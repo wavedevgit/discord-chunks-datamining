@@ -34,17 +34,17 @@ let v = 10,
   P = /^\/oauth2\/authorize/,
   D = /^#itemSkuId=([0-9]+)$/,
   w = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
-  L = V(window.GLOBAL_ENV.INVITE_HOST),
-  x = V(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
-  M = V(null !== (r = window.GLOBAL_ENV.WEBAPP_ENDPOINT) && void 0 !== r ? r : "//canary.".concat(E.$R1)),
-  j = V("//canary.".concat(E.$R1)),
-  k = V("//ptb.".concat(E.$R1)),
-  U = V("discordapp.com"),
-  G = V("discord.com"),
+  L = F(window.GLOBAL_ENV.INVITE_HOST),
+  x = F(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
+  M = F(null !== (r = window.GLOBAL_ENV.WEBAPP_ENDPOINT) && void 0 !== r ? r : "//canary.".concat(E.$R1)),
+  k = F("//canary.".concat(E.$R1)),
+  j = F("//ptb.".concat(E.$R1)),
+  U = F("discordapp.com"),
+  G = F("discord.com"),
   B = [h.Z.escape(null !== (i = L.host) && void 0 !== i ? i : ""), h.Z.escape(null !== (o = x.host) && void 0 !== o ? o : ""), h.Z.escape(null !== (a = M.host) && void 0 !== a ? a : ""), h.Z.escape(null !== (s = U.host) && void 0 !== s ? s : ""), h.Z.escape(null !== (l = G.host) && void 0 !== l ? l : "")].filter(Boolean),
-  F = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(B.join("|"), ")"), "g");
+  V = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(B.join("|"), ")"), "g");
 
-function V(e) {
+function F(e) {
   if (null == e) return {
     host: null,
     pathPrefix: null
@@ -74,7 +74,7 @@ function Z(e, t) {
 
 function H(e) {
   var t, n, r, i;
-  return null !== (i = null !== (r = null !== (n = null !== (t = Z(M, e)) && void 0 !== t ? t : Z(j, e)) && void 0 !== n ? n : Z(k, e)) && void 0 !== r ? r : Z(U, e)) && void 0 !== i ? i : Z(G, e)
+  return null !== (i = null !== (r = null !== (n = null !== (t = Z(M, e)) && void 0 !== t ? t : Z(k, e)) && void 0 !== n ? n : Z(j, e)) && void 0 !== r ? r : Z(U, e)) && void 0 !== i ? i : Z(G, e)
 }
 
 function W(e) {
@@ -98,7 +98,7 @@ function Y(e) {
   };
   let a = Z(L, o),
     s = Z(x, o),
-    l = null !== (i = null !== (r = null !== (n = null !== (t = Z(M, o)) && void 0 !== t ? t : Z(j, o)) && void 0 !== n ? n : Z(k, o)) && void 0 !== r ? r : Z(U, o)) && void 0 !== i ? i : Z(G, o);
+    l = null !== (i = null !== (r = null !== (n = null !== (t = Z(M, o)) && void 0 !== t ? t : Z(k, o)) && void 0 !== n ? n : Z(j, o)) && void 0 !== r ? r : Z(U, o)) && void 0 !== i ? i : Z(G, o);
   return {
     url: o,
     inviteHostRemainingPath: a,
@@ -111,7 +111,7 @@ function K(e) {
   if (null == e) return [];
   let t = new Set,
     n = [],
-    r = (e = e.replace(F, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(m.Z.URL_REGEX),
+    r = (e = e.replace(V, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(m.Z.URL_REGEX),
     i = e.match(w);
   if (null == (r = (null != r ? r : []).concat(null != i ? i : [])) || 0 === r.length) return [];
   for (let e of r) {

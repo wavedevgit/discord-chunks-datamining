@@ -1,62 +1,62 @@
-/** Chunk was on 27805 **/
-i.d(t, {
-  Z: () => _
-}), i(47120);
-var n = i(200651),
-  r = i(192379),
-  o = i(120356),
-  s = i.n(o),
-  l = i(642128),
-  a = i(748780),
-  c = i(481060),
-  d = i(442837),
-  u = i(607070),
-  h = i(663389),
-  E = i(291847);
+/** Chunk was on 63061 **/
+n.d(t, {
+  Z: () => m
+}), n(47120);
+var r = n(200651),
+  i = n(192379),
+  o = n(120356),
+  l = n.n(o),
+  s = n(642128),
+  a = n(748780),
+  c = n(481060),
+  u = n(442837),
+  d = n(607070),
+  _ = n(663389),
+  E = n(291847);
 
-function g(e) {
+function p(e) {
   let {
     children: t,
-    className: i,
+    className: n,
     onFlashEnd: o,
-    animationDelay: d = 500
-  } = e, h = c.TVs.colors.TEXT_LINK, g = (0, c.dQu)(h).spring({
+    animationDelay: u = 500
+  } = e, _ = c.TVs.colors.TEXT_LINK, p = (0, c.dQu)(_).spring({
     opacity: 0
-  }), _ = (0, c.dQu)(h).spring({
+  }), m = (0, c.dQu)(_).spring({
     opacity: .1
-  }), L = (0, c.dQu)(h).spring({
+  }), h = (0, c.dQu)(_).spring({
     opacity: 0
-  }), m = (0, c.dQu)(h).spring({
+  }), f = (0, c.dQu)(_).spring({
     opacity: 1
-  }), [p, C] = (0, c.q_F)(() => ({
+  }), [g, O] = (0, c.q_F)(() => ({
     from: {
-      backgroundColor: g,
-      borderColor: g
+      backgroundColor: p,
+      borderColor: p
     }
-  }), "animate-never"), f = {
-    startColor: g,
+  }), "animate-never"), N = {
+    startColor: p,
     handleRest: e => {
       e.finished && (null == o || o())
     },
-    endColor: L,
-    targetBorderColor: m,
-    targetColor: _,
-    animationDelay: d
-  }, O = r.useRef(f);
-  return r.useEffect(() => {
-    O.current = f
-  }), r.useEffect(() => {
+    endColor: h,
+    targetBorderColor: f,
+    targetColor: m,
+    animationDelay: u
+  }, I = i.useRef(N);
+  return i.useEffect(() => {
+    I.current = N
+  }), i.useEffect(() => {
     let {
       startColor: e,
       handleRest: t,
-      endColor: i,
-      targetBorderColor: n,
-      targetColor: r,
+      endColor: n,
+      targetBorderColor: r,
+      targetColor: i,
       animationDelay: o
-    } = O.current, {
-      useReducedMotion: s
-    } = u.Z, l = 200 * !s;
-    C({
+    } = I.current, {
+      useReducedMotion: l
+    } = d.Z, s = 200 * !l;
+    O({
       reset: !0,
       immediate: !1,
       to: {
@@ -64,53 +64,53 @@ function g(e) {
         borderColor: e
       },
       config: {
-        duration: l,
+        duration: s,
         easing: a.Z.Easing.ease
       }
-    }), C({
+    }), O({
       delay: o,
-      immediate: s,
+      immediate: l,
       to: [{
-        backgroundColor: r,
+        backgroundColor: i,
+        borderColor: r
+      }],
+      config: {
+        duration: s,
+        easing: a.Z.Easing.ease
+      }
+    }), O({
+      delay: o + 200 + 200,
+      immediate: l,
+      to: [{
+        backgroundColor: n,
         borderColor: n
       }],
       config: {
-        duration: l,
-        easing: a.Z.Easing.ease
-      }
-    }), C({
-      delay: o + 200 + 200,
-      immediate: s,
-      to: [{
-        backgroundColor: i,
-        borderColor: i
-      }],
-      config: {
-        duration: l,
+        duration: s,
         easing: a.Z.Easing.ease
       },
       onRest: t
     })
-  }, [C]), (0, n.jsx)(l.animated.div, {
-    style: p,
-    className: s()(E.settingsItemHighlight, i),
+  }, [O]), (0, r.jsx)(s.animated.div, {
+    style: g,
+    className: l()(E.settingsItemHighlight, n),
     children: t
   })
 }
 
-function _(e) {
+function m(e) {
   let {
     children: t,
-    scrollPosition: i,
+    scrollPosition: n,
     animationDelay: o
-  } = e, s = (0, d.e7)([h.Z], () => h.Z.getScrollPosition() === i), [l, a] = r.useState(!1);
-  return (r.useEffect(() => {
-    s && a(!0)
-  }, [s]), l) ? (0, n.jsx)(g, {
+  } = e, l = (0, u.e7)([_.Z], () => _.Z.getScrollPosition() === n), [s, a] = i.useState(!1);
+  return (i.useEffect(() => {
+    l && a(!0)
+  }, [l]), s) ? (0, r.jsx)(p, {
     animationDelay: o,
     onFlashEnd: () => a(!1),
     children: t
-  }) : (0, n.jsx)(n.Fragment, {
+  }) : (0, r.jsx)(r.Fragment, {
     children: t
   })
 }

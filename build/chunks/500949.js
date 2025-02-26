@@ -1,10 +1,10 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  $R: () => Y,
+  $R: () => X,
   A0: () => et,
-  GU: () => K,
+  GU: () => J,
   H8: () => q,
-  HI: () => J,
+  HI: () => K,
   HW: () => z,
   Ib: () => es,
   KB: () => eu,
@@ -15,9 +15,9 @@ n.d(t, {
   YE: () => el,
   h9: () => eo,
   iw: () => en,
-  jC: () => W,
-  jQ: () => U,
-  lT: () => X,
+  jC: () => U,
+  jQ: () => G,
+  lT: () => Y,
   rd: () => ed,
   t4: () => ec,
   uF: () => em,
@@ -33,28 +33,28 @@ var r, a, i = n(192379),
   m = n(385787),
   h = n(566162),
   x = n(567027),
-  p = n(461195),
-  f = n(857702),
+  f = n(461195),
+  p = n(857702),
   b = n(20450),
   _ = n(312976),
   g = n(147591),
   v = n(135164),
   j = n(940172),
-  C = n(81011),
-  y = n(981613),
-  O = n(762399),
-  N = n(232112),
-  T = n(53796),
+  y = n(81011),
+  C = n(981613),
+  N = n(762399),
+  T = n(232112),
+  O = n(53796),
   E = n(723757),
   S = n(375924),
   k = n(596136),
   I = n(341901),
   w = n(856308),
-  R = n(665352),
+  Z = n(665352),
   P = n(394900),
-  Z = n(661105),
-  A = n(525169),
-  L = n(433517),
+  R = n(661105),
+  L = n(525169),
+  A = n(433517),
   D = n(190558),
   B = n(231338);
 
@@ -99,42 +99,42 @@ let z = {
     HSLuv: m.Z,
     HSV: h.Z,
     HWB: x.Z,
-    ICTCP: p.Z,
-    JzCzHz: f.Z,
+    ICTCP: f.Z,
+    JzCzHz: p.Z,
     Jzazbz: b.Z,
     LCH: _.Z,
     LCHuv: g.Z,
     Lab: v.Z,
     Lab_D65: j.Z,
-    Luv: C.Z,
-    OKLCH: y.Z,
-    OKLab: O.Z,
-    P3: N.Z,
-    ProPhoto: T.Z,
+    Luv: y.Z,
+    OKLCH: C.Z,
+    OKLab: N.Z,
+    P3: T.Z,
+    ProPhoto: O.Z,
     REC_2020: E.Z,
     REC_2100_HLG: S.Z,
     REC_2100_PQ: k.Z,
     XYZ_D50: I.Z,
     XYZ_D65: w.Z
   },
-  U = Object.fromEntries(Object.keys(z).map(e => [e, e]));
-Object.values(z).forEach(e => R.Z.register(e));
+  G = Object.fromEntries(Object.keys(z).map(e => [e, e]));
+Object.values(z).forEach(e => Z.Z.register(e));
 let {
-  SemanticColors: G
-} = D.V, W = G, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
+  SemanticColors: W
+} = D.V, U = W, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
 
 function V(e, t) {
   let [n, r] = i.useState(() => {
-    let n = L.K.get(e);
+    let n = A.K.get(e);
     return null != n ? n : t
   });
   return i.useEffect(() => {
-    L.K.set(e, n)
+    A.K.set(e, n)
   }, [e, n]), [n, r]
 }
 
-function Y(e) {
-  let t = W[e];
+function X(e) {
+  let t = U[e];
   return {
     name: e,
     colors: Object.fromEntries(Object.values(B.BR).map(e => [e, {
@@ -145,7 +145,7 @@ function Y(e) {
   }
 }
 
-function X(e, t, n, r, a) {
+function Y(e, t, n, r, a) {
   return {
     name: t,
     colors: F(M({}, e.colors), {
@@ -158,14 +158,14 @@ function X(e, t, n, r, a) {
   }
 }
 
-function K(e) {
+function J(e) {
   return F(M({}, e), {
     highlight: !e.highlight
   })
 }
 
-function J(e) {
-  return (0, P.Z)((0, Z.Z)(e, l.Z), {
+function K(e) {
+  return (0, P.Z)((0, R.Z)(e, l.Z), {
     format: "hex"
   })
 }
@@ -216,33 +216,33 @@ function ea(e) {
     darkness: a,
     lightness: i,
     easingStrength: o = 1
-  } = e, s = z[e.colorSpace], c = (0, Z.Z)(n, s), d = (0, A.CD)(c, "white", 1 - a, {
+  } = e, s = z[e.colorSpace], c = (0, R.Z)(n, s), d = (0, L.CD)(c, "white", 1 - a, {
     space: s,
     outputSpace: l.Z
-  }), u = (0, A.CD)(c, "black", 1 - i, {
+  }), u = (0, L.CD)(c, "black", 1 - i, {
     space: s,
     outputSpace: l.Z
-  }), m = Math.floor(r / 2), h = r - m, x = (0, A.w6)(d, c, {
+  }), m = Math.floor(r / 2), h = r - m, x = (0, L.w6)(d, c, {
     steps: m,
     outputSpace: s,
     space: s,
     progression: e => e ** o
-  }), p = (0, A.w6)(u, c, {
+  }), f = (0, L.w6)(u, c, {
     steps: h,
     outputSpace: s,
     space: s,
     progression: e => e ** o
-  }), f = [];
+  }), p = [];
   for (let e = 0; e < m; e++) {
     let t = x(e / m);
-    f.push(t)
+    p.push(t)
   }
-  f.push(c);
+  p.push(c);
   for (let e = 1; e < h; e++) {
-    let t = p(1 - e / h);
-    f.push(t)
+    let t = f(1 - e / h);
+    p.push(t)
   }
-  return Object.fromEntries(f.map((e, n) => ["".concat(t, "-").concat(n), e]))
+  return Object.fromEntries(p.map((e, n) => ["".concat(t, "-").concat(n), e]))
 }
 
 function ei(e, t, n) {

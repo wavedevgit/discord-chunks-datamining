@@ -143,10 +143,10 @@ function M(e) {
     M = d ? e => {
       e.stopPropagation(), e.preventDefault()
     } : () => (0, b.yg)(b.uG.CONTEXT_MENU_OPENED),
-    j = t.length > 1;
+    k = t.length > 1;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(S.ZP, {
-      children: e => j ? (0, r.jsxs)(r.Fragment, {
+      children: e => k ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(T.Z, {
           onClick: e => {
             e.stopPropagation(), E.S.dispatch(A.CkL.MODAL_CAROUSEL_PREV)
@@ -177,7 +177,7 @@ function M(e) {
           onContextMenu: M
         })
       })
-    }), j && (0, r.jsx)(S.ZP, {
+    }), k && (0, r.jsx)(S.ZP, {
       children: e => (0, r.jsx)(I.Z, {
         items: t,
         currentIndex: p,

@@ -18,8 +18,8 @@ var r = t(200651),
   g = t(256226),
   v = t(678738),
   y = t(314172),
-  I = t(981631),
-  h = t(388032),
+  h = t(981631),
+  I = t(388032),
   j = t(894660);
 
 function x(e) {
@@ -36,10 +36,10 @@ function x(e) {
   } = e, v = f && null != a, x = o.useMemo(() => "roles-".concat((0, i.Z)()), []), _ = (0, l.ZP)({
     id: x,
     isEnabled: !0,
-    scrollToStart: I.Cyb,
-    scrollToEnd: I.Cyb,
+    scrollToStart: h.Cyb,
+    scrollToEnd: h.Cyb,
     wrap: !0
-  }), O = d.length, Z = 0 === O ? h.NW.string(h.t["vR7M+/"]) : h.NW.formatToPlainString(h.t.PCs0oq, {
+  }), O = d.length, Z = 0 === O ? I.NW.string(I.t["vR7M+/"]) : I.NW.formatToPlainString(I.t.PCs0oq, {
     numRoles: O
   }), N = d.map(e => {
     var o;
@@ -130,7 +130,7 @@ function _(e) {
     let o = (null === (t = e.tags) || void 0 === t ? void 0 : t.guild_connections) !== null,
       i = (null === (r = n.tags) || void 0 === r ? void 0 : r.guild_connections) !== null;
     return o && !i ? 1 : !o && i ? -1 : 0
-  }), [y, j]), O = m.e9(i, t.id), [Z] = (0, c.Wu)([p.Z], () => [p.Z.can(I.Plq.MANAGE_ROLES, i), null != i ? p.Z.getGuildVersion(i.id) : null]), N = o.useCallback(e => {
+  }), [y, j]), O = m.e9(i, t.id), [Z] = (0, c.Wu)([p.Z], () => [p.Z.can(h.Plq.MANAGE_ROLES, i), null != i ? p.Z.getGuildVersion(i.id) : null]), N = o.useCallback(e => {
     var t, r;
     s({
       action: "REMOVE_ROLE"
@@ -144,7 +144,7 @@ function _(e) {
     let t = null != j ? j : []; - 1 === t.indexOf(e) && (t = t.concat([e])), d.Z.updateMemberRoles(i.id, n.id, t, [e], [])
   }, [j, i.id, n.id, s]), E = Z && null != g;
   return 0 !== _.length || E ? (0, r.jsx)(v.Z, {
-    heading: h.NW.string(h.t.LPJmLy),
+    heading: I.NW.string(I.t.LPJmLy),
     scrollIntoView: l,
     children: (0, r.jsx)(x, {
       user: n,

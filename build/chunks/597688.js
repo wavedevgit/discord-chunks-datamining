@@ -60,13 +60,13 @@ let m = new Map,
   M = e => {
     A = !0, r = void 0, o = void 0, D = e.options
   },
-  j = e => {
+  k = e => {
     let {
       error: t
     } = e;
     y = m, O = g, T = b, A = !1, C = new Set, r = t, o = Date.now()
   },
-  k = e => {
+  j = e => {
     if (0 === e.categories.length) y = m, O = g;
     else if (!(0, s.isEqual)([...y.values()], e.categories) && !e.noOp) {
       let t = new Map(e.categories.map(e => [e.skuId, e])),
@@ -102,7 +102,7 @@ let m = new Map,
   B = () => {
     y = m, O = g, T = b, i = void 0, A = !1, C = new Set, r = void 0, o = void 0, D = {}
   },
-  F = () => {
+  V = () => {
     if (!u.Z.hasLoadedExperiments) return;
     let {
       giftRecommendationAlgorithm: e
@@ -113,9 +113,9 @@ let m = new Map,
     });
     e !== N && (i = void 0), N = e
   };
-class V extends(a = l.ZP.Store) {
+class F extends(a = l.ZP.Store) {
   initialize() {
-    this.syncWith([f.default], B), this.syncWith([u.Z], F)
+    this.syncWith([f.default], B), this.syncWith([u.Z], V)
   }
   get isFetchingCategories() {
     return A
@@ -167,11 +167,11 @@ class V extends(a = l.ZP.Store) {
     return this.getCategory(null == t ? void 0 : t.categorySkuId)
   }
 }
-h(V, "displayName", "CollectiblesCategoryStore");
-let Z = new V(c.Z, {
+h(F, "displayName", "CollectiblesCategoryStore");
+let Z = new F(c.Z, {
   COLLECTIBLES_CATEGORIES_FETCH: M,
-  COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: k,
-  COLLECTIBLES_CATEGORIES_FETCH_FAILURE: j,
+  COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: j,
+  COLLECTIBLES_CATEGORIES_FETCH_FAILURE: k,
   COLLECTIBLES_PRODUCT_FETCH: w,
   COLLECTIBLES_PRODUCT_FETCH_SUCCESS: x,
   COLLECTIBLES_PRODUCT_FETCH_FAILURE: L,

@@ -1,11 +1,11 @@
 /** Chunk was on 27978 **/
 n.d(t, {
   GB: () => y,
-  JI: () => S,
+  JI: () => C,
   UM: () => P,
   V6: () => T,
-  WT: () => E,
-  X7: () => I,
+  WT: () => I,
+  X7: () => E,
   jq: () => A,
   mx: () => N
 }), n(411104);
@@ -21,8 +21,8 @@ var r = n(200651),
   h = n(768581),
   p = n(51144),
   g = n(245335),
-  _ = n(981631),
-  m = n(888592),
+  m = n(981631),
+  _ = n(888592),
   f = n(388032),
   b = n(72171);
 let N = 100,
@@ -35,24 +35,24 @@ let N = 100,
     return 0 === r.memberCount && 0 === r.memberCount ? null : r
   },
   v = e => e.target_type === g.Iq.STREAM && null != e.target_user,
-  E = e => {
+  I = e => {
     var t;
-    return (null === (t = e.channel) || void 0 === t ? void 0 : t.type) === _.d4z.GROUP_DM
+    return (null === (t = e.channel) || void 0 === t ? void 0 : t.type) === m.d4z.GROUP_DM
   },
-  I = e => null == e.channel && null == e.guild && null != e.inviter,
+  E = e => null == e.channel && null == e.guild && null != e.inviter,
   O = e => {
     var t;
     let n = x(e);
     return (null !== (t = null == n ? void 0 : n.memberCount) && void 0 !== t ? t : 0) > N
   },
-  C = e => e.state === _.r2o.ACCEPTED,
-  S = e => {
+  j = e => e.state === m.r2o.ACCEPTED,
+  C = e => {
     let {
       guild_scheduled_event: t
     } = e;
     return null != t
   },
-  j = e => !S(e) && (!!I(e) || null != e.inviter && !C(e) && !O(e)),
+  S = e => !C(e) && (!!E(e) || null != e.inviter && !j(e) && !O(e)),
   y = e => {
     let {
       guild: t,
@@ -82,7 +82,7 @@ function T(e) {
     textClassName: i,
     className: o
   } = e, l = x(n);
-  return null == l || j(n) || (null == n ? void 0 : null === (t = n.guild) || void 0 === t ? void 0 : t.id) === m.fQ ? null : (0, r.jsx)(s.EJ, {
+  return null == l || S(n) || (null == n ? void 0 : null === (t = n.guild) || void 0 === t ? void 0 : t.id) === _.fQ ? null : (0, r.jsx)(s.EJ, {
     className: a()(b.activityCount, o),
     online: l.onlineCount,
     total: l.memberCount,
@@ -95,15 +95,15 @@ function A(e) {
   let {
     invite: t,
     showBigUserIcon: n
-  } = e, o = i.useMemo(() => n ? null : v(t) && null != t.target_user ? h.ZP.getUserAvatarURL(t.target_user) : j(t) && null != t.inviter ? h.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), a = f.NW.string(f.t["3rE1Pz"]);
-  if (E(t)) {
+  } = e, o = i.useMemo(() => n ? null : v(t) && null != t.target_user ? h.ZP.getUserAvatarURL(t.target_user) : S(t) && null != t.inviter ? h.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), a = f.NW.string(f.t["3rE1Pz"]);
+  if (I(t)) {
     var c, u;
     a = (null === (c = t.channel) || void 0 === c ? void 0 : c.name) != null && (null === (u = t.inviter) || void 0 === u ? void 0 : u.username) != null ? f.NW.format(f.t.Lu4h19, {
       username: t.inviter.username
     }) : f.NW.string(f.t.OsdY8P)
   } else v(t) && null != t.target_user ? a = f.NW.formatToPlainString(f.t.x2L32d, {
     username: t.target_user.username
-  }) : C(t) ? a = f.NW.string(f.t["FDsl+P"]) : j(t) && null != t.inviter && (a = f.NW.format(f.t.spU2mJ, {
+  }) : j(t) ? a = f.NW.string(f.t["FDsl+P"]) : S(t) && null != t.inviter && (a = f.NW.format(f.t.spU2mJ, {
     username: p.ZP.getFormattedName(t.inviter)
   }));
   return (0, r.jsxs)("div", {

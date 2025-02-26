@@ -45,7 +45,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,14 +70,14 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let G = new m.Z("GatewaySocket"),
   B = new C.Z;
 
-function F(e) {
+function V(e) {
   let t, {
     gatewayURL: n,
     newCallback: r,
@@ -96,10 +96,10 @@ function F(e) {
     if (t = l.ws, l.state.gateway !== n) G.verbose("[FAST CONNECT] gatewayURL mismatch: ".concat(l.state.gateway, " !== ").concat(n)), t.close(1e3), t = null;
     else {
       var p;
-      let e = j({}, l.state);
-      null != e.messages && (e.messages = e.messages.map(e => null != e.data && "string" == typeof e.data ? U(j({}, e), {
+      let e = k({}, l.state);
+      null != e.messages && (e.messages = e.messages.map(e => null != e.data && "string" == typeof e.data ? U(k({}, e), {
         data: e.data.substring(0, 100)
-      }) : e)), G.log("[FAST CONNECT] successfully took over websocket, state:", U(j({}, e), {
+      }) : e)), G.log("[FAST CONNECT] successfully took over websocket, state:", U(k({}, e), {
         messages: null === (p = e.messages) || void 0 === p ? void 0 : p.length
       })), c = l.state.open, u = l.state.identify, d = l.state.messages, f = l.state.clientState
     }
@@ -107,7 +107,7 @@ function F(e) {
   null == t && ((t = (0, L.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(o), t.onopen = () => i(u, f), t.onmessage = o, t.onclose = s, t.onerror = a
 }
 
-function V() {}
+function F() {}
 let Z = 4,
   H = 1001,
   W = "Stream end encountered",
@@ -149,7 +149,7 @@ class $ extends D.Z {
     G.verbose("Setting connection state to ".concat(e)), this.connectionState_ = e
   }
   addAnalytics(e) {
-    this.analytics = j({}, this.analytics, e)
+    this.analytics = k({}, this.analytics, e)
   }
   setResumeUrl(e) {
     null != e && e.endsWith("/") && (e = e.substring(0, e.length - 1)), null !== e && G.verbose("Updating resume url to ".concat(e)), this.resumeUrl = e
@@ -173,7 +173,7 @@ class $ extends D.Z {
       this._handleClose(!1, 0, "The connection timed out after ".concat(e, " ms - did not receive OP_HELLO in time.")), this.setResumeUrl(null)
     }, K);
     let i = new URL(n);
-    i.searchParams.append("encoding", t), i.searchParams.append("v", r.toString()), null != e && i.searchParams.append("compress", e), F({
+    i.searchParams.append("encoding", t), i.searchParams.append("v", r.toString()), null != e && i.searchParams.append("compress", e), V({
       gatewayURL: i.toString(),
       newCallback: e => {
         this.webSocket = e, this.compressionHandler.bindWebSocket(e)
@@ -347,7 +347,7 @@ class $ extends D.Z {
   _cleanup(e) {
     c.ZP.Emitter.resume(), this._stopHeartbeater(), this._clearHelloTimeout();
     let t = this.webSocket;
-    this.webSocket = null, null != t && (t.onopen = V, t.onmessage = V, t.onerror = V, t.onclose = V, null == e || e(t)), this.gatewayBackoff.cancel(), this.compressionHandler.close(), this.compressionHandler = (0, A.I)(B)
+    this.webSocket = null, null != t && (t.onopen = F, t.onmessage = F, t.onerror = F, t.onclose = F, null == e || e(t)), this.gatewayBackoff.cancel(), this.compressionHandler.close(), this.compressionHandler = (0, A.I)(B)
   }
   _doResume() {
     var e;
@@ -466,7 +466,7 @@ class $ extends D.Z {
   }
   resetSocketOnDispatchError(e) {
     let t = null != e.error.message && e.error.message.indexOf("Guild data was missing from store") >= 0;
-    this.resetSocketOnError(U(j({}, e), {
+    this.resetSocketOnError(U(k({}, e), {
       sentry: !t,
       clearCache: t
     }))

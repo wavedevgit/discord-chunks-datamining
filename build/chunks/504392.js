@@ -15,8 +15,8 @@ var r = t(200651),
   v = t(953478),
   m = t(460608),
   p = t(535396),
-  j = t(783684),
-  b = t(388032),
+  b = t(783684),
+  j = t(388032),
   h = t(748448);
 let _ = [p.U.LEVEL, p.U.PERK];
 
@@ -41,7 +41,7 @@ function C(e) {
         disabled: !0,
         "aria-label": ""
       }), (0, r.jsx)(c.Z.Title, {
-        children: b.NW.string(j.Z.yv3DJC)
+        children: j.NW.string(b.Z.yv3DJC)
       }), (0, r.jsx)(c.Z.Divider, {})]
     }), (0, r.jsxs)("div", {
       className: h.contentContainer,
@@ -54,10 +54,10 @@ function C(e) {
               className: h.powerupTextContainer,
               children: [(0, r.jsx)(a.X6q, {
                 variant: "heading-lg/semibold",
-                children: b.NW.string(j.Z["TXY/b2"])
+                children: j.NW.string(b.Z["TXY/b2"])
               }), (0, r.jsx)(a.Text, {
                 variant: "text-sm/medium",
-                children: b.NW.string(j.Z.aJv4PD)
+                children: j.NW.string(b.Z.aJv4PD)
               })]
             }), (0, r.jsx)("div", {
               className: h.powerupContainer,

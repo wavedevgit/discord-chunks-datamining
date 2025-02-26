@@ -117,10 +117,10 @@ function R(e) {
     maxVisibleItems: N = 5,
     itemToString: R = A,
     showScrollbar: P = !1
-  } = e, [D, w] = i.useState(""), [L] = i.useState(!0), [x, M] = i.useState(null), j = i.useId(), k = i.useRef(null);
+  } = e, [D, w] = i.useState(""), [L] = i.useState(!0), [x, M] = i.useState(null), k = i.useId(), j = i.useRef(null);
   i.useLayoutEffect(() => {
     let e = document.querySelector("[".concat(S, '="').concat(x, '"]')),
-      t = k.current;
+      t = j.current;
     null != t && null != e && t.scrollIntoViewNode({
       node: e,
       padding: 12
@@ -129,15 +129,15 @@ function R(e) {
   let U = n(D),
     G = 0 === U.length,
     B = i.useId(),
-    F = i.useCallback(() => new Promise(e => {
-      let t = k.current;
+    V = i.useCallback(() => new Promise(e => {
+      let t = j.current;
       if (null == t) return e();
       t.scrollToTop({
         callback: () => requestAnimationFrame(() => e())
       })
     }), []),
-    V = i.useCallback(() => new Promise(e => {
-      let t = k.current;
+    F = i.useCallback(() => new Promise(e => {
+      let t = j.current;
       if (null == t) return e();
       t.scrollToTop({
         callback: () => requestAnimationFrame(() => e())
@@ -146,7 +146,7 @@ function R(e) {
     Z = i.useCallback((e, t) => {
       M(t);
       let n = document.querySelector(e),
-        r = k.current;
+        r = j.current;
       null != r && null != n && r.scrollIntoViewNode({
         node: n
       })
@@ -155,8 +155,8 @@ function R(e) {
       id: B,
       isEnabled: !0,
       useVirtualFocus: !0,
-      scrollToStart: F,
-      scrollToEnd: V,
+      scrollToStart: V,
+      scrollToEnd: F,
       setFocus: Z
     }),
     W = P ? d.Tv : d.lW;
@@ -173,8 +173,8 @@ function R(e) {
           role: "combobox",
           "aria-label": v,
           "aria-expanded": L,
-          "aria-controls": L ? j : void 0,
-          "aria-owns": j,
+          "aria-controls": L ? k : void 0,
+          "aria-owns": k,
           "aria-haspopup": "listbox",
           className: a()(m.combobox, u),
           children: [(0, r.jsx)(f.E, {
@@ -216,8 +216,8 @@ function R(e) {
                   maxHeight: N * (I + 6)
                 },
                 "aria-multiselectable": O,
-                id: j,
-                ref: k,
+                id: k,
+                ref: j,
                 className: a()(m.list, g, {
                   [m.scroller]: P
                 }),

@@ -119,7 +119,7 @@ function M(e) {
   }), !1
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t,
     userIds: n
@@ -129,7 +129,7 @@ function j(e) {
   }), !1
 }
 
-function k(e) {
+function j(e) {
   let {
     guildId: t
   } = e;
@@ -159,7 +159,7 @@ function B(e) {
   return C(t, n, r)
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     channelId: n
@@ -167,7 +167,7 @@ function F(e) {
   return A(t, n)
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     channelId: n
@@ -247,17 +247,17 @@ let q = new z(l.Z, {
   CONNECTION_CLOSED: P,
   IDLE: D,
   LOGOUT: w,
-  VOICE_CHANNEL_SELECT: V,
-  CHANNEL_SELECT: V,
+  VOICE_CHANNEL_SELECT: F,
+  CHANNEL_SELECT: F,
   GUILD_CREATE: L,
   GUILD_DELETE: x,
   GUILD_SUBSCRIPTIONS_MEMBERS_ADD: M,
-  GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE: j,
-  GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES: k,
+  GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE: k,
+  GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES: j,
   GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES: U,
   GUILD_SUBSCRIPTIONS_CHANNEL: B,
   GUILD_SUBSCRIPTIONS: G,
-  CHANNEL_PRELOAD: F,
+  CHANNEL_PRELOAD: V,
   INBOX_OPEN: K,
   THREAD_UPDATE: H,
   THREAD_DELETE: W,

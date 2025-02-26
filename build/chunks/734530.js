@@ -260,11 +260,11 @@
     },
     M = t.createContext(null);
   M.displayName = "ElementsContext";
-  var j = function(e, t) {
+  var k = function(e, t) {
       if (!e) throw Error("Could not find Elements context; You need to wrap the part of your app that ".concat(t, " in an <Elements> provider."));
       return e
     },
-    k = function(e) {
+    j = function(e) {
       var n = e.stripe,
         r = e.options,
         i = e.children,
@@ -312,12 +312,12 @@
         value: s
       }, i)
     };
-  k.propTypes = {
+  j.propTypes = {
     stripe: O.any,
     options: O.object
   };
   var U = function(e) {
-      return j(t.useContext(M), e)
+      return k(t.useContext(M), e)
     },
     G = function() {
       return U("calls useElements()").elements
@@ -328,9 +328,9 @@
   B.propTypes = {
     children: O.func.isRequired
   };
-  var F = ["on", "session"],
-    V = t.createContext(null);
-  V.displayName = "CustomCheckoutSdkContext";
+  var V = ["on", "session"],
+    F = t.createContext(null);
+  F.displayName = "CustomCheckoutSdkContext";
   var Z = function(e, t) {
       if (!e) throw Error("Could not find CustomCheckoutProvider context; You need to wrap the part of your app that ".concat(t, " in an <CustomCheckoutProvider> provider."));
       return e
@@ -340,7 +340,7 @@
   var W = function(e, t) {
       if (!e) return null;
       e.on, e.session;
-      var n = s(e, F);
+      var n = s(e, V);
       return t ? r(r({}, n), t) : r(r({}, n), e.session())
     },
     Y = "Invalid prop `stripe` supplied to `CustomCheckoutProvider`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
@@ -402,7 +402,7 @@
       var g = t.useMemo(function() {
         return W(d.customCheckoutSdk, s)
       }, [d.customCheckoutSdk, s]);
-      return d.customCheckoutSdk ? t.createElement(V.Provider, {
+      return d.customCheckoutSdk ? t.createElement(F.Provider, {
         value: d
       }, t.createElement(H.Provider, {
         value: g
@@ -416,13 +416,13 @@
     }).isRequired
   };
   var z = function(e) {
-      return Z(t.useContext(V), e)
+      return Z(t.useContext(F), e)
     },
     q = function(e) {
-      var n = t.useContext(V),
+      var n = t.useContext(F),
         r = t.useContext(M);
       if (n && r) throw Error("You cannot wrap the part of your app that ".concat(e, " in both <CustomCheckoutProvider> and <Elements> providers."));
-      return n ? Z(n, e) : j(r, e)
+      return n ? Z(n, e) : k(r, e)
     },
     Q = function() {
       z("calls useCustomCheckout()");
@@ -628,5 +628,5 @@
     eI = J("paymentMethodMessaging", $),
     eT = J("affirmMessage", $),
     eN = J("afterpayClearpayMessage", $);
-  e.AddressElement = eO, e.AffirmMessageElement = eT, e.AfterpayClearpayMessageElement = eN, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CustomCheckoutProvider = K, e.Elements = k, e.ElementsConsumer = B, e.EmbeddedCheckout = ea, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = ev, e.FpxBankElement = ep, e.IbanElement = e_, e.IdealBankElement = eh, e.LinkAuthenticationElement = ey, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eI, e.PaymentRequestButtonElement = eb, e.ShippingAddressElement = eS, e.useCustomCheckout = Q, e.useElements = G, e.useStripe = es
+  e.AddressElement = eO, e.AffirmMessageElement = eT, e.AfterpayClearpayMessageElement = eN, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CustomCheckoutProvider = K, e.Elements = j, e.ElementsConsumer = B, e.EmbeddedCheckout = ea, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = ev, e.FpxBankElement = ep, e.IbanElement = e_, e.IdealBankElement = eh, e.LinkAuthenticationElement = ey, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eI, e.PaymentRequestButtonElement = eb, e.ShippingAddressElement = eS, e.useCustomCheckout = Q, e.useElements = G, e.useStripe = es
 })

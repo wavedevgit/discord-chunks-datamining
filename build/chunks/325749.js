@@ -67,10 +67,10 @@ function z(e) {
     location: "activity_popout_overflow_menu"
   }, {
     autoTrackExposure: !0
-  }).enabled, F = r.useCallback(() => {
-    let e = (0, k.QF)();
+  }).enabled, V = r.useCallback(() => {
+    let e = (0, k.getPID)();
     u.Z.setInputLocked(!p.ZP.isInputLocked(e), e)
-  }, []), V = (0, S.PR)(), {
+  }, []), F = (0, S.PR)(), {
     canStayOnTop: H,
     popoutWindowAlwaysOnTop: J,
     handleStayOnTop: X
@@ -134,8 +134,8 @@ function z(e) {
             channel: U,
             shouldPrioritizeGroupPlusIcon: !0,
             embeddedActivity: z
-          }), V ? (0, o.jsx)(C.Z, {
-            onClick: F,
+          }), F ? (0, o.jsx)(C.Z, {
+            onClick: V,
             iconComponent: c.epB,
             label: A.NW.string(A.t.mseZsL)
           }) : null, H ? (0, o.jsx)(g.Z, {

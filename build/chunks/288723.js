@@ -38,8 +38,8 @@ let d = {
         var L = N[w],
           x = (0, i.Z)(L),
           M = (0, c.Z)(L) === l.BL,
-          j = [l.we, l.I].indexOf(x) >= 0,
-          k = j ? "width" : "height",
+          k = [l.we, l.I].indexOf(x) >= 0,
+          j = k ? "width" : "height",
           U = (0, a.Z)(t, {
             placement: L,
             boundary: g,
@@ -47,20 +47,20 @@ let d = {
             altBoundary: v,
             padding: m
           }),
-          G = j ? M ? l.F2 : l.t$ : M ? l.I : l.we;
-        A[k] > C[k] && (G = (0, r.Z)(G));
+          G = k ? M ? l.F2 : l.t$ : M ? l.I : l.we;
+        A[j] > C[j] && (G = (0, r.Z)(G));
         var B = (0, r.Z)(G),
-          F = [];
-        if (f && F.push(U[x] <= 0), _ && F.push(U[G] <= 0, U[B] <= 0), F.every(function(e) {
+          V = [];
+        if (f && V.push(U[x] <= 0), _ && V.push(U[G] <= 0, U[B] <= 0), V.every(function(e) {
             return e
           })) {
           D = L, P = !1;
           break
         }
-        R.set(L, F)
+        R.set(L, V)
       }
       if (P)
-        for (var V = y ? 3 : 1, Z = function(e) {
+        for (var F = y ? 3 : 1, Z = function(e) {
             var t = N.find(function(t) {
               var n = R.get(t);
               if (n) return n.slice(0, e).every(function(e) {
@@ -68,7 +68,7 @@ let d = {
               })
             });
             if (t) return D = t, "break"
-          }, H = V; H > 0 && "break" !== Z(H); H--);
+          }, H = F; H > 0 && "break" !== Z(H); H--);
       t.placement !== D && (t.modifiersData[o]._skip = !0, t.placement = D, t.reset = !0)
     }
   },

@@ -19,8 +19,8 @@ var o = t(481060),
   g = t(871604),
   v = t(952124),
   y = t(53558),
-  I = t(544989),
-  h = t(934861),
+  h = t(544989),
+  I = t(934861),
   j = t(4517),
   x = t(740628),
   _ = t(398145),
@@ -67,7 +67,7 @@ function E(e) {
           user: n,
           displayProfile: W,
           profileType: O.y0.FULL_SIZE,
-          children: [(0, r.jsx)(I.Z, {
+          children: [(0, r.jsx)(h.Z, {
             profileType: O.y0.FULL_SIZE,
             children: (0, r.jsx)(v.Z, {
               user: n,
@@ -95,11 +95,11 @@ function E(e) {
                 onCloseProfile: U
               }), (0, r.jsxs)("div", {
                 className: P.headerButtons,
-                children: [(0, r.jsx)(h.c, {
+                children: [(0, r.jsx)(I.c, {
                   userId: n.id,
                   onClose: U,
                   className: P.messageTextButton
-                }), (0, r.jsx)(h.v, {
+                }), (0, r.jsx)(I.v, {
                   userId: n.id,
                   onClose: U,
                   tooltipContainerClassName: P.messageIconButton

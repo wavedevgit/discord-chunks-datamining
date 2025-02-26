@@ -34,14 +34,14 @@ function h(e) {
     tabs: t,
     selectedTabId: n,
     onSelectTab: i
-  } = e, l = a.useRef(null), h = a.useRef(0), x = a.useRef(new Map), [p, f] = a.useState([]), b = a.useCallback(() => {
+  } = e, l = a.useRef(null), h = a.useRef(0), x = a.useRef(new Map), [f, p] = a.useState([]), b = a.useCallback(() => {
     var e, r, a, i;
     if (null == l.current) return;
     let o = [],
       s = l.current.getBoundingClientRect().width;
     if (s !== h.current) {
       for (let l of (h.current = s, s -= null !== (r = null === (e = x.current.get(n)) || void 0 === e ? void 0 : e.width) && void 0 !== r ? r : 0, t)) l.id !== n && (s -= null !== (i = null === (a = x.current.get(l.id)) || void 0 === a ? void 0 : a.width) && void 0 !== i ? i : 0) < 0 && o.push(l.id);
-      f(o)
+      p(o)
     }
   }, [t, n]), _ = a.useRef(null);
   a.useEffect(() => (_.current = new ResizeObserver(() => b()), null != l.current && _.current.observe(l.current), () => {
@@ -63,14 +63,14 @@ function h(e) {
           id: t,
           name: a
         } = e;
-        return p.includes(t) && n !== t ? (0, r.jsx)(o.sNh, {
+        return f.includes(t) && n !== t ? (0, r.jsx)(o.sNh, {
           id: t,
           label: a,
           action: () => i(t)
         }, t) : null
       }).filter(c.lm)
     })
-  }, [t, p, i, n]);
+  }, [t, f, i, n]);
   return (0, r.jsxs)("div", {
     className: u.tabBar,
     ref: l,
@@ -79,7 +79,7 @@ function h(e) {
         id: t,
         name: a
       } = e;
-      if (!p.includes(t)) return (0, r.jsx)(m, {
+      if (!f.includes(t)) return (0, r.jsx)(m, {
         id: t,
         selected: n === t,
         ref: e => {
@@ -93,7 +93,7 @@ function h(e) {
         onClick: n !== t ? () => i(t) : void 0,
         children: a
       }, t)
-    }).filter(c.lm), p.length > 0 && (0, r.jsx)(o.yRy, {
+    }).filter(c.lm), f.length > 0 && (0, r.jsx)(o.yRy, {
       layerContext: d.O$,
       renderPopout: g,
       position: "bottom",

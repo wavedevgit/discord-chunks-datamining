@@ -20,18 +20,18 @@ function c(e) {
     icon: d,
     iconForeground: E,
     innerClassName: f,
-    className: C,
-    redGlow: _,
-    tooltipClassName: h,
-    onMouseEnter: p,
-    onMouseLeave: O,
-    "aria-label": g,
+    className: h,
+    redGlow: p,
+    tooltipClassName: C,
+    onMouseEnter: _,
+    onMouseLeave: g,
+    "aria-label": O,
     "aria-checked": T,
     role: I,
     tooltipColor: S,
     tooltipForceOpen: N,
-    tooltipContentClassName: A
-  } = e, v = "function" == typeof d ? (0, l.jsx)(d, {
+    tooltipContentClassName: v
+  } = e, m = "function" == typeof d ? (0, l.jsx)(d, {
     width: 20,
     height: 20,
     size: "custom",
@@ -39,17 +39,17 @@ function c(e) {
     color: "currentColor"
   }) : d;
   return (0, l.jsx)(a.ua7, {
-    tooltipClassName: h,
+    tooltipClassName: C,
     text: t,
-    "aria-label": g,
+    "aria-label": O,
     color: S,
-    tooltipContentClassName: A,
+    tooltipContentClassName: v,
     forceOpen: N,
     children: e => {
       var t, d, {
           onClick: E,
-          onMouseEnter: h,
-          onMouseLeave: g
+          onMouseEnter: C,
+          onMouseLeave: O
         } = e,
         S = function(e, t) {
           if (null == e) return {};
@@ -88,9 +88,9 @@ function c(e) {
         size: a.zxk.Sizes.NONE,
         disabled: u,
         innerClassName: f,
-        wrapperClassName: i()(s.button, C),
-        className: i()(s.button, C, {
-          [s.redGlow]: _,
+        wrapperClassName: i()(s.button, h),
+        className: i()(s.button, h, {
+          [s.redGlow]: p,
           [s.disabled]: u,
           [s.enabled]: !u
         }),
@@ -98,10 +98,10 @@ function c(e) {
           null != E && E(), null != c && c(e)
         },
         onMouseEnter: () => {
-          null == h || h(), null == p || p()
+          null == C || C(), null == _ || _()
         },
         onMouseLeave: () => {
-          null == g || g(), null == O || O()
+          null == O || O(), null == g || g()
         },
         onContextMenu: r,
         role: I,
@@ -110,8 +110,8 @@ function c(e) {
           width: 20,
           height: 20,
           mask: o.ZP.Masks.PANEL_BUTTON,
-          children: v
-        }) : v, n]
+          children: m
+        }) : m, n]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

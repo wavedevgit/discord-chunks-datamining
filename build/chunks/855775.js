@@ -110,7 +110,7 @@ function M() {
   y = !0
 }
 
-function j(e) {
+function k(e) {
   let {
     entitlements: t,
     giftCode: n
@@ -118,7 +118,7 @@ function j(e) {
   y = !1, b = t, h = n
 }
 
-function k(e) {
+function j(e) {
   let {
     giftCode: t
   } = e;
@@ -141,11 +141,11 @@ function B() {
   O = null
 }
 
-function F(e) {
+function V(e) {
   N = e.isGift
 }
 
-function V(e) {
+function F(e) {
   let {
     locked: t
   } = e;
@@ -202,11 +202,11 @@ let H = new Z(s.Z, {
   SKU_PURCHASE_PREVIEW_FETCH_SUCCESS: L,
   SKU_PURCHASE_PREVIEW_FETCH_FAILURE: x,
   SKU_PURCHASE_START: M,
-  SKU_PURCHASE_SUCCESS: j,
+  SKU_PURCHASE_SUCCESS: k,
   SKU_PURCHASE_FAIL: U,
   SKU_PURCHASE_SHOW_CONFIRMATION_STEP: G,
   SKU_PURCHASE_CLEAR_ERROR: B,
-  SKU_PURCHASE_UPDATE_IS_GIFT: F,
-  OVERLAY_SET_INPUT_LOCKED: V,
-  GIFT_CODE_CREATE: k
+  SKU_PURCHASE_UPDATE_IS_GIFT: V,
+  OVERLAY_SET_INPUT_LOCKED: F,
+  GIFT_CODE_CREATE: j
 })

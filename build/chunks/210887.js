@@ -94,30 +94,30 @@ function w() {
 }
 
 function L() {
-  return V()
+  return F()
 }
 
 function x() {
-  return V()
+  return F()
 }
 
 function M() {
   return (0, c.ap)(w())
 }
 
-function j(e) {
-  return !e.isSwitchingAccount && A !== y.BRd.DARK && (A = y.BRd.DARK, Z(), V())
+function k(e) {
+  return !e.isSwitchingAccount && A !== y.BRd.DARK && (A = y.BRd.DARK, Z(), F())
 }
 
-function k(e) {
+function j(e) {
   let {
     systemTheme: t
   } = e;
-  return R = t, V()
+  return R = t, F()
 }
 
 function U(e) {
-  return r = e.systemPrefersColorScheme, V()
+  return r = e.systemPrefersColorScheme, F()
 }
 
 function G(e) {
@@ -127,7 +127,7 @@ function G(e) {
   } = e;
   A = null != r && null !== (n = null === (t = O.qt[r]) || void 0 === t ? void 0 : t.theme) && void 0 !== n ? n : w();
   let i = null != r;
-  return P !== i ? (P = i, !0) : F()
+  return P !== i ? (P = i, !0) : V()
 }
 
 function B(e) {
@@ -137,12 +137,12 @@ function B(e) {
   C = t
 }
 
-function F() {
+function V() {
   let e = w();
   return !(0, f.qu)(A, e) && (A = e, !0)
 }
 
-function V() {
+function F() {
   let e = w();
   return e !== A && (Z(A = e), !0)
 }
@@ -204,14 +204,14 @@ S(H, "displayName", "ThemeStore"), S(H, "persistKey", "ThemeStore"), S(H, "migra
 let W = new H(u.Z, {
   CACHE_LOADED: L,
   CONNECTION_OPEN: L,
-  LOGOUT: j,
+  LOGOUT: k,
   OVERLAY_INITIALIZE: L,
   SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: x,
   UNSYNCED_USER_SETTINGS_UPDATE: x,
   USER_SETTINGS_PROTO_UPDATE: L,
   UPDATE_BACKGROUND_GRADIENT_PRESET: G,
   RESET_PREVIEW_CLIENT_THEME: L,
-  SYSTEM_THEME_CHANGE: k,
+  SYSTEM_THEME_CHANGE: j,
   ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: U,
   ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: M,
   SET_DARK_MODE_THEME: B

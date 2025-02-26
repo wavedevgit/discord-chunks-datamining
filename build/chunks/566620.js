@@ -47,13 +47,13 @@ var r = n(990547),
   L = n(585483),
   x = n(630388),
   M = n(823379),
-  j = n(573261),
-  k = n(595519),
+  k = n(573261),
+  j = n(595519),
   U = n(774226),
   G = n(317381),
   B = n(882347),
-  F = n(16609),
-  V = n(224189),
+  V = n(16609),
+  F = n(224189),
   Z = n(374065),
   H = n(917107),
   W = n(89425),
@@ -202,7 +202,7 @@ function en(e, t) {
   let n = (null == t ? void 0 : t.type) === z.d4z.GUILD_VOICE,
     r = g.Z.getApplication(e),
     i = null != r && (0, x.yE)(r.flags, z.udG.EMBEDDED),
-    o = (0, k.l5)(t);
+    o = (0, j.l5)(t);
   return n && i || o
 }
 async function er(e) {
@@ -300,7 +300,7 @@ async function ei(e) {
     reason: 1
   };
   let E = (0, U.sq)(),
-    v = await (0, V.Z)(m, i);
+    v = await (0, F.Z)(m, i);
   if (null == h || null == v) return {
     result: "failure",
     reason: 2
@@ -357,7 +357,7 @@ async function ei(e) {
         result: "failure",
         reason: 8
       }
-    } else if (!(0, k.WS)(b) || !n) return {
+    } else if (!(0, j.WS)(b) || !n) return {
       result: "failure",
       reason: 9
     }
@@ -376,7 +376,7 @@ async function ei(e) {
     oldFormErrors: !0,
     rejectWithError: !0
   };
-  if (null != i && !p) return await j.Z.post($({
+  if (null != i && !p) return await k.Z.post($({
     url: z.ANM.ACTIVITY_CHANNEL_LAUNCH(i, n),
     body: {
       session_id: _,
@@ -386,7 +386,7 @@ async function ei(e) {
     result: "success"
   };
   if (p && null != c && null != u) {
-    let e = (await j.Z.post($({
+    let e = (await k.Z.post($({
       url: z.ANM.JOIN_CONTEXTLESS_EMBEDDED_ACTIVITY_VIA_PRESENCE(c, u, n),
       body: {
         session_id: _,
@@ -404,7 +404,7 @@ async function ei(e) {
   return p && null != f ? {
     result: "success",
     data: {
-      instanceId: (await j.Z.post($({
+      instanceId: (await k.Z.post($({
         url: z.ANM.JOIN_CONTEXTLESS_EMBEDDED_ACTIVITY_VIA_INSTANCE(f, n),
         body: {
           session_id: _
@@ -430,7 +430,7 @@ function eo(e) {
     instanceId: null == i ? void 0 : i.launchId,
     showFeedback: r
   });
-  let a = (0, F.pY)(t);
+  let a = (0, V.pY)(t);
   if (null != a) {
     var s;
     let e = v.Z.getSelectedParticipantId(a),
@@ -534,7 +534,7 @@ async function ec(e) {
     let e = void 0 !== s && "" !== s ? {
         guild_id: s
       } : void 0,
-      t = await j.Z.get({
+      t = await k.Z.get({
         url: z.ANM.ACTIVITY_SHELF,
         query: e,
         trackedActionData: {

@@ -2,10 +2,10 @@
 "use strict";
 n.d(t, {
   Jh: () => M,
-  Lk: () => k,
+  Lk: () => j,
   Xg: () => U,
   ZP: () => L,
-  _Z: () => j,
+  _Z: () => k,
   c7: () => x,
   j3: () => G
 }), n(177593), n(301563);
@@ -155,7 +155,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   var {
     guild: t,
     application: n
@@ -208,7 +208,7 @@ function j(e) {
   }) : null
 }
 
-function k(e) {
+function j(e) {
   return (0, r.jsx)(L, P(C({}, e), {
     headerClassName: N.headerFailure
   }))
@@ -239,7 +239,7 @@ function G(e) {
   let a = null != o ? (0, s.parse)(o.search) : {},
     l = null !== (n = null !== (t = a.error_description) && void 0 !== t ? t : a.error) && void 0 !== n ? n : T.NW.string(T.t["mqn87+"]);
   return (0, r.jsx)(S.G, {
-    children: (0, r.jsx)(k, {
+    children: (0, r.jsx)(j, {
       message: l,
       showsCloseWindowText: !0
     })

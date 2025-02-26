@@ -18,7 +18,7 @@ function c(e, t) {
     },
     trackClick(n) {
       var r, l;
-      let c = o.Z.isLocked((0, s.QF)()) ? u.Sbl.LOCKED_OVERLAY : u.Sbl.UNLOCKED_OVERLAY;
+      let c = o.default.isLocked((0, s.getPID)()) ? u.Sbl.LOCKED_OVERLAY : u.Sbl.UNLOCKED_OVERLAY;
       i.Z.track(u.rMx.NOTIFICATION_CLICKED, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

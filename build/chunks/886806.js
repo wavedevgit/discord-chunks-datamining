@@ -14,8 +14,8 @@ var r = n(200651),
   h = n(17894),
   p = n(108427),
   g = n(626135),
-  _ = n(981631),
-  m = n(388032),
+  m = n(981631),
+  _ = n(388032),
   f = n(902105),
   b = n(455812);
 
@@ -43,11 +43,11 @@ function x(e) {
       }
     })()
   });
-  let E = i.useCallback(() => {
-      o(_.Z5c.LOGIN)
+  let I = i.useCallback(() => {
+      o(m.Z5c.LOGIN)
     }, [o]),
-    I = i.useCallback(() => {
-      g.default.track(_.rMx.VERIFY_ACCOUNT_APP_OPENED, {
+    E = i.useCallback(() => {
+      g.default.track(m.rMx.VERIFY_ACCOUNT_APP_OPENED, {
         verifying_user_id: v.current
       }), (0, h.Z)("verify_email")
     }, []);
@@ -57,13 +57,13 @@ function x(e) {
       className: a()(f.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom8,
-      children: m.NW.string(m.t.PCgG39)
+      children: _.NW.string(_.t.PCgG39)
     }), (0, r.jsx)(d.DK, {
       className: b.marginBottom40,
-      children: m.NW.string(m.t.tQpeAw)
+      children: _.NW.string(_.t.tQpeAw)
     }), (0, r.jsx)(d.zx, {
-      onClick: E,
-      children: m.NW.string(m.t.dKhVQE)
+      onClick: I,
+      children: _.NW.string(_.t.dKhVQE)
     })]
   }) : "succeeded" === l ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
@@ -71,10 +71,10 @@ function x(e) {
       className: a()(f.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom40,
-      children: m.NW.string(m.t.dAfGb2)
+      children: _.NW.string(_.t.dAfGb2)
     }), (0, r.jsx)(d.zx, {
-      onClick: I,
-      children: m.NW.string(m.t.uJWIj4)
+      onClick: E,
+      children: _.NW.string(_.t.uJWIj4)
     })]
   }) : (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
@@ -82,10 +82,10 @@ function x(e) {
       className: a()(f.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom8,
-      children: m.NW.string(m.t["0c8+5u"])
+      children: _.NW.string(_.t["0c8+5u"])
     }), (0, r.jsx)(d.DK, {
       className: b.marginBottom40,
-      children: m.NW.string(m.t.ULTCBA)
+      children: _.NW.string(_.t.ULTCBA)
     }), (0, r.jsx)(d.zx, {
       submitting: !0,
       color: d.zx.Colors.PRIMARY

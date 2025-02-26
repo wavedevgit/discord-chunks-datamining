@@ -1,6 +1,6 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => D
+  Z: () => A
 }), n(47120);
 var i = n(200651),
   r = n(192379),
@@ -26,8 +26,8 @@ var i = n(200651),
   S = n(501787),
   I = n(981631),
   C = n(65154),
-  Z = n(388032),
-  N = n(772630);
+  N = n(388032),
+  Z = n(772630);
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -108,7 +108,7 @@ function T(e) {
   })), [o]);
   return r.useEffect(() => {
     d && (0, b.zi)(I.Odu.VIDEO, {
-      locked: E.Z.isInstanceLocked(),
+      locked: E.default.isInstanceLocked(),
       shownUserIds: Array.from(h),
       liveUserIds: Array.from(h),
       contentInventoryIds: []
@@ -117,7 +117,7 @@ function T(e) {
     children: o.map(e => (0, i.jsx)(P, {
       participant: e,
       width: a,
-      className: N.tile,
+      className: Z.tile,
       containerStyle: {
         width: a,
         height: c
@@ -136,7 +136,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function D(e) {
   let {
     context: t = C.Yn.DEFAULT,
     participants: n,
@@ -159,9 +159,9 @@ function A(e) {
   }, [s, u, g]), 0 !== n.length || s) ? null == c ? null : (0, i.jsx)("div", {
     ref: f,
     className: l()({
-      [N.videoList]: !0,
-      [N.vertical]: !m,
-      [N.hidden]: !g && s
+      [Z.videoList]: !0,
+      [Z.vertical]: !m,
+      [Z.hidden]: !g && s
     }),
     style: {
       opacity: u.opacity
@@ -179,14 +179,14 @@ function A(e) {
   }) : h ? s ? null : (0, i.jsx)("div", {
     ref: f,
     children: (0, i.jsx)(j.E, {
-      emptyText: Z.NW.string(Z.t["aTiM4+"]),
+      emptyText: N.NW.string(N.t["aTiM4+"]),
       icon: a.Odl,
       absolute: !0
     })
   }) : null
 }
 
-function D(e) {
+function A(e) {
   let t = (0, s.e7)([y.Z, O.Z], () => O.Z.getChannel(y.Z.getVoiceChannelId())),
     n = (0, h.ZP)(t),
     o = null == t ? void 0 : t.id,
@@ -231,7 +231,7 @@ function D(e) {
         height: n
       }
     })
-  }, [u]), (0, i.jsx)(A, _(w({}, e), {
+  }, [u]), (0, i.jsx)(D, _(w({}, e), {
     channel: t,
     title: null != n ? n : "",
     participants: b,

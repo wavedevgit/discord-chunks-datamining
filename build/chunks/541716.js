@@ -383,7 +383,8 @@ let s = {
       clearOnSubmit: !0
     },
     toolbarType: 2,
-    hideAccessoryBar: !0
+    hideAccessoryBar: !0,
+    layout: 1
   },
   E = {
     analyticsName: "user_profile_reply",

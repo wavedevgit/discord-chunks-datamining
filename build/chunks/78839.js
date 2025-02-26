@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => B,
-  sE: () => k
+  sE: () => j
 }), n(653041), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -80,7 +80,7 @@ function C(e) {
       return
     }
     let t = l.Q.createFromServer(e);
-    n[t.id] = t, j(t) && (r[t.id] = t, t.type === d.NYc.GUILD && t.status !== d.O0b.ENDED && i.push(t), t.type === d.NYc.APPLICATION && t.status !== d.O0b.ENDED && o.push(t))
+    n[t.id] = t, k(t) && (r[t.id] = t, t.type === d.NYc.GUILD && t.status !== d.O0b.ENDED && i.push(t), t.type === d.NYc.APPLICATION && t.status !== d.O0b.ENDED && o.push(t))
   }), g = n, E = r, b = i, y = o
 }
 
@@ -92,7 +92,7 @@ function R(e) {
   if (-1 === r) return [n, ...t];
   {
     let e = [...t];
-    return j(n) && n.status !== d.O0b.ENDED ? e[r] = n : e.splice(r, 1), e
+    return k(n) && n.status !== d.O0b.ENDED ? e[r] = n : e.splice(r, 1), e
   }
 }
 
@@ -102,7 +102,7 @@ function P(e) {
   } = e, n = l.Q.createFromServer(t);
   g = m(_({}, g), {
     [n.id]: n
-  }), j(n) && (E = m(_({}, E), {
+  }), k(n) && (E = m(_({}, E), {
     [n.id]: n
   })), null != b && n.type === d.NYc.GUILD && (b = R({
     activeSubscriptions: b,
@@ -169,11 +169,11 @@ function M() {
   g = null, E = null, v = null, b = null, y = null, O = !1, S = !1, I = null, T = !1
 }
 
-function j(e) {
+function k(e) {
   return e.status !== d.O0b.UNPAID
 }
 
-function k(e) {
+function j(e) {
   let t = c.default.getId();
   return e.userId === t
 }
@@ -184,7 +184,7 @@ function U(e, t) {
   if (null == r) return null;
   for (let n in r) {
     let i = r[n];
-    if (!k(i)) {
+    if (!j(i)) {
       if (!S) {
         let e = c.default.getId();
         A.log("user id mismatch between logged in user and SubscriptionStore user"), (0, u.g9)("user id mismatch between logged in user and SubscriptionStore user", {

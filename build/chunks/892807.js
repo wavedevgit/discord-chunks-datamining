@@ -1,6 +1,6 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => N
+  Z: () => Z
 }), n(230036), n(653041), n(47120);
 var i = n(200651),
   r = n(192379),
@@ -59,7 +59,7 @@ function C(e) {
   })
 }
 
-function Z(e) {
+function N(e) {
   let {
     channel: t
   } = e, n = (0, s.Wu)([E.Z, y.default, f.Z], () => Object.values(E.Z.getVoiceStatesForChannel(t.id)).map(e => y.default.getUser(e.userId)).filter(b.lm).sort((e, t) => {
@@ -77,7 +77,7 @@ function Z(e) {
   })
 }
 
-function N(e) {
+function Z(e) {
   let {
     currentVoiceChannel: t,
     onClose: n,
@@ -123,7 +123,7 @@ function N(e) {
           }),
           icon: (0, i.jsx)("div", {
             className: S.icon,
-            children: (0, i.jsx)(Z, {
+            children: (0, i.jsx)(N, {
               channel: e,
               currentVoiceChannel: t
             })

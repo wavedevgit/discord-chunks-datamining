@@ -40,13 +40,13 @@ let D = i.forwardRef(function(e, t) {
     id: L,
     disabled: x,
     submitting: M,
-    placeholder: j,
-    required: k,
+    placeholder: k,
+    required: j,
     textAreaPaddingClassName: U,
     onChange: G,
     onPaste: B,
-    onResize: F,
-    onFocus: V,
+    onResize: V,
+    onFocus: F,
     onBlur: Z,
     onKeyDown: H,
     onKeyUp: W,
@@ -160,7 +160,7 @@ let D = i.forwardRef(function(e, t) {
       ignoreTrailingEmptyNodes: !0
     }), t, e)
   }, [D.id, ey, z, eO, $]);
-  (0, y.Z)(t, ey, D, eS), (0, I.Z)(ey, ep, F);
+  (0, y.Z)(t, ey, D, eS), (0, I.Z)(ey, ep, V);
   let {
     handleKeyDown: eI,
     handleKeyUp: eT
@@ -214,13 +214,13 @@ let D = i.forwardRef(function(e, t) {
         channelId: D.id,
         guildId: D.guild_id,
         className: a()(P.slateTextArea, U),
-        placeholder: j,
+        placeholder: k,
         readOnly: eg,
         spellCheck: J,
         autoFocus: !et,
         canFocus: !x,
         onChange: eR,
-        onFocus: V,
+        onFocus: F,
         onBlur: Z,
         onClick: eC,
         onPaste: eN,
@@ -238,7 +238,7 @@ let D = i.forwardRef(function(e, t) {
         "aria-describedby": eu,
         "aria-invalid": ec,
         "aria-autocomplete": ef,
-        "aria-required": k
+        "aria-required": j
       })
     })]
   })

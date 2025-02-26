@@ -37,8 +37,8 @@ var r = n(512722),
   L = n(998698),
   x = n(895924),
   M = n(581364),
-  j = n(981631),
-  k = n(959517),
+  k = n(981631),
+  j = n(959517),
   U = n(388032);
 
 function G(e, t, n) {
@@ -63,7 +63,7 @@ function B(e) {
   return e
 }
 
-function F(e, t) {
+function V(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,8 +74,8 @@ function F(e, t) {
   return n
 }
 
-function V(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
+function F(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -85,16 +85,16 @@ async function Z(e) {
     command: A,
     optionValues: C,
     context: w,
-    commandTargetId: k,
+    commandTargetId: j,
     maxSizeCallback: U,
     commandOrigin: G = x.bB.CHAT,
     sectionName: B,
-    interactionLifecycleOptionsFactory: F = z,
-    source: V,
+    interactionLifecycleOptionsFactory: V = z,
+    source: F,
     clientSupportsContextlessActivityLaunch: Z
   } = e;
   if (null == w.channel) return;
-  let W = null !== (r = L.Z.getSource(w.channel.id)) && void 0 !== r ? r : V,
+  let W = null !== (r = L.Z.getSource(w.channel.id)) && void 0 !== r ? r : F,
     K = null !== (a = L.Z.getCommandOrigin(w.channel.id)) && void 0 !== a ? a : G;
   null == w.autocomplete && o.Z.dispatch({
     type: "APPLICATION_COMMAND_USED",
@@ -223,7 +223,7 @@ async function Z(e) {
         options: Q
       }]
     }
-  if (null != A.execute) return f.ZP.trackWithMetadata(j.rMx.APPLICATION_COMMAND_USED, {
+  if (null != A.execute) return f.ZP.trackWithMetadata(k.rMx.APPLICATION_COMMAND_USED, {
     command_id: A.id,
     application_id: A.applicationId,
     command_type: A.type,
@@ -243,7 +243,7 @@ async function Z(e) {
     ee = () => {
       H(C)
     };
-  null != k && ($.target_id = k), Z && ($.client_supports_contextless_activity_launch = !0), null != w.autocomplete ? (0, R.GV)(A, w, $) : (s.Z.clearAll(w.channel.id, J), Y({
+  null != j && ($.target_id = j), Z && ($.client_supports_contextless_activity_launch = !0), null != w.autocomplete ? (0, R.GV)(A, w, $) : (s.Z.clearAll(w.channel.id, J), Y({
     applicationId: A.applicationId,
     data: $,
     context: w,
@@ -253,7 +253,7 @@ async function Z(e) {
     analytics_location: q(K),
     sectionName: B,
     source: W,
-    interactionLifecycleOptions: await F(A, w, $)
+    interactionLifecycleOptions: await V(A, w, $)
   }))
 }
 let H = e => {
@@ -346,14 +346,14 @@ async function z(e, t, n) {
   if (null == s && null != i.botId) try {
     await l.PR(i.botId)
   } catch (e) {}
-  let u = V(B({}, (0, v.ZP)({
+  let u = F(B({}, (0, v.ZP)({
     channelId: t.channel.id,
     content: "",
-    type: n.type === c.yU.CHAT ? j.uaV.CHAT_INPUT_COMMAND : j.uaV.CONTEXT_MENU_COMMAND,
+    type: n.type === c.yU.CHAT ? k.uaV.CHAT_INPUT_COMMAND : k.uaV.CONTEXT_MENU_COMMAND,
     author: null != s ? s : {
       id: i.id,
       username: i.name,
-      discriminator: j.fo$,
+      discriminator: k.fo$,
       avatar: null,
       bot: !0
     }
@@ -437,7 +437,7 @@ async function X(e, t, n, r) {
   let i = e,
     o = (0, N.dg)(n),
     a = e => {
-      null == r || r(o, e), g.yr(t, j.evJ.ENTITY_TOO_LARGE, U.NW.formatToPlainString(U.t.fxEKdX, {
+      null == r || r(o, e), g.yr(t, k.evJ.ENTITY_TOO_LARGE, U.NW.formatToPlainString(U.t.fxEKdX, {
         maxSize: (0, N.Ng)(o)
       }))
     },
@@ -445,7 +445,7 @@ async function X(e, t, n, r) {
       totalSize: s,
       largestUploadedFileSize: l
     } = await Q(i, !1);
-  if (l > Math.max(o, k.Y1) || s > C.zz) return a(l), !1;
+  if (l > Math.max(o, j.Y1) || s > C.zz) return a(l), !1;
   try {
     await (0, d.$)(i)
   } catch (e) {
@@ -456,5 +456,5 @@ async function X(e, t, n, r) {
   return {
     totalSize: s,
     largestUploadedFileSize: l
-  } = await Q(i, !0), !i.some(e => e.error === j.evJ.ENTITY_TOO_LARGE) && !(s > C.zz) || (a(l), !1)
+  } = await Q(i, !0), !i.some(e => e.error === k.evJ.ENTITY_TOO_LARGE) && !(s > C.zz) || (a(l), !1)
 }

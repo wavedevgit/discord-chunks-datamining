@@ -107,8 +107,8 @@ function T(e) {
     selectedPlan: L,
     hasAcceptedTerms: x,
     purchaseType: M,
-    paymentSourceId: j,
-    activeSubscription: k,
+    paymentSourceId: k,
+    activeSubscription: j,
     devShelfFetchState: U
   } = (0, c.JL)(), G = S({
     purchaseType: M,
@@ -168,11 +168,11 @@ function T(e) {
       children: G
     }))
   });
-  else if (P && null != k && null != j) return (0, r.jsx)(p.Z, {
-    activeSubscription: k,
+  else if (P && null != j && null != k) return (0, r.jsx)(p.Z, {
+    activeSubscription: j,
     onNext: D,
     isSubmitting: h,
-    paymentSourceId: j,
+    paymentSourceId: k,
     buttonLabel: G,
     analyticsLocations: B
   });

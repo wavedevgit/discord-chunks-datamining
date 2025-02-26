@@ -37,13 +37,13 @@ var r = n(525654),
   L = n(131704),
   x = n(314897),
   M = n(592125),
-  j = n(984933),
-  k = n(271383),
+  k = n(984933),
+  j = n(271383),
   U = n(430824),
   G = n(607744),
   B = n(341165),
-  F = n(496675),
-  V = n(914010),
+  V = n(496675),
+  F = n(914010),
   Z = n(594174),
   H = n(626135),
   W = n(70956),
@@ -126,7 +126,7 @@ function eu(e, t, n) {
   if ((null == n ? void 0 : n.targetType) === ee.Iq.ROLE_SUBSCRIPTIONS_PURCHASE) return J.oC.ROLE_SUBSCRIPTIONS;
   if ((null == n ? void 0 : n.targetType) == null && !L.tx.has(t.type) && (0, O.s)(e)) return J.oC.GUILD_HOME;
   let o = M.Z.getChannel(t.id);
-  return F.Z.can(X.Plq.VIEW_CHANNEL, o) ? t.id : null !== (i = null === (r = j.ZP.getDefaultChannel(e, !0, X.Plq.CREATE_INSTANT_INVITE)) || void 0 === r ? void 0 : r.id) && void 0 !== i ? i : t.id
+  return V.Z.can(X.Plq.VIEW_CHANNEL, o) ? t.id : null !== (i = null === (r = k.ZP.getDefaultChannel(e, !0, X.Plq.CREATE_INSTANT_INVITE)) || void 0 === r ? void 0 : r.id) && void 0 !== i ? i : t.id
 }
 
 function ed(e, t) {
@@ -156,7 +156,7 @@ function ef(e) {
     isGuestInvite: d,
     isApplicationBypassInvite: f
   } = null != i ? i : {};
-  if (!d && !f && !(null == i ? void 0 : i.forceTransition) && s && V.Z.getGuildId() !== t) return;
+  if (!d && !f && !(null == i ? void 0 : i.forceTransition) && s && F.Z.getGuildId() !== t) return;
   let {
     type: p
   } = r, g = M.Z.getChannel(r.id), O = eu(t, r, i), S = p === X.d4z.GUILD_STAGE_VOICE, I = X.Z5c.CHANNEL(t, O);
@@ -183,7 +183,7 @@ function ef(e) {
           commandOrigin: m.bB.CHAT
         }))
       };
-      !d && (0, y.n)(t, [U.Z, G.Z, Z.default, k.ZP]) ? (0, v.hk)(t, a) : a()
+      !d && (0, y.n)(t, [U.Z, G.Z, Z.default, j.ZP]) ? (0, v.hk)(t, a) : a()
     })
   }) : (0, _.l5)(g) && c === ee.Iq.EMBEDDED_APPLICATION && null != u && ((0, D.uL)(X.Z5c.CHANNEL(null != t ? t : X.ME, O)), (0, h.Z)({
     channelId: O,

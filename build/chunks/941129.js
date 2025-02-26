@@ -1,9 +1,9 @@
-/** Chunk was on 27805 **/
-i.d(t, {
-  S: () => r,
+/** Chunk was on 63061 **/
+n.d(t, {
+  S: () => i,
   u: () => o
 });
-let n = (0, i(818083).B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2023-01_consumer_education_launch",
   label: "Safety Consumer Education Launch - Block/Mute",
@@ -28,8 +28,8 @@ let n = (0, i(818083).B)({
   }]
 });
 
-function r() {
-  return n.useExperiment({
+function i() {
+  return r.useExperiment({
     location: "b85a21_1"
   }, {
     autoTrackExposure: !0
@@ -37,7 +37,7 @@ function r() {
 }
 
 function o() {
-  return n.useExperiment({
+  return r.useExperiment({
     location: "b85a21_2"
   }, {
     autoTrackExposure: !1

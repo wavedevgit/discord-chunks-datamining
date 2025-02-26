@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => _
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -29,7 +29,7 @@ function g(e) {
   })
 }
 
-function _(e) {
+function m(e) {
   let {
     setSlide: t,
     transitionTo: i

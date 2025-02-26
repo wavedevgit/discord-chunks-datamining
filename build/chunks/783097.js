@@ -8,10 +8,10 @@ n.d(t, {
   L1: () => B,
   Ow: () => G,
   Wx: () => I,
-  X: () => F,
-  XZ: () => k,
+  X: () => V,
+  XZ: () => j,
   Y$: () => w,
-  Yn: () => j,
+  Yn: () => k,
   jD: () => A,
   lf: () => P,
   pF: () => U,
@@ -196,11 +196,11 @@ function M(e) {
   return null != t && t.displays_advertisements
 }
 
-function j(e) {
+function k(e) {
   return e === _._b.TEXT
 }
 
-function k(e) {
+function j(e) {
   return null == e ? "" : (e.charAt(0).toLocaleUpperCase() + e.slice(1)).replaceAll("_", " ")
 }
 
@@ -238,7 +238,7 @@ function B(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   d.S.dispatchToLastSubscribed(h.CkL.OPEN_APP_LAUNCHER, {
     applicationId: e
   })

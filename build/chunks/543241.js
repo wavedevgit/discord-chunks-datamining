@@ -6,19 +6,19 @@ n.d(t, {
   DV: () => B,
   Gn: () => M,
   IP: () => Y,
-  J1: () => k,
+  J1: () => j,
   MZ: () => W,
   NJ: () => Z,
   Nf: () => U,
   PC: () => D,
   Y1: () => G,
-  fe: () => j,
+  fe: () => k,
   jA: () => w,
   kI: () => R,
   nV: () => K,
-  q5: () => V,
+  q5: () => F,
   to: () => x,
-  wC: () => F,
+  wC: () => V,
   y$: () => L
 }), n(733860), n(653041), n(47120), n(627341), n(757143), n(301563);
 var r = n(192379),
@@ -52,8 +52,8 @@ let R = function(e, t) {
       i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
     (0, d.O)(n);
     let o = (0, T.Gt)(e),
-      s = F(n),
-      p = V(n),
+      s = V(n),
+      p = F(n),
       {
         canSplitFrecencyList: g
       } = (0, c.S)({
@@ -263,7 +263,7 @@ let R = function(e, t) {
       emoji_position: r
     })
   },
-  j = e => {
+  k = e => {
     var t;
     let n, {
       emoji: r,
@@ -301,7 +301,7 @@ let R = function(e, t) {
       is_burst: d
     })
   },
-  k = e => {
+  j = e => {
     var t;
     let {
       emoji: n,
@@ -391,13 +391,13 @@ function B(e, t, n) {
   }, [t, n, e, i], a.pF)
 }
 
-function F(e) {
+function V(e) {
   return r.useEffect(() => {
     p.DZ.loadIfNecessary()
   }, []), (0, a.Wu)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(e).getFrequentlyUsedEmojisWithoutFetchingLatest())
 }
 
-function V(e) {
+function F(e) {
   return r.useEffect(() => {
     p.DZ.loadIfNecessary()
   }, []), (0, a.Wu)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(e).getFrequentlyUsedReactionEmojisWithoutFetchingLatest())

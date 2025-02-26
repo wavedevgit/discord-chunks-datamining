@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 3b894e2287611866
+  Original File Name: 8d2bfe49c75d635b
 **/
 .container_cbd7a5 {
     width: 220px;
@@ -187,16 +187,30 @@
     margin-top: var(--spacing-24)
 }
 
-.container__133ec {
+.buttonInner_c90d6e {
+    align-items: center;
+    justify-content: center;
+    display: flex
+}
+
+.dot_c90d6e {
+    margin: 0 6px
+}
+
+.cost_c90d6e {
+    margin-left: var(--spacing-4)
+}
+
+.container__2b26c {
     display: flex;
     gap: var(--spacing-8)
 }
 
-.primaryButton__133ec {
+.primaryButton__2b26c {
     flex-grow: 1
 }
 
-.secondaryButton__133ec {
+.secondaryButton__2b26c {
     min-width: 0;
     width: auto
 }
@@ -375,4 +389,4 @@
     z-index: 100
 }
 
-/*# sourceMappingURL=3b894e2287611866.css.map*/
+/*# sourceMappingURL=8d2bfe49c75d635b.css.map*/

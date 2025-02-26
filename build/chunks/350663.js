@@ -85,7 +85,7 @@ let y = 8,
       streamParticipants: j,
       participantsVersion: S,
       pinned: I
-    } = e, C = 9 / 16 * n, Z = j.map(e => ({
+    } = e, C = 9 / 16 * n, N = j.map(e => ({
       participant: e,
       key: e.user.id,
       width: n,
@@ -93,10 +93,10 @@ let y = 8,
       widgetId: t,
       height: C,
       pinned: I
-    })), N = (0, u.Z)(n), w = o === f.C5.VERTICAL, _ = 0, P = 0, T = (0, a.Yzy)(w ? Z.map((e, t) => v(O({}, e), {
+    })), Z = (0, u.Z)(n), w = o === f.C5.VERTICAL, _ = 0, P = 0, T = (0, a.Yzy)(w ? N.map((e, t) => v(O({}, e), {
       y: (_ += e.height + (t > 0 ? y : 0)) - e.height,
       x: 0
-    })) : Z.map((e, t) => v(O({}, e), {
+    })) : N.map((e, t) => v(O({}, e), {
       x: (P += e.width + (t > 0 ? y : 0)) - e.width,
       y: 0
     })), {
@@ -139,16 +139,16 @@ let y = 8,
         }
       },
       config: b,
-      trail: 100 * (n === N)
-    }, n !== N ? "animate-never" : "respect-motion-settings"), A = (0, p.ee)(() => new Set(j.map(e => e.user.id)), [j, S]), D = (0, p.ee)(() => new Set(j.filter(e => x.has((0, c.V9)(e.stream))).map(e => e.user.id)), [j, x, S]);
+      trail: 100 * (n === Z)
+    }, n !== Z ? "animate-never" : "respect-motion-settings"), D = (0, p.ee)(() => new Set(j.map(e => e.user.id)), [j, S]), A = (0, p.ee)(() => new Set(j.filter(e => x.has((0, c.V9)(e.stream))).map(e => e.user.id)), [j, x, S]);
     return r.useEffect(() => {
-      0 !== A.size && (0, p.zi)(m.Odu.GO_LIVE, {
-        locked: d.Z.isInstanceLocked(),
-        shownUserIds: Array.from(A),
-        liveUserIds: Array.from(D),
+      0 !== D.size && (0, p.zi)(m.Odu.GO_LIVE, {
+        locked: d.default.isInstanceLocked(),
+        shownUserIds: Array.from(D),
+        liveUserIds: Array.from(A),
         contentInventoryIds: []
       })
-    }, [A, D]), (0, i.jsx)("div", {
+    }, [D, A]), (0, i.jsx)("div", {
       className: l()({
         [g.gridContainer]: !0,
         [g.vertical]: w,
@@ -164,7 +164,7 @@ let y = 8,
         style: Object.assign({}, e, {
           width: n,
           height: C,
-          zIndex: Z.length - o
+          zIndex: N.length - o
         }),
         children: E(t)
       }))

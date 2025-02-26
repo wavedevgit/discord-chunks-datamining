@@ -5,7 +5,7 @@ n.d(t, {
   UN: () => P,
   cY: () => A,
   gz: () => C,
-  q4: () => j,
+  q4: () => k,
   s6: () => R
 }), n(47120);
 var r = n(200651),
@@ -177,13 +177,13 @@ function L(e) {
     popoutLayerContext: P,
     optionClassName: L,
     closeOnSelect: M,
-    select: j,
-    isSelected: k,
+    select: k,
+    isSelected: j,
     serialize: U,
     clear: G,
     hideIcon: B = !1,
-    "aria-label": F,
-    "aria-labelledby": V
+    "aria-label": V,
+    "aria-labelledby": F
   } = e, [Z, H] = i.useState(!1), {
     ref: W,
     width: Y,
@@ -200,15 +200,15 @@ function L(e) {
     }, [z, Z]),
     Q = (0, h.O)(q),
     X = i.useCallback(e => {
-      if (j(e), M) {
+      if (k(e), M) {
         var t;
         null === (t = W.current) || void 0 === t || t.focus()
       }
-    }, [j, M, W]),
+    }, [k, M, W]),
     J = i.useCallback(e => {
       e.stopPropagation(), null == G || G()
     }, [G]),
-    $ = t.filter(e => k(e.value));
+    $ = t.filter(e => j(e.value));
   i.useLayoutEffect(() => {
     if (u) {
       var e;
@@ -237,7 +237,7 @@ function L(e) {
         closeOnSelect: M,
         maxVisibleItems: l,
         width: "auto" === f ? void 0 : null != f ? f : Y,
-        isSelected: k,
+        isSelected: j,
         closePopout: n,
         buttonHeight: null != K ? K : 0,
         onSelect: X,
@@ -282,8 +282,8 @@ function L(e) {
         }),
         "aria-haspopup": "listbox",
         "aria-expanded": d,
-        "aria-label": F,
-        "aria-labelledby": V,
+        "aria-label": V,
+        "aria-labelledby": F,
         children: [$.length > 0 ? (0, r.jsx)(p.Text, {
           className: v.value,
           variant: "text-md/medium",
@@ -365,7 +365,7 @@ function x(e) {
         serialize: E
       }, null !== (n = e.key) && void 0 !== n ? n : t)
     }),
-    j = p.length <= h ? f.xV : f.h2;
+    k = p.length <= h ? f.xV : f.h2;
   return (0, r.jsx)(l.bG, {
     navigator: D,
     children: (0, r.jsx)(l.SJ, {
@@ -374,7 +374,7 @@ function x(e) {
           ref: n
         } = e, i = I(e, ["ref"]);
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(j, S(y({
+          children: [(0, r.jsx)(k, S(y({
             className: a()(v.popout, t, {
               [v.popoutPositionTop]: "top" === N
             }),
@@ -433,7 +433,7 @@ function M(e) {
   }))
 }
 
-function j(e) {
+function k(e) {
   var {
     value: t,
     onChange: n

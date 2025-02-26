@@ -1,4 +1,6 @@
-/** Chunk was on 93886 **/
-e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   wrapper: "wrapper__87c70"
-}
+};
+e.exports = r

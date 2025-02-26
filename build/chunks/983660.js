@@ -7,8 +7,8 @@ var i = n(200651),
   r = n(192379),
   o = n(704215),
   a = n(481060),
-  s = n(243778),
-  l = n(921944),
+  l = n(243778),
+  s = n(921944),
   c = n(388032),
   d = n(968714),
   u = n(215916);
@@ -16,10 +16,10 @@ var i = n(200651),
 function f(e) {
   let {
     locked: t
-  } = e, [n, f] = (0, s.US)(t ? [] : [o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX], void 0, !0);
+  } = e, [n, f] = (0, l.US)(t ? [] : [o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX], void 0, !0);
   return (r.useEffect(() => {
     if (!t && n === o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX) return () => {
-      n === o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX && f(l.L.AUTO_DISMISS)
+      n === o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX && f(s.L.AUTO_DISMISS)
     }
   }, [t, f, n]), t || n !== o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX) ? null : (0, i.jsx)("div", {
     className: d.overlayInprocessBackgroundNux,

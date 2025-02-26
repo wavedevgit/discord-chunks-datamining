@@ -62,7 +62,7 @@ function M(e) {
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,8 +73,8 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -85,19 +85,19 @@ function U(e, t) {
   let l = (0, a.Wu)([g.Z], () => Object.values(g.Z.getGuilds())),
     c = r.useCallback(() => {
       let r = {};
-      for (let i of l) r[i.id] = F(i, n, e, t, o[i.id]);
+      for (let i of l) r[i.id] = V(i, n, e, t, o[i.id]);
       return r
     }, [l, n, e, t, o]),
     [u, d] = r.useState(() => c());
   return r.useEffect(() => d(c()), [c]), {
     guildPlans: u,
     overrideGuild: r.useCallback((e, t) => {
-      s(n => k(M({}, n), {
+      s(n => j(M({}, n), {
         [e]: t
       }))
     }, []),
     setThresholds: i,
-    getDebug: () => V(Object.values(u), t)
+    getDebug: () => F(Object.values(u), t)
   }
 }
 
@@ -124,7 +124,7 @@ function B() {
   })
 }
 
-function F(e, t, n, r, i) {
+function V(e, t, n, r, i) {
   var o;
   let [a, s, l] = _.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, A.q)(e, t, n, r, !0) : (0, A.A)(e, n), c = null !== (o = n.filter(t => t.guild_id === e.id)[0]) && void 0 !== o ? o : {}, u = (0, N.Z)(e, null != i ? i : a, c, r, t);
   return {
@@ -139,7 +139,7 @@ function F(e, t, n, r, i) {
   }
 }
 
-function V(e, t) {
+function F(e, t) {
   let n = t.reduce((e, t) => {
       var n;
       return e + Number(null !== (n = t.num_year_opens) && void 0 !== n ? n : 0)
@@ -242,7 +242,7 @@ function W(e) {
       unmuted_server_ids: t.filter(e => v.ZP.isMuted(e.plan.guildId)).map(e => e.plan.guildId)
     };
   return () => {
-    b.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, k(M({}, n), {
+    b.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, j(M({}, n), {
       auto_migrated: !0,
       pre_selected_server_ids: Object.values(e).filter(e => e.mode === R.AR.UseGreyDot).map(e => e.guildId),
       final_selected_server_ids: t.map(e => e.plan.guildId),

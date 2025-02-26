@@ -32,13 +32,13 @@ var r = n(687249),
   L = "[object GeneratorFunction]",
   x = "[object Map]",
   M = "[object Number]",
-  j = "[object Object]",
-  k = "[object RegExp]",
+  k = "[object Object]",
+  j = "[object RegExp]",
   U = "[object Set]",
   G = "[object String]",
   B = "[object Symbol]",
-  F = "[object WeakMap]",
-  V = "[object ArrayBuffer]",
+  V = "[object WeakMap]",
+  F = "[object ArrayBuffer]",
   Z = "[object DataView]",
   H = "[object Float32Array]",
   W = "[object Float64Array]",
@@ -54,7 +54,7 @@ var r = n(687249),
 function ee(e, t, n, C, R, P) {
   var D, x = t & I,
     M = t & T,
-    k = t & N;
+    j = t & N;
   if (n && (D = R ? n(e, C, R, P) : n(e)), void 0 !== D) return D;
   if (!y(e)) return e;
   var U = E(e);
@@ -64,7 +64,7 @@ function ee(e, t, n, C, R, P) {
     var G = _(e),
       B = G == w || G == L;
     if (v(e)) return l(e, x);
-    if (G == j || G == A || B && !R) {
+    if (G == k || G == A || B && !R) {
       if (D = M || B ? {} : g(e), !x) return M ? d(e, s(D, e)) : u(e, a(D, e))
     } else {
       if (!$[G]) return R ? e : {};
@@ -72,17 +72,17 @@ function ee(e, t, n, C, R, P) {
     }
   }
   P || (P = new r);
-  var F = P.get(e);
-  if (F) return F;
+  var V = P.get(e);
+  if (V) return V;
   P.set(e, D), O(e) ? e.forEach(function(r) {
     D.add(ee(r, t, n, r, e, P))
   }) : b(e) && e.forEach(function(r, i) {
     D.set(i, ee(r, t, n, i, e, P))
   });
-  var V = k ? M ? p : f : M ? keysIn : S,
-    Z = U ? void 0 : V(e);
+  var F = j ? M ? p : f : M ? keysIn : S,
+    Z = U ? void 0 : F(e);
   return i(Z || e, function(r, i) {
     Z && (r = e[i = r]), o(D, i, ee(r, t, n, i, e, P))
   }), D
 }
-$[A] = $[C] = $[V] = $[Z] = $[R] = $[P] = $[H] = $[W] = $[Y] = $[K] = $[z] = $[x] = $[M] = $[j] = $[k] = $[U] = $[G] = $[B] = $[q] = $[Q] = $[X] = $[J] = !0, $[D] = $[w] = $[F] = !1, e.exports = ee
+$[A] = $[C] = $[F] = $[Z] = $[R] = $[P] = $[H] = $[W] = $[Y] = $[K] = $[z] = $[x] = $[M] = $[k] = $[j] = $[U] = $[G] = $[B] = $[q] = $[Q] = $[X] = $[J] = !0, $[D] = $[w] = $[V] = !1, e.exports = ee

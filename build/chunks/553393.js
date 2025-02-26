@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => V
+  Z: () => F
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -45,7 +45,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function j(e) {
   }
   return e
 }
-let k = "4px",
+let j = "4px",
   U = "11px",
   G = 222;
 
@@ -65,16 +65,16 @@ function B(e, t) {
   return null != e && null != t && (0, m.p9)(t, y.Z, v.Z, b.Z, h.Z)[0]
 }
 
-function F(e) {
+function V(e) {
   var t, n, h, m, v;
   let {
     quest: b,
     memberListItemRef: y,
     applicationStream: N,
     position: M,
-    closePopout: j,
-    updatePosition: F,
-    impressionRef: V
+    closePopout: k,
+    updatePosition: V,
+    impressionRef: F
   } = e, Z = (0, s.e7)([E.Z], () => {
     var e;
     return null !== (e = E.Z.getChannel(null == N ? void 0 : N.channelId)) && void 0 !== e ? e : null
@@ -87,21 +87,21 @@ function F(e) {
   } = (0, f.Z)(), [ee, et] = i.useState(X), en = (0, p.Aq)(), er = (0, a.eg)();
   i.useEffect(() => {
     let e = er.current;
-    return null == e || e.addEventListener("scroll", j), () => {
-      null == e || e.removeEventListener("scroll", j)
+    return null == e || e.addEventListener("scroll", k), () => {
+      null == e || e.removeEventListener("scroll", k)
     }
-  }, [j, er]), i.useEffect(() => {
+  }, [k, er]), i.useEffect(() => {
     let e = er.current,
       t = y.current;
     if (null == e || null == t) return;
-    let n = new MutationObserver(() => F());
+    let n = new MutationObserver(() => V());
     return n.observe(e, {
       childList: !0,
       subtree: !0
     }), () => {
       n.disconnect()
     }
-  }, [y, er, F]);
+  }, [y, er, V]);
   let ei = (0, c.q_F)({
       from: {
         height: 0
@@ -126,7 +126,7 @@ function F(e) {
     ea = () => {
       en.dispatch(D.CkL.POPOUT_CLOSE)
     },
-    es = "top" === M ? "".concat(k, " ").concat(k, " 0 0") : "0 0 ".concat(k, " ").concat(k);
+    es = "top" === M ? "".concat(j, " ").concat(j, " 0 0") : "0 0 ".concat(j, " ").concat(j);
   if (null == b || W || Y && !B(N, Z)) return null;
   let el = () => {
       (0, O._3)({
@@ -185,7 +185,7 @@ function F(e) {
     };
   return (0, r.jsx)(o.animated.div, {
     ref: e => {
-      V.current = e
+      F.current = e
     },
     "aria-expanded": ee,
     className: x.wrapper,
@@ -266,12 +266,12 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   return null == e.quest ? null : (0, r.jsx)(N.A, {
     questOrQuests: e.quest,
     questContent: I.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: !0,
-    children: t => (0, r.jsx)(F, j({
+    children: t => (0, r.jsx)(V, k({
       impressionRef: t
     }, e))
   })

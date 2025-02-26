@@ -43,13 +43,13 @@ let A = new m.Z("AuthenticationStore"),
   L = null,
   x = null,
   M = null,
-  j = null,
-  k = I.u34.NONE,
+  k = null,
+  j = I.u34.NONE,
   U = !1,
   G = [],
   B = "",
-  F = !1,
-  V = null,
+  V = !1,
+  F = null,
   Z = !1,
   H = !1,
   W = null,
@@ -129,32 +129,32 @@ function et(e) {
   let {
     isPasswordAttempt: t
   } = e;
-  k = I.u34.LOGGING_IN, z = z || !0 === t
+  j = I.u34.LOGGING_IN, z = z || !0 === t
 }
 
 function en(e) {
   let {
     isMultiAccount: t
   } = e;
-  k = I.u34.NONE, B = "", F = !1, V = null, r = null, !t && (ee(), Q(!1))
+  j = I.u34.NONE, B = "", V = !1, F = null, r = null, !t && (ee(), Q(!1))
 }
 
 function er() {
-  k = I.u34.NONE
+  j = I.u34.NONE
 }
 
 function ei(e) {
   let {
     token: t
   } = e;
-  k = I.u34.NONE, $(t), J(), B = "", F = !1, V = null, K = !1
+  j = I.u34.NONE, $(t), J(), B = "", V = !1, F = null, K = !1
 }
 
 function eo(e) {
   let {
     error: t
   } = e;
-  B = "", F = !1, V = null, k = null != (0, p.p)(t).date_of_birth ? I.u34.LOGIN_AGE_GATE : I.u34.NONE
+  B = "", V = !1, F = null, j = null != (0, p.p)(t).date_of_birth ? I.u34.LOGIN_AGE_GATE : I.u34.NONE
 }
 
 function ea() {
@@ -165,7 +165,7 @@ function es(e) {
   let {
     error: t
   } = e;
-  B = "", F = !1, V = null, K = !1, k = null != (0, p.F)(t).date_of_birth ? I.u34.LOGIN_AGE_GATE : I.u34.NONE
+  B = "", V = !1, F = null, K = !1, j = null != (0, p.F)(t).date_of_birth ? I.u34.LOGIN_AGE_GATE : I.u34.NONE
 }
 
 function el(e) {
@@ -176,27 +176,27 @@ function el(e) {
     backup: i,
     totp: o
   } = e;
-  null != t && (B = t, F = n, V = null != r ? r : null, H = i, Z = o), k = I.u34.MFA_STEP
+  null != t && (B = t, V = n, F = null != r ? r : null, H = i, Z = o), j = I.u34.MFA_STEP
 }
 
 function ec() {
-  k = I.u34.LOGGING_IN_MFA
+  j = I.u34.LOGGING_IN_MFA
 }
 
 function eu(e) {
-  k = I.u34.ACCOUNT_SCHEDULED_FOR_DELETION, r = e.credentials
+  j = I.u34.ACCOUNT_SCHEDULED_FOR_DELETION, r = e.credentials
 }
 
 function ed(e) {
-  k = I.u34.ACCOUNT_DISABLED, r = e.credentials
+  j = I.u34.ACCOUNT_DISABLED, r = e.credentials
 }
 
 function ef(e) {
-  k = I.u34.PASSWORD_RECOVERY_PHONE_VERIFICATION, r = e.credentials
+  j = I.u34.PASSWORD_RECOVERY_PHONE_VERIFICATION, r = e.credentials
 }
 
 function ep(e) {
-  k = I.u34.PHONE_IP_AUTHORIZATION, r = e.credentials
+  j = I.u34.PHONE_IP_AUTHORIZATION, r = e.credentials
 }
 
 function e_(e) {
@@ -227,7 +227,7 @@ function em(e) {
     auth: a,
     staticAuthSessionId: s
   } = e;
-  q("handleConnectionOpen called"), y.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.Z)(n)), D = r, w = i, L = s, j = o, P = n.id, void 0 !== a && (G = a.authenticator_types), c.K.set(R, n.id)
+  q("handleConnectionOpen called"), y.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.Z)(n)), D = r, w = i, L = s, k = o, P = n.id, void 0 !== a && (G = a.authenticator_types), c.K.set(R, n.id)
 }
 
 function eg(e) {
@@ -238,7 +238,7 @@ function eg(e) {
     analyticsToken: i,
     token: o
   } = e;
-  y.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.Z)(n)), D = r, j = i, $(o), J(), P = n.id, c.K.set(R, n.id)
+  y.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.Z)(n)), D = r, k = i, $(o), J(), P = n.id, c.K.set(R, n.id)
 }
 
 function eE(e) {
@@ -286,15 +286,15 @@ function eO(e) {
   null !== (t = null == e ? void 0 : e.isSwitchingAccount) && void 0 !== t && t || (n && J(), Q()), s.ZP.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore"],
     type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
-  }), S.Z.clearAll(), h.ZH(), y.Z.clearUser(), c.K.remove(R), P = null, D = null, k = (null == e ? void 0 : e.isSwitchingAccount) ? I.u34.LOGGING_IN : I.u34.NONE, B = "", V = null, F = !1, K = !1, z = !1
+  }), S.Z.clearAll(), h.ZH(), y.Z.clearUser(), c.K.remove(R), P = null, D = null, j = (null == e ? void 0 : e.isSwitchingAccount) ? I.u34.LOGGING_IN : I.u34.NONE, B = "", F = null, V = !1, K = !1, z = !1
 }
 
 function eS() {
-  k = I.u34.FORGOT_PASSWORD
+  j = I.u34.FORGOT_PASSWORD
 }
 
 function eI() {
-  k = I.u34.NONE
+  j = I.u34.NONE
 }
 
 function eT(e) {
@@ -312,14 +312,14 @@ function eN(e) {
 }
 
 function eA() {
-  Y = null, k = I.u34.NONE, eO(), setImmediate(() => (0, g.uL)(I.Z5c.DEFAULT_LOGGED_OUT))
+  Y = null, j = I.u34.NONE, eO(), setImmediate(() => (0, g.uL)(I.Z5c.DEFAULT_LOGGED_OUT))
 }
 class eC extends(i = s.ZP.Store) {
   initialize() {
     P = c.K.get(R), null == o.getToken() && Q(), this.addChangeListener(() => (0, _.u)(P))
   }
   getLoginStatus() {
-    return k
+    return j
   }
   getId() {
     return P
@@ -343,22 +343,22 @@ class eC extends(i = s.ZP.Store) {
     return x
   }
   getAnalyticsToken() {
-    return j
+    return k
   }
   getMFATicket() {
     return B
   }
   getMFAMethods() {
     let e = [];
-    return null != V && e.push({
+    return null != F && e.push({
       type: "webauthn",
-      challenge: V
+      challenge: F
     }), Z && e.push({
       type: "totp",
       backup_codes_allowed: H
     }), H && e.push({
       type: "backup"
-    }), F && e.push({
+    }), V && e.push({
       type: "sms"
     }), e
   }

@@ -205,7 +205,7 @@ class M {
     I(this, "guildId", void 0), I(this, "listId", void 0), I(this, "ownerId", void 0), I(this, "rows", []), I(this, "groups", []), I(this, "members", {}), I(this, "version", 0), this.guildId = e, this.listId = t, this.updateOwnerId()
   }
 }
-class j {
+class k {
   get(e, t) {
     let n = this._guildLists[e];
     null == n && (n = this._guildLists[e] = {});
@@ -234,10 +234,10 @@ class j {
     I(this, "_guildLists", {})
   }
 }
-let k = new j;
+let j = new k;
 
 function U(e) {
-  let t = k.get(e.guildId, e.id);
+  let t = j.get(e.guildId, e.id);
   e.ops.forEach(e => {
     switch (e.op) {
       case "SYNC":
@@ -259,30 +259,30 @@ function U(e) {
 }
 
 function G() {
-  k.reset()
+  j.reset()
 }
 
 function B(e) {
   let {
     guild: t
   } = e;
-  k.forEach(t.id, e => {
+  j.forEach(t.id, e => {
     e.updateOwnerId() && e.rebuildMembers()
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     guild: t
   } = e;
-  k.delete(t.id)
+  j.delete(t.id)
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t
   } = e;
-  k.forEach(t, e => e.rebuildMembers())
+  j.forEach(t, e => e.rebuildMembers())
 }
 
 function Z(e) {
@@ -290,7 +290,7 @@ function Z(e) {
     guildId: t,
     user: n
   } = e;
-  k.forEach(t, e => e.rebuildMember(n.id))
+  j.forEach(t, e => e.rebuildMember(n.id))
 }
 let H = [];
 
@@ -298,13 +298,13 @@ function W() {
   let e = p.Z.getAllApplicationStreams(),
     t = H.concat(e);
   H = e, t.forEach(e => {
-    k.forEach(null, t => t.rebuildMember(e.ownerId))
+    j.forEach(null, t => t.rebuildMember(e.ownerId))
   })
 }
 
 function Y() {
   let e = _.default.getId();
-  k.forEach(null, t => t.rebuildMember(e))
+  j.forEach(null, t => t.rebuildMember(e))
 }
 
 function K() {
@@ -315,7 +315,7 @@ class z extends(r = c.ZP.Store) {
     this.waitFor(y.default, E.Z, h.Z, g.ZP, v.Z, b.Z, _.default, m.Z, p.Z, d.Z), this.syncWith([b.Z], Y), this.syncWith([p.Z], W)
   }
   getProps(e, t) {
-    let n = k.get(e, L(t));
+    let n = j.get(e, L(t));
     return {
       listId: "".concat(n.guildId, ":").concat(n.listId),
       groups: n.groups,
@@ -324,7 +324,7 @@ class z extends(r = c.ZP.Store) {
     }
   }
   getRows(e, t) {
-    return k.get(e, L(t)).rows
+    return j.get(e, L(t)).rows
   }
 }
 I(z, "displayName", "ChannelMemberStore");
@@ -333,8 +333,8 @@ let q = new z(u.Z, {
   OVERLAY_INITIALIZE: G,
   GUILD_MEMBER_LIST_UPDATE: U,
   GUILD_UPDATE: B,
-  GUILD_DELETE: F,
-  GUILD_ROLE_UPDATE: V,
+  GUILD_DELETE: V,
+  GUILD_ROLE_UPDATE: F,
   GUILD_MEMBER_UPDATE: Z,
   CHANNEL_UPDATES: K
 })

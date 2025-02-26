@@ -234,7 +234,7 @@ function M(e) {
   return null != t && y(t, e => b(e))
 }
 
-function j(e) {
+function k(e) {
   let {
     threads: t
   } = e;
@@ -245,7 +245,7 @@ function j(e) {
     return null != t && b(t)
   })
 }
-class k extends(r = a.ZP.Store) {
+class j extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(d.Z, u.Z)
   }
@@ -262,8 +262,8 @@ class k extends(r = a.ZP.Store) {
     return null != e && (t = v.getCachedMessageIdsForChannel(e)), null != t ? t : m
   }
 }
-p(k, "displayName", "ReferencedMessageStore");
-let U = new k(s.Z, {
+p(j, "displayName", "ReferencedMessageStore");
+let U = new j(s.Z, {
   CACHE_LOADED: S,
   LOCAL_MESSAGES_LOADED: O,
   LOAD_MESSAGES_SUCCESS: O,
@@ -273,7 +273,7 @@ let U = new k(s.Z, {
   LOAD_THREADS_SUCCESS: M,
   LOAD_ARCHIVED_THREADS_SUCCESS: M,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: N,
-  LOAD_FORUM_POSTS: j,
+  LOAD_FORUM_POSTS: k,
   MESSAGE_CREATE: T,
   MESSAGE_UPDATE: A,
   MESSAGE_DELETE: D,

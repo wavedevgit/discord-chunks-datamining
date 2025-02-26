@@ -27,7 +27,7 @@ function _(e, t, n, _) {
     body: S
   } = (0, d.Xi)(e, t, n), {
     trackView: x,
-    trackClick: Z
+    trackClick: E
   } = (0, f.R)(m.n0.TextChat, {
     notif_type: m.n0.TextChat,
     notif_user_id: null === (v = t.author) || void 0 === v ? void 0 : v.id,
@@ -52,13 +52,13 @@ function _(e, t, n, _) {
       _ && (0, l.GN)(a.Ay, a.yk), x()
     },
     onNotificationClick: () => {
-      if (o.default.isOverlayOOPEnabledForPid((0, p.QF)())) {
-        let n = (0, p.QF)();
-        c.Z.isInstanceLocked() ? (Z("unlock"), r.Z.setInputLocked(!1, n)) : (Z("jump"), (0, s.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.ZP.focus())
-      } else(0, s.uL)(g.Z5c.CHANNEL(e.guild_id, e.id)), Z("jump"), c.Z.isInstanceLocked() && r.Z.setInstanceLocked(!1)
+      if (o.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {
+        let n = (0, p.getPID)();
+        c.default.isInstanceLocked() ? (E("unlock"), r.Z.setInputLocked(!1, n)) : (E("jump"), (0, s.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.ZP.focus())
+      } else(0, s.uL)(g.Z5c.CHANNEL(e.guild_id, e.id)), E("jump"), c.default.isInstanceLocked() && r.Z.setInstanceLocked(!1)
     },
     onDismissClick: () => {
-      Z("dismiss")
+      E("dismiss")
     }
   }
 }

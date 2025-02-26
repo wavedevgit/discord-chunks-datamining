@@ -14,19 +14,19 @@ var r = n(200651),
   m = n(665149),
   h = n(301801),
   x = n(4912),
-  p = n(55935),
-  f = n(428530),
+  f = n(55935),
+  p = n(428530),
   b = n(257785),
   _ = n(484036),
   g = n(681619),
   v = n(621060),
   j = n(981015),
-  C = n(841699);
+  y = n(841699);
 
-function y(e) {
+function C(e) {
   return parseFloat(e.toFixed(3))
 }
-let O = [{
+let N = [{
   key: "store",
   cellClassName: j.actionColumn,
   render(e) {
@@ -42,11 +42,11 @@ let O = [{
     let {
       trace: t
     } = e;
-    return "".concat(y(t.time), " ms")
+    return "".concat(C(t.time), " ms")
   }
 }];
 
-function N(e) {
+function T(e) {
   let {
     actionLog: t
   } = e, n = a.useMemo(() => t.traces.map(e => ({
@@ -55,12 +55,12 @@ function N(e) {
   })), [t]);
   return (0, r.jsx)(d.zJl, {
     children: (0, r.jsx)(g.Z, {
-      columns: O,
+      columns: N,
       data: n
     })
   })
 }
-let T = [{
+let O = [{
   id: "action",
   name: "Action",
   render(e) {
@@ -75,16 +75,16 @@ let T = [{
           name: "Created at",
           children: (0, r.jsx)("time", {
             dateTime: null === (t = n.createdAt) || void 0 === t ? void 0 : t.toISOString(),
-            title: (0, p.vc)(a, "LLLL"),
-            children: (0, p.Y4)(a)
+            title: (0, f.vc)(a, "LLLL"),
+            children: (0, f.Y4)(a)
           })
         }), (0, r.jsxs)(b.Z9, {
           name: "Total Time",
-          children: [y(n.totalTime), " ms"]
+          children: [C(n.totalTime), " ms"]
         })]
       }), (0, r.jsx)(d.zJl, {
         className: j.inspectorContainer,
-        children: (0, r.jsx)(f.Z, {
+        children: (0, r.jsx)(p.Z, {
           data: n.action
         })
       })]
@@ -97,7 +97,7 @@ let T = [{
     let {
       actionLog: t
     } = e;
-    return (0, r.jsx)(N, {
+    return (0, r.jsx)(T, {
       actionLog: t
     })
   }
@@ -107,7 +107,7 @@ function E(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, i = a.useMemo(() => t.error ? [...T, {
+  } = e, i = a.useMemo(() => t.error ? [...O, {
     id: "error",
     name: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(x.Z, {
@@ -120,11 +120,11 @@ function E(e) {
       } = e;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: l()(j.errorToolbar, C.toolbar),
+          className: l()(j.errorToolbar, y.toolbar),
           children: (0, r.jsx)("div", {
-            className: C.toolbarGroup,
+            className: y.toolbarGroup,
             children: (0, r.jsx)(d.zxk, {
-              className: C.toolbarButton,
+              className: y.toolbarButton,
               size: d.zxk.Sizes.MIN,
               onClick: () => console.error(t.error),
               children: "Log to Console"
@@ -132,13 +132,13 @@ function E(e) {
           })
         }), (0, r.jsx)(d.zJl, {
           className: j.inspectorContainer,
-          children: (0, r.jsx)(f.Z, {
+          children: (0, r.jsx)(p.Z, {
             data: t.error
           })
         })]
       })
     }
-  }] : T, [t]), {
+  }] : O, [t]), {
     TabBar: o,
     renderSelectedTab: s
   } = (0, v.Z)({
@@ -149,7 +149,7 @@ function E(e) {
     minHeight: 100,
     initialHeight: n,
     children: [(0, r.jsx)(o, {}), (0, r.jsxs)(m.ZP, {
-      className: l()(C.headerBar, j.subPanelHeaderBar),
+      className: l()(y.headerBar, j.subPanelHeaderBar),
       children: [(0, r.jsx)(m.ZP.Icon, {
         icon: d.xVZ,
         tooltip: t.name
@@ -181,7 +181,7 @@ let S = [{
     let {
       actionLog: t
     } = e;
-    return "".concat(y(t.totalTime), " ms")
+    return "".concat(C(t.totalTime), " ms")
   }
 }];
 
@@ -203,51 +203,51 @@ function k() {
       actionLog: e
     })), [i]),
     [c, m] = a.useState(s),
-    [x, p] = a.useState(s),
-    [f, b] = a.useState(!1),
+    [x, f] = a.useState(s),
+    [p, b] = a.useState(!1),
     [_, v] = a.useState(),
-    y = a.useRef(null),
-    O = a.useMemo(() => (0, o.throttle)(async (e, t) => {
+    C = a.useRef(null),
+    N = a.useMemo(() => (0, o.throttle)(async (e, t) => {
       if ("" === e) {
-        p(t);
+        f(t);
         return
       }
-      y.current = (0, o.uniqueId)();
+      C.current = (0, o.uniqueId)();
       let n = await (0, h.H)(t, e => {
         let {
           actionLog: t
         } = e;
         return t.name
       }, e, !0);
-      null != y.current && p(n)
+      null != C.current && f(n)
     }, 300, {
       leading: !0
     }), []),
-    N = a.useCallback(e => {
+    T = a.useCallback(e => {
       m(s), b(e)
     }, [s]);
   a.useEffect(() => {
-    if (f) {
-      O(t, null != c ? c : s);
+    if (p) {
+      N(t, null != c ? c : s);
       return
     }
-    O(t, s)
-  }, [f, t, O, s, c]), a.useEffect(() => {
-    y.current = null
+    N(t, s)
+  }, [p, t, N, s, c]), a.useEffect(() => {
+    C.current = null
   }, []);
-  let T = t.trim().length > 0,
-    k = a.useMemo(() => T ? x : f ? c : s, [s, x, T, f, c]);
+  let O = t.trim().length > 0,
+    k = a.useMemo(() => O ? x : p ? c : s, [s, x, O, p, c]);
   return (0, r.jsxs)("div", {
     ref: e,
-    className: l()(C.panel, j.panel),
+    className: l()(y.panel, j.panel),
     children: [(0, r.jsxs)("div", {
       className: j.toolbar,
       children: [(0, r.jsx)("div", {
         title: "Toggles the flow of Actions",
         className: j.pausedEvents,
         children: (0, r.jsx)(d.rsf, {
-          checked: !f,
-          onChange: e => N(!e)
+          checked: !p,
+          onChange: e => T(!e)
         })
       }), (0, r.jsx)(d.E1j, {
         className: j.searchBar,

@@ -77,7 +77,7 @@ function L() {
     q(P);
     return
   }
-  if (j(), !f.Z.hasConsented(g.pjP.PERSONALIZATION)) return;
+  if (k(), !f.Z.hasConsented(g.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
   } = m.G.getCurrentConfig({
@@ -120,16 +120,16 @@ function M() {
   return Array.from(C).some(e => !N.lastShownFriendsListGiftIntents.includes(e))
 }
 
-function j() {
+function k() {
   A.length = 0, C.clear(), R = {}
 }
 
-function k() {
-  j()
+function j() {
+  k()
 }
 
 function U() {
-  N = T(), j()
+  N = T(), k()
 }
 
 function G() {
@@ -143,11 +143,11 @@ function B(e) {
   Z(t)
 }
 
-function F() {
+function V() {
   N.friendsTabBadgeLastDismissedTime = Date.now()
 }
 
-function V(e) {
+function F(e) {
   let {
     recipientUserId: t
   } = e;
@@ -189,7 +189,7 @@ function z(e) {
 }
 
 function q(e) {
-  j();
+  k();
   let {
     enabled: t
   } = h.w.getCurrentConfig({
@@ -257,12 +257,12 @@ E(Q, "displayName", "PremiumGiftingIntentStore"), E(Q, "persistKey", "PremiumGif
   }
 }]);
 let X = new Q(c.Z, {
-  CONNECTION_OPEN: k,
+  CONNECTION_OPEN: j,
   LOGOUT: U,
   MESSAGE_GIFT_INTENT_SHOWN: B,
   FRIENDS_LIST_GIFT_INTENTS_SHOWN: G,
-  FRIENDS_TAB_BADGE_DISMISS: F,
-  GIFT_INTENT_FLOW_PURCHASED_GIFT: V,
+  FRIENDS_TAB_BADGE_DISMISS: V,
+  GIFT_INTENT_FLOW_PURCHASED_GIFT: F,
   DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: W,
   DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET: Y,
   DEV_TOOLS_FRIENDS_TAB_BADGE_COOLDOWN_RESET: K,

@@ -164,7 +164,7 @@ function M(e) {
   h = e.section
 }
 
-function j(e) {
+function k(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : Date.now(),
     r = {};
@@ -177,12 +177,12 @@ function j(e) {
         for (let e = 0; e < o.length; e++) {
           let r = t[e],
             i = "object" == typeof r ? r : {};
-          a.push(j(o[e], i, n))
+          a.push(k(o[e], i, n))
         }
       } else r[i] = o
     } else if ("object" == typeof o && null !== o) {
       let t = "object" == typeof e && null !== e ? e : {};
-      r[i] = j(o, t, n)
+      r[i] = k(o, t, n)
     } else if (i in E && "number" == typeof o) {
       let t = r[i] = Array.isArray(e) ? e : [];
       t.push({
@@ -194,7 +194,7 @@ function j(e) {
   return r
 }
 
-function k(e) {
+function j(e) {
   let {
     context: t,
     stats: n,
@@ -210,7 +210,7 @@ function k(e) {
       } = n;
       Object.keys(e).includes(o) || (h = _)
     }
-    i[r] = j(n, i[r])
+    i[r] = k(n, i[r])
   } else delete i[r]
 }
 
@@ -239,14 +239,14 @@ function B(e) {
   S = S.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
 }
 
-function F(e) {
+function V(e) {
   let {
     value: t
   } = e;
   I = t
 }
 
-function V(e) {
+function F(e) {
   let {
     userId: t,
     context: n,
@@ -306,12 +306,12 @@ let H = new Z(a.Z, {
   RTC_DEBUG_MODAL_OPEN: D,
   RTC_DEBUG_MODAL_CLOSE: w,
   RTC_DEBUG_MODAL_SET_SECTION: M,
-  RTC_DEBUG_MODAL_UPDATE: k,
+  RTC_DEBUG_MODAL_UPDATE: j,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,
   RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: B,
-  RTC_DEBUG_SET_RECORDING_FLAG: F,
-  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: V,
+  RTC_DEBUG_SET_RECORDING_FLAG: V,
+  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F,
   VOICE_CHANNEL_SELECT: L,
   RTC_CONNECTION_VIDEO: x
 });

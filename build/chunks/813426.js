@@ -47,8 +47,8 @@ function x(e, t) {
   return v.call(t, n, "$&_")
 }
 var M = n(771673),
-  j = M.custom,
-  k = K(j) ? j : null;
+  k = M.custom,
+  j = K(k) ? k : null;
 
 function U(e, t, n) {
   var r = "double" === (n.quoteStyle || t) ? '"' : "'";
@@ -63,11 +63,11 @@ function B(e) {
   return "[object Array]" === X(e) && (!D || !("object" == typeof e && D in e))
 }
 
-function F(e) {
+function V(e) {
   return "[object Date]" === X(e) && (!D || !("object" == typeof e && D in e))
 }
 
-function V(e) {
+function F(e) {
   return "[object RegExp]" === X(e) && (!D || !("object" == typeof e && D in e))
 }
 
@@ -141,7 +141,7 @@ e.exports = function e(t, r, i, s) {
     }
     return e(t, l, i + 1, s)
   }
-  if ("function" == typeof t && !V(t)) {
+  if ("function" == typeof t && !F(t)) {
     var O = J(t),
       N = e_(t, b);
     return "[Function" + (O ? ": " + O : " (anonymous)") + "]" + (N.length > 0 ? " { " + I.call(N, ", ") + " }" : "")
@@ -151,8 +151,8 @@ e.exports = function e(t, r, i, s) {
     return "object" != typeof t || P ? C : el(C)
   }
   if (eo(t)) {
-    for (var j = "<" + y.call(String(t.nodeName)), q = t.attributes || [], es = 0; es < q.length; es++) j += " " + q[es].name + "=" + U(G(q[es].value), "double", l);
-    return j += ">", t.childNodes && t.childNodes.length && (j += "..."), j += "</" + y.call(String(t.nodeName)) + ">"
+    for (var k = "<" + y.call(String(t.nodeName)), q = t.attributes || [], es = 0; es < q.length; es++) k += " " + q[es].name + "=" + U(G(q[es].value), "double", l);
+    return k += ">", t.childNodes && t.childNodes.length && (k += "..."), k += "</" + y.call(String(t.nodeName)) + ">"
   }
   if (B(t)) {
     if (0 === t.length) return "[]";
@@ -164,7 +164,7 @@ e.exports = function e(t, r, i, s) {
     return "cause" in Error.prototype || !("cause" in t) || w.call(t, "cause") ? 0 === em.length ? "[" + String(t) + "]" : "{ [" + String(t) + "] " + I.call(em, ", ") + " }" : "{ [" + String(t) + "] " + I.call(S.call("[cause]: " + b(t.cause), em), ", ") + " }"
   }
   if ("object" == typeof t && d) {
-    if (k && "function" == typeof t[k] && M) return M(t, {
+    if (j && "function" == typeof t[j] && M) return M(t, {
       depth: m - i
     });
     if ("symbol" !== d && "function" == typeof t.inspect) return t.inspect()
@@ -190,7 +190,7 @@ e.exports = function e(t, r, i, s) {
   if (H(t)) return el(b(String(t)));
   if ("undefined" != typeof window && t === window) return "{ [object Window] }";
   if (t === n.g) return "{ [object globalThis] }";
-  if (!F(t) && !V(t)) {
+  if (!V(t) && !F(t)) {
     var ev = e_(t, b),
       eb = L ? L(t) === Object.prototype : t instanceof Object || t.constructor === Object,
       ey = t instanceof Object ? "" : "null prototype",

@@ -196,7 +196,7 @@ function c(e) {
       relevance: 10,
       begin: /^\s*['"]use (strict|asm)['"]/
     },
-    j = {
+    k = {
       variants: [{
         match: [/function/, /\s+/, d, /(?=\s*\()/]
       }, {
@@ -210,7 +210,7 @@ function c(e) {
       contains: [w],
       illegal: /%/
     },
-    k = {
+    j = {
       relevance: 0,
       match: /\b[A-Z][A-Z_0-9]+\b/,
       className: "variable.constant"
@@ -232,7 +232,7 @@ function c(e) {
       className: "property",
       relevance: 0
     },
-    F = {
+    V = {
       match: [/get|set/, /\s+/, d, /(?=\()/],
       className: {
         1: "keyword",
@@ -242,9 +242,9 @@ function c(e) {
         begin: /\(\)/
       }, w]
     },
-    V = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
+    F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
     Z = {
-      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(V)],
+      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(F)],
       keywords: "async",
       className: {
         1: "keyword",
@@ -277,7 +277,7 @@ function c(e) {
       relevance: 0,
       contains: [C, e.REGEXP_MODE, {
         className: "function",
-        begin: V,
+        begin: F,
         returnBegin: !0,
         end: "\\s*=>",
         contains: [{
@@ -323,7 +323,7 @@ function c(e) {
           contains: ["self"]
         }]
       }]
-    }, j, {
+    }, k, {
       beginKeywords: "while if switch catch for"
     }, {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
@@ -345,7 +345,7 @@ function c(e) {
         1: "title.function"
       },
       contains: [w]
-    }, G, k, L, F, {
+    }, G, j, L, V, {
       match: /\$[(.]/
     }]
   }

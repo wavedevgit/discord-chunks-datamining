@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Jc: () => F,
+  Jc: () => V,
   dx: () => M,
   tE: () => H
 });
@@ -355,13 +355,13 @@ let x = !1,
       P = !1, null != D && cancelAnimationFrame(D)
     }
   };
-var j = {
+var k = {
     exports: {}
   },
-  k = {};
+  j = {};
 
 function U() {
-  if (i) return k;
+  if (i) return j;
   i = 1;
   var e = a,
     t = Symbol.for("react.element"),
@@ -391,14 +391,14 @@ function U() {
       _owner: o.current
     }
   }
-  return k.Fragment = n, k.jsx = l, k.jsxs = l, k
+  return j.Fragment = n, j.jsx = l, j.jsxs = l, j
 }! function(e) {
   e.exports = U()
-}(j);
-let G = j.exports.jsx,
-  B = j.exports.jsxs;
+}(k);
+let G = k.exports.jsx,
+  B = k.exports.jsxs;
 
-function F(e) {
+function V(e) {
   let {
     containerRef: t,
     children: n,
@@ -408,11 +408,11 @@ function F(e) {
     i.current.setContainer(t.current), i.current.setThemeOptions(r)
   }, [t.current]), B(C.Provider, {
     value: i.current,
-    children: [n, G(V, {})]
+    children: [n, G(F, {})]
   })
 }
 
-function V() {
+function F() {
   let e = a.useContext(C),
     [, t] = a.useState({});
   return a.useEffect(() => (e.invalidate = () => t({}), () => {

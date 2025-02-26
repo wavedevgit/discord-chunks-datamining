@@ -29,27 +29,27 @@ var d = n(616254),
   x = n(892254);
 n(422859);
 var M = n(857192),
-  j = n(195309),
-  k = n(44163),
+  k = n(195309),
+  j = n(44163),
   U = n(710845),
   G = n(70956),
   B = n(626135),
-  F = n(981631);
+  V = n(981631);
 M.default.cssDebuggingEnabled && n.e("62195").then(n.bind(n, 640646)), n.e("63614").then(n.bind(n, 718493)).then(e => {
   let {
     rust_multiply: t
   } = e, n = t(6, 7);
-  new U.Z().log("[libdiscore] smoke test result:", n), B.default.track(F.rMx.LIBDISCORE_LOADED, {
+  new U.Z().log("[libdiscore] smoke test result:", n), B.default.track(V.rMx.LIBDISCORE_LOADED, {
     success: !0
   })
 }).catch(e => {
-  new U.Z().error("[libdiscore] Failed to execute smoke test:", e), y.Z.captureException(e), B.default.track(F.rMx.LIBDISCORE_LOADED, {
+  new U.Z().error("[libdiscore] Failed to execute smoke test:", e), y.Z.captureException(e), B.default.track(V.rMx.LIBDISCORE_LOADED, {
     success: !1
   })
 });
-let V = 5 * G.Z.Millis.MINUTE,
+let F = 5 * G.Z.Millis.MINUTE,
   Z = document.getElementById("app-mount");
-p()(null != Z, "Could not find app-mount"), Z.className = __OVERLAY__ ? "" : j.appMount;
+p()(null != Z, "Could not find app-mount"), Z.className = __OVERLAY__ ? "" : k.appMount;
 let H = (0, d.createRoot)(Z),
   W = {
     "/oauth2/authorize": N.Z
@@ -90,7 +90,7 @@ else if (null != window.require && null == window.DiscordNative) K(_.Z.OutdatedC
 else {
   if (document.addEventListener("scroll", e => e.preventDefault()), A.isPlatformEmbedded) {
     window.onbeforeunload = () => I.ZP.beforeUnload(), I.ZP.on("HELP_OPEN", () => window.open(O.Z.getCommunityURL()));
-    let e = new D.sW(V, () => I.ZP.purgeMemory());
+    let e = new D.sW(F, () => I.ZP.purgeMemory());
     I.ZP.on("MAIN_WINDOW_BLUR", () => {
       e.delay(), I.ZP.setFocused(!1), (0, R.T_)(window, !1)
     }), I.ZP.on("MAIN_WINDOW_FOCUS", () => {
@@ -99,5 +99,5 @@ else {
       (0, R.al)(window)
     })
   }
-  E.Z.initialize(), h.Z.initialize(), m.Z.init(), b.Z.init(), k.Z.init(), g.Z.initialize(), S.Z.initialize(), T.Z.initialize(), v.j(), K(_.Z.App)
+  E.Z.initialize(), h.Z.initialize(), m.Z.init(), b.Z.init(), j.Z.init(), g.Z.initialize(), S.Z.initialize(), T.Z.initialize(), v.j(), K(_.Z.App)
 }

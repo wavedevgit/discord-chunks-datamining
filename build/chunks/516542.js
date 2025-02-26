@@ -29,27 +29,27 @@ function g(e) {
   }), [E, b] = r.useState(() => (0, u.H2)()), {
     textValue: x,
     richValue: j
-  } = E, [S, I] = r.useState(!1), C = r.useCallback(() => I(!0), []), Z = r.useCallback(() => I(!1), []), N = r.useCallback((e, t, n) => {
+  } = E, [S, I] = r.useState(!1), C = r.useCallback(() => I(!0), []), N = r.useCallback(() => I(!1), []), Z = r.useCallback((e, t, n) => {
     b({
       textValue: t,
       richValue: n
     })
   }, []), w = r.useCallback(e => {
     "Escape" === e.key && l.Z.updateNotificationStatus(t, f._1z.ACTIVE)
-  }, [t]), _ = r.useCallback(() => (x.length > O || (o.Z.sendMessage(n.id, d.ZP.parse(n, x), !1), l.Z.setInputLocked(!0, (0, h.QF)()), l.Z.updateNotificationStatus(t, f._1z.DISMISSED), null == g || g(x)), Promise.resolve({
+  }, [t]), _ = r.useCallback(() => (x.length > O || (o.Z.sendMessage(n.id, d.ZP.parse(n, x), !1), l.Z.setInputLocked(!0, (0, h.getPID)()), l.Z.updateNotificationStatus(t, f._1z.DISMISSED), null == g || g(x)), Promise.resolve({
     shouldClear: !1,
     shouldRefocus: !0
   })), [x, O, n, t, g]);
   return (0, i.jsx)(c.Z, {
     innerClassName: m.textArea,
-    onChange: N,
+    onChange: Z,
     placeholder: v,
     accessibilityLabel: y,
     channel: n,
     textValue: x,
     richValue: j,
     type: a.Ie.OVERLAY_INLINE_REPLY,
-    onBlur: Z,
+    onBlur: N,
     onFocus: C,
     focused: S,
     onSubmit: _,

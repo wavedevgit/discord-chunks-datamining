@@ -104,8 +104,8 @@ function w() {
 let L = "([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})",
   x = "\\d{4}",
   M = "([0-9]{4})-([0-9]{1,2})",
-  j = "([^\\d\\s]+)",
-  k = RegExp("(?:\\s*(".concat(L, "|").concat(M, "|").concat(x, "|").concat(j, "))"), "i"),
+  k = "([^\\d\\s]+)",
+  j = RegExp("(?:\\s*(".concat(L, "|").concat(M, "|").concat(x, "|").concat(k, "))"), "i"),
   U = RegExp("\\s*(true|false)", "i");
 
 function G(e) {
@@ -116,14 +116,14 @@ function B(e) {
   return RegExp(G(e), "i")
 }
 
-function F(e) {
+function V(e) {
   let t;
   let n = e.getMatch(1),
     r = e => null != e ? null == e ? void 0 : e.id : null;
   return null != (t = b.Xyh.test(n) ? n : r(n === b.ME ? m.default.getCurrentUser() : null != e.getMatch(4) ? m.default.findByTag(e.getMatch(4)) : m.default.findByTag(e.getMatch(2), e.getMatch(3)))) && (e.setData("userId", t), !0)
 }
 
-function V(e, t) {
+function F(e, t) {
   let n, r;
   let i = e.getFullMatch().trim().toLowerCase(),
     o = w()[i];
@@ -265,7 +265,7 @@ function ee() {
     [b.dCx.ANSWER_USERNAME_FROM]: {
       follows: [b.dCx.FILTER_FROM],
       regex: J,
-      validator: F,
+      validator: V,
       mutable: !0,
       componentType: "ANSWER",
       queryKey: "author_id"
@@ -281,7 +281,7 @@ function ee() {
     [b.dCx.ANSWER_USERNAME_MENTIONS]: {
       follows: [b.dCx.FILTER_MENTIONS],
       regex: J,
-      validator: F,
+      validator: V,
       mutable: !0,
       componentType: "ANSWER",
       queryKey: "mentions"
@@ -348,25 +348,25 @@ function ee() {
       getAutocompletions: (e, t, n) => K(e, n, b.dCx.FILTER_AFTER)
     },
     [b.dCx.ANSWER_BEFORE]: {
-      regex: k,
+      regex: j,
       follows: [b.dCx.FILTER_BEFORE],
       componentType: "ANSWER",
       mutable: !0,
-      validator: e => V(e, "before")
+      validator: e => F(e, "before")
     },
     [b.dCx.ANSWER_ON]: {
-      regex: k,
+      regex: j,
       follows: [b.dCx.FILTER_ON],
       componentType: "ANSWER",
       mutable: !0,
-      validator: e => V(e, "on")
+      validator: e => F(e, "on")
     },
     [b.dCx.ANSWER_AFTER]: {
-      regex: k,
+      regex: j,
       follows: [b.dCx.FILTER_AFTER],
       componentType: "ANSWER",
       mutable: !0,
-      validator: e => V(e, "after")
+      validator: e => F(e, "after")
     },
     [b.dCx.FILTER_IN]: {
       regex: B(y.NW.string(y.t.WNpFHR)),

@@ -83,7 +83,7 @@ function M(e) {
   }
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = C.get(e);
   if (null == n) return;
   let r = n.get(t);
@@ -98,11 +98,11 @@ function j(e, t) {
     if (null == i) return;
     let n = i.get(t);
     if (null == n) return;
-    n.start(Math.min(N, o), () => j(e, t))
+    n.start(Math.min(N, o), () => k(e, t))
   }
 }
 
-function k() {
+function j() {
   O.clear(), S.clear(), A.clear(), C.clear(), D.clear(), w.clear(), L.clear(), x = !1
 }
 
@@ -133,12 +133,12 @@ function B(e) {
   }).value()
 }
 
-function F(e) {
+function V(e) {
   S.delete(e.userId), D.set(e.userId, B(e.mutualFriends)), w.set(e.userId, e.mutualFriends.length)
 }
 
-function V(e) {
-  var t, n, r, i, s, l, c, d, f, h, g, v, S, N, x, k, U, G, F, V, Z, H, W, Y, K, z, q;
+function F(e) {
+  var t, n, r, i, s, l, c, d, f, h, g, v, S, N, x, j, U, G, V, F, Z, H, W, Y, K, z, q;
   let Q = null !== (x = null === (t = e.guild_member_profile) || void 0 === t ? void 0 : t.guild_id) && void 0 !== x ? x : y;
   if (null === (n = O.get(e.user.id)) || void 0 === n || n.delete(Q), null != e.mutual_guilds) {
     let t = {};
@@ -170,12 +170,12 @@ function V(e) {
       accentColor: null === (i = e.user_profile) || void 0 === i ? void 0 : i.accent_color,
       themeColors: null === (s = e.user_profile) || void 0 === s ? void 0 : s.theme_colors,
       popoutAnimationParticleType: null === (l = e.user_profile) || void 0 === l ? void 0 : l.popout_animation_particle_type,
-      bio: null !== (k = null === (c = e.user_profile) || void 0 === c ? void 0 : c.bio) && void 0 !== k ? k : "",
+      bio: null !== (j = null === (c = e.user_profile) || void 0 === c ? void 0 : c.bio) && void 0 !== j ? j : "",
       profileEffectId: null === (f = e.user_profile) || void 0 === f ? void 0 : null === (d = f.profile_effect) || void 0 === d ? void 0 : d.id,
       profileEffectExpiresAt: null === (g = e.user_profile) || void 0 === g ? void 0 : null === (h = g.profile_effect) || void 0 === h ? void 0 : h.expires_at,
       pronouns: null !== (U = null === (v = e.user_profile) || void 0 === v ? void 0 : v.pronouns) && void 0 !== U ? U : "",
       connectedAccounts: null !== (G = e.connected_accounts.filter(e => a.Z.isSupported(e.type))) && void 0 !== G ? G : [],
-      applicationRoleConnections: null !== (F = e.application_role_connections) && void 0 !== F ? F : [],
+      applicationRoleConnections: null !== (V = e.application_role_connections) && void 0 !== V ? V : [],
       premiumSince: X,
       premiumType: e.premium_type,
       premiumGuildSince: J,
@@ -220,7 +220,7 @@ function V(e) {
         guildId: e.guild_member_profile.guild_id,
         banner: e.guild_member_profile.banner,
         accentColor: e.guild_member_profile.accent_color,
-        themeColors: null === (V = e.guild_member_profile) || void 0 === V ? void 0 : V.theme_colors,
+        themeColors: null === (F = e.guild_member_profile) || void 0 === F ? void 0 : F.theme_colors,
         popoutAnimationParticleType: null === (Z = e.guild_member_profile) || void 0 === Z ? void 0 : Z.popout_animation_particle_type,
         profileEffectId: null === (W = e.guild_member_profile) || void 0 === W ? void 0 : null === (H = W.profile_effect) || void 0 === H ? void 0 : H.id,
         profileEffectExpiresAt: null === (K = e.guild_member_profile) || void 0 === K ? void 0 : null === (Y = K.profile_effect) || void 0 === Y ? void 0 : Y.expires_at,
@@ -242,7 +242,7 @@ function V(e) {
         let n = new Map;
         n.set(e.guild_member_profile.guild_id, t), P.set(e.user.id, n)
       }
-      j(e.user.id, e.guild_member_profile.guild_id)
+      k(e.user.id, e.guild_member_profile.guild_id)
     }
   }
 }
@@ -347,7 +347,7 @@ function Y(e) {
       let r = new Map;
       r.set(n, e), P.set(t, r)
     }
-    j(t, n)
+    k(t, n)
   }
 }
 
@@ -446,12 +446,12 @@ class en extends f.Z {
       CACHE_LOADED_LAZY: () => this.loadCache(),
       USER_PROFILE_FETCH_START: Z,
       USER_PROFILE_FETCH_FAILURE: H,
-      USER_PROFILE_FETCH_SUCCESS: V,
+      USER_PROFILE_FETCH_SUCCESS: F,
       USER_PROFILE_UPDATE_START: K,
       USER_PROFILE_UPDATE_SUCCESS: z,
       USER_PROFILE_UPDATE_FAILURE: q,
       MUTUAL_FRIENDS_FETCH_START: U,
-      MUTUAL_FRIENDS_FETCH_SUCCESS: F,
+      MUTUAL_FRIENDS_FETCH_SUCCESS: V,
       MUTUAL_FRIENDS_FETCH_FAILURE: G,
       USER_UPDATE: Q,
       GUILD_MEMBER_UPDATE: Q,
@@ -462,7 +462,7 @@ class en extends f.Z {
       RELATIONSHIP_ADD: $,
       RELATIONSHIP_REMOVE: $,
       RELATIONSHIP_UPDATE: $,
-      LOGOUT: k
+      LOGOUT: j
     }), g(this, "loadCache", () => {
       let e = this.readSnapshot(en.LATEST_SNAPSHOT_VERSION);
       null != e && e.forEach(e => {

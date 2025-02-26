@@ -1,4 +1,4 @@
-/** Chunk was on 624 **/
+/** Chunk was on 53485 **/
 e.exports = {
   container: "container__37e49",
   avatar: "avatar__37e49",

@@ -169,7 +169,7 @@ function M(e) {
   return i.updateMembersByMemberIds(o)
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t,
     guildMember: n
@@ -177,7 +177,7 @@ function j(e) {
   return b(t).updateMembersByMemberIds([n.user.id])
 }
 
-function k(e) {
+function j(e) {
   let t = !1;
   return e.guilds.forEach(e => {
     let {
@@ -205,14 +205,14 @@ function U(e) {
 }
 
 function G(e) {
-  return E ? E = !1 : O(!0), k(e)
+  return E ? E = !1 : O(!0), j(e)
 }
 
 function B(e) {
   return U(e)
 }
 
-function F(e) {
+function V(e) {
   let {
     guildMembers: t
   } = e, n = !1;
@@ -222,7 +222,7 @@ function F(e) {
   }), n
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     members: n
@@ -394,8 +394,8 @@ g(X, "displayName", "MemberSafetyStore");
 let J = new X(o.Z, {
   CONNECTION_OPEN: G,
   CONNECTION_OPEN_SUPPLEMENTAL: B,
-  LOCAL_MESSAGES_LOADED: V,
-  CACHE_LOADED: F,
+  LOCAL_MESSAGES_LOADED: F,
+  CACHE_LOADED: V,
   PASSIVE_UPDATE_V2: Z,
   GUILD_CREATE: S,
   GUILD_DELETE: I,
@@ -406,7 +406,7 @@ let J = new X(o.Z, {
   GUILD_MEMBER_REMOVE: R,
   GUILD_ROLE_UPDATE: P,
   GUILD_ROLE_DELETE: P,
-  GUILD_MEMBER_PROFILE_UPDATE: j,
+  GUILD_MEMBER_PROFILE_UPDATE: k,
   GUILD_ROLE_MEMBER_REMOVE: D,
   GUILD_ROLE_MEMBER_ADD: D,
   THREAD_MEMBER_LIST_UPDATE: w,

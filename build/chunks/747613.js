@@ -88,7 +88,7 @@ let P = 20,
   x = (0, b.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
   M = (0, b.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
 
-function j(e) {
+function k(e) {
   switch (d.Z.convert.toCodePoint(e)) {
     case "1f3fb":
       return O.NW.string(O.t.BVK5b2);
@@ -104,7 +104,7 @@ function j(e) {
       return O.NW.string(O.t.bGN1o6)
   }
 }
-let k = e => {
+let j = e => {
     let {
       fade: t,
       surrogate: n,
@@ -124,7 +124,7 @@ let k = e => {
       onClick: () => i(n),
       className: S.diversityEmojiItem,
       children: (0, r.jsx)(c.animated.div, {
-        "aria-label": j(n),
+        "aria-label": k(n),
         className: S.diversityEmojiItemImage,
         style: T({
           backgroundImage: 'url("'.concat(l, '")')
@@ -166,7 +166,7 @@ let k = e => {
             }),
             style: f,
             role: "listbox",
-            children: _.map((e, t) => (0, r.jsx)(k, {
+            children: _.map((e, t) => (0, r.jsx)(j, {
               index: t,
               fade: 0 !== t,
               delay: t * P,

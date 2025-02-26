@@ -34,17 +34,17 @@ var r = n(147018),
   L = _.set,
   x = _.getterFor(D),
   M = _.getterFor(w),
-  j = Object.getOwnPropertyDescriptor,
-  k = function(e) {
+  k = Object.getOwnPropertyDescriptor,
+  j = function(e) {
     if (!s) return i[e];
-    var t = j(i, e);
+    var t = k(i, e);
     return t && t.value
   },
-  U = k("fetch"),
-  G = k("Request"),
-  B = k("Headers"),
-  F = G && G.prototype,
-  V = B && B.prototype,
+  U = j("fetch"),
+  G = j("Request"),
+  B = j("Headers"),
+  V = G && G.prototype,
+  F = B && B.prototype,
   Z = i.RegExp,
   H = i.TypeError,
   W = i.decodeURIComponent,
@@ -240,8 +240,8 @@ if (d(ep, {
   }, {
     URLSearchParams: ef
   }), !l && m(B)) {
-  var e_ = a(V.has),
-    eh = a(V.set),
+  var e_ = a(F.has),
+    eh = a(F.set),
     em = function(e) {
       if (y(e)) {
         var t, n = e.body;
@@ -263,9 +263,9 @@ if (d(ep, {
       }
     }), m(G)) {
     var eg = function(e) {
-      return h(this, F), new G(e, arguments.length > 1 ? em(arguments[1]) : {})
+      return h(this, V), new G(e, arguments.length > 1 ? em(arguments[1]) : {})
     };
-    F.constructor = eg, eg.prototype = F, r({
+    V.constructor = eg, eg.prototype = V, r({
       global: !0,
       constructor: !0,
       dontCallGetSet: !0,

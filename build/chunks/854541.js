@@ -4,7 +4,7 @@ n.d(t, {
   AG: () => w,
   Z$: () => M,
   jH: () => L,
-  zH: () => j
+  zH: () => k
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -226,14 +226,14 @@ function x(e) {
         input: t
       }), o(n)
     },
-    j = async () => {
+    k = async () => {
       if (null != T) try {
         let {
           sRGBHex: e
         } = await T.open();
         M(e)
       } catch (e) {}
-    }, k = i.useCallback(e => {
+    }, j = i.useCallback(e => {
       x(t => I(O({}, t), {
         pending: e,
         input: e.hex
@@ -244,7 +244,7 @@ function x(e) {
       children: [(0, r.jsx)(i.Suspense, {
         fallback: null,
         children: (0, r.jsx)(A, {
-          onChange: k,
+          onChange: j,
           onChangeComplete: e => {
             let {
               hex: t
@@ -256,7 +256,7 @@ function x(e) {
       }), f, (0, r.jsxs)("div", {
         className: b.customColorPickerInputContainer,
         children: [E && null != T && (0, r.jsx)(g.JO, {
-          onClick: j,
+          onClick: k,
           tooltip: v.NW.string(v.t["0dU9Nz"]),
           tooltipPosition: "top",
           className: b.customColorPickerEyeDropper,
@@ -287,7 +287,7 @@ function x(e) {
 }
 let M = i.memo(x);
 
-function j(e) {
+function k(e) {
   let {
     className: t,
     defaultColor: n,

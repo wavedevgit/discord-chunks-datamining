@@ -78,22 +78,22 @@ let D = i.memo(function(e) {
     profileViewedAnalytics: D,
     userId: w
   } = e, L = null == n ? void 0 : n.identityGuildId, x = (0, g.Cc)(null != L ? L : null), M = null == n ? void 0 : n.tag, {
-    newestAnalyticsLocation: j
-  } = (0, l.ZP)(), k = i.useMemo(() => A({
+    newestAnalyticsLocation: k
+  } = (0, l.ZP)(), j = i.useMemo(() => A({
     tagUserId: w,
-    source: j
-  }, D), [w, j, D]), U = (0, a.e7)([p.default], () => p.default.getId()), G = (0, a.e7)([_.ZP], () => null != L ? _.ZP.getMember(L, U) : null, [L, U]), B = (0, a.e7)([u.Z], () => {
+    source: k
+  }, D), [w, k, D]), U = (0, a.e7)([p.default], () => p.default.getId()), G = (0, a.e7)([_.ZP], () => null != L ? _.ZP.getMember(L, U) : null, [L, U]), B = (0, a.e7)([u.Z], () => {
     var e;
     return (null == x ? void 0 : x.id) != null && (null === (e = u.Z.getRequest(x.id)) || void 0 === e ? void 0 : e.applicationStatus) === c.wB.SUBMITTED
-  }), F = null != x && x.memberCount >= O.Du, V = (0, a.e7)([h.default], () => h.default.getUser(U), [U]), Z = (null == G ? void 0 : G.joinedAt) != null, H = (0, v.Z4)(L, null == V ? void 0 : V.primaryGuild), W = null != (0, d.Z)(L);
+  }), V = null != x && x.memberCount >= O.Du, F = (0, a.e7)([h.default], () => h.default.getUser(U), [U]), Z = (null == G ? void 0 : G.joinedAt) != null, H = (0, v.Z4)(L, null == F ? void 0 : F.primaryGuild), W = null != (0, d.Z)(L);
   i.useEffect(() => {
     null != L && (0, m.u0)(R(A({
       guildId: L,
       hasJoinRequest: W
-    }, k), {
+    }, j), {
       location: s.Z.CLAN_GUILD_PROFILE
     }))
-  }, [L, W, k]);
+  }, [L, W, j]);
   let Y = i.useCallback(e => {
       null != L && (e.stopPropagation(), e.preventDefault(), null == C || C(), (0, m.hM)(L, m.UE.TAG_ADOPTION), (0, E.SJ)(L))
     }, [L, C]),
@@ -154,7 +154,7 @@ let D = i.memo(function(e) {
       className: T.cardContainer,
       isMember: Z,
       hasPendingJoinRequest: B,
-      atMaxMemberCapacity: F
+      atMaxMemberCapacity: V
     }), J && (0, r.jsx)("div", {
       className: T.buttonGroupContainer,
       children: null != Q && Q

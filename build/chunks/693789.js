@@ -151,13 +151,13 @@ function I(e) {
     onMouseEnter: L,
     onMouseLeave: x,
     onKeyDown: M,
-    children: j,
-    rel: k,
+    children: k,
+    rel: j,
     buttonRef: U,
     focusProps: G,
     "aria-label": B,
-    submittingStartedLabel: F,
-    submittingFinishedLabel: V
+    submittingStartedLabel: V,
+    submittingFinishedLabel: F
   } = e, Z = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
   let H = h || E,
     W = H && (null != L || null != x),
@@ -165,8 +165,8 @@ function I(e) {
     K = O(G, t),
     z = i.useRef(!1);
   i.useEffect(() => {
-    !0 === E && (z.current = !0, l.u.announce(null != F ? F : d.NW.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != V ? V : d.NW.string(d.t.SVPara))
-  }, [E, F, V]);
+    !0 === E && (z.current = !0, l.u.announce(null != V ? V : d.NW.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != F ? F : d.NW.string(d.t.SVPara))
+  }, [E, V, F]);
   let q = (0, r.jsx)(c.t, m(_({}, G), {
     offset: K,
     children: (0, r.jsxs)("button", m(_({}, H ? null : Z), {
@@ -183,7 +183,7 @@ function I(e) {
       type: I,
       disabled: h,
       style: T,
-      rel: k,
+      rel: j,
       className: a()(A, S({
         look: t,
         color: n,
@@ -199,7 +199,7 @@ function I(e) {
         itemClassName: f.spinnerItem
       }) : null, (0, r.jsx)("div", {
         className: a()(f.contents, C),
-        children: j
+        children: k
       })]
     }))
   }));

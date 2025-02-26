@@ -188,12 +188,12 @@ var m = {
       return t ? t + " " + r : r
     }, "")
   },
-  j = function(e, t) {
+  k = function(e, t) {
     return void 0 === t && (t = {}), Object.keys(e).reduce(function(t, n) {
       return t[y[n] || n] = e[n], t
     }, t)
   },
-  k = function(e, t) {
+  j = function(e, t) {
     return t.map(function(t, n) {
       var i, o = ((i = {
         key: n
@@ -214,7 +214,7 @@ var m = {
             var e, n, i, o;
             return n = t.titleAttributes, (i = {
               key: e = t.title
-            })["data-rh"] = !0, o = j(n, i), [r.createElement(m.TITLE, o, e)]
+            })["data-rh"] = !0, o = k(n, i), [r.createElement(m.TITLE, o, e)]
           }, toString: function() {
             return function(e, t, n, r) {
               var i = M(n),
@@ -227,7 +227,7 @@ var m = {
       case "htmlAttributes":
         return {
           toComponent: function() {
-            return j(t)
+            return k(t)
           }, toString: function() {
             return M(t)
           }
@@ -235,7 +235,7 @@ var m = {
       default:
         return {
           toComponent: function() {
-            return k(e, t)
+            return j(e, t)
           }, toString: function() {
             return function(e, t, n) {
               return t.reduce(function(t, r) {
@@ -284,7 +284,7 @@ var m = {
         return {
           priorityMethods: {
             toComponent: function() {
-              return [].concat(k(m.META, i.priority), k(m.LINK, o.priority), k(m.SCRIPT, a.priority))
+              return [].concat(j(m.META, i.priority), j(m.LINK, o.priority), j(m.SCRIPT, a.priority))
             },
             toString: function() {
               return U(m.META, i.priority, r) + " " + U(m.LINK, o.priority, r) + " " + U(m.SCRIPT, a.priority, r)
@@ -314,7 +314,7 @@ var m = {
     }
   },
   B = [],
-  F = function(e, t) {
+  V = function(e, t) {
     var n = this;
     void 0 === t && (t = "undefined" != typeof document), this.instances = [], this.value = {
       setHelmet: function(e) {
@@ -346,7 +346,7 @@ var m = {
       titleAttributes: {}
     }))
   },
-  V = r.createContext({}),
+  F = r.createContext({}),
   Z = o().shape({
     setHelmet: o().func,
     helmetInstances: o().shape({
@@ -359,10 +359,10 @@ var m = {
   W = function(e) {
     function t(n) {
       var r;
-      return (r = e.call(this, n) || this).helmetData = new F(r.props.context, t.canUseDOM), r
+      return (r = e.call(this, n) || this).helmetData = new V(r.props.context, t.canUseDOM), r
     }
     return p(t, e), t.prototype.render = function() {
-      return r.createElement(V.Provider, {
+      return r.createElement(F.Provider, {
         value: this.helmetData.value
       }, this.props.children)
     }, t
@@ -595,10 +595,10 @@ var X = ["children"],
         n = h(e, J),
         i = f({}, n),
         o = n.helmetData;
-      return t && (i = this.mapChildrenToProps(t, i)), !o || o instanceof F || (o = new F(o.context, o.instances)), o ? r.createElement(Q, f({}, i, {
+      return t && (i = this.mapChildrenToProps(t, i)), !o || o instanceof V || (o = new V(o.context, o.instances)), o ? r.createElement(Q, f({}, i, {
         context: o.value,
         helmetData: void 0
-      })) : r.createElement(V.Consumer, null, function(e) {
+      })) : r.createElement(F.Consumer, null, function(e) {
         return r.createElement(Q, f({}, i, {
           context: e
         }))

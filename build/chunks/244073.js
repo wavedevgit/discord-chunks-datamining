@@ -23,12 +23,12 @@ var i = n(200651),
   b = n(699516),
   S = n(594174),
   x = n(979651),
-  Z = n(362446),
-  E = n(518084),
+  E = n(362446),
+  j = n(518084),
   N = n(981631),
-  j = n(388032),
-  C = n(204346),
-  I = n(347363);
+  C = n(388032),
+  I = n(204346),
+  Z = n(347363);
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,7 +78,7 @@ class T extends r.PureComponent {
         t.stopPropagation(), u.Z.channelListScrollTo(o, e.id)
       },
       children: (0, i.jsx)(m.Z, {
-        className: I.channel,
+        className: Z.channel,
         children: r
       })
     })
@@ -97,15 +97,15 @@ class T extends r.PureComponent {
       deaf: h,
       mute: p
     } = this.props;
-    return null == o ? null : (0, i.jsx)(E.ZP.Bar, {
-      className: s()(e, C.controls, {
-        [C.unpinned]: !n
+    return null == o ? null : (0, i.jsx)(j.ZP.Bar, {
+      className: s()(e, I.controls, {
+        [I.unpinned]: !n
       }),
-      children: (0, i.jsxs)(E.ZP.Content, {
-        className: s()(t, C.content),
+      children: (0, i.jsxs)(j.ZP.Content, {
+        className: s()(t, I.content),
         dynamicSize: !0,
         children: [(0, i.jsx)("div", {
-          className: I.inner,
+          className: Z.inner,
           children: (0, i.jsx)(c.yRy, {
             renderPopout: () => this.renderPopout(o.id),
             position: "top",
@@ -123,17 +123,17 @@ class T extends r.PureComponent {
         }), (0, i.jsxs)(f.Z, {
           grow: 0,
           children: [(0, i.jsx)(g.Z, {
-            tooltipText: p ? j.NW.string(j.t.YqAjX1) : j.NW.string(j.t["w4m94+"]),
+            tooltipText: p ? C.NW.string(C.t.YqAjX1) : C.NW.string(C.t["w4m94+"]),
             icon: p ? c.nRN : c.S6n,
-            iconForeground: p ? C.strikethrough : null,
+            iconForeground: p ? I.strikethrough : null,
             onClick: this.handleToggleSelfMute
           }), (0, i.jsx)(g.Z, {
-            tooltipText: h ? j.NW.string(j.t["2US87+"]) : j.NW.string(j.t.wjcRFR),
+            tooltipText: h ? C.NW.string(C.t["2US87+"]) : C.NW.string(C.t.wjcRFR),
             icon: h ? c.wE8 : c.VWR,
             onClick: this.handleToggleSelfDeaf,
-            iconForeground: h ? C.strikethrough : null
+            iconForeground: h ? I.strikethrough : null
           }), null == r && (0, i.jsx)(g.Z, {
-            tooltipText: j.NW.string(j.t["6vrfgo"]),
+            tooltipText: C.NW.string(C.t["6vrfgo"]),
             onClick: this.handleDisconnect,
             icon: c.gkL
           })]
@@ -194,7 +194,7 @@ function D(e) {
   let s = (0, a.e7)([v.Z], () => v.Z.getGuild(null == r ? void 0 : r.getGuildId())),
     l = (0, a.e7)([x.Z], () => null != r && x.Z.hasVideo(r.id)),
     [c, d] = (0, a.Wu)([O.Z], () => [O.Z.isSelfMute(t) || O.Z.isSelfMutedTemporarily(t), O.Z.isSelfDeaf(t)]),
-    [u, h, p] = (0, a.Wu)([Z.Z], () => [Z.Z.getConnectionState(n), Z.Z.getLastPing(n), Z.Z.getQuality(n)]);
+    [u, h, p] = (0, a.Wu)([E.Z], () => [E.Z.getConnectionState(n), E.Z.getLastPing(n), E.Z.getQuality(n)]);
   return (0, i.jsx)(T, k(w({}, o), {
     context: t,
     lobbyId: n,

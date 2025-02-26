@@ -1,26 +1,24 @@
 /** Chunk was on 89792 **/
 r.r(t), r.d(t, {
-  default: () => a
+  default: () => s
 }), r(47120);
 var n = r(200651),
   u = r(192379),
-  d = r(855095);
-let s = window.GLOBAL_ENV.PUBLIC_PATH;
-s.endsWith("/") && (s = s.substring(0, s.length - 1)), d.OGVLoader.base = s;
-let a = u.forwardRef(function(e, t) {
+  d = r(399882);
+let s = u.forwardRef(function(e, t) {
   let {
     className: r,
     src: s,
     playing: a,
-    preload: l = "",
-    onEnded: f,
+    preload: f = "",
+    onEnded: l,
     onLoadedMetadata: i,
     onError: o,
     muted: c,
     volume: v
   } = e, E = u.useRef(null), [p] = u.useState(() => {
-    let e = new d.OGVPlayer;
-    return e.preload = l, e.controls = !1, e
+    let e = new d.Z.OGVPlayer;
+    return e.preload = f, e.controls = !1, e
   });
   return u.useImperativeHandle(t, () => p, [p]), u.useEffect(() => {
     let e = E.current;
@@ -30,8 +28,8 @@ let a = u.forwardRef(function(e, t) {
   }, [p]), u.useEffect(() => {
     p.src = s
   }, [p, s]), u.useEffect(() => {
-    p.preload = l
-  }, [p, l]), u.useEffect(() => {
+    p.preload = f
+  }, [p, f]), u.useEffect(() => {
     void 0 !== a && (a ? setTimeout(() => {
       p.play()
     }, 0) : setTimeout(() => {
@@ -42,10 +40,10 @@ let a = u.forwardRef(function(e, t) {
   }, [p, c]), u.useEffect(() => {
     void 0 !== v && (p.volume = v)
   }, [p, v]), u.useEffect(() => {
-    if (null != f) return p.addEventListener("ended", f), () => {
-      p.removeEventListener("ended", f)
+    if (null != l) return p.addEventListener("ended", l), () => {
+      p.removeEventListener("ended", l)
     }
-  }, [p, f]), u.useEffect(() => {
+  }, [p, l]), u.useEffect(() => {
     if (null != i) return p.addEventListener("loadedmetadata", i), () => {
       p.removeEventListener("loadedmetadata", i)
     }

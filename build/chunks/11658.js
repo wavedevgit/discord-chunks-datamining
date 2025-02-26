@@ -1,7 +1,8 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  KV: () => b,
-  ZP: () => h
+  KV: () => j,
+  ZP: () => _,
+  _R: () => h
 });
 var r = t(200651),
   i = t(120356),
@@ -17,7 +18,7 @@ var r = t(200651),
   m = t(78555),
   p = t(355135);
 
-function j(e) {
+function b(e) {
   let n, {
     active: t,
     nextActive: i,
@@ -41,7 +42,7 @@ function j(e) {
   })
 }
 
-function b(e) {
+function j(e) {
   var n, t;
   let {
     index: i
@@ -64,21 +65,49 @@ function b(e) {
 }
 
 function h(e) {
+  let {
+    powerup: n
+  } = e, {
+    onActivate: t
+  } = (0, u.Z)(n);
+  return (0, r.jsxs)(s.zxk, {
+    onClick: t,
+    fullWidth: !0,
+    className: m.button,
+    innerClassName: m.buttonInner,
+    color: n.active ? s.Ttl.PRIMARY : s.Ttl.BRAND,
+    children: [v.NW.string(n.active ? x.Z.PYPdl5 : x.Z.AOQgkp), !n.active && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)("span", {
+        className: m.dot,
+        children: "•"
+      }), (0, r.jsx)(l.Z, {
+        className: m.boost,
+        width: 16,
+        height: 16,
+        fill: "white"
+      }), " ", (0, r.jsx)("span", {
+        className: m.cost,
+        children: n.cost
+      })]
+    })]
+  })
+}
+
+function _(e) {
   let n, {
       index: t,
       powerup: i,
       nextPowerup: o
     } = e,
     {
-      onActivate: c,
-      onShowMore: l
+      onShowMore: s
     } = (0, u.Z)(i);
   return n = 0 === t ? "start" : null == o ? "end" : "middle", (0, r.jsxs)(d.Z, {
     label: i.title,
-    onClick: l,
+    onClick: s,
     active: i.active,
     className: m.card,
-    children: [(0, r.jsx)(j, {
+    children: [(0, r.jsx)(b, {
       position: n,
       active: i.active,
       nextActive: null == o ? void 0 : o.active
@@ -87,14 +116,10 @@ function h(e) {
       children: [(0, r.jsx)(a.X6, {
         variant: "heading-md/bold",
         children: i.title
-      }), (0, r.jsx)(b, {
+      }), (0, r.jsx)(j, {
         index: t
-      }), (0, r.jsx)(s.zxk, {
-        onClick: c,
-        fullWidth: !0,
-        className: m.button,
-        color: i.active ? s.Ttl.PRIMARY : s.Ttl.BRAND,
-        children: v.NW.string(i.active ? x.Z.R3ZG5O : x.Z.adzkaW)
+      }), (0, r.jsx)(h, {
+        powerup: i
       })]
     })]
   })

@@ -35,15 +35,15 @@ function C(e) {
     id: t,
     size: n,
     locked: C,
-    padding: Z,
-    borderWidth: N,
+    padding: N,
+    borderWidth: Z,
     opacity: w,
     horizontal: _,
     pinned: P,
     anchorTop: T,
-    anchorLeft: A,
-    showEmpty: D = !0
-  } = e, k = 2 * Z + 2 * N, {
+    anchorLeft: D,
+    showEmpty: A = !0
+  } = e, k = 2 * N + 2 * Z, {
     width: L,
     height: R
   } = {
@@ -57,7 +57,7 @@ function C(e) {
     var e;
     let n = g.Z.getWidget(t);
     return !!(0, b.ZL)(n) && (null === (e = n.meta.showAllStreams) || void 0 === e || e)
-  }, [t]), F = !_, G = (0, o.e7)([m.Z], () => m.Z.getChannel(M)), Y = (0, o.e7)([f.default], () => f.default.getId()), B = T && F || A && _, H = !T && F || !A && _, {
+  }, [t]), F = !_, G = (0, o.e7)([m.Z], () => m.Z.getChannel(M)), Y = (0, o.e7)([f.default], () => f.default.getId()), B = T && F || D && _, H = !T && F || !D && _, {
     participantsVersion: Q,
     activeStreams: K,
     streamParticipants: X
@@ -115,7 +115,7 @@ function C(e) {
     height: R,
     sizeOffset: k,
     layout: et,
-    padding: Z,
+    padding: N,
     participants: X.length
   };
   return (! function(e) {
@@ -220,7 +220,7 @@ function C(e) {
     a.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !q)
   }, [q]), (0, c.ZP)(() => () => {
     a.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-  }), q && C) ? null : q && !C ? D ? C ? null : (0, i.jsx)(v.E, {
+  }), q && C) ? null : q && !C ? A ? C ? null : (0, i.jsx)(v.E, {
     emptyText: x.NW.string(x.t["T6+rX1"]),
     icon: l.hGI,
     absolute: !0

@@ -100,7 +100,7 @@ function M(e) {
   o()(null != n, "Window root was null while unmounting"), n.unmount(), delete T[e], delete I[e], delete A[e], delete N[e]
 }
 
-function j(e, t, r) {
+function k(e, t, r) {
   let i = e.document,
     a = new URL(t).origin,
     s = new URL("".concat(window.location.protocol, "//").concat(window.location.host)).origin,
@@ -113,8 +113,8 @@ function j(e, t, r) {
   c.href = t, c.rel = "stylesheet", c.integrity = r, o()(null != i.head, "Document head was null"), i.head.appendChild(c)
 }
 
-function k(e, t) {
-  for (let e of document.querySelectorAll('link[rel="stylesheet"]')) j(t, e.href, e.integrity)
+function j(e, t) {
+  for (let e of document.querySelectorAll('link[rel="stylesheet"]')) k(t, e.href, e.integrity)
 }
 
 function U(e) {
@@ -125,7 +125,7 @@ function U(e) {
     return
   }
   let r = t.document;
-  (0, h.uF)(r, P), t.addEventListener("focus", P), t.addEventListener("blur", P), t.addEventListener("resize", D), w ? L(e, t) : k(e, t);
+  (0, h.uF)(r, P), t.addEventListener("focus", P), t.addEventListener("blur", P), t.addEventListener("resize", D), w ? L(e, t) : j(e, t);
   let i = (0, l.createRoot)(r.getElementById(R));
   o()(null != i, "No render target for popout!"), N[e] = i, i.render(n(e))
 }
@@ -170,14 +170,14 @@ function B(e) {
   C.has(e) && (U(e), C.delete(e), q.emitChange())
 }
 
-function F(e) {
+function V(e) {
   let t = T[e];
   null != t && (t.closed || x(e), M(e), setTimeout(() => {
     Z(t)
   }, 100), q.emitChange())
 }
 
-function V(e) {
+function F(e) {
   let {
     data: t
   } = e;
@@ -187,7 +187,7 @@ function V(e) {
     case g.l9w.LOADED:
       return B(n.key);
     case g.l9w.UNLOADED:
-      return F(n.key)
+      return V(n.key)
   }
 }
 
@@ -226,11 +226,11 @@ function K(e) {
     url: t,
     integrity: n
   } = e;
-  for (let e of Object.values(T)) null == e || e.closed || j(e, t, n)
+  for (let e of Object.values(T)) null == e || e.closed || k(e, t, n)
 }
 class z extends(r = c.ZP.PersistedStore) {
   initialize(e) {
-    window.addEventListener("message", V), window.addEventListener("beforeunload", W), S = null != e ? e : {}
+    window.addEventListener("message", F), window.addEventListener("beforeunload", W), S = null != e ? e : {}
   }
   getWindow(e) {
     return T[e]
@@ -265,7 +265,7 @@ class z extends(r = c.ZP.PersistedStore) {
     return null != T[e] && null != N[e] && null != A[e]
   }
   unmountWindow(e) {
-    return this.isWindowFullyInitialized(e) || O.warn("Attempted to unmount partially initialized window ".concat(e)), F(e)
+    return this.isWindowFullyInitialized(e) || O.warn("Attempted to unmount partially initialized window ".concat(e)), V(e)
   }
 }
 E(z, "displayName", "PopoutWindowStore"), E(z, "persistKey", "PopoutWindowStore");

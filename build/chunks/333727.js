@@ -42,7 +42,7 @@ function p(e, t, n, p) {
         channelId: e.id,
         type: c.mFx.JOIN,
         activity: p,
-        location: l.Z.isLocked((0, s.QF)()) ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
+        location: l.default.isLocked((0, s.getPID)()) ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
       }), O("join"), r.Z.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {

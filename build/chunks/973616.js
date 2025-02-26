@@ -147,7 +147,7 @@ class m extends h {
     }))
   }
   mergeFromApplicationUpdate(e) {
-    var t, n, r, i, o, a, s, l, c, d, f, p, _, h, g, E, v, b, y, O, S, I, T, N, A, C, R, P, D, w, L, x, M, j, k, U, G, B, F, V, Z, H;
+    var t, n, r, i, o, a, s, l, c, d, f, p, _, h, g, E, v, b, y, O, S, I, T, N, A, C, R, P, D, w, L, x, M, k, j, U, G, B, V, F, Z, H;
     return new m({
       id: null !== (t = e.id) && void 0 !== t ? t : this.id,
       name: null !== (n = e.name) && void 0 !== n ? n : this.name,
@@ -182,13 +182,13 @@ class m extends h {
       roleConnectionsVerificationUrl: null !== (L = e.roleConnectionsVerificationUrl) && void 0 !== L ? L : this.roleConnectionsVerificationUrl,
       integrationTypesConfig: null !== (x = e.integrationTypesConfig) && void 0 !== x ? x : this.integrationTypesConfig,
       isMonetized: null !== (M = e.isMonetized) && void 0 !== M ? M : this.isMonetized,
-      storefront_available: null !== (j = e.storefront_available) && void 0 !== j ? j : this.storefront_available,
-      termsOfServiceUrl: null !== (k = e.termsOfServiceUrl) && void 0 !== k ? k : this.termsOfServiceUrl,
+      storefront_available: null !== (k = e.storefront_available) && void 0 !== k ? k : this.storefront_available,
+      termsOfServiceUrl: null !== (j = e.termsOfServiceUrl) && void 0 !== j ? j : this.termsOfServiceUrl,
       privacyPolicyUrl: null !== (U = e.privacyPolicyUrl) && void 0 !== U ? U : this.privacyPolicyUrl,
       isVerified: null !== (G = e.isVerified) && void 0 !== G ? G : this.isVerified,
       customInstallUrl: null !== (B = e.customInstallUrl) && void 0 !== B ? B : this.customInstallUrl,
-      installParams: null !== (F = e.installParams) && void 0 !== F ? F : this.installParams,
-      isDiscoverable: null !== (V = e.isDiscoverable) && void 0 !== V ? V : this.isDiscoverable,
+      installParams: null !== (V = e.installParams) && void 0 !== V ? V : this.installParams,
+      isDiscoverable: null !== (F = e.isDiscoverable) && void 0 !== F ? F : this.isDiscoverable,
       directoryEntry: null !== (Z = e.directoryEntry) && void 0 !== Z ? Z : this.directoryEntry,
       categories: null !== (H = e.categories) && void 0 !== H ? H : this.categories
     })

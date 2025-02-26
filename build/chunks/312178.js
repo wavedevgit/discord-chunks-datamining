@@ -184,7 +184,7 @@ class x extends r.PureComponent {
           lastLayoutUpdate: l
         }
       } = this;
-      if (!(0, f.Te)(o)) return;
+      if (!(0, f.validResolution)(o)) return;
       let a = (0, p.jL)(n, o),
         u = (0, p.Ox)(i, o);
       (0, s.Os)(t), (0, s.nv)({
@@ -211,7 +211,7 @@ class x extends r.PureComponent {
       let {
         layoutSize: t
       } = this.props;
-      (0, f.Te)(t) && (0, s.Os)(e)
+      (0, f.validResolution)(t) && (0, s.Os)(e)
     }), b(this, "handleDragStart", () => {
       let {
         widget: e
@@ -229,21 +229,21 @@ class x extends r.PureComponent {
     })
   }
 }
-let Z = o.ZP.connectStores([d.Z, u.Z], e => {
+let E = o.ZP.connectStores([d.Z, u.default], e => {
   let {
     widgetId: t
-  } = e, n = d.Z.getWidget(t), i = u.Z.getActiveRegions();
+  } = e, n = d.Z.getWidget(t), i = u.default.getActiveRegions();
   return {
     widget: n,
     widgetConfig: null != n ? d.Z.getWidgetConfig(n.type) : null,
-    locked: u.Z.isInstanceLocked(),
-    isPreviewingInGame: u.Z.isPreviewingInGame(),
+    locked: u.default.isInstanceLocked(),
+    isPreviewingInGame: u.default.isPreviewingInGame(),
     isActiveRegion: null != n && n.type === O.Odu.TEXT && i.has(O.O0n.TEXT_WIDGET)
   }
 })(x);
 
-function E(e, t) {
-  return (0, i.jsx)(Z, {
+function j(e, t) {
+  return (0, i.jsx)(E, {
     widgetId: e,
     layoutSize: t
   }, e)
@@ -251,8 +251,8 @@ function E(e, t) {
 let N = o.ZP.connectStores([d.Z, h.Z], () => {
   var e;
   return {
-    layout: null !== (e = d.Z.getLayout(f.qU)) && void 0 !== e ? e : void 0,
+    layout: null !== (e = d.Z.getLayout(f.OVERLAY_LAYOUT_ID)) && void 0 !== e ? e : void 0,
     layoutSize: h.Z.windowSize(),
-    renderWidget: E
+    renderWidget: j
   }
 })(a.Z)

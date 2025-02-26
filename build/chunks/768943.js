@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(411104), n(47120);
 var r, i = n(442837),
   o = n(759174),
@@ -187,7 +187,7 @@ function M(e) {
   m = !0
 }
 
-function j(e) {
+function k(e) {
   let {
     channels: t
   } = e;
@@ -197,7 +197,7 @@ function j(e) {
   return n
 }
 
-function k(e) {
+function j(e) {
   let {
     channel: t
   } = e;
@@ -268,7 +268,7 @@ class B extends(r = i.ZP.Store) {
   }
 }
 u(B, "displayName", "SavedMessagesStore");
-let F = new B(a.Z, {
+let V = new B(a.Z, {
   POST_CONNECTION_OPEN: T,
   LOGOUT: N,
   SAVED_MESSAGES_UPDATE: A,
@@ -281,8 +281,8 @@ let F = new B(a.Z, {
   GUILD_UPDATE: x,
   GUILD_DELETE: x,
   CHANNEL_CREATE: M,
-  CHANNEL_UPDATES: j,
-  CHANNEL_DELETE: k,
+  CHANNEL_UPDATES: k,
+  CHANNEL_DELETE: j,
   GUILD_MEMBER_UPDATE: U,
   GUILD_ROLE_CREATE: x,
   GUILD_ROLE_UPDATE: x,

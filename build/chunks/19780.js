@@ -203,7 +203,7 @@ function M(e) {
   N()
 }
 
-function j(e) {
+function k(e) {
   let {
     channelId: t
   } = e;
@@ -211,7 +211,7 @@ function j(e) {
   N()
 }
 
-function k(e) {
+function j(e) {
   return e.state === _.$7l.ACTIVE && null != r && r.resetBackoff("App state is active"), !1
 }
 
@@ -227,7 +227,7 @@ function B(e) {
   return e.connection === r
 }
 
-function F(e) {
+function V(e) {
   let {
     userId: t,
     context: n,
@@ -236,7 +236,7 @@ function F(e) {
   null == r || r.setSimulcastDebugOverride(t, n, i)
 }
 
-function V(e) {
+function F(e) {
   let {
     streamId: t,
     width: n,
@@ -340,9 +340,9 @@ let H = new Z(s.Z, __OVERLAY__ ? {} : {
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: G,
   RTC_CONNECTION_CLIENT_CONNECT: G,
   RTC_CONNECTION_CLIENT_DISCONNECT: G,
-  VIDEO_SIZE_UPDATE: V,
+  VIDEO_SIZE_UPDATE: F,
   VOICE_STATE_UPDATES: R,
-  VOICE_CHANNEL_SELECT: j,
+  VOICE_CHANNEL_SELECT: k,
   VOICE_SERVER_UPDATE: P,
   CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: D,
   REMOTE_SESSION_CONNECT: D,
@@ -351,8 +351,8 @@ let H = new Z(s.Z, __OVERLAY__ ? {} : {
   CHANNEL_DELETE: M,
   THREAD_DELETE: M,
   CALL_DELETE: x,
-  APP_STATE_UPDATE: k,
-  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F
+  APP_STATE_UPDATE: j,
+  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: V
 });
 Promise.resolve().then(n.bind(n, 626135)).then(e => {
   let {

@@ -137,7 +137,7 @@ class A extends i.PureComponent {
       error: e,
       info: t
     });
-    let r = (0, j.QF)();
+    let r = (0, j.getPID)();
     p.Z.setOverlayCrashed(r, e), p.Z.setInputLocked(!0, r);
     let i = S.Z.captureCrash(e, {
       extra: t
@@ -165,7 +165,7 @@ class A extends i.PureComponent {
         error: n,
         onLock: () => {
           var e;
-          let t = null !== (e = this.pid) && void 0 !== e ? e : (0, j.QF)();
+          let t = null !== (e = this.pid) && void 0 !== e ? e : (0, j.getPID)();
           p.Z.setInputLocked(!0, t), this.setState({
             showError: !1
           })
@@ -176,13 +176,13 @@ class A extends i.PureComponent {
         },
         onCrashDisabled: () => {
           var e;
-          let t = null !== (e = this.pid) && void 0 !== e ? e : (0, j.QF)();
+          let t = null !== (e = this.pid) && void 0 !== e ? e : (0, j.getPID)();
           p.Z.updateOverlayState(t, h.mM.OVERLAY_CRASHED_DISABLED), this.setState({
             showError: !1
           })
         },
         onReload: () => {
-          p.Z.setReloadOverlay((0, j.QF)()), this.setState({
+          p.Z.setReloadOverlay((0, j.getPID)()), this.setState({
             showError: !1
           })
         }

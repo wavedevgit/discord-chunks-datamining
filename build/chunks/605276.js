@@ -17,8 +17,8 @@ var t = l(200651),
   f = l(592125),
   x = l(375954),
   p = l(496675),
-  j = l(768581),
-  b = l(526120),
+  b = l(768581),
+  j = l(526120),
   C = l(825334),
   v = l(981631),
   _ = l(388032),
@@ -74,7 +74,8 @@ function N(e) {
   return (r.useEffect(() => {
     a()
   }, [a]), null == l) ? null : (0, t.jsx)(h.Z, {
-    profile: l
+    profile: l,
+    disableCTA: !0
   })
 }
 let y = r.memo(function(e) {
@@ -101,7 +102,7 @@ let y = r.memo(function(e) {
       })
     }, [n, Z]);
     let N = e => {
-      null != d && (e.shiftKey ? (0, b.C3)(d.guild_id, d.id) : g.Z.openResourceChannelAsSidebar({
+      null != d && (e.shiftKey ? (0, j.C3)(d.guild_id, d.id) : g.Z.openResourceChannelAsSidebar({
         guildId: d.guild_id,
         channelId: d.id
       }))
@@ -111,7 +112,7 @@ let y = r.memo(function(e) {
       onClick: e => N(e),
       children: (0, t.jsxs)(t.Fragment, {
         children: [(() => {
-          let e = j.ZP.getResourceChannelIconURL({
+          let e = b.ZP.getResourceChannelIconURL({
             channelId: n,
             icon: c
           });

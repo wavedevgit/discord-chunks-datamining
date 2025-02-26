@@ -110,7 +110,7 @@ function x(e) {
     observe: t = !0,
     className: n,
     children: l
-  } = e, a = i.useContext(j), s = (0, u.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(v.G.ClickZones)), c = (0, u.e7)([p.Z], () => p.Z.disableClickableRegions), [{
+  } = e, a = i.useContext(j), s = (0, u.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(v.G.ClickZones)), c = (0, u.e7)([p.default], () => p.default.disableClickableRegions), [{
     refHandler: d,
     setObserve: f
   }] = i.useState(() => {

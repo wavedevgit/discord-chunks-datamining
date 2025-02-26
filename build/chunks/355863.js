@@ -410,7 +410,7 @@ function R(e, t) {
   let r = n.findIndex(e => e.id === t);
   if (r === n.length - 1) return !1;
   n.push(n.splice(r, 1)[0]);
-  for (let e = 0; e < n.length; e++) k(n[e], e);
+  for (let e = 0; e < n.length; e++) j(n[e], e);
   return !0
 }
 
@@ -480,7 +480,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     widgetConfigs: t
   } = e;
@@ -498,7 +498,7 @@ function j(e) {
   })
 }
 
-function k(e, t) {
+function j(e, t) {
   i = v(g({}, i), {
     [e.id]: e.set("zIndex", t)
   })
@@ -525,20 +525,20 @@ function B(e) {
   }), t
 }
 
-function F(e) {
+function V(e) {
   let t = {};
   return s().forEach(e, (e, n) => {
     t[n] = new p.Z(e)
   }), t
 }
 
-function V(e) {
+function F(e) {
   var t;
   return null === (t = S[e]) || void 0 === t ? void 0 : t.defaultSettings
 }
 class Z extends(o = c.ZP.PersistedStore) {
   initialize(e) {
-    null != e && null != e.layouts && null != e.widgets ? (r = B(e.layouts), i = F(e.widgets)) : (r = {}, i = {});
+    null != e && null != e.layouts && null != e.widgets ? (r = B(e.layouts), i = V(e.widgets)) : (r = {}, i = {});
     let t = !1,
       n = [];
     s().forEach(S, (e, t) => {
@@ -614,7 +614,7 @@ class Z extends(o = c.ZP.PersistedStore) {
     return S[e]
   }
   getWidgetDefaultSettings(e) {
-    return V(e)
+    return F(e)
   }
   getWidgetType(e) {
     let t = i[e];
@@ -708,7 +708,7 @@ m(Z, "displayName", "LayoutStore"), m(Z, "persistKey", "LayoutStore"), m(Z, "mig
         return null != n && (null == o && n[1].type === h.Odu.VOICE && (o = n[0]), null == r && n[1].type === h.Odu.TEXT && (r = n[1].pinned), null != r && null != o || void 0)
       }), r || null == o) return;
     let a = (0, l.Z)();
-    n.widgets = [o, a], i.push([a, v(g({}, V(h.Odu.GUILDS_TEXT)), {
+    n.widgets = [o, a], i.push([a, v(g({}, F(h.Odu.GUILDS_TEXT)), {
       type: h.Odu.GUILDS_TEXT,
       id: a,
       layoutId: t,
@@ -756,6 +756,6 @@ let H = new Z(d.Z, {
   LAYOUT_SET_TOP_WIDGET: C,
   LAYOUT_DELETE_WIDGET: x,
   LAYOUT_DELETE_ALL_WIDGETS: M,
-  LAYOUT_CREATE_WIDGETS: j,
+  LAYOUT_CREATE_WIDGETS: k,
   LAYOUT_SET_WIDGET_META: P
 })

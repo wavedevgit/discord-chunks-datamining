@@ -15,13 +15,13 @@ n.d(t, {
   OW: () => ei,
   Ok: () => ed,
   Ou: () => G,
-  Pe: () => k,
+  Pe: () => j,
   QK: () => eO,
   QZ: () => S,
   R$: () => m,
   RS: () => e_,
   R_: () => eD,
-  Rt: () => ek,
+  Rt: () => ej,
   SE: () => eN,
   Sb: () => eb,
   Sh: () => eL,
@@ -29,7 +29,7 @@ n.d(t, {
   UP: () => eo,
   Wp: () => eI,
   Wz: () => eR,
-  Xc: () => j,
+  Xc: () => k,
   Xk: () => P,
   Xr: () => ea,
   YC: () => eU,
@@ -59,8 +59,8 @@ n.d(t, {
   jU: () => Q,
   kJ: () => Z,
   kU: () => X,
-  l4: () => ej,
-  mX: () => V,
+  l4: () => ek,
+  mX: () => F,
   nc: () => em,
   qF: () => D,
   rN: () => eg,
@@ -71,7 +71,7 @@ n.d(t, {
   x4: () => ep,
   xM: () => en,
   xq: () => K,
-  zA: () => F
+  zA: () => V
 }), n(47120);
 var r = n(442837),
   i = n(524437),
@@ -171,13 +171,13 @@ let O = (0, c.Zc)("notifications", "reactionNotifications", e => null != e ? e :
   })),
   x = "0",
   M = (0, c.Zc)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : x, e => e),
-  j = (0, c.Zc)("gameLibrary", "installShortcutDesktop", e => {
+  k = (0, c.Zc)("gameLibrary", "installShortcutDesktop", e => {
     var t;
     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
   }, e => o.D5.create({
     value: e
   })),
-  k = (0, c.Zc)("gameLibrary", "installShortcutStartMenu", e => {
+  j = (0, c.Zc)("gameLibrary", "installShortcutStartMenu", e => {
     var t;
     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
   }, e => o.D5.create({
@@ -196,8 +196,8 @@ let O = (0, c.Zc)("notifications", "reactionNotifications", e => null != e ? e :
     value: e
   })),
   B = [],
-  F = (0, c.Zc)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : B, e => e),
-  V = (0, c.Zc)("privacy", "defaultMessageRequestRestricted", e => null == e ? void 0 : e.value, e => o.D5.create({
+  V = (0, c.Zc)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : B, e => e),
+  F = (0, c.Zc)("privacy", "defaultMessageRequestRestricted", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e
   })),
   Z = (0, c.Zc)("privacy", "nonSpamRetrainingOptIn", e => null == e ? void 0 : e.value, e => null == e ? void 0 : o.D5.create({
@@ -521,6 +521,6 @@ let eb = (0, c.KM)((0, c.Zc)("appearance", "developerMode", e => null != e && e,
 }));
 let eM = (0, c.Zc)("appearance", "timestampHourCycle", e => null != e ? e : i.hg.AUTO, e => e);
 (0, c.Zc)("appearance", "launchPadMode", e => null != e ? e : i.l1.LAUNCH_PAD_DISABLED, e => e);
-let ej = (0, c.Zc)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e),
-  ek = (0, c.Zc)("safetySettings", "ignoreProfileSpeedbumpDisabled", e => null != e && e, e => e),
+let ek = (0, c.Zc)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e),
+  ej = (0, c.Zc)("safetySettings", "ignoreProfileSpeedbumpDisabled", e => null != e && e, e => e),
   eU = (0, c.Zc)("appearance", "uiDensity", e => e === i.Pi.UNSET_UI_DENSITY ? i.Pi.COMPACT : null != e ? e : i.Pi.COMPACT, e => e)

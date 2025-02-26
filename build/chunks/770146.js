@@ -1,21 +1,21 @@
-/** Chunk was on 51868 **/
-r.d(t, {
-  Z: () => c
+/** Chunk was on 53485 **/
+n.d(t, {
+  Z: () => l
 });
-var n = r(200651);
-r(192379);
-var l = r(120356),
-  a = r.n(l),
-  o = r(457911);
+var r = n(200651);
+n(192379);
+var i = n(120356),
+  s = n.n(i),
+  a = n(457911);
 
-function c(e) {
+function l(e) {
   let {
     children: t,
-    tag: r,
-    className: l
+    tag: n,
+    className: i
   } = e;
-  return r = null != r ? r : "h3", (0, n.jsx)(r, {
-    className: a()(o.title, l),
+  return n = null != n ? n : "h3", (0, r.jsx)(n, {
+    className: s()(a.title, i),
     children: t
   })
 }

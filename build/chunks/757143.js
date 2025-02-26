@@ -53,12 +53,12 @@ a("replace", function(e, t, n) {
       "" === p(D[0]) && (a.lastIndex = h(s, f(a.lastIndex), P))
     }
     for (var A = "", C = 0, R = 0; R < v.length; R++) {
-      for (var P, D, w, L = p((D = v[R])[0]), x = b(y(d(D.index), s.length), 0), M = [], j = 1; j < D.length; j++) S(M, N(D[j]));
-      var k = D.groups;
+      for (var P, D, w, L = p((D = v[R])[0]), x = b(y(d(D.index), s.length), 0), M = [], k = 1; k < D.length; k++) S(M, N(D[k]));
+      var j = D.groups;
       if (_) {
         var U = O([L], M, x, s);
-        void 0 !== k && S(U, k), w = p(r(i, void 0, U))
-      } else w = g(L, s, x, M, k, i);
+        void 0 !== j && S(U, j), w = p(r(i, void 0, U))
+      } else w = g(L, s, x, M, j, i);
       x >= C && (A += T(s, C, x) + w, C = x + L.length)
     }
     return A + T(s, C)

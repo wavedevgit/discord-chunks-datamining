@@ -67,17 +67,17 @@ var r = n(147018),
     })
   };
 b && (d(L, "code", M("code")), d(L, "message", M("message")), d(L, "name", M("name"))), c(L, "constructor", l(1, w));
-var j = a(function() {
+var k = a(function() {
     return !(new T instanceof I)
   }),
-  k = j || a(function() {
+  j = k || a(function() {
     return A.toString !== h || "2: 1" !== String(new T(1, 2))
   }),
-  U = j || a(function() {
+  U = k || a(function() {
     return 25 !== new T(1, "DataCloneError").code
   }),
-  G = j || 25 !== T[S] || 25 !== N[S],
-  B = y ? k || U || G : j;
+  G = k || 25 !== T[S] || 25 !== N[S],
+  B = y ? j || U || G : k;
 r({
   global: !0,
   constructor: !0,
@@ -85,14 +85,14 @@ r({
 }, {
   DOMException: B ? w : T
 });
-var F = o(O),
-  V = F.prototype;
-for (var Z in k && (y || T === F) && u(V, "toString", h), U && b && T === F && d(V, "code", x(function() {
+var V = o(O),
+  F = V.prototype;
+for (var Z in j && (y || T === V) && u(F, "toString", h), U && b && T === V && d(F, "code", x(function() {
     return D(_(this).name)
   })), g)
   if (f(g, Z)) {
     var H = g[Z],
       W = H.s,
       Y = l(6, H.c);
-    f(F, W) || c(F, W, Y), f(V, W) || c(V, W, Y)
+    f(V, W) || c(V, W, Y), f(F, W) || c(F, W, Y)
   }
