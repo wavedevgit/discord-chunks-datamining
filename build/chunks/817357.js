@@ -103,7 +103,7 @@ function j(e) {
     null != v && (P(!0), await (0, k.Ei)({
       rewardSkuIds: [v.skuId],
       subscriptionId: z.id
-    }) ? ((0, r.pTH)(), (0, m.Z)({
+    }) ? ((0, r.pTH)(), (0, k.es)(!1), (0, m.Z)({
       product: v,
       analyticsLocations: C,
       overrideTitle: x.NW.formatToPlainString(x.t.dTWbOz, {

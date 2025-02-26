@@ -1,8 +1,9 @@
 /** Chunk was on 53485 **/
 n.d(t, {
-  Ei: () => c,
-  He: () => o,
-  b2: () => l
+  Ei: () => d,
+  He: () => c,
+  b2: () => l,
+  es: () => o
 });
 var r = n(544891),
   i = n(570140),
@@ -30,7 +31,14 @@ async function l(e) {
     }), !1
   }
 }
-async function o(e) {
+
+function o(e) {
+  i.Z.dispatch({
+    type: "BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_SUCCESS",
+    eligible: e
+  })
+}
+async function c(e) {
   let {
     userTrialOffer: t,
     userDiscount: n,
@@ -52,7 +60,7 @@ async function o(e) {
     return []
   }
 }
-async function c(e) {
+async function d(e) {
   let {
     subscriptionId: t,
     rewardSkuIds: n
