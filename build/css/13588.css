@@ -1,6 +1,6 @@
 /**
   Module ID: 13588
-  Original File Name: 54b5422bb76f92eb
+  Original File Name: d2c491b56bed09de
 **/
 .text__87e56 {
     color: var(--premium-nitro-pink-text)
@@ -218,8 +218,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -1505,4 +1505,4 @@
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=54b5422bb76f92eb.css.map*/
+/*# sourceMappingURL=d2c491b56bed09de.css.map*/
