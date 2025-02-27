@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => E
+  Z: () => S
 }), n(47120), n(230036);
 var r = n(200651),
   a = n(192379),
@@ -131,13 +131,13 @@ let T = [{
     }
   }];
 
-function E() {
+function S() {
   let [e, t] = a.useState(""), n = a.useRef(null), i = (0, u.Wu)([p.Z], () => p.Z.loggedTriggers), o = a.useMemo(() => i.filter(t => 0 === e.length || s()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [i, e]), [c, d] = a.useState(void 0), x = o.find(e => e.key === c), {
     TabBar: f,
     renderSelectedTab: _
   } = (0, j.Z)({
     tabs: O
-  }, []), E = (0, u.e7)([p.Z], () => p.Z.trackTriggers), S = a.useCallback(e => {
+  }, []), S = (0, u.e7)([p.Z], () => p.Z.trackTriggers), E = a.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
@@ -152,8 +152,8 @@ function E() {
         title: "Enables tracking of all triggers",
         className: C.triggersEnable,
         children: (0, r.jsx)(m.rsf, {
-          checked: E,
-          onChange: S,
+          checked: S,
+          onChange: E,
           className: C.__invalid_toolbarSwitch
         })
       }), (0, r.jsx)(m.zxk, {

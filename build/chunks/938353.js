@@ -1,4 +1,4 @@
-/** Chunk was on 147 **/
+/** Chunk was on 8655 **/
 n.d(t, {
   $p: () => e6,
   BB: () => e9,
@@ -822,7 +822,7 @@ function e5(e) {
     hasInlineForwardButton: D
   } = (0, P.yk)({
     location: "MessageAccessories"
-  }), M = (0, A.a)(r) && D, W = (0, eC._)(n), F = (0, eO.ro)(r.id);
+  }), M = (0, A.a)(r) && D, W = (0, eC._)(n), F = (0, eO.ro)(r.id, r.channel_id);
   return (0, i.jsx)(e9, e$(eJ(e$(eJ({
     canSuppressEmbeds: E,
     canDeleteAttachments: j
@@ -885,7 +885,7 @@ let e6 = e => {
     g = (0, V.A)((null !== (t = n.editedTimestamp) && void 0 !== t ? t : n.timestamp).valueOf()),
     _ = (0, X.Z)(null == r ? void 0 : r.id),
     b = (0, I.V)(r.id, n.author.id),
-    v = (0, eO.ro)(n.id),
+    v = (0, eO.ro)(n.id, n.channel_id),
     y = (0, J.Z)(n);
   return (0, i.jsx)(e9, e$(eJ({}, u), {
     message: n,

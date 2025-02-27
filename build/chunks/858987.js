@@ -74,7 +74,7 @@ function S(e) {
   if (t === h.GZ.ONE_TIME) return i ? g.NW.string(g.t.ouo4FB) : g.NW.string(g.t.ExD0Nj);
   if (o()(null != n, "Subscription plan must be selected to render SubscriptionReviewButton"), i) return g.NW.string(g.t.ouo4FB);
   if (l) return g.NW.string(g.t.LQVQIi);
-  if ((0, d.PV)(n.id)) return s ? g.NW.string(g.t.cRCCJy) : null != r ? r.isPaused ? g.NW.string(g.t.zpi5pq) : (0, f.R4)(r, n.id, a) ? g.NW.string(g.t.IJI7ys) : g.NW.string(g.t.VPuTc3) : (0, d.W_)(null, n);
+  if ((0, d.PV)(n.id)) return s ? g.NW.string(g.t.cRCCJy) : null != r ? r.isPausedAllowsResumeButNotUpdates ? g.NW.string(g.t.zpi5pq) : (0, f.R4)(r, n.id, a) ? g.NW.string(g.t.IJI7ys) : g.NW.string(g.t.VPuTc3) : (0, d.W_)(null, n);
   return g.NW.string(g.t.YScQSE)
 }
 

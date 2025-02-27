@@ -1,4 +1,4 @@
-/** Chunk was on 147 **/
+/** Chunk was on 8655 **/
 n.d(t, {
   Z: () => F
 });
@@ -97,7 +97,7 @@ let F = i.memo(function e(t) {
     message: s,
     channel: a,
     enabled: el
-  }), ec = (0, c.V)(a.id, s.author.id), ed = (0, b.ro)(s.id), eu = (0, p.Z)(s);
+  }), ec = (0, c.V)(a.id, s.author.id), ed = (0, b.ro)(s.id, s.channel_id), eu = (0, p.Z)(s);
   return eo ? (0, r.jsx)(e, W(M({}, t), {
     message: K.message,
     channel: Y,

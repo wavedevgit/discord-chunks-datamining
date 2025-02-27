@@ -1,6 +1,6 @@
 /** Chunk was on 57738 **/
 n.d(t, {
-  Fo: () => L,
+  Fo: () => C,
   KY: () => h,
   Uo: () => m,
   fU: () => v,
@@ -29,13 +29,13 @@ var r = n(192379),
   S = n(176505),
   p = n(443063),
   U = n(490897),
-  C = n(388032);
+  D = n(388032);
 
-function D(e, t) {
+function L(e, t) {
   e.index = t
 }
 
-function L(e, t, n, l) {
+function C(e, t, n, l) {
   l = l.toLowerCase();
   let i = (0, d.g)(e),
     o = r.useCallback((e, t) => !(i && e.channel.hasFlag(S.zZ.IS_GUILD_RESOURCE_CHANNEL)) && e.channel.type !== f.d4z.GUILD_DIRECTORY && (0 === t.length || a()(t, e.channel.name.toLowerCase()) || e.channel.topic.toLowerCase().includes(t)), [i]);
@@ -49,7 +49,7 @@ function L(e, t, n, l) {
         channel: r
       } = n;
       "null" === r.id && (e.null = t.null.filter(e => o(e, l))), e[r.id] = t[r.id].filter(e => o(e, l))
-    }), e._categories = t._categories.filter(t => "null" === t.channel.id || 0 === l.length || e[t.channel.id].length > 0), (0, u.Z)(e._categories, e).forEach(D), e
+    }), e._categories = t._categories.filter(t => "null" === t.channel.id || 0 === l.length || e[t.channel.id].length > 0), (0, u.Z)(e._categories, e).forEach(L), e
   }, [t, n, o, l])
 }
 
@@ -121,7 +121,7 @@ function v(e) {
 
 function b(e) {
   var t;
-  return C.NW.formatToPlainString(C.t["8N0BHR"], {
+  return D.NW.formatToPlainString(D.t["8N0BHR"], {
     timeAgo: o()(R.default.extractTimestamp(null !== (t = g.ZP.lastMessageId(e)) && void 0 !== t ? t : e)).fromNow()
   })
 }

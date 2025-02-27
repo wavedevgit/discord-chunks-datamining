@@ -9,9 +9,9 @@ var i = n(442837),
   o = n(481060),
   a = n(569545),
   s = n(687516),
-  l = n(314897),
-  c = n(959457),
-  u = n(682901),
+  l = n(221241),
+  c = n(314897),
+  u = n(959457),
   d = n(388032);
 
 function f(e, t, n) {
@@ -39,14 +39,14 @@ function _(e) {
 function p(e, t, f) {
   var p;
   let {
-    enabled: h
-  } = (0, u.Z)({
+    simplifiedSettingsEnabled: h
+  } = (0, l.Z)({
     location: "ReportProblemItem"
-  }), g = (0, s.Cf)(e), m = (0, i.e7)([l.default], () => l.default.getId()), E = null != e ? (0, a.V9)(e) : c.Z.getActiveStreamKey(), v = null !== (p = c.Z.getVideoStats(E)) && void 0 !== p ? p : {}, b = _({
-    media_session_id: c.Z.getMediaSessionId(E),
-    rtc_connection_id: c.Z.getRtcConnectionId(E),
-    stream_region: c.Z.getRegion(E),
-    max_viewers: c.Z.getMaxViewers(E)
+  }), g = (0, s.Cf)(e), m = (0, i.e7)([c.default], () => c.default.getId()), E = null != e ? (0, a.V9)(e) : u.Z.getActiveStreamKey(), v = null !== (p = u.Z.getVideoStats(E)) && void 0 !== p ? p : {}, b = _({
+    media_session_id: u.Z.getMediaSessionId(E),
+    rtc_connection_id: u.Z.getRtcConnectionId(E),
+    stream_region: u.Z.getRegion(E),
+    max_viewers: u.Z.getMaxViewers(E)
   }, v), y = () => {
     null == f || f(), null != e && (0, o.ZDy)(async () => {
       let {

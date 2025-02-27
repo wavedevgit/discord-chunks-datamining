@@ -1232,9 +1232,10 @@ function eE(e, t, n, r, i) {
 }
 
 function ev(e, t, n, r) {
-  let i = (0, h.XK)(e, t);
+  let i = (0, h.XK)(e, t),
+    o = e.isPausedAllowsUpdatesButNotResume ? e.status : E.O0b.ACTIVE;
   return em(e, {
-    status: E.O0b.ACTIVE,
+    status: o,
     items: i
   }, n, r)
 }

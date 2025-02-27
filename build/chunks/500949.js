@@ -5,7 +5,7 @@ n.d(t, {
   GU: () => K,
   H8: () => q,
   HI: () => J,
-  HW: () => z,
+  HW: () => F,
   Ib: () => es,
   KB: () => eu,
   S2: () => H,
@@ -45,10 +45,10 @@ var r, a, i = n(192379),
   N = n(762399),
   T = n(232112),
   O = n(53796),
-  E = n(723757),
-  S = n(375924),
-  I = n(596136),
-  k = n(341901),
+  S = n(723757),
+  E = n(375924),
+  k = n(596136),
+  I = n(341901),
   w = n(856308),
   Z = n(665352),
   P = n(394900),
@@ -77,7 +77,7 @@ function M(e) {
   return e
 }
 
-function F(e, t) {
+function z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -89,7 +89,7 @@ function F(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let z = {
+let F = {
     sRGB: l.Z,
     A98RGB: o.Z,
     ACEScc: s.Z,
@@ -111,14 +111,14 @@ let z = {
     OKLab: N.Z,
     P3: T.Z,
     ProPhoto: O.Z,
-    REC_2020: E.Z,
-    REC_2100_HLG: S.Z,
-    REC_2100_PQ: I.Z,
-    XYZ_D50: k.Z,
+    REC_2020: S.Z,
+    REC_2100_HLG: E.Z,
+    REC_2100_PQ: k.Z,
+    XYZ_D50: I.Z,
     XYZ_D65: w.Z
   },
-  G = Object.fromEntries(Object.keys(z).map(e => [e, e]));
-Object.values(z).forEach(e => Z.Z.register(e));
+  G = Object.fromEntries(Object.keys(F).map(e => [e, e]));
+Object.values(F).forEach(e => Z.Z.register(e));
 let {
   SemanticColors: W
 } = D.V, U = W, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
@@ -148,7 +148,7 @@ function X(e) {
 function Y(e, t, n, r, a) {
   return {
     name: t,
-    colors: F(M({}, e.colors), {
+    colors: z(M({}, e.colors), {
       [a]: {
         color: n,
         opacity: r
@@ -159,7 +159,7 @@ function Y(e, t, n, r, a) {
 }
 
 function K(e) {
-  return F(M({}, e), {
+  return z(M({}, e), {
     highlight: !e.highlight
   })
 }
@@ -216,7 +216,7 @@ function ea(e) {
     darkness: a,
     lightness: i,
     easingStrength: o = 1
-  } = e, s = z[e.colorSpace], c = (0, R.Z)(n, s), d = (0, L.CD)(c, "white", 1 - a, {
+  } = e, s = F[e.colorSpace], c = (0, R.Z)(n, s), d = (0, L.CD)(c, "white", 1 - a, {
     space: s,
     outputSpace: l.Z
   }), u = (0, L.CD)(c, "black", 1 - i, {
@@ -246,55 +246,55 @@ function ea(e) {
 }
 
 function ei(e, t, n) {
-  n(n => null == n.scales.find(t => t.name === e) ? n : F(M({}, n), {
+  n(n => null == n.scales.find(t => t.name === e) ? n : z(M({}, n), {
     scales: n.scales.map(n => n.name === e ? t(n) : n)
   }))
 }
 
 function el(e, t, n) {
-  ei(e, e => F(M({}, e), {
+  ei(e, e => z(M({}, e), {
     darkness: t
   }), n)
 }
 
 function eo(e, t, n) {
-  ei(e, e => F(M({}, e), {
+  ei(e, e => z(M({}, e), {
     lightness: t
   }), n)
 }
 
 function es(e, t, n) {
-  ei(e, e => F(M({}, e), {
+  ei(e, e => z(M({}, e), {
     base: t
   }), n)
 }
 
 function ec(e, t, n) {
-  ei(e, e => F(M({}, e), {
+  ei(e, e => z(M({}, e), {
     colorSpace: t
   }), n)
 }
 
 function ed(e, t, n) {
-  ei(e, e => F(M({}, e), {
+  ei(e, e => z(M({}, e), {
     easingStrength: t
   }), n)
 }
 
 function eu(e, t, n) {
-  ei(e, e => F(M({}, e), {
+  ei(e, e => z(M({}, e), {
     showColumnarPalettePreview: t
   }), n)
 }
 
 function em(e, t, n) {
-  ei(e, e => F(M({}, e), {
+  ei(e, e => z(M({}, e), {
     useP3ColorSpace: t
   }), n)
 }
 
 function eh(e, t, n) {
-  ei(e, e => F(M({}, e), {
+  ei(e, e => z(M({}, e), {
     steps: t
   }), n)
 }

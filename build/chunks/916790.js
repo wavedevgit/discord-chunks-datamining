@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => I
+  Z: () => k
 }), n(47120), n(566702);
 var r = n(200651),
   a = n(192379),
@@ -103,7 +103,7 @@ let O = [{
   }
 }];
 
-function E(e) {
+function S(e) {
   let {
     actionLog: t,
     initialHeight: n
@@ -161,7 +161,7 @@ function E(e) {
     })]
   })
 }
-let S = [{
+let E = [{
   key: "action",
   cellClassName: j.actionColumn,
   render(e) {
@@ -185,7 +185,7 @@ let S = [{
   }
 }];
 
-function I() {
+function k() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     i = function(e) {
@@ -236,7 +236,7 @@ function I() {
     C.current = null
   }, []);
   let O = t.trim().length > 0,
-    I = a.useMemo(() => O ? x : p ? c : s, [s, x, O, p, c]);
+    k = a.useMemo(() => O ? x : p ? c : s, [s, x, O, p, c]);
   return (0, r.jsxs)("div", {
     ref: e,
     className: l()(y.panel, j.panel),
@@ -257,11 +257,11 @@ function I() {
         placeholder: "Search by action name"
       })]
     }), (0, r.jsx)(g.Z, {
-      columns: S,
-      data: I,
+      columns: E,
+      data: k,
       selectedRowKey: null == _ ? void 0 : _.id.toString(),
       onClickRow: e => v(e.actionLog)
-    }), null != _ && (0, r.jsx)(E, {
+    }), null != _ && (0, r.jsx)(S, {
       actionLog: _,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 84466 **/
+/** Chunk was on 17049 **/
 n.d(t, {
   Z: () => m,
   m: () => D
@@ -37,9 +37,9 @@ function m(e) {
     children: n,
     initialTab: l,
     guildId: o
-  } = e, D = (0, a.e7)([T.Z], () => T.Z.getGuild(o)), m = (0, a.e7)([_.Z], () => _.Z.isViewingServerShop(o)), g = (0, P.g)(D, "guild_shop_page"), h = (0, S.RF)(o, "guild_shop_page"), y = (null == D ? void 0 : D.hasFeature(C.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0, U = (0, d.mY)(null == D ? void 0 : D.id), b = null === (t = (0, E.YB)(o)) || void 0 === t ? void 0 : t.server_shop_tab_order, k = [], M = p.y.GUILD_SHOP_FULL_PREVIEW;
-  m || y && U ? (k.push(b === A.a3.PRODUCTS_FIRST ? p.y.GUILD_PRODUCTS : p.y.GUILD_ROLE_SUBSCRIPTIONS), k.push(b === A.a3.PRODUCTS_FIRST ? p.y.GUILD_ROLE_SUBSCRIPTIONS : p.y.GUILD_PRODUCTS), M = k[0]) : y && !U ? (k.push(p.y.GUILD_PRODUCTS), M = p.y.GUILD_PRODUCTS) : !y && U && (k.push(p.y.GUILD_ROLE_SUBSCRIPTIONS), M = p.y.GUILD_ROLE_SUBSCRIPTIONS, g && k.push(p.y.GUILD_PRODUCTS_PREVIEW)), l = null != l ? l : M;
-  let [v, Z] = i.useState(l), L = g && !(U && h) || v === p.y.GUILD_PRODUCTS_PREVIEW;
+  } = e, D = (0, a.e7)([T.Z], () => T.Z.getGuild(o)), m = (0, a.e7)([_.Z], () => _.Z.isViewingServerShop(o)), g = (0, P.g)(D, "guild_shop_page"), h = (0, S.RF)(o, "guild_shop_page"), y = (null == D ? void 0 : D.hasFeature(C.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0, b = (0, d.mY)(null == D ? void 0 : D.id), U = null === (t = (0, E.YB)(o)) || void 0 === t ? void 0 : t.server_shop_tab_order, k = [], M = p.y.GUILD_SHOP_FULL_PREVIEW;
+  m || y && b ? (k.push(U === A.a3.PRODUCTS_FIRST ? p.y.GUILD_PRODUCTS : p.y.GUILD_ROLE_SUBSCRIPTIONS), k.push(U === A.a3.PRODUCTS_FIRST ? p.y.GUILD_ROLE_SUBSCRIPTIONS : p.y.GUILD_PRODUCTS), M = k[0]) : y && !b ? (k.push(p.y.GUILD_PRODUCTS), M = p.y.GUILD_PRODUCTS) : !y && b && (k.push(p.y.GUILD_ROLE_SUBSCRIPTIONS), M = p.y.GUILD_ROLE_SUBSCRIPTIONS, g && k.push(p.y.GUILD_PRODUCTS_PREVIEW)), l = null != l ? l : M;
+  let [v, Z] = i.useState(l), L = g && !(b && h) || v === p.y.GUILD_PRODUCTS_PREVIEW;
   return i.useEffect(() => {
     Z(l)
   }, [l]), (0, r.jsx)(f.Provider, {

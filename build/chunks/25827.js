@@ -135,8 +135,8 @@ function T(e) {
       location: "VideoButton"
     }),
     {
-      squareButtons: A,
-      coloredIcons: C
+      squareButtonsEnabled: A,
+      coloredIconsEnabled: C
     } = (0, f.Z)({
       location: "VideoButton"
     }),

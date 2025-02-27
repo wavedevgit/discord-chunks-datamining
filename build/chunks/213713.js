@@ -26,14 +26,14 @@ var r = n(200651),
   N = n(71585),
   T = n(146282),
   O = n(780106),
-  E = n(650613),
-  S = n(789086),
-  I = n(206583),
-  k = n(811372),
+  S = n(650613),
+  E = n(789086),
+  k = n(206583),
+  I = n(811372),
   w = n(841699);
 let Z = [{
   key: "type",
-  cellClassName: l()(k.cell, k.cellType),
+  cellClassName: l()(I.cell, I.cellType),
   render(e) {
     let {
       type: t
@@ -45,7 +45,7 @@ let Z = [{
   }
 }, {
   key: "count",
-  cellClassName: l()(k.cell, k.cellCount),
+  cellClassName: l()(I.cell, I.cellCount),
   render(e) {
     let {
       entries: t
@@ -59,7 +59,7 @@ let Z = [{
   }
 }, {
   key: "only?",
-  cellClassName: k.cell,
+  cellClassName: I.cell,
   render(e) {
     let {
       type: t
@@ -93,7 +93,7 @@ function P(e) {
 
 function R() {
   var e, t;
-  let n = (0, u.e7)([T.Z], () => T.Z.getFeed(I.YN.GLOBAL_FEED)),
+  let n = (0, u.e7)([T.Z], () => T.Z.getFeed(k.YN.GLOBAL_FEED)),
     i = (0, u.e7)([T.Z], () => T.Z.getDebugImpressionCappingDisabled()),
     o = (0, u.e7)([N.Z], () => N.Z.getDebugFastImpressionCappingEnabled()),
     c = function(e) {
@@ -109,7 +109,7 @@ function R() {
     }(null == n ? void 0 : null === (e = n.entries) || void 0 === e ? void 0 : e.map(e => e.content)),
     P = (0, u.e7)([T.Z], () => {
       var e;
-      return (null === (e = T.Z.getFeedState(I.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
+      return (null === (e = T.Z.getFeedState(k.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
     }),
     [R, A] = a.useState(""),
     D = (0, u.e7)([j.Z, f.Z], () => {
@@ -128,12 +128,12 @@ function R() {
       let [t] = e;
       return t
     }),
-    F = (0, p.Z)(M).filter(y.lm),
-    z = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
+    z = (0, p.Z)(M).filter(y.lm),
+    F = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
   return (0, r.jsx)("div", {
     className: l()(w.panel),
     children: (0, r.jsxs)(h.zJl, {
-      className: k.content,
+      className: I.content,
       children: [(0, r.jsxs)(h.hjN, {
         children: [(0, r.jsx)(h.vwX, {
           children: "Inventory"
@@ -142,12 +142,12 @@ function R() {
           data: c
         }), (0, r.jsx)(h.LZC, {
           size: 8
-        }), (0, r.jsx)(S.Z, {}), (0, r.jsx)(h.zxk, {
+        }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(h.zxk, {
           fullWidth: !0,
           onClick: function() {
             x.Z.dispatch({
               type: "CONTENT_INVENTORY_MANUAL_REFRESH",
-              feedId: I.YN.GLOBAL_FEED,
+              feedId: k.YN.GLOBAL_FEED,
               feature: d.L.INBOX
             })
           },
@@ -196,7 +196,7 @@ function R() {
           },
           children: o ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping"
         })]
-      }), !1, (0, r.jsx)(E.Z, {}), (0, r.jsxs)(h.hjN, {
+      }), !1, (0, r.jsx)(S.Z, {}), (0, r.jsxs)(h.hjN, {
         children: [(0, r.jsx)(h.vwX, {
           children: "Game Profile"
         }), (0, r.jsx)(h.oil, {
@@ -210,7 +210,7 @@ function R() {
             border: "1px solid green"
           } : {}
         }), (0, r.jsx)("ul", {
-          children: F.map(e => (0, r.jsx)("li", {
+          children: z.map(e => (0, r.jsx)("li", {
             children: (0, r.jsx)(L, {
               application: e
             })
@@ -227,7 +227,7 @@ function R() {
             label: e,
             value: e
           })),
-          isSelected: e => e === z,
+          isSelected: e => e === F,
           select: function(e) {
             x.Z.dispatch({
               type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",

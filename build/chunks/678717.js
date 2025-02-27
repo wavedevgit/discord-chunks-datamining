@@ -27,10 +27,10 @@ var g = n(392750),
   N = n(719672),
   T = n(691867),
   O = n(916790),
-  E = n(645973),
-  S = n(903502),
-  I = n(912072),
-  k = n(272193),
+  S = n(645973),
+  E = n(903502),
+  k = n(912072),
+  I = n(272193),
   w = n(685560),
   Z = n(735959),
   P = n(246992),
@@ -40,8 +40,8 @@ var g = n(392750),
   D = n(702904),
   B = n(178821),
   M = n(958328),
-  F = n(315384),
-  z = n(514866),
+  z = n(315384),
+  F = n(514866),
   G = n(264603),
   W = n(678639),
   U = n(351930),
@@ -94,11 +94,11 @@ function Q() {
       return x.Z.isDeveloper && e.push({
         id: "quick_actions",
         name: "Quick Actions",
-        render: () => (0, r.jsx)(z.Z, {})
+        render: () => (0, r.jsx)(F.Z, {})
       }), x.Z.isDeveloper && (e.push({
         id: "end_to_end_encryption",
         name: "E2EE",
-        render: () => (0, r.jsx)(E.Z, {})
+        render: () => (0, r.jsx)(S.Z, {})
       }), e.push({
         id: "clans",
         name: "Clans",
@@ -110,7 +110,7 @@ function Q() {
       }), e.push({
         id: "feedback",
         name: "Feedback",
-        render: () => (0, r.jsx)(S.Z, {})
+        render: () => (0, r.jsx)(E.Z, {})
       }), e.push({
         id: "overlay",
         name: "Overlay v3",
@@ -134,7 +134,7 @@ function Q() {
       }), e.push({
         id: "overlays",
         name: "Dev Overlays",
-        render: () => (0, r.jsx)(I.Z, {
+        render: () => (0, r.jsx)(k.Z, {
           devSettingsCategory: _.zU.OVERLAYS
         })
       }), e.push({
@@ -144,7 +144,7 @@ function Q() {
       }), e.push({
         id: "reporting",
         name: "Reporting",
-        render: () => (0, r.jsx)(I.Z, {
+        render: () => (0, r.jsx)(k.Z, {
           devSettingsCategory: _.zU.REPORTING
         })
       }), e.push({
@@ -170,7 +170,7 @@ function Q() {
       }), e.push({
         id: "potions",
         name: "Potions",
-        render: () => (0, r.jsx)(F.Z, {})
+        render: () => (0, r.jsx)(z.Z, {})
       }), window.GLOBAL_ENV.RELEASE_CHANNEL.startsWith("staging") && (e.push({
         id: "trials",
         name: "Trials",
@@ -190,7 +190,7 @@ function Q() {
       })), e.push({
         id: "gifting_intent",
         name: "Gifting Intent",
-        render: () => (0, r.jsx)(k.Z, {})
+        render: () => (0, r.jsx)(I.Z, {})
       }), e.push({
         id: "voice_filters",
         name: "Voice Filters",

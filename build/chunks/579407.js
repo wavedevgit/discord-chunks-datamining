@@ -5,7 +5,7 @@ n.d(t, {
   Xm: () => o
 });
 var r = n(357352),
-  i = n(359135);
+  i = n(4242);
 
 function o(e) {
   return null == e ? null : {
@@ -28,6 +28,6 @@ function s(e) {
     src: (0, r.b)(e.asset + "_playtest/static.png"),
     animatedSrc: (0, r.b)(e.asset + "_playtest/animated.png"),
     imgAlt: e.label,
-    palette: i.rY[e.palette]
+    palette: (0, i.t1)(e.palette)
   }
 }

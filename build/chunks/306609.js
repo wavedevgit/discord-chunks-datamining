@@ -1,4 +1,4 @@
-/** Chunk was on 147 **/
+/** Chunk was on 8655 **/
 n.d(t, {
   l: () => M
 }), n(47120);
@@ -13,11 +13,11 @@ var r = n(200651),
   u = n(347469),
   p = n(100527),
   m = n(906732),
-  f = n(682901),
-  h = n(659580),
-  g = n(795318),
-  _ = n(53691),
-  b = n(166335),
+  f = n(659580),
+  h = n(795318),
+  g = n(53691),
+  _ = n(166335),
+  b = n(221241),
   v = n(594174),
   y = n(626135),
   x = n(111361),
@@ -117,8 +117,8 @@ function M(e) {
     })
   });
   let {
-    enabled: ee
-  } = (0, f.Z)({
+    simplifiedSettingsEnabled: ee
+  } = (0, b.Z)({
     location: "VoiceFiltersPopout"
   }), et = i.useCallback(() => W(""), [W]);
   return (0, r.jsx)(m.Gt, {
@@ -173,11 +173,11 @@ function M(e) {
           className: R.upsellContainer,
           children: (0, r.jsx)(l.animated.div, {
             style: Q,
-            children: (0, r.jsx)(_.p, {
+            children: (0, r.jsx)(g.p, {
               showUpsell: !0,
               text: k.NW.format(k.t["XMDm8/"], {
                 nitroTierName: (0, O.Px)(Z.p9.TIER_2),
-                onClick: () => (0, b.i)()
+                onClick: () => (0, _.i)()
               }),
               button: k.NW.string(k.t.cRCCJy),
               buttonAnalyticsObject: {
@@ -198,14 +198,14 @@ function M(e) {
         }),
         children: [(0, r.jsx)(N.Y, {}), a && (0, r.jsx)(N.a, {}), (0, r.jsx)(c.yRy, {
           position: "top",
-          renderPopout: () => (0, r.jsx)(h.default, {
+          renderPopout: () => (0, r.jsx)(f.default, {
             renderInputModes: !0,
             renderInputVolume: !0,
             renderInputDevices: !0,
             renderOutputDevices: a,
             renderOutputVolume: a,
             onClose: t,
-            onInteraction: (0, g.u)("AudioDeviceMenu", "VoiceFiltersPopout", {
+            onInteraction: (0, h.u)("AudioDeviceMenu", "VoiceFiltersPopout", {
               entrypoint: w.A5.THREE_DOT
             }),
             simplified: ee

@@ -32,7 +32,7 @@ function p(e) {
 
 function h(e, t, n) {
   let r = e.getCurrentSubscriptionPlanIdForGroup(n);
-  return e.type === d.NYc.PREMIUM && null == r || (i()(null != r, "Current subscription has no plan in group"), i()(r !== f.Xh.PREMIUM_YEAR_TIER_1 || t !== f.Xh.PREMIUM_MONTH_TIER_2, "Unexpected plan switch"), n.indexOf(r) < n.indexOf(t))
+  return e.type === d.NYc.PREMIUM && null == r || !e.isPausedAllowsUpdatesButNotResume && (i()(null != r, "Current subscription has no plan in group"), i()(r !== f.Xh.PREMIUM_YEAR_TIER_1 || t !== f.Xh.PREMIUM_MONTH_TIER_2, "Unexpected plan switch"), n.indexOf(r) < n.indexOf(t))
 }
 
 function g(e, t, n) {

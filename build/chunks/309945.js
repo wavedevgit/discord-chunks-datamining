@@ -2,8 +2,8 @@
 t.d(n, {
   Z: () => d
 });
-var r = t(200651),
-  i = t(657707),
+var i = t(200651),
+  r = t(657707),
   o = t(793030),
   a = t(692547),
   s = t(783684),
@@ -14,18 +14,18 @@ function d(e) {
   let {
     powerup: n
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: l.container,
-    children: [(0, r.jsx)(i.P4T, {
+    children: [(0, i.jsx)(r.P4T, {
       color: a.Z.colors.TEXT_WARNING,
       className: l.icon
-    }), (0, r.jsx)(o.xv, {
+    }), (0, i.jsx)(o.xv, {
       variant: "text-md/semibold",
       color: "text-warning",
       children: c.NW.formatToPlainString(s.Z.n5hQhY, {
         perk: n.title
       })
-    }), (0, r.jsx)(o.xv, {
+    }), (0, i.jsx)(o.xv, {
       variant: "text-sm/medium",
       children: c.NW.formatToPlainString(s.Z.iAaAiI, {
         boostCount: 1,

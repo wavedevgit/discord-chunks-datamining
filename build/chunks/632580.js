@@ -127,7 +127,7 @@ async function b(e) {
           paymentSource: P,
           currency: R.currency
         };
-      L.status === p.O0b.PAUSED ? n.status = p.O0b.ACTIVE : n.items = t, e = await (0, a.Mg)(L, n, I, S, B)
+      L.isPausedAllowsResumeButNotUpdates ? n.status = p.O0b.ACTIVE : n.items = t, e = await (0, a.Mg)(L, n, I, S, B)
     } else e = await (0, l.Ld)({
       planId: N.id,
       currency: R.currency,

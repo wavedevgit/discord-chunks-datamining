@@ -10,7 +10,7 @@ function o(e) {
   let {
     groupedButtons: t
   } = (0, r.ZP)(e), {
-    squareButtons: n
+    squareButtonsEnabled: n
   } = (0, i.Z)(e);
   return t || n
 }

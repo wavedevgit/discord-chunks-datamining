@@ -86,7 +86,7 @@ function O() {
       tab: N,
       scales: O
     } = t,
-    S = a.useMemo(() => {
+    E = a.useMemo(() => {
       let t = Object.entries(b).map(t => {
           let [n, r] = t, {
             colors: a,
@@ -214,7 +214,7 @@ function O() {
     }), (0, r.jsx)("div", {
       className: g.tab,
       hidden: N !== _.H8.TOKENS,
-      children: (0, r.jsx)(E, {
+      children: (0, r.jsx)(S, {
         state: t,
         setState: n
       })
@@ -228,13 +228,13 @@ function O() {
     }), (0, r.jsx)(c.ql, {
       children: (0, r.jsx)("style", {
         id: "devtools-color-overrides",
-        children: S
+        children: E
       })
     })]
   })
 }
 
-function E(e) {
+function S(e) {
   let {
     state: t,
     setState: n
@@ -322,7 +322,7 @@ function E(e) {
         let o = N(l.color),
           c = l.opacity,
           d = _.jC[t][i];
-        return (0, r.jsx)(S, {
+        return (0, r.jsx)(E, {
           title: C(t),
           subtitle: 1 === d.opacity ? N(d.raw) : "".concat(N(d.raw), " @ ").concat(100 * d.opacity, "%"),
           highlight: a.highlight,
@@ -429,7 +429,7 @@ function E(e) {
       className: g.rawOverrides,
       children: Object.entries(o).map(e => {
         let [t, a] = e;
-        return (0, r.jsxs)(S, {
+        return (0, r.jsxs)(E, {
           title: t,
           subtitle: u.b[t].hex,
           highlight: a.highlight,
@@ -501,7 +501,7 @@ function E(e) {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     title: t,
     subtitle: n,

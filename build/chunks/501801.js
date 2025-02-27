@@ -2,7 +2,7 @@
 n.d(t, {
   mp: () => m,
   tP: () => M,
-  xO: () => D
+  xO: () => L
 }), n(653041), n(266796);
 var r = n(200651),
   l = n(192379),
@@ -26,16 +26,16 @@ var r = n(200651),
   S = n(909746),
   p = n(981631),
   U = n(388032),
-  C = n(677811);
+  D = n(677811);
 
-function D(e, t) {
+function L(e, t) {
   let n = S.vc[e.targetType];
   return null != n && !0 === n[t.key]
 }
-let L = {
-  [p.vB8.CREATE]: C.typeCreate,
-  [p.vB8.UPDATE]: C.typeUpdate,
-  [p.vB8.DELETE]: C.typeDelete
+let C = {
+  [p.vB8.CREATE]: D.typeCreate,
+  [p.vB8.UPDATE]: D.typeUpdate,
+  [p.vB8.DELETE]: D.typeDelete
 };
 
 function h(e) {
@@ -54,31 +54,32 @@ class m extends l.PureComponent {
       targetType: t,
       action: n,
       themeOverride: l
-    } = this.props, a = null != l ? C["themeOverride".concat((0, R.De)(l))] : null, o = i()(C.icon, L[e], n === p.rsA.MESSAGE_DELETE ? C.targetMessage : n === p.rsA.AUTO_MODERATION_BLOCK_MESSAGE || n === p.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || n === p.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || n === p.rsA.AUTO_MODERATION_QUARANTINE_USER ? C.autoModerationBlockMessage : ({
-      [p.KFR.ALL]: C.targetAll,
-      [p.KFR.GUILD]: C.targetGuild,
-      [p.KFR.CHANNEL]: C.targetChannel,
-      [p.KFR.CHANNEL_OVERWRITE]: C.targetChannel,
-      [p.KFR.USER]: C.targetMember,
-      [p.KFR.ROLE]: C.targetRole,
-      [p.KFR.ONBOARDING_PROMPT]: C.targetOnboarding,
-      [p.KFR.GUILD_ONBOARDING]: C.targetOnboarding,
-      [p.KFR.HOME_SETTINGS]: C.targetOnboarding,
-      [p.KFR.INTEGRATION]: C.targetIntegration,
-      [p.KFR.INVITE]: C.targetInvite,
-      [p.KFR.WEBHOOK]: C.targetWebhook,
-      [p.KFR.EMOJI]: C.targetEmoji,
-      [p.KFR.STICKER]: C.targetSticker,
-      [p.KFR.STAGE_INSTANCE]: C.targetStageInstance,
-      [p.KFR.GUILD_SCHEDULED_EVENT]: C.targetGuildScheduledEvent,
-      [p.KFR.GUILD_SCHEDULED_EVENT_EXCEPTION]: C.targetGuildScheduledEvent,
-      [p.KFR.THREAD]: C.thread,
-      [p.KFR.APPLICATION_COMMAND]: C.applicationCommand,
-      [p.KFR.AUTO_MODERATION_RULE]: C.autoModerationRule,
-      [p.KFR.GUILD_HOME]: C.targetGuildHome,
-      [p.KFR.GUILD_SOUNDBOARD]: C.targetGuildSoundboard,
-      [p.KFR.VOICE_CHANNEL_STATUS]: C.targetChannel,
-      [p.KFR.GUILD_MEMBER_VERIFICATION]: C.targetMember
+    } = this.props, a = null != l ? D["themeOverride".concat((0, R.De)(l))] : null, o = i()(D.icon, C[e], n === p.rsA.MESSAGE_DELETE ? D.targetMessage : n === p.rsA.AUTO_MODERATION_BLOCK_MESSAGE || n === p.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || n === p.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || n === p.rsA.AUTO_MODERATION_QUARANTINE_USER ? D.autoModerationBlockMessage : ({
+      [p.KFR.ALL]: D.targetAll,
+      [p.KFR.GUILD]: D.targetGuild,
+      [p.KFR.CHANNEL]: D.targetChannel,
+      [p.KFR.CHANNEL_OVERWRITE]: D.targetChannel,
+      [p.KFR.USER]: D.targetMember,
+      [p.KFR.ROLE]: D.targetRole,
+      [p.KFR.ONBOARDING_PROMPT]: D.targetOnboarding,
+      [p.KFR.GUILD_ONBOARDING]: D.targetOnboarding,
+      [p.KFR.HOME_SETTINGS]: D.targetOnboarding,
+      [p.KFR.INTEGRATION]: D.targetIntegration,
+      [p.KFR.INVITE]: D.targetInvite,
+      [p.KFR.WEBHOOK]: D.targetWebhook,
+      [p.KFR.EMOJI]: D.targetEmoji,
+      [p.KFR.STICKER]: D.targetSticker,
+      [p.KFR.STAGE_INSTANCE]: D.targetStageInstance,
+      [p.KFR.GUILD_SCHEDULED_EVENT]: D.targetGuildScheduledEvent,
+      [p.KFR.GUILD_SCHEDULED_EVENT_EXCEPTION]: D.targetGuildScheduledEvent,
+      [p.KFR.THREAD]: D.thread,
+      [p.KFR.APPLICATION_COMMAND]: D.applicationCommand,
+      [p.KFR.AUTO_MODERATION_RULE]: D.autoModerationRule,
+      [p.KFR.GUILD_HOME]: D.targetGuildHome,
+      [p.KFR.GUILD_SOUNDBOARD]: D.targetGuildSoundboard,
+      [p.KFR.VOICE_CHANNEL_STATUS]: D.targetChannel,
+      [p.KFR.GUILD_MEMBER_VERIFICATION]: D.targetMember,
+      [p.KFR.GUILD_PROFILE]: D.targetGuild
     })[t], a);
     return (0, r.jsx)("div", {
       className: o
@@ -96,7 +97,7 @@ function M(e) {
     if (null == t.changes) return null;
     let l = 0,
       E = s().flatten(t.changes.map(a => {
-        if (D(t, a)) return null;
+        if (L(t, a)) return null;
         let {
           oldValue: i,
           newValue: o
@@ -133,7 +134,7 @@ function M(e) {
               newValue: t
             } = e;
             return Array.isArray(t) ? t.map(e => (0, r.jsx)("div", {
-              className: C.subListItem,
+              className: D.subListItem,
               children: e.name
             }, e.id)) : null
           }(a);
@@ -142,7 +143,7 @@ function M(e) {
               newValue: n
             } = e;
             return Array.isArray(n) ? n.map((e, n) => (0, r.jsx)("div", {
-              className: C.subListItem,
+              className: D.subListItem,
               children: S.hQ(e, t)
             }, n)) : null
           }(a, t);
@@ -152,10 +153,10 @@ function M(e) {
               oldValue: n
             } = e, l = [];
             return (Array.isArray(n) && (l = l.concat(n.map(e => (0, r.jsx)("div", {
-              className: C.subListItem,
+              className: D.subListItem,
               children: S.cT(e)
             }, e)))), Array.isArray(t) && (l = l.concat(t.map(e => (0, r.jsx)("div", {
-              className: C.subListItem,
+              className: D.subListItem,
               children: S.em(e)
             }, e)))), l.length > 0) ? l : null
           }(a);
@@ -178,7 +179,7 @@ function M(e) {
               } = n, E = e.role_ids.map(i).filter(g.lm), c = e.channel_ids.map(o).filter(g.lm), _ = n.role_ids.map(i).filter(g.lm), d = n.channel_ids.map(o).filter(g.lm), A = s().difference(_, E), T = s().difference(E, _), N = s().difference(d, c), I = s().difference(c, d), O = [];
               return (s().isEqual(e.title, n.title) || O.push("title"), s().isEqual(e.description, n.description) || O.push("description"), 0 === A.length && 0 === T.length && 0 === N.length && 0 === I.length && 0 === O.length) ? null : (0, r.jsxs)("li", {
                 children: [(0, r.jsxs)("div", {
-                  className: C.onboardingChangeLogItemTitle,
+                  className: D.onboardingChangeLogItemTitle,
                   children: [(0, r.jsx)(m, {
                     actionType: p.vB8.UPDATE,
                     targetType: t.targetType,
@@ -190,7 +191,7 @@ function M(e) {
                     })
                   })]
                 }), (0, r.jsxs)("div", {
-                  className: C.onboardingChangeLogItemChanges,
+                  className: D.onboardingChangeLogItemChanges,
                   children: [A.length > 0 && (0, r.jsx)(u.Text, {
                     variant: "text-md/normal",
                     children: U.NW.format(U.t["R+km+f"], {
@@ -223,7 +224,7 @@ function M(e) {
               }, a)
             }, c = s().keyBy(null != a ? a : [], "id"), _ = s().keyBy(null != l ? l : [], "id"), d = s().difference(Object.keys(_), Object.keys(c)).map(e => _[e]), A = s().difference(Object.keys(c), Object.keys(_)).map(e => c[e]), I = s().intersection(Object.keys(_), Object.keys(c));
             return (0, r.jsxs)("ul", {
-              className: C.onboardingChangeLogContainer,
+              className: D.onboardingChangeLogContainer,
               children: [d.map(e => {
                 let {
                   role_ids: n,
@@ -233,7 +234,7 @@ function M(e) {
                 } = e, E = (null != n ? n : []).map(i).filter(g.lm), c = (null != l ? l : []).map(o).filter(g.lm);
                 return (0, r.jsxs)("li", {
                   children: [(0, r.jsxs)("div", {
-                    className: C.onboardingChangeLogItemTitle,
+                    className: D.onboardingChangeLogItemTitle,
                     children: [(0, r.jsx)(m, {
                       actionType: p.vB8.CREATE,
                       targetType: t.targetType,
@@ -245,7 +246,7 @@ function M(e) {
                       })
                     })]
                   }), (0, r.jsxs)("div", {
-                    className: C.onboardingChangeLogItemChanges,
+                    className: D.onboardingChangeLogItemChanges,
                     children: [E.length > 0 && (0, r.jsx)(u.Text, {
                       variant: "text-md/normal",
                       children: U.NW.format(U.t["gt/5z8"], {
@@ -261,7 +262,7 @@ function M(e) {
                 }, s)
               }), A.map(e => (0, r.jsx)("li", {
                 children: (0, r.jsxs)("div", {
-                  className: C.onboardingChangeLogItemTitle,
+                  className: D.onboardingChangeLogItemTitle,
                   children: [(0, r.jsx)(m, {
                     actionType: p.vB8.DELETE,
                     targetType: t.targetType,
@@ -293,7 +294,7 @@ function M(e) {
                     E = I.default.getUser(null === (l = e.author_ids) || void 0 === l ? void 0 : l[0]),
                     c = (null == s ? void 0 : s.id) !== (null == E ? void 0 : E.id) ? (0, r.jsx)("li", {
                       children: (0, r.jsx)("div", {
-                        className: C.onboardingChangeLogItemTitle,
+                        className: D.onboardingChangeLogItemTitle,
                         children: (0, r.jsx)(u.Text, {
                           variant: "text-md/normal",
                           children: U.NW.format(U.t.PrOzAw, {
@@ -305,7 +306,7 @@ function M(e) {
                     }) : null,
                     _ = (null == t ? void 0 : t.message) !== e.message ? (0, r.jsx)("li", {
                       children: (0, r.jsx)("div", {
-                        className: C.onboardingChangeLogItemTitle,
+                        className: D.onboardingChangeLogItemTitle,
                         children: (0, r.jsx)(u.Text, {
                           variant: "text-md/normal",
                           children: U.NW.format(U.t.oB7rBQ, {
@@ -330,7 +331,7 @@ function M(e) {
                   return (0, r.jsxs)("ul", {
                     children: [c.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
-                        className: C.onboardingChangeLogItemTitle,
+                        className: D.onboardingChangeLogItemTitle,
                         children: [(0, r.jsx)(m, {
                           actionType: p.vB8.CREATE,
                           targetType: i,
@@ -344,7 +345,7 @@ function M(e) {
                       })
                     }, e.channel_id)), _.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
-                        className: C.onboardingChangeLogItemTitle,
+                        className: D.onboardingChangeLogItemTitle,
                         children: [(0, r.jsx)(m, {
                           actionType: p.vB8.DELETE,
                           targetType: i,
@@ -370,7 +371,7 @@ function M(e) {
                   return (0, r.jsxs)("ul", {
                     children: [c.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
-                        className: C.onboardingChangeLogItemTitle,
+                        className: D.onboardingChangeLogItemTitle,
                         children: [(0, r.jsx)(m, {
                           actionType: p.vB8.CREATE,
                           targetType: i,
@@ -384,7 +385,7 @@ function M(e) {
                       })
                     }, e.channel_id)), _.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
-                        className: C.onboardingChangeLogItemTitle,
+                        className: D.onboardingChangeLogItemTitle,
                         children: [(0, r.jsx)(m, {
                           actionType: p.vB8.DELETE,
                           targetType: i,
@@ -423,13 +424,13 @@ function M(e) {
             count: Array.isArray(E) ? E.length : null,
             subtarget: null !== (n = null !== (t = o.options.subtarget) && void 0 !== t ? t : c.subtarget) && void 0 !== n ? n : null,
             newColorHook: (e, t) => (0, r.jsx)("div", {
-              className: C.colorHook,
+              className: D.colorHook,
               style: {
                 backgroundColor: c.newValue
               }
             }, t),
             oldColorHook: (e, t) => (0, r.jsx)("div", {
-              className: C.colorHook,
+              className: D.colorHook,
               style: {
                 backgroundColor: c.oldValue
               }
@@ -456,13 +457,13 @@ function M(e) {
             }
           });
           return null == d ? null : (0, r.jsxs)("div", {
-            className: C.detail,
+            className: D.detail,
             style: {
               position: "relative",
               top: 1
             },
             children: [(0, r.jsxs)(u.Text, {
-              className: C.prefix,
+              className: D.prefix,
               variant: "code",
               color: function(e) {
                 switch (e) {
@@ -475,13 +476,13 @@ function M(e) {
                 }
               }(o.actionType),
               children: [i < 10 ? "0".concat(i) : i, (0, r.jsx)("span", {
-                className: C.dash,
+                className: D.dash,
                 children: "—"
               })]
             }), (0, r.jsxs)("div", {
-              className: C.change,
+              className: D.change,
               children: [(0, r.jsx)("div", {
-                className: C.changeStr,
+                className: D.changeStr,
                 children: d
               }), null != a ? (0, r.jsx)("div", {
                 children: a
@@ -500,7 +501,7 @@ function M(e) {
       })).filter(g.lm);
     return (0, r.jsx)(u.P3F, {
       onClick: a,
-      className: i()(C.changeDetails, o),
+      className: i()(D.changeDetails, o),
       children: E
     })
   }, [t, n, a, o]), d = l.useMemo(() => {
@@ -547,7 +548,9 @@ function M(e) {
       case p.KFR.VOICE_CHANNEL_STATUS:
         return E(S.F1());
       case p.KFR.GUILD_MEMBER_VERIFICATION:
-        return E(S.JA())
+        return E(S.JA());
+      case p.KFR.GUILD_PROFILE:
+        return E(S.zT())
     }
   }, [t.targetType, t.changes, E]);
   return (0, r.jsx)(r.Fragment, {

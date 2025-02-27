@@ -2,8 +2,8 @@
 t.d(n, {
   Z: () => x
 });
-var r = t(200651),
-  i = t(192379),
+var i = t(200651),
+  r = t(192379),
   o = t(793030),
   a = t(442837),
   s = t(179360),
@@ -16,14 +16,14 @@ function x(e) {
   let {
     guildId: n
   } = e, t = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(n), [n]);
-  return (i.useEffect(() => {
+  return (r.useEffect(() => {
     (0, s.C0)(n)
-  }, [n]), null == t) ? null : (0, r.jsxs)("div", {
+  }, [n]), null == t) ? null : (0, i.jsxs)("div", {
     className: u.container,
-    children: [(0, r.jsx)(o.X6, {
+    children: [(0, i.jsx)(o.X6, {
       variant: "eyebrow",
       children: d.NW.string(d.t.yM9Krq)
-    }), t.map((e, n) => (0, r.jsx)(l.Z, {
+    }), t.map((e, n) => (0, i.jsx)(l.Z, {
       boost: e
     }, n))]
   })

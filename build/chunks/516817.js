@@ -1,43 +1,42 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => c
 }), n(978209);
 var r = n(200651);
 n(192379);
 var i = n(120356),
   o = n.n(i),
-  a = n(614185),
-  s = n(4242),
-  l = n(318110),
-  c = n(513402);
+  a = n(545951),
+  s = n(379839),
+  l = n(513402);
 
-function u(e) {
+function c(e) {
   let {
     nameplate: t,
     hovered: n,
     selected: i,
-    reverse: u,
-    content: d
-  } = e, f = (0, a.D)("Nameplate"), _ = !!(n || i), p = (0, s.BY)(null == t ? void 0 : t.src, _), h = (0, l.p)(t, n, i, d);
-  return null != t && f && null != p ? (0, r.jsx)("div", {
-    className: o()(c.container),
+    reverse: c,
+    content: u
+  } = e, d = !!(n || i), f = (0, a.B)(null == t ? void 0 : t.src, d), _ = (0, s.p)(t, n, i, u);
+  return null == t || null == f ? null : (0, r.jsx)("div", {
+    className: o()(l.container),
     style: {
-      background: h.background
+      background: _.background
     },
     children: (0, r.jsx)("img", {
-      className: o()(c.img, {
-        [c.hover]: n,
-        [c.selected]: i,
-        [c.reverse]: u
+      className: o()(l.img, {
+        [l.hover]: n,
+        [l.selected]: i,
+        [l.reverse]: c
       }),
-      src: p,
+      src: f,
       alt: t.imgAlt,
       height: "100%",
       width: "auto",
       style: {
-        maskImage: h.maskImage
+        maskImage: _.maskImage
       }
     })
-  }) : null
+  })
 }

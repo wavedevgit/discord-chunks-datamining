@@ -2,27 +2,27 @@
 t.d(n, {
   Z: () => c
 });
-var r = t(200651);
+var i = t(200651);
 t(192379);
-var i = t(120356),
-  o = t.n(i),
+var r = t(120356),
+  o = t.n(r),
   a = t(481060),
-  s = t(355135);
+  s = t(623388);
 
 function c(e) {
   let {
     onClick: n,
     active: t,
-    className: i,
+    className: r,
     label: c,
     children: l
   } = e;
-  return (0, r.jsx)(a.kL8, {
+  return (0, i.jsx)(a.kL8, {
     "aria-label": c,
     onClick: n,
     className: o()(s.container, {
       [s.active]: t
-    }, i),
+    }, r),
     children: l
   })
 }

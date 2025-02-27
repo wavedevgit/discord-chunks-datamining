@@ -56,7 +56,7 @@ let h = e => {
         left: 0,
         verticalOffset: C.COACHMARK_VERTICAL_OFFSET
       }), []),
-      b = l.useCallback(e => {
+      v = l.useCallback(e => {
         p !== e.width / 2 && O(Math.floor(e.width / 2) - 1)
       }, [p]);
     return (0, r.jsx)(u.U_, {
@@ -65,7 +65,7 @@ let h = e => {
       coachmarkRef: g,
       calculateVisibility: I,
       calculateBaseOffsets: A,
-      onGetBackgroundElementDimensions: b,
+      onGetBackgroundElementDimensions: v,
       children: (0, r.jsx)(h, {
         onClose: () => {
           _.includes(N.pathname) || (0, s.uL)(d.Z5c.ME), t()

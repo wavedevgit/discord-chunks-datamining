@@ -354,7 +354,7 @@ let G = function(e) {
       }
 
       function t() {
-        let e = _.ZP.isSwitchingPlansDisabled(i, F),
+        let e = _.ZP.isSwitchingPlansDisabled(i),
           t = _.ZP.getSwitchingPlansDisabledMessage(i);
         return (0, r.jsxs)("div", {
           className: D.toolsButtons,

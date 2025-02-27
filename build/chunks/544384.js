@@ -10,24 +10,24 @@ var i = n(442837),
   o = n(481060),
   a = n(410575),
   s = n(358221),
-  l = n(682901),
-  c = n(418469),
-  u = n(786138),
-  d = n(803647),
-  f = n(199902),
-  _ = n(594174),
-  p = n(5192),
+  l = n(418469),
+  c = n(786138),
+  u = n(803647),
+  d = n(199902),
+  f = n(594174),
+  _ = n(5192),
+  p = n(221241),
   h = n(981631),
   g = n(388032);
 
 function m(e, t, n) {
   let r = (0, i.e7)([s.Z], () => null != e ? s.Z.getSelectedParticipantId(e.id) : null),
-    o = (0, i.e7)([f.Z], () => null != r ? f.Z.getActiveStreamForStreamKey(r) : null, [r]);
-  return (0, i.Wu)([_.default], () => {
+    o = (0, i.e7)([d.Z], () => null != r ? d.Z.getActiveStreamForStreamKey(r) : null, [r]);
+  return (0, i.Wu)([f.default], () => {
     if (null == e) return [];
     let r = n.filter(e => e.ownerId !== (null == t ? void 0 : t.id)).map(t => ({
       stream: t,
-      username: p.ZP.getName(e.getGuildId(), e.id, _.default.getUser(t.ownerId))
+      username: _.ZP.getName(e.getGuildId(), e.id, f.default.getUser(t.ownerId))
     }));
     return 1 === r.length && r[0].stream.ownerId === (null == o ? void 0 : o.ownerId) ? [] : r
   }, [e, o, n, t])
@@ -39,23 +39,23 @@ function E(e) {
     channel: n,
     currentUser: i,
     activeStreams: s,
-    hideSelfOptions: f = !1,
-    showReportOption: _ = !1,
-    handleGoLive: p,
+    hideSelfOptions: d = !1,
+    showReportOption: f = !1,
+    handleGoLive: _,
     onClose: E,
     onSelect: v,
     appContext: b = h.IlC.APP,
     disableChangeWindows: y = !1,
     onInteraction: O
-  } = e, S = null !== (t = s.find(e => e.ownerId === (null == i ? void 0 : i.id))) && void 0 !== t ? t : null, I = m(n, i, s), T = (0, c.Z)(S, b), {
-    enabled: N
-  } = (0, l.Z)({
+  } = e, S = null !== (t = s.find(e => e.ownerId === (null == i ? void 0 : i.id))) && void 0 !== t ? t : null, I = m(n, i, s), T = (0, l.Z)(S, b), {
+    simplifiedSettingsEnabled: N
+  } = (0, p.Z)({
     location: "ManageStreamsMenu"
-  }), A = (0, u.b)({
+  }), A = (0, c.b)({
     disableChangeWindows: y,
     stream: S,
-    showReportOption: _,
-    handleGoLive: p,
+    showReportOption: f,
+    handleGoLive: _,
     simplified: N,
     appContext: b
   });
@@ -79,10 +79,10 @@ function E(e) {
               username: n
             }),
             icon: o.g5r,
-            action: () => (0, d.Z)(t)
+            action: () => (0, u.Z)(t)
           }, "manage-stream-menu".concat(t.ownerId))
         })
-      }), f ? null : A, N && !f ? (0, r.jsx)(o.kSQ, {
+      }), d ? null : A, N && !d ? (0, r.jsx)(o.kSQ, {
         children: (0, r.jsx)(o.sNh, {
           id: "more-options",
           label: g.NW.string(g.t.PdRCRk),

@@ -90,7 +90,7 @@ let S = () => (0, E.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       closeCoachmarkIfOpen: u
     }
   },
-  b = e => (0, r.jsx)(c.zxk, I(T({}, e), {
+  v = e => (0, r.jsx)(c.zxk, I(T({}, e), {
     "aria-label": p.NW.string(p.t.cpT0Cg),
     look: c.zxk.Looks.BLANK,
     size: c.zxk.Sizes.NONE,
@@ -101,7 +101,7 @@ let S = () => (0, E.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       className: O.closeButtonIcon
     })
   })),
-  v = e => {
+  b = e => {
     let {
       invertTail: t,
       leftOffset: n
@@ -154,7 +154,7 @@ let S = () => (0, E.Lk)(document.body.style.getPropertyValue("--custom-app-panel
     return (0, r.jsxs)("div", {
       className: o()(O.container),
       ref: d,
-      children: [(0, r.jsx)(b, {
+      children: [(0, r.jsx)(v, {
         onClick: l
       }), u, (0, r.jsxs)("div", {
         className: O.content,
@@ -167,7 +167,7 @@ let S = () => (0, E.Lk)(document.body.style.getPropertyValue("--custom-app-panel
           className: O.description,
           children: n
         })]
-      }), a && (0, r.jsx)(v, {
+      }), a && (0, r.jsx)(b, {
         leftOffset: i,
         invertTail: s
       })]

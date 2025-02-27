@@ -44,7 +44,7 @@ function Z(e) {
   } = (0, y.Z)(200, 300), U = (0, O.Z)({
     location: "CenterControlTrayActivityButton"
   }), {
-    coloredIcons: B
+    coloredIconsEnabled: B
   } = (0, j.Z)({
     location: "VideoButton"
   }), F = (0, p.a)(), H = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), G = (0, d.Z)({

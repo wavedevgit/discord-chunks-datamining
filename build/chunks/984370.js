@@ -1,4 +1,4 @@
-/** Chunk was on 84466 **/
+/** Chunk was on 17049 **/
 n.d(t, {
   O: () => M,
   Z: () => j
@@ -31,9 +31,9 @@ var i = n(120356),
   g = n(35583),
   h = n(981631),
   y = n(176505),
-  U = n(110390);
+  b = n(110390);
 
-function b(e) {
+function U(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -82,7 +82,7 @@ function v(e) {
     innerClassname: u,
     transparent: R = !1,
     toolbar: C,
-    mobileToolbar: b,
+    mobileToolbar: U,
     "aria-label": k,
     "aria-labelledby": v,
     scrollable: Z,
@@ -111,13 +111,13 @@ function v(e) {
     toolbar: function() {
       if (null == C) return null;
       let e = null != i && !j;
-      return o.tq ? b : (0, r.jsxs)(r.Fragment, {
+      return o.tq ? U : (0, r.jsxs)(r.Fragment, {
         children: [C, e ? (0, r.jsx)(P.Z, {
-          className: U.search
+          className: b.search
         }, null != c ? c : i) : null, x && (0, r.jsx)(f.ZP.Divider, {}), !Y && (0, r.jsx)(g.Z, {}), !Y && (0, r.jsx)(N.Z, {
           canShowReminder: !0
         }), !Y && (0, r.jsx)(T.Z, {}), B && !W ? (0, r.jsx)(S.Z, {}) : null, !Y && (w ? (0, r.jsx)(m.Z, {}) : (0, r.jsx)(D.Z, {})), z && F && null != V && !G && l === h.d4z.GROUP_DM && (0, r.jsxs)("div", {
-          className: U.controlButtonWrapper,
+          className: b.controlButtonWrapper,
           children: [(0, r.jsx)(f.ZP.Divider, {}), (0, r.jsx)(p.Z, {
             onClick: () => s.Z.toggleParticipantsList(V, !G)
           })]
@@ -173,13 +173,13 @@ function L(e) {
   let {
     analyticsLocations: i
   } = (0, u.ZP)(c.Z.HEADER_BAR), o = l()(n.className, {
-    [U.forumOrHome]: null != n.channelType && h.TPd.GUILD_THREADS_ONLY.has(n.channelType) || n.channelId === y.oC.GUILD_HOME
+    [b.forumOrHome]: null != n.channelType && h.TPd.GUILD_THREADS_ONLY.has(n.channelType) || n.channelId === y.oC.GUILD_HOME
   });
   return (0, r.jsx)(u.Gt, {
     value: i,
-    children: t ? (0, r.jsx)(v, k(b({}, n), {
+    children: t ? (0, r.jsx)(v, k(U({}, n), {
       className: o
-    })) : (0, r.jsx)(Z, k(b({}, n), {
+    })) : (0, r.jsx)(Z, k(U({}, n), {
       className: o
     }))
   })

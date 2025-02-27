@@ -1,4 +1,4 @@
-/** Chunk was on 84466 **/
+/** Chunk was on 17049 **/
 n.d(t, {
   Z: () => A
 });
@@ -29,10 +29,10 @@ function A(e) {
     shouldShowIncidentActions: g,
     incidentData: h,
     isUnderLockdown: y
-  } = (0, N.mI)(D), U = (0, s.n2)(null !== (t = null == m ? void 0 : m.id) && void 0 !== t ? t : O.lds), b = i.useCallback(() => null != m && (0, c._X)(m.id), [m]);
+  } = (0, N.mI)(D), b = (0, s.n2)(null !== (t = null == m ? void 0 : m.id) && void 0 !== t ? t : O.lds), U = i.useCallback(() => null != m && (0, c._X)(m.id), [m]);
   if (null == m || null == h || !g) return null;
   let k = e => {
-      if (e && U && f !== S.oC.MEMBER_SAFETY && b()) {
+      if (e && b && f !== S.oC.MEMBER_SAFETY && U()) {
         _.default.track(O.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
           notice_type: O.kVF.GUILD_RAID_NOTIFICATION,
           guild_id: m.id
@@ -114,7 +114,7 @@ function A(e) {
     }) : P.NW.formatToPlainString(P.t.W87xDA, {
       guildName: m.name
     }),
-    L = U && f === S.oC.MEMBER_SAFETY;
+    L = b && f === S.oC.MEMBER_SAFETY;
   return (0, r.jsxs)(o.qXd, {
     className: p.notice,
     color: o.DM8.WARNING,

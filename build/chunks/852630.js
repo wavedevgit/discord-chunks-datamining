@@ -19,7 +19,7 @@ function o(e) {
     guild_id: "0",
     recipients: [o.id]
   });
-  return (0, r.jsx)(i.ZP, {
+  return (0, r.jsx)(i.RS, {
     selected: t,
     channel: c,
     user: o,

@@ -122,7 +122,7 @@ let g = function(e) {
         }
       })
     }
-    x = (null == C ? void 0 : C.isPaused) ? p.NW.format(p.t.B6oNwM, {
+    x = (null == C ? void 0 : C.isPausedAllowsResumeButNotUpdates) ? p.NW.format(p.t.B6oNwM, {
       primaryText: r,
       rate: e,
       paidURL: f.EYA.PAID_TERMS,

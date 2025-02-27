@@ -1,4 +1,4 @@
-/** Chunk was on 84466 **/
+/** Chunk was on 17049 **/
 n.d(t, {
   Z: () => R
 }), n(653041), n(47120);
@@ -52,7 +52,7 @@ let R = 12633 == n.j ? () => {
     g = null,
     h = null,
     y = null,
-    U = [P.notice, p.notice];
+    b = [P.notice, p.notice];
   switch (m) {
     case _.wB.SUBMITTED:
       g = S.NW.string(S.t["5iLvS0"]), h = S.NW.string(S.t.mqtdmZ), y = () => {
@@ -92,7 +92,7 @@ let R = 12633 == n.j ? () => {
             guildId: R.id
           }, t))
         })
-      }, U.push(P.error);
+      }, b.push(P.error);
       break;
     default:
       g = S.NW.string(S.t.G5YKXF), h = S.NW.string(S.t["r8/DT0"]), y = () => {
@@ -100,7 +100,7 @@ let R = 12633 == n.j ? () => {
       }
   }
   return (0, r.jsxs)("div", {
-    className: l()(...U),
+    className: l()(...b),
     children: [(0, r.jsx)(s.Text, {
       className: P.header,
       variant: "text-sm/normal",

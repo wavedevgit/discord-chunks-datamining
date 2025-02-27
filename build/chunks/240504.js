@@ -1,19 +1,19 @@
-/** Chunk was on 42239 **/
-n.d(t, {
+/** Chunk was on 40383 **/
+i.d(t, {
   Z: () => E
 });
-var r, i = n(442837),
-  l = n(570140);
+var n, r = i(442837),
+  o = i(570140);
 
-function o(e, t, n) {
+function s(e, t, i) {
   return t in e ? Object.defineProperty(e, t, {
-    value: n,
+    value: i,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = n, e
+  }) : e[t] = i, e
 }
-let s = 12 * n(70956).Z.Millis.HOUR,
+let l = 12 * i(70956).Z.Millis.HOUR,
   a = {
     profileThemesRelevanceExceeded: null,
     savedAt: null
@@ -21,37 +21,37 @@ let s = 12 * n(70956).Z.Millis.HOUR,
   c = {
     hasFetchedRelevance: !1
   },
-  u = a,
-  d = c;
-class _ extends(r = i.ZP.PersistedStore) {
+  d = a,
+  u = c;
+class h extends(n = r.ZP.PersistedStore) {
   initialize(e) {
-    d = c, u = a;
+    u = c, d = a;
     let t = new Date;
-    null != e && null != e.savedAt && t.getTime() - e.savedAt < s && (u = e)
+    null != e && null != e.savedAt && t.getTime() - e.savedAt < l && (d = e)
   }
   get hasFetchedRelevance() {
-    return d.hasFetchedRelevance
+    return u.hasFetchedRelevance
   }
   get profileThemesRelevanceExceeded() {
-    return u.profileThemesRelevanceExceeded
+    return d.profileThemesRelevanceExceeded
   }
   getState() {
-    return u
+    return d
   }
 }
-o(_, "displayName", "PerksRelevanceStore"), o(_, "persistKey", "PerksRelevanceStore");
-let E = new _(l.Z, {
+s(h, "displayName", "PerksRelevanceStore"), s(h, "persistKey", "PerksRelevanceStore");
+let E = new h(o.Z, {
   BILLING_PERKS_RELEVANCE_FETCH_START: function() {
-    d.hasFetchedRelevance = !0
+    u.hasFetchedRelevance = !0
   },
   BILLING_PERKS_RELEVANCE_FETCH_SUCCESS: function(e) {
     let {
       res: t
     } = e;
-    null != t && (u.profileThemesRelevanceExceeded = t.eligible, u.savedAt = new Date().getTime())
+    null != t && (d.profileThemesRelevanceExceeded = t.eligible, d.savedAt = new Date().getTime())
   },
   BILLING_PERKS_RELEVANCE_FETCH_FAIL: function() {},
   LOGOUT: function() {
-    d = c, u = a
+    u = c, d = a
   }
 })

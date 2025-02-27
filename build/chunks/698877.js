@@ -42,8 +42,8 @@ function u(e) {
   } = (0, o.ZP)({
     location: "StreamButton"
   }), {
-    squareButtons: y,
-    coloredIcons: x
+    squareButtonsEnabled: y,
+    coloredIconsEnabled: x
   } = (0, a.Z)({
     location: "StreamButton"
   }), j = h ? s.d : s.Z;

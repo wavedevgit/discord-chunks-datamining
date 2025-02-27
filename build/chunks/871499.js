@@ -221,7 +221,7 @@ function D(e) {
     G = i.useRef(null),
     B = i.useContext(h.h9),
     {
-      coloredIcons: V
+      coloredIconsEnabled: V
     } = (0, f.Z)({
       location: "CenterControlButton"
     });

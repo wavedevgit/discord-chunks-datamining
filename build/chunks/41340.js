@@ -61,10 +61,10 @@ function g(e) {
   let {
     subscription: g,
     onUpdated: v
-  } = e, [j, y] = a.useState(!1), [C, N] = a.useState(!1), [T, O] = a.useState(null), E = e => (null == e && (e = g.status), e in b) ? b[e] : "Unknown status ".concat(e), S = e => {
+  } = e, [j, y] = a.useState(!1), [C, N] = a.useState(!1), [T, O] = a.useState(null), S = e => (null == e && (e = g.status), e in b) ? b[e] : "Unknown status ".concat(e), E = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
-  }, I = async e => {
+  }, k = async e => {
     let {
       status: t = g.status,
       premiumStreakStart: n,
@@ -89,16 +89,16 @@ function g(e) {
     }({
       subscription_status: t
     }, null != n ? {
-      premium_streak_started_at: S(n)
+      premium_streak_started_at: E(n)
     } : null, null != r ? {
-      ended_at: S(r)
+      ended_at: E(r)
     } : null);
     await o.tn.patch({
       url: "/debug/subscriptions/".concat(g.id),
       body: a,
       rejectWithError: !1
     }), v()
-  }, k = async () => {
+  }, I = async () => {
     try {
       await o.tn.post({
         url: "/debug/subscriptions/".concat(g.id, "/transition"),
@@ -134,7 +134,7 @@ function g(e) {
         marginBottom: "15px"
       },
       variant: "text-md/normal",
-      children: ["Status: ", E()]
+      children: ["Status: ", S()]
     }), null != g.metadata && (0, r.jsxs)("div", {
       className: f.collapsablePane,
       children: [(0, r.jsxs)(s.P3F, {
@@ -191,10 +191,10 @@ function g(e) {
           tag: s.RB0.H3,
           className: f.formSection,
           children: (0, r.jsx)(s.PhF, {
-            serialize: e => E(e),
+            serialize: e => S(e),
             isSelected: e => e === g.status,
             options: _,
-            select: e => I({
+            select: e => k({
               status: e
             }),
             popoutLayerContext: m.O$
@@ -205,7 +205,7 @@ function g(e) {
           className: f.formSection,
           children: [(0, r.jsx)(s.zxk, {
             size: s.zxk.Sizes.SMALL,
-            onClick: e => k(),
+            onClick: e => I(),
             children: "Renew Subscription"
           }), null !== T && (0, r.jsx)(s.kzN, {
             className: f.error,
@@ -219,7 +219,7 @@ function g(e) {
           children: (0, r.jsx)("input", {
             type: "date",
             value: null === (i = g.premiumSince) || void 0 === i ? void 0 : i.toISOString().substring(0, 10),
-            onChange: e => I({
+            onChange: e => k({
               premiumStreakStart: e.target.value
             })
           })
@@ -230,7 +230,7 @@ function g(e) {
           children: (0, r.jsx)("input", {
             type: "date",
             value: P,
-            onChange: e => I({
+            onChange: e => k({
               endedAt: e.target.value
             })
           })

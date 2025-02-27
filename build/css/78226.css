@@ -1,6 +1,6 @@
 /**
   Module ID: 78226
-  Original File Name: 9b387b0aea81a46b
+  Original File Name: 43c1713ddf8442cf
 **/
 .partnerBranding__83420 {
     align-items: center;
@@ -376,6 +376,10 @@
     background: var(--background-secondary)
 }
 
+.visual-refresh .root__2055a {
+    background-color: var(--background-surface-high)
+}
+
 .rewardTileWrapper__2055a {
     position: relative;
     grid-area: cta-img
@@ -627,6 +631,10 @@
     min-width: 280px;
     border-radius: 8px;
     overflow: hidden
+}
+
+.visual-refresh .questsCard__72a00 {
+    box-shadow: var(--shadow-low)
 }
 
 .questsCard__72a00+.questsCard__72a00 {
@@ -984,4 +992,4 @@
     margin-top: 0
 }
 
-/*# sourceMappingURL=9b387b0aea81a46b.css.map*/
+/*# sourceMappingURL=43c1713ddf8442cf.css.map*/

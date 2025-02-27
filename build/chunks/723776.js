@@ -80,7 +80,7 @@ function x(e) {
     })
   }, "overflow") : (0, r.jsx)(v, {
     trait: e
-  }, e.label), []);
+  }, e.key), []);
   return (0, r.jsx)(a.Epb, {
     className: d.container,
     items: n,

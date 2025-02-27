@@ -1,6 +1,6 @@
-/** Chunk was on 84466 **/
+/** Chunk was on 17049 **/
 n.d(t, {
-  A: () => U
+  A: () => b
 });
 var r = n(200651);
 n(192379);
@@ -30,11 +30,11 @@ var i = n(442837),
   g = n(474936),
   h = n(388032),
   y = n(923627);
-let U = e => {
+let b = e => {
   let {
     dismissibleContent: t,
-    noticeType: U
-  } = e, b = (0, i.e7)([p.ZP], () => p.ZP.getNotice()), k = (0, i.e7)([P.default], () => P.default.locale);
+    noticeType: b
+  } = e, U = (0, i.e7)([p.ZP], () => p.ZP.getNotice()), k = (0, i.e7)([P.default], () => P.default.locale);
   return (0, r.jsx)(C.ZP, {
     contentTypes: [t],
     groupName: f.R.NOTICE_BAR,
@@ -50,7 +50,7 @@ let U = e => {
             color: o.DM8.DEFAULT,
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(f.L.UNKNOWN),
-              noticeType: U
+              noticeType: b
             }), h.NW.string(h.t["+xn1o6"]), (0, r.jsx)("i", {
               className: y.iconApple
             }), (0, r.jsx)("i", {
@@ -58,7 +58,7 @@ let U = e => {
             }), (0, r.jsx)("i", {
               className: y.iconWindows
             }), (0, r.jsx)(o.NoS, {
-              noticeType: U,
+              noticeType: b,
               onClick: () => {
                 (0, o.ZDy)(async () => {
                   let {
@@ -94,7 +94,7 @@ let U = e => {
             color: o.DM8.SPOTIFY,
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(f.L.UNKNOWN),
-              noticeType: U
+              noticeType: b
             }), (0, r.jsx)(A.Z, {
               className: y.platformIcon
             }), h.NW.string(h.t["5NUVHB"]), (0, r.jsx)(o.NoS, {
@@ -102,7 +102,7 @@ let U = e => {
                 platformType: D.ABu.SPOTIFY,
                 location: "Notice Bar"
               }),
-              noticeType: U,
+              noticeType: b,
               children: h.NW.string(h.t.S0W8Z2)
             })]
           });
@@ -128,10 +128,10 @@ let U = e => {
             color: o.DM8.DEFAULT,
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(f.L.UNKNOWN),
-              noticeType: U
+              noticeType: b
             }), h.NW.string(h.t.B2hnhY), (0, r.jsx)(o.NoS, {
               onClick: () => s.Z.open(D.oAB.ACCOUNT),
-              noticeType: U,
+              noticeType: b,
               children: h.NW.string(h.t["50KYxs"])
             })]
           });
@@ -145,7 +145,7 @@ let U = e => {
               children: h.NW.string(h.t["+urf7+"])
             }), (0, r.jsx)(o.NoS, {
               className: y.premiumAction,
-              noticeType: U,
+              noticeType: b,
               onClick: () => {
                 R.default.track(D.rMx.PREMIUM_PROMOTION_OPENED, {
                   location_section: D.jXE.NOTIFICATION_BAR,
@@ -157,7 +157,7 @@ let U = e => {
               onClick: () => {
                 i(f.L.UNKNOWN), (0, a.mB)(D.xW$.PREMIUM_PROMO_DISMISSED, !0)
               },
-              noticeType: U
+              noticeType: b
             })]
           });
         case l.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING:
@@ -174,10 +174,10 @@ let U = e => {
           return (0, r.jsxs)(o.qXd, {
             color: o.DM8.PREMIUM_TIER_2,
             children: [(0, r.jsx)(o.RyX, {
-              noticeType: U,
+              noticeType: b,
               onClick: () => i(f.L.UNKNOWN)
             }), h.NW.string(h.t["0KFB2N"]), (0, r.jsx)(o.NoS, {
-              noticeType: U,
+              noticeType: b,
               onClick: () => {
                 i(f.L.UNKNOWN), s.Z.open(D.oAB.PREMIUM)
               },
@@ -186,8 +186,8 @@ let U = e => {
           });
         case l.z.NAGBAR_NOTICE_LOCALIZED_PRICING:
           return (0, r.jsx)(T.Z, {
-            notice: b,
-            noticeType: U,
+            notice: U,
+            noticeType: b,
             dismissCurrentNotice: () => i(f.L.UNKNOWN)
           });
         case l.z.NAGBAR_BOUNCED_EMAIL_NOTICE:
@@ -195,9 +195,9 @@ let U = e => {
             color: o.DM8.DANGER,
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(f.L.UNKNOWN),
-              noticeType: U
+              noticeType: b
             }), h.NW.string(h.t["7490vb"]), (0, r.jsx)(o.NoS, {
-              noticeType: U,
+              noticeType: b,
               onClick: () => {
                 (0, S.uL)(D.Z5c.SETTINGS("account"))
               },
@@ -210,9 +210,9 @@ let U = e => {
             color: o.DM8.DEFAULT,
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(f.L.UNKNOWN),
-              noticeType: U
+              noticeType: b
             }), h.NW.string(h.t.pJ4hJC), (0, r.jsx)(o.NoS, {
-              noticeType: U,
+              noticeType: b,
               onClick: () => {
                 i(f.L.PRIMARY), (0, S.uL)(1 === P.length ? D.Z5c.GUILD_SETTINGS(P[0], "role-subscriptions") : D.Z5c.PICK_GUILD_SETTINGS("role-subscriptions", void 0, "server-subscriptions-finish-setting-up"))
               },
@@ -224,10 +224,10 @@ let U = e => {
             color: o.DM8.WARNING,
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(f.L.UNKNOWN),
-              noticeType: U
+              noticeType: b
             }), h.NW.format(h.t.pdYZys, {}), (0, r.jsx)(o.NoS, {
               onClick: () => (0, I.Z)(m.Kq.NOTICE),
-              noticeType: U,
+              noticeType: b,
               children: h.NW.string(h.t.LhlgY2)
             })]
           });
@@ -236,12 +236,12 @@ let U = e => {
             color: o.DM8.WARNING,
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(f.L.UNKNOWN),
-              noticeType: U
+              noticeType: b
             }), h.NW.format(h.t.zT1hgo, {
               date: (0, N.IE)(k)
             }), (0, r.jsx)(o.NoS, {
               onClick: () => (0, I.Z)(m.Kq.NOTICE),
-              noticeType: U,
+              noticeType: b,
               children: h.NW.string(h.t.LhlgY2)
             })]
           });
@@ -250,7 +250,7 @@ let U = e => {
             color: o.DM8.PREMIUM_TIER_2,
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(f.L.UNKNOWN),
-              noticeType: U
+              noticeType: b
             }), h.NW.string(h.t["O9GI+v"]), (0, r.jsx)(o.NoS, {
               onClick: () => {
                 (0, _.Z)({
@@ -260,7 +260,7 @@ let U = e => {
                   onClose: () => i(f.L.UNKNOWN)
                 })
               },
-              noticeType: U,
+              noticeType: b,
               children: h.NW.string(h.t.Zi69Dw)
             })]
           })

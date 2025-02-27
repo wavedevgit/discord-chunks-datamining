@@ -31,7 +31,7 @@ function c(e) {
     tooltipColor: S,
     tooltipForceOpen: N,
     tooltipContentClassName: A
-  } = e, b = "function" == typeof d ? (0, r.jsx)(d, {
+  } = e, v = "function" == typeof d ? (0, r.jsx)(d, {
     width: 20,
     height: 20,
     size: "custom",
@@ -110,8 +110,8 @@ function c(e) {
           width: 20,
           height: 20,
           mask: a.ZP.Masks.PANEL_BUTTON,
-          children: b
-        }) : b, n]
+          children: v
+        }) : v, n]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

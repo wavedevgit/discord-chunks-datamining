@@ -64,7 +64,7 @@ let U = l.memo(function() {
       }))
     })
   }),
-  C = l.memo(function() {
+  D = l.memo(function() {
     return (0, r.jsx)(s.ua7, {
       text: R.NW.string(R.t.OrCp9v),
       children: e => (0, r.jsx)(s.Text, p(S({}, e), {
@@ -75,7 +75,7 @@ let U = l.memo(function() {
       }))
     })
   }),
-  D = {
+  L = {
     [g.gq.UNSPECIFIED]: {
       type: g.gq.UNSPECIFIED,
       getJoinTypeLabel: () => R.NW.string(R.t.DvMBkZ),
@@ -162,7 +162,7 @@ let U = l.memo(function() {
     }
   };
 
-function L(e) {
+function C(e) {
   var t;
   let {
     guildId: n,
@@ -206,7 +206,7 @@ function h(e) {
   return n && null != a ? (0, r.jsx)(s.ua7, {
     "aria-label": i !== g.gq.BOT ? R.NW.string(R.t.azhY2t) : R.NW.string(R.t["2ByN2t"]),
     allowOverflow: !0,
-    text: (0, r.jsx)(L, {
+    text: (0, r.jsx)(C, {
       guildId: l,
       inviterUser: a,
       joinSourceType: i
@@ -257,7 +257,7 @@ function M(e) {
     }
     return l
   }(e, ["sourceInviteCode", "joinSourceType", "integrationType", "showInviterAsFooter", "guildId", "inviterUser", "onClickInviter"]);
-  let d = null != n ? D[n] : null,
+  let d = null != n ? L[n] : null,
     A = n === g.gq.INTEGRATION && null != a,
     T = l.useCallback(e => {
       switch (e.stopPropagation(), e.preventDefault(), !0) {
@@ -313,7 +313,7 @@ function M(e) {
             variant: "text-sm/medium",
             children: null == d ? void 0 : d.getJoinTypeLabel(null != t ? t : void 0)
           })]
-        })), o && (0, r.jsx)(L, {
+        })), o && (0, r.jsx)(C, {
           guildId: E,
           inviterUser: c,
           joinSourceType: n,
@@ -344,8 +344,8 @@ let v = l.memo(function(e) {
     sourceInviteCode: R,
     joinSourceType: f,
     integrationType: p
-  } = _, L = null != f ? D[f] : null, m = null !== (n = null == L ? void 0 : L.hasTooltip) && void 0 !== n && n;
-  return (f === g.gq.INVITE || f === g.gq.VANITY_URL || f === g.gq.MANUAL_MEMBER_VERIFICATION && null != R) && O ? (0, r.jsx)(C, {}) : (0, r.jsx)(h, {
+  } = _, C = null != f ? L[f] : null, m = null !== (n = null == C ? void 0 : C.hasTooltip) && void 0 !== n && n;
+  return (f === g.gq.INVITE || f === g.gq.VANITY_URL || f === g.gq.MANUAL_MEMBER_VERIFICATION && null != R) && O ? (0, r.jsx)(D, {}) : (0, r.jsx)(h, {
     hasTooltip: m && !s,
     inviterUser: null != N ? N : null,
     guildId: i,

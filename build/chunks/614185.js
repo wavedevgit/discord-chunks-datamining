@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 17049 **/
 n.d(t, {
-  D: () => a,
-  E: () => o
+  D: () => o,
+  E: () => l
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let l = (0, r.B)({
     kind: "user",
     id: "2025-02_name_plate_experiment",
     label: "Nameplates Experiment",
@@ -31,7 +30,7 @@ let o = (0, r.B)({
       }
     }]
   }),
-  a = e => o.useExperiment({
+  o = e => l.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1

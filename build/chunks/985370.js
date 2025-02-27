@@ -40,24 +40,19 @@ let v = e => {
   }), w = (0, m.Z)({
     location: "ActionBarSoundboardButton"
   }), {
-    coloredIcons: R,
-    squareButtons: M
+    coloredIconsEnabled: R,
+    squareButtonsEnabled: M
   } = (0, f.Z)({
     location: "ActionBarSoundboardButton"
-  }), k = A === h.BK.GroupedButtonsRedMic || M ? "green" : void 0;
-  R && (k = "primaryDark");
-  let L = i.useCallback(e => {
-      "focus" !== e.type && (E || T || j())
-    }, [E, T, j]),
-    D = i.useCallback(() => {
-      E || O()
-    }, [O, E]),
-    W = i.useCallback((e, t) => {
-      N(), I(!E), l === b.D.EMOJI ? null == v || v(void 0) : null == v || v(b.D.EMOJI), (!y || E) && (null == t || t(e))
-    }, [N, E, y, v, l]),
-    U = (y || E) && (l === b.D.EMOJI || null == l);
+  }), k = i.useCallback(e => {
+    "focus" !== e.type && (E || T || j())
+  }, [E, T, j]), L = i.useCallback(() => {
+    E || O()
+  }, [O, E]), D = i.useCallback((e, t) => {
+    N(), I(!E), l === b.D.EMOJI ? null == v || v(void 0) : null == v || v(b.D.EMOJI), (!y || E) && (null == t || t(e))
+  }, [N, E, y, v, l]), W = (y || E) && (l === b.D.EMOJI || null == l);
   return (0, r.jsx)(s.yRy, {
-    shouldShow: U,
+    shouldShow: W,
     animation: w ? s.yRy.Animation.FADE : s.yRy.Animation.TRANSLATE,
     animationPosition: w ? "top" : "bottom",
     position: "bottom",
@@ -71,11 +66,11 @@ let v = e => {
         closePopout: n
       } = e;
       return (0, r.jsx)(g.Z, {
-        isHovered: U,
+        isHovered: W,
         channel: t,
         closePopout: n,
         onMouseEnter: j,
-        onMouseLeave: D,
+        onMouseLeave: L,
         onFocus: () => I(!0)
       })
     },
@@ -86,18 +81,18 @@ let v = e => {
       } = e;
       return (0, r.jsx)(d.Z, {
         isCenterButton: !0,
-        color: E ? k : void 0,
+        color: E ? R ? "primaryDark" : A === h.BK.GroupedButtonsRedMic || M ? "green" : void 0 : void 0,
         totalCooldownSeconds: S,
         remainingCooldownSeconds: Z,
         className: o()(!w && C.controlButton, n),
         onKeyDown: e => {
-          e.keyCode === _.yXg.ENTER && e.keyCode === _.yXg.SPACE && W(e, i)
+          e.keyCode === _.yXg.ENTER && e.keyCode === _.yXg.SPACE && D(e, i)
         },
         onClick: e => {
-          W(e, t)
+          D(e, t)
         },
-        onMouseEnter: L,
-        onMouseLeave: D,
+        onMouseEnter: k,
+        onMouseLeave: L,
         isActive: E
       })
     }

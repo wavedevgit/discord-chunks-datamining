@@ -972,8 +972,8 @@ function ey(e) {
   return (0, E.QX)(r, n)
 }
 
-function eO(e, t) {
-  return null != t && t !== A.a$.NONE || null != e.renewalMutations || null != e.trialEndsAt || e.status === T.O0b.PAST_DUE
+function eO(e) {
+  return null != e.renewalMutations || null != e.trialEndsAt || e.status === T.O0b.PAST_DUE
 }
 
 function eS(e) {

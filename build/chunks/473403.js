@@ -25,9 +25,9 @@ var r = n(200651),
   S = n(981631),
   p = n(490897),
   U = n(436804),
-  C = n(81503);
+  D = n(81503);
 
-function D(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,12 +59,12 @@ function L(e, t) {
   }), e
 }
 let h = {
-  SELECTED: C.modeSelected,
-  CONNECTED: C.modeConnected,
-  UNREAD_IMPORTANT: C.modeUnreadImportant,
-  UNREAD_LESS_IMPORTANT: C.modeUnreadLessImportant,
-  MUTED: C.modeMuted,
-  LOCKED: C.modeLocked
+  SELECTED: D.modeSelected,
+  CONNECTED: D.modeConnected,
+  UNREAD_IMPORTANT: D.modeUnreadImportant,
+  UNREAD_LESS_IMPORTANT: D.modeUnreadLessImportant,
+  MUTED: D.modeMuted,
+  LOCKED: D.modeLocked
 };
 
 function m(e) {
@@ -117,8 +117,8 @@ let P = e => {
   } = e, u = (0, s.e7)([I.Z], () => I.Z.getGuild(l.guild_id), [l.guild_id]), d = l.type === S.d4z.DM || l.type === S.d4z.GROUP_DM, A = null;
   if (c && null != u && !d) A = (0, r.jsx)(T.Z, {
     size: T.E.SMALL_32,
-    className: C.iconContainerWithGuildIcon,
-    iconClassName: C.iconWithGuildIcon,
+    className: D.iconContainerWithGuildIcon,
+    iconClassName: D.iconWithGuildIcon,
     channel: l,
     guild: u,
     locked: a,
@@ -149,7 +149,7 @@ let P = e => {
     if (null == e) return null;
     A = (0, r.jsx)(e, {
       color: "currentColor",
-      className: i()(C.icon, t)
+      className: i()(D.icon, t)
     })
   }
   let N = c ? null == u ? void 0 : u.name : (0, _.bT)(l, u, a, o),
@@ -157,10 +157,10 @@ let P = e => {
   return (0, r.jsx)(E.ua7, {
     text: N,
     delay: 500,
-    children: e => (0, r.jsx)("div", L(D({}, e), {
+    children: e => (0, r.jsx)("div", C(L({}, e), {
       role: "img",
       "aria-label": O,
-      className: i()(C.iconContainer, n),
+      className: i()(D.iconContainer, n),
       children: A
     }))
   })
@@ -192,8 +192,8 @@ function x(e) {
     onMouseEnter: F,
     onMouseLeave: W,
     "aria-label": B,
-    children: w,
-    guild: z,
+    children: z,
+    guild: w,
     channelTypeOverride: k,
     forceInteractable: V,
     mentionCount: H,
@@ -219,15 +219,15 @@ function x(e) {
     return l
   }(J, ["role"]), ee = l.useRef(null), et = l.useRef(null), en = (0, A.Z)(n), er = S.Z5c.CHANNEL(en, n.id), el = (0, u.ZP)(n), ea = n.isGuildVocal(), ei = (0, r.jsx)("div", {
     className: i()({
-      [C.favoritesSuggestion]: Z
+      [D.favoritesSuggestion]: Z
     }),
     ref: et,
-    children: (0, r.jsxs)(N.Z, L(D({
+    children: (0, r.jsxs)(N.Z, C(L({
       role: ea && !_ ? "button" : "link",
       href: ea ? void 0 : er,
       target: "_blank",
       ref: ee,
-      className: C.link,
+      className: D.link,
       onClick: () => null == g ? void 0 : g(n)
     }, $), {
       "aria-label": B,
@@ -235,33 +235,33 @@ function x(e) {
         enabled: !1
       },
       children: [(0, r.jsxs)("div", {
-        className: C.linkTop,
+        className: D.linkTop,
         children: [(0, r.jsx)(P, {
           className: x,
           channel: n,
-          guild: z,
+          guild: w,
           hasActiveThreads: O,
           locked: I,
           withGuildIcon: q
         }), (0, r.jsx)(d.Z, {
-          className: i()(C.name, {
-            [C.activeEvent]: Y
+          className: i()(D.name, {
+            [D.activeEvent]: Y
           }),
           "aria-hidden": !0,
           children: null == a ? el : a
-        }), l.Children.count(w) > 0 ? (0, r.jsx)("div", {
+        }), l.Children.count(z) > 0 ? (0, r.jsx)("div", {
           onClick: m,
-          className: C.children,
-          children: w
+          className: D.children,
+          children: z
         }) : null]
       }), null != y ? (0, r.jsx)("div", {
-        className: i()(C.linkBottom, {
-          [C.withGuildIcon]: q
+        className: i()(D.linkBottom, {
+          [D.withGuildIcon]: q
         }),
         children: (0, r.jsx)(E.Text, {
           color: null != j ? j : "text-muted",
           variant: "text-xs/medium",
-          className: C.subtitle,
+          className: D.subtitle,
           children: y
         })
       }) : null]
@@ -276,22 +276,22 @@ function x(e) {
       right: 4
     },
     children: (0, r.jsxs)("div", {
-      className: i()(b, null != g || null != f || null != R || V ? C.wrapper : C.notInteractive, c ? i()(U.selectedChannel, h.SELECTED) : _ ? i()(U.selectedChannel, h.CONNECTED) : I ? h.LOCKED : s ? h.MUTED : T ? X ? h.UNREAD_IMPORTANT : h.UNREAD_LESS_IMPORTANT : null, function(e) {
+      className: i()(b, null != g || null != f || null != R || V ? D.wrapper : D.notInteractive, c ? i()(U.selectedChannel, h.SELECTED) : _ ? i()(U.selectedChannel, h.CONNECTED) : I ? h.LOCKED : s ? h.MUTED : T ? X ? h.UNREAD_IMPORTANT : h.UNREAD_LESS_IMPORTANT : null, function(e) {
         switch (e) {
           case S.d4z.GUILD_STAGE_VOICE:
           case S.d4z.GUILD_VOICE:
-            return C.typeVoice;
+            return D.typeVoice;
           case S.d4z.ANNOUNCEMENT_THREAD:
           case S.d4z.PUBLIC_THREAD:
           case S.d4z.PRIVATE_THREAD:
-            return C.typeThread;
+            return D.typeThread;
           case S.d4z.GUILD_ANNOUNCEMENT:
           case S.d4z.GUILD_TEXT:
           case S.d4z.GUILD_STORE:
           case S.d4z.GUILD_FORUM:
           case S.d4z.GUILD_MEDIA:
           default:
-            return C.typeDefault
+            return D.typeDefault
         }
       }(null != k ? k : G)),
       onMouseUp: e => null == f ? void 0 : f(e, n),
@@ -300,7 +300,7 @@ function x(e) {
       onMouseEnter: F,
       onMouseLeave: W,
       children: [s || !T ? null : (0, r.jsx)("div", {
-        className: i()(C.unread, X ? C.unreadImportant : void 0)
+        className: i()(D.unread, X ? D.unreadImportant : void 0)
       }), null !== (t = null == v ? void 0 : v(ei)) && void 0 !== t ? t : ei]
     })
   })

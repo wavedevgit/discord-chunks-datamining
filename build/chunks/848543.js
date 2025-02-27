@@ -83,7 +83,7 @@ function A(e) {
   }(e, ["channel", "iconClassName", "className", "innerClassName"]);
   let L = (0, g.Q3)("SoundBoardRTCPanelButton"),
     {
-      coloredIcons: w
+      coloredIconsEnabled: w
     } = (0, b.Z)({
       location: "ConnectedRTCConnection"
     }),

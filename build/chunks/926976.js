@@ -45,7 +45,7 @@ let O = [{
   }
 }];
 
-function E(e) {
+function S(e) {
   let {
     children: t
   } = e;
@@ -57,7 +57,7 @@ function E(e) {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     name: t,
     children: n
@@ -72,7 +72,7 @@ function S(e) {
     })]
   })
 }
-let I = [{
+let k = [{
     id: "details",
     name: "Details",
     render: e => {
@@ -119,10 +119,10 @@ let I = [{
               children: i
             })
           })]
-        }), (0, r.jsx)(E, {
+        }), (0, r.jsx)(S, {
           children: Object.entries(n).map(e => {
             let [t, n] = e;
-            return (0, r.jsx)(S, {
+            return (0, r.jsx)(E, {
               name: "".concat(t, ":"),
               children: null != n ? (0, r.jsx)("code", {
                 children: JSON.stringify(n)
@@ -136,10 +136,10 @@ let I = [{
       })
     }
   }],
-  k = {
+  I = {
     events: {
       label: "Events",
-      filter: e => Object.entries(k).filter(e => {
+      filter: e => Object.entries(I).filter(e => {
         let [t] = e;
         return "events" !== t
       }).map(t => {
@@ -168,7 +168,7 @@ function w() {
     [t, n] = a.useState(""),
     i = (0, d.e7)([b.Z], () => b.Z.loggedEventsVersion),
     s = a.useMemo(() => b.Z.loggedEvents, [i]),
-    [c, m] = a.useState(Object.keys(k)),
+    [c, m] = a.useState(Object.keys(I)),
     [h, f] = a.useState(s),
     p = a.useRef(null),
     g = a.useMemo(() => (0, o.throttle)(async (e, t) => {
@@ -187,19 +187,19 @@ function w() {
     }, 300, {
       leading: !0
     }), []),
-    E = a.useMemo(() => h.filter(e => {
+    S = a.useMemo(() => h.filter(e => {
       for (let t of c)
-        if (k[t].filter(e)) return !0;
+        if (I[t].filter(e)) return !0;
       return !1
     }), [h, c]);
   a.useEffect(() => {
     g(t, s)
   }, [t, g, s]);
-  let [S, w] = a.useState(void 0), Z = E.find(e => e.key === S), {
+  let [E, w] = a.useState(void 0), Z = S.find(e => e.key === E), {
     TabBar: P,
     renderSelectedTab: R
   } = (0, y.Z)({
-    tabs: I
+    tabs: k
   }, []);
   return (0, r.jsxs)("div", {
     ref: e,
@@ -223,7 +223,7 @@ function w() {
         className: N.toolbarDivider
       }), (0, r.jsx)("div", {
         className: N.filters,
-        children: Object.entries(k).map(e => {
+        children: Object.entries(I).map(e => {
           let [t, n] = e;
           return (0, r.jsx)(u.P3F, {
             className: l()(N.filter, c.includes(t) && N.activeFilter),
@@ -245,8 +245,8 @@ function w() {
       })
     }), (0, r.jsx)(j.Z, {
       columns: O,
-      data: E,
-      selectedRowKey: S,
+      data: S,
+      selectedRowKey: E,
       onClickRow: e => w(e.key)
     }), null != Z && (0, r.jsxs)(v.Z, {
       className: N.subPanel,

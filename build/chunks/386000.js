@@ -47,8 +47,8 @@ function _(e) {
   } = (0, h.ZP)({
     location: "MicButton"
   }), {
-    squareButtons: N,
-    coloredIcons: E
+    squareButtonsEnabled: N,
+    coloredIconsEnabled: E
   } = (0, f.Z)({
     location: "MuteButton"
   }), I = t || n || _, P = C ? g.d : g.Z, S = (0, p.Z)(t, n, _, v, O === h.BK.GroupedButtonsRedMic), Z = (0, c.O)(I ? "unmute" : "mute"), T = (0, u.P)(I ? "unmute" : "mute"), {

@@ -1,6 +1,6 @@
 /**
   Module ID: 78718
-  Original File Name: b955e6d78fa4f8bb
+  Original File Name: c475b24fac665571
 **/
 .close__8118d {
     position: absolute;
@@ -55,4 +55,8 @@
     flex: 1
 }
 
-/*# sourceMappingURL=b955e6d78fa4f8bb.css.map*/
+.error__8118d {
+    margin-top: var(--spacing-16)
+}
+
+/*# sourceMappingURL=c475b24fac665571.css.map*/

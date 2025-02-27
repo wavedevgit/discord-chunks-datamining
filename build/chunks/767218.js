@@ -3,7 +3,7 @@ t.d(n, {
   Z: () => x,
   b: () => u
 });
-var r, i = t(200651);
+var i, r = t(200651);
 t(192379);
 var o = t(793030),
   a = t(692547),
@@ -11,25 +11,25 @@ var o = t(793030),
   c = t(783684),
   l = t(388032),
   d = t(532997),
-  u = ((r = {})[r.AVAILABLE = 0] = "AVAILABLE", r[r.SPENT = 1] = "SPENT", r[r.TOTAL = 2] = "TOTAL", r);
+  u = ((i = {})[i.AVAILABLE = 0] = "AVAILABLE", i[i.SPENT = 1] = "SPENT", i[i.TOTAL = 2] = "TOTAL", i);
 
 function x(e) {
   let {
     count: n,
     type: t
   } = e;
-  return (0, i.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: d.container,
-    children: [(0, i.jsxs)("div", {
+    children: [(0, r.jsxs)("div", {
       className: d.headerContainer,
-      children: [(0, i.jsx)(s.Z, {
+      children: [(0, r.jsx)(s.Z, {
         fill: 0 !== t ? a.Z.colors.HEADER_MUTED.css : void 0
-      }), (0, i.jsx)(o.X6, {
+      }), (0, r.jsx)(o.X6, {
         color: 0 !== t ? "header-muted" : "header-primary",
         variant: "heading-lg/semibold",
         children: n
       })]
-    }), (0, i.jsx)(o.xv, {
+    }), (0, r.jsx)(o.xv, {
       color: "header-muted",
       variant: "text-sm/medium",
       children: (() => {

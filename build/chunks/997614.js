@@ -83,17 +83,17 @@ function S(e) {
   }), G = (0, g.Z)({
     location: "ActionBarSoundboardButton"
   }), {
-    coloredIcons: V,
-    squareButtons: z
+    coloredIconsEnabled: V,
+    squareButtonsEnabled: z
   } = (0, m.Z)({
     location: "ActionBarSoundboardButton"
-  }), q = H === f.BK.GroupedButtonsRedMic || z ? "green" : void 0;
+  });
 
-  function Y() {
+  function q() {
     return k ? E.NW.string(E.t["Ox4/zc"]) : L ? E.NW.string(E.t["+YBKYG"]) : D ? E.NW.string(E.t.X1lQlp) : void 0
   }
 
-  function K(e) {
+  function Y(e) {
     null != M && (0, c.jW)(e, async () => {
       let {
         default: e
@@ -105,17 +105,16 @@ function S(e) {
       }))
     })
   }
-  V && (q = "primaryDark");
-  let X = i.useRef(null),
-    Q = i.useCallback(() => {
+  let K = i.useRef(null),
+    X = i.useCallback(() => {
       var e;
-      null === (e = X.current) || void 0 === e || e.hidePopout()
+      null === (e = K.current) || void 0 === e || e.hidePopout()
     }, []);
   return (0, y.yp)({
     event: O.CkL.TOGGLE_SOUNDBOARD,
-    handler: Q
+    handler: X
   }), (0, r.jsx)(j.Z, {
-    ref: X,
+    ref: K,
     isPopoutBlocked: null != Z && Z !== N.D.SOUNDBOARD,
     onPopoutClose: () => null == T ? void 0 : T(void 0),
     onPopoutOpen: () => null == T ? void 0 : T(N.D.SOUNDBOARD),
@@ -139,10 +138,10 @@ function S(e) {
     },
     children: e => G ? (0, r.jsx)(C.d, P(I({
       themeable: S,
-      label: Y(),
+      label: q(),
       iconComponent: A,
       disabled: W,
-      onContextMenu: K
+      onContextMenu: Y
     }, e), {
       onMouseEnter: t => {
         e.onMouseEnter(t), w()
@@ -150,14 +149,14 @@ function S(e) {
       onMouseLeave: () => {
         e.onMouseLeave(), R()
       },
-      color: e.isActive ? q : void 0,
+      color: e.isActive ? V ? "primaryDark" : H === f.BK.GroupedButtonsRedMic || z ? "green" : void 0 : void 0,
       className: ""
     })) : (0, r.jsx)(C.Z, I({
       themeable: S,
-      label: Y(),
+      label: q(),
       iconComponent: s.KY1,
       disabled: W,
-      onContextMenu: K
+      onContextMenu: Y
     }, e))
   })
 }

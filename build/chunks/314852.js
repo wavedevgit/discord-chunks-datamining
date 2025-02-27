@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N,
+  Z: () => A,
   a: () => f
-}), n(47120);
+}), n(47120), n(266796);
 var r, i = n(442837),
   o = n(570140),
   a = n(406218),
@@ -190,7 +190,24 @@ function I(e) {
   } = e;
   null != t && n && _.delete(t)
 }
-class T extends(r = i.ZP.Store) {
+
+function T(e) {
+  var t, n, r;
+  let {
+    guild: i
+  } = e, o = _.get(i.id);
+  if (null == o || null == o.profile) return !1;
+  let a = d(c({}, o.profile), {
+    name: i.name,
+    icon: null !== (t = i.icon) && void 0 !== t ? t : null,
+    description: null !== (n = i.description) && void 0 !== n ? n : "",
+    customBanner: null !== (r = i.discovery_splash) && void 0 !== r ? r : null
+  });
+  _.set(i.id, d(c({}, o), {
+    profile: a
+  }))
+}
+class N extends(r = i.ZP.Store) {
   getProfile(e) {
     var t, n;
     return null == e ? null : null !== (n = null === (t = _.get(e)) || void 0 === t ? void 0 : t.profile) && void 0 !== n ? n : null
@@ -212,8 +229,8 @@ class T extends(r = i.ZP.Store) {
     return null == e ? null : null !== (r = null === (n = _.get(e)) || void 0 === n ? void 0 : null === (t = n.error) || void 0 === t ? void 0 : t.code) && void 0 !== r ? r : null
   }
 }
-l(T, "displayName", "GuildProfileStore");
-let N = new T(o.Z, {
+l(N, "displayName", "GuildProfileStore");
+let A = new N(o.Z, {
   GUILD_PROFILE_FETCH: h,
   GUILD_PROFILE_FETCH_SUCCESS: g,
   GUILD_PROFILE_FETCH_FAILURE: m,
@@ -223,5 +240,6 @@ let N = new T(o.Z, {
   MEMBER_VERIFICATION_FORM_UPDATE: y,
   INVITE_RESOLVE_SUCCESS: O,
   CREATE_CHANNEL_MODAL_SUBMIT: S,
-  GUILD_SETTINGS_SET_WIDGET: I
+  GUILD_SETTINGS_SET_WIDGET: I,
+  GUILD_UPDATE: T
 })

@@ -21,9 +21,9 @@ let N = [T.Plq.KICK_MEMBERS, T.Plq.BAN_MEMBERS, T.Plq.ADMINISTRATOR, T.Plq.MANAG
   S = [],
   p = [],
   U = [],
-  C = [],
-  D = !0,
-  L = !1,
+  D = [],
+  L = !0,
+  C = !1,
   h = !1,
   m = !0,
   M = !1,
@@ -119,13 +119,13 @@ class F extends(r = E.ZP.Store) {
     return U
   }
   get applicationCommands() {
-    return C
-  }
-  get isInitialLoading() {
     return D
   }
-  get isLoading() {
+  get isInitialLoading() {
     return L
+  }
+  get isLoading() {
+    return C
   }
   get isLoadingNextPage() {
     return h
@@ -163,14 +163,14 @@ a = "GuildSettingsAuditLogStore", (l = "displayName") in F ? Object.defineProper
 }) : F[l] = a;
 let W = new F(c.Z, {
   AUDIT_LOG_FETCH_START: function() {
-    L = !0
+    C = !0
   },
   AUDIT_LOG_FETCH_SUCCESS: function(e) {
     var t;
-    y = 0, D = !1, L = !1, m = !0, M = !1, O = j(e.logs), g = e.integrations, f = e.webhooks, S = e.guildScheduledEvents, p = null !== (t = e.automodRules) && void 0 !== t ? t : [], U = e.threads, C = e.applicationCommands, e.logs.length < T.Rg9 && (m = !1)
+    y = 0, L = !1, C = !1, m = !0, M = !1, O = j(e.logs), g = e.integrations, f = e.webhooks, S = e.guildScheduledEvents, p = null !== (t = e.automodRules) && void 0 !== t ? t : [], U = e.threads, D = e.applicationCommands, e.logs.length < T.Rg9 && (m = !1)
   },
   AUDIT_LOG_FETCH_FAIL: function() {
-    L = !1, M = !0, O = []
+    C = !1, M = !0, O = []
   },
   AUDIT_LOG_FETCH_NEXT_PAGE_START: function(e) {
     let {
@@ -188,7 +188,7 @@ let W = new F(c.Z, {
       threads: i,
       applicationCommands: o
     } = e;
-    if (h = !1, g = n, f = r, S = l, p = a, U = i, C = o, (0 === t.length || t.length < T.Rg9) && (m = !1), t.length > 0) {
+    if (h = !1, g = n, f = r, S = l, p = a, U = i, D = o, (0 === t.length || t.length < T.Rg9) && (m = !1), t.length > 0) {
       let e = j(t);
       O = [...O, ...e]
     }
@@ -225,6 +225,6 @@ let W = new F(c.Z, {
     })
   },
   GUILD_SETTINGS_CLOSE: function() {
-    O = [], R = [], b = T.rsA.ALL, v = null, P = null, x = {}, y = 0, D = !0, g = [], f = [], S = [], p = [], U = []
+    O = [], R = [], b = T.rsA.ALL, v = null, P = null, x = {}, y = 0, L = !0, g = [], f = [], S = [], p = [], U = []
   }
 })

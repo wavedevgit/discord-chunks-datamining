@@ -1,6 +1,6 @@
 /**
   Module ID: 31924
-  Original File Name: 1746b9f86f766fa4
+  Original File Name: 4cbb0792e38bd714
 **/
 .modal_bc32e9 {
     overflow: hidden;
@@ -62,10 +62,14 @@
     border-radius: var(--radius-sm)
 }
 
+.errorText_bc32e9 {
+    margin: var(--spacing-8) 0
+}
+
 .footer_bc32e9 {
     padding: 0 var(--spacing-16);
     padding-bottom: var(--spacing-16);
     gap: var(--spacing-8)
 }
 
-/*# sourceMappingURL=1746b9f86f766fa4.css.map*/
+/*# sourceMappingURL=4cbb0792e38bd714.css.map*/

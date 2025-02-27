@@ -13,12 +13,12 @@ var r = n(200651),
   c = n(40851),
   u = n(657305),
   d = n(367907),
-  f = n(682901),
-  p = n(795318),
-  m = n(194082),
-  g = n(282256),
-  y = n(925329),
-  b = n(880395),
+  f = n(795318),
+  p = n(194082),
+  m = n(282256),
+  g = n(925329),
+  y = n(880395),
+  b = n(221241),
   O = n(592125),
   h = n(574254),
   v = n(374129),
@@ -72,7 +72,7 @@ function w(e) {
     deaf: c,
     serverDeaf: d,
     collapsed: f,
-    video: p,
+    video: m,
     isStreaming: g,
     disabled: y,
     isWatching: b,
@@ -96,7 +96,7 @@ function w(e) {
       deaf: c,
       serverDeaf: d
     });
-  p && (i ? W.push((0, r.jsx)(a.DY3, {
+  m && (i ? W.push((0, r.jsx)(a.DY3, {
     className: A.iconSpacing,
     text: x.NW.string(x.t["PXMZ//"]),
     children: (0, r.jsx)(a.Amn, {
@@ -148,8 +148,8 @@ function w(e) {
     })
   }, "watch")), g && W.push((0, r.jsx)("div", {
     className: o()(A.iconSpacing, A.liveIconSpacing),
-    children: (0, r.jsx)(m.ZP, {
-      size: m.ZP.Sizes.SMALL
+    children: (0, r.jsx)(p.ZP, {
+      size: p.ZP.Sizes.SMALL
     })
   }, "stream"));
   let U = null != T && !(0, S.yE)(T.flags, N.udG.EMBEDDED);
@@ -178,7 +178,7 @@ let C = function(e) {
     selected: s = !1,
     disabled: u = !1,
     isOverlay: d = !1
-  } = e, m = function(e, t) {
+  } = e, p = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -194,7 +194,7 @@ let C = function(e) {
     return l
   }(e, ["avatarContainerClass", "userNameClassName", "size", "selected", "disabled", "isOverlay"]);
   let {
-    onClick: y,
+    onClick: g,
     onKeyDown: v,
     onDoubleClick: j,
     onContextMenu: S,
@@ -217,9 +217,9 @@ let C = function(e) {
     ringing: z,
     user: H,
     channelId: J
-  } = m, Q = (0, c.bp)(), X = null != J ? O.Z.getChannel(J) : null, {
-    enabled: K
-  } = (0, f.Z)({
+  } = p, Q = (0, c.bp)(), X = null != J ? O.Z.getChannel(J) : null, {
+    simplifiedSettingsEnabled: K
+  } = (0, b.Z)({
     location: "VoiceUser"
   }), [q, $] = l.useState(!1), [ee, et] = l.useState(!1);
   return l.useEffect(() => {
@@ -233,14 +233,14 @@ let C = function(e) {
       [A.voiceUser]: !0,
       [A.overlap]: V,
       [A.selected]: s,
-      [A.clickable]: null != y,
+      [A.clickable]: null != g,
       [A.userSmall]: i === N.ipw.SMALL,
       [A.userLarge]: i === N.ipw.LARGE,
       [A.disabled]: !s && u,
       [A.ringing]: z
     }),
     onClick: e => {
-      null == y || y(e, H)
+      null == g || g(e, H)
     },
     onDoubleClick: e => {
       null == j || j(e, H)
@@ -303,7 +303,7 @@ let C = function(e) {
               source: d ? N.jXE.OVERLAY : N.Sbl.VOICE_PANEL
             }
           };
-        return !L || d ? (0, r.jsx)(g.Z, (e = Z({}, i), t = t = {
+        return !L || d ? (0, r.jsx)(m.Z, (e = Z({}, i), t = t = {
           children: l
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -317,15 +317,15 @@ let C = function(e) {
         }), e)) : null
       }(), (0, r.jsx)(w, Z({
         disabled: u
-      }, m)), K && ((q || ee) && !L ? (0, r.jsx)(a.DY3, {
+      }, p)), K && ((q || ee) && !L ? (0, r.jsx)(a.DY3, {
         text: x.NW.string(x.t["+1H47u"]),
         children: (0, r.jsx)(a.P3F, {
           className: o()(A.moreClickable, ee && A.moreActive),
           onClick: function(e) {
-            null != M && null != X && (et(!0), (0, b.D)(e, H, X, {
+            null != M && null != X && (et(!0), (0, y.D)(e, H, X, {
               context: Q
             }, (e, t) => {
-              (0, p.o)({
+              (0, f.o)({
                 menuName: e,
                 menuItemProps: t,
                 entrypoint: I.A5.THREE_DOT,
@@ -368,10 +368,10 @@ function _(e) {
     className: A.iconSpacing,
     children: (0, r.jsx)("div", {
       ref: m,
-      children: (0, r.jsx)(y.Z, {
+      children: (0, r.jsx)(g.Z, {
         className: o()(A.icon, n),
         game: t,
-        size: y.Z.Sizes.XSMALL,
+        size: g.Z.Sizes.XSMALL,
         onMouseEnter: () => {
           d.ZP.trackWithMetadata(N.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_HOVERED, {
             channel_id: c,
