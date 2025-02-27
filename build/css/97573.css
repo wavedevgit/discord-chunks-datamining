@@ -1,6 +1,6 @@
 /**
   Module ID: 97573
-  Original File Name: dd42bef87dbd2d75
+  Original File Name: d1ad1a33ec6f6eda
 **/
 .button_e18686 {
     text-indent: -9999em;
@@ -28,13 +28,17 @@
     background-color: var(--background-secondary-alt)
 }
 
-.filled_e18686 {
-    background-image: url(/assets/cc9937ea92f932c3.svg);
-    background-color: var(--status-danger)
+.default_e18686:hover {
+    background-color: var(--background-secondary)
 }
 
-.filled_e18686:hover,.theme-dark .default_e18686:hover,.theme-light .default_e18686:hover {
-    background-color: null
+.filled_e18686 {
+    background-image: url(/assets/cc9937ea92f932c3.svg);
+    background-color: var(--button-danger-background)
+}
+
+.filled_e18686:hover {
+    background-color: var(--button-danger-background-hover)
 }
 
 .enable-forced-colors .button_e18686 {
@@ -145,23 +149,14 @@
     bottom: -1px;
     left: -20px;
     border-radius: 5px;
-    border: 1px solid transparent;
+    border: 1px solid var(--border-subtle);
     opacity: 0;
-    transition: opacity .1s ease
+    transition: opacity .1s ease;
+    background-color: var(--background-modifier-hover)
 }
 
 .card_b846e5.active_b846e5:before,.card_b846e5:focus-within:before,.card_b846e5:hover:before {
     opacity: 1
 }
 
-.theme-dark .card_b846e5:before {
-    background-color: null;
-    border-color: null
-}
-
-.theme-light .card_b846e5:before {
-    background-color: var(--primary-100);
-    border-color: null
-}
-
-/*# sourceMappingURL=dd42bef87dbd2d75.css.map*/
+/*# sourceMappingURL=d1ad1a33ec6f6eda.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 7491
-  Original File Name: aa58cbba2b5fadad
+  Original File Name: 96c837ba4847dabb
 **/
 .button_e18686 {
     text-indent: -9999em;
@@ -28,13 +28,17 @@
     background-color: var(--background-secondary-alt)
 }
 
-.filled_e18686 {
-    background-image: url(/assets/cc9937ea92f932c3.svg);
-    background-color: var(--status-danger)
+.default_e18686:hover {
+    background-color: var(--background-secondary)
 }
 
-.filled_e18686:hover,.theme-dark .default_e18686:hover,.theme-light .default_e18686:hover {
-    background-color: null
+.filled_e18686 {
+    background-image: url(/assets/cc9937ea92f932c3.svg);
+    background-color: var(--button-danger-background)
+}
+
+.filled_e18686:hover {
+    background-color: var(--button-danger-background-hover)
 }
 
 .enable-forced-colors .button_e18686 {
@@ -290,4 +294,4 @@
     min-height: 0
 }
 
-/*# sourceMappingURL=aa58cbba2b5fadad.css.map*/
+/*# sourceMappingURL=96c837ba4847dabb.css.map*/

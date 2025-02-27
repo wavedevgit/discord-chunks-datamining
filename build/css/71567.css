@@ -1,6 +1,6 @@
 /**
   Module ID: 71567
-  Original File Name: 0e3e757212491f59
+  Original File Name: 40f9c0957b450541
 **/
 .popoutContainer_a6cedd {
     display: flex;
@@ -4673,13 +4673,14 @@ div:has(>div>.modal_d7831d) {
     display: flex;
     align-items: center;
     position: relative;
-    height: 64px
+    height: 64px;
+    border-bottom: 1px solid var(--border-subtle)
 }
 
 .emojiRow_e7d73e .emojiAliasInput_e7d73e .emojiInput_e7d73e {
     transition: opacity .1s ease-in-out;
     opacity: 0;
-    background-color: var(--background-tertiary);
+    background-color: var(--input-background);
     padding: 0 --emojiInputHorizontalPadding
 }
 
@@ -4749,22 +4750,6 @@ div:has(>div>.modal_d7831d) {
     flex-direction: column;
     align-items: start;
     gap: 24px
-}
-
-.theme-dark .emojiAliasInput_e7d73e .emojiInput_e7d73e {
-    background-color: null
-}
-
-.theme-dark .emojiRow_e7d73e {
-    box-shadow: 0 1px 0 0 var(--opacity-white-4)
-}
-
-.theme-light .emojiAliasInput_e7d73e .emojiInput_e7d73e {
-    background-color: null
-}
-
-.theme-light .emojiRow_e7d73e {
-    box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
 .visual-refresh .emojiInput_e7d73e {
@@ -4877,15 +4862,15 @@ div:has(>div>.modal_d7831d) {
 
 .ineligibleButton_d6d601 {
     color: var(--white-500);
-    background-color: #eb5d30
+    background-color: var(--orange-500)
 }
 
 .ineligibleButton_d6d601:hover {
-    background-color: #d4542b
+    background-color: var(--orange-530)
 }
 
 .ineligibleButton_d6d601:active {
-    background-color: #bc4a26
+    background-color: var(--orange-560)
 }
 
 .ineligibleButtonContent_d6d601 {
@@ -13710,4 +13695,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=0e3e757212491f59.css.map*/
+/*# sourceMappingURL=40f9c0957b450541.css.map*/

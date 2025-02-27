@@ -1,6 +1,6 @@
 /**
   Module ID: 68051
-  Original File Name: 59eab9282c3a92c5
+  Original File Name: 42168764c3aa055f
 **/
 .image__04666 {
     width: 100%;
@@ -5481,7 +5481,7 @@ html .progress__61462 {
 }
 
 .background-opacity-medium .embedDescription__623de,.background-opacity-medium .embedFieldValue__623de,.background-opacity-medium .embedFooterText__623de,.background-opacity-medium .embedProvider__623de {
-    color: null!important
+    color: var(--opacity-black-20)!important
 }
 
 .background-opacity-medium .embedDescription__623de,.background-opacity-medium .embedFieldValue__623de,.background-opacity-medium .embedFooterText__623de,.background-opacity-medium .embedProvider__623de {
@@ -14919,4 +14919,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=59eab9282c3a92c5.css.map*/
+/*# sourceMappingURL=42168764c3aa055f.css.map*/

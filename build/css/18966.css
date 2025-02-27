@@ -1,6 +1,6 @@
 /**
   Module ID: 18966
-  Original File Name: ed32cb1d39263d65
+  Original File Name: c97b790381710540
 **/
 .button_e18686 {
     text-indent: -9999em;
@@ -28,13 +28,17 @@
     background-color: var(--background-secondary-alt)
 }
 
-.filled_e18686 {
-    background-image: url(/assets/cc9937ea92f932c3.svg);
-    background-color: var(--status-danger)
+.default_e18686:hover {
+    background-color: var(--background-secondary)
 }
 
-.filled_e18686:hover,.theme-dark .default_e18686:hover,.theme-light .default_e18686:hover {
-    background-color: null
+.filled_e18686 {
+    background-image: url(/assets/cc9937ea92f932c3.svg);
+    background-color: var(--button-danger-background)
+}
+
+.filled_e18686:hover {
+    background-color: var(--button-danger-background-hover)
 }
 
 .enable-forced-colors .button_e18686 {
@@ -797,4 +801,4 @@
     margin: 10px
 }
 
-/*# sourceMappingURL=ed32cb1d39263d65.css.map*/
+/*# sourceMappingURL=c97b790381710540.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 62195
-  Original File Name: d4af953f5e1a2df4
+  Original File Name: 30087c6892b79ebd
 **/
 :root {
     --application-subscription-end: #ff69b4;
@@ -2725,6 +2725,8 @@
     --transparent-hsl: 330 100 71%;
     --twitch: #ff69b4;
     --twitch-hsl: 330 100 71%;
+    --twitch-secondary: #ff69b4;
+    --twitch-secondary-hsl: 330 100 71%;
     --twitter: #ff69b4;
     --twitter-hsl: 330 100 71%;
     --white: #ff69b4;
@@ -4328,4 +4330,4 @@
     --typing-indicator-bg: #1c1c24
 }
 
-/*# sourceMappingURL=d4af953f5e1a2df4.css.map*/
+/*# sourceMappingURL=30087c6892b79ebd.css.map*/
