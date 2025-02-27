@@ -1,6 +1,6 @@
 /**
   Module ID: 23303
-  Original File Name: 0b620ac11f99a4be
+  Original File Name: ea25343ccc919920
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -96,8 +96,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -1215,4 +1215,4 @@ div:has(>div>.container_f792fa) {
     background-color: var(--bg-base-tertiary)!important
 }
 
-/*# sourceMappingURL=0b620ac11f99a4be.css.map*/
+/*# sourceMappingURL=ea25343ccc919920.css.map*/

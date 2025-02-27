@@ -1,6 +1,6 @@
 /** Chunk was on 84466 **/
 n.d(t, {
-  Z: () => p
+  Z: () => A
 });
 var r = n(200651),
   i = n(192379),
@@ -19,9 +19,9 @@ var r = n(200651),
   O = n(474936),
   S = n(981631),
   P = n(388032),
-  A = n(895513);
+  p = n(895513);
 
-function p() {
+function A() {
   let e = (0, o.e7)([d.default], () => N.ZP.isPremiumExactly(d.default.getCurrentUser(), O.p9.TIER_2)),
     {
       enabled: t,
@@ -33,7 +33,7 @@ function p() {
       disable: e
     }),
     {
-      location: p
+      location: A
     } = (0, c.O)(),
     {
       analyticsLocations: R
@@ -60,7 +60,7 @@ function p() {
             })
           }
           return e
-        }({}, p), t = t = {
+        }({}, A), t = t = {
           object: S.qAy.BUTTON_CTA,
           objectType: S.Qqv.TIER_2
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -74,7 +74,7 @@ function p() {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e)
       })
-    }, [R, p]),
+    }, [R, A]),
     f = i.useCallback(() => {
       s.Z.open(S.oAB.INVENTORY), T.ZP.dismissOutboundPromotionNotice()
     }, []),
@@ -91,10 +91,10 @@ function p() {
     }), (0, r.jsx)(a.SrA, {
       size: "md",
       color: "currentColor",
-      className: A.premiumIcon
+      className: p.premiumIcon
     }), t ? n ? (0, r.jsxs)(l.xv, {
       variant: "text-sm/normal",
-      className: A.text,
+      className: p.text,
       children: [P.NW.string(P.t["5JMiOj"]), " ", P.NW.format(P.t.fjSvsL, {
         onClick: f
       })]

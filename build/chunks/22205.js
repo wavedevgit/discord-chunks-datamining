@@ -1,6 +1,6 @@
 /** Chunk was on 12416 **/
 n.d(t, {
-  Z: () => k
+  Z: () => D
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(224706),
   p = n(13245),
   h = n(615287),
-  b = n(493773),
-  v = n(797614),
+  v = n(493773),
+  b = n(797614),
   g = n(703656),
   y = n(594174),
   E = n(254761),
@@ -25,13 +25,13 @@ var r = n(200651),
   j = n(145597),
   x = n(333031),
   Z = n(610394),
-  C = n(380736),
-  w = n(987650),
+  w = n(380736),
+  C = n(987650),
   P = n(981631),
   N = n(388032),
   I = n(99537);
 
-function _(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,17 +39,17 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let R = o().throttle(() => {
-    v.Z.increment({
+let _ = o().throttle(() => {
+    b.Z.increment({
       name: u.V.APP_CRASHED,
       tags: ["reason:".concat(s.v.UNHANDLED_JS_ERROR), "level:".concat(c.c.FATAL)]
     }, !0)
   }, 100, {
     trailing: !1
   }),
-  T = 10 * O.Z.Millis.SECOND;
+  k = 10 * O.Z.Millis.SECOND;
 
-function A(e) {
+function T(e) {
   var t, n;
   let {
     error: l,
@@ -57,29 +57,29 @@ function A(e) {
     onReload: s,
     onDisable: c,
     onCrashDisabled: u
-  } = e, m = i.useMemo(() => new a.SpringValue(1), []), h = i.useRef(null), [v, g] = i.useState(!1), [O, S] = i.useState(!1), j = (0, d.e7)([y.default], () => y.default.getCurrentUser());
-  (0, b.ZP)(() => (h.current = setTimeout(x, T), p.Z.track(P.rMx.NOTIFICATION_VIEWED, {
-    notif_type: w.n0.OverlayCrashed
+  } = e, m = i.useMemo(() => new a.SpringValue(1), []), h = i.useRef(null), [b, g] = i.useState(!1), [O, S] = i.useState(!1), j = (0, d.e7)([y.default], () => y.default.getCurrentUser());
+  (0, v.ZP)(() => (h.current = setTimeout(x, k), p.Z.track(P.rMx.NOTIFICATION_VIEWED, {
+    notif_type: C.n0.OverlayCrashed
   }), () => {
     null != h.current && clearTimeout(h.current)
   }));
   let x = i.useCallback(() => {
       m.set(0), null != h.current && clearTimeout(h.current), h.current = null, null == o || o(), null == u || u()
     }, [m, o, u]),
-    _ = i.useCallback(e => {
+    R = i.useCallback(e => {
       !O && (S(!0), null == o || o(), p.Z.track(P.rMx.NOTIFICATION_CLICKED, {
-        notif_type: w.n0.OverlayCrashed,
+        notif_type: C.n0.OverlayCrashed,
         action_type: "reload"
       }, !0), e.stopPropagation(), setTimeout(() => null == s ? void 0 : s(), 200))
     }, [o, s, O]),
-    R = i.useCallback(e => {
+    _ = i.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (g(!0), null != h.current && clearTimeout(h.current)) : g(!1)
     }, [g]),
-    A = i.useCallback(e => {
+    T = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
-    D = (0, d.e7)([Z.ZP], () => Z.ZP.getFocusedRunningGame()),
-    k = v ? (0, r.jsxs)("div", {
+    A = (0, d.e7)([Z.ZP], () => Z.ZP.getFocusedRunningGame()),
+    D = b ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
         color: "text-primary",
@@ -102,22 +102,22 @@ function A(e) {
         })]
       })]
     }) : null,
-    M = v ? null : N.NW.string(N.t.oEJEFh),
+    M = b ? null : N.NW.string(N.t.oEJEFh),
     L = null !== (t = null == j ? void 0 : j.isStaff()) && void 0 !== t && t || null !== (n = null == j ? void 0 : j.isStaffPersonal()) && void 0 !== n && n;
-  return (0, r.jsx)(C.Yj, {
+  return (0, r.jsx)(w.Yj, {
     title: N.NW.string(N.t.U38qZm),
-    body: k,
+    body: D,
     hint: L ? M : void 0,
     confirmText: N.NW.string(N.t.a3HlgI),
-    cancelText: null != D ? N.NW.string(N.t.qIYnPj) : void 0,
+    cancelText: null != A ? N.NW.string(N.t.qIYnPj) : void 0,
     icon: (0, r.jsx)(E.Z, {
       width: 40,
       height: 40,
       className: I.notificationIcon
     }),
-    onNotificationClick: R,
-    onConfirmClick: _,
-    onCancelClick: null != D ? A : void 0,
+    onNotificationClick: _,
+    onConfirmClick: R,
+    onCancelClick: null != A ? T : void 0,
     onDismissClick: o,
     expand: !0,
     locked: !0,
@@ -130,7 +130,7 @@ function A(e) {
     wrapperClassName: I.errorNotificationWrapper
   })
 }
-class D extends i.PureComponent {
+class A extends i.PureComponent {
   componentDidCatch(e, t) {
     let n = (0, g.s1)().location;
     this.setState({
@@ -149,7 +149,7 @@ class D extends i.PureComponent {
       error_stack: e.stack,
       sentry_issue_id: i,
       error_level: "fatal"
-    }), R(), this.pid = r
+    }), _(), this.pid = r
   }
   render() {
     let {
@@ -161,7 +161,7 @@ class D extends i.PureComponent {
     } = this.state;
     return null != n ? i ? (0, r.jsx)(x.Z, {
       className: I.errorClickNotification,
-      children: (0, r.jsx)(A, {
+      children: (0, r.jsx)(T, {
         error: n,
         onLock: () => {
           var e;
@@ -193,11 +193,11 @@ class D extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), R(this, "state", {
       error: null,
       showError: !0,
       info: null
-    }), _(this, "pid", null)
+    }), R(this, "pid", null)
   }
 }
-let k = D
+let D = A

@@ -1,6 +1,6 @@
 /** Chunk was on 42239 **/
 n.d(t, {
-  Z: () => G
+  Z: () => F
 }), n(411104), n(47120);
 var r = n(200651);
 n(192379);
@@ -73,7 +73,7 @@ function V(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class F extends a.Z {
+class G extends a.Z {
   _initialize() {
     __OVERLAY__ ? o.Z.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (o.Z.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), o.Z.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), o.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), o.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), o.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities), o.Z.subscribe("POST_CONNECTION_OPEN", this._trackCustomNotificationSoundsExposure), o.Z.subscribe("MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED", this.maybeShowHDStreamingViewerUpsellMessage))
   }
@@ -202,4 +202,4 @@ class F extends a.Z {
     }, 200))
   }
 }
-let G = new F
+let F = new G

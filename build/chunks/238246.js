@@ -14,8 +14,8 @@ var r, i = n(200651),
   m = n(481060),
   p = n(490173),
   h = n(280492),
-  b = n(40851),
-  v = n(607070),
+  v = n(40851),
+  b = n(607070),
   g = n(899663),
   y = n(636449),
   E = n(317381),
@@ -24,17 +24,17 @@ var r, i = n(200651),
   j = n(906732),
   x = n(168551),
   Z = n(260035),
-  C = n(597952),
-  w = n(628123),
+  w = n(597952),
+  C = n(628123),
   P = n(686546),
   N = n(950796),
   I = n(80006),
-  _ = n(151851),
-  R = n(587061),
-  T = n(392358),
-  A = n(540059),
-  D = n(280049),
-  k = n(314910),
+  R = n(151851),
+  _ = n(587061),
+  k = n(392358),
+  T = n(540059),
+  A = n(280049),
+  D = n(314910),
   M = n(22205),
   L = n(746106),
   W = n(706454),
@@ -42,11 +42,11 @@ var r, i = n(200651),
   U = n(740492),
   z = n(451478),
   V = n(358085),
-  Y = n(62883),
-  H = n(998502),
+  H = n(62883),
+  Y = n(998502),
   K = n(473159),
-  G = n(928518),
-  B = n(981631),
+  B = n(928518),
+  G = n(981631),
   q = n(501787),
   J = n(388032),
   X = n(53794);
@@ -90,7 +90,7 @@ class et extends(r = l.Component) {
     let {
       guestWindow: e
     } = this.props, t = e.document;
-    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateFontScale(), this.updateLocale(), this.updateClientTheme(), this.updateSaturationFactor(), this.updateForcedColors(), (0, K.O)(e), e.addEventListener("blur", this.handleBlur), V.isPlatformEmbedded ? t.addEventListener("contextmenu", Y.contextMenuCallbackNative, !1) : t.addEventListener("contextmenu", Y.contextMenuCallbackWeb, !1), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
+    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateFontScale(), this.updateLocale(), this.updateClientTheme(), this.updateSaturationFactor(), this.updateForcedColors(), (0, K.O)(e), e.addEventListener("blur", this.handleBlur), V.isPlatformEmbedded ? t.addEventListener("contextmenu", H.contextMenuCallbackNative, !1) : t.addEventListener("contextmenu", H.contextMenuCallbackWeb, !1), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
   }
   componentDidUpdate(e) {
     let {
@@ -105,7 +105,7 @@ class et extends(r = l.Component) {
     let {
       guestWindow: e
     } = this.props, t = e.document;
-    this.unregisterPopoutGlobalKeybinds(), e.removeEventListener("blur", this.handleBlur), V.isPlatformEmbedded ? t.removeEventListener("contextmenu", Y.contextMenuCallbackNative) : t.removeEventListener("contextmenu", Y.contextMenuCallbackWeb), (0, d.j)(() => m.s9z.setState(e => ee($({}, e), {
+    this.unregisterPopoutGlobalKeybinds(), e.removeEventListener("blur", this.handleBlur), V.isPlatformEmbedded ? t.removeEventListener("contextmenu", H.contextMenuCallbackNative) : t.removeEventListener("contextmenu", H.contextMenuCallbackWeb), (0, d.j)(() => m.s9z.setState(e => ee($({}, e), {
       [m.u1M]: []
     }))), e.removeEventListener("beforeunload", this.beforeUnload)
   }
@@ -163,7 +163,7 @@ class et extends(r = l.Component) {
     let {
       guestWindow: e
     } = this.props, t = e.document;
-    for (let e of (this._combokeys = (0, D.r)(t.documentElement), [h.iN, h.oV]))
+    for (let e of (this._combokeys = (0, A.r)(t.documentElement), [h.iN, h.oV]))
       if (e.comboKeysBindGlobal)
         for (let t of e.binds) this._combokeys.bindGlobal(t, (t, n) => ("function" == typeof e.action && e.action(t, n), !1))
   }
@@ -183,7 +183,7 @@ class et extends(r = l.Component) {
       mouseModeEnabled: d,
       reducedMotionEnabled: f,
       fontScaleClass: h,
-      withTitleBar: v,
+      withTitleBar: b,
       guestWindow: y,
       clientThemesClassName: E,
       contentClassName: O,
@@ -195,7 +195,7 @@ class et extends(r = l.Component) {
       "app-focused": n || r,
       "visual-refresh": s,
       "visual-refresh-chat-input": c
-    }), I = o === q.$J ? M.Z : w.Z;
+    }), I = o === q.$J ? M.Z : C.Z;
     return (0, i.jsx)(u.VK, {
       children: (0, i.jsx)(L.w, {
         children: (0, i.jsx)(m.f6W, {
@@ -204,22 +204,22 @@ class et extends(r = l.Component) {
             children: (0, i.jsx)("div", {
               "data-popout-root": !0,
               ref: this.rootRef,
-              className: a()(e, (0, C.Z)(), x, E, S),
+              className: a()(e, (0, w.Z)(), x, E, S),
               children: (0, i.jsx)(m.JcV, {
                 containerRef: this.rootRef,
                 children: (0, i.jsx)(g.Z, {
                   children: (0, i.jsxs)(I, {
-                    children: [(0, i.jsx)(P.Co, {}), (0, i.jsx)(b.Wu, {
-                      appContext: B.IlC.POPOUT,
+                    children: [(0, i.jsx)(P.Co, {}), (0, i.jsx)(v.Wu, {
+                      appContext: G.IlC.POPOUT,
                       renderWindow: y,
                       children: (0, i.jsx)(Z.m, {
-                        children: (0, i.jsxs)(k.yP, {
+                        children: (0, i.jsxs)(D.yP, {
                           children: [(0, i.jsxs)("div", {
                             className: X.popout,
-                            children: [s && v && (0, i.jsx)(N.T, {
+                            children: [s && b && (0, i.jsx)(N.T, {
                               windowKey: o,
                               short: !0
-                            }), !s && v && null != j ? (0, i.jsx)(_.Z, {
+                            }), !s && b && null != j ? (0, i.jsx)(R.Z, {
                               focused: n,
                               type: j,
                               windowKey: o,
@@ -228,7 +228,7 @@ class et extends(r = l.Component) {
                               className: a()(X.content, O),
                               children: l
                             })]
-                          }), (0, i.jsx)(m.nKe, {}), (0, i.jsx)(p.Z, {}), (0, i.jsx)(k.Un, {})]
+                          }), (0, i.jsx)(m.nKe, {}), (0, i.jsx)(p.Z, {}), (0, i.jsx)(D.Un, {})]
                         })
                       })
                     })]
@@ -244,7 +244,7 @@ class et extends(r = l.Component) {
   constructor(...e) {
     super(...e), Q(this, "rootRef", l.createRef()), Q(this, "_cleanupWindowActionCreators", void 0), Q(this, "_combokeys", null), Q(this, "beforeUnload", e => {
       let t = () => {
-        G.Z.unmountWindow(this.props.windowKey), V.isPlatformEmbedded && H.ZP.close(this.props.windowKey)
+        B.Z.unmountWindow(this.props.windowKey), V.isPlatformEmbedded && Y.ZP.close(this.props.windowKey)
       };
       if (this.props.connectedToEmbeddedActivity && !U.ZP.disableEmbeddedActivityPopOutAlert) {
         if (!V.isPlatformEmbedded) return;
@@ -265,13 +265,13 @@ let en = l.forwardRef(function(e, t) {
   let {
     guestWindow: n,
     focused: r
-  } = (0, f.cj)([G.Z], () => ({
-    guestWindow: G.Z.getWindow(e.windowKey),
-    focused: G.Z.getWindowFocused(e.windowKey)
+  } = (0, f.cj)([B.Z], () => ({
+    guestWindow: B.Z.getWindow(e.windowKey),
+    focused: B.Z.getWindowFocused(e.windowKey)
   }));
   c()(null != n, "Missing guestWindow reference");
-  let l = (0, A.Q3)("PopoutWindow"),
-    o = (0, A.R6)("PopoutWindow"),
+  let l = (0, T.Q3)("PopoutWindow"),
+    o = (0, T.R6)("PopoutWindow"),
     a = (0, f.e7)([z.Z], () => z.Z.isFocused()),
     {
       locale: s,
@@ -280,14 +280,14 @@ let en = l.forwardRef(function(e, t) {
       locale: W.default.locale,
       theme: F.Z.theme
     })),
-    d = (0, f.e7)([v.Z], () => v.Z.useForcedColors ? "yes" : "no"),
+    d = (0, f.e7)([b.Z], () => b.Z.useForcedColors ? "yes" : "no"),
     {
       accessibilitySettings: p,
       appWrapperClassName: h
     } = (0, I.I)(),
-    b = (0, f.e7)([E.ZP], () => null != e.channelId && null !== E.ZP.getSelfEmbeddedActivityForChannel(e.channelId));
-  (0, R.Z)(n, !1);
-  let g = (0, T.Z)(n, r),
+    v = (0, f.e7)([E.ZP], () => null != e.channelId && null !== E.ZP.getSelfEmbeddedActivityForChannel(e.channelId));
+  (0, _.Z)(n, !1);
+  let g = (0, k.Z)(n, r),
     {
       analyticsLocations: y
     } = (0, j.ZP)(S.Z.POPOUT_WINDOW),
@@ -313,7 +313,7 @@ let en = l.forwardRef(function(e, t) {
         keyboardModeEnabled: p.keyboardModeEnabled,
         mouseModeEnabled: g,
         reducedMotionEnabled: p.useReducedMotion,
-        connectedToEmbeddedActivity: b,
+        connectedToEmbeddedActivity: v,
         fontScaleClass: p.fontScaleClass,
         saturation: p.saturation,
         alwaysShowLinkDecorations: p.alwaysShowLinkDecorations,

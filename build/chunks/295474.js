@@ -2,7 +2,7 @@
 n.d(t, {
   Ux: () => S,
   gS: () => P,
-  ww: () => A
+  ww: () => p
 }), n(789020);
 var r = n(192379),
   i = n(399606),
@@ -54,7 +54,7 @@ function P(e) {
   }, [e])
 }
 
-function A(e) {
+function p(e) {
   let {
     guildId: t,
     scrollPosition: n,

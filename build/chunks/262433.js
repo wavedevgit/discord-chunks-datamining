@@ -1,7 +1,7 @@
 /** Chunk was on 12416 **/
 n.d(t, {
   U: () => h,
-  Z: () => v
+  Z: () => b
 }), n(653041);
 var r = n(392711),
   i = n.n(r),
@@ -31,16 +31,16 @@ let p = {
     lastSpawned: {}
   }));
 
-function b(e, t) {
+function v(e, t) {
   var n;
   i()(null !== (n = h.getState().particles[e.id]) && void 0 !== n ? n : {}).forEach(t)
 }
 
-function v(e) {
+function b(e) {
   var t, n, r;
   let {
     emojiHose: o,
-    context: v,
+    context: b,
     canvasWidth: g,
     canvasHeight: y,
     fallbackColor: E,
@@ -49,14 +49,14 @@ function v(e) {
     streamerId: j,
     deadDrawables: x
   } = e;
-  v.save();
+  b.save();
   let Z = c.Z.getEmojiImage(null !== (n = null !== (t = o.emojiId) && void 0 !== t ? t : o.emojiName) && void 0 !== n ? n : ""),
-    C = (0, d.np)(o.x, g),
-    w = (0, d.np)(o.y, y),
+    w = (0, d.np)(o.x, g),
+    C = (0, d.np)(o.y, y),
     {
       outlineColor: P
     } = (0, d.bg)(o.userId, O, S, E);
-  b(o, e => {
+  v(o, e => {
     e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, a.j)(() => {
       h.setState(t => (delete t.particles[o.id][e.id], 0 === Object.keys(t.particles[o.id]).length && delete t.particles[o.id], t))
     })
@@ -85,11 +85,11 @@ function v(e) {
         return r.particles[e.id] = a, r.lastSpawned[e.id] = Date.now(), r
       })
     })
-  }(o, C, w), (0, f.I)(v, C, w, P, m.q2), (0, f.T)(v, C, w, o.userId), b(o, e => (function(e, t, n) {
+  }(o, w, C), (0, f.I)(b, w, C, P, m.q2), (0, f.T)(b, w, C, o.userId), v(o, e => (function(e, t, n) {
     if (null == t) return;
     let r = n.size * window.devicePixelRatio,
       i = n.x - r / 2 * window.devicePixelRatio,
       l = n.y - 1.2 * r * window.devicePixelRatio;
     e.globalAlpha = n.opacity, e.drawImage(t, r / 2 + i, r / 2 + l, r, r)
-  })(v, Z, e)), o.lastUpdatedAt + m.FO < Date.now() && (0, s.ZZ)(j, o), o.state === u.f.STOP && !(Object.keys(null !== (r = h.getState().particles[o.id]) && void 0 !== r ? r : {}).length > 0) && x.push(o), v.restore()
+  })(b, Z, e)), o.lastUpdatedAt + m.FO < Date.now() && (0, s.ZZ)(j, o), o.state === u.f.STOP && !(Object.keys(null !== (r = h.getState().particles[o.id]) && void 0 !== r ? r : {}).length > 0) && x.push(o), b.restore()
 }

@@ -42,10 +42,10 @@ let p = i.forwardRef(function(e, t) {
     onDismissIconClick: M
   } = e, Z = C ? s.zxk.Sizes.LARGE : s.zxk.Sizes.MAX, [U, w] = i.useState(!1), {
     ref: V,
-    width: F
+    width: G
   } = (0, a.Z)();
 
-  function G(e) {
+  function F(e) {
     (0, c.EW)(y, {
       dismissAction: e
     })
@@ -54,7 +54,7 @@ let p = i.forwardRef(function(e, t) {
     var e, t;
     let n = (null !== (t = null === (e = V.current) || void 0 === e ? void 0 : e.scrollWidth) && void 0 !== t ? t : 0) + 64;
     !U && n > x && w(!0)
-  }, [U, F, V, x]), i.useEffect(() => {
+  }, [U, G, V, x]), i.useEffect(() => {
     (0, c.kk)(y)
   }, [y]), (0, r.jsx)("div", {
     className: I,
@@ -109,7 +109,7 @@ let p = i.forwardRef(function(e, t) {
             className: E.button,
             size: Z,
             onClick: e => {
-              null == O || O(e), N(e), G(d.L.PRIMARY)
+              null == O || O(e), N(e), F(d.L.PRIMARY)
             },
             color: T || v ? s.zxk.Colors.BRAND_INVERTED : s.zxk.Colors.WHITE,
             children: null != f ? f : _.NW.string(_.t.IHf1RE)
@@ -117,7 +117,7 @@ let p = i.forwardRef(function(e, t) {
             className: E.button,
             size: Z,
             onClick: e => {
-              null == O || O(e), G(d.L.DISMISS)
+              null == O || O(e), F(d.L.DISMISS)
             },
             color: T || v ? s.zxk.Colors.WHITE : s.zxk.Colors.BRAND,
             look: T || v ? s.zxk.Looks.LINK : s.zxk.Looks.FILLED,
@@ -127,7 +127,7 @@ let p = i.forwardRef(function(e, t) {
           className: E.button,
           size: s.zxk.Sizes.MAX,
           onClick: e => {
-            null == O || O(e), G(d.L.PRIMARY)
+            null == O || O(e), F(d.L.PRIMARY)
           },
           color: s.zxk.Colors.WHITE,
           children: _.NW.string(_.t.HU2IR0)

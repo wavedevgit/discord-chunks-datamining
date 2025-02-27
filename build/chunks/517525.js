@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(2052),
   p = n(906732),
   h = n(194082),
-  b = n(484459),
-  v = n(594174),
+  v = n(484459),
+  b = n(594174),
   g = n(626135),
   y = n(74538),
   E = n(557457),
@@ -26,7 +26,7 @@ var r = n(200651),
   x = n(388032),
   Z = n(195184);
 
-function C(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function C(e) {
   return e
 }
 
-function w(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,99 +66,99 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     opacity: 1,
     transform: "translate3d(0%, 0, 0)"
   },
-  _ = {
+  R = {
     opacity: 0
   },
-  R = {
+  _ = {
     opacity: 1
   },
-  T = {
+  k = {
     borderRadius: "".concat(P, "px ").concat(P, "px ").concat(P, "px ").concat(P, "px")
   },
-  A = {
+  T = {
     borderRadius: "0px ".concat(P, "px ").concat(P, "px 0px")
   },
-  D = {
+  A = {
     mass: 1,
     tension: 500,
     friction: 18,
     clamp: !0
   },
-  k = e => {
+  D = e => {
     let t, l, {
         participant: a,
         isUpsellEnabled: s,
         shape: d,
-        size: b,
+        size: v,
         didTrackUpsellViewed: P,
         setDidTrackUpsellViewed: N,
         className: I,
-        premiumIndicator: _
+        premiumIndicator: R
       } = e,
-      R = (0, E.Wc)(a),
+      _ = (0, E.Wc)(a),
       {
-        analyticsLocations: T
+        analyticsLocations: k
       } = (0, p.ZP)(),
-      A = null != (0, O.Z)(a);
+      T = null != (0, O.Z)(a);
     try {
-      t = (0, E.nG)(R)
+      t = (0, E.nG)(_)
     } catch (e) {
       t = !1
     }
     try {
-      l = (0, E.tR)(R)
+      l = (0, E.tR)(_)
     } catch (e) {
       l = !1
     }
-    let D = t || l,
+    let A = t || l,
       {
-        location: k
+        location: D
       } = (0, m.O)(),
-      M = (0, c.e7)([v.default], () => v.default.getCurrentUser()),
+      M = (0, c.e7)([b.default], () => b.default.getCurrentUser()),
       L = s && !y.ZP.isPremium(M, j.p9.TIER_1) && !y.ZP.canStreamQuality(y.ZP.StreamQuality.MID, M),
       W = i.useCallback(() => {
-        L && D && (0, f.ZDy)(async () => {
+        L && A && (0, f.ZDy)(async () => {
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
-          return t => (0, r.jsx)(e, w(C({}, t), {
-            analyticsSource: k
+          return t => (0, r.jsx)(e, C(w({}, t), {
+            analyticsSource: D
           }))
         })
-      }, [L, D, k]);
+      }, [L, A, D]);
     if (i.useEffect(() => {
-        !P && D && (g.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
+        !P && A && (g.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
           type: j.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: l,
-          location_stack: T
+          location_stack: k
         }), N(!0))
-      }, [t, l, D, P, N, T]), null == R) return null;
+      }, [t, l, A, P, N, k]), null == _) return null;
     let F = (0, r.jsx)(f.ua7, {
-      text: A ? x.NW.string(x.t.q8TiVl) : D ? x.NW.string(x.t.IHgpEh) : x.NW.string(x.t.vLb0VV),
+      text: T ? x.NW.string(x.t.q8TiVl) : A ? x.NW.string(x.t.IHgpEh) : x.NW.string(x.t.vLb0VV),
       position: "bottom",
       color: f.ua7.Colors.GREY,
-      children: e => (0, r.jsxs)(f.P3F, w(C({}, e), {
+      children: e => (0, r.jsxs)(f.P3F, C(w({}, e), {
         onClick: W,
-        className: o()(Z.qualityIndicator, b, h.eE[d], A ? Z.qualityIndicatorLowQuality : Z.qualityIndicatorFullQuality, {
-          [Z.clickable]: L && D
+        className: o()(Z.qualityIndicator, v, h.eE[d], T ? Z.qualityIndicatorLowQuality : Z.qualityIndicatorFullQuality, {
+          [Z.clickable]: L && A
         }),
-        children: [D ? (0, r.jsx)(f.SrA, {
+        children: [A ? (0, r.jsx)(f.SrA, {
           size: "md",
           color: "currentColor",
           className: Z.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
           className: Z.qualityResolution,
-          children: (0, E.ml)(R.maxResolution)
+          children: (0, E.ml)(_.maxResolution)
         }), (0, r.jsx)("span", {
-          children: (0, E.bp)(R.maxFrameRate)
+          children: (0, E.bp)(_.maxFrameRate)
         })]
       }))
     });
     return (0, r.jsx)(f.IGR, {
       text: F,
       className: o()(I, Z.qualityIndicatorBadge, {
-        [Z.qualityIndicatorBadgePremium]: D && _
+        [Z.qualityIndicatorBadgePremium]: A && R
       }),
       color: u.Z.unsafe_rawColors.PRIMARY_500.css,
       shape: d
@@ -173,36 +173,36 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       className: c,
       premiumIndicator: u
     } = e, [d, m] = i.useState(!1), p = (0, E.Wc)(t), {
-      reducedMotion: v
+      reducedMotion: b
     } = i.useContext(f.Sfi), g = n && null != p;
     i.useEffect(() => {
-      (0, b.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
+      (0, v.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: !0
       })
     }, [t]);
     let y = (0, f.Yzy)(g, {
         enter: {
-          from: v.enabled ? _ : N,
-          to: v.enabled ? R : I
+          from: b.enabled ? R : N,
+          to: b.enabled ? _ : I
         },
-        leave: v.enabled ? _ : N,
-        config: D
+        leave: b.enabled ? R : N,
+        config: A
       }, "animate-always"),
       O = (0, f.q_F)({
-        to: g ? A : T,
-        config: D
+        to: g ? T : k,
+        config: A
       }, "animate-always");
     return (e => {
       let {
         className: n,
         popoutProps: i
       } = e;
-      return (0, r.jsxs)("div", w(C({
+      return (0, r.jsxs)("div", C(w({
         className: o()(Z.streamQualityIndicator, n)
       }, i), {
         children: [y((e, n) => n ? (0, r.jsx)(a.animated.div, {
           style: e,
-          children: (0, r.jsx)(k, {
+          children: (0, r.jsx)(D, {
             className: Z.liveQualityIndicator,
             participant: t,
             size: s,

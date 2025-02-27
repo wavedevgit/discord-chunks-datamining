@@ -24,7 +24,7 @@ let P = 12633 == n.j ? () => {
     n = (0, a.e7)([N.Z], () => N.Z.getHistorySnapshot(), []),
     [l, P] = i.useState(!1);
   if (null == t) return null;
-  let A = async () => {
+  let p = async () => {
     P(!0);
     try {
       _.mT(t.id), await c.Z.joinGuild(t.id, {
@@ -78,7 +78,7 @@ let P = 12633 == n.j ? () => {
       color: s.zxk.Colors.WHITE,
       size: s.zxk.Sizes.NONE,
       submitting: l,
-      onClick: A,
+      onClick: p,
       children: T.NW.format(T.t.uHN7n5, {
         guild: t.name
       })

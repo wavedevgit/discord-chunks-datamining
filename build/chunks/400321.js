@@ -22,11 +22,11 @@ function o(e) {
   let m = t.points.map(e => (0, r.RR)(e, o, a)),
     p = d.current[t.id],
     h = e => p + e.deltaTime,
-    b = e => h(e) + 1500 >= Date.now(),
-    v = e => h(e) <= Date.now() && b(e),
-    g = m.find(v);
+    v = e => h(e) + 1500 >= Date.now(),
+    b = e => h(e) <= Date.now() && v(e),
+    g = m.find(b);
   if (null == g) {
-    b(t.points[t.points.length - 1]) || f.push(t);
+    v(t.points[t.points.length - 1]) || f.push(t);
     return
   }
   let y = (e, t) => {
@@ -34,7 +34,7 @@ function o(e) {
       n.lineWidth = t * window.devicePixelRatio, n.strokeStyle = e, n.beginPath(), n.moveTo(g.x, g.y);
       for (let e = 1; e < m.length; e++) {
         let t = m[e];
-        v(t) && (n.lineTo(t.x, t.y), r = t)
+        b(t) && (n.lineTo(t.x, t.y), r = t)
       }
       return n.stroke(), r
     },
@@ -43,6 +43,6 @@ function o(e) {
       outlineColor: O
     } = (0, r.bg)(t.userId, c, u, s),
     S = y(O, 6 + l.q2),
-    j = null != S && v(S);
+    j = null != S && b(S);
   j && (0, i.I)(n, S.x, S.y, O, l.q2), y(E, 6), j && (0, i.T)(n, S.x, S.y, t.userId)
 }

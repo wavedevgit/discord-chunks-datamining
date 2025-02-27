@@ -20,9 +20,9 @@ var a = n(442837),
   O = n(176505),
   S = n(388032),
   P = n(350091),
-  A = n(125534);
+  p = n(125534);
 
-function p(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,13 +52,13 @@ let R = 12633 == n.j ? () => {
     g = null,
     h = null,
     y = null,
-    U = [P.notice, A.notice];
+    U = [P.notice, p.notice];
   switch (m) {
     case _.wB.SUBMITTED:
       g = S.NW.string(S.t["5iLvS0"]), h = S.NW.string(S.t.mqtdmZ), y = () => {
         (0, s.h7j)(e => {
           var t, n;
-          return (0, r.jsx)(s.ConfirmModal, (t = p({
+          return (0, r.jsx)(s.ConfirmModal, (t = A({
             header: S.NW.string(S.t.aIz1oa),
             confirmText: S.NW.string(S.t["cY+Ooa"]),
             cancelText: S.NW.string(S.t["ETE/oK"]),
@@ -88,7 +88,7 @@ let R = 12633 == n.j ? () => {
           let {
             default: e
           } = await n.e("3378").then(n.bind(n, 76075));
-          return t => (0, r.jsx)(e, p({
+          return t => (0, r.jsx)(e, A({
             guildId: R.id
           }, t))
         })

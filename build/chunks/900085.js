@@ -83,7 +83,7 @@ let V = () => (0, i.jsxs)("div", {
     })
   })]
 });
-class F extends(r = l.Component) {
+class G extends(r = l.Component) {
   render() {
     let e = b.Z.getGuild(this.props.channel.guild_id);
     return (0, i.jsx)(x.$W, w(U({}, this.props), {
@@ -94,10 +94,10 @@ class F extends(r = l.Component) {
     }))
   }
 }
-Z(F, "defaultProps", {
+Z(G, "defaultProps", {
   unread: !1
 });
-let G = c.ZP.connectStores([T.ZP, O.Z], e => {
+let F = c.ZP.connectStores([T.ZP, O.Z], e => {
     let {
       channel: t
     } = e;
@@ -107,7 +107,7 @@ let G = c.ZP.connectStores([T.ZP, O.Z], e => {
       isMentionLowImportance: T.ZP.getIsMentionLowImportance(t.id),
       category: O.Z.getChannel(t.parent_id)
     }
-  })(F),
+  })(G),
   W = c.ZP.connectStores([S.ZP], e => {
     let {
       channel: t
@@ -116,7 +116,7 @@ let G = c.ZP.connectStores([T.ZP, O.Z], e => {
     return {
       voiceStates: S.ZP.getVoiceStates(t.guild_id)[t.id]
     }
-  })(F),
+  })(G),
   B = c.ZP.connectStores([I.default], e => {
     let {
       guild: t
@@ -467,7 +467,7 @@ class K extends l.PureComponent {
             children: n.record.text
           }, "".concat(n.type, "-").concat(n.record.id));
         case p.h8.TEXT_CHANNEL:
-          return (0, i.jsx)(G, {
+          return (0, i.jsx)(F, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),

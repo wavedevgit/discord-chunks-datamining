@@ -1,6 +1,6 @@
 /**
   Module ID: 46086
-  Original File Name: 0519085ea2e69f59
+  Original File Name: 5f9943e9383bbc36
 **/
 .badgeContainer__98c7b {
     position: relative;
@@ -1184,8 +1184,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -1578,4 +1578,4 @@
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=0519085ea2e69f59.css.map*/
+/*# sourceMappingURL=5f9943e9383bbc36.css.map*/
