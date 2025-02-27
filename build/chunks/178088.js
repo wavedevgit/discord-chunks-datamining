@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   k: () => I
 }), n(47120);
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(153209),
   y = n(956961),
   x = n(903672),
-  E = n(711165),
-  O = n(946443),
+  O = n(711165),
+  E = n(946443),
   j = n(264233),
   N = n(981631),
   C = n(388032);
@@ -33,8 +33,8 @@ function I(e) {
     onClose: n,
     children: I,
     badgeState: S,
-    popoutPosition: P,
-    popoutAlign: T
+    popoutPosition: T,
+    popoutAlign: P
   } = e, {
     analyticsLocations: A
   } = (0, d.ZP)(c.Z.NOTIFICATION_CENTER), [w, Z] = i.useState(!1), [k, R] = [(0, o.e7)([g.Z], () => {
@@ -92,8 +92,8 @@ function I(e) {
     value: A,
     children: (0, r.jsx)(s.yRy, {
       animation: s.yRy.Animation.NONE,
-      position: P,
-      align: T,
+      position: T,
+      align: P,
       autoInvert: !1,
       shouldShow: w,
       onRequestClose: M,
@@ -121,16 +121,16 @@ function I(e) {
             setTab: R,
             badgeState: S,
             closePopout: M
-          }) : k === l.X.SCHEDULED ? (0, r.jsx)(E._, {
+          }) : k === l.X.SCHEDULED ? (0, r.jsx)(O._, {
             setTab: R,
             closePopout: M
           }) : (0, r.jsx)(a.SV, {
-            fallback: (0, r.jsx)(O.h, {
+            fallback: (0, r.jsx)(E.h, {
               setTab: R,
               closePopout: M,
               badgeState: S
             }),
-            children: (0, r.jsx)(O.Z, {
+            children: (0, r.jsx)(E.Z, {
               setTab: R,
               onJump: V,
               showTutorial: L,

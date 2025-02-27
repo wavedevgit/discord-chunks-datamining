@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   H: () => v
 }), n(266796);
@@ -27,16 +27,16 @@ function v(e) {
     location: v,
     shouldShowFullDescriptionButton: y = !0,
     hideRoleTag: x = !1,
-    lineClamp: E = 1,
-    cardWidth: O,
+    lineClamp: O = 1,
+    cardWidth: E,
     cardHeight: j,
     thumbnailHeight: N,
     descriptionTextVariant: C = "text-sm/normal",
     showOpaqueBackground: I = !1
-  } = e, S = (0, i.e7)([s.Z], () => s.Z.getGuild(n), [n]), P = (0, i.e7)([s.Z], () => {
+  } = e, S = (0, i.e7)([s.Z], () => s.Z.getGuild(n), [n]), T = (0, i.e7)([s.Z], () => {
     var e;
     return s.Z.getRole(n, null !== (e = null == t ? void 0 : t.role_id) && void 0 !== e ? e : b.lds)
-  }), T = (0, a.U)(t, 600), A = (0, f.C)(t), w = (0, d.SO)(S), {
+  }), P = (0, a.U)(t, 600), A = (0, f.C)(t), w = (0, d.SO)(S), {
     shouldHideGuildPurchaseEntryPoints: Z
   } = (0, l.uP)(n), k = (0, f.k)(t);
   if (null == S || Z) return null;
@@ -70,11 +70,11 @@ function v(e) {
       onTestDownload: () => {}
     });
   return (0, r.jsx)(m.Z, {
-    imageUrl: T,
+    imageUrl: P,
     name: t.name,
     description: t.description,
     formattedPrice: k,
-    role: P,
+    role: T,
     ctaComponent: (0, r.jsx)(_.Z, {
       guildId: n,
       guildProductListingId: t.id,
@@ -87,8 +87,8 @@ function v(e) {
     actionMenu: L,
     showOpaqueBackground: I,
     hideRoleTag: x,
-    lineClamp: E,
-    cardWidth: O,
+    lineClamp: O,
+    cardWidth: E,
     cardHeight: j,
     thumbnailHeight: N,
     descriptionTextVariant: C,

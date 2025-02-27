@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   ZP: () => q
 }), n(566702), n(301563), n(47120);
@@ -21,15 +21,15 @@ var r = n(200651),
   v = n(999650),
   y = n(933557),
   x = n(471445),
-  E = n(592125),
-  O = n(271383),
+  O = n(592125),
+  E = n(271383),
   j = n(699516),
   N = n(250758),
   C = n(944486),
   I = n(914010),
   S = n(246946),
-  P = n(594174),
-  T = n(585483),
+  T = n(594174),
+  P = n(585483),
   A = n(63063),
   w = n(405656),
   Z = n(51144),
@@ -102,10 +102,10 @@ let B = p()("2015-05-15").local(),
     if (null == l) return (0, r.jsx)("strong", {
       children: s
     });
-    let c = P.default.getUser(l.id),
-      d = E.Z.getChannel(e),
+    let c = T.default.getUser(l.id),
+      d = O.Z.getChannel(e),
       u = (null == d ? void 0 : d.isPrivate()) ? j.Z.getNickname(l.id) : null,
-      p = null !== (a = null !== (i = O.ZP.getNick(e, l.id)) && void 0 !== i ? i : u) && void 0 !== a ? a : Z.ZP.getName(l),
+      p = null !== (a = null !== (i = E.ZP.getNick(e, l.id)) && void 0 !== i ? i : u) && void 0 !== a ? a : Z.ZP.getName(l),
       m = null !== (o = null == c ? void 0 : c.getAvatarURL(e, 20)) && void 0 !== o ? o : l.getAvatarURL(null == d ? void 0 : d.guild_id, 20);
     return [(0, r.jsx)("img", {
       alt: "",
@@ -129,17 +129,17 @@ let B = p()("2015-05-15").local(),
     if (null == i) return (0, r.jsx)("strong", {
       children: a
     });
-    let o = E.Z.getChannel(i.parent_id),
+    let o = O.Z.getChannel(i.parent_id),
       l = (0, x.KS)(i);
     return (0, r.jsxs)("div", {
       className: D.resultChannel,
       children: [null != l ? (0, r.jsx)(l, {
         className: D.searchResultChannelIcon
       }) : null, (0, r.jsx)("strong", {
-        children: (0, y.F6)(i, P.default, j.Z)
+        children: (0, y.F6)(i, T.default, j.Z)
       }), null != o ? (0, r.jsx)("span", {
         className: D.searchResultChannelCategory,
-        children: (0, y.F6)(o, P.default, j.Z)
+        children: (0, y.F6)(o, T.default, j.Z)
       }) : null]
     })
   },
@@ -450,7 +450,7 @@ class X extends i.PureComponent {
         a = 0;
       null != r.token ? a = r.token.start : (null == i ? void 0 : i.currentToken) != null && (a = i.currentToken.end);
       let o = null != r.token ? r.token.end : a;
-      T.S.dispatch(R.CkL.SET_SEARCH_QUERY, {
+      P.S.dispatch(R.CkL.SET_SEARCH_QUERY, {
         query: e,
         anchor: a,
         focus: o,
@@ -482,7 +482,7 @@ class X extends i.PureComponent {
     })), M(this, "handleHintClick", () => {
       this.setSearchQuery(this.state.dateHint, !0)
     }), M(this, "performSearch", e => {
-      T.S.dispatch(R.CkL.PERFORM_SEARCH, null != e ? e : {})
+      P.S.dispatch(R.CkL.PERFORM_SEARCH, null != e ? e : {})
     }), M(this, "renderAutocompletes", () => {
       let {
         selectedIndex: e

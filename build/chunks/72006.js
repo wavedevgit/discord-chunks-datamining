@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   FZ: () => A,
   Hl: () => M,
@@ -11,8 +11,8 @@ n.d(t, {
   eE: () => R,
   iE: () => W,
   iK: () => Z,
-  lv: () => P,
-  nR: () => T,
+  lv: () => T,
+  nR: () => P,
   q0: () => a.a,
   x0: () => N,
   xb: () => F,
@@ -37,8 +37,8 @@ var r = n(5148),
   v = n.n(b),
   y = n(634523),
   x = n.n(y),
-  E = n(302648),
-  O = n.n(E);
+  O = n(302648),
+  E = n.n(O);
 
 function j(e, t, n, i) {
   let a = i.getCurrentContent(),
@@ -92,7 +92,7 @@ function C(e, t) {
 function I(e, t) {
   switch (e) {
     case "transpose-characters":
-      return O()(t);
+      return E()(t);
     case "move-selection-to-start-of-block":
       return _()(t);
     case "move-selection-to-end-of-block":
@@ -106,7 +106,7 @@ function S(e) {
   return e.getCurrentContent().getFirstBlock().getText()
 }
 
-function P(e, t) {
+function T(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
     r = t.getCurrentContent(),
     i = r.getFirstBlock(),
@@ -141,7 +141,7 @@ function P(e, t) {
   }), t
 }
 
-function T(e) {
+function P(e) {
   return r.EditorState.createEmpty(new r.CompositeDecorator(e))
 }
 

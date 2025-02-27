@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(266796), n(566702);
@@ -22,8 +22,8 @@ var i = n(373793),
   v = n(624138),
   y = n(135431),
   x = n(147865),
-  E = n(778569),
-  O = n(388032),
+  O = n(778569),
+  E = n(388032),
   j = n(739299);
 let N = (0, v.Mg)(o.Z.ACTIVITY_BOOKMARK_EMBED_IMAGE_WIDTH);
 
@@ -33,13 +33,13 @@ function C(e) {
     applicationId: C,
     customId: I,
     referrerId: S,
-    embedUrl: P
+    embedUrl: T
   } = e, {
-    analyticsLocations: T
+    analyticsLocations: P
   } = (0, c.ZP)(s.Z.ACTIVITY_BOOKMARK), [A] = (0, _.Z)([C]), w = (0, a.e7)([b.Z], () => {
     var e;
     return null !== (e = b.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }), Z = null == A ? void 0 : null === (t = A.bot) || void 0 === t ? void 0 : t.id, k = null != A && (0, d.ye)(A), R = (0, x.ZP)(null !== (o = null == A ? void 0 : A.maxParticipants) && void 0 !== o ? o : 0), L = (0, E.Z)({
+  }), Z = null == A ? void 0 : null === (t = A.bot) || void 0 === t ? void 0 : t.id, k = null != A && (0, d.ye)(A), R = (0, x.ZP)(null !== (o = null == A ? void 0 : A.maxParticipants) && void 0 !== o ? o : 0), L = (0, O.Z)({
     applicationId: C,
     size: N,
     names: ["embedded_cover"]
@@ -48,7 +48,7 @@ function C(e) {
       await (0, u.W)({
         appId: A.id,
         botId: Z,
-        analyticsLocations: T,
+        analyticsLocations: P,
         customId: I,
         referrerId: S
       })
@@ -59,16 +59,16 @@ function C(e) {
     location: "ActivityBookmarkEmbed"
   });
   return null == A || !1 === k ? null : U ? (0, r.jsx)(c.Gt, {
-    value: T,
+    value: P,
     children: (0, r.jsx)(g.O, {
       app: A,
-      embedUrl: P,
+      embedUrl: T,
       linkType: g.U.ACTIVITY,
       activityCustomId: I,
       activityReferrerId: S
     })
   }) : (0, r.jsx)(c.Gt, {
-    value: T,
+    value: P,
     children: (0, r.jsxs)("div", {
       className: j.container,
       children: [(0, r.jsx)("div", {
@@ -116,12 +116,12 @@ function C(e) {
               },
               className: j.button,
               color: l.Ttl.PRIMARY,
-              children: O.NW.string(O.t.fbcCzc)
+              children: E.NW.string(E.t.fbcCzc)
             }), (0, r.jsx)(l.zxk, {
               onClick: F,
               className: j.button,
               color: l.Ttl.GREEN,
-              children: O.NW.string(O.t.RscU7O)
+              children: E.NW.string(E.t.RscU7O)
             })]
           })]
         })]

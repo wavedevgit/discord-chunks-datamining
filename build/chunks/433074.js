@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => C
 }), n(47120);
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(674588),
   y = n(264043),
   x = n(132871),
-  E = n(147890),
-  O = n(981631),
+  O = n(147890),
+  E = n(981631),
   j = n(388032),
   N = n(587199);
 
@@ -31,9 +31,9 @@ function C(e) {
   let {
     code: I,
     message: S,
-    embedUrl: P
+    embedUrl: T
   } = e, {
-    enabled: T
+    enabled: P
   } = d.G.useExperiment({
     location: "ApplicationDirectoryProfileEmbed"
   }), [A, w, Z] = (0, l.Wu)([y.Z], () => [y.Z.getApplication(I), y.Z.isInvalidApplication(I), y.Z.getApplicationFetchState(I)], [I]), k = (0, l.e7)([m.default], () => m.default.locale), R = (0, l.e7)([h.Z], () => {
@@ -45,7 +45,7 @@ function C(e) {
   i.useEffect(() => {
     (0, v.gZ)(I)
   }, [I]), i.useEffect(() => {
-    D && Z === y.M.FETCHED && _.default.track(O.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
+    D && Z === y.M.FETCHED && _.default.track(E.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: I,
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: S.author.id,
@@ -53,7 +53,7 @@ function C(e) {
       channel_id: S.channel_id
     })
   }, [D, I, null == L ? void 0 : L.id, S.channel_id, R, S.author.id, Z]), i.useEffect(() => {
-    D && w && _.default.track(O.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    D && w && _.default.track(E.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: S.author.id,
       guild_id: R,
@@ -61,13 +61,13 @@ function C(e) {
     })
   }, [D, R, w, S.author.id, S.channel_id]);
   let U = e => {
-    _.default.track(O.rMx.APP_DIRECTORY_PROFILE_EMBED_APP_INFO_CLICKED, {
+    _.default.track(E.rMx.APP_DIRECTORY_PROFILE_EMBED_APP_INFO_CLICKED, {
       application_id: I,
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       clicked_section: e,
       guild_id: R,
       channel_id: S.channel_id
-    }), (0, E.dx)({
+    }), (0, O.dx)({
       view: x.eN.APPLICATION,
       guildId: R,
       applicationId: I,
@@ -76,9 +76,9 @@ function C(e) {
       }
     })
   };
-  if (T && null != A) return (0, r.jsx)(u.O, {
+  if (P && null != A) return (0, r.jsx)(u.O, {
     app: f.ZP.createFromServer(A),
-    embedUrl: P,
+    embedUrl: T,
     linkType: u.U.APP_DISCOVERY
   });
   if (w) return (0, r.jsxs)(p.Z, {

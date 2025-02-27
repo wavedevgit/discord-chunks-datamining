@@ -1,4 +1,4 @@
-/** Chunk was on 79120 **/
+/** Chunk was on 70045 **/
 n.d(t, {
   P: () => j,
   Z: () => S
@@ -17,8 +17,8 @@ var l = n(442837),
   p = n(430824),
   m = n(979651),
   g = n(153066),
-  b = n(981631),
-  y = n(243982);
+  y = n(981631),
+  b = n(243982);
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -65,7 +65,7 @@ function v(e) {
     actionColor: f
   } = e;
   return (0, r.jsx)(s.Z, {
-    className: (0, g.l)(y, "actions", t),
+    className: (0, g.l)(b, "actions", t),
     type: t,
     source: n,
     activity: l,
@@ -86,7 +86,7 @@ let j = a.Z.Types,
       useStoreStream: i = !0,
       showActions: s = !0,
       hideHeader: g = !1,
-      showChannelDetails: y = !1
+      showChannelDetails: b = !1
     } = e, j = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
@@ -109,18 +109,18 @@ let j = a.Z.Types,
       P = (0, l.e7)([d.Z], () => i ? d.Z.getAnyStreamForUser(n.id) : null),
       N = (0, l.e7)([p.Z, m.Z, f.Z], () => {
         var e, r;
-        return (0, o.Z)(t, b.xjy.EMBEDDED) ? p.Z.getGuild(null === (e = f.Z.getChannel(null === (r = m.Z.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === r ? void 0 : r.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null
+        return (0, o.Z)(t, y.xjy.EMBEDDED) ? p.Z.getGuild(null === (e = f.Z.getChannel(null === (r = m.Z.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === r ? void 0 : r.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null
       }),
-      x = (0, l.e7)([p.Z], () => null != P ? p.Z.getGuild(P.guildId) : null),
-      I = (0, l.e7)([c.Z], () => null != t ? null != t.application_id ? c.Z.getApplication(t.application_id) : c.Z.getApplicationByName(t.name) : null);
-    return (null == t ? void 0 : t.type) === b.IIU.HANG_STATUS ? null : (0, r.jsx)(a.Z, h(O({}, j), {
+      I = (0, l.e7)([p.Z], () => null != P ? p.Z.getGuild(P.guildId) : null),
+      E = (0, l.e7)([c.Z], () => null != t ? null != t.application_id ? c.Z.getApplication(t.application_id) : c.Z.getApplicationByName(t.name) : null);
+    return (null == t ? void 0 : t.type) === y.IIU.HANG_STATUS ? null : (0, r.jsx)(a.Z, h(O({}, j), {
       activity: t,
       user: n,
-      application: I,
+      application: E,
       hideHeader: g,
-      activityGuild: null != N ? N : x,
-      showChannelDetails: y,
-      channel: y ? S : void 0,
+      activityGuild: null != N ? N : I,
+      showChannelDetails: b,
+      channel: b ? S : void 0,
       renderActions: s ? () => (0, r.jsx)(v, h(O({}, j), {
         applicationStream: P,
         activity: t,

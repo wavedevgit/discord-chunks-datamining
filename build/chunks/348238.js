@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   $3: () => V,
   Go: () => B,
@@ -8,7 +8,7 @@ n.d(t, {
   R9: () => R,
   RN: () => F,
   Wl: () => A,
-  XO: () => T,
+  XO: () => P,
   Xn: () => z,
   bb: () => H,
   qo: () => M,
@@ -36,8 +36,8 @@ var r = n(200651),
   v = n(585483),
   y = n(5967),
   x = n(630388),
-  E = n(358085),
-  O = n(51144),
+  O = n(358085),
+  E = n(51144),
   j = n(91047),
   N = n(50284),
   C = n(981631),
@@ -51,7 +51,7 @@ function S(e, t, n) {
   }, [e, n, t])
 }
 
-function P(e, t, n) {
+function T(e, t, n) {
   return i.useCallback(r => {
     let i = b.default.getUser(e);
     if (null == i) return;
@@ -59,7 +59,7 @@ function P(e, t, n) {
       n();
       return
     }
-    let a = "@".concat(O.ZP.getUserTag(i, {
+    let a = "@".concat(E.ZP.getUserTag(i, {
         decoration: "never"
       })),
       o = "<@".concat(e, ">");
@@ -70,24 +70,24 @@ function P(e, t, n) {
   }, [e, t, n])
 }
 
-function T(e, t, n, r) {
+function P(e, t, n, r) {
   let i = S("usernameProfile", n, r);
-  return P(e.author.id, t.id, i)
+  return T(e.author.id, t.id, i)
 }
 
 function A(e, t, n, r) {
   let i = S("referencedUsernameProfile", n, r);
-  return P(null == e ? void 0 : e.author.id, t.id, i)
+  return T(null == e ? void 0 : e.author.id, t.id, i)
 }
 
 function w(e, t, n, r) {
   let i = S("interactionUsernameProfile", n, r);
-  return P(null == e ? void 0 : e.user.id, t.id, i)
+  return T(null == e ? void 0 : e.user.id, t.id, i)
 }
 
 function Z(e, t, n, r) {
   let i = S("referencedUsernameProfile", n, r);
-  return P(e, t.id, i)
+  return T(e, t.id, i)
 }
 
 function k(e) {
@@ -117,7 +117,7 @@ function M(e, t, a, l) {
   } = e, p = (0, x.yE)(u, C.iLy.EPHEMERAL), m = (0, c.bp)();
   return i.useCallback((e, t) => {
     if (p) return;
-    if (!E.isPlatformEmbedded) {
+    if (!O.isPlatformEmbedded) {
       let t = e.target;
       if ("A" === t.tagName && "" !== t.textContent || null == window.getSelection) return;
       let n = window.getSelection();
@@ -250,14 +250,14 @@ function G(e) {
   let x = i.useCallback(e => {
       s && (0, f.T6)(), b || (v.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, h, !0), _(e), y(!0))
     }, [b, h, s, _]),
-    E = i.useCallback(() => {
+    O = i.useCallback(() => {
       v.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, h, !1), y(!1)
     }, [h]);
   return {
     hasHovered: g.current,
     isHovered: b,
     handleMouseEnter: x,
-    handleMouseLeave: E
+    handleMouseLeave: O
   }
 }
 

@@ -110,9 +110,11 @@ function R(e) {
   }, [n]), (0, r.jsxs)(c.zxk, {
     look: c.zxk.Looks.LINK,
     color: c.zxk.Colors.LINK,
+    size: c.zxk.Sizes.MIN,
     onClick: function() {
       (0, j.JG)(t), i(!0)
     },
+    className: S.copyId,
     children: ["Application Id: ", t, " ", n ? E.NW.string(E.t["t5VZ8/"]) : null]
   })
 }

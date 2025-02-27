@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: ea3b3bf54e6c9d0c
+  Original File Name: 9524b06bcd5a90b8
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -4448,6 +4448,40 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     outline-offset: 2px
 }
 
+.hiddenVoiceStates_adebba {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: var(--spacing-4);
+    opacity: 1;
+    margin-top: var(--spacing-8)
+}
+
+.hiddenVoiceStates_adebba.locked_adebba {
+    opacity: .4
+}
+
+.hiddenVoiceStatesAvatar_adebba {
+    justify-content: center
+}
+
+.hiddenVoiceStatesAvatar_adebba,.hiddenVoiceStatesText_adebba {
+    display: flex;
+    align-items: center;
+    flex-direction: row
+}
+
+.hiddenVoiceStatesText_adebba {
+    padding: var(--spacing-4) var(--spacing-8);
+    border-radius: var(--radius-lg);
+    opacity: .8;
+    flex-shrink: 1;
+    background-color: rgba(19,19,24,.8);
+    box-shadow: var(--shadow-border) var(--shadow-high);
+    border: 1px solid var(--border-subtle);
+    cursor: pointer
+}
+
 .bgShade__6d791 {
     box-sizing: border-box;
     background-color: rgba(33,34,41,.75);
@@ -5274,4 +5308,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=ea3b3bf54e6c9d0c.css.map*/
+/*# sourceMappingURL=9524b06bcd5a90b8.css.map*/

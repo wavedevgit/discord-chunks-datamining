@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
@@ -22,7 +22,7 @@ function _(e) {
     setTab: t,
     badgeState: a,
     closePopout: _
-  } = e, v = (0, l.Wu)([d.Z], () => d.Z.getInvites()), y = (0, l.e7)([d.Z], () => d.Z.getInviteStatuses()), [x, E] = i.useMemo(() => o().partition(v, e => {
+  } = e, v = (0, l.Wu)([d.Z], () => d.Z.getInvites()), y = (0, l.e7)([d.Z], () => d.Z.getInviteStatuses()), [x, O] = i.useMemo(() => o().partition(v, e => {
     var t;
     return (null === (t = y[e.invite_id]) || void 0 === t ? void 0 : t.joinable) !== !1 && (Date.now() - new Date(e.created_at).getTime()) / 1e3 < e.ttl
   }), [v, y]);
@@ -111,11 +111,11 @@ function _(e) {
               expired: !1
             }, e.invite_id))
           })]
-        }), E.length > 0 && (0, r.jsxs)(r.Fragment, {
+        }), O.length > 0 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(b, {
             title: h.NW.string(h.t.f0Ia4e)
           }), (0, r.jsx)(r.Fragment, {
-            children: E.map(e => (0, r.jsx)(f.Z, {
+            children: O.map(e => (0, r.jsx)(f.Z, {
               invite: e,
               expired: !0
             }, e.invite_id))

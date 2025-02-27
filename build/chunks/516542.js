@@ -40,21 +40,24 @@ function g(e) {
     shouldClear: !1,
     shouldRefocus: !0
   })), [x, O, n, t, g]);
-  return (0, i.jsx)(c.Z, {
-    innerClassName: m.textArea,
-    onChange: Z,
-    placeholder: v,
-    accessibilityLabel: y,
-    channel: n,
-    textValue: x,
-    richValue: j,
-    type: a.Ie.OVERLAY_INLINE_REPLY,
-    onBlur: N,
-    onFocus: C,
-    focused: S,
-    onSubmit: _,
-    onKeyDown: w,
-    autoCompletePosition: "bottom",
-    disableThemedBackground: !0
+  return (0, i.jsx)("div", {
+    children: (0, i.jsx)(c.Z, {
+      innerClassName: m.textArea,
+      onChange: Z,
+      placeholder: v,
+      accessibilityLabel: y,
+      channel: n,
+      textValue: x,
+      richValue: j,
+      type: a.Ie.OVERLAY_INLINE_REPLY,
+      allowNewLines: !1,
+      onBlur: N,
+      onFocus: C,
+      focused: S,
+      onSubmit: _,
+      onKeyDown: w,
+      autoCompletePosition: "bottom",
+      disableThemedBackground: !0
+    })
   })
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 61195 **/
 n.d(t, {
-  Z: () => S
+  Z: () => C
 }), n(47120);
 var i = n(200651),
   o = n(192379),
@@ -108,7 +108,7 @@ function N(e) {
   })
 }
 
-function C(e) {
+function S(e) {
   let t = (0, r.e7)([s.Z], () => s.Z.hasVideo(e.channelId)),
     [n, c] = o.useState(g.tu.RTC_DEBUG_PANEL),
     u = (0, l.Dt)(),
@@ -161,11 +161,11 @@ function C(e) {
   })
 }
 
-function S(e) {
+function C(e) {
   return (0, h.J)({
     channelId: e.channelId,
     location: "RTCConnectionPopout"
-  }) ? (0, i.jsx)(C, y({}, e)) : (0, i.jsx)("div", {
+  }) ? (0, i.jsx)(S, y({}, e)) : (0, i.jsx)("div", {
     className: b.debugPanelStandalone,
     children: (0, i.jsx)("section", {
       className: b.debugPanelSection,

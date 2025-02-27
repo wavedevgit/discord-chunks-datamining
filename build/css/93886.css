@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 35d889c9d91ab33e
+  Original File Name: 711c11ed1727b6a1
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -1012,6 +1012,10 @@
     background: var(--background-secondary-alt);
     padding: 8px;
     gap: 4px
+}
+
+.copyId_b6e84c {
+    padding: 0
 }
 
 .panel_ef5082 {
@@ -4452,6 +4456,40 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     outline-offset: 2px
 }
 
+.hiddenVoiceStates_adebba {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: var(--spacing-4);
+    opacity: 1;
+    margin-top: var(--spacing-8)
+}
+
+.hiddenVoiceStates_adebba.locked_adebba {
+    opacity: .4
+}
+
+.hiddenVoiceStatesAvatar_adebba {
+    justify-content: center
+}
+
+.hiddenVoiceStatesAvatar_adebba,.hiddenVoiceStatesText_adebba {
+    display: flex;
+    align-items: center;
+    flex-direction: row
+}
+
+.hiddenVoiceStatesText_adebba {
+    padding: var(--spacing-4) var(--spacing-8);
+    border-radius: var(--radius-lg);
+    opacity: .8;
+    flex-shrink: 1;
+    background-color: rgba(19,19,24,.8);
+    box-shadow: var(--shadow-border) var(--shadow-high);
+    border: 1px solid var(--border-subtle);
+    cursor: pointer
+}
+
 .bgShade__6d791 {
     box-sizing: border-box;
     background-color: rgba(33,34,41,.75);
@@ -4701,4 +4739,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=35d889c9d91ab33e.css.map*/
+/*# sourceMappingURL=711c11ed1727b6a1.css.map*/

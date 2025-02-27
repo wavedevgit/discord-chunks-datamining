@@ -1,9 +1,9 @@
 /** Chunk was on 99839 **/
 r.d(t, {
-  GY: () => b,
+  GY: () => O,
   PI: () => f,
-  RT: () => y,
-  ls: () => O
+  RT: () => g,
+  ls: () => b
 });
 var n = r(200651);
 r(192379);
@@ -61,7 +61,7 @@ function f(e) {
   })
 }
 
-function O(e) {
+function b(e) {
   let {
     onClick: t
   } = e, r = u.NW.string(u.t["3D5yo6"]);
@@ -79,7 +79,7 @@ function O(e) {
   })
 }
 
-function b(e) {
+function O(e) {
   let {
     widgetId: t,
     showAllStreams: r
@@ -102,7 +102,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function g(e) {
   let {
     id: t,
     pinned: r

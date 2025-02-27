@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => C
+  Z: () => S
 }), n(47120), n(301563), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(773603);
 var r = n(200651),
   i = n(192379),
@@ -27,35 +27,35 @@ let x = "mweb_handoff_nonce",
   j = () => {
     c.K.remove(x), c.K.remove(v)
   },
-  C = () => {
+  S = () => {
     let e = (0, l.e7)([p.default], () => p.default.getFingerprint()),
       {
         fingerprint: t,
         handoff_token: n
       } = (0, o.parse)(window.location.search),
       f = Array.isArray(t) ? t.length > 1 ? t[0] : null : t,
-      C = null != f ? f : null !== e ? e : void 0;
+      S = null != f ? f : null !== e ? e : void 0;
     i.useEffect(() => {
       null !== f && e !== f && d.Z.dispatch({
         type: "FINGERPRINT",
         fingerprint: f
       })
     }, [f, e]);
-    let [S, y] = i.useState(null), T = i.useCallback(e => {
+    let [C, y] = i.useState(null), T = i.useCallback(e => {
       y(e), g.default.track(_.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
         reason: e,
-        fingerprint: (0, a.K)(C)
+        fingerprint: (0, a.K)(S)
       }, {
-        fingerprint: C
+        fingerprint: S
       })
-    }, [y, C]), A = c.K.get(x);
-    if ("null" === n && null === S && T("deep_link_failed"), null != n && "null" !== n && null == A && null === S && T("nonce_missing"), i.useEffect(() => {
+    }, [y, S]), A = c.K.get(x);
+    if ("null" === n && null === C && T("deep_link_failed"), null != n && "null" !== n && null == A && null === C && T("nonce_missing"), i.useEffect(() => {
         if (null != A) {
           let e = c.K.get(v);
           (null == e || Date.now() >= e) && (T("nonce_expired"), j())
         }
       }, [A, T]), i.useEffect(() => {
-        null != n && "null" !== n && null != A && null == S && s.tn.post({
+        null != n && "null" !== n && null != A && null == C && s.tn.post({
           url: _.ANM.HANDOFF_EXCHANGE,
           body: {
             key: A,
@@ -66,7 +66,7 @@ let x = "mweb_handoff_nonce",
           g.default.track(_.rMx.LOGIN_SUCCESSFUL, {
             source: _.uRl.MOBILE_WEB_HANDOFF,
             is_new_user: !1,
-            fingerprint: (0, a.K)(C)
+            fingerprint: (0, a.K)(S)
           });
           let e = new URL(window.location.href),
             t = new URLSearchParams(e.search);
@@ -76,11 +76,11 @@ let x = "mweb_handoff_nonce",
         }).finally(() => {
           j()
         })
-      }, [n, A, S, C, T]), null == C) return null;
-    let P = null == S ? (0, r.jsxs)(r.Fragment, {
+      }, [n, A, C, S, T]), null == S) return null;
+    let P = null == C ? (0, r.jsxs)(r.Fragment, {
       children: [b.NW.string(b.t.uJ1Jsb), (0, r.jsx)("br", {}), b.NW.string(b.t.GHVWAg)]
-    }) : O.has(S) ? b.NW.string(b.t.EPt55u) : E.has(S) ? b.NW.string(b.t.g87kTk) : void 0;
-    return null != S && O.has(S) ? (0, r.jsx)("div", {
+    }) : O.has(C) ? b.NW.string(b.t.EPt55u) : E.has(C) ? b.NW.string(b.t.g87kTk) : void 0;
+    return null != C && O.has(C) ? (0, r.jsx)("div", {
       className: N.errorContainer,
       children: (0, r.jsx)(u.Text, {
         color: "interactive-normal",
@@ -101,12 +101,12 @@ let x = "mweb_handoff_nonce",
             n = new URLSearchParams(window.location.search);
           n.delete("fingerprint"), n.delete("handoff_token");
           let r = new URLSearchParams;
-          r.set("redirect", encodeURIComponent(window.location.pathname + n.toString())), r.set("key", e), r.set("fingerprint", C), t.search = r.toString(), g.default.track(_.rMx.DEEP_LINK_CLICKED, {
-            fingerprint: (0, a.K)(C),
+          r.set("redirect", encodeURIComponent(window.location.pathname + n.toString())), r.set("key", e), r.set("fingerprint", S), t.search = r.toString(), g.default.track(_.rMx.DEEP_LINK_CLICKED, {
+            fingerprint: (0, a.K)(S),
             source: "mobile_web_handoff",
             destination: _.x0X
           }, {
-            fingerprint: C,
+            fingerprint: S,
             flush: !0
           }), window.location.href = t.toString()
         },

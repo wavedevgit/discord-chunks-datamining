@@ -1,4 +1,4 @@
-/** Chunk was on 79120 **/
+/** Chunk was on 70045 **/
 n.d(t, {
   Z: () => a
 });
@@ -42,7 +42,7 @@ function a(e) {
     handleJoinRequest: p,
     buttonCTA: m,
     tooltip: g,
-    isEnabled: b
+    isEnabled: y
   } = d;
   return (0, r.jsx)(l.ua7, {
     text: g,
@@ -73,7 +73,7 @@ function a(e) {
         onClick: p,
         onMouseEnter: l,
         onMouseLeave: i,
-        disabled: !b,
+        disabled: !y,
         submitting: f,
         fullWidth: !0
       }, u), n = n = {

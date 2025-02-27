@@ -1,7 +1,7 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
-  Tk: () => P,
-  ZP: () => T,
+  Tk: () => T,
+  ZP: () => P,
   ef: () => C,
   r8: () => S
 }), n(47120), n(627341);
@@ -24,11 +24,11 @@ var r = n(278074),
   v = n(839963),
   y = n(897325),
   x = n(57101),
-  E = n(562293),
-  O = n(981631),
+  O = n(562293),
+  E = n(981631),
   j = n(388032);
 let N = {
-  channelId: O.lds,
+  channelId: E.lds,
   selectedAnswerIds: new Set,
   submitting: !1,
   editing: !1,
@@ -69,7 +69,7 @@ function S(e) {
   return null == e.poll || p.Z.getMessage(e.channel_id, e.id) === e
 }
 
-function P(e, t) {
+function T(e, t) {
   var n, r, i, a;
   let {
     formattedExpirationLabel: o
@@ -77,8 +77,8 @@ function P(e, t) {
     poll: l
   } = e;
   if (null == l) return;
-  let m = e.state === O.yb.SENT,
-    f = m ? null != o ? o : (0, E.H)(l.expiry) : "",
+  let m = e.state === E.yb.SENT,
+    f = m ? null != o ? o : (0, O.H)(l.expiry) : "",
     h = null == f && m,
     {
       selectedAnswerIds: g,
@@ -94,23 +94,23 @@ function P(e, t) {
   }
   let C = g.size > 0,
     I = x.some(e => !0 === e.me_vote),
-    P = !v && I,
-    T = P || h || y,
-    A = m && j && (!I || v || T),
+    T = !v && I,
+    P = T || h || y,
+    A = m && j && (!I || v || P),
     w = null === (r = d.Z.getChannel(e.getChannelId())) || void 0 === r ? void 0 : null === (n = r.getGuildId) || void 0 === n ? void 0 : n.call(r),
     Z = null != w ? u.ZP.getSelfMember(w) : null,
     k = (0, s.EY)(Z),
     R = (0, c.b)(Z),
-    L = !b && C && !P && m && !k && !R;
+    L = !b && C && !T && m && !k && !R;
   return {
     poll: l,
     canTapAnswers: A,
-    canRemoveVote: P && m && !h,
-    canShowVoteCounts: T,
+    canRemoveVote: T && m && !h,
+    canShowVoteCounts: P,
     canSubmitVote: L,
     expirationLabel: f,
     hasSelectedAnswer: C,
-    hasVoted: P,
+    hasVoted: T,
     hasVoteRecorded: I,
     isEditingVote: v,
     isExpired: h,
@@ -119,12 +119,12 @@ function P(e, t) {
     reactions: x,
     selectedAnswerIds: g,
     submitting: b,
-    tapShouldOpenVotersModal: T,
+    tapShouldOpenVotersModal: P,
     showResults: y
   }
 }
 
-function T(e, t) {
+function P(e, t) {
   var n, s;
   let {
     animateEmoji: c = !1,
@@ -134,14 +134,14 @@ function T(e, t) {
     poll: _
   } = e;
   if (null == _) return;
-  let E = m.default.getCurrentUser();
-  if (null == E) return;
-  let O = a.Z.useReducedMotion,
+  let O = m.default.getCurrentUser();
+  if (null == O) return;
+  let E = a.Z.useReducedMotion,
     N = null === (s = d.Z.getChannel(e.getChannelId())) || void 0 === s ? void 0 : null === (n = s.getGuildId) || void 0 === n ? void 0 : n.call(s),
-    S = (0, y.E)(E, N),
-    T = _.answers,
+    S = (0, y.E)(O, N),
+    P = _.answers,
     A = _.layout_type,
-    w = P(e, t, {
+    w = T(e, t, {
       formattedExpirationLabel: p
     });
   if (null == w) return;
@@ -163,11 +163,11 @@ function T(e, t) {
     showResults: K
   } = w, Y = (0, b.cZ)(G), X = j.NW.formatToPlainString(j.t.XRkuoa, {
     count: Y.toLocaleString()
-  }), q = Math.max(...T.map(e => {
+  }), q = Math.max(...P.map(e => {
     var t, n;
     let r = C(G, "".concat(e.answer_id));
     return null !== (n = null == r ? void 0 : null === (t = r.count_details) || void 0 === t ? void 0 : t.vote) && void 0 !== n ? n : 0
-  })), Q = T.map(e => {
+  })), Q = P.map(e => {
     var t, n, a;
     let s = "".concat(e.answer_id),
       d = C(G, s),
@@ -221,7 +221,7 @@ function T(e, t) {
       isVictor: U && g,
       didSelfVote: _,
       style: b,
-      shouldAnimateTransition: V && !O,
+      shouldAnimateTransition: V && !E,
       votesPercentage: Math.round(100 * p),
       votes: (0, r.EQ)(A).with(i.C.IMAGE_ONLY_ANSWERS, () => "(".concat(u.toLocaleString(), ")")).otherwise(() => j.NW.formatToPlainString(j.t.XRkuoa, {
         count: u.toLocaleString()

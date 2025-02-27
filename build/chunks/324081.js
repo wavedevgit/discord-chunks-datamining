@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => S
 });
@@ -22,8 +22,8 @@ var i = n(120356),
   v = n(199902),
   y = n(592125),
   x = n(430824),
-  E = n(158776),
-  O = n(306680),
+  O = n(158776),
+  E = n(306680),
   j = n(594174),
   N = n(388032),
   C = n(528329);
@@ -71,7 +71,7 @@ function S(e) {
       onKeyDown: function(e) {
         null != u && null != d && ("ArrowRight" === e.key && d.collapsed || "ArrowLeft" === e.key && !d.collapsed) && (null == u || u(d))
       },
-      children: [(0, r.jsx)(P, {
+      children: [(0, r.jsx)(T, {
         channel: i,
         gotoChannel: l
       }), (0, r.jsx)(w, {
@@ -92,12 +92,12 @@ function S(e) {
   })
 }
 
-function P(e) {
+function T(e) {
   let {
     channel: t,
     gotoChannel: n
   } = e;
-  return t.isPrivate() ? (0, r.jsx)(T, {
+  return t.isPrivate() ? (0, r.jsx)(P, {
     channel: t,
     gotoChannel: n
   }) : (0, r.jsx)(A, {
@@ -106,7 +106,7 @@ function P(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   let {
     channel: t,
     gotoChannel: n
@@ -144,7 +144,7 @@ function w(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, l.e7)([x.Z], () => x.Z.getGuild(t.guild_id)), c = (0, l.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), d = (0, l.e7)([O.ZP], () => O.ZP.getIsMentionLowImportance(t.id)), u = (0, h.KS)(t, o), p = (0, f.ZP)(t, !1), m = null == c ? null == o ? void 0 : o.name : "".concat(null == o ? void 0 : o.name, " › ").concat(c.name), _ = t.isMultiUserDM() ? N.NW.formatToPlainString(N.t.CxSA5O, {
+  } = e, o = (0, l.e7)([x.Z], () => x.Z.getGuild(t.guild_id)), c = (0, l.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), d = (0, l.e7)([E.ZP], () => E.ZP.getIsMentionLowImportance(t.id)), u = (0, h.KS)(t, o), p = (0, f.ZP)(t, !1), m = null == c ? null == o ? void 0 : o.name : "".concat(null == o ? void 0 : o.name, " › ").concat(c.name), _ = t.isMultiUserDM() ? N.NW.formatToPlainString(N.t.CxSA5O, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(Z, {
     channel: t
@@ -195,12 +195,12 @@ function Z(e) {
     status: i,
     activities: a,
     applicationStream: o
-  } = (0, l.cj)([j.default, E.Z, v.Z], () => {
+  } = (0, l.cj)([j.default, O.Z, v.Z], () => {
     let e = j.default.getUser(t.getRecipientId());
     return {
       user: e,
-      status: null != e ? E.Z.getStatus(e.id) : null,
-      activities: null != e ? E.Z.getActivities(e.id) : null,
+      status: null != e ? O.Z.getStatus(e.id) : null,
+      activities: null != e ? O.Z.getActivities(e.id) : null,
       applicationStream: null != e ? v.Z.getAnyStreamForUser(e.id) : null
     }
   }), {

@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => b
 });
@@ -33,8 +33,8 @@ function b(e) {
   }, {
     autoTrackExposure: !1
   }), {
-    enabled: E,
-    inInbox: O
+    enabled: O,
+    inInbox: E
   } = u.Z.useExperiment({
     location: "RecentsPopout"
   }), j = (0, f.Us)({
@@ -96,14 +96,14 @@ function b(e) {
             color: s.Z.STATUS_DANGER,
             className: _.iconBadge
           }) : null]
-        }) : null, E && O ? (0, r.jsx)(o.njP.Item, {
+        }) : null, O && E ? (0, r.jsx)(o.njP.Item, {
           "aria-label": g.NW.string(g.t["2pAkDA"]),
           id: a.X.BOOKMARKS,
           className: _.tab,
           children: 0 === I ? g.NW.string(g.t["2pAkDA"]) : g.NW.formatToPlainString(g.t.I4fryM, {
             count: I
           })
-        }) : null, x && !E ? (0, r.jsx)(o.njP.Item, {
+        }) : null, x && !O ? (0, r.jsx)(o.njP.Item, {
           "aria-label": "todos",
           id: a.X.TODOS,
           className: _.tab,

@@ -22,8 +22,8 @@ var i, o = n(392711),
   I = n(761282),
   O = n(814443),
   N = n(789407),
-  C = n(630186),
-  S = n(250889),
+  S = n(630186),
+  C = n(250889),
   x = n(199902),
   w = n(592125),
   T = n(480294),
@@ -74,8 +74,8 @@ function U(e, t) {
   }), e
 }
 let G = !1,
-  H = !1,
-  V = [],
+  V = !1,
+  H = [],
   K = [],
   Q = {},
   z = {},
@@ -93,7 +93,7 @@ function q(e) {
 
 function $(e) {
   return null == Q[e] && (Q = U(L({}, Q), {
-    [e]: new S.Z({
+    [e]: new C.Z({
       name: e
     })
   })), Q[e]
@@ -101,7 +101,7 @@ function $(e) {
 
 function ee(e) {
   return null == z[e] && (z = U(L({}, z), {
-    [e]: new C.Z({
+    [e]: new S.Z({
       url: e
     })
   })), z[e]
@@ -159,7 +159,7 @@ function er(e, t, n) {
         tags: {
           source: "ACTIVITIES"
         }
-      }), null) : e === N.XB ? N.r9 : e.startsWith(S.H) ? $(e.slice(S.H.length)) : e.startsWith(C._) ? ee(e.slice(C._.length)) : (et(e), null)
+      }), null) : e === N.XB ? N.r9 : e.startsWith(C.H) ? $(e.slice(C.H.length)) : e.startsWith(S._) ? ee(e.slice(S._.length)) : (et(e), null)
     }(h);
     if ((0, d.Z)(_)) {
       let t = (0, s.a)();
@@ -317,7 +317,7 @@ let eu = r().throttle(() => {
             surface: "now-playing"
           })
         })
-      }), K = (V = t.filter(e => {
+      }), K = (H = t.filter(e => {
         let {
           blockeeExperimentEnabled: t,
           blockerExperimentEnabled: n
@@ -332,7 +332,7 @@ let eu = r().throttle(() => {
           let e = Array.from(Y);
           p.ZP.fetchApplications(e), e.forEach(e => X.add(e)), Y.clear()
         }
-      }(), H = !0
+      }(), V = !0
   }(), eh.emitChange()
 }, 1e3);
 
@@ -344,7 +344,7 @@ class e_ extends(i = l.ZP.Store) {
     this.syncWith([k.default, g.Z, A.Z, P.Z, R.Z, x.Z, W.Z, T.Z, O.Z], ed), this.waitFor(y.Z, j.Z, g.Z, k.default, O.Z)
   }
   get currentActivityParties() {
-    return V
+    return H
   }
   get nowPlayingCards() {
     return K
@@ -353,13 +353,13 @@ class e_ extends(i = l.ZP.Store) {
     return G
   }
   get loaded() {
-    return H
+    return V
   }
 }
 M(e_, "displayName", "NowPlayingViewStore");
 let eh = new e_(c.Z, {
     LOGOUT: function() {
-      G = !1, V = [], K = [], Y.clear()
+      G = !1, H = [], K = [], Y.clear()
     },
     NOW_PLAYING_MOUNTED: function() {
       G = !0, eu()

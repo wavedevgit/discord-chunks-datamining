@@ -25,8 +25,8 @@ var r, i = n(200651),
   E = n(473855),
   O = n(124860),
   j = n(86779),
-  C = n(726745),
-  S = n(913583),
+  S = n(726745),
+  C = n(913583),
   y = n(144114),
   T = n(541692),
   A = n(952802),
@@ -546,7 +546,7 @@ class X extends(r = o.PureComponent) {
     })
   }
   renderChooseAccount() {
-    return (0, i.jsx)(S.Z, {
+    return (0, i.jsx)(C.Z, {
       onDismiss: () => {
         this.setState(e => J(Y({}, e), {
           dismissedChooseAccount: !0
@@ -784,7 +784,7 @@ q(X, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
 let $ = function(e) {
-  let t = (0, d.cj)([w.Z, L.Z, R.default, C.Z, T.Z], () => ({
+  let t = (0, d.cj)([w.Z, L.Z, R.default, S.Z, T.Z], () => ({
     authenticated: R.default.isAuthenticated(),
     handoffAvailable: w.Z.isHandoffAvailable(),
     user: w.Z.user,
@@ -793,7 +793,7 @@ let $ = function(e) {
     mfaMethods: R.default.getMFAMethods(),
     defaultRoute: L.Z.defaultRoute,
     country: T.Z.getCountryCode(),
-    hasLoggedInAccounts: C.Z.getHasLoggedInAccounts()
+    hasLoggedInAccounts: S.Z.getHasLoggedInAccounts()
   }));
   return (0, i.jsx)(X, Y({}, e, t))
 }

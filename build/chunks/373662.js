@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   ZP: () => g,
   fO: () => h,
@@ -62,8 +62,8 @@ function f(e) {
     onTooltipHide: v,
     disabled: y,
     dangerous: x,
-    separator: E,
-    sparkle: O,
+    separator: O,
+    sparkle: E,
     showNewBadge: j,
     buttonClassName: N,
     children: C
@@ -114,7 +114,7 @@ function f(e) {
           }, g)) : null, null != C ? (0, r.jsx)("div", {
             className: a()(u.icon, u.buttonContent),
             children: C
-          }) : null, O && (0, r.jsx)(o.K1N, {}), j && (0, r.jsx)(o.IGR, {
+          }) : null, E && (0, r.jsx)(o.K1N, {}), j && (0, r.jsx)(o.IGR, {
             text: d.NW.string(d.t.y2b7CA),
             color: l.Z.BG_BRAND,
             className: u.newBadge
@@ -128,7 +128,7 @@ function f(e) {
           return n
         })(Object(c)).forEach(function(e) {
           Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(c, e))
-        }), i)), E && (0, r.jsx)(s.Z0, {})]
+        }), i)), O && (0, r.jsx)(s.Z0, {})]
       })
     }
   })

@@ -23,8 +23,8 @@ var i = n(200651),
   I = n(131951),
   O = n(944486),
   N = n(594174),
-  C = n(449224),
-  S = n(358085),
+  S = n(449224),
+  C = n(358085),
   x = n(145597),
   w = n(981631),
   T = n(37113),
@@ -45,7 +45,7 @@ function j(e) {
     var e, n, i;
     if (null == j || null == t || null == Z) return !1;
     let o = await k(),
-      r = (0, S.isWindows)() ? (0, h.Z)(c.ZP, C.Z) : null;
+      r = (0, C.isWindows)() ? (0, h.Z)(c.ZP, S.Z) : null;
     if (null == r && null == o) return !1;
     let a = null != A ? null === (e = m.Z.getGuild(A)) || void 0 === e ? void 0 : e.premiumTier : null,
       {
@@ -65,7 +65,7 @@ function j(e) {
       soundshareEnabled: y
     });
     let W = (0, p.Z)(r, o, c.ZP.getRunningGames()),
-      R = !(0, S.isWindows)() || null == W || (null == o ? void 0 : o.id.startsWith("camera:")) || null == W ? null : W.pid,
+      R = !(0, C.isWindows)() || null == W || (null == o ? void 0 : o.id.startsWith("camera:")) || null == W ? null : W.pid,
       D = null,
       B = null;
     return null == R && null != o && (D = o.id, B = o.name), !!(I.Z.getUseSystemScreensharePicker() || await g.Z.hasPermission(P.Eu.SCREEN_RECORDING, {

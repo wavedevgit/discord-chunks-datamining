@@ -3,7 +3,7 @@
 n.d(t, {
   O: () => u,
   Z: () => c
-});
+}), n(47120);
 var r = n(442837),
   i = n(763296),
   o = n(944486),
@@ -35,6 +35,6 @@ function u(e) {
     checkSoundboardSounds: r = !0,
     checkIsMuted: c = !1,
     context: u
-  } = e, d = o.Z.getVoiceChannelId(), f = null != d ? s.Z.getVoiceStateForChannel(d, t) : null, _ = c && ((null == f ? void 0 : f.mute) || (null == f ? void 0 : f.selfMute)), p = a.Z.isSpeaking(t, u) && !_, h = a.Z.isSoundSharing(t) && n;
-  return l(p, i.Z.isUserPlayingSounds(t) && r, h)
+  } = e, [d, f, _, p] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [s.Z, o.Z, a.Z, i.Z], h = f.getVoiceChannelId(), g = null != h ? d.getVoiceStateForChannel(h, t) : null, m = c && ((null == g ? void 0 : g.mute) || (null == g ? void 0 : g.selfMute)), E = _.isSpeaking(t, u) && !m, v = _.isSoundSharing(t) && n;
+  return l(E, p.isUserPlayingSounds(t) && r, v)
 }

@@ -44,7 +44,7 @@ function j(e) {
   return e
 }
 
-function C(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function C(e, t) {
   }), e
 }
 
-function S() {
+function C() {
   return (0, r.jsx)("div", {
     className: O.centerFlex,
     children: (0, r.jsx)(l.$jN, {})
@@ -158,7 +158,7 @@ function P(e) {
   let n = e => null == t ? null : 1 === e ? (0, r.jsx)(v.X, {
     invite: t
   }) : null;
-  return (0, r.jsx)(A, C(j({
+  return (0, r.jsx)(A, S(j({
     startAnimHeightPx: 0,
     innerStyle: () => O.guildInfoInner
   }, e), {
@@ -170,25 +170,25 @@ function Z(e) {
   let {
     invite: t
   } = e, n = n => {
-    if (null == t) return (0, r.jsx)(S, {});
+    if (null == t) return (0, r.jsx)(C, {});
     switch (n) {
       case 1:
-        return (0, r.jsx)(x.Z, C(j({}, e), {
+        return (0, r.jsx)(x.Z, S(j({}, e), {
           invite: t
         }));
       case 2:
-        return (0, r.jsx)(T, C(j({}, e), {
+        return (0, r.jsx)(T, S(j({}, e), {
           invite: t
         }));
       default:
-        return (0, r.jsx)(S, {})
+        return (0, r.jsx)(C, {})
     }
   }, i = {
     1: O.inviteCardInner,
     2: O.inviteCardInnerError,
     0: O.inviteCardInnerLoading
   };
-  return (0, r.jsx)(A, C(j({
+  return (0, r.jsx)(A, S(j({
     startAnimHeightPx: 200,
     innerStyle: e => i[e]
   }, e), {
@@ -215,7 +215,7 @@ function R(e) {
     className: O.splashBackground,
     style: o,
     contentClassName: O.centerAuthBoxContent,
-    children: [(0, r.jsx)(Z, C(j({}, e), {
+    children: [(0, r.jsx)(Z, S(j({}, e), {
       onAcceptInvite: n
     })), (0, r.jsx)(P, j({}, e))]
   })

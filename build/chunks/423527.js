@@ -24,8 +24,8 @@ var r, i = n(200651),
   E = n(388905),
   O = n(853268),
   j = n(639946),
-  C = n(616952),
-  S = n(792766),
+  S = n(616952),
+  C = n(792766),
   y = n(692483),
   T = n(100159),
   A = n(473855),
@@ -314,7 +314,7 @@ class eu extends(r = o.PureComponent) {
     let {
       invite: e
     } = this.props;
-    return (null == e ? void 0 : e.stage_instance) != null && null != e.guild ? (0, i.jsx)(S.Z, {
+    return (null == e ? void 0 : e.stage_instance) != null && null != e.guild ? (0, i.jsx)(C.Z, {
       stageInstance: e.stage_instance,
       guild: e.guild
     }) : (null == e ? void 0 : e.guild_scheduled_event) != null ? (0, i.jsx)(j.r, {
@@ -412,7 +412,7 @@ class eu extends(r = o.PureComponent) {
         })]
       }), null != e && s ? (0, i.jsx)(E.ZP, {
         className: ei.marginTop20,
-        children: (0, i.jsx)(S.y, {
+        children: (0, i.jsx)(C.y, {
           guild: e.guild,
           onlineCount: e.approximate_presence_count
         })
@@ -453,7 +453,7 @@ class eu extends(r = o.PureComponent) {
       } = {}
     } = this.state, {
       consentRequired: j,
-      isMobileWebInviteRegistration: S,
+      isMobileWebInviteRegistration: C,
       uniqueUsernameRegistrationConfig: {
         suggestions: y
       },
@@ -574,9 +574,9 @@ class eu extends(r = o.PureComponent) {
         error: null != m ? m : ec(O),
         value: u,
         required: !0
-      }), (0, i.jsx)(C.Z, {}), D, R, Z, P, $.a ? null : (0, i.jsx)(E.zx, {
-        look: S ? E.zx.Looks.FILLED : E.zx.Looks.LINK,
-        color: S ? E.zx.Colors.PRIMARY : E.zx.Colors.LINK,
+      }), (0, i.jsx)(S.Z, {}), D, R, Z, P, $.a ? null : (0, i.jsx)(E.zx, {
+        look: C ? E.zx.Looks.FILLED : E.zx.Looks.LINK,
+        color: C ? E.zx.Colors.PRIMARY : E.zx.Colors.LINK,
         onClick: this.handleGotoLogin,
         className: ei.marginTop20,
         children: en.NW.string(en.t["r/jzu7"])
@@ -597,7 +597,7 @@ class eu extends(r = o.PureComponent) {
       onSubmit: this.handleSubmit,
       tag: "form",
       className: T,
-      children: [A && !S ? (0, i.jsx)(E.zx, {
+      children: [A && !C ? (0, i.jsx)(E.zx, {
         onClick: this.handleGotoLogin,
         look: E.zx.Looks.LINK,
         color: E.zx.Colors.PRIMARY,

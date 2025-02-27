@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => v
 });
@@ -24,33 +24,33 @@ function v(e) {
   let {
     invite: n,
     getAcceptInviteContext: v
-  } = e, y = (0, a.e7)([p.default], () => p.default.getId()), x = (null === (t = n.inviter) || void 0 === t ? void 0 : t.id) === y, E = n.state === g.r2o.ACCEPTING, {
-    analyticsLocations: O
+  } = e, y = (0, a.e7)([p.default], () => p.default.getId()), x = (null === (t = n.inviter) || void 0 === t ? void 0 : t.id) === y, O = n.state === g.r2o.ACCEPTING, {
+    analyticsLocations: E
   } = (0, c.ZP)(s.Z.INVITE_EMBED), j = (0, a.e7)([f.Z], () => {
     var e;
     return null != n.inviter && f.Z.isFriend(null === (e = n.inviter) || void 0 === e ? void 0 : e.id)
   }), N = i.useCallback(() => {
     let e = "noop";
-    null != n.inviter && null != m.Z.getDMFromUserId(n.inviter.id) && (e = "transition", o.Z.openPrivateChannel([n.inviter.id])), (0, l.r$)(n, e, O)
-  }, [n, O]), C = i.useCallback(() => {
-    (0, l.r$)(n, "accept", O);
+    null != n.inviter && null != m.Z.getDMFromUserId(n.inviter.id) && (e = "transition", o.Z.openPrivateChannel([n.inviter.id])), (0, l.r$)(n, e, E)
+  }, [n, E]), C = i.useCallback(() => {
+    (0, l.r$)(n, "accept", E);
     let e = v("Invite Button Embed");
     l.ZP.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })
-  }, [n, O, v]);
+  }, [n, E, v]);
   if (null == n.inviter) return null;
   let I = j ? N : C,
     S = _.NW.string(_.t.ib7Ng4),
-    P = d.Z.Button.Colors.GREEN;
-  j ? (S = _.NW.string(_.t.xhxnPj), P = d.Z.Button.Colors.PRIMARY) : x && (S = _.NW.string(_.t.ib7Ng4), P = d.Z.Button.Colors.PRIMARY);
-  let T = x ? _.NW.string(_.t.eQyu1N) : _.NW.string(_.t.PYJHW1),
+    T = d.Z.Button.Colors.GREEN;
+  j ? (S = _.NW.string(_.t.xhxnPj), T = d.Z.Button.Colors.PRIMARY) : x && (S = _.NW.string(_.t.ib7Ng4), T = d.Z.Button.Colors.PRIMARY);
+  let P = x ? _.NW.string(_.t.eQyu1N) : _.NW.string(_.t.PYJHW1),
     A = null != n.inviter ? "".concat(n.inviter.username) : "",
     w = null != n.inviter ? h.ZP.getUserTag(n.inviter) : "";
   return (0, r.jsxs)(d.Z, {
     children: [(0, r.jsx)(d.Z.Header, {
-      text: T
+      text: P
     }), (0, r.jsxs)(d.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: b.headerLine,
@@ -64,9 +64,9 @@ function v(e) {
         })]
       }), (0, r.jsx)(d.Z.Button, {
         onClick: I,
-        submitting: E,
+        submitting: O,
         isDisabled: x,
-        color: P,
+        color: T,
         children: S
       })]
     })]

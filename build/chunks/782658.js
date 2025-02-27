@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => A
 });
@@ -21,15 +21,15 @@ var r = n(200651),
   v = n(411198),
   y = n(610699),
   x = n(313876),
-  E = n(778333),
-  O = n(949981),
+  O = n(778333),
+  E = n(949981),
   j = n(680668),
   N = n(143708),
   C = n(358595),
   I = n(563917),
   S = n(135845),
-  P = n(981631),
-  T = n(723359);
+  T = n(981631),
+  P = n(723359);
 
 function A(e) {
   let {
@@ -47,7 +47,7 @@ function A(e) {
     k && o.ZP.resolveInvite(t)
   }, [t, k]);
   let R = null != w ? w : {
-      state: P.r2o.RESOLVING,
+      state: T.r2o.RESOLVING,
       code: ""
     },
     {
@@ -66,16 +66,16 @@ function A(e) {
       if (null == D && (null == w ? void 0 : w.guild) != null) {
         let e = v.Qs(w.guild);
         if ((0, c.bN)() && (0, c.Yt)(e)) {
-          (0, s.mN)(T.L0.NSFW_SERVER_INVITE_EMBED);
+          (0, s.mN)(P.L0.NSFW_SERVER_INVITE_EMBED);
           return
         }
       }(0, f.yU)() ? (0, h.Z)({
         analyticsSource: {
-          page: P.ZY5.INVITE_EMBED
+          page: T.ZY5.INVITE_EMBED
         },
         analyticsLocation: {
-          page: P.ZY5.INVITE_EMBED,
-          section: P.jXE.GUILD_CAP_UPSELL_MODAL
+          page: T.ZY5.INVITE_EMBED,
+          section: T.jXE.GUILD_CAP_UPSELL_MODAL
         },
         analyticsLocations: L
       }) : o.ZP.acceptInviteAndTransitionToInviteChannel({
@@ -92,17 +92,17 @@ function A(e) {
       author: n
     });
   switch (R.state) {
-    case P.r2o.RESOLVING:
+    case T.r2o.RESOLVING:
       B = (0, r.jsx)(C.Z, {});
       break;
-    case P.r2o.EXPIRED:
-    case P.r2o.BANNED:
+    case T.r2o.EXPIRED:
+    case T.r2o.BANNED:
       B = (0, r.jsx)(N.Z, {
-        banned: R.state === P.r2o.BANNED,
+        banned: R.state === T.r2o.BANNED,
         author: n
       });
       break;
-    case P.r2o.ERROR:
+    case T.r2o.ERROR:
       B = (0, r.jsx)(x.Z, {
         author: n,
         inviteError: Z
@@ -111,7 +111,7 @@ function A(e) {
     default:
       switch ((0, m.VR)(R)) {
         case m.wx.GROUP_DM:
-          B = (0, r.jsx)(O.Z, {
+          B = (0, r.jsx)(E.Z, {
             onTransitionToInviteChannel: F,
             onAcceptInstantInvite: U,
             currentUserId: M,
@@ -120,7 +120,7 @@ function A(e) {
           });
           break;
         case m.wx.FRIEND:
-          B = (0, r.jsx)(E.Z, {
+          B = (0, r.jsx)(O.Z, {
             invite: R,
             author: n,
             getAcceptInviteContext: A
@@ -165,7 +165,7 @@ function A(e) {
       }
   }
   return (0, r.jsx)(l.Z, {
-    section: P.jXE.INVITE_LINK,
+    section: T.jXE.INVITE_LINK,
     children: B
   })
 }

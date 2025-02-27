@@ -24,7 +24,7 @@ function b(e) {
     setSlide: o,
     ready: b,
     token: N
-  } = e, [x, v] = i.useState(!1), [I, E] = i.useState(null), [O, j] = i.useState(null), [C, S] = i.useState(""), y = i.useRef(null);
+  } = e, [x, v] = i.useState(!1), [I, E] = i.useState(null), [O, j] = i.useState(null), [S, C] = i.useState(""), y = i.useRef(null);
   return i.useEffect(() => {
     if (b) {
       var e;
@@ -48,8 +48,8 @@ function b(e) {
         label: f.NW.string(f.t["8dM4FB"]),
         setRef: y,
         className: _.marginBottom20,
-        value: C,
-        onChange: S,
+        value: S,
+        onChange: C,
         error: I,
         autoComplete: "new-password",
         maxLength: 72,
@@ -58,7 +58,7 @@ function b(e) {
         className: _.marginTop8,
         onClick: () => {
           if (!x) {
-            if (0 === C.length) {
+            if (0 === S.length) {
               E(f.NW.string(f.t.R98xDw)), d.S.dispatch(g.CkL.WAVE_EMPHASIZE);
               return
             }
@@ -66,7 +66,7 @@ function b(e) {
               url: g.ANM.ACCOUNT_REVERT,
               body: {
                 token: N,
-                password: C
+                password: S
               },
               trackedActionData: {
                 event: l.NetworkActionNames.ACCOUNT_REVERT
@@ -78,7 +78,7 @@ function b(e) {
                   email: n
                 }
               } = e;
-              S(""), t(n), o(p.n.SUCCESS)
+              C(""), t(n), o(p.n.SUCCESS)
             }).catch(e => {
               if (e instanceof Error) j(f.NW.formatToPlainString(f.t.aTVNen, {
                 statusPageURL: g.yXt.STATUS
@@ -115,7 +115,7 @@ function b(e) {
       children: (0, r.jsx)(u.zx, {
         color: u.zx.Colors.PRIMARY,
         onClick: () => {
-          S(""), o(p.n.START)
+          C(""), o(p.n.START)
         },
         children: f.NW.string(f.t.rzxnQ0)
       })

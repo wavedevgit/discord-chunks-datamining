@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => v
 }), n(47120), n(86693), n(536091);
@@ -24,10 +24,10 @@ function v(e) {
     message: t,
     channel: a,
     compact: v
-  } = e, y = (0, l.Wu)([u.Z], () => Array.from(u.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [x, E] = i.useState(null);
+  } = e, y = (0, l.Wu)([u.Z], () => Array.from(u.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [x, O] = i.useState(null);
   return (i.useEffect(() => {
     let e = setInterval(() => {
-      y.length > 0 && E(y[Math.floor(Math.random() * y.length)])
+      y.length > 0 && O(y[Math.floor(Math.random() * y.length)])
     }, 500);
     return () => clearInterval(e)
   }, [y]), null == a.guild_id) ? null : (0, r.jsxs)("div", {

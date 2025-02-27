@@ -1,6 +1,6 @@
-/** Chunk was on 79120 **/
+/** Chunk was on 70045 **/
 n.d(t, {
-  Z: () => b
+  Z: () => y
 });
 var r = n(200651),
   l = n(192379),
@@ -40,26 +40,26 @@ function g(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     stream: t,
     className: n,
     noText: i = !1,
     noImage: o = !1
-  } = e, s = (0, a.e7)([c.Z], () => c.Z.getBasicChannel(t.channelId)), b = (0, a.e7)([u.Z], () => null != s && u.Z.canBasicChannel(f.S7T.CONNECT, s)), {
-    previewUrl: y,
+  } = e, s = (0, a.e7)([c.Z], () => c.Z.getBasicChannel(t.channelId)), y = (0, a.e7)([u.Z], () => null != s && u.Z.canBasicChannel(f.S7T.CONNECT, s)), {
+    previewUrl: b,
     isLoading: O
-  } = (0, d.Z)(t.guildId, t.channelId, t.ownerId), h = l.useRef(O ? null : y);
+  } = (0, d.Z)(t.guildId, t.channelId, t.ownerId), h = l.useRef(O ? null : b);
   l.useEffect(() => {
-    O || (h.current = y)
-  }, [y, O]);
-  let v = null == y || O ? h.current : y;
+    O || (h.current = b)
+  }, [b, O]);
+  let v = null == b || O ? h.current : b;
   return null == v ? (0, r.jsx)(g, {
     className: n,
     isLoading: O,
     noText: i,
     noImage: o,
-    previewText: b ? void 0 : p.NW.string(p.t.pgUTZG)
+    previewText: y ? void 0 : p.NW.string(p.t.pgUTZG)
   }) : (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)("img", {

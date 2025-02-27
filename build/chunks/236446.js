@@ -25,8 +25,8 @@ var r = n(200651),
   E = n(781428),
   O = n(163671),
   j = n(423527),
-  C = n(981631),
-  S = n(58346),
+  S = n(981631),
+  C = n(58346),
   y = n(701476),
   T = n(630724),
   A = n(436620),
@@ -45,7 +45,7 @@ function w(e, t, n) {
 c.ZP.initialize();
 class L extends i.PureComponent {
   componentDidMount() {
-    (0, b.e)("guildTemplate"), A.KO || I.Z.launch("discord://" + C.Z5c.GUILD_TEMPLATE(this.props.code), () => void 0)
+    (0, b.e)("guildTemplate"), A.KO || I.Z.launch("discord://" + S.Z5c.GUILD_TEMPLATE(this.props.code), () => void 0)
   }
   componentDidUpdate(e) {
     this.props.code !== e.code && g.Z.resolveGuildTemplate(this.props.code)
@@ -93,7 +93,7 @@ class L extends i.PureComponent {
     let {
       guildTemplate: e
     } = this.props;
-    return (s()(null != e, "guild template must not be null"), e.state === S.Rj.RESOLVING) ? (0, r.jsx)(u.ZP, {
+    return (s()(null != e, "guild template must not be null"), e.state === C.Rj.RESOLVING) ? (0, r.jsx)(u.ZP, {
       className: Z.authBox,
       children: (0, r.jsx)(m.Z, {
         guildTemplate: e
@@ -118,12 +118,12 @@ class L extends i.PureComponent {
       location: o
     } = this.props;
     if (null == e) return this.renderSpinner(P.NW.string(P.t.ZTNur6));
-    if (t === C.kEZ.OPEN) return this.renderAppOpened();
-    if (t === C.kEZ.OPENING) return this.renderSpinner(P.NW.string(P.t["Z+hCVV"]));
+    if (t === S.kEZ.OPEN) return this.renderAppOpened();
+    if (t === S.kEZ.OPENING) return this.renderSpinner(P.NW.string(P.t["Z+hCVV"]));
     switch (e.state) {
-      case S.Rj.RESOLVING:
+      case C.Rj.RESOLVING:
         return this.renderSpinner(P.NW.string(P.t["Z+hCVV"]));
-      case S.Rj.RESOLVED:
+      case C.Rj.RESOLVED:
         if (n || !A.KO) return this.renderAuthenticatedOrDownload();
         if (this.props.login) return (0, r.jsx)(E.Z, {
           guildTemplate: e,
@@ -138,7 +138,7 @@ class L extends i.PureComponent {
             (0, _.c)(y.M5.ORGANIC_REGISTERED_GUILD_TEMPLATE), N.Z.flowStart(T.MK.ORGANIC_GUILD_TEMPLATES, T.EW.NUF_STARTED)
           }
         });
-      case S.Rj.EXPIRED:
+      case C.Rj.EXPIRED:
         return this.renderInvalidGuildTemplate();
       default:
         return null

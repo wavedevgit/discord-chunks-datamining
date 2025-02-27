@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => D
 }), n(301563), n(757143);
@@ -21,15 +21,15 @@ var r = n(200651),
   v = n(313201),
   y = n(592125),
   x = n(984933),
-  E = n(768119),
-  O = n(944486),
+  O = n(768119),
+  E = n(944486),
   j = n(585483),
   N = n(72006),
   C = n(405656),
   I = n(181389),
   S = n(854709),
-  P = n(778177),
-  T = n(981631),
+  T = n(778177),
+  P = n(981631),
   A = n(388032),
   w = n(533404);
 
@@ -47,7 +47,7 @@ let k = (0, v.hQ)(),
 class L extends i.PureComponent {
   componentDidMount() {
     var e, t;
-    j.S.subscribe(T.CkL.PERFORM_SEARCH, this.search), j.S.subscribe(T.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), j.S.subscribe(T.CkL.FOCUS_SEARCH, this.handleFocusSearch), null === (t = this._editorRef) || void 0 === t || null === (e = t.editor) || void 0 === e || e.setAttribute("aria-haspopup", "listbox")
+    j.S.subscribe(P.CkL.PERFORM_SEARCH, this.search), j.S.subscribe(P.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), j.S.subscribe(P.CkL.FOCUS_SEARCH, this.handleFocusSearch), null === (t = this._editorRef) || void 0 === t || null === (e = t.editor) || void 0 === e || e.setAttribute("aria-haspopup", "listbox")
   }
   componentDidUpdate(e) {
     let {
@@ -61,7 +61,7 @@ class L extends i.PureComponent {
     }
   }
   componentWillUnmount() {
-    j.S.unsubscribe(T.CkL.PERFORM_SEARCH, this.search), j.S.unsubscribe(T.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), j.S.unsubscribe(T.CkL.FOCUS_SEARCH, this.handleFocusSearch)
+    j.S.unsubscribe(P.CkL.PERFORM_SEARCH, this.search), j.S.unsubscribe(P.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), j.S.unsubscribe(P.CkL.FOCUS_SEARCH, this.handleFocusSearch)
   }
   tokenize(e) {
     let t = C.kG(N.Sq(e)).filter(e => e.type !== f.ZP.NON_TOKEN_TYPE);
@@ -180,7 +180,7 @@ class L extends i.PureComponent {
       null === (n = this._editorRef) || void 0 === n || null === (t = n.editor) || void 0 === t || t.setAttribute("aria-activedescendant", null != e ? "".concat(k, "-").concat(e) : void 0), this.setState({
         selectedIndex: e
       })
-    }), Z(this, "renderPopout", () => (0, r.jsx)(P.ZP, {
+    }), Z(this, "renderPopout", () => (0, r.jsx)(T.ZP, {
       ref: this._searchPopoutRef,
       navId: k,
       onSelectedIndexChanged: this.handleSelectedIndexChanged
@@ -225,7 +225,7 @@ class L extends i.PureComponent {
         this.focusEditor();
         return
       }
-      let n = O.Z.getChannelId(),
+      let n = E.Z.getChannelId(),
         r = y.Z.getChannel(n);
       if ((null == r ? void 0 : r.isThread()) && (r = y.Z.getChannel(null == r ? void 0 : r.parent_id)), null == r || r.isPrivate()) {
         this.focusEditor();
@@ -238,7 +238,7 @@ class L extends i.PureComponent {
           _editorRef: e
         } = this;
         null == e || e.focus(), this.handleSetSearchQuery({
-          query: h.ZP[T.dCx.FILTER_IN].key + "#".concat(a, " "),
+          query: h.ZP[P.dCx.FILTER_IN].key + "#".concat(a, " "),
           replace: !0
         })
       })
@@ -258,7 +258,7 @@ class L extends i.PureComponent {
       let {
         searchType: e
       } = this.props;
-      b.ZP.trackWithMetadata(T.rMx.SEARCH_OPENED, {
+      b.ZP.trackWithMetadata(P.rMx.SEARCH_OPENED, {
         search_type: e
       }), this.setState({
         focused: !0
@@ -376,19 +376,19 @@ class L extends i.PureComponent {
     }), C.WU()
   }
 }
-let D = d.ZP.connectStores([_.Z, E.Z], () => {
+let D = d.ZP.connectStores([_.Z, O.Z], () => {
   var e;
-  let t = E.Z.getCurrentSearchId(),
-    n = E.Z.getSearchType(),
-    r = null != t && E.Z.isSearching(t),
-    i = null != t && null !== (e = E.Z.getEditorState(t)) && void 0 !== e ? e : N.nR(I.Jl(h.ZP)),
+  let t = O.Z.getCurrentSearchId(),
+    n = O.Z.getSearchType(),
+    r = null != t && O.Z.isSearching(t),
+    i = null != t && null !== (e = O.Z.getEditorState(t)) && void 0 !== e ? e : N.nR(I.Jl(h.ZP)),
     a = _.Z.keyboardModeEnabled;
   return {
     searchId: t,
     searchType: n,
     isSearching: r,
     editorState: i,
-    hasResults: E.Z.hasResults(t),
+    hasResults: O.Z.hasResults(t),
     keyboardModeEnabled: a
   }
 })(L)

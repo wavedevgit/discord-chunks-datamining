@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => G
 }), n(266796), n(47120);
@@ -21,15 +21,15 @@ var r = n(200651),
   v = n(197115),
   y = n(430824),
   x = n(594174),
-  E = n(626135),
-  O = n(74538),
+  O = n(626135),
+  E = n(74538),
   j = n(453070),
   N = n(926491),
   C = n(378233),
   I = n(419922),
   S = n(688179),
-  P = n(981631),
-  T = n(474936),
+  T = n(981631),
+  P = n(474936),
   A = n(388032),
   w = n(133478),
   Z = n(859289);
@@ -79,9 +79,9 @@ let L = (e, t) => t ? A.NW.format(A.t.auckX1, {
   };
 
 function M(e) {
-  E.default.track(P.rMx.PREMIUM_PROMOTION_OPENED, {
-    location_page: null != e.guild_id ? P.ZY5.GUILD_CHANNEL : P.ZY5.DM_CHANNEL,
-    location_section: P.jXE.STICKER_POPOUT
+  O.default.track(T.rMx.PREMIUM_PROMOTION_OPENED, {
+    location_page: null != e.guild_id ? T.ZY5.GUILD_CHANNEL : T.ZY5.DM_CHANNEL,
+    location_section: T.jXE.STICKER_POPOUT
   }), (0, b.z)()
 }
 
@@ -140,8 +140,8 @@ let F = e => {
       let {
         channel: e
       } = g.current;
-      E.default.track(P.rMx.OPEN_POPOUT, k({
-        type: P.jXE.STICKER_POPOUT,
+      O.default.track(T.rMx.OPEN_POPOUT, k({
+        type: T.jXE.STICKER_POPOUT,
         guild_id: e.getGuildId(),
         sticker_pack_id: n.pack_id
       }, (0, u.v_)(e)))
@@ -188,14 +188,14 @@ let F = e => {
       [j, N] = i.useState(null),
       [C, S] = i.useState(!1),
       L = x.default.getCurrentUser(),
-      D = O.ZP.canUseCustomStickersEverywhere(L),
+      D = E.ZP.canUseCustomStickersEverywhere(L),
       F = (0, l.e7)([y.Z], () => y.Z.getGuild(n.guild_id)),
       U = null != F,
       [B, G] = i.useState(!1),
       [H, V] = i.useState(null),
       z = i.useMemo(() => ({
-        page: null != a.guild_id ? P.ZY5.GUILD_CHANNEL : P.ZY5.DM_CHANNEL,
-        section: P.jXE.STICKER_POPOUT
+        page: null != a.guild_id ? T.ZY5.GUILD_CHANNEL : T.ZY5.DM_CHANNEL,
+        section: T.jXE.STICKER_POPOUT
       }), [a.guild_id]),
       {
         current: K
@@ -214,7 +214,7 @@ let F = e => {
         stickerSourceGuild: e
       } = X.current;
       (async () => {
-        (null == e || e.hasFeature(P.oNc.DISCOVERABLE)) && N(await (0, h.Z)(n.id)), S(!0)
+        (null == e || e.hasFeature(T.oNc.DISCOVERABLE)) && N(await (0, h.Z)(n.id)), S(!0)
       })()
     }, [n.id, U]);
     let q = n.guild_id === a.getGuildId(),
@@ -233,7 +233,7 @@ let F = e => {
       } = X.current;
       e()
     }, [C, j]), (0, d.ZP)(() => {
-      E.default.track(P.rMx.OPEN_POPOUT, k({
+      O.default.track(T.rMx.OPEN_POPOUT, k({
         type: $
       }, K))
     }), C) ? (0, r.jsxs)(_.W_, {
@@ -254,7 +254,7 @@ let F = e => {
             sticker: n
           }), J && (0, r.jsx)(v.Z, {
             className: Z.ctaButton,
-            subscriptionTier: T.Si.TIER_2,
+            subscriptionTier: P.Si.TIER_2,
             size: s.zxk.Sizes.SMALL,
             fullWidth: !0,
             buttonText: A.NW.string(A.t["gl/XHB"]),

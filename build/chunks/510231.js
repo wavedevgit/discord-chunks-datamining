@@ -18,7 +18,7 @@ function d(e) {
 
 function u() {
   let e = (0, a.e7)([o.Z], () => o.Z.games),
-    t = r.useMemo(() => s()(e).filter(e => !e.themes.includes(l.u.EROTIC)).map(e => ({
+    t = r.useMemo(() => s()(e).filter(e => !((null == e ? void 0 : e.themes) != null && e.themes.includes(l.u.EROTIC))).map(e => ({
       value: e.id,
       label: e.name
     })).sortBy(e => {

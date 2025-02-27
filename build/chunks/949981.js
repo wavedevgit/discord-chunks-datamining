@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => y
 }), n(653041);
@@ -26,9 +26,9 @@ function y(e) {
       author: a,
       currentUserId: y,
       onTransitionToInviteChannel: x,
-      onAcceptInstantInvite: E
+      onAcceptInstantInvite: O
     } = e,
-    O = y === a.id,
+    E = y === a.id,
     j = n.state === _.r2o.ACCEPTING,
     N = (0, l.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
   o()(null == N || N.isPrivate(), "must be a private channel");
@@ -36,8 +36,8 @@ function y(e) {
     analyticsLocations: C
   } = (0, d.ZP)(c.Z.INVITE_EMBED), I = null != N, S = i.useCallback(() => {
     let e = "noop";
-    I ? (x(), e = "transition") : (E(), e = "accept"), (0, s.r$)(n, e, C)
-  }, [n, C, I, x, E]);
+    I ? (x(), e = "transition") : (O(), e = "accept"), (0, s.r$)(n, e, C)
+  }, [n, C, I, x, O]);
   if (null == N) {
     if (null == n.channel) return (0, r.jsx)(g.Z, {});
     N = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
@@ -49,13 +49,13 @@ function y(e) {
     let e = f.default.getCurrentUser();
     I && null != e && t.push(e)
   }
-  let P = N.name;
-  (null == P || "" === P) && (P = t.length > 0 ? t.filter(h.lm).map(e => e.username).join(", ") : b.NW.string(b.t.LJpTRE));
-  let T = b.NW.string(b.t.XpeFYm),
+  let T = N.name;
+  (null == T || "" === T) && (T = t.length > 0 ? t.filter(h.lm).map(e => e.username).join(", ") : b.NW.string(b.t.LJpTRE));
+  let P = b.NW.string(b.t.XpeFYm),
     A = u.Z.Button.Colors.GREEN;
-  I && (T = b.NW.string(b.t.cEnaW1), A = u.Z.Button.Colors.PRIMARY);
+  I && (P = b.NW.string(b.t.cEnaW1), A = u.Z.Button.Colors.PRIMARY);
   let w = b.NW.string(b.t["3p3/BA"]);
-  return O && (w = b.NW.string(b.t.qmtuXF)), (0, r.jsxs)(u.Z, {
+  return E && (w = b.NW.string(b.t.qmtuXF)), (0, r.jsxs)(u.Z, {
     children: [(0, r.jsx)(u.Z.Header, {
       text: w
     }), (0, r.jsxs)(u.Z.Body, {
@@ -65,7 +65,7 @@ function y(e) {
           channel: N,
           onClick: I ? S : void 0
         }), (0, r.jsx)(u.Z.Info, {
-          title: P,
+          title: T,
           onClick: I ? S : void 0,
           children: (0, r.jsx)(u.Z.Data, {
             members: t.length
@@ -76,7 +76,7 @@ function y(e) {
         submitting: j,
         isDisabled: I,
         color: A,
-        children: T
+        children: P
       })]
     })]
   })

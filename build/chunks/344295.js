@@ -25,8 +25,8 @@ var r = n(200651),
   E = n(108427),
   O = n(314897),
   j = n(896797),
-  C = n(701190),
-  S = n(626135),
+  S = n(701190),
+  C = n(626135),
   y = n(630388),
   T = n(63063),
   A = n(782605),
@@ -68,7 +68,7 @@ class V extends i.PureComponent {
       login: t,
       inviteKey: n
     } = this.props;
-    if (S.default.track(L.rMx.INVITE_VIEWED, {
+    if (C.default.track(L.rMx.INVITE_VIEWED, {
         invite_code: n
       }, {
         flush: !0
@@ -138,7 +138,7 @@ class V extends i.PureComponent {
       } : {
         invite_code: o
       };
-    S.default.track(e, function(e) {
+    C.default.track(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -357,13 +357,13 @@ class V extends i.PureComponent {
     })
   }
 }
-let H = c.ZP.connectStores([C.Z, j.Z, O.default, b.Z, p.Z], e => {
+let H = c.ZP.connectStores([S.Z, j.Z, O.default, b.Z, p.Z], e => {
   var t;
   let {
     inviteKey: n
   } = e;
   return {
-    invite: null !== (t = C.Z.getInvite(n)) && void 0 !== t ? t : {},
+    invite: null !== (t = S.Z.getInvite(n)) && void 0 !== t ? t : {},
     nativeAppState: b.Z.getState(n),
     authenticated: O.default.isAuthenticated(),
     defaultRoute: j.Z.defaultRoute,

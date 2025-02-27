@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => N
 }), n(47120), n(230036);
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(791914),
   y = n(981631),
   x = n(388032),
-  E = n(253248),
-  O = n(829540);
+  O = n(253248),
+  E = n(829540);
 
 function j(e) {
   let {
@@ -35,7 +35,7 @@ function j(e) {
       size: "xs",
       color: "currentColor"
     }),
-    className: O.controlButton,
+    className: E.controlButton,
     onClick: t
   })
 }
@@ -48,21 +48,21 @@ function N(e) {
   } = e, {
     initialized: c,
     items: x,
-    loading: O,
+    loading: E,
     loadMore: N
   } = (0, m.y6)(), C = (0, l.e7)([d.Z], () => d.Z.localItems), I = (0, h.Us)({
     location: "ForYou"
-  }), S = i.useMemo(() => [...[...x, ...C].sort((e, t) => -1 * b.default.compare(e.id, t.id))], [x, C]), P = x.length > 0 ? x[0] : null, T = g.d$.useSetting(), A = i.useMemo(() => {
-    if (null != P && 0 >= b.default.compare(P.id, T)) return !1;
+  }), S = i.useMemo(() => [...[...x, ...C].sort((e, t) => -1 * b.default.compare(e.id, t.id))], [x, C]), T = x.length > 0 ? x[0] : null, P = g.d$.useSetting(), A = i.useMemo(() => {
+    if (null != T && 0 >= b.default.compare(T.id, P)) return !1;
     for (let e of S) {
-      if (0 >= b.default.compare(e.id, T)) break;
-      if (!(0, p.r)(e, T)) return !0
+      if (0 >= b.default.compare(e.id, P)) break;
+      if (!(0, p.r)(e, P)) return !0
     }
     return !1
-  }, [P, T, S]);
+  }, [T, P, S]);
   return (0, r.jsxs)("div", {
-    className: o()(E.container, {
-      [E.widerInbox]: I
+    className: o()(O.container, {
+      [O.widerInbox]: I
     }),
     children: [(0, r.jsx)(v.Z, {
       tab: s.X.FOR_YOU,
@@ -71,7 +71,7 @@ function N(e) {
       closePopout: a,
       children: A ? (0, r.jsx)(j, {
         onClick: () => {
-          null != P && (g.d$.updateSetting(P.id), _.default.track(y.rMx.NOTIFICATION_CENTER_ACTION, {
+          null != T && (g.d$.updateSetting(T.id), _.default.track(y.rMx.NOTIFICATION_CENTER_ACTION, {
             action_type: u.ud.MARK_ALL_READ
           }))
         }
@@ -79,7 +79,7 @@ function N(e) {
     }), (0, r.jsx)(f.Z, {
       initialized: c,
       items: S,
-      loading: O,
+      loading: E,
       loadMore: N
     })]
   })

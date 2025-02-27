@@ -1,6 +1,6 @@
-/** Chunk was on 79120 **/
+/** Chunk was on 70045 **/
 n.d(t, {
-  Z: () => E
+  Z: () => x
 }), n(47120);
 var r, l, i, o = n(442837),
   a = n(46973),
@@ -12,8 +12,8 @@ var r, l, i, o = n(442837),
   p = n(19780),
   m = n(594174),
   g = n(979651),
-  b = n(938475),
-  y = n(981631),
+  y = n(938475),
+  b = n(981631),
   O = n(354459);
 let h = new c.Z,
   v = new c.Z,
@@ -24,7 +24,7 @@ function S(e, t, n) {
       userId: e.id,
       channelId: n
     }),
-    l = (0, b.PH)(r, null != t ? t : y.ME, e.id);
+    l = (0, y.PH)(r, null != t ? t : b.ME, e.id);
   h.set(e.id, l);
   let i = {
     type: O.fO.USER,
@@ -66,10 +66,10 @@ function N() {
   }), r
 }
 
-function x() {
+function I() {
   h.clear(), v.clear(), j.clear()
 }
-class I extends(r = o.ZP.Store) {
+class E extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(g.Z, m.default, f.Z, p.Z), this.syncWith([m.default], N)
   }
@@ -86,24 +86,24 @@ class I extends(r = o.ZP.Store) {
     return v.values()
   }
 }
-i = "RTCConnectionDesyncStore", (l = "displayName") in I ? Object.defineProperty(I, l, {
+i = "RTCConnectionDesyncStore", (l = "displayName") in E ? Object.defineProperty(E, l, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : I[l] = i;
-let E = new I(s.Z, {
+}) : E[l] = i;
+let x = new E(s.Z, {
   CONNECTION_OPEN: function() {
-    x()
+    I()
   },
-  VOICE_CHANNEL_SELECT: x,
+  VOICE_CHANNEL_SELECT: I,
   RTC_CONNECTION_STATE: function(e) {
     let {
       state: t,
       context: n
     } = e;
-    if (n !== a.Yn.DEFAULT || t !== y.hes.DISCONNECTED) return !1;
-    x()
+    if (n !== a.Yn.DEFAULT || t !== b.hes.DISCONNECTED) return !1;
+    I()
   },
   VOICE_STATE_UPDATES: function(e) {
     let {

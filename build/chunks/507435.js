@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => N
 }), n(266796);
@@ -37,7 +37,7 @@ function x() {
   })
 }
 
-function E(e) {
+function O(e) {
   let t, {
     hasNoVotes: n,
     victorEmoji: i
@@ -57,7 +57,7 @@ function E(e) {
   }) : null
 }
 
-function O(e) {
+function E(e) {
   let t;
   var {
     type: n
@@ -161,10 +161,10 @@ function j(e) {
     className: o()(y.container, {
       [y.containerWithImage]: c
     }, t),
-    children: [(0, r.jsx)(E, {
+    children: [(0, r.jsx)(O, {
       hasNoVotes: "NO_VOTES" === l.type,
       victorEmoji: n.victorEmoji
-    }), (0, r.jsx)(O, function(e) {
+    }), (0, r.jsx)(E, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -203,19 +203,19 @@ function N(e) {
     channel: a,
     compact: o,
     disableInteraction: d = !1
-  } = e, u = n.embeds[0], p = i.useMemo(() => (0, g.Z)(u), [u]), _ = (0, l.aF)(null !== (t = null == p ? void 0 : p.questionText) && void 0 !== t ? t : "", b.Dv), x = (0, m.ZP)(n), E = (0, f.l)({
+  } = e, u = n.embeds[0], p = i.useMemo(() => (0, g.Z)(u), [u]), _ = (0, l.aF)(null !== (t = null == p ? void 0 : p.questionText) && void 0 !== t ? t : "", b.Dv), x = (0, m.ZP)(n), O = (0, f.l)({
     user: n.author,
     channelId: a.id,
     guildId: a.guild_id,
     messageId: n.id
-  }), O = n.messageReference, N = i.useCallback(() => {
-    null != O && c.Z.jumpToMessage({
-      channelId: O.channel_id,
-      messageId: O.message_id,
+  }), E = n.messageReference, N = i.useCallback(() => {
+    null != E && c.Z.jumpToMessage({
+      channelId: E.channel_id,
+      messageId: E.message_id,
       flash: !0,
       returnMessageId: n.id
     })
-  }, [n.id, O]);
+  }, [n.id, E]);
   return null == p ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h.Z, {
       iconNode: (0, r.jsx)(s.QDj, {
@@ -225,7 +225,7 @@ function N(e) {
       compact: o,
       children: v.NW.format(v.t["VJcK4+"], {
         username: x.nick,
-        usernameHook: E(x),
+        usernameHook: O(x),
         title: _,
         titleOnClick: N
       })

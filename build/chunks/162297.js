@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => M
 }), n(47120), n(266796);
@@ -21,15 +21,15 @@ var r = n(200651),
   v = n(132871),
   y = n(147890),
   x = n(220082),
-  E = n(240991),
-  O = n(592125),
+  O = n(240991),
+  E = n(592125),
   j = n(496675),
   N = n(944486),
   C = n(914010),
   I = n(768581),
   S = n(135431),
-  P = n(728345),
-  T = n(812206),
+  T = n(728345),
+  P = n(812206),
   A = n(321231),
   w = n(230171),
   Z = n(981631),
@@ -42,9 +42,9 @@ function M(e) {
   let {
     applicationId: t,
     embedUrl: n
-  } = e, [a, o, s] = (0, l.Wu)([T.Z], () => [T.Z.getApplication(t), T.Z.isFetchingApplication(t), T.Z.didFetchingApplicationFail(t)], [t]);
+  } = e, [a, o, s] = (0, l.Wu)([P.Z], () => [P.Z.getApplication(t), P.Z.isFetchingApplication(t), P.Z.didFetchingApplicationFail(t)], [t]);
   return (i.useEffect(() => {
-    null != a || o || s || P.ZP.fetchApplication(t)
+    null != a || o || s || T.ZP.fetchApplication(t)
   }, [a, o, s, t]), null != a && (0, S.Eb)({
     customInstallUrl: a.customInstallUrl,
     installParams: a.installParams,
@@ -64,13 +64,13 @@ function W(e) {
     var e;
     return null !== (e = C.Z.getGuildId()) && void 0 !== e ? e : void 0
   }), {
-    iconURL: P,
-    name: T,
+    iconURL: T,
+    name: P,
     description: M
   } = i.useMemo(() => (0, g.sl)(n, {
     fakeAppIconURL: L,
     size: 56
-  }), [n]), W = i.useMemo(() => null != M ? (0, E.parseBioReact)(M) : null, [M]), [U, B] = i.useState(!1), G = i.useCallback(e => {
+  }), [n]), W = i.useMemo(() => null != M ? (0, O.parseBioReact)(M) : null, [M]), [U, B] = i.useState(!1), G = i.useCallback(e => {
     e && B(!0)
   }, []), H = (0, c.O)(G);
   i.useEffect(() => {
@@ -86,7 +86,7 @@ function W(e) {
     z = (0, S.TK)(n.id, (0, b.LD)(I, !1)),
     K = V || z,
     Y = n.isVerified && n.isDiscoverable,
-    X = (0, l.e7)([N.Z, O.Z], () => O.Z.getChannel(N.Z.getChannelId())),
+    X = (0, l.e7)([N.Z, E.Z], () => E.Z.getChannel(N.Z.getChannelId())),
     q = (0, l.e7)([j.Z], () => (null == X ? void 0 : X.isPrivate()) || j.Z.can(Z.Plq.SEND_MESSAGES, X)),
     {
       analyticsLocations: Q
@@ -113,11 +113,11 @@ function W(e) {
     className: R.embedContainer,
     children: [(0, r.jsx)(F, {
       application: n,
-      iconUrl: P
+      iconUrl: T
     }), (0, r.jsx)("img", {
       className: R.icon,
       alt: n.name,
-      src: null != P ? P : D,
+      src: null != T ? T : D,
       "aria-hidden": !0,
       draggable: !1
     }), (0, r.jsxs)("div", {
@@ -127,7 +127,7 @@ function W(e) {
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-lg/bold",
           color: "interactive-active",
-          children: T
+          children: P
         }), null != W && (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-normal",

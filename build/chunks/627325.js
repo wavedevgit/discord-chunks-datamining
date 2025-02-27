@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   w: () => S
 });
@@ -21,11 +21,11 @@ var r = n(200651),
   v = n(709706),
   y = n(56848),
   x = n(358820),
-  E = n(990525),
-  O = n(388032),
+  O = n(990525),
+  E = n(388032),
   j = n(878258);
 let N = [51],
-  C = [O.t.OpqAoq],
+  C = [E.t.OpqAoq],
   I = () => (0, r.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "40",
@@ -49,7 +49,7 @@ function S(e) {
     handleScroll: a,
     voiceListRef: l,
     showSectionHeaders: S = !1,
-    query: T
+    query: P
   } = e, A = (0, y.S)(), w = (0, u.e7)([g.default], () => (0, b.I5)(g.default.getCurrentUser())), {
     voicesById: Z,
     isNativeModuleLoading: k,
@@ -61,26 +61,26 @@ function S(e) {
     showFailure: v.Z.showFailure(),
     catalogLastFetchTime: v.Z.getCatalogLastFetchTime()
   })), D = (0, u.cj)([v.Z], () => v.Z.getSortedVoiceFilters()), M = w ? Object.values(Z) : D, W = i.useMemo(() => {
-    let e = (0, d._I)(T.toLowerCase());
+    let e = (0, d._I)(P.toLowerCase());
     return ["" === e ? M : M.filter(t => {
       let {
         id: n
       } = t;
-      return s()(e, (0, d._I)(O.NW.string(A[n].name).toLowerCase()))
+      return s()(e, (0, d._I)(E.NW.string(A[n].name).toLowerCase()))
     })]
-  }, [M, T, A]), F = e => Math.ceil(e / n), U = i.useCallback(e => {
+  }, [M, P, A]), F = e => Math.ceil(e / n), U = i.useCallback(e => {
     let {
       sectionIndex: t,
       sectionRowIndex: i
     } = e;
-    return (0, r.jsx)(P, {
-      children: (0, c.range)(0, n).map(e => W[t][i * n + e]).filter(_.lm).map(e => (0, r.jsx)(E.J, {
+    return (0, r.jsx)(T, {
+      children: (0, c.range)(0, n).map(e => W[t][i * n + e]).filter(_.lm).map(e => (0, r.jsx)(O.J, {
         voiceFilter: e,
         hasNitro: w
       }, null == e ? void 0 : e.id))
     }, i)
   }, [n, W, w]);
-  return T && (null == W ? void 0 : null === (t = W[0]) || void 0 === t ? void 0 : t.length) === 0 ? (0, r.jsxs)("div", {
+  return P && (null == W ? void 0 : null === (t = W[0]) || void 0 === t ? void 0 : t.length) === 0 ? (0, r.jsxs)("div", {
     className: o()(j.iconMessage),
     children: [(0, r.jsx)(m._, {
       width: 40,
@@ -90,18 +90,18 @@ function S(e) {
     }), (0, r.jsx)(f.X6q, {
       variant: "heading-sm/medium",
       color: "header-muted",
-      children: O.NW.string(O.t.ZzukHh)
+      children: E.NW.string(E.t.ZzukHh)
     })]
   }) : R ? (0, r.jsxs)("div", {
     className: o()(j.iconMessage),
     children: [(0, r.jsx)(I, {}), (0, r.jsx)(f.X6q, {
       variant: "heading-md/normal",
       color: "header-muted",
-      children: O.NW.string(O.t.DpZNJy)
+      children: E.NW.string(E.t.DpZNJy)
     }), (0, r.jsx)(f.Text, {
       variant: "text-sm/normal",
       color: "header-muted",
-      children: O.NW.format(O.t["5afO9f"], {
+      children: E.NW.format(E.t["5afO9f"], {
         onClick: x.r5
       })
     })]
@@ -121,7 +121,7 @@ function S(e) {
       variant: "text-sm/medium",
       color: "header-muted",
       className: j.header,
-      children: O.NW.string(C[e])
+      children: E.NW.string(C[e])
     }),
     sectionHeaderHeight: !1 === S ? void 0 : e => N[e],
     rowCountBySection: W.map(e => F(e.length)),
@@ -133,7 +133,7 @@ function S(e) {
   })
 }
 
-function P(e) {
+function T(e) {
   let {
     children: t
   } = e, n = i.useRef(null);

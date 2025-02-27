@@ -1,6 +1,6 @@
 /**
   Module ID: 14600
-  Original File Name: b4f709ff157cef4f
+  Original File Name: 5f2a948907d4da31
 **/
 @value minColumnWidth: 460px;
 
@@ -3323,6 +3323,40 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     outline-offset: 2px
 }
 
+.hiddenVoiceStates_adebba {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: var(--spacing-4);
+    opacity: 1;
+    margin-top: var(--spacing-8)
+}
+
+.hiddenVoiceStates_adebba.locked_adebba {
+    opacity: .4
+}
+
+.hiddenVoiceStatesAvatar_adebba {
+    justify-content: center
+}
+
+.hiddenVoiceStatesAvatar_adebba,.hiddenVoiceStatesText_adebba {
+    display: flex;
+    align-items: center;
+    flex-direction: row
+}
+
+.hiddenVoiceStatesText_adebba {
+    padding: var(--spacing-4) var(--spacing-8);
+    border-radius: var(--radius-lg);
+    opacity: .8;
+    flex-shrink: 1;
+    background-color: rgba(19,19,24,.8);
+    box-shadow: var(--shadow-border) var(--shadow-high);
+    border: 1px solid var(--border-subtle);
+    cursor: pointer
+}
+
 .bgShade__6d791 {
     box-sizing: border-box;
     background-color: rgba(33,34,41,.75);
@@ -3477,4 +3511,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=b4f709ff157cef4f.css.map*/
+/*# sourceMappingURL=5f2a948907d4da31.css.map*/

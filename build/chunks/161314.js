@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => N
 }), n(47120), n(266796);
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(76535),
   y = n(866104),
   x = n(886176),
-  E = n(981631),
-  O = n(388032),
+  O = n(981631),
+  E = n(388032),
   j = n(906989);
 
 function N(e) {
@@ -36,8 +36,8 @@ function N(e) {
     listingsLoaded: I
   } = (0, f.eD)(n), S = (0, f.ue)(n, {
     publishedOnly: !0
-  }), P = i.useCallback(async () => {
-    b.default.track(E.rMx.GUILD_SHOP_EMBED_CLICKED, function(e) {
+  }), T = i.useCallback(async () => {
+    b.default.track(O.rMx.GUILD_SHOP_EMBED_CLICKED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -54,7 +54,7 @@ function N(e) {
         })
       }
       return e
-    }({}, (0, u.hH)(n))), await (0, h.Z)(E.Z5c.SERVER_SHOP(n))
+    }({}, (0, u.hH)(n))), await (0, h.Z)(O.Z5c.SERVER_SHOP(n))
   }, [n]);
   (0, p.Z)({
     type: l.ImpressionTypes.VIEW,
@@ -62,7 +62,7 @@ function N(e) {
   }, {
     disableTrack: null == a
   });
-  let T = S.length > 0 ? new Date(Math.min(...S.map(e => Date.parse(e.published_at)))) : void 0;
+  let P = S.length > 0 ? new Date(Math.min(...S.map(e => Date.parse(e.published_at)))) : void 0;
   return N || !I ? (0, r.jsx)("div", {
     className: o()(j.guildShopEmbed, j.spinnerContainer),
     children: (0, r.jsx)(d.$jN, {})
@@ -82,14 +82,14 @@ function N(e) {
         variant: "heading-sm/semibold",
         color: "interactive-normal",
         className: j.serverShopLabelText,
-        children: O.NW.string(O.t.al5EXF)
+        children: E.NW.string(E.t.al5EXF)
       })]
     }), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsx)(d.X6q, {
       variant: "heading-md/semibold",
       color: "text-normal",
-      children: O.NW.format(O.t.NZeik5, {
+      children: E.NW.format(E.t.NZeik5, {
         guildName: a.name
       })
     }), (0, r.jsx)(d.LZC, {
@@ -113,22 +113,22 @@ function N(e) {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: O.NW.format(O.t.tKZNlZ, {
+            children: E.NW.format(E.t.tKZNlZ, {
               listingCount: S.length
             })
           })
-        }), null != T && (0, r.jsx)("li", {
+        }), null != P && (0, r.jsx)("li", {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: O.NW.format(O.t["kXr8+f"], {
-              createdYear: T.getFullYear()
+            children: E.NW.format(E.t["kXr8+f"], {
+              createdYear: P.getFullYear()
             })
           })
         })]
       }), (0, r.jsx)(d.zxk, {
         className: j.guildShopEmbedCta,
-        onClick: P,
+        onClick: T,
         children: (0, r.jsxs)("div", {
           className: j.guildShopEmbedCtaContent,
           children: [(0, r.jsx)(x.Z, {
@@ -137,7 +137,7 @@ function N(e) {
           }), (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "always-white",
-            children: O.NW.string(O.t.jXx1CA)
+            children: E.NW.string(E.t.jXx1CA)
           })]
         })
       })]

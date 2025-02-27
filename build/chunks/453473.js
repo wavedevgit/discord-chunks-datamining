@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   K: () => U,
   P: () => B
@@ -22,15 +22,15 @@ var r = n(200651),
   v = n(294218),
   y = n(373662),
   x = n(695346),
-  E = n(496675),
-  O = n(626135),
+  O = n(496675),
+  E = n(626135),
   j = n(585483),
   N = n(70956),
   C = n(324701),
   I = n(575016),
   S = n(768943),
-  P = n(686478),
-  T = n(664559),
+  T = n(686478),
+  P = n(664559),
   A = n(767893),
   w = n(206697),
   Z = n(74551),
@@ -97,7 +97,7 @@ function F(e) {
 function U(e) {
   let {
     closePopout: t
-  } = e, n = (0, T.Z)();
+  } = e, n = (0, P.Z)();
   return ((0, b.Z)({
     type: u.ImpressionTypes.POPOUT,
     name: u.ImpressionNames.FOR_LATER_LIST_VIEWED,
@@ -203,14 +203,14 @@ function H(e) {
     throttledNow: a
   } = e, l = (0, I.gr)(t), s = i.useCallback(async e => {
     var r;
-    await (0, I.fC)(t, l), e.shiftKey || n(), O.default.track(k.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
+    await (0, I.fC)(t, l), e.shiftKey || n(), E.default.track(k.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
       channel_id: t.saveData.channelId,
       message_id: t.saveData.messageId,
       message_author_id: null === (r = t.message) || void 0 === r ? void 0 : r.author.id,
-      type: null != t.saveData.dueAt ? P._l.REMINDER : P._l.BOOKMARK,
+      type: null != t.saveData.dueAt ? T._l.REMINDER : T._l.BOOKMARK,
       due_duration: null != t.saveData.dueAt ? d()().diff(t.saveData.dueAt) : void 0
     })
-  }, [n, t, l]), c = (0, m.e7)([E.Z], () => !!((null == l ? void 0 : l.type) === k.d4z.UNKNOWN || (null == l ? void 0 : l.isPrivate())) || E.Z.can(k.Plq.VIEW_CHANNEL, l));
+  }, [n, t, l]), c = (0, m.e7)([O.Z], () => !!((null == l ? void 0 : l.type) === k.d4z.UNKNOWN || (null == l ? void 0 : l.isPrivate())) || O.Z.can(k.Plq.VIEW_CHANNEL, l));
   return null != l && null != t.message && c ? (0, r.jsxs)("div", {
     className: L.messageContainer,
     children: [(0, r.jsx)(f.P3F, {

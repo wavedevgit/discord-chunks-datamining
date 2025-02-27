@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   J: () => b
 });
@@ -28,8 +28,8 @@ function b(e, t) {
     y = (0, i.e7)([a.Z], () => null != b && (null == b ? void 0 : b.channelId) != null && a.Z.isChannelGated(b.guildId, b.channelId), [b]),
     x = t.hasFlag(_.iLy.IS_CROSSPOST),
     {
-      rawMediaPostEmbedData: E,
-      guild: O,
+      rawMediaPostEmbedData: O,
+      guild: E,
       parentChannel: j,
       user: N,
       selectedGuildId: C,
@@ -54,8 +54,8 @@ function b(e, t) {
     S = r.useMemo(() => {
       var e, t;
       let n = (0, g.ku)({
-        mediaPostEmbedData: E,
-        guild: O,
+        mediaPostEmbedData: O,
+        guild: E,
         parentChannel: j,
         user: N,
         selectedGuildId: C,
@@ -90,7 +90,7 @@ function b(e, t) {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)
-    }, [E, O, j, N, C, I]);
+    }, [O, E, j, N, C, I]);
   return r.useEffect(() => {
     if ((null == b ? void 0 : b.threadId) != null) {
       let e = h.Z.getEmbedFetchState(b.threadId);

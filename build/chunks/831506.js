@@ -1,4 +1,4 @@
-/** Chunk was on 79120 **/
+/** Chunk was on 70045 **/
 n.d(t, {
   Z: () => P
 }), n(47120);
@@ -27,7 +27,7 @@ function g(e, t) {
   return (null !== (n = p[e]) && void 0 !== n ? n : {})[t]
 }
 
-function b(e, t) {
+function y(e, t) {
   let n = g(e, t);
   if (null == n) return;
   let r = p[e];
@@ -36,14 +36,14 @@ function b(e, t) {
   null != l && (l.delete(e), 0 === l.size && delete m[n])
 }
 
-function y(e, t, n, r) {
+function b(e, t, n, r) {
   let l = n.find(e => null != e.party && e.party.id),
     i = null != l && null != l.party ? l.party.id : null,
     o = g(t, e);
-  if (null == i || r === d.Skl.OFFLINE) return null != o && void b(t, e);
+  if (null == i || r === d.Skl.OFFLINE) return null != o && void y(t, e);
   if (null != o) {
     if (o === i) return !1;
-    b(t, e)
+    y(t, e)
   }! function(e, t, n) {
     var r;
     let l = p[e];
@@ -62,21 +62,21 @@ function O(e) {
       status: r,
       activities: l
     }
-    of t.presences) !1 !== y(t.id, e.id, l, r) && (n = !0);
+    of t.presences) !1 !== b(t.id, e.id, l, r) && (n = !0);
   return n
 }
 
 function h(e, t) {
   let n = !1;
   return t.forEach(t => {
-    null != t && y(e, t.user.id, t.activities, t.status) && (n = !0)
+    null != t && b(e, t.user.id, t.activities, t.status) && (n = !0)
   }), n
 }
 
 function v() {
   let e = s.default.getId(),
     t = u.Z.getActivities();
-  return y(d.ME, e, t)
+  return b(d.ME, e, t)
 }
 
 function j(e) {
@@ -117,7 +117,7 @@ let P = new S(a.Z, {
         status: t,
         activities: l
       }
-      of n) null != e && !1 !== y(d.ME, e.id, l, t) && (r = !0);
+      of n) null != e && !1 !== b(d.ME, e.id, l, t) && (r = !0);
     for (let e of t) !1 !== O({
       guild: e
     }) && (r = !0);
@@ -150,7 +150,7 @@ let P = new S(a.Z, {
         user: e,
         activities: r
       }
-      of t) null != e && !1 !== y(d.ME, e.id, r) && (n = !0);
+      of t) null != e && !1 !== b(d.ME, e.id, r) && (n = !0);
     return n
   },
   PRESENCE_UPDATES: function(e) {
@@ -164,7 +164,7 @@ let P = new S(a.Z, {
         status: r,
         activities: l
       } = e;
-      return y(null != t ? t : d.ME, n.id, l, r)
+      return b(null != t ? t : d.ME, n.id, l, r)
     }).some(e => e)
   },
   THREAD_MEMBER_LIST_UPDATE: function(e) {

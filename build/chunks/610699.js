@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => B
 }), n(653041), n(47120), n(13667), n(390547), n(301563);
@@ -21,15 +21,15 @@ var r = n(200651),
   v = n(906732),
   y = n(835473),
   x = n(471445),
-  E = n(111028),
-  O = n(955415),
+  O = n(111028),
+  E = n(955415),
   j = n(747127),
   N = n(601964),
   C = n(592125),
   I = n(430824),
   S = n(496675),
-  P = n(594174),
-  T = n(626135),
+  T = n(594174),
+  P = n(626135),
   A = n(624138),
   w = n(358595),
   Z = n(981631),
@@ -96,7 +96,7 @@ function U(e) {
         className: L.channelIcon,
         size: "xs",
         color: "currentColor"
-      }) : null, (0, r.jsx)(E.Z, {
+      }) : null, (0, r.jsx)(O.Z, {
         children: (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           children: R.NW.format(R.t["dc+LW1"], {
@@ -112,7 +112,7 @@ function U(e) {
       [L.stacked]: i,
       [L.ended]: a
     }),
-    children: (0, r.jsx)(E.Z, {
+    children: (0, r.jsx)(O.Z, {
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/normal",
         children: R.NW.format(R.t.u0vaDA, {
@@ -127,7 +127,7 @@ function B(e) {
   var t, n, a;
   let l, d, {
       invite: x,
-      getAcceptInviteContext: E
+      getAcceptInviteContext: O
     } = e,
     {
       approximate_member_count: A,
@@ -144,7 +144,7 @@ function B(e) {
       e && q(e => {
         if (!e) {
           var t;
-          T.default.track(Z.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
+          P.default.track(Z.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
             application_id: H.id,
             invite_inviter_id: null === (t = x.inviter) || void 0 === t ? void 0 : t.id
           })
@@ -191,14 +191,14 @@ function B(e) {
       names: ["embedded_cover"]
     }),
     es = (0, c.Wu)([f.ZP], () => null != ei ? f.ZP.getEmbeddedActivitiesForChannel(ei.id).filter(e => e.applicationId === H.id).flatMap(e => Array.from(e.userIds)) : [], [ei, H.id]),
-    ec = (0, c.Wu)([P.default], () => es.map(e => P.default.getUser(e)), [es]),
+    ec = (0, c.Wu)([T.default], () => es.map(e => T.default.getUser(e)), [es]),
     ed = i.useCallback(() => {
       (0, p.r$)(x, "accept", eo), p.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: x.code,
-        context: E("Invite Button Embed"),
+        context: O("Invite Button Embed"),
         analyticsLocations: eo
       })
-    }, [x, eo, E]),
+    }, [x, eo, O]),
     eu = x.state === Z.r2o.ACCEPTING,
     ep = null != ee;
   if (null == ee) {
@@ -226,7 +226,7 @@ function B(e) {
           [L.stacked]: Y
         })
       })
-    }), (0, r.jsxs)(O.Z, {
+    }), (0, r.jsxs)(E.Z, {
       className: o()(L.content, {
         [L.large]: z,
         [L.stacked]: Y

@@ -1,14 +1,14 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 27151 **/
 n.d(t, {
-  EW: () => o,
-  Np: () => l,
+  EW: () => r,
+  Np: () => s,
   tb: () => a
 });
-var r = n(626135),
-  i = n(981631);
+var i = n(626135),
+  o = n(981631);
 
 function a(e, t, n, a) {
-  r.default.track(i.rMx.VOICE_MESSAGE_PLAYBACK_STARTED, {
+  i.default.track(o.rMx.VOICE_MESSAGE_PLAYBACK_STARTED, {
     message_id: e,
     total_duration_secs: t,
     start_duration_secs: Math.min(null != t ? t : n, n),
@@ -16,18 +16,18 @@ function a(e, t, n, a) {
   })
 }
 
-function o(e, t, n, a, o) {
-  r.default.track(i.rMx.VOICE_MESSAGE_PLAYBACK_ENDED, {
+function r(e, t, n, a, r) {
+  i.default.track(o.rMx.VOICE_MESSAGE_PLAYBACK_ENDED, {
     message_id: e,
     total_duration_secs: t,
     end_duration_secs: Math.min(null != t ? t : n, n),
     sender_user_id: a,
-    duration_listening_secs: o
+    duration_listening_secs: r
   })
 }
 
-function l(e, t) {
-  r.default.track(i.rMx.VOICE_MESSAGE_PLAYBACK_FAILED, {
+function s(e, t) {
+  i.default.track(o.rMx.VOICE_MESSAGE_PLAYBACK_FAILED, {
     message_id: e,
     error_message: t
   })

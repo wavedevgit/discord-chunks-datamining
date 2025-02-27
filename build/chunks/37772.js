@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => F
 });
@@ -21,15 +21,15 @@ var r = n(200651),
   v = n(786761),
   y = n(493892),
   x = n(901461),
-  E = n(739566),
-  O = n(443877),
+  O = n(739566),
+  E = n(443877),
   j = n(492593),
   N = n(938353),
   C = n(25015),
   I = n(689674),
   S = n(963550),
-  P = n(845080),
-  T = n(295790),
+  T = n(845080),
+  P = n(295790),
   A = n(145807),
   w = n(56744),
   Z = n(834129),
@@ -84,7 +84,7 @@ let F = i.memo(function e(t) {
     treatSpam: V
   } = t, z = k.OBS.has(s.type) ? s.messageReference : void 0, K = (0, l.e7)([m.Z], () => m.Z.getMessageByReference(z)), Y = (0, l.e7)([h.Z], () => s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED ? h.Z.getChannel(K.message.channel_id) : null), X = f.x4.useSetting(), q = f.RS.useSetting(), Q = f.NA.useSetting(), J = f.QK.useSetting(), $ = (0, d.A)((null !== (n = s.editedTimestamp) && void 0 !== n ? n : s.timestamp).valueOf()), ee = (0, u.Z)(null == a ? void 0 : a.id), {
     disableReactionCreates: et
-  } = (0, O.Z)(a), {
+  } = (0, E.Z)(a), {
     content: en,
     hasSpoilerEmbeds: er
   } = (0, C.Z)(s, {
@@ -93,7 +93,7 @@ let F = i.memo(function e(t) {
     allowHeading: $,
     allowLinks: !0,
     previewLinkTarget: !0
-  }), ei = (0, E.ZP)(s), ea = (0, l.e7)([h.Z], () => s.hasFlag(k.iLy.HAS_THREAD) && h.Z.getChannel(_.default.castMessageIdAsChannelId(s.id))), eo = s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED && null != Y, el = !eo && void 0 === i, es = (0, I.Z)({
+  }), ei = (0, O.ZP)(s), ea = (0, l.e7)([h.Z], () => s.hasFlag(k.iLy.HAS_THREAD) && h.Z.getChannel(_.default.castMessageIdAsChannelId(s.id))), eo = s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED && null != Y, el = !eo && void 0 === i, es = (0, I.Z)({
     message: s,
     channel: a,
     enabled: el
@@ -115,7 +115,7 @@ let F = i.memo(function e(t) {
       [D.groupStart]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, w.Z)(s, a, z, K, Z),
-    childrenHeader: (0, P.Z)(W(M({}, t), {
+    childrenHeader: (0, T.Z)(W(M({}, t), {
       author: ei,
       guildId: a.guild_id
     })),
@@ -145,7 +145,7 @@ let F = i.memo(function e(t) {
     }),
     childrenExecutedCommand: (0, A.Z)(s, a, Z),
     childrenMessageContent: (0, S.Z)(t, en),
-    childrenSystemMessage: (0, T.Z)(t),
+    childrenSystemMessage: (0, P.Z)(t),
     onContextMenu: F,
     onClick: B,
     hasThread: !1 !== H && null != ea && s.hasFlag(k.iLy.HAS_THREAD),

@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   As: () => B,
   ZP: () => Q,
@@ -22,15 +22,15 @@ var r, i, a = n(192379),
   v = n(344185),
   y = n(569471),
   x = n(723170),
-  E = n(675478),
-  O = n(581883),
+  O = n(675478),
+  E = n(581883),
   j = n(131704),
   N = n(592125),
   C = n(984933),
   I = n(731290),
   S = n(430824),
-  P = n(375954),
-  T = n(496675),
+  T = n(375954),
+  P = n(496675),
   A = n(306680),
   w = n(771845),
   Z = n(9156),
@@ -227,9 +227,9 @@ class V extends o.EventEmitter {
         collapsedChannels: i,
         loadState: a
       } = this.state, o = d().findIndex(r, e => e.channelId === t), l = r[o], s = !l.collapsed;
-      i[t] = s, (0, E.BU)(n, t, e => {
+      i[t] = s, (0, O.BU)(n, t, e => {
         e.collapsedInInbox = s
-      }, E.fy.FREQUENT_USER_ACTION), this.setState({
+      }, O.fy.FREQUENT_USER_ACTION), this.setState({
         scrollToChannelIndex: o,
         collapsedChannels: i,
         loadState: "done" !== a || s || l.isFullyLoaded ? a : "loaded",
@@ -269,7 +269,7 @@ class V extends o.EventEmitter {
 function z(e, t) {
   var n;
   let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    i = P.Z.getMessages(e.channelId),
+    i = T.Z.getMessages(e.channelId),
     a = i.toArray().filter(t => L.default.compare(t.id, e.oldestReadMessageId) > 0 && 0 >= L.default.compare(t.id, e.newestUnreadMessageId));
   if (a.length === e.messages.length && a.every((t, n) => e.messages[n] === t) && r) return e;
   let o = null != i.getAfter(e.oldestReadMessageId) || (null === (n = a[0]) || void 0 === n ? void 0 : n.id) === e.oldestUnreadMessageId,
@@ -287,7 +287,7 @@ function K() {
   let e = function() {
       var e, t;
       let n = {},
-        r = null !== (t = null === (e = O.Z.settings.guilds) || void 0 === e ? void 0 : e.guilds) && void 0 !== t ? t : {};
+        r = null !== (t = null === (e = E.Z.settings.guilds) || void 0 === e ? void 0 : e.guilds) && void 0 !== t ? t : {};
       for (let e in r)
         for (let t in r[e].channels) {
           let i = N.Z.getChannel(t);
@@ -328,7 +328,7 @@ function Y(e, t, n, r) {
   if (i.isPrivate()) {
     if (0 === A.ZP.getMentionCount(r)) return
   } else if (!(0, _.d)(i) && 0 === A.ZP.getMentionCount(r)) return;
-  if (!i.isPrivate() && !T.Z.can(D.Plq.READ_MESSAGE_HISTORY, i)) return;
+  if (!i.isPrivate() && !P.Z.can(D.Plq.READ_MESSAGE_HISTORY, i)) return;
   let a = A.ZP.ackMessageId(r);
   if (null == a) {
     let e = S.Z.getGuild(i.guild_id);
@@ -404,5 +404,5 @@ function Q(e) {
     c.current = t
   }), a.useLayoutEffect(() => {
     null == l || l.channels, null == l || l.loadState, c.current.maybeLoadMore()
-  }, [null == l ? void 0 : l.channels, null == l ? void 0 : l.loadState]), a.useEffect(() => (P.Z.addChangeListener(t.reloadMessages), () => P.Z.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), a.useEffect(() => (Z.ZP.addChangeListener(t.handleUserGuildSettingsStoreChange), () => Z.ZP.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), a.useEffect(() => (y.Z.addChangeListener(t.handleJoinedThreadsStoreChange), () => y.Z.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), a.useEffect(() => (v.Z.addChangeListener(t.handleActiveThreadsStoreChange), () => v.Z.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [l, t]
+  }, [null == l ? void 0 : l.channels, null == l ? void 0 : l.loadState]), a.useEffect(() => (T.Z.addChangeListener(t.reloadMessages), () => T.Z.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), a.useEffect(() => (Z.ZP.addChangeListener(t.handleUserGuildSettingsStoreChange), () => Z.ZP.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), a.useEffect(() => (y.Z.addChangeListener(t.handleJoinedThreadsStoreChange), () => y.Z.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), a.useEffect(() => (v.Z.addChangeListener(t.handleActiveThreadsStoreChange), () => v.Z.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [l, t]
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   U: () => k,
   Z: () => R
@@ -21,15 +21,15 @@ var r, i = n(200651),
   v = n(963249),
   y = n(703656),
   x = n(594174),
-  E = n(626135),
-  O = n(51144),
+  O = n(626135),
+  E = n(51144),
   j = n(479446),
   N = n(795448),
   C = n(441623),
   I = n(317271),
   S = n(474936),
-  P = n(981631),
-  T = n(182294),
+  T = n(981631),
+  P = n(182294),
   A = n(957825),
   w = n(388032),
   Z = n(431811),
@@ -93,12 +93,12 @@ function R(e) {
             className: z,
             user: r,
             "aria-label": r.username,
-            size: T.EF.SIZE_56
+            size: P.EF.SIZE_56
           }), null != F && (0, i.jsx)(f.Z, {
             className: K,
             user: F,
             "aria-label": r.username,
-            size: T.EF.SIZE_24
+            size: P.EF.SIZE_24
           })]
         }), (0, i.jsxs)("div", {
           className: Z.textContainer,
@@ -107,7 +107,7 @@ function R(e) {
             color: H ? "header-primary" : "always-white",
             lineClamp: 3,
             children: t === S.hX.FRIEND_ANNIVERSARY ? w.NW.formatToPlainString(w.t.BWJvAA, {
-              friendUserName: O.ZP.getName(r)
+              friendUserName: E.ZP.getName(r)
             }) : (0, j.Ou)(t)
           }), (0, i.jsx)(u.Text, {
             className: Y,
@@ -122,10 +122,10 @@ function R(e) {
         children: [null != W && (0, i.jsx)(u.zxk, {
           className: l()(Z.button, J),
           onClick: e => {
-            e.stopPropagation(), E.default.track(P.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            e.stopPropagation(), O.default.track(T.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: W
-            }), W === S.X2.VIEW_ALL ? ((0, y.uL)(P.Z5c.FRIENDS), m.Z.setSection(P.pJs.ALL)) : W === S.X2.SEND_MESSAGE && ((0, N.PV)(r.id), p.Z.openPrivateChannel(r.id).then(() => {
+            }), W === S.X2.VIEW_ALL ? ((0, y.uL)(T.Z5c.FRIENDS), m.Z.setSection(T.pJs.ALL)) : W === S.X2.SEND_MESSAGE && ((0, N.PV)(r.id), p.Z.openPrivateChannel(r.id).then(() => {
               setTimeout(() => {
                 (0, b.PG)(A.X1.GIF, _.Ie.NORMAL), setTimeout(() => {
                   (0, b.ql)(w.NW.string(w.t.jrtJi4), !0)
@@ -167,8 +167,8 @@ function R(e) {
               analyticsObject: {
                 page: L,
                 section: D,
-                object: P.qAy.BUTTON_CTA,
-                objectType: P.Qqv.GIFT
+                object: T.qAy.BUTTON_CTA,
+                objectType: T.Qqv.GIFT
               },
               giftMessage: G()
             })

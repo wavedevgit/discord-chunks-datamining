@@ -1,7 +1,7 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => S,
-  h: () => T
+  h: () => P
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -22,15 +22,15 @@ var r = n(200651),
   v = n(358085),
   y = n(143316),
   x = n(240126),
-  E = n(791914),
-  O = n(147522),
+  O = n(791914),
+  E = n(147522),
   j = n(809780),
   N = n(981631),
   C = n(388032),
   I = n(993217);
 
 function S(e) {
-  var t, n, a, l, S, T, A;
+  var t, n, a, l, S, P, A;
   let {
     setTab: w,
     onJump: Z,
@@ -74,14 +74,14 @@ function S(e) {
     return b.S.subscribe(N.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
       b.S.unsubscribe(N.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [S, l.channels]), T = F, i.useEffect(() => {
+  }, [S, l.channels]), P = F, i.useEffect(() => {
     let e = e => {
-      ((0, v.isMac)() || (0, v.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && T.undoMarkChannelRead()
+      ((0, v.isMac)() || (0, v.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && P.undoMarkChannelRead()
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
     }
-  }, [T]), i.useEffect(() => {
+  }, [P]), i.useEffect(() => {
     _.default.track(N.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
@@ -98,7 +98,7 @@ function S(e) {
       className: o()(I.container, {
         [I.widerInbox]: z
       }),
-      children: [(0, r.jsx)(E.Z, {
+      children: [(0, r.jsx)(O.Z, {
         tab: u.X.UNREADS,
         setTab: w,
         badgeState: D,
@@ -115,7 +115,7 @@ function S(e) {
       [I.widerInbox]: z
     }),
     "aria-label": C.NW.string(C.t.sRUdBw),
-    children: [(0, r.jsx)(E.Z, {
+    children: [(0, r.jsx)(O.Z, {
       tab: u.X.UNREADS,
       setTab: w,
       badgeState: D,
@@ -171,9 +171,9 @@ function S(e) {
           }, a), n = n = {
             onScroll: U === j.jd.Done ? void 0 : G,
             className: I.scroller,
-            children: [k ? (0, r.jsx)(P, {
+            children: [k ? (0, r.jsx)(T, {
               setSeenTutorial: R
-            }) : null, (0, O.Z)(B, F, Z), U === j.jd.Done ? null : (0, r.jsx)(p.$jN, {
+            }) : null, (0, E.Z)(B, F, Z), U === j.jd.Done ? null : (0, r.jsx)(p.$jN, {
               className: I.spinner
             })]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -192,7 +192,7 @@ function S(e) {
   })
 }
 
-function P(e) {
+function T(e) {
   let {
     setSeenTutorial: t
   } = e;
@@ -223,7 +223,7 @@ function P(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   let {
     setTab: t,
     badgeState: n,
@@ -231,7 +231,7 @@ function T(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: I.container,
-    children: [(0, r.jsx)(E.Z, {
+    children: [(0, r.jsx)(O.Z, {
       tab: u.X.UNREADS,
       setTab: t,
       badgeState: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 79120 **/
+/** Chunk was on 70045 **/
 n.d(t, {
   Z: () => p
 }), n(47120);
@@ -33,8 +33,8 @@ let p = l.memo(function(e) {
       }
       return l
     }(e, ["children", "isOverlay", "contextGuildId"]);
-  let b = l.useRef(null),
-    [y, O] = l.useState({
+  let y = l.useRef(null),
+    [b, O] = l.useState({
       maskImage: "none"
     }),
     h = (0, c.Z)(() => {
@@ -46,7 +46,7 @@ let p = l.memo(function(e) {
         return
       }
       let n = null === (e = v.current) || void 0 === e ? void 0 : e.getBoundingClientRect(),
-        r = null === (t = b.current) || void 0 === t ? void 0 : t.getBoundingClientRect();
+        r = null === (t = y.current) || void 0 === t ? void 0 : t.getBoundingClientRect();
       if (null == n || null == r) {
         O({
           maskImage: "none"
@@ -93,8 +93,8 @@ let p = l.memo(function(e) {
       ref: N,
       children: (0, r.jsx)("span", {
         className: o()(f.chipletContainer, !j && p && f.noPadding),
-        ref: b,
-        style: y,
+        ref: y,
+        style: b,
         children: (0, r.jsx)(d.ZP, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},

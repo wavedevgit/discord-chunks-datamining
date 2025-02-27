@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.r(t), n.d(t, {
-  default: () => eC
+  default: () => eS
 }), n(301563), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -25,8 +25,8 @@ var r = n(200651),
   E = n(264229),
   O = n(677760),
   j = n(893607),
-  C = n(314897),
-  S = n(82142),
+  S = n(314897),
+  C = n(82142),
   y = n(701190),
   T = n(626135),
   A = n(81063),
@@ -349,7 +349,7 @@ class ej extends i.PureComponent {
     })
   }
 }
-let eC = s.ZP.connectStores([C.default, y.Z, S.Z, N.Z, x.Z], e => {
+let eS = s.ZP.connectStores([S.default, y.Z, C.Z, N.Z, x.Z], e => {
   var t, n, r;
   let {
     match: i,
@@ -357,10 +357,10 @@ let eC = s.ZP.connectStores([C.default, y.Z, S.Z, N.Z, x.Z], e => {
   } = e, a = null == i ? void 0 : null === (t = i.params) || void 0 === t ? void 0 : t.inviteCode, l = ee.a ? ee.Y : void 0, s = null != a ? (0, E.mb)(a, o.search) : l, c = null == i ? void 0 : null === (n = i.params) || void 0 === n ? void 0 : n.giftCode, u = null == i ? void 0 : null === (r = i.params) || void 0 === r ? void 0 : r.guildTemplateCode;
   return {
     inviteKey: s,
-    isAuthenticated: C.default.isAuthenticated(),
+    isAuthenticated: S.default.isAuthenticated(),
     giftCode: c,
     guildTemplateCode: u,
-    gift: null != c ? S.Z.get(c) : null,
+    gift: null != c ? C.Z.get(c) : null,
     invite: null != s ? y.Z.getInvite(s) : null,
     guildTemplate: null != u ? x.Z.getGuildTemplate(u) : null,
     hasLoadedExperiments: N.Z.hasLoadedExperiments

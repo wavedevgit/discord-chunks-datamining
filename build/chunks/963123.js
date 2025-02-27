@@ -176,9 +176,9 @@ function X(e) {
     handleHlsSegmentUpdate: tv
   } = function() {
     let [e, t] = o.useState({
-      levelIndex: 0,
-      resWidth: -1,
-      resHeight: -1
+      levelIndex: -100,
+      resWidth: -100,
+      resHeight: -100
     });
     return {
       hlsAnalytics: {
@@ -282,13 +282,13 @@ function X(e) {
     null != e5.current && null != to && eE({
       questId: ec.id,
       event: U.rMx.QUEST_VIDEO_PAUSED,
-      properties: {
+      properties: W({
         video_timestamp_seconds: e5.current.currentTime,
         reason: to,
         video_session_id: eu
-      }
+      }, tp)
     })
-  }, [to, ec.id, eE, eu]), o.useEffect(() => {
+  }, [to, ec.id, eE, eu, tp]), o.useEffect(() => {
     e_ && null != e5.current && eE({
       questId: ec.id,
       event: ey ? U.rMx.QUEST_VIDEO_APP_FOCUSED : U.rMx.QUEST_VIDEO_APP_UNFOCUSED,

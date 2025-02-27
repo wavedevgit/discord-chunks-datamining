@@ -25,8 +25,8 @@ var r = n(200651),
   E = n(51144),
   O = n(481153),
   j = n(781428),
-  C = n(423527),
-  S = n(981631),
+  S = n(423527),
+  C = n(981631),
   y = n(388032),
   T = n(455812);
 
@@ -85,9 +85,9 @@ class P extends i.PureComponent {
     } = this.props, {
       error: r
     } = this.state, i = null != r ? r.code : null;
-    return i === S.evJ.INVALID_GIFT_SELF_REDEMPTION ? y.NW.string(y.t.wa9h7O) : i === S.evJ.INVALID_GIFT_REDEMPTION_OWNED && (null == n ? void 0 : n.productLine) === S.POd.COLLECTIBLES ? y.NW.string(y.t.mdLtb2) : null != t || i === S.evJ.INVALID_GIFT_REDEMPTION_OWNED ? y.NW.format(y.t.PIdmg4, {
-      libraryLink: S.Z5c.APPLICATION_LIBRARY
-    }) : e.isClaimed || i === S.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? y.NW.string(y.t.ilcBeX) : i === S.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? y.NW.string(y.t.ypuSd3) : void 0
+    return i === C.evJ.INVALID_GIFT_SELF_REDEMPTION ? y.NW.string(y.t.wa9h7O) : i === C.evJ.INVALID_GIFT_REDEMPTION_OWNED && (null == n ? void 0 : n.productLine) === C.POd.COLLECTIBLES ? y.NW.string(y.t.mdLtb2) : null != t || i === C.evJ.INVALID_GIFT_REDEMPTION_OWNED ? y.NW.format(y.t.PIdmg4, {
+      libraryLink: C.Z5c.APPLICATION_LIBRARY
+    }) : e.isClaimed || i === C.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? y.NW.string(y.t.ilcBeX) : i === C.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? y.NW.string(y.t.ypuSd3) : void 0
   }
   renderSpinner(e) {
     return (0, r.jsxs)(p.ZP, {
@@ -115,7 +115,7 @@ class P extends i.PureComponent {
         onClick: () => t(e),
         children: y.NW.string(y.t.fIv16O)
       }), (0, r.jsx)(p.zx, {
-        onClick: () => window.open(I.Z.getArticleURL(S.BhN.GIFTING), "_blank"),
+        onClick: () => window.open(I.Z.getArticleURL(C.BhN.GIFTING), "_blank"),
         look: p.zx.Looks.LINK,
         color: p.zx.Colors.LINK,
         children: y.NW.string(y.t["/CjuXF"])
@@ -203,8 +203,8 @@ class P extends i.PureComponent {
       fetchingUser: c,
       continueOnWeb: u
     } = this.state;
-    if (e === S.kEZ.OPEN && !u) return this.renderAppOpened();
-    if (e === S.kEZ.OPENING) return this.renderSpinner(y.NW.string(y.t["Z+hCVV"]));
+    if (e === C.kEZ.OPEN && !u) return this.renderAppOpened();
+    if (e === C.kEZ.OPENING) return this.renderSpinner(y.NW.string(y.t["Z+hCVV"]));
     if (a) return this.renderSpinner(y.NW.string(y.t.bhJseH));
     if (null == i) return o ? this.renderExpiredInvite() : this.renderSpinner(y.NW.string(y.t.b3lf1d));
     if (o) {
@@ -217,7 +217,7 @@ class P extends i.PureComponent {
         giftCode: i,
         transitionTo: l,
         location: s
-      }) : (0, r.jsx)(C.Z, {
+      }) : (0, r.jsx)(S.Z, {
         giftCodeSKU: t,
         giftCode: i,
         transitionTo: l,
@@ -246,7 +246,7 @@ class P extends i.PureComponent {
       }))
     }), A(this, "handleLogout", () => {
       let e = this.props.match.params.giftCode;
-      c.Z.logout(S.Z5c.GIFT_CODE_LOGIN(e))
+      c.Z.logout(C.Z5c.GIFT_CODE_LOGIN(e))
     }), A(this, "handleResendVerification", () => {
       c.Z.verifyResend(), this.setState({
         sentVerification: !0
@@ -263,7 +263,7 @@ class P extends i.PureComponent {
           error: null
         }), await u.Z.redeemGiftCode({
           code: n
-        }), e(S.Z5c.APP)
+        }), e(C.Z5c.APP)
       } catch (e) {
         this.setState({
           error: e
@@ -274,7 +274,7 @@ class P extends i.PureComponent {
         transitionTo: e
       } = this.props, t = this.getCode();
       u.Z.resolveGiftCode(t, !0, !0).then(n => {
-        null != n && null != n.giftCode.promotion && e(S.Z5c.BILLING_PROMOTION_REDEMPTION(t))
+        null != n && null != n.giftCode.promotion && e(C.Z5c.BILLING_PROMOTION_REDEMPTION(t))
       })
     })
   }

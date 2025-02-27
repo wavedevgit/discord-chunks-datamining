@@ -22,7 +22,7 @@ o.ZP.initialize();
 let N = e => {
   let {
     location: t
-  } = e, n = (0, o.e7)([f.default], () => f.default.isAuthenticated()), N = (0, o.e7)([d.Z], () => d.Z.hasLoadedExperiments), x = (0, p.oK)("RSL - Landing Page"), [v, I] = i.useState(!1), [E, O] = i.useState(_.NW.string(_.t["9exy+f"])), [j, C] = i.useState(!0), S = e => {
+  } = e, n = (0, o.e7)([f.default], () => f.default.isAuthenticated()), N = (0, o.e7)([d.Z], () => d.Z.hasLoadedExperiments), x = (0, p.oK)("RSL - Landing Page"), [v, I] = i.useState(!1), [E, O] = i.useState(_.NW.string(_.t["9exy+f"])), [j, S] = i.useState(!0), C = e => {
     switch (e) {
       case m.evJ.INVALID_FORM_BODY:
       case m.evJ.DSA_RSL_REPORT_NOT_FOUND:
@@ -42,9 +42,9 @@ let N = e => {
     }
   };
   return i.useEffect(() => {
-    n ? (C(!0), s.k({
+    n ? (S(!0), s.k({
       withAnalyticsToken: !0
-    }).then(() => C(!1)).catch(() => C(!1))) : C(!1)
+    }).then(() => S(!1)).catch(() => S(!1))) : S(!1)
   }, [n]), i.useEffect(() => {
     N || x || l.Z.getExperiments()
   }, [N, x]), i.useEffect(() => {
@@ -52,9 +52,9 @@ let N = e => {
       var t, n;
       try {
         let n = null != e ? await (0, h.hs)(e) : void 0;
-        null != n ? O(_.NW.string(_.t.e6mZMj)) : S(null === (t = n.body) || void 0 === t ? void 0 : t.code)
+        null != n ? O(_.NW.string(_.t.e6mZMj)) : C(null === (t = n.body) || void 0 === t ? void 0 : t.code)
       } catch (e) {
-        S(null === (n = e.body) || void 0 === n ? void 0 : n.code)
+        C(null === (n = e.body) || void 0 === n ? void 0 : n.code)
       } finally {
         I(!1)
       }

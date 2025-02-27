@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => V
 }), n(47120), n(301563);
@@ -20,15 +20,15 @@ var r, i = n(200651),
   v = n(952164),
   y = n(768419),
   x = n(456432),
-  E = n(347475),
-  O = n(789407),
+  O = n(347475),
+  E = n(789407),
   j = n(598077),
   N = n(757266),
   C = n(831506),
   I = n(271383),
   S = n(283595),
-  P = n(293273),
-  T = n(885110),
+  T = n(293273),
+  P = n(885110),
   A = n(594174),
   w = n(181106),
   Z = n(417363),
@@ -89,7 +89,7 @@ class H extends(r = a.PureComponent) {
       let t = (0, p.Z)(e, n.id);
       if (null != t) return t
     }
-    return null == n || n instanceof O.ZP ? null : k.ZP.getApplicationIconURL({
+    return null == n || n instanceof E.ZP ? null : k.ZP.getApplicationIconURL({
       id: n.id,
       icon: null != t ? t.coverImage : n.coverImage,
       size: W.cc
@@ -190,7 +190,7 @@ class H extends(r = a.PureComponent) {
         message: a,
         analyticsLocations: o
       } = this.props;
-      return null == n ? null : (0, i.jsx)(E.Z, B(U({}, t), {
+      return null == n ? null : (0, i.jsx)(O.Z, B(U({}, t), {
         userId: e.id,
         guildId: null != r ? r : void 0,
         channelId: n,
@@ -277,7 +277,7 @@ class H extends(r = a.PureComponent) {
 F(H, "defaultProps", {
   isPreview: !1
 });
-let V = o.ZP.connectStores([y.Z, C.Z, P.Z, T.Z, N.Z, w.Z, S.Z, b.Z, Z.Z, A.default, I.ZP], e => {
+let V = o.ZP.connectStores([y.Z, C.Z, T.Z, P.Z, N.Z, w.Z, S.Z, b.Z, Z.Z, A.default, I.ZP], e => {
   var t;
   let {
     activity: n,
@@ -288,7 +288,7 @@ let V = o.ZP.connectStores([y.Z, C.Z, P.Z, T.Z, N.Z, w.Z, S.Z, b.Z, Z.Z, A.defau
     guildId: l
   } = e, {
     id: s
-  } = null != i ? i : {}, c = null != n && null != n.party && n.party.id === a ? C.Z.getParty(n.party.id) : null, d = null != s ? null !== (t = P.Z.getApplicationActivity(s)) && void 0 !== t ? t : T.Z.getApplicationActivity(s, !0) : P.Z.findActivity(e => e.type === M.IIU.LISTENING), u = !1;
+  } = null != i ? i : {}, c = null != n && null != n.party && n.party.id === a ? C.Z.getParty(n.party.id) : null, d = null != s ? null !== (t = T.Z.getApplicationActivity(s)) && void 0 !== t ? t : P.Z.getApplicationActivity(s, !0) : T.Z.findActivity(e => e.type === M.IIU.LISTENING), u = !1;
   null != s && (u = w.Z.getState(s, M.mFx.JOIN) === M.OcF.LOADING);
   let p = Array.from(null != c ? c : []).map(e => {
       let t = null != l ? I.ZP.getMember(l, e) : null,

@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   Z: () => w
 }), n(653041), n(566702), n(757143), n(301563), n(733860);
@@ -19,7 +19,7 @@ var r, i, a, o = n(442837),
 let y = {},
   x = {};
 
-function E(e) {
+function O(e) {
   let {
     searchId: t,
     query: n,
@@ -30,7 +30,7 @@ function E(e) {
   } = e, l = x[t];
   return null == l && (l = {
     results: [],
-    context: c.Z.getSearchContext(O.bind(null, t))
+    context: c.Z.getSearchContext(E.bind(null, t))
   }, x[t] = l), {
     query: null != n ? n : "",
     mode: null != r ? r : {
@@ -44,7 +44,7 @@ function E(e) {
   }
 }
 
-function O(e, t) {
+function E(e, t) {
   let {
     results: n
   } = t, r = x[e], i = y[e];
@@ -74,7 +74,7 @@ function O(e, t) {
   } = i, {
     autocompletes: p
   } = i;
-  p = C(e, c), y[e] = E({
+  p = C(e, c), y[e] = O({
     searchId: e,
     query: s,
     mode: c,
@@ -196,7 +196,7 @@ function S(e) {
     cursorScope: a,
     autocompletes: o
   } = t;
-  y[e] = E({
+  y[e] = O({
     searchId: e,
     query: n,
     mode: r,
@@ -206,7 +206,7 @@ function S(e) {
   })
 }
 
-function P() {
+function T() {
   let e = h.Z.getCurrentSearchId();
   if (null == e || null == y[e]) return;
   let {
@@ -215,7 +215,7 @@ function P() {
     tokens: r,
     cursorScope: i
   } = y[e];
-  y[e] = E({
+  y[e] = O({
     searchId: e,
     query: t,
     mode: n,
@@ -224,24 +224,24 @@ function P() {
     autocompletes: C(e, n)
   })
 }
-class T extends(r = o.ZP.Store) {
+class P extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(f.ZP, g.Z)
   }
   getState(e) {
     var t;
-    return null !== (t = y[e]) && void 0 !== t ? t : E({
+    return null !== (t = y[e]) && void 0 !== t ? t : O({
       searchId: e
     })
   }
 }
-a = "SearchAutocompleteStore", (i = "displayName") in T ? Object.defineProperty(T, i, {
+a = "SearchAutocompleteStore", (i = "displayName") in P ? Object.defineProperty(P, i, {
   value: a,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : T[i] = a;
-let A = new T(l.Z, {
+}) : P[i] = a;
+let A = new P(l.Z, {
     SEARCH_AUTOCOMPLETE_QUERY_UPDATE: function(e) {
       var t;
       let n, {
@@ -264,7 +264,7 @@ let A = new T(l.Z, {
           guild: r
         }), n = s.autocompletes, d = !1) : (c.context.clearQuery(), n = C(r, l))
       }
-      return y[r] = E({
+      return y[r] = O({
         searchId: r,
         query: o,
         mode: l,
@@ -281,8 +281,8 @@ let A = new T(l.Z, {
     },
     CHANNEL_CREATE: I,
     CHANNEL_DELETE: I,
-    STREAMER_MODE_UPDATE: P,
-    SEARCH_SCREEN_OPEN: P,
+    STREAMER_MODE_UPDATE: T,
+    SEARCH_SCREEN_OPEN: T,
     SEARCH_CLEAR_HISTORY: function(e) {
       let {
         searchId: t

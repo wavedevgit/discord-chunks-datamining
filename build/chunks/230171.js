@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   O: () => A,
   U: () => C.Un
@@ -22,15 +22,15 @@ var r = n(200651),
   v = n(592125),
   y = n(496675),
   x = n(944486),
-  E = n(914010),
-  O = n(768581),
+  O = n(914010),
+  E = n(768581),
   j = n(135431),
   N = n(758199),
   C = n(914498),
   I = n(172109),
   S = n(981631),
-  P = n(388032),
-  T = n(405796);
+  T = n(388032),
+  P = n(405796);
 
 function A(e) {
   let {
@@ -38,7 +38,7 @@ function A(e) {
     embedUrl: n,
     linkType: l,
     activityCustomId: b,
-    activityReferrerId: T
+    activityReferrerId: P
   } = e, {
     name: A,
     bot: k,
@@ -47,10 +47,10 @@ function A(e) {
     customInstallUrl: t.customInstallUrl,
     installParams: t.installParams,
     integrationTypesConfig: t.integrationTypesConfig
-  }), M = D && null != t.integrationTypesConfig && a.Y.GUILD_INSTALL in t.integrationTypesConfig, W = D && null != t.integrationTypesConfig && a.Y.USER_INSTALL in t.integrationTypesConfig, F = (0, o.e7)([E.Z], () => {
+  }), M = D && null != t.integrationTypesConfig && a.Y.GUILD_INSTALL in t.integrationTypesConfig, W = D && null != t.integrationTypesConfig && a.Y.USER_INSTALL in t.integrationTypesConfig, F = (0, o.e7)([O.Z], () => {
     var e;
-    return null !== (e = E.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }), U = (0, f.PL)(!0, !1), B = (0, f.LD)(F, !1), G = (0, j.TK)(t.id, U), H = (0, j.TK)(t.id, B), V = (0, p.ye)(t), z = O.ZP.getApplicationIconURL({
+    return null !== (e = O.Z.getGuildId()) && void 0 !== e ? e : void 0
+  }), U = (0, f.PL)(!0, !1), B = (0, f.LD)(F, !1), G = (0, j.TK)(t.id, U), H = (0, j.TK)(t.id, B), V = (0, p.ye)(t), z = E.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: k
@@ -71,12 +71,12 @@ function A(e) {
       let {
         banner: t
       } = k;
-      e = (0, O.aN)({
+      e = (0, E.aN)({
         id: k.id,
         banner: t,
         size: 512,
         canAnimate: !1
-      }), (0, O.xR)(t) && null == K && (n = (0, O.aN)({
+      }), (0, E.xR)(t) && null == K && (n = (0, E.aN)({
         id: k.id,
         banner: t,
         size: 512,
@@ -97,10 +97,10 @@ function A(e) {
   }, [K, k, V, t]), {
     analyticsLocations: Q
   } = (0, u.ZP)(d.Z.APP_MESSAGE_EMBED), J = i.useCallback(e => {
-    (0, C.KX)(t.id, l, e, T, b)
-  }, [b, T, t.id, l]), $ = i.useCallback(() => {
-    (0, C.GF)(t.id, l, T, b)
-  }, [b, T, t.id, l]), ee = i.useCallback(() => {
+    (0, C.KX)(t.id, l, e, P, b)
+  }, [b, P, t.id, l]), $ = i.useCallback(() => {
+    (0, C.GF)(t.id, l, P, b)
+  }, [b, P, t.id, l]), ee = i.useCallback(() => {
     (0, C.Yu)(t.id, l)
   }, [t.id, l]), et = (0, o.e7)([v.Z, y.Z, x.Z], () => {
     let e = v.Z.getChannel(x.Z.getChannelId());
@@ -133,24 +133,24 @@ function A(e) {
   }), el = null != L && V && eo, es = i.useMemo(() => {
     let e = [];
     return el && e.push({
-      label: P.NW.string(P.t.RscU7O),
+      label: T.NW.string(T.t.RscU7O),
       onClick() {
         (0, m.W)({
           appId: t.id,
           botId: L,
           analyticsLocations: Q,
           customId: b,
-          referrerId: T
+          referrerId: P
         }), J(C.j_.PLAY)
       }
     }), er ? e.push({
-      label: P.NW.string(P.t["HO/oXl"]),
+      label: T.NW.string(T.t["HO/oXl"]),
       onClick: ei
     }) : D && e.push({
-      label: P.NW.string(P.t.NgXl3N),
+      label: T.NW.string(T.t.NgXl3N),
       onClick: ea
     }), e
-  }, [b, T, Q, t.id, L, el, er, ea, ei, D, J]);
+  }, [b, P, Q, t.id, L, el, er, ea, ei, D, J]);
   return (0, r.jsx)(N.W, {
     title: A,
     staticBannerSrc: Y,
@@ -183,19 +183,19 @@ function w(e) {
         compactDisplay: "short"
       }),
       r = null !== (t = null === (e = s.directoryEntry) || void 0 === e ? void 0 : e.guild_count) && void 0 !== t ? t : 0;
-    return 0 === r ? null : P.NW.format(P.t["6IW6Wl"], {
+    return 0 === r ? null : T.NW.format(T.t["6IW6Wl"], {
       guildCount: n.format(r)
     })
   }, [null === (t = s.directoryEntry) || void 0 === t ? void 0 : t.guild_count, c, d]), p = null === (a = s.categories) || void 0 === a ? void 0 : null === (n = a.at(0)) || void 0 === n ? void 0 : n.name;
   return (0, r.jsxs)(r.Fragment, {
     children: [null != p && (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
-      className: T.description,
+      className: P.description,
       color: "none",
       children: p
     }), null != u && (0, r.jsxs)(l.Text, {
       variant: "text-xs/normal",
-      className: T.tagline,
+      className: P.tagline,
       color: "none",
       lineClamp: 1,
       children: [(0, r.jsx)(l.Jmo, {
@@ -209,17 +209,17 @@ function w(e) {
 function Z(e) {
   let {
     app: t
-  } = e, n = [null != t.maxParticipants ? P.NW.format(P.t.z8EAJS, {
+  } = e, n = [null != t.maxParticipants ? T.NW.format(T.t.z8EAJS, {
     count: t.maxParticipants
-  }) : P.NW.string(P.t.RjceQU), ...t.tags];
+  }) : T.NW.string(T.t.RjceQU), ...t.tags];
   return (0, r.jsx)(r.Fragment, {
     children: n.length > 0 && (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
-      className: T.description,
+      className: P.description,
       color: "none",
       lineClamp: 1,
       children: n.map((e, t) => (0, r.jsx)("span", {
-        className: T.tag,
+        className: P.tag,
         children: e
       }, t))
     })

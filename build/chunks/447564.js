@@ -1,7 +1,7 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   default: () => j,
-  k: () => O
+  k: () => E
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -23,7 +23,7 @@ var r = n(200651),
   y = n(30244),
   x = n(99713);
 
-function E(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,12 +41,12 @@ function E(e) {
   }
   return e
 }
-let O = (e, t) => {
+let E = (e, t) => {
   (0, m.mx)(t), (0, l.ZDy)(async () => {
     let {
       default: t
     } = await Promise.resolve().then(n.bind(n, 447564));
-    return n => (0, r.jsx)(t, E({
+    return n => (0, r.jsx)(t, O({
       channel: e
     }, n))
   }, {
@@ -80,28 +80,28 @@ function C(e) {
     entitlement: v,
     fetchedEntitlement: y,
     error: x
-  } = (0, m.t6)(f.FX), E = _ || x, {
-    analyticsLocations: O
+  } = (0, m.t6)(f.FX), O = _ || x, {
+    analyticsLocations: E
   } = (0, c.ZP)([s.Z.HD_STREAMING_POTION_MODAL]), j = null != v && !v.consumed;
   (0, i.useEffect)(() => () => {
-    E && (0, p.SN)(f.FX)
-  }, [v, t, o, E]);
+    O && (0, p.SN)(f.FX)
+  }, [v, t, o, O]);
   let N = (0, i.useCallback)(() => {
       (0, p.Zu)(t.id), (0, l.pTH)()
     }, [t.id]),
     C = (0, i.useCallback)(() => {
       (0, u.Z)({
         skuId: f.FX,
-        analyticsLocations: O,
+        analyticsLocations: E,
         onComplete: N,
         variantsReturnStyle: a.v.INDIVIDUAL_PRODUCTS
       })
-    }, [O, N]),
+    }, [E, N]),
     S = (0, i.useMemo)(() => () => t.isHDStreamSplashed ? 4 : n ? (null == v ? void 0 : v.type) === b.qc2.DEVELOPER_GIFT ? 1 : 2 * !!j : 3, [t.isHDStreamSplashed, n, null == v ? void 0 : v.type, j]),
-    P = (0, i.useMemo)(() => S(), [S]);
+    T = (0, i.useMemo)(() => S(), [S]);
   return (0, r.jsx)(I, {
     channel: t,
-    buttonState: P,
+    buttonState: T,
     price: h,
     onActionClick: () => {
       d(!0), (j ? N : C)()
@@ -120,10 +120,10 @@ let I = e => {
     return o ? (0, r.jsx)(Z, {}) : null == i ? (0, r.jsx)(w, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: y.modal,
-        children: [(0, r.jsx)(S, {}), (0, r.jsx)(P, {
+        children: [(0, r.jsx)(S, {}), (0, r.jsx)(T, {
           channel: t
         })]
-      }), (0, r.jsx)(T, {
+      }), (0, r.jsx)(P, {
         buttonState: n,
         price: i,
         onActionClick: a
@@ -135,7 +135,7 @@ let I = e => {
     src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png",
     alt: v.NW.string(v.t.DdigcX)
   }),
-  P = e => {
+  T = e => {
     let {
       channel: t
     } = e;
@@ -175,7 +175,7 @@ let I = e => {
       })]
     })
   },
-  T = e => {
+  P = e => {
     let {
       buttonState: t,
       price: n,
@@ -214,7 +214,7 @@ let I = e => {
         text: e,
         children: e => {
           var t, n;
-          return (0, r.jsx)(l.zxk, (t = E({}, e), n = n = {
+          return (0, r.jsx)(l.zxk, (t = O({}, e), n = n = {
             disabled: !0,
             children: a
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

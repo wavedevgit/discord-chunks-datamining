@@ -112,11 +112,11 @@ let p = (e, t) => {
       onItemAction: I,
       interactive: O = !0,
       children: N
-    } = e, C = o.useRef(null), S = o.useRef([]), x = o.useRef(!1), w = o.useRef(null), [T, P] = o.useState(0), [E, j] = o.useState({
+    } = e, S = o.useRef(null), C = o.useRef([]), x = o.useRef(!1), w = o.useRef(null), [T, P] = o.useState(0), [E, j] = o.useState({
       x: 0,
       y: 0
     }), Z = Math.abs(E.x) + Math.abs(E.y) > 0, A = o.useMemo(() => a().chunk(N, h), [N]), W = o.useCallback((e, t) => {
-      null == S.current[T] ? S.current[T] = [] : S.current[T][t] = e
+      null == C.current[T] ? C.current[T] = [] : C.current[T][t] = e
     }, [T]), k = o.useCallback((e, t) => {
       w.current = t, m(h * e + t)
     }, [m]), R = o.useCallback(() => {
@@ -145,8 +145,8 @@ let p = (e, t) => {
     }, []), F = o.useCallback(e => {
       null != w.current && (e.preventDefault(), e.stopPropagation(), null == I || I(h * T + w.current))
     }, [I, T]), M = o.useMemo(() => (0, r.throttle)(e => {
-      if (null == C.current) return;
-      let i = C.current.getBoundingClientRect(),
+      if (null == S.current) return;
+      let i = S.current.getBoundingClientRect(),
         o = {
           x: i.left + i.width / 2,
           y: i.top + i.height / 2
@@ -160,8 +160,8 @@ let p = (e, t) => {
         return
       }
       let a = (0, c.ld)(o, r, Math.max(t, n));
-      for (let e = 0; e < S.current[T].length; e++) {
-        let t = S.current[T][e];
+      for (let e = 0; e < C.current[T].length; e++) {
+        let t = C.current[T][e];
         if (null == t) continue;
         let n = t.getBoundingClientRect();
         if ((0, c.Vr)(o, a, n)) {
@@ -197,7 +197,7 @@ let p = (e, t) => {
       onWheel: L,
       onClick: F,
       children: (0, i.jsxs)("div", {
-        ref: C,
+        ref: S,
         className: u.chatWheel,
         style: {
           width: t,

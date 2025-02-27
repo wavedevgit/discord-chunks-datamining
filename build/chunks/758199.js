@@ -1,4 +1,4 @@
-/** Chunk was on 68051 **/
+/** Chunk was on 147 **/
 n.d(t, {
   W: () => x,
   u: () => y
@@ -56,29 +56,29 @@ function x(e) {
     staticBannerSrc: o,
     videoBannerSrc: y,
     bannerAspectRatio: x = 0,
-    iconSrc: E,
-    embedUrl: O,
+    iconSrc: O,
+    embedUrl: E,
     actions: j = [],
     onView: N,
     onLinkCopied: C
   } = e, {
     primaryColor: I,
     secondaryColor: S
-  } = (0, p.Z)(null != E ? E : o), P = "linear-gradient(45deg, ".concat(I, ", ").concat(S, ")"), T = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), A = a.useRef(!1), w = (0, d.O)(e => {
+  } = (0, p.Z)(null != O ? O : o), T = "linear-gradient(45deg, ".concat(I, ", ").concat(S, ")"), P = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), A = a.useRef(!1), w = (0, d.O)(e => {
     null != N && !1 === A.current && e && (N(), A.current = !0)
-  }, void 0, null != N), Z = f.wS && null != O ? (0, i.jsx)(c.zxk, {
+  }, void 0, null != N), Z = f.wS && null != E ? (0, i.jsx)(c.zxk, {
     look: c.zxk.Looks.BLANK,
     size: c.zxk.Sizes.ICON,
     "aria-label": g.NW.string(g.t.WqhZsr),
     className: _.linkIcon,
     onClick: () => {
-      (0, f.JG)(O), (0, c.showToast)((0, c.createToast)(g.NW.string(g.t["L/PwZW"]), c.ToastType.SUCCESS)), null == C || C()
+      (0, f.JG)(E), (0, c.showToast)((0, c.createToast)(g.NW.string(g.t["L/PwZW"]), c.ToastType.SUCCESS)), null == C || C()
     },
     children: (0, i.jsx)(c.xPt, {
       size: "xs",
       color: "currentColor"
     })
-  }) : null, k = null != o, R = null != y && !1 === T, L = k || R, D = 0 === x ? _.bannerAspectRatioBot : _.bannerAspectRatioActivity, M = a.useRef(null), W = a.useCallback(() => {
+  }) : null, k = null != o, R = null != y && !1 === P, L = k || R, D = 0 === x ? _.bannerAspectRatioBot : _.bannerAspectRatioActivity, M = a.useRef(null), W = a.useCallback(() => {
     let e = M.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), F = a.useMemo(() => !!R && new URL(y).pathname.endsWith(".gif"), [R, y]);
@@ -111,7 +111,7 @@ function x(e) {
     }), (0, i.jsxs)("div", {
       className: _.contentContainer,
       style: {
-        background: P
+        background: T
       },
       children: [null != n && (0, i.jsxs)("div", {
         className: _.header,
@@ -122,10 +122,10 @@ function x(e) {
         }), Z]
       }), (0, i.jsxs)("div", {
         className: _.contentWrapper,
-        children: [null != E && (0, i.jsx)("div", {
+        children: [null != O && (0, i.jsx)("div", {
           className: _.img,
           style: {
-            backgroundImage: "url(".concat(E, ")")
+            backgroundImage: "url(".concat(O, ")")
           }
         }), (0, i.jsxs)("div", {
           className: _.content,

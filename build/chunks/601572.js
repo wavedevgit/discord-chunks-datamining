@@ -6,11 +6,11 @@ var o = n(200651),
   i = n(192379),
   a = n(481060),
   r = n(846027),
-  l = n(410575),
-  c = n(2052),
+  c = n(410575),
+  l = n(2052),
   s = n(100527),
-  _ = n(906732),
-  d = n(600164),
+  d = n(906732),
+  _ = n(600164),
   u = n(313201),
   b = n(695346),
   f = n(932724),
@@ -31,9 +31,9 @@ function C(e) {
     videoEnabled: n,
     onEnable: C,
     onClose: N
-  } = e, A = I.Z.getCameraComponent(), L = (0, u.Dt)(), R = (0, m.Z)(), P = b.qF.useSetting(), [y, k] = i.useState((0, f.P)(v.default.getCurrentUser())), x = (0, c.O)(), {
+  } = e, A = I.Z.getCameraComponent(), L = (0, u.Dt)(), R = (0, m.Z)(), P = b.qF.useSetting(), [y, k] = i.useState((0, f.P)(v.default.getCurrentUser())), x = (0, l.O)(), {
     analyticsLocations: w
-  } = (0, _.ZP)(s.Z.CAMERA_PREVIEW), D = i.useRef(null);
+  } = (0, d.ZP)(s.Z.CAMERA_PREVIEW), D = i.useRef(null);
   i.useEffect(() => {
     h.default.track(T.rMx.OPEN_MODAL, {
       type: "Camera Preview Modal"
@@ -71,9 +71,9 @@ function C(e) {
     } catch (e) {}
     await N(), (0, g.Up)(y)
   };
-  return (0, o.jsx)(_.Gt, {
+  return (0, o.jsx)(d.Gt, {
     value: w,
-    children: (0, o.jsx)(l.Z, {
+    children: (0, o.jsx)(c.Z, {
       page: T.ZY5.PREVIEW_CAMERA_MODAL,
       children: (0, o.jsxs)(a.Y0X, {
         className: S.modalRoot,
@@ -111,7 +111,7 @@ function C(e) {
             onLearnMore: N
           })]
         }), (0, o.jsxs)(a.mzw, {
-          justify: d.Z.Justify.BETWEEN,
+          justify: _.Z.Justify.BETWEEN,
           children: [(() => {
             let e = n ? E.NW.string(E.t.KQENho) : E.NW.string(E.t.kgIe9f);
             return (0, o.jsx)(a.zxk, {

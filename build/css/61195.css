@@ -1,6 +1,6 @@
 /**
   Module ID: 61195
-  Original File Name: 1e1cd0ba77a1dbf9
+  Original File Name: a57cb936f171ee60
 **/
 .hoverRoll__0263c {
     display: inline-block;
@@ -651,6 +651,40 @@
 .speaking_adebba .avatar_adebba {
     outline: 1px solid var(--green-300);
     outline-offset: 2px
+}
+
+.hiddenVoiceStates_adebba {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: var(--spacing-4);
+    opacity: 1;
+    margin-top: var(--spacing-8)
+}
+
+.hiddenVoiceStates_adebba.locked_adebba {
+    opacity: .4
+}
+
+.hiddenVoiceStatesAvatar_adebba {
+    justify-content: center
+}
+
+.hiddenVoiceStatesAvatar_adebba,.hiddenVoiceStatesText_adebba {
+    display: flex;
+    align-items: center;
+    flex-direction: row
+}
+
+.hiddenVoiceStatesText_adebba {
+    padding: var(--spacing-4) var(--spacing-8);
+    border-radius: var(--radius-lg);
+    opacity: .8;
+    flex-shrink: 1;
+    background-color: rgba(19,19,24,.8);
+    box-shadow: var(--shadow-border) var(--shadow-high);
+    border: 1px solid var(--border-subtle);
+    cursor: pointer
 }
 
 .bgShade__6d791 {
@@ -2218,4 +2252,4 @@
     height: 52px
 }
 
-/*# sourceMappingURL=1e1cd0ba77a1dbf9.css.map*/
+/*# sourceMappingURL=a57cb936f171ee60.css.map*/
