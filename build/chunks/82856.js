@@ -2,8 +2,9 @@
 "use strict";
 n.d(t, {
   Pe: () => b,
-  c9: () => O,
-  lJ: () => T
+  S6: () => s.S6,
+  lJ: () => T,
+  vp: () => O
 });
 var r = n(200651),
   i = n(192379),
@@ -75,8 +76,13 @@ function E(e, t) {
 let v = "balance-widget-pill-overlay",
   b = () => (0, a.nfh)(v),
   y = () => (0, a.Mr3)(v),
-  O = () => {
-    (0, s.vp)(), (0, a.Mr3)(v)
+  O = e => {
+    let {
+      hideImmediately: t
+    } = null != e ? e : {
+      hideImmediately: !1
+    };
+    (0, s.vp)(t), y()
   },
   S = {
     modalKey: v,
@@ -127,19 +133,23 @@ function A(e) {
   } = e;
   m(e, ["backgroundElementRef", "onClick", "onClose"]);
   let {
-    balance: o
-  } = (0, l.A)(), a = async () => {
+    balance: a
+  } = (0, l.A)(), _ = async () => {
     await (0, s.vp)(), await i()
-  };
+  }, {
+    hideImmediately: h
+  } = (0, o.cj)([c.Z], () => ({
+    hideImmediately: c.Z.hidePillOverlayImmediately
+  }));
   return (0, r.jsx)(d.E, g(p({
     backgroundElementRef: t,
     onGetBoundingRect: f.dG4
   }, N), {
-    children: (0, r.jsx)(u.A4, {
+    children: h ? null : (0, r.jsx)(u.A4, {
       onClick: async e => {
-        void 0 !== n && n(e), await a()
+        void 0 !== n && n(e), await _()
       },
-      balance: o,
+      balance: a,
       balanceWidgetMode: u.b6.DEFAULT
     })
   }))

@@ -105,7 +105,7 @@ let y = (e, t, n, r) => {
     let {
       value: t,
       className: n
-    } = e, [o, l] = (0, i.useState)(null), c = (0, i.useRef)(null), u = (0, i.useRef)(null), f = (0, i.useRef)(null);
+    } = e, [o, l] = (0, i.useState)(t), c = (0, i.useRef)(null), u = (0, i.useRef)(null), f = (0, i.useRef)(null);
     (0, i.useEffect)(() => {
       if (null === t) return;
       let e = null !== u.current ? t - u.current : t;

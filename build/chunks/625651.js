@@ -1,23 +1,23 @@
 /** Chunk was on 31924 **/
 r.d(t, {
-  default: () => b
+  default: () => u
 });
 var n = r(200651),
   o = r(192379),
   a = r(481060),
-  i = r(808189),
-  l = r(279604),
-  s = r(535396),
-  c = r(730621),
+  i = r(17622),
+  c = r(279604),
+  l = r(535396),
+  s = r(730621),
   d = r(388032),
   m = r(136646);
 
-function b(e) {
+function u(e) {
   var t, r, {
-      guildId: b,
-      powerup: u
+      guildId: u,
+      powerup: p
     } = e,
-    p = function(e, t) {
+    b = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -35,14 +35,14 @@ function b(e) {
   let {
     onDeactivate: x,
     error: j,
-    isLoading: h
-  } = (0, l.Z)(b, u), {
-    onClose: f
-  } = p, g = o.useCallback(e => {
+    isLoading: f
+  } = (0, c.Z)(u, p), {
+    onClose: h
+  } = b, g = o.useCallback(e => {
     x(e).then(() => {
-      null == f || f()
+      null == h || h()
     })
-  }, [f, x]);
+  }, [h, x]);
   return (0, n.jsxs)(a.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -63,7 +63,7 @@ function b(e) {
   }({
     className: m.modal,
     size: a.CgR.SMALL
-  }, p), r = r = {
+  }, b), r = r = {
     children: [(0, n.jsxs)(a.hzk, {
       className: m.modalContentContainer,
       scrollbarType: "none",
@@ -73,37 +73,23 @@ function b(e) {
           className: m.header,
           children: [(0, n.jsx)(a.X6q, {
             variant: "heading-md/semibold",
-            children: d.NW.formatToPlainString(c.Z.iEBw1N, {
-              perk: u.title
+            children: d.NW.formatToPlainString(s.Z.iEBw1N, {
+              perk: p.title
             })
           }), (0, n.jsx)(a.Text, {
             variant: "text-sm/medium",
-            children: d.NW.formatToPlainString(c.Z["7o0K+/"], {
-              perk: u.title
+            children: d.NW.formatToPlainString(s.Z["7o0K+/"], {
+              perk: p.title
             })
           })]
         }), (0, n.jsx)(a.olH, {
-          onClick: p.onClose
+          onClick: b.onClose
         })]
       }), (() => {
-        switch (u.type) {
-          case s.U.LEVEL:
-            var e, t;
-            return (0, n.jsx)("div", {
-              className: m.levelContainer,
-              children: null === (t = i.C["0"]) || void 0 === t ? void 0 : null === (e = t.perks) || void 0 === e ? void 0 : e.map((e, t) => (0, n.jsxs)("div", {
-                className: m.perkContainer,
-                children: [(0, n.jsx)(e.icon, {
-                  size: "sm"
-                }), (0, n.jsx)(a.Text, {
-                  className: m.perkText,
-                  color: "text-muted",
-                  variant: "text-sm/medium",
-                  children: e.getCopy()
-                })]
-              }, t))
-            });
-          case s.U.PERK:
+        switch (p.type) {
+          case l.U.LEVEL:
+            return (0, n.jsx)(i.Z, {});
+          case l.U.PERK:
             return (0, n.jsx)("img", {
               alt: "",
               src: "",
@@ -115,32 +101,32 @@ function b(e) {
         children: [(0, n.jsx)(a.Text, {
           color: "status-warning",
           variant: "eyebrow",
-          children: d.NW.string(c.Z.OVt5CA)
+          children: d.NW.string(s.Z.OVt5CA)
         }), (0, n.jsx)(a.Text, {
           variant: "text-sm/medium",
-          children: d.NW.formatToPlainString(c.Z["4jSvr6"], {
-            perk: u.title,
+          children: d.NW.formatToPlainString(s.Z["4jSvr6"], {
+            perk: p.title,
             memberCount: 5
           })
         })]
       }), null != j && (0, n.jsx)(a.Text, {
         className: m.errorText,
-        color: "text-danger",
+        color: "status-danger",
         variant: "text-sm/semibold",
         children: j
       })]
     }), (0, n.jsxs)(a.mzw, {
       className: m.footer,
       children: [(0, n.jsx)(a.zxk, {
-        submitting: h,
+        submitting: f,
         color: a.Ttl.RED,
         className: m.button,
         onClick: g,
-        children: d.NW.string(c.Z.PYPdl5)
+        children: d.NW.string(s.Z.PYPdl5)
       }), (0, n.jsx)(a.zxk, {
         color: a.Ttl.PRIMARY,
         className: m.button,
-        onClick: p.onClose,
+        onClick: b.onClose,
         children: d.NW.string(d.t["ETE/oK"])
       })]
     })]

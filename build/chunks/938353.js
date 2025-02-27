@@ -1,8 +1,8 @@
 /** Chunk was on 72453 **/
 n.d(t, {
-  $p: () => e6,
-  BB: () => e9,
-  ZP: () => e5
+  $p: () => e5,
+  BB: () => e4,
+  ZP: () => e6
 }), n(47120), n(301563), n(789020), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(411104), n(13667), n(390547);
 var r, i = n(200651),
   a = n(192379),
@@ -177,7 +177,7 @@ let e1 = 15 * e_.Z.Millis.MINUTE,
       className: eX.gifFavoriteButton
     })
   },
-  e4 = e => () => {
+  e9 = e => () => {
     let {
       url: t,
       proxyUrl: n,
@@ -194,7 +194,7 @@ let e1 = 15 * e_.Z.Millis.MINUTE,
       className: eX.gifFavoriteButton
     }) : null
   };
-class e9 extends(r = a.Component) {
+class e4 extends(r = a.Component) {
   shouldRenderInvite(e) {
     let {
       channel: t
@@ -449,7 +449,7 @@ class e9 extends(r = a.Component) {
                 duration: i
               })
             },
-            gifFavoriteButton: e4(i),
+            gifFavoriteButton: e9(i),
             isSearchResult: this.props.isSearchResult
           },
           c = (0, eh.q)({
@@ -504,7 +504,7 @@ class e9 extends(r = a.Component) {
     } = this.props;
     return (0, i.jsx)(eD.F, {
       gifAutoPlay: t,
-      getGifFavButton: e4,
+      getGifFavButton: e9,
       getOnMediaItemContextMenu: null == o ? void 0 : e => t => {
         t.stopPropagation(), t.preventDefault(), null == o || o(t, e)
       },
@@ -793,7 +793,7 @@ class e9 extends(r = a.Component) {
   }
 }
 
-function e5(e) {
+function e6(e) {
   var t;
   let {
     channel: n,
@@ -825,7 +825,7 @@ function e5(e) {
   } = (0, P.yk)({
     location: "MessageAccessories"
   }), M = (0, A.a)(r) && D, W = (0, eC._)(n), F = (0, eO.ro)(r.id, r.channel_id);
-  return (0, i.jsx)(e9, e$(eJ(e$(eJ({
+  return (0, i.jsx)(e4, e$(eJ(e$(eJ({
     canSuppressEmbeds: E,
     canDeleteAttachments: j
   }, S), {
@@ -850,11 +850,11 @@ function e5(e) {
     hasInlineForwardButton: M
   }))
 }
-eQ(e9, "defaultProps", {
+eQ(e4, "defaultProps", {
   renderEmbeds: !0,
   compact: !1
 });
-let e6 = e => {
+let e5 = e => {
   var t, {
       message: n,
       channel: r,
@@ -889,7 +889,7 @@ let e6 = e => {
     b = (0, I.V)(r.id, n.author.id),
     v = (0, eO.ro)(n.id, n.channel_id),
     y = (0, J.Z)(n);
-  return (0, i.jsx)(e9, e$(eJ({}, u), {
+  return (0, i.jsx)(e4, e$(eJ({}, u), {
     message: n,
     channel: r,
     disableReactionReads: a,

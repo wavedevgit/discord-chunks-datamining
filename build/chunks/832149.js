@@ -11,7 +11,8 @@ let s = e => {
     analyticsLocations: s,
     overrideTitle: r,
     overrideDescription: a,
-    shouldShowPromotionalExperience: o
+    shouldShowPromotionalExperience: o,
+    onCloseCallback: C
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -41,5 +42,7 @@ let s = e => {
       overrideDescription: a,
       shouldShowPromotionalExperience: o
     }, n))
+  }, {
+    onCloseCallback: C
   })
 }

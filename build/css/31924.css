@@ -1,7 +1,25 @@
 /**
   Module ID: 31924
-  Original File Name: 4cbb0792e38bd714
+  Original File Name: 524b8beaa8348879
 **/
+.levelContainer__3dcc3 {
+    background: var(--bg-base-tertiary);
+    border-radius: var(--radius-sm);
+    padding: var(--spacing-16);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--spacing-12);
+    gap: var(--spacing-12)
+}
+
+.perkContainer__3dcc3 {
+    display: flex
+}
+
+.perkText__3dcc3 {
+    margin-left: var(--spacing-4)
+}
+
 .modal_bc32e9 {
     overflow: hidden;
     margin: 0
@@ -25,24 +43,6 @@
 
 .button_bc32e9 {
     margin-top: var(--spacing-16)
-}
-
-.levelContainer_bc32e9 {
-    background: var(--bg-base-tertiary);
-    border-radius: var(--radius-sm);
-    padding: var(--spacing-16);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: var(--spacing-12);
-    gap: var(--spacing-12)
-}
-
-.perkContainer_bc32e9 {
-    display: flex
-}
-
-.perkText_bc32e9 {
-    margin-left: var(--spacing-4)
 }
 
 .exampleImage_bc32e9 {
@@ -72,4 +72,4 @@
     gap: var(--spacing-8)
 }
 
-/*# sourceMappingURL=4cbb0792e38bd714.css.map*/
+/*# sourceMappingURL=524b8beaa8348879.css.map*/

@@ -262,19 +262,30 @@ let es = e => {
       } = (0, B.W)({
         product: eF
       }),
-      eK = e => r => {
+      {
+        displayPrices: eK,
+        checkoutEligiblePrices: e$,
+        isOrbExclusive: eJ,
+        shouldCheckoutWithOrbs: eX
+      } = (0, Q.Ip)({
+        product: t,
+        isPremiumUser: ej,
+        tab: z
+      }),
+      eY = e => r => {
         eG.current = r.currentTarget, (0, M.T)({
           product: t,
           category: i,
+          shouldCheckoutWithOrbs: eX,
           analyticsLocations: K,
           analyticsSource: e,
           returnRef: eG,
           tab: z
         })
       },
-      e$ = eK(g.Z.COLLECTIBLES_SHOP_CARD),
-      eJ = eK(g.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON),
-      eX = () => (0, n.jsx)("div", {
+      eQ = eY(g.Z.COLLECTIBLES_SHOP_CARD),
+      e1 = eY(g.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON),
+      e0 = () => (0, n.jsx)("div", {
         className: el.hoverUpsellContainer,
         children: (0, n.jsx)(_.Z, {
           fullWidth: !0,
@@ -284,19 +295,10 @@ let es = e => {
           buttonText: en.NW.string(en.t.sEAnVF),
           subscriptionTier: et.Si.TIER_2
         })
-      }),
-      {
-        displayPrices: eY,
-        checkoutEligiblePrices: eQ,
-        isOrbExclusive: e1
-      } = (0, Q.I)({
-        product: t,
-        isPremiumUser: ej,
-        tab: z
       });
-    if (0 === eY.length) return null;
-    let e0 = () => ey || d.tq ? null : eO ? (0, n.jsx)(ec, {
-      onClick: eJ
+    if (0 === eK.length) return null;
+    let e2 = () => ey || d.tq ? null : eO ? (0, n.jsx)(ec, {
+      onClick: e1
     }) : (0, n.jsx)(D.Z, {
       product: t,
       selectedVariantIndex: eZ,
@@ -317,7 +319,7 @@ let es = e => {
             [el.mysteryShopCard]: eT
           }),
           ref: eo,
-          onClick: e$,
+          onClick: eQ,
           "aria-label": t.name,
           children: [ey && (0, n.jsx)(b.ua7, {
             tooltipContentClassName: el.premiumWheelTooltipContent,
@@ -412,7 +414,7 @@ let es = e => {
                   className: el.priceTag,
                   children: en.NW.string(en.t.rt69oq)
                 }) : eV ? (0, n.jsx)(U.Z, {
-                  displayPrices: eY,
+                  displayPrices: eK,
                   isPremiumUser: ej
                 }) : (0, n.jsx)(H.Z, {
                   product: eF,
@@ -424,8 +426,8 @@ let es = e => {
                 className: el.innerHover,
                 children: (() => {
                   var e;
-                  if (ey && !ej && !eO) return eX();
-                  let r = eV && (null === (e = eQ[0]) || void 0 === e ? void 0 : e.currency) === er.pK.DISCORD_ORB,
+                  if (ey && !ej && !eO) return e0();
+                  let r = eV && (null === (e = e$[0]) || void 0 === e ? void 0 : e.currency) === er.pK.DISCORD_ORB,
                     l = ey ? {
                       submitting: ek,
                       submittingStartedLabel: en.NW.string(en.t["TYw+9v"]),
@@ -438,7 +440,7 @@ let es = e => {
                       }
                     } : {
                       onClick: e => {
-                        r ? eJ(e) : (0, j.Z)({
+                        r ? e1(e) : (0, j.Z)({
                           skuId: (0, $.S)({
                             product: t,
                             selectedVariantIndex: eZ
@@ -460,12 +462,12 @@ let es = e => {
                       disabled: eP
                     }, l), {
                       children: ey ? en.NW.string(en.t.zp6caG) : r ? en.NW.format(en.t.kAgx5O, {
-                        orbPrice: eQ[0].amount,
+                        orbPrice: e$[0].amount,
                         orbIconHook: () => (0, n.jsx)(P.Z, {})
                       }) : en.NW.formatToPlainString(en.t["cNSL/v"], {
                         price: eA
                       })
-                    })), e0()]
+                    })), e2()]
                   })
                 })()
               })]
@@ -474,7 +476,7 @@ let es = e => {
             category: i,
             className: el.limitedTimeBadge,
             display: "card"
-          }), eW || eR || !eI ? e1 ? (0, n.jsx)(b.IGR, {
+          }), eW || eR || !eI ? eJ ? (0, n.jsx)(b.IGR, {
             text: en.NW.string(en.t.Q2K5pa),
             disableColor: !0,
             className: el.badge

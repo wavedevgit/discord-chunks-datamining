@@ -1,0 +1,63 @@
+/**
+  Module ID: 99014
+  Original File Name: e6bb7eed7ebb3ea8
+**/
+.levelContainer__3dcc3 {
+    background: var(--bg-base-tertiary);
+    border-radius: var(--radius-sm);
+    padding: var(--spacing-16);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--spacing-12);
+    gap: var(--spacing-12)
+}
+
+.perkContainer__3dcc3 {
+    display: flex
+}
+
+.perkText__3dcc3 {
+    margin-left: var(--spacing-4)
+}
+
+.close_b30d08 {
+    position: absolute;
+    top: var(--spacing-16);
+    right: var(--spacing-16)
+}
+
+.modal_b30d08 {
+    overflow: hidden;
+    margin: 0
+}
+
+.modalContentContainer_b30d08 {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column
+}
+
+.visual-refresh .modalContentContainer_b30d08 {
+    padding: 0;
+    margin: 0
+}
+
+.contentContainer_b30d08 {
+    padding: var(--spacing-32);
+    display: flex;
+    gap: var(--spacing-8);
+    flex-direction: column
+}
+
+.boostImage_b30d08 {
+    width: 500px;
+    flex: 1;
+    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4));
+    align-self: center
+}
+
+.footer_b30d08 {
+    margin-top: var(--spacing-16)
+}
+
+/*# sourceMappingURL=e6bb7eed7ebb3ea8.css.map*/

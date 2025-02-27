@@ -14,11 +14,11 @@ var i = t(200651),
   x = t(51859),
   v = t(953478),
   p = t(460608),
-  _ = t(535396),
-  b = t(730621),
+  b = t(535396),
+  _ = t(730621),
   m = t(388032),
   h = t(518871);
-let j = [_.U.LEVEL, _.U.PERK];
+let j = [b.U.LEVEL, b.U.PERK];
 
 function f(e) {
   let {
@@ -41,7 +41,7 @@ function f(e) {
         disabled: !0,
         "aria-label": ""
       }), (0, i.jsx)(c.Z.Title, {
-        children: m.NW.string(b.Z.yv3DJC)
+        children: m.NW.string(_.Z.yv3DJC)
       }), (0, i.jsx)(c.Z.Divider, {})]
     }), (0, i.jsxs)("div", {
       className: h.contentContainer,
@@ -54,23 +54,23 @@ function f(e) {
               className: h.powerupTextContainer,
               children: [(0, i.jsx)(a.X6q, {
                 variant: "heading-lg/semibold",
-                children: m.NW.string(b.Z["TXY/b2"])
+                children: m.NW.string(_.Z["TXY/b2"])
               }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/medium",
-                children: m.NW.string(b.Z.aJv4PD)
+                children: m.NW.string(_.Z.aJv4PD)
               })]
             }), (0, i.jsx)("div", {
               className: h.powerupContainer,
               children: o.map((e, t) => {
                 switch (e.type) {
-                  case _.U.LEVEL:
+                  case b.U.LEVEL:
                     return (0, i.jsx)(u.ZP, {
                       guildId: n,
                       index: t,
                       powerup: e,
                       nextPowerup: o[t + 1]
                     }, "powerup-".concat(e.skuId));
-                  case _.U.PERK:
+                  case b.U.PERK:
                     return (0, i.jsx)(x.Z, {
                       guildId: n,
                       powerup: e

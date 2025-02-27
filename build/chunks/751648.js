@@ -77,8 +77,10 @@ function c() {
 }
 
 function u() {
+  let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
   return i.Z.dispatch({
-    type: "VIRTUAL_CURRENCY_BALANCE_PILL_OVERLAY_CLOSE"
+    type: "VIRTUAL_CURRENCY_BALANCE_PILL_OVERLAY_CLOSE",
+    hideImmediately: e
   })
 }
 

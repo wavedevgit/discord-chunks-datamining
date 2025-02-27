@@ -18,6 +18,9 @@ class s extends(r = i.ZP.Store) {
   get balanceWidgetPillIsOverlaid() {
     return this._balanceWidgetPillIsOverlaid
   }
+  get hidePillOverlayImmediately() {
+    return this._hidePillOverlayImmediately
+  }
   get earnedOrbsCoachmark() {
     return {
       shouldOpen: this._earnedOrbsCoachmarkOpen,
@@ -47,6 +50,9 @@ class s extends(r = i.ZP.Store) {
   }
   get onboardingModalOpenedPrior() {
     return this._onboardingModalOpenedPrior
+  }
+  getCurrentBalance() {
+    return this.balance
   }
   handleBalanceFetch(e) {
     let {} = e;
@@ -90,9 +96,10 @@ class s extends(r = i.ZP.Store) {
   }
   toggleBalanceWidgetPillOverlay(e) {
     let {
-      type: t
+      type: t,
+      hideImmediately: n
     } = e;
-    "VIRTUAL_CURRENCY_BALANCE_PILL_OVERLAY_OPEN" === t ? this._balanceWidgetPillIsOverlaid = !0 : this._balanceWidgetPillIsOverlaid = !1
+    "VIRTUAL_CURRENCY_BALANCE_PILL_OVERLAY_OPEN" === t ? (this._balanceWidgetPillIsOverlaid = !0, this._hidePillOverlayImmediately = !1) : (this._balanceWidgetPillIsOverlaid = !1, n && (this._hidePillOverlayImmediately = !0))
   }
   handleOnboardingModalOpen(e) {
     let {} = e;
@@ -128,7 +135,7 @@ class s extends(r = i.ZP.Store) {
       VIRTUAL_CURRENCY_EARNED_ORBS_COACHMARK_CLOSE: e => this.handleEarnedOrbsCoachmarkClose(e),
       VIRTUAL_CURRENCY_BALANCE_PILL_OVERLAY_OPEN: e => this.toggleBalanceWidgetPillOverlay(e),
       VIRTUAL_CURRENCY_BALANCE_PILL_OVERLAY_CLOSE: e => this.toggleBalanceWidgetPillOverlay(e)
-    }), a(this, "_entitlements", null), a(this, "_redeemingSkuId", null), a(this, "_isRedeemingVirtualCurrency", !1), a(this, "_redeemVirtualCurrencyError", null), a(this, "_balance", null), a(this, "_fetchBalanceError", null), a(this, "_isFetchingBalance", !1), a(this, "_balanceWidgetPillIsOverlaid", !1), a(this, "_onboardingModalOpenedPrior", !1), a(this, "_earnedOrbsCoachmarkOpen", !1), a(this, "_earnedOrbsCoachmarkDedupeKeys", []), a(this, "_earnedOrbsCoachmarkQuantity", 0)
+    }), a(this, "_entitlements", null), a(this, "_redeemingSkuId", null), a(this, "_isRedeemingVirtualCurrency", !1), a(this, "_redeemVirtualCurrencyError", null), a(this, "_balance", null), a(this, "_fetchBalanceError", null), a(this, "_isFetchingBalance", !1), a(this, "_balanceWidgetPillIsOverlaid", !1), a(this, "_hidePillOverlayImmediately", !1), a(this, "_onboardingModalOpenedPrior", !1), a(this, "_earnedOrbsCoachmarkOpen", !1), a(this, "_earnedOrbsCoachmarkDedupeKeys", []), a(this, "_earnedOrbsCoachmarkQuantity", 0)
   }
 }
 a(s, "displayName", "VirtualCurrencyStore");

@@ -21,13 +21,13 @@ function v(e) {
     onError: v
   } = e, {
     onActivate: p,
-    isLoading: _,
-    error: b,
+    isLoading: b,
+    error: _,
     onDeactivate: m
   } = (0, l.Z)(t, o);
   return r.useEffect(() => {
-    null == v || v(b)
-  }, [b, v]), (0, i.jsxs)("div", {
+    null == v || v(_)
+  }, [_, v]), (0, i.jsxs)("div", {
     className: a()(x.container, n),
     children: [o.active && (0, i.jsx)(s.ua7, {
       text: u.NW.string(d.Z.TZsu1d),
@@ -72,7 +72,7 @@ function v(e) {
       className: x.primaryButton,
       grow: !0,
       onClick: o.active ? () => {} : p,
-      submitting: !o.active && _,
+      submitting: !o.active && b,
       children: o.active ? u.NW.string(d.Z["g5Ds6+"]) : u.NW.string(d.Z.gSxlHR)
     })]
   })

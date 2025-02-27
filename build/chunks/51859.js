@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => b
+  Z: () => _
 }), t(47120), t(266796);
 var i = t(200651),
   r = t(192379),
@@ -14,53 +14,53 @@ var i = t(200651),
   x = t(279604),
   v = t(730621),
   p = t(388032),
-  _ = t(709435);
+  b = t(709435);
 
-function b(e) {
+function _(e) {
   let {
     guildId: n,
     powerup: t
   } = e, {
     onShowMore: o
-  } = (0, x.Z)(n, t), [b, m] = r.useState(void 0);
-  return (0, x.K)(b), (0, i.jsxs)(d.Z, {
+  } = (0, x.Z)(n, t), [_, m] = r.useState(void 0);
+  return (0, x.K)(_), (0, i.jsxs)(d.Z, {
     label: t.title,
     onClick: o,
     active: t.active,
     children: [(0, i.jsx)("div", {
-      className: _.imageContainer,
+      className: b.imageContainer,
       children: (0, i.jsx)("img", {
         alt: ""
       })
     }), (0, i.jsxs)("div", {
-      className: _.contentContainer,
+      className: b.contentContainer,
       children: [(0, i.jsxs)("div", {
-        className: _.headerContainer,
+        className: b.headerContainer,
         children: [(0, i.jsx)(s.X6, {
           variant: "heading-md/bold",
           children: t.title
         }), t.bundle && (0, i.jsx)(s.xv, {
-          className: a()(_.bundle, {
-            [_.active]: t.active
+          className: a()(b.bundle, {
+            [b.active]: t.active
           }),
           variant: "text-xs/semibold",
           children: p.NW.string(v.Z.j2jUjY)
         })]
       }), (0, i.jsx)(s.xv, {
-        className: _.description,
+        className: b.description,
         variant: "text-sm/medium",
         children: t.description
       }), (0, i.jsxs)("div", {
-        className: _.labelContainer,
+        className: b.labelContainer,
         children: [(0, i.jsxs)("div", {
-          className: _.inline,
+          className: b.inline,
           children: [(0, i.jsx)(l.Z, {}), (0, i.jsx)(s.xv, {
             tag: "div",
             variant: "heading-md/bold",
             children: t.cost
           })]
         }), t.active && (0, i.jsxs)("div", {
-          className: _.inline,
+          className: b.inline,
           children: [(0, i.jsx)(c.owK, {
             size: "xs",
             color: c.TVs.colors.TEXT_POSITIVE
@@ -72,7 +72,7 @@ function b(e) {
         })]
       })]
     }), (0, i.jsx)("div", {
-      className: _.buttonContainer,
+      className: b.buttonContainer,
       children: (0, i.jsx)(u.Z, {
         powerup: t,
         guildId: n,

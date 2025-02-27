@@ -15,8 +15,8 @@ var r = t(793030),
   x = t(800869),
   v = t(767218),
   p = t(309945),
-  _ = t(981631),
-  b = t(730621),
+  b = t(981631),
+  _ = t(730621),
   m = t(388032),
   h = t(785947);
 
@@ -30,7 +30,7 @@ function j(e) {
       className: h.headerContainer,
       children: [(0, i.jsx)(r.xv, {
         variant: "eyebrow",
-        children: m.NW.string(b.Z.hjvcLC)
+        children: m.NW.string(_.Z.hjvcLC)
       }), (0, i.jsx)(l.Z, {
         onClick: () => {},
         children: (0, i.jsx)(r.xv, {
@@ -57,8 +57,8 @@ function j(e) {
       className: h.boostButton,
       guild: t,
       analyticsLocation: {
-        page: _.ZY5.POWERUPS_OVERVIEW,
-        section: _.jXE.POWERUPS_OVERVIEW_SIDEABAR
+        page: b.ZY5.POWERUPS_OVERVIEW,
+        section: b.jXE.POWERUPS_OVERVIEW_SIDEABAR
       },
       color: a.Ttl.CUSTOM,
       size: a.PhG.LARGE,

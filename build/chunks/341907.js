@@ -139,7 +139,7 @@ function U(e, t) {
     }))
   }, {
     onCloseCallback() {
-      (0, d.c9)()
+      (0, d.vp)()
     }
   })
 }

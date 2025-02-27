@@ -26,7 +26,7 @@ function v(e) {
       username: null !== (i = l.ZP.getNick(t.guildId, t.userId)) && void 0 !== i ? i : null === (e = t.user) || void 0 === e ? void 0 : e.username,
       roleColor: null === (n = l.ZP.getMember(t.guildId, t.userId)) || void 0 === n ? void 0 : n.colorString
     }
-  }, [t]), _ = r.useCallback(() => (0, i.jsx)(s.PUh, {
+  }, [t]), b = r.useCallback(() => (0, i.jsx)(s.PUh, {
     name: v,
     color: null != p ? p : void 0
   }), [v, p]);
@@ -44,7 +44,7 @@ function v(e) {
       variant: "text-md/semibold",
       children: u.NW.format(u.t["57St//"], {
         username: v,
-        usernameHook: _
+        usernameHook: b
       })
     })
   })
