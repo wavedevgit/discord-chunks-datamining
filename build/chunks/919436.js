@@ -37,7 +37,7 @@ function Z(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function w(e) {
   return e
 }
 
-function E(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -71,11 +71,11 @@ function A(e) {
   switch (e) {
     case "height":
     case "opacity":
-      return w({
+      return E({
         duration: 150
       }, T);
     case "scale":
-      return w({}, T);
+      return E({}, T);
     default:
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
@@ -189,7 +189,7 @@ class D extends(r = l.PureComponent) {
             },
             children: (0, i.jsx)(a.mh, {
               id: e.id,
-              children: r => (0, i.jsx)(c.LYs, w({
+              children: r => (0, i.jsx)(c.LYs, E({
                 to: S.Z5c.CHANNEL(S.ME, e.id),
                 onMouseEnter: () => this.setState({
                   hovered: !0
@@ -234,7 +234,7 @@ class D extends(r = l.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("69151")]).then(n.bind(n, 131404));
-        return n => (0, i.jsx)(e, E(w({}, n), {
+        return n => (0, i.jsx)(e, w(E({}, n), {
           channel: t,
           user: r
         }))
@@ -242,7 +242,7 @@ class D extends(r = l.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("25421"), n.e("71582")]).then(n.bind(n, 354741));
-        return n => (0, i.jsx)(e, E(w({}, n), {
+        return n => (0, i.jsx)(e, w(E({}, n), {
           channel: t,
           selected: !1
         }))
@@ -277,7 +277,7 @@ let R = l.forwardRef(function(e, t) {
   j && (_ = o === S.WtW.VOICE, C = o === S.WtW.VIDEO);
   let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
     P = (0, f.Q3)("DirectMessage");
-  return (0, i.jsx)(D, E(w({}, e), {
+  return (0, i.jsx)(D, w(E({}, e), {
     ref: t,
     channelName: r,
     unread: p > 0,

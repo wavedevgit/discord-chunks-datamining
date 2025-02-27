@@ -29,8 +29,8 @@ var r = n(200651),
   S = n(905423),
   I = n(802718),
   Z = n(822857),
-  w = n(931928),
-  E = n(431286),
+  E = n(931928),
+  w = n(431286),
   T = n(796974),
   A = n(271383),
   D = n(430824),
@@ -201,11 +201,11 @@ function es(e) {
   let {
     analyticsLocations: eZ
   } = (0, j.ZP)(O.Z.GUILDS_LIST), {
-    pathname: ew
-  } = (0, c.TH)(), eE = ew.startsWith(et.Z5c.GUILD_DISCOVERY) || ew.startsWith(et.Z5c.GLOBAL_DISCOVERY), eT = ew.startsWith(et.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB(""));
+    pathname: eE
+  } = (0, c.TH)(), ew = eE.startsWith(et.Z5c.GUILD_DISCOVERY) || eE.startsWith(et.Z5c.GLOBAL_DISCOVERY), eT = eE.startsWith(et.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB(""));
   (0, y.Ng)(() => {
     if (!eg.current && 0 !== h.size) {
-      if (eE) eI.scrollToGuild(null, !1);
+      if (ew) eI.scrollToGuild(null, !1);
       else {
         let {
           scrollTop: e
@@ -269,13 +269,13 @@ function es(e) {
     } = (0, Z.W)({
       location: "GuildsBar"
     });
-  (0, E.i)();
+  (0, w.i)();
   let eG = i.useRef(null),
     {
       shouldShow: eU,
       closeCoachmarkIfOpen: eB,
       questId: eW
-    } = (0, w.qp)({
+    } = (0, E.qp)({
       isVirtualCurrencyEnabled: ek,
       discoveryButtonRef: eG,
       scrollToBottom: eI.scrollToBottom
@@ -289,7 +289,7 @@ function es(e) {
     }, e.id));
   return (0, r.jsxs)(j.Gt, {
     value: eZ,
-    children: [eV && (0, r.jsx)(w.fO, {
+    children: [eV && (0, r.jsx)(E.fO, {
       backgroundElementRef: eG,
       onClose: eB,
       renderTail: !0
@@ -344,7 +344,7 @@ function es(e) {
                   ref: eG,
                   questId: eF,
                   onClick: eB,
-                  selected: eE,
+                  selected: ew,
                   className: er.discoveryIcon
                 }) : null, t ? null : (0, r.jsx)(W.Z, {})]
               }), n || s ? null : (0, r.jsx)(z.g, {
@@ -353,7 +353,7 @@ function es(e) {
                   ref: eG,
                   questId: eF,
                   onClick: eB,
-                  selected: eE,
+                  selected: ew,
                   className: er.discoveryIcon
                 })
               })]

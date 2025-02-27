@@ -2,8 +2,8 @@
 n.d(t, {
   CN: () => I,
   ZP: () => D,
-  eP: () => E,
-  hR: () => w,
+  eP: () => w,
+  hR: () => E,
   jo: () => Z
 });
 var r, i = n(200651),
@@ -71,7 +71,7 @@ function Z(e, t) {
   return null == t ? x.containerDefault : e > t ? x.containerDragAfter : x.containerDragBefore
 }
 
-function w(e) {
+function E(e) {
   let {
     channel: t,
     disableManageChannels: n,
@@ -112,7 +112,7 @@ function w(e) {
   })
 }
 
-function E(e) {
+function w(e) {
   let {
     channel: t,
     isDefaultChannel: r = !1,
@@ -140,17 +140,17 @@ function E(e) {
       })
     }
   }
-  let w = (0, i.jsx)(c.ejJ, {
+  let E = (0, i.jsx)(c.ejJ, {
     size: "xs",
     className: x.actionIcon,
     "aria-hidden": !0,
     color: "currentColor"
   });
-  return r && (w = (0, i.jsx)(g.Z, {
+  return r && (E = (0, i.jsx)(g.Z, {
     tutorialId: "instant-invite",
     position: "left",
     children: (0, i.jsx)("div", {
-      children: w
+      children: E
     })
   })), (0, i.jsx)(c.ua7, {
     text: I,
@@ -160,7 +160,7 @@ function E(e) {
       onClick: Z,
       tabIndex: o,
       "aria-label": I,
-      children: w
+      children: E
     }))
   })
 }
@@ -212,10 +212,10 @@ function A(e) {
 }
 class D extends(r = l.PureComponent) {
   renderEditButton() {
-    return (0, i.jsx)(w, N({}, this.props))
+    return (0, i.jsx)(E, N({}, this.props))
   }
   renderInviteButton() {
-    return (0, i.jsx)(E, N({}, this.props))
+    return (0, i.jsx)(w, N({}, this.props))
   }
   renderRemoveSuggestionButton() {
     return (0, i.jsx)(T, N({}, this.props))

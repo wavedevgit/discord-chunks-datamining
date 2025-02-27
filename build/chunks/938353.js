@@ -281,15 +281,17 @@ class e9 extends(r = a.Component) {
         embedUrl: a
       }, r);
       else if (n === j.g.ACTIVITY_BOOKMARK) {
-        var o, l;
+        var o, l, s;
         let t = new URL(a),
           n = null !== (o = t.searchParams.get("referrer_id")) && void 0 !== o ? o : e.author.id,
-          s = null !== (l = t.searchParams.get("custom_id")) && void 0 !== l ? l : void 0;
+          c = null !== (l = t.searchParams.get("custom_id")) && void 0 !== l ? l : void 0,
+          d = null !== (s = t.searchParams.get("link_id")) && void 0 !== s ? s : void 0;
         return (0, i.jsx)(g.Z, {
           applicationId: r,
           message: e,
           referrerId: n,
-          customId: s,
+          customId: c,
+          linkId: d,
           embedUrl: a
         }, r)
       } else if (n === j.g.GUILD_PRODUCT) return (0, i.jsx)(D.Z, {

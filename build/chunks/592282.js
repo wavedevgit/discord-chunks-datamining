@@ -77,11 +77,9 @@ function y(e) {
   }, [y]);
   let R = i.useCallback(e => {
     S(e), null == N || N({
-      id: O.id,
-      rootItemId: O.rootItemId,
       type: c.U.CHECKBOX
     })
-  }, [S, N, O]);
+  }, [S, N]);
   return (0, r.jsxs)(s.P, b(E({
     innerRef: A,
     className: a()(g.item, g.checkboxContainer, g.labelContainer, h._[t], I, {

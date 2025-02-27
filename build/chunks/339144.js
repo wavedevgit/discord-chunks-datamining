@@ -34,8 +34,8 @@ let x = i.memo(function(e) {
       guildId: S,
       isStreaming: I,
       channel: Z,
-      canStream: w,
-      runningGame: E,
+      canStream: E,
+      runningGame: w,
       embeddedActivity: T,
       activity: A,
       application: D,
@@ -96,7 +96,7 @@ let x = i.memo(function(e) {
             }
             return e
           }({}, n), l = l = {
-            sourcePID: null == E ? void 0 : E.pid,
+            sourcePID: null == w ? void 0 : w.pid,
             selectSource: !1,
             guildId: t,
             analyticsLocation: O.Sbl.ACTIVITY_PANEL
@@ -112,9 +112,9 @@ let x = i.memo(function(e) {
           }), i))
         }
       })
-    }, [Z, S, E, M, L]),
-    V = (null != E || null == T || (0, c.R)()) && (I || N) ? (I ? (t = !1, l = B, u = a.g5r, x = j.NW.string(j.t.S5anIS)) : w ? (t = !1, l = W, u = a.hGI, x = null != E ? j.NW.formatToPlainString(j.t.AB5gT0, {
-      game: E.name
+    }, [Z, S, w, M, L]),
+    V = (null != w || null == T || (0, c.R)()) && (I || N) ? (I ? (t = !1, l = B, u = a.g5r, x = j.NW.string(j.t.S5anIS)) : E ? (t = !1, l = W, u = a.hGI, x = null != w ? j.NW.formatToPlainString(j.t.AB5gT0, {
+      game: w.name
     }) : j.NW.string(j.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, x = null != Z && (0, m.vd)(Z.type) ? j.NW.string(j.t.uQn9Bw) : null != S ? j.NW.string(j.t.fBXEoK) : j.NW.string(j.t.n3feND)), (0, r.jsx)("div", {
       className: _.panelButtonContainer,
       children: (0, r.jsx)(v.Z, {

@@ -83,12 +83,12 @@ let y = i.memo(function(e) {
   }(t), S = (0, f.Z)(t), {
     mentionCount: I,
     isMentionLowImportance: Z,
-    unread: w
+    unread: E
   } = (0, l.cj)([u.default], () => ({
     mentionCount: C.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
     isMentionLowImportance: C.every(e => u.default.getIsMentionLowImportance(e)),
     unread: C.some(e => u.default.hasUnread(e))
-  })), E = i.useCallback(() => {
+  })), w = i.useCallback(() => {
     a.Z.toggleGuildFolderExpand(v)
   }, [v]), T = i.useCallback(e => {
     (0, o.jW)(e, async () => {
@@ -99,20 +99,20 @@ let y = i.memo(function(e) {
         folderId: v,
         folderName: O,
         folderColor: j,
-        unread: w || I > 0
+        unread: E || I > 0
       }))
     })
-  }, [v, O, j, w, I]);
+  }, [v, O, j, E, I]);
   return (0, r.jsx)(h.Z, b(m({}, y), {
     folderNode: t,
     expanded: P,
     selected: null != x && C.includes(x),
     mentionCount: I,
     isMentionLowImportance: Z,
-    unread: w,
+    unread: E,
     mediaState: S,
     defaultFolderName: N,
-    onExpandCollapse: E,
+    onExpandCollapse: w,
     onContextMenu: T
   }))
 })

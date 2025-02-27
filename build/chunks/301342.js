@@ -1,7 +1,7 @@
 /** Chunk was on 86029 **/
 n.d(t, {
-  P: () => w,
-  Qo: () => E,
+  P: () => E,
+  Qo: () => w,
   ZP: () => Z,
   kw: () => A,
   rj: () => T
@@ -72,8 +72,8 @@ let I = i.memo(function(e) {
         disableManageChannels: j,
         position: I,
         sortingPosition: Z,
-        hideIcon: w,
-        children: E
+        hideIcon: E,
+        children: w
       } = e,
       T = (0, g.Q3)("CategoryChannel"),
       A = (0, s.e7)([v.ZP], () => v.ZP.isChannelMuted(l.getGuildId(), l.id)),
@@ -164,7 +164,7 @@ let I = i.memo(function(e) {
               focusProps: {
                 enabled: !1
               },
-              children: [T || w ? null : (0, r.jsx)(c.CJ0, {
+              children: [T || E ? null : (0, r.jsx)(c.CJ0, {
                 size: "md",
                 color: "currentColor",
                 className: x.icon
@@ -173,7 +173,7 @@ let I = i.memo(function(e) {
                 children: (0, r.jsx)(f.Z, {
                   children: l.name
                 })
-              }), T && !w ? (0, r.jsx)(c.CJ0, {
+              }), T && !E ? (0, r.jsx)(c.CJ0, {
                 size: "md",
                 color: "currentColor",
                 className: x.icon
@@ -219,12 +219,12 @@ let I = i.memo(function(e) {
               }) : null
             })]
           })
-        }), E]
+        }), w]
       });
     return null != O && null != p ? O(p(H)) : H
   }),
   Z = (0, p.B)(I),
-  w = i.memo(function(e) {
+  E = i.memo(function(e) {
     let {
       name: t,
       onDismiss: n,
@@ -258,7 +258,7 @@ let I = i.memo(function(e) {
       })
     })
   }),
-  E = i.memo(function(e) {
+  w = i.memo(function(e) {
     let {
       category: t
     } = e, n = (0, s.e7)([O.Z], () => O.Z.isVoiceCategoryCollapsed(t.guild.id)), l = (0, g.Q3)("VoiceChannelCategoryButton"), o = i.useCallback(() => {

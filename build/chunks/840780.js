@@ -29,8 +29,8 @@ var r = n(200651),
   S = n(550532),
   I = n(436774),
   Z = n(605236),
-  w = n(243778),
-  E = n(594190),
+  E = n(243778),
+  w = n(594190),
   T = n(925329),
   A = n(668519),
   D = n(102172),
@@ -324,7 +324,7 @@ let ey = (0, m.Z)(function(e) {
       return i
     }(e, ["guildId"]);
   let o = (0, c.e7)([H.default], () => H.default.getId()),
-    a = (0, c.e7)([E.ZP, et.Z], () => (0, k.Z)(E.ZP, et.Z)),
+    a = (0, c.e7)([w.ZP, et.Z], () => (0, k.Z)(w.ZP, et.Z)),
     s = (0, c.e7)([$.Z, z.Z], () => z.Z.getChannel($.Z.getVoiceChannelId())),
     d = (0, c.e7)([j.ZP], () => j.ZP.getConnectedActivityChannelId()),
     p = (0, c.e7)([z.Z], () => z.Z.getChannel(d)),
@@ -357,7 +357,7 @@ let ey = (0, m.Z)(function(e) {
         t = (0, Z.wE)(u.z.ACTIVITY_POPOUT_NUX_MODAL),
         n = (0, c.e7)([en.Z], () => en.Z.isFocused());
       (0, y.R)() && t && n && e.push(u.z.ACTIVITY_POPOUT_NUX_QUICK_REFOCUS_TOOLTIP);
-      let [r, i] = (0, w.US)(e);
+      let [r, i] = (0, E.US)(e);
       return {
         showsActivityPopoutQuickRefocusNUX: r === u.z.ACTIVITY_POPOUT_NUX_QUICK_REFOCUS_TOOLTIP,
         markActivityPopoutQuickRefocusNUXAsDismissed: i

@@ -29,8 +29,8 @@ var r = n(200651),
   S = n(919755),
   I = n(110977),
   Z = n(603274),
-  w = n(981631),
-  E = n(388032),
+  E = n(981631),
+  w = n(388032),
   T = n(588827);
 
 function A(e) {
@@ -53,9 +53,9 @@ function A(e) {
 }
 let D = {
   analyticsSource: {
-    page: w.ZY5.GUILD_CHANNEL,
-    section: w.jXE.CHANNEL_LIST,
-    object: w.qAy.CHANNEL
+    page: E.ZY5.GUILD_CHANNEL,
+    section: E.jXE.CHANNEL_LIST,
+    object: E.qAy.CHANNEL
   }
 };
 
@@ -74,9 +74,9 @@ function R() {
       favoriteChannels: P.Z.getFavoriteChannels(),
       favoriteServerMuted: P.Z.favoriteServerMuted
     })),
-    B = (0, s.e7)([_.Z], () => _.Z.getChannelId(w.I_8)),
+    B = (0, s.e7)([_.Z], () => _.Z.getChannelId(E.I_8)),
     W = (0, s.e7)([j.Z], () => j.Z.getChannel(B)),
-    V = (0, v.Z)(e => e.guildId) === w.I_8,
+    V = (0, v.Z)(e => e.guildId) === E.I_8,
     {
       badge: F,
       unread: H
@@ -131,12 +131,12 @@ function R() {
           upperBadge: z,
           lowerBadge: Y,
           children: (0, r.jsx)(c.LYs, (e = A({}, l), t = t = {
-            ariaLabel: E.NW.formatToPlainString(E.t["/uzRsr"], {
-              guildName: E.NW.string(E.t.wMWycn),
+            ariaLabel: w.NW.formatToPlainString(w.t["/uzRsr"], {
+              guildName: w.NW.string(w.t.wMWycn),
               mentions: F
             }),
             to: {
-              pathname: w.Z5c.CHANNEL(w.I_8, B),
+              pathname: E.Z5c.CHANNEL(E.I_8, B),
               state: D
             },
             selected: V || M,

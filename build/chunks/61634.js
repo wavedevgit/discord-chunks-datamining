@@ -45,8 +45,8 @@ function N(e) {
     I = (0, l.NX)(S),
     {
       guildHasVoice: Z,
-      guildHasVideo: w,
-      selectedVoiceChannelHasVideo: E
+      guildHasVideo: E,
+      selectedVoiceChannelHasVideo: w
     } = (0, i.cj)([O.Z, _.Z, b.Z, y.Z, m.Z], () => {
       var t;
       let r = O.Z.getVoiceChannelId(),
@@ -98,7 +98,7 @@ function N(e) {
       A = u && null !== (l = null === (i = m.Z.getChannel(c)) || void 0 === i ? void 0 : i.isGuildStageVoice()) && void 0 !== l && l,
       D = !!u && null != f.Z.getActiveStreamForUser(T, e),
       R = (x ? (0, s.aK)(f.Z.getAllApplicationStreams()) : f.Z.getAllApplicationStreams()).some(t => t.guildId === e),
-      L = u && E,
+      L = u && w,
       M = (() => {
         if (I) return N.length > 0;
         for (let e of N) {
@@ -108,7 +108,7 @@ function N(e) {
         return !1
       })(),
       k = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return u ? (g = !0, b = (null == r ? void 0 : r.channel_id) === c, v = A, j = L, _ = D, P = k) : (g = Z, b = null != r, v = S, j = w, _ = R, P = M), {
+    return u ? (g = !0, b = (null == r ? void 0 : r.channel_id) === c, v = A, j = L, _ = D, P = k) : (g = Z, b = null != r, v = S, j = E, _ = R, P = M), {
       audio: g,
       video: j,
       screenshare: _,
@@ -117,5 +117,5 @@ function N(e) {
       activity: P,
       isCurrentUserConnected: u || A
     }
-  }, [e, n, x, E, T, I, N, r, Z, w])
+  }, [e, n, x, w, T, I, N, r, Z, E])
 }

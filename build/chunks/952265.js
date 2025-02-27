@@ -93,7 +93,9 @@ function E() {
 function v(e) {
   switch (e) {
     case c.IlC.POPOUT:
+      return l.u1;
     case c.IlC.OVERLAY:
+      if (__OVERLAY__) return l.z1;
       return l.u1;
     default:
       return l.z1

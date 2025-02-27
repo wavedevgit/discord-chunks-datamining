@@ -30,8 +30,8 @@ var i = n(120356),
   S = n(896835),
   I = n(359110),
   Z = n(155409),
-  w = n(695346),
-  E = n(447564),
+  E = n(695346),
+  w = n(447564),
   T = n(592125),
   A = n(430824),
   D = n(607744),
@@ -171,7 +171,7 @@ class ee extends B.ZP {
         return (0, r.jsx)(s.P3F, {
           className: l()(K.iconItem, K.alwaysShown),
           onClick: () => {
-            (0, S.X)("VoiceChannel") ? (0, E.k)(e, "VoiceChannel") : window.open(U.Z.getArticleURL(Y.BhN.HD_STREAMING_POTION), "_blank")
+            (0, S.X)("VoiceChannel") ? (0, w.k)(e, "VoiceChannel") : window.open(U.Z.getArticleURL(Y.BhN.HD_STREAMING_POTION), "_blank")
           },
           "aria-label": Q.NW.string(Q.t.gpF6QU),
           onMouseEnter: n,
@@ -213,7 +213,7 @@ class ee extends B.ZP {
     } = this.props, {
       shouldShowActivities: S,
       shouldShowGuildVerificationPopout: I
-    } = this.state, w = this.getVoiceStatesCount(), E = (0, r.jsxs)("li", {
+    } = this.state, E = this.getVoiceStatesCount(), w = (0, r.jsxs)("li", {
       className: l()(this.getModeClass(), {
         [K.disabled]: this.isDisabled()
       }),
@@ -276,7 +276,7 @@ class ee extends B.ZP {
                     channel: e,
                     unread: i,
                     mentionCount: a,
-                    userCount: w,
+                    userCount: E,
                     embeddedActivitiesCount: _.length,
                     isSubscriptionGated: C
                   }),
@@ -294,12 +294,12 @@ class ee extends B.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return v && (E = f(E)), y && (E = p(h(E))), O && (E = (0, r.jsx)(Z.Z, {
+    return v && (w = f(w)), y && (w = p(h(w))), O && (w = (0, r.jsx)(Z.Z, {
       tutorialId: "voice-conversations",
       position: "right",
       offsetX: -20,
-      children: E
-    })), E
+      children: w
+    })), w
   }
   constructor(...e) {
     super(...e), J(this, "state", {
@@ -386,7 +386,7 @@ class ee extends B.ZP {
         shouldShowGuildVerificationPopout: s
       } = this.state;
       if (a && !n && !i && !s) {
-        let n = w.SE.getSetting().includes(o.id);
+        let n = E.SE.getSetting().includes(o.id);
         return (0, r.jsx)(F.Z, {
           onAction: this.closePopout,
           guild: o,

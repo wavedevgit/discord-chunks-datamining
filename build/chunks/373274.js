@@ -29,8 +29,8 @@ var r, i = n(200651),
   S = n(220444),
   I = n(31022),
   Z = n(10401),
-  w = n(131704),
-  E = n(592125),
+  E = n(131704),
+  w = n(592125),
   T = n(796974),
   A = n(984933),
   D = n(914010),
@@ -179,7 +179,7 @@ class ef extends(r = l.PureComponent) {
         channel: o,
         category: a
       } = l;
-      return !!(0, w.vc)(o.record.type) && (!a.isCollapsed || !a.isMuted) && !o.isMuted && !!t.isItemVisible(r, i, !0) && (0, S.d)(o.record)
+      return !!(0, E.vc)(o.record.type) && (!a.isCollapsed || !a.isMuted) && !o.isMuted && !!t.isItemVisible(r, i, !0) && (0, S.d)(o.record)
     })
   }
   renderTopUnread() {
@@ -768,7 +768,7 @@ let eg = e => {
     selectedVoiceChannelId: r
   } = e, o = (0, u.e7)([g.Z], () => g.Z.keyboardModeEnabled), {
     analyticsLocations: a
-  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([E.Z], () => E.Z.getChannel(n)), p = (0, u.e7)([E.Z], () => E.Z.getChannel(r)), h = (0, u.e7)([D.Z], () => D.Z.getGuildId()), y = (0, P.DM)(t), O = l.useRef(null), j = l.useCallback((e, t) => {
+  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([w.Z], () => w.Z.getChannel(n)), p = (0, u.e7)([w.Z], () => w.Z.getChannel(r)), h = (0, u.e7)([D.Z], () => D.Z.getGuildId()), y = (0, P.DM)(t), O = l.useRef(null), j = l.useCallback((e, t) => {
     let n = O.current;
     if (null != n) {
       if (el.Xyh.test(t) || (0, eo.AB)(t)) n.scrollToChannel(t, !1, 2 * ei.yE, () => {

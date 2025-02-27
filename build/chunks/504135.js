@@ -84,12 +84,10 @@ function v(e) {
     onInteraction: j
   } = i.useContext(c.p), U = i.useRef(null), G = i.useCallback(e => {
     if (null == j || j({
-        id: T.id,
-        rootItemId: T.rootItemId,
         type: c.U.DEFAULT
       }), null == N) return !1;
     e.shiftKey && w || L || A(), e.persist(), null == k || k(), requestAnimationFrame(() => N(e))
-  }, [N, A, k, w, L, T, j]);
+  }, [N, A, k, w, L, j]);
   return i.useEffect(() => {
     I && ((0, u.F)(U), null == C || C())
   }, [I, C]), (0, r.jsxs)(s.P, E(g({

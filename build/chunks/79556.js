@@ -30,8 +30,8 @@ var i = n(120356),
   S = n(473403),
   I = n(304471),
   Z = n(981631),
-  w = n(647086),
-  E = n(436804);
+  E = n(647086),
+  w = n(436804);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,7 +79,7 @@ class R extends P.ZP {
       channelInfo: e
     } = this.props;
     return null == e ? null : (0, r.jsx)("div", {
-      className: E.channelInfo,
+      className: w.channelInfo,
       children: e
     })
   }
@@ -107,8 +107,8 @@ class R extends P.ZP {
       enableActivities: x
     } = this.props, P = x && null != j && j.length > 0, N = (0, f.D)(v), I = (0, r.jsx)("li", {
       className: l()(this.getClassName(), {
-        [E.disabled]: this.isDisabled(),
-        [E.selected]: n
+        [w.disabled]: this.isDisabled(),
+        [w.selected]: n
       }),
       "data-dnd-name": e.name,
       onMouseEnter: c || P ? this.handleMouseEnter : void 0,
@@ -120,7 +120,7 @@ class R extends P.ZP {
         onRequestClose: this.handleClosePopout,
         shouldShow: c && this.state.shouldShowThreadsPopout || P && this.state.shouldShowActivities,
         children: () => (0, r.jsxs)(S.Z, {
-          className: E.iconVisibility,
+          className: w.iconVisibility,
           channel: e,
           guild: t,
           selected: !y && n,
@@ -263,12 +263,12 @@ function M(e) {
     let e = y.Z.getChannel(t.parent_id);
     return {
       canManageChannel: O.Z.can(Z.Plq.MANAGE_CHANNELS, t),
-      canReorderChannel: !0 !== i && (n.id === w._ || (null != e ? O.Z.can(Z.Plq.MANAGE_CHANNELS, e) : O.Z.can(Z.Plq.MANAGE_CHANNELS, n)))
+      canReorderChannel: !0 !== i && (n.id === E._ || (null != e ? O.Z.can(Z.Plq.MANAGE_CHANNELS, e) : O.Z.can(Z.Plq.MANAGE_CHANNELS, n)))
     }
   }), x = (0, o.e7)([m.Z], () => m.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: P,
     isSubscriptionGated: S
-  } = (0, g.Z)(t.id), I = (0, o.e7)([_.ZP], () => _.ZP.isFavorite(n.id, t.id)), E = (0, o.e7)([C.default], () => {
+  } = (0, g.Z)(t.id), I = (0, o.e7)([_.ZP], () => _.ZP.isFavorite(n.id, t.id)), w = (0, o.e7)([C.default], () => {
     let e = C.default.getCurrentUser();
     return null != e && (!t.isNSFW() || e.nsfwAllowed)
   }, [t]), T = (0, d.NX)(t.id), R = (0, N.Z)({
@@ -289,7 +289,7 @@ function M(e) {
     needSubscriptionToAccess: P,
     isNewChannel: x && e.canBeNewChannel,
     isFavoriteSuggestion: l && !I,
-    canShowThreadPreviewForUser: E,
+    canShowThreadPreviewForUser: w,
     channelInfo: R,
     embeddedApps: M,
     resolvedUnreadSetting: f,

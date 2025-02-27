@@ -29,8 +29,8 @@ var r = n(200651),
   S = n(593618),
   I = n(252686),
   Z = n(682662),
-  w = n(674552),
-  E = n(981631),
+  E = n(674552),
+  w = n(981631),
   T = n(388032),
   A = n(638410);
 
@@ -67,9 +67,9 @@ function R(e, t) {
 }
 let L = {
   analyticsSource: {
-    page: E.ZY5.GUILD_CHANNEL,
-    section: E.jXE.CHANNEL_LIST,
-    object: E.qAy.CHANNEL
+    page: w.ZY5.GUILD_CHANNEL,
+    section: w.jXE.CHANNEL_LIST,
+    object: w.qAy.CHANNEL
   }
 };
 
@@ -108,8 +108,8 @@ let k = i.memo(function(e) {
   } = e, {
     id: ei,
     parentId: el
-  } = G, eo = (0, b.Q3)("GuildItem"), ea = null !== (t = e.upperBadge) && void 0 !== t ? t : Q ? (0, w.Ny)() : null != q ? (0, w.Or)(q) : void 0, es = null !== (n = e.lowerBadge) && void 0 !== n ? n : void 0;
-  null == es && K > 0 ? es = null !== (l = (0, w.Ne)(K, J ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) && void 0 !== l ? l : void 0 : null == es && null != en && (es = null !== (f = (0, w.jt)({
+  } = G, eo = (0, b.Q3)("GuildItem"), ea = null !== (t = e.upperBadge) && void 0 !== t ? t : Q ? (0, E.Ny)() : null != q ? (0, E.Or)(q) : void 0, es = null !== (n = e.lowerBadge) && void 0 !== n ? n : void 0;
+  null == es && K > 0 ? es = null !== (l = (0, E.Ne)(K, J ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) && void 0 !== l ? l : void 0 : null == es && null != en && (es = null !== (f = (0, E.jt)({
     guildJoinRequestStatus: en
   })) && void 0 !== f ? f : void 0);
   let ec = null !== (k = e.lowerBadgeSize) && void 0 !== k ? k : {
@@ -132,7 +132,7 @@ let k = i.memo(function(e) {
         dragging: e.isDragging()
       })
     }),
-    ep = (0, c.Ie)(null != ei ? ei : E.lds),
+    ep = (0, c.Ie)(null != ei ? ei : w.lds),
     [eh, ef] = i.useState(!1),
     eg = !ee && eh,
     [em, eb] = i.useState(!1),
@@ -207,7 +207,7 @@ let k = i.memo(function(e) {
     }, ep), {
       role: "treeitem"
     })),
-    ew = eu ? (0, r.jsx)(N.OG, {
+    eE = eu ? (0, r.jsx)(N.OG, {
       children: (0, r.jsx)(I.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? ed : void 0,
@@ -240,7 +240,7 @@ let k = i.memo(function(e) {
       guild: F,
       disabled: ee,
       isDragging: eu,
-      children: ew
+      children: eE
     }), $ ? (0, r.jsx)(N.ZP, {
       name: F.name,
       targetNode: G,

@@ -172,23 +172,21 @@ function g(e) {
       isUsingKeyboardNavigation: T
     }
   }, [t, O, L, v.focusIndex, T]), k = r.useCallback(e => {
-    var n;
     let {
-      path: r,
-      hasSubmenu: i = !1,
-      navigable: o = !0,
-      role: s = "menuitem"
-    } = e, c = r.join(d);
-    return u(l({}, i ? {
-      "aria-expanded": L(r),
+      path: n,
+      hasSubmenu: r = !1,
+      navigable: i = !0,
+      role: o = "menuitem"
+    } = e, s = n.join(d);
+    return u(l({}, r ? {
+      "aria-expanded": L(n),
       "aria-haspopup": !0
     } : {}), {
-      role: s,
-      id: (0, a.qR)(t, c),
+      role: o,
+      id: (0, a.qR)(t, s),
       tabIndex: -1,
-      onFocus: o ? A.get(c) : () => {},
-      onMouseEnter: o ? C.get(c) : () => {},
-      rootItemId: null !== (n = r[0]) && void 0 !== n ? n : c
+      onFocus: i ? A.get(s) : () => {},
+      onMouseEnter: i ? C.get(s) : () => {}
     })
   }, [t, L, A, C]);
   return r.useMemo(() => ({

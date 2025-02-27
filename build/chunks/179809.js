@@ -37,8 +37,8 @@ let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       mentionCount: g = 0,
       isMentionLowImportance: I,
       unread: Z = !1,
-      defaultFolderName: w,
-      useCircleMask: E = !1,
+      defaultFolderName: E,
+      useCircleMask: w = !1,
       draggable: T = !1,
       sorting: A = !1,
       onDragStart: D,
@@ -74,7 +74,7 @@ let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       q(e)
     }, []), $ = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && L()
-    }, [L, s]), ee = null != W && "" !== W ? W : null != w && "" !== w ? w : C.NW.string(C.t.xV9hVl), et = (0, c.Ie)("".concat(B)), en = "folder-items-".concat(B), er = function(e) {
+    }, [L, s]), ee = null != W && "" !== W ? W : null != E && "" !== E ? E : C.NW.string(C.t.xV9hVl), et = (0, c.Ie)("".concat(B)), en = "folder-items-".concat(B), er = function(e) {
       let t = (0, d.dQu)(d.TVs.modules.guildbar.AVATAR_SIZE),
         n = (0, h.Q3)("FolderItem.useHeight"),
         {
@@ -117,7 +117,7 @@ let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
           children: K ? (0, r.jsx)(O.Z, {}) : (0, r.jsx)(y.Z, {
             folderNode: t,
             expanded: s,
-            forceCircular: E,
+            forceCircular: w,
             sorting: A,
             mediaState: u,
             mentionCount: g,

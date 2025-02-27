@@ -75,11 +75,9 @@ function y(e) {
   }, [y]);
   let A = i.useCallback(e => {
     S(e), null == I || I({
-      id: O.id,
-      rootItemId: O.rootItemId,
       type: c.U.RADIO
     })
-  }, [S, I, O]);
+  }, [S, I]);
   return (0, r.jsxs)(s.P, b(E({
     innerRef: T,
     className: a()(g.item, g.labelContainer, h._[t], {

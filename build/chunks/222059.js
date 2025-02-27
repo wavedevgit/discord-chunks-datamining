@@ -29,8 +29,8 @@ var r = n(200651),
   S = n(662146),
   I = n(674552),
   Z = n(981631),
-  w = n(474936),
-  E = n(871465),
+  E = n(474936),
+  w = n(871465),
   T = n(388032),
   A = n(760541);
 let D = {
@@ -54,8 +54,8 @@ function R(e) {
     badge: b,
     link: y,
     showProgressBadge: v
-  } = e, O = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [j, _] = i.useState(!1), [C, x] = i.useState(!1), [w, R] = i.useState(null), [L, M] = i.useState(0), k = (0, l.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), U = () => {
-    R(null), M(0), clearTimeout(w)
+  } = e, O = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [j, _] = i.useState(!1), [C, x] = i.useState(!1), [E, R] = i.useState(null), [L, M] = i.useState(0), k = (0, l.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), U = () => {
+    R(null), M(0), clearTimeout(E)
   };
   if (null == f) return null;
   let B = T.NW.string(T.t.YUU0RE);
@@ -94,10 +94,10 @@ function R(e) {
         onMouseEnter: () => _(!0),
         onMouseLeave: () => _(!1),
         onClick: () => {
-          if (!__OVERLAY__ && (null != w && clearTimeout(w), R(setTimeout(U, 500)), M(L + 1), 15 === L)) {
+          if (!__OVERLAY__ && (null != E && clearTimeout(E), R(setTimeout(U, 500)), M(L + 1), 15 === L)) {
             U();
             let e = !a.K.get(Z.wli);
-            a.K.set(Z.wli, e), e && a.K.set(E.O5, !0), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), x(!0), setTimeout(() => {
+            a.K.set(Z.wli, e), e && a.K.set(w.O5, !0), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), x(!0), setTimeout(() => {
               x(!1)
             }, 1e3)
           }
@@ -162,7 +162,7 @@ function L() {
       return r > 0 && r < 100
     }),
     n = (0, f.If)(),
-    i = Object.keys(w.nG),
+    i = Object.keys(E.nG),
     {
       unviewedTrialCount: l,
       unviewedDiscountCount: a

@@ -1,6 +1,6 @@
 /** Chunk was on 86029 **/
 n.d(t, {
-  Z: () => E
+  Z: () => w
 });
 var r = n(200651);
 n(192379);
@@ -61,17 +61,17 @@ function Z(e, t) {
   }), e
 }
 
-function w(e) {
+function E(e) {
   let {
     guildId: t,
     selected: n,
     handleClick: i
-  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([O.Z], () => O.Z.getGuild(t)), x = (null == g ? void 0 : g.hasFeature(C.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, w = "false" === s.K.get(P.tM, "false"), E = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
+  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([O.Z], () => O.Z.getGuild(t)), x = (null == g ? void 0 : g.hasFeature(C.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, E = "false" === s.K.get(P.tM, "false"), w = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsx)(_.m, {
     id: "shop-".concat(t),
     className: l()(S.previewChannelRow, {
       [S.selected]: n,
-      [S.phantomPreview]: w
+      [S.phantomPreview]: E
     }),
     innerClassName: S.previewChannelRowContent,
     renderIcon: e => (0, r.jsx)(m.Z, {
@@ -84,7 +84,7 @@ function w(e) {
     onClick: i,
     trailing: (0, r.jsxs)("div", {
       className: S.gifSection,
-      children: [E ? (0, r.jsx)(c.IGR, {
+      children: [w ? (0, r.jsx)(c.IGR, {
         color: c.TVs.unsafe_rawColors.BRAND_260.css,
         text: N.NW.string(N.t.y2b7CA),
         className: S.newBadge
@@ -112,14 +112,14 @@ function w(e) {
   })
 }
 
-function E(e) {
+function w(e) {
   let {
     guild: t,
     selected: i
   } = e, l = (0, g.g)(t, "guild_shop_channel_row"), o = () => {
     s.K.set(P.tM, "true"), (0, y.uL)(C.Z5c.CHANNEL(t.id, x.oC.GUILD_SHOP))
   };
-  return l ? (0, r.jsx)(w, {
+  return l ? (0, r.jsx)(E, {
     guildId: t.id,
     selected: i,
     handleClick: o

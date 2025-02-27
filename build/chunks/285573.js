@@ -72,11 +72,11 @@ let y = (0, c.B)(function(e) {
     })
   }, [P]);
   if (null == P) return null;
-  let w = (0, h.jo)(c, j),
-    E = (0, h.CN)(P, v, O),
+  let E = (0, h.jo)(c, j),
+    w = (0, h.CN)(P, v, O),
     T = (0, r.jsx)("div", {
-      className: o()(w, {
-        [b.disabled]: E,
+      className: o()(E, {
+        [b.disabled]: w,
         [b.selected]: S
       }),
       "data-dnd-name": P.name,

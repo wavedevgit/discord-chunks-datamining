@@ -78,11 +78,9 @@ function h(e) {
       isFocused: _,
       onInteraction: i.useCallback(e => {
         null == E || E({
-          id: g.id,
-          rootItemId: g.rootItemId,
           type: null != e ? e : s.U.DEFAULT
         })
-      }, [E, g])
+      }, [E])
     }, b);
   return (0, r.jsxs)("div", p(f({
     onClick: y,

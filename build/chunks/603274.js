@@ -76,7 +76,7 @@ function S() {
     S = (0, s.Wu)([b.default], () => P.map(e => b.default.getUser(e)), [P]),
     I = (0, s.Wu)([b.default], () => C.map(e => b.default.getUser(e)), [C]),
     Z = N(c.gj8, l.filter(e => !C.includes(e.id) && !P.includes(e.id))),
-    w = 0 === o.length ? null : (0, r.jsxs)("div", {
+    E = 0 === o.length ? null : (0, r.jsxs)("div", {
       className: x.row,
       children: [(0, r.jsx)(c.ewx, {
         size: "lg",
@@ -99,10 +99,10 @@ function S() {
         })]
       })]
     }),
-    E = N(c.hGI, I.filter(e => null != e && !P.includes(e.id))),
+    w = N(c.hGI, I.filter(e => null != e && !P.includes(e.id))),
     T = N(c.nG3, S);
   return (0, r.jsxs)(r.Fragment, {
-    children: [w, Z, E, T]
+    children: [E, Z, w, T]
   })
 }
 

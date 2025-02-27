@@ -50,7 +50,7 @@ function Z(e) {
   return e
 }
 
-function w(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
+let w = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
   T = e => {
     let {
       guild: t,
@@ -87,7 +87,7 @@ let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     })
   },
   A = 57,
-  D = 57 + E,
+  D = 57 + w,
   R = {
     tension: 180,
     friction: 80
@@ -101,7 +101,7 @@ let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     } = (0, g.ZP)(h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), {
       premiumSubscriberCount: b,
       id: j
-    } = t, E = (0, O.rF)(b, j), A = (0, O.FZ)(E, t.id), D = null == A, L = null != A ? A : E, M = (0, c.e7)([C.Z], () => {
+    } = t, w = (0, O.rF)(b, j), A = (0, O.FZ)(w, t.id), D = null == A, L = null != A ? A : w, M = (0, c.e7)([C.Z], () => {
       var e;
       return null !== (e = C.Z.getCountForGuild(j)) && void 0 !== e ? e : 0
     }), k = (0, c.e7)([y.Z], () => y.Z.can(N.Plq.MANAGE_GUILD, t));
@@ -161,7 +161,7 @@ let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
         position: "top",
         delay: 200,
         hideOnClick: !0,
-        children: e => (0, r.jsxs)(d.P3F, w(Z({}, Y, e), {
+        children: e => (0, r.jsxs)(d.P3F, E(Z({}, Y, e), {
           "aria-label": void 0,
           role: "button",
           focusProps: {
@@ -179,7 +179,7 @@ let E = (0, j.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
             [I.containerWithMargin]: n
           }),
           onContextMenu: e => {
-            k && (0, p.vq)(e, e => (0, r.jsx)(T, w(Z({}, e), {
+            k && (0, p.vq)(e, e => (0, r.jsx)(T, E(Z({}, e), {
               guild: t
             })))
           },

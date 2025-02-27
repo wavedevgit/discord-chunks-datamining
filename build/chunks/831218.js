@@ -28,8 +28,8 @@ var r, i = n(200651),
   S = n(210887),
   I = n(592125),
   Z = n(158776),
-  w = n(55589),
-  E = n(515753),
+  E = n(55589),
+  w = n(515753),
   T = n(981631),
   A = n(388032),
   D = n(730499);
@@ -349,7 +349,7 @@ class G extends(r = l.Component) {
         totalRowCount: o,
         preRenderedChildren: a
       } = this.state, s = r[n[t]];
-      return null == s ? null : (0, i.jsx)(E.ZP, {
+      return null == s ? null : (0, i.jsx)(w.ZP, {
         channel: s,
         selected: s.id === l,
         "aria-posinset": a + t + 1,
@@ -434,8 +434,8 @@ let U = e => {
     g = l.Children.count(d),
     m = I.Z.getMutablePrivateChannels(),
     b = (0, P.k1)(m),
-    y = (0, u.Wu)([w.Z, x.Z, N.Z], () => {
-      let e = w.Z.getPrivateChannelIds();
+    y = (0, u.Wu)([E.Z, x.Z, N.Z], () => {
+      let e = E.Z.getPrivateChannelIds();
       return (0, P.tU)(e, [x.Z, N.Z])
     }, []);
   (0, _.z)(j.R);
@@ -445,9 +445,9 @@ let U = e => {
       version: null != o ? "".concat(o, ":").concat(I.Z.getPrivateChannelsVersion()) : I.Z.getPrivateChannelsVersion()
     })),
     Z = l.useRef(null),
-    E = null !== (t = e.listScrollerRef) && void 0 !== t ? t : Z,
+    w = null !== (t = e.listScrollerRef) && void 0 !== t ? t : Z,
     A = l.useCallback(e => {
-      let t = E.current,
+      let t = w.current,
         n = document.querySelector(e);
       null != t && null != n && t.scrollIntoViewNode({
         node: n,
@@ -460,23 +460,23 @@ let U = e => {
           })
         }
       })
-    }, [E]),
+    }, [w]),
     D = l.useCallback(() => new Promise(e => {
-      let t = E.current;
+      let t = w.current;
       if (null == t) return e();
       t.scrollToTop({
         callback: () => requestAnimationFrame(() => e())
       })
-    }), [E]),
+    }), [w]),
     R = l.useCallback(() => new Promise(e => {
-      let t = E.current;
+      let t = w.current;
       if (null == t) return e();
       t.scrollToBottom({
         callback() {
           requestAnimationFrame(() => setTimeout(e, 100))
         }
       })
-    }), [E]),
+    }), [w]),
     k = (0, v.Dt)(),
     U = (0, c.ZP)({
       id: "private-channels-".concat(k),
@@ -493,7 +493,7 @@ let U = e => {
       isVisualRefreshEnabled: n,
       channels: b,
       privateChannelIds: y,
-      listRef: E,
+      listRef: w,
       theme: a,
       version: o
     }, e), {

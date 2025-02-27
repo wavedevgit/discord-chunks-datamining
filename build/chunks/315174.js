@@ -153,8 +153,8 @@ let _ = i.memo(function(e) {
     guild: S,
     guildBanner: I,
     animationOverlayHeight: Z,
-    children: w,
-    headerClassName: E,
+    children: E,
+    headerClassName: w,
     communityInfoVisible: T,
     hasSubheader: A
   } = e, D = S.hasFeature(g.oNc.ANIMATED_BANNER), R = (0, d.Z)(S), L = !R && S.hasCommunityInfoSubheader(), M = !R && T, k = (0, h.xR)(I) && D && !x, [G, U] = i.useState(!1), B = i.useRef(), W = i.useRef(null), V = i.useRef(), F = p.QK.getSetting();
@@ -195,7 +195,7 @@ let _ = i.memo(function(e) {
           onContextMenu: _,
           onClick: a,
           children: [(0, r.jsxs)("header", {
-            className: o()(y.header, E, {
+            className: o()(y.header, w, {
               [y.themedHeaderMobile]: s.tq
             }),
             children: [(0, r.jsxs)("div", {
@@ -223,7 +223,7 @@ let _ = i.memo(function(e) {
                 })
               }), (0, r.jsx)("div", {
                 className: y.headerChildren,
-                children: w
+                children: E
               })]
             }), L && (0, r.jsx)(O, {
               guild: S,

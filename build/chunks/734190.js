@@ -30,7 +30,7 @@ var r = n(200651),
   I = n(81503),
   Z = n(366772);
 
-function w(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function w(e) {
   return e
 }
 
-function E(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -77,7 +77,7 @@ function T(e) {
   }, {
     density: a
   } = (0, c.TCT)();
-  return "cozy" === a ? (0, r.jsxs)("svg", E(w({}, l), {
+  return "cozy" === a ? (0, r.jsxs)("svg", w(E({}, l), {
     width: "10",
     height: "23",
     viewBox: "0 0 10 23",
@@ -90,7 +90,7 @@ function T(e) {
       d: "M6 21H5v2H6V21Zm4 2s1 0 1-1-1-1-1-1v2ZM6 23h4V21H6v2Z",
       fill: "currentColor"
     })]
-  })) : (0, r.jsxs)("svg", E(w({}, l), {
+  })) : (0, r.jsxs)("svg", w(E({}, l), {
     width: "10",
     height: "19",
     viewBox: "0 0 10 19",
@@ -152,7 +152,7 @@ let D = i.memo(function(e) {
       let {
         default: e
       } = await n.e("40157").then(n.bind(n, 422200));
-      return t => (0, r.jsx)(e, E(w({}, t), {
+      return t => (0, r.jsx)(e, w(E({}, t), {
         channel: i
       }))
     })
@@ -212,7 +212,7 @@ let D = i.memo(function(e) {
         onContextMenu: F,
         children: [!k || B || l ? null : (0, r.jsx)("div", {
           className: o()(I.unread, I.unreadImportant)
-        }), (0, r.jsx)(c.P3F, E(w({}, q), {
+        }), (0, r.jsx)(c.P3F, w(E({}, q), {
           innerRef: Q,
           className: I.link,
           onClick: W,

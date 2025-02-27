@@ -96,12 +96,12 @@ function P(e) {
       animate: o
     }, e))
   }));
-  let w = {
+  let E = {
     backgroundColor: u && m ? d.TVs.colors.BG_MOD_SUBTLE.css : (0, s.br)(g, .4)
   };
   return (0, r.jsxs)("div", {
     "aria-hidden": !0,
-    style: c ? void 0 : w,
+    style: c ? void 0 : E,
     className: O.folderIconWrapper,
     children: [t, n]
   })
@@ -142,10 +142,10 @@ function N(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e.treeItemProps, ["onFocus"]), [w, E] = i.useState(!1), T = i.useCallback(() => {
-    c || E(!0), null == N || N(!0)
+  }(e.treeItemProps, ["onFocus"]), [E, w] = i.useState(!1), T = i.useCallback(() => {
+    c || w(!0), null == N || N(!0)
   }, [c, N]), A = i.useCallback(() => {
-    c || E(!1), null == N || N(!1)
+    c || w(!1), null == N || N(!1)
   }, [c, N]), D = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), L = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, M = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
   return (0, r.jsx)(d.aRk, {
     isFolder: !0,
@@ -178,7 +178,7 @@ function N(e) {
       return e
     }({
       className: o()(O.folder, {
-        [O.hover]: w
+        [O.hover]: E
       }),
       onClick: C,
       onContextMenu: x,
@@ -202,7 +202,7 @@ function N(e) {
         children: _
       }) : (0, r.jsx)(P, {
         folderNode: l,
-        hovered: w,
+        hovered: E,
         expanded: s
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

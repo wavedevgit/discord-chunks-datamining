@@ -1,7 +1,7 @@
 /** Chunk was on 8655 **/
 n.d(t, {
-  O: () => A,
-  U: () => C.Un
+  O: () => I,
+  U: () => O.Un
 }), n(653041), n(571269), n(298267), n(266796), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -14,212 +14,192 @@ var r = n(200651),
   u = n(906732),
   p = n(783097),
   m = n(606192),
-  f = n(213459),
-  h = n(812236),
-  g = n(132871),
-  _ = n(147890),
-  b = n(706454),
-  v = n(592125),
-  y = n(496675),
-  x = n(944486),
-  O = n(914010),
-  E = n(768581),
-  j = n(135431),
-  N = n(758199),
-  C = n(914498),
-  I = n(172109),
-  S = n(981631),
-  T = n(388032),
-  P = n(405796);
+  f = n(812236),
+  h = n(706454),
+  g = n(81063),
+  _ = n(768581),
+  b = n(135431),
+  v = n(850240),
+  y = n(374211),
+  x = n(758199),
+  O = n(914498),
+  E = n(172109),
+  j = n(208444),
+  N = n(388032),
+  C = n(405796);
 
-function A(e) {
+function I(e) {
   let {
     app: t,
     embedUrl: n,
-    linkType: l,
-    activityCustomId: b,
-    activityReferrerId: P
+    linkId: a,
+    linkType: o,
+    activityCustomId: l,
+    activityReferrerId: h
   } = e, {
-    name: A,
-    bot: k,
-    isDiscoverable: R
-  } = t = (0, I.O)(t), L = null == k ? void 0 : k.id, D = (0, j.Eb)({
-    customInstallUrl: t.customInstallUrl,
-    installParams: t.installParams,
-    integrationTypesConfig: t.integrationTypesConfig
-  }), M = D && null != t.integrationTypesConfig && a.Y.GUILD_INSTALL in t.integrationTypesConfig, W = D && null != t.integrationTypesConfig && a.Y.USER_INSTALL in t.integrationTypesConfig, F = (0, o.e7)([O.Z], () => {
-    var e;
-    return null !== (e = O.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }), U = (0, f.PL)(!0, !1), B = (0, f.LD)(F, !1), G = (0, j.TK)(t.id, U), H = (0, j.TK)(t.id, B), V = (0, p.ye)(t), z = E.ZP.getApplicationIconURL({
+    name: b,
+    bot: C
+  } = t = (0, E.O)(t), I = null == C ? void 0 : C.id, P = (0, p.ye)(t), A = _.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
-    bot: k
+    bot: C
   }), {
-    url: K
+    url: w
   } = (0, c.Z)({
-    applicationId: V ? t.id : void 0,
+    applicationId: P ? t.id : void 0,
     size: 600,
     names: ["embedded_cover"]
   }), {
-    staticBannerSrc: Y,
-    videoBannerSrc: X,
-    bannerAspectRatio: q
+    staticBannerSrc: Z,
+    videoBannerSrc: k,
+    bannerAspectRatio: R
   } = i.useMemo(() => {
     let e, n;
-    let r = N.u.BOT;
-    if (null != k) {
+    let r = x.u.BOT;
+    if (null != C) {
       let {
         banner: t
-      } = k;
-      e = (0, E.aN)({
-        id: k.id,
+      } = C;
+      e = (0, _.aN)({
+        id: C.id,
         banner: t,
         size: 512,
         canAnimate: !1
-      }), (0, E.xR)(t) && null == K && (n = (0, E.aN)({
-        id: k.id,
+      }), (0, _.xR)(t) && null == w && (n = (0, _.aN)({
+        id: C.id,
         banner: t,
         size: 512,
         canAnimate: !0
       }))
     }
-    if (V) {
+    if (P) {
       let i = (0, p.yJ)(t);
-      null != K && (e = K, r = N.u.ACTIVITY);
+      null != w && (e = w, r = x.u.ACTIVITY);
       let a = null == i ? void 0 : i.activity_preview_video_asset_id;
-      null != a && (n = (0, s.Z)(t.id, a), r = N.u.ACTIVITY)
+      null != a && (n = (0, s.Z)(t.id, a), r = x.u.ACTIVITY)
     }
     return {
       staticBannerSrc: e,
       videoBannerSrc: n,
       bannerAspectRatio: r
     }
-  }, [K, k, V, t]), {
-    analyticsLocations: Q
-  } = (0, u.ZP)(d.Z.APP_MESSAGE_EMBED), J = i.useCallback(e => {
-    (0, C.KX)(t.id, l, e, P, b)
-  }, [b, P, t.id, l]), $ = i.useCallback(() => {
-    (0, C.GF)(t.id, l, P, b)
-  }, [b, P, t.id, l]), ee = i.useCallback(() => {
-    (0, C.Yu)(t.id, l)
-  }, [t.id, l]), et = (0, o.e7)([v.Z, y.Z, x.Z], () => {
-    let e = v.Z.getChannel(x.Z.getChannelId());
-    return null != e && (e.isPrivate() || y.Z.can(S.Plq.SEND_MESSAGES, e))
-  }, []), en = (G || H || W) && et, er = R || en, ei = i.useCallback(() => {
-    if (J(C.j_.VIEW), en) {
-      (0, p.X)(t.id);
-      return
-    }(0, _.dx)({
-      applicationId: t.id,
-      entrypoint: {
-        name: g.n3.APPLICATION_DIRECTORY_PROFILE_EMBED
-      }
-    })
-  }, [t.id, en, J]), ea = i.useCallback(() => {
-    (0, j.LO)({
-      applicationId: t.id,
-      customInstallUrl: t.customInstallUrl,
-      installParams: t.installParams,
-      integrationTypesConfig: t.integrationTypesConfig,
-      guildId: F,
-      source: "app_message_embed"
-    }), J(C.j_.ADD_APP)
-  }, [t.customInstallUrl, t.id, t.installParams, t.integrationTypesConfig, F, J]), eo = (0, h.ms)({
+  }, [w, C, P, t]), {
+    analyticsLocations: L
+  } = (0, u.ZP)(d.Z.APP_MESSAGE_EMBED), D = i.useCallback(e => {
+    (0, O.KX)(t.id, o, e, h, l)
+  }, [l, h, t.id, o]), M = i.useCallback(() => {
+    (0, O.GF)(t.id, o, h, l)
+  }, [l, h, t.id, o]), W = i.useCallback(() => {
+    (0, O.Yu)(t.id, o)
+  }, [t.id, o]), F = (0, f.ms)({
     context: {
       type: "contextless"
     },
     applicationId: t.id,
-    botUserId: null == k ? void 0 : k.id
-  }), el = null != L && V && eo, es = i.useMemo(() => {
+    botUserId: null == C ? void 0 : C.id
+  }), U = null != I && P && F, B = (0, v._)(a), {
+    data: G,
+    error: H
+  } = (0, y.h)(t.id, B), V = (0, j.z)(t, D), z = i.useMemo(() => {
     let e = [];
-    return el && e.push({
-      label: T.NW.string(T.t.RscU7O),
-      onClick() {
-        (0, m.W)({
-          appId: t.id,
-          botId: L,
-          analyticsLocations: Q,
-          customId: b,
-          referrerId: P
-        }), J(C.j_.PLAY)
-      }
-    }), er ? e.push({
-      label: T.NW.string(T.t["HO/oXl"]),
-      onClick: ei
-    }) : D && e.push({
-      label: T.NW.string(T.t.NgXl3N),
-      onClick: ea
-    }), e
-  }, [b, P, Q, t.id, L, el, er, ea, ei, D, J]);
-  return (0, r.jsx)(N.W, {
-    title: A,
-    staticBannerSrc: Y,
-    videoBannerSrc: X,
-    bannerAspectRatio: q,
-    iconSrc: z,
+    if (U) {
+      let n = (null == G ? void 0 : G.primary_cta) != null ? G.primary_cta : N.NW.string(N.t.RscU7O),
+        r = null != l ? l : null == G ? void 0 : G.custom_id,
+        i = null != h ? h : null == G ? void 0 : G.referrer_id;
+      e.push({
+        label: n,
+        onClick() {
+          (0, m.W)({
+            appId: t.id,
+            botId: I,
+            analyticsLocations: L,
+            customId: r,
+            referrerId: i
+          }), D(O.j_.PLAY)
+        }
+      })
+    }
+    return null != V && e.push(V), e
+  }, [l, h, L, t.id, I, U, null == G ? void 0 : G.custom_id, null == G ? void 0 : G.primary_cta, null == G ? void 0 : G.referrer_id, D, V]), K = P ? (0, r.jsx)(T, {
+    app: t
+  }) : (0, r.jsx)(S, {
+    app: t
+  });
+  return null != a && null == H ? null == G ? null : (0, r.jsx)(x.W, {
+    header: G.title,
+    title: b,
+    staticBannerSrc: (0, g.getAssetImage)(t.id, G.asset_id, 512),
+    iconSrc: A,
     embedUrl: n,
-    info: V ? (0, r.jsx)(Z, {
-      app: t
-    }) : (0, r.jsx)(w, {
-      app: t,
-      isGuildInstallable: M
-    }),
-    actions: es,
-    onView: $,
-    onLinkCopied: ee
+    info: K,
+    actions: z
+  }) : (0, r.jsx)(x.W, {
+    title: b,
+    staticBannerSrc: Z,
+    videoBannerSrc: k,
+    bannerAspectRatio: R,
+    iconSrc: A,
+    embedUrl: n,
+    info: K,
+    actions: z,
+    onView: M,
+    onLinkCopied: W
   })
 }
 
-function w(e) {
-  var t, n, a;
+function S(e) {
+  var t, n, s;
   let {
-    app: s,
-    isGuildInstallable: c
-  } = e, d = (0, o.e7)([b.default], () => b.default.locale, []), u = i.useMemo(() => {
+    app: c
+  } = e, d = (0, b.Eb)({
+    customInstallUrl: c.customInstallUrl,
+    installParams: c.installParams,
+    integrationTypesConfig: c.integrationTypesConfig
+  }) && null != c.integrationTypesConfig && a.Y.GUILD_INSTALL in c.integrationTypesConfig, u = (0, o.e7)([h.default], () => h.default.locale, []), p = i.useMemo(() => {
     var e, t;
-    if (!c) return null;
-    let n = new Intl.NumberFormat(d, {
+    if (!d) return null;
+    let n = new Intl.NumberFormat(u, {
         notation: "compact",
         compactDisplay: "short"
       }),
-      r = null !== (t = null === (e = s.directoryEntry) || void 0 === e ? void 0 : e.guild_count) && void 0 !== t ? t : 0;
-    return 0 === r ? null : T.NW.format(T.t["6IW6Wl"], {
+      r = null !== (t = null === (e = c.directoryEntry) || void 0 === e ? void 0 : e.guild_count) && void 0 !== t ? t : 0;
+    return 0 === r ? null : N.NW.format(N.t["6IW6Wl"], {
       guildCount: n.format(r)
     })
-  }, [null === (t = s.directoryEntry) || void 0 === t ? void 0 : t.guild_count, c, d]), p = null === (a = s.categories) || void 0 === a ? void 0 : null === (n = a.at(0)) || void 0 === n ? void 0 : n.name;
+  }, [null === (t = c.directoryEntry) || void 0 === t ? void 0 : t.guild_count, d, u]), m = null === (s = c.categories) || void 0 === s ? void 0 : null === (n = s.at(0)) || void 0 === n ? void 0 : n.name;
   return (0, r.jsxs)(r.Fragment, {
-    children: [null != p && (0, r.jsx)(l.Text, {
+    children: [null != m && (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
-      className: P.description,
+      className: C.description,
       color: "none",
-      children: p
-    }), null != u && (0, r.jsxs)(l.Text, {
+      children: m
+    }), null != p && (0, r.jsxs)(l.Text, {
       variant: "text-xs/normal",
-      className: P.tagline,
+      className: C.tagline,
       color: "none",
       lineClamp: 1,
       children: [(0, r.jsx)(l.Jmo, {
         size: "xxs",
         color: "currentColor"
-      }), u]
+      }), p]
     })]
   })
 }
 
-function Z(e) {
+function T(e) {
   let {
     app: t
-  } = e, n = [null != t.maxParticipants ? T.NW.format(T.t.z8EAJS, {
+  } = e, n = [null != t.maxParticipants ? N.NW.format(N.t.z8EAJS, {
     count: t.maxParticipants
-  }) : T.NW.string(T.t.RjceQU), ...t.tags];
+  }) : N.NW.string(N.t.RjceQU), ...t.tags];
   return (0, r.jsx)(r.Fragment, {
     children: n.length > 0 && (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
-      className: P.description,
+      className: C.description,
       color: "none",
       lineClamp: 1,
       children: n.map((e, t) => (0, r.jsx)("span", {
-        className: P.tag,
+        className: C.tag,
         children: e
       }, t))
     })
