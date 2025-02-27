@@ -25,8 +25,8 @@ var r = n(200651),
   C = n(543432),
   x = n(981631),
   P = n(388032),
-  S = n(931857),
-  N = n(513538);
+  N = n(931857),
+  S = n(513538);
 
 function I(e) {
   var t, l;
@@ -55,11 +55,11 @@ function I(e) {
   let j = (0, u.ZP)(o),
     _ = Array.from((0, u.uF)(j).values()),
     C = null !== (t = null == g ? void 0 : g.filter(y.lm)) && void 0 !== t ? t : [],
-    N = e => t => [x.IIU.PLAYING, x.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === x.IIU.LISTENING,
+    S = e => t => [x.IIU.PLAYING, x.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === x.IIU.LISTENING,
     I = (0, a.e7)([m.Z], () => {
       let e = {};
       return C.forEach(t => {
-        let n = m.Z.findActivity(t.user.id, N(t));
+        let n = m.Z.findActivity(t.user.id, S(t));
         if (null != n && !(0, p.Z)(n)) {
           var r, i, l, o;
           let a = "".concat(null !== (i = n.application_id) && void 0 !== i ? i : "", ":").concat(null !== (l = null === (r = n.party) || void 0 === r ? void 0 : r.id) && void 0 !== l ? l : t.user.id),
@@ -72,13 +72,13 @@ function I(e) {
       }), Object.values(e)
     }, [C], a.pF);
   return I.length + _.length === 0 ? null : (0, r.jsxs)(s.Ttm, {
-    className: S.container,
+    className: N.container,
     children: [(0, r.jsx)(Z, {
       channel: o,
       isChannelSelected: b,
       voiceStatesCount: null !== (l = null == g ? void 0 : g.length) && void 0 !== l ? l : 0
     }), (0, r.jsx)("div", {
-      className: S.headerDivider
+      className: N.headerDivider
     }), _.map((e, t) => {
       var n;
       return (0, r.jsx)(O.Z, {
@@ -100,9 +100,9 @@ function I(e) {
       }, t)
     }), v && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: S.headerDivider
+        className: N.headerDivider
       }), (0, r.jsx)("div", {
-        className: S.settingNudgeText,
+        className: N.settingNudgeText,
         children: (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           tag: "span",
@@ -165,7 +165,7 @@ function Z(e) {
     selected: n
   }), u = (0, a.e7)([f.Z], () => f.Z.getGuild(t.guild_id));
   return null == (0, h.KS)(t, u) ? null : (0, r.jsxs)("div", {
-    className: o()(S.popoutHeaderContainer, N.popoutHeaderContainer),
+    className: o()(N.popoutHeaderContainer, S.popoutHeaderContainer),
     children: [(0, r.jsx)(j.Z, {
       channel: t
     }), c ? (0, r.jsx)(_.Z, {

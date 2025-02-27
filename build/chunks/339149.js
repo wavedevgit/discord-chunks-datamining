@@ -97,7 +97,7 @@ let P = {
     })
   }
 };
-class S extends l.PureComponent {
+class N extends l.PureComponent {
   renderText() {
     let {
       state: e,
@@ -145,7 +145,7 @@ class S extends l.PureComponent {
     })
   }
 }
-class N extends(r = l.PureComponent) {
+class S extends(r = l.PureComponent) {
   componentWillAppear(e) {
     this.state.animationScale.setValue(1), e()
   }
@@ -167,7 +167,7 @@ class N extends(r = l.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? j.NW.string(j.t.cw57am) : (0, i.jsx)(S, {
+    return null == e || null == t ? j.NW.string(j.t.cw57am) : (0, i.jsx)(N, {
       application: e,
       state: t,
       isPaused: n
@@ -238,7 +238,7 @@ function I(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-C(N, "defaultProps", {
+C(S, "defaultProps", {
   strokeSize: p._3P.StrokeSizes.MEDIUM
 });
 let Z = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
@@ -274,6 +274,6 @@ let Z = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(N, x({}, n)) : null
-  }) : (0, i.jsx)(N, x({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(S, x({}, n)) : null
+  }) : (0, i.jsx)(S, x({}, n))
 })

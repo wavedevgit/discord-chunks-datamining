@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(653041);
 var r = n(979554),
   i = n(778787),
@@ -63,32 +63,33 @@ function d(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class f extends o.Z {
+let f = e => e === r.Z.VARIANTS_GROUP || e === r.Z.EXTERNAL_SKU;
+class _ extends o.Z {
   static fromServer(e) {
     var {
       products: t,
       logo: n,
-      hero_ranking: o,
-      pdp_bg: a,
-      mobile_bg: l,
-      success_modal_bg: d,
-      mobile_banner: _,
+      hero_ranking: r,
+      pdp_bg: o,
+      mobile_bg: a,
+      success_modal_bg: l,
+      mobile_banner: d,
       hero_banner: p,
       hero_banner_asset: h,
       featured_block: g,
       hero_logo: m
     } = e, E = u(e, ["products", "logo", "hero_ranking", "pdp_bg", "mobile_bg", "success_modal_bg", "mobile_banner", "hero_banner", "hero_banner_asset", "featured_block", "hero_logo"]);
-    return new f(c(s({}, super.fromServer(E)), {
+    return new _(c(s({}, super.fromServer(E)), {
       products: t.reduce((e, t) => {
         let n = i.Z.fromServer(t);
-        return 0 === (n.type !== r.Z.VARIANTS_GROUP && n.items.length) || e.push(n), e
+        return (f(n.type) || 0 !== n.items.length) && e.push(n), e
       }, []),
       logo: n,
-      heroRanking: o,
-      pdpBg: a,
-      mobileBg: l,
-      successModalBg: d,
-      mobileBanner: _,
+      heroRanking: r,
+      pdpBg: o,
+      mobileBg: a,
+      successModalBg: l,
+      mobileBanner: d,
       heroBanner: p,
       heroBannerAsset: h,
       featuredBlock: g,

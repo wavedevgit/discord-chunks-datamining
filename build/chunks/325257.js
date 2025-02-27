@@ -1,6 +1,6 @@
 /** Chunk was on 86029 **/
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -25,8 +25,8 @@ var r = n(200651),
   C = n(727258),
   x = n(276952),
   P = n(249792),
-  S = n(40153),
-  N = n(593618),
+  N = n(40153),
+  S = n(593618),
   I = n(252686),
   Z = n(682662),
   w = n(674552),
@@ -73,7 +73,7 @@ let L = {
   }
 };
 
-function k(e, t) {
+function M(e, t) {
   (0, f.jW)(e, async () => {
     let {
       default: e
@@ -83,8 +83,8 @@ function k(e, t) {
     }))
   })
 }
-let M = i.memo(function(e) {
-  var t, n, l, f, M;
+let k = i.memo(function(e) {
+  var t, n, l, f, k;
   let {
     guildNode: G,
     setRef: U,
@@ -99,7 +99,7 @@ let M = i.memo(function(e) {
     unavailable: Q = !1,
     badge: K = 0,
     isMentionLowImportance: J,
-    contextMenu: X = k,
+    contextMenu: X = M,
     draggable: $ = !1,
     sorting: ee = !1,
     preloadOnClick: et = !0,
@@ -112,7 +112,7 @@ let M = i.memo(function(e) {
   null == es && K > 0 ? es = null !== (l = (0, w.Ne)(K, J ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) && void 0 !== l ? l : void 0 : null == es && null != en && (es = null !== (f = (0, w.jt)({
     guildJoinRequestStatus: en
   })) && void 0 !== f ? f : void 0);
-  let ec = null !== (M = e.lowerBadgeSize) && void 0 !== M ? M : {
+  let ec = null !== (k = e.lowerBadgeSize) && void 0 !== k ? k : {
       width: (0, p.OVM)(K)
     },
     [{
@@ -164,14 +164,14 @@ let M = i.memo(function(e) {
         null === (t = document.querySelector("[aria-owns=folder-items-".concat(el, "]"))) || void 0 === t || t.focus()
       }
     }, [el]),
-    eS = i.useCallback(e => {
+    eN = i.useCallback(e => {
       if (e) {
         eO.delay();
         return
       }
       eO.cancel(), ev(!1)
     }, [eO]),
-    eN = i.useCallback(e => {
+    eS = i.useCallback(e => {
       null == U || U(ei, e)
     }, [ei, U]),
     eI = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE);
@@ -207,7 +207,7 @@ let M = i.memo(function(e) {
     }, ep), {
       role: "treeitem"
     })),
-    ew = eu ? (0, r.jsx)(S.OG, {
+    ew = eu ? (0, r.jsx)(N.OG, {
       children: (0, r.jsx)(I.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? ed : void 0,
@@ -230,21 +230,21 @@ let M = i.memo(function(e) {
       })
     });
   return (0, r.jsxs)(Z.H, {
-    ref: eN,
+    ref: eS,
     children: [(0, r.jsx)(x.Z, {
       hovered: !eu && eg,
       selected: !eu && z,
       unread: !eu && Y,
       className: A.pill
-    }), (0, r.jsx)(N.Z, {
+    }), (0, r.jsx)(S.Z, {
       guild: F,
       disabled: ee,
       isDragging: eu,
       children: ew
-    }), $ ? (0, r.jsx)(S.ZP, {
+    }), $ ? (0, r.jsx)(N.ZP, {
       name: F.name,
       targetNode: G,
-      onDragOverChanged: eS
+      onDragOverChanged: eN
     }) : null]
   })
 })

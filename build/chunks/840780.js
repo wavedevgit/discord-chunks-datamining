@@ -25,8 +25,8 @@ var r = n(200651),
   C = n(835473),
   x = n(413523),
   P = n(933557),
-  S = n(194082),
-  N = n(550532),
+  N = n(194082),
+  S = n(550532),
   I = n(436774),
   Z = n(605236),
   w = n(243778),
@@ -36,8 +36,8 @@ var r = n(200651),
   D = n(102172),
   R = n(74299),
   L = n(914923),
-  k = n(165393),
-  M = n(989941),
+  M = n(165393),
+  k = n(989941),
   G = n(690221),
   U = n(231664),
   B = n(759198),
@@ -157,12 +157,12 @@ class eb extends i.PureComponent {
     } = (0, L.Z)(t);
     return (0, r.jsxs)("div", {
       className: ep.gameWrapper,
-      children: [e ? (0, r.jsx)(k.Z, {
+      children: [e ? (0, r.jsx)(M.Z, {
         title: l,
         icon: null == t ? void 0 : t.sourceIcon
-      }) : (0, r.jsx)(S.ZP, {
-        look: S.ZP.Looks.GRAY,
-        size: S.ZP.Sizes.SMALL,
+      }) : (0, r.jsx)(N.ZP, {
+        look: N.ZP.Looks.GRAY,
+        size: N.ZP.Sizes.SMALL,
         className: ep.liveIndicator
       }), (0, r.jsxs)("div", {
         className: ep.info,
@@ -324,7 +324,7 @@ let ey = (0, m.Z)(function(e) {
       return i
     }(e, ["guildId"]);
   let o = (0, c.e7)([H.default], () => H.default.getId()),
-    a = (0, c.e7)([E.ZP, et.Z], () => (0, M.Z)(E.ZP, et.Z)),
+    a = (0, c.e7)([E.ZP, et.Z], () => (0, k.Z)(E.ZP, et.Z)),
     s = (0, c.e7)([$.Z, z.Z], () => z.Z.getChannel($.Z.getVoiceChannelId())),
     d = (0, c.e7)([j.ZP], () => j.ZP.getConnectedActivityChannelId()),
     p = (0, c.e7)([z.Z], () => z.Z.getChannel(d)),
@@ -339,11 +339,11 @@ let ey = (0, m.Z)(function(e) {
       autoTrackExposure: !1
     }),
     x = (0, c.e7)([q.Z, K.Z, Y.ZP], () => null != s ? D.JL(s, q.Z, K.Z, !1) : !!_ || null != n && D.h_(Y.ZP.getChannels(n), q.Z, K.Z).length > 0),
-    [S] = (0, C.Z)([null !== (t = null != g && null != g.id ? g.id : null != a && null != a.id ? a.id : null != O ? O.applicationId : void 0) && void 0 !== t ? t : ""]),
-    I = (0, c.e7)([N.Z], () => N.Z.getFakeGameData()),
+    [N] = (0, C.Z)([null !== (t = null != g && null != g.id ? g.id : null != a && null != a.id ? a.id : null != O ? O.applicationId : void 0) && void 0 !== t ? t : ""]),
+    I = (0, c.e7)([S.Z], () => S.Z.getFakeGameData()),
     T = (0, c.e7)([j.ZP], () => j.ZP.getCurrentEmbeddedActivity()),
     L = (0, v.Z0)() && null != T && (0, y.R)(),
-    k = (0, c.e7)([Q.Z], () => (0, R.Z)(Q.Z) && (0, er.isWindows)()),
+    M = (0, c.e7)([Q.Z], () => (0, R.Z)(Q.Z) && (0, er.isWindows)()),
     G = (0, c.e7)([J.Z], () => null != o ? J.Z.findActivity(o, e => e.type === es.IIU.PLAYING) : null),
     B = null != f && f.ownerId === o && f.state !== es.jm8.ENDED,
     W = (0, c.e7)([ee.default, X.Z], () => null != p ? (0, P.F6)(p, ee.default, X.Z) : void 0),
@@ -365,12 +365,12 @@ let ey = (0, m.Z)(function(e) {
     }();
   return (0, r.jsx)(eb, eg(ef({}, l), {
     guildId: n,
-    canGoLive: k || L || void 0 !== I,
+    canGoLive: M || L || void 0 !== I,
     activity: G,
     embeddedActivity: O,
     userId: o,
     runningGame: null != I ? I : a,
-    application: S,
+    application: N,
     useReducedMotion: m,
     isStreaming: B,
     channel: p,

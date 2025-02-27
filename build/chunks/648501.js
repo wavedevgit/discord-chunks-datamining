@@ -1,6 +1,6 @@
 /** Chunk was on 86029 **/
 n.d(t, {
-  Z: () => N
+  Z: () => S
 });
 var r = n(200651);
 n(192379);
@@ -26,13 +26,13 @@ var i = n(442837),
   C = n(981631),
   x = n(490897),
   P = n(388032),
-  S = n(160031);
+  N = n(160031);
 
-function N(e) {
+function S(e) {
   var t;
   let {
     channel: n,
-    isChannelSelected: N,
+    isChannelSelected: S,
     isChannelCollapsed: I,
     voiceStates: Z,
     enableConnectedUserLimit: w,
@@ -42,18 +42,18 @@ function N(e) {
     isNewChannel: D,
     muted: R,
     resolvedUnreadSetting: L
-  } = e, k = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), M = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), G = (0, a.ZP)(n), U = (0, i.e7)([h.Z], () => !h.Z.can(C.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), W = (0, u.PK)(n.id) && n.isGuildStageVoice(), V = (0, v.ZP)({
+  } = e, M = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), k = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), G = (0, a.ZP)(n), U = (0, i.e7)([h.Z], () => !h.Z.can(C.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), W = (0, u.PK)(n.id) && n.isGuildStageVoice(), V = (0, v.ZP)({
     channel: n,
     locked: U,
     video: B || W,
-    selected: N
+    selected: S
   }), F = (0, i.e7)([d.Z], () => d.Z.getNewThreadCount(n.guild_id, n.id)), H = (0, s.n2)(n.guild_id, n.id), z = (0, i.e7)([p.Z], () => {
     var e, t;
     return null !== (t = null === (e = p.Z.getGuild(n.guild_id)) || void 0 === e ? void 0 : e.hasFeature(C.oNc.COMMUNITY)) && void 0 !== t && t
   });
-  if ((0, y.Z)(k)) return (0, r.jsx)(_.Z, {
-    mentionsCount: k,
-    isMentionLowImportance: M
+  if ((0, y.Z)(M)) return (0, r.jsx)(_.Z, {
+    mentionsCount: M,
+    isMentionLowImportance: k
   });
   if ((0, c.O)(T)) return (0, r.jsx)(c.Z, {
     locked: A
@@ -61,7 +61,7 @@ function N(e) {
   if (D) return (0, r.jsx)(o.IGR, {
     text: P.NW.string(P.t.y2b7CA),
     color: l.Z.unsafe_rawColors.BRAND_260.css,
-    className: S.newChannel
+    className: N.newChannel
   });
   if (!R && L === x.i.ALL_MESSAGES && n.isForumLikeChannel() && null != F && F > 0) return (0, r.jsx)(o.Text, {
     variant: "text-xs/semibold",

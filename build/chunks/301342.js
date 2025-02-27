@@ -48,7 +48,7 @@ function P(e) {
   return e
 }
 
-function S(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,7 +61,7 @@ function S(e, t) {
   }), e
 }
 
-function N(e) {
+function S(e) {
   e.stopPropagation()
 }
 let I = i.memo(function(e) {
@@ -83,28 +83,28 @@ let I = i.memo(function(e) {
     let L = i.useCallback(() => {
         D ? (0, u.mJ)(l.id) : (0, u.c4)(l.id)
       }, [l.id, D]),
-      k = i.useCallback(e => {
+      M = i.useCallback(e => {
         if ("null" !== l.id) {
           let t = b.Z.getGuild(l.getGuildId());
           null != t && (0, d.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("8965"), n.e("14280")]).then(n.bind(n, 139035));
-            return n => (0, r.jsx)(e, S(P({}, n), {
+            return n => (0, r.jsx)(e, N(P({}, n), {
               channel: l,
               guild: t
             }))
           })
         }
       }, [l]),
-      M = i.useCallback(() => {
+      k = i.useCallback(() => {
         let e = l.type === _.d4z.GUILD_CATEGORY ? null : l.type,
           t = l.getGuildId();
         null != t && (0, c.ZDy)(async () => {
           let {
             default: i
           } = await Promise.all([n.e("45094"), n.e("1344")]).then(n.bind(n, 218613));
-          return n => (0, r.jsx)(i, S(P({}, n), {
+          return n => (0, r.jsx)(i, N(P({}, n), {
             channelType: e,
             guildId: t,
             categoryId: "null" !== l.id ? l.id : null
@@ -150,8 +150,8 @@ let I = i.memo(function(e) {
               [x.muted]: A,
               [x.clickable]: !0
             }),
-            onContextMenu: k,
-            children: [(0, r.jsxs)(c.P3F, S(P({
+            onContextMenu: M,
+            children: [(0, r.jsxs)(c.P3F, N(P({
               innerRef: V,
               className: x.mainContent,
               tabIndex: B
@@ -179,7 +179,7 @@ let I = i.memo(function(e) {
                 className: x.icon
               }) : null]
             })), (0, r.jsx)("div", {
-              onClick: N,
+              onClick: S,
               className: x.children,
               children: R && !j ? (0, r.jsx)(c.ua7, {
                 text: C.NW.string(C.t["fUYU+v"]),
@@ -193,7 +193,7 @@ let I = i.memo(function(e) {
                     look: c.zxk.Looks.BLANK,
                     size: c.zxk.Sizes.NONE,
                     className: o()(x.addButton, x.forceVisible),
-                    onClick: M,
+                    onClick: k,
                     onMouseEnter: t,
                     onMouseLeave: n,
                     tabIndex: B,

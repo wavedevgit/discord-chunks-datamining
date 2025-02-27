@@ -6,18 +6,18 @@ r.d(t, {
 var n = r(200651),
   l = r(786628),
   i = r(755007),
-  o = r(231338),
-  a = r(729068);
+  a = r(231338),
+  o = r(729068);
 
 function s(e) {
   let {
     price: t,
     isPremiumUser: r,
-    showInsufficientOrbBalanceTooltip: a
+    showInsufficientOrbBalanceTooltip: o
   } = e;
-  return t.currency === o.pK.DISCORD_ORB ? (0, n.jsx)(i.Z, {
+  return t.currency === a.pK.DISCORD_ORB ? (0, n.jsx)(i.Z, {
     orbAmount: t.amount,
-    showInsufficientOrbBalanceTooltip: a
+    showInsufficientOrbBalanceTooltip: o
   }) : (0, n.jsx)(l.Z, {
     price: t,
     isPremiumUser: r
@@ -31,7 +31,7 @@ function c(e) {
     showInsufficientOrbBalanceTooltip: l = !1
   } = e;
   return (0, n.jsx)("div", {
-    className: a.priceLine,
+    className: o.priceLine,
     children: t.map((e, t) => (0, n.jsx)(s, {
       price: e,
       isPremiumUser: r,

@@ -25,8 +25,8 @@ var r = n(200651),
   C = n(207055),
   x = n(981631),
   P = n(124368),
-  S = n(388032),
-  N = n(436804),
+  N = n(388032),
+  S = n(436804),
   I = n(81503),
   Z = n(366772);
 
@@ -134,8 +134,8 @@ let D = i.memo(function(e) {
     isSelectedVoice: Z,
     isLast: D,
     withGuildIcon: R
-  } = e, L = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(t), [t]), k = (0, s.e7)([y.Z], () => y.Z.hasVideo(t.id)), {
-    unread: M,
+  } = e, L = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(t), [t]), M = (0, s.e7)([y.Z], () => y.Z.hasVideo(t.id)), {
+    unread: k,
     mentionCount: G,
     isMentionLowImportance: U
   } = (0, s.cj)([b.ZP], () => ({
@@ -172,18 +172,18 @@ let D = i.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(z, ["role"]), Q = i.useRef(null), K = G > 0 ? S.NW.formatToPlainString(S.t["ZL7+Iy"], {
+  }(z, ["role"]), Q = i.useRef(null), K = G > 0 ? N.NW.formatToPlainString(N.t["ZL7+Iy"], {
     channelName: t.name,
     mentionCount: G
-  }) : M ? S.NW.formatToPlainString(S.t.YlVvmZ, {
+  }) : k ? N.NW.formatToPlainString(N.t.YlVvmZ, {
     channelName: t.name
-  }) : S.NW.formatToPlainString(S.t["0nZpiI"], {
+  }) : N.NW.formatToPlainString(N.t["0nZpiI"], {
     channelName: t.name
   }), J = (0, h.Q3)("GuildSidebarThreadListEntry") ? T : A;
   return (0, r.jsxs)("li", {
     role: Y,
-    className: o()(N.containerDefault, {
-      [N.selected]: l
+    className: o()(S.containerDefault, {
+      [S.selected]: l
     }),
     children: [(0, r.jsx)(J, {
       withGuildIcon: R
@@ -202,15 +202,15 @@ let D = i.memo(function(e) {
         right: 4
       },
       children: (0, r.jsxs)("div", {
-        className: o()(N.iconVisibility, I.wrapper, I.typeThread, {
+        className: o()(S.iconVisibility, I.wrapper, I.typeThread, {
           [I.modeSelected]: l,
           [I.modeMuted]: !l && B,
-          [I.modeUnreadImportant]: !B && !l && M,
+          [I.modeUnreadImportant]: !B && !l && k,
           [I.withGuildIcon]: R
         }),
         onMouseDown: V,
         onContextMenu: F,
-        children: [!M || B || l ? null : (0, r.jsx)("div", {
+        children: [!k || B || l ? null : (0, r.jsx)("div", {
           className: o()(I.unread, I.unreadImportant)
         }), (0, r.jsx)(c.P3F, E(w({}, q), {
           innerRef: Q,
@@ -230,7 +230,7 @@ let D = i.memo(function(e) {
               className: I.children,
               children: [H > 0 && t.userLimit > 0 ? (0, r.jsx)(j.Z, {
                 userCount: H,
-                video: k,
+                video: M,
                 channel: t
               }) : null, (0, O.Z)(G) ? (0, r.jsx)(_.Z, {
                 mentionsCount: G,

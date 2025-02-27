@@ -1,6 +1,6 @@
 /** Chunk was on 86029 **/
 n.d(t, {
-  B: () => S
+  B: () => N
 });
 var r = n(200651);
 n(192379);
@@ -53,7 +53,7 @@ function P(e, t) {
   return null == l ? void 0 : l.channel
 }
 
-function S(e) {
+function N(e) {
   return (0, i.G)(x, {
     drop(e, t) {
       let n;

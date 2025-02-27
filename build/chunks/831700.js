@@ -26,8 +26,8 @@ var i = n(120356),
   C = n(66999),
   x = n(554747),
   P = n(378844),
-  S = n(335353),
-  N = n(896835),
+  N = n(335353),
+  S = n(896835),
   I = n(359110),
   Z = n(155409),
   w = n(695346),
@@ -37,8 +37,8 @@ var i = n(120356),
   D = n(607744),
   R = n(496675),
   L = n(306680),
-  k = n(9156),
-  M = n(979651),
+  M = n(9156),
+  k = n(979651),
   G = n(934415),
   U = n(63063),
   B = n(98597),
@@ -101,7 +101,7 @@ class ee extends B.ZP {
     let {
       channel: e
     } = this.props;
-    return (0, G.rY)(e, M.Z, A.Z)
+    return (0, G.rY)(e, k.Z, A.Z)
   }
   getModeClass() {
     let {
@@ -171,7 +171,7 @@ class ee extends B.ZP {
         return (0, r.jsx)(s.P3F, {
           className: l()(K.iconItem, K.alwaysShown),
           onClick: () => {
-            (0, N.X)("VoiceChannel") ? (0, E.k)(e, "VoiceChannel") : window.open(U.Z.getArticleURL(Y.BhN.HD_STREAMING_POTION), "_blank")
+            (0, S.X)("VoiceChannel") ? (0, E.k)(e, "VoiceChannel") : window.open(U.Z.getArticleURL(Y.BhN.HD_STREAMING_POTION), "_blank")
           },
           "aria-label": Q.NW.string(Q.t.gpF6QU),
           onMouseEnter: n,
@@ -211,7 +211,7 @@ class ee extends B.ZP {
       isFavoriteSuggestion: x,
       withGuildIcon: P
     } = this.props, {
-      shouldShowActivities: N,
+      shouldShowActivities: S,
       shouldShowGuildVerificationPopout: I
     } = this.state, w = this.getVoiceStatesCount(), E = (0, r.jsxs)("li", {
       className: l()(this.getModeClass(), {
@@ -226,7 +226,7 @@ class ee extends B.ZP {
           renderPopout: this.renderPopout,
           spacing: 0,
           onRequestClose: this.closeGuildVerificationPopout,
-          shouldShow: N && !u && !d && !I || I,
+          shouldShow: S && !u && !d && !I || I,
           children: () => (0, r.jsx)(s.ua7, {
             text: this.getTooltipText(),
             children: s => {
@@ -248,7 +248,7 @@ class ee extends B.ZP {
                 }
                 return i
               }(s, ["onClick", "onContextMenu"]);
-              return (0, r.jsx)(S.Z, {
+              return (0, r.jsx)(N.Z, {
                 channel: e,
                 children: (0, r.jsxs)(V.Z, $(X({
                   className: K.iconVisibility,
@@ -457,7 +457,7 @@ function en(e) {
   } = e, u = (0, o.cj)([L.ZP], () => ({
     unread: L.ZP.hasUnread(n.id),
     mentionCount: L.ZP.getMentionCount(n.id)
-  })), d = (0, o.e7)([k.ZP], () => k.ZP.resolveUnreadSetting(n)), p = (0, o.cj)([T.Z, D.Z, R.Z], () => {
+  })), d = (0, o.e7)([M.ZP], () => M.ZP.resolveUnreadSetting(n)), p = (0, o.cj)([T.Z, D.Z, R.Z], () => {
     let e = T.Z.getChannel(n.parent_id),
       r = D.Z.getCheck(n.guild_id);
     return {
@@ -468,10 +468,10 @@ function en(e) {
       bypassLimit: R.Z.can(Y.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), f = (0, o.e7)([M.Z], () => M.Z.hasVideo(n.id)), g = (0, h.ZP)(n), m = (0, b.ZP)(n), y = (0, x.qY)(n.id), {
+  }), f = (0, o.e7)([k.Z], () => k.Z.hasVideo(n.id)), g = (0, h.ZP)(n), m = (0, b.ZP)(n), y = (0, x.qY)(n.id), {
     isSubscriptionGated: v,
     needSubscriptionToAccess: j
-  } = (0, C.Z)(n.id), _ = (0, O.Z)(), P = (0, o.e7)([k.ZP], () => k.ZP.isFavorite(t.id, n.id)), S = e.connected || (null == _ ? void 0 : _.channelId) === n.id, N = (0, W.Z)({
+  } = (0, C.Z)(n.id), _ = (0, O.Z)(), P = (0, o.e7)([M.ZP], () => M.ZP.isFavorite(t.id, n.id)), N = e.connected || (null == _ ? void 0 : _.channelId) === n.id, S = (0, W.Z)({
     channel: n,
     isChannelSelected: a,
     isChannelCollapsed: s,
@@ -480,7 +480,7 @@ function en(e) {
     needSubscriptionToAccess: j,
     enableConnectedUserLimit: !0,
     enableActivities: !0
-  }), I = S && null == N;
+  }), I = N && null == S;
   return (0, r.jsx)(et, $(X({
     channelName: m,
     embeddedApps: g,
@@ -490,10 +490,10 @@ function en(e) {
     isSubscriptionGated: v,
     needSubscriptionToAccess: j
   }, u, p, e), {
-    connected: S,
+    connected: N,
     isFavoriteSuggestion: l && !P,
     forceShowButtons: I,
-    channelInfo: N,
+    channelInfo: S,
     resolvedUnreadSetting: d
   }))
 }

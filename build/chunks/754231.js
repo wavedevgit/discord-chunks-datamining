@@ -1,6 +1,6 @@
 /** Chunk was on 86029 **/
 n.d(t, {
-  Z: () => S
+  Z: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -160,7 +160,7 @@ function P(e) {
   })
 }
 
-function S(e) {
+function N(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -172,16 +172,16 @@ function S(e) {
     onOpenSpotifyAlbum: g
   } = e, m = [];
   null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (m = u.map(e => e.user.id));
-  let S = (0, a.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
-    N = null != n || (0, c.Z)(t),
+  let N = (0, a.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
+    S = null != n || (0, c.Z)(t),
     I = i.useMemo(() => {
       let e = new Map;
-      return N && null != u && u.forEach(t => {
+      return S && null != u && u.forEach(t => {
         let n = t.member;
         null != n && e.set(t.user.id, n)
       }), e
-    }, [u, N]);
-  return N ? (0, r.jsxs)("div", {
+    }, [u, S]);
+  return S ? (0, r.jsxs)("div", {
     className: v.flexColumn,
     children: [(0, r.jsxs)("div", {
       className: v.flexRow,
@@ -205,7 +205,7 @@ function S(e) {
         }), m.length > 0 && (0, r.jsx)(d.Z, {
           className: v.usersSummary,
           guildId: o.guild_id,
-          users: S,
+          users: N,
           size: O,
           max: 7,
           renderUser: e => {

@@ -30,8 +30,8 @@ function C(e, t, n) {
 let x = i.memo(function(e) {
   let t, l, u, x, {
       stream: P,
-      canGoLive: S,
-      guildId: N,
+      canGoLive: N,
+      guildId: S,
       isStreaming: I,
       channel: Z,
       canStream: w,
@@ -47,8 +47,8 @@ let x = i.memo(function(e) {
       location: "Activity Panel",
       autoTrackExposure: !1
     }),
-    k = (0, g.B)(O.IlC.APP),
-    M = C(D, A, T),
+    M = (0, g.B)(O.IlC.APP),
+    k = C(D, A, T),
     G = i.useCallback(() => {
       o()(null != A, "Received null activity"), y.default.track(O.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
@@ -68,9 +68,9 @@ let x = i.memo(function(e) {
     }, [P]),
     W = i.useCallback(() => {
       let e = null != Z && (0, m.vd)(Z.type) ? Z : null,
-        t = null != e ? e.getGuildId() : N;
+        t = null != e ? e.getGuildId() : S;
       if (L && null != b.Z.getVoiceChannelId()) {
-        k();
+        M();
         return
       }(0, a.ZDy)(async () => {
         let {
@@ -112,10 +112,10 @@ let x = i.memo(function(e) {
           }), i))
         }
       })
-    }, [Z, N, E, k, L]),
-    V = (null != E || null == T || (0, c.R)()) && (I || S) ? (I ? (t = !1, l = B, u = a.g5r, x = j.NW.string(j.t.S5anIS)) : w ? (t = !1, l = W, u = a.hGI, x = null != E ? j.NW.formatToPlainString(j.t.AB5gT0, {
+    }, [Z, S, E, M, L]),
+    V = (null != E || null == T || (0, c.R)()) && (I || N) ? (I ? (t = !1, l = B, u = a.g5r, x = j.NW.string(j.t.S5anIS)) : w ? (t = !1, l = W, u = a.hGI, x = null != E ? j.NW.formatToPlainString(j.t.AB5gT0, {
       game: E.name
-    }) : j.NW.string(j.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, x = null != Z && (0, m.vd)(Z.type) ? j.NW.string(j.t.uQn9Bw) : null != N ? j.NW.string(j.t.fBXEoK) : j.NW.string(j.t.n3feND)), (0, r.jsx)("div", {
+    }) : j.NW.string(j.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, x = null != Z && (0, m.vd)(Z.type) ? j.NW.string(j.t.uQn9Bw) : null != S ? j.NW.string(j.t.fBXEoK) : j.NW.string(j.t.n3feND)), (0, r.jsx)("div", {
       className: _.panelButtonContainer,
       children: (0, r.jsx)(v.Z, {
         tooltipText: x,
@@ -124,7 +124,7 @@ let x = i.memo(function(e) {
         icon: u
       })
     })) : null,
-    F = M && null == T ? (0, r.jsx)(v.Z, {
+    F = k && null == T ? (0, r.jsx)(v.Z, {
       tooltipText: j.NW.string(j.t["hC/Ze3"]),
       onClick: G,
       icon: a.ejJ

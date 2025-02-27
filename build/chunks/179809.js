@@ -25,8 +25,8 @@ var r = n(200651),
   C = n(388032),
   x = n(602079),
   P = n(638410);
-let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
-  N = (0, s.animated)(d.Kqy),
+let N = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
+  S = (0, s.animated)(d.Kqy),
   I = i.memo(function(e) {
     let {
       folderNode: t,
@@ -44,8 +44,8 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       onDragStart: D,
       onDragEnd: R,
       onExpandCollapse: L,
-      onContextMenu: k,
-      renderChildNode: M,
+      onContextMenu: M,
+      renderChildNode: k,
       folderIconContent: G,
       folderIconContentClassName: U
     } = e, {
@@ -94,7 +94,7 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         height: 0
       },
       config: {
-        duration: S
+        duration: N
       }
     }), el = i.useCallback(e => null == n ? void 0 : n(B, e), [n, B]), eo = (0, r.jsxs)(j.H, {
       children: [(0, r.jsx)(b.Z, {
@@ -125,7 +125,7 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
             tooltipName: ee,
             folderGroupId: en,
             onClick: L,
-            onContextMenu: k,
+            onContextMenu: M,
             onHoverChange: z,
             onKeyDown: $,
             treeItemProps: et,
@@ -152,7 +152,7 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         let {
           key: i
         } = n;
-        return t && (0, r.jsx)(N, {
+        return t && (0, r.jsx)(S, {
           as: "ul",
           gap: F ? "xxs" : 0,
           id: en,
@@ -161,7 +161,7 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
             overflow: "hidden"
           },
           role: "group",
-          children: V.map(t => M(t, e.height))
+          children: V.map(t => k(t, e.height))
         }, i)
       }), T && s ? (0, r.jsx)(v.Zu, {
         name: ee,

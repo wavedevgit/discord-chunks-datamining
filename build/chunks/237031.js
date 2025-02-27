@@ -1,18 +1,18 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  T: () => o,
-  v: () => a
+  T: () => a,
+  v: () => o
 });
 var n = r(200651);
 r(192379);
 var l = r(481060);
 let i = "collectibles shop product details modal",
-  o = e => {
+  a = e => {
     let {
       product: t,
-      category: o,
-      analyticsSource: a,
+      category: a,
+      analyticsSource: o,
       analyticsLocations: s,
       returnRef: c,
       tab: d
@@ -42,8 +42,8 @@ let i = "collectibles shop product details modal",
           return e
         }({}, r), i = i = {
           product: t,
-          category: o,
-          analyticsSource: a,
+          category: a,
+          analyticsSource: o,
           analyticsLocations: s,
           returnRef: c,
           tab: d
@@ -62,6 +62,6 @@ let i = "collectibles shop product details modal",
       modalKey: i
     })
   },
-  a = () => {
+  o = () => {
     (0, l.Mr3)(i)
   }

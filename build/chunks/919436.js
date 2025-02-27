@@ -24,8 +24,8 @@ var r, i = n(200651),
   C = n(276952),
   x = n(682662),
   P = n(662146),
-  S = n(674552),
-  N = n(981631),
+  N = n(674552),
+  S = n(981631),
   I = n(704857);
 
 function Z(e, t, n) {
@@ -143,7 +143,7 @@ class D extends(r = l.PureComponent) {
   getChannelIcon() {
     let {
       channel: e
-    } = this.props, t = e.type === N.d4z.DM ? j.default.getUser(e.getRecipientId()) : null;
+    } = this.props, t = e.type === S.d4z.DM ? j.default.getUser(e.getRecipientId()) : null;
     return null != t ? t.getAvatarURL(void 0, 48, !1) : (0, p.x)(e)
   }
   render() {
@@ -177,8 +177,8 @@ class D extends(r = l.PureComponent) {
           children: (0, i.jsx)(c.aRk, {
             rounded: f,
             selected: !f && (n || g),
-            lowerBadge: r > 0 ? (0, S.Ne)(r) : null,
-            upperBadge: (0, S.Or)({
+            lowerBadge: r > 0 ? (0, N.Ne)(r) : null,
+            upperBadge: (0, N.Or)({
               audio: l,
               video: s,
               screenshare: u,
@@ -190,7 +190,7 @@ class D extends(r = l.PureComponent) {
             children: (0, i.jsx)(a.mh, {
               id: e.id,
               children: r => (0, i.jsx)(c.LYs, w({
-                to: N.Z5c.CHANNEL(N.ME, e.id),
+                to: S.Z5c.CHANNEL(S.ME, e.id),
                 onMouseEnter: () => this.setState({
                   hovered: !0
                 }),
@@ -229,7 +229,7 @@ class D extends(r = l.PureComponent) {
     }), Z(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, r = t.type === N.d4z.DM ? j.default.getUser(t.getRecipientId()) : null;
+      } = this.props, r = t.type === S.d4z.DM ? j.default.getUser(t.getRecipientId()) : null;
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
@@ -260,7 +260,7 @@ let R = l.forwardRef(function(e, t) {
   let n = e.channel.id,
     r = (0, h.ZP)(e.channel),
     l = (0, s.e7)([y.Z], () => y.Z.getChannelId(), []),
-    o = (0, s.e7)([d.Z], () => null != l ? d.Z.getMode(l) : N.WtW.VOICE, [l]),
+    o = (0, s.e7)([d.Z], () => null != l ? d.Z.getMode(l) : S.WtW.VOICE, [l]),
     a = (0, s.e7)([b.Z], () => b.Z.getAllApplicationStreamsForChannel(n).length > 0),
     u = (0, s.e7)([O.Z], () => O.Z.getChannelId(), []),
     p = (0, s.e7)([v.ZP], () => v.ZP.getMentionCount(n), [n]),
@@ -274,7 +274,7 @@ let R = l.forwardRef(function(e, t) {
     j = l === n,
     _ = !1,
     C = !1;
-  j && (_ = o === N.WtW.VOICE, C = o === N.WtW.VIDEO);
+  j && (_ = o === S.WtW.VOICE, C = o === S.WtW.VIDEO);
   let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
     P = (0, f.Q3)("DirectMessage");
   return (0, i.jsx)(D, E(w({}, e), {

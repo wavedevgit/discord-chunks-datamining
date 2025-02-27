@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(200651),
   l = r(192379),
   i = r(120356),
-  o = r.n(i),
-  a = r(442837),
+  a = r.n(i),
+  o = r(442837),
   s = r(481060),
   c = r(594174),
   d = r(381585),
@@ -26,9 +26,9 @@ let v = e => {
     handleTransition: i,
     numVisibleItems: v,
     tab: x
-  } = e, j = (0, a.e7)([c.default], () => c.default.getCurrentUser()), _ = l.createRef(), y = (0, b.u)(), O = l.useMemo(() => y(r), [t, y, r]), k = (0, p.l)(O);
+  } = e, j = (0, o.e7)([c.default], () => c.default.getCurrentUser()), _ = l.createRef(), y = (0, b.u)(), O = l.useMemo(() => y(r), [t, y, r]), k = (0, p.l)(O);
   return null == j ? null : (0, n.jsxs)("div", {
-    className: o()(g.row, g.between, g.section, g.popularPicksSection),
+    className: a()(g.row, g.between, g.section, g.popularPicksSection),
     children: [(0, n.jsxs)("div", {
       className: g.popularPicksHeader,
       children: [(0, n.jsx)(s.X6q, {

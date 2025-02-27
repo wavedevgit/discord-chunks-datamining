@@ -7,8 +7,8 @@ var n = r(200651);
 r(192379);
 var l = r(120356),
   i = r.n(l),
-  o = r(622535),
-  a = r(481060),
+  a = r(622535),
+  o = r(481060),
   s = r(597688),
   c = r(884697),
   d = r(297651),
@@ -32,20 +32,20 @@ let h = e => {
       size: u.J0,
       format: "png"
     });
-  return (0, n.jsx)(o.$, {
+  return (0, n.jsx)(a.$, {
     onChange: _,
     threshold: 0,
-    children: (0, n.jsxs)(a.P3F, {
+    children: (0, n.jsxs)(o.P3F, {
       className: i()(f.featuredBlock),
       style: {
         backgroundImage: "url(".concat(y, ")")
       },
       onClick: () => x("shop marketing tile", j),
-      children: [null != v && (0, n.jsx)(a.IGR, {
+      children: [null != v && (0, n.jsx)(o.IGR, {
         disableColor: !0,
         text: v,
         className: f.featuredBlockBadge
-      }), (null == g ? void 0 : g.bodyText) != null && (0, n.jsx)(a.X6q, {
+      }), (null == g ? void 0 : g.bodyText) != null && (0, n.jsx)(o.X6q, {
         lineClamp: 4,
         className: f.featuredBlockBodyText,
         style: {
@@ -53,9 +53,9 @@ let h = e => {
         },
         variant: "heading-lg/semibold",
         children: g.bodyText
-      }), (0, n.jsx)(a.zxk, {
+      }), (0, n.jsx)(o.zxk, {
         className: f.featuredBlockButton,
-        color: a.Ttl.WHITE,
+        color: o.Ttl.WHITE,
         onClick: () => {},
         children: p.NW.string(p.t.jVcuVV)
       })]

@@ -25,8 +25,8 @@ var r = n(200651),
   C = n(979651),
   x = n(709054),
   P = n(853856),
-  S = n(593214),
-  N = n(919755),
+  N = n(593214),
+  S = n(919755),
   I = n(110977),
   Z = n(603274),
   w = n(981631),
@@ -65,8 +65,8 @@ function R() {
     {
       favoriteAdded: R,
       clearFavoriteAdded: L
-    } = (0, S.up)(),
-    [k, M] = i.useState(!1),
+    } = (0, N.up)(),
+    [M, k] = i.useState(!1),
     {
       favoriteServerMuted: G,
       favoriteChannels: U
@@ -80,7 +80,7 @@ function R() {
     {
       badge: F,
       unread: H
-    } = (0, N.Z)(U),
+    } = (0, S.Z)(U),
     z = function(e) {
       let t = (0, s.e7)([_.Z], () => _.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
@@ -120,14 +120,14 @@ function R() {
   return (0, r.jsxs)(m.H, {
     children: [(0, r.jsx)(g.Z, {
       selected: V,
-      hovered: k,
+      hovered: M,
       unread: H && !G,
       className: T.pill
     }), (0, r.jsx)(Z.Z, {
       onShow: Q,
       children: (0, r.jsx)(I.S, {
         children: (0, r.jsx)(c.aRk, {
-          selected: q || V || k,
+          selected: q || V || M,
           upperBadge: z,
           lowerBadge: Y,
           children: (0, r.jsx)(c.LYs, (e = A({}, l), t = t = {
@@ -139,9 +139,9 @@ function R() {
               pathname: w.Z5c.CHANNEL(w.I_8, B),
               state: D
             },
-            selected: V || k,
-            onMouseEnter: () => M(!0),
-            onMouseLeave: () => M(!1),
+            selected: V || M,
+            onMouseEnter: () => k(!0),
+            onMouseLeave: () => k(!1),
             onMouseDown: function() {
               null != W && u.Z.preload(W.guild_id, W.id)
             },

@@ -105,7 +105,7 @@ function O(e) {
 function j(e) {
   let {
     onActivate: t
-  } = e, n = (0, s.Q3)("PendingGuildJoinRequestsFolderNode"), [j, _] = i.useState(!1), C = (0, l.e7)([p.Z], () => p.Z.getGuildId()), x = (0, l.e7)([d.Z], () => d.Z.hasFetchedRequestToJoinGuilds), P = (0, g.Z)(), S = (0, a.Z)(C), N = i.useMemo(() => {
+  } = e, n = (0, s.Q3)("PendingGuildJoinRequestsFolderNode"), [j, _] = i.useState(!1), C = (0, l.e7)([p.Z], () => p.Z.getGuildId()), x = (0, l.e7)([d.Z], () => d.Z.hasFetchedRequestToJoinGuilds), P = (0, g.Z)(), N = (0, a.Z)(C), S = i.useMemo(() => {
     let e = (0, f.qQ)({
       folderId: h.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: y.NW.string(y.t["scsU+v"]),
@@ -120,11 +120,11 @@ function j(e) {
   }, [j, x]);
   let I = null != C && P.includes(C);
   return (i.useEffect(() => {
-    !j && I && S !== C && _(!0)
-  }, [j, I, S, C]), 0 === P.length) ? null : (0, r.jsx)(O, {
+    !j && I && N !== C && _(!0)
+  }, [j, I, N, C]), 0 === P.length) ? null : (0, r.jsx)(O, {
     onActivate: t,
     children: (0, r.jsx)(m.Z, {
-      folderNode: N,
+      folderNode: S,
       expanded: j,
       useCircleMask: !j && !I,
       selected: I,

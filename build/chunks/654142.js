@@ -70,7 +70,7 @@ let y = i.memo(function(e) {
     name: O,
     color: j,
     children: _
-  } = t, C = _.map(e => e.id), x = (0, s.Z)(e => e.guildId), P = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(v)), S = function(e) {
+  } = t, C = _.map(e => e.id), x = (0, s.Z)(e => e.guildId), P = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(v)), N = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -80,7 +80,7 @@ let y = i.memo(function(e) {
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), N = (0, f.Z)(t), {
+  }(t), S = (0, f.Z)(t), {
     mentionCount: I,
     isMentionLowImportance: Z,
     unread: w
@@ -110,8 +110,8 @@ let y = i.memo(function(e) {
     mentionCount: I,
     isMentionLowImportance: Z,
     unread: w,
-    mediaState: N,
-    defaultFolderName: S,
+    mediaState: S,
+    defaultFolderName: N,
     onExpandCollapse: E,
     onContextMenu: T
   }))

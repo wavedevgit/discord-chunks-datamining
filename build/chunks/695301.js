@@ -22,14 +22,14 @@ let b = i.memo(function(e) {
     guildNode: b,
     lowerBadge: y
   } = e, v = b.id, O = (0, l.e7)([p.Z], () => p.Z.getGuild(v)), j = (0, a.E)(O), _ = (0, l.e7)([h.Z], () => h.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(v)), x = (0, c.Z)(e => e.guildId), P = (0, f.Z)(v), {
-    badge: S,
-    unread: N,
+    badge: N,
+    unread: S,
     isMentionLowImportance: I
   } = (0, l.cj)([d.default], () => ({
     badge: d.default.getMentionCount(v),
     isMentionLowImportance: d.default.getIsMentionLowImportance(v),
     unread: d.default.hasUnread(v)
-  })), Z = (0, s.Ij)(O) && 0 === S, w = i.useMemo(() => null != y ? y : Z ? (0, r.jsx)("div", {
+  })), Z = (0, s.Ij)(O) && 0 === N, w = i.useMemo(() => null != y ? y : Z ? (0, r.jsx)("div", {
     className: m.pauseBackground,
     children: (0, r.jsx)(o.fpf, {
       size: "custom",
@@ -61,10 +61,10 @@ let b = i.memo(function(e) {
     unavailable: C,
     animatable: _,
     selected: x === v,
-    badge: S,
+    badge: N,
     isMentionLowImportance: I,
     lowerBadge: w,
-    unread: N,
+    unread: S,
     mediaState: P,
     guildJoinRequestStatus: j
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

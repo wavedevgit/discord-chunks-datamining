@@ -25,8 +25,8 @@ var r = n(200651),
   C = n(540059),
   x = n(706590),
   P = n(940777),
-  S = n(41776),
-  N = n(905423),
+  N = n(41776),
+  S = n(905423),
   I = n(802718),
   Z = n(822857),
   w = n(931928),
@@ -36,8 +36,8 @@ var r = n(200651),
   D = n(430824),
   R = n(771845),
   L = n(358085),
-  k = n(709054),
-  M = n(727258),
+  M = n(709054),
+  k = n(727258),
   G = n(605951),
   U = n(474109),
   B = n(741616),
@@ -166,7 +166,7 @@ function es(e) {
   } = (0, m.TCT)(), [h] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
-  }), b = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), v = i.useMemo(() => n ? [] : b, [b, n]), ei = (0, p.Wu)([D.Z, A.ZP], () => k.default.keys(D.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), es = v.concat(ei), ec = (0, p.e7)([_.Z], () => _.Z.isFullscreenInContext()), eu = (0, p.e7)([D.Z], () => D.Z.getGeoRestrictedGuilds()), [ed, ep] = i.useState(!1), eh = i.useCallback(() => ep(!0), []), ef = i.useCallback(() => ep(!1), []), eg = i.useRef(!1), [em] = i.useState(() => new f.V7), eb = i.useRef(null), ey = i.useRef(null), ev = (0, u.OP)(), {
+  }), b = (0, p.e7)([N.Z], () => N.Z.lurkingGuildIds()), v = i.useMemo(() => n ? [] : b, [b, n]), ei = (0, p.Wu)([D.Z, A.ZP], () => M.default.keys(D.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), es = v.concat(ei), ec = (0, p.e7)([_.Z], () => _.Z.isFullscreenInContext()), eu = (0, p.e7)([D.Z], () => D.Z.getGeoRestrictedGuilds()), [ed, ep] = i.useState(!1), eh = i.useCallback(() => ep(!0), []), ef = i.useCallback(() => ep(!1), []), eg = i.useRef(!1), [em] = i.useState(() => new f.V7), eb = i.useRef(null), ey = i.useRef(null), ev = (0, u.OP)(), {
     ref: eO
   } = ev, ej = function(e, t) {
     if (null == e) return {};
@@ -182,7 +182,7 @@ function es(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(ev, ["ref"]), e_ = (0, m.mFp)(), [eC, ex] = i.useState(!1), [eP, eS] = i.useState(!1), eN = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eI = i.useMemo(() => new ea(h, ex, eS, () => {
+  }(ev, ["ref"]), e_ = (0, m.mFp)(), [eC, ex] = i.useState(!1), [eP, eN] = i.useState(!1), eS = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eI = i.useMemo(() => new ea(h, ex, eN, () => {
     var e, t;
     null === (e = eb.current) || void 0 === e || e.calculateState(), null === (t = ey.current) || void 0 === t || t.calculateState()
   }, function(e, t, n) {
@@ -194,7 +194,7 @@ function es(e) {
       separatorSize: r,
       heightBeforeIcons: eo + r
     }
-  }(eN, s, 0)), [eN, d, h, s]);
+  }(eS, s, 0)), [eS, d, h, s]);
   i.useEffect(() => (eI.setResizeObserver(), () => {
     eI.clearResizeObserver()
   }), [eI]);
@@ -219,10 +219,10 @@ function es(e) {
     }
   }), i.useEffect(() => {
     if (eI.setGuildsTree(h), eg.current || 0 === h.size) return;
-    let e = N.Z.getState().guildId;
+    let e = S.Z.getState().guildId;
     eI.scrollToGuild(e, !1);
     let t = null;
-    return N.Z.subscribe(e => {
+    return S.Z.subscribe(e => {
       let {
         guildId: n
       } = e;
@@ -238,7 +238,7 @@ function es(e) {
   (0, G.Z)(eI.scrollToGuild);
   let eD = i.useCallback(function e(t) {
       switch (t.type) {
-        case M.eD.FOLDER:
+        case k.eD.FOLDER:
           return (0, r.jsx)(J.Z, {
             folderNode: t,
             setNodeRef: eI.setNodeRef,
@@ -248,7 +248,7 @@ function es(e) {
             onDragEnd: ef,
             renderChildNode: e
           }, t.id);
-        case M.eD.GUILD:
+        case k.eD.GUILD:
           return (0, r.jsx)(X.Z, {
             guildNode: t,
             setRef: eI.setNodeRef,
@@ -263,9 +263,9 @@ function es(e) {
     }, [eh, ef, ed, eI.setNodeRef]),
     eR = h.getRoots(),
     eL = (0, x.Z)(),
-    ek = (0, I.U)(),
+    eM = (0, I.U)(),
     {
-      enabled: eM
+      enabled: ek
     } = (0, Z.W)({
       location: "GuildsBar"
     });
@@ -276,11 +276,11 @@ function es(e) {
       closeCoachmarkIfOpen: eB,
       questId: eW
     } = (0, w.qp)({
-      isVirtualCurrencyEnabled: eM,
+      isVirtualCurrencyEnabled: ek,
       discoveryButtonRef: eG,
       scrollToBottom: eI.scrollToBottom
     }),
-    eV = eM && eU,
+    eV = ek && eU,
     eF = eV ? eW : void 0,
     eH = eu.map(e => (0, r.jsx)(F.Z, {
       id: e.id,
@@ -326,7 +326,7 @@ function es(e) {
                 onScroll: eI.handleScroll,
                 children: [(0, r.jsx)(Y.u, {}), eL ? (0, r.jsx)(P.Z, {}) : null, (0, r.jsx)(q.Z, {
                   isOnHubVerificationRoute: eT
-                }), (0, r.jsx)(B.Z, {}), ek, es.map(e => (0, r.jsx)(ee.Z, {
+                }), (0, r.jsx)(B.Z, {}), eM, es.map(e => (0, r.jsx)(ee.Z, {
                   guildId: e
                 }, e)), (0, r.jsx)($.Z, {
                   onActivate: eA

@@ -1,6 +1,6 @@
 /** Chunk was on 86029 **/
 n.d(t, {
-  Z: () => S
+  Z: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -62,18 +62,18 @@ function P(e) {
     m = g === y.Wyy,
     b = f.map(e => e.id),
     [v, C] = i.useState(!1),
-    [P, S] = i.useState(c),
-    N = u ? c ? 22 : -11 : c ? 0 : -_,
+    [P, N] = i.useState(c),
+    S = u ? c ? 22 : -11 : c ? 0 : -_,
     I = (0, d.q_F)({
-      transform: "translate3d(0, ".concat(N, "px, 0)"),
+      transform: "translate3d(0, ".concat(S, "px, 0)"),
       config: {
         duration: j
       },
       onStart() {
-        C(!0), S(c)
+        C(!0), N(c)
       },
       onRest() {
-        C(!1), S(c)
+        C(!1), N(c)
       }
     }, "animate-always"),
     Z = v ? I : void 0;
@@ -107,7 +107,7 @@ function P(e) {
   })
 }
 
-function S(e) {
+function N(e) {
   var t, n;
   let {
     folderNode: l,
@@ -123,8 +123,8 @@ function S(e) {
     folderIconContent: _,
     onClick: C,
     onContextMenu: x,
-    onHoverChange: S,
-    onKeyDown: N,
+    onHoverChange: N,
+    onKeyDown: S,
     treeItemProps: {
       onFocus: I
     }
@@ -143,15 +143,15 @@ function S(e) {
     }
     return i
   }(e.treeItemProps, ["onFocus"]), [w, E] = i.useState(!1), T = i.useCallback(() => {
-    c || E(!0), null == S || S(!0)
-  }, [c, S]), A = i.useCallback(() => {
-    c || E(!1), null == S || S(!1)
-  }, [c, S]), D = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), L = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, k = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
+    c || E(!0), null == N || N(!0)
+  }, [c, N]), A = i.useCallback(() => {
+    c || E(!1), null == N || N(!1)
+  }, [c, N]), D = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), L = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, M = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
   return (0, r.jsx)(d.aRk, {
     isFolder: !0,
     style: D ? {
-      width: k,
-      height: k
+      width: M,
+      height: M
     } : void 0,
     selected: !!D || !a,
     upperBadge: R,
@@ -184,7 +184,7 @@ function S(e) {
       onContextMenu: x,
       onMouseEnter: T,
       onMouseLeave: A,
-      onKeyDown: N,
+      onKeyDown: S,
       onFocus: I,
       "aria-label": v.NW.formatToPlainString(v.t["90/DwM"], {
         folderName: m,

@@ -149,22 +149,22 @@ let _ = i.memo(function(e) {
     onMouseDown: C,
     disableBannerAnimation: x,
     "aria-expanded": P,
-    "aria-controls": S,
-    guild: N,
+    "aria-controls": N,
+    guild: S,
     guildBanner: I,
     animationOverlayHeight: Z,
     children: w,
     headerClassName: E,
     communityInfoVisible: T,
     hasSubheader: A
-  } = e, D = N.hasFeature(g.oNc.ANIMATED_BANNER), R = (0, d.Z)(N), L = !R && N.hasCommunityInfoSubheader(), k = !R && T, M = (0, h.xR)(I) && D && !x, [G, U] = i.useState(!1), B = i.useRef(), W = i.useRef(null), V = i.useRef(), F = p.QK.getSetting();
+  } = e, D = S.hasFeature(g.oNc.ANIMATED_BANNER), R = (0, d.Z)(S), L = !R && S.hasCommunityInfoSubheader(), M = !R && T, k = (0, h.xR)(I) && D && !x, [G, U] = i.useState(!1), B = i.useRef(), W = i.useRef(null), V = i.useRef(), F = p.QK.getSetting();
   i.useEffect(() => {
-    if (M && t && !B.current && F) return U(!0), V.current = setTimeout(() => {
+    if (k && t && !B.current && F) return U(!0), V.current = setTimeout(() => {
       U(!1)
     }, 5e3), () => {
       clearTimeout(V.current)
     }
-  }, [M, t, F]), i.useEffect(() => {
+  }, [k, t, F]), i.useEffect(() => {
     B.current = t
   }, [t]);
   let H = () => {
@@ -189,7 +189,7 @@ let _ = i.memo(function(e) {
             [y.hasBanner]: H(),
             [y.bannerVisible]: t,
             [e]: !z && t,
-            [y.communityInfoVisible]: k || A && L
+            [y.communityInfoVisible]: M || A && L
           }),
           onMouseDown: C,
           onContextMenu: _,
@@ -201,16 +201,16 @@ let _ = i.memo(function(e) {
             children: [(0, r.jsxs)("div", {
               className: o()(y.headerContent, y.primaryInfo),
               children: [(0, r.jsx)(f.Z, {
-                guild: N,
+                guild: S,
                 isBannerVisible: t
-              }), N.id === m._ && (0, r.jsx)(j, {}), (0, r.jsx)(c.X6q, {
+              }), S.id === m._ && (0, r.jsx)(j, {}), (0, r.jsx)(c.X6q, {
                 variant: "text-md/semibold",
                 lineClamp: 1,
                 className: y.name,
-                children: N.toString()
+                children: S.toString()
               }), null != a && (0, r.jsx)(c.P3F, {
                 className: y.headerButton,
-                "aria-controls": S,
+                "aria-controls": N,
                 "aria-expanded": P,
                 focusProps: {
                   ringTarget: W,
@@ -219,25 +219,25 @@ let _ = i.memo(function(e) {
                 onClick: a,
                 onContextMenu: _,
                 "aria-label": b.NW.formatToPlainString(b.t.xMXpl5, {
-                  guildName: null !== (i = null == N ? void 0 : N.toString()) && void 0 !== i ? i : ""
+                  guildName: null !== (i = null == S ? void 0 : S.toString()) && void 0 !== i ? i : ""
                 })
               }), (0, r.jsx)("div", {
                 className: y.headerChildren,
                 children: w
               })]
             }), L && (0, r.jsx)(O, {
-              guild: N,
+              guild: S,
               controller: n,
               hasBanner: null != I,
               hasSubheader: null != A && A
             })]
           }), null != I ? (0, r.jsx)(v, {
-            guild: N,
+            guild: S,
             controller: n,
             guildBanner: I,
             animate: G
           }) : null]
-        }), M && H() ? (0, r.jsx)("div", {
+        }), k && H() ? (0, r.jsx)("div", {
           className: y.animatedBannerHoverLayer,
           onMouseEnter: () => {
             U(!0), clearTimeout(V.current)

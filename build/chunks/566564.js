@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(200651),
   l = r(192379),
   i = r(120356),
-  o = r.n(i),
-  a = r(685816),
+  a = r.n(i),
+  o = r(685816),
   s = r(442837),
   c = r(481060),
   d = r(594174),
@@ -29,7 +29,7 @@ let O = e => {
       handleTransition: t,
       numVisibleItems: r,
       isFetchingCategories: i,
-      tab: o
+      tab: a
     } = e, {
       noCache: s,
       includeUnpublished: c
@@ -38,7 +38,7 @@ let O = e => {
       fetchShopHomeError: u,
       shopBlocks: p,
       refreshShopHome: f
-    } = (0, h.E)(o, {
+    } = (0, h.E)(a, {
       noCache: s,
       includeUnpublished: c,
       includeBundles: !0
@@ -53,7 +53,7 @@ let O = e => {
       children: [(0, n.jsx)(v.Z, {
         isLoading: d,
         handleTransition: t,
-        tab: o
+        tab: a
       }), (0, n.jsx)(C.Z, {
         isLoading: d,
         handleTransition: t,
@@ -63,38 +63,38 @@ let O = e => {
         handleTransition: t,
         numVisibleItems: r,
         rankedSkuIds: [],
-        tab: o
+        tab: a
       })]
     }) : (0, n.jsx)(n.Fragment, {
       children: p.map((e, l) => {
         if (null == e) return null;
         switch (e.type) {
-          case a.z.HERO:
+          case o.z.HERO:
             return (0, n.jsx)(v.Z, {
               isLoading: d,
               handleTransition: t,
               heroBlock: e,
-              tab: o
+              tab: a
             }, l);
-          case a.z.FEATURED:
+          case o.z.FEATURED:
             return (0, n.jsx)(C.Z, {
               isLoading: d,
               handleTransition: t,
               featuredBlockRecord: e
             }, l);
-          case a.z.FEED:
+          case o.z.FEED:
             return (0, n.jsx)(g.Z, {
               isLoading: d || i,
               handleTransition: t,
               numVisibleItems: r,
               rankedSkuIds: e.rankedSkuIds,
-              tab: o
+              tab: a
             }, l);
-          case a.z.WIDE_BANNER:
+          case o.z.WIDE_BANNER:
             return (0, n.jsx)(x.Z, {
               handleTransition: t,
               wideBannerBlock: e,
-              tab: o
+              tab: a
             }, l);
           default:
             return null
@@ -107,7 +107,7 @@ let O = e => {
     let {
       isFullScreen: r,
       handleTransition: i,
-      numVisibleItems: a,
+      numVisibleItems: o,
       tab: h
     } = e, {
       isFetchingCategories: C,
@@ -140,17 +140,17 @@ let O = e => {
       errorOrigin: b.i.SHOP_PAGE,
       errorMessage: g.message
     }) : (0, n.jsx)("div", {
-      className: o()(y.shop, {
+      className: a()(y.shop, {
         [y.shopFullscreen]: r
       }),
       children: (0, n.jsxs)("div", {
-        className: o()(y.content, y.mainContent),
+        className: a()(y.content, y.mainContent),
         children: [(0, n.jsx)(O, {
           handleTransition: i,
-          numVisibleItems: a,
+          numVisibleItems: o,
           isFetchingCategories: C,
           tab: h
-        }), h === j.AW.HOME && a >= j.iA && (0, n.jsxs)("div", {
+        }), h === j.AW.HOME && o >= j.iA && (0, n.jsxs)("div", {
           className: y.endOfFeed,
           children: [(0, n.jsx)(c.X6q, {
             variant: "heading-md/semibold",

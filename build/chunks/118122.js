@@ -64,7 +64,7 @@ function x(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, a = (0, l.e7)([f.Z], () => f.Z.getGuilds()), x = i.useMemo(() => Object.values(a), [a]), P = (0, l.e7)([g.default], () => g.default.getCurrentUser()), S = i.useMemo(() => x.some(e => e.isOwner(P)), [x, P]), N = (0, o.s9z)(e => (0, o.DEQ)(e, v.PU)), {
+  } = e, a = (0, l.e7)([f.Z], () => f.Z.getGuilds()), x = i.useMemo(() => Object.values(a), [a]), P = (0, l.e7)([g.default], () => g.default.getCurrentUser()), N = i.useMemo(() => x.some(e => e.isOwner(P)), [x, P]), S = (0, o.s9z)(e => (0, o.DEQ)(e, v.PU)), {
     analyticsLocations: I
   } = (0, s.ZP)(), Z = (0, u.Q3)("CreateJoinGuildButton"), w = (0, r.jsx)(b.Z, {
     showPill: !1,
@@ -83,7 +83,7 @@ function x(e) {
         location: "Guild List"
       })
     },
-    selected: N,
+    selected: S,
     onContextMenu: C,
     tooltip: O.NW.string(O.t.l5WIbW),
     icon: Z ? o.oFk : o.BRu
@@ -91,7 +91,7 @@ function x(e) {
   return t ? w : (0, r.jsx)("div", {
     className: j.tutorialContainer,
     children: (0, r.jsxs)(h.Z, {
-      tutorialId: S ? "create-more-servers" : "create-first-server",
+      tutorialId: N ? "create-more-servers" : "create-first-server",
       inlineSpecs: _,
       position: "right",
       children: [w, null != n && (0, r.jsx)(m.ZP, {

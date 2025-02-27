@@ -26,8 +26,8 @@ var i = n(120356),
   C = n(981631),
   x = n(176505),
   P = n(629481),
-  S = n(388032),
-  N = n(40125);
+  N = n(388032),
+  S = n(40125);
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -69,31 +69,31 @@ function w(e) {
   } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([O.Z], () => O.Z.getGuild(t)), x = (null == g ? void 0 : g.hasFeature(C.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, w = "false" === s.K.get(P.tM, "false"), E = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsx)(_.m, {
     id: "shop-".concat(t),
-    className: l()(N.previewChannelRow, {
-      [N.selected]: n,
-      [N.phantomPreview]: w
+    className: l()(S.previewChannelRow, {
+      [S.selected]: n,
+      [S.phantomPreview]: w
     }),
-    innerClassName: N.previewChannelRowContent,
+    innerClassName: S.previewChannelRowContent,
     renderIcon: e => (0, r.jsx)(m.Z, {
       width: 20,
       height: 20,
-      className: l()([e, N.shopIcon])
+      className: l()([e, S.shopIcon])
     }),
-    text: S.NW.string(S.t.al5EXF),
+    text: N.NW.string(N.t.al5EXF),
     selected: n,
     onClick: i,
     trailing: (0, r.jsxs)("div", {
-      className: N.gifSection,
+      className: S.gifSection,
       children: [E ? (0, r.jsx)(c.IGR, {
         color: c.TVs.unsafe_rawColors.BRAND_260.css,
-        text: S.NW.string(S.t.y2b7CA),
-        className: N.newBadge
+        text: N.NW.string(N.t.y2b7CA),
+        className: S.newBadge
       }) : (0, r.jsx)("img", {
         src: (0, h.b)("server_products/storefront/money.gif"),
-        className: N.money,
+        className: S.money,
         alt: ""
       }), n && (0, r.jsx)(c.P3F, {
-        className: N.closeButton,
+        className: S.closeButton,
         onClick: e => {
           if (e.stopPropagation(), (0, b.EW)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), j.default.track(C.rMx.GUILD_SHOP_PREVIEW_CLICK, Z(I({}, (0, p.hH)(t)), {
               action_taken: P.mz.DISMISS_CHANNEL_ROW
@@ -102,7 +102,7 @@ function w(e) {
             (0, y.dL)(C.Z5c.CHANNEL(t, null === (n = v.ZP.getDefaultChannel(t)) || void 0 === n ? void 0 : n.id))
           }
         },
-        "aria-label": S.NW.string(S.t.cpT0Cg),
+        "aria-label": N.NW.string(N.t.cpT0Cg),
         children: (0, r.jsx)(c.k$p, {
           size: "xs",
           color: "currentColor"
@@ -130,7 +130,7 @@ function E(e) {
       height: 20,
       className: e
     }),
-    text: S.NW.string(S.t.al5EXF),
+    text: N.NW.string(N.t.al5EXF),
     selected: i,
     onClick: o,
     onContextMenu: e => {

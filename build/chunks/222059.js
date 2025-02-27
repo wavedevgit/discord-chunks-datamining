@@ -25,8 +25,8 @@ var r = n(200651),
   C = n(780570),
   x = n(278464),
   P = n(276952),
-  S = n(682662),
-  N = n(662146),
+  N = n(682662),
+  S = n(662146),
   I = n(674552),
   Z = n(981631),
   w = n(474936),
@@ -54,8 +54,8 @@ function R(e) {
     badge: b,
     link: y,
     showProgressBadge: v
-  } = e, O = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [j, _] = i.useState(!1), [C, x] = i.useState(!1), [w, R] = i.useState(null), [L, k] = i.useState(0), M = (0, l.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), U = () => {
-    R(null), k(0), clearTimeout(w)
+  } = e, O = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [j, _] = i.useState(!1), [C, x] = i.useState(!1), [w, R] = i.useState(null), [L, M] = i.useState(0), k = (0, l.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), U = () => {
+    R(null), M(0), clearTimeout(w)
   };
   if (null == f) return null;
   let B = T.NW.string(T.t.YUU0RE);
@@ -94,7 +94,7 @@ function R(e) {
         onMouseEnter: () => _(!0),
         onMouseLeave: () => _(!1),
         onClick: () => {
-          if (!__OVERLAY__ && (null != w && clearTimeout(w), R(setTimeout(U, 500)), k(L + 1), 15 === L)) {
+          if (!__OVERLAY__ && (null != w && clearTimeout(w), R(setTimeout(U, 500)), M(L + 1), 15 === L)) {
             U();
             let e = !a.K.get(Z.wli);
             a.K.set(Z.wli, e), e && a.K.set(E.O5, !0), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), x(!0), setTimeout(() => {
@@ -104,7 +104,7 @@ function R(e) {
         },
         selected: V,
         ariaLabel: T.NW.string(T.t.YUU0RE)
-      }, M), n = n = {
+      }, k), n = n = {
         to: {
           pathname: y,
           state: {
@@ -133,12 +133,12 @@ function R(e) {
       inlineSpecs: D,
       tutorialId: "friends-list",
       position: "right",
-      children: (0, r.jsxs)(S.H, {
+      children: (0, r.jsxs)(N.H, {
         children: [(0, r.jsx)(P.Z, {
           selected: h,
           hovered: j,
           className: A.pill
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(S.Z, {
           color: s.ua7.Colors.PRIMARY,
           hideOnClick: !0,
           text: B,

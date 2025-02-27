@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(200651),
   l = r(192379),
   i = r(120356),
-  o = r.n(i),
-  a = r(442837),
+  a = r.n(i),
+  o = r(442837),
   s = r(481060),
   c = r(425493),
   d = r(410030),
@@ -32,7 +32,7 @@ function j(e) {
   return (0, n.jsx)(u.Z.Title, {
     onClick: () => i(t),
     wrapperClassName: x.tabWrapper,
-    className: o()(x.tab, {
+    className: a()(x.tab, {
       [x.selected]: l
     }),
     children: r
@@ -46,7 +46,7 @@ function _(e) {
     onClose: i,
     selectedTab: _,
     handleTransition: y
-  } = e, O = (0, d.ZP)(), k = (0, a.e7)([b.default], () => b.default.getCurrentUser()), P = (null == k ? void 0 : k.isStaff()) || (null == k ? void 0 : k.isStaffPersonal()) || !1, {
+  } = e, O = (0, d.ZP)(), k = (0, o.e7)([b.default], () => b.default.getCurrentUser()), P = (null == k ? void 0 : k.isStaff()) || (null == k ? void 0 : k.isStaffPersonal()) || !1, {
     enabled: S
   } = (0, f.W)({
     location: "collectibles_shop_header_bar"
@@ -63,7 +63,7 @@ function _(e) {
   }), (0, n.jsx)(s.f6W, {
     theme: O,
     children: e => (0, n.jsxs)(u.Z, {
-      className: o()(e, x.headerBar, {
+      className: a()(e, x.headerBar, {
         [x.fullscreenHeaderBar]: t
       }),
       innerClassname: S ? x.headerBarInner : void 0,

@@ -28,8 +28,8 @@ let f = i.forwardRef(function(e, t) {
     showPill: C = !0,
     className: x,
     "aria-label": P,
-    children: S,
-    onMouseEnter: N,
+    children: N,
+    onMouseEnter: S,
     onMouseLeave: I,
     onMouseDown: Z
   } = e, w = (0, c.Q3)("ButtonListItem"), E = (0, a.Ie)(f), [T, A] = i.useState(!1);
@@ -68,7 +68,7 @@ let f = i.forwardRef(function(e, t) {
         }({
           innerRef: t,
           onMouseEnter: () => {
-            null == N || N(), A(!0)
+            null == S || S(), A(!0)
           },
           onMouseLeave: () => {
             null == I || I(), A(!1)
@@ -99,6 +99,6 @@ let f = i.forwardRef(function(e, t) {
           Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
         }), n))
       })
-    }), S]
+    }), N]
   })
 })

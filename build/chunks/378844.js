@@ -48,12 +48,12 @@ let v = e => {
     notPhoneVerified: _,
     newAccount: C,
     newMember: x
-  } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), P = 0 === t ? g.NW.string(g.t["6zY8BA"]) : null, S = null, N = null;
-  return (0 === t && (O ? (S = g.NW.string(g.t.IRxUlJ), N = g.NW.string(g.t.fiNVio)) : _ ? (S = g.NW.string(g.t.vW8iUF), N = g.NW.string(g.t["50gfOj"])) : j ? (S = g.NW.string(g.t.vdSOp6), N = g.NW.string(g.t.lm1UKi)) : x ? (S = g.NW.formatToPlainString(g.t.v1ktYW, {
+  } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), P = 0 === t ? g.NW.string(g.t["6zY8BA"]) : null, N = null, S = null;
+  return (0 === t && (O ? (N = g.NW.string(g.t.IRxUlJ), S = g.NW.string(g.t.fiNVio)) : _ ? (N = g.NW.string(g.t.vW8iUF), S = g.NW.string(g.t["50gfOj"])) : j ? (N = g.NW.string(g.t.vdSOp6), S = g.NW.string(g.t.lm1UKi)) : x ? (N = g.NW.formatToPlainString(g.t.v1ktYW, {
     min: h.YeM.MEMBER_AGE
-  }), N = g.NW.string(g.t.BddRzc)) : C && (S = g.NW.formatToPlainString(g.t["sncw4+"], {
+  }), S = g.NW.string(g.t.BddRzc)) : C && (N = g.NW.formatToPlainString(g.t["sncw4+"], {
     min: h.YeM.ACCOUNT_AGE
-  }), N = g.NW.string(g.t.BddRzc))), null == P || null == S) ? null : (0, i.jsxs)(o.VqE, {
+  }), S = g.NW.string(g.t.BddRzc))), null == P || null == N) ? null : (0, i.jsxs)(o.VqE, {
     className: m.container,
     "aria-labelledby": v,
     children: [(0, i.jsx)("img", {
@@ -69,10 +69,10 @@ let v = e => {
       }), (0, i.jsx)(o.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: S
+        children: N
       }), (0, i.jsxs)("div", {
         className: m.buttonContainer,
-        children: [null != N ? (0, i.jsx)(o.zxk, {
+        children: [null != S ? (0, i.jsx)(o.zxk, {
           onClick: () => {
             O ? s.j() : _ ? (0, o.ZDy)(async () => {
               let {
@@ -109,7 +109,7 @@ let v = e => {
             })), y()
           },
           className: m.primaryButton,
-          children: N
+          children: S
         }) : null, O || _ || j ? (0, i.jsx)(o.zxk, {
           onClick: y,
           look: o.zxk.Looks.BLANK,

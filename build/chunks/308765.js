@@ -163,6 +163,10 @@ let i = {
     inlineRequire: () => n(1627).Z,
     loadAfterConnectionOpen: !0
   },
+  OverlayContentProtectionManager: {
+    actions: ["STREAM_START", "STREAM_STOP"],
+    inlineRequire: () => n(503522).Z
+  },
   OverlayLockSideEffectManager: {
     actions: ["OVERLAY_SET_INPUT_LOCKED"],
     inlineRequire: () => n(967031).Z

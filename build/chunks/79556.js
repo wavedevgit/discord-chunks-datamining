@@ -1,6 +1,6 @@
 /** Chunk was on 86029 **/
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -26,8 +26,8 @@ var i = n(120356),
   C = n(594174),
   x = n(109446),
   P = n(98597),
-  S = n(648501),
-  N = n(473403),
+  N = n(648501),
+  S = n(473403),
   I = n(304471),
   Z = n(981631),
   w = n(647086),
@@ -105,7 +105,7 @@ class R extends P.ZP {
       resolvedUnreadSetting: _,
       withGuildIcon: C,
       enableActivities: x
-    } = this.props, P = x && null != j && j.length > 0, S = (0, f.D)(v), I = (0, r.jsx)("li", {
+    } = this.props, P = x && null != j && j.length > 0, N = (0, f.D)(v), I = (0, r.jsx)("li", {
       className: l()(this.getClassName(), {
         [E.disabled]: this.isDisabled(),
         [E.selected]: n
@@ -119,7 +119,7 @@ class R extends P.ZP {
         spacing: 0,
         onRequestClose: this.handleClosePopout,
         shouldShow: c && this.state.shouldShowThreadsPopout || P && this.state.shouldShowActivities,
-        children: () => (0, r.jsxs)(N.Z, {
+        children: () => (0, r.jsxs)(S.Z, {
           className: E.iconVisibility,
           channel: e,
           guild: t,
@@ -128,8 +128,8 @@ class R extends P.ZP {
           unread: o,
           mentionCount: u,
           hasActiveThreads: s,
-          subtitle: null == S ? void 0 : S.subtitle,
-          subtitleColor: null == S ? void 0 : S.color,
+          subtitle: null == N ? void 0 : N.subtitle,
+          subtitleColor: null == N ? void 0 : N.color,
           onMouseDown: this.handleMouseDown,
           onContextMenu: this.handleContextMenu,
           connectDragPreview: m ? g : null,
@@ -244,7 +244,7 @@ class R extends P.ZP {
 }
 let L = (0, u.B)(R);
 
-function k(e) {
+function M(e) {
   let {
     channel: t,
     guild: n,
@@ -267,31 +267,31 @@ function k(e) {
     }
   }), x = (0, o.e7)([m.Z], () => m.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: P,
-    isSubscriptionGated: N
+    isSubscriptionGated: S
   } = (0, g.Z)(t.id), I = (0, o.e7)([_.ZP], () => _.ZP.isFavorite(n.id, t.id)), E = (0, o.e7)([C.default], () => {
     let e = C.default.getCurrentUser();
     return null != e && (!t.isNSFW() || e.nsfwAllowed)
-  }, [t]), T = (0, d.NX)(t.id), R = (0, S.Z)({
+  }, [t]), T = (0, d.NX)(t.id), R = (0, N.Z)({
     channel: t,
     isChannelCollapsed: !1,
     isChannelSelected: s,
-    isSubscriptionGated: N,
+    isSubscriptionGated: S,
     needSubscriptionToAccess: P,
     isNewChannel: x,
     muted: a,
     enableActivities: T,
     resolvedUnreadSetting: f
-  }), k = (0, p.ZP)(t);
+  }), M = (0, p.ZP)(t);
   return (0, r.jsx)(L, D(A({}, h, v, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
-    isSubscriptionGated: N,
+    isSubscriptionGated: S,
     needSubscriptionToAccess: P,
     isNewChannel: x && e.canBeNewChannel,
     isFavoriteSuggestion: l && !I,
     canShowThreadPreviewForUser: E,
     channelInfo: R,
-    embeddedApps: k,
+    embeddedApps: M,
     resolvedUnreadSetting: f,
     hasChannelInfo: null != R,
     enableActivities: T
