@@ -1,6 +1,6 @@
 /** Chunk was on 32249 **/
 n.r(t), n.d(t, {
-  default: () => R
+  default: () => k
 }), n(47120);
 var r = n(200651),
   o = n(192379),
@@ -17,15 +17,15 @@ var r = n(200651),
   f = n(569984),
   E = n(497505),
   g = n(918701),
-  b = n(475595),
-  O = n(566078),
+  O = n(475595),
+  b = n(566078),
   S = n(164495),
   C = n(472144),
   j = n(602667),
   h = n(644646),
   y = n(880199),
-  x = n(604162),
-  _ = n(747717),
+  _ = n(604162),
+  x = n(747717),
   D = n(963123),
   N = n(281055),
   P = n(46140),
@@ -65,20 +65,20 @@ function L(e, t) {
   }), e
 }
 
-function k(e) {
+function R(e) {
   var t, n, l, f;
   let j, {
       transitionState: N,
-      onClose: k,
-      quest: R,
+      onClose: R,
+      quest: k,
       autoplay: M,
       videoSessionId: q,
       impressionRef: B,
       startTime: F
     } = e,
-    U = (0, g.il)(R),
-    Z = (0, s.e7)([d.Z], () => d.Z.getState().theme),
-    V = (0, a.wj)(Z) ? T.BRd.DARK : T.BRd.LIGHT,
+    U = (0, g.il)(k),
+    V = (0, s.e7)([d.Z], () => d.Z.getState().theme),
+    Z = (0, a.wj)(V) ? T.BRd.DARK : T.BRd.LIGHT,
     Y = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
     W = (0, p.aM)(),
     [z, G] = o.useState(U.progressSeconds),
@@ -86,22 +86,22 @@ function k(e) {
     {
       completedRatio: Q,
       completedRatioDisplay: X
-    } = (0, v.I)(R),
-    [$, J] = (0, x.G6)(I.NW.string(I.t.RDE0SU), I.NW.string(I.t["+5kSoa"]), 1700);
-  if ((0, g.xN)(R.config) && (null === (t = R.userStatus) || void 0 === t ? void 0 : t.claimedAt) == null) {
-    let e = (0, g.LM)(R.config);
+    } = (0, v.I)(k),
+    [$, J] = (0, _.G6)(I.NW.string(I.t.RDE0SU), I.NW.string(I.t["+5kSoa"]), 1700);
+  if ((0, g.xN)(k.config) && (null === (t = k.userStatus) || void 0 === t ? void 0 : t.claimedAt) == null) {
+    let e = (0, g.LM)(k.config);
     j = (0, r.jsx)(y.Z, {
       orbQuantity: e
     })
-  } else j = (null === (f = R.userStatus) || void 0 === f ? void 0 : f.claimedAt) != null ? I.NW.string(I.t.vTgCW1) : I.NW.string(I.t.cfY4PD);
+  } else j = (null === (f = k.userStatus) || void 0 === f ? void 0 : f.claimedAt) != null ? I.NW.string(I.t.vTgCW1) : I.NW.string(I.t.cfY4PD);
   let ee = o.useCallback(() => {
-      (0, g.f2)(R.id, {
+      (0, g.f2)(k.id, {
         content: E.jn.VIDEO_MODAL,
         ctaContent: m.jZ.COPY_QUEST_URL,
         impressionId: W
       }), J()
-    }, [W, R.id, J]),
-    et = o.useMemo(() => O.r.build(R.config).defaultReward.messages.name, [R]),
+    }, [W, k.id, J]),
+    et = o.useMemo(() => b.r.build(k.config).defaultReward.messages.name, [k]),
     en = I.NW.formatToPlainString(I.t["12IWPz"], {
       rewardName: et
     });
@@ -123,28 +123,28 @@ function k(e) {
             children: [(0, r.jsxs)(c.P3F, {
               className: A.contentHeaderGameInfo,
               onClick: () => {
-                (0, g.FE)(R, {
+                (0, g.FE)(k, {
                   content: E.jn.VIDEO_MODAL,
                   ctaContent: m.jZ.OPEN_GAME_LINK,
                   impressionId: W
                 })
               },
               children: [(0, r.jsx)("img", {
-                alt: R.config.messages.gameTitle,
+                alt: k.config.messages.gameTitle,
                 className: i()(A.contentHeaderLogotype, A.accentOnHover),
-                src: (0, b.fh)(R, b.eC.LOGO_TYPE, V).url
-              }), (0, r.jsx)(_.Z, {}), (0, r.jsxs)("div", {
+                src: (0, O.fh)(k, O.eC.LOGO_TYPE, Z).url
+              }), (0, r.jsx)(x.Z, {}), (0, r.jsxs)("div", {
                 className: A.questHeading,
                 children: [(0, r.jsx)(c.X6q, {
                   variant: "heading-md/semibold",
                   color: "header-primary",
                   children: I.NW.format(I.t.EQa7oq, {
-                    questName: R.config.messages.questName
+                    questName: k.config.messages.questName
                   })
                 }), (0, r.jsx)(c.Text, {
                   variant: "text-sm/medium",
                   color: "header-secondary",
-                  children: R.config.messages.gameTitle
+                  children: k.config.messages.gameTitle
                 })]
               })]
             }), (0, r.jsx)(c.ua7, {
@@ -160,14 +160,14 @@ function k(e) {
                 className: A.progressCont
               }, e), {
                 children: (0, r.jsx)(C.Z, {
-                  quest: R,
+                  quest: k,
                   size: 48,
                   percentComplete: Q,
                   percentCompleteText: H ? X : void 0,
                   percentCompleteTextVariant: "text-sm/medium",
                   children: (0, r.jsx)(h.Z, {
                     className: A.questProgressRewardTile,
-                    quest: R,
+                    quest: k,
                     questContent: E.jn.VIDEO_MODAL,
                     autoplay: !1,
                     location: P.dr.VIDEO_MODAL
@@ -176,7 +176,7 @@ function k(e) {
               }))
             })]
           }), (0, r.jsx)(D.Z, {
-            quest: R,
+            quest: k,
             videoSessionId: q,
             parentTransitionState: N,
             onOptimisticProgressUpdate: G,
@@ -185,7 +185,7 @@ function k(e) {
           }), (0, r.jsxs)("div", {
             className: A.contentFooter,
             children: [(0, r.jsx)(c.zxk, {
-              onClick: k,
+              onClick: R,
               color: c.zxk.Colors.PRIMARY,
               size: c.zxk.Sizes.MEDIUM,
               className: A.footerBtn,
@@ -201,13 +201,13 @@ function k(e) {
               }), (0, r.jsx)(S.i0, {
                 className: A.claimBtn,
                 size: c.zxk.Sizes.MEDIUM,
-                quest: R,
+                quest: k,
                 useReducedMotion: Y,
-                isExpanded: (null === (n = R.userStatus) || void 0 === n ? void 0 : n.completedAt) != null,
-                disabled: (null === (l = R.userStatus) || void 0 === l ? void 0 : l.completedAt) == null,
+                isExpanded: (null === (n = k.userStatus) || void 0 === n ? void 0 : n.completedAt) != null,
+                disabled: (null === (l = k.userStatus) || void 0 === l ? void 0 : l.completedAt) == null,
                 ctaLabel: j,
                 onClick: () => {
-                  (0, g.xN)(R.config) && k()
+                  (0, g.xN)(k.config) && R()
                 }
               })]
             })]
@@ -218,7 +218,7 @@ function k(e) {
   })
 }
 
-function R(e) {
+function k(e) {
   var {
     questId: t,
     overrideQuest: n,
@@ -246,7 +246,7 @@ function R(e) {
     questContent: E.jn.VIDEO_MODAL,
     minViewTimeSeconds: N.zw,
     trackGuildAndChannelMetadata: !0,
-    children: e => (0, r.jsx)(k, L(w({}, i), {
+    children: e => (0, r.jsx)(R, L(w({}, i), {
       startTime: l,
       impressionRef: e,
       quest: c,

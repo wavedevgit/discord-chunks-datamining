@@ -29,14 +29,14 @@ function v(e) {
     preloadedBuffers: f,
     duration: E,
     maxSeekableTime: g,
-    onClick: b,
-    onScrubBack: O,
+    onClick: O,
+    onScrubBack: b,
     onScrubForward: S
-  } = e, [C, j] = o.useState(null), [h, y] = o.useState(null), [x, _] = o.useState(null), [D, N] = o.useState(!1), P = o.useRef(null), T = e => {
+  } = e, [C, j] = o.useState(null), [h, y] = o.useState(null), [_, x] = o.useState(null), [D, N] = o.useState(!1), P = o.useRef(null), T = e => {
     P.current = e, j(e)
   };
   o.useEffect(() => {
-    null != C && (null == g ? _(null) : _(p(g, E, C)))
+    null != C && (null == g ? x(null) : x(p(g, E, C)))
   }, [C, g, E]);
   let I = (0, a.y)(() => {
     null != I.current && T(I.current.getBoundingClientRect())
@@ -56,13 +56,13 @@ function v(e) {
       let {
         key: t
       } = e;
-      t === u.mR.ArrowLeft && null != O ? (e.preventDefault(), e.stopPropagation(), O()) : t === u.mR.ArrowRight && null != S && (e.preventDefault(), e.stopPropagation(), S())
-    }, [O, S]),
+      t === u.mR.ArrowLeft && null != b ? (e.preventDefault(), e.stopPropagation(), b()) : t === u.mR.ArrowRight && null != S && (e.preventDefault(), e.stopPropagation(), S())
+    }, [b, S]),
     L = null != h && null != C ? m(h, C, E) : 0,
-    k = (0, c.yv)(L),
-    R = null != C ? C.right - p(t / 100 * E, E, C) : null,
+    R = (0, c.yv)(L),
+    k = null != C ? C.right - p(t / 100 * E, E, C) : null,
     M = null != h && null != C ? C.right - h : null,
-    q = null != x && null != C ? C.right - x : null;
+    q = null != _ && null != C ? C.right - _ : null;
   return (0, r.jsxs)("div", {
     className: d.cont,
     ref: I,
@@ -72,7 +72,7 @@ function v(e) {
       }),
       ignoreKeyPress: !0,
       onClick: e => {
-        l && null != b && b(m(e.clientX, e.currentTarget.getBoundingClientRect(), E))
+        l && null != O && O(m(e.clientX, e.currentTarget.getBoundingClientRect(), E))
       },
       onMouseEnter: e => {
         l && (null != I.current && T(I.current.getBoundingClientRect()), N(!0), A(e))
@@ -112,18 +112,18 @@ function v(e) {
         backgroundColor: null != v ? v : void 0,
         size: D ? s.Exd.Sizes.XSMALL : s.Exd.Sizes.XXSMALL,
         animate: n
-      }), D && null != k && (0, r.jsx)(s.Text, {
+      }), D && null != R && (0, r.jsx)(s.Text, {
         className: d.timeDisplay,
         variant: "text-xs/normal",
         style: {
           right: null != M ? "".concat(M - 10, "px") : "auto",
           color: "#FFFFFF"
         },
-        children: k
-      }), D && l && null != R && (0, r.jsx)("div", {
+        children: R
+      }), D && l && null != k && (0, r.jsx)("div", {
         className: d.grabber,
         style: {
-          right: "".concat(R - 6, "px")
+          right: "".concat(k - 6, "px")
         }
       })]
     }), (0, r.jsx)("div", {

@@ -166,10 +166,7 @@ function W(e) {
   } = e, Z = (0, j.q8)(m), V = o.useMemo(() => (0, y.fh)(m, y.eC.HERO), [m]), Q = (0, p.ZP)(), U = ((0, c.wj)(Q) ? T.BRd.DARK : T.BRd.LIGHT) === T.BRd.DARK, H = o.useContext(l.S).reducedMotion.enabled, z = (0, h.tP)(m), F = (null === (t = m.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, X = o.useRef(C), K = o.useRef(null), Y = (0, h.B6)(m.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), G = (null === (n = m.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null, J = (null === (s = m.userStatus) || void 0 === s ? void 0 : s.completedAt) != null, $ = (0, v.h)({
-    quest: m,
-    location: N.dr.QUEST_HOME_DESKTOP
-  }), ee = o.useCallback(() => {
+  }), G = (null === (n = m.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null, J = (null === (s = m.userStatus) || void 0 === s ? void 0 : s.completedAt) != null, $ = (0, v.h)(m, N.dr.QUEST_HOME_DESKTOP), ee = o.useCallback(() => {
     Z && ((0, j.zi)(m) || G || (0, x.AH)(m.id, {
       questContent: b.jn.QUEST_HOME_DESKTOP,
       questContentCTA: g.jZ.ACCEPT_QUEST

@@ -1,4 +1,4 @@
-/** Chunk was on 56627 **/
+/** Chunk was on 77930 **/
 e.exports = {
   cont: "cont__370d1",
   hitboxArea: "hitboxArea__370d1",

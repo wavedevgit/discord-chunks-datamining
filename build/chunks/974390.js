@@ -1,10 +1,11 @@
 /** Chunk was on 48923 **/
 n.d(t, {
-  h: () => a
+  h: () => i
 });
 var r = n(818083),
-  o = n(46140);
-let s = (0, r.B)({
+  o = n(520278),
+  s = n(46140);
+let a = (0, r.B)({
   id: "2025-02_quest_home_static_image",
   kind: "user",
   label: "Quest Home Static Image Experiment",
@@ -26,18 +27,6 @@ let s = (0, r.B)({
   }]
 });
 
-function a(e) {
-  let {
-    quest: t,
-    location: n
-  } = e, {
-    enabled: r
-  } = s.useExperiment({
-    location: n
-  }, {
-    autoTrackExposure: !1
-  });
-  return !!t.config.features.includes(o.S7.QUEST_HOME_FORCE_STATIC_IMAGE) && (s.trackExposure({
-    location: n
-  }), r)
+function i(e, t) {
+  return (0, o.J)(a, s.S7.QUEST_HOME_FORCE_STATIC_IMAGE, e, t)
 }

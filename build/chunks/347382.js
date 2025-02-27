@@ -1,8 +1,11 @@
 /** Chunk was on 32249 **/
 n.d(t, {
-  z: () => o
+  z: () => s
 });
-let r = (0, n(818083).B)({
+var r = n(818083),
+  o = n(520278),
+  l = n(46140);
+let i = (0, r.B)({
     id: "2025-02_quests_hls_video",
     kind: "user",
     label: "Quests Hls Video",
@@ -23,8 +26,4 @@ let r = (0, n(818083).B)({
       }
     }]
   }),
-  o = e => r.useExperiment({
-    location: e
-  }, {
-    autoTrackExposure: !1
-  }).enabled
+  s = (e, t) => (0, o.J)(i, l.S7.VIDEO_QUEST_FORCE_HLS_VIDEO, e, t)
