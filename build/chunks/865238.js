@@ -1,4 +1,4 @@
-/** Chunk was on 88119 **/
+/** Chunk was on 4566 **/
 n.d(t, {
   Z: () => S
 }), n(47120);
@@ -24,7 +24,7 @@ var r = n(200651),
   x = n(981631),
   j = n(37113),
   O = n(388032),
-  N = n(534184),
+  N = n(461760),
   E = n(574169);
 
 function I(e) {
@@ -134,7 +134,7 @@ function S(e) {
           }(0, d.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("93382"), n.e("79477"), n.e("63354")]).then(n.bind(n, 60594));
+            } = await Promise.all([n.e("93382"), n.e("79477"), n.e("52278")]).then(n.bind(n, 60594));
             return t => (0, r.jsx)(e, I({
               analyticsLocation: "HDStreamingPotionBanner"
             }, t))

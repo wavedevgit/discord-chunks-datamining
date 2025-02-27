@@ -1,20 +1,20 @@
-/** Chunk was on 61080 **/
+/** Chunk was on 30243 **/
 r.d(t, {
-  Z: () => _
+  Z: () => m
 }), r(411104);
 var n = r(200651),
-  a = r(192379),
-  o = r(442837),
-  i = r(481060),
-  l = r(239091),
-  s = r(751688),
-  c = r(184301),
+  l = r(192379),
+  i = r(442837),
+  o = r(481060),
+  a = r(239091),
+  c = r(751688),
+  s = r(184301),
   u = r(347475),
   d = r(210887),
   p = r(5192),
-  f = r(882320);
+  b = r(232255);
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -33,7 +33,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,24 +46,24 @@ function g(e, t) {
   }), e
 }
 
-function b(e) {
+function y(e) {
   let {
     participants: t,
-    channel: a
+    channel: l
   } = e;
-  return (0, n.jsx)(i.Ttm, {
-    className: f.popout,
-    children: t.map(e => (0, n.jsx)(s.Z, {
+  return (0, n.jsx)(o.Ttm, {
+    className: b.popout,
+    children: t.map(e => (0, n.jsx)(c.Z, {
       user: e,
-      guildId: null == a ? void 0 : a.guild_id,
-      channelId: null == a ? void 0 : a.id,
-      nick: p.ZP.getNickname(null == a ? void 0 : a.guild_id, null == a ? void 0 : a.id, e),
+      guildId: null == l ? void 0 : l.guild_id,
+      channelId: null == l ? void 0 : l.id,
+      nick: p.ZP.getNickname(null == l ? void 0 : l.guild_id, null == l ? void 0 : l.id, e),
       onContextMenu: t => {
-        (0, l.jW)(t, async () => {
+        (0, a.jW)(t, async () => {
           let {
             default: t
-          } = await Promise.all([r.e("79695"), r.e("69220"), r.e("31327")]).then(r.bind(r, 881351));
-          return r => (0, n.jsx)(t, g(m({}, r), {
+          } = await Promise.all([r.e("79695"), r.e("69220"), r.e("65593")]).then(r.bind(r, 881351));
+          return r => (0, n.jsx)(t, O(f({}, r), {
             user: e
           }))
         })
@@ -72,34 +72,34 @@ function b(e) {
   })
 }
 
-function _(e) {
+function m(e) {
   let {
     children: t,
     participants: r,
-    channel: l,
-    onPopoutClosed: s
-  } = e, p = (0, o.e7)([d.Z], () => d.Z.theme), f = 1 === r.length ? r[0] : null, _ = (0, a.useCallback)(e => {
-    if (null != f) return (0, n.jsx)(u.Z, g(m({}, e), {
+    channel: a,
+    onPopoutClosed: c
+  } = e, p = (0, i.e7)([d.Z], () => d.Z.theme), b = 1 === r.length ? r[0] : null, m = (0, l.useCallback)(e => {
+    if (null != b) return (0, n.jsx)(u.Z, O(f({}, e), {
       closePopout: () => {
-        e.closePopout(), null == s || s()
+        e.closePopout(), null == c || c()
       },
-      userId: f.id,
-      guildId: null == l ? void 0 : l.guild_id,
-      channelId: null == l ? void 0 : l.id
+      userId: b.id,
+      guildId: null == a ? void 0 : a.guild_id,
+      channelId: null == a ? void 0 : a.id
     }));
-    if (null != r) return (0, n.jsx)(b, {
+    if (null != r) return (0, n.jsx)(y, {
       participants: r,
-      channel: l
+      channel: a
     });
     throw Error("One of participant or participants is required")
-  }, [l, s, r, f]);
-  return (0, n.jsx)(i.ze6, {
+  }, [a, c, r, b]);
+  return (0, n.jsx)(o.ze6, {
     theme: p,
-    children: (0, n.jsx)(i.yRy, {
-      renderPopout: _,
-      preload: () => null != f ? (0, c.Z)(f, {
-        guildId: null == l ? void 0 : l.guild_id,
-        channelId: null == l ? void 0 : l.id
+    children: (0, n.jsx)(o.yRy, {
+      renderPopout: m,
+      preload: () => null != b ? (0, s.Z)(b, {
+        guildId: null == a ? void 0 : a.guild_id,
+        channelId: null == a ? void 0 : a.id
       }) : Promise.resolve(),
       children: t
     })

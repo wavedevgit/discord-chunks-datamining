@@ -7,7 +7,7 @@ var A, n = r(200651),
   o = r(192379),
   a = r(481060),
   l = r(388032),
-  i = r(589992),
+  i = r(267115),
   s = ((A = {}).DANGER = "danger", A.WARNING = "warning", A);
 
 function c(e) {

@@ -1,15 +1,14 @@
-/** Chunk was on 71567 **/
-"use strict";
-n.d(t, {
-  f: () => a
+/** Chunk was on 31835 **/
+n.d(r, {
+  f: () => o
 });
-var r = n(63063),
+var e = n(63063),
   i = n(981631),
-  s = n(388032);
+  a = n(388032);
 
-function a() {
-  return s.NW.format(s.t["+ALa7+"], {
-    fullTermsUrl: r.Z.getArticleURL(i.BhN.CREATOR_TERMS),
-    creatorRevenuePolicyUrl: r.Z.getArticleURL(i.BhN.CREATOR_POLICY)
+function o() {
+  return a.NW.format(a.t["+ALa7+"], {
+    fullTermsUrl: e.Z.getArticleURL(i.BhN.CREATOR_TERMS),
+    creatorRevenuePolicyUrl: e.Z.getArticleURL(i.BhN.CREATOR_POLICY)
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 71567 **/
+/** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
   Z: () => P
@@ -24,7 +24,7 @@ var r = n(200651),
   v = n(863562),
   _ = n(981631),
   O = n(388032),
-  y = n(867022);
+  y = n(800488);
 let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.TIER_1) ? _.Eu4.TIER_1 : e < (0, f.A3)(_.Eu4.TIER_2) ? _.Eu4.TIER_2 : e < (0, f.A3)(_.Eu4.TIER_3) || null != t && t.hasFeature(_.oNc.MORE_STICKERS) && e < c.D.MAX_STICKER_SLOTS ? _.Eu4.TIER_3 : _.Eu4.NONE,
   I = e => {
     let {
@@ -54,7 +54,7 @@ let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.T
     (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("93626"), n.e("13027")]).then(n.bind(n, 136735));
+      } = await Promise.all([n.e("93626"), n.e("58665")]).then(n.bind(n, 136735));
       return n => (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

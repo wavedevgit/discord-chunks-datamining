@@ -1,5 +1,5 @@
-/** Chunk was on 71567 **/
-var r = n(975412)({
+/** Chunk was on 63141 **/
+var i = n(975412)({
   À: "A",
   Á: "A",
   Â: "A",
@@ -191,4 +191,4 @@ var r = n(975412)({
   ŉ: "'n",
   ſ: "s"
 });
-e.exports = r
+e.exports = i

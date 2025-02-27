@@ -95,7 +95,7 @@ function E(e) {
       (0, a.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("97652"), n.e("25726")]).then(n.bind(n, 478923));
+        } = await Promise.all([n.e("97652"), n.e("89540")]).then(n.bind(n, 478923));
         return n => (0, r.jsx)(e, m(h({}, n), {
           user: t,
           guildId: g,

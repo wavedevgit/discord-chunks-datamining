@@ -12,7 +12,7 @@ var r = n(200651),
   u = n(39377),
   d = n(981631),
   p = n(388032),
-  h = n(594181);
+  h = n(946606);
 let f = [{
     feature: d.Qa3.SINGLE_PLAYER,
     getText: () => p.NW.string(p.t["V+/FjI"]),

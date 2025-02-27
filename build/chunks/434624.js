@@ -1,4 +1,4 @@
-/** Chunk was on 8655 **/
+/** Chunk was on 72453 **/
 n.d(t, {
   l: () => _
 }), n(47120);
@@ -13,8 +13,8 @@ var r = n(200651),
   u = n(56314),
   p = n(566006),
   m = n(287151),
-  f = n(773265),
-  h = n(893372);
+  f = n(672164),
+  h = n(482532);
 let g = i.memo(function(e) {
     let t, n, {
         useChatFontScaling: i,

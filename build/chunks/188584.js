@@ -2,15 +2,15 @@
 n.d(t, {
   k: () => a
 });
-var i = n(192379),
-  r = n(328456);
+var r = n(192379),
+  i = n(328456);
 let a = e => {
   let {
     firstProfileEffect: t,
     firstAvatarDecoration: n
-  } = i.useMemo(() => {
+  } = r.useMemo(() => {
     var t;
-    return new r.b(null !== (t = e.bundledProducts) && void 0 !== t ? t : [])
+    return new i.b(null !== (t = e.bundledProducts) && void 0 !== t ? t : [])
   }, [e]);
   return {
     firstProfileEffect: t,

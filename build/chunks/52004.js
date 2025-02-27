@@ -11,7 +11,7 @@ var s = n(442837),
   c = n(63063),
   o = n(981631),
   m = n(388032),
-  p = n(664322);
+  p = n(867641);
 let x = c.Z.getArticleURL(o.BhN.MISSING_ENTITLEMENT),
   d = s.ZP.connectStores([l.Z], t => {
     let {

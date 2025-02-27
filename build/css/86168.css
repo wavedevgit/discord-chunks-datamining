@@ -1,0 +1,317 @@
+/**
+  Module ID: 86168
+  Original File Name: 8bb261a4e4393514
+**/
+.searchBar__3e00d {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    margin-bottom: 8px
+}
+
+.modalRoot__01dab {
+    height: 478px
+}
+
+.button__01dab {
+    margin-left: 8px
+}
+
+.header__01dab {
+    margin-top: 16px
+}
+
+.alignCenter__01dab,.headerSubtitle__01dab {
+    display: flex;
+    align-items: center
+}
+
+.headerSubtitleIcon__01dab {
+    padding-right: 4px
+}
+
+.content__01dab {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%
+}
+
+.searchBox__01dab {
+    padding: 0 16px 12px
+}
+
+.roleMemberList__01dab {
+    margin: 0
+}
+
+.addMemberRow__01dab {
+    margin-left: 12px;
+    margin-right: 4px;
+    padding: 8px 6px;
+    border-radius: 4px;
+    cursor: pointer
+}
+
+.addMemberRow__01dab.selectedRow__01dab {
+    background-color: var(--background-modifier-selected)
+}
+
+.rowBody__01dab {
+    display: flex;
+    align-items: center
+}
+
+.checkboxLabel__01dab {
+    padding-left: 8px
+}
+
+.rowHeight__01dab {
+    height: 24px
+}
+
+.rowLabel__01dab {
+    margin-left: 8px;
+    margin-right: 4px
+}
+
+.rowLabelSubText__01dab {
+    margin-left: 4px;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.sectionTitle__01dab {
+    color: var(--text-normal);
+    padding-top: 8px;
+    padding-left: 16px
+}
+
+.noResultIcon__01dab {
+    margin-bottom: 16px;
+    width: 85px;
+    height: 85px
+}
+
+.description__01dab {
+    margin-bottom: 24px;
+    padding: 0 16px
+}
+
+.theme-dark .scrollSeparator__01dab {
+    box-shadow: 0 1px 0 0 hsl(var(--primary-800-hsl)/.3),0 1px 2px 0 hsl(var(--primary-800-hsl)/.3)
+}
+
+.theme-light .scrollSeparator__01dab {
+    box-shadow: 0 1px 0 0 hsl(var(--primary-300-hsl)/.3)
+}
+
+.modalRoot__7169d {
+    height: 478px
+}
+
+.header__7169d {
+    margin-top: 16px
+}
+
+.headerSubtitle__7169d {
+    display: flex;
+    align-items: center
+}
+
+.headerSubtitleIcon__7169d {
+    padding-right: 4px
+}
+
+.error__7169d {
+    margin-left: 16px;
+    margin-right: 16px
+}
+
+.modal_ac72c6 {
+    width: 460px;
+    border-radius: 12px;
+    overflow: hidden;
+    overflow-y: scroll
+}
+
+.visual-refresh .modal_ac72c6 {
+    width: 496px
+}
+
+.modalContent_ac72c6 {
+    max-height: 680px
+}
+
+.modalFooter_ac72c6 {
+    border-radius: 0 0 12px 12px
+}
+
+.footer_ac72c6 {
+    padding: 20px
+}
+
+.description_ac72c6,.name_ac72c6,.type_ac72c6 {
+    margin-bottom: 20px
+}
+
+.channelNameNote_ac72c6 {
+    margin-top: 8px
+}
+
+.icon_ac72c6 {
+    opacity: .6;
+    margin-right: 12px;
+    fill: var(--primary-300)
+}
+
+.error_ac72c6 {
+    margin-top: 8px
+}
+
+.header_ac72c6 {
+    margin-top: 4px;
+    margin-bottom: 4px
+}
+
+.title_ac72c6 {
+    font-weight: 500
+}
+
+.subtitle_ac72c6 {
+    display: flex;
+    align-items: center;
+    color: var(--text-muted-on-default)
+}
+
+.subtitleIcon_ac72c6 {
+    padding-right: 4px
+}
+
+.closeButton_ac72c6 {
+    position: absolute;
+    right: 8px;
+    top: 16px
+}
+
+.sectionTitle_ac72c6 {
+    color: var(--text-normal);
+    margin-bottom: 8px
+}
+
+.clone_ac72c6 {
+    margin-top: 4px;
+    opacity: .6
+}
+
+.permissionsTitle_ac72c6 {
+    margin-bottom: 20px
+}
+
+.background_ac72c6,.foreground_ac72c6 {
+    opacity: 1
+}
+
+.inputWrapper_ac72c6 {
+    position: relative
+}
+
+.inputInner_ac72c6 {
+    padding-left: 28px
+}
+
+.inputPrefix_ac72c6 {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    color: var(--text-normal)
+}
+
+.switchIcon_ac72c6 {
+    position: relative;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    opacity: .6;
+    margin-right: 3px
+}
+
+.channelTypeDescription_ac72c6,.storeChannelOptionSelector_ac72c6 {
+    margin-bottom: 20px
+}
+
+.username_ac72c6 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 20px
+}
+
+.emptyRoles_ac72c6 {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.owner_ac72c6 {
+    margin-top: 8px
+}
+
+.addMembersContainer_ac72c6 {
+    height: 380px;
+    overflow: hidden;
+    padding: 0
+}
+
+.addMemberError_ac72c6 {
+    padding-left: 8px;
+    padding-right: 8px
+}
+
+.createError_ac72c6 {
+    margin: 16px
+}
+
+.radioLabelName_ac72c6 {
+    display: flex;
+    align-items: center
+}
+
+.radioLabelDescription_ac72c6 {
+    margin-top: 4px;
+    white-space: pre-wrap
+}
+
+.newBadge_ac72c6 {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: middle
+}
+
+.radioBar_ac72c6 {
+    display: flex;
+    padding: 10px 12px
+}
+
+.radioBarLabel_ac72c6 {
+    order: 1
+}
+
+.radioBarIcon_ac72c6 {
+    order: 2
+}
+
+.radioItemName_ac72c6 {
+    display: flex;
+    align-items: center
+}
+
+.channelNameNote_ac72c6 strong {
+    color: var(--text-normal)
+}
+
+/*# sourceMappingURL=8bb261a4e4393514.css.map*/

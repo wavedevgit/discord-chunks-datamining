@@ -1,8 +1,8 @@
-/** Chunk was on 77930 **/
-t.d(n, {
+/** Chunk was on 48923 **/
+n.d(t, {
   P: () => o
 });
-let r = (0, t(818083).B)({
+let r = (0, n(818083).B)({
     id: "2024-06_quest_inline_console_connection",
     kind: "user",
     label: "Quest Inline Console Connection Experiment",
@@ -25,14 +25,14 @@ let r = (0, t(818083).B)({
   }),
   o = e => {
     let {
-      location: n,
-      autoTrackExposure: t = !1
+      location: t,
+      autoTrackExposure: n = !1
     } = e, {
       enabled: o
     } = r.useExperiment({
-      location: n
+      location: t
     }, {
-      autoTrackExposure: t
+      autoTrackExposure: n
     });
     return o
   }

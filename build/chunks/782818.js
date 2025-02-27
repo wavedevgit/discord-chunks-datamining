@@ -20,7 +20,7 @@ var r = n(200651),
   x = n(981631),
   h = n(486324),
   y = n(388032),
-  O = n(671254);
+  O = n(170286);
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -124,10 +124,10 @@ function N(e) {
     error: N
   } = (0, g.S)(), {
     recentAvatarsLimit: E,
-    numberOfLockedAvatarSlots: w
-  } = (0, p.pC)(t), [P, S] = l.useState(null), T = null != P ? P : null == N ? void 0 : N.message, _ = f.length > E ? f.slice(0, E) : f, F = _.length, R = Math.max(E - F, 0), L = (0, c.vRw)(), Z = l.useCallback(async e => {
+    numberOfLockedAvatarSlots: S
+  } = (0, p.pC)(t), [P, w] = l.useState(null), T = null != P ? P : null == N ? void 0 : N.message, F = f.length > E ? f.slice(0, E) : f, _ = F.length, R = Math.max(E - _, 0), Z = (0, c.vRw)(), L = l.useCallback(async e => {
     if (null == u) return;
-    S(null);
+    w(null);
     let {
       id: t,
       storageHash: l,
@@ -151,7 +151,7 @@ function N(e) {
       s(), (0, c.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("59732"), n.e("64642")]).then(n.bind(n, 712451));
+        } = await Promise.all([n.e("59732"), n.e("71741")]).then(n.bind(n, 712451));
         return n => (0, r.jsx)(t, v({
           imageUri: d,
           file: new File([u], f, {
@@ -163,12 +163,12 @@ function N(e) {
           showUpsellHeader: !0
         }, n))
       }, {
-        contextKey: L
+        contextKey: Z
       })
     } catch (e) {
-      S(y.NW.string(y.t.fZRH9P))
+      w(y.NW.string(y.t.fZRH9P))
     }
-  }, [L, s, a, u]);
+  }, [Z, s, a, u]);
   return (l.useEffect(() => {
     (0, m.N)()
   }, []), j) ? (0, r.jsx)(c.$jN, {
@@ -183,14 +183,14 @@ function N(e) {
       className: i()(O.recentAvatarSlots, {
         [O.withPremiumUpsell]: !t
       }),
-      children: [F > 0 && (0, r.jsx)("ul", {
+      children: [_ > 0 && (0, r.jsx)("ul", {
         "aria-label": y.NW.string(y.t.lsU63N),
         className: O.recentAvatarList,
-        children: _.map((e, t) => (0, r.jsx)("li", {
+        children: F.map((e, t) => (0, r.jsx)("li", {
           children: (0, r.jsx)(C, {
             avatar: e,
             orderNumber: t + 1,
-            onSelectRecentAvatar: Z
+            onSelectRecentAvatar: L
           })
         }, e.id))
       }), R > 0 && (0, r.jsxs)("div", {
@@ -203,7 +203,7 @@ function N(e) {
           className: O.avatarPlaceholder
         }, t))]
       }), !t && (0, r.jsx)(A, {
-        numberOfLockedAvatarSlots: w
+        numberOfLockedAvatarSlots: S
       })]
     })]
   })
@@ -223,9 +223,8 @@ function E(e) {
     className: i()(O.container, t),
     children: [(0, r.jsxs)("div", {
       className: O.text,
-      children: [(0, r.jsx)(c.X6q, {
-        variant: "eyebrow",
-        color: "header-secondary",
+      children: [(0, r.jsx)(c.vwX, {
+        className: O.recentAvatarsHeading,
         children: y.NW.string(y.t.Bnq9zM)
       }), (0, r.jsxs)(c.Text, {
         variant: "text-sm/normal",

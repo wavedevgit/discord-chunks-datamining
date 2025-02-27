@@ -1,10 +1,10 @@
-/** Chunk was on 15066 **/
+/** Chunk was on 72453 **/
 n.d(t, {
   Z: () => c
 }), n(47120);
 var r, i = n(200651),
-  o = n(192379),
-  a = n(846519);
+  a = n(192379),
+  o = n(846519);
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -14,7 +14,7 @@ function l(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class s extends(r = o.Component) {
+class s extends(r = a.Component) {
   static getDerivedStateFromProps(e) {
     return e.disable ? {
       hovered: !1
@@ -34,8 +34,8 @@ class s extends(r = o.Component) {
     let n;
     let {
       props: r
-    } = this, i = (n = this.state, !r.disable && !(n.hovered && r.pauseOnHover)), o = !e.disable && !(t.hovered && e.pauseOnHover);
-    i && !o || e.interval !== r.interval ? this.startTimer() : !i && o && this.stopTimer()
+    } = this, i = (n = this.state, !r.disable && !(n.hovered && r.pauseOnHover)), a = !e.disable && !(t.hovered && e.pauseOnHover);
+    i && !a || e.interval !== r.interval ? this.startTimer() : !i && a && this.stopTimer()
   }
   startTimer() {
     let {
@@ -55,8 +55,8 @@ class s extends(r = o.Component) {
     let {
       children: n,
       className: r,
-      disable: o
-    } = this.props, a = o ? null : {
+      disable: a
+    } = this.props, o = a ? null : {
       onMouseEnter: this.handlePause,
       onFocus: this.handlePause,
       onMouseLeave: this.handleResume,
@@ -73,7 +73,7 @@ class s extends(r = o.Component) {
         })
       }
       return e
-    }({}, a), t = t = {
+    }({}, o), t = t = {
       className: r,
       children: n
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -88,7 +88,7 @@ class s extends(r = o.Component) {
     }), e))
   }
   constructor(...e) {
-    super(...e), l(this, "timer", new a.Xp), l(this, "state", {
+    super(...e), l(this, "timer", new o.Xp), l(this, "state", {
       hovered: !1
     }), l(this, "handlePause", () => {
       this.state.hovered || this.setState({

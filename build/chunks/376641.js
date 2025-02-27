@@ -1,15 +1,15 @@
-/** Chunk was on 90728 **/
+/** Chunk was on 87267 **/
 n.d(t, {
-  P: () => i,
-  v: () => l
+  P: () => o,
+  v: () => a
 });
 var r = n(817718),
-  a = n(981631);
-let i = {
-    [a.EkH.MODAL_CAROUSEL_NEXT]: r.XM,
-    [a.EkH.MODAL_CAROUSEL_PREV]: r.py,
-    [a.EkH.CLOSE_MODAL]: r.U3
+  i = n(981631);
+let o = {
+    [i.EkH.MODAL_CAROUSEL_NEXT]: r.XM,
+    [i.EkH.MODAL_CAROUSEL_PREV]: r.py,
+    [i.EkH.CLOSE_MODAL]: r.U3
   },
-  l = {
-    [a.EkH.CLOSE_MODAL]: r.U3
+  a = {
+    [i.EkH.CLOSE_MODAL]: r.U3
   }

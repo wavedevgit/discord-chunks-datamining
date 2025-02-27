@@ -1,58 +1,58 @@
-/** Chunk was on 72891 **/
-i.d(n, {
-  Z: () => h
+/** Chunk was on 81288 **/
+n.d(t, {
+  Z: () => v
 });
-var t = i(200651),
-  o = i(192379),
-  r = i(442837),
-  a = i(481060),
-  l = i(100527),
-  c = i(906732),
-  s = i(118012),
-  d = i(411477),
-  u = i(197115),
-  g = i(594174),
-  _ = i(626135),
-  f = i(74538),
-  b = i(981631),
-  p = i(486324),
-  N = i(474936),
-  m = i(388032),
-  T = i(301995);
+var i = n(200651),
+  o = n(192379),
+  r = n(442837),
+  a = n(481060),
+  l = n(100527),
+  c = n(906732),
+  s = n(118012),
+  d = n(411477),
+  u = n(197115),
+  _ = n(594174),
+  g = n(626135),
+  m = n(74538),
+  b = n(981631),
+  f = n(486324),
+  p = n(474936),
+  h = n(388032),
+  N = n(575658);
 
-function h(e) {
+function v(e) {
   let {
-    analyticsSection: n,
-    type: i
-  } = e, h = (0, r.e7)([g.default], () => g.default.getCurrentUser()), E = f.ZP.canUseAnimatedAvatar(h), x = f.ZP.canUsePremiumProfileCustomization(h), j = i === p.pC.BANNER && x || i === p.pC.AVATAR && E, {
-    sourceAnalyticsLocations: I
+    analyticsSection: t,
+    type: n
+  } = e, v = (0, r.e7)([_.default], () => _.default.getCurrentUser()), y = m.ZP.canUseAnimatedAvatar(v), C = m.ZP.canUsePremiumProfileCustomization(v), x = n === f.pC.BANNER && C || n === f.pC.AVATAR && y, {
+    sourceAnalyticsLocations: T
   } = (0, c.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
   if (o.useEffect(() => {
-      j || _.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: n,
-        location_stack: I
+      x || g.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, {
+        type: t,
+        location_stack: T
       })
-    }, [j, n, I]), j) return null;
-  let P = (0, t.jsx)(u.Z, {
-    className: T.__invalid_getNitroLink,
+    }, [x, t, T]), x) return null;
+  let B = (0, i.jsx)(u.Z, {
+    className: N.__invalid_getNitroLink,
     size: a.zxk.Sizes.SMALL,
     look: a.zxk.Looks.LINK,
     color: a.zxk.Colors.LINK,
-    subscriptionTier: N.Si.TIER_2,
-    buttonText: m.NW.format(m.t["944tDg"], {}),
+    subscriptionTier: p.Si.TIER_2,
+    buttonText: h.NW.format(h.t["944tDg"], {}),
     showIcon: !1,
     premiumModalAnalyticsLocation: {
-      section: n,
+      section: t,
       object: b.qAy.BUTTON_CTA
     },
     disableShine: !0
   });
-  return (0, t.jsx)(d.Z, {
+  return (0, i.jsx)(d.Z, {
     reducedRightPadding: !0,
-    className: T.nitroPreviewUpsell,
-    text: m.NW.format(m.t.Og8039, {}),
+    className: N.nitroPreviewUpsell,
+    text: h.NW.format(h.t.Og8039, {}),
     textSize: s.Z.Sizes.SIZE_14,
     textColor: s.Z.Colors.HEADER_PRIMARY,
-    button: P
+    button: B
   })
 }

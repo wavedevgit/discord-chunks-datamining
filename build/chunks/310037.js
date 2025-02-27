@@ -1,6 +1,4 @@
-/** Chunk was on 1272 **/
-e.exports = {
-  container: "container__24368",
-  actions: "actions__24368",
-  button: "button__24368"
+/** Chunk was on 59500 **/
+i.exports = {
+  content: "content_eecc8a"
 }

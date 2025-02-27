@@ -34,7 +34,7 @@ var A = r(200651),
   T = r(152980),
   F = r(120651),
   K = r(871388),
-  Z = r(161911),
+  Z = r(412110),
   z = r(513669),
   X = r(972797),
   w = r(943516),
@@ -42,7 +42,7 @@ var A = r(200651),
   Q = r(981631),
   k = r(674563),
   B = r(388032),
-  R = r(2848);
+  R = r(345701);
 
 function L(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -228,7 +228,7 @@ function _(e) {
       productId: eA
     }, e)), e1)
   }, [_, e1, eA]);
-  let e3 = async e => {
+  let e9 = async e => {
     let t = (0, y.pM)({
       newRoleParams: ek
     });
@@ -250,7 +250,7 @@ function _(e) {
   }, [eX, _, el]), n.useEffect(() => {
     eM && eY(void 0)
   }, [eM]);
-  let e9 = n.useRef(null);
+  let e3 = n.useRef(null);
   return (0, A.jsxs)(u.Y0X, {
     transitionState: et,
     size: u.CgR.DYNAMIC,
@@ -281,7 +281,7 @@ function _(e) {
       children: [(0, A.jsx)(u.zJl, {
         children: (0, A.jsxs)("div", {
           className: R.productFieldsSection,
-          ref: e9,
+          ref: e3,
           children: [(0, A.jsx)(u.xJW, {
             title: B.NW.string(B.t.Hsk7xc),
             tag: "label",
@@ -355,7 +355,7 @@ function _(e) {
             children: (0, A.jsx)(T.s, {
               onFileAdded: () => {
                 var e;
-                null === (e = e9.current) || void 0 === e || e.scrollIntoView({
+                null === (e = e3.current) || void 0 === e || e.scrollIntoView({
                   behavior: "smooth",
                   block: "end"
                 })
@@ -380,7 +380,7 @@ function _(e) {
             disabledTooltip: ea ? B.NW.string(B.t["0NQ00t"]) : B.NW.string(B.t["Ax89/f"]),
             published: ea,
             onClick: () => {
-              i()(e$, "Attempting to publish/unpublish when not allowed"), eY(ea ? "unpublish" : "publish"), e3(E(L({}, eH), {
+              i()(e$, "Attempting to publish/unpublish when not allowed"), eY(ea ? "unpublish" : "publish"), e9(E(L({}, eH), {
                 published: !ea
               }))
             },
@@ -460,7 +460,7 @@ function _(e) {
             disabled: !e_,
             submitting: eS,
             onClick: () => {
-              i()(e_, "cannot save changes for published product without adding all fields"), eY("update_publish"), e3(eH)
+              i()(e_, "cannot save changes for published product without adding all fields"), eY("update_publish"), e9(eH)
             },
             children: B.NW.string(B.t.XYBEaW)
           }) : (0, A.jsx)(u.zxk, {
@@ -468,7 +468,7 @@ function _(e) {
             disabled: !eJ,
             submitting: eS,
             onClick: () => {
-              i()(eJ, "cannot save changes without name or price tier"), eY("draft"), e3(eH)
+              i()(eJ, "cannot save changes without name or price tier"), eY("draft"), e9(eH)
             },
             children: B.NW.string(B.t.ZCjwoa)
           })

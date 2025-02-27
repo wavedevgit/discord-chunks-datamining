@@ -24,7 +24,7 @@ var i = n(200651),
   S = n(626135),
   U = n(981631),
   y = n(388032),
-  C = n(541383);
+  C = n(97191);
 let O = "VoiceChannelStatusModal";
 
 function D(e) {

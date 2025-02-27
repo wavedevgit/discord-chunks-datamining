@@ -1,64 +1,64 @@
-/** Chunk was on 72891 **/
-i.d(n, {
-  Z: () => p
+/** Chunk was on 81288 **/
+n.d(t, {
+  Z: () => f
 });
-var t = i(200651);
-i(192379);
-var o = i(442837),
-  r = i(481060),
-  a = i(906732),
-  l = i(48217),
-  c = i(26323),
-  s = i(430824),
-  d = i(914010),
-  u = i(709586),
-  g = i(981631),
-  _ = i(30513),
-  f = i(388032),
-  b = i(43375);
+var i = n(200651);
+n(192379);
+var o = n(442837),
+  r = n(481060),
+  a = n(906732),
+  l = n(48217),
+  c = n(26323),
+  s = n(430824),
+  d = n(914010),
+  u = n(709586),
+  _ = n(981631),
+  g = n(30513),
+  m = n(388032),
+  b = n(150059);
 
-function p(e) {
+function f(e) {
   let {
-    analyticsSection: n,
-    analyticsPage: i,
-    isGIF: p,
-    banner: N
-  } = e, m = (0, o.e7)([d.Z], () => d.Z.getGuildId()), T = (0, o.e7)([s.Z], () => s.Z.getGuild(m)), {
-    analyticsLocations: h
+    analyticsSection: t,
+    analyticsPage: n,
+    isGIF: f,
+    banner: p
+  } = e, h = (0, o.e7)([d.Z], () => d.Z.getGuildId()), N = (0, o.e7)([s.Z], () => s.Z.getGuild(h)), {
+    analyticsLocations: v
   } = (0, a.ZP)();
-  return null == T || T.hasFeature(g.oNc.ANIMATED_BANNER) || !p && T.hasFeature(g.oNc.BANNER) ? null : (0, t.jsxs)("div", {
+  return null == N || N.hasFeature(_.oNc.ANIMATED_BANNER) || !f && N.hasFeature(_.oNc.BANNER) ? null : (0, i.jsxs)("div", {
     className: b.container,
-    children: [(0, t.jsx)(u.Z, {
+    children: [(0, i.jsx)(u.Z, {
       className: b.guildBoostingIcon
-    }), (0, t.jsx)(r.Text, {
+    }), (0, i.jsx)(r.Text, {
       color: "header-primary",
       variant: "text-sm/semibold",
-      children: f.NW.string(f.t["56M7xc"])
-    }), (0, t.jsx)(r.zxk, {
+      children: m.NW.string(m.t["56M7xc"])
+    }), (0, i.jsx)(r.zxk, {
       look: r.zxk.Looks.LINK,
       color: r.zxk.Colors.LINK,
       className: b.subscribeButton,
       onClick: () => {
-        if (null == T) return;
+        if (null == N) return;
         let e = {
-          section: n,
-          page: i,
-          object: g.qAy.UPSELL_HEADER
+          section: t,
+          page: n,
+          object: _.qAy.UPSELL_HEADER
         };
-        null != N ? (0, l.c)({
-          analyticsLocations: h,
+        null != p ? (0, l.c)({
+          analyticsLocations: v,
           analyticsLocation: e,
-          guild: T,
-          isGIF: p,
-          banner: N
+          guild: N,
+          isGIF: f,
+          banner: p
         }) : (0, c.Z)({
-          analyticsLocations: h,
+          analyticsLocations: v,
           analyticsSourceLocation: e,
-          guild: T,
-          perks: p ? (0, _.zC)() : (0, _.XO)()
+          guild: N,
+          perks: f ? (0, g.zC)() : (0, g.XO)()
         })
       },
-      children: f.NW.string(f.t.WUHdZW)
+      children: m.NW.string(m.t.WUHdZW)
     })]
   })
 }

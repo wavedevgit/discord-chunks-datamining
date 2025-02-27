@@ -8,7 +8,7 @@ var r = n(200651);
 n(192379);
 var i = n(596454),
   o = n(307707),
-  a = n(21379);
+  a = n(503630);
 let s = {
   SMALL: a.small,
   MEDIUM: a.medium,

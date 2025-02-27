@@ -1,38 +1,38 @@
-/** Chunk was on 72891 **/
-i.d(n, {
+/** Chunk was on 81288 **/
+n.d(t, {
   Z: () => d
 });
-var t = i(200651);
-i(192379);
-var o = i(120356),
-  r = i.n(o),
-  a = i(481060),
-  l = i(436774),
-  c = i(118012),
-  s = i(501126);
+var i = n(200651);
+n(192379);
+var o = n(120356),
+  r = n.n(o),
+  a = n(481060),
+  l = n(436774),
+  c = n(118012),
+  s = n(230587);
 
 function d(e) {
   let {
-    text: n,
-    textSize: i = c.Z.Sizes.SIZE_12,
+    text: t,
+    textSize: n = c.Z.Sizes.SIZE_12,
     textColor: o = c.Z.Colors.STANDARD,
     className: d,
     button: u,
-    reducedRightPadding: g = !1
+    reducedRightPadding: _ = !1
   } = e;
-  return (0, t.jsxs)("div", {
-    className: r()(g ? s.noticeWithoutRightPadding : s.noticeWithRightPadding, d),
-    children: [(0, t.jsxs)("div", {
+  return (0, i.jsxs)("div", {
+    className: r()(_ ? s.noticeWithoutRightPadding : s.noticeWithRightPadding, d),
+    children: [(0, i.jsxs)("div", {
       className: s.noticeLeft,
-      children: [(0, t.jsx)(a.SrA, {
+      children: [(0, i.jsx)(a.SrA, {
         size: "md",
         className: s.icon,
         color: l.JX.PREMIUM_TIER_2
-      }), (0, t.jsx)(c.Z, {
+      }), (0, i.jsx)(c.Z, {
         className: s.text,
-        size: i,
+        size: n,
         color: o,
-        children: n
+        children: t
       })]
     }), u]
   })

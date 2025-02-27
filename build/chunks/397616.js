@@ -1,24 +1,24 @@
-/** Chunk was on 29069 **/
-t.d(n, {
-  Z: () => u
+/** Chunk was on 59479 **/
+n.d(r, {
+  Z: () => c
 });
-var r = t(200651);
-t(192379);
-var i = t(442837),
-  l = t(481060),
-  o = t(493683),
-  a = t(592125),
-  s = t(594174),
-  c = t(388032);
+var t = n(200651);
+n(192379);
+var i = n(442837),
+  s = n(481060),
+  o = n(493683),
+  a = n(592125),
+  d = n(594174),
+  l = n(388032);
 
-function u(e, n) {
-  var t;
-  let u = (0, i.e7)([s.default], () => s.default.getCurrentUser(), []),
-    d = (0, i.e7)([a.Z], () => a.Z.getChannel(n), [n]);
-  return null == d || d.isOwner(e) || null == u || !d.isOwner(u.id) || !(null === (t = d.recipients) || void 0 === t ? void 0 : t.includes(e)) ? null : (0, r.jsx)(l.sNh, {
+function c(e, r) {
+  var n;
+  let c = (0, i.e7)([d.default], () => d.default.getCurrentUser(), []),
+    u = (0, i.e7)([a.Z], () => a.Z.getChannel(r), [r]);
+  return null == u || u.isOwner(e) || null == c || !u.isOwner(c.id) || !(null === (n = u.recipients) || void 0 === n ? void 0 : n.includes(e)) ? null : (0, t.jsx)(s.sNh, {
     id: "remove",
-    label: c.NW.string(c.t.n5zMIy),
-    action: () => o.Z.removeRecipient(n, e),
+    label: l.NW.string(l.t.n5zMIy),
+    action: () => o.Z.removeRecipient(r, e),
     color: "danger"
   })
 }

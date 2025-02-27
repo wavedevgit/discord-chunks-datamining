@@ -66,7 +66,7 @@ class _ extends o.Z {
     (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("63288"), n.e("1337"), n.e("98536")]).then(n.bind(n, 746882));
+      } = await Promise.all([n.e("63288"), n.e("1337"), n.e("59056")]).then(n.bind(n, 746882));
       return n => (0, r.jsx)(e, m({
         source: t
       }, n))

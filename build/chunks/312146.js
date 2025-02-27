@@ -1,11 +1,11 @@
-/** Chunk was on 88313 **/
-a.d(t, {
-  Ui: () => i,
-  p$: () => c
+/** Chunk was on 86168 **/
+o.d(a, {
+  Ui: () => n,
+  p$: () => i
 });
-var r = a(818083),
-  n = a(981631);
-let o = (0, r.B)({
+var r = o(818083),
+  t = o(981631);
+let c = (0, r.B)({
   kind: "guild",
   id: "2023-03_guild_media_channel",
   label: "Media Channel",
@@ -21,19 +21,19 @@ let o = (0, r.B)({
   }]
 });
 
-function i(e) {
-  var t;
+function n(e) {
+  var a;
   let {
-    enabled: a
-  } = o.useExperiment({
-    guildId: null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : n.lds,
+    enabled: o
+  } = c.useExperiment({
+    guildId: null !== (a = null == e ? void 0 : e.id) && void 0 !== a ? a : t.lds,
     location: "96e84c_1"
   }, {
     autoTrackExposure: !0
   });
-  return (null == e ? void 0 : e.id) != null && a
+  return (null == e ? void 0 : e.id) != null && o
 }
-let l = (0, r.B)({
+let d = (0, r.B)({
   kind: "user",
   id: "2023-04_guild_media_channel_post_preview_embed_users",
   label: "Guild Role Subscription Users",
@@ -49,10 +49,10 @@ let l = (0, r.B)({
   }]
 });
 
-function c() {
+function i() {
   let {
     enabledForUser: e
-  } = l.useExperiment({
+  } = d.useExperiment({
     location: "96e84c_2"
   }, {
     autoTrackExposure: !0

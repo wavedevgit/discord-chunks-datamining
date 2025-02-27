@@ -280,11 +280,12 @@ class E extends s.Z {
     try {
       await n.setRemoteDescription(i)
     } catch (l) {
-      this.logger.warn("Failed to set remote answer: ".concat(l, ", type: ").concat(i.type, ", sdp: ").concat(i.sdp)), this.emit(a.Sh.SdpError, "setRemoteDescription", l.message, i.type, i.sdp), null != o && this.emit(a.Sh.SdpError, "setLocalDescription", l.message, o.type, o.sdp);
+      this.logger.warn("Failed to set remote answer: ".concat(l, ", type: ").concat(i.type)), this.emit(a.Sh.SdpError, "setRemoteDescription", l.message, i.type, i.sdp), null != o && this.emit(a.Sh.SdpError, "setLocalDescription", l.message, o.type, o.sdp);
       let n = JSON.stringify((0, c.y)().map(e => "".concat(e.time, ": ").concat(e.message).trim())),
         s = "unassignedStreams: ".concat(e, ", assignedStreams: ").concat(t, ", ssrcs: ").concat(JSON.stringify(r), ", logs: ").concat(n);
-      this.emit(a.Sh.SdpError, "generateSDPAnswer", l.message, "streams20250226", s)
-    }(this.unassignedStreams.audio.length > 0 || this.unassignedStreams.video.length > 0) && (this.negotiationNeeded = !0, this.logger.info("Renegotiating: Streams left unassigned after negotiation - renegotiate")), this.negotiating = !1, this.negotiationNeeded && this.handleNegotiationNeeded()
+      this.emit(a.Sh.SdpError, "generateSDPAnswer", l.message, "streams20250227", s)
+    }
+    this.logger.info("setRemoteDescription succeeded: unassigned streams: ".concat(JSON.stringify(this.unassignedStreams), ", assigned streams: ").concat(JSON.stringify(this.assignedStreams))), (this.unassignedStreams.audio.length > 0 || this.unassignedStreams.video.length > 0) && (this.negotiationNeeded = !0, this.logger.info("Renegotiating: Streams left unassigned after negotiation - renegotiate")), this.negotiating = !1, this.negotiationNeeded && this.handleNegotiationNeeded()
   }
   setConnected() {
     this.input.reset(), this.setConnectionState(d.$j.CONNECTED), this.on(a.Sh.Stats, this.handleStats), this.input.on(l.G.VoiceActivity, this.handleVoiceActivity)

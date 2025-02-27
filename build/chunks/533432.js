@@ -15,7 +15,7 @@ var r = n(200651),
   f = n(149203),
   _ = n(981631),
   p = n(388032),
-  h = n(82845);
+  h = n(927454);
 let g = i.forwardRef(function(e, t) {
     let {
       emojiListRef: n,

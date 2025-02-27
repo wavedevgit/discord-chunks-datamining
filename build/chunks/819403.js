@@ -1,43 +1,43 @@
-/** Chunk was on 98783 **/
-n.d(t, {
-  Z: () => Z
+/** Chunk was on 99245 **/
+t.d(n, {
+  Z: () => g
 });
-var i = n(200651);
-n(192379);
-var l = n(442837),
-  r = n(481060),
-  o = n(430824),
-  a = n(594174),
-  u = n(979651),
-  s = n(471253),
-  c = n(200498),
-  d = n(88751),
-  f = n(267980),
-  g = n(623633),
-  b = n(388032);
+var i = t(200651);
+t(192379);
+var l = t(442837),
+  r = t(481060),
+  u = t(430824),
+  a = t(594174),
+  o = t(979651),
+  d = t(471253),
+  c = t(200498),
+  s = t(88751),
+  _ = t(267980),
+  E = t(623633),
+  f = t(388032);
 
-function Z(e) {
-  var t;
-  let n = (0, g.Z)(),
-    Z = null == n ? void 0 : n.id,
-    v = null == n ? void 0 : n.guild_id,
-    p = (0, l.e7)([o.Z], () => o.Z.getGuild(v), [v]),
-    N = (0, l.e7)([u.Z], () => null != Z ? u.Z.getVoiceStateForChannel(Z, e.id) : null, [Z, e.id]),
-    O = (null === (t = a.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === e.id,
-    m = (0, f.Z)(),
-    y = (0, l.e7)([d.ZP], () => d.ZP.getPermissionsForUser(e.id, Z), [Z, e.id]),
-    h = (0, c.B)(Z);
-  if (null == n || null == p || null == N || y.speaker) return null;
-  let j = () => {
-    O ? (0, s.RK)(n, !1) : (0, s._0)(n, e.id)
+function g(e) {
+  var n;
+  let t = (0, E.Z)(),
+    g = null == t ? void 0 : t.id,
+    A = null == t ? void 0 : t.guild_id,
+    v = (0, l.e7)([u.Z], () => u.Z.getGuild(A), [A]),
+    h = (0, l.e7)([o.Z], () => null != g ? o.Z.getVoiceStateForChannel(g, e.id) : null, [g, e.id]),
+    T = (null === (n = a.default.getCurrentUser()) || void 0 === n ? void 0 : n.id) === e.id,
+    b = (0, _.Z)(),
+    O = (0, l.e7)([s.ZP], () => s.ZP.getPermissionsForUser(e.id, g), [g, e.id]),
+    S = (0, c.B)(g);
+  if (null == t || null == v || null == h || O.speaker) return null;
+  let y = () => {
+    T ? (0, d.RK)(t, !1) : (0, d._0)(t, e.id)
   };
-  return h ? (0, i.jsx)(r.sNh, {
+  return S ? (0, i.jsx)(r.sNh, {
     id: "invite-speaker",
-    label: O ? b.NW.string(b.t["W6c/VV"]) : b.NW.string(b.t.VUCWcH),
-    action: j
-  }) : m && O ? (0, i.jsx)(r.sNh, {
+    label: T ? f.NW.string(f.t["W6c/VV"]) : f.NW.string(f.t.VUCWcH),
+    action: y
+  }) : b && T ? (0, i.jsx)(r.sNh, {
     id: "invite-speaker",
-    label: b.NW.string(b.t["W6c/VV"]),
-    action: j
+    label: f.NW.string(f.t["W6c/VV"]),
+    action: y
   }) : null
 }

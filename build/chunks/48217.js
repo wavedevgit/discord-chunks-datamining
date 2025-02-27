@@ -1,69 +1,69 @@
-/** Chunk was on 72891 **/
-i.d(n, {
-  c: () => f
+/** Chunk was on 81288 **/
+n.d(t, {
+  c: () => m
 });
-var t = i(200651);
-i(192379);
-var o = i(481060),
-  r = i(269128),
-  a = i(358555),
-  l = i(267642),
-  c = i(26323),
-  s = i(30513),
-  d = i(981631),
-  u = i(388032),
-  g = i(432753);
+var i = n(200651);
+n(192379);
+var o = n(481060),
+  r = n(269128),
+  a = n(358555),
+  l = n(267642),
+  c = n(26323),
+  s = n(30513),
+  d = n(981631),
+  u = n(388032),
+  _ = n(279788);
 
-function _(e) {
+function g(e) {
   let {
-    guild: n,
-    banner: i
+    guild: t,
+    banner: n
   } = e;
-  return (0, t.jsx)("div", {
-    className: g.guildBanner,
+  return (0, i.jsx)("div", {
+    className: _.guildBanner,
     style: {
-      backgroundImage: "url(".concat(i)
+      backgroundImage: "url(".concat(n)
     },
-    children: (0, t.jsxs)("div", {
-      className: g.guildHeader,
-      children: [(0, t.jsx)(a.Z, {
-        guild: n,
+    children: (0, i.jsxs)("div", {
+      className: _.guildHeader,
+      children: [(0, i.jsx)(a.Z, {
+        guild: t,
         isBannerVisible: !0
-      }), (0, t.jsx)(o.X6q, {
-        className: g.guildName,
+      }), (0, i.jsx)(o.X6q, {
+        className: _.guildName,
         variant: "heading-md/semibold",
-        children: n.toString()
-      }), (0, t.jsx)(r.Z, {
-        className: g.dropdown,
+        children: t.toString()
+      }), (0, i.jsx)(r.Z, {
+        className: _.dropdown,
         open: !1
       })]
     })
   })
 }
 
-function f(e) {
+function m(e) {
   let {
-    analyticsLocations: n,
-    analyticsLocation: i,
+    analyticsLocations: t,
+    analyticsLocation: n,
     guild: o,
     isGIF: r,
     banner: a
-  } = e, g = r ? (0, l._p)(d.oNc.ANIMATED_BANNER) : (0, l._p)(d.oNc.BANNER);
-  null != g && (0, c.Z)({
-    analyticsLocations: n,
-    analyticsSourceLocation: i,
+  } = e, _ = r ? (0, l._p)(d.oNc.ANIMATED_BANNER) : (0, l._p)(d.oNc.BANNER);
+  null != _ && (0, c.Z)({
+    analyticsLocations: t,
+    analyticsSourceLocation: n,
     guild: o,
     headerProps: {
       title: u.NW.string(u.t["rv2H+/"]),
-      subtitle: function(e, n) {
-        let i = (0, l.nW)(e);
-        return n ? u.NW.formatToPlainString(u.t["TR/Uys"], {
-          targetLevelOrPlan: i
+      subtitle: function(e, t) {
+        let n = (0, l.nW)(e);
+        return t ? u.NW.formatToPlainString(u.t["TR/Uys"], {
+          targetLevelOrPlan: n
         }) : u.NW.formatToPlainString(u.t.B253V1, {
-          targetLevelOrPlan: i
+          targetLevelOrPlan: n
         })
-      }(g, r),
-      image: (0, t.jsx)(_, {
+      }(_, r),
+      image: (0, i.jsx)(g, {
         guild: o,
         banner: a
       })

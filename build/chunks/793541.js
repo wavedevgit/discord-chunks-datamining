@@ -8,7 +8,7 @@ n(192379);
 var i = n(723484),
   o = n(51499),
   a = n(614277),
-  s = n(818781);
+  s = n(936904);
 
 function l() {
   return (0, r.jsxs)(r.Fragment, {

@@ -1,4 +1,4 @@
-/** Chunk was on 8655 **/
+/** Chunk was on 72453 **/
 n.d(t, {
   Z: () => B
 }), n(653041), n(47120), n(13667), n(390547), n(301563);
@@ -35,7 +35,7 @@ var r = n(200651),
   Z = n(981631),
   k = n(245335),
   R = n(388032),
-  L = n(306405);
+  L = n(40774);
 let D = (0, A.Mg)(d.Z.EMBEDDED_APPLICATION_INVITE_IMAGE_WIDTH_LARGE),
   M = (0, A.Mg)(d.Z.EMBEDDED_APPLICATION_INVITE_IMAGE_WIDTH_SMALL),
   W = (0, A.Mg)(d.Z.EMBEDDED_APPLICATION_INVITE_CONTENT_WIDTH);

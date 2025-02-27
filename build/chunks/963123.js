@@ -43,7 +43,7 @@ var r = n(200651),
   U = n(981631),
   V = n(217702),
   Z = n(388032),
-  Y = n(677488);
+  Y = n(881382);
 
 function W(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -171,7 +171,7 @@ function X(e) {
       timestampSec: 0,
       duration: 10
     }
-  }, c.X), e7 = (0, y.km)(e => e.setVideoProgress), e8 = (0, y.km)(e => e.muted), e9 = (0, y.km)(e => e.volume), e3 = (0, u.e7)([v.Z], () => v.Z.useReducedMotion), e5 = (0, o.useRef)(null), te = (0, o.useRef)(null), tt = o.useRef(!0), tn = (null === (t = ec.userStatus) || void 0 === t ? void 0 : t.completedAt) != null, tr = (0, y.km)(e => e.transcript), [to, tl] = o.useState(null), [ti, ts] = o.useState(!1), [ta, tc] = o.useState(!1), [tu, td] = o.useState(null), tm = tn ? null !== (E = null === (n = e5.current) || void 0 === n ? void 0 : n.duration) && void 0 !== E ? E : 0 : Math.max(e4.maxTimestampSec, ew.progressSeconds), {
+  }, c.X), e8 = (0, y.km)(e => e.setVideoProgress), e9 = (0, y.km)(e => e.muted), e7 = (0, y.km)(e => e.volume), e3 = (0, u.e7)([v.Z], () => v.Z.useReducedMotion), e5 = (0, o.useRef)(null), te = (0, o.useRef)(null), tt = o.useRef(!0), tn = (null === (t = ec.userStatus) || void 0 === t ? void 0 : t.completedAt) != null, tr = (0, y.km)(e => e.transcript), [to, tl] = o.useState(null), [ti, ts] = o.useState(!1), [ta, tc] = o.useState(!1), [tu, td] = o.useState(null), tm = tn ? null !== (E = null === (n = e5.current) || void 0 === n ? void 0 : n.duration) && void 0 !== E ? E : 0 : Math.max(e4.maxTimestampSec, ew.progressSeconds), {
     hlsAnalytics: tp,
     handleHlsSegmentUpdate: tv
   } = function() {
@@ -277,7 +277,7 @@ function X(e) {
     }
   }, [eE, ec.id, to, eu, tb, eb, tp]);
   (0, p.Ng)(() => {
-    tt.current && (tt.current = !1, eW(g.Z.getEffectiveConnectionSpeed()), tn && e4.timestampSec >= e4.duration && e7(ec.id, 0, e4.duration))
+    tt.current && (tt.current = !1, eW(g.Z.getEffectiveConnectionSpeed()), tn && e4.timestampSec >= e4.duration && e8(ec.id, 0, e4.duration))
   }), o.useEffect(() => {
     null != e5.current && null != to && eE({
       questId: ec.id,
@@ -356,8 +356,8 @@ function X(e) {
     }
   }, [t_]);
   let tN = o.useCallback(e => {
-      null != e5.current && (tb(), eM(!0), tc(!1), e5.current.currentTime = e, e7(ec.id, e, e5.current.duration))
-    }, [e5, e7, ec.id, tb]),
+      null != e5.current && (tb(), eM(!0), tc(!1), e5.current.currentTime = e, e8(ec.id, e, e5.current.duration))
+    }, [e5, e8, ec.id, tb]),
     tP = () => {
       if (null != e5.current) switch (eP) {
         case R.rq.ENDED:
@@ -545,10 +545,10 @@ function X(e) {
         poster: null == tU ? void 0 : tU.url,
         disablePictureInPicture: !0,
         onTimeUpdate: e => {
-          null != e5.current && (e5.current.currentTime >= ez && (eG(e5.current.currentTime + 6 + 2 * Math.random()), tC(e5.current.currentTime)), e5.current.currentTime >= eH && (eK(e5.current.currentTime + 1), (0, C.qm)(ec.id, ew.taskType, e5.current.currentTime), ed(e5.current.currentTime)), e7(ec.id, e5.current.currentTime, e5.current.duration), eR(e5.current.currentTime / e5.current.duration * 100))
+          null != e5.current && (e5.current.currentTime >= ez && (eG(e5.current.currentTime + 6 + 2 * Math.random()), tC(e5.current.currentTime)), e5.current.currentTime >= eH && (eK(e5.current.currentTime + 1), (0, C.qm)(ec.id, ew.taskType, e5.current.currentTime), ed(e5.current.currentTime)), e8(ec.id, e5.current.currentTime, e5.current.duration), eR(e5.current.currentTime / e5.current.duration * 100))
         },
         onEnded: e => {
-          null != e5.current && (tC(e5.current.duration + 1), e7(ec.id, e5.current.duration, e5.current.duration)), tS(R.rq.ENDED), eU(!1)
+          null != e5.current && (tC(e5.current.duration + 1), e8(ec.id, e5.current.duration, e5.current.duration)), tS(R.rq.ENDED), eU(!1)
         },
         onLoadedData: e => {
           if (eq) {
@@ -566,7 +566,7 @@ function X(e) {
           }
         },
         onLoadedMetadata: e => {
-          null != e5.current && (ts(!0), tE !== N.i.VIDEO_PLAYER_VIDEO_HLS && tN(tf), e8 ? e5.current.volume = 0 : e5.current.volume = e9)
+          null != e5.current && (ts(!0), tE !== N.i.VIDEO_PLAYER_VIDEO_HLS && tN(tf), e9 ? e5.current.volume = 0 : e5.current.volume = e7)
         },
         onLoadStart: () => {
           e1.current = Date.now(), eE({

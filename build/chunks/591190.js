@@ -1,4 +1,4 @@
-/** Chunk was on 86029 **/
+/** Chunk was on 2928 **/
 n.d(t, {
   Z: () => u
 });
@@ -6,7 +6,7 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   l = n.n(i),
-  o = n(414055);
+  o = n(979790);
 let a = () => (0, r.jsx)("div", {
     className: o.spacer
   }),

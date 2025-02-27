@@ -25,7 +25,7 @@ var i = n(200651),
   D = n(981631),
   y = n(678916),
   b = n(388032),
-  N = n(488629);
+  N = n(126847);
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -413,7 +413,7 @@ function S(e) {
           return n ? t ? f.q.EDITED_ARCHIVED_ASSET : f.q.ARCHIVED_ASSET : f.q.NEW_ASSET
         }({
           hasImageEdits: Y,
-          hasOriginalAsset: null == a
+          hasOriginalAsset: null != a
         }),
         imageUri: e,
         file: t,

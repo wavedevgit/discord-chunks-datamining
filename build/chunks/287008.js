@@ -1,39 +1,45 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => u
 });
 var r = n(192379),
   i = n(442837),
   o = n(654904),
-  a = n(271383),
-  s = n(369111),
-  l = n(442552);
+  a = n(643879),
+  s = n(271383),
+  l = n(369111),
+  c = n(442552);
 
-function c(e) {
+function u(e) {
   let {
     user: t,
     guildId: n,
-    size: c,
-    showPending: u = !1,
-    animateOnHover: d = !1,
-    avatarOverride: f
+    size: u,
+    showPending: d = !1,
+    animateOnHover: f = !1,
+    avatarOverride: _
   } = e, {
-    onMouseEnter: _,
-    onMouseLeave: p,
-    shouldAnimate: h
-  } = (0, l.Z)(d), {
-    pendingAvatar: g
-  } = (0, s.Z)({}), m = u ? g : void 0, E = void 0 !== f ? f : m, v = (0, i.e7)([a.ZP], () => null != n && null != t ? a.ZP.getMember(n, t.id) : null);
+    onMouseEnter: p,
+    onMouseLeave: h,
+    shouldAnimate: g
+  } = (0, c.Z)(f), {
+    pendingAvatarV2: m
+  } = (0, l.Z)({}), E = d && null != t ? (0, a.SD)({
+    userId: t.id,
+    image: m,
+    canAnimate: g,
+    size: u
+  }) : void 0, v = void 0 !== _ ? _ : E, b = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null);
   return {
-    avatarSrc: r.useMemo(() => null != t ? (0, o.SG)(E, v, t, {
-      canAnimate: h,
-      size: c
-    }) : void 0, [E, v, t, h, c]),
-    isAvatarAnimating: h,
+    avatarSrc: r.useMemo(() => null != t ? (0, o.SG)(v, b, t, {
+      canAnimate: g,
+      size: u
+    }) : void 0, [v, b, t, g, u]),
+    isAvatarAnimating: g,
     eventHandlers: {
-      onMouseEnter: _,
-      onMouseLeave: p
+      onMouseEnter: p,
+      onMouseLeave: h
     }
   }
 }

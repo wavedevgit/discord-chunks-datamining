@@ -129,7 +129,7 @@ function I(e) {
       e.stopPropagation(), (0, l.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([t.e("84722"), t.e("21817")]).then(t.bind(t, 296864));
+        } = await Promise.all([t.e("84722"), t.e("11057")]).then(t.bind(t, 296864));
         return n => (0, r.jsx)(e, w(k({}, n), {
           event: S,
           onSuccess: D
@@ -151,7 +151,7 @@ function I(e) {
         }(0, l.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([t.e("7654"), t.e("49049"), t.e("90067")]).then(t.bind(t, 560114));
+          } = await Promise.all([t.e("7654"), t.e("49049"), t.e("61960")]).then(t.bind(t, 560114));
           return t => (0, r.jsx)(e, w(k({}, t), {
             guild: n,
             channel: I,

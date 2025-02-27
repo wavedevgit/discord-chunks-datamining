@@ -1,4 +1,4 @@
-/** Chunk was on 53485 **/
+/** Chunk was on 45489 **/
 n.d(t, {
   Z: () => N
 });
@@ -17,12 +17,12 @@ var i = n(120356),
   p = n(193528),
   h = n(993413),
   f = n(388032),
-  b = n(530398);
+  b = n(779281);
 
 function N(e) {
   let {
     user: t,
-    pendingAvatar: n,
+    pendingAvatarSrc: n,
     pendingColors: i,
     onThemeColorsChange: a,
     preventDisabled: N,

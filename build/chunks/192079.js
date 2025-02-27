@@ -1,52 +1,52 @@
-/** Chunk was on 96013 **/
-n.d(e, {
-  ER: () => d,
-  kk: () => f,
-  s$: () => N
-}), n(47120), n(392711);
-var i = n(19780),
-  r = n(5192),
-  a = n(700785),
-  l = n(427679),
-  o = n(157925),
-  u = n(981631),
-  s = n(71080),
-  c = n(388032);
+/** Chunk was on 99245 **/
+t.d(n, {
+  ER: () => s,
+  kk: () => _,
+  s$: () => E
+}), t(47120), t(392711);
+var i = t(19780),
+  l = t(5192),
+  r = t(700785),
+  u = t(427679),
+  a = t(157925),
+  o = t(981631),
+  d = t(71080),
+  c = t(388032);
 
-function d(t, e, n, i) {
-  let a = e[0],
-    l = r.ZP.getName(t, n, a),
-    o = null != i ? i : e.length;
-  return 1 === o && null != a ? l : null == a ? c.NW.formatToPlainString(c.t.chmM9P, {
-    count: o
+function s(e, n, t, i) {
+  let r = n[0],
+    u = l.ZP.getName(e, t, r),
+    a = null != i ? i : n.length;
+  return 1 === a && null != r ? u : null == r ? c.NW.formatToPlainString(c.t.chmM9P, {
+    count: a
   }) : c.NW.formatToPlainString(c.t.GhkJ29, {
-    name: l,
-    count: o - 1
+    name: u,
+    count: a - 1
   })
 }
 
-function f(t, e) {
-  switch (t) {
-    case s.aC.OWNER:
+function _(e, n) {
+  switch (e) {
+    case d.aC.OWNER:
       return c.NW.string(c.t.icuNBA);
-    case s.aC.ADMINISTRATOR:
+    case d.aC.ADMINISTRATOR:
       return c.NW.string(c.t.eTmN5e);
-    case s.aC.MEMBER:
-    case s.aC.ROLE:
-      return e ? c.NW.string(c.t.Hw3XW1) : c.NW.string(c.t.YieyPj);
-    case s.aC.EMPTY_STATE:
+    case d.aC.MEMBER:
+    case d.aC.ROLE:
+      return n ? c.NW.string(c.t.Hw3XW1) : c.NW.string(c.t.YieyPj);
+    case d.aC.EMPTY_STATE:
   }
   return null
 }
 
-function N(t) {
-  let e = l.Z.getStageInstanceByChannel(t.id);
+function E(e) {
+  let n = u.Z.getStageInstanceByChannel(e.id);
   return {
-    channel_id: t.id,
-    guild_id: t.guild_id,
-    topic: null == e ? void 0 : e.topic,
+    channel_id: e.id,
+    guild_id: e.guild_id,
+    topic: null == n ? void 0 : n.topic,
     media_session_id: i.Z.getMediaSessionId(),
-    request_to_speak_state: a.Uu(u.Plq.REQUEST_TO_SPEAK, t) ? o.BM.EVERYONE : o.BM.NO_ONE,
-    stage_instance_id: null == e ? void 0 : e.id
+    request_to_speak_state: r.Uu(o.Plq.REQUEST_TO_SPEAK, e) ? a.BM.EVERYONE : a.BM.NO_ONE,
+    stage_instance_id: null == n ? void 0 : n.id
   }
 }

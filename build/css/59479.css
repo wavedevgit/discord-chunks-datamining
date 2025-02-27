@@ -1,0 +1,61 @@
+/**
+  Module ID: 59479
+  Original File Name: ac8ed4c3c1904ea7
+**/
+.confirmModal__1b38b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px
+}
+
+.discordTag__1b38b {
+    display: inline-grid;
+    grid-auto-flow: column
+}
+
+.avatarIcon__1b38b {
+    margin-right: 3px
+}
+
+.username__1b38b {
+    display: flex;
+    color: var(--header-primary)
+}
+
+.discriminator__1b38b {
+    color: var(--header-secondary)
+}
+
+.fromToWrapper__1b38b {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: no-repeat 50% 0
+}
+
+.from__1b38b,.to__1b38b {
+    border-radius: 50%
+}
+
+.from__1b38b {
+    margin-right: -27px;
+    opacity: .3
+}
+
+.to__1b38b {
+    position: relative;
+    z-index: 1
+}
+
+.videoPaused_afb275 {
+    display: flex;
+    justify-content: left;
+    align-items: center
+}
+
+.warningCircle_afb275 {
+    margin-right: 4px
+}
+
+/*# sourceMappingURL=ac8ed4c3c1904ea7.css.map*/

@@ -1,16 +1,16 @@
-/** Chunk was on 30806 **/
+/** Chunk was on 83346 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var i = n(200651);
 n(192379);
-var r = n(930282);
+var o = n(930282);
 
-function l(e, t) {
+function a(e, t) {
   let {
     message: n
   } = e;
-  return (0, i.jsx)(r.ZP, {
+  return (0, i.jsx)(o.ZP, {
     message: n,
     content: t
   })

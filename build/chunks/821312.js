@@ -1,107 +1,107 @@
-/** Chunk was on 79783 **/
+/** Chunk was on 61536 **/
 n.d(t, {
-  Z: () => b
+  Z: () => p
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  s = n(120356),
+  o = n.n(s),
   a = n(831209),
-  s = n(481060),
+  l = n(481060),
   c = n(367907),
   d = n(177862),
-  u = n(981631),
-  p = n(388032),
-  m = n(468094);
+  x = n(981631),
+  u = n(388032),
+  h = n(132323);
 
-function b(e) {
+function p(e) {
   let {
     guildId: t,
     transitionState: n,
-    onClose: l
-  } = e, [b, g] = i.useState([]), [f, h] = i.useState(), x = [{
-    text: p.NW.string(p.t["//3pvr"]),
+    onClose: s
+  } = e, [p, j] = i.useState([]), [m, N] = i.useState(), _ = [{
+    text: u.NW.string(u.t["//3pvr"]),
     value: d.C2.DM_SPAM
   }, {
-    text: p.NW.string(p.t.SdVsio),
+    text: u.NW.string(u.t.SdVsio),
     value: d.C2.MENTION_SPAM
   }, {
-    text: p.NW.string(p.t.uTiSVF),
+    text: u.NW.string(u.t.uTiSVF),
     value: d.C2.CHANNEL_SPAM
   }, {
-    text: p.NW.string(p.t.GQczU1),
+    text: u.NW.string(u.t.GQczU1),
     value: d.C2.SUS_NEW_MEMBERS
   }, {
-    text: p.NW.string(p.t.AAgqy8),
+    text: u.NW.string(u.t.AAgqy8),
     value: d.C2.CHANGING_SETTINGS
   }, {
-    text: p.NW.string(p.t.ryPKb2),
+    text: u.NW.string(u.t.ryPKb2),
     value: d.C2.OTHER
   }];
 
-  function j(e) {
-    b.includes(e) ? g(t => t.filter(t => t !== e)) : g(t => [...t, e])
+  function C(e) {
+    p.includes(e) ? j(t => t.filter(t => t !== e)) : j(t => [...t, e])
   }
-  return null == t ? (l(), null) : (0, r.jsxs)(s.Y0X, {
+  return null == t ? (s(), null) : (0, r.jsxs)(l.Y0X, {
     transitionState: n,
-    size: s.CgR.MEDIUM,
-    children: [(0, r.jsx)(s.xBx, {
+    size: l.CgR.MEDIUM,
+    children: [(0, r.jsx)(l.xBx, {
       separator: !0,
       children: (0, r.jsxs)("div", {
-        className: m.headerContainer,
+        className: h.headerContainer,
         children: [(0, r.jsxs)("div", {
-          className: m.headerText,
-          children: [(0, r.jsx)(s.mBM, {
+          className: h.headerText,
+          children: [(0, r.jsx)(l.mBM, {
             size: "xs",
             color: a.Z.INTERACTIVE_NORMAL
-          }), (0, r.jsx)(s.X6q, {
+          }), (0, r.jsx)(l.X6q, {
             color: "header-primary",
             variant: "heading-md/semibold",
-            children: p.NW.string(p.t.f5hd9P)
+            children: u.NW.string(u.t.f5hd9P)
           })]
-        }), (0, r.jsx)(s.P3F, {
-          onClick: l,
-          children: (0, r.jsx)(s.Dio, {
+        }), (0, r.jsx)(l.P3F, {
+          onClick: s,
+          children: (0, r.jsx)(l.Dio, {
             size: "xs",
             color: "currentColor",
-            className: m.closeIcon
+            className: h.closeIcon
           })
         })]
       })
-    }), (0, r.jsx)(s.hzk, {
+    }), (0, r.jsx)(l.hzk, {
       children: (0, r.jsx)("div", {
-        className: m.options,
-        children: x.map(e => {
+        className: h.options,
+        children: _.map(e => {
           let {
             text: t,
             value: n
           } = e;
           return (0, r.jsxs)("div", {
-            className: o()(m.optionContainer, {
-              [m.optionContainerOther]: n === d.C2.OTHER
+            className: o()(h.optionContainer, {
+              [h.optionContainerOther]: n === d.C2.OTHER
             }),
-            children: [(0, r.jsxs)(s.P3F, {
-              className: m.optionText,
-              onClick: () => j(n),
+            children: [(0, r.jsxs)(l.P3F, {
+              className: h.optionText,
+              onClick: () => C(n),
               children: [(0, r.jsx)("div", {
-                children: (0, r.jsx)(s.XZJ, {
-                  type: s.XZJ.Types.INVERTED,
+                children: (0, r.jsx)(l.XZJ, {
+                  type: l.XZJ.Types.INVERTED,
                   size: 20,
-                  value: b.includes(n),
-                  onChange: () => j(n)
+                  value: p.includes(n),
+                  onChange: () => C(n)
                 })
-              }), (0, r.jsx)(s.Text, {
+              }), (0, r.jsx)(l.Text, {
                 variant: "text-md/medium",
-                color: b.includes(n) ? "interactive-active" : "interactive-normal",
+                color: p.includes(n) ? "interactive-active" : "interactive-normal",
                 children: t
               })]
-            }), n === d.C2.OTHER && b.includes(d.C2.OTHER) && (0, r.jsx)("div", {
-              className: m.textboxContainer,
-              children: (0, r.jsx)(s.Kx8, {
-                className: m.serverLockdownReasonText,
-                placeholder: p.NW.string(p.t["PAM+JS"]),
-                onChange: e => h(e),
-                value: f,
+            }), n === d.C2.OTHER && p.includes(d.C2.OTHER) && (0, r.jsx)("div", {
+              className: h.textboxContainer,
+              children: (0, r.jsx)(l.Kx8, {
+                className: h.serverLockdownReasonText,
+                placeholder: u.NW.string(u.t["PAM+JS"]),
+                onChange: e => N(e),
+                value: m,
                 rows: 2,
                 autoFocus: !0,
                 flex: !0
@@ -110,19 +110,19 @@ function b(e) {
           }, n)
         })
       })
-    }), (0, r.jsx)(s.mzw, {
-      children: (0, r.jsx)(s.zxk, {
+    }), (0, r.jsx)(l.mzw, {
+      children: (0, r.jsx)(l.zxk, {
         onClick: function() {
-          (0, c.yw)(u.rMx.GUILD_RAID_LOCKDOWN_FEEDBACK, {
-            raid_lockdown_feedback_type: b,
-            raid_lockdown_feedback_other_reason: f,
+          (0, c.yw)(x.rMx.GUILD_RAID_LOCKDOWN_FEEDBACK, {
+            raid_lockdown_feedback_type: p,
+            raid_lockdown_feedback_other_reason: m,
             guild_id: t
-          }), l()
+          }), s()
         },
-        color: s.zxk.Colors.BRAND,
-        look: s.zxk.Looks.FILLED,
+        color: l.zxk.Colors.BRAND,
+        look: l.zxk.Looks.FILLED,
         submitting: !1,
-        children: p.NW.string(p.t.nAt0rK)
+        children: u.NW.string(u.t.nAt0rK)
       })
     })]
   })

@@ -5,7 +5,7 @@ n.d(t, {
 });
 let r = {
   openCreateGuildModal: e => {
-    Promise.all([n.e("42483"), n.e("41941")]).then(n.bind(n, 635703)).then(t => {
+    Promise.all([n.e("42483"), n.e("44376")]).then(n.bind(n, 635703)).then(t => {
       let {
         openCreateGuildModal: n
       } = t;
@@ -13,7 +13,7 @@ let r = {
     })
   },
   updateCreateGuildModal: e => {
-    Promise.all([n.e("42483"), n.e("41941")]).then(n.bind(n, 635703)).then(t => {
+    Promise.all([n.e("42483"), n.e("44376")]).then(n.bind(n, 635703)).then(t => {
       let {
         updateCreateGuildModal: n
       } = t;

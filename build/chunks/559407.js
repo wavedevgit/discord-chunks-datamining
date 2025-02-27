@@ -5,7 +5,7 @@ n.d(t, {
   Z: () => a
 });
 var r = n(200651);
-n(192379), n(560597);
+n(192379), n(81470);
 let i = "cash-app-pay-container";
 
 function o() {

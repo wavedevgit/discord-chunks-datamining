@@ -8,7 +8,7 @@ var r = n(200651),
   o = n(120356),
   a = n.n(o),
   s = n(481060),
-  l = n(301300);
+  l = n(41850);
 let c = 16,
   u = i.memo(function(e) {
     let {

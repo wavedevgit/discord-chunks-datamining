@@ -12,7 +12,7 @@ var i = n(120356),
   l = n(565138),
   c = n(474936),
   u = n(388032),
-  d = n(7e4);
+  d = n(955509);
 let f = {
   XXSMALL: d.xxsmall,
   XSMALL: d.xsmall,

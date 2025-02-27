@@ -1,36 +1,37 @@
-/** Chunk was on 53485 **/
+/** Chunk was on 45489 **/
 n.d(t, {
-  Z: () => u
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
   l = n(588126),
-  o = n(25990),
-  c = n(921813),
-  d = n(861305);
+  o = n(643879),
+  c = n(25990),
+  d = n(921813),
+  u = n(784596);
 
-function u(e) {
+function m(e) {
   var t;
   let {
-    user: u,
-    disabledInputs: m,
-    containerClassName: g
+    user: m,
+    disabledInputs: g,
+    containerClassName: p
   } = e, {
-    reducedMotion: p
+    reducedMotion: h
   } = i.useContext(a.Sfi), {
-    pendingAvatar: h,
-    pendingBanner: f,
-    pendingThemeColors: b,
-    pendingPronouns: N,
-    pendingBio: x,
-    tryItOutThemeColors: _,
-    tryItOutAvatar: E,
-    tryItOutBanner: j,
-    tryItOutAvatarDecoration: C,
-    tryItOutProfileEffectId: O
-  } = (0, s.cj)([o.Z], () => (function(e) {
+    pendingAvatarV2: f,
+    pendingBanner: b,
+    pendingThemeColors: N,
+    pendingPronouns: x,
+    pendingBio: _,
+    tryItOutThemeColors: E,
+    tryItOutAvatarV2: j,
+    tryItOutBanner: C,
+    tryItOutAvatarDecoration: O,
+    tryItOutProfileEffectId: v
+  } = (0, s.cj)([c.Z], () => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -47,21 +48,24 @@ function u(e) {
       })
     }
     return e
-  })({}, o.Z.getAllPending(), o.Z.getAllTryItOut())), v = (0, l.Z)(C, !1);
-  return (0, r.jsx)(c.Z, {
-    containerClassName: g,
-    user: u,
-    pendingPronouns: N,
-    pendingBio: x,
-    pendingBanner: null !== (t = null != j ? j : f) && void 0 !== t ? t : n(466045),
-    pendingAvatar: null != E ? E : h,
-    pendingThemeColors: null != _ ? _ : b,
-    pendingAvatarDecoration: v,
-    pendingProfileEffectId: O,
-    avatarClassName: null != E || null != h || p.enabled ? void 0 : d.spinningAvatar,
+  })({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), S = (0, o.SD)({
+    userId: m.id,
+    image: null != j ? j : f
+  }), T = (0, l.Z)(O, !1);
+  return (0, r.jsx)(d.Z, {
+    containerClassName: p,
+    user: m,
+    pendingPronouns: x,
+    pendingBio: _,
+    pendingBanner: null !== (t = null != C ? C : b) && void 0 !== t ? t : n(466045),
+    pendingAvatar: S,
+    pendingThemeColors: null != E ? E : N,
+    pendingAvatarDecoration: T,
+    pendingProfileEffectId: v,
+    avatarClassName: null != j || null != f || h.enabled ? void 0 : u.spinningAvatar,
     canUsePremiumCustomization: !0,
     isTryItOutFlow: !0,
     hideExampleButton: !0,
-    disabledInputs: m
+    disabledInputs: g
   })
 }

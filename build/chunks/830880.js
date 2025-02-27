@@ -13,7 +13,7 @@ var i = n(704215),
   u = n(526761),
   d = n(726985),
   p = n(388032),
-  h = n(907661);
+  h = n(222276);
 
 function f() {
   let [e, t] = (0, a.US)([i.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE]), n = e === i.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE, f = () => {

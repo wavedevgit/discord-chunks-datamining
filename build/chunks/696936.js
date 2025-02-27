@@ -9,7 +9,7 @@ r(192379);
 var s = r(120356),
   i = r.n(s),
   o = r(481060),
-  l = r(621660);
+  l = r(723539);
 let a = {
   RED: l.redMessageBlock,
   YELLOW: l.yellowMessageBlock,

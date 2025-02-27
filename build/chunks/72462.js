@@ -1,8 +1,8 @@
 /** Chunk was on 2026 **/
 n.d(t, {
-  s: () => r
+  s: () => i
 });
-let i = (0, n(818083).B)({
+let r = (0, n(818083).B)({
     kind: "user",
     id: "2024-12_collectibles_share_link",
     label: "Collectibles Share Link Experiment",
@@ -17,6 +17,6 @@ let i = (0, n(818083).B)({
       }
     }]
   }),
-  r = e => i.useExperiment({
+  i = e => r.useExperiment({
     location: e
   }).showShareLinkButton

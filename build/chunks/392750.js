@@ -8,8 +8,8 @@ var a = n(442837),
   i = n(814443),
   l = n(594174),
   o = n(681619),
-  s = n(344731),
-  c = n(841699);
+  s = n(123551),
+  c = n(710662);
 let d = [{
   key: "user",
   cellClassName: s.userCell,

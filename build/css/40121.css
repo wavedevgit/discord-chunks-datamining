@@ -1,0 +1,445 @@
+/**
+  Module ID: 40121
+  Original File Name: 338f3284c3b340cd
+**/
+.connectedAccountVanityMetadata_fffe42 {
+    margin-top: 4px
+}
+
+.connectedAccountVanityMetadata_fffe42:not(:last-of-type) {
+    margin-right: 8px
+}
+
+.connectedAccountVanityMetadataTag_fffe42 {
+    background-color: var(--background-modifier-accent);
+    border-radius: 12px;
+    padding: 1px 8px
+}
+
+.connectedAccountVanityMetadataItem_fffe42 {
+    display: flex;
+    align-items: center
+}
+
+.connectedAccountVanityMetadataItemIcon_fffe42 {
+    height: 18px;
+    width: 18px;
+    margin-right: 4px
+}
+
+.paypalVerifiedTag_fffe42 {
+    color: var(--white-500)!important
+}
+
+.paypalVerifiedTag_fffe42 {
+    background-color: var(--status-positive-background)
+}
+
+.left_caab99 {
+    transform: rotate(270deg)
+}
+
+.right_caab99 {
+    transform: rotate(90deg)
+}
+
+.down_caab99 {
+    transform: rotate(180deg)
+}
+
+.downRight_caab99 {
+    transform: rotate(135deg)
+}
+
+.upLeft_caab99 {
+    transform: rotate(315deg)
+}
+
+.discordMemberCreatedAt_e6abe8 {
+    display: flex;
+    gap: 10px
+}
+
+.discordMemberCreatedAtIconContainer_e6abe8 {
+    background-color: var(--background-modifier-hover);
+    color: var(--interactive-active);
+    height: 24px;
+    width: 24px;
+    padding: 8px;
+    border-radius: 50%
+}
+
+.discordMemberCreatedAtIcon_e6abe8 {
+    align-self: center
+}
+
+.discordMemberCreatedAtText_e6abe8 {
+    display: flex;
+    flex-direction: column
+}
+
+.connectedAccounts_e6abe8 {
+    display: flex;
+    flex-direction: row;
+    width: 100%
+}
+
+.connectedAccountsColumn_e6abe8 {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 8px)
+}
+
+.connectedAccountsColumn_e6abe8+.connectedAccountsColumn_e6abe8 {
+    margin-left: 16px
+}
+
+.connectedAccountContainer_e6abe8 {
+    margin-top: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--profile-body-divider-color,var(--background-modifier-accent))
+}
+
+.connectedAccountContainerWithMetadata_e6abe8 {
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+.connectedAccount_e6abe8 {
+    display: flex;
+    flex: 0 1;
+    align-items: center;
+    gap: 8px
+}
+
+.connectedAccountChildren_e6abe8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 32px;
+    align-items: center;
+    overflow: hidden
+}
+
+.connectedAccountChildrenNoIcon_e6abe8 {
+    margin-left: 0
+}
+
+.connectedAccountPoweredBy_e6abe8 {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--text-muted);
+    cursor: pointer
+}
+
+.connectedAccountPoweredByText_e6abe8 {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 4px;
+    vertical-align: text-top
+}
+
+.connectedAccountIcon_e6abe8 {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0
+}
+
+.connectedAccountNameContainer_e6abe8 {
+    flex-grow: 1;
+    overflow: hidden
+}
+
+.connectedAccountNameContainerClickable_e6abe8 {
+    cursor: pointer
+}
+
+.connectedAccountName_e6abe8,.connectedAccountNameTextContainer_e6abe8 {
+    display: flex;
+    align-items: center;
+    overflow: hidden
+}
+
+.connectedAccountNameTextContainer_e6abe8 {
+    flex: 1
+}
+
+.connectedAccountNameText_e6abe8 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text
+}
+
+.connectedAccountVerifiedIcon_e6abe8 {
+    margin-left: 4px
+}
+
+.connectedAccountHideIcon_e6abe8 {
+    color: var(--interactive-normal);
+    width: 14px;
+    height: 14px;
+    margin: 2px
+}
+
+.connectedAccountOpenIcon_e6abe8 {
+    width: 16px;
+    height: 16px;
+    color: var(--interactive-normal);
+    display: block;
+    transform: rotate(45deg)
+}
+
+.connectedAccountOpenIcon_e6abe8:hover {
+    color: var(--interactive-hover)
+}
+
+.connectedAccountOpenIcon_e6abe8:active {
+    color: var(--interactive-active)
+}
+
+.modalRoot_a470b4 {
+    min-height: 200px
+}
+
+.header_a470b4 {
+    padding-bottom: 8px
+}
+
+.header_a470b4,.headerText_a470b4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.headerText_a470b4 {
+    flex-grow: 1;
+    -moz-column-gap: 8px;
+    column-gap: 8px
+}
+
+.manageConnectionsFooterButton_a470b4 {
+    flex: 1
+}
+
+.platformIcon_a470b4 {
+    width: 32px;
+    height: 32px
+}
+
+.botTag_a470b4 {
+    margin-top: -1px!important
+}
+
+.botTag_a470b4 {
+    margin-left: 4px
+}
+
+.connectionsChecksGroups_a470b4 {
+    margin-top: 16px;
+    padding-top: 8px;
+    max-height: 280px;
+    display: flex;
+    flex-direction: column;
+    margin-right: -8px;
+    padding-bottom: 4px
+}
+
+.connectionsChecksGroup_a470b4 {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--background-modifier-accent);
+    border-radius: 12px;
+    padding: 20px 16px;
+    align-items: center;
+    margin-top: 16px;
+    -moz-column-gap: 16px;
+    column-gap: 16px;
+    cursor: pointer;
+    position: relative
+}
+
+.connectionsChecksGroup_a470b4:first-of-type {
+    margin-top: 0
+}
+
+.connectionsChecksGroup_a470b4:hover {
+    border-color: var(--interactive-muted)
+}
+
+.connectionsChecksGroupPassed_a470b4 {
+    border: 2px solid var(--background-tertiary);
+    background-color: var(--background-tertiary);
+    cursor: inherit
+}
+
+.connectionsChecksGroupPassed_a470b4:hover {
+    border-color: var(--background-tertiary)
+}
+
+.connectionsChecksGroupPlatformDisabled_a470b4 {
+    background-color: var(--background-modifier-accent);
+    cursor: not-allowed
+}
+
+.connectionsChecksGroupPlatformDisabled_a470b4:hover {
+    border-color: var(--background-modifier-accent)
+}
+
+.connectionsChecksGroupTextContainer_a470b4 {
+    flex: 1
+}
+
+.connectionsChecksGroupTextNameContainer_a470b4 {
+    display: flex;
+    gap: 4px;
+    align-items: center
+}
+
+.connectionsChecksGroupTextNameInfoIcon_a470b4 {
+    color: var(--text-warning);
+    width: 16px;
+    height: 16px
+}
+
+.connectionsChecksGroupRequirementsNotMet_a470b4 {
+    padding: 4px 8px;
+    border-radius: 12px;
+    background-color: var(--status-danger);
+    position: absolute;
+    top: -8px;
+    right: 20px
+}
+
+.connectionsChecksGroupCaret_a470b4 {
+    height: 24px;
+    width: 24px;
+    color: var(--interactive-normal)
+}
+
+.connectionsChecksGroupRetryButton_a470b4 {
+    padding: 0
+}
+
+.connectionsChecksGroupCheckmark_a470b4 {
+    height: 20px;
+    width: 20px;
+    color: var(--text-positive)
+}
+
+.connectionsCheck_a470b4 {
+    margin-top: 4px
+}
+
+.footerText_a470b4 {
+    margin-top: 12px;
+    margin-bottom: 24px
+}
+
+.accountConnectedContainer_a470b4 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    -moz-column-gap: 32px;
+    column-gap: 32px;
+    margin: 24px 0
+}
+
+.accountConnectedLoading_a470b4 {
+    margin: auto
+}
+
+.accountConnectedContainerChild_a470b4 {
+    width: 268px
+}
+
+.accountConnectedHeader_a470b4 {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    color: var(--interactive-normal)
+}
+
+.accountConnectedPreviewConnectedUserAccount_a470b4 {
+    margin-top: 8px!important
+}
+
+.accountConnectedPreviewConnectedUserAccount_a470b4 {
+    border: 1px solid var(--background-modifier-accent)
+}
+
+.accountConnectedPrivacyOptionsContainer_a470b4 {
+    margin-top: 8px;
+    border: 1px solid var(--background-modifier-accent);
+    border-radius: 4px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column
+}
+
+.accountConnectedPrivacyOptionsSwitchItem_a470b4 {
+    margin-top: 16px;
+    margin-bottom: 0
+}
+
+.accountConnectedPrivacyOptionsSwitchItem_a470b4:first-of-type {
+    margin-top: 0
+}
+
+.roleGranted_a470b4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--background-tertiary);
+    padding: 12px 8px;
+    border-radius: 4px 4px 0 0;
+    margin-top: 16px
+}
+
+.roleGrantedName_a470b4 {
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.verifiedIcon_a470b4 {
+    margin-right: 8px
+}
+
+.channelsGranted_a470b4 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-secondary-alt);
+    padding: 16px;
+    border-radius: 0 0 4px 4px;
+    max-height: 200px;
+    margin-bottom: 24px
+}
+
+.channelName_a470b4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4px
+}
+
+.channelName_a470b4:last-child {
+    margin-bottom: 0
+}
+
+.channelNameIcon_a470b4 {
+    color: var(--text-muted);
+    margin-right: 8px;
+    min-width: 24px
+}
+
+.channelNameText_a470b4 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+/*# sourceMappingURL=338f3284c3b340cd.css.map*/

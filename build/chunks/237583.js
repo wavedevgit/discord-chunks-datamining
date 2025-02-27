@@ -1,50 +1,50 @@
-/** Chunk was on 61080 **/
-r.d(t, {
-  Z: () => m
-}), r(653041), r(47120);
-var n, a = r(200651),
-  o = r(192379),
-  i = r(120356),
-  l = r.n(i),
-  s = r(481060),
-  c = r(598077),
-  u = r(512087),
-  d = r(604494);
+/** Chunk was on 30806 **/
+n.d(t, {
+  Z: () => f
+}), n(653041), n(47120);
+var i, r = n(200651),
+  l = n(192379),
+  o = n(120356),
+  s = n.n(o),
+  a = n(481060),
+  u = n(598077),
+  d = n(132111),
+  c = n(744356);
 
-function p(e, t, r) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
-    value: r,
+    value: n,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = r, e
+  }) : e[t] = n, e
 }
-class f extends(n = o.PureComponent) {
+class p extends(i = l.PureComponent) {
   renderUsers() {
     let {
       users: e,
       max: t,
-      renderUser: r = this.defaultRenderUser,
-      renderMoreUsers: n
-    } = this.props, a = [], o = e.length === t ? e.length : t - 1, i = 0;
-    for (; i < o && i < e.length;) {
-      let t = i === e.length - 1;
-      a.push(r(e[i] || null, t ? null : u.avatarMasked, "user-".concat(i), t)), i++
+      renderUser: n = this.defaultRenderUser,
+      renderMoreUsers: i
+    } = this.props, r = [], l = e.length === t ? e.length : t - 1, o = 0;
+    for (; o < l && o < e.length;) {
+      let t = o === e.length - 1;
+      r.push(n(e[o] || null, t ? null : d.avatarMasked, "user-".concat(o), t)), o++
     }
-    if (i < e.length) {
-      let t = Math.min(e.length - i, 99);
-      a.push(n("+".concat(t), u.moreUsers, "more-users", t))
+    if (o < e.length) {
+      let t = Math.min(e.length - o, 99);
+      r.push(i("+".concat(t), d.moreUsers, "more-users", t))
     }
-    return a
+    return r
   }
   renderIcon() {
-    return this.props.icon ? (0, a.jsx)("div", {
-      className: u.iconContainer,
-      children: (0, a.jsx)(s.gj8, {
+    return this.props.icon ? (0, r.jsx)("div", {
+      className: d.iconContainer,
+      children: (0, r.jsx)(a.gj8, {
         size: "xs",
         color: "currentColor",
-        colorClass: u.foreground,
-        className: u.icon
+        colorClass: d.foreground,
+        className: d.icon
       })
     }) : null
   }
@@ -52,40 +52,40 @@ class f extends(n = o.PureComponent) {
     let {
       className: e
     } = this.props;
-    return (0, a.jsxs)("div", {
-      className: l()(e, u.container),
+    return (0, r.jsxs)("div", {
+      className: s()(e, d.container),
       ref: e => this._ref = e,
       children: [this.renderIcon(), this.renderUsers()]
     })
   }
   constructor(...e) {
-    super(...e), p(this, "_ref", void 0), p(this, "defaultRenderUser", (e, t, r, n) => {
+    super(...e), h(this, "_ref", void 0), h(this, "defaultRenderUser", (e, t, n, i) => {
       let {
-        onClick: o,
-        size: i,
-        guildId: p
-      } = this.props, f = e instanceof c.Z ? e : null != e ? e.user : null;
-      return null == f ? (0, a.jsx)("div", {
-        className: l()(u.emptyUser, t)
-      }, r) : (0, a.jsx)(s.qEK, {
+        onClick: l,
+        size: o,
+        guildId: h
+      } = this.props, p = e instanceof u.Z ? e : null != e ? e.user : null;
+      return null == p ? (0, r.jsx)("div", {
+        className: s()(d.emptyUser, t)
+      }, n) : (0, r.jsx)(a.qEK, {
         tabIndex: 0,
-        src: f.getAvatarURL(p, (0, s.pxk)(i)),
-        size: i,
-        "aria-label": f.username,
-        className: l()(t, d.cursorPointer, u.avatarSize),
-        onClick: e => null != o ? o(e, f, this._ref) : null
-      }, f.id)
+        src: p.getAvatarURL(h, (0, a.pxk)(o)),
+        size: o,
+        "aria-label": p.username,
+        className: s()(t, c.cursorPointer, d.avatarSize),
+        onClick: e => null != l ? l(e, p, this._ref) : null
+      }, p.id)
     })
   }
 }
-p(f, "defaultProps", {
+h(p, "defaultProps", {
   max: 10,
-  renderMoreUsers: function(e, t, r) {
-    return (0, a.jsx)("div", {
+  renderMoreUsers: function(e, t, n) {
+    return (0, r.jsx)("div", {
       className: t,
       children: e
-    }, r)
+    }, n)
   },
-  size: s.EFr.SIZE_24
+  size: a.EFr.SIZE_24
 });
-let m = f
+let f = p

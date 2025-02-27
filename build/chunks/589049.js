@@ -1,24 +1,24 @@
-/** Chunk was on 88119 **/
+/** Chunk was on 80125 **/
 n.d(t, {
-  Z: () => c
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  l = n(230711),
-  o = n(906732),
-  a = n(981631),
-  s = n(388032);
+  o = n(230711),
+  l = n(906732),
+  c = n(981631),
+  a = n(388032);
 
-function c() {
+function u() {
   let {
     analyticsLocations: e
-  } = (0, o.ZP)();
+  } = (0, l.ZP)();
   return (0, r.jsx)(i.sNh, {
     id: "voice-and-video-settings",
-    label: s.NW.string(s.t.dsXapK),
+    label: a.NW.string(a.t.dsXapK),
     action: () => {
-      l.Z.open(a.oAB.VOICE, null, {
+      o.Z.open(c.oAB.VOICE, null, {
         analyticsLocations: e
       })
     },

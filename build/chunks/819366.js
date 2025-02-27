@@ -108,7 +108,7 @@ function D(e) {
     null != x && (0, u.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("59409")]).then(n.bind(n, 757387));
+      } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("12612")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, R(A({}, t), {
         viewingChannelId: D,
         user: L,

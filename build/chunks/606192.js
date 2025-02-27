@@ -1,22 +1,22 @@
-/** Chunk was on 72320 **/
-t.d(n, {
-  W: () => c
+/** Chunk was on 72453 **/
+n.d(t, {
+  W: () => a
 });
-var o = t(493683),
-  r = t(122613);
-async function c(e) {
+var r = n(493683),
+  i = n(122613);
+async function a(e) {
   let {
-    appId: n,
-    botId: t,
-    analyticsLocations: c,
-    customId: a,
-    referrerId: i
-  } = e, l = await o.Z.openPrivateChannel(t);
-  return await (0, r.Z)({
-    targetApplicationId: n,
-    channelId: l,
-    analyticsLocations: c,
-    customId: a,
-    referrerId: i
+    appId: t,
+    botId: n,
+    analyticsLocations: a,
+    customId: o,
+    referrerId: l
+  } = e, s = await r.Z.openPrivateChannel(n);
+  return await (0, i.Z)({
+    targetApplicationId: t,
+    channelId: s,
+    analyticsLocations: a,
+    customId: o,
+    referrerId: l
   })
 }

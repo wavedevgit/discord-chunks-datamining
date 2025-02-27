@@ -9,7 +9,7 @@ var n = r(200651),
   c = r(481060),
   a = r(378233),
   l = r(388032),
-  u = r(95696);
+  u = r(920607);
 let f = e => {
     let {
       stickerPack: t

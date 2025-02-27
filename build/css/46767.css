@@ -1,0 +1,202 @@
+/**
+  Module ID: 46767
+  Original File Name: 35a49ef27382b8da
+**/
+.card__594f1,.spacing__594f1 {
+    margin-bottom: 20px
+}
+
+.card__594f1 {
+    padding: 10px
+}
+
+.error__594f1 {
+    margin-top: 8px
+}
+
+.warning__594f1 {
+    color: var(--white-500)
+}
+
+.spacer__5ecaa {
+    width: 8px
+}
+
+.input__5ecaa {
+    width: 44px;
+    height: 44px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 17px;
+    text-align: center;
+    margin-left: 4px;
+    margin-right: 4px;
+    color: var(--header-primary)
+}
+
+.theme-light .input__5ecaa {
+    background-color: var(--primary-230)
+}
+
+.theme-dark .input__5ecaa {
+    background-color: var(--primary-500)
+}
+
+.enable-forced-colors .input__5ecaa {
+    border: 1px solid ButtonText
+}
+
+.enable-forced-colors .input__5ecaa:focus {
+    border-color: Highlight
+}
+
+.phoneFieldPopout__61a01 {
+    width: 220px;
+    height: 240px;
+    position: absolute;
+    top: 40px;
+    left: 0
+}
+
+.phoneFieldPopout__61a01 .phoneFieldScroller__61a01 {
+    height: 196px;
+    padding-bottom: 10px
+}
+
+.phoneFieldPopout__61a01 .countryItem__61a01 {
+    width: 100%
+}
+
+.phoneFieldPopout__61a01 .countryName__61a01 {
+    font-size: 13px;
+    line-height: 18px;
+    margin-right: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: var(--text-muted-on-default)
+}
+
+.phoneFieldPopout__61a01 .countryCode__61a01 {
+    font-weight: 600;
+    font-size: 13px;
+    text-align: right;
+    color: var(--header-primary)
+}
+
+.phoneField_a0c54f {
+    border-radius: 5px;
+    position: relative;
+    background-color: var(--input-background);
+    border: 1px solid var(--deprecated-text-input-border)
+}
+
+.phoneField_a0c54f .countryButton_a0c54f {
+    height: 32px;
+    padding-left: var(--spacing-8);
+    padding-right: var(--spacing-8);
+    margin: var(--spacing-4)
+}
+
+.phoneField_a0c54f .countryButtonInner_a0c54f {
+    display: flex;
+    align-items: center
+}
+
+.phoneField_a0c54f .countryCodeContainer_a0c54f {
+    padding-left: var(--spacing-4);
+    padding-right: var(--spacing-4)
+}
+
+.phoneField_a0c54f .plusSign_a0c54f {
+    margin-right: 2px
+}
+
+.phoneField_a0c54f .countryCode_a0c54f {
+    text-align: center
+}
+
+.phoneField_a0c54f .inputField_a0c54f {
+    background-color: var(--input-background);
+    color: var(--text-normal);
+    box-sizing: border-box;
+    height: 40px;
+    padding: var(--spacing-8);
+    border: none;
+    font-size: 16px;
+    flex-grow: 1
+}
+
+.phoneField_a0c54f .sendButton_a0c54f {
+    margin-right: var(--spacing-4)
+}
+
+.visual-refresh .phoneField_a0c54f {
+    border-radius: var(--radius-md);
+    border: 1px solid var(--input-border);
+    box-shadow: none
+}
+
+.visual-refresh .phoneField_a0c54f .inputField_a0c54f {
+    background-color: transparent
+}
+
+.visual-refresh .phoneField_a0c54f .countryCode_a0c54f {
+    text-align: center
+}
+
+html:not(.visual-refresh) .phoneField_a0c54f {
+    padding: 2px
+}
+
+html:not(.visual-refresh) .phoneField_a0c54f .countryButton_a0c54f {
+    border-radius: 3px
+}
+
+html:not(.visual-refresh) .phoneField_a0c54f .countryCode_a0c54f,html:not(.visual-refresh) .phoneField_a0c54f .plusSign_a0c54f {
+    color: var(--white-500)
+}
+
+html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
+    stroke: var(--white-500)
+}
+
+.phoneVerificationModal_db41ea {
+    position: relative;
+    width: 440px;
+    min-height: 252px;
+    padding: 16px
+}
+
+.phoneVerificationModal_db41ea .animationContainer_db41ea {
+    position: absolute;
+    top: -150px;
+    left: 130px;
+    right: 130px
+}
+
+.phoneVerificationModal_db41ea .title_db41ea {
+    color: var(--header-primary);
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: auto;
+    padding-top: 80px
+}
+
+.phoneVerificationModal_db41ea .description_db41ea {
+    color: var(--text-normal);
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px
+}
+
+.phoneVerificationModal_db41ea .description_db41ea.error_db41ea {
+    color: var(--status-danger)
+}
+
+.phoneVerificationModal_db41ea .field_db41ea {
+    align-self: stretch
+}
+
+/*# sourceMappingURL=35a49ef27382b8da.css.map*/

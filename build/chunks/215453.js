@@ -1,4 +1,4 @@
-/** Chunk was on 90728 **/
+/** Chunk was on 37697 **/
 n.d(t, {
   Z: () => m
 }), n(789020);
@@ -10,7 +10,7 @@ var r = n(200651),
   s = n(49012),
   c = n(981631),
   d = n(388032),
-  u = n(869681);
+  u = n(876839);
 let p = o.Z.getArticleURL(c.BhN.BOT_DATA_ACCESS);
 
 function m(e) {

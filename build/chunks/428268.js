@@ -17,7 +17,7 @@ var a = c(442837),
   u = c(463031),
   l = c(981631),
   m = c(388032),
-  g = c(486193);
+  g = c(647361);
 let j = function(t) {
   let {
     guildId: e,

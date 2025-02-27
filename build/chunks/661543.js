@@ -7,7 +7,7 @@ var r = n(570140);
 
 function i(e) {
   let {
-    imageSrc: t,
+    image: t,
     file: n,
     uploadType: i,
     guildId: o,
@@ -15,7 +15,7 @@ function i(e) {
   } = e;
   r.Z.dispatch({
     type: "PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL",
-    imageSrc: t,
+    image: t,
     file: n,
     uploadType: i,
     guildId: o,

@@ -38,7 +38,7 @@ var r = n(200651),
   M = n(710352),
   A = n(981631),
   L = n(388032),
-  W = n(796312);
+  W = n(340361);
 
 function F(e) {
   for (var t = 1; t < arguments.length; t++) {

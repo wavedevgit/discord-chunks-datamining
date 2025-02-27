@@ -1,4 +1,4 @@
-/** Chunk was on 71567 **/
+/** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
   Z: () => E
@@ -26,7 +26,7 @@ var r = n(200651),
   O = n(474024),
   y = n(981631),
   C = n(388032),
-  I = n(850606);
+  I = n(340616);
 let E = function() {
   let {
     analyticsLocations: e
@@ -105,11 +105,14 @@ let E = function() {
         })]
       }), (0, r.jsx)("div", {
         className: I.rightColumn,
-        children: (0, r.jsx)(m.Z, {
-          className: I.profilePreview,
-          profile: T,
-          disableCTA: !0,
-          onIconChange: P ? w : void 0
+        children: (0, r.jsx)(a.Ttm, {
+          className: I.profilePreviewContainer,
+          children: (0, r.jsx)(m.Z, {
+            className: I.profilePreview,
+            profile: T,
+            disableCTA: !0,
+            onIconChange: P ? w : void 0
+          })
         })
       })]
     })

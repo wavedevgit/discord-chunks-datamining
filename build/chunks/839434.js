@@ -1,4 +1,4 @@
-/** Chunk was on 48799 **/
+/** Chunk was on 76977 **/
 n.d(t, {
   Z: () => el
 }), n(47120), n(230036);
@@ -53,7 +53,7 @@ var i, r = n(200651),
   q = n(981631),
   $ = n(65154),
   ee = n(388032),
-  et = n(670621);
+  et = n(905103);
 
 function en(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -385,7 +385,7 @@ class es extends(i = o.PureComponent) {
       (0, h.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("31923")]).then(n.bind(n, 881351));
+        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("36463")]).then(n.bind(n, 881351));
         return n => (0, r.jsx)(e, er(ei({}, n), {
           user: t,
           showMediaItems: !0,

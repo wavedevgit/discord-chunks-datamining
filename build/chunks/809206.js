@@ -162,6 +162,8 @@ function y(e) {
       is_guild_profile: !1
     }), a.Z.dispatch({
       type: "USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS"
+    }), (null != d || null != m) && a.Z.dispatch({
+      type: "RECENT_AVATARS_UPDATE"
     }), e
   }, e => (a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE",

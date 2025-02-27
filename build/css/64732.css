@@ -1,0 +1,79 @@
+/**
+  Module ID: 64732
+  Original File Name: 66fb32544aa67012
+**/
+.select_d48ec6.error_d48ec6 .errorMessage_d48ec6 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 8px;
+    color: var(--status-danger)
+}
+
+.container_b0f4cc {
+    display: flex;
+    flex-direction: column
+}
+
+.title_b0f4cc {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--interactive-normal)
+}
+
+.inputs_b0f4cc {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px
+}
+
+.day_b0f4cc {
+    width: 30%
+}
+
+.month_b0f4cc {
+    width: 35%
+}
+
+.year_b0f4cc {
+    width: 30%
+}
+
+.errors_b0f4cc {
+    color: var(--status-danger)
+}
+
+.modal__5fa9f {
+    width: 432px
+}
+
+.content__5fa9f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px
+}
+
+.image__5fa9f {
+    width: 148px;
+    height: 82px;
+    background-image: url(/assets/142df9b603ff6d7d.svg);
+    align-self: center
+}
+
+.title__5fa9f {
+    margin-top: 20px;
+    text-align: center
+}
+
+.description__5fa9f {
+    margin-top: 8px;
+    text-align: center
+}
+
+.description__5fa9f,.formItem__5fa9f {
+    margin-bottom: 16px
+}
+
+/*# sourceMappingURL=66fb32544aa67012.css.map*/

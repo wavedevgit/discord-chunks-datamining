@@ -1,0 +1,57 @@
+/**
+  Module ID: 2427
+  Original File Name: 339fc7ba0624d3f9
+**/
+.labelWrapper_abe771 {
+    display: flex;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    row-gap: 4px;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.label_abe771 {
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.newBadge_abe771 {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.badgeSpacing_abe771,.betaBadge_abe771 {
+    margin-left: 8px
+}
+
+.betaBadge_abe771 {
+    display: inline
+}
+
+.inviteGuestContainer_abe771 {
+    display: flex;
+    align-items: center
+}
+
+.videoPaused_afb275 {
+    display: flex;
+    justify-content: left;
+    align-items: center
+}
+
+.warningCircle_afb275 {
+    margin-right: 4px
+}
+
+.roleRow_b82947 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.roleDot_b82947 {
+    margin-right: 8px
+}
+
+/*# sourceMappingURL=339fc7ba0624d3f9.css.map*/

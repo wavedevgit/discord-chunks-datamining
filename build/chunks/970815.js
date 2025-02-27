@@ -12,7 +12,7 @@ var r = n(200651),
   l = n(317257),
   c = n(583478),
   u = n(960919),
-  d = n(247489);
+  d = n(816202);
 let f = () => (0, r.jsx)("img", {
     className: d.notificationBadge,
     src: n(808824),

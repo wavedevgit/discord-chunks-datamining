@@ -1,0 +1,334 @@
+/**
+  Module ID: 70123
+  Original File Name: 45df36b6d11a4ea4
+**/
+.container__30f2d {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.topImage__30f2d {
+    width: 200px;
+    height: 139px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(/assets/fe7f670e6ffe6cf6.svg);
+    margin-bottom: 16px
+}
+
+.centerText__30f2d {
+    text-align: center;
+    white-space: pre-wrap
+}
+
+.header__30f2d {
+    margin-bottom: 8px
+}
+
+.descriptionWidth__30f2d {
+    width: 265px;
+    margin-bottom: 24px
+}
+
+.formContent__30f2d {
+    width: 100%
+}
+
+.formDescription__30f2d {
+    margin: 8px 0 24px
+}
+
+.termsPhrase__30f2d {
+    margin-top: 8px
+}
+
+.submitButton__30f2d {
+    width: 100%
+}
+
+.cancelButton__30f2d {
+    margin-top: 12px;
+    width: 100%;
+    color: var(--header-secondary)
+}
+
+.container_a3fac7 {
+    padding: 24px 0;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%
+}
+
+.centerText_a3fac7 {
+    text-align: center;
+    white-space: pre-wrap
+}
+
+.header_a3fac7 {
+    margin-bottom: 8px
+}
+
+.description_a3fac7 {
+    margin-bottom: 20px
+}
+
+.guildList_a3fac7 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+
+.forcedHeight_a3fac7 {
+    height: 516px
+}
+
+.searchContainer_a3fac7 {
+    padding: 0 24px
+}
+
+.container_a3fac7 .guildList_a3fac7 .searchBox_a3fac7 {
+    background-color: var(--background-tertiary);
+    margin-bottom: 8px;
+    padding-right: 8px;
+    box-shadow: none
+}
+
+.container_a3fac7 .guildList_a3fac7 .searchBox_a3fac7:focus,.container_a3fac7 .guildList_a3fac7 .searchBox_a3fac7:focus-within {
+    border-color: var(--text-link)
+}
+
+.guildList_a3fac7 .searchBox_a3fac7 .searchBoxInput_a3fac7 {
+    font-size: 16px;
+    padding: 12px 8px
+}
+
+.guildList_a3fac7 .searchBox_a3fac7 .searchBoxIcon_a3fac7 {
+    height: 16px;
+    width: 16px
+}
+
+.guildRow_a3fac7 {
+    position: relative;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: var(--background-secondary-alt);
+    padding: 12px 16px 12px 12px
+}
+
+.clickableGuildInfoRow_a3fac7 {
+    cursor: pointer
+}
+
+.clickableGuildInfoRow_a3fac7:hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.guildIcon_a3fac7 {
+    background-color: var(--background-primary)
+}
+
+.guildName_a3fac7 {
+    margin-left: 16px;
+    flex: 1
+}
+
+.noResultsContainer_a3fac7 {
+    min-height: 446px;
+    height: 100%;
+    padding: 16px 24px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.noResultsContent_a3fac7 {
+    background-color: var(--background-secondary);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px
+}
+
+.noResultsImage_a3fac7 {
+    width: 120px;
+    height: 96px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(/assets/e4f29c32b2c213bd.svg);
+    margin-bottom: 16px
+}
+
+.scroller_a3fac7 {
+    padding: 0 24px
+}
+
+.enable-forced-colors .container_a3fac7 .guildList_a3fac7 .searchBox_a3fac7:focus,.enable-forced-colors .container_a3fac7 .guildList_a3fac7 .searchBox_a3fac7:focus-within {
+    border-color: Highlight
+}
+
+.container__07ec5 {
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%
+}
+
+.centerText__07ec5 {
+    text-align: center;
+    white-space: pre-wrap
+}
+
+.header__07ec5 {
+    margin-bottom: 8px
+}
+
+.descriptionWidth__07ec5 {
+    width: 351px;
+    margin-bottom: 24px
+}
+
+.formItem__07ec5 {
+    width: 100%
+}
+
+.footer__07ec5 {
+    position: absolute;
+    bottom: 0;
+    width: 464px;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    border-top: 1px solid var(--background-modifier-accent);
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex
+}
+
+.backButton__07ec5 {
+    padding: 0;
+    min-height: 40px;
+    min-width: 40px
+}
+
+.container_bfddf1 {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.topImage_bfddf1 {
+    width: 119px;
+    height: 83px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(/assets/6ab87cfd55c95d33.svg);
+    margin-bottom: 16px
+}
+
+.centerText_bfddf1 {
+    text-align: center;
+    white-space: pre-wrap
+}
+
+.formItem_bfddf1 {
+    width: 100%;
+    margin-bottom: 16px
+}
+
+.header_bfddf1 {
+    margin-bottom: 8px
+}
+
+.descriptionWidth_bfddf1 {
+    margin-bottom: 24px
+}
+
+.submitText_bfddf1 {
+    color: var(--white-500)
+}
+
+.container_c1298c {
+    display: flex;
+    flex-direction: column
+}
+
+.iconContainer_c1298c {
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green-360);
+    margin-bottom: 16px
+}
+
+.icon_c1298c {
+    width: 24px;
+    height: 24px;
+    background-image: url(/assets/4d5f9c527be0f6cd.svg)
+}
+
+.header_c1298c {
+    margin-bottom: 16px
+}
+
+.description_c1298c p:first-child {
+    margin-top: 0
+}
+
+.modalRoot__1d6c7 {
+    width: 720px
+}
+
+.sidebarContainer__1d6c7 {
+    width: 256px;
+    padding: 24px;
+    background-color: var(--background-secondary);
+    box-sizing: border-box
+}
+
+.contentContainer__1d6c7 {
+    width: 464px;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex: 1
+}
+
+.modalContent__1d6c7 {
+    padding-left: 0
+}
+
+.container__1d6c7 {
+    display: flex;
+    flex-direction: row
+}
+
+.closeButton__1d6c7 {
+    position: absolute;
+    box-sizing: content-box;
+    top: 12px;
+    right: 4px
+}
+
+/*# sourceMappingURL=45df36b6d11a4ea4.css.map*/

@@ -1,21 +1,28 @@
-/** Chunk was on web.js **/
-"use strict";
-var r = {
-  container: "container_d4ced7",
-  hidden: "hidden_d4ced7",
-  stickerIconOffset: "stickerIconOffset_d4ced7",
-  submitButtonOffset: "submitButtonOffset_d4ced7",
-  containerBackground: "containerBackground_d4ced7",
-  bottomInformationTextContainer: "bottomInformationTextContainer_d4ced7",
-  bottomInformationLayout: "bottomInformationLayout_d4ced7",
-  textDivider: "textDivider_d4ced7",
-  descriptionText: "descriptionText_d4ced7",
-  stickerResults: "stickerResults_d4ced7",
-  keybind: "keybind_d4ced7",
-  closeIcon: "closeIcon_d4ced7",
-  suggestedExpression: "suggestedExpression_d4ced7",
-  mask: "mask_d4ced7",
-  suggestedExpressionFocused: "suggestedExpressionFocused_d4ced7",
-  maskBackground: "maskBackground_d4ced7"
-};
-e.exports = r
+/** Chunk was on 61366 **/
+n.d(t, {
+  Z: () => c
+});
+var o = n(200651);
+n(192379);
+var r = n(159277),
+  i = n(585183),
+  s = n(981631),
+  a = n(927923);
+
+function c(e) {
+  let {
+    authToken: t,
+    onContinue: n,
+    onError: c,
+    onClose: l
+  } = e;
+  return (0, o.jsx)(i.h, {
+    platformType: s.ABu.XBOX,
+    clientId: r.t.XBOX_APPLICATION_ID,
+    scopes: a.tA,
+    authToken: t,
+    onContinue: n,
+    onError: c,
+    onClose: l
+  })
+}

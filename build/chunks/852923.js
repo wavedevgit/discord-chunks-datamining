@@ -1,101 +1,101 @@
-/** Chunk was on 17049 **/
+/** Chunk was on 49750 **/
 n.d(t, {
-  Z: () => O
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
   l = n.n(i),
   o = n(481060),
-  a = n(922611),
-  s = n(592125),
+  s = n(922611),
+  a = n(592125),
   c = n(944486),
   u = n(471253),
-  E = n(623633),
-  d = n(930180),
-  _ = n(388032),
-  N = n(29829);
+  d = n(623633),
+  _ = n(930180),
+  E = n(388032),
+  p = n(211534);
 
-function I(e) {
+function m(e) {
   let t = c.Z.getVoiceChannelId();
   if (null == t) return;
-  let n = s.Z.getChannel(t);
+  let n = a.Z.getChannel(t);
   null != n && (0, u.RK)(n, e)
 }
 
-function T(e) {
+function h(e) {
   var t, n;
   let {
     channelId: i
-  } = e, s = null !== (t = (0, d._d)(i)) && void 0 !== t ? t : 0, c = null !== (n = (0, d.K3)(i)) && void 0 !== n ? n : 0, u = (0, a.D)({
+  } = e, a = null !== (t = (0, _._d)(i)) && void 0 !== t ? t : 0, c = null !== (n = (0, _.K3)(i)) && void 0 !== n ? n : 0, u = (0, s.D)({
     location: "invited_to_speak_header"
   });
-  return s > 0 && c > 0 ? (0, r.jsx)("div", {
-    className: N.blocked,
+  return a > 0 && c > 0 ? (0, r.jsx)("div", {
+    className: p.blocked,
     children: (0, r.jsx)("div", {
-      className: l()(N.blockedText, N.noIcon),
-      children: _.NW.string(_.t.xlJRfn)
+      className: l()(p.blockedText, p.noIcon),
+      children: E.NW.string(E.t.xlJRfn)
     })
-  }) : u && s > 0 ? (0, r.jsx)("div", {
-    className: N.blocked,
+  }) : u && a > 0 ? (0, r.jsx)("div", {
+    className: p.blocked,
     children: (0, r.jsx)("div", {
-      className: l()(N.blockedText, N.noIcon),
-      children: _.NW.string(_.t.WYad9f)
+      className: l()(p.blockedText, p.noIcon),
+      children: E.NW.string(E.t.WYad9f)
     })
-  }) : s > 0 ? (0, r.jsxs)("div", {
-    className: N.blocked,
+  }) : a > 0 ? (0, r.jsxs)("div", {
+    className: p.blocked,
     children: [u ? null : (0, r.jsx)(o.t6m, {
       size: "xxs",
       color: "currentColor",
-      className: N.blockedIcon
+      className: p.blockedIcon
     }), (0, r.jsx)("div", {
-      className: l()(N.blockedText, {
-        [N.noIcon]: u
+      className: l()(p.blockedText, {
+        [p.noIcon]: u
       }),
-      children: _.NW.format(_.t.ATpigY, {
-        number: s
+      children: E.NW.format(E.t.ATpigY, {
+        number: a
       })
     })]
   }) : c > 0 ? (0, r.jsx)("div", {
-    className: N.blocked,
+    className: p.blocked,
     children: (0, r.jsx)("div", {
-      className: l()(N.blockedText, N.noIcon),
-      children: _.NW.string(_.t.eHq2OD)
+      className: l()(p.blockedText, p.noIcon),
+      children: E.NW.string(E.t.eHq2OD)
     })
   }) : null
 }
 
-function O() {
-  let e = (0, E.Z)();
+function f() {
+  let e = (0, d.Z)();
   return null == e ? null : (0, r.jsxs)(o.qXd, {
-    className: N.container,
+    className: p.container,
     color: o.DM8.DEFAULT,
     children: [(0, r.jsx)("div", {
-      children: _.NW.string(_.t.Ul1RJS)
-    }), (0, r.jsx)(T, {
+      children: E.NW.string(E.t.Ul1RJS)
+    }), (0, r.jsx)(h, {
       channelId: e.id
     }), (0, r.jsx)(o.zxk, {
-      className: N.acceptButton,
+      className: p.acceptButton,
       size: o.zxk.Sizes.MIN,
       color: o.zxk.Colors.WHITE,
-      onClick: () => I(!1),
+      onClick: () => m(!1),
       children: (0, r.jsx)(o.Text, {
-        className: N.acceptText,
+        className: p.acceptText,
         variant: "text-xs/normal",
         color: "none",
-        children: _.NW.string(_.t.MpO0p6)
+        children: E.NW.string(E.t.MpO0p6)
       })
     }), (0, r.jsx)(o.zxk, {
-      className: N.declineButton,
+      className: p.declineButton,
       look: o.zxk.Looks.OUTLINED,
       size: o.zxk.Sizes.MIN,
       color: o.zxk.Colors.WHITE,
-      onClick: () => I(!0),
+      onClick: () => m(!0),
       children: (0, r.jsx)(o.Text, {
-        className: N.declineText,
+        className: p.declineText,
         variant: "text-xs/normal",
         color: "none",
-        children: _.NW.string(_.t["1YDv7e"])
+        children: E.NW.string(E.t["1YDv7e"])
       })
     })]
   })

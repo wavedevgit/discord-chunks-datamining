@@ -1,4 +1,4 @@
-/** Chunk was on 71567 **/
+/** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
   Z: () => M
@@ -35,7 +35,7 @@ var r = n(200651),
   R = n(981631),
   Z = n(710111),
   D = n(388032),
-  k = n(871490);
+  k = n(70235);
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -208,7 +208,7 @@ function z(e) {
       (0, u.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("56035"), n.e("26855")]).then(n.bind(n, 758961));
+        } = await Promise.all([n.e("56035"), n.e("54906")]).then(n.bind(n, 758961));
         return n => (0, r.jsx)(e, W(A({}, n), {
           guildId: t.id
         }))
@@ -369,7 +369,7 @@ function H(e) {
           e.stopPropagation(), (0, u.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("56035"), n.e("26855")]).then(n.bind(n, 758961));
+            } = await Promise.all([n.e("56035"), n.e("54906")]).then(n.bind(n, 758961));
             return n => (0, r.jsx)(e, W(A({}, n), {
               guildId: o.id,
               existingSound: t

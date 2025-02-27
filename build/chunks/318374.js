@@ -14,7 +14,7 @@ var r = n(200651),
   d = n(751688),
   f = n(5192),
   _ = n(51144),
-  p = n(802747);
+  p = n(590039);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -94,7 +94,7 @@ function v(e) {
           onContextMenu: t => (0, u.jW)(t, async () => {
             let {
               default: t
-            } = await Promise.all([n.e("79695"), n.e("69220"), n.e("31327")]).then(n.bind(n, 881351));
+            } = await Promise.all([n.e("79695"), n.e("69220"), n.e("65593")]).then(n.bind(n, 881351));
             return n => (0, r.jsx)(t, E(g({}, n), {
               user: e,
               guildId: s,

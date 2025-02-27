@@ -1,4 +1,4 @@
-/** Chunk was on 88119 **/
+/** Chunk was on 4566 **/
 n.d(t, {
   Z: () => L
 }), n(47120), n(653041);
@@ -29,7 +29,7 @@ var r = n(200651),
   I = n(276264),
   P = n(981631),
   S = n(388032),
-  Z = n(920915);
+  Z = n(582525);
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -75,7 +75,7 @@ function M(e) {
     (0, s.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("22905")]).then(n.bind(n, 354589));
+      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("59479")]).then(n.bind(n, 354589));
       return n => (0, r.jsx)(e, A(T({}, n), {
         user: t,
         channel: i

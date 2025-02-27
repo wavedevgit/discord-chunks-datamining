@@ -1,0 +1,81 @@
+/**
+  Module ID: 59056
+  Original File Name: ecc5b1d5326ccd84
+**/
+.select_d48ec6.error_d48ec6 .errorMessage_d48ec6 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 8px;
+    color: var(--status-danger)
+}
+
+.container_b0f4cc {
+    display: flex;
+    flex-direction: column
+}
+
+.title_b0f4cc {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--interactive-normal)
+}
+
+.inputs_b0f4cc {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px
+}
+
+.day_b0f4cc {
+    width: 30%
+}
+
+.month_b0f4cc {
+    width: 35%
+}
+
+.year_b0f4cc {
+    width: 30%
+}
+
+.errors_b0f4cc {
+    color: var(--status-danger)
+}
+
+.container__6faef {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.title__6faef {
+    margin-bottom: 8px
+}
+
+.img__6faef {
+    width: 149px;
+    height: 83px
+}
+
+.birthday__6faef,.confirmContainer__6faef,.img__6faef {
+    margin-bottom: 16px
+}
+
+.confirmContainer__6faef {
+    text-align: center;
+    margin-top: 24px
+}
+
+.confirmTitle__6faef {
+    margin-bottom: 8px
+}
+
+.confirmFooter__6faef {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+/*# sourceMappingURL=ecc5b1d5326ccd84.css.map*/

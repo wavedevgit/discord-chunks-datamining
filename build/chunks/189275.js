@@ -20,7 +20,7 @@ function c(e) {
   (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("25176"), n.e("94094")]).then(n.bind(n, 164375));
+    } = await Promise.all([n.e("25176"), n.e("39030")]).then(n.bind(n, 164375));
     return n => {
       let {
         transitionState: i,

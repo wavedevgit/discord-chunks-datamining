@@ -1,0 +1,113 @@
+/**
+  Module ID: 2949
+  Original File Name: a65616b4eb791785
+**/
+.avatarDecorationPreview__9baf3 {
+    padding: 16px 0 32px
+}
+
+.profileEffectPreview__9baf3 {
+    scale: .9;
+    position: relative
+}
+
+.header__7560f {
+    font-size: 20px;
+    margin-top: 20px;
+    color: var(--header-primary)
+}
+
+.customGiftHeader__7560f {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    width: 75%;
+    line-height: 1.25
+}
+
+.backSplash__7560f {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .15;
+    background-size: cover;
+    background-position: bottom;
+    filter: grayscale(100%);
+    -webkit-mask: radial-gradient(circle at 50% 0,#000,transparent);
+    mask: radial-gradient(circle at 50% 0,#000,transparent);
+    background-image: url(/assets/9565a0e7b9291ad9.png)
+}
+
+.customMessage__7560f {
+    font-size: calc(10px + 1.4vw);
+    margin-bottom: 35px;
+    line-height: 1;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    word-wrap: break-word;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    max-width: 450px
+}
+
+.giftAnimation__7560f {
+    margin-bottom: 40px
+}
+
+.customGiftHeaderText__7560f {
+    margin-bottom: 15px
+}
+
+.content__7560f {
+    padding: 60px 20px
+}
+
+.content__7560f,.contentCustomGift__7560f {
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+.contentCustomGift__7560f {
+    padding: 30px 20px
+}
+
+.body__7560f {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--text-normal)
+}
+
+.closeButton__7560f {
+    position: absolute;
+    top: var(--modal-vertical-padding);
+    right: var(--modal-horizontal-padding)
+}
+
+.seasonalGiftIcon__7560f {
+    position: absolute;
+    width: 260px;
+    top: -170px;
+    z-index: 2;
+    left: 92px
+}
+
+.cannon__7560f {
+    position: absolute;
+    width: 100vw;
+    height: 130vh;
+    top: -30vh;
+    left: 0;
+    z-index: 1
+}
+
+.modal__7560f {
+    z-index: 0;
+    max-height: 100%
+}
+
+/*# sourceMappingURL=a65616b4eb791785.css.map*/

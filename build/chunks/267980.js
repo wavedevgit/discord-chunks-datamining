@@ -1,14 +1,14 @@
-/** Chunk was on 98783 **/
-n.d(t, {
+/** Chunk was on 99245 **/
+t.d(n, {
   Z: () => a
 });
-var i = n(442837),
-  l = n(314897),
-  r = n(944486),
-  o = n(590415);
+var i = t(442837),
+  l = t(314897),
+  r = t(944486),
+  u = t(590415);
 
 function a() {
   let e = (0, i.e7)([r.Z], () => r.Z.getVoiceChannelId()),
-    t = (0, i.e7)([l.default], () => l.default.getId());
-  return (0, o.ZP)(t, e) === o.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
+    n = (0, i.e7)([l.default], () => l.default.getId());
+  return (0, u.ZP)(n, e) === u.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
 }

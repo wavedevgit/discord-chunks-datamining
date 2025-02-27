@@ -1,0 +1,995 @@
+/**
+  Module ID: 59644
+  Original File Name: 43c1713ddf8442cf
+**/
+.partnerBranding__83420 {
+    align-items: center;
+    display: flex;
+    flex: 0 1 auto
+}
+
+.partnerBrandingGameTile__83420 {
+    display: block;
+    flex: 0 0 auto;
+    margin-right: 8px
+}
+
+.partnerBrandingLogotype__83420 {
+    height: 24px;
+    max-width: 92px;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.partnerBrandingLogotypeWithCosponsor__83420 {
+    flex: 0 0 auto;
+    max-width: 44px
+}
+
+.cosponsorBrandSeparatorWrapper__83420 {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto
+}
+
+.cosponsorBrandSeparator__83420 {
+    height: 12px;
+    width: 12px
+}
+
+.rewardsDisclosures__311b6 {
+    align-self: flex-start;
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap
+}
+
+.rewardsDisclosuresStack__311b6 {
+    flex-direction: column
+}
+
+.rewardsDisclosuresHorizontal__311b6 {
+    flex-direction: row
+}
+
+.rewardsDisclosures__311b6 li {
+    flex: 0 0 auto
+}
+
+.rewardsDisclosuresHorizontal__311b6 li {
+    margin-right: 4px
+}
+
+.rewardsDisclosuresHorizontal__311b6 li:last-child {
+    margin-right: 0
+}
+
+.borderBottom__311b6 {
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 2px;
+    margin-bottom: 2px
+}
+
+.borderTop__311b6 {
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 2px;
+    margin-top: 2px
+}
+
+.rewardsDisclosuresDurationPremiumExtendable__311b6:after {
+    content: "•";
+    display: inline-block;
+    margin-left: 4px
+}
+
+.rewardsDisclosuresItemPremiumHighlight__311b6 {
+    background-image: linear-gradient(90deg,var(--premium-tier-2-purple),var(--premium-tier-2-pink));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent
+}
+
+.desktopTooltip_fed3a2 {
+    display: flex;
+    width: 100%;
+    padding: 4px 0
+}
+
+.infoIcon_fed3a2 {
+    color: var(--white-500);
+    margin-right: 4px
+}
+
+.wrapper_ef0e9b {
+    width: 100%
+}
+
+.percentCompleteWrapper_ef0e9b {
+    display: flex
+}
+
+.percentCompleteLabel_ef0e9b {
+    flex: 1 1 auto;
+    text-align: right
+}
+
+.progressBar_ef0e9b {
+    height: 4px;
+    position: relative
+}
+
+.progressBar_ef0e9b:after {
+    content: "";
+    opacity: .2;
+    width: 100%
+}
+
+.progressBar_ef0e9b:after,.progressBarFill_ef0e9b {
+    background-color: currentColor;
+    border-radius: 4px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.progressBarFill_ef0e9b:after {
+    box-shadow: 0 0 8px currentColor;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.percentCompleteLabelOffset_ef0e9b,.progressBarFill_ef0e9b {
+    transition: width .3s ease-in-out
+}
+
+.promotedTag__1d868 {
+    isolation: isolate;
+    padding: 3px 4px 2px;
+    position: relative;
+    text-transform: uppercase
+}
+
+.promotedTag__1d868,.promotedTag__1d868 span {
+    display: block
+}
+
+.promotedTagBackground__1d868 {
+    background-color: var(--black-500);
+    border-radius: 3px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0
+}
+
+.questRewardTileContainer_fe15b6 {
+    position: relative
+}
+
+.questOrbQuantity_fe15b6 {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    overflow: hidden;
+    z-index: 1
+}
+
+.container__0d029 {
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-between
+}
+
+.info__0d029 {
+    flex: 1;
+    max-width: 430px
+}
+
+.header__0d029 {
+    display: flex;
+    margin-bottom: 4px
+}
+
+.headerIcon__0d029 {
+    margin-right: 4px
+}
+
+.warning__0d029 {
+    color: var(--text-warning)
+}
+
+.danger__0d029 {
+    color: var(--text-danger)
+}
+
+.cta__0d029 {
+    align-self: center
+}
+
+.ctaInner__0d029 {
+    display: flex
+}
+
+.refreshIcon__0d029 {
+    margin-right: 6px
+}
+
+.inFlight__0d029 {
+    opacity: .5
+}
+
+.questsCollectibleReward__16be0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: cta-img;
+    height: 64px;
+    width: 64px
+}
+
+.outerContainer__2055a {
+    padding: 16px;
+    display: grid;
+    grid-template: "cta-img text cta-buttons" min-content "cta-img progress-bar progress-bar" min-content/min-content 1fr auto;
+    grid-column-gap: 16px;
+    align-items: center
+}
+
+.outerContainerNoProgress__2055a {
+    grid-template: "cta-img text cta-buttons" min-content/min-content 1fr auto
+}
+
+.outerContainerSm__2055a {
+    max-height: none;
+    grid-template: "cta-img text" auto "progress-bar progress-bar" auto "cta-buttons cta-buttons" auto/min-content 1fr;
+    grid-row-gap: 6px;
+    grid-column-gap: 12px
+}
+
+.outerContainerXs__2055a {
+    max-height: none;
+    position: relative;
+    grid-template: "cta-img" auto "text" auto "progress-bar" auto "cta-buttons" auto/1fr;
+    grid-row-gap: 6px;
+    grid-column-gap: 12px
+}
+
+.gridImg__2055a {
+    grid-area: cta-img
+}
+
+.gridText__2055a {
+    grid-area: text
+}
+
+.gridCtaButtons__2055a {
+    grid-area: cta-buttons
+}
+
+.gridProgressBar__2055a {
+    grid-area: progress-bar
+}
+
+.questRewardGiftInventory__2055a {
+    height: 98px;
+    width: 98px
+}
+
+.questRewardEmbed__2055a {
+    height: 80px;
+    width: 80px
+}
+
+.questRewardEmbedSm__2055a {
+    height: 70px;
+    width: 70px
+}
+
+.questRewardEmbedXs__2055a {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 0
+}
+
+.innerContainer__2055a {
+    width: 100%;
+    flex-direction: column
+}
+
+.innerContainer__2055a,.questCopyCta__2055a {
+    display: flex;
+    justify-content: space-between
+}
+
+.questCopyCta__2055a {
+    gap: 16px;
+    align-items: center;
+    height: 100%
+}
+
+.taskDetails__2055a {
+    min-width: 180px
+}
+
+.taskInstructions__2055a {
+    margin-bottom: 4px
+}
+
+.ctaButtonContainer__2055a {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    gap: 8px
+}
+
+.outerContainerXs__2055a .ctaButtonContainer__2055a {
+    flex-direction: column-reverse
+}
+
+.ctaButtonWrapper__2055a {
+    flex: 1 0 auto
+}
+
+.ctaButtonInner__2055a {
+    display: flex;
+    align-items: center
+}
+
+.outerContainerSm__2055a .ctaButtonWrapper__2055a,.outerContainerXs__2055a .ctaButtonWrapper__2055a {
+    flex-grow: 1
+}
+
+.outerContainerXs__2055a .ctaButtonWrapper__2055a {
+    width: 100%
+}
+
+.learnMoreLink__2055a {
+    cursor: pointer
+}
+
+.ctaTooltipText__2055a {
+    text-align: center
+}
+
+.ctaTooltipErrorText__2055a {
+    text-align: left
+}
+
+.ctaTooltipErrorHint__2055a {
+    margin-top: 4px
+}
+
+.theme-light .root__2055a {
+    background: var(--background-tertiary)
+}
+
+.theme-dark .root__2055a {
+    background: var(--background-secondary)
+}
+
+.visual-refresh .root__2055a {
+    background-color: var(--background-surface-high)
+}
+
+.rewardTileWrapper__2055a {
+    position: relative;
+    grid-area: cta-img
+}
+
+.rewardTileExpired__2055a {
+    align-items: center;
+    background: rgba(0,0,0,.5);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.rewardTileExpirationTooltip__2055a {
+    text-align: center
+}
+
+.inHouseButton__2055a {
+    --custom-grapefruit: 255,70,85;
+    color: var(--white-500);
+    background-color: rgb(255,70,85);
+    background-color: rgb(var(--custom-grapefruit))
+}
+
+.inHouseButton__2055a:hover {
+    background-color: rgb(var(--custom-grapefruit),.8)
+}
+
+.inHouseButton__2055a:active {
+    background-color: rgb(var(--custom-grapefruit),.6)
+}
+
+.inHouseIcon__2055a {
+    width: 20px;
+    margin-right: 5px
+}
+
+.refreshIcon__2055a {
+    margin-left: 8px;
+    color: var(--white-500)
+}
+
+.separator__2055a {
+    height: 1px;
+    background-color: var(--background-modifier-hover)
+}
+
+.microphoneContainer__2055a {
+    padding: 16px
+}
+
+.outerContainer__092f9 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    max-height: 185px
+}
+
+.outerContainerGiftInventory__092f9 {
+    min-height: 185px
+}
+
+.outerContainerEmbed__092f9 {
+    min-height: 138px
+}
+
+.questSplash__092f9 {
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    max-width: 660px;
+    width: 100%;
+    min-height: 100%
+}
+
+.header__092f9 {
+    box-sizing: border-box;
+    position: relative;
+    flex: 1 1 auto;
+    height: 100%;
+    width: 100%;
+    z-index: 1
+}
+
+.outerContainerEmbed__092f9.outerContainerXs__092f9 .header__092f9 {
+    padding-bottom: 40px
+}
+
+.headerContent__092f9 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.headerContentEmbed__092f9 {
+    position: static
+}
+
+.headerExpandedContent__092f9 {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 16px
+}
+
+.headerExpandedWrapper__092f9 {
+    width: 100%
+}
+
+.headerCollapsedContent__092f9 {
+    height: 100px;
+    width: 100%
+}
+
+.headerCollapsedClickableContainer__092f9 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer
+}
+
+.headerCollapsedContentRewardWrapper__092f9 {
+    display: flex;
+    background-color: var(--border-subtle);
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 4px 6px;
+    border-radius: 8px;
+    margin-right: 20px
+}
+
+.headerCollapsedRewardTile__092f9 {
+    height: 60px;
+    width: 60px;
+    border-radius: 6px
+}
+
+.headerCollapsedContentCopyWrapper__092f9 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px
+}
+
+.headerCollapsedContentCopyLogos__092f9,.iconLogotypeContainer__092f9 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.partnerBranding__092f9 {
+    margin-right: 16px
+}
+
+.partnerBrandingLogotypes__092f9 {
+    max-width: 92px
+}
+
+.outerContainerXs__092f9 .partnerBrandingLogotypes__092f9 {
+    max-width: 60px
+}
+
+.questInfo__092f9 {
+    margin-top: 4px;
+    overflow: hidden
+}
+
+.heading__092f9 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.outerContainer__092f9:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    background: linear-gradient(180deg,transparent,25%,rgba(0,0,0,.9))
+}
+
+.iconsContainer__092f9 {
+    position: absolute;
+    right: 16px;
+    flex-direction: row;
+    gap: 8px
+}
+
+.iconsContainer__092f9,.iconWrapper__092f9 {
+    display: flex;
+    align-items: center
+}
+
+.iconWrapper__092f9 {
+    justify-content: center;
+    align-self: flex-start;
+    background-color: rgba(0,0,0,.4);
+    border-radius: 16px;
+    cursor: pointer;
+    opacity: .9;
+    transition: background-color .125s, opacity .125s;
+    height: 32px;
+    width: 32px;
+    line-height: 32px
+}
+
+.iconWrapper__092f9:focus,.iconWrapper__092f9:hover {
+    background-color: rgba(0,0,0,.5)
+}
+
+.iconWrapper__092f9:active {
+    opacity: .7
+}
+
+.submenuIcon__092f9 {
+    color: var(--white-500);
+    height: 24px;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    width: 24px
+}
+
+.shareButton__092f9 {
+    margin-top: 8px
+}
+
+.questsCard__72a00 {
+    width: 100%;
+    max-width: 660px;
+    min-width: 280px;
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.visual-refresh .questsCard__72a00 {
+    box-shadow: var(--shadow-low)
+}
+
+.questsCard__72a00+.questsCard__72a00 {
+    margin-top: 16px
+}
+
+.wrapper_b76891 {
+    align-items: center;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+    position: relative
+}
+
+.copy_b76891 {
+    margin-bottom: 0
+}
+
+.rewardTile_b76891 {
+    border-radius: 4px;
+    flex: 0 0 auto;
+    height: 58px;
+    width: 58px
+}
+
+.wrapper_e9b191 {
+    align-items: center;
+    background-color: var(--background-tertiary);
+    border-radius: 8px;
+    box-shadow: var(--elevation-high);
+    box-sizing: border-box;
+    display: flex;
+    gap: 8px;
+    left: 0;
+    margin-left: 16px;
+    padding: 8px;
+    position: absolute;
+    top: 100%;
+    width: 385px
+}
+
+.wrapperAccepted_e9b191 {
+    width: 305px
+}
+
+.rewardTileWrapper_e9b191 {
+    flex: 0 0 auto;
+    height: 76px;
+    position: relative;
+    width: 76px
+}
+
+.rewardTile_e9b191 {
+    border-radius: 4px;
+    display: block
+}
+
+.rewardTile_e9b191.rewardTile_e9b191 {
+    height: 100%;
+    width: 100%
+}
+
+.heading_e9b191 .rewardTile_e9b191 {
+    flex: 0 0 auto;
+    height: 38px;
+    width: 38px
+}
+
+.promotedTag_e9b191 {
+    box-sizing: border-box;
+    left: 4px;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    word-break: break-word;
+    width: calc(100% - 8px)
+}
+
+.content_e9b191 {
+    flex: 1 1 auto
+}
+
+.heading_e9b191 {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 6px
+}
+
+.headingWithSubmenu_e9b191 {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 2px
+}
+
+.questTitle_e9b191 {
+    flex: 1 1 auto;
+    margin-right: 24px
+}
+
+.gameTile_e9b191 {
+    border-radius: 4px;
+    flex: 0 0 auto;
+    height: 38px;
+    width: 38px
+}
+
+.ctas_e9b191 {
+    display: flex;
+    gap: 8px
+}
+
+.cta_e9b191 {
+    flex: 1 1 auto
+}
+
+.submenuWrapper_e9b191 {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px
+}
+
+.submenuIcon_e9b191 {
+    color: var(--interactive-normal);
+    height: 24px;
+    width: 24px
+}
+
+.submenuIcon_e9b191:focus,.submenuIcon_e9b191:hover {
+    color: var(--interactive-hover)
+}
+
+.submenuIcon_e9b191:active {
+    color: var(--interactive-active)
+}
+
+.container_c55cae {
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    width: 100%;
+    max-width: 660px;
+    min-width: 280px
+}
+
+.wide_c55cae.container_c55cae {
+    height: 250px;
+    display: flex;
+    flex-shrink: 0
+}
+
+.tall_c55cae.container_c55cae {
+    display: flex;
+    flex-direction: column-reverse
+}
+
+.contentContainer_c55cae {
+    flex: 1;
+    padding: 38px 16px 16px;
+    background: var(--background-tertiary);
+    border-radius: 8px 0 0 8px;
+    display: flex;
+    flex-direction: column
+}
+
+.tall_c55cae .contentContainer_c55cae {
+    border-radius: 0 0 8px 8px;
+    padding: 16px
+}
+
+.buttonContainer_c55cae {
+    margin-top: auto;
+    align-self: flex-start
+}
+
+.tall_c55cae .buttonContainer_c55cae {
+    margin-top: 50px;
+    width: 100%
+}
+
+.tall_c55cae .button_c55cae {
+    width: 100%
+}
+
+.imgContainer_c55cae {
+    flex: 1;
+    padding: 16px;
+    background: var(--background-secondary);
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.missingQuestImage_c55cae {
+    width: 100%;
+    height: 180px;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.theme-light .contentContainer_c55cae {
+    background: var(--background-secondary)
+}
+
+.theme-light .imgContainer_c55cae {
+    background: var(--background-secondary-alt)
+}
+
+.theme-dark .contentContainer_c55cae {
+    background: var(--background-tertiary)
+}
+
+.theme-dark .imgContainer_c55cae {
+    background: var(--background-secondary)
+}
+
+.modalBody_b83a17 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 76px;
+    position: relative
+}
+
+.modalContent_b83a17 {
+    width: 368px
+}
+
+.closeButton_b83a17 {
+    position: absolute;
+    right: 18px;
+    top: 18px
+}
+
+.heading_b83a17 {
+    margin-bottom: 4px
+}
+
+.bodyCopy_b83a17 {
+    margin-bottom: 24px;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text
+}
+
+.errorInput_b83a17 {
+    border: 1px solid var(--status-danger-background)!important
+}
+
+.rewardTile_b83a17 {
+    width: 240px;
+    height: 348px;
+    padding: 16px;
+    border-radius: 8px;
+    margin-right: 40px;
+    box-shadow: var(--shadow-high)
+}
+
+.rewardTileWrapper_b83a17 {
+    margin-bottom: 16px;
+    position: relative;
+    width: 100%
+}
+
+.rewardTileWrapper_b83a17:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%
+}
+
+.rewardTileAsset_b83a17 {
+    border: 1px solid var(--custom-reward-tile-border-color);
+    display: block;
+    height: auto;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    transition: opacity .25s;
+    width: 100%
+}
+
+.rewardTileAssetLoading_b83a17 {
+    opacity: 0;
+    visibility: hidden
+}
+
+.rewardTileAssetStatusIcon_b83a17 {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.rewardSubheading_b83a17 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px
+}
+
+.rewardHeading_b83a17 {
+    text-align: center;
+    line-height: 1.2
+}
+
+.rewardSubheadingText_b83a17 {
+    text-transform: uppercase
+}
+
+.rewardSubheadingIcon_b83a17 {
+    margin-right: 2px
+}
+
+.platformSelectionOptionLabelContainer_b83a17 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.platformSelectionOptionIcon_b83a17 {
+    margin-right: 8px
+}
+
+.confettiCanvas_b83a17 {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.cosponsorFooter_b83a17 {
+    border-top: 1px solid var(--border-subtle);
+    margin-top: 24px;
+    padding-top: 24px
+}
+
+.cosponsorLogotype_b83a17 {
+    margin-bottom: 8px;
+    min-height: 24px;
+    max-height: 32px;
+    width: auto;
+    max-width: 120px
+}
+
+.cosponsorName_b83a17 {
+    margin-bottom: 16px
+}
+
+.cosponsorRedemptionInstructions_b83a17 p:first-child {
+    margin-top: 0
+}
+
+/*# sourceMappingURL=43c1713ddf8442cf.css.map*/

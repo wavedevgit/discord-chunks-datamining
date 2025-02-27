@@ -22,7 +22,7 @@ var r = n(200651),
   E = n(373228),
   v = n(378233),
   b = n(388032),
-  y = n(820961);
+  y = n(552119);
 let O = e => e.preventDefault(),
   S = .7,
   I = 33,
@@ -109,7 +109,7 @@ let P = e => {
       return (async () => {
         let {
           default: e
-        } = await n.e("21617").then(n.bind(n, 186952));
+        } = await n.e("21617").then(n.bind(n, 357939));
         null != m.current && (E.current = new e({
           canvas: m.current,
           animationId: a.id,

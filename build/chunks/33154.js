@@ -13,7 +13,7 @@ var i, o = n(200651),
   d = n(41776),
   h = n(981631),
   p = n(388032),
-  m = n(209168),
+  m = n(486064),
   f = ((i = {})[i.CHAT = 0] = "CHAT", i[i.REACTIONS = 1] = "REACTIONS", i);
 let g = e => {
   let {

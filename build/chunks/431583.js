@@ -21,7 +21,7 @@ var s = t(200651),
   N = t(361207),
   v = t(981631),
   w = t(388032),
-  j = t(548803);
+  j = t(882528);
 let W = [{
     getOs: () => w.NW.string(w.t.NK5ySE),
     icon: j.apple,

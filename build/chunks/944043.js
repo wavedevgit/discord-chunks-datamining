@@ -16,7 +16,7 @@ var i = n(120356),
   d = n(502762),
   f = n(981631),
   _ = n(388032),
-  p = n(526135),
+  p = n(368206),
   h = function(e) {
     return e[e.PANEL = 0] = "PANEL", e[e.MODAL = 1] = "MODAL", e[e.POPOUT = 2] = "POPOUT", e
   }({});

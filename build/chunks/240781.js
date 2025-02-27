@@ -21,7 +21,7 @@ var i = n(120356),
   m = n(74538),
   E = n(204418),
   v = n(388032),
-  b = n(387868);
+  b = n(970033);
 let y = [{
     avatarSize: l.EFr.SIZE_40,
     showStatus: !1

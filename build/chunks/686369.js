@@ -7,12 +7,13 @@ var r = n(950104),
   i = n(921948),
   a = n(981631);
 
-function s(e, t, n) {
-  let s = null == n ? void 0 : n.customBanner;
-  if (null != t && null != n && null != s && t.hasFeature(a.oNc.DISCOVERABLE)) {
+function s(e, t) {
+  var n;
+  let s = null == t ? void 0 : t.customBanner;
+  if (null != t && null != s && (null === (n = t.features) || void 0 === n ? void 0 : n.includes(a.oNc.DISCOVERABLE))) {
     if (l.ff.test(s)) return "url(".concat(s, ") center / cover");
     let e = l.ZP.getGuildDiscoverySplashURL({
-      id: n.id,
+      id: t.id,
       splash: s,
       size: 512 * (0, i.Z)()
     });

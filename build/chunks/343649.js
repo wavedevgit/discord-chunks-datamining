@@ -1,4 +1,4 @@
-/** Chunk was on 74762 **/
+/** Chunk was on 71491 **/
 t.d(n, {
   default: () => eo
 }), t(47120), t(26686);
@@ -51,7 +51,7 @@ var r = t(200651),
   q = t(474936),
   K = t(231338),
   J = t(388032),
-  $ = t(838349);
+  $ = t(740064);
 
 function Q(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -233,7 +233,7 @@ function ei(e) {
     eC === M.wr.PENDING || eH === T.h8.CONFIRM || null == ef || (e$ !== et && eQ(et), et.includes(eH) || eH === T.h8.PREMIUM_UPSELL || eq(T.h8.REVIEW)), eH === T.h8.ADD_PAYMENT_STEPS && e$ !== er && eQ(er), e5 && eH !== T.h8.PLAN_SELECT && eV(T.h8.PLAN_SELECT)
   }, [eH, eq, e5, eC, e_, ef, e$]), (0, M.bp)(eH, eC, eq, e8), (0, T.dZ)(eH, e0, e8);
   let e9 = l.useRef(null),
-    [e6, e7] = (0, b.Z)(!1, 500),
+    [e7, e6] = (0, b.Z)(!1, 500),
     [e2, ne] = l.useState(null),
     [nn, nt] = l.useState([]),
     [nr, nl] = l.useState(!1),
@@ -376,7 +376,7 @@ function ei(e) {
             },
             onPurchaseTermsChange: ew,
             legalTermsNodeRef: e9,
-            hasLegalTermsFlash: e6
+            hasLegalTermsFlash: e7
           }), t = T.h8.PLAN_SELECT, i = eZ ? (0, r.jsx)(d.zxk, {
             color: d.zxk.Colors.GREEN,
             type: "submit",
@@ -433,7 +433,7 @@ function ei(e) {
               onClick: () => {
                 null != e9.current && (e9.current.scrollIntoView({
                   behavior: "smooth"
-                }), e7(!0))
+                }), e6(!0))
               },
               type: "submit",
               children: J.NW.string(J.t.eUEeCg)

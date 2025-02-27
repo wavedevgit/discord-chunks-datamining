@@ -1,4 +1,4 @@
-/** Chunk was on 8655 **/
+/** Chunk was on 72453 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(266796), n(566702);
@@ -24,7 +24,7 @@ var i = n(373793),
   x = n(147865),
   O = n(778569),
   E = n(388032),
-  j = n(739299);
+  j = n(587494);
 let N = (0, v.Mg)(o.Z.ACTIVITY_BOOKMARK_EMBED_IMAGE_WIDTH);
 
 function C(e) {

@@ -1,0 +1,467 @@
+/**
+  Module ID: 81288
+  Original File Name: f742b2911cca5f5e
+**/
+.boostedGuildIconGem__97677 {
+    transition: color .1s linear;
+    height: 10px
+}
+
+.theme-light .iconBackgroundTierNone__97677,.theme-light .iconBackgroundTierOne__97677,.theme-light .iconBackgroundTierThree__97677,.theme-light .iconBackgroundTierTwo__97677 {
+    color: var(--background-accent)
+}
+
+.theme-dark .iconBackgroundTierNone__97677,.theme-dark .iconBackgroundTierOne__97677,.theme-dark .iconBackgroundTierThree__97677,.theme-dark .iconBackgroundTierTwo__97677 {
+    color: var(--interactive-muted)
+}
+
+.iconTierNone__97677 {
+    color: var(--opacity-white-20)
+}
+
+.iconTierOne__97677,.iconTierTwo__97677 {
+    color: var(--white-500)
+}
+
+.iconTierThree__97677 {
+    color: var(--guild-boosting-pink)
+}
+
+.guildIconContainer__85d16 {
+    margin-right: 4px
+}
+
+.visual-refresh .guildIconContainer__85d16 {
+    margin-right: var(--space-12)
+}
+
+.guildIconV2Container__85d16 {
+    margin-right: 8px
+}
+
+.guildBadge__85d16 .boostedGuildIconGem__85d16 {
+    transition: color .1s linear
+}
+
+.disableColor__85d16 {
+    color: var(--background-accent)
+}
+
+.tierTooltipTitle__85d16 {
+    font-weight: 600
+}
+
+.boostedGuildIconGem__85d16 {
+    height: 10px
+}
+
+.boostedGuildTierMutedIconWithVisibleBanner__85d16 {
+    color: var(--text-muted)
+}
+
+.iconTierNone__85d16 {
+    color: var(--opacity-white-20)
+}
+
+.boostedGuildTierIconBackgroundWithVisibleBanner__85d16 {
+    color: var(--interactive-active)
+}
+
+.visual-refresh .guildBadgeIcon__85d16 {
+    width: 20px!important;
+    height: 20px!important
+}
+
+.header__6e6ad {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.subtitleText__6e6ad {
+    text-align: center;
+    margin-bottom: 16px
+}
+
+.guildBanner__6e6ad {
+    width: 320px;
+    height: 180px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover
+}
+
+.guildHeader__6e6ad {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 48px;
+    box-sizing: border-box;
+    transition: background-color .1s linear;
+    filter: drop-shadow(0 1px 1px hsla(0,0%,0%,.8))
+}
+
+.guildName__6e6ad {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1
+}
+
+.dropdown__6e6ad,.guildName__6e6ad {
+    color: var(--white-500)
+}
+
+.container_aea6af {
+    background-color: var(--background-tertiary);
+    display: flex;
+    height: 44px;
+    align-items: center
+}
+
+.guildBoostingIcon_aea6af {
+    color: var(--guild-boosting-pink);
+    padding-left: 12px;
+    padding-right: 8px
+}
+
+.subscribeButton_aea6af {
+    margin-left: auto;
+    font-weight: 600
+}
+
+.notice_d37fb3 {
+    background-color: var(--background-tertiary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center
+}
+
+.noticeWithoutRightPadding_d37fb3 {
+    padding: 8px 0 8px 8px
+}
+
+.noticeWithRightPadding_d37fb3 {
+    padding: 8px
+}
+
+.noticeLeft_d37fb3 {
+    flex-grow: 1;
+    display: flex;
+    align-items: center
+}
+
+.icon_d37fb3 {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    flex-shrink: 0
+}
+
+.text_d37fb3 {
+    flex: 1;
+    margin-right: 16px
+}
+
+.nitroPreviewUpsell_c8eb34 {
+    border-radius: 5px 5px 0 0;
+    padding-right: 0;
+    padding-left: 12px
+}
+
+.modal__038c3 {
+    width: 650px
+}
+
+.modalContent__038c3 {
+    padding-left: 0;
+    margin-bottom: 0
+}
+
+.previewContainerParent__038c3 {
+    padding: var(--spacing-32);
+    padding-bottom: 0;
+    margin-bottom: -12px;
+    background: var(--background-secondary)
+}
+
+.previewContainer__038c3 {
+    width: 240px;
+    text-align: left
+}
+
+.container__0c185 {
+    border-radius: var(--radius-xs);
+    background: var(--background-secondary-alt)
+}
+
+.modalContent__11787 {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box
+}
+
+.editingContainer__11787 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--black-500);
+    border-radius: 4px;
+    min-height: 300px;
+    height: 400px;
+    max-height: 500px
+}
+
+.image__11787 {
+    height: 100%;
+    pointer-events: all;
+    position: absolute;
+    cursor: grab
+}
+
+.rotationSupported__11787 {
+    will-change: transform
+}
+
+.imageEnabled__11787 {
+    cursor: grab
+}
+
+.imageDisabled__11787 {
+    cursor: not-allowed
+}
+
+.icon__11787 {
+    color: var(--text-normal);
+    padding: 0 20px
+}
+
+.overlay__11787 {
+    z-index: 1;
+    border: 5px solid var(--white-500);
+    box-sizing: border-box;
+    pointer-events: none;
+    position: absolute;
+    box-shadow: 0 0 0 9999px rgba(47,49,54,.6)
+}
+
+.overlayAvatar__11787 {
+    border-radius: 50%
+}
+
+.overlayAvatar__11787,.overlayBanner__11787 {
+}
+
+.sliderContainer__11787 {
+    justify-content: center;
+    width: 90%;
+    margin: 20px auto
+}
+
+.sliderContainer__11787,.toolsContainer__11787 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.toolsContainer__11787 {
+    padding: 18px 0 18px 30px
+}
+
+.zoomControls__11787 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    margin: 0 auto
+}
+
+.zoomIcon__11787 {
+    width: 24px
+}
+
+.slider__11787 {
+    width: 128px
+}
+
+.rotateButton__11787 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: 6px;
+    right: -6px;
+    color: var(--interactive-normal)
+}
+
+.nitroUpsell__11787 {
+    margin: -4px 0 0;
+    margin-bottom: var(--spacing-16)
+}
+
+.cancelButton__11787 {
+    margin-right: 12px
+}
+
+.modalFooter__11787 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.buttonsRight__11787 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end
+}
+
+.titleCase__11787 {
+    text-transform: none
+}
+
+.modalHeader__57752 {
+    padding-bottom: 0;
+    justify-content: space-between
+}
+
+.modalCloseButton__57752 {
+    position: relative;
+    right: -8px
+}
+
+.modalContent__57752 {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--spacing-8)
+}
+
+.editingContainer__57752 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--black-500);
+    border-radius: var(--radius-sm);
+    min-height: 300px;
+    height: 400px;
+    max-height: 500px
+}
+
+.image__57752 {
+    height: 100%;
+    pointer-events: all;
+    position: absolute;
+    cursor: grab
+}
+
+.rotationSupported__57752 {
+    will-change: transform
+}
+
+.imageEnabled__57752 {
+    cursor: grab
+}
+
+.imageDisabled__57752 {
+    cursor: not-allowed
+}
+
+.icon__57752 {
+    color: var(--text-normal);
+    padding: 0 20px
+}
+
+.overlay__57752 {
+    z-index: 1;
+    border: 5px solid var(--white-500);
+    box-sizing: border-box;
+    pointer-events: none;
+    position: absolute;
+    box-shadow: 0 0 0 9999px rgba(47,49,54,.6)
+}
+
+.overlayAvatar__57752 {
+    border-radius: 50%
+}
+
+.overlayAvatar__57752,.overlayBanner__57752 {
+}
+
+.sliderContainer__57752 {
+    justify-content: center;
+    width: 90%;
+    margin: 20px auto
+}
+
+.sliderContainer__57752,.toolsContainer__57752 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.toolsContainer__57752 {
+    padding: 18px 0 18px 30px
+}
+
+.zoomControls__57752 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    margin: 0 auto
+}
+
+.zoomIcon__57752 {
+    width: 24px
+}
+
+.slider__57752 {
+    width: 128px
+}
+
+.rotateButton__57752 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: 6px;
+    right: -6px;
+    color: var(--interactive-normal)
+}
+
+.premiumUpsell__57752 {
+    margin: -4px 0 0;
+    margin-bottom: var(--spacing-16);
+    border-radius: var(--radius-sm)
+}
+
+.modalFooter__57752 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: var(--spacing-16)
+}
+
+.linkButton__57752 {
+    padding: var(--spacing-8)
+}
+
+.resetButton__57752 {
+    margin-left: -8px;
+    margin-right: auto
+}
+
+.titleCase__57752 {
+    text-transform: none
+}
+
+/*# sourceMappingURL=f742b2911cca5f5e.css.map*/

@@ -1,44 +1,44 @@
-/** Chunk was on 56236 **/
+/** Chunk was on 96173 **/
 t.d(n, {
-  ZP: () => f,
-  so: () => h,
-  wg: () => v
+  ZP: () => g,
+  so: () => m,
+  wg: () => b
 }), t(47120);
-var r = t(442837),
-  i = t(159300),
-  l = t(427679),
+var i = t(442837),
+  a = t(159300),
+  r = t(427679),
   o = t(592125),
-  c = t(984933),
-  a = t(430824),
-  s = t(496675),
-  u = t(700785),
-  d = t(924301),
-  g = t(765305),
-  p = t(981631);
+  d = t(984933),
+  _ = t(430824),
+  l = t(496675),
+  c = t(700785),
+  s = t(924301),
+  p = t(765305),
+  u = t(981631);
 
-function v(e) {
+function b(e) {
   let [n] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [o.Z], {
     entityType: t,
-    channelId: r
+    channelId: i
   } = "entity_type" in e ? {
     entityType: e.entity_type,
     channelId: e.channel_id
   } : e;
-  if (t === g.WX.EXTERNAL) return !0;
-  let i = n.getChannel(r);
-  return null != i && u.Uu(p.Plq.VIEW_CHANNEL, i)
+  if (t === p.WX.EXTERNAL) return !0;
+  let a = n.getChannel(i);
+  return null != a && c.Uu(u.Plq.VIEW_CHANNEL, a)
 }
 
-function h(e) {
-  let [n, t, r, u] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [c.ZP, o.Z, a.Z, l.Z];
-  if ((0, d.Z2)(e)) return !1;
+function m(e) {
+  let [n, t, i, c] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [d.ZP, o.Z, _.Z, r.Z];
+  if ((0, s.Z2)(e)) return !1;
   let {
-    guild_id: p,
-    channel_id: h
-  } = e, f = e.entity_type === g.WX.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(h), m = r.getGuild(p), j = u.getStageInstanceByChannel(h);
-  return !!(0, i.b)(s.Z, m, f, j) && null != f && v(e, [t])
+    guild_id: u,
+    channel_id: m
+  } = e, g = e.entity_type === p.WX.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(m), I = i.getGuild(u), N = c.getStageInstanceByChannel(m);
+  return !!(0, a.b)(l.Z, I, g, N) && null != g && b(e, [t])
 }
 
-function f(e) {
-  return (0, r.e7)([c.ZP, o.Z, a.Z, l.Z], () => h(e, [c.ZP, o.Z, a.Z, l.Z]), [e])
+function g(e) {
+  return (0, i.e7)([d.ZP, o.Z, _.Z, r.Z], () => m(e, [d.ZP, o.Z, _.Z, r.Z]), [e])
 }

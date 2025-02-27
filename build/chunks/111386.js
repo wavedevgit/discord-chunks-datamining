@@ -8,7 +8,7 @@ var r = n(200651),
   i = n(481060),
   o = n(243778),
   s = n(388032),
-  c = n(375345),
+  c = n(250020),
   u = n(442937);
 let d = () => (0, r.jsxs)("div", {
     className: c.coachtipInner,

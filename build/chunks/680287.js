@@ -1,118 +1,118 @@
-/** Chunk was on 73628 **/
-r.d(t, {
-  Z: () => d
-}), r(653041), r(789020);
-var A = r(544891),
-  n = r(881052),
-  o = r(687294),
-  a = r(476326),
-  l = r(45251),
-  i = r(861990),
-  s = r(388032);
+/** Chunk was on 78846 **/
+n.d(t, {
+  Z: () => u
+}), n(653041), n(789020);
+var a = n(544891),
+  i = n(881052),
+  r = n(687294),
+  o = n(476326),
+  l = n(45251),
+  s = n(861990),
+  c = n(388032);
 
-function c(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      A = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (A = A.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), A.forEach(function(t) {
-      var A;
-      A = r[t], t in e ? Object.defineProperty(e, t, {
-        value: A,
+    var n = null != arguments[t] ? arguments[t] : {},
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), a.forEach(function(t) {
+      var a;
+      a = n[t], t in e ? Object.defineProperty(e, t, {
+        value: a,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = A
+      }) : e[t] = a
     })
   }
   return e
 }
-class d extends o.Z {
+class u extends r.Z {
   async uploadFiles(e, t) {
     let {
-      addFilesTo: r
+      addFilesTo: n
     } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
     super.upload({
-      name: s.NW.string(s.t.jfKTen)
+      name: c.NW.string(c.t.jfKTen)
     }, t, e);
-    let A = new AbortController;
+    let a = new AbortController;
     try {
-      if (this.files = e, this._aborted || (this._handleStart(() => A.abort()), !await this.compressAndCheckFileSize())) return;
-      this.setUploadingTextForUI(), await (0, o.$)(this.files, !0, this._recomputeProgress.bind(this))
+      if (this.files = e, this._aborted || (this._handleStart(() => a.abort()), !await this.compressAndCheckFileSize())) return;
+      this.setUploadingTextForUI(), await (0, r.$)(this.files, !0, this._recomputeProgress.bind(this))
     } catch (e) {
       this._handleException(e)
     }
     try {
-      return await this._createMessage(A.signal, t, r)
+      return await this._createMessage(a.signal, t, n)
     } catch (e) {
       if (this._raiseEndpointErrors) throw e;
       this._handleException(e)
     }
   }
-  async _createMessage(e, t, r) {
-    var o, s, d, u;
-    let f;
+  async _createMessage(e, t, n) {
+    var r, c, u, m;
+    let p;
     let g = [];
     if ((this.files.forEach((e, t) => {
-        let r = (0, i.B)(e, t);
-        e.item.platform === a.ow.WEB && g.push(c({}, r))
-      }), null != r && null != t) ? f = this._addAttachmentsToPayload(t, r, g) : (d = c({}, t), u = u = {
+        let n = (0, s.B)(e, t);
+        e.item.platform === o.ow.WEB && g.push(d({}, n))
+      }), null != n && null != t) ? p = this._addAttachmentsToPayload(t, n, g) : (u = d({}, t), m = m = {
         attachments: g
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
-        var r = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(m)) : (function(e, t) {
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var A = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, A)
+          var a = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, a)
         }
-        return r
-      })(Object(u)).forEach(function(e) {
-        Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(u, e))
-      }), f = d), null != f.scheduled_timestamp) {
+        return n
+      })(Object(m)).forEach(function(e) {
+        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(m, e))
+      }), p = u), null != p.scheduled_timestamp) {
       try {
         let e = await (0, l.PV)({
-          channelId: f.channel_id,
-          scheduledTimestamp: f.scheduled_timestamp,
+          channelId: p.channel_id,
+          scheduledTimestamp: p.scheduled_timestamp,
           messageSendData: {
-            channelId: f.channel_id,
-            content: f.content,
-            flags: f.flags,
-            nonce: f.nonce,
-            message_reference: f.message_reference,
-            allowed_mentions: f.allowed_mentions,
+            channelId: p.channel_id,
+            content: p.content,
+            flags: p.flags,
+            nonce: p.nonce,
+            message_reference: p.message_reference,
+            allowed_mentions: p.allowed_mentions,
             tts: !1
           },
           attachments: g
         });
         return this._handleComplete(e.body), e.body
       } catch (e) {
-        if (this._raiseEndpointErrors) throw new n.Hx(e);
+        if (this._raiseEndpointErrors) throw new i.Hx(e);
         this._handleError({
-          code: null == e ? void 0 : null === (o = e.body) || void 0 === o ? void 0 : o.code,
+          code: null == e ? void 0 : null === (r = e.body) || void 0 === r ? void 0 : r.code,
           body: null == e ? void 0 : e.body
         })
       }
       return
     }
-    let p = {
+    let h = {
         url: this._url,
-        body: f,
+        body: p,
         signal: e,
         rejectWithError: !1
       },
-      m = "POST" === this._method ? A.tn.post : A.tn.patch;
+      f = "POST" === this._method ? a.tn.post : a.tn.patch;
     try {
-      let e = await m(p);
+      let e = await f(h);
       return this._handleComplete(e.body), e.body
     } catch (e) {
-      if (this._raiseEndpointErrors) throw new n.Hx(e);
+      if (this._raiseEndpointErrors) throw new i.Hx(e);
       this._handleError({
-        code: null == e ? void 0 : null === (s = e.body) || void 0 === s ? void 0 : s.code,
+        code: null == e ? void 0 : null === (c = e.body) || void 0 === c ? void 0 : c.code,
         body: null == e ? void 0 : e.body
       })
     }
   }
-  constructor(e, t = "POST", r) {
-    super(e, t, r)
+  constructor(e, t = "POST", n) {
+    super(e, t, n)
   }
 }

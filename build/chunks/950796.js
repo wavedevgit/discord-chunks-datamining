@@ -15,7 +15,7 @@ var r = n(200651),
   d = n(358085),
   f = n(998502),
   _ = n(388032),
-  p = n(588475);
+  p = n(12364);
 let h = e => f.ZP.close(e),
   g = e => f.ZP.minimize(e),
   m = e => f.ZP.maximize(e);

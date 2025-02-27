@@ -1,0 +1,100 @@
+/**
+  Module ID: 5038
+  Original File Name: 4a899bdfb128f054
+**/
+.form__08bd2 {
+    display: contents
+}
+
+.modalHeader__08bd2 {
+    padding: 16px 0 0;
+    text-align: center;
+    overflow: visible;
+    gap: 4px
+}
+
+.closeButton__08bd2 {
+    position: absolute;
+    top: 8px;
+    right: -4px;
+    cursor: pointer;
+    color: var(--interactive-normal)
+}
+
+.headerImage__08bd2 {
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-image: url(/assets/f66ae7bb8510ab4f.svg)
+}
+
+.inputSection__08bd2 {
+    margin: 16px 0
+}
+
+.titleRow__08bd2 {
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 8px
+}
+
+.title__08bd2,.titleRow__08bd2 {
+    display: inline-flex
+}
+
+.title__08bd2 {
+    margin-right: 4px
+}
+
+.textArea__08bd2 {
+    background: var(--input-background);
+    max-height: 80px
+}
+
+.error__08bd2 {
+    margin-top: 8px
+}
+
+.button__08bd2 {
+    text-transform: capitalize
+}
+
+.visual-refresh .inputSection__08bd2 {
+    margin-bottom: var(--space-12)
+}
+
+.visual-refresh .headerImage__08bd2 {
+    margin: 12px auto;
+    width: 250px;
+    height: 150px;
+    background-image: url(/assets/4ed48b8404cc8dd4.svg)
+}
+
+.visual-refresh .modal__08bd2.gradientBorder__08bd2 {
+    box-sizing: border-box;
+    border: none
+}
+
+.visual-refresh .container__08bd2 {
+    border-radius: inherit;
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--bg-modal-gradient-lavender-end),var(--bg-modal-gradient-lavender-start));
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: inset 0 1px 0 1px var(--border-subtle)
+}
+
+.visual-refresh .cancelButton__08bd2 {
+    margin-right: 8px
+}
+
+.visual-refresh .modalFooter__08bd2 {
+    background-color: var(--background-primary);
+    padding-bottom: var(--spacing-24);
+    padding-top: var(--spacing-8);
+    border-left: 1px solid var(--border-subtle);
+    border-right: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle)
+}
+
+/*# sourceMappingURL=4a899bdfb128f054.css.map*/

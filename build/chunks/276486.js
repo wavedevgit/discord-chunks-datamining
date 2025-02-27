@@ -74,7 +74,7 @@ function f(e) {
         (0, i.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([r.e("76540"), r.e("5727")]).then(r.bind(r, 607018));
+          } = await Promise.all([r.e("76540"), r.e("77874")]).then(r.bind(r, 607018));
           return t => (0, n.jsx)(e, u({
             reason: o.L.GUILD_PHONE_REQUIRED
           }, t))

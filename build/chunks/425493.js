@@ -10,7 +10,7 @@ var i = n(120356),
   a = n(873546),
   s = n(481060),
   l = n(388032),
-  c = n(409716),
+  c = n(404679),
   u = function(e) {
     return e.DEFAULT = "", e.BOLD = "Bold", e.SOLID = "Solid", e
   }(u || {});

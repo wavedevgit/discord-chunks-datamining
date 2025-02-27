@@ -57,7 +57,7 @@ var r = n(200651),
   et = n(921944),
   en = n(761274),
   er = n(388032),
-  el = n(382840);
+  el = n(711597);
 
 function es(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -164,10 +164,10 @@ function eo(e) {
     [eK, eq] = l.useState(eg),
     [eQ, e$] = l.useState(ex),
     [e0, e1] = l.useState(null !== (o = T.I0.getSetting()) && void 0 !== o && o),
-    [e2, e3] = l.useState(null != ec ? ec : null),
-    e4 = null !== (E = null == ef ? void 0 : ef.id) && void 0 !== E ? E : ez,
-    [e7, e5] = l.useState(ew ? "" : void 0);
-  async function e8() {
+    [e3, e2] = l.useState(null != ec ? ec : null),
+    e7 = null !== (E = null == ef ? void 0 : ef.id) && void 0 !== E ? E : ez,
+    [e4, e5] = l.useState(ew ? "" : void 0);
+  async function e9() {
     var e, t;
     i()(null != ej || null != eG || null != eS && null != eZ, "got nothing to stream");
     let n = null !== (e = null == ef ? void 0 : ef.id) && void 0 !== e ? e : ez;
@@ -197,7 +197,7 @@ function eo(e) {
       audioSourceId: eV,
       sound: eQ,
       previewDisabled: e0,
-      nativePickerStyleUsed: e7,
+      nativePickerStyleUsed: e4,
       goLiveModalDurationMs: Date.now() - ev.current
     }), null != eR && eW(et.L.AUTO_DISMISS), eI || (async () => {
       await P.Z.hasPermission(en.Eu.SCREEN_RECORDING, {
@@ -210,7 +210,7 @@ function eo(e) {
   }
 
   function e6() {
-    e8(), ed()
+    e9(), ed()
   }
   l.useEffect(() => {
     let e = (0, M.isWindows)() ? (0, B.Z)(y.ZP, k.Z) : null,
@@ -225,7 +225,7 @@ function eo(e) {
       location: "GoLiveModal"
     })
   }, [eu]);
-  let e9 = l.useCallback((e, t, n) => {
+  let e8 = l.useCallback((e, t, n) => {
       var r;
       let l = (0, F.Z)(e, eO, eC),
         [s, a] = null != l ? l : [t, n];
@@ -240,13 +240,13 @@ function eo(e) {
       n !== eK && eq(n), t !== eX && eH(t), s !== t || a !== n ? eJ($.tI.PRESET_CUSTOM) : e !== eB && eJ(e)
     }, [ef, ez, eO, eC, eK, eX, eB]),
     te = l.useCallback(e => {
-      (0, V.t)(), (0, V.T)(null != e ? e : e7)
-    }, [e7]);
+      (0, V.t)(), (0, V.T)(null != e ? e : e4)
+    }, [e4]);
 
   function tt(e) {
     if (e.preventDefault(), 1 === ek) return te();
     if (2 === ek) return eL(3);
-    if (null != e7) return eL(1);
+    if (null != e4) return eL(1);
     let t = (0, K.Z)(ej, eG, y.ZP.getRunningGames());
     z.ZP.supportsFeature(ee.eRX.ELEVATED_HOOK) && (null == t ? void 0 : t.elevated) ? function() {
       var e;
@@ -266,7 +266,7 @@ function eo(e) {
       eF(e), null != e && (eI && (null == e ? void 0 : e.id.startsWith("camera:")) !== !0 ? e5(e.id.split(":")[1]) : e5(void 0), eL(3), eM(!0))
     }, [eI]),
     tr = l.useCallback(e => {
-      e3(e);
+      e2(e);
       var t = 3;
       eL(eo ? 2 : 3)
     }, [eo]),
@@ -322,7 +322,7 @@ function eo(e) {
           return null
       }
     }(ek, q, eo, eD),
-    tc = 1 !== ek && (3 !== ek || null == eG && null == ej && null == eZ || null == e4),
+    tc = 1 !== ek && (3 !== ek || null == eG && null == ej && null == eZ || null == e7),
     tu = l.useCallback(() => {
       null != to && eL(to)
     }, [to]),
@@ -365,9 +365,9 @@ function eo(e) {
             previewDisabled: e0,
             sourceChanged: eD,
             selectSource: eo,
-            onChangeSelectedFPS: e => e9(eB, eX, e),
-            onChangeSelectedResolution: e => e9(eB, e, eK),
-            onChangeSelectedPreset: e => e9(e, eX, eK),
+            onChangeSelectedFPS: e => e8(eB, eX, e),
+            onChangeSelectedResolution: e => e8(eB, e, eK),
+            onChangeSelectedPreset: e => e8(e, eX, eK),
             onChangeSelectedChannelId: eU,
             onChangeSelectedSource: tn,
             onChangeSource: () => ta(),
@@ -376,7 +376,7 @@ function eo(e) {
             onChangeSound: e => e$(e),
             onChangePreviewDisabled: e => e1(e),
             onClose: ed,
-            selectedGuildId: e2,
+            selectedGuildId: e3,
             targetGuildPremiumTier: eC,
             selectGuild: q
           })
@@ -388,12 +388,12 @@ function eo(e) {
           children: (0, r.jsx)(H.Hu, {
             onSourceSelect: e6,
             onCancel: tu,
-            pickerType: e7
+            pickerType: e4
           })
         })
       })]
     }),
-    tm = 1 === ek || ew && 3 === ek ? er.NW.string(er.t.FiBjwc) : eI && (3 !== ek || null != e7) ? er.NW.string(er.t.PDTjLC) : er.NW.string(er.t["UE/rPz"]),
+    tm = 1 === ek || ew && 3 === ek ? er.NW.string(er.t.FiBjwc) : eI && (3 !== ek || null != e4) ? er.NW.string(er.t.PDTjLC) : er.NW.string(er.t["UE/rPz"]),
     tp = (0, r.jsxs)(m.mzw, {
       justify: null == to ? Z.Z.Justify.START : Z.Z.Justify.BETWEEN,
       children: [(0, r.jsx)(m.zxk, {

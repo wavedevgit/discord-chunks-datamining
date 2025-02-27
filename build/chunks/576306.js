@@ -1,8 +1,8 @@
-/** Chunk was on 68241 **/
-n.d(t, {
-  h: () => l
+/** Chunk was on 94805 **/
+r.d(t, {
+  h: () => a
 });
-let r = (0, n(818083).B)({
+let n = (0, r(818083).B)({
   kind: "user",
   id: "2024-12_new_guild_profile",
   label: "Enables new guild profile",
@@ -18,10 +18,10 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function l() {
+function a() {
   let {
     enabled: e
-  } = r.useExperiment({
+  } = n.useExperiment({
     location: "GuildProfileExperiment"
   }, {
     autoTrackExposure: !1

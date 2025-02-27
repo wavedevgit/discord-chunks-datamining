@@ -1,4 +1,4 @@
-/** Chunk was on 97292 **/
+/** Chunk was on 7011 **/
 s.d(t, {
   default: () => x
 }), s(47120);
@@ -15,7 +15,7 @@ var r = s(200651),
   p = s(71509),
   f = s(981631),
   m = s(388032),
-  g = s(681040);
+  g = s(488549);
 let _ = {
   0: a.CgR.SMALL,
   1: a.CgR.DYNAMIC

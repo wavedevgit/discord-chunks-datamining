@@ -46,7 +46,7 @@ var i = n(200651),
   F = n(388627),
   G = n(981631),
   Y = n(388032),
-  B = n(52281);
+  B = n(281254);
 
 function H(e) {
   for (var t = 1; t < arguments.length; t++) {

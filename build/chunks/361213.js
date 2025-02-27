@@ -1,12 +1,12 @@
-/** Chunk was on 72320 **/
-t.d(n, {
-  Z: () => r
+/** Chunk was on 72453 **/
+n.d(t, {
+  Z: () => i
 });
-var o = t(981631);
+var r = n(981631);
 
-function r(e, n) {
-  let t;
-  let r = window.GLOBAL_ENV.CDN_HOST,
-    c = window.GLOBAL_ENV.API_ENDPOINT;
-  return null != r ? "".concat(location.protocol, "//").concat(r, "/app-assets/").concat(e, "/store/").concat(n, ".mp4") : "".concat(location.protocol).concat(c).concat(o.ANM.STORE_ASSET(e, n, "mp4"))
+function i(e, t) {
+  let n;
+  let i = window.GLOBAL_ENV.CDN_HOST,
+    a = window.GLOBAL_ENV.API_ENDPOINT;
+  return null != i ? "".concat(location.protocol, "//").concat(i, "/app-assets/").concat(e, "/store/").concat(t, ".mp4") : "".concat(location.protocol).concat(a).concat(r.ANM.STORE_ASSET(e, t, "mp4"))
 }

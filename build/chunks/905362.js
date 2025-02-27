@@ -71,7 +71,7 @@ function _(e, t) {
   (0, o.ZDy)(async () => {
     let {
       default: i
-    } = await Promise.all([n.e("82158"), n.e("62229")]).then(n.bind(n, 717057));
+    } = await Promise.all([n.e("82158"), n.e("48844")]).then(n.bind(n, 717057));
     return n => {
       let o = () => {
         null != t && s.Z.ackUserGuildJoinRequest(e, t), n.onClose()

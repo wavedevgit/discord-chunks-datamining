@@ -1,15 +1,15 @@
-/** Chunk was on 78226 **/
-r.d(t, {
-  Z: () => o
-}), r(47120);
-var n = r(192379);
+/** Chunk was on 70045 **/
+n.d(t, {
+  Z: () => l
+}), n(47120);
+var r = n(192379);
 
-function o(e) {
-  let t = n.useRef(e);
-  return n.useInsertionEffect(() => {
+function l(e) {
+  let t = r.useRef(e);
+  return r.useInsertionEffect(() => {
     t.current = e
-  }), n.useCallback(function() {
-    for (var e = arguments.length, r = Array(e), n = 0; n < e; n++) r[n] = arguments[n];
-    return t.current(...r)
+  }), r.useCallback(function() {
+    for (var e = arguments.length, n = Array(e), r = 0; r < e; r++) n[r] = arguments[r];
+    return t.current(...n)
   }, [])
 }

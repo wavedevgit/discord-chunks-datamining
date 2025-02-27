@@ -1,4 +1,4 @@
-/** Chunk was on 71567 **/
+/** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -66,7 +66,7 @@ function p(e) {
         null != e && null != i && (0, s.ZDy)(async () => {
           let {
             CreateEmojiWithRolesModal: s
-          } = await n.e("9007").then(n.bind(n, 142774));
+          } = await n.e("9007").then(n.bind(n, 604623));
           return n => (0, r.jsx)(s, g(m({}, n), {
             data: e,
             file: i,
@@ -90,7 +90,7 @@ function p(e) {
         (0, s.ZDy)(async () => {
           let {
             UpdateEmojiRolesModal: i
-          } = await n.e("9007").then(n.bind(n, 142774));
+          } = await n.e("9007").then(n.bind(n, 604623));
           return n => (0, r.jsx)(i, g(m({}, n), {
             emoji: e,
             guildId: t

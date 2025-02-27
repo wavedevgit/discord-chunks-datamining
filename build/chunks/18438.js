@@ -4,10 +4,10 @@ n.d(t, {
   Cf: () => g,
   Fq: () => u,
   HP: () => c,
-  I5: () => f,
   ID: () => m,
   IO: () => b,
   It: () => d,
+  Re: () => f,
   W3: () => O,
   b9: () => S,
   cV: () => _,
@@ -61,6 +61,8 @@ async function l(e, t) {
       type: "GUILD_MEMBER_PROFILE_UPDATE",
       guildMember: t.body,
       guildId: e
+    }), (null != l || null != u) && i.Z.dispatch({
+      type: "RECENT_AVATARS_UPDATE"
     }), t
   } catch (t) {
     let e = t.body;
@@ -94,7 +96,7 @@ function d() {
 
 function f(e) {
   i.Z.dispatch({
-    type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR",
+    type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_V2",
     avatar: e
   })
 }

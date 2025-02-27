@@ -48,6 +48,9 @@ let f = new d(o.Z, {
     } = e;
     u.isFetching = !1, u.error = t
   },
+  RECENT_AVATARS_UPDATE: function() {
+    u.lastFetchedAt = 0
+  },
   LOGOUT: function() {
     c = [], u = s
   }

@@ -1,31 +1,51 @@
-/** Chunk was on 96013 **/
+/** Chunk was on 60691 **/
 n.d(e, {
-  B2: () => u,
+  B2: () => o,
   DS: () => l,
   hj: () => s,
-  nh: () => o
+  nh: () => i
 });
-var i = n(63063),
-  r = n(981631),
-  a = n(388032);
+var r = n(63063),
+  a = n(981631),
+  u = n(388032);
 
 function l(t) {
   let {
     application: e,
     username: n,
-    usernameHook: l = r.dG4,
-    applicationNameHook: o = r.dG4
+    usernameHook: l = a.dG4,
+    applicationNameHook: i = a.dG4
   } = t;
-  return null != e ? a.NW.format(a.t.J8SaGx, {
+  return null != e ? u.NW.format(u.t.J8SaGx, {
     username: n,
     otherUsername: e.name,
     usernameHook: l,
-    otherUsernameHook: o,
-    helpCenterLink: i.Z.getArticleURL(r.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
-  }) : a.NW.format(a.t["+6V2sb"], {
+    otherUsernameHook: i,
+    helpCenterLink: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+  }) : u.NW.format(u.t["+6V2sb"], {
     username: n,
     usernameHook: l,
-    helpCenterLink: i.Z.getArticleURL(r.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+    helpCenterLink: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+  })
+}
+
+function i(t) {
+  let {
+    application: e,
+    username: n,
+    usernameHook: l = a.dG4,
+    applicationNameHook: i = a.dG4
+  } = t;
+  return null != e ? u.NW.format(u.t.eGCDam, {
+    username: n,
+    otherUsername: e.name,
+    usernameHook: l,
+    otherUsernameHook: i,
+    helpCenterLink: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+  }) : u.NW.format(u.t.sAX6rq, {
+    username: n,
+    usernameHook: l,
+    helpCenterLink: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
   })
 }
 
@@ -33,45 +53,25 @@ function o(t) {
   let {
     application: e,
     username: n,
-    usernameHook: l = r.dG4,
-    applicationNameHook: o = r.dG4
-  } = t;
-  return null != e ? a.NW.format(a.t.eGCDam, {
-    username: n,
-    otherUsername: e.name,
-    usernameHook: l,
-    otherUsernameHook: o,
-    helpCenterLink: i.Z.getArticleURL(r.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
-  }) : a.NW.format(a.t.sAX6rq, {
-    username: n,
-    usernameHook: l,
-    helpCenterLink: i.Z.getArticleURL(r.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
-  })
-}
-
-function u(t) {
-  let {
-    application: e,
-    username: n,
     usernameOnClick: l,
-    applicationNameOnClick: o,
-    medium: u
+    applicationNameOnClick: i,
+    medium: o
   } = t;
-  return null != e ? a.NW.formatToParts(a.t["8r+Z+P"], {
+  return null != e ? u.NW.formatToParts(u.t["8r+Z+P"], {
     username: n,
     otherUsername: e.name,
     usernameOnClick: l,
-    otherUsernameOnClick: o,
-    medium: u,
+    otherUsernameOnClick: i,
+    medium: o,
     helpCenterLink: {
-      url: i.Z.getArticleURL(r.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+      url: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
     }
-  }) : a.NW.formatToParts(a.t.ojysqa, {
+  }) : u.NW.formatToParts(u.t.ojysqa, {
     username: n,
     usernameOnClick: l,
-    medium: u,
+    medium: o,
     helpCenterLink: {
-      url: i.Z.getArticleURL(r.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+      url: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
     }
   })
 }
@@ -81,24 +81,24 @@ function s(t) {
     application: e,
     username: n,
     usernameOnClick: l,
-    applicationNameOnClick: o,
-    medium: u
+    applicationNameOnClick: i,
+    medium: o
   } = t;
-  return null != e ? a.NW.formatToParts(a.t.zmc0mp, {
+  return null != e ? u.NW.formatToParts(u.t.zmc0mp, {
     username: n,
     otherUsername: e.name,
     usernameOnClick: l,
-    otherUsernameOnClick: o,
-    medium: u,
+    otherUsernameOnClick: i,
+    medium: o,
     helpCenterLink: {
-      url: i.Z.getArticleURL(r.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+      url: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
     }
-  }) : a.NW.formatToParts(a.t["x2CN/f"], {
+  }) : u.NW.formatToParts(u.t["x2CN/f"], {
     username: n,
     usernameOnClick: l,
-    medium: u,
+    medium: o,
     helpCenterLink: {
-      url: i.Z.getArticleURL(r.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+      url: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
     }
   })
 }

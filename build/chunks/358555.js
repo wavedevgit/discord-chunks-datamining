@@ -1,168 +1,168 @@
-/** Chunk was on 72891 **/
-i.d(n, {
-  Z: () => x
+/** Chunk was on 81288 **/
+n.d(t, {
+  Z: () => C
 });
-var t = i(200651);
-i(192379);
-var o = i(120356),
-  r = i.n(o),
-  a = i(442837),
-  l = i(481060),
-  c = i(540059),
-  s = i(666188),
-  d = i(372769),
-  u = i(523751),
-  g = i(623624),
-  _ = i(290034),
-  f = i(271383),
-  b = i(594174),
-  p = i(267642),
-  N = i(981631),
-  m = i(388032),
-  T = i(417897);
+var i = n(200651);
+n(192379);
+var o = n(120356),
+  r = n.n(o),
+  a = n(442837),
+  l = n(481060),
+  c = n(540059),
+  s = n(666188),
+  d = n(372769),
+  u = n(523751),
+  _ = n(623624),
+  g = n(290034),
+  m = n(271383),
+  b = n(594174),
+  f = n(267642),
+  p = n(981631),
+  h = n(388032),
+  N = n(169253);
 
-function h(e) {
+function v(e) {
   let {
-    guild: n,
-    isBannerVisible: i,
+    guild: t,
+    isBannerVisible: n,
     disableBoostClick: o
-  } = e, r = (0, a.e7)([b.default, f.ZP], () => {
+  } = e, r = (0, a.e7)([b.default, m.ZP], () => {
     let e = b.default.getCurrentUser();
-    return f.ZP.isMember(n.id, null == e ? void 0 : e.id)
+    return m.ZP.isMember(t.id, null == e ? void 0 : e.id)
   }), {
     premiumTier: c,
     premiumSubscriberCount: s
-  } = n;
-  if (0 === s && c === N.Eu4.NONE) return null;
+  } = t;
+  if (0 === s && c === p.Eu4.NONE) return null;
   let d = e => {
-      e.stopPropagation(), e.preventDefault(), r && !o && (0, g.f)({
-        guildId: n.id,
+      e.stopPropagation(), e.preventDefault(), r && !o && (0, _.f)({
+        guildId: t.id,
         location: {
-          section: N.jXE.GUILD_HEADER,
-          object: N.qAy.BOOST_GEM_ICON
+          section: p.jXE.GUILD_HEADER,
+          object: p.qAy.BOOST_GEM_ICON
         }
       })
     },
-    u = c === N.Eu4.NONE ? m.NW.string(m.t.c2wsn5) : p.nW(c),
-    h = (0, t.jsxs)(t.Fragment, {
-      children: [(0, t.jsx)("div", {
-        className: T.tierTooltipTitle,
+    u = c === p.Eu4.NONE ? h.NW.string(h.t.c2wsn5) : f.nW(c),
+    v = (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsx)("div", {
+        className: N.tierTooltipTitle,
         children: u
-      }), (0, t.jsx)("div", {
-        children: m.NW.format(m.t.If4iTU, {
+      }), (0, i.jsx)("div", {
+        children: h.NW.format(h.t.If4iTU, {
           subscriberCount: s
         })
       })]
     });
-  return (0, t.jsx)("div", {
-    className: T.guildIconContainer,
-    children: (0, t.jsx)(l.ua7, {
-      text: h,
+  return (0, i.jsx)("div", {
+    className: N.guildIconContainer,
+    children: (0, i.jsx)(l.ua7, {
+      text: v,
       position: "bottom",
       "aria-label": null != u ? u : "",
       children: e => {
-        var n, o;
-        return (0, t.jsx)(l.P3F, (n = function(e) {
-          for (var n = 1; n < arguments.length; n++) {
-            var i = null != arguments[n] ? arguments[n] : {},
-              t = Object.keys(i);
-            "function" == typeof Object.getOwnPropertySymbols && (t = t.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(i, e).enumerable
-            }))), t.forEach(function(n) {
-              var t;
-              t = i[n], n in e ? Object.defineProperty(e, n, {
-                value: t,
+        var t, o;
+        return (0, i.jsx)(l.P3F, (t = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              i = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), i.forEach(function(t) {
+              var i;
+              i = n[t], t in e ? Object.defineProperty(e, t, {
+                value: i,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[n] = t
+              }) : e[t] = i
             })
           }
           return e
         }({}, e), o = o = {
-          className: T.__invalid_premiumGuildIcon,
+          className: N.__invalid_premiumGuildIcon,
           onClick: d,
-          children: (0, t.jsx)(_.Z, {
+          children: (0, i.jsx)(g.Z, {
             premiumTier: c,
-            iconBackgroundClassName: i ? T.boostedGuildTierIconBackgroundWithVisibleBanner : T.guildBadgeIcon,
-            iconClassName: i && c !== N.Eu4.TIER_3 ? T.boostedGuildTierMutedIconWithVisibleBanner : null
+            iconBackgroundClassName: n ? N.boostedGuildTierIconBackgroundWithVisibleBanner : N.guildBadgeIcon,
+            iconClassName: n && c !== p.Eu4.TIER_3 ? N.boostedGuildTierMutedIconWithVisibleBanner : null
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, n) {
-          var i = Object.keys(e);
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var t = Object.getOwnPropertySymbols(e);
-            i.push.apply(i, t)
+            var i = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, i)
           }
-          return i
+          return n
         })(Object(o)).forEach(function(e) {
-          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
-        }), n))
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(o, e))
+        }), t))
       }
     })
   })
 }
 
-function E(e) {
+function y(e) {
   let {
-    guild: n,
-    disableColor: i,
+    guild: t,
+    disableColor: n,
     disableBoostClick: o
   } = e;
-  return (0, s.Z)(n) ? (0, t.jsx)("div", {
-    className: T.guildIconV2Container,
-    children: (0, t.jsx)(u.Z, {
-      guild: n,
+  return (0, s.Z)(t) ? (0, i.jsx)("div", {
+    className: N.guildIconV2Container,
+    children: (0, i.jsx)(u.Z, {
+      guild: t,
       tooltipPosition: "bottom",
       tooltipColor: l.ua7.Colors.PRIMARY,
-      className: r()(T.guildBadge, {
-        [T.disableColor]: i
+      className: r()(N.guildBadge, {
+        [N.disableColor]: n
       }),
       disableBoostClick: o
     })
-  }) : (0, t.jsx)("div", {
-    className: T.guildIconContainer,
-    children: (0, t.jsx)(d.Z, {
-      guild: n,
+  }) : (0, i.jsx)("div", {
+    className: N.guildIconContainer,
+    children: (0, i.jsx)(d.Z, {
+      guild: t,
       size: 20,
       tooltipPosition: "bottom",
       tooltipColor: l.ua7.Colors.PRIMARY,
-      className: r()(T.guildBadge, {
-        [T.disableColor]: i
+      className: r()(N.guildBadge, {
+        [N.disableColor]: n
       })
     })
   })
 }
 
-function x(e) {
+function C(e) {
   var {
-    guild: n,
-    disableBoostClick: i
-  } = e, o = function(e, n) {
+    guild: t,
+    disableBoostClick: n
+  } = e, o = function(e, t) {
     if (null == e) return {};
-    var i, t, o = function(e, n) {
+    var n, i, o = function(e, t) {
       if (null == e) return {};
-      var i, t, o = {},
+      var n, i, o = {},
         r = Object.keys(e);
-      for (t = 0; t < r.length; t++) i = r[t], n.indexOf(i) >= 0 || (o[i] = e[i]);
+      for (i = 0; i < r.length; i++) n = r[i], t.indexOf(n) >= 0 || (o[n] = e[n]);
       return o
-    }(e, n);
+    }(e, t);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
-      for (t = 0; t < r.length; t++) i = r[t], !(n.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (o[i] = e[i])
+      for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
     }
     return o
   }(e, ["guild", "disableBoostClick"]);
   let r = !(0, c.Q3)("GuildHeaderGuildBadge") && o.isBannerVisible;
-  return (0, s.Z)(n) ? (0, t.jsx)(E, {
-    guild: n,
+  return (0, s.Z)(t) ? (0, i.jsx)(y, {
+    guild: t,
     disableColor: !1,
-    disableBoostClick: i
-  }) : n.hasFeature(N.oNc.VERIFIED) || n.hasFeature(N.oNc.PARTNERED) ? (0, t.jsx)(E, {
-    guild: n,
+    disableBoostClick: n
+  }) : t.hasFeature(p.oNc.VERIFIED) || t.hasFeature(p.oNc.PARTNERED) ? (0, i.jsx)(y, {
+    guild: t,
     disableColor: !r
-  }) : (0, t.jsx)(h, {
-    guild: n,
+  }) : (0, i.jsx)(v, {
+    guild: t,
     isBannerVisible: r,
-    disableBoostClick: i
+    disableBoostClick: n
   })
 }

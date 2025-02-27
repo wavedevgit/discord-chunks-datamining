@@ -88,7 +88,7 @@ let O = {
       (0, i.ZDy)(async () => {
         let {
           default: i
-        } = await Promise.all([n.e("25176"), n.e("94739")]).then(n.bind(n, 404339));
+        } = await Promise.all([n.e("25176"), n.e("79726")]).then(n.bind(n, 404339));
         return n => {
           let {
             onClose: o,
