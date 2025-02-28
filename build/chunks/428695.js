@@ -65,8 +65,8 @@ let f = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
       }),
       children: n
     }));
-    let A = null;
-    "function" == typeof l ? A = l() : null != l && (A = (0, r.jsx)(s.Text, {
+    let j = null;
+    "function" == typeof l ? j = l() : null != l && (j = (0, r.jsx)(s.Text, {
       className: o()({
         [h.center]: C
       }),
@@ -74,7 +74,7 @@ let f = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
       color: "text-muted",
       children: l
     }));
-    let j = null != b ? "".concat(b, "px") : "16px";
+    let A = null != b ? "".concat(b, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: o()(h.container, S),
       children: [!0 === O ? null : (0, r.jsx)(s.P3F, {
@@ -94,8 +94,8 @@ let f = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
         className: h.imageContainer,
         style: {
           marginTop: "".concat(_, "px"),
-          marginLeft: j,
-          marginRight: j
+          marginLeft: A,
+          marginRight: A
         },
         children: (0, r.jsx)("img", {
           className: h.image,
@@ -105,7 +105,7 @@ let f = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
         })
       }), (0, r.jsxs)("div", {
         className: h.message,
-        children: [P, A, T]
+        children: [P, j, T]
       })]
     })
   }

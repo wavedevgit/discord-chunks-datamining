@@ -51,7 +51,7 @@ function S() {
   v = m.QZA.OPEN, y = {}, I = !1
 }
 let T = s().debounce(() => {
-  I && ((null == O || s().isEqual(O, P(O.id))) && (I = !1), I || j.emitChange())
+  I && ((null == O || s().isEqual(O, P(O.id))) && (I = !1), I || A.emitChange())
 }, 500);
 
 function P(e) {
@@ -62,7 +62,7 @@ function P(e) {
     return n === e
   })
 }
-class A extends(o = c.ZP.Store) {
+class j extends(o = c.ZP.Store) {
   initialize() {
     this.waitFor(p.Z, h.Z, g.Z, f.Z)
   }
@@ -97,8 +97,8 @@ class A extends(o = c.ZP.Store) {
     }
   }
 }
-b(A, "displayName", "ChannelSettingsIntegrationsStore");
-let j = new A(u.Z, __OVERLAY__ ? {} : {
+b(j, "displayName", "ChannelSettingsIntegrationsStore");
+let A = new j(u.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_INIT: S,
     INTEGRATION_SETTINGS_SAVE_SUCCESS: S,
     CHANNEL_SETTINGS_SET_SECTION: function(e) {
@@ -178,4 +178,4 @@ let j = new A(u.Z, __OVERLAY__ ? {} : {
       v = m.QZA.OPEN, y = null !== (t = e.errors) && void 0 !== t ? t : {}
     }
   }),
-  Z = j
+  Z = A

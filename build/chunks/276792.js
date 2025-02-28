@@ -61,16 +61,16 @@ function N(e) {
       analyticsLocation: T,
       isLightTheme: P
     } = e,
-    A = "AnnouncementModalVariant1_".concat(i.z[Number(I.dismissKey)]),
+    j = "AnnouncementModalVariant1_".concat(i.z[Number(I.dismissKey)]),
     {
-      onClose: j
+      onClose: A
     } = C,
     Z = null !== (v = null === (t = I.button) || void 0 === t ? void 0 : t.copy) && void 0 !== v ? v : m.NW.string(m.t.YScQSE),
     x = (null === (n = I.button) || void 0 === n ? void 0 : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
   switch (null === (N = I.button) || void 0 === N ? void 0 : N.buttonAction) {
     case l.Wc.OPEN_MARKETING_PAGE:
       y = () => {
-        (0, s.uL)(g.Z5c.APPLICATION_STORE), j()
+        (0, s.uL)(g.Z5c.APPLICATION_STORE), A()
       };
       break;
     case l.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
@@ -84,7 +84,7 @@ function N(e) {
         confirmationFooter: (0, r.jsx)(p.Z, {}),
         planSelectBanner: (0, r.jsx)(h.Z, {}),
         onClose: e => {
-          e && j()
+          e && A()
         }
       });
       break;
@@ -97,7 +97,7 @@ function N(e) {
           objectType: g.Qqv.TIER_1
         }),
         onClose: e => {
-          e && j()
+          e && A()
         }
       });
       break;
@@ -111,7 +111,7 @@ function N(e) {
           objectType: g.Qqv.TIER_2
         }),
         onClose: e => {
-          e && j()
+          e && A()
         }
       })
   }
@@ -154,7 +154,7 @@ function N(e) {
       imageSrc: P ? e.imageLinkLightTheme : e.imageLink,
       tagText: "" !== e.pill ? e.pill : void 0
     })),
-    changeLogId: A,
+    changeLogId: j,
     button: () => {
       let e = Date.now();
       return (0, r.jsxs)(o.gtL, {
@@ -164,10 +164,10 @@ function N(e) {
         size: o.zxk.Sizes.SMALL,
         onClick: () => {
           c.default.track(g.rMx.CHANGE_LOG_CTA_CLICKED, {
-            change_log_id: A,
+            change_log_id: j,
             cta_type: x,
             seconds_open: Math.round((Date.now() - e) / 1e3),
-            target: A
+            target: j
           }), y()
         },
         children: [(0, r.jsx)("img", {

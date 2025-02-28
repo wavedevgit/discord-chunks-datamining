@@ -1,6 +1,6 @@
 /**
   Module ID: 53486
-  Original File Name: 74a822b9f2f1bef6
+  Original File Name: 3e37a68abc2974a3
 **/
 @value minColumnWidth: 460px;
 
@@ -707,7 +707,8 @@
 
 .badgeContainer_f14037 {
     position: relative;
-    flex-direction: row
+    flex-direction: row;
+    padding: 4px
 }
 
 .badgeContainer_f14037,.newBadge_f14037 {
@@ -1143,4 +1144,4 @@
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=74a822b9f2f1bef6.css.map*/
+/*# sourceMappingURL=3e37a68abc2974a3.css.map*/

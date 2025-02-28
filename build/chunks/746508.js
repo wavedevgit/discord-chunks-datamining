@@ -28,8 +28,8 @@ var r = n(200651),
   S = n(588580),
   T = n(374065),
   P = n(451576),
-  A = n(119315),
-  j = n(403404),
+  j = n(119315),
+  A = n(403404),
   Z = n(100527),
   x = n(906732),
   L = n(424602),
@@ -82,8 +82,8 @@ var r = n(200651),
   eS = n(979651),
   eT = n(938475),
   eP = n(626135),
-  eA = n(63063),
-  ej = n(51144),
+  ej = n(63063),
+  eA = n(51144),
   eZ = n(870569),
   ex = n(345243),
   eL = n(594117),
@@ -201,7 +201,7 @@ function ez() {
           className: eU.krispLogo
         })
       }), (0, r.jsx)(m.eee, {
-        href: eA.Z.getArticleURL(eR.BhN.NOISE_SUPPRESSION),
+        href: ej.Z.getArticleURL(eR.BhN.NOISE_SUPPRESSION),
         className: eU.krispLink,
         onClick: e => eF(e),
         children: eM.NW.string(eM.t.hvVgAQ)
@@ -251,7 +251,7 @@ function eK(e) {
   }, [t, v, a]), S = g || n || _, {
     Component: T,
     play: P,
-    events: A
+    events: j
   } = (0, f.o)(p.enabled ? "disable" : "enable");
   return i.useEffect(() => () => P(), [p.enabled, P]), (0, r.jsx)(eg.Z, eB(eV({
     onChange: C,
@@ -304,11 +304,11 @@ function eK(e) {
               },
               onMouseEnter: () => {
                 var t, n;
-                null === (t = e.onMouseEnter) || void 0 === t || t.call(e), null === (n = p.onMouseEnter) || void 0 === n || n.call(p), A.onMouseEnter()
+                null === (t = e.onMouseEnter) || void 0 === t || t.call(e), null === (n = p.onMouseEnter) || void 0 === n || n.call(p), j.onMouseEnter()
               },
               onMouseLeave: () => {
                 var t;
-                null === (t = e.onMouseLeave) || void 0 === t || t.call(e), A.onMouseLeave()
+                null === (t = e.onMouseLeave) || void 0 === t || t.call(e), j.onMouseLeave()
               },
               onContextMenu: t => {
                 var n;
@@ -387,7 +387,7 @@ function eq(e) {
     }), t), {
       onClick: () => {
         var t;
-        n(), (0, j.Z)({
+        n(), (0, A.Z)({
           channel: i,
           guildId: i.guild_id,
           locationObject: O.location,
@@ -411,7 +411,7 @@ function eq(e) {
       }),
       innerClassName: eU.buttonContents,
       wrapperClassName: eU.button,
-      children: [N ? (0, r.jsx)(A.r, {
+      children: [N ? (0, r.jsx)(j.r, {
         top: -1,
         right: -1
       }) : null, P ? (0, r.jsx)(k, {
@@ -460,12 +460,12 @@ function eQ(e) {
     T = E || a || O,
     P = null != v,
     {
-      Component: A,
-      events: j,
+      Component: j,
+      events: A,
       play: Z
     } = (0, h.P)(P ? "disable" : "enable");
   i.useEffect(() => () => Z(), [Z, P]);
-  let L = (0, r.jsx)(A, {
+  let L = (0, r.jsx)(j, {
     size: d ? "md" : "sm",
     color: "currentColor",
     className: o()(eU.buttonIcon, {
@@ -512,11 +512,11 @@ function eQ(e) {
         }), C ? l : null), {
           onMouseEnter: () => {
             var t;
-            null == i || i(), null === (t = e.onMouseEnter) || void 0 === t || t.call(e), j.onMouseEnter()
+            null == i || i(), null === (t = e.onMouseEnter) || void 0 === t || t.call(e), A.onMouseEnter()
           },
           onMouseLeave: () => {
             var t;
-            null === (t = e.onMouseLeave) || void 0 === t || t.call(e), j.onMouseLeave()
+            null === (t = e.onMouseLeave) || void 0 === t || t.call(e), A.onMouseLeave()
           },
           innerClassName: eU.buttonContents,
           wrapperClassName: eU.button,
@@ -805,7 +805,7 @@ let e$ = (0, N.Z)(function(e) {
       noiseCancellationError: eN.Z.isNoiseCancellationError(),
       canGoLive: (0, B.Z)(eN.Z)
     })),
-    b = (0, u.e7)([eN.Z, z.Z], () => z.Z.hasHotspot(ek.v.VOICE_PANEL_INTRODUCTION) && (0, ej.EO)(a) && !eN.Z.isInteractionRequired() && !(null == p ? void 0 : p.isGuildStageVoice())),
+    b = (0, u.e7)([eN.Z, z.Z], () => z.Z.hasHotspot(ek.v.VOICE_PANEL_INTRODUCTION) && (0, eA.EO)(a) && !eN.Z.isInteractionRequired() && !(null == p ? void 0 : p.isGuildStageVoice())),
     _ = (0, u.e7)([eS.Z], () => null != c && eS.Z.hasVideo(c), [c]),
     E = (0, u.e7)([em.Z], () => em.Z.getCurrentUserActiveStream()),
     O = (0, u.e7)([eO.Z], () => eO.Z.hasLayers()),
@@ -813,7 +813,7 @@ let e$ = (0, N.Z)(function(e) {
     v = (0, u.e7)([ev.Z], () => N && !ev.Z.can(eR.Plq.VIEW_CHANNEL, p), [N, p]),
     y = el.Fg.useSetting(),
     [I, S, T] = (0, u.Wu)([eT.ZP, J.Z], () => (null == p ? void 0 : p.isGuildStageVoice()) ? [J.Z.getMutableParticipants(p.id, $.pV.SPEAKER), J.Z.getParticipantsVersion(p.id), null] : [null, null, null != p ? eT.ZP.getVoiceStatesForChannel(p) : null], [p]),
-    A = i.useMemo(() => {
+    j = i.useMemo(() => {
       var e, t;
       return null !== (t = null !== (e = null == I ? void 0 : I.map(e => {
         let {
@@ -828,7 +828,7 @@ let e$ = (0, N.Z)(function(e) {
         }
       })) && void 0 !== e ? e : T) && void 0 !== t ? t : []
     }, [I, S, T]),
-    [j, L] = i.useState(!1);
+    [A, L] = i.useState(!1);
   i.useEffect(() => {
     (N || v) && L(!1)
   }, [N, v, L]);
@@ -850,14 +850,14 @@ let e$ = (0, N.Z)(function(e) {
         hasVideo: _,
         selfStream: E,
         hasLayers: O,
-        voiceStates: A,
+        voiceStates: j,
         showVoiceStates: y,
         shouldShowVoicePanelIntroduction: b,
         isPrivateChannelWithEnabledActivities: D,
         analyticsLocations: w,
         isVisualRefreshEnabled: t,
         coloredIconsEnabled: n
-      })), !j && N && null != h ? (0, r.jsxs)("div", {
+      })), !A && N && null != h ? (0, r.jsxs)("div", {
         className: eU.viewAsRolesWarning,
         children: [(0, r.jsx)(m.Text, {
           variant: "text-sm/normal",

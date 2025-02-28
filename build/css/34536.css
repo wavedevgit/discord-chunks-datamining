@@ -1,6 +1,6 @@
 /**
   Module ID: 34536
-  Original File Name: 54b5422bb76f92eb
+  Original File Name: 0f7f18d98bfa4c65
 **/
 .text__87e56 {
     color: var(--premium-nitro-pink-text)
@@ -1217,7 +1217,8 @@
 
 .badgeContainer_f14037 {
     position: relative;
-    flex-direction: row
+    flex-direction: row;
+    padding: 4px
 }
 
 .badgeContainer_f14037,.newBadge_f14037 {
@@ -1505,4 +1506,4 @@
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=54b5422bb76f92eb.css.map*/
+/*# sourceMappingURL=0f7f18d98bfa4c65.css.map*/

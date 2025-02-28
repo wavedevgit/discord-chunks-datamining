@@ -29,8 +29,8 @@ var r = n(200651),
   S = n(998502),
   T = n(228488),
   P = n(950796),
-  A = n(981631),
-  j = n(741764),
+  j = n(981631),
+  A = n(741764),
   Z = n(388032),
   x = n(963981);
 let L = (0, o.U)(() => ({
@@ -55,15 +55,15 @@ function w() {
     className: x.guildIcon
   }), e = c.name) : null != o && (o.isDM() || o.isGroupDM()) ? (e = Z.NW.string(Z.t.YUU0RE), d = (0, r.jsx)(s.gw7, {
     size: "xs"
-  })) : t.pathname.startsWith(A.Z5c.GLOBAL_DISCOVERY) ? (e = Z.NW.string(Z.t["4nEZLi"]), d = (0, r.jsx)(s.Jmo, {
+  })) : t.pathname.startsWith(j.Z5c.GLOBAL_DISCOVERY) ? (e = Z.NW.string(Z.t["4nEZLi"]), d = (0, r.jsx)(s.Jmo, {
     size: "xs"
-  })) : t.pathname.startsWith(A.Z5c.NITRO_HOME) ? (e = Z.NW.string(Z.t.Ipxkoq), d = (0, r.jsx)(s.SrA, {
+  })) : t.pathname.startsWith(j.Z5c.NITRO_HOME) ? (e = Z.NW.string(Z.t.Ipxkoq), d = (0, r.jsx)(s.SrA, {
     size: "xs"
-  })) : t.pathname.startsWith(A.Z5c.COLLECTIBLES_SHOP) ? (e = Z.NW.string(Z.t.pWG4zc), d = (0, r.jsx)(s.EOn, {
+  })) : t.pathname.startsWith(j.Z5c.COLLECTIBLES_SHOP) ? (e = Z.NW.string(Z.t.pWG4zc), d = (0, r.jsx)(s.EOn, {
     size: "xs"
-  })) : t.pathname.startsWith(A.Z5c.FRIENDS) ? (e = Z.NW.string(Z.t.TdEu5e), d = (0, r.jsx)(s.iFz, {
+  })) : t.pathname.startsWith(j.Z5c.FRIENDS) ? (e = Z.NW.string(Z.t.TdEu5e), d = (0, r.jsx)(s.iFz, {
     size: "xs"
-  })) : t.pathname.startsWith(A.Z5c.FAMILY_CENTER) && (e = Z.NW.string(Z.t.RZqaJi), d = (0, r.jsx)(s.BFJ, {
+  })) : t.pathname.startsWith(j.Z5c.FAMILY_CENTER) && (e = Z.NW.string(Z.t.RZqaJi), d = (0, r.jsx)(s.BFJ, {
     size: "xs"
   })), null != e && "" !== e && (0, r.jsxs)("div", {
     className: x.title,
@@ -76,7 +76,7 @@ function w() {
 }
 let R = i.memo(function() {
   i.useLayoutEffect(() => {
-    S.ZP.setMinimumSize(j.J, j.N)
+    S.ZP.setMinimumSize(A.J, A.N)
   }, []);
   let e = (0, p.TH)("AppTitleBar"),
     t = !L(e => e.isOpen) && e,
@@ -88,9 +88,9 @@ let R = i.memo(function() {
       autoTrackExposure: !1
     });
   i.useLayoutEffect(() => {
-    S.ZP.setMinimumSize(j.J, j.N)
+    S.ZP.setMinimumSize(A.J, A.N)
   }, []);
-  let l = (0, a.e7)([O.Z], () => O.Z.darkSidebar ? A.BRd.DARK : void 0);
+  let l = (0, a.e7)([O.Z], () => O.Z.darkSidebar ? j.BRd.DARK : void 0);
   return (0, a.e7)([C.Z, _.Z], () => (0, T.rB)()) ? null : (0, r.jsx)(s.f6W, {
     theme: l,
     children: e => (0, r.jsx)(P.T, {
@@ -107,7 +107,7 @@ let R = i.memo(function() {
         }), (0, r.jsx)(s.P3F, {
           className: x.button,
           onClick: () => {
-            c.Z.open(A.oAB.ACCOUNT)
+            c.Z.open(j.oAB.ACCOUNT)
           },
           children: (0, r.jsx)(s.ewm, {
             size: "xs",

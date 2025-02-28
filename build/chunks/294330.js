@@ -30,8 +30,8 @@ var r = n(200651),
   S = n(388032),
   T = n(734504),
   P = n(129512),
-  A = n(330065),
-  j = n(755386);
+  j = n(330065),
+  A = n(755386);
 
 function Z(e) {
   let {
@@ -99,12 +99,12 @@ function Z(e) {
       size: 300 * (0, O.x_)()
     });
     if (null != e) return e;
-    if (U) return j;
+    if (U) return A;
     switch (M) {
       case C.BRd.DARK:
         return P;
       case C.BRd.LIGHT:
-        return A
+        return j
     }
   }, [t.discoverySplash, t.id, U, M]), W = b ? 48 : 40, V = i.useMemo(() => v.ZP.getGuildIconURL({
     id: t.id,

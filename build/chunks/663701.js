@@ -28,8 +28,8 @@ var r = n(200651),
   S = n(899740),
   T = n(28476),
   P = n(880257),
-  A = n(631885),
-  j = n(849862),
+  j = n(631885),
+  A = n(849862),
   Z = n(522558),
   x = n(795448),
   L = n(441623),
@@ -109,7 +109,7 @@ let eo = e => {
       selected: t
     } = e, n = el(e, ["selected"]);
     let l = (0, c.JA)("friends"),
-      o = (0, j.If)(),
+      o = (0, A.If)(),
       a = (0, d.e7)([L.Z], () => L.Z.canShowFriendsTabBadge()),
       u = (0, d.e7)([b.Z], () => b.Z.useReducedMotion),
       {
@@ -243,7 +243,7 @@ let eo = e => {
   ed = e => {
     let {
       isParentHovered: t
-    } = e, i = (0, A.gU)();
+    } = e, i = (0, j.gU)();
     return t ? (0, r.jsx)(q.PZ, {
       onClick: () => {
         (0, h.ZD)(async () => {

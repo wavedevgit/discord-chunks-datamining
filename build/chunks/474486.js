@@ -208,7 +208,9 @@ let S = "url(#dark-purple-gradient)",
     }, b = s ? v.Z : C.Z;
     return (0, n.jsx)(l.yRy, {
       shouldShow: !0,
+      onRequestClose: f,
       renderPopout: () => (0, n.jsx)(u.Z, {
+        onClose: f,
         dismissIconClassName: y.exitIcon,
         onDismissIconClick: f,
         dismissIcon: (0, n.jsx)(E, {}),

@@ -13,7 +13,7 @@ var r = n(829883),
 let a = "https://media.discordapp.net",
   s = /^.*\.discordapp\.net$/,
   l = "cdn.discordapp.com",
-  c = new Set(["jpg", "jpeg", "png", "webp", "gif", "tiff", "bmp"]),
+  c = new Set(["jpg", "jpeg", "png", "webp", "gif", "tiff", "bmp", "avif"]),
   u = new Set(["jpg", "jpeg", "png"]),
   d = e => {
     var t, n, r, i;

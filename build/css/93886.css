@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 711c11ed1727b6a1
+  Original File Name: d9458aa5659d9f62
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -2552,7 +2552,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .badgeContainer_f14037 {
     position: relative;
-    flex-direction: row
+    flex-direction: row;
+    padding: 4px
 }
 
 .badgeContainer_f14037,.newBadge_f14037 {
@@ -4739,4 +4740,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=711c11ed1727b6a1.css.map*/
+/*# sourceMappingURL=d9458aa5659d9f62.css.map*/

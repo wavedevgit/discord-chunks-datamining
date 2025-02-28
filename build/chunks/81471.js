@@ -36,28 +36,28 @@ let y = i.memo(function(e) {
     isBlocked: null != y && m.Z.isBlockedForMessage(y),
     isIgnored: null != y && m.Z.isIgnoredForMessage(y)
   }), [y]), T = (0, a.e7)([g.Z], () => g.Z.can(_.Plq.MANAGE_MESSAGES, t)), P = f.cC.useSetting(), {
-    content: A
+    content: j
   } = i.useMemo(() => (null == y ? void 0 : y.content) != null && "" !== y.content ? (0, p.ZP)(y, {
     formatInline: !0,
     noStyleAndInteraction: !0,
     shouldFilterKeywords: I
   }) : {
     content: null
-  }, [y, I]), j = null;
-  if (l) j = (0, r.jsx)(s.Text, {
+  }, [y, I]), A = null;
+  if (l) A = (0, r.jsx)(s.Text, {
     className: N.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
     children: O.NW.string(O.t.BZHld3)
   });
   else if (n) {
-    if (null != y && C) j = (0, r.jsx)(s.Text, {
+    if (null != y && C) A = (0, r.jsx)(s.Text, {
       className: N.messageReplacement,
       variant: "text-sm/normal",
       color: "text-muted",
       children: O.NW.string(O.t["WPe+xM"])
     });
-    else if (null != y && S) j = (0, r.jsx)(s.Text, {
+    else if (null != y && S) A = (0, r.jsx)(s.Text, {
       className: N.messageReplacement,
       variant: "text-sm/normal",
       color: "text-muted",
@@ -67,12 +67,12 @@ let y = i.memo(function(e) {
       let {
         contentPlaceholder: e,
         renderedContent: t
-      } = (0, h.f)(y, A, C, S, o()(N.messageContent, v.inlineFormat), {
+      } = (0, h.f)(y, j, C, S, o()(N.messageContent, v.inlineFormat), {
         leadingIconClass: N.messageContentIcon,
         trailingIconClass: N.messageContentIcon,
         iconSize: E.WW
       });
-      j = null != t ? (0, r.jsx)(s.Text, {
+      A = null != t ? (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
         className: N.messageContent,
@@ -84,18 +84,18 @@ let y = i.memo(function(e) {
         className: N.messageReplacement,
         children: e
       })
-    } else j = (0, r.jsx)(s.Text, {
+    } else A = (0, r.jsx)(s.Text, {
       className: N.messageReplacement,
       variant: "text-sm/normal",
       color: "text-muted",
       children: O.NW.string(O.t["0KfDxM"])
     })
-  } else j = null;
+  } else A = null;
   return (0, r.jsx)(c.aQ.Provider, {
     value: (0, d.Z)(P, T),
     children: (0, r.jsx)(s.Rny, {
       className: N.messageFocusBlock,
-      children: j
+      children: A
     })
   })
 })

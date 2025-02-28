@@ -28,8 +28,8 @@ var r = n(200651),
   S = n(646288),
   T = n(984370),
   P = n(706454),
-  A = n(210887),
-  j = n(430824),
+  j = n(210887),
+  A = n(430824),
   Z = n(496675),
   x = n(525395),
   L = n(558314),
@@ -599,7 +599,7 @@ class ed extends i.PureComponent {
     })
   }
 }
-let ep = (0, b.Z)((0, _.Z)(a.ZP.connectStores([L.Z, A.Z, P.default, M.Z, D.Z, R.Z, k.Z, E.Z, O.Z, x.Z, j.Z, w.Z], e => {
+let ep = (0, b.Z)((0, _.Z)(a.ZP.connectStores([L.Z, j.Z, P.default, M.Z, D.Z, R.Z, k.Z, E.Z, O.Z, x.Z, A.Z, w.Z], e => {
   let t, n, r, {
     inputSkuId: i,
     applicationId: l,
@@ -631,8 +631,8 @@ let ep = (0, b.Z)((0, _.Z)(a.ZP.connectStores([L.Z, A.Z, P.default, M.Z, D.Z, R.
     }),
     isInTestMode: null != l && c,
     matureAgree: L.Z.didMatureAgree,
-    theme: A.Z.theme,
+    theme: j.Z.theme,
     locale: P.default.locale,
-    guild: null != s ? j.Z.getGuild(s.getGuildId()) : null
+    guild: null != s ? A.Z.getGuild(s.getGuildId()) : null
   }
 })(ed)))

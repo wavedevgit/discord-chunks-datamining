@@ -83,7 +83,7 @@ function P(e) {
     mutualGuilds: t.slice(0, 5)
   }
 }
-class A extends c.Z {
+class j extends c.Z {
   get comparator() {
     var e, t, n, r, i;
     return [this.type, +(null == this.giftIntentType), null !== (i = null !== (r = null === (e = this.nickname) || void 0 === e ? void 0 : e.toLowerCase()) && void 0 !== r ? r : null === (n = this.user) || void 0 === n ? void 0 : null === (t = n.globalName) || void 0 === t ? void 0 : t.toLowerCase()) && void 0 !== i ? i : this.usernameLower]
@@ -93,13 +93,13 @@ class A extends c.Z {
     super(), y(this, "key", void 0), y(this, "userId", void 0), y(this, "type", void 0), y(this, "status", void 0), y(this, "isMobile", void 0), y(this, "activities", void 0), y(this, "applicationStream", void 0), y(this, "user", void 0), y(this, "usernameLower", void 0), y(this, "mutualGuildsLength", void 0), y(this, "mutualGuilds", void 0), y(this, "nickname", void 0), y(this, "spam", void 0), y(this, "giftIntentType", void 0), y(this, "ignoredUser", void 0), y(this, "applicationId", void 0), y(this, "isGameRelationship", void 0), this.key = e.key, this.userId = e.userId, this.type = e.type, this.status = e.status, this.activities = e.activities, this.applicationStream = e.applicationStream, this.user = e.user, this.isMobile = e.isMobile, this.usernameLower = e.usernameLower, this.mutualGuildsLength = e.mutualGuildsLength, this.mutualGuilds = e.mutualGuilds, this.nickname = e.nickname, this.spam = e.spam, this.giftIntentType = e.giftIntentType, this.ignoredUser = e.ignoredUser, this.applicationId = e.applicationId, this.isGameRelationship = null !== (t = e.isGameRelationship) && void 0 !== t && t
   }
 }
-class j {
+class A {
   reset() {
     let e = new Set,
       t = (0, p.r8)({
         location: "FriendsStore"
       }),
-      n = l().map(E.Z.getRelationships(), (n, r) => (n === N.OGo.FRIEND && e.add(r), new A(C(I({
+      n = l().map(E.Z.getRelationships(), (n, r) => (n === N.OGo.FRIEND && e.add(r), new j(C(I({
         key: r,
         type: n,
         userId: r,
@@ -122,7 +122,7 @@ class j {
           applicationId: l,
           type: o
         } = t;
-        !e.has(i) && (o === N.OGo.FRIEND && n.has(i) || (o === N.OGo.FRIEND && n.add(i), r.push(new A(C(I({
+        !e.has(i) && (o === N.OGo.FRIEND && n.has(i) || (o === N.OGo.FRIEND && n.add(i), r.push(new j(C(I({
           key: "".concat(i, "-").concat(l),
           type: o,
           userId: i,
@@ -135,16 +135,16 @@ class j {
         })))))
       })
     }
-    let i = l().map(d.Z.getSuggestions(), e => new A(I({
+    let i = l().map(d.Z.getSuggestions(), e => new j(I({
       key: e.key,
       userId: e.key,
       type: 99,
       nickname: e.name
     }, S(e.key), T(e.key), P(e.key))));
-    return new j(l().concat(n, r, i))
+    return new A(l().concat(n, r, i))
   }
   clone() {
-    return new j(this._rows)
+    return new A(this._rows)
   }
   update(e) {
     let t = !1;
@@ -200,7 +200,7 @@ class j {
 let Z = !0,
   x = !1,
   L = N.pJs.ONLINE,
-  w = new j,
+  w = new A,
   R = !0,
   D = !1;
 
@@ -216,7 +216,7 @@ function M() {
 }
 
 function U() {
-  w = R ? new j : w.reset()
+  w = R ? new A : w.reset()
 }
 
 function G(e) {

@@ -128,7 +128,7 @@ function P(e) {
   })
 }
 
-function A(e) {
+function j(e) {
   let {
     frecentApps: t,
     loadingAppId: n,
@@ -145,7 +145,7 @@ function A(e) {
     }, e.id))
   })
 }
-let j = e => {
+let A = e => {
   (0, c.jW)(e, async () => {
     let {
       default: e
@@ -170,7 +170,7 @@ function Z(e) {
   }, [p]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: y.container,
-      onContextMenu: j,
+      onContextMenu: A,
       children: [(0, r.jsxs)(m.Z, {
         className: o()(y.headerContainer, I.privateChannelsHeaderContainer),
         children: [(0, r.jsx)("span", {
@@ -180,7 +180,7 @@ function Z(e) {
           analyticsLocations: s,
           analyticsContext: d
         })]
-      }), (0, r.jsx)(A, {
+      }), (0, r.jsx)(j, {
         frecentApps: p,
         loadingAppId: l,
         setLoadingAppId: a,

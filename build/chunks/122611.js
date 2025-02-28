@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => j
+  Z: () => A
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -32,7 +32,7 @@ function P(e) {
   e.stopPropagation()
 }
 
-function A(e) {
+function j(e) {
   var t;
   let {
     guild: n
@@ -96,7 +96,7 @@ function A(e) {
     }
   })
 }
-let j = e => {
+let A = e => {
   let {
     guild: t
   } = e;
@@ -138,7 +138,7 @@ let j = e => {
         guild: t
       })
   }
-  return O.s.isDisallowPopupsSet() ? null : (0, r.jsx)(A, {
+  return O.s.isDisallowPopupsSet() ? null : (0, r.jsx)(j, {
     guild: e.guild
   })
 }

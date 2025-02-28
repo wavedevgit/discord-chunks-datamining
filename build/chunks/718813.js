@@ -75,13 +75,13 @@ let C = (0, g.Un)({
     webpackId: 994763,
     name: "GuildSettings"
   }),
-  A = {
+  j = {
     [O.S9g.USER_SETTINGS]: () => (0, i.jsx)(C, {}),
     [O.S9g.CHANNEL_SETTINGS]: () => (0, i.jsx)(S, {}),
     [O.S9g.GUILD_SETTINGS]: () => (0, i.jsx)(P, {}),
     [O.S9g.COLLECTIBLES_SHOP]: () => (0, i.jsx)(T, {})
   },
-  j = "SHOWN",
+  A = "SHOWN",
   Z = "HIDDEN",
   x = {
     friction: 10,
@@ -104,7 +104,7 @@ class w extends(r = l.PureComponent) {
     } = this.props, {
       mode: n
     } = e;
-    return t === n ? void 0 : t === j && n === Z ? this.animateIn() : t === Z && n === j ? this.animateUnder() : void 0
+    return t === n ? void 0 : t === A && n === Z ? this.animateIn() : t === Z && n === A ? this.animateUnder() : void 0
   }
   componentWillEnter(e) {
     let {
@@ -248,15 +248,15 @@ class R extends l.PureComponent {
       length: r
     } = t, l = [];
     return l.push((0, i.jsx)(w, {
-      mode: 0 !== r || n ? Z : j,
+      mode: 0 !== r || n ? Z : A,
       baseLayer: !0,
       children: e
     }, "layer-base")), t.forEach((e, t) => l.push(this.renderComponent(e, t, r))), l
   }
   renderComponent(e, t, n) {
     let r;
-    return r = "string" == typeof e ? A[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(w, {
-      mode: t === n - 1 ? j : Z,
+    return r = "string" == typeof e ? j[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(w, {
+      mode: t === n - 1 ? A : Z,
       children: [(0, i.jsx)(L, {}), r]
     }, "layer-".concat(t))
   }

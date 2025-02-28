@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 9524b06bcd5a90b8
+  Original File Name: e5c3e20ef28cf9b5
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -2558,7 +2558,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .badgeContainer_f14037 {
     position: relative;
-    flex-direction: row
+    flex-direction: row;
+    padding: 4px
 }
 
 .badgeContainer_f14037,.newBadge_f14037 {
@@ -5308,4 +5309,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=9524b06bcd5a90b8.css.map*/
+/*# sourceMappingURL=e5c3e20ef28cf9b5.css.map*/

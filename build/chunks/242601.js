@@ -28,8 +28,8 @@ var r = n(200651),
   S = n(605236),
   T = n(243778),
   P = n(492162),
-  A = n(818634),
-  j = n(596557),
+  j = n(818634),
+  A = n(596557),
   Z = n(817520),
   x = n(999309),
   L = n(408987),
@@ -231,7 +231,7 @@ class eI extends i.PureComponent {
         animation: p.yRy.Animation.SCALE,
         shouldShow: n,
         onRequestClose: () => {
-          (0, A.l)(!1)
+          (0, j.l)(!1)
         },
         children: i => {
           var {
@@ -360,7 +360,7 @@ class eI extends i.PureComponent {
       let {
         isHeaderPopoutOpen: t
       } = this.props;
-      e.stopPropagation(), (0, A.l)(!t), this.closeAllHeaderNotices()
+      e.stopPropagation(), (0, j.l)(!t), this.closeAllHeaderNotices()
     }), em(this, "handleContextMenu", e => {
       let {
         guild: t
@@ -504,10 +504,10 @@ function eC(e) {
   i.useEffect(() => {
     n !== eo && el(!K)
   }, [n, eo, K]);
-  let [ec, eh] = (0, C.ZP)(e => [ed.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ep.R.GUILD_HEADER_TOOLTIPS)], s.X), ef = (0, N.Z)(d), eg = (0, p.s9z)(p.JQI), em = (0, c.e7)([X.Z], () => X.Z.hasLayers()), eb = (0, c.e7)([V.Z], () => V.Z.shouldShow(ev)), e_ = v && (null == d ? void 0 : d.premiumProgressBarEnabled) === !1 && !er.s.isDisallowPopupsSet(), eE = (0, c.e7)([q.Z], () => q.Z.getMemberCount(n)), eO = v && null != eE && eE >= 30 && (null == d ? void 0 : d.premiumProgressBarEnabled) === !1 && !er.s.isDisallowPopupsSet(), eN = T && null != d && (d.hasFeature(eu.oNc.COMMUNITY) || null != eE && eE > 50), ey = (0, x.Z)(n), eC = (null == d ? void 0 : d.hasFeature(eu.oNc.HUB)) === !0, eS = v && (null == d ? void 0 : d.hasFeature(eu.oNc.DISCOVERABLE)) === !0, eT = (0, O.Q)(), eP = (v || (null == d ? void 0 : d.premiumTier) === eu.Eu4.NONE) && !er.s.isDisallowPopupsSet() && !eT, eA = (0, c.e7)([w.Z, X.Z], () => null != d && null != U && v && !X.Z.hasLayers() && w.Z.shouldShowGuildTemplateDirtyTooltip(n)), ej = (0, c.e7)([F.Z], () => F.Z.getChannel(a)), {
+  let [ec, eh] = (0, C.ZP)(e => [ed.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ep.R.GUILD_HEADER_TOOLTIPS)], s.X), ef = (0, N.Z)(d), eg = (0, p.s9z)(p.JQI), em = (0, c.e7)([X.Z], () => X.Z.hasLayers()), eb = (0, c.e7)([V.Z], () => V.Z.shouldShow(ev)), e_ = v && (null == d ? void 0 : d.premiumProgressBarEnabled) === !1 && !er.s.isDisallowPopupsSet(), eE = (0, c.e7)([q.Z], () => q.Z.getMemberCount(n)), eO = v && null != eE && eE >= 30 && (null == d ? void 0 : d.premiumProgressBarEnabled) === !1 && !er.s.isDisallowPopupsSet(), eN = T && null != d && (d.hasFeature(eu.oNc.COMMUNITY) || null != eE && eE > 50), ey = (0, x.Z)(n), eC = (null == d ? void 0 : d.hasFeature(eu.oNc.HUB)) === !0, eS = v && (null == d ? void 0 : d.hasFeature(eu.oNc.DISCOVERABLE)) === !0, eT = (0, O.Q)(), eP = (v || (null == d ? void 0 : d.premiumTier) === eu.Eu4.NONE) && !er.s.isDisallowPopupsSet() && !eT, ej = (0, c.e7)([w.Z, X.Z], () => null != d && null != U && v && !X.Z.hasLayers() && w.Z.shouldShowGuildTemplateDirtyTooltip(n)), eA = (0, c.e7)([F.Z], () => F.Z.getChannel(a)), {
     isPopoutOpen: eZ
-  } = (0, A.y)(), ex = null !== (t = null == d ? void 0 : d.hasFeature(eu.oNc.COMMUNITY)) && void 0 !== t && t, eL = (0, c.e7)([G.Z], () => !o().isEmpty(G.Z.getThreadsForGuild(n))), ew = en.ZP.isNewUser(U), eR = ei && !ew, eD = (0, y.Z)(U);
-  (0, j.Z)(d);
+  } = (0, j.y)(), ex = null !== (t = null == d ? void 0 : d.hasFeature(eu.oNc.COMMUNITY)) && void 0 !== t && t, eL = (0, c.e7)([G.Z], () => !o().isEmpty(G.Z.getThreadsForGuild(n))), ew = en.ZP.isNewUser(U), eR = ei && !ew, eD = (0, y.Z)(U);
+  (0, A.Z)(d);
   let ek = (0, S.wE)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     eM = (0, k.Z)(n),
     eU = (0, Z.Z)(n),
@@ -525,7 +525,7 @@ function eC(e) {
     guild: d,
     scrollToChannel: f,
     selectedChannelId: l ? null : a,
-    selectedChannel: ej,
+    selectedChannel: eA,
     selectedVoiceChannelId: g,
     voiceStates: h,
     rtcConnectedChannelId: eG,
@@ -540,7 +540,7 @@ function eC(e) {
     showInviteSplashUpsell: eP,
     showDiscoveryLandingPageSettingsUpsell: eS,
     showGuildHeaderTutorial: eb,
-    showGuildTemplateDirtyTooltip: eA,
+    showGuildTemplateDirtyTooltip: ej,
     showRoleSubscriptionUpsell: ey,
     showHubPrivacySettingsTooltip: eC,
     showNewUnreadsBar: ex,

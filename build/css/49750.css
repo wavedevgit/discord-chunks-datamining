@@ -1,6 +1,6 @@
 /**
   Module ID: 49750
-  Original File Name: 5768d00d9fbe9dc2
+  Original File Name: 991088a37526a04b
 **/
 .ragingDemon_ac6454 {
     position: relative;
@@ -1774,7 +1774,8 @@
 
 .badgeContainer_f14037 {
     position: relative;
-    flex-direction: row
+    flex-direction: row;
+    padding: 4px
 }
 
 .badgeContainer_f14037,.newBadge_f14037 {
@@ -2706,4 +2707,4 @@ img.thumbnail__0f2e8 {
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=5768d00d9fbe9dc2.css.map*/
+/*# sourceMappingURL=991088a37526a04b.css.map*/

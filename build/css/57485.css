@@ -1,6 +1,6 @@
 /**
   Module ID: 57485
-  Original File Name: 5f2a948907d4da31
+  Original File Name: 02f63eebe6bd18dc
 **/
 @value minColumnWidth: 460px;
 
@@ -1433,7 +1433,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .badgeContainer_f14037 {
     position: relative;
-    flex-direction: row
+    flex-direction: row;
+    padding: 4px
 }
 
 .badgeContainer_f14037,.newBadge_f14037 {
@@ -3511,4 +3512,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=5f2a948907d4da31.css.map*/
+/*# sourceMappingURL=02f63eebe6bd18dc.css.map*/

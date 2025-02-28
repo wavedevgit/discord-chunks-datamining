@@ -29,7 +29,7 @@ var r = n(200651),
   T = n(388032),
   P = n(963085);
 
-function A(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function A(e) {
   return e
 }
 
-function j(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -110,7 +110,7 @@ function Z(e) {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
-      return t => (0, r.jsx)(e, j(A({
+      return t => (0, r.jsx)(e, A(j({
         guildId: V
       }, t), {
         onInteraction: (0, g.u)("SoundboardContextMenu", "RTCConnection")
@@ -145,7 +145,7 @@ function Z(e) {
       })
     },
     children: t => (0, r.jsx)("div", {
-      children: (0, r.jsx)(u.zxk, j(A(j(A({}, e, t), {
+      children: (0, r.jsx)(u.zxk, A(j(A(j({}, e, t), {
         className: o()(Z, {
           [P.buttonActive]: G && !R,
           [P.greyButtonActive]: G && R,

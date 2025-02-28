@@ -28,8 +28,8 @@ var r = n(200651),
   S = n(981631),
   T = n(674563),
   P = n(388032),
-  A = n(866551);
-let j = 15 * E.Z.Millis.MINUTE,
+  j = n(866551);
+let A = 15 * E.Z.Millis.MINUTE,
   Z = (0, C.Z)(function(e) {
     let {
       party: t,
@@ -60,7 +60,7 @@ let j = 15 * E.Z.Millis.MINUTE,
         in_voice_channel: E,
         games_detected: e
       })
-    }, [g, m, b, E, h]), C = s()(O, j);
+    }, [g, m, b, E, h]), C = s()(O, A);
     return null != a || null != c ? (0, r.jsx)(u.yRy, {
       position: "left",
       renderPopout: e => {
@@ -98,7 +98,7 @@ let j = 15 * E.Z.Millis.MINUTE,
         }({}, e), i = i = {
           onMouseEnter: C,
           "aria-haspopup": "menu",
-          className: A.itemCard,
+          className: j.itemCard,
           active: l,
           children: (0, r.jsxs)("div", {
             children: [a, c]
@@ -159,19 +159,19 @@ function L() {
       quest: s.get(t.id)
     }, t.id)
   }) : (0, r.jsxs)("div", {
-    className: A.emptyCard,
+    className: j.emptyCard,
     children: [(0, r.jsx)(u.X6q, {
       variant: "heading-md/semibold",
-      className: A.emptyHeader,
+      className: j.emptyHeader,
       children: P.NW.string(P.t["ngJ/5u"])
     }), (0, r.jsx)(u.Text, {
       color: "none",
-      className: A.emptyText,
+      className: j.emptyText,
       variant: "text-sm/normal",
       children: P.NW.string(P.t["99ZWxc"])
     })]
   }) : (0, r.jsx)("div", {
-    className: A.emptyCard,
+    className: j.emptyCard,
     children: (0, r.jsx)(u.$jN, {})
   })
 }

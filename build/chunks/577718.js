@@ -28,8 +28,8 @@ var r = n(200651),
   S = n(388032),
   T = n(925003),
   P = n(581684),
-  A = n(741160),
-  j = n(829972),
+  j = n(741160),
+  A = n(829972),
   Z = n(31932),
   x = n(642301);
 
@@ -90,7 +90,7 @@ let D = i.memo(function(e) {
       },
       location_stack: u
     })
-  }, D = (0, o.wj)(n) ? j : Z, [k, M] = (0, c.US)(t, y.R.GUILD_HEADER_TOOLTIPS);
+  }, D = (0, o.wj)(n) ? A : Z, [k, M] = (0, c.US)(t, y.R.GUILD_HEADER_TOOLTIPS);
   return (0, r.jsx)(r.Fragment, {
     children: (() => {
       switch (k) {
@@ -167,7 +167,7 @@ let D = i.memo(function(e) {
               header: S.NW.string(S.t["36wK8/"]),
               asset: (0, r.jsx)("img", {
                 alt: "",
-                src: A,
+                src: j,
                 className: P.fullWidthImage
               }),
               content: e,

@@ -27,8 +27,8 @@ var r, i = n(200651),
   S = n(194082),
   T = n(264165),
   P = n(548816),
-  A = n(925329),
-  j = n(102172),
+  j = n(925329),
+  A = n(102172),
   Z = n(871118),
   x = n(707409),
   L = n(359110),
@@ -506,7 +506,7 @@ ei.Header = er, ei.Body = e => {
     applicationStream: o,
     onPreviewClick: a,
     guildId: c
-  } = e, d = (0, s.e7)([k.Z], () => k.Z.getChannel(o.channelId)), [p, h] = (0, j.wq)(d), f = (0, i.jsxs)(u.P3F, {
+  } = e, d = (0, s.e7)([k.Z], () => k.Z.getChannel(o.channelId)), [p, h] = (0, A.wq)(d), f = (0, i.jsxs)(u.P3F, {
     onClick: p ? a : void 0,
     className: Y.applicationStreamingPreviewWrapper,
     children: [(0, i.jsx)(Z.Z, {
@@ -516,7 +516,7 @@ ei.Header = er, ei.Body = e => {
       className: Y.applicationStreamingHoverText,
       variant: "text-sm/medium",
       color: "always-white",
-      children: (0, j.P9)(h)
+      children: (0, A.P9)(h)
     })]
   }), g = null !== (n = null === (t = (0, v.Z)(r, o)) || void 0 === t ? void 0 : t.activityText) && void 0 !== n ? n : z.NW.string(z.t.eXan7O);
   return (0, i.jsxs)($, {
@@ -562,9 +562,9 @@ ei.Header = er, ei.Body = e => {
   return (0, i.jsxs)($, {
     children: [(0, i.jsxs)("div", {
       className: Y.embeddedActivityTopRow,
-      children: [(0, i.jsx)(A.Z, {
+      children: [(0, i.jsx)(j.Z, {
         game: _,
-        size: A.Z.Sizes.XSMALL,
+        size: j.Z.Sizes.XSMALL,
         className: Y.embeddedActivityIcon
       }), (0, i.jsx)("div", {
         className: Y.embeddedActivityName,

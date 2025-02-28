@@ -86,7 +86,7 @@ function P(e, t, n, r) {
     message: r
   }, n)
 }
-class A extends g.Z {
+class j extends g.Z {
   send(e) {
     (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY && e.evt !== _.zMe.OVERLAY) && y.info("Socket Emit: ".concat(this.id), (0, f.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
       binary: !0
@@ -105,7 +105,7 @@ class A extends g.Z {
     this._socket = e
   }
 }
-class j extends g.Z {
+class A extends g.Z {
   send(e) {
     (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY) && y.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
   }
@@ -140,7 +140,7 @@ class Z extends l.EventEmitter {
           } = null !== (r = d.Z.toURLSafe(null !== (e = n.get("callback")) && void 0 !== e ? e : "")) && void 0 !== r ? r : {};
           i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", v), t.writeHead(301), t.end()
         },
-        s = new j(l ? T.bind(null, e, t) : a, l ? P.bind(null, e, t, 400) : a, Number(n.get("v")), i);
+        s = new A(l ? T.bind(null, e, t) : a, l ? P.bind(null, e, t, 400) : a, Number(n.get("v")), i);
       if (l)(0, m.em)(s, C(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
         e.on("data", e => n += e), e.on("error", () => P(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
@@ -165,7 +165,7 @@ class Z extends l.EventEmitter {
     let i = new URLSearchParams(C(e.upgradeReq).url.split("?")[1]),
       l = null !== (t = C(e.upgradeReq).headers.origin) && void 0 !== t ? t : "";
     try {
-      r = new A(e, Number(i.get("v")), null !== (n = i.get("encoding")) && void 0 !== n ? n : "json")
+      r = new j(e, Number(i.get("v")), null !== (n = i.get("encoding")) && void 0 !== n ? n : "json")
     } catch (t) {
       e.close(t.code, t.message);
       return

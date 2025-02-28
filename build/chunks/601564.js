@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.r(t), n.d(t, {
-  default: () => j,
+  default: () => A,
   getPageSize: () => P
 }), n(47120), n(301563);
 var r = n(200651),
@@ -44,7 +44,7 @@ function P(e) {
   return e < v.x ? v.b.SMALL : v.b.LARGE
 }
 a.ZP.initialize();
-class A extends i.PureComponent {
+class j extends i.PureComponent {
   componentDidMount() {
     (0, s.Y)(this.props.location), this.stopListeningToHistory = (0, _.s1)().listen(e => {
       e.pathname.startsWith(y.Z5c.APPLICATION_STORE) && (0, s.Y)(e)
@@ -132,4 +132,4 @@ class A extends i.PureComponent {
     }))
   }
 }
-let j = (0, o.EN)((0, d.Z)((0, p.Z)(A)))
+let A = (0, o.EN)((0, d.Z)((0, p.Z)(j)))

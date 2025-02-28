@@ -28,8 +28,8 @@ var r = n(200651),
   S = n(371651),
   T = n(829907),
   P = n(427679),
-  A = n(695346),
-  j = n(592125),
+  j = n(695346),
+  A = n(592125),
   Z = n(77498),
   x = n(271383),
   L = n(430824),
@@ -154,7 +154,7 @@ class X extends i.PureComponent {
       let e = Z.Z.getGameByName(W.name),
         n = _.ZP.getOverrideForGame(W),
         r = L.Z.getGuildIds(),
-        i = A.SE.getSetting(),
+        i = j.SE.getSetting(),
         l = r.filter(e => !i.includes(e)).slice(0, 200),
         c = null;
       c = null != n ? "custom_override" : null != e ? "verified_game" : "launcher";
@@ -187,7 +187,7 @@ class X extends i.PureComponent {
             is_overlay_game_source: m,
             fullscreen_type: null != n ? s.Jx[n] : s.Jx.UNKNOWN.toString(),
             overlay_method: a.gl[d],
-            activity_status_enabled: A.G6.getSetting(),
+            activity_status_enabled: j.G6.getSetting(),
             activity_status_shared_guilds: l,
             current_user_status: U.Z.getStatus(),
             game_detection_enabled: (0, _.ik)(W),
@@ -210,7 +210,7 @@ class X extends i.PureComponent {
         video_input_type: e,
         video_toggle_source: __OVERLAY__ ? "overlay" : "app",
         enabled_inputs: t,
-        preview_enabled: A.qF.getSetting()
+        preview_enabled: j.qF.getSetting()
       }, n, this.getGameMetadata(), (0, u.AB)(E)))
     }
     if (X && null != q && (q !== e.selectedGuildId || !e.connected || et && !e.isMemberPending)) {
@@ -242,7 +242,7 @@ class X extends i.PureComponent {
     }));
     if (X && null != B && (!e.connected || B !== e.selectedChannelId || q !== e.selectedGuildId)) {
       let t = e.selectedChannelId,
-        n = j.Z.getChannel(t),
+        n = A.Z.getChannel(t),
         r = L.Z.getGuild(null == n ? void 0 : n.getGuildId());
       if (null != t && null != n && null != r && r.publicUpdatesChannelId === t) {
         let e = R.Z.getMessages(t),
@@ -256,7 +256,7 @@ class X extends i.PureComponent {
           messages_loaded: e.hasFetched
         }, (0, u.v_)(n), (0, u.hH)(r.id)))
       }
-      let l = (0, d.K)(j.Z.getChannel(B), !0);
+      let l = (0, d.K)(A.Z.getChannel(B), !0);
       (0, u.yw)(K.rMx.CHANNEL_OPENED, Q({}, l, (0, u.$H)(B))), (0, p.a)(K.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: B
       }), ei && (0, u.yw)(K.rMx.TEXT_IN_VOICE_OPENED, {
@@ -281,7 +281,7 @@ class X extends i.PureComponent {
 }
 
 function J() {
-  let [e, t] = (0, l.Wu)([k.Z], () => [k.Z.getVoiceChannelId(), k.Z.getChannelId()], []), n = (0, l.e7)([j.Z], () => j.Z.getChannel(t), [t]), i = (0, l.e7)([g.Z], () => (null == n ? void 0 : n.id) != null && g.Z.getChatOpen(n.id), [n]), o = null == n ? void 0 : n.nsfw, a = (0, l.e7)([j.Z], () => j.Z.getChannel(e), [e]), s = (0, l.e7)([M.Z], () => M.Z.getGuildId(), []), u = (0, l.e7)([L.Z], () => L.Z.getGuild(s), [s]), d = (0, l.e7)([W.default], () => W.default.getCurrentUser(), []), p = (0, l.e7)([x.ZP], () => {
+  let [e, t] = (0, l.Wu)([k.Z], () => [k.Z.getVoiceChannelId(), k.Z.getChannelId()], []), n = (0, l.e7)([A.Z], () => A.Z.getChannel(t), [t]), i = (0, l.e7)([g.Z], () => (null == n ? void 0 : n.id) != null && g.Z.getChatOpen(n.id), [n]), o = null == n ? void 0 : n.nsfw, a = (0, l.e7)([A.Z], () => A.Z.getChannel(e), [e]), s = (0, l.e7)([M.Z], () => M.Z.getGuildId(), []), u = (0, l.e7)([L.Z], () => L.Z.getGuild(s), [s]), d = (0, l.e7)([W.default], () => W.default.getCurrentUser(), []), p = (0, l.e7)([x.ZP], () => {
     var e, t;
     return null != d && null != s && null !== (t = null === (e = x.ZP.getMember(s, d.id)) || void 0 === e ? void 0 : e.isPending) && void 0 !== t && t
   }, [d, s]), h = (0, l.e7)([B.ZP], () => B.ZP.getState().section, []), f = (0, l.e7)([V.Z], () => V.Z.getHomeLink(), []), m = (0, l.e7)([E.Z], () => E.Z.isConnected(), []), [b, N] = (0, l.Wu)([w.Z], () => [w.Z.isVideoEnabled(), w.Z.isScreenSharing()], []), v = (0, l.e7)([U.Z], () => U.Z.getPrimaryActivity(), []), I = (0, l.e7)([_.ZP], () => _.ZP.getCurrentGameForAnalytics(), []), C = (0, O.Z)(s), S = (0, l.e7)([y.Z], () => y.Z.getMessageRequestsCount(), []), T = {

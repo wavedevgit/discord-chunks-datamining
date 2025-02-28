@@ -1,6 +1,6 @@
 /**
   Module ID: 23590
-  Original File Name: a4aeba500e0b7360
+  Original File Name: fb2573e748d63c62
 **/
 .rootContainer_f4adbd {
     align-items: center;
@@ -981,7 +981,8 @@
 
 .badgeContainer_f14037 {
     position: relative;
-    flex-direction: row
+    flex-direction: row;
+    padding: 4px
 }
 
 .badgeContainer_f14037,.newBadge_f14037 {
@@ -1269,4 +1270,4 @@
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=a4aeba500e0b7360.css.map*/
+/*# sourceMappingURL=fb2573e748d63c62.css.map*/

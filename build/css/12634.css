@@ -1,6 +1,6 @@
 /**
   Module ID: 12634
-  Original File Name: 5f9943e9383bbc36
+  Original File Name: 56eb1228f8d1fc94
 **/
 .badgeContainer__98c7b {
     position: relative;
@@ -382,7 +382,8 @@
 
 .badgeContainer_f14037 {
     position: relative;
-    flex-direction: row
+    flex-direction: row;
+    padding: 4px
 }
 
 .badgeContainer_f14037,.newBadge_f14037 {
@@ -1578,4 +1579,4 @@
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=5f9943e9383bbc36.css.map*/
+/*# sourceMappingURL=56eb1228f8d1fc94.css.map*/

@@ -47,7 +47,7 @@ function P(e) {
     R = (0, u.m)({
       location: "UserSettingsPremiumLabel"
     }),
-    L = (0, a.wE)(l.z.Q1_2025_MARKETING_MOMENT_PROMO_SHEET);
+    L = (0, a.wE)(l.z.Q1_2025_MARKETING_MOMENT_OFFER_BADGE);
   return t = !0 === R ? !0 === L ? (0, n.jsx)(m.Du, {}) : (0, n.jsx)(h.Z, {
     copy: C.NW.string(C.t.OS9KPj),
     showStars: !1

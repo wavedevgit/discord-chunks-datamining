@@ -93,8 +93,8 @@ function T(e) {
     channel: b,
     user: T,
     nick: P,
-    mute: A,
-    deaf: j,
+    mute: j,
+    deaf: A,
     serverMute: Z,
     serverDeaf: x
   } = e, L = (0, a.e7)([_.Z], () => _.Z.isLocalMute(T.id)), w = (0, u.Z)({
@@ -119,9 +119,9 @@ function T(e) {
     if (i) return S.mute
   }({
     serverDeaf: x,
-    deaf: j,
+    deaf: A,
     serverMute: Z,
-    mute: A,
+    mute: j,
     localMute: L
   })) && void 0 !== i ? i : {}, W = null != G ? N.NW.formatToPlainString(N.t["1+MVBA"], {
     userName: k,
