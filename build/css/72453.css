@@ -1,6 +1,6 @@
 /**
   Module ID: 72453
-  Original File Name: 74f53fe2bafcc778
+  Original File Name: f47bc36b6ebf57ef
 **/
 .image__04666 {
     width: 100%;
@@ -2883,7 +2883,7 @@ span.clanTag__07f91.isOverlay__07f91 {
     flex-direction: column;
     background: var(--background-tertiary);
     border-radius: 16px;
-    border: 1px solid var(--border-faint);
+    outline: 1px solid var(--border-subtle);
     box-shadow: var(--shadow-high);
     width: 400px
 }
@@ -14927,4 +14927,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=74f53fe2bafcc778.css.map*/
+/*# sourceMappingURL=f47bc36b6ebf57ef.css.map*/
