@@ -171,34 +171,34 @@ function w(e) {
   }) : null
 }
 let C = function(e) {
-  var {
-    avatarContainerClass: t = A.avatarContainer,
-    userNameClassName: n = A.usernameFont,
-    size: i = N.ipw.SMALL,
-    selected: s = !1,
-    disabled: u = !1,
-    isOverlay: d = !1
-  } = e, p = function(e, t) {
-    if (null == e) return {};
-    var n, r, l = function(e, t) {
+  var t, {
+      avatarContainerClass: n = A.avatarContainer,
+      userNameClassName: i = A.usernameFont,
+      size: s = N.ipw.SMALL,
+      selected: u = !1,
+      disabled: d = !1,
+      isOverlay: p = !1
+    } = e,
+    g = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+      var n, r, l = function(e, t) {
+        if (null == e) return {};
+        var n, r, l = {},
+          i = Object.keys(e);
+        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+        return l
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var i = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      }
       return l
-    }(e, t);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
-    }
-    return l
-  }(e, ["avatarContainerClass", "userNameClassName", "size", "selected", "disabled", "isOverlay"]);
+    }(e, ["avatarContainerClass", "userNameClassName", "size", "selected", "disabled", "isOverlay"]);
   let {
-    onClick: g,
-    onKeyDown: v,
-    onDoubleClick: j,
-    onContextMenu: S,
-    onMouseEnter: E,
+    onClick: v,
+    onKeyDown: j,
+    onDoubleClick: S,
+    onContextMenu: E,
     onMouseLeave: T,
     onMouseDown: C,
     priority: _,
@@ -213,53 +213,48 @@ let C = function(e) {
     className: F,
     overlap: V,
     "aria-label": Y,
-    tabIndex: B,
-    ringing: z,
-    user: H,
-    channelId: J
-  } = p, Q = (0, c.bp)(), X = null != J ? O.Z.getChannel(J) : null, {
-    simplifiedSettingsEnabled: K
+    ringing: B,
+    user: z,
+    channelId: H
+  } = g, J = (0, c.bp)(), Q = null != H ? O.Z.getChannel(H) : null, {
+    simplifiedSettingsEnabled: X
   } = (0, b.Z)({
     location: "VoiceUser"
-  }), [q, $] = l.useState(!1), [ee, et] = l.useState(!1);
+  }), [K, q] = l.useState(!1);
   return l.useEffect(() => {
     let e = !1,
       t = () => {
-        e === h.Z.isOpen() || (e = h.Z.isOpen()) || et(!1)
+        e === h.Z.isOpen() || (e = h.Z.isOpen()) || q(!1)
       };
     return h.Z.addChangeListener(t), () => h.Z.removeChangeListener(t)
-  }, []), (0, r.jsx)(a.P3F, {
+  }, []), (0, r.jsx)(a.kL8, {
     className: o()(F, {
       [A.voiceUser]: !0,
       [A.overlap]: V,
-      [A.selected]: s,
-      [A.clickable]: null != g,
-      [A.userSmall]: i === N.ipw.SMALL,
-      [A.userLarge]: i === N.ipw.LARGE,
-      [A.disabled]: !s && u,
-      [A.ringing]: z
+      [A.selected]: u,
+      [A.clickable]: null != v,
+      [A.userSmall]: s === N.ipw.SMALL,
+      [A.userLarge]: s === N.ipw.LARGE,
+      [A.disabled]: !u && d,
+      [A.ringing]: B
     }),
     onClick: e => {
-      null == g || g(e, H)
+      null == v || v(e, z)
     },
     onDoubleClick: e => {
-      null == j || j(e, H)
+      null == S || S(e, z)
     },
     onContextMenu: e => {
-      null == S || S(e, H)
-    },
-    onMouseEnter: e => {
-      $(!0), null == E || E(e, H)
+      null == E || E(e, z)
     },
     onMouseLeave: e => {
-      $(!1), null == T || T(e, H)
+      null == T || T(e, z)
     },
     onMouseDown: e => {
-      null == C || C(e, H)
+      null == C || C(e, z)
     },
-    onKeyDown: v,
-    "aria-label": Y,
-    tabIndex: B,
+    onKeyDown: j,
+    "aria-label": null !== (t = null != Y ? Y : U) && void 0 !== t ? t : z.username,
     children: (0, r.jsxs)("div", {
       className: o()(A.content, {
         [A.flipped]: G
@@ -272,39 +267,39 @@ let C = function(e) {
           })
         }, e))
       }) : null, (0, r.jsx)("div", {
-        className: o()(t, A.avatar, {
-          [A.avatarLarge]: i === N.ipw.LARGE,
-          [A.avatarSmall]: i === N.ipw.SMALL,
+        className: o()(n, A.avatar, {
+          [A.avatarLarge]: s === N.ipw.LARGE,
+          [A.avatarSmall]: s === N.ipw.SMALL,
           [A.avatarSpeaking]: D
         }),
         style: {
-          backgroundImage: "url(".concat(H.getAvatarURL(M, i === N.ipw.LARGE ? 38 : 24), ")")
+          backgroundImage: "url(".concat(z.getAvatarURL(M, s === N.ipw.LARGE ? 38 : 24), ")")
         }
       }), function() {
         var e, t;
-        let l = (0, r.jsxs)("div", {
-            className: o()(n, {
+        let n = (0, r.jsxs)("div", {
+            className: o()(i, {
               [A.username]: !0,
               [A.usernameSpeaking]: !k && !W && D
             }),
-            children: [null != U ? U : P.ZP.getName(H), R ? (0, r.jsxs)("span", {
+            children: [null != U ? U : P.ZP.getName(z), R ? (0, r.jsxs)("span", {
               className: A.guestSuffix,
               children: ["\xa0", x.NW.string(x.t["pFO/Pj"])]
             }) : ""]
           }),
-          i = {
-            primaryGuild: H.primaryGuild,
-            userId: H.id,
+          l = {
+            primaryGuild: z.primaryGuild,
+            userId: z.id,
             contextGuildId: M,
-            isOverlay: d,
+            isOverlay: p,
             disableTooltip: !0,
-            className: o()(A.clanTag, d && A.isOverlay),
+            className: o()(A.clanTag, p && A.isOverlay),
             profileViewedAnalytics: {
-              source: d ? N.jXE.OVERLAY : N.Sbl.VOICE_PANEL
+              source: p ? N.jXE.OVERLAY : N.Sbl.VOICE_PANEL
             }
           };
-        return !L || d ? (0, r.jsx)(m.Z, (e = Z({}, i), t = t = {
-          children: l
+        return !L || p ? (0, r.jsx)(m.Z, (e = Z({}, l), t = t = {
+          children: n
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -316,21 +311,23 @@ let C = function(e) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e)) : null
       }(), (0, r.jsx)(w, Z({
-        disabled: u
-      }, p)), K && ((q || ee) && !L ? (0, r.jsx)(a.DY3, {
+        disabled: d
+      }, g)), X && (L ? null : (0, r.jsx)(a.DY3, {
         text: x.NW.string(x.t["+1H47u"]),
         children: (0, r.jsx)(a.P3F, {
-          className: o()(A.moreClickable, ee && A.moreActive),
+          className: o()(A.optionsButton, {
+            [A.optionsActive]: K
+          }),
           onClick: function(e) {
-            null != M && null != X && (et(!0), (0, y.D)(e, H, X, {
-              context: Q
+            null != M && null != Q && (q(!0), (0, y.D)(e, z, Q, {
+              context: J
             }, (e, t) => {
               (0, f.o)({
                 menuName: e,
                 menuItemProps: t,
                 entrypoint: I.A5.THREE_DOT,
                 location: "VoiceUser",
-                targetUserId: H.id
+                targetUserId: z.id
               })
             }))
           },
@@ -339,7 +336,7 @@ let C = function(e) {
             className: o()(A.icon)
           })
         })
-      }) : null)]
+      }))]
     })
   })
 };

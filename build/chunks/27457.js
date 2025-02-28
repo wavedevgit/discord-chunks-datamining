@@ -463,7 +463,7 @@ function ep(e) {
   let {
     icon: t,
     tooltipText: n,
-    hidden: i = !1,
+    hideWhenInactive: i,
     onClick: l
   } = e;
   return (0, r.jsx)(c.ua7, {
@@ -476,10 +476,11 @@ function ep(e) {
         onClick: e => {
           e.stopPropagation(), null == n || n(), l(e)
         },
+        onMouseDown: e => e.preventDefault(),
         color: c.Ttl.CUSTOM,
         size: c.PhG.ICON,
         className: o()(es.overlayButton, {
-          [es.idle]: i
+          [es.hideWhenInactive]: i
         }),
         innerClassName: es.overlayButtonInner,
         children: (0, r.jsx)(t, {
@@ -504,26 +505,24 @@ let em = i.memo(e => {
     platform: h,
     secureFramesVerified: f,
     onContextMenu: g,
-    isHovered: N,
-    muted: O,
-    deafened: I,
-    localMuted: b,
-    serverMuted: T,
-    serverDeafened: C,
-    hasVideo: S,
-    hideAudioIcon: y,
-    onToggleMute: P
-  } = e, R = (0, s.e7)([Z.Z], () => null != p && Z.Z.isLocalVideoAutoDisabled(p, (0, m.Z)(E)), [p, E]), A = (0, $.N)(l), v = (0, $.K)(l), [x, D] = i.useState(!1);
+    muted: N,
+    deafened: O,
+    localMuted: I,
+    serverMuted: b,
+    serverDeafened: T,
+    hasVideo: C,
+    hideAudioIcon: S,
+    onToggleMute: y
+  } = e, P = (0, s.e7)([Z.Z], () => null != p && Z.Z.isLocalVideoAutoDisabled(p, (0, m.Z)(E)), [p, E]), R = (0, $.N)(l), A = (0, $.K)(l), [v, x] = i.useState(!1);
   i.useEffect(() => {
     let e = !1,
       t = () => {
-        e === G.Z.isOpen() || (e = G.Z.isOpen()) || D(!1)
+        e === G.Z.isOpen() || (e = G.Z.isOpen()) || x(!1)
       };
     return G.Z.addChangeListener(t), () => G.Z.removeChangeListener(t)
   }, []);
-  let L = !y && E === en.fO.STREAM && S && (!v || b),
-    k = !N && !b,
-    j = function(e) {
+  let D = !S && E === en.fO.STREAM && C && (!A || I),
+    L = function(e) {
       let {
         localMuted: t,
         serverMuted: n,
@@ -533,11 +532,11 @@ let em = i.memo(e => {
       } = e;
       return r ? c.Vm4 : n ? c.v0G : i ? c.wE8 : t ? c.v0G : l ? c.nRN : null
     }({
-      localMuted: b,
-      serverMuted: T,
-      serverDeafened: C,
-      deafened: I,
-      muted: O
+      localMuted: I,
+      serverMuted: b,
+      serverDeafened: T,
+      deafened: O,
+      muted: N
     });
   return (0, r.jsxs)("div", {
     className: es.overlayContainer,
@@ -545,7 +544,7 @@ let em = i.memo(e => {
       className: o()(es.overlayTop, {
         [es.small]: l < 195
       }),
-      children: R || u === et.ZUi.AUTO_PROBING ? t ? (0, r.jsx)("div", {
+      children: P || u === et.ZUi.AUTO_PROBING ? t ? (0, r.jsx)("div", {
         className: es.status,
         children: (0, r.jsx)(c.Amn, {
           size: "md",
@@ -565,7 +564,7 @@ let em = i.memo(e => {
           children: eo.NW.string(eo.t.m2Hyj4)
         })]
       }) : null
-    }), !A && (0, r.jsxs)("div", {
+    }), !R && (0, r.jsxs)("div", {
       className: o()(es.overlayBottom, {
         [es.small]: l < 195
       }),
@@ -575,7 +574,7 @@ let em = i.memo(e => {
         }),
         color: "none",
         variant: "text-md/normal",
-        children: [null != j && E === en.fO.USER && (0, r.jsx)(j, {
+        children: [null != L && E === en.fO.USER && (0, r.jsx)(L, {
           className: es.experimentTitleIcon,
           size: "xs",
           color: "currentColor"
@@ -610,18 +609,18 @@ let em = i.memo(e => {
         })]
       }), (0, r.jsxs)("div", {
         className: es.overlayButtonContainer,
-        children: [L && (0, r.jsx)(ep, {
-          onClick: P,
-          tooltipText: b ? eo.NW.string(eo.t.YqAjX1) : eo.NW.string(eo.t["w4m94+"]),
-          icon: b ? c.OyP : c.gj8,
-          hidden: k
+        children: [D && (0, r.jsx)(ep, {
+          onClick: y,
+          tooltipText: I ? eo.NW.string(eo.t.YqAjX1) : eo.NW.string(eo.t["w4m94+"]),
+          icon: I ? c.OyP : c.gj8,
+          hideWhenInactive: !I
         }), (0, r.jsx)(ep, {
           onClick: e => {
-            e.stopPropagation(), D(!0), g(e, !0, en.A5.THREE_DOT)
+            e.stopPropagation(), x(!0), g(e, !0, en.A5.THREE_DOT)
           },
           tooltipText: eo.NW.string(eo.t["+1H47u"]),
           icon: c.xhG,
-          hidden: !(N || x)
+          hideWhenInactive: !v
         })]
       })]
     })]

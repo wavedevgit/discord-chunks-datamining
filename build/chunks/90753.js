@@ -1,6 +1,6 @@
 /** Chunk was on 12416 **/
 n.d(t, {
-  Z: () => b
+  Z: () => v
 }), n(653041);
 var r = n(192379),
   i = n(846519),
@@ -15,9 +15,9 @@ var r = n(192379),
   m = n(262433),
   p = n(400321),
   h = n(813900);
-let v = 1e3 / 60;
+let b = 1e3 / 60;
 
-function b(e, t, n, b) {
+function v(e, t, n, v) {
   let g = (0, o.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
     y = (0, o.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
     E = (0, o.dQu)(l.Z.unsafe_rawColors.WHITE_500).hex(),
@@ -43,8 +43,8 @@ function b(e, t, n, b) {
         let h = f.getContext("2d");
         if (null == h) return;
         let {
-          width: v,
-          height: b
+          width: b,
+          height: v
         } = f.getBoundingClientRect(), g = [];
         n.forEach(e => {
           if (null == s.Z.getVoiceStateForChannel(o, e.userId)) {
@@ -92,8 +92,8 @@ function b(e, t, n, b) {
           }({
             drawable: e,
             context: h,
-            canvasWidth: v,
-            canvasHeight: b,
+            canvasWidth: b,
+            canvasHeight: v,
             fallbackColor: r,
             outlineColorDark: a,
             outlineColorLight: u,
@@ -110,9 +110,9 @@ function b(e, t, n, b) {
         streamerId: t,
         outlineColorDark: y,
         outlineColorLight: E,
-        channelId: b
+        channelId: v
       })
-    }, [e, b, g, y, E]);
+    }, [e, v, g, y, E]);
   r.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;
@@ -129,7 +129,7 @@ function b(e, t, n, b) {
     let t = u.Z.getDrawables(n),
       r = m.U.getState().particles,
       i = t.length > 0 || Object.keys(r).length > 0;
-    i && null == S.current._ref && (null == S.current._ref ? (j(n), S.current.start(v, () => j(n))) : i || null == S.current._ref || (S.current.stop(), (0, f.UN)(e)))
+    i && null == S.current._ref && (null == S.current._ref ? (j(n), S.current.start(b, () => j(n))) : i || null == S.current._ref || (S.current.stop(), (0, f.UN)(e)))
   }, [e, j, n]);
   r.useEffect(() => {
     let e = S.current;

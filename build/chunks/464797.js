@@ -7,8 +7,8 @@ var n = r(200651),
   o = r(192379),
   c = r(512722),
   l = r.n(c),
-  u = r(442837),
-  i = r(240864);
+  i = r(442837),
+  u = r(240864);
 let a = o.createContext(void 0);
 
 function s() {
@@ -35,7 +35,7 @@ function f(e) {
     }
     return o
   }(e, ["children", "guildProductListingId"]);
-  let c = (0, u.e7)([i.Z], () => i.Z.getGuildProduct(r));
+  let c = (0, i.e7)([u.Z], () => u.Z.getGuildProduct(r));
   return l()(null != c, "guildProductListing cannot be null"), (0, n.jsx)(a.Provider, {
     value: function(e) {
       for (var t = 1; t < arguments.length; t++) {

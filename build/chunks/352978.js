@@ -22,13 +22,13 @@ let m = l.memo(function(e) {
     fit: m = "contain",
     mirror: p = !1,
     paused: h = !1,
-    streamPreviewURL: v,
-    videoSpinnerContext: b,
+    streamPreviewURL: b,
+    videoSpinnerContext: v,
     userId: g
   } = e, [y, E] = l.useState(!0), [O] = l.useState(() => new c.o("VideoStream"));
   l.useEffect(() => {
-    h || (y ? O.onSpinnerStarted() : null != t && O.trackSpinnerDuration(b, g, t))
-  }, [y, h, t, O, b, g]);
+    h || (y ? O.onSpinnerStarted() : null != t && O.trackSpinnerDuration(v, g, t))
+  }, [y, h, t, O, v, g]);
   let S = l.useCallback(() => {
     E(!1)
   }, []);
@@ -47,8 +47,8 @@ let m = l.memo(function(e) {
         [d.loading]: y
       }),
       children: y && (0, i.jsxs)(l.Fragment, {
-        children: [null != v ? (0, i.jsx)("img", {
-          src: v,
+        children: [null != b ? (0, i.jsx)("img", {
+          src: b,
           alt: "",
           className: d.previewImage
         }) : (0, i.jsx)("div", {

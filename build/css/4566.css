@@ -1,6 +1,6 @@
 /**
   Module ID: 4566
-  Original File Name: 3822f9a19d154cdb
+  Original File Name: 71b44e143a04e353
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -2013,16 +2013,13 @@ strong {
     width: 32px;
     height: 32px;
     pointer-events: all;
+    margin-left: var(--spacing-8);
     background: var(--redesign-button-overlay-alpha-background);
     color: var(--redesign-button-overlay-alpha-text)
 }
 
 .overlayButton__2f4f7:hover {
     background-color: var(--opacity-black-68)
-}
-
-.overlayButton__2f4f7.idle__2f4f7 {
-    display: none
 }
 
 .overlayButtonInner__2f4f7 {
@@ -2032,8 +2029,14 @@ strong {
 }
 
 .overlayButtonContainer__2f4f7 {
-    gap: var(--spacing-8);
     display: flex
+}
+
+.overlayContainer__2f4f7:not(:hover):not(:focus-within) .overlayButton__2f4f7.hideWhenInactive__2f4f7 {
+    padding: 0;
+    margin-left: 0;
+    width: 0;
+    border: none
 }
 
 .titleIcon__2f4f7 {
@@ -15418,4 +15421,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=3822f9a19d154cdb.css.map*/
+/*# sourceMappingURL=71b44e143a04e353.css.map*/

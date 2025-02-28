@@ -45,9 +45,9 @@ let _ = (0, g.Z)(e => {
           clientId: i,
           location: o
         } = r;
-        (null == i || i === n) && (a.lock(), l.Z.unsubscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE", A), null != location ? e(o) : t(new f.Z({
+        (null == i || i === n) && (null != location ? e(o) : t(new f.Z({
           errorCode: b.lTL.OAUTH2_ERROR
-        }, "User cancelled authorization")))
+        }, "User cancelled authorization")), l.Z.unsubscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE", A), a.lock())
       },
       x = c.default.isOverlayOOPEnabledForPid(null != P ? P : (0, h.getPID)());
     if (a.context === b.IlC.OVERLAY && !x) {

@@ -7,8 +7,8 @@ r(192379);
 var o = r(120356),
   c = r.n(o),
   l = r(481060),
-  u = r(809086),
-  i = r(932016);
+  i = r(809086),
+  u = r(932016);
 
 function a(e) {
   let {
@@ -16,12 +16,12 @@ function a(e) {
     onClose: r
   } = e;
   return (0, n.jsx)(l.P3F, {
-    className: c()(i.closeButtonContainer, t),
+    className: c()(u.closeButtonContainer, t),
     onClick: r,
     children: (0, n.jsx)(l.Dio, {
       size: "xs",
       color: "currentColor",
-      className: i.closeButtonIcon
+      className: u.closeButtonIcon
     })
   })
 }
@@ -33,15 +33,15 @@ function s(e) {
     className: o
   } = e;
   return (0, n.jsxs)(l.xBx, {
-    className: c()(i.header, o),
+    className: c()(u.header, o),
     separator: !1,
-    children: [(0, n.jsx)(u.Z, {
-      className: i.headerImage,
+    children: [(0, n.jsx)(i.Z, {
+      className: u.headerImage,
       listing: t,
       imageSize: 500,
       alt: ""
     }), (0, n.jsx)(a, {
-      className: i.closeButton,
+      className: u.closeButton,
       onClose: r
     })]
   })

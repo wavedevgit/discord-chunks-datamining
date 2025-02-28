@@ -1,6 +1,6 @@
 /** Chunk was on 12416 **/
 n.d(t, {
-  Z: () => b
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -15,24 +15,24 @@ var r = n(200651),
   m = n(716600),
   p = n(918559),
   h = n(981631);
-let v = (e, t) => {
+let b = (e, t) => {
   o.Z.wait(() => {
     (0, a.Cz)(e, t)
   })
 };
 
-function b(e) {
+function v(e) {
   let t, {
       embedId: n,
       className: o,
       style: a
     } = e,
-    b = (0, l.e7)([s.Z], () => s.Z.getWindow(h.KJ3.CHANNEL_CALL_POPOUT)),
+    v = (0, l.e7)([s.Z], () => s.Z.getWindow(h.KJ3.CHANNEL_CALL_POPOUT)),
     g = (0, m.Z)(),
     y = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
   if (null == g || (0, f.Z)((0, d.pY)(g.location)) || y !== p.Ez.PANEL) {
     var E;
-    t = null !== (E = null == b ? void 0 : b.window) && void 0 !== E ? E : window
+    t = null !== (E = null == v ? void 0 : v.window) && void 0 !== E ? E : window
   } else t = window;
   let O = i.useRef(null),
     S = i.useMemo(() => {
@@ -40,7 +40,7 @@ function b(e) {
       return () => {
         null == e && (e = t.requestAnimationFrame(() => {
           var t, r;
-          v(n, null !== (r = null === (t = O.current) || void 0 === t ? void 0 : t.getBoundingClientRect()) && void 0 !== r ? r : null), e = null
+          b(n, null !== (r = null === (t = O.current) || void 0 === t ? void 0 : t.getBoundingClientRect()) && void 0 !== r ? r : null), e = null
         }))
       }
     }, [n, t]);
@@ -54,7 +54,7 @@ function b(e) {
     S();
     let r = new t.ResizeObserver(S);
     return r.observe(e), () => {
-      r.disconnect(), v(n, null)
+      r.disconnect(), b(n, null)
     }
   }, [n, S]), (0, r.jsx)("div", {
     ref: O,

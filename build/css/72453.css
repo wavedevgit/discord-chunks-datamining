@@ -1,6 +1,6 @@
 /**
   Module ID: 72453
-  Original File Name: f47bc36b6ebf57ef
+  Original File Name: 950df061839c76e1
 **/
 .image__04666 {
     width: 100%;
@@ -1948,7 +1948,7 @@ div.clanTagBadgeContainer__07f91 {
     color: var(--interactive-hover)
 }
 
-.moreClickable__07f91 {
+.optionsButton__07f91 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1959,8 +1959,12 @@ div.clanTagBadgeContainer__07f91 {
     flex-shrink: 0
 }
 
-.moreActive__07f91,.moreClickable__07f91:hover {
+.optionsActive__07f91,.optionsButton__07f91:hover {
     background: var(--bg-overlay-active,var(--background-modifier-active))
+}
+
+.voiceUser__07f91:not(:hover):not(:focus-within) .optionsButton__07f91:not(.optionsActive__07f91) {
+    width: 0
 }
 
 span.clanTag__07f91 {
@@ -14927,4 +14931,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=f47bc36b6ebf57ef.css.map*/
+/*# sourceMappingURL=950df061839c76e1.css.map*/

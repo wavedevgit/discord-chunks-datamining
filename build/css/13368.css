@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 32dcca42bf148229
+  Original File Name: 423283f23b47a4d7
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -1178,16 +1178,13 @@
     width: 32px;
     height: 32px;
     pointer-events: all;
+    margin-left: var(--spacing-8);
     background: var(--redesign-button-overlay-alpha-background);
     color: var(--redesign-button-overlay-alpha-text)
 }
 
 .overlayButton__2f4f7:hover {
     background-color: var(--opacity-black-68)
-}
-
-.overlayButton__2f4f7.idle__2f4f7 {
-    display: none
 }
 
 .overlayButtonInner__2f4f7 {
@@ -1197,8 +1194,14 @@
 }
 
 .overlayButtonContainer__2f4f7 {
-    gap: var(--spacing-8);
     display: flex
+}
+
+.overlayContainer__2f4f7:not(:hover):not(:focus-within) .overlayButton__2f4f7.hideWhenInactive__2f4f7 {
+    padding: 0;
+    margin-left: 0;
+    width: 0;
+    border: none
 }
 
 .titleIcon__2f4f7 {
@@ -3453,7 +3456,7 @@ div.clanTagBadgeContainer__07f91 {
     color: var(--interactive-hover)
 }
 
-.moreClickable__07f91 {
+.optionsButton__07f91 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3464,8 +3467,12 @@ div.clanTagBadgeContainer__07f91 {
     flex-shrink: 0
 }
 
-.moreActive__07f91,.moreClickable__07f91:hover {
+.optionsActive__07f91,.optionsButton__07f91:hover {
     background: var(--bg-overlay-active,var(--background-modifier-active))
+}
+
+.voiceUser__07f91:not(:hover):not(:focus-within) .optionsButton__07f91:not(.optionsActive__07f91) {
+    width: 0
 }
 
 span.clanTag__07f91 {
@@ -3667,4 +3674,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     pointer-events: auto
 }
 
-/*# sourceMappingURL=32dcca42bf148229.css.map*/
+/*# sourceMappingURL=423283f23b47a4d7.css.map*/

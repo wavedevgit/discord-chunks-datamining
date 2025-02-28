@@ -2,9 +2,9 @@
 n.d(t, {
   AX: () => c,
   BR: () => d,
-  Bo: () => v,
+  Bo: () => b,
   Df: () => f,
-  LT: () => b,
+  LT: () => v,
   ZZ: () => m,
   cV: () => u,
   fW: () => h,
@@ -93,14 +93,14 @@ function h(e, t) {
   })
 }
 
-function v(e) {
+function b(e) {
   l.Z.dispatch({
     type: "SHARED_CANVAS_SET_DRAW_MODE",
     drawMode: e
   })
 }
 
-function b() {
+function v() {
   l.Z.dispatch({
     type: "TOGGLE_OVERLAY_CANVAS"
   })
