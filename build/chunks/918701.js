@@ -245,15 +245,21 @@ function J(e) {
 }
 
 function $(e) {
-  return {
+  return e.type === c.w.VIRTUAL_CURRENCY ? {
+    skuId: e.sku_id,
+    type: e.type,
+    name: e.name,
+    nameWithArticle: e.name_with_article,
+    collectibleProduct: e.collectible_product,
+    orbQuantity: e.orb_quantity
+  } : {
     skuId: e.sku_id,
     type: e.type,
     name: e.name,
     nameWithArticle: e.name_with_article,
     asset: e.asset,
     assetVideo: e.asset_video,
-    collectibleProduct: e.collectible_product,
-    orbQuantity: e.orb_quantity
+    collectibleProduct: e.collectible_product
   }
 }
 

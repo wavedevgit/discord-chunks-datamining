@@ -1,7 +1,7 @@
 /** Chunk was on 48923 **/
 n.d(t, {
-  P: () => B,
-  Z: () => R
+  P: () => R,
+  Z: () => B
 }), n(47120);
 var r = n(200651),
   o = n(192379),
@@ -74,22 +74,22 @@ function A(e) {
   }), null
 }
 
-function B(e) {
+function R(e) {
   var t, n;
   let {
     quest: s
   } = e, f = (0, b.T)({
     quest: s,
     location: S.dr.QUESTS_BAR
-  }), B = (0, h.Zy)({
+  }), R = (0, h.Zy)({
     location: S.dr.QUESTS_BAR
-  }), R = (0, y.qN)({
+  }), B = (0, y.qN)({
     quest: s,
     location: S.dr.QUESTS_BAR
   }), k = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, l.e7)([p.Z], () => p.Z.hasLayers()), D = o.useRef(null), W = o.useMemo(() => (0, x.q8)(s), [s]), I = (null === (t = s.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null, M = (0, d.Z)(I), L = (null === (n = s.userStatus) || void 0 === n ? void 0 : n.completedAt) != null, Z = (0, d.Z)(L), {
     hasError: V,
     isLoading: Q
-  } = (0, v.d7)(), U = o.useContext(w.T) || B && R && !Q, H = o.useRef(U), z = (0, O.B)(s, U && !V), F = o.useRef(-1), X = o.useRef(!1), [K, Y] = o.useState(!1), [G, J] = o.useState(!1), [$, ee] = o.useState(!0), [et, en] = o.useState(!0), [er, eo] = o.useState(z.preEnrollmentExpandedHeight), es = o.useRef(null), ea = o.useCallback(e => {
+  } = (0, v.d7)(), U = o.useContext(w.T) || R && B && !Q, H = o.useRef(U), z = (0, O.B)(s, U && !V), F = o.useRef(-1), X = o.useRef(!1), [K, Y] = o.useState(!1), [G, J] = o.useState(!1), [$, ee] = o.useState(!0), [et, en] = o.useState(!0), [er, eo] = o.useState(z.preEnrollmentExpandedHeight), es = o.useRef(null), ea = o.useCallback(e => {
     ee(!1), J(e)
   }, []), ei = o.useCallback(() => {
     var e, t;
@@ -198,7 +198,7 @@ function B(e) {
         reason: "asset_loading_error",
         impression_id: null === (e = D.current) || void 0 === e ? void 0 : e.getId()
       })
-    }), B || (0, m.dA)({
+    }), R || (0, m.dA)({
       questId: s.id,
       event: P.rMx.QUEST_CONTENT_RENDERING_FAILURE,
       properties: T(E({}, (0, m.mH)(g.jn.QUEST_BAR)), {
@@ -206,7 +206,7 @@ function B(e) {
         impression_id: null === (t = D.current) || void 0 === t ? void 0 : t.getId()
       })
     })
-  }, [V, B, s.id]), B && (U || !et || Q) && !V) ? (0, r.jsx)(j.A, {
+  }, [V, R, s.id]), R && (U || !et || Q) && !V) ? (0, r.jsx)(j.A, {
     questOrQuests: s,
     questContent: z.trackingCtx.content,
     overrideVisibility: !q && U,
@@ -263,14 +263,14 @@ function B(e) {
         })]
       })
     }
-  }) : (V ? f.log("Not rendered due to asset error") : B || f.log("Not rendered due to ineligibility"), null)
+  }) : (V ? f.log("Not rendered due to asset error") : R || f.log("Not rendered due to ineligibility"), null)
 }
-let R = 12633 == n.j ? function() {
+let B = 12633 == n.j ? function() {
   let e = (0, y.DH)();
   return null == e ? null : (0, r.jsx)(v.p, {
     source: S.dr.QUESTS_BAR,
     questId: e.id,
-    children: (0, r.jsx)(B, {
+    children: (0, r.jsx)(R, {
       quest: e
     })
   }, e.id)

@@ -61,9 +61,9 @@ function O(e) {
     onReceiveErrorHints: P,
     contentPosition: N,
     rowIndex: E
-  } = e, T = (0, d.Q3)("QuestTileCta"), A = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), B = (0, x.g2)({
+  } = e, T = (0, d.Q3)("QuestTileCta"), A = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), R = (0, x.g2)({
     useReducedMotion: A
-  }), R = (0, u.O5)(), k = (0, p._s)({
+  }), B = (0, u.O5)(), k = (0, p._s)({
     quest: w
   }), q = (0, p.z)(w), D = (0, p.B6)(w.config.expiresAt, {
     month: "numeric",
@@ -95,7 +95,7 @@ function O(e) {
   } = (0, p.GI)({
     questId: w.id,
     beforeRequest: () => {
-      B.startAnimation(), R({
+      R.startAnimation(), B({
         questId: w.id,
         questContent: S,
         questContentCTA: u.jZ.DEFIBRILLATOR,
@@ -104,7 +104,7 @@ function O(e) {
       })
     },
     afterRequest: e => {
-      B.stopAnimation(), P(e)
+      R.stopAnimation(), P(e)
     }
   }), ei = (null === (O = w.userStatus) || void 0 === O ? void 0 : O.claimedAt) != null, el = null;
   return (V && Z ? el = (0, r.jsx)(l.zxk, {
@@ -185,7 +185,7 @@ function O(e) {
     className: y.button,
     children: (0, r.jsxs)("div", {
       className: y.ctaInner,
-      children: [B.render(), v.NW.string(v.t.nPThNT)]
+      children: [R.render(), v.NW.string(v.t.nPThNT)]
     })
   }) : z ? (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,

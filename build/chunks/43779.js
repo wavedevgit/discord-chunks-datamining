@@ -33,10 +33,10 @@ function w(e) {
     isHovering: E,
     contentPosition: T,
     rowIndex: A,
-    onReceiveErrorHints: B
-  } = e, R = (0, m.j)({
+    onReceiveErrorHints: R
+  } = e, B = (0, m.j)({
     location: v.dr.QUESTS_BAR_MOBILE
-  }), k = o.useMemo(() => f.r.build(P.config), [P.config]), q = k.defaultReward.messages.name, D = k.defaultReward.messages.nameWithArticle, W = R ? q : D, I = (null === (t = P.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null, {
+  }), k = o.useMemo(() => f.r.build(P.config), [P.config]), q = k.defaultReward.messages.name, D = k.defaultReward.messages.nameWithArticle, W = B ? q : D, I = (null === (t = P.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null, {
     ref: M,
     scrollHeight: L
   } = (0, d.Z)(), Z = 104 !== L, {
@@ -152,10 +152,10 @@ function w(e) {
           variant: "text-md/semibold",
           color: "header-primary",
           className: a()(C.header, {
-            [C.headerWithoutMargin]: R
+            [C.headerWithoutMargin]: B
           }),
           children: K
-        }), R && (0, r.jsx)(b.Z, {
+        }), B && (0, r.jsx)(b.Z, {
           quest: P,
           textColor: "text-muted"
         }), Y]
@@ -170,7 +170,7 @@ function w(e) {
       location: N,
       contentPosition: T,
       rowIndex: A,
-      onReceiveErrorHints: B
+      onReceiveErrorHints: R
     })]
   })
 }
