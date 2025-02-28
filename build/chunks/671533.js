@@ -4,15 +4,15 @@ n.d(t, {
 }), n(411104);
 var r, a = n(200651);
 n(192379);
-var i = n(120356),
-  l = n.n(i),
+var l = n(120356),
+  i = n.n(l),
   o = n(325767),
   s = n(347304),
   c = ((r = {}).LEFT = "LEFT", r.RIGHT = "RIGHT", r.UP = "UP", r.DOWN = "DOWN", r.UP_LEFT = "UP_LEFT", r.DOWN_RIGHT = "DOWN_RIGHT", r);
 let d = e => {
   var t, n, {
       width: r = 24,
-      height: i = 24,
+      height: l = 24,
       color: c = "currentColor",
       direction: d,
       foreground: u,
@@ -24,13 +24,13 @@ let d = e => {
       var n, r, a = function(e, t) {
         if (null == e) return {};
         var n, r, a = {},
-          i = Object.keys(e);
-        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
         return a
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
       }
       return a
     }(e, ["width", "height", "color", "direction", "foreground", "className", "title"]);
@@ -53,8 +53,8 @@ let d = e => {
     return e
   }({}, (0, o.Z)(x)), n = n = {
     width: r,
-    height: i,
-    className: l()(m, function(e) {
+    height: l,
+    className: i()(m, function(e) {
       switch (e) {
         case "LEFT":
           return s.left;

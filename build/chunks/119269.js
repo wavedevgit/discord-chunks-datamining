@@ -4,9 +4,9 @@ n.d(t, {
   ZP: () => _
 });
 var r, a = n(200651),
-  i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  l = n(192379),
+  i = n(120356),
+  o = n.n(i),
   s = n(442837),
   c = n(481060),
   d = n(607070),
@@ -20,7 +20,7 @@ let b = e => {
     let {
       avatarDecoAssetId: t,
       avatarDecoAssetDescription: n
-    } = e, r = i.useMemo(() => (0, u.Z)(t, c.EFr.SIZE_120, !1), [t]);
+    } = e, r = l.useMemo(() => (0, u.Z)(t, c.EFr.SIZE_120, !1), [t]);
     return (0, a.jsx)("div", {
       className: f.avatarDecoContainer,
       children: (0, a.jsx)("div", {
@@ -38,8 +38,8 @@ let b = e => {
       showAnimations: t = !0,
       iconClassName: n,
       staticPercentage: r,
-      innerCircleClassName: i,
-      progressCircleStrokeSize: l,
+      innerCircleClassName: l,
+      progressCircleStrokeSize: i,
       backgroundCircleSize: c,
       percentage: u,
       initialPercentage: p,
@@ -50,16 +50,16 @@ let b = e => {
       customAnimationClassName: y,
       circleColor: C,
       circleStroke: N
-    } = e, T = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), O = t && !T;
+    } = e, O = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), T = t && !O;
     return (0, a.jsx)("div", {
       className: o()(f.progressCircle, n),
       children: (0, a.jsx)(x.Z, {
         animationClassName: o()(f.activeProgressCircle, {
-          [f.activeProgressCircleAnimation]: O,
-          [null != y ? y : ""]: O
+          [f.activeProgressCircleAnimation]: T,
+          [null != y ? y : ""]: T
         }),
         progressCircleStroke: N,
-        progressCircleStrokeSize: l,
+        progressCircleStrokeSize: i,
         percentage: null != r ? r : u,
         initialPercentage: null != r ? r : p,
         progressCircleVariation: _,
@@ -67,8 +67,8 @@ let b = e => {
           switch (_) {
             case 0:
               return (0, a.jsx)(m.Z, {
-                className: O ? f.nitroGemAnimation : void 0,
-                backgroundColor: o()(f.gemBackgroundFill, i),
+                className: T ? f.nitroGemAnimation : void 0,
+                backgroundColor: o()(f.gemBackgroundFill, l),
                 backgroundCircleSize: c
               });
             case 1:

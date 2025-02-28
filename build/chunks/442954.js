@@ -4,8 +4,8 @@ n.d(t, {
 }), n(230036), n(47120);
 var r = n(200651),
   a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   o = n(481060),
   s = n(138464),
   c = n(585483),
@@ -66,7 +66,7 @@ function p() {
     })).sort((e, t) => e.label.localeCompare(t.label)), []),
     [t, n] = a.useState(e[0].value);
   return (0, r.jsx)(o.zJl, {
-    className: l()(m.panel),
+    className: i()(m.panel),
     children: (0, r.jsxs)("div", {
       className: h.panelInner,
       children: [(0, r.jsxs)("section", {

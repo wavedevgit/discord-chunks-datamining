@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(566702);
 var r = n(200651),
   a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   o = n(392711),
   s = n(913527),
   c = n.n(s),
@@ -46,7 +46,7 @@ let N = [{
   }
 }];
 
-function T(e) {
+function O(e) {
   let {
     actionLog: t
   } = e, n = a.useMemo(() => t.traces.map(e => ({
@@ -60,7 +60,7 @@ function T(e) {
     })
   })
 }
-let O = [{
+let T = [{
   id: "action",
   name: "Action",
   render(e) {
@@ -97,7 +97,7 @@ let O = [{
     let {
       actionLog: t
     } = e;
-    return (0, r.jsx)(T, {
+    return (0, r.jsx)(O, {
       actionLog: t
     })
   }
@@ -107,7 +107,7 @@ function S(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, i = a.useMemo(() => t.error ? [...O, {
+  } = e, l = a.useMemo(() => t.error ? [...T, {
     id: "error",
     name: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(x.Z, {
@@ -120,7 +120,7 @@ function S(e) {
       } = e;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: l()(j.errorToolbar, y.toolbar),
+          className: i()(j.errorToolbar, y.toolbar),
           children: (0, r.jsx)("div", {
             className: y.toolbarGroup,
             children: (0, r.jsx)(d.zxk, {
@@ -138,18 +138,18 @@ function S(e) {
         })]
       })
     }
-  }] : O, [t]), {
+  }] : T, [t]), {
     TabBar: o,
     renderSelectedTab: s
   } = (0, v.Z)({
-    tabs: i
-  }, [i]);
+    tabs: l
+  }, [l]);
   return (0, r.jsxs)(_.Z, {
     className: j.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, r.jsx)(o, {}), (0, r.jsxs)(m.ZP, {
-      className: l()(y.headerBar, j.subPanelHeaderBar),
+      className: i()(y.headerBar, j.subPanelHeaderBar),
       children: [(0, r.jsx)(m.ZP.Icon, {
         icon: d.xVZ,
         tooltip: t.name
@@ -188,7 +188,7 @@ let E = [{
 function k() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
-    i = function(e) {
+    l = function(e) {
       let [t, n] = a.useState(e.logs), r = a.useCallback(() => {
         (0, o.debounce)(() => {
           n([...e.logs])
@@ -198,10 +198,10 @@ function k() {
         e.off("log", r)
       }), [e, r]), t
     }(u.Z.actionLogger),
-    s = a.useMemo(() => i.map(e => ({
+    s = a.useMemo(() => l.map(e => ({
       key: e.id.toString(),
       actionLog: e
-    })), [i]),
+    })), [l]),
     [c, m] = a.useState(s),
     [x, f] = a.useState(s),
     [p, b] = a.useState(!1),
@@ -223,7 +223,7 @@ function k() {
     }, 300, {
       leading: !0
     }), []),
-    T = a.useCallback(e => {
+    O = a.useCallback(e => {
       m(s), b(e)
     }, [s]);
   a.useEffect(() => {
@@ -235,11 +235,11 @@ function k() {
   }, [p, t, N, s, c]), a.useEffect(() => {
     C.current = null
   }, []);
-  let O = t.trim().length > 0,
-    k = a.useMemo(() => O ? x : p ? c : s, [s, x, O, p, c]);
+  let T = t.trim().length > 0,
+    k = a.useMemo(() => T ? x : p ? c : s, [s, x, T, p, c]);
   return (0, r.jsxs)("div", {
     ref: e,
-    className: l()(y.panel, j.panel),
+    className: i()(y.panel, j.panel),
     children: [(0, r.jsxs)("div", {
       className: j.toolbar,
       children: [(0, r.jsx)("div", {
@@ -247,7 +247,7 @@ function k() {
         className: j.pausedEvents,
         children: (0, r.jsx)(d.rsf, {
           checked: !p,
-          onChange: e => T(!e)
+          onChange: e => O(!e)
         })
       }), (0, r.jsx)(d.E1j, {
         className: j.searchBar,

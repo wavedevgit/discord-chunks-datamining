@@ -4,14 +4,14 @@ n.d(t, {
 }), n(47120);
 var r = n(192379),
   a = n(442837),
-  i = n(594174),
-  l = n(823379);
+  l = n(594174),
+  i = n(823379);
 let o = [];
 
 function s(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 3,
-    n = (0, a.Wu)([i.default], () => {
-      let t = e.participants.map(e => i.default.getUser(e)).filter(l.lm),
+    n = (0, a.Wu)([l.default], () => {
+      let t = e.participants.map(e => l.default.getUser(e)).filter(i.lm),
         n = t.find(t => t.id === e.author_id),
         r = t.filter(t => t.id !== e.author_id);
       return null == n ? o : [...r, n]

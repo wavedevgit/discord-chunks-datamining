@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(230036);
 var r = n(200651),
   a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   o = n(544891),
   s = n(481060),
   c = n(255078),
@@ -49,11 +49,11 @@ let p = async () => (await o.tn.get({
 }];
 
 function _() {
-  let [e, t] = a.useState("511651880837840896"), [n, i] = a.useState([]), [c, h] = a.useState(!1), _ = async () => {
+  let [e, t] = a.useState("511651880837840896"), [n, l] = a.useState([]), [c, h] = a.useState(!1), _ = async () => {
     try {
       h(!0);
       let e = await p();
-      i(e)
+      l(e)
     } finally {
       h(!1)
     }
@@ -78,7 +78,7 @@ function _() {
       }), await _()
     };
   return (0, r.jsx)(s.zJl, {
-    className: l()(x.panel),
+    className: i()(x.panel),
     children: (0, r.jsxs)("div", {
       className: f.panelInner,
       children: [(0, r.jsxs)("div", {
@@ -107,7 +107,7 @@ function _() {
           })
         })]
       }), (0, r.jsx)("section", {
-        className: l()([f.section, f.buttons]),
+        className: i()([f.section, f.buttons]),
         children: null == g && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             variant: "text-md/normal",
@@ -131,7 +131,7 @@ function _() {
         variant: "text-lg/bold",
         children: "Bulk action"
       }), (0, r.jsx)("section", {
-        className: l()([f.section, f.buttons]),
+        className: i()([f.section, f.buttons]),
         children: (0, r.jsx)(s.zxk, {
           size: s.zxk.Sizes.SMALL,
           onClick: y,

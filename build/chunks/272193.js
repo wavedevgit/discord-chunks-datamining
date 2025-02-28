@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var a = n(120356),
-  i = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  i = n(442837),
   o = n(481060),
   s = n(570140),
   c = n(441623),
@@ -15,7 +15,7 @@ var a = n(120356),
   m = n(710662);
 
 function h() {
-  let e = (0, l.e7)([c.Z], () => c.Z.getDevToolTotalFriendAnniversaries()),
+  let e = (0, i.e7)([c.Z], () => c.Z.getDevToolTotalFriendAnniversaries()),
     t = e => {
       s.Z.dispatch({
         type: "DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT",
@@ -23,7 +23,7 @@ function h() {
       })
     };
   return (0, r.jsx)(o.zJl, {
-    className: i()(m.panel),
+    className: l()(m.panel),
     children: (0, r.jsxs)("div", {
       className: u.panelInner,
       children: [(0, r.jsx)(o.Text, {

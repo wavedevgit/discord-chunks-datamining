@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   o = n(524437),
   s = n(481060),
   c = n(695346),
@@ -31,7 +31,7 @@ function x() {
     t = c.JG.useSetting();
   return (0, r.jsxs)("div", {
     ref: e,
-    className: l()(u.panel, m.panel),
+    className: i()(u.panel, m.panel),
     children: [(0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       children: "Receive DMs In Game"

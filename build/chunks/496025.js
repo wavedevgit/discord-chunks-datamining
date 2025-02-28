@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(301563);
 var r = n(200651),
   a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   o = n(602715),
   s = n(442837),
   c = n(481060),
@@ -26,9 +26,9 @@ var r = n(200651),
 function C() {
   var e;
   let t = (0, s.Wu)([p.Z], () => p.Z.getSortedChannels()[1]),
-    [n, i] = a.useState(t.length > 0 ? t[0].channelId : void 0),
+    [n, l] = a.useState(t.length > 0 ? t[0].channelId : void 0),
     {
-      selectedChannel: l,
+      selectedChannel: i,
       options: _
     } = (0, s.cj)([h.Z, f.default, x.Z], () => ({
       selectedChannel: h.Z.getChannel(n),
@@ -42,11 +42,11 @@ function C() {
     })),
     g = a.useCallback(() => {
       var e;
-      if (null == l || !l.isPrivate()) return;
-      let t = (0, b.x9)(null !== (e = l.recipientFlags) && void 0 !== e ? e : 0, o.V.DISMISSED_IN_GAME_MESSAGE_NUX);
-      m.Z.updatePrivateChannelRecipientFlags(l.id, t)
-    }, [l]),
-    y = null != l && !!l.isPrivate() && (0, b.yE)(null !== (e = l.recipientFlags) && void 0 !== e ? e : 0, o.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+      if (null == i || !i.isPrivate()) return;
+      let t = (0, b.x9)(null !== (e = i.recipientFlags) && void 0 !== e ? e : 0, o.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+      m.Z.updatePrivateChannelRecipientFlags(i.id, t)
+    }, [i]),
+    y = null != i && !!i.isPrivate() && (0, b.yE)(null !== (e = i.recipientFlags) && void 0 !== e ? e : 0, o.V.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/semibold",
@@ -58,7 +58,7 @@ function C() {
         options: _,
         placeholder: "Select DM",
         value: n,
-        onChange: i,
+        onChange: l,
         renderOptionPrefix: e => {
           if (null == e) return null;
           let t = h.Z.getChannel(e.value);
@@ -93,7 +93,7 @@ function N() {
     }, t)
   });
   return (0, r.jsxs)("div", {
-    className: l()(y.panel, j.panel),
+    className: i()(y.panel, j.panel),
     children: [e, (0, r.jsx)("div", {
       className: j.divider
     }), (0, r.jsx)(C, {})]

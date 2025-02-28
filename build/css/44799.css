@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: daef6ea58902a47d
+  Original File Name: ac716a9f9b0a6f91
 **/
 .container__98cbd {
     width: 220px;
@@ -277,7 +277,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-8);
-    margin-bottom: var(--spacing-16)
+    padding: var(--spacing-16)
 }
 
 .headerContainer__25ea7 {
@@ -332,7 +332,10 @@
 .container__2281b {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-8)
+    gap: var(--spacing-8);
+    padding: var(--spacing-16);
+    padding-top: 0;
+    overflow-y: auto
 }
 
 .container__89463 {
@@ -346,24 +349,29 @@
 }
 
 .contentContainer__89463 {
-    flex: 1
+    flex: 1;
+    overflow: hidden
 }
 
 .powerupsContainer__89463 {
     padding: var(--spacing-24);
-    flex: 1
+    flex: 1;
+    overflow-y: auto
 }
 
 .sidebarContainer__89463 {
     background-color: var(--background-tertiary);
-    padding: var(--spacing-16);
-    width: 375px
+    width: 375px;
+    overflow: hidden
+}
+
+.sidebarContainer__89463,.textContainer__89463 {
+    display: flex;
+    flex-direction: column
 }
 
 .textContainer__89463 {
-    display: flex;
     gap: var(--spacing-16);
-    flex-direction: column;
     margin-bottom: 20px
 }
 
@@ -389,4 +397,4 @@
     z-index: 100
 }
 
-/*# sourceMappingURL=daef6ea58902a47d.css.map*/
+/*# sourceMappingURL=ac716a9f9b0a6f91.css.map*/

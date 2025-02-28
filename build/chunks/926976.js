@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(26686);
 var r = n(200651),
   a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   o = n(392711),
   s = n(913527),
   c = n.n(s),
@@ -24,8 +24,8 @@ var r = n(200651),
   y = n(621060),
   C = n(388032),
   N = n(871133),
-  T = n(710662);
-let O = [{
+  O = n(710662);
+let T = [{
   key: "event",
   cellClassName: N.eventColumn,
   render(e) {
@@ -81,18 +81,18 @@ let k = [{
           event: t,
           properties: n,
           timestamp: a,
-          fingerprint: i
+          fingerprint: l
         },
         onClose: o
-      } = e, s = f.default.getUser(i), d = c()(a);
+      } = e, s = f.default.getUser(l), d = c()(a);
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(h.ZP, {
-          className: l()(T.headerBar, N.subPanelHeaderBar),
+          className: i()(O.headerBar, N.subPanelHeaderBar),
           children: [(0, r.jsx)(h.ZP.Icon, {
             icon: u.IeX,
             tooltip: t
           }), (0, r.jsx)(h.ZP.Title, {
-            wrapperClassName: T.headerTitle,
+            wrapperClassName: O.headerTitle,
             children: t
           }), (0, r.jsx)(h.ZP.Icon, {
             icon: u.k$p,
@@ -116,7 +116,7 @@ let k = [{
           }), (0, r.jsx)(g.Z9, {
             name: "Fingerprint",
             children: (0, r.jsx)("code", {
-              children: i
+              children: l
             })
           })]
         }), (0, r.jsx)(S, {
@@ -166,8 +166,8 @@ let k = [{
 function w() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
-    i = (0, d.e7)([b.Z], () => b.Z.loggedEventsVersion),
-    s = a.useMemo(() => b.Z.loggedEvents, [i]),
+    l = (0, d.e7)([b.Z], () => b.Z.loggedEventsVersion),
+    s = a.useMemo(() => b.Z.loggedEvents, [l]),
     [c, m] = a.useState(Object.keys(I)),
     [h, f] = a.useState(s),
     p = a.useRef(null),
@@ -203,7 +203,7 @@ function w() {
   }, []);
   return (0, r.jsxs)("div", {
     ref: e,
-    className: l()(T.panel, N.panel),
+    className: i()(O.panel, N.panel),
     children: [(0, r.jsxs)("div", {
       className: N.toolbar,
       children: [(0, r.jsx)(u.zxk, {
@@ -226,7 +226,7 @@ function w() {
         children: Object.entries(I).map(e => {
           let [t, n] = e;
           return (0, r.jsx)(u.P3F, {
-            className: l()(N.filter, c.includes(t) && N.activeFilter),
+            className: i()(N.filter, c.includes(t) && N.activeFilter),
             onClick: () => {
               m(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },
@@ -244,7 +244,7 @@ function w() {
         placeholder: "Search by event name"
       })
     }), (0, r.jsx)(j.Z, {
-      columns: O,
+      columns: T,
       data: S,
       selectedRowKey: E,
       onClickRow: e => w(e.key)

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   o = n(481060),
   s = n(931240),
   c = n(836768),
@@ -17,7 +17,7 @@ function h() {
   let e = a.useRef(null);
   return (0, r.jsxs)("div", {
     ref: e,
-    className: l()(m.panel, u.panel),
+    className: i()(m.panel, u.panel),
     children: [(0, r.jsx)(o.zxk, {
       size: o.zxk.Sizes.SMALL,
       onClick: s.LX,

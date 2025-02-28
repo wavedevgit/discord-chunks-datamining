@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(230036);
 var r = n(200651),
   a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   o = n(442837),
   s = n(481060),
   c = n(665149),
@@ -24,16 +24,16 @@ function b(e) {
   let {
     store: t,
     dataGetter: n
-  } = e, [i, l] = a.useState(n(t));
+  } = e, [l, i] = a.useState(n(t));
   return a.useEffect(() => {
-    let e = () => l(n(t));
+    let e = () => i(n(t));
     return e(), t.addChangeListener(e), () => {
       t.removeChangeListener(e)
     }
   }, [t, n]), (0, r.jsx)(s.zJl, {
     className: f.inspectorContainer,
     children: (0, r.jsx)(d.Z, {
-      data: i
+      data: l
     })
   })
 }
@@ -84,7 +84,7 @@ function v(e) {
     initialHeight: n
   } = e, {
     TabBar: a,
-    renderSelectedTab: i
+    renderSelectedTab: l
   } = (0, h.Z)({
     tabs: g
   }, []);
@@ -93,14 +93,14 @@ function v(e) {
     minHeight: 100,
     initialHeight: n,
     children: [(0, r.jsx)(a, {}), (0, r.jsxs)(c.ZP, {
-      className: l()(x.headerBar, f.subPanelHeaderBar),
+      className: i()(x.headerBar, f.subPanelHeaderBar),
       children: [(0, r.jsx)(c.ZP.Icon, {
         icon: s.lO_,
         tooltip: t.getName()
       }), (0, r.jsx)(c.ZP.Title, {
         children: t.getName()
       })]
-    }), i({
+    }), l({
       store: t
     })]
   })
@@ -109,21 +109,21 @@ function v(e) {
 function j() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
-    i = o.yh.getAll(),
-    c = a.useMemo(() => i.map(e => ({
+    l = o.yh.getAll(),
+    c = a.useMemo(() => l.map(e => ({
       key: e._dispatchToken,
       store: e
-    })).sort(p), [i]).filter(e => (function(e, t) {
+    })).sort(p), [l]).filter(e => (function(e, t) {
       let {
         store: n
       } = e;
       return n.getName().toLowerCase().includes(t.toLowerCase())
     })(e, t)),
     [d, u] = a.useState(),
-    h = i.find(e => e._dispatchToken === d);
+    h = l.find(e => e._dispatchToken === d);
   return (0, r.jsxs)("div", {
     ref: e,
-    className: l()(x.panel, f.panel),
+    className: i()(x.panel, f.panel),
     children: [(0, r.jsx)("div", {
       className: f.toolbar,
       children: (0, r.jsx)(s.E1j, {

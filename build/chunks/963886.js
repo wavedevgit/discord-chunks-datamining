@@ -1,12 +1,12 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  E: () => i
+  E: () => l
 });
 var r = n(200651);
 n(192379);
 var a = n(481060);
 
-function i(e) {
+function l(e) {
   (0, a.ZDy)(async () => {
     let {
       default: e

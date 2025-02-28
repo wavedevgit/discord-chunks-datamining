@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var a = n(120356),
-  i = n.n(a),
-  l = n(481060),
+  l = n.n(a),
+  i = n(481060),
   o = n(710662);
 
 function s(e) {
@@ -17,7 +17,7 @@ function s(e) {
     children: n
   } = e;
   return (0, r.jsx)("dl", {
-    className: i()(o.properties, t),
+    className: l()(o.properties, t),
     children: n
   })
 }
@@ -41,10 +41,10 @@ function d(e) {
   let {
     value: t
   } = e;
-  return (0, r.jsx)(l.XZJ, {
+  return (0, r.jsx)(i.XZJ, {
     size: 16,
     value: t,
-    shape: l.XZJ.Shapes.SMALL_BOX,
+    shape: i.XZJ.Shapes.SMALL_BOX,
     displayOnly: !0
   })
 }

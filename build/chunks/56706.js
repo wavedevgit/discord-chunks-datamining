@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   o = n(481060),
   s = n(570140),
   c = n(358820),
@@ -20,7 +20,7 @@ function m() {
     })
   };
   return (0, r.jsx)(o.zJl, {
-    className: l()(d.panel),
+    className: i()(d.panel),
     children: (0, r.jsxs)("div", {
       className: u.panelInner,
       children: [(0, r.jsx)(o.Text, {
