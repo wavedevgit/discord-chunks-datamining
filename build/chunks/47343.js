@@ -27,8 +27,10 @@ let v = () => {
     setNickname: f,
     setDmsAllowed: j,
     setShowActivity: S,
-    setMutedServer: C
-  } = (0, p.XW)(), A = null === (e = o.Z.getProps().invite) || void 0 === e ? void 0 : e.is_nickname_changeable, T = (0, _.m4)({
+    setMutedServer: C,
+    guildId: A,
+    inviteCode: T
+  } = (0, p.XW)(), P = null === (e = o.Z.getProps().invite) || void 0 === e ? void 0 : e.is_nickname_changeable, L = (0, _.m4)({
     location: "InviteSettingsControls"
   });
   return (0, i.jsxs)("div", {
@@ -38,7 +40,10 @@ let v = () => {
     children: [(0, i.jsxs)(s.P3F, {
       className: g.header,
       onClick: () => {
-        n || m.default.track(N.rMx.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED), t(!n)
+        n || m.default.track(N.rMx.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
+          guild_id: A,
+          invite_code: T
+        }), t(!n)
       },
       children: [(0, i.jsx)("div", {
         className: g.headerIconWrapper,
@@ -69,8 +74,8 @@ let v = () => {
     }), (0, i.jsxs)("div", {
       className: r()(g.customizationSection, {
         [g.opened]: n
-      }, A ? null : g.condensed),
-      children: [A && (0, i.jsxs)("div", {
+      }, P ? null : g.condensed),
+      children: [P && (0, i.jsxs)("div", {
         className: g.serverNickname,
         children: [(0, i.jsx)(s.Text, {
           variant: "eyebrow",
@@ -90,7 +95,7 @@ let v = () => {
         title: x.NW.string(x.t.bN4m1N),
         value: E,
         onChange: S
-      }), T && (0, i.jsx)(u.Z, {
+      }), L && (0, i.jsx)(u.Z, {
         title: x.NW.string(x.t["0nZCqK"]),
         value: I,
         onChange: C

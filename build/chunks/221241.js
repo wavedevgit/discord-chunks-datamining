@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
+  L: () => o,
   Z: () => a
 });
 var r = n(818083),
@@ -14,7 +15,7 @@ let o = (0, r.B)({
     coloredIconsEnabled: !1,
     simplifiedSettingsEnabled: !1
   },
-  commonTriggerPoint: i.$P.VOICE_CALL,
+  commonTriggerPoint: i.$P.CONNECTION_OPEN,
   treatments: [{
     id: 1,
     label: "Grouped buttons with green active state",
