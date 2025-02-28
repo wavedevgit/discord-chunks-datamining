@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => j
+  Z: () => A
 }), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -226,7 +226,7 @@ class P extends i.PureComponent {
     }, this._connectedSound.volume = 1
   }
 }
-let j = c.ZP.connectStores([f.Z, E.Z, b.Z, h.Z], () => ({
+let A = c.ZP.connectStores([f.Z, E.Z, b.Z, h.Z], () => ({
   isTryingToConnect: f.Z.isTryingToConnect(),
   connected: f.Z.isConnected(),
   incident: E.Z.getIncident(),

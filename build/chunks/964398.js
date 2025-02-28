@@ -144,7 +144,7 @@ let p = (e, t) => {
       })
     }, []), F = o.useCallback(e => {
       null != w.current && (e.preventDefault(), e.stopPropagation(), null == I || I(h * T + w.current))
-    }, [I, T]), M = o.useMemo(() => (0, r.throttle)(e => {
+    }, [I, T]), L = o.useMemo(() => (0, r.throttle)(e => {
       if (null == S.current) return;
       let i = S.current.getBoundingClientRect(),
         o = {
@@ -170,7 +170,7 @@ let p = (e, t) => {
         }
       }
       R()
-    }, 16), [y, B, R, k, T, n, t]), L = o.useCallback(e => {
+    }, 16), [y, B, R, k, T, n, t]), M = o.useCallback(e => {
       if (!O) return;
       let t = T + (e.deltaY > 0 ? 1 : -1);
       t >= 0 && t < A.length && (null != w.current && (A[t].length > w.current ? k(t, w.current) : R()), P(t))
@@ -193,8 +193,8 @@ let p = (e, t) => {
     }), [A, T, t, g, n, v, N.length, W]);
     return (0, i.jsx)(l.P3F, {
       className: u.chatWheelMouseInput,
-      onMouseMove: M,
-      onWheel: L,
+      onMouseMove: L,
+      onWheel: M,
       onClick: F,
       children: (0, i.jsxs)("div", {
         ref: S,

@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(518738),
   j = n(850020),
   O = n(965376),
-  N = n(159299),
-  E = n(184301),
+  E = n(159299),
+  N = n(184301),
   I = n(347475),
   P = n(199902),
   S = n(271383),
@@ -65,7 +65,7 @@ function z(e) {
   return e
 }
 
-function q(e, t) {
+function Y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -77,7 +77,7 @@ function q(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Y = U.ZP.getEnableHardwareAcceleration(),
+let q = U.ZP.getEnableHardwareAcceleration(),
   K = 44 + B.x,
   X = i.memo(function(e) {
     let {
@@ -88,12 +88,12 @@ let Y = U.ZP.getEnableHardwareAcceleration(),
     } = e, s = (0, p.e7)([w.Z], () => w.Z.isTyping(t.id, o)), u = (0, p.e7)([S.ZP], () => S.ZP.getMember(t.guild_id, o)), g = (0, p.e7)([Z.Z], () => {
       var e;
       return (null == u ? void 0 : u.colorRoleId) != null ? null === (e = Z.Z.getRole(t.guild_id, u.colorRoleId)) || void 0 === e ? void 0 : e.name : void 0
-    }, [t.guild_id, u]), b = (0, p.e7)([R.default], () => R.default.getUser(o)), _ = (0, p.e7)([R.default], () => R.default.getCurrentUser()), C = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), v = (0, p.e7)([T.Z, A.Z], () => C ? A.Z.getStatus() : T.Z.getStatus(o, t.guild_id)), x = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(o)), O = (0, p.e7)([T.Z, A.Z], () => C ? A.Z.getActivities() : T.Z.getActivities(o, t.guild_id)), M = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(o)), k = (0, c.JA)(o), D = (0, p.e7)([N.Z], () => N.Z.canUserViewChannel(t.id, l, o)), U = (null == b ? void 0 : b.id) != null && b.id === a, G = i.useCallback(e => {
+    }, [t.guild_id, u]), b = (0, p.e7)([R.default], () => R.default.getUser(o)), _ = (0, p.e7)([R.default], () => R.default.getCurrentUser()), C = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), v = (0, p.e7)([T.Z, A.Z], () => C ? A.Z.getStatus() : T.Z.getStatus(o, t.guild_id)), x = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(o)), O = (0, p.e7)([T.Z, A.Z], () => C ? A.Z.getActivities() : T.Z.getActivities(o, t.guild_id)), M = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(o)), k = (0, c.JA)(o), D = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, o)), U = (null == b ? void 0 : b.id) != null && b.id === a, G = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("70675")]).then(n.bind(n, 654663));
-        return n => (0, r.jsx)(e, q(z({}, n), {
+        return n => (0, r.jsx)(e, Y(z({}, n), {
           user: b,
           guildId: t.guild_id,
           channel: t
@@ -124,11 +124,11 @@ let Y = U.ZP.getEnableHardwareAcceleration(),
     if (null == b) return null;
     let Q = null == u ? void 0 : u.premiumSince;
     return (0, r.jsx)(h.yRy, {
-      preload: () => (0, E.Z)(b, {
+      preload: () => (0, N.Z)(b, {
         guildId: t.guild_id,
         channelId: t.id
       }),
-      renderPopout: e => (0, r.jsx)(I.Z, q(z({}, e), {
+      renderPopout: e => (0, r.jsx)(I.Z, Y(z({}, e), {
         userId: b.id,
         guildId: t.guild_id,
         channelId: t.id
@@ -142,7 +142,7 @@ let Y = U.ZP.getEnableHardwareAcceleration(),
         } = n;
         return (0, r.jsx)(B.Z, z({
           onContextMenu: G,
-          shouldAnimateStatus: Y,
+          shouldAnimateStatus: q,
           user: b,
           currentUser: _,
           nick: null == u ? void 0 : u.nick,

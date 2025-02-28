@@ -39,21 +39,21 @@ let j = (0, o.Z)(e => {
     width: j,
     onScroll: O
   } = e, {
-    selectedParticipantId: N,
-    largeStream: E,
+    selectedParticipantId: E,
+    largeStream: N,
     chatOpen: I
   } = (0, l.cj)([a.Z], () => ({
     selectedParticipantId: a.Z.getSelectedParticipantId(o.id),
     largeStream: a.Z.getStageStreamSize(o.id),
     chatOpen: a.Z.getChatOpen(o.id)
-  }), [o.id]), P = (0, c.Io)(o.id), S = (0, c.Rk)(o.id, u.pV.AUDIENCE), Z = (0, l.e7)([s.Z], () => null != N ? s.Z.getParticipant(o.id, N) : null), T = (0, c.w8)(o.id, u.pV.SPEAKER), A = T.filter(x), w = null != T.find(e => e.type === u.Ui.STREAM), R = y(j), M = v(j, I), k = {
+  }), [o.id]), P = (0, c.Io)(o.id), S = (0, c.Rk)(o.id, u.pV.AUDIENCE), Z = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(o.id, E) : null), T = (0, c.w8)(o.id, u.pV.SPEAKER), A = T.filter(x), w = null != T.find(e => e.type === u.Ui.STREAM), R = y(j), M = v(j, I), k = {
     [u.pV.SPEAKER]: M,
     [u.pV.AUDIENCE]: R,
     [u.pV.SELECTED]: 1
   }, L = (0, d.Dx)(o.id), [D, W] = (0, d.aP)(o.id, k, L), U = [Math.max(null !== (t = D[0]) && void 0 !== t ? t : 1, 1), Math.max(null !== (n = D[1]) && void 0 !== n ? n : 1, 1), D[2]], {
     speakerTileWidth: B,
     speakerTileHeight: H
-  } = C(j, M), F = E ? j - 32 : Math.min(j - 64, 3 * B + 8), G = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [q, Y] = i.useState(!1);
+  } = C(j, M), F = N ? j - 32 : Math.min(j - 64, 3 * B + 8), G = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [Y, q] = i.useState(!1);
   return (0, r.jsx)(h.Z, {
     sections: U,
     renderSection: e => {
@@ -73,8 +73,8 @@ let j = (0, o.Z)(e => {
         participantCount: S,
         label: b.NW.string(b.t["3foUu7"]),
         className: _.header,
-        onClick: () => Y(!q),
-        collapsed: q,
+        onClick: () => q(!Y),
+        collapsed: Y,
         channel: o
       }, "audience-header-".concat(t)) : null
     },
@@ -107,7 +107,7 @@ let j = (0, o.Z)(e => {
             })
           }, "speakers-".concat(t, "-").concat(n));
         case 2:
-          if (q) return null;
+          if (Y) return null;
           return (0, r.jsx)(p.Z, {
             channel: o,
             participants: l,
@@ -117,7 +117,7 @@ let j = (0, o.Z)(e => {
           return null
       }
     },
-    rowHeight: e => null == W[e][0] ? 0 : 0 === e ? F / g.Q + 8 : 1 === e ? V ? 0 : H : 98 * !q,
+    rowHeight: e => null == W[e][0] ? 0 : 0 === e ? F / g.Q + 8 : 1 === e ? V ? 0 : H : 98 * !Y,
     renderFooter: e => {
       let {
         section: t

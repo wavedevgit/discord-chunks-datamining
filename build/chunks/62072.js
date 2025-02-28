@@ -24,8 +24,8 @@ var r = n(192379),
   x = n(358085),
   j = n(709054),
   O = n(418476),
-  N = n(901461),
-  E = n(432376),
+  E = n(901461),
+  N = n(432376),
   I = n(996861),
   P = n(981631);
 
@@ -56,7 +56,7 @@ let Z = function(e, t, n) {
         r && !k.isSystemDM() && (0, O.Z)(M, L) && (n.preventDefault(), (0, I.Hd)(k, M));
         break;
       case "p":
-        (r || R) && !k.isSystemDM() && !(0, N.Z)(M) && (S(k) || k.isPrivate()) && (n.preventDefault(), (0, I.rY)(k, M, n));
+        (r || R) && !k.isSystemDM() && !(0, E.Z)(M) && (S(k) || k.isPrivate()) && (n.preventDefault(), (0, I.rY)(k, M, n));
         break;
       case "+":
         (r || R) && function(e) {
@@ -64,7 +64,7 @@ let Z = function(e, t, n) {
             n = p.nc.getSetting(),
             {
               disableReactionCreates: r
-            } = (0, E.Z)({
+            } = (0, N.Z)({
               channel: e,
               canChat: t,
               renderReactions: n,

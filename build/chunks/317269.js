@@ -143,6 +143,7 @@ function E(e) {
       premiumType: P,
       type: j.X7u.has(null != I ? I : j.HeQ.UNKNOWN) ? h.C.Types.PREMIUM_PAYMENT_STARTED : null != c ? h.C.Types.PREMIUM_UPDATED : h.C.Types.PREMIUM_ACTIVATED
     }), t, N ? null : (0, l.jsx)(o.zxk, {
+      className: L.button,
       onClick: u,
       children: n
     })]

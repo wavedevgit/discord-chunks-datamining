@@ -1,29 +1,30 @@
-/** Chunk was on 45847 **/
+/** Chunk was on 82081 **/
 n.d(t, {
-  M: () => A,
-  U_: () => L,
-  t4: () => S,
-  tE: () => y
+  M: () => x,
+  U_: () => E,
+  VK: () => N,
+  t4: () => k,
+  tE: () => P
 }), n(47120), n(266796);
 var r = n(200651),
-  l = n(192379),
-  i = n(120356),
-  o = n.n(i),
-  a = n(704215),
-  s = n(780384),
-  c = n(481060),
+  i = n(192379),
+  o = n(120356),
+  a = n.n(o),
+  l = n(704215),
+  c = n(780384),
+  s = n(481060),
   u = n(410030),
-  d = n(605236),
-  E = n(930153),
+  b = n(605236),
+  d = n(930153),
   f = n(822857),
-  h = n(960919),
-  _ = n(622562),
-  C = n(921944),
-  p = n(388032),
-  O = n(175722);
+  m = n(960919),
+  g = n(622562),
+  O = n(921944),
+  _ = n(388032),
+  p = n(175722);
 
-function g() {
-  return (g = Object.assign || function(e) {
+function h() {
+  return (h = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -32,7 +33,7 @@ function g() {
   }).apply(this, arguments)
 }
 
-function T(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +52,7 @@ function T(e) {
   return e
 }
 
-function I(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,58 +64,60 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = () => (0, E.Lk)(document.body.style.getPropertyValue("--custom-app-panels-height"), 56) + 8,
-  N = {
-    discover: a.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK,
-    shop: a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK
+let k = () => (0, d.Lk)(document.body.style.getPropertyValue("--custom-app-panels-height"), 56) + 8,
+  v = {
+    discover: l.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK,
+    shop: l.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK
   },
-  A = e => {
+  x = e => {
     let {
       onboardingCoachmarkType: t,
       prevCoachmarksDismissed: n = !0,
       onShowCoachmarkHandler: r
-    } = e, i = (0, d.wE)(a.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL), {
-      enabled: o
+    } = e, o = (0, b.wE)(l.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL), {
+      enabled: a
     } = (0, f.W)({
       location: "virtual_currency_onboarding_coachmark"
-    }), s = (0, d.wE)(N[t]), c = o && i && n && !s, u = l.useCallback(() => {
-      s || (0, d.EW)(N[t], {
+    }), c = (0, b.wE)(v[t]), s = a && o && n && !c, u = i.useCallback(() => {
+      c || (0, b.EW)(v[t], {
         forceTrack: !0,
-        dismissAction: C.L.USER_DISMISS
+        dismissAction: O.L.USER_DISMISS
       })
-    }, [s, t]), [E, h] = l.useState(!1);
-    return l.useEffect(() => {
-      c ? E || (void 0 !== r && r(), h(!0)) : E && h(!1)
-    }, [c, r, E]), {
-      shouldShow: E,
+    }, [c, t]), [d, m] = i.useState(!1);
+    return i.useEffect(() => {
+      s ? d || (void 0 !== r && r(), m(!0)) : d && m(!1)
+    }, [s, r, d]), {
+      shouldShow: d,
       closeCoachmarkIfOpen: u
     }
   },
-  v = e => (0, r.jsx)(c.zxk, I(T({}, e), {
-    "aria-label": p.NW.string(p.t.cpT0Cg),
-    look: c.zxk.Looks.BLANK,
-    size: c.zxk.Sizes.NONE,
-    wrapperClassName: O.closeButton,
-    innerClassName: O.closeButtonInner,
-    children: (0, r.jsx)(c.Dio, {
+  y = e => (0, r.jsx)(s.zxk, j(C({}, e), {
+    "aria-label": _.NW.string(_.t.cpT0Cg),
+    look: s.zxk.Looks.BLANK,
+    size: s.zxk.Sizes.NONE,
+    wrapperClassName: p.closeButton,
+    innerClassName: p.closeButtonInner,
+    children: (0, r.jsx)(s.Dio, {
       size: "refresh_sm",
-      className: O.closeButtonIcon
+      className: p.closeButtonIcon
     })
   })),
-  b = e => {
+  N = e => {
     let {
       invertTail: t,
-      leftOffset: n
+      leftOffset: n,
+      rightOffset: i
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(O.tail, t ? O.tailPositionInverted : O.tailPositionNormal),
+      className: a()(p.tail, t ? p.tailPositionInverted : p.tailPositionNormal),
       style: {
-        left: n
+        left: n,
+        right: i
       },
       children: [(0, r.jsx)("div", {
-        className: O.tailSpine
+        className: p.tailSpine
       }), (0, r.jsx)("div", {
-        className: o()(O.tailTargetOuter, t ? O.tailTargetPositionInverted : O.tailTargetPositionNormal),
+        className: a()(p.tailTargetOuter, t ? p.tailTargetPositionInverted : p.tailTargetPositionNormal),
         children: (0, r.jsx)("svg", {
           xmlns: "http://www.w3.org/2000/svg",
           width: "8",
@@ -125,123 +128,123 @@ let S = () => (0, E.Lk)(document.body.style.getPropertyValue("--custom-app-panel
             cx: "50%",
             cy: "50%",
             r: "3",
-            className: O.tailTargetInner
+            className: p.tailTargetInner
           })
         })
       })]
     })
   },
-  m = () => {
+  I = () => {
     let e = (0, u.ZP)(),
-      t = (0, s.wj)(e);
-    return (0, r.jsx)(h.M, {
-      className: O.orbIcon,
+      t = (0, c.wj)(e);
+    return (0, r.jsx)(m.M, {
+      className: p.orbIcon,
       iconMode: t ? "light" : "dark",
-      imgClassName: O.orbIconImg
+      imgClassName: p.orbIconImg
     })
   },
-  P = e => {
+  w = e => {
     let {
       titleText: t,
       descriptionText: n,
-      onClose: l,
-      tailLeftOffset: i = 22,
-      renderTail: a,
-      invertCoachmark: s = !1,
+      onClose: i,
+      tailLeftOffset: o = 22,
+      renderTail: l,
+      invertCoachmark: c = !1,
       iconComponent: u,
-      coachmarkRef: d
+      coachmarkRef: b
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(O.container),
-      ref: d,
-      children: [(0, r.jsx)(v, {
-        onClick: l
+      className: a()(p.container),
+      ref: b,
+      children: [(0, r.jsx)(y, {
+        onClick: i
       }), u, (0, r.jsxs)("div", {
-        className: O.content,
-        children: [(0, r.jsx)(c.X6q, {
-          className: O.title,
+        className: p.content,
+        children: [(0, r.jsx)(s.X6q, {
+          className: p.title,
           variant: "heading-md/bold",
           children: t
-        }), (0, r.jsx)(c.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
-          className: O.description,
+          className: p.description,
           children: n
         })]
-      }), a && (0, r.jsx)(b, {
-        leftOffset: i,
-        invertTail: s
+      }), l && (0, r.jsx)(N, {
+        leftOffset: o,
+        invertTail: c
       })]
     })
   },
-  y = e => {
-    var t = g({}, function(e) {
+  P = e => {
+    var t = h({}, function(e) {
       if (null == e) throw TypeError("Cannot destructure " + e);
       return e
     }(e));
-    return (0, r.jsx)(P, T({
-      iconComponent: (0, r.jsx)(m, {})
+    return (0, r.jsx)(w, C({
+      iconComponent: (0, r.jsx)(I, {})
     }, t))
   };
 
-function L(e) {
+function E(e) {
   let {
     calculateVisibility: t,
     backgroundElementRef: n,
-    calculateBaseOffsets: i,
-    offsetControlRef: o,
-    children: a,
-    key: s,
-    coachmarkRef: c,
+    calculateBaseOffsets: o,
+    offsetControlRef: a,
+    children: l,
+    key: c,
+    coachmarkRef: s,
     onGetBackgroundElementDimensions: u
-  } = e, [d, E] = l.useState(!1), [f, h] = l.useState(!0), C = l.useCallback(e => {
+  } = e, [b, d] = i.useState(!1), [f, m] = i.useState(!0), O = i.useCallback(e => {
     let n = t(e);
-    n !== f && h(n)
-  }, [f, t]), p = l.useCallback(e => {
-    C(e);
+    n !== f && m(n)
+  }, [f, t]), _ = i.useCallback(e => {
+    O(e);
     let t = e.top < window.innerHeight / 2;
-    t !== d && E(t)
-  }, [d, C]), O = l.useCallback(e => {
-    let t = i(e),
+    t !== b && d(t)
+  }, [b, O]), p = i.useCallback(e => {
+    let t = o(e),
       {
         verticalOffset: n
       } = t,
       r = function(e, t) {
         if (null == e) return {};
-        var n, r, l = function(e, t) {
+        var n, r, i = function(e, t) {
           if (null == e) return {};
-          var n, r, l = {},
-            i = Object.keys(e);
-          for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-          return l
+          var n, r, i = {},
+            o = Object.keys(e);
+          for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+          var o = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
-        return l
+        return i
       }(t, ["verticalOffset"]);
-    return (void 0 !== u && u(e), d) ? I(T({}, r), {
+    return (void 0 !== u && u(e), b) ? j(C({}, r), {
       top: e.height + n
-    }) : void 0 !== c && null !== c.current ? I(T({}, r), {
-      top: -c.current.offsetHeight - n
-    }) : I(T({}, r), {
+    }) : void 0 !== s && null !== s.current ? j(C({}, r), {
+      top: -s.current.offsetHeight - n
+    }) : j(C({}, r), {
       bottom: e.height + n
     })
-  }, [d, i, u, c]);
-  return (0, r.jsx)(_.E, {
+  }, [b, o, u, s]);
+  return (0, r.jsx)(g.E, {
     backgroundElementRef: n,
-    offsetControlRef: o,
+    offsetControlRef: a,
     style: {
       visibility: f ? "visible" : "hidden"
     },
-    getOffsetsRelativeToElement: O,
+    getOffsetsRelativeToElement: p,
     fallbackAbsoluteOffsets: {
       top: 0,
       left: 0
     },
-    onGetBoundingRect: p,
-    children: l.Children.map(a, e => l.cloneElement(e, {
-      invertCoachmark: d
+    onGetBoundingRect: _,
+    children: i.Children.map(l, e => i.cloneElement(e, {
+      invertCoachmark: b
     }))
-  }, s)
+  }, c)
 }

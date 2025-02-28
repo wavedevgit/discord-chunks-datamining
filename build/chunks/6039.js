@@ -62,7 +62,7 @@ let S = e => {
     height: c
   } = (0, a.Z)(), [p, h] = i.useState(v.hO.INITIAL), S = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), T = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
     hasFetchedRequestToJoinGuilds: P,
-    guildPreviewDisabled: j
+    guildPreviewDisabled: A
   } = (0, l.cj)([b.Z], () => ({
     hasFetchedRequestToJoinGuilds: b.Z.hasFetchedRequestToJoinGuilds,
     guildPreviewDisabled: b.Z.getJoinRequestGuild(t)
@@ -72,7 +72,7 @@ let S = e => {
   }, [T, t]), i.useEffect(() => {
     P || f.Z.fetchRequestToJoinGuilds()
   }, [P]);
-  let A = i.useCallback(() => {
+  let j = i.useCallback(() => {
       h(Math.max(p, v.hO.FILLING)), f.Z.removeGuildJoinRequest(t), (0, u.uL)(N.Z5c.ME)
     }, [t, p]),
     Z = (e, t) => () => {
@@ -122,15 +122,15 @@ let S = e => {
     x = async () => {
       await f.Z.resetGuildJoinRequest(t), (0, g.hk)(t)
     }, L = Z(y.NW.format(y.t["9ZezpK"], {
-      name: null == j ? void 0 : j.name
-    }), A), w = Z(y.NW.format(y.t.fJwWVl, {
-      name: null == j ? void 0 : j.name
-    }), A);
+      name: null == A ? void 0 : A.name
+    }), j), w = Z(y.NW.format(y.t.fJwWVl, {
+      name: null == A ? void 0 : A.name
+    }), j);
   return (0, r.jsxs)("div", {
     className: I.page,
     ref: n,
     children: [(0, r.jsx)(C, {
-      guild: j,
+      guild: A,
       height: c,
       width: s
     }), (0, r.jsx)("div", {
@@ -141,7 +141,7 @@ let S = e => {
           case m.wB.SUBMITTED:
             return (0, r.jsx)(O.Z, {
               onWithdrawApplication: L,
-              guild: j
+              guild: A
             });
           case m.wB.REJECTED:
             return (0, r.jsx)(E.Z, {
@@ -150,13 +150,13 @@ let S = e => {
               confirmText: y.NW.string(y.t.g9tK0t),
               onWithdrawApplication: L,
               rejectionReason: S.rejectionReason,
-              guild: j
+              guild: A
             });
           default:
             return (0, r.jsx)(_.s, {
               onDiscardApplication: w,
               onContinueApplication: () => (0, g.hk)(t),
-              guild: j
+              guild: A
             })
         }
       })()

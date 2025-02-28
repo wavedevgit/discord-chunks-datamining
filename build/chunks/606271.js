@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => j
+  Z: () => A
 }), n(47120);
 var r = n(392711),
   i = n.n(r),
@@ -36,7 +36,7 @@ function P(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class j {
+class A {
   loadServer() {
     for (let e of (N.isPlatformEmbedded && this.registerTransportsForEmbeddedPlatform(), this.transports)) this.rpcServer.registerTransport(e);
     for (let [e, t] of Object.entries(this.rpcCommandHandlers)) this.rpcServer.setCommandHandler(e, t);

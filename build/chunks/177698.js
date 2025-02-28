@@ -37,21 +37,21 @@ let _ = (0, g.Z)(e => {
     disclosures: S,
     integrationType: T,
     pid: P
-  } = e, j = "OAuth2Authorize_".concat(n, "_").concat(v, "_").concat(y), A = null != T ? null == u ? void 0 : u.get(T) : void 0, Z = null !== (t = null == A ? void 0 : A.application) && void 0 !== t ? t : a.Z.getApplication(n);
+  } = e, A = "OAuth2Authorize_".concat(n, "_").concat(v, "_").concat(y), j = null != T ? null == u ? void 0 : u.get(T) : void 0, Z = null !== (t = null == j ? void 0 : j.application) && void 0 !== t ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
     let a = (0, m.jU)(P),
-      A = r => {
+      j = r => {
         let {
           clientId: i,
           location: o
         } = r;
         (null == i || i === n) && (null != location ? e(o) : t(new f.Z({
           errorCode: b.lTL.OAUTH2_ERROR
-        }, "User cancelled authorization")), l.Z.unsubscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE", A), a.lock())
+        }, "User cancelled authorization")), l.Z.unsubscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE", j), a.lock())
       },
       x = c.default.isOverlayOOPEnabledForPid(null != P ? P : (0, h.getPID)());
     if (a.context === b.IlC.OVERLAY && !x) {
-      l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE", A), l.Z.dispatch({
+      l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE", j), l.Z.dispatch({
         type: "OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN",
         clientId: n,
         authorizeProps: {
@@ -102,7 +102,7 @@ let _ = (0, g.Z)(e => {
         clientId: n,
         scopes: null != d ? d : [],
         disclosures: null != S ? S : [],
-        callback: A,
+        callback: j,
         responseType: g,
         redirectUri: _,
         codeChallenge: E,
@@ -125,9 +125,9 @@ let _ = (0, g.Z)(e => {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
       }), t))
     }, {
-      modalKey: j,
+      modalKey: A,
       onCloseRequest: () => {
-        (0, i.Mr3)(j), t(new f.Z({
+        (0, i.Mr3)(A), t(new f.Z({
           errorCode: b.lTL.OAUTH2_ERROR
         }, "User cancelled authorization"))
       }

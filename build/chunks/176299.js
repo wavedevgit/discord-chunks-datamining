@@ -28,8 +28,8 @@ var r = n(200651),
   S = n(652515),
   T = n(544978),
   P = n(540059),
-  j = n(724383),
-  A = n(135864),
+  A = n(724383),
+  j = n(135864),
   Z = n(372900),
   x = n(63568),
   L = n(6039),
@@ -136,13 +136,13 @@ let eN = (0, u.Un)({
     name: "GuildOnboardingPage",
     renderLoader: ev
   }),
-  ej = (0, u.Un)({
+  eA = (0, u.Un)({
     createPromise: () => n.e("44799").then(n.bind(n, 393357)),
     webpackId: 393357,
     name: "GuildPowerupsPage",
     renderLoader: ev
   }),
-  eA = e => {
+  ej = e => {
     let {
       match: t
     } = e, n = (0, p.e7)([$.Z, en.Z], () => {
@@ -207,7 +207,7 @@ let eN = (0, u.Un)({
           guildId: i
         });
       case em.oC.GUILD_BOOSTS:
-        return f ? (0, r.jsx)(ej, {
+        return f ? (0, r.jsx)(eA, {
           guildId: i
         }) : (0, r.jsx)(s.l_, {
           to: eg.Z5c.CHANNEL(i)
@@ -233,13 +233,13 @@ let eN = (0, u.Un)({
       guildId: e,
       channelId: t
     } = (0, q.Z)(), n = (0, p.e7)([en.Z], () => null != t ? t : en.Z.getChannelId(e));
-    return window.location.pathname.startsWith(eg.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(eg.Z5c.GUILD_DISCOVERY) || (0, K.OG)() ? (0, r.jsx)(A.Z, {}) : null != e ? (0, r.jsx)(k.Z, {
+    return window.location.pathname.startsWith(eg.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(eg.Z5c.GUILD_DISCOVERY) || (0, K.OG)() ? (0, r.jsx)(j.Z, {}) : null != e ? (0, r.jsx)(k.Z, {
       selectedChannelId: n,
       guildId: e
     }, e) : (0, r.jsx)(ed.Z, {})
   }),
-  ex = e => (0, r.jsx)(eA, eO({}, e)),
-  eL = () => (0, r.jsx)(j.Z, {}),
+  ex = e => (0, r.jsx)(ej, eO({}, e)),
+  eL = () => (0, r.jsx)(A.Z, {}),
   ew = e => {
     let {
       match: t
@@ -409,7 +409,7 @@ function eF(e) {
         width: e
       })
     }, []),
-    j = (0, b.Z)({
+    A = (0, b.Z)({
       minDimension: ep.li,
       maxDimension: ep.zx,
       resizableDomNodeRef: y,
@@ -419,7 +419,7 @@ function eF(e) {
       orientation: b.y.HORIZONTAL_RIGHT,
       throttleDuration: 0
     }),
-    A = i.useCallback(() => {
+    j = i.useCallback(() => {
       C.useAppSidebarState.setState(e => ({
         isOpen: !e.isOpen
       }))
@@ -462,10 +462,10 @@ function eF(e) {
           })(Object(l)).forEach(function(e) {
             Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
           }), i)), O ? (0, r.jsx)(f.P3F, {
-            onClick: A,
+            onClick: j,
             "aria-label": "Resize Sidebar",
             className: eE.sidebarResizeHandle,
-            onMouseDown: j
+            onMouseDown: A
           }) : null, (0, r.jsx)(ea.b, {})]
         }), !O && (0, r.jsx)(ec.Z, {})]
       })

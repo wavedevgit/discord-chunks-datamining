@@ -29,8 +29,8 @@ var i = n(243814),
   S = n(630388),
   T = n(823379),
   P = n(709054),
-  j = n(591759),
-  A = n(228488),
+  A = n(591759),
+  j = n(228488),
   Z = n(996106),
   x = n(914946),
   L = n(452426),
@@ -180,7 +180,7 @@ let W = {
       }), s = null != a ? E.Z.getWindow(a) : void 0;
       (null == s ? void 0 : s.closed) && (s = void 0);
       let c = null != s ? M.IlC.POPOUT : M.IlC.APP;
-      (0, A.Pr)({}, null == s ? void 0 : s.document), (0, o.ZDy)(async () => {
+      (0, j.Pr)({}, null == s ? void 0 : s.document), (0, o.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("7654"), n.e("52686")]).then(n.bind(n, 560114));
@@ -303,7 +303,7 @@ let W = {
       if (null == l) throw new Z.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No channel found");
-      if (!j.Z.isDiscordCdnUrl(r)) throw new Z.Z({
+      if (!A.Z.isDiscordCdnUrl(r)) throw new Z.Z({
         errorCode: M.lTL.INVALID_PAYLOAD
       }, "mediaUrl must be a Discord CDN url");
       (0, b.Z)({

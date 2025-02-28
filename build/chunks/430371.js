@@ -43,7 +43,7 @@ function O(e) {
   return e
 }
 
-function N(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,7 +55,7 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = 16 / 9,
+let N = 16 / 9,
   I = 8 + C.cF;
 
 function P(e) {
@@ -81,8 +81,8 @@ function P(e) {
     F = null != A,
     G = h.Z.getVideoComponent(),
     V = p.default.getId(),
-    [z, q] = i.useState(null),
-    [Y, K] = i.useState(!0),
+    [z, Y] = i.useState(null),
+    [q, K] = i.useState(!0),
     [X, Q] = i.useState(!1),
     J = M.type === y.fO.ACTIVITY || M.type === y.fO.PRESENCE_EMBEDDED_ACTIVITY,
     $ = (0, u.Z)(J ? M.applicationId : void 0),
@@ -96,7 +96,7 @@ function P(e) {
     ea = (null !== (t = (0, c.Z)(M.id)) && void 0 !== t ? t : M.id) !== M.id,
     es = 0;
   (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * I + 8);
-  let ec = i.useMemo(() => J && $ ? W / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : E, [ee, z, J, W, U, es, $]),
+  let ec = i.useMemo(() => J && $ ? W / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : N, [ee, z, J, W, U, es, $]),
     eu = U - 2 * es,
     ed = J && $ ? W : eu * ec,
     ep = Math.floor(Math.min(W, ed) / ec),
@@ -112,7 +112,7 @@ function P(e) {
   let ef = (0, s.q_F)({
       value: +!!en,
       delay: eh || !en ? 0 : 100,
-      config: N(O({}, a.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       }),
       onStart: () => Q(!0),
@@ -123,25 +123,25 @@ function P(e) {
     }, "animate-always"),
     em = (0, s.q_F)({
       value: +!!en,
-      config: N(O({}, a.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       })
     }, "animate-always"),
     eg = (0, s.q_F)({
       value: ed,
-      config: N(O({}, a.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       })
     }, er === en && em.value.idle && !eo || ea ? "animate-never" : "animate-always"),
     eb = (0, s.q_F)({
       value: n,
-      config: N(O({}, a.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       })
     }, "animate-always"),
     e_ = (0, s.Yzy)(M, {
       keys: e => null == e ? void 0 : e.id,
-      config: N(O({}, a.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       }),
       initial: null,
@@ -156,7 +156,7 @@ function P(e) {
       }
     }, "animate-always"),
     eC = i.useCallback(e => {
-      q(e), K(!1)
+      Y(e), K(!1)
     }, []),
     ev = en || D ? [] : (0, _.n3)(Z, M, V),
     {
@@ -168,7 +168,7 @@ function P(e) {
     children: [(0, r.jsxs)("div", {
       className: j.tileWrapper,
       style: {
-        opacity: ee && Y ? 0 : 1
+        opacity: ee && q ? 0 : 1
       },
       children: [(0, r.jsxs)(a.animated.div, {
         className: j.videoFrame,

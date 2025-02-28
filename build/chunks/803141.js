@@ -2,11 +2,11 @@
 n.d(t, {
   Z: () => b
 }), n(47120), n(653041);
-var i = n(412788),
-  r = n(594174),
+var r = n(412788),
+  i = n(594174),
   o = n(131681),
-  a = n(932941),
-  c = n(363072),
+  c = n(932941),
+  a = n(363072),
   s = n(526761);
 
 function u(e, t, n) {
@@ -20,12 +20,12 @@ function u(e, t, n) {
 let l = null;
 
 function g() {
-  let e = (0, o.U)() ? [...a.pF, ...a.wq, ...a.$u] : [],
-    t = r.default.getCurrentUser();
+  let e = (0, o.U)() ? [...c.pF, ...c.wq, ...c.$u] : [],
+    t = i.default.getCurrentUser();
   if (null == t ? void 0 : t.isStaff()) {
     let t = n(932941).Bk;
     e.push(...t)
-  }(l = new c.B).addWords(e)
+  }(l = new a.B).addWords(e)
 }
 
 function k() {
@@ -44,10 +44,10 @@ function f(e) {
   if (!t || n.type !== s.yP.PRELOADED_USER_SETTINGS) return !1;
   null != l && l.clear(), g()
 }
-class h extends i.Z {
+class h extends r.Z {
   loadCache() {
     let e = this.readSnapshot(h.LATEST_SNAPSHOT_VERSION);
-    null != e && (l = null != e.keywordTrie ? c.B.fromSnapshot(e.keywordTrie) : null)
+    null != e && (l = null != e.keywordTrie ? a.B.fromSnapshot(e.keywordTrie) : null)
   }
   takeSnapshot() {
     return {
@@ -64,7 +64,7 @@ class h extends i.Z {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
     ! function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
-      null == l && (l = new c.B), l.addWords(e)
+      null == l && (l = new a.B), l.addWords(e)
     }(e)
   }
   constructor() {

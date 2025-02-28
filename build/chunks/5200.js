@@ -35,7 +35,7 @@ function v(e) {
     onActivityItemSelected: x,
     imageBackground: j,
     activityAction: O,
-    labelType: N
+    labelType: E
   } = (0, u.ZP)({
     context: n,
     activityItem: r,
@@ -45,7 +45,7 @@ function v(e) {
     embeddedActivitiesManager: h.Z,
     assetNames: b,
     commandOrigin: y
-  }), [E, I] = l.useState(!1), P = l.useCallback(() => {
+  }), [N, I] = l.useState(!1), P = l.useCallback(() => {
     I(!0)
   }, [I]), S = l.useCallback(() => {
     I(!1)
@@ -55,10 +55,10 @@ function v(e) {
       className: g.badgeContainer,
       children: (0, i.jsx)(p.Z, {
         name: r.application.name,
-        labelType: N
+        labelType: E
       })
     })
-  }), [r.application.name, N]), T = l.useMemo(() => {
+  }), [r.application.name, E]), T = l.useMemo(() => {
     switch (O) {
       case u.JS.JOIN:
         return (0, i.jsx)("div", {
@@ -105,7 +105,7 @@ function v(e) {
         value: 0
       },
       to: {
-        value: +!!E
+        value: +!!N
       },
       children: e => {
         let {

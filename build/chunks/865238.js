@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(981631),
   j = n(37113),
   O = n(388032),
-  N = n(461760),
-  E = n(574169);
+  E = n(461760),
+  N = n(574169);
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -99,22 +99,22 @@ function S(e) {
     z = R ? O.NW.string(O.t.o7NIjY) : H ? O.NW.string(O.t.r6xhBw) : O.NW.string(O.t.yKw8Dg);
   return null == l || null == T ? null : (0, r.jsxs)(c.animated.div, {
     style: D,
-    className: N.banner,
+    className: E.banner,
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(d.qEK, I({
         src: W,
         "aria-label": l.username,
         size: d.EFr.SIZE_48
       }, U)), (0, r.jsx)("img", {
-        className: N.potion,
-        src: E,
+        className: E.potion,
+        src: N,
         alt: ""
       })]
     }), (0, r.jsx)(d.X6q, {
       variant: "heading-sm/medium",
       children: V
     }), (0, r.jsxs)("div", {
-      className: N.subsection,
+      className: E.subsection,
       children: [(0, r.jsx)(d.zxk, {
         onClick: () => {
           if (R) {
@@ -141,11 +141,11 @@ function S(e) {
           }), a()
         },
         className: o()({
-          [N.actionButton]: !0 !== A
+          [E.actionButton]: !0 !== A
         }),
         children: z
       }), !H && (0, r.jsx)(d.P3F, {
-        className: N.x,
+        className: E.x,
         onClick: a,
         children: (0, r.jsx)(d.Dio, {
           name: "close"

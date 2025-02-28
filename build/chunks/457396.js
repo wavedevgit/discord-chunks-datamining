@@ -29,8 +29,8 @@ var r = n(200651),
   S = n(104494),
   T = n(639119),
   P = n(655525),
-  j = n(314684),
-  A = n(52188),
+  A = n(314684),
+  j = n(52188),
   Z = n(346497),
   x = n(924540),
   L = n(474486),
@@ -47,7 +47,7 @@ let B = "NitroTabButton",
   H = e => {
     let {
       selected: t
-    } = e, n = (0, o.e7)([g.default], () => g.default.getCurrentUser()), r = (0, o.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()), i = (0, T.N)(), l = (0, S.Ng)(), a = (0, Z.Vi)(), s = (0, D.vx)(B), c = (0, D.wG)(B), u = (0, j.$_)(), d = (0, w.V)(), p = (0, E.Qo)(n, r), h = (0, o.e7)([O.Z], () => O.Z.getCreatedAtOverride()), f = (0, I.m)({
+    } = e, n = (0, o.e7)([g.default], () => g.default.getCurrentUser()), r = (0, o.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()), i = (0, T.N)(), l = (0, S.Ng)(), a = (0, Z.Vi)(), s = (0, D.vx)(B), c = (0, D.wG)(B), u = (0, A.$_)(), d = (0, w.V)(), p = (0, E.Qo)(n, r), h = (0, o.e7)([O.Z], () => O.Z.getCreatedAtOverride()), f = (0, I.m)({
       location: B
     }), m = t || null != i || null != l || a || s || c || null != u || null != d || !0 === f || p, _ = null != h ? h : null == n ? void 0 : n.createdAt;
     return m || null != n && null != _ && Date.now() - _.getTime() > 12096e5
@@ -83,7 +83,7 @@ let B = "NitroTabButton",
       ei = (0, N.W)(),
       el = (0, o.e7)([m.Z], () => m.Z.isLocalizedPromoEnabled) && null == en,
       eo = (0, Z.Vi)(),
-      ea = (0, j.$_)(),
+      ea = (0, A.$_)(),
       es = (0, w.V)(),
       ec = (0, D.Kn)(B),
       eu = (0, D.vx)(B),
@@ -152,8 +152,8 @@ let B = "NitroTabButton",
       onSelect: () => (0, p.EW)(a.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
         dismissAction: G.L.TAKE_ACTION
       })
-    }), F = 6) : el && (O = (0, r.jsx)(A.k, {
-      entryPoint: A.U.PrivateMessages
+    }), F = 6) : el && (O = (0, r.jsx)(j.k, {
+      entryPoint: j.U.PrivateMessages
     }), K || (t = V.localizeBadge), F = 5) : (O = (0, r.jsx)(x.$H, {
       trialOffer: en,
       isTabSelected: K

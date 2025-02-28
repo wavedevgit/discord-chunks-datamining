@@ -61,7 +61,7 @@ function P(e, t) {
   }), e
 }
 
-function j(e) {
+function A(e) {
   let {
     user: t,
     applicationId: n,
@@ -116,7 +116,7 @@ function j(e) {
     })]
   })
 }
-class A extends i.PureComponent {
+class j extends i.PureComponent {
   componentWillLeave(e) {
     null != this.peopleListItemRef.current && this.peopleListItemRef.current.componentWillLeave(e)
   }
@@ -197,7 +197,7 @@ class A extends i.PureComponent {
         isGameRelationship: n,
         applicationId: i
       } = this.props;
-      (0, u.vq)(e, e => (0, r.jsx)(j, P(T({}, e), {
+      (0, u.vq)(e, e => (0, r.jsx)(A, P(T({}, e), {
         user: t,
         applicationId: i,
         isGameRelationship: n
@@ -213,4 +213,4 @@ class A extends i.PureComponent {
     })
   }
 }
-let Z = A
+let Z = j

@@ -1,9 +1,9 @@
 /** Chunk was on 25292 **/
 n.d(t, {
   C3: () => o,
-  GW: () => r
+  GW: () => i
 });
-let i = (0, n(818083).B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2024-08_keyword_filter_upsells",
   label: "Language Filter Upsells",
@@ -19,12 +19,12 @@ let i = (0, n(818083).B)({
   }]
 });
 
-function r(e) {
+function i(e) {
   let {
     location: t
   } = e, {
     enabled: n
-  } = i.getCurrentConfig({
+  } = r.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: !0
@@ -37,7 +37,7 @@ function o(e) {
     location: t
   } = e, {
     enabled: n
-  } = i.useExperiment({
+  } = r.useExperiment({
     location: t
   }, {
     autoTrackExposure: !0

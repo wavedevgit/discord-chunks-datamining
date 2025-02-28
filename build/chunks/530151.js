@@ -28,8 +28,8 @@ var r = n(200651),
   S = n(283595),
   T = n(417363),
   P = n(941128),
-  j = n(451478),
-  A = n(424218),
+  A = n(451478),
+  j = n(424218),
   Z = n(780570),
   x = n(353042),
   L = n(86826),
@@ -97,7 +97,7 @@ function W(e, t) {
     case w.f07.ALLOCATING_DISK:
       return "".concat(e);
     default:
-      return (0, A.BU)(e, {
+      return (0, j.BU)(e, {
         useKibibytes: !0
       })
   }
@@ -363,8 +363,8 @@ class F extends i.PureComponent {
       l = Math.floor(i),
       o = 0 === n && 1 === r ? R.NW.string(R.t["+pfsFR"]) : R.NW.formatToPlainString(R.t["+feX8f"], {
         percent: l,
-        progress: (0, A.BU)(n),
-        total: (0, A.BU)(r)
+        progress: (0, j.BU)(n),
+        total: (0, j.BU)(r)
       });
     return this.renderBody({
       message: o,
@@ -661,9 +661,9 @@ function J(e, t, n, r) {
     }), e
   }, [])
 }
-let $ = (0, _.Z)(c.ZP.connectStores([E.Z, T.Z, P.Z, C.Z, j.Z], () => ({
+let $ = (0, _.Z)(c.ZP.connectStores([E.Z, T.Z, P.Z, C.Z, A.Z], () => ({
   applications: [...J(P.Z.activeItems, !1, E.Z, T.Z), ...J(P.Z.finishedItems, !0, E.Z, T.Z)],
   paused: P.Z.paused,
-  isFocused: j.Z.isFocused(),
+  isFocused: A.Z.isFocused(),
   theme: C.Z.theme
 }))((0, b.Z)(X)))

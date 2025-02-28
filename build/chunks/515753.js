@@ -44,12 +44,12 @@ var r = n(200651),
   G = n(158776),
   H = n(306680),
   k = n(699516),
-  F = n(111583),
-  V = n(9156),
+  V = n(111583),
+  F = n(9156),
   B = n(594174),
   W = n(709054),
-  z = n(998502),
-  K = n(981631),
+  K = n(998502),
+  z = n(981631),
   Y = n(388032),
   Q = n(85496);
 
@@ -100,7 +100,7 @@ function J(e, t) {
   }
   return l
 }
-let $ = z.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
+let $ = K.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
   ee = {
     offset: {
       top: 2,
@@ -213,18 +213,18 @@ function eo(e) {
     isTyping: j,
     status: M,
     isMobile: G,
-    nameplate: F,
+    nameplate: V,
     "aria-posinset": B,
     "aria-setsize": W
-  } = e, [z, ei] = l.useState(!1), eo = l.useRef(null), ea = l.useRef(null), {
+  } = e, [K, ei] = l.useState(!1), eo = l.useRef(null), ea = l.useRef(null), {
     avatarSrc: es,
     avatarDecorationSrc: ec,
     eventHandlers: eu
   } = (0, x.Z)({
     user: p,
     size: f.EFr.SIZE_32,
-    animateOnHover: !(d || z)
-  }), ed = (0, E.e7)([V.ZP], () => V.ZP.isChannelMuted(i.getGuildId(), i.id)), {
+    animateOnHover: !(d || K)
+  }), ed = (0, E.e7)([F.ZP], () => F.ZP.isChannelMuted(i.getGuildId(), i.id)), {
     ignored: eE,
     blocked: ef
   } = (0, E.cj)([k.Z], () => ({
@@ -238,7 +238,7 @@ function eo(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     null != e && (e.preventDefault(), e.stopPropagation()), h.Z.closePrivateChannel(i.id, d, t)
   }, eT = () => {
-    h.Z.preload(K.ME, i.id)
+    h.Z.preload(z.ME, i.id)
   }, eI = e => {
     e.stopPropagation()
   }, eS = e => {
@@ -308,7 +308,7 @@ function eo(e) {
     activities: g,
     voiceChannel: R,
     applicationStream: L,
-    animate: z,
+    animate: K,
     emojiClassName: ed ? Q.mutedEmoji : void 0
   }) : null, eb = () => {
     let e = f.EFr.SIZE_32;
@@ -322,12 +322,12 @@ function eo(e) {
       src: (0, v.x)(i),
       "aria-hidden": !0,
       size: e,
-      status: j ? K.Skl.ONLINE : M,
+      status: j ? z.Skl.ONLINE : M,
       isTyping: j
     }));
     s()(null != p, "PrivateChannel.renderAvatar: Invalid prop configuration - no user or channel");
     let t = null;
-    return p.isSystemUser() || (t = (0, C.Z)(g) ? K.Skl.STREAMING : M), (0, r.jsx)($, X(q({}, eu), {
+    return p.isSystemUser() || (t = (0, C.Z)(g) ? z.Skl.STREAMING : M), (0, r.jsx)($, X(q({}, eu), {
       size: f.EFr.SIZE_32,
       src: es,
       avatarDecoration: ec,
@@ -337,7 +337,7 @@ function eo(e) {
       "aria-label": p.username,
       statusTooltip: !0
     }))
-  }, em = i.isMultiUserDM(), eP = i.isSystemDM(), ey = (0, w.Q)(), eL = !em && !eP && i.type === K.d4z.DM, eD = eL && (null == p ? void 0 : p.primaryGuild) != null, eR = eL && eE, eZ = eL && ef, ej = eD ? (0, r.jsxs)(r.Fragment, {
+  }, em = i.isMultiUserDM(), eP = i.isSystemDM(), ey = (0, w.Q)(), eL = !em && !eP && i.type === z.d4z.DM, eD = eL && (null == p ? void 0 : p.primaryGuild) != null, eR = eL && eE, eZ = eL && ef, ej = eD ? (0, r.jsxs)(r.Fragment, {
     children: [e_, (0, r.jsx)(m.ZP, {
       primaryGuild: null == p ? void 0 : p.primaryGuild,
       userId: null == p ? void 0 : p.id,
@@ -370,22 +370,22 @@ function eo(e) {
           className: o()(Q.interactive, {
             [Q.interactiveSystemDM]: ey && eP,
             [Q.interactiveSelected]: d,
-            [Q.platedWrapper]: null != F
+            [Q.platedWrapper]: null != V
           }),
           as: "div",
           onClick: eS,
           muted: eU,
           selected: d,
           children: [(0, r.jsx)(U.Z, {
-            nameplate: F,
+            nameplate: V,
             selected: d,
-            hovered: z,
+            hovered: K,
             content: ew.current
           }), (0, r.jsx)(c.rU, X(q({
             innerRef: eo,
-            to: K.Z5c.CHANNEL(K.ME, i.id),
+            to: z.Z5c.CHANNEL(z.ME, i.id),
             className: o()(Q.link, {
-              [Q.plated]: null != F
+              [Q.plated]: null != V
             }),
             "aria-label": (0, A.ZP)({
               channel: i,
@@ -440,7 +440,7 @@ let ea = e => {
       if (t.isMultiUserDM()) {
         if (o) {
           let n = G.Z.getState().statuses;
-          t.recipients.some(e => n[e] === K.Skl.ONLINE) && (e = K.Skl.ONLINE)
+          t.recipients.some(e => n[e] === z.Skl.ONLINE) && (e = z.Skl.ONLINE)
         }
       } else null != c && (e = G.Z.getStatus(c));
       return {
@@ -466,15 +466,15 @@ let ea = e => {
       user: i,
       privateChannel: t
     }),
-    _ = (0, E.e7)([B.default, F.Z], () => t.isMultiUserDM() ? !!a && W.default.keys(F.Z.getTypingUsers(t.id)).some(e => {
+    _ = (0, E.e7)([B.default, V.Z], () => t.isMultiUserDM() ? !!a && W.default.keys(V.Z.getTypingUsers(t.id)).some(e => {
       var t;
       return e !== (null === (t = B.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)
-    }) : null != i && F.Z.isTyping(t.id, t.getRecipientId()), [t, i, a]);
+    }) : null != i && V.Z.isTyping(t.id, t.getRecipientId()), [t, i, a]);
   return t.isMultiUserDM() ? (0, r.jsx)(eo, q({
     channel: t,
     selected: n,
     isTyping: _,
-    status: u.status === K.Skl.ONLINE ? K.Skl.ONLINE : void 0,
+    status: u.status === z.Skl.ONLINE ? z.Skl.ONLINE : void 0,
     isGDMFacepileEnabled: s
   }, l)) : (0, r.jsx)(eo, q({
     channel: t,

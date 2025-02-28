@@ -64,7 +64,7 @@ function T() {
   } = (0, o.cj)([_.Z, b.Z], () => ({
     action: _.Z.getAction(),
     theme: b.Z.theme
-  })), T = E.Z.getVerificationTypes(e), [P, j] = i.useState(0), A = (0, p.Z)(T);
+  })), T = E.Z.getVerificationTypes(e), [P, A] = i.useState(0), j = (0, p.Z)(T);
   (0, f.Z)({
     type: l.ImpressionTypes.MODAL,
     name: l.ImpressionNames.USER_ACTION_REQUIRED,
@@ -100,7 +100,7 @@ function T() {
   return i.useEffect(() => (h.Z.disable(), () => {
     h.Z.enable()
   }), []), i.useEffect(() => {
-    (null == A ? void 0 : A[0]) === v.PUi.PHONE && (null == T ? void 0 : T[0]) === v.PUi.EMAIL && (0, s.ZDy)(async () => {
+    (null == j ? void 0 : j[0]) === v.PUi.PHONE && (null == T ? void 0 : T[0]) === v.PUi.EMAIL && (0, s.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 468026));
@@ -114,7 +114,7 @@ function T() {
       Layer: g.ZP,
       onCloseCallback: Z
     })
-  }, [T, A]), (0, r.jsx)(O.Z, {
+  }, [T, j]), (0, r.jsx)(O.Z, {
     types: T,
     captchaKey: P,
     onCaptchaVerify: e => {
@@ -126,7 +126,7 @@ function T() {
         oldFormErrors: !0,
         rejectWithError: !0
       }).then(u.xf, () => {
-        j(e => e + 1)
+        A(e => e + 1)
       })
     },
     theme: t,

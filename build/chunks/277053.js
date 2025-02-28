@@ -59,16 +59,16 @@ let E = new Set,
   T = null,
   P = c.K.get(g.kf) || !1;
 
-function j(e) {
+function A(e) {
   let t = e.getGuildId(),
     n = b({}, e.permissionOverwrites);
   return null != t && null == n[t] && (n[t] = d.we(t)), n
 }
 
-function A() {
+function j() {
   if (I = p.Z.getChannel(), C = p.Z.getCategory(), null == I) return !1;
   let e = I.getGuildId();
-  y = v = j(I), null == v[S] && (S = e), i = null != C, r = d.o4(I, C), T = null, N = !1, O = f.QZA.CLOSED, E.clear()
+  y = v = A(I), null == v[S] && (S = e), i = null != C, r = d.o4(I, C), T = null, N = !1, O = f.QZA.CLOSED, E.clear()
 }
 class Z extends(l = s.ZP.Store) {
   initialize() {
@@ -118,9 +118,9 @@ let x = new Z(u.Z, {
       section: t
     } = e;
     if (null != I || t !== f.CoT.PERMISSIONS) return !1;
-    A()
+    j()
   },
-  CHANNEL_SETTINGS_PERMISSIONS_INIT: A,
+  CHANNEL_SETTINGS_PERMISSIONS_INIT: j,
   CHANNEL_SETTINGS_PERMISSIONS_UPDATE_PERMISSION: function(e) {
     let {
       id: t,
@@ -159,7 +159,7 @@ let x = new Z(u.Z, {
       C = p.Z.getCategory();
       let t = I.getGuildId();
       if (null == t) return !1;
-      y = j(I);
+      y = A(I);
       let n = {};
       return E.forEach(e => {
         null != v && (n[e] = v[e])
@@ -174,7 +174,7 @@ let x = new Z(u.Z, {
     let {
       silent: t
     } = e;
-    t ? O = f.QZA.OPEN : (O = f.QZA.CLOSED, A())
+    t ? O = f.QZA.OPEN : (O = f.QZA.CLOSED, j())
   },
   CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE: function(e) {
     let {

@@ -37,9 +37,9 @@ function I() {
       setSelectedTab: T
     } = (0, b.Y)(),
     P = (0, h.lg)(S),
-    j = !O.MU.has(S),
+    A = !O.MU.has(S),
     {
-      searchQuery: A,
+      searchQuery: j,
       onSearchTextChange: Z,
       onClearSearch: x,
       onSearchSubmit: L,
@@ -54,8 +54,8 @@ function I() {
       onSearchBarBlur: M,
       tabsClassName: U
     } = (0, a.U)({
-      isSearchBarVisible: j,
-      isSearchBarEmpty: "" === A.trim(),
+      isSearchBarVisible: A,
+      isSearchBarEmpty: "" === j.trim(),
       searchBarState: R,
       setSearchBarState: e => f.Z.setState({
         searchBarState: e
@@ -111,8 +111,8 @@ function I() {
         children: v.NW.format(v.t.zHdzqa, {
           query: G
         })
-      }), j && (0, r.jsx)(u.Z, {
-        query: A,
+      }), A && (0, r.jsx)(u.Z, {
+        query: j,
         placeholder: v.NW.string(v.t["5h0QOD"]),
         onTextChange: Z,
         onClear: x,

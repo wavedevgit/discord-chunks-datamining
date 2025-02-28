@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(626135),
   j = n(585483),
   O = n(233870),
-  N = n(51144),
-  E = n(998502),
+  E = n(51144),
+  N = n(998502),
   I = n(276264),
   P = n(981631),
   S = n(388032),
@@ -63,7 +63,7 @@ function A(e, t) {
   }), e
 }
 let w = [],
-  R = E.ZP.getEnableHardwareAcceleration();
+  R = N.ZP.getEnableHardwareAcceleration();
 
 function M(e) {
   let {
@@ -71,7 +71,7 @@ function M(e) {
     channel: i,
     status: u,
     activities: d
-  } = e, p = (0, o.e7)([v.Z], () => null != v.Z.getTypingUsers(i.id)[t.id]), f = (0, o.e7)([y.default], () => y.default.getCurrentUser()), x = (0, o.e7)([_.Z], () => _.Z.isMobileOnline(t.id)), O = (0, o.e7)([C.Z], () => C.Z.getNickname(t.id)), E = (0, h.Z)(t.id, "private-channel-recipient"), Z = e => {
+  } = e, p = (0, o.e7)([v.Z], () => null != v.Z.getTypingUsers(i.id)[t.id]), f = (0, o.e7)([y.default], () => y.default.getCurrentUser()), x = (0, o.e7)([_.Z], () => _.Z.isMobileOnline(t.id)), O = (0, o.e7)([C.Z], () => C.Z.getNickname(t.id)), N = (0, h.Z)(t.id, "private-channel-recipient"), Z = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
@@ -96,7 +96,7 @@ function M(e) {
     position: l.tq ? "window_center" : "left",
     spacing: 16,
     onShiftClick: () => {
-      let e = "@".concat(N.ZP.getUserTag(t, {
+      let e = "@".concat(E.ZP.getUserTag(t, {
           decoration: "never"
         })),
         n = "<@".concat(t.id, ">");
@@ -114,7 +114,7 @@ function M(e) {
       isTyping: p,
       status: u,
       activities: d,
-      applicationStream: E,
+      applicationStream: N,
       channel: i,
       onContextMenu: Z,
       isMobile: x,

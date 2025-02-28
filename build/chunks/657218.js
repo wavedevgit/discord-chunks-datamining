@@ -1,6 +1,6 @@
 /** Chunk was on 4566 **/
 n.d(t, {
-  Z: () => q
+  Z: () => Y
 }), n(47120), n(566702);
 var r = n(200651),
   i = n(192379),
@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(967128),
   j = n(665149),
   O = n(294218),
-  N = n(913663),
-  E = n(268350),
+  E = n(913663),
+  N = n(268350),
   I = n(695346),
   P = n(592125),
   S = n(703558),
@@ -65,7 +65,7 @@ function V(e) {
 }
 let z = g.Ie.THREAD_CREATION;
 
-function q(e) {
+function Y(e) {
   let {
     parentChannelId: t,
     parentMessageId: n,
@@ -95,7 +95,7 @@ function q(e) {
           }), (0, r.jsx)(j.ZP.Title, {
             children: H.NW.string(H.t["4WNcpq"])
           })]
-        }), (0, r.jsx)(Y, {
+        }), (0, r.jsx)(q, {
           parentChannel: l,
           parentMessageId: n,
           location: i
@@ -105,7 +105,7 @@ function q(e) {
   })
 }
 
-function Y(e) {
+function q(e) {
   let {
     parentChannel: t,
     parentMessageId: n,
@@ -189,7 +189,7 @@ function Y(e) {
           shouldClear: !1,
           shouldRefocus: !1
         };
-        h(!0), null == e && (e = o.textValue), e = e.trim(), (null == i || 0 === i.length) && (i = null === (a = N.Z.getStickerPreview(t.id, z.drafts.type)) || void 0 === a ? void 0 : a.map(e => e.id)), (null == l || 0 === l.length) && (l = A.Z.getUploads(t.id, S.d.FirstThreadMessage));
+        h(!0), null == e && (e = o.textValue), e = e.trim(), (null == i || 0 === i.length) && (i = null === (a = E.Z.getStickerPreview(t.id, z.drafts.type)) || void 0 === a ? void 0 : a.map(e => e.id)), (null == l || 0 === l.length) && (l = A.Z.getUploads(t.id, S.d.FirstThreadMessage));
         let m = null !== (s = r.name) && void 0 !== s ? s : "",
           g = null == n && 0 === m.length,
           b = "" === e && (null == i || 0 === i.length) && 0 === l.length;
@@ -220,7 +220,7 @@ function Y(e) {
             shouldRefocus: !0
           }
         }
-        return (0, E.qB)(t.id, z.drafts.type), h(!1), {
+        return (0, N.qB)(t.id, z.drafts.type), h(!1), {
           shouldClear: !0,
           shouldRefocus: !1
         }

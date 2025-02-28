@@ -107,8 +107,8 @@ function P(e) {
     heroArt: l,
     heroArtClassName: S,
     modalDismissibleContent: P,
-    modalTopExtra: j,
-    header: A,
+    modalTopExtra: A,
+    header: j,
     headerClassName: Z,
     subHeader: x,
     subHeaderExtra: L,
@@ -190,12 +190,12 @@ function P(e) {
       onClick: M
     }), (0, r.jsx)(_.Z, {
       className: v.splash
-    }), null == j ? void 0 : j(), (0, r.jsxs)(s.hzk, {
+    }), null == A ? void 0 : A(), (0, r.jsxs)(s.hzk, {
       className: v.content,
       children: [(0, r.jsx)(s.X6q, {
         variant: "display-md",
         className: o()(v.headerText, Z),
-        children: A
+        children: j
       }), "video" === l.type ? (0, r.jsx)(h.Z, {
         className: o()(v.video, S),
         autoPlay: !V,

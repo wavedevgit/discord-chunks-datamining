@@ -25,7 +25,7 @@ var r = n(200651),
   j = n(388032),
   O = n(125906);
 
-function N(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,7 +33,7 @@ function N(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class E {
+class N {
   updateData(e) {
     let {
       userId: t,
@@ -69,7 +69,7 @@ class E {
     channelId: n,
     analyticsLocations: i
   }) {
-    N(this, "userId", void 0), N(this, "user", void 0), N(this, "channelId", void 0), N(this, "analyticsLocations", void 0), N(this, "generateNicknameGuildPairs", (0, _.oH)(e => {
+    E(this, "userId", void 0), E(this, "user", void 0), E(this, "channelId", void 0), E(this, "analyticsLocations", void 0), E(this, "generateNicknameGuildPairs", (0, _.oH)(e => {
       var t;
       return o()(m.ZP.getNicknameGuildsMapping(null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : this.userId)).toPairs().map(e => {
         let [t, n] = e;
@@ -78,7 +78,7 @@ class E {
           return null === (t = g.Z.getGuild(e)) || void 0 === t ? void 0 : t.name
         }).filter(C.lm)]
       }).value()
-    })), N(this, "renderMoreAvatars", () => (0, r.jsx)(s.DY3, {
+    })), E(this, "renderMoreAvatars", () => (0, r.jsx)(s.DY3, {
       text: j.NW.string(j.t.UTjREx),
       position: "bottom",
       children: (0, r.jsx)(s.P3F, {
@@ -90,7 +90,7 @@ class E {
           className: O.plusIcon
         })
       })
-    }, "more-avatars")), N(this, "handleClick", () => {
+    }, "more-avatars")), E(this, "handleClick", () => {
       (0, f.openUserProfileModal)({
         userId: this.userId,
         channelId: this.channelId,
@@ -114,7 +114,7 @@ function I(e) {
       userId: t,
       channelId: n,
       analyticsLocations: r
-    } = e, l = (0, a.e7)([b.default], () => b.default.getUser(t), [t]), [o] = i.useState(() => new E({
+    } = e, l = (0, a.e7)([b.default], () => b.default.getUser(t), [t]), [o] = i.useState(() => new N({
       user: l,
       userId: t,
       channelId: n,

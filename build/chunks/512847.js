@@ -98,7 +98,7 @@ function P() {
   }), null
 }
 
-function j() {
+function A() {
   return S([N.Z], () => N.Z.isCurrentUserSpeaking(), (e, t) => {
     if (e !== t) {
       let e = b.Z.isSelfMute();
@@ -107,7 +107,7 @@ function j() {
   }), null
 }
 
-function A() {
+function j() {
   return S([b.Z], () => b.Z.getActiveVoiceFilter(), (e, t) => {
     if (e !== t) return null != t ? null != e ? "voice_filter_swap" : "voice_filter_on" : "voice_filter_off"
   }), null
@@ -241,6 +241,6 @@ function R() {
 
 function D() {
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(T, {}), (0, r.jsx)(P, {}), (0, r.jsx)(j, {}), (0, r.jsx)(Z, {}), (0, r.jsx)(x, {}), (0, r.jsx)(w, {}), (0, r.jsx)(L, {}), (0, r.jsx)(R, {}), (0, r.jsx)(A, {})]
+    children: [(0, r.jsx)(T, {}), (0, r.jsx)(P, {}), (0, r.jsx)(A, {}), (0, r.jsx)(Z, {}), (0, r.jsx)(x, {}), (0, r.jsx)(w, {}), (0, r.jsx)(L, {}), (0, r.jsx)(R, {}), (0, r.jsx)(j, {})]
   })
 }

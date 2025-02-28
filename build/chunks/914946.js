@@ -43,8 +43,8 @@ var r, i, l = n(729594),
   S = n(70956),
   T = n(5192),
   P = n(226951),
-  j = n(591759),
-  A = n(996106),
+  A = n(591759),
+  j = n(996106),
   Z = n(863141),
   x = n(186901),
   L = n(981631);
@@ -80,7 +80,7 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = null !== (i = null === (r = j.Z.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)) || void 0 === r ? void 0 : r.host) && void 0 !== i ? i : "localhost",
+let D = null !== (i = null === (r = A.Z.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)) || void 0 === r ? void 0 : r.host) && void 0 !== i ? i : "localhost",
   k = function() {
     let e = D.split(":")[0];
     if (!e.includes(".")) return e;
@@ -266,7 +266,7 @@ function ee(e) {
     } = e;
     return t
   }, () => {
-    throw new A.Z({
+    throw new j.Z({
       closeCode: L.$VG.INVALID_CLIENTID
     }, "Invalid Client ID")
   })
@@ -276,12 +276,12 @@ async function et(e, t, n) {
   if ("string" == typeof n) {
     if (e.transport === x.He.POST_MESSAGE) {
       let e = (0, d.ZP)(t);
-      if (null == e || !B(n, [e])) throw new A.Z({
+      if (null == e || !B(n, [e])) throw new j.Z({
         closeCode: L.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } else {
       let e = await ee(t);
-      if (r = m.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new A.Z({
+      if (r = m.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new j.Z({
         closeCode: L.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     }
@@ -362,13 +362,13 @@ function el(e, t) {
 }
 
 function eo(e) {
-  if (e !== x.He.POST_MESSAGE) throw new A.Z({
+  if (e !== x.He.POST_MESSAGE) throw new j.Z({
     errorCode: L.lTL.INVALID_COMMAND
   }, 'command not available from "'.concat(e, " transport"))
 }
 
 function ea(e) {
-  if (null == e.id) throw new A.Z({
+  if (null == e.id) throw new j.Z({
     errorCode: L.lTL.INVALID_COMMAND
   }, "Invalid application");
   return e.id

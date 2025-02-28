@@ -1,6 +1,6 @@
 /**
   Module ID: 57540
-  Original File Name: 9c1c08549ff30198
+  Original File Name: e8fb5c9d12c08f09
 **/
 .wrapper__1bb33 {
     position: relative
@@ -267,10 +267,10 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 56px 32px 64px
+    padding: 56px 32px 48px
 }
 
-.banner__2db04,.text__2db04 {
+.banner__2db04 {
     margin-bottom: 16px
 }
 
@@ -280,6 +280,10 @@
     font-weight: 500;
     line-height: 20px;
     text-align: center
+}
+
+.button__2db04 {
+    margin-top: 16px
 }
 
 .redirectConfirmation__2db04 {
@@ -859,4 +863,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=9c1c08549ff30198.css.map*/
+/*# sourceMappingURL=e8fb5c9d12c08f09.css.map*/

@@ -58,7 +58,7 @@ let C = function(e) {
     C || y(e => !e)
   }, [C]);
 
-  function N(e) {
+  function E(e) {
     (null == e ? void 0 : e.shiftKey) || j.dispatch(m.CkL.POPOUT_CLOSE)
   }
   return i.useEffect(() => (h.S.subscribe(m.CkL.TOGGLE_CHANNEL_PINS, O), () => {
@@ -73,7 +73,7 @@ let C = function(e) {
     onRequestClose: () => y(!1),
     renderPopout: function(e) {
       return (0, r.jsx)(a.Z, _(b({}, e), {
-        onJump: N,
+        onJump: E,
         channel: t
       }))
     },

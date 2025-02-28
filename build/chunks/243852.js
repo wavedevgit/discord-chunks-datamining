@@ -23,14 +23,14 @@ let y = "ActivityTrackingStore",
   T = {},
   P = !1;
 
-function j(e) {
+function A(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-  t && A(e, !0);
+  t && j(e, !0);
   let n = T[e.applicationId];
   null != n && (n.stop(), delete T[e.applicationId]), delete S[e.applicationId], s.K.set(y, S)
 }
 
-function A(e) {
+function j(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
@@ -52,7 +52,7 @@ function A(e) {
     mediaSessionId: a
   }), e.updatedAt = n;
   let u = T[e.applicationId];
-  null == u && (u = T[e.applicationId] = new c.Xp).start(I, () => A(e)), t || (S[e.applicationId] = e, s.K.set(y, S))
+  null == u && (u = T[e.applicationId] = new c.Xp).start(I, () => j(e)), t || (S[e.applicationId] = e, s.K.set(y, S))
 }
 
 function Z() {
@@ -66,18 +66,18 @@ function Z() {
     }
     of t) {
     let t = _.Z.getGameByName(e);
-    null != t && (n.add(t.id), t.id in S || A({
+    null != t && (n.add(t.id), t.id in S || j({
       applicationId: t.id,
       updatedAt: Date.now(),
       distributor: r,
       exePath: (0, p.N6)(null != i ? i : "")
     }))
   }
-  for (let t of Object.keys(S)) n.has(t) || j(S[t], e)
+  for (let t of Object.keys(S)) n.has(t) || A(S[t], e)
 }
 
 function x() {
-  for (let e of Object.keys(S)) j(S[e]);
+  for (let e of Object.keys(S)) A(S[e]);
   P = !1
 }
 class L extends(i = a.ZP.Store) {
@@ -97,7 +97,7 @@ o = "ActivityTrackingStore", (l = "displayName") in L ? Object.defineProperty(L,
   RUNNING_GAMES_CHANGE: () => Z(),
   CONNECTION_OPEN: function() {
     if (P) return !1;
-    for (let e of Object.keys(S)) A(S[e]);
+    for (let e of Object.keys(S)) j(S[e]);
     Z(!1), P = !0
   },
   CONNECTION_CLOSED: function(e) {

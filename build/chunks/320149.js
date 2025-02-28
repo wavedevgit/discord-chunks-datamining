@@ -27,15 +27,15 @@ function y(e) {
   let {
     channel: t,
     baseChannelId: n
-  } = e, y = (0, _.ZP)(t), I = (0, p.K)(), C = (0, p.V)(), S = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), T = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), P = (0, f.V)(t.id, t.getRecipientId()), j = i.useCallback(() => {
+  } = e, y = (0, _.ZP)(t), I = (0, p.K)(), C = (0, p.V)(), S = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), T = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), P = (0, f.V)(t.id, t.getRecipientId()), A = i.useCallback(() => {
     m.Z.closeChannelSidebar(b.uZ), S && I && (0, g.Kh)(t.id), T && C && (0, g.Kh)(t.id)
-  }, [t.id, T, C, S, I]), A = i.useCallback(() => {
+  }, [t.id, T, C, S, I]), j = i.useCallback(() => {
     (0, o.showToast)((0, o.createToast)(O.NW.string(O.t.pIQ3h4), o.ToastType.FAILURE))
   }, []), {
     markAsNotSpam: Z
   } = (0, h.m)({
-    onAcceptSuccess: j,
-    onError: A
+    onAcceptSuccess: A,
+    onError: j
   });
   if (null == t || !t.isDM()) return null;
   let x = [(0, r.jsx)(s.ZP.Icon, {

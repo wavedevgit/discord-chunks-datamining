@@ -30,8 +30,8 @@ function O(e) {
     onClose: t,
     onSelect: n,
     channel: O,
-    remoteMode: N,
-    onInteraction: E
+    remoteMode: E,
+    onInteraction: N
   } = e, I = (0, o.bp)(), {
     id: P,
     type: S
@@ -40,13 +40,13 @@ function O(e) {
     className: j.menu,
     onClose: t,
     onSelect: n,
-    onInteraction: E,
+    onInteraction: N,
     navId: "more-settings-context",
     "aria-label": x.NW.string(x.t.FTLzdX),
     children: [(0, r.jsx)(l.kSQ, {
       children: S !== y.d4z.GUILD_STAGE_VOICE ? k : null
     }), (0, r.jsxs)(l.kSQ, {
-      children: [S === y.d4z.GUILD_STAGE_VOICE ? W : null, S === y.d4z.GUILD_STAGE_VOICE ? U : null, N || S === y.d4z.GUILD_STAGE_VOICE ? null : L, F, S !== y.d4z.GUILD_STAGE_VOICE ? R : null, S === y.d4z.GUILD_STAGE_VOICE || S === y.d4z.GUILD_VOICE ? M : null]
+      children: [S === y.d4z.GUILD_STAGE_VOICE ? W : null, S === y.d4z.GUILD_STAGE_VOICE ? U : null, E || S === y.d4z.GUILD_STAGE_VOICE ? null : L, F, S !== y.d4z.GUILD_STAGE_VOICE ? R : null, S === y.d4z.GUILD_STAGE_VOICE || S === y.d4z.GUILD_VOICE ? M : null]
     }), (0, r.jsx)(l.kSQ, {
       children: G
     }), (0, r.jsx)(l.kSQ, {

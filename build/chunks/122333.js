@@ -30,7 +30,7 @@ var l = n(481060),
   T = n(188785),
   P = n(630724);
 
-function j(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function j(e) {
   return e
 }
 
-function A(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -131,7 +131,7 @@ class x extends a.Z {
           let {
             default: e
           } = await Promise.all([n.e("63288"), n.e("1337"), n.e("42483"), n.e("89309")]).then(n.bind(n, 599219));
-          return n => (0, i.jsx)(e, A(j({}, n), {
+          return n => (0, i.jsx)(e, j(A({}, n), {
             onSlideChange: t
           }))
         }, {
@@ -165,7 +165,7 @@ class x extends a.Z {
         let {
           default: e
         } = await n.e("77578").then(n.bind(n, 184782));
-        return t => (0, i.jsx)(e, A(j({}, t), {
+        return t => (0, i.jsx)(e, j(A({}, t), {
           guildId: Z
         }))
       }, {

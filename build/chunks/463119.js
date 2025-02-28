@@ -28,8 +28,8 @@ var r = n(200651),
   S = n(141594),
   T = n(302800),
   P = n(215023),
-  j = n(981631),
-  A = n(388032),
+  A = n(981631),
+  j = n(388032),
   Z = n(402204);
 
 function x(e) {
@@ -86,7 +86,7 @@ let R = e => {
     return (0, r.jsx)(u.IGR, {
       className: Z.newBadge,
       color: null != t ? t : _.Z.STATUS_DANGER_BACKGROUND,
-      text: A.NW.string(A.t.y2b7CA)
+      text: j.NW.string(j.t.y2b7CA)
     })
   },
   D = () => {
@@ -125,9 +125,9 @@ let R = e => {
     return (0, r.jsxs)(r.Fragment, {
       children: [E && (0, r.jsx)(D, {}), (0, r.jsx)(p.Qj, L(x({
         selected: t,
-        route: j.Z5c.COLLECTIBLES_SHOP,
+        route: A.Z5c.COLLECTIBLES_SHOP,
         icon: null != l ? l : u.EOn,
-        text: A.NW.string(A.t.pWG4zc),
+        text: j.NW.string(j.t.pWG4zc),
         locationState: n
       }, f, h), {
         onMouseEnter: s,
@@ -179,11 +179,11 @@ let R = e => {
       C = w(e, ["displayOptions"]);
     let S = (0, s.e7)([f.Z], () => f.Z.useReducedMotion),
       [T, P] = i.useState(0),
-      [j, D] = i.useState(!1),
+      [A, D] = i.useState(!1),
       M = (0, h.ZP)(),
       G = I.entrypointDecorationAssets,
       W = (0, c.wj)(M);
-    j ? W ? (t = null === (l = I.entryPointBackgroundAssets) || void 0 === l ? void 0 : l.srcDarkHovered, n = null === (d = I.entrypointBackgroundStyle) || void 0 === d ? void 0 : null === (a = d.hovered) || void 0 === a ? void 0 : a.dark) : (t = null === (p = I.entryPointBackgroundAssets) || void 0 === p ? void 0 : p.srcLightHovered, n = null === (m = I.entrypointBackgroundStyle) || void 0 === m ? void 0 : null === (g = m.hovered) || void 0 === g ? void 0 : g.light) : W ? (t = null === (b = I.entryPointBackgroundAssets) || void 0 === b ? void 0 : b.srcDark, n = null === (E = I.entrypointBackgroundStyle) || void 0 === E ? void 0 : null === (_ = E.resting) || void 0 === _ ? void 0 : _.dark) : (t = null === (N = I.entryPointBackgroundAssets) || void 0 === N ? void 0 : N.srcLight, n = null === (y = I.entrypointBackgroundStyle) || void 0 === y ? void 0 : null === (v = y.resting) || void 0 === v ? void 0 : v.light);
+    A ? W ? (t = null === (l = I.entryPointBackgroundAssets) || void 0 === l ? void 0 : l.srcDarkHovered, n = null === (d = I.entrypointBackgroundStyle) || void 0 === d ? void 0 : null === (a = d.hovered) || void 0 === a ? void 0 : a.dark) : (t = null === (p = I.entryPointBackgroundAssets) || void 0 === p ? void 0 : p.srcLightHovered, n = null === (m = I.entrypointBackgroundStyle) || void 0 === m ? void 0 : null === (g = m.hovered) || void 0 === g ? void 0 : g.light) : W ? (t = null === (b = I.entryPointBackgroundAssets) || void 0 === b ? void 0 : b.srcDark, n = null === (E = I.entrypointBackgroundStyle) || void 0 === E ? void 0 : null === (_ = E.resting) || void 0 === _ ? void 0 : _.dark) : (t = null === (N = I.entryPointBackgroundAssets) || void 0 === N ? void 0 : N.srcLight, n = null === (y = I.entrypointBackgroundStyle) || void 0 === y ? void 0 : null === (v = y.resting) || void 0 === v ? void 0 : v.light);
     let V = i.useCallback(e => {
         P(e => (e + 1) % I.assetIds.length), D(!0), null == e || e()
       }, [I.assetIds.length]),
@@ -202,7 +202,7 @@ let R = e => {
       delay: 100,
       allowOverflow: !0,
       hideOnClick: !1,
-      "aria-label": "string" == typeof H ? H : A.NW.string(A.t.rSXaxc),
+      "aria-label": "string" == typeof H ? H : j.NW.string(j.t.rSXaxc),
       children: e => (0, r.jsxs)(k, L(x(L(x({
         className: null != I.entryPointClassName ? (0, O.l)(Z, I.entryPointClassName) : void 0
       }, C), {
@@ -224,7 +224,7 @@ let R = e => {
         }), null != G && !S && (0, r.jsx)("img", {
           src: (0, c.wj)(M) ? G.srcDark : G.srcLight,
           className: o()(Z.marketingButtonImage, {
-            [Z.marketingButtonImageHovered]: j
+            [Z.marketingButtonImageHovered]: A
           }),
           alt: "",
           "aria-hidden": !0

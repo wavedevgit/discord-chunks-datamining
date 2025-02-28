@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(353093),
   j = n(940725),
   O = n(114487),
-  N = n(979264),
-  E = n(981631),
+  E = n(979264),
+  N = n(981631),
   I = n(921944),
   P = n(388032),
   S = n(376669);
@@ -37,10 +37,10 @@ function Z(e) {
     showToast: l,
     onConfirm: s,
     onDismiss: d
-  } = e, [f, m] = i.useState(!1), g = i.useRef(null), _ = (0, C.Cc)(n.id), v = (0, p.ZP)(), j = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), E = (0, y.nP)(null == _ ? void 0 : null === (t = _.branding) || void 0 === t ? void 0 : t.primaryColor, [c.TVs.colors.BG_BRAND, .5]), I = c.TVs.colors.BG_SURFACE_OVERLAY.resolve({
+  } = e, [f, m] = i.useState(!1), g = i.useRef(null), _ = (0, C.Cc)(n.id), v = (0, p.ZP)(), j = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), N = (0, y.nP)(null == _ ? void 0 : null === (t = _.branding) || void 0 === t ? void 0 : t.primaryColor, [c.TVs.colors.BG_BRAND, .5]), I = c.TVs.colors.BG_SURFACE_OVERLAY.resolve({
     theme: v,
     saturation: 1
-  }).hex(), Z = (0, y.nj)(E, I, "top left", .3, "30%"), T = (0, u.e7)([b.default], () => {
+  }).hex(), Z = (0, y.nj)(N, I, "top left", .3, "30%"), T = (0, u.e7)([b.default], () => {
     var e;
     return null === (e = b.default.getCurrentUser()) || void 0 === e ? void 0 : e.primaryGuild
   }, []);
@@ -131,7 +131,7 @@ function Z(e) {
               iconSize: 64
             }), (0, r.jsx)("div", {
               className: S.guildTagContainer,
-              children: (0, r.jsx)(N.aG, {
+              children: (0, r.jsx)(E.aG, {
                 guildId: n.id,
                 clanTag: null === (i = n.profile) || void 0 === i ? void 0 : i.tag,
                 clanBadge: null === (l = n.profile) || void 0 === l ? void 0 : l.badge,
@@ -172,9 +172,9 @@ function Z(e) {
 function T(e) {
   let {} = e, t = (0, u.e7)([g.Z], () => g.Z.getGuildId()), n = (0, j.h)(t), l = (0, u.e7)([m.Z], () => m.Z.getGuild(t), [t]), [o, a] = i.useState(!1), c = i.useRef(null);
   (0, d.ZP)(() => (n && (c.current = window.setTimeout(() => {
-    a(!0), _.default.track(E.rMx.DISMISSIBLE_CONTENT_SHOWN, {
+    a(!0), _.default.track(N.rMx.DISMISSIBLE_CONTENT_SHOWN, {
       type: s.C[s.C.ADOPT_CLAN_IDENTITY_NOTICE],
-      guild_id: null != t ? t : E.lds
+      guild_id: null != t ? t : N.lds
     })
   }, 2500)), () => {
     null != c.current && window.clearTimeout(c.current)
@@ -183,7 +183,7 @@ function T(e) {
       a(!1), null != t && (0, v.SJ)(t)
     }, [, t]),
     h = i.useCallback(() => {
-      a(!1), null != t && (0, f.Qd)(s.C.ADOPT_CLAN_IDENTITY_NOTICE, null != t ? t : E.lds, !0, I.L.DISMISS)
+      a(!1), null != t && (0, f.Qd)(s.C.ADOPT_CLAN_IDENTITY_NOTICE, null != t ? t : N.lds, !0, I.L.DISMISS)
     }, [t]);
   return n && null != t && null != l ? (0, r.jsx)(Z, {
     guild: l,

@@ -25,8 +25,8 @@ var r = n(200651),
   x = n(184301),
   j = n(347475),
   O = n(221241),
-  N = n(199902),
-  E = n(314897),
+  E = n(199902),
+  N = n(314897),
   I = n(430824),
   P = n(496675),
   S = n(979651),
@@ -135,9 +135,9 @@ let D = 16 / 9,
       id: g,
       blocked: y,
       ignored: x
-    } = t, j = (0, s.Wu)([N.Z], () => N.Z.getAllActiveStreams(), []), {
+    } = t, j = (0, s.Wu)([E.Z], () => E.Z.getAllActiveStreams(), []), {
       selectedParticipant: O,
-      largeStream: E
+      largeStream: N
     } = (0, s.cj)([m.Z], () => ({
       selectedParticipant: null != l ? m.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && m.Z.getStageStreamSize(l.id)
@@ -147,8 +147,8 @@ let D = 16 / 9,
         (0, p.rn)((0, _.my)(e.id), {
           forceMultiple: t.shiftKey
         })
-      }(null == O ? void 0 : O.id) === e.id ? E ? (u.Z.selectParticipant(l.id, null), u.Z.updateStageStreamSize(l.id, !1)) : u.Z.updateStageStreamSize(l.id, !0) : (u.Z.updateStageStreamSize(l.id, !1), u.Z.selectParticipant(l.id, e.id))
-    }, [j, l, O, E]);
+      }(null == O ? void 0 : O.id) === e.id ? N ? (u.Z.selectParticipant(l.id, null), u.Z.updateStageStreamSize(l.id, !1)) : u.Z.updateStageStreamSize(l.id, !0) : (u.Z.updateStageStreamSize(l.id, !1), u.Z.selectParticipant(l.id, e.id))
+    }, [j, l, O, N]);
     return (0, r.jsx)(T.Z, {
       participant: n,
       aspectRatio: D,
@@ -173,7 +173,7 @@ let D = 16 / 9,
       participant: i,
       channel: l,
       width: c
-    } = e, u = (0, h.bp)(), p = l.getGuildId(), b = E.default.getId(), {
+    } = e, u = (0, h.bp)(), p = l.getGuildId(), b = N.default.getId(), {
       simplifiedSettingsEnabled: _
     } = (0, O.Z)({
       location: "StageTile"
@@ -194,7 +194,7 @@ let D = 16 / 9,
           }
         })
       },
-      N = (e, t, i, o) => {
+      E = (e, t, i, o) => {
         switch (e.type) {
           case R.fO.HIDDEN_STREAM:
           case R.fO.STREAM:
@@ -257,7 +257,7 @@ let D = 16 / 9,
       user: C,
       width: c,
       isModerator: x,
-      onContextMenu: N,
+      onContextMenu: E,
       inPopout: u === w.IlC.POPOUT
     }) : (0, r.jsx)(W, {
       stageParticipant: i,
@@ -267,7 +267,7 @@ let D = 16 / 9,
       user: C,
       width: c,
       isModerator: x,
-      onContextMenu: N,
+      onContextMenu: E,
       inPopout: u === w.IlC.POPOUT
     })
   })

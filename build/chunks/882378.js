@@ -21,7 +21,7 @@ var r = n(200651),
 let C = i.memo(function(e) {
   let {
     channel: t
-  } = e, C = (0, u.h)(t.id), v = (0, d.o)(t.id), y = (0, p.M)(t.id), x = (0, o.f9)(), j = (0, l.e7)([f.Z], () => f.Z.hasLayers()), O = i.useCallback(() => v ? b.NW.string(b.t["16QyDg"]) : null != y ? b.NW.string(b.t.kCN9i4) : null, [v, y]), N = i.useMemo(() => (v || null != y) && !x && !j, [v, y, x, j]), [E, I] = i.useState(O());
+  } = e, C = (0, u.h)(t.id), v = (0, d.o)(t.id), y = (0, p.M)(t.id), x = (0, o.f9)(), j = (0, l.e7)([f.Z], () => f.Z.hasLayers()), O = i.useCallback(() => v ? b.NW.string(b.t["16QyDg"]) : null != y ? b.NW.string(b.t.kCN9i4) : null, [v, y]), E = i.useMemo(() => (v || null != y) && !x && !j, [v, y, x, j]), [N, I] = i.useState(O());
   i.useEffect(() => {
     null != y && null != C && (a.uvj.announce(b.NW.string(b.t.acsXuL)), setTimeout(() => {
       (0, c.T)(t.id, [y.id])
@@ -79,8 +79,8 @@ let C = i.memo(function(e) {
     }))
   }, [y, C, t]);
   return null == C ? null : (0, r.jsx)(a.ua7, {
-    forceOpen: N,
-    text: E,
+    forceOpen: E,
+    text: N,
     color: a.FGA.BRAND,
     position: "bottom",
     tooltipClassName: _.tooltip,

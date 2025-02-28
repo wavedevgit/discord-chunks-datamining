@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(367907),
   j = n(906732),
   O = n(493324),
-  N = n(611064),
-  E = n(677432),
+  E = n(611064),
+  N = n(677432),
   I = n(178762),
   P = n(868671),
   S = n(82295),
@@ -46,8 +46,8 @@ var r = n(200651),
   G = n(585483),
   V = n(823379),
   z = n(51144),
-  q = n(998502),
-  Y = n(981631),
+  Y = n(998502),
+  q = n(981631),
   K = n(388032),
   X = n(582525);
 
@@ -101,7 +101,7 @@ function ee(e, t) {
   }
   return i
 }
-let et = q.ZP.getEnableHardwareAcceleration(),
+let et = Y.ZP.getEnableHardwareAcceleration(),
   en = 44 + C.x,
   er = {
     origin: {
@@ -199,7 +199,7 @@ class ei extends i.Component {
       } = this.props, n = "@".concat(z.ZP.getUserTag(e, {
         decoration: "never"
       })), r = "<@".concat(e.id, ">");
-      G.S.dispatchToLastSubscribed(Y.CkL.INSERT_TEXT, {
+      G.S.dispatchToLastSubscribed(q.CkL.INSERT_TEXT, {
         plainText: n,
         rawText: r
       }), _.Z.startTyping(t.id)
@@ -210,8 +210,8 @@ class ei extends i.Component {
       null != t && (e.stopPropagation(), (0, w.f)({
         guildId: t,
         location: {
-          section: Y.jXE.MEMBER_LIST,
-          object: Y.qAy.BOOST_GEM_ICON
+          section: q.jXE.MEMBER_LIST,
+          object: q.qAy.BOOST_GEM_ICON
         }
       }))
     }), Q(this, "renderUserPopout", e => (0, r.jsx)(W.Z, $(J({}, e), {
@@ -254,7 +254,7 @@ let el = i.memo(e => {
       guildId: l,
       size: 16
     });
-    return t === Y.Skl.UNKNOWN ? (0, r.jsx)("div", {
+    return t === q.Skl.UNKNOWN ? (0, r.jsx)("div", {
       className: X.membersGroup,
       children: (0, r.jsx)("div", {
         className: X.memberGroupsPlaceholder
@@ -389,7 +389,7 @@ class es extends i.Component {
         groups: n,
         channel: l
       } = this.props, o = n[t];
-      return (0, N.R)(o) ? (0, i.createElement)(N.Z, $(J({}, o), {
+      return (0, E.R)(o) ? (0, i.createElement)(E.Z, $(J({}, o), {
         key: "section-".concat(t)
       })) : 0 === t ? (0, r.jsx)(L.Z, {
         tutorialId: "whos-online",
@@ -461,7 +461,7 @@ class es extends i.Component {
             children: t
           }, e) : t
         }
-        if (o.type === U.so.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(E.Z, {}, "content-inventory-hidden-entry")
+        if (o.type === U.so.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(N.Z, {}, "content-inventory-hidden-entry")
       }
       return (0, r.jsx)(ea, {
         index: i
@@ -478,7 +478,7 @@ class es extends i.Component {
       this.props.updateMaxContentFeedRowSeen(n + t - 40)
     }, 50)), Q(this, "getContentFeedGroup", () => {
       let e = this.props.groups[P.T];
-      if ((0, N.R)(e)) return e
+      if ((0, E.R)(e)) return e
     }), Q(this, "hasContentFeed", () => null != this.getContentFeedGroup()), Q(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
         {
@@ -527,14 +527,14 @@ class es extends i.Component {
       this.hasContentFeed() && (t = t.filter(e => e.section !== P.T));
       let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(V.lm);
       if (0 === r.length) return;
-      let i = r.reduce((e, t) => (t.type !== U.so.MEMBER || (e.num_users_visible++, t.isMobileOnline && e.num_users_visible_with_mobile_indicator++, null != t.activities && t.activities.length > 0 && (e.num_users_visible_with_activity++, t.activities.some(e => e.type === Y.IIU.PLAYING) && e.num_users_visible_with_game_activity++), null != t.user.avatarDecoration && e.num_users_visible_with_avatar_decoration++), e), {
+      let i = r.reduce((e, t) => (t.type !== U.so.MEMBER || (e.num_users_visible++, t.isMobileOnline && e.num_users_visible_with_mobile_indicator++, null != t.activities && t.activities.length > 0 && (e.num_users_visible_with_activity++, t.activities.some(e => e.type === q.IIU.PLAYING) && e.num_users_visible_with_game_activity++), null != t.user.avatarDecoration && e.num_users_visible_with_avatar_decoration++), e), {
         num_users_visible: 0,
         num_users_visible_with_mobile_indicator: 0,
         num_users_visible_with_game_activity: 0,
         num_users_visible_with_activity: 0,
         num_users_visible_with_avatar_decoration: 0
       });
-      this.lastReportedAnalyticsChannel = this.props.channel.id, x.ZP.trackWithMetadata(Y.rMx.MEMBER_LIST_VIEWED, J({}, i))
+      this.lastReportedAnalyticsChannel = this.props.channel.id, x.ZP.trackWithMetadata(q.rMx.MEMBER_LIST_VIEWED, J({}, i))
     })
   }
 }
@@ -575,13 +575,13 @@ function ec(e) {
         })
       }
     })
-  }, [x]), N = i.useCallback(() => new Promise(e => {
+  }, [x]), E = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), []), E = i.useCallback(() => new Promise(e => {
+  }), []), N = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToBottom({
@@ -593,8 +593,8 @@ function ec(e) {
     id: "members-".concat(t.id),
     setFocus: O,
     isEnabled: a,
-    scrollToStart: N,
-    scrollToEnd: E
+    scrollToStart: E,
+    scrollToEnd: N
   });
   return (0, r.jsx)(j.Gt, {
     value: l,

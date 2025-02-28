@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => j
+  Z: () => A
 }), n(47120), n(411104);
 var r = n(200651),
   i = n(192379),
@@ -46,7 +46,7 @@ let C = Object.freeze({
     trailing: !0
   });
 
-function j(e) {
+function A(e) {
   let {
     loadId: t,
     onGuildCardSeen: n,
@@ -55,13 +55,13 @@ function j(e) {
     guildIds: s,
     loading: h,
     searchResultsQuery: y,
-    loadMore: j,
-    searchCategoryId: A
+    loadMore: A,
+    searchCategoryId: j
   } = (0, b.f)({
     loadId: t
   }), Z = 0 === s.length && !h, x = i.useContext(d.AnalyticsContext), [L, w] = i.useState((0, m.PM)()), [R, D] = i.useState(!0), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), W = i.useRef(null), V = i.useCallback(e => {
-    if (null != e && !Z && !h) 336 * (s.length / M) <= e.height && j()
-  }, [Z, h, s.length, M, j]), B = (0, u.y)(e => {
+    if (null != e && !Z && !h) 336 * (s.length / M) <= e.height && A()
+  }, [Z, h, s.length, M, A]), B = (0, u.y)(e => {
     let t = null == e ? void 0 : e.getBoundingClientRect();
     if (null == t) return;
     let n = t.width;
@@ -82,10 +82,10 @@ function j(e) {
       query: y,
       guildResults: s.map(f.Z.getGuild).filter(p.lm),
       analyticsContext: x,
-      categoryId: A
+      categoryId: j
     })
-  }, [x, s, t, A, L, y]);
-  let H = i.useCallback(e => n(e, A), [n, A]),
+  }, [x, s, t, j, L, y]);
+  let H = i.useCallback(e => n(e, j), [n, j]),
     F = i.useMemo(() => h ? [s.length, 0] : [s.length], [s.length, h]),
     z = i.useCallback((e, n, i) => {
       switch (e) {
@@ -163,13 +163,13 @@ function j(e) {
           style: n,
           children: (0, r.jsx)(v.ZP, {
             guildId: e,
-            onClick: async e => await Q(e, t, A, T),
+            onClick: async e => await Q(e, t, j, T),
             onView: e => H(e)
           })
         }, i)
       }
       return null
-    }, [s, Q, H, A]);
+    }, [s, Q, H, j]);
   i.useEffect(() => {
     let e = W.current;
     return () => {
@@ -199,10 +199,10 @@ function j(e) {
       let t = null === (e = W.current) || void 0 === e ? void 0 : e.getScrollerState();
       if (null == t) return;
       let n = t.scrollTop + t.offsetHeight;
-      t.scrollHeight - n < 240 && j()
+      t.scrollHeight - n < 240 && A()
     }, 100, {
       leading: !0
-    }), [j]),
+    }), [A]),
     $ = R ? C : S;
   return (0, r.jsx)("div", {
     className: I.container,

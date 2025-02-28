@@ -1,6 +1,6 @@
 /** Chunk was on 4566 **/
 n.d(t, {
-  Z: () => E
+  Z: () => N
 }), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -24,13 +24,13 @@ var r = n(200651),
   x = n(251564),
   j = n(695492),
   O = n(981631),
-  N = n(126222);
+  E = n(126222);
 
-function E(e) {
+function N(e) {
   let {
     participants: t,
     onClick: n,
-    onDoubleClick: E,
+    onDoubleClick: N,
     onContextMenu: I,
     channel: P,
     className: S,
@@ -63,10 +63,10 @@ function E(e) {
     z = L.map(e => t => (0, r.jsx)(y.ZP, {
       participant: e,
       channel: P,
-      className: N.tile,
+      className: E.tile,
       paused: A,
       onClick: n,
-      onDoubleClick: E,
+      onDoubleClick: N,
       onContextMenu: I,
       inCall: Z,
       width: t,
@@ -103,13 +103,13 @@ function E(e) {
     handleClose: D,
     userParticipantCount: k
   })));
-  let q = i.useCallback(e => {
+  let Y = i.useCallback(e => {
     var t, n;
     return null !== (n = null === (t = L[e]) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : "empty-tile"
   }, [L]);
   return (0, r.jsx)(g.Z, {
     className: S,
-    keyExtractor: q,
+    keyExtractor: Y,
     paddingTop: 64,
     paddingBottom: 64,
     children: z

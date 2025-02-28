@@ -28,8 +28,8 @@ var r = n(200651),
   S = n(427679),
   T = n(448206),
   P = n(184301),
-  j = n(347475),
-  A = n(496675),
+  A = n(347475),
+  j = n(496675),
   Z = n(594174),
   x = n(662868),
   L = n(981631),
@@ -83,7 +83,7 @@ function U(e) {
     isEventNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       eventId: null == U ? void 0 : U.id
     })
-  }), [G, U]), B = null == l ? void 0 : l.id, H = (0, a.Wu)([I.Z], () => [...new Set(I.Z.getMutableParticipants(B, C.pV.SPEAKER).map(e => e.user))], [B]), F = (0, a.e7)([I.Z], () => null != B ? I.Z.getParticipantCount(B, C.pV.AUDIENCE) : 0, [B]), z = (0, a.e7)([A.Z], () => A.Z.can(L.Plq.CONNECT, l)), Y = (0, T.Z)(null == l ? void 0 : l.id), K = null == U ? void 0 : U.creator_id, q = (0, a.e7)([Z.default], () => Z.default.getUser(K), [K]);
+  }), [G, U]), B = null == l ? void 0 : l.id, H = (0, a.Wu)([I.Z], () => [...new Set(I.Z.getMutableParticipants(B, C.pV.SPEAKER).map(e => e.user))], [B]), F = (0, a.e7)([I.Z], () => null != B ? I.Z.getParticipantCount(B, C.pV.AUDIENCE) : 0, [B]), z = (0, a.e7)([j.Z], () => j.Z.can(L.Plq.CONNECT, l)), Y = (0, T.Z)(null == l ? void 0 : l.id), K = null == U ? void 0 : U.creator_id, q = (0, a.e7)([Z.default], () => Z.default.getUser(K), [K]);
   i.useEffect(() => {
     null != K && (0, u.PR)(K)
   }, [K]);
@@ -322,7 +322,7 @@ function U(e) {
         preload: () => (0, P.Z)(e, {
           guildId: t.id
         }),
-        renderPopout: n => (0, r.jsx)(j.Z, M(k({}, n), {
+        renderPopout: n => (0, r.jsx)(A.Z, M(k({}, n), {
           userId: e.id,
           guildId: t.id,
           newAnalyticsLocations: [d.Z.AVATAR]

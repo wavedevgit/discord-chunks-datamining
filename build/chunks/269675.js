@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => j
+  Z: () => A
 });
 var r = n(200651),
   i = n(192379),
@@ -31,7 +31,7 @@ var r = n(200651),
 function P(e) {
   let {
     guildId: t
-  } = e, n = (0, o.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, o.e7)([f.Z], () => f.Z.isConnected()), j = (0, p.Z)(t), A = (0, E.Z)(t), Z = (0, o.e7)([b.Z], () => b.Z.isSubscriptionFetching), x = (0, _.f)(), {
+  } = e, n = (0, o.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, o.e7)([f.Z], () => f.Z.isConnected()), A = (0, p.Z)(t), j = (0, E.Z)(t), Z = (0, o.e7)([b.Z], () => b.Z.isSubscriptionFetching), x = (0, _.f)(), {
     shouldHideGuildPurchaseEntryPoints: L,
     restrictionsLoading: w
   } = (0, h.uP)(t), R = null == n || !x || Z || w;
@@ -39,7 +39,7 @@ function P(e) {
     subsection: S.NW.string(S.t["KzCF//"]),
     location: null == n ? void 0 : n.name
   }), (0, c.Z)(l.tq ? "role-subscriptions-overview" : void 0);
-  let D = P && (null == n || !(j || A) || L && !w);
+  let D = P && (null == n || !(A || j) || L && !w);
   if (i.useEffect(() => {
       s.jg()
     }, []), i.useEffect(() => {
@@ -65,7 +65,7 @@ function P(e) {
       id: I.v
     }), (0, r.jsx)("div", {
       className: T.content,
-      children: j ? (0, r.jsx)(a.u2D, {
+      children: A ? (0, r.jsx)(a.u2D, {
         className: T.scroller,
         children: (0, r.jsx)("div", {
           className: T.scrollerContent,
@@ -78,7 +78,7 @@ function P(e) {
   })
 }
 
-function j(e) {
+function A(e) {
   let {
     guildId: t
   } = e;

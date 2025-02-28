@@ -1,6 +1,6 @@
 /** Chunk was on 4566 **/
 n.d(t, {
-  Z: () => S
+  Z: () => T
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,25 +9,27 @@ var r = n(200651),
   a = n(582019),
   s = n(481060),
   c = n(239091),
-  u = n(706140),
-  d = n(242291),
-  p = n(792165),
-  h = n(603074),
-  f = n(861254),
-  m = n(221241),
-  g = n(82965),
-  b = n(294629),
-  _ = n(390322),
-  C = n(871499),
-  v = n(131951),
-  y = n(459273),
-  x = n(795318),
-  j = n(304388),
-  O = n(981631),
-  N = n(127379),
-  E = n(388032);
+  u = n(906732),
+  d = n(706140),
+  p = n(242291),
+  h = n(792165),
+  f = n(603074),
+  m = n(861254),
+  g = n(221241),
+  b = n(82965),
+  _ = n(294629),
+  C = n(390322),
+  v = n(871499),
+  y = n(131951),
+  x = n(459273),
+  j = n(522651),
+  O = n(795318),
+  E = n(304388),
+  N = n(981631),
+  I = n(127379),
+  P = n(388032);
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +48,7 @@ function I(e) {
   return e
 }
 
-function P(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,104 +61,113 @@ function P(e, t) {
   }), e
 }
 
-function S(e) {
+function T(e) {
   let {
     channel: t,
-    themeable: S,
-    whichPopoutIsOpen: Z,
-    setWhichPopoutIsOpen: T
+    themeable: T,
+    whichPopoutIsOpen: A,
+    setWhichPopoutIsOpen: w
   } = e, {
-    Component: A,
+    parentAnalyticsLocation: R
+  } = (0, u.ZP)(), {
+    Component: M,
     events: {
-      onMouseEnter: w,
-      onMouseLeave: R
+      onMouseEnter: k,
+      onMouseLeave: L
     }
-  } = (0, a.j)(), M = t.getGuildId(), {
-    mute: k,
-    suppress: L
-  } = (0, b.Z)(t), D = (0, l.e7)([v.Z], () => v.Z.isDeaf()), W = k || L || D, U = (0, d.sR)({
-    isSoundboardButtonDisabled: W
-  }), [B, H] = (0, u.cv)(U), {
-    mode: F
-  } = (0, f.ZP)({
+  } = (0, a.j)(), D = t.getGuildId(), {
+    mute: W,
+    suppress: U
+  } = (0, _.Z)(t), B = (0, l.e7)([y.Z], () => y.Z.isDeaf()), H = W || U || B, F = (0, p.sR)({
+    isSoundboardButtonDisabled: H
+  }), [G, V] = (0, d.cv)(F), {
+    mode: z
+  } = (0, m.ZP)({
     location: "ActionBarSoundboardButton"
-  }), G = (0, g.Z)({
+  }), Y = (0, b.Z)({
     location: "ActionBarSoundboardButton"
   }), {
-    coloredIconsEnabled: V,
-    squareButtonsEnabled: z
-  } = (0, m.Z)({
+    coloredIconsEnabled: q,
+    squareButtonsEnabled: K
+  } = (0, g.Z)({
     location: "ActionBarSoundboardButton"
   });
 
-  function q() {
-    return k ? E.NW.string(E.t["Ox4/zc"]) : L ? E.NW.string(E.t["+YBKYG"]) : D ? E.NW.string(E.t.X1lQlp) : void 0
+  function X() {
+    return W ? P.NW.string(P.t["Ox4/zc"]) : U ? P.NW.string(P.t["+YBKYG"]) : B ? P.NW.string(P.t.X1lQlp) : void 0
   }
 
-  function Y(e) {
-    null != M && (0, c.jW)(e, async () => {
+  function Q(e) {
+    null != D && (0, c.jW)(e, async () => {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
-      return t => (0, r.jsx)(e, P(I({
-        guildId: M
+      return t => (0, r.jsx)(e, Z(S({
+        guildId: D
       }, t), {
-        onInteraction: (0, x.u)("SoundboardContextMenu", "ActionBarSoundboardButton")
+        onInteraction: (0, O.u)("SoundboardContextMenu", "ActionBarSoundboardButton")
       }))
     })
   }
-  let K = i.useRef(null),
-    X = i.useCallback(() => {
+  let J = i.useRef(null),
+    $ = i.useCallback(() => {
       var e;
-      null === (e = K.current) || void 0 === e || e.hidePopout()
+      null === (e = J.current) || void 0 === e || e.hidePopout()
     }, []);
-  return (0, y.yp)({
-    event: O.CkL.TOGGLE_SOUNDBOARD,
-    handler: X
-  }), (0, r.jsx)(j.Z, {
-    ref: K,
-    isPopoutBlocked: null != Z && Z !== N.D.SOUNDBOARD,
-    onPopoutClose: () => null == T ? void 0 : T(void 0),
-    onPopoutOpen: () => null == T ? void 0 : T(N.D.SOUNDBOARD),
-    align: G ? "center" : "left",
+  return (0, x.yp)({
+    event: N.CkL.TOGGLE_SOUNDBOARD,
+    handler: $
+  }), (0, r.jsx)(E.Z, {
+    ref: J,
+    isPopoutBlocked: null != A && A !== I.D.SOUNDBOARD,
+    onPopoutClose: () => null == w ? void 0 : w(void 0),
+    onPopoutOpen: () => null == w ? void 0 : w(I.D.SOUNDBOARD),
+    align: Y ? "center" : "left",
     renderPopout: e => {
       let {
         closePopout: n
       } = e;
-      return W ? null : (0, r.jsx)(_.Z, {
-        children: (0, r.jsx)(h.Z, {
-          guildId: M,
+      return H ? null : (0, r.jsx)(C.Z, {
+        children: (0, r.jsx)(f.Z, {
+          guildId: D,
           channel: t,
           onClose: n,
-          gridNotice: B === o.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(p.o, {
+          gridNotice: G === o.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(h.o, {
             onClose: n,
-            markAsDismissed: H
+            markAsDismissed: V
           }),
           analyticsSource: "action bar button"
         })
       })
     },
-    children: e => G ? (0, r.jsx)(C.d, P(I({
-      themeable: S,
-      label: q(),
-      iconComponent: A,
-      disabled: W,
-      onContextMenu: Y
+    children: e => Y ? (0, r.jsx)(v.d, Z(S({
+      themeable: T,
+      label: X(),
+      iconComponent: M,
+      disabled: H,
+      onContextMenu: Q
     }, e), {
+      onClick: t => {
+        (0, j.v)(R, j.d.SOUNDBOARD), null == e || e.onClick(t)
+      },
       onMouseEnter: t => {
-        e.onMouseEnter(t), w()
+        e.onMouseEnter(t), k()
       },
       onMouseLeave: () => {
-        e.onMouseLeave(), R()
+        e.onMouseLeave(), L()
       },
-      color: e.isActive ? V ? "primaryDark" : F === f.BK.GroupedButtonsRedMic || z ? "green" : void 0 : void 0,
+      color: e.isActive ? q ? "primaryDark" : z === m.BK.GroupedButtonsRedMic || K ? "green" : void 0 : void 0,
       className: ""
-    })) : (0, r.jsx)(C.Z, I({
-      themeable: S,
-      label: q(),
+    })) : (0, r.jsx)(v.Z, Z(S({
+      themeable: T,
+      label: X(),
       iconComponent: s.KY1,
-      disabled: W,
-      onContextMenu: Y
-    }, e))
+      disabled: H,
+      onContextMenu: Q
+    }, e), {
+      onClick: t => {
+        (0, j.v)(R, j.d.SOUNDBOARD), null == e || e.onClick(t)
+      }
+    }))
   })
 }

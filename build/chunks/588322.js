@@ -24,11 +24,11 @@ var r = n(200651),
 function y(e) {
   let {
     channelId: t
-  } = e, y = (0, l.e7)([m.Z], () => m.Z.getChannel(t)), x = (0, l.e7)([m.Z], () => m.Z.getChannel(null == y ? void 0 : y.parent_id)), j = (0, l.e7)([b.Z], () => b.Z.getGuild(null == y ? void 0 : y.getGuildId())), O = (0, s.ZP)(y), N = i.useRef(!1);
+  } = e, y = (0, l.e7)([m.Z], () => m.Z.getChannel(t)), x = (0, l.e7)([m.Z], () => m.Z.getChannel(null == y ? void 0 : y.parent_id)), j = (0, l.e7)([b.Z], () => b.Z.getGuild(null == y ? void 0 : y.getGuildId())), O = (0, s.ZP)(y), E = i.useRef(!1);
   if (i.useEffect(() => {
-      null == y || N.current || (N.current = !0, (0, _.lN)(y))
+      null == y || E.current || (E.current = !0, (0, _.lN)(y))
     }, [y]), null == y || null == j) return null;
-  let E = (0, r.jsx)(f.Z, {
+  let N = (0, r.jsx)(f.Z, {
     channel: y
   });
   return (0, r.jsxs)(r.Fragment, {
@@ -36,7 +36,7 @@ function y(e) {
       channel: y,
       draftType: g.d.ChannelMessage
     }), (0, r.jsx)(d.ZP, {
-      toolbar: E,
+      toolbar: N,
       "aria-label": C.NW.string(C.t.Pwe8tL),
       children: (0, p.ud)({
         channel: y,

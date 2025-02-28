@@ -116,12 +116,12 @@ let N = {
     top: 0,
     right: 0
   }),
-  minimumOffsets: {
-    right: 12
-  },
   fallbackAbsoluteOffsets: {
     top: 84,
     right: 32
+  },
+  minimumOffsets: {
+    right: 12
   }
 };
 

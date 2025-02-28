@@ -58,7 +58,7 @@ function C(e, t) {
 let S = "CachedTokens";
 
 function T(e, t, n) {
-  return (0, N.S)() ? P(e, t, n) : j(e, t, n)
+  return (0, N.S)() ? P(e, t, n) : A(e, t, n)
 }
 async function P(e, t, n) {
   let r, l, a, s, c, {
@@ -73,8 +73,8 @@ async function P(e, t, n) {
     permissions: S,
     guild_id: T,
     channel_id: P,
-    prompt: j,
-    disable_guild_select: A,
+    prompt: A,
+    disable_guild_select: j,
     integration_type: Z,
     pid: x,
     signal: L
@@ -120,7 +120,7 @@ async function P(e, t, n) {
     var R;
     l = null != a.application.flags && (0, _.yE)(a.application.flags, y.udG.EMBEDDED) && (null === (R = a.application.integration_types_config) || void 0 === R ? void 0 : R[i.Y.USER_INSTALL]) != null ? i.Y.USER_INSTALL : i.Y.GUILD_INSTALL
   }
-  if (j === f.s.NONE && null != a && a.authorized && c) try {
+  if (A === f.s.NONE && null != a && a.authorized && c) try {
     return (await (0, h.Iq)({
       authorize: !0,
       clientId: u,
@@ -158,14 +158,14 @@ async function P(e, t, n) {
     state: v,
     guildId: T,
     channelId: P,
-    prompt: j,
-    disableGuildSelect: A,
+    prompt: A,
+    disableGuildSelect: j,
     disclosures: s,
     integrationType: l,
     pid: x
   })
 }
-async function j(e, t, n) {
+async function A(e, t, n) {
   var r, l, a, s;
   let c;
   let u, N, v, I, {
@@ -173,8 +173,8 @@ async function j(e, t, n) {
     response_type: S = "code",
     redirect_uri: T,
     code_challenge: P,
-    code_challenge_method: j,
-    state: A,
+    code_challenge_method: A,
+    state: j,
     nonce: Z,
     scope: x,
     permissions: L,
@@ -210,8 +210,8 @@ async function j(e, t, n) {
       responseType: S,
       redirectUri: T,
       codeChallenge: P,
-      codeChallengeMethod: j,
-      state: A,
+      codeChallengeMethod: A,
+      state: j,
       integrationType: u,
       signal: G
     })
@@ -244,8 +244,8 @@ async function j(e, t, n) {
       responseType: S,
       redirectUri: T,
       codeChallenge: P,
-      codeChallengeMethod: j,
-      state: A,
+      codeChallengeMethod: A,
+      state: j,
       nonce: Z,
       integrationType: u
     })).location
@@ -270,8 +270,8 @@ async function j(e, t, n) {
     responseType: S,
     redirectUri: T,
     codeChallenge: P,
-    codeChallengeMethod: j,
-    state: A,
+    codeChallengeMethod: A,
+    state: j,
     guildId: w,
     channelId: R,
     prompt: D,
@@ -282,7 +282,7 @@ async function j(e, t, n) {
   })
 }
 
-function A(e, t) {
+function j(e, t) {
   if (e.authorization.accessToken) throw new O.Z({
     errorCode: y.lTL.INVALID_COMMAND
   }, "Already authenticated");
@@ -369,7 +369,7 @@ function Z(e, t) {
                   scope: n,
                   expires: Date.now() + r
                 }, c.K.set(S, l)
-              }(n, l.access_token, l.scope, l.expires_in), A(i, l.access_token)
+              }(n, l.access_token, l.scope, l.expires_in), j(i, l.access_token)
             });
           return null != (a = function(e, t) {
             let n = c.K.get(S);
@@ -378,7 +378,7 @@ function Z(e, t) {
               if (!(r.scope !== t || r.expires <= Date.now())) return r.accessToken;
               delete n[e], c.K.set(S, n)
             }
-          }(n, s)) ? A(i, a).catch(() => (! function(e) {
+          }(n, s)) ? j(i, a).catch(() => (! function(e) {
             var t;
             let n = null !== (t = c.K.get(S)) && void 0 !== t ? t : {};
             delete n[e], c.K.set(S, n)
@@ -387,7 +387,7 @@ function Z(e, t) {
         if (null == a) throw new O.Z({
           errorCode: y.lTL.INVALID_TOKEN
         }, "No access token provided");
-        return A(i, a)
+        return j(i, a)
       }
     }),
     [y.Etm.AUTHORIZE]: {

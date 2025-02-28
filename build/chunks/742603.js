@@ -25,8 +25,8 @@ var i = n(120356),
   x = n(454585),
   j = n(134483),
   O = n(210975),
-  N = n(809244),
-  E = n(618158),
+  E = n(809244),
+  N = n(618158),
   I = n(358221),
   P = n(362721),
   S = n(887012),
@@ -77,7 +77,7 @@ function B(e) {
     focusedParticipant: t,
     channel: n
   } = e, i = (0, c.bp)(), l = (0, o.e7)([I.Z], () => I.Z.getLayout(n.id, i));
-  return (0, r.jsx)(E.Z, {
+  return (0, r.jsx)(N.Z, {
     children: (0, r.jsx)(T.Z, {
       className: L.participants,
       participant: t,
@@ -95,7 +95,7 @@ function H(e) {
     channel: n,
     stream: i,
     color: l
-  } = e, o = (0, N.Z)(n, t, i);
+  } = e, o = (0, E.Z)(n, t, i);
   return null == t || null == i ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       className: L.avatar,
@@ -176,8 +176,8 @@ function G(e) {
   } = (0, o.cj)([I.Z], () => ({
     focusedParticipant: I.Z.getSelectedParticipant(t.id),
     participantsOpen: I.Z.getParticipantsOpen(t.id)
-  }), [t.id]), b = (0, h.ZP)(t), _ = (0, f.KS)(t), [N] = (0, d.Z)((null == g ? void 0 : g.type) === w.fO.ACTIVITY ? [g.applicationId] : []), E = k.NW.string(k.t.BVZqJi);
-  t.isDM() ? E = k.NW.string(k.t.jN2DfX) : t.isGroupDM() && (E = k.NW.string(k.t["e5y+go"]));
+  }), [t.id]), b = (0, h.ZP)(t), _ = (0, f.KS)(t), [E] = (0, d.Z)((null == g ? void 0 : g.type) === w.fO.ACTIVITY ? [g.applicationId] : []), N = k.NW.string(k.t.BVZqJi);
+  t.isDM() ? N = k.NW.string(k.t.jN2DfX) : t.isGroupDM() && (N = k.NW.string(k.t["e5y+go"]));
   let S = (0, o.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     T = t.isGuildVoice() && c && null != S && S.length > 0,
     B = (0, P.ZP)(t),
@@ -245,7 +245,7 @@ function G(e) {
         children: [null != _ ? (0, r.jsx)(C.ZP.Icon, {
           icon: _,
           disabled: !0,
-          "aria-label": E
+          "aria-label": N
         }) : null, (0, r.jsx)(C.ZP.Title, {
           children: (0, r.jsxs)(r.Fragment, {
             children: [b, V && (0, r.jsx)(a.ua7, {
@@ -262,7 +262,7 @@ function G(e) {
           channel: t,
           guild: i
         }), (0, r.jsx)(F, {
-          focusedApplication: N,
+          focusedApplication: E,
           focusedParticipant: g,
           channel: t
         })]

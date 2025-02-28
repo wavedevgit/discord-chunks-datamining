@@ -21,18 +21,18 @@ var i, l, o, a = n(392711),
   x = n(981631);
 let j = !1,
   O = "",
-  N = 0,
-  E = [],
+  E = 0,
+  N = [],
   I = !1,
   P = new Set,
   S = null;
 
 function Z() {
-  O = "", N = 0, E = [], P = new Set, j = !1, S = null
+  O = "", E = 0, N = [], P = new Set, j = !1, S = null
 }
 
 function T(e) {
-  O = e, N = 0, A()
+  O = e, E = 0, A()
 }
 
 function A() {
@@ -41,7 +41,7 @@ function A() {
   if (0 === O.trim().length) {
     var t;
     let n;
-    return null != r && r.clearQuery(), t = e, n = v.Z.getFriendIDs(), (null == t ? void 0 : t.isPrivate()) && (n = n.filter(e => !t.recipients.includes(e))), E = n.reduce((e, t) => {
+    return null != r && r.clearQuery(), t = e, n = v.Z.getFriendIDs(), (null == t ? void 0 : t.isPrivate()) && (n = n.filter(e => !t.recipients.includes(e))), N = n.reduce((e, t) => {
       let n = y.default.getUser(t);
       return null == n || n.isProvisional || e.push({
         user: n,
@@ -105,7 +105,7 @@ function M(e) {
       comparator: r
     })
   }
-  E = n, B.emitChange()
+  N = n, B.emitChange()
 }
 
 function k() {
@@ -130,7 +130,7 @@ class U extends(i = c.ZP.Store) {
     this.waitFor(y.default, b.Z, v.Z, p.Z, _.Z), this.syncWith([y.default, b.Z], A), this.syncWith([v.Z], w)
   }
   getResults() {
-    return E
+    return N
   }
   hasFriends() {
     return I
@@ -144,9 +144,9 @@ class U extends(i = c.ZP.Store) {
   getState() {
     return {
       query: O,
-      selectedRow: N,
+      selectedRow: E,
       selectedUsers: P,
-      results: E,
+      results: N,
       hasFriends: I
     }
   }
@@ -182,7 +182,7 @@ let B = new U(u.Z, {
       S = e.channelId, T(e.query)
     },
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
-      N = e.row
+      E = e.row
     },
     PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: function(e) {
       let {

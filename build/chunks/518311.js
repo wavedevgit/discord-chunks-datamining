@@ -23,8 +23,8 @@ var r, i = n(200651),
   x = n(425493),
   j = n(461745),
   O = n(40851),
-  N = n(367907),
-  E = n(43267),
+  E = n(367907),
+  N = n(43267),
   I = n(933557),
   P = n(600164),
   S = n(313201),
@@ -45,8 +45,8 @@ var r, i = n(200651),
   G = n(572004),
   V = n(585483),
   z = n(823379),
-  q = n(709054),
-  Y = n(51144),
+  Y = n(709054),
+  q = n(51144),
   K = n(73752),
   X = n(665149),
   Q = n(575464),
@@ -139,7 +139,7 @@ let ec = e => {
       children: (0, i.jsxs)("div", {
         className: ee.confirmChannelItemContainer,
         children: [(0, i.jsx)(f.qEK, {
-          src: (0, E.x)(n),
+          src: (0, N.x)(n),
           size: f.EFr.SIZE_24,
           "aria-label": l
         }), (0, i.jsx)("span", {
@@ -147,7 +147,7 @@ let ec = e => {
           children: l
         }), (0, i.jsx)("span", {
           className: ee.lastActiveTimestamp,
-          children: d()(q.default.extractTimestamp(o)).fromNow()
+          children: d()(Y.default.extractTimestamp(o)).fromNow()
         })]
       })
     })
@@ -177,7 +177,7 @@ let ec = e => {
           var n, r;
           let i = null !== (n = e.lastMessageId) && void 0 !== n ? n : e.id,
             l = null !== (r = t.lastMessageId) && void 0 !== r ? r : t.id;
-          return q.default.compare(l, i)
+          return Y.default.compare(l, i)
         }).map(e => (0, i.jsx)(ec, {
           onClose: r.onClose,
           channel: e
@@ -200,7 +200,7 @@ class ed extends(r = l.PureComponent) {
       channel: e
     } = this.props;
     m.Z.wait(() => v.Z.open(null == e ? void 0 : e.id));
-    let t = (0, N.v_)(e);
+    let t = (0, E.v_)(e);
     F.default.track(J.rMx.OPEN_POPOUT, ei(er({}, t), {
       type: this._getAnalyticsEntryPoint().entryPointType,
       source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -313,7 +313,7 @@ class ed extends(r = l.PureComponent) {
     let s = [];
     return o.forEach(e => {
       let t = H.default.getUser(e);
-      null != t && s.push(Y.ZP.getName(t))
+      null != t && s.push(q.ZP.getName(t))
     }), (0, i.jsxs)(P.Z, {
       className: a()(ee.searchBar),
       children: [(0, i.jsx)(j.ZP, {
@@ -494,7 +494,7 @@ class ed extends(r = l.PureComponent) {
   }
   handleAddFriend(e) {
     this.props.onClose(), y.Z.sendRequest({
-      discordTag: Y.ZP.getUserTag(e, {
+      discordTag: q.ZP.getUserTag(e, {
         identifiable: "always"
       }),
       context: {
@@ -595,7 +595,7 @@ class ed extends(r = l.PureComponent) {
     }), en(this, "handleQueryChange", e => {
       let {
         channel: t
-      } = this.props, n = (0, N.v_)(t);
+      } = this.props, n = (0, E.v_)(t);
       v.Z.search(e, null == t ? void 0 : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
         F.default.track(J.rMx.SEARCH_USER_LIST_STARTED, ei(er({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
@@ -625,7 +625,7 @@ class ed extends(r = l.PureComponent) {
         {
           channel: n
         } = this.props,
-        r = (0, N.v_)(n),
+        r = (0, E.v_)(n),
         i = !0;
       1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), F.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
         is_new_dm: i,
@@ -637,7 +637,7 @@ class ed extends(r = l.PureComponent) {
       })), b.Z.openPrivateChannel(e, !1, !1, "New Group DM")
     }), en(this, "pushToExistingDM", (e, t) => {
       let n = this._searchCounter,
-        r = (0, N.v_)(e),
+        r = (0, E.v_)(e),
         i = D.Z.getChannelId() === e.id;
       b.Z.addRecipients(e.id, t, J.Sbl.ADD_FRIENDS_TO_DM).then(n => {
         if (i) {

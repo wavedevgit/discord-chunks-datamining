@@ -29,12 +29,12 @@ let j = (e, t) => _.ZP.getName(e.getGuildId(), e.id, t.user),
       participants: l,
       channel: _,
       hasConnectPermission: O
-    } = e, N = (0, d.Q3)("StageChannelCallEmpty"), E = null !== (n = null === (t = g.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== n && n, I = (0, h.J)(_.guild_id), P = i.useCallback(() => {
+    } = e, E = (0, d.Q3)("StageChannelCallEmpty"), N = null !== (n = null === (t = g.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== n && n, I = (0, h.J)(_.guild_id), P = i.useCallback(() => {
       I ? (0, p.hk)(_.guild_id, () => c.default.selectVoiceChannel(_.id)) : c.default.selectVoiceChannel(_.id)
     }, [_.id, _.guild_id, I]), S = l.filter(e => e.type === C.Ui.VOICE), Z = 4 === S.length ? 2 : 3, T = (0, a.Wu)([u.Z], () => S.map(e => u.Z.getParticipant(_.id, e.id)).filter(b.lm), [_.id, S]);
     return (0, r.jsxs)("div", {
       className: x.container,
-      children: [N && (0, r.jsx)(m.Z, {}), (0, r.jsx)("div", {
+      children: [E && (0, r.jsx)(m.Z, {}), (0, r.jsx)("div", {
         className: x.tiles,
         style: {
           maxWidth: 168 * Z
@@ -51,14 +51,14 @@ let j = (e, t) => _.ZP.getName(e.getGuildId(), e.id, t.user),
         }, e.id))
       }), (0, r.jsx)(s.X6q, {
         className: x.channelName,
-        variant: N ? "heading-xxl/normal" : "heading-xxl/semibold",
+        variant: E ? "heading-xxl/normal" : "heading-xxl/semibold",
         children: _.name
       }), (0, r.jsx)("div", {
         className: x.participantsRow,
         children: (0, r.jsx)(s.Text, {
           tag: "div",
           color: "header-secondary",
-          variant: N ? "heading-lg/normal" : "text-sm/normal",
+          variant: E ? "heading-lg/normal" : "text-sm/normal",
           children: 0 === S.length ? y.NW.string(y.t.FUVhyM) : 1 === S.length ? y.NW.formatToPlainString(y.t.EQwZlJ, {
             a: j(_, S[0])
           }) : 2 === S.length ? y.NW.formatToPlainString(y.t.zBcKoK, {
@@ -75,13 +75,13 @@ let j = (e, t) => _.ZP.getName(e.getGuildId(), e.id, t.user),
         children: [(0, r.jsx)(s.zxk, {
           disabled: !O,
           className: o()(x.joinButton, {
-            [x.roundButton]: !N
+            [x.roundButton]: !E
           }),
-          color: O ? N ? s.zxk.Colors.WHITE : s.zxk.Colors.GREEN : s.zxk.Colors.PRIMARY,
+          color: O ? E ? s.zxk.Colors.WHITE : s.zxk.Colors.GREEN : s.zxk.Colors.PRIMARY,
           onClick: P,
           size: s.zxk.Sizes.MEDIUM,
           children: O ? y.NW.string(y.t["7vb2cX"]) : y.NW.string(y.t.TVBCKS)
-        }), N && E && (0, r.jsx)(v.e, {
+        }), E && N && (0, r.jsx)(v.e, {
           channel: _
         })]
       })]

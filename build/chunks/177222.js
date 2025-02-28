@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(952124),
   j = n(544989),
   O = n(481932),
-  N = n(272510),
-  E = n(4517),
+  E = n(272510),
+  N = n(4517),
   I = n(171368),
   P = n(348540),
   S = n(179142),
@@ -97,7 +97,7 @@ function R(e) {
                 shouldShowTooltip: null === H.interactionType
               }), t.bot ? (0, r.jsx)(x.Z, {
                 user: t
-              }) : (0, r.jsx)(N.Z, {
+              }) : (0, r.jsx)(E.Z, {
                 user: t
               })]
             }), (0, r.jsxs)("header", {
@@ -118,7 +118,7 @@ function R(e) {
                 channelId: R.id,
                 profileType: Z.y0.PANEL,
                 onOpenProfile: M ? void 0 : G
-              }), (0, r.jsx)(E.Z, {
+              }), (0, r.jsx)(N.Z, {
                 location: "UserProfilePanel",
                 user: t,
                 channelId: R.id,

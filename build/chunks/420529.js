@@ -95,7 +95,7 @@ function T(e) {
     var n, r;
     return (0, i.jsx)(a.sNh, {
       id: "transfer-".concat(e.type, "-").concat(e.id),
-      label: (n = e.type, r = t, n === g.ABu.XBOX ? r ? N.NW.string(N.t["f+Aijo"]) : N.NW.string(N.t.E8euSk) : n === g.ABu.PLAYSTATION ? r ? N.NW.string(N.t.vzfxmZ) : N.NW.string(N.t.QxEYDg) : n === g.ABu.PLAYSTATION_STAGING ? r ? N.NW.string(N.t.BDiXtb) : N.NW.string(N.t["bhdB9/"]) : void 0),
+      label: (n = e.type, r = t, n === g.ABu.XBOX ? r ? N.NW.string(N.t["qVE/VF"]) : N.NW.string(N.t.E8euSk) : n === g.ABu.PLAYSTATION ? r ? N.NW.string(N.t.vzfxmZ) : N.NW.string(N.t.QxEYDg) : n === g.ABu.PLAYSTATION_STAGING ? r ? N.NW.string(N.t.BDiXtb) : N.NW.string(N.t["bhdB9/"]) : void 0),
       action: () => C(e),
       icon: (0, p.Z)(e.type),
       disabled: U

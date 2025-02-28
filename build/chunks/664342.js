@@ -25,7 +25,7 @@ var r = n(200651),
   j = n(981631),
   O = n(388032);
 
-function N(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function N(e) {
   return e
 }
 
-function E(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function I(e) {
     autoInvert: !1,
     onRequestClose: () => o(!1),
     renderPopout: function(e) {
-      return (0, r.jsx)(P, E(N({}, e), {
+      return (0, r.jsx)(P, N(E({}, e), {
         channel: t
       }))
     },
@@ -82,7 +82,7 @@ function I(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(_.ZP.Icon, E(N({}, e), {
+      return (0, r.jsx)(_.ZP.Icon, N(E({}, e), {
         onClick: a,
         tooltip: n ? null : s,
         icon: l.xhG,
@@ -98,7 +98,7 @@ function P(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, b = (0, s.Z)(t, "Sidebar Overflow"), _ = (0, u.Z)(t), y = (0, h.Z)(t), x = (0, f.Z)(t), N = (0, o.Z)(t), E = (0, c.Z)(t), I = (0, p.Z)(t.id), P = (0, d.Z)(t), S = (0, a.Z)(t), Z = (0, g.Z)({
+  } = e, b = (0, s.Z)(t, "Sidebar Overflow"), _ = (0, u.Z)(t), y = (0, h.Z)(t), x = (0, f.Z)(t), E = (0, o.Z)(t), N = (0, c.Z)(t), I = (0, p.Z)(t.id), P = (0, d.Z)(t), S = (0, a.Z)(t), Z = (0, g.Z)({
     id: t.id,
     label: O.NW.string(O.t.DQ797u)
   }), T = (0, m.Z)(t);
@@ -142,7 +142,7 @@ function P(e) {
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [T, N, E, S]
+      children: [T, E, N, S]
     }), (0, r.jsx)(l.kSQ, {
       children: Z
     })]

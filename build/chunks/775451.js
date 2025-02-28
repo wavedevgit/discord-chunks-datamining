@@ -78,7 +78,10 @@ let C = {
       }, [R, V]),
       F = (0, o.Z)(null, G);
     return (0, r.jsxs)("div", {
-      className: a()(j.container, I),
+      className: a()(j.container, I, {
+        [j.hidden]: Z,
+        [j.visible]: !Z
+      }),
       children: [(0, r.jsx)(b.A4, {
         ref: L,
         balance: y,

@@ -1,20 +1,22 @@
 /** Chunk was on 4566 **/
 n.d(t, {
-  Z: () => c
+  Z: () => d
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(475179),
-  o = n(871499),
-  a = n(354459),
-  s = n(388032);
+  o = n(906732),
+  a = n(522651),
+  s = n(871499),
+  c = n(354459),
+  u = n(388032);
 
-function c(e) {
+function d(e) {
   var {
     channelId: t,
     isHorizontal: n
-  } = e, c = function(e, t) {
+  } = e, d = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -29,7 +31,10 @@ function c(e) {
     }
     return i
   }(e, ["channelId", "isHorizontal"]);
-  return (0, r.jsx)(o.Z, function(e) {
+  let {
+    parentAnalyticsLocation: p
+  } = (0, o.ZP)();
+  return (0, r.jsx)(s.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -48,10 +53,10 @@ function c(e) {
     return e
   }({
     onClick: function() {
-      l.Z.selectParticipant(t, a.dF.AUTO)
+      (0, a.v)(p, a.d.FOCUS), l.Z.selectParticipant(t, c.dF.AUTO)
     },
-    label: s.NW.string(s.t.np22FR),
+    label: u.NW.string(u.t.np22FR),
     iconComponent: n ? i.dRJ : i.SVt,
     tooltipPosition: "bottom"
-  }, c))
+  }, d))
 }

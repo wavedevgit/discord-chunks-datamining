@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(245216),
   j = n(223606),
   O = n(188597),
-  N = n(41776),
-  E = n(980463),
+  E = n(41776),
+  N = n(980463),
   I = n(328908),
   P = n(992970),
   S = n(135793),
@@ -46,8 +46,8 @@ var r = n(200651),
   G = n(607744),
   V = n(496675),
   z = n(626135),
-  q = n(572004),
-  Y = n(176354),
+  Y = n(572004),
+  q = n(176354),
   K = n(823379),
   X = n(970257),
   Q = n(418476),
@@ -118,7 +118,7 @@ let ef = i.memo(function(e) {
   let {
     channel: t,
     message: n
-  } = e, i = (0, g.q5)(t.guild_id).filter(e => !Y.ZP.isEmojiFilteredOrLocked({
+  } = e, i = (0, g.q5)(t.guild_id).filter(e => !q.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: ea.Hz.REACTION,
@@ -189,7 +189,7 @@ function em(e) {
     canForward: w,
     isExpanded: R,
     showMoreUtilities: B,
-    showEmojiPicker: Y,
+    showEmojiPicker: q,
     showMessageBookmarksActions: K,
     isMessageBookmark: er,
     setPopout: ea,
@@ -213,7 +213,7 @@ function em(e) {
     } = (0, c.cj)([V.Z], () => ({
       canAddNewReactions: _ && V.Z.can(el.Plq.ADD_REACTIONS, t),
       canManageMessages: V.Z.can(el.Plq.MANAGE_MESSAGES, t)
-    }), [t, _]), j = (0, M.U)(t, n), O = (0, D.NE)(t, n), E = (0, D.Ek)(n), I = (0, c.e7)([N.Z], () => null != t.guild_id && N.Z.isLurking(t.guild_id), [t]), P = (0, c.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), S = s.id === d, Z = (C || n.canDeleteOwnMessage(d)) && p && !el.V$x.UNDELETABLE.has(n.type);
+    }), [t, _]), j = (0, M.U)(t, n), O = (0, D.NE)(t, n), N = (0, D.Ek)(n), I = (0, c.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), P = (0, c.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), S = s.id === d, Z = (C || n.canDeleteOwnMessage(d)) && p && !el.V$x.UNDELETABLE.has(n.type);
     n.type === el.uaV.AUTO_MODERATION_ACTION && (Z = Z && C);
     let T = (0, X.a4)(n),
       A = (0, J.Z)(n, t, C),
@@ -231,7 +231,7 @@ function em(e) {
       }),
       B = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != u && u.hasFeature(el.oNc.NEWS) && (S || C) && (0, f.Z)(n),
       z = t.getGuildId(),
-      Y = null != z && (n.type === el.uaV.USER_JOIN || n.type === el.uaV.GUILD_INVITE_REMINDER) && V.Z.canWithPartialContext(el.Plq.MANAGE_GUILD, {
+      q = null != z && (n.type === el.uaV.USER_JOIN || n.type === el.uaV.GUILD_INVITE_REMINDER) && V.Z.canWithPartialContext(el.Plq.MANAGE_GUILD, {
         guildId: z
       }),
       {
@@ -259,13 +259,13 @@ function em(e) {
       canReport: T,
       canReply: j,
       canStartThread: O,
-      canViewThread: E,
+      canViewThread: N,
       canForward: K && ee,
-      canCopy: q.wS,
+      canCopy: Y.wS,
       hasDeveloperMode: b,
       canReact: !R && g,
       canPublish: B,
-      canConfigureJoin: Y,
+      canConfigureJoin: q,
       isExpanded: er && !eo && !r && !i && !l,
       showEmojiPicker: r,
       showEmojiBurstPicker: i,
@@ -285,11 +285,11 @@ function em(e) {
     })
   }, [B, ea, n]), eg = i.useCallback(() => {
     ea({
-      emojiPicker: !Y
+      emojiPicker: !q
     })
-  }, [Y, ea]), eb = (0, D.$R)(t), eC = n.hasFlag(el.iLy.CROSSPOSTED), [ev, ey] = (0, m.cv)(w ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = ev === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eO] = i.useState(!1), eN = i.useCallback(() => {
+  }, [q, ea]), eb = (0, D.$R)(t), eC = n.hasFlag(el.iLy.CROSSPOSTED), [ev, ey] = (0, m.cv)(w ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = ev === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eO] = i.useState(!1), eE = i.useCallback(() => {
     eO(!0)
-  }, []), eE = i.useCallback(() => {
+  }, []), eN = i.useCallback(() => {
     eO(!1)
   }, []), eI = i.useCallback((e, t) => {
     ey(eo.L.TAKE_ACTION), (0, et.ts)(e, t)
@@ -310,7 +310,7 @@ function em(e) {
     eT = eS && eZ && !n.hasPotions(),
     eA = i.useCallback(e => {
       try {
-        (0, E.qc)(t.id, n.id, e)
+        (0, N.qc)(t.id, n.id, e)
       } catch (e) {
         (0, d.showToast)((0, d.createToast)(es.NW.string(es.t.xsfC2d), d.ToastType.FAILURE))
       }
@@ -359,7 +359,7 @@ function em(e) {
       }) : null, (0, r.jsx)(en.Z, {
         togglePopout: eg,
         renderEmojiPicker: e_,
-        shouldShow: Y,
+        shouldShow: q,
         isFocused: ep,
         channel: t,
         message: n
@@ -390,8 +390,8 @@ function em(e) {
       label: es.NW.string(es.t.I3ltXF),
       icon: x.Z,
       onClick: () => eI(t, n),
-      onTooltipShow: eN,
-      onTooltipHide: eE,
+      onTooltipShow: eE,
+      onTooltipHide: eN,
       showNewBadge: !ej && ex
     }, "forward") : null, O && !w ? (0, r.jsx)(ee.sF, {
       label: es.NW.string(es.t.rBIGBA),

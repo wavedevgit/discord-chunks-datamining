@@ -75,21 +75,21 @@ function v(e) {
   } = (0, a.cj)([d.Z], () => ({
     isBlocked: d.Z.isBlocked(y.id),
     isIgnored: d.Z.isIgnored(y.id)
-  })), N = (0, c.D)({
+  })), E = (0, c.D)({
     location: "UserProfilePanelWrapper"
-  }), [E, I] = i.useState(j || N && (O || j)), P = (0, h.sS)({
+  }), [N, I] = i.useState(j || E && (O || j)), P = (0, h.sS)({
     location: "UserProfilePopoutWrapper"
   });
   i.useEffect(() => {
-    I(j || N && (O || j))
-  }, [j, O, N]);
+    I(j || E && (O || j))
+  }, [j, O, E]);
   let S = u.Rt.useSetting();
-  return l ? null : E && P && !N ? (0, r.jsx)(g.Z, C({
+  return l ? null : N && P && !E ? (0, r.jsx)(g.Z, C({
     user: y,
     currentUser: x,
     channel: t,
     onViewBlockedProfileClick: () => I(!1)
-  }, n)) : N && E && !(O && S) ? (0, r.jsx)(g.A, C({
+  }, n)) : E && N && !(O && S) ? (0, r.jsx)(g.A, C({
     user: y,
     currentUser: x,
     channel: t,

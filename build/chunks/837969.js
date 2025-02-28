@@ -43,7 +43,7 @@ function d(e) {
   }), {
     itemCount: j,
     focusedIndex: O
-  } = y, [N] = r.useState(() => (0, o.P2)(x, 16));
+  } = y, [E] = r.useState(() => (0, o.P2)(x, 16));
   return r.useEffect(() => {
       x({
         type: i.G.UPDATE_ITEM_COUNT,
@@ -71,7 +71,7 @@ function d(e) {
       r.useEffect(() => {
         O.current = C
       }, [C]);
-      let [N, E] = r.useState(!1), [I] = r.useState(() => new o.$o(e => () => {
+      let [E, N] = r.useState(!1), [I] = r.useState(() => new o.$o(e => () => {
         let t = null != j.current && "string" == typeof e ? j.current(e) : e;
         "number" != typeof t || t < 0 || m({
           type: i.G.SET_FOCUSED_INDEX,
@@ -141,18 +141,18 @@ function d(e) {
           }
         }, [v, t, m, d, T, p]),
         w = r.useCallback(() => {
-          N || E(!0)
-        }, [N]),
+          E || N(!0)
+        }, [E]),
         R = r.useCallback(() => {
-          !N && (g ? P(v(t, d), d) : T(!0))
-        }, [v, t, P, g, N, d, T]),
+          !E && (g ? P(v(t, d), d) : T(!0))
+        }, [v, t, P, g, E, d, T]),
         M = r.useCallback(e => {
           !e.currentTarget.contains(e.relatedTarget) && requestAnimationFrame(() => {
             if (null == c(s(v, t, d))) {
               P(t);
               return
             }
-            E(!1)
+            N(!1)
           })
         }, [v, t, d, P]),
         k = r.useRef(null);
@@ -164,11 +164,11 @@ function d(e) {
       }, [R, w, M]);
       let L = r.useCallback(() => ({
           role: "list",
-          tabIndex: N && g ? -1 : 0,
+          tabIndex: E && g ? -1 : 0,
           id: t,
           onKeyDown: A,
           ref: k
-        }), [t, N, A, g]),
+        }), [t, E, A, g]),
         D = r.useCallback(e => {
           let {
             index: n
@@ -191,7 +191,7 @@ function d(e) {
       navId: t,
       itemCount: j,
       focusedIndex: O,
-      dispatch: N,
+      dispatch: E,
       onSelect: p,
       setFocus: h,
       getNewFocusIndex: f,

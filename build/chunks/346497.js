@@ -116,7 +116,7 @@ async function R() {
       autoTrackExposure: !1
     });
   if (n || r || !i || !o || (d.Z.shouldFetchOffer() && !(0, f.I5)(t) && await (0, _.T)("BogoPromotionUtils"), d.Z.hasFetchedOffer() && (d.Z.hasAnyUnexpiredOffer() || d.Z.hasAnyUnexpiredDiscountOffer()))) return !1;
-  !u.ZP.hasFetchedMostRecentPremiumTypeSubscription() && (null === (e = c.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasHadSKU(S.Si.TIER_2)) && await (0, a.ou)(), u.ZP.hasFetchedSubscriptions() || await (0, a.jg)();
+  !u.ZP.hasFetchedMostRecentPremiumTypeSubscription() && (null === (e = c.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasPurchasedFlag(S.in.PREMIUM_TIER_2)) && await (0, a.ou)(), u.ZP.hasFetchedSubscriptions() || await (0, a.jg)();
   let l = u.ZP.getMostRecentPremiumTypeSubscription();
   return !A({
     experimentEnabled: i,

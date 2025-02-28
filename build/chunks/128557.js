@@ -25,8 +25,8 @@ var r = n(200651),
   x = n(259580),
   j = n(585483),
   O = n(63063),
-  N = n(358085),
-  E = n(709054),
+  E = n(358085),
+  N = n(709054),
   I = n(967128),
   P = n(981631),
   S = n(231873),
@@ -111,7 +111,7 @@ function W(e) {
 function U(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([v.Z], () => null != t ? v.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && E.default.extractTimestamp(l.id) < Date.now() - P._8R, x = (0, s.e7)([C.default], () => (null == l ? void 0 : l.ownerId) === C.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([v.Z], () => null != t ? v.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && N.default.extractTimestamp(l.id) < Date.now() - P._8R, x = (0, s.e7)([C.default], () => (null == l ? void 0 : l.ownerId) === C.default.getId(), [l]), {
     canInvite: U,
     canManageGuild: B,
     canMessage: H
@@ -123,8 +123,8 @@ function U(e) {
     guildMessaged: V,
     guildPersonalized: z
   } = (0, m.h_)(l), {
-    handleInvite: q,
-    handleMessage: Y,
+    handleInvite: Y,
+    handleMessage: q,
     handlePersonalize: K,
     handleDownload: X,
     handleAddApplication: Q
@@ -258,7 +258,7 @@ function U(e) {
       iconUrl: ei ? u.YvY : R,
       header: Z.NW.string(Z.t.q9n0TU),
       completed: G,
-      onClick: q
+      onClick: Y
     })
   }, "invite")), B && el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
@@ -280,9 +280,9 @@ function U(e) {
       iconUrl: ei ? u.qMX : k,
       header: Z.NW.string(Z.t["SoP7+v"]),
       completed: V,
-      onClick: Y
+      onClick: q
     })
-  }, "message")), (0, N.isWeb)() && el.push((0, r.jsx)(a.Z.div, {
+  }, "message")), (0, E.isWeb)() && el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
     style: J ? {
       opacity: ee[el.length]

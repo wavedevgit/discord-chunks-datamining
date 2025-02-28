@@ -1,6 +1,6 @@
 /** Chunk was on 4566 **/
 n.d(t, {
-  Z: () => q
+  Z: () => Y
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(937111),
   j = n(270801),
   O = n(652730),
-  N = n(41776),
-  E = n(657352),
+  E = n(41776),
+  N = n(657352),
   I = n(33154),
   P = n(144114),
   S = n(703656),
@@ -123,38 +123,38 @@ class z extends i.PureComponent {
     } = this.props, {
       shouldShowLurkerModeUpsellPopout: j,
       shouldShowLurkerModeSuccessPopout: O
-    } = this.state, N = {
+    } = this.state, E = {
       theme: h,
       useReducedMotion: C
     };
     if (e && !m) {
-      if (N.message = B.NW.string(B.t.Hl0Mqq), null != g && g >= 1e3) {
+      if (E.message = B.NW.string(B.t.Hl0Mqq), null != g && g >= 1e3) {
         let e = 1e3 * Math.floor(g / 1e3);
-        N.subtitle = B.NW.formatToPlainString(B.t.C5bgrK, {
+        E.subtitle = B.NW.formatToPlainString(B.t.C5bgrK, {
           count: e.toLocaleString()
         })
       }
-      N.buttonText = B.NW.string(B.t["3aOv+v"]), N.onButtonClick = this.handleFollowAnnouncement, N.imageSrc = n(485195), t && (N.onSecondaryButtonClick = this.handleJoinServer, N.secondaryButtonText = B.NW.string(B.t["RLch7+"]))
-    } else if (l) N.message = B.NW.string(B.t["Eg3/c3"]), N.buttonText = B.NW.string(B.t.fiNVio), N.onButtonClick = _ ? this.handleShowMemberVerification : this.handleClaimAccount, N.imageSrc = n(102811);
+      E.buttonText = B.NW.string(B.t["3aOv+v"]), E.onButtonClick = this.handleFollowAnnouncement, E.imageSrc = n(485195), t && (E.onSecondaryButtonClick = this.handleJoinServer, E.secondaryButtonText = B.NW.string(B.t["RLch7+"]))
+    } else if (l) E.message = B.NW.string(B.t["Eg3/c3"]), E.buttonText = B.NW.string(B.t.fiNVio), E.onButtonClick = _ ? this.handleShowMemberVerification : this.handleClaimAccount, E.imageSrc = n(102811);
     else if (_) switch (null == x ? void 0 : x.applicationStatus) {
       case v.wB.SUBMITTED:
-        N.message = B.NW.string(B.t["5iLvS0"]), N.subtitle = B.NW.string(B.t.FdsK4u), N.buttonText = B.NW.string(B.t.mqtdmZ), N.onButtonClick = this.handleCancelApplication, N.imageSrc = n(281958);
+        E.message = B.NW.string(B.t["5iLvS0"]), E.subtitle = B.NW.string(B.t.FdsK4u), E.buttonText = B.NW.string(B.t.mqtdmZ), E.onButtonClick = this.handleCancelApplication, E.imageSrc = n(281958);
         break;
       case v.wB.REJECTED:
-        N.message = B.NW.string(B.t.lk30cX), N.buttonText = B.NW.string(B.t["8RrsHh"]), N.onButtonClick = this.handleViewApplicationRejection, N.imageSrc = n(809844);
+        E.message = B.NW.string(B.t.lk30cX), E.buttonText = B.NW.string(B.t["8RrsHh"]), E.onButtonClick = this.handleViewApplicationRejection, E.imageSrc = n(809844);
         break;
       default:
-        N.message = B.NW.string(B.t.rEBKvr), N.buttonText = B.NW.string(B.t["r8/DT0"]), N.buttonColor = s.Ttl.BRAND, N.onButtonClick = this.handleShowMemberVerification, N.animationSrc = () => n.e("43841").then(n.t.bind(n, 737848, 19)).then(e => {
+        E.message = B.NW.string(B.t.rEBKvr), E.buttonText = B.NW.string(B.t["r8/DT0"]), E.buttonColor = s.Ttl.BRAND, E.onButtonClick = this.handleShowMemberVerification, E.animationSrc = () => n.e("43841").then(n.t.bind(n, 737848, 19)).then(e => {
           let {
             default: t
           } = e;
           return t
         })
-    } else o && !y ? (N.message = B.NW.string(B.t["2dThMD"]), N.buttonText = B.NW.string(B.t["50gfOj"]), N.onButtonClick = this.handleVerifyPhone, N.imageSrc = n(98063)) : a ? (N.message = B.NW.string(B.t.FkGPS0), N.buttonText = B.NW.string(B.t.lm1UKi), N.onButtonClick = this.handleResendVerification, N.imageSrc = n(102811)) : c ? (N.message = B.NW.formatToPlainString(B.t.IH7RMD, {
+    } else o && !y ? (E.message = B.NW.string(B.t["2dThMD"]), E.buttonText = B.NW.string(B.t["50gfOj"]), E.onButtonClick = this.handleVerifyPhone, E.imageSrc = n(98063)) : a ? (E.message = B.NW.string(B.t.FkGPS0), E.buttonText = B.NW.string(B.t.lm1UKi), E.onButtonClick = this.handleResendVerification, E.imageSrc = n(102811)) : c ? (E.message = B.NW.formatToPlainString(B.t.IH7RMD, {
       min: W.YeM.MEMBER_AGE
-    }), N.countdown = u) : d && (N.message = B.NW.formatToPlainString(B.t["2JA2GB"], {
+    }), E.countdown = u) : d && (E.message = B.NW.formatToPlainString(B.t["2JA2GB"], {
       min: W.YeM.ACCOUNT_AGE
-    }), N.countdown = p);
+    }), E.countdown = p);
     return (0, r.jsx)(s.yRy, {
       position: "top",
       align: "left",
@@ -163,7 +163,7 @@ class z extends i.PureComponent {
         shouldShowLurkerModeSuccessPopout: !1
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, r.jsx)(D.Z, V(G({}, N), {
+      children: e => (0, r.jsx)(D.Z, V(G({}, E), {
         children: (0, r.jsxs)(i.Fragment, {
           children: [this.renderMemberVerificationSuccessModal(), b ? (0, r.jsx)(s.yRy, {
             renderPopout: this.renderLurkerModeUpsellPopout,
@@ -190,7 +190,7 @@ class z extends i.PureComponent {
       } = e, {
         guild: n
       } = this.props;
-      return o()(null != n, "This guildID cannot be null"), (0, r.jsx)(E.Z, {
+      return o()(null != n, "This guildID cannot be null"), (0, r.jsx)(N.Z, {
         onClose: t,
         guild: n
       })
@@ -331,21 +331,21 @@ class z extends i.PureComponent {
   }
 }
 
-function q(e) {
+function Y(e) {
   var t, n;
   let {
     channel: l,
     children: o
-  } = e, s = l.getGuildId(), c = (0, a.e7)([w.Z], () => w.Z.getGuild(s)), u = (0, a.e7)([R.Z], () => R.Z.getCheck(s)), d = l.type === W.d4z.GUILD_ANNOUNCEMENT && null != c && c.hasFeature(W.oNc.NEWS), h = (0, a.e7)([T.Z], () => d ? T.Z.getFollowerStatsForChannel(l.id) : null), g = (0, a.e7)([N.Z], () => N.Z.isLurking(s)), b = (0, a.e7)([k.default], () => k.default.getCurrentUser()), C = null !== (t = null == b ? void 0 : b.isStaff()) && void 0 !== t && t, j = (0, a.e7)([A.ZP], () => {
+  } = e, s = l.getGuildId(), c = (0, a.e7)([w.Z], () => w.Z.getGuild(s)), u = (0, a.e7)([R.Z], () => R.Z.getCheck(s)), d = l.type === W.d4z.GUILD_ANNOUNCEMENT && null != c && c.hasFeature(W.oNc.NEWS), h = (0, a.e7)([T.Z], () => d ? T.Z.getFollowerStatsForChannel(l.id) : null), g = (0, a.e7)([E.Z], () => E.Z.isLurking(s)), b = (0, a.e7)([k.default], () => k.default.getCurrentUser()), C = null !== (t = null == b ? void 0 : b.isStaff()) && void 0 !== t && t, j = (0, a.e7)([A.ZP], () => {
     var e, t;
     return null != b && null !== (t = null === (e = A.ZP.getMember(s, b.id)) || void 0 === e ? void 0 : e.isPending) && void 0 !== t && t
-  }), E = !!(0, y.Dc)(c), I = (j || u.notClaimed) && E, P = (0, a.e7)([O.Z], () => O.Z.shouldShowPopout(s)), S = (0, a.e7)([M.Z], () => M.Z.can(W.Plq.SEND_MESSAGES, l)), D = (0, a.e7)([x.Z], () => x.Z.getRequest(s)), [U, B] = (0, f.L_)(s), H = (0, f.Cc)(s), F = (null == D ? void 0 : D.applicationStatus) === v.wB.APPROVED, q = i.useRef(B);
+  }), N = !!(0, y.Dc)(c), I = (j || u.notClaimed) && N, P = (0, a.e7)([O.Z], () => O.Z.shouldShowPopout(s)), S = (0, a.e7)([M.Z], () => M.Z.can(W.Plq.SEND_MESSAGES, l)), D = (0, a.e7)([x.Z], () => x.Z.getRequest(s)), [U, B] = (0, f.L_)(s), H = (0, f.Cc)(s), F = (null == D ? void 0 : D.applicationStatus) === v.wB.APPROVED, Y = i.useRef(B);
   i.useEffect(() => {
-    q.current = B
+    Y.current = B
   }), i.useEffect(() => {
-    !(!(0, m.EJ)(c) || !F || (0, _.d3)(D)) && null == H && q.current()
+    !(!(0, m.EJ)(c) || !F || (0, _.d3)(D)) && null == H && Y.current()
   }, [c, F, D, H]);
-  let Y = V(G({}, u), {
+  let q = V(G({}, u), {
     guild: c,
     isLurking: g,
     isFollowable: d,
@@ -354,7 +354,7 @@ function q(e) {
     theme: Z.Z.theme,
     canSendMessages: S,
     channelFollowingUsersSeen: null != h ? h.usersSeenEver : null,
-    hasVerificationGate: E,
+    hasVerificationGate: N,
     showMemberVerificationModal: I,
     guildJoinRequestStatus: null !== (n = null == D ? void 0 : D.applicationStatus) && void 0 !== n ? n : v.wB.STARTED,
     guildJoinRequest: D,
@@ -363,7 +363,7 @@ function q(e) {
     isLoading: U,
     clanInfo: H
   });
-  return (0, r.jsx)(z, V(G({}, Y), {
+  return (0, r.jsx)(z, V(G({}, q), {
     channel: l,
     children: o
   }))

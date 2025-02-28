@@ -76,7 +76,7 @@ function p(e) {
   } = e, _ = f(e, ["centerButton", "onClick", "onMouseEnter", "onMouseLeave"]);
   let p = t ? a.d : a.Z,
     h = () => {
-      o.default.disconnect(), null == n || n()
+      null == n || n(), o.default.disconnect()
     },
     g = () => s.NW.string(s.t["6vrfgo"]),
     {

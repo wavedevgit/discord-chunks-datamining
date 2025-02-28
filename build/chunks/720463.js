@@ -1,70 +1,74 @@
 /** Chunk was on 82081 **/
-e.d(t, {
-  BalanceWidgetEarnedOrbsCoachmarkModal: () => x,
-  E: () => _
+n.d(t, {
+  BalanceWidgetEarnedOrbsCoachmarkModal: () => j,
+  E: () => C
 });
-var a = e(200651);
-e(192379);
-var i = e(120356),
-  c = e.n(i),
-  r = e(568611),
-  o = e(693789),
-  l = e(481060),
-  s = e(751648),
-  d = e(790542),
-  m = e(317257),
-  b = e(970815),
-  k = e(622562),
-  u = e(981631),
-  h = e(388032),
-  C = e(803812),
-  f = e(981987),
-  g = e(232474);
-let _ = n => {
+var r = n(200651);
+n(192379);
+var i = n(120356),
+  o = n.n(i),
+  a = n(568611),
+  l = n(693789),
+  c = n(481060),
+  s = n(751648),
+  u = n(790542),
+  b = n(317257),
+  d = n(970815),
+  f = n(622562),
+  m = n(432792),
+  g = n(981631),
+  O = n(388032),
+  _ = n(803812),
+  p = n(981987),
+  h = n(232474);
+let C = e => {
   let {
     earnedOrbsQuantity: t,
-    descriptionText: e = h.NW.string(h.t["4YgBe3"]),
-    ctaText: i = h.NW.string(h.t.WYchdX),
-    linkText: s = h.NW.string(h.t["H57f4+"]),
-    ctaOnClick: d,
-    linkOnClick: m,
-    linkTo: b
-  } = n;
-  return (0, a.jsxs)("div", {
-    className: c()(f.container, C.baseCardOutline),
-    children: [(0, a.jsx)("div", {
-      className: c()(f.gifContainer, f.centerContent),
-      children: (0, a.jsx)("img", {
-        src: g.Z,
-        className: f.gif,
+    descriptionText: n = O.NW.string(O.t["4YgBe3"]),
+    ctaText: i = O.NW.string(O.t.WYchdX),
+    linkText: s = O.NW.string(O.t["H57f4+"]),
+    ctaOnClick: u,
+    linkOnClick: b,
+    linkTo: d
+  } = e;
+  return (0, r.jsxs)("div", {
+    className: o()(p.container, _.baseCardOutline),
+    children: [(0, r.jsx)(m.VK, {
+      rightOffset: 20,
+      invertTail: !0
+    }), (0, r.jsx)("div", {
+      className: o()(p.gifContainer, p.centerContent),
+      children: (0, r.jsx)("img", {
+        src: h.Z,
+        className: p.gif,
         alt: "Orb GIF"
       })
-    }), (0, a.jsxs)("div", {
-      className: f.contentContainer,
-      children: [(0, a.jsx)("h3", {
-        className: C.coachmarkTitle,
-        children: h.NW.format(h.t.lA7CLi, {
+    }), (0, r.jsxs)("div", {
+      className: p.contentContainer,
+      children: [(0, r.jsx)("h3", {
+        className: _.coachmarkTitle,
+        children: O.NW.format(O.t.lA7CLi, {
           quantity: t
         })
-      }), (0, a.jsx)(l.Text, {
+      }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
-        className: C.coachmarkDescription,
-        children: e
-      }), (0, a.jsx)(o.zx, {
-        className: f.ctaButton,
-        color: o.zx.Colors.BRAND,
-        look: o.zx.Looks.FILLED,
-        onClick: d,
+        className: _.coachmarkDescription,
+        children: n
+      }), (0, r.jsx)(l.zx, {
+        className: p.ctaButton,
+        color: l.zx.Colors.BRAND,
+        look: l.zx.Looks.FILLED,
+        onClick: u,
         fullWidth: !0,
         children: i
-      }), (0, a.jsx)(r.rU, {
+      }), (0, r.jsx)(a.rU, {
         to: {
-          pathname: b
+          pathname: d
         },
-        onClick: m,
-        children: (0, a.jsx)(l.Text, {
+        onClick: b,
+        children: (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
-          className: f.link,
+          className: p.link,
           children: s
         })
       })]
@@ -72,40 +76,40 @@ let _ = n => {
   })
 };
 
-function x(n) {
+function j(e) {
   var {
     earnedOrbsQuantity: t,
-    backgroundElementRef: e,
+    backgroundElementRef: n,
     onClickPill: i,
-    ctaOnClick: c,
-    linkOnClick: r,
-    onClose: o,
-    onCloseCallback: l
-  } = n;
-  ! function(n, t) {
-    if (null != n) {
-      var e, a, i = function(n, t) {
-        if (null == n) return {};
-        var e, a, i = {},
-          c = Object.keys(n);
-        for (a = 0; a < c.length; a++) e = c[a], t.indexOf(e) >= 0 || (i[e] = n[e]);
+    ctaOnClick: o,
+    linkOnClick: a,
+    onClose: l,
+    onCloseCallback: c
+  } = e;
+  ! function(e, t) {
+    if (null != e) {
+      var n, r, i = function(e, t) {
+        if (null == e) return {};
+        var n, r, i = {},
+          o = Object.keys(e);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
-      }(n, t);
+      }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var c = Object.getOwnPropertySymbols(n);
-        for (a = 0; a < c.length; a++) e = c[a], !(t.indexOf(e) >= 0) && Object.prototype.propertyIsEnumerable.call(n, e) && (i[e] = n[e])
+        var o = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
     }
-  }(n, ["earnedOrbsQuantity", "backgroundElementRef", "onClickPill", "ctaOnClick", "linkOnClick", "onClose", "onCloseCallback"]);
+  }(e, ["earnedOrbsQuantity", "backgroundElementRef", "onClickPill", "ctaOnClick", "linkOnClick", "onClose", "onCloseCallback"]);
   let {
-    balance: h
-  } = (0, d.A)(), C = async () => {
-    await (0, s.j2)(), await o(), l()
+    balance: m
+  } = (0, u.A)(), O = async () => {
+    await (0, s.j2)(), await l(), c()
   };
-  return (0, a.jsxs)(k.E, {
-    className: f.coachmarkModalContainer,
-    backgroundElementRef: e,
-    onGetBoundingRect: u.dG4,
+  return (0, r.jsxs)(f.E, {
+    className: p.coachmarkModalContainer,
+    backgroundElementRef: n,
+    onGetBoundingRect: g.dG4,
     getOffsetsRelativeToElement: () => ({
       top: 0,
       right: 0
@@ -117,19 +121,19 @@ function x(n) {
       top: 84,
       right: 32
     },
-    children: [(0, a.jsx)(b.A4, {
+    children: [(0, r.jsx)(d.A4, {
       onClick: async () => {
-        await C(), i()
+        await O(), i()
       },
-      balance: h,
-      balanceWidgetMode: m.b.DEFAULT
-    }), (0, a.jsx)(_, {
+      balance: m,
+      balanceWidgetMode: b.b.DEFAULT
+    }), (0, r.jsx)(C, {
       earnedOrbsQuantity: t,
       ctaOnClick: async () => {
-        await C(), c()
+        await O(), o()
       },
       linkOnClick: async () => {
-        await C(), r()
+        await O(), a()
       }
     })]
   })

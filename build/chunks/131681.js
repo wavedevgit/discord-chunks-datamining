@@ -1,14 +1,14 @@
 /** Chunk was on 25292 **/
 n.d(t, {
-  U: () => r
+  U: () => i
 });
-var i = n(695346);
-let r = () => {
+var r = n(695346);
+let i = () => {
   var e;
   let {
     profanity: t = !1,
     slurs: n = !1,
-    sexualContent: r = !1
-  } = i.gw.getSetting();
-  return null !== (e = t || n || r) && void 0 !== e && e
+    sexualContent: i = !1
+  } = r.gw.getSetting();
+  return null !== (e = t || n || i) && void 0 !== e && e
 }

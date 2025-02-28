@@ -1,31 +1,35 @@
 /** Chunk was on 4566 **/
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
 var r = n(200651),
   i = n(192379),
   l = n(442837),
   o = n(774078),
-  a = n(390322),
-  s = n(272929),
-  c = n(456631),
-  u = n(381871),
-  d = n(304388);
+  a = n(906732),
+  s = n(390322),
+  c = n(272929),
+  u = n(456631),
+  d = n(381871),
+  p = n(522651),
+  h = n(304388);
 
-function p(e) {
+function f(e) {
   let {
     channel: t
-  } = e, n = (0, l.e7)([c.Z], () => c.Z.effectCooldownEndTime), p = i.useMemo(() => null != n ? (n.getTime() - Date.now()) / 1e3 : 0, [n]), {
-    seconds: h
-  } = (0, o.Z)(null != n ? n : new Date), f = h > 0;
-  return (0, r.jsx)(d.Z, {
+  } = e, {
+    parentAnalyticsLocation: n
+  } = (0, a.ZP)(), f = (0, l.e7)([u.Z], () => u.Z.effectCooldownEndTime), m = i.useMemo(() => null != f ? (f.getTime() - Date.now()) / 1e3 : 0, [f]), {
+    seconds: g
+  } = (0, o.Z)(null != f ? f : new Date), b = g > 0;
+  return (0, r.jsx)(h.Z, {
     renderPopout: e => {
       let {
         closePopout: n,
         onFocus: i
       } = e;
-      return (0, r.jsx)(a.Z, {
-        children: (0, r.jsx)(u.Z, {
+      return (0, r.jsx)(s.Z, {
+        children: (0, r.jsx)(d.Z, {
           channel: t,
           closePopout: n,
           onFocus: i
@@ -34,8 +38,9 @@ function p(e) {
     },
     children: e => {
       var {
-        onMouseEnter: t
-      } = e, n = function(e, t) {
+        onMouseEnter: t,
+        onClick: i
+      } = e, l = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
@@ -49,8 +54,8 @@ function p(e) {
           for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
-      }(e, ["onMouseEnter"]);
-      return (0, r.jsx)(s.Z, function(e) {
+      }(e, ["onMouseEnter", "onClick"]);
+      return (0, r.jsx)(c.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -68,12 +73,15 @@ function p(e) {
         }
         return e
       }({
-        totalCooldownSeconds: p,
-        remainingCooldownSeconds: h,
+        totalCooldownSeconds: m,
+        remainingCooldownSeconds: g,
         onMouseEnter: e => {
-          f || t(e)
+          b || t(e)
+        },
+        onClick: e => {
+          (0, p.v)(n, p.d.EMOJI), i(e)
         }
-      }, n))
+      }, l))
     }
   })
 }

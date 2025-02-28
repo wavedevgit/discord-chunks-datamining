@@ -1,21 +1,21 @@
 /** Chunk was on 25292 **/
 n.d(t, {
-  F: () => r
+  F: () => i
 }), n(474991), n(398202), n(301563);
-let i = function(e) {
+let r = function(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = i
+      }) : e[t] = r
     })
   }
   return e
@@ -39,11 +39,11 @@ let i = function(e) {
   "|": " "
 });
 
-function r(e) {
+function i(e) {
   let t = "";
   for (let n = 0; n < e.length; n++) {
-    let r = e[n];
-    null != i[r] ? t += i[r] : RegExp("[\\p{Pd}\\p{Pc}\\p{Po}]", "gu").test(r) ? t += " " : t += r
+    let i = e[n];
+    null != r[i] ? t += r[i] : RegExp("[\\p{Pd}\\p{Pc}\\p{Po}]", "gu").test(i) ? t += " " : t += i
   }
   return t.toLowerCase()
 }

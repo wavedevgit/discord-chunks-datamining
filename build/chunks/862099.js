@@ -30,8 +30,8 @@ var r, i = n(200651),
   S = n(15274),
   T = n(924301),
   P = n(504160),
-  j = n(151864),
-  A = n(835184),
+  A = n(151864),
+  j = n(835184),
   Z = n(725436),
   x = n(497656),
   L = n(79874),
@@ -137,7 +137,7 @@ function H(e) {
   let {
     guildEvent: t,
     noticeType: n
-  } = e, r = (0, D.DK)(t), l = (0, s.e7)([T.ZP], () => T.ZP.isInterestedInEventRecurrence(t.id, r), [t.id, r]), o = (0, s.e7)([A.Z], () => A.Z.getUpcomingNoticeSeenTime(t.id), [t.id]);
+  } = e, r = (0, D.DK)(t), l = (0, s.e7)([T.ZP], () => T.ZP.isInterestedInEventRecurrence(t.id, r), [t.id, r]), o = (0, s.e7)([j.Z], () => j.Z.getUpcomingNoticeSeenTime(t.id), [t.id]);
   return l || null != o || (0, P._6)(t.id), (0, i.jsxs)(c.zxk, {
     fullWidth: !0,
     className: W.joinButton,
@@ -401,11 +401,11 @@ let J = l.memo(function(e) {
   } = (0, p.o)(!0), r = (0, x.y)(t.id), l = (0, w.k5)(t.id), o = (0, w.Vm)(t.id), a = (0, s.e7)([O.Z], () => O.Z.getStageInstanceByChannel(null == r ? void 0 : r.id), [r]), {
     isStageNoticeHidden: c,
     isEventNoticeHidden: u
-  } = (0, s.cj)([j.Z], () => ({
-    isStageNoticeHidden: j.Z.isLiveChannelNoticeHidden({
+  } = (0, s.cj)([A.Z], () => ({
+    isStageNoticeHidden: A.Z.isLiveChannelNoticeHidden({
       stageId: null == a ? void 0 : a.id
     }),
-    isEventNoticeHidden: j.Z.isLiveChannelNoticeHidden({
+    isEventNoticeHidden: A.Z.isLiveChannelNoticeHidden({
       eventId: null == l ? void 0 : l.id
     })
   }), [a, l]), d = null, f = null != a && null != r && !c;

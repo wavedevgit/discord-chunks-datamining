@@ -26,13 +26,13 @@ let C = function(e) {
     hasConnectPermission: v
   } = e, y = l.filter(g.Io), x = (0, d.J)(C.guild_id), j = i.useCallback(() => {
     x ? (0, u.hk)(C.guild_id, () => s.default.selectVoiceChannel(C.id)) : s.default.selectVoiceChannel(C.id)
-  }, [C.id, C.guild_id, x]), O = (0, c.Q3)("ChannelCallEmpty"), N = null !== (n = null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== n && n, E = 4 === y.length ? 2 : 3;
+  }, [C.id, C.guild_id, x]), O = (0, c.Q3)("ChannelCallEmpty"), E = null !== (n = null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== n && n, N = 4 === y.length ? 2 : 3;
   return (0, r.jsxs)("div", {
     className: _.container,
-    children: [O && N && (0, r.jsx)(m.Z, {}), (0, r.jsx)("div", {
+    children: [O && E && (0, r.jsx)(m.Z, {}), (0, r.jsx)("div", {
       className: _.tiles,
       style: {
-        maxWidth: 168 * E
+        maxWidth: 168 * N
       },
       children: y.slice(0, 5).map(e => (0, r.jsx)(f.ZP, {
         participant: e,
@@ -69,7 +69,7 @@ let C = function(e) {
       className: o()(_.joinButton, {
         [_.roundButton]: !O
       }),
-      color: v ? O && N ? a.zxk.Colors.WHITE : a.zxk.Colors.GREEN : a.zxk.Colors.PRIMARY,
+      color: v ? O && E ? a.zxk.Colors.WHITE : a.zxk.Colors.GREEN : a.zxk.Colors.PRIMARY,
       onClick: j,
       size: a.zxk.Sizes.MEDIUM,
       children: v ? b.NW.string(b.t["96ANUF"]) : b.NW.string(b.t.TVBCKS)

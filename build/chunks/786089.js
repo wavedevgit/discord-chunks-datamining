@@ -27,16 +27,16 @@ var r = n(200651),
   C = n(388032),
   S = n(747770);
 let T = (0, i.memo)(function(e) {
-  var t, n, l, T, P, j;
+  var t, n, l, T, P, A;
   let {
-    quest: A
+    quest: j
   } = e, [Z, x] = (0, i.useState)(!1), [L, w] = (0, i.useState)(24), [R, D] = (0, i.useState)(!1), k = (0, i.useRef)(null), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
     ref: W,
     height: V = 0
-  } = (0, p.Z)(), B = (0, h.ZP)(), H = (0, E.B6)(null === (t = A.userStatus) || void 0 === t ? void 0 : t.claimedAt, {
+  } = (0, p.Z)(), B = (0, h.ZP)(), H = (0, E.B6)(null === (t = j.userStatus) || void 0 === t ? void 0 : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), F = null !== (P = null === (n = A.userStatus) || void 0 === n ? void 0 : n.claimedTier) && void 0 !== P ? P : 0, z = A.config.rewards[F], Y = (null == z ? void 0 : z.type) === s.w.FRACTIONAL_PREMIUM, K = (null == z ? void 0 : z.type) === s.w.COLLECTIBLE, q = null == z ? void 0 : null === (T = z.collectibleProduct) || void 0 === T ? void 0 : null === (l = T.items) || void 0 === l ? void 0 : l[0], Q = (null == q ? void 0 : q.type) === a.Z.AVATAR_DECORATION ? q : null;
+  }), F = null !== (P = null === (n = j.userStatus) || void 0 === n ? void 0 : n.claimedTier) && void 0 !== P ? P : 0, z = j.config.rewards[F], Y = (null == z ? void 0 : z.type) === s.w.FRACTIONAL_PREMIUM, K = (null == z ? void 0 : z.type) === s.w.COLLECTIBLE, q = null == z ? void 0 : null === (T = z.collectibleProduct) || void 0 === T ? void 0 : null === (l = T.items) || void 0 === l ? void 0 : l[0], Q = (null == q ? void 0 : q.type) === a.Z.AVATAR_DECORATION ? q : null;
   (0, p.P)(k, e => {
     let {
       height: t
@@ -48,8 +48,8 @@ let T = (0, i.memo)(function(e) {
     w((r.top - n.top - i.height) / 2)
   });
   let X = (0, u.wj)(B),
-    J = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
-    $ = (0, i.useMemo)(() => (0, N.fh)(A, N.eC.REWARD), [A]),
+    J = (0, i.useMemo)(() => null != j.config.cosponsorMetadata, [j]),
+    $ = (0, i.useMemo)(() => (0, N.fh)(j, N.eC.REWARD), [j]),
     ee = Z ? V + 8 : 0,
     et = () => {
       x(!0), b.default.track(I.rMx.QUEST_HOVER, function(e) {
@@ -70,7 +70,7 @@ let T = (0, i.memo)(function(e) {
         }
         return e
       }({
-        quest_id: A.id
+        quest_id: j.id
       }, (0, _.mH)(O.jn.TROPHY_CASE_CARD)))
     },
     en = () => x(!1),
@@ -78,7 +78,7 @@ let T = (0, i.memo)(function(e) {
       D(!0), b.default.track(I.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: e,
         asset_id: e,
-        quest_id: A.id
+        quest_id: j.id
       })
     };
   return null == z || R ? null : (0, r.jsx)(d.tEY, {
@@ -110,13 +110,13 @@ let T = (0, i.memo)(function(e) {
         autoPlay: !1,
         children: (0, r.jsx)("source", {
           src: $.url,
-          type: null !== (j = $.mimetype) && void 0 !== j ? j : void 0,
+          type: null !== (A = $.mimetype) && void 0 !== A ? A : void 0,
           onError: () => er($.url)
         })
       }) : (0, r.jsx)("img", {
         className: S.image,
         src: $.url,
-        alt: A.config.messages.questName,
+        alt: j.config.messages.questName,
         onError: () => er($.url)
       }), (0, r.jsx)("div", {
         className: o()(S.overlay, {
@@ -133,7 +133,7 @@ let T = (0, i.memo)(function(e) {
           logotypeClassName: o()(S.logo, {
             [S.logoWithCosponsor]: J
           }),
-          quest: A,
+          quest: j,
           withGameTile: !1
         })
       }), (0, r.jsxs)("div", {
@@ -144,7 +144,7 @@ let T = (0, i.memo)(function(e) {
           variant: "heading-md/semibold",
           color: "always-white",
           children: C.NW.format(C.t.EAYZAg, {
-            questName: A.config.messages.questName
+            questName: j.config.messages.questName
           })
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",

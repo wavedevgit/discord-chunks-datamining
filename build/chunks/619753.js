@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(695346),
   j = n(131704),
   O = n(592125),
-  N = n(430824),
-  E = n(496675),
+  E = n(430824),
+  N = n(496675),
   I = n(699516),
   P = n(768119),
   S = n(944486),
@@ -84,11 +84,11 @@ function D(e) {
     totalResults: y,
     isSearching: x,
     showBlockedResults: j
-  } = n, N = i.useCallback(e => {
+  } = n, E = i.useCallback(e => {
     if (x) return;
     let t = e - 1;
     null == _ || _(t), d.oO(l, t)
-  }, [l, x, _]), E = i.useCallback(e => {
+  }, [l, x, _]), N = i.useCallback(e => {
     if (e.blocked) c.Z.show({
       title: R.NW.string(R.t["j7eA/v"]),
       body: R.NW.formatToPlainString(R.t.dTNNgo, {
@@ -160,7 +160,7 @@ function D(e) {
       searchId: l,
       renderEmbeds: o,
       offset: C,
-      jumpToMessage: E,
+      jumpToMessage: N,
       listNavigator: B,
       favoriteSearch: F
     }, "".concat(t.id, "-").concat(i))
@@ -171,11 +171,11 @@ function D(e) {
     var e;
     null === (e = z.current) || void 0 === e || e.focus()
   }, [m]);
-  let q = (0, s.mFp)();
+  let Y = (0, s.mFp)();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", L(k({
       ref: z
-    }, B.getContainerProps(), q), {
+    }, B.getContainerProps(), Y), {
       "aria-busy": x,
       children: V
     })), g > 0 || b > 0 ? (0, r.jsxs)(s.P3F, {
@@ -201,7 +201,7 @@ function D(e) {
         })
       })]
     }) : null, !x && !F && (0, r.jsx)(T.Z, {
-      changePage: N,
+      changePage: E,
       offset: C,
       totalResults: y,
       pageLength: w.vpv
@@ -260,8 +260,8 @@ function U(e) {
   } = e, U = x.cC.useSetting(), B = (0, b.p)(), H = i.useCallback(e => {
     if (e === S.Z.getChannelId()) return;
     let t = O.Z.getChannel(e);
-    null != t && E.Z.can(w.Plq.VIEW_CHANNEL, t) && (0, y.Kh)(t.id)
-  }, []), F = null != o ? (0, f.F6)(o, Z.default, I.Z, !1) : "???", G = D && null != o.guild_id ? null === (t = N.Z.getGuild(o.guild_id)) || void 0 === t ? void 0 : t.name : null, V = (null == o ? void 0 : o.parent_id) != null ? O.Z.getChannel(o.parent_id) : null, z = null !== (n = null == V ? void 0 : V.name) && void 0 !== n ? n : null, q = null !== (l = (0, m.KS)(o)) && void 0 !== l ? l : s.VL1, Y = E.Z.can(w.Plq.MANAGE_MESSAGES, o), {
+    null != t && N.Z.can(w.Plq.VIEW_CHANNEL, t) && (0, y.Kh)(t.id)
+  }, []), F = null != o ? (0, f.F6)(o, Z.default, I.Z, !1) : "???", G = D && null != o.guild_id ? null === (t = E.Z.getGuild(o.guild_id)) || void 0 === t ? void 0 : t.name : null, V = (null == o ? void 0 : o.parent_id) != null ? O.Z.getChannel(o.parent_id) : null, z = null !== (n = null == V ? void 0 : V.name) && void 0 !== n ? n : null, Y = null !== (l = (0, m.KS)(o)) && void 0 !== l ? l : s.VL1, q = N.Z.can(w.Plq.MANAGE_MESSAGES, o), {
     content: K
   } = (0, C.ZP)({
     content: F,
@@ -276,7 +276,7 @@ function U(e) {
   }, []);
   let $ = [F, z, G].filter(e => null != e).join(", ");
   return (0, r.jsx)(g.aQ.Provider, {
-    value: (0, _.Z)(U, Y),
+    value: (0, _.Z)(U, q),
     children: (0, r.jsxs)("ul", {
       role: "group",
       className: M.searchResultGroup,
@@ -285,7 +285,7 @@ function U(e) {
         onClick: () => H(o.id),
         children: (0, r.jsxs)("div", {
           className: M.channelNameContainer,
-          children: [(0, r.jsx)(q, {
+          children: [(0, r.jsx)(Y, {
             className: M.channelNameIcon,
             size: "xs",
             color: "currentColor"

@@ -1,6 +1,6 @@
 /** Chunk was on 4566 **/
 n.d(t, {
-  Z: () => q
+  Z: () => Y
 }), n(47120), n(411104);
 var r = n(200651),
   i = n(192379),
@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(79390),
   j = n(216789),
   O = n(665906),
-  N = n(706454),
-  E = n(695346),
+  E = n(706454),
+  N = n(695346),
   I = n(433355),
   P = n(819640),
   S = n(375954),
@@ -76,10 +76,10 @@ function z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let q = i.memo(function(e) {
+let Y = i.memo(function(e) {
   var t, l;
-  let q, {
-      className: Y,
+  let Y, {
+      className: q,
       channel: K,
       draftType: X,
       editorTextContent: Q,
@@ -115,7 +115,7 @@ let q = i.memo(function(e) {
     em = (0, g.Go)() && (er || ep),
     eg = K.isPrivate(),
     eb = (0, a.e7)([Z.Z], () => eg || Z.Z.can(U.Plq.ATTACH_FILES, K) && Z.Z.can(U.Plq.SEND_MESSAGES, K)),
-    e_ = ["en-US", "en-GB"].includes((0, a.e7)([N.default], () => N.default.locale)) ? F.NW.string(F.t.d56gCQ) : F.NW.string(F.t.PdRCRk),
+    e_ = ["en-US", "en-GB"].includes((0, a.e7)([E.default], () => E.default.locale)) ? F.NW.string(F.t.d56gCQ) : F.NW.string(F.t.PdRCRk),
     eC = (0, d.Z)(ei);
   (null == eC ? void 0 : eC.newClipIds.length) !== (null == ei ? void 0 : ei.newClipIds.length) && (null !== (t = null == ei ? void 0 : ei.newClipIds.length) && void 0 !== t ? t : 0) > 0 && null == eh && ec && eo && !eu && !ea && !ed && ef("recentClips");
   let ev = (e, t, n) => {
@@ -149,8 +149,8 @@ let q = i.memo(function(e) {
   });
   let ej = (0, O.NE)(K),
     eO = (0, O.Xu)(K),
-    eN = !E.dN.useSetting() && !(0, M.isAndroidWeb)() && null != window.ResizeObserver,
-    eE = (0, x.UI)(null != K ? K : void 0),
+    eE = !N.dN.useSetting() && !(0, M.isAndroidWeb)() && null != window.ResizeObserver,
+    eN = (0, x.UI)(null != K ? K : void 0),
     eI = (0, c.bWb)().enabled,
     eP = (0, h.qB)(K.id, "ChannelAttachButton"),
     eS = (0, j.Us)({
@@ -160,13 +160,13 @@ let q = i.memo(function(e) {
     eT = (0, W.Z)({
       canAttachFiles: eb,
       canStartThreads: ej || eO,
-      useSlate: eN,
+      useSlate: eE,
       hasClips: em,
       canUseApplicationCommands: !$ && !es,
       channel: K,
       activities: en,
       newClipsCount: eZ,
-      canPostPolls: eE,
+      canPostPolls: eN,
       canLaunchActivities: eP,
       appContext: ee,
       canSendScheduledMessages: eS
@@ -177,7 +177,7 @@ let q = i.memo(function(e) {
   if (0 === eT.length) return null;
   let eM = en.some(e => (0, f.Z)(e, U.xjy.SYNC)),
     ek = en.some(e => (0, f.Z)(e, U.xjy.JOIN) && !(0, f.Z)(e, U.xjy.EMBEDDED)) || eM;
-  q = eI ? (0, r.jsx)(c.oFk, {
+  Y = eI ? (0, r.jsx)(c.oFk, {
     size: eA ? "refresh_sm" : void 0,
     color: "currentColor",
     colorClass: G.attachButtonPlus
@@ -249,7 +249,7 @@ let q = i.memo(function(e) {
       children: e => (0, r.jsx)(c.zxk, z(V({
         look: c.zxk.Looks.BLANK,
         size: c.zxk.Sizes.NONE,
-        className: o()(G.attachButton, Y),
+        className: o()(G.attachButton, q),
         innerClassName: G.attachButtonInner,
         "aria-label": e_,
         onDoubleClick: eb ? () => {
@@ -260,7 +260,7 @@ let q = i.memo(function(e) {
           offset: eL
         }
       }, e), {
-        children: q
+        children: Y
       }))
     });
   return (0, r.jsxs)(r.Fragment, {

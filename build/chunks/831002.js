@@ -1,8 +1,8 @@
 /** Chunk was on 4566 **/
 n.d(t, {
   $A: () => O,
-  ZP: () => E,
-  j8: () => N
+  ZP: () => N,
+  j8: () => E
 });
 var r = n(200651);
 n(192379);
@@ -44,7 +44,7 @@ function O(e) {
   }) : null
 }
 
-function N(e) {
+function E(e) {
   let t = (0, o.e7)([b.Z], () => b.Z.getChannel(e), [e]);
   l()(null != t, "useNotificationSettingsItem: channel cannot be undefined");
   let n = (0, g.Mn)("StageChannelCallOverflowMenu"),
@@ -53,7 +53,7 @@ function N(e) {
   return n ? r : i
 }
 
-function E(e) {
+function N(e) {
   let {
     channelId: t,
     closePopout: n,
@@ -65,6 +65,6 @@ function E(e) {
     onClose: n,
     "aria-label": j.NW.string(j.t.pkYeAw),
     onSelect: l,
-    children: [O(t), N(t), (0, d.Z)(), (0, u.Z)(t), m, (0, p.Z)(f, i)]
+    children: [O(t), E(t), (0, d.Z)(), (0, u.Z)(t), m, (0, p.Z)(f, i)]
   })
 }

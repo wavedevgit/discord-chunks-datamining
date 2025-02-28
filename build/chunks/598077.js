@@ -120,7 +120,7 @@ class v extends i.Z {
     return (0, l.yE)(this.purchasedFlags, e)
   }
   hasPremiumUsageFlag(e) {
-    return (this.premiumUsageFlags & e) === e
+    return (0, l.yE)(this.premiumUsageFlags, e)
   }
   hasHadSKU(e) {
     let t = p.vL[e];
@@ -128,9 +128,9 @@ class v extends i.Z {
   }
   hasHadPremium() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
-      t = this.hasHadSKU(p.Si.TIER_0),
-      n = this.hasHadSKU(p.Si.TIER_1),
-      r = this.hasHadSKU(p.Si.TIER_2);
+      t = this.hasPurchasedFlag(p.in.PREMIUM_TIER_0),
+      n = this.hasPurchasedFlag(p.in.PREMIUM_TIER_1),
+      r = this.hasPurchasedFlag(p.in.PREMIUM_TIER_2);
     switch (e) {
       case p.p9.TIER_0:
         return t;

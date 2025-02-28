@@ -49,19 +49,19 @@ let C = [{
   },
   j = new Set,
   O = null,
-  N = 0,
-  E = 0;
+  E = 0,
+  N = 0;
 
 function I() {
   if (null == O || !Z(O)) return !1;
   let e = S(O);
   if (e.lastActionTime > Date.now() - d.Z.Millis.DAY && e.viewDuration > v) return !1;
   let t = Date.now();
-  e.lastActionTime = t, e.viewDuration += t - N, N = t
+  e.lastActionTime = t, e.viewDuration += t - E, E = t
 }
 
 function P() {
-  return 0 !== E && (clearInterval(E), E = 0), u.ZP.useNewNotifications && (E = setInterval(() => {
+  return 0 !== N && (clearInterval(N), N = 0), u.ZP.useNewNotifications && (N = setInterval(() => {
     I() && w.emitChange()
   }, 15 * d.Z.Millis.SECOND)), !1
 }
@@ -118,10 +118,10 @@ _(A, "displayName", "UnreadSettingNoticeStore2"), _(A, "persistKey", "UnreadSett
 let w = new A(l.Z, {
     CHANNEL_SELECT: function() {
       let e = I();
-      return O = c.Z.getChannelId(), N = Date.now(), e
+      return O = c.Z.getChannelId(), E = Date.now(), e
     },
     CONNECTION_OPEN: function() {
-      O = c.Z.getChannelId(), N = Date.now(), P();
+      O = c.Z.getChannelId(), E = Date.now(), P();
       let e = Date.now() - y;
       h.default.forEach(x.channels, (t, n) => {
         let {

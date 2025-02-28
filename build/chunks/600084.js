@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(496675),
   j = n(594174),
   O = n(51144),
-  N = n(7782),
-  E = n(967128),
+  E = n(7782),
+  N = n(967128),
   I = n(320781),
   P = n(269203),
   S = n(86863),
@@ -93,7 +93,7 @@ function F(e) {
       authorizedAppToken: null != G ? null === (e = v.Z.getApps()) || void 0 === e ? void 0 : e.find(e => e.application.id === G.id) : void 0,
       authorizedAppsFetchState: v.Z.getFetchState()
     }
-  }), q = c.Z.useExperiment({
+  }), Y = c.Z.useExperiment({
     location: "EmptyMessages"
   }).enabledDesktop;
   if (i.useEffect(() => {
@@ -122,12 +122,12 @@ function F(e) {
         application: G,
         channel: p,
         oauth2Token: V
-      }), q && (0, r.jsx)(f.Z, {
+      }), Y && (0, r.jsx)(f.Z, {
         buttonSize: o.PhG.SMALL,
         color: o.zxk.Colors.PRIMARY,
         channel: p
       })]
-    })) : e = (0, r.jsx)(N.Z, {
+    })) : e = (0, r.jsx)(E.Z, {
       userId: p.getRecipientId(),
       channel: p,
       showingBanner: h
@@ -145,13 +145,13 @@ function F(e) {
       }), e]
     })
   }
-  return p.isMultiUserDM() ? p.isManaged() ? (0, r.jsxs)(E.ZP, {
+  return p.isMultiUserDM() ? p.isManaged() ? (0, r.jsxs)(N.ZP, {
     channelId: p.id,
-    children: [(0, r.jsx)(E.Ot, {
+    children: [(0, r.jsx)(N.Ot, {
       children: W.NW.format(W.t.I3R7Vl, {
         channelName: C
       })
-    }), (0, r.jsx)(E.jz, {
+    }), (0, r.jsx)(N.jz, {
       children: W.NW.string(W.t.M8Ao6O)
     })]
   }) : p.hasFlag(D.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL) ? (0, r.jsx)(P.Z, {
@@ -164,9 +164,9 @@ function F(e) {
   }) : M ? (0, r.jsx)(H, {
     channel: p,
     canManageRoles: R
-  }) : (0, r.jsx)(E.ZP, {
+  }) : (0, r.jsx)(N.ZP, {
     channelId: p.id,
-    children: (0, r.jsx)(E.jz, {
+    children: (0, r.jsx)(N.jz, {
       children: W.NW.format(W.t.hPVEQE, {
         channelName: C
       })

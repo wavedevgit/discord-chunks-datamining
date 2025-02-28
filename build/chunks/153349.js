@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(431328),
   j = n(145834),
   O = n(590415),
-  N = n(614173),
-  E = n(618896),
+  E = n(614173),
+  N = n(618896),
   I = n(231338),
   P = n(388032),
   S = n(235791);
@@ -98,8 +98,8 @@ let A = i.memo(function(e) {
     let x = t.getGuildId();
     s()(null != x, "Channel cannot be guildless");
     let {
-      isMobile: N,
-      status: E
+      isMobile: E,
+      status: N
     } = (0, c.cj)([v.Z], () => ({
       isMobile: v.Z.isMobileOnline(l.user.id),
       status: v.Z.getStatus(l.user.id, x)
@@ -153,8 +153,8 @@ let A = i.memo(function(e) {
               size: u.EFr.SIZE_40,
               className: S.participantAvatar,
               user: l.user,
-              isMobile: N,
-              status: E
+              isMobile: E,
+              status: N
             }), (0, r.jsxs)("div", {
               className: S.participantTextContainer,
               children: [(0, r.jsx)(u.PUh, {
@@ -200,7 +200,7 @@ let A = i.memo(function(e) {
   R = i.memo(function(e) {
     let {
       channel: t
-    } = e, [n, i] = (0, N.h)(t.id);
+    } = e, [n, i] = (0, E.h)(t.id);
     return (0, r.jsx)(u.j7V, {
       className: S.toggle,
       onChange: i,
@@ -211,7 +211,7 @@ let A = i.memo(function(e) {
   M = i.memo(function() {
     return (0, r.jsxs)("div", {
       className: S.emptyStateContainer,
-      children: [(0, r.jsx)(E.Z, {}), (0, r.jsx)(u.Text, {
+      children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)(u.Text, {
         className: S.emptyStateTitle,
         variant: "text-lg/semibold",
         color: "header-primary",

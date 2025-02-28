@@ -25,9 +25,9 @@ var r = n(200651),
   x = n(5192),
   j = n(590415),
   O = n(354459),
-  N = n(997640);
+  E = n(997640);
 
-function E(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -68,21 +68,21 @@ let P = i.memo(function(e) {
       isIgnored: a
     } = e;
     return (0, r.jsxs)("div", {
-      className: N.textContainer,
+      className: E.textContainer,
       children: [o ? (0, r.jsx)(p.t6m, {
         size: "lg",
-        className: N.blockedIcon,
+        className: E.blockedIcon,
         color: d.Z.unsafe_rawColors.RED_400.css
       }) : null, a ? (0, r.jsx)(p.kZF, {
         size: "lg",
-        className: N.blockedIcon
+        className: E.blockedIcon
       }) : null, (0, r.jsx)(p.Text, {
-        className: N.text,
+        className: E.text,
         variant: "text-sm/normal",
         color: "header-primary",
         children: x.ZP.getName(t, n, i)
       }), l ? (0, r.jsx)(y.Z, {
-        className: N.boost,
+        className: E.boost,
         color: d.Z.unsafe_rawColors.GUILD_BOOSTING_PINK.css
       }) : null]
     })
@@ -102,19 +102,19 @@ let P = i.memo(function(e) {
     } = n, h = d === j.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = d === j.xO.REQUESTED_TO_SPEAK || h;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: N.avatarContainer,
+        className: E.avatarContainer,
         children: [f && (0, r.jsx)(p.V9, {
           size: "md",
           color: "currentColor",
-          className: o()(N.icon, {
-            [N.invited]: h
+          className: o()(E.icon, {
+            [E.invited]: h
           })
         }), (0, r.jsx)("img", {
           src: null !== (t = s.getAvatarURL(l.guild_id, 56, !1)) && void 0 !== t ? t : void 0,
           alt: s.username,
           "aria-label": s.username,
-          className: o()(N.avatar, {
-            [N.faded]: c || u
+          className: o()(E.avatar, {
+            [E.faded]: c || u
           })
         })]
       }), (0, r.jsx)(P, {
@@ -128,7 +128,7 @@ let P = i.memo(function(e) {
     })
   }),
   Z = () => (0, r.jsx)("div", {
-    className: N.tileBaseContainer
+    className: E.tileBaseContainer
   }),
   T = i.memo(function(e) {
     let {
@@ -155,7 +155,7 @@ let P = i.memo(function(e) {
           let {
             default: e
           } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("22685")]).then(n.bind(n, 757387));
-          return t => (0, r.jsx)(e, I(E({}, t), {
+          return t => (0, r.jsx)(e, I(N({}, t), {
             user: a,
             guildId: y,
             channel: l,
@@ -171,7 +171,7 @@ let P = i.memo(function(e) {
           context: j
         })
       }, [a, x, j, y, l]),
-      T = i.useCallback(e => (0, r.jsx)(_.Z, I(E({}, e), {
+      T = i.useCallback(e => (0, r.jsx)(_.Z, I(N({}, e), {
         guildId: y,
         channelId: l.id,
         userId: a.id
@@ -184,10 +184,10 @@ let P = i.memo(function(e) {
       renderPopout: T,
       position: "right",
       spacing: 8,
-      children: e => (0, r.jsx)(p.P3F, I(E({
-        className: o()(N.tileContainer, {
-          [N.singleIcon]: P || d,
-          [N.doubleIcon]: P && d
+      children: e => (0, r.jsx)(p.P3F, I(N({
+        className: o()(E.tileContainer, {
+          [E.singleIcon]: P || d,
+          [E.doubleIcon]: P && d
         }),
         onContextMenu: Z
       }, e), {

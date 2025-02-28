@@ -37,7 +37,7 @@ function v(e) {
     onClose: y,
     analyticsLocation: x,
     className: j
-  } = e, O = (0, o.e7)([p.ZP], () => p.ZP.getGuildSidebarState(v), [v]), N = null !== (t = null == O ? void 0 : O.details.modViewPanel) && void 0 !== t ? t : b.k.INFO, E = (0, c.Z)(n), I = null == N ? null : N === b.k.INFO ? "backwards" : "forwards", P = (0, d.Z)(I), {
+  } = e, O = (0, o.e7)([p.ZP], () => p.ZP.getGuildSidebarState(v), [v]), E = null !== (t = null == O ? void 0 : O.details.modViewPanel) && void 0 !== t ? t : b.k.INFO, N = (0, c.Z)(n), I = null == E ? null : E === b.k.INFO ? "backwards" : "forwards", P = (0, d.Z)(I), {
     reducedMotion: S
   } = i.useContext(a.S), Z = i.useCallback(e => {
     null != O && (0, h.r)(v, n, O.baseChannelId, {
@@ -47,11 +47,11 @@ function v(e) {
     [_.EkH.CLOSE_MODAL]: {
       binds: ["esc"],
       comboKeysBindGlobal: !0,
-      action: () => N === b.k.INFO ? y() : Z(b.k.INFO)
+      action: () => E === b.k.INFO ? y() : Z(b.k.INFO)
     }
-  }), [y, N, Z]);
+  }), [y, E, Z]);
   i.useEffect(() => (u.Z.enable(), u.Z.enableTemp(T), () => u.Z.disableTemp()), [T]);
-  let A = (0, s.Yzy)(N, {
+  let A = (0, s.Yzy)(E, {
     value: 0,
     from: {
       value: 1
@@ -62,7 +62,7 @@ function v(e) {
     leave: {
       value: -1
     }
-  }, E !== n ? "animate-never" : "animate-always");
+  }, N !== n ? "animate-never" : "animate-always");
   return (0, r.jsx)(l.animated.div, {
     style: {
       position: "relative",

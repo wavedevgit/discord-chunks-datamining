@@ -1,11 +1,11 @@
 /** Chunk was on 25292 **/
 n.d(t, {
-  Xo: () => a,
-  pB: () => c
+  Xo: () => c,
+  pB: () => a
 });
-var i = n(818083),
-  r = n(517858);
-let o = (0, i.B)({
+var r = n(818083),
+  i = n(517858);
+let o = (0, r.B)({
   kind: "user",
   id: "2024-04_keyword_filter_experiment",
   label: "Replace registered keywords with asterisks",
@@ -21,10 +21,10 @@ let o = (0, i.B)({
   }]
 });
 
-function a(e) {
+function c(e) {
   let {
     location: t
-  } = e, n = (0, r.C3)({
+  } = e, n = (0, i.C3)({
     location: t
   });
   return o.useExperiment({
@@ -34,10 +34,10 @@ function a(e) {
   }).enabled || n
 }
 
-function c(e) {
+function a(e) {
   let {
     location: t
-  } = e, n = (0, r.GW)({
+  } = e, n = (0, i.GW)({
     location: t
   });
   return o.getCurrentConfig({

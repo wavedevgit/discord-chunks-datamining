@@ -1,7 +1,116 @@
 /**
   Module ID: 82081
-  Original File Name: aa48b3ba463c57e8
+  Original File Name: e08266ac39ccf84a
 **/
+.container__6e9b4 {
+    position: relative;
+    pointer-events: all;
+    display: flex;
+    width: 256px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bg-surface-overlay);
+    border: 1px solid rgba(0,0,0,.08);
+    border: 1px solid var(--border-subtle,rgba(0,0,0,.08));
+    border-radius: 24px;
+    box-shadow: 0 12px 36px 0 rgba(0,0,0,.12);
+    box-sizing: border-box;
+    z-index: 1000
+}
+
+.title__6e9b4 {
+    color: var(--header-primary);
+    line-height: 20px
+}
+
+.description__6e9b4 {
+    color: var(--header-secondary);
+    line-height: 18px;
+    text-align: center
+}
+
+.orbIcon__6e9b4,.orbIconImg__6e9b4 {
+    height: 40px
+}
+
+.content__6e9b4 {
+    margin-top: 12px;
+    flex-direction: column;
+    width: 100%;
+    gap: 4px
+}
+
+.closeButton__6e9b4,.content__6e9b4 {
+    display: flex;
+    align-items: center
+}
+
+.closeButton__6e9b4 {
+    transition-duration: 0s;
+    pointer-events: all;
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+    padding: var(--space-8);
+    justify-content: center
+}
+
+.closeButtonInner__6e9b4 {
+    display: flex
+}
+
+.closeButtonIcon__6e9b4 {
+    align-self: center
+}
+
+.tail__6e9b4 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center
+}
+
+.tailPositionNormal__6e9b4 {
+    bottom: -13px
+}
+
+.tailPositionInverted__6e9b4 {
+    top: -13px
+}
+
+.tailSpine__6e9b4 {
+    width: 2px;
+    height: 12px;
+    background: var(--interactive-active)
+}
+
+.tailTargetPositionNormal__6e9b4 {
+    bottom: -6px
+}
+
+.tailTargetPositionInverted__6e9b4 {
+    top: -6px
+}
+
+.tailTargetOuter__6e9b4 {
+    position: absolute;
+    display: flex;
+    width: 8px;
+    height: 8px
+}
+
+.tailTargetInner__6e9b4 {
+    stroke-width: 2px;
+    stroke: var(--interactive-active);
+    background: var(--interactive-active)
+}
+
 :root {
     --custom-virtual-currency-border-subtle: var(--border-subtle,rgba(108,111,124,0.12))
 }
@@ -36,6 +145,7 @@
 
 .container__4d8b6 {
     width: 250px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,4 +198,4 @@
     gap: 20px
 }
 
-/*# sourceMappingURL=aa48b3ba463c57e8.css.map*/
+/*# sourceMappingURL=e08266ac39ccf84a.css.map*/

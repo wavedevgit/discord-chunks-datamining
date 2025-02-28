@@ -101,12 +101,12 @@ let O = ["349134787773988865"],
         }), Promise.resolve(S);
         let P = {};
         S.name = I.application.name;
-        let j = I.application.id;
-        S.application_id = j;
-        let A = I.transport === b.He.POST_MESSAGE,
-          Z = u.Z.getApplication(null != j ? j : void 0),
+        let A = I.application.id;
+        S.application_id = A;
+        let j = I.transport === b.He.POST_MESSAGE,
+          Z = u.Z.getApplication(null != A ? A : void 0),
           x = 0;
-        if (null != Z && (0, a.Kb)(Z) && A) {
+        if (null != Z && (0, a.Kb)(Z) && j) {
           let e = s.ZP.getCurrentEmbeddedActivity();
           if ((null == e ? void 0 : e.applicationId) === Z.id) {
             let t = e.compositeInstanceId;
@@ -121,7 +121,7 @@ let O = ["349134787773988865"],
             }, null !== (v = S.party) && void 0 !== v ? v : {})
           }
         }
-        let L = (0, g.S5)(S, A);
+        let L = (0, g.S5)(S, j);
         L > 0 && (S.flags = L | x), delete S.instance, null === (t = S.party) || void 0 === t || delete t.privacy;
         let {
           assets: w,

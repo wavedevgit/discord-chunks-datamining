@@ -24,8 +24,8 @@ var r = n(200651),
   x = n(368862),
   j = n(34674),
   O = n(390322),
-  N = n(857192),
-  E = n(626135),
+  E = n(857192),
+  N = n(626135),
   I = n(566620),
   P = n(127255),
   S = n(5200),
@@ -48,7 +48,7 @@ function L(e) {
       fetchState: h,
       voiceBannerCollection: f
     } = function() {
-      let e = (0, d.e7)([N.default], () => N.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE;
+      let e = (0, d.e7)([E.default], () => E.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE;
       return i.useEffect(() => {
         (0, y.XK)({
           surface: M,
@@ -123,18 +123,18 @@ let D = i.forwardRef(function(e, t) {
     guild_id: j
   } = l;
   i.useEffect(() => {
-    E.default.track(A.rMx.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
+    N.default.track(A.rMx.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
       channel_id: x,
       guild_id: j
     })
   }, [x, j]), i.useEffect(() => {
     a || s()
   }, [s, a]);
-  let N = (0, f.bp)(),
+  let E = (0, f.bp)(),
     {
       analyticsLocations: M
     } = (0, b.ZP)(g.Z.ACTIVITIES_MINI_SHELF),
-    D = N === A.IlC.POPOUT,
+    D = E === A.IlC.POPOUT,
     W = (0, h.O)(),
     U = (n = l.getGuildId(), (0, P.Z)({
       guildId: n
@@ -155,7 +155,7 @@ let D = i.forwardRef(function(e, t) {
       }), u(), _()
     }, [W, M, l, _, u, D]),
     H = i.useCallback(e => {
-      c(), E.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
+      c(), N.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
         channel_id: l.id,
         guild_id: l.getGuildId()
       })

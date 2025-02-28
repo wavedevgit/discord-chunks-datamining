@@ -39,7 +39,7 @@ var i, o = n(392711),
   B = n(823379),
   F = n(981631);
 
-function M(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -48,14 +48,14 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      M(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -92,7 +92,7 @@ function q(e) {
 }
 
 function $(e) {
-  return null == Q[e] && (Q = U(L({}, Q), {
+  return null == Q[e] && (Q = U(M({}, Q), {
     [e]: new C.Z({
       name: e
     })
@@ -100,7 +100,7 @@ function $(e) {
 }
 
 function ee(e) {
-  return null == z[e] && (z = U(L({}, z), {
+  return null == z[e] && (z = U(M({}, z), {
     [e]: new S.Z({
       url: e
     })
@@ -195,8 +195,8 @@ function er(e, t, n) {
       playingMembers: A
     })
   }
-  let M = 1 === y.length,
-    L = [],
+  let L = 1 === y.length,
+    M = [],
     U = new Set,
     G = new Set;
   for (let e of t) {
@@ -204,7 +204,7 @@ function er(e, t, n) {
       i = w.Z.getChannel(n),
       o = null != i ? i.getGuildId() : null,
       a = j.Z.getGuild(o);
-    if (G.has(o) && U.has(n) || null == i || null == a || i.id === a.afkChannelId) null == i && (h = null, M = !0);
+    if (G.has(o) && U.has(n) || null == i || null == a || i.id === a.afkChannelId) null == i && (h = null, L = !0);
     else {
       let e = R.Z.getVoiceStatesForChannel(i.id),
         l = r()(e).map(e => {
@@ -213,7 +213,7 @@ function er(e, t, n) {
           } = e;
           return k.default.getUser(t)
         }).filter(B.lm).orderBy([eo], ["desc"]).value();
-      l.filter(e => !v.includes(e.id)).forEach(e => t.push(e)), M ? G.has(o) || (h = null) : (h = a, M = !0), G.add(o), U.add(n), L.push({
+      l.filter(e => !v.includes(e.id)).forEach(e => t.push(e)), L ? G.has(o) || (h = null) : (h = a, L = !0), G.add(o), U.add(n), M.push({
         channel: i,
         guild: a,
         members: l,
@@ -223,7 +223,7 @@ function er(e, t, n) {
   }
   return {
     id: n,
-    voiceChannels: L,
+    voiceChannels: M,
     isSpotifyActivity: D,
     priorityMembers: y.map(e => ({
       user: e,
@@ -356,7 +356,7 @@ class e_ extends(i = l.ZP.Store) {
     return V
   }
 }
-M(e_, "displayName", "NowPlayingViewStore");
+L(e_, "displayName", "NowPlayingViewStore");
 let eh = new e_(c.Z, {
     LOGOUT: function() {
       G = !1, H = [], K = [], Y.clear()

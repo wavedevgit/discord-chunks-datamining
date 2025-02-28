@@ -1,6 +1,6 @@
 /** Chunk was on 4566 **/
 n.d(t, {
-  Z: () => v
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -8,90 +8,94 @@ var r = n(200651),
   o = n(570140),
   a = n(475179),
   s = n(367907),
-  c = n(358221),
-  u = n(788983),
-  d = n(268353),
-  p = n(944486),
-  h = n(626135),
-  f = n(585483),
-  m = n(358085),
-  g = n(228488),
-  b = n(981631),
-  _ = n(452192);
-let C = () => {
-  o.Z.wait(() => u.xv(b.KJ3.CHANNEL_CALL_POPOUT))
+  c = n(906732),
+  u = n(358221),
+  d = n(522651),
+  p = n(788983),
+  h = n(268353),
+  f = n(944486),
+  m = n(626135),
+  g = n(585483),
+  b = n(358085),
+  _ = n(228488),
+  C = n(981631),
+  v = n(452192);
+let y = () => {
+  o.Z.wait(() => p.xv(C.KJ3.CHANNEL_CALL_POPOUT))
 };
 
-function v(e) {
+function x(e) {
   let {
     channel: t,
     appContext: n,
     popoutOpen: o,
-    popoutWindow: u,
-    currentWindow: v
-  } = e, y = n === b.IlC.POPOUT, x = i.useRef(null), {
-    currentLayout: j,
-    mode: O
-  } = (0, l.cj)([c.Z], () => {
-    let e = c.Z.getMode(t.id),
-      r = n === b.IlC.POPOUT;
-    r && (e = b.WtW.VIDEO);
-    let i = e === b.WtW.VIDEO ? c.Z.getLayout(t.id, n) : b.AEg.MINIMUM;
-    return r && i !== b.AEg.FULL_SCREEN && (i = b.AEg.NO_CHAT), {
+    popoutWindow: p,
+    currentWindow: x
+  } = e, {
+    parentAnalyticsLocation: j
+  } = (0, c.ZP)(), O = n === C.IlC.POPOUT, E = i.useRef(null), {
+    currentLayout: N,
+    mode: I
+  } = (0, l.cj)([u.Z], () => {
+    let e = u.Z.getMode(t.id),
+      r = n === C.IlC.POPOUT;
+    r && (e = C.WtW.VIDEO);
+    let i = e === C.WtW.VIDEO ? u.Z.getLayout(t.id, n) : C.AEg.MINIMUM;
+    return r && i !== C.AEg.FULL_SCREEN && (i = C.AEg.NO_CHAT), {
       currentLayout: i,
       mode: e
     }
-  }, [t, n]), N = (0, l.e7)([p.Z], () => p.Z.getVoiceChannelId() === t.id, [t.id]);
+  }, [t, n]), P = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId() === t.id, [t.id]);
   i.useEffect(() => {
-    x.current = O
+    E.current = I
   });
-  let E = i.useRef(j),
+  let S = i.useRef(N),
     {
-      currentDocument: I,
-      rootNode: P
+      currentDocument: Z,
+      rootNode: T
     } = i.useMemo(() => {
-      let e = null != u && y ? u.document : document,
-        t = v.document.getElementById("app-mount");
+      let e = null != p && O ? p.document : document,
+        t = x.document.getElementById("app-mount");
       return {
-        currentWindow: v,
+        currentWindow: x,
         currentDocument: e,
         rootNode: t
       }
-    }, [u, y, v]),
-    S = o && !y,
-    Z = O === b.WtW.VIDEO && N && !S,
-    T = i.useCallback((e, r) => {
-      r !== e && (a.Z.updateLayout(t.id, r, n), r === b.AEg.FULL_SCREEN && t.isPrivate() && f.S.dispatch(b.CkL.TEXTAREA_BLUR))
+    }, [p, O, x]),
+    A = o && !O,
+    w = I === C.WtW.VIDEO && P && !A,
+    R = i.useCallback((e, r) => {
+      r !== e && (a.Z.updateLayout(t.id, r, n), r === C.AEg.FULL_SCREEN && t.isPrivate() && g.S.dispatch(C.CkL.TEXTAREA_BLUR))
     }, [n, t]),
-    A = i.useCallback(e => {
-      null != P && e === b.AEg.FULL_SCREEN && (T(e, E.current), (0, g.Pr)(e => {
-        E.current = e
-      }, I))
-    }, [I, T, P]),
-    w = i.useCallback(e => () => {
-      null != P && (e !== b.AEg.FULL_SCREEN ? (E.current = e, T(e, b.AEg.FULL_SCREEN), (0, g.Dj)(P)) : A(e))
-    }, [T, A, P]);
+    M = i.useCallback(e => {
+      null != T && e === C.AEg.FULL_SCREEN && (R(e, S.current), (0, _.Pr)(e => {
+        S.current = e
+      }, Z))
+    }, [Z, R, T]),
+    k = i.useCallback(e => () => {
+      null != T && ((0, d.v)(j, d.d.FULL_SCREEN, e !== C.AEg.FULL_SCREEN), e !== C.AEg.FULL_SCREEN ? (S.current = e, R(e, C.AEg.FULL_SCREEN), (0, _.Dj)(T)) : M(e))
+    }, [R, M, T, j]);
   i.useEffect(() => {
     let e = () => {
-      null == P || (0, g.rB)(P, I) || j !== b.AEg.FULL_SCREEN || w(j)()
+      null == T || (0, _.rB)(T, Z) || N !== C.AEg.FULL_SCREEN || k(N)()
     };
-    return I.addEventListener(g.NO, e), () => {
-      I.removeEventListener(g.NO, e)
+    return Z.addEventListener(_.NO, e), () => {
+      Z.removeEventListener(_.NO, e)
     }
-  }, [I, j, w, P]);
-  let R = {
+  }, [Z, N, k, T]);
+  let L = {
       channel: t,
-      maybeLeaveFullScreen: A
+      maybeLeaveFullScreen: M
     },
-    M = i.useRef(R);
+    D = i.useRef(L);
   return (i.useEffect(() => {
-    M.current = R
+    D.current = L
   }), i.useEffect(() => {
     let {
       channel: e,
       maybeLeaveFullScreen: t
-    } = M.current;
-    return h.default.track(b.rMx.VIDEO_LAYOUT_TOGGLED, function(e) {
+    } = D.current;
+    return m.default.track(C.rMx.VIDEO_LAYOUT_TOGGLED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -109,19 +113,19 @@ function v(e) {
       }
       return e
     }({
-      video_layout: y ? "popout" : j
+      video_layout: O ? "popout" : N
     }, (0, s.AB)(e.id))), () => {
-      y && (0, m.isMac)() || t(j)
+      O && (0, b.isMac)() || t(N)
     }
-  }, [j, y]), i.useEffect(() => {
-    null != P && x.current === b.WtW.VIDEO && O === b.WtW.VOICE && (0, g.Pr)(P, I)
-  }, [I, O, x, P]), i.useEffect(() => {
-    !N && y && C()
-  }, [N, y]), Z) ? (0, r.jsx)(d.Z, {
+  }, [N, O]), i.useEffect(() => {
+    null != T && E.current === C.WtW.VIDEO && I === C.WtW.VOICE && (0, _.Pr)(T, Z)
+  }, [Z, I, E, T]), i.useEffect(() => {
+    !P && O && y()
+  }, [P, O]), w) ? (0, r.jsx)(h.Z, {
     themeable: !1,
-    node: P,
-    guestWindow: u,
-    className: _.rightTrayIcon,
-    onClick: w(j)
+    node: T,
+    guestWindow: p,
+    className: v.rightTrayIcon,
+    onClick: k(N)
   }) : null
 }

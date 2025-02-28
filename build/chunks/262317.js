@@ -25,8 +25,8 @@ var r, i = n(200651),
   x = n(701362),
   j = n(184301),
   O = n(347475),
-  N = n(597998),
-  E = n(314897),
+  E = n(597998),
+  N = n(314897),
   I = n(430824),
   P = n(496675),
   S = n(979651),
@@ -185,7 +185,7 @@ class U extends(r = l.PureComponent) {
         channelId: t.id,
         guildId: t.guild_id
       };
-      E.default.getId() !== e.id && p.default.selectVoiceChannel(t.id), n ? ((0, y.Z)(i), u.Z.selectParticipant(i.channelId, (0, C.V9)(i))) : (0, h.iV)(i), null == r || r(e.id)
+      N.default.getId() !== e.id && p.default.selectVoiceChannel(t.id), n ? ((0, y.Z)(i), u.Z.selectParticipant(i.channelId, (0, C.V9)(i))) : (0, h.iV)(i), null == r || r(e.id)
     }), M(this, "handleJoinVoice", () => {
       let {
         user: e,
@@ -260,7 +260,7 @@ class U extends(r = l.PureComponent) {
         serverMute: x,
         serverDeaf: j,
         tabIndex: O,
-        embeddedApplication: E,
+        embeddedApplication: N,
         channel: I,
         ringing: P,
         isSelf: S,
@@ -288,7 +288,7 @@ class U extends(r = l.PureComponent) {
         tabIndex: O,
         otherClientSessionType: n,
         voicePlatform: r,
-        embeddedApplication: E,
+        embeddedApplication: N,
         avatarContainerClass: a()({
           [R.userAvatar]: !0
         }),
@@ -325,7 +325,7 @@ class U extends(r = l.PureComponent) {
               }
               return i
             }(e, ["onClick", "onContextMenu"]);
-            return (0, i.jsx)(N.ZP, k({}, D, r))
+            return (0, i.jsx)(E.ZP, k({}, D, r))
           }
         })
       }
@@ -335,7 +335,7 @@ class U extends(r = l.PureComponent) {
         shouldShow: l && !A,
         onRequestClose: this.handleHidePreview,
         spacing: 0,
-        children: () => (0, i.jsx)(N.ZP, L(k({}, D), {
+        children: () => (0, i.jsx)(E.ZP, L(k({}, D), {
           onMouseDown: e.onMouseDown,
           onKeyDown: e.onKeyDown
         }))
