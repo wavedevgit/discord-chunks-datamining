@@ -47,8 +47,8 @@ function p(e, t) {
 
 function b(e, t, n) {
   let b = e.id,
-    [h, j] = r.useState(() => [(0, u.Uu)(), (0, u.Uu)()]),
-    [O, y] = r.useState(""),
+    [h, O] = r.useState(() => [(0, u.Uu)(), (0, u.Uu)()]),
+    [j, y] = r.useState(""),
     [x, v] = r.useState(a.C.DEFAULT),
     [w, _] = r.useState(!1),
     [P, C] = r.useState(d.lc.ONE_DAY),
@@ -56,7 +56,7 @@ function b(e, t, n) {
     [E, k] = r.useState(!1),
     I = h.filter(e => (0, u.cS)(e, x)),
     S = h.filter(e => (0, u.uY)(e, x)),
-    D = O.length > 0 && I.length >= d.gY && 0 === S.length,
+    D = j.length > 0 && I.length >= d.gY && 0 === S.length,
     [R, {
       error: W,
       loading: T
@@ -78,7 +78,7 @@ function b(e, t, n) {
       A(e => {
         let t = m({}, e);
         return delete t["answer-".concat(r)], t
-      }), j(e => {
+      }), O(e => {
         let r = [...e];
         return r[n] = p(m({}, r[n]), {
           text: t
@@ -86,7 +86,7 @@ function b(e, t, n) {
       })
     }, []),
     M = r.useCallback((e, t) => {
-      j(n => {
+      O(n => {
         let r = [...n];
         return r[t] = p(m({}, r[t]), {
           image: e
@@ -107,20 +107,20 @@ function b(e, t, n) {
       }
       M(g(n, i._.READY_TO_UPLOAD), t)
     }, [h, M, z]),
-    F = r.useCallback((e, t, n) => {
+    Y = r.useCallback((e, t, n) => {
       let r = h[t].localCreationAnswerId,
         a = URL.createObjectURL(n);
       z(e, t), M(g(a, i._.PREPARING), t), s.fH(e, r, n), M(g(a, i._.READY_TO_UPLOAD), t)
     }, [h, M, z]),
-    Y = r.useCallback((e, t) => {
+    K = r.useCallback((e, t) => {
       z(b, t), M({
         emoji: e,
         stickerId: void 0,
         mediaAttachmentState: void 0
       }, t)
     }, [b, M, z]),
-    K = r.useCallback(e => {
-      j(t => {
+    F = r.useCallback(e => {
+      O(t => {
         let n = [...t];
         return n[e] = p(m({}, n[e]), {
           image: void 0
@@ -128,12 +128,12 @@ function b(e, t, n) {
       })
     }, []),
     q = r.useCallback(() => {
-      L && j(e => [...e, (0, u.Uu)()])
+      L && O(e => [...e, (0, u.Uu)()])
     }, [L]),
     X = r.useCallback(e => {
       if (!B) return;
       let t = h.length;
-      z(b, e), j(t => {
+      z(b, e), O(t => {
         let n = [...t];
         return n.splice(e, 1), n
       }), null == n || n({
@@ -147,27 +147,27 @@ function b(e, t, n) {
   let J = r.useCallback(() => {
       let e = !0,
         t = {};
-      return 0 === O.trim().length && (e = !1, t.question = f.NW.string(f.t.gPX3oK)), h.filter(e => (0, u.cS)(e, x)).length < d.gY && (e = !1, t["answer-".concat(h[0].localCreationAnswerId)] = f.NW.string(f.t.fYvzER)), h.forEach(n => {
+      return 0 === j.trim().length && (e = !1, t.question = f.NW.string(f.t.gPX3oK)), h.filter(e => (0, u.cS)(e, x)).length < d.gY && (e = !1, t["answer-".concat(h[0].localCreationAnswerId)] = f.NW.string(f.t.fYvzER)), h.forEach(n => {
         (0, u.uY)(n, x) && (e = !1, t["answer-".concat(n.localCreationAnswerId)] = f.NW.string(f.t["8Qqkc3"]))
       }), A(t), k(!e), e
-    }, [h, O, x]),
+    }, [h, j, x]),
     G = r.useCallback(async () => {
       await R({
         channel: e,
-        question: O,
+        question: j,
         answers: I,
         allowMultiSelect: w,
         duration: P,
         layout: x,
         onClose: t
       })
-    }, [O, I, w, P, R, e, x, t]),
+    }, [j, I, w, P, R, e, x, t]),
     Q = r.useCallback(() => {
       !T && J() && G()
     }, [G, T, J]);
   return {
     answers: h,
-    question: O,
+    question: j,
     setQuestion: y,
     selectedLayoutType: x,
     setSelectedLayoutType: v,
@@ -181,11 +181,11 @@ function b(e, t, n) {
     handleQuestionChange: Z,
     handleAnswerTextChange: U,
     handleGifSelect: H,
-    handleEmojiSelect: Y,
-    handleCustomUpload: F,
+    handleEmojiSelect: K,
+    handleCustomUpload: Y,
     handleAddAnswer: q,
     handleRemoveAnswer: X,
-    handleRemoveAnswerImage: K,
+    handleRemoveAnswerImage: F,
     fieldErrors: N,
     createPoll: G,
     handleSubmitPoll: Q,

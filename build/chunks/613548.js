@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(887012),
   U = n(444253),
   B = n(355827),
-  F = n(185935),
-  H = n(354459),
+  H = n(185935),
+  F = n(354459),
   G = n(981631),
   V = n(388032),
   z = n(675608);
@@ -85,7 +85,7 @@ function K(e) {
     guildId: n
   } = e, i = (0, c.Wu)([k.Z, D.Z], () => {
     let e = Date.now();
-    return s()(k.Z.getSpeakers()).map(e => D.Z.getParticipant(t, e)).filter(e => null != e && e.type === H.fO.USER && e.speaking && !(0, N.ZP)(e)).sortBy(t => -k.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+    return s()(k.Z.getSpeakers()).map(e => D.Z.getParticipant(t, e)).filter(e => null != e && e.type === F.fO.USER && e.speaking && !(0, N.ZP)(e)).sortBy(t => -k.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
   });
   return 0 === i.length ? null : (0, r.jsx)(r.Fragment, {
     children: i.map((e, t) => (0, r.jsx)(u.ua7, {
@@ -131,7 +131,7 @@ function X(e) {
     participantsListOpen: D.Z.getParticipantsListOpen(k)
   }), [k]), $ = (0, c.e7)([L.default], () => L.default.getCurrentUser()), ee = (0, W.Z)(n), et = (0, v.o)(X, $), en = (0, C.lL)("CallHeader", !0, $, et), er = n.isGuildVoice() && !s, {
     hasParticipantsPanel: ei
-  } = (0, F.Z)({
+  } = (0, H.Z)({
     location: "ChannelCallHeaderToolbar"
   }), el = !J && ei && (n.isGuildVoice() || n.isGroupDM()), {
     enabled: eo,
@@ -143,8 +143,8 @@ function X(e) {
     allowIdle: eu
   } = (0, I.Y)("popup"), ed = [];
   if (ee && !ei && !M) {
-    let e = (null == X ? void 0 : X.type) === H.fO.STREAM ? (0, g.my)(X.id) : void 0,
-      t = (null == X ? void 0 : X.type) === H.fO.ACTIVITY ? X.applicationId : void 0;
+    let e = (null == X ? void 0 : X.type) === F.fO.STREAM ? (0, g.my)(X.id) : void 0,
+      t = (null == X ? void 0 : X.type) === F.fO.ACTIVITY ? X.applicationId : void 0;
     ed.push((0, r.jsx)(A.Z, {
       className: z.button,
       channel: n,
@@ -160,7 +160,7 @@ function X(e) {
   }, "current-speaker")), ed.push((0, r.jsx)(f.Z, {
     className: z.button,
     channelId: k
-  }, "clips-enabled-indicator")), (null == X ? void 0 : X.type) === H.fO.STREAM && (ed.push((0, r.jsx)(E.Z, {
+  }, "clips-enabled-indicator")), (null == X ? void 0 : X.type) === F.fO.STREAM && (ed.push((0, r.jsx)(E.Z, {
     className: z.button,
     participant: X
   }, "warning")), ed.push((0, r.jsx)(b.Z, {
@@ -240,7 +240,5 @@ function X(e) {
       [z.lastButton]: J
     }),
     disabled: s
-  }, "chat-spacer")), (0, r.jsx)(r.Fragment, {
-    children: ed
-  })
+  }, "chat-spacer")), ed
 }

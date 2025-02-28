@@ -39,9 +39,7 @@ function h(e) {
   return t ? (0, s.jsxs)("div", {
     className: m.verifiedNameContainer,
     children: [(0, s.jsx)(L, {}), r]
-  }) : (0, s.jsx)(s.Fragment, {
-    children: r
-  })
+  }) : r
 }
 
 function x(e) {

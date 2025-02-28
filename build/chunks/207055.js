@@ -44,12 +44,12 @@ let w = i.memo(e => {
   } = e, w = s.id, R = (0, a.e7)([_.default], () => _.default.getId() === w, [w]), [M, k, L] = (0, a.Wu)([v.Z], () => R ? [!v.Z.isSupported() || v.Z.isSelfMute() || v.Z.isSelfMutedTemporarily(), v.Z.isSelfDeaf(), !1] : [!v.Z.isSupported() || v.Z.isLocalMute(w), !1, v.Z.isLocalVideoDisabled(w)], [R, w]), D = (0, a.e7)([N.Z], () => N.Z.isPrioritySpeaker(w)), W = (0, c.Z)({
     userId: w,
     checkSoundSharing: !0
-  }), U = (0, a.e7)([C.ZP], () => C.ZP.isGuestOrLurker(g.guild_id, w)), B = (0, a.e7)([h.Z], () => h.Z.getGuildRingingUsers(g.id).has(w)), F = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => {
+  }), U = (0, a.e7)([C.ZP], () => C.ZP.isGuestOrLurker(g.guild_id, w)), B = (0, a.e7)([h.Z], () => h.Z.getGuildRingingUsers(g.id).has(w)), H = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => {
     let {
       userIds: t
     } = e;
     return t.has(w)
-  }), [w, g.id]), H = (0, p.Z)(null != F ? [F.applicationId] : []), G = (0, P.Hr)("voice_users_eligibility_check", !1), V = (0, a.e7)([x.Z, j.Z], () => R ? j.Z.getActivities() : x.Z.getActivities(w, g.guild_id)).find(e => null != e.application_id && e.type === Z.IIU.PLAYING), z = (0, a.e7)([d.Z], () => (null == V ? void 0 : V.application_id) != null ? d.Z.getApplication(null == V ? void 0 : V.application_id) : void 0);
+  }), [w, g.id]), F = (0, p.Z)(null != H ? [H.applicationId] : []), G = (0, P.Hr)("voice_users_eligibility_check", !1), V = (0, a.e7)([x.Z, j.Z], () => R ? j.Z.getActivities() : x.Z.getActivities(w, g.guild_id)).find(e => null != e.application_id && e.type === Z.IIU.PLAYING), z = (0, a.e7)([d.Z], () => (null == V ? void 0 : V.application_id) != null ? d.Z.getApplication(null == V ? void 0 : V.application_id) : void 0);
   null != z && P.ZP.trackExposure({
     location: "voice_users"
   });
@@ -87,7 +87,7 @@ let w = i.memo(e => {
       ringing: B,
       disconnected: J,
       priority: D,
-      embeddedApplication: H[0],
+      embeddedApplication: F[0],
       isStreaming: null != q && q.channelId === g.id,
       isWatching: null != Y && Y.state !== Z.jm8.ENDED,
       isGuest: U,

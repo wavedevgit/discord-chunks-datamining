@@ -85,9 +85,7 @@ let _ = i.memo(function(e) {
       component: o = c.si.component
     } = c.si
   } = e;
-  return null != o ? (0, r.jsx)(r.Fragment, {
-    children: o
-  }) : (0, r.jsxs)("div", {
+  return null != o ? o : (0, r.jsxs)("div", {
     id: i,
     className: u.toast,
     "data-type": n,

@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(605236),
   U = n(174130),
   B = n(588322),
-  F = n(446226),
-  H = n(517525),
+  H = n(446226),
+  F = n(517525),
   G = n(445384),
   V = n(613464),
   z = n(705563),
@@ -95,8 +95,8 @@ var r = n(200651),
   eW = n(731290),
   eU = n(430824),
   eB = n(158776),
-  eF = n(19780),
-  eH = n(768119),
+  eH = n(19780),
+  eF = n(768119),
   eG = n(944486),
   eV = n(914010),
   ez = n(594174),
@@ -558,7 +558,7 @@ class ti extends i.PureComponent {
         selectedParticipant: e,
         premiumIndicatorEnabled: t
       } = this.props;
-      return (null == e ? void 0 : e.type) !== e7.fO.STREAM ? null : (0, r.jsx)(H.Z, {
+      return (null == e ? void 0 : e.type) !== e7.fO.STREAM ? null : (0, r.jsx)(F.Z, {
         size: e0.ZP.Sizes.LARGE,
         participant: e,
         showQuality: !0,
@@ -784,10 +784,10 @@ let tl = (0, j.Z)(ti),
       let e = null != a ? T.Z.getParticipants(a) : [],
         t = null != a ? T.Z.getActivityParticipants(a) : [];
       return e.length - t.length > 0
-    }, [a]), x = (0, F.Z)(), j = (0, p.e7)([eG.Z], () => {
+    }, [a]), x = (0, H.Z)(), j = (0, p.e7)([eG.Z], () => {
       var e;
       return (null !== (e = null == x ? void 0 : x.channelId) && void 0 !== e ? e : eG.Z.getVoiceChannelId()) === (null == c ? void 0 : c.id)
-    }), I = (0, p.e7)([E.ZP], () => null != c ? E.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), A = (0, p.e7)([eF.Z], () => eF.Z.isConnected()), w = (0, N.Z)(A), R = A && !1 === w;
+    }), I = (0, p.e7)([E.ZP], () => null != c ? E.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), A = (0, p.e7)([eH.Z], () => eH.Z.isConnected()), w = (0, N.Z)(A), R = A && !1 === w;
     i.useEffect(() => {
       j && R && null != I && null != c && g.Z.selectParticipant(c.id, (0, Z.gN)({
         applicationId: I.applicationId,
@@ -802,7 +802,7 @@ let tl = (0, j.Z)(ti),
       D = null != M && !(0, P.Z)(null == c ? void 0 : c.id) && k === e3.Ez.PANEL,
       U = (0, p.e7)([eq.Z], () => null != c && c.isVocalThread() && !u().isEmpty(eq.Z.getVoiceStatesForChannel(c.id)), [c]),
       B = null != c && c.isPrivate() && !D && y,
-      H = (null == c ? void 0 : c.isGuildVocal()) || B || U,
+      F = (null == c ? void 0 : c.isGuildVocal()) || B || U,
       {
         welcomeModalChannelId: G
       } = (0, d.TH)(),
@@ -884,8 +884,8 @@ let tl = (0, j.Z)(ti),
       channelSidebarState: ee,
       guildSidebarState: en,
       guild: C,
-      searchId: (0, p.e7)([eH.Z], () => eH.Z.getCurrentSearchId()),
-      showCall: !v && H,
+      searchId: (0, p.e7)([eF.Z], () => eF.Z.getCurrentSearchId()),
+      showCall: !v && F,
       showActivityPanel: D,
       nsfwAgree: (0, p.e7)([eW.Z], () => eW.Z.didAgree(null == c ? void 0 : c.guild_id)),
       isMobile: (0, p.e7)([eB.Z], () => (null == c ? void 0 : c.type) === e2.d4z.DM && eB.Z.isMobileOnline(c.getRecipientId()), [c]),

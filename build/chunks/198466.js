@@ -39,9 +39,7 @@ function p(e) {
   });
   return (i.useEffect(() => () => {
     E.current = !1
-  }, []), v) ? (0, r.jsx)(r.Fragment, {
-    children: t
-  }) : (0, r.jsx)(o.animated.div, {
+  }, []), v) ? t : (0, r.jsx)(o.animated.div, {
     className: u.confettiTriggerWrapper,
     style: {
       transform: b.to(e => "scale(".concat(e, ")"))

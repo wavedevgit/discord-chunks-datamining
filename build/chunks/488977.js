@@ -17,8 +17,8 @@ var i = n(200651),
   f = n(973616),
   v = n(914010),
   N = n(594174),
-  x = n(626135),
-  y = n(572004),
+  y = n(626135),
+  x = n(572004),
   b = n(630388),
   E = n(135431),
   C = n(541099),
@@ -83,7 +83,7 @@ function S(e) {
         }) : (0, d.J)(_({
           id: l.id
         }, M));
-        (0, y.JG)(e), x.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
+        (0, x.JG)(e), y.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: l.id,
           source: R
         }), (0, a.showToast)((0, a.createToast)(I.NW.string(I.t["L/PwZW"]), a.ToastType.SUCCESS))

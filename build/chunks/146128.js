@@ -75,9 +75,7 @@ function v(e) {
   }, []);
   return n && null != u.Z.emojiAnimationType ? o((0, r.jsx)(E, {
     children: t
-  }), u.Z.emojiAnimationType) : (0, r.jsx)(r.Fragment, {
-    children: t
-  })
+  }), u.Z.emojiAnimationType) : t
 }
 
 function b(e) {

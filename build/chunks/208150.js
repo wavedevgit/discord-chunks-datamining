@@ -96,7 +96,7 @@ let v = {
       d = (0, p.FZ)(l, s.id),
       u = (0, p.A3)(l),
       m = a.length;
-    return null == d || l === b.Eu4.TIER_3 || o > 0 ? (0, r.jsx)(r.Fragment, {}) : (m > u ? (t = j.NW.formatToPlainString(j.t.ZtAY1d, {
+    return null == d || l === b.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = j.NW.formatToPlainString(j.t.ZtAY1d, {
       level: d
     }), n = j.NW.formatToPlainString(j.t["13hOWl"], {
       level: d

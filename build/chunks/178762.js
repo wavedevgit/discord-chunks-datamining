@@ -20,8 +20,8 @@ var r = n(200651),
   h = n(100527),
   f = n(605236),
   g = n(704041),
-  x = n(475676),
-  v = n(662594),
+  v = n(475676),
+  x = n(662594),
   y = n(594174),
   j = n(69259),
   P = n(370370),
@@ -90,7 +90,7 @@ function L(e, t) {
 let W = 72;
 
 function U(e) {
-  return (null == e ? void 0 : e.type) === v.so.CONTENT_INVENTORY ? W : 0
+  return (null == e ? void 0 : e.type) === x.so.CONTENT_INVENTORY ? W : 0
 }
 let z = e => {
     var {
@@ -122,7 +122,7 @@ let z = e => {
           entry: t
         }));
       case s.s.LEADERBOARD:
-        return (0, r.jsx)(x.Z, M(D({}, n), {
+        return (0, r.jsx)(v.Z, M(D({}, n), {
           entry: t
         }));
       default:
@@ -196,7 +196,7 @@ let z = e => {
         index: a
       } = e,
       h = L(e, ["index"]);
-    let [g, x] = l.useState("default"), v = (0, o.JA)("".concat(a)), P = null === (t = y.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff(), {
+    let [g, v] = l.useState("default"), x = (0, o.JA)("".concat(a)), P = null === (t = y.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff(), {
       isRich: O,
       appName: b
     } = (0, _.n)(h.entry), C = l.useMemo(() => ({
@@ -221,7 +221,7 @@ let z = e => {
         })
       }, [h, P]),
       A = l.useCallback(() => {
-        x(String(Date.now()))
+        v(String(Date.now()))
       }, []),
       W = l.useCallback(function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
@@ -273,7 +273,7 @@ let z = e => {
           let {
             isShown: n
           } = t;
-          return (0, r.jsx)(d.P3F, M(D({}, e, v), {
+          return (0, r.jsx)(d.P3F, M(D({}, e, x), {
             focusProps: {
               offset: {
                 top: 4,

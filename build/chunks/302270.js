@@ -41,9 +41,9 @@ var r = n(200651),
   W = n(981631),
   U = n(474936),
   B = n(388032),
-  F = n(727838);
+  H = n(727838);
 
-function H(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -107,7 +107,7 @@ function V(e) {
       animation: c.yRy.Animation.NONE,
       align: "right",
       renderPopout: e => (0, r.jsx)(O.Z, {
-        children: (0, r.jsx)(L.ZP, G(H({}, e), {
+        children: (0, r.jsx)(L.ZP, G(F({}, e), {
           channelId: n.id,
           appContext: f
         }))
@@ -117,21 +117,21 @@ function V(e) {
         let {
           isShown: n
         } = t;
-        return (0, i.createElement)(E.Z, G(H({}, e), {
+        return (0, i.createElement)(E.Z, G(F({}, e), {
           key: "more-options",
           isActive: n,
-          className: F.button,
-          iconClassName: F.buttonIcon
+          className: H.button,
+          iconClassName: H.buttonIcon
         }))
       }
     }, "more-options-popout"), !D && !t && (0, r.jsx)(m.Z, {
-      className: F.button
+      className: H.button
     }, "clips"), !W && !D && (0, r.jsx)(y.Z, {
       onOpen: S,
       onClose: Z,
-      className: F.button
+      className: H.button
     }, "recents"), !s && v ? (0, r.jsx)("div", {
-      className: F.button,
+      className: H.button,
       children: (0, r.jsx)(k.Z, {
         toggleRequestToSpeakSidebar: () => {
           _ && u.Z.updateChatOpen(n.id, !1), C && u.Z.toggleParticipantsList(n.id, !1), l()
@@ -140,21 +140,21 @@ function V(e) {
         numRequestToSpeak: P
       })
     }) : null, !C && R && (0, r.jsx)(I.Z, {
-      className: o()(F.button, {
-        [F.sidebarOpen]: _
+      className: o()(H.button, {
+        [H.sidebarOpen]: _
       }),
       onClick: () => {
         s && l(), u.Z.toggleParticipantsList(n.id, !C)
       }
     }, "participants-list-button"), !_ && (0, r.jsx)("div", {
-      className: o()(F.button, {
-        [F.sidebarOpen]: M || s
+      className: o()(H.button, {
+        [H.sidebarOpen]: M || s
       }),
       children: (0, r.jsx)(N.T, {
         channelId: n.id,
         showRequestToSpeakSidebar: s,
         toggleRequestToSpeakSidebar: l,
-        iconClassName: F.buttonIcon
+        iconClassName: H.buttonIcon
       })
     })]
   })
@@ -196,7 +196,7 @@ function z(e) {
       listener_count: r + t
     })
   }, [N]);
-  let H = (0, r.jsx)(c.f6W, {
+  let F = (0, r.jsx)(c.f6W, {
     theme: W.BRd.DARK,
     children: e => {
       var t;
@@ -209,19 +209,19 @@ function z(e) {
         }),
         onDoubleClick: v.O,
         transparent: !0,
-        className: o()(e, F.participants),
+        className: o()(e, H.participants),
         children: [(0, r.jsx)(C.ZP.Icon, {
           icon: c.ewx,
           disabled: !0,
           "aria-label": B.NW.string(B.t.EErMzM),
-          className: F.icon,
+          className: H.icon,
           color: null != m ? I ? s.Z.colors.HEADER_MUTED.css : s.Z.unsafe_rawColors.GREEN_360.css : void 0
         }), (0, r.jsx)(C.ZP.Title, {
-          className: F.channelName,
-          wrapperClassName: F.channelNameWrapper,
+          className: H.channelName,
+          wrapperClassName: H.channelNameWrapper,
           children: null !== (t = null == m ? void 0 : m.topic) && void 0 !== t ? t : h
         }), (0, r.jsx)(C.ZP.Divider, {
-          className: F.divider
+          className: H.divider
         }), (0, r.jsxs)(C.ZP.Title, {
           children: [(0, r.jsx)(c.S6n, {
             size: "xs",
@@ -229,18 +229,18 @@ function z(e) {
           }), (0, r.jsx)(c.Text, {
             variant: I ? "text-sm/normal" : "text-xs/medium",
             color: I ? "text-muted" : "header-secondary",
-            className: F.speakerCount,
+            className: H.speakerCount,
             children: B.NW.format(B.t.chmM9P, {
               count: g
             })
           }), (0, r.jsx)(c.BFJ, {
             size: "xs",
-            className: F.icon,
+            className: H.icon,
             color: "currentColor"
           }), (0, r.jsx)(c.Text, {
             variant: I ? "text-sm/normal" : "text-xs/medium",
             color: I ? "text-muted" : "header-secondary",
-            className: F.speakerCount,
+            className: H.speakerCount,
             children: B.NW.format(B.t["+v2pNz"], {
               count: y
             })
@@ -250,10 +250,10 @@ function z(e) {
     }
   });
   return N ? (0, r.jsxs)("div", {
-    children: [H, (0, r.jsxs)("div", {
-      className: F.boostUpsell,
+    children: [F, (0, r.jsxs)("div", {
+      className: H.boostUpsell,
       children: [(0, r.jsx)(q, {}), (0, r.jsxs)("div", {
-        className: F.text,
+        className: H.text,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "header-primary",
@@ -264,10 +264,10 @@ function z(e) {
           children: O ? B.NW.string(B.t.Izgpmp) : B.NW.string(B.t["7FHbPD"])
         })]
       }), (0, r.jsx)("div", {
-        className: F.buttons,
+        className: H.buttons,
         children: O ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.zxk, {
-            className: F.notNowButton,
+            className: H.notNowButton,
             onClick: w,
             look: c.zxk.Looks.BLANK,
             size: c.zxk.Sizes.SMALL,
@@ -287,11 +287,11 @@ function z(e) {
                 action: U.T7.BOOST
               })
             },
-            className: F.boostButton,
+            className: H.boostButton,
             children: B.NW.string(B.t.Uj0md3)
           })]
         }) : (0, r.jsx)(c.zxk, {
-          className: F.notNowButton,
+          className: H.notNowButton,
           onClick: w,
           look: c.zxk.Looks.BLANK,
           size: c.zxk.Sizes.SMALL,
@@ -299,7 +299,7 @@ function z(e) {
         })
       })]
     })]
-  }) : H
+  }) : F
 }
 
 function q() {

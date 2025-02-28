@@ -22,33 +22,31 @@ function u(e) {
     query: b,
     setQuery: g,
     unfilteredCount: f
-  } = (0, o.O)(), h = null != m && f > 0;
-  return (0, r.jsx)(i.Fragment, {
-    children: h ? (0, r.jsx)(s.Z, {
-      bar: (0, r.jsx)(l.E1j, {
-        query: b,
-        onChange: g,
-        onClear: () => g("")
-      }),
-      inModal: !1,
-      title: c.NW.string(c.t["0hKkS0"]),
-      children: m.map((e, o) => (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(a.Z, {
-          applicationIcon: t,
-          applicationName: n,
-          canNavigate: u,
-          command: e,
-          guildId: p
-        }), o < m.length - 1 ? (0, r.jsx)(l.$i$, {}) : null]
-      }, e.id))
-    }) : (0, r.jsx)(l.Zbd, {
-      className: d.emptyCard,
-      editable: !0,
-      children: (0, r.jsx)(l.Text, {
-        color: "text-muted",
-        variant: "text-sm/normal",
-        children: c.NW.string(c.t["x78c+P"])
-      })
+  } = (0, o.O)();
+  return null != m && f > 0 ? (0, r.jsx)(s.Z, {
+    bar: (0, r.jsx)(l.E1j, {
+      query: b,
+      onChange: g,
+      onClear: () => g("")
+    }),
+    inModal: !1,
+    title: c.NW.string(c.t["0hKkS0"]),
+    children: m.map((e, o) => (0, r.jsxs)(i.Fragment, {
+      children: [(0, r.jsx)(a.Z, {
+        applicationIcon: t,
+        applicationName: n,
+        canNavigate: u,
+        command: e,
+        guildId: p
+      }), o < m.length - 1 ? (0, r.jsx)(l.$i$, {}) : null]
+    }, e.id))
+  }) : (0, r.jsx)(l.Zbd, {
+    className: d.emptyCard,
+    editable: !0,
+    children: (0, r.jsx)(l.Text, {
+      color: "text-muted",
+      variant: "text-sm/normal",
+      children: c.NW.string(c.t["x78c+P"])
     })
   })
 }

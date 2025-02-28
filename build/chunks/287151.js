@@ -548,28 +548,26 @@ let eu = r.memo(e => {
     let h = null !== (n = null == a ? void 0 : a.isDiscoverable()) && void 0 !== n && n,
       m = null != a && h,
       f = (null !== (i = null == a ? void 0 : null === (t = a.emojis) || void 0 === t ? void 0 : t.length) && void 0 !== i ? i : 0) > 1;
-    return (0, o.jsx)(o.Fragment, {
-      children: m ? null == a ? null : (0, o.jsxs)(o.Fragment, {
-        children: [(0, o.jsx)("div", {
-          className: Q.reactionEmojiDetailsUnfurlGuildDetails,
-          children: (0, o.jsx)(H.Oe, {
-            expressionSourceGuild: a,
-            hasJoinedExpressionSourceGuild: s,
-            isDisplayingJoinGuildButtonInPopout: c.type === G.$.JOIN_GUILD
-          })
-        }), f && (0, o.jsx)(H.n_, {
-          emojiId: r,
+    return m ? null == a ? null : (0, o.jsxs)(o.Fragment, {
+      children: [(0, o.jsx)("div", {
+        className: Q.reactionEmojiDetailsUnfurlGuildDetails,
+        children: (0, o.jsx)(H.Oe, {
           expressionSourceGuild: a,
-          hasJoinedEmojiSourceGuild: s,
-          onClose: l,
-          popoutData: c,
-          isDisplayingButtonInTopSection: !1
-        })]
-      }) : (0, o.jsx)(p.Text, {
-        variant: "text-sm/normal",
-        "aria-label": c.type,
-        children: c.emojiDescription
-      })
+          hasJoinedExpressionSourceGuild: s,
+          isDisplayingJoinGuildButtonInPopout: c.type === G.$.JOIN_GUILD
+        })
+      }), f && (0, o.jsx)(H.n_, {
+        emojiId: r,
+        expressionSourceGuild: a,
+        hasJoinedEmojiSourceGuild: s,
+        onClose: l,
+        popoutData: c,
+        isDisplayingButtonInTopSection: !1
+      })]
+    }) : (0, o.jsx)(p.Text, {
+      variant: "text-sm/normal",
+      "aria-label": c.type,
+      children: c.emojiDescription
     })
   },
   eh = e => {

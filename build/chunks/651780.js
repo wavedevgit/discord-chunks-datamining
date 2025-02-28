@@ -29,21 +29,19 @@ function y(e) {
   let {
     endsAt: t,
     appliedGuildBoostsToMaintain: n,
-    tierName: i
+    tierName: r
   } = e, {
-    days: s,
-    hours: a
+    days: i,
+    hours: s
   } = (0, d.Z)(t);
-  return n <= 0 ? null : (0, r.jsx)(r.Fragment, {
-    children: 0 === s && 0 === a ? _.NW.format(_.t.kF0HER, {
-      tierName: i,
-      numPremiumSubscriptions: n
-    }) : _.NW.format(_.t.neDJho, {
-      days: s,
-      hours: a,
-      tierName: i,
-      numPremiumSubscriptions: n
-    })
+  return n <= 0 ? null : 0 === i && 0 === s ? _.NW.format(_.t.kF0HER, {
+    tierName: r,
+    numPremiumSubscriptions: n
+  }) : _.NW.format(_.t.neDJho, {
+    days: i,
+    hours: s,
+    tierName: r,
+    numPremiumSubscriptions: n
   })
 }
 

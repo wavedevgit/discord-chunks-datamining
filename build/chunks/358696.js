@@ -78,9 +78,7 @@ function E(e) {
     children: t,
     onClick: n
   } = e;
-  return null == n ? (0, r.jsx)(r.Fragment, {
-    children: t
-  }) : (0, r.jsx)(a.P3F, {
+  return null == n ? t : (0, r.jsx)(a.P3F, {
     onClick: n,
     className: u.clickable,
     children: t

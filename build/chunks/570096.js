@@ -69,9 +69,7 @@ function C(e) {
   let {
     children: t
   } = e, n = [l.z.LEADERBOARD_NUX_COACHMARK], [a, c] = (0, s.US)(n, void 0), d = (0, i.e7)([u.default], () => u.default.getCurrentUser());
-  return a !== l.z.LEADERBOARD_NUX_COACHMARK || null == d ? (0, r.jsx)(r.Fragment, {
-    children: t
-  }) : (0, r.jsx)(o.yRy, {
+  return a !== l.z.LEADERBOARD_NUX_COACHMARK || null == d ? t : (0, r.jsx)(o.yRy, {
     renderPopout: () => _({
       user: d,
       markAsDismissed: c

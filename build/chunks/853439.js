@@ -1,6 +1,6 @@
 /** Chunk was on 30806 **/
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
 var i, r, l, o = n(442837),
   s = n(570140),
@@ -26,7 +26,7 @@ r = "GuildRoleSubscriptionTierTemplatesStore", (i = "displayName") in h ? Object
   configurable: !0,
   writable: !0
 }) : h[i] = r;
-let p = new h(s.Z, {
+let f = new h(s.Z, {
   GUILD_ROLE_SUBSCRIPTIONS_STASH_TEMPLATE_CHANNELS: function(e) {
     let {
       selectedTemplate: t,

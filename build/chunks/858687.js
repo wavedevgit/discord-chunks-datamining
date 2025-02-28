@@ -5,15 +5,15 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  a = n(493683),
-  o = n(699516),
+  o = n(493683),
+  a = n(699516),
   c = n(594174),
   s = n(933557),
   u = n(388032);
 
 function d(e, t) {
   let d = i.useCallback(() => {
-    let i = (0, s.F6)(e, c.default, o.Z),
+    let i = (0, s.F6)(e, c.default, a.Z),
       d = u.NW.formatToPlainString(u.t.hJ5Ap6, {
         name: i
       }),
@@ -27,7 +27,7 @@ function d(e, t) {
     }));
     let O = function(n) {
       let r = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-      a.Z.closePrivateChannel(e.id, t, r)
+      o.Z.closePrivateChannel(e.id, t, r)
     };
     (0, l.ZDy)(async () => {
       let {

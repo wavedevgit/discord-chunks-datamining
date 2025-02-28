@@ -40,9 +40,7 @@ function f(e) {
     message: t,
     children: n
   } = e;
-  return (0, d.r8)(t) ? (0, r.jsx)(r.Fragment, {
-    children: n
-  }) : (0, r.jsx)(m, {
+  return (0, d.r8)(t) ? n : (0, r.jsx)(m, {
     message: t,
     children: n
   })

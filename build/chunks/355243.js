@@ -59,8 +59,8 @@ function v(e) {
       t === u.mR.ArrowLeft && null != b ? (e.preventDefault(), e.stopPropagation(), b()) : t === u.mR.ArrowRight && null != S && (e.preventDefault(), e.stopPropagation(), S())
     }, [b, S]),
     L = null != h && null != C ? m(h, C, E) : 0,
-    R = (0, c.yv)(L),
-    k = null != C ? C.right - p(t / 100 * E, E, C) : null,
+    k = (0, c.yv)(L),
+    R = null != C ? C.right - p(t / 100 * E, E, C) : null,
     M = null != h && null != C ? C.right - h : null,
     q = null != _ && null != C ? C.right - _ : null;
   return (0, r.jsxs)("div", {
@@ -112,18 +112,18 @@ function v(e) {
         backgroundColor: null != v ? v : void 0,
         size: D ? s.Exd.Sizes.XSMALL : s.Exd.Sizes.XXSMALL,
         animate: n
-      }), D && null != R && (0, r.jsx)(s.Text, {
+      }), D && null != k && (0, r.jsx)(s.Text, {
         className: d.timeDisplay,
         variant: "text-xs/normal",
         style: {
           right: null != M ? "".concat(M - 10, "px") : "auto",
           color: "#FFFFFF"
         },
-        children: R
-      }), D && l && null != k && (0, r.jsx)("div", {
+        children: k
+      }), D && l && null != R && (0, r.jsx)("div", {
         className: d.grabber,
         style: {
-          right: "".concat(k - 6, "px")
+          right: "".concat(R - 6, "px")
         }
       })]
     }), (0, r.jsx)("div", {

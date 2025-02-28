@@ -199,14 +199,11 @@ class T extends i.Component {
   }
   render() {
     if ((0, f.isDesktop)()) return this.renderMain();
-    if (this.state.submitting) {
-      var e;
-      return null !== (e = this.props.loadingComponent) && void 0 !== e ? e : (0, r.jsx)(r.Fragment, {})
-    }
+    if (this.state.submitting) return this.props.loadingComponent;
     let {
-      available: t
+      available: e
     } = this.validatePaymentRequest();
-    return t ? this.renderMain() : (0, r.jsx)(r.Fragment, {})
+    return e ? this.renderMain() : null
   }
   constructor(...e) {
     super(...e), m(this, "initialState", {

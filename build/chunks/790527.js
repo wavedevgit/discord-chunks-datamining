@@ -183,36 +183,34 @@ function R(e) {
     }), (0, r.jsx)(l.hzk, {
       scrollbarType: "none",
       className: a()(ee ? T.enhancedContent : T.content, !e_ && j),
-      children: X ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)(r.Fragment, {
-        children: e_ ? (0, r.jsx)(E.ZP, {
-          onClose: F,
-          type: R,
-          subscriptionTier: null !== (o = null == ed ? void 0 : null === (n = ed.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== o ? o : O.Si.TIER_2,
-          headingText: C,
-          context: x,
-          analyticsLocationObject: w,
-          discountOffer: ef,
-          trialOffer: ed,
-          children: M
-        }) : (0, r.jsxs)("div", {
-          className: T.contentContainer,
-          children: [eo, (0, r.jsxs)("div", {
-            className: T.bodyContent,
-            children: [(0, r.jsx)(l.X6q, {
-              className: a()(T.header, {
-                [T.enhancedHeader]: ee
-              }, G),
-              variant: "heading-xl/bold",
-              children: C
-            }), eE ? (0, r.jsx)(b.Z, {
-              affinities: em
-            }) : void 0, ei, (0, r.jsx)(l.Text, {
-              variant: es ? "text-sm/normal" : "text-md/normal",
-              className: a()(B, T.subHeader),
-              children: L
-            })]
+      children: X ? (0, r.jsx)(l.$jN, {}) : e_ ? (0, r.jsx)(E.ZP, {
+        onClose: F,
+        type: R,
+        subscriptionTier: null !== (o = null == ed ? void 0 : null === (n = ed.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== o ? o : O.Si.TIER_2,
+        headingText: C,
+        context: x,
+        analyticsLocationObject: w,
+        discountOffer: ef,
+        trialOffer: ed,
+        children: M
+      }) : (0, r.jsxs)("div", {
+        className: T.contentContainer,
+        children: [eo, (0, r.jsxs)("div", {
+          className: T.bodyContent,
+          children: [(0, r.jsx)(l.X6q, {
+            className: a()(T.header, {
+              [T.enhancedHeader]: ee
+            }, G),
+            variant: "heading-xl/bold",
+            children: C
+          }), eE ? (0, r.jsx)(b.Z, {
+            affinities: em
+          }) : void 0, ei, (0, r.jsx)(l.Text, {
+            variant: es ? "text-sm/normal" : "text-md/normal",
+            className: a()(B, T.subHeader),
+            children: L
           })]
-        })
+        })]
       })
     }), (0, r.jsxs)(l.mzw, {
       className: a()(T.footer, el, {

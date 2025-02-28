@@ -98,7 +98,5 @@ function b() {
       "aria-label": "Horizontal Spacing",
       renderValue: e => "".concat(Math.round(e), "px")
     }))
-  }, "vertical-spacing")))), 0 === h.length ? null : (0, n.jsx)(n.Fragment, {
-    children: h
-  })
+  }, "vertical-spacing")))), 0 === h.length ? null : h
 }

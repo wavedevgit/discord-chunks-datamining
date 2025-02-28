@@ -110,7 +110,5 @@ function m(e) {
     animationDelay: l,
     onFlashEnd: () => a(!1),
     children: t
-  }) : (0, r.jsx)(r.Fragment, {
-    children: t
-  })
+  }) : t
 }

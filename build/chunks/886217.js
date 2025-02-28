@@ -16,8 +16,8 @@ var r = n(200651),
   h = n(319604),
   f = n(31074),
   g = n(206295),
-  x = n(278399),
-  v = n(297781),
+  v = n(278399),
+  x = n(297781),
   y = n(591853),
   j = n(410441),
   P = n(981631),
@@ -52,7 +52,7 @@ let C = (e, t, n, r) => {
       primaryColor: T,
       secondaryColor: A
     } = (0, g.Z)(E), _ = (0, p.Nq)(n), k = l.useCallback(() => {
-      if (null == t || null == S || !(0, d.Hi)(_, x.y9)) return;
+      if (null == t || null == S || !(0, d.Hi)(_, v.y9)) return;
       let e = C(n, t, S, _);
       return (0, h.CR)({
         user: S,
@@ -64,7 +64,7 @@ let C = (e, t, n, r) => {
         badges: (0, h.UU)(n)
       })
     }, [E, Z, t, n, T, _, A, S]), R = (0, f.Z)(P.ABu.SPOTIFY);
-    if (null == S || !(0, d.Hi)(_, x.y9)) return null;
+    if (null == S || !(0, d.Hi)(_, v.y9)) return null;
     let D = () => {
       let e = O.Hw.ALBUM,
         t = s.Z.isProtocolRegistered() ? O.C7.PLAYER_OPEN(e, n.extra.media.external_parent_id) : O.C7.WEB_OPEN(e, n.extra.media.external_parent_id);
@@ -89,9 +89,9 @@ let C = (e, t, n, r) => {
         userDescription: b.t.CcVI1d,
         title: I,
         subtitle: Z,
-        badges: (0, r.jsx)(v.Gk, {
-          location: v.Gt.POPOUT,
-          children: x.Ho.map((e, t) => (0, r.jsx)(e, {
+        badges: (0, r.jsx)(x.Gk, {
+          location: x.Gt.POPOUT,
+          children: v.Ho.map((e, t) => (0, r.jsx)(e, {
             entry: n
           }, t))
         })

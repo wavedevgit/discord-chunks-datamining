@@ -215,8 +215,6 @@ let T = e => {
       size: p.q.SMALL,
       className: O.attachmentListItem,
       children: R
-    }) : (0, r.jsx)(r.Fragment, {
-      children: R
-    })
+    }) : R
   })
 }

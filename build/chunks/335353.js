@@ -49,7 +49,5 @@ function s(e) {
       className: a.content,
       children: t
     })]
-  }) : (0, r.jsx)(r.Fragment, {
-    children: t
-  })
+  }) : t
 }

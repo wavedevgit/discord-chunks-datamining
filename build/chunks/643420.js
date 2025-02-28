@@ -135,9 +135,7 @@ function b(e) {
   return (i.useEffect(() => {
     let e = n ? setInterval(I, h) : null;
     return () => clearInterval(e)
-  }, [n, I]), d === u.IlC.OVERLAY) ? (0, r.jsx)(r.Fragment, {
-    children: t
-  }) : (0, r.jsxs)(c.Rm.Provider, {
+  }, [n, I]), d === u.IlC.OVERLAY) ? t : (0, r.jsxs)(c.Rm.Provider, {
     value: S,
     children: [t, (0, r.jsx)(o.Ji, {
       ref: b,

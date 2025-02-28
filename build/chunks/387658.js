@@ -17,8 +17,8 @@ var i = n(200651),
   f = n(10718),
   v = n(895924),
   N = n(583027),
-  x = n(585483),
-  y = n(499254),
+  y = n(585483),
+  x = n(499254),
   b = n(541099),
   E = n(827498),
   C = n(496158),
@@ -45,7 +45,7 @@ function k(e) {
     sectionName: c
   } = e, d = l.useCallback(() => {
     let e = b.Z.entrypoint();
-    y.yT(E.ti.COMMAND), (0, N.Mo)({
+    x.yT(E.ti.COMMAND), (0, N.Mo)({
       command: o,
       location: v.Vh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c
@@ -57,7 +57,7 @@ function k(e) {
       sectionName: c,
       source: e,
       commandOrigin: v.bB.APPLICATION_LAUNCHER
-    }), x.S.dispatch(_.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+    }), y.S.dispatch(_.CkL.FOCUS_CHANNEL_TEXT_AREA, {
       channelId: r.channel.id
     }))
   }, [r, o, s, c]), p = (null !== (n = null === (t = o.options) || void 0 === t ? void 0 : t.length) && void 0 !== n ? n : 0) > 0, h = l.useMemo(() => (0, I.ae)(o.displayDescription, void 0), [o.displayDescription]), f = l.useMemo(() => (0, i.jsxs)("div", {
@@ -161,7 +161,7 @@ function U(e) {
           context: o,
           sectionName: r,
           commandOrigin: v.bB.APP_LAUNCHER_APPLICATION_VIEW
-        }), y.yT(E.ti.COMMAND))
+        }), x.yT(E.ti.COMMAND))
       } finally {
         c(!1)
       }
@@ -247,8 +247,8 @@ function W(e) {
   }), h = null !== (t = p.find(e => e.id === r.id)) && void 0 !== t ? t : null, {
     sortOrder: v,
     setSortOrder: N,
-    commands: x,
-    canSort: y
+    commands: y,
+    canSort: x
   } = (0, j.Z)({
     sectionId: r.id,
     commandsByActiveSection: u
@@ -258,12 +258,12 @@ function W(e) {
   }, [r.id, c]);
   let b = (0, g.Z)({
     context: n,
-    commands: x,
+    commands: y,
     limit: 5
   });
   return (l.useEffect(() => {
-    s(x.length > 0)
-  }, [s, x]), m || 0 !== x.length) ? (0, i.jsxs)("ul", {
+    s(y.length > 0)
+  }, [s, y]), m || 0 !== y.length) ? (0, i.jsxs)("ul", {
     className: R.contentContainer,
     children: [(0, i.jsx)(D, {
       context: n,
@@ -274,10 +274,10 @@ function W(e) {
     }), (0, i.jsx)(D, {
       context: n,
       section: h,
-      commands: m ? Z : x,
+      commands: m ? Z : y,
       headerName: T.NW.string(T.t.DUU9Ly),
       sectionName: o,
-      children: y && (0, i.jsx)(O.Z, {
+      children: x && (0, i.jsx)(O.Z, {
         sortOrder: v,
         onSortOptionClick: N
       })

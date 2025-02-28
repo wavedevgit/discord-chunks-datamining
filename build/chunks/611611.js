@@ -17,8 +17,8 @@ var r = n(200651),
   b = n(728076),
   g = n(2466),
   h = n(485168),
-  j = n(309081),
-  O = n(185306),
+  O = n(309081),
+  j = n(185306),
   y = n(240521),
   x = n(489887),
   v = n(20281),
@@ -133,9 +133,9 @@ function E(e) {
       setDuration: M,
       handleQuestionChange: z,
       handleAnswerTextChange: H,
-      handleEmojiSelect: F,
-      canAddMoreAnswers: Y,
-      handleRemoveAnswerImage: K,
+      handleEmojiSelect: Y,
+      canAddMoreAnswers: K,
+      handleRemoveAnswerImage: F,
       canRemoveMoreAnswers: q,
       handleAddAnswer: X,
       handleRemoveAnswer: J,
@@ -255,7 +255,7 @@ function E(e) {
         onChange: z,
         error: null == V ? void 0 : V.question,
         inputRef: g
-      }), d && (0, r.jsx)(O.Z, {
+      }), d && (0, r.jsx)(j.Z, {
         selectedLayoutType: T,
         onSelectedLayoutType: L
       }), (0, r.jsx)(c.LZC, {
@@ -265,13 +265,13 @@ function E(e) {
         children: [(0, r.jsx)(c.vwX, {
           tag: c.RB0.LEGEND,
           children: w.NW.string(w.t.oMBfeX)
-        }), R.map((e, n) => (0, r.jsx)(j.Z, {
+        }), R.map((e, n) => (0, r.jsx)(O.Z, {
           answer: e,
           channelId: t.id,
           index: n,
           isLastAnswer: n === R.length - 1,
-          onEmojiSelect: F,
-          onEmojiRemove: K,
+          onEmojiSelect: Y,
+          onEmojiRemove: F,
           layout: T,
           onAnswerTextChange: H,
           onRemoveAnswer: J,
@@ -283,11 +283,11 @@ function E(e) {
           ref: e => C.current[n] = e,
           inputRef: e => k.current[n] = e,
           deleteButtonRef: e => S.current[n] = e
-        }, e.localCreationAnswerId)), Y && (0, r.jsxs)(c.P3F, {
+        }, e.localCreationAnswerId)), K && (0, r.jsxs)(c.P3F, {
           className: l()(el ? _.addAnswerButtonDefault : _.addAnswerButtonImageOnly, {
             [_.canRemoveMoreAnswers]: q
           }),
-          onClick: Y ? X : void 0,
+          onClick: K ? X : void 0,
           "aria-label": w.NW.string(w.t.B2UvmZ),
           ref: I,
           children: [(0, r.jsx)(c.qJs, {

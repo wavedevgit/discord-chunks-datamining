@@ -63,14 +63,16 @@ let b = new o.Yd("VoiceFilterActionCreators"),
   y = !1;
 
 function O(e) {
-  let {
-    url: t,
-    modelId: n,
-    fileName: r
-  } = e, i = p.Z.getModelState(n);
-  (null == i ? void 0 : i.status) !== h.L.DOWNLOADING && (a.Z.dispatch(m({
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
+    {
+      url: n,
+      modelId: r,
+      fileName: i
+    } = e,
+    o = p.Z.getModelState(r);
+  (null == o ? void 0 : o.status) !== h.L.DOWNLOADING && (a.Z.dispatch(m({
     type: "VOICE_FILTER_DOWNLOAD_STARTED"
-  }, e)), f.ZP.downloadVoiceFilterFile(t, r, t => {
+  }, e)), f.ZP.downloadVoiceFilterFile(n, i, t => {
     let {
       downloadedBytes: n,
       totalBytes: r
@@ -82,9 +84,11 @@ function O(e) {
       totalBytes: r
     }))
   }).then(() => {
-    a.Z.dispatch(m({
+    a.Z.dispatch(v(m({
       type: "VOICE_FILTER_DOWNLOAD_READY"
-    }, e))
+    }, e), {
+      analyticsContext: t
+    }))
   }).catch(t => {
     (null == t ? void 0 : t.USER_CANCELED_DOWNLOAD) ? b.info("User canceled the download for Voice Filter dependency", e): b.error("Failed to fetch voice filter model", m({
       reason: t
@@ -97,6 +101,7 @@ function O(e) {
 }
 
 function S(e) {
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
   if (!p.Z.isNativeModuleLoaded()) {
     b.warn("Voice Filter apply ignored, module not loaded.");
     return
@@ -106,7 +111,8 @@ function S(e) {
   }).then(() => {
     a.Z.dispatch({
       type: "VOICE_FILTER_APPLIED",
-      voiceFilterId: e
+      voiceFilterId: e,
+      analyticsContext: t
     })
   }, t => {
     b.error("failed to set voice filter", t), a.Z.dispatch({

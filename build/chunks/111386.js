@@ -36,9 +36,7 @@ let d = () => (0, r.jsxs)("div", {
       setTimeout(() => {
         u(!0)
       }, 300)
-    }), n !== a.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP) ? (0, r.jsx)(r.Fragment, {
-      children: t
-    }) : (0, r.jsx)(i.ua7, {
+    }), n !== a.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP) ? t : (0, r.jsx)(i.ua7, {
       text: (0, r.jsx)(d, {}),
       tooltipClassName: c.coachtip,
       tooltipContentClassName: c.coachtipContent,

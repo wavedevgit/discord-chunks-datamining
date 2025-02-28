@@ -114,9 +114,7 @@ function O(e) {
         id: s,
         children: g
       })]
-    }) : (0, r.jsx)(r.Fragment, {
-      children: S
-    }), (0, r.jsxs)(u.Text, {
+    }) : S, (0, r.jsxs)(u.Text, {
       variant: "text-md/bold",
       color: "none",
       scaleFontToUserSetting: !0,

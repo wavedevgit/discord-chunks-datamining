@@ -66,7 +66,7 @@ function O(e) {
       })
     },
     children: [function(e) {
-      let [t, n] = r.useState(!1), [d, O] = r.useState(!1), E = (0, s.e7)([g.ZP], () => g.ZP.getGuildUnreadSetting(e)), h = (0, s.e7)([g.ZP], () => g.ZP.getMessageNotifications(e)), j = d ? u.s8.CUSTOM : (0, u.gs)(E, h), y = t => {
+      let [t, n] = r.useState(!1), [d, O] = r.useState(!1), E = (0, s.e7)([g.ZP], () => g.ZP.getGuildUnreadSetting(e)), h = (0, s.e7)([g.ZP], () => g.ZP.getMessageNotifications(e)), y = d ? u.s8.CUSTOM : (0, u.gs)(E, h), j = t => {
         O(!1);
         let n = {
           message_notifications: t
@@ -84,29 +84,29 @@ function O(e) {
           children: [(0, i.jsx)(l.k5B, {
             id: "everything",
             group: "notification-preset",
-            checked: j === u.s8.ALL_MESSAGES,
+            checked: y === u.s8.ALL_MESSAGES,
             label: f.NW.string(f.t.hZrr6u),
             action: () => ((0, c.V)(e, u.s8.ALL_MESSAGES), O(!1))
           }), (0, i.jsx)(l.k5B, {
             id: "essentials",
             group: "notification-preset",
-            checked: j === u.s8.MENTIONS,
+            checked: y === u.s8.MENTIONS,
             label: f.NW.string(f.t.y59NJi),
             action: () => ((0, c.V)(e, u.s8.MENTIONS), O(!1))
           }), (0, i.jsx)(l.k5B, {
             id: "nothing",
             group: "notification-preset",
-            checked: j === u.s8.NOTHING,
+            checked: y === u.s8.NOTHING,
             label: f.NW.string(f.t["pGn/bG"]),
             action: () => ((0, c.V)(e, u.s8.NOTHING), O(!1))
           }), (0, i.jsx)(l.k5B, {
             id: "custom",
             group: "notification-preset",
-            checked: j === u.s8.CUSTOM,
+            checked: y === u.s8.CUSTOM,
             action: () => (n(!0), O(!0)),
             label: f.NW.string(f.t["32yow8"])
           })]
-        }), (j === u.s8.CUSTOM || t) && (0, i.jsxs)(l.kSQ, {
+        }), (y === u.s8.CUSTOM || t) && (0, i.jsxs)(l.kSQ, {
           children: [(0, i.jsxs)(l.sNh, {
             id: "unread_setting",
             label: "Unread Badges",
@@ -133,20 +133,20 @@ function O(e) {
               id: "push_settings_everything",
               label: f.NW.string(f.t["HVah//"]),
               checked: h === p.bL.ALL_MESSAGES,
-              action: () => y(p.bL.ALL_MESSAGES),
+              action: () => j(p.bL.ALL_MESSAGES),
               subtext: E !== N.i.ALL_MESSAGES && h !== p.bL.ALL_MESSAGES ? f.NW.string(f.t.idXSbG) : void 0
             }), (0, i.jsx)(l.k5B, {
               group: "notification-preset",
               id: "push_settings_everything_mention",
               checked: h === p.bL.ONLY_MENTIONS,
               label: f.NW.string(f.t["tu+ZWF"]),
-              action: () => y(p.bL.ONLY_MENTIONS)
+              action: () => j(p.bL.ONLY_MENTIONS)
             }), (0, i.jsx)(l.k5B, {
               group: "notification-preset",
               id: "push_settings_everything_nothing",
               label: f.NW.string(f.t.X4wWUl),
               checked: h === p.bL.NO_MESSAGES,
-              action: () => y(p.bL.NO_MESSAGES)
+              action: () => j(p.bL.NO_MESSAGES)
             })]
           }, "push_settings")]
         })]

@@ -119,9 +119,7 @@ function A(e) {
     obstructedFromView: i,
     disabled: t
   });
-  if (!l) return (0, r.jsx)(r.Fragment, {
-    children: n
-  });
+  if (!l) return n;
   let p = s && (null == c ? void 0 : c.iconURL) != null ? (0, r.jsxs)("div", {
     className: S.channelAppLauncherButtonPopoutIconContainer,
     children: [(0, r.jsx)("img", {

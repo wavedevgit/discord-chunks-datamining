@@ -19,8 +19,8 @@ var i, l = n(200651),
   f = n(361213),
   v = n(542094),
   N = n(778569),
-  x = n(182906),
-  y = n(367907),
+  y = n(182906),
+  x = n(367907),
   b = n(220082),
   E = n(70097),
   C = n(973616),
@@ -149,11 +149,11 @@ function G(e) {
     }
   }, [t]), {
     name: N,
-    description: x
+    description: y
   } = r.useMemo(() => (0, O.sl)(t, {
     fakeAppIconURL: U
   }), [t]), {
-    trackItemImpressionRef: y
+    trackItemImpressionRef: x
   } = (0, T.Z)({
     applicationId: t.id,
     applicationFlags: (0, O.BQ)(t) ? t.flags : void 0,
@@ -169,17 +169,17 @@ function G(e) {
     }, h)
   }, [h, m, f]);
   return m ? (0, l.jsx)("div", {
-    ref: p ? y : void 0,
+    ref: p ? x : void 0,
     className: b,
     children: i
   }) : (0, l.jsx)(c.P3F, {
-    innerRef: p ? y : void 0,
+    innerRef: p ? x : void 0,
     className: b,
     onClick: n,
     onContextMenu: v,
     "aria-label": k.NW.formatToPlainString(k.t["zLhr9/"], {
       applicationName: N,
-      applicationDescription: x
+      applicationDescription: y
     }),
     children: (0, l.jsx)(c.Rny, {
       children: i
@@ -236,7 +236,7 @@ function Y(e) {
     description: N
   } = r.useMemo(() => (0, O.sl)(t, {
     fakeAppIconURL: U
-  }), [t]), x = r.useMemo(() => null == N ? null : (0, S.ae)(N), [N]), y = (0, b.ZP)(f, ""), [E, C] = r.useState(!1), g = r.useCallback(() => {
+  }), [t]), y = r.useMemo(() => null == N ? null : (0, S.ae)(N), [N]), x = (0, b.ZP)(f, ""), [E, C] = r.useState(!1), g = r.useCallback(() => {
     !0 === o && C(!0)
   }, [o]), P = h || (0, O.lf)(t), A = "large_banner" === n || "medium_banner" === n, I = r.useCallback(() => C(!1), []), _ = (0, s.e7)([m.Z, j.Z], () => m.Z.inDevModeForApplication(t.id) || j.Z.inTestModeForApplication(t.id), [t.id]);
   return (0, l.jsxs)(l.Fragment, {
@@ -253,7 +253,7 @@ function Y(e) {
         className: i,
         children: (0, l.jsx)(Q, {
           application: t,
-          fallbackColor: y,
+          fallbackColor: x,
           showVideo: E,
           disableFadeIn: u,
           overrideImageUrl: p
@@ -306,7 +306,7 @@ function Y(e) {
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
-          children: x
+          children: y
         })]
       }), "row" === n ? (0, l.jsx)("div", {
         className: w.rowDivider
@@ -414,7 +414,7 @@ function J(e) {
           muted: !0
         })
       })
-    }) : null, (0, l.jsx)(x.Z, {
+    }) : null, (0, l.jsx)(y.Z, {
       imageBackground: o,
       applicationName: t.name,
       imageClassName: d,
@@ -473,7 +473,7 @@ function ee(e) {
     pushHistory: s
   } = (0, _.hH)();
   return r.useCallback(e => {
-    e.stopPropagation(), (0, y.yw)(M.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
+    e.stopPropagation(), (0, x.yw)(M.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
       application_id: t.id,
       section_name: n,
       search_results_position: i,
@@ -524,8 +524,8 @@ function en(e) {
     [m, f] = (0, s.Wu)([h.ZP], () => [h.ZP.isLaunchingActivity(), h.ZP.getLaunchState(n.id, "channel" === t.type ? t.channel.id : void 0)]),
     N = null != f && f.isLaunching && f.componentId === p,
     {
-      onActivityItemSelected: x,
-      activityAction: y,
+      onActivityItemSelected: y,
+      activityAction: x,
       buttonColor: b,
       buttonText: E
     } = (0, S.P7)({
@@ -536,10 +536,10 @@ function en(e) {
       launchingComponentId: p,
       fetchesApplication: u
     });
-  return y === v.JS.START || y === v.JS.JOIN ? a ? (0, l.jsx)(F, V(H({}, d), {
+  return x === v.JS.START || x === v.JS.JOIN ? a ? (0, l.jsx)(F, V(H({}, d), {
     sectionName: o,
     application: n,
-    onClick: x,
+    onClick: y,
     disabled: m,
     enableVideoBanner: !N,
     children: N ? (0, l.jsx)(c.$jN, {
@@ -568,7 +568,7 @@ function en(e) {
         size: c.zxk.Sizes.LARGE,
         color: b,
         disabled: m,
-        onClick: x,
+        onClick: y,
         "aria-label": k.NW.formatToPlainString(k.t["XjP/R0"], {
           buttonText: E,
           applicationName: n.name

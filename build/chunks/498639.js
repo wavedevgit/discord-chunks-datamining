@@ -67,16 +67,14 @@ function D(e) {
   let {
     selectedGuildForGuildSub: t
   } = e, n = (0, b.GG)(null == t ? void 0 : t.id)[0];
-  return (0, r.jsx)(r.Fragment, {
-    children: null != t && null != n ? (0, r.jsx)("div", {
-      className: A.formItem,
-      children: n.subscription_listings_ids.map(e => (0, r.jsx)(N.Z, {
-        guildId: t.id,
-        groupListingId: e,
-        listingId: e
-      }, e))
-    }) : null
-  })
+  return null != t && null != n ? (0, r.jsx)("div", {
+    className: A.formItem,
+    children: n.subscription_listings_ids.map(e => (0, r.jsx)(N.Z, {
+      guildId: t.id,
+      groupListingId: e,
+      listingId: e
+    }, e))
+  }) : null
 }
 let Z = function() {
   let [e, t] = i.useState(y.Si.TIER_2), [n, b] = i.useState(null), [N] = (0, a.Wu)([S.Z], () => [S.Z.getGuilds()]), [Z] = (0, a.Wu)([T.ZP], () => [T.ZP.getPremiumSubscription()]);

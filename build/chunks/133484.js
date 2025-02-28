@@ -66,7 +66,5 @@ function N(e) {
         subscriptionTier: g.Si.TIER_2
       })]
     })]
-  }) : (0, r.jsx)(r.Fragment, {
-    children: N
-  })
+  }) : N
 }

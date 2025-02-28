@@ -150,7 +150,7 @@ function L() {
       return t
     }, [e, a]),
     f = null;
-  return t ? (f = e.length > 0 ? e.map(e => {
+  return t ? f = e.length > 0 ? e.map(e => {
     let {
       party: t
     } = e;
@@ -170,9 +170,7 @@ function L() {
       variant: "text-sm/normal",
       children: P.NW.string(P.t["99ZWxc"])
     })]
-  }), (0, r.jsx)(r.Fragment, {
-    children: f
-  })) : (0, r.jsx)("div", {
+  }) : (0, r.jsx)("div", {
     className: j.emptyCard,
     children: (0, r.jsx)(u.$jN, {})
   })

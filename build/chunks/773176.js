@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(695346),
   U = n(314897),
   B = n(323873),
-  F = n(271383),
-  H = n(430824),
+  H = n(271383),
+  F = n(430824),
   G = n(607744),
   V = n(496675),
   z = n(626135),
@@ -207,13 +207,13 @@ function em(e) {
       isFocused: a
     } = e, {
       author: s
-    } = n, u = (0, c.e7)([H.Z], () => H.Z.getGuild(t.guild_id), [t.guild_id]), d = (0, c.e7)([U.default], () => U.default.getId()), p = (0, D.$R)(t), m = (0, D.Gu)(t), g = W.nc.useSetting(), b = W.Sb.useSetting(), _ = (0, c.e7)([G.Z], () => null == t.guild_id || G.Z.canChatInGuild(t.guild_id), [t]), {
+    } = n, u = (0, c.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), d = (0, c.e7)([U.default], () => U.default.getId()), p = (0, D.$R)(t), m = (0, D.Gu)(t), g = W.nc.useSetting(), b = W.Sb.useSetting(), _ = (0, c.e7)([G.Z], () => null == t.guild_id || G.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: C,
       canAddNewReactions: x
     } = (0, c.cj)([V.Z], () => ({
       canAddNewReactions: _ && V.Z.can(el.Plq.ADD_REACTIONS, t),
       canManageMessages: V.Z.can(el.Plq.MANAGE_MESSAGES, t)
-    }), [t, _]), j = (0, M.U)(t, n), O = (0, D.NE)(t, n), E = (0, D.Ek)(n), I = (0, c.e7)([N.Z], () => null != t.guild_id && N.Z.isLurking(t.guild_id), [t]), P = (0, c.e7)([F.ZP], () => null != t.guild_id && F.ZP.isCurrentUserGuest(t.guild_id), [t]), S = s.id === d, Z = (C || n.canDeleteOwnMessage(d)) && p && !el.V$x.UNDELETABLE.has(n.type);
+    }), [t, _]), j = (0, M.U)(t, n), O = (0, D.NE)(t, n), E = (0, D.Ek)(n), I = (0, c.e7)([N.Z], () => null != t.guild_id && N.Z.isLurking(t.guild_id), [t]), P = (0, c.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), S = s.id === d, Z = (C || n.canDeleteOwnMessage(d)) && p && !el.V$x.UNDELETABLE.has(n.type);
     n.type === el.uaV.AUTO_MODERATION_ACTION && (Z = Z && C);
     let T = (0, X.a4)(n),
       A = (0, J.Z)(n, t, C),

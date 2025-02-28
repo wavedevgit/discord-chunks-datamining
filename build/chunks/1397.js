@@ -41,9 +41,9 @@ var r = n(200651),
   W = n(981631),
   U = n(815660),
   B = n(388032),
-  F = n(162986);
+  H = n(162986);
 
-function H(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -59,7 +59,7 @@ function G(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      H(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -170,7 +170,7 @@ class z extends i.PureComponent {
             shouldShow: j,
             position: "top",
             children: e => (0, r.jsx)(s.P3F, V(G({}, e), {
-              className: F.clickableChannelTextArea,
+              className: H.clickableChannelTextArea,
               onClick: this.handleTextAreaClick,
               children: f
             }))
@@ -180,11 +180,11 @@ class z extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), H(this, "state", {
+    super(...e), F(this, "state", {
       submitting: !1,
       shouldShowLurkerModeUpsellPopout: !1,
       shouldShowLurkerModeSuccessPopout: !1
-    }), H(this, "renderSuccessPopout", e => {
+    }), F(this, "renderSuccessPopout", e => {
       let {
         closePopout: t
       } = e, {
@@ -194,7 +194,7 @@ class z extends i.PureComponent {
         onClose: t,
         guild: n
       })
-    }), H(this, "handleCancelApplication", () => {
+    }), F(this, "handleCancelApplication", () => {
       let {
         guild: e
       } = this.props;
@@ -210,7 +210,7 @@ class z extends i.PureComponent {
           children: B.NW.string(B.t["13tjTU"])
         })
       })))
-    }), H(this, "handleViewApplicationRejection", () => {
+    }), F(this, "handleViewApplicationRejection", () => {
       let {
         guild: e
       } = this.props;
@@ -222,14 +222,14 @@ class z extends i.PureComponent {
           guildId: e.id
         }, n))
       })
-    }), H(this, "handleShowMemberVerification", () => {
+    }), F(this, "handleShowMemberVerification", () => {
       let {
         guild: e
       } = this.props;
       null != e && (0, C.hk)(e.id)
-    }), H(this, "handleClaimAccount", () => {
+    }), F(this, "handleClaimAccount", () => {
       h.j()
-    }), H(this, "handleVerifyPhone", () => {
+    }), F(this, "handleVerifyPhone", () => {
       (0, s.ZDy)(async () => {
         let {
           default: e
@@ -240,7 +240,7 @@ class z extends i.PureComponent {
       }, {
         modalKey: U.M
       })
-    }), H(this, "handleResendVerification", () => {
+    }), F(this, "handleResendVerification", () => {
       var e;
       c.Z.verifyResend();
       let t = null === (e = k.default.getCurrentUser()) || void 0 === e ? void 0 : e.email;
@@ -255,14 +255,14 @@ class z extends i.PureComponent {
           })
         })
       })))
-    }), H(this, "handleTextAreaClick", () => {
+    }), F(this, "handleTextAreaClick", () => {
       let {
         showLurkerModeUpsellPopout: e
       } = this.props;
       this.setState({
         shouldShowLurkerModeUpsellPopout: e
       })
-    }), H(this, "handleJoinServer", async () => {
+    }), F(this, "handleJoinServer", async () => {
       this.setState({
         submitting: !0
       });
@@ -276,11 +276,11 @@ class z extends i.PureComponent {
           submitting: !1
         })
       }
-    }), H(this, "handleGoBack", () => {
+    }), F(this, "handleGoBack", () => {
       this.setState({
         submitting: !0
       }), (0, S.s1)().goBack()
-    }), H(this, "handleFollowAnnouncement", () => {
+    }), F(this, "handleFollowAnnouncement", () => {
       let {
         channel: e
       } = this.props;
@@ -292,11 +292,11 @@ class z extends i.PureComponent {
           channel: e
         }, n))
       })
-    }), H(this, "closeLurkerModeUpsellPopout", () => {
+    }), F(this, "closeLurkerModeUpsellPopout", () => {
       this.setState({
         shouldShowLurkerModeUpsellPopout: !1
       })
-    }), H(this, "renderLurkerModeUpsellPopout", () => {
+    }), F(this, "renderLurkerModeUpsellPopout", () => {
       let {
         guild: e
       } = this.props;
@@ -305,7 +305,7 @@ class z extends i.PureComponent {
         guild: e,
         closePopout: this.closeLurkerModeUpsellPopout
       })
-    }), H(this, "renderMemberVerificationSuccessModal", () => {
+    }), F(this, "renderMemberVerificationSuccessModal", () => {
       let {
         guild: e,
         guildJoinRequest: t
@@ -339,12 +339,12 @@ function q(e) {
   } = e, s = l.getGuildId(), c = (0, a.e7)([w.Z], () => w.Z.getGuild(s)), u = (0, a.e7)([R.Z], () => R.Z.getCheck(s)), d = l.type === W.d4z.GUILD_ANNOUNCEMENT && null != c && c.hasFeature(W.oNc.NEWS), h = (0, a.e7)([T.Z], () => d ? T.Z.getFollowerStatsForChannel(l.id) : null), g = (0, a.e7)([N.Z], () => N.Z.isLurking(s)), b = (0, a.e7)([k.default], () => k.default.getCurrentUser()), C = null !== (t = null == b ? void 0 : b.isStaff()) && void 0 !== t && t, j = (0, a.e7)([A.ZP], () => {
     var e, t;
     return null != b && null !== (t = null === (e = A.ZP.getMember(s, b.id)) || void 0 === e ? void 0 : e.isPending) && void 0 !== t && t
-  }), E = !!(0, y.Dc)(c), I = (j || u.notClaimed) && E, P = (0, a.e7)([O.Z], () => O.Z.shouldShowPopout(s)), S = (0, a.e7)([M.Z], () => M.Z.can(W.Plq.SEND_MESSAGES, l)), D = (0, a.e7)([x.Z], () => x.Z.getRequest(s)), [U, B] = (0, f.L_)(s), F = (0, f.Cc)(s), H = (null == D ? void 0 : D.applicationStatus) === v.wB.APPROVED, q = i.useRef(B);
+  }), E = !!(0, y.Dc)(c), I = (j || u.notClaimed) && E, P = (0, a.e7)([O.Z], () => O.Z.shouldShowPopout(s)), S = (0, a.e7)([M.Z], () => M.Z.can(W.Plq.SEND_MESSAGES, l)), D = (0, a.e7)([x.Z], () => x.Z.getRequest(s)), [U, B] = (0, f.L_)(s), H = (0, f.Cc)(s), F = (null == D ? void 0 : D.applicationStatus) === v.wB.APPROVED, q = i.useRef(B);
   i.useEffect(() => {
     q.current = B
   }), i.useEffect(() => {
-    !(!(0, m.EJ)(c) || !H || (0, _.d3)(D)) && null == F && q.current()
-  }, [c, H, D, F]);
+    !(!(0, m.EJ)(c) || !F || (0, _.d3)(D)) && null == H && q.current()
+  }, [c, F, D, H]);
   let Y = V(G({}, u), {
     guild: c,
     isLurking: g,
@@ -361,7 +361,7 @@ function q(e) {
     useReducedMotion: p.Z.useReducedMotion,
     isStaff: C,
     isLoading: U,
-    clanInfo: F
+    clanInfo: H
   });
   return (0, r.jsx)(z, V(G({}, Y), {
     channel: l,

@@ -16,20 +16,20 @@ var i = n(442837),
 function f(e) {
   let {
     channel: t
-  } = e, n = (0, i.e7)([d.default], () => d.default.getCurrentUser()), f = (0, s.V)(t), h = (0, a.i)(t), g = (0, u.g)(t), O = (0, c.H)(t), j = (0, o.e)(t);
+  } = e, n = (0, i.e7)([d.default], () => d.default.getCurrentUser()), f = (0, s.V)(t), h = (0, a.i)(t), O = (0, u.g)(t), g = (0, c.H)(t), N = (0, o.e)(t);
   return (null == n ? void 0 : n.isStaff()) !== !0 ? null : (0, r.jsxs)(l.sNh, {
     id: "dev tools",
     label: "Dev Tools",
     children: [(0, r.jsx)(l.kSQ, {
       children: f
     }), (0, r.jsx)(l.kSQ, {
-      children: O
-    }), (0, r.jsx)(l.kSQ, {
       children: g
+    }), (0, r.jsx)(l.kSQ, {
+      children: O
     }), (0, r.jsx)(l.kSQ, {
       children: h
     }), (0, r.jsx)(l.kSQ, {
-      children: j
+      children: N
     })]
   })
 }

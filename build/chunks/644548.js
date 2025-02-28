@@ -16,20 +16,20 @@ var r = n(200651),
   h = n(297781),
   f = n(591853),
   g = n(410441),
-  x = n(797342),
-  v = n(388032);
+  v = n(797342),
+  x = n(388032);
 let y = (e, t, n, r) => {
     let l = function(e) {
-        if (e === a._.WEEK) return v.t["7TXfc3"]
+        if (e === a._.WEEK) return x.t["7TXfc3"]
       }(r),
       i = o.ZP.getName(t.guild_id, t.id, n),
       s = e.extra.game_name;
-    return v.NW.formatToMarkdownString(l, {
+    return x.NW.formatToMarkdownString(l, {
       gameName: s,
       userName: i
     }).replaceAll("*", "")
   },
-  j = (e, t) => v.NW.formatToPlainString(v.t.tAwI1t, {
+  j = (e, t) => x.NW.formatToPlainString(x.t.tAwI1t, {
     username: t.username,
     activity: e.extra.game_name
   }),
@@ -48,7 +48,7 @@ let y = (e, t, n, r) => {
       user: b,
       details: C,
       appName: N
-    } = (0, x.n)(n), {
+    } = (0, v.n)(n), {
       primaryColor: I,
       secondaryColor: w
     } = (0, d.Z)(null == O ? void 0 : O.src), E = (0, c.yA)(n), Z = (0, c.Nq)(n), S = l.useCallback(e => {
@@ -57,7 +57,7 @@ let y = (e, t, n, r) => {
         applicationImageSrc: null == O ? void 0 : O.src,
         avatarSrcs: [b.getAvatarURL(null == t ? void 0 : t.guild_id, 128)],
         description: y(n, t, b, Z),
-        timestamp: v.NW.formatToPlainString(v.t.YL7UEx, {
+        timestamp: x.NW.formatToPlainString(x.t.YL7UEx, {
           hours: Math.round(E / i.Z.Seconds.HOUR)
         }),
         colors: [I, w],
@@ -71,10 +71,10 @@ let y = (e, t, n, r) => {
         channel: t,
         headerIcons: null == T ? null : (0, r.jsx)(g.Z, {
           Icon: T,
-          "aria-label": v.NW.string(v.t.YR4cHB)
+          "aria-label": x.NW.string(x.t.YR4cHB)
         }),
         entry: n,
-        userDescription: v.t.rPqqtr,
+        userDescription: x.t.rPqqtr,
         title: N,
         subtitle: C,
         badges: (0, r.jsx)(h.Gk, {

@@ -31,9 +31,7 @@ let c = {
       className: u,
       backgroundClassName: d
     } = e;
-    if (!o) return (0, r.jsx)(r.Fragment, {
-      children: n
-    });
+    if (!o) return n;
     let {
       border: f,
       background: _

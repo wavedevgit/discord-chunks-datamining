@@ -190,9 +190,7 @@ function j(e) {
         i = n.current[m.current];
       null == i || i.fireConfetti(t, r)
     }
-  }, [o]), E !== f.IlC.APP) ? (0, r.jsx)(r.Fragment, {
-    children: t
-  }) : (0, r.jsxs)(d.Rm.Provider, {
+  }, [o]), E !== f.IlC.APP) ? t : (0, r.jsxs)(d.Rm.Provider, {
     value: b,
     children: [t, Object.keys(D).map(e => {
       let t = D[e];

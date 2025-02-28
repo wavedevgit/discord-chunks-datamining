@@ -16,8 +16,8 @@ var r = n(200651),
   h = n(314897),
   f = n(908841),
   g = n(5192),
-  x = n(379357),
-  v = n(561308),
+  v = n(379357),
+  x = n(561308),
   y = n(319604),
   j = n(31074),
   P = n(206295),
@@ -64,7 +64,7 @@ function A(e) {
       seekBarStyles: {
         width: "".concat(o, "%")
       },
-      durationTimestamp: (0, v.T_)({
+      durationTimestamp: (0, x.T_)({
         start: 0
       }, i)
     }
@@ -100,7 +100,7 @@ function _(e) {
     } = e,
     {
       largeImage: M
-    } = (0, x.rv)({
+    } = (0, v.rv)({
       entry: _
     }),
     {
@@ -120,7 +120,7 @@ function _(e) {
       var e;
       if (null == Z || null == B) return;
       let t = null === (e = L.timestamps) || void 0 === e ? void 0 : e.start,
-        n = (0, v.T_)(null != t ? {
+        n = (0, x.T_)(null != t ? {
           start: t
         } : _, Date.now());
       return (0, y.CR)({
@@ -171,7 +171,7 @@ function _(e) {
       "aria-label": E.NW.string(E.t.rRffNz),
       Icon: f.Z
     }) : null,
-    userDescription: (0, v.kr)(_) ? E.t.Tzx5Dw : E.t.CcVI1d,
+    userDescription: (0, x.kr)(_) ? E.t.Tzx5Dw : E.t.CcVI1d,
     title: z,
     onClickTitle: g,
     subtitle: q,

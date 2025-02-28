@@ -18,8 +18,8 @@ var i = n(192379),
   f = n(674588),
   v = n(809547),
   N = n(822245),
-  x = n(631827),
-  y = n(827498),
+  y = n(631827),
+  x = n(827498),
   b = n(783097),
   E = n(689079),
   C = n(665692);
@@ -53,7 +53,7 @@ function A(e) {
   let {
     commands: v,
     commandSectionMap: N,
-    loading: y
+    loading: x
   } = function(e) {
     var t, n;
     let {
@@ -124,7 +124,7 @@ function A(e) {
   }), O = i.useMemo(() => {
     var e, i, r, o, s, u;
     if (!a) return [];
-    return (0, x.N)(v, {
+    return (0, y.N)(v, {
       limit: l,
       filterPredicates: [function(e) {
         let t = (0, m.k)("channel" === e.type ? e.channel : void 0, [c.yU.CHAT]),
@@ -247,7 +247,7 @@ function A(e) {
         return t
       }))
     } else s && (u = A);
-    return (0, x.N)(u, {
+    return (0, y.N)(u, {
       limit: o,
       filterPredicates: [function(e) {
         let t = (0, m.k)("channel" === e.type ? e.channel : void 0, [c.yU.CHAT, c.yU.PRIMARY_ENTRY_POINT]);
@@ -290,7 +290,7 @@ function A(e) {
     applicationResults: S,
     hasApplicationResults: L,
     isEmptyState: !T && !L,
-    loading: y && a
+    loading: x && a
   }
 }
 
@@ -303,14 +303,14 @@ function I(e) {
     entrypoint: c
   } = e;
   n.startsWith("".concat(C.GI)) && (n = n.substring(1));
-  let u = c === y._b.VOICE,
+  let u = c === x._b.VOICE,
     d = "channel" === t.type ? t.channel.guild_id : void 0,
     [p, m] = i.useState(1),
     h = i.useRef(p);
   h.current = p;
   let {
     fetchState: N,
-    totalPages: x
+    totalPages: y
   } = (0, s.cj)([v.Z], () => {
     var e, t;
     return {
@@ -354,8 +354,8 @@ function I(e) {
     })) || void 0 === i ? void 0 : i.results) && void 0 !== l ? l : []
   }), [N, d, n, p, u]), E = i.useCallback(() => {
     let e = b.length;
-    N === v.M.FETCHED && e === h.current && e > 0 && e < x && e < r && b[e - 1].length > 0 && (h.current++, m(e => e + 1))
-  }, [N, r, b, x]), g = i.useCallback(e => {
+    N === v.M.FETCHED && e === h.current && e > 0 && e < y && e < r && b[e - 1].length > 0 && (h.current++, m(e => e + 1))
+  }, [N, r, b, y]), g = i.useCallback(e => {
     let {
       query: t,
       page: n,

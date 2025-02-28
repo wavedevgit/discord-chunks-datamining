@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(541716),
   U = n(752305),
   B = n(516887),
-  F = n(974251),
-  H = n(893718),
+  H = n(974251),
+  F = n(893718),
   G = n(436660),
   V = n(603009),
   z = n(540059),
@@ -95,8 +95,8 @@ var r = n(200651),
   eW = n(583027),
   eU = n(25007),
   eB = n(685006),
-  eF = n(685722),
-  eH = n(199649),
+  eH = n(685722),
+  eF = n(199649),
   eG = n(1397),
   eV = n(981631),
   ez = n(388032),
@@ -246,7 +246,7 @@ class e1 extends i.PureComponent {
       pendingScheduledMessage: _
     } = this.props, {
       contentWarningProps: C
-    } = this.state, y = (0, r.jsx)(H.Z, {
+    } = this.state, y = (0, r.jsx)(F.Z, {
       textValue: this.state.textValue,
       richValue: this.state.richValue,
       focused: t,
@@ -530,7 +530,7 @@ class e1 extends i.PureComponent {
       var t, n;
       let r = null === (t = this.editorRef) || void 0 === t ? void 0 : t.getSlateEditor();
       null != r && (G.Q.select(r, []), r.insertText(e), null === (n = this.editorRef) || void 0 === n || n.focus())
-    }), eK(this, "renderAttachButton", (e, t) => (0, r.jsx)(F.Z, {
+    }), eK(this, "renderAttachButton", (e, t) => (0, r.jsx)(H.Z, {
       className: t,
       channel: this.props.channel,
       draftType: ey.d.ChannelMessage,
@@ -598,7 +598,7 @@ class e2 extends i.PureComponent {
     t = T && n.type === eV.d4z.GUILD_VOICE ? ez.t.pnnyFR : T && n.type === eV.d4z.GUILD_STAGE_VOICE ? ez.t.YInSkp : u.T.THREADS.has(n.type) ? ez.t["OkzL+f"] : ez.t.UbNmGR;
     let A = (0, r.jsx)("div", {
         className: eq.channelBottomBarArea,
-        children: (0, r.jsx)(eF.Z, {})
+        children: (0, r.jsx)(eH.Z, {})
       }),
       w = (0, r.jsxs)("div", {
         className: eq.channelBottomBarArea,
@@ -694,7 +694,7 @@ class e2 extends i.PureComponent {
                   }),
                   children: [v && (0, r.jsx)(ec.Z, {
                     channelId: n.id
-                  }), n.isPrivate() ? (0, r.jsx)(eH.Z, {
+                  }), n.isPrivate() ? (0, r.jsx)(eF.Z, {
                     channel: n,
                     children: M
                   }) : (0, r.jsx)(eG.Z, {

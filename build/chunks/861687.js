@@ -486,7 +486,7 @@ class eg extends f.Z {
         this.logger.warn("Socket mismatch, disconnecting");
         return
       }
-      switch (this._voiceQuality = new J.Z(d), this._voiceQuality.start(), this._voiceQualityPeriodicStatsSequenceId = 0, this._voiceQualityPeriodicStatsInterval = setInterval(this._handleVoiceQualityPeriodicsStats, 3e5), this._systemResponsiveness = new z.Z(d), this._systemResponsiveness.start(), this._noiseCancellationError = 0, this._voiceDuration = new X.Z(this.userId, d), this._voiceDuration.start(d.getSelfMute()), this.protocol = r, r) {
+      switch (this._voiceQuality = new J.Z(d), this._voiceQuality.start(), this._voiceQualityPeriodicStatsSequenceId = 0, this._voiceQualityPeriodicStatsInterval = setInterval(this._handleVoiceQualityPeriodicsStats, 3e5), this._systemResponsiveness = new z.Z(d), this._systemResponsiveness.start(), this._noiseCancellationError = 0, this._voiceDuration = new X.Z(this.userId, d), this._voiceDuration.start(d.getSelfMute(), d.getVoiceFilterId()), this.protocol = r, r) {
         case "udp":
           this.logger.info("Sending UDP info to RTC server.", i, this._selectedExperiments), e.once(W.V.Encryption, (e, t) => {
             d === this._connection && (d.setEncryption(e, t), this._encryptionMode = e)

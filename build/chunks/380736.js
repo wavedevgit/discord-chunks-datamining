@@ -36,15 +36,13 @@ function S(e) {
     keybind: t,
     message: n,
     messageWithoutKeybind: i
-  } = e, l = (0, f.o)();
-  return (0, r.jsx)(r.Fragment, {
-    children: l ? y.NW.format(n, {
-      keybind: t,
-      keybindHook: e => (0, r.jsx)(p.Z, {
-        keybind: t
-      }, t.join("+"))
-    }) : i
-  })
+  } = e;
+  return (0, f.o)() ? y.NW.format(n, {
+    keybind: t,
+    keybindHook: e => (0, r.jsx)(p.Z, {
+      keybind: t
+    }, t.join("+"))
+  }) : i
 }
 
 function j(e) {

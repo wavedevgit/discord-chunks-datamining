@@ -5,8 +5,8 @@ r.d(t, {
 });
 var n, i = r(200651),
   a = r(192379),
-  l = r(120356),
-  o = r.n(l),
+  o = r(120356),
+  l = r.n(o),
   c = r(873546),
   s = r(442837),
   u = r(481060),
@@ -16,8 +16,8 @@ var n, i = r(200651),
   f = r(385499),
   b = r(979264),
   y = r(372900),
-  g = r(477734),
-  O = r(184301),
+  O = r(477734),
+  g = r(184301),
   j = r(768581),
   h = r(463396),
   x = r(981631),
@@ -71,7 +71,7 @@ function T(e) {
   var t;
   let r, {
       author: n,
-      message: l,
+      message: o,
       channel: f,
       userOverride: w,
       compact: T = !1,
@@ -82,8 +82,8 @@ function T(e) {
       onContextMenu: k,
       onPopoutRequestClose: C,
       renderPopout: Z,
-      renderRemixTag: F = !1,
-      decorations: D
+      renderRemixTag: D = !1,
+      decorations: F
     } = e,
     L = a.useContext(y.Z),
     _ = null !== (t = null == f ? void 0 : f.guild_id) && void 0 !== t ? t : L,
@@ -95,14 +95,14 @@ function T(e) {
       colorString: B,
       colorRoleName: z
     } = n,
-    U = null != l.messageReference && null != l.webhookId && l.hasFlag(x.iLy.IS_CROSSPOST),
+    U = null != o.messageReference && null != o.webhookId && o.hasFlag(x.iLy.IS_CROSSPOST),
     V = (0, s.e7)([p.Z], () => p.Z.roleStyle),
-    W = (0, g.X$)(),
+    W = (0, O.X$)(),
     H = a.useMemo(() => ({
       source: x.jXE.CHANNEL,
-      messageId: l.id,
-      tagUserId: l.author.id
-    }), [l.id, l.author.id]),
+      messageId: o.id,
+      tagUserId: o.author.id
+    }), [o.id, o.author.id]),
     X = {
       className: v.username,
       style: "username" === V && null != B ? {
@@ -110,28 +110,26 @@ function T(e) {
       } : void 0,
       onClick: E,
       onContextMenu: k,
-      children: (0, i.jsx)(i.Fragment, {
-        children: (R ? "@" : "") + G
-      })
+      children: (R ? "@" : "") + G
     },
     J = a.useMemo(() => T ? (0, i.jsx)(b.ZP, {
       primaryGuild: n.primaryGuild,
-      userId: l.author.id,
+      userId: o.author.id,
       contextGuildId: _,
       className: v.clanTagChiplet,
       profileViewedAnalytics: H
-    }) : null, [T, H, n.primaryGuild, _, l.author.id]);
+    }) : null, [T, H, n.primaryGuild, _, o.author.id]);
   r = null != Z && null != I ? (0, i.jsx)(u.yRy, {
     preload: U ? void 0 : function() {
-      let e = null != w ? w : l.author;
-      return (0, O.Z)(e.id, null != n.guildMemberAvatar && null != _ ? (0, j.JM)({
+      let e = null != w ? w : o.author;
+      return (0, g.Z)(e.id, null != n.guildMemberAvatar && null != _ ? (0, j.JM)({
         guildId: _,
         userId: e.id,
         avatar: n.guildMemberAvatar,
         size: 80
       }) : e.getAvatarURL(_, 80), {
         guildId: _,
-        channelId: l.channel_id
+        channelId: o.channel_id
       })
     },
     renderPopout: Z,
@@ -160,17 +158,17 @@ function T(e) {
         children: [(0, i.jsx)(u.P3F, S(P({
           tag: "span"
         }, r, X), {
-          className: o()(X.className, v.clickable, A)
+          className: l()(X.className, v.clickable, A)
         })), J]
       })
     }
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(u.P3F, S(P({}, X), {
-      className: o()(X.className, A)
+      className: l()(X.className, A)
     })), J]
   });
-  let Y = null != D ? D[0] : null,
-    $ = null != D ? D[1] : null;
+  let Y = null != F ? F[0] : null,
+    $ = null != F ? F[1] : null;
   return (0, i.jsxs)(d.Gt, {
     value: M,
     children: [null != Y && T ? (0, i.jsxs)(i.Fragment, {
@@ -181,12 +179,10 @@ function T(e) {
       className: v.roleDot
     }) : null, r, !T && (0, i.jsx)(b.ZP, {
       primaryGuild: n.primaryGuild,
-      userId: l.author.id,
+      userId: o.author.id,
       contextGuildId: _,
       className: v.clanTagChiplet,
       profileViewedAnalytics: H
-    }), null != $ ? (0, i.jsx)(i.Fragment, {
-      children: $
-    }) : null, null == Y || T ? null : Y, null != l && (0, h.f)(l) && W && F ? (0, i.jsx)(N, {}) : null]
+    }), null != $ ? $ : null, null == Y || T ? null : Y, null != o && (0, h.f)(o) && W && D ? (0, i.jsx)(N, {}) : null]
   })
 }

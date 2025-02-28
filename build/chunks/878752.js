@@ -49,8 +49,8 @@ function N(e) {
   let W = (0, h.Z)(t),
     U = !I && W,
     B = !I && D,
-    F = A && w,
-    H = T && n;
+    H = A && w,
+    F = T && n;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: O.voiceEffectsActionBar,
@@ -59,7 +59,7 @@ function N(e) {
         themeable: E
       }), B && (0, r.jsx)(v.Z, {
         channel: t
-      }), F && (0, r.jsx)(b.Z, {
+      }), H && (0, r.jsx)(b.Z, {
         channel: t
       }), L && (0, r.jsx)(u.t, {
         potionRef: S,
@@ -69,10 +69,10 @@ function N(e) {
         ref: S,
         channel: t,
         glow: L
-      }), H && (0, r.jsx)(_.Z, {}), H && (0, r.jsx)(C.Z, {
+      }), F && (0, r.jsx)(_.Z, {}), F && (0, r.jsx)(C.Z, {
         channel: t
-      }), H && (0, r.jsx)(j.Z, {})]
-    }), N && (U || B || F || L || P || H) && (0, r.jsx)("div", {
+      }), F && (0, r.jsx)(j.Z, {})]
+    }), N && (U || B || H || L || P || F) && (0, r.jsx)("div", {
       className: O.divider
     })]
   })

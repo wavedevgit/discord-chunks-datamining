@@ -76,8 +76,8 @@ function S(e) {
     suppress: L
   } = (0, b.Z)(t), D = (0, l.e7)([v.Z], () => v.Z.isDeaf()), W = k || L || D, U = (0, d.sR)({
     isSoundboardButtonDisabled: W
-  }), [B, F] = (0, u.cv)(U), {
-    mode: H
+  }), [B, H] = (0, u.cv)(U), {
+    mode: F
   } = (0, f.ZP)({
     location: "ActionBarSoundboardButton"
   }), G = (0, g.Z)({
@@ -130,7 +130,7 @@ function S(e) {
           onClose: n,
           gridNotice: B === o.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(p.o, {
             onClose: n,
-            markAsDismissed: F
+            markAsDismissed: H
           }),
           analyticsSource: "action bar button"
         })
@@ -149,7 +149,7 @@ function S(e) {
       onMouseLeave: () => {
         e.onMouseLeave(), R()
       },
-      color: e.isActive ? V ? "primaryDark" : H === f.BK.GroupedButtonsRedMic || z ? "green" : void 0 : void 0,
+      color: e.isActive ? V ? "primaryDark" : F === f.BK.GroupedButtonsRedMic || z ? "green" : void 0 : void 0,
       className: ""
     })) : (0, r.jsx)(C.Z, I({
       themeable: S,

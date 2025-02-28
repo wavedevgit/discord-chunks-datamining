@@ -16,8 +16,8 @@ var r = n(200651),
   h = n(823379),
   f = n(5192),
   g = n(379357),
-  x = n(192918),
-  v = n(561308),
+  v = n(192918),
+  x = n(561308),
   y = n(907152),
   j = n(206295),
   P = n(297781),
@@ -76,7 +76,7 @@ let I = (e, t) => N.NW.formatToPlainString(N.t.tAwI1t, {
       participant1: W,
       participant2: U,
       numOtherParticipants: z
-    } = (0, x.Z)(n, 3), B = () => {
+    } = (0, v.Z)(n, 3), B = () => {
       u.__(d._b.TEXT, m.Ie.NORMAL, {
         applicationId: n.extra.application_id
       })
@@ -93,7 +93,7 @@ let I = (e, t) => N.NW.formatToPlainString(N.t.tAwI1t, {
         applicationImageSrc: null == S ? void 0 : S.src,
         avatarSrcs: L.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
-        timestamp: (0, v.yh)(n, M),
+        timestamp: (0, x.yh)(n, M),
         colors: [R, D],
         channelId: e
       })
@@ -105,7 +105,7 @@ let I = (e, t) => N.NW.formatToPlainString(N.t.tAwI1t, {
       }),
       F = (0, r.jsx)(O.wG, {
         channel: t,
-        userDescription: (0, v.kr)(n) ? N.t.vPg1JS : N.t.rPqqtr,
+        userDescription: (0, x.kr)(n) ? N.t.vPg1JS : N.t.rPqqtr,
         title: n.extra.activity_name,
         subtitle: A,
         badges: G,

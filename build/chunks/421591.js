@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 }), n(47120), n(852437);
 var i = n(200651),
   l = n(192379),
@@ -20,10 +20,10 @@ let N = {
     width: h.Gy,
     height: h.lv
   },
-  x = {
+  y = {
     height: h.lv
   },
-  y = l.memo(l.forwardRef(function(e, t) {
+  x = l.memo(l.forwardRef(function(e, t) {
     let {
       context: n,
       entrypoint: r,
@@ -152,14 +152,14 @@ function E(e) {
   }(o), {
     currentView: f,
     getMostRecentHistoryItemByType: N,
-    setSlideReady: y
+    setSlideReady: x
   } = (0, u.hH)();
   l.useEffect(() => {
-    y(!1)
-  }, [null == f ? void 0 : f.type, y]);
+    x(!1)
+  }, [null == f ? void 0 : f.type, x]);
   let b = l.useCallback(() => {
-    y(!0)
-  }, [y]);
+    x(!0)
+  }, [x]);
   if (null == f) return null;
   let E = N(u.gc.LIST),
     C = N(u.gc.APPLICATION);
@@ -171,7 +171,7 @@ function E(e) {
       id: u.gc.HOME,
       children: (0, i.jsx)("div", {
         className: v.slideContent,
-        style: x,
+        style: y,
         children: (0, i.jsx)(p.Z, {
           isScrollCloseToBottom: c,
           setScroller: s,
@@ -185,7 +185,7 @@ function E(e) {
       id: u.gc.LIST,
       children: (0, i.jsx)("div", {
         className: v.slideContent,
-        style: x,
+        style: y,
         children: null != E && (0, i.jsx)(m.Z, {
           context: t,
           entrypoint: n,
@@ -200,7 +200,7 @@ function E(e) {
       id: u.gc.APPLICATION,
       children: (0, i.jsx)("div", {
         className: v.slideContent,
-        style: x,
+        style: y,
         children: null != C && (0, i.jsx)(d.Z, {
           context: t,
           application: C.application,

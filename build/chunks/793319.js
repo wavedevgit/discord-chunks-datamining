@@ -43,8 +43,8 @@ var r = n(200651),
   W = n(140465),
   U = n(800966),
   B = n(641015),
-  F = n(618158),
-  H = n(390322),
+  H = n(618158),
+  F = n(390322),
   G = n(791592),
   V = n(136995),
   z = n(402113),
@@ -221,13 +221,13 @@ function eP(e) {
           })
         }
       })
-    })(), (0, r.jsx)(F.Z, {
+    })(), (0, r.jsx)(H.Z, {
       children: (0, r.jsx)(p.yRy, {
         renderPopout: e => {
           let {
             closePopout: i
           } = e;
-          return (0, r.jsx)(H.Z, {
+          return (0, r.jsx)(F.Z, {
             children: (0, r.jsx)(em.Z, {
               channel: t,
               currentUser: n,
@@ -475,9 +475,9 @@ let ew = function(e) {
     canGoLive: U
   } = (0, u.cj)([et.Z], () => ({
     canGoLive: (0, w.Z)(et.Z)
-  })), F = (0, T.Z)(), G = (0, u.e7)([Z.Z], () => null != Z.Z.getAwaitingRemoteSessionInfo()), V = null != F, z = (0, u.e7)([en.Z], () => {
+  })), H = (0, T.Z)(), G = (0, u.e7)([Z.Z], () => null != Z.Z.getAwaitingRemoteSessionInfo()), V = null != H, z = (0, u.e7)([en.Z], () => {
     var e;
-    return (null !== (e = null == F ? void 0 : F.channelId) && void 0 !== e ? e : en.Z.getVoiceChannelId()) === l.id
+    return (null !== (e = null == H ? void 0 : H.channelId) && void 0 !== e ? e : en.Z.getVoiceChannelId()) === l.id
   }), q = (0, j.Z)(l, !0), K = (0, u.e7)([_.ZP], () => _.ZP.getSelfEmbeddedActivityForChannel(l.id)), {
     reachedLimit: $,
     limit: ee
@@ -518,7 +518,7 @@ let ew = function(e) {
               let {
                 closePopout: t
               } = e;
-              return (0, r.jsx)(H.Z, {
+              return (0, r.jsx)(F.Z, {
                 children: eb ? (0, r.jsx)(J.l, {
                   wide: !0,
                   showOutputDevices: !0,
@@ -566,7 +566,7 @@ let ew = function(e) {
               let {
                 closePopout: t
               } = e;
-              return (0, r.jsx)(H.Z, {
+              return (0, r.jsx)(F.Z, {
                 children: (0, r.jsx)(N.Z, {
                   onClose: t,
                   simplified: C,
@@ -652,7 +652,7 @@ let ew = function(e) {
             let {
               closePopout: t
             } = e;
-            return (0, r.jsx)(H.Z, {
+            return (0, r.jsx)(F.Z, {
               children: eb ? (0, r.jsx)(J.l, {
                 wide: !0,
                 showOutputDevices: !0,
@@ -692,7 +692,7 @@ let ew = function(e) {
             let {
               closePopout: t
             } = e;
-            return (0, r.jsx)(H.Z, {
+            return (0, r.jsx)(F.Z, {
               children: (0, r.jsx)(N.Z, {
                 onClose: t,
                 onInteraction: eA("VideoDeviceMenu")
@@ -736,7 +736,7 @@ let ew = function(e) {
             let {
               closePopout: t
             } = e;
-            return (0, r.jsx)(H.Z, {
+            return (0, r.jsx)(F.Z, {
               children: eb ? (0, r.jsx)(J.l, {
                 wide: !0,
                 showOutputDevices: !0,

@@ -9,12 +9,9 @@ var i = r(481060),
   c = r(326528);
 
 function a() {
-  let e = (0, c.b)().map(e => (0, n.jsx)(i.sNh, {
+  return (0, c.b)().map(e => (0, n.jsx)(i.sNh, {
     id: e.id,
     label: e.title,
     action: () => (0, o.Z)(e.id)
-  }, e.id));
-  return (0, n.jsx)(n.Fragment, {
-    children: e
-  })
+  }, e.id))
 }

@@ -76,9 +76,9 @@ function P(e) {
       width: W,
       height: U,
       layout: B,
-      idle: F
+      idle: H
     } = e,
-    H = null != A,
+    F = null != A,
     G = h.Z.getVideoComponent(),
     V = p.default.getId(),
     [z, q] = i.useState(null),
@@ -206,14 +206,14 @@ function P(e) {
                   onContextMenu: P,
                   onVideoResize: eC,
                   inCall: w,
-                  inPopout: H
+                  inPopout: F
                 })
               }, i) : null
             })
           })
         }), el ? (0, r.jsx)(a.animated.div, {
           className: o()(j.actionRow, {
-            [j.idle]: F
+            [j.idle]: H
           }),
           style: {
             bottom: eb.value

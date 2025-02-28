@@ -6,8 +6,8 @@ var n = r(200651);
 r(192379);
 var i = r(120356),
   a = r.n(i),
-  l = r(481060),
-  o = r(55935),
+  o = r(481060),
+  l = r(55935),
   c = r(543388),
   s = r(223021),
   u = r(388032),
@@ -18,8 +18,8 @@ function m(e) {
   let {
     tooltipProps: i,
     timeFormatted: a,
-    children: l,
-    compact: o,
+    children: o,
+    compact: l,
     timestamp: c,
     id: s
   } = e;
@@ -43,12 +43,12 @@ function m(e) {
   }({}, i), r = r = {
     id: s,
     dateTime: c.toISOString(),
-    children: null != l ? l : (0, n.jsxs)(n.Fragment, {
+    children: null != o ? o : (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("i", {
         className: p.separator,
         "aria-hidden": !0,
-        children: o ? "[" : " — "
-      }), a, o && (0, n.jsxs)("i", {
+        children: l ? "[" : " — "
+      }), a, l && (0, n.jsxs)("i", {
         className: p.separator,
         "aria-hidden": !0,
         children: ["]", " "]
@@ -74,11 +74,11 @@ let d = function(e) {
     isVisibleOnlyOnHover: f = !1,
     cozyAlt: b = !1,
     isInline: y = !0,
-    id: g,
-    isEdited: O = !1,
+    id: O,
+    isEdited: g = !1,
     application: j,
     tooltipPosition: h
-  } = e, x = new Date(d), v = (0, o.Hg)(x), P = i ? (0, o.vc)(x, "LT") : (0, o.Y4)(x), S = i ? (0, s.Z)(P) : null, w = O ? u.NW.formatToPlainString(u.t.CDzOFR, {
+  } = e, x = new Date(d), v = (0, l.Hg)(x), P = i ? (0, l.vc)(x, "LT") : (0, l.Y4)(x), S = i ? (0, s.Z)(P) : null, w = g ? u.NW.formatToPlainString(u.t.CDzOFR, {
     timeFormatted: v
   }) : v;
   return (0, n.jsx)("span", {
@@ -88,8 +88,8 @@ let d = function(e) {
       [p.timestampInline]: y,
       [p.alt]: b
     }),
-    children: null == j ? (0, n.jsx)(l.ua7, {
-      text: (0, o.vc)(x, "LLLL"),
+    children: null == j ? (0, n.jsx)(o.ua7, {
+      text: (0, l.vc)(x, "LLLL"),
       "aria-label": w,
       tooltipClassName: p.timestampTooltip,
       position: h,
@@ -98,7 +98,7 @@ let d = function(e) {
         tooltipProps: e,
         timeFormatted: P,
         timestamp: x,
-        id: g,
+        id: O,
         compact: i,
         children: t
       })
@@ -109,7 +109,7 @@ let d = function(e) {
       children: (0, n.jsx)(m, {
         timeFormatted: P,
         timestamp: x,
-        id: g,
+        id: O,
         compact: i,
         children: t
       })

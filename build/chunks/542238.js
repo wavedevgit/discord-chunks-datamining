@@ -17,9 +17,7 @@ function l(e) {
   } = e, c = (0, o.e7)([a.Z], () => a.Z.getRemoteSessionId());
   return (i.useEffect(() => {
     null != c && n()
-  }, [c, n]), null == l) ? (0, r.jsx)(r.Fragment, {
-    children: t
-  }) : (0, r.jsxs)(r.Fragment, {
+  }, [c, n]), null == l) ? t : (0, r.jsxs)(r.Fragment, {
     children: [t, (0, r.jsx)("div", {
       className: s.errorCodeMessage,
       children: l

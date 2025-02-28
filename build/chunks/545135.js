@@ -21,13 +21,13 @@ var r = n(512722),
   O = n(594174),
   E = n(241851),
   h = n(94953),
-  j = n(976192),
-  y = n(904483),
+  y = n(976192),
+  j = n(904483),
   _ = n(429824),
   P = n(919815),
   v = n(858822),
-  m = n(993356),
-  A = n(58338),
+  A = n(993356),
+  m = n(58338),
   x = n(422525),
   L = n(522762),
   I = n(466330),
@@ -78,7 +78,7 @@ function G(e) {
     guild: t,
     source: Z.t4x.GUILD_CONTEXT_MENU,
     channel: G
-  }), w = (0, L.Z)(u), U = (0, v.Z)(t), R = (0, m.Z)(t), W = (0, x.Z)(t), B = (0, j.Z)({
+  }), w = (0, L.Z)(u), U = (0, v.Z)(t), R = (0, A.Z)(t), W = (0, x.Z)(t), B = (0, y.Z)({
     guildId: t.id,
     userId: S.default.getId(),
     analyticsLocation: {
@@ -94,12 +94,12 @@ function G(e) {
       section: Z.jXE.CHAT_USERNAME,
       object: Z.qAy.CONTEXT_MENU_ITEM
     }
-  }), Q = (0, y.Z)(t), F = (0, g.Z)(t.id), H = (0, d.Z)({
+  }), Q = (0, j.Z)(t), H = (0, g.Z)(t.id), F = (0, d.Z)({
     id: t.id,
     label: M.NW.string(M.t["94lLDw"])
   }), V = (0, P.Z)(t, {
     section: Z.jXE.GUILD_LIST
-  }), q = (0, p.Z)(t.id), X = (0, A.Z)(t.id), K = (0, N.ng)(t.id, !1), z = (0, _.Z)(t), J = (0, b.Mn)("GuildContextMenu");
+  }), q = (0, p.Z)(t.id), X = (0, m.Z)(t.id), K = (0, N.ng)(t.id, !1), z = (0, _.Z)(t), J = (0, b.Mn)("GuildContextMenu");
 
   function $() {
     (0, a.h7j)(e => (0, i.jsx)(E.g, D(T({}, e), {
@@ -132,7 +132,7 @@ function G(e) {
         color: "danger"
       })
     }), (0, i.jsx)(a.kSQ, {
-      children: H
+      children: F
     })]
   }) : (0, i.jsxs)(a.v2r, {
     navId: "guild-context",
@@ -159,7 +159,7 @@ function G(e) {
         })
       }), B, Y]
     }), (0, i.jsxs)(a.kSQ, {
-      children: [Q, F]
+      children: [Q, H]
     }), (0, i.jsxs)(a.kSQ, {
       children: [z, !C && (0, i.jsx)(a.sNh, {
         id: "leave-guild",
@@ -168,7 +168,7 @@ function G(e) {
         color: "danger"
       })]
     }), (0, i.jsx)(a.kSQ, {
-      children: H
+      children: F
     })]
   })
 }

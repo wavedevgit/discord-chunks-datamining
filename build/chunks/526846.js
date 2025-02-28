@@ -154,7 +154,7 @@ let D = i.forwardRef(function(e, t) {
         opensAppLauncherModal: !0
       }), u(), _()
     }, [W, M, l, _, u, D]),
-    F = i.useCallback(e => {
+    H = i.useCallback(e => {
       c(), E.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
         channel_id: l.id,
         guild_id: l.getGuildId()
@@ -177,7 +177,7 @@ let D = i.forwardRef(function(e, t) {
           })
         }), (0, r.jsxs)("div", {
           className: R.container,
-          onMouseEnter: F,
+          onMouseEnter: H,
           onMouseLeave: u,
           children: [(0, r.jsxs)("div", {
             className: R.titleContainer,

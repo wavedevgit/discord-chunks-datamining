@@ -30,9 +30,7 @@ let d = e => {
     ariaLabel: c.NW.formatToPlainString(c.t.CSIeU1, {
       name: g
     })
-  })(null != f ? f : void 0)((0, i.jsx)(i.Fragment, {
-    children: g
-  }), d.id);
+  })(null != f ? f : void 0)(g, d.id);
   return (0, i.jsxs)(a.Text, {
     tag: "span",
     className: r()(u.author, {

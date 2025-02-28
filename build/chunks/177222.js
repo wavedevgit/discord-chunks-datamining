@@ -63,8 +63,8 @@ function R(e) {
     channelId: R.id
   }), {
     analyticsLocations: W
-  } = (0, d.ZP)(u.Z.PROFILE_PANEL), U = i.useRef(null), B = (0, s.Z)(U), F = (0, b.$m)(), H = (0, a.q_F)({
-    opacity: +(null != F.interactionType),
+  } = (0, d.ZP)(u.Z.PROFILE_PANEL), U = i.useRef(null), B = (0, s.Z)(U), H = (0, b.$m)(), F = (0, a.q_F)({
+    opacity: +(null != H.interactionType),
     config: {
       duration: 150
     }
@@ -78,15 +78,15 @@ function R(e) {
     children: (0, r.jsx)(f.Mt, {
       value: D,
       children: (0, r.jsx)(b.NJ, {
-        value: F,
+        value: H,
         children: (0, r.jsxs)(y.Z, {
           ref: U,
           user: t,
           displayProfile: k,
           profileType: Z.y0.PANEL,
           themeOverride: L,
-          children: [null != F.interactionType && (0, r.jsx)(l.animated.div, {
-            style: H,
+          children: [null != H.interactionType && (0, r.jsx)(l.animated.div, {
+            style: F,
             className: A.backdrop
           }), (0, r.jsxs)(o.u2, {
             children: [(0, r.jsxs)(j.Z, {
@@ -94,7 +94,7 @@ function R(e) {
               children: [(0, r.jsx)(O.Z, {
                 user: t,
                 profileType: Z.y0.PANEL,
-                shouldShowTooltip: null === F.interactionType
+                shouldShowTooltip: null === H.interactionType
               }), t.bot ? (0, r.jsx)(x.Z, {
                 user: t
               }) : (0, r.jsx)(N.Z, {
@@ -131,7 +131,7 @@ function R(e) {
               currentUser: n,
               displayProfile: k,
               channel: R,
-              isHovering: null == F.interactionType && B,
+              isHovering: null == H.interactionType && B,
               onOpenProfile: M ? void 0 : G
             }), (0, r.jsx)(S.Z, {
               user: t

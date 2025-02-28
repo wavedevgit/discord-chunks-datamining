@@ -2,8 +2,8 @@
 n.d(t, {
   $D: () => g,
   H2: () => v,
-  MO: () => f,
-  X$: () => p,
+  MO: () => p,
+  X$: () => f,
   d5: () => c
 });
 var i, r = n(442837),
@@ -40,11 +40,11 @@ function h(e) {
   return n && !i && r ? 1 : n && r && (l || o) && !t.hasFeature(d.oNc.COMMUNITY) ? 2 : 0
 }
 
-function p(e) {
+function f(e) {
   return 0 !== h(e)
 }
 
-function f(e) {
+function p(e) {
   let t = (0, u.Bt)(null == e ? void 0 : e.id),
     n = (0, l.Ob)(e),
     i = (0, l.gS)(null == e ? void 0 : e.id),
@@ -55,7 +55,7 @@ function f(e) {
     }),
     c = (0, l.Sd)(),
     {
-      shouldRestrictUpdatingCreatorMonetizationSettings: p
+      shouldRestrictUpdatingCreatorMonetizationSettings: f
     } = (0, o.gX)(null == e ? void 0 : e.id);
   return null == e ? 0 : h({
     guild: e,
@@ -65,7 +65,7 @@ function f(e) {
     isMonetizationWaitlistEnabledForGuild: i,
     isExpeditedMonetizationOnboardingGuild: n,
     isUserInCreatorMonetizationEligibleCountry: c,
-    shouldRestrictUpdatingRoleSubscriptionSettings: p
+    shouldRestrictUpdatingRoleSubscriptionSettings: f
   })
 }
 

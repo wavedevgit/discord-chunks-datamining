@@ -75,7 +75,7 @@ function k(e) {
   } = e, {
     ref: L,
     width: D
-  } = (0, h.Z)(), [W, U] = i.useState(3), [B, F] = i.useState(!n), [H, G] = (0, f.Z)(!1, 2e3), V = (0, s.e7)([N.Z], () => N.Z.getChannel(t), [t]), {
+  } = (0, h.Z)(), [W, U] = i.useState(3), [B, H] = i.useState(!n), [F, G] = (0, f.Z)(!1, 2e3), V = (0, s.e7)([N.Z], () => N.Z.getChannel(t), [t]), {
     firstMessage: z
   } = (0, P.cl)(V), q = (0, s.e7)([j.Z], () => j.Z.hasJoined(t)), {
     disableReactionUpdates: Y,
@@ -88,7 +88,7 @@ function k(e) {
     if (null != t && n) {
       let e = t.intersectionRect,
         n = t.boundingClientRect;
-      F((e.bottom - e.top) / (n.bottom - n.top) < 1)
+      H((e.bottom - e.top) / (n.bottom - n.top) < 1)
     }
   }, [n]);
   i.useLayoutEffect(() => {
@@ -203,7 +203,7 @@ function k(e) {
             onClick: ea,
             className: A.button,
             innerClassName: A.buttonInner,
-            children: [H ? (0, r.jsx)(u.dz2, {
+            children: [F ? (0, r.jsx)(u.dz2, {
               size: "custom",
               color: "currentColor",
               width: 16,
@@ -213,7 +213,7 @@ function k(e) {
               color: "currentColor",
               width: 16,
               height: 16
-            }), H ? T.NW.string(T.t["t5VZ8/"]) : null]
+            }), F ? T.NW.string(T.t["t5VZ8/"]) : null]
           }))
         }), !n && (0, r.jsx)(u.ua7, {
           text: T.NW.string(T.t.nFP4oa),

@@ -35,7 +35,7 @@ function m(e) {
   }), (0, r.jsxs)("div", {
     className: f.noChannel,
     children: [l.tq && (0, r.jsx)(s.ZP, {
-      children: (0, r.jsx)(i.Fragment, {})
+      children: null
     }), (0, r.jsxs)(a.ubH, {
       theme: b,
       children: [(0, r.jsx)(a.oxh, {

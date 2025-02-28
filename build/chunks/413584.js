@@ -261,23 +261,20 @@ let L = "WELCOME_CHANNEL",
     return null == t ? null : (0, r.jsxs)(m.hjN, {
       title: D.NW.string(D.t["2rkmDg"]),
       tag: m.RB0.H1,
-      children: [(0, r.jsx)(r.Fragment, {
-        children: (0, r.jsx)("div", {
-          className: k.notice,
-          children: (0, r.jsxs)(m.Text, {
-            variant: "text-md/normal",
-            children: [(0, r.jsx)(E.Z, {
-              className: k.noticeIcon
-            }), D.NW.format(D.t.oj2vi4, {
-              onboardingLink: e => (0, r.jsx)(_.Z, {
-                onClick: V,
-                children: e
-              })
-            })]
-          })
+      children: [(0, r.jsx)("div", {
+        className: k.notice,
+        children: (0, r.jsxs)(m.Text, {
+          variant: "text-md/normal",
+          children: [(0, r.jsx)(E.Z, {
+            className: k.noticeIcon
+          }), D.NW.format(D.t.oj2vi4, {
+            onboardingLink: e => (0, r.jsx)(_.Z, {
+              onClick: V,
+              children: e
+            })
+          })]
         })
       }), (0, r.jsx)(m.Text, {
-        className: k.__invalid_description,
         variant: "text-sm/normal",
         children: D.NW.string(D.t["w2d74+"])
       }), (0, r.jsx)(w.Z, {

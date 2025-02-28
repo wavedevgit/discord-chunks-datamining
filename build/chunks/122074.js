@@ -15,10 +15,10 @@ var r = n(200651),
   d = n(594174),
   f = n(74538),
   h = n(759198),
-  g = n(11352),
-  O = n(213931),
-  j = n(767157),
-  N = n(112440),
+  O = n(11352),
+  g = n(213931),
+  N = n(767157),
+  j = n(112440),
   b = n(671105),
   p = n(552958),
   v = n(981631),
@@ -28,16 +28,13 @@ var r = n(200651),
   S = n(771527);
 
 function I(e, t) {
-  let n = g.Y.useExperiment({
+  let n = O.Y.useExperiment({
       location: "guild_context_menu"
     }, {
       autoTrackExposure: !0
     }),
-    i = P(e, void 0, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE, n.nestedEntry ? "trailing" : "top"),
-    l = n.nestedEntry && t || !n.nestedEntry && !t;
-  return (0, r.jsx)(r.Fragment, {
-    children: l && i
-  })
+    r = P(e, void 0, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE, n.nestedEntry ? "trailing" : "top");
+  return (n.nestedEntry && t || !n.nestedEntry && !t) && r
 }
 
 function m(e, t, n) {
@@ -45,17 +42,15 @@ function m(e, t, n) {
 }
 
 function C() {
-  let e = g.Y.useExperiment({
+  let e = O.Y.useExperiment({
       location: "guild_context_menu"
     }, {
       autoTrackExposure: !0
     }),
     [t] = (0, c.cv)([a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE]);
-  return (0, r.jsx)(r.Fragment, {
-    children: e.enabled && e.nestedEntry && t === a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE && (0, r.jsx)(o.IGR, {
-      className: S.newBadge,
-      text: x.NW.string(x.t.y2b7CA)
-    })
+  return e.enabled && e.nestedEntry && t === a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE && (0, r.jsx)(o.IGR, {
+    className: S.newBadge,
+    text: x.NW.string(x.t.y2b7CA)
   })
 }
 
@@ -67,7 +62,7 @@ function P(e, t, a, I) {
     Z = (0, l.e7)([u.ZP], () => u.ZP.isMuted(e), [e]),
     A = f.ZP.canUseCustomNotificationSounds(T),
     U = A ? null != E ? E : P : _.YC.CLASSIC,
-    M = g.Y.useExperiment({
+    M = O.Y.useExperiment({
       location: "guild_context_menu"
     }, {
       autoTrackExposure: !0
@@ -81,14 +76,14 @@ function P(e, t, a, I) {
   if (i.useEffect(() => () => {
       D && W(y.L.TAKE_ACTION)
     }, [D, W]), !M) return null;
-  let F = n => {
+  let L = n => {
       if (k(n), W(y.L.TAKE_ACTION), !A && n !== _.YC.CLASSIC) {
-        (0, j.Z)(n, "contextMenu"), (0, N.Z)();
+        (0, N.Z)(n, "contextMenu"), (0, j.Z)();
         return
       }
-      null != t ? (0, O.M)(e, t, U, n, "contextMenu") : (0, O.t)(e, U, n, "contextMenu")
+      null != t ? (0, g.M)(e, t, U, n, "contextMenu") : (0, g.t)(e, U, n, "contextMenu")
     },
-    L = A ? o.Text : h.Z,
+    F = A ? o.Text : h.Z,
     Y = (0, _.LB)(),
     Q = null !== (C = null === (m = Y.find(e => e.value === U)) || void 0 === m ? void 0 : m.label) && void 0 !== C ? C : x.NW.string(x.t.p3Hg5e),
     V = (0, r.jsx)(o.IGR, {
@@ -106,7 +101,7 @@ function P(e, t, a, I) {
         children: [(0, r.jsxs)("div", {
           children: [G && "top" === I && V, (0, r.jsxs)("div", {
             className: S.headerContainer,
-            children: [(0, r.jsx)(L, {
+            children: [(0, r.jsx)(F, {
               className: S.text,
               color: t ? "always-white" : void 0,
               variant: "text-sm/medium",
@@ -116,7 +111,7 @@ function P(e, t, a, I) {
               className: S.nitroWheel,
               color: t ? "white" : A ? void 0 : s.JX.PREMIUM_TIER_2
             })]
-          }), null != Q && (0, r.jsx)(L, {
+          }), null != Q && (0, r.jsx)(F, {
             className: S.text,
             color: t ? "always-white" : void 0,
             variant: "text-xs/normal",
@@ -170,7 +165,7 @@ function P(e, t, a, I) {
           group: "notification-preset",
           checked: (null != U ? U : _.YC.CLASSIC) === e.value,
           label: e.label,
-          action: () => F(e.value)
+          action: () => L(e.value)
         }) : (0, r.jsx)(o.sNh, {
           id: e.label,
           label: t => {
@@ -189,7 +184,7 @@ function P(e, t, a, I) {
               })]
             })
           },
-          action: () => F(e.value)
+          action: () => L(e.value)
         }), e.value === _.YC.CLASSIC ? (0, r.jsx)(o.Clw, {}) : null]
       }, t)), Z && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.Clw, {}), (0, r.jsx)(o.sNh, {

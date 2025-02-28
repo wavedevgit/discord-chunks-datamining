@@ -118,7 +118,7 @@ let N = i.memo(function(e) {
   } = (0, l.cj)([f.Z], () => ({
     isReplyAuthorBlocked: null != w && f.Z.isBlockedForMessage(w),
     isReplyAuthorIgnored: null != w && f.Z.isIgnoredForMessage(w)
-  }), [w]), U = (0, v.wq)(null == w ? void 0 : w.author.id, E.id), B = (0, v.$3)(n, w, D, W), F = (0, v.Wl)(w, E, P, Z), H = (0, v.rY)(S, Z), G = i.useCallback(() => {
+  }), [w]), U = (0, v.wq)(null == w ? void 0 : w.author.id, E.id), B = (0, v.$3)(n, w, D, W), H = (0, v.Wl)(w, E, P, Z), F = (0, v.rY)(S, Z), G = i.useCallback(() => {
     Z({
       referencedUsernameProfile: !1,
       referencedAvatarProfile: !1
@@ -137,8 +137,8 @@ let N = i.memo(function(e) {
     showAvatarPopout: S,
     showUsernamePopout: P,
     renderPopout: C.Z,
-    onClickAvatar: H,
-    onClickUsername: F,
+    onClickAvatar: F,
+    onClickUsername: H,
     onClickReply: B,
     onContextMenu: U,
     onPopoutRequestClose: G,
@@ -159,7 +159,8 @@ function E(e) {
     replyMessage: c,
     isReplySpineClickable: u,
     showReplySpine: d = !0
-  } = e, p = null != s && (0, r.jsx)(N, {
+  } = e;
+  return null != s && (0, r.jsx)(N, {
     baseMessage: t,
     replyReference: s,
     referencedMessage: c,
@@ -170,8 +171,5 @@ function E(e) {
     referencedAvatarProfile: a,
     isReplySpineClickable: u,
     showReplySpine: d
-  });
-  return (0, r.jsx)(r.Fragment, {
-    children: p
   })
 }

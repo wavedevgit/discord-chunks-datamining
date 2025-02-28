@@ -50,8 +50,8 @@ let j = (0, a.Z)(e => {
   i.useEffect(() => {
     h.S.dispatch(v.CkL.REMEASURE_TARGET)
   }, [M, k, B.width, B.height]);
-  let F = (0, d.Q3)("ChannelCallContent"),
-    H = null !== (n = null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== n && n,
+  let H = (0, d.Q3)("ChannelCallContent"),
+    F = null !== (n = null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== n && n,
     G = i.useMemo(() => a.filter(e => e.type !== y.fO.ACTIVITY || !e.participants.some(e => (0, s.J)(e))), [a, O]);
   return (null == U ? void 0 : U.channelId) === S.id ? (0, r.jsx)(m.Z, {
     height: k
@@ -65,7 +65,7 @@ let j = (0, a.Z)(e => {
     className: x.voiceCallWrapper,
     participants: l,
     onContextMenu: I
-  }) : (a = A ? a : l, null == j) ? 0 === a.length ? F && H ? (0, r.jsx)(C.Z, {
+  }) : (a = A ? a : l, null == j) ? 0 === a.length ? H && F ? (0, r.jsx)(C.Z, {
     channelId: S.id
   }) : (0, r.jsx)(_.Z, {
     className: o()(x.videoGrid, x.hiddenParticipants),

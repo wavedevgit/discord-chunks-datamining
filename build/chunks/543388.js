@@ -6,8 +6,8 @@ var n = r(200651);
 r(192379);
 var i = r(913527),
   a = r.n(i),
-  l = r(481060),
-  o = r(925329),
+  o = r(481060),
+  l = r(925329),
   c = r(388032),
   s = r(147120);
 
@@ -17,17 +17,17 @@ function u(e) {
     timestamp: r
   } = e;
   return (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(o.Z, {
-      size: o.Z.Sizes.LARGE,
+    children: [(0, n.jsx)(l.Z, {
+      size: l.Z.Sizes.LARGE,
       game: t
     }), (0, n.jsxs)("div", {
       className: s.textContainer,
-      children: [(0, n.jsx)(l.Text, {
+      children: [(0, n.jsx)(o.Text, {
         className: s.timestamp,
         variant: "text-xs/medium",
         color: "text-muted",
         children: a()(r).format("LLLL")
-      }), (0, n.jsx)(l.Text, {
+      }), (0, n.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "interactive-active",
         children: c.NW.format(c.t.J3s8JC, {
@@ -44,7 +44,7 @@ function p(e) {
     timestamp: r,
     children: i
   } = e;
-  return (0, n.jsx)(l.ua7, {
+  return (0, n.jsx)(o.ua7, {
     hideOnClick: !0,
     position: "top",
     "aria-label": c.NW.string(c.t["5nMcv7"]),
@@ -56,7 +56,7 @@ function p(e) {
     }),
     children: e => {
       var t, r;
-      return (0, n.jsx)(l.P3F, (t = function(e) {
+      return (0, n.jsx)(o.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -101,7 +101,7 @@ function m(e) {
   return (0, n.jsxs)(p, {
     application: t,
     timestamp: r,
-    children: [i ? null : (0, n.jsx)(l.iWm, {
+    children: [i ? null : (0, n.jsx)(o.iWm, {
       className: s.gameIcon,
       size: "custom",
       width: 14,

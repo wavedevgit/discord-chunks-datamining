@@ -40,8 +40,8 @@ var r, i = n(200651),
   W = n(306680),
   U = n(699516),
   B = n(246946),
-  F = n(594174),
-  H = n(626135),
+  H = n(594174),
+  F = n(626135),
   G = n(572004),
   V = n(585483),
   z = n(823379),
@@ -201,7 +201,7 @@ class ed extends(r = l.PureComponent) {
     } = this.props;
     m.Z.wait(() => v.Z.open(null == e ? void 0 : e.id));
     let t = (0, N.v_)(e);
-    H.default.track(J.rMx.OPEN_POPOUT, ei(er({}, t), {
+    F.default.track(J.rMx.OPEN_POPOUT, ei(er({}, t), {
       type: this._getAnalyticsEntryPoint().entryPointType,
       source: this._getAnalyticsEntryPoint().entryPointSource,
       is_friend: !this.isNotFriends()
@@ -244,7 +244,7 @@ class ed extends(r = l.PureComponent) {
   getMaxParticipants() {
     let {
       channel: e
-    } = this.props, t = F.default.getCurrentUser();
+    } = this.props, t = H.default.getCurrentUser();
     return null != t && t.isStaff() ? J.p3w : null != e && e.userLimit > 0 ? e.userLimit : J.pAY
   }
   getRemaining() {
@@ -312,7 +312,7 @@ class ed extends(r = l.PureComponent) {
     if (!n || this.isNotFriends()) return null;
     let s = [];
     return o.forEach(e => {
-      let t = F.default.getUser(e);
+      let t = H.default.getUser(e);
       null != t && s.push(Y.ZP.getName(t))
     }), (0, i.jsxs)(P.Z, {
       className: a()(ee.searchBar),
@@ -365,7 +365,7 @@ class ed extends(r = l.PureComponent) {
     if (this.isNotFriends()) {
       let t = null != e ? e.getRecipientId() : null;
       if (null == t) throw Error("no recipient in DM");
-      let n = F.default.getUser(t),
+      let n = H.default.getUser(t),
         r = null != n ? n.username : "",
         l = null != n && U.Z.getRelationshipType(n.id) === J.OGo.PENDING_OUTGOING;
       return (0, i.jsxs)(es, {
@@ -597,7 +597,7 @@ class ed extends(r = l.PureComponent) {
         channel: t
       } = this.props, n = (0, N.v_)(t);
       v.Z.search(e, null == t ? void 0 : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
-        H.default.track(J.rMx.SEARCH_USER_LIST_STARTED, ei(er({}, n), {
+        F.default.track(J.rMx.SEARCH_USER_LIST_STARTED, ei(er({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
           entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
           search_query_length: e.length
@@ -627,7 +627,7 @@ class ed extends(r = l.PureComponent) {
         } = this.props,
         r = (0, N.v_)(n),
         i = !0;
-      1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), H.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
+      1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), F.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
         is_new_dm: i,
         entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
         entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -647,7 +647,7 @@ class ed extends(r = l.PureComponent) {
           }
           g.Z.ring(n, t)
         }
-      }), H.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
+      }), F.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
         is_new_dm: !0,
         entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
         entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -686,7 +686,7 @@ class ed extends(r = l.PureComponent) {
         this.setState({
           copied: !1
         })
-      }, 1e3), H.default.track(J.rMx.COPY_INSTANT_INVITE, {
+      }, 1e3), F.default.track(J.rMx.COPY_INSTANT_INVITE, {
         server: null,
         channel: null != t ? t.id : null,
         channel_type: null != t ? t.type : null,
@@ -729,7 +729,7 @@ function eh(e) {
   l.useEffect(() => (p && V.S.subscribe(J.CkL.TOGGLE_DM_CREATE, b), () => {
     V.S.unsubscribe(J.CkL.TOGGLE_DM_CREATE, b)
   }), [p, b]);
-  let _ = (0, h.e7)([F.default], () => F.default.getUser(null == r ? void 0 : r.getRecipientId()));
+  let _ = (0, h.e7)([H.default], () => H.default.getUser(null == r ? void 0 : r.getRecipientId()));
   return (l.useEffect(() => {
     (0, A._)()
   }, []), null !== (t = null == _ ? void 0 : _.bot) && void 0 !== t && t || null !== (n = null == _ ? void 0 : _.isProvisional) && void 0 !== n && n) ? null : (0, i.jsx)(f.yRy, {

@@ -192,16 +192,14 @@ function T(e) {
   } = e, n = [null != t.maxParticipants ? N.NW.format(N.t.z8EAJS, {
     count: t.maxParticipants
   }) : N.NW.string(N.t.RjceQU), ...t.tags];
-  return (0, r.jsx)(r.Fragment, {
-    children: n.length > 0 && (0, r.jsx)(l.Text, {
-      variant: "text-xs/medium",
-      className: C.description,
-      color: "none",
-      lineClamp: 1,
-      children: n.map((e, t) => (0, r.jsx)("span", {
-        className: C.tag,
-        children: e
-      }, t))
-    })
+  return n.length > 0 && (0, r.jsx)(l.Text, {
+    variant: "text-xs/medium",
+    className: C.description,
+    color: "none",
+    lineClamp: 1,
+    children: n.map((e, t) => (0, r.jsx)("span", {
+      className: C.tag,
+      children: e
+    }, t))
   })
 }

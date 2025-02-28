@@ -20,7 +20,7 @@ let d = {},
   c = {},
   h = {};
 
-function p() {
+function f() {
   let e = s.Z.getChannelId();
   if (null == e) return;
   let t = o.Z.getChannel(e);
@@ -36,10 +36,10 @@ function p() {
   }
   if ((null == c[n] || !c[n].has(e)) && h[e] > 50) return d[n].add(e), !0
 }
-class f extends(i = r.ZP.PersistedStore) {
+class p extends(i = r.ZP.PersistedStore) {
   initialize(e) {
     var t, n;
-    if (this.syncWith([s.Z], p), null == e) return;
+    if (this.syncWith([s.Z], f), null == e) return;
     let {
       suggestedChannels: i,
       dismissedSuggestions: r,
@@ -62,8 +62,8 @@ class f extends(i = r.ZP.PersistedStore) {
     }
   }
 }
-u(f, "displayName", "FavoritesSuggestionStore"), u(f, "persistKey", "FavoritesSuggestionStore");
-let g = new f(l.Z, {
+u(p, "displayName", "FavoritesSuggestionStore"), u(p, "persistKey", "FavoritesSuggestionStore");
+let g = new p(l.Z, {
   DISMISS_FAVORITE_SUGGESTION: function(e) {
     let {
       guildId: t,

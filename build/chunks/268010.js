@@ -16,8 +16,8 @@ var r = n(200651),
   h = n(685270),
   f = n(31074),
   g = n(206295),
-  x = n(335326),
-  v = n(297781),
+  v = n(335326),
+  x = n(297781),
   y = n(591853),
   j = n(410441),
   P = n(981631),
@@ -80,9 +80,9 @@ let b = (e, t, n) => {
           Icon: i.omf,
           "aria-label": O.NW.string(O.t.jdJYX1)
         }),
-        badges: (0, r.jsx)(v.Gk, {
-          location: v.Gt.POPOUT,
-          children: x.t.map((e, t) => (0, r.jsx)(e, {
+        badges: (0, r.jsx)(x.Gk, {
+          location: x.Gt.POPOUT,
+          children: v.t.map((e, t) => (0, r.jsx)(e, {
             entry: n
           }, t))
         }),

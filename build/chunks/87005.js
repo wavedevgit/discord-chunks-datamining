@@ -31,7 +31,7 @@ function v(e) {
     includeAuthorizedAppsAndFetch: v
   } = e, {
     sectionDescriptors: N,
-    loading: x
+    loading: y
   } = s.wi({
     context: t,
     filters: h,
@@ -39,7 +39,7 @@ function v(e) {
     allowFetch: a
   });
   return {
-    loading: x,
+    loading: y,
     frecentApps: function(e) {
       let {
         sectionDescriptors: t,

@@ -68,18 +68,38 @@ function S(e) {
       } = t;
       return s()(e, (0, d._I)(E.NW.string(A[n].name).toLowerCase()))
     })]
-  }, [M, P, A]), F = e => Math.ceil(e / n), U = i.useCallback(e => {
+  }, [M, P, A]), F = i.useCallback(e => Math.ceil(e / n), [n]), U = i.useCallback(e => {
     let {
       sectionIndex: t,
       sectionRowIndex: i
     } = e;
     return (0, r.jsx)(T, {
-      children: (0, c.range)(0, n).map(e => W[t][i * n + e]).filter(_.lm).map(e => (0, r.jsx)(O.J, {
-        voiceFilter: e,
-        hasNitro: w
-      }, null == e ? void 0 : e.id))
+      children: (0, c.range)(0, n).map(e => ({
+        column: e,
+        voice: W[t][i * n + e]
+      })).filter(e => {
+        let {
+          voice: t
+        } = e;
+        return (0, _.lm)(t)
+      }).map(e => {
+        let {
+          column: a,
+          voice: o
+        } = e;
+        return (0, r.jsx)(O.J, {
+          voiceFilter: o,
+          hasNitro: w,
+          analyticsContext: {
+            gridRows: F(W[t].length),
+            gridColumns: n,
+            interactedRow: i,
+            interactedColumn: a
+          }
+        }, null == o ? void 0 : o.id)
+      })
     }, i)
-  }, [n, W, w]);
+  }, [n, W, w, F]);
   return P && (null == W ? void 0 : null === (t = W[0]) || void 0 === t ? void 0 : t.length) === 0 ? (0, r.jsxs)("div", {
     className: o()(j.iconMessage),
     children: [(0, r.jsx)(m._, {

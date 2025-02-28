@@ -74,7 +74,7 @@ function x(e) {
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [x, I, O, t, j, E, n, y, Z, M, S]), U = r.useRef(0), B = r.useRef(I), F = r.useRef(), H = r.useRef({
+  }, [x, I, O, t, j, E, n, y, Z, M, S]), U = r.useRef(0), B = r.useRef(I), H = r.useRef(), F = r.useRef({
     impressionCappedEntryIds: P
   }), G = r.useCallback(e => {
     var t;
@@ -85,23 +85,23 @@ function x(e) {
   return r.useEffect(() => {
     B.current = I
   }, [I]), r.useEffect(() => {
-    H.current = {
+    F.current = {
       impressionCappedEntryIds: P
     }
-  }, [P]), r.useEffect(() => (U.current = 0, F.current = Date.now(), () => {
+  }, [P]), r.useEffect(() => (U.current = 0, H.current = Date.now(), () => {
     var e, t;
-    if (null == E || null == F.current || Date.now() - F.current < 3e3) return;
+    if (null == E || null == H.current || Date.now() - H.current < 3e3) return;
     let n = null !== (t = null === (e = B.current) || void 0 === e ? void 0 : e.map(e => e.id)) && void 0 !== t ? t : [],
       r = n.slice(0, U.current);
     !Z && T && M && ((0, f.e)(C.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
       request_id: E,
-      first_shown_at: F.current,
+      first_shown_at: H.current,
       item_ids: r,
       surface_type: b.Kd.GUILD_MEMBER_LIST,
       channel_id: x,
       guild_id: j,
       all_item_ids: n,
-      impression_capped_item_ids: [...H.current.impressionCappedEntryIds]
+      impression_capped_item_ids: [...F.current.impressionCappedEntryIds]
     }), (0, d.wm)("useInjectContentInventoryFeed") && l.Z.dispatch({
       type: "CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS",
       itemIds: r

@@ -203,28 +203,26 @@ let V = Object.freeze({
     } = e, {
       type: s
     } = i.useContext(F), [c] = (0, l.Wu)([N.Z], () => [N.Z.isPreview]), u = (null === (n = (0, E.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === P.Si.TIER_2;
-    return (0, r.jsx)(r.Fragment, {
-      children: "EDITOR" === s && c && u ? (0, r.jsx)(b.ZP, {
-        type: P.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
-        subscriptionTier: P.Si.TIER_2,
-        children: x.NW.format(x.t.G8yQXl, {
-          onPremiumClick: () => m.z
-        })
-      }) : (0, r.jsxs)("div", {
-        className: M.header,
-        children: [(0, r.jsxs)("div", {
-          className: M.headings,
-          children: [(0, r.jsx)(H, {
-            type: s,
-            isPreview: c,
-            isCoachmark: a
-          }), (0, r.jsx)(W, {
-            type: s,
-            isPreview: c,
-            isCoachmark: a
-          })]
-        }), null == o ? void 0 : o()]
+    return "EDITOR" === s && c && u ? (0, r.jsx)(b.ZP, {
+      type: P.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+      subscriptionTier: P.Si.TIER_2,
+      children: x.NW.format(x.t.G8yQXl, {
+        onPremiumClick: () => m.z
       })
+    }) : (0, r.jsxs)("div", {
+      className: M.header,
+      children: [(0, r.jsxs)("div", {
+        className: M.headings,
+        children: [(0, r.jsx)(H, {
+          type: s,
+          isPreview: c,
+          isCoachmark: a
+        }), (0, r.jsx)(W, {
+          type: s,
+          isPreview: c,
+          isCoachmark: a
+        })]
+      }), null == o ? void 0 : o()]
     })
   },
   K = e => {

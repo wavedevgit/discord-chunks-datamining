@@ -225,7 +225,10 @@ class E extends s.Z {
   prepareMLSCommitTransition(e, t, n) {}
   processMLSWelcome(e, t, n) {}
   getMLSPairwiseFingerprint(e, t, n) {}
-  setVoiceFiltersEnabled(e) {}
+  getVoiceFilterId() {
+    return null
+  }
+  setVoiceFilterId(e) {}
   constructor(e, t, n, r) {
     var i;
     super(e, t), i = this, h(this, "input", void 0), h(this, "silenced", !1), h(this, "interacted", !1), h(this, "outputVolume", _.Qx), h(this, "sinkId", _.w5), h(this, "lastPingTime", 0), h(this, "outputs", {}), h(this, "webrtcStats", new d.r), h(this, "silenceThreshold", -100), h(this, "canHavePriority", new Set), h(this, "prioritySpeakers", new Set), h(this, "audioContext", void 0), h(this, "setEchoCancellation", e => this.input.setEchoCancellation(e)), h(this, "setNoiseSuppression", e => this.input.setNoiseSuppression(e)), h(this, "setNoiseCancellation", e => this.input.setNoiseCancellation(e)), h(this, "setAutomaticGainControl", e => this.input.setAutomaticGainControl(e)), h(this, "setAudioSource", e => this.input.setAudioSource(e)), h(this, "setVideoSource", e => this.input.setVideoSource(e)), h(this, "setDesktopInput", e => this.input.setDesktop(e)), h(this, "setForceAudioInput", function(e) {

@@ -48,9 +48,7 @@ function g(e) {
   }, {
     autoTrackExposure: !1
   }), [c, d] = (0, o.US)(i && t === (l ? "inbox-button" : "bookmarks-button") ? [m] : [], void 0);
-  return c !== m ? (0, r.jsx)(r.Fragment, {
-    children: n
-  }) : (0, r.jsx)(a.yRy, {
+  return c !== m ? n : (0, r.jsx)(a.yRy, {
     renderPopout: () => h(d),
     position: "bottom",
     align: "right",

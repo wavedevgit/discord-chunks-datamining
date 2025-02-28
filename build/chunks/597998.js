@@ -441,7 +441,5 @@ function D(e) {
       children: e
     }, "deaf"))
   }
-  return 0 === d.length ? null : (0, r.jsx)(r.Fragment, {
-    children: d
-  })
+  return 0 === d.length ? null : d
 }

@@ -17,8 +17,8 @@ var i = n(200651),
   f = n(753972),
   v = n(387658),
   N = n(536650),
-  x = n(675993),
-  y = n(689079),
+  y = n(675993),
+  x = n(689079),
   b = n(388032),
   E = n(165003),
   C = n(413097);
@@ -29,7 +29,7 @@ function g(e) {
     context: n,
     application: s,
     sectionName: c
-  } = e, g = "channel" === n.type ? n.channel : void 0, P = (0, r.e7)([p.Z], () => p.Z.entrypoint()), A = null !== (t = (0, d.q)(s.id === y.bi.BUILT_IN ? null : s.id)) && void 0 !== t ? t : s, I = (0, h.ye)(A) ? j : x.Z, O = l.useRef(null), [_, S] = l.useState(!1), {
+  } = e, g = "channel" === n.type ? n.channel : void 0, P = (0, r.e7)([p.Z], () => p.Z.entrypoint()), A = null !== (t = (0, d.q)(s.id === x.bi.BUILT_IN ? null : s.id)) && void 0 !== t ? t : s, I = (0, h.ye)(A) ? j : y.Z, O = l.useRef(null), [_, S] = l.useState(!1), {
     iconURL: T,
     name: L
   } = l.useMemo(() => (0, h.sl)(A, {
@@ -84,7 +84,7 @@ function j(e) {
     size: 2048,
     names: ["embedded_cover"]
   }), a = (0, h.yJ)(n), u = null != a && null != a.activity_preview_video_asset_id ? (0, s.Z)(n.id, a.activity_preview_video_asset_id) : null;
-  return (0, i.jsx)(x.Z, {
+  return (0, i.jsx)(y.Z, {
     context: t,
     application: n,
     imageCoverUrl: o.url,

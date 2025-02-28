@@ -16,19 +16,17 @@ function u(e) {
   let t, {
     applicationId: n,
     storeListingBenefits: i,
-    skuBenefits: a,
-    className: s
+    skuBenefits: o,
+    className: a
   } = e;
   return null != i ? t = i.map(e => (0, r.jsx)(f, {
     applicationId: n,
     benefit: e,
-    className: o()(c.__invalid_benefit, s)
-  }, e.id)) : null != a && (t = a.map((e, t) => (0, r.jsx)(d, {
+    className: a
+  }, e.id)) : null != o && (t = o.map((e, t) => (0, r.jsx)(d, {
     benefit: e,
-    className: o()(c.__invalid_benefit, s)
-  }, t))), (0, r.jsx)(r.Fragment, {
-    children: t
-  })
+    className: a
+  }, t))), t
 }
 
 function d(e) {

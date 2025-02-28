@@ -45,15 +45,13 @@ let j = i.memo(function(e) {
         width: n,
         config: l ? a.config.stiff : a.config.slow
       }, "animate-always");
-    return (0, r.jsx)(r.Fragment, {
-      children: null != o && (0, r.jsx)(a.animated.div, {
-        className: x.messageComboScore,
-        style: f,
-        children: (0, r.jsx)(c.Text, {
-          className: x.comboScore,
-          variant: "text-sm/bold",
-          children: (0, C.Eo)(o.combo)
-        })
+    return null != o && (0, r.jsx)(a.animated.div, {
+      className: x.messageComboScore,
+      style: f,
+      children: (0, r.jsx)(c.Text, {
+        className: x.comboScore,
+        variant: "text-sm/bold",
+        children: (0, C.Eo)(o.combo)
       })
     })
   }),

@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(944486),
   U = n(594174),
   B = n(881824),
-  F = n(471253),
-  H = n(922482),
+  H = n(471253),
+  F = n(922482),
   G = n(200498),
   V = n(146085),
   z = n(88751),
@@ -256,7 +256,7 @@ function eu(e) {
     color: s.zxk.Colors.GREEN,
     className: o()(el.buttonSpacing, el.buttonWithTextButton),
     onClick: () => {
-      (0, H.TM)(t)
+      (0, F.TM)(t)
     },
     children: (0, r.jsxs)("div", {
       className: el.buttonWithTextInnerContainer,
@@ -338,7 +338,7 @@ let eh = i.memo(function(e) {
   } = (0, j.Z)(), v = (0, E.Z)(t), {
     limit: y,
     reachedLimit: A
-  } = (0, O.Z)(t), w = (0, a.e7)([U.default], () => U.default.getCurrentUser()), k = (0, a.e7)([L.Z], () => (0, b.Z)(L.Z)), D = (0, a.e7)([W.Z], () => W.Z.getVoiceChannelId() === t.id, [t.id]), B = (0, a.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), H = (0, Y.PK)(t.id), V = y > 0, z = A && !H || null != B && B.user.id !== (null == w ? void 0 : w.id), q = (0, N.Z)({
+  } = (0, O.Z)(t), w = (0, a.e7)([U.default], () => U.default.getCurrentUser()), k = (0, a.e7)([L.Z], () => (0, b.Z)(L.Z)), D = (0, a.e7)([W.Z], () => W.Z.getVoiceChannelId() === t.id, [t.id]), B = (0, a.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), F = (0, Y.PK)(t.id), V = y > 0, z = A && !F || null != B && B.user.id !== (null == w ? void 0 : w.id), q = (0, N.Z)({
     location: "SpeakerControlTray"
   }), {
     coloredIconsEnabled: K,
@@ -467,9 +467,9 @@ let eh = i.memo(function(e) {
       }), D && (0, r.jsx)(ea, {
         channel: t
       }), D && c && n && (0, r.jsx)(ec, {
-        onClick: () => (0, F.RK)(t, !1)
+        onClick: () => (0, H.RK)(t, !1)
       }), D && !n && (0, r.jsx)(ed, {
-        onClick: () => (0, F.yi)(t)
+        onClick: () => (0, H.yi)(t)
       }), X ? (0, r.jsx)(S.Z, {
         channel: t
       }) : null]
@@ -520,9 +520,9 @@ let eh = i.memo(function(e) {
         }
       })]
     }) : null, D && c && n && (0, r.jsx)(ec, {
-      onClick: () => (0, F.RK)(t, !1)
+      onClick: () => (0, H.RK)(t, !1)
     }), D && !n && (0, r.jsx)(ed, {
-      onClick: () => (0, F.yi)(t)
+      onClick: () => (0, H.yi)(t)
     }), (0, r.jsx)(eu, {
       channel: t
     })]

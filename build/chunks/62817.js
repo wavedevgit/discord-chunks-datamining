@@ -41,14 +41,14 @@ function g(e, t) {
   return null != n && (u[e] = n.filter(e => e.id !== t), delete d[t], delete m[t], n.length !== u[e].length)
 }
 
-function x(e, t) {
+function v(e, t) {
   let n = u[e];
   if (null == n) return !1;
   u[e] = n.map(e => e.id === t.id ? s({}, e, t) : e);
   let r = m[t.id];
   null != r && null != p[r.id] && (p[r.id] = s({}, p[r.id], t))
 }
-class v extends(r = l.ZP.Store) {
+class x extends(r = l.ZP.Store) {
   initialize() {
     this.waitFor(i.Z)
   }
@@ -66,8 +66,8 @@ class v extends(r = l.ZP.Store) {
     if (null != e) return h[e]
   }
 }
-o(v, "displayName", "UploadStore");
-let y = new v(a.Z, {
+o(x, "displayName", "UploadStore");
+let y = new x(a.Z, {
   CONNECTION_OPEN: function() {
     h = {}
   },
@@ -106,14 +106,14 @@ let y = new v(a.Z, {
       channelId: t,
       file: n
     } = e;
-    x(t, n)
+    v(t, n)
   },
   UPLOAD_PROGRESS: function(e) {
     let {
       channelId: t,
       file: n
     } = e;
-    x(t, n)
+    v(t, n)
   },
   UPLOAD_COMPLETE: function(e) {
     let {
@@ -152,7 +152,7 @@ let y = new v(a.Z, {
       channelId: t,
       file: n
     } = e, r = m[n.id];
-    null != r && r.nonce, x(t, n)
+    null != r && r.nonce, v(t, n)
   },
   UPLOAD_RESTORE_FAILED_UPLOAD: function(e) {
     let {

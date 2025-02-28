@@ -19,11 +19,11 @@ function c(e) {
     emojiId: r,
     emojiName: c,
     className: h
-  } = e, p = (0, a.Z)(n, r);
-  return null != p || null != c ? (0, i.jsx)(o.Z, {
-    emojiId: null == p ? void 0 : p.id,
-    emojiName: null != c ? c : null == p ? void 0 : p.name,
-    animated: null !== (t = null == p ? void 0 : p.animated) && void 0 !== t && t,
+  } = e, f = (0, a.Z)(n, r);
+  return null != f || null != c ? (0, i.jsx)(o.Z, {
+    emojiId: null == f ? void 0 : f.id,
+    emojiName: null != c ? c : null == f ? void 0 : f.name,
+    animated: null !== (t = null == f ? void 0 : f.animated) && void 0 !== t && t,
     className: l()(d.emojiIcon, h)
   }) : (0, i.jsx)(u.Z, {
     className: l()(d.emojiIcon, h),

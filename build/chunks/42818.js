@@ -372,13 +372,11 @@ function Z(e) {
         intervalCount: null == c ? void 0 : c.interval_count
       }),
       t = (null == c ? void 0 : c.interval) === I.rV.DAY && (null == c ? void 0 : c.interval_count) < 28 ? 2 : 7;
-    return (0, r.jsx)(r.Fragment, {
-      children: null != l ? l : N.NW.format(N.t["2FvcjI"], {
-        duration: e,
-        days: t,
-        contactLink: T.EYA.CONTACT,
-        helpdeskArticle: g.Z.getArticleURL(T.BhN.PREMIUM_TRIAL)
-      })
+    return null != l ? l : N.NW.format(N.t["2FvcjI"], {
+      duration: e,
+      days: t,
+      contactLink: T.EYA.CONTACT,
+      helpdeskArticle: g.Z.getArticleURL(T.BhN.PREMIUM_TRIAL)
     })
   }
   let f = i.taxInclusive ? N.t["hay+go"] : N.t.da0lkp;

@@ -86,7 +86,7 @@ function v(e) {
         });
       case u.JS.START:
       default:
-        return (0, i.jsx)(i.Fragment, {})
+        return null
     }
   }, [O]);
   return (0, i.jsx)(c.zxk, {
@@ -113,7 +113,7 @@ function v(e) {
         } = e;
         return (0, i.jsx)(c.f6W, {
           theme: f.BRd.DARK,
-          children: e => (0, i.jsx)(s.animated.div, {
+          children: e => (0, i.jsxs)(s.animated.div, {
             className: a()(e, g.activityItem, v, {
               [g.activityItem_13_11]: 0 === C,
               [g.activityItem_16_9]: 1 === C
@@ -121,14 +121,12 @@ function v(e) {
             style: {
               transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
             },
-            children: (0, i.jsxs)(i.Fragment, {
-              children: [(0, i.jsx)(d.Z, {
-                imageBackground: j,
-                applicationName: r.application.name,
-                imageClassName: g.activitySuggestionImage,
-                imageNotFoundClassName: g.brokenImageIconWrapper
-              }), Z, T]
-            })
+            children: [(0, i.jsx)(d.Z, {
+              imageBackground: j,
+              applicationName: r.application.name,
+              imageClassName: g.activitySuggestionImage,
+              imageNotFoundClassName: g.brokenImageIconWrapper
+            }), Z, T]
           })
         })
       }

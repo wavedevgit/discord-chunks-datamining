@@ -9,7 +9,7 @@ var r = n(200651),
   l = n(772848),
   o = n(481060),
   c = n(53281),
-  d = n(334460),
+  d = n(281598),
   u = n(451593),
   m = n(694539),
   g = n(146181);
@@ -67,7 +67,7 @@ function f() {
     if ((null === (t = e.currentTarget) || void 0 === t ? void 0 : t.files) == null) {
       (0, d.Eo)("Error uploading file. Try again!");
       return
-    }(0, d.ZK)(e.currentTarget.files, f, d.Eo)
+    }(0, d.Kr)(e.currentTarget.files, f, d.Eo)
   }, [f]);
   return (0, r.jsxs)("div", {
     className: g.root,

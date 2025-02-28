@@ -17,8 +17,8 @@ var i = n(200651),
   f = n(481060),
   v = n(911969),
   N = n(115130),
-  x = n(566620),
-  y = n(127255),
+  y = n(566620),
+  x = n(127255),
   b = n(880308),
   E = n(427996),
   C = n(367907),
@@ -73,16 +73,16 @@ function en(e) {
     setSearchQuery: o,
     setScroller: a,
     isScrollCloseToBottom: s
-  } = e, c = (0, h.e7)([N.Z], () => N.Z.getIsEnabled(), []), u = n === M._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, U.Yn)(n), p = !(0, U.Yn)(n), m = n === M._b.TEXT, [v, y] = eu(!0), [b, E] = eu(u), [C, g] = eu(d), [j, P] = eu(p), A = v && b && C && j, I = (d || u) && !A, O = p && c;
+  } = e, c = (0, h.e7)([N.Z], () => N.Z.getIsEnabled(), []), u = n === M._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, U.Yn)(n), p = !(0, U.Yn)(n), m = n === M._b.TEXT, [v, x] = eu(!0), [b, E] = eu(u), [C, g] = eu(d), [j, P] = eu(p), A = v && b && C && j, I = (d || u) && !A, O = p && c;
   l.useEffect(() => {
     var e;
     let n = "channel" === t.type ? null === (e = t.channel) || void 0 === e ? void 0 : e.guild_id : void 0;
-    (0, x.w1)({
+    (0, y.w1)({
       guildId: n,
       force: !0
     })
   }, [t]), l.useEffect(() => {
-    n === M._b.VOICE && x.ux()
+    n === M._b.VOICE && y.ux()
   }, [n]);
   let _ = r.length > 0;
   return (0, i.jsxs)("div", {
@@ -104,7 +104,7 @@ function en(e) {
         children: [(0, i.jsx)(er, {
           context: t,
           entrypoint: n,
-          onEmptyState: y
+          onEmptyState: x
         }), u && "channel" === t.type && (0, i.jsx)(ea, {
           context: t,
           onEmptyState: E
@@ -287,7 +287,7 @@ function eo(e) {
     onEmptyState: r
   } = e;
   (0, b.g)();
-  let o = (0, y.Z)({
+  let o = (0, x.Z)({
       guildId: "channel" === n.type ? null === (t = n.channel) || void 0 === t ? void 0 : t.getGuildId() : void 0
     }),
     a = W.U4.LARGE_BANNER,
@@ -449,7 +449,7 @@ function es(e) {
       recommendationsSections: i
     } = e;
     (0, b.g)();
-    let r = (0, y.Z)({
+    let r = (0, x.Z)({
       guildId: "channel" === n.type ? null === (t = n.channel) || void 0 === t ? void 0 : t.getGuildId() : void 0
     });
     return l.useMemo(() => {
@@ -467,28 +467,26 @@ function es(e) {
   }), f = o === I.M.FETCHING, N = !f && 0 === u.length;
   return (l.useEffect(() => {
     r(N)
-  }, [N, r]), N) ? null : (0, i.jsx)(i.Fragment, {
-    children: f ? ee.map((e, t) => {
-      let {
-        cards: n,
-        look: l
-      } = e;
-      return (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(F.Z.Loading, {}), (0, i.jsx)("div", {
-          className: l === W.U4.ROW ? J.sectionRowsContentContainer : J.sectionTwoColumnContentContainer,
-          children: n.map(e => (0, i.jsx)(H.Z, {
-            look: l
-          }, e))
-        })]
-      }, t)
-    }) : u.map((e, n) => (0, i.jsx)(ec, {
-      recommendationsSection: e,
-      remainingActivities: m,
-      isInstallOnDemand: d,
-      position: n,
-      context: t
-    }, e.id))
-  })
+  }, [N, r]), N) ? null : f ? ee.map((e, t) => {
+    let {
+      cards: n,
+      look: l
+    } = e;
+    return (0, i.jsxs)("div", {
+      children: [(0, i.jsx)(F.Z.Loading, {}), (0, i.jsx)("div", {
+        className: l === W.U4.ROW ? J.sectionRowsContentContainer : J.sectionTwoColumnContentContainer,
+        children: n.map(e => (0, i.jsx)(H.Z, {
+          look: l
+        }, e))
+      })]
+    }, t)
+  }) : u.map((e, n) => (0, i.jsx)(ec, {
+    recommendationsSection: e,
+    remainingActivities: m,
+    isInstallOnDemand: d,
+    position: n,
+    context: t
+  }, e.id))
 }
 
 function ec(e) {
@@ -545,7 +543,7 @@ function ec(e) {
   }
   let {
     items: N,
-    handleViewMore: x
+    handleViewMore: y
   } = ed({
     title: h,
     look: t,
@@ -554,7 +552,7 @@ function ec(e) {
     sectionName: v,
     sectionOverallPosition: s
   }), {
-    trackSectionImpressionRef: y
+    trackSectionImpressionRef: x
   } = (0, V.Z)({
     sectionName: v,
     numItems: f.length,
@@ -562,11 +560,11 @@ function ec(e) {
   }), b = r.type !== m.o.SMALL_BANNER_CARDS;
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)("div", {
-      ref: e => y.current = e,
+      ref: e => x.current = e,
       children: (0, i.jsx)(F.Z, {
         title: r.title,
         buttonType: F.Z.buttonTypes.VIEW_MORE,
-        onClickViewButton: x
+        onClickViewButton: y
       })
     }), (0, i.jsx)("div", {
       className: t === W.U4.ROW ? J.sectionRowsContentContainer : J.sectionTwoColumnContentContainer,

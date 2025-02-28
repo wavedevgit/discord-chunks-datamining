@@ -60,7 +60,7 @@ function B(e) {
   return e
 }
 
-function F(e, t) {
+function H(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -73,7 +73,7 @@ function F(e, t) {
   }), e
 }
 
-function H(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -202,7 +202,7 @@ let G = i.memo(function(e) {
       {
         ref: et
       } = ee,
-      en = H(ee, ["ref"]),
+      en = F(ee, ["ref"]),
       er = (0, p.Z)(e => {
         var t;
         V.ref.current = e, et.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null
@@ -211,7 +211,7 @@ let G = i.memo(function(e) {
       navigator: z,
       children: [null != J && J, (0, r.jsxs)("div", {
         className: o()(U.messagesWrapper, n, "group-spacing-".concat(l)),
-        children: [null == J && K, (0, r.jsxs)(c.eTT, F(B({
+        children: [null == J && K, (0, r.jsxs)(c.eTT, H(B({
           ref: er,
           customTheme: !0,
           className: o()(d, U.scroller),
@@ -223,7 +223,7 @@ let G = i.memo(function(e) {
         }, $), {
           tabIndex: -1,
           role: "group",
-          children: [Q, (0, r.jsxs)("ol", F(B({
+          children: [Q, (0, r.jsxs)("ol", H(B({
             className: U.scrollerInner,
             "aria-label": W.NW.formatToPlainString(W.t.XarRiI, {
               channelName: f.name
@@ -253,7 +253,7 @@ let G = i.memo(function(e) {
       hideSummaries: l = !1,
       forceCompact: o = !1,
       forceCozy: a = !1
-    } = e, c = H(e, ["channel", "showingQuarantineBanner", "hideSummaries", "forceCompact", "forceCozy"]);
+    } = e, c = F(e, ["channel", "showingQuarantineBanner", "hideSummaries", "forceCompact", "forceCozy"]);
     let {
       canManageMessages: u,
       permissionVersion: p,
@@ -363,7 +363,7 @@ let G = i.memo(function(e) {
     return (0, r.jsx)(g.aQ.Provider, {
       value: (0, T.Z)(k, u),
       children: (0, r.jsx)(R.v, {
-        children: (0, r.jsx)(G, F(B({}, c), {
+        children: (0, r.jsx)(G, H(B({}, c), {
           messageGroupSpacing: Z,
           showNewMessagesBar: !0,
           channel: t,

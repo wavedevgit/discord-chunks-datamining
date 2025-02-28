@@ -680,7 +680,7 @@ function U() {
               return t => {
                 var n;
                 return (0, r.jsx)(e, D(q({}, t), {
-                  startTime: 0,
+                  openStartClockTime: performance.now(),
                   videoSessionId: "fake-quest-session-id",
                   questId: null !== (n = K.id) && void 0 !== n ? n : "fake-quest-id",
                   overrideQuest: K,

@@ -113,7 +113,7 @@ function N(e) {
         })) : r
       }))
     }, [R.result]),
-    F = i.useMemo(() => {
+    H = i.useMemo(() => {
       var e, t, n, r;
       return null == R.result ? {
         documentsIndexed: 0,
@@ -137,7 +137,7 @@ function N(e) {
         showNoResultsAlt: !1
       }
     }, [R.result, U]);
-  return null == M || null == k || null == F ? null : (0, r.jsxs)("div", {
+  return null == M || null == k || null == H ? null : (0, r.jsxs)("div", {
     className: o()(j.container, I),
     children: [(0, r.jsx)(y.Z, {
       guildId: N,
@@ -149,7 +149,7 @@ function N(e) {
       onScroll: D,
       children: (0, r.jsx)(m.Z, {
         searchResults: B,
-        search: F,
+        search: H,
         searchId: l,
         renderEmbeds: !0,
         blockCount: 0,

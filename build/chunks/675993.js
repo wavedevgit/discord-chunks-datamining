@@ -17,8 +17,8 @@ var i = n(200651),
   f = n(835473),
   v = n(70097),
   N = n(240991),
-  x = n(973616),
-  y = n(626135),
+  y = n(973616),
+  x = n(626135),
   b = n(783097),
   E = n(695676),
   C = n(520315),
@@ -42,15 +42,15 @@ function _(e) {
     return null !== (e = (0, b.jD)(n)) && void 0 !== e ? e : ""
   }, [n]), h = (0, a.e7)([c.Z], () => c.Z.inDevModeForApplication(n.id)), f = null != r, {
     isSlideReady: N
-  } = (0, E.hH)(), [x, y] = l.useState(!1);
+  } = (0, E.hH)(), [y, x] = l.useState(!1);
   return l.useEffect(() => {
-    N && y(!0)
+    N && x(!0)
   }, [N]), (0, i.jsxs)("div", {
     className: I.container,
     children: [(0, i.jsxs)("div", {
       children: [f ? (0, i.jsxs)("div", {
         className: I.videoContainer,
-        children: [x ? (0, i.jsx)(v.Z, {
+        children: [y ? (0, i.jsx)(v.Z, {
           className: o()(I.videoCover, I.video),
           loop: !0,
           muted: !0,
@@ -170,7 +170,7 @@ function R(e) {
     application: n
   } = e;
   if (!(0, b.ye)(n)) return null;
-  let l = null !== (t = (0, b.BQ)(n) ? n instanceof x.ZP ? n.maxParticipants : n.max_participants : 0) && void 0 !== t ? t : 0;
+  let l = null !== (t = (0, b.BQ)(n) ? n instanceof y.ZP ? n.maxParticipants : n.max_participants : 0) && void 0 !== t ? t : 0;
   return (0, i.jsxs)("div", {
     className: I.tagContainer,
     children: [(0, i.jsx)(s.BFJ, {
@@ -197,12 +197,12 @@ function M(e) {
     applicationId: r.id,
     botUserId: v
   }), {
-    analyticsLocations: x
+    analyticsLocations: y
   } = (0, p.ZP)();
   if (l.useEffect(() => {
       if (!(0, b.BQ)(r) || !(0, b.ye)(r)) return;
       let e = setTimeout(() => {
-        (null == u || null == v) && y.default.track(P.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
+        (null == u || null == v) && x.default.track(P.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
           application_id: r.id,
           is_primary_entry_point_command_non_null: null != u,
           is_bot_user_id_non_null: null != v,
@@ -229,7 +229,7 @@ function M(e) {
         botUserId: v,
         applicationId: r.id,
         buttonSize: E,
-        analyticsLocations: x
+        analyticsLocations: y
       })
     }) : null]
   }) : c && !a && (0, b.ye)(r) ? (0, i.jsx)(s.Wn, {

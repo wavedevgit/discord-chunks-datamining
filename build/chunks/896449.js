@@ -1,6 +1,6 @@
 /** Chunk was on 14093 **/
 n.d(t, {
-  Z: () => x
+  Z: () => v
 });
 var r = n(200651),
   l = n(192379),
@@ -47,19 +47,19 @@ function g(e, t) {
   }), e
 }
 
-function x(e) {
+function v(e) {
   var t;
   let {
     user: n,
-    guildId: x,
-    channel: v,
+    guildId: v,
+    channel: x,
     entry: y,
     onSelect: j,
     disableGameProfileLinks: P
   } = e, O = l.useContext(m.Ir), b = (0, u.Z)({
     userId: n.id,
-    guildId: x,
-    channelId: null == v ? void 0 : v.id,
+    guildId: v,
+    channelId: null == x ? void 0 : x.id,
     onAction: O
   }), C = (0, o.Z)({
     id: n.id,

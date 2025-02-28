@@ -56,8 +56,8 @@ function E(e) {
   let W = (0, a.e7)([C.Z], () => P.isPrivate() || (0, m.b)(C.Z, R, P), [R, P]),
     U = (null == R ? void 0 : R.afkChannelId) === P.id,
     B = P.userLimit <= 0 || P.userLimit > 1,
-    F = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).length <= 0),
-    H = (0, f.N)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
+    H = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).length <= 0),
+    F = (0, f.N)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     G = (0, d.KF)(P.id) !== d.jy.CAN_LAUNCH,
     V = null != M && M === P.id,
     z = L.map(e => t => (0, r.jsx)(y.ZP, {
@@ -83,7 +83,7 @@ function E(e) {
     }
   }, {
     trackOnInitialLoad: !0
-  }, []), null != R && !U && (!(k >= 2) || !F || G || H || V ? B && 1 === k && W && (F && !G ? z.push(e => (0, r.jsx)(v.h, {
+  }, []), null != R && !U && (!(k >= 2) || !H || G || F || V ? B && 1 === k && W && (H && !G ? z.push(e => (0, r.jsx)(v.h, {
     channel: P,
     guild: R,
     width: e,

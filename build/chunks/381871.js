@@ -48,7 +48,7 @@ function W(e) {
     channel: n,
     closePopout: m,
     onFocus: C
-  } = e, T = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), W = (0, o.e7)([b.default], () => b.default.getCurrentUser()), U = v.ZP.canUseFancyVoiceChannelReactions(W), B = (0, o.e7)([x.Z], () => x.Z.getState().animationType), F = i.useRef(!1), H = (0, f.wC)(n.guild_id), G = (0, l.uniqBy)([...H, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
+  } = e, T = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), W = (0, o.e7)([b.default], () => b.default.getCurrentUser()), U = v.ZP.canUseFancyVoiceChannelReactions(W), B = (0, o.e7)([x.Z], () => x.Z.getState().animationType), H = i.useRef(!1), F = (0, f.wC)(n.guild_id), G = (0, l.uniqBy)([...F, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: n,
     intention: k
@@ -78,7 +78,7 @@ function W(e) {
       })
     },
     K = e => {
-      F.current = e, e && p.ZP.trackWithMetadata(S.rMx.VOICE_CHANNEL_EFFECT_EMOJI_PICKER_EXPANDED, {
+      H.current = e, e && p.ZP.trackWithMetadata(S.rMx.VOICE_CHANNEL_EFFECT_EMOJI_PICKER_EXPANDED, {
         channel_id: X,
         guild_id: Q
       })
@@ -147,9 +147,9 @@ function W(e) {
               },
               onShowUpsell: () => (0, E.h)({
                 analytics: {
-                  type: F.current ? A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED : A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED,
+                  type: H.current ? A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED : A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED,
                   object: S.qAy.VOICE_CHANNEL_EFFECTS_TOGGLE,
-                  section: F.current ? S.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER : S.jXE.VOICE_CHANNEL_EFFECTS_BAR
+                  section: H.current ? S.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER : S.jXE.VOICE_CHANNEL_EFFECTS_BAR
                 }
               })
             })

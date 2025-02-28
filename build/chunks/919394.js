@@ -1,6 +1,6 @@
 /** Chunk was on 14093 **/
 n.d(t, {
-  SO: () => v
+  SO: () => x
 }), n(653041), n(266796), n(512722);
 var r = n(913527),
   l = n.n(r),
@@ -96,7 +96,7 @@ let f = (e, t) => (function(e) {
     }
     return n
   },
-  x = (e, t) => {
+  v = (e, t) => {
     let {
       timestamp: n,
       colors: r,
@@ -157,7 +157,7 @@ let f = (e, t) => (function(e) {
       maxWidth: p.kC
     })
   },
-  v = async e => {
+  x = async e => {
     let {
       applicationImageSrc: t,
       entry: n,
@@ -169,7 +169,7 @@ let f = (e, t) => (function(e) {
     } = e, u = n.extra.game_name, d = f(r, t);
     return await (0, s.f)({
       assetsToLoad: d,
-      drawImage: e => x(e, {
+      drawImage: e => v(e, {
         timestamp: a,
         colors: i,
         description: l,

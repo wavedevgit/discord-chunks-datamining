@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(318766),
   f = n(907040),
   g = n(633302),
-  x = n(806966),
-  v = n(176354),
+  v = n(806966),
+  x = n(176354),
   y = n(823379),
   j = n(354459),
   P = n(185923),
@@ -111,7 +111,7 @@ function E(e) {
     emojiSearchProps: E,
     recentlyUsedEmojis: Z,
     analyticsOverride: S
-  } = e, T = (0, m.Dt)(), [A, _] = l.useState(!1), k = (0, p.wC)(a.guild_id), R = (0, o.uniqBy)([...k, ...N], "name").filter(e => !v.ZP.isEmojiFilteredOrLocked({
+  } = e, T = (0, m.Dt)(), [A, _] = l.useState(!1), k = (0, p.wC)(a.guild_id), R = (0, o.uniqBy)([...k, ...N], "name").filter(e => !x.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: a,
     intention: C
@@ -125,7 +125,7 @@ function E(e) {
         u();
         return
       }
-      null != e && h(e), D(!t), t && x.kJ.setSearchPlaceholder(null)
+      null != e && h(e), D(!t), t && v.kJ.setSearchPlaceholder(null)
     };
   return (0, r.jsxs)(c.VqE, {
     "aria-labelledby": T,
@@ -195,7 +195,7 @@ function E(e) {
         children: (0, r.jsx)("div", {
           className: i()(b.slots, b.slotsWide),
           children: R.map(e => {
-            let t = v.ZP.isEmojiDisabled({
+            let t = x.ZP.isEmojiDisabled({
               emoji: e,
               channel: a,
               intention: P.Hz.CHAT

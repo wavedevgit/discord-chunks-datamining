@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(131704),
   f = n(142550),
   g = n(981631),
-  x = n(388032),
-  v = n(308892);
+  v = n(388032),
+  x = n(308892);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -67,14 +67,14 @@ function O(e) {
     onFocus: p,
     channel: h,
     className: g
-  } = e, [x, O] = l.useState(""), [b, C] = l.useState((0, u.JM)("")), N = () => {
+  } = e, [v, O] = l.useState(""), [b, C] = l.useState((0, u.JM)("")), N = () => {
     O(""), C((0, u.JM)(""))
   }, I = c.Ie.ATOMIC_REACTOR_REPLY_INPUT, w = l.useRef(null);
   return (0, r.jsx)(d.Z, {
     ref: w,
     placeholder: t,
     editorClassName: g,
-    className: i()(v.replyInput, g),
+    className: i()(x.replyInput, g),
     showRemainingCharsAfterCount: -1,
     allowNewLines: !1,
     maxCharacterCount: f.z,
@@ -87,7 +87,7 @@ function O(e) {
         button: !0
       }
     }) : I,
-    textValue: x,
+    textValue: v,
     richValue: b,
     onSubmit: e => {
       let {
@@ -158,9 +158,9 @@ let b = (e, t) => {
         })
       }),
       children: () => (0, r.jsx)(o.ua7, {
-        text: x.NW.string(x.t.lfIHs7),
+        text: v.NW.string(v.t.lfIHs7),
         children: e => (0, r.jsx)("div", j(y({}, e), {
-          className: v.reaction,
+          className: x.reaction,
           children: (0, r.jsx)(m.Z, {
             active: !1,
             tabIndex: 0,

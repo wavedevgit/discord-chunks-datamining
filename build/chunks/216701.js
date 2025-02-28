@@ -25,9 +25,7 @@ function l(e) {
     customEmoji: c,
     unicodeEmoji: u
   } = (0, o.Z)(t, n);
-  return null == c && null == u ? (0, r.jsx)(r.Fragment, {
-    children: a
-  }) : (0, r.jsx)(i.Z, {
+  return null == c && null == u ? a : (0, r.jsx)(i.Z, {
     emojiName: null != c ? null == c ? void 0 : c.name : n,
     animated: null != c && c.animated,
     emojiId: null == c ? void 0 : c.id,

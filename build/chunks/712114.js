@@ -27,7 +27,7 @@ function h(e) {
     properties: {
       hotspot_location: s.v6.CLIPS_CHANNEL_ATTACH_REMINDER
     }
-  }), null == n) ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsxs)("div", {
+  }), null == n) ? null : (0, r.jsxs)("div", {
     className: p.recentClipsPopout,
     children: [(0, r.jsx)("div", {
       className: p.thumbnailStackContainer,

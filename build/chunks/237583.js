@@ -1,6 +1,6 @@
 /** Chunk was on 30806 **/
 n.d(t, {
-  Z: () => f
+  Z: () => p
 }), n(653041), n(47120);
 var i, r = n(200651),
   l = n(192379),
@@ -19,7 +19,7 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class p extends(i = l.PureComponent) {
+class f extends(i = l.PureComponent) {
   renderUsers() {
     let {
       users: e,
@@ -64,21 +64,21 @@ class p extends(i = l.PureComponent) {
         onClick: l,
         size: o,
         guildId: h
-      } = this.props, p = e instanceof u.Z ? e : null != e ? e.user : null;
-      return null == p ? (0, r.jsx)("div", {
+      } = this.props, f = e instanceof u.Z ? e : null != e ? e.user : null;
+      return null == f ? (0, r.jsx)("div", {
         className: s()(d.emptyUser, t)
       }, n) : (0, r.jsx)(a.qEK, {
         tabIndex: 0,
-        src: p.getAvatarURL(h, (0, a.pxk)(o)),
+        src: f.getAvatarURL(h, (0, a.pxk)(o)),
         size: o,
-        "aria-label": p.username,
+        "aria-label": f.username,
         className: s()(t, c.cursorPointer, d.avatarSize),
-        onClick: e => null != l ? l(e, p, this._ref) : null
-      }, p.id)
+        onClick: e => null != l ? l(e, f, this._ref) : null
+      }, f.id)
     })
   }
 }
-h(p, "defaultProps", {
+h(f, "defaultProps", {
   max: 10,
   renderMoreUsers: function(e, t, n) {
     return (0, r.jsx)("div", {
@@ -88,4 +88,4 @@ h(p, "defaultProps", {
   },
   size: a.EFr.SIZE_24
 });
-let f = p
+let p = f

@@ -132,23 +132,21 @@ function k(e) {
       return (null === (t = e.application) || void 0 === t ? void 0 : t.id) === T
     })),
     k = (0, c.e7)([f.Z], () => void 0 !== W && f.Z.canShowToggleTooltip(W.id));
-  return (0, r.jsx)(i.Fragment, {
-    children: S.length > 0 ? S.map(e => (0, r.jsx)(A, {
-      guild: h,
-      commandId: t,
-      onChange: t => w(e.id, e.type, t),
-      onRemove: () => P(e.id, e.type),
-      overwrite: e,
-      integration: W,
-      canShowMigrationTooltip: k,
-      hasAccessToMutatePermissions: g
-    }, e.id)) : (0, r.jsx)("div", {
-      className: Z.noItemsSelected,
-      children: (0, r.jsx)(d.Text, {
-        color: "text-muted",
-        variant: "text-sm/normal",
-        children: a
-      })
+  return S.length > 0 ? S.map(e => (0, r.jsx)(A, {
+    guild: h,
+    commandId: t,
+    onChange: t => w(e.id, e.type, t),
+    onRemove: () => P(e.id, e.type),
+    overwrite: e,
+    integration: W,
+    canShowMigrationTooltip: k,
+    hasAccessToMutatePermissions: g
+  }, e.id)) : (0, r.jsx)("div", {
+    className: Z.noItemsSelected,
+    children: (0, r.jsx)(d.Text, {
+      color: "text-muted",
+      variant: "text-sm/normal",
+      children: a
     })
   })
 }

@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(951211),
   U = n(981631),
   B = n(356659),
-  F = n(921944),
-  H = n(388032),
+  H = n(921944),
+  F = n(388032),
   G = n(29779);
 
 function V(e) {
@@ -115,7 +115,7 @@ let q = i.memo(function(e) {
     em = (0, g.Go)() && (er || ep),
     eg = K.isPrivate(),
     eb = (0, a.e7)([Z.Z], () => eg || Z.Z.can(U.Plq.ATTACH_FILES, K) && Z.Z.can(U.Plq.SEND_MESSAGES, K)),
-    e_ = ["en-US", "en-GB"].includes((0, a.e7)([N.default], () => N.default.locale)) ? H.NW.string(H.t.d56gCQ) : H.NW.string(H.t.PdRCRk),
+    e_ = ["en-US", "en-GB"].includes((0, a.e7)([N.default], () => N.default.locale)) ? F.NW.string(F.t.d56gCQ) : F.NW.string(F.t.PdRCRk),
     eC = (0, d.Z)(ei);
   (null == eC ? void 0 : eC.newClipIds.length) !== (null == ei ? void 0 : ei.newClipIds.length) && (null !== (t = null == ei ? void 0 : ei.newClipIds.length) && void 0 !== t ? t : 0) > 0 && null == eh && ec && eo && !eu && !ea && !ed && ef("recentClips");
   let ev = (e, t, n) => {
@@ -213,12 +213,12 @@ let q = i.memo(function(e) {
       positionKey: null != eh ? eh : "null",
       onRequestOpen: () => {
         ey && (0, v.EW)(s.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
-          dismissAction: F.L.TAKE_ACTION
+          dismissAction: H.L.TAKE_ACTION
         }), ef("attachMenu")
       },
       onRequestClose: () => {
         (0, c.$sL)() || (ey && (0, v.EW)(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-          dismissAction: F.L.TAKE_ACTION
+          dismissAction: H.L.TAKE_ACTION
         }), ef(null))
       },
       renderPopout: e => {

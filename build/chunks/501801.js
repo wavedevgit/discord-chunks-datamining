@@ -504,7 +504,8 @@ function M(e) {
       className: i()(D.changeDetails, o),
       children: E
     })
-  }, [t, n, a, o]), d = l.useMemo(() => {
+  }, [t, n, a, o]);
+  return l.useMemo(() => {
     switch (t.targetType) {
       case p.KFR.GUILD:
         return E(S.pY());
@@ -552,8 +553,5 @@ function M(e) {
       case p.KFR.GUILD_PROFILE:
         return E(S.zT())
     }
-  }, [t.targetType, t.changes, E]);
-  return (0, r.jsx)(r.Fragment, {
-    children: d
-  })
+  }, [t.targetType, t.changes, E])
 }

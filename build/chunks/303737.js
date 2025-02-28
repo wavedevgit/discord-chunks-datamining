@@ -18,15 +18,15 @@ var i = n(991637),
   d = n(289393),
   c = n(944537),
   h = n(144507),
-  p = n(853439),
-  f = n(981631),
+  f = n(853439),
+  p = n(981631),
   g = n(176505);
 r().shim();
 let v = {};
 
 function C(e) {
   let t = (0, l.e7)([a.Z], () => a.Z.getChannel(e)),
-    n = (0, l.e7)([p.Z], () => p.Z.getChannel(e));
+    n = (0, l.e7)([f.Z], () => f.Z.getChannel(e));
   return null != t ? t : n
 }
 
@@ -46,9 +46,9 @@ function E(e, t, n) {
   if (!u.has(n)) return null;
   let h = t.indexOf(n);
   if (-1 === h) return null;
-  let p = [];
-  for (let e = h + 1; e < t.length && (u.has(t[e]) || p.push(t[e]), 3 !== p.length); e++);
-  return p
+  let f = [];
+  for (let e = h + 1; e < t.length && (u.has(t[e]) || f.push(t[e]), 3 !== f.length); e++);
+  return f
 }
 
 function m(e) {
@@ -59,12 +59,12 @@ function m(e) {
     var t;
     let r = null === (t = n[e]) || void 0 === t ? void 0 : t.channelBenefits;
     null == r || r.forEach(e => {
-      null != p.Z.getChannel(e.ref_id) && i.add(e.ref_id)
+      null != f.Z.getChannel(e.ref_id) && i.add(e.ref_id)
     })
   });
   let r = [];
   for (let t of i) {
-    let n = p.Z.getChannel(t);
+    let n = f.Z.getChannel(t);
     if (null != n) {
       let t = n.set("guild_id", e);
       r.push(t)
@@ -97,7 +97,7 @@ async function _(e, t) {
   let n = [],
     i = [];
   t.forEach(t => {
-    let r = p.Z.getChannel(t.ref_id);
+    let r = f.Z.getChannel(t.ref_id);
     null != r && (n.push(s.Z.createRoleSubscriptionTemplateChannel(e, r.name, r.type, r.topic)), i.push(r))
   }), 0 !== n.length && (await Promise.allSettled(n)).forEach((n, r) => {
     let l = i[r].id;
@@ -126,7 +126,7 @@ function b(e, t) {
     templateCategory: null,
     hasChangeFromTemplate: null
   };
-  let o = p.Z.getTemplateWithCategory(t, l);
+  let o = f.Z.getTemplateWithCategory(t, l);
   if (null == o) return {
     templateCategory: null,
     hasChangeFromTemplate: null
@@ -159,5 +159,5 @@ function b(e, t) {
 }
 
 function I(e) {
-  return (0, h.H2)(e) && e.hasFeature(f.oNc.ROLE_SUBSCRIPTIONS_ENABLED) && (0, u.$F)() && (0, u.hQ)(e.id)
+  return (0, h.H2)(e) && e.hasFeature(p.oNc.ROLE_SUBSCRIPTIONS_ENABLED) && (0, u.$F)() && (0, u.hQ)(e.id)
 }

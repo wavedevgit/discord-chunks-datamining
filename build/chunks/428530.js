@@ -31,9 +31,7 @@ let m = u(d),
 function x(e) {
   return s.Jn9.test(e) ? (0, r.jsx)(o.ZP, {
     type: o.ZP.Types.TEXT,
-    children: () => (0, r.jsx)(r.Fragment, {
-      children: e
-    })
+    children: () => e
   }) : e
 }
 

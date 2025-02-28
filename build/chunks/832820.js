@@ -25,15 +25,13 @@ function b(e) {
   let {
     emojiConfetti: t
   } = e, n = i.useMemo(() => null == t ? null : null == t.id ? t.optionallyDiverseSequence : t.name, [t]);
-  return (0, r.jsx)(r.Fragment, {
-    children: null == t ? (0, r.jsx)(l.EO4, {
-      size: "sm",
-      color: "currentColor"
-    }) : (0, r.jsx)(c.Z, {
-      animated: !1,
-      emojiId: t.id,
-      emojiName: n
-    })
+  return null == t ? (0, r.jsx)(l.EO4, {
+    size: "sm",
+    color: "currentColor"
+  }) : (0, r.jsx)(c.Z, {
+    animated: !1,
+    emojiId: t.id,
+    emojiName: n
   })
 }
 let y = function(e) {

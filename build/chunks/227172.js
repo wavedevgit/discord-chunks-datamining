@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(374129),
   f = n(639351),
   g = n(823379),
-  x = n(379357),
-  v = n(192918),
+  v = n(379357),
+  x = n(192918),
   y = n(22211),
   j = n(561308),
   P = n(919394),
@@ -72,7 +72,7 @@ let _ = {
       trackRankingItemInteraction: D
     } = e, {
       largeImage: M
-    } = (0, x.rv)({
+    } = (0, v.rv)({
       entry: n
     }), {
       user: L,
@@ -90,7 +90,7 @@ let _ = {
       participant1: q,
       participant2: J,
       numOtherParticipants: X
-    } = (0, v.Z)(n, 3), K = n.extra.platform, $ = null != K ? _[K] : null, Q = K === a.z.XBOX ? S.ABu.XBOX : K === a.z.PLAYSTATION ? S.ABu.PLAYSTATION : void 0, ee = (0, b.Z)(Q), et = l.useCallback(e => {
+    } = (0, x.Z)(n, 3), K = n.extra.platform, $ = null != K ? _[K] : null, Q = K === a.z.XBOX ? S.ABu.XBOX : K === a.z.PLAYSTATION ? S.ABu.PLAYSTATION : void 0, ee = (0, b.Z)(Q), et = l.useCallback(e => {
       if ((null == M ? void 0 : M.src) == null || null == t || null == L) return;
       let r = X > 0 ? (0, O.VY)({
         entry: n,

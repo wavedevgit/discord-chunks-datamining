@@ -152,13 +152,13 @@ function w(e) {
     answersInteraction: n,
     answerTapAccessibilityLabel: i,
     canTapAnswers: a,
-    hasSelectedAnyAnswer: s,
-    className: c,
-    answerClassName: d,
-    renderAnswerContent: u
+    hasSelectedAnyAnswer: o,
+    className: s,
+    answerClassName: c,
+    renderAnswerContent: d
   } = e, {
-    ContainerComponent: p,
-    answerElementType: m
+    ContainerComponent: u,
+    answerElementType: p
   } = (0, l.EQ)({
     canTapAnswers: a,
     answersInteraction: n
@@ -182,16 +182,16 @@ function w(e) {
     ContainerComponent: I,
     answerElementType: 0
   }));
-  return (0, r.jsx)(p, {
-    className: c,
+  return (0, r.jsx)(u, {
+    className: s,
     children: t.map((e, t) => (0, r.jsx)(Z, {
-      className: o()(j.__invalid_answer, d),
+      className: c,
       answer: e,
       isFirstAnswer: 0 === t,
-      elementType: m,
+      elementType: p,
       answerTapAccessibilityLabel: i,
-      hasSelectedAnyAnswer: s,
-      children: u(e)
+      hasSelectedAnyAnswer: o,
+      children: d(e)
     }, e.answerId))
   })
 }
@@ -278,9 +278,7 @@ function L(e, t) {
   return null != e ? (0, r.jsx)("div", {
     className: e,
     children: t
-  }) : (0, r.jsx)(r.Fragment, {
-    children: t
-  })
+  }) : t
 }
 
 function D(e) {
@@ -306,9 +304,7 @@ function D(e) {
   return null != t.emoji ? L(n, (0, r.jsx)(R, {
     className: a,
     emoji: t.emoji
-  })) : void 0 !== o ? (0, r.jsx)(r.Fragment, {
-    children: o
-  }) : null
+  })) : void 0 !== o ? o : null
 }
 
 function M(e) {

@@ -206,14 +206,13 @@ function Z() {
 
 function H(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    n = (0, i.Z)(),
-    o = performance.now();
+    n = (0, i.Z)();
   (0, s.ZDy)(async () => {
     let {
       default: i
     } = await Z();
-    return a => (0, r.jsx)(i, w(P({}, a), {
-      startTime: o,
+    return o => (0, r.jsx)(i, w(P({}, o), {
+      openStartClockTime: performance.now(),
       questId: e.id,
       autoplay: t,
       videoSessionId: n

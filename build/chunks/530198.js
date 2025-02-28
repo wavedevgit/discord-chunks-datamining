@@ -507,8 +507,7 @@ function T(e) {
     locked: i,
     integration: s
   } = e;
-  if (null == s || null == s.role_connections_metadata) return null;
-  let a = s.role_connections_metadata.map(e => {
+  return null == s || null == s.role_connections_metadata ? null : s.role_connections_metadata.map(e => {
     var a, l;
     let o;
     switch (e.type) {
@@ -563,9 +562,6 @@ function T(e) {
           applicationId: null === (l = s.application) || void 0 === l ? void 0 : l.id
         }, e.key)
     }
-  });
-  return (0, r.jsx)(r.Fragment, {
-    children: a
   })
 }
 

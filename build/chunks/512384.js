@@ -23,7 +23,5 @@ function s(e) {
     intensity: u,
     className: c,
     children: s
-  }) : (0, r.jsx)(r.Fragment, {
-    children: s
-  })
+  }) : s
 }

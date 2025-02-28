@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(347475),
   U = n(662594),
   B = n(430824),
-  F = n(111583),
-  H = n(594174),
+  H = n(111583),
+  F = n(594174),
   G = n(585483),
   V = n(823379),
   z = n(51144),
@@ -229,7 +229,7 @@ let el = i.memo(e => {
       channel: i,
       user: l,
       index: o
-    } = e, a = (0, c.JA)("".concat(o)), s = (0, h.e7)([F.Z], () => F.Z.isTyping(i.id, l.id)), u = (0, h.e7)([H.default], () => H.default.getCurrentUser()), d = (0, h.e7)([B.Z], () => {
+    } = e, a = (0, c.JA)("".concat(o)), s = (0, h.e7)([H.Z], () => H.Z.isTyping(i.id, l.id)), u = (0, h.e7)([F.default], () => F.default.getCurrentUser()), d = (0, h.e7)([B.Z], () => {
       var e;
       return null != t ? null === (e = B.Z.getRole(i.guild_id, t)) || void 0 === e ? void 0 : e.name : void 0
     }, [i, t]), p = (0, k.K)({

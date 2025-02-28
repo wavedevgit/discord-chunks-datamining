@@ -220,5 +220,14 @@ function k(e) {
   }
   return G && (null == k ? void 0 : k.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, y.navigateToQuestHome)({
     fromContent: i.j.QUEST_BADGE
+  }), !0) : G && (null == k ? void 0 : k.startsWith("/discovery/servers")) ? e => (null == e || e.preventDefault(), n.e("11866").then(n.bind(n, 749681)).then(e => {
+    let {
+      transitionToGlobalDiscovery: t
+    } = e, {
+      GlobalDiscoveryTab: r
+    } = n(49898);
+    t({
+      tab: r.SERVERS
+    })
   }), !0) : o || null == (0, S.v)(e) ? void 0 : t => (null == t || t.preventDefault(), O.Z.show(e), !0)
 }

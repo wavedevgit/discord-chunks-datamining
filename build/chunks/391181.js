@@ -14,8 +14,8 @@ var r = n(120356),
   d = n(942833),
   c = n(48691),
   h = n(231338),
-  p = n(388032),
-  f = n(52002);
+  f = n(388032),
+  p = n(52002);
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -67,43 +67,43 @@ function C(e) {
     onSelect: E
   } = e;
   return (0, i.jsx)("div", {
-    className: f.menuContainer,
+    className: p.menuContainer,
     children: (0, i.jsxs)(o.v2r, {
       navId: "guild-product-context",
       onClose: C,
-      "aria-label": p.NW.string(p.t.Z146dH),
+      "aria-label": f.NW.string(f.t.Z146dH),
       onSelect: E,
       children: [(0, i.jsxs)(o.kSQ, {
         children: [t && (0, i.jsx)(o.sNh, {
           id: "guild-product-edit",
-          label: p.NW.string(p.t.EEfce3),
+          label: f.NW.string(f.t.EEfce3),
           action: u
         }), r && (0, i.jsx)(o.sNh, {
           id: "guild-product-copy-link",
-          label: p.NW.string(p.t.XR26ur),
+          label: f.NW.string(f.t.XR26ur),
           icon: o.xPt,
           action: h
         }), l && (0, i.jsx)(o.sNh, {
           id: "guild-product-test-download",
-          label: p.NW.string(p.t.aXoI6e),
+          label: f.NW.string(f.t.aXoI6e),
           icon: o._8t,
           action: g
         })]
       }), (0, i.jsxs)(o.kSQ, {
         children: [n && (0, i.jsx)(o.sNh, {
           id: "guild-product-unpublish",
-          label: p.NW.string(p.t.QrkMlJ),
+          label: f.NW.string(f.t.QrkMlJ),
           action: d
         }), s && (0, i.jsx)(o.sNh, {
           id: "guild-product-delete",
-          label: p.NW.string(p.t.zWjqvL),
+          label: f.NW.string(f.t.zWjqvL),
           color: "danger",
           action: c
         })]
       }), (0, i.jsx)(o.kSQ, {
         children: a && (0, i.jsx)(o.sNh, {
           id: "guild-product-report",
-          label: p.NW.string(p.t["6yUzvL"]),
+          label: f.NW.string(f.t["6yUzvL"]),
           color: "danger",
           action: v
         })
@@ -159,16 +159,16 @@ function E(e) {
           isShown: r
         } = n;
         return (0, i.jsx)(o.P3F, v(g({}, e), {
-          "aria-label": p.NW.formatToPlainString(p.t.RtqjeH, {
+          "aria-label": f.NW.formatToPlainString(f.t.RtqjeH, {
             productName: t.name
           }),
           "aria-haspopup": "listbox",
           "aria-expanded": r,
-          className: f.productActionMenuButton,
+          className: p.productActionMenuButton,
           children: (0, i.jsx)(o.Huf, {
             size: "md",
             color: "currentColor",
-            className: f.productActionMenuIcon,
+            className: p.productActionMenuIcon,
             "aria-hidden": !0
           })
         }))
@@ -190,8 +190,8 @@ function m(e) {
   } = e, I = (0, a.U)(t, 600), y = null !== t.price_tier ? (0, u.T4)(t.price_tier, h.pK.USD) : void 0, N = (0, d.C)(t);
   return (0, i.jsxs)(o.kL8, {
     tag: "article",
-    className: l()(f.productCardClickable, f.productCard, {
-      [f.disabled]: b
+    className: l()(p.productCardClickable, p.productCard, {
+      [p.disabled]: b
     }),
     onClick: b ? void 0 : r,
     onContextMenu: function(e) {
@@ -213,33 +213,33 @@ function m(e) {
         onReportProduct: () => {}
       }))))
     },
-    "aria-label": p.NW.formatToPlainString(p.t["X/yAKi"], {
+    "aria-label": f.NW.formatToPlainString(f.t["X/yAKi"], {
       productName: t.name
     }),
     children: [(0, i.jsx)("img", {
       alt: "",
       src: I,
-      className: f.productThumbnail
+      className: p.productThumbnail
     }), (0, i.jsxs)("div", {
-      className: f.productInfo,
+      className: p.productInfo,
       children: [(0, i.jsxs)("div", {
-        className: f.productInfoContent,
+        className: p.productInfoContent,
         children: [(0, i.jsx)(o.X6q, {
           variant: "text-md/semibold",
           color: "header-primary",
-          className: f.productName,
+          className: p.productName,
           children: t.name
         }), (0, i.jsx)(o.LZC, {
           size: 8
         }), (0, i.jsxs)("div", {
-          className: f.productDetails,
+          className: p.productDetails,
           children: [(0, i.jsx)(o.Text, {
             variant: "text-md/normal",
             color: "header-secondary",
             children: y
           }), null != N ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
-              className: f.dotSeparator
+              className: p.dotSeparator
             }), (0, i.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "header-secondary",

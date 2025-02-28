@@ -1,6 +1,6 @@
 /** Chunk was on 95477 **/
 r.d(t, {
-  Z: () => l
+  Z: () => o
 }), r(301563);
 var n = r(432957);
 let i = {
@@ -10,6 +10,6 @@ let i = {
   },
   a = /(AM|PM)$/;
 
-function l(e) {
+function o(e) {
   return null != e.match(a) ? i.LATIN24 : e.length <= 5 ? i.LATIN12 : i.ASIAN
 }

@@ -11,9 +11,9 @@ var i, r = n(442837),
   d = n(709054),
   c = n(539573),
   h = n(825829),
-  p = n(981631);
+  f = n(981631);
 
-function f(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -58,11 +58,11 @@ function b(e) {
   let l = E[r],
     o = i.reduce((e, t) => {
       var n;
-      return t.type === p.uaV.AUTO_MODERATION_ACTION && (null === (n = t.embeds) || void 0 === n ? void 0 : n.some(e => {
+      return t.type === f.uaV.AUTO_MODERATION_ACTION && (null === (n = t.embeds) || void 0 === n ? void 0 : n.some(e => {
         let {
           type: t
         } = e;
-        return t === p.hBH.AUTO_MODERATION_NOTIFICATION
+        return t === f.hBH.AUTO_MODERATION_NOTIFICATION
       })) ? null == e || -1 === d.default.compare(e, t.id) ? t.id : void 0 : e
     }, l);
   return null != o && E[r] !== o && (E[r] = o, !0)
@@ -94,7 +94,7 @@ class I extends(i = r.ZP.PersistedStore) {
     return null !== (t = E[e]) && void 0 !== t ? t : null
   }
 }
-f(I, "displayName", "GuildAutomodMessageStore"), f(I, "persistKey", "GuildAutomodMessages");
+p(I, "displayName", "GuildAutomodMessageStore"), p(I, "persistKey", "GuildAutomodMessages");
 let y = new I(l.Z, {
   CONNECTION_OPEN: function(e) {
     return g = {}, v++, !0
@@ -106,7 +106,7 @@ let y = new I(l.Z, {
       guildId: t,
       message: n
     } = e;
-    if (null == t || n.type !== p.uaV.AUTO_MODERATION_ACTION) return !1;
+    if (null == t || n.type !== f.uaV.AUTO_MODERATION_ACTION) return !1;
     let i = (0, s.e5)(n);
     return !!(0, h.nY)(i) && !!(0, h.OP)(i) && (E[t] = i.id, !0)
   },
@@ -122,7 +122,7 @@ let y = new I(l.Z, {
     let {
       response: t
     } = e;
-    if ((null == t ? void 0 : t.body) == null || t.body.code === p.evJ.AUTOMOD_MESSAGE_BLOCKED) return !1;
+    if ((null == t ? void 0 : t.body) == null || t.body.code === f.evJ.AUTOMOD_MESSAGE_BLOCKED) return !1;
     let n = t.body.id;
     if (null == n) return !1;
     S(n)

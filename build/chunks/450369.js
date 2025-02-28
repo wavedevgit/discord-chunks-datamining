@@ -248,29 +248,26 @@ let D = 16 / 9,
               context: u
             })
         }
-      },
-      I = v.type === R.fO.USER && !(null === (t = v.voiceState) || void 0 === t ? void 0 : t.selfVideo);
-    return (0, r.jsx)(r.Fragment, {
-      children: I ? (0, r.jsx)(W, {
-        stageParticipant: i,
-        rtcParticipant: v,
-        channel: l,
-        guildId: p,
-        user: C,
-        width: c,
-        isModerator: x,
-        onContextMenu: N,
-        inPopout: u === w.IlC.POPOUT
-      }) : (0, r.jsx)(U, {
-        stageParticipant: i,
-        rtcParticipant: v,
-        channel: l,
-        guildId: p,
-        user: C,
-        width: c,
-        isModerator: x,
-        onContextMenu: N,
-        inPopout: u === w.IlC.POPOUT
-      })
+      };
+    return v.type !== R.fO.USER || (null === (t = v.voiceState) || void 0 === t ? void 0 : t.selfVideo) ? (0, r.jsx)(U, {
+      stageParticipant: i,
+      rtcParticipant: v,
+      channel: l,
+      guildId: p,
+      user: C,
+      width: c,
+      isModerator: x,
+      onContextMenu: N,
+      inPopout: u === w.IlC.POPOUT
+    }) : (0, r.jsx)(W, {
+      stageParticipant: i,
+      rtcParticipant: v,
+      channel: l,
+      guildId: p,
+      user: C,
+      width: c,
+      isModerator: x,
+      onContextMenu: N,
+      inPopout: u === w.IlC.POPOUT
     })
   })

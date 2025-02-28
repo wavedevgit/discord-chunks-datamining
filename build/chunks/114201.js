@@ -145,44 +145,42 @@ function N(t) {
         },
         "aria-label": v.NW.string(v.t.BjCuf3),
         onSelect: void 0,
-        children: (0, d.jsx)(d.Fragment, {
-          children: (0, d.jsxs)(n.kSQ, {
-            children: [E.leaderboard_id === h.z && null != Z && (0, d.jsx)(n.sNh, {
-              id: "refresh-my-data",
-              label: v.NW.string(v.t.iopWUV),
-              action: I,
-              disabled: k,
-              subtext: L
-            }), (0, d.jsx)(n.sNh, {
-              id: "leaderboard-modal",
-              label: R,
-              action: () => {
-                (0, n.ZDy)(async () => {
-                  let {
-                    default: t
-                  } = await c.e("73217").then(c.bind(c, 139964));
-                  return c => (0, d.jsx)(t, y(O({}, c), {
-                    guildId: e,
-                    leaderboard: E
-                  }))
-                }), null == a || a()
-              }
-            }), A ? (0, d.jsx)(n.sNh, {
-              id: "leaderboard-settings-modal",
-              label: v.NW.string(v.t["QV4/6u"]),
-              action: () => {
-                (0, n.ZDy)(async () => {
-                  let {
-                    default: t
-                  } = await c.e("25526").then(c.bind(c, 262918));
-                  return c => (0, d.jsx)(t, y(O({}, c), {
-                    guildId: e,
-                    leaderboardId: N
-                  }))
-                }), null == a || a()
-              }
-            }) : null]
-          })
+        children: (0, d.jsxs)(n.kSQ, {
+          children: [E.leaderboard_id === h.z && null != Z && (0, d.jsx)(n.sNh, {
+            id: "refresh-my-data",
+            label: v.NW.string(v.t.iopWUV),
+            action: I,
+            disabled: k,
+            subtext: L
+          }), (0, d.jsx)(n.sNh, {
+            id: "leaderboard-modal",
+            label: R,
+            action: () => {
+              (0, n.ZDy)(async () => {
+                let {
+                  default: t
+                } = await c.e("73217").then(c.bind(c, 139964));
+                return c => (0, d.jsx)(t, y(O({}, c), {
+                  guildId: e,
+                  leaderboard: E
+                }))
+              }), null == a || a()
+            }
+          }), A ? (0, d.jsx)(n.sNh, {
+            id: "leaderboard-settings-modal",
+            label: v.NW.string(v.t["QV4/6u"]),
+            action: () => {
+              (0, n.ZDy)(async () => {
+                let {
+                  default: t
+                } = await c.e("25526").then(c.bind(c, 262918));
+                return c => (0, d.jsx)(t, y(O({}, c), {
+                  guildId: e,
+                  leaderboardId: N
+                }))
+              }), null == a || a()
+            }
+          }) : null]
         })
       })
     },

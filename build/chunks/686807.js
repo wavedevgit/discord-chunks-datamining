@@ -1,6 +1,6 @@
 /** Chunk was on 30806 **/
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
 var i = n(200651);
 n(192379);
@@ -17,9 +17,7 @@ function h(e) {
   let {
     channelId: t
   } = e, n = (0, a.m7)(t);
-  if (null == n) return (0, i.jsx)(i.Fragment, {
-    children: "[".concat(d.NW.string(d.t.bz1PZW), "]")
-  });
+  if (null == n) return "[".concat(d.NW.string(d.t.bz1PZW), "]");
   let s = n.isMediaChannel() ? r.XBm : (0, o.Th)(n.type);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(r.nn4, {
@@ -36,7 +34,7 @@ function h(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   switch (e.ref_type) {
     case u.Qs.CHANNEL:
       return (0, i.jsx)(h, {

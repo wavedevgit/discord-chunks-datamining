@@ -22,8 +22,8 @@ function f(e) {
     application: f,
     onClick: v,
     query: N,
-    searchResultsPosition: x
-  } = e, y = l.useCallback(e => {
+    searchResultsPosition: y
+  } = e, x = l.useCallback(e => {
     if ((0, s.BQ)(f)) {
       let t = f instanceof a.ZP ? f : a.ZP.createFromServer(f);
       (0, o.vq)(e, e => (0, i.jsx)(u.Z, function(e) {
@@ -63,13 +63,13 @@ function f(e) {
     applicationId: f.id,
     commandId: null == n ? void 0 : n.id,
     query: N,
-    searchResultsPosition: x
+    searchResultsPosition: y
   });
   return (0, i.jsx)(r.P3F, {
     className: m.clickable,
     innerRef: e => j.current = e,
     onClick: v,
-    onContextMenu: y,
+    onContextMenu: x,
     children: (0, i.jsxs)(r.Rny, {
       className: m.focusBlock,
       children: [(0, i.jsx)(d.Z, {
