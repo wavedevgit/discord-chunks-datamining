@@ -235,7 +235,7 @@ let k = () => {
           className: A.button,
           subscriptionTier: I.Si.TIER_2,
           showIcon: !1,
-          isEligibleForBogoPromotion: el
+          hasActivePromotion: el
         }), Q === I.p9.TIER_0 || null != J ? null : (0, r.jsx)(S.Z, {
           className: A.button,
           subscriptionTier: I.Si.TIER_2

@@ -1,6 +1,6 @@
 /**
   Module ID: 45489
-  Original File Name: fb5987c78a7d4d3d
+  Original File Name: b169e8b6493203cb
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -467,7 +467,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -3722,29 +3722,25 @@ h1.title_feb59c,h2.title_feb59c {
     max-width: 820px;
     display: flex;
     flex: 1;
+    background-color: #6690a7;
+    background-image: url(https://cdn.discordapp.com/assets/content/d224363e31aec8065ff8fcf57be7131302fd31e2a747dc8cc5caf828010e7479.png),url(https://cdn.discordapp.com/assets/content/16ca3a5621987a82bafd7da5e813dbd4bc398a58562b8e38f7f6704a2d003670.png);
+    background-size: contain,cover;
+    background-position: 0,100%;
+    background-repeat: no-repeat;
     overflow: hidden
 }
 
-.banner_bb7e05,.bannerFullScreen_bb7e05 {
-    background: var(--custom-premium-colors-banner-black)
+.banner_bb7e05.staticBanner_bb7e05 {
+    background-image: url(https://cdn.discordapp.com/assets/content/2c6fab282f4c2c101d8c5e85b2009ffd549faf999704f085e825c24f65f5ca73.png),url(https://cdn.discordapp.com/assets/content/16ca3a5621987a82bafd7da5e813dbd4bc398a58562b8e38f7f6704a2d003670.png)
 }
 
 .bannerFullScreen_bb7e05 {
-    min-height: 162px
+    min-height: 162px;
+    background-image: url(https://cdn.discordapp.com/assets/content/154aa2840c39609593a201d5c21948f570e8442a23e73c742cee27f7da579d92.png),url(https://cdn.discordapp.com/assets/content/f8e9ccaa0711de7a3ffbc5213477b9fb5a6b0776b4a30e0944aaf1d7678c150f.png)
 }
 
-.imageContainer_bb7e05 {
-    display: flex;
-    height: auto;
-    width: auto
-}
-
-.bannerLeftImageContainer_bb7e05 {
-    min-width: 114px
-}
-
-.bannerRightImageContainer_bb7e05 {
-    min-width: 81px
+.bannerFullScreen_bb7e05.staticBanner_bb7e05 {
+    background-image: url(https://cdn.discordapp.com/assets/content/c41c93fd35b958ace4de8268e63e3501178a83d2b35d33caca092c4218875e91.png),url(https://cdn.discordapp.com/assets/content/f8e9ccaa0711de7a3ffbc5213477b9fb5a6b0776b4a30e0944aaf1d7678c150f.png)
 }
 
 .image_bb7e05 {
@@ -3757,15 +3753,19 @@ h1.title_feb59c,h2.title_feb59c {
 
 .bannerContent_bb7e05 {
     position: relative;
-    margin-left: 14px;
-    margin-right: 14px;
+    margin-left: 114px;
+    margin-right: 95px;
     display: flex;
     flex: 1;
-    padding: 20px 10px 12px;
+    padding: 20px 140px 12px 20px;
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch
+}
+
+.bannerContentSettingsPage_bb7e05 {
+    padding: 20px 12px
 }
 
 .bannerContent_bb7e05 a {
@@ -16965,4 +16965,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=fb5987c78a7d4d3d.css.map*/
+/*# sourceMappingURL=b169e8b6493203cb.css.map*/

@@ -19,18 +19,17 @@ let h = e => {
     let {
       showTrialCTA: t,
       subscriptionTier: n,
-      shouldShowUpsells: r,
-      trialDurationCopy: i,
-      isPersistentCTA: s,
-      shouldShowReferralTrialCopy: a,
-      subscriptionTrial: o
+      trialDurationCopy: r,
+      isPersistentCTA: i,
+      shouldShowReferralTrialCopy: s,
+      subscriptionTrial: a
     } = e;
-    return t && a ? g.NW.string(g.t.bXTClZ) : t && (n === m.Si.TIER_2 || s) ? (0, l.Rt)({
-      intervalType: null == o ? void 0 : o.interval,
-      intervalCount: null == o ? void 0 : o.interval_count
+    return t && s ? g.NW.string(g.t.bXTClZ) : t && (n === m.Si.TIER_2 || i) ? (0, l.Rt)({
+      intervalType: null == a ? void 0 : a.interval,
+      intervalCount: null == a ? void 0 : a.interval_count
     }) : t ? g.NW.formatToPlainString(g.t.nTmm2t, {
-      freeTrialText: i
-    }) : r && n === m.Si.TIER_2 ? g.NW.string(g.t.MtTjnZ) : void 0
+      freeTrialText: r
+    }) : void 0
   },
   f = (e, t, n, r) => t || n ? g.NW.string(g.t.fkPGam) : e === m.Si.TIER_2 ? g.NW.formatToPlainString(g.t.bkQ4bG, {
     percent: r
@@ -39,10 +38,12 @@ let h = e => {
     var {
       forceInverted: t,
       subscriptionTier: n,
-      isEligibleForBogoPromotion: b = !1,
+      hasActivePromotion: b = !1,
       isPersistentCTA: N = !1,
-      useShorterCTA: x = !1
-    } = e, _ = function(e, t) {
+      useShorterCTA: x = !1,
+      confirmationFooter: _,
+      planSelectBanner: E
+    } = e, j = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -56,33 +57,32 @@ let h = e => {
         for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(e, ["forceInverted", "subscriptionTier", "isEligibleForBogoPromotion", "isPersistentCTA", "useShorterCTA"]);
-    let E = (0, a.ZP)(),
-      j = (0, i.wj)(E) || t,
-      C = (0, d.N)(),
-      O = null == C ? void 0 : C.subscription_trial,
-      v = (0, l.a5)({
-        intervalType: null == O ? void 0 : O.interval,
-        intervalCount: null == O ? void 0 : O.interval_count
+    }(e, ["forceInverted", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "confirmationFooter", "planSelectBanner"]);
+    let C = (0, a.ZP)(),
+      O = (0, i.wj)(C) || t,
+      v = (0, d.N)(),
+      S = null == v ? void 0 : v.subscription_trial,
+      T = (0, l.a5)({
+        intervalType: null == S ? void 0 : S.interval,
+        intervalCount: null == S ? void 0 : S.interval_count
       }),
-      S = (0, c.Ng)(),
-      T = null != O && n === O.sku_id,
+      I = (0, c.Ng)(),
+      y = null != S && n === S.sku_id,
       {
-        enabled: I
+        enabled: A
       } = o._.useExperiment({
         location: "SubscribeButton"
       }, {
         autoTrackExposure: !1
       }),
-      y = I && (null == C ? void 0 : C.trial_id) === m.a7,
-      A = b ? g.NW.string(g.t.J61px8) : null != S ? f(n, x, N, S.discount.amount) : h({
-        showTrialCTA: T,
+      P = A && (null == v ? void 0 : v.trial_id) === m.a7,
+      R = b ? g.NW.string(g.t.J61px8) : null != I ? f(n, x, N, I.discount.amount) : h({
+        showTrialCTA: y,
         subscriptionTier: n,
-        shouldShowUpsells: !1,
-        trialDurationCopy: v,
+        trialDurationCopy: T,
         isPersistentCTA: N,
-        shouldShowReferralTrialCopy: y,
-        subscriptionTrial: O
+        shouldShowReferralTrialCopy: P,
+        subscriptionTrial: S
       });
     return (0, r.jsx)(u.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -102,11 +102,13 @@ let h = e => {
       }
       return e
     }({
-      color: j ? s.Ttl.BRAND_INVERTED : s.Ttl.BRAND,
-      buttonShineClassName: "buttonShineClassName" in _ ? _.buttonShineClassName : j ? p.brandShine : void 0,
-      buttonText: A,
-      buttonTextClassName: T ? p.freeTrialText : void 0,
+      color: O ? s.Ttl.BRAND_INVERTED : s.Ttl.BRAND,
+      buttonShineClassName: "buttonShineClassName" in j ? j.buttonShineClassName : O ? p.brandShine : void 0,
+      buttonText: R,
+      buttonTextClassName: y ? p.freeTrialText : void 0,
       onlyShineOnHover: !0,
-      subscriptionTier: n
-    }, _))
+      subscriptionTier: n,
+      confirmationFooter: _,
+      planSelectBanner: E
+    }, j))
   }

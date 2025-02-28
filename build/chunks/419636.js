@@ -23,7 +23,7 @@ function u() {
       target: "_blank",
       tabIndex: -1,
       rel: "author",
-      title: "Twitter",
+      title: "X",
       href: (0, s.Z)(o.RK.TWITTER),
       className: c.link,
       focusProps: d,

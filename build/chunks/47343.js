@@ -1,6 +1,6 @@
 /** Chunk was on 86872 **/
 t.d(n, {
-  R: () => h
+  R: () => v
 }), t(47120);
 var i = t(200651),
   l = t(192379),
@@ -17,11 +17,11 @@ var i = t(200651),
   N = t(981631),
   x = t(388032),
   g = t(305963);
-let h = () => {
+let v = () => {
   var e;
   let [n, t] = l.useState(!1), a = c.G6.useSetting(), {
-    nickname: h,
-    dmsAllowed: v,
+    nickname: v,
+    dmsAllowed: h,
     showActivity: E,
     mutedServer: I,
     setNickname: f,
@@ -79,12 +79,12 @@ let h = () => {
         }), (0, i.jsx)(s.oil, {
           placeholder: x.NW.string(x.t["09Q8ys"]),
           maxLength: N.l$U,
-          value: h,
+          value: v,
           onChange: f
         })]
       }), (0, i.jsx)(u.Z, {
         title: x.NW.string(x.t["/2ed39"]),
-        value: v,
+        value: h,
         onChange: j
       }), a && (0, i.jsx)(u.Z, {
         title: x.NW.string(x.t.bN4m1N),

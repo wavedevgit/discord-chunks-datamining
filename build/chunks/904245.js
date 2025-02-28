@@ -548,13 +548,14 @@ let eP = {
           p = null != y || c && i.length === o;
         if (null != y) {
           let e = Math.floor(o / 2),
-            n = [y, ...i.map(e => {
+            n = e + o % 2,
+            r = [y, ...i.map(e => {
               let {
                 id: t
               } = e;
               return t
             })].filter((e, t, n) => n.indexOf(e) === t).sort(e_.default.compare).indexOf(y);
-          if (n < e && (d = !1), i.length - n < e && (p = !1), p && i.length > 0) {
+          if (r < n - 1 && (d = !1), i.length - r < e && (p = !1), p && i.length > 0) {
             let e = eo.ZP.lastMessageId(t);
             i[0].id === e && (p = !1)
           }

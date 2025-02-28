@@ -91,8 +91,8 @@ function S(e) {
     }, [t]);
     return i.useEffect(() => (d.Z.setLoopback("voice_filter_preview", null != e && t), () => {
       d.Z.setLoopback("voice_filter_preview", !1)
-    }), [t, e]), (0, u.ZP)(() => (f.Z.getVoiceFilterPlaybackEnabled() && (0, m.GN)("voice_filter_loopback_on"), () => {
-      f.Z.getVoiceFilterPlaybackEnabled() && (0, m.GN)("voice_filter_loopback_off")
+    }), [t, e]), (0, u.ZP)(() => (f.Z.getVoiceFilterPlaybackEnabled() && null != f.Z.getActiveVoiceFilter() && (0, m.GN)("voice_filter_loopback_on"), () => {
+      f.Z.getVoiceFilterPlaybackEnabled() && null != f.Z.getActiveVoiceFilter() && (0, m.GN)("voice_filter_loopback_off")
     })), {
       isLoopbackEnabled: t,
       toggleLoopback: n

@@ -18,8 +18,8 @@ var i = t(200651),
   N = t(601964),
   x = t(598077),
   g = t(594174),
-  h = t(51144),
-  v = t(981631),
+  v = t(51144),
+  h = t(981631),
   E = t(888592),
   I = t(245335),
   f = t(388032),
@@ -85,15 +85,15 @@ let S = () => (0, i.jsxs)(l.Fragment, {
       W = null != c.channel ? (0, p.jD)(c.channel) : null,
       Z = null != c.target_application ? new _.ZP(c.target_application) : null,
       z = S || null == c.inviter ? null : new x.Z(c.inviter),
-      D = !(null != c.approximate_member_count && c.approximate_member_count > 100 || null != R && R.hasFeature(v.oNc.COMMUNITY)) && null != z,
+      D = !(null != c.approximate_member_count && c.approximate_member_count > 100 || null != R && R.hasFeature(h.oNc.COMMUNITY)) && null != z,
       M = null,
       k = !1;
     if (null != R) M = null == z ? f.NW.string(f.t["3rE1Pz"]) : f.NW.formatToPlainString(f.t["5u47vb"], {
-      username: h.ZP.getFormattedName(z)
+      username: v.ZP.getFormattedName(z)
     }), c.target_type === I.Iq.STREAM && null != c.target_user && (M = f.NW.formatToPlainString(f.t.x2L32d, {
-      username: h.ZP.getFormattedName(c.target_user)
+      username: v.ZP.getFormattedName(c.target_user)
     })), c.target_type === I.Iq.EMBEDDED_APPLICATION && null != c.target_application && (M = null != z ? f.NW.formatToPlainString(f.t.UW1Cam, {
-      username: h.ZP.getFormattedName(z)
+      username: v.ZP.getFormattedName(z)
     }) : f.NW.string(f.t.ENSuNz)), D && null == Z && (t = (0, i.jsx)(s.Vj, {
       className: j.icon,
       guild: R,
@@ -118,7 +118,7 @@ let S = () => (0, i.jsxs)(l.Fragment, {
     }));
     else if (null != W) {
       if (null == z) throw Error("no inviter in group DM invite");
-      let e = h.ZP.getFormattedName(z);
+      let e = v.ZP.getFormattedName(z);
       null != W.name && "" !== W.name ? (M = f.NW.formatToPlainString(f.t["5u47vb"], {
         username: e
       }), l = W.name, null != W.icon && (t = (0, i.jsx)(s.MC, {
@@ -126,7 +126,7 @@ let S = () => (0, i.jsxs)(l.Fragment, {
         size: r.EFr.SIZE_32
       }))) : (M = f.NW.string(f.t.OsdY8P), l = e)
     } else if (null != z) {
-      let e = h.ZP.getFormattedName(z, !0);
+      let e = v.ZP.getFormattedName(z, !0);
       l = f.NW.formatToPlainString(f.t["4aF92d"], {
         username: e
       }), k = !0, o = null != A ? null : (0, i.jsx)(s.DK, {

@@ -89,8 +89,10 @@ let d = (0, i.U)(e => ({
       guildId: t,
       touched: !0
     })),
-    initialize: t => e(e => o(u({}, e), {
+    initialize: (t, n, i) => e(e => o(u({}, e), {
       guildSize: t,
+      inviteCode: n,
+      guildId: i,
       showActivity: c(t),
       dmsAllowed: !l.iG.getSetting(),
       touched: !1
@@ -106,8 +108,8 @@ let d = (0, i.U)(e => ({
       touched: !1
     }))
   })),
-  s = e => {
-    d.getState().initialize(e)
+  s = (e, t, n) => {
+    d.getState().initialize(e, t, n)
   },
   f = () => {
     d.getState().reset()
