@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(200651),
   l = r(192379),
   i = r(642128),
-  a = r(780384),
-  o = r(481060),
+  o = r(780384),
+  a = r(481060),
   s = r(410030),
   c = r(965645),
   d = r(362061);
@@ -56,9 +56,9 @@ let u = [{
     ribbon: "#81C29F"
   }],
   f = 1 / 300,
-  h = (0, i.animated)(c.Z),
-  b = (0, i.animated)(d.Z),
-  m = (0, i.animated)(o.OgN),
+  b = (0, i.animated)(c.Z),
+  h = (0, i.animated)(d.Z),
+  m = (0, i.animated)(a.OgN),
   C = l.memo(function(e) {
     let {
       themeOverride: t,
@@ -69,19 +69,19 @@ let u = [{
         light: p
       }
     } = e, d = (0, s.ZP)(), [C, g] = function(e) {
-      let [t, r] = l.useState(!1), [n, i] = l.useState(Math.floor(7 * Math.random())), a = l.useRef(n);
+      let [t, r] = l.useState(!1), [n, i] = l.useState(Math.floor(7 * Math.random())), o = l.useRef(n);
       return l.useEffect(() => {
-        a.current = n
+        o.current = n
       }), l.useEffect(() => {
         if (e) return;
         let t = Math.random() <= f;
         if (r(t), !t) {
           let e;
-          do e = Math.floor(7 * Math.random()); while (e === a.current);
+          do e = Math.floor(7 * Math.random()); while (e === o.current);
           i(e)
         }
       }, [e]), [t, n]
-    }(r), v = (0, o.q_F)({
+    }(r), v = (0, a.q_F)({
       reverse: !r,
       reset: !0,
       from: {
@@ -94,11 +94,11 @@ let u = [{
         tension: 800,
         friction: 24
       }
-    }), x = i ? g : 0, j = (0, a.wj)(null != t ? t : d) ? c.dark[x] : c.light[x];
-    return !r && i ? (0, n.jsx)(m, {}) : i && C ? (0, n.jsx)(b, {
-      isDark: (0, a.wj)(d),
+    }), x = i ? g : 0, j = (0, o.wj)(null != t ? t : d) ? c.dark[x] : c.light[x];
+    return !r && i ? (0, n.jsx)(m, {}) : i && C ? (0, n.jsx)(h, {
+      isDark: (0, o.wj)(d),
       style: v
-    }) : (0, n.jsx)(h, {
+    }) : (0, n.jsx)(b, {
       boxColor: j.box,
       ribbonColor: j.ribbon,
       style: v

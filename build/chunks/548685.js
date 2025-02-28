@@ -6,16 +6,16 @@ r.d(t, {
 var n = r(200651),
   l = r(192379),
   i = r(120356),
-  a = r.n(i),
-  o = r(442837),
+  o = r.n(i),
+  a = r(442837),
   s = r(481060),
   c = r(594174),
   d = r(381585),
   u = r(597688),
   p = r(937510),
   f = r(38900),
-  h = r(709999),
-  b = r(957058),
+  b = r(709999),
+  h = r(957058),
   m = r(215023),
   C = r(388032),
   g = r(39532);
@@ -26,9 +26,9 @@ let v = e => {
     handleTransition: i,
     numVisibleItems: v,
     tab: x
-  } = e, j = (0, o.e7)([c.default], () => c.default.getCurrentUser()), _ = l.createRef(), y = (0, b.u)(), O = l.useMemo(() => y(r), [t, y, r]), k = (0, p.l)(O);
+  } = e, j = (0, a.e7)([c.default], () => c.default.getCurrentUser()), _ = l.createRef(), y = (0, h.u)(), O = l.useMemo(() => y(r), [t, y, r]), k = (0, p.l)(O);
   return null == j ? null : (0, n.jsxs)("div", {
-    className: a()(g.row, g.between, g.section, g.popularPicksSection),
+    className: o()(g.row, g.between, g.section, g.popularPicksSection),
     children: [(0, n.jsxs)("div", {
       className: g.popularPicksHeader,
       children: [(0, n.jsx)(s.X6q, {
@@ -56,7 +56,7 @@ let v = e => {
               pageSection: "popular picks",
               categoryPosition: 2
             },
-            children: (0, n.jsx)(h.Z, {
+            children: (0, n.jsx)(b.Z, {
               product: e,
               category: r,
               user: j,

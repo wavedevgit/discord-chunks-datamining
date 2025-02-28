@@ -280,8 +280,15 @@ let eT = {
           }) : null
         };
       case e_.pNK.COMMUNITY:
-        return {
-          section: e_.pNK.COMMUNITY, impressionName: t.guild.hasFeature(e_.oNc.COMMUNITY) ? i.ImpressionNames.GUILD_SETTINGS_COMMUNITY_OVERVIEW : i.ImpressionNames.GUILD_SETTINGS_ENABLE_COMMUNITY, label: t.guild.hasFeature(e_.oNc.COMMUNITY) ? eC.NW.string(eC.t["/dp6yc"]) : eC.NW.string(eC.t.ElKTeX), element: V.Z, ariaLabel: t.guild.hasFeature(e_.oNc.COMMUNITY) ? eC.NW.string(eC.t["/dp6yc"]) : eC.NW.string(eC.t.ElKTeX), newIndicator: !t.guild.hasFeature(e_.oNc.COMMUNITY) && null != t.memberCount && t.memberCount >= ey.U3 && C.qc.hasHotspot(C.v6.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL), notice: {
+        let ek = eC.NW.string(eC.t.ElKTeX);
+        return t.guild.hasFeature(e_.oNc.COMMUNITY) && (ek = t.isGuildSettingsFoundationEnabled ? eC.NW.string(eC.t["8nY2LC"]) : eC.NW.string(eC.t["/dp6yc"])), {
+          section: e_.pNK.COMMUNITY,
+          impressionName: t.guild.hasFeature(e_.oNc.COMMUNITY) ? i.ImpressionNames.GUILD_SETTINGS_COMMUNITY_OVERVIEW : i.ImpressionNames.GUILD_SETTINGS_ENABLE_COMMUNITY,
+          label: ek,
+          element: V.Z,
+          ariaLabel: ek,
+          newIndicator: !t.guild.hasFeature(e_.oNc.COMMUNITY) && null != t.memberCount && t.memberCount >= ey.U3 && C.qc.hasHotspot(C.v6.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL),
+          notice: {
             stores: [k.Z],
             element: V.X
           }

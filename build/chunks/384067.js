@@ -1,26 +1,26 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => h
+  Z: () => b
 }), r(47120);
 var n = r(200651),
   l = r(192379),
   i = r(120356),
-  a = r.n(i),
-  o = r(622535),
+  o = r.n(i),
+  a = r(622535),
   s = r(481060),
   c = r(597688),
   d = r(297651),
   u = r(215023),
   p = r(388032),
   f = r(39532);
-let h = e => {
+let b = e => {
   var t;
   let {
     wideBannerBlock: r,
     handleTransition: i,
-    tab: h
-  } = e, b = null === (t = c.Z.getCategoryByStoreListingId(r.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, m = l.useRef(null), [C, g] = l.useState();
+    tab: b
+  } = e, h = null === (t = c.Z.getCategoryByStoreListingId(r.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, m = l.useRef(null), [C, g] = l.useState();
   l.useEffect(() => {
     let e = m.current;
     if (null == e) return;
@@ -31,16 +31,16 @@ let h = e => {
       e.onload = null
     }
   }, []);
-  let v = null != b ? b : "",
+  let v = null != h ? h : "",
     {
       handleCardVisibilityChange: x
     } = (0, d.E)(v, "home", "marketing wide banner"),
     j = r.bannerUrl;
-  return null == j ? null : (0, n.jsx)(o.$, {
+  return null == j ? null : (0, n.jsx)(a.$, {
     onChange: x,
     threshold: 0,
     children: (0, n.jsxs)("div", {
-      className: a()(f.row, f.between, f.section, f.bannerBlockContainer),
+      className: o()(f.row, f.between, f.section, f.bannerBlockContainer),
       children: [(0, n.jsx)("div", {
         className: f.wideBannerBackgroundImg,
         children: (0, n.jsx)("img", {
@@ -66,14 +66,14 @@ let h = e => {
             style: {
               color: r.bannerTextColor
             },
-            variant: h === u.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
+            variant: b === u.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
             children: r.title
           }), (0, n.jsx)(s.Text, {
             style: {
-              color: h === u.AW.ORBS ? "rgba(255, 255, 255, 0.65)" : r.bannerTextColor
+              color: b === u.AW.ORBS ? "rgba(255, 255, 255, 0.65)" : r.bannerTextColor
             },
             lineClamp: 2,
-            variant: h === u.AW.ORBS ? "text-md/medium" : "text-sm/medium",
+            variant: b === u.AW.ORBS ? "text-md/medium" : "text-sm/medium",
             children: r.body
           })]
         })

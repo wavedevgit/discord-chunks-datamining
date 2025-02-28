@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(192379),
   l = r(512969),
   i = r(37234),
-  a = r(703656),
-  o = r(981631);
+  o = r(703656),
+  a = r(981631);
 
 function s() {
   let {
@@ -33,13 +33,13 @@ function s() {
   }({
     onClose: n.useCallback(() => {
       if (0 === s) {
-        (0, a.op)(), (0, i.jN)(o.S9g.USER_SETTINGS);
+        (0, o.op)(), (0, i.jN)(a.S9g.USER_SETTINGS);
         return
       }
-      if ((0, a.uv)()) {
-        (0, a.op)();
+      if ((0, o.uv)()) {
+        (0, o.op)();
         return
-      }(0, a.uL)(o.Z5c.APP)
+      }(0, o.uL)(a.Z5c.APP)
     }, [s]),
     source: s
   }, t)

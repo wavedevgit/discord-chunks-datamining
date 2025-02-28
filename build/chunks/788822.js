@@ -1,63 +1,68 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  q: () => h
+  q: () => m
 });
 var n = r(200651);
 r(192379);
 var l = r(120356),
   i = r.n(l),
-  a = r(622535),
-  o = r(481060),
+  o = r(622535),
+  a = r(481060),
   s = r(597688),
   c = r(884697),
   d = r(297651),
-  u = r(215023),
-  p = r(388032),
-  f = r(39532);
-let h = e => {
-  var t, r, l, h, b;
-  let m, {
-    category: C,
-    subblock: g,
-    badgeText: v,
-    handleTransition: x
+  u = r(619899),
+  p = r(281598),
+  f = r(215023),
+  b = r(388032),
+  h = r(39532);
+let m = e => {
+  var t, r, l, m, C, g, v;
+  let x, {
+    category: j,
+    subblock: _,
+    badgeText: y,
+    handleTransition: O
   } = e;
-  null != g && (m = null === (t = s.Z.getCategoryByStoreListingId(null == g ? void 0 : g.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId);
-  let j = null !== (r = null != m ? m : null == C ? void 0 : C.skuId) && void 0 !== r ? r : "",
+  null != _ && (x = null === (r = s.Z.getCategoryByStoreListingId(null == _ ? void 0 : _.categoryStoreListingId)) || void 0 === r ? void 0 : r.skuId);
+  let k = null !== (l = null != x ? x : null == j ? void 0 : j.skuId) && void 0 !== l ? l : "",
     {
-      handleCardVisibilityChange: _
-    } = (0, d.E)(j, "home", "marketing featured block"),
-    y = null !== (h = null == g ? void 0 : g.bannerUrl) && void 0 !== h ? h : (0, c.uV)(null !== (l = null == C ? void 0 : C.featuredBlock) && void 0 !== l ? l : "", {
-      size: u.J0,
+      handleCardVisibilityChange: P
+    } = (0, d.E)(k, "home", "marketing featured block"),
+    {
+      getPreviewableAssetSrc: S
+    } = (0, u.N)(),
+    w = null !== (g = null !== (m = null === (t = S(p.Fr.FEATURED_BLOCK)) || void 0 === t ? void 0 : t.src) && void 0 !== m ? m : null == _ ? void 0 : _.bannerUrl) && void 0 !== g ? g : (0, c.uV)(null !== (C = null == j ? void 0 : j.featuredBlock) && void 0 !== C ? C : "", {
+      size: f.J0,
       format: "png"
     });
-  return (0, n.jsx)(a.$, {
-    onChange: _,
+  return (0, n.jsx)(o.$, {
+    onChange: P,
     threshold: 0,
-    children: (0, n.jsxs)(o.P3F, {
-      className: i()(f.featuredBlock),
+    children: (0, n.jsxs)(a.P3F, {
+      className: i()(h.featuredBlock),
       style: {
-        backgroundImage: "url(".concat(y, ")")
+        backgroundImage: "url(".concat(w, ")")
       },
-      onClick: () => x("shop marketing tile", j),
-      children: [null != v && (0, n.jsx)(o.IGR, {
+      onClick: () => O("shop marketing tile", k),
+      children: [null != y && (0, n.jsx)(a.IGR, {
         disableColor: !0,
-        text: v,
-        className: f.featuredBlockBadge
-      }), (null == g ? void 0 : g.bodyText) != null && (0, n.jsx)(o.X6q, {
+        text: y,
+        className: h.featuredBlockBadge
+      }), (null == _ ? void 0 : _.bodyText) != null && (0, n.jsx)(a.X6q, {
         lineClamp: 4,
-        className: f.featuredBlockBodyText,
+        className: h.featuredBlockBodyText,
         style: {
-          color: null !== (b = g.bannerTextColor) && void 0 !== b ? b : "white"
+          color: null !== (v = _.bannerTextColor) && void 0 !== v ? v : "white"
         },
         variant: "heading-lg/semibold",
-        children: g.bodyText
-      }), (0, n.jsx)(o.zxk, {
-        className: f.featuredBlockButton,
-        color: o.Ttl.WHITE,
+        children: _.bodyText
+      }), (0, n.jsx)(a.zxk, {
+        className: h.featuredBlockButton,
+        color: a.Ttl.WHITE,
         onClick: () => {},
-        children: p.NW.string(p.t.jVcuVV)
+        children: b.NW.string(b.t.jVcuVV)
       })]
     })
   })

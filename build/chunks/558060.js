@@ -7,8 +7,8 @@ var n = r(200651);
 r(192379);
 var l = r(120356),
   i = r.n(l),
-  a = r(481060),
-  o = r(884697),
+  o = r(481060),
+  a = r(884697),
   s = r(409116),
   c = r(200615),
   d = r(981631),
@@ -25,7 +25,7 @@ function f() {
   }).apply(this, arguments)
 }
 
-function h(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -44,7 +44,7 @@ function h(e) {
   return e
 }
 
-function b(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ function m(e) {
     discount: l,
     className: m,
     nitroUpsell: C = !1
-  } = e, g = (0, o.ql)(t, d.tuJ.DEFAULT);
+  } = e, g = (0, a.ql)(t, d.tuJ.DEFAULT);
   if (null == g) return null;
   if (g.amount <= 0) return (0, n.jsx)("div", {
     className: i()(p.priceTagsContainer, m),
@@ -72,16 +72,16 @@ function m(e) {
       price: g
     })
   });
-  let v = (0, o.ql)(t, d.tuJ.PREMIUM_TIER_2),
-    x = !r && !(0, o.x6)(t),
-    j = (0, o.x6)(t) && r ? b(h({}, g), {
+  let v = (0, a.ql)(t, d.tuJ.PREMIUM_TIER_2),
+    x = !r && !(0, a.x6)(t),
+    j = (0, a.x6)(t) && r ? h(b({}, g), {
       amount: l.original
     }) : g;
   return (0, n.jsxs)("div", {
     className: i()(p.priceTagsContainer, m),
     children: [(0, n.jsx)(s.F, {
       price: j,
-      discount: r ? o.f_ : l,
+      discount: r ? a.f_ : l,
       className: i()(p.price, {
         [p.striked]: r,
         [p.dimmed]: r,
@@ -89,8 +89,8 @@ function m(e) {
       })
     }), null != v && (0, n.jsx)(s.F, {
       price: v,
-      discount: r ? l : o.f_,
-      renderPrice: C ? e => (0, n.jsx)(a.Text, {
+      discount: r ? l : a.f_,
+      renderPrice: C ? e => (0, n.jsx)(o.Text, {
         variant: "text-xs/medium",
         children: u.NW.format(u.t.Sv8iiY, {
           price: e,
@@ -106,7 +106,7 @@ function m(e) {
         [p.fullPrice]: x
       }),
       variant: r ? void 0 : "text-xs/semibold",
-      icon: (0, n.jsx)(a.ua7, {
+      icon: (0, n.jsx)(o.ua7, {
         text: u.NW.string(u.t.MPFyJy),
         "aria-label": u.NW.string(u.t.X3Ekj4),
         children: e => {
@@ -114,7 +114,7 @@ function m(e) {
             if (null == e) throw TypeError("Cannot destructure " + e);
             return e
           }(e));
-          return (0, n.jsx)(a.SrA, b(h({
+          return (0, n.jsx)(o.SrA, h(b({
             size: "md",
             color: "currentColor"
           }, t), {

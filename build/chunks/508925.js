@@ -6,15 +6,15 @@ r.d(t, {
 var n = r(200651),
   l = r(120356),
   i = r.n(l),
-  a = r(755419),
-  o = r(992379);
+  o = r(755419),
+  a = r(992379);
 let s = e => {
   let {
     product: t,
     className: r
-  } = e, l = t.skuId, s = a.K[l];
+  } = e, l = t.skuId, s = o.K[l];
   return null != s ? (0, n.jsx)("div", {
-    className: i()(o.externalProductWrapper, r),
+    className: i()(a.externalProductWrapper, r),
     children: (0, n.jsx)("img", {
       src: s.asset,
       alt: t.name,

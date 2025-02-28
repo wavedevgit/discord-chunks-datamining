@@ -2,11 +2,11 @@
 "use strict";
 r.d(t, {
   D: () => i,
-  E: () => o
+  E: () => a
 });
 var n, l = r(818083),
   i = ((n = {})[n.CONTROL = 0] = "CONTROL", n[n.TRANSFORMATION = 1] = "TRANSFORMATION", n[n.NO_MOVEMENT = 2] = "NO_MOVEMENT", n);
-let a = (0, l.B)({
+let o = (0, l.B)({
     kind: "user",
     id: "2024-03_shop_card_hover_animation",
     label: "Shop card hover animation experiment",
@@ -27,6 +27,6 @@ let a = (0, l.B)({
       }
     }]
   }),
-  o = e => a.useExperiment({
+  a = e => o.useExperiment({
     location: e
   })

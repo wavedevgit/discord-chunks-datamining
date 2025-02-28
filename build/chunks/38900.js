@@ -8,8 +8,8 @@ var n = r(200651);
 r(192379);
 var l = r(120356),
   i = r.n(l),
-  a = r(577852),
-  o = r(134442),
+  o = r(577852),
+  a = r(134442),
   s = r(219574),
   c = r(661252);
 let d = () => 4 * Math.random() + 8,
@@ -30,11 +30,11 @@ let d = () => 4 * Math.random() + 8,
     })
   }),
   f = () => (0, n.jsx)("div", {
-    className: a.skeletons,
+    className: o.skeletons,
     children: u.map(e => (0, n.jsxs)("div", {
-      className: a.cardsContainer,
+      className: o.cardsContainer,
       children: [(0, n.jsx)("div", {
-        className: i()(s.skeleton, o.shopBanner),
+        className: i()(s.skeleton, a.shopBanner),
         children: (0, n.jsx)("div", {
           className: s.bannerBody
         })

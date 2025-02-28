@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(192379),
   l = r(442837),
   i = r(626135),
-  a = r(74538),
-  o = r(381585),
+  o = r(74538),
+  a = r(381585),
   s = r(597688),
   c = r(884697),
   d = r(819490),
@@ -16,10 +16,10 @@ var n = r(192379),
 
 function f(e, t) {
   let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "product",
-    f = (0, o.sp)(),
-    h = (0, l.e7)([s.Z], () => s.Z.getProduct(e)),
-    b = (0, u.x)(),
-    m = a.ZP.canUseCollectibles(b),
+    f = (0, a.sp)(),
+    b = (0, l.e7)([s.Z], () => s.Z.getProduct(e)),
+    h = (0, u.x)(),
+    m = o.ZP.canUseCollectibles(h),
     C = n.useRef(null),
     [g, v] = n.useState(!1),
     [x, j] = n.useState(!1),
@@ -30,8 +30,8 @@ function f(e, t) {
     null !== C.current && (clearTimeout(C.current), C.current = null)
   }), [g]), n.useEffect(() => {
     if (x && _) {
-      let n = null != h ? (0, c.Vw)(h, m, !1) : null,
-        l = null != h ? (0, c.eu)(h, m, !1) : void 0;
+      let n = null != b ? (0, c.Vw)(b, m, !1) : null,
+        l = null != b ? (0, c.eu)(b, m, !1) : void 0;
       i.default.track(p.rMx.COLLECTIBLES_TILE_IMPRESSION, {
         collectibles_shop_session_id: null == f ? void 0 : f.sessionId,
         sku_id: e,
@@ -46,7 +46,7 @@ function f(e, t) {
         category_position: null == f ? void 0 : f.categoryPosition
       })
     }
-  }, [null == f ? void 0 : f.sessionId, null == f ? void 0 : f.categoryPosition, null == f ? void 0 : f.pageCategory, null == f ? void 0 : f.pageSection, null == f ? void 0 : f.tilePosition, x, m, _, t, h, e, r]), {
+  }, [null == f ? void 0 : f.sessionId, null == f ? void 0 : f.categoryPosition, null == f ? void 0 : f.pageCategory, null == f ? void 0 : f.pageSection, null == f ? void 0 : f.tilePosition, x, m, _, t, b, e, r]), {
     handleCardVisibilityChange: e => {
       v(e)
     }

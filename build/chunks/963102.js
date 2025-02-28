@@ -6,16 +6,16 @@ r.d(t, {
 var n = r(200651),
   l = r(192379),
   i = r(120356),
-  a = r.n(i),
-  o = r(442837),
+  o = r.n(i),
+  a = r(442837),
   s = r(481060),
   c = r(425493),
   d = r(410030),
   u = r(984370),
   p = r(341907),
   f = r(822857),
-  h = r(775451),
-  b = r(594174),
+  b = r(775451),
+  h = r(594174),
   m = r(471731),
   C = r(335131),
   g = r(215023),
@@ -32,7 +32,7 @@ function j(e) {
   return (0, n.jsx)(u.Z.Title, {
     onClick: () => i(t),
     wrapperClassName: x.tabWrapper,
-    className: a()(x.tab, {
+    className: o()(x.tab, {
       [x.selected]: l
     }),
     children: r
@@ -46,7 +46,7 @@ function _(e) {
     onClose: i,
     selectedTab: _,
     handleTransition: y
-  } = e, O = (0, d.ZP)(), k = (0, o.e7)([b.default], () => b.default.getCurrentUser()), P = (null == k ? void 0 : k.isStaff()) || (null == k ? void 0 : k.isStaffPersonal()) || !1, {
+  } = e, O = (0, d.ZP)(), k = (0, a.e7)([h.default], () => h.default.getCurrentUser()), P = (null == k ? void 0 : k.isStaff()) || (null == k ? void 0 : k.isStaffPersonal()) || !1, {
     enabled: S
   } = (0, f.W)({
     location: "collectibles_shop_header_bar"
@@ -63,7 +63,7 @@ function _(e) {
   }), (0, n.jsx)(s.f6W, {
     theme: O,
     children: e => (0, n.jsxs)(u.Z, {
-      className: a()(e, x.headerBar, {
+      className: o()(e, x.headerBar, {
         [x.fullscreenHeaderBar]: t
       }),
       innerClassname: S ? x.headerBarInner : void 0,
@@ -88,8 +88,8 @@ function _(e) {
         })
       }), (S || t) && (0, n.jsxs)("div", {
         className: x.alignedRightContent,
-        children: [S && (0, n.jsx)(h.V9, {
-          cardAlignment: h.V9.CardAlignment.END,
+        children: [S && (0, n.jsx)(b.V9, {
+          cardAlignment: b.V9.CardAlignment.END,
           className: x.balanceWidgetMenu,
           ctaText: v.NW.string(v.t["H57f4+"]),
           ctaOnClick: () => (0, p.navigateToQuestHome)()
