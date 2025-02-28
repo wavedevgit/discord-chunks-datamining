@@ -1,26 +1,26 @@
 /** Chunk was on 84335 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(266796);
 var r = n(200651);
 n(192379);
 var l = n(120356),
   i = n.n(l),
   a = n(692547),
-  s = n(481060),
-  o = n(220082),
-  c = n(114487),
+  o = n(481060),
+  c = n(220082),
+  s = n(114487),
   u = n(686546),
   d = n(813197),
   m = n(768581),
   v = n(15210),
-  x = n(464647),
-  f = n(43542),
-  I = n(723776),
-  h = n(686369),
-  j = n(22858);
+  f = n(464647),
+  j = n(43542),
+  x = n(723776),
+  b = n(686369),
+  h = n(22858);
 
-function g(e) {
+function I(e) {
   let {
     profile: t
   } = e, n = function(e, t) {
@@ -29,31 +29,31 @@ function g(e) {
         icon: e.icon,
         size: 64
       }),
-      r = (0, o.ZP)(n, t);
+      r = (0, c.ZP)(n, t);
     return null != e.brandColorPrimary ? e.brandColorPrimary : r
-  }(t, (0, s.dQu)(a.Z.colors.BG_BASE_TERTIARY).hex()), l = (0, h.d)(n, t);
+  }(t, (0, o.dQu)(a.Z.colors.BG_BASE_TERTIARY).hex()), l = (0, b.d)(n, t);
   return (0, r.jsx)("div", {
-    className: j.banner,
+    className: h.banner,
     style: {
       background: l
     }
   })
 }
 
-function b(e) {
+function p(e) {
   let {
     profile: t,
     onIconChange: n
   } = e;
   return null == n ? (0, r.jsx)("div", {
-    className: j.avatarContainer,
+    className: h.avatarContainer,
     children: (0, r.jsx)(u.ZP, {
       mask: u.QS.CLAN_ICON,
       width: 70,
       height: 70,
       children: (0, r.jsx)("div", {
-        className: j.avatarWrapper,
-        children: (0, r.jsx)(c.b, {
+        className: h.avatarWrapper,
+        children: (0, r.jsx)(s.b, {
           guildId: t.id,
           guildName: t.name,
           guildIcon: t.icon,
@@ -62,25 +62,25 @@ function b(e) {
       })
     })
   }) : (0, r.jsx)("div", {
-    className: j.avatarContainer,
-    children: (0, r.jsx)(s.tEY, {
+    className: h.avatarContainer,
+    children: (0, r.jsx)(o.tEY, {
       within: !0,
       children: (0, r.jsx)(u.ZP, {
         mask: u.QS.CLAN_ICON,
         width: 70,
         height: 70,
         children: (0, r.jsxs)("div", {
-          className: i()(j.avatarWrapper, j.clickable),
-          children: [(0, r.jsx)(c.b, {
+          className: i()(h.avatarWrapper, h.clickable),
+          children: [(0, r.jsx)(s.b, {
             guildId: t.id,
             guildName: t.name,
             guildIcon: t.icon,
             iconSize: 64
           }), (0, r.jsx)("div", {
-            className: j.overlay
-          }), (0, r.jsx)(s.vdY, {
+            className: h.overlay
+          }), (0, r.jsx)(o.vdY, {
             size: "custom",
-            className: j.overlayIcon,
+            className: h.overlayIcon,
             width: 20,
             height: 20,
             color: "white"
@@ -94,39 +94,39 @@ function b(e) {
   })
 }
 
-function p(e) {
+function g(e) {
   let {
     profile: t,
     onIconChange: n,
     className: l,
     disableCTA: a,
-    CTAOverride: o
-  } = e, c = null;
-  return null != o ? c = o : a || (c = (0, r.jsx)(v.Z, {
+    CTAOverride: c
+  } = e, s = null;
+  return null != c ? s = c : a || (s = (0, r.jsx)(v.Z, {
     profile: t
   })), (0, r.jsxs)("div", {
-    className: i()(j.container, l),
-    children: [(0, r.jsx)(g, {
+    className: i()(h.container, l),
+    children: [(0, r.jsx)(I, {
       profile: t
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(p, {
       onIconChange: n,
       profile: t
-    }), (0, r.jsx)(f.Z, {
+    }), (0, r.jsx)(j.Z, {
       profile: t
     }), (0, r.jsxs)("div", {
-      className: j.body,
-      children: [(0, r.jsx)(s.Text, {
+      className: h.body,
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: t.description
-      }), (0, r.jsx)(x.Z, {
+      }), (0, r.jsx)(f.Z, {
         profile: t
-      }), (0, r.jsx)(I.F, {
+      }), (0, r.jsx)(x.F, {
         profile: t
       })]
-    }), null != c && (0, r.jsx)("div", {
-      className: j.buttonContainer,
-      children: c
+    }), null != s && (0, r.jsx)("div", {
+      className: h.buttonContainer,
+      children: s
     })]
   })
 }

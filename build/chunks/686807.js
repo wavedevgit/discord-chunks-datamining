@@ -1,6 +1,6 @@
 /** Chunk was on 30806 **/
 n.d(t, {
-  Z: () => f
+  Z: () => p
 });
 var i = n(200651);
 n(192379);
@@ -34,7 +34,7 @@ function h(e) {
   })
 }
 
-function f(e) {
+function p(e) {
   switch (e.ref_type) {
     case u.Qs.CHANNEL:
       return (0, i.jsx)(h, {

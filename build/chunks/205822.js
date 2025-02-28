@@ -12,9 +12,9 @@ var i = n(200651),
   d = n(531643),
   c = n(388032),
   h = n(720513),
-  f = n(802975);
+  p = n(802975);
 
-function p(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,19 +27,19 @@ let g = new a.Z("UploadArea");
 function v() {
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)("div", {
-      className: o()(f.sparkleWhite, h.sparkleOne)
+      className: o()(p.sparkleWhite, h.sparkleOne)
     }), (0, i.jsx)("div", {
-      className: o()(f.sparkleWhite, h.sparkleTwo)
+      className: o()(p.sparkleWhite, h.sparkleTwo)
     }), (0, i.jsx)("div", {
-      className: o()(f.lightWhite, h.lightOne)
+      className: o()(p.lightWhite, h.lightOne)
     }), (0, i.jsx)("div", {
-      className: o()(f.lightWhite, h.lightTwo)
+      className: o()(p.lightWhite, h.lightTwo)
     }), (0, i.jsx)("div", {
-      className: o()(f.crossWhite, h.crossOne)
+      className: o()(p.crossWhite, h.crossOne)
     }), (0, i.jsx)("div", {
-      className: o()(f.crossWhite, h.crossTwo)
+      className: o()(p.crossWhite, h.crossTwo)
     }), (0, i.jsx)("div", {
-      className: o()(f.popWhite, h.popOne)
+      className: o()(p.popWhite, h.popOne)
     })]
   })
 }
@@ -90,10 +90,10 @@ class C extends r.Component {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, p(this, "state", {
+    super(...e), t = this, f(this, "state", {
       isDragging: !1,
       isOverZone: !1
-    }), p(this, "dragOverTimeout", null), p(this, "elementDOMRef", r.createRef()), p(this, "isAllDropFiles", e => {
+    }), f(this, "dragOverTimeout", null), f(this, "elementDOMRef", r.createRef()), f(this, "isAllDropFiles", e => {
       for (let n = 0; n < e.length; n++) try {
         var t;
         let i = null !== (t = e[n].webkitGetAsEntry()) && void 0 !== t ? t : e[n].getAsEntry();
@@ -101,7 +101,7 @@ class C extends r.Component {
         if (!i.isFile) return !1
       } catch (e) {}
       return !0
-    }), p(this, "preventUnwantedDrop", function(e) {
+    }), f(this, "preventUnwantedDrop", function(e) {
       let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         i = e.dataTransfer;
       if (null == i) return !0;
@@ -114,7 +114,7 @@ class C extends r.Component {
         help: c.NW.string(c.t.Koklr6),
         icons: t.props.icons
       })), !1)
-    }), p(this, "handleDragOver", e => {
+    }), f(this, "handleDragOver", e => {
       var t, n, i;
       if (!this.preventUnwantedDrop(e)) return !1;
       let r = e.dataTransfer;
@@ -132,23 +132,23 @@ class C extends r.Component {
           }), null === (e = (t = this.props).onDragClear) || void 0 === e || e.call(t)
         }, 1e3)
       }
-    }), p(this, "handleDragOverZone", () => {
+    }), f(this, "handleDragOverZone", () => {
       this.setState({
         isOverZone: !0
       })
-    }), p(this, "handleDragLeaveZone", () => {
+    }), f(this, "handleDragLeaveZone", () => {
       this.setState({
         isOverZone: !1
       })
-    }), p(this, "handleDragLeave", e => {
+    }), f(this, "handleDragLeave", e => {
       this.state.isDragging && (e.stopPropagation(), e.preventDefault(), this.clearDragging())
-    }), p(this, "clearDragging", () => {
+    }), f(this, "clearDragging", () => {
       var e, t;
       this.setState({
         isDragging: !1,
         isOverZone: !1
       }), null === (e = (t = this.props).onDragClear) || void 0 === e || e.call(t)
-    }), p(this, "handleDrop", e => {
+    }), f(this, "handleDrop", e => {
       if (!this.preventUnwantedDrop(e, !0)) return !1;
       let t = e.dataTransfer;
       if (null == t) return !0;

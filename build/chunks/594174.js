@@ -69,20 +69,22 @@ function I(e) {
   void 0 !== n && (e.premiumType = n, delete e.premium_type);
   let r = e.nsfw_allowed;
   null != r && (e.nsfwAllowed = r, delete e.nsfw_allowed);
-  let i = e.public_flags;
-  null != i && (e.publicFlags = i, delete e.public_flags);
-  let s = e.purchased_flags;
-  void 0 !== s && (e.purchasedFlags = s, delete e.purchased_flags);
-  let c = e.premium_usage_flags;
-  void 0 !== c && (e.premiumUsageFlags = c, delete e.premium_usage_flags), null === e.banner_color && delete e.banner_color;
-  let u = e.avatar_decoration_data;
-  void 0 !== u && (e.avatarDecorationData = (0, o.FG)(u), delete e.avatar_decoration_data);
-  let d = e.collectibles;
-  void 0 !== d && (e.collectibles = (0, a.Xm)(d), delete e.collectibles);
-  let f = e.global_name;
-  void 0 !== f && (e.globalName = f, delete e.global_name);
-  let _ = e.primary_guild;
-  return void 0 !== _ && (e.primary_guild = (0, h.lt)(_)), e
+  let i = e.age_verification_status;
+  null != i && (e.ageVerificationStatus = i, delete e.age_verification_status);
+  let s = e.public_flags;
+  null != s && (e.publicFlags = s, delete e.public_flags);
+  let c = e.purchased_flags;
+  void 0 !== c && (e.purchasedFlags = c, delete e.purchased_flags);
+  let u = e.premium_usage_flags;
+  void 0 !== u && (e.premiumUsageFlags = u, delete e.premium_usage_flags), null === e.banner_color && delete e.banner_color;
+  let d = e.avatar_decoration_data;
+  void 0 !== d && (e.avatarDecorationData = (0, o.FG)(d), delete e.avatar_decoration_data);
+  let f = e.collectibles;
+  void 0 !== f && (e.collectibles = (0, a.Xm)(f), delete e.collectibles);
+  let _ = e.global_name;
+  void 0 !== _ && (e.globalName = _, delete e.global_name);
+  let p = e.primary_guild;
+  return void 0 !== p && (e.primary_guild = (0, h.lt)(p)), e
 }
 
 function T(e) {

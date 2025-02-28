@@ -1,13 +1,13 @@
 /** Chunk was on 84335 **/
 n.d(t, {
-  u: () => s
+  u: () => o
 });
 var r = n(192379),
   l = n(442837),
   i = n(699553),
   a = n(314852);
 
-function s(e) {
+function o(e) {
   let t = (0, l.e7)([a.Z], () => a.Z.getProfile(e)),
     n = (0, l.e7)([a.Z], () => a.Z.getFetchStatus(e));
   return {

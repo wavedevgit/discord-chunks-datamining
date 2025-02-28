@@ -1,14 +1,14 @@
 /** Chunk was on 84335 **/
 n.d(t, {
-  F: () => x
+  F: () => f
 });
 var r = n(200651),
   l = n(192379),
   i = n(442837),
   a = n(481060),
-  s = n(596454),
-  o = n(727637),
-  c = n(607070),
+  o = n(596454),
+  c = n(727637),
+  s = n(607070),
   u = n(176354),
   d = n(204690);
 
@@ -19,7 +19,7 @@ function m(e) {
   } = e;
   if (null == t) return null;
   let l = u.ZP.isCustomEmoji(t) ? t.name : t.surrogates;
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(o.Z, {
     className: d.traitEmoji,
     emojiId: t.id,
     emojiName: l,
@@ -31,13 +31,13 @@ function m(e) {
 function v(e) {
   let {
     trait: t
-  } = e, n = l.useRef(null), s = (0, o.Z)(n), u = (0, i.e7)([c.Z], () => c.Z.useReducedMotion);
+  } = e, n = l.useRef(null), o = (0, c.Z)(n), u = (0, i.e7)([s.Z], () => s.Z.useReducedMotion);
   return (null == t ? void 0 : t.label) == null || t.label.length <= 0 ? null : (0, r.jsxs)("div", {
     ref: n,
     className: d.trait,
     children: [(0, r.jsx)(m, {
       emoji: t.emoji,
-      shouldAnimate: !u && s
+      shouldAnimate: !u && o
     }), (0, r.jsx)(a.Text, {
       tag: "span",
       className: d.traitLabel,
@@ -48,7 +48,7 @@ function v(e) {
   })
 }
 
-function x(e) {
+function f(e) {
   let {
     profile: t
   } = e, n = l.useMemo(() => t.traits.map((e, t) => (function(e) {

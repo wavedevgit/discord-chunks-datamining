@@ -167,37 +167,36 @@ function w() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     l = (0, d.e7)([b.Z], () => b.Z.loggedEventsVersion),
-    s = a.useMemo(() => b.Z.loggedEvents, [l]),
-    [c, m] = a.useState(Object.keys(I)),
-    [h, f] = a.useState(s),
-    p = a.useRef(null),
-    g = a.useMemo(() => (0, o.throttle)(async (e, t) => {
+    [s, c] = a.useState(() => Object.keys(I)),
+    [m, h] = a.useState(b.Z.loggedEvents),
+    f = a.useRef(null),
+    p = a.useMemo(() => (0, o.throttle)(async (e, t) => {
       if ("" === e) {
-        f(t);
+        h(t);
         return
       }
-      p.current = (0, o.uniqueId)();
+      f.current = (0, o.uniqueId)();
       let n = await (0, x.H)(t, e => {
         let {
           event: t
         } = e;
         return t
       }, e, !0);
-      null != p.current && f(n)
+      null != f.current && h(n)
     }, 300, {
       leading: !0
     }), []),
-    S = a.useMemo(() => h.filter(e => {
-      for (let t of c)
+    g = m.filter(e => {
+      for (let t of s)
         if (I[t].filter(e)) return !0;
       return !1
-    }), [h, c]);
+    });
   a.useEffect(() => {
-    g(t, s)
-  }, [t, g, s]);
-  let [E, w] = a.useState(void 0), Z = S.find(e => e.key === E), {
-    TabBar: P,
-    renderSelectedTab: R
+    p(t, b.Z.loggedEvents)
+  }, [t, p, l]);
+  let [S, E] = a.useState(void 0), w = g.find(e => e.key === S), {
+    TabBar: Z,
+    renderSelectedTab: P
   } = (0, y.Z)({
     tabs: k
   }, []);
@@ -226,9 +225,9 @@ function w() {
         children: Object.entries(I).map(e => {
           let [t, n] = e;
           return (0, r.jsx)(u.P3F, {
-            className: i()(N.filter, c.includes(t) && N.activeFilter),
+            className: i()(N.filter, s.includes(t) && N.activeFilter),
             onClick: () => {
-              m(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
+              c(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },
             children: n.label
           }, t)
@@ -245,16 +244,16 @@ function w() {
       })
     }), (0, r.jsx)(j.Z, {
       columns: T,
-      data: S,
-      selectedRowKey: E,
-      onClickRow: e => w(e.key)
-    }), null != Z && (0, r.jsxs)(v.Z, {
+      data: g,
+      selectedRowKey: S,
+      onClickRow: e => E(e.key)
+    }), null != w && (0, r.jsxs)(v.Z, {
       className: N.subPanel,
       minHeight: 100,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
-      children: [(0, r.jsx)(P, {}), R({
-        loggedEvent: Z,
-        onClose: () => w(void 0)
+      children: [(0, r.jsx)(Z, {}), P({
+        loggedEvent: w,
+        onClose: () => E(void 0)
       })]
     })]
   })

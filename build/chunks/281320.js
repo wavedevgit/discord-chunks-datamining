@@ -1,7 +1,7 @@
 /** Chunk was on 30806 **/
 n.d(t, {
   M: () => c,
-  Z: () => f
+  Z: () => p
 }), n(47120);
 var i, r, l, o, s = n(442837),
   a = n(570140);
@@ -24,7 +24,7 @@ o = "CreatorMonetizationStore", (l = "displayName") in h ? Object.defineProperty
   configurable: !0,
   writable: !0
 }) : h[l] = o;
-let f = new h(a.Z, {
+let p = new h(a.Z, {
   CONNECTION_OPEN: function() {
     u.clear(), d.clear()
   },

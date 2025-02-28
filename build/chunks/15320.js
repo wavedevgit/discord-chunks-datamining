@@ -1,6 +1,6 @@
 /** Chunk was on 37709 **/
 n.d(t, {
-  Z: () => w
+  Z: () => P
 });
 var r = n(200651),
   l = n(192379),
@@ -18,13 +18,13 @@ var r = n(200651),
   f = n(637853),
   g = n(968644),
   j = n(104265),
-  v = n(588632),
-  b = n(290511),
-  N = n(981631),
+  N = n(588632),
+  v = n(290511),
+  b = n(981631),
   _ = n(388032),
   C = n(607639);
 
-function k(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function k(e) {
   return e
 }
 
-function O(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,22 +56,22 @@ function O(e, t) {
   }), e
 }
 
-function Z(e, t) {
+function k(e, t) {
   return (0, r.jsx)("span", {
     className: C.helpTextItem,
     children: e
   }, t)
 }
 
-function E(e) {
-  return null != e && p.Z.getCurrentConfig({
+function I(e, t) {
+  return !(e.hasFeature(b.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && e.hasFeature(b.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && null != t && p.Z.getCurrentConfig({
     location: "ba216b_1"
   }, {
     autoTrackExposure: !0
   }).includeRules
 }
 
-function I(e) {
+function Z(e) {
   let {
     headerId: t,
     guild: n,
@@ -83,18 +83,18 @@ function I(e) {
     gotoPrevPrompt: h,
     gotoNextPrompt: p,
     completeOnboarding: j
-  } = e, b = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), N = 0 === b.length && (null == c ? void 0 : c.required), O = null == c ? void 0 : c.options.filter(e => b.includes(e.id)), E = (0, f.L6)(O), I = (0, f.dX)(O), y = 0 === b.length, {
-    helpText: w,
-    helpTextAdditional: P
+  } = e, v = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), b = 0 === v.length && (null == c ? void 0 : c.required), E = null == c ? void 0 : c.options.filter(e => v.includes(e.id)), I = (0, f.L6)(E), Z = (0, f.dX)(E), y = 0 === v.length, {
+    helpText: P,
+    helpTextAdditional: w
   } = (0, g.Z)({
     guild: n,
     prompt: c,
-    selectedRoleIds: E,
-    selectedChannelIds: I,
-    itemHook: Z
-  }), D = (0, d.Z)(n.id, 1e3), T = c.options.map(e => k({
+    selectedRoleIds: I,
+    selectedChannelIds: Z,
+    itemHook: k
+  }), D = (0, d.Z)(n.id, 1e3), T = c.options.map(e => O({
     value: e.id
-  }, e)), R = c.options.filter(e => b.includes(e.id)).map(e => e.id);
+  }, e)), R = c.options.filter(e => v.includes(e.id)).map(e => e.id);
   return (0, r.jsx)("div", {
     className: C.prompt,
     children: (0, r.jsxs)("div", {
@@ -127,15 +127,15 @@ function I(e) {
           color: "header-primary",
           id: t,
           children: c.title
-        }), (0, r.jsx)(v.Z, {
+        }), (0, r.jsx)(N.Z, {
           options: T,
           value: R,
           onChange: e => {
-            let t = e.find(e => !b.includes(e.id)),
+            let t = e.find(e => !v.includes(e.id)),
               n = e.map(e => e.id);
             if (null != t) m(c.id, t.id, !0);
             else {
-              let e = b.filter(e => !n.includes(e));
+              let e = v.filter(e => !n.includes(e));
               c.options.filter(t => e.includes(t.id)).forEach(e => {
                 m(c.id, e.id, !1)
               })
@@ -150,7 +150,7 @@ function I(e) {
           children: l > 0 && (0, r.jsxs)(i.zxk, {
             className: C.button,
             innerClassName: C.buttonInner,
-            onClick: () => h(b.length),
+            onClick: () => h(v.length),
             size: i.zxk.Sizes.MEDIUM,
             look: i.zxk.Looks.OUTLINED,
             grow: !1,
@@ -166,9 +166,9 @@ function I(e) {
             className: C.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: [w, " ", P]
+            children: [P, " ", w]
           }), (0, r.jsx)(i.ua7, {
-            text: N ? _.NW.string(_.t.dA1dSU) : null,
+            text: b ? _.NW.string(_.t.dA1dSU) : null,
             children: e => {
               let {
                 onMouseEnter: t,
@@ -179,8 +179,8 @@ function I(e) {
                 innerClassName: C.buttonInner,
                 onMouseEnter: t,
                 onMouseLeave: n,
-                onClick: () => s ? j() : p(b.length),
-                disabled: N,
+                onClick: () => s ? j() : p(v.length),
+                disabled: b,
                 size: i.zxk.Sizes.MEDIUM,
                 look: i.zxk.Looks.FILLED,
                 grow: !1,
@@ -219,15 +219,15 @@ function y(e) {
     gotoPrevPrompt: m,
     gotoNextPrompt: h,
     completeOnboarding: p
-  } = e, v = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), b = 0 === v.length && (null == c ? void 0 : c.required), N = null == c ? void 0 : c.options.filter(e => v.includes(e.id)), k = (0, f.L6)(N), O = (0, f.dX)(N), E = 0 === v.length, {
-    helpText: I,
+  } = e, N = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), v = 0 === N.length && (null == c ? void 0 : c.required), b = null == c ? void 0 : c.options.filter(e => N.includes(e.id)), O = (0, f.L6)(b), E = (0, f.dX)(b), I = 0 === N.length, {
+    helpText: Z,
     helpTextAdditional: y
   } = (0, g.Z)({
     guild: n,
     prompt: c,
-    selectedRoleIds: k,
-    selectedChannelIds: O,
-    itemHook: Z
+    selectedRoleIds: O,
+    selectedChannelIds: E,
+    itemHook: k
   });
   return (0, r.jsx)("div", {
     className: C.prompt,
@@ -267,7 +267,7 @@ function y(e) {
             guildId: n.id,
             option: e,
             onSelect: t => d(c.id, e.id, null != t && t),
-            selected: v.includes(e.id)
+            selected: N.includes(e.id)
           }, e.id))
         })]
       }), (0, r.jsxs)("div", {
@@ -277,7 +277,7 @@ function y(e) {
           children: l > 0 && (0, r.jsxs)(i.zxk, {
             className: C.button,
             innerClassName: C.buttonInner,
-            onClick: () => m(v.length),
+            onClick: () => m(N.length),
             size: i.zxk.Sizes.MEDIUM,
             look: i.zxk.Looks.OUTLINED,
             grow: !1,
@@ -293,9 +293,9 @@ function y(e) {
             className: C.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: [I, " ", y]
+            children: [Z, " ", y]
           }), (0, r.jsx)(i.ua7, {
-            text: b ? _.NW.string(_.t.dA1dSU) : null,
+            text: v ? _.NW.string(_.t.dA1dSU) : null,
             children: e => {
               let {
                 onMouseEnter: t,
@@ -306,12 +306,12 @@ function y(e) {
                 innerClassName: C.buttonInner,
                 onMouseEnter: t,
                 onMouseLeave: n,
-                onClick: () => s ? p() : h(v.length),
-                disabled: b,
+                onClick: () => s ? p() : h(N.length),
+                disabled: v,
                 size: i.zxk.Sizes.MEDIUM,
                 look: i.zxk.Looks.FILLED,
                 grow: !1,
-                color: E ? i.zxk.Colors.PRIMARY : i.zxk.Colors.BRAND,
+                color: I ? i.zxk.Colors.PRIMARY : i.zxk.Colors.BRAND,
                 children: s ? (0, r.jsxs)(r.Fragment, {
                   children: [_.NW.string(_.t["8SuVoK"]), (0, r.jsx)("span", {
                     className: C.finishEmoji,
@@ -320,7 +320,7 @@ function y(e) {
                     children: "\uD83C\uDF89"
                   })]
                 }) : (0, r.jsxs)(r.Fragment, {
-                  children: [E ? _.NW.string(_.t["5WxrcX"]) : _.NW.string(_.t.PDTjLC), (0, r.jsx)(u.Z, {
+                  children: [I ? _.NW.string(_.t["5WxrcX"]) : _.NW.string(_.t.PDTjLC), (0, r.jsx)(u.Z, {
                     className: C.arrow,
                     direction: u.Z.Directions.RIGHT
                   })]
@@ -334,7 +334,7 @@ function y(e) {
   })
 }
 
-function w(e) {
+function P(e) {
   let {
     guild: t,
     prompts: n,
@@ -346,68 +346,68 @@ function w(e) {
     disableTracking: f
   } = e, g = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(t.id));
   l.useEffect(() => {
-    t.hasFeature(N.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && a.ZP.fetchVerificationForm(t.id)
+    t.hasFeature(b.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && !t.hasFeature(b.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && a.ZP.fetchVerificationForm(t.id)
   }, [t]);
   let j = n[i],
-    v = i + 1 >= n.length && !E(g),
+    N = i + 1 >= n.length && !I(t, g),
     _ = n[0].required;
   l.useEffect(() => {
-    !f && m.default.track(N.rMx.GUILD_ONBOARDING_STEP_VIEWED, O(k({}, (0, s.hH)(t.id)), {
+    !f && m.default.track(b.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(O({}, (0, s.hH)(t.id)), {
       step: 0,
       required: _
     }))
   }, [t.id, _, f]);
   let C = e => {
-      !f && (m.default.track(N.rMx.GUILD_ONBOARDING_STEP_COMPLETED, O(k({}, (0, s.hH)(t.id)), {
+      !f && (m.default.track(b.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(O({}, (0, s.hH)(t.id)), {
         step: i,
         options_selected: e,
         skipped: 0 === e,
         back: !1,
         in_onboarding: !0,
         is_final_step: !1
-      })), i < n.length - 1 && m.default.track(N.rMx.GUILD_ONBOARDING_STEP_VIEWED, O(k({}, (0, s.hH)(t.id)), {
+      })), i < n.length - 1 && m.default.track(b.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(O({}, (0, s.hH)(t.id)), {
         step: i,
         required: n[i + 1].required
-      }))), i + 1 < n.length ? p(i + 1) : E(g) && p("rules")
+      }))), i + 1 < n.length ? p(i + 1) : I(t, g) && p("rules")
     },
-    Z = e => {
-      !f && (m.default.track(N.rMx.GUILD_ONBOARDING_STEP_COMPLETED, O(k({}, (0, s.hH)(t.id)), {
+    k = e => {
+      !f && (m.default.track(b.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(O({}, (0, s.hH)(t.id)), {
         step: i,
         skipped: !1,
         back: !0,
         options_selected: e,
         in_onboarding: !0,
         is_final_step: !1
-      })), i > 0 && m.default.track(N.rMx.GUILD_ONBOARDING_STEP_VIEWED, O(k({}, (0, s.hH)(t.id)), {
+      })), i > 0 && m.default.track(b.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(O({}, (0, s.hH)(t.id)), {
         step: i - 1,
         required: n[i - 1].required
       }))), p(Math.max(0, i - 1))
     };
   if (null == j) return null;
   switch (j.type) {
-    case b.FN.MULTIPLE_CHOICE:
+    case v.FN.MULTIPLE_CHOICE:
       return (0, r.jsx)(y, {
         guild: t,
         headerId: x,
         step: i,
         questionCount: n.length,
         currentPrompt: j,
-        lastPrompt: v,
+        lastPrompt: N,
         selectOption: d,
-        gotoPrevPrompt: Z,
+        gotoPrevPrompt: k,
         gotoNextPrompt: C,
         completeOnboarding: u
       });
-    case b.FN.DROPDOWN:
-      return (0, r.jsx)(I, {
+    case v.FN.DROPDOWN:
+      return (0, r.jsx)(Z, {
         guild: t,
         headerId: x,
         step: i,
         questionCount: n.length,
         currentPrompt: j,
-        lastPrompt: v,
+        lastPrompt: N,
         selectOption: d,
-        gotoPrevPrompt: Z,
+        gotoPrevPrompt: k,
         gotoNextPrompt: C,
         completeOnboarding: u
       });

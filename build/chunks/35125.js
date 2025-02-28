@@ -4,7 +4,7 @@ n.d(t, {
   Tn: () => d,
   _i: () => C,
   eI: () => g,
-  vp: () => p,
+  vp: () => f,
   y8: () => v
 });
 var i = n(367907),
@@ -29,7 +29,7 @@ function d(e) {
   } = e, {
     content: o,
     formatParams: s
-  } = f({
+  } = p({
     username: t,
     usernameOnClickHandler: n,
     roleSubscriptionOnClickHandler: i,
@@ -49,7 +49,7 @@ function c(e) {
   } = e, {
     content: o,
     formatParams: s
-  } = f({
+  } = p({
     username: t,
     usernameOnClickHandler: n,
     roleSubscriptionOnClickHandler: i,
@@ -71,7 +71,7 @@ function h(e, t) {
   }
 }
 
-function f(e) {
+function p(e) {
   let {
     username: t,
     usernameOnClickHandler: n = u,
@@ -82,10 +82,10 @@ function f(e) {
     guild: o,
     totalMonthsSubscribed: d,
     showWithDuration: c,
-    isRenewal: f
+    isRenewal: p
   } = h(r, l);
   return {
-    content: c ? f ? a.t.Iy66Mz : a.t.eCgb2d : f ? a.t.mPTTdn : a.t.mYjFFx,
+    content: c ? p ? a.t.Iy66Mz : a.t.eCgb2d : p ? a.t.mPTTdn : a.t.mYjFFx,
     formatParams: {
       username: t,
       usernameHook: n,
@@ -97,7 +97,7 @@ function f(e) {
   }
 }
 
-function p(e) {
+function f(e) {
   let t, {
       username: n,
       usernameOnClickHandler: i = u,
@@ -108,10 +108,10 @@ function p(e) {
     {
       guild: d,
       totalMonthsSubscribed: c,
-      showWithDuration: f,
-      isRenewal: p
+      showWithDuration: p,
+      isRenewal: f
     } = h(l, o);
-  return t = f ? p ? a.t.OQ0OU1 : a.t["+N9bxs"] : p ? a.t.OxP1ND : a.t["6Z1E+/"], a.NW.formatToParts(t, {
+  return t = p ? f ? a.t.OQ0OU1 : a.t["+N9bxs"] : f ? a.t.OxP1ND : a.t["6Z1E+/"], a.NW.formatToParts(t, {
     guildName: null == d ? void 0 : d.name,
     tierName: null == o ? void 0 : o.tier_name,
     username: n,

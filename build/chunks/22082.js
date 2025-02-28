@@ -9,8 +9,8 @@ var i, r, l, o = n(442837),
   d = n(581883),
   c = n(314897),
   h = n(592125),
-  f = n(984933),
-  p = n(271383),
+  p = n(984933),
+  f = n(271383),
   g = n(430824),
   v = n(306680),
   C = n(9156),
@@ -32,8 +32,8 @@ function I(e, t) {
 function y(e) {
   var t;
   if (null != _[e]) return;
-  let n = f.ZP.getChannels(e)[f.sH].map(e => e.channel.id),
-    i = null === (t = p.ZP.getMember(e, c.default.getId())) || void 0 === t ? void 0 : t.joinedAt;
+  let n = p.ZP.getChannels(e)[p.sH].map(e => e.channel.id),
+    i = null === (t = f.ZP.getMember(e, c.default.getId())) || void 0 === t ? void 0 : t.joinedAt;
   if (null == i) return;
   _[e] = new Set;
   let r = new Date(i).getTime();
@@ -51,7 +51,7 @@ function N() {
 }
 class T extends(i = o.ZP.Store) {
   initialize() {
-    this.waitFor(f.ZP, c.default, p.ZP, C.ZP, v.ZP, d.Z), this.syncWith([C.ZP], N)
+    this.waitFor(p.ZP, c.default, f.ZP, C.ZP, v.ZP, d.Z), this.syncWith([C.ZP], N)
   }
   getNewChannelIds(e) {
     var t;

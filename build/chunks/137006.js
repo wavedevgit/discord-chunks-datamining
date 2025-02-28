@@ -70,7 +70,8 @@ let l = {
       request: e => (0, i.C5)(e.object({
         referrer_id: e.string().max(64),
         custom_id: e.string().max(64),
-        message: e.string().max(1e3).required()
+        message: e.string().max(1e3).required(),
+        link_id: e.string().max(64)
       })),
       response: e => e.object({
         success: e.boolean().required()

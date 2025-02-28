@@ -49,12 +49,14 @@ function O(e) {
   l.useEffect(() => {
     let {
       referrerId: e,
-      customId: t
+      customId: t,
+      linkId: n
     } = N;
     R((0, o.H)({
       applicationId: h,
       referrerId: null != e ? e : null == L ? void 0 : L.id,
-      customId: t
+      customId: t,
+      linkId: n
     }))
   }, [h, L, N, R]);
   let M = l.useRef(0),

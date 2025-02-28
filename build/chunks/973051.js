@@ -53,30 +53,30 @@ function j(e) {
   let {
     guild: n,
     prompts: j,
-    completeOnboarding: v,
-    setCurrentStep: b,
-    disableTracking: N,
+    completeOnboarding: N,
+    setCurrentStep: v,
+    disableTracking: b,
     previousPromptIndex: _
-  } = e, C = l.useRef(null), k = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [O, Z] = l.useState(null !== (t = null == k ? void 0 : k.response) && void 0 !== t && t), E = (0, o.e7)([c.Z], () => c.Z.get(n.id)), I = l.useRef(null), y = l.useRef(null), w = l.useCallback(async () => {
-    if (null != E && null != k) {
+  } = e, C = l.useRef(null), O = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [E, k] = l.useState(null !== (t = null == O ? void 0 : O.response) && void 0 !== t && t), I = (0, o.e7)([c.Z], () => c.Z.get(n.id)), Z = l.useRef(null), y = l.useRef(null), P = l.useCallback(async () => {
+    if (null != I && null != O) {
       try {
-        await a.ZP.submitVerificationForm(n.id, g(f({}, E), {
-          formFields: [g(f({}, k), {
-            response: O
+        await a.ZP.submitVerificationForm(n.id, g(f({}, I), {
+          formFields: [g(f({}, O), {
+            response: E
           })]
         }))
       } catch (e) {}
-      v()
+      N()
     }
-  }, [n.id, E, k, O, v]);
+  }, [n.id, I, O, E, N]);
 
-  function P(e) {
+  function w(e) {
     let [t] = e;
-    t.isIntersecting && Z(!0)
+    t.isIntersecting && k(!0)
   }
   return (l.useEffect(() => {
-    let e = new IntersectionObserver(P, {
-        root: I.current,
+    let e = new IntersectionObserver(w, {
+        root: Z.current,
         rootMargin: "0px",
         threshold: 0
       }),
@@ -84,11 +84,11 @@ function j(e) {
     return null != t && null != t.lastElementChild && e.observe(t.lastElementChild), () => {
       null != t && null != t.lastElementChild && e.unobserve(t.lastElementChild)
     }
-  }, [y, I]), null == k) ? null : (0, r.jsx)("div", {
+  }, [y, Z]), null == O) ? null : (0, r.jsx)("div", {
     className: x.prompt,
     children: (0, r.jsxs)("div", {
       className: x.promptContent,
-      ref: I,
+      ref: Z,
       children: [(0, r.jsxs)(i.h21, {
         className: x.scrollerContent,
         ref: C,
@@ -102,7 +102,7 @@ function j(e) {
         }), (0, r.jsx)("div", {
           className: x.termsFieldBody,
           ref: y,
-          children: k.values.map((e, t) => (0, r.jsxs)("div", {
+          children: O.values.map((e, t) => (0, r.jsxs)("div", {
             className: x.termsRow,
             children: [(0, r.jsx)(i.Text, {
               variant: "text-sm/normal",
@@ -126,7 +126,7 @@ function j(e) {
           children: -1 !== _ && (0, r.jsxs)(i.zxk, {
             innerClassName: x.buttonInner,
             onClick: () => {
-              !N && (m.default.track(h.rMx.GUILD_ONBOARDING_STEP_COMPLETED, g(f({}, (0, s.hH)(n.id)), {
+              !b && (m.default.track(h.rMx.GUILD_ONBOARDING_STEP_COMPLETED, g(f({}, (0, s.hH)(n.id)), {
                 step: -1,
                 skipped: !1,
                 back: !0,
@@ -136,7 +136,7 @@ function j(e) {
               })), _ >= 0 && m.default.track(h.rMx.GUILD_ONBOARDING_STEP_VIEWED, g(f({}, (0, s.hH)(n.id)), {
                 step: _,
                 required: j[_].required
-              }))), b(_)
+              }))), v(_)
             },
             size: i.zxk.Sizes.MEDIUM,
             look: i.zxk.Looks.OUTLINED,
@@ -153,11 +153,11 @@ function j(e) {
             className: x.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: O ? p.NW.string(p.t.arAe3N) : p.NW.string(p.t.D0CVAQ)
+            children: E ? p.NW.string(p.t.arAe3N) : p.NW.string(p.t.D0CVAQ)
           }), (0, r.jsxs)(i.zxk, {
             innerClassName: x.buttonInner,
-            onClick: w,
-            disabled: !O,
+            onClick: P,
+            disabled: !E,
             size: i.zxk.Sizes.MEDIUM,
             look: i.zxk.Looks.FILLED,
             grow: !1,
