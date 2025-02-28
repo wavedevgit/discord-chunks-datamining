@@ -165,7 +165,10 @@ function Q(e) {
       exposure_type: l,
       assignment_source: n.assignmentSource,
       assignment_session_id: n.sessionId,
-      assignment_loaded_from_cache: n.loadedFromCache
+      assignment_loaded_from_cache: n.loadedFromCache,
+      holdout_name: n.holdoutName,
+      holdout_revision: n.holdoutRevision,
+      holdout_bucket: n.holdoutBucket
     };
     null != o && (e.context_guild_id = o.guildId);
     let f = u ? g.rMx.EXPERIMENT_USER_TRIGGERED_FALLBACK : g.rMx.EXPERIMENT_USER_TRIGGERED;
@@ -198,7 +201,10 @@ function Q(e) {
         exposure_type: l,
         assignment_source: n.assignmentSource,
         assignment_session_id: n.sessionId,
-        assignment_loaded_from_cache: n.loadedFromCache
+        assignment_loaded_from_cache: n.loadedFromCache,
+        holdout_name: n.holdoutName,
+        holdout_revision: n.holdoutRevision,
+        holdout_bucket: n.holdoutBucket
       };
     if (c) {
       let e = b(E({}, o), {
@@ -303,7 +309,7 @@ function et(e) {
     sessionId: i,
     fingerprint: o
   }, t.forEach(e => {
-    let [t, n, s, l, c, u, d, f] = e;
+    let [t, n, s, l, c, u, d, f, _, p, h] = e;
     w[t] = {
       type: "user",
       revision: n,
@@ -316,7 +322,10 @@ function et(e) {
       assignmentSource: r,
       sessionId: i,
       loadedFromCache: a,
-      fingerprint: o
+      fingerprint: o,
+      holdoutName: _,
+      holdoutRevision: p,
+      holdoutBucket: h
     }
   }), null != n && n.forEach(e => {
     let [t, n, s, l, c, u, d, f, _, p] = e;
@@ -327,7 +336,7 @@ function et(e) {
       overrides: J(c),
       overridesFormatted: (null != u ? u : []).map(e => e.map($)),
       holdoutName: null != d ? d : null,
-      holdoutBucket: null != f ? f : null,
+      holdoutControlBucket: null != f ? f : null,
       aaMode: 1 === _,
       triggerDebuggingEnabled: F(1 === p, t),
       assignmentSource: r,
@@ -407,14 +416,11 @@ function ei(e, t) {
       loadedFromCache: o.loadedFromCache
     };
   if (null == (d = en(e, o.populations, u))) return null;
-  if (null != o.holdoutName && null != o.holdoutBucket && o.holdoutName !== t) {
-    let t = ei(e, o.holdoutName);
-    if ((null == t ? void 0 : t.bucket) != null && (!0 !== t.override && Q({
-        experimentId: o.holdoutName,
-        descriptor: t
-      }), (null == t ? void 0 : t.bucket) === o.holdoutBucket)) return null
-  }
-  return {
+  let f = null;
+  return null != o.holdoutName && null != o.holdoutControlBucket && o.holdoutName !== t && (null == (f = ei(e, o.holdoutName)) ? void 0 : f.bucket) != null && (!0 !== f.override && Q({
+    experimentId: o.holdoutName,
+    descriptor: f
+  }), (null == f ? void 0 : f.bucket) === o.holdoutControlBucket) ? null : {
     type: h.xY.GUILD,
     guildId: e,
     revision: o.revision,
@@ -424,7 +430,10 @@ function ei(e, t) {
     triggerDebuggingEnabled: c,
     assignmentSource: o.assignmentSource,
     sessionId: o.sessionId,
-    loadedFromCache: o.loadedFromCache
+    loadedFromCache: o.loadedFromCache,
+    holdoutName: null != f ? o.holdoutName : null,
+    holdoutRevision: null == f ? void 0 : f.revision,
+    holdoutBucket: null == f ? void 0 : f.bucket
   }
 }
 
