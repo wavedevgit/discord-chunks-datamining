@@ -45,7 +45,7 @@ function v(e) {
       guildProductListingId: t.id,
       analyticsLocation: v
     }),
-    L = (0, r.jsx)(h.m, {
+    D = (0, r.jsx)(h.m, {
       product: t,
       guildId: n,
       showEditProduct: w,
@@ -84,7 +84,7 @@ function v(e) {
     shouldShowFullDescriptionButton: y,
     onShowFullDescription: R,
     onTapCard: R,
-    actionMenu: L,
+    actionMenu: D,
     showOpaqueBackground: I,
     hideRoleTag: x,
     lineClamp: O,

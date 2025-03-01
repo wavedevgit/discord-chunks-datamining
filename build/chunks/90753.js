@@ -1,6 +1,6 @@
 /** Chunk was on 12416 **/
 n.d(t, {
-  Z: () => v
+  Z: () => b
 }), n(653041);
 var r = n(192379),
   i = n(846519),
@@ -15,15 +15,15 @@ var r = n(192379),
   m = n(262433),
   p = n(400321),
   h = n(813900);
-let b = 1e3 / 60;
+let v = 1e3 / 60;
 
-function v(e, t, n, v) {
+function b(e, t, n, b) {
   let g = (0, o.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
     y = (0, o.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
     E = (0, o.dQu)(l.Z.unsafe_rawColors.WHITE_500).hex(),
     O = r.useRef({}),
     S = r.useRef(new i.Xp),
-    j = r.useCallback(t => {
+    x = r.useCallback(t => {
       let n = u.Z.getDrawables(t);
       (0, f.UN)(e),
       function(e) {
@@ -43,8 +43,8 @@ function v(e, t, n, v) {
         let h = f.getContext("2d");
         if (null == h) return;
         let {
-          width: b,
-          height: v
+          width: v,
+          height: b
         } = f.getBoundingClientRect(), g = [];
         n.forEach(e => {
           if (null == s.Z.getVoiceStateForChannel(o, e.userId)) {
@@ -92,8 +92,8 @@ function v(e, t, n, v) {
           }({
             drawable: e,
             context: h,
-            canvasWidth: b,
-            canvasHeight: v,
+            canvasWidth: v,
+            canvasHeight: b,
             fallbackColor: r,
             outlineColorDark: a,
             outlineColorLight: u,
@@ -110,9 +110,9 @@ function v(e, t, n, v) {
         streamerId: t,
         outlineColorDark: y,
         outlineColorLight: E,
-        channelId: v
+        channelId: b
       })
-    }, [e, v, g, y, E]);
+    }, [e, b, g, y, E]);
   r.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;
@@ -121,20 +121,20 @@ function v(e, t, n, v) {
         width: r,
         height: i
       } = t.getBoundingClientRect();
-      t.width = r * window.devicePixelRatio, t.height = i * window.devicePixelRatio, j(n)
+      t.width = r * window.devicePixelRatio, t.height = i * window.devicePixelRatio, x(n)
     });
     return null != e.current && t.observe(e.current), () => t.disconnect()
-  }, [e, j, n]);
-  let x = r.useCallback(() => {
+  }, [e, x, n]);
+  let j = r.useCallback(() => {
     let t = u.Z.getDrawables(n),
       r = m.U.getState().particles,
       i = t.length > 0 || Object.keys(r).length > 0;
-    i && null == S.current._ref && (null == S.current._ref ? (j(n), S.current.start(b, () => j(n))) : i || null == S.current._ref || (S.current.stop(), (0, f.UN)(e)))
-  }, [e, j, n]);
+    i && null == S.current._ref && (null == S.current._ref ? (x(n), S.current.start(v, () => x(n))) : i || null == S.current._ref || (S.current.stop(), (0, f.UN)(e)))
+  }, [e, x, n]);
   r.useEffect(() => {
     let e = S.current;
-    return u.Z.addChangeListener(x), x(), (0, a.vM)(t.getAvatarURL(null, h.Ks)), () => {
-      u.Z.removeChangeListener(x), e.stop()
+    return u.Z.addChangeListener(j), j(), (0, a.vM)(t.getAvatarURL(null, h.Ks)), () => {
+      u.Z.removeChangeListener(j), e.stop()
     }
   })
 }

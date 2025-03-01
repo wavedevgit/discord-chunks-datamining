@@ -16,15 +16,15 @@ var r = n(200651),
   m = n(194082),
   p = n(710845),
   h = n(590293),
-  b = n(863908),
-  v = n(871118),
+  v = n(863908),
+  b = n(871118),
   g = n(517525),
   y = n(352978),
   E = n(576645),
   O = n(590076),
   S = n(507675),
-  j = n(199902),
-  x = n(314897),
+  x = n(199902),
+  j = n(314897),
   Z = n(592125),
   C = n(131951),
   w = n(451478),
@@ -52,7 +52,7 @@ function V(e) {
     idle: o,
     width: s,
     premiumIndicator: c
-  } = e, u = (0, a.e7)([j.Z], () => j.Z.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, k.K)(s), [f, p] = i.useState(!1), h = (0, a.e7)([Z.Z], () => Z.Z.getChannel(null == u ? void 0 : u.channelId));
+  } = e, u = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, k.K)(s), [f, p] = i.useState(!1), h = (0, a.e7)([Z.Z], () => Z.Z.getChannel(null == u ? void 0 : u.channelId));
   return (0, E.J)(h, () => {
     let e = setTimeout(() => {
         p(!0)
@@ -89,11 +89,11 @@ function Y(e) {
     width: D,
     focused: k,
     wrapperClassName: V
-  } = e, Y = C.Z.getVideoComponent(), H = (0, a.e7)([x.default], () => x.default.getId()), K = (0, h.Z)(), {
+  } = e, Y = C.Z.getVideoComponent(), H = (0, a.e7)([j.default], () => j.default.getId()), K = (0, h.Z)(), {
     stream: G,
     user: B,
     streamId: q
-  } = t, J = (0, a.e7)([Z.Z], () => Z.Z.getChannel(G.channelId)), X = (0, a.e7)([j.Z], () => j.Z.getActiveStreamForUser(B.id, G.guildId), [B.id, G.guildId]), Q = (0, a.e7)([j.Z], () => j.Z.getAllActiveStreams().length > 0), $ = (0, a.e7)([w.Z], () => w.Z.isFocused()), ee = (null == X ? void 0 : X.ownerId) === H, et = ee && !$ && !g, en = null != X ? (0, b.Z)(X, B, B.id === H, et) : null, er = D < 195;
+  } = t, J = (0, a.e7)([Z.Z], () => Z.Z.getChannel(G.channelId)), X = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(B.id, G.guildId), [B.id, G.guildId]), Q = (0, a.e7)([x.Z], () => x.Z.getAllActiveStreams().length > 0), $ = (0, a.e7)([w.Z], () => w.Z.isFocused()), ee = (null == X ? void 0 : X.ownerId) === H, et = ee && !$ && !g, en = null != X ? (0, v.Z)(X, B, B.id === H, et) : null, er = D < 195;
   if ((0, d.ZP)(() => {
       !Q && (null == J ? void 0 : J.isGuildStageVoice()) && !ee && ((0, u.rn)(G), c.Z.updateStageStreamSize(G.channelId, !1))
     }), i.useEffect(() => {
@@ -123,7 +123,7 @@ function Y(e) {
     className: o()(U.content, U.streamPreview, {
       [U.small]: er
     }),
-    children: [(0, r.jsx)(v.Z, {
+    children: [(0, r.jsx)(b.Z, {
       noImage: !0,
       noText: !0,
       className: o()(U.absoluteFill, {

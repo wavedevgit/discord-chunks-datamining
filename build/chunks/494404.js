@@ -1,6 +1,6 @@
 /** Chunk was on 72453 **/
 n.d(t, {
-  ZP: () => D,
+  ZP: () => L,
   h4: () => w,
   nH: () => Z
 }), n(47120), n(653041);
@@ -153,7 +153,7 @@ let R = d.ZP.connectStores([O.Z], e => {
   }
 })(k);
 
-function L(e) {
+function D(e) {
   let {
     analyticsName: t,
     items: n,
@@ -167,7 +167,7 @@ function L(e) {
     scrollerClassName: x,
     className: O,
     listName: w
-  } = e, Z = i.useRef(null), k = (0, f.Z)(w, Z), R = (0, d.e7)([E.ZP], () => E.ZP.hasNotice()), L = (0, d.e7)([j.Z], () => j.Z.windowSize()), D = (0, g.Q3)("ItemsPopout");
+  } = e, Z = i.useRef(null), k = (0, f.Z)(w, Z), R = (0, d.e7)([E.ZP], () => E.ZP.hasNotice()), D = (0, d.e7)([j.Z], () => j.Z.windowSize()), L = (0, g.Q3)("ItemsPopout");
   i.useEffect(() => {
     N.default.track(I.rMx.OPEN_POPOUT, {
       type: t
@@ -235,9 +235,9 @@ function L(e) {
       })
     }) : null,
     H = {
-      maxHeight: L.height - 43 - 25
+      maxHeight: D.height - 43 - 25
     };
-  R && (H.maxHeight -= 40), D && (H.maxHeight -= 48);
+  R && (H.maxHeight -= 40), L && (H.maxHeight -= 48);
   let V = null != p && a;
   return (0, r.jsx)("div", {
     className: o()(O, T.messagesPopoutWrap),
@@ -306,7 +306,7 @@ function L(e) {
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     analyticsName: t,
     onFetch: n,
@@ -364,7 +364,7 @@ function D(e) {
     message: e,
     channel: a
   })), [o, a]);
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(D, {
     className: j,
     scrollerClassName: E,
     items: w,

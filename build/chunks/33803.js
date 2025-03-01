@@ -35,8 +35,8 @@ var r = n(200651),
   Z = n(348238),
   k = n(38267),
   R = n(83561),
-  L = n(834129),
-  D = n(959517),
+  D = n(834129),
+  L = n(959517),
   M = n(981631),
   W = n(674563),
   F = n(590433),
@@ -96,7 +96,7 @@ function z(e, t) {
     popouts: n,
     selected: r,
     setPopout: a
-  } = (0, k.Z)(e.id, D.d$), {
+  } = (0, k.Z)(e.id, L.d$), {
     usernameProfile: o,
     avatarProfile: l
   } = n, s = (0, Z.wq)(e.author.id, t.id), c = (0, Z.RN)(e.author.id, t.id, e.id), d = (0, Z.XO)(e, t, o, a);
@@ -303,7 +303,7 @@ function ee(e) {
   } = C, T = V(C, ["onFocus"]), {
     isFocused: w,
     handleFocus: k,
-    handleBlur: D
+    handleBlur: L
   } = (0, Z.bb)(S), K = (0, u.e7)([f.Z], () => f.Z.keyboardModeEnabled), q = (0, u.e7)([E.Z], () => E.Z.can(M.Plq.MANAGE_MESSAGES, s), [s]), {
     ruleName: Q,
     embedChannel: ee,
@@ -335,7 +335,7 @@ function ee(e) {
   return (0, r.jsx)("div", {
     onMouseEnter: j,
     onMouseLeave: N,
-    children: (0, r.jsx)(L.Z, {
+    children: (0, r.jsx)(D.Z, {
       className: o()(B.mainContainer, {
         [B.compact]: a
       }),
@@ -449,7 +449,7 @@ function ee(e) {
             popoutProps: ef,
             zalgo: !0,
             onFocus: k,
-            onBlur: D,
+            onBlur: L,
             onClick: eg
           }))
         }), (0, r.jsx)(Y, {

@@ -1,23 +1,23 @@
 /** Chunk was on 96888 **/
 n.d(t, {
-  Z: () => l
+  Z: () => s
 });
 var o = n(131951),
-  a = n(626135),
-  i = n(981631);
+  i = n(626135),
+  a = n(981631);
 
-function l(e, t, n, l, s) {
+function s(e, t, n, s, l) {
   let r = o.Z.getSettings(),
     c = o.Z.getInputDeviceId(),
     u = o.Z.getInputDevices()[c],
     d = o.Z.getOutputDeviceId(),
-    b = o.Z.getOutputDevices()[d],
-    _ = o.Z.getVideoDeviceId(),
-    m = o.Z.getVideoDevices()[_],
+    _ = o.Z.getOutputDevices()[d],
+    m = o.Z.getVideoDeviceId(),
+    b = o.Z.getVideoDevices()[m],
     h = o.Z.getNoiseCancellation(),
-    f = o.Z.getMediaEngine().getAudioSubsystem(),
-    p = o.Z.getMediaEngine().getAudioLayer();
-  a.default.track(i.rMx.CALL_REPORT_PROBLEM, function(e) {
+    p = o.Z.getMediaEngine().getAudioSubsystem(),
+    f = o.Z.getMediaEngine().getAudioLayer();
+  i.default.track(a.rMx.CALL_REPORT_PROBLEM, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         o = Object.keys(n);
@@ -38,7 +38,7 @@ function l(e, t, n, l, s) {
     rating: null != e ? e : "no response",
     reason_code: t,
     reason_description: n,
-    feedback: l,
+    feedback: s,
     audio_input_mode: r.mode,
     automatic_audio_input_sensitivity_enabled: r.modeOptions.autoThreshold,
     audio_input_sensitivity: r.modeOptions.threshold,
@@ -48,10 +48,10 @@ function l(e, t, n, l, s) {
     voice_output_volume: r.outputVolume,
     noise_cancellation_enabled: h,
     input_device_name: null == u ? void 0 : u.name,
-    output_device_name: null == b ? void 0 : b.name,
-    video_device_name: null == m ? void 0 : m.name,
-    audio_subsystem: f,
-    audio_layer: p,
+    output_device_name: null == _ ? void 0 : _.name,
+    video_device_name: null == b ? void 0 : b.name,
+    audio_subsystem: p,
+    audio_layer: f,
     automatic_audio_subsystem: r.automaticAudioSubsystem
-  }, s))
+  }, l))
 }

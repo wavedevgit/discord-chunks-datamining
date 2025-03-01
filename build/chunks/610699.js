@@ -35,8 +35,8 @@ var r = n(200651),
   Z = n(981631),
   k = n(245335),
   R = n(388032),
-  L = n(40774);
-let D = (0, A.Mg)(d.Z.EMBEDDED_APPLICATION_INVITE_IMAGE_WIDTH_LARGE),
+  D = n(40774);
+let L = (0, A.Mg)(d.Z.EMBEDDED_APPLICATION_INVITE_IMAGE_WIDTH_LARGE),
   M = (0, A.Mg)(d.Z.EMBEDDED_APPLICATION_INVITE_IMAGE_WIDTH_SMALL),
   W = (0, A.Mg)(d.Z.EMBEDDED_APPLICATION_INVITE_CONTENT_WIDTH);
 
@@ -48,31 +48,31 @@ function F(e) {
     isStacked: a
   } = e, l = [];
   return null != n && n > 0 && l.push((0, r.jsxs)("div", {
-    className: L.statusWrapper,
+    className: D.statusWrapper,
     children: [(0, r.jsx)("i", {
-      className: L.statusOnline
+      className: D.statusOnline
     }), (0, r.jsx)(u.Text, {
       variant: "text-xs/normal",
-      className: L.count,
+      className: D.count,
       children: R.NW.format(R.t["LC+S+v"], {
         membersOnline: n
       })
     })]
   }, "onlineCount")), null != t && l.push((0, r.jsxs)("div", {
-    className: L.statusWrapper,
+    className: D.statusWrapper,
     children: [(0, r.jsx)("i", {
-      className: L.statusOffline
+      className: D.statusOffline
     }), (0, r.jsx)(u.Text, {
       variant: "text-xs/normal",
-      className: L.count,
+      className: D.count,
       children: R.NW.format(R.t.zRl6XV, {
         count: t
       })
     })]
   }, "memberCount")), (0, r.jsx)("div", {
-    className: o()(L.statusCounts, {
-      [L.large]: i,
-      [L.stacked]: a
+    className: o()(D.statusCounts, {
+      [D.large]: i,
+      [D.stacked]: a
     }),
     children: l
   })
@@ -88,12 +88,12 @@ function U(e) {
   if (null != t && null != n) {
     let e = (0, x.KS)(t, n);
     return (0, r.jsxs)("div", {
-      className: o()(L.channel, {
-        [L.stacked]: i,
-        [L.ended]: a
+      className: o()(D.channel, {
+        [D.stacked]: i,
+        [D.ended]: a
       }),
       children: [null != e ? (0, r.jsx)(e, {
-        className: L.channelIcon,
+        className: D.channelIcon,
         size: "xs",
         color: "currentColor"
       }) : null, (0, r.jsx)(O.Z, {
@@ -108,9 +108,9 @@ function U(e) {
     })
   }
   return null != n ? (0, r.jsx)("div", {
-    className: o()(L.channel, {
-      [L.stacked]: i,
-      [L.ended]: a
+    className: o()(D.channel, {
+      [D.stacked]: i,
+      [D.ended]: a
     }),
     children: (0, r.jsx)(O.Z, {
       children: (0, r.jsx)(u.Text, {
@@ -158,7 +158,7 @@ function B(e) {
     let e = new ResizeObserver(() => (function() {
         var e;
         let t = null === (e = V.current) || void 0 === e ? void 0 : e.offsetWidth;
-        null != t && (K(t < W + M), X(t <= 2 * D))
+        null != t && (K(t < W + M), X(t <= 2 * L))
       })()),
       t = V.current;
     return null != t && e.observe(t), () => {
@@ -187,7 +187,7 @@ function B(e) {
     } = (0, v.ZP)(b.Z.INVITE_EMBED),
     el = (0, h.Z)({
       applicationId: H.id,
-      size: D,
+      size: L,
       names: ["embedded_cover"]
     }),
     es = (0, c.Wu)([f.ZP], () => null != ei ? f.ZP.getEmbeddedActivitiesForChannel(ei.id).filter(e => e.applicationId === H.id).flatMap(e => Array.from(e.userIds)) : [], [ei, H.id]),
@@ -207,36 +207,36 @@ function B(e) {
   }
   let em = ep && !ea || ep && en;
   return (ep && en && (l = R.NW.string(R.t.wJNK8P)), ea || (l = R.NW.string(R.t.hHGrW1)), d = en ? R.NW.string(R.t.KC26NT) : er || !ep ? R.NW.string(R.t.VJlc0d) : R.NW.string(R.t.I0v0Qk), null == x.code || "" === x.code) ? null : (0, r.jsxs)("div", {
-    className: L.container,
+    className: D.container,
     ref: $,
     children: [(0, r.jsx)("div", {
-      className: o()(L.imgContainer, {
-        [L.large]: z,
-        [L.stacked]: Y
+      className: o()(D.imgContainer, {
+        [D.large]: z,
+        [D.stacked]: Y
       }),
       children: (0, r.jsx)(g.Z, {
         imageBackground: el,
         applicationName: null !== (a = null == et ? void 0 : et.name) && void 0 !== a ? a : "",
-        imageClassName: o()(L.img, {
-          [L.large]: z,
-          [L.stacked]: Y
+        imageClassName: o()(D.img, {
+          [D.large]: z,
+          [D.stacked]: Y
         }),
-        imageNotFoundClassName: o()(L.brokenImg, {
-          [L.large]: z,
-          [L.stacked]: Y
+        imageNotFoundClassName: o()(D.brokenImg, {
+          [D.large]: z,
+          [D.stacked]: Y
         })
       })
     }), (0, r.jsxs)(E.Z, {
-      className: o()(L.content, {
-        [L.large]: z,
-        [L.stacked]: Y
+      className: o()(D.content, {
+        [D.large]: z,
+        [D.stacked]: Y
       }),
       children: [(0, r.jsxs)("div", {
-        className: L.info,
+        className: D.info,
         children: [(0, r.jsx)(u.vwX, {
           children: ep ? R.NW.string(R.t["1ckx+P"]) : R.NW.string(R.t.BoQUFR)
         }), (0, r.jsx)(u.X6q, {
-          className: L.heading,
+          className: D.heading,
           variant: "heading-xl/semibold",
           children: null == et ? void 0 : et.name
         }), (0, r.jsx)(U, {
@@ -246,13 +246,13 @@ function B(e) {
           hasEnded: !er
         })]
       }), (0, r.jsxs)("div", {
-        className: o()(L.currentState, {
-          [L.large]: z,
-          [L.split]: !er && Y
+        className: o()(D.currentState, {
+          [D.large]: z,
+          [D.split]: !er && Y
         }),
         children: [!er && ep ? (0, r.jsxs)("div", {
-          className: o()(L.endedNote, {
-            [L.large]: z
+          className: o()(D.endedNote, {
+            [D.large]: z
           }),
           children: [(0, r.jsx)(u.Text, {
             variant: "text-xs/medium",
@@ -267,9 +267,9 @@ function B(e) {
           isLarge: z,
           isStacked: Y
         }), (0, r.jsxs)("div", {
-          className: L.cta,
+          className: D.cta,
           children: [null != ee && er ? (0, r.jsx)("div", {
-            className: L.avatars,
+            className: D.avatars,
             children: (0, r.jsx)(_.Z, {
               guildId: ee.id,
               users: ec,
@@ -314,11 +314,11 @@ function B(e) {
                 }
                 return e
               }({
-                className: L.actionButton,
+                className: D.actionButton,
                 onClick: () => {
                   ed(), null == i || i()
                 },
-                wrapperClassName: L.tooltipButtonWrapper
+                wrapperClassName: D.tooltipButtonWrapper
               }, a), n = n = {
                 submitting: eu,
                 disabled: em,

@@ -3,10 +3,10 @@ n.d(t, {
   Z: () => d
 });
 var o = n(200651),
-  a = n(120356),
-  i = n.n(a),
-  l = n(481060),
-  s = n(572539),
+  i = n(120356),
+  a = n.n(i),
+  s = n(481060),
+  l = n(572539),
   r = n(531578),
   c = n(685046);
 let u = {
@@ -27,33 +27,33 @@ function d(e) {
   let {
     ratingOptions: t = r.rN,
     emojiKind: n = "face",
-    textLabels: a,
+    textLabels: i,
     selectedRating: d,
-    onChangeRating: b
+    onChangeRating: _
   } = e;
-  return null != a ? (0, o.jsx)("div", {
+  return null != i ? (0, o.jsx)("div", {
     className: c.textLabels,
-    children: (0, o.jsx)(s.Z, {
+    children: (0, o.jsx)(l.Z, {
       options: t.map(e => ({
         label: (0, o.jsxs)("div", {
           className: c.textLabel,
           children: [(0, o.jsx)("div", {
             className: u[e][n]
-          }), a[e]]
+          }), i[e]]
         }),
         value: e,
-        className: i()(c.emojiContainer, d === e ? c.selected : null)
+        className: a()(c.emojiContainer, d === e ? c.selected : null)
       })),
-      onClick: e => b(e.value)
+      onClick: e => _(e.value)
     })
   }) : (0, o.jsx)("div", {
-    className: i()(c.ratingSelector, c.emojis),
-    children: t.map(e => (0, o.jsx)(l.P3F, {
-      onClick: () => b(e),
+    className: a()(c.ratingSelector, c.emojis),
+    children: t.map(e => (0, o.jsx)(s.P3F, {
+      onClick: () => _(e),
       "aria-label": e,
       className: c.emojiContainer,
       children: (0, o.jsx)("div", {
-        className: i()(u[e][n], d === e ? c.selected : null)
+        className: a()(u[e][n], d === e ? c.selected : null)
       })
     }, e))
   })

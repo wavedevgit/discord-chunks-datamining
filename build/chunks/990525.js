@@ -62,8 +62,8 @@ let y = e => {
     } = (0, d.Z)(null != T ? T[P] : null, {
       soundId: t.id
     }),
-    L = b[t.styleKey],
-    D = i.useCallback(() => {
+    D = b[t.styleKey],
+    L = i.useCallback(() => {
       n || !j ? ((0, p.v6)(y === t.id ? null : t.id, a), N && u.default.track(g.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, v({
         voice_filter_id: t.id
       }, (0, m.w)(a)))) : (0, c.i)()
@@ -77,13 +77,13 @@ let y = e => {
     }, [a, Z, P, T, t.id]),
     W = null != O ? _.NW.string(O.name) : "";
   return (0, r.jsxs)("div", {
-    className: o()(b.filter, L, {
+    className: o()(b.filter, D, {
       [b.selected]: E,
       [b.locked]: j && !E
     }),
     children: [(0, r.jsxs)(s.P3F, {
       className: b.selector,
-      onClick: D,
+      onClick: L,
       onMouseEnter: R,
       children: [(0, r.jsxs)("div", {
         className: b.iconTreatmentsWrapper,

@@ -78,7 +78,7 @@ function x(e) {
       size: "xs",
       color: "currentColor"
     })
-  }) : null, k = null != o, R = null != y && !1 === P, L = k || R, D = 0 === x ? _.bannerAspectRatioBot : _.bannerAspectRatioActivity, M = a.useRef(null), W = a.useCallback(() => {
+  }) : null, k = null != o, R = null != y && !1 === P, D = k || R, L = 0 === x ? _.bannerAspectRatioBot : _.bannerAspectRatioActivity, M = a.useRef(null), W = a.useCallback(() => {
     let e = M.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), F = a.useMemo(() => !!R && new URL(y).pathname.endsWith(".gif"), [R, y]);
@@ -87,8 +87,8 @@ function x(e) {
     className: l()(_.embed, {
       [_.showVideoOnFocus]: R
     }),
-    children: [L && (0, i.jsxs)("div", {
-      className: l()(_.bannerWrapper, D),
+    children: [D && (0, i.jsxs)("div", {
+      className: l()(_.bannerWrapper, L),
       children: [R && (F ? (0, i.jsx)("div", {
         className: _.videoBanner,
         style: {

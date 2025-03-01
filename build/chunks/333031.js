@@ -1,6 +1,6 @@
 /** Chunk was on 12416 **/
 n.d(t, {
-  Z: () => x
+  Z: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(928518),
   p = n(237997),
   h = n(358085),
-  b = n(306381),
-  v = n(610394),
+  v = n(306381),
+  b = n(610394),
   g = n(561064),
   y = n(501787),
   E = n(898104);
@@ -39,7 +39,7 @@ function S(e, t) {
     bottom: Math.ceil(t.bottom)
   }
 }
-let j = i.createContext(new class {
+let x = i.createContext(new class {
   observe(e) {
     var t;
     if (null == this.resizeObserver && (this.resizeObserver = new this.window.ResizeObserver(this.handleResize)), null == this.mutationObserver) {
@@ -105,12 +105,12 @@ let j = i.createContext(new class {
   }
 }((0, g.i)()));
 
-function x(e) {
+function j(e) {
   let {
     observe: t = !0,
     className: n,
     children: l
-  } = e, a = i.useContext(j), s = (0, u.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(b.G.ClickZones)), c = (0, u.e7)([p.default], () => p.default.disableClickableRegions), [{
+  } = e, a = i.useContext(x), s = (0, u.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(v.G.ClickZones)), c = (0, u.e7)([p.default], () => p.default.disableClickableRegions), [{
     refHandler: d,
     setObserve: f
   }] = i.useState(() => {

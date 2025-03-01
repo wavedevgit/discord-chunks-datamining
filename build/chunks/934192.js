@@ -40,15 +40,15 @@ function N(e) {
   } = e, [{
     preset: N,
     resolution: Z,
-    fps: b,
-    sourceType: O
-  }, y] = (0, g.E_)(), C = (0, i.e7)([m.default], () => m.default.getCurrentUser()), P = (0, i.e7)([d.Z, c.Z], () => c.Z.getChannel(d.Z.getVoiceChannelId())), E = null == P ? void 0 : P.getGuildId(), T = (0, i.e7)([u.Z], () => {
+    fps: O,
+    sourceType: b
+  }, y] = (0, g.E_)(), P = (0, i.e7)([m.default], () => m.default.getCurrentUser()), C = (0, i.e7)([d.Z, c.Z], () => c.Z.getChannel(d.Z.getVoiceChannelId())), E = null == C ? void 0 : C.getGuildId(), I = (0, i.e7)([u.Z], () => {
     var e;
     return null != E ? null === (e = u.Z.getGuild(E)) || void 0 === e ? void 0 : e.premiumTier : null
-  }), [I, w] = null !== (t = (0, h.Z)(N, C, T)) && void 0 !== t ? t : [v.LY.RESOLUTION_720, v.ws.FPS_30], _ = [{
+  }), [T, w] = null !== (t = (0, h.Z)(N, P, I)) && void 0 !== t ? t : [v.LY.RESOLUTION_720, v.ws.FPS_30], _ = [{
     value: v.tI.PRESET_VIDEO,
     label: f.NW.string(f.t.HcwHc3)
-  }, ...O === s.vA.CAMERA ? [] : [{
+  }, ...b === s.vA.CAMERA ? [] : [{
     value: v.tI.PRESET_DOCUMENTS,
     label: f.NW.string(f.t["rCa/jI"])
   }], {
@@ -63,7 +63,7 @@ function N(e) {
   }, {
     value: v.LY.RESOLUTION_1440,
     label: "".concat(v.LY.RESOLUTION_1440, "p")
-  }, ...O === s.vA.CAMERA ? [] : [{
+  }, ...b === s.vA.CAMERA ? [] : [{
     value: v.LY.RESOLUTION_SOURCE,
     label: f.NW.string(f.t.XjXqzs)
   }]], W = [{
@@ -77,14 +77,14 @@ function N(e) {
     label: "".concat(v.ws.FPS_60, "fps")
   }];
   return l.useEffect(() => {
-    (0, p.Z)(N, Z, b, C, T) || (y({
+    (0, p.Z)(N, Z, O, P, I) || (y({
       type: "set_resolution",
-      resolution: I
+      resolution: T
     }), y({
       type: "set_fps",
       fps: w
     }))
-  }, [N, y, Z, b, C, T, I, w]), (0, r.jsxs)("div", {
+  }, [N, y, Z, O, P, I, T, w]), (0, r.jsxs)("div", {
     className: j.root,
     children: [(0, r.jsx)(a.PhF, {
       popoutPosition: "top",
@@ -99,7 +99,7 @@ function N(e) {
     }), N !== v.tI.PRESET_CUSTOM && (0, r.jsxs)(a.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      children: [I === v.LY.RESOLUTION_SOURCE ? f.NW.string(f.t.XjXqzs) : "".concat(I, "p"), ", ", w, "fps"]
+      children: [T === v.LY.RESOLUTION_SOURCE ? f.NW.string(f.t.XjXqzs) : "".concat(T, "p"), ", ", w, "fps"]
     }), N === v.tI.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.PhF, {
         popoutWidth: "auto",
@@ -109,7 +109,7 @@ function N(e) {
           label: e.label
         }) : e.label,
         select: e => {
-          (0, p.Z)(N, e, b, C, T) ? y({
+          (0, p.Z)(N, e, O, P, I) ? y({
             type: "set_resolution",
             resolution: e
           }): (0, x.E)({
@@ -128,7 +128,7 @@ function N(e) {
           label: e.label
         }) : e.label,
         select: e => {
-          (0, p.Z)(N, Z, e, C, T) ? y({
+          (0, p.Z)(N, Z, e, P, I) ? y({
             type: "set_fps",
             fps: e
           }): (0, x.E)({
@@ -136,7 +136,7 @@ function N(e) {
             onClose: n
           })
         },
-        isSelected: e => e === b,
+        isSelected: e => e === O,
         serialize: String,
         options: W
       })]

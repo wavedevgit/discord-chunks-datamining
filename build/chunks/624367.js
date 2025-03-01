@@ -40,18 +40,18 @@ function T(e) {
     linkId: Z
   } = e, {
     analyticsLocations: k
-  } = (0, c.ZP)(s.Z.ACTIVITY_BOOKMARK), [R] = (0, _.Z)([T]), L = (0, a.e7)([b.Z], () => {
+  } = (0, c.ZP)(s.Z.ACTIVITY_BOOKMARK), [R] = (0, _.Z)([T]), D = (0, a.e7)([b.Z], () => {
     var e;
     return null !== (e = b.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }), D = null == R ? void 0 : null === (t = R.bot) || void 0 === t ? void 0 : t.id, M = null != R && (0, d.ye)(R), W = (0, E.ZP)(null !== (o = null == R ? void 0 : R.maxParticipants) && void 0 !== o ? o : 0), F = (0, j.Z)({
+  }), L = null == R ? void 0 : null === (t = R.bot) || void 0 === t ? void 0 : t.id, M = null != R && (0, d.ye)(R), W = (0, E.ZP)(null !== (o = null == R ? void 0 : R.maxParticipants) && void 0 !== o ? o : 0), F = (0, j.Z)({
     applicationId: T,
     size: S,
     names: ["embedded_cover"]
-  }), U = null !== (v = null == R ? void 0 : R.id) && void 0 !== v ? v : "0", B = (0, y.TK)(U, (0, p.PL)(!0, !1)), G = (0, y.TK)(U, (0, p.LD)(L, !1)), H = async () => {
-    if (null != D && (null == R ? void 0 : R.id) != null) try {
+  }), U = null !== (v = null == R ? void 0 : R.id) && void 0 !== v ? v : "0", B = (0, y.TK)(U, (0, p.PL)(!0, !1)), G = (0, y.TK)(U, (0, p.LD)(D, !1)), H = async () => {
+    if (null != L && (null == R ? void 0 : R.id) != null) try {
       await (0, u.W)({
         appId: R.id,
-        botId: D,
+        botId: L,
         analyticsLocations: k,
         customId: P,
         referrerId: A
@@ -119,7 +119,7 @@ function T(e) {
               onClick: () => {
                 var e;
                 null != R && (i.Y.USER_INSTALL in (null !== (e = R.integrationTypesConfig) && void 0 !== e ? e : {}) || B || G ? (0, d.X)(R.id) : (0, f.dx)({
-                  guildId: L,
+                  guildId: D,
                   view: m.eN.APPLICATION,
                   applicationId: R.id,
                   entrypoint: {

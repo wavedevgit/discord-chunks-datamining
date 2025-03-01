@@ -101,13 +101,13 @@ function T(e, t) {
     Z = null != w ? u.ZP.getSelfMember(w) : null,
     k = (0, s.EY)(Z),
     R = (0, c.b)(Z),
-    L = !b && C && !T && m && !k && !R;
+    D = !b && C && !T && m && !k && !R;
   return {
     poll: l,
     canTapAnswers: A,
     canRemoveVote: T && m && !h,
     canShowVoteCounts: P,
-    canSubmitVote: L,
+    canSubmitVote: D,
     expirationLabel: f,
     hasSelectedAnswer: C,
     hasVoted: T,
@@ -149,8 +149,8 @@ function P(e, t) {
     canTapAnswers: Z,
     canRemoveVote: k,
     canShowVoteCounts: R,
-    canSubmitVote: L,
-    expirationLabel: D = j.NW.string(j.t["e+J3JS"]),
+    canSubmitVote: D,
+    expirationLabel: L = j.NW.string(j.t["e+J3JS"]),
     hasSelectedAnswer: M,
     hasVoted: W,
     isEditingVote: F,
@@ -229,7 +229,7 @@ function P(e, t) {
     }
   }), J = (0, r.EQ)({
     isExpired: U,
-    canSubmitVote: L,
+    canSubmitVote: D,
     hasVoted: W,
     isEditingVote: F,
     canRemoveVote: k,
@@ -264,7 +264,7 @@ function P(e, t) {
   })).otherwise(() => ({
     label: j.NW.string(j.t.JwkNU1),
     presentation: "button",
-    enabled: L,
+    enabled: D,
     type: "submit"
   })), $ = (0, g.isIOS)() ? j.NW.string(j.t.PVATMz) : j.NW.string(j.t.cHfFqq), ee = (0, r.EQ)({
     isExpired: U,
@@ -286,7 +286,7 @@ function P(e, t) {
     type: "cancel"
   })).otherwise(() => ({
     label: X,
-    secondaryLabel: D,
+    secondaryLabel: L,
     accessibilityHint: $,
     presentation: "text",
     enabled: !0,

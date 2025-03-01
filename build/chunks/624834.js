@@ -1,6 +1,6 @@
 /** Chunk was on 12416 **/
 n.d(t, {
-  Z: () => x
+  Z: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -15,16 +15,16 @@ var r = n(200651),
   m = n(778569),
   p = n(100527),
   h = n(906732),
-  b = n(835473),
-  v = n(314897),
+  v = n(835473),
+  b = n(314897),
   g = n(592125),
   y = n(594174),
   E = n(849171),
   O = n(981631),
   S = n(388032),
-  j = n(984270);
+  x = n(984270);
 
-function x(e) {
+function j(e) {
   let {
     participant: t,
     width: n,
@@ -33,7 +33,7 @@ function x(e) {
     analyticsLocations: o
   } = (0, h.ZP)(p.Z.PRESENCE_ACTIVITY_TILE), {
     activity: a
-  } = t, s = a.application_id, [c] = (0, b.Z)([s]), {
+  } = t, s = a.application_id, [c] = (0, v.Z)([s]), {
     url: u
   } = (0, m.Z)({
     applicationId: s,
@@ -46,9 +46,9 @@ function x(e) {
   return (0, r.jsx)(h.Gt, {
     value: o,
     children: (0, r.jsxs)("div", {
-      className: j.container,
+      className: x.container,
       children: [null != c && null != s && null != u && "" !== u ? (0, r.jsx)("img", {
-        className: j.splashImage,
+        className: x.splashImage,
         alt: c.name,
         src: u
       }) : null, null != c && null != s ? (0, r.jsx)(Z, {
@@ -67,7 +67,7 @@ function Z(e) {
     channelId: n,
     participant: l,
     applicationId: m
-  } = e, p = (0, E.V_)(t), [x] = (0, E.Ym)(t), Z = (0, a.e7)([g.Z], () => g.Z.getChannel(n)), C = (0, a.e7)([y.default, v.default], () => (0, d.J)(l, v.default) ? null : y.default.getUser(l.userId)), w = i.useMemo(() => null != C ? [C] : [], [C]), P = (0, b.q)(m), {
+  } = e, p = (0, E.V_)(t), [j] = (0, E.Ym)(t), Z = (0, a.e7)([g.Z], () => g.Z.getChannel(n)), C = (0, a.e7)([y.default, b.default], () => (0, d.J)(l, b.default) ? null : y.default.getUser(l.userId)), w = i.useMemo(() => null != C ? [C] : [], [C]), P = (0, v.q)(m), {
     analyticsLocations: N
   } = (0, h.ZP)(), I = (0, c.O)(), _ = l.activity.session_id, R = (0, f.Z)(l.activity, O.xjy.EMBEDDED) && (0, f.Z)(l.activity, O.xjy.CONTEXTLESS), [T, A] = i.useState(!1), D = null == C ? void 0 : C.id, k = i.useCallback(async e => {
     e.stopPropagation(), null != m && null != D && (A(!0), await (0, u.Z)({
@@ -82,35 +82,35 @@ function Z(e) {
     }), A(!1))
   }, [m, D, I.location, N, _, n, R]);
   return null == Z || null == C || null == P ? null : (0, r.jsxs)("div", {
-    className: j.splash,
+    className: x.splash,
     children: [(0, r.jsx)(E.OV, {
-      avatarSize: x,
+      avatarSize: j,
       guildId: Z.guild_id,
       channelId: Z.id,
       users: w
     }), (0, r.jsx)(s.Text, {
-      className: o()(j.subheader, {
-        [j.small]: p === E.nR.SMALL,
-        [j.medium]: p === E.nR.MEDIUM
+      className: o()(x.subheader, {
+        [x.small]: p === E.nR.SMALL,
+        [x.medium]: p === E.nR.MEDIUM
       }),
       variant: "text-sm/normal",
       children: S.NW.formatToPlainString(S.t["7Uuia2"], {
         username: C.username
       })
     }), (0, r.jsx)(s.Text, {
-      className: o()(j.header, {
-        [j.small]: p === E.nR.SMALL,
-        [j.medium]: p === E.nR.MEDIUM
+      className: o()(x.header, {
+        [x.small]: p === E.nR.SMALL,
+        [x.medium]: p === E.nR.MEDIUM
       }),
       variant: "text-sm/normal",
       children: P.name
     }), (0, r.jsx)("div", {
-      className: j.buttons,
+      className: x.buttons,
       children: (0, r.jsx)(s.zxk, {
         onClick: k,
         submitting: T,
         size: (0, E.ac)(p),
-        className: j.button,
+        className: x.button,
         color: s.zxk.Colors.PRIMARY,
         children: S.NW.string(S.t["4i2vj4"])
       })

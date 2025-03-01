@@ -1,6 +1,6 @@
 /** Chunk was on 72453 **/
 n.d(t, {
-  Z: () => D
+  Z: () => L
 }), n(301563), n(757143);
 var r = n(200651),
   i = n(192379),
@@ -44,7 +44,7 @@ function Z(e, t, n) {
 n(573403);
 let k = (0, v.hQ)(),
   R = c()(p.yC, 500);
-class L extends i.PureComponent {
+class D extends i.PureComponent {
   componentDidMount() {
     var e, t;
     j.S.subscribe(P.CkL.PERFORM_SEARCH, this.search), j.S.subscribe(P.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), j.S.subscribe(P.CkL.FOCUS_SEARCH, this.handleFocusSearch), null === (t = this._editorRef) || void 0 === t || null === (e = t.editor) || void 0 === e || e.setAttribute("aria-haspopup", "listbox")
@@ -376,7 +376,7 @@ class L extends i.PureComponent {
     }), C.WU()
   }
 }
-let D = d.ZP.connectStores([_.Z, O.Z], () => {
+let L = d.ZP.connectStores([_.Z, O.Z], () => {
   var e;
   let t = O.Z.getCurrentSearchId(),
     n = O.Z.getSearchType(),
@@ -391,4 +391,4 @@ let D = d.ZP.connectStores([_.Z, O.Z], () => {
     hasResults: O.Z.hasResults(t),
     keyboardModeEnabled: a
   }
-})(L)
+})(D)

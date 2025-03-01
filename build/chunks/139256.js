@@ -1,7 +1,7 @@
 /** Chunk was on 72453 **/
 n.d(t, {
   $e: () => w,
-  $w: () => D,
+  $w: () => L,
   Og: () => W,
   ZY: () => M,
   sc: () => R,
@@ -274,14 +274,14 @@ function R(e) {
   })
 }
 
-function L(e, t) {
+function D(e, t) {
   return null != e ? (0, r.jsx)("div", {
     className: e,
     children: t
   }) : t
 }
 
-function D(e) {
+function L(e) {
   let {
     media: t,
     containerClassName: n,
@@ -296,12 +296,12 @@ function D(e) {
       var n;
       return e.id === (null === (n = t.attachmentIds) || void 0 === n ? void 0 : n[0])
     });
-    if (null != e) return L(n, (0, r.jsx)(k, {
+    if (null != e) return D(n, (0, r.jsx)(k, {
       className: i,
       attachment: e
     }))
   }
-  return null != t.emoji ? L(n, (0, r.jsx)(R, {
+  return null != t.emoji ? D(n, (0, r.jsx)(R, {
     className: a,
     emoji: t.emoji
   })) : void 0 !== o ? o : null

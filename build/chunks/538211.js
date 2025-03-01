@@ -2,33 +2,33 @@
 n.d(t, {
   Z: () => l
 });
-var a = n(70722),
-  r = n(388032);
+var r = n(70722),
+  a = n(388032);
 
 function l(e, t) {
   return [{
-    value: a.kr.BLACK_SCREEN,
-    label: t ? r.NW.string(r.t["0X5Zbm"]) : r.NW.string(r.t.fxiRNj)
+    value: r.kr.BLACK_SCREEN,
+    label: t ? a.NW.string(a.t["0X5Zbm"]) : a.NW.string(a.t.fxiRNj)
   }, {
-    value: a.kr.BLURRY,
-    label: t ? r.NW.string(r.t.VVPQy8) : r.NW.string(r.t.E8jTMD)
+    value: r.kr.BLURRY,
+    label: t ? a.NW.string(a.t.VVPQy8) : a.NW.string(a.t.E8jTMD)
   }, {
-    value: a.kr.LAGGING,
-    label: t ? r.NW.string(r.t.ObEHd3) : r.NW.string(r.t.VoSJER)
+    value: r.kr.LAGGING,
+    label: t ? a.NW.string(a.t.ObEHd3) : a.NW.string(a.t.VoSJER)
   }, {
-    value: a.kr.OUT_OF_SYNC,
-    label: t ? r.NW.string(r.t.mYmwDw) : r.NW.string(r.t["+NluQk"])
+    value: r.kr.OUT_OF_SYNC,
+    label: t ? a.NW.string(a.t.mYmwDw) : a.NW.string(a.t["+NluQk"])
   }, {
-    value: a.kr.AUDIO_MISSING,
-    label: t ? r.NW.string(r.t.Xwv419) : r.NW.string(r.t.G2egzc)
+    value: r.kr.AUDIO_MISSING,
+    label: t ? a.NW.string(a.t.Xwv419) : a.NW.string(a.t.G2egzc)
   }, {
-    value: a.kr.AUDIO_POOR,
-    label: t ? r.NW.string(r.t["fHey+f"]) : r.NW.string(r.t.aHOfIi)
+    value: r.kr.AUDIO_POOR,
+    label: t ? a.NW.string(a.t["fHey+f"]) : a.NW.string(a.t.aHOfIi)
   }, {
-    value: a.kr.STREAM_STOPPED,
-    label: r.NW.string(r.t.uEoqQk)
+    value: r.kr.STREAM_STOPPED,
+    label: a.NW.string(a.t.uEoqQk)
   }, {
-    value: a.kr.OTHER,
-    label: r.NW.string(r.t["emlT9/"])
+    value: r.kr.OTHER,
+    label: a.NW.string(a.t["emlT9/"])
   }]
 }

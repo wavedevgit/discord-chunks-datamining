@@ -16,15 +16,15 @@ var r = n(200651),
   m = n(266910),
   p = n(352978),
   h = n(928518),
-  b = n(518950),
-  v = n(470956),
+  v = n(518950),
+  b = n(470956),
   g = n(314897),
   y = n(271383),
   E = n(131951),
   O = n(451478),
   S = n(5192),
-  j = n(44136),
-  x = (n(351483), n(981631)),
+  x = n(44136),
+  j = (n(351483), n(981631)),
   Z = n(65154),
   C = n(388032),
   w = n(454698);
@@ -36,7 +36,7 @@ function I(e) {
     channelId: t,
     userId: n
   } = e;
-  return (0, v.Eu)(t, n) ? (0, r.jsx)(s.ua7, {
+  return (0, b.Eu)(t, n) ? (0, r.jsx)(s.ua7, {
     text: C.NW.string(C.t.HFwRpq),
     position: "bottom",
     color: s.FGA.GREY,
@@ -84,7 +84,7 @@ function _(e) {
     channel: n,
     inCall: l,
     width: s,
-    paused: v,
+    paused: b,
     selected: I,
     fit: _,
     onVideoResize: R,
@@ -97,10 +97,10 @@ function _(e) {
     user: F,
     streamId: U,
     speaking: z
-  } = t, V = F.id === W, Y = (0, j.ZP)(t), H = (0, a.e7)([O.Z], () => O.Z.isFocused()), K = (0, a.e7)([h.Z], () => h.Z.getWindowFocused(x.KJ3.CHANNEL_CALL_POPOUT)), G = (0, a.e7)([E.Z], () => null != F.id && E.Z.isLocalVideoDisabled(F.id, (0, f.Z)(t.type)), [F.id, t.type]), B = (0, a.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, F.id)), q = S.ZP.getName(n.getGuildId(), n.id, F) + (B ? " ".concat(C.NW.string(C.t["pFO/Pj"])) : ""), J = z && (K || H), X = s < 124 ? N : P, {
+  } = t, V = F.id === W, Y = (0, x.ZP)(t), H = (0, a.e7)([O.Z], () => O.Z.isFocused()), K = (0, a.e7)([h.Z], () => h.Z.getWindowFocused(j.KJ3.CHANNEL_CALL_POPOUT)), G = (0, a.e7)([E.Z], () => null != F.id && E.Z.isLocalVideoDisabled(F.id, (0, f.Z)(t.type)), [F.id, t.type]), B = (0, a.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, F.id)), q = S.ZP.getName(n.getGuildId(), n.id, F) + (B ? " ".concat(C.NW.string(C.t["pFO/Pj"])) : ""), J = z && (K || H), X = s < 124 ? N : P, {
     avatarSrc: Q,
     avatarDecorationSrc: $
-  } = (0, b.Z)({
+  } = (0, v.Z)({
     user: F,
     guildId: n.guild_id,
     size: X,
@@ -127,7 +127,7 @@ function _(e) {
     streamId: U,
     videoComponent: L,
     fit: _,
-    paused: v,
+    paused: b,
     videoSpinnerContext: F.id === W ? u.m.SELF_VIDEO : u.m.REMOTE_VIDEO,
     userId: F.id
   }, U) : (0, r.jsx)("div", {

@@ -87,15 +87,15 @@ function j(e) {
     (0, v.GF)(t.id, a, l, o)
   }, [o, l, t.id, a]), R = i.useCallback(() => {
     (0, v.Yu)(t.id, a)
-  }, [t.id, a]), L = (0, f.ms)({
+  }, [t.id, a]), D = (0, f.ms)({
     context: {
       type: "contextless"
     },
     applicationId: t.id,
     botUserId: null == _ ? void 0 : _.id
-  }), D = null != E && j && L, M = (0, x.z)(t, Z), W = i.useMemo(() => {
+  }), L = null != E && j && D, M = (0, x.z)(t, Z), W = i.useMemo(() => {
     let e = [];
-    return D && e.push({
+    return L && e.push({
       label: O.NW.string(O.t.RscU7O),
       onClick() {
         (0, m.W)({
@@ -107,7 +107,7 @@ function j(e) {
         }), Z(v.j_.PLAY)
       }
     }), null != M && e.push(M), e
-  }, [o, l, w, t.id, E, D, Z, M]), F = j ? (0, r.jsx)(C, {
+  }, [o, l, w, t.id, E, L, Z, M]), F = j ? (0, r.jsx)(C, {
     app: t
   }) : (0, r.jsx)(N, {
     app: t

@@ -22,14 +22,14 @@ var r = n(200651),
   S = n(650774),
   N = n(430824),
   Z = n(131951),
-  b = n(944486),
-  O = n(594174),
+  O = n(944486),
+  b = n(594174),
   y = n(449224),
-  C = n(626135),
-  P = n(823379),
+  P = n(626135),
+  C = n(823379),
   E = n(63063),
-  T = n(358085),
-  I = n(653255),
+  I = n(358085),
+  T = n(653255),
   w = n(989941),
   _ = n(618407),
   R = n(586290),
@@ -51,7 +51,7 @@ function Y(e) {
     selectSource: n,
     sourceChanged: l,
     onChangeSource: s
-  } = e, i = (0, a.e7)([p.ZP, y.Z], () => (0, T.isWindows)() ? (0, w.Z)(p.ZP, y.Z) : null), c = (0, a.e7)([u.Z], () => (null == i ? void 0 : i.id) != null ? u.Z.getApplication(i.id) : null), d = (0, a.e7)([p.ZP], () => p.ZP.getRunningGames()), m = (0, a.Wu)([u.Z], () => d.map(e => null != e.id ? u.Z.getApplication(e.id) : null).filter(P.lm), [d]), g = null;
+  } = e, i = (0, a.e7)([p.ZP, y.Z], () => (0, I.isWindows)() ? (0, w.Z)(p.ZP, y.Z) : null), c = (0, a.e7)([u.Z], () => (null == i ? void 0 : i.id) != null ? u.Z.getApplication(i.id) : null), d = (0, a.e7)([p.ZP], () => p.ZP.getRunningGames()), m = (0, a.Wu)([u.Z], () => d.map(e => null != e.id ? u.Z.getApplication(e.id) : null).filter(C.lm), [d]), g = null;
   if (null != t ? g = t.name : null != i && (g = i.name), null == g) return null;
   let x = (0, D.Z)(i, t, d),
     v = l ? m.find(e => {
@@ -142,7 +142,7 @@ function X(e) {
     var e;
     return null !== (e = S.Z.getMemberCount(t)) && void 0 !== e ? e : 0
   }), s = v.eo.useSetting(), c = l.useCallback((e, t) => {
-    v.eo.updateSetting(t), C.default.track(z.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
+    v.eo.updateSetting(t), P.default.track(z.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
       value: t
     })
   }, []);
@@ -219,15 +219,15 @@ function q(e) {
     previewDisabled: S,
     onClose: N,
     onChangeSelectedFPS: y,
-    onChangeSelectedResolution: C,
-    onChangeSelectedPreset: P,
-    onChangeSelectedChannelId: T,
+    onChangeSelectedResolution: P,
+    onChangeSelectedPreset: C,
+    onChangeSelectedChannelId: I,
     onChangeSource: w,
     onChangeAudioDevice: k,
     onChangeGuild: D,
     onChangeSound: M,
     onChangePreviewDisabled: V
-  } = e, q = (0, a.e7)([b.Z, j.Z], () => j.Z.getChannel(b.Z.getVoiceChannelId())), Q = (0, a.e7)([I.Z], () => I.Z.GPUDriversOutdated), $ = (0, a.e7)([I.Z], () => I.Z.problematicGPUDriver), ee = (0, a.e7)([O.default], () => O.default.getCurrentUser()), et = (0, _.Z)();
+  } = e, q = (0, a.e7)([O.Z, j.Z], () => j.Z.getChannel(O.Z.getVoiceChannelId())), Q = (0, a.e7)([T.Z], () => T.Z.GPUDriversOutdated), $ = (0, a.e7)([T.Z], () => T.Z.problematicGPUDriver), ee = (0, a.e7)([b.default], () => b.default.getCurrentUser()), et = (0, _.Z)();
   null != t && t.id.startsWith("screen") && !Z.Z.supportsScreenSoundshare() && (et = G.NW.string(G.t["1b0Gm5"]));
   let en = !!(null == t ? void 0 : t.id.startsWith("camera")),
     er = null != ee && ee.verified && !ee.bot,
@@ -264,7 +264,7 @@ function q(e) {
     }) : (0, r.jsx)(W.Z, {
       guildId: m,
       selectedChannelId: s,
-      onChangeSelectedChannelId: T
+      onChangeSelectedChannelId: I
     }), null != m && er && el ? (0, r.jsx)(X, {
       guildId: m
     }) : null, Q ? (0, r.jsx)(J, {
@@ -290,8 +290,8 @@ function q(e) {
       targetGuildPremiumTier: p,
       onClose: N,
       onFPSChange: y,
-      onResolutionChange: C,
-      onPresetChange: P,
+      onResolutionChange: P,
+      onPresetChange: C,
       captureDeviceSelected: en
     }), ei && (0, r.jsx)(K, {
       enabled: S,

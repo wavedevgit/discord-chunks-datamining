@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(456631),
   p = n(564535);
 let h = 6 * f.Z.Millis.SECOND,
-  b = 2 * f.Z.Millis.SECOND,
   v = 2 * f.Z.Millis.SECOND,
+  b = 2 * f.Z.Millis.SECOND,
   g = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
 
 function y(e) {
@@ -27,7 +27,7 @@ function y(e) {
   } = e, {
     emoji: f,
     sentAt: y
-  } = n, E = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), [O, S] = i.useState(!0), j = !E, x = (0, c.Yzy)(O, {
+  } = n, E = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), [O, S] = i.useState(!0), x = !E, j = (0, c.Yzy)(O, {
     from: {
       rotate: -120
     },
@@ -47,12 +47,12 @@ function y(e) {
   });
   return (i.useEffect(() => {
     let e;
-    return Date.now() - y >= v ? (0, m.H)(t) : e = setTimeout(() => {
-      S(!1), j && (0, m.H)(t)
-    }, j ? b : h), () => {
+    return Date.now() - y >= b ? (0, m.H)(t) : e = setTimeout(() => {
+      S(!1), x && (0, m.H)(t)
+    }, x ? v : h), () => {
       null != e && clearTimeout(e)
     }
-  }, [y, t, j]), j) ? null : x((e, t) => {
+  }, [y, t, x]), x) ? null : j((e, t) => {
     var n;
     let {
       rotate: i

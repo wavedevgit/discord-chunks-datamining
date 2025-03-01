@@ -1,6 +1,6 @@
 /** Chunk was on 79477 **/
 n.d(t, {
-  Z: () => I
+  Z: () => T
 }), n(47120), n(301563), n(653041), n(308318), n(230036);
 var r = n(200651),
   l = n(192379),
@@ -22,18 +22,18 @@ var r = n(200651),
   S = n(914010),
   N = n(594174),
   Z = n(938475),
-  b = n(823379),
-  O = n(102172),
+  O = n(823379),
+  b = n(102172),
   y = n(615161),
-  C = n(981631),
-  P = n(388032),
+  P = n(981631),
+  C = n(388032),
   E = n(358476);
 
-function T(e) {
+function I(e) {
   let {
     result: t,
     onSelectChannel: n
-  } = e, l = (0, s.e7)([f.Z], () => f.Z.getGuild(t.record.guild_id)), a = (0, s.Wu)([Z.ZP, N.default], () => Z.ZP.getVoiceStatesForChannel(t.record).map(e => N.default.getUser(e.user.id)).filter(b.lm));
+  } = e, l = (0, s.e7)([f.Z], () => f.Z.getGuild(t.record.guild_id)), a = (0, s.Wu)([Z.ZP, N.default], () => Z.ZP.getVoiceStatesForChannel(t.record).map(e => N.default.getUser(e.user.id)).filter(O.lm));
   return (0, r.jsxs)(i.P3F, {
     className: E.channelResult,
     onClick: () => n(t.record.id),
@@ -65,11 +65,11 @@ function T(e) {
   })
 }
 
-function I(e) {
+function T(e) {
   var t, n;
   let {
     onSelectChannel: u
-  } = e, [N, Z] = (0, y.E_)(), I = (0, a.q)(null === (t = N.sourceApplication) || void 0 === t ? void 0 : t.id), {
+  } = e, [N, Z] = (0, y.E_)(), T = (0, a.q)(null === (t = N.sourceApplication) || void 0 === t ? void 0 : t.id), {
     search: w,
     query: _,
     results: R
@@ -83,7 +83,7 @@ function I(e) {
     if (null == t) return e;
     for (let n of v.ZP.getVocalChannelIds(t)) {
       let t = g.Z.getChannel(n);
-      null != t && (0, O.JL)(t, f.Z, j.Z) && e.push(t)
+      null != t && (0, b.JL)(t, f.Z, j.Z) && e.push(t)
     }
     return e
   }), A = (0, s.Wu)([m.Z, g.Z, x.Z, f.Z, j.Z], () => {
@@ -91,14 +91,14 @@ function I(e) {
       t = new Set;
     for (let n of m.Z.getChannelHistory()) {
       let r = g.Z.getChannel(n);
-      (null == r ? void 0 : r.type) === C.d4z.GUILD_VOICE && (0, O.JL)(r, f.Z, j.Z) && (t.add(r.id), e.push(r))
+      (null == r ? void 0 : r.type) === P.d4z.GUILD_VOICE && (0, b.JL)(r, f.Z, j.Z) && (t.add(r.id), e.push(r))
     }
-    for (let n of x.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === C.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, f.Z, j.Z) && (t.add(n.id), e.push(n));
+    for (let n of x.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === P.d4z.GUILD_VOICE && !t.has(n.id) && (0, b.JL)(n, f.Z, j.Z) && (t.add(n.id), e.push(n));
     return e
   }), k = l.useMemo(() => {
     let e = new Set(A.map(e => e.id)),
       t = new Set(W.map(e => e.id));
-    return [...W.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? -1 : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, c.Z)(e.id)).filter(b.lm), ...A.filter(e => !t.has(e.id)).map(e => (0, c.Z)(e.id)).filter(b.lm)]
+    return [...W.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? -1 : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, c.Z)(e.id)).filter(O.lm), ...A.filter(e => !t.has(e.id)).map(e => (0, c.Z)(e.id)).filter(O.lm)]
   }, [A, W]), L = "" !== _ ? R : k;
   return (0, r.jsxs)("div", {
     className: E.root,
@@ -106,13 +106,13 @@ function I(e) {
       className: E.header,
       children: [(0, r.jsx)(d.Z, {
         className: E.sourceIcon,
-        game: I
+        game: T
       }), (0, r.jsxs)("div", {
         className: E.headingGroup,
         children: [(0, r.jsx)(i.X6q, {
           variant: "text-lg/semibold",
           color: "header-primary",
-          children: P.NW.string(P.t.WEYae3)
+          children: C.NW.string(C.t.WEYae3)
         }), (0, r.jsx)(i.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
@@ -121,7 +121,7 @@ function I(e) {
       })]
     }), (0, r.jsx)(i.E1j, {
       className: E.searchBar,
-      placeholder: P.NW.string(P.t["3jvv+/"]),
+      placeholder: C.NW.string(C.t["3jvv+/"]),
       query: _,
       size: i.E1j.Sizes.MEDIUM,
       onChange: e => w({
@@ -148,7 +148,7 @@ function I(e) {
         let {
           rowIndex: t
         } = e, n = L[t];
-        return (0, r.jsx)(T, {
+        return (0, r.jsx)(I, {
           result: n,
           onSelectChannel: u
         }, n.record.id)

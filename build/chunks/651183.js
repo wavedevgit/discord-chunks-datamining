@@ -1,21 +1,38 @@
 /** Chunk was on 12416 **/
 n.d(t, {
-  Z: () => a
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
-var i = n(475674),
-  l = n(42326),
-  o = n(906467);
+var i = n(785141),
+  l = n(272395),
+  o = n(475674),
+  a = n(42326),
+  s = n(906467),
+  c = n(388032);
 
-function a(e) {
-  var t;
+function u(e) {
   let {
-    participant: n,
-    className: a
-  } = e, s = null == (t = (0, i.Z)(n)) ? null : o.Z.isDeveloper ? "".concat(t.message, " (").concat(t.errorType, ")") : t.message;
-  return null != s ? (0, r.jsx)(l.Z, {
-    className: a,
-    errorMessage: s
+    participant: t,
+    className: n
+  } = e, u = (0, o.Z)(t), d = null == u ? void 0 : u.message, {
+    avErrorUIEnabled: f
+  } = (0, l.J)({
+    location: "StreamWarning"
+  }), m = f ? function(e) {
+    if (null != e) {
+      var t;
+      let n = null === (t = (0, i.hp)(e.avError)) || void 0 === t ? void 0 : t.errorCode,
+        r = c.NW.formatToPlainString(c.t["ejOT9/"], {
+          errorCode: n
+        });
+      return s.Z.isDeveloper ? "".concat(r, " (").concat(e.errorType, ")") : r
+    }
+    return null
+  }(u) : null;
+  return null != d ? (0, r.jsx)(a.Z, {
+    className: n,
+    errorMessage: d,
+    errorDetailMessage: m
   }) : null
 }

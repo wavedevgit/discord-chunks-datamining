@@ -51,9 +51,9 @@ function A(e) {
       code: ""
     },
     {
-      analyticsLocations: L
+      analyticsLocations: D
     } = (0, d.ZP)(),
-    D = (0, a.e7)([_.Z], () => (null == w ? void 0 : w.guild) != null ? _.Z.getGuild(w.guild.id) : null, [w]),
+    L = (0, a.e7)([_.Z], () => (null == w ? void 0 : w.guild) != null ? _.Z.getGuild(w.guild.id) : null, [w]),
     M = (0, a.e7)([g.default], () => g.default.getId()),
     W = (0, a.e7)([u.ZP], () => {
       var e;
@@ -63,7 +63,7 @@ function A(e) {
       null != R.channel && o.ZP.transitionToInviteSync(R)
     },
     U = () => {
-      if (null == D && (null == w ? void 0 : w.guild) != null) {
+      if (null == L && (null == w ? void 0 : w.guild) != null) {
         let e = v.Qs(w.guild);
         if ((0, c.bN)() && (0, c.Yt)(e)) {
           (0, s.mN)(P.L0.NSFW_SERVER_INVITE_EMBED);
@@ -77,7 +77,7 @@ function A(e) {
           page: T.ZY5.INVITE_EMBED,
           section: T.jXE.GUILD_CAP_UPSELL_MODAL
         },
-        analyticsLocations: L
+        analyticsLocations: D
       }) : o.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: t,
         context: A("Invite Button Embed")
@@ -87,7 +87,7 @@ function A(e) {
       onTransitionToInviteChannel: F,
       onAcceptInstantInvite: U,
       currentUserId: M,
-      guild: D,
+      guild: L,
       invite: R,
       author: n
     });
@@ -132,7 +132,7 @@ function A(e) {
               onTransitionToInviteChannel: F,
               onAcceptInstantInvite: U,
               currentUserId: M,
-              guild: D,
+              guild: L,
               invite: R
             });
             break
@@ -142,7 +142,7 @@ function A(e) {
               guildScheduledEvent: W,
               guild: R.guild,
               channel: R.channel,
-              isMember: null != D,
+              isMember: null != L,
               onAcceptInstantInvite: U,
               onTransitionToInviteChannel: F
             });
@@ -153,7 +153,7 @@ function A(e) {
               invite: R,
               stageInstance: R.stage_instance,
               guild: R.guild,
-              isMember: null != D,
+              isMember: null != L,
               onTransitionToInviteChannel: F,
               onAcceptInstantInvite: U
             });

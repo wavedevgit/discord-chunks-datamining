@@ -14,15 +14,15 @@ var r, i = n(200651),
   m = n(481060),
   p = n(490173),
   h = n(280492),
-  b = n(40851),
-  v = n(607070),
+  v = n(40851),
+  b = n(607070),
   g = n(899663),
   y = n(636449),
   E = n(317381),
   O = n(496616),
   S = n(100527),
-  j = n(906732),
-  x = n(168551),
+  x = n(906732),
+  j = n(168551),
   Z = n(260035),
   C = n(597952),
   w = n(628123),
@@ -143,13 +143,13 @@ class et extends(r = l.Component) {
       guestWindow: t
     } = this.props, n = t.document, r = n.head;
     c()(null != r, "Window document ".concat("head", " was null"));
-    let i = r.querySelector("style[".concat(x.PQ, "]"));
+    let i = r.querySelector("style[".concat(j.PQ, "]"));
     if (null != i) {
       i.textContent = e;
       return
     }
     let l = n.createElement("style");
-    l.setAttribute(x.PQ, "true"), l.textContent = e, r.appendChild(l)
+    l.setAttribute(j.PQ, "true"), l.textContent = e, r.appendChild(l)
   }
   updateForcedColors() {
     let {
@@ -183,12 +183,12 @@ class et extends(r = l.Component) {
       mouseModeEnabled: d,
       reducedMotionEnabled: f,
       fontScaleClass: h,
-      withTitleBar: v,
+      withTitleBar: b,
       guestWindow: y,
       clientThemesClassName: E,
       contentClassName: O,
       appWrapperClassName: S
-    } = this.props, j = (0, V.getPlatform)(), x = a()(h, {
+    } = this.props, x = (0, V.getPlatform)(), j = a()(h, {
       "mouse-mode": d,
       "reduce-motion": f,
       "full-motion": !f,
@@ -204,24 +204,24 @@ class et extends(r = l.Component) {
             children: (0, i.jsx)("div", {
               "data-popout-root": !0,
               ref: this.rootRef,
-              className: a()(e, (0, C.Z)(), x, E, S),
+              className: a()(e, (0, C.Z)(), j, E, S),
               children: (0, i.jsx)(m.JcV, {
                 containerRef: this.rootRef,
                 children: (0, i.jsx)(g.Z, {
                   children: (0, i.jsxs)(I, {
-                    children: [(0, i.jsx)(P.Co, {}), (0, i.jsx)(b.Wu, {
+                    children: [(0, i.jsx)(P.Co, {}), (0, i.jsx)(v.Wu, {
                       appContext: B.IlC.POPOUT,
                       renderWindow: y,
                       children: (0, i.jsx)(Z.m, {
                         children: (0, i.jsxs)(k.yP, {
                           children: [(0, i.jsxs)("div", {
                             className: X.popout,
-                            children: [s && v && (0, i.jsx)(N.T, {
+                            children: [s && b && (0, i.jsx)(N.T, {
                               windowKey: o,
                               short: !0
-                            }), !s && v && null != j ? (0, i.jsx)(_.Z, {
+                            }), !s && b && null != x ? (0, i.jsx)(_.Z, {
                               focused: n,
-                              type: j,
+                              type: x,
                               windowKey: o,
                               macOSFrame: !0
                             }) : null, (0, i.jsx)("div", {
@@ -280,23 +280,23 @@ let en = l.forwardRef(function(e, t) {
       locale: W.default.locale,
       theme: F.Z.theme
     })),
-    d = (0, f.e7)([v.Z], () => v.Z.useForcedColors ? "yes" : "no"),
+    d = (0, f.e7)([b.Z], () => b.Z.useForcedColors ? "yes" : "no"),
     {
       accessibilitySettings: p,
       appWrapperClassName: h
     } = (0, I.I)(),
-    b = (0, f.e7)([E.ZP], () => null != e.channelId && null !== E.ZP.getSelfEmbeddedActivityForChannel(e.channelId));
+    v = (0, f.e7)([E.ZP], () => null != e.channelId && null !== E.ZP.getSelfEmbeddedActivityForChannel(e.channelId));
   (0, R.Z)(n, !1);
   let g = (0, T.Z)(n, r),
     {
       analyticsLocations: y
-    } = (0, j.ZP)(S.Z.POPOUT_WINDOW),
+    } = (0, x.ZP)(S.Z.POPOUT_WINDOW),
     {
       clientThemesClassName: O,
       clientThemesCSS: Z
-    } = (0, x.ZP)();
+    } = (0, j.ZP)();
   return null == n ? null : (0, i.jsx)(m.Sle, {
-    children: (0, i.jsx)(j.Gt, {
+    children: (0, i.jsx)(x.Gt, {
       value: y,
       children: (0, i.jsx)(et, ee($({
         ref: t
@@ -313,7 +313,7 @@ let en = l.forwardRef(function(e, t) {
         keyboardModeEnabled: p.keyboardModeEnabled,
         mouseModeEnabled: g,
         reducedMotionEnabled: p.useReducedMotion,
-        connectedToEmbeddedActivity: b,
+        connectedToEmbeddedActivity: v,
         fontScaleClass: p.fontScaleClass,
         saturation: p.saturation,
         alwaysShowLinkDecorations: p.alwaysShowLinkDecorations,

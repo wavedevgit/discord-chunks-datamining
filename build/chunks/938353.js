@@ -36,8 +36,8 @@ var r, i = n(200651),
   Z = n(426275),
   k = n(947849),
   R = n(715903),
-  L = n(71619),
-  D = n(637618),
+  D = n(71619),
+  L = n(637618),
   M = n(225890),
   W = n(364097),
   F = n(495129),
@@ -90,8 +90,8 @@ var r, i = n(200651),
   eZ = n(29909),
   ek = n(782658),
   eR = n(219797),
-  eL = n(453687),
-  eD = n(128854),
+  eD = n(453687),
+  eL = n(128854),
   eM = n(101578),
   eW = n(524444),
   eF = n(319323),
@@ -294,7 +294,7 @@ class e4 extends(r = a.Component) {
           linkId: d,
           embedUrl: a
         }, r)
-      } else if (n === j.g.GUILD_PRODUCT) return (0, i.jsx)(D.Z, {
+      } else if (n === j.g.GUILD_PRODUCT) return (0, i.jsx)(L.Z, {
         code: r
       }, r);
       else if (n === j.g.SERVER_SHOP) return (0, i.jsx)(N.Z, {
@@ -502,7 +502,7 @@ class e4 extends(r = a.Component) {
       disableComponentInteractivity: a,
       onMediaItemContextMenu: o
     } = this.props;
-    return (0, i.jsx)(eD.F, {
+    return (0, i.jsx)(eL.F, {
       gifAutoPlay: t,
       getGifFavButton: e9,
       getOnMediaItemContextMenu: null == o ? void 0 : e => t => {
@@ -706,7 +706,7 @@ class e4 extends(r = a.Component) {
       showRemoveAttachmentModal: o
     } = this.state, s = this.renderCodedLinks(t), c = this.renderGiftCodes(t), d = this.renderReferralTrial(t), u = this.renderAttachments(t), p = this.renderCtaButton(), m = this.renderSocialProofingFileSizeNitroUpsell(t), f = this.renderEmbeds(t), h = this.renderActivityInvite(t), g = this.renderReactions(t), _ = this.renderPublishBump(t), b = this.renderEphemeralAccessories(t), v = this.renderStickersAccessories(t), y = this.renderThreadAccessories(t), x = this.renderComponentAccessories(t), O = this.renderThreadRoleMentionWarning(t), E = this.renderEmbeddedApplicationInstanceEmbed(t), j = this.renderInteractionPremiumUpsell(t), N = this.renderMediaPostEmbeds(t), C = this.renderSafetyPolicyNotice(t), I = this.renderSafetySystemNotification(t), S = this.renderVoiceChannelInvite(t, n), T = this.renderMediaObscureNotice(t), P = this.renderPoll(t, r), A = this.renderForwardedMessage(t);
     return null == s && null == u && null == f && null == h && null == g && null == c && null == d && null == _ && null == b && null == v && null == y && null == x && null == E && null == O && null == N && null == C && null != j && null == P && null == S && null == A ? null : (0, i.jsxs)("div", {
-      id: (0, eL.bX)(t),
+      id: (0, eD.bX)(t),
       className: l()(e, eX.container),
       children: [A, O, P, s, c, d, N, u, p, f, T, h, v, x, E, j, m, g, _, b, a && this.renderSuppressConfirmModal(), o && this.renderRemoveAttachmentConfirmModal(), y, C, I, S]
     })
@@ -810,7 +810,7 @@ function e6(e) {
   } = (0, c.cj)([em.Z], () => ({
     canAddNewReactions: f && em.Z.can(eV.Plq.ADD_REACTIONS, n),
     canManageMessages: em.Z.can(eV.Plq.MANAGE_MESSAGES, n)
-  }), [f, n]), y = (0, R.ux)(n.guild_id), [, x] = (0, L.AB)(n.guild_id), O = (0, el.$R)(n), E = (l === r.author.id || v) && r.author.id !== eV.LAt && !1 !== a && !(0, ev.yE)(r.flags, eV.iLy.EPHEMERAL) && O && 1 === (0, eI.Z)(r), j = l === r.author.id && O && !o, N = r.author.id === l, C = r.isFirstMessageInForumPost(n), S = (0, eT.Z)({
+  }), [f, n]), y = (0, R.ux)(n.guild_id), [, x] = (0, D.AB)(n.guild_id), O = (0, el.$R)(n), E = (l === r.author.id || v) && r.author.id !== eV.LAt && !1 !== a && !(0, ev.yE)(r.flags, eV.iLy.EPHEMERAL) && O && 1 === (0, eI.Z)(r), j = l === r.author.id && O && !o, N = r.author.id === l, C = r.isFirstMessageInForumPost(n), S = (0, eT.Z)({
     channel: n,
     canChat: f,
     renderReactions: p,
@@ -821,10 +821,10 @@ function e6(e) {
     isActiveChannelOrUnarchivableThread: O,
     isAutomodQuarantined: y
   }), T = (0, V.A)((null !== (t = r.editedTimestamp) && void 0 !== t ? t : r.timestamp).valueOf()), w = (0, X.Z)(null == n ? void 0 : n.id), Z = (0, J.Z)(r), k = (0, I.V)(n.id, r.author.id), {
-    hasInlineForwardButton: D
+    hasInlineForwardButton: L
   } = (0, P.yk)({
     location: "MessageAccessories"
-  }), M = (0, A.a)(r) && D, W = (0, eC._)(n), F = (0, eO.ro)(r.id, r.channel_id);
+  }), M = (0, A.a)(r) && L, W = (0, eC._)(n), F = (0, eO.ro)(r.id, r.channel_id);
   return (0, i.jsx)(e4, e$(eJ(e$(eJ({
     canSuppressEmbeds: E,
     canDeleteAttachments: j

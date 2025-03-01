@@ -5,10 +5,10 @@ n.d(t, {
 var a = n(200651);
 n(192379);
 var s = n(332664),
-  l = n(814249),
-  i = n(531578),
+  i = n(814249),
+  l = n(531578),
   o = n(388032);
-let c = [l.R7.OTHER];
+let c = [i.R7.OTHER];
 
 function r(e) {
   let {
@@ -24,12 +24,12 @@ function r(e) {
     problemTitle: o.NW.string(o.t.CtiHPj),
     onSubmit: d,
     onClose: r,
-    ratingOptions: [i.aZ.GOOD, i.aZ.BAD],
+    ratingOptions: [l.aZ.GOOD, l.aZ.BAD],
     ratingEmojiKind: "thumb",
     transitionState: t,
-    problems: (0, l.iq)(),
+    problems: (0, i.iq)(),
     freeformNeededProblems: c,
-    otherKey: l.R7.OTHER,
+    otherKey: i.R7.OTHER,
     startRating: n,
     hideDontShowCheckbox: !0
   })

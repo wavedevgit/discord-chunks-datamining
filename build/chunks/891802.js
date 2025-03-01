@@ -1,10 +1,10 @@
 /** Chunk was on 96888 **/
 n.d(t, {
-  X: () => l
+  X: () => s
 });
 var o = n(818083),
-  a = n(984134);
-let i = (0, o.B)({
+  i = n(984134);
+let a = (0, o.B)({
   kind: "user",
   id: "2025-02_call_survey_refresh_web",
   label: "Call Survey Refresh (Web)",
@@ -20,18 +20,18 @@ let i = (0, o.B)({
   }]
 });
 
-function l(e) {
+function s(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
   } = e, {
     isInHoldout: o
-  } = a.h.useExperiment({
+  } = i.h.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return i.useExperiment({
+  return a.useExperiment({
     location: t
   }, {
     disable: o,

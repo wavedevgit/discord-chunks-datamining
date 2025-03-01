@@ -33,10 +33,10 @@ function h(e) {
   }
   return e
 }
-let b = {
+let v = {
     visibility: "hidden"
   },
-  v = {
+  b = {
     precision: 1e-4,
     duration: 300
   },
@@ -56,14 +56,14 @@ function E(e) {
     inPopout: n
   } = e, {
     reducedMotion: E
-  } = i.useContext(a.Sf), O = (0, i.useRef)(null), S = d.n.getState().clipsButtonRef, j = (0, f.V9)(t), x = (0, o.e7)([c.Z], () => c.Z.getActiveAnimation()), Z = (0, o.Wu)([c.Z], () => c.Z.getStreamClipAnimations(j)), C = (0, i.useRef)();
+  } = i.useContext(a.Sf), O = (0, i.useRef)(null), S = d.n.getState().clipsButtonRef, x = (0, f.V9)(t), j = (0, o.e7)([c.Z], () => c.Z.getActiveAnimation()), Z = (0, o.Wu)([c.Z], () => c.Z.getStreamClipAnimations(x)), C = (0, i.useRef)();
   i.useEffect(() => () => {
-    (0, u.Gh)(j)
-  }, [j]);
+    (0, u.Gh)(x)
+  }, [x]);
   let w = () => {
       var e;
       let t = null === (e = O.current) || void 0 === e ? void 0 : e.getBoundingClientRect();
-      return null == t || n ? b : {
+      return null == t || n ? v : {
         width: t.width,
         height: t.height,
         top: t.top,
@@ -72,7 +72,7 @@ function E(e) {
     },
     P = e => {
       let t = null == S ? void 0 : S.getBoundingClientRect();
-      if (C.current = t, e.timestamp !== x || null == t || n) return b;
+      if (C.current = t, e.timestamp !== j || null == t || n) return v;
       let {
         top: r,
         left: i
@@ -94,7 +94,7 @@ function E(e) {
       enter: {
         opacity: 0
       },
-      config: v
+      config: b
     }, "animate-always"),
     _ = (0, i.useRef)(null),
     R = (0, s.Yzy)(Z, {
@@ -122,7 +122,7 @@ function E(e) {
       })())),
       config: E.enabled ? y : g,
       onRest: (e, t) => {
-        null != t.item && null != Z.find(e => e.timestamp === t.item.timestamp) && (0, u.Gh)(j, t.item.timestamp)
+        null != t.item && null != Z.find(e => e.timestamp === t.item.timestamp) && (0, u.Gh)(x, t.item.timestamp)
       }
     }, "animate-always");
   return (0, l.useChain)([N, _], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {

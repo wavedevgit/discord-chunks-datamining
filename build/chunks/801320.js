@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(200651),
   r = n(192379),
-  l = n(481060),
-  s = n(332664),
+  s = n(481060),
+  l = n(332664),
   c = n(142497),
   o = n(626135),
   i = n(981631),
@@ -42,7 +42,7 @@ function x(e) {
     o.default.track(i.rMx.OPEN_MODAL, {
       type: "Video Background Feedback"
     })
-  }, []), (0, a.jsx)(s.Z, {
+  }, []), (0, a.jsx)(l.Z, {
     modalType: "video_background",
     header: d.NW.string(d.t.Wl8qXl),
     body: d.NW.string(d.t.vPw6j4),
@@ -65,27 +65,27 @@ function x(e) {
     }],
     freeformNeededProblems: m,
     onSubmit: function(e) {
-      var r, s;
+      var r, l;
       let {
         rating: m,
         problem: x,
         dontShowAgain: _,
         feedback: f
       } = e;
-      _ && (0, c.Kw)(u.v.VIDEO_BACKGROUND_FEEDBACK), null != m && (o.default.track(i.rMx.VIDEO_BACKGROUND_FEEDBACK, (r = b({}, t), s = s = {
+      _ && (0, c.Kw)(u.v.VIDEO_BACKGROUND_FEEDBACK), null != m && (o.default.track(i.rMx.VIDEO_BACKGROUND_FEEDBACK, (r = b({}, t), l = l = {
         reason: x,
         rating: m,
         feedback: f
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var a = Object.getOwnPropertySymbols(e);
           n.push.apply(n, a)
         }
         return n
-      })(Object(s)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(s, e))
-      }), r)), null != x && (0, l.ZDy)(async () => {
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+      }), r)), null != x && (0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("14466").then(n.bind(n, 729328));

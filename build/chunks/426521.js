@@ -57,7 +57,7 @@ function R(e) {
   })
 }
 
-function L(e) {
+function D(e) {
   let {
     item: {
       callout: t
@@ -75,7 +75,7 @@ function L(e) {
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     item: t
   } = e, n = k, i = A.NW.string(A.t.SJTHJS);
@@ -198,7 +198,7 @@ let W = i.memo(function(e) {
           item: a
         }), (0, r.jsxs)("div", {
           className: w.body,
-          children: ["lifecycle_item" === a.type && null != a.item_enum && (0, r.jsx)(D, {
+          children: ["lifecycle_item" === a.type && null != a.item_enum && (0, r.jsx)(L, {
             item: a
           }), (0, r.jsx)(o.Text, {
             variant: "text-md/normal",
@@ -206,7 +206,7 @@ let W = i.memo(function(e) {
             children: "string" != typeof A ? A : p.Z.parse(A)
           }), (null === (t = a.message) || void 0 === t ? void 0 : t.content) != null ? (0, r.jsx)(R, {
             item: a
-          }) : null, null != a.callout ? (0, r.jsx)(L, {
+          }) : null, null != a.callout ? (0, r.jsx)(D, {
             item: a
           }) : null, (0, r.jsx)(o.Text, {
             variant: "text-xs/medium",

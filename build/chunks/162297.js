@@ -35,8 +35,8 @@ var r = n(200651),
   Z = n(981631),
   k = n(388032),
   R = n(149723),
-  L = n(413097),
-  D = n(970952);
+  D = n(413097),
+  L = n(970952);
 
 function M(e) {
   let {
@@ -68,7 +68,7 @@ function W(e) {
     name: P,
     description: M
   } = i.useMemo(() => (0, g.sl)(n, {
-    fakeAppIconURL: L,
+    fakeAppIconURL: D,
     size: 56
   }), [n]), W = i.useMemo(() => null != M ? (0, O.parseBioReact)(M) : null, [M]), [U, B] = i.useState(!1), G = i.useCallback(e => {
     e && B(!0)
@@ -117,7 +117,7 @@ function W(e) {
     }), (0, r.jsx)("img", {
       className: R.icon,
       alt: n.name,
-      src: null != T ? T : D,
+      src: null != T ? T : L,
       "aria-hidden": !0,
       draggable: !1
     }), (0, r.jsxs)("div", {

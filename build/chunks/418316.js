@@ -56,13 +56,13 @@ function h(e) {
         count: R
       });
     case u.O7.MOBILE_NATIVE_UPDATE_AVAILABLE:
-      let L = null !== (O = null === (x = I.local_id) || void 0 === x ? void 0 : x.split("_").pop()) && void 0 !== O ? O : "unknown";
-      return "Update to build ".concat(L, " available!");
+      let D = null !== (O = null === (x = I.local_id) || void 0 === x ? void 0 : x.split("_").pop()) && void 0 !== O ? O : "unknown";
+      return "Update to build ".concat(D, " available!");
     case u.DY.FRIEND_SUGGESTION_CREATED:
       return l.Z.getRelationshipType(P), p.OGo.PENDING_OUTGOING, null !== (E = I.body) && void 0 !== E ? E : "";
     case u.DY.GUILD_SCHEDULED_EVENT_STARTED:
-      let D = I.guild_scheduled_event_id,
-        M = null != D ? a.ZP.getGuildScheduledEvent(D) : null,
+      let L = I.guild_scheduled_event_id,
+        M = null != L ? a.ZP.getGuildScheduledEvent(L) : null,
         W = null == M ? void 0 : M.name,
         F = null === (j = o.Z.getGuild(null == M ? void 0 : M.guild_id)) || void 0 === j ? void 0 : j.name,
         U = (0, a.Z2)(null != M ? M : void 0);

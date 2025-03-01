@@ -21,15 +21,15 @@ var r, i = n(200651),
   m = n(638880),
   p = n(413458),
   h = n(16609),
-  b = n(527805),
-  v = n(716600),
+  v = n(527805),
+  b = n(716600),
   g = n(778569),
   y = n(563218),
   E = n(318891),
   O = n(884338),
   S = n(719296),
-  j = n(958185),
-  x = n(100527),
+  x = n(958185),
+  j = n(100527),
   Z = n(906732),
   C = n(890280),
   w = n(835473),
@@ -98,17 +98,17 @@ function V(e) {
     participants: r,
     application: o,
     channel: h,
-    width: v
-  } = e, g = W(v), [y] = F(v), E = (0, c.Wu)([_.default, N.default], () => Array.from(r).map(e => (0, p.J)(e, N.default) ? null : _.default.getUser(e.userId)).filter(R.lm)), O = (0, c.e7)([f.ZP], () => {
+    width: b
+  } = e, g = W(b), [y] = F(b), E = (0, c.Wu)([_.default, N.default], () => Array.from(r).map(e => (0, p.J)(e, N.default) ? null : _.default.getUser(e.userId)).filter(R.lm)), O = (0, c.e7)([f.ZP], () => {
     var e;
     return null !== (e = f.ZP.getEmbeddedActivitiesForChannel(h.id).find(e => e.applicationId === o.id)) && void 0 !== e ? e : f.ZP.getEmbeddedActivitiesForStartingChannel(h.id).find(e => e.applicationId === o.id)
   }), {
     analyticsLocations: S
-  } = (0, Z.ZP)(), j = (0, d.O)(), x = T.ZP.getName(h.getGuildId(), h.id, null == E ? void 0 : E[0]), w = (0, b.s5)({
+  } = (0, Z.ZP)(), x = (0, d.O)(), j = T.ZP.getName(h.getGuildId(), h.id, null == E ? void 0 : E[0]), w = (0, v.s5)({
     userId: null === (t = _.default.getCurrentUser()) || void 0 === t ? void 0 : t.id,
     channelId: h.id,
     application: o
-  }) === b.Fw.CAN_JOIN, P = null !== (n = h.getGuildId()) && void 0 !== n ? n : void 0, I = l.useId(), k = o.id, M = l.useMemo(() => ({
+  }) === v.Fw.CAN_JOIN, P = null !== (n = h.getGuildId()) && void 0 !== n ? n : void 0, I = l.useId(), k = o.id, M = l.useMemo(() => ({
     channel: h,
     type: "channel"
   }), [h]), {
@@ -132,10 +132,10 @@ function V(e) {
       }),
       variant: "text-sm/normal",
       children: E.length > 1 ? A.NW.formatToPlainString(A.t.cpe6CA, {
-        username: x,
+        username: j,
         count: E.length - 1
       }) : A.NW.formatToPlainString(A.t["7Uuia2"], {
-        username: x
+        username: j
       })
     }), (0, i.jsx)(u.Text, {
       className: a()(D.header, {
@@ -151,7 +151,7 @@ function V(e) {
           e.stopPropagation(), null != O && (0, m.Z)({
             applicationId: O.applicationId,
             activityChannelId: h.id,
-            locationObject: j.location,
+            locationObject: x.location,
             analyticsLocations: S,
             componentId: I,
             instanceId: O.compositeInstanceId,
@@ -178,28 +178,28 @@ function Y(e) {
     channel: a
   } = e, {
     analyticsLocations: s
-  } = (0, Z.ZP)(x.Z.ACTIVITY_TILE), {
+  } = (0, Z.ZP)(j.Z.ACTIVITY_TILE), {
     applicationId: u
-  } = t, d = (0, v.Z)(), f = null != d && (0, h.pY)(d.location) === a.id && d.applicationId === u, [m] = (0, w.Z)([u]), {
+  } = t, d = (0, b.Z)(), f = null != d && (0, h.pY)(d.location) === a.id && d.applicationId === u, [m] = (0, w.Z)([u]), {
     url: p
   } = (0, g.Z)({
     applicationId: u,
     names: L,
     size: M
-  }), b = !r && f, O = !f, C = !f && !r, N = (0, c.e7)([I.Z, P.Z], () => (0, j.Z)({
+  }), v = !r && f, O = !f, C = !f && !r, N = (0, c.e7)([I.Z, P.Z], () => (0, x.Z)({
     LayerStore: I.Z,
     PopoutWindowStore: P.Z
   }));
   return l.useEffect(() => {
-    if (b && null != d && !N) {
+    if (v && null != d && !N) {
       let e = (0, S.Z)(d.location.id, d.applicationId);
       (0, E.jy)(e)
     }
-  }, [b, d, N]), (0, i.jsx)(Z.Gt, {
+  }, [v, d, N]), (0, i.jsx)(Z.Gt, {
     value: s,
     children: (0, i.jsxs)("div", {
       className: D.container,
-      children: [b && null != d && (0, i.jsx)(y.Z, {
+      children: [v && null != d && (0, i.jsx)(y.Z, {
         className: D.iframe,
         embedId: (0, S.Z)(d.location.id, u)
       }), O && null != m && null != p && "" !== p ? (0, i.jsx)("img", {

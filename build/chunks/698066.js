@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => l
 });
-var a = n(626135),
-  r = n(981631);
+var r = n(626135),
+  a = n(981631);
 
 function l(e) {
   let {
@@ -15,20 +15,20 @@ function l(e) {
     location: o,
     rating: c = null
   } = e;
-  a.default.track(r.rMx.STREAM_REPORT_PROBLEM, function(e) {
+  r.default.track(a.rMx.STREAM_REPORT_PROBLEM, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        a = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), a.forEach(function(t) {
-        var a;
-        a = n[t], t in e ? Object.defineProperty(e, t, {
-          value: a,
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = a
+        }) : e[t] = r
       })
     }
     return e

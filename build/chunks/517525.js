@@ -15,15 +15,15 @@ var r = n(200651),
   m = n(2052),
   p = n(906732),
   h = n(194082),
-  b = n(484459),
-  v = n(594174),
+  v = n(484459),
+  b = n(594174),
   g = n(626135),
   y = n(74538),
   E = n(557457),
   O = n(475674),
   S = n(981631),
-  j = n(474936),
-  x = n(388032),
+  x = n(474936),
+  j = n(388032),
   Z = n(41997);
 
 function C(e) {
@@ -89,7 +89,7 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         participant: a,
         isUpsellEnabled: s,
         shape: d,
-        size: b,
+        size: v,
         didTrackUpsellViewed: P,
         setDidTrackUpsellViewed: N,
         className: I,
@@ -114,8 +114,8 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       {
         location: k
       } = (0, m.O)(),
-      M = (0, c.e7)([v.default], () => v.default.getCurrentUser()),
-      L = s && !y.ZP.isPremium(M, j.p9.TIER_1) && !y.ZP.canStreamQuality(y.ZP.StreamQuality.MID, M),
+      M = (0, c.e7)([b.default], () => b.default.getCurrentUser()),
+      L = s && !y.ZP.isPremium(M, x.p9.TIER_1) && !y.ZP.canStreamQuality(y.ZP.StreamQuality.MID, M),
       W = i.useCallback(() => {
         L && D && (0, f.ZDy)(async () => {
           let {
@@ -128,19 +128,19 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       }, [L, D, k]);
     if (i.useEffect(() => {
         !P && D && (g.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
-          type: j.cd.STREAM_QUALITY_INDICATOR,
+          type: x.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: l,
           location_stack: T
         }), N(!0))
       }, [t, l, D, P, N, T]), null == R) return null;
     let F = (0, r.jsx)(f.ua7, {
-      text: A ? x.NW.string(x.t.q8TiVl) : D ? x.NW.string(x.t.IHgpEh) : x.NW.string(x.t.vLb0VV),
+      text: A ? j.NW.string(j.t.q8TiVl) : D ? j.NW.string(j.t.IHgpEh) : j.NW.string(j.t.vLb0VV),
       position: "bottom",
       color: f.ua7.Colors.GREY,
       children: e => (0, r.jsxs)(f.P3F, w(C({}, e), {
         onClick: W,
-        className: o()(Z.qualityIndicator, b, h.eE[d], A ? Z.qualityIndicatorLowQuality : Z.qualityIndicatorFullQuality, {
+        className: o()(Z.qualityIndicator, v, h.eE[d], A ? Z.qualityIndicatorLowQuality : Z.qualityIndicatorFullQuality, {
           [Z.clickable]: L && D
         }),
         children: [D ? (0, r.jsx)(f.SrA, {
@@ -173,19 +173,19 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       className: c,
       premiumIndicator: u
     } = e, [d, m] = i.useState(!1), p = (0, E.Wc)(t), {
-      reducedMotion: v
+      reducedMotion: b
     } = i.useContext(f.Sfi), g = n && null != p;
     i.useEffect(() => {
-      (0, b.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
+      (0, v.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: !0
       })
     }, [t]);
     let y = (0, f.Yzy)(g, {
         enter: {
-          from: v.enabled ? _ : N,
-          to: v.enabled ? R : I
+          from: b.enabled ? _ : N,
+          to: b.enabled ? R : I
         },
-        leave: v.enabled ? _ : N,
+        leave: b.enabled ? _ : N,
         config: D
       }, "animate-always"),
       O = (0, f.q_F)({
