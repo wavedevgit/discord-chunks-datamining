@@ -10,17 +10,17 @@ var o = n(200651),
   c = n(481060),
   u = n(13245),
   s = n(753972),
-  d = n(812206),
-  _ = n(726721),
+  _ = n(812206),
+  d = n(726721),
   p = n(610394),
   b = n(522474),
   f = n(788983),
   m = n(695346),
   v = n(390322),
   h = n(961048),
-  C = n(871499),
-  x = n(786915),
-  g = n(107169),
+  g = n(871499),
+  C = n(786915),
+  x = n(107169),
   y = n(592125),
   I = n(271383),
   O = n(594174),
@@ -28,20 +28,20 @@ var o = n(200651),
   P = n(51144),
   w = n(998502),
   k = n(145597),
-  S = n(214629),
-  N = n(317381),
-  T = n(884338),
+  N = n(214629),
+  T = n(317381),
+  S = n(884338),
   Z = n(473179),
   B = n(981631),
   A = n(388032),
   W = n(231784);
-let E = T.u.SIZE_24;
+let E = S.u.SIZE_24;
 
 function z(e) {
   let {
     applicationId: t,
     channelId: n
-  } = e, a = (0, l.e7)([d.Z], () => d.Z.getApplication(t)), z = (0, l.e7)([N.ZP], () => N.ZP.getSelfEmbeddedActivities().get(t)), U = (0, l.e7)([y.Z], () => y.Z.getChannel(n)), D = m.Sb.useSetting(), R = (0, l.Wu)([I.ZP], () => {
+  } = e, a = (0, l.e7)([_.Z], () => _.Z.getApplication(t)), z = (0, l.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivities().get(t)), U = (0, l.e7)([y.Z], () => y.Z.getChannel(n)), D = m.Sb.useSetting(), R = (0, l.Wu)([I.ZP], () => {
     var e;
     return null == U || null == z ? [] : Array.from(null !== (e = z.userIds) && void 0 !== e ? e : []).map(e => I.ZP.getMember(U.guild_id, e))
   }, [z, U]), L = r.useMemo(() => {
@@ -63,14 +63,14 @@ function z(e) {
         className: W.avatar
       }, e.id)
     }, e.id)
-  }, [L]), Y = null == z ? void 0 : z.userIds, M = (0, l.Wu)([O.default], () => Array.from(null != Y ? Y : []).map(e => O.default.getUser(e)).filter(e => null != e), [Y]), K = _.Z.useExperiment({
+  }, [L]), Y = null == z ? void 0 : z.userIds, M = (0, l.Wu)([O.default], () => Array.from(null != Y ? Y : []).map(e => O.default.getUser(e)).filter(e => null != e), [Y]), K = d.Z.useExperiment({
     location: "activity_popout_overflow_menu"
   }, {
     autoTrackExposure: !0
   }).enabled, V = r.useCallback(() => {
     let e = (0, k.getPID)();
     u.Z.setInputLocked(!p.ZP.isInputLocked(e), e)
-  }, []), F = (0, S.PR)(), {
+  }, []), F = (0, N.PR)(), {
     canStayOnTop: H,
     popoutWindowAlwaysOnTop: J,
     handleStayOnTop: X
@@ -116,7 +116,7 @@ function z(e) {
             color: "text-muted",
             children: "."
           })
-        }), (0, o.jsx)(T.Z, {
+        }), (0, o.jsx)(S.Z, {
           renderIcon: !1,
           users: M,
           size: E,
@@ -128,17 +128,17 @@ function z(e) {
         className: i()(W.headerSection, W.headerSectionRight),
         children: (0, o.jsxs)("div", {
           className: W.actionButtonsContainer,
-          children: [(0, o.jsx)(x.Z, {
+          children: [(0, o.jsx)(C.Z, {
             appContext: B.IlC.POPOUT,
             applicationId: t,
             channel: U,
             shouldPrioritizeGroupPlusIcon: !0,
             embeddedActivity: z
-          }), F ? (0, o.jsx)(C.Z, {
+          }), F ? (0, o.jsx)(g.Z, {
             onClick: V,
             iconComponent: c.epB,
             label: A.NW.string(A.t.mseZsL)
-          }) : null, H ? (0, o.jsx)(g.Z, {
+          }) : null, H ? (0, o.jsx)(x.Z, {
             popoutWindowAlwaysOnTop: J,
             onToggleStayOnTop: X
           }) : null, K && (0, o.jsx)(c.yRy, {

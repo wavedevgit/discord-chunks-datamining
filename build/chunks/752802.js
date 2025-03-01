@@ -190,10 +190,13 @@ function R(e) {
           }), (0, i.jsx)(u.Text, {
             variant: "text-md/medium",
             color: "always-white",
+            className: P.controlUserName,
             children: C.ZP.getName(n.stream.guildId, n.stream.channelId, a)
           }), (0, i.jsx)(O.ZP, {
             primaryGuild: c.primaryGuild,
-            userId: a.id,
+            userId: c.id,
+            containerClassName: P.guildTag,
+            inline: !1,
             onShowProfile: () => {
               (0, N.Ws)(w.Odu.GO_LIVE, {
                 type: N.Qu.GO_LIVE,

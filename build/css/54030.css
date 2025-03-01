@@ -1,6 +1,6 @@
 /**
   Module ID: 54030
-  Original File Name: 8fd4222e7a805e26
+  Original File Name: 7e074acf0265ee1c
 **/
 .textArea_ab8e5c {
     border-radius: 6px;
@@ -503,18 +503,26 @@
 }
 
 .controlUserContainer__8151b {
+    display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 4px;
     padding: 8px;
-    border-radius: var(--radius-md)
-}
-
-.controlAction__8151b,.controlUserContainer__8151b {
-    display: flex;
-    align-items: center;
     background: var(--bg-backdrop);
     -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px)
+    backdrop-filter: blur(4px);
+    border-radius: var(--radius-md);
+    max-width: 152px
+}
+
+.controlUserName__8151b,.guildTag__8151b {
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.controlUserName__8151b {
+    max-width: 100%;
+    text-overflow: ellipsis
 }
 
 .controlAction__8151b {
@@ -522,13 +530,19 @@
     width: 28px;
     height: 28px;
     cursor: pointer;
-    border-radius: var(--radius-round)
+    border-radius: var(--radius-round);
+    background: var(--bg-backdrop);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px)
+}
+
+.controlAction__8151b,.controlActions__8151b {
+    display: flex;
+    align-items: center
 }
 
 .controlActions__8151b {
-    display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: flex-end;
     gap: 8px
 }
@@ -2057,4 +2071,4 @@ img.thumbnail__0f2e8 {
     transform: translateX(-50%)
 }
 
-/*# sourceMappingURL=8fd4222e7a805e26.css.map*/
+/*# sourceMappingURL=7e074acf0265ee1c.css.map*/

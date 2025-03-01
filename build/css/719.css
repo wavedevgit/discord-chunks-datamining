@@ -1,6 +1,6 @@
 /**
   Module ID: 719
-  Original File Name: 92f475c0f6d1048a
+  Original File Name: 58340e23a0adb19a
 **/
 @value minColumnWidth: 460px;
 
@@ -3304,7 +3304,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     background-color: rgba(19,19,24,.8);
     box-shadow: var(--shadow-border) var(--shadow-high);
     border: 1px solid var(--border-subtle);
-    cursor: pointer
+    cursor: pointer;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .clanTag_adebba,.username_adebba {
@@ -3561,4 +3565,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=92f475c0f6d1048a.css.map*/
+/*# sourceMappingURL=58340e23a0adb19a.css.map*/

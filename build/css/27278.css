@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: 794c8ae94cdb9769
+  Original File Name: 53b24580bcbbfdae
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -491,18 +491,26 @@
 }
 
 .controlUserContainer__8151b {
+    display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 4px;
     padding: 8px;
-    border-radius: var(--radius-md)
-}
-
-.controlAction__8151b,.controlUserContainer__8151b {
-    display: flex;
-    align-items: center;
     background: var(--bg-backdrop);
     -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px)
+    backdrop-filter: blur(4px);
+    border-radius: var(--radius-md);
+    max-width: 152px
+}
+
+.controlUserName__8151b,.guildTag__8151b {
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.controlUserName__8151b {
+    max-width: 100%;
+    text-overflow: ellipsis
 }
 
 .controlAction__8151b {
@@ -510,13 +518,19 @@
     width: 28px;
     height: 28px;
     cursor: pointer;
-    border-radius: var(--radius-round)
+    border-radius: var(--radius-round);
+    background: var(--bg-backdrop);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px)
+}
+
+.controlAction__8151b,.controlActions__8151b {
+    display: flex;
+    align-items: center
 }
 
 .controlActions__8151b {
-    display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: flex-end;
     gap: 8px
 }
@@ -1265,4 +1279,4 @@
     height: 100%
 }
 
-/*# sourceMappingURL=794c8ae94cdb9769.css.map*/
+/*# sourceMappingURL=53b24580bcbbfdae.css.map*/

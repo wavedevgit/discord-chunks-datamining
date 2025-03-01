@@ -1,6 +1,6 @@
 /**
   Module ID: 14498
-  Original File Name: 30b487c96e928ff7
+  Original File Name: fd76689986ab21e0
 **/
 .hoverRoll__0263c {
     display: inline-block;
@@ -917,7 +917,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     background-color: rgba(19,19,24,.8);
     box-shadow: var(--shadow-border) var(--shadow-high);
     border: 1px solid var(--border-subtle);
-    cursor: pointer
+    cursor: pointer;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .clanTag_adebba,.username_adebba {
@@ -1139,4 +1143,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=30b487c96e928ff7.css.map*/
+/*# sourceMappingURL=fd76689986ab21e0.css.map*/

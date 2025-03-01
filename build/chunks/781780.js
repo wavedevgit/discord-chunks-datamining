@@ -13,19 +13,19 @@ function c(e) {
   let {
     channelId: u,
     guildId: s,
-    embeddedActivity: d,
-    application: _
+    embeddedActivity: _,
+    application: d
   } = e, p = {
-    instance_id: null !== (c = null !== (n = d.compositeInstanceId) && void 0 !== n ? n : d.launchId) && void 0 !== c ? c : "",
-    location_id: null === (t = d.location) || void 0 === t ? void 0 : t.id,
-    launch_id: d.launchId,
-    referrer_id: d.referrerId,
-    custom_id: d.customId
+    instance_id: null !== (c = null !== (n = _.compositeInstanceId) && void 0 !== n ? n : _.launchId) && void 0 !== c ? c : "",
+    location_id: null === (t = _.location) || void 0 === t ? void 0 : t.id,
+    launch_id: _.launchId,
+    referrer_id: _.referrerId,
+    custom_id: _.customId
   };
   return null != s && "" !== s && (p.guild_id = s), null != u && "" !== u && (p.channel_id = u), (0, o.jsx)(a.J, {
-    allowPopups: (0, r.h)(_),
-    referrerPolicy: i.um.has(d.applicationId) ? "no-referrer" : "origin",
-    url: d.url,
+    allowPopups: (0, r.h)(d),
+    referrerPolicy: i.um.has(_.applicationId) ? "no-referrer" : "origin",
+    url: _.url,
     queryParams: p,
     className: l.iframe,
     shouldRefocus: !1

@@ -1,6 +1,6 @@
 /**
   Module ID: 29611
-  Original File Name: a57cb936f171ee60
+  Original File Name: c8f96617dd5de7e7
 **/
 .hoverRoll__0263c {
     display: inline-block;
@@ -619,7 +619,11 @@
     background-color: rgba(19,19,24,.8);
     box-shadow: var(--shadow-border) var(--shadow-high);
     border: 1px solid var(--border-subtle);
-    cursor: pointer
+    cursor: pointer;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .clanTag_adebba,.username_adebba {
@@ -2252,4 +2256,4 @@
     height: 52px
 }
 
-/*# sourceMappingURL=a57cb936f171ee60.css.map*/
+/*# sourceMappingURL=c8f96617dd5de7e7.css.map*/

@@ -10,17 +10,17 @@ var o = n(200651),
   c = n(110924),
   u = n(812206),
   s = n(243778),
-  d = n(554370),
-  _ = n(788983),
+  _ = n(554370),
+  d = n(788983),
   p = n(546247),
   b = n(214629),
   f = n(317381),
   m = n(16609),
   v = n(781780),
   h = n(325749),
-  C = n(981631),
-  x = n(921944),
-  g = n(832969);
+  g = n(981631),
+  C = n(921944),
+  x = n(832969);
 
 function y(e) {
   let {
@@ -33,7 +33,7 @@ function y(e) {
       [t, a] = (0, s.US)(e),
       c = t === i.z.ACTIVITY_POPOUT_NUX_MODAL,
       u = r.useCallback(() => {
-        a(x.L.USER_DISMISS)
+        a(C.L.USER_DISMISS)
       }, [a]);
     return {
       showsNewUserExperience: c,
@@ -89,7 +89,7 @@ function y(e) {
   return (r.useEffect(() => {
     a && c()
   }, [c, a]), a) ? (0, o.jsx)("div", {
-    className: g.nuxBackground,
+    className: x.nuxBackground,
     children: (0, o.jsx)(p.Z, {})
   }) : t
 }
@@ -111,30 +111,30 @@ function I() {
   }), i = r.useRef(null), s = (0, c.Z)(e);
   r.useEffect(() => {
     null != e ? clearTimeout(i.current) : null != s && null == e && (i.current = window.setTimeout(() => {
-      (0, _.xv)(C.KJ3.ACTIVITY_POPOUT)
+      (0, d.xv)(g.KJ3.ACTIVITY_POPOUT)
     }, 5e3))
   }, [e, s]);
   let p = (0, a.e7)([u.Z], () => {
       let t = null == e ? void 0 : e.applicationId;
       return null == t ? void 0 : u.Z.getApplication(t)
     }),
-    x = (0, b.PR)();
+    C = (0, b.PR)();
   return (0, o.jsx)("div", {
-    className: g.container,
+    className: x.container,
     children: null == e || null == p ? (0, o.jsx)(l.$jN, {
-      className: g.iframe
+      className: x.iframe
     }) : (0, o.jsx)("div", {
-      className: g.loadedContentContainer,
+      className: x.loadedContentContainer,
       children: (0, o.jsxs)("div", {
-        className: g.iframeAndHeaderContainer,
+        className: x.iframeAndHeaderContainer,
         children: [(0, o.jsx)("div", {
-          className: g.headerContainer,
+          className: x.headerContainer,
           children: (0, o.jsx)(h.Z, {
             applicationId: p.id,
             channelId: t
           })
         }), (0, o.jsx)("div", {
-          className: g.iframeContainer,
+          className: x.iframeContainer,
           children: (0, o.jsx)(y, {
             children: (0, o.jsx)(v.Z, {
               channelId: t,
@@ -143,7 +143,7 @@ function I() {
               application: p
             })
           })
-        }), x ? (0, o.jsx)(d.Z, {
+        }), C ? (0, o.jsx)(_.Z, {
           isEmbeddedActivity: !0
         }) : null]
       })

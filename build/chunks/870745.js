@@ -17,7 +17,7 @@ function s(e, t) {
       autoTrackExposure: !0
     }).enabled,
     s = (0, r.e7)([c.Z], () => c.Z.getChannel(t)),
-    d = null == s ? void 0 : s.getGuildId();
+    _ = null == s ? void 0 : s.getGuildId();
   return !1 === n ? null : (0, o.jsx)(a.sNh, {
     id: "report-app",
     color: "danger",
@@ -25,7 +25,7 @@ function s(e, t) {
     action: () => (0, l.uu)({
       application: e,
       entrypoint: "activity_ui_popout",
-      contextualGuildId: null != d ? d : void 0,
+      contextualGuildId: null != _ ? _ : void 0,
       contextualChannelId: null == s ? void 0 : s.id
     }),
     icon: a.U65
