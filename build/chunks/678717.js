@@ -30,8 +30,8 @@ var g = n(392750),
   S = n(645973),
   E = n(903502),
   k = n(912072),
-  I = n(272193),
-  w = n(685560),
+  w = n(272193),
+  I = n(685560),
   Z = n(735959),
   P = n(246992),
   R = n(496025),
@@ -195,7 +195,7 @@ function ee() {
       })), e.push({
         id: "gifting_intent",
         name: "Gifting Intent",
-        render: () => (0, r.jsx)(I.Z, {})
+        render: () => (0, r.jsx)(w.Z, {})
       }), e.push({
         id: "voice_filters",
         name: "Voice Filters",
@@ -203,7 +203,7 @@ function ee() {
       }), e.push({
         id: "skill_trees",
         name: "Skill Trees",
-        render: () => (0, r.jsx)(w.Z, {})
+        render: () => (0, r.jsx)(I.Z, {})
       }), e
     }, []),
     {

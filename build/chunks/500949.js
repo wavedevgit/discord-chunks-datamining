@@ -48,8 +48,8 @@ var r, a, l = n(192379),
   S = n(723757),
   E = n(375924),
   k = n(596136),
-  I = n(341901),
-  w = n(856308),
+  w = n(341901),
+  I = n(856308),
   Z = n(665352),
   P = n(394900),
   R = n(661105),
@@ -114,8 +114,8 @@ let F = {
     REC_2020: S.Z,
     REC_2100_HLG: E.Z,
     REC_2100_PQ: k.Z,
-    XYZ_D50: I.Z,
-    XYZ_D65: w.Z
+    XYZ_D50: w.Z,
+    XYZ_D65: I.Z
   },
   G = Object.fromEntries(Object.keys(F).map(e => [e, e]));
 Object.values(F).forEach(e => Z.Z.register(e));

@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 5027ad286fc200d5
+  Original File Name: 8ab155f2e3a8009d
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -483,7 +483,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    cursor: pointer
+    cursor: pointer;
+    gap: 10px;
+    margin: 2px 0
 }
 
 .nameRow_b4dcd9 {
@@ -4881,4 +4883,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=5027ad286fc200d5.css.map*/
+/*# sourceMappingURL=8ab155f2e3a8009d.css.map*/

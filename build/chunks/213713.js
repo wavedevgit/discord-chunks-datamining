@@ -29,11 +29,11 @@ var r = n(200651),
   S = n(650613),
   E = n(789086),
   k = n(206583),
-  I = n(866235),
-  w = n(710662);
+  w = n(866235),
+  I = n(710662);
 let Z = [{
   key: "type",
-  cellClassName: i()(I.cell, I.cellType),
+  cellClassName: i()(w.cell, w.cellType),
   render(e) {
     let {
       type: t
@@ -45,7 +45,7 @@ let Z = [{
   }
 }, {
   key: "count",
-  cellClassName: i()(I.cell, I.cellCount),
+  cellClassName: i()(w.cell, w.cellCount),
   render(e) {
     let {
       entries: t
@@ -59,7 +59,7 @@ let Z = [{
   }
 }, {
   key: "only?",
-  cellClassName: I.cell,
+  cellClassName: w.cell,
   render(e) {
     let {
       type: t
@@ -131,9 +131,9 @@ function R() {
     z = (0, p.Z)(M).filter(y.lm),
     F = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
   return (0, r.jsx)("div", {
-    className: i()(w.panel),
+    className: i()(I.panel),
     children: (0, r.jsxs)(h.zJl, {
-      className: I.content,
+      className: w.content,
       children: [(0, r.jsxs)(h.hjN, {
         children: [(0, r.jsx)(h.vwX, {
           children: "Inventory"

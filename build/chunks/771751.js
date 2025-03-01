@@ -85,71 +85,87 @@ let v = async () => {
 };
 
 function T(e) {
-  var t, n, l, o;
+  var t, n, l, s;
   let {
-    offer: s,
-    offerOptions: u,
-    forceRefetch: m
-  } = e, [f, p] = a.useState(!1), [_, v] = a.useState(!1), [j, N] = a.useState(!1), [O, T] = a.useState(!1);
+    offer: u,
+    offerOptions: m,
+    forceRefetch: f
+  } = e, [p, _] = a.useState(!1), [v, j] = a.useState(!1), [N, O] = a.useState(!1), [T, S] = a.useState(!1);
   a.useEffect(() => {
-    j && T(!0);
+    N && S(!0);
     let e = setTimeout(() => {
-      T(!1)
+      S(!1)
     }, 500);
     return () => {
       clearTimeout(e)
     }
-  }, [j]);
+  }, [N]);
   let {
-    id: S,
-    expires_at: E,
-    redeemed_at: k,
+    id: E,
+    expires_at: k,
+    redeemed_at: w,
     trial_id: I,
-    subscription_trial: w,
-    referrer: Z
-  } = s, P = null !== (n = null === (t = u.find(e => {
+    subscription_trial: Z,
+    referrer: P
+  } = u, R = null !== (n = null === (t = m.find(e => {
     let {
       value: t
     } = e;
     return t === I
   })) || void 0 === t ? void 0 : t.label) && void 0 !== n ? n : "Unknown";
-  null != Z && (P = "".concat(P, " from @").concat(Z.username));
-  let R = null != E,
-    L = null != E && new Date(E).getTime() < Date.now(),
-    A = (null == w ? void 0 : w.sku_id) === b.Si.TIER_0,
-    D = async () => {
-      N(!0), R ? await C(S, "trial") : await (0, d.a)(s), m(), N(!1)
+  null != P && (R = "".concat(R, " from @").concat(P.username));
+  let L = null != k,
+    A = null != k && new Date(k).getTime() < Date.now(),
+    D = (null == Z ? void 0 : Z.sku_id) === b.Si.TIER_0,
+    B = async () => {
+      O(!0), L ? await C(E, "trial") : await (0, d.a)(u), f(), O(!1)
+    }, M = async e => {
+      let {
+        expiresAt: t
+      } = e;
+      O(!0);
+      try {
+        await o.tn.patch({
+          url: "/user-offers/trial/".concat(E),
+          body: {
+            expires_at: t
+          },
+          rejectWithError: !0
+        })
+      } finally {
+        f(), O(!1)
+      }
     };
   a.useEffect(() => {
-    if (f) {
+    if (p) {
       let e = setTimeout(() => {
-        p(!1)
+        _(!1)
       }, 3e3);
       return () => {
         clearTimeout(e)
       }
     }
-    if (_) {
+    if (v) {
       let e = setTimeout(() => {
-        v(!1)
+        j(!1)
       }, 3e3);
       return () => {
         clearTimeout(e)
       }
     }
-  }, [f, _]);
-  let B = "Active";
-  return R && (B = "Acknowledged"), L && (B = "Expired"), (0, r.jsxs)("div", {
-    className: i()(g.card, A ? g.gradientWrapperTier0 : g.gradientWrapperTier2),
+  }, [p, v]);
+  let z = "Active";
+  return L && (z = "Acknowledged"), A && (z = "Expired"), (0, r.jsxs)("div", {
+    className: i()(g.card, D ? g.gradientWrapperTier0 : g.gradientWrapperTier2),
     children: [(0, r.jsxs)("div", {
       className: i()(g.row, g.nameRow),
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-lg/semibold",
         color: "always-white",
-        children: P
+        children: R
       }), (0, r.jsx)(c.P3F, {
         onClick: async () => {
-          N(!0), await y(S, "trial"), m(), N(!1)
+          O(!0), await y(E, "trial"), f(), O(!1)
         },
         children: (0, r.jsx)(c.XHJ, {
           size: "md",
@@ -160,13 +176,13 @@ function T(e) {
     }), (0, r.jsxs)(c.P3F, {
       className: i()(g.row, g.idRow),
       onClick: () => {
-        (0, h.JG)(S), p(!0)
+        (0, h.JG)(E), _(!0)
       },
       children: [(0, r.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
-        children: ["Offer: ", S]
-      }), f ? (0, r.jsx)(c.dz2, {
+        children: ["Offer: ", E]
+      }), p ? (0, r.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: i()(g.icon, g.noMargin)
@@ -178,13 +194,13 @@ function T(e) {
     }), (0, r.jsxs)(c.P3F, {
       className: i()(g.row, g.idRow),
       onClick: () => {
-        (0, h.JG)(I), v(!0)
+        (0, h.JG)(I), j(!0)
       },
       children: [(0, r.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
         children: ["Trial: ", I]
-      }), _ ? (0, r.jsx)(c.dz2, {
+      }), v ? (0, r.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: i()(g.icon, g.noMargin)
@@ -194,29 +210,43 @@ function T(e) {
         className: g.icon
       })]
     }), (0, r.jsx)("div", {
+      className: g.row,
       children: (0, r.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
         children: ["Trial Length:", " ", (0, x.if)({
-          intervalType: null !== (l = null == w ? void 0 : w.interval) && void 0 !== l ? l : b.rV.MONTH,
-          intervalCount: null !== (o = null == w ? void 0 : w.interval_count) && void 0 !== o ? o : 1,
+          intervalType: null !== (l = null == Z ? void 0 : Z.interval) && void 0 !== l ? l : b.rV.MONTH,
+          intervalCount: null !== (s = null == Z ? void 0 : Z.interval_count) && void 0 !== s ? s : 1,
           capitalize: !1
         })]
       })
     }), (0, r.jsxs)("div", {
+      className: g.row,
+      children: [(0, r.jsx)(c.Text, {
+        variant: "eyebrow",
+        color: "always-white",
+        children: "Expires:"
+      }), (0, r.jsx)("input", {
+        type: "date",
+        value: null != k ? k.substring(0, 10) : "",
+        onChange: e => M({
+          expiresAt: e.target.value
+        })
+      })]
+    }), (0, r.jsxs)("div", {
       className: g.badgeContainer,
       children: [(0, r.jsx)(c.P3F, {
-        onClick: D,
+        onClick: B,
         className: i()(g.badge, g.clickable, {
-          [g.acked]: R,
-          [g.expired]: L
+          [g.acked]: L,
+          [g.expired]: A
         }),
         children: (0, r.jsx)(c.Text, {
           variant: "eyebrow",
-          color: "Acknowledged" === B ? void 0 : "always-white",
-          children: B
+          color: "Acknowledged" === z ? void 0 : "always-white",
+          children: z
         })
-      }), null != k && (0, r.jsx)("div", {
+      }), null != w && (0, r.jsx)("div", {
         className: i()(g.badge, g.__invalid_badgeBottom, g.redeemed),
         children: (0, r.jsx)(c.Text, {
           variant: "eyebrow",
@@ -226,7 +256,7 @@ function T(e) {
       })]
     }), (0, r.jsx)("div", {
       className: i()(g.loadingContainer, {
-        [g.isLoading]: j || O
+        [g.isLoading]: N || T
       }),
       children: (0, r.jsx)(c.$jN, {})
     })]
@@ -237,62 +267,78 @@ function S(e) {
   var t, n;
   let {
     offer: l,
-    offerOptions: o,
-    forceRefetch: s
-  } = e, [u, m] = a.useState(!1), [x, f] = a.useState(!1), [p, b] = a.useState(!1), [_, v] = a.useState(!1);
+    offerOptions: s,
+    forceRefetch: u
+  } = e, [m, x] = a.useState(!1), [f, p] = a.useState(!1), [b, _] = a.useState(!1), [v, j] = a.useState(!1);
   a.useEffect(() => {
-    p && v(!0);
+    b && j(!0);
     let e = setTimeout(() => {
-      v(!1)
+      j(!1)
     }, 500);
     return () => {
       clearTimeout(e)
     }
-  }, [p]);
+  }, [b]);
   let {
-    id: j,
-    expires_at: N,
-    applied_at: O,
-    discount_id: T,
-    discount: S
-  } = l, E = null !== (n = null === (t = o.find(e => {
+    id: N,
+    expires_at: O,
+    applied_at: T,
+    discount_id: S,
+    discount: E
+  } = l, k = null !== (n = null === (t = s.find(e => {
     let {
       value: t
     } = e;
-    return t === T
-  })) || void 0 === t ? void 0 : t.label) && void 0 !== n ? n : "Unknown", k = null != N, I = null != N && new Date(N).getTime() < Date.now(), w = async () => {
-    b(!0), k ? await C(j, "discount") : await (0, d.a)(void 0, l), s(), b(!1)
+    return t === S
+  })) || void 0 === t ? void 0 : t.label) && void 0 !== n ? n : "Unknown", w = null != O, I = null != O && new Date(O).getTime() < Date.now(), Z = async () => {
+    _(!0), w ? await C(N, "discount") : await (0, d.a)(void 0, l), u(), _(!1)
+  }, P = async e => {
+    let {
+      expiresAt: t
+    } = e;
+    _(!0);
+    try {
+      await o.tn.patch({
+        url: "/user-offers/discount/".concat(N),
+        body: {
+          expires_at: t
+        },
+        rejectWithError: !0
+      })
+    } finally {
+      u(), _(!1)
+    }
   };
   a.useEffect(() => {
-    if (u) {
+    if (m) {
       let e = setTimeout(() => {
-        m(!1)
+        x(!1)
       }, 3e3);
       return () => {
         clearTimeout(e)
       }
     }
-    if (x) {
+    if (f) {
       let e = setTimeout(() => {
-        f(!1)
+        p(!1)
       }, 3e3);
       return () => {
         clearTimeout(e)
       }
     }
-  }, [u, x]);
-  let Z = "Active";
-  return I && (Z = "Expired"), k && (Z = "Acknowledged"), (0, r.jsxs)("div", {
+  }, [m, f]);
+  let R = "Active";
+  return I && (R = "Expired"), w && (R = "Acknowledged"), (0, r.jsxs)("div", {
     className: i()(g.card, g.discount),
     children: [(0, r.jsxs)("div", {
       className: i()(g.row, g.nameRow),
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-lg/semibold",
         color: "text-normal",
-        children: E
+        children: k
       }), (0, r.jsx)(c.P3F, {
         onClick: async () => {
-          b(!0), await y(j, "discount"), s(), b(!1)
+          _(!0), await y(N, "discount"), u(), _(!1)
         },
         children: (0, r.jsx)(c.XHJ, {
           size: "md",
@@ -303,13 +349,13 @@ function S(e) {
     }), (0, r.jsxs)(c.P3F, {
       className: i()(g.row, g.idRow),
       onClick: () => {
-        (0, h.JG)(j), m(!0)
+        (0, h.JG)(N), x(!0)
       },
       children: [(0, r.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "text-normal",
-        children: ["Offer: ", j]
-      }), u ? (0, r.jsx)(c.dz2, {
+        children: ["Offer: ", N]
+      }), m ? (0, r.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: i()(g.icon, g.noMargin)
@@ -321,13 +367,13 @@ function S(e) {
     }), (0, r.jsxs)(c.P3F, {
       className: i()(g.row, g.idRow),
       onClick: () => {
-        (0, h.JG)(T), f(!0)
+        (0, h.JG)(S), p(!0)
       },
       children: [(0, r.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "text-normal",
-        children: ["Discount: ", T]
-      }), x ? (0, r.jsx)(c.dz2, {
+        children: ["Discount: ", S]
+      }), f ? (0, r.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: i()(g.icon, g.noMargin)
@@ -336,26 +382,39 @@ function S(e) {
         color: "currentColor",
         className: g.icon
       })]
-    }), (null == S ? void 0 : S.amount) != null && (0, r.jsx)("div", {
+    }), (null == E ? void 0 : E.amount) != null && (0, r.jsx)("div", {
       children: (0, r.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "text-normal",
-        children: [S.amount, "% off"]
+        children: [E.amount, "% off"]
       })
+    }), (0, r.jsxs)("div", {
+      className: g.row,
+      children: [(0, r.jsx)(c.Text, {
+        variant: "eyebrow",
+        color: "always-white",
+        children: "Expires:"
+      }), (0, r.jsx)("input", {
+        type: "date",
+        value: null != O ? O.substring(0, 10) : "",
+        onChange: e => P({
+          expiresAt: e.target.value
+        })
+      })]
     }), (0, r.jsxs)("div", {
       className: g.badgeContainer,
       children: [(0, r.jsx)(c.P3F, {
-        onClick: w,
+        onClick: Z,
         className: i()(g.badge, g.clickable, {
-          [g.acked]: k,
+          [g.acked]: w,
           [g.expired]: I
         }),
         children: (0, r.jsx)(c.Text, {
           variant: "eyebrow",
-          color: "Acknowledged" === Z ? void 0 : "always-white",
-          children: Z
+          color: "Acknowledged" === R ? void 0 : "always-white",
+          children: R
         })
-      }), null != O && (0, r.jsx)("div", {
+      }), null != T && (0, r.jsx)("div", {
         className: i()(g.badge, g.__invalid_badgeBottom, g.redeemed),
         children: (0, r.jsx)(c.Text, {
           variant: "eyebrow",
@@ -365,7 +424,7 @@ function S(e) {
       })]
     }), (0, r.jsx)("div", {
       className: i()(g.loadingContainer, {
-        [g.isLoading]: p || _
+        [g.isLoading]: b || v
       }),
       children: (0, r.jsx)(c.$jN, {})
     })]
@@ -373,7 +432,7 @@ function S(e) {
 }
 
 function E() {
-  let [e, t] = a.useState([]), [n, l] = a.useState([]), [o, h] = a.useState(), [x, p] = a.useState(), [b, y] = a.useState([]), [C, E] = a.useState([]), [k, I] = a.useState(!0);
+  let [e, t] = a.useState([]), [n, l] = a.useState([]), [o, h] = a.useState(), [x, p] = a.useState(), [b, y] = a.useState([]), [C, E] = a.useState([]), [k, w] = a.useState(!0);
   a.useEffect(() => {
     (0 === e.length || 0 === n.length || k) && v().then(e => {
       let n = Object.keys(e.trial).map(t => ({
@@ -387,16 +446,16 @@ function E() {
       t(n), l(r), null == o && h(n[0].value), null == x && p(r[0].value)
     })
   }, [e, n, o, x, k]), a.useEffect(() => {
-    k && (I(!1), m.Z.forceReset(), (0, d.T)(), N().then(e => {
+    k && (w(!1), m.Z.forceReset(), (0, d.T)(), N().then(e => {
       y(e.trial.sort((e, t) => e.id.localeCompare(t.id))), E(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
   }, [k]);
-  let w = async () => {
-    null != o && (await j(o, "trial"), I(!0))
+  let I = async () => {
+    null != o && (await j(o, "trial"), w(!0))
   }, Z = async () => {
-    null != x && (await j(x, "discount"), I(!0))
+    null != x && (await j(x, "discount"), w(!0))
   }, P = async () => {
-    await O(), I(!0)
+    await O(), w(!0)
   };
   return (0, r.jsx)(c.zJl, {
     className: i()(_.panel),
@@ -419,7 +478,7 @@ function E() {
             children: "Clear Mobile Trials DismissibleContent"
           }), (0, r.jsx)(c.zxk, {
             size: c.zxk.Sizes.SMALL,
-            onClick: () => I(!0),
+            onClick: () => w(!0),
             children: "Refresh DevTools"
           })]
         })]
@@ -439,7 +498,7 @@ function E() {
             select: e => h(e),
             popoutLayerContext: f.O$
           }), (0, r.jsx)(c.zxk, {
-            onClick: w,
+            onClick: I,
             children: "Create"
           })]
         })]
@@ -471,7 +530,7 @@ function E() {
         }), b.map(t => (0, r.jsx)(T, {
           offer: t,
           offerOptions: e,
-          forceRefetch: () => I(!0)
+          forceRefetch: () => w(!0)
         }, t.id))]
       }), C.length > 0 && (0, r.jsxs)("section", {
         className: g.section,
@@ -481,7 +540,7 @@ function E() {
         }), C.map(e => (0, r.jsx)(S, {
           offer: e,
           offerOptions: n,
-          forceRefetch: () => I(!0)
+          forceRefetch: () => w(!0)
         }, e.id))]
       })]
     })

@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => w
+  Z: () => I
 }), n(47120), n(26686);
 var r = n(200651),
   a = n(192379),
@@ -136,10 +136,10 @@ let k = [{
       })
     }
   }],
-  I = {
+  w = {
     events: {
       label: "Events",
-      filter: e => Object.entries(I).filter(e => {
+      filter: e => Object.entries(w).filter(e => {
         let [t] = e;
         return "events" !== t
       }).map(t => {
@@ -163,11 +163,11 @@ let k = [{
     }
   };
 
-function w() {
+function I() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     l = (0, d.e7)([b.Z], () => b.Z.loggedEventsVersion),
-    [s, c] = a.useState(() => Object.keys(I)),
+    [s, c] = a.useState(() => Object.keys(w)),
     [m, h] = a.useState(b.Z.loggedEvents),
     f = a.useRef(null),
     p = a.useMemo(() => (0, o.throttle)(async (e, t) => {
@@ -188,13 +188,13 @@ function w() {
     }), []),
     g = m.filter(e => {
       for (let t of s)
-        if (I[t].filter(e)) return !0;
+        if (w[t].filter(e)) return !0;
       return !1
     });
   a.useEffect(() => {
     p(t, b.Z.loggedEvents)
   }, [t, p, l]);
-  let [S, E] = a.useState(void 0), w = g.find(e => e.key === S), {
+  let [S, E] = a.useState(void 0), I = g.find(e => e.key === S), {
     TabBar: Z,
     renderSelectedTab: P
   } = (0, y.Z)({
@@ -222,7 +222,7 @@ function w() {
         className: N.toolbarDivider
       }), (0, r.jsx)("div", {
         className: N.filters,
-        children: Object.entries(I).map(e => {
+        children: Object.entries(w).map(e => {
           let [t, n] = e;
           return (0, r.jsx)(u.P3F, {
             className: i()(N.filter, s.includes(t) && N.activeFilter),
@@ -247,12 +247,12 @@ function w() {
       data: g,
       selectedRowKey: S,
       onClickRow: e => E(e.key)
-    }), null != w && (0, r.jsxs)(v.Z, {
+    }), null != I && (0, r.jsxs)(v.Z, {
       className: N.subPanel,
       minHeight: 100,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
       children: [(0, r.jsx)(Z, {}), P({
-        loggedEvent: w,
+        loggedEvent: I,
         onClose: () => E(void 0)
       })]
     })]
