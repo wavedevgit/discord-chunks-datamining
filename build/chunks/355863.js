@@ -219,7 +219,7 @@ let b = "migrated",
           width: 256,
           height: 144
         },
-        pinned: !0
+        pinned: !1
       },
       version: 1
     },
