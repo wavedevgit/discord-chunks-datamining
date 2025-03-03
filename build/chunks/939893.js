@@ -1,8 +1,8 @@
 /** Chunk was on 37697 **/
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(301563);
-var r, a, i = n(200651);
+var r, i, a = n(200651);
 n(192379);
 var l = n(477660),
   o = n.n(l),
@@ -32,13 +32,13 @@ function g(e) {
   }
   return e
 }
-let _ = /^discord.gg\/[a-zA-Z0-9-]+/,
-  f = (r = g({}, h.Z.rules), a = a = {
+let f = /^discord.gg\/[a-zA-Z0-9-]+/,
+  _ = (r = g({}, h.Z.rules), i = i = {
     heading: g({}, d.i.heading),
     image: g({}, o().defaultRules.image),
     inviteLink: {
       order: h.Z.rules.link.order + 1,
-      match: (e, t) => t.inline ? _.exec(e) : null,
+      match: (e, t) => t.inline ? f.exec(e) : null,
       parse: (e, t, n) => {
         let r = (0, p.zO)(e[0]);
         return null == r || r.type !== u.g.INVITE ? {
@@ -61,20 +61,20 @@ let _ = /^discord.gg\/[a-zA-Z0-9-]+/,
           }
         }
       },
-      react: (e, t, n) => (0, i.jsx)(s.eee, {
+      react: (e, t, n) => (0, a.jsx)(s.eee, {
         onClick: t => {
           t.preventDefault(), e.onClick()
         },
         children: (0, m.S)(e, t, n)
       }, n.key)
     }
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
       n.push.apply(n, r)
     }
     return n
-  })(Object(a)).forEach(function(e) {
-    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
+  })(Object(i)).forEach(function(e) {
+    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
   }), r)

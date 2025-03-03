@@ -3,17 +3,17 @@ n.d(t, {
   Z: () => l
 });
 var r = n(200651),
-  a = n(648113),
-  i = n(395542);
+  i = n(648113),
+  a = n(395542);
 
 function l() {
-  let e = (0, a.C)();
+  let e = (0, i.C)();
   return (0, r.jsxs)("div", {
-    className: i.gradientBackground,
+    className: a.gradientBackground,
     children: [(0, r.jsx)("div", {
       className: e
     }), (0, r.jsx)("div", {
-      className: i.gradientOverlay
+      className: a.gradientOverlay
     })]
   })
 }

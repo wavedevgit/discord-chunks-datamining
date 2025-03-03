@@ -1,6 +1,6 @@
 /**
   Module ID: 20777
-  Original File Name: 6a30544f5472394e
+  Original File Name: 1a63c6abe118ee9b
 **/
 .clickable_c69b6d {
     cursor: pointer
@@ -1428,7 +1428,8 @@
     text-align: flex-start;
     padding: 0 16px;
     flex-direction: column;
-    gap: 16px
+    gap: 16px;
+    word-wrap: anywhere
 }
 
 .body__86ab2,.error__86ab2 {
@@ -1621,7 +1622,10 @@
     padding: 4px 8px;
     border-radius: 16px;
     border: 1px solid var(--border-faint);
-    max-width: 268px
+    max-width: 268px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .traitEmoji_d452e4 {
@@ -1631,7 +1635,8 @@
 
 .traitLabel_d452e4 {
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .auditLog__43dab {
@@ -2384,4 +2389,4 @@
     background-image: url(/assets/436b5a86429f186a.svg)
 }
 
-/*# sourceMappingURL=6a30544f5472394e.css.map*/
+/*# sourceMappingURL=1a63c6abe118ee9b.css.map*/

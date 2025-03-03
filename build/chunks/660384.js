@@ -1,9 +1,9 @@
 /** Chunk was on 37697 **/
 n.d(t, {
-  Z: () => a
+  Z: () => i
 });
 var r = n(642128);
-class a {
+class i {
   handleScroll(e) {
     this.top.set(e.currentTarget.scrollTop)
   }

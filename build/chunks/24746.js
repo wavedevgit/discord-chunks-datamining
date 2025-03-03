@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => v
 }), n(266796), n(47120);
 var r = n(200651),
-  a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  i = n(192379),
+  a = n(120356),
+  l = n.n(a),
   o = n(477660),
   s = n.n(o),
   c = n(481060),
@@ -16,12 +16,12 @@ var r = n(200651),
 let h = s().parserFor(d.Z),
   g = s().reactFor(s().ruleOutput(d.Z, "react"));
 
-function _(e) {
+function f(e) {
   let {
     description: t,
     supportsMarkdown: n
-  } = e, [i, o] = a.useState(!1), s = a.useRef(null);
-  a.useEffect(() => {
+  } = e, [a, o] = i.useState(!1), s = i.useRef(null);
+  i.useEffect(() => {
     if (null == s.current) return;
     let e = new ResizeObserver(() => {
       var e, t, n, r;
@@ -29,7 +29,7 @@ function _(e) {
     });
     return e.observe(s.current), () => e.disconnect()
   }, []);
-  let [d, p] = a.useState(!1), _ = a.useCallback(() => {
+  let [d, p] = i.useState(!1), f = i.useCallback(() => {
     p(e => !e)
   }, []);
   return (0, r.jsxs)(r.Fragment, {
@@ -52,18 +52,18 @@ function _(e) {
         color: "text-normal",
         children: t
       })
-    }), i || d ? (0, r.jsx)(f, {
+    }), a || d ? (0, r.jsx)(_, {
       isShowingMore: d,
-      onToggle: _
+      onToggle: f
     }) : null]
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     onToggle: t,
     isShowingMore: n
-  } = e, i = a.useMemo(() => (0, r.jsxs)("div", {
+  } = e, a = i.useMemo(() => (0, r.jsxs)("div", {
     className: m.showMoreContent,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/semibold",
@@ -84,7 +84,7 @@ function f(e) {
     onClick: t,
     children: [(0, r.jsx)("div", {
       className: m.divider
-    }), i, (0, r.jsx)("div", {
+    }), a, (0, r.jsx)("div", {
       className: m.divider
     })]
   })
@@ -92,11 +92,11 @@ function f(e) {
 let v = function(e) {
   var t, n;
   let {
-    application: i
-  } = e, l = null === (t = i.directory_entry) || void 0 === t ? void 0 : t.detailed_description, o = null === (n = i.directory_entry) || void 0 === n ? void 0 : n.short_description, s = a.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(_, {
+    application: a
+  } = e, l = null === (t = a.directory_entry) || void 0 === t ? void 0 : t.detailed_description, o = null === (n = a.directory_entry) || void 0 === n ? void 0 : n.short_description, s = i.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(f, {
     description: l,
     supportsMarkdown: !0
-  }) : null != o && o.length > 0 ? (0, r.jsx)(_, {
+  }) : null != o && o.length > 0 ? (0, r.jsx)(f, {
     description: o,
     supportsMarkdown: !1
   }) : null, [l, o]);

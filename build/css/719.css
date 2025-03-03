@@ -1,6 +1,6 @@
 /**
   Module ID: 719
-  Original File Name: 58340e23a0adb19a
+  Original File Name: 6f84b799f54f06ec
 **/
 @value minColumnWidth: 460px;
 
@@ -2416,7 +2416,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     text-align: flex-start;
     padding: 0 16px;
     flex-direction: column;
-    gap: 16px
+    gap: 16px;
+    word-wrap: anywhere
 }
 
 .body__86ab2,.error__86ab2 {
@@ -2609,7 +2610,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding: 4px 8px;
     border-radius: 16px;
     border: 1px solid var(--border-faint);
-    max-width: 268px
+    max-width: 268px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .traitEmoji_d452e4 {
@@ -2619,7 +2623,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .traitLabel_d452e4 {
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .container_b2d72f {
@@ -3565,4 +3570,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=58340e23a0adb19a.css.map*/
+/*# sourceMappingURL=6f84b799f54f06ec.css.map*/

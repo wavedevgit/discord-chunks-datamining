@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => y
 }), n(47120), n(653041);
-var r, a = n(200651),
-  i = n(192379),
+var r, i = n(200651),
+  a = n(192379),
   l = n(120356),
   o = n.n(l),
   s = n(299608),
@@ -14,8 +14,8 @@ var r, a = n(200651),
   m = n(714338),
   h = n(134432),
   g = n(44488),
-  _ = n(585483),
-  f = n(981631),
+  f = n(585483),
+  _ = n(981631),
   v = n(758255);
 
 function b(e, t, n) {
@@ -43,7 +43,7 @@ let C = {
   friction: 10,
   tension: 100
 };
-class j extends i.Component {
+class j extends a.Component {
   componentWillEnter(e) {
     let {
       directionHistory: t
@@ -95,7 +95,7 @@ class j extends i.Component {
     } = this.props, {
       className: t
     } = this.props;
-    return (0, a.jsx)(d.Z.img, {
+    return (0, i.jsx)(d.Z.img, {
       src: e.src,
       alt: "",
       className: o()(v.slide, t),
@@ -109,12 +109,12 @@ class j extends i.Component {
     })
   }
 }
-class y extends(r = i.Component) {
+class y extends(r = a.Component) {
   componentDidMount() {
-    this.preloadNextImages(), m.Z.disable(), m.Z.enableTemp(p.P), _.S.subscribe(f.CkL.MODAL_CAROUSEL_NEXT, this.gotoNextThrottled), _.S.subscribe(f.CkL.MODAL_CAROUSEL_PREV, this.gotoPrevThrottled)
+    this.preloadNextImages(), m.Z.disable(), m.Z.enableTemp(p.P), f.S.subscribe(_.CkL.MODAL_CAROUSEL_NEXT, this.gotoNextThrottled), f.S.subscribe(_.CkL.MODAL_CAROUSEL_PREV, this.gotoPrevThrottled)
   }
   componentWillUnmount() {
-    m.Z.disableTemp(), _.S.unsubscribe(f.CkL.MODAL_CAROUSEL_NEXT, this.gotoNextThrottled), _.S.unsubscribe(f.CkL.MODAL_CAROUSEL_PREV, this.gotoPrevThrottled)
+    m.Z.disableTemp(), f.S.unsubscribe(_.CkL.MODAL_CAROUSEL_NEXT, this.gotoNextThrottled), f.S.unsubscribe(_.CkL.MODAL_CAROUSEL_PREV, this.gotoPrevThrottled)
   }
   preloadNextImages() {
     var e, t;
@@ -122,8 +122,8 @@ class y extends(r = i.Component) {
       currentIndex: n
     } = this.state, {
       items: r
-    } = this.props, a = ((n + 1) % (e = r.length) + e) % e, i = ((n - 1) % (t = r.length) + t) % t;
-    this.preloadImage(r[a]), this.preloadImage(r[i])
+    } = this.props, i = ((n + 1) % (e = r.length) + e) % e, a = ((n - 1) % (t = r.length) + t) % t;
+    this.preloadImage(r[i]), this.preloadImage(r[a])
   }
   preloadImage(e) {
     (0, h.po)(e.src)
@@ -137,12 +137,12 @@ class y extends(r = i.Component) {
   navigateTo(e) {
     var t, n, r;
     let {
-      directionHistory: a,
-      currentIndex: i
+      directionHistory: i,
+      currentIndex: a
     } = this.state;
-    a.push(e - i), e = (e % (r = this.props.items.length) + r) % r, this.setState({
+    i.push(e - a), e = (e % (r = this.props.items.length) + r) % r, this.setState({
       currentIndex: e,
-      directionHistory: a
+      directionHistory: i
     }), null === (t = (n = this.props).onIndexChange) || void 0 === t || t.call(n, e)
   }
   render() {
@@ -153,19 +153,19 @@ class y extends(r = i.Component) {
       currentIndex: n,
       directionHistory: r
     } = this.state, {
-      modalCarouselItemClassName: i
+      modalCarouselItemClassName: a
     } = this.props, l = this.props.items[n], s = this.props.items;
-    return (0, a.jsxs)(u.W, {
+    return (0, i.jsxs)(u.W, {
       component: "div",
       className: o()(v.wrapper, t),
-      children: [s.length > 1 ? (0, a.jsx)(g.am, {
+      children: [s.length > 1 ? (0, i.jsx)(g.am, {
         className: v.navPrev,
         onClick: this.gotoPrev
-      }) : null, null !== (e = l.component) && void 0 !== e ? e : (0, a.jsx)(j, {
+      }) : null, null !== (e = l.component) && void 0 !== e ? e : (0, i.jsx)(j, {
         item: l,
         directionHistory: r,
-        className: i
-      }, l.src), s.length > 1 ? (0, a.jsx)(g.Pz, {
+        className: a
+      }, l.src), s.length > 1 ? (0, i.jsx)(g.Pz, {
         className: v.navNext,
         onClick: this.gotoNext
       }) : null]

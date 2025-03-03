@@ -3,8 +3,8 @@ n.d(t, {
   i: () => u
 }), n(47120);
 var r = n(192379),
-  a = n(442837),
-  i = n(894653),
+  i = n(442837),
+  a = n(894653),
   l = n(493646),
   o = n(881294),
   s = n(258971),
@@ -12,7 +12,7 @@ var r = n(192379),
   d = n(981631);
 
 function u(e) {
-  let t = (0, a.e7)([i.Z], () => i.Z.getCategories()),
+  let t = (0, i.e7)([a.Z], () => a.Z.getCategories()),
     n = (0, l.K)(),
     u = r.useMemo(() => [{
       id: n.id.toString(),

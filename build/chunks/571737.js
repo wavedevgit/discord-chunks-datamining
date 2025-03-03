@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => m
 }), n(653041);
 var r = n(200651),
-  a = n(192379),
-  i = n(622535),
+  i = n(192379),
+  a = n(622535),
   l = n(481060),
   o = n(783097),
   s = n(768581),
@@ -16,11 +16,11 @@ let m = function(e) {
   let {
     application: t,
     onButtonsVisibilityChange: n
-  } = e, m = a.useMemo(() => s.ZP.getApplicationIconURL({
+  } = e, m = i.useMemo(() => s.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     size: 96
-  }), [t]), h = a.useMemo(() => {
+  }), [t]), h = i.useMemo(() => {
     let e = [];
     return (0, o.vJ)(t) && e.push(u.NW.string(u.t.LO4f0N)), (0, o.Cb)(t) && (0 !== e.length && e.push("•"), e.push(u.NW.string(u.t["8z5B2d"]))), (0, o.Hu)(t) && (0 !== e.length && e.push("•"), e.push(u.NW.string(u.t["5khEk5"]))), e
   }, [t]);
@@ -63,7 +63,7 @@ let m = function(e) {
             children: e
           }, t))
         })]
-      }), (0, r.jsx)(i.$, {
+      }), (0, r.jsx)(a.$, {
         onChange: n,
         active: !0,
         children: (0, r.jsx)(d.Z, {

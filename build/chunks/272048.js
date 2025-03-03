@@ -1,9 +1,27 @@
-/** Chunk was on 76025 **/
-e.exports = {
-  container: "container_badc98",
-  modalImageWrapper: "modalImageWrapper_badc98",
-  modalImage: "modalImage_badc98",
-  content: "content_badc98",
-  title: "title_badc98",
-  footer: "footer_badc98"
+/** Chunk was on 37697 **/
+n.d(t, {
+  E: () => i
+});
+let r = (0, n(818083).B)({
+  kind: "user",
+  id: "2025-02_app_directory_launch_activity_button",
+  label: "App Directory Launch Activity Button",
+  defaultConfig: {
+    enabled: !1
+  },
+  treatments: [{
+    id: 1,
+    label: "Enable user to Launch an Activity directly from the App Directory",
+    config: {
+      enabled: !0
+    }
+  }]
+});
+
+function i(e) {
+  return r.useExperiment({
+    location: e
+  }, {
+    autoTrackExposure: !0
+  })
 }

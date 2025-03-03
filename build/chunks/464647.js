@@ -1,6 +1,6 @@
 /** Chunk was on 84335 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 });
 var r = n(200651),
   l = n(192379),
@@ -108,7 +108,7 @@ function j(e) {
   })
 }
 
-function x(e) {
+function I(e) {
   let {
     game: t,
     activityLevel: n
@@ -127,14 +127,14 @@ function x(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     profile: t
   } = e, n = t.gameActivity, {
     gamesToDisplay: i,
     lastGameToDisplay: o,
     remainingGames: s
-  } = (0, u.Z)(t), b = l.useMemo(() => {
+  } = (0, u.Z)(t), x = l.useMemo(() => {
     if (null == o) return null;
     let e = o.getIconURL(24);
     return null == e ? null : 0 === s.length ? (0, r.jsx)(f, {
@@ -168,7 +168,7 @@ function b(e) {
   }, [o, s, n]);
   return null == i || 0 === i.length ? null : 1 === i.length ? (0, r.jsx)("div", {
     className: d.container,
-    children: (0, r.jsx)(x, {
+    children: (0, r.jsx)(I, {
       game: i[0],
       activityLevel: n[i[0].id]
     })
@@ -177,6 +177,6 @@ function b(e) {
     children: [i.map(e => (0, r.jsx)(f, {
       game: e,
       activityLevel: n[e.id]
-    }, e.id)), b]
+    }, e.id)), x]
   })
 }

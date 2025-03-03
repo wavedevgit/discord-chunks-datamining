@@ -1,6 +1,6 @@
 /**
   Module ID: 98806
-  Original File Name: a004fe0d73ba99f2
+  Original File Name: bd2969a03211c42c
 **/
 .container__05cdc {
     display: flex
@@ -103,7 +103,8 @@
     text-align: flex-start;
     padding: 0 16px;
     flex-direction: column;
-    gap: 16px
+    gap: 16px;
+    word-wrap: anywhere
 }
 
 .body__86ab2,.error__86ab2 {
@@ -296,7 +297,10 @@
     padding: 4px 8px;
     border-radius: 16px;
     border: 1px solid var(--border-faint);
-    max-width: 268px
+    max-width: 268px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .traitEmoji_d452e4 {
@@ -306,7 +310,8 @@
 
 .traitLabel_d452e4 {
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .container__86bf6 {
@@ -1052,4 +1057,4 @@
     max-height: max(200px, min(calc(100vh - 80px), 660px))
 }
 
-/*# sourceMappingURL=a004fe0d73ba99f2.css.map*/
+/*# sourceMappingURL=bd2969a03211c42c.css.map*/

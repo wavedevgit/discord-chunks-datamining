@@ -4,8 +4,8 @@ n.d(t, {
 }), n(266796);
 var r = n(200651);
 n(192379);
-var a = n(120356),
-  i = n.n(a),
+var i = n(120356),
+  a = n.n(i),
   l = n(481060),
   o = n(410030),
   s = n(686546),
@@ -16,15 +16,15 @@ var a = n(120356),
   m = n(768581),
   h = n(981631),
   g = n(388032),
-  _ = n(387680),
-  f = n(129512),
+  f = n(387680),
+  _ = n(129512),
   v = n(330065);
 
 function b(e) {
   let {
     guild: t,
     className: n,
-    onClick: a
+    onClick: i
   } = e, b = (0, o.ZP)(), x = new p.ZP({
     name: t.name,
     icon: t.icon
@@ -35,7 +35,7 @@ function b(e) {
   }), j = null != C ? C : function(e) {
     switch (e) {
       case h.BRd.DARK:
-        return f;
+        return _;
       case h.BRd.LIGHT:
         return v
     }
@@ -45,25 +45,25 @@ function b(e) {
     size: 50
   });
   return (0, r.jsxs)(l.P3F, {
-    className: i()(_.card, n),
-    onClick: a,
+    className: a()(f.card, n),
+    onClick: i,
     "aria-label": g.NW.string(g.t.RB4L29),
     children: [(0, r.jsxs)("div", {
-      className: _.cardHeader,
+      className: f.cardHeader,
       children: [(0, r.jsx)("img", {
         src: j,
         alt: "",
-        className: _.splashImage
+        className: f.splashImage
       }), (0, r.jsx)("div", {
-        className: _.guildIcon,
+        className: f.guildIcon,
         children: (0, r.jsx)(s.ZP, {
           mask: s.ZP.Masks.AVATAR_DEFAULT,
           width: 58,
           height: 58,
           children: (0, r.jsx)("div", {
-            className: _.iconMask,
+            className: f.iconMask,
             children: (0, r.jsx)(c.Z, {
-              className: _.__invalid_icon,
+              className: f.__invalid_icon,
               iconSrc: y,
               guild: x,
               size: c.Z.Sizes.LARGE
@@ -72,31 +72,31 @@ function b(e) {
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: _.cardDetails,
+      className: f.cardDetails,
       children: [(0, r.jsxs)("div", {
-        className: _.guildNameWrapper,
+        className: f.guildNameWrapper,
         children: [(0, r.jsx)(d.Z, {
-          className: _.guildBadge,
+          className: f.guildBadge,
           guild: t,
           tooltipColor: l.ua7.Colors.PRIMARY
         }), (0, r.jsx)(l.X6q, {
           variant: "heading-md/semibold",
-          className: _.guildName,
+          className: f.guildName,
           children: t.name
         })]
       }), (0, r.jsx)(l.Text, {
-        className: _.guildDescription,
+        className: f.guildDescription,
         variant: "text-sm/normal",
         color: "header-secondary",
         lineClamp: 2,
         children: t.description
       }), (0, r.jsx)("div", {
-        className: _.memberInfo,
+        className: f.memberInfo,
         children: (0, r.jsxs)("div", {
-          className: _.memberCountWrapper,
+          className: f.memberCountWrapper,
           children: [(0, r.jsx)(l.tBG, {
             color: "currentColor",
-            className: _.memberCountIcon,
+            className: f.memberCountIcon,
             size: "xs"
           }), (0, r.jsx)(l.Text, {
             variant: "text-xs/normal",

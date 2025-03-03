@@ -86,25 +86,26 @@ function I(e) {
   let {
     gameFriends: n,
     hasIncomingPendingGameFriends: t,
-    hasOutgoingPendingGameFriends: i,
-    user: l,
-    analyticsLocation: s
+    hasOutgoingPendingGameFriends: o,
+    user: i,
+    analyticsLocation: l
   } = e, {
-    onMouseEnter: c,
-    ariaLabel: a,
-    tooltipText: d
+    onMouseEnter: s,
+    ariaLabel: c,
+    tooltipText: a,
+    icon: d
   } = (0, u.N)({
     gameFriends: n,
     hasIncomingPendingGameFriends: t,
-    hasOutgoingPendingGameFriends: i
+    hasOutgoingPendingGameFriends: o
   });
   return (0, r.jsx)(y, {
-    tooltipText: d,
-    ariaLabel: a,
-    icon: o.KED,
-    onMouseEnter: c,
-    user: l,
-    analyticsLocation: s
+    tooltipText: a,
+    ariaLabel: c,
+    icon: d,
+    onMouseEnter: s,
+    user: i,
+    analyticsLocation: l
   })
 }
 

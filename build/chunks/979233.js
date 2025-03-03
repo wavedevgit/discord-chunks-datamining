@@ -1,12 +1,12 @@
 /** Chunk was on 37697 **/
 n.d(t, {
-  M: () => i
+  M: () => a
 });
 var r = n(192379),
-  a = n(660384);
+  i = n(660384);
 
-function i() {
-  let e = r.useRef(new a.Z),
+function a() {
+  let e = r.useRef(new i.Z),
     t = r.useCallback(t => {
       e.current.handleScroll(t)
     }, []);

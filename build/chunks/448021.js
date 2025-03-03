@@ -1,10 +1,10 @@
 /** Chunk was on 37697 **/
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(200651),
-  a = n(192379),
-  i = n(793030),
+  i = n(192379),
+  a = n(793030),
   l = n(442837),
   o = n(445986),
   s = n(9807),
@@ -16,17 +16,17 @@ var r = n(200651),
   h = n(346903),
   g = n(902294);
 
-function _(e) {
+function f(e) {
   let {
     application: t,
     carouselItems: n
-  } = e, _ = (0, l.e7)([u.Z], () => u.Z.isFocused()), f = (0, r.jsxs)(r.Fragment, {
+  } = e, f = (0, l.e7)([u.Z], () => u.Z.isFocused()), _ = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       className: h.errorImage,
       src: g,
       "aria-hidden": !0,
       alt: ""
-    }), (0, r.jsx)(i.X6, {
+    }), (0, r.jsx)(a.X6, {
       variant: "heading-xl/semibold",
       children: m.NW.string(m.t.UvDfMz)
     })]
@@ -38,12 +38,12 @@ function _(e) {
       name: t.name
     })
   });
-  let v = a.useCallback((e, t) => {
+  let v = i.useCallback((e, t) => {
     if (e.type === p.s9s.IMG) {
       let t = n.filter(e => e.type === p.s9s.IMG),
         r = t.findIndex(t => t === e);
       if (r < 0) return;
-      let a = t.map(e => ({
+      let i = t.map(e => ({
         url: (0, o.Q)(e.src),
         original: e.src,
         width: e.width,
@@ -51,7 +51,7 @@ function _(e) {
         type: "IMAGE"
       }));
       (0, d.K)({
-        items: a,
+        items: i,
         startingIndex: r,
         fit: c.D.CONTAIN,
         shouldHideMediaOptions: !0,
@@ -65,9 +65,9 @@ function _(e) {
     themedPagination: !0,
     items: n,
     autoplayInterval: 8e3,
-    paused: !_,
+    paused: !f,
     videoAutoPlay: !0,
     onCurrentItemClick: v,
-    errorComponent: f
+    errorComponent: _
   })
 }

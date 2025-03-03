@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 8d6ce742cdd8a64f
+  Original File Name: d76b51c448742d79
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -3527,7 +3527,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     text-align: flex-start;
     padding: 0 16px;
     flex-direction: column;
-    gap: 16px
+    gap: 16px;
+    word-wrap: anywhere
 }
 
 .body__86ab2,.error__86ab2 {
@@ -3720,7 +3721,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding: 4px 8px;
     border-radius: 16px;
     border: 1px solid var(--border-faint);
-    max-width: 268px
+    max-width: 268px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .traitEmoji_d452e4 {
@@ -3730,7 +3734,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .traitLabel_d452e4 {
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .container_b2d72f {
@@ -5313,4 +5318,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=8d6ce742cdd8a64f.css.map*/
+/*# sourceMappingURL=d76b51c448742d79.css.map*/

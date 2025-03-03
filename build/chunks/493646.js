@@ -1,23 +1,23 @@
 /** Chunk was on 37697 **/
 n.d(t, {
   K: () => l,
-  v: () => i
+  v: () => a
 });
 var r = n(979007),
-  a = n(388032);
+  i = n(388032);
 
-function i(e) {
+function a(e) {
   switch (e.id) {
     case 4:
-      return a.NW.string(a.t["3m9EgY"]);
+      return i.NW.string(i.t["3m9EgY"]);
     case 6:
-      return a.NW.string(a.t.VJRr3d);
+      return i.NW.string(i.t.VJRr3d);
     case 8:
-      return a.NW.string(a.t.Uv7mFR);
+      return i.NW.string(i.t.Uv7mFR);
     case 9:
-      return a.NW.string(a.t.TEK9Aw);
+      return i.NW.string(i.t.TEK9Aw);
     case 10:
-      return a.NW.string(a.t.lfBt2d)
+      return i.NW.string(i.t.lfBt2d)
   }
   return ""
 }
@@ -25,6 +25,6 @@ function i(e) {
 function l() {
   return {
     id: r.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID,
-    name: a.NW.string(a.t.ijDDw8)
+    name: i.NW.string(i.t.ijDDw8)
   }
 }

@@ -16,11 +16,11 @@ var l = n(120356),
   v = n(15210),
   f = n(464647),
   j = n(43542),
-  x = n(723776),
-  b = n(686369),
-  h = n(22858);
+  I = n(723776),
+  x = n(686369),
+  b = n(22858);
 
-function I(e) {
+function h(e) {
   let {
     profile: t
   } = e, n = function(e, t) {
@@ -31,9 +31,9 @@ function I(e) {
       }),
       r = (0, c.ZP)(n, t);
     return null != e.brandColorPrimary ? e.brandColorPrimary : r
-  }(t, (0, o.dQu)(a.Z.colors.BG_BASE_TERTIARY).hex()), l = (0, b.d)(n, t);
+  }(t, (0, o.dQu)(a.Z.colors.BG_BASE_TERTIARY).hex()), l = (0, x.d)(n, t);
   return (0, r.jsx)("div", {
-    className: h.banner,
+    className: b.banner,
     style: {
       background: l
     }
@@ -46,13 +46,13 @@ function p(e) {
     onIconChange: n
   } = e;
   return null == n ? (0, r.jsx)("div", {
-    className: h.avatarContainer,
+    className: b.avatarContainer,
     children: (0, r.jsx)(u.ZP, {
       mask: u.QS.CLAN_ICON,
       width: 70,
       height: 70,
       children: (0, r.jsx)("div", {
-        className: h.avatarWrapper,
+        className: b.avatarWrapper,
         children: (0, r.jsx)(s.b, {
           guildId: t.id,
           guildName: t.name,
@@ -62,7 +62,7 @@ function p(e) {
       })
     })
   }) : (0, r.jsx)("div", {
-    className: h.avatarContainer,
+    className: b.avatarContainer,
     children: (0, r.jsx)(o.tEY, {
       within: !0,
       children: (0, r.jsx)(u.ZP, {
@@ -70,17 +70,17 @@ function p(e) {
         width: 70,
         height: 70,
         children: (0, r.jsxs)("div", {
-          className: i()(h.avatarWrapper, h.clickable),
+          className: i()(b.avatarWrapper, b.clickable),
           children: [(0, r.jsx)(s.b, {
             guildId: t.id,
             guildName: t.name,
             guildIcon: t.icon,
             iconSize: 64
           }), (0, r.jsx)("div", {
-            className: h.overlay
+            className: b.overlay
           }), (0, r.jsx)(o.vdY, {
             size: "custom",
-            className: h.overlayIcon,
+            className: b.overlayIcon,
             width: 20,
             height: 20,
             color: "white"
@@ -105,8 +105,8 @@ function g(e) {
   return null != c ? s = c : a || (s = (0, r.jsx)(v.Z, {
     profile: t
   })), (0, r.jsxs)("div", {
-    className: i()(h.container, l),
-    children: [(0, r.jsx)(I, {
+    className: i()(b.container, l),
+    children: [(0, r.jsx)(h, {
       profile: t
     }), (0, r.jsx)(p, {
       onIconChange: n,
@@ -114,18 +114,18 @@ function g(e) {
     }), (0, r.jsx)(j.Z, {
       profile: t
     }), (0, r.jsxs)("div", {
-      className: h.body,
+      className: b.body,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: t.description
       }), (0, r.jsx)(f.Z, {
         profile: t
-      }), (0, r.jsx)(x.F, {
+      }), (0, r.jsx)(I.F, {
         profile: t
       })]
     }), null != s && (0, r.jsx)("div", {
-      className: h.buttonContainer,
+      className: b.buttonContainer,
       children: s
     })]
   })

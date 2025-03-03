@@ -122,7 +122,7 @@ class A {
           applicationId: l,
           type: o
         } = t;
-        !e.has(i) && (o === N.OGo.FRIEND && n.has(i) || (o === N.OGo.FRIEND && n.add(i), r.push(new j(C(I({
+        !(o === N.OGo.FRIEND && e.has(i)) && (o === N.OGo.FRIEND && n.has(i) || (o === N.OGo.FRIEND && n.add(i), r.push(new j(C(I({
           key: "".concat(i, "-").concat(l),
           type: o,
           userId: i,

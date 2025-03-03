@@ -153,27 +153,28 @@ function y(e) {
     user: t,
     gameFriends: n,
     hasOutgoingPendingGameFriends: i,
-    hasIncomingPendingGameFriends: a,
-    analyticsLocation: s,
-    shouldShowTooltip: l
+    hasIncomingPendingGameFriends: o,
+    analyticsLocation: a,
+    shouldShowTooltip: s
   } = e, {
-    tooltipText: u,
-    onMouseEnter: d,
-    ariaLabel: f
+    tooltipText: l,
+    onMouseEnter: u,
+    ariaLabel: d,
+    icon: f
   } = (0, c.N)({
     gameFriends: n,
     hasOutgoingPendingGameFriends: i,
-    hasIncomingPendingGameFriends: a
+    hasIncomingPendingGameFriends: o
   });
   return (0, r.jsx)(v, {
-    tooltipText: u,
+    tooltipText: l,
     tooltipPosition: "left",
     tooltipAlign: "top",
-    ariaLabel: f,
-    shouldShowTooltip: l,
-    icon: o.KED,
-    onMouseEnter: d,
+    ariaLabel: d,
+    shouldShowTooltip: s,
+    icon: f,
+    onMouseEnter: u,
     user: t,
-    analyticsLocation: s
+    analyticsLocation: a
   })
 }

@@ -1,10 +1,10 @@
 /** Chunk was on 37697 **/
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(200651),
-  a = n(192379),
-  i = n(793030),
+  i = n(192379),
+  a = n(793030),
   l = n(34674),
   o = n(823379),
   s = n(448021),
@@ -16,10 +16,10 @@ var r = n(200651),
   h = n(388032),
   g = n(168549);
 
-function _(e) {
+function f(e) {
   let {
     application: t
-  } = e, n = a.useMemo(() => {
+  } = e, n = i.useMemo(() => {
     var e, n, r;
     return null !== (r = (null !== (n = null === (e = t.directory_entry) || void 0 === e ? void 0 : e.carousel_items) && void 0 !== n ? n : []).map(l.RF).filter(o.lm)) && void 0 !== r ? r : []
   }, [t]);
@@ -42,7 +42,7 @@ function _(e) {
       className: g.informationContainer,
       children: [(0, r.jsx)("div", {
         className: g.divider
-      }), (0, r.jsx)(i.X6, {
+      }), (0, r.jsx)(a.X6, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: h.NW.string(h.t["mD+J/v"])

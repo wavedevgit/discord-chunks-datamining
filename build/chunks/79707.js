@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var a = n(481060),
-  i = n(388032);
+var i = n(481060),
+  a = n(388032);
 
 function l(e) {
   let {
@@ -14,22 +14,22 @@ function l(e) {
     onTabSelect: l,
     onClose: o
   } = e;
-  return (0, r.jsx)(a.v2r, {
+  return (0, r.jsx)(i.v2r, {
     navId: "global-discovery-tabs-overflow-menu",
-    "aria-label": i.NW.string(i.t.riPnr6),
+    "aria-label": a.NW.string(a.t.riPnr6),
     hideScroller: !0,
     onClose: o,
     onSelect: o,
-    children: (0, r.jsx)(a.kSQ, {
+    children: (0, r.jsx)(i.kSQ, {
       children: t.map(e => {
         let {
           id: t,
-          label: i
+          label: a
         } = e;
-        return (0, r.jsx)(a.sNh, {
+        return (0, r.jsx)(i.sNh, {
           id: t,
-          label: i,
-          icon: t === n ? a.owK : void 0,
+          label: a,
+          icon: t === n ? i.owK : void 0,
           action: () => l(t)
         }, t)
       })

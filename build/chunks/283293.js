@@ -3,18 +3,18 @@ n.d(t, {
   Z: () => o
 });
 var r = n(200651),
-  a = n(192379),
-  i = n(481060),
+  i = n(192379),
+  a = n(481060),
   l = n(107626);
-let o = a.forwardRef(function(e, t) {
+let o = i.forwardRef(function(e, t) {
   let {
     onScroll: n,
-    children: a
+    children: i
   } = e;
-  return (0, r.jsx)(i.Den, {
+  return (0, r.jsx)(a.Den, {
     onScroll: n,
     className: l.scroller,
     ref: t,
-    children: a
+    children: i
   })
 })
