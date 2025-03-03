@@ -10,20 +10,20 @@ var n = r(192379),
   a = r(381585),
   s = r(597688),
   c = r(884697),
-  d = r(819490),
-  u = r(82892),
+  u = r(819490),
+  d = r(82892),
   p = r(981631);
 
 function f(e, t) {
   let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "product",
     f = (0, a.sp)(),
     b = (0, l.e7)([s.Z], () => s.Z.getProduct(e)),
-    h = (0, u.x)(),
+    h = (0, d.x)(),
     m = o.ZP.canUseCollectibles(h),
     C = n.useRef(null),
     [g, v] = n.useState(!1),
     [x, j] = n.useState(!1),
-    _ = (0, d.B)("shop_product_card");
+    _ = (0, u.B)("shop_product_card");
   return n.useEffect(() => (g && null === C.current ? C.current = setTimeout(() => {
     j(!0)
   }, 1e3) : g || (null !== C.current && (clearTimeout(C.current), C.current = null), j(!1)), () => {

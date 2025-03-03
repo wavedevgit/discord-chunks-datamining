@@ -10,8 +10,8 @@ var n = r(200651),
   a = r(442837),
   s = r(481060),
   c = r(594174),
-  d = r(381585),
-  u = r(597688),
+  u = r(381585),
+  d = r(597688),
   p = r(937510),
   f = r(38900),
   b = r(709999),
@@ -49,8 +49,8 @@ let v = e => {
         children: [...Array(12)].map((e, t) => (0, n.jsx)(f.K, {}, t + 1))
       }) : (0, n.jsx)(n.Fragment, {
         children: k.slice(0, v).map((e, t) => {
-          let r = u.Z.getCategoryForProduct(e.skuId);
-          return null == e || null == r ? null : (0, n.jsx)(d.k0, {
+          let r = d.Z.getCategoryForProduct(e.skuId);
+          return null == e || null == r ? null : (0, n.jsx)(u.k0, {
             newValue: {
               tilePosition: t,
               pageSection: "popular picks",

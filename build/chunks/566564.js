@@ -10,8 +10,8 @@ var n = r(200651),
   a = r(685816),
   s = r(442837),
   c = r(481060),
-  d = r(594174),
-  u = r(960048),
+  u = r(594174),
+  d = r(960048),
   p = r(744112),
   f = r(223143),
   b = r(364111),
@@ -34,8 +34,8 @@ let O = e => {
       noCache: s,
       includeUnpublished: c
     } = (0, m.Z)(), {
-      isFetchingShopHome: d,
-      fetchShopHomeError: u,
+      isFetchingShopHome: u,
+      fetchShopHomeError: d,
       shopBlocks: p,
       refreshShopHome: f
     } = (0, b.E)(o, {
@@ -45,21 +45,21 @@ let O = e => {
     }), j = l.useCallback(() => {
       f()
     }, [f]);
-    return null != u ? (0, n.jsx)(h.Z, {
+    return null != d ? (0, n.jsx)(h.Z, {
       onRetry: j,
       errorOrigin: h.i.SHOP_PAGE,
-      errorMessage: u.message
-    }) : d || 0 === p.length ? (0, n.jsxs)(n.Fragment, {
+      errorMessage: d.message
+    }) : u || 0 === p.length ? (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(v.Z, {
-        isLoading: d,
+        isLoading: u,
         handleTransition: t,
         tab: o
       }), (0, n.jsx)(C.Z, {
-        isLoading: d,
+        isLoading: u,
         handleTransition: t,
         categories: []
       }), (0, n.jsx)(g.Z, {
-        isLoading: d,
+        isLoading: u,
         handleTransition: t,
         numVisibleItems: r,
         rankedSkuIds: [],
@@ -71,20 +71,20 @@ let O = e => {
         switch (e.type) {
           case a.z.HERO:
             return (0, n.jsx)(v.Z, {
-              isLoading: d,
+              isLoading: u,
               handleTransition: t,
               heroBlock: e,
               tab: o
             }, l);
           case a.z.FEATURED:
             return (0, n.jsx)(C.Z, {
-              isLoading: d,
+              isLoading: u,
               handleTransition: t,
               featuredBlockRecord: e
             }, l);
           case a.z.FEED:
             return (0, n.jsx)(g.Z, {
-              isLoading: d || i,
+              isLoading: u || i,
               handleTransition: t,
               numVisibleItems: r,
               rankedSkuIds: e.rankedSkuIds,
@@ -117,7 +117,7 @@ let O = e => {
       refreshCategories: k
     } = (0, f.ZP)({
       location: "CollectiblesFeedShop"
-    }), P = null !== (t = null != g ? g : v) && void 0 !== t ? t : x, S = (0, s.e7)([d.default], () => d.default.getCurrentUser()), w = (0, p.b)("Collectibles Shop Button"), {
+    }), P = null !== (t = null != g ? g : v) && void 0 !== t ? t : x, S = (0, s.e7)([u.default], () => u.default.getCurrentUser()), w = (0, p.b)("Collectibles Shop Button"), {
       noCache: E,
       includeUnpublished: L
     } = (0, m.Z)(), I = l.useCallback(() => {
@@ -126,7 +126,7 @@ let O = e => {
     if (null == S) return null;
     if (null != P) {
       let e = [];
-      null != g ? e.push("shop load fetch categories error: ".concat(P.message)) : null != v ? e.push("shop load fetch purchase error: ".concat(P.message)) : e.push("shop load claim error: ".concat(P.message)), u.Z.captureMessage(e.join("\n"), {
+      null != g ? e.push("shop load fetch categories error: ".concat(P.message)) : null != v ? e.push("shop load fetch purchase error: ".concat(P.message)) : e.push("shop load claim error: ".concat(P.message)), d.Z.captureMessage(e.join("\n"), {
         tags: {
           isStaff: S.isStaff().toString(),
           preloadEnabled: w.toString(),

@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => N
 }), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -18,10 +18,9 @@ var r = n(200651),
   h = n(981631),
   f = n(570911),
   b = n(388032),
-  x = n(832306),
-  j = n(659116);
+  x = n(832306);
 
-function N(e) {
+function j(e) {
   let {
     isDiscoverable: t,
     profile: n,
@@ -77,29 +76,21 @@ function N(e) {
   })
 }
 
-function v(e) {
+function N(e) {
   var t;
   let {
     profile: n,
     onCustomBannerChange: s,
     canManageGuild: d
-  } = e, m = (0, l.e7)([u.Z], () => u.Z.getGuild(n.id)), g = null !== (t = null == m ? void 0 : m.hasFeature(h.oNc.DISCOVERABLE)) && void 0 !== t && t, v = n.id, _ = i.useCallback((e, t) => () => {
-    p.Z.updateGuildProfile(v, {
+  } = e, m = (0, l.e7)([u.Z], () => u.Z.getGuild(n.id)), g = null !== (t = null == m ? void 0 : m.hasFeature(h.oNc.DISCOVERABLE)) && void 0 !== t && t, N = n.id, v = i.useCallback((e, t) => () => {
+    p.Z.updateGuildProfile(N, {
       brandColorPrimary: t,
       customBanner: null
     })
-  }, [v]), O = i.useCallback(e => (!g || null == n.customBanner) && e === n.brandColorPrimary, [n, g]);
-  return (0, r.jsxs)(o.hjN, {
-    className: j.section,
-    children: [(0, r.jsxs)("div", {
-      className: j.sectionHeader,
-      children: [(0, r.jsx)(o.vwX, {
-        children: b.NW.string(b.t.BSVog4)
-      }), (0, r.jsx)(o.R94, {
-        type: o.geA.DESCRIPTION,
-        children: b.NW.string(b.t["93S9Gx"])
-      })]
-    }), (0, r.jsxs)("div", {
+  }, [N]), _ = i.useCallback(e => (!g || null == n.customBanner) && e === n.brandColorPrimary, [n, g]);
+  return (0, r.jsx)(o.hjN, {
+    title: b.NW.string(b.t.BSVog4),
+    children: (0, r.jsxs)("div", {
       className: x.grid,
       children: [f.cb.map(e => {
         let {
@@ -131,7 +122,7 @@ function v(e) {
               "aria-disabled": !d,
               tabIndex: d ? 0 : -1,
               "aria-label": t,
-              onClick: d ? _(t, n) : void 0,
+              onClick: d ? v(t, n) : void 0,
               style: {
                 background: (0, c.d)(n)
               },
@@ -140,7 +131,7 @@ function v(e) {
               }),
               children: (0, r.jsx)("div", {
                 className: a()({
-                  [x.itemSelected]: O(n)
+                  [x.itemSelected]: _(n)
                 })
               })
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
@@ -155,12 +146,12 @@ function v(e) {
             }), i))
           }
         }, t)
-      }), (0, r.jsx)(N, {
+      }), (0, r.jsx)(j, {
         canManageGuild: d,
         isDiscoverable: g,
         profile: n,
         onCustomBannerChange: s
       })]
-    })]
+    })
   })
 }

@@ -403,7 +403,7 @@ class eK extends i.PureComponent {
       })
     }), eG(this, "getCallTileMenuActionHandler", function(e, t, n) {
       let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : eU.A5.CONTEXT_MENU;
-      return (0, eD.u)(e, "ChannelCall", {
+      return (0, eD.u)(e, T.Z.CHANNEL_CALL, {
         entrypoint: r,
         tileType: n,
         targetUserId: t.type !== eU.fO.ACTIVITY ? t.user.id : void 0
@@ -447,7 +447,7 @@ class eK extends i.PureComponent {
               entrypoint: eU.A5.THREE_DOT,
               tileType: eU.TH.USER,
               targetUserId: h.id,
-              location: "ChannelCall"
+              location: T.Z.CHANNEL_CALL
             }));
             switch (c.type) {
               case eB.d4z.DM:

@@ -11,8 +11,8 @@ var l = r(120356),
   a = r(884697),
   s = r(409116),
   c = r(200615),
-  d = r(981631),
-  u = r(388032),
+  u = r(981631),
+  d = r(388032),
   p = r(302841);
 
 function f() {
@@ -64,7 +64,7 @@ function m(e) {
     discount: l,
     className: m,
     nitroUpsell: C = !1
-  } = e, g = (0, a.ql)(t, d.tuJ.DEFAULT);
+  } = e, g = (0, a.ql)(t, u.tuJ.DEFAULT);
   if (null == g) return null;
   if (g.amount <= 0) return (0, n.jsx)("div", {
     className: i()(p.priceTagsContainer, m),
@@ -72,7 +72,7 @@ function m(e) {
       price: g
     })
   });
-  let v = (0, a.ql)(t, d.tuJ.PREMIUM_TIER_2),
+  let v = (0, a.ql)(t, u.tuJ.PREMIUM_TIER_2),
     x = !r && !(0, a.x6)(t),
     j = (0, a.x6)(t) && r ? h(b({}, g), {
       amount: l.original
@@ -92,13 +92,13 @@ function m(e) {
       discount: r ? l : a.f_,
       renderPrice: C ? e => (0, n.jsx)(o.Text, {
         variant: "text-xs/medium",
-        children: u.NW.format(u.t.Sv8iiY, {
+        children: d.NW.format(d.t.Sv8iiY, {
           price: e,
           subscribeNowHook: e => (0, n.jsx)(c.F, {
             text: e
           })
         })
-      }) : x ? e => u.NW.formatToPlainString(u.t.W3gIWF, {
+      }) : x ? e => d.NW.formatToPlainString(d.t.W3gIWF, {
         price: e
       }) : void 0,
       className: i()(p.price, {
@@ -107,8 +107,8 @@ function m(e) {
       }),
       variant: r ? void 0 : "text-xs/semibold",
       icon: (0, n.jsx)(o.ua7, {
-        text: u.NW.string(u.t.MPFyJy),
-        "aria-label": u.NW.string(u.t.X3Ekj4),
+        text: d.NW.string(d.t.MPFyJy),
+        "aria-label": d.NW.string(d.t.X3Ekj4),
         children: e => {
           var t = f({}, function(e) {
             if (null == e) throw TypeError("Cannot destructure " + e);

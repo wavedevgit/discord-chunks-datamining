@@ -30,7 +30,7 @@ let h = e => {
           onClose: i,
           channel: t,
           remoteMode: n,
-          onInteraction: (0, s.u)("MoreSettingsMenu", "CenterControlTray", {
+          onInteraction: (0, s.u)("MoreSettingsMenu", h, {
             entrypoint: d.A5.THREE_DOT
           })
         })

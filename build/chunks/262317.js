@@ -208,7 +208,7 @@ class U extends(r = l.PureComponent) {
           channel: t,
           showMediaItems: !0,
           showStageChannelItems: t.isGuildStageVoice(),
-          onInteraction: (0, g.u)("GuildChannelUserContextMenu", "VoiceUser", {
+          onInteraction: (0, g.u)("GuildChannelUserContextMenu", m.Z.VOICE_USER, {
             targetUserId: r.id
           })
         }))

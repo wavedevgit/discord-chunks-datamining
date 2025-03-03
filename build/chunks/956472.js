@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Ip: () => d,
+  Ip: () => u,
   oQ: () => c
 }), r(47120);
 var n = r(932563),
@@ -15,8 +15,8 @@ let s = e => {
       product: i,
       isPremiumUser: s,
       tab: c,
-      orbBalance: d
-    } = e, u = null !== (l = null === (n = i.prices[s ? a.tuJ.PREMIUM_TIER_2 : a.tuJ.DEFAULT]) || void 0 === n ? void 0 : null === (r = n.countryPrices) || void 0 === r ? void 0 : null === (t = r.prices) || void 0 === t ? void 0 : t.slice(0, 2)) && void 0 !== l ? l : [], p = u.find(e => e.currency === a.pKx.DISCORD_ORB), f = 1 === u.length && null != p;
+      orbBalance: u
+    } = e, d = null !== (l = null === (n = i.prices[s ? a.tuJ.PREMIUM_TIER_2 : a.tuJ.DEFAULT]) || void 0 === n ? void 0 : null === (r = n.countryPrices) || void 0 === r ? void 0 : null === (t = r.prices) || void 0 === t ? void 0 : t.slice(0, 2)) && void 0 !== l ? l : [], p = d.find(e => e.currency === a.pKx.DISCORD_ORB), f = 1 === d.length && null != p;
     return c === o.AW.ORBS ? null != p ? {
       displayPrices: [p],
       checkoutEligiblePrices: [p],
@@ -27,14 +27,14 @@ let s = e => {
       checkoutEligiblePrices: [],
       isOrbExclusive: f,
       shouldCheckoutWithOrbs: !1
-    } : null != p && null != d && d >= p.amount ? {
-      displayPrices: u,
-      checkoutEligiblePrices: [p, ...u.filter(e => e !== p)],
+    } : null != p && null != u && u >= p.amount ? {
+      displayPrices: d,
+      checkoutEligiblePrices: [p, ...d.filter(e => e !== p)],
       isOrbExclusive: f,
       shouldCheckoutWithOrbs: !0
     } : {
-      displayPrices: u,
-      checkoutEligiblePrices: u,
+      displayPrices: d,
+      checkoutEligiblePrices: d,
       isOrbExclusive: f,
       shouldCheckoutWithOrbs: !1
     }
@@ -54,7 +54,7 @@ let s = e => {
     return c
   };
 
-function d(e) {
+function u(e) {
   let {
     product: t,
     isPremiumUser: r,

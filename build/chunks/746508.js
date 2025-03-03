@@ -267,8 +267,8 @@ function eK(e) {
         isActive: n,
         label: i,
         iconComponent: l
-      } = e, a = eH(e, ["unavailable", "isActive", "label", "iconComponent"]);
-      let u = (0, r.jsx)(T, {
+      } = e, u = eH(e, ["unavailable", "isActive", "label", "iconComponent"]);
+      let p = (0, r.jsx)(T, {
         size: s ? "md" : "sm",
         className: o()(eU.buttonIcon, {
           [eU.withText]: !S
@@ -283,7 +283,7 @@ function eK(e) {
           return (0, r.jsx)(w.Z, {
             onClose: t,
             simplified: d,
-            onInteraction: (0, D.u)("VideoDeviceMenu", "RTCConnection")
+            onInteraction: (0, D.u)("VideoDeviceMenu", a)
           })
         },
         position: "top",
@@ -291,20 +291,20 @@ function eK(e) {
         animation: m.yRy.Animation.FADE,
         children: (e, l) => {
           var {
-            onClick: d
-          } = e, p = eH(e, ["onClick"]), {
+            onClick: a
+          } = e, d = eH(e, ["onClick"]), {
             isShown: h
           } = l;
           return (0, r.jsx)(m.ua7, {
             text: i,
-            children: e => (0, r.jsx)(m.zxk, eB(eV({}, a, e, p), {
+            children: e => (0, r.jsx)(m.zxk, eB(eV({}, u, e, d), {
               onClick: t => {
                 var n;
-                a.onClick(t), null === (n = e.onClick) || void 0 === n || n.call(e), h && d(t)
+                u.onClick(t), null === (n = e.onClick) || void 0 === n || n.call(e), h && a(t)
               },
               onMouseEnter: () => {
                 var t, n;
-                null === (t = e.onMouseEnter) || void 0 === t || t.call(e), null === (n = p.onMouseEnter) || void 0 === n || n.call(p), j.onMouseEnter()
+                null === (t = e.onMouseEnter) || void 0 === t || t.call(e), null === (n = d.onMouseEnter) || void 0 === n || n.call(d), j.onMouseEnter()
               },
               onMouseLeave: () => {
                 var t;
@@ -312,20 +312,20 @@ function eK(e) {
               },
               onContextMenu: t => {
                 var n;
-                d(t), null === (n = e.onContextMenu) || void 0 === n || n.call(e)
+                a(t), null === (n = e.onContextMenu) || void 0 === n || n.call(e)
               },
               size: s ? m.zxk.Sizes.MEDIUM : m.zxk.Sizes.SMALL,
               className: o()(c ? eU.experimentButton : eU.button, eU.buttonColor, {
                 [eU.buttonActive]: n,
                 [eU.fauxDisabled]: t,
-                [eU.disabled]: a.disabled
+                [eU.disabled]: u.disabled
               }),
               innerClassName: eU.buttonContents,
               wrapperClassName: eU.button,
               fullWidth: !0,
-              children: S ? u : (0, r.jsxs)(M.Z, {
+              children: S ? p : (0, r.jsxs)(M.Z, {
                 align: M.Z.Align.CENTER,
-                children: [u, eM.NW.string(eM.t.FlNoSU)]
+                children: [p, eM.NW.string(eM.t.FlNoSU)]
               })
             }))
           })
@@ -483,7 +483,7 @@ function eQ(e) {
         activeStreams: g,
         onClose: t,
         handleGoLive: l ? N : ep.Z,
-        onInteraction: (0, D.u)("ManageStreamsMenu", "RTCConnection", {
+        onInteraction: (0, D.u)("ManageStreamsMenu", c, {
           entrypoint: eD.A5.OTHER_BUTTON
         })
       })
@@ -715,7 +715,7 @@ class eX extends i.PureComponent {
           value: i,
           children: (0, r.jsx)(e, eB(eV({}, n), {
             channel: t,
-            onInteraction: (0, D.u)("RTCConnectionMenu", "RTCConnection")
+            onInteraction: (0, D.u)("RTCConnectionMenu", Z.Z.RTC_PANEL)
           }))
         })
       })

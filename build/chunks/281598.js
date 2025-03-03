@@ -10,7 +10,7 @@ n.d(t, {
   ZK: () => u
 }), n(653041), n(47120), n(86693), n(536091), n(301563), n(866573), n(642549), n(787622), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
 var r, i = n(481060),
-  s = ((r = {}).HERO_BANNER = "hero_banner", r.HERO_BANNER_ANIMATED = "hero_banner_animated", r.HERO_LOGO = "hero_logo", r.FEATURED_BLOCK = "featured_block", r);
+  s = ((r = {}).HERO_BANNER_STATIC = "hero_banner", r.HERO_BANNER_ANIMATED = "hero_banner_animated", r.HERO_LOGO = "hero_logo", r.FEATURED_BLOCK = "featured_block", r);
 let a = {
     "hero_banner.jpg": "hero_banner",
     "hero_banner_animated.webm": "hero_banner_animated",

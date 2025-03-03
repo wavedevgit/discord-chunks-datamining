@@ -10,8 +10,8 @@ var n = r(200651),
   a = r(442837),
   s = r(481060),
   c = r(425493),
-  d = r(410030),
-  u = r(984370),
+  u = r(410030),
+  d = r(984370),
   p = r(341907),
   f = r(822857),
   b = r(775451),
@@ -29,7 +29,7 @@ function j(e) {
     selected: l,
     handleTransition: i
   } = e;
-  return (0, n.jsx)(u.Z.Title, {
+  return (0, n.jsx)(d.Z.Title, {
     onClick: () => i(t),
     wrapperClassName: x.tabWrapper,
     className: o()(x.tab, {
@@ -46,7 +46,7 @@ function _(e) {
     onClose: i,
     selectedTab: _,
     handleTransition: y
-  } = e, O = (0, d.ZP)(), k = (0, a.e7)([h.default], () => h.default.getCurrentUser()), P = (null == k ? void 0 : k.isStaff()) || (null == k ? void 0 : k.isStaffPersonal()) || !1, {
+  } = e, O = (0, u.ZP)(), k = (0, a.e7)([h.default], () => h.default.getCurrentUser()), P = (null == k ? void 0 : k.isStaff()) || (null == k ? void 0 : k.isStaffPersonal()) || !1, {
     enabled: S
   } = (0, f.W)({
     location: "collectibles_shop_header_bar"
@@ -62,7 +62,7 @@ function _(e) {
     displayText: v.NW.string(v.t.q6uIys)
   }), (0, n.jsx)(s.f6W, {
     theme: O,
-    children: e => (0, n.jsxs)(u.Z, {
+    children: e => (0, n.jsxs)(d.Z, {
       className: o()(e, x.headerBar, {
         [x.fullscreenHeaderBar]: t
       }),
@@ -70,7 +70,7 @@ function _(e) {
       toolbar: t || !P ? null : (0, n.jsx)(l.Fragment, {}),
       children: [(0, n.jsx)(m.Z, {
         className: x.discordLogo
-      }), (0, n.jsx)(u.Z.Title, {
+      }), (0, n.jsx)(d.Z.Title, {
         children: v.NW.string(v.t.pWG4zc)
       }), (0, n.jsx)("div", {
         className: x.tabs,

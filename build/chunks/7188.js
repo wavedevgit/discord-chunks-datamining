@@ -135,7 +135,7 @@ function w(e) {
           onClose: t,
           showReportOption: !0,
           handleGoLive: w,
-          onInteraction: (0, c.u)("ManageStreamsButton", "StreamSettingsButton", {
+          onInteraction: (0, c.u)("ManageStreamsButton", null != S ? S : u, {
             entrypoint: b.A5.OTHER_BUTTON
           })
         })

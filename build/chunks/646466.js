@@ -12,7 +12,7 @@ var r = n(200651),
   d = n(631541);
 let u = () => {
   var e, t;
-  let [n, u] = a.useState(c.Fr.HERO_BANNER), {
+  let [n, u] = a.useState(c.Fr.HERO_BANNER_STATIC), {
     assets: m,
     upsertAsset: h,
     previewEnabled: x,

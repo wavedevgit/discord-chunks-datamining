@@ -155,7 +155,7 @@ function et(e) {
         } = e;
         return (0, r.jsx)(k.Z, {
           onClose: t,
-          onInteraction: (0, U.u)("VideoDeviceMenu", "IncomingCallModal", {
+          onInteraction: (0, U.u)("VideoDeviceMenu", o, {
             entrypoint: G.A5.CARET
           })
         })

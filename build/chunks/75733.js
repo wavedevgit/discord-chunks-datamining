@@ -74,6 +74,7 @@ function v(e) {
       renderButtonContents: t
     }) : (0, r.jsx)(m.Z, {
       className: b.emojiWrapper,
+      buttonClassName: b.removeButton,
       look: c.Z.Looks.FILLED,
       hasSetEmoji: null != e && null != e.name,
       onClick: x,

@@ -32,13 +32,13 @@ let a = "collectibles shop product details modal",
     let {
       product: t,
       category: s,
-      shouldCheckoutWithOrbs: d,
-      analyticsSource: u,
+      shouldCheckoutWithOrbs: u,
+      analyticsSource: d,
       analyticsLocations: p,
       returnRef: f,
       tab: b
     } = e;
-    d && (0, i.S6)(), (0, l.ZDy)(async () => {
+    u && (0, i.S6)(), (0, l.ZDy)(async () => {
       let {
         default: e
       } = await r.e("2026").then(r.bind(r, 702370));
@@ -47,8 +47,8 @@ let a = "collectibles shop product details modal",
         return (0, n.jsx)(e, (l = o({}, r), i = i = {
           product: t,
           category: s,
-          shouldCheckoutWithOrbs: d,
-          analyticsSource: u,
+          shouldCheckoutWithOrbs: u,
+          analyticsSource: d,
           analyticsLocations: p,
           returnRef: f,
           tab: b
@@ -65,7 +65,7 @@ let a = "collectibles shop product details modal",
       }
     }, o({
       modalKey: a
-    }, d ? {
+    }, u ? {
       onCloseRequest() {
         c(), (0, i.vp)()
       }

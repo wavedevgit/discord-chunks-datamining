@@ -12,8 +12,8 @@ var l = r(120356),
   a = r(134442),
   s = r(219574),
   c = r(661252);
-let d = () => 4 * Math.random() + 8,
-  u = [d(), d(), d()],
+let u = () => 4 * Math.random() + 8,
+  d = [u(), u(), u()],
   p = () => (0, n.jsx)("div", {
     className: i()(s.skeleton, c.shopCard),
     children: (0, n.jsxs)("div", {
@@ -31,7 +31,7 @@ let d = () => 4 * Math.random() + 8,
   }),
   f = () => (0, n.jsx)("div", {
     className: o.skeletons,
-    children: u.map(e => (0, n.jsxs)("div", {
+    children: d.map(e => (0, n.jsxs)("div", {
       className: o.cardsContainer,
       children: [(0, n.jsx)("div", {
         className: i()(s.skeleton, a.shopBanner),

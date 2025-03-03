@@ -58,13 +58,15 @@ function N(e) {
     channelId: t,
     closePopout: n,
     appContext: i,
-    onSelect: l
-  } = e, s = (0, o.e7)([c.Z], () => c.Z.getSelectedParticipant(t)), f = (null == s ? void 0 : s.type) === x.fO.STREAM ? s.stream : null, m = (0, h.Z)(t);
+    onSelect: l,
+    onInteraction: s
+  } = e, f = (0, o.e7)([c.Z], () => c.Z.getSelectedParticipant(t)), m = (null == f ? void 0 : f.type) === x.fO.STREAM ? f.stream : null, g = (0, h.Z)(t);
   return (0, r.jsxs)(a.v2r, {
     navId: "stage-channel-call-overflow-popout",
     onClose: n,
     "aria-label": j.NW.string(j.t.pkYeAw),
     onSelect: l,
-    children: [O(t), E(t), (0, d.Z)(), (0, u.Z)(t), m, (0, p.Z)(f, i)]
+    onInteraction: s,
+    children: [O(t), E(t), (0, d.Z)(), (0, u.Z)(t), g, (0, p.Z)(m, i)]
   })
 }

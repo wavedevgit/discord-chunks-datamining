@@ -10,8 +10,8 @@ var n = r(200651),
   a = r(481060),
   s = r(410030),
   c = r(965645),
-  d = r(362061);
-let u = [{
+  u = r(362061);
+let d = [{
     box: "#FFD89E",
     ribbon: "#FF7476"
   }, {
@@ -57,7 +57,7 @@ let u = [{
   }],
   f = 1 / 300,
   b = (0, i.animated)(c.Z),
-  h = (0, i.animated)(d.Z),
+  h = (0, i.animated)(u.Z),
   m = (0, i.animated)(a.OgN),
   C = l.memo(function(e) {
     let {
@@ -65,10 +65,10 @@ let u = [{
       hovered: r,
       isContentDismissed: i,
       boxColors: c = {
-        dark: u,
+        dark: d,
         light: p
       }
-    } = e, d = (0, s.ZP)(), [C, g] = function(e) {
+    } = e, u = (0, s.ZP)(), [C, g] = function(e) {
       let [t, r] = l.useState(!1), [n, i] = l.useState(Math.floor(7 * Math.random())), o = l.useRef(n);
       return l.useEffect(() => {
         o.current = n
@@ -94,9 +94,9 @@ let u = [{
         tension: 800,
         friction: 24
       }
-    }), x = i ? g : 0, j = (0, o.wj)(null != t ? t : d) ? c.dark[x] : c.light[x];
+    }), x = i ? g : 0, j = (0, o.wj)(null != t ? t : u) ? c.dark[x] : c.light[x];
     return !r && i ? (0, n.jsx)(m, {}) : i && C ? (0, n.jsx)(h, {
-      isDark: (0, o.wj)(d),
+      isDark: (0, o.wj)(u),
       style: v
     }) : (0, n.jsx)(b, {
       boxColor: j.box,

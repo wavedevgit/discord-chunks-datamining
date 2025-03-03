@@ -202,19 +202,20 @@ function M(e) {
     k = (0, s.e7)([g.Z], () => g.Z.theme),
     j = (0, S.XX)(o),
     U = (0, O.i)(j),
-    G = i.useCallback(e => {
-      j.premium && M && !P && (e.stopPropagation(), e.preventDefault(), (0, p.f)({
+    G = i.useMemo(() => j.premium && M && !P, [P, j.premium, M]),
+    B = i.useCallback(e => {
+      G && (e.stopPropagation(), e.preventDefault(), (0, p.f)({
         guildId: o.id,
         location: {
           section: T.jXE.GUILD_HEADER,
           object: T.qAy.BOOST_GEM_ICON
         }
       }))
-    }, [j.premium, M, P, o.id]);
+    }, [G, o.id]);
   if (U === O.Q.NONE) return null;
   if (U === O.Q.CLAN) {
-    var B;
-    let e = (0, d.ky)(o.id, null === (B = o.profile) || void 0 === B ? void 0 : B.badge, C);
+    var V;
+    let e = (0, d.ky)(o.id, null === (V = o.profile) || void 0 === V ? void 0 : V.badge, C);
     return null == e ? null : (0, r.jsx)(u.ua7, {
       color: l,
       position: _,
@@ -225,7 +226,7 @@ function M(e) {
       }),
       tooltipContentClassName: A.tooltipRemovePadding,
       children: t => (0, r.jsx)(u.P3F, D(R({}, t), {
-        onClick: G,
+        onClick: B,
         className: a()(A.clanBadgeContainer, v),
         children: (0, r.jsx)(f.KQ, {
           src: e,
@@ -235,21 +236,21 @@ function M(e) {
     })
   }
   let {
-    IconComponent: V,
-    backgroundDarkColor: F,
-    backgroundLightColor: Z,
-    foregroundDarkColor: H,
-    foregroundLightColor: W,
-    premiumBackgroundColor: Y,
-    premiumForegroundColor: K,
-    sizeAdjustment: z
+    IconComponent: F,
+    backgroundDarkColor: Z,
+    backgroundLightColor: H,
+    foregroundDarkColor: W,
+    foregroundLightColor: Y,
+    premiumBackgroundColor: K,
+    premiumForegroundColor: z,
+    sizeAdjustment: q
   } = w[U];
-  if (null == V) return null;
-  j.premium && (t = K, n = Y);
-  let q = (0, c.wj)(k) ? H : W,
-    Q = (0, c.wj)(k) ? F : Z;
-  t = null != t ? t : q, n = null != n ? n : Q;
-  let X = Math.floor(.75 * C) - (null != z ? z : 0);
+  if (null == F) return null;
+  j.premium && (t = z, n = K);
+  let Q = (0, c.wj)(k) ? W : Y,
+    X = (0, c.wj)(k) ? Z : H;
+  t = null != t ? t : Q, n = null != n ? n : X;
+  let J = Math.floor(.75 * C) - (null != q ? q : 0);
   return (0, r.jsx)(u.ua7, {
     color: l,
     position: _,
@@ -260,7 +261,8 @@ function M(e) {
     }),
     tooltipContentClassName: A.tooltipRemovePadding,
     children: e => (0, r.jsx)(u.P3F, {
-      onClick: G,
+      onClick: B,
+      tabIndex: G ? 0 : -1,
       children: (0, r.jsx)(h.Z, D(R({}, e), {
         className: v,
         flowerStarClassName: b,
@@ -268,10 +270,10 @@ function M(e) {
         color: null != n ? n : N,
         stroke: I,
         size: C,
-        children: (0, r.jsx)(V, {
+        children: (0, r.jsx)(F, {
           size: "custom",
-          width: X,
-          height: X,
+          width: J,
+          height: J,
           className: y,
           color: null != t ? t : "currentColor"
         })

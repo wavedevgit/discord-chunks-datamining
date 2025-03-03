@@ -380,10 +380,10 @@ class eJ extends i.PureComponent {
           user: t,
           premiumSubscription: this.props.premiumSubscription,
           webBuildOverride: this.props.webBuildOverride,
-          onInteraction: (0, M.u)("UserSettingsCogContextMenu", "Account Panel")
+          onInteraction: (0, M.u)("UserSettingsCogContextMenu", y.Z.ACCOUNT)
         }))
       })
-    }), eG(this, "audioOnInteractionHandler", (0, M.u)("AudioDeviceMenu", "Account Panel")), eG(this, "handleInputAudioContextMenu", (e, t) => {
+    }), eG(this, "audioOnInteractionHandler", (0, M.u)("AudioDeviceMenu", y.Z.ACCOUNT)), eG(this, "handleInputAudioContextMenu", (e, t) => {
       (0, N.jW)(e, async () => {
         let {
           default: e

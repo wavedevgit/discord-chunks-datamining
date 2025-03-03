@@ -10,8 +10,8 @@ var n = r(200651),
   a = r(642128),
   s = r(873546),
   c = r(481060),
-  d = r(774078),
-  u = r(388032),
+  u = r(774078),
+  d = r(388032),
   p = r(546277),
   f = r(781385),
   b = r(585616);
@@ -24,10 +24,10 @@ function h(e) {
     hours: l,
     minutes: i,
     seconds: o
-  } = (0, d.Z)(t), a = function(e, t, r, n) {
+  } = (0, u.Z)(t), a = function(e, t, r, n) {
     let l = (e, t) => "".concat(e.toString().padStart(2, "0")).concat(t),
       i = [];
-    return e > 0 && i.push(l(e, u.NW.string(u.t.QJyuxc))), (t > 0 || i.length > 0) && i.push(l(t, u.NW.string(u.t["1LyF1t"]))), (r > 0 || i.length > 0) && i.push(l(r, u.NW.string(u.t.n7dksL))), i.push(l(n, u.NW.string(u.t["6m/6nJ"]))), i.join(":")
+    return e > 0 && i.push(l(e, d.NW.string(d.t.QJyuxc))), (t > 0 || i.length > 0) && i.push(l(t, d.NW.string(d.t["1LyF1t"]))), (r > 0 || i.length > 0) && i.push(l(r, d.NW.string(d.t.n7dksL))), i.push(l(n, d.NW.string(d.t["6m/6nJ"]))), i.join(":")
   }(r, l, i, o);
   return (0, n.jsx)(c.Text, {
     variant: "heading-md/medium",
@@ -46,7 +46,7 @@ let m = l.memo(function(e) {
     isVisible: r,
     displayOptions: l,
     isFullScreen: i
-  } = e, d = (0, c.q_F)({
+  } = e, u = (0, c.q_F)({
     transform: "translateX(-50%) ".concat(r ? "translateY(-75%)" : "translateY(0%)"),
     opacity: +!!r,
     config: {
@@ -74,7 +74,7 @@ let m = l.memo(function(e) {
         })
       }
       return e
-    }({}, l.style, d),
+    }({}, l.style, u),
     children: [(0, n.jsx)(c.Text, {
       variant: "text-md/medium",
       className: p.countdownLabel,

@@ -10,8 +10,8 @@ var n = r(200651),
   a = r(906732),
   s = r(333867),
   c = r(677232),
-  d = r(884697),
-  u = r(228624),
+  u = r(884697),
+  d = r(228624),
   p = r(67409),
   f = r(474936),
   b = r(231338),
@@ -74,8 +74,8 @@ let C = {
       disableCustomColor: _ = !1
     } = e, {
       analyticsLocations: y
-    } = (0, a.ZP)(), O = l.useRef(null), k = (0, o.Z)(O), P = _ ? b.BR.DARK : b.BR.LIGHT, S = (0, u.hv)("CollectiblesShopGiftButton");
-    return (0, d.x6)(t) ? null : (0, n.jsx)(i.ua7, {
+    } = (0, a.ZP)(), O = l.useRef(null), k = (0, o.Z)(O), P = _ ? b.BR.DARK : b.BR.LIGHT, S = (0, d.hv)("CollectiblesShopGiftButton");
+    return (0, u.x6)(t) ? null : (0, n.jsx)(i.ua7, {
       text: h.NW.string(h.t["JCFN//"]),
       delay: x,
       children: e => {

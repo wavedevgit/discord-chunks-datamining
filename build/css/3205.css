@@ -1,6 +1,6 @@
 /**
   Module ID: 3205
-  Original File Name: 9b8d854595c996e7
+  Original File Name: e796a945c26c6b82
 **/
 .popoutContainer_a6cedd {
     display: flex;
@@ -13585,7 +13585,14 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 .emojiWrapper__4cbea {
     height: auto;
     width: auto;
-    background: none
+    background: none;
+    margin-left: -20px;
+    padding-left: 20px
+}
+
+.removeButton__4cbea {
+    top: 13px;
+    left: 0
 }
 
 .container_ee84e7 {
@@ -13613,6 +13620,10 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     display: flex;
     flex-direction: column;
     gap: 8px
+}
+
+.profileViewDisabled_ee84e7 {
+    opacity: .5
 }
 
 @value rightColumnWidth: 300px;
@@ -13674,6 +13685,10 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     width: 300px
 }
 
+.description_dbba93 {
+    margin-top: 8px
+}
+
 .serverBoostTabItem_cbe0b4[aria-selected=true] {
     color: var(--white-500)!important;
     background-color: var(--brand-500)!important
@@ -13700,4 +13715,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=9b8d854595c996e7.css.map*/
+/*# sourceMappingURL=e796a945c26c6b82.css.map*/

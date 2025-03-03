@@ -10,8 +10,8 @@ var n = r(200651),
   a = r(622535),
   s = r(481060),
   c = r(597688),
-  d = r(297651),
-  u = r(215023),
+  u = r(297651),
+  d = r(215023),
   p = r(388032),
   f = r(39532);
 let b = e => {
@@ -34,7 +34,7 @@ let b = e => {
   let v = null != h ? h : "",
     {
       handleCardVisibilityChange: x
-    } = (0, d.E)(v, "home", "marketing wide banner"),
+    } = (0, u.E)(v, "home", "marketing wide banner"),
     j = r.bannerUrl;
   return null == j ? null : (0, n.jsx)(a.$, {
     onChange: x,
@@ -66,14 +66,14 @@ let b = e => {
             style: {
               color: r.bannerTextColor
             },
-            variant: b === u.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
+            variant: b === d.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
             children: r.title
           }), (0, n.jsx)(s.Text, {
             style: {
-              color: b === u.AW.ORBS ? "rgba(255, 255, 255, 0.65)" : r.bannerTextColor
+              color: b === d.AW.ORBS ? "rgba(255, 255, 255, 0.65)" : r.bannerTextColor
             },
             lineClamp: 2,
-            variant: b === u.AW.ORBS ? "text-md/medium" : "text-sm/medium",
+            variant: b === d.AW.ORBS ? "text-md/medium" : "text-sm/medium",
             children: r.body
           })]
         })

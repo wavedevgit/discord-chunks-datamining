@@ -20,10 +20,10 @@ let s = (e, t) => {
           isPurchased: a || s.length > 0 && c.length === s.length, isPartiallyOwnedBundle: c.length > 0 && c.length < s.length, isPartiallyOwnedVariantsGroup: !1
         };
       case i.Z.VARIANTS_GROUP:
-        let d = null === (n = t.variants) || void 0 === n ? void 0 : n.every(t => null != e.getPurchase(t.skuId)),
-          u = (null === (o = t.variants) || void 0 === o ? void 0 : o.some(t => null != e.getPurchase(t.skuId))) && !d;
+        let u = null === (n = t.variants) || void 0 === n ? void 0 : n.every(t => null != e.getPurchase(t.skuId)),
+          d = (null === (o = t.variants) || void 0 === o ? void 0 : o.some(t => null != e.getPurchase(t.skuId))) && !u;
         return {
-          isPurchased: null != d && d, isPartiallyOwnedBundle: !1, isPartiallyOwnedVariantsGroup: null != u && u
+          isPurchased: null != u && u, isPartiallyOwnedBundle: !1, isPartiallyOwnedVariantsGroup: null != d && d
         };
       default:
         return {

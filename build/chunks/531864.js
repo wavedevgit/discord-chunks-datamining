@@ -10,8 +10,8 @@ var n = r(200651),
   a = r(979554),
   s = r(876917),
   c = r(597688),
-  d = r(616066),
-  u = r(215023),
+  u = r(616066),
+  d = r(215023),
   p = r(777644);
 let f = {
     x: 160,
@@ -104,7 +104,7 @@ let f = {
     return l.useEffect(() => {
       r && setTimeout(() => {
         m(!0)
-      }, u.lb)
+      }, d.lb)
     }, [r]), (0, n.jsx)("div", {
       style: i,
       className: o()(p.jumbleWrapper, {
@@ -129,9 +129,9 @@ let f = {
             height: h.y,
             width: h.x,
             transitionDelay: "".concat(Math.random() / 3, "s"),
-            transitionDuration: "".concat(u.lb - 200 * Math.random(), "ms")
+            transitionDuration: "".concat(d.lb - 200 * Math.random(), "ms")
           },
-          children: [null != g && v === a.Z.AVATAR_DECORATION && (0, n.jsx)(d.R, {
+          children: [null != g && v === a.Z.AVATAR_DECORATION && (0, n.jsx)(u.R, {
             item: g
           }), null != g && v === a.Z.PROFILE_EFFECT && (0, n.jsx)(s.Z, {
             profileEffectId: g.id,

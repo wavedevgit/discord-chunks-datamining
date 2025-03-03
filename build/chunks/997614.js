@@ -105,7 +105,7 @@ function T(e) {
       return t => (0, r.jsx)(e, Z(S({
         guildId: D
       }, t), {
-        onInteraction: (0, O.u)("SoundboardContextMenu", "ActionBarSoundboardButton")
+        onInteraction: (0, O.u)("SoundboardContextMenu", R)
       }))
     })
   }

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => E
-});
+}), n(266796);
 var r = n(200651),
   i = n(192379),
   s = n(442837),
@@ -63,10 +63,17 @@ let E = function() {
       className: I.content,
       children: [(0, r.jsxs)("div", {
         className: I.leftColumn,
-        children: [(0, r.jsx)(a.X6q, {
-          variant: "heading-lg/semibold",
-          color: "header-primary",
-          children: C.NW.string(C.t.txdaxc)
+        children: [(0, r.jsxs)("div", {
+          children: [(0, r.jsx)(a.X6q, {
+            variant: "heading-lg/semibold",
+            color: "header-primary",
+            children: C.NW.string(C.t.txdaxc)
+          }), (0, r.jsx)(a.Text, {
+            variant: "text-sm/medium",
+            color: "header-secondary",
+            className: I.description,
+            children: C.NW.string(C.t["5PGZWV"])
+          })]
         }), (0, r.jsx)(N.Z, {
           profile: T,
           canManageGuild: P

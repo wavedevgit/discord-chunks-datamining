@@ -449,7 +449,7 @@ function eA(e) {
 }
 
 function ew(e) {
-  return (0, P.u)(e, "CenterControlTray", {
+  return (0, P.u)(e, v.Z.VOICE_CONTROL_TRAY, {
     entrypoint: ex.A5.CARET
   })
 }

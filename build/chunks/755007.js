@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var n = r(200651);
 r(192379);
@@ -11,17 +11,17 @@ var l = r(120356),
   a = r(932563),
   s = r(960919),
   c = r(388032),
-  d = r(116264);
+  u = r(116264);
 
-function u(e) {
+function d(e) {
   let {
     orbAmount: t,
     showInsufficientOrbBalanceTooltip: r
-  } = e, l = (0, a.c)(), u = null != l && l >= t;
+  } = e, l = (0, a.c)(), d = null != l && l >= t;
   return (0, n.jsx)(o.ua7, {
     position: "top",
     text: c.NW.string(c.t.zqh7ZG),
-    shouldShow: r && !u,
+    shouldShow: r && !d,
     children: e => {
       var r, l;
       return (0, n.jsxs)(o.Text, (r = function(e) {
@@ -43,8 +43,8 @@ function u(e) {
         return e
       }({
         variant: "text-lg/bold",
-        className: i()(d.orbPriceTag, {
-          [d.insufficientBalance]: !u
+        className: i()(u.orbPriceTag, {
+          [u.insufficientBalance]: !d
         })
       }, e), l = l = {
         children: [(0, n.jsx)(s.Z, {}), t]

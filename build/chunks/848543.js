@@ -113,7 +113,7 @@ function Z(e) {
       return t => (0, r.jsx)(e, A(j({
         guildId: V
       }, t), {
-        onInteraction: (0, g.u)("SoundboardContextMenu", "RTCConnection")
+        onInteraction: (0, g.u)("SoundboardContextMenu", p.Z.RTC_PANEL)
       }))
     })
   }
