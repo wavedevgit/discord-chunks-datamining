@@ -1,6 +1,6 @@
 /**
   Module ID: 3205
-  Original File Name: 4c9d27ca8ada3241
+  Original File Name: 990cad988a6c0cfa
 **/
 .popoutContainer_a6cedd {
     display: flex;
@@ -13541,12 +13541,15 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     border: 1px solid var(--background-tertiary)
 }
 
+.container_cd2100 .removeButton_cd2100 {
+    width: 16px;
+    height: 16px
+}
+
 .removeButton_cd2100 {
     position: absolute;
     top: -4px;
     right: -4px;
-    width: 16px;
-    height: 16px;
     background-size: 12px
 }
 

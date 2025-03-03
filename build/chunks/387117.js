@@ -45,6 +45,22 @@ let r = {
         }
       }
     },
+    guildbar: {
+      AVATAR_SIZE: {
+        resolve(e) {
+          let {
+            enabledExperiments: t
+          } = e;
+          if (0 === t.length) return 48;
+          for (let e of t)
+            if ("visual-refresh" === e) return 40;
+          return 48
+        }
+      },
+      FOLDER_SIZE: {
+        resolve: () => 48
+      }
+    },
     modal: {
       HORIZONTAL_PADDING: {
         resolve(e) {
@@ -84,22 +100,6 @@ let r = {
       },
       WIDTH_LARGE: {
         resolve: () => 800
-      }
-    },
-    guildbar: {
-      AVATAR_SIZE: {
-        resolve(e) {
-          let {
-            enabledExperiments: t
-          } = e;
-          if (0 === t.length) return 48;
-          for (let e of t)
-            if ("visual-refresh" === e) return 40;
-          return 48
-        }
-      },
-      FOLDER_SIZE: {
-        resolve: () => 48
       }
     }
   }

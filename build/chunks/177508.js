@@ -88,11 +88,11 @@ function v() {
     })]
   })
 }
-let S = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", "yellow_new", "orange_new"],
+let S = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", "yellow_new", "orange_new", "pink", "purple"],
   T = ["background-surface-highest", "background-surface-higher", "background-surface-high", "background-base-low", "background-base-lower", "background-base-lowest"],
-  I = ["background-mod-subtle", "background-mod-normal", "background-mod-strong"],
+  I = ["", "background-mod-subtle", "background-mod-normal", "background-mod-strong"],
   y = ["critical", "warning", "positive", "info"],
-  A = ["text-default", "text-primary", "text-secondary", "text-tertiary", "text-feedback-critical", "text-feedback-warning", "text-feedback-positive", "text-feedback-info"];
+  A = ["text-default", "text-primary", "text-secondary", "text-tertiary", "text-feedback-critical", "text-feedback-warning", "text-feedback-positive", "text-feedback-info", "premium-nitro-pink-text"];
 
 function P() {
   return (0, r.jsxs)("div", {

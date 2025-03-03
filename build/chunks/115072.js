@@ -5,8 +5,8 @@ r.d(t, {
 var i = r(200651),
   n = r(192379),
   l = r(772848),
-  o = r(442837),
-  a = r(544891),
+  a = r(442837),
+  o = r(544891),
   s = r(481060),
   c = r(53281),
   u = r(476326),
@@ -43,19 +43,19 @@ function _(e) {
         return "Linux"
     }
     return ""
-  }((0, j.getOS)())), [Q, $] = n.useState(""), [ee, et] = n.useState(""), [er, ei] = n.useState(""), [en, el] = n.useState(""), [eo, ea] = n.useState(!1), [es, ec] = n.useState(!1), [eu, ed] = n.useState(!1), [em, eh] = n.useState(!1);
+  }((0, j.getOS)())), [Q, $] = n.useState(""), [ee, et] = n.useState(""), [er, ei] = n.useState(""), [en, el] = n.useState(""), [ea, eo] = n.useState(!1), [es, ec] = n.useState(!1), [eu, ed] = n.useState(!1), [em, eh] = n.useState(!1);
   n.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
-    a.tn.get({
+    o.tn.get({
       url: "".concat(location.protocol, "//").concat(location.host).concat("/assets/", "version.").concat(window.GLOBAL_ENV.RELEASE_CHANNEL, ".json"),
       query: {
         cache: e
       },
       rejectWithError: !0
     }).then(e => {
-      if (null != e.body && "5019fe411b959e01a4e847ba66f670b2dbc00494" !== e.body.hash) {
+      if (null != e.body && "2a356583d4e4e4886401088da2c203ae3d40a220" !== e.body.hash) {
         {
-          let e = new Date("1741032497852"),
+          let e = new Date("1741035676613"),
             t = new Date;
           (0, g.TD)(t, e).hours > 6 && eh(!0)
         }
@@ -63,11 +63,11 @@ function _(e) {
       }
     })
   }, []);
-  let ev = (0, o.e7)([p.default], () => {
+  let ev = (0, a.e7)([p.default], () => {
       let e = p.default.getCurrentUser();
       return (null == e ? void 0 : e.isStaff()) || (null == e ? void 0 : e.isStaffPersonal())
     }),
-    ex = (0, o.e7)([d.C], () => {
+    ex = (0, a.e7)([d.C], () => {
       var e;
       return null === (e = d.C.getCurrentBuildOverride().overrides) || void 0 === e ? void 0 : e.discord_web
     }),
@@ -80,18 +80,18 @@ function _(e) {
   async function eg() {
     var e, t;
     if (ed(!1), "" === T || null == R) {
-      ea(!0);
+      eo(!0);
       return
     }
     let n = null == z ? void 0 : null === (e = z.features) || void 0 === e ? void 0 : e.find(e => (0, y.pD)(e) === B);
-    ec(!0), ea(!1);
+    ec(!0), eo(!1);
     let l = (0, b.D)(V.map(e => {
         let {
           item: t
         } = e;
         return t
       })),
-      o = await (0, y.ZD)({
+      a = await (0, y.ZD)({
         name: T,
         description: A,
         priority: R,
@@ -109,7 +109,7 @@ function _(e) {
       } : {
         overridePlatformInformation: H
       }, l).catch(() => ed(!0));
-    ec(!1), null != o && o.ok ? (ev && window.open(o.body.permalink_url, "_blank"), ep(), (0, s.ZDy)(async () => {
+    ec(!1), null != a && a.ok ? (ev && window.open(a.body.permalink_url, "_blank"), ep(), (0, s.ZDy)(async () => {
       let {
         default: e
       } = await r.e("64648").then(r.bind(r, 81155));
@@ -133,7 +133,7 @@ function _(e) {
           }
           return e
         }({}, t), n = n = {
-          asanaTask: o.body
+          asanaTask: a.body
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -193,7 +193,7 @@ function _(e) {
             bottom: 8
           },
           children: [(0, i.jsx)(s.xJW, {
-            error: eo && "" === T ? N.NW.string(N.t.EkokLy) : null,
+            error: ea && "" === T ? N.NW.string(N.t.EkokLy) : null,
             title: N.NW.string(N.t.OZRgj4),
             children: (0, i.jsx)(s.oil, {
               placeholder: "Something is broken on this screen.",
@@ -213,7 +213,7 @@ function _(e) {
               children: "You can add additional information/media on the ticket after submitting"
             })]
           }), (0, i.jsx)(s.xJW, {
-            error: eo && void 0 === R ? N.NW.string(N.t.EkokLy) : null,
+            error: ea && void 0 === R ? N.NW.string(N.t.EkokLy) : null,
             title: N.NW.string(N.t.xMXLdX),
             children: (0, i.jsx)(s.q4e, {
               renderOptionLabel: e => (function(e) {
