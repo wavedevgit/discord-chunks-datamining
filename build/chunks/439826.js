@@ -259,7 +259,7 @@ function W(e) {
               children: (0, r.jsx)(d.xhG, {
                 size: "md",
                 color: "currentColor",
-                className: a()(R.utilButtonIcon)
+                className: R.utilButtonIcon
               })
             }))
           })]

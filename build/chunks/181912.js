@@ -1,13 +1,14 @@
 /** Chunk was on 76977 **/
+"use strict";
 n.d(t, {
   Z: () => m
 });
 var i = n(26151),
   r = n(13245),
-  o = n(287734),
-  s = n(43267),
-  l = n(933557),
-  a = n(593481),
+  s = n(287734),
+  o = n(43267),
+  a = n(933557),
+  l = n(593481),
   c = n(614554),
   d = n(699516),
   u = n(594174),
@@ -17,9 +18,9 @@ var i = n(26151),
   g = n(388032);
 
 function m(e) {
-  let t = (0, l.F6)(e, u.default, d.Z),
+  let t = (0, a.F6)(e, u.default, d.Z),
     n = g.NW.string(g.t.ssrVzM),
-    m = (0, s.x)(e),
+    m = (0, o.x)(e),
     y = (0, c.Z)(e),
     {
       trackView: _,
@@ -35,7 +36,7 @@ function m(e) {
     icon: m,
     title: t,
     body: n,
-    hint: e => (0, a.QR)(e, (0, h.P)(), g.t["Odi54+"]),
+    hint: e => (0, l.QR)(e, (0, h.P)(), g.t["Odi54+"]),
     confirmText: g.NW.string(g.t["0D/6R0"]),
     cancelText: g.NW.string(g.t.BVN4pK),
     onNotificationShow: () => {
@@ -45,7 +46,7 @@ function m(e) {
       if (p.TPd.CALLABLE.has(e.type)) r.Z.callPrivateChannel(e.id);
       else {
         if (e.type !== p.d4z.GUILD_VOICE) return;
-        o.default.selectVoiceChannel(e.id)
+        s.default.selectVoiceChannel(e.id)
       }
       v("join"), r.Z.track(p.rMx.VOICE_CHANNEL_SELECTED, {
         location: "Overlay Notificaiton",

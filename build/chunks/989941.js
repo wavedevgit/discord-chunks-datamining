@@ -1,17 +1,17 @@
-/** Chunk was on 93382 **/
+/** Chunk was on 94898 **/
 let r;
-l.d(t, {
-  Z: () => s
+n.d(t, {
+  Z: () => l
 });
-var i = l(145597);
+var i = n(145597);
 
-function s(e, t) {
+function l(e, t) {
   if (__OVERLAY__) {
     let e = t.getGame(),
-      l = (0, i.getPID)();
-    return null == e || null == l ? null : (null == r ? void 0 : r.id) === e.id && (null == r ? void 0 : r.pid) === l ? r : r = {
+      n = (0, i.getPID)();
+    return null == e || null == n ? null : (null == r ? void 0 : r.id) === e.id && (null == r ? void 0 : r.pid) === n ? r : r = {
       id: e.id,
-      pid: l,
+      pid: n,
       pidPath: [],
       nativeProcessObserverId: 0,
       hidden: !1,

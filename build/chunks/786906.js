@@ -1,13 +1,14 @@
 /** Chunk was on 76977 **/
+"use strict";
 n.d(t, {
   Z: () => N
 }), n(47120);
 var i = n(200651),
   r = n(192379),
-  o = n(120356),
-  s = n.n(o),
-  l = n(442837),
-  a = n(481060),
+  s = n(120356),
+  o = n.n(s),
+  a = n(442837),
+  l = n(481060),
   c = n(13245),
   d = n(287734),
   u = n(933557),
@@ -21,8 +22,8 @@ var i = n(200651),
   v = n(944486),
   O = n(707878),
   b = n(518084),
-  S = n(388032),
-  x = n(797259);
+  x = n(388032),
+  S = n(797259);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -43,14 +44,14 @@ class j extends r.Component {
     let {
       channel: n,
       channelHasActiveCall: r,
-      userIsInChannelCall: o,
-      isBlocked: s
+      userIsInChannelCall: s,
+      isBlocked: o
     } = this.props;
     if (!(0, f.hv)(n.type)) return null;
-    let l = a.Csw,
+    let a = l.Csw,
       c = !1;
-    return r ? o ? (e = S.NW.string(S.t["4ry6ys"]), l = a.gkL) : e = S.NW.string(S.t["0D/6R0"]) : s ? (e = S.NW.string(S.t.PHzjvb), t = a.ua7.Colors.RED, c = !0) : e = S.NW.string(S.t.focH1t), (0, i.jsx)(h.Z.Icon, {
-      icon: l,
+    return r ? s ? (e = x.NW.string(x.t["4ry6ys"]), a = l.gkL) : e = x.NW.string(x.t["0D/6R0"]) : o ? (e = x.NW.string(x.t.PHzjvb), t = l.ua7.Colors.RED, c = !0) : e = x.NW.string(x.t.focH1t), (0, i.jsx)(h.Z.Icon, {
+      icon: a,
       tooltip: e,
       onClick: this.handleClickCall,
       tooltipColor: t,
@@ -63,8 +64,8 @@ class j extends r.Component {
       draggableClassName: t,
       locked: n,
       channel: r,
-      channelName: o,
-      guild: l,
+      channelName: s,
+      guild: a,
       onMouseDown: c,
       onContextMenu: d,
       isPreviewingInGame: u,
@@ -73,16 +74,16 @@ class j extends r.Component {
       showOpacitySlider: g
     } = this.state;
     return g && !n ? (0, i.jsxs)(b.ZP.Bar, {
-      className: x.opacityHeader,
+      className: S.opacityHeader,
       children: [(0, i.jsx)(O.Z, {}), (0, i.jsx)(h.Z.Icon, {
-        icon: a.Dio,
+        icon: l.Dio,
         onClick: this.handleCloseOpacitySettings,
-        tooltip: S.NW.string(S.t.cpT0Cg)
+        tooltip: x.NW.string(x.t.cpT0Cg)
       })]
     }) : (0, i.jsx)(b.ZP.Background, {
       opacityOverride: n || u ? null : 1,
       children: (0, i.jsx)("div", {
-        className: s()(e, t, x.headerContainer),
+        className: o()(e, t, S.headerContainer),
         onMouseDown: c,
         onContextMenu: d,
         children: (0, i.jsxs)(h.Z, {
@@ -90,16 +91,16 @@ class j extends r.Component {
           channelId: r.id,
           toolbar: this.renderWidgetButtons(),
           transparent: !0,
-          children: [u || n || f ? null : (0, i.jsx)(a.Vni, {
+          children: [u || n || f ? null : (0, i.jsx)(l.Vni, {
             size: "custom",
             color: "currentColor",
-            className: s()(x.dragIcon, t),
+            className: o()(S.dragIcon, t),
             width: 20,
             height: 20
           }), (0, p.ud)({
             channel: r,
-            channelName: o
-          }), n ? null : (0, p.v0)(r, l)]
+            channelName: s
+          }), n ? null : (0, p.v0)(r, a)]
         })
       })
     })
@@ -142,15 +143,15 @@ class j extends r.Component {
         locked: e,
         handlePin: t,
         pinned: n
-      } = this.props, o = n ? S.NW.string(S.t.cSu80t) : S.NW.string(S.t.cM8Vnp);
+      } = this.props, s = n ? x.NW.string(x.t.cSu80t) : x.NW.string(x.t.cM8Vnp);
       return e ? null : (0, i.jsxs)(r.Fragment, {
         children: [this.renderCallButton(), n ? (0, i.jsx)(h.Z.Icon, {
-          icon: a._S3,
-          tooltip: S.NW.string(S.t.OVovCQ),
+          icon: l._S3,
+          tooltip: x.NW.string(x.t.OVovCQ),
           onClick: this.handleOpenOpacitySettings
         }) : null, (0, i.jsx)(h.Z.Icon, {
-          icon: n ? a.QVc : a.k5M,
-          tooltip: o,
+          icon: n ? l.QVc : l.k5M,
+          tooltip: s,
           selected: n,
           onClick: t
         })]
@@ -167,24 +168,24 @@ function N(e) {
     var n, i, r = function(e, t) {
       if (null == e) return {};
       var n, i, r = {},
-        o = Object.keys(e);
-      for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        s = Object.keys(e);
+      for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
       return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var s = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
   }(e, ["channel"]);
-  let r = (0, l.e7)([v.Z, m.Z], () => {
+  let r = (0, a.e7)([v.Z, m.Z], () => {
       let e = v.Z.getVoiceChannelId();
       return m.Z.getChannel(e)
     }),
-    o = (0, l.e7)([y.Z], () => y.Z.getGuild(t.guild_id)),
-    s = (0, l.e7)([g.Z], () => g.Z.isCallActive(t.id)),
-    a = (0, u.ZP)(t),
-    c = (0, l.e7)([_.Z], () => !!t.isDM() && null != t.getRecipientId() && _.Z.isBlocked(t.getRecipientId()));
+    s = (0, a.e7)([y.Z], () => y.Z.getGuild(t.guild_id)),
+    o = (0, a.e7)([g.Z], () => g.Z.isCallActive(t.id)),
+    l = (0, u.ZP)(t),
+    c = (0, a.e7)([_.Z], () => !!t.isDM() && null != t.getRecipientId() && _.Z.isBlocked(t.getRecipientId()));
   return (0, i.jsx)(j, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -198,9 +199,9 @@ function N(e) {
     return e
   }({
     channel: t,
-    channelName: a,
-    guild: o,
-    channelHasActiveCall: s,
+    channelName: l,
+    guild: s,
+    channelHasActiveCall: o,
     userIsInChannelCall: null != r && r.id === t.id,
     isBlocked: c
   }, n))

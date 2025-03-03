@@ -100,10 +100,10 @@ let I = () => (0, r.jsx)("div", {
         className: C.labelCell,
         children: t
       }), (0, r.jsx)("td", {
-        className: a()(C.cell),
+        className: C.cell,
         children: n
       }), (0, r.jsx)("td", {
-        className: a()(C.cell),
+        className: C.cell,
         children: i
       })]
     })

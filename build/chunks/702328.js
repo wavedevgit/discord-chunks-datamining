@@ -286,7 +286,7 @@ let eg = e => {
               preload: "auto",
               poster: eu.Z,
               loop: !0,
-              className: a()(es.heroHeadingV2Art),
+              className: es.heroHeadingV2Art,
               ref: H,
               children: (0, r.jsx)("source", {
                 src: ey ? ed.Z : em.Z,
@@ -370,7 +370,7 @@ let eg = e => {
       });
     return W ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.yWw, {
-        className: a()(es.scroller),
+        className: es.scroller,
         ref: F,
         children: eX
       }), (0, r.jsx)($.Z, {

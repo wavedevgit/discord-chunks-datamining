@@ -21,7 +21,7 @@ function h(e, t, n) {
     className: _.iconContainer,
     children: (0, r.jsx)(u.$, {
       type: u.$.Type.SPINNING_CIRCLE,
-      className: a()(_.icon)
+      className: _.icon
     })
   }) : e.length > 0 ? (0, r.jsx)(s.P, {
     "aria-label": f.NW.string(f.t["78fJND"]),

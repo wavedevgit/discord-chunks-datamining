@@ -102,7 +102,7 @@ let x = function(e) {
       }))
     }), [t, s, Z, D]);
   return null == C ? null : (0, r.jsxs)("div", {
-    className: a()(h.resourceChannelContainer),
+    className: h.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {
       className: a()(h.resourceChannel, {
         [h.dropIndicatorBefore]: null != P && x < P,

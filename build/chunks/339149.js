@@ -1,6 +1,6 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  E: () => I,
+  E: () => N,
   Z: () => Z
 }), n(47120), n(653041);
 var r, i = n(200651),
@@ -17,11 +17,11 @@ var r, i = n(200651),
   g = n(703656),
   m = n(417363),
   b = n(941128),
-  y = n(780570),
-  v = n(353042),
-  O = n(981631),
-  j = n(388032),
-  _ = n(885936);
+  v = n(780570),
+  y = n(353042),
+  _ = n(981631),
+  O = n(388032),
+  j = n(885936);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -44,68 +44,68 @@ function x(e) {
   }
   return e
 }
-let P = {
-  [O.vxO.INSTALLING]: {
-    [f.J6.NONE]: (e, t) => j.NW.formatToPlainString(j.t["p+2sEx"], {
+let S = {
+  [_.vxO.INSTALLING]: {
+    [f.J6.NONE]: (e, t) => O.NW.formatToPlainString(O.t["p+2sEx"], {
       name: e
     }),
-    [f.J6.SECONDS]: (e, t) => j.NW.formatToPlainString(j.t["/0NgPD"], {
+    [f.J6.SECONDS]: (e, t) => O.NW.formatToPlainString(O.t["/0NgPD"], {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.MINUTES]: (e, t) => j.NW.formatToPlainString(j.t.ZIwMzs, {
+    [f.J6.MINUTES]: (e, t) => O.NW.formatToPlainString(O.t.ZIwMzs, {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.HOURS]: (e, t) => j.NW.formatToPlainString(j.t["3IQDUl"], {
+    [f.J6.HOURS]: (e, t) => O.NW.formatToPlainString(O.t["3IQDUl"], {
       name: e,
       timeRemaining: t
     })
   },
-  [O.vxO.UPDATING]: {
-    [f.J6.NONE]: (e, t) => j.NW.formatToPlainString(j.t["6F9QzM"], {
+  [_.vxO.UPDATING]: {
+    [f.J6.NONE]: (e, t) => O.NW.formatToPlainString(O.t["6F9QzM"], {
       name: e
     }),
-    [f.J6.SECONDS]: (e, t) => j.NW.formatToPlainString(j.t["2OVgVl"], {
+    [f.J6.SECONDS]: (e, t) => O.NW.formatToPlainString(O.t["2OVgVl"], {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.MINUTES]: (e, t) => j.NW.formatToPlainString(j.t.mgQg1N, {
+    [f.J6.MINUTES]: (e, t) => O.NW.formatToPlainString(O.t.mgQg1N, {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.HOURS]: (e, t) => j.NW.formatToPlainString(j.t["aTdq4+"], {
+    [f.J6.HOURS]: (e, t) => O.NW.formatToPlainString(O.t["aTdq4+"], {
       name: e,
       timeRemaining: t
     })
   },
-  [O.vxO.REPAIRING]: {
-    [f.J6.NONE]: (e, t) => j.NW.formatToPlainString(j.t["p+2sEx"], {
+  [_.vxO.REPAIRING]: {
+    [f.J6.NONE]: (e, t) => O.NW.formatToPlainString(O.t["p+2sEx"], {
       name: e
     }),
-    [f.J6.SECONDS]: (e, t) => j.NW.formatToPlainString(j.t["/0NgPD"], {
+    [f.J6.SECONDS]: (e, t) => O.NW.formatToPlainString(O.t["/0NgPD"], {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.MINUTES]: (e, t) => j.NW.formatToPlainString(j.t.ZIwMzs, {
+    [f.J6.MINUTES]: (e, t) => O.NW.formatToPlainString(O.t.ZIwMzs, {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.HOURS]: (e, t) => j.NW.formatToPlainString(j.t["3IQDUl"], {
+    [f.J6.HOURS]: (e, t) => O.NW.formatToPlainString(O.t["3IQDUl"], {
       name: e,
       timeRemaining: t
     })
   }
 };
-class N extends l.PureComponent {
+class P extends l.PureComponent {
   renderText() {
     let {
       state: e,
       isPaused: t
     } = this.props;
-    if (e.type === O.vxO.UPDATING || e.type === O.vxO.REPAIRING || e.type === O.vxO.INSTALLING) {
-      if (t) return j.NW.string(j.t["5oxtFR"]);
-      if (e.stage === O.f07.PATCHING || e.stage === O.f07.REPAIRING) return (0, i.jsx)(v.Z, {
+    if (e.type === _.vxO.UPDATING || e.type === _.vxO.REPAIRING || e.type === _.vxO.INSTALLING) {
+      if (t) return O.NW.string(O.t["5oxtFR"]);
+      if (e.stage === _.f07.PATCHING || e.stage === _.f07.REPAIRING) return (0, i.jsx)(y.Z, {
         getHistoricalTotalBytes: m.Z.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
         children: this.renderProgressBody
@@ -115,7 +115,7 @@ class N extends l.PureComponent {
   }
   render() {
     let e = this.renderText();
-    return null != e ? e : j.NW.string(j.t.cw57am)
+    return null != e ? e : O.NW.string(O.t.cw57am)
   }
   constructor(...e) {
     super(...e), C(this, "renderProgressBody", (e, t) => {
@@ -131,7 +131,7 @@ class N extends l.PureComponent {
       if (null == l || null == o || null == i) return null;
       let s = e[e.length - 1] / t * 1e3,
         c = 0 !== s ? Math.max(1, (o - l) / s) : null,
-        u = P[a],
+        u = S[a],
         d = null != u ? Object.keys(u) : [],
         {
           unit: p,
@@ -145,7 +145,7 @@ class N extends l.PureComponent {
     })
   }
 }
-class S extends(r = l.PureComponent) {
+class I extends(r = l.PureComponent) {
   componentWillAppear(e) {
     this.state.animationScale.setValue(1), e()
   }
@@ -167,7 +167,7 @@ class S extends(r = l.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? j.NW.string(j.t.cw57am) : (0, i.jsx)(N, {
+    return null == e || null == t ? O.NW.string(O.t.cw57am) : (0, i.jsx)(P, {
       application: e,
       state: t,
       isPaused: n
@@ -185,7 +185,7 @@ class S extends(r = l.PureComponent) {
           scale: this.state.animationScale
         }]
       },
-      className: a()(n, _.progressContainer),
+      className: a()(n, j.progressContainer),
       onClick: this.handleOnClick,
       children: (0, i.jsx)(p.ua7, {
         text: this.getTooltipText(),
@@ -200,7 +200,7 @@ class S extends(r = l.PureComponent) {
               children: (0, i.jsx)(p._8t, {
                 size: "md",
                 color: "currentColor",
-                className: _.downloadIcon
+                className: j.downloadIcon
               })
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -224,12 +224,12 @@ class S extends(r = l.PureComponent) {
       let {
         onClick: t
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, g.uL)(O.Z5c.APPLICATION_LIBRARY)
+      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, g.uL)(_.Z5c.APPLICATION_LIBRARY)
     })
   }
 }
 
-function I(e, t) {
+function N(e, t) {
   return e.reduce((e, n) => {
     let {
       applicationId: r,
@@ -238,18 +238,18 @@ function I(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-C(S, "defaultProps", {
+C(I, "defaultProps", {
   strokeSize: p._3P.StrokeSizes.MEDIUM
 });
 let Z = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
   let e = b.Z.activeItems,
-    t = I(e, m.Z),
+    t = N(e, m.Z),
     {
       total: n,
       progress: r
-    } = y.lK(t);
+    } = v.lK(t);
   return {
-    percent: y.xI(r, n),
+    percent: v.xI(r, n),
     isPaused: b.Z.paused,
     firstApplication: e.length > 0 ? h.Z.getApplication(e[0].applicationId) : null,
     firstState: t.length > 0 ? t[0] : null
@@ -274,6 +274,6 @@ let Z = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(S, x({}, n)) : null
-  }) : (0, i.jsx)(S, x({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(I, x({}, n)) : null
+  }) : (0, i.jsx)(I, x({}, n))
 })

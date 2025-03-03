@@ -6,8 +6,8 @@ var i = n(200651),
   r = n(192379),
   o = n(442837),
   l = n(481060),
-  s = n(765250),
-  a = n(13245),
+  a = n(765250),
+  s = n(13245),
   u = n(393238),
   c = n(493773),
   d = n(358221),
@@ -17,16 +17,16 @@ var i = n(200651),
   m = n(592125),
   g = n(355863),
   O = n(944486),
-  v = n(804570),
-  y = n(350663),
+  y = n(804570),
+  v = n(350663),
   E = n(610394),
   b = n(340101),
-  x = n(388032),
-  j = n(336412);
+  j = n(388032),
+  x = n(336412);
 let S = [];
 
 function I(e, t, n, i) {
-  let r = (i - 1) * y.z;
+  let r = (i - 1) * v.z;
   return e === b.C5.HORIZONTAL ? Math.min(Math.max((t - r) / i, 256), Math.max(16 * n / 9, 256)) : Math.min(Math.max(t, 256), Math.max((n - r) / i * 16 / 9, 256))
 }
 
@@ -38,8 +38,8 @@ function C(e) {
     padding: N,
     borderWidth: Z,
     opacity: w,
-    horizontal: _,
-    pinned: P,
+    horizontal: P,
+    pinned: _,
     anchorTop: T,
     anchorLeft: D,
     showEmpty: A = !0
@@ -57,7 +57,7 @@ function C(e) {
     var e;
     let n = g.Z.getWidget(t);
     return !!(0, b.ZL)(n) && (null === (e = n.meta.showAllStreams) || void 0 === e || e)
-  }, [t]), F = !_, G = (0, o.e7)([m.Z], () => m.Z.getChannel(M)), Y = (0, o.e7)([f.default], () => f.default.getId()), B = T && F || D && _, H = !T && F || !D && _, {
+  }, [t]), F = !P, G = (0, o.e7)([m.Z], () => m.Z.getChannel(M)), Y = (0, o.e7)([f.default], () => f.default.getId()), B = T && F || D && P, H = !T && F || !D && P, {
     participantsVersion: Q,
     activeStreams: K,
     streamParticipants: X
@@ -84,7 +84,7 @@ function C(e) {
       activeStreams: e,
       participantsVersion: d.Z.getParticipantsVersion(M)
     }
-  }, [M, Y, U, B, H]), J = X.length, q = null == G || 0 === K.size && C || 0 === J && !C, $ = _ ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
+  }, [M, Y, U, B, H]), J = X.length, q = null == G || 0 === K.size && C || 0 === J && !C, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
     tileWidth: ee,
     layout: et
   } = function(e, t, n, i, o) {
@@ -97,16 +97,16 @@ function C(e) {
           case b.C5.HORIZONTAL:
             return r
         }
-        let l = (9 * o / 16 + y.z) * n - y.z;
+        let l = (9 * o / 16 + v.z) * n - v.z;
         return e > 16 * t / 9 ? r : l <= t ? o : 9 * r / 16 <= t ? r : o
       }(n, i, t, o),
-      s = I(b.C5.VERTICAL, n, i, t),
-      a = null != o ? o : l === s ? b.C5.VERTICAL : b.C5.HORIZONTAL,
+      a = I(b.C5.VERTICAL, n, i, t),
+      s = null != o ? o : l === a ? b.C5.VERTICAL : b.C5.HORIZONTAL,
       [u, c] = r.useState(l);
     return r.useEffect(() => {
       e || c(l)
     }, [e, l]), {
-      layout: a,
+      layout: s,
       tileWidth: u
     }
   }(!1, X.length, null != W ? W : L - k, null != V ? V : R - k, $), en = {
@@ -128,7 +128,7 @@ function C(e) {
     r.useEffect(() => {
       l.current = o
     });
-    let a = n.length;
+    let s = n.length;
     r.useEffect(() => {
       let {
         id: e,
@@ -138,8 +138,8 @@ function C(e) {
         layout: r,
         padding: o
       } = l.current;
-      if (0 === a) {
-        (256 !== t || 144 !== n) && (0, s.nv)({
+      if (0 === s) {
+        (256 !== t || 144 !== n) && (0, a.nv)({
           widgetId: e,
           size: {
             fixed: !0,
@@ -151,26 +151,26 @@ function C(e) {
       }
       if (r === b.C5.HORIZONTAL) {
         let t = 16 / 9 * (n - i);
-        (0, s.nv)({
+        (0, a.nv)({
           widgetId: e,
           size: {
             fixed: !0,
             height: n,
-            width: t * a + o * (a - 1) + i
+            width: t * s + o * (s - 1) + i
           }
         })
       } else {
         let n = 9 / 16 * (t - i);
-        (0, s.nv)({
+        (0, a.nv)({
           widgetId: e,
           size: {
             fixed: !0,
             width: t,
-            height: n * a + o * (a - 1) + i
+            height: n * s + o * (s - 1) + i
           }
         })
       }
-    }, [a]), r.useEffect(() => {
+    }, [s]), r.useEffect(() => {
       if (l.current.participants <= 1) return;
       let {
         id: e,
@@ -178,31 +178,31 @@ function C(e) {
         height: n,
         sizeOffset: r,
         padding: o,
-        participants: a
+        participants: s
       } = l.current;
       if (i === b.C5.HORIZONTAL) {
         let n = t - r;
-        (0, s.nv)({
+        (0, a.nv)({
           widgetId: e,
           size: {
             fixed: !0,
-            width: n * a + o * (a - 1) + r,
+            width: n * s + o * (s - 1) + r,
             height: 9 / 16 * n + r
           }
         })
       } else {
         let t = n - r;
-        (0, s.nv)({
+        (0, a.nv)({
           widgetId: e,
           size: {
             fixed: !0,
             width: 16 / 9 * t + r,
-            height: t * a + o * (a - 1) + r
+            height: t * s + o * (s - 1) + r
           }
         })
       }
     }, [i]), r.useEffect(() => () => {
-      (0, s.nv)({
+      (0, a.nv)({
         widgetId: t,
         size: {
           fixed: !0,
@@ -217,20 +217,20 @@ function C(e) {
     layout: et,
     widgetLayoutSpecs: en
   }), r.useEffect(() => {
-    a.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !q)
+    s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !q)
   }, [q]), (0, c.ZP)(() => () => {
-    a.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-  }), q && C) ? null : q && !C ? A ? C ? null : (0, i.jsx)(v.E, {
-    emptyText: x.NW.string(x.t["T6+rX1"]),
+    s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !1)
+  }), q && C) ? null : q && !C ? A ? C ? null : (0, i.jsx)(y.E, {
+    emptyText: j.NW.string(j.t["T6+rX1"]),
     icon: l.hGI,
     absolute: !0
   }) : null : (0, i.jsx)("div", {
-    className: j.goLiveGridContainer,
+    className: x.goLiveGridContainer,
     style: {
       opacity: w
     },
     ref: z,
-    children: (0, i.jsx)(y.Z, {
+    children: (0, i.jsx)(v.Z, {
       widgetId: t,
       tileWidth: ee,
       locked: C,
@@ -238,7 +238,7 @@ function C(e) {
       activeStreams: K,
       streamParticipants: X,
       participantsVersion: Q,
-      pinned: P
+      pinned: _
     })
   })
 }

@@ -2,7 +2,7 @@
 "use strict";
 r.d(t, {
   Z: () => I,
-  n: () => w
+  n: () => E
 }), r(301563);
 var n = r(200651),
   l = r(192379),
@@ -23,14 +23,14 @@ var n = r(200651),
   v = r(624377),
   x = r(141011),
   j = r(813083),
-  _ = r(67938),
-  y = r(372654),
+  _ = r(372654),
+  y = r(794324),
   O = r(215023),
   k = r(474936),
   P = r(388032),
   S = r(134442);
-let w = (0, g.IC)(90),
-  E = e => {
+let E = (0, g.IC)(90),
+  w = e => {
     let {
       category: t
     } = e, {
@@ -74,29 +74,27 @@ let w = (0, g.IC)(90),
   };
 
 function I(e) {
-  var t, r, l, i, d, p, f;
+  var t, r, l;
   let {
-    category: b,
-    className: C,
-    hideLimitedTimeBadge: k = !1
+    category: i,
+    className: d,
+    hideLimitedTimeBadge: p = !1
   } = e, {
-    backgroundColors: P
-  } = (0, v.Z)(b.styles), I = (0, O.ZS)(b.skuId), N = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), T = (0, s.e7)([h.Z], () => h.Z.isFocused());
-  if (b.skuId === a.T.CHANCE) return (0, n.jsx)(_.O, {
-    category: b
-  });
-  let B = !!(null == I ? void 0 : I.showDarkBannerText),
-    Z = null !== (p = null == I ? void 0 : I.animatedBanner) && void 0 !== p ? p : null === (t = b.bannerAsset) || void 0 === t ? void 0 : t.animated;
+    backgroundColors: f
+  } = (0, v.Z)(i.styles), b = (0, O.ZS)(i.skuId), C = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), k = (0, s.e7)([h.Z], () => h.Z.isFocused()), {
+    categoryBannerStatic: P,
+    categoryBannerAnimated: I
+  } = (0, y.tK)(i), N = !!(null == b ? void 0 : b.showDarkBannerText);
   return (0, n.jsxs)(x.Z, {
-    asset: null !== (f = null === (r = b.bannerAsset) || void 0 === r ? void 0 : r.static) && void 0 !== f ? f : b.banner,
-    className: o()(S.shopBanner, C),
-    style: null != P ? {
-      background: "".concat((0, y.nH)(P), " border-box border-box"),
-      outlineColor: P.border.toHslString()
+    asset: P,
+    className: o()(S.shopBanner, d),
+    style: null != f ? {
+      background: "".concat((0, _.nH)(f), " border-box border-box"),
+      outlineColor: f.border.toHslString()
     } : void 0,
-    children: [!N && void 0 !== Z && T && (0, n.jsx)(L, {
-      src: Z
-    }), (null === (l = O.Ve[b.skuId]) || void 0 === l ? void 0 : l.addAttributionLogo) ? (0, n.jsxs)("div", {
+    children: [!C && null != I && k && (0, n.jsx)(L, {
+      src: I
+    }), (null === (t = O.Ve[i.skuId]) || void 0 === t ? void 0 : t.addAttributionLogo) ? (0, n.jsxs)("div", {
       className: S.discordLogo,
       children: [(0, n.jsx)(c.gw7, {
         size: "custom",
@@ -109,27 +107,27 @@ function I(e) {
       })]
     }) : (0, n.jsx)(c.LZC, {
       size: 28
-    }), (null === (i = O.Ve[b.skuId]) || void 0 === i ? void 0 : i.addLogo) ? (0, n.jsx)("img", {
+    }), (null === (r = O.Ve[i.skuId]) || void 0 === r ? void 0 : r.addLogo) ? (0, n.jsx)("img", {
       className: S.categoryLogo,
-      src: (0, g.uV)(b.logo, {
-        size: w
+      src: (0, g.uV)(i.logo, {
+        size: E
       }),
-      alt: b.name,
+      alt: i.name,
       style: {
-        maxWidth: null === (d = O.Ve[b.skuId]) || void 0 === d ? void 0 : d.logoMaxWidth
+        maxWidth: null === (l = O.Ve[i.skuId]) || void 0 === l ? void 0 : l.logoMaxWidth
       }
     }) : (0, n.jsx)(c.LZC, {
       size: 90
     }), (0, n.jsx)(c.Text, {
       className: o()(S.summary, {
-        [S.blackSummary]: B
+        [S.blackSummary]: N
       }),
       variant: "text-md/normal",
-      children: b.skuId === a.T.DISXCORE ? (0, n.jsx)(E, {
-        category: b
-      }) : b.summary
-    }), !k && (0, n.jsx)(j.Z, {
-      category: b,
+      children: i.skuId === a.T.DISXCORE ? (0, n.jsx)(w, {
+        category: i
+      }) : i.summary
+    }), !p && (0, n.jsx)(j.Z, {
+      category: i,
       className: S.limitedTimeBadge,
       display: "banner"
     })]

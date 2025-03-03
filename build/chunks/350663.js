@@ -1,14 +1,14 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => x,
-  z: () => y
+  Z: () => j,
+  z: () => v
 }), n(47120);
 var i = n(200651),
   r = n(192379),
   o = n(120356),
   l = n.n(o),
-  s = n(642128),
-  a = n(481060),
+  a = n(642128),
+  s = n(481060),
   u = n(110924),
   c = n(569545),
   d = n(237997),
@@ -37,7 +37,7 @@ function O(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = 8,
+let v = 8,
   E = e => {
     let {
       participant: t,
@@ -75,17 +75,17 @@ let y = 8,
     friction: 18,
     clamp: !0
   },
-  x = r.memo(function(e) {
+  j = r.memo(function(e) {
     let {
       widgetId: t,
       tileWidth: n,
       layout: o,
       locked: h,
-      activeStreams: x,
-      streamParticipants: j,
+      activeStreams: j,
+      streamParticipants: x,
       participantsVersion: S,
       pinned: I
-    } = e, C = 9 / 16 * n, N = j.map(e => ({
+    } = e, C = 9 / 16 * n, N = x.map(e => ({
       participant: e,
       key: e.user.id,
       width: n,
@@ -93,11 +93,11 @@ let y = 8,
       widgetId: t,
       height: C,
       pinned: I
-    })), Z = (0, u.Z)(n), w = o === f.C5.VERTICAL, _ = 0, P = 0, T = (0, a.Yzy)(w ? N.map((e, t) => v(O({}, e), {
-      y: (_ += e.height + (t > 0 ? y : 0)) - e.height,
+    })), Z = (0, u.Z)(n), w = o === f.C5.VERTICAL, P = 0, _ = 0, T = (0, s.Yzy)(w ? N.map((e, t) => y(O({}, e), {
+      y: (P += e.height + (t > 0 ? v : 0)) - e.height,
       x: 0
-    })) : N.map((e, t) => v(O({}, e), {
-      x: (P += e.width + (t > 0 ? y : 0)) - e.width,
+    })) : N.map((e, t) => y(O({}, e), {
+      x: (_ += e.width + (t > 0 ? v : 0)) - e.width,
       y: 0
     })), {
       key: e => e.key,
@@ -140,7 +140,7 @@ let y = 8,
       },
       config: b,
       trail: 100 * (n === Z)
-    }, n !== Z ? "animate-never" : "respect-motion-settings"), D = (0, p.ee)(() => new Set(j.map(e => e.user.id)), [j, S]), A = (0, p.ee)(() => new Set(j.filter(e => x.has((0, c.V9)(e.stream))).map(e => e.user.id)), [j, x, S]);
+    }, n !== Z ? "animate-never" : "respect-motion-settings"), D = (0, p.ee)(() => new Set(x.map(e => e.user.id)), [x, S]), A = (0, p.ee)(() => new Set(x.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [x, j, S]);
     return r.useEffect(() => {
       0 !== D.size && (0, p.zi)(m.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
@@ -155,11 +155,11 @@ let y = 8,
         [g.horizontal]: !w
       }),
       style: w ? {
-        height: _
+        height: P
       } : {
-        width: P
+        width: _
       },
-      children: T((e, t, r, o) => (0, i.jsx)(s.animated.div, {
+      children: T((e, t, r, o) => (0, i.jsx)(a.animated.div, {
         className: g.gridItem,
         style: Object.assign({}, e, {
           width: n,

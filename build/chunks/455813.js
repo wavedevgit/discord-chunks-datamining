@@ -23,7 +23,7 @@ function d(e) {
     children: (0, r.jsx)(s.o1U, {
       size: "xs",
       color: "currentColor",
-      className: a()(u.icon)
+      className: u.icon
     })
   });
   return (0, r.jsx)(l.G.Consumer, {

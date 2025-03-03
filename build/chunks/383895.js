@@ -107,7 +107,7 @@ let y = e => {
                 userName: x
               })
             }), (0, n.jsx)("div", {
-              className: i()(O.playerInfo),
+              className: O.playerInfo,
               children: (0, n.jsxs)("div", {
                 className: i()(h.column, h.gapXs),
                 children: [(0, n.jsx)(s.Text, {

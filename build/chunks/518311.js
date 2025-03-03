@@ -310,12 +310,12 @@ class ed extends(r = l.PureComponent) {
       selectedUsers: o
     } = this.props;
     if (!n || this.isNotFriends()) return null;
-    let s = [];
+    let a = [];
     return o.forEach(e => {
       let t = H.default.getUser(e);
-      null != t && s.push(q.ZP.getName(t))
+      null != t && a.push(q.ZP.getName(t))
     }), (0, i.jsxs)(P.Z, {
-      className: a()(ee.searchBar),
+      className: ee.searchBar,
       children: [(0, i.jsx)(j.ZP, {
         ref: this.searchBarRef,
         className: ee.searchBarComponent,
@@ -326,7 +326,7 @@ class ed extends(r = l.PureComponent) {
         query: t,
         selectedRow: l,
         sections: [null !== (e = null == r ? void 0 : r.length) && void 0 !== e ? e : 0],
-        tags: s,
+        tags: a,
         onSelect: this.handleSelect,
         onSelectionChange: this.handleSelectionChange,
         onQueryChange: this.handleQueryChange,
@@ -526,7 +526,7 @@ class ed extends(r = l.PureComponent) {
         animate: !0
       })
     }), en(this, "renderMobileCloseButton", () => (0, i.jsx)("div", {
-      className: a()(ee.mobileToolsContainer),
+      className: ee.mobileToolsContainer,
       ref: this._mobileCloseRef,
       children: (0, i.jsx)(f.JcV, {
         containerRef: this._mobileCloseRef,

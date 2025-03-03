@@ -133,38 +133,38 @@ function z() {
     t = (0, R.M8)(),
     n = (0, x.wE)(d.z.FAMILY_CENTER_NEW_BADGE),
     s = (0, c.e7)([I.Z], () => I.Z.getIsInitialized()),
-    l = (0, A.M)(),
+    a = (0, A.M)(),
     {
-      selectedTab: m,
-      handleTabChange: h
+      selectedTab: l,
+      handleTabChange: m
     } = (0, y.Z)(),
-    f = (0, N.Dt)(),
-    _ = v.default.getCurrentUser(),
-    C = null != e,
-    O = s && null != _ && !C;
+    h = (0, N.Dt)(),
+    f = v.default.getCurrentUser(),
+    _ = null != e,
+    C = s && null != f && !_;
   (0, g.ZP)(() => {
     (0, j.e)("family-center"), T.ZP.initialPageLoad(), n || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: B.L.AUTO,
       forceTrack: !0
     })
   });
-  let D = {
+  let O = {
       isConsideredAdult: e,
       numOfAcceptedRequests: t,
-      selectedTab: m,
-      selectedTeenId: l
+      selectedTab: l,
+      selectedTeenId: a
     },
-    Z = i.useRef(D);
+    D = i.useRef(O);
   return (i.useEffect(() => {
-    Z.current = D
+    D.current = O
   }), i.useEffect(() => {
-    if (s && C) {
+    if (s && _) {
       let {
         isConsideredAdult: e,
         numOfAcceptedRequests: t,
         selectedTab: n,
         selectedTeenId: r
-      } = Z.current;
+      } = D.current;
       S.default.track(W.rMx.FAMILY_CENTER_VIEWED, {
         is_considered_adult: e,
         num_of_accepted_links: t,
@@ -175,24 +175,24 @@ function z() {
         name: o.V.FAMILY_CENTER_VIEW
       })
     }
-  }, [s, C]), i.useEffect(() => {
-    O && (0, p.mN)(L.L0.FAMILY_CENTER)
-  }, [O]), O) ? null : (0, r.jsxs)("main", {
-    className: a()(U.container),
+  }, [s, _]), i.useEffect(() => {
+    C && (0, p.mN)(L.L0.FAMILY_CENTER)
+  }, [C]), C) ? null : (0, r.jsxs)("main", {
+    className: U.container,
     "aria-label": M.NW.string(M.t.RZqaJi),
     children: [(0, r.jsx)(b.yY, {
       location: M.NW.string(M.t.RZqaJi)
     }), (0, r.jsx)(F, {
-      section: m,
+      section: l,
       handleItemSelect: e => {
-        h(e)
+        m(e)
       }
     }), (0, r.jsx)(u.njP.Panel, {
-      id: m,
-      "aria-labelledby": f,
+      id: l,
+      "aria-labelledby": h,
       className: U.contentPanel,
       children: (0, r.jsx)("div", {
-        children: V[m]()
+        children: V[l]()
       })
     })]
   })

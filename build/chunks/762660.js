@@ -170,7 +170,7 @@ function _() {
   return (0, r.jsxs)("div", {
     className: h.placeholder,
     children: [(0, r.jsx)("div", {
-      className: o()(h.placeholderAvatar)
+      className: h.placeholderAvatar
     }), (0, r.jsxs)("div", {
       className: h.userDetails,
       children: [(0, r.jsx)("div", {

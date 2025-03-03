@@ -1,6 +1,6 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  ZP: () => y,
+  ZP: () => v,
   dt: () => m,
   eo: () => b
 }), n(653041), n(47120);
@@ -60,7 +60,7 @@ function b(e, t, n) {
   } = (0, d.ie)(t, n, e);
   return "section-footer-".concat(e).concat(r ? "-divider" : "").concat(i ? "-voice-summary" : "")
 }
-let y = i.memo(function(e) {
+let v = i.memo(function(e) {
   let {
     sectionIndex: t,
     guildChannels: n,
@@ -68,14 +68,14 @@ let y = i.memo(function(e) {
     voiceStates: h,
     guildId: m,
     selectedChannelId: b,
-    selectedVoiceChannelId: y,
-    optInEnabled: v
+    selectedVoiceChannelId: v,
+    optInEnabled: y
   } = e, {
-    hasDivider: O,
-    canHaveVoiceSummary: j
-  } = i.useMemo(() => (0, d.ie)(n, v, t), [n, v, t, p]), _ = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, p]), C = (0, a.DM)(m), x = (0, l.Wu)([s.ZP], () => {
-    if (null == _ || !_.isCollapsed || !j) return [];
-    let e = _.getChannelRecords(),
+    hasDivider: _,
+    canHaveVoiceSummary: O
+  } = i.useMemo(() => (0, d.ie)(n, y, t), [n, y, t, p]), j = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, p]), C = (0, a.DM)(m), x = (0, l.Wu)([s.ZP], () => {
+    if (null == j || !j.isCollapsed || !O) return [];
+    let e = j.getChannelRecords(),
       t = [];
     for (let n of e) {
       if (!n.isGuildVocal()) continue;
@@ -83,29 +83,29 @@ let y = i.memo(function(e) {
       (!C || e) && t.push(n)
     }
     return t
-  }, [_, j, m, C]), P = i.useMemo(() => (0, c.c4)({
+  }, [j, O, m, C]), S = i.useMemo(() => (0, c.c4)({
     channels: x,
     selectedChannelId: b,
-    selectedVoiceChannelId: y,
+    selectedVoiceChannelId: v,
     voiceStates: h
-  }), [x, b, y, h]);
+  }), [x, b, v, h]);
   if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(g, {
     guildChannels: n,
     guildChannelsVersion: p
   });
-  let N = O ? (0, r.jsx)("div", {
+  let P = _ ? (0, r.jsx)("div", {
     className: f.sectionDivider
   }) : null;
-  return j && 0 !== P.length ? (0, r.jsxs)(r.Fragment, {
+  return O && 0 !== S.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.voiceUserSummary,
       children: (0, r.jsx)(o.Z, {
         renderIcon: !0,
-        users: P,
+        users: S,
         max: 8,
         showUserPopout: !0,
         guildId: m
       })
-    }), N]
-  }) : N
+    }), P]
+  }) : P
 })

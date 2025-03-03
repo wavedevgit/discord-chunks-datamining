@@ -106,13 +106,15 @@ function S(e) {
     b.warn("Voice Filter apply ignored, module not loaded.");
     return
   }
+  let n = performance.now();
   f.ZP.getVoiceFilters().setVoiceFilter({
     name: e
   }).then(() => {
     a.Z.dispatch({
       type: "VOICE_FILTER_APPLIED",
       voiceFilterId: e,
-      analyticsContext: t
+      analyticsContext: t,
+      activationDurationMs: performance.now() - n
     })
   }, t => {
     b.error("failed to set voice filter", t), a.Z.dispatch({

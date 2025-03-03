@@ -44,25 +44,25 @@ function c(e) {
   return (0, r.jsx)("div", {
     className: s.tableContainer,
     children: (0, r.jsx)(o.Tvr, {
-      className: i()(l),
+      className: l,
       innerClassName: s.table,
       sections: x,
       sectionHeight: 40,
       renderSection: e => {
         let {
           section: t
-        } = e, a = i()(s.tableHeader);
+        } = e, a = s.tableHeader;
         return (0, r.jsx)("div", {
           className: a,
           children: h.map(e => {
             var a, l;
-            let o = i()(e.cellClassName),
-              s = {
+            let i = e.cellClassName,
+              o = {
                 width: "calc(".concat(null !== (l = e.cellWidth) && void 0 !== l ? l : "1fr", " - ").concat(16, "px)")
               };
             return (0, r.jsx)("div", {
-              className: o,
-              style: s,
+              className: i,
+              style: o,
               children: null === (a = e.renderHeader) || void 0 === a ? void 0 : a.call(e, e, n)
             }, "dev-tools-th-".concat(t, "-").concat(e.key))
           })
@@ -81,14 +81,14 @@ function c(e) {
           onClick: () => null == d ? void 0 : d(a),
           children: h.map(e => {
             var n, l;
-            let o = i()(e.cellClassName),
-              s = {
+            let i = e.cellClassName,
+              o = {
                 width: "calc(".concat(null !== (l = e.cellWidth) && void 0 !== l ? l : "1fr", " - ").concat(16, "px)"),
                 height: "calc(".concat(m, "px - ").concat(16, "px)")
               };
             return (0, r.jsx)("div", {
-              className: o,
-              style: s,
+              className: i,
+              style: o,
               children: null === (n = e.render) || void 0 === n ? void 0 : n.call(e, a, void 0, t)
             }, "dev-tools-td-".concat(t, "-").concat(e.key))
           })

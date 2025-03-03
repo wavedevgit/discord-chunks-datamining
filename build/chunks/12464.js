@@ -154,7 +154,7 @@ let p = function(e) {
       }
     })
   }, [t, L, x]), (0, r.jsxs)("div", {
-    className: s()(f.cardNumberWrapper),
+    className: f.cardNumberWrapper,
     "data-stripe-type": n,
     children: [(0, r.jsx)("div", {
       ref: t,

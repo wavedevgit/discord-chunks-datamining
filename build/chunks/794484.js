@@ -120,7 +120,7 @@ let E = e => {
           }),
           children: W.subtitle
         }), !C && null != O && (0, r.jsx)("div", {
-          className: a()(_.showAllPerksButtonCenter),
+          className: _.showAllPerksButtonCenter,
           children: O
         }), (0, r.jsx)("div", {
           className: a()({

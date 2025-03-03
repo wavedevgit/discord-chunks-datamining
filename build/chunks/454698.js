@@ -1,5 +1,4 @@
 /** Chunk was on 13368 **/
-"use strict";
 e.exports = {
   "outgoing-call-pulse": "outgoing-call-pulse__2f4f7",
   wrapper: "wrapper__2f4f7",

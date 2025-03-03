@@ -181,7 +181,7 @@ function P(e) {
           },
           className: j.videoWrapper,
           children: (0, r.jsx)("div", {
-            className: o()(x.videoSizer),
+            className: x.videoSizer,
             style: {
               aspectRatio: ec
             },

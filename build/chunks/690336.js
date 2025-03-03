@@ -1,13 +1,13 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => y
+  Z: () => v
 }), n(653041), n(47120);
 var i = n(200651),
   r = n(192379),
   o = n(442837),
   l = n(481060),
-  s = n(355863),
-  a = n(451478),
+  a = n(355863),
+  s = n(451478),
   u = n(830917),
   c = n(388627),
   d = n(892127),
@@ -39,31 +39,31 @@ function g(e) {
 }
 
 function O(e, t, n, r) {
-  var o, s;
-  return n === l.pJH.YEETED ? null : (0, i.jsx)(d.Z, (o = m({}, t), s = s = {
+  var o, a;
+  return n === l.pJH.YEETED ? null : (0, i.jsx)(d.Z, (o = m({}, t), a = a = {
     transitionState: n,
     cleanUp: r
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
       n.push.apply(n, i)
     }
     return n
-  })(Object(s)).forEach(function(e) {
-    Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
+  })(Object(a)).forEach(function(e) {
+    Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(a, e))
   }), o), e)
 }
-let v = [],
-  y = r.memo(function(e) {
+let y = [],
+  v = r.memo(function(e) {
     let {
       className: t
-    } = e, n = (0, h.Z)(), d = (0, o.e7)([a.Z], () => a.Z.windowSize((0, u.ZY)(n))), y = (0, o.e7)([s.Z], () => {
-      let e = s.Z.getLayout(f.OVERLAY_V3_LAYOUT_ID);
-      if (null == e) return v;
+    } = e, n = (0, h.Z)(), d = (0, o.e7)([s.Z], () => s.Z.windowSize((0, u.ZY)(n))), v = (0, o.e7)([a.Z], () => {
+      let e = a.Z.getLayout(f.OVERLAY_V3_LAYOUT_ID);
+      if (null == e) return y;
       let t = [];
       for (let n of e.widgets) {
-        let e = s.Z.getWidget(n);
+        let e = a.Z.getWidget(n);
         if (null == e) continue;
         let i = p.Z[e.type];
         null != i && (null == i.predicate || i.predicate()) && t.push(m({
@@ -77,7 +77,7 @@ let v = [],
       children: e
     }), [t, d]);
     return (0, i.jsx)(l.W3x, {
-      items: y,
+      items: v,
       renderItem: O,
       getItemKey: g,
       wrapChildren: E

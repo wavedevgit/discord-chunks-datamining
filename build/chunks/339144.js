@@ -1,7 +1,7 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  J: () => N,
-  y: () => P
+  J: () => P,
+  y: () => S
 });
 var r = n(200651),
   i = n(192379),
@@ -16,71 +16,70 @@ var r = n(200651),
   h = n(522651),
   f = n(311352),
   g = n(668519),
-  m = n(803647),
-  b = n(810632),
-  y = n(131704),
-  v = n(944486),
-  O = n(626135),
-  j = n(870569),
-  _ = n(981631),
+  m = n(562224),
+  b = n(803647),
+  v = n(131704),
+  y = n(944486),
+  _ = n(626135),
+  O = n(870569),
+  j = n(981631),
   C = n(388032),
   x = n(172241);
 
-function P(e, t, n) {
-  return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === _.IIU.PLAYING && (0, u.Z)(t, _.xjy.JOIN))
+function S(e, t, n) {
+  return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === j.IIU.PLAYING && (0, u.Z)(t, j.xjy.JOIN))
 }
-let N = i.memo(function(e) {
-  let t, l, u, N, {
-      stream: S,
-      canGoLive: I,
+let P = i.memo(function(e) {
+  let t, l, u, P, {
+      stream: I,
+      canGoLive: N,
       guildId: Z,
-      isStreaming: E,
-      channel: w,
+      isStreaming: w,
+      channel: E,
       canStream: T,
       runningGame: A,
       embeddedActivity: D,
       activity: R,
       application: L,
-      analyticsContext: M
+      analyticsContext: k
     } = e,
     {
-      showRefreshedGoLiveModal: k
+      showRefreshedGoLiveModal: M
     } = (0, g.a)({
       location: "Activity Panel",
       autoTrackExposure: !1
     }),
-    G = (0, b.B)(_.IlC.APP),
     {
-      parentAnalyticsLocation: U
+      parentAnalyticsLocation: G
     } = (0, p.ZP)(),
-    B = P(L, R, D),
-    W = i.useCallback(() => {
-      o()(null != R, "Received null activity"), (0, h.v)(U, h.d.INVITE), O.default.track(_.rMx.OPEN_MODAL, {
+    B = S(L, R, D),
+    U = i.useCallback(() => {
+      o()(null != R, "Received null activity"), (0, h.v)(G, h.d.INVITE), _.default.track(j.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: R.application_id,
-        location: M.location
+        location: k.location
       }), (0, s.h7)(R, !1)
-    }, [R, M, U]),
-    V = i.useCallback((e, t) => () => {
-      (0, h.v)(U, h.d.LEAVE_ACTIVITY), d.Z.leaveActivity({
+    }, [R, k, G]),
+    W = i.useCallback((e, t) => () => {
+      (0, h.v)(G, h.d.LEAVE_ACTIVITY), d.Z.leaveActivity({
         location: t,
         applicationId: e,
         showFeedback: !0
       })
-    }, [U]),
+    }, [G]),
+    V = i.useCallback(() => {
+      (0, b.Z)(I)
+    }, [I]),
     F = i.useCallback(() => {
-      (0, m.Z)(S)
-    }, [S]),
-    H = i.useCallback(() => {
-      let e = null != w && (0, y.vd)(w.type) ? w : null,
+      let e = null != E && (0, v.vd)(E.type) ? E : null,
         t = null != e ? e.getGuildId() : Z;
-      if (k && null != v.Z.getVoiceChannelId()) {
-        G();
+      if (M && null != A && null != y.Z.getVoiceChannelId()) {
+        (0, m.Z)(A.pid);
         return
       }(0, a.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79477"), n.e("15670")]).then(n.bind(n, 60594));
+        } = await Promise.all([n.e("46746"), n.e("50844")]).then(n.bind(n, 60594));
         return n => {
           var i, l;
           return (0, r.jsx)(e, (i = function(e) {
@@ -104,7 +103,7 @@ let N = i.memo(function(e) {
             sourcePID: null == A ? void 0 : A.pid,
             selectSource: !1,
             guildId: t,
-            analyticsLocation: _.Sbl.ACTIVITY_PANEL
+            analyticsLocation: j.Sbl.ACTIVITY_PANEL
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -117,35 +116,35 @@ let N = i.memo(function(e) {
           }), i))
         }
       })
-    }, [w, Z, A, G, k]),
-    z = (null != A || null == D || (0, c.R)()) && (E || I) ? (E ? (t = !1, l = () => {
-      F(), (0, h.v)(U, h.d.STREAM, !1)
-    }, u = a.g5r, N = C.NW.string(C.t.S5anIS)) : T ? (t = !1, l = () => {
-      H(), (0, h.v)(U, h.d.STREAM, !0)
-    }, u = a.hGI, N = null != A ? C.NW.formatToPlainString(C.t.AB5gT0, {
+    }, [E, Z, A, M]),
+    H = (null != A || null == D || (0, c.R)()) && (w || N) ? (w ? (t = !1, l = () => {
+      V(), (0, h.v)(G, h.d.STREAM, !1)
+    }, u = a.g5r, P = C.NW.string(C.t.S5anIS)) : T ? (t = !1, l = () => {
+      F(), (0, h.v)(G, h.d.STREAM, !0)
+    }, u = a.hGI, P = null != A ? C.NW.formatToPlainString(C.t.AB5gT0, {
       game: A.name
-    }) : C.NW.string(C.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, N = null != w && (0, y.vd)(w.type) ? C.NW.string(C.t.uQn9Bw) : null != Z ? C.NW.string(C.t.fBXEoK) : C.NW.string(C.t.n3feND)), (0, r.jsx)("div", {
+    }) : C.NW.string(C.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, P = null != E && (0, v.vd)(E.type) ? C.NW.string(C.t.uQn9Bw) : null != Z ? C.NW.string(C.t.fBXEoK) : C.NW.string(C.t.n3feND)), (0, r.jsx)("div", {
       className: x.panelButtonContainer,
-      children: (0, r.jsx)(j.Z, {
-        tooltipText: N,
+      children: (0, r.jsx)(O.Z, {
+        tooltipText: P,
         disabled: t,
         onClick: l,
         icon: u
       })
     })) : null,
-    Y = B && null == D ? (0, r.jsx)(j.Z, {
+    z = B && null == D ? (0, r.jsx)(O.Z, {
       tooltipText: C.NW.string(C.t["hC/Ze3"]),
-      onClick: W,
+      onClick: U,
       icon: a.ejJ
     }) : null,
-    q = null == D ? null : (0, r.jsx)(j.Z, {
+    Y = null == D ? null : (0, r.jsx)(O.Z, {
       tooltipText: C.NW.string(C.t["R/FK4O"]),
-      onClick: V(D.applicationId, D.location),
+      onClick: W(D.applicationId, D.location),
       icon: a.PBZ
     }),
-    Q = null == S ? null : (0, r.jsx)(f.Z, {});
-  return null == z && null == Y && null == q ? null : (0, r.jsxs)("div", {
+    q = null == I ? null : (0, r.jsx)(f.Z, {});
+  return null == H && null == z && null == Y ? null : (0, r.jsxs)("div", {
     className: x.actions,
-    children: [z, Y, null != q ? q : Q]
+    children: [H, z, null != Y ? Y : q]
   })
 })

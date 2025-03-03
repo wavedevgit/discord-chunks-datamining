@@ -41,12 +41,12 @@ function L(e) {
   var t;
   let n, {
       channel: l,
-      openInPopout: a,
-      onClick: c
+      openInPopout: o,
+      onClick: a
     } = e,
     {
-      fetchState: h,
-      voiceBannerCollection: f
+      fetchState: c,
+      voiceBannerCollection: h
     } = function() {
       let e = (0, d.e7)([E.default], () => E.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE;
       return i.useEffect(() => {
@@ -65,42 +65,42 @@ function L(e) {
         }))[0]
       }
     }(),
-    m = h === x.M.FETCHING,
-    b = i.useMemo(() => {
-      let e = null == f ? void 0 : f.application_directory_collection_items[0];
+    f = c === x.M.FETCHING,
+    m = i.useMemo(() => {
+      let e = null == h ? void 0 : h.application_directory_collection_items[0];
       return null == e ? null : e.type === u.C.APPLICATION_BANNER ? e : null
-    }, [null == f ? void 0 : f.application_directory_collection_items]),
+    }, [null == h ? void 0 : h.application_directory_collection_items]),
     {
-      trackItemImpressionRef: v
+      trackItemImpressionRef: b
     } = (0, _.Z)({
-      applicationId: null !== (t = null == b ? void 0 : b.application.id) && void 0 !== t ? t : "",
-      applicationFlags: null == b ? void 0 : b.application.flags,
+      applicationId: null !== (t = null == m ? void 0 : m.application.id) && void 0 !== t ? t : "",
+      applicationFlags: null == m ? void 0 : m.application.flags,
       sectionName: "app_launcher_in_voice_banner",
-      sectionPosition: null == b ? void 0 : b.position,
+      sectionPosition: null == m ? void 0 : m.position,
       sectionOverallPosition: 0
     });
-  return null == b || null == f || m ? null : (null != b.id && null != b.image_hash && (n = (0, j.$_)({
-    itemId: b.id,
-    hash: b.image_hash,
+  return null == m || null == h || f ? null : (null != m.id && null != m.image_hash && (n = (0, j.$_)({
+    itemId: m.id,
+    hash: m.image_hash,
     containerWidth: 584
   })), (0, r.jsxs)(p.P3F, {
-    className: o()(R.clickableBanner),
-    innerRef: v,
+    className: R.clickableBanner,
+    innerRef: b,
     onClick: () => {
-      c(), (0, C.Z)({
+      a(), (0, C.Z)({
         context: {
           type: "channel",
           channel: l
         },
-        openInPopout: a,
+        openInPopout: o,
         analyticsLocation: g.Z.APP_LAUNCHER_IN_VOICE_BANNER,
         initialState: {
-          applicationId: b.application.id
+          applicationId: m.application.id
         }
       })
     },
     children: [(0, r.jsx)("img", {
-      alt: b.description,
+      alt: m.description,
       src: n,
       className: R.poster
     }), (0, r.jsx)("div", {

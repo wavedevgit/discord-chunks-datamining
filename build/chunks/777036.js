@@ -6,8 +6,8 @@ var i = n(26151),
   r = n(13245),
   o = n(287734),
   l = n(43267),
-  s = n(933557),
-  a = n(699516),
+  a = n(933557),
+  s = n(699516),
   u = n(594174),
   c = n(614554),
   d = n(620954),
@@ -16,13 +16,13 @@ var i = n(26151),
   f = n(388032);
 
 function m(e) {
-  let t = (0, s.F6)(e, u.default, a.Z),
+  let t = (0, a.F6)(e, u.default, s.Z),
     n = f.NW.string(f.t.ssrVzM),
     m = (0, l.x)(e),
     g = (0, c.Z)(e),
     {
       trackView: O,
-      trackClick: v
+      trackClick: y
     } = (0, d.R)(p.n0.IncomingCall, {
       notif_type: p.n0.IncomingCall,
       notif_user_id: g,
@@ -40,7 +40,7 @@ function m(e) {
       O()
     },
     onConfirmClick: (t, n) => {
-      if (v("join"), h.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, !1, !1);
+      if (y("join"), h.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, !1, !1);
       else {
         if (e.type !== h.d4z.GUILD_VOICE) return;
         o.default.selectVoiceChannel(e.id)
@@ -53,10 +53,10 @@ function m(e) {
       })
     },
     onCancelClick: () => {
-      v("decline"), i.Z.stopRinging(e.id)
+      y("decline"), i.Z.stopRinging(e.id)
     },
     onDismissClick: () => {
-      v("dismiss")
+      y("dismiss")
     }
   }
 }

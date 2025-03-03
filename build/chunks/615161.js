@@ -1,22 +1,22 @@
-/** Chunk was on 79477 **/
+/** Chunk was on 46746 **/
 n.d(t, {
-  E_: () => Z,
-  Ti: () => N,
-  Yw: () => S
+  E_: () => C,
+  Ti: () => b,
+  Yw: () => j
 }), n(411104), n(47120);
 var r = n(200651),
   l = n(192379),
-  s = n(268146),
-  i = n(442837),
-  a = n(846519),
-  o = n(751571),
+  i = n(268146),
+  s = n(442837),
+  o = n(846519),
+  a = n(751571),
   c = n(695346),
-  u = n(361291),
-  d = n(59468),
-  m = n(37113),
-  p = n(761274);
+  d = n(361291),
+  u = n(59468),
+  f = n(37113),
+  h = n(761274);
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,61 +55,61 @@ let x = {
     muteStreamAudio: !1,
     notifyFriends: !1,
     hidePreview: !1,
-    preset: m.tI.PRESET_CUSTOM,
-    resolution: m.LY.RESOLUTION_720,
-    fps: m.ws.FPS_30,
-    sourceType: s.vA.WINDOW,
+    preset: f.tI.PRESET_CUSTOM,
+    resolution: f.LY.RESOLUTION_720,
+    fps: f.ws.FPS_30,
+    sourceType: i.vA.WINDOW,
     fetchingSources: !0,
     sourceApplication: void 0
   },
-  v = l.createContext(x),
-  f = l.createContext(() => {
+  g = l.createContext(x),
+  _ = l.createContext(() => {
     throw Error("Using uninitialized GoLiveModalContextDispatch")
   });
 
-function j(e, t) {
+function v(e, t) {
   switch (t.type) {
     case "set_mute_audio":
-      return g(h({}, e), {
+      return p(m({}, e), {
         muteStreamAudio: t.value
       });
     case "set_notify_friends":
-      return g(h({}, e), {
+      return p(m({}, e), {
         notifyFriends: t.value
       });
     case "set_has_permission":
-      return g(h({}, e), {
+      return p(m({}, e), {
         hasPermission: t.value
       });
     case "set_source_candidates":
-      return g(h({}, e), {
+      return p(m({}, e), {
         screenSources: t.screenSources,
         windowSources: t.windowSources,
         deviceSources: t.deviceSources,
         fetchingSources: !1
       });
     case "set_preset":
-      return g(h({}, e), {
+      return p(m({}, e), {
         preset: t.preset
       });
     case "set_source_type":
-      if (t.sourceType === s.vA.CAMERA && e.preset === m.tI.PRESET_DOCUMENTS) return g(h({}, e), {
-        preset: m.tI.PRESET_VIDEO,
+      if (t.sourceType === i.vA.CAMERA && e.preset === f.tI.PRESET_DOCUMENTS) return p(m({}, e), {
+        preset: f.tI.PRESET_VIDEO,
         sourceType: t.sourceType
       });
-      return g(h({}, e), {
+      return p(m({}, e), {
         sourceType: t.sourceType
       });
     case "set_resolution":
-      return g(h({}, e), {
+      return p(m({}, e), {
         resolution: t.resolution
       });
     case "set_fps":
-      return g(h({}, e), {
+      return p(m({}, e), {
         fps: t.fps
       });
     case "set_hide_preview":
-      return g(h({}, e), {
+      return p(m({}, e), {
         hidePreview: t.hidePreview
       });
     default:
@@ -117,46 +117,46 @@ function j(e, t) {
   }
 }
 
-function S(e) {
+function j(e) {
   let {
     dispatch: t,
     state: n,
     children: l
   } = e;
-  return (0, r.jsx)(f.Provider, {
+  return (0, r.jsx)(_.Provider, {
     value: t,
-    children: (0, r.jsx)(v.Provider, {
+    children: (0, r.jsx)(g.Provider, {
       value: n,
       children: l
     })
   })
 }
 
-function N(e) {
+function b(e) {
   var t;
   let {
     preset: n,
     resolution: r,
-    fps: s,
-    soundshareEnabled: m
-  } = (0, i.cj)([u.Z], () => u.Z.getState()), v = null !== (t = c.I0.useSetting()) && void 0 !== t && t, [f, S] = l.useReducer(j, g(h({}, x), {
-    muteStreamAudio: !m,
+    fps: i,
+    soundshareEnabled: f
+  } = (0, s.cj)([d.Z], () => d.Z.getState()), g = null !== (t = c.I0.useSetting()) && void 0 !== t && t, [_, j] = l.useReducer(v, p(m({}, x), {
+    muteStreamAudio: !f,
     preset: n,
     resolution: r,
-    fps: s,
-    hidePreview: v,
+    fps: i,
+    hidePreview: g,
     sourceApplication: e
-  })), N = l.useRef(new a.Xp);
+  })), b = l.useRef(new o.Xp);
   return l.useEffect(() => {
-    o.Z.hasPermission(p.Eu.SCREEN_RECORDING, {
+    a.Z.hasPermission(h.Eu.SCREEN_RECORDING, {
       showAuthorizationError: !1
-    }).then(e => S({
+    }).then(e => j({
       type: "set_has_permission",
       value: e
     }))
   }, []), l.useEffect(() => {
-    let e = N.current;
-    return (0, d.t)({
+    let e = b.current;
+    return (0, u.t)({
       width: 376,
       height: 212
     }).then(e => {
@@ -165,7 +165,7 @@ function N(e) {
         windowSources: n,
         cameraSources: r
       } = e;
-      S({
+      j({
         type: "set_source_candidates",
         screenSources: t,
         windowSources: n,
@@ -176,11 +176,11 @@ function N(e) {
         screenSources: e,
         windowSources: t,
         cameraSources: n
-      } = await (0, d.t)({
+      } = await (0, u.t)({
         width: 376,
         height: 212
       });
-      S({
+      j({
         type: "set_source_candidates",
         screenSources: e,
         windowSources: t,
@@ -190,11 +190,11 @@ function N(e) {
       e.stop()
     }
   }, []), {
-    state: f,
-    dispatch: S
+    state: _,
+    dispatch: j
   }
 }
 
-function Z() {
-  return [l.useContext(v), l.useContext(f)]
+function C() {
+  return [l.useContext(g), l.useContext(_)]
 }

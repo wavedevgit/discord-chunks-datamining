@@ -1,14 +1,14 @@
-/** Chunk was on 45432 **/
+/** Chunk was on 54030 **/
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(47120), n(733860);
-var l, i = n(442837),
-  r = n(570140),
-  u = n(592125),
-  o = n(271383),
-  a = n(430824);
+var r, o = n(442837),
+  i = n(570140),
+  a = n(592125),
+  l = n(271383),
+  c = n(430824);
 
-function s(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -16,32 +16,32 @@ function s(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let c = [],
-  d = new Set;
-class p extends(l = i.ZP.PersistedStore) {
+let s = [],
+  _ = new Set;
+class d extends(r = o.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(o.ZP, a.Z, u.Z), d = new Set([...c = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []])
+    this.waitFor(l.ZP, c.Z, a.Z), _ = new Set([...s = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []])
   }
   getState() {
     return {
-      channelHistory: c
+      channelHistory: s
     }
   }
   getChannelHistory() {
-    return c
+    return s
   }
 }
-s(p, "displayName", "RecentVoiceChannelStore"), s(p, "persistKey", "RecentVoiceChannelStore");
-let h = new p(r.Z, {
+u(d, "displayName", "RecentVoiceChannelStore"), u(d, "persistKey", "RecentVoiceChannelStore");
+let f = new d(i.Z, {
   POST_CONNECTION_OPEN: function() {
-    d = new Set([...c])
+    _ = new Set([...s])
   },
   VOICE_CHANNEL_SELECT: function(e) {
     var t, n;
     let {
-      channelId: l
+      channelId: r
     } = e;
-    return !(null == l || !(null !== (n = null === (t = u.Z.getChannel(l)) || void 0 === t ? void 0 : t.isVocal()) && void 0 !== n && n) || d.has(l)) && (c.unshift(l), d.add(l), c.length > 10 && (c.length = 10, d = new Set([...c])), !0)
+    return !(null == r || !(null !== (n = null === (t = a.Z.getChannel(r)) || void 0 === t ? void 0 : t.isVocal()) && void 0 !== n && n) || _.has(r)) && (s.unshift(r), _.add(r), s.length > 10 && (s.length = 10, _ = new Set([...s])), !0)
   }
 })

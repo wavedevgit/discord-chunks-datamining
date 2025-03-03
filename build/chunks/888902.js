@@ -1,4 +1,4 @@
-/** Chunk was on 30371 **/
+/** Chunk was on 35535 **/
 var i = function() {
   "use strict";
 
@@ -46,9 +46,9 @@ var i = function() {
       return this.cacheStartTime_ == t && this.cacheStepSize_ == i && this.cacheValues_.length == e || (this.cacheValues_ = this.getValuesInternal_(t, i, e), this.cacheStartTime_ = t, this.cacheStepSize_ = i), this.cacheValues_
     },
     getValuesInternal_: function(t, i, e) {
-      for (var s = [], a = 0, h = 0, r = t, n = 0; n < e; ++n) {
-        for (; a < this.dataPoints_.length && this.dataPoints_[a].time < r;) h = this.dataPoints_[a].value, ++a;
-        s[n] = h, r += i
+      for (var s = [], a = 0, h = 0, n = t, r = 0; r < e; ++r) {
+        for (; a < this.dataPoints_.length && this.dataPoints_[a].time < n;) h = this.dataPoints_[a].value, ++a;
+        s[r] = h, n += i
       }
       return s
     }

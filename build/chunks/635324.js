@@ -1,19 +1,18 @@
 /** Chunk was on 63141 **/
-"use strict";
 n(47120);
 var i = n(200651),
   r = n(149765),
   o = n(481060),
-  a = n(570140),
-  l = n(700785);
-__OVERLAY__ && a.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) {
+  l = n(570140),
+  a = n(700785);
+__OVERLAY__ && l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) {
   var {
     clientId: t,
     authorizeProps: {
       authorizations: s,
-      permissions: c
+      permissions: d
     }
-  } = e, d = function(e, t) {
+  } = e, c = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -28,21 +27,21 @@ __OVERLAY__ && a.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
     }
     return r
   }(e.authorizeProps, ["authorizations", "permissions"]);
-  let u = "OAuth2Authorize_".concat(t, "_").concat(d.guildId, "_").concat(d.channelId);
+  let u = "OAuth2Authorize_".concat(t, "_").concat(c.guildId, "_").concat(c.channelId);
 
-  function f(e) {
+  function p(e) {
     let {
       location: n
     } = e;
-    a.Z.dispatch({
+    l.Z.dispatch({
       type: "OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE",
       clientId: t,
       location: n
     })
   }
-  let p = l.Hn;
+  let h = a.Hn;
   try {
-    p = r.vB(null != c ? c : 0)
+    h = r.vB(null != d ? d : 0)
   } catch (e) {}(0, o.ZDy)(async () => {
     let {
       OAuth2AuthorizeModal: e
@@ -66,10 +65,10 @@ __OVERLAY__ && a.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
           })
         }
         return e
-      }({}, t, d), r = r = {
+      }({}, t, c), r = r = {
         authorizations: new Map(s),
-        permissions: p,
-        callback: f
+        permissions: h,
+        callback: p
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -84,7 +83,7 @@ __OVERLAY__ && a.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
   }, {
     modalKey: u,
     onCloseRequest: () => {
-      (0, o.Mr3)(u), f({})
+      (0, o.Mr3)(u), p({})
     }
   })
 })

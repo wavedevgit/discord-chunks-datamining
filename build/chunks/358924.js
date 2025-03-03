@@ -195,10 +195,10 @@ let er = e => {
     subtitle: r,
     icon: l,
     onSubtitleClick: o,
-    onIconClick: s,
-    onContextMenu: c,
-    guildId: d
-  } = e, p = (0, i.jsx)(u.Text, {
+    onIconClick: a,
+    onContextMenu: s,
+    guildId: c
+  } = e, d = (0, i.jsx)(u.Text, {
     color: "header-secondary",
     className: Y.textContent,
     variant: "text-sm/normal",
@@ -207,26 +207,26 @@ let er = e => {
   return (0, i.jsxs)("header", {
     className: null != l ? Y.headerFull : Y.headerSimple,
     children: [(0, i.jsx)(u.qEK, {
-      src: t.user.getAvatarURL(d, 32),
+      src: t.user.getAvatarURL(c, 32),
       "aria-label": t.user.username,
       size: u.EFr.SIZE_32,
       className: Y.headerAvatar,
       status: t.status,
-      onContextMenu: c
+      onContextMenu: s
     }), (0, i.jsxs)("div", {
       className: Y.__invalid_headerDetails,
       children: [(0, i.jsx)(u.Text, {
-        className: a()(Y.textContent),
+        className: Y.textContent,
         variant: "text-md/semibold",
         children: n
       }), null != o ? (0, i.jsx)(u.P3F, {
         className: Y.clickable,
         onClick: o,
-        children: p
-      }) : p]
-    }), null != l && null != s ? (0, i.jsx)(u.P3F, {
+        children: d
+      }) : d]
+    }), null != l && null != a ? (0, i.jsx)(u.P3F, {
       className: Y.clickable,
-      onClick: s,
+      onClick: a,
       children: l
     }) : l]
   })

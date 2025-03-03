@@ -142,7 +142,7 @@ let T = e => {
     })
   }, R = (0, r.jsx)(v.Z, {
     color: u.Ttl.CUSTOM,
-    className: l()(O.uploadFileInputContainer),
+    className: O.uploadFileInputContainer,
     innerClassName: O.uploadThumbnailContainer,
     onChange: E,
     multiple: !1,

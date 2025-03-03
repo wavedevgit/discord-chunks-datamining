@@ -171,7 +171,7 @@ function q(e, t) {
       return (0, r.jsx)(p.U65, G({
         size: "xs",
         color: "currentColor",
-        className: o()(B.alertActionIcon)
+        className: B.alertActionIcon
       }, t));
     default:
       return null

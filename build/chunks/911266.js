@@ -67,7 +67,7 @@ let C = e => {
     });
   return (0, r.jsxs)("div", {
     ref: O,
-    className: o()(_.emojiWrapper),
+    className: _.emojiWrapper,
     style: {
       right: "".concat(256 + C, "px")
     },

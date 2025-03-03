@@ -1,17 +1,17 @@
-/** Chunk was on 29611 **/
+/** Chunk was on 7755 **/
 n.d(t, {
-  Z: () => h
+  Z: () => f
 });
-var i, o, r, a = n(442837),
-  l = n(570140),
-  c = n(981631);
-let s = {};
+var r, l, i, o = n(442837),
+  a = n(570140),
+  s = n(981631);
+let c = {};
 
 function u(e) {
-  let t = s[e = null != e ? e : "null"];
-  return null == t && (t = s[e] = {
-    state: c.hes.DISCONNECTED,
-    quality: c.IE4.UNKNOWN,
+  let t = c[e = null != e ? e : "null"];
+  return null == t && (t = c[e] = {
+    state: s.hes.DISCONNECTED,
+    quality: s.IE4.UNKNOWN,
     pings: [],
     hostname: null,
     lossRate: null
@@ -19,17 +19,17 @@ function u(e) {
 }
 
 function d(e, t, n) {
-  let i = s[e = null != e ? e : "null"];
-  return null != i ? t(i) : n
+  let r = c[e = null != e ? e : "null"];
+  return null != r ? t(r) : n
 }
-class _ extends(r = a.ZP.Store) {
+class h extends(i = o.ZP.Store) {
   getConnectionState(e) {
     return d(e, e => {
       let {
         state: t
       } = e;
       return t
-    }, c.hes.DISCONNECTED)
+    }, s.hes.DISCONNECTED)
   }
   getQuality(e) {
     return d(e, e => {
@@ -37,7 +37,7 @@ class _ extends(r = a.ZP.Store) {
         quality: t
       } = e;
       return t
-    }, c.IE4.UNKNOWN)
+    }, s.IE4.UNKNOWN)
   }
   getHostname(e) {
     return d(e, e => {
@@ -73,15 +73,15 @@ class _ extends(r = a.ZP.Store) {
     }, null)
   }
 }
-o = "OverlayRTCConnectionStore", (i = "displayName") in _ ? Object.defineProperty(_, i, {
-  value: o,
+l = "OverlayRTCConnectionStore", (r = "displayName") in h ? Object.defineProperty(h, r, {
+  value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : _[i] = o;
-let h = new _(l.Z, {
+}) : h[r] = l;
+let f = new h(a.Z, {
   OVERLAY_INITIALIZE: function(e) {
-    s = e.rtcConnectionStates
+    c = e.rtcConnectionStates
   },
   RTC_CONNECTION_STATE: function(e) {
     if (null != e.streamKey) return !1;

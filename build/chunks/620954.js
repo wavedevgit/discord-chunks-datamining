@@ -7,18 +7,18 @@ var i = n(13245),
   r = n(556296),
   o = n(237997),
   l = n(13140),
-  s = n(145597),
-  a = n(987650),
+  a = n(145597),
+  s = n(987650),
   u = n(981631);
 
 function c(e, t) {
   return {
     trackView() {
-      i.Z.track(u.rMx.NOTIFICATION_VIEWED, t), i.Z.notificationEvent(e, a.bv.Viewed)
+      i.Z.track(u.rMx.NOTIFICATION_VIEWED, t), i.Z.notificationEvent(e, s.bv.Viewed)
     },
     trackClick(n) {
       var r, l;
-      let c = o.default.isLocked((0, s.getPID)()) ? u.Sbl.LOCKED_OVERLAY : u.Sbl.UNLOCKED_OVERLAY;
+      let c = o.default.isLocked((0, a.getPID)()) ? u.Sbl.LOCKED_OVERLAY : u.Sbl.UNLOCKED_OVERLAY;
       i.Z.track(u.rMx.NOTIFICATION_CLICKED, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -48,7 +48,7 @@ function c(e, t) {
         return n
       })(Object(l)).forEach(function(e) {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
-      }), r)), i.Z.notificationEvent(e, a.bv.Clicked)
+      }), r)), i.Z.notificationEvent(e, s.bv.Clicked)
     }
   }
 }

@@ -420,7 +420,7 @@ let em = i.memo(function(e) {
         [es.experimentButtonSection]: K
       }),
       children: (0, r.jsxs)("div", {
-        className: o()(es.avControls),
+        className: es.avControls,
         children: [(0, r.jsx)(s.yRy, {
           renderPopout: e => {
             let {

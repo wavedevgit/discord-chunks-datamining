@@ -1,6 +1,6 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  Z: () => N
+  Z: () => P
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -17,11 +17,11 @@ var r = n(200651),
   g = n(430824),
   m = n(624138),
   b = n(674552),
-  y = n(981631),
-  v = n(388032),
-  O = n(457528);
-let j = (0, m.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
-  _ = (0, m.Mg)(u.Z.FOLDER_ITEM_GUILD_ICON_SIZE),
+  v = n(981631),
+  y = n(388032),
+  _ = n(457528);
+let O = (0, m.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
+  j = (0, m.Mg)(u.Z.FOLDER_ITEM_GUILD_ICON_SIZE),
   C = ["13px 4px 4px 4px", "4px 13px 4px 4px", "4px 4px 4px 13px", "4px 4px 13px 4px"];
 
 function x(e) {
@@ -31,7 +31,7 @@ function x(e) {
     index: i
   } = e, l = (0, c.e7)([g.Z], () => g.Z.getGuild(t), [t]), o = (0, h.Q3)("GuildIcon"), a = (0, d.dQu)(d.TVs.modules.guildbar.AVATAR_SIZE);
   return null == l ? (0, r.jsx)("div", {
-    className: O.guildIconUnavailable,
+    className: _.guildIconUnavailable,
     children: "!"
   }) : (0, r.jsx)(f.Z, {
     guild: l,
@@ -39,7 +39,7 @@ function x(e) {
     size: o ? f.Z.Sizes.MINI : f.Z.Sizes.SMOL,
     iconSize: o ? a : void 0,
     lossless: o,
-    className: O.guildIcon,
+    className: _.guildIcon,
     tabIndex: -1,
     style: o ? {
       borderRadius: C[i]
@@ -47,7 +47,7 @@ function x(e) {
   })
 }
 
-function P(e) {
+function S(e) {
   let t, n, {
       folderNode: l,
       hovered: o,
@@ -58,28 +58,28 @@ function P(e) {
       color: p,
       children: f
     } = l,
-    g = null != p ? p : y.Wyy,
-    m = g === y.Wyy,
+    g = null != p ? p : v.Wyy,
+    m = g === v.Wyy,
     b = f.map(e => e.id),
-    [v, C] = i.useState(!1),
-    [P, N] = i.useState(c),
-    S = u ? c ? 22 : -11 : c ? 0 : -_,
-    I = (0, d.q_F)({
-      transform: "translate3d(0, ".concat(S, "px, 0)"),
+    [y, C] = i.useState(!1),
+    [S, P] = i.useState(c),
+    I = u ? c ? 22 : -11 : c ? 0 : -j,
+    N = (0, d.q_F)({
+      transform: "translate3d(0, ".concat(I, "px, 0)"),
       config: {
-        duration: j
+        duration: O
       },
       onStart() {
-        C(!0), N(c)
+        C(!0), P(c)
       },
       onRest() {
-        C(!1), N(c)
+        C(!1), P(c)
       }
     }, "animate-always"),
-    Z = v ? I : void 0;
-  (v || P) && (t = (0, r.jsx)(a.animated.div, {
+    Z = y ? N : void 0;
+  (y || S) && (t = (0, r.jsx)(a.animated.div, {
     style: Z,
-    className: O.expandedFolderIconWrapper,
+    className: _.expandedFolderIconWrapper,
     children: (0, r.jsx)(d.ROc, {
       size: u ? "sm" : "md",
       color: "currentColor",
@@ -87,27 +87,27 @@ function P(e) {
         color: (0, s.Rf)(g)
       }
     })
-  })), (v || !P) && (n = (0, r.jsx)(a.animated.div, {
+  })), (y || !S) && (n = (0, r.jsx)(a.animated.div, {
     style: Z,
-    className: O.closedFolderIconWrapper,
+    className: _.closedFolderIconWrapper,
     children: b.slice(0, 4).map((e, t) => (0, r.jsx)(x, {
       index: t,
       guildId: e,
       animate: o
     }, e))
   }));
-  let E = {
+  let w = {
     backgroundColor: u && m ? d.TVs.colors.BG_MOD_SUBTLE.css : (0, s.br)(g, .4)
   };
   return (0, r.jsxs)("div", {
     "aria-hidden": !0,
-    style: c ? void 0 : E,
-    className: O.folderIconWrapper,
+    style: c ? void 0 : w,
+    className: _.folderIconWrapper,
     children: [t, n]
   })
 }
 
-function N(e) {
+function P(e) {
   var t, n;
   let {
     folderNode: l,
@@ -118,15 +118,15 @@ function N(e) {
     mentionCount: f = 0,
     isMentionLowImportance: g,
     tooltipName: m,
-    folderGroupId: y,
-    folderIconContentClassName: j,
-    folderIconContent: _,
+    folderGroupId: v,
+    folderIconContentClassName: O,
+    folderIconContent: j,
     onClick: C,
     onContextMenu: x,
-    onHoverChange: N,
-    onKeyDown: S,
+    onHoverChange: P,
+    onKeyDown: I,
     treeItemProps: {
-      onFocus: I
+      onFocus: N
     }
   } = e, Z = function(e, t) {
     if (null == e) return {};
@@ -142,16 +142,16 @@ function N(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e.treeItemProps, ["onFocus"]), [E, w] = i.useState(!1), T = i.useCallback(() => {
-    c || w(!0), null == N || N(!0)
-  }, [c, N]), A = i.useCallback(() => {
-    c || w(!1), null == N || N(!1)
-  }, [c, N]), D = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), L = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, M = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
+  }(e.treeItemProps, ["onFocus"]), [w, E] = i.useState(!1), T = i.useCallback(() => {
+    c || E(!0), null == P || P(!0)
+  }, [c, P]), A = i.useCallback(() => {
+    c || E(!1), null == P || P(!1)
+  }, [c, P]), D = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), L = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, k = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
   return (0, r.jsx)(d.aRk, {
     isFolder: !0,
     style: D ? {
-      width: M,
-      height: M
+      width: k,
+      height: k
     } : void 0,
     selected: !!D || !a,
     upperBadge: R,
@@ -177,32 +177,32 @@ function N(e) {
       }
       return e
     }({
-      className: o()(O.folder, {
-        [O.hover]: E
+      className: o()(_.folder, {
+        [_.hover]: w
       }),
       onClick: C,
       onContextMenu: x,
       onMouseEnter: T,
       onMouseLeave: A,
-      onKeyDown: S,
-      onFocus: I,
-      "aria-label": v.NW.formatToPlainString(v.t["90/DwM"], {
+      onKeyDown: I,
+      onFocus: N,
+      "aria-label": y.NW.formatToPlainString(y.t["90/DwM"], {
         folderName: m,
         mentions: f
       }),
       "aria-expanded": s,
-      "aria-owns": y,
+      "aria-owns": v,
       focusProps: {
         enabled: !1
       }
     }, Z), n = n = {
       role: "treeitem",
-      children: null != _ ? (0, r.jsx)("div", {
-        className: o()(O.expandedFolderIconWrapper, j),
-        children: _
-      }) : (0, r.jsx)(P, {
+      children: null != j ? (0, r.jsx)("div", {
+        className: o()(_.expandedFolderIconWrapper, O),
+        children: j
+      }) : (0, r.jsx)(S, {
         folderNode: l,
-        hovered: E,
+        hovered: w,
         expanded: s
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

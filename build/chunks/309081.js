@@ -261,7 +261,7 @@ function R(e) {
   })();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: l()(N.characterCount),
+      className: N.characterCount,
       "aria-hidden": "true",
       children: [null !== (t = null == n ? void 0 : n.length) && void 0 !== t ? t : 0, " / ", w.WA]
     }), (0, r.jsxs)(c.nn4, {

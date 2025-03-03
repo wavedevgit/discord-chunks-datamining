@@ -195,7 +195,7 @@ function L(e) {
   return (0, r.jsx)(d.W, {
     component: "div",
     children: (0, r.jsx)(m.oXn, {
-      className: a()(D.noticeRegion),
+      className: D.noticeRegion,
       children: (0, r.jsx)(l.animated.div, {
         className: D.container,
         style: {
@@ -207,7 +207,7 @@ function L(e) {
           children: [U ? (0, r.jsxs)("div", {
             className: D.educationUpsellRoot,
             children: [(0, r.jsx)("img", {
-              className: a()(D.wumpus),
+              className: D.wumpus,
               src: n(33631),
               alt: "wumpus"
             }), (0, r.jsxs)("div", {

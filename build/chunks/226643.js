@@ -1,5 +1,4 @@
 /** Chunk was on 13368 **/
-"use strict";
 e.exports = {
   errorNotificationContainer: "errorNotificationContainer_e13eda",
   errorNotificationWrapper: "errorNotificationWrapper_e13eda",

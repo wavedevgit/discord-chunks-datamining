@@ -103,7 +103,7 @@ function S(e) {
     }, i)
   }, [n, F, w, U]);
   return P && (null == F ? void 0 : null === (t = F[0]) || void 0 === t ? void 0 : t.length) === 0 ? (0, r.jsxs)("div", {
-    className: o()(j.iconMessage),
+    className: j.iconMessage,
     children: [(0, r.jsx)(m._, {
       width: 40,
       height: 40,
@@ -115,7 +115,7 @@ function S(e) {
       children: E.NW.string(E.t.ZzukHh)
     })]
   }) : L ? (0, r.jsxs)("div", {
-    className: o()(j.iconMessage),
+    className: j.iconMessage,
     children: [(0, r.jsx)(I, {}), (0, r.jsx)(f.X6q, {
       variant: "heading-md/normal",
       color: "header-muted",
@@ -128,7 +128,7 @@ function S(e) {
       })
     })]
   }) : R || null == D ? (0, r.jsx)("div", {
-    className: o()(j.loading),
+    className: j.loading,
     children: (0, r.jsx)(f.$jN, {
       type: f.$jN.Type.CHASING_DOTS,
       animated: !0

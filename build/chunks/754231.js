@@ -1,6 +1,6 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  Z: () => N
+  Z: () => P
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -17,11 +17,11 @@ var r = n(200651),
   g = n(81063),
   m = n(768581),
   b = n(823379),
-  y = n(51144),
-  v = n(338720);
-let O = d.u.SIZE_24;
+  v = n(51144),
+  y = n(338720);
+let _ = d.u.SIZE_24;
 
-function j(e) {
+function O(e) {
   var t, n;
   let {
     activity: l,
@@ -41,24 +41,24 @@ function j(e) {
       children: () => (0, r.jsx)("img", {
         alt: n,
         src: t,
-        className: v.applicationLargeImage
+        className: y.applicationLargeImage
       })
     })
   }(a) : null;
   let h = null !== (t = d.large_image) && void 0 !== t ? t : d.small_image,
     f = (0, c.Z)(l),
-    b = f ? v.spotifyLargeImage : v.applicationLargeImage,
-    y = null != h ? (0, r.jsx)("img", {
+    b = f ? y.spotifyLargeImage : y.applicationLargeImage,
+    v = null != h ? (0, r.jsx)("img", {
       alt: null !== (n = d.large_text) && void 0 !== n ? n : "",
       src: (0, g.getAssetImage)(p, h, [128, 128]),
       className: b
     }) : null;
-  return f && null != u ? (y = (0, r.jsx)(s.P3F, {
-    className: v.clickable,
+  return f && null != u ? (v = (0, r.jsx)(s.P3F, {
+    className: y.clickable,
     onClick: () => {
       u(l, o.id)
     },
-    children: y
+    children: v
   }), (0, r.jsx)(s.ua7, {
     text: null != d.large_text ? d.large_text : null,
     position: "top",
@@ -80,12 +80,12 @@ function j(e) {
         }
         return i
       }(e, ["onClick"]);
-      return null != y ? i.cloneElement(y, n) : null
+      return null != v ? i.cloneElement(v, n) : null
     }
-  })) : y
+  })) : v
 }
 
-function _(e) {
+function j(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -95,7 +95,7 @@ function _(e) {
   else {
     if (!(null != t && (0, c.Z)(t)) || null == t.sync_id || null == l || null == i) return null;
     o = l, a = (0, r.jsx)(s.P3F, {
-      className: v.headerLink,
+      className: y.headerLink,
       onClick: () => {
         i(t)
       },
@@ -104,7 +104,7 @@ function _(e) {
   }
   return (0, r.jsx)(p.Z, {
     title: o,
-    className: v.header,
+    className: y.header,
     children: a
   })
 }
@@ -117,13 +117,13 @@ function C(e) {
   } = e, l = null == t ? void 0 : t.details, a = null == t ? void 0 : t.state, s = l;
   return (null != t && (0, c.Z)(t) && null != a && (s = [(0, r.jsx)(h.Z, {
     artists: a,
-    linkClassName: v.bodyLink,
+    linkClassName: y.bodyLink,
     canOpen: null != t.sync_id,
     onOpenSpotifyArtist: e => {
       null == i || i(t, n.id, e)
     }
   }, a)]), null == s || "" === s) ? null : (0, r.jsx)("div", {
-    className: o()(v.ellipsisRow, v.colorHeaderSecondary, v.bodyTextSize),
+    className: o()(y.ellipsisRow, y.colorHeaderSecondary, y.bodyTextSize),
     children: s
   })
 }
@@ -133,12 +133,12 @@ function x(e) {
     activity: t
   } = e, n = null == t ? void 0 : t.state;
   return null == n || "" === n || (0, c.Z)(t) ? null : (0, r.jsx)("div", {
-    className: o()(v.ellipsisRow, v.colorHeaderSecondary, v.bodyTextSize, v.__invalid_activity),
+    className: o()(y.ellipsisRow, y.colorHeaderSecondary, y.bodyTextSize, y.__invalid_activity),
     children: n
   })
 }
 
-function P(e) {
+function S(e) {
   let {
     activity: t
   } = e;
@@ -154,13 +154,13 @@ function P(e) {
   return (0, r.jsx)(u.Z, {
     start: i,
     end: l,
-    className: v.timeBar,
+    className: y.timeBar,
     themed: !0,
     singleLine: !0
   })
 }
 
-function N(e) {
+function P(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -172,27 +172,27 @@ function N(e) {
     onOpenSpotifyAlbum: g
   } = e, m = [];
   null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (m = u.map(e => e.user.id));
-  let N = (0, a.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
-    S = null != n || (0, c.Z)(t),
-    I = i.useMemo(() => {
+  let P = (0, a.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
+    I = null != n || (0, c.Z)(t),
+    N = i.useMemo(() => {
       let e = new Map;
-      return S && null != u && u.forEach(t => {
+      return I && null != u && u.forEach(t => {
         let n = t.member;
         null != n && e.set(t.user.id, n)
       }), e
-    }, [u, S]);
-  return S ? (0, r.jsxs)("div", {
-    className: v.flexColumn,
+    }, [u, I]);
+  return I ? (0, r.jsxs)("div", {
+    className: y.flexColumn,
     children: [(0, r.jsxs)("div", {
-      className: v.flexRow,
-      children: [(0, r.jsx)(j, {
+      className: y.flexRow,
+      children: [(0, r.jsx)(O, {
         activity: t,
         user: l,
         embeddedApp: n,
         onOpenSpotifyAlbum: g
       }), (0, r.jsxs)("div", {
-        className: v.detailsAndAvatarsContainer,
-        children: [(0, r.jsx)(_, {
+        className: y.detailsAndAvatarsContainer,
+        children: [(0, r.jsx)(j, {
           activity: t,
           embeddedApp: n,
           onOpenSpotifyTrack: p
@@ -203,29 +203,29 @@ function N(e) {
         }), (0, r.jsx)(x, {
           activity: t
         }), m.length > 0 && (0, r.jsx)(d.Z, {
-          className: v.usersSummary,
+          className: y.usersSummary,
           guildId: o.guild_id,
-          users: N,
-          size: O,
+          users: P,
+          size: _,
           max: 7,
           renderUser: e => {
             var t;
             if (null == e) return null;
-            let n = I.get(e.id),
-              i = null !== (t = null == n ? void 0 : n.nick) && void 0 !== t ? t : y.ZP.getName(e);
+            let n = N.get(e.id),
+              i = null !== (t = null == n ? void 0 : n.nick) && void 0 !== t ? t : v.ZP.getName(e);
             return (0, r.jsx)(s.DY3, {
               text: i,
               position: "bottom",
               children: (0, r.jsx)("img", {
-                src: e.getAvatarURL(o.guild_id, O),
+                src: e.getAvatarURL(o.guild_id, _),
                 alt: i,
-                className: v.avatar
+                className: y.avatar
               }, e.id)
             }, e.id)
           }
         })]
       })]
-    }), (0, r.jsx)(P, {
+    }), (0, r.jsx)(S, {
       activity: t
     })]
   }) : null

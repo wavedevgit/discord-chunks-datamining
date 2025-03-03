@@ -1,6 +1,6 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  U: () => O
+  U: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function y(e, t) {
   }), e
 }
 
-function v(e) {
+function y(e) {
   let {
     target: t
   } = e, a = (0, l.Ie)("fakedoor"), h = i.useCallback(() => {
@@ -57,25 +57,25 @@ function v(e) {
       let {
         default: e
       } = await Promise.all([n.e("22862"), n.e("77246")]).then(n.bind(n, 646202));
-      return n => (0, r.jsx)(e, y(b({}, n), {
+      return n => (0, r.jsx)(e, v(b({}, n), {
         target: t
       }))
     })
-  }, [t]), v = i.useCallback(e => {
+  }, [t]), y = i.useCallback(e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
       } = await n.e("39612").then(n.bind(n, 761624));
-      return n => (0, r.jsx)(e, y(b({}, n), {
+      return n => (0, r.jsx)(e, v(b({}, n), {
         signupTarget: t
       }))
     })
-  }, [t]), O = "url(".concat(t.backgroundAssetUrl, ") black top / cover no-repeat"), j = (0, r.jsxs)("div", {
+  }, [t]), _ = "url(".concat(t.backgroundAssetUrl, ") black top / cover no-repeat"), O = (0, r.jsxs)("div", {
     className: m.tooltipContainer,
     children: [(0, r.jsx)("div", {
       className: m.tooltipBackground,
       style: {
-        background: O
+        background: _
       }
     }), (0, r.jsx)(o.X6q, {
       variant: "heading-sm/medium",
@@ -84,24 +84,24 @@ function v(e) {
       variant: "text-xs/normal",
       children: g.NW.string(g.t.IIbwAg)
     })]
-  }), _ = (0, c.Fg)();
+  }), j = (0, c.Fg)();
   return (0, r.jsxs)(d.H, {
     children: [(0, r.jsx)(o.ze6, {
       theme: f.BRd.DARK,
       children: (0, r.jsx)(p.Z, {
-        text: j,
+        text: O,
         tooltipClass: m.tooltip,
         tooltipContentClass: m.tooltipContent,
         children: (0, r.jsx)(o.ze6, {
-          theme: _,
+          theme: j,
           children: (0, r.jsx)(o.aRk, {
             lowerBadge: (0, r.jsx)(o.mAB, {
               count: 1,
               color: u.Z.BG_BRAND
             }),
-            children: (0, r.jsx)(o.LYs, y(b({}, a), {
+            children: (0, r.jsx)(o.LYs, v(b({}, a), {
               onClick: h,
-              onContextMenu: v,
+              onContextMenu: y,
               children: (0, r.jsx)(o.Dkj, {
                 color: u.Z.TEXT_NORMAL
               })
@@ -111,7 +111,7 @@ function v(e) {
       })
     }), (0, r.jsx)("div", {
       style: {
-        background: O,
+        background: _,
         width: 0,
         height: 0
       }
@@ -119,9 +119,9 @@ function v(e) {
   })
 }
 
-function O() {
+function _() {
   let e = (0, a.e7)([h.Z], () => h.Z.getActiveUserSignUp());
-  return null == e ? null : (0, r.jsx)(v, {
+  return null == e ? null : (0, r.jsx)(y, {
     target: e
   })
 }

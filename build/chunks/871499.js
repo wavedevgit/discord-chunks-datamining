@@ -261,7 +261,7 @@ function D(e) {
   }) : (0, r.jsxs)("div", {
     className: a()(s, v.contextMenuContainer),
     children: [(0, r.jsx)(u.ZP, {
-      className: a()(v.buttonMask),
+      className: v.buttonMask,
       mask: null == O ? null : u.QS.CHANNEL_CALL_CONTROL_BUTTON,
       width: 56,
       height: 56,

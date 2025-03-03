@@ -1,4 +1,4 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
   Z: () => b
 });
@@ -20,20 +20,20 @@ let b = i.forwardRef(function(e, t) {
   let {
     selected: n,
     onClick: b,
-    questId: y,
-    className: v
-  } = e, O = i.useCallback(() => {
+    questId: v,
+    className: y
+  } = e, _ = i.useCallback(() => {
     (0, c.k5)({
       source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
     });
-    let e = void 0 !== y ? h.GlobalDiscoveryTab.QUESTS : u.Z.getField("selectedTab");
+    let e = void 0 !== v ? h.GlobalDiscoveryTab.QUESTS : u.Z.getField("selectedTab");
     switch (e) {
       case h.GlobalDiscoveryTab.QUESTS:
         return (0, d.transitionToGlobalDiscovery)({
           tab: h.GlobalDiscoveryTab.QUESTS,
           location: g.dr.DISCOVERY_COMPASS,
           questContent: l.j.DISCOVERY_COMPASS,
-          questId: y
+          questId: v
         });
       case h.GlobalDiscoveryTab.SERVERS:
         return (0, d.transitionToGlobalDiscovery)({
@@ -52,13 +52,13 @@ let b = i.forwardRef(function(e, t) {
           tab: e
         })
     }
-  }, [y]);
+  }, [v]);
   return (0, r.jsx)(p.Z, {
     id: "guild-discover-button",
     ref: t,
-    className: v,
+    className: y,
     onClick: () => {
-      O(), void 0 !== b && b()
+      _(), void 0 !== b && b()
     },
     selected: n,
     tooltip: m.NW.string(m.t["4nEZLi"]),

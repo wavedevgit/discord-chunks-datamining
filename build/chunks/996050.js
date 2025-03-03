@@ -6,8 +6,8 @@ var i = n(224706),
   r = n(13245),
   o = n(150097),
   l = n(620954),
-  s = n(987650),
-  a = n(388032);
+  a = n(987650),
+  s = n(388032);
 
 function u(e, t, n, u, c) {
   if (null == t.activity || null == u.id) return null;
@@ -21,8 +21,8 @@ function u(e, t, n, u, c) {
   } = (0, o.Xi)(e, t, n), {
     trackView: g,
     trackClick: O
-  } = (0, l.R)(s.n0.ActivityInvite, {
-    notif_type: s.n0.ActivityInvite,
+  } = (0, l.R)(a.n0.ActivityInvite, {
+    notif_type: a.n0.ActivityInvite,
     notif_user_id: n.id,
     message_id: t.id,
     message_type: t.type,
@@ -39,13 +39,13 @@ function u(e, t, n, u, c) {
     onNotificationShow: () => {
       g()
     },
-    confirmText: a.NW.string(a.t.VJlc0d),
+    confirmText: s.NW.string(s.t.VJlc0d),
     onConfirmClick: (o, l) => {
-      var s;
+      var a;
       i.Z.join({
         userId: n.id,
         sessionId: p,
-        applicationId: null !== (s = u.altId) && void 0 !== s ? s : u.id,
+        applicationId: null !== (a = u.altId) && void 0 !== a ? a : u.id,
         channelId: e.id,
         messageId: t.id,
         activity: c

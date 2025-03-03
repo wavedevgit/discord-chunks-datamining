@@ -79,7 +79,7 @@ let z = l.memo(function(e) {
       member: t
     } = e, n = l.useMemo(() => (0, g.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), o = l.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
     return (0, r.jsxs)("div", {
-      className: a()(W.flagContainer),
+      className: W.flagContainer,
       children: [t.hasUnusualDmActivity && (0, r.jsx)(C.ua7, {
         text: B.NW.string(B.t.QrfVTk),
         children: e => {
@@ -163,13 +163,13 @@ let z = l.memo(function(e) {
       highestRole: n
     } = e, o = (0, u.e7)([O.Z], () => O.Z.getGuild(t.guildId), [t.guildId]), i = t.roles.length - 1, s = l.useMemo(() => new Intl.NumberFormat(B.NW.currentLocale).format(i), [i]), c = (0, T.vN)(t), d = (0, T.vN)(t, !0), m = (0, u.e7)([N.Z], () => N.Z.can(A.Plq.MANAGE_ROLES, o), [o]);
     return null == o ? null : (0, r.jsxs)("div", {
-      className: a()(W.roleContainer),
+      className: W.roleContainer,
       children: [null != n && (0, r.jsx)(k.Z, {
         className: a()(W.roleTooltipItem, W.highestRole),
         role: n,
         guildId: t.guildId
       }), i > 0 && (0, r.jsx)(C.P3F, {
-        className: a()(W.otherRoles),
+        className: W.otherRoles,
         onClick: e => d(e),
         children: (0, r.jsx)(C.ua7, {
           text: B.NW.string(B.t.DY6n4u),
@@ -195,7 +195,7 @@ let z = l.memo(function(e) {
             children: (0, r.jsx)(C.qJs, {
               size: "custom",
               color: "currentColor",
-              className: a()(W.addRoleIcon),
+              className: W.addRoleIcon,
               width: 16,
               height: 16
             })
@@ -210,29 +210,29 @@ let z = l.memo(function(e) {
       member: n,
       user: o
     } = e, {
-      analyticsLocations: i
-    } = (0, p.ZP)(), s = l.useCallback(e => {
-      null != n && (e.stopPropagation(), e.preventDefault(), (0, T.RE)(n, i))
-    }, [n, i]);
+      analyticsLocations: a
+    } = (0, p.ZP)(), i = l.useCallback(e => {
+      null != n && (e.stopPropagation(), e.preventDefault(), (0, T.RE)(n, a))
+    }, [n, a]);
     return null == o || null == n ? null : (0, r.jsxs)("div", {
-      className: a()(W.memberNameContainer),
+      className: W.memberNameContainer,
       children: [(0, r.jsx)(C.P3F, {
-        className: a()(W.memberAvatar),
-        onClick: s,
+        className: W.memberAvatar,
+        onClick: i,
         children: (0, r.jsx)(m.Z, {
           user: o
         })
       }), (0, r.jsx)("div", {
-        className: a()(W.memberName),
+        className: W.memberName,
         children: (0, r.jsx)(C.Text, {
           variant: "text-sm/medium",
           children: (0, r.jsxs)(C.P3F, {
-            onClick: s,
+            onClick: i,
             className: W.nameContainer,
             children: [(0, r.jsx)(C.PUh, {
               name: S.ZP.getName(n.guildId, null, o),
               color: null !== (t = n.colorString) && void 0 !== t ? t : void 0,
-              className: a()(W.memberNameText)
+              className: W.memberNameText
             }), (0, r.jsx)(f.ZP, {
               primaryGuild: null == o ? void 0 : o.primaryGuild,
               userId: null == o ? void 0 : o.id,
@@ -242,13 +242,13 @@ let z = l.memo(function(e) {
           })
         })
       }), (0, r.jsx)("div", {
-        className: a()(W.memberGlobalName),
+        className: W.memberGlobalName,
         children: (0, r.jsx)(C.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
           tag: "span",
           children: (0, r.jsx)(C.P3F, {
-            onClick: s,
+            onClick: i,
             tag: "span",
             children: Z.ZP.getUserTag(o)
           })
@@ -269,29 +269,29 @@ function K(e) {
     member: t,
     showLongDate: n,
     isSortedBy: o
-  } = e, [i, s] = l.useState(null);
+  } = e, [a, i] = l.useState(null);
   l.useEffect(() => {
-    s(Y(t.joinedAtTimestamp))
+    i(Y(t.joinedAtTimestamp))
   }, [t.joinedAtTimestamp]), (0, b.Z)(() => {
-    s(Y(t.joinedAtTimestamp))
+    i(Y(t.joinedAtTimestamp))
   }, 1e4);
-  let c = o ? "text-brand" : "text-normal";
-  return (null == i ? void 0 : i.short) == null ? null : n ? (0, r.jsx)("div", {
-    className: a()(W.__invalid_joinedAtContainer),
+  let s = o ? "text-brand" : "text-normal";
+  return (null == a ? void 0 : a.short) == null ? null : n ? (0, r.jsx)("div", {
+    className: W.__invalid_joinedAtContainer,
     children: (0, r.jsx)(C.Text, {
       variant: "text-sm/medium",
-      color: c,
-      children: i.long
+      color: s,
+      children: a.long
     })
   }) : (0, r.jsx)("div", {
-    className: a()(W.__invalid_joinedAtContainer),
+    className: W.__invalid_joinedAtContainer,
     children: (0, r.jsx)(C.ua7, {
       align: "left",
-      text: i.long,
+      text: a.long,
       children: e => (0, r.jsx)(C.Text, F(U({}, e), {
         variant: "text-sm/medium",
-        color: c,
-        children: i.short
+        color: s,
+        children: a.short
       }))
     })
   })
@@ -416,7 +416,7 @@ let X = l.memo(function(e) {
           [W.compact]: m
         }),
         children: (0, r.jsxs)("div", {
-          className: a()(W.actionCell),
+          className: W.actionCell,
           children: [(0, r.jsx)(C.ua7, {
             text: v ? B.NW.string(B.t.nHfkf3) : B.NW.string(B.t.uTre29),
             children: e => {
@@ -428,7 +428,7 @@ let X = l.memo(function(e) {
                 onMouseEnter: t,
                 onMouseLeave: n,
                 onClick: d,
-                className: a()(W.button),
+                className: W.button,
                 children: v ? (0, r.jsx)(w.Z, {
                   width: Q,
                   height: Q
@@ -451,7 +451,7 @@ let X = l.memo(function(e) {
                 onMouseEnter: t,
                 onMouseLeave: n,
                 onClick: s,
-                className: a()(W.button),
+                className: W.button,
                 children: (0, r.jsx)(C.Huf, {
                   size: "custom",
                   color: "currentColor",

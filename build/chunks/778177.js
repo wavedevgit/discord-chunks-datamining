@@ -272,7 +272,7 @@ let B = p()("2015-05-15").local(),
             }, e.type + t)
           });
         return (0, r.jsxs)(h.P3F, F(W({
-          className: o()(D.option),
+          className: D.option,
           onClick: t,
           onFocus: n
         }, u), {

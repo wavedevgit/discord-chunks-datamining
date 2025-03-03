@@ -131,7 +131,7 @@ function A(e) {
     }), (0, r.jsx)("div", {
       className: S.channelAppLauncherButtonPopoutIconShimmerContainer,
       children: (0, r.jsx)("img", {
-        className: o()(S.channelAppLauncherButtonPopoutIconShimmer),
+        className: S.channelAppLauncherButtonPopoutIconShimmer,
         alt: P.NW.string(P.t.X4IxWF),
         src: Z,
         "aria-hidden": !0,

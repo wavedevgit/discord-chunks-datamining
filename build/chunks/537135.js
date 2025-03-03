@@ -1,12 +1,12 @@
-/** Chunk was on 79477 **/
+/** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => s
+  Z: () => i
 });
 var r = n(200651);
 n(192379);
 var l = n(976620);
 
-function s(e) {
+function i(e) {
   let {
     children: t
   } = e;

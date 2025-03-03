@@ -55,7 +55,7 @@ let d = 660,
     } = e;
     return (0, r.jsx)(u, c(s({}, e), {
       media: () => (0, r.jsx)("div", {
-        className: a()(l.loadingDescription),
+        className: l.loadingDescription,
         children: (0, r.jsx)("div", {
           className: a()(l.loadingBackgroundWrapper, {
             [l.loadingBackgroundWrapperHorizontal]: t

@@ -122,7 +122,7 @@ class A extends(r = o.PureComponent) {
           onClick: this.handleForgotPassword,
           look: c.zxk.Looks.LINK,
           color: c.zxk.Colors.LINK,
-          className: a()(R.marginTop4),
+          className: R.marginTop4,
           children: k.NW.string(k.t.wWIufn)
         })]
       })]

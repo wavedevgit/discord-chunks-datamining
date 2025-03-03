@@ -229,7 +229,7 @@ let M = l.memo(function(e) {
               onMouseEnter: t,
               onMouseLeave: n,
               onClick: C,
-              className: a()(P.button),
+              className: P.button,
               children: (0, r.jsx)(d.Huf, {
                 size: "custom",
                 color: "currentColor",
@@ -289,41 +289,41 @@ function k(e) {
   let {
     guildId: t,
     currentTab: n
-  } = e, i = l.useRef(null), s = (0, c.e7)([T.Z], () => T.Z.getGuild(t)), o = (0, p.C)({
+  } = e, i = l.useRef(null), a = (0, c.e7)([T.Z], () => T.Z.getGuild(t)), s = (0, p.C)({
     guildId: t
-  }), u = (0, c.e7)([j.Z], () => j.Z.isFetching()), {
-    guildJoinRequests: m
+  }), o = (0, c.e7)([j.Z], () => j.Z.isFetching()), {
+    guildJoinRequests: u
   } = (0, C.j)({
     guildId: t,
     applicationStatus: n,
-    sortOrder: o
+    sortOrder: s
   }), {
-    fetchNextPage: x
+    fetchNextPage: m
   } = (0, f.m)({
     guildId: t,
-    guildJoinRequests: m
-  }), N = l.useCallback(async () => {
-    let e = o === b.Nw.TIMESTAMP_ASC ? b.Nw.TIMESTAMP_DESC : b.Nw.TIMESTAMP_ASC;
-    h.Z.setSelectedSortOrder(t, e), await x(e, n)
-  }, [o, t, x, n]);
-  return null == s ? null : (0, r.jsx)("div", {
+    guildJoinRequests: u
+  }), x = l.useCallback(async () => {
+    let e = s === b.Nw.TIMESTAMP_ASC ? b.Nw.TIMESTAMP_DESC : b.Nw.TIMESTAMP_ASC;
+    h.Z.setSelectedSortOrder(t, e), await m(e, n)
+  }, [s, t, m, n]);
+  return null == a ? null : (0, r.jsx)("div", {
     className: y.mainTableContainer,
     children: (0, r.jsx)(d.Den, {
       className: y.horizatonalScroller,
       ref: i,
       orientation: "horizontal",
       children: (0, r.jsxs)("table", {
-        className: a()(S.table),
+        className: S.table,
         children: [(0, r.jsx)(w, {
-          sortOrder: o,
-          onSortChange: N
+          sortOrder: s,
+          onSortChange: x
         }), (0, r.jsx)("tbody", {
-          children: u ? [, , , , , ].fill(0).map((e, t) => (0, r.jsx)(Z, {}, "placeholder-".concat(t))) : 0 === m.length ? (0, r.jsx)("td", {
+          children: o ? [, , , , , ].fill(0).map((e, t) => (0, r.jsx)(Z, {}, "placeholder-".concat(t))) : 0 === u.length ? (0, r.jsx)("td", {
             colSpan: 3,
             children: (0, r.jsx)(O, {
               status: n
             })
-          }) : m.map(e => (0, r.jsx)(A, {
+          }) : u.map(e => (0, r.jsx)(A, {
             joinRequest: e,
             onSelect: () => h.Z.setSelectedGuildJoinRequest(t, e)
           }, e.joinRequestId))

@@ -283,7 +283,7 @@ function Z() {
     }), (0, r.jsx)(c.$i$, {
       className: C.divider
     }), (0, r.jsx)("div", {
-      className: a()(C.setupContainer),
+      className: C.setupContainer,
       children: (0, r.jsx)(v.w, {
         guild: e
       })

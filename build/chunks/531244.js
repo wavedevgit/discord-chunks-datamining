@@ -1,5 +1,4 @@
-/** Chunk was on 87668 **/
-"use strict";
+/** Chunk was on 46746 **/
 e.exports = {
   spinner: "spinner_a2de16",
   tile: "tile_a2de16",

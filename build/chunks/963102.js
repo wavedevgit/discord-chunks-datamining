@@ -50,14 +50,14 @@ function _(e) {
     enabled: S
   } = (0, f.W)({
     location: "collectibles_shop_header_bar"
-  }), w = [{
+  }), E = [{
     tab: g.AW.HOME,
     displayText: v.NW.string(v.t.ijDDw8)
   }, {
     tab: g.AW.CATALOG,
     displayText: v.NW.string(v.t.xFcotb)
   }];
-  return S && w.push({
+  return S && E.push({
     tab: g.AW.ORBS,
     displayText: v.NW.string(v.t.q6uIys)
   }), (0, n.jsx)(s.f6W, {
@@ -74,7 +74,7 @@ function _(e) {
         children: v.NW.string(v.t.pWG4zc)
       }), (0, n.jsx)("div", {
         className: x.tabs,
-        children: w.map(e => {
+        children: E.map(e => {
           let {
             tab: t,
             displayText: r

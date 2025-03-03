@@ -1,5 +1,4 @@
-/** Chunk was on 87668 **/
-"use strict";
+/** Chunk was on 46746 **/
 e.exports = {
   root: "root__7f727",
   footer: "footer__7f727",

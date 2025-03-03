@@ -300,17 +300,17 @@ function K(e) {
     threadSettings: n,
     updateThreadSettings: i,
     privateThreadMode: l
-  } = e, a = (0, L.oD)(n, l), c = (0, r.jsx)("div", {
+  } = e, o = (0, L.oD)(n, l), a = (0, r.jsx)("div", {
     className: F.privateThreadFormTitle,
     children: (0, r.jsx)("span", {
       className: F.privateThreadFormTitleText,
       children: H.NW.string(H.t.F1zyvb)
     })
-  }), u = (0, r.jsx)(s.XZJ, {
-    className: o()(F.checkbox),
+  }), c = (0, r.jsx)(s.XZJ, {
+    className: F.checkbox,
     type: s.XZJ.Types.INVERTED,
     disabled: l === L.Jw.PrivateOnly,
-    value: a,
+    value: o,
     onChange: (e, t) => i({
       isPrivate: t
     }),
@@ -321,9 +321,9 @@ function K(e) {
     })
   });
   return t || l === L.Jw.Disabled ? null : (0, r.jsxs)(s.hjN, {
-    title: c,
+    title: a,
     className: F.formSection,
-    children: [u, a ? (0, r.jsx)(s.Text, {
+    children: [c, o ? (0, r.jsx)(s.Text, {
       className: F.privateThreadDescription,
       variant: "text-xs/normal",
       color: "header-secondary",

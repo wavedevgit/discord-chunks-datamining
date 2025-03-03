@@ -24,9 +24,9 @@ function f(e) {
     errorText: i
   } = e;
   return t ? (0, r.jsx)("div", {
-    className: a()(p.subtext),
+    className: p.subtext,
     children: (0, r.jsx)(l.Text, {
-      className: a()(p.errorSpan),
+      className: p.errorSpan,
       variant: "text-xs/medium",
       color: "text-danger",
       children: null != i ? i : g.NW.format(g.t.jKYAPj, {

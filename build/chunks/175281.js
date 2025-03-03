@@ -91,7 +91,7 @@ function v() {
           children: n.map((e, t) => {
             var n;
             return (null === (n = e.predicate) || void 0 === n ? void 0 : n.call(e)) === !1 ? null : (0, r.jsxs)("div", {
-              className: o()(C.keybindGroup),
+              className: C.keybindGroup,
               children: [(0, r.jsx)(p.Text, {
                 variant: "text-sm/normal",
                 children: e.description

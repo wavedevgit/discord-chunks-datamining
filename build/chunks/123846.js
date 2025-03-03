@@ -119,7 +119,7 @@ function S(e) {
     }
   }(t, s), u = (0, g.bE)(t, o);
   return (0, r.jsxs)("div", {
-    className: a()(O.labelWithIconContainer),
+    className: O.labelWithIconContainer,
     "aria-label": u,
     children: [null != c ? c : null, (0, r.jsx)(C.Text, {
       variant: 12 === s ? "text-xs/medium" : "text-sm/medium",
@@ -232,7 +232,7 @@ function D(e) {
         render: e => (0, r.jsxs)("div", {
           className: a()(O.containerWithRightCaret, O.customLabelContainer),
           children: [(0, r.jsxs)("div", {
-            className: a()(N.label),
+            className: N.label,
             children: [(0, r.jsx)(C.Text, {
               variant: "text-sm/medium",
               className: a()(O.__invalid_selectedRadio, O.labelText, {

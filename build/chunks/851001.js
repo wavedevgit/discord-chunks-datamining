@@ -46,7 +46,7 @@ let C = e => {
       }), (0, r.jsx)(h.PK, {
         subscriptionTier: null !== (n = null == y ? void 0 : null === (t = y.subscription_trial) || void 0 === t ? void 0 : t.sku_id) && void 0 !== n ? n : I,
         inOfferExperience: A,
-        containerClassName: a()(x.footerCTAContainer),
+        containerClassName: x.footerCTAContainer,
         isMarketingPageV2Enabled: !0,
         isDarkMode: O
       }), (0, r.jsx)("div", {
@@ -55,7 +55,7 @@ let C = e => {
           playsInline: !0,
           preload: "auto",
           poster: E.Z,
-          className: a()(x.footerArt),
+          className: x.footerArt,
           onEnded: () => {
             Z(!0)
           },

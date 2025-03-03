@@ -251,7 +251,7 @@ let L = e => {
       children: e.map(e_)
     }));
   if (F === S.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
-    className: a()(N.emojiListRow),
+    className: N.emojiListRow,
     ref: eu,
     children: (0, r.jsx)(g.Z, {
       channelId: H,

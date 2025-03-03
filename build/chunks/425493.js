@@ -41,7 +41,7 @@ function d(e) {
         "aria-hidden": !0
       })
     }), a.tq ? null : (0, r.jsx)("div", {
-      className: o()(c.keybind),
+      className: c.keybind,
       "aria-hidden": !0,
       children: i
     })]

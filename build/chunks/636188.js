@@ -88,7 +88,7 @@ function P(e) {
       children: [s, (0, r.jsxs)("div", {
         className: I.backgroundOptionContent,
         children: [(0, r.jsx)(t, {
-          className: a()(I.backgroundIconOptionIcon),
+          className: I.backgroundIconOptionIcon,
           color: "currentColor",
           size: "custom",
           width: 18,

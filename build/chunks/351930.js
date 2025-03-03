@@ -78,7 +78,7 @@ function _() {
       }), await _()
     };
   return (0, r.jsx)(s.zJl, {
-    className: i()(x.panel),
+    className: x.panel,
     children: (0, r.jsxs)("div", {
       className: f.panelInner,
       children: [(0, r.jsxs)("div", {

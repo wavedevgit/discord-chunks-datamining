@@ -98,7 +98,7 @@ let v = function(e) {
   if (null == R || null == Z) return null;
   let z = null !== (O = (0, c.KS)(R)) && void 0 !== O ? O : o.VL1;
   return (0, r.jsxs)("div", {
-    className: a()(x.actionItemContainer),
+    className: x.actionItemContainer,
     children: [(0, r.jsxs)("div", {
       className: a()(x.actionItem, {
         [x.dropIndicatorBefore]: null != G && I < G,

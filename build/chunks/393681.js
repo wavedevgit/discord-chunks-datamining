@@ -181,7 +181,7 @@ class X extends i.PureComponent {
           className: a()(z.isEnabled, Y.marginBottom20),
           children: [(0, r.jsx)("img", {
             alt: "",
-            className: a()(z.lockIcon),
+            className: z.lockIcon,
             src: n(511391)
           }), H.NW.string(H.t.FsmBy8)]
         })

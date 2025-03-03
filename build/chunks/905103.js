@@ -1,4 +1,5 @@
 /** Chunk was on 76977 **/
+"use strict";
 e.exports = {
   icon: "icon__99ff4",
   voiceIcon: "voiceIcon__99ff4",

@@ -125,7 +125,7 @@ function v(e) {
       className: p.hintContainer,
       children: (0, l.I)(v, e)
     }), (0, d.Y)(o) ? o : null != o && (0, r.jsx)("div", {
-      className: a()(p.iconContainer),
+      className: p.iconContainer,
       children: (0, r.jsx)(o, E(g({
         color: "currentColor"
       }, x), {

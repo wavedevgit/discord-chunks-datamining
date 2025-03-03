@@ -5,8 +5,8 @@ n.d(t, {
 var i, r = n(512722),
   o = n.n(r),
   l = n(772848),
-  s = n(442837),
-  a = n(570140),
+  a = n(442837),
+  s = n(570140),
   u = n(13245),
   c = n(435064),
   d = n(786761),
@@ -16,20 +16,20 @@ var i, r = n(512722),
   m = n(592125),
   g = n(375954),
   O = n(292959),
-  v = n(158776),
-  y = n(885110),
+  y = n(158776),
+  v = n(885110),
   E = n(246946),
   b = n(594174),
-  x = n(974180),
-  j = n(237997),
+  j = n(974180),
+  x = n(237997),
   S = n(70956),
   I = n(150097),
   C = n(129724),
   N = n(145597),
   Z = n(371651),
   w = n(610394),
-  _ = n(388627),
-  P = n(996050),
+  P = n(388627),
+  _ = n(996050),
   T = n(609626),
   D = n(421824),
   A = n(777036),
@@ -159,13 +159,13 @@ function en(e, t) {
         }
       })
     }, n),
-    s = K ? X : [...Q],
-    a = s.findIndex(e => e.priority <= n.priority);
-  if (-1 === a ? s.push(o) : s.splice(a, 0, o), s.length > 40) {
-    let e = s.pop();
+    a = K ? X : [...Q],
+    s = a.findIndex(e => e.priority <= n.priority);
+  if (-1 === s ? a.push(o) : a.splice(s, 0, o), a.length > 40) {
+    let e = a.pop();
     K || e.timer.stop()
   }
-  return K || (Q = s, o.timer.start()), i
+  return K || (Q = a, o.timer.start()), i
 }
 
 function ei(e) {
@@ -179,7 +179,7 @@ function ei(e) {
   if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !h.Z.getCurrentConfig({
       guildId: e.guildId,
       location: "OverlayV3StartRinging"
-    }).enabled || y.Z.getStatus() === M.Skl.DND || p.QZ.getSetting()) return !1;
+    }).enabled || v.Z.getStatus() === M.Skl.DND || p.QZ.getSetting()) return !1;
   let o = Q.find(e => 1 === e.type && e.channelId === t && e.messageType === M.uaV.CALL);
   null != o && $(o.id), en((0, A.Z)(r), {
     priority: 1,
@@ -188,7 +188,7 @@ function ei(e) {
     channelId: r.id
   })
 }
-class er extends(i = s.ZP.Store) {
+class er extends(i = a.ZP.Store) {
   initialize() {
     this.waitFor(m.Z, b.default)
   }
@@ -197,7 +197,7 @@ class er extends(i = s.ZP.Store) {
   }
 }
 V(er, "displayName", "OverlayNotificationsStore");
-let eo = new er(a.Z, {
+let eo = new er(s.Z, {
   OVERLAY_UPDATE_NOTIFICATION_STATUS: function(e) {
     let {
       notificationId: t,
@@ -213,7 +213,7 @@ let eo = new er(a.Z, {
     q(0);
     let i = null !== (t = w.ZP.getFocusedPID()) && void 0 !== t ? t : N.UNSET_PID;
     if (Z.default.hasChangedRenderMode(i)) return;
-    let r = (0, R.Z)((0, _.pL)(), n);
+    let r = (0, R.Z)((0, P.pL)(), n);
     null != r && en(r, {
       priority: 2,
       type: 3,
@@ -238,26 +238,26 @@ let eo = new er(a.Z, {
     var t, n, i, r;
     let {
       channelId: l,
-      message: s
-    } = e, a = m.Z.getChannel(l), u = b.default.getUser(null === (t = s.author) || void 0 === t ? void 0 : t.id);
-    if (null == a || null == u) return !1;
-    if ((null === (n = s.activity) || void 0 === n ? void 0 : n.type) === M.mFx.JOIN || (null === (i = s.activity) || void 0 === i ? void 0 : i.type) === M.mFx.JOIN_REQUEST) {
-      if (!(0, I.eF)(s, l, !0, !0)) return !1;
+      message: a
+    } = e, s = m.Z.getChannel(l), u = b.default.getUser(null === (t = a.author) || void 0 === t ? void 0 : t.id);
+    if (null == s || null == u) return !1;
+    if ((null === (n = a.activity) || void 0 === n ? void 0 : n.type) === M.mFx.JOIN || (null === (i = a.activity) || void 0 === i ? void 0 : i.type) === M.mFx.JOIN_REQUEST) {
+      if (!(0, I.eF)(a, l, !0, !0)) return !1;
       let e = function(e, t, n) {
         var i;
         let r, l;
         if (o()(null != t.activity, "received null message activity"), n.id === f.default.getId()) return !1;
-        let s = (0, _.pL)(),
-          a = null !== (i = null == s ? void 0 : s.altId) && void 0 !== i ? i : null == s ? void 0 : s.id;
-        if (null == s || null == a) return !1;
+        let a = (0, P.pL)(),
+          s = null !== (i = null == a ? void 0 : a.altId) && void 0 !== i ? i : null == a ? void 0 : a.id;
+        if (null == a || null == s) return !1;
         switch (t.activity.type) {
           case M.mFx.JOIN:
-            if (null == (r = v.Z.getApplicationActivity(n.id, a)) || null == r.party || r.party.id !== t.activity.party_id) return !1;
-            l = (0, P.Z)(e, t, n, s, r);
+            if (null == (r = y.Z.getApplicationActivity(n.id, s)) || null == r.party || r.party.id !== t.activity.party_id) return !1;
+            l = (0, _.Z)(e, t, n, a, r);
             break;
           case M.mFx.JOIN_REQUEST:
-            if (null == (r = y.Z.getApplicationActivity(a)) || null == r.party || r.party.id !== t.activity.party_id) return !1;
-            l = (0, k.Z)(e, n, s, r)
+            if (null == (r = v.Z.getApplicationActivity(s)) || null == r.party || r.party.id !== t.activity.party_id) return !1;
+            l = (0, k.Z)(e, n, a, r)
         }
         return null != l && (en(l, {
           priority: 2,
@@ -265,17 +265,17 @@ let eo = new er(a.Z, {
           channelId: e.id,
           duration: B
         }), !0)
-      }(a, s, u);
+      }(s, a, u);
       if (!1 !== e) return e
     }
-    if (j.default.getTextChatNotificationMode() === M.Ypu.DISABLED || E.Z.disableNotifications || !(0, I.eF)(s, l)) return !1;
-    let c = !O.Z.isSoundDisabled(x.Ay),
-      p = null !== (r = g.Z.getMessage(l, s.id)) && void 0 !== r ? r : (0, d.e5)(s);
-    en((0, L.Z)(a, p, u, c), {
+    if (x.default.getTextChatNotificationMode() === M.Ypu.DISABLED || E.Z.disableNotifications || !(0, I.eF)(a, l)) return !1;
+    let c = !O.Z.isSoundDisabled(j.Ay),
+      p = null !== (r = g.Z.getMessage(l, a.id)) && void 0 !== r ? r : (0, d.e5)(a);
+    en((0, L.Z)(s, p, u, c), {
       type: 1,
-      channelId: a.id,
+      channelId: s.id,
       expirationExternallyManaged: !0,
-      messageType: s.type
+      messageType: a.type
     }), q()
   },
   CHANNEL_SELECT: function(e) {
@@ -317,7 +317,7 @@ let eo = new er(a.Z, {
         user: i,
         applicationId: r
       } = e,
-      o = (0, _.pL)();
+      o = (0, P.pL)();
     return null != o && (null == o ? void 0 : o.id) != null && (o.id === r || o.altId === r) && (n === M.mFx.JOIN && (t = (0, T.Z)(i, o)), null != t && void en(t, {
       priority: 2,
       type: 0

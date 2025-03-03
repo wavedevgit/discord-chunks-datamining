@@ -82,7 +82,7 @@ function k(e) {
     rewardName: n,
     backgroundUrl: t,
     location: o,
-    onClose: i
+    onClose: d
   } = e;
   return (0, r.jsxs)("div", {
     className: p.claimedRootContainer,
@@ -102,7 +102,7 @@ function k(e) {
           className: p.previewContainer,
           children: (0, r.jsx)(N.Z, {
             autoplay: !0,
-            className: d()(p.rewardTile),
+            className: p.rewardTile,
             learnMoreStyle: null,
             quest: a,
             questContent: o,
@@ -111,7 +111,7 @@ function k(e) {
         }), (0, r.jsx)(l.olH, {
           className: p.close,
           withCircleBackground: !0,
-          onClick: i
+          onClick: d
         })]
       })]
     }), (0, r.jsx)(l.mzw, {

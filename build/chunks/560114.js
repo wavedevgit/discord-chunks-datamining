@@ -319,12 +319,12 @@ class eh extends(l = s.PureComponent) {
       rows: e
     } = this.props, t = this.getInviteKey();
     return 0 === e.length ? (0, i.jsx)(p.hzk, {
-      className: a()(en.inviteRowEmptyState),
+      className: en.inviteRowEmptyState,
       children: (0, i.jsx)(p.OZU, {
         children: et.NW.string(et.t.ojoWgY)
       })
     }) : null == t ? (0, i.jsx)(p.hzk, {
-      className: a()(en.inviteRowEmptyState),
+      className: en.inviteRowEmptyState,
       children: (0, i.jsx)(p.OZU, {
         children: et.NW.string(et.t.hzPwGB)
       })

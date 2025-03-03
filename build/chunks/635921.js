@@ -123,13 +123,13 @@ let A = e => {
         }), V ? (0, r.jsx)(E.Z, {
           referrer: M
         }) : G ? (0, r.jsx)("div", {
-          className: s()(S.affinityDescription),
+          className: S.affinityDescription,
           children: (0, r.jsx)(x.Z, {
             textColor: "always-white",
             smallerText: !i
           })
         }) : (0, r.jsx)(y, {}), L || D ? (0, r.jsx)("div", {
-          className: s()(S.buttonContainer),
+          className: S.buttonContainer,
           children: (0, r.jsx)(j.Z, {
             className: s()(S.button, _),
             forceWhite: !0

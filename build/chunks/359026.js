@@ -1,5 +1,4 @@
-/** Chunk was on 87668 **/
-"use strict";
+/** Chunk was on 46746 **/
 e.exports = {
   guildScroller: "guildScroller__1dfb8",
   guildRow: "guildRow__1dfb8",

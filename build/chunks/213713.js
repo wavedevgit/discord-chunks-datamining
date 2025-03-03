@@ -95,8 +95,8 @@ function R() {
   var e, t;
   let n = (0, u.e7)([O.Z], () => O.Z.getFeed(k.YN.GLOBAL_FEED)),
     l = (0, u.e7)([O.Z], () => O.Z.getDebugImpressionCappingDisabled()),
-    o = (0, u.e7)([N.Z], () => N.Z.getDebugFastImpressionCappingEnabled()),
-    c = function(e) {
+    i = (0, u.e7)([N.Z], () => N.Z.getDebugFastImpressionCappingEnabled()),
+    o = function(e) {
       let t = s().groupBy(e, e => e.content_type);
       return Object.keys(t).map(e => {
         let n = t[e];
@@ -107,39 +107,39 @@ function R() {
         }
       })
     }(null == n ? void 0 : null === (e = n.entries) || void 0 === e ? void 0 : e.map(e => e.content)),
-    P = (0, u.e7)([O.Z], () => {
+    c = (0, u.e7)([O.Z], () => {
       var e;
       return (null === (e = O.Z.getFeedState(k.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
     }),
-    [R, A] = a.useState(""),
-    D = (0, u.e7)([j.Z, f.Z], () => {
+    [P, R] = a.useState(""),
+    A = (0, u.e7)([j.Z, f.Z], () => {
       var e, t, n;
-      return parseInt(R) > 0 ? R : null !== (n = null === (e = j.Z.getGameByName(R)) || void 0 === e ? void 0 : e.id) && void 0 !== n ? n : null === (t = f.Z.getApplicationByName(R)) || void 0 === t ? void 0 : t.id
-    }, [R]),
-    B = (0, v.Z)({
-      applicationId: D,
+      return parseInt(P) > 0 ? P : null !== (n = null === (e = j.Z.getGameByName(P)) || void 0 === e ? void 0 : e.id) && void 0 !== n ? n : null === (t = f.Z.getApplicationByName(P)) || void 0 === t ? void 0 : t.id
+    }, [P]),
+    D = (0, v.Z)({
+      applicationId: A,
       location: "DevToolsContentInventory",
       source: g.m1.DevTools
     }),
-    M = Object.entries(null !== (t = m.K.get("GameProfileModal")) && void 0 !== t ? t : {}).filter(e => {
+    B = Object.entries(null !== (t = m.K.get("GameProfileModal")) && void 0 !== t ? t : {}).filter(e => {
       let [t, n] = e;
       return n
     }).map(e => {
       let [t] = e;
       return t
     }),
-    z = (0, p.Z)(M).filter(y.lm),
-    F = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
+    M = (0, p.Z)(B).filter(y.lm),
+    z = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
   return (0, r.jsx)("div", {
-    className: i()(I.panel),
+    className: I.panel,
     children: (0, r.jsxs)(h.zJl, {
       className: w.content,
       children: [(0, r.jsxs)(h.hjN, {
         children: [(0, r.jsx)(h.vwX, {
           children: "Inventory"
-        }), c.length > 0 && (0, r.jsx)(_.Z, {
+        }), o.length > 0 && (0, r.jsx)(_.Z, {
           columns: Z,
-          data: c
+          data: o
         }), (0, r.jsx)(h.LZC, {
           size: 8
         }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(h.zxk, {
@@ -151,7 +151,7 @@ function R() {
               feature: d.L.INBOX
             })
           },
-          submitting: P,
+          submitting: c,
           children: "Refresh Now"
         })]
       }), (0, r.jsxs)(h.hjN, {
@@ -194,23 +194,23 @@ function R() {
               type: "CONTENT_INVENTORY_DEBUG_TOGGLE_FAST_IMPRESSION_CAPPING"
             })
           },
-          children: o ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping"
+          children: i ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping"
         })]
       }), !1, (0, r.jsx)(S.Z, {}), (0, r.jsxs)(h.hjN, {
         children: [(0, r.jsx)(h.vwX, {
           children: "Game Profile"
         }), (0, r.jsx)(h.oil, {
           placeholder: "App ID or full name",
-          onChange: e => (0 === e.length || e.length >= 18) && A(e),
+          onChange: e => (0 === e.length || e.length >= 18) && R(e),
           onKeyDown: e => {
-            "Enter" === e.key && (R === e.currentTarget.value ? null == B || B(e) : A(e.currentTarget.value))
+            "Enter" === e.key && (P === e.currentTarget.value ? null == D || D(e) : R(e.currentTarget.value))
           },
-          error: R.length > 0 && null == B ? "No game profile for ".concat(null != D ? D : R + " - try by id", ".") : void 0,
-          style: null != B ? {
+          error: P.length > 0 && null == D ? "No game profile for ".concat(null != A ? A : P + " - try by id", ".") : void 0,
+          style: null != D ? {
             border: "1px solid green"
           } : {}
         }), (0, r.jsx)("ul", {
-          children: z.map(e => (0, r.jsx)("li", {
+          children: M.map(e => (0, r.jsx)("li", {
             children: (0, r.jsx)(L, {
               application: e
             })
@@ -227,7 +227,7 @@ function R() {
             label: e,
             value: e
           })),
-          isSelected: e => e === F,
+          isSelected: e => e === z,
           select: function(e) {
             x.Z.dispatch({
               type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",

@@ -1,5 +1,4 @@
-/** Chunk was on 87668 **/
-"use strict";
+/** Chunk was on 46746 **/
 e.exports = {
   nativePickerGuide: "nativePickerGuide_afdbcd",
   windowIcon_to: "windowIcon_to_afdbcd",

@@ -58,7 +58,7 @@ let j = function(e) {
   }), j = i.useCallback(() => (0, o.ZDy)(async () => {
     let {
       default: e
-    } = await n.e("36371").then(n.bind(n, 893626));
+    } = await n.e("54422").then(n.bind(n, 893626));
     return n => (0, r.jsx)(e, x(b({}, n), {
       guildId: t,
       welcomeMessage: s,

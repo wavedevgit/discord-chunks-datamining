@@ -1,19 +1,19 @@
-/** Chunk was on 87668 **/
+/** Chunk was on 36371 **/
 "use strict";
 n.d(t, {
   l: () => b
 });
 var r = n(200651),
   o = n(192379),
-  c = n(481060),
-  i = n(100527),
-  a = n(906732),
-  l = n(184301),
-  d = n(347475),
-  s = n(592125),
-  u = n(91047);
+  i = n(481060),
+  l = n(100527),
+  u = n(906732),
+  a = n(184301),
+  s = n(347475),
+  c = n(592125),
+  d = n(91047);
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +32,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,39 +50,39 @@ function b(e) {
     user: t,
     channelId: n,
     guildId: b,
-    messageId: p,
-    stopPropagation: g = !1,
-    ariaLabel: h
+    messageId: v,
+    stopPropagation: O = !1,
+    ariaLabel: g
   } = e, {
-    analyticsLocations: m
-  } = (0, a.ZP)(i.Z.USERNAME), v = o.useCallback(e => {
-    let r = s.Z.getChannel(n);
-    null != r && null != t && (0, u.Pv)(e, t, r)
+    analyticsLocations: y
+  } = (0, u.ZP)(l.Z.USERNAME), m = o.useCallback(e => {
+    let r = c.Z.getChannel(n);
+    null != r && null != t && (0, d.Pv)(e, t, r)
   }, [t, n]);
-  return o.useCallback(e => (o, i) => {
-    let s = t => (0, r.jsx)(c.rz2, f(_({}, null != t ? t : {}), {
-        onContextMenu: v,
+  return o.useCallback(e => (o, l) => {
+    let c = t => (0, r.jsx)(i.rz2, p(f({}, null != t ? t : {}), {
+        onContextMenu: m,
         name: o,
         color: null == e ? void 0 : e.colorString,
         roleName: null == e ? void 0 : e.colorRoleName,
-        "aria-label": h
+        "aria-label": g
       })),
-      u = e => t => {
-        g && t.stopPropagation(), e(t)
+      d = e => t => {
+        O && t.stopPropagation(), e(t)
       };
-    return (0, r.jsx)(a.Gt, {
-      value: m,
-      children: null != t ? (0, r.jsx)(c.yRy, {
+    return (0, r.jsx)(u.Gt, {
+      value: y,
+      children: null != t ? (0, r.jsx)(i.yRy, {
         position: "right",
-        preload: () => (0, l.Z)(t.id, t.getAvatarURL(b, 80), {
+        preload: () => (0, a.Z)(t.id, t.getAvatarURL(b, 80), {
           guildId: b,
           channelId: n
         }),
-        renderPopout: o => (0, r.jsx)(d.Z, f(_({}, o), {
+        renderPopout: o => (0, r.jsx)(s.Z, p(f({}, o), {
           userId: t.id,
           guildId: b,
           channelId: n,
-          messageId: p,
+          messageId: v,
           roleId: null == e ? void 0 : e.colorRoleId
         })),
         children: e => {
@@ -93,21 +93,21 @@ function b(e) {
             var n, r, o = function(e, t) {
               if (null == e) return {};
               var n, r, o = {},
-                c = Object.keys(e);
-              for (r = 0; r < c.length; r++) n = c[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+                i = Object.keys(e);
+              for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
               return o
             }(e, t);
             if (Object.getOwnPropertySymbols) {
-              var c = Object.getOwnPropertySymbols(e);
-              for (r = 0; r < c.length; r++) n = c[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+              var i = Object.getOwnPropertySymbols(e);
+              for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
             }
             return o
           }(e, ["onClick"]);
-          return s(_({
-            onClick: u(t)
+          return c(f({
+            onClick: d(t)
           }, n))
         }
-      }) : s(void 0)
-    }, i)
-  }, [m, t, n, b, p, v, g, h])
+      }) : c(void 0)
+    }, l)
+  }, [y, t, n, b, v, m, O, g])
 }

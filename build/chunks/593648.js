@@ -272,7 +272,7 @@ function q() {
         children: [(0, r.jsxs)(I.F, {
           setting: L.s6.NOTIFICATIONS_COMMUNITY_IN_APP_ALERTS,
           children: [(0, r.jsx)(u.j7V, {
-            className: a()(G.marginBottom20),
+            className: G.marginBottom20,
             note: U.NW.string(U.t["z8Td4+"]),
             value: !e[t].disableRaidAlertNag,
             onChange: () => {

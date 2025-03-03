@@ -1,50 +1,49 @@
 /** Chunk was on 76977 **/
+"use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => u
 });
 var i = n(200651);
 n(192379);
-var r = n(120356),
-  o = n.n(r),
-  s = n(442837),
-  l = n(481060),
-  a = n(556296),
-  c = n(13140),
-  d = n(981631),
-  u = n(68178);
-let h = {
-  [d.kg4.TOGGLE_MUTE]: {
+var r = n(442837),
+  s = n(481060),
+  o = n(556296),
+  a = n(13140),
+  l = n(981631),
+  c = n(68178);
+let d = {
+  [l.kg4.TOGGLE_MUTE]: {
     legacy: {
-      slash: l.nRN,
-      default: l.S6n
+      slash: s.nRN,
+      default: s.S6n
     },
     new: {
-      slash: l.nRN,
-      default: l.S6n
+      slash: s.nRN,
+      default: s.S6n
     }
   }
 };
 
-function p(e) {
+function u(e) {
   let {
     value: t,
     action: n,
-    shouldShow: r
-  } = e, d = (0, s.e7)([a.ZP], () => a.ZP.getKeybindForAction(n, !1, !0)), p = (0, l.bWb)().enabled;
-  if (null == d || !r) return null;
-  let f = c.BB(d.shortcut),
-    g = p ? h[n].new : h[n].legacy,
-    m = t ? g.slash : g.default;
+    shouldShow: l
+  } = e, u = (0, r.e7)([o.ZP], () => o.ZP.getKeybindForAction(n, !1, !0)), h = (0, s.bWb)().enabled;
+  if (null == u || !l) return null;
+  let p = a.BB(u.shortcut),
+    f = h ? d[n].new : d[n].legacy,
+    g = t ? f.slash : f.default;
   return (0, i.jsxs)("div", {
-    className: u.keybindIndicator,
-    children: [(0, i.jsx)(m, {
-      className: u.keybindIcon,
+    className: c.keybindIndicator,
+    children: [(0, i.jsx)(g, {
+      className: c.keybindIcon,
       size: "xs",
       color: "currentColor"
-    }), (0, i.jsx)(l.Text, {
+    }), (0, i.jsx)(s.Text, {
       variant: "text-xxs/semibold",
-      className: o()(u.keybindIndicatorText),
-      children: f
+      className: c.keybindIndicatorText,
+      children: p
     })]
   })
 }

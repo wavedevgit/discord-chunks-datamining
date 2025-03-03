@@ -1,6 +1,6 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(653041);
 var r = n(399606),
   i = n(897345),
@@ -17,24 +17,24 @@ var r = n(399606),
   g = n(50101),
   m = n(330791),
   b = n(443063),
-  y = n(981631);
+  v = n(981631);
 
-function v(e) {
+function y(e) {
   let t = (0, h.Z)(e.id),
     n = (0, o.W)(e.id),
-    v = (0, p.j0)(e.id),
-    O = (0, i.u)(e),
-    j = (0, u.g)(e.id),
-    _ = (0, r.e7)([s.Z], () => s.Z.getNewMemberActions(e.id), [e.id]),
+    y = (0, p.j0)(e.id),
+    _ = (0, i.u)(e),
+    O = (0, u.g)(e.id),
+    j = (0, r.e7)([s.Z], () => s.Z.getNewMemberActions(e.id), [e.id]),
     C = (0, d.Z)(e.id),
     x = (0, c.PE)(e.id),
-    P = (0, a.n2)(e.id),
-    N = [],
-    S = e.hasFeature(y.oNc.HUB),
-    I = e.hasFeature(y.oNc.COMMUNITY),
+    S = (0, a.n2)(e.id),
+    P = [],
+    I = e.hasFeature(v.oNc.HUB),
+    N = e.hasFeature(v.oNc.COMMUNITY),
     Z = (0, m.lN)(!(0, f.r1)(e.id)),
-    E = e.hasFeature(y.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
-    w = (0, l.jS)(e.id, "Guild Sidebar"),
+    w = e.hasFeature(v.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
+    E = (0, l.jS)(e.id, "Guild Sidebar"),
     T = (0, g.Ek)(e, "useGuildActionRow");
-  return S && N.push(b.z.GUILD_HUB_HEADER_OPTIONS), !x && j && C && null != _ && _.length > 0 ? N.push(b.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && N.push(b.z.GUILD_PREMIUM_PROGRESS_BAR), !S && j && N.push(b.z.GUILD_HOME), t && N.push(b.z.GUILD_SCHEDULED_EVENTS), !S && I && Z && N.push(b.z.CHANNELS_AND_ROLES), v && N.push(b.z.GUILD_ROLE_SUBSCRIPTIONS), O && N.push(b.z.GUILD_SHOP), !w && n && N.push(b.z.GUILD_MEMBER_APPLICATIONS), P && (I || E || w && e.hasFeature(y.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && N.push(b.z.GUILD_MOD_DASH_MEMBER_SAFETY), T && N.push(b.z.GUILD_BOOSTS), N
+  return I && P.push(b.z.GUILD_HUB_HEADER_OPTIONS), !x && O && C && null != j && j.length > 0 ? P.push(b.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && P.push(b.z.GUILD_PREMIUM_PROGRESS_BAR), !I && O && P.push(b.z.GUILD_HOME), t && P.push(b.z.GUILD_SCHEDULED_EVENTS), !I && N && Z && P.push(b.z.CHANNELS_AND_ROLES), y && P.push(b.z.GUILD_ROLE_SUBSCRIPTIONS), _ && P.push(b.z.GUILD_SHOP), !E && n && P.push(b.z.GUILD_MEMBER_APPLICATIONS), S && (N || w || E && e.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && P.push(b.z.GUILD_MOD_DASH_MEMBER_SAFETY), T && P.push(b.z.GUILD_BOOSTS), P
 }

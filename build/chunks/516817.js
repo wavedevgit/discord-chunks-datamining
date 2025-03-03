@@ -20,7 +20,7 @@ function c(e) {
     content: u
   } = e, d = !!(n || i), f = (0, a.B)(null == t ? void 0 : t.src, d), _ = (0, s.p)(t, n, i, u);
   return null == t || null == f ? null : (0, r.jsx)("div", {
-    className: o()(l.container),
+    className: l.container,
     style: {
       background: _.background
     },

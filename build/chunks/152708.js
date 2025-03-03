@@ -1,59 +1,59 @@
-/** Chunk was on 93382 **/
-l.d(t, {
-  Z: () => x
+/** Chunk was on 46746 **/
+n.d(t, {
+  Z: () => m
 });
-var r, i, s = l(200651),
-  n = l(192379),
-  a = l(120356),
-  c = l.n(a),
-  o = l(600164),
-  d = l(993127);
+var r, l, i = n(200651),
+  s = n(192379),
+  o = n(120356),
+  a = n.n(o),
+  c = n(600164),
+  d = n(993127);
 
-function f(e, t, l) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
-    value: l,
+    value: n,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = l, e
+  }) : e[t] = n, e
 }
-var u = ((r = u || {}).WRAP = "wrap", r.STACK = "stack", r);
-class h extends(i = n.PureComponent) {
+var f = ((r = f || {}).WRAP = "wrap", r.STACK = "stack", r);
+class h extends(l = s.PureComponent) {
   renderChildren() {
     let e;
     let {
       children: t,
-      layout: l,
+      layout: n,
       columns: r
     } = this.props;
-    switch (l) {
+    switch (n) {
       case "stack":
         e = "100%";
         break;
       case "wrap":
         e = "".concat(1 / r * 100, "%")
     }
-    return t.map((t, l) => (0, s.jsx)(o.Z.Child, {
+    return t.map((t, n) => (0, i.jsx)(c.Z.Child, {
       className: d.tile,
       basis: e,
       grow: 0,
       children: t
-    }, l))
+    }, n))
   }
   render() {
     let {
       className: e
     } = this.props;
-    return (0, s.jsx)(o.Z, {
-      className: c()(e, d.grid),
-      wrap: o.Z.Wrap.WRAP,
+    return (0, i.jsx)(c.Z, {
+      className: a()(e, d.grid),
+      wrap: c.Z.Wrap.WRAP,
       children: this.renderChildren()
     })
   }
 }
-f(h, "Layout", u), f(h, "defaultProps", {
+u(h, "Layout", f), u(h, "defaultProps", {
   children: [],
   layout: "wrap",
   columns: 4
 });
-let x = h
+let m = h

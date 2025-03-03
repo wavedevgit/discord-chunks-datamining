@@ -114,7 +114,7 @@ let P = o.forwardRef(function(e, t) {
     "aria-disabled": m,
     innerRef: t,
     children: (0, r.jsx)(s.animated.div, {
-      className: i()(h.videoControlsBtnCont),
+      className: h.videoControlsBtnCont,
       style: {
         opacity: (0, s.to)([o.to({
           range: [0, 1],

@@ -87,17 +87,17 @@ function w(e) {
     if (null != F) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      className: a()(C.description),
+      className: C.description,
       children: F
     })
   }, [F]), G = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
-    className: a()(C.container),
+    className: C.container,
     children: [(0, r.jsxs)(i.animated.div, {
       style: {
         maxHeight: V.to([0, 1], [104, (null != L ? L : 0) + 12])
       },
-      className: a()(C.rewardDescriptionContainer),
+      className: C.rewardDescriptionContainer,
       children: [(0, r.jsxs)("div", {
         className: C.assetWrapper,
         children: [!U && Q && (0, r.jsx)("div", {

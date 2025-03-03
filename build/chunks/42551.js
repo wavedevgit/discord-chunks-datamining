@@ -35,14 +35,14 @@ function N(e) {
     return (0, r.jsx)(b.lo1, {
       value: l.id,
       children: (0, r.jsxs)("div", {
-        className: a()(v.roleNameContainer),
+        className: v.roleNameContainer,
         children: [(0, r.jsxs)("div", {
-          className: a()(v.roleLabel),
+          className: v.roleLabel,
           children: [(0, r.jsx)("div", {
             className: a()(v.labelBackground, n && v.selected)
           }), (0, r.jsx)(b.lo1.Label, {
             children: (0, r.jsx)(g.Z, {
-              className: a()(y.roleTooltipItem),
+              className: y.roleTooltipItem,
               role: l,
               guildId: t
             }, l.id)
@@ -69,7 +69,7 @@ function N(e) {
     d(t = new Set(c.has(e) ? [...c].filter(t => t !== e) : [...c, e])), S(t)
   }, [c, S]);
   return (0, r.jsx)(b.DBG, {
-    className: a()(v.rolePopout),
+    className: v.rolePopout,
     placeholder: x.NW.string(x.t.ZveC7e),
     value: c,
     onChange: D,

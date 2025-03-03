@@ -18,7 +18,7 @@ function a(e) {
   return (0, n.jsxs)("div", {
     className: i()(l.badgeContainer, r),
     children: [(0, n.jsx)("div", {
-      className: i()(l.timer),
+      className: l.timer,
       children: (0, n.jsx)(o.T39, {
         size: "sm"
       })

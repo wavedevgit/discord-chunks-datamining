@@ -1,6 +1,6 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  j: () => v
+  j: () => y
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -17,22 +17,22 @@ var r = n(200651),
   g = n(55185),
   m = n(981631),
   b = n(921944),
-  y = n(46140);
-let v = e => {
+  v = n(46140);
+let y = e => {
   let {
     children: t,
     isForceShowSharingPopout: n,
-    setIsForceShowSharingPopout: v
+    setIsForceShowSharingPopout: y
   } = e, {
-    rtcPopoutEnabled: O
-  } = (0, f.S)("SharingPrivacyPopout"), j = (0, u.Ws)({
-    location: y.dr.CONFLICT_CHECKS
-  }), _ = d.G6.useSetting(), [C, x] = (0, i.useState)(!1), P = (0, l.e7)([p.Z], () => p.Z.getLayers().includes(m.S9g.USER_SETTINGS));
+    rtcPopoutEnabled: _
+  } = (0, f.S)("SharingPrivacyPopout"), O = (0, u.Ws)({
+    location: v.dr.CONFLICT_CHECKS
+  }), j = d.G6.useSetting(), [C, x] = (0, i.useState)(!1), S = (0, l.e7)([p.Z], () => p.Z.getLayers().includes(m.S9g.USER_SETTINGS));
   return ((0, i.useEffect)(() => {
     n && h.default.track(m.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
-  }, [n]), O && (j || n) && (!_ || C) && !P) ? (0, r.jsx)(c.ZP, {
+  }, [n]), _ && (O || n) && (!j || C) && !S) ? (0, r.jsx)(c.ZP, {
     contentTypes: n ? [] : [o.z.SHARE_ACTIVITY_COACHMARK_V2],
     children: e => {
       let {
@@ -42,7 +42,7 @@ let v = e => {
         let e = () => {
           (0, s.EW)(o.z.SHARE_ACTIVITY_COACHMARK_V2, {
             dismissAction: b.L.USER_DISMISS
-          }), v(!1), x(!1)
+          }), y(!1), x(!1)
         };
         return (0, r.jsx)(a.yRy, {
           shouldShow: !0,

@@ -134,7 +134,7 @@ function S(e) {
           }(0, d.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("93382"), n.e("79477"), n.e("52278")]).then(n.bind(n, 60594));
+            } = await Promise.all([n.e("46746"), n.e("52657")]).then(n.bind(n, 60594));
             return t => (0, r.jsx)(e, I({
               analyticsLocation: "HDStreamingPotionBanner"
             }, t))

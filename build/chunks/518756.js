@@ -1,25 +1,25 @@
-/** Chunk was on 77699 **/
-n.d(e, {
-  Z: () => s
+/** Chunk was on 94898 **/
+n.d(t, {
+  Z: () => c
 }), n(47120);
-var i = n(442837),
-  d = n(357156),
-  _ = n(984933),
-  a = n(430824),
-  r = n(496675),
-  l = n(981631);
+var r = n(442837),
+  i = n(357156),
+  l = n(984933),
+  o = n(430824),
+  a = n(496675),
+  s = n(981631);
 
-function s(t, e) {
-  return (0, i.e7)([a.Z, _.ZP, r.Z], () => {
-    let n = a.Z.getGuild(t);
-    if (r.Z.can(l.Plq.ADMINISTRATOR, n) || r.Z.can(l.Plq.CREATE_EVENTS, n)) return !0;
+function c(e, t) {
+  return (0, r.e7)([o.Z, l.ZP, a.Z], () => {
+    let n = o.Z.getGuild(e);
+    if (a.Z.can(s.Plq.ADMINISTRATOR, n) || a.Z.can(s.Plq.CREATE_EVENTS, n)) return !0;
     for (let {
         channel: n
       }
-      of _.ZP.getChannels(t)[_.Zb])
-      if (null == e || n.type === e) {
-        let [t] = (0, d.Ob)(n);
-        if (r.Z.can(t, n)) return !0
+      of l.ZP.getChannels(e)[l.Zb])
+      if (null == t || n.type === t) {
+        let [e] = (0, i.Ob)(n);
+        if (a.Z.can(e, n)) return !0
       } return !1
-  }, [t, e])
+  }, [e, t])
 }

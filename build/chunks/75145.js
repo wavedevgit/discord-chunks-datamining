@@ -35,11 +35,11 @@ function m() {
         [p.reducedMotion]: e || !h
       })
     }), (0, r.jsxs)("div", {
-      className: a()(p.nitroTopDividerLockContainer),
+      className: p.nitroTopDividerLockContainer,
       children: [(0, r.jsx)("div", {
         className: p.nitroTopDividerLockBorder
       }), !e && h && (0, r.jsx)(c.Fmz, {
-        className: a()(p.premiumUnlockAnimation),
+        className: p.premiumUnlockAnimation,
         loop: !1,
         importData: () => n.e("21812").then(n.t.bind(n, 741855, 19))
       }), (0, r.jsxs)("div", {
@@ -79,7 +79,7 @@ let E = function(e) {
       },
       className: p.nitroTopDividerShadow
     }), (0, r.jsxs)("div", {
-      className: a()(p.nitroTopDividerLockContainer),
+      className: p.nitroTopDividerLockContainer,
       children: [(0, r.jsx)("div", {
         className: p.nitroTopDividerLockBorder
       }), (0, r.jsx)("div", {

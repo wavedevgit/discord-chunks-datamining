@@ -1,5 +1,4 @@
-/** Chunk was on 87668 **/
-"use strict";
+/** Chunk was on 46746 **/
 e.exports = {
   wrapper: "wrapper_d5ee5c",
   content: "content_d5ee5c",

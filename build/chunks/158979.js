@@ -1,14 +1,15 @@
 /** Chunk was on 76977 **/
+"use strict";
 n.d(t, {
   Z: () => y
 });
 var i = n(200651);
 n(192379);
 var r = n(481060),
-  o = n(13245),
-  s = n(371651),
-  l = n(594174),
-  a = n(145597),
+  s = n(13245),
+  o = n(371651),
+  a = n(594174),
+  l = n(145597),
   c = n(312839),
   d = n(981631),
   u = n(987650),
@@ -84,18 +85,18 @@ function y(e) {
           y()
         },
         onNotificationClick: (e, t) => {
-          _("unlock"), o.Z.updateNotificationStatus(t);
-          let c = s.default.isOverlayOOPEnabledForPid((0, a.getPID)());
-          if (c ? o.Z.setInputLocked(!1, (0, a.getPID)()) : o.Z.setInstanceLocked(!1), null == l.default.getCurrentUser()) return;
+          _("unlock"), s.Z.updateNotificationStatus(t);
+          let c = o.default.isOverlayOOPEnabledForPid((0, l.getPID)());
+          if (c ? s.Z.setInputLocked(!1, (0, l.getPID)()) : s.Z.setInstanceLocked(!1), null == a.default.getCurrentUser()) return;
           let u = c ? {
             contextKey: r.u1M
           } : void 0;
           (0, r.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("79477"), n.e("15670")]).then(n.bind(n, 60594));
+            } = await Promise.all([n.e("46746"), n.e("50844")]).then(n.bind(n, 60594));
             return t => (0, i.jsx)(e, g(f({}, t), {
-              sourcePID: (0, a.getPID)(),
+              sourcePID: (0, l.getPID)(),
               selectSource: !1,
               guildId: p.id,
               analyticsLocation: d.Sbl.OVERLAY_NUDGE
@@ -111,7 +112,7 @@ function y(e) {
       let {
         game: t
       } = e, {
-        trackView: l,
+        trackView: a,
         trackClick: p
       } = (0, c.R)(u.n0.GoLiveNonVoiceNudge, {
         notif_type: u.n0.GoLiveNonVoiceNudge
@@ -125,21 +126,21 @@ function y(e) {
         hint: () => (0, i.jsx)(m, {}),
         renderFooter: () => (0, i.jsx)(m, {}),
         onNotificationShow: () => {
-          l()
+          a()
         },
         onNotificationClick: (e, t) => {
-          p("unlock"), o.Z.updateNotificationStatus(t);
-          let l = s.default.isOverlayOOPEnabledForPid((0, a.getPID)());
-          l ? o.Z.setInputLocked(!1, (0, a.getPID)()) : o.Z.setInstanceLocked(!1);
-          let c = l ? {
+          p("unlock"), s.Z.updateNotificationStatus(t);
+          let a = o.default.isOverlayOOPEnabledForPid((0, l.getPID)());
+          a ? s.Z.setInputLocked(!1, (0, l.getPID)()) : s.Z.setInstanceLocked(!1);
+          let c = a ? {
             contextKey: r.u1M
           } : void 0;
           (0, r.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("79477"), n.e("15670")]).then(n.bind(n, 60594));
+            } = await Promise.all([n.e("46746"), n.e("50844")]).then(n.bind(n, 60594));
             return t => (0, i.jsx)(e, g(f({}, t), {
-              sourcePID: (0, a.getPID)(),
+              sourcePID: (0, l.getPID)(),
               selectSource: !1,
               selectGuild: !0,
               analyticsLocation: d.Sbl.OVERLAY_NUDGE

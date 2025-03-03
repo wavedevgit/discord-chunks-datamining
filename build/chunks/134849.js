@@ -1,13 +1,13 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => x
+  Z: () => j
 }), n(653041), n(47120);
 var i = n(200651),
   r = n(192379),
   o = n(442837),
   l = n(481060),
-  s = n(237997),
-  a = n(804570),
+  a = n(237997),
+  s = n(804570),
   u = n(388627),
   c = n(561064),
   d = n(380736),
@@ -18,20 +18,20 @@ var i = n(200651),
   g = n(173293);
 let O = [];
 
-function v(e) {
+function y(e) {
   return e.notification.id
 }
 
-function y(e, t, n, r) {
+function v(e, t, n, r) {
   let {
     index: o,
     notification: l,
-    locked: s
+    locked: a
   } = t;
   return (0, i.jsx)(d.ZP, {
     index: o,
     notification: l,
-    locked: s,
+    locked: a,
     transitionState: n,
     cleanUp: r
   }, e)
@@ -44,12 +44,12 @@ function E(e) {
   })
 }
 let b = e => r.useState(() => new p.AS(e))[0],
-  x = r.memo(function(e) {
+  j = r.memo(function(e) {
     let {
       locked: t,
       showEmpty: n = !0
-    } = e, d = (0, o.e7)([s.default, h.Z], () => {
-      if (s.default.getNotificationPositionMode() === f._vf.DISABLED) return O;
+    } = e, d = (0, o.e7)([a.default, h.Z], () => {
+      if (a.default.getNotificationPositionMode() === f._vf.DISABLED) return O;
       let e = [],
         n = 0;
       for (let i of h.Z.getNotifications()) {
@@ -66,11 +66,11 @@ let b = e => r.useState(() => new p.AS(e))[0],
       value: g,
       children: (0, i.jsx)(l.W3x, {
         items: d,
-        renderItem: y,
-        getItemKey: v,
+        renderItem: v,
+        getItemKey: y,
         wrapChildren: E
       })
-    }) : n ? t ? null : (0, i.jsx)(a.E, {
+    }) : n ? t ? null : (0, i.jsx)(s.E, {
       emptyText: m.NW.string(m.t.O1Nbjo),
       icon: l.Dkj,
       absolute: !0

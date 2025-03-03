@@ -1,12 +1,13 @@
 /** Chunk was on 76977 **/
+"use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => x
 }), n(47120);
 var i, r = n(200651),
-  o = n(192379),
-  s = n(120356),
-  l = n.n(s),
-  a = n(442837),
+  s = n(192379),
+  o = n(120356),
+  a = n.n(o),
+  l = n(442837),
   c = n(552062),
   d = n(416568),
   u = n(914010),
@@ -35,14 +36,14 @@ function O(e) {
     onClose: t
   })
 }
-class b extends(i = o.PureComponent) {
+class b extends(i = s.PureComponent) {
   render() {
     let {
       selectedGuildId: e,
       locked: t,
       contained: n,
       className: i
-    } = this.props, o = null != e ? (0, r.jsx)(p.Z, {
+    } = this.props, s = null != e ? (0, r.jsx)(p.Z, {
       guildId: e,
       onDragStart: this.onDragStart
     }, e) : (0, r.jsx)(m.Z, {
@@ -50,16 +51,16 @@ class b extends(i = o.PureComponent) {
       renderSettings: O,
       onDragStart: this.onDragStart,
       children: (0, r.jsx)(g.Z, {})
-    }), s = n ? "div" : h.ZP;
-    return (0, r.jsxs)(s, {
-      className: l()(_.base, {
+    }), o = n ? "div" : h.ZP;
+    return (0, r.jsxs)(o, {
+      className: a()(_.base, {
         [_.widget]: !n
       }, i),
       children: [(0, r.jsx)(d.Z, {
         isOverlay: !0,
         disableAppDownload: !0,
         isVisible: !t
-      }), o]
+      }), s]
     })
   }
   constructor(...e) {
@@ -74,6 +75,6 @@ class b extends(i = o.PureComponent) {
 v(b, "defaultProps", {
   contained: !1
 });
-let S = a.ZP.connectStores([u.Z], () => ({
+let x = l.ZP.connectStores([u.Z], () => ({
   selectedGuildId: u.Z.getGuildId()
 }))(b)

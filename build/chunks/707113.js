@@ -48,7 +48,7 @@ function N(e) {
   return (0, r.jsx)("div", {
     className: a()(b.mainTableContainer, n),
     children: (0, r.jsxs)(c.Den, {
-      className: a()(b.horizatonalScroller),
+      className: b.horizatonalScroller,
       ref: E,
       orientation: "horizontal",
       children: [(0, r.jsx)(j.Z, {

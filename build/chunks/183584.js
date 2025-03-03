@@ -1,17 +1,17 @@
-/** Chunk was on 29611 **/
+/** Chunk was on 7755 **/
 n.d(t, {
-  IN: () => l,
-  oZ: () => c
+  IN: () => a,
+  oZ: () => s
 }), n(200651), n(192379);
-var i = n(570140);
+var r = n(570140);
 n(238246), n(788983), n(592125), n(19780);
-var o = n(237997);
+var l = n(237997);
 n(998502), n(487029);
-var r = n(710111);
+var i = n(710111);
 n(981631), n(388032);
-let a = {
-  width: r.FW.width,
-  height: r.FW.height,
+let o = {
+  width: i.FW.width,
+  height: i.FW.height,
   resizable: !1,
   movable: !1,
   alwaysOnTop: !0,
@@ -24,12 +24,12 @@ let a = {
   titleBarStyle: null
 };
 
-function l(e, t) {
-  i.Z.dispatch({
+function a(e, t) {
+  r.Z.dispatch({
     type: "OVERLAY_SET_INPUT_LOCKED",
     locked: !1,
     pid: t
-  }), i.Z.dispatch({
+  }), r.Z.dispatch({
     type: "SOUNDBOARD_SET_OVERLAY_ENABLED",
     pid: t,
     enabled: !0,
@@ -37,15 +37,15 @@ function l(e, t) {
   })
 }
 
-function c(e) {
-  i.Z.dispatch({
+function s(e) {
+  r.Z.dispatch({
     type: "SOUNDBOARD_SET_OVERLAY_ENABLED",
     pid: e,
     enabled: !1
-  }), o.default.isLocked(e) || i.Z.dispatch({
+  }), l.default.isLocked(e) || r.Z.dispatch({
     type: "OVERLAY_SET_INPUT_LOCKED",
     locked: !0,
     pid: e
   })
 }
-r.FW.padding, a.width, a.height
+i.FW.padding, o.width, o.height

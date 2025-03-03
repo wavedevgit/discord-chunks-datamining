@@ -1,12 +1,13 @@
 /** Chunk was on 76977 **/
+"use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => S
 }), n(47120);
 var i, r = n(192379),
-  o = n(392711),
-  s = n.n(o),
-  l = n(995295),
-  a = n(374470),
+  s = n(392711),
+  o = n.n(s),
+  a = n(995295),
+  l = n(374470),
   c = n(902704),
   d = n(846519),
   u = n(13245),
@@ -72,15 +73,15 @@ function b(e, t) {
           } = e;
           return t
         })
-      }), n = e, S || (n.setClickZoneCallback((e, t, n) => {
+      }), n = e, x || (n.setClickZoneCallback((e, t, n) => {
         let i = O.get(e);
         null != i && (_ || (y.x = t, y.y = n), i.instance.click())
-      }), S = !0)
+      }), x = !0)
     }
   }
 }
-let S = !1;
-class x extends(i = r.PureComponent) {
+let x = !1;
+class S extends(i = r.PureComponent) {
   componentDidMount() {
     this.props.observe ? this.observeZone() : this.updateZone()
   }
@@ -104,9 +105,9 @@ class x extends(i = r.PureComponent) {
     (0, f.J)(e, y.x, y.y)
   }
   constructor(...e) {
-    super(...e), m(this, "zone", s().uniqueId("ClickArea")), m(this, "interval", new d.Xp), m(this, "updateZone", () => {
-      let e = (0, l.findDOMNode)(this);
-      if ((0, a.k)(e)) {
+    super(...e), m(this, "zone", o().uniqueId("ClickArea")), m(this, "interval", new d.Xp), m(this, "updateZone", () => {
+      let e = (0, a.findDOMNode)(this);
+      if ((0, l.k)(e)) {
         let {
           left: t,
           top: n,
@@ -127,7 +128,7 @@ class x extends(i = r.PureComponent) {
     })
   }
 }
-m(x, "defaultProps", {
+m(S, "defaultProps", {
   observe: !0,
   observeInterval: 1e3
 })

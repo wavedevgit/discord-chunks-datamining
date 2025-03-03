@@ -1,8 +1,8 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
   EM: () => m,
   WW: () => b,
-  ZP: () => y
+  ZP: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -54,17 +54,17 @@ function b(e, t) {
     }
   }
 }
-let y = i.memo(function(e) {
+let v = i.memo(function(e) {
   let {
     sectionIndex: t,
     guild: n,
     guildChannels: g,
     guildChannelsVersion: m,
     selectedChannelId: b,
-    disableManageChannels: y
+    disableManageChannels: v
   } = e, {
-    isFavoritesPerk: v
-  } = (0, o.z)("ChannelListSection"), O = i.useCallback(() => {
+    isFavoritesPerk: y
+  } = (0, o.z)("ChannelListSection"), _ = i.useCallback(() => {
     let e = g.getCategoryFromSection(g.recentsSectionNumber);
     if (null == e) return;
     let t = null,
@@ -87,18 +87,18 @@ let y = i.memo(function(e) {
       });
     case c.p2:
       return (0, r.jsx)(u.P, {
-        name: v ? h.NW.string(h.t.mlPMCw) : h.NW.string(h.t.k8fFjo)
+        name: y ? h.NW.string(h.t.mlPMCw) : h.NW.string(h.t.k8fFjo)
       });
     case g.recentsSectionNumber:
       return (0, r.jsx)(u.P, {
         name: h.NW.string(h.t.gKcrqK),
-        onDismiss: O
+        onDismiss: _
       });
     case g.voiceChannelsSectionNumber: {
-      var j;
+      var O;
       let e = g.getCategoryFromSection(g.voiceChannelsSectionNumber);
       if (null == e || e.isEmpty()) return null;
-      let n = null === (j = g.getChannelFromSectionRow(t, 0)) || void 0 === j ? void 0 : j.channel;
+      let n = null === (O = g.getChannelFromSectionRow(t, 0)) || void 0 === O ? void 0 : O.channel;
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)("div", {
           className: f.sectionDivider
@@ -114,7 +114,7 @@ let y = i.memo(function(e) {
       return (0, r.jsx)(u.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: y,
+        disableManageChannels: v,
         children: (0, r.jsx)(s.Z, {
           inlineSpecs: d.MF,
           arrowAlignment: l.cy.TOP,
@@ -129,7 +129,7 @@ let y = i.memo(function(e) {
       return (0, r.jsx)(u.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: y
+        disableManageChannels: v
       })
     }
   }

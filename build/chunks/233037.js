@@ -1,37 +1,37 @@
-/** Chunk was on 79477 **/
+/** Chunk was on 46746 **/
 n.d(t, {
   Z: () => x
 });
 var r = n(200651);
 n(192379);
 var l = n(442837),
-  s = n(481060),
-  i = n(984933),
-  a = n(430824),
-  o = n(496675),
+  i = n(481060),
+  s = n(984933),
+  o = n(430824),
+  a = n(496675),
   c = n(594174),
-  u = n(938475),
-  d = n(102172),
-  m = n(499596),
-  p = n(148381),
-  h = n(388032),
-  g = n(885977);
+  d = n(938475),
+  u = n(102172),
+  f = n(499596),
+  h = n(148381),
+  m = n(388032),
+  p = n(885977);
 
 function x(e) {
   let {
     selectedChannelId: t,
     guildId: n,
     onChangeSelectedChannelId: x
-  } = e, v = (0, l.e7)([c.default], () => c.default.getCurrentUser()), f = (0, l.e7)([a.Z, i.ZP, o.Z], () => (0, d.h_)(i.ZP.getChannels(n), a.Z, o.Z)), j = (0, l.e7)([u.ZP], () => u.ZP.getVoiceStates(n)), S = f.map(e => {
+  } = e, g = (0, l.e7)([c.default], () => c.default.getCurrentUser()), _ = (0, l.e7)([o.Z, s.ZP, a.Z], () => (0, u.h_)(s.ZP.getChannels(n), o.Z, a.Z)), v = (0, l.e7)([d.ZP], () => d.ZP.getVoiceStates(n)), j = _.map(e => {
     var n;
     return {
-      name: (0, r.jsx)(m.Z, {
+      name: (0, r.jsx)(f.Z, {
         channel: e,
-        users: null === (n = j[e.id]) || void 0 === n ? void 0 : n.filter(e => {
+        users: null === (n = v[e.id]) || void 0 === n ? void 0 : n.filter(e => {
           let {
             user: t
           } = e;
-          return t.id !== (null == v ? void 0 : v.id)
+          return t.id !== (null == g ? void 0 : g.id)
         }).map(e => {
           let {
             user: t
@@ -43,14 +43,14 @@ function x(e) {
       value: e.id
     }
   });
-  return (0, r.jsx)(p.Z, {
-    title: h.NW.string(h.t["eg7R/v"]),
-    scrollerInnerClassName: g.channelSelectScrollerInner,
-    children: (0, r.jsx)(s.FXm, {
-      options: S,
+  return (0, r.jsx)(h.Z, {
+    title: m.NW.string(m.t["eg7R/v"]),
+    scrollerInnerClassName: p.channelSelectScrollerInner,
+    children: (0, r.jsx)(i.FXm, {
+      options: j,
       value: t,
-      itemInfoClassName: g.channelInfoWrapper,
-      itemTitleClassName: g.channelTitleWrapper,
+      itemInfoClassName: p.channelInfoWrapper,
+      itemTitleClassName: p.channelTitleWrapper,
       onChange: e => {
         let {
           value: t

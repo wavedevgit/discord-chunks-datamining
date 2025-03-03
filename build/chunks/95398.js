@@ -125,7 +125,7 @@ let y = e => {
     return t !== f.wk.EXPLICIT_CONTENT ? null : (0, r.jsx)("div", {
       className: a()(h.obscureButtonContainer, o),
       children: (0, r.jsx)(l.P3F, {
-        className: a()(h.obscureHoverButton),
+        className: h.obscureHoverButton,
         onClick: i,
         "aria-label": p.NW.string(p.t.ex5G9v),
         children: n ? (0, r.jsx)(l.tEF, {

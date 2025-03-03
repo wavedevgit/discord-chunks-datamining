@@ -68,7 +68,7 @@ function w(t) {
     return window.addEventListener("resize", t), () => window.removeEventListener("reslize", t)
   }, []), (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(l.Z, {
-      className: r()(f.rightSplit),
+      className: f.rightSplit,
       onLoad: function(t) {
         let {
           currentTarget: e

@@ -28,7 +28,7 @@ function m(e) {
     children: (0, c.jsxs)(r.Y0X, {
       size: r.CgR.DYNAMIC,
       transitionState: i,
-      className: a()(f.modalRoot),
+      className: f.modalRoot,
       "aria-labelledby": C,
       children: [(0, c.jsxs)("div", {
         className: f.modalContainer,

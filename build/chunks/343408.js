@@ -1,4 +1,5 @@
 /** Chunk was on 76977 **/
+"use strict";
 e.exports = {
   container: "container__350af",
   clickBlocker: "clickBlocker__350af",

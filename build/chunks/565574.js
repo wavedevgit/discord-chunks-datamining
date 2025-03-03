@@ -1,51 +1,51 @@
-/** Chunk was on 79477 **/
+/** Chunk was on 46746 **/
 n.d(t, {
   Z: () => c
 }), n(47120);
 var r = n(200651);
 n(192379);
 var l = n(481060),
-  s = n(615161),
-  i = n(388032),
-  a = n(513803);
+  i = n(615161),
+  s = n(388032),
+  o = n(513803);
 
-function o(e) {
+function a(e) {
   let {
     onClose: t,
     onSelect: n
   } = e, [{
-    muteStreamAudio: a,
-    notifyFriends: o,
+    muteStreamAudio: o,
+    notifyFriends: a,
     hidePreview: c
-  }, u] = (0, s.E_)();
+  }, d] = (0, i.E_)();
   return (0, r.jsxs)(l.v2r, {
-    "aria-label": i.NW.string(i.t["+1H47u"]),
+    "aria-label": s.NW.string(s.t["+1H47u"]),
     navId: "stream-options",
     onClose: t,
     onSelect: n,
     children: [(0, r.jsx)(l.S89, {
       id: "stream-option-share-preview",
       checked: c,
-      label: i.NW.string(i.t.H3Qjqa),
-      action: () => u({
+      label: s.NW.string(s.t.H3Qjqa),
+      action: () => d({
         type: "set_hide_preview",
         hidePreview: !c
       })
     }), (0, r.jsx)(l.S89, {
       id: "stream-option-mute",
-      checked: a,
-      label: i.NW.string(i.t["b0+Ira"]),
-      action: () => u({
+      checked: o,
+      label: s.NW.string(s.t["b0+Ira"]),
+      action: () => d({
         type: "set_mute_audio",
-        value: !a
+        value: !o
       })
     }), (0, r.jsx)(l.S89, {
       id: "stream-option-notify",
-      checked: o,
-      label: i.NW.string(i.t.SiHtX1),
-      action: () => u({
+      checked: a,
+      label: s.NW.string(s.t.SiHtX1),
+      action: () => d({
         type: "set_notify_friends",
-        value: !o
+        value: !a
       })
     })]
   })
@@ -55,7 +55,7 @@ function c() {
   return (0, r.jsx)(l.yRy, {
     position: "top",
     align: "right",
-    renderPopout: e => (0, r.jsx)(o, {
+    renderPopout: e => (0, r.jsx)(a, {
       onClose: e.closePopout,
       onSelect: e.closePopout
     }),
@@ -80,9 +80,9 @@ function c() {
         return e
       }({
         size: l.zxk.Sizes.ICON,
-        "aria-label": i.NW.string(i.t["+1H47u"]),
+        "aria-label": s.NW.string(s.t["+1H47u"]),
         color: l.zxk.Colors.PRIMARY,
-        className: a.streamOptionsButton
+        className: o.streamOptionsButton
       }, e), n = n = {
         children: (0, r.jsx)(l.ewm, {
           size: "refresh_sm",

@@ -78,7 +78,7 @@ class v extends o.PureComponent {
       changeLog: e
     } = this.props, t = e.youtube_video_id, o = e.video, i = e.image;
     if (null != t && "" !== t) return (0, n.jsx)(d.BC, {
-      className: a()(y.video),
+      className: y.video,
       allowFullScreen: !1,
       href: "https://youtu.be/".concat(t),
       thumbnail: {

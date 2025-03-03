@@ -11,34 +11,22 @@ function i(e) {
   let {
     location: t
   } = e, {
-    enableNitroTenureRewardCard: n
-  } = r.O.useExperiment({
-    location: t
-  }, {
-    autoTrackExposure: !1
-  }), {
-    enabled: i
+    enabled: n
   } = r.H.useExperiment({
     location: t
   });
-  return n || i
+  return n
 }
 
 function o(e) {
   let {
     location: t
   } = e, {
-    enableNitroTenureRewardCard: n
-  } = r.O.getCurrentConfig({
-    location: t
-  }, {
-    autoTrackExposure: !1
-  }), {
-    enabled: i
+    enabled: n
   } = r.H.getCurrentConfig({
     location: t
   });
-  return n || i
+  return n
 }
 
 function a(e) {

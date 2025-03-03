@@ -240,7 +240,7 @@ function I(e) {
             label: N.NW.string(N.t["2SZsWV"]),
             onFilter: t,
             isFiltered: V,
-            className: a()(H.mediumCol)
+            className: H.mediumCol
           }, n))
         }
       }), (0, r.jsx)(d.ua7, {
@@ -272,7 +272,7 @@ function I(e) {
               q(), null === (r = t.onClick) || void 0 === r || r.call(t, n), null === (l = e.onClick) || void 0 === l || l.call(e)
             },
             isFiltered: M,
-            className: a()(H.smallCol),
+            className: H.smallCol,
             onMouseEnter: () => {
               var n, r;
               q(), null === (n = e.onMouseEnter) || void 0 === n || n.call(e), null === (r = t.onMouseEnter) || void 0 === r || r.call(t)

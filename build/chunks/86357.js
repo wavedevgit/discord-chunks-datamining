@@ -147,7 +147,7 @@ class O extends(r = l.PureComponent) {
     switch (e) {
       case 5:
         return (0, o.jsx)(x, {
-          className: c()(t)
+          className: t
         });
       case 3:
         return (0, o.jsx)(g, {

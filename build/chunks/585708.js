@@ -7,8 +7,8 @@ n(192379);
 var r = n(13245),
   o = n(937889),
   l = n(703656),
-  s = n(460181),
-  a = n(974180),
+  a = n(460181),
+  s = n(974180),
   u = n(150097),
   c = n(358085),
   d = n(998502),
@@ -18,14 +18,14 @@ var r = n(13245),
   m = n(380736),
   g = n(620954),
   O = n(987650),
-  v = n(981631),
-  y = n(388032);
+  y = n(981631),
+  v = n(388032);
 
 function E(e, t, n, E) {
   var b;
   let {
-    icon: x,
-    title: j,
+    icon: j,
+    title: x,
     body: S
   } = (0, u.Xi)(e, t, n), {
     trackView: I,
@@ -40,14 +40,14 @@ function E(e, t, n, E) {
     channel_type: e.type
   });
   return {
-    icon: x,
-    title: j,
+    icon: j,
+    title: x,
     body: t.content.length > 0 ? (0, o.ZP)(t, {
       noStyleAndInteraction: !0,
       formatInline: !0,
       hideSimpleEmbedContent: !1
     }).content : S,
-    hint: (e, t) => e && !t ? null : (0, m.QR)((0, g.P)(), y.t.ykjOAA, y.NW.string(y.t.jZkzVF)),
+    hint: (e, t) => e && !t ? null : (0, m.QR)((0, g.P)(), v.t.ykjOAA, v.NW.string(v.t.jZkzVF)),
     maxBodyLines: 2,
     renderFooter: (t, n, r) => t && !r ? (0, i.jsx)(f.Z, {
       id: n,
@@ -55,11 +55,11 @@ function E(e, t, n, E) {
       onSend: () => C("send")
     }) : null,
     onNotificationShow: () => {
-      E && (0, s.GN)(a.Ay, a.yk), I()
+      E && (0, a.GN)(s.Ay, s.yk), I()
     },
     onNotificationClick: () => {
       let n = (0, p.getPID)();
-      h.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(!1, n)) : (C("jump"), (0, l.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), c.isPlatformEmbedded && d.ZP.focus())
+      h.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(!1, n)) : (C("jump"), (0, l.uL)(y.Z5c.CHANNEL(e.guild_id, e.id, t.id)), c.isPlatformEmbedded && d.ZP.focus())
     },
     onDismissClick: () => {
       C("dismiss")

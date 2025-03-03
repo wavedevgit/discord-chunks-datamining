@@ -60,7 +60,7 @@ function x() {
     children: [(0, r.jsx)("div", {
       ref: t
     }), (0, r.jsxs)(o.hjN, {
-      className: a()(b.marginTop40),
+      className: b.marginTop40,
       tag: o.RB0.H1,
       title: h.NW.string(h.t.TPchzM),
       children: [g.Od.map(e => {

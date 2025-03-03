@@ -1,36 +1,36 @@
-/** Chunk was on 29611 **/
+/** Chunk was on 7755 **/
 n.d(t, {
   JE: () => u,
-  ct: () => s,
-  dc: () => c
+  ct: () => c,
+  dc: () => s
 });
-var i = n(200651);
+var r = n(200651);
 n(192379);
-var o = n(261600),
-  r = n(157925),
-  a = n(480858);
-let l = {
-  [r.gD]: new o.U
+var l = n(261600),
+  i = n(157925),
+  o = n(480858);
+let a = {
+  [i.gD]: new l.U
 };
-
-function c(e) {
-  var t;
-  let n = e.application_id;
-  if (null == n) return;
-  let i = l[n];
-  if (null != i && (null === (t = i.shouldShow) || void 0 === t ? void 0 : t.call(i, e)) !== !1) return i.createHeader(e)
-}
 
 function s(e) {
   var t;
   let n = e.application_id;
   if (null == n) return;
-  let o = l[n];
-  if ((null == o ? void 0 : o.body) != null && (null === (t = o.shouldShow) || void 0 === t ? void 0 : t.call(o, e)) !== !1) {
-    let t = o.body;
-    return (0, i.jsx)("section", {
-      className: a.section,
-      children: (0, i.jsx)(t, {
+  let r = a[n];
+  if (null != r && (null === (t = r.shouldShow) || void 0 === t ? void 0 : t.call(r, e)) !== !1) return r.createHeader(e)
+}
+
+function c(e) {
+  var t;
+  let n = e.application_id;
+  if (null == n) return;
+  let l = a[n];
+  if ((null == l ? void 0 : l.body) != null && (null === (t = l.shouldShow) || void 0 === t ? void 0 : t.call(l, e)) !== !1) {
+    let t = l.body;
+    return (0, r.jsx)("section", {
+      className: o.section,
+      children: (0, r.jsx)(t, {
         activity: e
       })
     }, "delegate-".concat(n))
@@ -41,6 +41,6 @@ function u(e) {
   var t;
   let n = e.application_id;
   if (null == n) return !0;
-  let i = l[n];
-  return null == i || (null === (t = i.shouldShow) || void 0 === t ? void 0 : t.call(i, e)) !== !1
+  let r = a[n];
+  return null == r || (null === (t = r.shouldShow) || void 0 === t ? void 0 : t.call(r, e)) !== !1
 }

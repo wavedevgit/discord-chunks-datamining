@@ -1,6 +1,6 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -17,23 +17,23 @@ var r = n(200651),
   g = n(981631),
   m = n(490897),
   b = n(691878);
-let y = (0, c.B)(function(e) {
+let v = (0, c.B)(function(e) {
   let {
     guild: t,
     selectedChannelId: l,
     position: c,
-    disableManageChannels: y,
-    sorting: v,
-    sortingType: O,
-    sortingPosition: j,
-    connectChannelDragSource: _,
+    disableManageChannels: v,
+    sorting: y,
+    sortingType: _,
+    sortingPosition: O,
+    connectChannelDragSource: j,
     connectChannelDropTarget: C,
     tabIndex: x
-  } = e, P = (0, a.e7)([u.Z, d.ZP], () => {
+  } = e, S = (0, a.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
-  }), N = (0, a.e7)([u.Z], () => u.Z.getChannel(null == P ? void 0 : P.parent_id)), S = l === (null == P ? void 0 : P.id), I = (0, a.e7)([p.Z], () => null != N ? p.Z.can(g.Plq.MANAGE_CHANNELS, N) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), Z = i.useCallback(e => {
-    null != P && (0, s.jW)(e, async () => {
+  }), P = (0, a.e7)([u.Z], () => u.Z.getChannel(null == S ? void 0 : S.parent_id)), I = l === (null == S ? void 0 : S.id), N = (0, a.e7)([p.Z], () => null != P ? p.Z.can(g.Plq.MANAGE_CHANNELS, P) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), Z = i.useCallback(e => {
+    null != S && (0, s.jW)(e, async () => {
       let {
         default: e
       } = await n.e("70623").then(n.bind(n, 99334));
@@ -57,7 +57,7 @@ let y = (0, c.B)(function(e) {
           }
           return e
         }({}, t), i = i = {
-          channel: P
+          channel: S
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -70,33 +70,33 @@ let y = (0, c.B)(function(e) {
         }), n))
       }
     })
-  }, [P]);
-  if (null == P) return null;
-  let E = (0, h.jo)(c, j),
-    w = (0, h.CN)(P, v, O),
+  }, [S]);
+  if (null == S) return null;
+  let w = (0, h.jo)(c, O),
+    E = (0, h.CN)(S, y, _),
     T = (0, r.jsx)("div", {
-      className: o()(E, {
-        [b.disabled]: w,
-        [b.selected]: S
+      className: o()(w, {
+        [b.disabled]: E,
+        [b.selected]: I
       }),
-      "data-dnd-name": P.name,
+      "data-dnd-name": S.name,
       children: (0, r.jsxs)(f.Z, {
         className: b.iconVisibility,
-        channel: P,
+        channel: S,
         guild: t,
-        selected: S,
+        selected: I,
         onContextMenu: Z,
         forceInteractable: !0,
         resolvedUnreadSetting: m.i.ONLY_MENTIONS,
         children: [(0, r.jsx)(h.eP, {
-          channel: P,
+          channel: S,
           tabIndex: x
         }), (0, r.jsx)(h.hR, {
-          channel: P,
-          disableManageChannels: y,
+          channel: S,
+          disableManageChannels: v,
           tabIndex: x
         })]
       })
     });
-  return I && (T = C(_(T))), T
+  return N && (T = C(j(T))), T
 })

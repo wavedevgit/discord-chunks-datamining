@@ -23,7 +23,7 @@ function l(e) {
     className: o()(s.largeCountdownPill, n),
     children: [(0, r.jsx)(a.Text, {
       variant: "text-xs/bold",
-      className: o()(s.largeCountdownPillText),
+      className: s.largeCountdownPillText,
       children: t.toUpperCase()
     }), l]
   })

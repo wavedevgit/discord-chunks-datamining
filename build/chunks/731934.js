@@ -64,7 +64,7 @@ function y() {
   return (0, r.jsxs)("div", {
     className: a()(v.box, O.box, v.linkingBanner, v.linkingBannerParent),
     children: [(0, r.jsxs)("div", {
-      className: a()(v.linkingBannerUpper),
+      className: v.linkingBannerUpper,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(c.X6q, {
           className: S.marginBottom8,

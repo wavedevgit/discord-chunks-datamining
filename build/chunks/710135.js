@@ -1,4 +1,5 @@
 /** Chunk was on 76977 **/
+"use strict";
 n.r(e.exports = {
   content: "content__777cc",
   staticSize: "staticSize__777cc",

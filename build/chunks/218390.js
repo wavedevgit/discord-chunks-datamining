@@ -247,7 +247,7 @@ function es() {
   return null != t ? (0, r.jsx)(ei, {
     config: t
   }) : (0, r.jsxs)("div", {
-    className: a()(J.giftCard),
+    className: J.giftCard,
     children: [(0, r.jsx)("img", {
       className: J.giftImage,
       alt: "",

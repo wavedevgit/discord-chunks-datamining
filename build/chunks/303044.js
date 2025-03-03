@@ -1,4 +1,5 @@
 /** Chunk was on 76977 **/
+"use strict";
 e.exports = {
   controls: "controls__0fcb7",
   unpinned: "unpinned__0fcb7",

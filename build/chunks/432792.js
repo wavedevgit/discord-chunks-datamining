@@ -149,17 +149,17 @@ let k = () => (0, d.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       descriptionText: n,
       onClose: i,
       tailLeftOffset: o = 22,
-      renderTail: l,
-      invertCoachmark: c = !1,
-      iconComponent: u,
-      coachmarkRef: b
+      renderTail: a,
+      invertCoachmark: l = !1,
+      iconComponent: c,
+      coachmarkRef: u
     } = e;
     return (0, r.jsxs)("div", {
-      className: a()(p.container),
-      ref: b,
+      className: p.container,
+      ref: u,
       children: [(0, r.jsx)(y, {
         onClick: i
-      }), u, (0, r.jsxs)("div", {
+      }), c, (0, r.jsxs)("div", {
         className: p.content,
         children: [(0, r.jsx)(s.X6q, {
           className: p.title,
@@ -170,9 +170,9 @@ let k = () => (0, d.Lk)(document.body.style.getPropertyValue("--custom-app-panel
           className: p.description,
           children: n
         })]
-      }), l && (0, r.jsx)(N, {
+      }), a && (0, r.jsx)(N, {
         leftOffset: o,
-        invertTail: c
+        invertTail: l
       })]
     })
   },

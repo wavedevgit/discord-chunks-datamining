@@ -117,8 +117,8 @@ let O = e => {
       refreshCategories: k
     } = (0, f.ZP)({
       location: "CollectiblesFeedShop"
-    }), P = null !== (t = null != g ? g : v) && void 0 !== t ? t : x, S = (0, s.e7)([u.default], () => u.default.getCurrentUser()), w = (0, p.b)("Collectibles Shop Button"), {
-      noCache: E,
+    }), P = null !== (t = null != g ? g : v) && void 0 !== t ? t : x, S = (0, s.e7)([u.default], () => u.default.getCurrentUser()), E = (0, p.b)("Collectibles Shop Button"), {
+      noCache: w,
       includeUnpublished: L
     } = (0, m.Z)(), I = l.useCallback(() => {
       k()
@@ -129,8 +129,8 @@ let O = e => {
       null != g ? e.push("shop load fetch categories error: ".concat(P.message)) : null != v ? e.push("shop load fetch purchase error: ".concat(P.message)) : e.push("shop load claim error: ".concat(P.message)), d.Z.captureMessage(e.join("\n"), {
         tags: {
           isStaff: S.isStaff().toString(),
-          preloadEnabled: w.toString(),
-          disableCache: E.toString(),
+          preloadEnabled: E.toString(),
+          disableCache: w.toString(),
           includeUnpublished: L.toString()
         }
       })

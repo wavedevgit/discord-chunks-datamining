@@ -92,12 +92,12 @@ let y = e => {
             [b.underDevelopment]: t.underDevelopment
           }),
           children: [(0, r.jsx)("img", {
-            className: o()(b.thumbnail),
+            className: b.thumbnail,
             alt: "",
             src: null == O ? void 0 : O.iconURL,
             draggable: !1
           }), (0, r.jsx)("div", {
-            className: o()(b.insetBorder)
+            className: b.insetBorder
           })]
         }), E && (0, r.jsx)("div", {
           className: b.iconCircle,

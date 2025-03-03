@@ -1,12 +1,12 @@
-/** Chunk was on 93382 **/
-l.d(t, {
-  _: () => n
-}), l(47120);
-var r = l(224706),
-  i = l(594190),
-  s = l(823379);
-async function n() {
-  let e = i.ZP.getRunningGames();
+/** Chunk was on 46746 **/
+n.d(t, {
+  _: () => s
+}), n(47120);
+var r = n(224706),
+  l = n(594190),
+  i = n(823379);
+async function s() {
+  let e = l.ZP.getRunningGames();
   return (await Promise.all(e.map(async e => {
     let t;
     if (null == e.name) return null;
@@ -15,13 +15,13 @@ async function n() {
     } catch (e) {
       return null
     }
-    let l = e.windowHandle,
-      i = e.name,
-      s = t.icon;
-    return null != l && null != i && null != s ? {
-      id: "window:".concat(l),
-      name: i,
-      url: "data:image/bmp;base64,".concat(s)
+    let n = e.windowHandle,
+      l = e.name,
+      i = t.icon;
+    return null != n && null != l && null != i ? {
+      id: "window:".concat(n),
+      name: l,
+      url: "data:image/bmp;base64,".concat(i)
     } : null
-  }))).filter(s.lm)
+  }))).filter(i.lm)
 }

@@ -432,9 +432,9 @@ function S(e) {
 }
 
 function E() {
-  let [e, t] = a.useState([]), [n, l] = a.useState([]), [o, h] = a.useState(), [x, p] = a.useState(), [b, y] = a.useState([]), [C, E] = a.useState([]), [k, w] = a.useState(!0);
+  let [e, t] = a.useState([]), [n, l] = a.useState([]), [i, o] = a.useState(), [h, x] = a.useState(), [p, b] = a.useState([]), [y, C] = a.useState([]), [E, k] = a.useState(!0);
   a.useEffect(() => {
-    (0 === e.length || 0 === n.length || k) && v().then(e => {
+    (0 === e.length || 0 === n.length || E) && v().then(e => {
       let n = Object.keys(e.trial).map(t => ({
           label: t,
           value: e.trial[t]
@@ -443,22 +443,22 @@ function E() {
           label: t,
           value: e.discount[t]
         }));
-      t(n), l(r), null == o && h(n[0].value), null == x && p(r[0].value)
+      t(n), l(r), null == i && o(n[0].value), null == h && x(r[0].value)
     })
-  }, [e, n, o, x, k]), a.useEffect(() => {
-    k && (w(!1), m.Z.forceReset(), (0, d.T)(), N().then(e => {
-      y(e.trial.sort((e, t) => e.id.localeCompare(t.id))), E(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
+  }, [e, n, i, h, E]), a.useEffect(() => {
+    E && (k(!1), m.Z.forceReset(), (0, d.T)(), N().then(e => {
+      b(e.trial.sort((e, t) => e.id.localeCompare(t.id))), C(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
-  }, [k]);
-  let I = async () => {
-    null != o && (await j(o, "trial"), w(!0))
+  }, [E]);
+  let w = async () => {
+    null != i && (await j(i, "trial"), k(!0))
+  }, I = async () => {
+    null != h && (await j(h, "discount"), k(!0))
   }, Z = async () => {
-    null != x && (await j(x, "discount"), w(!0))
-  }, P = async () => {
-    await O(), w(!0)
+    await O(), k(!0)
   };
   return (0, r.jsx)(c.zJl, {
-    className: i()(_.panel),
+    className: _.panel,
     children: (0, r.jsxs)("div", {
       className: g.panelInner,
       children: [(0, r.jsxs)("section", {
@@ -470,7 +470,7 @@ function E() {
           className: g.buttons,
           children: [(0, r.jsx)(c.zxk, {
             size: c.zxk.Sizes.SMALL,
-            onClick: P,
+            onClick: Z,
             children: "Clear all User Offers"
           }), (0, r.jsx)(c.zxk, {
             size: c.zxk.Sizes.SMALL,
@@ -478,7 +478,7 @@ function E() {
             children: "Clear Mobile Trials DismissibleContent"
           }), (0, r.jsx)(c.zxk, {
             size: c.zxk.Sizes.SMALL,
-            onClick: () => w(!0),
+            onClick: () => k(!0),
             children: "Refresh DevTools"
           })]
         })]
@@ -492,13 +492,13 @@ function E() {
           children: [(0, r.jsx)(c.PhF, {
             className: g.input,
             options: e,
-            isSelected: e => o === e,
+            isSelected: e => i === e,
             placeholder: "Trial Type",
             serialize: e => String(e),
-            select: e => h(e),
+            select: e => o(e),
             popoutLayerContext: f.O$
           }), (0, r.jsx)(c.zxk, {
-            onClick: I,
+            onClick: w,
             children: "Create"
           })]
         })]
@@ -512,35 +512,35 @@ function E() {
           children: [(0, r.jsx)(c.PhF, {
             className: g.input,
             options: n,
-            isSelected: e => x === e,
+            isSelected: e => h === e,
             placeholder: "Discount Type",
             serialize: e => String(e),
-            select: e => p(e),
+            select: e => x(e),
             popoutLayerContext: f.O$
           }), (0, r.jsx)(c.zxk, {
-            onClick: Z,
+            onClick: I,
             children: "Create"
           })]
         })]
-      }), b.length > 0 && (0, r.jsxs)("section", {
+      }), p.length > 0 && (0, r.jsxs)("section", {
         className: g.section,
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-md/semibold",
           children: "Existing Trial Offers"
-        }), b.map(t => (0, r.jsx)(T, {
+        }), p.map(t => (0, r.jsx)(T, {
           offer: t,
           offerOptions: e,
-          forceRefetch: () => w(!0)
+          forceRefetch: () => k(!0)
         }, t.id))]
-      }), C.length > 0 && (0, r.jsxs)("section", {
+      }), y.length > 0 && (0, r.jsxs)("section", {
         className: g.section,
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-md/semibold",
           children: "Existing Discount Offers"
-        }), C.map(e => (0, r.jsx)(S, {
+        }), y.map(e => (0, r.jsx)(S, {
           offer: e,
           offerOptions: n,
-          forceRefetch: () => w(!0)
+          forceRefetch: () => k(!0)
         }, e.id))]
       })]
     })

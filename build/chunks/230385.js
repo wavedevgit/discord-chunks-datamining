@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(47120);
 var r = n(704215),
   i = n(147913),
@@ -37,8 +37,25 @@ function g(e) {
   }
   return e
 }
-let m = new o.Z("VoiceFilterManager");
-class E extends i.Z {
+
+function m(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let v = new o.Z("VoiceFilterManager");
+class b extends i.Z {
   loadNativeModule() {
     (0, f.r5)()
   }
@@ -48,7 +65,7 @@ class E extends i.Z {
       analyticsContext: n
     } = e, r = null != t ? d.Z.getVoiceFilter(t) : void 0;
     if (null == r && null != t) {
-      m.error("requested Voice Filter is missing in VoiceFilterStore");
+      v.error("requested Voice Filter is missing in VoiceFilterStore");
       return
     }
     if ((null == r ? void 0 : r.modelIds) != null) {
@@ -59,7 +76,7 @@ class E extends i.Z {
           url: e[t].url,
           fileName: "".concat(t, ".onnx")
         }));
-      for (let e of (m.info("Ensuring we have dependencies for voice filter", r.id, t), t))(0, f.fz)(e, n)
+      for (let e of (v.info("Ensuring we have dependencies for voice filter", r.id, t), t))(0, f.fz)(e, n)
     } else(0, f.rk)(t, n)
   }
   handleVoiceFilterDownloadReady(e) {
@@ -76,13 +93,13 @@ class E extends i.Z {
       }), a && null != i) {
       let e = d.Z.getVoiceFilter(i);
       if (null == e) {
-        m.error("the VF in mostRecentlyRequestedVoiceFilter is missing. Has the store been cleared?");
+        v.error("the VF in mostRecentlyRequestedVoiceFilter is missing. Has the store been cleared?");
         return
       }
       let n = e.modelIds,
         o = Object.values(null != n ? n : {}).filter(e => !d.Z.isModelDownloaded(e)).filter(e => e !== t);
       if (o.length > 0) {
-        m.info("waiting for more dependencies", {
+        v.info("waiting for more dependencies", {
           mostRecentlyRequestedVoiceFilter: i,
           missingDependencies: o
         });
@@ -106,22 +123,25 @@ class E extends i.Z {
   handleVoiceFilterApplied(e) {
     let {
       voiceFilterId: t,
-      analyticsContext: n
-    } = e, i = s.Z.getPreviousVoiceFilter();
-    if (null !== i && null === t) {
+      analyticsContext: n,
+      activationDurationMs: i
+    } = e, o = s.Z.getPreviousVoiceFilter();
+    if (null !== o && null === t) {
       let e = s.Z.getPreviousVoiceFilterAppliedAt(),
         t = null === e ? null : Date.now() - e;
       l.default.track(_.rMx.VOICE_FILTER_DISABLED, {
-        active_voice_filter_id: i,
+        active_voice_filter_id: o,
         duration_voice_filter_applied: t
       })
     }
     null !== t && ((0, a.EW)(r.z.VOICE_FILTER_IN_CALL_COACHMARK, {
       dismissAction: p.L.INDIRECT_ACTION
-    }), l.default.track(_.rMx.VOICE_FILTER_ENABLED, g({
+    }), l.default.track(_.rMx.VOICE_FILTER_ENABLED, E(g({
       active_voice_filter_id: t,
-      previous_filter_id: i
-    }, (0, u.w)(n))))
+      previous_filter_id: o
+    }, (0, u.w)(n)), {
+      time_to_activate_native_ms: i
+    })))
   }
   handleVoiceFilterApplyFailed(e) {
     let {
@@ -146,4 +166,4 @@ class E extends i.Z {
     })
   }
 }
-let v = new E
+let y = new b

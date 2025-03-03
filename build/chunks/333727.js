@@ -6,8 +6,8 @@ var i = n(278323),
   r = n(13245),
   o = n(45114),
   l = n(237997),
-  s = n(145597),
-  a = n(620954),
+  a = n(145597),
+  s = n(620954),
   u = n(987650),
   c = n(981631),
   d = n(388032);
@@ -22,7 +22,7 @@ function p(e, t, n, p) {
     {
       trackView: g,
       trackClick: O
-    } = (0, a.R)(u.n0.ActivityInvite, {
+    } = (0, s.R)(u.n0.ActivityInvite, {
       notif_type: u.n0.ActivityInvite,
       notif_user_id: t.id,
       activity_type: c.mFx.JOIN_REQUEST,
@@ -42,7 +42,7 @@ function p(e, t, n, p) {
         channelId: e.id,
         type: c.mFx.JOIN,
         activity: p,
-        location: l.default.isLocked((0, s.getPID)()) ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
+        location: l.default.isLocked((0, a.getPID)()) ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
       }), O("join"), r.Z.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {

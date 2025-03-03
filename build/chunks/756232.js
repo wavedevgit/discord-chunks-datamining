@@ -1,5 +1,4 @@
-/** Chunk was on 87668 **/
-"use strict";
+/** Chunk was on 46746 **/
 e.exports = {
   upsellBanner: "upsellBanner__39bd2",
   enhancedBanner: "enhancedBanner__39bd2",

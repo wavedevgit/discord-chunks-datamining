@@ -202,7 +202,7 @@ function eg(e) {
     c(e), null == s || s(e)
   };
   return (0, r.jsx)(h.zF9, {
-    className: a()(ei.collapseable),
+    className: ei.collapseable,
     collapsibleContent: (0, r.jsx)("div", {
       className: ei.groupCollapsedContainer,
       children: t

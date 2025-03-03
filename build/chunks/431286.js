@@ -1,6 +1,6 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  i: () => v
+  i: () => y
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -17,9 +17,9 @@ var r = n(200651),
   g = n(479766),
   m = n(331663),
   b = n(921944),
-  y = n(642145);
+  v = n(642145);
 
-function v() {
+function y() {
   let {
     hasLayers: e
   } = (0, l.cj)([h.Z], () => ({
@@ -29,12 +29,12 @@ function v() {
   } = (0, l.cj)([g.Z], () => ({
     onboardingModalOpenedPrior: g.Z.onboardingModalOpenedPrior
   })), {
-    enabled: v
+    enabled: y
   } = (0, f.W)({
     location: "virtual_currency_announcement_modal"
-  }), [O, j] = (0, d.US)(v ? [o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...m.b.useSelectedDismissibleContent), _ = (0, s.s9z)(s.JQI);
+  }), [_, O] = (0, d.US)(y ? [o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...m.b.useSelectedDismissibleContent), j = (0, s.s9z)(s.JQI);
   i.useEffect(() => {
-    v && !t && O === o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && !e && !_ && (c.Z.dispatch({
+    y && !t && _ === o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && !e && !j && (c.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
     }), (0, a.ZD)(async () => {
       let {
@@ -49,22 +49,22 @@ function v() {
           transitionState: i,
           onClose: n,
           ctaOnClick: () => {
-            j(b.L.USER_DISMISS_ALL), (0, u.EW)(o.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
+            O(b.L.USER_DISMISS_ALL), (0, u.EW)(o.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
               dismissAction: b.L.USER_DISMISS_ALL,
               groupName: b.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, u.EW)(o.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
               dismissAction: b.L.USER_DISMISS_ALL,
               groupName: b.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, p.navigateToQuestHome)({
-              questId: y.V
+              questId: v.V
             }), n()
           }
         })
       }
     }, {
       onCloseCallback: () => {
-        j(b.L.USER_DISMISS)
+        O(b.L.USER_DISMISS)
       }
     }))
-  }, [O, v, t, j, e, _])
+  }, [_, y, t, O, e, j])
 }

@@ -1,10 +1,10 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
   $k: () => a,
   GQ: () => c,
   Hb: () => d,
   JD: () => m,
-  MF: () => y,
+  MF: () => v,
   NY: () => u,
   Pw: () => l,
   Q0: () => h,
@@ -32,7 +32,7 @@ let r = 8,
   g = 56,
   m = 16,
   b = 5,
-  y = {
+  v = {
     origin: {
       x: -36,
       y: 7

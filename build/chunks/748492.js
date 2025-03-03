@@ -152,7 +152,7 @@ function k(e) {
     onMouseLeave: c,
     onDoubleClick: u,
     children: [(0, r.jsx)("div", {
-      className: o()(L.topControls),
+      className: L.topControls,
       children: (0, r.jsx)(v.r, {
         idle: f,
         title: null !== (t = null == h ? void 0 : h.name) && void 0 !== t ? t : n.name,

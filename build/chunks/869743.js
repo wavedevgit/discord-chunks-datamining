@@ -1,19 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => E
+  Z: () => g
 });
 var r = n(200651),
-  i = n(120356),
-  o = n.n(i),
-  a = n(481060),
-  s = n(299206),
-  l = n(726521),
-  c = n(389052),
-  u = n(388032),
-  d = n(248717);
+  i = n(481060),
+  o = n(299206),
+  a = n(726521),
+  s = n(389052),
+  l = n(388032),
+  c = n(248717);
 
-function f(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,20 +20,20 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,99 +44,99 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = e => {
+let p = e => {
     let {
       appRecord: t,
       closePopout: n,
-      showAppReportingOption: i,
-      selectedGuildId: o,
-      selectedChannelId: c,
+      showAppReportingOption: s,
+      selectedGuildId: c,
+      selectedChannelId: u,
       children: d = null
-    } = e, f = (0, s.Z)({
+    } = e, f = (0, o.Z)({
       id: t.id,
-      label: u.NW.string(u.t["+NP/b2"])
+      label: l.NW.string(l.t["+NP/b2"])
     });
-    return (0, r.jsxs)(a.v2r, {
+    return (0, r.jsxs)(i.v2r, {
       navId: "authorized-app-action-menu",
       onClose: n,
-      "aria-label": u.NW.string(u.t.tKobzc),
+      "aria-label": l.NW.string(l.t.tKobzc),
       onSelect: void 0,
-      children: [i ? (0, r.jsx)(a.sNh, {
+      children: [s ? (0, r.jsx)(i.sNh, {
         id: "report",
-        label: u.NW.string(u.t["+78Pfn"]),
+        label: l.NW.string(l.t["+78Pfn"]),
         color: "danger",
-        action: () => (0, l.uu)({
+        action: () => (0, a.uu)({
           application: t,
           entrypoint: "authorized_apps_settings",
-          contextualGuildId: o,
-          contextualChannelId: c
+          contextualGuildId: c,
+          contextualChannelId: u
         })
       }) : null, d, f]
     })
   },
-  m = e => {
+  h = e => {
     let {
       appRecord: t,
       botUser: n,
       closePopout: i,
       showAppReportingOption: o,
       selectedGuildId: a,
-      selectedChannelId: s
+      selectedChannelId: l
     } = e;
-    return (0, r.jsx)(g, {
+    return (0, r.jsx)(p, {
       appRecord: t,
       closePopout: i,
       showAppReportingOption: o,
       selectedGuildId: a,
-      selectedChannelId: s,
-      children: (0, c.Z)({
+      selectedChannelId: l,
+      children: (0, s.Z)({
         user: n,
         location: "UserSettingsAuthedApps",
         color: "danger"
       })
     })
   },
-  E = e => {
+  g = e => {
     let {
       appRecord: t,
       showAppReportingOption: n,
-      selectedGuildId: i,
-      selectedChannelId: s
+      selectedGuildId: o,
+      selectedChannelId: a
     } = e;
-    return (0, r.jsx)(a.yRy, {
+    return (0, r.jsx)(i.yRy, {
       renderPopout: e => {
         let {
-          closePopout: o
+          closePopout: i
         } = e;
-        return null == t.bot ? (0, r.jsx)(g, {
+        return null == t.bot ? (0, r.jsx)(p, {
           appRecord: t,
-          closePopout: o,
+          closePopout: i,
           showAppReportingOption: n,
-          selectedGuildId: i,
-          selectedChannelId: s
-        }) : (0, r.jsx)(m, {
+          selectedGuildId: o,
+          selectedChannelId: a
+        }) : (0, r.jsx)(h, {
           appRecord: t,
           botUser: t.bot,
-          closePopout: o,
+          closePopout: i,
           showAppReportingOption: n,
-          selectedGuildId: i,
-          selectedChannelId: s
+          selectedGuildId: o,
+          selectedChannelId: a
         })
       },
       align: "right",
       position: "bottom",
-      children: e => (0, r.jsx)(a.P3F, h(_({
-        className: o()(d.actionMenuButton),
-        "aria-label": u.NW.string(u.t.UKOtz8)
+      children: e => (0, r.jsx)(i.P3F, _(d({
+        className: c.actionMenuButton,
+        "aria-label": l.NW.string(l.t.UKOtz8)
       }, e), {
-        children: (0, r.jsx)(a.xhG, {
+        children: (0, r.jsx)(i.xhG, {
           size: "xs",
-          color: a.TVs.colors.INTERACTIVE_NORMAL
+          color: i.TVs.colors.INTERACTIVE_NORMAL
         })
       }))
     })

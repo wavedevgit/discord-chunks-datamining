@@ -151,7 +151,7 @@ class R extends i.Component {
       "aria-label": E.NW.string(E.t["3AS4UF"]),
       size: s.CgR.DYNAMIC,
       transitionState: t,
-      className: a()(v.uploadModal),
+      className: v.uploadModal,
       children: [(0, r.jsxs)("div", {
         className: v.inner,
         children: [(0, r.jsxs)("div", {

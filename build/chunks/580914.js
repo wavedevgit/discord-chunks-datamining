@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => E
+  Z: () => w
 }), r(47120);
 var n = r(200651),
   l = r(192379),
@@ -39,7 +39,7 @@ let S = {
     type: a.z.HERO,
     categoryStoreListingId: ""
   },
-  w = e => {
+  E = e => {
     var t, r, n, l;
     return null == e ? S : {
       rankedSkuIds: null !== (t = e.heroRanking) && void 0 !== t ? t : [],
@@ -59,26 +59,26 @@ let S = {
       categoryStoreListingId: e.storeListingId
     }
   },
-  E = e => {
+  w = e => {
     let {
       isLoading: t,
       handleTransition: r,
       category: i,
       heroBlock: a,
       tab: C
-    } = e, v = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), E = (0, s.e7)([b.Z], () => b.Z.isFocused()), L = (0, s.e7)([f.default], () => f.default.getCurrentUser()), I = (0, y.u)(), N = l.useMemo(() => null != a ? a : w(i), [a, i]), {
+    } = e, v = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), w = (0, s.e7)([b.Z], () => b.Z.isFocused()), L = (0, s.e7)([f.default], () => f.default.getCurrentUser()), I = (0, y.u)(), N = l.useMemo(() => null != a ? a : E(i), [a, i]), {
       bannerOverride: T,
       heroLogo: B,
       heroBannerStatic: Z,
       heroBannerAnimated: F
-    } = (0, _.h)(N), A = null == T ? void 0 : T.heroBanner, R = l.useMemo(() => I(N.rankedSkuIds), [t, I, N.rankedSkuIds]), W = (0, g.l)(R).slice(0, 4), D = C === O.AW.ORBS ? k.NW.string(k.t.qQq91t) : k.NW.formatToPlainString(k.t.wvKYCg, {
+    } = (0, _.hr)(N), A = null == T ? void 0 : T.heroBanner, R = l.useMemo(() => I(N.rankedSkuIds), [t, I, N.rankedSkuIds]), W = (0, g.l)(R).slice(0, 4), D = C === O.AW.ORBS ? k.NW.string(k.t.qQq91t) : k.NW.formatToPlainString(k.t.wvKYCg, {
       category_name: N.name
     });
     return null != L && (t || N !== S) ? (0, n.jsxs)("div", {
       className: P.heroBlock,
       children: [(0, n.jsxs)("div", {
         className: P.banner,
-        children: [null != F && !v && E ? (0, n.jsx)(p.Z, {
+        children: [null != F && !v && w ? (0, n.jsx)(p.Z, {
           className: P.bannerVideoBackground,
           src: F,
           autoPlay: !0,
@@ -106,17 +106,17 @@ let S = {
       }), (0, n.jsxs)("div", {
         className: P.heroBlockContent,
         children: [(0, n.jsxs)("div", {
-          className: o()(P.heroHeaderContainer),
+          className: P.heroHeaderContainer,
           children: [t ? (0, n.jsx)("div", {
-            className: o()(P.heroHeaderBadgeLogoSummaryContainer)
+            className: P.heroHeaderBadgeLogoSummaryContainer
           }) : (0, n.jsxs)("div", {
-            className: o()(P.heroHeaderBadgeLogoSummaryContainer),
+            className: P.heroHeaderBadgeLogoSummaryContainer,
             children: [null != N.unpublishedAt && (0, n.jsx)(c.IGR, {
               disableColor: !0,
               text: k.NW.string(k.t["h/uBCQ"]),
               className: P.limitedTimeBadge
             }), (0, n.jsxs)("div", {
-              className: o()(P.heroLogoNameContainer),
+              className: P.heroLogoNameContainer,
               children: [null != N.logoUrl && (0, n.jsx)("img", {
                 className: P.heroHeaderLogo,
                 src: B,

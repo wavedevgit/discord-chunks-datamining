@@ -1,4 +1,4 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(230036), n(978209);
@@ -17,36 +17,36 @@ var r = n(200651),
   g = n(306680),
   m = n(594174),
   b = n(768581),
-  y = n(709054),
-  v = n(981631),
-  O = n(124368),
-  j = n(388032),
-  _ = n(286608);
+  v = n(709054),
+  y = n(981631),
+  _ = n(124368),
+  O = n(388032),
+  j = n(286608);
 
 function C(e) {
   let {
     channel: t
   } = e, l = (0, a.Wu)([d.Z, g.ZP, f.Z], () => {
     let e = d.Z.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
-    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.Z.can(v.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
+    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.Z.can(y.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
       let n = g.ZP.lastMessageId(e.id),
         r = g.ZP.lastMessageId(t.id);
-      return y.default.compare(n, r)
+      return v.default.compare(n, r)
     }).reverse().value()
   }), c = t.isForumLikeChannel() ? 5 : 3;
   return i.useEffect(() => {
     (0, p.q)()
   }, []), (0, r.jsxs)("div", {
-    className: _.popout,
+    className: j.popout,
     children: [(0, r.jsx)(s.Text, {
-      className: _.title,
+      className: j.title,
       variant: "text-xs/bold",
       color: "header-secondary",
-      children: t.isForumLikeChannel() ? j.NW.string(j.t.ioVdOz) : j.NW.string(j.t.VNYs2t)
+      children: t.isForumLikeChannel() ? O.NW.string(O.t.ioVdOz) : O.NW.string(O.t.VNYs2t)
     }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(x, {
       thread: e
     }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(s.P3F, {
-      className: _.more,
+      className: j.more,
       onClick: () => {
         t.isForumLikeChannel() ? (0, u.Kh)(t.id) : (0, s.ZDy)(async () => {
           let {
@@ -77,7 +77,7 @@ function C(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "none",
-        children: j.NW.string(j.t["4qdZ9/"])
+        children: O.NW.string(O.t["4qdZ9/"])
       })
     })]
   })
@@ -88,29 +88,29 @@ function x(e) {
     thread: t
   } = e, n = (0, a.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, p.Ok)(t);
   return (0, r.jsxs)(s.P3F, {
-    className: _.row,
+    className: j.row,
     onClick: e => {
-      (0, h.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, O.on.POPOUT)
+      (0, h.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, _.on.POPOUT)
     },
     children: [null == n ? (0, r.jsx)("img", {
-      className: _.avatar,
+      className: j.avatar,
       src: b.ZP.getDefaultAvatarURL(void 0, void 0),
       alt: ""
     }) : (0, r.jsx)(c.Z, {
-      className: _.avatar,
+      className: j.avatar,
       user: n,
       size: s.EFr.SIZE_16
     }), (0, r.jsx)(s.Text, {
-      className: _.name,
+      className: j.name,
       variant: "text-sm/normal",
       color: "none",
       children: t.name
     }), (0, r.jsxs)(s.Text, {
-      className: _.timestamp,
+      className: j.timestamp,
       variant: "text-sm/normal",
       color: "none",
       children: [(0, r.jsx)("span", {
-        className: _.bullet,
+        className: j.bullet,
         children: "•"
       }), (0, p.Ye)(i)]
     })]

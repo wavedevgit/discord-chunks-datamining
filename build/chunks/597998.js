@@ -131,12 +131,12 @@ function _(e) {
       className: o()(T.icon, O)
     })
   }, "activity")), v === A.YE.XBOX || j === x.wR.XBOX ? W.push((0, r.jsx)("div", {
-    className: o()(T.iconSpacing),
+    className: T.iconSpacing,
     children: (0, r.jsx)(P.Z, {
       className: o()(T.icon, O)
     })
   }, "xbox")) : (v === A.YE.PLAYSTATION || j === x.wR.PLAYSTATION) && W.push((0, r.jsx)("div", {
-    className: o()(T.iconSpacing),
+    className: T.iconSpacing,
     children: (0, r.jsx)(S.Z, {
       className: o()(T.icon, O)
     })
@@ -337,7 +337,7 @@ let D = function(e) {
           },
           children: (0, r.jsx)(a.xhG, {
             size: "md",
-            className: o()(T.icon)
+            className: T.icon
           })
         })
       }))]

@@ -1,4 +1,4 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
   Z: () => x
 });
@@ -17,11 +17,11 @@ var r = n(200651),
   g = n(594174),
   m = n(40153),
   b = n(603592),
-  y = n(981631),
-  v = n(675999),
-  O = n(388032),
-  j = n(384185);
-let _ = {
+  v = n(981631),
+  y = n(675999),
+  _ = n(388032),
+  O = n(384185);
+let j = {
   origin: {
     x: -16,
     y: 0
@@ -64,38 +64,38 @@ function x(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, a = (0, l.e7)([f.Z], () => f.Z.getGuilds()), x = i.useMemo(() => Object.values(a), [a]), P = (0, l.e7)([g.default], () => g.default.getCurrentUser()), N = i.useMemo(() => x.some(e => e.isOwner(P)), [x, P]), S = (0, o.s9z)(e => (0, o.DEQ)(e, v.PU)), {
-    analyticsLocations: I
-  } = (0, s.ZP)(), Z = (0, u.Q3)("CreateJoinGuildButton"), E = (0, r.jsx)(b.Z, {
+  } = e, a = (0, l.e7)([f.Z], () => f.Z.getGuilds()), x = i.useMemo(() => Object.values(a), [a]), S = (0, l.e7)([g.default], () => g.default.getCurrentUser()), P = i.useMemo(() => x.some(e => e.isOwner(S)), [x, S]), I = (0, o.s9z)(e => (0, o.DEQ)(e, y.PU)), {
+    analyticsLocations: N
+  } = (0, s.ZP)(), Z = (0, u.Q3)("CreateJoinGuildButton"), w = (0, r.jsx)(b.Z, {
     showPill: !1,
     id: "create-join-button",
     onClick: () => {
       (0, d.yU)() ? (0, p.Z)({
         analyticsSource: {
-          page: y.Sbl.CREATE_JOIN_GUILD_MODAL
+          page: v.Sbl.CREATE_JOIN_GUILD_MODAL
         },
         analyticsLocation: {
-          page: y.Sbl.CREATE_JOIN_GUILD_MODAL,
-          section: y.jXE.GUILD_CAP_UPSELL_MODAL
+          page: v.Sbl.CREATE_JOIN_GUILD_MODAL,
+          section: v.jXE.GUILD_CAP_UPSELL_MODAL
         },
-        analyticsLocations: I
+        analyticsLocations: N
       }) : c.Z.openCreateGuildModal({
         location: "Guild List"
       })
     },
-    selected: S,
+    selected: I,
     onContextMenu: C,
-    tooltip: O.NW.string(O.t.l5WIbW),
+    tooltip: _.NW.string(_.t.l5WIbW),
     icon: Z ? o.oFk : o.BRu
   });
-  return t ? E : (0, r.jsx)("div", {
-    className: j.tutorialContainer,
+  return t ? w : (0, r.jsx)("div", {
+    className: O.tutorialContainer,
     children: (0, r.jsxs)(h.Z, {
-      tutorialId: N ? "create-more-servers" : "create-first-server",
-      inlineSpecs: _,
+      tutorialId: P ? "create-more-servers" : "create-first-server",
+      inlineSpecs: j,
       position: "right",
-      children: [E, null != n && (0, r.jsx)(m.ZP, {
-        name: O.NW.string(O.t["45xjMz"]),
+      children: [w, null != n && (0, r.jsx)(m.ZP, {
+        name: _.NW.string(_.t["45xjMz"]),
         targetNode: n,
         below: !0,
         noCombine: !0

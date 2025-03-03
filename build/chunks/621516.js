@@ -170,7 +170,7 @@ let E = e => {
         children: [(0, r.jsxs)("div", {
           className: l()(N.contentRow, H && N.contentRowOne),
           children: [(0, r.jsx)("div", {
-            className: l()(N.contentMediaContainer),
+            className: N.contentMediaContainer,
             children: (0, r.jsxs)("div", {
               className: N.contentVideoContainer,
               children: [(0, r.jsx)(I, {
@@ -241,7 +241,7 @@ let E = e => {
         }), H && (0, r.jsxs)("div", {
           className: l()(N.contentRow, N.contentRowTwo),
           children: [(0, r.jsx)("div", {
-            className: l()(N.contentMediaContainer),
+            className: N.contentMediaContainer,
             children: (0, r.jsxs)("div", {
               className: N.contentImageContainer,
               children: [(0, r.jsx)("img", {

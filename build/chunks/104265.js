@@ -83,7 +83,7 @@ function _(e) {
     style: L,
     className: W,
     children: (0, r.jsxs)(u.P3F, {
-      className: i()(x.optionButton),
+      className: x.optionButton,
       onClick: () => {
         N(!a), _(!a)
       },

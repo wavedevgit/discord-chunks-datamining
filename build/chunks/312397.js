@@ -148,7 +148,7 @@ class X extends i.PureComponent {
       canManageGuild: n
     } = this.props;
     return (0, r.jsxs)(j.Z, {
-      className: a()(z.__invalid_baseSection),
+      className: z.__invalid_baseSection,
       children: [(0, r.jsxs)(j.Z, {
         basis: "50%",
         justify: j.Z.Justify.BETWEEN,

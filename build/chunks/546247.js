@@ -9,7 +9,7 @@ var r = n(200651),
 let a = function() {
   return (0, r.jsx)("div", {
     children: (0, r.jsxs)("div", {
-      className: l()(o.gradientBackground),
+      className: o.gradientBackground,
       children: [(0, r.jsx)("div", {
         className: l()(o.backgroundDark, o.sphere)
       }), (0, r.jsx)("div", {

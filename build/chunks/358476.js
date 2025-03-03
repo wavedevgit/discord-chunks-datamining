@@ -1,5 +1,4 @@
-/** Chunk was on 87668 **/
-"use strict";
+/** Chunk was on 46746 **/
 e.exports = {
   root: "root__32fe1",
   channelResult: "channelResult__32fe1",

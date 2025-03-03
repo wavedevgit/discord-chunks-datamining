@@ -1,13 +1,14 @@
 /** Chunk was on 76977 **/
+"use strict";
 n.d(t, {
   Z: () => L
 }), n(47120);
 var i = n(200651),
   r = n(192379),
-  o = n(642128),
-  s = n(442837),
-  l = n(481060),
-  a = n(619915),
+  s = n(642128),
+  o = n(442837),
+  a = n(481060),
+  l = n(619915),
   c = n(554747),
   d = n(373274),
   u = n(315174),
@@ -21,8 +22,8 @@ var i = n(200651),
   v = n(984933),
   O = n(888369),
   b = n(430824),
-  S = n(496675),
-  x = n(878884),
+  x = n(496675),
+  S = n(878884),
   E = n(19780),
   j = n(944486),
   N = n(9156),
@@ -134,35 +135,35 @@ class A extends r.PureComponent {
       {
         onDragStart: r
       } = n,
-      o = function(e, t) {
+      s = function(e, t) {
         if (null == e) return {};
         var n, i, r = function(e, t) {
           if (null == e) return {};
           var n, i, r = {},
-            o = Object.keys(e);
-          for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+            s = Object.keys(e);
+          for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
           return r
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var o = Object.getOwnPropertySymbols(e);
-          for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+          var s = Object.getOwnPropertySymbols(e);
+          for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
         }
         return r
       }(n, ["onDragStart"]),
       {
-        guild: s
-      } = o,
+        guild: o
+      } = s,
       {
-        controller: a,
+        controller: l,
         renderBanner: c,
         bannerVisible: f,
         communityInfoVisible: g
       } = this.state,
-      m = (null == s ? void 0 : s.id) === k._ ? d.j : d.E;
+      m = (null == o ? void 0 : o.id) === k._ ? d.j : d.E;
     return (0, i.jsxs)(P.Z, {
-      header: null != s ? (0, i.jsx)(u.ZP, {
-        guild: s,
-        controller: a,
+      header: null != o ? (0, i.jsx)(u.ZP, {
+        guild: o,
+        controller: l,
         renderBanner: c,
         bannerVisible: f,
         className: D.guildHeader,
@@ -170,21 +171,21 @@ class A extends r.PureComponent {
         onMouseDown: r,
         disableBannerAnimation: !1,
         communityInfoVisible: g,
-        children: (0, i.jsx)(l.yRy, {
+        children: (0, i.jsx)(a.yRy, {
           position: "right",
           renderPopout: this.renderSettings,
           children: e => (0, i.jsx)(I.ZP.Icon, R({
-            icon: l.ewm,
+            icon: a.ewm,
             label: T.NW.string(T.t["3D5yo6"])
           }, e))
         })
       }) : null,
       children: [(0, i.jsx)("div", {
         className: D.channelList,
-        children: null != s ? (0, i.jsx)(m, (e = R({}, o), t = t = {
-          guild: s,
+        children: null != o ? (0, i.jsx)(m, (e = R({}, s), t = t = {
+          guild: o,
           disableManageChannels: !0,
-          onScroll: null != s && null != s.banner ? this.handleScroll : null
+          onScroll: null != o && null != o.banner ? this.handleScroll : null
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -197,18 +198,18 @@ class A extends r.PureComponent {
         }), e)) : (0, i.jsx)(h.Z, {
           withBannerPadding: !1
         })
-      }), null != s && (0, i.jsx)("section", {
+      }), null != o && (0, i.jsx)("section", {
         className: D.panels,
         "aria-label": T.NW.string(T.t.StREWF),
         children: (0, i.jsx)(p.Z, {
-          guildId: s.id
+          guildId: o.id
         })
       })]
     })
   }
   constructor(...e) {
     super(...e), M(this, "state", {
-      controller: new o.Controller({
+      controller: new s.Controller({
         value: 1,
         immediate: !0
       }),
@@ -228,32 +229,32 @@ function L(e) {
   var t;
   let {
     guildId: n
-  } = e, r = (0, s.e7)([b.Z], () => b.Z.getGuild(n)), o = (0, s.e7)([v.ZP], () => v.ZP.getChannels(n)), l = (0, s.e7)([_.Z], () => _.Z.getCategories(n)), {
+  } = e, r = (0, o.e7)([b.Z], () => b.Z.getGuild(n)), s = (0, o.e7)([v.ZP], () => v.ZP.getChannels(n)), a = (0, o.e7)([_.Z], () => _.Z.getCategories(n)), {
     mutedChannels: d,
     collapseMuted: u
-  } = (0, s.cj)([N.ZP], () => ({
+  } = (0, o.cj)([N.ZP], () => ({
     mutedChannels: N.ZP.getMutedChannels(n),
     collapseMuted: N.ZP.isGuildCollapsed(n)
-  })), h = (0, s.e7)([C.ZP], () => C.ZP.getVoiceStates(n)), p = (0, s.e7)([m.Z], () => m.Z.getCollapsed()), {
+  })), h = (0, o.e7)([C.ZP], () => C.ZP.getVoiceStates(n)), p = (0, o.e7)([m.Z], () => m.Z.getCollapsed()), {
     scrollTo: I
-  } = (0, s.e7)([y.Z], () => y.Z.getGuildDimensions(n)), Z = (0, f.Z)(e => {
+  } = (0, o.e7)([y.Z], () => y.Z.getGuildDimensions(n)), Z = (0, f.Z)(e => {
     let {
       channelId: t
     } = e;
     return t
-  }), P = (0, s.e7)([j.Z], () => j.Z.getVoiceChannelId()), k = (0, s.e7)([S.Z], () => S.Z.getGuildVersion(n)), T = (0, s.e7)([g.Z], () => g.Z.version), D = (0, s.e7)([O.default], () => O.default.getGuildChangeSentinel(n)), M = (0, a.QN)(null == r ? void 0 : r.id), R = (0, c.gM)(null == r ? void 0 : r.id), L = null !== (t = null == r ? void 0 : r.hasFeature(w.oNc.COMMUNITY)) && void 0 !== t && t, W = (0, s.e7)([E.Z], () => E.Z.getChannelId()), z = (0, s.e7)([x.Z], () => x.Z.desyncedVoiceStatesCount);
+  }), P = (0, o.e7)([j.Z], () => j.Z.getVoiceChannelId()), k = (0, o.e7)([x.Z], () => x.Z.getGuildVersion(n)), T = (0, o.e7)([g.Z], () => g.Z.version), D = (0, o.e7)([O.default], () => O.default.getGuildChangeSentinel(n)), M = (0, l.QN)(null == r ? void 0 : r.id), R = (0, c.gM)(null == r ? void 0 : r.id), L = null !== (t = null == r ? void 0 : r.hasFeature(w.oNc.COMMUNITY)) && void 0 !== t && t, z = (0, o.e7)([E.Z], () => E.Z.getChannelId()), W = (0, o.e7)([S.Z], () => S.Z.desyncedVoiceStatesCount);
   return (0, i.jsx)(A, {
     guildId: n,
     guild: r,
-    channels: o,
-    categories: l,
+    channels: s,
+    categories: a,
     mutedChannels: d,
     scrollToChannel: I,
     selectedChannelId: Z,
     selectedVoiceChannelId: P,
     voiceStates: h,
-    rtcConnectedChannelId: W,
-    rtcDesyncedVoiceStatesCount: z,
+    rtcConnectedChannelId: z,
+    rtcDesyncedVoiceStatesCount: W,
     collapsedChannels: p,
     collapseMuted: u,
     guildReadStateSentinel: D,

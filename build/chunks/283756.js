@@ -36,7 +36,7 @@ let d = e => {
         })
       }) : null, null != t ? (0, r.jsx)(a.P3F, {
         onClick: t,
-        className: o()(u.iconWrapperActive),
+        className: u.iconWrapperActive,
         tabIndex: f ? -1 : 0,
         "aria-label": c.NW.string(c.t.RscU7O),
         children: (0, r.jsx)(a.o1U, {

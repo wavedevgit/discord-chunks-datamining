@@ -1,6 +1,6 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  T: () => y
+  T: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -24,17 +24,17 @@ function b(e, t) {
     children: e
   }, t)
 }
-let y = i.memo(function(e) {
+let v = i.memo(function(e) {
   var t, n;
   let {
-    guild: y
-  } = e, v = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(y.id), [y.id]), O = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(y.id)), j = i.useMemo(() => {
-    if (null == v || null == O) return 0;
+    guild: v
+  } = e, y = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(v.id), [v.id]), _ = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(v.id)), O = i.useMemo(() => {
+    if (null == y || null == _) return 0;
     let e = 0;
-    return v.forEach(t => {
-      null != O[t.channelId] && e++
+    return y.forEach(t => {
+      null != _[t.channelId] && e++
     }), e
-  }, [O, v]), _ = null == v ? 0 : v.length, C = (0, l.JA)("progress-bar-".concat(y.id));
+  }, [_, y]), j = null == y ? 0 : y.length, C = (0, l.JA)("progress-bar-".concat(v.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(a.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -62,7 +62,7 @@ let y = i.memo(function(e) {
       },
       className: m.progressBarContainer,
       onClick: function() {
-        (0, d.uL)(h.Z5c.CHANNEL(y.id, f.oC.GUILD_HOME))
+        (0, d.uL)(h.Z5c.CHANNEL(v.id, f.oC.GUILD_HOME))
       },
       children: [(0, r.jsxs)("div", {
         className: m.progressBarText,
@@ -77,8 +77,8 @@ let y = i.memo(function(e) {
             className: m.rightText,
             children: g.NW.format(g.t.eqZ1lZ, {
               numberHook: b,
-              total: _.toString(),
-              completed: j.toString()
+              total: j.toString(),
+              completed: O.toString()
             })
           }), (0, r.jsx)(p.Z, {
             className: m.arrow,
@@ -90,7 +90,7 @@ let y = i.memo(function(e) {
       }), (0, r.jsx)(a.Exd, {
         className: m.progressBar,
         foregroundGradientColor: [(0, s.Lq)(h.Ilk.GREEN_300), (0, s.Lq)(h.Ilk.GREEN_230)],
-        percent: j / _ * 100 + 3,
+        percent: O / j * 100 + 3,
         animate: !0
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

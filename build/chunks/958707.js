@@ -1,20 +1,20 @@
-/** Chunk was on 93382 **/
-l.d(t, {
-  Z: () => a
+/** Chunk was on 46746 **/
+n.d(t, {
+  Z: () => o
 });
-var r = l(200651);
-l(192379);
-var i = l(120356),
-  s = l.n(i),
-  n = l(917088);
+var r = n(200651);
+n(192379);
+var l = n(120356),
+  i = n.n(l),
+  s = n(917088);
 
-function a(e) {
+function o(e) {
   let {
     separator: t = !1
   } = e;
   return (0, r.jsx)("div", {
-    className: s()(n.divider, {
-      [n.separator]: t
+    className: i()(s.divider, {
+      [s.separator]: t
     })
   })
 }

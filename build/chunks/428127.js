@@ -1,6 +1,6 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -21,7 +21,7 @@ let b = {
   tension: 300
 };
 
-function y(e) {
+function v(e) {
   var t;
   let {
     guildChannels: n,
@@ -60,7 +60,7 @@ function y(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     position: t,
     guildChannels: n,
@@ -69,17 +69,17 @@ function v(e) {
     jumpToChannel: d
   } = e, {
     bottomBar: h,
-    topBar: v
-  } = (0, s.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), O = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
-    mode: j,
-    mentionCount: _,
+    topBar: y
+  } = (0, s.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), _ = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
+    mode: O,
+    mentionCount: j,
     targetChannelId: C
-  } = "bottom" === t ? h : v, x = j === f.x.HIDDEN, P = (0, c.q_F)({
+  } = "bottom" === t ? h : y, x = O === f.x.HIDDEN, S = (0, c.q_F)({
     to: {
       transform: x ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
-  }, O ? "respect-motion-settings" : "animate-never"), N = i.useCallback(e => {
+  }, _ ? "respect-motion-settings" : "animate-never"), P = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), null != C && d(C)
   }, [d, C]);
   return (0, r.jsx)("div", {
@@ -89,13 +89,13 @@ function v(e) {
     }),
     children: (0, r.jsx)(a.animated.div, {
       className: m.containerPadding,
-      style: P,
+      style: S,
       "aria-hidden": x,
-      children: j === f.x.HIDDEN ? (0, r.jsx)("div", {
+      children: O === f.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
-      }) : j === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
+      }) : O === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
-        onClick: N,
+        onClick: P,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
           size: "custom",
           color: "currentColor",
@@ -114,18 +114,18 @@ function v(e) {
           className: m.barText,
           children: g.NW.string(g.t.FCRiT0)
         })]
-      }) : j === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
+      }) : O === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
-        onClick: N,
+        onClick: P,
         children: (0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "status-danger-text",
           className: m.barText,
           children: g.NW.format(g.t.EQcLys, {
-            count: _
+            count: j
           })
         })
-      }) : j === f.x.VOICE_CHANNELS ? (0, r.jsx)(y, {
+      }) : O === f.x.VOICE_CHANNELS ? (0, r.jsx)(v, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

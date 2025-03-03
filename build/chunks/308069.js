@@ -46,7 +46,7 @@ let j = e => {
     }),
     children: (0, r.jsx)(m.ZP, {
       quest: t,
-      logotypeClassName: a()(b.rewardHighlightLogotype),
+      logotypeClassName: b.rewardHighlightLogotype,
       withGameTile: !1
     })
   });

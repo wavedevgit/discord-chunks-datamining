@@ -203,7 +203,7 @@ function B(e) {
             children: ei
           })]
         }), V ? (0, r.jsx)(d.IGR, {
-          className: l()(W.newBadge),
+          className: W.newBadge,
           color: c.Z.unsafe_rawColors.BRAND_260.css,
           text: L.NW.string(L.t.y2b7CA)
         }) : null]

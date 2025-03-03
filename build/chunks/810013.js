@@ -1,30 +1,30 @@
-/** Chunk was on 79477 **/
+/** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => m
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
 var l = n(442837),
-  s = n(481060),
-  i = n(314897),
-  a = n(938475),
-  o = n(499596),
+  i = n(481060),
+  s = n(314897),
+  o = n(938475),
+  a = n(499596),
   c = n(537135),
-  u = n(388032),
-  d = n(711597);
+  d = n(388032),
+  u = n(711597);
 
-function m(e) {
+function f(e) {
   let {
     channel: t
-  } = e, n = (0, l.e7)([i.default], () => i.default.getId()), m = (0, l.e7)([a.ZP], () => a.ZP.getVoiceStatesForChannel(t), [t]);
-  return (0, r.jsx)(s.xJW, {
-    title: u.NW.string(u.t.KPuWsr),
-    className: d.modalContent,
-    titleClassName: d.formItemTitle,
+  } = e, n = (0, l.e7)([s.default], () => s.default.getId()), f = (0, l.e7)([o.ZP], () => o.ZP.getVoiceStatesForChannel(t), [t]);
+  return (0, r.jsx)(i.xJW, {
+    title: d.NW.string(d.t.KPuWsr),
+    className: u.modalContent,
+    titleClassName: u.formItemTitle,
     children: (0, r.jsx)(c.Z, {
-      children: (0, r.jsx)(o.Z, {
+      children: (0, r.jsx)(a.Z, {
         channel: t,
-        users: m.filter(e => {
+        users: f.filter(e => {
           let {
             user: t
           } = e;

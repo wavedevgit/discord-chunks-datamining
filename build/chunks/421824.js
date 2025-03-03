@@ -8,8 +8,8 @@ n(192379);
 var r = n(481060),
   o = n(522474),
   l = n(556296),
-  s = n(13140),
-  a = n(44359),
+  a = n(13140),
+  s = n(44359),
   u = n(620954),
   c = n(987650),
   d = n(981631),
@@ -24,11 +24,11 @@ function h() {
     notif_type: c.n0.ClipsReminderNotification
   }), n = l.ZP.getKeybindForAction(d.kg4.SAVE_CLIP);
   if (null == n) return null;
-  let h = s.BB(n.shortcut, !0);
+  let h = a.BB(n.shortcut, !0);
   return {
     title: p.NW.format(p.t.S5uhCA, {
       keybind: h,
-      keybindHook: (e, t) => (0, i.jsx)(a.Z, {
+      keybindHook: (e, t) => (0, i.jsx)(s.Z, {
         keybind: h.split("+")
       }, t)
     }),

@@ -96,7 +96,7 @@ function B(e) {
       grow: L.INVITER,
       basis: 0,
       align: O.Z.Align.CENTER,
-      className: o()(W.text),
+      className: W.text,
       children: [null != n.inviter && (0, r.jsx)(x.Z, {
         user: n.inviter,
         size: m.EFr.SIZE_24,
@@ -144,7 +144,7 @@ function B(e) {
       grow: L.USES,
       basis: 0,
       align: O.Z.Align.CENTER,
-      className: o()(W.text),
+      className: W.text,
       children: (0, r.jsx)(m.Text, {
         className: W.uses,
         variant: "text-sm/normal",

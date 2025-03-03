@@ -1,6 +1,6 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  Z: () => y
+  Z: () => v
 }), n(653041), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -47,10 +47,10 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = i.memo(function(e) {
+let v = i.memo(function(e) {
   var {
     folderNode: t
-  } = e, y = function(e, t) {
+  } = e, v = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -66,11 +66,11 @@ let y = i.memo(function(e) {
     return i
   }(e, ["folderNode"]);
   let {
-    id: v,
-    name: O,
-    color: j,
-    children: _
-  } = t, C = _.map(e => e.id), x = (0, s.Z)(e => e.guildId), P = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(v)), N = function(e) {
+    id: y,
+    name: _,
+    color: O,
+    children: j
+  } = t, C = j.map(e => e.id), x = (0, s.Z)(e => e.guildId), S = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), P = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -80,39 +80,39 @@ let y = i.memo(function(e) {
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), S = (0, f.Z)(t), {
-    mentionCount: I,
+  }(t), I = (0, f.Z)(t), {
+    mentionCount: N,
     isMentionLowImportance: Z,
-    unread: E
+    unread: w
   } = (0, l.cj)([u.default], () => ({
     mentionCount: C.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
     isMentionLowImportance: C.every(e => u.default.getIsMentionLowImportance(e)),
     unread: C.some(e => u.default.hasUnread(e))
-  })), w = i.useCallback(() => {
-    a.Z.toggleGuildFolderExpand(v)
-  }, [v]), T = i.useCallback(e => {
+  })), E = i.useCallback(() => {
+    a.Z.toggleGuildFolderExpand(y)
+  }, [y]), T = i.useCallback(e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
       } = await n.e("52590").then(n.bind(n, 205784));
       return t => (0, r.jsx)(e, b(m({}, t), {
-        folderId: v,
-        folderName: O,
-        folderColor: j,
-        unread: E || I > 0
+        folderId: y,
+        folderName: _,
+        folderColor: O,
+        unread: w || N > 0
       }))
     })
-  }, [v, O, j, E, I]);
-  return (0, r.jsx)(h.Z, b(m({}, y), {
+  }, [y, _, O, w, N]);
+  return (0, r.jsx)(h.Z, b(m({}, v), {
     folderNode: t,
-    expanded: P,
+    expanded: S,
     selected: null != x && C.includes(x),
-    mentionCount: I,
+    mentionCount: N,
     isMentionLowImportance: Z,
-    unread: E,
-    mediaState: S,
-    defaultFolderName: N,
-    onExpandCollapse: w,
+    unread: w,
+    mediaState: I,
+    defaultFolderName: P,
+    onExpandCollapse: E,
     onContextMenu: T
   }))
 })

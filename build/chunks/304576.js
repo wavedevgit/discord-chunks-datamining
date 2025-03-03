@@ -78,7 +78,7 @@ let v = e => {
             referrer: B,
             isMarketingPageV2Enabled: !0
           }) : V && (0, r.jsx)("div", {
-            className: s()(O.affinityDescriptionV2),
+            className: O.affinityDescriptionV2,
             children: (0, r.jsx)(N.Z, {
               textColor: "text-normal",
               smallerText: !i,

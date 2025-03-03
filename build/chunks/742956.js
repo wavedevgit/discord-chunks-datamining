@@ -1,41 +1,39 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => d
 }), n(627341);
 var r = n(200651);
 n(192379);
-var i = n(120356),
-  o = n.n(i),
-  a = n(278074),
-  s = n(481060),
-  l = n(109213),
-  c = n(409813),
-  u = n(474936),
-  d = n(388032),
-  f = n(428407);
+var i = n(278074),
+  o = n(481060),
+  a = n(109213),
+  s = n(409813),
+  l = n(474936),
+  c = n(388032),
+  u = n(428407);
 
-function _(e) {
+function d(e) {
   let {
     step: t,
     onClose: n,
-    giftingOrigin: i
+    giftingOrigin: d
   } = e, {
-    enabled: _
-  } = l.G.useExperiment({
+    enabled: f
+  } = a.G.useExperiment({
     location: "CollectiblesGiftPaymentModalHeader"
   }, {
     autoTrackExposure: !1
-  }), p = (0, a.EQ)(t).with(c.h8.REVIEW, () => d.NW.string(d.t.JbRd5u)).with(c.h8.ADD_PAYMENT_STEPS, () => d.NW.string(d.t.QiGOam)).with(c.h8.GIFT_CUSTOMIZATION, () => _ && i === u.Wt.DM_CHANNEL ? d.NW.string(d.t["xU+d9P"]) : d.NW.string(d.t["JCFN//"])).with(c.h8.AWAITING_PURCHASE_TOKEN_AUTH, () => d.NW.string(d.t.lDbi6O)).with(c.h8.CONFIRM, () => "").otherwise(() => null);
-  return null == p ? null : (0, r.jsxs)(s.xBx, {
-    className: o()(f.headerContainerGift),
-    separator: t !== c.h8.CONFIRM,
-    children: [(0, r.jsx)(s.X6q, {
+  }), _ = (0, i.EQ)(t).with(s.h8.REVIEW, () => c.NW.string(c.t.JbRd5u)).with(s.h8.ADD_PAYMENT_STEPS, () => c.NW.string(c.t.QiGOam)).with(s.h8.GIFT_CUSTOMIZATION, () => f && d === l.Wt.DM_CHANNEL ? c.NW.string(c.t["xU+d9P"]) : c.NW.string(c.t["JCFN//"])).with(s.h8.AWAITING_PURCHASE_TOKEN_AUTH, () => c.NW.string(c.t.lDbi6O)).with(s.h8.CONFIRM, () => "").otherwise(() => null);
+  return null == _ ? null : (0, r.jsxs)(o.xBx, {
+    className: u.headerContainerGift,
+    separator: t !== s.h8.CONFIRM,
+    children: [(0, r.jsx)(o.X6q, {
       variant: "heading-lg/semibold",
-      children: p
-    }), (0, r.jsx)(s.olH, {
+      children: _
+    }), (0, r.jsx)(o.olH, {
       onClick: n,
-      className: f.closeButtonGift
+      className: u.closeButtonGift
     })]
   })
 }

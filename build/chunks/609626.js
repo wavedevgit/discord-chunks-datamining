@@ -1,20 +1,20 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => a
+  Z: () => s
 });
 var i = n(768581),
   r = n(620954),
   o = n(987650),
   l = n(981631),
-  s = n(388032);
+  a = n(388032);
 
-function a(e, t) {
+function s(e, t) {
   let n = e.username,
-    a = s.NW.format(s.t["Yk+uYG"], {
+    s = a.NW.format(a.t["Yk+uYG"], {
       username: ""
     }),
     u = (0, i.ov)(e),
-    c = s.NW.string(s.t.WRj1Wl),
+    c = a.NW.string(a.t.WRj1Wl),
     {
       trackView: d,
       trackClick: p
@@ -27,7 +27,7 @@ function a(e, t) {
   return {
     icon: u,
     title: n,
-    body: a,
+    body: s,
     hint: c,
     onNotificationShow: () => {
       d()

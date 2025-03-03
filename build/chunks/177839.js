@@ -97,7 +97,7 @@ let _ = e => e ? N.NW.string(N.t.QX14gI) : N.NW.string(N.t.RGadQU),
       }),
       children: [(0, r.jsx)(o.X6q, {
         variant: "heading-xxl/extrabold",
-        className: a()(x.perksTitle),
+        className: x.perksTitle,
         children: _(n)
       }), (0, r.jsx)("div", {
         className: a()(x.perkCardContainer, {

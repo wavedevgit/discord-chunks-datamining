@@ -1,7 +1,7 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  r: () => y,
-  z: () => v
+  r: () => v,
+  z: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -23,20 +23,20 @@ let b = {
     topLeftLight: "rgba(159, 86, 242, 0.4)",
     topRightLight: "rgba(222, 194, 252, 0.5)"
   },
-  y = e => {
+  v = e => {
     let {
       closePopout: t,
       setToggleDefaultState: n
     } = e, {
-      analyticsLocations: y
-    } = (0, d.ZP)(u.Z.SHARING_CONTROLS_COACHMARK), v = (0, c.ZP)(), O = p.G6.useSetting(), j = (0, i.useRef)(null);
-    return (0, a.Tbt)(j), (0, r.jsxs)("div", {
+      analyticsLocations: v
+    } = (0, d.ZP)(u.Z.SHARING_CONTROLS_COACHMARK), y = (0, c.ZP)(), _ = p.G6.useSetting(), O = (0, i.useRef)(null);
+    return (0, a.Tbt)(O), (0, r.jsxs)("div", {
       className: g.wrapper,
-      ref: j,
+      ref: O,
       children: [(0, r.jsx)("div", {
         className: g.gradient,
         style: {
-          background: "radial-gradient(75% 75% at 0% 0%, ".concat((0, o.wj)(v) ? b.topLeftDark : b.topLeftLight, " 0%, transparent 100%),\n    radial-gradient(70% 50% at 100% 0%, ").concat((0, o.wj)(v) ? b.topRightDark : b.topRightLight, " 0%, transparent 100%)")
+          background: "radial-gradient(75% 75% at 0% 0%, ".concat((0, o.wj)(y) ? b.topLeftDark : b.topLeftLight, " 0%, transparent 100%),\n    radial-gradient(70% 50% at 100% 0%, ").concat((0, o.wj)(y) ? b.topRightDark : b.topRightLight, " 0%, transparent 100%)")
         }
       }), (0, r.jsxs)("div", {
         className: g.content,
@@ -66,7 +66,7 @@ let b = {
           children: f.NW.format(f.t.nEgjjo, {
             onClickSettings: () => {
               t(), s.Z.open(h.oAB.ACTIVITY_PRIVACY, null, {
-                analyticsLocations: y
+                analyticsLocations: v
               })
             }
           })
@@ -80,13 +80,13 @@ let b = {
             onChange: e => {
               p.G6.updateSetting(e), e && n(e)
             },
-            checked: O
+            checked: _
           })]
         })]
       })]
     })
   },
-  v = e => {
+  y = e => {
     let {
       closePopout: t,
       setToggleDefaultState: n

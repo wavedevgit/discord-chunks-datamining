@@ -75,7 +75,7 @@ function B(e) {
   }, [r]), m = null == o ? void 0 : o.getIconURL(160, y.$k ? "webp" : "png"), g = j.default.extractTimestamp(o.id), b = s()().diff(s()(g), "days") <= W.G, O = l.some(e => (0, _.ig)(e) === c.o.GLOBAL), h = null !== (t = r.name) && void 0 !== t ? t : null == o ? void 0 : o.name;
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)("div", {
-      className: i()(Z.gameArtHero),
+      className: Z.gameArtHero,
       style: {
         backgroundImage: 'url("'.concat(f, '")')
       }

@@ -1,6 +1,6 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  Z: () => N
+  Z: () => P
 }), n(411104), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -17,11 +17,11 @@ var r = n(200651),
   g = n(496675),
   m = n(98597),
   b = n(473403),
-  y = n(981631),
-  v = n(490897),
-  O = n(691878);
+  v = n(981631),
+  y = n(490897),
+  _ = n(691878);
 
-function j(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
@@ -59,11 +59,11 @@ class x extends m.ZP {
       canReorderChannel: a
     } = this.props, s = (0, r.jsx)("li", {
       className: o()(this.getClassName(), {
-        [O.disabled]: this.isDisabled()
+        [_.disabled]: this.isDisabled()
       }),
       "data-dnd-name": e.name,
       children: (0, r.jsxs)(b.Z, {
-        className: O.iconVisibility,
+        className: _.iconVisibility,
         channel: e,
         selected: t,
         onClick: this.handleClick,
@@ -73,14 +73,14 @@ class x extends m.ZP {
         "aria-label": (0, d.ZP)({
           channel: e
         }),
-        resolvedUnreadSetting: v.i.ONLY_MENTIONS,
+        resolvedUnreadSetting: y.i.ONLY_MENTIONS,
         children: [this.renderInviteButton(), this.renderEditButton()]
       })
     });
     return a ? n(i(s)) : s
   }
   constructor(...e) {
-    super(...e), j(this, "handleContextMenu", e => {
+    super(...e), O(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, i = f.Z.getGuild(t.getGuildId());
@@ -90,7 +90,7 @@ class x extends m.ZP {
         } = await n.e("99905").then(n.bind(n, 649400));
         return n => {
           var l, o;
-          return (0, r.jsx)(e, (l = _({}, n), o = o = {
+          return (0, r.jsx)(e, (l = j({}, n), o = o = {
             channel: t,
             guild: i
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
@@ -105,16 +105,16 @@ class x extends m.ZP {
           }), l))
         }
       })
-    }), j(this, "handleClick", e => {
+    }), O(this, "handleClick", e => {
       (function(e) {
         let t = e.getGuildId();
         if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
-        (0, p.uL)(y.Z5c.CHANNEL(t, e.id), {
+        (0, p.uL)(v.Z5c.CHANNEL(t, e.id), {
           state: {
             analyticsSource: {
-              page: y.ZY5.GUILD_CHANNEL,
-              section: y.jXE.CHANNEL_LIST,
-              object: y.qAy.CHANNEL
+              page: v.ZY5.GUILD_CHANNEL,
+              section: v.jXE.CHANNEL_LIST,
+              object: v.qAy.CHANNEL
             }
           }
         })
@@ -122,8 +122,8 @@ class x extends m.ZP {
     })
   }
 }
-let P = (0, u.B)(x),
-  N = i.memo(function(e) {
+let S = (0, u.B)(x),
+  P = i.memo(function(e) {
     let {
       channel: t,
       guild: n,
@@ -131,9 +131,9 @@ let P = (0, u.B)(x),
     } = e, l = (0, a.cj)([h.Z, g.Z], () => {
       let e = h.Z.getChannel(t.parent_id);
       return {
-        canManageChannel: g.Z.can(y.Plq.MANAGE_CHANNELS, t),
-        canReorderChannel: !0 !== i && null != e ? g.Z.can(y.Plq.MANAGE_CHANNELS, e) : g.Z.can(y.Plq.MANAGE_CHANNELS, n)
+        canManageChannel: g.Z.can(v.Plq.MANAGE_CHANNELS, t),
+        canReorderChannel: !0 !== i && null != e ? g.Z.can(v.Plq.MANAGE_CHANNELS, e) : g.Z.can(v.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(P, _({}, l, e))
+    return (0, r.jsx)(S, j({}, l, e))
   })

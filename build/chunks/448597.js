@@ -1,5 +1,4 @@
-/** Chunk was on 87668 **/
-"use strict";
+/** Chunk was on 46746 **/
 e.exports = {
   selectedIcon: "selectedIcon__885c5",
   ellipsisText: "ellipsisText__885c5",

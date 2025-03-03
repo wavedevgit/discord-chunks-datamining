@@ -249,14 +249,14 @@ function et() {
   let e = a.useRef(null),
     t = (0, s.e7)([b.Z], () => b.Z.sidebarWidth),
     [n, l] = a.useState(null),
-    o = a.useCallback(e => (0, p.Qh)({
+    i = a.useCallback(e => (0, p.Qh)({
       sidebarWidth: e
     }), []);
   return (a.useEffect(() => {
     null === n && null !== t && l(t)
   }, [t, n]), null === n) ? null : (0, r.jsxs)("div", {
     ref: e,
-    className: i()(q.container),
+    className: q.container,
     style: {
       minWidth: b.h,
       width: n
@@ -265,7 +265,7 @@ function et() {
     children: [(0, r.jsx)(Q, {
       resizableNode: e,
       onResize: l,
-      onResizeEnd: o
+      onResizeEnd: i
     }), (0, r.jsx)("div", {
       className: q.sidebarContent,
       children: (0, r.jsx)(ee, {})

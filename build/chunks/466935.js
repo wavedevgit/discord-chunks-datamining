@@ -1,6 +1,6 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -17,27 +17,27 @@ var r = n(200651),
   g = n(434479),
   m = n(981631),
   b = n(176505),
-  y = n(388032);
+  v = n(388032);
 
-function v(e) {
+function y(e) {
   let {
     guild: t,
     selected: n
-  } = e, v = (0, l.e7)([h.Z], () => h.Z.can(m.Plq.KICK_MEMBERS, t)), O = (0, l.e7)([c.Z], () => c.Z.getSubmittedGuildJoinRequestTotal(t.id)), j = v && null != O ? O : 0;
+  } = e, y = (0, l.e7)([h.Z], () => h.Z.can(m.Plq.KICK_MEMBERS, t)), _ = (0, l.e7)([c.Z], () => c.Z.getSubmittedGuildJoinRequestTotal(t.id)), O = y && null != _ ? _ : 0;
   return i.useEffect(() => {
-    v && s.Z.fetchGuildJoinRequests({
+    y && s.Z.fetchGuildJoinRequests({
       guildId: t.id,
       status: u.wB.SUBMITTED,
       limit: d.p
     })
-  }, [v, t.id]), (0, r.jsx)(g.m, {
+  }, [y, t.id]), (0, r.jsx)(g.m, {
     id: "application-review-".concat(t.id),
     renderIcon: e => (0, r.jsx)(f.Z, {
       className: e,
       width: 24,
       height: 24
     }),
-    text: y.NW.string(y.t.tcvVXF),
+    text: v.NW.string(v.t.tcvVXF),
     selected: n,
     onClick: () => {
       (0, a.Q2)({
@@ -46,8 +46,8 @@ function v(e) {
         tab: b.oC.MEMBER_APPLICATIONS
       }), (0, p.uL)(m.Z5c.CHANNEL(t.id, b.oC.MEMBER_APPLICATIONS))
     },
-    trailing: j > 0 ? (0, r.jsx)(o.mAB, {
-      count: j
+    trailing: O > 0 ? (0, r.jsx)(o.mAB, {
+      count: O
     }) : null
   })
 }

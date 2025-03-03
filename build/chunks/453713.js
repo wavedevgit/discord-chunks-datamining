@@ -147,7 +147,7 @@ let j = s()(e => {
       alternativeBackgroundColor: j
     } = e, y = (0, b.o)(l, h), O = a.previewingVariantIndex, k = null === (t = l.variants) || void 0 === t ? void 0 : t[y], P = null !== O ? null === (r = l.variants) || void 0 === r ? void 0 : r[O] : void 0, S = (0, f.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
     if (null == k) return null;
-    let w = null != P ? P.variantLabel : null == k ? void 0 : k.variantLabel;
+    let E = null != P ? P.variantLabel : null == k ? void 0 : k.variantLabel;
     return (0, n.jsx)(c.bG, {
       navigator: S,
       children: (0, n.jsx)(c.SJ, {
@@ -184,7 +184,7 @@ let j = s()(e => {
               variant: "text-xs/medium",
               color: "text-secondary",
               className: C.variantLabel,
-              children: d ? m.NW.string(m.t.wbgaj4) : w
+              children: d ? m.NW.string(m.t.wbgaj4) : E
             })]
           }))
         }

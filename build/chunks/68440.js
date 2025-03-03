@@ -1,5 +1,4 @@
-/** Chunk was on 87668 **/
-"use strict";
+/** Chunk was on 46746 **/
 e.exports = {
   avatar: "avatar__248f3",
   userListOverflow: "userListOverflow__248f3",

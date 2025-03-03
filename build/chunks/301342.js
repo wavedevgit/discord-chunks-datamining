@@ -1,7 +1,7 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  P: () => E,
-  Qo: () => w,
+  P: () => w,
+  Qo: () => E,
   ZP: () => Z,
   kw: () => A,
   rj: () => T
@@ -21,15 +21,15 @@ var r = n(200651),
   g = n(540059),
   m = n(680089),
   b = n(430824),
-  y = n(496675),
-  v = n(9156),
-  O = n(203818),
-  j = n(438144),
-  _ = n(981631),
+  v = n(496675),
+  y = n(9156),
+  _ = n(203818),
+  O = n(438144),
+  j = n(981631),
   C = n(388032),
   x = n(582789);
 
-function P(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function P(e) {
   return e
 }
 
-function N(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,50 +61,50 @@ function N(e, t) {
   }), e
 }
 
-function S(e) {
+function I(e) {
   e.stopPropagation()
 }
-let I = i.memo(function(e) {
+let N = i.memo(function(e) {
     let t, {
         channel: l,
         connectChannelDragSource: p,
-        connectChannelDropTarget: O,
-        disableManageChannels: j,
-        position: I,
+        connectChannelDropTarget: _,
+        disableManageChannels: O,
+        position: N,
         sortingPosition: Z,
-        hideIcon: E,
-        children: w
+        hideIcon: w,
+        children: E
       } = e,
       T = (0, g.Q3)("CategoryChannel"),
-      A = (0, s.e7)([v.ZP], () => v.ZP.isChannelMuted(l.getGuildId(), l.id)),
+      A = (0, s.e7)([y.ZP], () => y.ZP.isChannelMuted(l.getGuildId(), l.id)),
       D = (0, s.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
-      R = (0, s.e7)([y.Z], () => y.Z.can(_.Plq.MANAGE_CHANNELS, l));
-    t = null != Z ? I > Z ? x.containerDragAfter : x.containerDragBefore : x.containerDefault;
+      R = (0, s.e7)([v.Z], () => v.Z.can(j.Plq.MANAGE_CHANNELS, l));
+    t = null != Z ? N > Z ? x.containerDragAfter : x.containerDragBefore : x.containerDefault;
     let L = i.useCallback(() => {
         D ? (0, u.mJ)(l.id) : (0, u.c4)(l.id)
       }, [l.id, D]),
-      M = i.useCallback(e => {
+      k = i.useCallback(e => {
         if ("null" !== l.id) {
           let t = b.Z.getGuild(l.getGuildId());
           null != t && (0, d.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("8965"), n.e("14280")]).then(n.bind(n, 139035));
-            return n => (0, r.jsx)(e, N(P({}, n), {
+            return n => (0, r.jsx)(e, P(S({}, n), {
               channel: l,
               guild: t
             }))
           })
         }
       }, [l]),
-      k = i.useCallback(() => {
-        let e = l.type === _.d4z.GUILD_CATEGORY ? null : l.type,
+      M = i.useCallback(() => {
+        let e = l.type === j.d4z.GUILD_CATEGORY ? null : l.type,
           t = l.getGuildId();
         null != t && (0, c.ZDy)(async () => {
           let {
             default: i
           } = await Promise.all([n.e("45094"), n.e("77595")]).then(n.bind(n, 218613));
-          return n => (0, r.jsx)(i, N(P({}, n), {
+          return n => (0, r.jsx)(i, P(S({}, n), {
             channelType: e,
             guildId: t,
             categoryId: "null" !== l.id ? l.id : null
@@ -113,8 +113,8 @@ let I = i.memo(function(e) {
       }, [l]),
       G = (0, a.JA)(l.id),
       {
-        role: U,
-        tabIndex: B
+        role: B,
+        tabIndex: U
       } = G,
       W = function(e, t) {
         if (null == e) return {};
@@ -150,11 +150,11 @@ let I = i.memo(function(e) {
               [x.muted]: A,
               [x.clickable]: !0
             }),
-            onContextMenu: M,
-            children: [(0, r.jsxs)(c.P3F, N(P({
+            onContextMenu: k,
+            children: [(0, r.jsxs)(c.P3F, P(S({
               innerRef: V,
               className: x.mainContent,
-              tabIndex: B
+              tabIndex: U
             }, W), {
               onClick: L,
               "aria-label": C.NW.formatToPlainString(C.t.y5l3Jy, {
@@ -164,7 +164,7 @@ let I = i.memo(function(e) {
               focusProps: {
                 enabled: !1
               },
-              children: [T || E ? null : (0, r.jsx)(c.CJ0, {
+              children: [T || w ? null : (0, r.jsx)(c.CJ0, {
                 size: "md",
                 color: "currentColor",
                 className: x.icon
@@ -173,15 +173,15 @@ let I = i.memo(function(e) {
                 children: (0, r.jsx)(f.Z, {
                   children: l.name
                 })
-              }), T && !E ? (0, r.jsx)(c.CJ0, {
+              }), T && !w ? (0, r.jsx)(c.CJ0, {
                 size: "md",
                 color: "currentColor",
                 className: x.icon
               }) : null]
             })), (0, r.jsx)("div", {
-              onClick: S,
+              onClick: I,
               className: x.children,
-              children: R && !j ? (0, r.jsx)(c.ua7, {
+              children: R && !O ? (0, r.jsx)(c.ua7, {
                 text: C.NW.string(C.t["fUYU+v"]),
                 children: e => {
                   let {
@@ -193,10 +193,10 @@ let I = i.memo(function(e) {
                     look: c.zxk.Looks.BLANK,
                     size: c.zxk.Sizes.NONE,
                     className: o()(x.addButton, x.forceVisible),
-                    onClick: k,
+                    onClick: M,
                     onMouseEnter: t,
                     onMouseLeave: n,
-                    tabIndex: B,
+                    tabIndex: U,
                     focusProps: {
                       offset: {
                         top: -3,
@@ -219,12 +219,12 @@ let I = i.memo(function(e) {
               }) : null
             })]
           })
-        }), w]
+        }), E]
       });
-    return null != O && null != p ? O(p(H)) : H
+    return null != _ && null != p ? _(p(H)) : H
   }),
-  Z = (0, p.B)(I),
-  E = i.memo(function(e) {
+  Z = (0, p.B)(N),
+  w = i.memo(function(e) {
     let {
       name: t,
       onDismiss: n,
@@ -258,11 +258,11 @@ let I = i.memo(function(e) {
       })
     })
   }),
-  w = i.memo(function(e) {
+  E = i.memo(function(e) {
     let {
       category: t
-    } = e, n = (0, s.e7)([O.Z], () => O.Z.isVoiceCategoryCollapsed(t.guild.id)), l = (0, g.Q3)("VoiceChannelCategoryButton"), o = i.useCallback(() => {
-      n ? (0, j.s)(t.guild.id) : (0, j.M)(t.guild.id)
+    } = e, n = (0, s.e7)([_.Z], () => _.Z.isVoiceCategoryCollapsed(t.guild.id)), l = (0, g.Q3)("VoiceChannelCategoryButton"), o = i.useCallback(() => {
+      n ? (0, O.s)(t.guild.id) : (0, O.M)(t.guild.id)
     }, [t.guild.id, n]);
     return l ? (0, r.jsxs)(c.zxk, {
       look: c.zxk.Looks.FILLED,
@@ -295,9 +295,9 @@ let I = i.memo(function(e) {
     let {
       category: t,
       channel: n
-    } = e, i = (0, s.e7)([O.Z], () => O.Z.isVoiceCategoryCollapsed(t.guild.id));
-    return i || null == n || n.record.type === _.d4z.GUILD_CATEGORY ? i ? (0, r.jsx)("li", {
-      className: o()(x.containerDefault),
+    } = e, i = (0, s.e7)([_.Z], () => _.Z.isVoiceCategoryCollapsed(t.guild.id));
+    return i || null == n || n.record.type === j.d4z.GUILD_CATEGORY ? i ? (0, r.jsx)("li", {
+      className: x.containerDefault,
       children: (0, r.jsx)("div", {
         className: o()(x.iconVisibility, x.wrapperStatic),
         children: (0, r.jsx)(h.Z, {
@@ -318,7 +318,7 @@ let I = i.memo(function(e) {
       channel: t
     } = e;
     return (0, r.jsx)("li", {
-      className: o()(x.containerDefault),
+      className: x.containerDefault,
       children: (0, r.jsx)("div", {
         className: o()(x.iconVisibility, x.wrapperStatic),
         children: (0, r.jsx)(h.Z, {

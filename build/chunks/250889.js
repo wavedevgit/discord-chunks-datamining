@@ -1,16 +1,16 @@
-/** Chunk was on 29611 **/
+/** Chunk was on 7755 **/
 n.d(t, {
-  H: () => r,
-  Z: () => a
+  H: () => i,
+  Z: () => o
 });
-var i = n(726542),
-  o = n(973616);
-let r = "xbox:";
-class a extends o.ZP {
+var r = n(726542),
+  l = n(973616);
+let i = "xbox:";
+class o extends l.ZP {
   getIconURL() {
-    return i.Z.get("xbox").icon.lightPNG
+    return r.Z.get("xbox").icon.lightPNG
   }
   constructor(e) {
-    super(e), this.id = "".concat(r).concat(e.name), this.name = e.name
+    super(e), this.id = "".concat(i).concat(e.name), this.name = e.name
   }
 }

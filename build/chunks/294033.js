@@ -1,25 +1,26 @@
 /** Chunk was on 76977 **/
+"use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var i = n(200651),
   r = n(192379),
-  o = n(120356),
-  s = n.n(o),
-  l = n(909569);
+  s = n(120356),
+  o = n.n(s),
+  a = n(909569);
 
-function a(e) {
+function l(e) {
   let {
     keybind: t,
     separator: n = "+",
-    className: o
+    className: s
   } = e;
   return (0, i.jsx)(i.Fragment, {
-    children: t.map((e, a) => (0, i.jsxs)(r.Fragment, {
+    children: t.map((e, l) => (0, i.jsxs)(r.Fragment, {
       children: [(0, i.jsx)("span", {
-        className: s()(l.key, o),
+        className: o()(a.key, s),
         children: e
-      }), a === t.length - 1 ? void 0 : n]
-    }, a))
+      }), l === t.length - 1 ? void 0 : n]
+    }, l))
   })
 }

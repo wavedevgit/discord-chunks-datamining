@@ -1,48 +1,48 @@
-/** Chunk was on 79477 **/
+/** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => h
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
 var l = n(913527),
-  s = n.n(l),
-  i = n(793030),
-  a = n(739566),
-  o = n(942951),
+  i = n.n(l),
+  s = n(793030),
+  o = n(739566),
+  a = n(942951),
   c = n(67390),
-  u = n(63063),
-  d = n(981631),
-  m = n(388032),
-  p = n(867552);
+  d = n(63063),
+  u = n(981631),
+  f = n(388032),
+  h = n(867552);
 
-function h(e) {
+function m(e) {
   var t;
   let {
     streamingUntil: n,
     user: l,
-    channel: h
-  } = e, g = (0, a.JZ)(l, h), x = (0, o.l)({
+    channel: m
+  } = e, p = (0, o.JZ)(l, m), x = (0, a.l)({
     user: l,
-    channelId: h.id,
-    guildId: h.guild_id,
+    channelId: m.id,
+    guildId: m.guild_id,
     messageId: void 0
-  })(g), v = s()(n).diff(s()(), "hours");
-  return v <= 0 ? null : (0, r.jsxs)("div", {
-    className: p.attribution,
+  })(p), g = i()(n).diff(i()(), "hours");
+  return g <= 0 ? null : (0, r.jsxs)("div", {
+    className: h.attribution,
     children: [(0, r.jsx)(c.Z, {
-      className: p.img
+      className: h.img
     }), (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(i.X6, {
+      children: [(0, r.jsx)(s.X6, {
         variant: "heading-sm/bold",
-        children: m.NW.string(m.t.K04rOD)
-      }), (0, r.jsx)(i.xv, {
+        children: f.NW.string(f.t.K04rOD)
+      }), (0, r.jsx)(s.xv, {
         color: "text-muted",
         variant: "text-sm/medium",
-        children: m.NW.format(m.t.NZDuBg, {
+        children: f.NW.format(f.t.NZDuBg, {
           actorName: null !== (t = l.globalName) && void 0 !== t ? t : l.username,
           actorHook: x,
-          num: v,
-          helpCenterLink: u.Z.getArticleURL(d.BhN.HD_STREAMING_POTION)
+          num: g,
+          helpCenterLink: d.Z.getArticleURL(u.BhN.HD_STREAMING_POTION)
         })
       })]
     })]

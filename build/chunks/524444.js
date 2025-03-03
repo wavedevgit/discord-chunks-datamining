@@ -581,7 +581,7 @@ function ef(e) {
     ref: S,
     className: a()(Z.newTopicsBarContainer, Z.containerMarginTop),
     children: [(0, r.jsx)("div", {
-      className: a()(Z.newTopicsBarTopicSection),
+      className: Z.newTopicsBarTopicSection,
       children: (0, r.jsx)(d.P3F, {
         className: Z.newTopicsBarTextClickable,
         "aria-label": F.NW.string(F.t.RT3MPz),
@@ -609,7 +609,7 @@ function ef(e) {
       })
     }), (0, r.jsx)(d.P3F, {
       onClick: et,
-      className: a()(Z.newTopicsBarInitial),
+      className: Z.newTopicsBarInitial,
       children: p
     }), (0, r.jsxs)(d.P3F, {
       onClick: en,

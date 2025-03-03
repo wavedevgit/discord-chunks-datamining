@@ -39,7 +39,7 @@ class O extends(r = l.PureComponent) {
         onVerify: r,
         theme: n
       }, t) : (0, i.jsx)(c.zxk, {
-        className: a()(b.marginBottom20),
+        className: b.marginBottom20,
         onClick: () => this.handleClick(e),
         children: h.Z.getButtonTitle(e)
       }, e))

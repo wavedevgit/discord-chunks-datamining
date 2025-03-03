@@ -138,7 +138,7 @@ function L(e) {
         children: y.nW(t.premiumTier)
       })]
     }), (0, r.jsx)("div", {
-      className: a()(A.tooltipPremiumFooterSegment),
+      className: A.tooltipPremiumFooterSegment,
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/semibold",
         color: "always-white",

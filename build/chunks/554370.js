@@ -6,8 +6,8 @@ var i = n(200651),
   r = n(192379),
   o = n(120356),
   l = n.n(o),
-  s = n(442837),
-  a = n(952265),
+  a = n(442837),
+  s = n(952265),
   u = n(481060),
   c = n(239091),
   d = n(13245),
@@ -17,20 +17,20 @@ var i = n(200651),
   m = n(70097),
   g = n(567409),
   O = n(74299),
-  v = n(199902),
-  y = n(592125),
+  y = n(199902),
+  v = n(592125),
   E = n(430824),
   b = n(131951),
-  x = n(944486),
-  j = n(556296),
+  j = n(944486),
+  x = n(556296),
   S = n(808506),
   I = n(237997),
   C = n(451478),
   N = n(585483),
   Z = n(358085),
   w = n(13140),
-  _ = n(145597),
-  P = n(830917),
+  P = n(145597),
+  _ = n(830917),
   T = n(86071),
   D = n(32300),
   A = n(681603),
@@ -140,18 +140,18 @@ let ee = r.memo(function(e) {
     return t && n ? (0, i.jsx)(M.Z, {
       className: Q.closeContainer,
       children: (0, i.jsx)(k.Z, {
-        onClick: () => d.Z.setInputLocked(!1, (0, _.getPID)()),
+        onClick: () => d.Z.setInputLocked(!1, (0, P.getPID)()),
         IconComponent: u.d$P
       })
     }) : null
   });
 
 function en() {
-  d.Z.setInputLocked(!0, (0, _.getPID)())
+  d.Z.setInputLocked(!0, (0, P.getPID)())
 }
 
 function ei() {
-  d.Z.setFocusedPID(_.DEV_PID)
+  d.Z.setFocusedPID(P.DEV_PID)
 }
 
 function er() {
@@ -159,7 +159,7 @@ function er() {
 }
 
 function eo(e) {
-  let t = V.ZP.isInputLocked((0, _.getPID)());
+  let t = V.ZP.isInputLocked((0, P.getPID)());
   "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? N.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !0
   }) : "keydown" === e.type.toLowerCase() && N.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
@@ -176,13 +176,13 @@ function el(e) {
     incompatibleApp: m,
     hasZeroSizeDimension: Z,
     keybind: k
-  } = (0, s.cj)([V.ZP, I.default, C.Z, j.ZP], () => {
-    let e = C.Z.windowSize((0, P.ZY)(n)),
-      t = j.ZP.getOverlayKeybind(),
-      i = (0, _.getPID)();
+  } = (0, a.cj)([V.ZP, I.default, C.Z, x.ZP], () => {
+    let e = C.Z.windowSize((0, _.ZY)(n)),
+      t = x.ZP.getOverlayKeybind(),
+      i = (0, P.getPID)();
     return {
       locked: V.ZP.isInputLocked(i),
-      focused: i === _.DEV_PID ? I.default.isFocused(i) : V.ZP.isFocused((0, _.getPID)()),
+      focused: i === P.DEV_PID ? I.default.isFocused(i) : V.ZP.isFocused((0, P.getPID)()),
       incompatibleApp: I.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
       keybind: null != t ? (0, w.BB)(t.shortcut, !0) : "???"
@@ -204,19 +204,19 @@ function el(e) {
       n.current.unmount()
     }), [])
   }(() => {
-    d.Z.overlayReady((0, _.getPID)()), n.addEventListener("keydown", eo), n.addEventListener("keyup", eo), K && (n.document.hasFocus() && d.Z.setFocusedPID(_.DEV_PID), n.addEventListener("focus", ei), n.addEventListener("blur", er))
+    d.Z.overlayReady((0, P.getPID)()), n.addEventListener("keydown", eo), n.addEventListener("keyup", eo), K && (n.document.hasFocus() && d.Z.setFocusedPID(P.DEV_PID), n.addEventListener("focus", ei), n.addEventListener("blur", er))
   }, () => {
     n.removeEventListener("keydown", eo), n.removeEventListener("keyup", eo), K && (n.removeEventListener("focus", ei), n.removeEventListener("blur", er))
   }), ! function() {
     let e = r.useRef(!1),
       t = (0, z.pL)(),
-      n = x.Z.getVoiceChannelId(),
-      i = y.Z.getChannel(n),
+      n = j.Z.getVoiceChannelId(),
+      i = v.Z.getChannel(n),
       o = null != i ? E.Z.getGuild(i.guild_id) : null,
-      l = null != v.Z.getCurrentUserActiveStream(),
-      a = null != n,
+      l = null != y.Z.getCurrentUserActiveStream(),
+      s = null != n,
       u = (0, O.Z)(b.Z) && !l && null != t,
-      c = a && null != o && null != n,
+      c = s && null != o && null != n,
       {
         enabled: p
       } = T.Z.useExperiment({
@@ -228,12 +228,12 @@ function el(e) {
         allowActivityWidget: h
       } = (0, D.o4)("overlay"),
       m = (0, g.Ns)(null == t ? void 0 : t.id),
-      j = (0, s.e7)([f.Z], () => null != f.Z.getLastFeedFetchDate(H.YN.GAME_PROFILE_FEED) || !p && !h, [p, h]);
+      x = (0, a.e7)([f.Z], () => null != f.Z.getLastFeedFetchDate(H.YN.GAME_PROFILE_FEED) || !p && !h, [p, h]);
     r.useEffect(() => {
       var i;
-      if (!j || e.current) return;
+      if (!x || e.current) return;
       e.current = !0;
-      let r = null !== (i = S.default.getFocusedPID()) && void 0 !== i ? i : (0, _.getPID)();
+      let r = null !== (i = S.default.getFocusedPID()) && void 0 !== i ? i : (0, P.getPID)();
       if (W.default.hasChangedRenderMode(r)) return;
       let l = [{
         type: G.nc.WELCOME
@@ -250,12 +250,12 @@ function el(e) {
         type: G.nc.CONTENT_INVENTORY,
         entries: m
       }), d.Z.overlayMounted(...l)
-    }, [j, m, a, u, c, t, n, o, h, p])
+    }, [x, m, s, u, c, t, n, o, h, p])
   }(), r.useEffect(() => {
     if (N.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: !0
       }), o) {
-      if ((0, a.Ay)(u.u1M), n.addEventListener("contextmenu", q, !1), null != J) {
+      if ((0, s.Ay)(u.u1M), n.addEventListener("contextmenu", q, !1), null != J) {
         let e = Date.now() - J;
         d.Z.track(B.rMx.OVERLAY_LOCKED, {
           unlocked_duration: e

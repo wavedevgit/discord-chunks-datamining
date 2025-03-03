@@ -61,15 +61,15 @@ let D = (0, y.Mg)(o.Z.ACTIVITY_SHELF_MODAL_MODAL_PADDING),
 function F(e) {
   var t, n, {
       channel: l,
-      guildId: o,
-      locationObject: f,
-      onClose: _,
-      initialSelectedApplicationId: y,
-      initialSlide: D = E.ag.DIRECTORY,
-      enableSelectedTextChannelInvite: R,
-      analyticsLocations: F
+      guildId: s,
+      locationObject: o,
+      onClose: f,
+      initialSelectedApplicationId: _,
+      initialSlide: y = E.ag.DIRECTORY,
+      enableSelectedTextChannelInvite: D,
+      analyticsLocations: R
     } = e,
-    V = function(e, t) {
+    F = function(e, t) {
       if (null == e) return {};
       var n, a, i = function(e, t) {
         if (null == e) return {};
@@ -84,91 +84,91 @@ function F(e) {
       }
       return i
     }(e, ["channel", "guildId", "locationObject", "onClose", "initialSelectedApplicationId", "initialSlide", "enableSelectedTextChannelInvite", "analyticsLocations"]);
-  let H = (0, c.e7)([T.Z], () => T.Z.getIsEnabled(), []),
+  let V = (0, c.e7)([T.Z], () => T.Z.getIsEnabled(), []),
     {
-      analyticsLocations: U
-    } = (0, v.ZP)(F),
-    [Y, G] = i.useState(D),
-    z = (0, p.Z)(Y),
-    [q, J] = i.useState(null),
-    [X, $] = i.useState(y),
-    [Q, K] = i.useState(void 0),
-    [ee] = (0, h.Z)(null == X ? [] : [X]),
-    et = i.useRef(null),
-    en = i.useMemo(() => ({
-      application_id: X,
-      source_section: f.section,
+      analyticsLocations: H
+    } = (0, v.ZP)(R),
+    [U, Y] = i.useState(y),
+    G = (0, p.Z)(U),
+    [z, q] = i.useState(null),
+    [J, X] = i.useState(_),
+    [$, Q] = i.useState(void 0),
+    [K] = (0, h.Z)(null == J ? [] : [J]),
+    ee = i.useRef(null),
+    et = i.useMemo(() => ({
+      application_id: J,
+      source_section: o.section,
       impression_group: r.ImpressionGroups.ACTIVITY_SHELF_FLOW
-    }), [f.section, X]);
+    }), [o.section, J]);
   i.useEffect(() => {
-    if (Y === E.ag.DIRECTORY && null != z && z !== E.ag.DIRECTORY && null != q) {
+    if (U === E.ag.DIRECTORY && null != G && G !== E.ag.DIRECTORY && null != z) {
       var e;
-      null === (e = et.current) || void 0 === e || e.scrollTo({
-        top: q
+      null === (e = ee.current) || void 0 === e || e.scrollTo({
+        top: z
       })
     }
-  }, [q, z, Y]);
-  let ea = i.useCallback(e => {
+  }, [z, G, U]);
+  let en = i.useCallback(e => {
       var t;
       let {
         applicationId: n
-      } = e, a = null === (t = et.current) || void 0 === t ? void 0 : t.scrollTop;
-      null != a && J(a), $(n), G(E.ag.SELECT_CHANNEL)
+      } = e, a = null === (t = ee.current) || void 0 === t ? void 0 : t.scrollTop;
+      null != a && q(a), X(n), Y(E.ag.SELECT_CHANNEL)
     }, []),
-    ei = i.useCallback(e => {
+    ea = i.useCallback(e => {
       let {
         applicationId: t
       } = e;
-      $(t), G(E.ag.DETAIL_PAGE)
+      X(t), Y(E.ag.DETAIL_PAGE)
     }, []);
   i.useEffect(() => {
     C.default.track(A.rMx.OPEN_MODAL, {
       type: "Activity Shelf",
       channel_id: null == l ? void 0 : l.id,
-      guild_id: o
+      guild_id: s
     })
-  }, [l, o]), i.useEffect(() => (I.S.subscribe(A.CkL.SHOW_ACTIVITIES_CHANNEL_SELECTOR, ea), () => {
-    I.S.unsubscribe(A.CkL.SHOW_ACTIVITIES_CHANNEL_SELECTOR, ea)
-  }), [ea]), i.useEffect(() => (I.S.subscribe(A.CkL.SHOW_ACTIVITY_DETAILS, ei), () => {
-    I.S.unsubscribe(A.CkL.SHOW_ACTIVITY_DETAILS, ei)
-  }), [ei]), i.useEffect(() => {
+  }, [l, s]), i.useEffect(() => (I.S.subscribe(A.CkL.SHOW_ACTIVITIES_CHANNEL_SELECTOR, en), () => {
+    I.S.unsubscribe(A.CkL.SHOW_ACTIVITIES_CHANNEL_SELECTOR, en)
+  }), [en]), i.useEffect(() => (I.S.subscribe(A.CkL.SHOW_ACTIVITY_DETAILS, ea), () => {
+    I.S.unsubscribe(A.CkL.SHOW_ACTIVITY_DETAILS, ea)
+  }), [ea]), i.useEffect(() => {
     j.ux()
   }, []);
-  let el = () => {
-      G(E.ag.DIRECTORY)
+  let ei = () => {
+      Y(E.ag.DIRECTORY)
     },
-    es = i.useRef(Date.now()),
-    er = i.useRef(!1),
-    ec = i.useRef([]),
-    eo = i.useCallback(e => {
-      null == ec.current.find(t => t === e.applicationId) && ec.current.push(e.applicationId)
+    el = i.useRef(Date.now()),
+    es = i.useRef(!1),
+    er = i.useRef([]),
+    ec = i.useCallback(e => {
+      null == er.current.find(t => t === e.applicationId) && er.current.push(e.applicationId)
     }, []);
   return i.useEffect(() => {
-    let e = et.current;
+    let e = ee.current;
     if (null != e) {
-      let t = () => er.current = !0;
+      let t = () => es.current = !0;
       return null != e && e.addEventListener("scroll", t), () => {
         null != e && e.removeEventListener("scroll", t)
       }
     }
   }, []), (0, u.ZP)(() => () => {
     let e = {
-        activity_tiles_viewed: ec.current,
-        duration_ms: Date.now() - es.current,
-        scrolled: er.current
+        activity_tiles_viewed: er.current,
+        duration_ms: Date.now() - el.current,
+        scrolled: es.current
       },
       t = k({
         channel_id: null == l ? void 0 : l.id,
-        guild_id: o,
+        guild_id: s,
         location: (0, m.k$)()
-      }, (0, g.hH)(o), (0, g.v_)(x.Z.getChannel(null == l ? void 0 : l.id)), en, e);
+      }, (0, g.hH)(s), (0, g.v_)(x.Z.getChannel(null == l ? void 0 : l.id)), et, e);
     C.default.track(A.rMx.ACTIVITY_SHELF_CLOSE, t)
   }), (0, a.jsx)(v.Gt, {
-    value: U,
+    value: H,
     children: (0, a.jsxs)(d.Y0X, (t = k({
-      className: s()(P.root),
+      className: P.root,
       "aria-label": M.NW.string(M.t.shUONj)
-    }, V), n = n = {
+    }, F), n = n = {
       children: [(0, a.jsx)("img", {
         alt: M.NW.string(M.t["3Y9xdH"]),
         src: w,
@@ -180,17 +180,17 @@ function F(e) {
       }), (0, a.jsxs)(d.xBx, {
         separator: !1,
         justify: b.Z.Justify.BETWEEN,
-        className: s()(P.modalHeader),
+        className: P.modalHeader,
         children: [(0, a.jsxs)("div", {
           className: P.headerTextContainer,
-          children: [Y === E.ag.DETAIL_PAGE ? null == ee ? null : (0, a.jsxs)("div", {
+          children: [U === E.ag.DETAIL_PAGE ? null == K ? null : (0, a.jsxs)("div", {
             className: P.activityShelfTitle,
             children: [(0, a.jsx)(d.X6q, {
               variant: "heading-xl/extrabold",
-              children: ee.name
+              children: K.name
             }), (0, a.jsxs)(d.P3F, {
               className: P.headerBackButton,
-              onClick: el,
+              onClick: ei,
               children: [(0, a.jsx)(d.V7D, {
                 size: "md",
                 color: "currentColor"
@@ -205,67 +205,67 @@ function F(e) {
               variant: "heading-xl/extrabold",
               children: M.NW.string(M.t.shUONj)
             })
-          }), Y === E.ag.DIRECTORY ? (0, a.jsx)(d.Text, {
+          }), U === E.ag.DIRECTORY ? (0, a.jsx)(d.Text, {
             variant: "text-sm/normal",
-            children: H ? M.NW.string(M.t.tZ3FNj) : M.NW.string(M.t.Cye3SU)
+            children: V ? M.NW.string(M.t.tZ3FNj) : M.NW.string(M.t.Cye3SU)
           }) : null]
         }), (0, a.jsx)(d.olH, {
           className: P.modalCloseButton,
-          onClick: _
+          onClick: f
         })]
-      }), Y === E.ag.DIRECTORY && H ? (0, a.jsx)(O.W, {}) : null, (0, a.jsx)("div", {
+      }), U === E.ag.DIRECTORY && V ? (0, a.jsx)(O.W, {}) : null, (0, a.jsx)("div", {
         className: P.modalDivider
       }), (0, a.jsxs)(d.MyZ, {
-        activeSlide: Y,
+        activeSlide: U,
         centered: !1,
         width: W,
         children: [(0, a.jsx)(d.Mi4, {
           id: E.ag.DIRECTORY,
           impressionName: r.ImpressionNames.ACTIVITY_SHELF,
           impressionProperties: {
-            source_section: f.section,
+            source_section: o.section,
             impression_group: r.ImpressionGroups.ACTIVITY_SHELF_FLOW
           },
           children: (0, a.jsx)(B, {
-            slide: Y,
+            slide: U,
             children: (0, a.jsx)(Z.Z, {
-              scrollerRef: et,
+              scrollerRef: ee,
               channel: l,
-              guildId: o,
-              locationObject: f,
-              onActivityItemVisible: eo,
-              onClose: _
+              guildId: s,
+              locationObject: o,
+              onActivityItemVisible: ec,
+              onClose: f
             })
           })
         }), (0, a.jsx)(d.Mi4, {
           id: E.ag.SELECT_CHANNEL,
           impressionName: r.ImpressionNames.ACTIVITY_SHELF_SELECT_CHANNEL,
           impressionProperties: {
-            source_section: f.section,
+            source_section: o.section,
             impression_group: r.ImpressionGroups.ACTIVITY_SHELF_FLOW,
-            application_id: X
+            application_id: J
           },
           children: (0, a.jsx)(B, {
-            slide: Y,
+            slide: U,
             children: (0, a.jsx)(S.Z, {
-              applicationId: X,
-              selectedChannelId: Q,
-              setSelectedChannelId: K,
-              guildId: o,
-              enableSelectedTextChannelInvite: R
+              applicationId: J,
+              selectedChannelId: $,
+              setSelectedChannelId: Q,
+              guildId: s,
+              enableSelectedTextChannelInvite: D
             })
           })
         }), (0, a.jsx)(d.Mi4, {
           id: E.ag.DETAIL_PAGE,
           impressionName: r.ImpressionNames.ACTIVITY_DETAILS,
-          impressionProperties: en,
+          impressionProperties: et,
           children: (0, a.jsx)(B, {
-            slide: Y,
-            children: null == X ? null : (0, a.jsx)(N.Z, {
-              applicationId: X,
+            slide: U,
+            children: null == J ? null : (0, a.jsx)(N.Z, {
+              applicationId: J,
               channelId: null == l ? void 0 : l.id,
-              guildId: o,
-              onActivityLaunch: _
+              guildId: s,
+              onActivityLaunch: f
             })
           })
         })]
@@ -275,18 +275,18 @@ function F(e) {
         separator: !1,
         className: P.footer,
         children: (() => {
-          switch (Y) {
+          switch (U) {
             case E.ag.DIRECTORY:
               return (0, a.jsx)(Z.d, {});
             case E.ag.SELECT_CHANNEL:
               return (0, a.jsx)(S.q, {
-                onBack: el,
-                onClose: _,
-                guildId: o,
-                applicationId: X,
-                locationObject: f,
-                selectedChannelId: Q,
-                enableSelectedTextChannelInvite: R
+                onBack: ei,
+                onClose: f,
+                guildId: s,
+                applicationId: J,
+                locationObject: o,
+                selectedChannelId: $,
+                enableSelectedTextChannelInvite: D
               });
             case E.ag.DETAIL_PAGE:
             case E.ag.DIRECTORY:

@@ -1,7 +1,7 @@
-/** Chunk was on 2928 **/
+/** Chunk was on 94898 **/
 n.d(t, {
-  R: () => y,
-  Z: () => v
+  R: () => v,
+  Z: () => y
 });
 var r, i = n(200651);
 n(192379);
@@ -36,26 +36,26 @@ function b(e) {
   }
   return e
 }
-var y = ((r = {})[r.VOICE = 0] = "VOICE", r);
-let v = e => {
+var v = ((r = {})[r.VOICE = 0] = "VOICE", r);
+let y = e => {
   let {
     type: t,
     guildId: r,
-    closePopout: y
-  } = e, v = (0, c.Dt)(), {
-    notClaimed: O,
-    notEmailVerified: j,
-    notPhoneVerified: _,
+    closePopout: v
+  } = e, y = (0, c.Dt)(), {
+    notClaimed: _,
+    notEmailVerified: O,
+    notPhoneVerified: j,
     newAccount: C,
     newMember: x
-  } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), P = 0 === t ? g.NW.string(g.t["6zY8BA"]) : null, N = null, S = null;
-  return (0 === t && (O ? (N = g.NW.string(g.t.IRxUlJ), S = g.NW.string(g.t.fiNVio)) : _ ? (N = g.NW.string(g.t.vW8iUF), S = g.NW.string(g.t["50gfOj"])) : j ? (N = g.NW.string(g.t.vdSOp6), S = g.NW.string(g.t.lm1UKi)) : x ? (N = g.NW.formatToPlainString(g.t.v1ktYW, {
+  } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), S = 0 === t ? g.NW.string(g.t["6zY8BA"]) : null, P = null, I = null;
+  return (0 === t && (_ ? (P = g.NW.string(g.t.IRxUlJ), I = g.NW.string(g.t.fiNVio)) : j ? (P = g.NW.string(g.t.vW8iUF), I = g.NW.string(g.t["50gfOj"])) : O ? (P = g.NW.string(g.t.vdSOp6), I = g.NW.string(g.t.lm1UKi)) : x ? (P = g.NW.formatToPlainString(g.t.v1ktYW, {
     min: h.YeM.MEMBER_AGE
-  }), S = g.NW.string(g.t.BddRzc)) : C && (N = g.NW.formatToPlainString(g.t["sncw4+"], {
+  }), I = g.NW.string(g.t.BddRzc)) : C && (P = g.NW.formatToPlainString(g.t["sncw4+"], {
     min: h.YeM.ACCOUNT_AGE
-  }), S = g.NW.string(g.t.BddRzc))), null == P || null == N) ? null : (0, i.jsxs)(o.VqE, {
+  }), I = g.NW.string(g.t.BddRzc))), null == S || null == P) ? null : (0, i.jsxs)(o.VqE, {
     className: m.container,
-    "aria-labelledby": v,
+    "aria-labelledby": y,
     children: [(0, i.jsx)("img", {
       alt: "",
       className: m.image,
@@ -64,17 +64,17 @@ let v = e => {
       className: m.content,
       children: [(0, i.jsx)(o.X6q, {
         variant: "heading-md/semibold",
-        id: v,
-        children: P
+        id: y,
+        children: S
       }), (0, i.jsx)(o.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: N
+        children: P
       }), (0, i.jsxs)("div", {
         className: m.buttonContainer,
-        children: [null != S ? (0, i.jsx)(o.zxk, {
+        children: [null != I ? (0, i.jsx)(o.zxk, {
           onClick: () => {
-            O ? s.j() : _ ? (0, o.ZDy)(async () => {
+            _ ? s.j() : j ? (0, o.ZDy)(async () => {
               let {
                 default: e
               } = await Promise.all([n.e("76540"), n.e("46767")]).then(n.bind(n, 607018));
@@ -83,7 +83,7 @@ let v = e => {
               }, t))
             }, {
               modalKey: f.M
-            }) : j && (a.Z.verifyResend(), (0, o.h7j)(e => {
+            }) : O && (a.Z.verifyResend(), (0, o.h7j)(e => {
               var t, n, r;
               return (0, i.jsx)(o.ConfirmModal, (n = b({
                 header: g.NW.string(g.t.LykQYm),
@@ -106,12 +106,12 @@ let v = e => {
               })(Object(r)).forEach(function(e) {
                 Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
               }), n))
-            })), y()
+            })), v()
           },
           className: m.primaryButton,
-          children: S
-        }) : null, O || _ || j ? (0, i.jsx)(o.zxk, {
-          onClick: y,
+          children: I
+        }) : null, _ || j || O ? (0, i.jsx)(o.zxk, {
+          onClick: v,
           look: o.zxk.Looks.BLANK,
           className: m.cancel,
           children: g.NW.string(g.t.oEAioK)

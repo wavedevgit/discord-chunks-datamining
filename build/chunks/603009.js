@@ -99,7 +99,7 @@ function Z(e) {
     return t && (0, r.jsx)(a.animated.div, {
       onMouseEnter: () => m(!0),
       onMouseLeave: () => m(!1),
-      className: o()(S.wrapper),
+      className: S.wrapper,
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
