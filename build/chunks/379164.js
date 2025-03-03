@@ -1,4 +1,4 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
   Z: () => m
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(570140),
   i = n(447543),
   l = n(87051),
   o = n(18438),
-  s = n(44609),
-  a = n(731971),
+  a = n(44609),
+  s = n(731971),
   c = n(695346),
   u = n(626135),
   d = n(782605),
@@ -17,10 +17,10 @@ var r = n(570140),
 let m = {
   acceptInvite(e) {
     let t = i.ZP.getInviteContext("Desktop Invite Modal", e),
-      n = (0, a.y)(),
-      u = (0, a.h6)(),
-      p = (0, a.U1)(),
-      m = (0, a.yS)();
+      n = (0, s.y)(),
+      u = (0, s.h6)(),
+      p = (0, s.U1)(),
+      m = (0, s.yS)();
     i.ZP.acceptInvite({
       inviteKey: e.code,
       context: t,
@@ -28,7 +28,7 @@ let m = {
         null == e || null == e.guild || null == e.channel || __OVERLAY__ || i.ZP.transitionToInvite(e)
       }
     }).then(() => {
-      if ((0, s.gY)({
+      if ((0, a.gY)({
           location: "acceptInvite"
         }) && null != e.guild) {
         if (u) {
@@ -52,7 +52,7 @@ let m = {
         }
         null != n && n.length > 0 && (0, o.iq)(e.guild.id, {
           nick: n
-        }), (0, s.m4)({
+        }), (0, a.m4)({
           location: "acceptInvite"
         }) && l.Z.updateGuildNotificationSettings(e.guild.id, {
           muted: m
@@ -67,16 +67,16 @@ let m = {
     })
   },
   close() {
-    let e = (0, a.e7)(),
-      t = (0, a._J)();
-    if ((0, s.gY)({
+    let e = (0, s.e7)(),
+      t = (0, s._J)();
+    if ((0, a.gY)({
         location: "closeInvite"
-      }) && (0, a.NQ)()) {
-      let n = (0, a.y)(),
-        r = (0, a.h6)(),
-        i = (0, a.U1)(),
-        l = (0, a.yS)(),
-        o = (0, a.aP)();
+      }) && (0, s.NQ)()) {
+      let n = (0, s.y)(),
+        r = (0, s.h6)(),
+        i = (0, s.U1)(),
+        l = (0, s.yS)(),
+        o = (0, s.aP)();
       u.default.track(p.rMx.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
         invite_code: e,
         guild_id: t,
@@ -86,7 +86,7 @@ let m = {
         muted_server: l,
         changed_from_default: o
       })
-    }(0, a.oE)(), r.Z.dispatch({
+    }(0, s.oE)(), r.Z.dispatch({
       type: "INVITE_MODAL_CLOSE"
     })
   }

@@ -105,23 +105,23 @@ function _(e) {
 function O(e) {
   let {
     onActivate: t
-  } = e, n = (0, s.Q3)("PendingGuildJoinRequestsFolderNode"), [O, j] = i.useState(!1), C = (0, l.e7)([p.Z], () => p.Z.getGuildId()), x = (0, l.e7)([d.Z], () => d.Z.hasFetchedRequestToJoinGuilds), S = (0, g.Z)(), P = (0, a.Z)(C), I = i.useMemo(() => {
+  } = e, n = (0, s.Q3)("PendingGuildJoinRequestsFolderNode"), [O, j] = i.useState(!1), C = (0, l.e7)([p.Z], () => p.Z.getGuildId()), x = (0, l.e7)([d.Z], () => d.Z.hasFetchedRequestToJoinGuilds), P = (0, g.Z)(), S = (0, a.Z)(C), I = i.useMemo(() => {
     let e = (0, f.qQ)({
       folderId: h.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: v.NW.string(v.t["scsU+v"]),
       expanded: O,
       guildIds: []
     });
-    for (let t of S) e.children.push((0, f.Mg)(t, e.id));
+    for (let t of P) e.children.push((0, f.Mg)(t, e.id));
     return e
-  }, [S, O]);
+  }, [P, O]);
   i.useEffect(() => {
     O && !x && c.Z.fetchRequestToJoinGuilds()
   }, [O, x]);
-  let N = null != C && S.includes(C);
+  let N = null != C && P.includes(C);
   return (i.useEffect(() => {
-    !O && N && P !== C && j(!0)
-  }, [O, N, P, C]), 0 === S.length) ? null : (0, r.jsx)(_, {
+    !O && N && S !== C && j(!0)
+  }, [O, N, S, C]), 0 === P.length) ? null : (0, r.jsx)(_, {
     onActivate: t,
     children: (0, r.jsx)(m.Z, {
       folderNode: I,

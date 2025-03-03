@@ -107,7 +107,7 @@ function K(e) {
             var i;
             let e = await f.Z.getOrEnsurePrivateChannel(a.id),
               n = null !== (i = T.Z.getChannel(e)) && void 0 !== i ? i : null;
-            l()(null != n, "Send channel must be defined"), (0, C.uL)(G.Z5c.CHANNEL(n.guild_id, n.id)), (0, y.i)(G.IlC.OVERLAY), !0 === t.extra.fake_inventory_item ? await (0, x.k)({
+            l()(null != n, "Send channel must be defined"), (0, C.uL)(G.Z5c.CHANNEL(n.guild_id, n.id)), (0, y.i)(G.IlC.OVERLAY, !0), !0 === t.extra.fake_inventory_item ? await (0, x.k)({
               channel: n,
               content: Y.NW.string(Y.t.DwAcMz),
               whenReady: !0
@@ -136,7 +136,7 @@ function K(e) {
       if (null == a) return;
       let t = await f.Z.getOrEnsurePrivateChannel(a.id),
         n = null !== (e = T.Z.getChannel(t)) && void 0 !== e ? e : null;
-      l()(null != n, "Send channel must be defined"), (0, C.uL)(G.Z5c.CHANNEL(n.guild_id, n.id)), (0, y.i)(G.IlC.OVERLAY), (0, U.Ws)(G.Odu.ACTIVITY, {
+      l()(null != n, "Send channel must be defined"), (0, C.uL)(G.Z5c.CHANNEL(n.guild_id, n.id)), (0, y.i)(G.IlC.OVERLAY, !0), (0, U.Ws)(G.Odu.ACTIVITY, {
         type: U.Qu.REDIRECT,
         value: U.bk.CHAT,
         userId: a.id

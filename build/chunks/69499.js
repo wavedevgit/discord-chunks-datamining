@@ -1,14 +1,14 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
   E: () => p,
-  Z: () => h
+  Z: () => f
 }), n(47120), n(230036);
 var r = n(200651),
   i = n(192379),
   l = n(442837),
   o = n(481060),
-  s = n(239091),
-  a = n(585237),
+  a = n(239091),
+  s = n(585237),
   c = n(812206),
   u = n(55563),
   d = n(73346),
@@ -23,10 +23,10 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 let p = {
-  DropdownSizes: a.Z.DropdownSizes,
-  Sizes: a.Z.Sizes,
-  Colors: a.Z.Colors,
-  Looks: a.Z.Looks
+  DropdownSizes: s.Z.DropdownSizes,
+  Sizes: s.Z.Sizes,
+  Colors: s.Z.Colors,
+  Looks: s.Z.Looks
 };
 class m extends i.PureComponent {
   render() {
@@ -36,7 +36,7 @@ class m extends i.PureComponent {
         skus: i,
         children: l,
         applicationId: o,
-        primarySKU: s,
+        primarySKU: a,
         onSKUSelect: c
       } = n,
       u = function(e, t) {
@@ -54,7 +54,7 @@ class m extends i.PureComponent {
         }
         return i
       }(n, ["skus", "children", "applicationId", "primarySKU", "onSKUSelect"]);
-    return (0, r.jsx)(a.Z, (e = function(e) {
+    return (0, r.jsx)(s.Z, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -93,7 +93,7 @@ class m extends i.PureComponent {
         onSelect: n,
         navId: "test-skus",
         "aria-label": _.NW.string(_.t.ogxXGh),
-        onClose: s.Zy,
+        onClose: a.Zy,
         children: e.map(e => (0, r.jsx)(o.sNh, {
           id: "".concat(e.id),
           label: e.name,
@@ -103,7 +103,7 @@ class m extends i.PureComponent {
         }, "".concat(e.id)))
       })
     }), E(this, "handleContextMenu", e => {
-      e.stopPropagation(), s.vq(e, this.renderContextMenu)
+      e.stopPropagation(), a.vq(e, this.renderContextMenu)
     }), E(this, "handleClick", () => {
       let {
         onSKUSelect: e,
@@ -113,7 +113,7 @@ class m extends i.PureComponent {
     })
   }
 }
-let h = l.ZP.connectStores([u.Z, c.Z], e => {
+let f = l.ZP.connectStores([u.Z, c.Z], e => {
   var t;
   let {
     applicationId: n

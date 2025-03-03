@@ -1,14 +1,14 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
-  s: () => a
+  s: () => s
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   l = n(120356),
   o = n.n(l),
-  s = n(386214);
+  a = n(386214);
 
-function a() {
+function s() {
   let [e, t] = i.useState(!1);
   return {
     isTruncated: e,
@@ -17,16 +17,16 @@ function a() {
         showAll: n = !1,
         className: i,
         children: l,
-        lineClamp: a = 2
+        lineClamp: s = 2
       } = e;
       return (0, r.jsx)("div", {
         ref: e => {
           null != e && t(e.scrollHeight - e.clientHeight > 1)
         },
-        className: o()(s.lineClamp, i),
+        className: o()(a.lineClamp, i),
         style: n ? void 0 : {
-          lineClamp: a,
-          WebkitLineClamp: a
+          lineClamp: s,
+          WebkitLineClamp: s
         },
         children: l
       })

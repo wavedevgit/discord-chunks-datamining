@@ -126,6 +126,29 @@ let b = "migrated",
         pinned: !0
       }
     },
+    [h.Odu.GUILDS_TEXT]: {
+      minSize: {
+        height: 300,
+        width: 610
+      },
+      resizeX: !0,
+      resizeY: !0,
+      dragAnywhere: !1,
+      layoutPolicy: "OPTIONAL_DEFAULT",
+      defaultSettings: {
+        anchor: {
+          left: void 0,
+          top: .05,
+          bottom: void 0,
+          right: .25
+        },
+        size: {
+          width: .6,
+          height: .45
+        },
+        pinned: !1
+      }
+    },
     [h.Odu.VOICE_V3]: {
       minSize: {
         width: 272,
@@ -148,7 +171,7 @@ let b = "migrated",
         },
         pinned: !0
       },
-      version: 1
+      version: 2
     },
     [h.Odu.VIDEO]: {
       minSize: {
@@ -173,30 +196,7 @@ let b = "migrated",
         },
         pinned: !0
       },
-      version: 1
-    },
-    [h.Odu.GUILDS_TEXT]: {
-      minSize: {
-        height: 300,
-        width: 610
-      },
-      resizeX: !0,
-      resizeY: !0,
-      dragAnywhere: !1,
-      layoutPolicy: "OPTIONAL_DEFAULT",
-      defaultSettings: {
-        anchor: {
-          left: void 0,
-          top: .05,
-          bottom: void 0,
-          right: .25
-        },
-        size: {
-          width: .6,
-          height: .45
-        },
-        pinned: !1
-      }
+      version: 2
     },
     [h.Odu.GO_LIVE]: {
       minSize: {
@@ -221,7 +221,7 @@ let b = "migrated",
         },
         pinned: !1
       },
-      version: 1
+      version: 2
     },
     [h.Odu.QUICK_ACTIONS]: {
       minSize: {
@@ -245,7 +245,7 @@ let b = "migrated",
         },
         pinned: !1
       },
-      version: 1
+      version: 2
     },
     [h.Odu.NOTIFICATIONS]: {
       minSize: {
@@ -269,7 +269,7 @@ let b = "migrated",
         },
         pinned: !0
       },
-      version: 1
+      version: 2
     },
     [h.Odu.ACTIVITY]: {
       minSize: {
@@ -293,7 +293,7 @@ let b = "migrated",
         },
         pinned: !1
       },
-      version: 1
+      version: 2
     },
     [h.Odu.CLICK_ZONE_DEBUG]: {
       minSize: {
@@ -317,7 +317,7 @@ let b = "migrated",
         },
         pinned: !0
       },
-      version: 1
+      version: 2
     },
     [h.Odu.PERFORMANCE_DEBUG]: {
       minSize: {
@@ -340,7 +340,8 @@ let b = "migrated",
           width: "auto"
         },
         pinned: !0
-      }
+      },
+      version: 2
     }
   };
 

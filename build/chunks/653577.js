@@ -34,9 +34,9 @@ function v(e) {
   }, [t.id, O, t.guild_id]);
   let x = (0, s.bWb)().enabled ? 12 : 14;
   if (null == t.guild_id) return null;
-  let S = o()(m.statusDiv, n && j ? m.hoverable : null);
+  let P = o()(m.statusDiv, n && j ? m.hoverable : null);
   return O ? (0, r.jsx)(s.P3F, {
-    className: S,
+    className: P,
     onClick: j ? y : void 0,
     children: (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
@@ -48,7 +48,7 @@ function v(e) {
       })
     })
   }) : n && j && (!C || l) ? (0, r.jsxs)(s.P3F, {
-    className: S,
+    className: P,
     onClick: y,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/medium",

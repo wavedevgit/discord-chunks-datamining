@@ -173,11 +173,11 @@ let k = function(e) {
       }
       return [z]
     }, [z, c]),
-    Q = i.useMemo(() => z.filter(e => e.type === P.OGo.PENDING_INCOMING).length, [z]),
-    X = c === P.pJs.PENDING && Q > 0 && Q >= T.yf,
+    X = i.useMemo(() => z.filter(e => e.type === P.OGo.PENDING_INCOMING).length, [z]),
+    Q = c === P.pJs.PENDING && X > 0 && X >= T.yf,
     J = i.useCallback(e => {
-      e.stopPropagation(), u.Z.confirmClearPendingRelationships(Q)
-    }, [Q]),
+      e.stopPropagation(), u.Z.confirmClearPendingRelationships(X)
+    }, [X]),
     $ = i.useCallback(e => {
       let n = function(e, t, n) {
         switch (e) {
@@ -208,7 +208,7 @@ let k = function(e) {
         children: [(0, r.jsx)(C.Z, {
           id: t,
           title: n
-        }), X && (0, r.jsx)(s.zxk, {
+        }), Q && (0, r.jsx)(s.zxk, {
           look: s.iLD.LINK,
           color: s.Ttl.LINK,
           className: A.clearButton,
@@ -224,7 +224,7 @@ let k = function(e) {
           title: n
         })
       }, n)
-    }, [q, c, t, X, J]);
+    }, [q, c, t, Q, J]);
   if (i.useEffect(() => {
       c === P.pJs.ALL && (0, m.d$)()
     }, [c]), 0 === z.length && "" === G[c]) return (0, r.jsx)(D, {

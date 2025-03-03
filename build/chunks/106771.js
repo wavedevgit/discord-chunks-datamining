@@ -22,8 +22,8 @@ function f(e) {
     application: f,
     onClick: v,
     query: N,
-    searchResultsPosition: y
-  } = e, x = l.useCallback(e => {
+    searchResultsPosition: x
+  } = e, y = l.useCallback(e => {
     if ((0, s.BQ)(f)) {
       let t = f instanceof a.ZP ? f : a.ZP.createFromServer(f);
       (0, o.vq)(e, e => (0, i.jsx)(u.Z, function(e) {
@@ -50,26 +50,26 @@ function f(e) {
   }, [f]), {
     iconURL: b,
     name: E,
-    description: C
+    description: j
   } = l.useMemo(() => (0, s.sl)(f, {
     fakeAppIconURL: h
-  }), [f]), g = l.useMemo(() => {
+  }), [f]), C = l.useMemo(() => {
     var e;
-    let t = null !== (e = null == n ? void 0 : n.displayDescription) && void 0 !== e ? e : C;
+    let t = null !== (e = null == n ? void 0 : n.displayDescription) && void 0 !== e ? e : j;
     return null == t ? null : (0, c.ae)(t, void 0)
-  }, [C, null == n ? void 0 : n.displayDescription]), {
-    trackSearchResultsItemImpressionRef: j
+  }, [j, null == n ? void 0 : n.displayDescription]), {
+    trackSearchResultsItemImpressionRef: g
   } = (0, p.Z)({
     applicationId: f.id,
     commandId: null == n ? void 0 : n.id,
     query: N,
-    searchResultsPosition: y
+    searchResultsPosition: x
   });
   return (0, i.jsx)(r.P3F, {
     className: m.clickable,
-    innerRef: e => j.current = e,
+    innerRef: e => g.current = e,
     onClick: v,
-    onContextMenu: x,
+    onContextMenu: y,
     children: (0, i.jsxs)(r.Rny, {
       className: m.focusBlock,
       children: [(0, i.jsx)(d.Z, {
@@ -88,7 +88,7 @@ function f(e) {
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
-          children: g
+          children: C
         })]
       }), null != n ? (0, i.jsx)(r.Text, {
         className: m.cmdAppName,

@@ -57,9 +57,9 @@ let B = "NitroTabButton",
     var z, Y, {
         selected: K,
         route: q,
-        locationState: Q
+        locationState: X
       } = e,
-      X = function(e, t) {
+      Q = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
@@ -179,7 +179,7 @@ let B = "NitroTabButton",
       route: q,
       icon: s.SrA,
       text: W.NW.string(W.t.Ipxkoq),
-      locationState: Q,
+      locationState: X,
       onClick: () => {
         em === a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eb(G.L.TAKE_ACTION), _.default.track(U.rMx.NITRO_TAB_VISITED, {
           badge_decorator: F,
@@ -190,7 +190,7 @@ let B = "NitroTabButton",
           dismissAction: G.L.TAKE_ACTION
         })) : null != eO && eN(G.L.USER_DISMISS)
       }
-    }, X, et), Y = Y = {
+    }, Q, et), Y = Y = {
       className: t,
       avatarWithTextClassName: n,
       children: O

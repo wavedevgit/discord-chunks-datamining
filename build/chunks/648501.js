@@ -25,8 +25,8 @@ var i = n(442837),
   j = n(25601),
   C = n(981631),
   x = n(490897),
-  S = n(388032),
-  P = n(462479);
+  P = n(388032),
+  S = n(462479);
 
 function I(e) {
   var t;
@@ -59,14 +59,14 @@ function I(e) {
     locked: A
   });
   if (D) return (0, r.jsx)(o.IGR, {
-    text: S.NW.string(S.t.y2b7CA),
+    text: P.NW.string(P.t.y2b7CA),
     color: l.Z.unsafe_rawColors.BRAND_260.css,
-    className: P.newChannel
+    className: S.newChannel
   });
   if (!R && L === x.i.ALL_MESSAGES && n.isForumLikeChannel() && null != F && F > 0) return (0, r.jsx)(o.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
-    children: S.NW.format(S.t.GkAbqa, {
+    children: P.NW.format(P.t.GkAbqa, {
       count: (0, o.NGo)(F)
     })
   });
@@ -81,7 +81,7 @@ function I(e) {
     video: U || W,
     channel: n
   }) : N && (0, m.a)(Z) && z ? (0, r.jsx)(o.IGR, {
-    text: S.NW.string(S.t.dI3q4u),
+    text: P.NW.string(P.t.dI3q4u),
     color: l.Z.unsafe_rawColors.RED_400.css
   }) : null != E && E && (0, b.u)(G) ? (0, r.jsx)(_.Z, {
     embeddedApps: G,

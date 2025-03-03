@@ -53,7 +53,7 @@ function y(e, t) {
     })
   }, [e]);
   return o.useEffect(() => {
-    (n || r) && n && !r && (u(!0), b())
+    !r && n && n && (u(!0), b())
   }, [b, r, n, e]), (0, c.Ng)(() => {
     var e;
     r && b();

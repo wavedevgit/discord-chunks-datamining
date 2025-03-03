@@ -1,4 +1,4 @@
-/** Chunk was on 72453 **/
+/** Chunk was on 76030 **/
 e.exports = {
   markdownContainer: "markdownContainer__48344",
   containerSizedText: "containerSizedText__48344"

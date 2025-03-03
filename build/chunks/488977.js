@@ -17,19 +17,19 @@ var i = n(200651),
   f = n(973616),
   v = n(914010),
   N = n(594174),
-  y = n(626135),
-  x = n(572004),
+  x = n(626135),
+  y = n(572004),
   b = n(630388),
   E = n(135431),
-  C = n(541099),
-  g = n(783097),
-  j = n(570949),
+  j = n(541099),
+  C = n(783097),
+  g = n(570949),
   P = n(314734),
   A = n(981631),
   I = n(388032),
-  O = n(75840);
+  _ = n(75840);
 
-function _(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -55,40 +55,40 @@ function S(e) {
     context: S,
     className: T,
     sectionName: L
-  } = e, R = (0, o.e7)([C.Z], () => C.Z.entrypoint()), M = (0, g.L1)(l), Z = (0, E.Eb)(M), k = (0, u.R)(l.id), w = (0, o.e7)([v.Z], () => {
+  } = e, R = (0, o.e7)([j.Z], () => j.Z.entrypoint()), Z = (0, C.L1)(l), k = (0, E.Eb)(Z), M = (0, u.R)(l.id), w = (0, o.e7)([v.Z], () => {
     var e;
     return null !== (e = v.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }, []), U = {
+  }, []), W = {
     location: c.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
     application_id: l.id,
     section_name: L,
-    source: C.Z.lastShownEntrypoint()
-  }, D = N.default.getCurrentUser(), W = m.Z.useExperiment({
+    source: j.Z.lastShownEntrypoint()
+  }, U = N.default.getCurrentUser(), D = m.Z.useExperiment({
     location: c.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU
   }, {
     autoTrackExposure: !0
   }).enabled, H = (0, p.Z)({
     id: l.id,
     label: I.NW.string(I.t["+NP/b2"])
-  }), V = (0, j.P)({
+  }), V = (0, g.P)({
     application: l
   }), B = (0, b.yE)(null !== (t = l.flags) && void 0 !== t ? t : 0, A.udG.EMBEDDED), F = "channel" === S.type ? S.channel : void 0;
   return (0, i.jsxs)("div", {
-    className: O.container,
+    className: _.container,
     children: [(0, i.jsx)(a.P3F, {
       onClick: () => {
         let e = B ? (0, d.H)({
           applicationId: l.id,
-          referrerId: null == D ? void 0 : D.id
-        }) : (0, d.J)(_({
+          referrerId: null == U ? void 0 : U.id
+        }) : (0, d.J)(O({
           id: l.id
-        }, M));
-        (0, x.JG)(e), y.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
+        }, Z));
+        (0, y.JG)(e), x.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: l.id,
           source: R
         }), (0, a.showToast)((0, a.createToast)(I.NW.string(I.t["L/PwZW"]), a.ToastType.SUCCESS))
       },
-      className: r()(O.clickable, T),
+      className: r()(_.clickable, T),
       "aria-label": I.NW.string(I.t.WqhZsr),
       children: (0, i.jsx)(a.xPt, {
         size: "sm",
@@ -106,7 +106,7 @@ function S(e) {
           "aria-label": I.NW.string(I.t.AXIHpa),
           onSelect: void 0,
           children: [(0, i.jsxs)(a.kSQ, {
-            children: [k && (0, i.jsx)(a.sNh, {
+            children: [M && (0, i.jsx)(a.sNh, {
               id: "open-storefront",
               label: I.NW.string(I.t.kRvlKC),
               action: () => {
@@ -122,17 +122,17 @@ function S(e) {
                   })
                 })
               }
-            }), Z ? (0, i.jsx)(a.sNh, {
+            }), k ? (0, i.jsx)(a.sNh, {
               id: "add-app",
               label: I.NW.string(I.t.NgXl3N),
               action: () => {
                 var e, t;
-                null == M.customInstallUrl && (0, s.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, U), (0, E.LO)((e = _({}, M), t = t = {
+                null == Z.customInstallUrl && (0, s.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, W), (0, E.LO)((e = O({}, Z), t = t = {
                   oauth2Callback: e => {
                     let {
                       location: t
                     } = e;
-                    null != t && (0, s.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, U)
+                    null != t && (0, s.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, W)
                   },
                   source: "app_launcher_app_details"
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -146,7 +146,7 @@ function S(e) {
                   Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
                 }), e))
               }
-            }) : null, W && l instanceof f.ZP ? (0, i.jsx)(a.sNh, {
+            }) : null, D && l instanceof f.ZP ? (0, i.jsx)(a.sNh, {
               id: "report-app",
               color: "danger",
               label: I.NW.string(I.t.jhJze3),
@@ -169,7 +169,7 @@ function S(e) {
       position: "bottom",
       children: e => (0, i.jsx)(a.P3F, {
         onClick: e.onClick,
-        className: r()(O.clickable, T),
+        className: r()(_.clickable, T),
         "aria-label": I.NW.string(I.t.UKOtz8),
         children: (0, i.jsx)(a.xhG, {
           size: "sm",

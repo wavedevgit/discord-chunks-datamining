@@ -5,25 +5,25 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   a = n(512722),
-  l = n.n(a),
-  s = n(913527),
-  o = n.n(s),
+  s = n.n(a),
+  l = n(913527),
+  o = n.n(l),
   c = n(442837),
   d = n(481060),
   u = n(749210),
   f = n(600164),
   h = n(313201),
-  x = n(592125),
-  m = n(944486),
-  _ = n(594174),
-  N = n(626135),
+  m = n(592125),
+  x = n(944486),
+  N = n(594174),
+  _ = n(626135),
   b = n(63063),
   g = n(771308),
   k = n(758119),
   E = n(622822),
   y = n(13430),
-  z = n(723359),
-  j = n(981631),
+  j = n(723359),
+  z = n(981631),
   A = n(388032),
   C = n(326610);
 
@@ -31,10 +31,10 @@ function L(e) {
   let {
     transitionState: t,
     source: a
-  } = e, s = (0, c.e7)([_.default], () => _.default.getCurrentUser()), L = (0, c.e7)([m.Z, x.Z], () => x.Z.getChannel(m.Z.getChannelId())), [R, v] = i.useState(null), [T, p] = i.useState(null), [S, M] = i.useState(!1), [W, w] = i.useState(0), G = i.createRef(), I = i.createRef(), Y = (0, h.Dt)(), Z = (0, E.Kt)(), D = null != R ? o()().diff(R, "years") : null;
+  } = e, l = (0, c.e7)([N.default], () => N.default.getCurrentUser()), L = (0, c.e7)([x.Z, m.Z], () => m.Z.getChannel(x.Z.getChannelId())), [R, v] = i.useState(null), [T, S] = i.useState(null), [W, p] = i.useState(!1), [M, w] = i.useState(0), G = i.createRef(), I = i.createRef(), Z = (0, h.Dt)(), D = (0, E.Kt)(), Y = null != R ? o()().diff(R, "years") : null;
 
-  function B() {
-    if (a === z.L0.NSFW_SERVER_INVITE_EMBED) {
+  function F() {
+    if (a === j.L0.NSFW_SERVER_INVITE_EMBED) {
       (0, k.qV)(a);
       return
     }
@@ -42,36 +42,36 @@ function L(e) {
     u.Z.nsfwReturnToSafety(e), (0, k.qV)(a)
   }
   async function P() {
-    l()(null != R, "Cannot submit null birthday.");
+    s()(null != R, "Cannot submit null birthday.");
     try {
-      return p(null), M(!0), await (0, g.Av)(R, a)
+      return S(null), p(!0), await (0, g.Av)(R, a)
     } catch (t) {
       if (null != t.body && null != t.body.date_of_birth)(0, k.C8)(a, t.body.date_of_birth);
       else {
         var e;
-        (null == t ? void 0 : null === (e = t.body) || void 0 === e ? void 0 : e.username) != null ? p(A.NW.string(A.t["TGg/2t"])) : p(null == t ? void 0 : t.body.message), M(!1)
+        (null == t ? void 0 : null === (e = t.body) || void 0 === e ? void 0 : e.username) != null ? S(A.NW.string(A.t["TGg/2t"])) : S(null == t ? void 0 : t.body.message), p(!1)
       }
     }
   }
-  async function F() {
-    if (l()(null != D, "Cannot submit if we haven't been able to calculate age."), D < 18) {
+  async function B() {
+    if (s()(null != Y, "Cannot submit if we haven't been able to calculate age."), Y < 18) {
       w(1);
       return
     }
     await P()
   }
-  async function q(e) {
-    e.preventDefault(), S || null == R || await F()
+  async function U(e) {
+    e.preventDefault(), W || null == R || await B()
   }
-  async function U() {
+  async function q() {
     null == await P() && w(0)
   }
   i.useEffect(() => {
-    null != s && null != s.nsfwAllowed && (0, k.qq)(a)
+    null != l && null != l.nsfwAllowed && (0, k.qq)(a)
   }), i.useEffect(() => {
-    N.default.track(j.rMx.AGE_GATE_ACTION, {
+    _.default.track(z.rMx.AGE_GATE_ACTION, {
       source: a,
-      action: z.Al.AGE_GATE_OPEN
+      action: j.Al.AGE_GATE_OPEN
     })
   }, [a]);
   let K = i.useCallback(e => {
@@ -81,7 +81,7 @@ function L(e) {
       var e;
       null === (e = I.current) || void 0 === e || e.focus()
     }, [I]);
-  return Z ? (0, r.jsxs)(d.Y0X, {
+  return D ? (0, r.jsxs)(d.Y0X, {
     transitionState: t,
     size: d.CgR.SMALL,
     children: [(0, r.jsx)(d.hzk, {
@@ -98,43 +98,43 @@ function L(e) {
         }), (0, r.jsx)(d.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: A.NW.string(A.t["u/xqhY"])
+          children: A.NW.string(A.t["NjO/s7"])
         })]
       })
     }), (0, r.jsxs)(d.mzw, {
       justify: f.Z.Justify.BETWEEN,
       children: [(0, r.jsx)(d.zxk, {
         size: d.PhG.SMALL,
-        onClick: B,
-        children: A.NW.string(A.t["5B+npK"])
+        onClick: F,
+        children: A.NW.string(A.t.SFWVER)
       }), (0, r.jsx)(d.zxk, {
         look: d.zxk.Looks.LINK,
         size: d.zxk.Sizes.NONE,
         color: d.zxk.Colors.PRIMARY,
-        onClick: B,
+        onClick: F,
         children: A.NW.string(A.t.f3Pet7)
       })]
     })]
-  }) : 0 === W ? function() {
-    let e = a === z.L0.FAMILY_CENTER ? A.NW.string(A.t.M7mt7u) : A.NW.string(A.t.F8otRk),
+  }) : 0 === M ? function() {
+    let e = a === j.L0.FAMILY_CENTER ? A.NW.string(A.t.M7mt7u) : A.NW.string(A.t.F8otRk),
       i = (() => {
         switch (a) {
-          case z.L0.FAMILY_CENTER:
+          case j.L0.FAMILY_CENTER:
             return A.NW.string(A.t.mhUrKS);
-          case z.L0.DEEP_LINK_PROMPT:
+          case j.L0.DEEP_LINK_PROMPT:
             return A.NW.format(A.t.iyhg2t, {
-              helpURL: b.Z.getArticleURL(j.BhN.AGE_GATE)
+              helpURL: b.Z.getArticleURL(z.BhN.AGE_GATE)
             });
           default:
             return A.NW.format(A.t.n3QjDA, {
-              helpURL: b.Z.getArticleURL(j.BhN.AGE_GATE)
+              helpURL: b.Z.getArticleURL(z.BhN.AGE_GATE)
             })
         }
       })();
     return (0, r.jsxs)(d.Y0X, {
       transitionState: t,
       size: d.CgR.SMALL,
-      "aria-labelledby": Y,
+      "aria-labelledby": Z,
       children: [(0, r.jsxs)(d.hzk, {
         children: [(0, r.jsxs)("div", {
           className: C.container,
@@ -145,7 +145,7 @@ function L(e) {
           }), (0, r.jsx)(d.X6q, {
             variant: "heading-xl/semibold",
             className: C.title,
-            id: Y,
+            id: Z,
             children: e
           }), (0, r.jsx)(d.Text, {
             color: "header-secondary",
@@ -153,7 +153,7 @@ function L(e) {
             children: i
           })]
         }), (0, r.jsx)("form", {
-          onSubmit: q,
+          onSubmit: U,
           children: (0, r.jsx)(y.Z, {
             label: A.NW.string(A.t.rhBeKS),
             wrapperClassName: C.birthday,
@@ -170,16 +170,16 @@ function L(e) {
         justify: f.Z.Justify.BETWEEN,
         children: [(0, r.jsx)(d.zxk, {
           buttonRef: I,
-          submitting: S,
+          submitting: W,
           disabled: null == R,
           size: d.PhG.SMALL,
-          onClick: F,
+          onClick: B,
           children: A.NW.string(A.t.uBFuoq)
         }), (0, r.jsx)(d.zxk, {
           look: d.zxk.Looks.LINK,
           size: d.zxk.Sizes.NONE,
           color: d.zxk.Colors.PRIMARY,
-          onClick: B,
+          onClick: F,
           children: A.NW.string(A.t["1MrpWF"])
         })]
       })]
@@ -187,22 +187,22 @@ function L(e) {
   }() : (0, r.jsxs)(d.Y0X, {
     transitionState: d.Dvm.ENTERED,
     size: d.CgR.SMALL,
-    "aria-labelledby": Y,
+    "aria-labelledby": Z,
     children: [(0, r.jsx)(d.hzk, {
       children: (0, r.jsxs)("div", {
         className: C.confirmContainer,
         children: [(0, r.jsx)(d.X6q, {
           variant: "heading-xl/semibold",
           className: C.confirmTitle,
-          id: Y,
+          id: Z,
           children: A.NW.format(A.t.wumolZ, {
-            age: D
+            age: Y
           })
         }), (0, r.jsx)(d.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
           children: A.NW.format(A.t.n3QjDA, {
-            helpURL: b.Z.getArticleURL(j.BhN.AGE_GATE)
+            helpURL: b.Z.getArticleURL(z.BhN.AGE_GATE)
           })
         })]
       })
@@ -216,7 +216,7 @@ function L(e) {
         children: A.NW.string(A.t.cfYCra)
       }), (0, r.jsx)(d.zxk, {
         color: d.zxk.Colors.BRAND,
-        onClick: U,
+        onClick: q,
         children: A.NW.string(A.t["6tahio"])
       })]
     })]

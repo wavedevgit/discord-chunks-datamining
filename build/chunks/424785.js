@@ -25,8 +25,8 @@ var i = n(120356),
   j = n(427679),
   C = n(368442),
   x = n(201469),
-  S = n(680089),
-  P = n(592125),
+  P = n(680089),
+  S = n(592125),
   I = n(430824),
   N = n(607744),
   Z = n(496675),
@@ -319,8 +319,8 @@ function q(e) {
   } = e, c = (0, o.cj)([w.ZP], () => ({
     unread: w.ZP.hasUnread(n.id),
     mentionCount: w.ZP.getMentionCount(n.id)
-  })), u = (0, o.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(n)), d = (0, o.cj)([P.Z, N.Z, Z.Z], () => {
-    let e = P.Z.getChannel(n.parent_id),
+  })), u = (0, o.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(n)), d = (0, o.cj)([S.Z, N.Z, Z.Z], () => {
+    let e = S.Z.getChannel(n.parent_id),
       r = N.Z.getCheck(n.guild_id);
     return {
       canManageChannel: null != t && Z.Z.can(M.Plq.MANAGE_CHANNELS, n),
@@ -330,7 +330,7 @@ function q(e) {
       bypassLimit: Z.Z.can(M.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, o.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), h = (0, x.ZP)(n.id), f = (0, o.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, _.Rk)(n.id, O.pV.AUDIENCE), {
+  }), p = (0, o.e7)([P.Z], () => P.Z.isCollapsed(n.parent_id)), h = (0, x.ZP)(n.id), f = (0, o.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, _.Rk)(n.id, O.pV.AUDIENCE), {
     isSubscriptionGated: b,
     needSubscriptionToAccess: v
   } = (0, m.Z)(n.id), y = (0, o.e7)([E.ZP], () => E.ZP.isFavorite(t.id, n.id)), I = (0, C.xJ)(n.id), T = (0, R.Z)({

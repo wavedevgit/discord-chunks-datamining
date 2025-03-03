@@ -1,4 +1,4 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
   Z: () => x,
   d: () => D
@@ -8,8 +8,8 @@ n(192379);
 var i = n(120356),
   l = n.n(i),
   o = n(442837),
-  s = n(692547),
-  a = n(481060),
+  a = n(692547),
+  s = n(481060),
   c = n(549817),
   u = n(819553),
   d = n(17181),
@@ -17,11 +17,11 @@ var i = n(120356),
   E = n(434404),
   p = n(703656),
   m = n(944486),
-  h = n(914010),
-  f = n(671533),
+  f = n(914010),
+  h = n(671533),
   g = n(259580),
-  N = n(358085),
-  O = n(962086),
+  O = n(358085),
+  N = n(962086),
   I = n(160404),
   b = n(889695),
   T = n(981631),
@@ -37,12 +37,12 @@ function A(e) {
     onClick: n,
     children: i
   } = e;
-  return (0, r.jsx)(a.zxk, {
+  return (0, r.jsx)(s.zxk, {
     className: l()(R.button, t),
     innerClassName: R.buttonInner,
-    look: a.zxk.Looks.OUTLINED,
-    color: a.zxk.Colors.WHITE,
-    size: a.zxk.Sizes.NONE,
+    look: s.zxk.Looks.OUTLINED,
+    color: s.zxk.Colors.WHITE,
+    size: s.zxk.Sizes.NONE,
     onClick: n,
     children: i
   })
@@ -59,13 +59,13 @@ function v(e) {
 }
 
 function x() {
-  let e = (0, o.e7)([h.Z], () => h.Z.getGuildId()),
+  let e = (0, o.e7)([f.Z], () => f.Z.getGuildId()),
     t = (0, o.e7)([m.Z], () => m.Z.getChannelId(e)),
     {
       viewingRoles: n,
       backNavigationSection: i,
       isFullServerPreview: l,
-      isServerShopPreview: N
+      isServerShopPreview: O
     } = (0, o.cj)([I.Z], () => ({
       viewingRoles: null != e ? I.Z.getViewingRoles(e) : null,
       backNavigationSection: I.Z.getBackNavigationSection(e),
@@ -87,24 +87,24 @@ function x() {
     }(i),
     D = i === T.pNK.ROLE_SUBSCRIPTIONS ? P.NW.string(P.t.hZUCzc) : P.NW.string(P.t["/djIh4"]),
     L = t === C.oC.GUILD_ONBOARDING,
-    k = t => {
+    j = t => {
       let {
         backToSettings: n
       } = t;
-      null != e && (I.Z.isFullServerPreview(e) && (0, p.uL)(T.Z5c.CHANNEL(e)), u.ZP.shouldShowOnboarding(e) && (c.Z.finishOnboarding(e), (0, d.EI)(e)), (0, O.mL)(e), n && E.Z.open(e, i), i === T.pNK.ROLE_SUBSCRIPTIONS && (0, _.GN)(e))
+      null != e && (I.Z.isFullServerPreview(e) && (0, p.uL)(T.Z5c.CHANNEL(e)), u.ZP.shouldShowOnboarding(e) && (c.Z.finishOnboarding(e), (0, d.EI)(e)), (0, N.mL)(e), n && E.Z.open(e, i), i === T.pNK.ROLE_SUBSCRIPTIONS && (0, _.GN)(e))
     };
-  return (0, r.jsxs)(a.qXd, {
-    color: a.DM8.BRAND,
+  return (0, r.jsxs)(s.qXd, {
+    color: s.DM8.BRAND,
     className: R.notice,
     children: [(0, r.jsxs)(A, {
-      onClick: () => k({
+      onClick: () => j({
         backToSettings: !0
       }),
       className: R.backButton,
-      children: [(0, r.jsx)(f.Z, {
+      children: [(0, r.jsx)(h.Z, {
         width: 16,
         height: 16,
-        direction: f.Z.Directions.LEFT,
+        direction: h.Z.Directions.LEFT,
         className: R.backArrow
       }), x]
     }), L && l ? (0, r.jsx)("div", {
@@ -122,7 +122,7 @@ function x() {
         }) : P.NW.formatToPlainString(P.t.vMlK8v, {
           numRoles: Object.keys(n).length
         })
-      }), (0, r.jsx)(a.yRy, {
+      }), (0, r.jsx)(s.yRy, {
         position: "bottom",
         renderPopout: () => (0, r.jsx)(b.Z, {
           guildId: e
@@ -141,26 +141,26 @@ function x() {
             })]
           })
         }
-      }), l && (0, r.jsx)(a.DY3, {
+      }), l && (0, r.jsx)(s.DY3, {
         className: R.previewWarning,
         text: P.NW.string(P.t.mW4DUF),
-        children: (0, r.jsx)(a.P4T, {
+        children: (0, r.jsx)(s.P4T, {
           size: "xs",
-          color: s.Z.unsafe_rawColors.YELLOW_300.css
+          color: a.Z.unsafe_rawColors.YELLOW_300.css
         })
-      }), N && (0, r.jsx)(a.DY3, {
+      }), O && (0, r.jsx)(s.DY3, {
         className: R.previewWarning,
         text: P.NW.formatToPlainString(P.t.eummvb, {
           maxTiers: y.fF,
           maxProducts: S.dD
         }),
-        children: (0, r.jsx)(a.P4T, {
+        children: (0, r.jsx)(s.P4T, {
           size: "xs",
-          color: s.Z.unsafe_rawColors.YELLOW_300.css
+          color: a.Z.unsafe_rawColors.YELLOW_300.css
         })
       })]
     }), l || i === T.pNK.ROLE_SUBSCRIPTIONS ? null : (0, r.jsx)(v, {
-      onClick: () => k({
+      onClick: () => j({
         backToSettings: !1
       })
     })]
@@ -173,8 +173,8 @@ function D(e) {
   } = e;
   return (0, o.e7)([I.Z], () => I.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
     className: l()(R.settingsWrapper, {
-      [R.windows]: (0, N.isWindows)(),
-      [R.osx]: (0, N.isMac)()
+      [R.windows]: (0, O.isWindows)(),
+      [R.osx]: (0, O.isMac)()
     }),
     children: (0, r.jsx)(x, {})
   }) : null

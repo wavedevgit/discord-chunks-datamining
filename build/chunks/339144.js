@@ -1,7 +1,7 @@
 /** Chunk was on 94898 **/
 n.d(t, {
-  J: () => P,
-  y: () => S
+  J: () => S,
+  y: () => P
 });
 var r = n(200651),
   i = n(192379),
@@ -26,11 +26,11 @@ var r = n(200651),
   C = n(388032),
   x = n(172241);
 
-function S(e, t, n) {
+function P(e, t, n) {
   return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === j.IIU.PLAYING && (0, u.Z)(t, j.xjy.JOIN))
 }
-let P = i.memo(function(e) {
-  let t, l, u, P, {
+let S = i.memo(function(e) {
+  let t, l, u, S, {
       stream: I,
       canGoLive: N,
       guildId: Z,
@@ -52,7 +52,7 @@ let P = i.memo(function(e) {
     {
       parentAnalyticsLocation: G
     } = (0, p.ZP)(),
-    B = S(L, R, D),
+    B = P(L, R, D),
     U = i.useCallback(() => {
       o()(null != R, "Received null activity"), (0, h.v)(G, h.d.INVITE), _.default.track(j.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
@@ -119,14 +119,14 @@ let P = i.memo(function(e) {
     }, [E, Z, A, M]),
     H = (null != A || null == D || (0, c.R)()) && (w || N) ? (w ? (t = !1, l = () => {
       V(), (0, h.v)(G, h.d.STREAM, !1)
-    }, u = a.g5r, P = C.NW.string(C.t.S5anIS)) : T ? (t = !1, l = () => {
+    }, u = a.g5r, S = C.NW.string(C.t.S5anIS)) : T ? (t = !1, l = () => {
       F(), (0, h.v)(G, h.d.STREAM, !0)
-    }, u = a.hGI, P = null != A ? C.NW.formatToPlainString(C.t.AB5gT0, {
+    }, u = a.hGI, S = null != A ? C.NW.formatToPlainString(C.t.AB5gT0, {
       game: A.name
-    }) : C.NW.string(C.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, P = null != E && (0, v.vd)(E.type) ? C.NW.string(C.t.uQn9Bw) : null != Z ? C.NW.string(C.t.fBXEoK) : C.NW.string(C.t.n3feND)), (0, r.jsx)("div", {
+    }) : C.NW.string(C.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, S = null != E && (0, v.vd)(E.type) ? C.NW.string(C.t.uQn9Bw) : null != Z ? C.NW.string(C.t.fBXEoK) : C.NW.string(C.t.n3feND)), (0, r.jsx)("div", {
       className: x.panelButtonContainer,
       children: (0, r.jsx)(O.Z, {
-        tooltipText: P,
+        tooltipText: S,
         disabled: t,
         onClick: l,
         icon: u

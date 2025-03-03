@@ -82,9 +82,10 @@ class g extends o.Z {
   }
   async handleOpenActivityPopout() {
     let {
-      OVERLAY_V3_LAYOUT_ID: e
+      OVERLAY_V3_LAYOUT_ID: e,
+      OVERLAY_V3_LAYOUT_VERSION: t
     } = await Promise.resolve().then(n.bind(n, 501787));
-    (0, l.te)(e, s.Z.getDefaultLayout(e, 1), 1), c.bA(u.KJ3.ACTIVITY_POPOUT, e => (0, r.jsx)(f, {
+    (0, l.te)(e, s.Z.getDefaultLayout(e, t), t), c.bA(u.KJ3.ACTIVITY_POPOUT, e => (0, r.jsx)(f, {
       windowKey: e
     }), {
       defaultWidth: 854,

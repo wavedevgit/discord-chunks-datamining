@@ -1,4 +1,4 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
   q: () => E
 }), n(266796);
@@ -7,8 +7,8 @@ n(192379);
 var i = n(704215),
   l = n(481060),
   o = n(906732),
-  s = n(963249),
-  a = n(286961),
+  a = n(963249),
+  s = n(286961),
   c = n(644916),
   u = n(243778),
   d = n(921944),
@@ -19,7 +19,7 @@ let E = e => {
     noticeType: n
   } = e, {
     analyticsLocations: E
-  } = (0, o.ZP)(), p = (0, a.Z)();
+  } = (0, o.ZP)(), p = (0, s.Z)();
   return (0, r.jsx)(u.Xf, {
     contentType: t,
     latestVersion: (0, c.t)(t),
@@ -45,7 +45,7 @@ let E = e => {
             className: _.giftIcon
           }), null == e ? void 0 : e.description(), (0, r.jsx)(l.NoS, {
             onClick: () => {
-              (0, s.Z)({
+              (0, a.Z)({
                 isGift: !0,
                 initialPlanId: null,
                 analyticsLocations: E,

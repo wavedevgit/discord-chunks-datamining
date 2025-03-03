@@ -47,8 +47,8 @@ let C = function(e) {
     onAgree: j,
     onDisagree: y,
     title: b.NW.string(b.t.ZmwvDQ),
-    description: b.NW.string(b.t["u/xqhY"]),
-    agreement: b.NW.string(b.t["5B+npK"]),
+    description: b.NW.string(b.t["NjO/s7"]),
+    agreement: b.NW.string(b.t.SFWVER),
     agreementButtonColor: c.zxk.Colors.BRAND,
     disagreement: b.NW.string(b.t.f3Pet7),
     imageClassName: _.ageGatedImage

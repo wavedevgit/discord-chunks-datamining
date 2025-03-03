@@ -1,154 +1,180 @@
 /** Chunk was on 27278 **/
 n.d(t, {
-  Z: () => z
+  Z: () => L
 }), n(47120);
-var o = n(200651),
-  r = n(192379),
+var r = n(200651),
+  o = n(192379),
   a = n(120356),
   i = n.n(a),
   l = n(442837),
   c = n(481060),
   u = n(13245),
   s = n(753972),
-  _ = n(812206),
-  d = n(726721),
+  d = n(812206),
+  _ = n(726721),
   p = n(610394),
   b = n(522474),
   f = n(788983),
   m = n(695346),
   v = n(390322),
   h = n(961048),
-  g = n(871499),
-  C = n(786915),
-  x = n(107169),
-  y = n(592125),
-  I = n(271383),
-  O = n(594174),
-  j = n(358085),
-  P = n(51144),
+  C = n(871499),
+  g = n(268353),
+  x = n(786915),
+  y = n(107169),
+  I = n(592125),
+  O = n(271383),
+  j = n(594174),
+  P = n(358085),
+  k = n(51144),
   w = n(998502),
-  k = n(145597),
-  N = n(214629),
+  N = n(228488),
+  S = n(145597),
+  Z = n(214629),
   T = n(317381),
-  S = n(884338),
-  Z = n(473179),
-  B = n(981631),
-  A = n(388032),
-  W = n(231784);
-let E = S.u.SIZE_24;
+  B = n(884338),
+  A = n(473179),
+  E = n(932174),
+  W = n(981631),
+  z = n(388032),
+  U = n(231784);
+let D = B.u.SIZE_24;
 
-function z(e) {
+function L(e) {
   let {
     applicationId: t,
     channelId: n
-  } = e, a = (0, l.e7)([_.Z], () => _.Z.getApplication(t)), z = (0, l.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivities().get(t)), U = (0, l.e7)([y.Z], () => y.Z.getChannel(n)), D = m.Sb.useSetting(), R = (0, l.Wu)([I.ZP], () => {
+  } = e, a = (0, l.e7)([d.Z], () => d.Z.getApplication(t)), L = (0, l.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivities().get(t)), R = (0, l.e7)([I.Z], () => I.Z.getChannel(n)), M = m.Sb.useSetting(), G = (0, l.Wu)([O.ZP], () => {
     var e;
-    return null == U || null == z ? [] : Array.from(null !== (e = z.userIds) && void 0 !== e ? e : []).map(e => I.ZP.getMember(U.guild_id, e))
-  }, [z, U]), L = r.useMemo(() => {
+    return null == R || null == L ? [] : Array.from(null !== (e = L.userIds) && void 0 !== e ? e : []).map(e => O.ZP.getMember(R.guild_id, e))
+  }, [L, R]), Y = o.useMemo(() => {
     let e = new Map;
-    return R.forEach(t => {
+    return G.forEach(t => {
       null != t && void 0 !== t && e.set(t.userId, t)
     }), e
-  }, [R]), G = r.useCallback((e, t) => {
+  }, [G]), K = o.useCallback((e, t) => {
     var n;
     if (null == e) return null;
-    let r = L.get(e.id),
-      a = null !== (n = null == r ? void 0 : r.nick) && void 0 !== n ? n : P.ZP.getName(e);
-    return (0, o.jsx)(c.DY3, {
+    let o = Y.get(e.id),
+      a = null !== (n = null == o ? void 0 : o.nick) && void 0 !== n ? n : k.ZP.getName(e);
+    return (0, r.jsx)(c.DY3, {
       text: a,
       position: "bottom",
-      children: (0, o.jsx)("img", {
-        src: e.getAvatarURL(null == t ? void 0 : t.guild_id, E),
+      children: (0, r.jsx)("img", {
+        src: e.getAvatarURL(null == t ? void 0 : t.guild_id, D),
         alt: a,
-        className: W.avatar
+        className: U.avatar
       }, e.id)
     }, e.id)
-  }, [L]), Y = null == z ? void 0 : z.userIds, M = (0, l.Wu)([O.default], () => Array.from(null != Y ? Y : []).map(e => O.default.getUser(e)).filter(e => null != e), [Y]), K = d.Z.useExperiment({
+  }, [Y]), V = null == L ? void 0 : L.userIds, F = (0, l.Wu)([j.default], () => Array.from(null != V ? V : []).map(e => j.default.getUser(e)).filter(e => null != e), [V]), H = _.Z.useExperiment({
     location: "activity_popout_overflow_menu"
   }, {
     autoTrackExposure: !0
-  }).enabled, V = r.useCallback(() => {
-    let e = (0, k.getPID)();
+  }).enabled, J = o.useCallback(() => {
+    let e = (0, S.getPID)();
     u.Z.setInputLocked(!p.ZP.isInputLocked(e), e)
-  }, []), F = (0, N.PR)(), {
-    canStayOnTop: H,
-    popoutWindowAlwaysOnTop: J,
-    handleStayOnTop: X
+  }, []), X = (0, Z.PR)(), {
+    canStayOnTop: q,
+    popoutWindowAlwaysOnTop: $,
+    handleStayOnTop: Q
   } = function() {
-    let {
-      popoutWindowAlwaysOnTop: e
-    } = (0, l.cj)([b.Z], () => ({
-      popoutWindow: b.Z.getWindow(B.KJ3.ACTIVITY_POPOUT),
-      popoutWindowAlwaysOnTop: b.Z.getIsAlwaysOnTop(B.KJ3.ACTIVITY_POPOUT)
-    })), t = r.useCallback(e => {
-      f.hY(B.KJ3.ACTIVITY_POPOUT, e)
-    }, []);
+    let e = (0, l.e7)([b.Z], () => b.Z.getIsAlwaysOnTop(W.KJ3.ACTIVITY_POPOUT)),
+      t = o.useCallback(e => {
+        f.hY(W.KJ3.ACTIVITY_POPOUT, e)
+      }, []);
     return {
-      canStayOnTop: j.isPlatformEmbedded && w.ZP.supportsFeature(B.eRX.POPOUT_WINDOWS),
+      canStayOnTop: P.isPlatformEmbedded && w.ZP.supportsFeature(W.eRX.POPOUT_WINDOWS),
       popoutWindowAlwaysOnTop: e,
       handleStayOnTop: t
     }
+  }(), {
+    rootNode: ee,
+    popoutWindow: et,
+    toggleFullScreen: en
+  } = function() {
+    let {
+      popoutWindow: e,
+      currentDocument: t,
+      rootNode: n
+    } = (0, E.Z)(), [r, a] = o.useState(!1), i = o.useCallback(() => {
+      null != n && r && (a(!1), (0, N.Pr)(n, t))
+    }, [n, t, r]), l = o.useCallback(() => {
+      null != n && (r ? i() : (a(!0), (0, N.Dj)(n)))
+    }, [n, r, i]), c = o.useCallback(() => {
+      null != n && !(0, N.rB)(n, t) && r && l()
+    }, [n, t, r, l]);
+    return o.useEffect(() => (null == t || t.addEventListener(N.NO, c), () => {
+      null == t || t.removeEventListener(N.NO, c)
+    }), [t, c]), {
+      rootNode: n,
+      popoutWindow: e,
+      toggleFullScreen: l
+    }
   }();
-  if (null == a || null == z) return null;
-  let q = (0, o.jsx)(s.Z, {
+  if (null == a || null == L) return null;
+  let er = (0, r.jsx)(s.Z, {
     application: a,
     size: 24,
-    className: W.appIcon
+    className: U.appIcon
   });
-  return D && (q = (0, o.jsx)(c.DY3, {
-    text: z.compositeInstanceId,
+  return M && (er = (0, r.jsx)(c.DY3, {
+    text: L.compositeInstanceId,
     position: "bottom",
-    children: q
-  })), (0, o.jsx)(c.f6W, {
-    theme: B.BRd.DARK,
-    children: e => (0, o.jsxs)("div", {
-      className: i()(W.container, e),
-      children: [(0, o.jsxs)("div", {
-        className: i()(W.headerSection, W.headerSectionLeft),
-        children: [q, (0, o.jsx)(c.Text, {
+    children: er
+  })), (0, r.jsx)(c.f6W, {
+    theme: W.BRd.DARK,
+    children: e => (0, r.jsxs)("div", {
+      className: i()(U.container, e),
+      children: [(0, r.jsxs)("div", {
+        className: i()(U.headerSection, U.headerSectionLeft),
+        children: [er, (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
           color: "header-primary",
           children: a.name
-        }), (0, o.jsx)("div", {
-          className: W.dotSpacer,
-          children: (0, o.jsx)(c.Text, {
+        }), (0, r.jsx)("div", {
+          className: U.dotSpacer,
+          children: (0, r.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "text-muted",
             children: "."
           })
-        }), (0, o.jsx)(S.Z, {
+        }), (0, r.jsx)(B.Z, {
           renderIcon: !1,
-          users: M,
-          size: E,
+          users: F,
+          size: D,
           max: 6,
-          className: W.userAvatars,
-          renderUser: e => G(e, U)
+          className: U.userAvatars,
+          renderUser: e => K(e, R)
         })]
-      }), (0, o.jsx)("div", {
-        className: i()(W.headerSection, W.headerSectionRight),
-        children: (0, o.jsxs)("div", {
-          className: W.actionButtonsContainer,
-          children: [(0, o.jsx)(C.Z, {
-            appContext: B.IlC.POPOUT,
+      }), (0, r.jsx)("div", {
+        className: i()(U.headerSection, U.headerSectionRight),
+        children: (0, r.jsxs)("div", {
+          className: U.actionButtonsContainer,
+          children: [(0, r.jsx)(x.Z, {
+            appContext: W.IlC.POPOUT,
             applicationId: t,
-            channel: U,
+            channel: R,
             shouldPrioritizeGroupPlusIcon: !0,
-            embeddedActivity: z
-          }), F ? (0, o.jsx)(g.Z, {
-            onClick: V,
+            embeddedActivity: L
+          }), X ? (0, r.jsx)(C.Z, {
+            onClick: J,
             iconComponent: c.epB,
-            label: A.NW.string(A.t.mseZsL)
-          }) : null, H ? (0, o.jsx)(x.Z, {
-            popoutWindowAlwaysOnTop: J,
-            onToggleStayOnTop: X
-          }) : null, K && (0, o.jsx)(c.yRy, {
+            label: z.NW.string(z.t.mseZsL)
+          }) : null, q ? (0, r.jsx)(y.Z, {
+            popoutWindowAlwaysOnTop: $,
+            onToggleStayOnTop: Q
+          }) : null, (0, r.jsx)(g.Z, {
+            node: ee,
+            guestWindow: et,
+            onClick: en
+          }), H && (0, r.jsx)(c.yRy, {
             position: "bottom",
             renderPopout: e => {
               let {
                 closePopout: t
               } = e;
-              return (0, o.jsx)(v.Z, {
-                children: (0, o.jsx)(Z.Z, {
+              return (0, r.jsx)(v.Z, {
+                children: (0, r.jsx)(A.Z, {
                   application: a,
                   channelId: n,
                   onClose: t
@@ -156,39 +182,39 @@ function z(e) {
               })
             },
             children: (e, t) => {
-              var n, o;
+              var n, r;
               let {
                 isShown: a
               } = t;
-              return (0, r.createElement)(h.Z, (n = function(e) {
+              return (0, o.createElement)(h.Z, (n = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
-                    o = Object.keys(n);
-                  "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    r = Object.keys(n);
+                  "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                     return Object.getOwnPropertyDescriptor(n, e).enumerable
-                  }))), o.forEach(function(t) {
-                    var o;
-                    o = n[t], t in e ? Object.defineProperty(e, t, {
-                      value: o,
+                  }))), r.forEach(function(t) {
+                    var r;
+                    r = n[t], t in e ? Object.defineProperty(e, t, {
+                      value: r,
                       enumerable: !0,
                       configurable: !0,
                       writable: !0
-                    }) : e[t] = o
+                    }) : e[t] = r
                   })
                 }
                 return e
-              }({}, e), o = o = {
+              }({}, e), r = r = {
                 key: "more-options",
                 isActive: a
-              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                  var o = Object.getOwnPropertySymbols(e);
-                  n.push.apply(n, o)
+                  var r = Object.getOwnPropertySymbols(e);
+                  n.push.apply(n, r)
                 }
                 return n
-              })(Object(o)).forEach(function(e) {
-                Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
+              })(Object(r)).forEach(function(e) {
+                Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
               }), n))
             }
           }, "more-options-popout")]

@@ -1,4 +1,4 @@
-/** Chunk was on 11008 **/
+/** Chunk was on 10911 **/
 e.exports = {
   clickable: "clickable__8c853"
 }

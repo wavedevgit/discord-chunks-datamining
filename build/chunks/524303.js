@@ -1,4 +1,4 @@
-/** Chunk was on 72453 **/
+/** Chunk was on 76030 **/
 e.exports = {
   welcomeCard: "welcomeCard_d74b42",
   welcomeCardText: "welcomeCardText_d74b42",

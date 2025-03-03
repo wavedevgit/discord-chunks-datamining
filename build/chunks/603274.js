@@ -25,9 +25,9 @@ var i = n(120356),
   j = n(981631),
   C = n(388032),
   x = n(42189),
-  S = n(820500);
+  P = n(820500);
 
-function P(e, t) {
+function S(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
     className: x.row,
     children: [(0, r.jsx)(e, {
@@ -64,7 +64,7 @@ function I() {
       return e
     }),
     C = (0, s.Wu)([g.Z], () => g.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
-    S = (0, s.Wu)([u.ZP], () => {
+    P = (0, s.Wu)([u.ZP], () => {
       let e = u.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
       for (let l of t) {
@@ -73,9 +73,9 @@ function I() {
       }
       return n
     }, [t]),
-    I = (0, s.Wu)([b.default], () => S.map(e => b.default.getUser(e)), [S]),
+    I = (0, s.Wu)([b.default], () => P.map(e => b.default.getUser(e)), [P]),
     N = (0, s.Wu)([b.default], () => C.map(e => b.default.getUser(e)), [C]),
-    Z = P(c.gj8, l.filter(e => !C.includes(e.id) && !S.includes(e.id))),
+    Z = S(c.gj8, l.filter(e => !C.includes(e.id) && !P.includes(e.id))),
     w = 0 === o.length ? null : (0, r.jsxs)("div", {
       className: x.row,
       children: [(0, r.jsx)(c.ewx, {
@@ -99,8 +99,8 @@ function I() {
         })]
       })]
     }),
-    E = P(c.hGI, N.filter(e => null != e && !S.includes(e.id))),
-    T = P(c.nG3, I);
+    E = S(c.hGI, N.filter(e => null != e && !P.includes(e.id))),
+    T = S(c.nG3, I);
   return (0, r.jsxs)(r.Fragment, {
     children: [w, Z, E, T]
   })
@@ -130,7 +130,7 @@ function Z(e) {
     position: "right",
     text: (0, r.jsx)(N, {}),
     "aria-label": t,
-    tooltipClassName: S.listItemTooltip,
+    tooltipClassName: P.listItemTooltip,
     onTooltipShow: n,
     children: e => {
       var t, n;

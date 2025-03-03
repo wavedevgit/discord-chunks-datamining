@@ -1,4 +1,4 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
   A: () => v
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(442837),
   l = n(704215),
   o = n(481060),
-  s = n(232567),
-  a = n(230711),
+  a = n(232567),
+  s = n(230711),
   c = n(726542),
   u = n(100527),
   d = n(231757),
@@ -16,11 +16,11 @@ var i = n(442837),
   E = n(963249),
   p = n(346585),
   m = n(303172),
-  h = n(463230),
-  f = n(246965),
+  f = n(463230),
+  h = n(246965),
   g = n(703656),
-  N = n(706454),
-  O = n(933429),
+  O = n(706454),
+  N = n(933429),
   I = n(395361),
   b = n(626135),
   T = n(243778),
@@ -34,7 +34,7 @@ let v = e => {
   let {
     dismissibleContent: t,
     noticeType: v
-  } = e, x = (0, i.e7)([O.ZP], () => O.ZP.getNotice()), D = (0, i.e7)([N.default], () => N.default.locale);
+  } = e, x = (0, i.e7)([N.ZP], () => N.ZP.getNotice()), D = (0, i.e7)([O.default], () => O.default.locale);
   return (0, r.jsx)(T.ZP, {
     contentTypes: [t],
     groupName: C.R.NOTICE_BAR,
@@ -130,7 +130,7 @@ let v = e => {
               onClick: () => i(C.L.UNKNOWN),
               noticeType: v
             }), R.NW.string(R.t.B2hnhY), (0, r.jsx)(o.NoS, {
-              onClick: () => a.Z.open(S.oAB.ACCOUNT),
+              onClick: () => s.Z.open(S.oAB.ACCOUNT),
               noticeType: v,
               children: R.NW.string(R.t["50KYxs"])
             })]
@@ -150,23 +150,23 @@ let v = e => {
                 b.default.track(S.rMx.PREMIUM_PROMOTION_OPENED, {
                   location_section: S.jXE.NOTIFICATION_BAR,
                   location_object: S.qAy.BUTTON_CTA
-                }), a.Z.open(S.oAB.PREMIUM)
+                }), s.Z.open(S.oAB.PREMIUM)
               },
               children: R.NW.string(R.t["8JC5e3"])
             }), (0, r.jsx)(o.RyX, {
               onClick: () => {
-                i(C.L.UNKNOWN), (0, s.mB)(S.xW$.PREMIUM_PROMO_DISMISSED, !0)
+                i(C.L.UNKNOWN), (0, a.mB)(S.xW$.PREMIUM_PROMO_DISMISSED, !0)
               },
               noticeType: v
             })]
           });
         case l.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING:
-          return (0, r.jsx)(f.Z, {
+          return (0, r.jsx)(h.Z, {
             dismissCurrentNotice: () => i(C.L.UNKNOWN),
             subscriptionTier: P.Si.TIER_2
           });
         case l.z.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING:
-          return (0, r.jsx)(f.Z, {
+          return (0, r.jsx)(h.Z, {
             dismissCurrentNotice: () => i(C.L.UNKNOWN),
             subscriptionTier: P.Si.TIER_0
           });
@@ -179,13 +179,13 @@ let v = e => {
             }), R.NW.string(R.t["0KFB2N"]), (0, r.jsx)(o.NoS, {
               noticeType: v,
               onClick: () => {
-                i(C.L.UNKNOWN), a.Z.open(S.oAB.PREMIUM)
+                i(C.L.UNKNOWN), s.Z.open(S.oAB.PREMIUM)
               },
               children: R.NW.string(R.t.pyYSiI)
             })]
           });
         case l.z.NAGBAR_NOTICE_LOCALIZED_PRICING:
-          return (0, r.jsx)(h.Z, {
+          return (0, r.jsx)(f.Z, {
             notice: x,
             noticeType: v,
             dismissCurrentNotice: () => i(C.L.UNKNOWN)
@@ -205,7 +205,7 @@ let v = e => {
             })]
           });
         case l.z.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION:
-          let N = _.Z.getEligibleGuildsForNagActivate();
+          let O = _.Z.getEligibleGuildsForNagActivate();
           return (0, r.jsxs)(o.qXd, {
             color: o.DM8.DEFAULT,
             children: [(0, r.jsx)(o.RyX, {
@@ -214,7 +214,7 @@ let v = e => {
             }), R.NW.string(R.t.pJ4hJC), (0, r.jsx)(o.NoS, {
               noticeType: v,
               onClick: () => {
-                i(C.L.PRIMARY), (0, g.uL)(1 === N.length ? S.Z5c.GUILD_SETTINGS(N[0], "role-subscriptions") : S.Z5c.PICK_GUILD_SETTINGS("role-subscriptions", void 0, "server-subscriptions-finish-setting-up"))
+                i(C.L.PRIMARY), (0, g.uL)(1 === O.length ? S.Z5c.GUILD_SETTINGS(O[0], "role-subscriptions") : S.Z5c.PICK_GUILD_SETTINGS("role-subscriptions", void 0, "server-subscriptions-finish-setting-up"))
               },
               children: R.NW.string(R.t["74s74O"])
             })]

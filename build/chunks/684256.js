@@ -23,8 +23,8 @@ function f(e) {
     look: f,
     items: v,
     sectionName: N,
-    sectionOverallPosition: y
-  } = e, x = (0, u.s)("AppLauncherApplicationListViewScreen"), b = l.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
+    sectionOverallPosition: x
+  } = e, y = (0, u.s)("AppLauncherApplicationListViewScreen"), b = l.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
   return (0, i.jsxs)("section", {
     className: h.container,
     "aria-label": m.NW.formatToPlainString(m.t.iobNIC, {
@@ -59,8 +59,8 @@ function f(e) {
             resultsPosition: n,
             location: s.Vh.APP_LAUNCHER_LIST_VIEW_ALL,
             installOnDemand: r,
-            isOneClickCTA: x,
-            sectionOverallPosition: y,
+            isOneClickCTA: y,
+            sectionOverallPosition: x,
             showsPromoted: o
           }, l.id)
         })

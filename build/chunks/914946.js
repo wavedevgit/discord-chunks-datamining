@@ -16,8 +16,8 @@ n.d(t, {
   t9: () => $,
   tr: () => ei,
   vv: () => en,
-  zM: () => Q,
-  zy: () => X
+  zM: () => X,
+  zy: () => Q
 }), n(301563), n(474991), n(398202), n(47120), n(653041), n(411104), n(757143), n(789020), n(230036), n(392711);
 var r, i, l = n(729594),
   o = n(243814),
@@ -220,12 +220,12 @@ function q(e) {
   return window.location.hostname === t && "localhost" === t || null == e.match("staging") && !!(M.test(e) && M.test(n))
 }
 
-function Q(e, t, n) {
+function X(e, t, n) {
   let r = O.Z.getGuild(e.getGuildId());
   return (null != r ? r.getApplicationId() : e.getApplicationId()) === t || n.indexOf(o.x.MESSAGES_READ) > -1
 }
 
-function X(e) {
+function Q(e) {
   switch (e) {
     case L.hes.RTC_CONNECTED:
     case L.hes.RTC_CONNECTING:

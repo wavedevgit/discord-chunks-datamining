@@ -24,8 +24,8 @@ var r, i = n(200651),
   j = n(915885),
   C = n(258871),
   x = n(216306),
-  S = n(398758),
-  P = n(486311),
+  P = n(398758),
+  S = n(486311),
   I = n(220444),
   N = n(31022),
   Z = n(10401),
@@ -610,7 +610,7 @@ class ef extends(r = l.PureComponent) {
               selected: a === eo.oC.MEMBER_SAFETY
             }, er.z.GUILD_MOD_DASH_MEMBER_SAFETY);
           case er.z.GUILD_BOOSTS:
-            return (0, i.jsx)(P.Z, {
+            return (0, i.jsx)(S.Z, {
               guild: r,
               selected: a === eo.oC.GUILD_BOOSTS
             }, er.z.GUILD_BOOSTS);
@@ -653,7 +653,7 @@ class ef extends(r = l.PureComponent) {
             }) : null]
           }, x);
         case el.d4z.GUILD_STAGE_VOICE:
-          var S, I;
+          var P, I;
           return (0, i.jsx)(K.Z, {
             channel: _,
             guild: r,
@@ -661,7 +661,7 @@ class ef extends(r = l.PureComponent) {
             selected: a === v.id,
             connected: c === v.id,
             collapsed: v.isCollapsed || b.isCollapsed,
-            voiceStates: null !== (S = d[v.id]) && void 0 !== S ? S : [],
+            voiceStates: null !== (P = d[v.id]) && void 0 !== P ? P : [],
             speakerVoiceStates: null !== (I = h[v.id]) && void 0 !== I ? I : [],
             disableManageChannels: p,
             isFavoriteCategory: y
@@ -768,7 +768,7 @@ let eg = e => {
     selectedVoiceChannelId: r
   } = e, o = (0, u.e7)([g.Z], () => g.Z.keyboardModeEnabled), {
     analyticsLocations: a
-  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([E.Z], () => E.Z.getChannel(n)), p = (0, u.e7)([E.Z], () => E.Z.getChannel(r)), h = (0, u.e7)([D.Z], () => D.Z.getGuildId()), v = (0, S.DM)(t), _ = l.useRef(null), O = l.useCallback((e, t) => {
+  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([E.Z], () => E.Z.getChannel(n)), p = (0, u.e7)([E.Z], () => E.Z.getChannel(r)), h = (0, u.e7)([D.Z], () => D.Z.getGuildId()), v = (0, P.DM)(t), _ = l.useRef(null), O = l.useCallback((e, t) => {
     let n = _.current;
     if (null != n) {
       if (el.Xyh.test(t) || (0, eo.AB)(t)) n.scrollToChannel(t, !1, 2 * ei.yE, () => {
@@ -797,10 +797,10 @@ let eg = e => {
     setFocus: O,
     scrollToStart: j,
     scrollToEnd: C
-  }), P = x.setFocus;
+  }), S = x.setFocus;
   l.useEffect(() => {
-    null != n && P(n)
-  }, [n, P]);
+    null != n && S(n)
+  }, [n, S]);
   let I = (0, N.Z)(t),
     Z = (0, y.Q3)("NavigableChannels");
   return (0, i.jsx)(b.Gt, {

@@ -21,14 +21,14 @@ var r, i, l, o, a = n(392711),
   j = n(734307),
   C = n(981631),
   x = ((i = {}).HIDDEN = "hidden", i.UNREAD = "unread", i.MENTIONS = "mentions", i.VOICE_CHANNELS = "voice-channels", i);
-let S = {
+let P = {
     mode: "hidden",
     mentionCount: 0,
     targetChannelId: null
   },
-  P = {
-    topBar: S,
-    bottomBar: S
+  S = {
+    topBar: P,
+    bottomBar: P
   },
   I = {},
   N = {};
@@ -87,18 +87,18 @@ function T(e) {
       if (!p && !d) break;
       (Z(t.id) || s().some(t.threadIds, Z)) && (null == u && (u = t.id), x = !0), (w(t.id) || s().some(t.threadIds, w)) && (null == c && (c = t.id), C += b.ZP.getMentionCount(t.id), C += s().sumBy(t.threadIds, b.ZP.getMentionCount))
     }
-  let P = null,
+  let S = null,
     T = null,
     A = null !== (r = null == f ? void 0 : f.getChannelRecords()) && void 0 !== r ? r : [];
-  d && C > 0 ? P = {
+  d && C > 0 ? S = {
     mode: "mentions",
     mentionCount: C,
     targetChannelId: c
-  } : !h && s().some(A, E) ? P = {
+  } : !h && s().some(A, E) ? S = {
     mode: "voice-channels",
     mentionCount: 0,
     targetChannelId: null
-  } : p && x && (P = {
+  } : p && x && (S = {
     mode: "unread",
     mentionCount: 0,
     targetChannelId: u
@@ -111,11 +111,11 @@ function T(e) {
     mentionCount: 0,
     targetChannelId: a
   });
-  let D = null != T && (null == P || "mentions" !== P.mode && "mentions" === T.mode),
-    R = null != P && ("mentions" === P.mode || !D);
+  let D = null != T && (null == S || "mentions" !== S.mode && "mentions" === T.mode),
+    R = null != S && ("mentions" === S.mode || !D);
   return I[e] = {
-    topBar: D && null != T ? T : S,
-    bottomBar: R && null != P ? P : S
+    topBar: D && null != T ? T : P,
+    bottomBar: R && null != S ? S : P
   }, !0
 }
 let A = s().throttle(T, 200);
@@ -166,7 +166,7 @@ class G extends(r = c.ZP.Store) {
   }
   getUnreadStateForGuildId(e) {
     var t;
-    return null !== (t = I[e]) && void 0 !== t ? t : P
+    return null !== (t = I[e]) && void 0 !== t ? t : S
   }
 }
 o = "ChannelListUnreadsStore", (l = "displayName") in G ? Object.defineProperty(G, l, {

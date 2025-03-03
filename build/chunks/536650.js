@@ -28,10 +28,10 @@ function N(e) {
     application: t,
     context: n,
     name: N,
-    iconURL: y,
-    scrollerRef: x,
+    iconURL: x,
+    scrollerRef: y,
     sectionName: b
-  } = e, E = (0, o.ap)((0, s.ZP)()), C = l.useRef(null), g = l.useRef(null), j = l.useRef(null), P = l.useRef(null), A = (0, a.dQu)(a.TVs.colors.BG_BASE_PRIMARY).hex(), I = (0, c.ZP)("number" == typeof y ? "" : y, null != A ? A : ""), O = l.useMemo(() => {
+  } = e, E = (0, o.ap)((0, s.ZP)()), j = l.useRef(null), C = l.useRef(null), g = l.useRef(null), P = l.useRef(null), A = (0, a.dQu)(a.TVs.colors.BG_BASE_PRIMARY).hex(), I = (0, c.ZP)("number" == typeof x ? "" : x, null != A ? A : ""), _ = l.useMemo(() => {
     var e, t;
     let n = (0, r.compact)([u.Z.parseHexString(I), u.Z.parseHexString(E ? "#000000" : "#ffffff")]);
     return null !== (t = null === (e = (0, d.k8)({
@@ -39,13 +39,13 @@ function N(e) {
       ratio: 5,
       saturationFactor: .6
     })) || void 0 === e ? void 0 : e.toHexString()) && void 0 !== t ? t : I
-  }, [I, E]), _ = v(C), S = v(g), T = l.useCallback(() => {
+  }, [I, E]), O = v(j), S = v(C), T = l.useCallback(() => {
     var e, t, n, i;
-    let l = x.current,
-      o = C.current,
-      a = j.current,
+    let l = y.current,
+      o = j.current,
+      a = g.current,
       s = null == P ? void 0 : P.current,
-      c = parseInt(null !== (e = null == _ ? void 0 : _.height) && void 0 !== e ? e : ""),
+      c = parseInt(null !== (e = null == O ? void 0 : O.height) && void 0 !== e ? e : ""),
       u = parseInt(null !== (t = null == S ? void 0 : S.height) && void 0 !== t ? t : "");
     if (null != l && null != o && null != a && !isNaN(c) && !isNaN(u)) {
       let e = null !== (n = l.scrollTop) && void 0 !== n ? n : 0,
@@ -54,27 +54,27 @@ function N(e) {
         p = u - c,
         m = (0, r.clamp)(t - d, p + 1, u + 20),
         h = p === m ? 1 : (0, r.clamp)((e - p) / (m - p), 0, 1);
-      o.style.filter = "brightness(".concat(1 + ((E ? 1.4 : .6) - 1) * h, ")"), o.style.backgroundColor = "color-mix(in oklab,".concat(I, " ").concat((1 - h) * 100, "%, ").concat(O, ")"), a.style.opacity = "".concat(0 + +h), a.style.transform = "translateY(".concat((i = c / 4) + (0 - i) * h, "px)"), null != s && (s.style.opacity = "".concat(1 + -1 * h))
+      o.style.filter = "brightness(".concat(1 + ((E ? 1.4 : .6) - 1) * h, ")"), o.style.backgroundColor = "color-mix(in oklab,".concat(I, " ").concat((1 - h) * 100, "%, ").concat(_, ")"), a.style.opacity = "".concat(0 + +h), a.style.transform = "translateY(".concat((i = c / 4) + (0 - i) * h, "px)"), null != s && (s.style.opacity = "".concat(1 + -1 * h))
     }
-  }, [O, I, null == S ? void 0 : S.height, E, x, null == _ ? void 0 : _.height]);
+  }, [_, I, null == S ? void 0 : S.height, E, y, null == O ? void 0 : O.height]);
   return l.useEffect(() => {
     T()
   }, [T, E]), l.useEffect(() => {
-    let e = x.current,
+    let e = y.current,
       t = () => {
         T()
       };
     return null == e || e.addEventListener("scroll", t), () => {
       null == e || e.removeEventListener("scroll", t)
     }
-  }, [x, T]), (0, i.jsxs)(i.Fragment, {
+  }, [y, T]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: f.stickyContainer,
       children: [(0, i.jsx)("div", {
         className: f.stickyBannerContainer,
         children: (0, i.jsx)("div", {
           className: f.stickyBanner,
-          ref: C
+          ref: j
         })
       }), (0, i.jsx)("div", {
         className: f.backButtonContainer,
@@ -84,7 +84,7 @@ function N(e) {
       }), (0, i.jsx)("div", {
         className: f.nameContainer,
         children: (0, i.jsx)(a.X6q, {
-          ref: j,
+          ref: g,
           className: f.textApplicationName,
           variant: "heading-lg/extrabold",
           children: N
@@ -100,7 +100,7 @@ function N(e) {
         sectionName: b
       })
     }) : null, (0, i.jsx)("div", {
-      ref: g,
+      ref: C,
       className: f.bannerBackground,
       style: {
         backgroundColor: I

@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(385499),
   v = n(171368),
   O = n(598077),
-  x = n(271383),
-  C = n(626135),
+  C = n(271383),
+  x = n(626135),
   j = n(275759),
   P = n(107484),
   T = n(977392),
@@ -168,14 +168,14 @@ function B(e) {
     guildId: d
   } = e;
   o.useEffect(() => {
-    C.default.track(k.rMx.PASSPORT_ROLE_POPOUT_VIEWED, Z({
+    x.default.track(k.rMx.PASSPORT_ROLE_POPOUT_VIEWED, Z({
       other_user_id: s,
       role_id: c
     }, (0, b.JS)(u), (0, b.hH)(d)))
   }, [s, c, u, d]);
-  let g = (0, l.e7)([x.ZP], () => {
+  let g = (0, l.e7)([C.ZP], () => {
     var e, t;
-    return null !== (t = null === (e = x.ZP.getSelfMember(d)) || void 0 === e ? void 0 : e.roles.includes(c)) && void 0 !== t && t
+    return null !== (t = null === (e = C.ZP.getSelfMember(d)) || void 0 === e ? void 0 : e.roles.includes(c)) && void 0 !== t && t
   }, [d, c]);
   return t = 1 === i.length && 1 === i[0].length ? R.NW.string(R.t.jDym4O) : 1 === i.length ? R.NW.format(R.t["0eBj39"], {}) : R.NW.format(R.t.D7uftL, {}), (0, r.jsxs)("div", {
     className: E.popout,

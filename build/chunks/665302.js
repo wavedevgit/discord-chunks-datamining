@@ -1,29 +1,29 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
-  h: () => a
+  h: () => s
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(671533),
   o = n(981631),
-  s = n(951058);
+  a = n(951058);
 
-function a(e) {
+function s(e) {
   let {
     buttonText: t,
     onGoBack: n,
-    onDismiss: a,
+    onDismiss: s,
     showCloseButton: c
   } = e;
   return (0, r.jsxs)(i.qXd, {
-    className: s.backNotice,
+    className: a.backNotice,
     children: [c && (0, r.jsx)(i.RyX, {
-      onClick: a,
+      onClick: s,
       noticeType: o.kVF.BACK_TO_PREVIOUS_SCREEN
     }), (0, r.jsxs)(i.zxk, {
-      className: s.backButton,
-      innerClassName: s.backButtonInner,
+      className: a.backButton,
+      innerClassName: a.backButtonInner,
       look: i.zxk.Looks.OUTLINED,
       color: i.zxk.Colors.WHITE,
       size: i.zxk.Sizes.NONE,
@@ -32,7 +32,7 @@ function a(e) {
         width: 16,
         height: 16,
         direction: l.Z.Directions.LEFT,
-        className: s.__invalid_backArrow
+        className: a.__invalid_backArrow
       }), t]
     })]
   })

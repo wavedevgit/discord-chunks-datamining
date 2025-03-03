@@ -594,7 +594,8 @@ function em(e) {
     bot: ex.bot,
     accountScopes: e5,
     showLogout: eO || !1,
-    location: ew
+    location: ew,
+    scopes: e6
   })), tg && (P = (0, r.jsxs)("div", {
     className: es.footer,
     children: [null != m ? (0, r.jsx)(h.zx, {

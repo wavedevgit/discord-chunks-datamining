@@ -1,6 +1,6 @@
 /** Chunk was on 94898 **/
 n.d(t, {
-  B: () => P
+  B: () => S
 });
 var r = n(200651);
 n(192379);
@@ -44,7 +44,7 @@ function C(e) {
 }
 let x = "DRAGGABLE_GUILD_CHANNEL";
 
-function S(e, t) {
+function P(e, t) {
   var n, r;
   if (null == e || null == t) return null;
   if (e !== j.I_8) return f.Z.getChannel(t);
@@ -53,20 +53,20 @@ function S(e, t) {
   return null == l ? void 0 : l.channel
 }
 
-function P(e) {
+function S(e) {
   return (0, i.G)(x, {
     drop(e, t) {
       let n;
       let i = y.Z.getGuildId(),
         l = t.getItem(),
-        o = (0, _.if)(S(i, l.id), l.position, e.channel, e.position, l.channelList);
+        o = (0, _.if)(P(i, l.id), l.position, e.channel, e.position, l.channelList);
       if (null == o) return;
-      let u = S(i, l.id);
+      let u = P(i, l.id);
       if (null == u) return;
       let p = g.Z.getCategories(i),
         h = b.Z.getGuild(i);
       if (null == h) return;
-      let m = (0, _.Dn)(u, S(i, o.referenceId), o.parentId, p);
+      let m = (0, _.Dn)(u, P(i, o.referenceId), o.parentId, p);
       if (0 !== m.length) {
         if (i === j.I_8) {
           (0, d.s3)(m);

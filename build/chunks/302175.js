@@ -22,7 +22,7 @@ function h(e) {
     guild: n
   } = e, h = (0, l.Ek)(n, "GuildPowerupsMarketingPowerupCards");
   i.useEffect(() => {
-    h && (0, s.T7)(n.id)
+    h && ((0, s.Sn)(n.id), (0, s.Fm)(n.id))
   }, [h, n.id]);
   let g = (0, c.Z)(n.id);
   return h && null != g ? (0, r.jsxs)("div", {

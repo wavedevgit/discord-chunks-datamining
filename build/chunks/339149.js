@@ -44,7 +44,7 @@ function x(e) {
   }
   return e
 }
-let S = {
+let P = {
   [_.vxO.INSTALLING]: {
     [f.J6.NONE]: (e, t) => O.NW.formatToPlainString(O.t["p+2sEx"], {
       name: e
@@ -97,7 +97,7 @@ let S = {
     })
   }
 };
-class P extends l.PureComponent {
+class S extends l.PureComponent {
   renderText() {
     let {
       state: e,
@@ -131,7 +131,7 @@ class P extends l.PureComponent {
       if (null == l || null == o || null == i) return null;
       let s = e[e.length - 1] / t * 1e3,
         c = 0 !== s ? Math.max(1, (o - l) / s) : null,
-        u = S[a],
+        u = P[a],
         d = null != u ? Object.keys(u) : [],
         {
           unit: p,
@@ -167,7 +167,7 @@ class I extends(r = l.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? O.NW.string(O.t.cw57am) : (0, i.jsx)(P, {
+    return null == e || null == t ? O.NW.string(O.t.cw57am) : (0, i.jsx)(S, {
       application: e,
       state: t,
       isPaused: n

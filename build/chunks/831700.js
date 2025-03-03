@@ -25,8 +25,8 @@ var i = n(120356),
   j = n(281956),
   C = n(66999),
   x = n(554747),
-  S = n(378844),
-  P = n(335353),
+  P = n(378844),
+  S = n(335353),
   I = n(896835),
   N = n(359110),
   Z = n(155409),
@@ -209,7 +209,7 @@ class ee extends U.ZP {
       embeddedApps: j,
       isSubscriptionGated: C,
       isFavoriteSuggestion: x,
-      withGuildIcon: S
+      withGuildIcon: P
     } = this.props, {
       shouldShowActivities: I,
       shouldShowGuildVerificationPopout: N
@@ -248,7 +248,7 @@ class ee extends U.ZP {
                 }
                 return i
               }(s, ["onClick", "onContextMenu"]);
-              return (0, r.jsx)(P.Z, {
+              return (0, r.jsx)(S.Z, {
                 channel: e,
                 children: (0, r.jsxs)(V.Z, $(X({
                   className: K.iconVisibility,
@@ -284,7 +284,7 @@ class ee extends U.ZP {
                     channel: e,
                     embeddedApps: j
                   }),
-                  withGuildIcon: S
+                  withGuildIcon: P
                 }, p), {
                   children: [x && this.renderAcceptSuggestionButton(), x && this.renderRemoveSuggestionButton(), !x && this.renderOpenChatButton(), !x && this.renderInviteButton(), !x && this.renderEditButton(), !x && this.renderChannelInfo(), !x && this.renderHDSplashedIcon()]
                 }))
@@ -396,8 +396,8 @@ class ee extends U.ZP {
           shouldShowSettingNudge: n
         })
       }
-      if (s) return (0, r.jsx)(S.Z, {
-        type: S.R.VOICE,
+      if (s) return (0, r.jsx)(P.Z, {
+        type: P.R.VOICE,
         guildId: e.guild_id,
         closePopout: this.closeGuildVerificationPopout
       });
@@ -471,7 +471,7 @@ function en(e) {
   }), f = (0, o.e7)([M.Z], () => M.Z.hasVideo(n.id)), g = (0, h.ZP)(n), m = (0, b.ZP)(n), v = (0, x.qY)(n.id), {
     isSubscriptionGated: y,
     needSubscriptionToAccess: O
-  } = (0, C.Z)(n.id), j = (0, _.Z)(), S = (0, o.e7)([k.ZP], () => k.ZP.isFavorite(t.id, n.id)), P = e.connected || (null == j ? void 0 : j.channelId) === n.id, I = (0, W.Z)({
+  } = (0, C.Z)(n.id), j = (0, _.Z)(), P = (0, o.e7)([k.ZP], () => k.ZP.isFavorite(t.id, n.id)), S = e.connected || (null == j ? void 0 : j.channelId) === n.id, I = (0, W.Z)({
     channel: n,
     isChannelSelected: a,
     isChannelCollapsed: s,
@@ -480,7 +480,7 @@ function en(e) {
     needSubscriptionToAccess: O,
     enableConnectedUserLimit: !0,
     enableActivities: !0
-  }), N = P && null == I;
+  }), N = S && null == I;
   return (0, r.jsx)(et, $(X({
     channelName: m,
     embeddedApps: g,
@@ -490,8 +490,8 @@ function en(e) {
     isSubscriptionGated: y,
     needSubscriptionToAccess: O
   }, u, p, e), {
-    connected: P,
-    isFavoriteSuggestion: l && !S,
+    connected: S,
+    isFavoriteSuggestion: l && !P,
     forceShowButtons: N,
     channelInfo: I,
     resolvedUnreadSetting: d

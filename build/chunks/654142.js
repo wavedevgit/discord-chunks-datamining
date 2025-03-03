@@ -70,7 +70,7 @@ let v = i.memo(function(e) {
     name: _,
     color: O,
     children: j
-  } = t, C = j.map(e => e.id), x = (0, s.Z)(e => e.guildId), S = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), P = function(e) {
+  } = t, C = j.map(e => e.id), x = (0, s.Z)(e => e.guildId), P = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), S = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -105,13 +105,13 @@ let v = i.memo(function(e) {
   }, [y, _, O, w, N]);
   return (0, r.jsx)(h.Z, b(m({}, v), {
     folderNode: t,
-    expanded: S,
+    expanded: P,
     selected: null != x && C.includes(x),
     mentionCount: N,
     isMentionLowImportance: Z,
     unread: w,
     mediaState: I,
-    defaultFolderName: P,
+    defaultFolderName: S,
     onExpandCollapse: E,
     onContextMenu: T
   }))

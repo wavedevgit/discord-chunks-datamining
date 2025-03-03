@@ -1,4 +1,4 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
   Z: () => y
 }), n(47120), n(653041);
@@ -6,8 +6,8 @@ var r = n(570140),
   i = n(317770),
   l = n(460181),
   o = n(474873),
-  s = n(314897),
-  a = n(19780),
+  a = n(314897),
+  s = n(19780),
   c = n(944486),
   u = n(111583),
   d = n(351780),
@@ -15,13 +15,13 @@ var r = n(570140),
   E = n(981631);
 let p = (0, l.uk)("poggermode_applause", o.Z.getSoundpack()),
   m = !1,
-  h = !1,
-  f = [],
+  f = !1,
+  h = [],
   g = null,
-  N = () => {
+  O = () => {
     !m && (p.loop(), m = !0)
   },
-  O = () => {
+  N = () => {
     p.stop(), m = !1
   },
   I = () => {
@@ -30,18 +30,18 @@ let p = (0, l.uk)("poggermode_applause", o.Z.getSoundpack()),
     return !!e && !!t && null != c.Z.getChannelId()
   },
   b = () => {
-    if (0 === f.length || !I() || h) return;
-    h = !0;
-    let [e, t] = f[f.length - 1];
+    if (0 === h.length || !I() || f) return;
+    f = !0;
+    let [e, t] = h[h.length - 1];
     (0, l.GN)(e, t), g = setTimeout(T, 1e3)
   },
   T = () => {
-    f.pop(), h = !1, b()
+    h.pop(), f = !1, b()
   },
   C = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
-      n = a.Z.isConnected();
-    f.push([e, t * (n ? .1 : 1)]), b()
+      n = s.Z.isConnected();
+    h.push([e, t * (n ? .1 : 1)]), b()
   };
 class S extends i.Z {
   _initialize() {
@@ -60,21 +60,21 @@ class S extends i.Z {
     let {
       userId: t
     } = e;
-    s.default.getId() === t && O()
+    a.default.getId() === t && N()
   }
   stopAudio() {
-    O()
+    N()
   }
   startAudio() {
     var e;
     if (!I()) return;
     let t = c.Z.getChannelId();
     if (null == t) return;
-    let n = s.default.getId(),
+    let n = a.default.getId(),
       r = u.Z.isTyping(t, n),
       i = _.ZP.getUserCombo(n, t),
       l = null !== (e = null == i ? void 0 : i.multiplier) && void 0 !== e ? e : 1;
-    r && l >= 7 ? N() : O()
+    r && l >= 7 ? O() : N()
   }
   playAchievementUnlockSound() {
     I() && C("poggermode_achievement_unlock")

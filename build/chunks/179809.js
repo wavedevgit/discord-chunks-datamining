@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(662146),
   C = n(388032),
   x = n(457528),
-  S = n(625704);
-let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
+  P = n(625704);
+let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
   I = (0, s.animated)(d.Kqy),
   N = i.memo(function(e) {
     let {
@@ -94,7 +94,7 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         height: 0
       },
       config: {
-        duration: P
+        duration: S
       }
     }), el = i.useCallback(e => null == n ? void 0 : n(U, e), [n, U]), eo = (0, r.jsxs)(O.H, {
       children: [(0, r.jsx)(b.Z, {
@@ -102,7 +102,7 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         hovered: H,
         selected: l,
         unread: Z,
-        className: S.pill
+        className: P.pill
       }), (0, r.jsx)(j.Z, {
         text: ee,
         disabled: A,
@@ -111,7 +111,7 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         children: (0, r.jsx)("div", {
           ref: T ? J : void 0,
           className: o()(x.folderIcon, {
-            [S.wobble]: !K && Y && !s
+            [P.wobble]: !K && Y && !s
           }),
           "data-dnd-name": ee,
           children: K ? (0, r.jsx)(_.Z, {}) : (0, r.jsx)(v.Z, {

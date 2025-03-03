@@ -1,4 +1,4 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
   O: () => L,
   Z: () => Z
@@ -8,8 +8,8 @@ n(192379);
 var i = n(120356),
   l = n.n(i),
   o = n(873546),
-  s = n(442837),
-  a = n(475179),
+  a = n(442837),
+  s = n(475179),
   c = n(100527),
   u = n(906732),
   d = n(174556),
@@ -17,11 +17,11 @@ var i = n(120356),
   E = n(185935),
   p = n(320007),
   m = n(540059),
-  h = n(141321),
-  f = n(2818),
+  f = n(141321),
+  h = n(2818),
   g = n(954551),
-  N = n(208450),
-  O = n(975146),
+  O = n(208450),
+  N = n(975146),
   I = n(979651),
   b = n(358085),
   T = n(998502),
@@ -72,7 +72,7 @@ async function L() {
   }
 }
 
-function k(e) {
+function j(e) {
   let {
     children: t,
     className: n,
@@ -84,13 +84,13 @@ function k(e) {
     toolbar: T,
     mobileToolbar: x,
     "aria-label": D,
-    "aria-labelledby": k,
-    scrollable: j,
+    "aria-labelledby": j,
+    scrollable: k,
     role: M,
     hideSearch: Z,
     showDivider: U
-  } = e, w = null == i || (0, A.AB)(i) ? null : i, V = (0, s.e7)([I.Z], () => I.Z.isInChannel(w) || !1), G = (0, s.e7)([_.Z], () => null != w && _.Z.getParticipantsListOpen(w)), {
-    hasBugReporterAccess: F
+  } = e, w = null == i || (0, A.AB)(i) ? null : i, V = (0, a.e7)([I.Z], () => I.Z.isInChannel(w) || !1), F = (0, a.e7)([_.Z], () => null != w && _.Z.getParticipantsListOpen(w)), {
+    hasBugReporterAccess: G
   } = d.Z.useExperiment({
     location: "HeaderBar"
   }, {
@@ -98,7 +98,7 @@ function k(e) {
   }), {
     enabled: W,
     inInbox: B
-  } = f.Z.useExperiment({
+  } = h.Z.useExperiment({
     location: "HeaderBar"
   }), {
     hasParticipantsPanel: H
@@ -112,14 +112,14 @@ function k(e) {
       if (null == T) return null;
       let e = null != i && !Z;
       return o.tq ? x : (0, r.jsxs)(r.Fragment, {
-        children: [T, e ? (0, r.jsx)(N.Z, {
+        children: [T, e ? (0, r.jsx)(O.Z, {
           className: v.search
         }, null != c ? c : i) : null, U && (0, r.jsx)(C.ZP.Divider, {}), !z && (0, r.jsx)(P.Z, {}), !z && (0, r.jsx)(p.Z, {
           canShowReminder: !0
-        }), !z && (0, r.jsx)(h.Z, {}), W && !B ? (0, r.jsx)(g.Z, {}) : null, !z && (F ? (0, r.jsx)(y.Z, {}) : (0, r.jsx)(S.Z, {})), H && V && null != w && !G && l === R.d4z.GROUP_DM && (0, r.jsxs)("div", {
+        }), !z && (0, r.jsx)(f.Z, {}), W && !B ? (0, r.jsx)(g.Z, {}) : null, !z && (G ? (0, r.jsx)(y.Z, {}) : (0, r.jsx)(S.Z, {})), H && V && null != w && !F && l === R.d4z.GROUP_DM && (0, r.jsxs)("div", {
           className: v.controlButtonWrapper,
-          children: [(0, r.jsx)(C.ZP.Divider, {}), (0, r.jsx)(O.Z, {
-            onClick: () => a.Z.toggleParticipantsList(w, !G)
+          children: [(0, r.jsx)(C.ZP.Divider, {}), (0, r.jsx)(N.Z, {
+            onClick: () => s.Z.toggleParticipantsList(w, !F)
           })]
         })]
       })
@@ -127,14 +127,14 @@ function k(e) {
     transparent: b,
     onDoubleClick: L,
     "aria-label": D,
-    "aria-labelledby": k,
+    "aria-labelledby": j,
     role: M,
-    scrollable: j,
+    scrollable: k,
     children: t
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     children: t,
     className: n,
@@ -177,9 +177,9 @@ function M(e) {
   });
   return (0, r.jsx)(u.Gt, {
     value: i,
-    children: t ? (0, r.jsx)(k, D(x({}, n), {
+    children: t ? (0, r.jsx)(j, D(x({}, n), {
       className: o
-    })) : (0, r.jsx)(j, D(x({}, n), {
+    })) : (0, r.jsx)(k, D(x({}, n), {
       className: o
     }))
   })

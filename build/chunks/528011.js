@@ -1,14 +1,14 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
-  g: () => h,
+  g: () => f,
   mI: () => m
 }), n(47120);
 var r = n(149765),
   i = n(399606),
   l = n(581883),
   o = n(430824),
-  s = n(496675),
-  a = n(914010),
+  a = n(496675),
+  s = n(914010),
   c = n(594174),
   u = n(700785),
   d = n(709054),
@@ -17,10 +17,10 @@ var r = n(149765),
   p = n(676770);
 
 function m(e) {
-  let t = (0, i.e7)([o.Z, s.Z], () => {
+  let t = (0, i.e7)([o.Z, a.Z], () => {
       let t = o.Z.getGuild(e);
       if (null == t) return !1;
-      let n = s.Z.getGuildPermissions(t);
+      let n = a.Z.getGuildPermissions(t);
       return null != n && r.Db(n, p.cv)
     }),
     n = (0, i.e7)([E.Z], () => null != e ? E.Z.getGuildIncident(e) : null),
@@ -32,7 +32,7 @@ function m(e) {
   }
 }
 
-function h() {
+function f() {
   var e;
   let t = function(e) {
       let t = c.default.getCurrentUser(),
@@ -47,12 +47,12 @@ function h() {
           }), p.cv)) return i.id
       }
       return null
-    }(a.Z.getGuildId()),
+    }(s.Z.getGuildId()),
     n = null !== (e = l.Z.getGuildsProto()) && void 0 !== e ? e : {},
     i = null != t ? n[t] : null,
-    s = null != i && i.disableRaidAlertNag;
+    a = null != i && i.disableRaidAlertNag;
   return {
-    show: null != t && !s,
+    show: null != t && !a,
     guildId: t
   }
 }

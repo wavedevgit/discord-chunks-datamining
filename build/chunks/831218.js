@@ -23,8 +23,8 @@ var r, i = n(200651),
   j = n(214852),
   C = n(518311),
   x = n(355298),
-  S = n(869404),
-  P = n(333984),
+  P = n(869404),
+  S = n(333984),
   I = n(210887),
   N = n(592125),
   Z = n(158776),
@@ -433,10 +433,10 @@ let B = e => {
     } = e,
     g = l.Children.count(d),
     m = N.Z.getMutablePrivateChannels(),
-    b = (0, S.k1)(m),
-    v = (0, u.Wu)([w.Z, x.Z, P.Z], () => {
+    b = (0, P.k1)(m),
+    v = (0, u.Wu)([w.Z, x.Z, S.Z], () => {
       let e = w.Z.getPrivateChannelIds();
-      return (0, S.tU)(e, [x.Z, P.Z])
+      return (0, P.tU)(e, [x.Z, S.Z])
     }, []);
   (0, j.z)(O.R);
   let C = (0, u.cj)([f.Z, I.Z, N.Z], () => ({

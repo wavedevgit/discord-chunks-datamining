@@ -24,7 +24,7 @@ function _(e) {
     guildId: n
   } = e;
   i.useEffect(() => {
-    (0, l.T7)(n)
+    (0, l.Sn)(n), (0, l.Fm)(n)
   }, [n]);
   let t = (0, c.Z)(n);
   return null == t ? null : (0, r.jsxs)("div", {

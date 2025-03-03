@@ -1,4 +1,4 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
   Z: () => I
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   l = n(442837),
   o = n(481060),
-  s = n(565138),
-  a = n(241559),
+  a = n(565138),
+  s = n(241559),
   c = n(527379),
   u = n(430824),
   d = n(944486),
@@ -15,11 +15,11 @@ var r = n(200651),
   E = n(626135),
   p = n(528011),
   m = n(666657),
-  h = n(533244),
-  f = n(981631),
+  f = n(533244),
+  h = n(981631),
   g = n(176505),
-  N = n(388032),
-  O = n(980566);
+  O = n(388032),
+  N = n(980566);
 
 function I(e) {
   var t, I;
@@ -29,19 +29,19 @@ function I(e) {
     shouldShowIncidentActions: P,
     incidentData: R,
     isUnderLockdown: A
-  } = (0, p.mI)(S), v = (0, a.n2)(null !== (t = null == y ? void 0 : y.id) && void 0 !== t ? t : f.lds), x = i.useCallback(() => null != y && (0, c._X)(y.id), [y]);
+  } = (0, p.mI)(S), v = (0, s.n2)(null !== (t = null == y ? void 0 : y.id) && void 0 !== t ? t : h.lds), x = i.useCallback(() => null != y && (0, c._X)(y.id), [y]);
   if (null == y || null == R || !P) return null;
   let D = e => {
       if (e && v && C !== g.oC.MEMBER_SAFETY && x()) {
-        E.default.track(f.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
-          notice_type: f.kVF.GUILD_RAID_NOTIFICATION,
+        E.default.track(h.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
+          notice_type: h.kVF.GUILD_RAID_NOTIFICATION,
           guild_id: y.id
         });
         return
       }(0, o.ZDy)(async () => {
         let e = {
             source: m.Zu.NAGBAR,
-            alertType: (0, h.T1)(R)
+            alertType: (0, f.T1)(R)
           },
           {
             default: t
@@ -81,53 +81,53 @@ function I(e) {
         }
       })
     },
-    L = (0, r.jsx)(s.Z, {
-      className: O.guildIcon,
+    L = (0, r.jsx)(a.Z, {
+      className: N.guildIcon,
       guild: y,
-      size: s.Z.Sizes.MINI
+      size: a.Z.Sizes.MINI
     }),
-    k = (0, h.OY)(R, y.name);
+    j = (0, f.OY)(R, y.name);
   if (null != (null !== (I = R.dmsDisabledUntil) && void 0 !== I ? I : R.invitesDisabledUntil) && A) return (0, r.jsxs)(o.qXd, {
-    className: O.notice,
+    className: N.notice,
     color: o.DM8.NEUTRAL,
     children: [(0, r.jsx)(o.RyX, {
       onClick: b,
-      noticeType: f.kVF.GUILD_RAID_NOTIFICATION
-    }), L, k, (0, r.jsx)(o.EyT, {
-      className: O.actionButton,
+      noticeType: h.kVF.GUILD_RAID_NOTIFICATION
+    }), L, j, (0, r.jsx)(o.EyT, {
+      className: N.actionButton,
       onClick: () => D(!1),
       children: (0, r.jsxs)("div", {
-        className: O.actionButtonInner,
+        className: N.actionButtonInner,
         children: [(0, r.jsx)(o.mBM, {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)("span", {
-          children: N.NW.string(N.t["c+7oa2"])
+          children: O.NW.string(O.t["c+7oa2"])
         })]
       })
     })]
   });
-  let j = (0, h.CG)(R) ? N.NW.formatToPlainString(N.t.tZTx2N, {
+  let k = (0, f.CG)(R) ? O.NW.formatToPlainString(O.t.tZTx2N, {
       guildName: y.name
-    }) : (0, h.kk)(R) ? N.NW.formatToPlainString(N.t["1bSmxs"], {
+    }) : (0, f.kk)(R) ? O.NW.formatToPlainString(O.t["1bSmxs"], {
       guildName: y.name
-    }) : N.NW.formatToPlainString(N.t.W87xDA, {
+    }) : O.NW.formatToPlainString(O.t.W87xDA, {
       guildName: y.name
     }),
     M = v && C === g.oC.MEMBER_SAFETY;
   return (0, r.jsxs)(o.qXd, {
-    className: O.notice,
+    className: N.notice,
     color: o.DM8.WARNING,
     children: [(0, r.jsx)(o.RyX, {
       onClick: b,
-      noticeType: f.kVF.GUILD_RAID_NOTIFICATION
-    }), L, j, !M && (0, r.jsx)(o.EyT, {
-      className: O.actionButton,
+      noticeType: h.kVF.GUILD_RAID_NOTIFICATION
+    }), L, k, !M && (0, r.jsx)(o.EyT, {
+      className: N.actionButton,
       onClick: () => D(!0),
       children: (0, r.jsx)("div", {
-        className: O.actionButtonInner,
+        className: N.actionButtonInner,
         children: (0, r.jsx)("span", {
-          children: N.NW.string(N.t.zDJDho)
+          children: O.NW.string(O.t.zDJDho)
         })
       })
     })]

@@ -23,8 +23,8 @@ var r, i = n(200651),
   j = n(451478),
   C = n(276952),
   x = n(682662),
-  S = n(662146),
-  P = n(674552),
+  P = n(662146),
+  S = n(674552),
   I = n(981631),
   N = n(462598);
 
@@ -171,14 +171,14 @@ class D extends(r = l.PureComponent) {
           selected: !b && n,
           unread: !b && p,
           className: N.pill
-        }), (0, i.jsx)(S.Z, {
+        }), (0, i.jsx)(P.Z, {
           text: null != t ? t : "",
           selected: n,
           children: (0, i.jsx)(c.aRk, {
             rounded: f,
             selected: !f && (n || g),
-            lowerBadge: r > 0 ? (0, P.Ne)(r) : null,
-            upperBadge: (0, P.Or)({
+            lowerBadge: r > 0 ? (0, S.Ne)(r) : null,
+            upperBadge: (0, S.Or)({
               audio: l,
               video: s,
               screenshare: u,
@@ -276,7 +276,7 @@ let R = l.forwardRef(function(e, t) {
     C = !1;
   O && (j = o === I.WtW.VOICE, C = o === I.WtW.VIDEO);
   let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
-    S = (0, f.Q3)("DirectMessage");
+    P = (0, f.Q3)("DirectMessage");
   return (0, i.jsx)(D, E(w({}, e), {
     ref: t,
     channelName: r,
@@ -288,7 +288,7 @@ let R = l.forwardRef(function(e, t) {
     stream: a,
     isCurrentUserInThisDMCall: O,
     isGDMFacepileEnabled: m,
-    size: S ? x : 56,
-    isVisualRefreshEnabled: S
+    size: P ? x : 56,
+    isVisualRefreshEnabled: P
   }))
 })

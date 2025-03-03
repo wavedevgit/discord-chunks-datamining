@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 }), n(47120);
 var i = n(200651),
   l = n(192379),
@@ -18,39 +18,39 @@ var i = n(200651),
   v = n(388032),
   N = n(486320);
 
-function y(e) {
+function x(e) {
   let {
     context: t,
     application: n,
-    sectionName: y,
-    primaryEntryPointCommand: x,
+    sectionName: x,
+    primaryEntryPointCommand: y,
     buttonSize: b = r.PhG.MEDIUM
-  } = e, E = l.useId(), C = l.useCallback(() => {
+  } = e, E = l.useId(), j = l.useCallback(() => {
     c.yT(u.ti.ACTIVITY)
   }, []), {
-    submitting: g,
-    wasSubmitting: j
+    submitting: C,
+    wasSubmitting: g
   } = (0, m.Z)({
     applicationId: n.id,
     context: t,
     launchingComponentId: E,
-    onSubmissionComplete: C
+    onSubmissionComplete: j
   }), [P, A] = l.useState(!1), I = (0, o.Qv)({
     applicationId: n.id,
     context: t
-  }), O = l.useMemo(() => (0, p.XZ)(x.displayName), [x.displayName]), {
-    onActivityItemSelected: _,
+  }), _ = l.useMemo(() => (0, p.XZ)(y.displayName), [y.displayName]), {
+    onActivityItemSelected: O,
     buttonColor: S,
     buttonText: T
   } = (0, h.P7)({
     context: t,
     application: n,
     location: a.Vh.APP_LAUNCHER_APPLICATION_VIEW,
-    sectionName: y,
-    commandName: O,
+    sectionName: x,
+    commandName: _,
     autoDismissOnClick: I === o.JS.LEAVE,
     launchingComponentId: E,
-    submitting: null != j ? j : g
+    submitting: null != g ? g : C
   }), {
     disabled: L,
     reason: R
@@ -106,7 +106,7 @@ function y(e) {
         disabled: L,
         submitting: P,
         onClick: () => {
-          A(!0), _(), null == o || o(), s.default.track(f.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+          A(!0), O(), null == o || o(), s.default.track(f.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
             application_id: n.id,
             button_action: u._y.USE_APP_COMMAND
           })

@@ -1,6 +1,6 @@
 /** Chunk was on 94898 **/
 n.d(t, {
-  Z: () => P
+  Z: () => S
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -47,7 +47,7 @@ function x(e) {
   })
 }
 
-function S(e) {
+function P(e) {
   let t, n, {
       folderNode: l,
       hovered: o,
@@ -62,7 +62,7 @@ function S(e) {
     m = g === v.Wyy,
     b = f.map(e => e.id),
     [y, C] = i.useState(!1),
-    [S, P] = i.useState(c),
+    [P, S] = i.useState(c),
     I = u ? c ? 22 : -11 : c ? 0 : -j,
     N = (0, d.q_F)({
       transform: "translate3d(0, ".concat(I, "px, 0)"),
@@ -70,14 +70,14 @@ function S(e) {
         duration: O
       },
       onStart() {
-        C(!0), P(c)
+        C(!0), S(c)
       },
       onRest() {
-        C(!1), P(c)
+        C(!1), S(c)
       }
     }, "animate-always"),
     Z = y ? N : void 0;
-  (y || S) && (t = (0, r.jsx)(a.animated.div, {
+  (y || P) && (t = (0, r.jsx)(a.animated.div, {
     style: Z,
     className: _.expandedFolderIconWrapper,
     children: (0, r.jsx)(d.ROc, {
@@ -87,7 +87,7 @@ function S(e) {
         color: (0, s.Rf)(g)
       }
     })
-  })), (y || !S) && (n = (0, r.jsx)(a.animated.div, {
+  })), (y || !P) && (n = (0, r.jsx)(a.animated.div, {
     style: Z,
     className: _.closedFolderIconWrapper,
     children: b.slice(0, 4).map((e, t) => (0, r.jsx)(x, {
@@ -107,7 +107,7 @@ function S(e) {
   })
 }
 
-function P(e) {
+function S(e) {
   var t, n;
   let {
     folderNode: l,
@@ -123,7 +123,7 @@ function P(e) {
     folderIconContent: j,
     onClick: C,
     onContextMenu: x,
-    onHoverChange: P,
+    onHoverChange: S,
     onKeyDown: I,
     treeItemProps: {
       onFocus: N
@@ -143,10 +143,10 @@ function P(e) {
     }
     return i
   }(e.treeItemProps, ["onFocus"]), [w, E] = i.useState(!1), T = i.useCallback(() => {
-    c || E(!0), null == P || P(!0)
-  }, [c, P]), A = i.useCallback(() => {
-    c || E(!1), null == P || P(!1)
-  }, [c, P]), D = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), L = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, k = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
+    c || E(!0), null == S || S(!0)
+  }, [c, S]), A = i.useCallback(() => {
+    c || E(!1), null == S || S(!1)
+  }, [c, S]), D = (0, h.Q3)("FolderHeader"), R = s || null == u ? null : (0, b.Or)(u), L = !s && f > 0 ? (0, b.Ne)(f, g ? p.Z.BACKGROUND_ACCENT : p.Z.STATUS_DANGER) : null, k = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE);
   return (0, r.jsx)(d.aRk, {
     isFolder: !0,
     style: D ? {
@@ -200,7 +200,7 @@ function P(e) {
       children: null != j ? (0, r.jsx)("div", {
         className: o()(_.expandedFolderIconWrapper, O),
         children: j
-      }) : (0, r.jsx)(S, {
+      }) : (0, r.jsx)(P, {
         folderNode: l,
         hovered: w,
         expanded: s

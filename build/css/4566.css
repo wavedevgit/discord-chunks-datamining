@@ -1,6 +1,6 @@
 /**
   Module ID: 4566
-  Original File Name: dc9ec28dcdc7e081
+  Original File Name: 31d2662ca1f30e48
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -6562,8 +6562,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .titleName_aae012 {
-    text-align: center;
-    font-weight: 700
+    text-align: center
 }
 
 .titleName_aae012 p {
@@ -6597,21 +6596,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .card_aae012:hover {
     background-color: var(--background-modifier-hover)
-}
-
-.visual-refresh .card_aae012 {
-    background-color: var(--background-mod-faint);
-    border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm);
-    padding: var(--space-12) var(--space-16)
-}
-
-.visual-refresh .card_aae012:hover {
-    background-color: var(--background-mod-subtle)
-}
-
-.visual-refresh.full-motion .card_aae012 {
-    transition: background-color .2s ease
 }
 
 .completed_aae012 .cardTextContainer_aae012,.completed_aae012 .icon_aae012,.completed_aae012 .playCircleWrapper_aae012 {
@@ -6667,10 +6651,57 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     animation: completed_aae012 .8s
 }
 
+.visual-refresh .card_aae012 {
+    background-color: var(--background-mod-faint);
+    border-radius: var(--radius-sm);
+    padding: var(--space-12) var(--space-16);
+    border: 1px solid var(--border-subtle)
+}
+
+.visual-refresh .card_aae012:hover {
+    background-color: var(--background-mod-subtle)
+}
+
+.visual-refresh.full-motion .card_aae012 {
+    transition: background-color .2s ease
+}
+
+.visual-refresh .staff_aae012 .card_aae012 {
+    padding: var(--space-16)
+}
+
+.visual-refresh .staff_aae012 .cardTextContainer_aae012 {
+    margin-left: var(--space-12)
+}
+
+.visual-refresh .completed_aae012.staff_aae012 .checkmark_aae012 {
+    opacity: .6
+}
+
 .visual-refresh .checkmark_aae012 {
     width: 16px;
     height: 16px;
     background-color: var(--status-positive)
+}
+
+.visual-refresh .staff_aae012 .icon_aae012 {
+    width: var(--space-20);
+    height: var(--space-20);
+    min-width: var(--space-20);
+    min-height: var(--space-20)
+}
+
+.visual-refresh .icon_aae012 {
+    width: var(--spacing-32);
+    height: var(--spacing-32);
+    margin: var(--spacing-4);
+    min-width: var(--spacing-32);
+    min-height: var(--spacing-32)
+}
+
+.visual-refresh .staff_aae012 .arrow_aae012 {
+    min-width: var(--space-20);
+    color: var(--interactive-muted)
 }
 
 @keyframes completed_aae012 {
@@ -6698,14 +6729,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     justify-self: flex-end;
     color: var(--interactive-normal);
     min-width: 24px
-}
-
-:where(.visual-refresh) .icon_aae012 {
-    width: var(--spacing-32);
-    height: var(--spacing-32);
-    margin: var(--spacing-4);
-    min-width: var(--spacing-32);
-    min-height: var(--spacing-32)
 }
 
 .buttonContainer__6ca73 {

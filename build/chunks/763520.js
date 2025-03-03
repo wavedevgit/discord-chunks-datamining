@@ -1,13 +1,13 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
   m: () => p,
-  o: () => h
+  o: () => f
 }), n(47120);
 var r, i = n(259443),
   l = n(379649),
   o = n(314897),
-  s = n(592125),
-  a = n(866960),
+  a = n(592125),
+  s = n(866960),
   c = n(19780),
   u = n(979651),
   d = n(626135),
@@ -23,7 +23,7 @@ function E(e, t, n) {
 }
 var p = ((r = {}).SELF_VIDEO = "self_video", r.SELF_STREAM = "self_stream", r.REMOTE_VIDEO = "remote_video", r.REMOTE_STREAM = "remote_stream", r.CHANGE_VIDEO_BACKGROUND = "change_video_background", r.VIDEO_PLAYER = "video_player", r.REPLAY_VIDEO_STREAM = "replay_video_stream", r);
 let m = new Map;
-class h {
+class f {
   onSpinnerStarted() {
     null == this.spinnerVisibleStart && (this.spinnerVisibleStart = (0, l.zO)())
   }
@@ -42,7 +42,7 @@ class h {
     this.logger.info("spinner visible for ".concat(i, " ms\n      [").concat(e, ", count for stream: ").concat(r, "]"));
     let E = c.Z.getGuildId(),
       p = u.Z.getUserVoiceChannelId(E, o.default.getId()),
-      h = function(e) {
+      f = function(e) {
         if (null != e) {
           if (e.isGuildVoice()) return "guild_voice";
           if (e.isGuildStageVoice()) return "is_stage_channel";
@@ -50,7 +50,7 @@ class h {
           if (e.isGroupDM()) return "group_dm"
         }
         return null
-      }(s.Z.getChannel(p));
+      }(a.Z.getChannel(p));
     d.default.track(_.rMx.VIDEO_SPINNER_SHOWN_V2, {
       video_spinner_context: e,
       duration_video_spinner_visible_ms: i,
@@ -59,11 +59,11 @@ class h {
       event_count_for_stream: r,
       guild_id: E,
       channel_id: p,
-      channel_type: h,
+      channel_type: f,
       spinning_user_id: t,
-      connection_type: a.Z.getType(),
-      effective_connection_speed: a.Z.getEffectiveConnectionSpeed(),
-      service_provider: a.Z.getServiceProvider()
+      connection_type: s.Z.getType(),
+      effective_connection_speed: s.Z.getEffectiveConnectionSpeed(),
+      service_provider: s.Z.getServiceProvider()
     })
   }
   constructor(e) {

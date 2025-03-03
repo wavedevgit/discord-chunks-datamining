@@ -1,4 +1,4 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   l = n(120356),
   o = n.n(l),
-  s = n(481060),
-  a = n(2928);
+  a = n(481060),
+  s = n(2928);
 
 function c(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -51,9 +51,9 @@ function d(e) {
     o = u(e, ["alt"]);
   let [d, _] = i.useState(!0);
   return (0, r.jsxs)(r.Fragment, {
-    children: [d && (0, r.jsx)(s.$jN, {
-      type: s.$jN.Type.LOW_MOTION,
-      className: a.loader
+    children: [d && (0, r.jsx)(a.$jN, {
+      type: a.$jN.Type.LOW_MOTION,
+      className: s.loader
     }), (0, r.jsx)("img", (t = c({}, o), n = n = {
       alt: l,
       onLoad: () => _(!1)
@@ -76,26 +76,26 @@ function _(e) {
     backgroundSrc: n,
     alt: i,
     aspectRatio: l,
-    className: s,
+    className: a,
     imageChildClassName: _
   } = e, E = u(e, ["src", "backgroundSrc", "alt", "aspectRatio", "className", "imageChildClassName"]);
   return (0, r.jsxs)("div", {
-    className: o()(a.container, s),
+    className: o()(s.container, a),
     children: [(0, r.jsx)("img", {
       src: n,
       alt: i,
-      className: a.backgroundImage
+      className: s.backgroundImage
     }), (0, r.jsx)("div", {
-      className: a.backgroundImageFilter
+      className: s.backgroundImageFilter
     }), (0, r.jsx)("div", {
       style: {
         aspectRatio: l
       },
-      className: a.imageContainer,
+      className: s.imageContainer,
       children: (0, r.jsx)(d, c({
         src: t,
         alt: i,
-        className: o()(a.image, _)
+        className: o()(s.image, _)
       }, E))
     })]
   })

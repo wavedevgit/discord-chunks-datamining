@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(771845),
   C = n(727258),
   x = n(276952),
-  S = n(249792),
-  P = n(40153),
+  P = n(249792),
+  S = n(40153),
   I = n(593618),
   N = n(252686),
   Z = n(682662),
@@ -158,13 +158,13 @@ let M = i.memo(function(e) {
     ex = i.useCallback(e => {
       null == F || eC || X(e, F)
     }, [F, X, eC]),
-    eS = i.useCallback(e => {
+    eP = i.useCallback(e => {
       if ("ArrowLeft" === e.key && null != el) {
         var t;
         null === (t = document.querySelector("[aria-owns=folder-items-".concat(el, "]"))) || void 0 === t || t.focus()
       }
     }, [el]),
-    eP = i.useCallback(e => {
+    eS = i.useCallback(e => {
       if (e) {
         e_.delay();
         return
@@ -176,7 +176,7 @@ let M = i.memo(function(e) {
     }, [ei, B]),
     eN = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == F) return null;
-  let eZ = ev || em ? (0, r.jsx)(S.Z, {
+  let eZ = ev || em ? (0, r.jsx)(P.Z, {
       guild: F,
       show: ev,
       active: z,
@@ -201,13 +201,13 @@ let M = i.memo(function(e) {
       },
       onMouseDown: ej,
       onContextMenu: ex,
-      onKeyDown: eS,
+      onKeyDown: eP,
       icon: F.getIconURL(2 * eN, eg && H, eo),
       selected: z || eg
     }, ep), {
       role: "treeitem"
     })),
-    ew = eu ? (0, r.jsx)(P.OG, {
+    ew = eu ? (0, r.jsx)(S.OG, {
       children: (0, r.jsx)(N.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? ed : void 0,
@@ -241,10 +241,10 @@ let M = i.memo(function(e) {
       disabled: ee,
       isDragging: eu,
       children: ew
-    }), $ ? (0, r.jsx)(P.ZP, {
+    }), $ ? (0, r.jsx)(S.ZP, {
       name: F.name,
       targetNode: G,
-      onDragOverChanged: eP
+      onDragOverChanged: eS
     }) : null]
   })
 })

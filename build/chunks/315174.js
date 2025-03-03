@@ -148,8 +148,8 @@ let j = i.memo(function(e) {
     onContextMenu: j,
     onMouseDown: C,
     disableBannerAnimation: x,
-    "aria-expanded": S,
-    "aria-controls": P,
+    "aria-expanded": P,
+    "aria-controls": S,
     guild: I,
     guildBanner: N,
     animationOverlayHeight: Z,
@@ -185,7 +185,7 @@ let j = i.memo(function(e) {
           className: o()(l, {
             [v.container]: !0,
             [v.clickable]: null != a,
-            [v.selected]: null != a && S,
+            [v.selected]: null != a && P,
             [v.hasBanner]: H(),
             [v.bannerVisible]: t,
             [e]: !z && t,
@@ -210,8 +210,8 @@ let j = i.memo(function(e) {
                 children: I.toString()
               }), null != a && (0, r.jsx)(c.P3F, {
                 className: v.headerButton,
-                "aria-controls": P,
-                "aria-expanded": S,
+                "aria-controls": S,
+                "aria-expanded": P,
                 focusProps: {
                   ringTarget: W,
                   offset: 4

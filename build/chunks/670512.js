@@ -1,12 +1,12 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
 var r, i = n(200651),
   l = n(192379),
   o = n(120356),
-  s = n.n(o),
-  a = n(748780),
+  a = n.n(o),
+  s = n(748780),
   c = n(846519),
   u = n(481060),
   d = n(585483),
@@ -22,11 +22,11 @@ function m(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let h = {
+let f = {
   friction: 15,
   tension: 100
 };
-class f extends(r = l.PureComponent) {
+class h extends(r = l.PureComponent) {
   componentDidMount() {
     this.setState({
       shown: !0
@@ -45,7 +45,7 @@ class f extends(r = l.PureComponent) {
     let {
       reducedMotion: t
     } = this.context;
-    !0 !== t.enabled && a.Z.spring(this.state.translateY, function(e) {
+    !0 !== t.enabled && s.Z.spring(this.state.translateY, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -58,13 +58,13 @@ class f extends(r = l.PureComponent) {
       return e
     }({
       toValue: Math.min(e, 250)
-    }, h)).start()
+    }, f)).start()
   }
   renderArrowGroup(e) {
     return (0, i.jsxs)("div", {
-      className: s()(p.arrowGroup, e),
-      children: [(0, i.jsx)(a.Z.div, {
-        className: s()(p.arrowContainer, p.horizontal),
+      className: a()(p.arrowGroup, e),
+      children: [(0, i.jsx)(s.Z.div, {
+        className: a()(p.arrowContainer, p.horizontal),
         style: this.getStyle(),
         children: (0, i.jsx)("img", {
           alt: "",
@@ -72,14 +72,14 @@ class f extends(r = l.PureComponent) {
           className: p.arrowIcon
         })
       }), (0, i.jsx)("div", {
-        className: s()(p.arrowContainer, p.diag1),
+        className: a()(p.arrowContainer, p.diag1),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(536404),
           className: p.arrowIcon
         })
       }), (0, i.jsx)("div", {
-        className: s()(p.arrowContainer, p.diag2),
+        className: a()(p.arrowContainer, p.diag2),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(569347),
@@ -108,7 +108,7 @@ class f extends(r = l.PureComponent) {
     } = this.state;
     return (0, i.jsxs)("div", {
       ref: this.rootRef,
-      className: s()(p.tutorial, {
+      className: a()(p.tutorial, {
         [p.shown]: t,
         [p.hasQuery]: e
       }),
@@ -134,7 +134,7 @@ class f extends(r = l.PureComponent) {
   constructor(...e) {
     super(...e), m(this, "state", {
       shown: !1,
-      translateY: new a.Z.Value(0)
+      translateY: new s.Z.Value(0)
     }), m(this, "rootRef", l.createRef()), m(this, "focusTimeout", new c.V7), m(this, "handleResultFocus", e => {
       let {
         node: t
@@ -152,5 +152,5 @@ class f extends(r = l.PureComponent) {
     })
   }
 }
-m(f, "contextType", u.Sfi);
-let g = f
+m(h, "contextType", u.Sfi);
+let g = h

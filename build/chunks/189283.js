@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  s: () => p
+  s: () => h
 });
 var r = n(200651),
   i = n(192379),
@@ -42,23 +42,24 @@ function f(e) {
 }
 
 function _(e) {
+  if ("pill" === e) return c.pillItemText
+}
+
+function p(e) {
   let {
     option: t,
     selected: n,
     onClick: o,
     look: u,
-    className: _,
-    selectedClassName: p
-  } = e, h = {
-    [f(u)]: n
-  };
-  null != p && (h[p] = n);
-  let g = i.useCallback(e => o(t, e), [o, t]);
+    className: p
+  } = e, h = i.useCallback(e => o(t, e), [o, t]);
   return (0, r.jsx)(s.P, {
-    className: a()(d(u), _, h),
-    onClick: g,
+    className: a()(d(u), p, {
+      [f(u)]: n
+    }),
+    onClick: h,
     children: (0, r.jsxs)(l.x, {
-      className: c.controlText,
+      className: a()(c.controlText, _(u)),
       variant: "text-sm/medium",
       color: "none",
       children: [null != t.icon ? (0, r.jsx)(t.icon, {
@@ -68,29 +69,27 @@ function _(e) {
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     options: t,
     value: n,
     onChange: o,
     look: s = "tab",
     className: l,
-    optionClassName: c,
-    selectedOptionClassName: d
-  } = e, f = i.useCallback(e => {
+    optionClassName: c
+  } = e, d = i.useCallback(e => {
     var t;
     let i = n === e.value;
-    return (0, r.jsx)(_, {
+    return (0, r.jsx)(p, {
       selected: i,
       option: e,
       look: s,
       onClick: o,
-      className: c,
-      selectedClassName: d
+      className: c
     }, null !== (t = e.key) && void 0 !== t ? t : String(e.value))
-  }, [n, s, o, c, d]);
+  }, [n, s, o, c]);
   return (0, r.jsx)("div", {
     className: a()(u(s), l),
-    children: t.map(f)
+    children: t.map(d)
   })
 }

@@ -83,7 +83,7 @@ let v = i.memo(function(e) {
       (!C || e) && t.push(n)
     }
     return t
-  }, [j, O, m, C]), S = i.useMemo(() => (0, c.c4)({
+  }, [j, O, m, C]), P = i.useMemo(() => (0, c.c4)({
     channels: x,
     selectedChannelId: b,
     selectedVoiceChannelId: v,
@@ -93,19 +93,19 @@ let v = i.memo(function(e) {
     guildChannels: n,
     guildChannelsVersion: p
   });
-  let P = _ ? (0, r.jsx)("div", {
+  let S = _ ? (0, r.jsx)("div", {
     className: f.sectionDivider
   }) : null;
-  return O && 0 !== S.length ? (0, r.jsxs)(r.Fragment, {
+  return O && 0 !== P.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.voiceUserSummary,
       children: (0, r.jsx)(o.Z, {
         renderIcon: !0,
-        users: S,
+        users: P,
         max: 8,
         showUserPopout: !0,
         guildId: m
       })
-    }), P]
-  }) : P
+    }), S]
+  }) : S
 })

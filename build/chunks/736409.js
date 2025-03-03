@@ -27,12 +27,12 @@ let y = e => {
     rtcPopoutEnabled: _
   } = (0, f.S)("SharingPrivacyPopout"), O = (0, u.Ws)({
     location: v.dr.CONFLICT_CHECKS
-  }), j = d.G6.useSetting(), [C, x] = (0, i.useState)(!1), S = (0, l.e7)([p.Z], () => p.Z.getLayers().includes(m.S9g.USER_SETTINGS));
+  }), j = d.G6.useSetting(), [C, x] = (0, i.useState)(!1), P = (0, l.e7)([p.Z], () => p.Z.getLayers().includes(m.S9g.USER_SETTINGS));
   return ((0, i.useEffect)(() => {
     n && h.default.track(m.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
-  }, [n]), _ && (O || n) && (!j || C) && !S) ? (0, r.jsx)(c.ZP, {
+  }, [n]), _ && (O || n) && (!j || C) && !P) ? (0, r.jsx)(c.ZP, {
     contentTypes: n ? [] : [o.z.SHARE_ACTIVITY_COACHMARK_V2],
     children: e => {
       let {

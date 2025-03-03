@@ -1,4 +1,4 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
   Z: () => u
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(481060),
   l = n(570140),
   o = n(317770),
-  s = n(175281),
-  a = n(285371);
+  a = n(175281),
+  s = n(285371);
 class c extends o.Z {
   _initialize() {
     l.Z.subscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), l.Z.subscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
@@ -17,7 +17,7 @@ class c extends o.Z {
     l.Z.unsubscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), l.Z.unsubscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
   }
   showKeyboardShortcuts() {
-    (0, i.h7j)(e => (0, r.jsx)(s.Z, function(e) {
+    (0, i.h7j)(e => (0, r.jsx)(a.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -35,11 +35,11 @@ class c extends o.Z {
       }
       return e
     }({}, e)), {
-      modalKey: a.J
+      modalKey: s.J
     })
   }
   hideKeyboardShortcuts() {
-    (0, i.Mr3)(a.J)
+    (0, i.Mr3)(s.J)
   }
 }
 let u = new c

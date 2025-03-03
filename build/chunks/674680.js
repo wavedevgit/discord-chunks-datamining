@@ -1,4 +1,4 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
   Z: () => m
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(780384),
   l = n(481060),
   o = n(410030),
-  s = n(44315),
-  a = n(889901),
+  a = n(44315),
+  s = n(889901),
   c = n(955204),
   u = n(231338),
   d = n(319239);
@@ -48,17 +48,17 @@ function m(e) {
     achievementId: n,
     unlocked: u,
     size: m = l.EFr.SIZE_40
-  } = e, h = (0, o.ZP)(), f = (0, c.oX)(n);
-  if (null == f) return null;
+  } = e, f = (0, o.ZP)(), h = (0, c.oX)(n);
+  if (null == h) return null;
   let g = (0, l.UCu)(m),
     {
-      name: N,
-      rarity: O
-    } = f,
+      name: O,
+      rarity: N
+    } = h,
     {
       color: I
-    } = (0, c.F7)(O),
-    b = (0, i.wj)(h) ? E : p,
+    } = (0, c.F7)(N),
+    b = (0, i.wj)(f) ? E : p,
     T = (g.size - g.offset - 2 * g.stroke) * .8,
     C = g.size - g.stroke,
     S = {
@@ -79,12 +79,12 @@ function m(e) {
       height: C,
       padding: g.stroke
     },
-    "aria-label": "".concat(null !== (t = N()) && void 0 !== t ? t : ""),
+    "aria-label": "".concat(null !== (t = O()) && void 0 !== t ? t : ""),
     children: [(0, r.jsx)("div", {
       className: d.trophyIconContainer,
       children: (0, r.jsx)(l.rm8, {
         size: "custom",
-        color: u ? I : (0, s.Lq)(b.trophy),
+        color: u ? I : (0, a.Lq)(b.trophy),
         width: T,
         height: T
       })
@@ -93,12 +93,12 @@ function m(e) {
       style: y,
       children: (0, r.jsx)(l.mBM, _({
         size: "custom",
-        color: (0, s.Lq)(b.locked)
+        color: (0, a.Lq)(b.locked)
       }, S))
-    }), u && O === c.EP.LEGENDARY && (0, r.jsx)("div", {
+    }), u && N === c.EP.LEGENDARY && (0, r.jsx)("div", {
       className: d.lockContainer,
       style: y,
-      children: (0, r.jsx)(a.Z, _({
+      children: (0, r.jsx)(s.Z, _({
         className: d.confettiIcon
       }, S))
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 49750 **/
+/** Chunk was on 51424 **/
 n.d(t, {
   Z: () => E
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(481060),
   l = n(230711),
   o = n(985754),
-  s = n(91802),
-  a = n(222727),
+  a = n(91802),
+  s = n(222727),
   c = n(981631),
   u = n(921944),
   d = n(388032),
@@ -18,10 +18,10 @@ let E = e => {
     notice: t,
     noticeType: n,
     dismissCurrentNotice: E
-  } = e, p = (null == t ? void 0 : t.metadata.premiumSubscription) != null, m = (0, s.n)();
-  if ((0, a.U)(c.jXE.NOTIFICATION_BAR, null == m ? void 0 : m.countryCode), null == m) return null;
-  let h = m.countryCode,
-    f = m.currency,
+  } = e, p = (null == t ? void 0 : t.metadata.premiumSubscription) != null, m = (0, a.n)();
+  if ((0, s.U)(c.jXE.NOTIFICATION_BAR, null == m ? void 0 : m.countryCode), null == m) return null;
+  let f = m.countryCode,
+    h = m.currency,
     g = m.paymentSourceTypes.length > 0;
   return (0, r.jsxs)(i.qXd, {
     color: p ? i.DM8.BRAND : i.DM8.PREMIUM_TIER_2,
@@ -32,7 +32,7 @@ let E = e => {
       size: "md",
       color: "currentColor",
       className: _.premiumIcon
-    }), (0, o.Gv)(h, f, g, p), (0, r.jsx)(i.NoS, {
+    }), (0, o.Gv)(f, h, g, p), (0, r.jsx)(i.NoS, {
       onClick: () => {
         E(u.L.UNKNOWN), l.Z.open(c.oAB.PREMIUM)
       },

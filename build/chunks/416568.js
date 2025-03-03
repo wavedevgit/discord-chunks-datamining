@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(358221),
   C = n(540059),
   x = n(706590),
-  S = n(940777),
-  P = n(41776),
+  P = n(940777),
+  S = n(41776),
   I = n(905423),
   N = n(802718),
   Z = n(822857),
@@ -166,7 +166,7 @@ function es(e) {
   } = (0, m.TCT)(), [h] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
-  }), b = (0, p.e7)([P.Z], () => P.Z.lurkingGuildIds()), y = i.useMemo(() => n ? [] : b, [b, n]), ei = (0, p.Wu)([D.Z, A.ZP], () => k.default.keys(D.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), es = y.concat(ei), ec = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), eu = (0, p.e7)([D.Z], () => D.Z.getGeoRestrictedGuilds()), [ed, ep] = i.useState(!1), eh = i.useCallback(() => ep(!0), []), ef = i.useCallback(() => ep(!1), []), eg = i.useRef(!1), [em] = i.useState(() => new f.V7), eb = i.useRef(null), ev = i.useRef(null), ey = (0, u.OP)(), {
+  }), b = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), y = i.useMemo(() => n ? [] : b, [b, n]), ei = (0, p.Wu)([D.Z, A.ZP], () => k.default.keys(D.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), es = y.concat(ei), ec = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), eu = (0, p.e7)([D.Z], () => D.Z.getGeoRestrictedGuilds()), [ed, ep] = i.useState(!1), eh = i.useCallback(() => ep(!0), []), ef = i.useCallback(() => ep(!1), []), eg = i.useRef(!1), [em] = i.useState(() => new f.V7), eb = i.useRef(null), ev = i.useRef(null), ey = (0, u.OP)(), {
     ref: e_
   } = ey, eO = function(e, t) {
     if (null == e) return {};
@@ -182,7 +182,7 @@ function es(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(ey, ["ref"]), ej = (0, m.mFp)(), [eC, ex] = i.useState(!1), [eS, eP] = i.useState(!1), eI = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eN = i.useMemo(() => new ea(h, ex, eP, () => {
+  }(ey, ["ref"]), ej = (0, m.mFp)(), [eC, ex] = i.useState(!1), [eP, eS] = i.useState(!1), eI = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eN = i.useMemo(() => new ea(h, ex, eS, () => {
     var e, t;
     null === (e = eb.current) || void 0 === e || e.calculateState(), null === (t = ev.current) || void 0 === t || t.calculateState()
   }, function(e, t, n) {
@@ -324,7 +324,7 @@ function es(e) {
                 gap: "xs",
                 ref: eN.scrollerRef,
                 onScroll: eN.handleScroll,
-                children: [(0, r.jsx)(Y.u, {}), eL ? (0, r.jsx)(S.Z, {}) : null, (0, r.jsx)(q.Z, {
+                children: [(0, r.jsx)(Y.u, {}), eL ? (0, r.jsx)(P.Z, {}) : null, (0, r.jsx)(q.Z, {
                   isOnHubVerificationRoute: eT
                 }), (0, r.jsx)(U.Z, {}), ek, es.map(e => (0, r.jsx)(ee.Z, {
                   guildId: e
@@ -348,7 +348,7 @@ function es(e) {
                   className: er.discoveryIcon
                 }) : null, t ? null : (0, r.jsx)(W.Z, {})]
               }), n || s ? null : (0, r.jsx)(z.g, {
-                hideGradient: eS,
+                hideGradient: eP,
                 children: (0, r.jsx)(H.Z, {
                   ref: eG,
                   questId: eF,

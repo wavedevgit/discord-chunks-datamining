@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => _
+  Z: () => O
 }), n(47120), n(266796);
 var i = n(200651),
   l = n(192379),
@@ -17,19 +17,19 @@ var i = n(200651),
   f = n(835473),
   v = n(70097),
   N = n(240991),
-  y = n(973616),
-  x = n(626135),
+  x = n(973616),
+  y = n(626135),
   b = n(783097),
   E = n(695676),
-  C = n(520315),
-  g = n(29380),
-  j = n(783685),
+  j = n(520315),
+  C = n(29380),
+  g = n(783685),
   P = n(981631),
   A = n(388032),
   I = n(469249),
-  O = n(509045);
+  _ = n(509045);
 
-function _(e) {
+function O(e) {
   let {
     context: t,
     application: n,
@@ -42,15 +42,15 @@ function _(e) {
     return null !== (e = (0, b.jD)(n)) && void 0 !== e ? e : ""
   }, [n]), h = (0, a.e7)([c.Z], () => c.Z.inDevModeForApplication(n.id)), f = null != r, {
     isSlideReady: N
-  } = (0, E.hH)(), [y, x] = l.useState(!1);
+  } = (0, E.hH)(), [x, y] = l.useState(!1);
   return l.useEffect(() => {
-    N && x(!0)
+    N && y(!0)
   }, [N]), (0, i.jsxs)("div", {
     className: I.container,
     children: [(0, i.jsxs)("div", {
       children: [f ? (0, i.jsxs)("div", {
         className: I.videoContainer,
-        children: [y ? (0, i.jsx)(v.Z, {
+        children: [x ? (0, i.jsx)(v.Z, {
           className: o()(I.videoCover, I.video),
           loop: !0,
           muted: !0,
@@ -68,7 +68,7 @@ function _(e) {
           application: n
         }), (0, i.jsx)(L, {
           application: n
-        }), m.length > 0 ? (0, i.jsx)(Z, {
+        }), m.length > 0 ? (0, i.jsx)(k, {
           description: m
         }) : null, h ? (0, i.jsx)("div", {
           className: I.developerShelfControlsContainer,
@@ -76,7 +76,7 @@ function _(e) {
             hideSearch: !0,
             className: I.developerShelfControls
           })
-        }) : null, (0, i.jsx)(M, {
+        }) : null, (0, i.jsx)(Z, {
           context: t,
           application: n,
           sectionName: u,
@@ -170,7 +170,7 @@ function R(e) {
     application: n
   } = e;
   if (!(0, b.ye)(n)) return null;
-  let l = null !== (t = (0, b.BQ)(n) ? n instanceof y.ZP ? n.maxParticipants : n.max_participants : 0) && void 0 !== t ? t : 0;
+  let l = null !== (t = (0, b.BQ)(n) ? n instanceof x.ZP ? n.maxParticipants : n.max_participants : 0) && void 0 !== t ? t : 0;
   return (0, i.jsxs)("div", {
     className: I.tagContainer,
     children: [(0, i.jsx)(s.BFJ, {
@@ -184,7 +184,7 @@ function R(e) {
   })
 }
 
-function M(e) {
+function Z(e) {
   var t;
   let {
     context: n,
@@ -197,12 +197,12 @@ function M(e) {
     applicationId: r.id,
     botUserId: v
   }), {
-    analyticsLocations: y
+    analyticsLocations: x
   } = (0, p.ZP)();
   if (l.useEffect(() => {
       if (!(0, b.BQ)(r) || !(0, b.ye)(r)) return;
       let e = setTimeout(() => {
-        (null == u || null == v) && x.default.track(P.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
+        (null == u || null == v) && y.default.track(P.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
           application_id: r.id,
           is_primary_entry_point_command_non_null: null != u,
           is_bot_user_id_non_null: null != v,
@@ -216,7 +216,7 @@ function M(e) {
     className: I.entrypointContainer,
     children: [(0, i.jsx)("div", {
       className: I.entryPointContainerFlexChild,
-      children: (0, i.jsx)(g.Z, {
+      children: (0, i.jsx)(C.Z, {
         context: n,
         application: r,
         sectionName: o,
@@ -225,11 +225,11 @@ function M(e) {
       })
     }), N && null != v ? (0, i.jsx)("div", {
       className: I.entryPointContainerFlexChild,
-      children: (0, i.jsx)(j.Z, {
+      children: (0, i.jsx)(g.Z, {
         botUserId: v,
         applicationId: r.id,
         buttonSize: E,
-        analyticsLocations: y
+        analyticsLocations: x
       })
     }) : null]
   }) : c && !a && (0, b.ye)(r) ? (0, i.jsx)(s.Wn, {
@@ -239,7 +239,7 @@ function M(e) {
   }) : null
 }
 
-function Z(e) {
+function k(e) {
   let {
     description: t
   } = e, [n, r] = l.useState(!0);
@@ -279,7 +279,7 @@ function Z(e) {
       ref: p,
       isTransitioning: m,
       onTransitionEnd: h
-    } = (0, C.Z)(function(e) {
+    } = (0, j.Z)(function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -308,7 +308,7 @@ function Z(e) {
       onTransitionEnd: h,
       children: (0, i.jsx)(s.Text, {
         ref: a,
-        className: O.markup,
+        className: _.markup,
         variant: "text-sm/medium",
         lineClamp: f ? void 0 : 1,
         style: {

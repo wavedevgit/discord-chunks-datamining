@@ -76,33 +76,42 @@ function W(e) {
     iconUrl: n,
     icon: l,
     header: a,
-    completed: s,
-    onClick: c
-  } = e, [d, h] = i.useState(!1), f = (0, p.Z)(s);
+    completed: c,
+    onClick: d
+  } = e, [h, f] = i.useState(!1), m = (0, p.Z)(c), g = (0, s.e7)([y.default], () => {
+    var e, t;
+    return null !== (t = null === (e = y.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== t && t
+  });
   return i.useEffect(() => {
-    null != f && s !== f && (h(!0), setTimeout(() => h(!1), 1e3))
-  }, [s, f]), (0, r.jsxs)(u.P3F, {
+    null != m && c !== m && (f(!0), setTimeout(() => f(!1), 1e3))
+  }, [c, m]), (0, r.jsxs)(u.P3F, {
     className: o()(t, T.card, {
-      [T.completed]: s
+      [T.completed]: c,
+      [T.staff]: g
     }),
-    onClick: c,
+    onClick: d,
     children: [null != l ? l : (0, r.jsx)("img", {
       className: T.icon,
       src: n,
       alt: ""
     }), (0, r.jsx)(u.Text, {
       color: "header-primary",
-      className: o()(T.cardTextContainer, T.cardHeader),
+      className: o()(T.cardTextContainer, T.cardHeader, {
+        [T.staff]: g
+      }),
       variant: "text-sm/normal",
       children: a
-    }), s ? (0, r.jsx)(u.dz2, {
+    }), c ? (0, r.jsx)(u.dz2, {
       size: "md",
       color: "currentColor",
       className: o()(T.checkmark, {
-        [T.animate]: d
+        [T.animate]: h,
+        [T.staff]: g
       })
     }) : (0, r.jsx)(x.Z, {
-      className: T.arrow,
+      className: o()(T.arrow, {
+        [T.staff]: g
+      }),
       direction: x.Z.Directions.RIGHT
     })]
   })
@@ -238,7 +247,10 @@ function U(e) {
       } : {},
       opacities: r
     }
-  }(J), [et, en] = i.useState([]), er = et.length > 0, ei = (0, f.Q3)("WelcomeArea");
+  }(J), [et, en] = i.useState([]), er = et.length > 0, ei = (0, f.Q3)("WelcomeArea"), el = (0, s.e7)([y.default], () => {
+    var e, t;
+    return null !== (t = null === (e = y.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== t && t
+  });
   if (i.useEffect(() => {
       (async () => {
         try {
@@ -248,11 +260,11 @@ function U(e) {
         } catch (e) {}
       })()
     }, [null == l ? void 0 : l.id]), null == l) return null;
-  let el = [];
-  p || (U && el.push((0, r.jsx)(a.Z.div, {
+  let eo = [];
+  p || (U && eo.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
     style: J ? {
-      opacity: ee[el.length]
+      opacity: ee[eo.length]
     } : {},
     children: (0, r.jsx)(W, {
       iconUrl: ei ? u.YvY : R,
@@ -260,10 +272,10 @@ function U(e) {
       completed: G,
       onClick: Y
     })
-  }, "invite")), B && el.push((0, r.jsx)(a.Z.div, {
+  }, "invite")), B && eo.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
     style: J ? {
-      opacity: ee[el.length]
+      opacity: ee[eo.length]
     } : {},
     children: (0, r.jsx)(W, {
       iconUrl: ei ? u.$_T : M,
@@ -271,10 +283,10 @@ function U(e) {
       completed: z,
       onClick: K
     })
-  }, "customize")), H && el.push((0, r.jsx)(a.Z.div, {
+  }, "customize")), H && eo.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
     style: J ? {
-      opacity: ee[el.length]
+      opacity: ee[eo.length]
     } : {},
     children: (0, r.jsx)(W, {
       iconUrl: ei ? u.qMX : k,
@@ -282,10 +294,10 @@ function U(e) {
       completed: V,
       onClick: q
     })
-  }, "message")), (0, E.isWeb)() && el.push((0, r.jsx)(a.Z.div, {
+  }, "message")), (0, E.isWeb)() && eo.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
     style: J ? {
-      opacity: ee[el.length]
+      opacity: ee[eo.length]
     } : {},
     children: (0, r.jsx)(W, {
       iconUrl: ei ? u.yIb : w,
@@ -293,10 +305,10 @@ function U(e) {
       completed: F,
       onClick: X
     })
-  }, "download")), el.push((0, r.jsx)(a.Z.div, {
+  }, "download")), eo.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
     style: J ? {
-      opacity: ee[el.length]
+      opacity: ee[eo.length]
     } : {},
     children: (0, r.jsx)(W, {
       iconUrl: ei ? u.vdZ : A,
@@ -305,9 +317,9 @@ function U(e) {
       onClick: Q
     })
   }, "addapp")));
-  let eo = x ? Z.NW.string(Z.t["1ach9P"]) : Z.NW.string(Z.t["ezm+/v"]);
-  p && (eo = Z.NW.string(Z.t["gwyU/P"]));
-  let ea = "".concat(O.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
+  let ea = x ? Z.NW.string(Z.t["1ach9P"]) : Z.NW.string(Z.t["ezm+/v"]);
+  p && (ea = Z.NW.string(Z.t["gwyU/P"]));
+  let es = "".concat(O.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, r.jsx)(I.ZP, {
     channelId: t.id,
     children: (0, r.jsx)("div", {
@@ -318,7 +330,7 @@ function U(e) {
           style: $,
           children: [(0, r.jsx)(u.X6q, {
             className: T.titleName,
-            variant: "heading-xxl/semibold",
+            variant: ei && el ? "heading-xxl/medium" : "heading-xxl/bold",
             children: Z.NW.format(Z.t.rkHVKS, {
               guildName: l.name
             })
@@ -326,14 +338,14 @@ function U(e) {
             color: "header-secondary",
             className: o()({
               [T.subtitle]: !0,
-              [T.noChildren]: 0 === el.length
+              [T.noChildren]: 0 === eo.length
             }),
             variant: "text-sm/normal",
-            children: [eo, " ", el.length > 0 ? Z.NW.format(Z.t.UOtD39, {
-              guideURL: ea
+            children: [ea, " ", eo.length > 0 ? Z.NW.format(Z.t.UOtD39, {
+              guideURL: es
             }) : null]
           })]
-        }), el]
+        }), eo]
       })
     })
   })

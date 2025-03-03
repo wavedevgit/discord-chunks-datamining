@@ -18,18 +18,18 @@ var i = n(192379),
   f = n(674588),
   v = n(809547),
   N = n(822245),
-  y = n(631827),
-  x = n(827498),
+  x = n(631827),
+  y = n(827498),
   b = n(783097),
   E = n(689079),
-  C = n(665692);
+  j = n(665692);
 
-function g(e, t) {
+function C(e, t) {
   let n = N.Z.getScoreWithoutLoadingLatest(e.id);
   return N.Z.getScoreWithoutLoadingLatest(t.id) - n
 }
 
-function j(e, t) {
+function g(e, t) {
   let n = (0, b.$d)(e),
     i = (0, b.$d)(t);
   return (0, p.un)(n, i)
@@ -49,11 +49,11 @@ function A(e) {
     searchesBots: s = !0,
     searchesActivities: f = !0
   } = e;
-  n.startsWith("".concat(C.GI)) && (n = n.substring(1));
+  n.startsWith("".concat(j.GI)) && (n = n.substring(1));
   let {
     commands: v,
     commandSectionMap: N,
-    loading: x
+    loading: y
   } = function(e) {
     var t, n;
     let {
@@ -121,10 +121,10 @@ function A(e) {
     includeNonEmbeddedApps: s
   }), I = (0, u.Z)({
     guildId: "channel" === t.type ? t.channel.guild_id : null
-  }), O = i.useMemo(() => {
+  }), _ = i.useMemo(() => {
     var e, i, r, o, s, u;
     if (!a) return [];
-    return (0, y.N)(v, {
+    return (0, x.N)(v, {
       limit: l,
       filterPredicates: [function(e) {
         let t = (0, m.k)("channel" === e.type ? e.channel : void 0, [c.yU.CHAT]),
@@ -209,10 +209,10 @@ function A(e) {
         return d.ZP.getScoreWithoutLoadingLatest(u, t) - n
       }), P]
     })
-  }, [a, v, l, t, n]), _ = i.useMemo(() => {
-    if (0 === O.length) return [];
+  }, [a, v, l, t, n]), O = i.useMemo(() => {
+    if (0 === _.length) return [];
     let e = new Map(A.map(e => [e.id, e]));
-    return r().compact(O.map(t => {
+    return r().compact(_.map(t => {
       var n;
       let i = e.get(t.applicationId);
       if (null == i) return null;
@@ -223,7 +223,7 @@ function A(e) {
         section: l
       }
     }))
-  }, [A, O, N]), S = i.useMemo(() => {
+  }, [A, _, N]), S = i.useMemo(() => {
     var e, i, l, r, a;
     let u = [];
     if (f) {
@@ -247,7 +247,7 @@ function A(e) {
         return t
       }))
     } else s && (u = A);
-    return (0, y.N)(u, {
+    return (0, x.N)(u, {
       limit: o,
       filterPredicates: [function(e) {
         let t = (0, m.k)("channel" === e.type ? e.channel : void 0, [c.yU.CHAT, c.yU.PRIMARY_ENTRY_POINT]);
@@ -281,16 +281,16 @@ function A(e) {
         let i = null === (t = (0, b.jD)(e)) || void 0 === t ? void 0 : t.toLocaleLowerCase();
         return null !== (n = null == i ? void 0 : i.includes(a.toLocaleLowerCase())) && void 0 !== n && n
       })],
-      sortComparers: [g, j]
+      sortComparers: [C, g]
     })
-  }, [s, f, o, t, n, A, I]), T = _.length > 0, L = S.length > 0;
+  }, [s, f, o, t, n, A, I]), T = O.length > 0, L = S.length > 0;
   return {
-    commandResults: _,
+    commandResults: O,
     hasCommandResults: T,
     applicationResults: S,
     hasApplicationResults: L,
     isEmptyState: !T && !L,
-    loading: x && a
+    loading: y && a
   }
 }
 
@@ -302,15 +302,15 @@ function I(e) {
     pageLimit: r = 1 / 0,
     entrypoint: c
   } = e;
-  n.startsWith("".concat(C.GI)) && (n = n.substring(1));
-  let u = c === x._b.VOICE,
+  n.startsWith("".concat(j.GI)) && (n = n.substring(1));
+  let u = c === y._b.VOICE,
     d = "channel" === t.type ? t.channel.guild_id : void 0,
     [p, m] = i.useState(1),
     h = i.useRef(p);
   h.current = p;
   let {
     fetchState: N,
-    totalPages: y
+    totalPages: x
   } = (0, s.cj)([v.Z], () => {
     var e, t;
     return {
@@ -354,8 +354,8 @@ function I(e) {
     })) || void 0 === i ? void 0 : i.results) && void 0 !== l ? l : []
   }), [N, d, n, p, u]), E = i.useCallback(() => {
     let e = b.length;
-    N === v.M.FETCHED && e === h.current && e > 0 && e < y && e < r && b[e - 1].length > 0 && (h.current++, m(e => e + 1))
-  }, [N, r, b, y]), g = i.useCallback(e => {
+    N === v.M.FETCHED && e === h.current && e > 0 && e < x && e < r && b[e - 1].length > 0 && (h.current++, m(e => e + 1))
+  }, [N, r, b, x]), C = i.useCallback(e => {
     let {
       query: t,
       page: n,
@@ -376,12 +376,12 @@ function I(e) {
     })
   }, [u]);
   return i.useEffect(() => {
-    l && g({
+    l && C({
       query: n,
       page: p,
       guildId: d
     })
-  }, [n, d, g, p, l]), i.useEffect(() => {
+  }, [n, d, C, p, l]), i.useEffect(() => {
     m(1)
   }, [d, n]), {
     fetchState: N,
