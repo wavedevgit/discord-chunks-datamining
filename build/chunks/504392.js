@@ -1,77 +1,73 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => f
+  Z: () => _
 });
-var i = t(200651),
-  r = t(192379),
-  o = t(442837),
-  a = t(481060),
-  s = t(413335),
-  c = t(984370),
+var r = t(200651),
+  i = t(192379),
+  o = t(481060),
+  a = t(413335),
+  s = t(984370),
   l = t(713081),
-  d = t(905128),
-  u = t(27237),
-  x = t(51859),
-  v = t(953478),
+  c = t(111360),
+  d = t(27237),
+  u = t(51859),
+  x = t(953478),
   p = t(460608),
   b = t(535396),
-  _ = t(730621),
-  m = t(388032),
-  h = t(518871);
-let j = [b.U.LEVEL, b.U.PERK];
+  v = t(730621),
+  j = t(388032),
+  m = t(518871);
+let h = [b.U.LEVEL, b.U.PERK];
 
-function f(e) {
+function _(e) {
   let {
     guildId: n
   } = e;
-  r.useEffect(() => {
-    (0, l.T7)(n, !0)
+  i.useEffect(() => {
+    (0, l.T7)(n)
   }, [n]);
-  let t = (0, o.e7)([d.Z], () => {
-    var e;
-    return null === (e = d.Z.getStateForGuild(n)) || void 0 === e ? void 0 : e.catalog
-  });
-  return null == t ? null : (0, i.jsxs)("div", {
-    className: h.container,
-    children: [(0, i.jsxs)(c.Z, {
+  let t = (0, c.Z)(n);
+  return null == t ? null : (0, r.jsxs)("div", {
+    className: m.container,
+    children: [(0, r.jsxs)(s.Z, {
       hideSearch: !0,
-      toolbar: (0, i.jsx)("div", {}),
-      children: [(0, i.jsx)(c.Z.Icon, {
-        icon: (0, a.GSL)(s.Z),
+      toolbar: (0, r.jsx)("div", {}),
+      children: [(0, r.jsx)(s.Z.Icon, {
+        icon: (0, o.GSL)(a.Z),
         disabled: !0,
         "aria-label": ""
-      }), (0, i.jsx)(c.Z.Title, {
-        children: m.NW.string(_.Z.yv3DJC)
-      }), (0, i.jsx)(c.Z.Divider, {})]
-    }), (0, i.jsxs)("div", {
-      className: h.contentContainer,
-      children: [(0, i.jsx)("div", {
-        className: h.powerupsContainer,
-        children: j.map(e => {
-          let o = t[e];
-          if (null != o) return (0, i.jsxs)(r.Fragment, {
-            children: [(0, i.jsxs)("div", {
-              className: h.powerupTextContainer,
-              children: [(0, i.jsx)(a.X6q, {
+      }), (0, r.jsx)(s.Z.Title, {
+        children: j.NW.string(v.Z.yv3DJC)
+      }), (0, r.jsx)(s.Z.Divider, {})]
+    }), (0, r.jsxs)("div", {
+      className: m.contentContainer,
+      children: [(0, r.jsx)("div", {
+        className: m.powerupsContainer,
+        children: h.map(e => {
+          let a = t[e];
+          if (null != a) return (0, r.jsxs)(i.Fragment, {
+            children: [(0, r.jsxs)("div", {
+              className: m.powerupTextContainer,
+              children: [(0, r.jsx)(o.X6q, {
                 variant: "heading-lg/semibold",
-                children: m.NW.string(_.Z["TXY/b2"])
-              }), (0, i.jsx)(a.Text, {
+                children: j.NW.string(v.Z["TXY/b2"])
+              }), (0, r.jsx)(o.Text, {
                 variant: "text-sm/medium",
-                children: m.NW.string(_.Z.aJv4PD)
+                children: j.NW.string(v.Z.aJv4PD)
               })]
-            }), (0, i.jsx)("div", {
-              className: h.powerupContainer,
-              children: o.map((e, t) => {
+            }), (0, r.jsx)("div", {
+              className: m.powerupContainer,
+              children: a.map((e, t) => {
                 switch (e.type) {
                   case b.U.LEVEL:
-                    return (0, i.jsx)(u.ZP, {
+                    return (0, r.jsx)(d.ZP, {
                       guildId: n,
                       index: t,
                       powerup: e,
-                      nextPowerup: o[t + 1]
+                      nextPowerup: a[t + 1]
                     }, "powerup-".concat(e.skuId));
                   case b.U.PERK:
-                    return (0, i.jsx)(x.Z, {
+                    return (0, r.jsx)(u.Z, {
                       guildId: n,
                       powerup: e
                     }, "powerup-".concat(e.skuId))
@@ -80,11 +76,11 @@ function f(e) {
             })]
           }, "section-".concat(e))
         })
-      }), (0, i.jsxs)("div", {
-        className: h.sidebarContainer,
-        children: [(0, i.jsx)(v.Z, {
+      }), (0, r.jsxs)("div", {
+        className: m.sidebarContainer,
+        children: [(0, r.jsx)(x.Z, {
           guildId: n
-        }), (0, i.jsx)(p.Z, {
+        }), (0, r.jsx)(p.Z, {
           guildId: n
         })]
       })]

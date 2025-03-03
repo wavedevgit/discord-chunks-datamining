@@ -6,7 +6,7 @@ n.d(t, {
   T7: () => _,
   Th: () => h,
   jd: () => d
-}), n(653041);
+});
 var r = n(544891),
   i = n(570140),
   o = n(823379),
@@ -31,13 +31,11 @@ function f() {
 
 function _(e, t) {
   if (!0 === t) {
+    let t = s.G.concat(s.W);
     i.Z.dispatch({
       type: "GUILD_POWERUPS_FETCH_SUCCESS",
       guildId: e,
-      catalog: {
-        [c.U.LEVEL]: s.G,
-        [c.U.PERK]: s.W
-      }
+      powerups: t.filter(o.lm).reduce((e, t) => (e[t.skuId] = t, e), {})
     });
     return
   }
@@ -50,11 +48,11 @@ function _(e, t) {
     oldFormErrors: !0,
     rejectWithError: !1
   }).then(t => {
-    let n = t.body.map(e => (0, l.Z)(e)).filter(o.lm).reduce((e, t) => (null == e[t.type] && (e[t.type] = []), e[t.type].push(t), e), {});
+    let n = t.body.map(e => (0, l.Z)(e)).filter(o.lm).reduce((e, t) => (e[t.skuId] = t, e), {});
     return i.Z.dispatch({
       type: "GUILD_POWERUPS_FETCH_SUCCESS",
       guildId: e,
-      catalog: n
+      powerups: n
     }), t.body
   })
 }

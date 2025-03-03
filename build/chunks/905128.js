@@ -47,13 +47,15 @@ function l(e, t) {
 let c = {};
 
 function u(e) {
+  var t, n;
   let {
-    guildId: t,
-    catalog: n
+    guildId: r,
+    powerups: i
   } = e;
   c = l(a({}, c), {
-    [t]: {
-      catalog: n
+    [r]: {
+      unlocked: null !== (n = null === (t = c[r]) || void 0 === t ? void 0 : t.unlocked) && void 0 !== n ? n : {},
+      powerups: i
     }
   })
 }

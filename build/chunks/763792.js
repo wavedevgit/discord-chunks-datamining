@@ -10,19 +10,19 @@ let i = [{
     skuId: "1",
     title: "Lorem ipsum",
     cost: 1,
-    active: !0
+    dependencies: []
   }, {
     type: r.U.LEVEL,
     skuId: "2",
     title: "Lorem ipsum",
     cost: 1,
-    active: !0
+    dependencies: ["1"]
   }, {
     type: r.U.LEVEL,
     skuId: "3",
     title: "Lorem ipsum",
     cost: 1,
-    active: !1
+    dependencies: ["2"]
   }],
   o = [{
     type: r.U.PERK,
@@ -31,7 +31,7 @@ let i = [{
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",
     cost: 1,
     bundle: !0,
-    active: !0
+    dependencies: []
   }, {
     type: r.U.PERK,
     skuId: "2",
@@ -39,7 +39,7 @@ let i = [{
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",
     cost: 1,
     bundle: !0,
-    active: !1
+    dependencies: []
   }, {
     type: r.U.PERK,
     skuId: "3",
@@ -47,7 +47,7 @@ let i = [{
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",
     cost: 1,
     bundle: !1,
-    active: !0
+    dependencies: []
   }, {
     type: r.U.PERK,
     skuId: "4",
@@ -55,5 +55,5 @@ let i = [{
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",
     cost: 1,
     bundle: !1,
-    active: !1
+    dependencies: []
   }]

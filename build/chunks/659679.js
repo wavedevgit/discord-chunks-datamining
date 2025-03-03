@@ -1,38 +1,38 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => v
+  Z: () => p
 });
-var i = t(200651),
-  r = t(192379),
+var r = t(200651),
+  i = t(192379),
   o = t(793030),
   a = t(442837),
   s = t(481060),
-  c = t(834129),
-  l = t(271383),
+  l = t(834129),
+  c = t(271383),
   d = t(709586),
   u = t(388032),
   x = t(652754);
 
-function v(e) {
+function p(e) {
   var n;
   let {
     boost: t
   } = e, {
-    username: v,
-    roleColor: p
-  } = (0, a.cj)([l.ZP], () => {
-    var e, n, i;
+    username: p,
+    roleColor: b
+  } = (0, a.cj)([c.ZP], () => {
+    var e, n, r;
     return {
-      username: null !== (i = l.ZP.getNick(t.guildId, t.userId)) && void 0 !== i ? i : null === (e = t.user) || void 0 === e ? void 0 : e.username,
-      roleColor: null === (n = l.ZP.getMember(t.guildId, t.userId)) || void 0 === n ? void 0 : n.colorString
+      username: null !== (r = c.ZP.getNick(t.guildId, t.userId)) && void 0 !== r ? r : null === (e = t.user) || void 0 === e ? void 0 : e.username,
+      roleColor: null === (n = c.ZP.getMember(t.guildId, t.userId)) || void 0 === n ? void 0 : n.colorString
     }
-  }, [t]), b = r.useCallback(() => (0, i.jsx)(s.PUh, {
-    name: v,
-    color: null != p ? p : void 0
-  }), [v, p]);
-  return (0, i.jsx)(c.Z, {
+  }, [t]), v = i.useCallback(() => (0, r.jsx)(s.PUh, {
+    name: p,
+    color: null != b ? b : void 0
+  }), [p, b]);
+  return (0, r.jsx)(l.Z, {
     className: x.textContainer,
-    iconNode: (0, i.jsx)(d.Z, {
+    iconNode: (0, r.jsx)(d.Z, {
       className: x.icon,
       width: 16,
       height: 16
@@ -40,11 +40,11 @@ function v(e) {
     iconContainerClassName: x.iconContainer,
     timestamp: null !== (n = t.endsAt) && void 0 !== n ? n : void 0,
     compact: !0,
-    children: (0, i.jsx)(o.xv, {
+    children: (0, r.jsx)(o.xv, {
       variant: "text-md/semibold",
       children: u.NW.format(u.t["57St//"], {
-        username: v,
-        usernameHook: b
+        username: p,
+        usernameHook: v
       })
     })
   })
