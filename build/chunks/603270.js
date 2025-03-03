@@ -102,7 +102,7 @@ let T = w(function(e) {
       appId: d,
       skuId: h,
       message: v
-    } = e, [O, T, P, w, Z, k, R, D] = (0, a.Wu)([g.Z, _.Z, f.Z, m.Z, c.Z], () => {
+    } = e, [O, T, P, w, Z, k, R, L] = (0, a.Wu)([g.Z, _.Z, f.Z, m.Z, c.Z], () => {
       var e, t, n, r;
       let i = null === (e = m.Z.getBasicChannel(v.channel_id)) || void 0 === e ? void 0 : e.guild_id,
         a = g.Z.get(h),
@@ -112,7 +112,7 @@ let T = w(function(e) {
         u = f.Z.getForSKU(h),
         p = (null == a ? void 0 : a.applicationId) === d;
       return [p ? a : null, p ? l : null, _.Z.getForSKU(h), g.Z.isFetching(h), g.Z.didFetchingSkuFail(h), u.length > 0 ? u[0] : null, i, s]
-    }, [d, v.channel_id, h]), L = (0, E.R)(null !== (l = null == T ? void 0 : T.id) && void 0 !== l ? l : "");
+    }, [d, v.channel_id, h]), D = (0, E.R)(null !== (l = null == T ? void 0 : T.id) && void 0 !== l ? l : "");
     i.useEffect(() => {
       null != O || w || Z || (0, s.km)(h)
     }, [Z, w, O, h]), i.useEffect(() => {
@@ -126,7 +126,7 @@ let T = w(function(e) {
         skuId: h,
         initialSubscribeForGuild: R
       });
-    if (!L || null == T || null == O) return null;
+    if (!D || null == T || null == O) return null;
     let U = O.type === N.epS.SUBSCRIPTION,
       B = !!U && (0, u.KW)(O.flags),
       G = () => {
@@ -197,7 +197,7 @@ let T = w(function(e) {
       onLinkCopy: () => {
         (0, x.X)(T.id, x.B.SKU_EMBED, h)
       },
-      iconSrc: D,
+      iconSrc: L,
       onIconClick: () => {
         G(), b.default.track(N.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
           application_id: T.id,

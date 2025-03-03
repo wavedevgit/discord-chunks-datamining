@@ -22,8 +22,8 @@ var i = n(200651),
   A = n(197712),
   w = n(511004),
   O = n(486324),
-  D = n(981631),
-  y = n(678916),
+  y = n(981631),
+  D = n(678916),
   b = n(388032),
   N = n(126847);
 
@@ -80,12 +80,12 @@ function v(e) {
   return (0, l.EQ)(e).with(O.pC.BANNER, () => ({
     height: O.f,
     width: O.L0
-  })).with(O.pC.VIDEO_BACKGROUND, () => y.HE).with(O.pC.AVATAR, () => ({
-    height: D.dGM,
-    width: D.dGM
+  })).with(O.pC.VIDEO_BACKGROUND, () => D.HE).with(O.pC.AVATAR, () => ({
+    height: y.dGM,
+    width: y.dGM
   })).with(O.pC.AVATAR_DECORATION, () => ({
-    height: D.dGM,
-    width: D.dGM
+    height: y.dGM,
+    width: y.dGM
   })).with(O.pC.GUILD_BANNER, () => ({
     height: O._T,
     width: O.X_
@@ -197,7 +197,7 @@ function S(e) {
     originalAsset: a,
     transitionState: l,
     onCrop: R,
-    onClose: y,
+    onClose: D,
     uploadType: M = O.pC.AVATAR,
     showUpsellHeader: S = !1,
     analyticsPage: j
@@ -216,14 +216,15 @@ function S(e) {
   r.useEffect(() => {
     (0, w.Z)()
   }, []), r.useEffect(() => {
-    en && S && C.default.track(D.rMx.OPEN_MODAL, {
-      type: D.jXE.CROP_GIF_MODAL,
+    en && S && C.default.track(y.rMx.OPEN_MODAL, {
+      type: y.jXE.CROP_GIF_MODAL,
       location: {
         page: j
       },
-      location_stack: ee
+      location_stack: ee,
+      upload_type: M
     })
-  }, [S, j, en, ee]);
+  }, [S, j, en, ee, M]);
   let ei = r.useCallback((e, t, n, i) => {
       B.current = (0, A.U$)(e, t, n), null != P.current && (P.current.style.transform = "translate3d(".concat(B.current.x, "px, ").concat(B.current.y, "px, 0) rotate(").concat(i, "deg)"))
     }, [P]),
@@ -418,15 +419,15 @@ function S(e) {
         imageUri: e,
         file: t,
         originalAsset: a
-      }), $(!1), y()
-    }, [H, t, Y, W, en, y, R, a, M]),
+      }), $(!1), D()
+    }, [H, t, Y, W, en, D, R, a, M]),
     ep = r.useCallback(() => {
       if (null != z.current) {
         z.current(), z.current = null, $(!1);
         return
       }
-      y()
-    }, [y]);
+      D()
+    }, [D]);
   r.useEffect(() => (window.addEventListener("mouseup", es), window.addEventListener("resize", er), () => {
     window.removeEventListener("mouseup", es), window.removeEventListener("resize", er)
   }), [er, es]), r.useEffect(() => {
@@ -448,7 +449,7 @@ function S(e) {
       children: [S && !ef && (0, i.jsx)(h.Z, {
         type: M,
         analyticsPage: j,
-        analyticsSection: D.jXE.CROP_GIF_MODAL,
+        analyticsSection: y.jXE.CROP_GIF_MODAL,
         isGIF: en,
         banner: n
       }), (0, i.jsxs)(u.xBx, {
@@ -458,7 +459,7 @@ function S(e) {
           variant: "heading-lg/semibold",
           children: b.NW.string(b.t.DxAYCA)
         }), (0, i.jsx)(u.olH, {
-          onClick: y,
+          onClick: D,
           className: N.modalCloseButton
         })]
       }), (0, i.jsxs)(u.hzk, {

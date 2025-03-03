@@ -70,8 +70,8 @@ let w = i.memo(function(e) {
     onContextMenu: Z,
     onClick: k,
     hideSimpleEmbedContent: R = !0,
-    channel: D,
-    isGroupStart: L,
+    channel: L,
+    isGroupStart: D,
     animateAvatar: M,
     subscribeToComponentDispatch: W,
     renderThreadAccessory: F,
@@ -90,7 +90,7 @@ let w = i.memo(function(e) {
       for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), G = i.type === S.uaV.POLL_RESULT || null !== (t = e.disableInteraction) && void 0 !== t && t, H = i.isFirstMessageInForumPost(D), V = (0, d.A)((null !== (n = i.editedTimestamp) && void 0 !== n ? n : i.timestamp).valueOf()), {
+  }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), G = i.type === S.uaV.POLL_RESULT || null !== (t = e.disableInteraction) && void 0 !== t && t, H = i.isFirstMessageInForumPost(L), V = (0, d.A)((null !== (n = i.editedTimestamp) && void 0 !== n ? n : i.timestamp).valueOf()), {
     content: z,
     hasSpoilerEmbeds: K
   } = (0, y.Z)(i, {
@@ -100,11 +100,11 @@ let w = i.memo(function(e) {
     allowLinks: !0,
     previewLinkTarget: !0
   }), Y = i.type === S.uaV.REPLY ? i.messageReference : void 0, X = (0, s.e7)([u.Z], () => u.Z.getMessageByReference(Y)), q = (0, l.JA)(i.id), Q = (0, _.ZP)(i), J = (0, s.e7)([p.Z], () => i.hasFlag(S.iLy.HAS_THREAD) && p.Z.getChannel(f.default.castMessageIdAsChannelId(i.id))), $ = (0, c.p9)({
-    guildId: D.guild_id,
+    guildId: L.guild_id,
     roleId: Q.iconRoleId
-  }), ee = (0, s.e7)([m.Z], () => m.Z.can(S.Plq.CREATE_INSTANT_INVITE, D)), et = (0, x.Z)({
+  }), ee = (0, s.e7)([m.Z], () => m.Z.can(S.Plq.CREATE_INSTANT_INVITE, L)), et = (0, x.Z)({
     message: i,
-    channel: D,
+    channel: L,
     enabled: U
   });
   if ((0, g.Z)(i, ee)) return null;
@@ -117,10 +117,10 @@ let w = i.memo(function(e) {
       [T.disableInteraction]: G
     }),
     disableInteraction: G,
-    childrenRepliedMessage: (0, I.Z)(i, D, Y, X, a),
-    childrenExecutedCommand: (0, C.Z)(i, D, a),
+    childrenRepliedMessage: (0, I.Z)(i, L, Y, X, a),
+    childrenExecutedCommand: (0, C.Z)(i, L, a),
     childrenHeader: (0, j.Z)(A(P({}, e), {
-      guildId: D.guild_id,
+      guildId: L.guild_id,
       author: Q,
       roleIcon: $
     })),

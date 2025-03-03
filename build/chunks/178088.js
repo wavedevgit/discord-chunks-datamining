@@ -46,8 +46,8 @@ function I(e) {
       t.currentTab = e
     }, h.fy.FREQUENT_USER_ACTION)
   }, [])], {
-    showTutorial: D,
-    setSeenTutorial: L
+    showTutorial: L,
+    setSeenTutorial: D
   } = function(e) {
     let t = (0, o.e7)([g.Z], () => {
         var e, t;
@@ -133,8 +133,8 @@ function I(e) {
             children: (0, r.jsx)(E.Z, {
               setTab: R,
               onJump: V,
-              showTutorial: D,
-              setSeenTutorial: L,
+              showTutorial: L,
+              setSeenTutorial: D,
               closePopout: M,
               badgeState: S
             })

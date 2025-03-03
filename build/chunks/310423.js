@@ -81,9 +81,9 @@ let S = i.memo(function(e) {
     } = (0, d.ZP)(),
     {
       onCopy: R,
-      copyRef: D
+      copyRef: L
     } = (0, u.Z)(A, null == Z ? void 0 : null === (t = Z.application_command) || void 0 === t ? void 0 : t.id),
-    L = (0, l.e7)([g.Z], () => g.Z.getGuild(A.guild_id), [A.guild_id]);
+    D = (0, l.e7)([g.Z], () => g.Z.getGuild(A.guild_id), [A.guild_id]);
   if (i.useEffect(() => {
       (null == Z || Z.type === c.yU.CHAT && void 0 === Z.application_command) && p.OG(A.id, w)
     }, [A.id, w, Z]), null == Z) P = (0, r.jsx)(s.$jN, {
@@ -123,7 +123,7 @@ let S = i.memo(function(e) {
         }));
         return t
       }
-      let D = S.value;
+      let L = S.value;
       if (null != S.value) switch (S.type) {
         case c.jw.USER: {
           let e = S.value.toString(),
@@ -191,10 +191,10 @@ let S = i.memo(function(e) {
           break;
         default: {
           let e = null == Z ? void 0 : null === (d = Z.choices) || void 0 === d ? void 0 : d.find(e => e.value === S.value);
-          null != e && (D = null !== (u = e.name_localized) && void 0 !== u ? u : e.name)
+          null != e && (L = null !== (u = e.name_localized) && void 0 !== u ? u : e.name)
         }
       }
-      return null == O && (O = I(null == D ? void 0 : D.toString())), [(0, r.jsxs)(i.Fragment, {
+      return null == O && (O = I(null == L ? void 0 : L.toString())), [(0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsxs)(s.Text, j(E({}, N), {
           children: [" ", null !== (p = null == Z ? void 0 : Z.name_localized) && void 0 !== p ? p : S.name, ": "]
         })), O]
@@ -202,7 +202,7 @@ let S = i.memo(function(e) {
     }({
       option: n,
       channel: A,
-      guild: L,
+      guild: D,
       messageId: w,
       parentOptionKey: null,
       commandOptionSpec: t[n.name],
@@ -223,7 +223,7 @@ let S = i.memo(function(e) {
     },
     children: [(0, r.jsx)("div", {
       className: O.tooltip,
-      ref: D,
+      ref: L,
       children: P
     }), (0, r.jsx)("div", {
       className: O.tooltipPointer

@@ -49,7 +49,7 @@ let g = i.memo(function(e) {
       } = P, a = null !== (R = (0, l.wK)(null != r ? r : "", i)) && void 0 !== R ? R : "";
       T && (k.borderColor = r), k.background = a, t = e, n = e
     }
-    let D = {
+    let L = {
       minWidth: Z,
       color: t,
       borderColor: n
@@ -70,7 +70,7 @@ let g = i.memo(function(e) {
         animated: S && c.animated
       }), (0, r.jsx)("div", {
         className: A.reactionCount,
-        style: D,
+        style: L,
         children: w
       })]
     })

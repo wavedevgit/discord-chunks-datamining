@@ -52,23 +52,25 @@ function S(e) {
     query: P
   } = e, A = (0, y.S)(), w = (0, u.e7)([g.default], () => (0, b.I5)(g.default.getCurrentUser())), {
     voicesById: Z,
-    isNativeModuleLoading: k,
-    showFailure: R,
+    isNativeModuleLoaded: k,
+    isNativeModuleLoading: R,
+    showFailure: L,
     catalogLastFetchTime: D
   } = (0, u.cj)([v.Z], () => ({
     voicesById: v.Z.getVoiceFilters(),
+    isNativeModuleLoaded: v.Z.isNativeModuleLoaded(),
     isNativeModuleLoading: v.Z.isNativeModuleLoading(),
     showFailure: v.Z.showFailure(),
     catalogLastFetchTime: v.Z.getCatalogLastFetchTime()
-  })), L = (0, u.cj)([v.Z], () => v.Z.getSortedVoiceFilters()), M = w ? Object.values(Z) : L, W = i.useMemo(() => {
+  })), M = (0, u.cj)([v.Z], () => v.Z.getSortedVoiceFilters()), W = w ? Object.values(Z) : M, F = i.useMemo(() => {
     let e = (0, d._I)(P.toLowerCase());
-    return ["" === e ? M : M.filter(t => {
+    return ["" === e ? W : W.filter(t => {
       let {
         id: n
       } = t;
       return s()(e, (0, d._I)(E.NW.string(A[n].name).toLowerCase()))
     })]
-  }, [M, P, A]), F = i.useCallback(e => Math.ceil(e / n), [n]), U = i.useCallback(e => {
+  }, [W, P, A]), U = i.useCallback(e => Math.ceil(e / n), [n]), B = i.useCallback(e => {
     let {
       sectionIndex: t,
       sectionRowIndex: i
@@ -76,7 +78,7 @@ function S(e) {
     return (0, r.jsx)(T, {
       children: (0, c.range)(0, n).map(e => ({
         column: e,
-        voice: W[t][i * n + e]
+        voice: F[t][i * n + e]
       })).filter(e => {
         let {
           voice: t
@@ -91,7 +93,7 @@ function S(e) {
           voiceFilter: o,
           hasNitro: w,
           analyticsContext: {
-            gridRows: F(W[t].length),
+            gridRows: U(F[t].length),
             gridColumns: n,
             interactedRow: i,
             interactedColumn: a
@@ -99,8 +101,8 @@ function S(e) {
         }, null == o ? void 0 : o.id)
       })
     }, i)
-  }, [n, W, w, F]);
-  return P && (null == W ? void 0 : null === (t = W[0]) || void 0 === t ? void 0 : t.length) === 0 ? (0, r.jsxs)("div", {
+  }, [n, F, w, U]);
+  return P && (null == F ? void 0 : null === (t = F[0]) || void 0 === t ? void 0 : t.length) === 0 ? (0, r.jsxs)("div", {
     className: o()(j.iconMessage),
     children: [(0, r.jsx)(m._, {
       width: 40,
@@ -112,7 +114,7 @@ function S(e) {
       color: "header-muted",
       children: E.NW.string(E.t.ZzukHh)
     })]
-  }) : R ? (0, r.jsxs)("div", {
+  }) : L ? (0, r.jsxs)("div", {
     className: o()(j.iconMessage),
     children: [(0, r.jsx)(I, {}), (0, r.jsx)(f.X6q, {
       variant: "heading-md/normal",
@@ -122,10 +124,10 @@ function S(e) {
       variant: "text-sm/normal",
       color: "header-muted",
       children: E.NW.format(E.t["5afO9f"], {
-        onClick: x.r5
+        onClick: k ? x.wV : x.r5
       })
     })]
-  }) : k || null == D ? (0, r.jsx)("div", {
+  }) : R || null == D ? (0, r.jsx)("div", {
     className: o()(j.loading),
     children: (0, r.jsx)(f.$jN, {
       type: f.$jN.Type.CHASING_DOTS,
@@ -136,7 +138,7 @@ function S(e) {
     className: o()(j.container, {
       [j.hasHeaders]: S
     }),
-    renderRow: (e, t) => U(t),
+    renderRow: (e, t) => B(t),
     renderSectionHeader: !1 === S ? void 0 : e => (0, r.jsx)(f.Text, {
       variant: "text-sm/medium",
       color: "header-muted",
@@ -144,8 +146,8 @@ function S(e) {
       children: E.NW.string(C[e])
     }),
     sectionHeaderHeight: !1 === S ? void 0 : e => N[e],
-    rowCountBySection: W.map(e => F(e.length)),
-    rowCount: F((0, c.sumBy)(W, e => e.length)),
+    rowCountBySection: F.map(e => U(e.length)),
+    rowCount: U((0, c.sumBy)(F, e => e.length)),
     rowHeight: 130,
     onScroll: a,
     ref: l,

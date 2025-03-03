@@ -35,8 +35,8 @@ var r = n(200651),
   Z = n(834129),
   k = n(981631),
   R = n(388032),
-  D = n(84430),
-  L = n(260346);
+  L = n(84430),
+  D = n(260346);
 
 function M(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -76,7 +76,7 @@ let F = i.memo(function e(t) {
     channel: a,
     message: s,
     compact: Z = !1,
-    className: D,
+    className: L,
     onContextMenu: F,
     onClick: B,
     disableInteraction: G = !1,
@@ -103,16 +103,16 @@ let F = i.memo(function e(t) {
     channel: Y,
     hasThread: !1
   })) : (g.Z.isBlockedForMessage(s) ? i = R.t["+FcYMz"] : g.Z.isIgnoredForMessage(s) ? i = R.t.VFWjc3 : (0, y.DQ)(s) && V && (i = R.t.xfkfTE), void 0 !== i) ? (0, r.jsx)(U, {
-    className: D,
+    className: L,
     compact: Z,
     count: 1,
     collapsedReason: i
   }) : (0, r.jsx)(j.Z, {
     compact: Z,
-    className: o()(D, {
-      [L.ephemeral]: (0, v.Pv)(s),
-      [L.disableInteraction]: G,
-      [L.groupStart]: t.isGroupStart
+    className: o()(L, {
+      [D.ephemeral]: (0, v.Pv)(s),
+      [D.disableInteraction]: G,
+      [D.groupStart]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, w.Z)(s, a, z, K, Z),
     childrenHeader: (0, T.Z)(W(M({}, t), {
@@ -168,14 +168,14 @@ function U(e) {
     role: "group",
     childrenMessageContent: (0, r.jsx)(Z.Z, {
       compact: i,
-      className: D.blockedSystemMessage,
+      className: L.blockedSystemMessage,
       iconNode: (0, r.jsx)(s.Dio, {
         size: "md",
         color: "currentColor",
-        className: D.blockedIcon
+        className: L.blockedIcon
       }),
       children: (0, r.jsx)("div", {
-        className: D.blockedMessageText,
+        className: L.blockedMessageText,
         children: R.NW.format(a, {
           count: n
         })

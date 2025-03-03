@@ -49,21 +49,21 @@ function u(e) {
 }
 
 function d(e) {
-  var t, n, r;
+  var t, n, r, i;
   return {
     id: e.id,
     name: e.name,
-    description: e.description,
+    description: null !== (t = e.description) && void 0 !== t ? t : "",
     icon: e.icon_hash,
     customBanner: e.custom_banner_hash,
     onlineCount: e.online_count,
     memberCount: e.member_count,
     brandColorPrimary: e.brand_color_primary,
     visibility: e.visibility,
-    traits: c(e.id, null !== (t = e.traits) && void 0 !== t ? t : []),
-    gameApplicationIds: null !== (n = e.game_application_ids) && void 0 !== n ? n : [],
+    traits: c(e.id, null !== (n = e.traits) && void 0 !== n ? n : []),
+    gameApplicationIds: null !== (r = e.game_application_ids) && void 0 !== r ? r : [],
     gameActivity: u(e.game_activity),
-    features: null !== (r = e.features) && void 0 !== r ? r : []
+    features: null !== (i = e.features) && void 0 !== i ? i : []
   }
 }
 

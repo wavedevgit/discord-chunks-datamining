@@ -36,8 +36,8 @@ var r, i, a = n(192379),
   Z = n(9156),
   k = n(70956),
   R = n(823379),
-  D = n(709054),
-  L = n(981631),
+  L = n(709054),
+  D = n(981631),
   M = n(124368);
 
 function W(e, t, n) {
@@ -116,7 +116,7 @@ class V extends o.EventEmitter {
     p.Z.clearChannel(e.channelId);
     let t = p.Z.fetchMessages({
       channelId: e.channelId,
-      limit: L.AQB,
+      limit: D.AQB,
       jump: {
         messageId: e.oldestReadMessageId,
         flash: !0
@@ -177,7 +177,7 @@ class V extends o.EventEmitter {
         newestUnreadMessageId: n
       } = e;
       u.Z.wait(() => m.In(t, !0, void 0, n, {
-        section: L.jXE.INBOX
+        section: D.jXE.INBOX
       }));
       let r = this.state.channels.find(e => e.channelId === t);
       if (null != r && this.undoStack.push(r), 1 === this.state.channels.length) {
@@ -194,7 +194,7 @@ class V extends o.EventEmitter {
       let e = this.undoStack.pop();
       if (null == e) return;
       m.In(e.channelId, !0, void 0, e.oldestReadMessageId, {
-        section: L.jXE.INBOX
+        section: D.jXE.INBOX
       });
       let t = this.state.channels.findIndex(t => t.order > e.order),
         n = [...this.state.channels];
@@ -203,7 +203,7 @@ class V extends o.EventEmitter {
         channels: n
       })
     }, this.markGuildRead = e => {
-      u.Z.wait(() => (0, g.Z)([e], L.jXE.INBOX)), this.setState({
+      u.Z.wait(() => (0, g.Z)([e], D.jXE.INBOX)), this.setState({
         channels: this.state.channels.filter(t => t.guildId !== e)
       }), this.maybeLoadMore()
     }, this.deleteChannel = e => {
@@ -270,11 +270,11 @@ function z(e, t) {
   var n;
   let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     i = T.Z.getMessages(e.channelId),
-    a = i.toArray().filter(t => D.default.compare(t.id, e.oldestReadMessageId) > 0 && 0 >= D.default.compare(t.id, e.newestUnreadMessageId));
+    a = i.toArray().filter(t => L.default.compare(t.id, e.oldestReadMessageId) > 0 && 0 >= L.default.compare(t.id, e.newestUnreadMessageId));
   if (a.length === e.messages.length && a.every((t, n) => e.messages[n] === t) && r) return e;
   let o = null != i.getAfter(e.oldestReadMessageId) || (null === (n = a[0]) || void 0 === n ? void 0 : n.id) === e.oldestUnreadMessageId,
     l = a[a.length - 1],
-    s = D.default.compare(null == l ? void 0 : l.id, e.newestUnreadMessageId) >= 0 || a.length >= H;
+    s = L.default.compare(null == l ? void 0 : l.id, e.newestUnreadMessageId) >= 0 || a.length >= H;
   return U(F({}, e), {
     messages: a,
     hasLoadedAnything: e.hasLoadedAnything || o || t,
@@ -328,18 +328,18 @@ function Y(e, t, n, r) {
   if (i.isPrivate()) {
     if (0 === A.ZP.getMentionCount(r)) return
   } else if (!(0, _.d)(i) && 0 === A.ZP.getMentionCount(r)) return;
-  if (!i.isPrivate() && !P.Z.can(L.Plq.READ_MESSAGE_HISTORY, i)) return;
+  if (!i.isPrivate() && !P.Z.can(D.Plq.READ_MESSAGE_HISTORY, i)) return;
   let a = A.ZP.ackMessageId(r);
   if (null == a) {
     let e = S.Z.getGuild(i.guild_id);
     if (null == e || null == e.joinedAt) return;
-    a = D.default.fromTimestamp(e.joinedAt.getTime())
+    a = L.default.fromTimestamp(e.joinedAt.getTime())
   }
   let o = A.ZP.getOldestUnreadMessageId(r),
     l = A.ZP.lastMessageId(r),
     s = A.ZP.getMentionCount(r),
     c = s > 0 || i.isPrivate();
-  if (null == l || D.default.compare(a, l) >= 0) return;
+  if (null == l || L.default.compare(a, l) >= 0) return;
   let d = {
     guildId: n,
     channelId: r,
@@ -359,7 +359,7 @@ function Y(e, t, n, r) {
       if (r.isPrivate()) return 1;
       if (A.ZP.getMentionCount(t) > 0) return A.ZP.getIsMentionLowImportance(t) ? 3 : 2;
       if (null != n) {
-        let e = D.default.extractTimestamp(n);
+        let e = L.default.extractTimestamp(n);
         if (Date.now() - e > q) return 8;
         if (Date.now() - e > X) return 6
       }
@@ -368,8 +368,8 @@ function Y(e, t, n, r) {
         return e === M.iN.ALL_MESSAGES ? 4 : e === M.iN.NO_MESSAGES ? 7 : 5
       } {
         let n = Z.ZP.getChannelMessageNotifications(e, t),
-          r = n === L.bL.NULL ? Z.ZP.getMessageNotifications(e) : n;
-        return r === L.bL.ALL_MESSAGES ? 4 : r === L.bL.NO_MESSAGES ? 7 : 5
+          r = n === D.bL.NULL ? Z.ZP.getMessageNotifications(e) : n;
+        return r === D.bL.ALL_MESSAGES ? 4 : r === D.bL.NO_MESSAGES ? 7 : 5
       }
     }(n, r, l),
     order: 0

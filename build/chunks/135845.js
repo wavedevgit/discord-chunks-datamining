@@ -45,8 +45,8 @@ function x(e) {
   } = x;
   o()(Z === b.Iq.STREAM && null != k, "invalid streaming invite");
   let R = O === k.id,
-    D = x.state === _.r2o.ACCEPTING,
-    L = i.useCallback(() => {
+    L = x.state === _.r2o.ACCEPTING,
+    D = i.useCallback(() => {
       let e = "noop";
       A ? (j(), e = "transition") : (N(), e = "accept"), (0, s.r$)(x, e, P)
     }, [x, P, A, j, N]),
@@ -74,16 +74,16 @@ function x(e) {
         className: y.headerLine,
         children: [(0, r.jsx)(u.Z.Icon, {
           guild: E,
-          onClick: M && w ? L : void 0
+          onClick: M && w ? D : void 0
         }), (0, r.jsx)(u.Z.Info, {
           title: a,
-          onClick: M && w ? L : void 0,
+          onClick: M && w ? D : void 0,
           children: F
         })]
       }), w ? (0, r.jsx)(u.Z.Button, {
         disabled: M && !w,
-        onClick: L,
-        submitting: D,
+        onClick: D,
+        submitting: L,
         isDisabled: A && w,
         color: n,
         children: t

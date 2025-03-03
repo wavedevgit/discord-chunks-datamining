@@ -65,12 +65,12 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = (e, t) => t ? A.NW.format(A.t.auckX1, {
+let L = (e, t) => t ? A.NW.format(A.t.auckX1, {
     stickerPackName: e.name
   }) : A.NW.format(A.t.OzB6e3, {
     stickerPackName: e.name
   }),
-  L = e => {
+  D = e => {
     let {
       sticker: t,
       stickerPack: n
@@ -118,7 +118,7 @@ let F = e => {
       sticker: n,
       channel: a,
       refreshPositionKey: o
-    } = e, [c, d, p] = (0, l.Wu)([N.Z], () => [N.Z.getStickerPack(n.pack_id), !N.Z.hasLoadedStickerPacks, N.Z.isPremiumPack(n.pack_id)], [n]), m = L({
+    } = e, [c, d, p] = (0, l.Wu)([N.Z], () => [N.Z.getStickerPack(n.pack_id), !N.Z.hasLoadedStickerPacks, N.Z.isPremiumPack(n.pack_id)], [n]), m = D({
       sticker: n,
       stickerPack: c
     });
@@ -154,7 +154,7 @@ let F = e => {
         children: n.name
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: D(c, p)
+        children: L(c, p)
       }), (0, r.jsx)("ul", {
         className: w.stickersList,
         children: m.map(e => (0, r.jsx)(I.ZP, {
@@ -187,8 +187,8 @@ let F = e => {
       } = e,
       [j, N] = i.useState(null),
       [C, S] = i.useState(!1),
-      D = x.default.getCurrentUser(),
-      L = E.ZP.canUseCustomStickersEverywhere(D),
+      L = x.default.getCurrentUser(),
+      D = E.ZP.canUseCustomStickersEverywhere(L),
       F = (0, l.e7)([y.Z], () => y.Z.getGuild(n.guild_id)),
       U = null != F,
       [B, G] = i.useState(!1),
@@ -221,12 +221,12 @@ let F = e => {
       Q = null != j,
       J = !1,
       $ = "Custom Sticker Popout";
-    L ? t = U ? q ? A.NW.string(A.t.fZ0DiI) : A.NW.string(A.t["1f6D9v"]) : Q ? A.NW.string(A.t.yHmoR0) : A.NW.string(A.t.vZaScH) : U ? (t = q ? A.NW.string(A.t.jNphpq) : A.NW.string(A.t.lyD5ZW), J = !0, $ = "Custom Sticker Popout (Upsell)") : Q ? (t = A.NW.string(A.t.IuXYcn), J = !0, $ = "Custom Sticker Popout (Upsell)") : (t = A.NW.format(A.t.hGWuxc, {
+    D ? t = U ? q ? A.NW.string(A.t.fZ0DiI) : A.NW.string(A.t["1f6D9v"]) : Q ? A.NW.string(A.t.yHmoR0) : A.NW.string(A.t.vZaScH) : U ? (t = q ? A.NW.string(A.t.jNphpq) : A.NW.string(A.t.lyD5ZW), J = !0, $ = "Custom Sticker Popout (Upsell)") : Q ? (t = A.NW.string(A.t.IuXYcn), J = !0, $ = "Custom Sticker Popout (Upsell)") : (t = A.NW.format(A.t.hGWuxc, {
       openPremiumSettings: () => {
         M(a), m()
       }
     }), $ = "Custom Sticker Popout (Soft Upsell)");
-    let ee = !J && !U && Q && L;
+    let ee = !J && !U && Q && D;
     return (i.useEffect(() => {
       let {
         refreshPositionKey: e

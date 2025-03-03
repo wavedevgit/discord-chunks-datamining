@@ -320,9 +320,10 @@ function W(e) {
     }), C.default.track(P.rMx.OPEN_MODAL, {
       type: P.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location: E,
-      location_stack: q
+      location_stack: q,
+      upload_type: d
     })
-  }, [G, E, q]);
+  }, [G, E, q, d]);
   let Q = h && V,
     ee = d === w.pC.AVATAR && X;
   return (0, r.jsxs)(s.Y0X, {

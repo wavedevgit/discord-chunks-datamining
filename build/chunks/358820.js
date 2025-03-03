@@ -170,7 +170,7 @@ async function N() {
         state: h.O.LOADING
       }), await f.ZP.ensureModule("discord_voice_filters");
       let t = f.ZP.getVoiceFilters();
-      await t.setupResources(), a.Z.dispatch({
+      await t.setupResources(), await a.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
         state: h.O.LOADED
       }), await I();

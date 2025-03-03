@@ -93,28 +93,27 @@ function I(e) {
 
 function C(e) {
   let {
-    disambiguateGameRelationships: t,
-    isGameRelationship: n,
-    applicationId: o,
-    userTag: s
-  } = e, p = i.useMemo(() => t ? n ? N.NW.string(N.t.ujfP6e) : N.NW.string(N.t.yltuhY) : s, [t, n, s]), h = (0, l.e7)([c.Z], () => null != o ? c.Z.getApplication(o) : null);
+    isGameRelationship: t,
+    applicationId: n,
+    userTag: o
+  } = e, s = i.useMemo(() => t ? N.NW.string(N.t["Uv/eT0"]) : o, [t, o]), p = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
   return (0, r.jsxs)("div", {
     className: v.applicationSublabel,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      children: p
-    }), null != h && (0, r.jsxs)(r.Fragment, {
+      children: s
+    }), null != p && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.Z, {
         height: 2,
         width: 2
       }), (0, r.jsx)(u.Z, {
-        game: h,
+        game: p,
         size: u.Z.Sizes.XXSMALL
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: h.name
+        children: p.name
       })]
     })]
   })
@@ -125,20 +124,18 @@ function S(e) {
     user: t,
     hovered: n,
     status: i,
-    disambiguateGameRelationships: l,
-    isGameRelationship: o,
-    applicationId: a
-  } = e, s = g.ZP.useUserTag(t);
+    isGameRelationship: l,
+    applicationId: o
+  } = e, a = g.ZP.useUserTag(t);
   return (0, r.jsx)(E.Z, {
     user: t,
     hovered: n,
     status: i,
-    showAccountIdentifier: !!l && !o,
+    showAccountIdentifier: !l,
     subText: (0, r.jsx)(C, {
-      disambiguateGameRelationships: l,
-      isGameRelationship: o,
-      applicationId: a,
-      userTag: s
+      isGameRelationship: l,
+      applicationId: o,
+      userTag: a
     })
   })
 }
@@ -150,39 +147,37 @@ function T(e) {
     status: l,
     isFocused: o,
     applicationId: a,
-    disambiguateGameRelationships: c,
-    isGameRelationship: u
-  } = e, d = i.useContext(f.AnalyticsContext), {
-    analyticsLocations: h
-  } = (0, s.ZP)(), g = l === O.Skl.OFFLINE ? O.Skl.UNKNOWN : l, m = i.useCallback(() => (0, p.openUserProfileModal)({
+    isGameRelationship: c
+  } = e, u = i.useContext(f.AnalyticsContext), {
+    analyticsLocations: d
+  } = (0, s.ZP)(), h = l === O.Skl.OFFLINE ? O.Skl.UNKNOWN : l, g = i.useCallback(() => (0, p.openUserProfileModal)({
     userId: t.id,
-    sourceAnalyticsLocations: h,
-    analyticsLocation: d.location
-  }), [d.location, h, t.id]);
+    sourceAnalyticsLocations: d,
+    analyticsLocation: u.location
+  }), [u.location, d, t.id]);
   return (0, r.jsx)(_.Z, {
     isFocused: o,
     user: t,
-    onClick: m,
+    onClick: g,
     children: e => (0, r.jsxs)("div", {
       className: v.listItemContents,
       children: [(0, r.jsx)(S, {
         user: t,
         hovered: e,
-        status: g,
-        disambiguateGameRelationships: c,
-        isGameRelationship: u,
+        status: h,
+        isGameRelationship: c,
         applicationId: a
       }), (0, r.jsx)("div", {
         className: v.actions,
         children: n === O.OGo.PENDING_INCOMING ? (0, r.jsx)(y, {
           user: t,
           applicationId: a,
-          isGameRelationship: u,
+          isGameRelationship: c,
           active: e
         }) : (0, r.jsx)(I, {
           userId: t.id,
           applicationId: a,
-          isGameRelationship: u,
+          isGameRelationship: c,
           active: e
         })
       })]

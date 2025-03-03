@@ -35,8 +35,8 @@ var r = n(200651),
   Z = n(506071),
   k = n(226378),
   R = n(981631),
-  D = n(701488),
-  L = n(388032),
+  L = n(701488),
+  D = n(388032),
   M = n(332463);
 let W = i.memo(e => {
   let {
@@ -75,7 +75,7 @@ let F = i.memo(function(e) {
     return null
   }, [E.id, Y]), Q = null == q ? void 0 : q.details, J = i.useMemo(() => {
     let e = new j.ZP(E);
-    return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = D.wT), e
+    return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = L.wT), e
   }, [E]), $ = (0, f.s5)({
     userId: H,
     channelId: A,
@@ -108,7 +108,7 @@ let F = i.memo(function(e) {
       instanceId: null == V ? void 0 : V.compositeInstanceId,
       isContextlessActivity: (null == V ? void 0 : V.location.kind) === a.X.CONTEXTLESS
     })
-  }, ea = et.disabled ? L.NW.string(L.t.JBnc7O) : L.NW.string(L.t.cX9uLS), {
+  }, ea = et.disabled ? D.NW.string(D.t.JBnc7O) : D.NW.string(D.t.cX9uLS), {
     enabled: eo
   } = x.G.useExperiment({
     location: "EmbeddedActivityInstanceEmbed"
@@ -124,20 +124,20 @@ let F = i.memo(function(e) {
     let i = S.default.getCurrentUser(),
       a = X.length,
       o = null !== (d = null == q ? void 0 : null === (n = q.timestamps) || void 0 === n ? void 0 : n.start) && void 0 !== d ? d : null == q ? void 0 : q.created_at,
-      c = ee ? ea : null != Q ? Q : L.NW.string(L.t.oQn0h4),
+      c = ee ? ea : null != Q ? Q : D.NW.string(D.t.oQn0h4),
       u = function(e) {
         switch (null == e ? void 0 : e.type) {
           case R.IIU.STREAMING:
             return {
-              text: L.NW.string(L.t["Jpkr/v"]), Icon: s.m3e
+              text: D.NW.string(D.t["Jpkr/v"]), Icon: s.m3e
             };
           case R.IIU.LISTENING:
             return {
-              text: L.NW.string(L.t.kUEnxM), Icon: s.RZG
+              text: D.NW.string(D.t.kUEnxM), Icon: s.RZG
             };
           default:
             return {
-              text: L.NW.string(L.t.BMTj29), Icon: s.iWm
+              text: D.NW.string(D.t.BMTj29), Icon: s.iWm
             }
         }
       }(q);
@@ -178,7 +178,7 @@ let F = i.memo(function(e) {
         })]
       }),
       actions: [{
-        label: ee ? L.NW.string(L.t.RscU7O) : L.NW.string(L.t.VJlc0d),
+        label: ee ? D.NW.string(D.t.RscU7O) : D.NW.string(D.t.VJlc0d),
         onClick: ei,
         disabledReason: e,
         submitting: er
@@ -210,7 +210,7 @@ let F = i.memo(function(e) {
           variant: "text-md/medium",
           lineClamp: 1,
           color: "text-normal",
-          children: null != Q ? Q : L.NW.string(L.t.oQn0h4)
+          children: null != Q ? Q : D.NW.string(D.t.oQn0h4)
         })
       }), (0, r.jsxs)("div", {
         className: M.footerContainer,

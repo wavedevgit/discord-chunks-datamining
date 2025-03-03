@@ -103,7 +103,7 @@ function g(e) {
     action: A
   });
   {
-    let e = O ? d.t.tfnAkJ : d.t.w5uwoK;
+    let e = O ? d.t.LAcY7u : d.t.w5uwoK;
     return (0, r.jsx)(a.sNh, {
       id: "add-friend",
       label: T ? d.NW.string(d.t.xMH6vL) : d.NW.string(e),

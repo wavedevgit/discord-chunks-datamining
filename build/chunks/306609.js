@@ -36,7 +36,7 @@ var r = n(200651),
   k = n(388032),
   R = n(422111);
 
-function D(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -160,7 +160,7 @@ function M(e) {
         },
         voiceListRef: ee
       }), !H && (0, r.jsxs)(l.animated.div, {
-        style: L(D({}, $), {
+        style: D(L({}, $), {
           display: $.opacity.to(e => 0 === e ? "none" : "block")
         }),
         className: R.upsellCountdownContainer,
@@ -211,7 +211,7 @@ function M(e) {
             }),
             simplified: et
           }),
-          children: e => (0, r.jsx)(c.zxk, L(D({}, e), {
+          children: e => (0, r.jsx)(c.zxk, D(L({}, e), {
             size: c.zxk.Sizes.MIN,
             look: c.zxk.Looks.BLANK,
             grow: !1,

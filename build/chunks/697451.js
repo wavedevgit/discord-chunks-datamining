@@ -88,7 +88,7 @@ function R(e) {
   })
 }
 
-function D(e, t, n, i, a) {
+function L(e, t, n, i, a) {
   var l, s, c;
   let {
     message: d,
@@ -153,7 +153,7 @@ function D(e, t, n, i, a) {
   }) : N()
 }
 
-function L(e, t, n, i, a) {
+function D(e, t, n, i, a) {
   let {
     message: o,
     channel: l,
@@ -206,8 +206,8 @@ function W(e) {
   }))), [l, a.id, a.interactionData]), R = (0, v.t0)(a), W = (null == R ? void 0 : R.type) === p.B8.APPLICATION_COMMAND && null != R.target_user ? new O.Z(R.target_user) : null, F = (null == R ? void 0 : R.type) === p.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage, U = (0, C.Sw)(null === (t = a.interaction) || void 0 === t ? void 0 : t.user, l), B = (0, C.Sw)(W, l), G = i.useMemo(() => e.compact ? (0, T.Z)((0, N.vc)(d()(), "LT")) : null, [e.compact]), H = (0, m.NX)(l.id), V = a.interaction;
   if (null == V || null == U) return null;
   let z = () => {
-    let t = D(e, V.user, 0, U, e => E(e, V.user, [g.Z.AVATAR])),
-      n = L(e, V.user, 0, U, e => E(e, V.user));
+    let t = L(e, V.user, 0, U, e => E(e, V.user, [g.Z.AVATAR])),
+      n = D(e, V.user, 0, U, e => E(e, V.user));
     return (0, r.jsxs)(i.Fragment, {
       children: [t, n]
     }, "user")
@@ -299,8 +299,8 @@ function W(e) {
   }) : null != W && (n = (0, r.jsxs)(r.Fragment, {
     children: [n, (0, r.jsx)(M, {}), (0, r.jsx)(() => {
       if (null == W) return null;
-      let t = D(e, W, 1, B, e => E(e, W, [g.Z.AVATAR])),
-        n = L(e, W, 1, B, e => E(e, W));
+      let t = L(e, W, 1, B, e => E(e, W, [g.Z.AVATAR])),
+        n = D(e, W, 1, B, e => E(e, W));
       return (0, r.jsxs)(i.Fragment, {
         children: [t, n]
       }, "target")

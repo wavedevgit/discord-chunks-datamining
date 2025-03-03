@@ -36,8 +36,8 @@ function S(e) {
     onJump: Z,
     showTutorial: k,
     setSeenTutorial: R,
-    closePopout: D,
-    badgeState: L
+    closePopout: L,
+    badgeState: D
   } = e, M = i.useRef(null), [W, F] = (0, j.ZP)(M), {
     loadState: U,
     channels: B
@@ -85,9 +85,9 @@ function S(e) {
     _.default.track(N.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
-  }, []), i.useEffect(() => (m.Z.subscribe("CONNECTION_OPEN", D), () => {
-    m.Z.unsubscribe("CONNECTION_OPEN", D)
-  }), [D]);
+  }, []), i.useEffect(() => (m.Z.subscribe("CONNECTION_OPEN", L), () => {
+    m.Z.unsubscribe("CONNECTION_OPEN", L)
+  }), [L]);
   let V = (0, d.e7)([f.Z], () => f.Z.messageGroupSpacing),
     z = (0, g.Us)({
       location: "Unreads"
@@ -101,8 +101,8 @@ function S(e) {
       children: [(0, r.jsx)(O.Z, {
         tab: u.X.UNREADS,
         setTab: w,
-        badgeState: L,
-        closePopout: D
+        badgeState: D,
+        closePopout: L
       }), (0, r.jsx)(x.Z, {
         Icon: p.xx7,
         header: C.NW.string(C.t["6XMM+P"]),
@@ -118,8 +118,8 @@ function S(e) {
     children: [(0, r.jsx)(O.Z, {
       tab: u.X.UNREADS,
       setTab: w,
-      badgeState: L,
-      closePopout: D,
+      badgeState: D,
+      closePopout: L,
       children: (0, r.jsx)(y.Z, {
         type: "top-header",
         onClick: H

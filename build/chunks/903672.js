@@ -66,13 +66,13 @@ function w(e) {
     everyoneFilter: x.Z.everyoneFilter
   })), w = (0, g.Us)({
     location: "RecentMentions"
-  }), k = (0, m.Z)(j), D = (0, m.Z)(N), L = (0, m.Z)(P);
+  }), k = (0, m.Z)(j), L = (0, m.Z)(N), D = (0, m.Z)(P);
   i.useEffect(() => {
     if (!x.Z.hasLoadedEver) {
       A(h, !0);
       return
-    }(null != k && j !== k || null != D && N !== D || null != L && P !== L) && A(h, !0)
-  }, [k, j, D, N, L, P, h, !0]), (0, p.ZP)(() => {
+    }(null != k && j !== k || null != L && N !== L || null != D && P !== D) && A(h, !0)
+  }, [k, j, L, N, D, P, h, !0]), (0, p.ZP)(() => {
     (null == _ ? void 0 : _.some(f.k5)) && (d.Z.clearMentions(), A(h, !0))
   }), i.useEffect(() => () => {
     d.Z.truncateMentions(I.DJj)

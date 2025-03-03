@@ -36,7 +36,7 @@ var r = n(200651),
   k = n(388032),
   R = n(572339);
 
-function D(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -194,7 +194,7 @@ function B(e) {
             children: k.NW.string(k.t.qlFrXV)
           }), (0, r.jsx)(f.yRy, {
             renderPopout: function(e) {
-              return null == o ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(j.Z, L(D({}, e), {
+              return null == o ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(j.Z, D(L({}, e), {
                 userId: o.id,
                 user: o,
                 guildId: l,
@@ -202,10 +202,10 @@ function B(e) {
                 messageId: n.id
               }))
             },
-            children: e => (0, r.jsxs)(f.P3F, L(D({
+            children: e => (0, r.jsxs)(f.P3F, D(L({
               className: R.alertsEnabledSubHeaderAvatarUsername
             }, e), {
-              children: [(0, r.jsx)("div", L(D({}, p), {
+              children: [(0, r.jsx)("div", D(L({}, p), {
                 children: (0, r.jsx)(f.qEK, {
                   src: d,
                   avatarDecoration: u,

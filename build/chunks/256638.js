@@ -36,8 +36,8 @@ var s = n(442837),
   Z = n(785141),
   k = n(272395),
   R = n(492435),
-  D = n(353926),
-  L = n(506357),
+  L = n(353926),
+  D = n(506357),
   M = n(36459),
   W = n(236069),
   F = n(305325),
@@ -189,7 +189,7 @@ let eI = 12633 == n.j ? i.memo(function() {
     if (null != Z && Z.type === eh.kVF.SURVEY && null != Z.metadata) {
       let {
         metadata: e
-      } = Z, t = D.Z.getUserExperimentDescriptor(e.id);
+      } = Z, t = L.Z.getUserExperimentDescriptor(e.id);
       null != t && (0, R.W9)(e.id, t), (async () => {
         var e, t;
         (null === (e = Z.metadata) || void 0 === e ? void 0 : e.id) != null && await (0, x.g8)(null === (t = Z.metadata) || void 0 === t ? void 0 : t.id)
@@ -224,7 +224,7 @@ let eI = 12633 == n.j ? i.memo(function() {
       let {
         dismissUntil: eA
       } = Z.metadata;
-      return (0, r.jsx)(L.Z, {
+      return (0, r.jsx)(D.Z, {
         onDismiss: () => eC(eA)
       });
     case eh.kVF.WIN32_DEPRECATED_MESSAGE:
@@ -393,19 +393,19 @@ let eI = 12633 == n.j ? i.memo(function() {
     case eh.kVF.HARDWARE_MUTE:
       if (null == Z.metadata) return null;
       let {
-        vendor: eD, model: eL
+        vendor: eL, model: eD
       } = Z.metadata;
       return (0, r.jsxs)(c.qXd, {
         color: c.DM8.DANGER,
         children: [ev.NW.format(ev.t.qoDex8, {
-          vendorName: eD.name,
-          modelName: eL.name
+          vendorName: eL.name,
+          modelName: eD.name
         }), (0, r.jsx)(c.RyX, {
           onClick: () => {
             u.Z.setEnableHardwareMuteNotice(!1), eC()
           }
         }), (0, r.jsx)(c.u3T, {
-          href: eL.url,
+          href: eD.url,
           target: "_blank",
           rel: "noreferrer noopener",
           children: ev.NW.string(ev.t["Yl/Rio"])
